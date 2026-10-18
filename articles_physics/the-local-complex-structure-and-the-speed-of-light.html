@@ -100,26 +100,30 @@ i\,\mathbb{M}_-=\mathbb{M}_+, \qquad i\,\mathbb{M}_+=\mathbb{M}_- .
 $$
 A general element $i q_te_t+\vec q$ of $\mathbb{M}_-$ is sent to $-q_te_t+i\vec q$, which has a real scalar part and an imaginary vector part, hence lies in $\mathbb{M}_+$ and not in $\mathbb{M}_-$ unless it vanishes. Therefore $J_{\mathbb{B}}$ is not an endomorphism of $\mathbb{M}_-$: it does not map spacetime to itself, so it cannot be a complex structure <em>on</em> spacetime. Geometrically it is the map that exchanges the material and informational sectors.</p>
 <h3 id="the-minkowski-metric-admits-no-compatible-complex-structure">The Minkowski metric admits no compatible complex structure</h3>
-<p>The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ satisfied both $J^2=-I$ and the compatibility
+<p>The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ on $\mathbb{M}_-$ satisfied both $J^2=-I$ and the compatibility
 $$
-\langle JX,JY\rangle_{\natural}=\langle\tilde{Q},\tilde Q_3\rangle_{\natural} \qquad \text{for all } \tilde{Q},\tilde Q_3,
+\langle J\tilde{Q},J\tilde Q_3\rangle_{\natural}=\langle\tilde{Q},\tilde Q_3\rangle_{\natural} \qquad \text{for all } \tilde{Q},\tilde Q_3,
 $$
-which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde Q_3=JX$ and using $J^2=-I$ and the symmetry of $\langle\cdot,\cdot\rangle_{\natural}$,
+which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde Q_3=J\tilde{Q}$ and using $J^2=-I$ and the symmetry of $\langle\cdot,\cdot\rangle_{\natural}$,
 $$
-\langle JX,-\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},JX\rangle_{\natural} \;\Longrightarrow\; -\langle\tilde{Q},JX\rangle_{\natural} \;\Longrightarrow\; \langle\tilde{Q},JX\rangle_{\natural}=0 ,
+\langle J\tilde{Q},J^2\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},J\tilde{Q}\rangle_{\natural}
+\;\Longrightarrow\;
+-\langle\tilde{Q},J\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},J\tilde{Q}\rangle_{\natural}
+\;\Longrightarrow\;
+\langle\tilde{Q},J\tilde{Q}\rangle_{\natural}=0 ,
 $$
 so a vector and its image under $J$ are orthogonal. Taking $\tilde Q_3=\tilde{Q}$,
 $$
-\langle JX,JX\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
+\langle J\tilde{Q},J\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
-Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde Q_3$ orthogonal to the plane and $Z$ in the plane,
+Hence on the two-dimensional plane $\mathrm{span}\{\tilde{Q},J\tilde{Q}\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde Q_3$ orthogonal to the plane and $Z$ in the plane,
 $$
-\langle JY,Z\rangle_{\natural}=\langle J^2\tilde Q_3,JZ\rangle_{\natural}=-\langle\tilde Q_3,JZ\rangle_{\natural}=0,
+\langle J\tilde Q_3,Z\rangle_{\natural}=\langle J^2\tilde Q_3,JZ\rangle_{\natural}=-\langle\tilde Q_3,JZ\rangle_{\natural}=0,
 $$
 using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore <strong>no complex structure compatible with the Minkowski metric exists</strong>, neither globally nor at a single point.</p>
 <p>The obstruction is easy to check directly. In two dimensions, writing $g=\begin{pmatrix}p&q\\q&r\end{pmatrix}$ and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the condition $J^{\mathsf T}gJ=g$ forces $p=r$ and $q=0$: the compatible form is a multiple of the identity, hence definite, of signature $(2,0)$ or $(0,2)$, never $(1,1)$. In four dimensions the forms compatible with a complex structure have eigenvalues each of multiplicity two, so each sign occurs an even number of times — the signature is $(4,0)$, $(2,2)$ or $(0,4)$; a symbolic solution of $J_0^{\mathsf T}GJ_0=G$ for the standard $J_0$ returns a form whose eigenvalues each occur twice. A count of three positives and one negative cannot arise, and the signature $(3,1)$ is exactly the excluded case.</p>
 <p>The way out is not to look for a better $J$ but to change the space: <strong>complexify</strong>. On the complexified tangent space the form is complex, and multiplication by $i$ is a complex structure there. This is what the $ict$ notation does, and it is why the framework complexifies spacetime rather than placing a real $J$ on it. The distinction is not pedantic: a complex structure on the complexified tangent space is a different object from a complex structure on spacetime compatible with the Minkowski metric, and the second does not exist. Calling $ict$ "a complex structure on spacetime" is the conflation this article is written to avoid.</p>
-<h3 id="the-global-math98-is-a-coordinate-device">The global $ict$ is a coordinate device</h3>
+<h3 id="the-global-math99-is-a-coordinate-device">The global $ict$ is a coordinate device</h3>
 <p>The $ict$ convention is often described as making the complex structure global. It is worth being exact about what is global there. The substitution $x^0=ic_0t$ is a change of coordinates, and it converts the Minkowski interval into a Euclidean form,
 $$
 ds^2=(ic_0\,dt)^2+dx^2+dy^2+dz^2 .
@@ -142,7 +146,7 @@ $$
 \langle d\tilde{R}\rangle_{\natural}=(ic\,dt)^2+dx^2+dy^2+dz^2=-c^2\,dt^2+dx^2+dy^2+dz^2 .
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the metric.</p>
-<h2 id="the-scale-math130-and-the-minkowski-metric">The Scale $c$ and the Minkowski Metric</h2>
+<h2 id="the-scale-math131-and-the-minkowski-metric">The Scale $c$ and the Minkowski Metric</h2>
 <p>The sentence "the complex structure produces the metric" has two parts, and it is worth separating them.</p>
 <ol>
 <li><strong>The signature is algebraic.</strong> The sign of the coefficient on $dt^2$ is $(i)^2$. It comes from the scalar imaginary and is the same for every value of $c$. In the metric formalism the signature is an input; here it is a consequence of the algebra.</li>
@@ -160,7 +164,7 @@ g(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\mathrm{diag}\!\left(-c(x\,\vec e_x+y\,\v
 $$
 and at each point the null directions are those with $|d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt|=c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The metric is not postulated alongside the complex structure; it is read off from the phase and the local scale.</p>
 <p>Two cautions belong here. First, this is not a claim that a medium produces the Gordon-type effective metric of a moving dielectric. The local structure considered here is isotropic and is written in the local rest frame of the material; the constitutive relations of a moving or anisotropic medium carry more data than the local complex structure, and their geometric interpretation is a separate question. Second, the field $g(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is obtained pointwise. Nothing global is asserted about it: there is no claim that the pointwise forms are the coordinate components of a single smooth metric in a preferred global frame, nor that a global Lorentz invariance survives the variation of $c$. That last point is taken up again below.</p>
-<h2 id="two-routes-by-which-math151-is-fixed">Two Routes by Which $c$ Is Fixed</h2>
+<h2 id="two-routes-by-which-math152-is-fixed">Two Routes by Which $c$ Is Fixed</h2>
 <p>The local structure leaves one number undetermined: the scale $c$. The physics does not leave it undetermined. Two independent requirements fix it, and they agree.</p>
 <p><strong>Route 1: the null cone of the biquaternion norm.</strong> The local quadratic form vanishes on
 $$
@@ -197,7 +201,7 @@ The wave-operator route uses the field equation and the constitutive relations, 
 </ol>
 <h2 id="physical-readings">Physical Readings</h2>
 <p>The two senses of complex structure read as two physical claims. Globally, the complex structure of the algebra is fixed and no physics follows from it, which is the article's negative interpretation. Locally, the structure is the medium's: $c$ is the scale of the embedding, a change of the local structure moves the interval and the composition and leaves the probability form and the zero-divisor cone, and the cone of the algebra is therefore the invariant against which the physical wave cone is compared (<em>Conventions in the Biquaternion Universe</em>, <em>Electromagnetism in Media — The Local Complex Structure at Work</em>).</p>
-<p>The medium interpretation extends in three directions. First, $\log\lvert N\rvert$ is read as a <strong>conformal (Weyl) factor</strong>: the norm is a scale and its logarithm a potential for a dilation, so the framework's scale is a conformal weight and its massless limit a conformal limit — the interpretation is the shape of <em>Conformal Invariance and the Massless Limit in Biquaternionic Form</em>, cited. Second, the local complex structure $c=1/\sqrt{\epsilon\mu}$ is read as an <strong>emergent metric</strong>, the algebraic form of the analogue-gravity programme in which the wave cone is a medium property and not a fixed background. Third, the construction is read as a <strong>bundle of algebras</strong>: the biquaternion algebra is the typical fibre, the local complex structure a section of the frame bundle, and a medium a connection on it — the interpretation the series' <em>Curved Spacetime and the Biquaternion Framework</em> poses as a question and does not claim.</p>
+<p>The medium interpretation extends in three directions. First, $\log\lvert\langle\tilde{Q}\rangle_{\natural}\rvert$ is read as a <strong>conformal (Weyl) factor</strong>: the norm is a scale and its logarithm a potential for a dilation, so the framework's scale is a conformal weight and its massless limit a conformal limit — the interpretation is the shape of <em>Conformal Invariance and the Massless Limit in Biquaternionic Form</em>, cited. Second, the local complex structure $c=1/\sqrt{\epsilon\mu}$ is read as an <strong>emergent metric</strong>, the algebraic form of the analogue-gravity programme in which the wave cone is a medium property and not a fixed background. Third, the construction is read as a <strong>bundle of algebras</strong>: the biquaternion algebra is the typical fibre, the local complex structure a section of the frame bundle, and a medium a connection on it — the interpretation the series' <em>Curved Spacetime and the Biquaternion Framework</em> poses as a question and does not claim.</p>
 <h2 id="summary">Summary</h2>
 <p>The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2dt^2+dx^2+dy^2+dz^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.</p>
 <p>A <strong>global</strong> complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{M}_-$ compatible with its biquaternion norm — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{M}_-=\mathbb{M}_+$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$. The $ict$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.</p>
@@ -239,7 +243,7 @@ The wave-operator route uses the field equation and the constitutive relations, 
 </tr>
 <tr>
 <td>$\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$</td>
-<td>Biquaternion norm; zero divisors where $N=0$</td>
+<td>Biquaternion norm; zero divisors where $\langle\tilde{Q}\rangle_{\natural}=0$</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>

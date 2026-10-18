@@ -70,12 +70,12 @@
 <p>This is one of the articles in the Dirac exercise series accompanying the biquaternion Dirac equation, and the one that works entirely inside the <strong>spinor module</strong>. It is a worked exercise: the structures are taken from the parent article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> and then applied. The value is in the solutions.</p>
 <p>The following are assumed, with the notation of the parent article.</p>
 <ul>
-<li>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$, scalar imaginary $i$, and the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ (Hermitian). The subspaces are $\mathbb{M}_-$ (material), $\mathbb{M}_+$ (informational), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$ (the centre).</li>
-<li>The matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i) = iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde{u}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{u})$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$.</li>
+<li>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$, scalar imaginary $i$, and the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ (Hermitian). The subspaces are $\mathbb{M}_-$ (material), $\mathbb{M}_+$ (informational), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$ (the centre).</li>
+<li>The matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde{u}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{u})$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$.</li>
 <li>The <strong>spinor module</strong> $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying $\psi\mapsto\mathsf{M}_2(\tilde{Q})\psi$. Its ideal realization is $S\cong\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$, the two idempotents associated with the root of $+1$ $i\vec e_z$, $(i\vec e_z)^2 = e_t$; $\tilde\Pi_+\tilde\Pi_- = \tilde\Pi_-\tilde\Pi_+ = 0$, $\tilde\Pi_++\tilde\Pi_- = e_t$, and basis $\{\tilde\Pi_+,\,y\}$, $y = \vec e_y\tilde\Pi_+ = \tfrac12(i\vec e_x+\vec e_y)$.</li>
 <li>The <strong>two chiral halves</strong>: the left-handed Weyl module $V_1 = (\tfrac12,0)$, carried by $S$ with action $\psi\mapsto g\psi$, $g = \mathsf{M}_2(\tilde U_{\mathrm L})$ with $\tilde U_{\mathrm L}$ the unit-norm biquaternion that implements the Lorentz transformation; and the right-handed module $\bar{S} = (0,\tfrac12)$, carried by $\mathbb{C}^2$ with action $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$. Their direct sum is the <strong>Dirac module</strong> $\Delta = S\oplus\bar{S}$, $\dim_{\mathbb{C}}\Delta = 4$.</li>
 <li>The group $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L} : \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t\}$ of <strong>unit-norm biquaternions</strong>, and the double cover $\pi:SL(2,\mathbb{C})\to SO^{+}(1,3)$, $\pi(\tilde U_{\mathrm L}):\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ on $\mathbb{M}_-$.</li>
-<li>The <strong>symplectic form</strong> $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$, $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$; the mixed pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$; and the bilinear $\tilde{Q} = uv^{\dagger}$, transforming as $\tilde{Q}\mapsto gXg^{\dagger}$.</li>
+<li>The <strong>symplectic form</strong> $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$, $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$; the mixed pairing $\mathfrak{b}(\psi,\chi) = \psi^{\dagger}\chi$ on $S\times\bar{S}$; and the bilinear $\tilde{Q} = uv^{\dagger}$, whose matrix representative $X$ transforms as $X\mapsto gXg^{\dagger}$.</li>
 </ul>
 <p>Seven problems are worked below, one per section.</p>
 <h2 id="problem-1-the-chiral-projectors">Problem 1: The Chiral Projectors</h2>
@@ -139,7 +139,7 @@ $$</p>
 <p>$$
 \left(\Box - m^2\right)\psi_L = 0,
 $$</p>
-<p>and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: at $m=0$ the coupling disappears, and each half separately obeys the massive Klein–Gordon equation, $(\Box - m^2c^2/\hbar^2)\psi = 0$ in physical units — the series equation. (The operator is the series one: this article writes the Weyl algebra in real time $x^0 = ct$ and the standard metric $(+,-,-,-)$, in which $\partial^2/\partial Q_t^2 = -\partial^2/\partial t^2$, and nothing else changes.)</p>
+<p>and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: when $m=0$ the coupling disappears, and each half separately obeys the massless wave equation; for $m\neq0$ it obeys the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\psi = 0$ in physical units — the series equation. (The operator is the series one: this article writes the Weyl algebra in real time $x^0 = ct$ and the standard metric $(+,-,-,-)$, in which $\partial^2/\partial Q_t^2 = -\partial^2/\partial t^2$, and nothing else changes.)</p>
 <p><strong>Mass shell.</strong> For a plane wave $\Psi\propto \exp(-ik_0x^0+i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_t + \vec p\in\mathbb{M}_-$ and $k = p/\hbar$,</p>
 <p>$$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2,
@@ -268,9 +268,9 @@ SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 $$</p>
 <p>and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\vec u_{\mathrm r} = \vec u_z$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde{u}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.</p>
 <h2 id="problem-7-the-spinor-action-and-rotor-conjugation">Problem 7: The Spinor Action and Rotor Conjugation</h2>
-<p><strong>From one-sided to two-sided.</strong> Let $w,v\in S$ and form $V = V(w,v) = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$. Under the spinor action $w\mapsto gu$, $v\mapsto gv$, the bilinear transforms as</p>
+<p><strong>From one-sided to two-sided.</strong> Let $w,v\in S$ and form $V = V(w,v) = i\cdot\tfrac12(wv^{\dagger}+vw^{\dagger})\in\mathbb{M}_-$. Under the spinor action $w\mapsto gw$, $v\mapsto gv$, the bilinear transforms as</p>
 <p>$$
-V \;\longmapsto\; g\,V\,g^{*} = \mathsf{M}_2\!\left(\tilde U_{\mathrm L}\,V\,\tilde U_{\mathrm L}^{*}\right),
+V \;\longmapsto\; g\,V\,g^{\dagger} = \mathsf{M}_2\!\left(\tilde U_{\mathrm L}\,V\,\tilde U_{\mathrm L}^{*}\right),
 $$</p>
 <p>which is exactly the rotor conjugation of the material sector. A single spinor contributes one factor, $\psi\mapsto g\psi$ (linear, one-sided); the four-vector is built from two spinors and therefore carries two factors, $gVg^{\dagger}$ (quadratic, two-sided). This is the origin of the difference in kind between the two actions, and it is the sense in which the four-vector is a <em>pair</em> of spinors.</p>
 <p><strong>The sign that cancels and the sign that does not.</strong> Replace $\tilde U_{\mathrm L}$ by $-\tilde U_{\mathrm L}$, i.e. $g$ by $-g$. On four-vectors $(-g)V(-g)^{\dagger} = gVg^{\dagger}$, because the two signs cancel; on spinors $(-g)\psi = -g\psi\neq g\psi$ for every nonzero spinor. Hence $\ker\pi = \{\pm e_t\}$ on $\mathbb{M}_-$ but the kernel of the spinor action is trivial: the spinor representation does not descend to $SO^{+}(1,3)$.</p>
@@ -287,7 +287,7 @@ $$</p>
 <p>The solutions have the expected limits.</p>
 <ul>
 <li><strong>Rapidity limits.</strong> As $\psi\to0$ both halves become indistinguishable, reflecting that the chiral splitting is a property of the full Lorentz group, not of its compact subgroup; for large $\psi$ the halves diverge exponentially, one component of each growing as $\exp(\psi/2)$ and the other decaying as $\exp(-\psi/2)$.</li>
-<li><strong>$v = \pm w$ (single spinor):</strong> $H = \pm uu^{\dagger}$ is rank one, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -h_t^2+\vec h^2$.</li>
+<li><strong>$v = \pm w$ (single spinor):</strong> $H = \pm ww^{\dagger}$ is rank one, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -h_t^2+\vec h^2$.</li>
 <li><strong>$\theta = 2\pi$ versus $4\pi$:</strong> the spinor picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.</li>
 </ul>
 <h2 id="what-the-solutions-illustrate">What the Solutions Illustrate</h2>
@@ -326,7 +326,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$</td>
@@ -338,7 +338,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$</td>
-<td>Matrix realization, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i) = iI_2$</td>
+<td>Matrix realization, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \det\mathsf{M}_2(\tilde{Q})$</td>
@@ -397,7 +397,7 @@ $$</p>
 <td>Invariant pairing $S\times\bar{S}\to\mathbb{C}$</td>
 </tr>
 <tr>
-<td>$V = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})$</td>
+<td>$V = i\cdot\tfrac12(wv^{\dagger}+vw^{\dagger})$</td>
 <td>Four-vector from a spinor pair</td>
 </tr>
 <tr>

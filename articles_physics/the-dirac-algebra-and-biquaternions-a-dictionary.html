@@ -82,9 +82,9 @@ $$</p>
 <p>$$
 \vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t, \qquad \vec e_x \vec e_y = \vec e_z, \qquad \vec e_y \vec e_z = \vec e_x, \qquad \vec e_z \vec e_x = \vec e_y,
 $$</p>
-<p>and $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in <em>Conventions in the Biquaternion Universe</em>: quaternion conjugation ${}^{\natural}$ ($e_t \mapsto e_t$, $\vec e_k \mapsto -\vec e_k$), complex conjugation $\bar{\cdot}$ ($i \mapsto -i$), Hermitian conjugation ${}^{*} = ({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat = -{}^{*}$. Multiplication is the complex-linear extension of the quaternion product, with the scalar–vector form</p>
+<p>and $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in <em>Conventions in the Biquaternion Universe</em>: quaternion conjugation ${}^{\natural}$ ($e_t \mapsto e_t$, $\vec e_k \mapsto -\vec e_k$), complex conjugation $\bar{\cdot}$ ($i \mapsto -i$), Hermitian conjugation ${}^{*} = ({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat = -{}^{*}$. Multiplication is the complex-linear extension of the quaternion product. For $\tilde Q_1 = Q_{1t}e_t + \vec Q_1$ and $\tilde Q_2 = Q_{2t}e_t + \vec Q_2$, its scalar–vector form is</p>
 <p>$$
-\tilde{Q}\circ\tilde{Q}_4 = Q_tR_0 - (\vec Q,\vec R) + Q_t\vec R + R_0\vec Q + [\vec Q,\vec R].
+\tilde{Q}_1\circ\tilde{Q}_2 = Q_{1t}Q_{2t} - (\vec Q_1,\vec Q_2) + Q_{1t}\vec Q_2 + Q_{2t}\vec Q_1 + [\vec Q_1,\vec Q_2].
 $$</p>
 <h3 id="the-gamma-side">The gamma side</h3>
 <p>The gamma matrices are four $4\times 4$ complex matrices $\gamma^0, \gamma^1, \gamma^2, \gamma^3$ satisfying</p>
@@ -144,7 +144,7 @@ $$</p>
 <p>$$
 \omega\gamma^\mu = -\gamma^\mu\omega, \qquad \omega\mathsf{M}_4(\tilde{Q}) = \mathsf{M}_4(\tilde{Q})\omega \quad (\tilde{Q} \in \mathbb{B}).
 $$</p>
-<h2 id="the-isomorphism-math123-is-the-even-subalgebra">The Isomorphism: $\mathbb{B}$ is the Even Subalgebra</h2>
+<h2 id="the-isomorphism-math125-is-the-even-subalgebra">The Isomorphism: $\mathbb{B}$ is the Even Subalgebra</h2>
 <h3 id="the-map">The map</h3>
 <p>The biquaternion algebra is identified with the even subalgebra of $\mathrm{Cl}_{1,3}$ — the algebra of the metric $g = \mathrm{diag}(+1,-1,-1,-1)$ — by the $\mathbb{R}$-linear map $\mathsf{M}_4$ defined on the quaternion basis by</p>
 <p>$$
@@ -327,7 +327,7 @@ $$</p>
 $$</p>
 <p>matching $\vec e_x \vec e_y = \vec e_z$, $\vec e_y \vec e_z = \vec e_x$, $\vec e_z \vec e_x = \vec e_y$. Reversing either factor reverses the sign, matching $\vec e_y \vec e_x = -\vec e_z$ and the rest. The general rule is the usual one: the product of two distinct quaternion units is the third with the sign of the permutation $(1,2,3)$, and the product of a unit with itself is $-e_t$.</p>
 <h3 id="explicit-checks-on-independent-pairs">Explicit checks on independent pairs</h3>
-<p>The claim is not verified on the case that suggested it. The following four general products use four different pairs of dictionary entries, including both spacelike and timelike bivectors, and each is confirmed by direct multiplication of the representation matrices:</p>
+<p>The claim is not verified only on the case that suggested it. The following four general products use four different pairs of dictionary entries, including both spacelike and timelike bivectors, and each is confirmed by direct multiplication of the representation matrices:</p>
 <ol>
 <li><strong>Two spacelike bivectors.</strong> $(\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2$; the biquaternion side is $\vec e_x \vec e_y = \vec e_z$, and $\mathsf{M}_4(\vec e_z) = \gamma^1\gamma^2$.</li>
 <li><strong>Two timelike bivectors.</strong> $(\gamma^0\gamma^1)(\gamma^0\gamma^2) = -(\gamma^0)^2\gamma^1\gamma^2 = -\gamma^1\gamma^2 = -\vec e_z$; the biquaternion side is $(i\vec e_x)(i\vec e_y) = i^2\vec e_x \vec e_y = -\vec e_z$, and $\mathsf{M}_4(-\vec e_z) = -\gamma^1\gamma^2$.</li>
@@ -380,14 +380,14 @@ $$</p>
 <p>This is checked on the whole real basis. On the spacelike bivectors it reads $\omega(\gamma^2\gamma^3) = -\gamma^0\gamma^1$, $\omega(\gamma^3\gamma^1) = -\gamma^0\gamma^2$, $\omega(\gamma^1\gamma^2) = -\gamma^0\gamma^3$: multiplication by the pseudoscalar exchanges the spacelike and timelike bivector subspaces, which is the algebraic content of the Hodge duality of the bivectors in four dimensions. Since the dictionary maps the spacelike group to the quaternion units and the timelike group to the imaginary quaternion units, the operation is simply "multiply by $-i$" — equivalently "multiply by $i$ and reverse orientation".</p>
 <h2 id="vectors-and-the-odd-part">Vectors and the Odd Part</h2>
 <p>The biquaternion algebra is the <strong>even</strong> subalgebra, so the generators $\gamma^\mu$ themselves are not biquaternions. They are, however, obtained from the even part by multiplication by a single fixed odd element, and this gives the dictionary of the odd part.</p>
-<h3 id="the-generators-as-matrices-over-math273">The generators as matrices over $\mathbb{B}$</h3>
+<h3 id="the-generators-as-matrices-over-math275">The generators as matrices over $\mathbb{B}$</h3>
 <p>In the representation fixed above the odd generators are $2\times 2$ matrices with entries in $\mathbb{B}$:</p>
 <p>$$
 \gamma^0 = \begin{pmatrix} 0 & e_t \\ e_t & 0 \end{pmatrix}, \qquad
 \gamma^k = \begin{pmatrix} 0 & i\,\vec e_k \\ -i\,\vec e_k & 0 \end{pmatrix}, \qquad k = 1,2,3 .
 $$</p>
 <p>The corresponding <strong>trivectors</strong> $\gamma^\mu\gamma^\nu\gamma^\rho$ ($\mu < \nu < \rho$) are the other odd elements (of degree three); there are four of them.</p>
-<h3 id="the-odd-part-is-math279-times-the-even-part">The odd part is $\gamma^0$ times the even part</h3>
+<h3 id="the-odd-part-is-math281-times-the-even-part">The odd part is $\gamma^0$ times the even part</h3>
 <p>Every odd element is $\gamma^0$ times an even element. On the four-vectors this is explicit:</p>
 <p>$$
 x_0\gamma^0 + x_1\gamma^1 + x_2\gamma^2 + x_3\gamma^3
@@ -677,7 +677,7 @@ $$</p>
 <td>Isomorphism $\mathbb{B} \to \mathrm{Cl}_{1,3}^{+}$</td>
 </tr>
 <tr>
-<td>$\Phi_C$</td>
+<td>$\Phi_{\mathbb{C}}$</td>
 <td>Its $\mathbb{C}$-linear extension</td>
 </tr>
 <tr>
