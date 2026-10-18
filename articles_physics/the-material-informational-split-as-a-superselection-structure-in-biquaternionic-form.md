@@ -93,7 +93,7 @@ The proposition says that the sector decomposition, although it decomposes the a
 
 A superselection structure in its algebraic form requires the sectors to be the summands of an algebra decomposition, and that fails at the first product. The product of two Hermitian elements is Hermitian only when they commute,
 $$
-\tilde{H}, \tilde{K}\in\mathbb{M}_+ \ \Longrightarrow\ (\tilde{H}\tilde{K})^{*} = \tilde{K}\tilde{H} = \tilde{H}\tilde{K} \iff [\tilde{H},\tilde{K}] = 0 ,
+\tilde{Q}_1, \tilde{Q}_2\in\mathbb{M}_+ \ \Longrightarrow\ (\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1 = \tilde{Q}_1\tilde{Q}_2 \iff [\tilde{Q}_1,\tilde{Q}_2] = 0 ,
 $$
 and the idempotents provide an elementary counterexample. For the two pure-state idempotents $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and $\tilde\Pi_1(\vec u_\nu) = \tfrac12(e_t+i\vec u_\nu)$ with $\vec u\cdot\vec u_\nu = 0$,
 $$

@@ -44,13 +44,13 @@ This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the n
 
 The algebra carries four forms, the scalar parts of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; on $\mathbb{M}_+$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **general plain bilinear form**, and the **bilinear form** $\langle\cdot,\cdot\rangle_{\natural}$ (the general quaternionic bilinear form), which here equals the **general quaternionic sesquilinear form** $\langle\cdot,\cdot\rangle_{\natural*}$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $\langle\cdot,\cdot\rangle_{\natural}$.
 
-**The trace pairing.** The trace defines a symmetric bilinear form on $\mathbb{M}_+\times\mathbb{M}_+$:
+**The trace pairing.** For a second Hermitian element $\tilde Q=Q_t\,e_t+i\vec Q$, the trace defines a symmetric bilinear form on $\mathbb{M}_+\times\mathbb{M}_+$:
 
 $$
-\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \vec h\cdot\vec k).
+\mathrm{Tr}(\tilde{H}\tilde{Q}) = 2(h_0 Q_t + \vec h\cdot\vec Q).
 $$
 
-This is the **Euclidean** pairing on $\mathbb{R}^4$, up to a factor of 2. It is positive-definite, of signature $(4,0)$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it is the canonical **Hermitian form** of the algebra in real coordinates, $(\tilde{H}, \tilde{K}) = \mathrm{Sc}(\tilde{H}^{*}\tilde{K}) = h_0 k_0 + \vec h\cdot\vec k$, up to the factor of $2$ carried by the trace convention.
+This is the **Euclidean** pairing on $\mathbb{R}^4$, up to a factor of 2. It is positive-definite, of signature $(4,0)$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it is the canonical **Hermitian form** of the algebra in real coordinates, $(\tilde{H}, \tilde{Q}) = \mathrm{Sc}(\tilde{H}^{*}\tilde{Q}) = h_0 Q_t + \vec h\cdot\vec Q$, up to the factor of $2$ carried by the trace convention.
 
 **The biquaternion norm.** The biquaternion norm is the quadratic form
 
@@ -60,34 +60,34 @@ $$
 
 of signature $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space, and it is the diagonal of the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ below, $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}$. It is a quadratic form; it is not a third bilinear form.
 
-**The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}\tilde{K}^{\natural}$:
+**The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}\tilde{Q}^{\natural}$:
 
 $$
-\langle\tilde{H},\tilde{K}\rangle_{\natural}\,e_t = \tfrac{1}{2}\left(\tilde{H}\tilde{K}^{\natural} + \tilde{K}\tilde{H}^{\natural}\right).
+\langle\tilde{H},\tilde{Q}\rangle_{\natural}\,e_t = \tfrac{1}{2}\left(\tilde{H}\tilde{Q}^{\natural} + \tilde{Q}\tilde{H}^{\natural}\right).
 $$
 
 Computing directly, using $\tilde{H}^{\natural} = h_0 e_t - i\vec h$ and the quaternion product of pure vector parts,
 
 $$
-\tilde{H}\tilde{K}^{\natural} = (h_0 k_0 - \vec h\cdot\vec k)\,e_t + i(k_0\vec h - h_0\vec k) + \vec h\times\vec k,
+\tilde{H}\tilde{Q}^{\natural} = (h_0 Q_t - \vec h\cdot\vec Q)\,e_t + i(Q_t\vec h - h_0\vec Q) + \vec h\times\vec Q,
 $$
 
 $$
-\tilde{K}\tilde{H}^{\natural} = (h_0 k_0 - \vec h\cdot\vec k)\,e_t - i(k_0\vec h - h_0\vec k) - \vec h\times\vec k.
+\tilde{Q}\tilde{H}^{\natural} = (h_0 Q_t - \vec h\cdot\vec Q)\,e_t - i(Q_t\vec h - h_0\vec Q) - \vec h\times\vec Q.
 $$
 
 The sum is scalar:
 
 $$
-\boxed{\;\langle\tilde{H},\tilde{K}\rangle_{\natural} = h_0 k_0 - \vec h\cdot\vec k.\;}
+\boxed{\;\langle\tilde{H},\tilde{Q}\rangle_{\natural} = h_0 Q_t - \vec h\cdot\vec Q.\;}
 $$
 
-This is the **Lorentzian** bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H},\tilde{H}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}$. On $\mathbb{M}_+$ it is also the **Krein form** $\langle\tilde{H},\tilde{K}\rangle_{\natural*} = \mathrm{Sc}(\bar{\tilde{H}}\tilde{K})$ of the companion article: for a Hermitian element the coefficient conjugation $\bar{\cdot}$ acts as the quaternion conjugation ${}^{\natural}$, so $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}$ agree on $\mathbb{M}_+$ even though they differ on the full algebra. That is why $\mathbb{M}_+$ carries two forms and not three.
+This is the **Lorentzian** bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H},\tilde{H}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}$. On $\mathbb{M}_+$ it is also the **Krein form** $\langle\tilde{H},\tilde{Q}\rangle_{\natural*} = \mathrm{Sc}(\bar{\tilde{H}}\tilde{Q})$ of the companion article: for a Hermitian element the coefficient conjugation $\bar{\cdot}$ acts as the quaternion conjugation ${}^{\natural}$, so $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}$ agree on $\mathbb{M}_+$ even though they differ on the full algebra. That is why $\mathbb{M}_+$ carries two forms and not three.
 
 The antisymmetric combination contains the vector part:
 
 $$
-\tfrac{1}{2}\left(\tilde{H}\tilde{K}^{\natural} - \tilde{K}\tilde{H}^{\natural}\right) = i(k_0\vec h - h_0\vec k) + \vec h\times\vec k.
+\tfrac{1}{2}\left(\tilde{H}\tilde{Q}^{\natural} - \tilde{Q}\tilde{H}^{\natural}\right) = i(Q_t\vec h - h_0\vec Q) + \vec h\times\vec Q.
 $$
 
 This is not a symmetric bilinear form; it is the antisymmetric part of the full product, and it plays a role in the commutator structure of the algebra.
@@ -96,8 +96,8 @@ This is not a symmetric bilinear form; it is the antisymmetric part of the full 
 
 | Form | Expression | Signature |
 |---|---|---|
-| Hermitian form (trace pairing $/2$) | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \vec h\cdot\vec k) = 2\,\mathrm{Sc}(\tilde{H}^{*}\tilde{K})$ | $(4,0)$, Euclidean |
-| Bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ (the Krein form on $\mathbb{M}_+$) | $\langle\tilde{H},\tilde{K}\rangle_{\natural} = h_0 k_0 - \vec h\cdot\vec k$ | $(1,3)$, Lorentzian |
+| Hermitian form (trace pairing $/2$) | $\mathrm{Tr}(\tilde{H}\tilde{Q}) = 2(h_0 Q_t + \vec h\cdot\vec Q) = 2\,\mathrm{Sc}(\tilde{H}^{*}\tilde{Q})$ | $(4,0)$, Euclidean |
+| Bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ (the Krein form on $\mathbb{M}_+$) | $\langle\tilde{H},\tilde{Q}\rangle_{\natural} = h_0 Q_t - \vec h\cdot\vec Q$ | $(1,3)$, Lorentzian |
 
 The Hermitian form is the natural inner product on the space of operators, the one the Born rule and the unitary evolution use. The bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ is the one whose quadratic form is the biquaternion norm, $\langle\tilde{H},\tilde{H}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}$, and whose future light cone defines the state space. The antisymmetric combination displayed above is not a third form.
 
@@ -201,30 +201,30 @@ The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\ti
 
 ### Compatibility
 
-Two observables $\tilde{H}, \tilde{K} \in \mathbb{M}_+$ are **compatible** (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec h$ and $\vec k$ are parallel.
+Two observables $\tilde{H}, \tilde{Q} \in \mathbb{M}_+$ are **compatible** (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec h$ and $\vec Q$ are parallel.
 
-In the general case (non-parallel $\vec h$, $\vec k$), the observables are incompatible, and their commutator is
+In the general case (non-parallel $\vec h$, $\vec Q$), the observables are incompatible, and their commutator is
 
 $$
-[\tilde{H}, \tilde{K}] = -2\left(\vec h \times \vec k\right),
+[\tilde{H}, \tilde{Q}] = -2\left(\vec h \times \vec Q\right),
 $$
 
-where $\vec h\times\vec k$ is the ordinary cross product.
+where $\vec h\times\vec Q$ is the ordinary cross product.
 
 **Derivation.** We compute
 
 $$
-\tilde{H}\tilde{K} = (h_0 k_0 + \vec h\cdot\vec k)e_t + i(h_0\vec k + k_0\vec h) - \vec h\times\vec k,
+\tilde{H}\tilde{Q} = (h_0 Q_t + \vec h\cdot\vec Q)e_t + i(h_0\vec Q + Q_t\vec h) - \vec h\times\vec Q,
 $$
 
 $$
-\tilde{K}\tilde{H} = (h_0 k_0 + \vec h\cdot\vec k)e_t + i(h_0\vec k + k_0\vec h) + \vec h\times\vec k,
+\tilde{Q}\tilde{H} = (h_0 Q_t + \vec h\cdot\vec Q)e_t + i(h_0\vec Q + Q_t\vec h) + \vec h\times\vec Q,
 $$
 
 so
 
 $$
-[\tilde{H}, \tilde{K}] = -2(\vec h\times\vec k).
+[\tilde{H}, \tilde{Q}] = -2(\vec h\times\vec Q).
 $$
 
 The result is a pure real quaternion (vector part only, with real coefficients): it lies in $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}}$, where $\mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ is the real quaternion subspace, and this intersection is the real span of $\vec e_x, \vec e_y, \vec e_z$. This is the biquaternion form of the $\mathfrak{su}(2)$ angular-momentum commutation relations of the qubit.
@@ -527,14 +527,14 @@ $$
 
 so it is an **automorphism** of $\mathbb{B}$; conjugation by a non-unitary element has no such property, and is only a **congruence**. The difference is visible in the quadratic forms each conjugation leaves invariant.
 
-The **trace pairing** $\mathrm{Tr}(\tilde{H}\tilde{K})$, the Euclidean Hilbert–Schmidt form on $\mathbb{M}_+$ on which the Born rule rests, is preserved by **exactly** the unitary group:
+The **trace pairing** $\mathrm{Tr}(\tilde{H}\tilde{Q})$, the Euclidean Hilbert–Schmidt form on $\mathbb{M}_+$ on which the Born rule rests, is preserved by **exactly** the unitary group:
 
 $$
-\mathrm{Tr}\!\left(\tilde U\tilde{H}\tilde U^{*}\,\tilde U\tilde{K}\tilde U^{*}\right) = \mathrm{Tr}(\tilde{H}\tilde{K}) \ \ \text{for all Hermitian } \tilde{H},\tilde{K}
+\mathrm{Tr}\!\left(\tilde U\tilde{H}\tilde U^{*}\,\tilde U\tilde{Q}\tilde U^{*}\right) = \mathrm{Tr}(\tilde{H}\tilde{Q}) \ \ \text{for all Hermitian } \tilde{H},\tilde{Q}
 \quad \Longleftrightarrow \quad \tilde U \in \mathrm{U}(2),
 $$
 
-since the left-hand side is $\mathrm{Tr}\big((\tilde U^{*}\tilde U)\tilde{K}(\tilde U^{*}\tilde U)\tilde{H}\big)$, and the condition on $\tilde U^{*}\tilde U$ is the unitarity condition. A boost fails it.
+since the left-hand side is $\mathrm{Tr}\big((\tilde U^{*}\tilde U)\tilde{Q}(\tilde U^{*}\tilde U)\tilde{H}\big)$, and the condition on $\tilde U^{*}\tilde U$ is the unitarity condition. A boost fails it.
 
 The **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $\langle\tilde U^{*}\rangle_{\natural} = \overline{\langle\tilde U\rangle_{\natural}} = 1$:
 
@@ -643,8 +643,8 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
 | $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h$ | Born rule |
 | $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\vec h|^2$ | Biquaternion norm, signature $(1,3)$ |
-| $\langle\tilde{H},\tilde{K}\rangle_{\natural} = h_0 k_0 - \vec h\cdot\vec k$ | Polarization of the biquaternion norm |
-| $[\tilde{H}, \tilde{K}] = -2(\vec h\times\vec k)$ | Commutator |
+| $\langle\tilde{H},\tilde{Q}\rangle_{\natural} = h_0 Q_t - \vec h\cdot\vec Q$ | Polarization of the biquaternion norm |
+| $[\tilde{H}, \tilde{Q}] = -2(\vec h\times\vec Q)$ | Commutator |
 | $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ | Projective measurement |
 | $\tilde{U}(t) = \exp(-ih_0t/\hbar)(\cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h)$ | Unitary evolution |
 | $\tilde{Ϛ}(t) = \tilde{U}(t)\tilde{Ϛ}\tilde{U}(t)^{*}$ | Von Neumann evolution |

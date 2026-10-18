@@ -38,11 +38,9 @@ $$
 K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t_i) = \langle x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z|\,\tilde U(t_f-t_i)\,|x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z\rangle ,
 $$
 
-a field on pairs of points taking values in the state module's endomorphism algebra; since $\tilde U$ is central, it is
+a field on pairs of points taking values in the state module's endomorphism algebra; since $\tilde U$ is central, the kernel is a complex scalar times $e_t$, $K\,e_t$, with
 
 $$
-K = K\,e_t,
-\qquad
 K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t_i)\in\mathbb{C},
 $$
 
@@ -177,7 +175,7 @@ S_{\mathrm{cl}}(x,t;x_0,0)
 =\frac{m\omega}{2\sin\omega t}\Big((x^2+x_0^2)\cos\omega t-2xx_0\Big)
 $$
 
-the classical action of the oscillator evaluated between the endpoints, and with the fluctuation factor $F(t)$ independent of the endpoints. Substituting this form into the Schrödinger equation gives $F'/F=-\frac{\omega}{2}\cot\omega t$, hence $F(t)=C/\sqrt{\sin\omega t}$, and the constant $C$ is fixed by the short-time limit: as $t\to0$, $\sin\omega t\to\omega t$ and the kernel must tend to the free short-time kernel $(m/2\pi i\hbar t)^{1/2}$, which gives $C=\sqrt{m\omega/2\pi i\hbar}$. The biquaternion content of the construction is again the same: $K_\omega=K_\omega e_t$, a central element, because the action is a real scalar and the fluctuation factor is a function of central quantities.
+the classical action of the oscillator evaluated between the endpoints, and with the fluctuation factor $F(t)$ independent of the endpoints. Substituting this form into the Schrödinger equation gives $F'/F=-\frac{\omega}{2}\cot\omega t$, hence $F(t)=C/\sqrt{\sin\omega t}$, and the constant $C$ is fixed by the short-time limit: as $t\to0$, $\sin\omega t\to\omega t$ and the kernel must tend to the free short-time kernel $(m/2\pi i\hbar t)^{1/2}$, which gives $C=\sqrt{m\omega/2\pi i\hbar}$. The biquaternion content of the construction is again the same: the kernel is $K_\omega\,e_t$ with $K_\omega$ the scalar amplitude, a central element, because the action is a real scalar and the fluctuation factor is a function of central quantities.
 
 The kernel has poles at $\sin\omega t=0$, i.e. at $\omega t=n\pi$. These are the caustics of the oscillator: the classical trajectories refocus after a half period, the fluctuation factor diverges, and the simple form of the kernel breaks down. They are the same points at which the Maslov phases accumulate in the semiclassical expansion.
 
@@ -293,7 +291,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 **What the biquaternion notation provides.**
 
-- **A central kernel, made manifest.** The Hamiltonian is central, so $K=K\,e_t$ and the path integral acts on the state module as scalar multiplication. The entire Schrödinger path integral for a spin-0 particle is the scalar path integral tensored with the identity on $\mathbb{C}^2$, and the module orientation of the initial state is propagated unchanged.
+- **A central kernel, made manifest.** The Hamiltonian is central, so the kernel is $K\,e_t$ and the path integral acts on the state module as scalar multiplication. The entire Schrödinger path integral for a spin-0 particle is the scalar path integral tensored with the identity on $\mathbb{C}^2$, and the module orientation of the initial state is propagated unchanged.
 - **The phase's status, delegated and used.** The centrality of the phase and the sector location of the exponent are established by the companion article *The Path Integral in Biquaternionic Form*; this article uses them without re-deriving them, and adds the kernel-theoretic consequences.
 - **The oscillator kernel as a central deformation.** The whole one-parameter family $K_\omega$ is central, and the free kernel is its $\omega\to0$ limit; the family contains the free kernel, the oscillator kernel, and (after Wick rotation) the Mehler kernel, all as central elements.
 - **The square root of the central $i$.** The fluctuation prefactor $(m/2\pi i\hbar\varepsilon)^{3/2}$ and the van Vleck factor $(2\pi i\hbar)^{-3/2}$ involve $\sqrt{i}$; the root is taken inside the centre, so the Maslov phases are phases of a central element rather than of a chosen complex structure.
@@ -317,7 +315,7 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 
 ## Summary
 
-The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde U(t)=\exp(-iHt/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $K=K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
+The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde U(t)=\exp(-iHt/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
 K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)

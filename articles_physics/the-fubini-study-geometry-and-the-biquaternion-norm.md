@@ -46,9 +46,9 @@ $$
 
 Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.
 
-**The trace pairing.**
+**The trace pairing.** For a second Hermitian element $\tilde Q=Q_t\,e_t+i\vec Q$,
 $$
-\mathrm{Tr}(\tilde{H}\tilde{K})=2\bigl(h_0k_0+\vec h\cdot\vec k\bigr)
+\mathrm{Tr}(\tilde{H}\tilde{Q})=2\bigl(h_0Q_t+\vec h\cdot\vec Q\bigr)
 $$
 is positive definite, of signature $(4,0)$; it is the Euclidean pairing on $\mathbb{R}^4$ up to the normalization $\mathrm{Tr}(e_t)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
 
@@ -56,13 +56,13 @@ is positive definite, of signature $(4,0)$; it is the Euclidean pairing on $\mat
 $$
 \langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=\tilde{H}\tilde{H}^{\natural}=\bigl(h_0^2-|\vec h|^2\bigr)e_t,
 \qquad
-\langle\tilde{H},\tilde{K}\rangle=\tfrac12\bigl(\tilde{H}\tilde{K}^{\natural}+\tilde{K}\tilde{H}^{\natural}\bigr)=\bigl(h_0k_0-\vec h\cdot\vec k\bigr)e_t,
+\langle\tilde{H},\tilde{Q}\rangle=\tfrac12\bigl(\tilde{H}\tilde{Q}^{\natural}+\tilde{Q}\tilde{H}^{\natural}\bigr)=\bigl(h_0Q_t-\vec h\cdot\vec Q\bigr)e_t,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 
 The two forms are the two ingredients of the geometry. The trace pairing is positive definite and therefore measures *overlap*; the biquaternion norm is indefinite, vanishes on the pure states, and therefore cannot measure *length* on them directly. The point of the article is that the biquaternion norm nevertheless determines the length, through its second variation on the null boundary. That is a standard feature of a quadratic form at a null direction — the first variation vanishes, and the second variation carries the geometry — and here it is the whole content of the Fubini–Study metric.
 
-The reader should also keep in mind what these forms are *not*. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}\,e_t=\det M(\tilde{Q})\,e_t$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}\tilde{K})=\mathrm{Tr}(M(\tilde{H})M(\tilde{K}))$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.
+The reader should also keep in mind what these forms are *not*. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}\,e_t=\det M(\tilde{Q})\,e_t$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}\tilde{Q})=\mathrm{Tr}(M(\tilde{H})M(\tilde{Q}))$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.
 
 ## Pure States and the Projective Line
 
@@ -225,7 +225,7 @@ $$
 \qquad\text{so}\qquad
 J_{\vec{u}}(v)=\tfrac12\,[\vec{u},v].
 $$
-The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables, $[\tilde{H},\tilde{K}]=-2(\vec h\times\vec k)$, restricted to the boundary.
+The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables, $[\tilde{H},\tilde{Q}]=-2(\vec h\times\vec Q)$, restricted to the boundary.
 
 **The Kähler compatibility.** The metric $g(\delta_1,\delta_2)=\tfrac14\,\delta_1\vec{u}\cdot\delta_2\vec{u}$ is invariant under $J$, because $J$ is a rotation:
 $$

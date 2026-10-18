@@ -136,11 +136,11 @@ The check was performed numerically on the central candidates and confirms that 
 
 **What the sector decomposition is not.** The Hermitian/anti-Hermitian split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ must not be mistaken for a superselection structure. It is the eigenspace decomposition of the involution ${}^{*}$; it is not a decomposition by central projections, and the subspace $\mathbb{M}_+$ is not a subalgebra — the product of two Hermitian elements is Hermitian only if they commute:
 $$
-\tilde{H},\tilde{K}\in\mathbb{M}_+
+\tilde{Q}_1,\tilde{Q}_2\in\mathbb{M}_+
 \ \Longrightarrow\
-(\tilde{H}\tilde{K})^{*}=\tilde{K}\tilde{H},
+(\tilde{Q}_1\tilde{Q}_2)^{*}=\tilde{Q}_2\tilde{Q}_1,
 $$
-which equals $\tilde{H}\tilde{K}$ if and only if $[\tilde{H},\tilde{K}]=0$. The sectors are a grading of the vector space, not a splitting of the algebra, and they are mixed by multiplication. They are the material and informational subspaces of the foundational articles, and their role is kinematic; they do not constitute superselection sectors.
+which equals $\tilde{Q}_1\tilde{Q}_2$ if and only if $[\tilde{Q}_1,\tilde{Q}_2]=0$. The sectors are a grading of the vector space, not a splitting of the algebra, and they are mixed by multiplication. They are the material and informational subspaces of the foundational articles, and their role is kinematic; they do not constitute superselection sectors.
 
 The absence of central projections is therefore a genuine algebraic limitation, and it is the structural reason that the framework's classical sector is minimal. A reader who expects the two sectors, or the two spin components, to furnish superselection labels will not find them in the centre; the centre contains only the scalars.
 

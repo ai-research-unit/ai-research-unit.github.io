@@ -50,10 +50,10 @@ $$
 
 a real-valued quadratic form on $\mathbb{M}_+$, of **signature $(1,3)$**: the scalar direction $e_t$ is positive, the three imaginary directions $i \vec e_x, i \vec e_y, i \vec e_z$ are negative. This is the mirror image of the signature $(3,1)$ that the same biquaternion norm carries on the anti-Hermitian subspace $\mathbb{M}_-$.
 
-The biquaternion norm is not the trace pairing. The trace pairing
+The biquaternion norm is not the trace pairing. For $\tilde Q_1,\tilde Q_2\in\mathbb{M}_+$, the trace pairing
 
 $$
-\mathrm{Tr}(\tilde{H}\tilde{K}) = 2\bigl(h_0 k_0 + \vec h\cdot\vec k\bigr)
+\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\bigl(Q_{1t} Q_{2t} + \vec Q_1\cdot\vec Q_2\bigr)
 $$
 
 is positive-definite, of signature $(4,0)$; it is the analogue of the Hilbert–Schmidt inner product. The biquaternion norm and the trace pairing are distinct quadratic structures on the same four-dimensional space, and keeping them apart is essential: positivity of a state is a condition on the biquaternion norm, while the Born rule is a condition on the trace pairing.
@@ -583,7 +583,7 @@ The ball has a mirror interpretation in the material sector. The map $\tilde{H} 
 | $\tilde{H} = h_0 e_t + i\vec h$ | General Hermitian element |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
 | $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\vec h|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
-| $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \vec h\cdot\vec k)$ | Trace pairing, signature $(4,0)$ |
+| $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2(Q_{1t} Q_{2t} + \vec Q_1\cdot\vec Q_2)$ | Trace pairing, signature $(4,0)$ |
 | $\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$ | Trace-one hyperplane |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State, Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state), $|\vec u| = 1$ |

@@ -533,16 +533,16 @@ Hence the **shocks of the charge–current field are generally not transverse** 
 
 ## The General Front Condition of the Biwave Equation
 
-The two front systems above are specializations of one statement, and it is worth recording because it is the general theorem behind both. For an arbitrary bipotential $\tilde K$ and source $\tilde G$ of the biwave equation $\tilde\nabla^{\pm}\tilde K = \tilde G$ — the equation the field strength and the charge–current field both satisfy — the layer calculus of *Distributions on Surfaces, Layers, and Jump Conditions* gives, for a field with a finite gap on a front $S$,
+The two front systems above are specializations of one statement, and it is worth recording because it is the general theorem behind both. For an arbitrary bipotential $\tilde{K}_{\mathrm{bip}}$ and source $\tilde G$ of the biwave equation $\tilde\nabla^{\pm}\tilde{K}_{\mathrm{bip}} = \tilde G$ — the equation the field strength and the charge–current field both satisfy — the layer calculus of *Distributions on Surfaces, Layers, and Jump Conditions* gives, for a field with a finite gap on a front $S$,
 
 $$
-\tilde\nabla^{\pm}\tilde K = \tilde\nabla^{\pm}\tilde K + (n_{ict} + \vec w)\circ[\tilde K]_S\,\delta_S ,
+\tilde\nabla^{\pm}\tilde{K}_{\mathrm{bip}} = \tilde\nabla^{\pm}\tilde{K}_{\mathrm{bip}} + (n_{ict} + \vec w)\circ[\tilde{K}_{\mathrm{bip}}]_S\,\delta_S ,
 $$
 
-with $n_{ict}$ the normal's time component and $\vec w$ its spatial part, in the corpus's $ict$ normalization that the introduction records as $D^\pm$ up to $i$ and a sign. On a non-characteristic front the normal is invertible and the jump vanishes. On a **characteristic** front, $n_{ict}^2 + \|\vec w\|^2 = 0$, the normal is a zero divisor and $(n_{ict} + \vec w)\circ[\tilde K]_S = 0$ has nontrivial solutions. Writing $\vec m = \vec w/\|\vec w\|$ for the unit spatial normal and $[\tilde K]_S = [k]_S + [\vec K]_S$ for the scalar and vector parts of the jump, it is the null relation
+with $n_{ict}$ the normal's time component and $\vec w$ its spatial part, in the corpus's $ict$ normalization that the introduction records as $D^\pm$ up to $i$ and a sign. On a non-characteristic front the normal is invertible and the jump vanishes. On a **characteristic** front, $n_{ict}^2 + \|\vec w\|^2 = 0$, the normal is a zero divisor and $(n_{ict} + \vec w)\circ[\tilde{K}_{\mathrm{bip}}]_S = 0$ has nontrivial solutions. Writing $\vec m = \vec w/\|\vec w\|$ for the unit spatial normal and $[\tilde{K}_{\mathrm{bip}}]_S = [k]_S + [\vec K]_S$ for the scalar and vector parts of the jump, it is the null relation
 
 $$
-[\tilde K]_S = i\,\vec m\circ[\tilde K]_S ,
+[\tilde{K}_{\mathrm{bip}}]_S = i\,\vec m\circ[\tilde{K}_{\mathrm{bip}}]_S ,
 \qquad\text{equivalently}\qquad
 [k]_S = -i\,(\vec m, [\vec K]_S),
 \quad

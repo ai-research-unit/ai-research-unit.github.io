@@ -94,10 +94,10 @@ $$
 
 The verification is one line: $[\tilde J_i,\tilde J_j] = (-i\hbar)^2 [g_i,g_j] = -\hbar^2(-\epsilon_{ijk}g_k) = \hbar^2\epsilon_{ijk}g_k$, while $i\hbar\epsilon_{ijk}\tilde J_k = i\hbar\epsilon_{ijk}(-i\hbar g_k) = \hbar^2\epsilon_{ijk}g_k$. The two agree. The passage between the two pictures is the standard one: the Hermitian observables $\tilde J_k$ generate the unitary rotations through $\exp(-i\theta\,\vec u_k\tilde J_k/\hbar)$, and the anti-Hermitian generators $g_k$ are the elements of the Lie algebra.
 
-A structural remark is in order. For two Hermitian elements $\tilde H = h_t e_t + i\vec h$ and $\tilde K = k_t e_t + i\vec k$ of $\mathbb{M}_+$, the companion article computes
+A structural remark is in order. For two Hermitian elements $\tilde Q_1 = Q_{1t} e_t + i\vec Q_1$ and $\tilde Q_2 = Q_{2t} e_t + i\vec Q_2$ of $\mathbb{M}_+$, the companion article computes
 
 $$
-[\tilde H,\tilde K] = -2\,(\vec h\times\vec k),
+[\tilde Q_1,\tilde Q_2] = -2\,(\vec Q_1\times\vec Q_2),
 $$
 
 which is a pure real quaternion, an element of $\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$. In particular the commutator of two observables is not another observable but a **rotation generator**. The angular-momentum commutation relations are therefore a statement about the quaternion product: the right-hand side $i\hbar\epsilon_{ijk}\tilde J_k$ is a rotation generator — $i$ times a Hermitian observable, hence anti-Hermitian.

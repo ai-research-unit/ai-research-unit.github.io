@@ -32,18 +32,18 @@ $$
 are Hermitian, and $[\tilde{Q},\tilde P]=i e_t$. The energy is $\tilde H=\omega(a^\dagger a+\tfrac12)$; the (shifted) number operator $a^\dagger a+\tfrac12$ counts the excitations. The quadratic combinations
 
 $$
-\tilde K_1=\tfrac12(\tilde{Q}^2-\tilde P^2),\qquad
-\tilde K_2=\tfrac12(\tilde{Q}\tilde P+\tilde P\tilde{Q}),\qquad
-\tilde K_3=a^\dagger a+\tfrac12
+\tilde{K}_{\mathrm{osc},1}=\tfrac12(\tilde{Q}^2-\tilde P^2),\qquad
+\tilde{K}_{\mathrm{osc},2}=\tfrac12(\tilde{Q}\tilde P+\tilde P\tilde{Q}),\qquad
+\tilde{K}_{\mathrm{osc},3}=a^\dagger a+\tfrac12
 $$
 
-are the generators of the oscillator's dynamical algebra: $\tilde K_3$ generates the phase $\mathrm{U}(1)$, and $\tilde K_1,\tilde K_2$ generate the two squeezes. They close into an $su(1,1)$ algebra; the representative relation, which we use below, is
+are the generators of the oscillator's dynamical algebra: $\tilde{K}_{\mathrm{osc},3}$ generates the phase $\mathrm{U}(1)$, and $\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2}$ generate the two squeezes. They close into an $su(1,1)$ algebra; the representative relation, which we use below, is
 
 $$
-[\tilde K_1,\tilde K_2]=2i\,\tilde K_3 .
+[\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2}]=2i\,\tilde{K}_{\mathrm{osc},3} .
 $$
 
-Each $\tilde K_\nu$ is Hermitian; the bracket is $i$ times a Hermitian element, hence anti-Hermitian. This is the algebra whose placement in $\mathbb{B}$ we now examine.
+Each $\tilde{K}_{\mathrm{osc},\nu}$ is Hermitian; the bracket is $i$ times a Hermitian element, hence anti-Hermitian. This is the algebra whose placement in $\mathbb{B}$ we now examine.
 
 ## The Two Sectors Are Not the Two Quadratures
 
@@ -172,13 +172,13 @@ The connection to the dynamics is direct. The parent article's evolution $\tilde
 
 ## Squeezing Is a Boost
 
-The oscillator's squeezes are where the algebra adds the most. In the standard theory the quadratic generators $\tilde K_1,\tilde K_2,\tilde K_3$ close into $su(1,1)$ with a structure constant equal to $i$:
+The oscillator's squeezes are where the algebra adds the most. In the standard theory the quadratic generators $\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2},\tilde{K}_{\mathrm{osc},3}$ close into $su(1,1)$ with a structure constant equal to $i$:
 
 $$
-[\tilde K_1,\tilde K_2]=2i\,\tilde K_3 .
+[\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2}]=2i\,\tilde{K}_{\mathrm{osc},3} .
 $$
 
-Both $\tilde K_1$ and $\tilde K_2$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.
+Both $\tilde{K}_{\mathrm{osc},1}$ and $\tilde{K}_{\mathrm{osc},2}$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.
 
 The generator content is sharper still. A squeeze, $\tilde{Q}\mapsto\tilde{Q}\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde{Q}\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}\pm\tilde P$ by $\exp(\mp r)$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde U_{\mathrm b}=\cosh(\psi/2)\,e_t+i\sinh(\psi/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde{Q}_{4}=ict\,e_t+x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde{Q}_4\mapsto\tilde U_{\mathrm b}\tilde{Q}_4\tilde U_{\mathrm b}^{*}$; computing the result gives
 
@@ -229,7 +229,7 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | $\tilde{Q},\tilde P$ | Quadratures, Hermitian elements of $\mathbb{M}_+$ |
 | $a,a^\dagger$ | Ladder operators, straddling $\mathbb{M}_+\oplus\mathbb{M}_-$ |
 | $a^\dagger a$ | Number operator |
-| $\tilde K_1,\tilde K_2,\tilde K_3$ | Quadratic generators (squeezes and phase), $[\tilde K_1,\tilde K_2]=2i\tilde K_3$ |
+| $\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2},\tilde{K}_{\mathrm{osc},3}$ | Quadratic generators (squeezes and phase), $[\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2}]=2i\tilde{K}_{\mathrm{osc},3}$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Truncated lowering operator |
 | $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Truncated number operator (idempotent) |
 | $\tilde U_{\mathrm b}=\cosh\frac\psi2+i\sinh\frac\psi2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |

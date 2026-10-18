@@ -46,13 +46,13 @@ $$
 so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int F^a{F^{\mathrm{dual}}}^a=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,
 
 $$
-F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}=\langle\tilde\nabla,\tilde K\rangle_{\natural} ,
+F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural} ,
 \qquad
-K^\mu=\epsilon^{\mu\nu\rho\sigma}\Bigl(A^a_\nu F^a_{\rho\sigma}
+J_{\mathrm{CS}}^\mu=\epsilon^{\mu\nu\rho\sigma}\Bigl(A^a_\nu F^a_{\rho\sigma}
 -\tfrac{g}{3}\,\epsilon^{abc}A^a_\nu A^b_\rho A^c_\sigma\Bigr),
 $$
 
-the standard non-abelian Chern–Simons current, whose abelian part is the primitive $K^\mu=\epsilon^{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ of *Instantons and Solitons in Biquaternionic Form* and whose form identity $F\wedge F=d\Omega_{\mathrm{CS}}$ is that article's. Two consequences of the total-derivative property are stated there and are used here: the integral depends only on the boundary data, hence on the instanton number, and the local equations of motion are unaffected by the theta term, so its effects are topological and quantum-mechanical rather than classical.
+the standard non-abelian Chern–Simons current, whose abelian part is the primitive $J_{\mathrm{CS}}^\mu=\epsilon^{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ of *Instantons and Solitons in Biquaternionic Form* and whose form identity $F\wedge F=d\Omega_{\mathrm{CS}}$ is that article's. Two consequences of the total-derivative property are stated there and are used here: the integral depends only on the boundary data, hence on the instanton number, and the local equations of motion are unaffected by the theta term, so its effects are topological and quantum-mechanical rather than classical.
 
 **The abelian density is the framework's invariant.** In the Maxwell sector the density collapses to the second invariant,
 
@@ -182,7 +182,7 @@ The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutro
 | $S_\theta=\frac{\theta}{32\pi^2}\int FF^{\mathrm{dual}}$ | Theta term of the action |
 | ${F^{\mathrm{dual}}}^{\mu\nu}=\frac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge, $Ϙ\in\mathbb Z$ |
-| $K^\mu$ | Chern–Simons current, $FF^{\mathrm{dual}}=\langle\tilde\nabla,\tilde K\rangle_{\natural}$ |
+| $J_{\mathrm{CS}}^\mu$ | Chern–Simons current, $FF^{\mathrm{dual}}=\langle\tilde\nabla,\tilde J_{\mathrm{CS}}\rangle_{\natural}$ |
 | $Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$ | Theta-dependent partition function, period $2\pi$ |
 | $\bar\theta=\theta+\arg\det M_q$ | Physical CP-violating parameter |
 | $M_q$ | Quark mass matrix (imported) |

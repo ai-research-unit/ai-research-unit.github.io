@@ -251,7 +251,7 @@ $$
 $$
 
 obtained from $\vec\nabla\vec v = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial/\partial Q_\mu\,v_\nu$: only the terms with $\mu = \nu$ contribute to the centre, and $\vec e_k^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla\vec v$, a scalar statement, while the remainder of $\vec\nabla\vec v$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
-- Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the vector-part algebra and the commutator $[\tilde{H},\tilde{K}] = -2(\vec h\times\vec k)$ used in these manipulations.
+- Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the vector-part algebra and the commutator $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ used in these manipulations.
 
 ### The Energy of a Mode
 

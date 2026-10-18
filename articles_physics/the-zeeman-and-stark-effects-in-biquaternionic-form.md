@@ -86,7 +86,7 @@ Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting i
 
 ### The Selection Rule as a Commutator
 
-A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{H},\tilde{K}] = -2(\vec h\times\vec k)$ of the companion article *Quantum Physics in Biquaternionic Form*,
+A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ of the companion article *Quantum Physics in Biquaternionic Form*,
 
 $$
 \left[\tilde{H}_Z,\,dE\,i\vec e_x\right] = -2\left(-\frac{\hbar\omega_L}{2}\vec u\right)\times(dE\,\vec u_x)
@@ -284,7 +284,7 @@ The two effects differ because a spin-1/2 carries a permanent magnetic dipole an
 | $E_\pm = \pm\sqrt{(\hbar\omega_0/2)^2+(Ed)^2}$ | Exact two-level Stark levels |
 | $\alpha = 2d^2/\hbar\omega_0$ | Static polarizability of the two-level system |
 | $\Delta E_0 = -\tfrac12\alpha E^2$ | Quadratic Stark shift |
-| $[\tilde{H},\tilde{K}] = -2(\vec h\times\vec k)$ | Commutator of two Hermitian elements |
+| $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ | Commutator of two Hermitian elements |
 
 ## Further Reading
 

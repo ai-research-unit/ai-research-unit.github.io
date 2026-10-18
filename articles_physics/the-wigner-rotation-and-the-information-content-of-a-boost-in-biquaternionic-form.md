@@ -32,18 +32,18 @@ The companion articles supply the pieces:
 
 ### The generator and the Cartan decomposition
 
-The Lorentz algebra is spanned by the rotation generators $\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0}$ and the boost generators $\tilde{K}_k = \tfrac12 i \vec e_k\in\mathbb{M}_+^{0}$, with
+The Lorentz algebra is spanned by the rotation generators $\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0}$ and the boost generators $\tilde{K}_{\mathrm{boost},k} = \tfrac12 i \vec e_k\in\mathbb{M}_+^{0}$, with
 $$
 [\tilde{J}_j,\tilde{J}_k] = -\epsilon_{jkl}\tilde{J}_l, \qquad
-[\tilde{J}_j,\tilde{K}_k] = -\epsilon_{jkl}\tilde{K}_l, \qquad
-[\tilde{K}_j,\tilde{K}_k] = +\epsilon_{jkl}\tilde{J}_l .
+[\tilde{J}_j,\tilde{K}_{\mathrm{boost},k}] = -\epsilon_{jkl}\tilde{K}_{\mathrm{boost},l}, \qquad
+[\tilde{K}_{\mathrm{boost},j},\tilde{K}_{\mathrm{boost},k}] = +\epsilon_{jkl}\tilde{J}_l .
 $$
-The first bracket closes the rotation subalgebra, the second says that the boosts form a representation of the rotations, and the third — the decisive one — says that the **boosts do not close**: the commutator of two boosts is a rotation. This is the algebraic origin of everything that follows. A boost is the image of the generator $\tilde{K}$ under the exponential map,
+The first bracket closes the rotation subalgebra, the second says that the boosts form a representation of the rotations, and the third — the decisive one — says that the **boosts do not close**: the commutator of two boosts is a rotation. This is the algebraic origin of everything that follows. A boost is the image of the generator $\tilde{K}_{\mathrm{boost}}$ under the exponential map,
 $$
 \tilde U = \exp\!\bigl(\psi\,\vec u_{\mathrm b}\cdot i\mathbf{e}/2\bigr)
 = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} ,
 $$
-which is Hermitian because $\tilde{K}$ is Hermitian and $i\tilde{K}$ is anti-Hermitian. The set of pure boosts is therefore the exponential of a three-dimensional real subspace of Hermitian generators, and it is a symmetric space rather than a group: the product of two boosts is a boost times a rotation, by the third bracket.
+which is Hermitian because $\tilde{K}_{\mathrm{boost}}$ is Hermitian and $i\tilde{K}_{\mathrm{boost}}$ is anti-Hermitian. The set of pure boosts is therefore the exponential of a three-dimensional real subspace of Hermitian generators, and it is a symmetric space rather than a group: the product of two boosts is a boost times a rotation, by the third bracket.
 
 The Cartan decomposition reflects the same fact at the group level,
 $$
@@ -131,7 +131,7 @@ The controlled form is not an approximation or a convenience; it is forced. A bo
 $$
 \tilde{U}(\tilde U) = \tilde{V}_{\mathrm{mom}}(\tilde U)\otimes\tilde u(\tilde U),
 $$
-then the spin operation would be momentum-independent, the cocycle would be a homomorphism, and the third Lie bracket $[\tilde{K},\tilde{K}] = \tilde{J}$ would be contradicted: the composition of two boosts would have to be a boost with no rotation. The Wigner rotation is exactly the obstruction to that factorisation, and the controlled form is its operational statement.
+then the spin operation would be momentum-independent, the cocycle would be a homomorphism, and the third Lie bracket $[\tilde{K}_{\mathrm{boost}},\tilde{K}_{\mathrm{boost}}] = \tilde{J}$ would be contradicted: the composition of two boosts would have to be a boost with no rotation. The Wigner rotation is exactly the obstruction to that factorisation, and the controlled form is its operational statement.
 
 ### The information imprinted on a single spin
 
@@ -219,13 +219,13 @@ The information interpretation of the holonomy is the sharpest statement availab
 
 The structural companion's split reads the Wigner rotation sharply. The boost generator lies in the traceless **informational** sector,
 $$
-\tilde{K}_k = \tfrac12 i\vec e_k\in\mathbb{M}_+^{0},
+\tilde{K}_{\mathrm{boost},k} = \tfrac12 i\vec e_k\in\mathbb{M}_+^{0},
 $$
 while the rotation it generates lies in the traceless **material** sector,
 $$
 \tilde{W} = \cos\frac{\alpha}{2}e_t + \sin\frac{\alpha}{2}\vec u_{\mathrm r}, \qquad \vec u_{\mathrm r}\cdot\mathbf{e}\in\mathbb{M}_-^{0} .
 $$
-A boost is therefore an informational generator whose observable residue is a material rotation, and the map between them is the bracket $[\tilde{K},\tilde{K}] = \tilde{J}$ that carries the informational sector into the material one. The information content of a boost, read this way, is the material image of an informational operation: the rapidity, which is the parameter of an element of the informational sector, appears to an observer as an angle in the material sector, and it does so through a map that is a cocycle rather than a homomorphism. The same structure appeared in the relativistic-qubit article as the null-vector map, which carries an informational state to a material light direction; here it appears at the level of the generators, and the compact, material character of the image is what makes it observable as a rotation rather than as a boost.
+A boost is therefore an informational generator whose observable residue is a material rotation, and the map between them is the bracket $[\tilde{K}_{\mathrm{boost}},\tilde{K}_{\mathrm{boost}}] = \tilde{J}$ that carries the informational sector into the material one. The information content of a boost, read this way, is the material image of an informational operation: the rapidity, which is the parameter of an element of the informational sector, appears to an observer as an angle in the material sector, and it does so through a map that is a cocycle rather than a homomorphism. The same structure appeared in the relativistic-qubit article as the null-vector map, which carries an informational state to a material light direction; here it appears at the level of the generators, and the compact, material character of the image is what makes it observable as a rotation rather than as a boost.
 
 Three algebraic facts about a boost are therefore three faces of one statement. The Cartan decomposition says that every frame transformation is a rotation times a boost. The cocycle condition says that the spin part of that product is twisted by the momentum. The holonomy says that the twist has curvature. Together they say that the boost parameter space is not a flat arena of frame labels but a curved space of operations, and that the information a boost carries about itself is the rotation it leaves behind.
 
@@ -241,7 +241,7 @@ $$
 $$
 obeying the cocycle condition $\tilde{W}(\tilde U_2\tilde U_1,\tilde{V}) = \tilde{W}(\tilde U_2,\tilde U_1\tilde{V})\tilde{W}(\tilde U_1,\tilde{V})$. For a boost along $x$ of rapidity $1$ followed by one along $y$ of rapidity $0.5$, the rotation is $0.99366\,e_t+0.11246\,\vec e_z$, an angle of $12.9146^\circ$ about $\vec u_z$.
 
-Operationally the boost is a **controlled rotation**: on a momentum superposition it acts as $\sum_i|p_i'\rangle\langle p_i|\otimes\tilde{W}_i$, with the momentum as control and the branch-dependent Wigner rotation as the operation on the target. The factorisation into a momentum operation times a spin operation is forbidden by the bracket $[\tilde{K},\tilde{K}] = \tilde{J}$, and the Wigner rotation is the obstruction. The angle is zero for collinear boosts and exact for transverse ones, $\tan\alpha = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$; it grows with the rapidity towards $\arctan(\sinh\chi)$, so the entropy imprinted on a transverse spin, $h((1+\cos\alpha)/2)$, approaches one bit, while for small rapidities $\alpha\approx\tfrac12\psi\chi\sin\theta$. The information a boost carries is the pair (angle, axis) of its Wigner rotation, and a spin collinear with the boost carries none of it.
+Operationally the boost is a **controlled rotation**: on a momentum superposition it acts as $\sum_i|p_i'\rangle\langle p_i|\otimes\tilde{W}_i$, with the momentum as control and the branch-dependent Wigner rotation as the operation on the target. The factorisation into a momentum operation times a spin operation is forbidden by the bracket $[\tilde{K}_{\mathrm{boost}},\tilde{K}_{\mathrm{boost}}] = \tilde{J}$, and the Wigner rotation is the obstruction. The angle is zero for collinear boosts and exact for transverse ones, $\tan\alpha = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$; it grows with the rapidity towards $\arctan(\sinh\chi)$, so the entropy imprinted on a transverse spin, $h((1+\cos\alpha)/2)$, approaches one bit, while for small rapidities $\alpha\approx\tfrac12\psi\chi\sin\theta$. The information a boost carries is the pair (angle, axis) of its Wigner rotation, and a spin collinear with the boost carries none of it.
 
 Because the boost parameter space is curved, a closed path of boosts that returns the four-velocity to its starting value returns the spin only up to a rotation. For the loop $0\to\vec v_1\to\vec v_2\to0$ with a boost along $x$ of rapidity $a$ and one along $y$ of rapidity $b$, the holonomy is a rotation about $\vec u_z$ by $6.86557^\circ$, $12.91464^\circ$, $24.10915^\circ$, and $32.71532^\circ$ for $(a,b) = (0.5,0.5)$, $(1,0.5)$, $(1,1)$, $(1.5,1)$. This is the Thomas–Wigner holonomy, and its rate form is Thomas precession; it is the information a path of boosts carries beyond the information in its endpoints.
 
@@ -253,9 +253,9 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $\psi$ | Rapidity |
 | $\vec u_{\mathrm b}$ | Boost direction |
 | $\chi = \mathrm{atanh}(v/c)$ | Particle rapidity |
-| $\tilde{K}_k = \tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$ | Boost generators (informational) |
+| $\tilde{K}_{\mathrm{boost},k} = \tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$ | Boost generators (informational) |
 | $\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0}$ | Rotation generators (material, compact) |
-| $[\tilde{K}_j,\tilde{K}_k] = \epsilon_{jkl}\tilde{J}_l$ | Non-closure of the boosts |
+| $[\tilde{K}_{\mathrm{boost},j},\tilde{K}_{\mathrm{boost},k}] = \epsilon_{jkl}\tilde{J}_l$ | Non-closure of the boosts |
 | $SL(2,\mathbb{C}) = SU(2)\cdot\exp(p)$ | Cartan decomposition |
 | $\tilde{W}(\tilde U,\tilde{V})$ | Wigner rotation, $\in SU(2)$ |
 | $\alpha$, $\vec u_{\mathrm r}$ | Wigner angle and axis, $\vec u_{\mathrm r}\perp\vec u_{\mathrm b},\vec u_p$ |
