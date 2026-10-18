@@ -49,12 +49,12 @@ Each $\tilde K_\nu$ is Hermitian; the bracket is $i$ times a Hermitian element, 
 
 The claim to test begins from the observation that one complex degree of freedom is two real degrees of freedom. In $\mathbb{B}$ there is indeed a canonical decomposition of every element into two parts, and it is worth stating exactly what the two parts are.
 
-Every $\tilde A\in\mathbb{B}$ decomposes uniquely as
+Every $\tilde Q_1\in\mathbb{B}$ decomposes uniquely as
 
 $$
-\tilde A=\tilde A_{H}+\tilde A_{X},\qquad
-\tilde A_{H}=\tfrac12(\tilde A+\tilde A^{*})\in\mathbb{M}_+,\qquad
-\tilde A_{X}=\tfrac12(\tilde A-\tilde A^{*})\in\mathbb{M}_- .
+\tilde Q_1=\tilde Q_{1H}+\tilde Q_{1X},\qquad
+\tilde Q_{1H}=\tfrac12(\tilde Q_1+\tilde Q_1^{*})\in\mathbb{M}_+,\qquad
+\tilde Q_{1X}=\tfrac12(\tilde Q_1-\tilde Q_1^{*})\in\mathbb{M}_- .
 $$
 
 This is the Hermitian/anti-Hermitian decomposition, and it is the matrix decomposition of an operator into its self-adjoint and skew-adjoint parts. It is also the operation performed by the complex structure: since $i\mathbb{M}_\pm=\mathbb{M}_\mp$, multiplication by $i$ is exactly the map that exchanges the two sectors. The complexification that defines $\mathbb{B}$ and the two-sector decomposition are therefore the same structure.

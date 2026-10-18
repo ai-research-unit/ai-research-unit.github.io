@@ -82,14 +82,14 @@ with the physical measure $d^3y\,dt'$ for the convolution, exactly as the compan
 A second convention is fixed at the same time: the whole article works with the operator $\Box-\mu^2$ and never with $-\Box+\mu^2$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$, the defining equation becomes
 
 $$
-\int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-\mu^2\right)\tilde{G}(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))
+\int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-\mu^2\right)G(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))
 =-\int\frac{d^4p}{(2\pi)^4}\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)),
 $$
 
 so the amplitude is
 
 $$
-\tilde{G}(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2}
+G(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2}
 =\frac{-1}{p^2-\mu^2},
 \qquad
 p^2\equiv\omega^2-\vec p^2 .
@@ -327,10 +327,10 @@ The commutator is a **central scalar** times $e_t$. There is no non-central part
 The **Feynman propagator** is the Green's function whose poles are displaced to opposite sides of the real axis,
 
 $$
-\tilde{G}_F(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2-i\epsilon}
+G_F(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2-i\epsilon}
 =\frac{-1}{p^2-\mu^2+i\epsilon},
 \qquad
-G_F(\tilde{R})=\int\frac{d^4p}{(2\pi)^4}\,\tilde{G}_F(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)) .
+G_F(\tilde{R})=\int\frac{d^4p}{(2\pi)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)) .
 $$
 
 Its frequency integral was given above; its position-space content is the time-ordered correlation function,
@@ -378,7 +378,7 @@ $$
 =\delta^{(4)}(\tilde{R}-\tilde{Z}),
 $$
 
-the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde{R}-\tilde{Y})[-\bigl(\Box_{\tilde{Y}}-\mu^2\bigr)]G_F(\tilde{Y}-\tilde{Z})=G_F(\tilde{R}-\tilde{Z})$, which is the same statement. In momentum space this is the statement $\tilde{G}_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
+the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde{R}-\tilde{Y})[-\bigl(\Box_{\tilde{Y}}-\mu^2\bigr)]G_F(\tilde{Y}-\tilde{Z})=G_F(\tilde{R}-\tilde{Z})$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
 
 ## The Biquaternion Reading
 
@@ -408,7 +408,7 @@ The derivation of the retarded kernel given above is a transcription of the stan
 
 ## Summary
 
-The Klein–Gordon operator $(\Box-\mu^2)$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-\mu^2)G=-\delta^{(4)}$, matching the electromagnetism exercise at $\mu=0$, the momentum-space amplitude is $\tilde{G}=-(p^2-\mu^2)^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2+\mu^2}$.
+The Klein–Gordon operator $(\Box-\mu^2)$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-\mu^2)G=-\delta^{(4)}$, matching the electromagnetism exercise at $\mu=0$, the momentum-space amplitude is $G=-(p^2-\mu^2)^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2+\mu^2}$.
 
 The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\theta(t)\sin(\Omega_{\vec p}t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=\mu\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(\mu\sqrt{t^2-r^2})$; and differentiation gives the closed form
 
@@ -443,7 +443,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, series convention |
 | $\mu=mc/\hbar$ | Inverse Compton wavenumber; the mass scale, $\mu=m$ in natural units |
 | $\Omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$ | On-shell frequency, natural units |
-| $\tilde{G}(\omega,\vec p)=(\vec p^2+\mu^2-\omega^2)^{-1}$ | Momentum-space kernel, $(\Box-\mu^2)G=-\delta^{(4)}$ |
+| $G(\omega,\vec p)=(\vec p^2+\mu^2-\omega^2)^{-1}$ | Momentum-space kernel, $(\Box-\mu^2)G=-\delta^{(4)}$ |
 | $G_R,G_A$ | Retarded and advanced Green's functions |
 | $G_C=G_R-G_A$ | Pauli–Jordan (commutator) function |
 | $G_F$ | Feynman propagator, time-ordered two-point function |

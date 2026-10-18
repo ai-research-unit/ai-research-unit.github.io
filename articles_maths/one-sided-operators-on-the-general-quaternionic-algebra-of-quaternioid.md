@@ -29,12 +29,12 @@ These two families are the one-sided operators of the block. They are the two co
 **Theorem (the composition laws).** For all parameters,
 
 $$
-L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5} , \qquad R_{\tilde q_4}R_{\tilde d} = R_{\tilde d\tilde q_4} , \qquad L_{\tilde q_3}R_{\tilde q_4} = R_{\tilde q_4}L_{\tilde q_3} .
+L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5} , \qquad R_{\tilde q_4}R_{\tilde q_6} = R_{\tilde q_6\tilde q_4} , \qquad L_{\tilde q_3}R_{\tilde q_4} = R_{\tilde q_4}L_{\tilde q_3} .
 $$
 
 The left law preserves the order of the parameters and the right law reverses it, so $\mathcal L$ is a copy of the algebra and $\mathcal R$ a copy of the opposite algebra; the two families commute.
 
-*Proof.* $L_{\tilde q_3}L_{\tilde q_5}(\tilde q) = \tilde q_3\tilde q_5\tilde q = L_{\tilde q_3\tilde q_5}(\tilde q)$; $R_{\tilde q_4}R_{\tilde d}(\tilde q) = \tilde q\tilde d\tilde q_4 = R_{\tilde d\tilde q_4}(\tilde q)$; the commutation is the associativity of the plain product, $\tilde q_3(\tilde q\tilde q_4) = (\tilde q_3\tilde q)\tilde q_4$.
+*Proof.* $L_{\tilde q_3}L_{\tilde q_5}(\tilde q) = \tilde q_3\tilde q_5\tilde q = L_{\tilde q_3\tilde q_5}(\tilde q)$; $R_{\tilde q_4}R_{\tilde q_6}(\tilde q) = \tilde q\tilde q_6\tilde q_4 = R_{\tilde q_6\tilde q_4}(\tilde q)$; the commutation is the associativity of the plain product, $\tilde q_3(\tilde q\tilde q_4) = (\tilde q_3\tilde q)\tilde q_4$.
 
 **Corollary (the intersection and the span).** $\mathcal L \cap \mathcal R = \{\lambda\,\mathrm{id} : \lambda \in \mathbb{R}\}$ is the scalar line of operators, and $\operatorname{span}_\mathbb{R}(\mathcal L \cup \mathcal R)$ has dimension $7$.
 
@@ -102,7 +102,7 @@ The quaternionic adjoint therefore **keeps each family in place** and conjugates
 
 ## Summary
 
-The one-sided operators of the block are the plain left and right multiplications $L_{\tilde q_3}(\tilde q) = \tilde q_3\tilde q$ and $R_{\tilde q_4}(\tilde q) = \tilde q\tilde q_4$: linear and injective in the parameter, invertible exactly for a nonzero one; with the composition laws $L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5}$, $R_{\tilde q_4}R_{\tilde d} = R_{\tilde d\tilde q_4}$ and the commutation $L_{\tilde q_3}R_{\tilde q_4} = R_{\tilde q_4}L_{\tilde q_3}$; the two families intersect in the scalars and span a seven-dimensional space, and the double centraliser is the scalars. The plain form's adjoint exchanges the two families, $L_{\tilde q_3}^{\sim} = R_{\tilde q_3}$ and $R_{\tilde q_4}^{\sim} = L_{\tilde q_4}$; the quaternionic form's adjoint conjugates the parameter and keeps the family, $L_{\tilde q_3}^{N} = L_{\tilde q_3^{\natural}}$ and $R_{\tilde q_4}^{N} = R_{\tilde q_4^{\natural}}$. For the quaternionic form the self-adjoint sector is the scalar line and the skew sector the vector subspace, the two eigenspaces of the conjugation; for the plain form there is no skew sector one-sidedly. A one-sided operator preserves the quaternionic form exactly when its parameter lies on the unit shell, a three-dimensional family, and preserves the plain form only for the two scalar parameters $\pm e_t$.
+The one-sided operators of the block are the plain left and right multiplications $L_{\tilde q_3}(\tilde q) = \tilde q_3\tilde q$ and $R_{\tilde q_4}(\tilde q) = \tilde q\tilde q_4$: linear and injective in the parameter, invertible exactly for a nonzero one; with the composition laws $L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5}$, $R_{\tilde q_4}R_{\tilde q_6} = R_{\tilde q_6\tilde q_4}$ and the commutation $L_{\tilde q_3}R_{\tilde q_4} = R_{\tilde q_4}L_{\tilde q_3}$; the two families intersect in the scalars and span a seven-dimensional space, and the double centraliser is the scalars. The plain form's adjoint exchanges the two families, $L_{\tilde q_3}^{\sim} = R_{\tilde q_3}$ and $R_{\tilde q_4}^{\sim} = L_{\tilde q_4}$; the quaternionic form's adjoint conjugates the parameter and keeps the family, $L_{\tilde q_3}^{N} = L_{\tilde q_3^{\natural}}$ and $R_{\tilde q_4}^{N} = R_{\tilde q_4^{\natural}}$. For the quaternionic form the self-adjoint sector is the scalar line and the skew sector the vector subspace, the two eigenspaces of the conjugation; for the plain form there is no skew sector one-sidedly. A one-sided operator preserves the quaternionic form exactly when its parameter lies on the unit shell, a three-dimensional family, and preserves the plain form only for the two scalar parameters $\pm e_t$.
 
 ## Summary of Notation
 
@@ -110,7 +110,7 @@ The one-sided operators of the block are the plain left and right multiplication
 |---|---|
 | $L_{\tilde q_3}(\tilde q) = \tilde q_3\tilde q$, $R_{\tilde q_4}(\tilde q) = \tilde q\tilde q_4$ | the one-sided operators of the block |
 | $\mathcal L$, $\mathcal R$ | the two four-dimensional families, $\mathcal L \cong \mathbb{H}$, $\mathcal R \cong \mathbb{H}^{\mathrm{opp}}$ |
-| $L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5}$, $R_{\tilde q_4}R_{\tilde d} = R_{\tilde d\tilde q_4}$ | the composition laws, direct on the left and reversed on the right |
+| $L_{\tilde q_3}L_{\tilde q_5} = L_{\tilde q_3\tilde q_5}$, $R_{\tilde q_4}R_{\tilde q_6} = R_{\tilde q_6\tilde q_4}$ | the composition laws, direct on the left and reversed on the right |
 | $L_{\tilde q_3}^{\sim} = R_{\tilde q_3}$, $R_{\tilde q_4}^{\sim} = L_{\tilde q_4}$ | the adjoints for the plain form $\mathrm B$ |
 | $L_{\tilde q_3}^{N} = L_{\tilde q_3^{\natural}}$, $R_{\tilde q_4}^{N} = R_{\tilde q_4^{\natural}}$ | the adjoints for the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $S$, $V$ | the self-adjoint and the skew parameter sectors for $\langle\cdot,\cdot\rangle_{\natural}$ |

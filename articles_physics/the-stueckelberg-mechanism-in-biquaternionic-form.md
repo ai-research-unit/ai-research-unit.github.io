@@ -205,13 +205,13 @@ The Stueckelberg mechanism has one parameter and no potential; the Higgs mechani
 
 ### The Stueckelberg Field Is the Central Scalar
 
-In the framework's terms the Stueckelberg field is the phase of the central scalar, and it is central:
+In the framework's terms the Stueckelberg field is the phase $\tilde\sigma$ of the central scalar
 $$
-\tilde{\sigma}=\sigma e_t\in\mathbb{C}_{\mathbb{B}},
+\tilde\Phi_{\mathrm{St}}=\rho\,\exp(i\tilde{\sigma})\in\mathbb{C}_{\mathbb{B}},
 \qquad
-\tilde{\varphi}=\rho\,\exp(i\tilde{\sigma})\in\mathbb{C}_{\mathbb{B}} ,
+\tilde{\sigma}=\sigma e_t\in\mathbb{C}_{\mathbb{B}},
 $$
-so it lies in the same two-dimensional centre that carries the abelian gauge group. The invariant combination $\tilde A-\tilde\nabla\sigma$ is what the covariant derivative of a central scalar produces: the covariant derivative $\tilde D\tilde\varphi=(\tilde\nabla+i\kappa\tilde A)\tilde\varphi$ on a central scalar of constant magnitude $\rho$ has phase $\kappa\tilde A+\tilde\nabla\vartheta$, and the gauge-invariant content is the combination $\tilde A+\tfrac{1}{\kappa}\tilde\nabla\vartheta$ — the same $\tilde B$ up to the normalization of the phase. The Stueckelberg mass term is therefore the **biquaternion norm of the gauge-invariant derivative**, $-\tfrac12\mu^2\langle\tilde B\rangle$, and the algebra contains it because the centre contains the scalar and the material sector contains the vector.
+so both lie in the same two-dimensional centre that carries the abelian gauge group. The invariant combination $\tilde A-\tilde\nabla\sigma$ is what the covariant derivative of a central scalar produces: the covariant derivative $\tilde D\tilde\Phi_{\mathrm{St}}=(\tilde\nabla+i\kappa\tilde A)\tilde\Phi_{\mathrm{St}}$ on a central scalar of constant magnitude $\rho$ has phase $\kappa\tilde A+\tilde\nabla\vartheta$, and the gauge-invariant content is the combination $\tilde A+\tfrac{1}{\kappa}\tilde\nabla\vartheta$ — the same $\tilde B$ up to the normalization of the phase. The Stueckelberg mass term is therefore the **biquaternion norm of the gauge-invariant derivative**, $-\tfrac12\mu^2\langle\tilde B\rangle$, and the algebra contains it because the centre contains the scalar and the material sector contains the vector.
 
 ### Why the Mechanism Is the Natural One for the Framework
 
@@ -262,6 +262,7 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; home of the Stueckelberg scalar |
 | $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ | Abelian connection and its gauge law |
 | $\tilde{\sigma}=\sigma e_t\in\mathbb{C}_{\mathbb{B}}$, $\sigma'=\sigma-\Gamma$ | Stueckelberg field and its shift |
+| $\tilde\Phi_{\mathrm{St}}=\rho\,\exp(i\tilde{\sigma})\in\mathbb{C}_{\mathbb{B}}$ | Central scalar whose phase is the Stueckelberg field |
 | $\tilde B=\tilde A-\tilde\nabla\sigma$ | Gauge-invariant combination |
 | $\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde B\rangle$ | Stueckelberg Lagrangian |
 | $\mu$ | Stueckelberg mass (a parameter) |

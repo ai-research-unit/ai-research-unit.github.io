@@ -3,15 +3,15 @@
 
 ## Introduction
 
-Every element of the sesqualgebra $(\mathbb{B},\star)$ of *Introduction to the General Plain Sesqualgebra* gives two operators on the underlying space, the **left multiplication** $L_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1$ and the **right multiplication** $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A$. The multiplication is $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$, so on the coordinates
+Every element of the sesqualgebra $(\mathbb{B},\star)$ of *Introduction to the General Plain Sesqualgebra* gives two operators on the underlying space, the **left multiplication** $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\star\tilde Q_1$ and the **right multiplication** $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\star\tilde Q_5$. The multiplication is $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$, so on the coordinates
 
 $$
-L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}, \qquad R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*} .
+L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}, \qquad R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*} .
 $$
 
 The first operator carries the involution in the variable and is conjugate-linear; the second carries it in the parameter and is linear; and the two parities are opposite, because the second scalar rule reads a scalar through the conjugation in the second slot. This is the operator-level form of the two scalar rules, and it is the whole difference from the bilinear products of the space.
 
-The consequence is an asymmetry between the two families. The left multiplications do **not** compose inside themselves: the composite $L_{\tilde A}L_{\tilde Q_2}$ has two conjugations and is therefore $\mathbb{C}$-linear, so it is the ordinary two-sided multiplication $\tilde Q_1\mapsto\tilde A\tilde Q_1\tilde Q_2^{*}$ and not a left multiplication, and the left family is not closed under composition and has no identity. The right multiplications, by contrast, compose, $R_{\tilde A}R_{\tilde Q_2}=R_{\tilde A\tilde Q_2}$, and the family contains $R_{e_t}=\mathrm{id}$; the two mixed composites close it up, $L_{\tilde A}R_{\tilde Q_2}=L_{\tilde A\tilde Q_2}$ returning to the left family and $R_{\tilde A}L_{\tilde Q_2}$ producing the sandwich of *The Sesquilinear Sandwich on the Biquaternioid*. The two families together therefore generate a monoid of four kinds of operator, and the left family alone is not a monoid. The two bilinear multiplications of $\mathbb{B}$ behave differently: their left multiplications do compose, and the regular representation is available there.
+The consequence is an asymmetry between the two families. The left multiplications do **not** compose inside themselves: the composite $L_{\tilde Q_5}L_{\tilde Q_2}$ has two conjugations and is therefore $\mathbb{C}$-linear, so it is the ordinary two-sided multiplication $\tilde Q_1\mapsto\tilde Q_5\tilde Q_1\tilde Q_2^{*}$ and not a left multiplication, and the left family is not closed under composition and has no identity. The right multiplications, by contrast, compose, $R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_5\tilde Q_2}$, and the family contains $R_{e_t}=\mathrm{id}$; the two mixed composites close it up, $L_{\tilde Q_5}R_{\tilde Q_2}=L_{\tilde Q_5\tilde Q_2}$ returning to the left family and $R_{\tilde Q_5}L_{\tilde Q_2}$ producing the sandwich of *The Sesquilinear Sandwich on the Biquaternioid*. The two families together therefore generate a monoid of four kinds of operator, and the left family alone is not a monoid. The two bilinear multiplications of $\mathbb{B}$ behave differently: their left multiplications do compose, and the regular representation is available there.
 
 The subject is the operator theory of the biquaternion sesqualgebra, read from the general article *The Left and Right Multiplication Operators of a Sesqualgebra*, whose parity theorem, regular maps and obstruction to a linear representation are quoted. The ternary operator forms are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*; the two-sided operator produced by the left compositions is *The Sesquilinear Sandwich on the Biquaternioid*; and the comparison with the bilinear readings is *Comparison Between the Four General Products*.
 
@@ -21,27 +21,27 @@ The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathb
 
 ### The Definition
 
-**Definition.** For $\tilde A\in\mathbb{B}$ the **left multiplication** and the **right multiplication** of the sesquilinear multiplication are the maps
+**Definition.** For $\tilde Q_5\in\mathbb{B}$ the **left multiplication** and the **right multiplication** of the sesquilinear multiplication are the maps
 
 $$
-L_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1=\tilde A\tilde Q_1^{*}, \qquad R_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A=\tilde Q_1\tilde A^{*} .
+L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\star\tilde Q_1=\tilde Q_5\tilde Q_1^{*}, \qquad R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\star\tilde Q_5=\tilde Q_1\tilde Q_5^{*} .
 $$
 
-Both are additive in $\tilde Q_1$, since the multiplication is additive in each variable, and both are determined by $\tilde A$. The definition is the one of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Operators*, read on $\mathbb{B}$ with the standard example $\star$.
+Both are additive in $\tilde Q_1$, since the multiplication is additive in each variable, and both are determined by $\tilde Q_5$. The definition is the one of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Operators*, read on $\mathbb{B}$ with the standard example $\star$.
 
-**Remark.** The operators are written with the ordinary product on the right, so that the involution is visible: $L_{\tilde A}$ is the two-sided multiplication by $\tilde A$ composed with the involution, $L_{\tilde A}=T_{\tilde A,e_t}\circ{}^{*}$, and $R_{\tilde A}$ is the transpose of the same, $R_{\tilde A}=T_{e_t,\tilde A^{*}}$. The two-sided multiplication $T_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2$ is the linear operator of *The Sesquilinear Sandwich on the Biquaternioid*; it is not itself a left or a right multiplication unless one of its parameters is the unit.
+**Remark.** The operators are written with the ordinary product on the right, so that the involution is visible: $L_{\tilde Q_5}$ is the two-sided multiplication by $\tilde Q_5$ composed with the involution, $L_{\tilde Q_5}=T_{\tilde Q_5,e_t}\circ{}^{*}$, and $R_{\tilde Q_5}$ is the transpose of the same, $R_{\tilde Q_5}=T_{e_t,\tilde Q_5^{*}}$. The two-sided multiplication $T_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2$ is the linear operator of *The Sesquilinear Sandwich on the Biquaternioid*; it is not itself a left or a right multiplication unless one of its parameters is the unit.
 
 ### The Two Parities
 
-**Proposition (the parities).** For every $\tilde A$ the left multiplication $L_{\tilde A}$ is conjugate-linear and the right multiplication $R_{\tilde A}$ is linear:
+**Proposition (the parities).** For every $\tilde Q_5$ the left multiplication $L_{\tilde Q_5}$ is conjugate-linear and the right multiplication $R_{\tilde Q_5}$ is linear:
 
 $$
-L_{\tilde A}(\lambda\tilde Q_1)=\overline{\lambda}\,L_{\tilde A}(\tilde Q_1), \qquad R_{\tilde A}(\lambda\tilde Q_1)=\lambda\,R_{\tilde A}(\tilde Q_1), \qquad \lambda\in\mathbb{C} .
+L_{\tilde Q_5}(\lambda\tilde Q_1)=\overline{\lambda}\,L_{\tilde Q_5}(\tilde Q_1), \qquad R_{\tilde Q_5}(\lambda\tilde Q_1)=\lambda\,R_{\tilde Q_5}(\tilde Q_1), \qquad \lambda\in\mathbb{C} .
 $$
 
-Consequently $L_{\tilde A}$ is $\mathbb{R}$-linear and lies in the space of the conjugate-linear operators, while $R_{\tilde A}$ is $\mathbb{C}$-linear.
+Consequently $L_{\tilde Q_5}$ is $\mathbb{R}$-linear and lies in the space of the conjugate-linear operators, while $R_{\tilde Q_5}$ is $\mathbb{C}$-linear.
 
-**Proof.** This is the parity theorem of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Parities*, with $\varsigma$ the complex conjugation, read on $\mathbb{B}$. In coordinates, $L_{\tilde A}(\lambda\tilde Q_1)=\tilde A(\lambda\tilde Q_1)^{*}=\tilde A\overline{\lambda}\tilde Q_1^{*}=\overline{\lambda}L_{\tilde A}(\tilde Q_1)$ by the conjugate-linearity of ${}^{*}$, and $R_{\tilde A}(\lambda\tilde Q_1)=(\lambda\tilde Q_1)\tilde A^{*}=\lambda R_{\tilde A}(\tilde Q_1)$.
+**Proof.** This is the parity theorem of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Parities*, with $\varsigma$ the complex conjugation, read on $\mathbb{B}$. In coordinates, $L_{\tilde Q_5}(\lambda\tilde Q_1)=\tilde Q_5(\lambda\tilde Q_1)^{*}=\tilde Q_5\overline{\lambda}\tilde Q_1^{*}=\overline{\lambda}L_{\tilde Q_5}(\tilde Q_1)$ by the conjugate-linearity of ${}^{*}$, and $R_{\tilde Q_5}(\lambda\tilde Q_1)=(\lambda\tilde Q_1)\tilde Q_5^{*}=\lambda R_{\tilde Q_5}(\tilde Q_1)$.
 
 **Remark.** The two families have opposite parities, and this is the operator statement of the two scalar rules. Over $\mathbb{C}$ no single space of $\mathbb{C}$-linear endomorphisms contains both families: a conjugate-linear and a linear map can agree only when they are both zero at every point where the scalars act, which forces the vanishing of the operator. The common home of the two families is the space of the $\mathbb{R}$-linear endomorphisms of the eight-dimensional real space $\mathbb{B}$.
 
@@ -51,23 +51,23 @@ $$
 L_{e_t}={}^{*}, \qquad L_{\vec e_k}=(\text{the ordinary left multiplication by }\vec e_k)\text{ composed with the conjugation,}
 $$
 
-which is the content of $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}$; in particular, at the unit and at a vector element,
+which is the content of $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}$; in particular, at the unit and at a vector element,
 
 $$
 L_{e_\mu}(\tilde Q_1)=e_\mu\tilde Q_1^{*}, \qquad R_{e_\mu}(\tilde Q_1)=\tilde Q_1 e_\mu^{*}, \qquad e_\mu^{*}=\varepsilon_\mu e_\mu .
 $$
 
-**Proof.** Substituting $\tilde A=e_\mu$ in the definition and using $e_\mu^{*}=\varepsilon_\mu e_\mu$ from the multiplication table of *Introduction to the General Plain Sesqualgebra* gives the two displays.
+**Proof.** Substituting $\tilde Q_5=e_\mu$ in the definition and using $e_\mu^{*}=\varepsilon_\mu e_\mu$ from the multiplication table of *Introduction to the General Plain Sesqualgebra* gives the two displays.
 
 ### The Parameter Maps
 
-**Proposition (the parameter maps).** The assignment $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear, and the assignment $\tilde A\mapsto R_{\tilde A}$ is conjugate-linear:
+**Proposition (the parameter maps).** The assignment $\tilde Q_5\mapsto L_{\tilde Q_5}$ is $\mathbb{C}$-linear, and the assignment $\tilde Q_5\mapsto R_{\tilde Q_5}$ is conjugate-linear:
 
 $$
-L_{\lambda\tilde A}=\lambda L_{\tilde A}, \qquad R_{\lambda\tilde A}=\overline{\lambda}R_{\tilde A}, \qquad \lambda\in\mathbb{C} .
+L_{\lambda\tilde Q_5}=\lambda L_{\tilde Q_5}, \qquad R_{\lambda\tilde Q_5}=\overline{\lambda}R_{\tilde Q_5}, \qquad \lambda\in\mathbb{C} .
 $$
 
-**Proof.** $L_{\lambda\tilde A}(\tilde Q_1)=(\lambda\tilde A)\star\tilde Q_1=\lambda L_{\tilde A}(\tilde Q_1)$ by the first scalar rule, and $R_{\lambda\tilde A}(\tilde Q_1)=\tilde Q_1\star(\lambda\tilde A)=\overline{\lambda}R_{\tilde A}(\tilde Q_1)$ by the second; these are the two displays of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Operators*.
+**Proof.** $L_{\lambda\tilde Q_5}(\tilde Q_1)=(\lambda\tilde Q_5)\star\tilde Q_1=\lambda L_{\tilde Q_5}(\tilde Q_1)$ by the first scalar rule, and $R_{\lambda\tilde Q_5}(\tilde Q_1)=\tilde Q_1\star(\lambda\tilde Q_5)=\overline{\lambda}R_{\tilde Q_5}(\tilde Q_1)$ by the second; these are the two displays of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Operators*.
 
 **Remark.** The parities are exchanged between the family and its parameter: the left family is linear in its parameter and its values are conjugate-linear, the right family is conjugate-linear in its parameter and its values are linear. The product of the two parities is the same on the two sides, which is why the two families carry the same information through opposite routes.
 
@@ -89,29 +89,29 @@ the involution and the identity.
 
 ### The Left Family Does Not Close
 
-**Theorem (the composite of two left multiplications).** For all $\tilde A,\tilde Q_2$,
+**Theorem (the composite of two left multiplications).** For all $\tilde Q_5,\tilde Q_2$,
 
 $$
-L_{\tilde A}L_{\tilde Q_2}=T_{\tilde A,\tilde Q_2^{*}} ,
+L_{\tilde Q_5}L_{\tilde Q_2}=T_{\tilde Q_5,\tilde Q_2^{*}} ,
 $$
 
-the ordinary two-sided multiplication with the parameters $\tilde A$ and $\tilde Q_2^{*}$. A nonzero such composite is $\mathbb{C}$-linear, so it is not a left multiplication; the left family is therefore not closed under composition, contains no identity, and forms no monoid.
+the ordinary two-sided multiplication with the parameters $\tilde Q_5$ and $\tilde Q_2^{*}$. A nonzero such composite is $\mathbb{C}$-linear, so it is not a left multiplication; the left family is therefore not closed under composition, contains no identity, and forms no monoid.
 
-**Proof.** $L_{\tilde A}L_{\tilde Q_2}(\tilde Q_1)=L_{\tilde A}(\tilde Q_2\tilde Q_1^{*})=\tilde A(\tilde Q_2\tilde Q_1^{*})^{*}=\tilde A\tilde Q_1\tilde Q_2^{*}=T_{\tilde A,\tilde Q_2^{*}}(\tilde Q_1)$, using $(uv)^{*}=v^{*}u^{*}$. The composite is $\mathbb{C}$-linear, as the composition of two conjugate-linear maps; a nonzero left multiplication is conjugate-linear, so the two can agree only if the composite vanishes, that is only if $\tilde A=0$ or $\tilde Q_2=0$. The identity, being $\mathbb{C}$-linear, is not a left multiplication either.
+**Proof.** $L_{\tilde Q_5}L_{\tilde Q_2}(\tilde Q_1)=L_{\tilde Q_5}(\tilde Q_2\tilde Q_1^{*})=\tilde Q_5(\tilde Q_2\tilde Q_1^{*})^{*}=\tilde Q_5\tilde Q_1\tilde Q_2^{*}=T_{\tilde Q_5,\tilde Q_2^{*}}(\tilde Q_1)$, using $(uv)^{*}=v^{*}u^{*}$. The composite is $\mathbb{C}$-linear, as the composition of two conjugate-linear maps; a nonzero left multiplication is conjugate-linear, so the two can agree only if the composite vanishes, that is only if $\tilde Q_5=0$ or $\tilde Q_2=0$. The identity, being $\mathbb{C}$-linear, is not a left multiplication either.
 
-**Remark.** The obstruction is the general one of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Standard Example*: the composition law $L_{\tilde A}L_{\tilde Q_2}=L_{\tilde A\star\tilde Q_2}$ would require the product to be associative, and the collapse theorem of *Sesqualgebras* forbids that here, so the composite leaves the family. The residue is the two-sided multiplication $T_{\tilde A,\tilde Q_2^{*}}$, which is the object of the sandwich article; the two compositions and the involution generate the whole operator theory of the multiplication.
+**Remark.** The obstruction is the general one of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Standard Example*: the composition law $L_{\tilde Q_5}L_{\tilde Q_2}=L_{\tilde Q_5\star\tilde Q_2}$ would require the product to be associative, and the collapse theorem of *Sesqualgebras* forbids that here, so the composite leaves the family. The residue is the two-sided multiplication $T_{\tilde Q_5,\tilde Q_2^{*}}$, which is the object of the sandwich article; the two compositions and the involution generate the whole operator theory of the multiplication.
 
 ### The Right Family Closes
 
-**Theorem (the composite of two right multiplications).** For all $\tilde A,\tilde Q_2$,
+**Theorem (the composite of two right multiplications).** For all $\tilde Q_5,\tilde Q_2$,
 
 $$
-R_{\tilde A}R_{\tilde Q_2}=R_{\tilde A\tilde Q_2} .
+R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_5\tilde Q_2} .
 $$
 
-So the right multiplications are closed under composition, they contain the identity $R_{e_t}$, and they form a monoid isomorphic to the multiplicative monoid $(\mathbb{B},\cdot)$ of the algebra under $\tilde A\mapsto R_{\tilde A}$, in the forward order.
+So the right multiplications are closed under composition, they contain the identity $R_{e_t}$, and they form a monoid isomorphic to the multiplicative monoid $(\mathbb{B},\cdot)$ of the algebra under $\tilde Q_5\mapsto R_{\tilde Q_5}$, in the forward order.
 
-**Proof.** $R_{\tilde A}R_{\tilde Q_2}(\tilde Q_1)=R_{\tilde A}(\tilde Q_1\tilde Q_2^{*})=(\tilde Q_1\tilde Q_2^{*})\tilde A^{*}=\tilde Q_1(\tilde A\tilde Q_2)^{*}=R_{\tilde A\tilde Q_2}(\tilde Q_1)$. The identity is $R_{e_t}$, and the map $\tilde A\mapsto R_{\tilde A}$ reverses products, hence embeds the opposite monoid; its image is the whole right family.
+**Proof.** $R_{\tilde Q_5}R_{\tilde Q_2}(\tilde Q_1)=R_{\tilde Q_5}(\tilde Q_1\tilde Q_2^{*})=(\tilde Q_1\tilde Q_2^{*})\tilde Q_5^{*}=\tilde Q_1(\tilde Q_5\tilde Q_2)^{*}=R_{\tilde Q_5\tilde Q_2}(\tilde Q_1)$. The identity is $R_{e_t}$, and the map $\tilde Q_5\mapsto R_{\tilde Q_5}$ reverses products, hence embeds the opposite monoid; its image is the whole right family.
 
 **Remark.** The asymmetry is the exact content of the two parities: a composite of two linear maps is linear, so the right family closes, while a composite of two conjugate-linear maps is linear, so the left family cannot. The general composition laws of *The Left and Right Multiplication Operators of a Sesqualgebra*, written $R_aR_b=T_{1,(ab)^{*}}$, agree with the theorem because $T_{1,c^{*}}$ is the right multiplication $R_c$.
 
@@ -119,29 +119,29 @@ So the right multiplications are closed under composition, they contain the iden
 
 Both mixed composites are expressible in the two families and the two-sided operators.
 
-**Theorem (the mixed composites).** For all $\tilde A,\tilde Q_2$,
+**Theorem (the mixed composites).** For all $\tilde Q_5,\tilde Q_2$,
 
 $$
-L_{\tilde A}R_{\tilde Q_2}=L_{\tilde A\tilde Q_2} , \qquad R_{\tilde A}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde A} , \qquad S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*} .
+L_{\tilde Q_5}R_{\tilde Q_2}=L_{\tilde Q_5\tilde Q_2} , \qquad R_{\tilde Q_5}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde Q_5} , \qquad S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*} .
 $$
 
 So the composite of a left and a right multiplication, in the order left-of-right, is again a left multiplication; in the other order it is the **sandwich** of *The Sesquilinear Sandwich on the Biquaternioid*, below in this group.
 
-**Proof.** $L_{\tilde A}R_{\tilde Q_2}(\tilde Q_1)=\tilde A(\tilde Q_1\tilde Q_2^{*})^{*}=\tilde A\tilde Q_2\tilde Q_1^{*}=L_{\tilde A\tilde Q_2}(\tilde Q_1)$. In the other order, $R_{\tilde A}L_{\tilde Q_2}(\tilde Q_1)=(\tilde Q_2\tilde Q_1^{*})\tilde A^{*}=\tilde Q_2\tilde Q_1^{*}\tilde A^{*}=S_{\tilde Q_2,\tilde A}(\tilde Q_1)$, and the last display is the definition of the sandwich in that article.
+**Proof.** $L_{\tilde Q_5}R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_5(\tilde Q_1\tilde Q_2^{*})^{*}=\tilde Q_5\tilde Q_2\tilde Q_1^{*}=L_{\tilde Q_5\tilde Q_2}(\tilde Q_1)$. In the other order, $R_{\tilde Q_5}L_{\tilde Q_2}(\tilde Q_1)=(\tilde Q_2\tilde Q_1^{*})\tilde Q_5^{*}=\tilde Q_2\tilde Q_1^{*}\tilde Q_5^{*}=S_{\tilde Q_2,\tilde Q_5}(\tilde Q_1)$, and the last display is the definition of the sandwich in that article.
 
-**Remark.** The two mixed composites are not equal, and the difference is the failure of the left and the right multiplications to commute, $L_{\tilde A}R_{\tilde Q_2}\neq R_{\tilde Q_2}L_{\tilde A}$ in general: the first is the left multiplication $L_{\tilde A\tilde Q_2}$, the second is a conjugate-linear sandwich, and the two can agree only when the sandwich happens to be a left multiplication, which the sandwich article shows it is not for general parameters. The witness is the pair $\tilde A=\vec e_x$, $\tilde Q_2=\vec e_y$ at $\tilde Q_1=e_t$: $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_x\vec e_y=\vec e_z$ while $R_{\vec e_y}L_{\vec e_x}(e_t)=\vec e_xe_t^{*}\vec e_y^{*}=\vec e_x\cdot e_t\cdot(-\vec e_y)=-\vec e_z$.
+**Remark.** The two mixed composites are not equal, and the difference is the failure of the left and the right multiplications to commute, $L_{\tilde Q_5}R_{\tilde Q_2}\neq R_{\tilde Q_2}L_{\tilde Q_5}$ in general: the first is the left multiplication $L_{\tilde Q_5\tilde Q_2}$, the second is a conjugate-linear sandwich, and the two can agree only when the sandwich happens to be a left multiplication, which the sandwich article shows it is not for general parameters. The witness is the pair $\tilde Q_5=\vec e_x$, $\tilde Q_2=\vec e_y$ at $\tilde Q_1=e_t$: $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_x\vec e_y=\vec e_z$ while $R_{\vec e_y}L_{\vec e_x}(e_t)=\vec e_xe_t^{*}\vec e_y^{*}=\vec e_x\cdot e_t\cdot(-\vec e_y)=-\vec e_z$.
 
 ### The Monoid Generated by the Two Families
 
 **Theorem (the four kinds of operator).** The set generated by the left and the right multiplications under composition is contained in the union of the four families
 
 $$
-\{L_{\tilde A}\}, \qquad \{R_{\tilde A}\}, \qquad \{S_{\tilde Q,\tilde Q_2}\}, \qquad \{T_{\tilde Q,\tilde Q_2}\},
+\{L_{\tilde Q_5}\}, \qquad \{R_{\tilde Q_5}\}, \qquad \{S_{\tilde Q,\tilde Q_2}\}, \qquad \{T_{\tilde Q,\tilde Q_2}\},
 $$
 
 the left multiplications, the right multiplications, the sandwiches and the ordinary two-sided multiplications, and it is a monoid with identity $R_{e_t}=T_{e_t,e_t}=\mathrm{id}$.
 
-**Proof.** The four composition laws of the two preceding theorems give $L_{\tilde A}L_{\tilde Q_2}=T_{\tilde A,\tilde Q_2^{*}}$, $L_{\tilde A}R_{\tilde Q_2}=L_{\tilde A\tilde Q_2}$, $R_{\tilde A}R_{\tilde Q_2}=R_{\tilde A\tilde Q_2}$ and $R_{\tilde A}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde A}$; the composition table of *The Sesquilinear Sandwich on the Biquaternioid* closes the remaining cases, and every composite is in one of the four families. The identity belongs to the right family and to the two-sided family.
+**Proof.** The four composition laws of the two preceding theorems give $L_{\tilde Q_5}L_{\tilde Q_2}=T_{\tilde Q_5,\tilde Q_2^{*}}$, $L_{\tilde Q_5}R_{\tilde Q_2}=L_{\tilde Q_5\tilde Q_2}$, $R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_5\tilde Q_2}$ and $R_{\tilde Q_5}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde Q_5}$; the composition table of *The Sesquilinear Sandwich on the Biquaternioid* closes the remaining cases, and every composite is in one of the four families. The identity belongs to the right family and to the two-sided family.
 
 **Remark.** The generated monoid is therefore not the union of the two regular representations but a four-parameter family, and the passage from the left family to the two-sided one is the residue of the failure of associativity. The table of the four composition laws is the operator form of the multiplication table of the sesqualgebra, and the two families of the bilinear products, which generate only the first two kinds, are the degenerate case.
 
@@ -152,22 +152,22 @@ the left multiplications, the right multiplications, the sandwiches and the ordi
 **Definition.** The **left regular map** and the **right regular map** of the sesqualgebra are
 
 $$
-\lambda:\mathbb{B}\longrightarrow \mathrm{End}_{\mathbb{R}}(\mathbb{B}), \quad \lambda(\tilde A)=L_{\tilde A} ; \qquad \rho:\mathbb{B}\longrightarrow \mathrm{End}_{\mathbb{R}}(\mathbb{B}), \quad \rho(\tilde A)=R_{\tilde A} .
+\lambda:\mathbb{B}\longrightarrow \mathrm{End}_{\mathbb{R}}(\mathbb{B}), \quad \lambda(\tilde Q_5)=L_{\tilde Q_5} ; \qquad \rho:\mathbb{B}\longrightarrow \mathrm{End}_{\mathbb{R}}(\mathbb{B}), \quad \rho(\tilde Q_5)=R_{\tilde Q_5} .
 $$
 
 They are the two halves of the regular representation of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Representations*, and they are not the same map.
 
-**Proposition (the multiplicativity).** The map $\lambda$ is $\mathbb{C}$-linear and satisfies $\lambda(\tilde A\star\tilde Q_2)=\lambda(\tilde A)\lambda(\tilde Q_2)$ for all $\tilde A,\tilde Q_2$ if and only if the multiplication is associative; the map $\rho$ is conjugate-linear and satisfies $\rho(\tilde A\star\tilde Q_2)=\rho(\tilde Q_2)\rho(\tilde A)$ for all $\tilde A,\tilde Q_2$ if and only if the multiplication is associative. Neither is multiplicative here.
+**Proposition (the multiplicativity).** The map $\lambda$ is $\mathbb{C}$-linear and satisfies $\lambda(\tilde Q_5\star\tilde Q_2)=\lambda(\tilde Q_5)\lambda(\tilde Q_2)$ for all $\tilde Q_5,\tilde Q_2$ if and only if the multiplication is associative; the map $\rho$ is conjugate-linear and satisfies $\rho(\tilde Q_5\star\tilde Q_2)=\rho(\tilde Q_2)\rho(\tilde Q_5)$ for all $\tilde Q_5,\tilde Q_2$ if and only if the multiplication is associative. Neither is multiplicative here.
 
-**Proof.** $\lambda(\tilde A\star\tilde Q_2)(\tilde Q_1)=(\tilde A\star\tilde Q_2)\star\tilde Q_1$ and $\lambda(\tilde A)\lambda(\tilde Q_2)(\tilde Q_1)=\tilde A\star(\tilde Q_2\star\tilde Q_1)$, which agree for every $\tilde Q_1$ exactly when the product is associative; the computation for $\rho$ is the same with the two factors reversed. The product of $\mathbb{B}$ is not associative, by *Introduction to the General Plain Sesqualgebra*, §*Neither Associative Nor Commutative*.
+**Proof.** $\lambda(\tilde Q_5\star\tilde Q_2)(\tilde Q_1)=(\tilde Q_5\star\tilde Q_2)\star\tilde Q_1$ and $\lambda(\tilde Q_5)\lambda(\tilde Q_2)(\tilde Q_1)=\tilde Q_5\star(\tilde Q_2\star\tilde Q_1)$, which agree for every $\tilde Q_1$ exactly when the product is associative; the computation for $\rho$ is the same with the two factors reversed. The product of $\mathbb{B}$ is not associative, by *Introduction to the General Plain Sesqualgebra*, §*Neither Associative Nor Commutative*.
 
-**Remark.** The right regular map is nevertheless close to multiplicative, by §*The Right Family Closes*: $\rho(\tilde A\tilde Q_2)=\rho(\tilde A)\rho(\tilde Q_2)$ with the plain product as the parameter, but the multiplication of the sesqualgebra is $\tilde A\star\tilde Q_2=\tilde A\tilde Q_2^{*}$ and not $\tilde A\tilde Q_2$, so the law reads $\rho(\tilde A\star\tilde Q_2)=\rho(\tilde Q_2)\rho(\tilde A)$ and its failure is the conjugate in the parameter of the right family.
+**Remark.** The right regular map is nevertheless close to multiplicative, by §*The Right Family Closes*: $\rho(\tilde Q_5\tilde Q_2)=\rho(\tilde Q_5)\rho(\tilde Q_2)$ with the plain product as the parameter, but the multiplication of the sesqualgebra is $\tilde Q_5\star\tilde Q_2=\tilde Q_5\tilde Q_2^{*}$ and not $\tilde Q_5\tilde Q_2$, so the law reads $\rho(\tilde Q_5\star\tilde Q_2)=\rho(\tilde Q_2)\rho(\tilde Q_5)$ and its failure is the conjugate in the parameter of the right family.
 
 ### The Obstruction to a Single Linear Representation
 
-**Proposition (the obstruction).** Let $\tilde A\neq0$ and suppose $L_{\tilde A}$ is $\mathbb{C}$-linear. Then $L_{\tilde A}=0$; consequently no nonzero left multiplication is an element of a $\mathbb{C}$-algebra representation of $\mathbb{B}$.
+**Proposition (the obstruction).** Let $\tilde Q_5\neq0$ and suppose $L_{\tilde Q_5}$ is $\mathbb{C}$-linear. Then $L_{\tilde Q_5}=0$; consequently no nonzero left multiplication is an element of a $\mathbb{C}$-algebra representation of $\mathbb{B}$.
 
-**Proof.** The proposition is the obstruction of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Failure of a Single Linear Representation*, with $\varsigma$ the conjugation: $\mathbb{C}$-linearity would give $(\lambda-\overline{\lambda})(\tilde A\star\tilde Q_1)=0$ for every $\lambda$ and $\tilde Q_1$, and choosing a non-real $\lambda$ and an $\tilde Q_1$ with $\tilde A\star\tilde Q_1\neq0$ — which exists since $\tilde A\neq0$ — gives a contradiction.
+**Proof.** The proposition is the obstruction of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Failure of a Single Linear Representation*, with $\varsigma$ the conjugation: $\mathbb{C}$-linearity would give $(\lambda-\overline{\lambda})(\tilde Q_5\star\tilde Q_1)=0$ for every $\lambda$ and $\tilde Q_1$, and choosing a non-real $\lambda$ and an $\tilde Q_1$ with $\tilde Q_5\star\tilde Q_1\neq0$ — which exists since $\tilde Q_5\neq0$ — gives a contradiction.
 
 **Remark.** The obstruction is why the left multiplication lives among the $\mathbb{R}$-linear operators and not the $\mathbb{C}$-linear ones, and it is the same parity mismatch that the adjoint article repairs with a twisted rule. A sesqualgebra therefore carries two regular representations and no single linear one, and the failure is a property of the multiplication and not of the algebra.
 
@@ -175,25 +175,25 @@ They are the two halves of the regular representation of *The Left and Right Mul
 
 The two bilinear multiplications $\tilde Q\tilde Q_2$ and $\tilde Q^{\natural}\tilde Q_2$ have $\mathbb{C}$-linear left multiplications, and their left families compose. The two sesquilinear products carry the involution in a slot, and of the two families only the right one of the derived product survives composition.
 
-| multiplication | left multiplication | $L_{\tilde A}L_{\tilde Q_2}$ | right multiplication | $R_{\tilde A}R_{\tilde Q_2}$ |
+| multiplication | left multiplication | $L_{\tilde Q_5}L_{\tilde Q_2}$ | right multiplication | $R_{\tilde Q_5}R_{\tilde Q_2}$ |
 |---|---|---|---|---|
-| $\tilde Q\tilde Q_2$ (associative) | $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1$ | $L_{\tilde A\tilde Q_2}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A$ | $R_{\tilde Q_2\tilde A}$ |
-| $\tilde Q^{\natural}\tilde Q_2$ | $L_{\tilde A}(\tilde Q_1)=\tilde A^{\natural}\tilde Q_1$ | $L_{\tilde Q_2\tilde A}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1^{\natural}\tilde A$ | not a right multiplication |
-| $\tilde Q\tilde Q_2^{*}$ (this article) | $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}$ | $T_{\tilde A,\tilde Q_2^{*}}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*}$ | $R_{\tilde A\tilde Q_2}$ |
+| $\tilde Q\tilde Q_2$ (associative) | $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1$ | $L_{\tilde Q_5\tilde Q_2}$ | $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5$ | $R_{\tilde Q_2\tilde Q_5}$ |
+| $\tilde Q^{\natural}\tilde Q_2$ | $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5^{\natural}\tilde Q_1$ | $L_{\tilde Q_2\tilde Q_5}$ | $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1^{\natural}\tilde Q_5$ | not a right multiplication |
+| $\tilde Q\tilde Q_2^{*}$ (this article) | $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}$ | $T_{\tilde Q_5,\tilde Q_2^{*}}$ | $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*}$ | $R_{\tilde Q_5\tilde Q_2}$ |
 
-**Remark.** The table is read with *Comparison Between the Four General Products*: for the two bilinear products the left family is closed, in the ordinary order for $\tilde Q\tilde Q_2$ and in the reversed order $L_{\tilde A}L_{\tilde Q_2}=L_{\tilde Q_2\tilde A}$ for $\tilde Q^{\natural}\tilde Q_2$ by the anti-multiplicativity of ${}^{\natural}$, and the ordinary right family is closed as well, $R_{\tilde A}R_{\tilde Q_2}=R_{\tilde Q_2\tilde A}$. The right family of the ${}^{\natural}$-product, $R_{\tilde A}(\tilde Q_1)=\tilde Q_1^{\natural}\tilde A$, does not close: its composite is $\tilde Q_1\mapsto\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr)^{\natural}\tilde A=\tilde Q_2^{\natural}\tilde Q_1\tilde A$, which is not a right multiplication. For the sesquilinear product the left family is open onto the two-sided multiplications while the right family closes, and the closing of the right family is a property of the derived operation and not of a general product. The fourth product, whose first slot carries ${}^{\natural}$, has the same operator shapes as the third in the first column but is not the derived operation, by *Introduction to the General Quaternionic Sesqualgebra*.
+**Remark.** The table is read with *Comparison Between the Four General Products*: for the two bilinear products the left family is closed, in the ordinary order for $\tilde Q\tilde Q_2$ and in the reversed order $L_{\tilde Q_5}L_{\tilde Q_2}=L_{\tilde Q_2\tilde Q_5}$ for $\tilde Q^{\natural}\tilde Q_2$ by the anti-multiplicativity of ${}^{\natural}$, and the ordinary right family is closed as well, $R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q_5}$. The right family of the ${}^{\natural}$-product, $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1^{\natural}\tilde Q_5$, does not close: its composite is $\tilde Q_1\mapsto\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr)^{\natural}\tilde Q_5=\tilde Q_2^{\natural}\tilde Q_1\tilde Q_5$, which is not a right multiplication. For the sesquilinear product the left family is open onto the two-sided multiplications while the right family closes, and the closing of the right family is a property of the derived operation and not of a general product. The fourth product, whose first slot carries ${}^{\natural}$, has the same operator shapes as the third in the first column but is not the derived operation, by *Introduction to the General Quaternionic Sesqualgebra*.
 
 ## The Action on the Two Halves
 
 **Proposition.** For the Hermitian subspace $\mathbb{M}_+$ of *Hermitian and Skew-Hermitian Elements*, every left multiplication restricts to the ordinary left multiplication on the Hermitian half,
 
 $$
-\tilde Q_1\in\mathbb{M}_+ \implies L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1 , \qquad \tilde Q_1\in\mathbb{M}_+ \implies R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*} ,
+\tilde Q_1\in\mathbb{M}_+ \implies L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1 , \qquad \tilde Q_1\in\mathbb{M}_+ \implies R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*} ,
 $$
 
-whatever the parity of the parameter $\tilde A$; and $L_{\tilde A}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde A$ is a real scalar, so that the only left multiplications preserving the Hermitian half are the real scalar multiples of the identity.
+whatever the parity of the parameter $\tilde Q_5$; and $L_{\tilde Q_5}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde Q_5$ is a real scalar, so that the only left multiplications preserving the Hermitian half are the real scalar multiples of the identity.
 
-**Proof.** For $\tilde Q_1\in\mathbb{M}_+$ one has $\tilde Q_1^{*}=\tilde Q_1$, so $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}=\tilde A\tilde Q_1$ and $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*}$, with no sign entering from the parity of $\tilde A$, because the involution acts on the variable and not on the parameter. For the preservation, $L_{\tilde A}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde A\tilde Q_1$ is Hermitian for every Hermitian $\tilde Q_1$, that is when $\tilde A\tilde Q_1=\tilde Q_1\tilde A^{*}$ for every Hermitian $\tilde Q_1$; taking $\tilde Q_1=e_t$ gives $\tilde A=\tilde A^{*}$, so $\tilde A$ is Hermitian, and the condition is then that $\tilde A$ commutes with every Hermitian element. The Hermitian elements span $\mathbb{B}$ over $\mathbb{R}$, so $\tilde A$ is central and Hermitian, that is a real scalar.
+**Proof.** For $\tilde Q_1\in\mathbb{M}_+$ one has $\tilde Q_1^{*}=\tilde Q_1$, so $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}=\tilde Q_5\tilde Q_1$ and $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*}$, with no sign entering from the parity of $\tilde Q_5$, because the involution acts on the variable and not on the parameter. For the preservation, $L_{\tilde Q_5}$ carries $\mathbb{M}_+$ into $\mathbb{M}_+$ exactly when $\tilde Q_5\tilde Q_1$ is Hermitian for every Hermitian $\tilde Q_1$, that is when $\tilde Q_5\tilde Q_1=\tilde Q_1\tilde Q_5^{*}$ for every Hermitian $\tilde Q_1$; taking $\tilde Q_1=e_t$ gives $\tilde Q_5=\tilde Q_5^{*}$, so $\tilde Q_5$ is Hermitian, and the condition is then that $\tilde Q_5$ commutes with every Hermitian element. The Hermitian elements span $\mathbb{B}$ over $\mathbb{R}$, so $\tilde Q_5$ is central and Hermitian, that is a real scalar.
 
 **Remark.** On the Hermitian half the left multiplication coincides with the ordinary multiplication, and the derived product and the algebra product agree there; but the Hermitian half is not closed under the ordinary product — it is a Jordan algebra, by *The 12 Products of the Biquaternioid Complex Space* — so the coincidence is a coincidence of the two products on the half and not the statement that the half is a subalgebra. The half is carried into itself only by the real scalars, and off the half the difference between the two products is the involution carried by the variable, which is the obstruction of §*The Left Family Does Not Close*. The right multiplication has the same reading with the parameter rather than the variable restricted.
 
@@ -201,24 +201,24 @@ whatever the parity of the parameter $\tilde A$; and $L_{\tilde A}$ carries $\ma
 
 ## Summary
 
-The left and the right multiplication of the sesquilinear product are $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}$ and $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*}$; the left is conjugate-linear and the right is linear, and in the parameter the left family is linear and the right conjugate-linear. The unit gives the two elementary operators $L_{e_t}={}^{*}$ and $R_{e_t}=\mathrm{id}$.
+The left and the right multiplication of the sesquilinear product are $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}$ and $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*}$; the left is conjugate-linear and the right is linear, and in the parameter the left family is linear and the right conjugate-linear. The unit gives the two elementary operators $L_{e_t}={}^{*}$ and $R_{e_t}=\mathrm{id}$.
 
-The left family does not close: $L_{\tilde A}L_{\tilde Q_2}=T_{\tilde A,\tilde Q_2^{*}}$ is the ordinary two-sided multiplication, hence $\mathbb{C}$-linear, hence not a left multiplication, and the left family is neither a monoid nor a representation. The right family does close, $R_{\tilde A}R_{\tilde Q_2}=R_{\tilde A\tilde Q_2}$, and is a monoid isomorphic to the algebra in the forward order; the mixed composites are $L_{\tilde A}R_{\tilde Q_2}=L_{\tilde A\tilde Q_2}$ and $R_{\tilde A}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde A}$, the sandwich. The two families together generate a monoid of four kinds of operator, the left and the right multiplications, the sandwiches and the two-sided multiplications, and the residue is the operator form of the failure of associativity. The two bilinear multiplications of the space are the case in which the left family closes and the ordinary left regular representation is available.
+The left family does not close: $L_{\tilde Q_5}L_{\tilde Q_2}=T_{\tilde Q_5,\tilde Q_2^{*}}$ is the ordinary two-sided multiplication, hence $\mathbb{C}$-linear, hence not a left multiplication, and the left family is neither a monoid nor a representation. The right family does close, $R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_5\tilde Q_2}$, and is a monoid isomorphic to the algebra in the forward order; the mixed composites are $L_{\tilde Q_5}R_{\tilde Q_2}=L_{\tilde Q_5\tilde Q_2}$ and $R_{\tilde Q_5}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde Q_5}$, the sandwich. The two families together generate a monoid of four kinds of operator, the left and the right multiplications, the sandwiches and the two-sided multiplications, and the residue is the operator form of the failure of associativity. The two bilinear multiplications of the space are the case in which the left family closes and the ordinary left regular representation is available.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $L_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1=\tilde A\tilde Q_1^{*}$ | the left multiplication, conjugate-linear |
-| $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A=\tilde Q_1\tilde A^{*}$ | the right multiplication, linear |
+| $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\star\tilde Q_1=\tilde Q_5\tilde Q_1^{*}$ | the left multiplication, conjugate-linear |
+| $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\star\tilde Q_5=\tilde Q_1\tilde Q_5^{*}$ | the right multiplication, linear |
 | $T_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2$ | the ordinary two-sided multiplication, linear |
 | $S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}$ | the sesquilinear sandwich, conjugate-linear |
-| $L_{\lambda\tilde A}=\lambda L_{\tilde A}$ | the left family is linear in its parameter |
-| $R_{\lambda\tilde A}=\overline{\lambda}R_{\tilde A}$ | the right family is conjugate-linear in its parameter |
+| $L_{\lambda\tilde Q_5}=\lambda L_{\tilde Q_5}$ | the left family is linear in its parameter |
+| $R_{\lambda\tilde Q_5}=\overline{\lambda}R_{\tilde Q_5}$ | the right family is conjugate-linear in its parameter |
 | $L_{e_t}={}^{*}$, $R_{e_t}=\mathrm{id}$ | the two elementary operators at the unit |
-| $L_{\tilde A}L_{\tilde Q_2}=T_{\tilde A,\tilde Q_2^{*}}$ | the composite of two left multiplications |
-| $R_{\tilde A}R_{\tilde Q_2}=R_{\tilde A\tilde Q_2}$ | the composite of two right multiplications |
-| $L_{\tilde A}R_{\tilde Q_2}=L_{\tilde A\tilde Q_2}$, $R_{\tilde A}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde A}$ | the mixed composites |
+| $L_{\tilde Q_5}L_{\tilde Q_2}=T_{\tilde Q_5,\tilde Q_2^{*}}$ | the composite of two left multiplications |
+| $R_{\tilde Q_5}R_{\tilde Q_2}=R_{\tilde Q_5\tilde Q_2}$ | the composite of two right multiplications |
+| $L_{\tilde Q_5}R_{\tilde Q_2}=L_{\tilde Q_5\tilde Q_2}$, $R_{\tilde Q_5}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde Q_5}$ | the mixed composites |
 | $\lambda,\rho$ | the left and the right regular maps |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and the anti-Hermitian halves |
 

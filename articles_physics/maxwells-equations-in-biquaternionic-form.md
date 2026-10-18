@@ -216,10 +216,10 @@ These are equivalent to the four standard Maxwell equations. The integrability c
 
 ## The Retarded Green's Function
 
-The biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is a linear first-order equation for the field strength $\tilde{F}$ in terms of the four-current $\tilde{J}$. Its solution can be written as a convolution with a **Green's function** $\tilde{G}(\tilde{Q})$, which is the solution of the equation with a point source:
+The biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is a linear first-order equation for the field strength $\tilde{F}$ in terms of the four-current $\tilde{J}$. Its solution can be written as a convolution with a **Green's function** $\tilde G_1(\tilde Q)$, which is the solution of the equation with a point source:
 
 $$
-\tilde{\nabla} \tilde{G}(\tilde{Q}) = \delta(\tilde{Q}) e_t.
+\tilde{\nabla} \tilde G_1(\tilde Q) = \delta(\tilde{Q}) e_t.
 $$
 
 The physically relevant Green's function is the **retarded** one, which vanishes for $t < 0$ and has support on the future light cone. It is the first-order kernel of the companion article *The Biquaternion D'Alembertian and Its Green's Functions*,
@@ -689,7 +689,7 @@ D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial
 k=\frac{\omega}{c}=\omega\sqrt{\epsilon\mu},
 $$
 
-whose scalar part is the constraint $\mathrm{div}\,\vec F=0$. The field-strength biquaternion is therefore left regular for the **shifted** three-dimensional Cauchy–Riemann operator $D_3-k$ of *Quaternion Regular Functions*: four-dimensional regularity becomes Helmholtz–Dirac regularity in three dimensions, with the shift supplied by the frequency. The companion combination $\tilde{G}=i\sqrt{\epsilon}\vec E+\sqrt{\mu}\vec H$ is annihilated by $D_3+k$ instead, and the dual field strength $-i\tilde F$ satisfies the same equation as $\tilde F$, so the electromagnetic field splits into two decoupled first-order equations — the diagonalization again, read from the four-dimensional side. The companion article works this out for a chiral medium, where the two shifts separate and become the two wavenumbers.
+whose scalar part is the constraint $\mathrm{div}\,\vec F=0$. The field-strength biquaternion is therefore left regular for the **shifted** three-dimensional Cauchy–Riemann operator $D_3-k$ of *Quaternion Regular Functions*: four-dimensional regularity becomes Helmholtz–Dirac regularity in three dimensions, with the shift supplied by the frequency. The companion combination $\vec G=i\sqrt{\epsilon}\vec E+\sqrt{\mu}\vec H$ is annihilated by $D_3+k$ instead, and the dual field strength $-i\tilde F$ satisfies the same equation as $\tilde F$, so the electromagnetic field splits into two decoupled first-order equations — the diagonalization again, read from the four-dimensional side. The companion article works this out for a chiral medium, where the two shifts separate and become the two wavenumbers.
 
 ## The Internal Freedom of the Vacuum Field
 

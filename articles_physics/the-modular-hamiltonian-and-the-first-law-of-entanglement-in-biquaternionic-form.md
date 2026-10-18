@@ -32,7 +32,7 @@ Let $\sigma$ be a faithful state of a von Neumann algebra $M$, with modular oper
 $$
 K_\sigma=-\log\Delta_\sigma,
 $$
-a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_t(\tilde A)=\exp(-itK_\sigma)\tilde A \exp(itK_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $\sigma\,\cdot\,\sigma^{-1}$ and $\sigma$ a density matrix,
+a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_t(\tilde Q_1)=\exp(-itK_\sigma)\tilde Q_1 \exp(itK_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $\sigma\,\cdot\,\sigma^{-1}$ and $\sigma$ a density matrix,
 $$
 K_\sigma=-\log\sigma,
 $$
@@ -40,7 +40,7 @@ a Hermitian element of the algebra, so that $\sigma=\exp(-K_\sigma)$ and $\mathr
 
 - **It is the state's logarithm.** $\sigma$ and $K_\sigma$ carry the same information; the entropy is $S(\sigma)=\mathrm{Tr}(\sigma K_\sigma)=\langle K_\sigma\rangle_\sigma$, the state's modular energy.
 - **It is defined by the state.** Different states have different modular Hamiltonians, and the difference of two modular Hamiltonians is the logarithm of the relative modular operator of the relative-entropy companion article.
-- **It generates the modular flow.** The commutation relation $\frac{d}{dt}\sigma_t(\tilde A)|_{t=0}=-i[K_\sigma,\tilde A]$ of the thermal-time companion article makes $K_\sigma$ the generator of the state's own time.
+- **It generates the modular flow.** The commutation relation $\frac{d}{dt}\sigma_t(\tilde Q_1)|_{t=0}=-i[K_\sigma,\tilde Q_1]$ of the thermal-time companion article makes $K_\sigma$ the generator of the state's own time.
 
 ### The Modular Hamiltonian of a Biquaternion State
 
@@ -134,11 +134,11 @@ The scaling was checked further at a step of $10^{-4}$, where $\delta S-\delta\l
 
 The deficit in the exact identity has its own operator, and it is the one introduced in the relative-entropy companion article. On the algebra the relative modular operator of two states is
 $$
-\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde A\big)
-=\tilde{Ϛ}\,\tilde A\,\tilde{Ϛ}_0^{-1},
+\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde Q_1\big)
+=\tilde{Ϛ}\,\tilde Q_1\,\tilde{Ϛ}_0^{-1},
 \qquad
-\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde A\big)
-=\log\tilde{Ϛ}\,\tilde A-\tilde A\log\tilde{Ϛ}_0,
+\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}\big(\tilde Q_1\big)
+=\log\tilde{Ϛ}\,\tilde Q_1-\tilde Q_1\log\tilde{Ϛ}_0,
 $$
 with relative modular Hamiltonian $K_{\tilde{Ϛ},\tilde{Ϛ}_0}=-\log\Delta_{\tilde{Ϛ},\tilde{Ϛ}_0}$. Evaluated on the GNS vector $\Omega_{\tilde{Ϛ}}=\tilde{Ϛ}^{1/2}$, the logarithm of the relative modular operator has expectation the relative entropy,
 $$

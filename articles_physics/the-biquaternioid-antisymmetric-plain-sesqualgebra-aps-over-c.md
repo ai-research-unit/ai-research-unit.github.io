@@ -59,7 +59,7 @@ The biquaternioid antisymmetric plain sesqualgebra is the structure $\tilde P\st
 | the Jacobi failure | no symmetry algebra of the phase |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a state; $\tfrac12 i\vec r$ is the value of the block |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |
-| $L^{\star}_{\tilde A}$, $R^{\star}_{\tilde A}$ | the two one-sided phase operators; one handedness |
+| $L^{\star}_{\tilde Q_1}$, $R^{\star}_{\tilde Q_1}$ | the two one-sided phase operators; one handedness |
 | $S_{\tilde P,\tilde P^{*}}$ | the two-sided quadratic representation |
 
 ## Further Reading

@@ -19,7 +19,7 @@ Both notions of the title are therefore **absences**, and they fail for one reas
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_\mu^2=-e_t$, central scalar imaginary $i$ and $Q_{1\mu}\in\mathbb{C}$; an element is $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $\vec Q_1=\sum_{\mu\in\{x,y,z\}}Q_{1\mu}\vec e_\mu$, and a second is $\tilde Q_2=Q_{2t}e_t+\vec Q_2$. The natural conjugation is $\tilde Q_1^{\natural}=Q_{1t}-\vec Q_1$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general quaternionic sesquilinear product is $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and the product of the block is $\diamond$. The complex bilinear dot product of two vector parts is $(\vec A,\vec B)=\sum_\mu A_\mu B_\mu$.
 
-**The results.** The antisymmetric quaternionic sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$, the conjugate cross product, has no unit on either side, so no element is invertible and the group of units is empty; the unit $e_t$ of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The scalar part vanishes identically, so the algebraic norm of the operation is the zero function and the block carries **no algebraic norm** by the convention that counts a vanishing quadratic form as no norm; the diagonal $\tilde Q_1\diamond\tilde Q_1=\vec Q_1\times\overline{\vec Q_1}$ is a pure vector, a value and not a norm. The substitute for the inverse is the relative inverse: the multiplication by a non-central element $\tilde A$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde{Q}_2=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel. Each section below states its result before it is proved.
+**The results.** The antisymmetric quaternionic sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$, the conjugate cross product, has no unit on either side, so no element is invertible and the group of units is empty; the unit $e_t$ of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The scalar part vanishes identically, so the algebraic norm of the operation is the zero function and the block carries **no algebraic norm** by the convention that counts a vanishing quadratic form as no norm; the diagonal $\tilde Q_1\diamond\tilde Q_1=\vec Q_1\times\overline{\vec Q_1}$ is a pure vector, a value and not a norm. The substitute for the inverse is the relative inverse: the multiplication by a non-central element $\tilde Q_3$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec Q_3$ in the complex bilinear dot, so that $\tilde Q_3\diamond\tilde{Q}_2=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel. Each section below states its result before it is proved.
 
 ## The Relative Definitions
 
@@ -93,21 +93,21 @@ a pure vector, generally nonzero. It is central exactly when it vanishes, so the
 
 ## The Relative Inverse
 
-**For a non-central element $\tilde A$, the multiplication $L_{\tilde A}\tilde{Q}_2=\vec A\times\overline{\vec Q_2}$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde{Q}_2=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel.**
+**For a non-central element $\tilde Q_3$, the multiplication $L_{\tilde Q_3}\tilde{Q}_2=\vec Q_3\times\overline{\vec Q_2}$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec Q_3$ in the complex bilinear dot, so that $\tilde Q_3\diamond\tilde{Q}_2=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel.**
 
 The block has no inverse, but the one-sided multiplication by an element is an operator with a kernel and an image, and its invertibility on a quotient is the substitute the article records.
 
-**Proposition (the kernel of the multiplication).** For the block, the one-sided multiplication by a non-central element $\tilde A$,
+**Proposition (the kernel of the multiplication).** For the block, the one-sided multiplication by a non-central element $\tilde Q_3$,
 
 $$
-L_{\tilde A}\tilde{Q}_2=\tilde A\diamond\tilde{Q}_2=\vec A\times\overline{\vec Q_2},
+L_{\tilde Q_3}\tilde{Q}_2=\tilde Q_3\diamond\tilde{Q}_2=\vec Q_3\times\overline{\vec Q_2},
 $$
 
-has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot.
+has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec Q_3$ in the complex bilinear dot.
 
-*Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\operatorname{Vect}(\mathbb{B}),\ (\vec W,\vec A)=0\}$, and the dimension count gives the bijection.
+*Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\operatorname{Vect}(\mathbb{B}),\ (\vec W,\vec Q_3)=0\}$, and the dimension count gives the bijection.
 
-So the equation $\tilde A\diamond\tilde{Q}_2=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
+So the equation $\tilde Q_3\diamond\tilde{Q}_2=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
 
 ## The Invertibility Criterion Is Not Transferred
 
@@ -129,7 +129,7 @@ The antisymmetric quaternionic sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\vec Q
 | $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\diamond}(\tilde Q_1)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
 | $\tilde Q_1\diamond\tilde Q_1=\vec Q_1\times\overline{\vec Q_1}$ | the diagonal, a pure vector |
-| $L_{\tilde A}\tilde{Q}_2=\vec A\times\overline{\vec Q_2}$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ |
+| $L_{\tilde Q_3}\tilde{Q}_2=\vec Q_3\times\overline{\vec Q_2}$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q_3}$ |
 | no unit, no inverse, no group of units | the absence carried by the block |
 
 ## Further Reading

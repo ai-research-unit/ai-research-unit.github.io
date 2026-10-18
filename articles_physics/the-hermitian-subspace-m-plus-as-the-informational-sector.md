@@ -459,7 +459,7 @@ The compact/non-compact distinction reflects the difference between rotations in
 
 The biquaternion framework can therefore be read as a **relativistic generalisation of the spin-1/2 formalism**, in which the state space is the spinor module of $\mathbb{B}$ and the symmetry group is the Lorentz group.
 
-The three operations of the correspondence are one formula. The conjugation $\Gamma_{\tilde A}(\tilde Q)=\tilde A\tilde Q\tilde A^{*}$ is the Lorentz rotor when $\tilde A$ has unit biquaternion norm, the reversible evolution when $\tilde A$ is a matrix-unitary element, and the measurement update when $\tilde A$ is an idempotent; the three cases differ in the normalisation condition imposed on the parameter and not in the operation performed.
+The three operations of the correspondence are one formula. The conjugation $\Gamma_{\tilde Q_3}(\tilde Q)=\tilde Q_3\tilde Q\tilde Q_3^{*}$ is the Lorentz rotor when $\tilde Q_3$ has unit biquaternion norm, the reversible evolution when $\tilde Q_3$ is a matrix-unitary element, and the measurement update when $\tilde Q_3$ is an idempotent; the three cases differ in the normalisation condition imposed on the parameter and not in the operation performed.
 
 The formula is relativistic at its source, but the single-qubit formalism is not: its state space is a fixed Bloch ball $|\vec r|\leq1$, and a boost carries a trace-one element **off** the trace-one slice. Making the state space itself relativistic, and not only the transformation group, is open work and not a result of the framework. The relativistic state space is *The Relativistic Qubit in Biquaternionic Form*, and the difficulty is the second of the seven of *The Quantum–Relativity Tension and the Biquaternion Framework*.
 

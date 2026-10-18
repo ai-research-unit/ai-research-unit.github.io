@@ -37,9 +37,9 @@ $$
 $$
 carries eight real numbers, and only its scalar part, and only the real part of that, is invariant under the central phase and compatible with the Lorentz action. The framework therefore builds its Lagrangians from two pairings, both supplied by the involution lattice:
 $$
-\text{bilinear invariant:}\quad \mathrm{Sc}\bigl(\tilde{A}^{\natural}\tilde{Q}_1\bigr) ,
+\text{bilinear invariant:}\quad \mathrm{Sc}\bigl(\tilde Q_3^{\natural}\tilde{Q}_1\bigr) ,
 \qquad
-\text{Hermitian invariant:}\quad \mathrm{Sc}\bigl(\tilde{A}^{*}\tilde{Q}_1\bigr) .
+\text{Hermitian invariant:}\quad \mathrm{Sc}\bigl(\tilde Q_3^{*}\tilde{Q}_1\bigr) .
 $$
 The first is the biquaternion norm's polarisation and is what makes the free-particle action a Lorentz scalar; the second is positive definite and is what a complex field needs. The distinction is not academic: the bilinear pairing is indefinite, so a Lagrangian built from it alone has the wrong sign for the energy on the time-like part of the field, while the Hermitian pairing is definite and gives the standard positive kinetic terms.
 
@@ -51,7 +51,7 @@ $$
 = \mathrm{Sc}\bigl(\delta\tilde{\Phi}^{*}\tilde{\Phi}\bigr) + \mathrm{Sc}\bigl(\tilde{\Phi}^{*}\delta\tilde{\Phi}\bigr)
 = 2\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde{\Phi}^{*}\delta\tilde{\Phi}\bigr) ,
 $$
-because $\mathrm{Sc}(\tilde{A}^{*}\tilde{Q}_1) = \sum_\mu A_\mu^*Q_{1\mu}$ and the two terms are complex conjugates. It is the algebraic statement that the Hermitian norm is real and that its gradient is twice the Hermitian pairing; it is the variational shadow of the involution lattice's positive-definite form.
+because $\mathrm{Sc}(\tilde Q_3^{*}\tilde{Q}_1) = \sum_\mu Q_{3\mu}^*Q_{1\mu}$ and the two terms are complex conjugates. It is the algebraic statement that the Hermitian norm is real and that its gradient is twice the Hermitian pairing; it is the variational shadow of the involution lattice's positive-definite form.
 
 ### The biquaternionic Euler–Lagrange equation
 
@@ -110,7 +110,7 @@ and stationarity for arbitrary interior $\delta\tilde{R}$ requires
 $$
 \frac{d\tilde{V}}{d\tau} = 0 \qquad\Longleftrightarrow\qquad \tilde{V} = \text{const} ,
 $$
-the straight worldline. A discrete check confirms it: stationarity of the discretised worldline action at an interior point gives a path deviating from the straight line by less than $10^{-9}$ of its length. Two features are worth extracting. The equation is **algebraically trivial** — the free particle is unaccelerated because the biquaternion norm is constant along the worldline — and it is the same computation, one power of the field lower, as the field variation of the next section: both are polarisations of the biquaternion norm, the bilinear identity $\delta \langle\tilde{A}\rangle_{\natural} = 2\,\mathrm{Sc}(\tilde{A}^{\natural}\,\delta\tilde{A})$ governing the worldline and the sesquilinear identity $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ governing the field. The framework's variational calculus is thus the polarisation of the biquaternion norm throughout, with the gradient inserted where the field is differentiated.
+the straight worldline. A discrete check confirms it: stationarity of the discretised worldline action at an interior point gives a path deviating from the straight line by less than $10^{-9}$ of its length. Two features are worth extracting. The equation is **algebraically trivial** — the free particle is unaccelerated because the biquaternion norm is constant along the worldline — and it is the same computation, one power of the field lower, as the field variation of the next section: both are polarisations of the biquaternion norm, the bilinear identity $\delta \langle\tilde Q_3\rangle_{\natural} = 2\,\mathrm{Sc}(\tilde Q_3^{\natural}\,\delta\tilde Q_3)$ governing the worldline and the sesquilinear identity $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ governing the field. The framework's variational calculus is thus the polarisation of the biquaternion norm throughout, with the gradient inserted where the field is differentiated.
 
 ### The coupling to an external potential
 
@@ -257,9 +257,9 @@ N\bigl(\tilde U\tilde{R}\tilde U^{*}\bigr) = \langle\tilde{R}\rangle_{\natural} 
 $$
 which follows from its multiplicativity. The biquaternion norm of a product factorises,
 $$
-\langle\tilde{A}\tilde{Q}_1\rangle_{\natural} = \tilde{A}\tilde{Q}_1\,\overline{\tilde{A}\tilde{Q}_1} = \tilde{A}\tilde{Q}_1\tilde{Q}_1^{\natural}\tilde{A}^{\natural} = \tilde{A}\,\langle\tilde{Q}_1\rangle_{\natural}\,\tilde{A}^{\natural} = \langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural} ,
+\langle\tilde Q_3\tilde{Q}_1\rangle_{\natural} = \tilde Q_3\tilde{Q}_1\,\overline{\tilde Q_3\tilde{Q}_1} = \tilde Q_3\tilde{Q}_1\tilde{Q}_1^{\natural}\tilde Q_3^{\natural} = \tilde Q_3\,\langle\tilde{Q}_1\rangle_{\natural}\,\tilde Q_3^{\natural} = \langle\tilde Q_3\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural} ,
 $$
-because $\langle\tilde{Q}_1\rangle_{\natural}$ is a central scalar; and the dagger of an element carries the conjugate norm, $\langle\tilde{A}^{*}\rangle_{\natural} = \overline{\langle\tilde{A}\rangle_{\natural}}$. Hence
+because $\langle\tilde{Q}_1\rangle_{\natural}$ is a central scalar; and the dagger of an element carries the conjugate norm, $\langle\tilde Q_3^{*}\rangle_{\natural} = \overline{\langle\tilde Q_3\rangle_{\natural}}$. Hence
 $$
 N\bigl(\tilde U\tilde{R}\tilde U^{*}\bigr) = \langle\tilde U\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}\,\bigl|\langle\tilde U\rangle_{\natural}\bigr|^2 = \langle\tilde{R}\rangle_{\natural} ,
 $$
@@ -271,7 +271,7 @@ S\bigl[\tilde{\Phi}\ \text{rotated}\bigr] = S\bigl[\tilde{\Phi}\bigr] ,
 $$
 and the conserved angular momenta follow by the Noether article. The transport law of the field itself — whether $\tilde{\Phi}\mapsto\tilde U\tilde{\Phi}\tilde U^{*}$, or a one-sided action, or a spinor action on a module — depends on which representation the field carries and is fixed by the spin articles; the invariance of the action, however, holds for the appropriate transport automatically, because every term is assembled from the two invariants. This is the practical sense in which the framework makes Lorentz invariance manifest: one verifies $\langle\tilde U\tilde{R}\tilde U^{*}\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$ once, and the invariance of any action built from $\langle\cdot\rangle_{\natural}$ and the Hermitian pairing is then a statement about the assembly rather than a separate computation.
 
-The two invariants the action uses are thus the two the group preserves, and they are the two the involution lattice supplies: the bilinear biquaternion norm $\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$, which is indefinite, and the Hermitian pairing $\mathrm{Sc}(\tilde{A}^{*}\tilde{A})$, which is positive definite. A Lagrangian is a real Lorentz scalar precisely when it is an invariant combination of these two, and the actions above are the simplest such combinations at zero, one, and two derivatives of the field.
+The two invariants the action uses are thus the two the group preserves, and they are the two the involution lattice supplies: the bilinear biquaternion norm $\langle\tilde Q_3\rangle_{\natural} = \langle\tilde Q_3,\tilde Q_3\rangle_{\natural} = \mathrm{Sc}(\tilde Q_3^{\natural}\tilde Q_3) = \langle\tilde Q_3,\tilde Q_3\rangle_{\natural}$, which is indefinite, and the Hermitian pairing $\mathrm{Sc}(\tilde Q_3^{*}\tilde Q_3)$, which is positive definite. A Lagrangian is a real Lorentz scalar precisely when it is an invariant combination of these two, and the actions above are the simplest such combinations at zero, one, and two derivatives of the field.
 
 ## The Biquaternion Structure of the Action
 
@@ -291,7 +291,7 @@ The variational and the operator routes are two views of one structure. The acti
 
 ## Summary
 
-The relativistic action of the framework is a real scalar functional, $S = \int\mathcal{L}\,d^4x$, and the stationary-action principle, $\delta S = 0$ for variations vanishing on the boundary, derives the equations of motion from it. Reality and Lorentz invariance require the Lagrangian to be built from the framework's two invariant pairings, the bilinear $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{Q}_1) = \langle\tilde{A},\tilde{Q}_1\rangle_{\natural}$ and the Hermitian $\mathrm{Sc}(\tilde{A}^{*}\tilde{Q}_1)$; the elementary variation $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ was verified on random biquaternions.
+The relativistic action of the framework is a real scalar functional, $S = \int\mathcal{L}\,d^4x$, and the stationary-action principle, $\delta S = 0$ for variations vanishing on the boundary, derives the equations of motion from it. Reality and Lorentz invariance require the Lagrangian to be built from the framework's two invariant pairings, the bilinear $\mathrm{Sc}(\tilde Q_3^{\natural}\tilde{Q}_1) = \langle\tilde Q_3,\tilde{Q}_1\rangle_{\natural}$ and the Hermitian $\mathrm{Sc}(\tilde Q_3^{*}\tilde{Q}_1)$; the elementary variation $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ was verified on random biquaternions.
 
 The particle action is
 $$

@@ -13,10 +13,10 @@ $$
 where $\tilde{P} = m\tilde{V}$ is the four-momentum. The rotor is called the particle's **eigenspinor**, after W. E. Baylis, and it is the natural dynamical variable of the worldline: the four-momentum is a quadratic function of it, so the three independent components of the velocity are carried by the eight parameters of the rotor, of which four are fixed by unit norm and one by the rest-frame gauge. The eigenspinor obeys a single linear equation,
 
 $$
-\frac{d\tilde U}{d\tau} = \tfrac12\,\tilde{\Omega}\,\tilde U,
+\frac{d\tilde U}{d\tau} = \tfrac12\,\vec\Omega_{\mathrm{LT}}\,\tilde U,
 $$
 
-with $\tilde{\Omega}$ the spacetime rotation rate, and the Lorentz force follows from it in one line. The identification $\tilde{\Omega} = -(ϙ/m)\tilde{F}^{*}$ then makes the equation the covariant equation of motion.
+with $\vec\Omega_{\mathrm{LT}}$ the spacetime rotation rate, and the Lorentz force follows from it in one line. The identification $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$ then makes the equation the covariant equation of motion.
 
 Three things are worth separating at the outset, and the article keeps them apart.
 
@@ -87,22 +87,22 @@ a **one-sided** multiplication. This is the spinor law, not the two-sided four-v
 Suppose the eigenspinor evolves linearly,
 
 $$
-\frac{d\tilde U}{d\tau} = \tfrac12\,\tilde{\Omega}\,\tilde U,
+\frac{d\tilde U}{d\tau} = \tfrac12\,\vec\Omega_{\mathrm{LT}}\,\tilde U,
 $$
 
-with $\tilde{\Omega}$ a fixed element of the algebra, the **rotation rate** of the worldline. Differentiating the four-momentum then gives, since $imc\,e_t$ is central,
+with $\vec\Omega_{\mathrm{LT}}$ a fixed pure element of the algebra, the **rotation rate** of the worldline. Differentiating the four-momentum then gives, since $imc\,e_t$ is central,
 
 $$
 \frac{d\tilde{P}}{d\tau}
 = imc\left(d\tilde U/d\tau\tilde U^{*} + \tilde U\left(d\tilde U/d\tau\right)^{*}\right)
-= \tfrac12\left(\tilde{\Omega}\tilde{P} + \tilde{P}\tilde{\Omega}^{*}\right).
+= \tfrac12\left(\vec\Omega_{\mathrm{LT}}\tilde{P} + \tilde{P}\vec\Omega_{\mathrm{LT}}^{*}\right).
 $$
 
-The right-hand side is exactly the material-sector projection of $\tilde{\Omega}\tilde{P}$:
+The right-hand side is exactly the material-sector projection of $\vec\Omega_{\mathrm{LT}}\tilde{P}$:
 
 $$
-\tfrac12\left(\tilde{\Omega}\tilde{P} + \tilde{P}\tilde{\Omega}^{*}\right)
-= P_{\mathbb{M}_-}\!\left(\tilde{\Omega}\tilde{P}\right),
+\tfrac12\left(\vec\Omega_{\mathrm{LT}}\tilde{P} + \tilde{P}\vec\Omega_{\mathrm{LT}}^{*}\right)
+= P_{\mathbb{M}_-}\!\left(\vec\Omega_{\mathrm{LT}}\tilde{P}\right),
 \qquad
 P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12\left(\tilde{Q} - \tilde{Q}^{*}\right),
 $$
@@ -110,23 +110,23 @@ $$
 where the identification uses $\tilde{P}^{*} = -\tilde{P}$. Thus the evolution equation for the eigenspinor implies the covariant equation of motion
 
 $$
-\boxed{\;\frac{d\tilde{P}}{d\tau} = P_{\mathbb{M}_-}\!\left(\tilde{\Omega}\,\tilde{P}\right)\;}
+\boxed{\;\frac{d\tilde{P}}{d\tau} = P_{\mathbb{M}_-}\!\left(\vec\Omega_{\mathrm{LT}}\,\tilde{P}\right)\;}
 $$
 
-**Which rates are allowed.** A rate with a scalar part destroys the norm of the eigenspinor and with it the mass shell. Writing $\tilde{\Omega} = \tilde{\Omega}_0 + \vec V$ with $\tilde{\Omega}_0$ central and $\vec V$ a pure vector, the derivative of $\langle\tilde U\rangle_{\natural} = \tilde U\tilde U^{\natural}$ is
+**Which rates are allowed.** A rate with a scalar part destroys the norm of the eigenspinor and with it the mass shell. To see this, let a general trial rate be $\tilde Q = \tilde Q_0 + \vec V$ with $\tilde Q_0$ central and $\vec V$ a pure vector; the derivative of $\langle\tilde U\rangle_{\natural} = \tilde U\tilde U^{\natural}$ is
 
 $$
-\frac{d}{d\tau}\langle\tilde U\rangle_{\natural} = \tfrac12\left(\tilde{\Omega} + \tilde{\Omega}^{\natural}\right) = \tilde{\Omega}_0 + \tfrac12\left(\vec V + \vec V^{\natural}\right)
-= \tilde{\Omega}_0,
+\frac{d}{d\tau}\langle\tilde U\rangle_{\natural} = \tfrac12\left(\tilde Q + \tilde Q^{\natural}\right) = \tilde Q_0 + \tfrac12\left(\vec V + \vec V^{\natural}\right)
+= \tilde Q_0,
 $$
 
-because a pure vector is anti-fixed by quaternion conjugation, $\vec V^{\natural} = -\vec V$. Norm preservation is therefore exactly the condition that **the rotation rate have no scalar part**,
+because a pure vector is anti-fixed by quaternion conjugation, $\vec V^{\natural} = -\vec V$. Norm preservation is therefore exactly the condition that **the rotation rate have no scalar part**, and the physical rate is the pure element
 
 $$
-\langle\tilde U\rangle_{\natural} = \text{const} \iff \tilde{\Omega} \in \mathrm{Vect}(\mathbb{B}),
+\vec\Omega_{\mathrm{LT}} \in \mathrm{Vect}(\mathbb{B}), \qquad \vec\Omega_{\mathrm{LT}}^{\natural} = -\vec\Omega_{\mathrm{LT}} ,
 $$
 
-and this is the same condition under which $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is preserved along the flow. It is the biquaternion form of the Minkowski orthogonality $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$ recorded in the Lorentz-force article.
+which is the condition under which $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is preserved along the flow. It is the biquaternion form of the Minkowski orthogonality $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$ recorded in the Lorentz-force article.
 
 ## The Field as the Rotation Rate
 
@@ -139,7 +139,7 @@ $$
 so that $\vec E$ is the imaginary vector part and $\vec B = \mu\vec H$ the real vector part. The rotation rate of a charge $ϙ$ in this field is
 
 $$
-\boxed{\;\tilde{\Omega} = -\frac{ϙ}{m}\left(\frac{i}{c}\vec E + \vec B\right) = -\frac{ϙ}{m}\,\tilde{F}^{*}\;}
+\boxed{\;\vec\Omega_{\mathrm{LT}} = -\frac{ϙ}{m}\left(\frac{i}{c}\vec E + \vec B\right) = -\frac{ϙ}{m}\,\tilde{F}^{*}\;}
 $$
 
 in the units of the field-strength article with $\sqrt{\epsilon_0} = 1/c_0$ and $\sqrt{\mu_0} = 1$ (Heaviside–Lorentz units), where $\tilde{F}^{*} = i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H = i\vec E/c + \vec B$. The rate is a pure vector, so it preserves the norm, and the minus sign is the one fixed by using the rest-to-lab eigenspinor; with the lab-to-moving rotor the sign is reversed. Substituting into the equation of motion gives
@@ -173,29 +173,29 @@ $$
 \tilde{E}_{(\mu)}(\tau) = \tilde U(\tau)\,\mathcal{E}_\mu\,\tilde U(\tau)^{*} \in \mathbb{M}_- ,
 $$
 
-and the four-vector $\tilde{E}_{(0)} = i\tilde U\tilde U^{*}$ is the four-velocity direction, $c\,\tilde{E}_{(0)} = \tilde{V}$. The three spatial images $\tilde{E}_{(k)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\tilde{\Omega}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
+and the four-vector $\tilde{E}_{(0)} = i\tilde U\tilde U^{*}$ is the four-velocity direction, $c\,\tilde{E}_{(0)} = \tilde{V}$. The three spatial images $\tilde{E}_{(k)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\vec\Omega_{\mathrm{LT}}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
 
-This is the interpretation that separates the eigenspinor from the ordinary Lorentz rotor. A fixed rotor gives one tetrad; the eigenspinor gives a tetrad at every event, tied to the orientation of the particle's rest frame, and the equation of motion is the statement that the tetrad turns at the rate $\tilde{\Omega}$.
+This is the interpretation that separates the eigenspinor from the ordinary Lorentz rotor. A fixed rotor gives one tetrad; the eigenspinor gives a tetrad at every event, tied to the orientation of the particle's rest frame, and the equation of motion is the statement that the tetrad turns at the rate $\vec\Omega_{\mathrm{LT}}$.
 
 ## The Closed Form in a Uniform Field
 
-When the field is constant the rate $\tilde{\Omega}$ is constant, and the evolution equation integrates immediately:
+When the field is constant the rate $\vec\Omega_{\mathrm{LT}}$ is constant, and the evolution equation integrates immediately:
 
 $$
-\tilde U(\tau) = \exp\!\left(\tfrac12\tilde{\Omega}\,\tau\right)\tilde U(0),
+\tilde U(\tau) = \exp\!\left(\tfrac12\vec\Omega_{\mathrm{LT}}\,\tau\right)\tilde U(0),
 \qquad
 \tilde{P}(\tau) = \tilde U(\tau)\bigl(imc\,e_t\bigr)\tilde U(\tau)^{*} .
 $$
 
-Both factors are rotors: $\tilde{\Omega}$ is a pure vector, so $\exp(\tfrac12\tilde{\Omega}\tau)$ is a unit rotor, and the flow stays on the norm shell. In a purely electric or purely magnetic field the exponential is a boost or a rotation; in a general uniform field it is a boost composed with a rotation, and the worldline is the corresponding screw. The companion articles on the purely electric and purely magnetic cases of *The Relativistic Particle in an External Field* are the two degenerate limits of this one closed form.
+Both factors are rotors: $\vec\Omega_{\mathrm{LT}}$ is a pure vector, so $\exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)$ is a unit rotor, and the flow stays on the norm shell. In a purely electric or purely magnetic field the exponential is a boost or a rotation; in a general uniform field it is a boost composed with a rotation, and the worldline is the corresponding screw. The companion articles on the purely electric and purely magnetic cases of *The Relativistic Particle in an External Field* are the two degenerate limits of this one closed form.
 
 ## What the Framework Supplies and What It Only Transcribes
 
-**Supplied by the algebra.** The linear evolution equation, the closure of the flow under a scalar-part-free rate, the one-sided spinor law, the identity $d\tilde{P}/d\tau = P_{\mathbb{M}_-}(\tilde{\Omega}\tilde{P})$, the norm conservation, and the closed form in a uniform field are all algebraic, and each was checked above.
+**Supplied by the algebra.** The linear evolution equation, the closure of the flow under a scalar-part-free rate, the one-sided spinor law, the identity $d\tilde{P}/d\tau = P_{\mathbb{M}_-}(\vec\Omega_{\mathrm{LT}}\tilde{P})$, the norm conservation, and the closed form in a uniform field are all algebraic, and each was checked above.
 
 **Transcribed.** The eigenspinor is not this series' invention. Baylis uses it throughout *Electrodynamics: A Modern Geometric Approach* and in the paravector lecture that is the source of this article; Hestenes uses the same object as the "rotor part" of the Dirac spinor in spacetime algebra. What the series adds is the $ict$ convention, the dictionary to the companion articles, and the checks.
 
-**Where the earlier articles stop, and what changes.** *The Lorentz Force in Biquaternion Form* shows that $\tilde{K}$ is **not** $\mathrm{Re}(\tilde{F}\tilde{V})$ or any single product of $\tilde{F}$ with $\tilde{V}$, and locates the obstruction in the two duality halves of the field. The eigenspinor does not contradict that finding and does not remove the obstruction. It gives the force a clean *linear* source instead: the rate $\tilde{\Omega}$ and the rotor $\tilde U$. Whether the series should present the eigenspinor as the primary formulation of the relativistic particle, with the product formula as a derived corollary, is a matter of taste and is left open below; the two statements are consistent.
+**Where the earlier articles stop, and what changes.** *The Lorentz Force in Biquaternion Form* shows that $\tilde{K}$ is **not** $\mathrm{Re}(\tilde{F}\tilde{V})$ or any single product of $\tilde{F}$ with $\tilde{V}$, and locates the obstruction in the two duality halves of the field. The eigenspinor does not contradict that finding and does not remove the obstruction. It gives the force a clean *linear* source instead: the rate $\vec\Omega_{\mathrm{LT}}$ and the rotor $\tilde U$. Whether the series should present the eigenspinor as the primary formulation of the relativistic particle, with the product formula as a derived corollary, is a matter of taste and is left open below; the two statements are consistent.
 
 ## Open Questions
 
@@ -203,11 +203,11 @@ Both factors are rotors: $\tilde{\Omega}$ is a pure vector, so $\exp(\tfrac12\ti
 
 2. **The quantum eigenspinor.** In the geometric-algebra interpretation of the Dirac equation the Dirac spinor is a rotor times a density and an angle. Is the classical eigenspinor the $\hbar\to0$ limit of that object, and does the series' spinor module supply the density factor?
 
-3. **Non-uniform fields.** The closed form holds for constant $\tilde{\Omega}$. For a varying field the equation of motion is still linear in $\tilde U$, but the direction of the rate turns with the position, and the rotor is a path-ordered exponential. What is the series' natural language for the path ordering, and does the gradient $\tilde{\nabla}$ of *The Biquaternion D'Alembertian* supply it?
+3. **Non-uniform fields.** The closed form holds for constant $\vec\Omega_{\mathrm{LT}}$. For a varying field the equation of motion is still linear in $\tilde U$, but the direction of the rate turns with the position, and the rotor is a path-ordered exponential. What is the series' natural language for the path ordering, and does the gradient $\tilde{\nabla}$ of *The Biquaternion D'Alembertian* supply it?
 
 4. **The gauge of the rest frame.** The residual rotation $\tilde U\to\tilde U\tilde u$ is a gauge freedom in the classical problem and a physical degree of freedom once spin is included. Is there a series convention for fixing it, and does it correspond to the Thomas–Wigner rotation of the companion exercise?
 
-5. **The rate as a connection.** The rate $\tilde{\Omega}$ is an element of $\mathrm{Vect}(\mathbb{B})$, the same subspace that carries the field strength. Is the eigenspinor flow a parallel transport in a connection whose curvature is the field, and does that interpretation connect to the curved-spacetime articles?
+5. **The rate as a connection.** The rate $\vec\Omega_{\mathrm{LT}}$ is an element of $\mathrm{Vect}(\mathbb{B})$, the same subspace that carries the field strength. Is the eigenspinor flow a parallel transport in a connection whose curvature is the field, and does that interpretation connect to the curved-spacetime articles?
 
 These questions are open.
 
@@ -224,17 +224,17 @@ and it is the natural dynamical variable of a relativistic worldline. For a pure
 It obeys the linear equation
 
 $$
-\frac{d\tilde U}{d\tau} = \tfrac12\,\tilde{\Omega}\,\tilde U,
+\frac{d\tilde U}{d\tau} = \tfrac12\,\vec\Omega_{\mathrm{LT}}\,\tilde U,
 $$
 
-whose rate $\tilde{\Omega}$ must be a pure vector, $\tilde{\Omega}\in\mathrm{Vect}(\mathbb{B})$, for the norm — and with it the mass shell — to be preserved. The implied equation of motion is
+whose rate $\vec\Omega_{\mathrm{LT}}$ must be a pure vector, $\vec\Omega_{\mathrm{LT}}\in\mathrm{Vect}(\mathbb{B})$, for the norm — and with it the mass shell — to be preserved. The implied equation of motion is
 
 $$
-\frac{d\tilde{P}}{d\tau} = P_{\mathbb{M}_-}\!\left(\tilde{\Omega}\tilde{P}\right)
-= \tfrac12\left(\tilde{\Omega}\tilde{P} + \tilde{P}\tilde{\Omega}^{*}\right).
+\frac{d\tilde{P}}{d\tau} = P_{\mathbb{M}_-}\!\left(\vec\Omega_{\mathrm{LT}}\tilde{P}\right)
+= \tfrac12\left(\vec\Omega_{\mathrm{LT}}\tilde{P} + \tilde{P}\vec\Omega_{\mathrm{LT}}^{*}\right).
 $$
 
-With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\tilde{\Omega} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde U\to\tilde U_{\mathrm L}\tilde U$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde U = \exp(\tfrac12\tilde{\Omega}\tau)\tilde U(0)$.
+With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde U\to\tilde U_{\mathrm L}\tilde U$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde U = \exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)\tilde U(0)$.
 
 The eigenspinor does not remove the obstruction recorded in *The Lorentz Force in Biquaternion Form* to writing $\tilde{K}$ as a single product of $\tilde{F}$ with $\tilde{V}$. It offers a different route, in which the force has a **linear** source — the rotor and its rate — and the product formula is a derived corollary.
 
@@ -246,7 +246,7 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 | $\tilde U_{\mathrm L}$ | Fixed Lorentz rotor acting on the eigenspinor; $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ |
 | $\tilde{P} = m\tilde{V}$ | Four-momentum, in the material sector $\mathbb{M}_-$ |
 | $imc\,e_t$ | Rest four-momentum (central) |
-| $\tilde{\Omega}$ | Spacetime rotation rate, a pure vector, $\tilde{\Omega}^{\natural} = -\tilde{\Omega}$ |
+| $\vec\Omega_{\mathrm{LT}}$ | Spacetime rotation rate, the generator of the Lorentz transformation; a pure vector, $\vec\Omega_{\mathrm{LT}}^{\natural} = -\vec\Omega_{\mathrm{LT}}$ |
 | $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ | Field-strength biquaternion |
 | $\tilde{F}^{*}$ | Its conjugate, $i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H$ |
 | $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
@@ -259,7 +259,7 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 
 ## Further Reading
 
-- W. E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the eigenspinor, the evolution equation $d\Lambda/d\tau = \frac12\Omega\Lambda$, the identity $dp/d\tau = \langle\Omega p\rangle_<$, the closed form in a uniform field and the identification $\Omega = eF/m$. This article is the series' transcription of that source into the $ict$ convention.
+- W. E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the eigenspinor, the evolution equation $d\Lambda/d\tau = \frac12\Omega\Lambda$ (the source's $\Omega$ is this article's $\vec\Omega_{\mathrm{LT}}$), the identity $dp/d\tau = \langle\Omega p\rangle_<$, the closed form in a uniform field and the identification $\Omega = eF/m$. This article is the series' transcription of that source into the $ict$ convention.
 - W. E. Baylis, *Electrodynamics: A Modern Geometric Approach* (Birkhäuser, 1999), for the same formalism developed at book length, with the complex-quaternion algebra, the paravector space and the Hermitian subspaces.
 - W. E. Baylis, "Relativity in introductory physics," *Canadian Journal of Physics* **82** (2004) 853, for the companion lecture.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the rotor-times-density interpretation of the Dirac spinor, of which the classical eigenspinor is the orbital part.

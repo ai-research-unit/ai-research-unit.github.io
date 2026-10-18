@@ -154,10 +154,10 @@ its symmetrisation carry only the trivial pair $\pm e_t$: their square is the ce
 $+1$ is central and the equation on the centre leaves the pair alone.
 
 **The two structures outside the coincidence.** The mathematics companion records one element as the
-witness of the whole exception, $\tilde w=\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$. It satisfies
+witness of the whole exception, $\vec W=\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$. It satisfies
 
 $$
-    \tilde w\star\tilde w=e_t \quad\text{in }\mathrm{SPS},\qquad C(\tilde w)=0 ,
+    \vec W\star\vec W=e_t \quad\text{in }\mathrm{SPS},\qquad C(\vec W)=0 ,
 $$
 
 so it is a root of $+1$ in $\mathrm{SPS}$ and it is a zero divisor of the algebra. The rigidity that the
@@ -225,7 +225,7 @@ block, and the pure roots are in bijection with the idempotents by the halving m
 
 The product is the scalar-valued symmetrisation and its square is $\langle\tilde\Xi\rangle_{*}e_t$, so the root
 problem is the single real equation $H=1$. The roots of $+1$ are the sphere
-$\sum_\mu\lvert\Xi_\mu\rvert^{2}=1$ of real dimension seven, and the witness $\tilde w$ shows that a
+$\sum_\mu\lvert\Xi_\mu\rvert^{2}=1$ of real dimension seven, and the witness $\vec W$ shows that a
 member need not be a unit. The symmetrisation replaces unitarity by normalisation. The reading is *Why
 Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*.
 
@@ -297,7 +297,7 @@ Three groups appear.
   root set and $\mathrm{SPS}$ has the unit sphere; the general pairing produces reversible transformations,
   and the symmetrisation produces normalised amplitudes.
 - **The two structures outside the rigidity.** $\mathrm{SPS}$ and $\mathrm{SQS}$ produce a root of one that
-  need not be a unit, and the witness $\tilde w$ is the algebraic reason the unit theorem is stated for the
+  need not be a unit, and the witness $\vec W$ is the algebraic reason the unit theorem is stated for the
   general products.
 
 **The roots of $-1$: a closing remark.** They are not a section of this article, and they can often be deduced from the roots of $+1$: for
@@ -310,7 +310,7 @@ multiplication of a root of $+1$ by a scalar returns a root of $+1$, so the root
 for the two definite structures $\mathrm{GPS}$ and $\mathrm{SPS}$, whose square is the non-negative
 Hermitian form, and for the four brackets, whose square is the pure part and cannot be the central
 $-e_t$. It is nonempty for the two quaternionic sesquilinear structures: the vector direction $\vec e_x$ has
-$\mathrm{GQS}$ square $-e_t$, and the witness $\tilde w=\tfrac1{\sqrt2}(\vec e_x+i\vec e_y)$ on the cone has
+$\mathrm{GQS}$ square $-e_t$, and the witness $\vec W=\tfrac1{\sqrt2}(\vec e_x+i\vec e_y)$ on the cone has
 $\mathrm{SQS}$ square $-e_t$ and need not be a unit. Physically an empty signed root set means
 the band cannot carry a clock, a state or a symmetry of that kind: the probability band has no local
 complex structure of its own, and its phase is imported from the composition. The physical interpretations of the
@@ -755,9 +755,9 @@ general effects are replaced by orthogonal idempotents once an ancillary factor 
 
 **The two kinds of time evolution are one bilinear operation.** *The Measurement Problem in Algebraic Form*
 states the disciplined version of the collapse. In the framework both a unitary evolution and a measurement
-update are the **same bilinear operation** $\tilde Q\mapsto\tilde A\tilde Q\tilde A^{*}$, applied with an
-acting element of one of two algebraic types: unitary, $\tilde A\tilde A^{*}=e_t$, or Hermitian idempotent,
-$\tilde A^{2}=\tilde A=\tilde A^{*}$. Idempotent and unitary are therefore the two classes of acting element
+update are the **same bilinear operation** $\tilde Q\mapsto\tilde Q_1\tilde Q\tilde Q_1^{*}$, applied with an
+acting element of one of two algebraic types: unitary, $\tilde Q_1\tilde Q_1^{*}=e_t$, or Hermitian idempotent,
+$\tilde Q_1^{2}=\tilde Q_1=\tilde Q_1^{*}$. Idempotent and unitary are therefore the two classes of acting element
 of one operation form, and the measurement problem becomes the absence of a rule fixing which class applies
 when. The article is explicit that this is a restatement and not a solution, and the idempotent's place in
 it is exact: it is the class of acting element that produces a definite outcome.
@@ -904,7 +904,7 @@ chirality splitting.
   general POVM uses interior "soft" effects, convex combinations $t\tilde\Pi_1+(1-t)\tilde\Pi_2$ of
   orthogonal idempotents; by Naimark's dilation theorem every such measurement is a projective one on a
   larger module. In *The Measurement Problem in Algebraic Form* the idempotent and the unitary are the two
-  classes of acting element of one bilinear operation $\tilde Q\mapsto\tilde A\tilde Q\tilde A^{*}$, the
+  classes of acting element of one bilinear operation $\tilde Q\mapsto\tilde Q_1\tilde Q\tilde Q_1^{*}$, the
   idempotent being the class that produces a definite outcome.
 - Only the sesquilinear product supplies the cone, and with it the state space. *Why the Fourth Product Is
   a Gauge Structure and Not a State Space* shows that the fourth product's ternary structure fails the
@@ -937,7 +937,7 @@ projection, and a projection is a determinate state. The mathematics companion p
 product's roots of $+1$ are the central pair $\pm e_t$ and the pure family $(\vec\Xi,\vec\Xi)=-1$,
 that the probability band's roots are the unitary group $\mathrm{U}(2)$, that the symmetrisation replaces them by
 the unit sphere, and that the natural product's roots are the level set $C=+1$; the symmetric
-sesquilinear structures are the two whose root of one need not be a unit, the witness $\tilde w$ being a
+sesquilinear structures are the two whose root of one need not be a unit, the witness $\vec W$ being a
 root of $+1$ in $\mathrm{SPS}$ and a root of $-1$ in $\mathrm{SQS}$. The idempotents are classified by the
 same map: only five of the twelve structures carry a nontrivial idempotent — the general plain structure
 and its symmetrisation, with the family $\tfrac12(e_t+\tilde\Xi)$ over the roots of $+1$, one state
@@ -957,7 +957,7 @@ determinate state, and the interval band carries only the trivial pair, because 
 interval. The roots of $-1$ are the closing remark and are used nowhere: for the bilateral structures they
 follow from the roots of $+1$ by multiplication by the central imaginary, for the definite sesquilinear
 structures and the brackets they are empty, and for the two quaternionic sesquilinear structures they are
-nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge structure.
+nonempty, with the witness $\vec W$ on the cone for the symmetric gauge structure.
 
 ## Summary of Notation
 
@@ -968,7 +968,7 @@ nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge struct
 - The families $\tfrac12(e_t+\tilde\Xi)$ over the roots of $+1$, $\tfrac12(e_t+i\tilde\xi)$, and $-\tfrac12e_t+\mu$ with $(\mu,\mu)=\tfrac34$.
 - The complementation $\tilde\Pi\mapsto e_t-\tilde\Pi$, with $\tilde\Pi(e_t-\tilde\Pi)=0$; the Peirce splitting $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_t-\tilde\Pi)$.
 - The remarkable subspaces: the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian ones $\mathbb{M}_+$, $\mathbb{M}_-$.
-- The witness $\tilde w=\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ of the two symmetric sesquilinear structures.
+- The witness $\vec W=\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ of the two symmetric sesquilinear structures.
 - The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 
 ## Further Reading

@@ -140,8 +140,8 @@ Both nilpotency conditions were verified: with the $\mathrm{SU}(2)$ structure co
 In the biquaternion framework the Jacobi identity is not an independent postulate. The gauge algebra is realized by the commutator inside $\mathbb{B}$, and the commutator of a real associative algebra automatically satisfies the Jacobi identity:
 
 $$
-[[\tilde{Q}_1,\tilde{Q}_2],\tilde{S}]+[[\tilde{Q}_2,\tilde{S}],\tilde{Q}_1]+[[\tilde{S},\tilde{Q}_1],\tilde{Q}_2]=0
-\qquad\text{for all }\tilde{Q}_1,\tilde{Q}_2,\tilde{S}\in\mathbb{B},
+[[\tilde{Q}_1,\tilde{Q}_2],\tilde{Q}_3]+[[\tilde{Q}_2,\tilde{Q}_3],\tilde{Q}_1]+[[\tilde{Q}_3,\tilde{Q}_1],\tilde{Q}_2]=0
+\qquad\text{for all }\tilde{Q}_1,\tilde{Q}_2,\tilde{Q}_3\in\mathbb{B},
 $$
 
 which is a rearrangement of the associativity of the product. For the realization $\mathrm{SU}(2)=\mathrm{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ the identity is exactly the statement that quaternion multiplication is associative, and the numerical check of the Jacobi combination for $f^{abc}=\varepsilon^{abc}$ returning zero is a check of that associativity through a chain of identifications.

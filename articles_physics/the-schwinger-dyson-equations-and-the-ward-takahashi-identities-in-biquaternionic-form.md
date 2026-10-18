@@ -35,7 +35,7 @@ Let $\tilde\Phi$ be a biquaternion field, $\mathcal{D}\tilde\Phi$ the functional
 $$
 \int\mathcal{D}\tilde\Phi\;\frac{\delta}{\delta\tilde\Phi(x)}\Big(F[\tilde\Phi]\;\exp(\,iS[\tilde\Phi]/\hbar)\Big).
 $$
-If the measure is **translation invariant** — if $\mathcal{D}(\tilde\Phi+\tilde\epsilon)=\mathcal{D}\tilde\Phi$ for every shift $\tilde\epsilon$ vanishing at the boundary — then this integral is a shift of integration variable and vanishes:
+If the measure is **translation invariant** — if $\mathcal{D}(\tilde\Phi+\delta\tilde\Phi)=\mathcal{D}\tilde\Phi$ for every shift $\delta\tilde\Phi$ vanishing at the boundary — then this integral is a shift of integration variable and vanishes:
 $$
 0=\int\mathcal{D}\tilde\Phi\;\frac{\delta}{\delta\tilde\Phi(x)}\Big(F[\tilde\Phi]\;\exp(\,iS[\tilde\Phi]/\hbar)\Big).
 $$

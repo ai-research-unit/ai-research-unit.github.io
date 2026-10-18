@@ -22,13 +22,13 @@ The formula $\tilde Q\mapsto\tilde Q^2$ is unambiguous once a product is chosen 
 
 **The general plain bilinear square.** The general plain bilinear product $\tilde Q\tilde Q_2$ is the only one of the four general products of the space that is the multiplication of an associative unital $\mathbb{C}$-algebra (*Introduction to the Biquaternion Algebra*). Its diagonal $\tilde Q\tilde Q$ is the square this article uses. In the four complex coordinates it is a polynomial map with no conjugated coordinate, hence holomorphic; this is what makes the matrix model above all a model of *complex* dynamics.
 
-**The diagonal of a left or a right multiplication.** For a fixed element $\tilde A$ the two maps
+**The diagonal of a left or a right multiplication.** For a fixed element $\tilde Q_3$ the two maps
 
 $$
-\tilde Q_1\mapsto \tilde A\tilde Q_1+\tilde C \quad (\text{left}), \qquad \tilde Q_1\mapsto \tilde Q_1\tilde A+\tilde C \quad (\text{right})
+\tilde Q_1\mapsto \tilde Q_3\tilde Q_1+\tilde C \quad (\text{left}), \qquad \tilde Q_1\mapsto \tilde Q_1\tilde Q_3+\tilde C \quad (\text{right})
 $$
 
-are affine: for $\tilde A$ a unit they are conjugate to a linear map, their orbits are exponentials, and their Julia set is empty. They return the quadratic family only on the diagonal $\tilde Q_1=\tilde Q=\tilde A$. **The left and the right products give the square only on the diagonal; off the diagonal they give two affine families with no fractal content.** The matrix product agrees with the general plain bilinear square on the nose, because $\mathsf{M}_2$ is an algebra isomorphism (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
+are affine: for $\tilde Q_3$ a unit they are conjugate to a linear map, their orbits are exponentials, and their Julia set is empty. They return the quadratic family only on the diagonal $\tilde Q_1=\tilde Q=\tilde Q_3$. **The left and the right products give the square only on the diagonal; off the diagonal they give two affine families with no fractal content.** The matrix product agrees with the general plain bilinear square on the nose, because $\mathsf{M}_2$ is an algebra isomorphism (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 
 **The conjugate squares.** Replacing one factor by a conjugate gives a map of a different kind. With the natural conjugate, $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ is central and scalar, so the "natural quadratic family" is $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde C$, a scalar-valued map whose orbit is governed by the complex numbers $\langle F^n(\tilde Q)\rangle_{\natural}$ alone. With the Hermitian conjugate, $\tilde Q\tilde Q^{*}$ is the Hermitian biquaternion whose scalar part is the square of the Euclidean norm, and the "Hermitian quadratic family" is a real-analytic, non-holomorphic map with values in the Hermitian subspace $\mathbb{M}_+$. These are different theories; neither is the theory of this article.
 
@@ -37,7 +37,7 @@ are affine: for $\tilde A$ a unit they are conjugate to a linear map, their orbi
 | general plain bilinear $\tilde Q\tilde Q$ | $\tilde Q\mapsto\tilde Q^2+\tilde C$ | holomorphic, quadratic | this article |
 | natural $\tilde Q\tilde Q^{\natural}$ | $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde C$ | scalar-valued, uses the bar | *Square Roots of a General Element in the Biquaternion Algebra* |
 | Hermitian $\tilde Q\tilde Q^{*}$ | $\tilde Q\mapsto\tilde Q\tilde Q^{*}+\tilde C$ | real-analytic, not holomorphic | *Norm and Invertibility in the General Quaternionic Algebra* |
-| left or right $\tilde A\tilde Q_1$, $\tilde Q_1\tilde A$ | affine in $\tilde Q_1$ | no fractal | — |
+| left or right $\tilde Q_3\tilde Q_1$, $\tilde Q_1\tilde Q_3$ | affine in $\tilde Q_1$ | no fractal | — |
 | matrix $\mathsf{M}_2^{-1}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)$ | $\tilde Q\mapsto\tilde Q^2+\tilde C$ | the same map | *The Matrix Element Representation and the Biquaternion Dynamics* |
 
 **Remark (why the choice is a choice).** The general plain bilinear product is the canonical multiplication of $\mathbb{B}$ once $\mathbb{B}$ is presented as a $\mathbb{C}$-algebra with the quaternion relations, so the first line of the table is the canonical reading. What is *not* canonical is the size. The algebra carries a complex-valued multiplicative norm $\langle\cdot\rangle_{\natural}$, its modulus $r=\sqrt{|N|}$, and the Euclidean norm $\|\cdot\|_E$, and no one of the three is singled out by the algebra. **The map is canonical; the norm used to define boundedness is a choice of metric, and the escape radius depends on it.** Boundedness itself does not, by the next section.
@@ -80,7 +80,7 @@ and the **Julia set** is its boundary, $J_{\tilde C}=\partial\mathcal K_{\tilde 
 
 **Proof.** If $\tilde Q\in\mathcal K$ then the orbit of $F(\tilde Q)$ is the orbit of $\tilde Q$ with its first term deleted, hence bounded, so $F(\tilde Q)\in\mathcal K$ and $F(\mathcal K)\subset\mathcal K$. Conversely if $F(\tilde Q)\in\mathcal K$ then the orbit of $\tilde Q$ is the bounded orbit of $F(\tilde Q)$ preceded by the single point $\tilde Q$, hence bounded, so $\tilde Q\in\mathcal K$; thus $F^{-1}(\mathcal K)=\mathcal K$. For the Julia set: if $\tilde Q\in J=\partial\mathcal K$ and $V$ is a neighbourhood of $F(\tilde Q)$, then $F^{-1}(V)$ is a neighbourhood of $\tilde Q$, so it meets $\mathcal K$ — giving $V\cap\mathcal K\neq\emptyset$ because $F(\mathcal K)\subset\mathcal K$ — and it meets the complement of $\mathcal K$ — giving a point whose image lies in $V$ and, since $F^{-1}(\mathcal K)=\mathcal K$, outside $\mathcal K$. Hence $F(J)\subset J$. Conversely if $F(\tilde Q)\in J$ then $\tilde Q\in F^{-1}(\mathcal K)=\mathcal K$; if $\tilde Q$ were interior to $\mathcal K$ then $F(\tilde Q)$ would be interior, because a non-constant holomorphic map is open, contradicting $F(\tilde Q)\in\partial\mathcal K$; hence $\tilde Q\in J$ and $F^{-1}(J)\subset J$; the inclusion $J\subset F^{-1}(J)$ is the previous one. Closedness of $\mathcal K$ is that of a sublevel set of a continuous function, and of $J$ that of a boundary.
 
-No properness of $F$ was used, and none holds: the equation $\tilde Q^2=\tilde W$ has the whole cone of square-zero elements as its fibre over $\tilde W=0$.
+No properness of $F$ was used, and none holds: the equation $\tilde Q^2=\tilde Q_4$ has the whole cone of square-zero elements as its fibre over $\tilde Q_4=0$.
 
 ## The Conjugations and the Equivariance
 

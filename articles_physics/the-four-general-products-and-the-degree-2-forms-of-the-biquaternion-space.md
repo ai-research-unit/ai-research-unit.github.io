@@ -117,7 +117,7 @@ L^{*}_{\tilde P}=(\cdot)^{*}\circ R_{\tilde P^{*}},\qquad
 L^{\natural*}_{\tilde P}=(\cdot)^{*}\circ R_{\bar{\tilde P}},
 $$
 
-so that the general plain bilinear and the general quaternionic bilinear products have a monoid of left multiplications, and the two sesquilinear products do not. The adjoint of a multiplication for the trace form is the multiplication by the star-conjugate, $(L_{\tilde A})^{\dagger}=L_{\tilde A^{*}}$, the trace form being $\mathrm{Tr}(\tilde P\tilde Q)=2\,\mathrm{Sc}(\tilde P\tilde Q)$. The reading of the operators of the four products is *The Four General Products and Operators*, and the family names are read in *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
+so that the general plain bilinear and the general quaternionic bilinear products have a monoid of left multiplications, and the two sesquilinear products do not. The adjoint of a multiplication for the trace form is the multiplication by the star-conjugate, $(L_{\tilde Q_1})^{\dagger}=L_{\tilde Q_1^{*}}$, the trace form being $\mathrm{Tr}(\tilde P\tilde Q)=2\,\mathrm{Sc}(\tilde P\tilde Q)$. The reading of the operators of the four products is *The Four General Products and Operators*, and the family names are read in *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
 
 ## The Four Products on the Remarkable Subspaces
 
@@ -153,7 +153,7 @@ The four products are read physically as composition, probability, causality and
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the four forms: general plain bilinear, general plain sesquilinear, general quaternionic bilinear, general quaternionic sesquilinear |
 | $\langle\tilde P^{\natural}\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | the multiplicativity of the quaternionic norm |
 | $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the positive definite Hermitian norm, the unique topological norm |
-| $L^{\star}_{\tilde P}$, $R^{\star}_{\tilde P}$ | the left and right multiplication in a product, and $(L_{\tilde A})^{\dagger}=L_{\tilde A^{*}}$ |
+| $L^{\star}_{\tilde P}$, $R^{\star}_{\tilde P}$ | the left and right multiplication in a product, and $(L_{\tilde Q_1})^{\dagger}=L_{\tilde Q_1^{*}}$ |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the six remarkable subspaces |
 
 ## Further Reading

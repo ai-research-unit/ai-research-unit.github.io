@@ -129,12 +129,12 @@ Quaternionic Sesqualgebra*.
 compatibility involution, gives the operator identity
 
 $$
-K\bigl(L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_2\bigr)
-=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_2\bigr)} ,
+K\bigl(L^{\star}_{\tilde Q_3}\tilde Q_1,\tilde Q_2\bigr)
+=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde Q_3^{\natural}}\tilde Q_2\bigr)} ,
 $$
 
-so the adjoint of the left multiplication by $\tilde A$ with respect to $\langle\cdot,\cdot\rangle_{\natural*}$ is the left multiplication by
-$\tilde A^{\natural}$; the identity is computed in *The Multiplication Operators of the Symmetric
+so the adjoint of the left multiplication by $\tilde Q_3$ with respect to $\langle\cdot,\cdot\rangle_{\natural*}$ is the left multiplication by
+$\tilde Q_3^{\natural}$; the identity is computed in *The Multiplication Operators of the Symmetric
 Quaternionic Sesqualgebra*, and it is the operator form of the law.
 
 **The element theory is governed by the law.** The two clauses fix the scalar part and the exchange; the
@@ -167,7 +167,7 @@ the elements $\vec e_x$ and $i\vec e_x$. The criterion is sharp: deleting the co
 product $\mathrm{GQS}$, and deleting the scalar-part identity admits the symmetric plain sesquilinear part
 $\mathrm{SPS}$; the block is the meeting point of the two, with the scalar part of the first and the symmetry
 of the second. The law delivers the diagonal formula with the Krein form in its scalar part, the
-$\langle\cdot,\cdot\rangle_{\natural*}$-adjointness of the left multiplications, $L^{\star}_{\tilde A}{}^{\dagger}=L^{\star}_{\tilde A^{\natural}}$,
+$\langle\cdot,\cdot\rangle_{\natural*}$-adjointness of the left multiplications, $L^{\star}_{\tilde Q_3}{}^{\dagger}=L^{\star}_{\tilde Q_3^{\natural}}$,
 and the element theory in which the class of an element is decided by the scalar coordinate and the central
 square.
 
@@ -181,7 +181,7 @@ square.
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | the Krein form, the scalar part of the block |
 | $\mathrm{GQS}$ | the boundary of (C1): scalar part $\langle\cdot,\cdot\rangle_{\natural*}$, no symmetry |
 | $\mathrm{SPS}$ | the boundary of (C2): conjugate-symmetric, definite scalar part |
-| $\langle L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_2\rangle_{\natural*}}$ | the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness delivered by the law |
+| $\langle L^{\star}_{\tilde Q_3}\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,L^{\star}_{\tilde Q_3^{\natural}}\tilde Q_2\rangle_{\natural*}}$ | the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness delivered by the law |
 
 ## Further Reading
 

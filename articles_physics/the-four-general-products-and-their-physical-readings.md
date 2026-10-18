@@ -787,7 +787,7 @@ system, but it fails the Jordan triple identity on the explicit five-tuple $(e_t
 where the two sides are $\vec e_z$ and $-3\vec e_z$. So the algebra with this product is **not** the state space
 of a quantum theory, and no state space is obtained from it.
 - **No associativity either: the associator as the curvature of the pairing.** The fourth product does not
-compose. Its associator $(\tilde A\star\tilde Q_3)\star\tilde Q_4-\tilde A\star(\tilde Q_3\star\tilde Q_4)$ is
+compose. Its associator $(\tilde Q_6\star\tilde Q_3)\star\tilde Q_4-\tilde Q_6\star(\tilde Q_3\star\tilde Q_4)$ is
 nonzero on $256$ of the $512$ triples of the eight-element basis, at the clean witnesses $(e_t,e_t,\vec e_x)$,
 where it is $-2\vec e_x$, and $(e_t,\vec e_x,\vec e_x)$, where it is $2e_t$. The defect carries both a central and a
 vector part, so — unlike the Jacobi defect of the antisymmetric half, which is purely vector — it is not

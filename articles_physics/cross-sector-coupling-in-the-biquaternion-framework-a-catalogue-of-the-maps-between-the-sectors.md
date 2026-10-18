@@ -125,11 +125,11 @@ Rotation: Phase, Duality and the Wick Rotation as One Generator*. The scalar $i$
 An informational element can also act on a material one.
 
 **Proposition.** A unit-norm element $\tilde{U}\in\mathbb{M}_+$ — the carrier of the pure boosts —
-acts on the material sector by the sandwich $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$,
+acts on the material sector by the sandwich $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$,
 and the result is again material.
 
-**Why.** $(\tilde{U}\tilde{T}\tilde{U}^{*})^{*} = \tilde{U}\tilde{T}^{*}\tilde{U}^{*} = -\tilde{U}\tilde{T}\tilde{U}^{*}$,
-since $\tilde{U}^{*} = \tilde{U}$ for a Hermitian rotor and $\tilde{T}^{*} = -\tilde{T}$.
+**Why.** $(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*} = \tilde{U}\tilde{Q}^{*}\tilde{U}^{*} = -\tilde{U}\tilde{Q}\tilde{U}^{*}$,
+since $\tilde{U}^{*} = \tilde{U}$ for a Hermitian rotor and $\tilde{Q}^{*} = -\tilde{Q}$.
 
 **Interpretation.** The action is a **frame change**: the informational sector, through its Hermitian rotors,
 supplies the transformations of the material sector. It is a coupling of a third kind — not a map
@@ -207,7 +207,7 @@ Biquaternionic Form*.
 | square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$ | *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* | a map, not an evolution; the product of two is not informational |
 | preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$ | *The Bloch Ball as the Trace-One Slice of the Future Light Cone* | a dictionary, no dynamics; state only on the trace-one slice |
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
-| rotor action $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
+| rotor action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
 | off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The Bilinear Product on the Material Sector* | a pairing, produces no element |
 | imaginary part of $\langle\cdot\rangle_{\natural}$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Norm and Invertibility in the General Quaternionic Algebra* | an interpretation of one element's own cross terms |
 | Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Thermal Formalism in Biquaternionic Form* | a continuation, not a new coupling |
@@ -264,7 +264,7 @@ each of its instances owned by an article that proves it.
 | $\tilde{H} = h_0e_t+i\vec h$ | Informational element, $h_0$ and $\vec h$ real |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$ | Biquaternion norm; equal to the interval on $\mathbb{M}_-$ |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$ |
-| $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | The rotor action, $\tilde{U}\in\mathbb{M}_+$ of unit norm |
+| $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | The rotor action, $\tilde{U}\in\mathbb{M}_+$ of unit norm |
 | $\mathrm{Sc}(\tilde{P}\tilde{H})$ | Off-sector scalar pairing, purely imaginary |
 
 ## Further Reading

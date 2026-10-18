@@ -769,10 +769,10 @@ On the units $\operatorname{Tr}(e_t) = 2$ and $\operatorname{Tr}(\vec e_k) = 0$,
 |---|---|
 | left multiplication | $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2$ |
 | right multiplication | $R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |
-| two-sided | $L_{\tilde A}R_{\tilde Q_1}(\tilde Q_2)=\tilde A\tilde Q_2\tilde Q_1$ |
+| two-sided | $L_{\tilde Q_4}R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_4\tilde Q_2\tilde Q_1$ |
 | sandwich | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\operatorname{H}_{\tilde Q}$ |
-| inner derivation | $\operatorname{ad}_{\tilde A}(\tilde Q_1)=[\tilde A,\tilde Q_1]$ |
-| automorphism | $\operatorname{Ad}_{\tilde A}$ |
+| inner derivation | $\operatorname{ad}_{\tilde Q_4}(\tilde Q_1)=[\tilde Q_4,\tilde Q_1]$ |
+| automorphism | $\operatorname{Ad}_{\tilde Q_4}$ |
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it.
 

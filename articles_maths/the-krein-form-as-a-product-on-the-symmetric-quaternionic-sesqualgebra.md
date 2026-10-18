@@ -90,14 +90,14 @@ a real algebraic cone of real dimension seven through the origin, of real codime
 **Theorem (the invariance fails).** The form $\langle\cdot,\cdot\rangle_{\natural*}$ is not invariant under the block: there are biquaternions with
 
 $$
-\langle\tilde A\star\tilde Q_1,\tilde A\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}.
+\langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}.
 $$
 
 Explicitly,
 
 $$
-\langle\tilde A\star\tilde Q_1,\tilde A\star\tilde Q_2\rangle_{\natural*}
-=\mathrm{Sc}\bigl(\mathrm{SPA}(\overline{\tilde Q_1},\tilde A)\,\mathrm{SPA}(\tilde Q_2,\overline{\tilde A})\bigr),
+\langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}
+=\mathrm{Sc}\bigl(\mathrm{SPA}(\overline{\tilde Q_1},\tilde Q_3)\,\mathrm{SPA}(\tilde Q_2,\overline{\tilde Q_3})\bigr),
 $$
 
 where $\mathrm{SPA}(\tilde Q_1,\tilde Q_2)=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ is the symmetric plain product, and the defect is this value minus $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$.
@@ -105,32 +105,32 @@ where $\mathrm{SPA}(\tilde Q_1,\tilde Q_2)=\tfrac12(\tilde Q_1\tilde Q_2+\tilde 
 *Proof.* The two identities
 
 $$
-(\tilde A\star\tilde Q_1)^{\natural}=\mathrm{SPA}(\overline{\tilde Q_1},\tilde A),
+(\tilde Q_3\star\tilde Q_1)^{\natural}=\mathrm{SPA}(\overline{\tilde Q_1},\tilde Q_3),
 \qquad
-(\tilde A\star\tilde Q_1)^{*}=\mathrm{SPA}(\tilde Q_1,\overline{\tilde A})
+(\tilde Q_3\star\tilde Q_1)^{*}=\mathrm{SPA}(\tilde Q_1,\overline{\tilde Q_3})
 $$
 
-follow from the definition of the block and the two anti-automorphism properties of ${}^{\natural}$ and ${}^{*}$. Then $\langle\tilde A\star\tilde Q_1,\tilde A\star\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde A\star\tilde Q_1)^{\natural}(\tilde A\star\tilde Q_2)^{*}\bigr)$, which is the displayed value. On the pair $\tilde A=\tilde Q_1=e_t+\vec e_x$, $\tilde Q_2=\vec e_x$ one has $\tilde A\star\tilde Q_1=-2\vec e_x$ and $\tilde A\star\tilde Q_2=-e_t-\vec e_x$, so $\langle\tilde A\star\tilde Q_1,\tilde A\star\tilde Q_2\rangle_{\natural*}=-2$ against $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle e_t+\vec e_x,\vec e_x\rangle_{\natural*}=-1$: the defect is $-1$ and the invariance fails.
+follow from the definition of the block and the two anti-automorphism properties of ${}^{\natural}$ and ${}^{*}$. Then $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde Q_3\star\tilde Q_1)^{\natural}(\tilde Q_3\star\tilde Q_2)^{*}\bigr)$, which is the displayed value. On the pair $\tilde Q_3=\tilde Q_1=e_t+\vec e_x$, $\tilde Q_2=\vec e_x$ one has $\tilde Q_3\star\tilde Q_1=-2\vec e_x$ and $\tilde Q_3\star\tilde Q_2=-e_t-\vec e_x$, so $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_3\star\tilde Q_2\rangle_{\natural*}=-2$ against $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle e_t+\vec e_x,\vec e_x\rangle_{\natural*}=-1$: the defect is $-1$ and the invariance fails.
 
 **Theorem (the compatibility that does hold).** The block and the form are tied by the adjoint relation
 
 $$
-\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_2\rangle_{\natural*}}.
+\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}.
 $$
 
-*Proof.* Use the two identities of the previous theorem, $(\tilde A\star\tilde Q_1)^{\natural}=\mathrm{SPA}(\overline{\tilde Q_1},\tilde A)$ and $(\tilde A\star\tilde Q_1)^{*}=\mathrm{SPA}(\tilde Q_1,\overline{\tilde A})$, together with $\mathrm{Sc}(U)=\mathrm{Sc}(U^{\natural})$, the value of the natural conjugation on the two scalar products, and the cyclic invariance $\mathrm{Sc}(UV)=\mathrm{Sc}(VU)$. On the one hand
+*Proof.* Use the two identities of the previous theorem, $(\tilde Q_3\star\tilde Q_1)^{\natural}=\mathrm{SPA}(\overline{\tilde Q_1},\tilde Q_3)$ and $(\tilde Q_3\star\tilde Q_1)^{*}=\mathrm{SPA}(\tilde Q_1,\overline{\tilde Q_3})$, together with $\mathrm{Sc}(U)=\mathrm{Sc}(U^{\natural})$, the value of the natural conjugation on the two scalar products, and the cyclic invariance $\mathrm{Sc}(UV)=\mathrm{Sc}(VU)$. On the one hand
 
 $$
-\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde A\star\tilde Q_1)^{\natural}\tilde Q_2^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_1}\tilde A+\tilde A\overline{\tilde Q_1})\tilde Q_2^{*}\bigr),
+\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde Q_3\star\tilde Q_1)^{\natural}\tilde Q_2^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_1}\tilde Q_3+\tilde Q_3\overline{\tilde Q_1})\tilde Q_2^{*}\bigr),
 $$
 
-and on the other, with the same identity read at the element $\tilde A^{\natural}$,
+and on the other, with the same identity read at the element $\tilde Q_3^{\natural}$,
 
 $$
-\langle\tilde A^{\natural}\star\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde A^{\natural}\star\tilde Q_2)^{\natural}\tilde Q_1^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_2}\tilde A^{\natural}+\tilde A^{\natural}\overline{\tilde Q_2})\tilde Q_1^{*}\bigr).
+\langle\tilde Q_3^{\natural}\star\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde Q_3^{\natural}\star\tilde Q_2)^{\natural}\tilde Q_1^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_2}\tilde Q_3^{\natural}+\tilde Q_3^{\natural}\overline{\tilde Q_2})\tilde Q_1^{*}\bigr).
 $$
 
-The two agree term by term: the natural conjugation sends $\overline{\tilde Q_1}\tilde A\tilde Q_2^{*}$ to $\overline{\tilde Q_2}\tilde A^{\natural}\tilde Q_1^{*}$ and $\tilde A\overline{\tilde Q_1}\tilde Q_2^{*}$ to $\overline{\tilde Q_2}\tilde Q_1^{*}\tilde A^{\natural}$, since $(\overline{\tilde Q_1})^{\natural}=\tilde Q_1^{*}$ and $(\tilde Q_2^{*})^{\natural}=\overline{\tilde Q_2}$, and the scalar part is invariant under it; the second pair is then carried one onto the other by the cyclic invariance. Hence $\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde A^{\natural}\star\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ by the Hermitian symmetry of $\langle\cdot,\cdot\rangle_{\natural*}$, which is the display.
+The two agree term by term: the natural conjugation sends $\overline{\tilde Q_1}\tilde Q_3\tilde Q_2^{*}$ to $\overline{\tilde Q_2}\tilde Q_3^{\natural}\tilde Q_1^{*}$ and $\tilde Q_3\overline{\tilde Q_1}\tilde Q_2^{*}$ to $\overline{\tilde Q_2}\tilde Q_1^{*}\tilde Q_3^{\natural}$, since $(\overline{\tilde Q_1})^{\natural}=\tilde Q_1^{*}$ and $(\tilde Q_2^{*})^{\natural}=\overline{\tilde Q_2}$, and the scalar part is invariant under it; the second pair is then carried one onto the other by the cyclic invariance. Hence $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_3^{\natural}\star\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ by the Hermitian symmetry of $\langle\cdot,\cdot\rangle_{\natural*}$, which is the display.
 
 **Remark.** The invariance fails, and the compatibility that holds is the adjoint relation rather than the multiplicativity. The distinction is the one of the whole block: the product is conjugate-linear in one slot, so its left multiplications do not preserve $\langle\cdot,\cdot\rangle_{\natural*}$ the way a group of linear maps does, and the form records the failure through the two identities of the adjoint theorem.
 
@@ -170,11 +170,11 @@ The first two are the two symmetric bilinear forms of the algebra and the last t
 
 **A complex isotropic element.** $\tilde Q_1=e_t+i\vec e_x$: $\langle\cdot,\cdot\rangle_{\natural*}=|1|^{2}-|i|^{2}=0$, isotropic; the element is also of square zero by the family of the diagonal article, since $|\vec c|^{2}=1=|\alpha|^{4}$.
 
-**The defect computed.** $\tilde A=e_t$, $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y$: $\tilde A\star\tilde Q_1=-\vec e_x$ and $\tilde A\star\tilde Q_2=-\vec e_y$, so $\langle -\vec e_x,-\vec e_y\rangle_{\natural*}=\langle \vec e_x,\vec e_y\rangle_{\natural*}=0$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle \vec e_x,\vec e_y\rangle_{\natural*}=0$: the defect vanishes on this pair. On $\tilde A=\tilde Q_1=e_t+\vec e_x$, $\tilde Q_2=\vec e_x$ the two values differ, and the defect is the difference of the two displays of the theorem.
+**The defect computed.** $\tilde Q_3=e_t$, $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y$: $\tilde Q_3\star\tilde Q_1=-\vec e_x$ and $\tilde Q_3\star\tilde Q_2=-\vec e_y$, so $\langle -\vec e_x,-\vec e_y\rangle_{\natural*}=\langle \vec e_x,\vec e_y\rangle_{\natural*}=0$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle \vec e_x,\vec e_y\rangle_{\natural*}=0$: the defect vanishes on this pair. On $\tilde Q_3=\tilde Q_1=e_t+\vec e_x$, $\tilde Q_2=\vec e_x$ the two values differ, and the defect is the difference of the two displays of the theorem.
 
 ## Summary
 
-is the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, Hermitian, with $\langle\tilde Q_2,\tilde Q_2\rangle_{\natural*}=|Q_{2t}|^{2}-\sum_k|Q_{2,k}|^{2}$ real. Its Gram matrix is $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis and $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ in the real basis; its inertia is $(1,3)$, its real signature $(2,6)$, its rank four over $\mathbb{C}$ and eight over $\mathbb{R}$, and its radical is zero. Its isotropic cone is $\{|Q_{1t}|^{2}=\sum_k|Q_{1,k}|^{2}\}$, of real dimension seven and real codimension one, and on the remarkable subspaces it restricts to $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the four real four-dimensional subspaces. It is not invariant under the block; the defect is $\mathrm{Sc}(\mathrm{SPA}(\overline{\tilde Q_1},\tilde A)\mathrm{SPA}(\tilde Q_2,\overline{\tilde A}))-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, and the compatibility that holds is the adjoint relation $\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_2\rangle_{\natural*}}$. Of the four scalar parts of the row, $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ are the two Hermitian forms, of opposite sign in the vector term, and they collapse onto the two bilinear forms on the real quaternion subspace.
+is the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, Hermitian, with $\langle\tilde Q_2,\tilde Q_2\rangle_{\natural*}=|Q_{2t}|^{2}-\sum_k|Q_{2,k}|^{2}$ real. Its Gram matrix is $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis and $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ in the real basis; its inertia is $(1,3)$, its real signature $(2,6)$, its rank four over $\mathbb{C}$ and eight over $\mathbb{R}$, and its radical is zero. Its isotropic cone is $\{|Q_{1t}|^{2}=\sum_k|Q_{1,k}|^{2}\}$, of real dimension seven and real codimension one, and on the remarkable subspaces it restricts to $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the four real four-dimensional subspaces. It is not invariant under the block; the defect is $\mathrm{Sc}(\mathrm{SPA}(\overline{\tilde Q_1},\tilde Q_3)\mathrm{SPA}(\tilde Q_2,\overline{\tilde Q_3}))-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, and the compatibility that holds is the adjoint relation $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}$. Of the four scalar parts of the row, $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ are the two Hermitian forms, of opposite sign in the vector term, and they collapse onto the two bilinear forms on the real quaternion subspace.
 
 ## Summary of Notation
 
@@ -187,7 +187,7 @@ is the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\
 | $\mathrm{Sc}(\mathrm{SPA})=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ | the first symmetric bilinear scalar part |
 | $\mathrm{Sc}(\mathrm{SQA})=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ | the second symmetric bilinear scalar part |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | the other Hermitian form, the scalar part of $\mathrm{SPS}$ |
-| $\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ | the adjoint relation, the compatibility that holds |
+| $\langle\tilde Q_3\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_3^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ | the adjoint relation, the compatibility that holds |
 
 ## Further Reading
 

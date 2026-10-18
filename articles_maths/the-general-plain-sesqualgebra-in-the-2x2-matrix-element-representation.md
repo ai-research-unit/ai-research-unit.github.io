@@ -44,9 +44,9 @@ $$
 I\star Y=IY^{\dagger}=Y^{\dagger},\qquad Y\star I=YI^{\dagger}=Y,
 $$
 
-so $e_t$ is a **right unit and not a left unit** of the product: the right action of the unit is the identity while the left action is the conjugate transpose. In the notation of the two multiplication operators, $\mathsf{M}_2(L_{\tilde{A}}(\tilde{Q}))=\mathsf{M}_2(\tilde{A})\mathsf{M}_2(\tilde{Q})^{\dagger}$ and $\mathsf{M}_2(R_{\tilde{A}}(\tilde{Q}))=\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{A})^{\dagger}$. The absence of a two-sided unit is the failure of the conjugate transpose to be the identity, and every asymmetry of the group has this origin. The involution ${}^{*}$ is the conjugate transpose, so an element is self-adjoint exactly when its matrix is Hermitian and the Hermitian subspace $\mathbb{M}_+$ is the set of Hermitian matrices of $M_2(\mathbb{C})$.
+so $e_t$ is a **right unit and not a left unit** of the product: the right action of the unit is the identity while the left action is the conjugate transpose. In the notation of the two multiplication operators, $\mathsf{M}_2(L_{\tilde{Q}_4}(\tilde{Q}))=\mathsf{M}_2(\tilde{Q}_4)\mathsf{M}_2(\tilde{Q})^{\dagger}$ and $\mathsf{M}_2(R_{\tilde{Q}_4}(\tilde{Q}))=\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q}_4)^{\dagger}$. The absence of a two-sided unit is the failure of the conjugate transpose to be the identity, and every asymmetry of the group has this origin. The involution ${}^{*}$ is the conjugate transpose, so an element is self-adjoint exactly when its matrix is Hermitian and the Hermitian subspace $\mathbb{M}_+$ is the set of Hermitian matrices of $M_2(\mathbb{C})$.
 
-**The units and the zero divisors.** An element is a unit of the algebra exactly when its matrix is invertible, so the units are $GL_2(\mathbb{C})$ and the zero divisors are the singular matrices; the norm-one group $\{\tilde{A}:\langle\tilde{A},\tilde{A}\rangle_{\natural}=1\}$ is $SL_2(\mathbb{C})$.
+**The units and the zero divisors.** An element is a unit of the algebra exactly when its matrix is invertible, so the units are $GL_2(\mathbb{C})$ and the zero divisors are the singular matrices; the norm-one group $\{\tilde{Q}_4:\langle\tilde{Q}_4,\tilde{Q}_4\rangle_{\natural}=1\}$ is $SL_2(\mathbb{C})$.
 
 ## The Sesquilinear Objects in the Model
 
@@ -152,7 +152,7 @@ $$
 \mathbb{B}^{\times}\cong GL_2(\mathbb{C}),\qquad \{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1\}\cong SL_2(\mathbb{C}),
 $$
 
-and their unitary slices are $\mathrm{U}(2)$ and $SU(2)$, with $SU(2)\cong\mathrm{Spin}(3)$ and $SU(2)/\{\pm I\}\cong SO(3)$. The unit-norm group is the group that acts on the Hermitian subspace by $*$-congruence, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, which in the model is $X\mapsto AXA^{\dagger}$ on the Hermitian matrices. Three representatives in the model are
+and their unitary slices are $\mathrm{U}(2)$ and $SU(2)$, with $SU(2)\cong\mathrm{Spin}(3)$ and $SU(2)/\{\pm I\}\cong SO(3)$. The unit-norm group is the group that acts on the Hermitian subspace by $*$-congruence, $\tilde{Q}\mapsto\tilde{Q}_4\tilde{Q}\tilde{Q}_4^{*}$, which in the model is $X\mapsto AXA^{\dagger}$ on the Hermitian matrices. Three representatives in the model are
 
 $$
 A=\begin{pmatrix}1&1\\0&1\end{pmatrix},\quad \det A=1\ (\text{the unit-norm group}),\qquad

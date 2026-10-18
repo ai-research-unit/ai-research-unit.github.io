@@ -44,7 +44,7 @@ $$
 
 and the constant $\sqrt{2}$ cannot be lowered.
 
-**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{T})\|_F=\sqrt2\|\tilde{T}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
+**Proof.** Under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, which is a linear isometry up to the factor $\sqrt2$, one has $\|\mathsf{M}_2(\tilde{Q})\|_F=\sqrt2\|\tilde{Q}\|_E$, where $\|\cdot\|_F$ is the Frobenius norm. The Frobenius norm is submultiplicative, so
 $$
 \sqrt2\,\|\tilde{Q}_1\tilde{Q}_2\|_E=\|\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)\|_F\leq\|\mathsf{M}_2(\tilde{Q}_1)\|_F\|\mathsf{M}_2(\tilde{Q}_2)\|_F=2\|\tilde{Q}_1\|_E\|\tilde{Q}_2\|_E,
 $$
@@ -61,7 +61,7 @@ $$
 \|\tilde{Q}^{\natural}\|_E=\|\bar{\tilde{Q}}\|_E=\|\tilde{Q}^{*}\|_E=\|\tilde{Q}\|_E .
 $$
 
-Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\Theta_{\tilde{U}}(\tilde{T})=\tilde{U}\tilde{T}\tilde{U}^{*}$ is a Euclidean isometry.
+Moreover, for every unitary biquaternion $\tilde{U}$ the inner conjugation $\Theta_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ is a Euclidean isometry.
 
 **Proof.** A central multiplier scales every coefficient by $A$, and the three conjugations $\natural$, $\bar{\cdot}$, ${}^{*}$ (together with the reversal $\flat=-{}^{*}$) permute the coefficients among $\pm Q_\mu$ and $\pm\bar Q_\mu$, preserving $\sum_\mu|Q_\mu|^{2}$. For the last statement, $\mathsf{M}_2$ carries $\Theta_{\tilde{U}}$ to $M\mapsto M_{\tilde{U}}XM_{\tilde{U}}^{\dagger}$ with $M_{\tilde{U}}$ unitary, and the Frobenius norm is invariant under unitary similarity.
 

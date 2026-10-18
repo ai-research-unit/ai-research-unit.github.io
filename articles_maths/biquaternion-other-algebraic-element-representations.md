@@ -5,7 +5,7 @@
 The dedicated articles of this chapter own the standard realizations of the biquaternion algebra $\mathbb{B}$: the complex four-vector of *The Four-Vector Element Representation of Biquaternions*, the matrices $\mathsf{M}_2$ and $\mathsf{M}_4$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, and the polar factors of *The Polar Element Representation of Biquaternions* with its partial regroupings. This article collects the **algebraic realizations that have no article of their own** and the one structure of a different kind that the applied articles compute with:
 
 1. the **Clifford identification**, a biquaternion read inside the even Clifford algebra $\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$;
-2. the **conjugation action**, a biquaternion read as the inner automorphism $\tilde T\mapsto\tilde Q\tilde T\tilde Q^{-1}$ of the algebra;
+2. the **conjugation action**, a biquaternion read as the inner automorphism $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{-1}$ of the algebra;
 3. the **arrays of several biquaternions**, an object of the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$, which is not a realization of a single element.
 
 The word *representation* is used here in the sense of a concrete realization of the algebra as a collection of computable objects, and *algebraic* contrasts with *polar*: the realizations below use only the algebra operations, the central scalar imaginary and the underlying complex vector space structure, never the exponential or the roots of $-1$. The technical sense of representation theory — a homomorphism into the endomorphisms of a vector space — is used only in the conjugation action, which is a representation in both senses, and its module-theoretic counterpart is the subject of *Introduction to Biquaternion Element Representations*.
@@ -70,19 +70,19 @@ The identification does three things. It exhibits the biquaternion algebra as th
 The **conjugation action** of a unit $\tilde Q\in\mathbb{B}^{\times}$ on the algebra is
 
 $$
-\operatorname{Ad}_{\tilde Q}(\tilde T)=\tilde Q\,\tilde T\,\tilde Q^{-1}.
+\operatorname{Ad}_{\tilde Q}(\tilde Q_1)=\tilde Q\,\tilde Q_1\,\tilde Q^{-1}.
 $$
 
 It is built from the product and the norm alone, without the coefficient conjugation or the gamma matrices, so it is an algebraic realization in the sense of this article. It is the action the corpus calls the inner automorphisms, and it is the reference against which the dagger sandwich is read; the inner automorphisms are *Biquaternion Automorphisms and Derivations*, and the sandwich is *Biquaternion Rotations and Lorentz Transformations*.
 
 ### It Is an Algebra Automorphism
 
-For a unit $\tilde Q$ and any $\tilde T,\tilde S$,
+For a unit $\tilde Q$ and any $\tilde Q_1,\tilde S$,
 
 $$
-\operatorname{Ad}_{\tilde Q}(\tilde T\tilde S)=\tilde Q\tilde T\tilde S\tilde Q^{-1}
-=\bigl(\tilde Q\tilde T\tilde Q^{-1}\bigr)\bigl(\tilde Q\tilde S\tilde Q^{-1}\bigr)
-=\operatorname{Ad}_{\tilde Q}(\tilde T)\operatorname{Ad}_{\tilde Q}(\tilde S),
+\operatorname{Ad}_{\tilde Q}(\tilde Q_1\tilde S)=\tilde Q\tilde Q_1\tilde S\tilde Q^{-1}
+=\bigl(\tilde Q\tilde Q_1\tilde Q^{-1}\bigr)\bigl(\tilde Q\tilde S\tilde Q^{-1}\bigr)
+=\operatorname{Ad}_{\tilde Q}(\tilde Q_1)\operatorname{Ad}_{\tilde Q}(\tilde S),
 $$
 
 and it fixes $e_t$ and is inverted by $\operatorname{Ad}_{\tilde Q^{-1}}$. Multiplicativity here is unconditional, unlike the sandwich, which is multiplicative exactly on the unitary elements. Because $\mathbb{C}$ is central, $\operatorname{Ad}_{\lambda\tilde Q}=\operatorname{Ad}_{\tilde Q}$ for every nonzero $\lambda\in\mathbb{C}$.
@@ -92,7 +92,7 @@ and it fixes $e_t$ and is inverted by $\operatorname{Ad}_{\tilde Q^{-1}}$. Multi
 The automorphism is the identity exactly when $\tilde Q$ commutes with the algebra,
 
 $$
-\operatorname{Ad}_{\tilde Q}=\mathrm{id}\iff \tilde Q\tilde T=\tilde T\tilde Q\ \text{ for all }\tilde T\iff\tilde Q\in\mathbb{C}_{\mathbb{B}},
+\operatorname{Ad}_{\tilde Q}=\mathrm{id}\iff \tilde Q\tilde Q_1=\tilde Q_1\tilde Q\ \text{ for all }\tilde Q_1\iff\tilde Q\in\mathbb{C}_{\mathbb{B}},
 $$
 
 so the action depends on $\tilde Q$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}^{\times}$. By Skolem–Noether every $\mathbb{C}$-linear automorphism of the central simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, so the image of the action is the whole automorphism group,
@@ -114,7 +114,7 @@ $$
 and on the unitary slice it is this automorphism that the multiplicativity criterion of the sandwich detects. In general the two differ by a right factor, since
 
 $$
-\operatorname{H}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{*}=\operatorname{Ad}_{\tilde Q}(\tilde T)\,(\tilde Q\tilde Q^{*}),
+\operatorname{H}_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}=\operatorname{Ad}_{\tilde Q}(\tilde Q_1)\,(\tilde Q\tilde Q^{*}),
 $$
 
 so the sandwich is the inner automorphism followed by right multiplication by the Hermitian positive element $C=\tilde Q\tilde Q^{*}$, of norm $|\langle\tilde Q\rangle_{\natural}|^{2}>0$.
@@ -226,7 +226,7 @@ The image $\mathsf{M}_2(\mathsf{Q})$ is **not** the left regular matrix $\mathsf
 
 **The conjugation action and the minimal left ideals.** Because it is an automorphism, the conjugation action permutes the two minimal left ideals, and it exchanges them for any unit not commuting with $\tilde\Pi_+$, for instance $i\vec e_x$; a unit commuting with $\tilde\Pi_+$ leaves the halving alone.
 
-**The regular realization and the minimal left ideals.** The left regular matrix of $\mathsf{M}_4$ is the left action on the two minimal left ideals taken twice: since $\mathsf{M}_2(\tilde Q\tilde T)=\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde T)$, reading the columns of $\mathsf{M}_2(\tilde T)$ gives an isomorphism of left $\mathbb{B}$-modules $\mathbb{B}\to\mathbb{C}^2\oplus\mathbb{C}^2$, and in a basis of $\mathbb{B}$ made of a basis of $\mathbb{B}\tilde\Pi_+$ followed by one of $\mathbb{B}\tilde\Pi_-$ the regular matrix is block diagonal with $\mathsf{M}_2(\tilde Q)$ in both blocks. This is why the $2\times2$ and $4\times4$ accounts cannot disagree about $\mathsf{M}_2$: the second contains the first twice.
+**The regular realization and the minimal left ideals.** The left regular matrix of $\mathsf{M}_4$ is the left action on the two minimal left ideals taken twice: since $\mathsf{M}_2(\tilde Q\tilde Q_1)=\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q_1)$, reading the columns of $\mathsf{M}_2(\tilde Q_1)$ gives an isomorphism of left $\mathbb{B}$-modules $\mathbb{B}\to\mathbb{C}^2\oplus\mathbb{C}^2$, and in a basis of $\mathbb{B}$ made of a basis of $\mathbb{B}\tilde\Pi_+$ followed by one of $\mathbb{B}\tilde\Pi_-$ the regular matrix is block diagonal with $\mathsf{M}_2(\tilde Q)$ in both blocks. This is why the $2\times2$ and $4\times4$ accounts cannot disagree about $\mathsf{M}_2$: the second contains the first twice.
 
 **With the realizations treated elsewhere.** The four-vector and matrix realizations are related by reading the coefficients $Q_\mu$ off the matrix entries; the polar realizations are the algebraic realizations restricted to the nonzero elements and factorised by the exponential, and the two partial groupings are *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions* and *The Quaternion Pairing of the Polar Element Representation of Biquaternions*. All of them present the same algebra; the choice of realization is a choice of how to write it.
 
@@ -244,7 +244,7 @@ The choices belonging to the other realizations are recorded in their own articl
 
 The biquaternion algebra has two algebraic realizations that are not the subject of a dedicated article. The first is the **Clifford identification** $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$, with the quaternion units mapped to the spacelike bivectors, the imaginary quaternion units to the timelike ones, and $i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3$ under $g=\mathrm{diag}(+1,-1,-1,-1)$, which carries the Clifford product to the biquaternion product and the Clifford norm to the biquaternion norm, exhibits the quaternion subspace as the identity together with the spacelike bivectors and the anti-quaternion subspace as the pseudoscalar together with the timelike ones, and locates $\mathbb{B}$ among the real forms of its complexification. It is an isomorphism of $\mathbb{C}$-algebras and a second reading of the same ring; the change of scalars that exhibits it as a real reading is *The Realification and the Effect of the Change of Scalars*.
 
-The second is the **conjugation action** $\operatorname{Ad}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{-1}$, an algebra automorphism of $\mathbb{B}$ for every unit, with kernel the centre, so that the image is the whole automorphism group $\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})$ by Skolem–Noether; it coincides with the dagger sandwich on the unitary elements and differs from it in general by the Hermitian positive right factor $\tilde Q\tilde Q^{*}$, it preserves the centre and the vector subspace for every unit and the other four remarkable subspaces exactly for the complex multiples of a real quaternion, equivalently the units with $\tilde Q\tilde Q^{*}$ central, and it permutes the two minimal left ideals, exchanging them for a unit not commuting with $\tilde\Pi_+$, such as $i\vec e_x$. The inner automorphisms are *Biquaternion Automorphisms and Derivations*.
+The second is the **conjugation action** $\operatorname{Ad}_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{-1}$, an algebra automorphism of $\mathbb{B}$ for every unit, with kernel the centre, so that the image is the whole automorphism group $\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})$ by Skolem–Noether; it coincides with the dagger sandwich on the unitary elements and differs from it in general by the Hermitian positive right factor $\tilde Q\tilde Q^{*}$, it preserves the centre and the vector subspace for every unit and the other four remarkable subspaces exactly for the complex multiples of a real quaternion, equivalently the units with $\tilde Q\tilde Q^{*}$ central, and it permutes the two minimal left ideals, exchanging them for a unit not commuting with $\tilde\Pi_+$, such as $i\vec e_x$. The inner automorphisms are *Biquaternion Automorphisms and Derivations*.
 
 The third structure is not a realization of a single element. An **array of several biquaternions** is the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$ when square, its entrywise image $\mathsf{M}_2(\mathsf{Q})=\sum_\mu\mathsf{M}_2(e_\mu)\otimes Q_\mu$ is a complex matrix of twice the size, and the image preserves products, traces and daggers; the one-entry array is the $2\times2$ realization itself. The array is the form the applied articles compute with, and its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*.
 
@@ -261,8 +261,8 @@ The third structure is not a realization of a single element. An **array of seve
 | $\gamma_0,\gamma_1,\gamma_2,\gamma_3$ | Clifford generators, $\gamma_0^2=+\mathrm{I}$, $\gamma_\mu^2=-\mathrm{I}$ |
 | $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | Pseudoscalar, $\omega^2=-1$, central in $\mathrm{Cl}^{+}_{1,3}$ |
 | $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$ | Clifford identification, $\vec e_\mu\mapsto$ spacelike bivectors, $i\mapsto-\omega$ |
-| $\operatorname{Ad}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{-1}$ | Conjugation action, the inner automorphism |
-| $\operatorname{H}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{*}$ | The dagger sandwich, equal to $\operatorname{Ad}_{\tilde Q}$ on the unitary elements |
+| $\operatorname{Ad}_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{-1}$ | Conjugation action, the inner automorphism |
+| $\operatorname{H}_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ | The dagger sandwich, equal to $\operatorname{Ad}_{\tilde Q}$ on the unitary elements |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | Idempotents, the minimal left ideals $\mathbb{B}\tilde\Pi_\pm$ |
 | $\mathsf{M}_2$ | Algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_t)=\mathrm{I}_2$ |
 | $\mathbb{B}^{n\times m}$ | Array of several biquaternions; for $n=m$ the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$ |

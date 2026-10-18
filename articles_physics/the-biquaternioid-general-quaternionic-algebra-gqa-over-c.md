@@ -33,7 +33,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 
 ### Operators
 
-- **The two-sided and the one-sided operators.** The operators $\tilde Q_1\mapsto\tilde A\star\tilde Q_1$ and $\tilde Q_1\mapsto\tilde Q_1\star\tilde A$, their adjoints and their types; the left family is the opposite monoid and the right one does not close. Owners: *Two-Sided Operators on the General Quaternionic Algebra*, *One-Sided Operators on the General Quaternionic Algebra*.
+- **The two-sided and the one-sided operators.** The operators $\tilde Q_1\mapsto\tilde Q_2\star\tilde Q_1$ and $\tilde Q_1\mapsto\tilde Q_1\star\tilde Q_2$, their adjoints and their types; the left family is the opposite monoid and the right one does not close. Owners: *Two-Sided Operators on the General Quaternionic Algebra*, *One-Sided Operators on the General Quaternionic Algebra*.
 - **The pin and spin groups.** The two groups of the structure and the sandwich action they generate. Owner: *The Pin and Spin Groups of the General Quaternionic Algebra*.
 
 ### Representations
@@ -46,7 +46,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 - **The square map is the Born/measurement arrow.** The square $\tilde Q\mapsto\tilde Q^{2}$ is the only algebraic map that takes a material element to an informational one, so it is the framework's candidate for the algebraic step from a process to a probability. Boundary: the corpus's Born rule is the trace formula and not the square map alone; the reading names a shape and claims no derivation.
 - **The material composition is oriented and cannot measure.** With no right unit and two slots that are not the same, a form of this product cannot be a probability; a measurement needs positivity and idempotents, and the material composition has neither, while the informational sector has both. The absence is informative rather than defective. The composition defines a **monoid of operators and not an algebra**: the operations compose and the elements do not.
 - **The operators that preserve the interval are the Lorentz transformations.** The multiplications by a parameter of norm one preserve the interval, and the set of parameters on which the interval vanishes is the causal cone; left multiplication by a null parameter collapses the form, $\langle L_{\tilde P}\tilde Q_1\rangle_{\natural}=0$ for every $\tilde Q_1$, which is the operator picture of lightlike propagation.
-- **The sandwich is the inner automorphism scaled by the norm.** The sandwich $\tilde Q_1\mapsto\tilde A\tilde Q_1\tilde A^{\natural}$ is quadratic in its parameter and defined on every element; on the norm-one slice — the Lorentz parameters — it is the inner automorphism, and off the slice the two differ by the norm, which is the mass.
+- **The sandwich is the inner automorphism scaled by the norm.** The sandwich $\tilde Q_1\mapsto\tilde Q_2\tilde Q_1\tilde Q_2^{\natural}$ is quadratic in its parameter and defined on every element; on the norm-one slice — the Lorentz parameters — it is the inner automorphism, and off the slice the two differ by the norm, which is the mass.
 - **The type criterion is the split of the interval.** A one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint exactly for a pure one, so the two populated sectors are the centre, which carries the time direction, and the vector subspace, which carries the three spatial directions. Read on the clock, the bracket touches no central coordinate and is invisible to the exchange.
 
 ## Summary
@@ -64,7 +64,7 @@ The biquaternioid general quaternionic algebra is the structure $\tilde P\star\t
 | $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$ | the norm reversal of the central generator |
 | $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the causal cone; the lightlike parameters |
 | $L_{\tilde P}\tilde Q_1=\tilde P^{\natural}\tilde Q_1$ | the left multiplication; $\tilde P$ of norm one gives a Lorentz transformation |
-| $\tilde A\tilde Q_1\tilde A^{\natural}$ | the sandwich; the inner automorphism scaled by the norm |
+| $\tilde Q_2\tilde Q_1\tilde Q_2^{\natural}$ | the sandwich; the inner automorphism scaled by the norm |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |
 | $\langle\tilde P,\tilde Q\rangle$, $\langle\tilde P,\tilde Q\rangle_{\natural}$, $\langle\tilde P,\tilde Q\rangle_{*}$, $\langle\tilde P,\tilde Q\rangle_{\natural*}$ | the four algebraic norms of the grid |
 

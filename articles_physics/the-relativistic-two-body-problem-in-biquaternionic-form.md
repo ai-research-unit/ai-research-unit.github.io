@@ -49,22 +49,22 @@ which are the elements of $\mathbb{M}_-$ of negative norm.
 
 ### The Invariant Pairing on $\mathbb{M}_-$
 
-In order to combine the two four-momenta we need the symmetric bilinear form associated with the quadratic form $\langle\tilde Q,\tilde Q\rangle_{\natural}$. For $\tilde{A}, \tilde{Q}_1 \in \mathbb{M}_-$ define
+In order to combine the two four-momenta we need the symmetric bilinear form associated with the quadratic form $\langle\tilde Q,\tilde Q\rangle_{\natural}$. For $\tilde Q_2, \tilde{Q}_1 \in \mathbb{M}_-$ define
 
 $$
-\langle \tilde{A}, \tilde{Q}_1\rangle := \mathrm{Sc}\!\left(\tilde{A}\tilde{Q}_1^{\natural}\right).
+\langle \tilde Q_2, \tilde{Q}_1\rangle := \mathrm{Sc}\!\left(\tilde Q_2\tilde{Q}_1^{\natural}\right).
 $$
 
-For elements of $\mathbb{M}_-$ this is **real**: writing $\tilde{A} = i\alpha\,e_t + \vec a$ and $\tilde{Q}_1 = i\beta\,e_t + \vec b$ with real $\alpha, \beta$ and real $\vec a, \vec b$, one has
+For elements of $\mathbb{M}_-$ this is **real**: writing $\tilde Q_2 = i\alpha\,e_t + \vec a$ and $\tilde{Q}_1 = i\beta\,e_t + \vec b$ with real $\alpha, \beta$ and real $\vec a, \vec b$, one has
 
 $$
-\langle \tilde{A},\tilde{Q}_1\rangle = (i\alpha)(i\beta) + \vec a\cdot\vec b = -\alpha\beta + \vec a\cdot\vec b.
+\langle \tilde Q_2,\tilde{Q}_1\rangle = (i\alpha)(i\beta) + \vec a\cdot\vec b = -\alpha\beta + \vec a\cdot\vec b.
 $$
 
 The pairing is symmetric, bilinear, and non-degenerate, and it reproduces the biquaternion norm on the diagonal:
 
 $$
-\langle \tilde{A}, \tilde{A}\rangle = \langle\tilde{A}\rangle_{\natural}.
+\langle \tilde Q_2, \tilde Q_2\rangle = \langle\tilde Q_2\rangle_{\natural}.
 $$
 
 Its signature is $(3,1)$ in the basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$: the temporal direction contributes $-1$ and the three spatial directions contribute $+1$. This is the same signature as the biquaternion norm of $\mathbb{M}_-$.
@@ -93,17 +93,17 @@ $$
 
 Because $\mathbb{M}_-$ is a real vector space, $\tilde{P} \in \mathbb{M}_-$: the total energy is $E_1+E_2$, the total momentum $\vec p_1+\vec p_2$. In the biquaternion formulation this is the statement that $\mathbb{M}_-$ is closed under addition.
 
-The biquaternion norm is multiplicative on $\mathbb{B}$ but **not additive**. For any $\tilde{A}, \tilde{Q}_1 \in \mathbb{B}$,
+The biquaternion norm is multiplicative on $\mathbb{B}$ but **not additive**. For any $\tilde Q_2, \tilde{Q}_1 \in \mathbb{B}$,
 
 $$
-\langle\tilde{A}+\tilde{Q}_1\rangle_{\natural} = (\tilde{A}+\tilde{Q}_1)(\tilde{A}^{\natural}+\tilde{Q}_1^{\natural})
-= \langle\tilde{A}\rangle_{\natural} + \langle\tilde{Q}_1\rangle_{\natural} + \tilde{A}\tilde{Q}_1^{\natural} + \tilde{Q}_1\tilde{A}^{\natural}.
+\langle\tilde Q_2+\tilde{Q}_1\rangle_{\natural} = (\tilde Q_2+\tilde{Q}_1)(\tilde Q_2^{\natural}+\tilde{Q}_1^{\natural})
+= \langle\tilde Q_2\rangle_{\natural} + \langle\tilde{Q}_1\rangle_{\natural} + \tilde Q_2\tilde{Q}_1^{\natural} + \tilde{Q}_1\tilde Q_2^{\natural}.
 $$
 
-Since $\tilde{Q}_1\tilde{A}^{\natural} = \overline{\tilde{A}\tilde{Q}_1^{\natural}}$ and a biquaternion plus its quaternion conjugate is twice its scalar part, the last two terms combine into $2\,\mathrm{Sc}(\tilde{A}\tilde{Q}_1^{\natural})$. For elements of $\mathbb{M}_-$ this gives the **polarization identity**
+Since $\tilde{Q}_1\tilde Q_2^{\natural} = \overline{\tilde Q_2\tilde{Q}_1^{\natural}}$ and a biquaternion plus its quaternion conjugate is twice its scalar part, the last two terms combine into $2\,\mathrm{Sc}(\tilde Q_2\tilde{Q}_1^{\natural})$. For elements of $\mathbb{M}_-$ this gives the **polarization identity**
 
 $$
-\langle\tilde{A}+\tilde{Q}_1\rangle_{\natural} = \langle\tilde{A}\rangle_{\natural} + \langle\tilde{Q}_1\rangle_{\natural} + 2\langle \tilde{A}, \tilde{Q}_1\rangle.
+\langle\tilde Q_2+\tilde{Q}_1\rangle_{\natural} = \langle\tilde Q_2\rangle_{\natural} + \langle\tilde{Q}_1\rangle_{\natural} + 2\langle \tilde Q_2, \tilde{Q}_1\rangle.
 $$
 
 The mixed term is the whole content of the two-body problem: it is the invariant that knows about the relative motion.
@@ -496,7 +496,7 @@ The dynamics of two *interacting* spin-$\tfrac12$ particles begins with the Brei
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\langle\tilde{A},\tilde{Q}_1\rangle = \mathrm{Sc}(\tilde{A}\tilde{Q}_1^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
+| $\langle\tilde Q_2,\tilde{Q}_1\rangle = \mathrm{Sc}(\tilde Q_2\tilde{Q}_1^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
 | $\tilde{P}_a = m_a\tilde{V}_a = iE_a/c\,e_t+\vec p_a$ | Four-momentum of body $a$ |
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
 | $\langle\tilde{P}\rangle_{\natural} = -M^2c^2$ | Invariant mass of the pair |

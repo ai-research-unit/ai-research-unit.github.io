@@ -11,7 +11,7 @@ R_{\tilde P}(\tilde Q_5)=\tilde Q_5\tilde P,\qquad
 \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}} .
 $$
 
-The left and the right multiplication are the two one-sided operators, their products $L_{\tilde A}R_{\tilde Q_1}$ are
+The left and the right multiplication are the two one-sided operators, their products $L_{\tilde Q_7}R_{\tilde Q_1}$ are
 the two-sided ones, and the **sandwich** is the algebraic norm two-sided operator in which the right parameter is the
 conjugate of the left one. The composition laws of the two families, and the interpretation of the multiplication as a
 process, belong to *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; the
@@ -25,15 +25,15 @@ of the product itself, its associate $F^{\approx}$ is the transpose, and the tra
 **right** multiplication:
 
 $$
-\bigl(L_{\tilde A}\bigr)^{\approx}=R_{\tilde A},\qquad
+\bigl(L_{\tilde Q_7}\bigr)^{\approx}=R_{\tilde Q_7},\qquad
 \bigl(R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1},\qquad
-\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1}R_{\tilde A}.
+\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1}R_{\tilde Q_7}.
 $$
 
 Association therefore **swaps the two sides** without conjugating the parameter, and it is the only one of the four
 adjoints of the corpus that reverses a side with the parameter untouched: the Hermitian dagger keeps the side,
-$(L_{\tilde A})^{*}=L_{\tilde A^{*}}$, the quaternionic adjoint keeps the side, and the signed Hermitian adjoint
-reverses the side but conjugates the parameter, $(L_{\tilde A})^{\natural\ast}=R_{\bar{\tilde A}}$. Every type criterion
+$(L_{\tilde Q_7})^{*}=L_{\tilde Q_7^{*}}$, the quaternionic adjoint keeps the side, and the signed Hermitian adjoint
+reverses the side but conjugates the parameter, $(L_{\tilde Q_7})^{\natural\ast}=R_{\bar{\tilde Q_7}}$. Every type criterion
 of the block is the consequence: a one-sided operator is self-adjoint exactly when its
 parameter is central, a two-sided operator exactly when its two parameters are proportional, and no generator appears
 in either family. The criteria and their proofs are the mathematics of *One-Sided Operators on the Biquaternion Algebra*, *Two-Sided Operators on the Biquaternion Algebra* and *Association and the Transpose on the Quaternion Algebra*; the article reads them.
@@ -59,18 +59,18 @@ unitary one, the measurement update for a Hermitian idempotent.
 The block carries two one-sided operators and their products:
 
 $$
-L_{\tilde A}L_{\tilde Q_1}=L_{\tilde A\tilde Q_1},\qquad
-R_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1\tilde A},\qquad
-L_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde A},\qquad
-\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)\circ\bigl(L_{\tilde Q_2}R_{\tilde D}\bigr)=L_{\tilde A\tilde Q_2}R_{\tilde D\tilde Q_1}.
+L_{\tilde Q_7}L_{\tilde Q_1}=L_{\tilde Q_7\tilde Q_1},\qquad
+R_{\tilde Q_7}R_{\tilde Q_1}=R_{\tilde Q_1\tilde Q_7},\qquad
+L_{\tilde Q_7}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde Q_7},\qquad
+\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\bigr)\circ\bigl(L_{\tilde Q_2}R_{\tilde D}\bigr)=L_{\tilde Q_7\tilde Q_2}R_{\tilde D\tilde Q_1}.
 $$
 
 The first two say that the left multiplications reproduce the algebra and the right multiplications reproduce the
 opposite algebra; the third says that attaching an operation before an argument and attaching one after it are
 independent; the fourth says that the two-sided family is closed under composition, with the second slot read in the
 reverse order because the right multiplications form an anti-representation. The parallel is exact: the parameter
-enters **once** in each slot, so the assignment $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and injective, and
-$L_{\tilde A}(e_t)=\tilde A$ recovers the parameter from the operator. The composition laws and the monoid of acting
+enters **once** in each slot, so the assignment $\tilde Q_7\mapsto L_{\tilde Q_7}$ is $\mathbb{C}$-linear and injective, and
+$L_{\tilde Q_7}(e_t)=\tilde Q_7$ recovers the parameter from the operator. The composition laws and the monoid of acting
 maps are *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*, and the
 enveloping algebra they generate is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
 
@@ -97,7 +97,7 @@ $$
 \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\mathrm{H}_{\tilde Q},
 $$
 
-the algebraic norm pair $(\tilde A,\tilde Q_1)=(\tilde Q,\tilde Q^{*})$ of the two-sided family, with the two boundary cases
+the algebraic norm pair $(\tilde Q_7,\tilde Q_1)=(\tilde Q,\tilde Q^{*})$ of the two-sided family, with the two boundary cases
 $\Theta_{e_t}=\mathrm{id}$ and $R_{\tilde Q}=L_{e_t}R_{\tilde Q}$, $L_{\tilde Q}=L_{\tilde Q}R_{e_t}$.
 
 The sandwich is one of the four objects the corpus calls an action, and it is the only one of them whose two slots are
@@ -106,23 +106,23 @@ Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*.
 
 ## The Adjoint of the Plain Form Swaps the Sides
 
-**Theorem (association swaps the two families).** For all $\tilde A,\tilde Q_1,\tilde Q_3,\tilde Q_4\in\mathbb{B}$,
+**Theorem (association swaps the two families).** For all $\tilde Q_7,\tilde Q_1,\tilde Q_3,\tilde Q_4\in\mathbb{B}$,
 
 $$
-\bigl\langle L_{\tilde A}\tilde Q_3,\tilde Q_4\bigr\rangle=\bigl\langle\tilde Q_3,R_{\tilde A}\tilde Q_4\bigr\rangle,
+\bigl\langle L_{\tilde Q_7}\tilde Q_3,\tilde Q_4\bigr\rangle=\bigl\langle\tilde Q_3,R_{\tilde Q_7}\tilde Q_4\bigr\rangle,
 \qquad\text{that is}\qquad
-\bigl(L_{\tilde A}\bigr)^{\approx}=R_{\tilde A},\qquad
+\bigl(L_{\tilde Q_7}\bigr)^{\approx}=R_{\tilde Q_7},\qquad
 \bigl(R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1}.
 $$
 
 *Proof.* The scalar part is invariant under cyclic permutation of the factors, so
-$\mathrm{Sc}(\tilde A\tilde Q_3\tilde Q_4)=\mathrm{Sc}(\tilde Q_3\tilde Q_4\tilde A)$, which is the cross identity; the form is
+$\mathrm{Sc}(\tilde Q_7\tilde Q_3\tilde Q_4)=\mathrm{Sc}(\tilde Q_3\tilde Q_4\tilde Q_7)$, which is the cross identity; the form is
 non-degenerate, so the associate is the operator displayed.
 
-**Theorem (the adjoint of a two-sided operator).** For all $\tilde A,\tilde Q_1$,
+**Theorem (the adjoint of a two-sided operator).** For all $\tilde Q_7,\tilde Q_1$,
 
 $$
-\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1}R_{\tilde A},
+\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1}R_{\tilde Q_7},
 $$
 
 the two parameters exchanging their places.
@@ -148,34 +148,34 @@ multiplications that are at once a left and a right multiplication, and they are
 
 ## The Types of the Operators
 
-**Theorem (the one-sided types).** For $\tilde A\in\mathbb{B}$,
+**Theorem (the one-sided types).** For $\tilde Q_7\in\mathbb{B}$,
 
 $$
-L_{\tilde A}\ \text{self-adjoint}\iff \tilde A\ \text{central},\qquad
-L_{\tilde A}\ \text{skew-adjoint}\iff \tilde A=0,
+L_{\tilde Q_7}\ \text{self-adjoint}\iff \tilde Q_7\ \text{central},\qquad
+L_{\tilde Q_7}\ \text{skew-adjoint}\iff \tilde Q_7=0,
 $$
 
-and the same two criteria hold on the right with $\tilde Q_1$ in place of $\tilde A$.
+and the same two criteria hold on the right with $\tilde Q_1$ in place of $\tilde Q_7$.
 
-*Proof.* By the swap theorem, self-adjointness of $L_{\tilde A}$ is $R_{\tilde A}=L_{\tilde A}$, that is
-$\tilde A\tilde Q_4=\tilde Q_4\tilde A$ for every $\tilde Q_4$, which is centrality; skew-adjointness is
-$\tilde A\tilde Q_4=-\tilde Q_4\tilde A$ for every $\tilde Q_4$, and at $\tilde Q_4=e_t$ this reads $\tilde A=-\tilde A$, so
-$\tilde A=0$.
+*Proof.* By the swap theorem, self-adjointness of $L_{\tilde Q_7}$ is $R_{\tilde Q_7}=L_{\tilde Q_7}$, that is
+$\tilde Q_7\tilde Q_4=\tilde Q_4\tilde Q_7$ for every $\tilde Q_4$, which is centrality; skew-adjointness is
+$\tilde Q_7\tilde Q_4=-\tilde Q_4\tilde Q_7$ for every $\tilde Q_4$, and at $\tilde Q_4=e_t$ this reads $\tilde Q_7=-\tilde Q_7$, so
+$\tilde Q_7=0$.
 
-**Theorem (the two-sided types).** For $\tilde A\neq0$,
+**Theorem (the two-sided types).** For $\tilde Q_7\neq0$,
 
 $$
-L_{\tilde A}R_{\tilde Q_1}\ \text{self-adjoint}\iff \tilde Q_1=\lambda\tilde A\ \text{for some }\lambda\in\mathbb{C},
+L_{\tilde Q_7}R_{\tilde Q_1}\ \text{self-adjoint}\iff \tilde Q_1=\lambda\tilde Q_7\ \text{for some }\lambda\in\mathbb{C},
 \qquad
-L_{\tilde A}R_{\tilde Q_1}\ \text{skew-adjoint}\iff L_{\tilde A}R_{\tilde Q_1}=0 .
+L_{\tilde Q_7}R_{\tilde Q_1}\ \text{skew-adjoint}\iff L_{\tilde Q_7}R_{\tilde Q_1}=0 .
 $$
 
-*Proof.* Self-adjointness is $L_{\tilde Q_1}R_{\tilde A}=L_{\tilde A}R_{\tilde Q_1}$ by the swap, that is
-$\tilde Q_1\tilde Q_4\tilde A=\tilde A\tilde Q_4\tilde Q_1$ for all $\tilde Q_4$; at $\tilde Q_4=e_t$ the parameters commute, and
-substituting $\tilde Q_4=\tilde A^{-1}\tilde Q_2\tilde A^{-1}$ for a unit $\tilde A$ gives that $\tilde Q_1\tilde A^{-1}$ is
-central. Skew-adjointness gives $\mathrm{Sc}(\tilde Q_4\tilde A\tilde Q_1)=0$ for all $\tilde Q_4$, hence $\tilde A\tilde Q_1=0$
-and symmetrically $\tilde Q_1\tilde A=0$, and then the defining identity at $\tilde Q_4=e_t$ reads
-$\tilde Q_1\tilde A=-\tilde A\tilde Q_1$, so both products vanish; the remaining cases were settled by elimination.
+*Proof.* Self-adjointness is $L_{\tilde Q_1}R_{\tilde Q_7}=L_{\tilde Q_7}R_{\tilde Q_1}$ by the swap, that is
+$\tilde Q_1\tilde Q_4\tilde Q_7=\tilde Q_7\tilde Q_4\tilde Q_1$ for all $\tilde Q_4$; at $\tilde Q_4=e_t$ the parameters commute, and
+substituting $\tilde Q_4=\tilde Q_7^{-1}\tilde Q_2\tilde Q_7^{-1}$ for a unit $\tilde Q_7$ gives that $\tilde Q_1\tilde Q_7^{-1}$ is
+central. Skew-adjointness gives $\mathrm{Sc}(\tilde Q_4\tilde Q_7\tilde Q_1)=0$ for all $\tilde Q_4$, hence $\tilde Q_7\tilde Q_1=0$
+and symmetrically $\tilde Q_1\tilde Q_7=0$, and then the defining identity at $\tilde Q_4=e_t$ reads
+$\tilde Q_1\tilde Q_7=-\tilde Q_7\tilde Q_1$, so both products vanish; the remaining cases were settled by elimination.
 
 **Corollary (the types of the sandwich).** The sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is
 self-adjoint for the plain form **exactly when the parameter lies in one of the two sectors**:
@@ -215,46 +215,46 @@ of the antisymmetric band, and its operators are read in the antisymmetric block
 
 ## The Symmetries of the Form and of the Product
 
-**Theorem (the one-sided automorphisms of the form).** The left multiplication $L_{\tilde A}$ preserves the plain form,
+**Theorem (the one-sided automorphisms of the form).** The left multiplication $L_{\tilde Q_7}$ preserves the plain form,
 
 $$
-B\bigl(L_{\tilde A}\tilde Q_3,L_{\tilde A}\tilde Q_4\bigr)=\langle\tilde Q_3,\tilde Q_4\rangle\qquad\text{for all }\tilde Q_3,\tilde Q_4,
+B\bigl(L_{\tilde Q_7}\tilde Q_3,L_{\tilde Q_7}\tilde Q_4\bigr)=\langle\tilde Q_3,\tilde Q_4\rangle\qquad\text{for all }\tilde Q_3,\tilde Q_4,
 $$
 
-if and only if $\tilde A=\pm e_t$, that is $L_{\tilde A}=\pm\mathrm{id}$; the same criterion holds on the right.
+if and only if $\tilde Q_7=\pm e_t$, that is $L_{\tilde Q_7}=\pm\mathrm{id}$; the same criterion holds on the right.
 
 *Proof.* Using the swap and the symmetry of the form,
 
 $$
-B\bigl(L_{\tilde A}\tilde Q_3,L_{\tilde A}\tilde Q_4\bigr)=\mathrm{Sc}\bigl(\tilde A\tilde Q_3\tilde A\tilde Q_4\bigr)
-=B\bigl(\tilde Q_3,\tilde A\tilde Q_4\tilde A\bigr),
+B\bigl(L_{\tilde Q_7}\tilde Q_3,L_{\tilde Q_7}\tilde Q_4\bigr)=\mathrm{Sc}\bigl(\tilde Q_7\tilde Q_3\tilde Q_7\tilde Q_4\bigr)
+=B\bigl(\tilde Q_3,\tilde Q_7\tilde Q_4\tilde Q_7\bigr),
 $$
 
-so preservation is $\tilde A\tilde Q_4\tilde A=\tilde Q_4$ for all $\tilde Q_4$. At
-$\tilde Q_4=e_t$ this gives $\tilde A^{2}=e_t$ and centrality, and a central element of square $e_t$ is $\pm e_t$.
+so preservation is $\tilde Q_7\tilde Q_4\tilde Q_7=\tilde Q_4$ for all $\tilde Q_4$. At
+$\tilde Q_4=e_t$ this gives $\tilde Q_7^{2}=e_t$ and centrality, and a central element of square $e_t$ is $\pm e_t$.
 
-**Theorem (the two-sided automorphisms of the form).** The two-sided operator $L_{\tilde A}R_{\tilde Q_1}$ preserves the
-plain form if and only if $\tilde Q_1\tilde A=\pm e_t$, that is $\tilde Q_1=\pm\tilde A^{-1}$; the operator is then
-$\pm\mathrm{Ad}_{\tilde A}$, the inner automorphism of the unit $\tilde A$ up to sign, and $\mathrm{Ad}_{\tilde A}$
+**Theorem (the two-sided automorphisms of the form).** The two-sided operator $L_{\tilde Q_7}R_{\tilde Q_1}$ preserves the
+plain form if and only if $\tilde Q_1\tilde Q_7=\pm e_t$, that is $\tilde Q_1=\pm\tilde Q_7^{-1}$; the operator is then
+$\pm\mathrm{Ad}_{\tilde Q_7}$, the inner automorphism of the unit $\tilde Q_7$ up to sign, and $\mathrm{Ad}_{\tilde Q_7}$
 itself preserves the form.
 
-**Theorem (the multiplicative operators).** The operator $L_{\tilde A}R_{\tilde Q_1}$ is multiplicative if and only if
-$\tilde A\tilde Q_1=e_t$, that is $\tilde Q_1=\tilde A^{-1}$:
+**Theorem (the multiplicative operators).** The operator $L_{\tilde Q_7}R_{\tilde Q_1}$ is multiplicative if and only if
+$\tilde Q_7\tilde Q_1=e_t$, that is $\tilde Q_1=\tilde Q_7^{-1}$:
 
 $$
-\bigl(L_{\tilde A}R_{\tilde Q_1}\tilde Q_3\bigr)\bigl(L_{\tilde A}R_{\tilde Q_1}\tilde Q_4\bigr)
-=\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)(\tilde Q_3\tilde Q_4)
+\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\tilde Q_3\bigr)\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\tilde Q_4\bigr)
+=\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\bigr)(\tilde Q_3\tilde Q_4)
 \qquad\text{for all }\tilde Q_3,\tilde Q_4,
 $$
 
-and the operator is then the inner automorphism $\mathrm{Ad}_{\tilde A}$.
+and the operator is then the inner automorphism $\mathrm{Ad}_{\tilde Q_7}$.
 
-**Corollary (the partial law of the central product).** If the product $\tilde Q_1\tilde A$ is merely central, the
+**Corollary (the partial law of the central product).** If the product $\tilde Q_1\tilde Q_7$ is merely central, the
 operator is still multiplicative up to that central scalar:
 
 $$
-\bigl(L_{\tilde A}R_{\tilde Q_1}\tilde Q_3\bigr)\bigl(L_{\tilde A}R_{\tilde Q_1}\tilde Q_4\bigr)
-=\tilde Q_1\tilde A\,\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)(\tilde Q_3\tilde Q_4),
+\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\tilde Q_3\bigr)\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\tilde Q_4\bigr)
+=\tilde Q_1\tilde Q_7\,\bigl(L_{\tilde Q_7}R_{\tilde Q_1}\bigr)(\tilde Q_3\tilde Q_4),
 $$
 
 and no norm enters the multiplier.
@@ -262,8 +262,8 @@ and no norm enters the multiplier.
 **Read as a physical statement.** The symmetries of the sector sign $\langle\cdot,\cdot\rangle$ are the inner automorphisms of the algebra and
 their negatives, and they are two-sided without exception: a genuine one-sided operation never preserves $\langle\cdot,\cdot\rangle$, so
 attaching an operation on one side alone changes the sector sign of a pairing. The operators that preserve the
-**composition** are the inner automorphisms $\mathrm{Ad}_{\tilde A}$ themselves, and the two units $\tilde A$ and
-$\tilde A'$ give the same operator exactly when they differ by a central scalar; conjugation is therefore the only
+**composition** are the inner automorphisms $\mathrm{Ad}_{\tilde Q_7}$ themselves, and the two units $\tilde Q_7$ and
+$\tilde Q_7'$ give the same operator exactly when they differ by a central scalar; conjugation is therefore the only
 relabelling available to the block, and the centre is what it cannot see. The two roles — symmetry of the form and
 symmetry of the product — differ by a sign and fall together on the inner automorphisms: the same operator preserves
 both the composition and the pairing whenever it is multiplicative, which is the meaning of the corollary. Finally the
@@ -271,7 +271,7 @@ criteria are conditions on the **product of the two parameters**, in which no no
 quaternionic block carries the correspondingly stronger law,
 
 $$
-\Theta_{\tilde A}(\tilde Q_3)\Theta_{\tilde A}(\tilde Q_4)=\langle\tilde A\rangle_{\natural}\,\Theta_{\tilde A}(\tilde Q_3\tilde Q_4)
+\Theta_{\tilde Q_7}(\tilde Q_3)\Theta_{\tilde Q_7}(\tilde Q_4)=\langle\tilde Q_7\rangle_{\natural}\,\Theta_{\tilde Q_7}(\tilde Q_3\tilde Q_4)
 \qquad\text{for every parameter,}
 $$
 
@@ -316,8 +316,8 @@ ideal.
 multiplication, and an operator commuting with both families is a central scalar:
 
 $$
-\{S:SL_{\tilde A}=L_{\tilde A}S\ \forall\tilde A\}=R(\mathbb{B}),\qquad
-\{S:SL_{\tilde A}=L_{\tilde A}S,\ SR_{\tilde Q_1}=R_{\tilde Q_1}S\ \forall\tilde A,\tilde Q_1\}=\mathbb{C}\,\mathrm{id}.
+\{S:SL_{\tilde Q_7}=L_{\tilde Q_7}S\ \forall\tilde Q_7\}=R(\mathbb{B}),\qquad
+\{S:SL_{\tilde Q_7}=L_{\tilde Q_7}S,\ SR_{\tilde Q_1}=R_{\tilde Q_1}S\ \forall\tilde Q_7,\tilde Q_1\}=\mathbb{C}\,\mathrm{id}.
 $$
 
 *Proof.* The commutant of the left regular representation is the right one, computed by evaluating at $e_t$; the
@@ -338,19 +338,19 @@ the algebra is recovered from its action, and nothing else acts.
 The sandwich and the inner automorphism are the same operator on the unitaries and different on the boosts, and that
 difference is the block's own sharp statement about its two-sided operators.
 
-**Proposition (the two parametrisations of one conjugation).** For every unit $\tilde A$,
+**Proposition (the two parametrisations of one conjugation).** For every unit $\tilde Q_7$,
 
 $$
-\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{*}},\qquad
-\mathrm{Ad}_{\tilde A}=L_{\tilde A}R_{\tilde A^{-1}},
+\Theta_{\tilde Q_7}=L_{\tilde Q_7}R_{\tilde Q_7^{*}},\qquad
+\mathrm{Ad}_{\tilde Q_7}=L_{\tilde Q_7}R_{\tilde Q_7^{-1}},
 $$
 
 so the sandwich conjugates by the **conjugate** of the parameter and the inner automorphism by its **inverse**. The
-two operators agree exactly when $\tilde A^{*}=\tilde A^{-1}$, that is when $\tilde A\tilde A^{*}=e_t$: on the
+two operators agree exactly when $\tilde Q_7^{*}=\tilde Q_7^{-1}$, that is when $\tilde Q_7\tilde Q_7^{*}=e_t$: on the
 **unitary** parameters, and there alone.
 
 *Proof.* The first display is the definition of the sandwich, the second the definition of the inner automorphism, and
-they coincide exactly when the two right parameters coincide; the kernel of the action $\tilde A\mapsto\mathrm{Ad}_{\tilde A}$
+they coincide exactly when the two right parameters coincide; the kernel of the action $\tilde Q_7\mapsto\mathrm{Ad}_{\tilde Q_7}$
 is the centre, so no ambiguity remains.
 
 **Theorem (both preserve the interval, and they differ on a boost).** Let $\tilde U$ be of unit norm,
@@ -454,12 +454,12 @@ idempotent — give the same symmetry verdict for the first and the third and a 
 second, and the case separates the two questions the block asks about an operator: **which form it is symmetric for**
 and **which motion it generates**.
 
-**A numerical check.** For random elements the five identities $L_{\tilde A}L_{\tilde Q_1}=L_{\tilde A\tilde Q_1}$,
-$R_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1\tilde A}$, $L_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde A}$,
-$\langle L_{\tilde A}\tilde Q_3,\tilde Q_4\rangle=\langle\tilde Q_3,R_{\tilde A}\tilde Q_4\rangle$ and
-$(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$ hold to machine precision; the type criteria were
+**A numerical check.** For random elements the five identities $L_{\tilde Q_7}L_{\tilde Q_1}=L_{\tilde Q_7\tilde Q_1}$,
+$R_{\tilde Q_7}R_{\tilde Q_1}=R_{\tilde Q_1\tilde Q_7}$, $L_{\tilde Q_7}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde Q_7}$,
+$\langle L_{\tilde Q_7}\tilde Q_3,\tilde Q_4\rangle=\langle\tilde Q_3,R_{\tilde Q_7}\tilde Q_4\rangle$ and
+$(L_{\tilde Q_7}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_7}$ hold to machine precision; the type criteria were
 checked on random, central, pure, null and unit parameters; the sandwich criterion holds on the two sectors and fails
-off them; the form-preserving criteria hold exactly at $\tilde A=\pm e_t$ and $\tilde Q_1\tilde A=\pm e_t$; and the two
+off them; the form-preserving criteria hold exactly at $\tilde Q_7=\pm e_t$ and $\tilde Q_1\tilde Q_7=\pm e_t$; and the two
 conjugations of the boost case were compared element by element.
 
 ## The Bound
@@ -490,17 +490,17 @@ general plain row is the only row with an enveloping operator algebra, and the s
 
 ## The Ledger
 
-**Proved.** The one-sided operators $L_{\tilde A}(\tilde Q_4)=\tilde A\tilde Q_4$ and
+**Proved.** The one-sided operators $L_{\tilde Q_7}(\tilde Q_4)=\tilde Q_7\tilde Q_4$ and
 $R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$ are $\mathbb{C}$-linear and injective in the parameter, they commute, their
 sixteen products span $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, and composition reverses the second slot; the associate
 of the plain form, $F^{\approx}$, is the transpose, and it **swaps** the two families,
-$(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$; a
+$(L_{\tilde Q_7})^{\approx}=R_{\tilde Q_7}$ and $(L_{\tilde Q_7}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_7}$; a
 one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint only for the zero parameter; a
 two-sided operator is self-adjoint exactly when its parameters are proportional and skew-adjoint only when it vanishes;
 the sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is self-adjoint exactly when $\tilde Q$ lies in a sector,
 so the measurement update and the material conjugation qualify and a generic Lorentz parameter does not; the one-sided
-form-preserving operators are $\pm\mathrm{id}$ and the two-sided ones are the $\pm\mathrm{Ad}_{\tilde A}$ with
-$\tilde Q_1\tilde A=\pm e_t$; the multiplicative ones are the inner automorphisms, with the central-product partial law;
+form-preserving operators are $\pm\mathrm{id}$ and the two-sided ones are the $\pm\mathrm{Ad}_{\tilde Q_7}$ with
+$\tilde Q_1\tilde Q_7=\pm e_t$; the multiplicative ones are the inner automorphisms, with the central-product partial law;
 the commutant of the left regular representation is the right one and the bicommutant is the scalars; and the sandwich
 and the inner automorphism agree exactly on the unitary parameters.
 
@@ -527,13 +527,13 @@ the identity, and the central phase is the one operation the state space cannot 
 
 ## Summary
 
-The operators of the general plain algebra are the left and the right multiplications, $L_{\tilde A}(\tilde Q_4)=\tilde A\tilde Q_4$
-and $R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$, and their products $L_{\tilde A}R_{\tilde Q_1}(\tilde Q_4)=\tilde A\tilde Q_4\tilde Q_1$,
+The operators of the general plain algebra are the left and the right multiplications, $L_{\tilde Q_7}(\tilde Q_4)=\tilde Q_7\tilde Q_4$
+and $R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$, and their products $L_{\tilde Q_7}R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_7\tilde Q_4\tilde Q_1$,
 the one-sided and the two-sided families. The parameter enters once in each slot, the two families commute, and
 composition reverses the second slot. The bilinear form of the block is the scalar part of the product itself,
 $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_t-\vec P\!\cdot\!\vec Q$ of Gram matrix
 $\mathrm{diag}(1,-1,-1,-1)$, and the transpose for $\langle\cdot,\cdot\rangle$ **swaps the two sides**:
-$(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$. Every
+$(L_{\tilde Q_7})^{\approx}=R_{\tilde Q_7}$ and $(L_{\tilde Q_7}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_7}$. Every
 type criterion follows: a one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint only for
 zero, a two-sided one exactly when its two parameters are proportional, and the sandwich
 $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ exactly when the parameter lies in a sector — so the measurement
@@ -555,33 +555,33 @@ the naming.
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | General plain bilinear form; Gram $\mathrm{diag}(1,-1,-1,-1)$ |
 | $F^{\approx}$ | The associate, or transpose, for $\langle\cdot,\cdot\rangle$ |
-| $L_{\tilde A}(\tilde Q_4)=\tilde A\tilde Q_4$ | Left multiplication; the left regular representation |
+| $L_{\tilde Q_7}(\tilde Q_4)=\tilde Q_7\tilde Q_4$ | Left multiplication; the left regular representation |
 | $R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$ | Right multiplication; anti-multiplicative in the parameter |
-| $L_{\tilde A}R_{\tilde Q_1}(\tilde Q_4)=\tilde A\tilde Q_4\tilde Q_1$ | Two-sided operator; the decomposable tensors |
+| $L_{\tilde Q_7}R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_7\tilde Q_4\tilde Q_1$ | Two-sided operator; the decomposable tensors |
 | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\mathrm{H}_{\tilde Q}$ | The sandwich; the one action form |
-| $L_{\tilde A}L_{\tilde Q_1}=L_{\tilde A\tilde Q_1}$, $R_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1\tilde A}$ | Composition laws |
-| $L_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde A}$ | The two families commute |
-| $(L_{\tilde A})^{\approx}=R_{\tilde A}$ | Association swaps the sides; $(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$ |
-| Self-adjoint $L_{\tilde A}\iff\tilde A$ central | One-sided type criterion; skew sector $\{0\}$ |
-| Self-adjoint $L_{\tilde A}R_{\tilde Q_1}\iff\tilde Q_1=\lambda\tilde A$ | Two-sided type criterion |
+| $L_{\tilde Q_7}L_{\tilde Q_1}=L_{\tilde Q_7\tilde Q_1}$, $R_{\tilde Q_7}R_{\tilde Q_1}=R_{\tilde Q_1\tilde Q_7}$ | Composition laws |
+| $L_{\tilde Q_7}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde Q_7}$ | The two families commute |
+| $(L_{\tilde Q_7})^{\approx}=R_{\tilde Q_7}$ | Association swaps the sides; $(L_{\tilde Q_7}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_7}$ |
+| Self-adjoint $L_{\tilde Q_7}\iff\tilde Q_7$ central | One-sided type criterion; skew sector $\{0\}$ |
+| Self-adjoint $L_{\tilde Q_7}R_{\tilde Q_1}\iff\tilde Q_1=\lambda\tilde Q_7$ | Two-sided type criterion |
 | $\Theta_{\tilde Q}$ self-adjoint $\iff\tilde Q\in\mathbb{M}_\pm$ | The sector criterion of the sandwich |
-| $L_{\tilde A}$ preserves $\langle\cdot,\cdot\rangle\iff\tilde A=\pm e_t$ | One-sided automorphisms of the form |
-| $\tilde Q_1\tilde A=\pm e_t\iff L_{\tilde A}R_{\tilde Q_1}=\pm\mathrm{Ad}_{\tilde A}$ | Two-sided automorphisms of the form |
-| $\tilde A\tilde Q_1=e_t\iff L_{\tilde A}R_{\tilde Q_1}=\mathrm{Ad}_{\tilde A}$ | The multiplicative operators |
-| $\tilde Q_1\tilde A$ central $\implies$ multiplicative up to $\tilde Q_1\tilde A$ | The partial law; no norm enters |
-| $\{S:SL_{\tilde A}=L_{\tilde A}S\}=R(\mathbb{B})$ | The commutant; the bicommutant is $\mathbb{C}\,\mathrm{id}$ |
+| $L_{\tilde Q_7}$ preserves $\langle\cdot,\cdot\rangle\iff\tilde Q_7=\pm e_t$ | One-sided automorphisms of the form |
+| $\tilde Q_1\tilde Q_7=\pm e_t\iff L_{\tilde Q_7}R_{\tilde Q_1}=\pm\mathrm{Ad}_{\tilde Q_7}$ | Two-sided automorphisms of the form |
+| $\tilde Q_7\tilde Q_1=e_t\iff L_{\tilde Q_7}R_{\tilde Q_1}=\mathrm{Ad}_{\tilde Q_7}$ | The multiplicative operators |
+| $\tilde Q_1\tilde Q_7$ central $\implies$ multiplicative up to $\tilde Q_1\tilde Q_7$ | The partial law; no norm enters |
+| $\{S:SL_{\tilde Q_7}=L_{\tilde Q_7}S\}=R(\mathbb{B})$ | The commutant; the bicommutant is $\mathbb{C}\,\mathrm{id}$ |
 | $\Theta_{\tilde U}=\mathrm{Ad}_{\tilde U}\iff\tilde U\tilde U^{*}=e_t$ | The two conjugations agree on the unitary slice |
 | $S=\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The spinor space and its complement |
 
 ## Further Reading
 
 - Mathematics article *One-Sided Operators on the Biquaternion Algebra*
-(`articles_maths/one-sided-operators-on-the-biquaternion-algebra.md`), for $L_{\tilde A}$ and
-$R_{\tilde Q_1}$, the composition laws, the swap $(L_{\tilde A})^{\approx}=R_{\tilde A}$, the type criteria and the
+(`articles_maths/one-sided-operators-on-the-biquaternion-algebra.md`), for $L_{\tilde Q_7}$ and
+$R_{\tilde Q_1}$, the composition laws, the swap $(L_{\tilde Q_7})^{\approx}=R_{\tilde Q_7}$, the type criteria and the
 one-sided form-preserving theorem.
 - Mathematics article *Two-Sided Operators on the Biquaternion Algebra*
 (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), the companion, for
-$L_{\tilde A}R_{\tilde Q_1}$, the swap adjoint, the self-adjointness criterion $\tilde Q_1=\lambda\tilde A$, the trivial
+$L_{\tilde Q_7}R_{\tilde Q_1}$, the swap adjoint, the self-adjointness criterion $\tilde Q_1=\lambda\tilde Q_7$, the trivial
 skew sector, the form-preserving and multiplicative criteria and the partial law of the central product.
 - Mathematics article *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*
 (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the associate $F^{\approx}$, the

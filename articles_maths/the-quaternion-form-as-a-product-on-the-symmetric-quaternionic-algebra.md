@@ -113,14 +113,14 @@ $$
 and the trace of the left multiplication is the scalar part of the argument,
 
 $$
-\operatorname{Tr}\bigl(L^{\star}_{\tilde A}\bigr) = \langle\tilde A,e_t\rangle_{\natural} = A_t .
+\operatorname{Tr}\bigl(L^{\star}_{\tilde Q_4}\bigr) = \langle\tilde Q_4,e_t\rangle_{\natural} = Q_{4t} .
 $$
 
 *Proof.* The first display is the remark of the first section together with the corpus identity
 $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ of *Norm and Invertibility in the Symmetric Quaternionic
-Algebra*. For the second, $L^{\star}_{\tilde A}e_\nu=\langle\tilde A,e_\nu\rangle_{\natural}e_t=A_\nu e_t$, so the matrix of
-$L^{\star}_{\tilde A}$ in the basis has the entries $A_\nu$ at position $(t,\nu)$ and zero elsewhere; the only
-nonzero diagonal entry is the one at $(t,t)$, which is $A_t$.
+Algebra*. For the second, $L^{\star}_{\tilde Q_4}e_\nu=\langle\tilde Q_4,e_\nu\rangle_{\natural}e_t=Q_{4\nu} e_t$, so the matrix of
+$L^{\star}_{\tilde Q_4}$ in the basis has the entries $Q_{4\nu}$ at position $(t,\nu)$ and zero elsewhere; the only
+nonzero diagonal entry is the one at $(t,t)$, which is $Q_{4t}$.
 
 **Remark (there is one form and not a family).** The block carries the single form $\langle\cdot,\cdot\rangle_{\natural}$: the trace form, the
 coefficient of the product, the polarisation of the norm and the Gram data $I_4$ are four readings of the same
@@ -198,9 +198,9 @@ $$
 $$
 
 For general complex elements the two differ: writing
-$\tilde Q_1=\tilde Q_1_{\mathrm{Re}}+i\tilde Q_1_{\mathrm{Im}}$ and $\tilde Q_2=\tilde Q_{\mathrm{Re}}+i\tilde Q_{\mathrm{Im}}$ with $\tilde Q_1_{\mathrm{Re}},\tilde Q_1_{\mathrm{Im}},\tilde Q_{\mathrm{Re}},\tilde Q_{\mathrm{Im}}$ in
+$\tilde Q_1=\tilde Q_{1,\mathrm{Re}}+i\tilde Q_{1,\mathrm{Im}}$ and $\tilde Q_2=\tilde Q_{\mathrm{Re}}+i\tilde Q_{\mathrm{Im}}$ with $\tilde Q_{1,\mathrm{Re}},\tilde Q_{1,\mathrm{Im}},\tilde Q_{\mathrm{Re}},\tilde Q_{\mathrm{Im}}$ in
 $\mathbb{H}_{\mathbb{B}}$, the real part of $\langle\cdot,\cdot\rangle_{\natural}$ is
-$\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1_{\mathrm{Re}},\tilde Q_{\mathrm{Re}}\rangle_{\natural}-\langle\tilde Q_1_{\mathrm{Im}},\tilde Q_{\mathrm{Im}}\rangle_{\natural}$, which is $H$ on the real
+$\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_{1,\mathrm{Re}},\tilde Q_{\mathrm{Re}}\rangle_{\natural}-\langle\tilde Q_{1,\mathrm{Im}},\tilde Q_{\mathrm{Im}}\rangle_{\natural}$, which is $H$ on the real
 block and $-H$ on the imaginary block, the two cross blocks being purely imaginary. Taking $\tilde Q_1=e_t$ and
 $\tilde Q=ie_t$ exhibits the difference of the two forms.
 
@@ -227,7 +227,7 @@ $(4,4)$ and index $4$; its restrictions to the quaternion and anti-quaternion su
 rows of signatures $(4,0)$ and $(0,4)$; its restrictions to the other four subspaces have signatures
 $(1,1)$, $(3,3)$, $(1,3)$ and $(3,1)$ and carry the isotropic elements recorded in the table. The form is the
 trace form, $\langle\cdot,\cdot\rangle_{\natural}=\operatorname{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\tfrac12\operatorname{Tr}(\tilde Q_1^{\natural}\tilde Q_2)$,
-and the trace of a left multiplication is the scalar part, $\operatorname{Tr}(L^{\star}_{\tilde A})=A_t$. The
+and the trace of a left multiplication is the scalar part, $\operatorname{Tr}(L^{\star}_{\tilde Q_4})=Q_{4t}$. The
 form is **not** invariant under the product, the two sides of $\langle\tilde Q_1\star\tilde Q_2,\tilde Q_3\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\star\tilde Q_3\rangle_{\natural}$
 being $1$ and $0$ at $\vec e_x,\vec e_x,e_t$, which is the form-theoretic face of the failure of the Jordan identity.
 On the real elements the form coincides with the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, which is the form-level statement of the
@@ -243,7 +243,7 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 | $G=I_4$ | the Gram matrix of $\langle\cdot,\cdot\rangle_{\natural}$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
 | $\operatorname{diag}(I_4,-I_4)$, signature $(4,4)$ | the realification of $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the signatures of the restrictions to the remarkable subspaces |
-| $L^{\star}_{\tilde A}$, $\operatorname{Tr}(L^{\star}_{\tilde A})=A_t$ | the left multiplication and its trace |
+| $L^{\star}_{\tilde Q_4}$, $\operatorname{Tr}(L^{\star}_{\tilde Q_4})=Q_{4t}$ | the left multiplication and its trace |
 | $\langle\tilde Q_1\star\tilde Q_2,\tilde Q_3\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\star\tilde Q_3\rangle_{\natural}$ | the invariance that fails |
 
 ## Further Reading

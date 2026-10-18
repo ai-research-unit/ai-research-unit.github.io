@@ -2,131 +2,131 @@
 
 ## Introduction
 
-The antisymmetric quaternionic multiplication $\tilde Q\diamond\tilde Q_2=Q_t\vec Q_2-Q_{2t}\vec Q-\vec Q\times\vec Q_2$ is an alternating operation with no unit and no nontrivial annihilator, it fails the Jacobi identity, and it is one of the first instances in which the invariant-form theory is degenerate (*Introduction to the Antisymmetric Quaternionic Algebra*, *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*). The operators of the operation are therefore the natural object left: the left multiplications $L_{\tilde A}\tilde Q_2=\tilde A\diamond\tilde Q_2$, their matrices, ranks and kernels, their compositions and their deviations, the derivations of the operation, and the groups of linear maps that preserve it. This article computes all of these. The operators of the parent product are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, and the two-sided operators of the parent are *Two-Sided Operators on the General Quaternionic Algebra*; the two-sided family of the block is its left family and the negated right family, since the operation is alternating, so the left multiplication is the whole story.
+The antisymmetric quaternionic multiplication $\tilde Q\diamond\tilde Q_2=Q_t\vec Q_2-Q_{2t}\vec Q-\vec Q\times\vec Q_2$ is an alternating operation with no unit and no nontrivial annihilator, it fails the Jacobi identity, and it is one of the first instances in which the invariant-form theory is degenerate (*Introduction to the Antisymmetric Quaternionic Algebra*, *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*). The operators of the operation are therefore the natural object left: the left multiplications $L_{\tilde Q_3}\tilde Q_2=\tilde Q_3\diamond\tilde Q_2$, their matrices, ranks and kernels, their compositions and their deviations, the derivations of the operation, and the groups of linear maps that preserve it. This article computes all of these. The operators of the parent product are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, and the two-sided operators of the parent are *Two-Sided Operators on the General Quaternionic Algebra*; the two-sided family of the block is its left family and the negated right family, since the operation is alternating, so the left multiplication is the whole story.
 
-The block's operators are a deformation of the cross-product operators of the plain row, and the deformation is visible in every invariant. The trace is $3A_t$ instead of $0$, where $A_t$ is the scalar part of the element; the rank is three instead of two; the commutator of two operators deviates from the operator of the value by a term that is the operator form of the Jacobi failure; the operation has **no nonzero inner derivation**, so all of its derivations are outer; and its derivations are the three-dimensional algebra of skew maps of the vector subspace, the same algebra that in the Lie case $\mathrm{APA}$ appears as the inner derivations. The automorphism group of the bracket is the group of linear maps that preserve the cross product of the vector subspace and fix the element $e_t$, of complex dimension three.
+The block's operators are a deformation of the cross-product operators of the plain row, and the deformation is visible in every invariant. The trace is $3Q_{3t}$ instead of $0$, where $Q_{3t}$ is the scalar part of the element; the rank is three instead of two; the commutator of two operators deviates from the operator of the value by a term that is the operator form of the Jacobi failure; the operation has **no nonzero inner derivation**, so all of its derivations are outer; and its derivations are the three-dimensional algebra of skew maps of the vector subspace, the same algebra that in the Lie case $\mathrm{APA}$ appears as the inner derivations. The automorphism group of the bracket is the group of linear maps that preserve the cross product of the vector subspace and fix the element $e_t$, of complex dimension three.
 
 ## The Left Multiplication Operator
 
-**Definition.** The **left multiplication operator** of $\tilde A$ is
+**Definition.** The **left multiplication operator** of $\tilde Q_3$ is
 
 $$
-L_{\tilde A}:\mathbb{B}\to\mathbb{B}, \qquad L_{\tilde A}\tilde Q_2 = \tilde A\diamond\tilde Q_2 = A_t\vec Q_2 - Q_{2t}\vec A - \vec A\times\vec Q_2 .
+L_{\tilde Q_3}:\mathbb{B}\to\mathbb{B}, \qquad L_{\tilde Q_3}\tilde Q_2 = \tilde Q_3\diamond\tilde Q_2 = Q_{3t}\vec Q_2 - Q_{2t}\vec Q_3 - \vec Q_3\times\vec Q_2 .
 $$
 
-The map $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and injective: the operators of the four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$ are linearly independent, so they span a four-dimensional space of linear maps and $\tilde A$ is recovered from its operator.
+The map $\tilde Q_3\mapsto L_{\tilde Q_3}$ is $\mathbb{C}$-linear and injective: the operators of the four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$ are linearly independent, so they span a four-dimensional space of linear maps and $\tilde Q_3$ is recovered from its operator.
 
-*Proof.* Linearity is the $\mathbb{C}$-bilinearity of the operation in its first argument. If $L_{\tilde A}=0$ then $L_{\tilde A}e_t=-\vec A=0$, so $\tilde A=A_te_t$, and then $L_{\tilde A}\vec e_x=A_t\vec e_x$, so $A_t=0$; hence $\tilde A=0$. The four operators are linearly independent by the same argument applied to a linear combination.
+*Proof.* Linearity is the $\mathbb{C}$-bilinearity of the operation in its first argument. If $L_{\tilde Q_3}=0$ then $L_{\tilde Q_3}e_t=-\vec Q_3=0$, so $\tilde Q_3=Q_{3t}e_t$, and then $L_{\tilde Q_3}\vec e_x=Q_{3t}\vec e_x$, so $Q_{3t}=0$; hence $\tilde Q_3=0$. The four operators are linearly independent by the same argument applied to a linear combination.
 
 **Proposition (the matrix in the coefficient basis).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with the columns the images of the basis elements,
 
 $$
-M_{\tilde A} = L_{\tilde A} =
+M_{\tilde Q_3} = L_{\tilde Q_3} =
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
--A_x & A_t & A_z & -A_y \\
--A_y & -A_z & A_t & A_x \\
--A_z & A_y & -A_x & A_t
+-Q_{3x} & Q_{3t} & Q_{3z} & -Q_{3y} \\
+-Q_{3y} & -Q_{3z} & Q_{3t} & Q_{3x} \\
+-Q_{3z} & Q_{3y} & -Q_{3x} & Q_{3t}
 \end{pmatrix}.
 $$
 
-In the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, and writing $\tilde A=\tilde A_1+i\tilde A_2$ with $\tilde A_1,\tilde A_2$ real, the matrix is the realification of the complex one,
+In the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, and writing $\tilde Q_3=\tilde Q_4+i\tilde Q_5$ with $\tilde Q_4,\tilde Q_5$ real, the matrix is the realification of the complex one,
 
 $$
-\begin{pmatrix} M_{\tilde A_1} & -M_{\tilde A_2} \\ M_{\tilde A_2} & M_{\tilde A_1} \end{pmatrix},
+\begin{pmatrix} M_{\tilde Q_4} & -M_{\tilde Q_5} \\ M_{\tilde Q_5} & M_{\tilde Q_4} \end{pmatrix},
 $$
 
 the standard block form of a $\mathbb{C}$-linear map of a complex space read over the reals.
 
-*Proof.* The entries are read off the table of the block: the first column is $L_{\tilde A}e_t=-\vec A$, the diagonal is $A_t$ on the three vector lines and $0$ on the scalar line, and the off-diagonal entries of the vector block are the components of $-\vec A\times$. The realification is the definition of a $\mathbb{C}$-linear map in a real basis adapted to a complex structure.
+*Proof.* The entries are read off the table of the block: the first column is $L_{\tilde Q_3}e_t=-\vec Q_3$, the diagonal is $Q_{3t}$ on the three vector lines and $0$ on the scalar line, and the off-diagonal entries of the vector block are the components of $-\vec Q_3\times$. The realification is the definition of a $\mathbb{C}$-linear map in a real basis adapted to a complex structure.
 
 **Proposition (the structure of the matrix).** The operator splits as
 
 $$
-M_{\tilde A} = A_t\,P + \Lambda_{\tilde A} , \qquad P=\operatorname{diag}(0,1,1,1) ,
+M_{\tilde Q_3} = Q_{3t}\,P + \Lambda_{\tilde Q_3} , \qquad P=\operatorname{diag}(0,1,1,1) ,
 $$
 
-where $P$ is the projection onto the vector part and the vector block of $\Lambda_{\tilde A}$ is the skew matrix of the map $\vec R\mapsto-\vec A\times\vec R$, whose characteristic polynomial is $\mu(\mu^2+(\vec A,\vec A))$. The scalar part of the element therefore scales the vector lines, and the vector part of the element contributes the skew block and the first column $-\vec A$.
+where $P$ is the projection onto the vector part and the vector block of $\Lambda_{\tilde Q_3}$ is the skew matrix of the map $\vec R\mapsto-\vec Q_3\times\vec R$, whose characteristic polynomial is $\mu(\mu^2+(\vec Q_3,\vec Q_3))$. The scalar part of the element therefore scales the vector lines, and the vector part of the element contributes the skew block and the first column $-\vec Q_3$.
 
-*Proof.* The matrix has the first row zero and its vector block equal to the sum of $A_tI_3$ and the skew matrix of $\vec R\mapsto-\vec A\times\vec R$; the first column is $0,-\vec A$, so $\Lambda_{\tilde A}e_t=-\vec A$ and $\Lambda_{\tilde A}$ acts on the vector lines by that skew matrix. The characteristic polynomial of a skew $3\times3$ matrix is $\mu(\mu^2+(\vec A,\vec A))$, which is the standard computation for the matrix of a cross product, the sign of $\vec A$ not entering.
+*Proof.* The matrix has the first row zero and its vector block equal to the sum of $Q_{3t}I_3$ and the skew matrix of $\vec R\mapsto-\vec Q_3\times\vec R$; the first column is $0,-\vec Q_3$, so $\Lambda_{\tilde Q_3}e_t=-\vec Q_3$ and $\Lambda_{\tilde Q_3}$ acts on the vector lines by that skew matrix. The characteristic polynomial of a skew $3\times3$ matrix is $\mu(\mu^2+(\vec Q_3,\vec Q_3))$, which is the standard computation for the matrix of a cross product, the sign of $\vec Q_3$ not entering.
 
 ## The Trace, the Rank and the Characteristic Polynomial
 
 **Proposition (the trace).** The trace of the operator is
 
 $$
-\operatorname{Tr}L_{\tilde A} = 3A_t ,
+\operatorname{Tr}L_{\tilde Q_3} = 3Q_{3t} ,
 $$
 
-the sum of the three diagonal entries $A_t$ on the vector lines. The trace vanishes exactly on the vector subspace, and it vanishes identically on the quotient by the image, since the operator maps into $\mathrm{Vect}(\mathbb{B})$ and the induced operator on the one-dimensional quotient $\mathbb{B}/\mathrm{Vect}(\mathbb{B})$ is zero.
+the sum of the three diagonal entries $Q_{3t}$ on the vector lines. The trace vanishes exactly on the vector subspace, and it vanishes identically on the quotient by the image, since the operator maps into $\mathrm{Vect}(\mathbb{B})$ and the induced operator on the one-dimensional quotient $\mathbb{B}/\mathrm{Vect}(\mathbb{B})$ is zero.
 
-*Proof.* The diagonal is $0,A_t,A_t,A_t$ from the matrix, and the sum is $3A_t$. The scalar-part functional is the quotient map, and the operator lowers the scalar part to zero, so the induced map on the quotient is zero and has trace zero.
+*Proof.* The diagonal is $0,Q_{3t},Q_{3t},Q_{3t}$ from the matrix, and the sum is $3Q_{3t}$. The scalar-part functional is the quotient map, and the operator lowers the scalar part to zero, so the induced map on the quotient is zero and has trace zero.
 
 **Proposition (the characteristic polynomial and the rank).** The characteristic polynomial is
 
 $$
-\chi_{L_{\tilde A}}(\lambda) = \lambda\,(\lambda-A_t)\bigl(\lambda^2-2A_t\lambda+\langle\tilde A\rangle_{\natural}\bigr),
-\qquad \langle\tilde A\rangle_{\natural}=A_t^2+A_x^2+A_y^2+A_z^2 ,
+\chi_{L_{\tilde Q_3}}(\lambda) = \lambda\,(\lambda-Q_{3t})\bigl(\lambda^2-2Q_{3t}\lambda+\langle\tilde Q_3\rangle_{\natural}\bigr),
+\qquad \langle\tilde Q_3\rangle_{\natural}=Q_{3t}^2+Q_{3x}^2+Q_{3y}^2+Q_{3z}^2 ,
 $$
 
-with $\langle\cdot\rangle_{\natural}$ the norm of the algebra; the eigenvalues are $0$, $A_t$ and the two roots of the quadratic; the determinant is zero; and the rank is
+with $\langle\cdot\rangle_{\natural}$ the norm of the algebra; the eigenvalues are $0$, $Q_{3t}$ and the two roots of the quadratic; the determinant is zero; and the rank is
 
 $$
-\operatorname{rank}L_{\tilde A} = 3 \iff \langle\tilde A\rangle_{\natural}\neq 0, \qquad
-\operatorname{rank}L_{\tilde A} = 2 \iff \langle\tilde A\rangle_{\natural}=0,\ \tilde A\neq 0, \qquad
-\operatorname{rank}L_{\tilde A} = 0 \iff \tilde A=0 ,
+\operatorname{rank}L_{\tilde Q_3} = 3 \iff \langle\tilde Q_3\rangle_{\natural}\neq 0, \qquad
+\operatorname{rank}L_{\tilde Q_3} = 2 \iff \langle\tilde Q_3\rangle_{\natural}=0,\ \tilde Q_3\neq 0, \qquad
+\operatorname{rank}L_{\tilde Q_3} = 0 \iff \tilde Q_3=0 ,
 $$
 
 so the rank is decided by the norm alone and drops exactly on the isotropic cone of the norm.
 
-*Proof.* The second row of the matrix has no entry in the scalar column, so the characteristic polynomial has a factor $\lambda$; the remaining three-dimensional block is $A_tI_3-[\vec A]_\times$, whose characteristic polynomial is $(A_t-\lambda)\bigl((A_t-\lambda)^2+\lvert\vec A\rvert^2\bigr)$ by the identity $\det(\mu I_3+[\vec q]_\times)=\mu(\mu^2+(\vec q,\vec q))$ for a skew matrix, and the product with the factor $\lambda$ is the displayed expression after expanding. The determinant is the constant term, zero. The rank is read on the image, which is spanned by the first column $-\vec A$ and by the image of that three-dimensional block. If $A_t\neq0$ the block has determinant $A_t\langle\tilde A\rangle_{\natural}$, so it is invertible and the rank is three when $\langle\tilde A\rangle_{\natural}\neq0$, and of rank two with $-\vec A$ lying in its image when $\langle\tilde A\rangle_{\natural}=0$. If $A_t=0$ the block is $-[\vec A]_\times$, of rank two for $\vec A\neq0$ with image $\{\vec A\}^{\perp}$, and the first column $-\vec A$ adds one dimension exactly when $\vec A\notin\{\vec A\}^{\perp}$, that is when $\langle\tilde A\rangle_{\natural}\neq0$. In both cases the rank is three when $\langle\tilde A\rangle_{\natural}\neq0$ and two when $\langle\tilde A\rangle_{\natural}=0$ with $\tilde A\neq0$. The eigenvalues do not decide it: at a pure non-isotropic element the root $0$ has multiplicity two in the characteristic polynomial but the kernel is only the line of the element, the operator being defective there.
+*Proof.* The second row of the matrix has no entry in the scalar column, so the characteristic polynomial has a factor $\lambda$; the remaining three-dimensional block is $Q_{3t}I_3-[\vec Q_3]_\times$, whose characteristic polynomial is $(Q_{3t}-\lambda)\bigl((Q_{3t}-\lambda)^2+\lvert\vec Q_3\rvert^2\bigr)$ by the identity $\det(\mu I_3+[\vec q]_\times)=\mu(\mu^2+(\vec q,\vec q))$ for a skew matrix, and the product with the factor $\lambda$ is the displayed expression after expanding. The determinant is the constant term, zero. The rank is read on the image, which is spanned by the first column $-\vec Q_3$ and by the image of that three-dimensional block. If $Q_{3t}\neq0$ the block has determinant $Q_{3t}\langle\tilde Q_3\rangle_{\natural}$, so it is invertible and the rank is three when $\langle\tilde Q_3\rangle_{\natural}\neq0$, and of rank two with $-\vec Q_3$ lying in its image when $\langle\tilde Q_3\rangle_{\natural}=0$. If $Q_{3t}=0$ the block is $-[\vec Q_3]_\times$, of rank two for $\vec Q_3\neq0$ with image $\{\vec Q_3\}^{\perp}$, and the first column $-\vec Q_3$ adds one dimension exactly when $\vec Q_3\notin\{\vec Q_3\}^{\perp}$, that is when $\langle\tilde Q_3\rangle_{\natural}\neq0$. In both cases the rank is three when $\langle\tilde Q_3\rangle_{\natural}\neq0$ and two when $\langle\tilde Q_3\rangle_{\natural}=0$ with $\tilde Q_3\neq0$. The eigenvalues do not decide it: at a pure non-isotropic element the root $0$ has multiplicity two in the characteristic polynomial but the kernel is only the line of the element, the operator being defective there.
 
-The rank therefore drops exactly on the isotropic cone of the norm, where $\langle\tilde A\rangle_{\natural}=0$; it does not drop on the vector subspace, the operator of a pure non-isotropic vector having rank three. The isotropic cone is the classical degeneracy of the biquaternion algebra, and the operator of the block detects it.
+The rank therefore drops exactly on the isotropic cone of the norm, where $\langle\tilde Q_3\rangle_{\natural}=0$; it does not drop on the vector subspace, the operator of a pure non-isotropic vector having rank three. The isotropic cone is the classical degeneracy of the biquaternion algebra, and the operator of the block detects it.
 
 ## The Kernel and the Image
 
-**Proposition.** The kernel of $L_{\tilde A}$ always contains $\tilde A$, since $\tilde A\diamond\tilde A=0$; the image is always contained in the vector subspace, since the values of the operation are pure vectors. Off the isotropic cone, with $\langle\tilde A\rangle_{\natural}\neq0$,
+**Proposition.** The kernel of $L_{\tilde Q_3}$ always contains $\tilde Q_3$, since $\tilde Q_3\diamond\tilde Q_3=0$; the image is always contained in the vector subspace, since the values of the operation are pure vectors. Off the isotropic cone, with $\langle\tilde Q_3\rangle_{\natural}\neq0$,
 
 $$
-\ker L_{\tilde A} = \mathbb{C}\tilde A , \qquad \operatorname{Im}L_{\tilde A} = \mathrm{Vect}(\mathbb{B}) ,
+\ker L_{\tilde Q_3} = \mathbb{C}\tilde Q_3 , \qquad \operatorname{Im}L_{\tilde Q_3} = \mathrm{Vect}(\mathbb{B}) ,
 $$
 
-of complex dimensions one and three; on the isotropic cone, for $\langle\tilde A\rangle_{\natural}=0$ and $\tilde A\neq0$, the kernel and the image are both of dimension two.
+of complex dimensions one and three; on the isotropic cone, for $\langle\tilde Q_3\rangle_{\natural}=0$ and $\tilde Q_3\neq0$, the kernel and the image are both of dimension two.
 
-*Proof.* The kernel contains $\tilde A$ by alternation and the image lies in the vector subspace because the values have zero scalar part. The rank is three off the isotropic cone, so the kernel is one-dimensional and, containing $\tilde A$, is exactly $\mathbb{C}\tilde A$; the image is a three-dimensional subspace of the three-dimensional vector subspace, hence the whole of it. A pure vector with $\langle \vec A\rangle_{\natural}\neq0$ is off the cone, so its kernel is the line $\mathbb{C}\vec A$ and its image is the whole vector subspace: the operator is $L_{\vec A}\tilde Q_2=-Q_{2t}\vec A-\vec A\times\vec Q_2$, whose image is spanned by $\vec A$ and the plane $\vec A\times\mathbb{R}^3=\{\vec A\}^{\perp}$, and the line $\mathbb{C}\vec A$ enlarges that plane to the whole space. On the isotropic cone the rank is two and both spaces are two-dimensional, by the rank formula.
+*Proof.* The kernel contains $\tilde Q_3$ by alternation and the image lies in the vector subspace because the values have zero scalar part. The rank is three off the isotropic cone, so the kernel is one-dimensional and, containing $\tilde Q_3$, is exactly $\mathbb{C}\tilde Q_3$; the image is a three-dimensional subspace of the three-dimensional vector subspace, hence the whole of it. A pure vector with $\langle \vec Q_3\rangle_{\natural}\neq0$ is off the cone, so its kernel is the line $\mathbb{C}\vec Q_3$ and its image is the whole vector subspace: the operator is $L_{\vec Q_3}\tilde Q_2=-Q_{2t}\vec Q_3-\vec Q_3\times\vec Q_2$, whose image is spanned by $\vec Q_3$ and the plane $\vec Q_3\times\mathbb{R}^3=\{\vec Q_3\}^{\perp}$, and the line $\mathbb{C}\vec Q_3$ enlarges that plane to the whole space. On the isotropic cone the rank is two and both spaces are two-dimensional, by the rank formula.
 
-**Remark.** The line $\mathbb{C}\tilde A$ is always in the kernel, so the operator of an element is never injective and the block has no regular element in the naive sense; the content of the rank formula is the size of the kernel above that line. The element is **regular** exactly when $\langle\tilde A\rangle_{\natural}\neq0$, and there the kernel is the line alone.
+**Remark.** The line $\mathbb{C}\tilde Q_3$ is always in the kernel, so the operator of an element is never injective and the block has no regular element in the naive sense; the content of the rank formula is the size of the kernel above that line. The element is **regular** exactly when $\langle\tilde Q_3\rangle_{\natural}\neq0$, and there the kernel is the line alone.
 
 ## The Composition and the Deviation from the Value
 
-**Proposition (the composition).** For all $\tilde A,\tilde Q_1,\tilde Q_2$,
+**Proposition (the composition).** For all $\tilde Q_3,\tilde Q_1,\tilde Q_2$,
 
 $$
-L_{\tilde A}L_{\tilde Q_1}\tilde Q_2
-= A_tQ_{1t}\vec Q_2 - A_tQ_{2t}\vec Q_1 - A_t\,\vec Q_1\times\vec Q_2 - Q_{1t}\,\vec A\times\vec Q_2
-+ Q_{2t}\,\vec A\times\vec Q_1 + (\vec A,\vec Q_2)\vec Q_1 - (\vec A,\vec Q_1)\vec Q_2 .
+L_{\tilde Q_3}L_{\tilde Q_1}\tilde Q_2
+= Q_{3t}Q_{1t}\vec Q_2 - Q_{3t}Q_{2t}\vec Q_1 - Q_{3t}\,\vec Q_1\times\vec Q_2 - Q_{1t}\,\vec Q_3\times\vec Q_2
++ Q_{2t}\,\vec Q_3\times\vec Q_1 + (\vec Q_3,\vec Q_2)\vec Q_1 - (\vec Q_3,\vec Q_1)\vec Q_2 .
 $$
 
-*Proof.* Expand $L_{\tilde A}(L_{\tilde Q_1}\tilde Q_2)=\tilde A\diamond(\tilde Q_1\diamond\tilde Q_2)$ with the explicit form and use the double cross identity $\vec A\times(\vec Q_1\times\vec Q_2)=\vec Q_1(\vec A,\vec Q_2)-\vec Q_2(\vec A,\vec Q_1)$.
+*Proof.* Expand $L_{\tilde Q_3}(L_{\tilde Q_1}\tilde Q_2)=\tilde Q_3\diamond(\tilde Q_1\diamond\tilde Q_2)$ with the explicit form and use the double cross identity $\vec Q_3\times(\vec Q_1\times\vec Q_2)=\vec Q_1(\vec Q_3,\vec Q_2)-\vec Q_2(\vec Q_3,\vec Q_1)$.
 
-**Proposition (the operator form of the Jacobi failure).** For all $\tilde A,\tilde Q_1$,
+**Proposition (the operator form of the Jacobi failure).** For all $\tilde Q_3,\tilde Q_1$,
 
 $$
-[L_{\tilde A},L_{\tilde Q_1}] - L_{\tilde A\diamond\tilde Q_1} = D(\tilde A,\tilde Q_1), \qquad
-D(\tilde A,\tilde Q_1)\tilde Q_2 = A_t\,(\vec Q_1\times\vec Q_2) - Q_{1t}\,(\vec A\times\vec Q_2) + Q_{2t}\,(\vec A\times\vec Q_1) .
+[L_{\tilde Q_3},L_{\tilde Q_1}] - L_{\tilde Q_3\diamond\tilde Q_1} = D(\tilde Q_3,\tilde Q_1), \qquad
+D(\tilde Q_3,\tilde Q_1)\tilde Q_2 = Q_{3t}\,(\vec Q_1\times\vec Q_2) - Q_{1t}\,(\vec Q_3\times\vec Q_2) + Q_{2t}\,(\vec Q_3\times\vec Q_1) .
 $$
 
-The deviation $D(\tilde A,\tilde Q_1)$ is zero for all pairs exactly when the operation satisfies the Jacobi identity, so it is the operator form of the failure of the block; it is the negative of the cyclic sum, $D(\tilde A,\tilde Q_1)\tilde Q_2=-J(\tilde A,\tilde Q_1,\tilde Q_2)$, and its trace is zero for every pair.
+The deviation $D(\tilde Q_3,\tilde Q_1)$ is zero for all pairs exactly when the operation satisfies the Jacobi identity, so it is the operator form of the failure of the block; it is the negative of the cyclic sum, $D(\tilde Q_3,\tilde Q_1)\tilde Q_2=-J(\tilde Q_3,\tilde Q_1,\tilde Q_2)$, and its trace is zero for every pair.
 
-*Proof.* The deviation is $[L_{\tilde A},L_{\tilde Q_1}]\tilde Q_2-L_{\tilde A\diamond\tilde Q_1}\tilde Q_2 = \tilde A\diamond(\tilde Q_1\diamond\tilde Q_2)-\tilde Q_1\diamond(\tilde A\diamond\tilde Q_2)-(\tilde A\diamond\tilde Q_1)\diamond\tilde Q_2$; comparing with the definition of the cyclic sum, the right side is $-J(\tilde A,\tilde Q_1,\tilde Q_2)$, and the closed form is the one computed in *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* with the sign reversed. The vanishing of $D$ for all pairs is the vanishing of $J$, which is the Jacobi identity. The trace is zero because the first row of $D$ is zero in the coefficient basis and the diagonal of the vector block is zero.
+*Proof.* The deviation is $[L_{\tilde Q_3},L_{\tilde Q_1}]\tilde Q_2-L_{\tilde Q_3\diamond\tilde Q_1}\tilde Q_2 = \tilde Q_3\diamond(\tilde Q_1\diamond\tilde Q_2)-\tilde Q_1\diamond(\tilde Q_3\diamond\tilde Q_2)-(\tilde Q_3\diamond\tilde Q_1)\diamond\tilde Q_2$; comparing with the definition of the cyclic sum, the right side is $-J(\tilde Q_3,\tilde Q_1,\tilde Q_2)$, and the closed form is the one computed in *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* with the sign reversed. The vanishing of $D$ for all pairs is the vanishing of $J$, which is the Jacobi identity. The trace is zero because the first row of $D$ is zero in the coefficient basis and the diagonal of the vector block is zero.
 
-**Corollary.** The operators of the block are not a representation of the block: $[L_{\tilde A},L_{\tilde Q_1}]\neq L_{\tilde A\diamond\tilde Q_1}$ in general, at $(e_t,\vec e_x)$ for instance, where the deviation is $D(e_t,\vec e_x)\tilde Q_2=\vec e_x\times\tilde Q_2$ with $\vec Q_2$ arbitrary, nonzero. The commutator of two operators is the operator of the value plus the deviation, and the deviation is exactly the obstruction.
+**Corollary.** The operators of the block are not a representation of the block: $[L_{\tilde Q_3},L_{\tilde Q_1}]\neq L_{\tilde Q_3\diamond\tilde Q_1}$ in general, at $(e_t,\vec e_x)$ for instance, where the deviation is $D(e_t,\vec e_x)\tilde Q_2=\vec e_x\times\tilde Q_2$ with $\vec Q_2$ arbitrary, nonzero. The commutator of two operators is the operator of the value plus the deviation, and the deviation is exactly the obstruction.
 
 **Remark (the algebra generated by the operators).** The four operators and their pairwise products span an associative algebra of linear maps of dimension $12$ inside the $16$-dimensional algebra of all linear maps, of dimension $13$ once the identity is adjoined, and not all of the ambient algebra; the operators span four dimensions, their pairwise products already span the algebra, and no further products are independent. The quotient by the four-dimensional span is the operator echo of the associativity defect.
 
 ## The Derivations and the Inner Ones
 
-**Definition.** A linear map $\delta:\mathbb{B}\to\mathbb{B}$ is a **derivation** of the block if $\delta(\tilde Q\diamond\tilde Q_2)=\delta\tilde Q\diamond\tilde Q_2+\tilde Q\diamond\delta\tilde Q_2$ for all $\tilde Q,\tilde Q_2$. A derivation is **inner** if it is $\operatorname{ad}_{\tilde A}=[\tilde A,\cdot\,]$ for some $\tilde A$.
+**Definition.** A linear map $\delta:\mathbb{B}\to\mathbb{B}$ is a **derivation** of the block if $\delta(\tilde Q\diamond\tilde Q_2)=\delta\tilde Q\diamond\tilde Q_2+\tilde Q\diamond\delta\tilde Q_2$ for all $\tilde Q,\tilde Q_2$. A derivation is **inner** if it is $\operatorname{ad}_{\tilde Q_3}=[\tilde Q_3,\cdot\,]$ for some $\tilde Q_3$.
 
 **Proposition (the derivations).** The derivations of the block are the maps that annihilate the scalar line and act on the vector subspace by a skew matrix,
 
@@ -136,7 +136,7 @@ $$
 
 of complex dimension three, and they are all **outer**: there is no nonzero inner derivation.
 
-*Proof.* Let $D$ be the matrix of a general linear map and impose the derivation condition on the sixteen basis pairs. The system forces the first row and the first column to vanish, so $\delta(e_t)=0$, and leaves the vector block a general skew $3\times3$ matrix; its dimension is $3$. For the inner derivations, $\operatorname{ad}_{\tilde A}=2L_{\tilde A}$ by the alternation of the operation, and $L_{\tilde A}e_t=-\vec A$, which is zero for every derivation; so $\vec A=0$, and then $L_{\tilde A}(\vec e_x)=A_t\vec e_x$ must be zero, so $A_t=0$ as well. Hence the only inner derivation is zero.
+*Proof.* Let $D$ be the matrix of a general linear map and impose the derivation condition on the sixteen basis pairs. The system forces the first row and the first column to vanish, so $\delta(e_t)=0$, and leaves the vector block a general skew $3\times3$ matrix; its dimension is $3$. For the inner derivations, $\operatorname{ad}_{\tilde Q_3}=2L_{\tilde Q_3}$ by the alternation of the operation, and $L_{\tilde Q_3}e_t=-\vec Q_3$, which is zero for every derivation; so $\vec Q_3=0$, and then $L_{\tilde Q_3}(\vec e_x)=Q_{3t}\vec e_x$ must be zero, so $Q_{3t}=0$ as well. Hence the only inner derivation is zero.
 
 **Remark.** The derivations of the block are exactly the skew maps of the vector subspace, and their dimension three is the dimension of the group of linear maps of the vector subspace that the automorphism group below realises. The block therefore has a three-dimensional derivation algebra, all of it outer, whereas the adjacent Lie case $\mathrm{APA}$ has a three-dimensional derivation algebra all of it inner: for $\mathrm{APA}$ the adjoint map is a representation and its image is the whole derivation algebra, and for the block the adjoint map is not a representation and contributes nothing.
 
@@ -166,25 +166,25 @@ The automorphism group of the bracket is therefore a subgroup of the structure g
 
 ## The Comparison with the Lie Case
 
-**Remark.** The adjacent block $\mathrm{APA}$ is the cross product on the vector subspace, $\tilde Q\wedge\tilde Q_2=\vec Q\times\vec Q_2$; its adjoint operator is $\operatorname{ad}_{\tilde Q}=\vec Q\times$, which annihilates the centre, has trace zero, has rank two, and has for kernel the centre and the line of $\vec Q$ (*The Lie Algebra of the Antisymmetric Plain Algebra*, *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*). The operators of the block of this article differ in every one of these invariants. The trace is $3A_t$ instead of zero, and it vanishes exactly on the vector subspace. The rank is three instead of two, and it drops on the isotropic cone. The kernel is the line of the element instead of a two-dimensional subspace of the centre and the element. The commutator of two operators is the operator of the value plus the deviation $D$, the operator form of the failure of the Jacobi identity, instead of being exactly the operator of the value. And the derivation algebra is three-dimensional but all outer, where for $\mathrm{APA}$ it is three-dimensional and all inner. In the Lie case the adjoint map is a representation whose image is the derivation algebra; in the block the adjoint map is not a representation, its image contributes no derivation, and the derivations are realised only by the skew maps of the vector subspace.
+**Remark.** The adjacent block $\mathrm{APA}$ is the cross product on the vector subspace, $\tilde Q\wedge\tilde Q_2=\vec Q\times\vec Q_2$; its adjoint operator is $\operatorname{ad}_{\tilde Q}=\vec Q\times$, which annihilates the centre, has trace zero, has rank two, and has for kernel the centre and the line of $\vec Q$ (*The Lie Algebra of the Antisymmetric Plain Algebra*, *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*). The operators of the block of this article differ in every one of these invariants. The trace is $3Q_{3t}$ instead of zero, and it vanishes exactly on the vector subspace. The rank is three instead of two, and it drops on the isotropic cone. The kernel is the line of the element instead of a two-dimensional subspace of the centre and the element. The commutator of two operators is the operator of the value plus the deviation $D$, the operator form of the failure of the Jacobi identity, instead of being exactly the operator of the value. And the derivation algebra is three-dimensional but all outer, where for $\mathrm{APA}$ it is three-dimensional and all inner. In the Lie case the adjoint map is a representation whose image is the derivation algebra; in the block the adjoint map is not a representation, its image contributes no derivation, and the derivations are realised only by the skew maps of the vector subspace.
 
 ## Summary
 
-The left multiplication operator of the block is $L_{\tilde A}\tilde Q_2=A_t\vec Q_2-Q_{2t}\vec A-\vec A\times\vec Q_2$; the map $\tilde A\mapsto L_{\tilde A}$ is injective with four-dimensional image, and the matrix in the coefficient basis is displayed, with the real basis carrying its realification. The trace is $3A_t$, vanishing exactly on the vector subspace and on the quotient by the image; the characteristic polynomial is $\lambda(\lambda-A_t)(\lambda^2-2A_t\lambda+\langle\tilde A\rangle_{\natural})$, the determinant is zero, and the rank is three exactly when $\langle\tilde A\rangle_{\natural}\neq0$, two on the isotropic cone away from the origin, and zero only at $\tilde A=0$. The kernel always contains the line of the element, the image always lies in the vector subspace, and for a regular element the kernel is the line and the image the whole vector subspace. The commutator of two operators deviates from the operator of the value by $D(\tilde A,\tilde Q_1)\tilde Q_2=A_t(\vec Q_1\times\vec Q_2)-Q_{1t}(\vec A\times\vec Q_2)+Q_{2t}(\vec A\times\vec Q_1)$, which is the negative of the cyclic sum and the operator form of the Jacobi failure; the operators and their pairwise products span an associative algebra of dimension $12$, of dimension $13$ with the identity. The derivations of the block are the maps that annihilate the scalar line and act on the vector subspace by skew matrices, they form a three-dimensional space, and none is inner. The automorphism group of the bracket is the group of linear maps that fix the element $e_t$ and preserve the cross product of the vector subspace, of complex dimension three; the structure group is its four-dimensional conformal enlargement, with the multiplier $\lambda=1/(c\det R)$. Each invariant is compared with the Lie case $\mathrm{APA}$, where the trace vanishes, the rank is two, the derivation algebra is all inner and the adjoint map is a representation.
+The left multiplication operator of the block is $L_{\tilde Q_3}\tilde Q_2=Q_{3t}\vec Q_2-Q_{2t}\vec Q_3-\vec Q_3\times\vec Q_2$; the map $\tilde Q_3\mapsto L_{\tilde Q_3}$ is injective with four-dimensional image, and the matrix in the coefficient basis is displayed, with the real basis carrying its realification. The trace is $3Q_{3t}$, vanishing exactly on the vector subspace and on the quotient by the image; the characteristic polynomial is $\lambda(\lambda-Q_{3t})(\lambda^2-2Q_{3t}\lambda+\langle\tilde Q_3\rangle_{\natural})$, the determinant is zero, and the rank is three exactly when $\langle\tilde Q_3\rangle_{\natural}\neq0$, two on the isotropic cone away from the origin, and zero only at $\tilde Q_3=0$. The kernel always contains the line of the element, the image always lies in the vector subspace, and for a regular element the kernel is the line and the image the whole vector subspace. The commutator of two operators deviates from the operator of the value by $D(\tilde Q_3,\tilde Q_1)\tilde Q_2=Q_{3t}(\vec Q_1\times\vec Q_2)-Q_{1t}(\vec Q_3\times\vec Q_2)+Q_{2t}(\vec Q_3\times\vec Q_1)$, which is the negative of the cyclic sum and the operator form of the Jacobi failure; the operators and their pairwise products span an associative algebra of dimension $12$, of dimension $13$ with the identity. The derivations of the block are the maps that annihilate the scalar line and act on the vector subspace by skew matrices, they form a three-dimensional space, and none is inner. The automorphism group of the bracket is the group of linear maps that fix the element $e_t$ and preserve the cross product of the vector subspace, of complex dimension three; the structure group is its four-dimensional conformal enlargement, with the multiplier $\lambda=1/(c\det R)$. Each invariant is compared with the Lie case $\mathrm{APA}$, where the trace vanishes, the rank is two, the derivation algebra is all inner and the adjoint map is a representation.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde Q\diamond\tilde Q_2=Q_t\vec Q_2-Q_{2t}\vec Q-\vec Q\times\vec Q_2$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
-| $L_{\tilde A}\tilde Q_2=\tilde A\diamond\tilde Q_2$ | the left multiplication operator of the block |
-| $M_{\tilde A}$ | the matrix of $L_{\tilde A}$ in the coefficient basis, and its realification in the real basis |
-| $\operatorname{Tr}L_{\tilde A}=3A_t$ | the trace, vanishing exactly on the vector subspace |
-| $\langle\tilde A\rangle_{\natural}=A_t^2+\sum_{\mu\in\{x,y,z\}}A_\mu^2$ | the norm; the rank drops on its vanishing |
-| $\chi_{L_{\tilde A}}(\lambda)=\lambda(\lambda-A_t)(\lambda^2-2A_t\lambda+\langle\tilde A\rangle_{\natural})$ | the characteristic polynomial |
-| $\ker L_{\tilde A}=\mathbb{C}\tilde A$ | the kernel for a regular element $\langle\tilde A\rangle_{\natural}\neq0$ |
-| $\operatorname{Im}L_{\tilde A}=\mathrm{Vect}(\mathbb{B})$ | the image for a regular element |
-| $D(\tilde A,\tilde Q_1)=[L_{\tilde A},L_{\tilde Q_1}]-L_{\tilde A\diamond\tilde Q_1}$ | the deviation, the operator form of the Jacobi failure |
+| $L_{\tilde Q_3}\tilde Q_2=\tilde Q_3\diamond\tilde Q_2$ | the left multiplication operator of the block |
+| $M_{\tilde Q_3}$ | the matrix of $L_{\tilde Q_3}$ in the coefficient basis, and its realification in the real basis |
+| $\operatorname{Tr}L_{\tilde Q_3}=3Q_{3t}$ | the trace, vanishing exactly on the vector subspace |
+| $\langle\tilde Q_3\rangle_{\natural}=Q_{3t}^2+\sum_{\mu\in\{x,y,z\}}Q_{3\mu}^2$ | the norm; the rank drops on its vanishing |
+| $\chi_{L_{\tilde Q_3}}(\lambda)=\lambda(\lambda-Q_{3t})(\lambda^2-2Q_{3t}\lambda+\langle\tilde Q_3\rangle_{\natural})$ | the characteristic polynomial |
+| $\ker L_{\tilde Q_3}=\mathbb{C}\tilde Q_3$ | the kernel for a regular element $\langle\tilde Q_3\rangle_{\natural}\neq0$ |
+| $\operatorname{Im}L_{\tilde Q_3}=\mathrm{Vect}(\mathbb{B})$ | the image for a regular element |
+| $D(\tilde Q_3,\tilde Q_1)=[L_{\tilde Q_3},L_{\tilde Q_1}]-L_{\tilde Q_3\diamond\tilde Q_1}$ | the deviation, the operator form of the Jacobi failure |
 | $\operatorname{Der}(\diamond)=$ the skew maps of the vector subspace | the derivation algebra, three-dimensional, all outer |
 | $\operatorname{Aut}(\diamond)=$ the maps fixing $e_t$ and preserving the cross product | the automorphism group of the bracket, of complex dimension three |
 

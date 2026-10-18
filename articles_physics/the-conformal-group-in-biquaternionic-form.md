@@ -91,7 +91,7 @@ since $\langle\tilde{U}\rangle_{\natural}=e_t$ and the biquaternion norm is cent
 
 - **Translation.** A shift does not preserve $\langle\cdot\rangle_{\natural}$ pointwise, but it preserves the interval between two points,
 $$
-N\bigl((\tilde{Q}+\tilde{A})-(\tilde{Q}_1+\tilde{A})\bigr)=\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural},
+N\bigl((\tilde{Q}+\tilde Q_3)-(\tilde{Q}_1+\tilde Q_3)\bigr)=\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural},
 $$
 so it maps null displacements to null displacements. This is the parent article's observation that the interval survives translation.
 
@@ -112,11 +112,11 @@ $$
 $$
 and this displays both what the algebra provides and what it withholds. Three points, each recomputed on explicit elements.
 
-**The generator is not a unit-norm biquaternion.** The element $\tilde{G}=\sqrt{\lambda}e_t$ has biquaternion norm $\langle\tilde{G}\rangle_{\natural}=\lambda\,e_t\ne e_t$ for $\lambda\ne1$, so it lies outside $SL(2,\mathbb{C})$. The rotor group acts by isometries and preserves $\langle\cdot\rangle_{\natural}$; the dilation scales $\langle\cdot\rangle_{\natural}$, so it cannot be a member of that group. The dilation is realizable *by* the algebra but is not *of* the group of the algebra.
+**The dilation element is not a unit-norm biquaternion.** The element $\tilde{G}=\sqrt{\lambda}e_t$ has biquaternion norm $\langle\tilde{G}\rangle_{\natural}=\lambda\,e_t\ne e_t$ for $\lambda\ne1$, so it lies outside $SL(2,\mathbb{C})$. The rotor group acts by isometries and preserves $\langle\cdot\rangle_{\natural}$; the dilation scales $\langle\cdot\rangle_{\natural}$, so it cannot be a member of that group. The dilation is realizable *by* the algebra but is not *of* the group of the algebra.
 
 **The dilation is not an algebra automorphism.** Multiplication by a scalar is linear but not multiplicative: $\lambda(\tilde{Q}\tilde{Q}_1)$ is not $(\lambda\tilde{Q})(\lambda\tilde{Q}_1)$ for $\lambda\ne1$, a defect that was checked by direct computation on a non-commuting pair. So the dilation, unlike the rotations, cannot be read as a relabelling of the algebra's own product.
 
-**The dilation generator is not an inner derivation.** Its finite form, extended to all of $\mathbb{B}$ as $\lambda$ times the identity, has trace $8\lambda\ne0$; every inner derivation $\mathrm{ad}_{\tilde{A}}=[\tilde{A},\cdot\,]$ of the eight-dimensional algebra is traceless, and the infinitesimal generator likewise has trace $8$. The trace of $\mathrm{ad}_{\tilde{A}}$ was computed in a real basis for several random $\tilde{A}$ and vanishes, against $8$ for the identity. So no element of $\mathbb{B}$ generates the dilation by commutator. This is the precise sense in which one of the fifteen parameters sits half inside the algebra: expressible, but not a group element and not an inner derivation.
+**The dilation generator is not an inner derivation.** Its finite form, extended to all of $\mathbb{B}$ as $\lambda$ times the identity, has trace $8\lambda\ne0$; every inner derivation $\mathrm{ad}_{\tilde Q_4}=[\tilde Q_4,\cdot\,]$ of the eight-dimensional algebra is traceless, and the infinitesimal generator likewise has trace $8$. The trace of $\mathrm{ad}_{\tilde Q_4}$ was computed in a real basis for several random $\tilde Q_4$ and vanishes, against $8$ for the identity. So no element of $\mathbb{B}$ generates the dilation by commutator. This is the precise sense in which one of the fifteen parameters sits half inside the algebra: expressible, but not a group element and not an inner derivation.
 
 ## Inversion and the Special Conformal Transformations
 
@@ -149,19 +149,19 @@ The map $P$ is an improper Lorentz transformation, so it is already in the confo
 
 **Special conformal transformations.** A translation sandwiched between two inversions is a special conformal transformation:
 $$
-\tilde{Q}'=I\bigl(I(\tilde{Q})+\tilde{A}\bigr)
-=\frac{\tilde{Q}+\tilde{A}\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde{A}\rangle+\langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
-\qquad \tilde{A}\in\mathbb{M}_-,
+\tilde{Q}'=I\bigl(I(\tilde{Q})+\tilde Q_3\bigr)
+=\frac{\tilde{Q}+\tilde Q_3\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde Q_3\rangle+\langle\tilde Q_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
+\qquad \tilde Q_3\in\mathbb{M}_-,
 $$
 where
 $$
 \langle\tilde{P},\tilde{Q}\rangle=\tfrac12\bigl(\langle\tilde{P}+\tilde{Q}\rangle_{\natural}-\langle\tilde{P}\rangle_{\natural}-\langle\tilde{Q}\rangle_{\natural}\bigr)=\sum_\mu P_\mu Q_\mu
 $$
-is the polar form of $\langle\cdot\rangle_{\natural}$ — the complex bilinear dot product, which on $\mathbb{M}_-$ is the Minkowski inner product. In components, with $x^2=\langle\tilde{Q}\rangle_{\natural}$ and $a\cdot x=\langle\tilde{Q},\tilde{A}\rangle$, this is the standard
+is the polar form of $\langle\cdot\rangle_{\natural}$ — the complex bilinear dot product, which on $\mathbb{M}_-$ is the Minkowski inner product. In components, with $x^2=\langle\tilde{Q}\rangle_{\natural}$ and $a\cdot x=\langle\tilde{Q},\tilde Q_3\rangle$, this is the standard
 $$
 x'^\mu=\frac{x^\mu+a^\mu x^2}{1+2a\cdot x+a^2x^2}.
 $$
-The identity of the two expressions was checked directly on random four-vectors $\tilde{Q},\tilde{A}$, and the two displayed formulas agree. This answers, in part, the open question of the Poincaré article: the translation does appear as a product of generalized inversions, but the product is the **special conformal** transformation, not the translation, and it is not linear in $\tilde{Q}$. The translation itself remains an additive shift.
+The identity of the two expressions was checked directly on random four-vectors $\tilde{Q},\tilde Q_3$, and the two displayed formulas agree. This answers, in part, the open question of the Poincaré article: the translation does appear as a product of generalized inversions, but the product is the **special conformal** transformation, not the translation, and it is not linear in $\tilde{Q}$. The translation itself remains an additive shift.
 
 Two qualifications belong to the formula. First, it is a fractional (nonlinear) expression in $\tilde{Q}$, not the two-sided linear map $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ that carries the Lorentz group; the algebraic operation that produces it is inversion, and inversion is a rational map, not a linear one. Second, it is only partly defined: the inversion is singular on the null cone of the origin, and the denominator $1+2a\cdot x+a^2x^2$ vanishes on a cone as well. Globally, these are transformations of the conformal compactification; on $\mathbb{M}_-$ they are defined off a null set.
 
@@ -212,9 +212,9 @@ reduce to a conformal map of vectors. For Minkowski space the entries live in $\
 
 The conformal group of Minkowski space is the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the six Lorentz generators $M_{\mu\nu}$, the four translations $P_\mu$, the single dilation $D$, and the four special conformal generators $\mathcal{K}_\mu$. Its brackets were recomputed here on explicit test functions: $[D,P_\mu]=-P_\mu$, $[D,\mathcal{K}_\mu]=\mathcal{K}_\mu$, $[P_\mu,\mathcal{K}_\nu]=2(\eta_{\mu\nu}D-M_{\mu\nu})$, with the translations and special conformal generators abelian and the Lorentz part the companion article's.
 
-The biquaternion algebra carries the conformal **structure** but not the conformal **group**. What it carries: the null cone, which is the zero-divisor cone $\{N=0\}$, is the invariant object of the conformal group, and every generator preserves it; the inversion is algebraic, $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$, with $I^2=\mathrm{id}$ and $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$; the dilation is the signed inner conjugation by the non-unit element $\sqrt{\lambda}e_t$; and the special conformal transformation is the composition $I\circ T_{\tilde{A}}\circ I$, with the explicit form
+The biquaternion algebra carries the conformal **structure** but not the conformal **group**. What it carries: the null cone, which is the zero-divisor cone $\{N=0\}$, is the invariant object of the conformal group, and every generator preserves it; the inversion is algebraic, $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$, with $I^2=\mathrm{id}$ and $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$; the dilation is the signed inner conjugation by the non-unit element $\sqrt{\lambda}e_t$; and the special conformal transformation is the composition $I\circ T_{\tilde Q_3}\circ I$, with the explicit form
 $$
-\tilde{Q}'=\frac{\tilde{Q}+\tilde{A}\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde{A}\rangle+\langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
+\tilde{Q}'=\frac{\tilde{Q}+\tilde Q_3\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde Q_3\rangle+\langle\tilde Q_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
 $$
 which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.
 
@@ -237,7 +237,7 @@ What it does not carry: the group. The algebra is eight real dimensions and its 
 | $M_{\mu\nu}$, $P_\mu$, $D$, $\mathcal{K}_\mu$ | Conformal generators: Lorentz (6), translations (4), dilation (1), special conformal (4) |
 | $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$ | Inversion; $I^2=\mathrm{id}$, $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$ |
 | $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=P(I(\tilde{Q}))$ | Algebra inverse = inversion followed by parity |
-| $I\circ T_{\tilde{A}}\circ I$ | Special conformal transformation |
+| $I\circ T_{\tilde Q_3}\circ I$ | Special conformal transformation |
 | $SO^+(2,4)$, $SU(2,2)$ | Conformal group (dim $15$) and its double cover |
 | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^+_{1,3}\oplus\mathrm{Cl}^-_{1,3}$, $\mathbb{B}=\mathrm{Cl}^+_{1,3}$ | Clifford algebra of Minkowski space, real dimension $16$ |
 | $\mathrm{Cl}_{2,4}$ | Conformal embedding Clifford algebra; bivectors $\cong\mathrm{SO}(2,4)$, even part real dimension $32$ |

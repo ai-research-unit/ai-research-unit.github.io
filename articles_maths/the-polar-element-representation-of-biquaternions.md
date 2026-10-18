@@ -241,7 +241,7 @@ $$
 \tilde u_{\mathrm r}\,\tilde u_{\mathrm r}^{*} = U\bigl(\sqrt{U^{*}U}\bigr)^{-1}\bigl(\sqrt{U^{*}U}\bigr)^{-1}U^{*} = U(U^{*}U)^{-1}U^{*} = e_t ,
 $$
 
-and of unit norm by multiplicativity along the reconstruction, $\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = \langle U,U\rangle_{\natural}/\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural} = 1$. An element that is both unitary and of unit norm is a unit real quaternion: such an element is $\exp(i\beta)\tilde A$ with $\tilde A$ a unit real quaternion and has norm $\exp(2i\beta)$, so $N = 1$ forces $\exp(2i\beta) = 1$. Hence
+and of unit norm by multiplicativity along the reconstruction, $\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = \langle U,U\rangle_{\natural}/\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural} = 1$. An element that is both unitary and of unit norm is a unit real quaternion: such an element is $\exp(i\beta)\tilde q_1$ with $\tilde q_1$ a unit real quaternion and has norm $\exp(2i\beta)$, so $N = 1$ forces $\exp(2i\beta) = 1$. Hence
 
 $$
 \tilde u_{\mathrm r} \in \mathrm{Sp}(1) = \{\tilde u \in \mathbb{H} : \tilde u\tilde u^{\natural} = 1\} ,

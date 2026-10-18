@@ -8,37 +8,37 @@ The split-biquaternion algebra, its idempotents and its norm are *Split-Biquater
 
 The article owns the operator norm of a split-biquaternion generator, the contraction criterion, the product attractor and the sum of the dimensions, the parity structure of the generator list, and the zero-divisor generators. It does not re-derive the classical theory or the quaternion systems.
 
-**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, and a left-affine generator is $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$ with $\tilde A_i=\tilde A_i^+\tilde\Pi_1+\tilde A_i^-\tilde\Pi_2$; $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
+**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, and a left-affine generator is $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ with $\tilde Q_{1,i}=\tilde Q_{1,i}^+\tilde\Pi_1+\tilde Q_{1,i}^-\tilde\Pi_2$; $\|\cdot\|_E$ is the Euclidean norm of $\mathbb{R}^8$ and $|\cdot|$ the quaternion modulus.
 
 ## The Operator Norm and the Contraction Criterion
 
-**Proposition (the operator norm).** For $\tilde A=\tilde A_+\tilde\Pi_1+\tilde A_-\tilde\Pi_2$ the operator norm of left multiplication is
+**Proposition (the operator norm).** For $\tilde Q_1=\tilde Q_{1,+}\tilde\Pi_1+\tilde Q_{1,-}\tilde\Pi_2$ the operator norm of left multiplication is
 
 $$
-\|L_{\tilde A}\|=\max\bigl(|\tilde A_+|,\ |\tilde A_-|\bigr) ,
+\|L_{\tilde Q_1}\|=\max\bigl(|\tilde Q_{1,+}|,\ |\tilde Q_{1,-}|\bigr) ,
 $$
 
-and the generator $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a contraction exactly when $\max(|\tilde A_+|,|\tilde A_-|)<1$.
+and the generator $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a contraction exactly when $\max(|\tilde Q_{1,+}|,|\tilde Q_{1,-}|)<1$.
 
-**Proof.** In the idempotent coordinates $L_{\tilde A}$ acts by $(\tilde Q_+,\tilde Q_-)\mapsto(\tilde A_+\tilde Q_+,\tilde A_-\tilde Q_-)$, so
+**Proof.** In the idempotent coordinates $L_{\tilde Q_1}$ acts by $(\tilde Q_+,\tilde Q_-)\mapsto(\tilde Q_{1,+}\tilde Q_+,\tilde Q_{1,-}\tilde Q_-)$, so
 
 $$
-\|L_{\tilde A}\tilde Q\|_E^2=\tfrac12\bigl(|\tilde A_+|^2|\tilde Q_+|^2+|\tilde A_-|^2|\tilde Q_-|^2\bigr)\le\max(|\tilde A_+|,|\tilde A_-|)^2\cdot\tfrac12\bigl(|\tilde Q_+|^2+|\tilde Q_-|^2\bigr) ,
+\|L_{\tilde Q_1}\tilde Q\|_E^2=\tfrac12\bigl(|\tilde Q_{1,+}|^2|\tilde Q_+|^2+|\tilde Q_{1,-}|^2|\tilde Q_-|^2\bigr)\le\max(|\tilde Q_{1,+}|,|\tilde Q_{1,-}|)^2\cdot\tfrac12\bigl(|\tilde Q_+|^2+|\tilde Q_-|^2\bigr) ,
 $$
 
-using the norm identity $\|\tilde Q\|_E^2=\tfrac12(|\tilde Q_+|^2+|\tilde Q_-|^2)$; the bound is attained on a vector supported on the factor of the maximum, so the norm is the maximum. The Lipschitz constant of the generator is the operator norm of $\tilde A$, whence the criterion.
+using the norm identity $\|\tilde Q\|_E^2=\tfrac12(|\tilde Q_+|^2+|\tilde Q_-|^2)$; the bound is attained on a vector supported on the factor of the maximum, so the norm is the maximum. The Lipschitz constant of the generator is the operator norm of $\tilde Q_1$, whence the criterion.
 
-**Remark (the diagonal multipliers).** If $\tilde A=\tilde A_+=\tilde A_-$ is one quaternion, the generator multiplies both factors by the same quaternion and is a similarity of ratio $|\tilde A|$; if only one component is non-zero, the generator maps the algebra into one ideal and its restriction to that ideal is a quaternion similarity. **The general split-biquaternion generator is a pair of quaternion generators acting independently on the two factors.**
+**Remark (the diagonal multipliers).** If $\tilde Q_1=\tilde Q_{1,+}=\tilde Q_{1,-}$ is one quaternion, the generator multiplies both factors by the same quaternion and is a similarity of ratio $|\tilde Q_1|$; if only one component is non-zero, the generator maps the algebra into one ideal and its restriction to that ideal is a quaternion similarity. **The general split-biquaternion generator is a pair of quaternion generators acting independently on the two factors.**
 
 ## The Product Attractor and Its Dimension
 
-**Theorem (the attractor is a product).** Let $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$, $i=1,\dots,m$, be a system of contractions. Then the attractor is the product
+**Theorem (the attractor is a product).** Let $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$, $i=1,\dots,m$, be a system of contractions. Then the attractor is the product
 
 $$
 K=K^+\times K^-,
 $$
 
-where $K^\pm$ are the attractors of the two quaternion systems $\{(\tilde A_i^\pm,\tilde B_i^\pm)\}_i$, and for the dimension, if both quaternion systems are systems of similarities satisfying the open set condition with ratios $r_i^\pm=|\tilde A_i^\pm|$, then
+where $K^\pm$ are the attractors of the two quaternion systems $\{(\tilde Q_{1,i}^\pm,\tilde Q_{2,i}^\pm)\}_i$, and for the dimension, if both quaternion systems are systems of similarities satisfying the open set condition with ratios $r_i^\pm=|\tilde Q_{1,i}^\pm|$, then
 
 $$
 \dim_HK=s_++s_-\ , \qquad \sum_{i=1}^m(r_i^+)^{s_+}=1,\qquad \sum_{i=1}^m(r_i^-)^{s_-}=1 .
@@ -52,9 +52,9 @@ $$
 
 ## Zero-Divisor Generators
 
-**Proposition (a zero divisor can multiply a contraction).** Let $\tilde A=\tilde A_+\tilde\Pi_1$ be a zero divisor, so $\tilde A_-=0$. Then $\|L_{\tilde A}\|=|\tilde A_+|$ and the generator $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a contraction whenever $|\tilde A_+|<1$, with image contained in the ideal $\mathbb{H}\tilde\Pi_1$.
+**Proposition (a zero divisor can multiply a contraction).** Let $\tilde Q_1=\tilde Q_{1,+}\tilde\Pi_1$ be a zero divisor, so $\tilde Q_{1,-}=0$. Then $\|L_{\tilde Q_1}\|=|\tilde Q_{1,+}|$ and the generator $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a contraction whenever $|\tilde Q_{1,+}|<1$, with image contained in the ideal $\mathbb{H}\tilde\Pi_1$.
 
-**Proof.** The operator norm formula with $\tilde A_-=0$; the image of $L_{\tilde A}$ is contained in $\mathbb{H}\tilde\Pi_1$ because $\tilde A_-\tilde Q_-=0$ kills the second component. No invertibility of $\tilde A$ is required for the attractor theorem, which needs only the contraction.
+**Proof.** The operator norm formula with $\tilde Q_{1,-}=0$; the image of $L_{\tilde Q_1}$ is contained in $\mathbb{H}\tilde\Pi_1$ because $\tilde Q_{1,-}\tilde Q_-=0$ kills the second component. No invertibility of $\tilde Q_1$ is required for the attractor theorem, which needs only the contraction.
 
 **Remark (the contrast with the biquaternion systems).** In the biquaternion algebra a zero-divisor multiplier is a contraction whose image avoids a direction, and the image subspace can be a proper complex subspace; here a zero-divisor multiplier kills one whole idempotent factor, so the attractor of the system is contained in the corresponding ideal and is a copy of a quaternion attractor. **The zero divisors of the split-biquaternion algebra act coordinatewise, and their effect on a system is the loss of one factor, not a collapse of the norm.**
 
@@ -62,12 +62,12 @@ $$
 
 ## The Parity Structure of the Systems
 
-**Proposition (even and odd generators).** Let $\tilde A\in\mathbb{H}_{\mathbb{D}}$ be written $\tilde A=\tilde A^0+j\tilde A^1$ with $\tilde A^0$ even and $j\tilde A^1$ odd. Then
+**Proposition (even and odd generators).** Let $\tilde Q_1\in\mathbb{H}_{\mathbb{D}}$ be written $\tilde Q_1=\tilde Q_1^0+j\tilde Q_1^1$ with $\tilde Q_1^0$ even and $j\tilde Q_1^1$ odd. Then
 
-1. if $\tilde A$ is even ($\tilde A^1=0$), left multiplication by $\tilde A$ preserves the even part and the odd part;
-2. if $\tilde A$ is odd ($\tilde A^0=0$), left multiplication by $\tilde A$ exchanges the even part and the odd part.
+1. if $\tilde Q_1$ is even ($\tilde Q_1^1=0$), left multiplication by $\tilde Q_1$ preserves the even part and the odd part;
+2. if $\tilde Q_1$ is odd ($\tilde Q_1^0=0$), left multiplication by $\tilde Q_1$ exchanges the even part and the odd part.
 
-**Proof.** $\tilde A(\tilde q+j\tilde q')=\tilde A\tilde q+j\tilde A\tilde q'$ in the even case, so the parity of the two terms is preserved; in the odd case $\tilde A=j\tilde A^1$ gives $j\tilde A^1\tilde q+\tilde A^1\tilde q'$, whose first term is odd and second even, so the parities are exchanged.
+**Proof.** $\tilde Q_1(\tilde q+j\tilde q')=\tilde Q_1\tilde q+j\tilde Q_1\tilde q'$ in the even case, so the parity of the two terms is preserved; in the odd case $\tilde Q_1=j\tilde Q_1^1$ gives $j\tilde Q_1^1\tilde q+\tilde Q_1^1\tilde q'$, whose first term is odd and second even, so the parities are exchanged.
 
 **Corollary (parity-preserving systems).** A system whose generators all have even multipliers preserves the parity decomposition, and its attractor is the union of an even attractor and an odd attractor exchanged by the volume-element symmetry; a system with an odd multiplier moves mass between the two chiral sides and has an attractor that is not parity-split.
 
@@ -81,9 +81,12 @@ The split-biquaternion iterated function systems reduce to quaternion systems on
 
 | symbol | meaning |
 |---|---|
-| $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$ | a generator |
-| $\tilde A_i^\pm$ | the two quaternion components of the multiplier |
-| $\|L_{\tilde A}\|=\max(|\tilde A_+|,|\tilde A_-|)$ | the operator norm |
+| $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ | a generator |
+| $\tilde Q_1$ | the multiplier of a single generator, $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ |
+| $\tilde Q_1=\tilde Q_1^0+j\tilde Q_1^1$ | its even part $\tilde Q_1^0$ and odd part $j\tilde Q_1^1$ |
+| $\tilde Q_2$ | the constant term of a single generator |
+| $\tilde Q_{1,i}^\pm$ | the two quaternion components of the multiplier |
+| $\lVert L_{\tilde Q_1}\rVert=\max(\lvert\tilde Q_{1,+}\rvert,\ \lvert\tilde Q_{1,-}\rvert)$ | the operator norm |
 | $K=K^+\times K^-$ | the attractor |
 | $s_\pm$ | the two quaternion similarity dimensions |
 | $s_++s_-$ | the dimension of the split-biquaternion attractor |

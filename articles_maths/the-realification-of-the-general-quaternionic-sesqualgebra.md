@@ -39,9 +39,9 @@ The product is $\mathbb{R}$-bilinear, because a $\mathbb{C}$-sesquilinear law is
 
 The last entry is worth a word, because the real reading states it in the language of the next section. The composition of two left multiplications is
 $$
-L_{\tilde A}\circ L_{\tilde Q_2}(\tilde Q_3)=\tilde A^{\natural}\tilde Q_3\,\overline{\tilde Q_2},
+L_{\tilde Q_4}\circ L_{\tilde Q_2}(\tilde Q_3)=\tilde Q_4^{\natural}\tilde Q_3\,\overline{\tilde Q_2},
 $$
-which is $\mathbb{C}$-linear in $\tilde Q_3$ — the two conjugate-linear maps compose to a linear one — so the composite is a nonzero linear map wherever $\tilde A$ and $\tilde Q_2$ are nonzero, and it is then no left multiplication, every left multiplication with a nonzero parameter being conjugate-linear; the family therefore contains no identity and is not closed under composition, and the block has the element theory of the sesquilinear structures without their operator theory. Read over $\mathbb{R}$, the composite lies in the commuting part of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$ and no nonzero left multiplication does.
+which is $\mathbb{C}$-linear in $\tilde Q_3$ — the two conjugate-linear maps compose to a linear one — so the composite is a nonzero linear map wherever $\tilde Q_4$ and $\tilde Q_2$ are nonzero, and it is then no left multiplication, every left multiplication with a nonzero parameter being conjugate-linear; the family therefore contains no identity and is not closed under composition, and the block has the element theory of the sesquilinear structures without their operator theory. Read over $\mathbb{R}$, the composite lies in the commuting part of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$ and no nonzero left multiplication does.
 
 ## The Second Slot and the Two One-Sided Multiplications
 

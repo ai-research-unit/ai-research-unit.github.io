@@ -73,7 +73,7 @@ $$
 $$
 where $\mathsf{M}_2$ is the isomorphism onto $M_2(\mathbb{C})$ and $\langle\cdot\rangle_{\natural}$ is the biquaternion norm.
 
-**Proof.** Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\mathsf{M}_2(e_t)=I_2$ both sides are $1$; on $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\det(-i\sigma_\mu)=1$ while $\langle \vec e_\mu\rangle_{\natural}=\vec e_\mu \vec e_\mu^{\natural}=-\vec e_\mu^2=e_t$, giving $1$; and both sides are multiplicative, $\det(\mathsf{M}_2(\tilde A)\mathsf{M}_2(\tilde Q_1))=\det\mathsf{M}_2(\tilde A)\det\mathsf{M}_2(\tilde Q_1)$ and $\langle\tilde A\tilde Q_1\rangle_{\natural}=\tilde A\tilde Q_1(\tilde A\tilde Q_1)^{\natural}=\tilde A\,\langle\tilde Q_1\rangle_{\natural}\,\tilde A^{\natural}=\tilde A\tilde A^{\natural}\,\langle\tilde Q_1\rangle_{\natural}=\langle\tilde A\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$ using the centrality of $\langle\tilde Q_1\rangle_{\natural}$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.
+**Proof.** Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\mathsf{M}_2(e_t)=I_2$ both sides are $1$; on $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\det(-i\sigma_\mu)=1$ while $\langle \vec e_\mu\rangle_{\natural}=\vec e_\mu \vec e_\mu^{\natural}=-\vec e_\mu^2=e_t$, giving $1$; and both sides are multiplicative, $\det(\mathsf{M}_2(\tilde Q_3)\mathsf{M}_2(\tilde Q_1))=\det\mathsf{M}_2(\tilde Q_3)\det\mathsf{M}_2(\tilde Q_1)$ and $\langle\tilde Q_3\tilde Q_1\rangle_{\natural}=\tilde Q_3\tilde Q_1(\tilde Q_3\tilde Q_1)^{\natural}=\tilde Q_3\,\langle\tilde Q_1\rangle_{\natural}\,\tilde Q_3^{\natural}=\tilde Q_3\tilde Q_3^{\natural}\,\langle\tilde Q_1\rangle_{\natural}=\langle\tilde Q_3\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$ using the centrality of $\langle\tilde Q_1\rangle_{\natural}$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.
 
 The determinant of $\tilde Q$ is thus the **biquaternion norm**, the same object that supplies the Minkowski interval of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.
 
@@ -108,11 +108,11 @@ the determinant taken on the module. The factor $-\tfrac12$ is the inverse squar
 
 **The one-loop action.** Expanding about a classical field as in the previous article,
 $$
-S[\tilde\phi+\delta\tilde\Phi] = S[\tilde\phi]+\tfrac12\big\langle\delta\tilde\Phi,S''[\tilde\phi]\delta\tilde\Phi\big\rangle+\cdots ,
+S[\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi] = S[\tilde\Phi_{\mathrm{cl}}]+\tfrac12\big\langle\delta\tilde\Phi,S''[\tilde\Phi_{\mathrm{cl}}]\delta\tilde\Phi\big\rangle+\cdots ,
 $$
 the Gaussian integration of $\delta\tilde\Phi$ gives the one-loop effective action
 $$
-\Gamma_1[\tilde\phi] = \tfrac12\,\mathrm{Tr}\log S''[\tilde\phi] ,
+\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}] ,
 $$
 where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
 
@@ -251,8 +251,8 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$ | Determinant of an algebra element |
 | $L_{\tilde Q},R_{\tilde Q}$ | Left and right multiplication on the algebra |
 | $\det L_{\tilde Q}=\det R_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^2$ | Regular-representation determinant |
-| $S''[\tilde\phi]$ | Fluctuation operator on the module |
-| $\delta\tilde\Phi$ | Fluctuation about the classical field, $\tilde\phi+\delta\tilde\Phi$ |
+| $S''[\tilde\Phi_{\mathrm{cl}}]$ | Fluctuation operator on the module |
+| $\delta\tilde\Phi$ | Fluctuation about the classical field, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi$ |
 | $\det S''$, $\mathrm{Tr}\log S''$ | Functional determinant; one-loop action |
 | $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
 | $(\det\tilde K)^{-1/2}$ | Gaussian normalization |

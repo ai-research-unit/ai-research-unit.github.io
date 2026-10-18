@@ -57,7 +57,7 @@ the parent product is $\tilde Q_1^{\natural}\tilde Q_2$ and the symmetric half i
 is $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$; $\mathrm{Vect}(\mathbb{B})$ is the
 vector subspace of the pure elements, of complex dimension three, and
 $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is the centre. The **left multiplication** of the block
-is $L_{\tilde A}\tilde Q_1=\tilde A\diamond\tilde Q_1$, and $L_{\tilde A}^{2}=L_{\tilde A}L_{\tilde A}$
+is $L_{\tilde Q_4}\tilde Q_1=\tilde Q_4\diamond\tilde Q_1$, and $L_{\tilde Q_4}^{2}=L_{\tilde Q_4}L_{\tilde Q_4}$
 is the composite. A **projector** is an idempotent operator, and an **idempotent** is an element
 equal to its own square; the two levels are never interchanged, and the block is the example
 that makes the distinction visible: its idempotents are the origin alone, while the operator of
@@ -220,7 +220,7 @@ no Peirce calculus.
 | Symbol | Meaning |
 |---|---|
 | $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
-| $L_{\tilde A}\tilde Q_1=\tilde A\diamond\tilde Q_1$, $R_{\tilde A}\tilde Q_1=\tilde Q_1\diamond\tilde A$ | the left and the right multiplication of the block |
+| $L_{\tilde Q_4}\tilde Q_1=\tilde Q_4\diamond\tilde Q_1$, $R_{\tilde Q_4}\tilde Q_1=\tilde Q_1\diamond\tilde Q_4$ | the left and the right multiplication of the block |
 | $L_{e_t}=P_{\mathrm{Vect}}$ | the criterion, the unit multiplying as the projection onto the vector subspace |
 | $L_{\tilde Q_1}^{2}=L_{\tilde Q_1}$ | the projector equation; its solutions are $0$ and $e_t$ |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, the image of $L_{e_t}$ and of the block, a left ideal |
@@ -233,6 +233,6 @@ no Peirce calculus.
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the first border case, where the projectors are indexed by the plain idempotents
 - *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md`), for the second border case, the hyperplane of rank-one projections onto the centre
 - *Introduction to the Antisymmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra.md`), for the operation, its image, the one-sided action of the unit and the absence of a unit
-- *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the operators $L_{\tilde A}$, their matrices, their ranks and the elements for which the rank drops
+- *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the operators $L_{\tilde Q_4}$, their matrices, their ranks and the elements for which the rank drops
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the form whose radical is the image of the projection
 - *The 12 Products of the Biquaternioid Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the twelve operations and their two alternating rows

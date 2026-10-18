@@ -95,16 +95,16 @@ The physical interpretation: $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_-$ 
 A single formula acts on the algebra,
 
 $$
-\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*},
+\Gamma_{\tilde{Q}_4}(\tilde{Q}) = \tilde{Q}_4\tilde{Q}\tilde{Q}_4^{*},
 $$
 
-and it preserves each sector, and preserves the norm whenever $\langle\tilde{A}\rangle_{\natural} = 1$. The same formula is the Lorentz transformation, the evolution of a quantum state and the update of a measurement, the three being distinguished only by which normalisation the acting element is given:
+and it preserves each sector, and preserves the norm whenever $\langle\tilde{Q}_4\rangle_{\natural} = 1$. The same formula is the Lorentz transformation, the evolution of a quantum state and the update of a measurement, the three being distinguished only by which normalisation the acting element is given:
 
-| Condition on $\tilde{A}$ | Operation | Group |
+| Condition on $\tilde{Q}_4$ | Operation | Group |
 |---|---|---|
-| $\tilde{A}\tilde{A}^{\natural} = e_t$ (unit norm) | Lorentz transformation of $\mathbb{M}_-$ | $SL(2,\mathbb{C})$, the double cover of the proper Lorentz group |
-| $\tilde{A}\tilde{A}^{*} = e_t$ (unitary) | evolution of a state | $\mathrm{U}(2)$ |
-| $\tilde{A}^2 = \tilde{A} = \tilde{A}^{*}$ (idempotent) | measurement update | no group: the map is not invertible |
+| $\tilde{Q}_4\tilde{Q}_4^{\natural} = e_t$ (unit norm) | Lorentz transformation of $\mathbb{M}_-$ | $SL(2,\mathbb{C})$, the double cover of the proper Lorentz group |
+| $\tilde{Q}_4\tilde{Q}_4^{*} = e_t$ (unitary) | evolution of a state | $\mathrm{U}(2)$ |
+| $\tilde{Q}_4^2 = \tilde{Q}_4 = \tilde{Q}_4^{*}$ (idempotent) | measurement update | no group: the map is not invertible |
 
 So the reversible and the irreversible are one algebraic operation under two normalisations, and measurement differs from evolution by a property of the acting element — it is not invertible — rather than by a separate axiom. That is the framework's answer to the question of why measurement should be different in kind, and the answer is a theorem about the algebra.
 
@@ -210,7 +210,7 @@ Every row is a theorem about $\mathbb{B}$ and its subspaces alone, provable from
 | The matrix dictionary | $\mathsf{M}_2$ is an isomorphism onto $M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$, $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_t$; $\mathbb{M}_+\mapsto$ Hermitian, $\mathbb{M}_-\mapsto$ skew-Hermitian |
 | The bracket of the material sector | $[\tilde{Q},\tilde{Q}_3] = 2\,\vec q\times\vec r$; $\mathbb{M}_-\cong\mathfrak{u}(2)$ as a Lie algebra |
 | The interlock | On two elements of one sector: commutator in $\mathbb{M}_-$, anticommutator in $\mathbb{M}_+$; the square of an element of either sector lies in $\mathbb{M}_+$ |
-| One action form | $\langle\tilde{A}\tilde{Q}\tilde{A}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$ for $\langle\tilde{A}\rangle_{\natural} = 1$; $\Gamma$ preserves both sectors |
+| One action form | $\langle\tilde{Q}_4\tilde{Q}\tilde{Q}_4^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$ for $\langle\tilde{Q}_4\rangle_{\natural} = 1$; $\Gamma$ preserves both sectors |
 
 ## New Results
 
@@ -305,7 +305,7 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}$ | The fourth of the four forms, the quaternionic sesquilinear form, also called the Krein form; named for the systematic background, and not used in the physics |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention; $\mathrm{Tr}(e_t) = 2$, $\mathrm{Tr}(\tilde{\Pi}) = 1$ |
 | $\mathsf{M}_2$ | The matrix element representation $\mathbb{B}\to M_2(\mathbb{C})$: $\mathsf{M}_2(e_t) = I_2$, and the three images of $\vec e_x,\vec e_y,\vec e_z$ are $-i$ times the Pauli matrices |
-| $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$ | One action form: Lorentz transformation, evolution, measurement |
+| $\Gamma_{\tilde{Q}_4}(\tilde{Q}) = \tilde{Q}_4\tilde{Q}\tilde{Q}_4^{*}$ | One action form: Lorentz transformation, evolution, measurement |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Unit-norm element; $SL(2,\mathbb{C})$, the Lorentz double cover |
 | $\tilde{\Pi} = \tfrac12(e_t+i\vec u_{\mathrm r})$ | Pure state: idempotent, Hermitian, null, trace one |
 | $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | State: positive, trace one; the Bloch ball |

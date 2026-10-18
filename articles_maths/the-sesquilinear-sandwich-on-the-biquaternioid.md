@@ -11,7 +11,7 @@ $$
 
 It is the two-sided operator of the multiplication, the operator analogue of the ordinary two-sided multiplication $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q_2$ of the algebra, and the whole difference between the two is the involution in the middle: $S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$, where $T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2^{*}$ is the linear two-sided multiplication and ${}^{*}$ is the involution. The sandwich is therefore conjugate-linear, and it is the composite $R_{\tilde Q_2}L_{\tilde Q}$ of the right and the left multiplication of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*.
 
-Three properties fix the operator. It is conjugate-linear in the middle variable, $\mathbb{C}$-linear in the first parameter and conjugate-linear in the second, so it carries one parity from the middle slot and one from the second parameter. The sandwiches are not closed under composition: the composite of two of them is the linear two-sided multiplication $T_{\tilde Q_3\tilde Q_2,\tilde A^{*}\tilde D^{*}}$, the two conjugations cancelling, so the sandwiches together with the two-sided multiplications form a monoid in which the parity is multiplicative and the sandwiches are the conjugate-linear half. And the sandwich is invertible exactly when both parameters are units, with the explicit inverse $S_{\tilde Q_2^{-1},\tilde Q^{-1}}$.
+Three properties fix the operator. It is conjugate-linear in the middle variable, $\mathbb{C}$-linear in the first parameter and conjugate-linear in the second, so it carries one parity from the middle slot and one from the second parameter. The sandwiches are not closed under composition: the composite of two of them is the linear two-sided multiplication $T_{\tilde Q_3\tilde Q_2,\tilde Q_8^{*}\tilde Q_9^{*}}$, the two conjugations cancelling, so the sandwiches together with the two-sided multiplications form a monoid in which the parity is multiplicative and the sandwiches are the conjugate-linear half. And the sandwich is invertible exactly when both parameters are units, with the explicit inverse $S_{\tilde Q_2^{-1},\tilde Q^{-1}}$.
 
 The article is the sixth of the batch and reads the general article *The Sesquilinear Sandwich Operator*, whose composition table and invertibility criterion are quoted; the two-sided multiplication it uses is the linear operator of the same article, and the two one-sided cases are *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, above in this group. The ternary form of the sandwich is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*, and the operator of the ternary product is *The Ternary Product as an Operator*; the adjoint of the sandwich is *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*, below.
 
@@ -37,7 +37,7 @@ $$
 
 and it is the composite $R_{\tilde Q_2}L_{\tilde Q}$ of the right multiplication by $\tilde Q_2$ and the left multiplication by $\tilde Q$.
 
-**Proof.** $T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1^{*})=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$, which is the first display. For the second, $R_{\tilde Q_2}L_{\tilde Q}(\tilde Q_1)=R_{\tilde Q_2}(\tilde Q\tilde Q_1^{*})=(\tilde Q\tilde Q_1^{*})\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$; the composite of the two one-sided operators is the mixed composition $R_{\tilde A}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde A}$ of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*, with $\tilde A=\tilde Q_2$ and $\tilde Q_2=\tilde Q$.
+**Proof.** $T_{\tilde Q,\tilde Q_2^{*}}(\tilde Q_1^{*})=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$, which is the first display. For the second, $R_{\tilde Q_2}L_{\tilde Q}(\tilde Q_1)=R_{\tilde Q_2}(\tilde Q\tilde Q_1^{*})=(\tilde Q\tilde Q_1^{*})\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$; the composite of the two one-sided operators is the mixed composition $R_{\tilde Q_8}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde Q_8}$ of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*, with $\tilde Q_8=\tilde Q_2$ and $\tilde Q_2=\tilde Q$.
 
 **Remark.** The second reading is the reason the sandwich is the two-sided completion of the one-sided actions: the left multiplication conjugates the variable and the right multiplication conjugates the parameter, and the two together conjugate both. The associativity of the algebra is what makes the composite well defined, and the failure of the associativity of the multiplication is what makes $S_{\tilde Q,\tilde Q_2}$ different from $S$ with the two parameters interchanged; the two groupings of the triple $(\tilde Q,\tilde Q_1,\tilde Q_2)$ differ by the associator of *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*.
 
@@ -73,18 +73,18 @@ and $S_{e_t,e_t}$ is the involution of the algebra.
 
 ### The Two Families Together
 
-**Theorem (the composition table).** For all $\tilde A,\tilde Q_2,\tilde Q_3,\tilde D,\tilde Q,\tilde Q_7,\tilde Q_6,\tilde S$,
+**Theorem (the composition table).** For all $\tilde Q_8,\tilde Q_2,\tilde Q_3,\tilde Q_9,\tilde Q,\tilde Q_7,\tilde Q_6,\tilde S$,
 
 $$
-S_{\tilde Q_3,\tilde D}S_{\tilde A,\tilde Q_2}=T_{\tilde Q_3\tilde Q_2,\tilde A^{*}\tilde D^{*}} , \qquad
-T_{\tilde Q,\tilde Q_7}S_{\tilde A,\tilde Q_2}=S_{\tilde Q\tilde A,\tilde Q_7^{*}\tilde Q_2} ,
+S_{\tilde Q_3,\tilde Q_9}S_{\tilde Q_8,\tilde Q_2}=T_{\tilde Q_3\tilde Q_2,\tilde Q_8^{*}\tilde Q_9^{*}} , \qquad
+T_{\tilde Q,\tilde Q_7}S_{\tilde Q_8,\tilde Q_2}=S_{\tilde Q\tilde Q_8,\tilde Q_7^{*}\tilde Q_2} ,
 $$
 $$
-S_{\tilde Q_3,\tilde D}T_{\tilde Q,\tilde Q_7}=S_{\tilde Q_3\tilde Q_7^{*},\tilde D\tilde Q} , \qquad
+S_{\tilde Q_3,\tilde Q_9}T_{\tilde Q,\tilde Q_7}=S_{\tilde Q_3\tilde Q_7^{*},\tilde Q_9\tilde Q} , \qquad
 T_{\tilde Q,\tilde Q_7}T_{\tilde Q_6,\tilde S}=T_{\tilde Q\tilde Q_6,\tilde S\tilde Q_7} .
 $$
 
-**Proof.** Each is the composition table of *The Sesquilinear Sandwich Operator*, §*The Multiplication Table*, transported to the sandwich $S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$; the first is the direct computation $S_{\tilde Q_3,\tilde D}(S_{\tilde A,\tilde Q_2}(\tilde Q_1))=\tilde Q_3(\tilde A\tilde Q_1^{*}\tilde Q_2^{*})^{*}\tilde D^{*}=\tilde Q_3\tilde Q_2\tilde Q_1\tilde A^{*}\tilde D^{*}$, and the others are the same computation with one factor of the involution and one two-sided multiplication in each order.
+**Proof.** Each is the composition table of *The Sesquilinear Sandwich Operator*, §*The Multiplication Table*, transported to the sandwich $S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$; the first is the direct computation $S_{\tilde Q_3,\tilde Q_9}(S_{\tilde Q_8,\tilde Q_2}(\tilde Q_1))=\tilde Q_3(\tilde Q_8\tilde Q_1^{*}\tilde Q_2^{*})^{*}\tilde Q_9^{*}=\tilde Q_3\tilde Q_2\tilde Q_1\tilde Q_8^{*}\tilde Q_9^{*}$, and the others are the same computation with one factor of the involution and one two-sided multiplication in each order.
 
 **Corollary (the parity of a composite).** Two sandwiches compose to a two-sided multiplication, a sandwich and a two-sided multiplication in either order compose to a sandwich, and two two-sided multiplications compose to a two-sided multiplication. The set
 
@@ -100,15 +100,15 @@ is a monoid under composition with identity $T_{e_t,e_t}=\mathrm{id}$, in which 
 
 ### The Square and the Involution
 
-**Corollary (the square).** For all $\tilde A,\tilde Q_2$,
+**Corollary (the square).** For all $\tilde Q_8,\tilde Q_2$,
 
 $$
-S_{\tilde A,\tilde Q_2}^{2}=T_{\tilde A\tilde Q_2,\tilde A^{*}\tilde Q_2^{*}} ,
+S_{\tilde Q_8,\tilde Q_2}^{2}=T_{\tilde Q_8\tilde Q_2,\tilde Q_8^{*}\tilde Q_2^{*}} ,
 $$
 
-so a sandwich is an involution exactly when $\tilde A\tilde Q_2=ce_t$ for some $c\in\mathbb{C}$ with $\lvert c\rvert=1$; in particular it is an involution as soon as $\tilde A\tilde Q_2=e_t$ and $\tilde A^{*}\tilde Q_2^{*}=e_t$.
+so a sandwich is an involution exactly when $\tilde Q_8\tilde Q_2=ce_t$ for some $c\in\mathbb{C}$ with $\lvert c\rvert=1$; in particular it is an involution as soon as $\tilde Q_8\tilde Q_2=e_t$ and $\tilde Q_8^{*}\tilde Q_2^{*}=e_t$.
 
-**Proof.** The first identity is the theorem at $(\tilde Q_3,\tilde D)=(\tilde A,\tilde Q_2)$. For the criterion, $S^2=\mathrm{id}$ reads $T_{\tilde A\tilde Q_2,\tilde A^{*}\tilde Q_2^{*}}=T_{e_t,e_t}$. Now $T_{\tilde Q,\tilde Q_2}=T_{e_t,e_t}$ holds exactly when $(\tilde Q,\tilde Q_2)=(ce_t,c^{-1}e_t)$ for some $c\in\mathbb{C}^{\times}$: the equation $\tilde Q\tilde Q_1\tilde Q_2=\tilde Q_1$ for every $\tilde Q_1$ gives $\tilde Q\tilde Q_2=e_t$ at $\tilde Q_1=e_t$, so both are units with $\tilde Q_2=\tilde Q^{-1}$, and then $\tilde Q\tilde Q_1\tilde Q^{-1}=\tilde Q_1$ for every $\tilde Q_1$ forces $\tilde Q$ to be central, that is $\tilde Q=ce_t$. The criterion is therefore $\tilde A\tilde Q_2=ce_t$ and $\tilde A^{*}\tilde Q_2^{*}=c^{-1}e_t$ for some $c\in\mathbb{C}^{\times}$. The second equation follows from the first with the value $\bar c$: from $\tilde A\tilde Q_2=ce_t$ one has $\tilde Q_2=c\tilde A^{-1}$, hence $\tilde A^{*}\tilde Q_2^{*}=\bar c\,\tilde A^{*}(\tilde A^{*})^{-1}=\bar c\,e_t$; the two amount to $\tilde A\tilde Q_2=ce_t$ with $\bar c=c^{-1}$, that is $\lvert c\rvert=1$. The case $c=1$ is the sufficient condition of the display.
+**Proof.** The first identity is the theorem at $(\tilde Q_3,\tilde Q_9)=(\tilde Q_8,\tilde Q_2)$. For the criterion, $S^2=\mathrm{id}$ reads $T_{\tilde Q_8\tilde Q_2,\tilde Q_8^{*}\tilde Q_2^{*}}=T_{e_t,e_t}$. Now $T_{\tilde Q,\tilde Q_2}=T_{e_t,e_t}$ holds exactly when $(\tilde Q,\tilde Q_2)=(ce_t,c^{-1}e_t)$ for some $c\in\mathbb{C}^{\times}$: the equation $\tilde Q\tilde Q_1\tilde Q_2=\tilde Q_1$ for every $\tilde Q_1$ gives $\tilde Q\tilde Q_2=e_t$ at $\tilde Q_1=e_t$, so both are units with $\tilde Q_2=\tilde Q^{-1}$, and then $\tilde Q\tilde Q_1\tilde Q^{-1}=\tilde Q_1$ for every $\tilde Q_1$ forces $\tilde Q$ to be central, that is $\tilde Q=ce_t$. The criterion is therefore $\tilde Q_8\tilde Q_2=ce_t$ and $\tilde Q_8^{*}\tilde Q_2^{*}=c^{-1}e_t$ for some $c\in\mathbb{C}^{\times}$. The second equation follows from the first with the value $\bar c$: from $\tilde Q_8\tilde Q_2=ce_t$ one has $\tilde Q_2=c\tilde Q_8^{-1}$, hence $\tilde Q_8^{*}\tilde Q_2^{*}=\bar c\,\tilde Q_8^{*}(\tilde Q_8^{*})^{-1}=\bar c\,e_t$; the two amount to $\tilde Q_8\tilde Q_2=ce_t$ with $\bar c=c^{-1}$, that is $\lvert c\rvert=1$. The case $c=1$ is the sufficient condition of the display.
 
 **Remark.** For a unitary $\tilde u$, so that $\tilde u\tilde u^{*}=e_t=\tilde u^{*}\tilde u$ by *Units and the Unitary Elements*, the sandwich $S_{\tilde u,\tilde u^{*}}$ is a reflection, $S_{\tilde u,\tilde u^{*}}(\tilde Q_1)=\tilde u\tilde Q_1^{*}\tilde u$, while $S_{\tilde u,\tilde u}(\tilde Q_1)=\tilde u\tilde Q_1^{*}\tilde u^{*}=\sigma_{\tilde u}(\tilde Q_1)$ is the inner involution of *The Involutions of a Sesqualgebra*, an involution exactly when $\tilde u^{2}$ is central. The two families of *The Sesquilinear Sandwich Operator*, §*The Reflections*, are $S_{\tilde u,\tilde u}$ and $S_{\tilde u,\tilde u^{*}}$ in that notation; in the notation of this batch the two parameters are written with the unit in the second slot carrying the star, so the reflection is $S_{\tilde u,\tilde u^{*}}$ and the inner involution is $S_{\tilde u,\tilde u}$.
 
@@ -184,9 +184,9 @@ $$
 S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\{\tilde Q,\tilde Q_1,\tilde Q_2^{*}\} ,
 $$
 
-where $\{\tilde A,\tilde Q_5,\tilde Q_2\}=\tilde A\tilde Q_5^{*}\tilde Q_2$ is the ternary product of *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*.
+where $\{\tilde Q_8,\tilde Q_5,\tilde Q_2\}=\tilde Q_8\tilde Q_5^{*}\tilde Q_2$ is the ternary product of *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*.
 
-**Proof.** The ternary product of *The Ternary Product and the Associator of the Biquaternion Sesqualgebra* is $\{\tilde A,\tilde Q_5,\tilde Q_2\}=\tilde A\tilde Q_5^{*}\tilde Q_2$, with the star in the middle slot alone; substituting $(\tilde A,\tilde Q_5,\tilde Q_2)=(\tilde Q,\tilde Q_1,\tilde Q_2^{*})$ gives $\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$, which is the display.
+**Proof.** The ternary product of *The Ternary Product and the Associator of the Biquaternion Sesqualgebra* is $\{\tilde Q_8,\tilde Q_5,\tilde Q_2\}=\tilde Q_8\tilde Q_5^{*}\tilde Q_2$, with the star in the middle slot alone; substituting $(\tilde Q_8,\tilde Q_5,\tilde Q_2)=(\tilde Q,\tilde Q_1,\tilde Q_2^{*})$ gives $\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}=S_{\tilde Q,\tilde Q_2}(\tilde Q_1)$, which is the display.
 
 **Remark.** The star on the third parameter is what makes the sandwich and the ternary product agree, and it is the same star that distinguishes the sandwich from the ordinary two-sided multiplication. The ternary product with the two parameters written without the star is the ordinary two-sided multiplication of the conjugated middle variable, $T_{\tilde Q,\tilde Q_2}$, and not the sandwich; the difference of the two readings is the involution on the last parameter, and it is the operator form of the fact that the ternary product of the batch carries the involution in the middle slot of the sandwich and not on the outer parameters. The **quadratic representation** of the ternary product is the case in which the outer two variables are tied to one element, and it is the operator
 
@@ -238,7 +238,7 @@ so the sandwich of two basis elements sends each basis element to a basis elemen
 
 The sesquilinear sandwich is $S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\star\tilde Q_1\star\tilde Q_2=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$, the two-sided operator of the multiplication, conjugate-linear in its variable, linear in the first parameter and conjugate-linear in the second, and equal to the composite $R_{\tilde Q_2}L_{\tilde Q}$ of the right and the left multiplication. Its image is $\tilde Q\mathbb{B}\tilde Q_2^{*}$ and its rank is the product of the ranks of its two parameters, taking the values $0$, $1$, $2$, $4$; it is invertible exactly when both parameters are units, with $S_{\tilde Q,\tilde Q_2}^{-1}=S_{\tilde Q_2^{-1},\tilde Q^{-1}}$.
 
-Two sandwiches compose to the linear two-sided multiplication $T_{\tilde Q_3\tilde Q_2,\tilde A^{*}\tilde D^{*}}$, a sandwich and a two-sided multiplication compose to a sandwich, and the two families together form a monoid with identity $T_{e_t,e_t}$; the sandwiches are its conjugate-linear half. A unitary parameter gives the reflection $S_{\tilde u,\tilde u^{*}}$ and the inner involution $S_{\tilde u,\tilde u}$. The sandwich is the operator form of the ternary product, the quadratic representation being the case of conjugate parameters, and it is the two-sided action of the algebra, whose linear shadow is the ordinary two-sided multiplication.
+Two sandwiches compose to the linear two-sided multiplication $T_{\tilde Q_3\tilde Q_2,\tilde Q_8^{*}\tilde Q_9^{*}}$, a sandwich and a two-sided multiplication compose to a sandwich, and the two families together form a monoid with identity $T_{e_t,e_t}$; the sandwiches are its conjugate-linear half. A unitary parameter gives the reflection $S_{\tilde u,\tilde u^{*}}$ and the inner involution $S_{\tilde u,\tilde u}$. The sandwich is the operator form of the ternary product, the quadratic representation being the case of conjugate parameters, and it is the two-sided action of the algebra, whose linear shadow is the ordinary two-sided multiplication.
 
 ## Summary of Notation
 
@@ -249,12 +249,12 @@ Two sandwiches compose to the linear two-sided multiplication $T_{\tilde Q_3\til
 | $S_{\tilde Q,\tilde Q_2}=T_{\tilde Q,\tilde Q_2^{*}}\circ{}^{*}$ | the sandwich as the two-sided multiplication with the involution |
 | $L_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}$, $R_{\tilde Q_2}(\tilde Q_1)=\tilde Q_1\tilde Q_2^{*}$ | the left and the right multiplication |
 | $S_{\tilde Q,\tilde Q_2}=R_{\tilde Q_2}\circ L_{\tilde Q}$ | the sandwich as the mixed composite |
-| $S_{\tilde Q_3,\tilde D}S_{\tilde A,\tilde Q_2}=T_{\tilde Q_3\tilde Q_2,\tilde A^{*}\tilde D^{*}}$ | the composite of two sandwiches |
-| $S_{\tilde A,\tilde Q_2}^{2}=T_{\tilde A\tilde Q_2,\tilde A^{*}\tilde Q_2^{*}}$ | the square of a sandwich |
+| $S_{\tilde Q_3,\tilde Q_9}S_{\tilde Q_8,\tilde Q_2}=T_{\tilde Q_3\tilde Q_2,\tilde Q_8^{*}\tilde Q_9^{*}}$ | the composite of two sandwiches |
+| $S_{\tilde Q_8,\tilde Q_2}^{2}=T_{\tilde Q_8\tilde Q_2,\tilde Q_8^{*}\tilde Q_2^{*}}$ | the square of a sandwich |
 | $S_{\tilde Q,\tilde Q_2}^{-1}=S_{\tilde Q_2^{-1},\tilde Q^{-1}}$ | the inverse on the units |
 | $\operatorname{rank}S_{\tilde Q,\tilde Q_2}=\operatorname{rank}\tilde Q\cdot\operatorname{rank}\tilde Q_2$ | the rank of a sandwich |
 | $S_{\tilde\Pi,\tilde\Pi}$ | the rank-one sandwich of a projection |
-| $\{\tilde A,\tilde Q_5,\tilde Q_2\}=\tilde A\tilde Q_5^{*}\tilde Q_2$ | the ternary product |
+| $\{\tilde Q_8,\tilde Q_5,\tilde Q_2\}=\tilde Q_8\tilde Q_5^{*}\tilde Q_2$ | the ternary product |
 | $\tilde Q_4\mapsto\tilde Q_4\tilde Q_5^{*}\tilde Q_4=S_{\tilde Q_4,\tilde Q_4^{*}}(\tilde Q_5)$ | the quadratic representation |
 
 ## Further Reading

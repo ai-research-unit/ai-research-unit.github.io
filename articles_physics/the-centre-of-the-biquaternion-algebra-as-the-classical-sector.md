@@ -126,7 +126,7 @@ $$
 $$
 a fact visible in the matrix model (a single non-zero matrix and its two-sided multiples span all matrices).
 
-**No central idempotents.** A central idempotent is a $\tilde{C}\in Z(\mathbb{B})$ with $\tilde{C}^2=\tilde{C}$. Writing $\tilde{C}=c\,e_t$ and using $\tilde{C}^2=c^2e_t$, the equation is $c^2=c$, whose only solutions are $c=0,1$. Hence
+**No central idempotents.** A central idempotent is a $\tilde Q_3\in Z(\mathbb{B})$ with $\tilde Q_3^2=\tilde Q_3$. Writing $\tilde Q_3=c\,e_t$ and using $\tilde Q_3^2=c^2e_t$, the equation is $c^2=c$, whose only solutions are $c=0,1$. Hence
 $$
 \bigl\{\text{central idempotents of }\mathbb{B}\bigr\}=\{0,\ e_t\}.
 $$
@@ -148,20 +148,20 @@ The absence of central projections is therefore a genuine algebraic limitation, 
 
 The limitations of the preceding section are structural, and they do not diminish the sense in which the centre **is** the classical sector. That sense is made precise by four properties of central elements, each of which is a classical marker.
 
-**1. Central observables have no dispersion and no state dependence.** Let $\tilde{C}=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}$ be any state. The trace formula gives
+**1. Central observables have no dispersion and no state dependence.** Let $\tilde Q_3=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}$ be any state. The trace formula gives
 $$
-\langle\tilde{C}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\bigl(\tilde{Ϛ}\lambda e_t\bigr)=\lambda\,\mathrm{Tr}\bigl(\tilde{Ϛ}\bigr)=\lambda ,
+\langle\tilde Q_3\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\bigl(\tilde{Ϛ}\lambda e_t\bigr)=\lambda\,\mathrm{Tr}\bigl(\tilde{Ϛ}\bigr)=\lambda ,
 $$
 independently of the state. The variance vanishes in every state,
 $$
-\bigl\langle(\tilde{C}-\lambda e_t)^2\bigr\rangle_{\tilde{Ϛ}}
-=\mathrm{Tr}\Bigl(\tilde{Ϛ}\,(\tilde{C}-\lambda e_t)^2\Bigr)=0 .
+\bigl\langle(\tilde Q_3-\lambda e_t)^2\bigr\rangle_{\tilde{Ϛ}}
+=\mathrm{Tr}\Bigl(\tilde{Ϛ}\,(\tilde Q_3-\lambda e_t)^2\Bigr)=0 .
 $$
 A quantity whose expectation value is the same in every state and whose uncertainty is zero is not a quantum observable in any operational sense; it is a **parameter**. The centre is exactly the set of such quantities, and this is the sharpest algebraic expression of the statement that its elements are classical.
 
 **2. Central elements are conserved under every dynamics.** For any Hermitian generator $\tilde{H}\in\mathbb{M}_+$, the Heisenberg evolution of a central element is trivial,
 $$
-\frac{d}{dt}\tilde{C}=\frac{1}{i\hbar}\bigl[\tilde{H},\tilde{C}\bigr]=0 ,
+\frac{d}{dt}\tilde Q_3=\frac{1}{i\hbar}\bigl[\tilde{H},\tilde Q_3\bigr]=0 ,
 $$
 because the commutator vanishes identically. A central element is therefore a constant of the motion for **every** Hamiltonian, which is the algebraic counterpart of a classical conserved parameter: it does not evolve, cannot be prepared, and carries no dynamical information. The comparison with the Poisson bracket is standard: the commutator is the quantum bracket and $(1/i\hbar)[\cdot,\cdot]$ reduces to the Poisson bracket in the classical limit; a quantity whose bracket with everything vanishes has identically zero Poisson bracket and is a classical constant.
 
@@ -231,9 +231,9 @@ Z(\mathbb{B})'=\mathbb{B},
 $$
 because every element commutes with the scalars. The two statements together identify the centre as the fixed point of the commutant operation: it is the subalgebra whose commutant is as large as possible, and it is itself the commutant of the algebra. For a maximal commutative subalgebra $\mathbb{A}$ one has $\mathbb{A}'=\mathbb{A}$, so the MASAs are exactly the self-commuting subalgebras, and the centre is their common part. This is the von Neumann bicommutant picture restricted to the finite-dimensional matrix algebra; there is no topological content to add.
 
-**2. Trivial action on the projective state space.** A central element acts on the state module by scalar multiplication, $\tilde{C}\psi=(\lambda e_t)\psi=\lambda\psi$. On a ray $[\psi]$ this is invisible, since $[\lambda\psi]=[\psi]$ for $\lambda\neq0$. The centre is therefore the **kernel of the action of $\mathbb{B}^\times$ on the projective state space**: its unitary part $\mathrm{U}(1)=\{\lambda e_t:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
+**2. Trivial action on the projective state space.** A central element acts on the state module by scalar multiplication, $\tilde Q_3\psi=(\lambda e_t)\psi=\lambda\psi$. On a ray $[\psi]$ this is invisible, since $[\lambda\psi]=[\psi]$ for $\lambda\neq0$. The centre is therefore the **kernel of the action of $\mathbb{B}^\times$ on the projective state space**: its unitary part $\mathrm{U}(1)=\{\lambda e_t:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
 $$
-\Gamma_{\tilde{C}}(\tilde{Ϛ})=(\lambda e_t)\,\tilde{Ϛ}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ},
+\Gamma_{\tilde Q_3}(\tilde{Ϛ})=(\lambda e_t)\,\tilde{Ϛ}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ},
 $$
 a positive multiple of $\tilde{Ϛ}$ and hence the same state after normalization, and the identity on trace-one states exactly for the unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
 

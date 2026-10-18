@@ -8,7 +8,7 @@ The Green's function and its conditional existence are *The Escape Radius and th
 
 The article owns the Monge–Ampère current of the biquaternion map, the invariance of the equilibrium measure under the map, the product form on the idempotent plane, the mass-loss phenomenon at the cone, and the statement of the open questions.
 
-**Standing convention.** $F=F_{\tilde C}$ is the quadratic family in the general plain bilinear product, $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, $F^*$ the pullback on functions and currents, $d$ the algebraic degree $2$, and $k=4$ the complex dimension of the model.
+**Standing convention.** $F=F_{\tilde Q_3}$ is the quadratic family in the general plain bilinear product, $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, $F^*$ the pullback on functions and currents, $d$ the algebraic degree $2$, and $k=4$ the complex dimension of the model.
 
 ## The Classical Framework
 
@@ -26,22 +26,22 @@ is a probability measure with $P^*\mu_P=d^k\mu_P$, supported on the Julia set of
 
 ## The Green's Function and the Current
 
-**Proposition (the current and its invariance).** Let $\tilde C=Ce_t$ be central and let $G_{\tilde C}$ be the Green's function, defined on the regular part of the escaping set. On the open set where $G_{\tilde C}$ is plurisubharmonic and smooth, the current
+**Proposition (the current and its invariance).** Let $\tilde Q_3=Ce_t$ be central and let $G_{\tilde Q_3}$ be the Green's function, defined on the regular part of the escaping set. On the open set where $G_{\tilde Q_3}$ is plurisubharmonic and smooth, the current
 
 $$
-\gamma_{\tilde C}=(dd^cG_{\tilde C})^4
+\gamma_{\tilde Q_3}=(dd^cG_{\tilde Q_3})^4
 $$
 
-is positive and satisfies $F^*\gamma_{\tilde C}=16\,\gamma_{\tilde C}$.
+is positive and satisfies $F^*\gamma_{\tilde Q_3}=16\,\gamma_{\tilde Q_3}$.
 
-**Proof.** $F^*G_{\tilde C}=2G_{\tilde C}$ (*The Escape Radius and the Green's Function for the Biquaternions*), the pullback commutes with $dd^c$, and $dd^c(2G)=2\,dd^cG$; raising to the fourth power multiplies the current by $2^4=16$.
+**Proof.** $F^*G_{\tilde Q_3}=2G_{\tilde Q_3}$ (*The Escape Radius and the Green's Function for the Biquaternions*), the pullback commutes with $dd^c$, and $dd^c(2G)=2\,dd^cG$; raising to the fourth power multiplies the current by $2^4=16$.
 
 **Remark (the degree and the exponent).** The base of the invariance is the algebraic degree $2$ and the exponent is the complex dimension $4$, so the multiplier is $16$ and the entropy of the measure is $4\log2$. **The biquaternion map has a four-dimensional equilibrium measure with the entropy of four complex degrees of freedom, one for each eigenvalue of the model.** On the central slice the entropy reduces to the two $(\log2)$-contributions of the two eigenvalues and the measure is the product of two one-variable equilibrium measures.
 
-**Theorem (the product form on the idempotent plane).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ be in the idempotent plane. Then the equilibrium measure of the restriction is the product
+**Theorem (the product form on the idempotent plane).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde Q_3=C_1\tilde\Pi+C_2\tilde\Pi'$ be in the idempotent plane. Then the equilibrium measure of the restriction is the product
 
 $$
-\mu_{\tilde C}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2},
+\mu_{\tilde Q_3}\big|_{W_{\tilde\Pi}}=\mu_{C_1}\otimes\mu_{C_2},
 $$
 
 the product of the two one-variable equilibrium measures of $\zeta\mapsto\zeta^2+C_j$, and its entropy is $2\log2$.
@@ -50,7 +50,7 @@ the product of the two one-variable equilibrium measures of $\zeta\mapsto\zeta^2
 
 ## The Mass Loss at the Cone
 
-**Proposition (the pullback loses mass on the cone).** The equation $\tilde Q_1^2=\tilde W$ has four solutions for a generic regular value $\tilde W$ (*Square Roots of a General Element in the Biquaternion Algebra*), so the generic fibre of the square map has four points; at $\tilde W=0$ the equation is $\tilde Q_1^2=0$ and its solution set is the square-zero cone, of complex dimension two. The topological degree of the square map is therefore not locally constant at $0$: the fibre over $0$ has complex dimension two while the generic fibre has dimension zero.
+**Proposition (the pullback loses mass on the cone).** The equation $\tilde Q_1^2=\tilde Q$ has four solutions for a generic regular value $\tilde Q$ (*Square Roots of a General Element in the Biquaternion Algebra*), so the generic fibre of the square map has four points; at $\tilde Q=0$ the equation is $\tilde Q_1^2=0$ and its solution set is the square-zero cone, of complex dimension two. The topological degree of the square map is therefore not locally constant at $0$: the fibre over $0$ has complex dimension two while the generic fibre has dimension zero.
 
 **Proof.** The generic count is the corollary on the number of roots of *Square Roots of a General Element in the Biquaternion Algebra*: four roots when $(\vec Q,\vec Q)\neq0$ and $n\neq0$, since the reduced quadratic then has two distinct non-zero solutions and each contributes two scalar parts; the fibre over $0$ is the set of nilpotent elements, the cone $\{Q_{1t}=0,\ (\vec Q,\vec Q)=0\}$ of complex dimension two. The derivative of the square map at $\tilde Q_1$ is $\tilde Q_2\mapsto\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$, singular exactly on the critical set; at a square-zero point it is nilpotent with image of complex dimension two, so the map is not locally finite there.
 
@@ -72,12 +72,12 @@ The pluripotential framework of a polynomial map of $\mathbb{C}^4$ applies to th
 
 | symbol | meaning |
 |---|---|
-| $G_{\tilde C}$ | the Green's function of the biquaternion map |
+| $G_{\tilde Q_3}$ | the Green's function of the biquaternion map |
 | $d$ | the algebraic degree, $2$ |
 | $k$ | the complex dimension of the model, $4$ |
 | $dd^c$ | the Monge–Ampère operator |
-| $\gamma_{\tilde C}=(dd^cG_{\tilde C})^4$ | the Monge–Ampère current |
-| $\mu_{\tilde C}$ | the equilibrium measure |
+| $\gamma_{\tilde Q_3}=(dd^cG_{\tilde Q_3})^4$ | the Monge–Ampère current |
+| $\mu_{\tilde Q_3}$ | the equilibrium measure |
 | $\mu_{C}$ | the one-variable equilibrium measure of $\zeta\mapsto\zeta^2+C$ |
 | $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set |
 

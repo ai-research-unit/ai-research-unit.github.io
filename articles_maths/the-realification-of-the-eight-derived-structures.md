@@ -118,32 +118,32 @@ The isotropic set $\{N=0\}$ has complex dimension three and real dimension six, 
 
 The product is commutative, so the left and the right multiplication by an element coincide,
 $$
-L_{\tilde A}\tilde Q_5=R_{\tilde A}\tilde Q_5=\langle\tilde A,\tilde Q_5\rangle_{\natural}\,e_t,
+L_{\tilde Q_6}\tilde Q_5=R_{\tilde Q_6}\tilde Q_5=\langle\tilde Q_6,\tilde Q_5\rangle_{\natural}\,e_t,
 $$
-and both are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$. In the complex basis the matrix of $L_{\tilde A}$ carries the four coordinates of $\tilde A$ in its first row and carries zero elsewhere; for $\tilde A\ne0$ the complex rank is one and the real rank is two, the image is the central line $\mathbb{C}_{\mathbb{B}}$ — the same real plane for every nonzero $\tilde A$ — and the kernel is the hyperplane $\{\tilde Q_5:\langle\tilde A,\tilde Q_5\rangle_{\natural}=0\}$, of real dimension six. The passage to $\mathbb{R}$ doubles the rank of a $\mathbb{C}$-linear map and turns the complex line of the image into a real plane.
+and both are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$. In the complex basis the matrix of $L_{\tilde Q_6}$ carries the four coordinates of $\tilde Q_6$ in its first row and carries zero elsewhere; for $\tilde Q_6\ne0$ the complex rank is one and the real rank is two, the image is the central line $\mathbb{C}_{\mathbb{B}}$ — the same real plane for every nonzero $\tilde Q_6$ — and the kernel is the hyperplane $\{\tilde Q_5:\langle\tilde Q_6,\tilde Q_5\rangle_{\natural}=0\}$, of real dimension six. The passage to $\mathbb{R}$ doubles the rank of a $\mathbb{C}$-linear map and turns the complex line of the image into a real plane.
 
-**Proposition (the two traces).** For every $\tilde A$,
+**Proposition (the two traces).** For every $\tilde Q_6$,
 $$
-\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde A}\bigr)=A_t=\operatorname{Sc}(\tilde A),\qquad
-\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde A}\bigr)=2\operatorname{Re}A_t=2\operatorname{Re}\operatorname{Sc}(\tilde A),
+\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde Q_6}\bigr)=Q_{6t}=\operatorname{Sc}(\tilde Q_6),\qquad
+\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_6}\bigr)=2\operatorname{Re}Q_{6t}=2\operatorname{Re}\operatorname{Sc}(\tilde Q_6),
 $$
 and the determinant vanishes in both readings.
 
-*Proof.* Only the entry $(0,0)=A_t$ of the complex matrix is diagonal, so the complex trace is $A_t$; the real trace of the realification of a $\mathbb{C}$-linear map is twice the real part of its complex trace, and the determinant vanishes because the rank is one on a complex space of dimension four (*The Multiplication Operators of the Symmetric Quaternionic Algebra*, §*The Operators, Their Matrices and Their Ranks*).
+*Proof.* Only the entry $(0,0)=Q_{6t}$ of the complex matrix is diagonal, so the complex trace is $Q_{6t}$; the real trace of the realification of a $\mathbb{C}$-linear map is twice the real part of its complex trace, and the determinant vanishes because the rank is one on a complex space of dimension four (*The Multiplication Operators of the Symmetric Quaternionic Algebra*, §*The Operators, Their Matrices and Their Ranks*).
 
 The factor is two, not the four of the regular representation of the plain algebra and not the eight of its realification. The reason is that the multiplication of this block is the rank-one layer: the trace sees the scalar part of the multiplier and nothing else, the vector part being invisible to it, so the trace form of the block is not of the kind *The Realification and the Effect of the Change of Scalars* records for the plain product, where the trace of the composite is the nondegenerate form $8\operatorname{Re}B$. It is the trace of a composite,
 $$
-\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde A}L_{\tilde Q_3}\bigr)=2\operatorname{Re}(A_tQ_{3t}),
+\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=2\operatorname{Re}(Q_{6t}Q_{3t}),
 $$
 a real symmetric bilinear form of rank two whose radical is the vector subspace; it is degenerate, the trace form of the rank-one operator layer and not of a unital algebra.
 
 **Proposition (composition and the adjoint).** The multiplications compose by
 $$
-L_{\tilde A}\circ L_{\tilde Q_3}=A_tL_{\tilde Q_3},\qquad\text{so}\qquad L_{\tilde A}^{2}=A_tL_{\tilde A},
+L_{\tilde Q_6}\circ L_{\tilde Q_3}=Q_{6t}L_{\tilde Q_3},\qquad\text{so}\qquad L_{\tilde Q_6}^{2}=Q_{6t}L_{\tilde Q_6},
 $$
-the map $\tilde A\mapsto L_{\tilde A}$ is injective and is not multiplicative, and the adjoint with respect to the realified form is the realification of the complex adjoint,
+the map $\tilde Q_6\mapsto L_{\tilde Q_6}$ is injective and is not multiplicative, and the adjoint with respect to the realified form is the realification of the complex adjoint,
 $$
-\bigl(L_{\tilde A}\bigr)^{\dagger}\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}A_\mu Q_{2t}\,e_\mu ,
+\bigl(L_{\tilde Q_6}\bigr)^{\dagger}\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}Q_{6\mu} Q_{2t}\,e_\mu ,
 $$
 which is self-adjoint exactly for a central multiplier. Every statement is the one of *The Multiplication Operators of the Symmetric Quaternionic Algebra*, §*Composition and the Algebra of Operators* and §*The Adjoint with Respect to the Form*, read in the real basis.
 
@@ -161,7 +161,7 @@ is kept inside itself, because $e_t$ pairs to zero with the two other generators
 
 **The coincidence on the real part.** On the real subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ the symmetric quaternionic product and the symmetric plain sesquilinear product agree, $\mathrm{SQA}=\mathrm{SPS}$, because on real elements the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ equals the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$; off that subspace they differ. The twelve operations of the complex space therefore collapse to ten on the real part, and the block is not distinguished there from the row $\mathrm{SPS}$ (*Introduction to the Symmetric Quaternionic Algebra*, §*The Placement Among the Twelve*; *Introduction to the Symmetric Plain Sesqualgebra*).
 
-**The trace factor.** The complex trace of the multiplication is the scalar part $A_t$ and the real trace is $2\operatorname{Re}A_t$; the factor two is the doubling of the realification, and the absence of the factors four and eight that the regular representation of the plain algebra carries is the rank-one nature of the block, a feature that the real reading shows and the complex reading hides.
+**The trace factor.** The complex trace of the multiplication is the scalar part $Q_{6t}$ and the real trace is $2\operatorname{Re}Q_{6t}$; the factor two is the doubling of the realification, and the absence of the factors four and eight that the regular representation of the plain algebra carries is the rank-one nature of the block, a feature that the real reading shows and the complex reading hides.
 
 **The conjugate-linear automorphisms.** Over $\mathbb{C}$ the automorphisms of the block are the $\mathbb{C}$-linear ones, and the natural conjugation is among them, because the block is commutative with central values. The star and the Hermitian conjugation preserve the product as well, and they are conjugate-linear; since the block is commutative, they are automorphisms of the $\mathbb{R}$-algebra and not of the $\mathbb{C}$-algebra, so the real automorphism group carries the extra conjugate-linear coset of the complex one, which the complex reading does not see. The block's article calls them *conjugations* of the block for this reason (*Norm and Invertibility in the Symmetric Quaternionic Algebra*).
 
@@ -189,21 +189,21 @@ and the complex structure preserves it, $\Phi_{\mathbb{R}}(J\tilde Q_1,J\tilde Q
 
 The compatibility of $K$ with the left multiplications realifies with the form. Over $\mathbb{C}$ it is
 $$
-K\bigl(L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_2\bigr)=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_2\bigr)},
+K\bigl(L^{\star}_{\tilde Q_6}\tilde Q_1,\tilde Q_2\bigr)=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde Q_6^{\natural}}\tilde Q_2\bigr)},
 $$
 a relation with a conjugation on the right. Taking real parts the conjugation disappears and the identity reads
 $$
-\Phi_{\mathbb{R}}\bigl(L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_2\bigr)=\Phi_{\mathbb{R}}\bigl(\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_2\bigr),
+\Phi_{\mathbb{R}}\bigl(L^{\star}_{\tilde Q_6}\tilde Q_1,\tilde Q_2\bigr)=\Phi_{\mathbb{R}}\bigl(\tilde Q_1,L^{\star}_{\tilde Q_6^{\natural}}\tilde Q_2\bigr),
 $$
-so $L^{\star}_{\tilde A^{\natural}}$ is the **$\Phi_{\mathbb{R}}$-adjoint** of $L^{\star}_{\tilde A}$ in the ordinary sense of a real symmetric form: the adjoint relation survives the passage and loses its conjugation, and the block's operators are adjoint with respect to the indefinite form of signature $(2,6)$. The relation over $\mathbb{C}$ is the compatibility theorem of *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*, quoted here and specialising the theorem of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
+so $L^{\star}_{\tilde Q_6^{\natural}}$ is the **$\Phi_{\mathbb{R}}$-adjoint** of $L^{\star}_{\tilde Q_6}$ in the ordinary sense of a real symmetric form: the adjoint relation survives the passage and loses its conjugation, and the block's operators are adjoint with respect to the indefinite form of signature $(2,6)$. The relation over $\mathbb{C}$ is the compatibility theorem of *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*, quoted here and specialising the theorem of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
 
 ### The Real Operators
 
 The left and the right multiplications,
 $$
-L^{\star}_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1,\qquad R^{\star}_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A,
+L^{\star}_{\tilde Q_6}(\tilde Q_1)=\tilde Q_6\star\tilde Q_1,\qquad R^{\star}_{\tilde Q_6}(\tilde Q_1)=\tilde Q_1\star\tilde Q_6,
 $$
-are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*, related by $L^{\star}_{\tilde A}\tilde Q_1=\overline{R^{\star}_{\tilde A}\tilde Q_1}$. Their ranks are $0$ at $\tilde A=0$, $4$ for $\tilde A$ in the vector subspace, $8$ when $A_t\neq0$ and $\langle\tilde A\rangle_{\natural}\neq0$, and $6$ when $A_t\neq0$ and $\langle\tilde A\rangle_{\natural}=0$; their traces are $0$ for the left family and $-4\operatorname{Re}(A_t)$ for the right; and the image of a left multiplication by a vector element is a four-dimensional real subspace that is not one of the remarkable subspaces. These are the numbers of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*, read in the real basis.
+are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §*The Realification of a Linear Map* of *The Realification and the Effect of the Change of Scalars*, related by $L^{\star}_{\tilde Q_6}\tilde Q_1=\overline{R^{\star}_{\tilde Q_6}\tilde Q_1}$. Their ranks are $0$ at $\tilde Q_6=0$, $4$ for $\tilde Q_6$ in the vector subspace, $8$ when $Q_{6t}\neq0$ and $\langle\tilde Q_6\rangle_{\natural}\neq0$, and $6$ when $Q_{6t}\neq0$ and $\langle\tilde Q_6\rangle_{\natural}=0$; their traces are $0$ for the left family and $-4\operatorname{Re}(Q_{6t})$ for the right; and the image of a left multiplication by a vector element is a four-dimensional real subspace that is not one of the remarkable subspaces. These are the numbers of *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*, read in the real basis.
 
 ### What Is Specific to the Real Interpretation
 
@@ -235,11 +235,11 @@ so the group of $\mathbb{R}$-algebra automorphisms of the block contains the Kle
 
 The form of an operation is its **scalar part** (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*), and the antisymmetrisation kills the scalar part of the general product of its family, so this product carries the **zero form** — a vanishing scalar part is counted as no form rather than as a fifth — and there is nothing for the realification of a form to act on. The two invariant symmetric forms the block does carry, read in *Norm and Invertibility in the Antisymmetric Plain Algebra*, do realify, and their realifications are the content of this section:
 $$
-\langle\tilde A,\tilde Q_3\rangle_{\natural*}=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde Q_3}\bigr)=-2\,\vec A\cdot\vec Q_3,
+\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*}=\operatorname{Tr}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=-2\,\vec Q_6\cdot\vec Q_3,
 \qquad
 \varphi(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t} .
 $$
-$\langle\cdot,\cdot\rangle_{\natural*}$ is the operator trace form, of complex rank three, with radical the centre; it is at once the Killing form of the block in the normalisation of *The Killing Form of the Antisymmetric Plain Algebra*, where the adjoint is read with the block's own halved bracket, $\kappa(\tilde A,\tilde Q_3)=\operatorname{Tr}(\operatorname{ad}_{\tilde A}\operatorname{ad}_{\tilde Q_3})$. $\varphi$ is the scalar-part form, of complex rank one, with radical the vector subspace; the two are independent and span the invariant symmetric forms of the block; and their combination
+$\langle\cdot,\cdot\rangle_{\natural*}$ is the operator trace form, of complex rank three, with radical the centre; it is at once the Killing form of the block in the normalisation of *The Killing Form of the Antisymmetric Plain Algebra*, where the adjoint is read with the block's own halved bracket, $\kappa(\tilde Q_6,\tilde Q_3)=\operatorname{Tr}(\operatorname{ad}_{\tilde Q_6}\operatorname{ad}_{\tilde Q_3})$. $\varphi$ is the scalar-part form, of complex rank one, with radical the vector subspace; the two are independent and span the invariant symmetric forms of the block; and their combination
 $$
 \varphi+\tfrac12K=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=B
 $$
@@ -288,13 +288,13 @@ $$
 
 *Proof.* Alternation gives $\tilde Q_2\wedge\tilde Q_1=-(\tilde Q_1\wedge\tilde Q_2)$. The operator $L_{\tilde Q_1}$ kills the scalar coordinate and acts on the derived algebra by the skew matrix $\vec Q_2\mapsto\vec Q_1\times\vec Q_2$, whose complex trace vanishes; the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace, so it vanishes too. Computed on the basis. **The trace row of the table of the four effects is not this row.** That row, $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde Q})=4\,\mathrm{Sc}(\tilde Q)$ and $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q})=8\operatorname{Re}\mathrm{Sc}(\tilde Q)$, is the row of the products of the table whose element $e_t$ is a **left unit** — the general plain, the symmetric plain and the general quaternionic product; on the other nine, this one included, it fails, and on this one both traces vanish.
 
-**Theorem (the operator trace form in the two readings).** For all $\tilde A,\tilde Q_3$,
+**Theorem (the operator trace form in the two readings).** For all $\tilde Q_6,\tilde Q_3$,
 $$
-\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde A}L_{\tilde Q_3}\bigr)=2\operatorname{Re}\langle\tilde A,\tilde Q_3\rangle_{\natural*},
+\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=2\operatorname{Re}\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*},
 $$
 twice the realified invariant form.
 
-*Proof.* The composition is $\mathbb{C}$-linear, and the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace; that complex trace is $\langle\tilde A,\tilde Q_3\rangle_{\natural*}$ by the definition of the operator trace form. Computed on the basis, on all $64$ pairs. The factor $2$ is the ratio of the two traces, $\operatorname{Tr}_{\mathbb{R}}=2\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}$, the factor of the trace row of the table of the four effects.
+*Proof.* The composition is $\mathbb{C}$-linear, and the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace; that complex trace is $\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*}$ by the definition of the operator trace form. Computed on the basis, on all $64$ pairs. The factor $2$ is the ratio of the two traces, $\operatorname{Tr}_{\mathbb{R}}=2\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}$, the factor of the trace row of the table of the four effects.
 
 **Proposition (the adjoint for the three realified forms).** For each of the three forms of the previous section,
 $$
@@ -360,7 +360,7 @@ $$
 $$
 the unique $\mathbb{C}$-bilinear form invariant under the block, of rank one over $\mathbb{C}$ and of radical the vector subspace; and the operator trace form
 $$
-\langle\tilde A,\tilde Q_3\rangle_{\natural*}=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde Q_3}\bigr)=3A_tQ_{3t}-2\sum_{\mu\in\{x,y,z\}}A_\mu Q_{3\mu} ,
+\langle\tilde Q_6,\tilde Q_3\rangle_{\natural*}=\operatorname{Tr}\bigl(L_{\tilde Q_6}L_{\tilde Q_3}\bigr)=3Q_{6t}Q_{3t}-2\sum_{\mu\in\{x,y,z\}}Q_{6\mu} Q_{3\mu} ,
 $$
 non-degenerate over $\mathbb{C}$ and **not** invariant. Both are symmetric $\mathbb{C}$-bilinear, and a symmetric bilinear form over $\mathbb{C}$ is classified by its rank alone, so each realifies by the first of the two rules of §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*: the real part and the imaginary part of the form are two real symmetric bilinear forms, the realified Gram matrix consists of two opposite blocks $\operatorname{diag}(D,-D)$, with $D$ the Gram matrix of the complex form, and a complex form of rank $r$ realifies to the **split** signature $(r,r)$.
 
@@ -513,7 +513,7 @@ and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^
 $$
 \ker L_{\tilde Q_1}=\mathbb{C}\overline{\vec Q_1}\oplus\mathbb{C}e_t,\qquad\text{of real dimension }4,
 $$
-and its image is the complex plane of the values orthogonal to the vector part in the complex bilinear dot, $(\vec W,\vec Q_1)=0$, the equation $\tilde Q_1\diamond\tilde Q_5=\tilde W$ being solvable exactly there; for a central element both multiplications vanish.
+and its image is the complex plane of the values orthogonal to the vector part in the complex bilinear dot, $(\vec W,\tilde Q_1)=0$, the equation $\tilde Q_1\diamond\tilde Q_5=\tilde W$ being solvable exactly there; for a central element both multiplications vanish.
 
 *Proof.* The class and the two shapes are the theorem of §*The Second Slot and the Centre*; the vanishing of the trace of a conjugate-linear map is the opposite diagonal blocks. The rank, the kernel and the image are computed in *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra* and in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, on the $64$ basis pairs; the vanishing of the trace of $R$ is the trace of a $\mathbb{C}$-linear map, twice the real part of its complex trace, and the complex trace is zero because $\vec e_\mu\mapsto \vec e_\mu\times\overline{\vec Q_1}$ has the two skew blocks of the cross product alone.
 
@@ -575,9 +575,9 @@ Each of the eight derived structures is the same product on the same elements re
 
 Read over $\mathbb{R}$ the block is the same product on $\mathbb{R}^8$, and every ring-theoretic property is unchanged: conjugate-commutativity, the failure of associativity at the triple $(e_t,e_t,\vec e_x)$, the failure of the Jordan identity at $x=y=\vec e_x$, the absence of a unit, and the fact that the values are not confined to any one of the remarkable subspaces, their real span being the whole $\mathbb{R}^8$. The second slot is $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, so the left multiplications anticommute with the complex structure and the right multiplications commute with it,
 $$
-L^{\star}_{\tilde A}J=-JL^{\star}_{\tilde A},\qquad R^{\star}_{\tilde A}J=+JR^{\star}_{\tilde A},
+L^{\star}_{\tilde Q_6}J=-JL^{\star}_{\tilde Q_6},\qquad R^{\star}_{\tilde Q_6}J=+JR^{\star}_{\tilde Q_6},
 $$
-with the block shapes $\begin{pmatrix}A&B\\ B&-A\end{pmatrix}$ for the first and $\begin{pmatrix}A&-B\\ B&A\end{pmatrix}$ for the second; the composite $L^{\star}_{\tilde A}L^{\star}_{\tilde Q_3}$ is $\mathbb{C}_{\mathbb{B}}$-linear while a single $L^{\star}_{\tilde A}$ is not.
+with the block shapes $\begin{pmatrix}A&B\\ B&-A\end{pmatrix}$ for the first and $\begin{pmatrix}A&-B\\ B&A\end{pmatrix}$ for the second; the composite $L^{\star}_{\tilde Q_6}L^{\star}_{\tilde Q_3}$ is $\mathbb{C}_{\mathbb{B}}$-linear while a single $L^{\star}_{\tilde Q_6}$ is not.
 
 ### Instance: the Antisymmetric Quaternionic Sesqualgebra
 

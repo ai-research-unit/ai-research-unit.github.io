@@ -2,59 +2,59 @@
 
 ## Introduction
 
-The operation of the block, $\tilde Q_1\diamond\tilde Q_2=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$, is conjugate-linear in its second slot, so its **left multiplication** $\tilde Q_1\mapsto\tilde A\diamond\tilde Q_1$ is a conjugate-linear operator and its **right multiplication** $\tilde Q_1\mapsto\tilde Q_1\diamond\tilde A$ is $\mathbb{C}$-linear; the pair $(L^{\diamond}_{\tilde A},R^{\diamond}_{\tilde A})$ is the operator data of the block, and this article computes it. The conjugate linearity is not a defect to be removed, it is the parity that the operation carries, and it forces a **companion**: to every conjugate-linear operator the theory attaches the $\mathbb{C}$-linear operator obtained by conjugating the coefficients of the value, and the companion of the left multiplication of the block is the negative of the right multiplication, $T_{\tilde A}=\overline{L^{\diamond}_{\tilde A}}=-R^{\diamond}_{\tilde A}$, by the conjugate-alternation. The companion is the honest linear object, and the characteristic polynomial that is computed is that of the real matrix of the left multiplication.
+The operation of the block, $\tilde Q_1\diamond\tilde Q_2=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$, is conjugate-linear in its second slot, so its **left multiplication** $\tilde Q_1\mapsto\tilde Q_5\diamond\tilde Q_1$ is a conjugate-linear operator and its **right multiplication** $\tilde Q_1\mapsto\tilde Q_1\diamond\tilde Q_5$ is $\mathbb{C}$-linear; the pair $(L^{\diamond}_{\tilde Q_5},R^{\diamond}_{\tilde Q_5})$ is the operator data of the block, and this article computes it. The conjugate linearity is not a defect to be removed, it is the parity that the operation carries, and it forces a **companion**: to every conjugate-linear operator the theory attaches the $\mathbb{C}$-linear operator obtained by conjugating the coefficients of the value, and the companion of the left multiplication of the block is the negative of the right multiplication, $T_{\tilde Q_5}=\overline{L^{\diamond}_{\tilde Q_5}}=-R^{\diamond}_{\tilde Q_5}$, by the conjugate-alternation. The companion is the honest linear object, and the characteristic polynomial that is computed is that of the real matrix of the left multiplication.
 
-Five facts organise the reading. The left operator is the **vector part of a left multiplication of the row**, $L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_t}$, so it sits inside the sesquilinear sandwich of *The Sesquilinear Sandwich on the Biquaternioid*. Its **trace vanishes** and its **rank is six** for a unit and **four** for a zero divisor, the kernel being the set of the elements whose product with $\tilde A$ on the left is central; for $\tilde A=e_t$ that kernel is the centre, and for $\tilde A=\vec e_\mu$ it is the complex line of $\vec e_\mu$. Its **adjoint** with respect to the form $\langle\cdot,\cdot\rangle_{*}$ is the right multiplication of the star of the vector part, $L^{\diamond\dagger}_{\tilde A}(\tilde Q_2)=(\mathrm{Vect}\tilde Q_2)^{*}\tilde A$, the adjoint of a conjugate-linear operator being conjugate-linear with the twisted rule of *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*. And the **derivations** of the block are exactly the three products $D_{\vec a}(\tilde Q_1)=[0,\vec a\times\vec Q_1]$ with $\vec a$ a **real** vector, a three-dimensional real Lie algebra isomorphic to $\mathbb{R}^{3}$ with the cross product, which is also the Lie algebra of the structure group; the group contains the coefficientwise conjugation and the transformations that act on the complex vector subspace by a real matrix $R$ with $R^{\mathsf T}R=I$ and $\det R=1$, and it does not contain the natural conjugation. And the two one-sided operators of the block **do not compose**: the composite $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde Q_3}$ is not an operator of the block, and $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde Q_3}\neq L^{\diamond}_{\tilde A\diamond\tilde Q_3}$ because the projection $\mathrm{Vect}$ intervenes twice, so the block has no monoid of one-sided operators and no regular representation; the composition laws, and the contrast with the row that does compose, are the last reading of the operator theory.
+Five facts organise the reading. The left operator is the **vector part of a left multiplication of the row**, $L^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ S_{\tilde Q_5,e_t}$, so it sits inside the sesquilinear sandwich of *The Sesquilinear Sandwich on the Biquaternioid*. Its **trace vanishes** and its **rank is six** for a unit and **four** for a zero divisor, the kernel being the set of the elements whose product with $\tilde Q_5$ on the left is central; for $\tilde Q_5=e_t$ that kernel is the centre, and for $\tilde Q_5=\vec e_\mu$ it is the complex line of $\vec e_\mu$. Its **adjoint** with respect to the form $\langle\cdot,\cdot\rangle_{*}$ is the right multiplication of the star of the vector part, $L^{\diamond\dagger}_{\tilde Q_5}(\tilde Q_2)=(\mathrm{Vect}\tilde Q_2)^{*}\tilde Q_5$, the adjoint of a conjugate-linear operator being conjugate-linear with the twisted rule of *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*. And the **derivations** of the block are exactly the three products $D_{\vec a}(\tilde Q_1)=[0,\vec a\times\vec Q_1]$ with $\vec a$ a **real** vector, a three-dimensional real Lie algebra isomorphic to $\mathbb{R}^{3}$ with the cross product, which is also the Lie algebra of the structure group; the group contains the coefficientwise conjugation and the transformations that act on the complex vector subspace by a real matrix $R$ with $R^{\mathsf T}R=I$ and $\det R=1$, and it does not contain the natural conjugation. And the two one-sided operators of the block **do not compose**: the composite $L^{\diamond}_{\tilde Q_5}L^{\diamond}_{\tilde Q_3}$ is not an operator of the block, and $L^{\diamond}_{\tilde Q_5}L^{\diamond}_{\tilde Q_3}\neq L^{\diamond}_{\tilde Q_5\diamond\tilde Q_3}$ because the projection $\mathrm{Vect}$ intervenes twice, so the block has no monoid of one-sided operators and no regular representation; the composition laws, and the contrast with the row that does compose, are the last reading of the operator theory.
 
 The setting is that of *Introduction to the Antisymmetric Plain Sesqualgebra*; the general theory of the one-sided multiplications and of the obstruction to a single linear representation is *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*; the sandwich is *The Sesquilinear Sandwich on the Biquaternioid* and its adjoint *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*; the form $\langle\cdot,\cdot\rangle_{*}$ is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the derivations of a sesqualgebra are *Derivations of a Sesqualgebra*; the multiplicative norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ and the zero divisors are *Norm and Invertibility in the General Quaternionic Algebra*; the pairing and the sandwich relation of the block are *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, above in this block; and the matrix models are *Introduction to the Symmetric Plain Sesqualgebra*, below. The rank, the kernel, the trace and the determinant are the algebraic invariants of a linear map.
 
 ## The Left and Right Operators
 
-**Definition.** For a fixed biquaternion $\tilde A$ the **left** and the **right multiplications** of the block are the operators
+**Definition.** For a fixed biquaternion $\tilde Q_5$ the **left** and the **right multiplications** of the block are the operators
 
 $$
-L^{\diamond}_{\tilde A}(\tilde Q_1)=\tilde A\diamond\tilde Q_1=\mathrm{Vect}\bigl(\tilde A\tilde Q_1^{*}\bigr),
+L^{\diamond}_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\diamond\tilde Q_1=\mathrm{Vect}\bigl(\tilde Q_5\tilde Q_1^{*}\bigr),
 \qquad
-R^{\diamond}_{\tilde A}(\tilde Q_1)=\tilde Q_1\diamond\tilde A=\mathrm{Vect}\bigl(\tilde Q_1\tilde A^{*}\bigr),
+R^{\diamond}_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\diamond\tilde Q_5=\mathrm{Vect}\bigl(\tilde Q_1\tilde Q_5^{*}\bigr),
 $$
 
 the left conjugate-linear and the right $\mathbb{C}$-linear, the operation being $\mathbb{C}$-linear in its first slot and conjugate-linear in the second.
 
-**Proposition (the vector part of the row multiplication).** For every $\tilde A$,
+**Proposition (the vector part of the row multiplication).** For every $\tilde Q_5$,
 
 $$
-L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ L_{\tilde A},
+L^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ L_{\tilde Q_5},
 \qquad
-R^{\diamond}_{\tilde A}=\mathrm{Vect}\circ R_{\tilde A},
+R^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ R_{\tilde Q_5},
 $$
 
-where $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}$ and $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*}$ are the two one-sided multiplications of the general plain sesqualgebra of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*.
+where $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}$ and $R_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\tilde Q_5^{*}$ are the two one-sided multiplications of the general plain sesqualgebra of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*.
 
 *Proof.* The identity $\mathrm{Vect}(\tilde Q_2)=\tilde Q_2-\mathrm{Sc}(\tilde Q_2)e_t$ and the definitions.
 
 **Theorem (the companion and the conjugate-alternation).** The operators satisfy
 
 $$
-R^{\diamond}_{\tilde A}=-\overline{L^{\diamond}_{\tilde A}},
+R^{\diamond}_{\tilde Q_5}=-\overline{L^{\diamond}_{\tilde Q_5}},
 \qquad
 \text{equivalently}\qquad
-T_{\tilde A}:=\overline{L^{\diamond}_{\tilde A}}=-R^{\diamond}_{\tilde A},
+T_{\tilde Q_5}:=\overline{L^{\diamond}_{\tilde Q_5}}=-R^{\diamond}_{\tilde Q_5},
 $$
 
-where the bar is the coefficientwise conjugation of the value. The **companion** $T_{\tilde A}$ is $\mathbb{C}$-**linear**, and the left operator is its conjugate, $L^{\diamond}_{\tilde A}=\overline{T_{\tilde A}}$.
+where the bar is the coefficientwise conjugation of the value. The **companion** $T_{\tilde Q_5}$ is $\mathbb{C}$-**linear**, and the left operator is its conjugate, $L^{\diamond}_{\tilde Q_5}=\overline{T_{\tilde Q_5}}$.
 
-*Proof.* The conjugate-alternation gives $\tilde Q_1\diamond\tilde A=-\overline{\tilde A\diamond\tilde Q_1}=-\overline{L^{\diamond}_{\tilde A}(\tilde Q_1)}$, which is the first display; the coefficientwise conjugation of a conjugate-linear operator is $\mathbb{C}$-linear, since the conjugation is conjugate-linear and the operator is conjugate-linear.
+*Proof.* The conjugate-alternation gives $\tilde Q_1\diamond\tilde Q_5=-\overline{\tilde Q_5\diamond\tilde Q_1}=-\overline{L^{\diamond}_{\tilde Q_5}(\tilde Q_1)}$, which is the first display; the coefficientwise conjugation of a conjugate-linear operator is $\mathbb{C}$-linear, since the conjugation is conjugate-linear and the operator is conjugate-linear.
 
-**Remark (a single linear representation is enough).** Because the right operator is the negative of the companion of the left, the whole operator theory of the block is the theory of the single $\mathbb{C}$-**linear** companion $T_{\tilde A}=\overline{L^{\diamond}_{\tilde A}}$, with the left and the right recovered from it. This is the good case of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Obstruction to a Single Linear Representation*: for the associative product of the row the two one-sided multiplications have opposite parities and no single linear representation carries both, whereas here the parity of the block is carried by the operation itself, and the companion is linear for free.
+**Remark (a single linear representation is enough).** Because the right operator is the negative of the companion of the left, the whole operator theory of the block is the theory of the single $\mathbb{C}$-**linear** companion $T_{\tilde Q_5}=\overline{L^{\diamond}_{\tilde Q_5}}$, with the left and the right recovered from it. This is the good case of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Obstruction to a Single Linear Representation*: for the associative product of the row the two one-sided multiplications have opposite parities and no single linear representation carries both, whereas here the parity of the block is carried by the operation itself, and the companion is linear for free.
 
 ## The Matrix in the Real Basis
 
-**The basis.** The operator is read in the **real basis** $(\mathcal B)=(e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z)$ of $\mathbb{B}$ as an $\mathbb{R}$-vector space, on which an $\mathbb{R}$-linear or conjugate-linear operator has a real $8\times8$ matrix. Write $\tilde A=A_te_t+\vec A$ with $A_t=a+ib$ and $\vec A=\vec q+i\vec v$, and $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $Q_{1t}=x+iy$ and $\vec Q_1=\vec U+i\vec V$, all of $a,b,x,y$ real and $\vec q,\vec v,\vec U,\vec V$ real vectors.
+**The basis.** The operator is read in the **real basis** $(\mathcal B)=(e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z)$ of $\mathbb{B}$ as an $\mathbb{R}$-vector space, on which an $\mathbb{R}$-linear or conjugate-linear operator has a real $8\times8$ matrix. Write $\tilde Q_5=A_te_t+\vec A$ with $A_t=a+ib$ and $\vec A=\vec q+i\vec v$, and $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $Q_{1t}=x+iy$ and $\vec Q_1=\vec U+i\vec V$, all of $a,b,x,y$ real and $\vec q,\vec v,\vec U,\vec V$ real vectors.
 
 **Theorem (the coordinate rule).** The left operator reads
 
 $$
-L^{\diamond}_{\tilde A}(\tilde Q_1)=
+L^{\diamond}_{\tilde Q_5}(\tilde Q_1)=
 \bigl(x\,\vec q+y\,\vec v-a\,\vec U-b\,\vec V-\vec q\times\vec U-\vec v\times\vec V\bigr)
 +i\bigl(x\,\vec v-y\,\vec q-b\,\vec U+a\,\vec V+\vec q\times\vec V-\vec v\times\vec U\bigr),
 $$
@@ -62,17 +62,17 @@ $$
 a pure vector, so the two scalar coordinates $(e_t,ie_t)$ of the value vanish identically and the matrix has its two scalar rows zero. On the real basis elements,
 
 $$
-L^{\diamond}_{\tilde A}(e_t)=\vec A,\quad
-L^{\diamond}_{\tilde A}(ie_t)=-i\,\vec A,\quad
-L^{\diamond}_{\tilde A}(\vec e_\mu)=-a\,\vec e_\mu-\vec q\times \vec e_\mu+i\bigl(-b\,\vec e_\mu-\vec v\times \vec e_\mu\bigr),\quad
-L^{\diamond}_{\tilde A}(i\vec e_\mu)=L^{\diamond}_{\tilde A}(\vec e_\mu)\text{ conjugated},
+L^{\diamond}_{\tilde Q_5}(e_t)=\vec A,\quad
+L^{\diamond}_{\tilde Q_5}(ie_t)=-i\,\vec A,\quad
+L^{\diamond}_{\tilde Q_5}(\vec e_\mu)=-a\,\vec e_\mu-\vec q\times \vec e_\mu+i\bigl(-b\,\vec e_\mu-\vec v\times \vec e_\mu\bigr),\quad
+L^{\diamond}_{\tilde Q_5}(i\vec e_\mu)=L^{\diamond}_{\tilde Q_5}(\vec e_\mu)\text{ conjugated},
 $$
 
-whose last identity is the $\mathbb{C}$-semilinearity, $L^{\diamond}_{\tilde A}(i\tilde Q_1)=-i\,L^{\diamond}_{\tilde A}(\tilde Q_1)$.
+whose last identity is the $\mathbb{C}$-semilinearity, $L^{\diamond}_{\tilde Q_5}(i\tilde Q_1)=-i\,L^{\diamond}_{\tilde Q_5}(\tilde Q_1)$.
 
-*Proof.* The coordinate rule is the substitution $\tilde A\tilde Q_1^{*}=(A_t+\vec A)\bigl(\overline{Q_{1t}}-\overline{\vec Q_1}\bigr)$ with the scalar–vector multiplication of the row, collecting the real and the imaginary parts of the vector part; the value is a vector part by the definition of the block, so the scalar coordinate vanishes.
+*Proof.* The coordinate rule is the substitution $\tilde Q_5\tilde Q_1^{*}=(A_t+\vec A)\bigl(\overline{Q_{1t}}-\overline{\vec Q_1}\bigr)$ with the scalar–vector multiplication of the row, collecting the real and the imaginary parts of the vector part; the value is a vector part by the definition of the block, so the scalar coordinate vanishes.
 
-**Corollary (the matrix of the unit).** At $\tilde A=e_t$ the coordinate rule is $L^{\diamond}_{e_t}(\tilde Q_1)=-\overline{\vec Q_1}$, and the matrix is diagonal,
+**Corollary (the matrix of the unit).** At $\tilde Q_5=e_t$ the coordinate rule is $L^{\diamond}_{e_t}(\tilde Q_1)=-\overline{\vec Q_1}$, and the matrix is diagonal,
 
 $$
 M_{e_t}=\operatorname{diag}\bigl(0,-1,-1,-1,\,0,\,1,\,1,\,1\bigr),
@@ -80,35 +80,35 @@ $$
 
 with the two scalar entries zero (the scalar coordinates $e_t$ and $ie_t$ are not reached) and the last six the negative of the real part and the identity on the imaginary part of the vector coordinates. The matrix of $L^{\diamond}_{e_t}$ is therefore involutive up to sign, $M_{e_t}^{2}=\operatorname{diag}(0,1,1,1,0,1,1,1)$, the projection onto the vector coordinates.
 
-**Remark (the matrix of $ie_t$).** At $\tilde A=ie_t$ the coordinate rule gives $L^{\diamond}_{ie_t}(\tilde Q_1)=\mathrm{Vect}(i\tilde Q_1^{*})=i\,L^{\diamond}_{e_t}(\tilde Q_1)$, so $M_{ie_t}$ is $M_{e_t}$ composed with the complex structure of the vector coordinates; the two matrices have the same characteristic polynomial, as the next section computes.
+**Remark (the matrix of $ie_t$).** At $\tilde Q_5=ie_t$ the coordinate rule gives $L^{\diamond}_{ie_t}(\tilde Q_1)=\mathrm{Vect}(i\tilde Q_1^{*})=i\,L^{\diamond}_{e_t}(\tilde Q_1)$, so $M_{ie_t}$ is $M_{e_t}$ composed with the complex structure of the vector coordinates; the two matrices have the same characteristic polynomial, as the next section computes.
 
 ## The Kernel, the Rank and the Characteristic Polynomial
 
-**Theorem (the kernel).** For a nonzero $\tilde A$,
+**Theorem (the kernel).** For a nonzero $\tilde Q_5$,
 
 $$
-\ker L^{\diamond}_{\tilde A}=\bigl\{\tilde Q_1:\ \tilde A\tilde Q_1^{*}\in\mathbb{C}_{\mathbb{B}}\bigr\},
+\ker L^{\diamond}_{\tilde Q_5}=\bigl\{\tilde Q_1:\ \tilde Q_5\tilde Q_1^{*}\in\mathbb{C}_{\mathbb{B}}\bigr\},
 $$
 
-the set of the elements whose left product with $\tilde A$ is central. In particular $\ker L^{\diamond}_{e_t}=\mathbb{C}_{\mathbb{B}}$, the centre, of real dimension two; and $\ker L^{\diamond}_{\vec e_\mu}=\mathbb{C}\,\vec e_\mu$, the complex line of $\vec e_\mu$, of real dimension two.
+the set of the elements whose left product with $\tilde Q_5$ is central. In particular $\ker L^{\diamond}_{e_t}=\mathbb{C}_{\mathbb{B}}$, the centre, of real dimension two; and $\ker L^{\diamond}_{\vec e_\mu}=\mathbb{C}\,\vec e_\mu$, the complex line of $\vec e_\mu$, of real dimension two.
 
-*Proof.* $L^{\diamond}_{\tilde A}(\tilde Q_1)=0$ is the vanishing of the vector part of $\tilde A\tilde Q_1^{*}$, which is the centrality of $\tilde A\tilde Q_1^{*}$. At $\tilde A=e_t$ the centrality of $\tilde Q_1^{*}$ is the centrality of $\tilde Q_1$, which is the centre. At $\tilde A=\vec e_\mu$, the product $\vec e_\mu\tilde Q_1^{*}$ central forces $\tilde Q_1^{*}\in\mathbb{C}\vec e_\mu$, that is $\tilde Q_1\in\mathbb{C}\vec e_\mu$.
+*Proof.* $L^{\diamond}_{\tilde Q_5}(\tilde Q_1)=0$ is the vanishing of the vector part of $\tilde Q_5\tilde Q_1^{*}$, which is the centrality of $\tilde Q_5\tilde Q_1^{*}$. At $\tilde Q_5=e_t$ the centrality of $\tilde Q_1^{*}$ is the centrality of $\tilde Q_1$, which is the centre. At $\tilde Q_5=\vec e_\mu$, the product $\vec e_\mu\tilde Q_1^{*}$ central forces $\tilde Q_1^{*}\in\mathbb{C}\vec e_\mu$, that is $\tilde Q_1\in\mathbb{C}\vec e_\mu$.
 
-**Theorem (the rank and the trace).** The trace of $L^{\diamond}_{\tilde A}$ vanishes for every $\tilde A$, and
+**Theorem (the rank and the trace).** The trace of $L^{\diamond}_{\tilde Q_5}$ vanishes for every $\tilde Q_5$, and
 
 $$
-\mathrm{rank}\,L^{\diamond}_{\tilde A}=6\ \text{ if } \tilde A \text{ is a unit},\qquad
-\mathrm{rank}\,L^{\diamond}_{\tilde A}=4\ \text{ if } \tilde A \text{ is a zero divisor},
+\mathrm{rank}\,L^{\diamond}_{\tilde Q_5}=6\ \text{ if } \tilde Q_5 \text{ is a unit},\qquad
+\mathrm{rank}\,L^{\diamond}_{\tilde Q_5}=4\ \text{ if } \tilde Q_5 \text{ is a zero divisor},
 $$
 
 the rank being read over $\mathbb{R}$ on the eight-dimensional real space.
 
-*Proof.* The diagonal of $M_{\tilde A}$: from the coordinate rule the real part of the vector coordinate $U_\mu$ contributes $a$ with a sign and the imaginary part $V_\mu$ contributes $a$ with the opposite sign in the diagonal, so the trace is $-3a+3a=0$; equivalently the trace of $M_{e_t}$ and of $M_{\vec e_\mu}$ are zero by the corollaries above, and $M_{\tilde A}$ is a complex-linear combination of them. For the rank, $\tilde A$ is a unit exactly when its multiplicative norm $\langle\tilde A\rangle_{\natural}=\tilde A\tilde A^{\natural}$ is nonzero, by *Norm and Invertibility in the General Quaternionic Algebra*, and then $L_{\tilde A}$ is injective on the values and the kernel is the two-dimensional one above, giving rank six; for a zero divisor the kernel grows.
+*Proof.* The diagonal of $M_{\tilde Q_5}$: from the coordinate rule the real part of the vector coordinate $U_\mu$ contributes $a$ with a sign and the imaginary part $V_\mu$ contributes $a$ with the opposite sign in the diagonal, so the trace is $-3a+3a=0$; equivalently the trace of $M_{e_t}$ and of $M_{\vec e_\mu}$ are zero by the corollaries above, and $M_{\tilde Q_5}$ is a complex-linear combination of them. For the rank, $\tilde Q_5$ is a unit exactly when its multiplicative norm $\langle\tilde Q_5\rangle_{\natural}=\tilde Q_5\tilde Q_5^{\natural}$ is nonzero, by *Norm and Invertibility in the General Quaternionic Algebra*, and then $L_{\tilde Q_5}$ is injective on the values and the kernel is the two-dimensional one above, giving rank six; for a zero divisor the kernel grows.
 
-**Theorem (the characteristic polynomial).** The real matrix $M_{\tilde A}$ of $L^{\diamond}_{\tilde A}$ in the real basis has an even characteristic polynomial, of the form
+**Theorem (the characteristic polynomial).** The real matrix $M_{\tilde Q_5}$ of $L^{\diamond}_{\tilde Q_5}$ in the real basis has an even characteristic polynomial, of the form
 
 $$
-\chi_{M_{\tilde A}}(\lambda)=\lambda^{2}\,P(\lambda),
+\chi_{M_{\tilde Q_5}}(\lambda)=\lambda^{2}\,P(\lambda),
 $$
 
 with $P$ an even polynomial of degree six. On the basis,
@@ -119,9 +119,9 @@ $$
 \chi_{M_{\vec e_x+i\vec e_y}}=\lambda^{4}(\lambda^{2}+2)^{2}.
 $$
 
-*Proof.* The matrix $M_{\tilde A}$ is real and exchanges the two complex structures of the vector coordinates, so its characteristic polynomial is even in $\lambda^{2}$ on the six vector coordinates; the two scalar coordinates are annihilated, which gives the factor $\lambda^{2}$. The three displayed polynomials are the characteristic polynomials of the displayed matrices, computed on the real basis.
+*Proof.* The matrix $M_{\tilde Q_5}$ is real and exchanges the two complex structures of the vector coordinates, so its characteristic polynomial is even in $\lambda^{2}$ on the six vector coordinates; the two scalar coordinates are annihilated, which gives the factor $\lambda^{2}$. The three displayed polynomials are the characteristic polynomials of the displayed matrices, computed on the real basis.
 
-**Remark (the zero eigenvalue and the rank).** The factor $\lambda^{2}$ at the unit is the annihilation of the two scalar coordinates, and the kernel of $L^{\diamond}_{e_t}$ is the centre, of real dimension two. At a basis vector $\vec e_\mu$ the factor is $\lambda^{4}$ while the kernel is still the complex line $\mathbb{C}\vec e_\mu$, of real dimension two, so the operator is not semisimple there; at the zero divisor $\vec e_x+i\vec e_y$ the factor $\lambda^{4}$ is the four-dimensional kernel. It is the dimension of the kernel, and not the multiplicity of the zero eigenvalue, that fixes the rank, six on the units and four on the zero divisor; the eigenvalues of $M_{\tilde A}$ are the zero of multiplicity two at the unit and four off it, together with three pairs $\pm$: $\pm1$ thrice at $e_t$, $\pm i$ twice at the basis vectors, and $\pm i\sqrt2$ twice at the zero divisor.
+**Remark (the zero eigenvalue and the rank).** The factor $\lambda^{2}$ at the unit is the annihilation of the two scalar coordinates, and the kernel of $L^{\diamond}_{e_t}$ is the centre, of real dimension two. At a basis vector $\vec e_\mu$ the factor is $\lambda^{4}$ while the kernel is still the complex line $\mathbb{C}\vec e_\mu$, of real dimension two, so the operator is not semisimple there; at the zero divisor $\vec e_x+i\vec e_y$ the factor $\lambda^{4}$ is the four-dimensional kernel. It is the dimension of the kernel, and not the multiplicity of the zero eigenvalue, that fixes the rank, six on the units and four on the zero divisor; the eigenvalues of $M_{\tilde Q_5}$ are the zero of multiplicity two at the unit and four off it, together with three pairs $\pm$: $\pm1$ thrice at $e_t$, $\pm i$ twice at the basis vectors, and $\pm i\sqrt2$ twice at the zero divisor.
 
 ## The Adjoint and the Companion
 
@@ -133,104 +133,104 @@ $$
 
 the twisted rule of *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*, §*The Twisted Adjoint Rule*.
 
-**Theorem (the adjoint of the left operator).** For every $\tilde A$,
+**Theorem (the adjoint of the left operator).** For every $\tilde Q_5$,
 
 $$
-\bigl(L^{\diamond}_{\tilde A}\bigr)^{\dagger}(\tilde Q_2)=\bigl(\mathrm{Vect}(\tilde Q_2)\bigr)^{*}\,\tilde A ,
+\bigl(L^{\diamond}_{\tilde Q_5}\bigr)^{\dagger}(\tilde Q_2)=\bigl(\mathrm{Vect}(\tilde Q_2)\bigr)^{*}\,\tilde Q_5 ,
 $$
 
-the conjugate-linear **right multiplication by $\tilde A$ of the star of the vector part**. In coordinates, with $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ and $A_t=a+ib$, $\vec A=\vec q+i\vec v$,
+the conjugate-linear **right multiplication by $\tilde Q_5$ of the star of the vector part**. In coordinates, with $\tilde Q_2=Q_{2t}e_t+\vec Q_2$ and $A_t=a+ib$, $\vec A=\vec q+i\vec v$,
 
 $$
-\bigl(L^{\diamond}_{\tilde A}\bigr)^{\dagger}(\tilde Q_2)
+\bigl(L^{\diamond}_{\tilde Q_5}\bigr)^{\dagger}(\tilde Q_2)
 =\bigl(\vec A,\overline{\vec Q_2}\bigr)e_t
 -a\,\overline{\vec Q_2}+\vec q\times\overline{\vec Q_2}+i\bigl(-b\,\overline{\vec Q_2}+\vec v\times\overline{\vec Q_2}\bigr),
 $$
 
 whose scalar part is the form $\langle \vec A,\vec Q_2\rangle_{*}$ of the two vector parts and whose vector part is the displayed one.
 
-*Proof.* The projection $\mathrm{Vect}$ is self-adjoint for the form, $\varphi(\mathrm{Vect}\tilde Q_1,\tilde Q_2)=\varphi(\mathrm{Vect}\tilde Q_1,\mathrm{Vect}\tilde Q_2)=\varphi(\tilde Q_1,\mathrm{Vect}\tilde Q_2)$, because the form depends on a pure vector only through the vector part. The adjoint of the left multiplication $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}$ of the row is the right multiplication by $\tilde A$, $L_{\tilde A}^{\dagger}(\tilde Q_2)=\tilde Q_2^{*}\tilde A$, by *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*, §*The Special Cases*, since $L_{\tilde A}=S_{\tilde A,e_t}$ and $S_{\tilde Q_1,\tilde Q_2}^{\dagger}=S_{\tilde Q_2^{*},\tilde Q_1^{*}}=S_{e_t,\tilde A^{*}}$ reads $\tilde Q_2^{*}\tilde A$. Therefore $(L^{\diamond}_{\tilde A})^{\dagger}(\tilde Q_2)=(\mathrm{Vect}\tilde Q_2)^{*}\tilde A$, and the coordinate form is its scalar–vector expansion.
+*Proof.* The projection $\mathrm{Vect}$ is self-adjoint for the form, $\varphi(\mathrm{Vect}\tilde Q_1,\tilde Q_2)=\varphi(\mathrm{Vect}\tilde Q_1,\mathrm{Vect}\tilde Q_2)=\varphi(\tilde Q_1,\mathrm{Vect}\tilde Q_2)$, because the form depends on a pure vector only through the vector part. The adjoint of the left multiplication $L_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}$ of the row is the right multiplication by $\tilde Q_5$, $L_{\tilde Q_5}^{\dagger}(\tilde Q_2)=\tilde Q_2^{*}\tilde Q_5$, by *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*, §*The Special Cases*, since $L_{\tilde Q_5}=S_{\tilde Q_5,e_t}$ and $S_{\tilde Q_1,\tilde Q_2}^{\dagger}=S_{\tilde Q_2^{*},\tilde Q_1^{*}}=S_{e_t,\tilde Q_5^{*}}$ reads $\tilde Q_2^{*}\tilde Q_5$. Therefore $(L^{\diamond}_{\tilde Q_5})^{\dagger}(\tilde Q_2)=(\mathrm{Vect}\tilde Q_2)^{*}\tilde Q_5$, and the coordinate form is its scalar–vector expansion.
 
-**Corollary (the companion adjoint).** The companion $T_{\tilde A}=\overline{L^{\diamond}_{\tilde A}}$ is $\mathbb{C}$-linear, so its adjoint is read by the linear rule of the twisted adjoint rule, and it is the $\mathbb{C}$-linear operator
-
-$$
-T_{\tilde A}^{\dagger}(\tilde Q_2)=\bigl(\mathrm{Vect}(\overline{\tilde Q_2})\bigr)^{*}\,\tilde A ,
-$$
-
-with the involution property $T_{\tilde A}^{\dagger\dagger}=T_{\tilde A}$. The right operator is the negative of the companion, $R^{\diamond}_{\tilde A}=-T_{\tilde A}$, and the adjoint is $\mathbb{C}$-linear in the operator under the linear rule, so
+**Corollary (the companion adjoint).** The companion $T_{\tilde Q_5}=\overline{L^{\diamond}_{\tilde Q_5}}$ is $\mathbb{C}$-linear, so its adjoint is read by the linear rule of the twisted adjoint rule, and it is the $\mathbb{C}$-linear operator
 
 $$
-R^{\diamond\dagger}_{\tilde A}=-T_{\tilde A}^{\dagger}.
+T_{\tilde Q_5}^{\dagger}(\tilde Q_2)=\bigl(\mathrm{Vect}(\overline{\tilde Q_2})\bigr)^{*}\,\tilde Q_5 ,
 $$
 
-*Proof.* The companion is linear, so its adjoint is defined by the linear rule $\langle T_{\tilde A}\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,T_{\tilde A}^{\dagger}\tilde Q_2\rangle_{*}$. Using $\langle\overline{\tilde Q_4},\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_4,\overline{\tilde Q_2}\rangle_{*}}$ and the twisted adjoint of the left operator, $\langle L^{\diamond}_{\tilde A}\tilde Q_1,\overline{\tilde Q_2}\rangle_{*}=\overline{\langle\tilde Q_1,(\mathrm{Vect}\overline{\tilde Q_2})^{*}\tilde A\rangle_{*}}$, so the two conjugations cancel and $T_{\tilde A}^{\dagger}\tilde Q_2=(\mathrm{Vect}\overline{\tilde Q_2})^{*}\tilde A$; the involution is the general involution of the adjoint on the linear parity. The right operator satisfies $R^{\diamond}_{\tilde A}=-T_{\tilde A}$ by the companion theorem, and the linear rule is $\mathbb{C}$-linear in the operator, so the second display follows.
+with the involution property $T_{\tilde Q_5}^{\dagger\dagger}=T_{\tilde Q_5}$. The right operator is the negative of the companion, $R^{\diamond}_{\tilde Q_5}=-T_{\tilde Q_5}$, and the adjoint is $\mathbb{C}$-linear in the operator under the linear rule, so
 
-**Corollary (the self-adjoint operators).** The left operator is self-adjoint, $L^{\diamond\dagger}_{\tilde A}=L^{\diamond}_{\tilde A}$, exactly when $\tilde A$ is **central**, $\tilde A=\lambda e_t$ with $\lambda\in\mathbb{C}$; on the central elements the two sides coincide, and off them they differ.
+$$
+R^{\diamond\dagger}_{\tilde Q_5}=-T_{\tilde Q_5}^{\dagger}.
+$$
 
-*Proof.* By the theorem the adjoint is $\tilde Q_2\mapsto(\mathrm{Vect}\tilde Q_2)^{*}\tilde A$, and self-adjointness reads $(\mathrm{Vect}\tilde Q_2)^{*}\tilde A=\mathrm{Vect}(\tilde A\tilde Q_2^{*})$ for all $\tilde Q_2$. At $\tilde A=\lambda e_t$ both sides are $-\overline{\lambda}\,\overline{\vec Q_2}$ and the identity holds. For $\tilde A=\vec e_\mu$ the left side is $(\mathrm{Vect}\tilde Q_2)^{*}\vec e_\mu$ and the right side $\mathrm{Vect}(\vec e_\mu\tilde Q_2^{*})$; the witness $\tilde Q_2=e_t$ gives $0$ on the left and $\vec e_\mu$ on the right, so the identity fails, and the general element has a non-central part with the same witness.
+*Proof.* The companion is linear, so its adjoint is defined by the linear rule $\langle T_{\tilde Q_5}\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,T_{\tilde Q_5}^{\dagger}\tilde Q_2\rangle_{*}$. Using $\langle\overline{\tilde Q_4},\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_4,\overline{\tilde Q_2}\rangle_{*}}$ and the twisted adjoint of the left operator, $\langle L^{\diamond}_{\tilde Q_5}\tilde Q_1,\overline{\tilde Q_2}\rangle_{*}=\overline{\langle\tilde Q_1,(\mathrm{Vect}\overline{\tilde Q_2})^{*}\tilde Q_5\rangle_{*}}$, so the two conjugations cancel and $T_{\tilde Q_5}^{\dagger}\tilde Q_2=(\mathrm{Vect}\overline{\tilde Q_2})^{*}\tilde Q_5$; the involution is the general involution of the adjoint on the linear parity. The right operator satisfies $R^{\diamond}_{\tilde Q_5}=-T_{\tilde Q_5}$ by the companion theorem, and the linear rule is $\mathbb{C}$-linear in the operator, so the second display follows.
+
+**Corollary (the self-adjoint operators).** The left operator is self-adjoint, $L^{\diamond\dagger}_{\tilde Q_5}=L^{\diamond}_{\tilde Q_5}$, exactly when $\tilde Q_5$ is **central**, $\tilde Q_5=\lambda e_t$ with $\lambda\in\mathbb{C}$; on the central elements the two sides coincide, and off them they differ.
+
+*Proof.* By the theorem the adjoint is $\tilde Q_2\mapsto(\mathrm{Vect}\tilde Q_2)^{*}\tilde Q_5$, and self-adjointness reads $(\mathrm{Vect}\tilde Q_2)^{*}\tilde Q_5=\mathrm{Vect}(\tilde Q_5\tilde Q_2^{*})$ for all $\tilde Q_2$. At $\tilde Q_5=\lambda e_t$ both sides are $-\overline{\lambda}\,\overline{\vec Q_2}$ and the identity holds. For $\tilde Q_5=\vec e_\mu$ the left side is $(\mathrm{Vect}\tilde Q_2)^{*}\vec e_\mu$ and the right side $\mathrm{Vect}(\vec e_\mu\tilde Q_2^{*})$; the witness $\tilde Q_2=e_t$ gives $0$ on the left and $\vec e_\mu$ on the right, so the identity fails, and the general element has a non-central part with the same witness.
 
 ## The Sandwich
 
-**Theorem (the operator inside the sandwich).** For every $\tilde A$,
+**Theorem (the operator inside the sandwich).** For every $\tilde Q_5$,
 
 $$
-L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_t},
+L^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ S_{\tilde Q_5,e_t},
 $$
 
-with $S_{\tilde A,e_t}(\tilde Q_1)=\tilde A\tilde Q_1^{*}$ the sesquilinear sandwich of *The Sesquilinear Sandwich on the Biquaternioid* with second parameter the unit; and more generally, for the full sandwich $S_{\tilde A,\tilde Q_3}(\tilde Q_1)=\tilde A\tilde Q_1^{*}\tilde Q_3^{*}$,
+with $S_{\tilde Q_5,e_t}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}$ the sesquilinear sandwich of *The Sesquilinear Sandwich on the Biquaternioid* with second parameter the unit; and more generally, for the full sandwich $S_{\tilde Q_5,\tilde Q_3}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}\tilde Q_3^{*}$,
 
 $$
-S_{\tilde A,\tilde Q_3}=R_{\tilde Q_3}\circ S_{\tilde A,e_t},
+S_{\tilde Q_5,\tilde Q_3}=R_{\tilde Q_3}\circ S_{\tilde Q_5,e_t},
 \qquad
-\mathrm{Vect}\circ S_{\tilde A,\tilde Q_3}=R_{\tilde Q_3}\circ L^{\diamond}_{\tilde A}.
+\mathrm{Vect}\circ S_{\tilde Q_5,\tilde Q_3}=R_{\tilde Q_3}\circ L^{\diamond}_{\tilde Q_5}.
 $$
 
-*Proof.* The first display is the proposition of §*The Left and Right Operators* with the identification $S_{\tilde A,e_t}=L_{\tilde A}$; the second factors the second parameter and applies $\mathrm{Vect}$.
+*Proof.* The first display is the proposition of §*The Left and Right Operators* with the identification $S_{\tilde Q_5,e_t}=L_{\tilde Q_5}$; the second factors the second parameter and applies $\mathrm{Vect}$.
 
-**Corollary (the factorisation of the two-parameter sandwich).** For all $\tilde A,\tilde Q_3,\tilde Q_1$,
-
-$$
-S_{\tilde A,\tilde Q_3}(\tilde Q_1)=\tilde A\tilde Q_1^{*}\tilde Q_3^{*}=L^{\diamond}_{\tilde A}(\tilde Q_1)\,\tilde Q_3^{*}+\langle\tilde A,\tilde Q_1\rangle_{*}\,\tilde Q_3^{*},
-$$
-
-the sum of the vector part of $\tilde A\tilde Q_1^{*}$ multiplied by $\tilde Q_3^{*}$ and the scalar part $\langle\tilde A,\tilde Q_1\rangle_{*}$ multiplied by $\tilde Q_3^{*}$, and its vector part is
+**Corollary (the factorisation of the two-parameter sandwich).** For all $\tilde Q_5,\tilde Q_3,\tilde Q_1$,
 
 $$
-\mathrm{Vect}\bigl(\tilde A\tilde Q_1^{*}\tilde Q_3^{*}\bigr)=\mathrm{Vect}\bigl(L^{\diamond}_{\tilde A}(\tilde Q_1)\,\tilde Q_3^{*}\bigr)-\langle\tilde A,\tilde Q_1\rangle_{*}\,\overline{\vec Q_3}.
+S_{\tilde Q_5,\tilde Q_3}(\tilde Q_1)=\tilde Q_5\tilde Q_1^{*}\tilde Q_3^{*}=L^{\diamond}_{\tilde Q_5}(\tilde Q_1)\,\tilde Q_3^{*}+\langle\tilde Q_5,\tilde Q_1\rangle_{*}\,\tilde Q_3^{*},
 $$
 
-The sandwich therefore carries the block in the first factor of its vector part and the form $\langle\cdot,\cdot\rangle_{*}$ in the scalar correction, which is the operator form of the split of the row: the two halves $\mathrm{SPS}$ and $\diamond$ of the product appear as the scalar part and the vector part of $\tilde A\tilde Q_1^{*}$, as in *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Compatibility with the Sandwich*.
+the sum of the vector part of $\tilde Q_5\tilde Q_1^{*}$ multiplied by $\tilde Q_3^{*}$ and the scalar part $\langle\tilde Q_5,\tilde Q_1\rangle_{*}$ multiplied by $\tilde Q_3^{*}$, and its vector part is
 
-**Remark (the parities).** The sandwich $S_{\tilde Q_1,\tilde Q_2}$ is conjugate-linear, the left operator $L^{\diamond}_{\tilde A}$ is conjugate-linear, the right multiplication $R_{\tilde Q_3}$ of the row is $\mathbb{C}$-linear; the composites $S_{\tilde A,\tilde Q_3}=R_{\tilde Q_3}\circ S_{\tilde A,e_t}$ and $R_{\tilde Q_3}\circ L^{\diamond}_{\tilde A}$ are therefore conjugate-linear too, the product of one factor of each parity, and the companion of the composite is the composite of the companions. The block is one factor of the ternary product of the row seen through its vector part, and the adjoint of *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid* applies to the other factor.
+$$
+\mathrm{Vect}\bigl(\tilde Q_5\tilde Q_1^{*}\tilde Q_3^{*}\bigr)=\mathrm{Vect}\bigl(L^{\diamond}_{\tilde Q_5}(\tilde Q_1)\,\tilde Q_3^{*}\bigr)-\langle\tilde Q_5,\tilde Q_1\rangle_{*}\,\overline{\vec Q_3}.
+$$
+
+The sandwich therefore carries the block in the first factor of its vector part and the form $\langle\cdot,\cdot\rangle_{*}$ in the scalar correction, which is the operator form of the split of the row: the two halves $\mathrm{SPS}$ and $\diamond$ of the product appear as the scalar part and the vector part of $\tilde Q_5\tilde Q_1^{*}$, as in *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Compatibility with the Sandwich*.
+
+**Remark (the parities).** The sandwich $S_{\tilde Q_1,\tilde Q_2}$ is conjugate-linear, the left operator $L^{\diamond}_{\tilde Q_5}$ is conjugate-linear, the right multiplication $R_{\tilde Q_3}$ of the row is $\mathbb{C}$-linear; the composites $S_{\tilde Q_5,\tilde Q_3}=R_{\tilde Q_3}\circ S_{\tilde Q_5,e_t}$ and $R_{\tilde Q_3}\circ L^{\diamond}_{\tilde Q_5}$ are therefore conjugate-linear too, the product of one factor of each parity, and the companion of the composite is the composite of the companions. The block is one factor of the ternary product of the row seen through its vector part, and the adjoint of *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid* applies to the other factor.
 
 ## The Composition of Two Operators
 
-**Theorem (the composition laws).** For all biquaternions $\tilde A,\tilde Q_3,\tilde Q_1$,
+**Theorem (the composition laws).** For all biquaternions $\tilde Q_5,\tilde Q_3,\tilde Q_1$,
 
 $$
-L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)
-=\mathrm{Vect}\bigl(\tilde A\tilde Q_1\tilde Q_3^{*}\bigr)-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\mathrm{Vect}(\tilde A),
+L^{\diamond}_{\tilde Q_5}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)
+=\mathrm{Vect}\bigl(\tilde Q_5\tilde Q_1\tilde Q_3^{*}\bigr)-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\mathrm{Vect}(\tilde Q_5),
 $$
 
 $$
-R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde Q_3}(\tilde Q_1)
-=\mathrm{Vect}\bigl(\tilde Q_1(\tilde A\tilde Q_3)^{*}\bigr)-\langle\tilde Q_1,\tilde Q_3\rangle_{*}\,\mathrm{Vect}(\tilde A^{*}),
+R^{\diamond}_{\tilde Q_5}R^{\diamond}_{\tilde Q_3}(\tilde Q_1)
+=\mathrm{Vect}\bigl(\tilde Q_1(\tilde Q_5\tilde Q_3)^{*}\bigr)-\langle\tilde Q_1,\tilde Q_3\rangle_{*}\,\mathrm{Vect}(\tilde Q_5^{*}),
 $$
 
 and the two composites are $\mathbb{C}$-**linear**, the product of two conjugate-linear operators being linear.
 
-*Proof.* $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)=L^{\diamond}_{\tilde A}\bigl(\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*})\bigr)=\mathrm{Vect}\bigl(\tilde A\,(\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*}))^{*}\bigr)$; writing $\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*})=\tilde Q_3\tilde Q_1^{*}-\langle\tilde Q_3,\tilde Q_1\rangle_{*}e_t$, whose star is $\tilde Q_1\tilde Q_3^{*}-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}e_t$, gives $\tilde A(\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*}))^{*}=\tilde A\tilde Q_1\tilde Q_3^{*}-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\tilde A$, and taking the vector part gives the first display. For the second, $R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde Q_3}(\tilde Q_1)=\mathrm{Vect}\bigl(\mathrm{Vect}(\tilde Q_1\tilde Q_3^{*})\,\tilde A^{*}\bigr)$, and the same substitution gives $\mathrm{Vect}(\tilde Q_1\tilde Q_3^{*}\tilde A^{*})-\langle\tilde Q_1,\tilde Q_3\rangle_{*}\,\mathrm{Vect}(\tilde A^{*})$; since $\tilde Q_3^{*}\tilde A^{*}=(\tilde A\tilde Q_3)^{*}$, this is the second display. The linearity is the parity of the product of two conjugate-linear maps.
+*Proof.* $L^{\diamond}_{\tilde Q_5}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)=L^{\diamond}_{\tilde Q_5}\bigl(\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*})\bigr)=\mathrm{Vect}\bigl(\tilde Q_5\,(\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*}))^{*}\bigr)$; writing $\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*})=\tilde Q_3\tilde Q_1^{*}-\langle\tilde Q_3,\tilde Q_1\rangle_{*}e_t$, whose star is $\tilde Q_1\tilde Q_3^{*}-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}e_t$, gives $\tilde Q_5(\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*}))^{*}=\tilde Q_5\tilde Q_1\tilde Q_3^{*}-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\tilde Q_5$, and taking the vector part gives the first display. For the second, $R^{\diamond}_{\tilde Q_5}R^{\diamond}_{\tilde Q_3}(\tilde Q_1)=\mathrm{Vect}\bigl(\mathrm{Vect}(\tilde Q_1\tilde Q_3^{*})\,\tilde Q_5^{*}\bigr)$, and the same substitution gives $\mathrm{Vect}(\tilde Q_1\tilde Q_3^{*}\tilde Q_5^{*})-\langle\tilde Q_1,\tilde Q_3\rangle_{*}\,\mathrm{Vect}(\tilde Q_5^{*})$; since $\tilde Q_3^{*}\tilde Q_5^{*}=(\tilde Q_5\tilde Q_3)^{*}$, this is the second display. The linearity is the parity of the product of two conjugate-linear maps.
 
 **Remark (the mixed composites).** The two mixed orders carry the same correction. For the left-then-right order,
-$L^{\diamond}_{\tilde A}R^{\diamond}_{\tilde Q_3}(\tilde Q_1)=\mathrm{Vect}\bigl(\tilde A\tilde Q_3\tilde Q_1^{*}\bigr)-\overline{\langle\tilde Q_1,\tilde Q_3\rangle_{*}}\,\mathrm{Vect}(\tilde A)$, and for the right-then-left order $R^{\diamond}_{\tilde A}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)=\mathrm{Vect}\bigl(\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*})\,\tilde A^{*}\bigr)$: the projection inside the composite is the obstruction, and the composite is an operator of the block only in the degenerate cases.
+$L^{\diamond}_{\tilde Q_5}R^{\diamond}_{\tilde Q_3}(\tilde Q_1)=\mathrm{Vect}\bigl(\tilde Q_5\tilde Q_3\tilde Q_1^{*}\bigr)-\overline{\langle\tilde Q_1,\tilde Q_3\rangle_{*}}\,\mathrm{Vect}(\tilde Q_5)$, and for the right-then-left order $R^{\diamond}_{\tilde Q_5}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)=\mathrm{Vect}\bigl(\mathrm{Vect}(\tilde Q_3\tilde Q_1^{*})\,\tilde Q_5^{*}\bigr)$: the projection inside the composite is the obstruction, and the composite is an operator of the block only in the degenerate cases.
 
-**Corollary (the failure of multiplicativity).** The assignment $\tilde A\mapsto L^{\diamond}_{\tilde A}$ is $\mathbb{C}$-linear, $\lambda\tilde A$ giving $\lambda$ times the operator, while the assignment $\tilde A\mapsto R^{\diamond}_{\tilde A}$ is conjugate-linear, $\lambda\tilde A$ giving $\overline{\lambda}$ times the operator, by the parity of the two slots, and neither is **multiplicative**:
-$L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde Q_3}\neq L^{\diamond}_{\tilde A\diamond\tilde Q_3}$, and likewise for the right family. The witness is $\tilde A=\tilde Q_3=\vec e_x$, $\tilde Q_1=\vec e_y$: the composite sends $\vec e_y$ to $-\vec e_y$, since $L^{\diamond}_{\vec e_x}(\vec e_y)=-\vec e_z$ and $L^{\diamond}_{\vec e_x}(-\vec e_z)=-\vec e_y$, while $L^{\diamond}_{\vec e_x\diamond \vec e_x}=L^{\diamond}_{0}=0$. The operators of the block therefore do **not** form a monoid under composition, and the block has no regular representation: the failure is stronger than the failure of a single linear representation, it is the failure of a multiplicative one.
+**Corollary (the failure of multiplicativity).** The assignment $\tilde Q_5\mapsto L^{\diamond}_{\tilde Q_5}$ is $\mathbb{C}$-linear, $\lambda\tilde Q_5$ giving $\lambda$ times the operator, while the assignment $\tilde Q_5\mapsto R^{\diamond}_{\tilde Q_5}$ is conjugate-linear, $\lambda\tilde Q_5$ giving $\overline{\lambda}$ times the operator, by the parity of the two slots, and neither is **multiplicative**:
+$L^{\diamond}_{\tilde Q_5}L^{\diamond}_{\tilde Q_3}\neq L^{\diamond}_{\tilde Q_5\diamond\tilde Q_3}$, and likewise for the right family. The witness is $\tilde Q_5=\tilde Q_3=\vec e_x$, $\tilde Q_1=\vec e_y$: the composite sends $\vec e_y$ to $-\vec e_y$, since $L^{\diamond}_{\vec e_x}(\vec e_y)=-\vec e_z$ and $L^{\diamond}_{\vec e_x}(-\vec e_z)=-\vec e_y$, while $L^{\diamond}_{\vec e_x\diamond \vec e_x}=L^{\diamond}_{0}=0$. The operators of the block therefore do **not** form a monoid under composition, and the block has no regular representation: the failure is stronger than the failure of a single linear representation, it is the failure of a multiplicative one.
 
-**Remark (the contrast with the row).** For the general plain sesqualgebra the two composites close: there $L_{\tilde A}L_{\tilde Q_3}=T_{\tilde A,\tilde Q_3^{*}}$ is the ordinary two-sided multiplication and $R_{\tilde A}R_{\tilde Q_3}=R_{\tilde A\tilde Q_3}$, by *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*. The block is the projection $\mathrm{Vect}$ of each of those operators, and the projection intervenes twice, so the composition acquires the correction terms $-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\mathrm{Vect}(\tilde A)$ and $-\langle\tilde Q_1,\tilde Q_3\rangle_{*}\,\mathrm{Vect}(\tilde A^{*})$; the projection is not an algebra map of the row, and that is what destroys the multiplicativity.
+**Remark (the contrast with the row).** For the general plain sesqualgebra the two composites close: there $L_{\tilde Q_5}L_{\tilde Q_3}=T_{\tilde Q_5,\tilde Q_3^{*}}$ is the ordinary two-sided multiplication and $R_{\tilde Q_5}R_{\tilde Q_3}=R_{\tilde Q_5\tilde Q_3}$, by *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*. The block is the projection $\mathrm{Vect}$ of each of those operators, and the projection intervenes twice, so the composition acquires the correction terms $-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\mathrm{Vect}(\tilde Q_5)$ and $-\langle\tilde Q_1,\tilde Q_3\rangle_{*}\,\mathrm{Vect}(\tilde Q_5^{*})$; the projection is not an algebra map of the row, and that is what destroys the multiplicativity.
 
-**Corollary (the companion composes into the right family).** Since $T_{\tilde A}=-R^{\diamond}_{\tilde A}$ and $R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde Q_3}$ is the composition of the two right operators, the companions compose as
-$T_{\tilde A}T_{\tilde Q_3}=R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde Q_3}$, so the $\mathbb{C}$-linear companion family composes into the right family and not into itself, and the companion is not multiplicative either.
+**Corollary (the companion composes into the right family).** Since $T_{\tilde Q_5}=-R^{\diamond}_{\tilde Q_5}$ and $R^{\diamond}_{\tilde Q_5}R^{\diamond}_{\tilde Q_3}$ is the composition of the two right operators, the companions compose as
+$T_{\tilde Q_5}T_{\tilde Q_3}=R^{\diamond}_{\tilde Q_5}R^{\diamond}_{\tilde Q_3}$, so the $\mathbb{C}$-linear companion family composes into the right family and not into itself, and the companion is not multiplicative either.
 
 ## The Derivations
 
@@ -287,20 +287,20 @@ The **natural conjugation** $^{\natural}$ is **not** an automorphism of the bloc
 
 ## Summary
 
-The left multiplication of the block is the conjugate-linear operator $L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_t}$, the vector part of the left multiplication of the row; the right multiplication is its conjugate, $R^{\diamond}_{\tilde A}=-\overline{L^{\diamond}_{\tilde A}}$, so a single $\mathbb{C}$-linear companion $T_{\tilde A}=\overline{L^{\diamond}_{\tilde A}}=-R^{\diamond}_{\tilde A}$ carries the whole operator theory. In the real basis the matrix has its two scalar rows zero and its trace zero; it has rank six for a unit and four for a zero divisor, the kernel being the set of the $\tilde Q_1$ with $\tilde A\tilde Q_1^{*}$ central, which is the centre for $\tilde A=e_t$ and the line $\mathbb{C}\vec e_\mu$ for $\tilde A=\vec e_\mu$. The characteristic polynomial of the matrix $M_{\tilde A}$ is even, $\lambda^{2}P(\lambda)$, with $P$ even of degree six: $\lambda^{2}(\lambda^{2}-1)^{3}$ at the unit, $\lambda^{4}(\lambda^{2}+1)^{2}$ at the basis vectors, and $\lambda^{4}(\lambda^{2}+2)^{2}$ at the zero divisor $\vec e_x+i\vec e_y$. The adjoint with respect to $\langle\cdot,\cdot\rangle_{*}$ is the right multiplication of the star of the vector part, $(L^{\diamond}_{\tilde A})^{\dagger}(\tilde Q_2)=(\mathrm{Vect}\tilde Q_2)^{*}\tilde A$, a conjugate-linear operator with scalar part $\langle \vec A,\vec Q_2\rangle_{*}$; the operator is the first factor of the two-parameter sandwich, whose value is $L^{\diamond}_{\tilde A}(\tilde Q_1)\tilde Q_3^{*}+\langle\tilde A,\tilde Q_1\rangle_{*}\tilde Q_3^{*}$. The derivations are the cross products $D_{\vec a}(\tilde Q_1)=[0,\vec a\times\vec Q_1]$ with $\vec a$ real, a three-dimensional Lie algebra isomorphic to $\mathbb{R}^{3}$ with the cross product; the structure group contains the coefficientwise conjugation (conjugate-linear) and the complex-linear extensions of the real transformations preserving the cross product of the vector triple, of determinant one, with Lie algebra the derivation algebra, and it does not contain the natural conjugation. The two one-sided operators do not compose, $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)=\mathrm{Vect}(\tilde A\tilde Q_1\tilde Q_3^{*})-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\mathrm{Vect}(\tilde A)$ while $L^{\diamond}_{\vec e_x}L^{\diamond}_{\vec e_x}(\vec e_y)=-\vec e_y$ against $L^{\diamond}_{\vec e_x\diamond \vec e_x}=0$, so the block has no monoid of operators and no regular representation; the companion family composes into the right family, $T_{\tilde A}T_{\tilde Q_3}=R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde Q_3}$.
+The left multiplication of the block is the conjugate-linear operator $L^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ S_{\tilde Q_5,e_t}$, the vector part of the left multiplication of the row; the right multiplication is its conjugate, $R^{\diamond}_{\tilde Q_5}=-\overline{L^{\diamond}_{\tilde Q_5}}$, so a single $\mathbb{C}$-linear companion $T_{\tilde Q_5}=\overline{L^{\diamond}_{\tilde Q_5}}=-R^{\diamond}_{\tilde Q_5}$ carries the whole operator theory. In the real basis the matrix has its two scalar rows zero and its trace zero; it has rank six for a unit and four for a zero divisor, the kernel being the set of the $\tilde Q_1$ with $\tilde Q_5\tilde Q_1^{*}$ central, which is the centre for $\tilde Q_5=e_t$ and the line $\mathbb{C}\vec e_\mu$ for $\tilde Q_5=\vec e_\mu$. The characteristic polynomial of the matrix $M_{\tilde Q_5}$ is even, $\lambda^{2}P(\lambda)$, with $P$ even of degree six: $\lambda^{2}(\lambda^{2}-1)^{3}$ at the unit, $\lambda^{4}(\lambda^{2}+1)^{2}$ at the basis vectors, and $\lambda^{4}(\lambda^{2}+2)^{2}$ at the zero divisor $\vec e_x+i\vec e_y$. The adjoint with respect to $\langle\cdot,\cdot\rangle_{*}$ is the right multiplication of the star of the vector part, $(L^{\diamond}_{\tilde Q_5})^{\dagger}(\tilde Q_2)=(\mathrm{Vect}\tilde Q_2)^{*}\tilde Q_5$, a conjugate-linear operator with scalar part $\langle \vec A,\vec Q_2\rangle_{*}$; the operator is the first factor of the two-parameter sandwich, whose value is $L^{\diamond}_{\tilde Q_5}(\tilde Q_1)\tilde Q_3^{*}+\langle\tilde Q_5,\tilde Q_1\rangle_{*}\tilde Q_3^{*}$. The derivations are the cross products $D_{\vec a}(\tilde Q_1)=[0,\vec a\times\vec Q_1]$ with $\vec a$ real, a three-dimensional Lie algebra isomorphic to $\mathbb{R}^{3}$ with the cross product; the structure group contains the coefficientwise conjugation (conjugate-linear) and the complex-linear extensions of the real transformations preserving the cross product of the vector triple, of determinant one, with Lie algebra the derivation algebra, and it does not contain the natural conjugation. The two one-sided operators do not compose, $L^{\diamond}_{\tilde Q_5}L^{\diamond}_{\tilde Q_3}(\tilde Q_1)=\mathrm{Vect}(\tilde Q_5\tilde Q_1\tilde Q_3^{*})-\overline{\langle\tilde Q_3,\tilde Q_1\rangle_{*}}\,\mathrm{Vect}(\tilde Q_5)$ while $L^{\diamond}_{\vec e_x}L^{\diamond}_{\vec e_x}(\vec e_y)=-\vec e_y$ against $L^{\diamond}_{\vec e_x\diamond \vec e_x}=0$, so the block has no monoid of operators and no regular representation; the companion family composes into the right family, $T_{\tilde Q_5}T_{\tilde Q_3}=R^{\diamond}_{\tilde Q_5}R^{\diamond}_{\tilde Q_3}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $L^{\diamond}_{\tilde A}(\tilde Q_1)=\tilde A\diamond\tilde Q_1$ | the conjugate-linear left multiplication of the block |
-| $R^{\diamond}_{\tilde A}(\tilde Q_1)=\tilde Q_1\diamond\tilde A=-\overline{L^{\diamond}_{\tilde A}}$ | the right multiplication, minus the companion |
-| $T_{\tilde A}=\overline{L^{\diamond}_{\tilde A}}$ | the $\mathbb{C}$-linear companion, the honest linear object |
+| $L^{\diamond}_{\tilde Q_5}(\tilde Q_1)=\tilde Q_5\diamond\tilde Q_1$ | the conjugate-linear left multiplication of the block |
+| $R^{\diamond}_{\tilde Q_5}(\tilde Q_1)=\tilde Q_1\diamond\tilde Q_5=-\overline{L^{\diamond}_{\tilde Q_5}}$ | the right multiplication, minus the companion |
+| $T_{\tilde Q_5}=\overline{L^{\diamond}_{\tilde Q_5}}$ | the $\mathbb{C}$-linear companion, the honest linear object |
 | $(\mathcal B)=(e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z)$ | the real basis in which the matrices are read |
-| $L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_t}$ | the operator inside the sesquilinear sandwich |
+| $L^{\diamond}_{\tilde Q_5}=\mathrm{Vect}\circ S_{\tilde Q_5,e_t}$ | the operator inside the sesquilinear sandwich |
 | $M_{e_t}=\operatorname{diag}(0,-1,-1,-1,0,1,1,1)$ | the matrix of the unit, trace zero, rank six |
-| $\chi_{M_{\tilde A}}=\lambda^{2}P(\lambda)$ | the characteristic polynomial of the real matrix of $L^{\diamond}_{\tilde A}$, even, $P$ even of degree six |
-| $(L^{\diamond}_{\tilde A})^{\dagger}(\tilde Q_2)=(\mathrm{Vect}\tilde Q_2)^{*}\tilde A$ | the adjoint under the twisted rule |
+| $\chi_{M_{\tilde Q_5}}=\lambda^{2}P(\lambda)$ | the characteristic polynomial of the real matrix of $L^{\diamond}_{\tilde Q_5}$, even, $P$ even of degree six |
+| $(L^{\diamond}_{\tilde Q_5})^{\dagger}(\tilde Q_2)=(\mathrm{Vect}\tilde Q_2)^{*}\tilde Q_5$ | the adjoint under the twisted rule |
 | $D_{\vec a}(\tilde Q_1)=[0,\vec a\times\vec Q_1]$ | the derivation by a real vector, the algebra $\mathbb{R}^{3}$ with the cross product |
 | $T_R$ | the complex-linear automorphism from a real $R$ with $R^{\mathsf T}R=I$, $\det R=1$ |
 

@@ -24,11 +24,11 @@ $$
 
 that is, scalar multiples of unit quaternions by phases.
 
-**Proof.** Since $\mathsf{M}_2$ is an algebra isomorphism and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Conjugations in Matrix Form*), the equation $\tilde{U}^{*}\tilde{U}=e_t$ is equivalent to $\mathsf{M}_2(\tilde{U})^{\dagger}\mathsf{M}_2(\tilde{U})=I$, which defines $\mathrm{U}(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{U})$ makes $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$, so if $\zeta^{2}=\langle\tilde{U},\tilde{U}\rangle_{\natural}$ then $\tilde{A}=\zeta^{-1}\tilde{U}$ has $\langle\tilde{A},\tilde{A}\rangle_{\natural}=1$; a norm-one element is a unit quaternion (*Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*), and $\tilde{U}=\zeta\tilde{A}$.
+**Proof.** Since $\mathsf{M}_2$ is an algebra isomorphism and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Conjugations in Matrix Form*), the equation $\tilde{U}^{*}\tilde{U}=e_t$ is equivalent to $\mathsf{M}_2(\tilde{U})^{\dagger}\mathsf{M}_2(\tilde{U})=I$, which defines $\mathrm{U}(2)$; the restriction of an injective homomorphism is an injective homomorphism onto that group. For the normal form: the identity $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\det\mathsf{M}_2(\tilde{U})$ makes $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$, so if $\zeta^{2}=\langle\tilde{U},\tilde{U}\rangle_{\natural}$ then $\tilde{Q}_3=\zeta^{-1}\tilde{U}$ has $\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=1$; a norm-one element is a unit quaternion (*Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*), and $\tilde{U}=\zeta\tilde{Q}_3$.
 
 **Corollary (the determinant and the norm coincide).** On $\mathrm{U}(\mathbb{B})$ the biquaternion norm is the determinant through $\mathsf{M}_2$, and $N:\mathrm{U}(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $\langle\cdot\rangle_{\natural}$ realises an isomorphism $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$.
 
-**Proof.** $\langle\tilde{U}\tilde{S},\tilde{U}\tilde{S}\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{S},\tilde{S}\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_t,e_t\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_t$ is unitary of norm $A$. The kernel is $\{N=1\}\cap \mathrm{U}(\mathbb{B})$, which is the unit quaternions.
+**Proof.** $\langle\tilde{U}\tilde{Q}_4,\tilde{U}\tilde{Q}_4\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_4,\tilde{Q}_4\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_t,e_t\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_t$ is unitary of norm $A$. The kernel is $\{N=1\}\cap \mathrm{U}(\mathbb{B})$, which is the unit quaternions.
 
 ## The Structure of the Unitary Group
 
@@ -56,25 +56,25 @@ so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^{2}$ with fibre $T^{2}$. I
 
 ## The Retraction of the Unit Group onto the Unitary Group
 
-**Theorem (polar decomposition).** Every $\tilde{A}\in\mathbb{B}^{\times}$ has a unique decomposition
+**Theorem (polar decomposition).** Every $\tilde{Q}_3\in\mathbb{B}^{\times}$ has a unique decomposition
 
 $$
-\tilde{A}=\tilde{U}\tilde{Q}_2,\qquad \tilde{U}\in \mathrm{U}(\mathbb{B}),\quad \tilde{Q}_2\ \text{Hermitian and positive definite},
+\tilde{Q}_3=\tilde{U}\tilde{Q}_2,\qquad \tilde{U}\in \mathrm{U}(\mathbb{B}),\quad \tilde{Q}_2\ \text{Hermitian and positive definite},
 $$
 
-with $\tilde{Q}_2=(\tilde{A}^{*}\tilde{A})^{1/2}$; the map $\tilde{A}\mapsto(\tilde{U},\tilde{Q}_2)$ is a homeomorphism of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})\times\{\text{Hermitian positive definite}\}$.
+with $\tilde{Q}_2=(\tilde{Q}_3^{*}\tilde{Q}_3)^{1/2}$; the map $\tilde{Q}_3\mapsto(\tilde{U},\tilde{Q}_2)$ is a homeomorphism of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})\times\{\text{Hermitian positive definite}\}$.
 
-**Proof.** $\tilde{A}^{*}\tilde{A}$ is Hermitian and positive definite for $\tilde{A}$ a unit, because $\mathrm{Sc}(\tilde{A}^{*}\tilde{A})=\|\tilde{A}\|_E^{2}>0$ and the Hermitian elements that are positive for the dagger form the cone of the units (*Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*, §*The Hermitian Cone*); a positive definite Hermitian element has a unique positive definite square root $\tilde{Q}_2$, and $\tilde{U}=\tilde{A}\tilde{Q}_2^{-1}$ satisfies $\tilde{U}^{*}\tilde{U}=\tilde{Q}_2^{-1}\tilde{A}^{*}\tilde{A}\tilde{Q}_2^{-1}=e_t$. Uniqueness is the standard argument: $\tilde{Q}_2^{2}=\tilde{A}^{*}\tilde{A}$ has one positive definite root.
+**Proof.** $\tilde{Q}_3^{*}\tilde{Q}_3$ is Hermitian and positive definite for $\tilde{Q}_3$ a unit, because $\mathrm{Sc}(\tilde{Q}_3^{*}\tilde{Q}_3)=\|\tilde{Q}_3\|_E^{2}>0$ and the Hermitian elements that are positive for the dagger form the cone of the units (*Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*, §*The Hermitian Cone*); a positive definite Hermitian element has a unique positive definite square root $\tilde{Q}_2$, and $\tilde{U}=\tilde{Q}_3\tilde{Q}_2^{-1}$ satisfies $\tilde{U}^{*}\tilde{U}=\tilde{Q}_2^{-1}\tilde{Q}_3^{*}\tilde{Q}_3\tilde{Q}_2^{-1}=e_t$. Uniqueness is the standard argument: $\tilde{Q}_2^{2}=\tilde{Q}_3^{*}\tilde{Q}_3$ has one positive definite root.
 
-**Theorem (strong deformation retraction).** For $t\in[0,1]$ put $\tilde{Q}_2_t=(1-t)\tilde{Q}_2+t e_t$ and $\tilde{H}(t,\tilde{A})=\tilde{U}\tilde{Q}_2_t$. Then $\tilde{H}$ is a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$:
+**Theorem (strong deformation retraction).** For $t\in[0,1]$ put $\tilde{Q}_{2,t}=(1-t)\tilde{Q}_2+t e_t$ and $\tilde{H}(t,\tilde{Q}_3)=\tilde{U}\tilde{Q}_{2,t}$. Then $\tilde{H}$ is a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$:
 
 $$
-\tilde{H}(0,\tilde{A})=\tilde{A},\qquad \tilde{H}(1,\tilde{A})=\tilde{U},\qquad \tilde{H}(t,\tilde{U})=\tilde{U}\ \text{for}\ \tilde{U}\in \mathrm{U}(\mathbb{B}).
+\tilde{H}(0,\tilde{Q}_3)=\tilde{Q}_3,\qquad \tilde{H}(1,\tilde{Q}_3)=\tilde{U},\qquad \tilde{H}(t,\tilde{U})=\tilde{U}\ \text{for}\ \tilde{U}\in \mathrm{U}(\mathbb{B}).
 $$
 
 Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^{\times})\cong\pi_n(\mathrm{U}(\mathbb{B}))$ for all $n$.
 
-**Proof.** The eigenvalues of $\tilde{Q}_2_t$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{Q}_2_t$ is positive definite and $\tilde{U}\tilde{Q}_2_t\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{A}$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{Q}_2_0=\tilde{Q}_2$, $\tilde{Q}_2_1=e_t$ and the fact that a unitary element has $\tilde{Q}_2=e_t$.
+**Proof.** The eigenvalues of $\tilde{Q}_{2,t}$ are $(1-t)\lambda+t$ with $\lambda>0$, hence positive, so $\tilde{Q}_{2,t}$ is positive definite and $\tilde{U}\tilde{Q}_{2,t}\in\mathbb{B}^{\times}$; the positive definite square root depends continuously on $\tilde{Q}_3$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Operator of an Element*), so $\tilde{H}$ is continuous; the three identities are immediate from $\tilde{Q}_2_0=\tilde{Q}_2$, $\tilde{Q}_2_1=e_t$ and the fact that a unitary element has $\tilde{Q}_2=e_t$.
 
 **Corollary (connectedness).** $\mathbb{B}^{\times}$ is connected, and $\mathrm{U}(\mathbb{B})$ is connected.
 
@@ -84,13 +84,13 @@ Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^
 
 **Theorem.** The unit quaternions $S^{3}$ are a strong deformation retract of the norm-one group $\mathbb{B}^{\times}_1=\{N=1\}$, so $\mathbb{B}^{\times}_1\simeq S^{3}$: it is connected and simply connected, with $\pi_z\cong\mathbb{Z}$ and vanishing $\pi_x,\pi_y$.
 
-**Proof.** Let $\tilde{A}\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{A}=\tilde{U}\tilde{Q}_2$. Then $1=\langle\tilde{A},\tilde{A}\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$, with $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ and $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$ a positive real, so $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=1$ and $\tilde{U}\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
+**Proof.** Let $\tilde{Q}_3\in\mathbb{B}^{\times}_1$ with polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$. Then $1=\langle\tilde{Q}_3,\tilde{Q}_3\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$, with $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ and $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}$ a positive real, so $\langle\tilde{U},\tilde{U}\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=1$ and $\tilde{U}\in S^{3}$ by the normal form of the previous section. For $t\in[0,1]$ the element
 
 $$
-\tilde{Q}_2_t=\frac{(1-t)\tilde{Q}_2+te_t}{N\bigl((1-t)\tilde{Q}_2+te_t\bigr)^{1/2}}
+\tilde{Q}_{2,t}=\frac{(1-t)\tilde{Q}_2+te_t}{N\bigl((1-t)\tilde{Q}_2+te_t\bigr)^{1/2}}
 $$
 
-is Hermitian positive definite of norm one (the denominator is a positive real), the map $\tilde{H}(t,\tilde{A})=\tilde{U}\tilde{Q}_2_t$ is continuous and lands in $\mathbb{B}^{\times}_1$, and $\tilde{H}(0,\tilde{A})=\tilde{A}$, $\tilde{H}(1,\tilde{A})=\tilde{U}\in S^{3}$, $\tilde{H}(t,\tilde{U})=\tilde{U}$.
+is Hermitian positive definite of norm one (the denominator is a positive real), the map $\tilde{H}(t,\tilde{Q}_3)=\tilde{U}\tilde{Q}_{2,t}$ is continuous and lands in $\mathbb{B}^{\times}_1$, and $\tilde{H}(0,\tilde{Q}_3)=\tilde{Q}_3$, $\tilde{H}(1,\tilde{Q}_3)=\tilde{U}\in S^{3}$, $\tilde{H}(t,\tilde{U})=\tilde{U}$.
 
 **Remark.** $\mathbb{B}^{\times}_1$ is not homeomorphic to $S^{3}$: it is a non-compact real $6$-manifold. It is a closed subgroup of $\mathbb{B}^{\times}$, of real dimension $6$ (*Biquaternion Lie Group and Exponential Structure*, §*The Subgroups and the Real Forms*).
 
@@ -147,7 +147,7 @@ is a surjective homomorphism with kernel $\mathrm{U}(1)e_t$, so that $\mathrm{U}
 
 ## Summary
 
-The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_t\}$ are the maximal compact subgroup of $\mathbb{B}^{\times}$, isomorphic to $\mathrm{U}(2)$ through the matrix model and equal to the scalar multiples of the unit quaternions by phases. The group splits as $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ with intersection $\{\pm e_t\}$, so $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}\cong S^{1}\times S^{3}$ as spaces, with maximal torus $T^{2}$ and flag variety $\mathrm{U}(\mathbb{B})/T^{2}\cong S^{2}$. The polar decomposition $\tilde{A}=\tilde{U}\tilde{Q}_2$ supplies strong deformation retractions of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of $\mathbb{B}^{\times}_1$ onto $S^{3}$, whence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, $\mathbb{B}^{\times}_1\simeq S^{3}$, $\pi_x(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_y=0$, $\pi_z\cong\mathbb{Z}$, and universal cover $\mathbb{R}\times S^{3}$. The norm $\langle\cdot\rangle_{\natural}$ is the determinant and $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$; the conjugation action gives $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$, the compact real form of the Lorentz group.
+The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e_t\}$ are the maximal compact subgroup of $\mathbb{B}^{\times}$, isomorphic to $\mathrm{U}(2)$ through the matrix model and equal to the scalar multiples of the unit quaternions by phases. The group splits as $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ with intersection $\{\pm e_t\}$, so $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}\cong S^{1}\times S^{3}$ as spaces, with maximal torus $T^{2}$ and flag variety $\mathrm{U}(\mathbb{B})/T^{2}\cong S^{2}$. The polar decomposition $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$ supplies strong deformation retractions of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of $\mathbb{B}^{\times}_1$ onto $S^{3}$, whence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, $\mathbb{B}^{\times}_1\simeq S^{3}$, $\pi_x(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_y=0$, $\pi_z\cong\mathbb{Z}$, and universal cover $\mathbb{R}\times S^{3}$. The norm $\langle\cdot\rangle_{\natural}$ is the determinant and $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$; the conjugation action gives $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$, the compact real form of the Lorentz group.
 
 ## Summary of Notation
 
@@ -157,7 +157,7 @@ The **unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde{U}^{*}\tilde{U}=e
 | $\mathrm{U}(\mathbb{B})=S^{1}\cdot S^{3}$ | Product decomposition with $S^{1}\cap S^{3}=\{\pm e_t\}$ |
 | $T^{2}\cong S^{1}\times S^{1}$ | Central maximal torus |
 | $\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2}$ | Complete flag variety |
-| $\tilde{A}=\tilde{U}\tilde{Q}_2$ | Polar decomposition; retraction onto $\mathrm{U}(\mathbb{B})$ |
+| $\tilde{Q}_3=\tilde{U}\tilde{Q}_2$ | Polar decomposition; retraction onto $\mathrm{U}(\mathbb{B})$ |
 | $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3}$ | Homotopy type of the unit group |
 | $\mathbb{B}^{\times}_1\simeq S^{3}$ | Homotopy type of the norm-one group |
 | $N:\mathrm{U}(\mathbb{B})\to S^{1}$, kernel $S^{3}$ | Determinant/norm; $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$ |

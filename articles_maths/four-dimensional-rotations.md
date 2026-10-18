@@ -184,7 +184,7 @@ $$
 X\,L_{\tilde q}\,X^{-1} = L_{\tilde u_1\tilde q\tilde u_1^{-1}},
 $$
 
-so conjugation by a rotation preserves each of the two spheres. The conjugacy class of a left-isoclinic rotation $L_{\tilde q}$ in $SO(4)$ is the two-sphere $\{L_{\tilde w} : \operatorname{Re}\tilde w = \operatorname{Re}\tilde q\}$, and no rotation conjugates a left-isoclinic rotation to a right-isoclinic one except the identity and the central inversion.
+so conjugation by a rotation preserves each of the two spheres. The conjugacy class of a left-isoclinic rotation $L_{\tilde q}$ in $SO(4)$ is the two-sphere $\{L_{\tilde u} : \operatorname{Re}\tilde u = \operatorname{Re}\tilde q\}$, and no rotation conjugates a left-isoclinic rotation to a right-isoclinic one except the identity and the central inversion.
 
 *Proof.* The conjugation identity follows from the commutation of left and right multiplication: $L_{\tilde u_1}\rho_{\tilde u_2}L_{\tilde q}L_{\tilde u_1^{-1}}\rho_{\tilde u_2^{-1}} = L_{\tilde u_1\tilde q\tilde u_1^{-1}}$ because the right factors cancel. Every element of $SO(4)$ is $\Phi_{(\tilde u_1,\tilde u_2)}$ by the parametrisation theorem of the previous section, so the whole conjugacy class is the displayed family, and it lies in $S^3_L$. The last statement is then the criterion $\rho_{\tilde p} = L_{\tilde q}$ if and only if $\tilde q = \tilde p = \pm1$: a right multiplication lies in $S^3_L$ only for $\pm\mathrm{id}$.
 

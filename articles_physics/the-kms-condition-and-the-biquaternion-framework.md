@@ -107,19 +107,19 @@ which is the ordinary Lorentzian wave operator. The wave operator has the same f
 
 ### Statement
 
-Let $\tilde{A}$ and $\tilde{B}$ be elements of the biquaternion algebra $\mathbb{B}$ (interpreted as observables), and let $\omega_\beta$ be a thermal state on the algebra, i.e., a positive linear functional $\omega_\beta : \mathbb{B} \to \mathbb{C}$ with $\omega_\beta(e_t) = 1$. Define the thermal correlation function
+Let $\tilde Q_1$ and $\tilde Q_2$ be elements of the biquaternion algebra $\mathbb{B}$ (interpreted as observables), and let $\omega_\beta$ be a thermal state on the algebra, i.e., a positive linear functional $\omega_\beta : \mathbb{B} \to \mathbb{C}$ with $\omega_\beta(e_t) = 1$. Define the thermal correlation function
 
 $$
-F_{\tilde{A}\tilde{B}}(t) = \omega_\beta\big(\tilde{A}\, \alpha_t(\tilde{B})\big),
+F_{\tilde Q_1\tilde Q_2}(t) = \omega_\beta\big(\tilde Q_1\, \alpha_t(\tilde Q_2)\big),
 $$
 
 where $\alpha_t$ is the Heisenberg evolution in the time direction of $\mathbb{M}_-$.
 
-**A note on the notation.** The correlation function $F_{\tilde{A}\tilde{B}}(t)$ is **complex-valued**, not biquaternion-valued: the state $\omega_\beta$ is a complex-valued functional on the algebra. The biquaternion content is in the **operators** $\tilde{A}$ and $\tilde{B}$, which lie in the algebra. This is the standard setting of the KMS condition, and the biquaternion framework provides a specific realization of the algebra on which the state is defined.
+**A note on the notation.** The correlation function $F_{\tilde Q_1\tilde Q_2}(t)$ is **complex-valued**, not biquaternion-valued: the state $\omega_\beta$ is a complex-valued functional on the algebra. The biquaternion content is in the **operators** $\tilde Q_1$ and $\tilde Q_2$, which lie in the algebra. This is the standard setting of the KMS condition, and the biquaternion framework provides a specific realization of the algebra on which the state is defined.
 
 The **KMS condition** in the biquaternion framework states that:
 
-1. The function $F_{\tilde{A}\tilde{B}}(t)$ extends analytically to the strip
+1. The function $F_{\tilde Q_1\tilde Q_2}(t)$ extends analytically to the strip
 $$
 0 < \mathrm{Im}(t) < \beta,
 $$
@@ -127,7 +127,7 @@ and is continuous on its closure.
 
 2. On the boundary of the strip,
 $$
-F_{\tilde{A}\tilde{B}}(t + i\beta) = F_{\tilde{B}\tilde{A}}(-t),
+F_{\tilde Q_1\tilde Q_2}(t + i\beta) = F_{\tilde Q_2\tilde Q_1}(-t),
 $$
 
 This is the same condition as in the standard formulation, with the operators taking values in the biquaternion algebra. It holds for both bosonic and fermionic fields.

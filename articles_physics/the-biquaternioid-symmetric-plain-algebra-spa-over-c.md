@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **symmetric plain algebra**, written $\mathrm{SPA}$, whose product is the symmetrisation of the plain product, $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$. It is one of the four **symmetric** structures, and its job in the framework is **commutativity**: its product is commutative, its invariant form is the trace form, and the Hermitian elements with the same product form the Jordan algebra of the observables.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **symmetric plain algebra**, written $\mathrm{SPA}$, whose product is the symmetrisation of the plain product, $\tilde Q_1\star\tilde Q=\tfrac12(\tilde Q_1\tilde Q+\tilde Q\tilde Q_1)$. It is one of the four **symmetric** structures, and its job in the framework is **commutativity**: its product is commutative, its invariant form is the trace form, and the Hermitian elements with the same product form the Jordan algebra of the observables.
 
 The mathematics of the structure is owned by the group *The Biquaternioid Symmetric Plain Algebra (SPA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
@@ -12,7 +12,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 ### Basic Properties
 
-- **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric algebra. Owner: *Introduction to the Symmetric Plain Algebra*.
+- **The operation.** The product $\tilde Q_1\star\tilde Q=\tfrac12(\tilde Q_1\tilde Q+\tilde Q\tilde Q_1)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric algebra. Owner: *Introduction to the Symmetric Plain Algebra*.
 - **The unit.** $e_t$ is a two-sided identity, so the structure is one of the two structures of the space with a two-sided unit. Owner: *Introduction to the Symmetric Plain Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure — the trace form read on the square — and the invertibility criterion of the symmetrised product. Owner: *Norm and Invertibility in the Symmetric Plain Algebra*.
 - **Zero divisors.** The zero-divisor set of the product and the set on which its values vanish. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -45,21 +45,21 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 ## Summary
 
-The biquaternioid symmetric plain algebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ over $\mathbb{C}$, the commutativity band of the framework: commutative, with a two-sided unit, with the indefinite trace form as its invariant form and with the Jordan identity holding on its Hermitian sector alone. That sector is the framework's Jordan algebra of observables; the failure of the identity on the material ledger is the statement that the material composition carries no observables. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid symmetric plain algebra is the structure $\tilde Q_1\star\tilde Q=\tfrac12(\tilde Q_1\tilde Q+\tilde Q\tilde Q_1)$ over $\mathbb{C}$, the commutativity band of the framework: commutative, with a two-sided unit, with the indefinite trace form as its invariant form and with the Jordan identity holding on its Hermitian sector alone. That sector is the framework's Jordan algebra of observables; the failure of the identity on the material ledger is the statement that the material composition carries no observables. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | the symmetric plain product, $\mathrm{SPA}$ |
-| $\tilde P\star\tilde Q=\tilde Q\star\tilde P$ | commutativity; the absence of orientation |
+| $\tilde Q_1\star\tilde Q=\tfrac12(\tilde Q_1\tilde Q+\tilde Q\tilde Q_1)$ | the symmetric plain product, $\mathrm{SPA}$ |
+| $\tilde Q_1\star\tilde Q=\tilde Q\star\tilde Q_1$ | commutativity; the absence of orientation |
 | $e_t$ | the two-sided unit of the structure |
-| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | the trace form; invariant and indefinite |
+| $\langle\tilde Q_1,\tilde Q\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q)$ | the trace form; invariant and indefinite |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | the trace, twice the scalar part |
-| $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde Q_1}]$ | the order defects; the generators of the block, of dimension three |
+| $[L^{\bullet}_{\tilde Q_2},L^{\bullet}_{\tilde Q_1}]$ | the order defects; the generators of the block, of dimension three |
 | $\mathbb{M}_+$ | the Hermitian sector; the Jordan algebra of the observables |
 | $\mathbb{M}_-,\mathbb{M}_+$ | the material and informational sectors |
-| $S_{\tilde P,\tilde P}$ | the quadratic representation; the sandwich as the isometry of the band |
+| $S_{\tilde Q_1,\tilde Q_1}$ | the quadratic representation; the sandwich as the isometry of the band |
 
 ## Further Reading
 

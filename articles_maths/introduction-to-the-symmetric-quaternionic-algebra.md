@@ -157,15 +157,15 @@ The operation is therefore neither associative, nor power-associative, nor a Jor
 
 *Proof.* Every value is central by the theorem of §*The Operation*, and every central element is a complex multiple of $e_t$.
 
-**Proposition (there is no unit).** The operation has no unit, and no one-sided unit either. For every element $\tilde A$,
+**Proposition (there is no unit).** The operation has no unit, and no one-sided unit either. For every element $\tilde Q_5$,
 
 $$
-\tilde A\star e_t=e_t\star\tilde A=A_t\,e_t ,
+\tilde Q_5\star e_t=e_t\star\tilde Q_5=Q_{5t}\,e_t ,
 $$
 
 so $e_t$ is a unit for the central line alone. An element $\tilde u$ with $\tilde u\star\tilde Q=\tilde Q$ for every $\tilde Q$ would give $\tilde u\star e_t=u_te_t=e_t$, hence $u_t=1$, and then $\tilde u\star \vec e_x=u_xe_t=\vec e_x$, which is impossible because $u_xe_t$ is central and $\vec e_x$ is not.
 
-*Proof.* The display is the theorem at $\tilde Q=e_t$: $\langle\tilde A,e_t\rangle_{\natural}=A_t=\langle e_t,\tilde A\rangle_{\natural}$. The unit argument is the one displayed; the same computation with the argument $\vec e_x$ excludes a right unit.
+*Proof.* The display is the theorem at $\tilde Q=e_t$: $\langle\tilde Q_5,e_t\rangle_{\natural}=Q_{5t}=\langle e_t,\tilde Q_5\rangle_{\natural}$. The unit argument is the one displayed; the same computation with the argument $\vec e_x$ excludes a right unit.
 
 **Remark (the centre of the operation and the centre of the plain product).** Two different sets could be called central and are kept apart. Because $\star$ is commutative, its mutual commutant is the whole space: every element commutes with every other under $\star$. The centre of the *plain* product is the line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, and that is the set in which the *values* of $\star$ lie. The operation is thus commutative everywhere while producing values in the centre of the algebra, and the two statements are not merged.
 

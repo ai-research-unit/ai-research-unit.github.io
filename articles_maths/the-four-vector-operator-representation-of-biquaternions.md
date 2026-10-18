@@ -14,11 +14,11 @@ whose laws are *Biquaternion Rotations and Lorentz Transformations*, and the who
 
 The article owns the two-step component rule, the image of the basis elements, the reading of the operator on the scalar and the vector part, the coordinate form of the two regimes, and the worked collapse of a null operator on the basis. The purpose of that material is the one the component realization always serves in this corpus: it turns a structural statement into arithmetic that can be checked on a chosen element.
 
-**Conventions.** The product of two elements with four-vectors $A^\mu$ and $Q_1^\mu$ has components
+**Conventions.** The product of two elements with four-vectors $Q_4^\mu$ and $Q_1^\mu$ has components
 
 $$
-(\tilde A\tilde{Q}_1)^0 = A^0Q_1^0 - \sum_{k=1}^{3} A^kQ_1^k, \qquad
-(\tilde A\tilde{Q}_1)^i = A^0Q_1^i + Q_1^0A^i + \sum_{j,k=1}^{3}\epsilon^{ijk}A^jQ_1^k ,
+(\tilde Q_4\tilde{Q}_1)^0 = Q_4^0Q_1^0 - \sum_{k=1}^{3} Q_4^kQ_1^k, \qquad
+(\tilde Q_4\tilde{Q}_1)^i = Q_4^0Q_1^i + Q_1^0Q_4^i + \sum_{j,k=1}^{3}\epsilon^{ijk}Q_4^jQ_1^k ,
 $$
 
 and the Hermitian conjugate has four-vector

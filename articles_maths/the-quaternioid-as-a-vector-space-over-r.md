@@ -35,14 +35,14 @@ Two other coordinate conventions occur in the corpus and are named here only to 
 
 Because $\mathbb{H}$ is a real vector space, its real-linear endomorphisms form the ring $\operatorname{End}_{\mathbb{R}}(\mathbb{H})$, which is $\mathbb{R}$-linearly isomorphic to the matrix ring $M_4(\mathbb{R})$ once a basis is fixed. Two families of endomorphisms come from the product:
 
-- the **left multiplication** $L_{\tilde p}:\mathbb{H}\to\mathbb{H}$, $L_{\tilde p}(\tilde r)=\tilde p\tilde r$;
-- the **right multiplication** $R_{\tilde q}:\mathbb{H}\to\mathbb{H}$, $R_{\tilde q}(\tilde r)=\tilde r\tilde q$.
+- the **left multiplication** $L_{\tilde p}:\mathbb{H}\to\mathbb{H}$, $L_{\tilde p}(\tilde q_3)=\tilde p\tilde q_3$;
+- the **right multiplication** $R_{\tilde q}:\mathbb{H}\to\mathbb{H}$, $R_{\tilde q}(\tilde q_3)=\tilde q_3\tilde q$.
 
 Both are real-linear, and the assignments $\tilde p\mapsto L_{\tilde p}$ and $\tilde q\mapsto R_{\tilde q}$ are injective, since $L_{\tilde p}(e_t)=\tilde p$ and $R_{\tilde q}(e_t)=\tilde q$. They are algebra embeddings with opposite multiplicativity,
 $$
 L_{\tilde p}L_{\tilde q}=L_{\tilde p\tilde q} , \qquad R_{\tilde p}R_{\tilde q}=R_{\tilde q\tilde p},
 $$
-the first from associativity $\tilde p(\tilde q\tilde r)=(\tilde p\tilde q)\tilde r$ and the second from $(\tilde r\tilde p)\tilde q=\tilde r(\tilde p\tilde q)$. The two images commute, $L_{\tilde p}R_{\tilde q}=R_{\tilde q}L_{\tilde p}$, both being the left and the right multiplication by fixed elements, and this is associativity again. The left regular representation $\tilde p\mapsto L_{\tilde p}$ is the quaternion algebra read as a four-dimensional subalgebra of $M_4(\mathbb{R})$; it is written $M_4(\mathbb{R})_L$ in the corpus and is the subject of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, below this article in this category.
+the first from associativity $\tilde p(\tilde q\tilde q_3)=(\tilde p\tilde q)\tilde q_3$ and the second from $(\tilde q_3\tilde p)\tilde q=\tilde q_3(\tilde p\tilde q)$. The two images commute, $L_{\tilde p}R_{\tilde q}=R_{\tilde q}L_{\tilde p}$, both being the left and the right multiplication by fixed elements, and this is associativity again. The left regular representation $\tilde p\mapsto L_{\tilde p}$ is the quaternion algebra read as a four-dimensional subalgebra of $M_4(\mathbb{R})$; it is written $M_4(\mathbb{R})_L$ in the corpus and is the subject of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, below this article in this category.
 
 ## The Scalar and Vector Subspaces
 

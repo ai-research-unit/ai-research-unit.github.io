@@ -391,7 +391,7 @@ multiplication, but the word "count" means the same dimension in both places.
 
 **The GNS null space.** *The GNS Construction in the Biquaternion Framework* builds the Hilbert space of a
 state as the quotient of the algebra by the state's null space,
-$\mathcal N_\omega=\{\tilde A:\omega(\tilde A^{*}\tilde A)=0\}$, and finds that for the vacuum the null
+$\mathcal N_\omega=\{\tilde Q_3:\omega(\tilde Q_3^{*}\tilde Q_3)=0\}$, and finds that for the vacuum the null
 space is the left ideal the annihilation operator lies in; the GNS space is then the minimal left ideal, of
 complex dimension two, and the representation is irreducible. A state with a nontrivial null space is not
 faithful, and its GNS space is smaller than the regular one. The annihilator of an element is the same
@@ -492,8 +492,8 @@ Sesquilinear Product and the Polarisation* computes the left multiplication of t
 reads through the table, and finds
 
 $$
-\ker L^{\diamond}_{\tilde A}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\vec A},\qquad
-\operatorname{im}L^{\diamond}_{\tilde A}=\{(\vec A,\cdot)=0\}.
+\ker L^{\diamond}_{\tilde Q_3}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\vec Q_3},\qquad
+\operatorname{im}L^{\diamond}_{\tilde Q_3}=\{(\vec Q_3,\cdot)=0\}.
 $$
 
 The kernel is the centre together with the conjugate direction of the parameter, and the image is the
@@ -630,7 +630,7 @@ is labelled by.
   norm does not have.
 - The kernel is also the closed-state space $\ker s$ of BRST — the physical cohomology is its quotient
   $\ker s/\mathrm{im}\,s$ — the kernel of the divergence that defines a conserved current, and the
-  polarisation kernel $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\tilde A}$ of the antisymmetric
+  polarisation kernel $\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\tilde Q_3}$ of the antisymmetric
   sesquilinear operator.
 - A kernel has two opposite readings. A gauge kernel hides a description that a gauge choice can recover;
   a confinement kernel has destroyed a description that the observable algebra does not contain.

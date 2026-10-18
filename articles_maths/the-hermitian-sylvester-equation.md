@@ -2,143 +2,143 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$, and let $L_{\tilde A}$, $R_{\tilde B}$ be the left and right multiplications. The **Sylvester equation** on the algebra is
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$, and let $L_{\tilde Q_3}$, $R_{\tilde Q_4}$ be the left and right multiplications. The **Sylvester equation** on the algebra is
 
 $$
-\tilde A\tilde Q + \tilde Q\tilde B = c ,
+\tilde Q_3\tilde Q + \tilde Q\tilde Q_4 = c ,
 $$
 
-an equation on the element $\tilde Q$ for given $\tilde A,\tilde B,c$, and its operator form is
+an equation on the element $\tilde Q$ for given $\tilde Q_3,\tilde Q_4,c$, and its operator form is
 
 $$
-(L_{\tilde A}+R_{\tilde B})(\tilde Q) = c .
+(L_{\tilde Q_3}+R_{\tilde Q_4})(\tilde Q) = c .
 $$
 
-This article is the biquaternion instance of *The Hermitian Sylvester Equation with Hermitian Adjoint*. The theory is complete and explicit: the Sylvester operator has the pairwise-sum spectrum $\lambda_{i}+\mu_{j}$, it is invertible exactly when the spectra of $\tilde A$ and of $-\tilde B$ are disjoint, its adjoint is $L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, it is self-adjoint exactly when **both** parameters are Hermitian, and the Hermitian case is the case of the **anticommutator**; the general article writes the solution operator of the Hermitian case as $L_{\tilde A}(\tilde Q)=\tilde{A}^{*}\tilde Q+\tilde Q\tilde A$, which is $S_{\tilde{A}^{*},\tilde A}$ here, its $L$ being the Sylvester operator and not the left multiplication $L_{\tilde A}$ of this series. Its companion $L_{\tilde A}-R_{\tilde A}$ is the inner derivation $\mathrm{ad}_{\tilde A}=[\tilde A,\cdot\,]$, which is skew-adjoint for Hermitian $\tilde A$ and carries the roots of the algebra. The two operators together split every element into the commutator and the anticommutator part, which is the reason the Sylvester equation sits at the centre of the operator theory of the algebra.
+This article is the biquaternion instance of *The Hermitian Sylvester Equation with Hermitian Adjoint*. The theory is complete and explicit: the Sylvester operator has the pairwise-sum spectrum $\lambda_{i}+\mu_{j}$, it is invertible exactly when the spectra of $\tilde Q_3$ and of $-\tilde Q_4$ are disjoint, its adjoint is $L_{\tilde Q_3^{*}}+R_{\tilde Q_4^{*}}$, it is self-adjoint exactly when **both** parameters are Hermitian, and the Hermitian case is the case of the **anticommutator**; the general article writes the solution operator of the Hermitian case as $L_{\tilde Q_3}(\tilde Q)=\tilde Q_3^{*}\tilde Q+\tilde Q\tilde Q_3$, which is $S_{\tilde Q_3^{*},\tilde Q_3}$ here, its $L$ being the Sylvester operator and not the left multiplication $L_{\tilde Q_3}$ of this series. Its companion $L_{\tilde Q_3}-R_{\tilde Q_3}$ is the inner derivation $\mathrm{ad}_{\tilde Q_3}=[\tilde Q_3,\cdot\,]$, which is skew-adjoint for Hermitian $\tilde Q_3$ and carries the roots of the algebra. The two operators together split every element into the commutator and the anticommutator part, which is the reason the Sylvester equation sits at the centre of the operator theory of the algebra.
 
 ## The Sylvester Operator and the Equation
 
-**Definition.** For $\tilde A,\tilde B\in\mathbb{B}$ the **Sylvester operator** is $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}\in\mathrm{End}(\mathbb{B})$, acting by $S_{\tilde A,\tilde B}(\tilde Q)=\tilde A\tilde Q+\tilde Q\tilde B$. The **Sylvester equation** is $S_{\tilde A,\tilde B}(\tilde Q)=c$; the **homogeneous** equation is $\tilde A\tilde Q+\tilde Q\tilde B=0$.
+**Definition.** For $\tilde Q_3,\tilde Q_4\in\mathbb{B}$ the **Sylvester operator** is $S_{\tilde Q_3,\tilde Q_4}=L_{\tilde Q_3}+R_{\tilde Q_4}\in\mathrm{End}(\mathbb{B})$, acting by $S_{\tilde Q_3,\tilde Q_4}(\tilde Q)=\tilde Q_3\tilde Q+\tilde Q\tilde Q_4$. The **Sylvester equation** is $S_{\tilde Q_3,\tilde Q_4}(\tilde Q)=c$; the **homogeneous** equation is $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=0$.
 
-**Proposition (the operator is a sum of the two one-sided families).** $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$, and $L_{\tilde A},R_{\tilde B}$ commute; $S_{\tilde A,\tilde B}$ is a linear bijection of the algebra precisely when it is injective, since the algebra is finite-dimensional.
+**Proposition (the operator is a sum of the two one-sided families).** $S_{\tilde Q_3,\tilde Q_4}=L_{\tilde Q_3}+R_{\tilde Q_4}$, and $L_{\tilde Q_3},R_{\tilde Q_4}$ commute; $S_{\tilde Q_3,\tilde Q_4}$ is a linear bijection of the algebra precisely when it is injective, since the algebra is finite-dimensional.
 
-**Example ($\tilde B=-\tilde A$: the commutator).** $S_{\tilde A,-\tilde A}=L_{\tilde A}-R_{\tilde A}=\mathrm{ad}_{\tilde A}$, the **inner derivation** $\tilde Q\mapsto \tilde A\tilde Q-\tilde Q\tilde A=[\tilde A,\tilde Q]$, whose kernel is the centraliser of $\tilde A$ and whose image is the space of the "commutators with $\tilde A$".
+**Example ($\tilde Q_4=-\tilde Q_3$: the commutator).** $S_{\tilde Q_3,-\tilde Q_3}=L_{\tilde Q_3}-R_{\tilde Q_3}=\mathrm{ad}_{\tilde Q_3}$, the **inner derivation** $\tilde Q\mapsto \tilde Q_3\tilde Q-\tilde Q\tilde Q_3=[\tilde Q_3,\tilde Q]$, whose kernel is the centraliser of $\tilde Q_3$ and whose image is the space of the "commutators with $\tilde Q_3$".
 
-**Example ($\tilde B=\tilde A$: the anticommutator).** $S_{\tilde A,\tilde A}=L_{\tilde A}+R_{\tilde A}$, the **anticommutator** operator $\tilde Q\mapsto \tilde A\tilde Q+\tilde Q\tilde A=\{\tilde A,\tilde Q\}$, whose kernel is the space of the elements **anti-commuting** with $\tilde A$.
+**Example ($\tilde Q_4=\tilde Q_3$: the anticommutator).** $S_{\tilde Q_3,\tilde Q_3}=L_{\tilde Q_3}+R_{\tilde Q_3}$, the **anticommutator** operator $\tilde Q\mapsto \tilde Q_3\tilde Q+\tilde Q\tilde Q_3=\{\tilde Q_3,\tilde Q\}$, whose kernel is the space of the elements **anti-commuting** with $\tilde Q_3$.
 
 ## The Spectrum and the Solvability Theorem
 
-**Theorem (the Sylvester spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde A)$ and $\mu_{1},\mu_{2}$ those of $\mathsf{M}_2(\tilde B)$. Then
+**Theorem (the Sylvester spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde Q_3)$ and $\mu_{1},\mu_{2}$ those of $\mathsf{M}_2(\tilde Q_4)$. Then
 
 $$
-\mathrm{spec}(S_{\tilde A,\tilde B})=\{\lambda_{i}+\mu_{j}\},\qquad
-\det(S_{\tilde A,\tilde B})=\prod_{i,j}(\lambda_{i}+\mu_{j}).
+\mathrm{spec}(S_{\tilde Q_3,\tilde Q_4})=\{\lambda_{i}+\mu_{j}\},\qquad
+\det(S_{\tilde Q_3,\tilde Q_4})=\prod_{i,j}(\lambda_{i}+\mu_{j}).
 $$
 
-*Proof.* $S_{\tilde A,\tilde B}=\mathsf{M}_2(\tilde A)\otimes I+I\otimes\mathsf{M}_2(\tilde B)^{T}$ in the vectorisation of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and the spectrum of a Kronecker sum is the set of pairwise sums.
+*Proof.* $S_{\tilde Q_3,\tilde Q_4}=\mathsf{M}_2(\tilde Q_3)\otimes I+I\otimes\mathsf{M}_2(\tilde Q_4)^{T}$ in the vectorisation of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and the spectrum of a Kronecker sum is the set of pairwise sums.
 
-**Theorem (the solvability criterion).** The Sylvester equation $\tilde A\tilde Q+\tilde Q\tilde B=c$ has a **unique** solution for every $c$ if and only if no eigenvalue of $\mathsf{M}_2(\tilde A)$ is the negative of an eigenvalue of $\mathsf{M}_2(\tilde B)$. If the criterion fails, the equation is solvable exactly when $c$ is orthogonal to the kernel of the adjoint $L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, and the solution set is an affine subspace of dimension $\sum_{m}(\text{multiplicity of }0\text{ in the spectrum})$.
+**Theorem (the solvability criterion).** The Sylvester equation $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=c$ has a **unique** solution for every $c$ if and only if no eigenvalue of $\mathsf{M}_2(\tilde Q_3)$ is the negative of an eigenvalue of $\mathsf{M}_2(\tilde Q_4)$. If the criterion fails, the equation is solvable exactly when $c$ is orthogonal to the kernel of the adjoint $L_{\tilde Q_3^{*}}+R_{\tilde Q_4^{*}}$, and the solution set is an affine subspace of dimension $\sum_{m}(\text{multiplicity of }0\text{ in the spectrum})$.
 
-*Proof.* $S_{\tilde A,\tilde B}$ is invertible iff $0$ is not an eigenvalue, i.e. iff no $\lambda_{i}+\mu_{j}=0$; the remaining statements are the Fredholm alternative for a finite-dimensional operator.
+*Proof.* $S_{\tilde Q_3,\tilde Q_4}$ is invertible iff $0$ is not an eigenvalue, i.e. iff no $\lambda_{i}+\mu_{j}=0$; the remaining statements are the Fredholm alternative for a finite-dimensional operator.
 
-**Remark (the Hermitian case).** When both parameters are **Hermitian**, the spectrum of $S_{\tilde A,\tilde B}$ is real and the criterion becomes: **no eigenvalue of $\tilde A$ is the negative of an eigenvalue of $\tilde B$**. For $\tilde A=\tilde B$ Hermitian the anticommutator $\tilde A\tilde Q+\tilde Q\tilde A=c$ is uniquely solvable exactly when $\tilde A$ has no pair of **opposite** eigenvalues: this is the Hermitian Sylvester equation proper, and it fails exactly at $\tilde A=\mathrm{diag}(1,-1)$ (for which $\tilde Q=\mathrm{diag}(0,0)$ is a nonzero solution of the homogeneous equation) and at the elements with a zero eigenvalue.
+**Remark (the Hermitian case).** When both parameters are **Hermitian**, the spectrum of $S_{\tilde Q_3,\tilde Q_4}$ is real and the criterion becomes: **no eigenvalue of $\tilde Q_3$ is the negative of an eigenvalue of $\tilde Q_4$**. For $\tilde Q_3=\tilde Q_4$ Hermitian the anticommutator $\tilde Q_3\tilde Q+\tilde Q\tilde Q_3=c$ is uniquely solvable exactly when $\tilde Q_3$ has no pair of **opposite** eigenvalues: this is the Hermitian Sylvester equation proper, and it fails exactly at $\tilde Q_3=\mathrm{diag}(1,-1)$ (for which $\tilde Q=\mathrm{diag}(0,0)$ is a nonzero solution of the homogeneous equation) and at the elements with a zero eigenvalue.
 
 ## The Adjoint and the Self-Adjoint Cases
 
-**Theorem (the adjoint).** $(L_{\tilde A}+R_{\tilde B})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, that is $S_{\tilde A,\tilde B}^{*}=S_{\tilde{A}^{*},\tilde{B}^{*}}$.
+**Theorem (the adjoint).** $(L_{\tilde Q_3}+R_{\tilde Q_4})^{*}=L_{\tilde Q_3^{*}}+R_{\tilde Q_4^{*}}$, that is $S_{\tilde Q_3,\tilde Q_4}^{*}=S_{\tilde Q_3^{*},\tilde Q_4^{*}}$.
 
-*Proof.* From $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and $(R_{\tilde B})^{*}=R_{\tilde{B}^{*}}$ of *One-Sided Operators on the General Plain Sesqualgebra*.
+*Proof.* From $(L_{\tilde Q_3})^{*}=L_{\tilde Q_3^{*}}$ and $(R_{\tilde Q_4})^{*}=R_{\tilde Q_4^{*}}$ of *One-Sided Operators on the General Plain Sesqualgebra*.
 
-**Corollary (self-adjointness needs both parameters Hermitian).** $S_{\tilde A,\tilde B}$ is self-adjoint if and only if $\tilde A$ and $\tilde B$ are both Hermitian. In particular the Lyapunov operator $S_{\tilde A,\tilde{A}^{*}}=L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint if and only if $\tilde A$ is Hermitian; for general $\tilde A$ it is not, and its adjoint is $L_{\tilde{A}^{*}}+R_{\tilde A}$. **The temptation to call $L_{\tilde A}+R_{\tilde{A}^{*}}$ self-adjoint for every $\tilde A$ is the trap of this article.**
+**Corollary (self-adjointness needs both parameters Hermitian).** $S_{\tilde Q_3,\tilde Q_4}$ is self-adjoint if and only if $\tilde Q_3$ and $\tilde Q_4$ are both Hermitian. In particular the Lyapunov operator $S_{\tilde Q_3,\tilde Q_3^{*}}=L_{\tilde Q_3}+R_{\tilde Q_3^{*}}$ is self-adjoint if and only if $\tilde Q_3$ is Hermitian; for general $\tilde Q_3$ it is not, and its adjoint is $L_{\tilde Q_3^{*}}+R_{\tilde Q_3}$. **The temptation to call $L_{\tilde Q_3}+R_{\tilde Q_3^{*}}$ self-adjoint for every $\tilde Q_3$ is the trap of this article.**
 
-*Proof.* $S_{\tilde A,\tilde B}^{*}=S_{\tilde{A}^{*},\tilde{B}^{*}}$ equals $S_{\tilde A,\tilde B}$ iff $\tilde{A}^{*}=\tilde A$ and $\tilde{B}^{*}=\tilde B$. The Lyapunov case: $S_{\tilde A,\tilde{A}^{*}}^{*}=S_{\tilde{A}^{*},\tilde A}$, which equals $S_{\tilde A,\tilde{A}^{*}}$ iff $\tilde A=\tilde{A}^{*}$.
+*Proof.* $S_{\tilde Q_3,\tilde Q_4}^{*}=S_{\tilde Q_3^{*},\tilde Q_4^{*}}$ equals $S_{\tilde Q_3,\tilde Q_4}$ iff $\tilde Q_3^{*}=\tilde Q_3$ and $\tilde Q_4^{*}=\tilde Q_4$. The Lyapunov case: $S_{\tilde Q_3,\tilde Q_3^{*}}^{*}=S_{\tilde Q_3^{*},\tilde Q_3}$, which equals $S_{\tilde Q_3,\tilde Q_3^{*}}$ iff $\tilde Q_3=\tilde Q_3^{*}$.
 
-**Corollary (the anticommutator spectrum in the Hermitian case).** For Hermitian $\tilde A$ the operator $L_{\tilde A}+R_{\tilde A}$ is self-adjoint with the real spectrum $\{2\lambda_{1},\ \lambda_{1}+\lambda_{2},\ \lambda_{1}+\lambda_{2},\ 2\lambda_{2}\}$: the two **doubled** eigenvalues $2\lambda_{i}$ and the **sum** $\lambda_{1}+\lambda_{2}$ counted twice. Consequently: if $\tilde A$ is definite the anticommutator operator is definite with the sign of $\tilde A$; if $\tilde A$ is indefinite it has eigenvalues of both signs and is never definite; and it is **singular** exactly when $\lambda_{1}+\lambda_{2}=0$, that is, exactly when the Hermitian and indefinite $\tilde A$ has trace zero. The same computation for the sandwich gives the products $\lambda_{i}\lambda_{j}$ and the signature $(p^{2}+q^{2},2pq)$ of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*: the anticommutator uses the **sums** and the sandwich the **products** of the eigenvalues, and the two patterns must not be interchanged.
+**Corollary (the anticommutator spectrum in the Hermitian case).** For Hermitian $\tilde Q_3$ the operator $L_{\tilde Q_3}+R_{\tilde Q_3}$ is self-adjoint with the real spectrum $\{2\lambda_{1},\ \lambda_{1}+\lambda_{2},\ \lambda_{1}+\lambda_{2},\ 2\lambda_{2}\}$: the two **doubled** eigenvalues $2\lambda_{i}$ and the **sum** $\lambda_{1}+\lambda_{2}$ counted twice. Consequently: if $\tilde Q_3$ is definite the anticommutator operator is definite with the sign of $\tilde Q_3$; if $\tilde Q_3$ is indefinite it has eigenvalues of both signs and is never definite; and it is **singular** exactly when $\lambda_{1}+\lambda_{2}=0$, that is, exactly when the Hermitian and indefinite $\tilde Q_3$ has trace zero. The same computation for the sandwich gives the products $\lambda_{i}\lambda_{j}$ and the signature $(p^{2}+q^{2},2pq)$ of *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*: the anticommutator uses the **sums** and the sandwich the **products** of the eigenvalues, and the two patterns must not be interchanged.
 
 ## The Commutator, the Anticommutator and the Derivation
 
-**Theorem (the commutator laws).** For all $\tilde A,\tilde B$,
+**Theorem (the commutator laws).** For all $\tilde Q_3,\tilde Q_4$,
 
 $$
-[L_{\tilde A},L_{\tilde B}]=L_{[\tilde A,\tilde B]},\qquad [R_{\tilde A},R_{\tilde B}]=-R_{[\tilde A,\tilde B]},\qquad [L_{\tilde A},R_{\tilde B}]=0 .
+[L_{\tilde Q_3},L_{\tilde Q_4}]=L_{[\tilde Q_3,\tilde Q_4]},\qquad [R_{\tilde Q_3},R_{\tilde Q_4}]=-R_{[\tilde Q_3,\tilde Q_4]},\qquad [L_{\tilde Q_3},R_{\tilde Q_4}]=0 .
 $$
 
-*Proof.* $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$ from the composition laws, and $L$ and $R$ commute because left and right multiplication commute.
+*Proof.* $L_{\tilde Q_3}L_{\tilde Q_4}=L_{\tilde Q_3\tilde Q_4}$ and $R_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4\tilde Q_3}$ from the composition laws, and $L$ and $R$ commute because left and right multiplication commute.
 
-**Corollary (the inner derivation is a Lie algebra homomorphism).** The map $\tilde A\mapsto\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$ is a representation of the Lie algebra of $\mathbb{B}$ on $\mathbb{B}$,
+**Corollary (the inner derivation is a Lie algebra homomorphism).** The map $\tilde Q_3\mapsto\mathrm{ad}_{\tilde Q_3}=L_{\tilde Q_3}-R_{\tilde Q_3}$ is a representation of the Lie algebra of $\mathbb{B}$ on $\mathbb{B}$,
 
 $$
-[\mathrm{ad}_{\tilde A},\mathrm{ad}_{\tilde B}]=\mathrm{ad}_{[\tilde A,\tilde B]},\qquad\text{that is}\qquad [L_{\tilde A}-R_{\tilde A},\ L_{\tilde B}-R_{\tilde B}]=L_{[\tilde A,\tilde B]}-R_{[\tilde A,\tilde B]},
+[\mathrm{ad}_{\tilde Q_3},\mathrm{ad}_{\tilde Q_4}]=\mathrm{ad}_{[\tilde Q_3,\tilde Q_4]},\qquad\text{that is}\qquad [L_{\tilde Q_3}-R_{\tilde Q_3},\ L_{\tilde Q_4}-R_{\tilde Q_4}]=L_{[\tilde Q_3,\tilde Q_4]}-R_{[\tilde Q_3,\tilde Q_4]},
 $$
 
-and $\mathrm{ad}_{\tilde A}$ is a derivation of the associative algebra, $\mathrm{ad}_{\tilde A}(\tilde Q_1\tilde Q_2)=\mathrm{ad}_{\tilde A}(\tilde Q_1)\tilde Q_2+\tilde Q_1\,\mathrm{ad}_{\tilde A}(\tilde Q_2)$. Its spectrum is the set of pairwise differences $\lambda_{i}-\lambda_{j}$: for Hermitian $\tilde A$ these are the real **roots** and $\mathrm{ad}_{\tilde A}$ is the infinitesimal generator of the inner automorphism group. This is the operator form of *Biquaternion Automorphisms and Derivations*.
+and $\mathrm{ad}_{\tilde Q_3}$ is a derivation of the associative algebra, $\mathrm{ad}_{\tilde Q_3}(\tilde Q_1\tilde Q_2)=\mathrm{ad}_{\tilde Q_3}(\tilde Q_1)\tilde Q_2+\tilde Q_1\,\mathrm{ad}_{\tilde Q_3}(\tilde Q_2)$. Its spectrum is the set of pairwise differences $\lambda_{i}-\lambda_{j}$: for Hermitian $\tilde Q_3$ these are the real **roots** and $\mathrm{ad}_{\tilde Q_3}$ is the infinitesimal generator of the inner automorphism group. This is the operator form of *Biquaternion Automorphisms and Derivations*.
 
-**Theorem (adjointness of the commutator and the anticommutator).** For $\tilde A\in\mathbb{B}$:
+**Theorem (adjointness of the commutator and the anticommutator).** For $\tilde Q_3\in\mathbb{B}$:
 
-1. $(\mathrm{ad}_{\tilde A})^{*}=\mathrm{ad}_{\tilde{A}^{*}}$; hence the inner derivation $\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$ is **self-adjoint** exactly when $\tilde A$ is Hermitian and **skew-adjoint** exactly when $\tilde A$ is anti-Hermitian;
-2. the anticommutator operator $L_{\tilde A}+R_{\tilde A}$ is **self-adjoint** exactly when $\tilde A$ is Hermitian.
+1. $(\mathrm{ad}_{\tilde Q_3})^{*}=\mathrm{ad}_{\tilde Q_3^{*}}$; hence the inner derivation $\mathrm{ad}_{\tilde Q_3}=L_{\tilde Q_3}-R_{\tilde Q_3}$ is **self-adjoint** exactly when $\tilde Q_3$ is Hermitian and **skew-adjoint** exactly when $\tilde Q_3$ is anti-Hermitian;
+2. the anticommutator operator $L_{\tilde Q_3}+R_{\tilde Q_3}$ is **self-adjoint** exactly when $\tilde Q_3$ is Hermitian.
 
-*Proof.* $(L_{\tilde A}+R_{\tilde A})^{*}=L_{\tilde{A}^{*}}+R_{\tilde{A}^{*}}$, which equals $L_{\tilde A}+R_{\tilde A}$ iff $\tilde{A}^{*}=\tilde A$ for (2); the same computation with the relative sign gives $(\mathrm{ad}_{\tilde A})^{*}=\mathrm{ad}_{\tilde{A}^{*}}$ for (1).
+*Proof.* $(L_{\tilde Q_3}+R_{\tilde Q_3})^{*}=L_{\tilde Q_3^{*}}+R_{\tilde Q_3^{*}}$, which equals $L_{\tilde Q_3}+R_{\tilde Q_3}$ iff $\tilde Q_3^{*}=\tilde Q_3$ for (2); the same computation with the relative sign gives $(\mathrm{ad}_{\tilde Q_3})^{*}=\mathrm{ad}_{\tilde Q_3^{*}}$ for (1).
 
 **Remark (the sector reading).** The two statements are the sector decomposition at the operator level: the **anticommutator** is the self-adjoint operator of the **Hermitian** elements, and the **commutator** is the skew-adjoint operator of the **anti-Hermitian** elements. Since $e_{k}\in\mathbb{M}_-$ for $k=1,2,3$, the derivations $\mathrm{ad}_{e_{k}}$ are skew-adjoint with purely imaginary spectra, and $\exp(\mathrm{ad}_{e_{k}})$ are rotations, of period $\pi$ because the elementary rotation is at half-angle: this is the operator form of the compact internal group of *One-Sided Operators on the General Plain Sesqualgebra*.
 
 ## The Solution
 
-**Theorem (the Kronecker solution).** When $S_{\tilde A,\tilde B}$ is invertible, the solution of $\tilde A\tilde Q+\tilde Q\tilde B=c$ is $\tilde Q=\mathrm{vec}^{-1}\bigl((\mathsf{M}_2(\tilde A)\otimes I+I\otimes\mathsf{M}_2(\tilde B)^{T})^{-1}\,\mathrm{vec}(c)\bigr)$, and in a basis diagonalising both parameters simultaneously (when they commute and are separately diagonalisable) it is the entrywise formula
+**Theorem (the Kronecker solution).** When $S_{\tilde Q_3,\tilde Q_4}$ is invertible, the solution of $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=c$ is $\tilde Q=\mathrm{vec}^{-1}\bigl((\mathsf{M}_2(\tilde Q_3)\otimes I+I\otimes\mathsf{M}_2(\tilde Q_4)^{T})^{-1}\,\mathrm{vec}(c)\bigr)$, and in a basis diagonalising both parameters simultaneously (when they commute and are separately diagonalisable) it is the entrywise formula
 
 $$
 Q_{ij} = \frac{c_{ij}}{\lambda_{i}+\mu_{j}} .
 $$
 
-*Proof.* The vectorised equation is a linear system with matrix $\mathsf{M}_2(\tilde A)\otimes I+I\otimes\mathsf{M}_2(\tilde B)^{T}$; the diagonal case is the $2\times2$ instance of it.
+*Proof.* The vectorised equation is a linear system with matrix $\mathsf{M}_2(\tilde Q_3)\otimes I+I\otimes\mathsf{M}_2(\tilde Q_4)^{T}$; the diagonal case is the $2\times2$ instance of it.
 
-**Theorem (the integral representation).** Let $\tilde A,\tilde B$ have spectra in the open right half-plane (so that $\exp(-t\tilde A)$ and $\exp(-t\tilde B)$ decay). Then
+**Theorem (the integral representation).** Let $\tilde Q_3,\tilde Q_4$ have spectra in the open right half-plane (so that $\exp(-t\tilde Q_3)$ and $\exp(-t\tilde Q_4)$ decay). Then
 
 $$
-\tilde Q = \int_{0}^{\infty} \exp(-t\tilde A)\,c\,\exp(-t\tilde B)\,dt
+\tilde Q = \int_{0}^{\infty} \exp(-t\tilde Q_3)\,c\,\exp(-t\tilde Q_4)\,dt
 $$
 
-is the solution of $\tilde A\tilde Q+\tilde Q\tilde B=c$.
+is the solution of $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=c$.
 
-*Proof.* Differentiate: $\tilde A\tilde Q+\tilde Q\tilde B=\int_{0}^{\infty}\bigl(\tilde A \exp(-t\tilde A)c\exp(-t\tilde B)+\exp(-t\tilde A)c\exp(-t\tilde B)\tilde B\bigr)dt=-\int_{0}^{\infty}\frac{d}{dt}\bigl(\exp(-t\tilde A)c\exp(-t\tilde B)\bigr)dt=\exp(0)ce^{0}=c$.
+*Proof.* Differentiate: $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=\int_{0}^{\infty}\bigl(\tilde Q_3 \exp(-t\tilde Q_3)c\exp(-t\tilde Q_4)+\exp(-t\tilde Q_3)c\exp(-t\tilde Q_4)\tilde Q_4\bigr)dt=-\int_{0}^{\infty}\frac{d}{dt}\bigl(\exp(-t\tilde Q_3)c\exp(-t\tilde Q_4)\bigr)dt=\exp(0)ce^{0}=c$.
 
-**Remark (why the Hermitian case is the interesting one).** For Hermitian $\tilde A,\tilde B$ the operator is self-adjoint and the equation is the **operator form of the Hermitian condition**: it is the equation satisfied by the fixed point of the linear relaxation $\tilde Q\mapsto c-\tilde A\tilde Q-\tilde Q\tilde B$, by the correction term of any perturbative expansion, and by the solution of the Lyapunov problem of linear systems theory. The integral representation is the statement that the solution is a **time-ordered average** of the two exponential factors, and it is the reason the solution of a stable equation is written with two decaying exponentials rather than one.
+**Remark (why the Hermitian case is the interesting one).** For Hermitian $\tilde Q_3,\tilde Q_4$ the operator is self-adjoint and the equation is the **operator form of the Hermitian condition**: it is the equation satisfied by the fixed point of the linear relaxation $\tilde Q\mapsto c-\tilde Q_3\tilde Q-\tilde Q\tilde Q_4$, by the correction term of any perturbative expansion, and by the solution of the Lyapunov problem of linear systems theory. The integral representation is the statement that the solution is a **time-ordered average** of the two exponential factors, and it is the reason the solution of a stable equation is written with two decaying exponentials rather than one.
 
 ## Worked Examples
 
-**The identity.** $\tilde A=\tilde B=e_{0}$: $S(\tilde Q)=2\tilde Q$, invertible, solution $\tilde Q=c/2$. The spectrum is $\{2,2,2,2\}$ and $\det(S)=16$, as the formula gives.
+**The identity.** $\tilde Q_3=\tilde Q_4=e_{0}$: $S(\tilde Q)=2\tilde Q$, invertible, solution $\tilde Q=c/2$. The spectrum is $\{2,2,2,2\}$ and $\det(S)=16$, as the formula gives.
 
 **The singular Hermitian case.** For the Hermitian element $ie_{3}$ (the matrix $\sigma_{3}$, eigenvalues $\{1,-1\}$ and inertia $(1,1)$): the anticommutator operator $L_{ie_{3}}+R_{ie_{3}}$ is self-adjoint with the real spectrum $\{2,0,0,-2\}$ and it is **singular**, because the two opposite eigenvalues $1$ and $-1$ give the vanishing sum. The homogeneous equation $ie_{3}\tilde Q+\tilde Qie_{3}=0$ has the two-dimensional solution space spanned by the off-diagonal matrix units $E_{12}$ and $E_{21}$: the anticommutator is not invertible exactly for the indefinite Hermitian elements with opposite eigenvalues, which is the exact algebraic statement of the failure of the Hermitian Sylvester equation in that case.
 
-**The Lyapunov operator of an anti-Hermitian element.** For $\tilde A=e_{3}$ (anti-Hermitian, $e_{3}^{\dagger}=-e_{3}$) the operator $L_{\tilde A}+R_{\tilde{A}^{*}}=L_{e_{3}}-R_{e_{3}}=\mathrm{ad}_{e_{3}}$ is the inner derivation, and it is **not** self-adjoint but skew-adjoint, with the purely imaginary spectrum $\{0,2i,-2i,0\}$. This is the trap of the article in its sharpest form: $L_{\tilde A}+R_{\tilde{A}^{*}}$ looks symmetric in its two factors and is skew-adjoint for an anti-Hermitian $\tilde A$.
+**The Lyapunov operator of an anti-Hermitian element.** For $\tilde Q_3=e_{3}$ (anti-Hermitian, $e_{3}^{\dagger}=-e_{3}$) the operator $L_{\tilde Q_3}+R_{\tilde Q_3^{*}}=L_{e_{3}}-R_{e_{3}}=\mathrm{ad}_{e_{3}}$ is the inner derivation, and it is **not** self-adjoint but skew-adjoint, with the purely imaginary spectrum $\{0,2i,-2i,0\}$. This is the trap of the article in its sharpest form: $L_{\tilde Q_3}+R_{\tilde Q_3^{*}}$ looks symmetric in its two factors and is skew-adjoint for an anti-Hermitian $\tilde Q_3$.
 
 **The derivation of the internal rotation.** $\mathrm{ad}_{e_{3}}$ has the spectrum $\{0,2i,-2i,0\}$, the pairwise differences of the eigenvalues $\{i,-i\}$ of $\mathsf{M}_2(e_{3})$: the two roots $\pm2i$ are the weights of the derivation on the off-diagonal entries and the two zeros are the diagonal weights. Since $e_{3}\in\mathbb{M}_-$ the derivation is skew-adjoint and $\exp(\mathrm{ad}_{e_{3}})$ is a rotation of period $\pi$, the internal rotation group generated by $e_{3}$ at half-angle.
 
-**The commutator with $e_{0}$.** $\mathrm{ad}_{e_{0}}=L_{e_{0}}-R_{e_{0}}=0$: the identity generates no inner derivation, and consistently the central elements have zero pairwise differences. More generally $\mathrm{ad}_{\tilde A}=0$ exactly for the central $\tilde A$.
+**The commutator with $e_{0}$.** $\mathrm{ad}_{e_{0}}=L_{e_{0}}-R_{e_{0}}=0$: the identity generates no inner derivation, and consistently the central elements have zero pairwise differences. More generally $\mathrm{ad}_{\tilde Q_3}=0$ exactly for the central $\tilde Q_3$.
 
 ## Summary
 
-The Sylvester equation $\tilde A\tilde Q+\tilde Q\tilde B=c$ on the biquaternion algebra is the equation of the operator $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$, whose spectrum is the set of pairwise sums $\lambda_{i}+\mu_{j}$ and whose determinant is their product; it is uniquely solvable exactly when no eigenvalue of $\tilde A$ is the negative of an eigenvalue of $\tilde B$, and in the Hermitian case exactly when the two Hermitian parameters have no opposite eigenvalues. The adjoint is $S_{\tilde A,\tilde B}^{*}=L_{\tilde{A}^{*}}+R_{\tilde{B}^{*}}$, so $S_{\tilde A,\tilde B}$ is self-adjoint exactly when **both** parameters are Hermitian — in particular the Lyapunov operator $L_{\tilde A}+R_{\tilde{A}^{*}}$ is self-adjoint only for Hermitian $\tilde A$, which is the trap of the article. The companion operator $L_{\tilde A}-R_{\tilde A}$ is the inner derivation $\mathrm{ad}_{\tilde A}=[\tilde A,\cdot\,]$, with spectrum the pairwise differences $\lambda_{i}-\lambda_{j}$, skew-adjoint exactly for the anti-Hermitian parameters, and a Lie algebra homomorphism $\tilde A\mapsto\mathrm{ad}_{\tilde A}$; the anticommutator is self-adjoint exactly for the Hermitian parameters. The solution is given by the Kronecker inverse, by the entrywise formula $Q_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$ in the diagonalisable case, and by the time-ordered integral $\int_{0}^{\infty}\exp(-t\tilde A)c\exp(-t\tilde B)dt$ in the stable case.
+The Sylvester equation $\tilde Q_3\tilde Q+\tilde Q\tilde Q_4=c$ on the biquaternion algebra is the equation of the operator $S_{\tilde Q_3,\tilde Q_4}=L_{\tilde Q_3}+R_{\tilde Q_4}$, whose spectrum is the set of pairwise sums $\lambda_{i}+\mu_{j}$ and whose determinant is their product; it is uniquely solvable exactly when no eigenvalue of $\tilde Q_3$ is the negative of an eigenvalue of $\tilde Q_4$, and in the Hermitian case exactly when the two Hermitian parameters have no opposite eigenvalues. The adjoint is $S_{\tilde Q_3,\tilde Q_4}^{*}=L_{\tilde Q_3^{*}}+R_{\tilde Q_4^{*}}$, so $S_{\tilde Q_3,\tilde Q_4}$ is self-adjoint exactly when **both** parameters are Hermitian — in particular the Lyapunov operator $L_{\tilde Q_3}+R_{\tilde Q_3^{*}}$ is self-adjoint only for Hermitian $\tilde Q_3$, which is the trap of the article. The companion operator $L_{\tilde Q_3}-R_{\tilde Q_3}$ is the inner derivation $\mathrm{ad}_{\tilde Q_3}=[\tilde Q_3,\cdot\,]$, with spectrum the pairwise differences $\lambda_{i}-\lambda_{j}$, skew-adjoint exactly for the anti-Hermitian parameters, and a Lie algebra homomorphism $\tilde Q_3\mapsto\mathrm{ad}_{\tilde Q_3}$; the anticommutator is self-adjoint exactly for the Hermitian parameters. The solution is given by the Kronecker inverse, by the entrywise formula $Q_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$ in the diagonalisable case, and by the time-ordered integral $\int_{0}^{\infty}\exp(-t\tilde Q_3)c\exp(-t\tilde Q_4)dt$ in the stable case.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $S_{\tilde A,\tilde B}=L_{\tilde A}+R_{\tilde B}$ | Sylvester operator; $\tilde Q\mapsto \tilde A\tilde Q+\tilde Q\tilde B$ |
-| $\mathrm{spec}(S_{\tilde A,\tilde B})=\{\lambda_{i}+\mu_{j}\}$ | Pairwise sums of the spectra |
-| $\det(S_{\tilde A,\tilde B})=\prod_{i,j}(\lambda_{i}+\mu_{j})$ | Product of the pairwise sums |
-| $S_{\tilde A,\tilde B}^{*}=S_{\tilde{A}^{*},\tilde{B}^{*}}$ | The adjoint; self-adjoint iff $\tilde A,\tilde B$ both Hermitian |
-| $\mathrm{ad}_{\tilde A}=L_{\tilde A}-R_{\tilde A}$ | Inner derivation; spectrum $\lambda_{i}-\lambda_{j}$ |
-| $\{\tilde A,\cdot\}=L_{\tilde A}+R_{\tilde A}$ | Anticommutator operator; self-adjoint iff $\tilde A$ Hermitian |
-| $[L_{\tilde A},L_{\tilde B}]=L_{[\tilde A,\tilde B]}$ | Commutator law of the left multiplications |
+| $S_{\tilde Q_3,\tilde Q_4}=L_{\tilde Q_3}+R_{\tilde Q_4}$ | Sylvester operator; $\tilde Q\mapsto \tilde Q_3\tilde Q+\tilde Q\tilde Q_4$ |
+| $\mathrm{spec}(S_{\tilde Q_3,\tilde Q_4})=\{\lambda_{i}+\mu_{j}\}$ | Pairwise sums of the spectra |
+| $\det(S_{\tilde Q_3,\tilde Q_4})=\prod_{i,j}(\lambda_{i}+\mu_{j})$ | Product of the pairwise sums |
+| $S_{\tilde Q_3,\tilde Q_4}^{*}=S_{\tilde Q_3^{*},\tilde Q_4^{*}}$ | The adjoint; self-adjoint iff $\tilde Q_3,\tilde Q_4$ both Hermitian |
+| $\mathrm{ad}_{\tilde Q_3}=L_{\tilde Q_3}-R_{\tilde Q_3}$ | Inner derivation; spectrum $\lambda_{i}-\lambda_{j}$ |
+| $\{\tilde Q_3,\cdot\}=L_{\tilde Q_3}+R_{\tilde Q_3}$ | Anticommutator operator; self-adjoint iff $\tilde Q_3$ Hermitian |
+| $[L_{\tilde Q_3},L_{\tilde Q_4}]=L_{[\tilde Q_3,\tilde Q_4]}$ | Commutator law of the left multiplications |
 | $Q_{ij}=c_{ij}/(\lambda_{i}+\mu_{j})$ | The solution in the diagonalisable case |
-| $\int_{0}^{\infty}\exp(-t\tilde A)c\exp(-t\tilde B)dt$ | The solution in the stable case |
+| $\int_{0}^{\infty}\exp(-t\tilde Q_3)c\exp(-t\tilde Q_4)dt$ | The solution in the stable case |
 
 ## Further Reading
 
 - *The Hermitian Sylvester Equation with Hermitian Adjoint* (`articles_maths/the-hermitian-sylvester-equation-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the spectral rules used throughout.
-- *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the adjoints $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and the composition laws.
+- *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the adjoints $(L_{\tilde Q_3})^{*}=L_{\tilde Q_3^{*}}$ and the composition laws.
 - *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich, its invariants and the congruence.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations, the roots and the exponential.
 - *Self-Adjoint and Skew Operators with Hermitian Adjoint* (`articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.md`), for the general theory of the adjoint on an operator algebra.

@@ -305,7 +305,7 @@ The field's value space is the centre $\mathbb{C}_{\mathbb{B}}$, and the algebra
 | $:\!H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Normal-ordered Hamiltonian |
 | $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Conserved charge |
 | $i\Delta(x-y)=[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}\dagger}(y)]$ | Commutator (Pauli–Jordan) function |
-| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}([\tilde A,\tilde Q_1])=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric (level 2) |
 
 ## Further Reading

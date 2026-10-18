@@ -40,7 +40,7 @@ $$
 $$
 where $K_{\mathrm{boost}}$ is the generator of the one-parameter group of boosts that preserve $W_R$, normalized so that the boost Killing vector is $\xi=\partial_\eta$. Equivalently, the modular flow is the boost by rapidity $2\pi s$ (the orientation is fixed below; in the rotor convention of this article the modular flow is $\tilde U(-2\pi s)$, which is future-directed on $W_R$):
 $$
-\sigma_s(\tilde A)=\Delta^{is}\tilde A\Delta^{-is} = \text{the boost of rapidity }2\pi s\text{ applied to }\tilde A .
+\sigma_s(\tilde Q_1)=\Delta^{is}\tilde Q_1\Delta^{-is} = \text{the boost of rapidity }2\pi s\text{ applied to }\tilde Q_1 .
 $$
 
 2. **The modular conjugation is the PCT/reflection operator.** The modular conjugation is
@@ -49,7 +49,7 @@ J=\Theta\,U(R_W),
 $$
 with $\Theta$ the PCT operator and $U(R_W)$ the unitary representative of the rotation by $\pi$ that leaves the characteristic two-plane of the wedge invariant. Consequently $J$ is anti-unitary,
 $$
-J(z\tilde A)=\bar z\,J(\tilde A),\qquad J\,i\,J=-i,\qquad J^2=1,\qquad J\Delta J=\Delta^{-1},
+J(z\tilde Q_1)=\bar z\,J(\tilde Q_1),\qquad J\,i\,J=-i,\qquad J^2=1,\qquad J\Delta J=\Delta^{-1},
 $$
 and it realises the geometric reflection that exchanges the two wedges. The corresponding statement on the field algebra is that
 $$
@@ -69,9 +69,9 @@ The two parent articles meet precisely here.
 
 **What the modular-theory article supplied.** It built the Tomita operator of the finite-dimensional algebra, identified it with Hermitian conjugation, and obtained the polar decomposition
 $$
-\Delta(\tilde A)=\tilde{Ϛ}\,\tilde A\,\tilde{Ϛ}^{-1},\qquad
-J(\tilde A)=\tilde{Ϛ}^{1/2}\tilde A^{*}\tilde{Ϛ}^{-1/2},\qquad
-\sigma_s(\tilde A)=\tilde{Ϛ}^{is}\tilde A\tilde{Ϛ}^{-is},
+\Delta(\tilde Q_1)=\tilde{Ϛ}\,\tilde Q_1\,\tilde{Ϛ}^{-1},\qquad
+J(\tilde Q_1)=\tilde{Ϛ}^{1/2}\tilde Q_1^{*}\tilde{Ϛ}^{-1/2},\qquad
+\sigma_s(\tilde Q_1)=\tilde{Ϛ}^{is}\tilde Q_1\tilde{Ϛ}^{-is},
 $$
 with $\tilde{Ϛ}\in\mathbb{M}_+$ a faithful state and $\tilde K=-\log\tilde{Ϛ}\in\mathbb{M}_+$. It also recorded the gap that this construction leaves: the finite-dimensional flow is **inner**, and the framework supplies a family of states but no dynamics that selects one. The abstract flow $\sigma_s$ is what the present article identifies with the boost.
 
@@ -170,7 +170,7 @@ The third conclusion is that the modular conjugation $J$ is the PCT/reflection o
 
 **The algebraic facts.** $J$ is **anti-unitary**:
 $$
-J(z\tilde A)=\bar z\,J(\tilde A),\qquad z\in\mathbb{C},
+J(z\tilde Q_1)=\bar z\,J(\tilde Q_1),\qquad z\in\mathbb{C},
 $$
 equivalently $J\,i\,J=-i$: the modular conjugation conjugates the scalar imaginary. It is an involution and it inverts the modular operator,
 $$
@@ -178,11 +178,11 @@ J^2=1,\qquad J\Delta J=\Delta^{-1},\qquad J\,M(W_R)\,J=M(W_L)=M(W_R)' .
 $$
 The last is wedge duality. In the finite-dimensional model of the modular-theory article, with $\tilde{Ϛ}\in\mathbb{M}_+$ faithful, the explicit form is
 $$
-J(\tilde A)=\tilde{Ϛ}^{1/2}\tilde A^{*}\tilde{Ϛ}^{-1/2},
+J(\tilde Q_1)=\tilde{Ϛ}^{1/2}\tilde Q_1^{*}\tilde{Ϛ}^{-1/2},
 $$
 and the four identities
 $$
-J^2=\mathrm{id},\qquad J(i\tilde A)=-i\,J(\tilde A),\qquad J(\tilde{Ϛ})=\tilde{Ϛ},\qquad J\Delta J=\Delta^{-1}
+J^2=\mathrm{id},\qquad J(i\tilde Q_1)=-i\,J(\tilde Q_1),\qquad J(\tilde{Ϛ})=\tilde{Ϛ},\qquad J\Delta J=\Delta^{-1}
 $$
 were recomputed in rational arithmetic for two faithful states whose Bloch vectors were chosen after the formulas, not before them:
 $$
@@ -211,7 +211,7 @@ The question posed for this article is whether the biquaternion framework's boos
 
 *Unitarity.* The modular flow is unitary: $\Delta^{is}=\exp(-2\pi isK_{\mathrm{boost}})$ satisfies $\Delta^{is}(\Delta^{is})^\dagger=1$. The finite-dimensional boost rotor is Hermitian, $\tilde U(\psi)^{*}=\tilde U(\psi)$, with $\tilde U(\psi)^2=\exp(\psi G_1)\neq e_t$ for $\psi\neq0$, so it is not unitary implementing a symmetry of the finite-dimensional Hilbert space. This is the familiar statement that the Lorentz group, being noncompact, has no nontrivial finite-dimensional unitary representation; the unitary implementation of the boost exists only on the field-theoretic Hilbert space, not inside $\mathbb{B}$.
 
-*Inner versus two-sided.* In finite dimension the modular flow is inner, $\sigma_s(\tilde A)=\tilde{Ϛ}^{is}\tilde A\tilde{Ϛ}^{-is}=\exp(-isK)\tilde A \exp(isK)$, whose generator on the algebra is the **commutator** $-i[K,\cdot]$. The geometric boost on $\mathbb{M}_-$ is the **two-sided** action with generator the anticommutator $\tfrac12(G_1\cdot+\cdot G_1)$. On the boost plane the commutator vanishes, $-i[G_1,\tilde{Q}]=0$ for $\tilde{Q}=iq_0e_t+q_x\vec e_x$, while the two-sided action moves $q_t,q_x$ precisely as the boost; and off the boost plane the commutator generates a rotation in the $(\vec e_y,\vec e_z)$ plane. So the finite-dimensional inner flow cannot be the geometric boost on the material sector. This is the exact sense in which the model verifies the generator but not the flow.
+*Inner versus two-sided.* In finite dimension the modular flow is inner, $\sigma_s(\tilde Q_1)=\tilde{Ϛ}^{is}\tilde Q_1\tilde{Ϛ}^{-is}=\exp(-isK)\tilde Q_1 \exp(isK)$, whose generator on the algebra is the **commutator** $-i[K,\cdot]$. The geometric boost on $\mathbb{M}_-$ is the **two-sided** action with generator the anticommutator $\tfrac12(G_1\cdot+\cdot G_1)$. On the boost plane the commutator vanishes, $-i[G_1,\tilde{Q}]=0$ for $\tilde{Q}=iq_0e_t+q_x\vec e_x$, while the two-sided action moves $q_t,q_x$ precisely as the boost; and off the boost plane the commutator generates a rotation in the $(\vec e_y,\vec e_z)$ plane. So the finite-dimensional inner flow cannot be the geometric boost on the material sector. This is the exact sense in which the model verifies the generator but not the flow.
 
 *State selection.* The theorem identifies $\Delta$ with the boost for the **vacuum**. The framework's modular theory requires a faithful state and does not select one: the distinguished tracial state $\tilde{Ϛ}=\tfrac12e_t$ gives the trivial flow. For the boost-thermal state $\tilde{Ϛ}\propto \exp(-\beta G_1)$ the modular Hamiltonian is
 $$

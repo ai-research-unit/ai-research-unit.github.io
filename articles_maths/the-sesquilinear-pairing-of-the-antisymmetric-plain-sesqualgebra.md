@@ -101,14 +101,14 @@ $$
 
 conjugate-linear in the middle variable, $\mathbb{C}$-linear in the first parameter and conjugate-linear in the second.
 
-**Theorem (the block is the vector part of the sandwich with $e_t$).** For every biquaternion $\tilde A$,
+**Theorem (the block is the vector part of the sandwich with $e_t$).** For every biquaternion $\tilde Q_4$,
 
 $$
-L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_t},\qquad
-S_{\tilde A,e_t}(\tilde Q_3)=\tilde A\tilde Q_3^{*}=L^{\diamond}_{\tilde A}(\tilde Q_3)+\langle\tilde A,\tilde Q_3\rangle_{*}\,e_t .
+L^{\diamond}_{\tilde Q_4}=\mathrm{Vect}\circ S_{\tilde Q_4,e_t},\qquad
+S_{\tilde Q_4,e_t}(\tilde Q_3)=\tilde Q_4\tilde Q_3^{*}=L^{\diamond}_{\tilde Q_4}(\tilde Q_3)+\langle\tilde Q_4,\tilde Q_3\rangle_{*}\,e_t .
 $$
 
-*Proof.* $S_{\tilde A,e_t}(\tilde Q_3)=\tilde A\tilde Q_3^{*}e_t^{*}=\tilde A\tilde Q_3^{*}$, the left multiplication of the sesqualgebra by $\tilde A$, and $\tilde A\tilde Q_3^{*}=\mathrm{Sc}(\tilde A\tilde Q_3^{*})e_t+\mathrm{Vect}(\tilde A\tilde Q_3^{*})=\langle\tilde A,\tilde Q_3\rangle_{*}e_t+L^{\diamond}_{\tilde A}(\tilde Q_3)$.
+*Proof.* $S_{\tilde Q_4,e_t}(\tilde Q_3)=\tilde Q_4\tilde Q_3^{*}e_t^{*}=\tilde Q_4\tilde Q_3^{*}$, the left multiplication of the sesqualgebra by $\tilde Q_4$, and $\tilde Q_4\tilde Q_3^{*}=\mathrm{Sc}(\tilde Q_4\tilde Q_3^{*})e_t+\mathrm{Vect}(\tilde Q_4\tilde Q_3^{*})=\langle\tilde Q_4,\tilde Q_3\rangle_{*}e_t+L^{\diamond}_{\tilde Q_4}(\tilde Q_3)$.
 
 **Corollary (the two-parameter sandwich).** $S_{\tilde Q_2,\tilde Q_2}(\tilde Q_3)=\tilde Q_2\tilde Q_3^{*}\tilde Q_2^{*}$ is the composite of the left multiplication by $\tilde Q_2$ with the right multiplication by $\tilde Q_2^{*}$,
 
@@ -119,7 +119,7 @@ $$
 
 so its vector part is the operator of the block followed by the right multiplication by $\tilde Q_2^{*}$, and its scalar part is the form $\langle\tilde Q_2,\tilde Q_3\rangle_{*}$ times $\tilde Q_2^{*}$.
 
-**Remark (the parities agree).** The block's operator $L^{\diamond}_{\tilde A}$ is conjugate-linear, the sandwich $S_{\tilde A,e_t}$ is conjugate-linear in the middle argument, and the right multiplication $R_{\tilde Q_2}$ is $\mathbb{C}$-linear; the composite two-parameter sandwich is therefore conjugate-linear, as *The Sesquilinear Sandwich on the Biquaternioid* records, and the parity of the composite of two sandwiches is the parity of the product of two conjugate-linear maps, which is linear. The block is the conjugate-linear half of that monoid, and the relation above is the exact place where the operator of the block sits inside it: it is the vector part of the left multiplication, and the scalar part that accompanies it is the form $\langle\tilde A,\cdot\rangle_{*}$.
+**Remark (the parities agree).** The block's operator $L^{\diamond}_{\tilde Q_4}$ is conjugate-linear, the sandwich $S_{\tilde Q_4,e_t}$ is conjugate-linear in the middle argument, and the right multiplication $R_{\tilde Q_2}$ is $\mathbb{C}$-linear; the composite two-parameter sandwich is therefore conjugate-linear, as *The Sesquilinear Sandwich on the Biquaternioid* records, and the parity of the composite of two sandwiches is the parity of the product of two conjugate-linear maps, which is linear. The block is the conjugate-linear half of that monoid, and the relation above is the exact place where the operator of the block sits inside it: it is the vector part of the left multiplication, and the scalar part that accompanies it is the form $\langle\tilde Q_4,\cdot\rangle_{*}$.
 
 ## The Pairing, the Norm of the Value and the Quadric
 
@@ -176,7 +176,7 @@ The pairing of the block with the Hermitian form is $\langle\tilde Q\diamond\til
 | $\beta(\tilde Q\diamond\tilde Q_2,\tilde Q_3)=-\overline{\beta(\tilde Q,\tilde Q_2\diamond\tilde Q_3)}$ | the invariance of a form under the block |
 | $Q_{1t}\overline{Q_{2t}}$ | the unique invariant form up to a scalar, degenerate |
 | $S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}$ | the sesquilinear sandwich of the row |
-| $L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_t}$ | the operator of the block as the vector part of the left multiplication |
+| $L^{\diamond}_{\tilde Q_4}=\mathrm{Vect}\circ S_{\tilde Q_4,e_t}$ | the operator of the block as the vector part of the left multiplication |
 
 ## Further Reading
 

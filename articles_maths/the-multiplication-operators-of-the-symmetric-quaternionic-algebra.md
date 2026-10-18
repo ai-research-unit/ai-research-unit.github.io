@@ -6,8 +6,8 @@ The symmetric quaternionic multiplication is commutative, so its left multiplica
 multiplications coincide; the operator of the block is the single family
 
 $$
-L^{\star}_{\tilde A}: \mathbb{B}\longrightarrow\mathbb{C}e_t,\qquad
-L^{\star}_{\tilde A}\tilde Q_4 = \tilde A\star\tilde Q_4 = \langle\tilde A,\tilde Q_4\rangle_{\natural}e_t ,
+L^{\star}_{\tilde Q_5}: \mathbb{B}\longrightarrow\mathbb{C}e_t,\qquad
+L^{\star}_{\tilde Q_5}\tilde Q_4 = \tilde Q_5\star\tilde Q_4 = \langle\tilde Q_5,\tilde Q_4\rangle_{\natural}e_t ,
 $$
 
 of *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*. This article reads the
@@ -32,43 +32,43 @@ matrix is written with a superscript $\mathsf T$.
 ## The Operators, Their Matrices and Their Ranks
 
 **Proposition (the matrix of a multiplication).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the matrix of
-$L^{\star}_{\tilde A}$ has its first row equal to the coordinates of $\tilde A$ and every other entry zero:
+$L^{\star}_{\tilde Q_5}$ has its first row equal to the coordinates of $\tilde Q_5$ and every other entry zero:
 
 $$
-\bigl[L^{\star}_{\tilde A}\bigr]_{t\mu} = A_\mu, \qquad
-\bigl[L^{\star}_{\tilde A}\bigr]_{\nu\mu}=0 \ (\nu\in\{x,y,z\}),
+\bigl[L^{\star}_{\tilde Q_5}\bigr]_{t\mu} = Q_{5\mu}, \qquad
+\bigl[L^{\star}_{\tilde Q_5}\bigr]_{\nu\mu}=0 \ (\nu\in\{x,y,z\}),
 $$
 
-that is, the four columns are the four multiples $A_te_t,A_xe_t,A_ye_t,A_ze_t$.
+that is, the four columns are the four multiples $Q_{5t}e_t,Q_{5x}e_t,Q_{5y}e_t,Q_{5z}e_t$.
 
-*Proof.* $L^{\star}_{\tilde A}e_\mu=\langle\tilde A,e_\mu\rangle_{\natural}e_t=A_\mu e_t$, so the $\mu$-th column is $A_\mu e_t$,
-with coordinates $A_\mu$ at the first place and zero elsewhere.
+*Proof.* $L^{\star}_{\tilde Q_5}e_\mu=\langle\tilde Q_5,e_\mu\rangle_{\natural}e_t=Q_{5\mu} e_t$, so the $\mu$-th column is $Q_{5\mu} e_t$,
+with coordinates $Q_{5\mu}$ at the first place and zero elsewhere.
 
-**Corollary (rank and image).** For $\tilde A\ne0$ the rank of $L^{\star}_{\tilde A}$ is $1$ and its image is
-the whole central line $\mathbb{C}e_t$; for $\tilde A=0$ it is the zero operator. The **kernel** is the
+**Corollary (rank and image).** For $\tilde Q_5\ne0$ the rank of $L^{\star}_{\tilde Q_5}$ is $1$ and its image is
+the whole central line $\mathbb{C}e_t$; for $\tilde Q_5=0$ it is the zero operator. The **kernel** is the
 hyperplane
 
 $$
-\ker L^{\star}_{\tilde A} = \{\tilde Q_4\in\mathbb{B}: \langle\tilde A,\tilde Q_4\rangle_{\natural}=0\},
+\ker L^{\star}_{\tilde Q_5} = \{\tilde Q_4\in\mathbb{B}: \langle\tilde Q_5,\tilde Q_4\rangle_{\natural}=0\},
 $$
 
-of complex dimension $3$ for $\tilde A\ne0$; it is the hyperplane of the elements paired to zero with
-$\tilde A$ by $N$, and it contains
-$\tilde A$ exactly when $\tilde A$ is isotropic.
+of complex dimension $3$ for $\tilde Q_5\ne0$; it is the hyperplane of the elements paired to zero with
+$\tilde Q_5$ by $N$, and it contains
+$\tilde Q_5$ exactly when $\tilde Q_5$ is isotropic.
 
-*Proof.* The columns span $\mathbb{C}e_t$ if some $A_\mu\ne0$, and the image is central; the kernel is the
-kernel of the linear form $\langle\tilde A,\cdot\rangle_{\natural}$, whose rank is $1$ because the form is non-degenerate. The last
-statement is $\langle\tilde A,\tilde A\rangle_{\natural}=\langle\tilde A\rangle_{\natural}=0$.
+*Proof.* The columns span $\mathbb{C}e_t$ if some $Q_{5\mu}\ne0$, and the image is central; the kernel is the
+kernel of the linear form $\langle\tilde Q_5,\cdot\rangle_{\natural}$, whose rank is $1$ because the form is non-degenerate. The last
+statement is $\langle\tilde Q_5,\tilde Q_5\rangle_{\natural}=\langle\tilde Q_5\rangle_{\natural}=0$.
 
-**Proposition (trace and determinant).** For every $\tilde A$,
+**Proposition (trace and determinant).** For every $\tilde Q_5$,
 
 $$
-\operatorname{Tr}\bigl(L^{\star}_{\tilde A}\bigr) = A_t, \qquad
-\det\bigl(L^{\star}_{\tilde A}\bigr) = 0 .
+\operatorname{Tr}\bigl(L^{\star}_{\tilde Q_5}\bigr) = Q_{5t}, \qquad
+\det\bigl(L^{\star}_{\tilde Q_5}\bigr) = 0 .
 $$
 
-*Proof.* The trace is the sum of the diagonal entries of the matrix above, and only the entry $(t,t)=A_t$ is
-nonzero. The determinant vanishes because the rank is at most $1$ on a space of dimension $4$; for $\tilde A=0$
+*Proof.* The trace is the sum of the diagonal entries of the matrix above, and only the entry $(t,t)=Q_{5t}$ is
+nonzero. The determinant vanishes because the rank is at most $1$ on a space of dimension $4$; for $\tilde Q_5=0$
 the operator is zero.
 
 **Remark (a rank-one layer).** The operator layer of the block is a rank-one layer: every nonzero
@@ -82,20 +82,20 @@ kernel and not by the trace.
 **Proposition (the composition law).** The multiplication operators compose by
 
 $$
-L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1} = A_t\,L^{\star}_{\tilde Q_1},
+L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1} = Q_{5t}\,L^{\star}_{\tilde Q_1},
 $$
 
-and the family $\{L^{\star}_{\tilde A}:\tilde A\in\mathbb{B}\}$ is a complex vector space of dimension $4$, the
+and the family $\{L^{\star}_{\tilde Q_5}:\tilde Q_5\in\mathbb{B}\}$ is a complex vector space of dimension $4$, the
 **monoid of multiplications** of the block.
 
-*Proof.* $L^{\star}_{\tilde A}(L^{\star}_{\tilde Q_1}\tilde Q_4)=L^{\star}_{\tilde A}\bigl(\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}e_t\bigr)=\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}\langle\tilde A,e_t\rangle_{\natural}e_t=A_t\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}e_t=A_tL^{\star}_{\tilde Q_1}\tilde Q_4$.
+*Proof.* $L^{\star}_{\tilde Q_5}(L^{\star}_{\tilde Q_1}\tilde Q_4)=L^{\star}_{\tilde Q_5}\bigl(\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}e_t\bigr)=\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}\langle\tilde Q_5,e_t\rangle_{\natural}e_t=Q_{5t}\langle\tilde Q_1,\tilde Q_4\rangle_{\natural}e_t=Q_{5t}L^{\star}_{\tilde Q_1}\tilde Q_4$.
 
-**Corollary (the map is faithful but not multiplicative).** The map $\tilde A\mapsto L^{\star}_{\tilde A}$ is
+**Corollary (the map is faithful but not multiplicative).** The map $\tilde Q_5\mapsto L^{\star}_{\tilde Q_5}$ is
 injective, its kernel being the radical $\{0\}$ of the operation, so the operator family represents the algebra
 faithfully as a vector space. It is **not** a representation of the operation: the composition law compares
-$L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1}=A_tL^{\star}_{\tilde Q_1}$ with
-$L^{\star}_{\tilde A\star\tilde Q_1}=\langle\tilde A,\tilde Q_1\rangle_{\natural}L^{\star}_{e_t}$, and the two differ, as at
-$\tilde A=\vec e_x$, $\tilde Q_1=\vec e_x$, where the first is $0$ and the second is $L^{\star}_{e_t}\ne0$. The monoid of
+$L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1}=Q_{5t}L^{\star}_{\tilde Q_1}$ with
+$L^{\star}_{\tilde Q_5\star\tilde Q_1}=\langle\tilde Q_5,\tilde Q_1\rangle_{\natural}L^{\star}_{e_t}$, and the two differ, as at
+$\tilde Q_5=\vec e_x$, $\tilde Q_1=\vec e_x$, where the first is $0$ and the second is $L^{\star}_{e_t}\ne0$. The monoid of
 multiplications is not commutative either, $L^{\star}_{e_t}\circ L^{\star}_{\vec e_x}=L^{\star}_{\vec e_x}$ while
 $L^{\star}_{\vec e_x}\circ L^{\star}_{e_t}=0$, although the operation is commutative.
 
@@ -120,26 +120,26 @@ $$
 
 which exists and is unique because $\langle\cdot\rangle_{\natural}$ is non-degenerate.
 
-**Proposition (the adjoint of a multiplication).** For every $\tilde A$,
+**Proposition (the adjoint of a multiplication).** For every $\tilde Q_5$,
 
 $$
-\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde Q_3 = \sum_\mu A_\mu Q_{3t}\,e_\mu ,
+\bigl(L^{\star}_{\tilde Q_5}\bigr)^{\dagger}\tilde Q_3 = \sum_\mu Q_{5\mu} Q_{3t}\,e_\mu ,
 \qquad\text{and}\qquad
-L^{\star}_{\tilde A}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \tilde A\in\mathbb{C}e_t .
+L^{\star}_{\tilde Q_5}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \tilde Q_5\in\mathbb{C}e_t .
 $$
 
-*Proof.* $\langle L^{\star}_{\tilde A}\tilde Q_2,\tilde Q_3\rangle_{\natural}=N\bigl(\langle\tilde A,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\bigr)=\langle\tilde A,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu A_\mu Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu A_\mu Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} A_\mu Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For
-self-adjointness, compare the adjoint with $L^{\star}_{\tilde A}\tilde Q_3=\langle\tilde A,\tilde Q_3\rangle_{\natural}e_t$: the identity
-$\sum_\mu A_\mu Q_{3t}e_\mu=\bigl(\sum_\mu A_\mu Q_{3\mu}\bigr)e_t$ for all $\tilde Q_3$ forces $A_\mu=0$ for
+*Proof.* $\langle L^{\star}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\rangle_{\natural}=N\bigl(\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\bigr)=\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu Q_{5\mu} Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu Q_{5\mu} Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} Q_{5\mu} Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For
+self-adjointness, compare the adjoint with $L^{\star}_{\tilde Q_5}\tilde Q_3=\langle\tilde Q_5,\tilde Q_3\rangle_{\natural}e_t$: the identity
+$\sum_\mu Q_{5\mu} Q_{3t}e_\mu=\bigl(\sum_\mu Q_{5\mu} Q_{3\mu}\bigr)e_t$ for all $\tilde Q_3$ forces $Q_{5\mu}=0$ for
 $\mu\in\{x,y,z\}$.
 
 **Remark (the adjoint is the operator of a linear form).** The adjoint
-$\tilde Q_3\mapsto\sum_\mu A_\mu Q_{3t}e_\mu$ scales the whole element $\tilde A$ by the scalar part of the
-argument, so its value lies in the line $\mathbb{C}\tilde A$ and carries a vector part whenever $\tilde A$ is
+$\tilde Q_3\mapsto\sum_\mu Q_{5\mu} Q_{3t}e_\mu$ scales the whole element $\tilde Q_5$ by the scalar part of the
+argument, so its value lies in the line $\mathbb{C}\tilde Q_5$ and carries a vector part whenever $\tilde Q_5$ is
 not central; the multiplication, by contrast, has a central value for every argument. The two also read
 different data: the adjoint depends on the argument through $Q_{3t}$ alone, while the multiplication reads it
-through the full pairing $\langle\tilde A,\cdot\rangle_{\natural}$, so the multiplication is self-adjoint exactly for a central
-multiplier, the case $L^{\star}_{A_te_t}\tilde Q_2=A_tQ_{2t}e_t$, in which it too reads only the scalar part.
+through the full pairing $\langle\tilde Q_5,\cdot\rangle_{\natural}$, so the multiplication is self-adjoint exactly for a central
+multiplier, the case $L^{\star}_{Q_{5t}e_t}\tilde Q_2=Q_{5t}Q_{2t}e_t$, in which it too reads only the scalar part.
 
 ## The Two Groups of Linear Maps
 
@@ -236,26 +236,26 @@ identity is $\langle D\tilde Q_2,\tilde Q_3\rangle_{\natural}+\langle\tilde Q_2,
 with $De_t=0$; antisymmetric matrices killing $e_t$ form the complex dimension $3$ space displayed.
 
 **Remark (the inner derivations vanish).** The inner derivations of the operation are the maps
-$\tilde Q_2\mapsto \tilde A\star\tilde Q_2-\tilde Q_2\star\tilde A$, and they vanish identically because the
+$\tilde Q_2\mapsto \tilde Q_5\star\tilde Q_2-\tilde Q_2\star\tilde Q_5$, and they vanish identically because the
 operation is commutative; the derivation algebra of the block is therefore entirely made of outer
 derivations. The bracket of two multiplication operators,
-$[L^{\star}_{\tilde A},L^{\star}_{\tilde Q_1}]=A_tL^{\star}_{\tilde Q_1}-Q_{1t}L^{\star}_{\tilde A}$, is **not** a derivation: its value on $\tilde Q_2\star\tilde Q_3$
+$[L^{\star}_{\tilde Q_5},L^{\star}_{\tilde Q_1}]=Q_{5t}L^{\star}_{\tilde Q_1}-Q_{1t}L^{\star}_{\tilde Q_5}$, is **not** a derivation: its value on $\tilde Q_2\star\tilde Q_3$
 is zero, while the sum $(D\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(D\tilde Q_3)$ is
-$\bigl(A_t\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}-Q_{1t}\langle\tilde A,\tilde Q_2\rangle_{\natural}\bigr)Q_{3t}e_t+\bigl(A_t\langle\tilde Q_1,\tilde Q_3\rangle_{\natural}-Q_{1t}\langle\tilde A,\tilde Q_3\rangle_{\natural}\bigr)Q_{2t}e_t$,
+$\bigl(Q_{5t}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}-Q_{1t}\langle\tilde Q_5,\tilde Q_2\rangle_{\natural}\bigr)Q_{3t}e_t+\bigl(Q_{5t}\langle\tilde Q_1,\tilde Q_3\rangle_{\natural}-Q_{1t}\langle\tilde Q_5,\tilde Q_3\rangle_{\natural}\bigr)Q_{2t}e_t$,
 which does not vanish in general; the operator layer is not a Lie algebra of derivations here, in contrast with
 the associative case.
 
 ## Summary
 
 The operator layer of the symmetric quaternionic algebra is the single commutative family
-$L^{\star}_{\tilde A}\tilde Q_4=\langle\tilde A,\tilde Q_4\rangle_{\natural}e_t$, with matrix in the basis equal to the row of the
-coordinates of $\tilde A$ in the first row and zero elsewhere. Every nonzero multiplication has rank $1$, image
-the central line $\mathbb{C}e_t$ and kernel the hyperplane $\langle\tilde A,\cdot\rangle_{\natural}=0$ of complex dimension $3$; its
-trace is $A_t$ and its determinant is $0$. The multiplications compose by
-$L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1}=A_tL^{\star}_{\tilde Q_1}$: the family is a faithful
+$L^{\star}_{\tilde Q_5}\tilde Q_4=\langle\tilde Q_5,\tilde Q_4\rangle_{\natural}e_t$, with matrix in the basis equal to the row of the
+coordinates of $\tilde Q_5$ in the first row and zero elsewhere. Every nonzero multiplication has rank $1$, image
+the central line $\mathbb{C}e_t$ and kernel the hyperplane $\langle\tilde Q_5,\cdot\rangle_{\natural}=0$ of complex dimension $3$; its
+trace is $Q_{5t}$ and its determinant is $0$. The multiplications compose by
+$L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1}=Q_{5t}L^{\star}_{\tilde Q_1}$: the family is a faithful
 $4$-dimensional vector space of operators, its operators are the matrices with a single nonzero row, and it is
-neither commutative nor multiplicative. The adjoint of $L^{\star}_{\tilde A}$ with respect to $\langle\cdot\rangle_{\natural}$ is the map
-$\tilde Q_3\mapsto\sum_\mu A_\mu Q_{3t}e_\mu$, and the multiplication is self-adjoint exactly when the multiplier is
+neither commutative nor multiplicative. The adjoint of $L^{\star}_{\tilde Q_5}$ with respect to $\langle\cdot\rangle_{\natural}$ is the map
+$\tilde Q_3\mapsto\sum_\mu Q_{5\mu} Q_{3t}e_\mu$, and the multiplication is self-adjoint exactly when the multiplier is
 central. The group preserving the form is $\{T:T^{\mathsf T}T=I_4\}$, of complex dimension $6$, and the group
 preserving the product is its subgroup with $Te_t=e_t$, of complex dimension $3$, containing the diagonal sign
 maps; the structure group rescales the form and the product. A derivation is a map with $De_t=\delta e_t$ and
@@ -266,11 +266,11 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\m
 
 | Symbol | Meaning |
 |---|---|
-| $L^{\star}_{\tilde A}\tilde Q_4=\tilde A\star\tilde Q_4=\langle\tilde A,\tilde Q_4\rangle_{\natural}e_t$ | the multiplication operator of the block |
-| $\bigl[L^{\star}_{\tilde A}\bigr]_{t\mu}=A_\mu$ | its matrix in the basis, a single nonzero row |
-| $\operatorname{Tr}(L^{\star}_{\tilde A})=A_t$, $\det(L^{\star}_{\tilde A})=0$, $\operatorname{rank}=1$ | its invariants for $\tilde A\ne0$ |
-| $L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1}=A_tL^{\star}_{\tilde Q_1}$ | the composition law |
-| $\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}$ | the adjoint with respect to $N$ |
+| $L^{\star}_{\tilde Q_5}\tilde Q_4=\tilde Q_5\star\tilde Q_4=\langle\tilde Q_5,\tilde Q_4\rangle_{\natural}e_t$ | the multiplication operator of the block |
+| $\bigl[L^{\star}_{\tilde Q_5}\bigr]_{t\mu}=Q_{5\mu}$ | its matrix in the basis, a single nonzero row |
+| $\operatorname{Tr}(L^{\star}_{\tilde Q_5})=Q_{5t}$, $\det(L^{\star}_{\tilde Q_5})=0$, $\operatorname{rank}=1$ | its invariants for $\tilde Q_5\ne0$ |
+| $L^{\star}_{\tilde Q_5}\circ L^{\star}_{\tilde Q_1}=Q_{5t}L^{\star}_{\tilde Q_1}$ | the composition law |
+| $\bigl(L^{\star}_{\tilde Q_5}\bigr)^{\dagger}$ | the adjoint with respect to $N$ |
 | $G_N=\{T:T^{\mathsf T}T=I_4\}$ | the group of linear maps preserving the form, complex dimension $6$ |
 | $G_{\star}=\{T:T^{\mathsf T}T=I_4,\ Te_t=e_t\}$ | the group of transformations preserving the product, complex dimension $3$ |
 | $G^{\mathrm{str}}_{\star}$ | the structure group, transporting the product to a scalar multiple |

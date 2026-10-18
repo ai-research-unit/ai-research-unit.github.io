@@ -321,7 +321,7 @@ These questions are entirely open. The biquaternion zeta function is a research 
 
 ### The Setting
 
-The analysis article defined the biquaternion gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}$. The solutions of the equations
+The analysis article defined the biquaternion gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}$. For a biquaternion-valued function $\tilde{F}$ on $V$, the solutions of the equations
 
 $$
 \tilde{\nabla}\tilde{F} = 0, \qquad \Box\tilde{F} = 0

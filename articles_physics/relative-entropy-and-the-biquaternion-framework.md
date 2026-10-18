@@ -61,7 +61,7 @@ The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\
 
 ### Density Matrices in $\mathbb{M}_+$
 
-By the GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde A)=\mathrm{Tr}(\tilde{Ϛ}\tilde A)$ with $\tilde{Ϛ}\in\mathbb{M}_+$ positive and of trace one. Writing
+By the GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_2)$ with $\tilde{Ϛ}\in\mathbb{M}_+$ positive and of trace one. Writing
 $$
 \tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
 \vec r\in\mathbb{R}^3,\qquad \mathbf e=(\vec e_x,\vec e_y,\vec e_z),
@@ -183,19 +183,19 @@ S(\omega\|\varphi)=\big\langle\Omega_\omega,\log\Delta_{\omega,\varphi}\,\Omega_
 $$
 It agrees with Umegaki's $S(\rho\|\sigma)$ when $M$ is a finite-dimensional matrix algebra and the two states are given by density matrices, and it is defined for the type III algebras of local quantum field theory, where no density matrix exists. The relative modular operator satisfies the **relative modular condition**, a two-point KMS-type boundary relation for the function
 $$
-(t,\tilde A,\tilde Q_1)\longmapsto
-\omega\big(\tilde A\,\sigma_t^{\varphi,\omega}(\tilde Q_1)\big),
+(t,\tilde Q_2,\tilde Q_1)\longmapsto
+\omega\big(\tilde Q_2\,\sigma_t^{\varphi,\omega}(\tilde Q_1)\big),
 $$
 where $\sigma^{(\varphi,\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $K_\omega=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
 
-Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$, the relative Tomita operator is $\tilde A\Omega_\varphi\mapsto\tilde A^{*}\Omega_\omega$ and its polar decomposition gives
+Within the finite-dimensional algebra the relative modular operator is explicit. On the Hilbert–Schmidt space of the algebra, with the state $\omega$ fixing the vector $\Omega_\omega=\tilde{Ϛ}_\omega^{1/2}$, the relative Tomita operator is $\tilde Q_2\Omega_\varphi\mapsto\tilde Q_2^{*}\Omega_\omega$ and its polar decomposition gives
 $$
-\Delta_{\omega,\varphi}\big(\tilde A\big)
-=\tilde{Ϛ}_\omega\,\tilde A\,\tilde{Ϛ}_\varphi^{-1},
+\Delta_{\omega,\varphi}\big(\tilde Q_2\big)
+=\tilde{Ϛ}_\omega\,\tilde Q_2\,\tilde{Ϛ}_\varphi^{-1},
 \qquad
-\log\Delta_{\omega,\varphi}\big(\tilde A\big)
-=\log\tilde{Ϛ}_\omega\,\tilde A-\tilde A\,\log\tilde{Ϛ}_\varphi
-=\tilde A\,\tilde K_\varphi-\tilde K_\omega\,\tilde A,
+\log\Delta_{\omega,\varphi}\big(\tilde Q_2\big)
+=\log\tilde{Ϛ}_\omega\,\tilde Q_2-\tilde Q_2\,\log\tilde{Ϛ}_\varphi
+=\tilde Q_2\,\tilde K_\varphi-\tilde K_\omega\,\tilde Q_2,
 \qquad
 \tilde K_\omega=-\log\tilde{Ϛ}_\omega\in\mathbb{M}_+ .
 $$

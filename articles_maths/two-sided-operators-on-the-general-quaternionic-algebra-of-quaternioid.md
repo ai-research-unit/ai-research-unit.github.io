@@ -26,19 +26,19 @@ They are the elementary sandwiches of the block, and their family carries the wh
 
 ## Composition
 
-**Theorem (the composition law).** For all $\tilde q_3,\tilde q_4,\tilde q_5,\tilde d \in \mathbb{H}$,
+**Theorem (the composition law).** For all $\tilde q_3,\tilde q_4,\tilde q_5,\tilde q_6 \in \mathbb{H}$,
 
 $$
-T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde d} = T_{\tilde q_5\tilde q_3,\,\tilde d\tilde q_4} .
+T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\,\tilde q_6\tilde q_4} .
 $$
 
 Both parameters are **reversed**, because both the first factor of the product and the second carry an order-reversing step: the first through the anti-automorphism ${}^{\natural}$ that the left multiplication contains, the second through the opposite algebra.
 
 *Proof.* Apply the left side to $\tilde q$ and use the associativity of the plain product:
 $$
-T_{\tilde q_3,\tilde q_4}\bigl(T_{\tilde q_5,\tilde d}(\tilde q)\bigr) = \tilde q_3^{\natural}\bigl(\tilde q_5^{\natural}\tilde q\tilde d\bigr)\tilde q_4 = \bigl(\tilde q_3^{\natural}\tilde q_5^{\natural}\bigr)\tilde q\bigl(\tilde d\tilde q_4\bigr) = (\tilde q_5\tilde q_3)^{\natural}\,\tilde q\,(\tilde d\tilde q_4),
+T_{\tilde q_3,\tilde q_4}\bigl(T_{\tilde q_5,\tilde q_6}(\tilde q)\bigr) = \tilde q_3^{\natural}\bigl(\tilde q_5^{\natural}\tilde q\tilde q_6\bigr)\tilde q_4 = \bigl(\tilde q_3^{\natural}\tilde q_5^{\natural}\bigr)\tilde q\bigl(\tilde q_6\tilde q_4\bigr) = (\tilde q_5\tilde q_3)^{\natural}\,\tilde q\,(\tilde q_6\tilde q_4),
 $$
-which is $T_{\tilde q_5\tilde q_3,\tilde d\tilde q_4}(\tilde q)$.
+which is $T_{\tilde q_5\tilde q_3,\tilde q_6\tilde q_4}(\tilde q)$.
 
 **Proposition (when two sandwiches agree, and the zero case).** The sandwich $L_\alpha R_\beta$ is zero exactly when $\alpha = 0$ or $\beta = 0$. For **nonzero** parameter pairs, two sandwiches agree as operators exactly when the pairs differ by a single real scalar:
 
@@ -108,14 +108,14 @@ The two criteria are stated for a nonzero sandwich because the zero operators $T
 
 ## The Comparison with the Plain Algebra
 
-**Proposition.** The two-sided operators of the plain algebra are the sandwiches with the direct product, $T^{(0)}_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3\tilde q\tilde q_4$, and they satisfy the composition law $T^{(0)}_{\tilde q_3,\tilde q_4}T^{(0)}_{\tilde q_5,\tilde d} = T^{(0)}_{\tilde q_3\tilde q_5,\tilde d\tilde q_4}$, with only the second parameter reversed. The quaternionic operators are the same sandwiches with the first parameter conjugated, $T_{\tilde q_3,\tilde q_4} = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4}$, and their composition law reverses both parameters.
+**Proposition.** The two-sided operators of the plain algebra are the sandwiches with the direct product, $T^{(0)}_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3\tilde q\tilde q_4$, and they satisfy the composition law $T^{(0)}_{\tilde q_3,\tilde q_4}T^{(0)}_{\tilde q_5,\tilde q_6} = T^{(0)}_{\tilde q_3\tilde q_5,\tilde q_6\tilde q_4}$, with only the second parameter reversed. The quaternionic operators are the same sandwiches with the first parameter conjugated, $T_{\tilde q_3,\tilde q_4} = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4}$, and their composition law reverses both parameters.
 
 *Proof.* The plain law is the associativity of the plain product read twice; the quaternionic law is the theorem above, and the identification with the plain family is $\tilde q_3^{\natural}(\tilde q\tilde q_4) = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4}(\tilde q)$.
 
 | | plain algebra | quaternionic algebra |
 |---|---|---|
 | operator | $T^{(0)}_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3\tilde q\tilde q_4$ | $T_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3^{\natural}\tilde q\tilde q_4$ |
-| composition | $T^{(0)}_{\tilde q_3,\tilde q_4}T^{(0)}_{\tilde q_5,\tilde d} = T^{(0)}_{\tilde q_3\tilde q_5,\tilde d\tilde q_4}$ | $T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde d} = T_{\tilde q_5\tilde q_3,\tilde d\tilde q_4}$ |
+| composition | $T^{(0)}_{\tilde q_3,\tilde q_4}T^{(0)}_{\tilde q_5,\tilde q_6} = T^{(0)}_{\tilde q_3\tilde q_5,\tilde q_6\tilde q_4}$ | $T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\tilde q_6\tilde q_4}$ |
 | transpose for $\mathrm B$ | $T^{(0)\sim}_{\tilde q_3,\tilde q_4} = T^{(0)}_{\tilde q_4,\tilde q_3}$ | $T^{\sim}_{\tilde q_3,\tilde q_4} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}}$ |
 | transpose for $N$ | $T^{(0)\dagger}_{\tilde q_3,\tilde q_4} = T^{(0)}_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$ | $T^{\dagger}_{\tilde q_3,\tilde q_4} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$ |
 | family | all of $\operatorname{End}_\mathbb{R}(\mathbb{H})$ | all of $\operatorname{End}_\mathbb{R}(\mathbb{H})$ |
@@ -124,7 +124,7 @@ The two criteria are stated for a nonzero sandwich because the zero operators $T
 
 ## Summary
 
-The two-sided operators of the quaternionic product are $T_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3^{\natural}\tilde q\tilde q_4$, the sandwiches of the conjugated left multiplication $L_{\tilde q_3^{\natural}}$ with the plain right multiplication $R_{\tilde q_4}$. They span every real-linear operator of $\mathbb{H}$; two of them agree exactly on parameter pairs differing by a real scalar, so the family is a quotient of the parameter space by that scaling. They form a monoid with identity $T_{e_t,e_t}$ and composition law $T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde d} = T_{\tilde q_5\tilde q_3,\tilde d\tilde q_4}$ reversing **both** parameters, the identity being reached exactly on the one-parameter kernel $\{(\lambda,\lambda^{-1})\}$; the invertible elements are those with both parameters nonzero, with inverse $T_{\tilde q_3^{-1},\tilde q_4^{-1}}$. The transpose for the plain form swaps and conjugates the two parameters, $T^{\sim}_{\tilde q_3,\tilde q_4} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}}$; the transpose for the quaternionic form keeps the places and conjugates, $T^{\dagger}_{\tilde q_3,\tilde q_4} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$; the two coincide on the real-proportional parameters, and a nonzero sandwich is plain-self-transpose exactly for $\tilde q_4 \in \mathbb{R}\tilde q_3^{\natural}$. The plain algebra has the same family of operators with the plain sandwiches, the composition law reversing one parameter, and the transpose swapping the parameters without conjugating; the whole difference is the conjugation that the first slot of the quaternionic product inserts.
+The two-sided operators of the quaternionic product are $T_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3^{\natural}\tilde q\tilde q_4$, the sandwiches of the conjugated left multiplication $L_{\tilde q_3^{\natural}}$ with the plain right multiplication $R_{\tilde q_4}$. They span every real-linear operator of $\mathbb{H}$; two of them agree exactly on parameter pairs differing by a real scalar, so the family is a quotient of the parameter space by that scaling. They form a monoid with identity $T_{e_t,e_t}$ and composition law $T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\tilde q_6\tilde q_4}$ reversing **both** parameters, the identity being reached exactly on the one-parameter kernel $\{(\lambda,\lambda^{-1})\}$; the invertible elements are those with both parameters nonzero, with inverse $T_{\tilde q_3^{-1},\tilde q_4^{-1}}$. The transpose for the plain form swaps and conjugates the two parameters, $T^{\sim}_{\tilde q_3,\tilde q_4} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}}$; the transpose for the quaternionic form keeps the places and conjugates, $T^{\dagger}_{\tilde q_3,\tilde q_4} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$; the two coincide on the real-proportional parameters, and a nonzero sandwich is plain-self-transpose exactly for $\tilde q_4 \in \mathbb{R}\tilde q_3^{\natural}$. The plain algebra has the same family of operators with the plain sandwiches, the composition law reversing one parameter, and the transpose swapping the parameters without conjugating; the whole difference is the conjugation that the first slot of the quaternionic product inserts.
 
 ## Summary of Notation
 
@@ -133,7 +133,7 @@ The two-sided operators of the quaternionic product are $T_{\tilde q_3,\tilde q_
 | $T_{\tilde q_3,\tilde q_4}(\tilde q) = \tilde q_3^{\natural}\tilde q\tilde q_4 = L_{\tilde q_3^{\natural}}R_{\tilde q_4}$ | the two-sided operator of the quaternionic product |
 | $L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff (\alpha',\beta') = (\mu\alpha,\mu^{-1}\beta)$ | when two sandwiches agree; the kernel is $\{(\lambda,\lambda^{-1})\}$, $\lambda \in \mathbb{R}^\times$ |
 | $\mathcal T$ | the family of two-sided operators, spanning $\operatorname{End}_\mathbb{R}(\mathbb{H})$ |
-| $T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde d} = T_{\tilde q_5\tilde q_3,\tilde d\tilde q_4}$ | the composition law, both parameters reversed |
+| $T_{\tilde q_3,\tilde q_4}T_{\tilde q_5,\tilde q_6} = T_{\tilde q_5\tilde q_3,\tilde q_6\tilde q_4}$ | the composition law, both parameters reversed |
 | $T^{\sim}_{\tilde q_3,\tilde q_4} = T_{\tilde q_4^{\natural},\tilde q_3^{\natural}}$ | the transpose for the plain form $\mathrm B$ |
 | $T^{\dagger}_{\tilde q_3,\tilde q_4} = T_{\tilde q_3^{\natural},\tilde q_4^{\natural}}$ | the transpose for the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $T^{\sim}_{\tilde q_3,\tilde q_4} = T^{\dagger}_{\tilde q_3,\tilde q_4} \iff \tilde q_4 \in \mathbb{R}\tilde q_3$ | the two transposes coincide on proportional parameters |

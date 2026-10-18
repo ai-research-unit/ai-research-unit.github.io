@@ -23,16 +23,16 @@ $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction t
 Because the operation is $\mathbb{C}$-bilinear, it is the same thing as a family of linear maps, and because
 its value is central it is the same thing as a bilinear form.
 
-**Definition.** For $\tilde A\in\mathbb{B}$ the **left multiplication by $\tilde A$** is the
+**Definition.** For $\tilde Q_4\in\mathbb{B}$ the **left multiplication by $\tilde Q_4$** is the
 $\mathbb{C}$-linear map
 
 $$
-L^{\star}_{\tilde A}: \mathbb{B}\longrightarrow\mathbb{C}e_t,\qquad
-L^{\star}_{\tilde A}\tilde Q_1 = \tilde A\star\tilde Q_1 = \langle\tilde A,\tilde Q_1\rangle_{\natural}\,e_t .
+L^{\star}_{\tilde Q_4}: \mathbb{B}\longrightarrow\mathbb{C}e_t,\qquad
+L^{\star}_{\tilde Q_4}\tilde Q_1 = \tilde Q_4\star\tilde Q_1 = \langle\tilde Q_4,\tilde Q_1\rangle_{\natural}\,e_t .
 $$
 
 Because the product is commutative the right multiplication coincides with it,
-$R^{\star}_{\tilde A}=L^{\star}_{\tilde A}$; the operator is examined in *The Multiplication Operators of the
+$R^{\star}_{\tilde Q_4}=L^{\star}_{\tilde Q_4}$; the operator is examined in *The Multiplication Operators of the
 Symmetric Quaternionic Algebra*.
 
 **Proposition (the operation is a form read on the central line).** The operation is determined by $\langle\cdot\rangle_{\natural}$ and
@@ -61,26 +61,26 @@ the two readings apart: the diagonal $\langle\tilde Q_1\rangle_{\natural}$ is mu
 every element on both sides,
 
 $$
-\operatorname{Rad}(\star) = \{\tilde A\in\mathbb{B}: \tilde A\star\tilde Q_1=0 \text{ and }
-\tilde Q_1\star\tilde A=0 \text{ for every } \tilde Q_1\in\mathbb{B}\}
-= \{\tilde A\in\mathbb{B}: L^{\star}_{\tilde A}=0\}.
+\operatorname{Rad}(\star) = \{\tilde Q_4\in\mathbb{B}: \tilde Q_4\star\tilde Q_1=0 \text{ and }
+\tilde Q_1\star\tilde Q_4=0 \text{ for every } \tilde Q_1\in\mathbb{B}\}
+= \{\tilde Q_4\in\mathbb{B}: L^{\star}_{\tilde Q_4}=0\}.
 $$
 
 Because the operation is commutative the two-sided and the one-sided definitions agree, and the radical is the
-common kernel of the left multiplications, $\bigcap_{\tilde Q_1}\ker L^{\star}_{\tilde Q_1}=\{\tilde A: \langle\tilde A,\tilde Q_1\rangle_{\natural}=0 \text{ for all } \tilde Q_1\}$.
+common kernel of the left multiplications, $\bigcap_{\tilde Q_1}\ker L^{\star}_{\tilde Q_1}=\{\tilde Q_4: \langle\tilde Q_4,\tilde Q_1\rangle_{\natural}=0 \text{ for all } \tilde Q_1\}$.
 
 **Theorem (the radical is trivial).** $\operatorname{Rad}(\star)=\{0\}$: the only element annihilated by the
 whole algebra is $0$.
 
 *Proof.* $\langle\cdot\rangle_{\natural}$ is the standard symmetric form of $\mathbb{C}^4$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, whose Gram
 matrix is $I_4$; a form with invertible Gram matrix has no nonzero element paired to zero with the whole
-space. Concretely $\tilde A\star e_t=A_te_t$ and $\tilde A\star \vec e_\mu=A_\mu e_t$ for $\mu\in\{x,y,z\}$, so
-$\tilde A\star\tilde Q_1=0$ for all $\tilde Q_1$ forces $A_t=A_x=A_y=A_z=0$.
+space. Concretely $\tilde Q_4\star e_t=Q_{4t}e_t$ and $\tilde Q_4\star \vec e_\mu=Q_{4\mu} e_t$ for $\mu\in\{x,y,z\}$, so
+$\tilde Q_4\star\tilde Q_1=0$ for all $\tilde Q_1$ forces $Q_{4t}=Q_{4x}=Q_{4y}=Q_{4z}=0$.
 
 **Corollary (the operation is not the zero operation, and it is non-degenerate as a form).** The operation is
 nonzero — $\langle e_t,e_t\rangle_{\natural}=1$ — and the form $\langle\cdot\rangle_{\natural}$ is non-degenerate, of rank $4$ over $\mathbb{C}$ and of Gram
 matrix $I_4$ in the basis. The image of each nonzero left multiplication is the whole central line
-$\mathbb{C}e_t$: for $\tilde A\ne0$ some coordinate $A_\mu\ne0$, so $L^{\star}_{\tilde A}e_\mu=A_\mu e_t\ne0$ and no nonzero element acts by zero.
+$\mathbb{C}e_t$: for $\tilde Q_4\ne0$ some coordinate $Q_{4\mu}\ne0$, so $L^{\star}_{\tilde Q_4}e_\mu=Q_{4\mu} e_t\ne0$ and no nonzero element acts by zero.
 
 **Remark (a trivial radical and a poor element theory are not the same fact).** A non-degenerate pairing is
 what one expects of a form, and it does not prevent the operation from being element-theoretically poor: the
@@ -218,7 +218,7 @@ contain no nonzero isotropic element.
 | $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ | the symmetric quaternionic multiplication |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ | the quaternion form, the coefficient of the product |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the norm form, the diagonal of $\langle\cdot\rangle_{\natural}$ |
-| $L^{\star}_{\tilde A}$ | the left (and right) multiplication, $L^{\star}_{\tilde A}\tilde Q_1=\langle\tilde A,\tilde Q_1\rangle_{\natural}e_t$ |
+| $L^{\star}_{\tilde Q_4}$ | the left (and right) multiplication, $L^{\star}_{\tilde Q_4}\tilde Q_1=\langle\tilde Q_4,\tilde Q_1\rangle_{\natural}e_t$ |
 | $\operatorname{Rad}(\star)$ | the two-sided annihilator, $\{0\}$ |
 | $[\tilde Q_1,\tilde Q_2]_{\natural}$ | the quaternionic bracket $\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$ |
 | $[\tilde Q_1,\tilde Q_2]_{\star}$ | the commutator of the operation, identically zero |
@@ -234,4 +234,4 @@ contain no nonzero isotropic element.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`) and *Zero Divisors of the Biquaternion Algebra*, for the norm, its polarisation and the isotropic cone.
 - *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{SQA}$.
 - *Remarkable Subspaces under the Symmetric Quaternionic Algebra* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra.md`), for the isotropic elements on each subspace.
-- *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the operators $L^{\star}_{\tilde A}$ in full.
+- *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the operators $L^{\star}_{\tilde Q_4}$ in full.

@@ -99,7 +99,7 @@ $$
 d\tilde S/dt=\vec\omega\times\vec S ,
 $$
 
-the rigid rotation of the spin about the axis $\vec\omega$ at frequency $|\vec\omega|$. This is the rotor flow: for $H=2\vec G\cdot\vec S$ with $\vec G$ the generator, the flow is $\tilde S\mapsto \exp(t\tilde G)\tilde S \exp(-t\tilde G)$, and the angular velocity of the spin is $\vec\omega$.
+the rigid rotation of the spin about the axis $\vec\omega$ at frequency $|\vec\omega|$. This is the rotor flow: for $H=2\vec G\cdot\vec S$ with $\vec G$ the generator, the flow is $\tilde S\mapsto \exp(t\vec G)\tilde S \exp(-t\vec G)$, and the angular velocity of the spin is $\vec\omega$.
 
 ### The Slow Parameter and the Rotor
 

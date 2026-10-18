@@ -97,10 +97,10 @@ This is the reason quaternion convergence is no harder than real convergence: it
 
 **Boundedness.** Every convergent sequence is bounded. The converse fails.
 
-**Algebra of limits.** If $\tilde q_n \to L$ and $\tilde r_n \to M$, then
+**Algebra of limits.** If $\tilde q_n \to L$ and $\tilde q'_n \to M$, then
 
 $$
-\tilde q_n + \tilde r_n \to L + M, \qquad \tilde q_n \tilde r_n \to L M, \qquad \tilde q_n^{-1} \to L^{-1} \text{ if } L \neq 0.
+\tilde q_n + \tilde q'_n \to L + M, \qquad \tilde q_n \tilde q'_n \to L M, \qquad \tilde q_n^{-1} \to L^{-1} \text{ if } L \neq 0.
 $$
 
 The quotient rule holds because $\mathbb{H}$ is a division algebra: every non-zero quaternion is invertible.

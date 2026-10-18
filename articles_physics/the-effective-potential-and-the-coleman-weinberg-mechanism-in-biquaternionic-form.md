@@ -82,12 +82,12 @@ The effective potential is a restriction of the effective action, and the restri
 The effective action is the Legendre transform of the connected generating functional of the central scalar,
 
 $$
-\Gamma[\tilde{\varphi}] = \langle \tilde{J},\tilde{\varphi}\rangle - W[\tilde{J}], \qquad \tilde{\varphi} = \frac{\delta W}{\delta \tilde{J}} ,
+\Gamma[\tilde\Phi_{\mathrm{cl}}] = \langle \tilde{J},\tilde\Phi_{\mathrm{cl}}\rangle - W[\tilde{J}], \qquad \tilde\Phi_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}} ,
 $$
 
-and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde{\varphi}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde\varphi$ here rather than $\tilde\phi$, because $\phi$ is the electric potential and $\phi_1,\phi_2$ are the real components of the scalar. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
+and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde\Phi_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
 
-For a **constant** classical field $\tilde{\varphi} = \varphi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
+For a **constant** classical field $\tilde\Phi_{\mathrm{cl}} = \varphi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
 
 $$
 V_\text{eff}(\varphi_c) = -\frac{\Gamma[\varphi_c]}{\text{vol}},
@@ -112,14 +112,14 @@ The second is **convexity**: the generating functional $W$ is a convex functiona
 The one-loop term is the Gaussian determinant of the fluctuations about the constant background, and its evaluation is the whole computational content of the effective potential. Expand the action about the background,
 
 $$
-S[\tilde{\varphi} + \delta\tilde{\Phi}] = S[\tilde{\varphi}] + \frac12\left\langle \delta\tilde{\Phi},\,S''[\tilde{\varphi}]\,\delta\tilde{\Phi}\right\rangle + O(\delta\tilde{\Phi}^3),
+S[\tilde\Phi_{\mathrm{cl}} + \delta\tilde{\Phi}] = S[\tilde\Phi_{\mathrm{cl}}] + \frac12\left\langle \delta\tilde{\Phi},\,S''[\tilde\Phi_{\mathrm{cl}}]\,\delta\tilde{\Phi}\right\rangle + O(\delta\tilde{\Phi}^3),
 $$
 
 and perform the Gaussian integral over $\delta\tilde{\Phi}$: the result is
 
 $$
-\Gamma_1[\tilde{\varphi}] = \frac12\,\mathrm{Tr}\log S''[\tilde{\varphi}]
-= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S''[\tilde{\varphi}]),
+\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]
+= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S''[\tilde\Phi_{\mathrm{cl}}]),
 $$
 
 the proper-time form, with the ultraviolet divergence residing in the small-$s$ end. For the central scalar the second variation is the operator
@@ -308,16 +308,16 @@ The loop integral, its regularization and its renormalization are standard and a
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde{\nabla} = e_t\,\partial/\partial Q_t + e_k\,\partial/\partial Q_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
 | $\tilde{\Phi} = \varphi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
-| $\tilde{\varphi} = \delta W/\delta\tilde J$ | Classical field; $\tilde{\varphi}=\varphi_c\,e_t$ for a constant background |
-| $\delta\tilde{\Phi}$ | Fluctuation about the background, $\tilde{\varphi}+\delta\tilde{\Phi}$ |
-| $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$ | Central invariant; the potential's argument |
+| $\tilde\Phi_{\mathrm{cl}} = \delta W/\delta\tilde J$ | Classical field; $\tilde\Phi_{\mathrm{cl}}=\varphi_c\,e_t$ for a constant background |
+| $\delta\tilde{\Phi}$ | Fluctuation about the background, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde{\Phi}$ |
+| $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = \lvert\varphi\rvert^2$ | Central invariant; the potential's argument |
 | $V_0(\rho) = \frac{\lambda}{4}(\rho - v_0^2)^2$ | Tree-level invariant potential |
 | $\lambda, v_0$ | Quartic coupling; tree-level vacuum parameter; $v_0 = v/\sqrt2$, $\lambda = 4\beta$ against the Higgs companion's $V = \beta(\rho-v^2/2)^2$ |
 | $m_h^2 = \lambda v_0^2$, $m_\theta^2 = 0$ | Radial and angular (Goldstone) masses at tree level |
 | $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
-| $\Gamma[\tilde{\varphi}] = \langle\tilde{J},\tilde{\varphi}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
-| $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde{\varphi}]$ | One-loop effective action (determinant) |
+| $\Gamma[\tilde\Phi_{\mathrm{cl}}] = \langle\tilde{J},\tilde\Phi_{\mathrm{cl}}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
+| $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$ | One-loop effective action (determinant) |
 | $V_\text{eff} = -\Gamma/\text{vol}$, $\mathcal{V}_\text{eff}(\rho)$ | Effective potential; its restriction to the invariant |
 | $S''[\varphi_c] = -\Box + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |
 | $\mathcal{V}_1(\rho) = \frac{1}{64\pi^2}\sum_i n_i m_i^4[\ln(m_i^2/\mu^2) - c_i]$ | One-loop effective potential (Coleman–Weinberg form) |

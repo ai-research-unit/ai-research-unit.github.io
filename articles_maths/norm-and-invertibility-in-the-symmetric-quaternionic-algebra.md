@@ -94,19 +94,19 @@ The natural conjugation, an anti-automorphism of the plain product, is an **auto
 
 **The symmetric quaternionic product has no left unit, no right unit and no two-sided unit, so no element is left-invertible, right-invertible or invertible of the block, the set of invertible elements is empty and the block has no group of units.**
 
-**Theorem (the block is not unital).** The symmetric quaternionic product has no left unit, no right unit and no two-sided unit. For every element $\tilde A$,
+**Theorem (the block is not unital).** The symmetric quaternionic product has no left unit, no right unit and no two-sided unit. For every element $\tilde Q_3$,
 
 $$
-\tilde A\star e_t=e_t\star\tilde A=A_te_t ,
+\tilde Q_3\star e_t=e_t\star\tilde Q_3=Q_{3t}e_t ,
 $$
 
 so the element $e_t$ acts as the identity of the central line alone, and its action on an argument with non-vanishing vector part differs from the identity.
 
-*Proof.* The display is the square formula at the argument $e_t$, $\langle\tilde A,e_t\rangle_{\natural}=A_t=\langle e_t,\tilde A\rangle_{\natural}$. A left unit $\tilde u$ would satisfy $\tilde u\star \vec e_x=\vec e_x$, that is $u_xe_t=\vec e_x$, impossible because $u_xe_t$ is central and $\vec e_x$ is not; the same with the roles exchanged excludes a right unit (*Introduction to the Symmetric Quaternionic Algebra*, §*The Image and the Unit*).
+*Proof.* The display is the square formula at the argument $e_t$, $\langle\tilde Q_3,e_t\rangle_{\natural}=Q_{3t}=\langle e_t,\tilde Q_3\rangle_{\natural}$. A left unit $\tilde u$ would satisfy $\tilde u\star \vec e_x=\vec e_x$, that is $u_xe_t=\vec e_x$, impossible because $u_xe_t$ is central and $\vec e_x$ is not; the same with the roles exchanged excludes a right unit (*Introduction to the Symmetric Quaternionic Algebra*, §*The Image and the Unit*).
 
 **Corollary (no inverse, no group of units).** Since the product has no two-sided unit, no element is left-invertible, right-invertible or invertible of the block; the set of invertible elements is empty, and the block has no group of units. The particular element $e_t$ is an idempotent of the block, $e_t\star e_t=e_t$, and it is not a unit: the two notions are different, and the idempotent is a unit of no product of the block.
 
-*Proof.* The definition of the inverse presupposes a two-sided unit, which the theorem excludes; the statement about $e_t$ is the display at $\tilde A=e_t$, $e_t\star e_t=e_t$, together with the failure of the unit equations on $\vec e_x$.
+*Proof.* The definition of the inverse presupposes a two-sided unit, which the theorem excludes; the statement about $e_t$ is the display at $\tilde Q_3=e_t$, $e_t\star e_t=e_t$, together with the failure of the unit equations on $\vec e_x$.
 
 The absence is total and is not repaired by a change of element: it is the absence of the unit itself. The definition is nevertheless not idle, because the same words applied to the plain product have content, and that content is read on the algebraic norm of the block.
 

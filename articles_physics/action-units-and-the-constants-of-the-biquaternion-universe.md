@@ -52,7 +52,7 @@ The contrast that fixes the idea is with a structure that *does* carry a scale. 
 A rescaling $\tilde{Q}\mapsto\lambda\tilde{Q}$ with $\lambda>0$ is real-linear, but it is not an algebra homomorphism:
 
 $$
-(\lambda\tilde{A})(\lambda\tilde{Q}_1)=\lambda^2\tilde{A}\tilde{Q}_1\neq\lambda(\tilde{A}\tilde{Q}_1).
+(\lambda\tilde{Q}_3)(\lambda\tilde{Q}_1)=\lambda^2\tilde{Q}_3\tilde{Q}_1\neq\lambda(\tilde{Q}_3\tilde{Q}_1).
 $$
 
 This is worth stating carefully, because the algebraic fact has a **physical interpretation**. The multiplication of the algebra is not invariant under a rescaling of its elements — the product of two rescaled elements acquires a factor $\lambda^2$ — so the scale of an element of the algebra is not a redundancy of the algebra. It is data the algebra does not contain, and which must therefore be supplied by the identification that says what the element represents. When the framework says that $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ *is* a displacement in metres, it is supplying that data. Nothing in the algebra did it.
@@ -75,7 +75,7 @@ The constraint is **per element, and not across elements**. The biquaternion nor
 
 ### The Sign Is Algebraic; the Scale Is Local
 
-Apply the constraint to a displacement. The four coefficients of the element are the four components of the displacement, and the norm is the invariant interval. The algebra fixes the **sign** of each term of that norm and nothing else. The temporal coefficient is attached to $ie_t$ in the material sector, and $(ie_t)^2=-e_t$; the three spatial coefficients are attached to $\vec e_x,\vec e_y,\vec e_z$, and each enters as the square of a real coefficient without a further sign. Hence
+Apply the constraint to a displacement $\tilde{T}$. The four coefficients of the element are the four components of the displacement, and the norm is the invariant interval. The algebra fixes the **sign** of each term of that norm and nothing else. The temporal coefficient is attached to $ie_t$ in the material sector, and $(ie_t)^2=-e_t$; the three spatial coefficients are attached to $\vec e_x,\vec e_y,\vec e_z$, and each enters as the square of a real coefficient without a further sign. Hence
 
 $$
 \langle\tilde{T}\rangle_{\natural}=(ict)^2+x^2+y^2+z^2=-c^2t^2+x^2+y^2+z^2 ,

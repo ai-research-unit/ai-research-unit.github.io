@@ -64,16 +64,16 @@ with Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ equal to $\math
 
 ### The Products Decide the Four Adjoints
 
-**Theorem (the four adjoints are decided by the four general products).** For the left multiplication $L_{\tilde A}$ the adjoints of the four pairings are
+**Theorem (the four adjoints are decided by the four general products).** For the left multiplication $L_{\tilde Q_4}$ the adjoints of the four pairings are
 
 $$
-(L_{\tilde A})^{\approx}=R_{\tilde A},\qquad
-(L_{\tilde A})^{\ast}=L_{\tilde A^{\ast}},\qquad
-(L_{\tilde A})^{N}=L_{\tilde A^{\natural}},\qquad
-(L_{\tilde A})^{\natural\ast}=R_{\bar{\tilde A}},
+(L_{\tilde Q_4})^{\approx}=R_{\tilde Q_4},\qquad
+(L_{\tilde Q_4})^{\ast}=L_{\tilde Q_4^{\ast}},\qquad
+(L_{\tilde Q_4})^{N}=L_{\tilde Q_4^{\natural}},\qquad
+(L_{\tilde Q_4})^{\natural\ast}=R_{\bar{\tilde Q_4}},
 $$
 
-and for the two-sided operator $(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$, $(L_{\tilde A}R_{\tilde Q_1})^{\ast}=L_{\tilde A^{\ast}}R_{\tilde Q_1^{\ast}}$, $(L_{\tilde A}R_{\tilde Q_1})^{N}=L_{\tilde A^{\natural}}R_{\tilde Q_1^{\natural}}$, $(L_{\tilde A}R_{\tilde Q_1})^{\natural\ast}=L_{\bar{\tilde Q_1}}R_{\bar{\tilde A}}$.
+and for the two-sided operator $(L_{\tilde Q_4}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_4}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{\ast}=L_{\tilde Q_4^{\ast}}R_{\tilde Q_1^{\ast}}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{N}=L_{\tilde Q_4^{\natural}}R_{\tilde Q_1^{\natural}}$, $(L_{\tilde Q_4}R_{\tilde Q_1})^{\natural\ast}=L_{\bar{\tilde Q_1}}R_{\bar{\tilde Q_4}}$.
 
 *Proof.* *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*, where all sixteen cases are verified on the pairs of basis elements.
 
@@ -83,7 +83,7 @@ So the product *does* decide something of the first importance: which adjoint ex
 
 **Remark (the missing inputs).** The four general products share the table of the units, so no two of them can differ in the way an operator differs from another. To write down an operator one has still to supply
 
-1. an **element** $\tilde A$ of the algebra, and
+1. an **element** $\tilde Q_4$ of the algebra, and
 2. an **insertion**: which involution, if any, is put on the element, and on which side.
 
 The products do not supply 1, and they supply the *repertoire* of 2 without choosing from it. That is the sense in which the operator is chosen by the modeller: given the algebra with its product, one chooses $\natural$, or $\bar{\cdot}$, or ${}^{*}$, or none, and therefore the operator.
@@ -92,7 +92,7 @@ The products do not supply 1, and they supply the *repertoire* of 2 without choo
 
 ### The Four Operators of $\vec e_x$
 
-Fix the element $\tilde A=\vec e_x$, a unit with $\langle \vec e_x\rangle_{\natural}=-e_t$, so that $\vec e_x^{-1}=-\vec e_x$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:
+Fix the element $\tilde Q_4=\vec e_x$, a unit with $\langle \vec e_x\rangle_{\natural}=-e_t$, so that $\vec e_x^{-1}=-\vec e_x$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:
 
 $$
 \begin{aligned}
@@ -119,48 +119,48 @@ $$
 \operatorname{diag}(-1,1,1).
 $$
 
-**Remark (the four insertions collapse).** For a parameter that one of the conjugations fixes, the four operators are fewer than four: the sign insertion is invisible exactly when $\tilde A^{\natural}=\tilde A$, which holds for the central $\tilde A$, and the star insertion is invisible exactly when $\tilde A^{*}=\tilde A$, which holds for the parameters with real central coefficient and purely imaginary vector coefficients, the fixed space $\mathbb{M}_{+}$ of the Hermitian conjugation. For a vector $\tilde A\in V$ with real coefficients the four operators are two, $\pm L_{\tilde A}R_{\tilde A^{-1}}$; for a generic complex vector of $V$ the four are pairwise distinct. The number of distinct operators is therefore a property of the *element*, and not of the product.
+**Remark (the four insertions collapse).** For a parameter that one of the conjugations fixes, the four operators are fewer than four: the sign insertion is invisible exactly when $\tilde Q_4^{\natural}=\tilde Q_4$, which holds for the central $\tilde Q_4$, and the star insertion is invisible exactly when $\tilde Q_4^{*}=\tilde Q_4$, which holds for the parameters with real central coefficient and purely imaginary vector coefficients, the fixed space $\mathbb{M}_{+}$ of the Hermitian conjugation. For a vector $\tilde Q_4\in V$ with real coefficients the four operators are two, $\pm L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$; for a generic complex vector of $V$ the four are pairwise distinct. The number of distinct operators is therefore a property of the *element*, and not of the product.
 
 ## Rotation, Reflection, and Where the Sign Is Read
 
 ### The Plain Product Gives Minus the Reflection
 
-**Theorem (the reflection is reached only through the sign).** Let $\tilde A\in V$ be a vector with $\langle\tilde A\rangle_{\natural}\ne0$, and let $\rho_{\tilde A}$ be the reflection of $V$ in the hyperplane $\tilde A^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$,
+**Theorem (the reflection is reached only through the sign).** Let $\tilde Q_4\in V$ be a vector with $\langle\tilde Q_4\rangle_{\natural}\ne0$, and let $\rho_{\tilde Q_4}$ be the reflection of $V$ in the hyperplane $\tilde Q_4^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$,
 
 $$
-\rho_{\tilde A}(\tilde Q_3)=\tilde Q_3-\frac{2\langle\tilde Q_3,\tilde A\rangle}{\mathfrak{Q}(\tilde A)}\,\tilde A .
+\rho_{\tilde Q_4}(\tilde Q_3)=\tilde Q_3-\frac{2\langle\tilde Q_3,\tilde Q_4\rangle}{\mathfrak{Q}(\tilde Q_4)}\,\tilde Q_4 .
 $$
 
 Then the two insertions that read the parameter as it stands keep $V$ stable, and
 
 $$
-L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A},\qquad
-L_{\tilde A^{\natural}}R_{\tilde A^{-1}}\big|_{V}=\rho_{\tilde A},
+L_{\tilde Q_4}R_{\tilde Q_4^{-1}}\big|_{V}=-\rho_{\tilde Q_4},\qquad
+L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}\big|_{V}=\rho_{\tilde Q_4},
 $$
 
 with determinant of the restriction $+1$ and $-1$. The two insertions that read the right factor through ${}^{*}$ behave differently, and the proposition below says exactly how.
 
-*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $\mathfrak{Q}(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde Q_3+\tilde Q_3\tilde A=2\langle\tilde A,\tilde Q_3\rangle$ and $\tilde A^{2}=\mathfrak{Q}(\tilde A)e_t$.
+*Proof.* For $\tilde Q_4\in V$ the sign reads the parameter as $\tilde Q_4^{\natural}=-\tilde Q_4$, so that $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}=-L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$; the identity $L_{\tilde Q_4}R_{\tilde Q_4^{-1}}\big|_{V}=-\rho_{\tilde Q_4}$ is the reflection formula of the Clifford algebra in the convention $\mathfrak{Q}(\tilde Q_4)=\langle\tilde Q_4,\tilde Q_4\rangle<0$, equivalently $\tilde Q_4\tilde Q_3+\tilde Q_3\tilde Q_4=2\langle\tilde Q_4,\tilde Q_3\rangle$ and $\tilde Q_4^{2}=\mathfrak{Q}(\tilde Q_4)e_t$.
 
-**Proposition (the star insertions leave $V$ in general).** For $\tilde A\in V$ the right factor of the starred insertions is $(\tilde A^{*})^{-1}=-(\bar{\tilde A})^{-1}$, so the two starred operators are $-L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$ and $+L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$. They keep $V$ stable exactly when $\bar{\tilde A}$ is a scalar multiple of $\tilde A$, that is when the coefficient vector of $\tilde A$ is a complex multiple of a real one. When it is, and only then, a determinant on $V$ is defined: it is $-1$ for the star insertion and $+1$ for the both insertion when the coefficient vector is real, the two are exchanged when it is purely imaginary, and for a coefficient vector that is a non-real, non-imaginary complex multiple of a real one the restriction is neither $\pm\rho_{\tilde A}$ nor form-preserving. For a generic complex parameter, $V$ is not preserved and the starred insertions are read on the algebra and not on $V$.
+**Proposition (the star insertions leave $V$ in general).** For $\tilde Q_4\in V$ the right factor of the starred insertions is $(\tilde Q_4^{*})^{-1}=-(\bar{\tilde Q_4})^{-1}$, so the two starred operators are $-L_{\tilde Q_4}R_{(\bar{\tilde Q_4})^{-1}}$ and $+L_{\tilde Q_4}R_{(\bar{\tilde Q_4})^{-1}}$. They keep $V$ stable exactly when $\bar{\tilde Q_4}$ is a scalar multiple of $\tilde Q_4$, that is when the coefficient vector of $\tilde Q_4$ is a complex multiple of a real one. When it is, and only then, a determinant on $V$ is defined: it is $-1$ for the star insertion and $+1$ for the both insertion when the coefficient vector is real, the two are exchanged when it is purely imaginary, and for a coefficient vector that is a non-real, non-imaginary complex multiple of a real one the restriction is neither $\pm\rho_{\tilde Q_4}$ nor form-preserving. For a generic complex parameter, $V$ is not preserved and the starred insertions are read on the algebra and not on $V$.
 
 *Proof.*
 
-**Remark (the sentence of the corpus, translated).** *The Signed Sandwich on a Clifford Algebra* says that the ordinary sandwich by a vector is the **negative** of the reflection, and that inserting the grade involution *repairs the sign*. The theorem above is that sentence in the biquaternion model: the plain product gives $-\rho_{\tilde A}$, the involution of $V$ whose fixed space has codimension one, and the sign insertion gives $\rho_{\tilde A}$. This is the one place where the algebra forces a choice rather than permitting one.
+**Remark (the sentence of the corpus, translated).** *The Signed Sandwich on a Clifford Algebra* says that the ordinary sandwich by a vector is the **negative** of the reflection, and that inserting the grade involution *repairs the sign*. The theorem above is that sentence in the biquaternion model: the plain product gives $-\rho_{\tilde Q_4}$, the involution of $V$ whose fixed space has codimension one, and the sign insertion gives $\rho_{\tilde Q_4}$. This is the one place where the algebra forces a choice rather than permitting one.
 
 **Corollary (where a determinant plus one lives).** On the algebra $\mathbb{B}$ itself, of complex dimension four, all four operators have determinant $+1$; the sign shows in the determinant only on the odd-dimensional restriction $V$, or on a real form of odd dimension. A "rotation" and a "reflection" are therefore read on $V$.
 
-*Proof.* The operators are products $L_{\tilde A}R_{\tilde Q_1}$, whose determinant on $\mathbb{B}$ is $\det(L_{\tilde A})\det(R_{\tilde Q_1})$, and for a four-dimensional space the sign $-1$ on a parameter contributes the factor $(-1)^{4}=+1$.
+*Proof.* The operators are products $L_{\tilde Q_4}R_{\tilde Q_1}$, whose determinant on $\mathbb{B}$ is $\det(L_{\tilde Q_4})\det(R_{\tilde Q_1})$, and for a four-dimensional space the sign $-1$ on a parameter contributes the factor $(-1)^{4}=+1$.
 
 ### The Sign Is Invisible on the Centre and on Even Parameters
 
-**Proposition.** If $\tilde A$ is central, $\tilde A=a_0e_t$, then the sign insertion changes nothing, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=L_{\tilde A}R_{\tilde A^{-1}}$. If $\tilde A\in V$ is a vector, the sign insertion negates the operator, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$.
+**Proposition.** If $\tilde Q_4$ is central, $\tilde Q_4=a_0e_t$, then the sign insertion changes nothing, $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}=L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$. If $\tilde Q_4\in V$ is a vector, the sign insertion negates the operator, $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}=-L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$.
 
 *Proof.* $\natural$ fixes the centre and negates $V$; left multiplication and right multiplication commute.
 
-**Theorem (the determinant table).** For a unit $\tilde A$ let $d$ be the determinant of the operator restricted to $V$ for the four insertions, in the order (none, sign on the left, star on the right, both). Then
+**Theorem (the determinant table).** For a unit $\tilde Q_4$ let $d$ be the determinant of the operator restricted to $V$ for the four insertions, in the order (none, sign on the left, star on the right, both). Then
 
-| $\tilde A$ | none | sign | star | both |
+| $\tilde Q_4$ | none | sign | star | both |
 |---|---|---|---|---|
 | $e_t$ | $+1$ | $+1$ | $+1$ | $+1$ |
 | $i e_t$ | $+1$ | $+1$ | $-1$ | $-1$ |
@@ -171,7 +171,7 @@ with determinant of the restriction $+1$ and $-1$. The two insertions that read 
 
 The zero entries are the starred insertions of a mixed parameter, whose operator does not preserve $V$, so that the restricted determinant is $0$ and is not a rotation-reflection marker; the star and both columns are read on $V$ only for the rows whose parameter has a real or purely imaginary coefficient vector.
 
-*Proof.* The rows are the computed determinants; the first row is the identity on $V$; the second row shows that a central imaginary parameter, on which the sign is invisible, is still separated by the conjugate-linear insertion, $(\tilde A^{*})^{-1}=i e_t$, which gives $-e_t$ on the left factor and hence $-\mathrm{id}$ on $V$; the third and fourth rows are the theorem above; the fifth row is a purely imaginary vector, on which the star insertion coincides with the plain one and the both insertion with the sign, so that the determinants are those of the third row read with the two insertions exchanged; the last row is a mixed parameter, whose starred operators do not keep $V$ stable.
+*Proof.* The rows are the computed determinants; the first row is the identity on $V$; the second row shows that a central imaginary parameter, on which the sign is invisible, is still separated by the conjugate-linear insertion, $(\tilde Q_4^{*})^{-1}=i e_t$, which gives $-e_t$ on the left factor and hence $-\mathrm{id}$ on $V$; the third and fourth rows are the theorem above; the fifth row is a purely imaginary vector, on which the star insertion coincides with the plain one and the both insertion with the sign, so that the determinants are those of the third row read with the two insertions exchanged; the last row is a mixed parameter, whose starred operators do not keep $V$ stable.
 
 **Remark (the two central rows).** The proposition and the table together show the two independent choices: the *sign* $\natural$ is invisible on the centre and reads only the odd part, while the *star* is invisible on the real directions and reads the coefficient imaginary. Neither is a property of the product; both are properties of the insertion into the chosen element.
 
@@ -187,7 +187,7 @@ The zero entries are the starred insertions of a mixed parameter, whose operator
 
 So the corpus's "sign" is the map with the sign vector $(1,-1,-1,-1)$, and it is *not* the grade involution of that Clifford reading: the grade involution is the coefficient conjugation, and on $V$, which is the grade-two part there, it is the identity. Two consequences follow, and both answer the question of the title. First, the corpus's choice of $\natural$ as the sign is a convention of the biquaternion model, fixed by the coefficient formula and not by an abstract parity. Second, the reflection theorem is nevertheless not a convention: with the sign $\natural$ it holds, and with the grade involution, which is trivial on $V$, it fails.
 
-**Remark (parameter or argument).** The sign may be inserted in the **parameter**, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}$, which is the *signed inner conjugation* of the corpus, or in the **argument**, $\tilde Q_2\mapsto\tilde A\,\tilde Q_2^{\natural}\,\tilde A^{-1}$, which is the *signed sandwich* of *The Signed Sandwich on a Clifford Algebra*. On the vector subspace the two agree, because both act by the sign $-\mathrm{id}$ there; on the whole algebra they differ, and the general corpus keeps the two families apart on purpose, the one twisting the parameter and the other the argument.
+**Remark (parameter or argument).** The sign may be inserted in the **parameter**, $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}$, which is the *signed inner conjugation* of the corpus, or in the **argument**, $\tilde Q_2\mapsto\tilde Q_4\,\tilde Q_2^{\natural}\,\tilde Q_4^{-1}$, which is the *signed sandwich* of *The Signed Sandwich on a Clifford Algebra*. On the vector subspace the two agree, because both act by the sign $-\mathrm{id}$ there; on the whole algebra they differ, and the general corpus keeps the two families apart on purpose, the one twisting the parameter and the other the argument.
 
 ## Summary
 
@@ -201,9 +201,9 @@ The four general products of the biquaternion algebra are one multiplication wit
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\ast}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural\ast}$ | their scalar parts, the four pairings, Gram matrices $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ |
 | ${}^{\approx}$, ${}^{*}$, ${}^{N}$, ${}^{\natural\ast}$ | the four adjoints, decided by the four general products |
 | $\natural$, $\bar{\cdot}$, ${}^{*}$ | the sign, the coefficient conjugation, the Hermitian conjugation; $\natural$ has sign vector $(1,-1,-1,-1)$ |
-| $L_{\tilde A}R_{\tilde Q_1}$ | a two-sided operator; $L_{\tilde A}R_{\tilde A^{-1}}$ the inner automorphism of the plain product |
-| $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}$, $\tilde Q_2\mapsto\tilde A\tilde Q_2^{\natural}\tilde A^{-1}$ | the sign inserted in the parameter, and in the argument |
-| $\rho_{\tilde A}$ | the reflection of $V$ in $\tilde A^{\perp}$; the plain product gives $-\rho_{\tilde A}$, the sign gives $\rho_{\tilde A}$ |
+| $L_{\tilde Q_4}R_{\tilde Q_1}$ | a two-sided operator; $L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$ the inner automorphism of the plain product |
+| $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}$, $\tilde Q_2\mapsto\tilde Q_4\tilde Q_2^{\natural}\tilde Q_4^{-1}$ | the sign inserted in the parameter, and in the argument |
+| $\rho_{\tilde Q_4}$ | the reflection of $V$ in $\tilde Q_4^{\perp}$; the plain product gives $-\rho_{\tilde Q_4}$, the sign gives $\rho_{\tilde Q_4}$ |
 | $\operatorname{diag}(1,1,-1,-1)$, $\operatorname{diag}(-1,-1,1,1)$ | the two operators of $\vec e_x$, and their restrictions $\operatorname{diag}(1,-1,-1)$, $\operatorname{diag}(-1,1,1)$ to $V$ |
 
 ## Further Reading

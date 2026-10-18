@@ -36,11 +36,11 @@ and it is a complex Hilbert space on which the orthochronous Lorentz group acts 
 The module-theoretic statement is worth making precisely, because it is where the framework's structure enters the state space. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has, up to equivalence, one irreducible module: the two-dimensional spinor module on which it acts by matrix multiplication. The scalar one-particle space is **not** that module. Since the scalar state transforms trivially under the Lorentz group, no non-central element of $\mathbb{B}$ can act on it without mixing it into a higher-spin sector; the only elements that preserve the spin-$0$ subspace are the central scalars. Hence
 
 $$
-\tilde A\in\mathbb{C}_{\mathbb{B}}\ \text{acts as a scalar},\qquad
-\tilde A\notin\mathbb{C}_{\mathbb{B}}\ \text{does not act on a spin-}0\ \text{state},
+\tilde Q_2\in\mathbb{C}_{\mathbb{B}}\ \text{acts as a scalar},\qquad
+\tilde Q_2\notin\mathbb{C}_{\mathbb{B}}\ \text{does not act on a spin-}0\ \text{state},
 $$
 
-and the scalar one-particle space is a module over the centre. At the level of the generators every commutator $[\tilde A,\tilde Q_1]$ acts as zero, so only the central part of an element contributes and the spin part of the algebra is invisible on a spin-$0$ state. In the associative sense no nonzero action of the whole algebra exists, and the reason is one line: the trace-free part generates $\mathbb{B}$, so if $\vec e_x$ acted as zero then $\vec e_x^2=-e_t$ would force the identity to act as zero as well, and with it every element. The irreducible biquaternion modules are the spinor modules; the scalar state space is a module for the centre and for the mode algebra, not for $\mathbb{B}$. This is the representation-theoretic content of "spin $0$ lives in the centre", stated at the level of the state space rather than the field.
+and the scalar one-particle space is a module over the centre. At the level of the generators every commutator $[\tilde Q_2,\tilde Q_1]$ acts as zero, so only the central part of an element contributes and the spin part of the algebra is invisible on a spin-$0$ state. In the associative sense no nonzero action of the whole algebra exists, and the reason is one line: the trace-free part generates $\mathbb{B}$, so if $\vec e_x$ acted as zero then $\vec e_x^2=-e_t$ would force the identity to act as zero as well, and with it every element. The irreducible biquaternion modules are the spinor modules; the scalar state space is a module for the centre and for the mode algebra, not for $\mathbb{B}$. This is the representation-theoretic content of "spin $0$ lives in the centre", stated at the level of the state space rather than the field.
 
 The complex structure that makes $\mathcal{H}_1$ a complex vector space is the central scalar imaginary $i$; the $\mathrm{U}(1)$ phase it generates is the internal symmetry of the charged field. In the framework's conjugation language, the Hermitian conjugation ${}^{*}$ fixes the real subspace of the one-particle space and exchanges the particle and antiparticle branches; the algebra's real structure $\flat=-{}^{*}$ acts on the central values and not on the module. The one-particle space thus inherits the centre's complex structure and nothing of the spinor structure.
 
@@ -277,7 +277,7 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | $N=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Number operator ($\mathbb{N}$-grading) |
 | $\u03d8^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Charge operator ($\mathbb{Z}$-grading) |
 | $\mathrm{Sym}^n$, $\binom{d+n_{\max}}{n_{\max}}$ | Symmetric powers and their dimensions |
-| $\mathrm{Tr}([\tilde A,\tilde Q_1])=0$, $\mathrm{Tr}(e_t)=2$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$, $\mathrm{Tr}(e_t)=2$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\tfrac12(e_t+i\vec e_z)$, $\tfrac12(e_t-i\vec e_z)$ | Fermionic vacuum and occupied projectors (contrast case) |
 | $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ | Trace formula (Born rule), for finite truncations |
 | $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$, $\vert\alpha\rangle$ | Displacement operator and coherent state |

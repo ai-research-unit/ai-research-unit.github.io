@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The two-sided operators of the general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ preserve the form exactly when the product of their parameters is $\pm e_t$, and then they are the maps $\pm\mathrm{Ad}_{\tilde A}=\pm L_{\tilde A}R_{\tilde A^{-1}}$ (*Two-Sided Operators on the Biquaternion Algebra*). Two consequences follow at once. Every unit of the algebra acts on it by an isometry of the plain form, with no condition on the parameter; and the maps of the family that are isometries are the $\pm$ inner automorphisms, a family of complex dimension three inside the orthogonal group of the form, of complex dimension six.
+The two-sided operators of the general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ preserve the form exactly when the product of their parameters is $\pm e_t$, and then they are the maps $\pm\mathrm{Ad}_{\tilde Q_4}=\pm L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$ (*Two-Sided Operators on the Biquaternion Algebra*). Two consequences follow at once. Every unit of the algebra acts on it by an isometry of the plain form, with no condition on the parameter; and the maps of the family that are isometries are the $\pm$ inner automorphisms, a family of complex dimension three inside the orthogonal group of the form, of complex dimension six.
 
-The companion article for the general quaternionic bilinear form reads a pin group and a spin group: the set $\mathrm{Pin}=\{N=\pm1\}$ of parameters on which the operator $\Theta_{\tilde A}$ is an isometry, its norm-one subgroup $\mathrm{Spin}=\ker N$ of index two, and the two-to-one cover of the rotation group (*The Pin and Spin Groups of the General Quaternionic Algebra*). The purpose of this article is to say what of that picture survives for the plain form, and the answer is not a transliteration. Of the two groups of the title **only one exists inside the algebra**, and the reason is one line: the quadratic form of the plain form is $\mathfrak{Q}(\tilde A)=\mathrm{Sc}(\tilde A^{2})$, and it is not multiplicative, so the shell $\{\mathfrak{Q}=\pm1\}$ is not a group. What replaces the pair is the inner automorphism group of the units, delivered by an isometry condition that is satisfied by every unit, together with a sign coset that no norm distinguishes.
+The companion article for the general quaternionic bilinear form reads a pin group and a spin group: the set $\mathrm{Pin}=\{N=\pm1\}$ of parameters on which the operator $\Theta_{\tilde Q_4}$ is an isometry, its norm-one subgroup $\mathrm{Spin}=\ker N$ of index two, and the two-to-one cover of the rotation group (*The Pin and Spin Groups of the General Quaternionic Algebra*). The purpose of this article is to say what of that picture survives for the plain form, and the answer is not a transliteration. Of the two groups of the title **only one exists inside the algebra**, and the reason is one line: the quadratic form of the plain form is $\mathfrak{Q}(\tilde Q_4)=\mathrm{Sc}(\tilde Q_4^{2})$, and it is not multiplicative, so the shell $\{\mathfrak{Q}=\pm1\}$ is not a group. What replaces the pair is the inner automorphism group of the units, delivered by an isometry condition that is satisfied by every unit, together with a sign coset that no norm distinguishes.
 
 The article is the plain twin of the quaternionic one and it is written as its parallel, section for section. Three of its statements are the sharp differences, and each is proved here. The isometry condition is vacuous, so the action of the algebra on itself is not read on a shell. The kernel of the action is the whole centre $\mathbb{C}^{\times}$, not the two-element group $\{\pm e_t\}$, so the cover of the rotation group is not finite until it is normalised. And the reflections of the plain form, unlike the reflections of the vector subspace, are not operators of the two-sided family at all.
 
@@ -13,25 +13,25 @@ The algebra, the conjugations and the remarkable subspaces are *The Biquaternioi
 
 ## The Two Candidate Groups
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$; a general element is $\tilde A=\sum_\mu A_\mu e_\mu$, written $\tilde A=A_te_t+\vec A$ with vector part $\vec A=\sum_{\mu\in\{x,y,z\}}A_\mu\vec e_\mu$. The plain bilinear form is
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$; a general element is $\tilde Q_4=\sum_\mu Q_{4\mu} e_\mu$, written $\tilde Q_4=Q_{4t}e_t+\vec Q_4$ with vector part $\vec Q_4=\sum_{\mu\in\{x,y,z\}}Q_{4\mu}\vec e_\mu$. The plain bilinear form is
 
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu},\qquad \varepsilon=(1,-1,-1,-1),
 $$
 
-with quadratic form $\mathfrak{Q}(\tilde A)=\langle\tilde A,\tilde A\rangle=\mathrm{Sc}(\tilde A^{2})=A_t^{2}-A_x^{2}-A_y^{2}-A_z^{2}$, of Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, non-degenerate, of realified signature $(4,4)$. The multiplicative quadratic form of the algebra is the norm $\langle\tilde A\rangle_{\natural}=\tilde A\tilde A^{\natural}=\sum_\mu A_\mu^{2}$, which is a different form. The unit group is $\mathbb{B}^{\times}$, the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the vector subspace is $V=\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, and the inner automorphism of a unit is $\mathrm{Ad}_{\tilde A}(\tilde Q)=\tilde A\tilde Q\tilde A^{-1}$.
+with quadratic form $\mathfrak{Q}(\tilde Q_4)=\langle\tilde Q_4,\tilde Q_4\rangle=\mathrm{Sc}(\tilde Q_4^{2})=Q_{4t}^{2}-Q_{4x}^{2}-Q_{4y}^{2}-Q_{4z}^{2}$, of Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$, non-degenerate, of realified signature $(4,4)$. The multiplicative quadratic form of the algebra is the norm $\langle\tilde Q_4\rangle_{\natural}=\tilde Q_4\tilde Q_4^{\natural}=\sum_\mu Q_{4\mu}^{2}$, which is a different form. The unit group is $\mathbb{B}^{\times}$, the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the vector subspace is $V=\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, and the inner automorphism of a unit is $\mathrm{Ad}_{\tilde Q_4}(\tilde Q)=\tilde Q_4\tilde Q\tilde Q_4^{-1}$.
 
 **Definition (the two candidate sets).** The **candidate pin group** and the **candidate spin group** of the plain form are the shells of its quadratic form,
 
 $$
-\mathrm{Pin}_{q}=\{\tilde A\in\mathbb{B}:\mathfrak{Q}(\tilde A)=\pm1\},\qquad
-\mathrm{Spin}_{q}=\{\tilde A\in\mathbb{B}:\mathfrak{Q}(\tilde A)=1\}.
+\mathrm{Pin}_{q}=\{\tilde Q_4\in\mathbb{B}:\mathfrak{Q}(\tilde Q_4)=\pm1\},\qquad
+\mathrm{Spin}_{q}=\{\tilde Q_4\in\mathbb{B}:\mathfrak{Q}(\tilde Q_4)=1\}.
 $$
 
 **Theorem (the plain shell is not a group).** Neither set is closed under multiplication. The quadratic form $\mathfrak{Q}$ is not multiplicative:
 
 $$
-\mathfrak{Q}(\tilde A\tilde Q_3)\neq \mathfrak{Q}(\tilde A)\mathfrak{Q}(\tilde Q_3)\quad\text{in general},
+\mathfrak{Q}(\tilde Q_4\tilde Q_3)\neq \mathfrak{Q}(\tilde Q_4)\mathfrak{Q}(\tilde Q_3)\quad\text{in general},
 $$
 
 and the difference is not a sign that a normalisation could absorb.
@@ -39,74 +39,74 @@ and the difference is not a sign that a normalisation could absorb.
 *Proof.* Take the two pure directions
 
 $$
-\tilde A=i\vec e_x,\qquad \tilde Q_3=\frac{i(\vec e_x+\vec e_y)}{\sqrt2},\qquad
-\mathfrak{Q}(\tilde A)=\mathrm{Sc}\bigl(i^{2}\vec e_x^{2}\bigr)=\mathrm{Sc}\bigl((-1)(-e_t)\bigr)=1,\quad
+\tilde Q_4=i\vec e_x,\qquad \tilde Q_3=\frac{i(\vec e_x+\vec e_y)}{\sqrt2},\qquad
+\mathfrak{Q}(\tilde Q_4)=\mathrm{Sc}\bigl(i^{2}\vec e_x^{2}\bigr)=\mathrm{Sc}\bigl((-1)(-e_t)\bigr)=1,\quad
 \mathfrak{Q}(\tilde Q_3)=-\tfrac12\mathrm{Sc}\bigl((\vec e_x+\vec e_y)^{2}\bigr)=-\tfrac12\mathrm{Sc}(-2e_t)=1 .
 $$
 
 Their product is
 
 $$
-\tilde A\tilde Q_3=\frac{i^{2}(\vec e_x^{2}+\vec e_x\vec e_y)}{\sqrt2}=\frac{-(-e_t+\vec e_z)}{\sqrt2}=\frac{e_t-\vec e_z}{\sqrt2},\qquad
-\mathfrak{Q}(\tilde A\tilde Q_3)=\tfrac12\mathrm{Sc}\bigl((e_t-\vec e_z)^{2}\bigr)=\tfrac12\bigl(\mathrm{Sc}(e_t^{2})+\mathrm{Sc}(\vec e_z^{2})\bigr)=\tfrac12(1-1)=0,
+\tilde Q_4\tilde Q_3=\frac{i^{2}(\vec e_x^{2}+\vec e_x\vec e_y)}{\sqrt2}=\frac{-(-e_t+\vec e_z)}{\sqrt2}=\frac{e_t-\vec e_z}{\sqrt2},\qquad
+\mathfrak{Q}(\tilde Q_4\tilde Q_3)=\tfrac12\mathrm{Sc}\bigl((e_t-\vec e_z)^{2}\bigr)=\tfrac12\bigl(\mathrm{Sc}(e_t^{2})+\mathrm{Sc}(\vec e_z^{2})\bigr)=\tfrac12(1-1)=0,
 $$
 
-so $\mathfrak{Q}(\tilde A\tilde Q_3)=0$ while $\mathfrak{Q}(\tilde A)\mathfrak{Q}(\tilde Q_3)=1$. The failure is not invertibility: $\tilde A\tilde Q_3$ is a unit of norm $\langle e_t-\vec e_z\rangle_{\natural}=1+1=2$, it has merely left the shell. Nor is the example degenerate: for random pairs normalised to $\mathfrak{Q}(\tilde A)=\mathfrak{Q}(\tilde Q_3)=1$ the product fell outside $\{\mathfrak{Q}=\pm1\}$ in $100$ cases out of $100$, the values $\mathfrak{Q}(\tilde A\tilde Q_3)$ scattering over the complex plane with no preferred sign.
+so $\mathfrak{Q}(\tilde Q_4\tilde Q_3)=0$ while $\mathfrak{Q}(\tilde Q_4)\mathfrak{Q}(\tilde Q_3)=1$. The failure is not invertibility: $\tilde Q_4\tilde Q_3$ is a unit of norm $\langle e_t-\vec e_z\rangle_{\natural}=1+1=2$, it has merely left the shell. Nor is the example degenerate: for random pairs normalised to $\mathfrak{Q}(\tilde Q_4)=\mathfrak{Q}(\tilde Q_3)=1$ the product fell outside $\{\mathfrak{Q}=\pm1\}$ in $100$ cases out of $100$, the values $\mathfrak{Q}(\tilde Q_4\tilde Q_3)$ scattering over the complex plane with no preferred sign.
 
 **Remark (the multiplicative form is a different form).** The algebra does carry a multiplicative quadratic form, the norm $\langle\cdot\rangle_{\natural}$, and the two forms are congruent over $\mathbb{C}$:
 
 $$
-\mathfrak{Q}(\tilde A)=N\bigl(\psi(\tilde A)\bigr),\qquad \psi(\tilde A)=A_te_t+iA_x\vec e_x+iA_y\vec e_y+iA_z\vec e_z,
+\mathfrak{Q}(\tilde Q_4)=N\bigl(\psi(\tilde Q_4)\bigr),\qquad \psi(\tilde Q_4)=Q_{4t}e_t+iQ_{4x}\vec e_x+iQ_{4y}\vec e_y+iQ_{4z}\vec e_z,
 $$
 
-because $\langle\psi(\tilde A)\rangle_{\natural}=A_t^{2}+(iA_x)^{2}+(iA_y)^{2}+(iA_z)^{2}=A_t^{2}-A_x^{2}-A_y^{2}-A_z^{2}$. The forms therefore have the same orthogonal group up to conjugacy, but $\psi$ is **not** an algebra map: $\psi(\tilde A\tilde Q_3)\neq\psi(\tilde A)\psi(\tilde Q_3)$ in general, verified on random pairs. A congruence by a non-multiplicative linear map transports the form and does not transport a group of elements, and that is the precise reason why the pin group of the companion article has no plain counterpart: the shell $\{\mathfrak{Q}=\pm1\}$ is the $\psi$-preimage of the shell $\{N=\pm1\}$, and $\psi$ does not respect the product.
+because $\langle\psi(\tilde Q_4)\rangle_{\natural}=Q_{4t}^{2}+(iQ_{4x})^{2}+(iQ_{4y})^{2}+(iQ_{4z})^{2}=Q_{4t}^{2}-Q_{4x}^{2}-Q_{4y}^{2}-Q_{4z}^{2}$. The forms therefore have the same orthogonal group up to conjugacy, but $\psi$ is **not** an algebra map: $\psi(\tilde Q_4\tilde Q_3)\neq\psi(\tilde Q_4)\psi(\tilde Q_3)$ in general, verified on random pairs. A congruence by a non-multiplicative linear map transports the form and does not transport a group of elements, and that is the precise reason why the pin group of the companion article has no plain counterpart: the shell $\{\mathfrak{Q}=\pm1\}$ is the $\psi$-preimage of the shell $\{N=\pm1\}$, and $\psi$ does not respect the product.
 
 **Theorem (what is a group here).** The set
 
 $$
-\{\pm\mathrm{Ad}_{\tilde A}:\tilde A\in\mathbb{B}^{\times}\}\cong\bigl(\mathbb{B}^{\times}/\mathbb{C}^{\times}\bigr)\times\{\pm1\}
+\{\pm\mathrm{Ad}_{\tilde Q_4}:\tilde Q_4\in\mathbb{B}^{\times}\}\cong\bigl(\mathbb{B}^{\times}/\mathbb{C}^{\times}\bigr)\times\{\pm1\}
 $$
 
 is a subgroup of the group of isometries of the plain form, and it is the whole contribution of the algebra to that group.
 
-*Proof.* The isometry theorem of the companion article gives that a two-sided isometry is $\pm\mathrm{Ad}_{\tilde A}$, and the composition law $\mathrm{Ad}_{\tilde A}\mathrm{Ad}_{\tilde Q_3}=\mathrm{Ad}_{\tilde A\tilde Q_3}$ makes the set a group; the map $\tilde A\mapsto\mathrm{Ad}_{\tilde A}$ is a homomorphism of $\mathbb{B}^{\times}$ onto the first factor, with kernel the centre. That the kernel is the centre, and not the two-element group $\{\pm e_t\}$, is the next section.
+*Proof.* The isometry theorem of the companion article gives that a two-sided isometry is $\pm\mathrm{Ad}_{\tilde Q_4}$, and the composition law $\mathrm{Ad}_{\tilde Q_4}\mathrm{Ad}_{\tilde Q_3}=\mathrm{Ad}_{\tilde Q_4\tilde Q_3}$ makes the set a group; the map $\tilde Q_4\mapsto\mathrm{Ad}_{\tilde Q_4}$ is a homomorphism of $\mathbb{B}^{\times}$ onto the first factor, with kernel the centre. That the kernel is the centre, and not the two-element group $\{\pm e_t\}$, is the next section.
 
 **Remark (the title of the article and its content).** The article is named after the pair of groups that the companion category reads for its form. Here $\mathrm{Spin}_{q}$ is a hypersurface and not a group, and the group of the title that does exist is $\mathrm{Inn}(\mathbb{B})$, reached by the units with no condition. The corpus has the same verdict for the classical orthogonal group, where the Pin group is not an object of the algebra and the obstruction is the odd slot of the Clifford envelope (*Biquaternion Versors and the Orthogonal Group*, §*What the Algebra Does Not Cover*). Here the obstruction comes one step earlier: the shell itself fails to be a group, and the reflections are outside the two-sided family for the same odd-slot reason.
 
 ## The Action and the Cover
 
-**Theorem (every unit acts by an isometry).** For every unit $\tilde A$ the inner automorphism $\mathrm{Ad}_{\tilde A}$ preserves the plain form,
+**Theorem (every unit acts by an isometry).** For every unit $\tilde Q_4$ the inner automorphism $\mathrm{Ad}_{\tilde Q_4}$ preserves the plain form,
 
 $$
-\langle\mathrm{Ad}_{\tilde A}\tilde Q_1,\mathrm{Ad}_{\tilde A}\tilde Q_2\rangle=\langle\tilde Q_1,\tilde Q_2\rangle\qquad\text{for all }\tilde Q_1,\tilde Q_2,
+\langle\mathrm{Ad}_{\tilde Q_4}\tilde Q_1,\mathrm{Ad}_{\tilde Q_4}\tilde Q_2\rangle=\langle\tilde Q_1,\tilde Q_2\rangle\qquad\text{for all }\tilde Q_1,\tilde Q_2,
 $$
 
 and its associate is its inverse,
 
 $$
-\bigl(\mathrm{Ad}_{\tilde A}\bigr)^{\approx}=\mathrm{Ad}_{\tilde A^{-1}}=\bigl(\mathrm{Ad}_{\tilde A}\bigr)^{-1}.
+\bigl(\mathrm{Ad}_{\tilde Q_4}\bigr)^{\approx}=\mathrm{Ad}_{\tilde Q_4^{-1}}=\bigl(\mathrm{Ad}_{\tilde Q_4}\bigr)^{-1}.
 $$
 
-*Proof.* The first identity is the cyclicity of the scalar part, $\mathrm{Sc}(\tilde A(\tilde Q_1\tilde Q_2)\tilde A^{-1})=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the second follows from the composition law or by applying the swap law $(L_{\tilde A}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde A}$ to the pair $(\tilde A,\tilde A^{-1})$.
+*Proof.* The first identity is the cyclicity of the scalar part, $\mathrm{Sc}(\tilde Q_4(\tilde Q_1\tilde Q_2)\tilde Q_4^{-1})=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the second follows from the composition law or by applying the swap law $(L_{\tilde Q_4}R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}R_{\tilde Q_4}$ to the pair $(\tilde Q_4,\tilde Q_4^{-1})$.
 
-**Remark (the isometry condition is vacuous, and that is the difference).** For the general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ the twisted operator $\Theta_{\tilde A}(\tilde Q)=\tilde A\tilde Q\tilde A^{\natural}$ satisfies
-
-$$
-\bigl\langle\Theta_{\tilde A}\tilde Q_1,\Theta_{\tilde A}\tilde Q_2\bigr\rangle_{\natural}=\langle\tilde A\rangle_{\natural}^{2}\bigl\langle\tilde Q_1,\tilde Q_2\bigr\rangle_{\natural},
-$$
-
-verified on random triples, so $\Theta_{\tilde A}$ is an isometry exactly on the shell $\langle\cdot\rangle_{\natural}=\pm1$, which is the pin group of the quaternionic category. For the plain form the corresponding identity is
+**Remark (the isometry condition is vacuous, and that is the difference).** For the general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ the twisted operator $\Theta_{\tilde Q_4}(\tilde Q)=\tilde Q_4\tilde Q\tilde Q_4^{\natural}$ satisfies
 
 $$
-\langle\tilde A\tilde Q_1\tilde A^{-1},\tilde A\tilde Q_2\tilde A^{-1}\rangle=\langle\tilde Q_1,\tilde Q_2\rangle\quad\text{for **every** unit }\tilde A,
+\bigl\langle\Theta_{\tilde Q_4}\tilde Q_1,\Theta_{\tilde Q_4}\tilde Q_2\bigr\rangle_{\natural}=\langle\tilde Q_4\rangle_{\natural}^{2}\bigl\langle\tilde Q_1,\tilde Q_2\bigr\rangle_{\natural},
+$$
+
+verified on random triples, so $\Theta_{\tilde Q_4}$ is an isometry exactly on the shell $\langle\cdot\rangle_{\natural}=\pm1$, which is the pin group of the quaternionic category. For the plain form the corresponding identity is
+
+$$
+\langle\tilde Q_4\tilde Q_1\tilde Q_4^{-1},\tilde Q_4\tilde Q_2\tilde Q_4^{-1}\rangle=\langle\tilde Q_1,\tilde Q_2\rangle\quad\text{for **every** unit }\tilde Q_4,
 $$
 
 and the parameter carries no factor to be restricted: the plain form is the scalar part of the algebra's own product, so the two parameters of the sandwich cancel exactly. The shell of the quaternionic form selects the isometries; here nothing is selected.
 
-**Proposition (the kernel of the action is the centre).** For units $\tilde A,\tilde Q_3$,
+**Proposition (the kernel of the action is the centre).** For units $\tilde Q_4,\tilde Q_3$,
 
 $$
-\mathrm{Ad}_{\tilde A}=\mathrm{Ad}_{\tilde Q_3}\iff \tilde Q_3=\lambda\tilde A\quad\text{for some }\lambda\in\mathbb{C}^{\times}.
+\mathrm{Ad}_{\tilde Q_4}=\mathrm{Ad}_{\tilde Q_3}\iff \tilde Q_3=\lambda\tilde Q_4\quad\text{for some }\lambda\in\mathbb{C}^{\times}.
 $$
 
 Consequently $\ker\bigl(\mathbb{B}^{\times}\to\mathrm{Inn}(\mathbb{B})\bigr)=\mathbb{C}^{\times}$, the action fixes the centre pointwise, and
@@ -117,15 +117,15 @@ $$
 
 acting on $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus V$ by the identity on the centre and by rotations of the traceless subspace $V$, of determinant one.
 
-*Proof.* $\mathrm{Ad}_{\tilde A}=\mathrm{Ad}_{\tilde Q_3}$ reads $\tilde A\tilde Q=\tilde Q\tilde Q_3'$ for all $\tilde Q$ with $\tilde Q_3'=\tilde Q_3\tilde A^{-1}$, that is $\tilde Q\tilde Q_3'=\tilde Q_3'\tilde Q$ for all $\tilde Q$, i.e. $\tilde Q_3'$ central, which is $\tilde Q_3=\lambda\tilde A$. Conversely $\mathrm{Ad}_{\lambda\tilde A}=\mathrm{Ad}_{\tilde A}$. The linear system for $\tilde Q_3$ given $\tilde A$ has rank three in four unknowns, verified by elimination, its one-dimensional solution space being the line $\mathbb{C}\tilde A$. That the action fixes $e_t$ and maps $V$ to itself with determinant one was verified on random units; the identification of the quotient and of the rotation group is the classical one, and the matrix picture is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
+*Proof.* $\mathrm{Ad}_{\tilde Q_4}=\mathrm{Ad}_{\tilde Q_3}$ reads $\tilde Q_4\tilde Q=\tilde Q\tilde Q_3'$ for all $\tilde Q$ with $\tilde Q_3'=\tilde Q_3\tilde Q_4^{-1}$, that is $\tilde Q\tilde Q_3'=\tilde Q_3'\tilde Q$ for all $\tilde Q$, i.e. $\tilde Q_3'$ central, which is $\tilde Q_3=\lambda\tilde Q_4$. Conversely $\mathrm{Ad}_{\lambda\tilde Q_4}=\mathrm{Ad}_{\tilde Q_4}$. The linear system for $\tilde Q_3$ given $\tilde Q_4$ has rank three in four unknowns, verified by elimination, its one-dimensional solution space being the line $\mathbb{C}\tilde Q_4$. That the action fixes $e_t$ and maps $V$ to itself with determinant one was verified on random units; the identification of the quotient and of the rotation group is the classical one, and the matrix picture is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
 
 **Corollary (the cover of the rotation group is not finite).** The homomorphism is not two-to-one: its kernel is the whole centre $\mathbb{C}^{\times}$, of complex dimension one, so the fibre over a rotation is a line of parameters with no finite degree to record. The two-to-one cover of the quaternionic category is recovered by **normalising** the parameter: the norm-one shell
 
 $$
-\mathrm{SL}_2(\mathbb{C})=\{\tilde A:\langle\tilde A\rangle_{\natural}=1\}
+\mathrm{SL}_2(\mathbb{C})=\{\tilde Q_4:\langle\tilde Q_4\rangle_{\natural}=1\}
 $$
 
-meets every class of $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ in exactly the pair $\pm\tilde A/\sqrt{\langle\tilde A\rangle_{\natural}}$, verified together with $\langle\tilde A/\sqrt{\langle\tilde A\rangle_{\natural}}\rangle_{\natural}=1$ and $\mathrm{Ad}_{\tilde A/\sqrt{\langle\tilde A\rangle_{\natural}}}=\mathrm{Ad}_{\tilde A}$, and
+meets every class of $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ in exactly the pair $\pm\tilde Q_4/\sqrt{\langle\tilde Q_4\rangle_{\natural}}$, verified together with $\langle\tilde Q_4/\sqrt{\langle\tilde Q_4\rangle_{\natural}}\rangle_{\natural}=1$ and $\mathrm{Ad}_{\tilde Q_4/\sqrt{\langle\tilde Q_4\rangle_{\natural}}}=\mathrm{Ad}_{\tilde Q_4}$, and
 
 $$
 \mathrm{SL}_2(\mathbb{C})/\{\pm e_t\}\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C}),
@@ -135,17 +135,17 @@ the classical two-to-one cover. The spin group of the plain form is therefore th
 
 ## The Sign Coset
 
-**Theorem (the two-sided isometries and the sign).** A two-sided operator is an isometry of the plain form exactly when its parameters satisfy $\tilde Q_3\tilde A=\pm e_t$, and then it is $\pm\mathrm{Ad}_{\tilde A}$. The negative sign is a genuine second coset:
+**Theorem (the two-sided isometries and the sign).** A two-sided operator is an isometry of the plain form exactly when its parameters satisfy $\tilde Q_3\tilde Q_4=\pm e_t$, and then it is $\pm\mathrm{Ad}_{\tilde Q_4}$. The negative sign is a genuine second coset:
 
 $$
--\mathrm{Ad}_{\tilde A}\notin\mathrm{Inn}(\mathbb{B}),
+-\mathrm{Ad}_{\tilde Q_4}\notin\mathrm{Inn}(\mathbb{B}),
 $$
 
 and both signs have determinant $+1$ on the four-dimensional space.
 
-*Proof.* The criterion is the isometry theorem of the companion article. For the second statement, $-\mathrm{Ad}_{\tilde A}$ sends $e_t$ to $-e_t$, while every inner automorphism fixes $e_t$, so the sign is not inner. For the determinant, $\det(\mathrm{Ad}_{\tilde A})=1$ was verified on random units, and $\det(-\mathrm{Ad}_{\tilde A})=(-1)^{4}\det(\mathrm{Ad}_{\tilde A})=1$ because the space has dimension four, verified on random units. Hence the isometries the algebra supplies lie in $SO_4(\mathbb{C})$ and the sign coset is not an orientation.
+*Proof.* The criterion is the isometry theorem of the companion article. For the second statement, $-\mathrm{Ad}_{\tilde Q_4}$ sends $e_t$ to $-e_t$, while every inner automorphism fixes $e_t$, so the sign is not inner. For the determinant, $\det(\mathrm{Ad}_{\tilde Q_4})=1$ was verified on random units, and $\det(-\mathrm{Ad}_{\tilde Q_4})=(-1)^{4}\det(\mathrm{Ad}_{\tilde Q_4})=1$ because the space has dimension four, verified on random units. Hence the isometries the algebra supplies lie in $SO_4(\mathbb{C})$ and the sign coset is not an orientation.
 
-**Remark (the quaternionic coset is a shell, this one is a sign).** In the quaternionic category the second coset is the norm-minus-one part of the pin group: for $\tilde A=ie_t$, $\langle\cdot\rangle_{\natural}=-1$ and $\Theta_{\tilde A}=-\mathrm{id}$, which is the twisted member of the family and not an automorphism. Here the same central element is invisible, $\mathrm{Ad}_{ie_t}=\mathrm{id}$, and the second coset comes instead from the two choices of sign in the product of the parameters, $\tilde Q_3\tilde A=\pm e_t$. The sign that the quaternionic form reads through a norm is read by the plain form through a product, and no set of elements of the algebra is distinguished by it. This is the operator-level form of the previous section's conclusion.
+**Remark (the quaternionic coset is a shell, this one is a sign).** In the quaternionic category the second coset is the norm-minus-one part of the pin group: for $\tilde Q_4=ie_t$, $\langle\cdot\rangle_{\natural}=-1$ and $\Theta_{\tilde Q_4}=-\mathrm{id}$, which is the twisted member of the family and not an automorphism. Here the same central element is invisible, $\mathrm{Ad}_{ie_t}=\mathrm{id}$, and the second coset comes instead from the two choices of sign in the product of the parameters, $\tilde Q_3\tilde Q_4=\pm e_t$. The sign that the quaternionic form reads through a norm is read by the plain form through a product, and no set of elements of the algebra is distinguished by it. This is the operator-level form of the previous section's conclusion.
 
 ## The Reflections the Algebra Does Not Reach
 
@@ -155,15 +155,15 @@ $$
 \rho_{\tilde S}(\tilde Q)=\tilde Q-\frac{2\langle\tilde Q,\tilde S\rangle}{\mathfrak{Q}(\tilde S)}\,\tilde S .
 $$
 
-**Theorem (the reflections are not two-sided operators).** Every $\rho_{\tilde S}$ is an isometry of the plain form of determinant $-1$, and no $\rho_{\tilde S}$ is of the form $L_{\tilde A}R_{\tilde Q_3}$. Consequently the reflections lie outside the two-sided family, and so does every product of an odd number of them.
+**Theorem (the reflections are not two-sided operators).** Every $\rho_{\tilde S}$ is an isometry of the plain form of determinant $-1$, and no $\rho_{\tilde S}$ is of the form $L_{\tilde Q_4}R_{\tilde Q_3}$. Consequently the reflections lie outside the two-sided family, and so does every product of an odd number of them.
 
-*Proof.* The reflection formula is the definition of the reflection of a quadratic space, so $\rho_{\tilde S}$ is an isometry of determinant $-1$; both were verified on random directions $\tilde S$. For the second statement, a two-sided operator that is an isometry is $\pm\mathrm{Ad}_{\tilde A}$, so it suffices to exclude the two maps $\pm\mathrm{Ad}_{\tilde A}$, and the exclusion is by the constant-sign rule. An inner automorphism is multiplicative, $\mathrm{Ad}_{\tilde A}(\tilde Q_1\tilde Q_2)=\mathrm{Ad}_{\tilde A}\tilde Q_1\cdot\mathrm{Ad}_{\tilde A}\tilde Q_2$, and the negative coset is anti-multiplicative, $-\mathrm{Ad}_{\tilde A}(\tilde Q_1\tilde Q_2)=-\mathrm{Ad}_{\tilde A}\tilde Q_1\cdot\mathrm{Ad}_{\tilde A}\tilde Q_2$: each satisfies
+*Proof.* The reflection formula is the definition of the reflection of a quadratic space, so $\rho_{\tilde S}$ is an isometry of determinant $-1$; both were verified on random directions $\tilde S$. For the second statement, a two-sided operator that is an isometry is $\pm\mathrm{Ad}_{\tilde Q_4}$, so it suffices to exclude the two maps $\pm\mathrm{Ad}_{\tilde Q_4}$, and the exclusion is by the constant-sign rule. An inner automorphism is multiplicative, $\mathrm{Ad}_{\tilde Q_4}(\tilde Q_1\tilde Q_2)=\mathrm{Ad}_{\tilde Q_4}\tilde Q_1\cdot\mathrm{Ad}_{\tilde Q_4}\tilde Q_2$, and the negative coset is anti-multiplicative, $-\mathrm{Ad}_{\tilde Q_4}(\tilde Q_1\tilde Q_2)=-\mathrm{Ad}_{\tilde Q_4}\tilde Q_1\cdot\mathrm{Ad}_{\tilde Q_4}\tilde Q_2$: each satisfies
 
 $$
 F(\tilde Q_1\tilde Q_2)=\varepsilon F(\tilde Q_1)F(\tilde Q_2)\qquad\text{with a constant sign }\varepsilon=\pm1,
 $$
 
-verified as the singleton sets $\{+1\}$ and $\{-1\}$ of ratios over random pairs. A reflection does not: for $\tilde S=\lambda e_t$ the map is $\rho_{\lambda e_t}=\operatorname{diag}(-1,1,1,1)$, and if it were $-\mathrm{Ad}_{\tilde A}$ then $\mathrm{Ad}_{\tilde A}$ would have to act as $-1$ on the traceless subspace, of determinant $-1$, whereas $\det\bigl(\mathrm{Ad}_{\tilde A}|_V\bigr)=+1$, verified on random units; and if it were $+\mathrm{Ad}_{\tilde A}$ it would have to fix $e_t$, which it negates. For a pure direction $\tilde S\in V$ the reflection fixes $e_t$ and negates $\tilde S$, so the only remaining possibility is $+\mathrm{Ad}_{\tilde A}$, an algebra automorphism; and it is not multiplicative: for $\tilde W\in V$ with $\langle\tilde S,\tilde W\rangle=0$ and $\tilde W$ not proportional to $\tilde S$, the product $\tilde S\tilde W$ lies in $V$ and is orthogonal for the plain form to $\tilde S$, hence fixed, while $\rho_{\tilde S}(\tilde S)\rho_{\tilde S}(\tilde W)=(-\tilde S)\tilde W=-\tilde S\tilde W$, a contradiction as soon as $\tilde S\tilde W\neq0$. For a mixed direction $\tilde S$ with $S_t\neq0$ the reflection moves the centre, $\rho_{\tilde S}(e_t)=e_t-2S_t\mathfrak{Q}(\tilde S)^{-1}\tilde S$, and cannot be $\pm\mathrm{Ad}_{\tilde A}$, which fixes or negates it. The decomposability test settles all cases at once and independently: written in the basis $\vec e_\mu[\,]e_\nu$ of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, the tensor rank of $\rho_{\tilde S}$ is four for every direction tested — the central, the pure and the mixed — while a two-sided operator has tensor rank one.
+verified as the singleton sets $\{+1\}$ and $\{-1\}$ of ratios over random pairs. A reflection does not: for $\tilde S=\lambda e_t$ the map is $\rho_{\lambda e_t}=\operatorname{diag}(-1,1,1,1)$, and if it were $-\mathrm{Ad}_{\tilde Q_4}$ then $\mathrm{Ad}_{\tilde Q_4}$ would have to act as $-1$ on the traceless subspace, of determinant $-1$, whereas $\det\bigl(\mathrm{Ad}_{\tilde Q_4}|_V\bigr)=+1$, verified on random units; and if it were $+\mathrm{Ad}_{\tilde Q_4}$ it would have to fix $e_t$, which it negates. For a pure direction $\tilde S\in V$ the reflection fixes $e_t$ and negates $\tilde S$, so the only remaining possibility is $+\mathrm{Ad}_{\tilde Q_4}$, an algebra automorphism; and it is not multiplicative: for $\tilde W\in V$ with $\langle\tilde S,\tilde W\rangle=0$ and $\tilde W$ not proportional to $\tilde S$, the product $\tilde S\tilde W$ lies in $V$ and is orthogonal for the plain form to $\tilde S$, hence fixed, while $\rho_{\tilde S}(\tilde S)\rho_{\tilde S}(\tilde W)=(-\tilde S)\tilde W=-\tilde S\tilde W$, a contradiction as soon as $\tilde S\tilde W\neq0$. For a mixed direction $\tilde S$ with $S_t\neq0$ the reflection moves the centre, $\rho_{\tilde S}(e_t)=e_t-2S_t\mathfrak{Q}(\tilde S)^{-1}\tilde S$, and cannot be $\pm\mathrm{Ad}_{\tilde Q_4}$, which fixes or negates it. The decomposability test settles all cases at once and independently: written in the basis $\vec e_\mu[\,]e_\nu$ of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, the tensor rank of $\rho_{\tilde S}$ is four for every direction tested — the central, the pure and the mixed — while a two-sided operator has tensor rank one.
 
 **Proposition (the even products split).** A product of two reflections is an isometry of determinant $+1$. When both directions lie in the vector subspace the product **is** a two-sided operator: for the orthogonal pure directions $\vec e_x,\vec e_y$,
 
@@ -173,7 +173,7 @@ $$
 
 verified including the parameter, and in general a product of two reflections in directions of $V$ is an inner automorphism, which is the rotation group of the vector subspace. A product of two reflections in general directions of the algebra need not be two-sided: for random, non-vector directions the product is an isometry of determinant $+1$ whose tensor rank is four.
 
-**Corollary (what the algebra reaches of the orthogonal group).** The isometry group of the plain form is $O(\mathbb{B},\mathfrak{Q})\cong O_4(\mathbb{C})$, of complex dimension six; the operators the algebra supplies are the $3$-dimensional family $\{\pm\mathrm{Ad}_{\tilde A}\}$, and no reflection, and no product of an odd number of reflections, is among them. The isometries the algebra does not carry are the improper ones, and those of their even products that leave $\{\pm\mathrm{Ad}_{\tilde A}\}$: their carrier is the Clifford algebra of the form, not the algebra. The reflections are read in the odd slot of the Clifford envelope (*Biquaternion Versors and the Orthogonal Group*) and in the general theory (*The Clifford, Pin and Spin Groups with Signed Inner Conjugation*), where the reflection in a non-isotropic vector is $\rho_u(v)=-uvu^{-1}$.
+**Corollary (what the algebra reaches of the orthogonal group).** The isometry group of the plain form is $O(\mathbb{B},\mathfrak{Q})\cong O_4(\mathbb{C})$, of complex dimension six; the operators the algebra supplies are the $3$-dimensional family $\{\pm\mathrm{Ad}_{\tilde Q_4}\}$, and no reflection, and no product of an odd number of reflections, is among them. The isometries the algebra does not carry are the improper ones, and those of their even products that leave $\{\pm\mathrm{Ad}_{\tilde Q_4}\}$: their carrier is the Clifford algebra of the form, not the algebra. The reflections are read in the odd slot of the Clifford envelope (*Biquaternion Versors and the Orthogonal Group*) and in the general theory (*The Clifford, Pin and Spin Groups with Signed Inner Conjugation*), where the reflection in a non-isotropic vector is $\rho_u(v)=-uvu^{-1}$.
 
 **Remark (the companion reflections are two-sided, and this is the whole difference).** The reflections of the quaternionic category are the signed inner conjugations $\Theta_{\tilde U}(\tilde Q)=\tilde U\tilde Q\tilde U^{\natural}$ for $\langle\tilde U\rangle_{\natural}=\pm1$, the maps that carry the reflections of the vector subspace. They **are** members of the plain two-sided family, $L_{\tilde U}R_{\tilde U^{\natural}}$, with the product of the parameters equal to $\langle\tilde U\rangle_{\natural}e_t=\pm e_t$; by the criterion of this article they are isometries of the plain form as well, and they are the operators $\pm\mathrm{Ad}_{\tilde U}$. The two categories therefore read the same operator family with different forms: for the quaternionic form the reflections are inside the family and generate the pin group, for the plain form the reflections in directions of the algebra are outside it and the family supplies only the inner automorphisms. The biquaternion reflections of the vector subspace, in the third reading of the corpus, are *Biquaternion Rotations and Lorentz Transformations*.
 
@@ -185,15 +185,15 @@ $$
 \mathrm{Ad}_{\lambda e_t}=\mathrm{id},
 $$
 
-so the action cannot detect the norm: $\mathrm{Ad}_{\tilde A}$ and $\mathrm{Ad}_{\lambda\tilde A}$ are the same operator for every $\lambda$, verified. The norm is a function of the parameter and not of the operator, which is the reason no shell of the norm can be a group of operators.
+so the action cannot detect the norm: $\mathrm{Ad}_{\tilde Q_4}$ and $\mathrm{Ad}_{\lambda\tilde Q_4}$ are the same operator for every $\lambda$, verified. The norm is a function of the parameter and not of the operator, which is the reason no shell of the norm can be a group of operators.
 
 **A pure unit.** $\mathrm{Ad}_{\vec e_x}$ fixes $e_t$ and $\vec e_x$ and negates $\vec e_y,\vec e_z$: on the vector subspace it is the half-turn about the line $\mathbb{C}\vec e_x$, of determinant $+1$, and it agrees with the operator $\Theta_{\vec e_x}$ of the quaternionic category, which is the same half-turn. On the shell the two categories are one.
 
-**The central element of norm minus one.** For $\tilde A=ie_t$ one has $\langle\cdot\rangle_{\natural}=-1$ and $\mathfrak{Q}=-1$, a unit of the candidate pin shell; the operator is $\mathrm{Ad}_{ie_t}=\mathrm{id}$, verified. In the quaternionic category the same element gives $\Theta_{ie_t}=-\mathrm{id}$, the twisted coset of the cover. The example is the sharpest single instance of the difference between the two articles.
+**The central element of norm minus one.** For $\tilde Q_4=ie_t$ one has $\langle\cdot\rangle_{\natural}=-1$ and $\mathfrak{Q}=-1$, a unit of the candidate pin shell; the operator is $\mathrm{Ad}_{ie_t}=\mathrm{id}$, verified. In the quaternionic category the same element gives $\Theta_{ie_t}=-\mathrm{id}$, the twisted coset of the cover. The example is the sharpest single instance of the difference between the two articles.
 
-**A reflection in a vector direction.** For $\tilde S=\vec e_x$ the reflection is $\rho_{\vec e_x}=\operatorname{diag}(1,-1,1,1)$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$: it fixes the centre and the orthogonal complement of $\vec e_x$ and negates $\vec e_x$, so it has determinant $-1$ on the four-dimensional space and $-1$ on the vector subspace. Its tensor rank is four, so it is not of the form $L_{\tilde A}R_{\tilde Q_3}$: the algebra does not carry this isometry. The same holds for the neighbouring direction $\vec e_y$, and for the unit $\vec e_x$ itself, whose operators $L_{\vec e_x}R_{\vec e_x}=\operatorname{diag}(-1,-1,1,1)$ and $\mathrm{Ad}_{\vec e_x}=\operatorname{diag}(1,1,-1,-1)$ are two-sided and are not this reflection.
+**A reflection in a vector direction.** For $\tilde S=\vec e_x$ the reflection is $\rho_{\vec e_x}=\operatorname{diag}(1,-1,1,1)$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$: it fixes the centre and the orthogonal complement of $\vec e_x$ and negates $\vec e_x$, so it has determinant $-1$ on the four-dimensional space and $-1$ on the vector subspace. Its tensor rank is four, so it is not of the form $L_{\tilde Q_4}R_{\tilde Q_3}$: the algebra does not carry this isometry. The same holds for the neighbouring direction $\vec e_y$, and for the unit $\vec e_x$ itself, whose operators $L_{\vec e_x}R_{\vec e_x}=\operatorname{diag}(-1,-1,1,1)$ and $\mathrm{Ad}_{\vec e_x}=\operatorname{diag}(1,1,-1,-1)$ are two-sided and are not this reflection.
 
-**A reflection in the central direction.** For $\tilde S=e_t$ one has $\mathfrak{Q}=1$ and $\rho_{e_t}=\operatorname{diag}(-1,1,1,1)$: it negates the centre and fixes the vector subspace, so it is not of the form $\pm\mathrm{Ad}_{\tilde A}$ — the positive coset fixes the centre, and the negative one acts on the vector subspace with determinant $-1$, while this map fixes that subspace. Its tensor rank is four. The direction that looks most innocent is already outside the family.
+**A reflection in the central direction.** For $\tilde S=e_t$ one has $\mathfrak{Q}=1$ and $\rho_{e_t}=\operatorname{diag}(-1,1,1,1)$: it negates the centre and fixes the vector subspace, so it is not of the form $\pm\mathrm{Ad}_{\tilde Q_4}$ — the positive coset fixes the centre, and the negative one acts on the vector subspace with determinant $-1$, while this map fixes that subspace. Its tensor rank is four. The direction that looks most innocent is already outside the family.
 
 **A reflection in a mixed direction.** For $\tilde S=e_t+2\vec e_x$ one has $\mathfrak{Q}(\tilde S)=1-4=-3$, and
 
@@ -207,35 +207,35 @@ so the reflection moves the centre and is not an inner automorphism up to sign; 
 
 **A null direction.** For $\tilde S=\vec e_x+i\vec e_y$ one has $\mathfrak{Q}(\tilde S)=0$ and $\langle\tilde S\rangle_{\natural}=0$: the element is a zero divisor of the algebra, not a unit, and the reflection formula does not apply, its normalisation being undefined. The candidate shell excludes it and the unit group excludes it too.
 
-**The normalisation of a parameter.** For $\tilde A=e_t+2\vec e_x$, $\langle\tilde A\rangle_{\natural}=5$ and $\tilde A/\sqrt5$ has norm one and the same inner automorphism. The example is the section of the central quotient used in the corollary: the shell $\mathrm{SL}_2(\mathbb{C})$ selects a representative of each class of $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ up to sign, and never a subfamily of operators.
+**The normalisation of a parameter.** For $\tilde Q_4=e_t+2\vec e_x$, $\langle\tilde Q_4\rangle_{\natural}=5$ and $\tilde Q_4/\sqrt5$ has norm one and the same inner automorphism. The example is the section of the central quotient used in the corollary: the shell $\mathrm{SL}_2(\mathbb{C})$ selects a representative of each class of $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ up to sign, and never a subfamily of operators.
 
 ## Summary
 
-The plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ carries no pin group inside the biquaternion algebra. Its quadratic form $\mathfrak{Q}(\tilde A)=\mathrm{Sc}(\tilde A^{2})$ is not multiplicative — the counterexample $\mathfrak{Q}(i\vec e_x)=\mathfrak{Q}\bigl(i(\vec e_x+\vec e_y)/\sqrt2\bigr)=1$ with $\mathfrak{Q}\bigl((e_t-\vec e_z)/\sqrt2\bigr)=0$, and $100$ of $100$ random normalised pairs leave the shell — so the sets $\{\mathfrak{Q}=\pm1\}$ are not groups. The multiplicative quadratic form of the algebra, the norm $\langle\cdot\rangle_{\natural}$, is a different form, related to $\mathfrak{Q}$ by the complex-linear congruence $\psi=\operatorname{diag}(1,i,i,i)$, which is not an algebra map; a congruent form transported by a non-multiplicative change of coordinates carries no group of elements, and that is why the pin group of the quaternionic category cannot be transported either. What does exist is the action of the units by inner automorphisms: every unit is an isometry of the plain form, with adjoint equal to its inverse, so the isometry condition is vacuous, and the operator is the same for $\tilde A$ and every central multiple of $\tilde A$. The two-sided isometries are the two cosets $\pm\mathrm{Ad}_{\tilde A}$, of complex dimension three inside the orthogonal group of complex dimension six; the negative coset is not inner and both have determinant $+1$ on the four-dimensional space. The kernel of the action is the centre $\mathbb{C}^{\times}$, a torus, so the cover of the rotation group is not finite until it is normalised; the norm-one shell $\mathrm{SL}_2(\mathbb{C})$ meets each class in $\pm\tilde A/\sqrt{\langle\tilde A\rangle_{\natural}}$ and reproduces the classical two-to-one cover $\mathrm{SL}_2(\mathbb{C})\to SO_3(\mathbb{C})$, the same group as the spin group of the quaternionic category but chosen by the norm of the algebra rather than by the form. The reflections of the plain form are isometries of determinant $-1$ that are not operators of the two-sided family; their even products in the vector subspace are the inner automorphisms and their generic products are not. The isometries the algebra does not carry live in the Clifford algebra of the form, in its odd slot.
+The plain form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ carries no pin group inside the biquaternion algebra. Its quadratic form $\mathfrak{Q}(\tilde Q_4)=\mathrm{Sc}(\tilde Q_4^{2})$ is not multiplicative — the counterexample $\mathfrak{Q}(i\vec e_x)=\mathfrak{Q}\bigl(i(\vec e_x+\vec e_y)/\sqrt2\bigr)=1$ with $\mathfrak{Q}\bigl((e_t-\vec e_z)/\sqrt2\bigr)=0$, and $100$ of $100$ random normalised pairs leave the shell — so the sets $\{\mathfrak{Q}=\pm1\}$ are not groups. The multiplicative quadratic form of the algebra, the norm $\langle\cdot\rangle_{\natural}$, is a different form, related to $\mathfrak{Q}$ by the complex-linear congruence $\psi=\operatorname{diag}(1,i,i,i)$, which is not an algebra map; a congruent form transported by a non-multiplicative change of coordinates carries no group of elements, and that is why the pin group of the quaternionic category cannot be transported either. What does exist is the action of the units by inner automorphisms: every unit is an isometry of the plain form, with adjoint equal to its inverse, so the isometry condition is vacuous, and the operator is the same for $\tilde Q_4$ and every central multiple of $\tilde Q_4$. The two-sided isometries are the two cosets $\pm\mathrm{Ad}_{\tilde Q_4}$, of complex dimension three inside the orthogonal group of complex dimension six; the negative coset is not inner and both have determinant $+1$ on the four-dimensional space. The kernel of the action is the centre $\mathbb{C}^{\times}$, a torus, so the cover of the rotation group is not finite until it is normalised; the norm-one shell $\mathrm{SL}_2(\mathbb{C})$ meets each class in $\pm\tilde Q_4/\sqrt{\langle\tilde Q_4\rangle_{\natural}}$ and reproduces the classical two-to-one cover $\mathrm{SL}_2(\mathbb{C})\to SO_3(\mathbb{C})$, the same group as the spin group of the quaternionic category but chosen by the norm of the algebra rather than by the form. The reflections of the plain form are isometries of determinant $-1$ that are not operators of the two-sided family; their even products in the vector subspace are the inner automorphisms and their generic products are not. The isometries the algebra does not carry live in the Clifford algebra of the form, in its odd slot.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | The general plain bilinear form; Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ |
-| $\mathfrak{Q}(\tilde A)=\mathrm{Sc}(\tilde A^{2})=A_t^{2}-A_x^{2}-A_y^{2}-A_z^{2}$ | The quadratic form of the plain form; **not** multiplicative |
-| $\langle\tilde A\rangle_{\natural}=\tilde A\tilde A^{\natural}=\sum_\mu A_\mu^{2}$ | The multiplicative norm; a different form |
+| $\mathfrak{Q}(\tilde Q_4)=\mathrm{Sc}(\tilde Q_4^{2})=Q_{4t}^{2}-Q_{4x}^{2}-Q_{4y}^{2}-Q_{4z}^{2}$ | The quadratic form of the plain form; **not** multiplicative |
+| $\langle\tilde Q_4\rangle_{\natural}=\tilde Q_4\tilde Q_4^{\natural}=\sum_\mu Q_{4\mu}^{2}$ | The multiplicative norm; a different form |
 | $\psi=\operatorname{diag}(1,i,i,i)$ | The congruence $\mathfrak{Q}=N\circ\psi$; $\mathbb{C}$-linear, not an algebra map |
 | $\mathrm{Pin}_q=\{\mathfrak{Q}=\pm1\}$, $\mathrm{Spin}_q=\{\mathfrak{Q}=1\}$ | The candidate shells; hypersurfaces, not groups |
-| $\mathrm{Ad}_{\tilde A}=L_{\tilde A}R_{\tilde A^{-1}}$ | The inner automorphism; an isometry for every unit |
-| $(\mathrm{Ad}_{\tilde A})^{\approx}=\mathrm{Ad}_{\tilde A^{-1}}$ | Its associate is its inverse |
-| $\mathrm{Ad}_{\tilde A}=\mathrm{Ad}_{\tilde Q_3}\iff\tilde Q_3=\lambda\tilde A$ | The kernel of the action is the centre $\mathbb{C}^{\times}$ |
+| $\mathrm{Ad}_{\tilde Q_4}=L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$ | The inner automorphism; an isometry for every unit |
+| $(\mathrm{Ad}_{\tilde Q_4})^{\approx}=\mathrm{Ad}_{\tilde Q_4^{-1}}$ | Its associate is its inverse |
+| $\mathrm{Ad}_{\tilde Q_4}=\mathrm{Ad}_{\tilde Q_3}\iff\tilde Q_3=\lambda\tilde Q_4$ | The kernel of the action is the centre $\mathbb{C}^{\times}$ |
 | $\mathrm{Inn}(\mathbb{B})\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ | The rotation group of the vector subspace $V$ |
 | $\mathrm{SL}_2(\mathbb{C})/\{\pm e_t\}\cong SO_3(\mathbb{C})$ | The classical two-to-one cover, by normalising $\langle\cdot\rangle_{\natural}$ |
-| $\{\pm\mathrm{Ad}_{\tilde A}\}$ | The two-sided isometries; $\det=+1$; dimension three of six |
+| $\{\pm\mathrm{Ad}_{\tilde Q_4}\}$ | The two-sided isometries; $\det=+1$; dimension three of six |
 | $\rho_{\tilde S}(\tilde Q)=\tilde Q-2\langle\tilde Q,\tilde S\rangle \mathfrak{Q}(\tilde S)^{-1}\tilde S$ | The reflection; an isometry of determinant $-1$, **not** two-sided |
 | $\rho_{\vec e_x}\rho_{\vec e_y}=\mathrm{Ad}_{\vec e_z}$ | Two vector reflections make an inner automorphism |
-| $\langle\Theta_{\tilde A}\tilde Q_1,\Theta_{\tilde A}\tilde Q_2\rangle_{\natural}=\langle\tilde A\rangle_{\natural}^{2}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | The quaternionic isometry condition $\langle\cdot,\cdot\rangle_{\natural}=\pm1$; vacuous for the plain form |
+| $\langle\Theta_{\tilde Q_4}\tilde Q_1,\Theta_{\tilde Q_4}\tilde Q_2\rangle_{\natural}=\langle\tilde Q_4\rangle_{\natural}^{2}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | The quaternionic isometry condition $\langle\cdot,\cdot\rangle_{\natural}=\pm1$; vacuous for the plain form |
 
 ## Further Reading
 
-- *Two-Sided Operators on the Biquaternion Algebra* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), the companion article, for the isometry criterion $\tilde Q_3\tilde A=\pm e_t$, the swap adjoint, and the two-sided family of the plain form.
-- *One-Sided Operators on the Biquaternion Algebra* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra.md`), for the factors $L_{\tilde A}$ and $R_{\tilde Q_3}$ and the split into the two regular representations.
+- *Two-Sided Operators on the Biquaternion Algebra* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), the companion article, for the isometry criterion $\tilde Q_3\tilde Q_4=\pm e_t$, the swap adjoint, and the two-sided family of the plain form.
+- *One-Sided Operators on the Biquaternion Algebra* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra.md`), for the factors $L_{\tilde Q_4}$ and $R_{\tilde Q_3}$ and the split into the two regular representations.
 - *The Pin and Spin Groups of the General Quaternionic Algebra* (`articles_maths/the-pin-and-spin-groups-of-the-general-quaternionic-algebra.md`), the quaternionic twin, for the shell $\langle\cdot\rangle_{\natural}=\pm1$, the two-to-one cover and the reflections of the vector subspace.
 - *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* (`articles_maths/the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.md`), for the general Clifford group, the reflection $\rho_u(v)=-uvu^{-1}$ and the Cartan–Dieudonné theorem used in the section on the reflections.
 - *Biquaternion Versors and the Orthogonal Group* (`articles_maths/biquaternion-versors-and-the-orthogonal-group.md`), for the real form whose orthogonal group the algebra reaches, the odd slot that carries the reflections, and the reason the Pin group is not an object of the algebra.

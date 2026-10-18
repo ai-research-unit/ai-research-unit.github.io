@@ -27,13 +27,13 @@ The companion articles supply the pieces:
 
 A **superselection structure** for a quantum theory is a decomposition of its objects into sectors such that two conditions hold. First, no operation of the theory maps one sector into another: the observables preserve the sectors. Second, the relative phase between components drawn from different sectors is unobservable, so no coherence between them can be prepared or detected. The two conditions are equivalent in the standard algebraic setting, and it is worth recording why, because the equivalence is what makes the notion testable.
 
-**The algebraic form.** Let $\mathcal{A}$ be the algebra of observables acting on a Hilbert space $\mathcal{H}$, and let $Z(\mathcal{A}) = \mathcal{A}\cap\mathcal{A}'$ be its centre. Every projection $\tilde{C}\in Z(\mathcal{A})$ is a **central projection**, and it decomposes the representation space,
+**The algebraic form.** Let $\mathcal{A}$ be the algebra of observables acting on a Hilbert space $\mathcal{H}$, and let $Z(\mathcal{A}) = \mathcal{A}\cap\mathcal{A}'$ be its centre. Every projection $\tilde Q_3\in Z(\mathcal{A})$ is a **central projection**, and it decomposes the representation space,
 $$
-\mathcal{H} = \tilde{C}\mathcal{H} \oplus (1-\tilde{C})\mathcal{H},
+\mathcal{H} = \tilde Q_3\mathcal{H} \oplus (1-\tilde Q_3)\mathcal{H},
 $$
-with no observable connecting the two summands: since $\tilde{C}$ commutes with every observable $\tilde{A}$,
+with no observable connecting the two summands: since $\tilde Q_3$ commutes with every observable $\tilde Q_4$,
 $$
-\tilde{C}\tilde{A}(1-\tilde{C}) = 0 .
+\tilde Q_3\tilde Q_4(1-\tilde Q_3) = 0 .
 $$
 A vector that is a superposition of a vector from each summand therefore carries a relative phase that no expectation value can see, because the interference term vanishes identically. The eigenvalues of the central charge label the sectors, and the charge itself is a superselection quantum number: it is conserved by every operation because it commutes with every operation.
 
@@ -83,9 +83,9 @@ P_\pm = \tfrac12\bigl(\mathrm{id} \pm {}^{*}\bigr), \qquad P_+\mathbb{B} = \math
 $$
 These projections are **not** elements of $\mathbb{B}$. They are real-linear operators on the eight-dimensional real vector space $\mathbb{B}$, built from an antilinear involution, and they do not arise from left multiplication by any element:
 
-**Proposition.** If $\tilde{A}\in\mathbb{B}$ satisfies $\tilde{A}\mathbb{M}_+ \subseteq \mathbb{M}_+$, then $\tilde{A}\in\mathbb{R}e_t$; the same holds with $\mathbb{M}_-$ in place of $\mathbb{M}_+$. Consequently no element of $\mathbb{B}$ implements a sector projection by left multiplication.
+**Proposition.** If $\tilde Q_4\in\mathbb{B}$ satisfies $\tilde Q_4\mathbb{M}_+ \subseteq \mathbb{M}_+$, then $\tilde Q_4\in\mathbb{R}e_t$; the same holds with $\mathbb{M}_-$ in place of $\mathbb{M}_+$. Consequently no element of $\mathbb{B}$ implements a sector projection by left multiplication.
 
-**Proof.** Let $\tilde{H}\in\mathbb{M}_+$, so that $\tilde{H}^{*} = \tilde{H}$. The condition reads $(\tilde{A}\tilde{H})^{*} = \tilde{A}\tilde{H}$, that is $\tilde{H}\tilde{A}^{*} = \tilde{A}\tilde{H}$. Taking $\tilde{H} = e_t$ gives $\tilde{A}^{*} = \tilde{A}$, so $\tilde{A}\in\mathbb{M}_+$, and then $\tilde{H}\tilde{A} = \tilde{A}\tilde{H}$ for every Hermitian $\tilde{H}$, which says $\tilde{A}$ commutes with the whole Hermitian basis and hence with $\mathbb{B}$: $\tilde{A}$ is central. The centre is computed in the next section to be $\mathbb{C}e_t$, and its Hermitian part is $\mathbb{R}e_t$. The argument for $\mathbb{M}_-$ is identical after $\tilde{A}\to i\tilde{A}$.
+**Proof.** Let $\tilde{H}\in\mathbb{M}_+$, so that $\tilde{H}^{*} = \tilde{H}$. The condition reads $(\tilde Q_4\tilde{H})^{*} = \tilde Q_4\tilde{H}$, that is $\tilde{H}\tilde Q_4^{*} = \tilde Q_4\tilde{H}$. Taking $\tilde{H} = e_t$ gives $\tilde Q_4^{*} = \tilde Q_4$, so $\tilde Q_4\in\mathbb{M}_+$, and then $\tilde{H}\tilde Q_4 = \tilde Q_4\tilde{H}$ for every Hermitian $\tilde{H}$, which says $\tilde Q_4$ commutes with the whole Hermitian basis and hence with $\mathbb{B}$: $\tilde Q_4$ is central. The centre is computed in the next section to be $\mathbb{C}e_t$, and its Hermitian part is $\mathbb{R}e_t$. The argument for $\mathbb{M}_-$ is identical after $\tilde Q_4\to i\tilde Q_4$.
 
 The proposition says that the sector decomposition, although it decomposes the algebra as a real vector space, is invisible to the algebra's own left action: there is no element whose module action measures the sectors, and the only elements that preserve a sector by left multiplication are the real scalars.
 
@@ -113,18 +113,18 @@ The sectors are a grading of the vector space and not a splitting of the algebra
 
 The standard route asks for central projections, so the centre must be computed.
 
-**The centre.** An element $\tilde{C} = C_te_t + C_x\vec e_x + C_y\vec e_y + C_z\vec e_z$ is central if and only if $[\tilde{C}, \vec e_k] = 0$ for $k = 1,2,3$. Using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu,\nu\in\{1,2,3\}$, the bracket with $\vec e_x$ gives
+**The centre.** An element $\tilde Q_4 = Q_{4t}e_t + Q_{4x}\vec e_x + Q_{4y}\vec e_y + Q_{4z}\vec e_z$ is central if and only if $[\tilde Q_4, \vec e_k] = 0$ for $k = 1,2,3$. Using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu,\nu\in\{1,2,3\}$, the bracket with $\vec e_x$ gives
 $$
-[\tilde{C}, \vec e_x] = 2C_z\vec e_y - 2C_y\vec e_z ,
+[\tilde Q_4, \vec e_x] = 2Q_{4z}\vec e_y - 2Q_{4y}\vec e_z ,
 $$
 and the two companion brackets give
 $$
-[\tilde{C}, \vec e_y] = 2C_x\vec e_z - 2C_z\vec e_x, \qquad
-[\tilde{C}, \vec e_z] = 2C_y\vec e_x - 2C_x\vec e_y .
+[\tilde Q_4, \vec e_y] = 2Q_{4x}\vec e_z - 2Q_{4z}\vec e_x, \qquad
+[\tilde Q_4, \vec e_z] = 2Q_{4y}\vec e_x - 2Q_{4x}\vec e_y .
 $$
-All three vanish if and only if $C_x = C_y = C_z = 0$, so
+All three vanish if and only if $Q_{4x} = Q_{4y} = Q_{4z} = 0$, so
 $$
-Z(\mathbb{B}) = \mathbb{C}e_t = \{C_te_t : C_t\in\mathbb{C}\}.
+Z(\mathbb{B}) = \mathbb{C}e_t = \{Q_{4t}e_t : Q_{4t}\in\mathbb{C}\}.
 $$
 The centre is two-real-dimensional and consists of the complex scalars. It splits along the sectors as
 $$
@@ -132,7 +132,7 @@ Z(\mathbb{B}) = \bigl(Z(\mathbb{B})\cap\mathbb{M}_+\bigr)\oplus\bigl(Z(\mathbb{B
 $$
 so the centre itself carries the material-informational grading: the real scalar $e_t$ is informational, the imaginary scalar $ie_t$ is material. This is the only place in the algebra where a central element of each sector occurs, and the fact that the sector-carrying central element $ie_t$ is imaginary is the algebraic seed of the phase discussion below.
 
-**No central idempotents.** A central idempotent is $\tilde{C} = c\,e_t$ with $\tilde{C}^2 = \tilde{C}$, that is $c^2 = c$, whose only complex solutions are $c = 0$ and $c = 1$. Hence
+**No central idempotents.** A central idempotent is $\tilde Q_3 = c\,e_t$ with $\tilde Q_3^2 = \tilde Q_3$, that is $c^2 = c$, whose only complex solutions are $c = 0$ and $c = 1$. Hence
 $$
 \{\text{central idempotents of }\mathbb{B}\} = \{0,\ e_t\}.
 $$

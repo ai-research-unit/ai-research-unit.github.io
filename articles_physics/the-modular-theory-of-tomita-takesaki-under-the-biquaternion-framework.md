@@ -133,29 +133,29 @@ Now build $S$ and its polar decomposition explicitly.
 
 Take $M=\mathbb{B}\cong M_2(\mathbb{C})$, and let $\tilde{Ϛ}\in\mathbb{M}_+$ be positive definite with $\mathrm{Tr}(\tilde{Ϛ})=1$. On the vector space $\mathbb{B}$ put the inner product
 $$
-\langle \tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}} := \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde{A}^{*}\tilde Q_1\big),
+\langle \tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}} := \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde{Q}_3^{*}\tilde Q_1\big),
 $$
-let $M$ act by left multiplication, $\pi(\tilde{A})\tilde Q_1=\tilde{A}\tilde Q_1$, and take the vector
+let $M$ act by left multiplication, $\pi(\tilde{Q}_3)\tilde Q_1=\tilde{Q}_3\tilde Q_1$, and take the vector
 $$
 \Omega := e_t .
 $$
 This is the GNS construction of the state
 $$
-\omega(\tilde{A}) = \langle\Omega,\pi(\tilde{A})\Omega\rangle_{\tilde{Ϛ}} = \mathrm{Tr}(\tilde{Ϛ}\,\tilde{A}).
+\omega(\tilde{Q}_3) = \langle\Omega,\pi(\tilde{Q}_3)\Omega\rangle_{\tilde{Ϛ}} = \mathrm{Tr}(\tilde{Ϛ}\,\tilde{Q}_3).
 $$
-Because $\tilde{Ϛ}$ is positive definite the form is nondegenerate and the state is faithful, and $\Omega=e_t$ is cyclic and separating: cyclic because $\pi(\tilde{A})e_t=\tilde{A}$ runs over all of $\mathbb{B}$, and separating because $\tilde{A}e_t=\tilde{A}=0$ forces $\tilde{A}=0$. The hypothesis of the Tomita construction is thus, in this model, exactly the positivity of the density.
+Because $\tilde{Ϛ}$ is positive definite the form is nondegenerate and the state is faithful, and $\Omega=e_t$ is cyclic and separating: cyclic because $\pi(\tilde{Q}_3)e_t=\tilde{Q}_3$ runs over all of $\mathbb{B}$, and separating because $\tilde{Q}_3e_t=\tilde{Q}_3=0$ forces $\tilde{Q}_3=0$. The hypothesis of the Tomita construction is thus, in this model, exactly the positivity of the density.
 
 ### The Tomita Operator, the Modular Operator, and the Modular Conjugation
 
-Identifying the vector $\pi(\tilde{A})\Omega=\tilde{A}e_t$ with the algebra element $\tilde{A}$ (the Hilbert space is $\mathbb{B}$ itself), the Tomita operator is
+Identifying the vector $\pi(\tilde{Q}_3)\Omega=\tilde{Q}_3e_t$ with the algebra element $\tilde{Q}_3$ (the Hilbert space is $\mathbb{B}$ itself), the Tomita operator is
 $$
-S_0(\tilde{A}) = \tilde{A}^{*} .
+S_0(\tilde{Q}_3) = \tilde{Q}_3^{*} .
 $$
-**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{A}=\sum_\mu Q_\mu e_\mu$ one has $\tilde{A}^{*}=\bar Q_te_t-\sum_{k=1}^{3}\bar Q_k\vec e_k$, using $e_t^\dagger=e_t$ and $\vec e_k^{*}=-\vec e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
+**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{Q}_3=\sum_\mu Q_\mu e_\mu$ one has $\tilde{Q}_3^{*}=\bar Q_te_t-\sum_{k=1}^{3}\bar Q_k\vec e_k$, using $e_t^\dagger=e_t$ and $\vec e_k^{*}=-\vec e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
 
 The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$
-\langle S_0\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\overline{\langle\tilde{A},S_0^*\tilde Q_1\rangle_{\tilde{Ϛ}}},
+\langle S_0\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\overline{\langle\tilde{Q}_3,S_0^*\tilde Q_1\rangle_{\tilde{Ϛ}}},
 $$
 is
 $$
@@ -163,24 +163,24 @@ S_0^*(\tilde Q_1) = \tilde{Ϛ}\,\tilde Q_1^{*}\tilde{Ϛ}^{-1},
 $$
 whence
 $$
-\Delta(\tilde{A}) = S_0^*S_0(\tilde{A}) = \tilde{Ϛ}\,\tilde{A}\,\tilde{Ϛ}^{-1}, \qquad
-\Delta^{1/2}(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}\tilde{Ϛ}^{-1/2}.
+\Delta(\tilde{Q}_3) = S_0^*S_0(\tilde{Q}_3) = \tilde{Ϛ}\,\tilde{Q}_3\,\tilde{Ϛ}^{-1}, \qquad
+\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}.
 $$
 The polar decomposition $S_0=J\Delta^{1/2}$ then gives
 $$
-J(\tilde{A}) = \tilde{Ϛ}^{1/2}\tilde{A}^{*}\tilde{Ϛ}^{-1/2}.
+J(\tilde{Q}_3) = \tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2}.
 $$
 The **modular flow** is
 $$
-\sigma_t(\tilde{A}) = \Delta^{it}\tilde{A}\Delta^{-it} = \tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it},
+\sigma_t(\tilde{Q}_3) = \Delta^{it}\tilde{Q}_3\Delta^{-it} = \tilde{Ϛ}^{it}\tilde{Q}_3\tilde{Ϛ}^{-it},
 $$
-which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde{Ϛ}^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{A}^{*})=\sigma_t(\tilde{A})^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
+which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde{Ϛ}^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{Q}_3^{*})=\sigma_t(\tilde{Q}_3)^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
 \tilde K := -\log\tilde{Ϛ} \ \in\mathbb{M}_+,
 $$
 one has $\tilde{Ϛ}^{it}=\exp(-it\tilde K)$ and
 $$
-\sigma_t(\tilde{A})=\exp(-it\tilde K)\tilde{A}\,\exp(it\tilde K), \qquad \frac{d}{dt}\sigma_t(\tilde{A})\Big|_{t=0}=-i[\tilde K,\tilde{A}].
+\sigma_t(\tilde{Q}_3)=\exp(-it\tilde K)\tilde{Q}_3\,\exp(it\tilde K), \qquad \frac{d}{dt}\sigma_t(\tilde{Q}_3)\Big|_{t=0}=-i[\tilde K,\tilde{Q}_3].
 $$
 
 ### The Identities, Verified
@@ -199,7 +199,7 @@ $$
 a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
 $$
-with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde Q_1$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.
+with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{Q}_3,\tilde Q_1$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.
 
 A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
 $$
@@ -211,13 +211,13 @@ with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function
 
 The framework supplies a natural candidate for $S$, and it is the Hermitian conjugation ${}^{*}$ itself:
 $$
-S_0:\ \tilde{A}\mapsto\tilde{A}^{*} .
+S_0:\ \tilde{Q}_3\mapsto\tilde{Q}_3^{*} .
 $$
 This is not a choice made to fit the theory; it is the involution that defines the framework's two sectors, $\mathbb{M}_+$ being the $+1$ eigenspace of ${}^{*}$ and $\mathbb{M}_-$ the $-1$ eigenspace. Two remarks.
 
 **The candidate satisfies the hypotheses.** With $\Omega=e_t$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde{Ϛ}>0$. So the pair $(\mathbb{B},\Omega)$ with ${}^{*}$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.
 
-**The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{A}\mapsto\tilde{A}^{*}$ for every $\tilde{Ϛ}$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde{Ϛ}$, through the inner product. And the framework's most distinguished state is the tracial one,
+**The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{Q}_3\mapsto\tilde{Q}_3^{*}$ for every $\tilde{Ϛ}$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde{Ϛ}$, through the inner product. And the framework's most distinguished state is the tracial one,
 $$
 \tilde{Ϛ}=\tfrac12 e_t \qquad(\vec r=0),
 $$
@@ -231,7 +231,7 @@ the modular flow is trivial. A nontrivial modular flow requires a nontracial sta
 
 The finite-dimensional algebra is a factor of **type I$_2$**: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the unitary $\tilde{Ϛ}^{it}$ inside $\mathbb{B}$,
 $$
-\sigma_t(\tilde{A})=\tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it},\qquad \tilde{Ϛ}^{it}\in\mathbb{B}.
+\sigma_t(\tilde{Q}_3)=\tilde{Ϛ}^{it}\tilde{Q}_3\tilde{Ϛ}^{-it},\qquad \tilde{Ϛ}^{it}\in\mathbb{B}.
 $$
 No object outside the algebra is needed to implement it. This is the generic behavior of a semifinite factor: **for a semifinite factor the modular flow of any faithful normal state is inner for every $t$.**
 
@@ -263,9 +263,9 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 **Established (recomputed here).**
 
-- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
-- $\Delta(\tilde{A})=\tilde{Ϛ}\tilde{A}\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}\tilde{Ϛ}^{-1/2}$, $J(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_t(\tilde{A})=\tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it}$.
-- $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{A}]$, and $JMJ=M'$.
+- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
+- $\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}$, $J(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_t(\tilde{Q}_3)=\tilde{Ϛ}^{it}\tilde{Q}_3\tilde{Ϛ}^{-it}$.
+- $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{Q}_3]$, and $JMJ=M'$.
 - $\tilde{K}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}^{it}\in\mathbb{B}$.
 
@@ -284,15 +284,15 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.
 
-In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
+In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$
-S_0:\tilde{A}\mapsto\tilde{A}^{*},
+S_0:\tilde{Q}_3\mapsto\tilde{Q}_3^{*},
 $$
 and the polar decomposition is
 $$
-\Delta(\tilde{A})=\tilde{Ϛ}\tilde{A}\tilde{Ϛ}^{-1},\qquad
-J(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}^{*}\tilde{Ϛ}^{-1/2},\qquad
-\sigma_t(\tilde{A})=\tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it}.
+\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1},\qquad
+J(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2},\qquad
+\sigma_t(\tilde{Q}_3)=\tilde{Ϛ}^{it}\tilde{Q}_3\tilde{Ϛ}^{-it}.
 $$
 The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular conjugation conjugates the scalar imaginary — together with the group law of the flow, were verified symbolically and numerically on an explicit faithful state whose Bloch vector was chosen independently of the derivation.
 
@@ -316,7 +316,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $J$ | Modular conjugation, anti-unitary, $J^2=1$ |
 | $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$ | Modular automorphism group |
 | $\tilde{Ϛ}\in\mathbb{M}_+$ | Faithful state (positive definite, trace one) |
-| $\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$ | GNS inner product on $\mathbb{B}$ |
+| $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ | GNS inner product on $\mathbb{B}$ |
 | $\tilde{K}=-\log\tilde{Ϛ}$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
 | $F_{AB}(t+i)=F_{BA}(-t)$ | KMS boundary relation (parent article) |
 | $\delta:\mathbb{R}\to\operatorname{Out}(M)$ | Connes invariant, $t\mapsto[\sigma_t]$ |

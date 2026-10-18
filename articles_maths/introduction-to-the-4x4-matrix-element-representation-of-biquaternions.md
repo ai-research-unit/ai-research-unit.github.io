@@ -87,7 +87,7 @@ $$
 
 Hence the right regular matrix is an algebra **anti**-homomorphism, and its image is the regular representation of the opposite algebra $\mathbb{B}^{\mathrm{opp}}$, not a second representation of $\mathbb{B}$.
 
-**Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the right matrix is $\mathsf{M}_4^{R}(\tilde Q_1)\operatorname{col}(\tilde S) = \operatorname{col}(\tilde S\tilde Q_1)$, because the $\mu$-th column of $\mathsf{M}_4^{R}(\tilde Q_1)$ is $\operatorname{col}(e_\mu\tilde Q_1)$ and a column is a linear combination of the $e_\mu$. Hence, for each $\mu$,
+**Proof.** Write $\operatorname{col}(\tilde Q_5)$ for the coordinate column of $\tilde Q_5$. The defining property of the right matrix is $\mathsf{M}_4^{R}(\tilde Q_1)\operatorname{col}(\tilde Q_5) = \operatorname{col}(\tilde Q_5\tilde Q_1)$, because the $\mu$-th column of $\mathsf{M}_4^{R}(\tilde Q_1)$ is $\operatorname{col}(e_\mu\tilde Q_1)$ and a column is a linear combination of the $e_\mu$. Hence, for each $\mu$,
 
 $$
 \mathsf{M}_4^{R}(\tilde Q_1)\,\mathsf{M}_4^{R}(\tilde Q_2)\operatorname{col}(e_\mu) = \mathsf{M}_4^{R}(\tilde Q_1)\operatorname{col}(e_\mu\tilde Q_2) = \operatorname{col}\bigl((e_\mu\tilde Q_2)\tilde Q_1\bigr) = \operatorname{col}\bigl(e_\mu(\tilde Q_2\tilde Q_1)\bigr) = \mathsf{M}_4^{R}(\tilde Q_2\tilde Q_1)\operatorname{col}(e_\mu),
@@ -211,7 +211,7 @@ $$
 
 **The null set.** The pairing vanishes on the cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$, the same cone as in the $2\times2$ model; the two representations carry the same null set, because the form is transported by the two realizations of the same element. It is the null set of neither the determinant nor the general quaternionic bilinear form.
 
-**The automorphisms.** A matrix preserves the trace pairing exactly when $T^{\mathsf T}\mathrm{E}T=\mathrm{E}$, so the automorphism group on the coefficient space is $\{T\in GL_4(\mathbb{C}):T^{\mathsf T}\mathrm{E}T=\mathrm{E}\}=O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, its Lie algebra $\{X:X^{\mathsf T}\mathrm{E}+\mathrm{E}X=0\}$ being of real dimension $12$; its real forms $O(4)$ and $O(1,3)$ are cut out by the Hermitian and the coefficient conjugation on the Hermitian and the quaternion subspace. The group of real-linear automorphisms of the realified form is the larger $O(4,4)$, not the group the form defines over $\mathbb{C}$. Two operators act on the regular matrix from the algebra: the transposition, which carries the natural conjugation, $\mathsf{M}_4^{L}(\tilde{Q})\mapsto\mathsf{M}_4^{L}(\tilde{Q}^{\natural})$, and the conjugation $\mathsf{M}_4^{L}(\tilde{Q})\mapsto\mathsf{M}_4^{L}(\tilde{A})\mathsf{M}_4^{L}(\tilde{Q})\mathsf{M}_4^{L}(\tilde{A})^{-1}$ by a unit; both are automorphisms of the pairing.
+**The automorphisms.** A matrix preserves the trace pairing exactly when $T^{\mathsf T}\mathrm{E}T=\mathrm{E}$, so the automorphism group on the coefficient space is $\{T\in GL_4(\mathbb{C}):T^{\mathsf T}\mathrm{E}T=\mathrm{E}\}=O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, its Lie algebra $\{X:X^{\mathsf T}\mathrm{E}+\mathrm{E}X=0\}$ being of real dimension $12$; its real forms $O(4)$ and $O(1,3)$ are cut out by the Hermitian and the coefficient conjugation on the Hermitian and the quaternion subspace. The group of real-linear automorphisms of the realified form is the larger $O(4,4)$, not the group the form defines over $\mathbb{C}$. Two operators act on the regular matrix from the algebra: the transposition, which carries the natural conjugation, $\mathsf{M}_4^{L}(\tilde{Q})\mapsto\mathsf{M}_4^{L}(\tilde{Q}^{\natural})$, and the conjugation $\mathsf{M}_4^{L}(\tilde{Q})\mapsto\mathsf{M}_4^{L}(\tilde{U})\mathsf{M}_4^{L}(\tilde{Q})\mathsf{M}_4^{L}(\tilde{U})^{-1}$ by a unit; both are automorphisms of the pairing.
 
 ## Transposition and the Two Matrices
 
@@ -305,7 +305,7 @@ $$
 
 as a left $\mathbb{B}$-module. The regular representation is therefore reducible, and it is the first reducible realization in this subcategory.
 
-**Proof.** The two ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are stable under left multiplication by $\tilde Q$, because $\tilde{Q}(\tilde{S}\tilde\Pi_+) = (\tilde{Q}\tilde{S})\tilde\Pi_+$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_+$ has the basis $\tilde\Pi_+, \vec e_x\tilde\Pi_+$, since $\vec e_y \tilde\Pi_+ = i \vec e_x \tilde\Pi_+$ and $\vec e_z \tilde\Pi_+ = -i\tilde\Pi_+$. Its multiplication by the basis elements is read from
+**Proof.** The two ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are stable under left multiplication by $\tilde Q$, because $\tilde{Q}(\tilde{Q}_5\tilde\Pi_+) = (\tilde{Q}\tilde{Q}_5)\tilde\Pi_+$ for every $\tilde{Q}_5$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_+$ has the basis $\tilde\Pi_+, \vec e_x\tilde\Pi_+$, since $\vec e_y \tilde\Pi_+ = i \vec e_x \tilde\Pi_+$ and $\vec e_z \tilde\Pi_+ = -i\tilde\Pi_+$. Its multiplication by the basis elements is read from
 
 $$
 \vec e_x \tilde\Pi_+ = \vec e_x\tilde\Pi_+, \quad \vec e_y \tilde\Pi_+ = i\vec e_x\tilde\Pi_+, \quad \vec e_z \tilde\Pi_+ = -i\tilde\Pi_+, \qquad \vec e_x(\vec e_x\tilde\Pi_+) = -\tilde\Pi_+, \quad \vec e_y(\vec e_x\tilde\Pi_+) = i\tilde\Pi_+, \quad \vec e_z(\vec e_x\tilde\Pi_+) = i\vec e_x\tilde\Pi_+,
@@ -339,13 +339,13 @@ $$
 
 is the image $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$.
 
-**Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(\tilde S) = \operatorname{col}(\tilde Q_4\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(e_t) = \operatorname{col}(\tilde Q_4)$. Let $C$ be in the centralizer and let $\vec q_a = C\operatorname{col}(e_t)$ be its first column; write $\tilde{Q}$ for the element of that coordinate column. Then, for every $\tilde Q_4$,
+**Proof.** Write $\operatorname{col}(\tilde Q_5)$ for the coordinate column of $\tilde Q_5$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(\tilde Q_5) = \operatorname{col}(\tilde Q_4\tilde{Q}_5)$, and in particular $\mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(e_t) = \operatorname{col}(\tilde Q_4)$. Let $C$ be in the centralizer and let $\vec q_a = C\operatorname{col}(e_t)$ be its first column; write $\tilde{Q}$ for the element of that coordinate column. Then, for every $\tilde Q_4$,
 
 $$
 C\operatorname{col}(\tilde Q_4) = C\,\mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(e_t) = \mathsf{M}_4^{L}(\tilde Q_4)\,C\operatorname{col}(e_t) = \mathsf{M}_4^{L}(\tilde Q_4)\operatorname{col}(\tilde{Q}) = \operatorname{col}(\tilde Q_4\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde Q_4),
 $$
 
-the last step being the defining property of the right matrix. The four columns $\operatorname{col}(\tilde Q_4)$ span $\mathbb{C}^4$, so $C = \mathsf{M}_4^{R}(\tilde{Q})$ and the centralizer is contained in $\mathsf{M}_4^{R}(\mathbb{B})$. Conversely every $\mathsf{M}_4^{R}(\tilde{Q})$ commutes with every $\mathsf{M}_4^{L}(\tilde Q_4)$, because $(\tilde Q_4\tilde{S})\tilde{Q} = \tilde Q_4(\tilde{S}\tilde{Q})$ is associativity; hence the centralizer is exactly $\mathsf{M}_4^{R}(\mathbb{B})$. It has complex dimension $4$ because $\mathsf{M}_4^{R}$ is injective: $\mathsf{M}_4^{R}(\tilde{Q}) = 0$ forces its first column, which is the coordinate column of $\tilde Q$, to vanish.
+the last step being the defining property of the right matrix. The four columns $\operatorname{col}(\tilde Q_4)$ span $\mathbb{C}^4$, so $C = \mathsf{M}_4^{R}(\tilde{Q})$ and the centralizer is contained in $\mathsf{M}_4^{R}(\mathbb{B})$. Conversely every $\mathsf{M}_4^{R}(\tilde{Q})$ commutes with every $\mathsf{M}_4^{L}(\tilde Q_4)$, because $(\tilde Q_4\tilde{Q}_5)\tilde{Q} = \tilde Q_4(\tilde{Q}_5\tilde{Q})$ is associativity; hence the centralizer is exactly $\mathsf{M}_4^{R}(\mathbb{B})$. It has complex dimension $4$ because $\mathsf{M}_4^{R}$ is injective: $\mathsf{M}_4^{R}(\tilde{Q}) = 0$ forces its first column, which is the coordinate column of $\tilde Q$, to vanish.
 
 **Remark.** The theorem is the regular-module case of the double centralizer phenomenon, and it is the mirror of the identification of $\mathbb{B}$ with the matrix algebra of the simple module in *Modules over the Biquaternion Algebra*: the algebra is recovered as the centralizer of the opposite copy. The two images $\mathsf{M}_4^{L}(\mathbb{B})$ and $\mathsf{M}_4^{R}(\mathbb{B})$ commute, and the products of one matrix from each already span the full matrix algebra $M_4(\mathbb{C})$, as the section on the sixteen products shows.
 
@@ -536,7 +536,7 @@ $$
 \sum_{\mu,\nu} a_{\mu\nu}\,\mathsf{M}_4^{L}(e_\mu)\,\mathsf{M}_4^{R}(e_\nu) = \sum_{\mu,\nu} a_{\mu\nu}\,P_{\mu\nu},
 $$
 
-and every complex matrix arises this way. Such an element $\sum a_{\mu\nu}\,e_\mu \otimes e_\nu$ is a **biparavector** in the language of the paravector formulation. That the sixteen products already span the matrices is the concrete form of the double centralizer: the left image supplies the first index and the right image the second, and the two fill $M_4(\mathbb{C})$ between them. Recomputing the matrix of the biparavector against the product $\mathsf{M}_4^{L}(\tilde A)\mathsf{M}_4^{R}(\tilde Q_3)$ of a left–right sandwich returns $1.5 \times 10^{-14}$.
+and every complex matrix arises this way. Such an element $\sum a_{\mu\nu}\,e_\mu \otimes e_\nu$ is a **biparavector** in the language of the paravector formulation. That the sixteen products already span the matrices is the concrete form of the double centralizer: the left image supplies the first index and the right image the second, and the two fill $M_4(\mathbb{C})$ between them. Recomputing the matrix of the biparavector against the product $\mathsf{M}_4^{L}(\tilde Q_6)\mathsf{M}_4^{R}(\tilde Q_3)$ of a left–right sandwich returns $1.5 \times 10^{-14}$.
 
 **Where the uniform normalisation comes from.** The constant $4$ in the trace relation is a property of the second realization and not of the regular basis. In the corpus basis $e_t, \vec e_x, \vec e_y, \vec e_z$ the matrix of the sixteen products is still diagonal, but its diagonal entries are $\pm 4$ rather than $4$, so the coefficient formula there carries the sign of $\operatorname{tr}(P_{\mu\nu}^2)$; it is the Hermitian realisation that makes the coefficients uniform. The tensor-square reading is the same object as the sixteen matrices listed by the realization above, read as outer products rather than as products of the two units.
 
@@ -614,7 +614,7 @@ Read as a pairing, the regular matrix carries the general plain bilinear form wi
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ | Developed form, $Q_\mu \in \mathbb{C}$ |
 | $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$ | Four-vector; $Q^0 = Q_t$, $(Q^1, Q^2, Q^3) = (Q_x, Q_y, Q_z)$ |
-| $\operatorname{col}(\tilde S)$ | Coordinate column of $\tilde S$ in the basis $e_t, \vec e_x, \vec e_y, \vec e_z$ |
+| $\operatorname{col}(\tilde Q_5)$ | Coordinate column of $\tilde Q_5$ in the basis $e_t, \vec e_x, \vec e_y, \vec e_z$ |
 | $\mathsf{M}_4^{L}(\tilde{Q})$ | Left regular matrix, whose $\mu$-th column is $\operatorname{col}(\tilde Q e_\mu)$; written $\mathsf{M}_4(\tilde{Q})$ in the shorter notation |
 | $\mathsf{M}_4^{R}(\tilde{Q})$ | Right regular matrix, whose $\mu$-th column is $\operatorname{col}(e_\mu \tilde Q)$ |
 | $D = \operatorname{diag}(-1,1,1,1)$ | Fixed sign matrix of the transposition theorem, $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D$, and matrix of the Minkowski form of the second realization, $M^{\mathsf T} = -DMD$ |

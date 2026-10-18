@@ -58,7 +58,7 @@ The biquaternioid symmetric plain sesqualgebra is the structure $\tilde P\star\t
 | $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}\ge0$ | positivity of the norm |
 | $\tilde P\star\tilde Q=\mathrm{Sc}(\tilde P\tilde Q)e_t=\langle\tilde P,\tilde Q\rangle_{*}e_t$ | the product on the state side |
 | $\tfrac12\operatorname{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2)$ | the trace pairing; one half of the amplitude |
-| $R^{\star}_{\tilde A}$, $L^{\star}_{\tilde A}$ | the two one-sided operators of the band |
+| $R^{\star}_{\tilde Q_2}$, $L^{\star}_{\tilde Q_2}$ | the two one-sided operators of the band |
 | $\mathbb{M}_+$ | the informational sector; the state side |
 | $\mathrm{APS}$ | the antisymmetric sibling; the imaginary part, which carries the phase |
 | $e_t\star\tilde Q_1=\tilde Q_1^{*}$ | the absence of a unit |

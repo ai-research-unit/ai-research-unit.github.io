@@ -74,7 +74,7 @@ $$
 
 The result says two things. It says that the d'Alembertian is the **biquaternion norm of the gradient**, $\Box = \langle\tilde{\nabla}\rangle_{\natural}$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $\langle\cdot\rangle_{\natural}$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a **central scalar** as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
 $$
-\Box(\tilde{A}\tilde{\Phi}) = \tilde{A}\,(\Box\tilde{\Phi}), \qquad \tilde{A} \in \mathbb{B},\ \tilde{\Phi}\ \text{any field}.
+\Box(\tilde{Q}_1\tilde{\Phi}) = \tilde{Q}_1\,(\Box\tilde{\Phi}), \qquad \tilde{Q}_1 \in \mathbb{B},\ \tilde{\Phi}\ \text{any field}.
 $$
 Every later statement about the scalar Green's function follows from this centrality, and every departure from it will be a statement about the first-order operator instead.
 
@@ -104,13 +104,13 @@ whose symbol reproduces $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The companion
 
 The adjoint of the gradient is computed with the Hermitian pairing on fields,
 $$
-\langle \tilde{F}, \tilde{G}\rangle = \int \mathrm{Tr}\!\left(\tilde{F}^{*} \tilde{G}\right) d^4x ,
+\langle \tilde{F}, \tilde Q\rangle = \int \mathrm{Tr}\!\left(\tilde{F}^{*} \tilde Q\right) d^4x ,
 $$
 the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial Q_\mu\,\tilde{F}\bigr)^\dagger = \partial/\partial Q_\mu\,\tilde{F}^{*}$ for the real differential operators,
 $$
-\langle \tilde{F}, \tilde{\nabla}\tilde{G}\rangle
-= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, e_\mu\,\partial/\partial Q_\mu\,\tilde{G}\right) d^4x
-= -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial Q_\mu \tilde{F}^{*}\bigr) e_\mu \tilde{G}\right) d^4x .
+\langle \tilde{F}, \tilde{\nabla}\tilde Q\rangle
+= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, e_\mu\,\partial/\partial Q_\mu\,\tilde Q\right) d^4x
+= -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial Q_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4x .
 $$
 The algebraic identity
 $$
@@ -120,7 +120,7 @@ $$
 $$
 uses only the antilinearity of ${}^{*}$ and $(e_\mu^{*})^{*} = e_\mu$; it was verified on random complex biquaternion coefficients. Substituting,
 $$
-\langle \tilde{F}, \tilde{\nabla}\tilde{G}\rangle = -\langle \tilde{\nabla}^{\natural}\tilde{F}, \tilde{G}\rangle ,
+\langle \tilde{F}, \tilde{\nabla}\tilde Q\rangle = -\langle \tilde{\nabla}^{\natural}\tilde{F}, \tilde Q\rangle ,
 \qquad\text{that is,}\qquad
 \tilde{\nabla}^{*} = -\,\tilde{\nabla}^{\natural} .
 $$
@@ -177,7 +177,7 @@ G_{\mathrm{inv}}(\tilde{R}) = \frac{1}{4\pi^2\rho^2} ,
 $$
 The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4x$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\vec k)$ conjugate to the $ict$ coordinate, $\Box \to -k_4^2 - \vec k^2$ and
 $$
-\tilde{G}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2} ,
+G_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2} ,
 $$
 the four-dimensional Coulomb kernel.
 
@@ -246,7 +246,7 @@ G^{(\mu)}_{\mathrm{inv}}(\tilde{R}) = \frac{\mu}{4\pi^2\rho}\,K_1(\mu\rho) ,
 $$
 with $K_1$ the modified Bessel function; its Fourier transform is
 $$
-\tilde{G}^{(\mu)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2 + \mu^2} .
+G^{(\mu)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2 + \mu^2} .
 $$
 The short-distance behaviour is the massless kernel, $G^{(\mu)}_{\mathrm{inv}} \to 1/(4\pi^2\rho^2)$ as $\mu\rho \to 0$, and the large-distance behaviour is exponentially damped, $G^{(\mu)}_{\mathrm{inv}} \sim \frac{\sqrt{\mu}}{2(2\pi)^{3/2}\rho^{3/2}}\exp(-\mu\rho)$: a mass screens. The retarded and advanced kernels acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions; the closed form of the inside-cone part is the standard one and is cited rather than re-derived. The massless limit returns the delta on the cone, and the biquaternion content of the massive case is simply that the mass term is central, hence commutes with the algebra, and shifts the symbol by a constant without changing the sector structure.
 
@@ -286,8 +286,8 @@ so that $\tilde{\nabla}\tilde{G}_1 = -\delta$ is preserved with the rotated grad
 
 **The kernel does not commute.** Left multiplication by $\tilde{G}_1$ does not commute with the algebra, because $\tilde{G}_1$ is not central,
 $$
-\tilde{A}\,\tilde{G}_1 \neq \tilde{G}_1\tilde{A}
-\qquad \text{for generic } \tilde{A} \in \mathbb{B} ,
+\tilde{Q}_1\,\tilde{G}_1 \neq \tilde{G}_1\tilde{Q}_1
+\qquad \text{for generic } \tilde{Q}_1 \in \mathbb{B} ,
 $$
 in contrast with $G_\Box$. The scalar kernel may be moved through any algebraic factor; the first-order kernel may not, and its order relative to a field is part of the equation.
 
@@ -430,7 +430,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient, $\partial/\partial Q_t = \partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ |
 | $\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial Q_\mu$ | Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_k\partial/\partial Q_k$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k^2$ |
-| $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde{G}\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde{G})$ |
+| $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_1^\flat = \tilde{G}_1$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_1 \in \mathbb{M}_+$ |
 | $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material four-position |
 | $\rho^2 = \langle\tilde{R}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ | Biquaternion norm of the separation; Euclidean four-distance squared |

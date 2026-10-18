@@ -10,13 +10,13 @@ The remarkable subspaces and their bases are *Introduction to the Remarkable Sub
 
 ## The Vanishing on the Centre and the Image
 
-**Proposition.** The block annihilates the centre in both slots: for every central element $\tilde A=Ae_t$,
+**Proposition.** The block annihilates the centre in both slots: for every central element $\tilde Q_3=Q_{3t}e_t$,
 
 $$
-\tilde A\diamond\tilde Q_2=0,\qquad \tilde Q_2\diamond\tilde A=0 .
+\tilde Q_3\diamond\tilde Q_2=0,\qquad \tilde Q_2\diamond\tilde Q_3=0 .
 $$
 
-*Proof.* A central element has $\vec A=0$, so the value is the cross product of a zero vector; the value is zero from either slot.
+*Proof.* A central element has $\vec Q_3=0$, so the value is the cross product of a zero vector; the value is zero from either slot.
 
 **Proposition.** The image of the block on every subspace is contained in the vector subspace, and on the vector subspace the block is stable with image the whole vector subspace.
 

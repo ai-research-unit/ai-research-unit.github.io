@@ -104,6 +104,9 @@ The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, grade
 | $\omega=E_1E_2E_3=-j$ | the volume element |
 | $\mathrm{Cl}^0=\mathbb{H}$, $\mathrm{Cl}^1=j\mathbb{H}$ | the even part and the odd part |
 | $\tilde Q=\tilde q+j\tilde q'$ | the parity decomposition |
+| $\tilde C=\tilde c+j\tilde c'$ | the parameter of the family |
+| $\tilde c,\ \tilde c'$ | its two quaternion halves |
+| $\tilde C_\pm=\tilde c\pm\tilde c'$ | the Hadamard components of the parameter |
 | $\tilde Q_\pm=\tilde q\pm\tilde q'$ | the Hadamard transform |
 | $\mathbb{H}\tilde\Pi_{1,2}$ | the two chiral halves, of volume eigenvalue $\mp1$ |
 

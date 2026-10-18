@@ -2,29 +2,29 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the **multiplication operators** of the block, $L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q$ and $R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A$, and the operator theory they carry: their relation to the operators of the plain product, their composition, their traces, determinants and ranks, their associate with respect to the trace form, the Jordan identity read on them, and the derivations and automorphisms of the block.
+The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the **multiplication operators** of the block, $L^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q_5\bullet\tilde Q$ and $R^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q\bullet\tilde Q_5$, and the operator theory they carry: their relation to the operators of the plain product, their composition, their traces, determinants and ranks, their associate with respect to the trace form, the Jordan identity read on them, and the derivations and automorphisms of the block.
 
 The block is commutative, so the left and the right operator of an element coincide, and the operator theory is a theory of one operator to an element. The operator identity that opens the article is a factor of two away from the sum of the plain operators, and that factor is computed here; the trace form with respect to which the associate is taken is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, and the plain operators are *Two-Sided Operators on the Biquaternion Algebra* and *One-Sided Operators on the General Plain Algebra of Biquaternions*. The derivations and the automorphisms of the block are read as the structure group and the Lie algebra of the Jordan algebra, and the matrix models of the same operators are *Introduction to the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_\mu Q_\mu\vec e_\mu$ and $Q_\mu\in\mathbb{C}$, and $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the generic norm. On the operators, $L_{\tilde A},R_{\tilde A}$ are the left and right multiplications of the **plain** product, $L_{\tilde A}\tilde Q=\tilde A\tilde Q$ and $R_{\tilde A}\tilde Q=\tilde Q\tilde A$, and $L^{\bullet}_{\tilde A},R^{\bullet}_{\tilde A}$ are those of the block, $L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q$ and $R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A$. The trace form is $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$, and the commutator of two operators is written with brackets, $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde Q_1}]=L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde Q_1}-L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde A}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_\mu Q_\mu\vec e_\mu$ and $Q_\mu\in\mathbb{C}$, and $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the generic norm. On the operators, $L_{\tilde Q_5},R_{\tilde Q_5}$ are the left and right multiplications of the **plain** product, $L_{\tilde Q_5}\tilde Q=\tilde Q_5\tilde Q$ and $R_{\tilde Q_5}\tilde Q=\tilde Q\tilde Q_5$, and $L^{\bullet}_{\tilde Q_5},R^{\bullet}_{\tilde Q_5}$ are those of the block, $L^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q_5\bullet\tilde Q$ and $R^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q\bullet\tilde Q_5$. The trace form is $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$, and the commutator of two operators is written with brackets, $[L^{\bullet}_{\tilde Q_5},L^{\bullet}_{\tilde Q_1}]=L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_1}-L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_5}$.
 
 ## The Multiplication Operators
 
 ### The Definition and the Coincidence of the Two Operators
 
-**Definition.** The **left** and **right multiplication operators** of the block by an element $\tilde A$ are
+**Definition.** The **left** and **right multiplication operators** of the block by an element $\tilde Q_5$ are
 
 $$
-L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q,\qquad R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A .
+L^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q_5\bullet\tilde Q,\qquad R^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q\bullet\tilde Q_5 .
 $$
 
 **Proposition.** The block is commutative, so the two operators of an element coincide:
 
 $$
-L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}.
+L^{\bullet}_{\tilde Q_5}=R^{\bullet}_{\tilde Q_5}.
 $$
 
-*Proof.* $\tilde A\bullet\tilde Q=\tilde Q\bullet\tilde A$ by the commutativity of the block.
+*Proof.* $\tilde Q_5\bullet\tilde Q=\tilde Q\bullet\tilde Q_5$ by the commutativity of the block.
 
 So the operator theory of the block is a theory of one operator to an element, and the left and right operators are not two families but one.
 
@@ -33,60 +33,60 @@ So the operator theory of the block is a theory of one operator to an element, a
 **Theorem.** The multiplication operator of the block is **half** the sum of the two plain operators:
 
 $$
-L^{\bullet}_{\tilde A}=\tfrac12\bigl(L_{\tilde A}+R_{\tilde A}\bigr),\qquad\text{equivalently}\qquad L_{\tilde A}+R_{\tilde A}=2L^{\bullet}_{\tilde A}.
+L^{\bullet}_{\tilde Q_5}=\tfrac12\bigl(L_{\tilde Q_5}+R_{\tilde Q_5}\bigr),\qquad\text{equivalently}\qquad L_{\tilde Q_5}+R_{\tilde Q_5}=2L^{\bullet}_{\tilde Q_5}.
 $$
 
-*Proof.* $L^{\bullet}_{\tilde A}\tilde Q=\tfrac12(\tilde A\tilde Q+\tilde Q\tilde A)=\tfrac12(L_{\tilde A}+R_{\tilde A})\tilde Q$.
+*Proof.* $L^{\bullet}_{\tilde Q_5}\tilde Q=\tfrac12(\tilde Q_5\tilde Q+\tilde Q\tilde Q_5)=\tfrac12(L_{\tilde Q_5}+R_{\tilde Q_5})\tilde Q$.
 
-**Remark (the sum is twice the operator).** The sum $L_{\tilde A}+R_{\tilde A}$ is the operator of the **doubled** product, $(L_{\tilde A}+R_{\tilde A})\tilde Q=\tilde A\tilde Q+\tilde Q\tilde A=2(\tilde A\bullet\tilde Q)$, and it is twice the multiplication operator of the block. **The identity between the operator of the block and the sum of the two plain operators carries the factor $\tfrac12$**, and a statement without it would be off by two.
+**Remark (the sum is twice the operator).** The sum $L_{\tilde Q_5}+R_{\tilde Q_5}$ is the operator of the **doubled** product, $(L_{\tilde Q_5}+R_{\tilde Q_5})\tilde Q=\tilde Q_5\tilde Q+\tilde Q\tilde Q_5=2(\tilde Q_5\bullet\tilde Q)$, and it is twice the multiplication operator of the block. **The identity between the operator of the block and the sum of the two plain operators carries the factor $\tfrac12$**, and a statement without it would be off by two.
 
 ### The Trace, the Determinant and the Rank
 
-**Theorem.** For every $\tilde A$,
+**Theorem.** For every $\tilde Q_5$,
 
 $$
-\operatorname{Tr}\bigl(L^{\bullet}_{\tilde A}\bigr)=4A_t,\qquad
-\det\bigl(L^{\bullet}_{\tilde A}\bigr)=A_t^2\,\langle\tilde A\rangle_{\natural}.
+\operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q_5}\bigr)=4Q_{5t},\qquad
+\det\bigl(L^{\bullet}_{\tilde Q_5}\bigr)=Q_{5t}^2\,\langle\tilde Q_5\rangle_{\natural}.
 $$
 
-*Proof.* The trace is $\tfrac12\bigl(\operatorname{Tr}(L_{\tilde A})+\operatorname{Tr}(R_{\tilde A})\bigr)$, and the two plain operators have trace $4A_t$ each; the determinant is computed on the matrix of the operator. In the $2\times2$ model of *Introduction to the Symmetric Plain Algebra* the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde A)M+M\mathsf{M}_2(\tilde A))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde A)$, with $\lambda_1\lambda_2=\langle\tilde A\rangle_{\natural}$ and $\lambda_1+\lambda_2=2A_t$; the determinant is $\bigl(\tfrac12(\lambda_1+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_1+\lambda_2)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_2)\bigr)=A_t^2\,\langle\tilde A\rangle_{\natural}$.
+*Proof.* The trace is $\tfrac12\bigl(\operatorname{Tr}(L_{\tilde Q_5})+\operatorname{Tr}(R_{\tilde Q_5})\bigr)$, and the two plain operators have trace $4Q_{5t}$ each; the determinant is computed on the matrix of the operator. In the $2\times2$ model of *Introduction to the Symmetric Plain Algebra* the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde Q_5)M+M\mathsf{M}_2(\tilde Q_5))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde Q_5)$, with $\lambda_1\lambda_2=\langle\tilde Q_5\rangle_{\natural}$ and $\lambda_1+\lambda_2=2Q_{5t}$; the determinant is $\bigl(\tfrac12(\lambda_1+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_1+\lambda_2)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_1)\bigr)\bigl(\tfrac12(\lambda_2+\lambda_2)\bigr)=Q_{5t}^2\,\langle\tilde Q_5\rangle_{\natural}$.
 
-**Theorem (the rank).** The multiplication operator of the block has rank four exactly when $\tilde A$ has non-zero scalar part and non-zero generic norm,
+**Theorem (the rank).** The multiplication operator of the block has rank four exactly when $\tilde Q_5$ has non-zero scalar part and non-zero generic norm,
 
 $$
-\operatorname{rank}L^{\bullet}_{\tilde A}=4\iff A_t\neq0\ \text{and}\ \langle\tilde A\rangle_{\natural}\neq0,
+\operatorname{rank}L^{\bullet}_{\tilde Q_5}=4\iff Q_{5t}\neq0\ \text{and}\ \langle\tilde Q_5\rangle_{\natural}\neq0,
 $$
 
 and otherwise the rank is
 
 $$
-\operatorname{rank}L^{\bullet}_{\tilde A}=
+\operatorname{rank}L^{\bullet}_{\tilde Q_5}=
 \begin{cases}
-3,& A_t\neq0,\ \langle\tilde A\rangle_{\natural}=0,\\
-2,& A_t=0,\ \tilde A\neq0,\\
-0,& \tilde A=0.
+3,& Q_{5t}\neq0,\ \langle\tilde Q_5\rangle_{\natural}=0,\\
+2,& Q_{5t}=0,\ \tilde Q_5\neq0,\\
+0,& \tilde Q_5=0.
 \end{cases}
 $$
 
-*Proof.* The determinant vanishes exactly when $A_t=0$ or $\langle\tilde A\rangle_{\natural}=0$, which gives the first statement and the three remaining rows by exclusion; the three cases are computed on the eigenvalues of $\mathsf{M}_2(\tilde A)$ and of $\tfrac12(\mathsf{M}_2(\tilde A)M+M\mathsf{M}_2(\tilde A))$. On a zero divisor with $A_t\neq0$ the roots of the characteristic polynomial are $0$ and $2A_t$, so the four eigenvalues of the operator are $0,A_t,A_t,2A_t$, all distinct, and the rank is three. On the hyperplane $A_t=0$ the matrix $\mathsf{M}_2(\tilde A)$ is traceless, of eigenvalues $\lambda,-\lambda$; if $\langle\tilde A\rangle_{\natural}\neq0$ then $\lambda\neq0$ and the operator has the eigenvalues $\lambda,0,0,-\lambda$, of rank two; if $\langle\tilde A\rangle_{\natural}=0$ and $\tilde A\neq0$ then $\mathsf{M}_2(\tilde A)$ is a non-zero nilpotent, conjugate to $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, and the operator is nilpotent, of rank two as well. At $\tilde A=0$ the operator vanishes.
+*Proof.* The determinant vanishes exactly when $Q_{5t}=0$ or $\langle\tilde Q_5\rangle_{\natural}=0$, which gives the first statement and the three remaining rows by exclusion; the three cases are computed on the eigenvalues of $\mathsf{M}_2(\tilde Q_5)$ and of $\tfrac12(\mathsf{M}_2(\tilde Q_5)M+M\mathsf{M}_2(\tilde Q_5))$. On a zero divisor with $Q_{5t}\neq0$ the roots of the characteristic polynomial are $0$ and $2Q_{5t}$, so the four eigenvalues of the operator are $0,Q_{5t},Q_{5t},2Q_{5t}$, all distinct, and the rank is three. On the hyperplane $Q_{5t}=0$ the matrix $\mathsf{M}_2(\tilde Q_5)$ is traceless, of eigenvalues $\lambda,-\lambda$; if $\langle\tilde Q_5\rangle_{\natural}\neq0$ then $\lambda\neq0$ and the operator has the eigenvalues $\lambda,0,0,-\lambda$, of rank two; if $\langle\tilde Q_5\rangle_{\natural}=0$ and $\tilde Q_5\neq0$ then $\mathsf{M}_2(\tilde Q_5)$ is a non-zero nilpotent, conjugate to $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, and the operator is nilpotent, of rank two as well. At $\tilde Q_5=0$ the operator vanishes.
 
-**Remark (the kernel on the hyperplane).** For $\tilde A=\vec e_x$, a traceless element of the hyperplane $A_t=0$, the kernel is the plane spanned by $\vec e_y,\vec e_z$, since $\vec e_x\bullet \vec e_y=\vec e_x\bullet \vec e_z=0$; the operator is singular on the whole hyperplane $A_t=0$ and at every zero divisor, and it is invertible exactly on the units of the block with a non-zero scalar part. **The multiplication operator of the block is singular precisely on the union of the zero divisors and the trace-zero hyperplane**, and it is invertible off them.
+**Remark (the kernel on the hyperplane).** For $\tilde Q_5=\vec e_x$, a traceless element of the hyperplane $Q_{5t}=0$, the kernel is the plane spanned by $\vec e_y,\vec e_z$, since $\vec e_x\bullet \vec e_y=\vec e_x\bullet \vec e_z=0$; the operator is singular on the whole hyperplane $Q_{5t}=0$ and at every zero divisor, and it is invertible exactly on the units of the block with a non-zero scalar part. **The multiplication operator of the block is singular precisely on the union of the zero divisors and the trace-zero hyperplane**, and it is invertible off them.
 
 ## The Composition and the Failure of Multiplicativity
 
 **Proposition.** The composition of two multiplication operators is
 
 $$
-L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde Q_1}=\tfrac14\bigl(L_{\tilde A\tilde Q_1}+L_{\tilde A}R_{\tilde Q_1}+R_{\tilde A}L_{\tilde Q_1}+R_{\tilde Q_1\tilde A}\bigr),
+L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_1}=\tfrac14\bigl(L_{\tilde Q_5\tilde Q_1}+L_{\tilde Q_5}R_{\tilde Q_1}+R_{\tilde Q_5}L_{\tilde Q_1}+R_{\tilde Q_1\tilde Q_5}\bigr),
 $$
 
 and the composition is **not** the multiplication operator of the product:
 
 $$
-L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde Q_1}\neq L^{\bullet}_{\tilde A\bullet\tilde Q_1}\qquad\text{in general.}
+L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_1}\neq L^{\bullet}_{\tilde Q_5\bullet\tilde Q_1}\qquad\text{in general.}
 $$
 
-*Proof.* Expand $\tfrac12(L_{\tilde A}+R_{\tilde A})\cdot\tfrac12(L_{\tilde Q_1}+R_{\tilde Q_1})$ with $L_{\tilde A}L_{\tilde Q_1}=L_{\tilde A\tilde Q_1}$ and $R_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1\tilde A}$; for the failure, take $\tilde A=\tilde Q_1=\vec e_x$ and evaluate on $\vec e_y$:
+*Proof.* Expand $\tfrac12(L_{\tilde Q_5}+R_{\tilde Q_5})\cdot\tfrac12(L_{\tilde Q_1}+R_{\tilde Q_1})$ with $L_{\tilde Q_5}L_{\tilde Q_1}=L_{\tilde Q_5\tilde Q_1}$ and $R_{\tilde Q_5}R_{\tilde Q_1}=R_{\tilde Q_1\tilde Q_5}$; for the failure, take $\tilde Q_5=\tilde Q_1=\vec e_x$ and evaluate on $\vec e_y$:
 
 $$
 (L^{\bullet}_{\vec e_x})^2\vec e_y=\vec e_x\bullet(\vec e_x\bullet \vec e_y)=\vec e_x\bullet0=0,\qquad
@@ -95,34 +95,34 @@ $$
 
 and the two values differ.
 
-**Remark (the block is not associative).** The failure of multiplicativity of the left regular representation is the operator form of the failure of associativity of the block: an associative multiplication would give $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde Q_1}=L^{\bullet}_{\tilde A\tilde Q_1}$. **The block is a Jordan algebra and not an associative one, and its left regular representation is not multiplicative**; what survives is the Jordan identity of the next section.
+**Remark (the block is not associative).** The failure of multiplicativity of the left regular representation is the operator form of the failure of associativity of the block: an associative multiplication would give $L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_1}=L^{\bullet}_{\tilde Q_5\tilde Q_1}$. **The block is a Jordan algebra and not an associative one, and its left regular representation is not multiplicative**; what survives is the Jordan identity of the next section.
 
 ## The Associate with Respect to the Trace Form
 
 **Theorem.** Every multiplication operator of the block is **self-associate** with respect to the trace form:
 
 $$
-\tau\bigl(L^{\bullet}_{\tilde A}\tilde Q_2,\tilde Q_3\bigr)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde A}\tilde Q_3\bigr),
+\tau\bigl(L^{\bullet}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\bigr)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3\bigr),
 $$
 
-so $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$ in the mark $\approx$ of the associate of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
+so $(L^{\bullet}_{\tilde Q_5})^{\approx}=L^{\bullet}_{\tilde Q_5}$ in the mark $\approx$ of the associate of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
 
 *Proof.* By the definition of the operator and the invariance of the trace form,
 
 $$
-\tau\bigl(L^{\bullet}_{\tilde A}\tilde Q_2,\tilde Q_3\bigr)=\tau(\tilde A\bullet\tilde Q_2,\tilde Q_3)=\tau(\tilde A,\tilde Q_2\bullet\tilde Q_3),
+\tau\bigl(L^{\bullet}_{\tilde Q_5}\tilde Q_2,\tilde Q_3\bigr)=\tau(\tilde Q_5\bullet\tilde Q_2,\tilde Q_3)=\tau(\tilde Q_5,\tilde Q_2\bullet\tilde Q_3),
 $$
 
 and, by the symmetry of the form and the invariance again,
 
 $$
-\tau(\tilde A,\tilde Q_2\bullet\tilde Q_3)=\tau(\tilde Q_2\bullet\tilde Q_3,\tilde A)=\tau(\tilde Q_2,\tilde Q_3\bullet\tilde A)=\tau(\tilde Q_2,\tilde A\bullet\tilde Q_3)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde A}\tilde Q_3\bigr).
+\tau(\tilde Q_5,\tilde Q_2\bullet\tilde Q_3)=\tau(\tilde Q_2\bullet\tilde Q_3,\tilde Q_5)=\tau(\tilde Q_2,\tilde Q_3\bullet\tilde Q_5)=\tau(\tilde Q_2,\tilde Q_5\bullet\tilde Q_3)=\tau\bigl(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3\bigr).
 $$
 
 
-**Remark (the mark, and the other adjoint).** The form is the **indefinite** general plain bilinear form, so its transpose is the **associate** $\approx$ and not the dagger; the dagger belongs to the positive definite Hermitian form, and with respect to it the operator is adjoint to another operator, $(L^{\bullet}_{\tilde A})^{\dagger}=L^{\bullet}_{\tilde A^{*}}$, which is $L^{\bullet}_{\tilde A}$ exactly when $\tilde A$ is Hermitian. **The multiplication operators are self-associate and not self-adjoint**, and the two marks must not be exchanged; the Hermitian form, its involutions and its adjoints are *Two-Sided Operators on the General Plain Sesqualgebra* and the Hilbert-algebra series.
+**Remark (the mark, and the other adjoint).** The form is the **indefinite** general plain bilinear form, so its transpose is the **associate** $\approx$ and not the dagger; the dagger belongs to the positive definite Hermitian form, and with respect to it the operator is adjoint to another operator, $(L^{\bullet}_{\tilde Q_5})^{\dagger}=L^{\bullet}_{\tilde Q_5^{*}}$, which is $L^{\bullet}_{\tilde Q_5}$ exactly when $\tilde Q_5$ is Hermitian. **The multiplication operators are self-associate and not self-adjoint**, and the two marks must not be exchanged; the Hermitian form, its involutions and its adjoints are *Two-Sided Operators on the General Plain Sesqualgebra* and the Hilbert-algebra series.
 
-**Remark (the operators are symmetric).** The multiplication operators of the block form a **family of self-associate operators** for the trace form; the family is **not** commutative, because the commutator of two of them is the inner derivation $\tfrac14\operatorname{ad}_{[\tilde A,\tilde Q_1]}$ of §*The Derivations*, which vanishes only when the two parameters commute. **Every element of the block acts by a $\tau$-symmetric operator**, and the family is the image of the linear map $\tilde A\mapsto L^{\bullet}_{\tilde A}$ from the algebra into the endomorphisms of the underlying space. The symmetry is the operator form of the associativity of the form, and it holds for the plain operators relative to the same form as well.
+**Remark (the operators are symmetric).** The multiplication operators of the block form a **family of self-associate operators** for the trace form; the family is **not** commutative, because the commutator of two of them is the inner derivation $\tfrac14\operatorname{ad}_{[\tilde Q_5,\tilde Q_1]}$ of §*The Derivations*, which vanishes only when the two parameters commute. **Every element of the block acts by a $\tau$-symmetric operator**, and the family is the image of the linear map $\tilde Q_5\mapsto L^{\bullet}_{\tilde Q_5}$ from the algebra into the endomorphisms of the underlying space. The symmetry is the operator form of the associativity of the form, and it holds for the plain operators relative to the same form as well.
 
 ## The Jordan Identity on the Operators
 
@@ -143,20 +143,20 @@ $$
 **Proposition.** The commutator of two multiplication operators is an **inner derivation**:
 
 $$
-\bigl[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde Q_1}\bigr]=\tfrac14\operatorname{ad}_{[\tilde A,\tilde Q_1]},
+\bigl[L^{\bullet}_{\tilde Q_5},L^{\bullet}_{\tilde Q_1}\bigr]=\tfrac14\operatorname{ad}_{[\tilde Q_5,\tilde Q_1]},
 \qquad \operatorname{ad}_{\tilde Q_4}=L_{\tilde Q_4}-R_{\tilde Q_4},
 $$
 
-where $[\tilde A,\tilde Q_1]=\tilde A\tilde Q_1-\tilde Q_1\tilde A$ is the commutator of the plain product, and the commutator of two plain operators is $\operatorname{ad}_{\tilde Q_4}$.
+where $[\tilde Q_5,\tilde Q_1]=\tilde Q_5\tilde Q_1-\tilde Q_1\tilde Q_5$ is the commutator of the plain product, and the commutator of two plain operators is $\operatorname{ad}_{\tilde Q_4}$.
 
 *Proof.* Compute
 
 $$
-\bigl[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde Q_1}\bigr]=\tfrac14\bigl[L_{\tilde A}+R_{\tilde A},L_{\tilde Q_1}+R_{\tilde Q_1}\bigr]
-=\tfrac14\bigl([L_{\tilde A},L_{\tilde Q_1}]+[R_{\tilde A},R_{\tilde Q_1}]\bigr),
+\bigl[L^{\bullet}_{\tilde Q_5},L^{\bullet}_{\tilde Q_1}\bigr]=\tfrac14\bigl[L_{\tilde Q_5}+R_{\tilde Q_5},L_{\tilde Q_1}+R_{\tilde Q_1}\bigr]
+=\tfrac14\bigl([L_{\tilde Q_5},L_{\tilde Q_1}]+[R_{\tilde Q_5},R_{\tilde Q_1}]\bigr),
 $$
 
-because a left and a right operator commute. The two plain commutators are $[L_{\tilde A},L_{\tilde Q_1}]=L_{[\tilde A,\tilde Q_1]}$ and $[R_{\tilde A},R_{\tilde Q_1}]=-R_{[\tilde A,\tilde Q_1]}$, since $R_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1\tilde A}$; their sum is $L_{[\tilde A,\tilde Q_1]}-R_{[\tilde A,\tilde Q_1]}=\operatorname{ad}_{[\tilde A,\tilde Q_1]}$, and the displayed identity follows.
+because a left and a right operator commute. The two plain commutators are $[L_{\tilde Q_5},L_{\tilde Q_1}]=L_{[\tilde Q_5,\tilde Q_1]}$ and $[R_{\tilde Q_5},R_{\tilde Q_1}]=-R_{[\tilde Q_5,\tilde Q_1]}$, since $R_{\tilde Q_5}R_{\tilde Q_1}=R_{\tilde Q_1\tilde Q_5}$; their sum is $L_{[\tilde Q_5,\tilde Q_1]}-R_{[\tilde Q_5,\tilde Q_1]}=\operatorname{ad}_{[\tilde Q_5,\tilde Q_1]}$, and the displayed identity follows.
 
 Each inner derivation is a derivation of the block: $\operatorname{ad}_{\tilde Q_4}$ is a derivation of the associative plain product, $\operatorname{ad}_{\tilde Q_4}(\tilde Q_2\tilde Q_3)=\operatorname{ad}_{\tilde Q_4}\tilde Q_2\cdot\tilde Q_3+\tilde Q_2\cdot\operatorname{ad}_{\tilde Q_4}\tilde Q_3$, and a derivation of a product is a derivation of its symmetrisation, because the symmetrised product is a linear combination of plain products. The derivation identity reads
 
@@ -182,7 +182,7 @@ $$
 
 of complex dimension three, and $[\mathbb{B},\mathbb{B}]$ is the trace-zero subspace of $\mathbb{B}$.
 
-*Proof.* The inner derivations are $\tfrac14\operatorname{ad}_{\tilde Q_4}$ with $\tilde Q_4=[\tilde A,\tilde Q_1]$ by the previous section, and $[\tilde A,\tilde Q_1]$ ranges over the trace-zero subspace, because the commutator of two elements is always trace-zero and every trace-zero element is a commutator in this algebra. The derivation algebra contains the inner derivations, and a direct computation of the linear system $D(\tilde Q_2\bullet\tilde Q_3)=D\tilde Q_2\bullet\tilde Q_3+\tilde Q_2\bullet D\tilde Q_3$ on the sixteen basis pairs gives a space of complex dimension three; the two agree.
+*Proof.* The inner derivations are $\tfrac14\operatorname{ad}_{\tilde Q_4}$ with $\tilde Q_4=[\tilde Q_5,\tilde Q_1]$ by the previous section, and $[\tilde Q_5,\tilde Q_1]$ ranges over the trace-zero subspace, because the commutator of two elements is always trace-zero and every trace-zero element is a commutator in this algebra. The derivation algebra contains the inner derivations, and a direct computation of the linear system $D(\tilde Q_2\bullet\tilde Q_3)=D\tilde Q_2\bullet\tilde Q_3+\tilde Q_2\bullet D\tilde Q_3$ on the sixteen basis pairs gives a space of complex dimension three; the two agree.
 
 **Remark (no outer derivations).** **The derivation algebra of the block is exactly its algebra of inner derivations**, of dimension three, and it is isomorphic to the Lie algebra $\mathfrak{sl}(2,\mathbb{C})$ of the trace-zero elements under the commutator. The derivations of the **plain** product, by contrast, are the maps $\operatorname{ad}_{\tilde Q_4}$ and are all inner as well, but of dimension three over the trace-zero elements; the two derivation algebras are the same Lie algebra read on the two products, because $\tfrac14\operatorname{ad}_{\tilde Q_4}$ and $\operatorname{ad}_{\tilde Q_4}$ span the same three-dimensional space.
 
@@ -210,26 +210,26 @@ $$
 
 and $g(e_t)$ is therefore a two-sided identity of the block; the identity is unique, so $g(e_t)=e_t$. Applying $g$ to the quadratic identity $\tilde Q_2\bullet\tilde Q_2-T(\tilde Q_2)\tilde Q_2+\langle\tilde Q_2\rangle_{\natural}e_t=0$ gives the quadratic identity of $g\tilde Q_2$ with the same two coefficients, because $g$ fixes $e_t$ and is linear. The generic trace is half the operator trace, $T(\tilde Q_2)=\tfrac12\operatorname{Tr}(L^{\bullet}_{\tilde Q_2})$, and the generic norm is recovered from the trace and the square, $\langle\tilde Q_2\rangle_{\natural}=\tfrac12\bigl(T(\tilde Q_2)^2-T(\tilde Q_2\bullet\tilde Q_2)\bigr)$; both are unchanged by $g$, because $L^{\bullet}_{g\tilde Q_2}=gL^{\bullet}_{\tilde Q_2}g^{-1}$ and $g$ preserves the product, so the traces agree. Hence $T(g\tilde Q_2)=T(\tilde Q_2)$ and $\langle g\tilde Q_2\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}$.
 
-**Theorem.** The **inner automorphisms** are automorphisms: for every unit $\tilde A$ of the block,
+**Theorem.** The **inner automorphisms** are automorphisms: for every unit $\tilde Q_5$ of the block,
 
 $$
-\operatorname{Ad}_{\tilde A}:\tilde Q_2\longmapsto\tilde A\tilde Q_2\tilde A^{-1}
+\operatorname{Ad}_{\tilde Q_5}:\tilde Q_2\longmapsto\tilde Q_5\tilde Q_2\tilde Q_5^{-1}
 $$
 
-satisfies $\operatorname{Ad}_{\tilde A}(\tilde Q_2\bullet\tilde Q_3)=\operatorname{Ad}_{\tilde A}\tilde Q_2\bullet\operatorname{Ad}_{\tilde A}\tilde Q_3$.
+satisfies $\operatorname{Ad}_{\tilde Q_5}(\tilde Q_2\bullet\tilde Q_3)=\operatorname{Ad}_{\tilde Q_5}\tilde Q_2\bullet\operatorname{Ad}_{\tilde Q_5}\tilde Q_3$.
 
 *Proof.* Conjugation by a unit is an automorphism of the associative plain product, and it carries the symmetrised product to the symmetrised product:
 
 $$
-\operatorname{Ad}_{\tilde A}(\tilde Q_2\bullet\tilde Q_3)
-=\tfrac12\bigl(\tilde A(\tilde Q_2\tilde Q_3+\tilde Q_3\tilde Q_2)\tilde A^{-1}\bigr)
-=\tfrac12\bigl(\tilde A\tilde Q_2\tilde A^{-1}\tilde A\tilde Q_3\tilde A^{-1}+\tilde A\tilde Q_3\tilde A^{-1}\tilde A\tilde Q_2\tilde A^{-1}\bigr)
-=\operatorname{Ad}_{\tilde A}\tilde Q_2\bullet\operatorname{Ad}_{\tilde A}\tilde Q_3 ,
+\operatorname{Ad}_{\tilde Q_5}(\tilde Q_2\bullet\tilde Q_3)
+=\tfrac12\bigl(\tilde Q_5(\tilde Q_2\tilde Q_3+\tilde Q_3\tilde Q_2)\tilde Q_5^{-1}\bigr)
+=\tfrac12\bigl(\tilde Q_5\tilde Q_2\tilde Q_5^{-1}\tilde Q_5\tilde Q_3\tilde Q_5^{-1}+\tilde Q_5\tilde Q_3\tilde Q_5^{-1}\tilde Q_5\tilde Q_2\tilde Q_5^{-1}\bigr)
+=\operatorname{Ad}_{\tilde Q_5}\tilde Q_2\bullet\operatorname{Ad}_{\tilde Q_5}\tilde Q_3 ,
 $$
 
-the inner factors $\tilde A^{-1}\tilde A$ cancelling.
+the inner factors $\tilde Q_5^{-1}\tilde Q_5$ cancelling.
 
-**Theorem.** The inner automorphisms $\operatorname{Ad}_{\tilde A}$, over the units $\tilde A$, form the group $\operatorname{InnAut}(\mathbb{B},\bullet)$ of complex dimension three, isomorphic to the units modulo the central scalars; its Lie algebra is the derivation algebra, so that the group is the projective general linear group:
+**Theorem.** The inner automorphisms $\operatorname{Ad}_{\tilde Q_5}$, over the units $\tilde Q_5$, form the group $\operatorname{InnAut}(\mathbb{B},\bullet)$ of complex dimension three, isomorphic to the units modulo the central scalars; its Lie algebra is the derivation algebra, so that the group is the projective general linear group:
 
 $$
 \operatorname{InnAut}(\mathbb{B},\bullet)\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C}),\qquad
@@ -237,12 +237,12 @@ $$
 \dim_{\mathbb{C}}\operatorname{InnAut}(\mathbb{B},\bullet)=3 .
 $$
 
-*Proof.* The map $\tilde A\mapsto\operatorname{Ad}_{\tilde A}$ is a homomorphism from the units onto the inner automorphisms, of kernel the central scalars $\mathbb{C}^{\times}e_t$; the units are the non-isotropic elements, of complex dimension four and isomorphic to $GL(2,\mathbb{C})$ through $\mathsf{M}_2$, and the kernel one, so the image has dimension three and is the quotient $\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C})$. The derivations of the block are exactly the commutators $[\tilde Q_4,\cdot\,]$, of dimension three, and they are the Lie algebra of the inner automorphisms because $[\operatorname{ad}_{\tilde Q_4},\operatorname{ad}_{\tilde D}]=\operatorname{ad}_{[\tilde Q_4,\tilde D]}$.
+*Proof.* The map $\tilde Q_5\mapsto\operatorname{Ad}_{\tilde Q_5}$ is a homomorphism from the units onto the inner automorphisms, of kernel the central scalars $\mathbb{C}^{\times}e_t$; the units are the non-isotropic elements, of complex dimension four and isomorphic to $GL(2,\mathbb{C})$ through $\mathsf{M}_2$, and the kernel one, so the image has dimension three and is the quotient $\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C})$. The derivations of the block are exactly the commutators $[\tilde Q_4,\cdot\,]$, of dimension three, and they are the Lie algebra of the inner automorphisms because $[\operatorname{ad}_{\tilde Q_4},\operatorname{ad}_{\tilde Q_6}]=\operatorname{ad}_{[\tilde Q_4,\tilde Q_6]}$.
 
 **Theorem.** Every inner automorphism preserves the antisymmetric part,
 
 $$
-\operatorname{Ad}_{\tilde A}[\tilde Q_2,\tilde Q_3]=[\operatorname{Ad}_{\tilde A}\tilde Q_2,\operatorname{Ad}_{\tilde A}\tilde Q_3],
+\operatorname{Ad}_{\tilde Q_5}[\tilde Q_2,\tilde Q_3]=[\operatorname{Ad}_{\tilde Q_5}\tilde Q_2,\operatorname{Ad}_{\tilde Q_5}\tilde Q_3],
 $$
 
 while the natural conjugation **reverses** it:
@@ -293,20 +293,20 @@ whose solutions are the **skew** matrices, of dimension six, and the scalars, of
 
 ## Summary
 
-The multiplication operators of the block are $L^{\bullet}_{\tilde A}$ and $R^{\bullet}_{\tilde A}$, and they coincide because the product is commutative; they are half the sum of the plain operators, $L^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$, so $L_{\tilde A}+R_{\tilde A}=2L^{\bullet}_{\tilde A}$, with the factor of two. The trace is $4A_t$, the determinant is $A_t^2\langle\tilde A\rangle_{\natural}$, and the operator is invertible exactly when $A_t\neq0$ and $\langle\tilde A\rangle_{\natural}\neq0$, of rank three on the zero divisors with $A_t\neq0$, of rank two on the non-zero trace-zero elements and of rank zero at the origin. The composition is $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde Q_1}=\tfrac14(L_{\tilde A\tilde Q_1}+L_{\tilde A}R_{\tilde Q_1}+R_{\tilde A}L_{\tilde Q_1}+R_{\tilde Q_1\tilde A})$ and does not equal $L^{\bullet}_{\tilde A\bullet\tilde Q_1}$, the witness being $\vec e_x,\vec e_x,\vec e_y$. Every operator is self-associate for the trace form, $\tau(L^{\bullet}_{\tilde A}\tilde Q_2,\tilde Q_3)=\tau(\tilde Q_2,L^{\bullet}_{\tilde A}\tilde Q_3)$, and the Jordan identity reads $[L^{\bullet}_{\tilde Q_2},L^{\bullet}_{\tilde Q_2\bullet\tilde Q_2}]=0$. The commutator of two operators is the inner derivation $\tfrac14\operatorname{ad}_{[\tilde A,\tilde Q_1]}$, and every derivation of the block is inner, so $\operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)\cong\mathfrak{sl}(2,\mathbb{C})$ of dimension three. The inner automorphisms are the conjugations by the units, of dimension three with the derivation algebra as Lie algebra, and the natural conjugation is an outer automorphism because it reverses the antisymmetric part; the structure group, the group of linear maps that multiply the norm by a scalar, is the larger group of dimension seven.
+The multiplication operators of the block are $L^{\bullet}_{\tilde Q_5}$ and $R^{\bullet}_{\tilde Q_5}$, and they coincide because the product is commutative; they are half the sum of the plain operators, $L^{\bullet}_{\tilde Q_5}=\tfrac12(L_{\tilde Q_5}+R_{\tilde Q_5})$, so $L_{\tilde Q_5}+R_{\tilde Q_5}=2L^{\bullet}_{\tilde Q_5}$, with the factor of two. The trace is $4Q_{5t}$, the determinant is $Q_{5t}^2\langle\tilde Q_5\rangle_{\natural}$, and the operator is invertible exactly when $Q_{5t}\neq0$ and $\langle\tilde Q_5\rangle_{\natural}\neq0$, of rank three on the zero divisors with $Q_{5t}\neq0$, of rank two on the non-zero trace-zero elements and of rank zero at the origin. The composition is $L^{\bullet}_{\tilde Q_5}L^{\bullet}_{\tilde Q_1}=\tfrac14(L_{\tilde Q_5\tilde Q_1}+L_{\tilde Q_5}R_{\tilde Q_1}+R_{\tilde Q_5}L_{\tilde Q_1}+R_{\tilde Q_1\tilde Q_5})$ and does not equal $L^{\bullet}_{\tilde Q_5\bullet\tilde Q_1}$, the witness being $\vec e_x,\vec e_x,\vec e_y$. Every operator is self-associate for the trace form, $\tau(L^{\bullet}_{\tilde Q_5}\tilde Q_2,\tilde Q_3)=\tau(\tilde Q_2,L^{\bullet}_{\tilde Q_5}\tilde Q_3)$, and the Jordan identity reads $[L^{\bullet}_{\tilde Q_2},L^{\bullet}_{\tilde Q_2\bullet\tilde Q_2}]=0$. The commutator of two operators is the inner derivation $\tfrac14\operatorname{ad}_{[\tilde Q_5,\tilde Q_1]}$, and every derivation of the block is inner, so $\operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)\cong\mathfrak{sl}(2,\mathbb{C})$ of dimension three. The inner automorphisms are the conjugations by the units, of dimension three with the derivation algebra as Lie algebra, and the natural conjugation is an outer automorphism because it reverses the antisymmetric part; the structure group, the group of linear maps that multiply the norm by a scalar, is the larger group of dimension seven.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $L^{\bullet}_{\tilde A}\tilde Q=\tilde A\bullet\tilde Q$, $R^{\bullet}_{\tilde A}\tilde Q=\tilde Q\bullet\tilde A$ | the multiplication operators of the block |
-| $L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$ | coincidence of the two and the relation to the plain operators |
-| $\operatorname{Tr}(L^{\bullet}_{\tilde A})=4A_t$, $\det(L^{\bullet}_{\tilde A})=A_t^2\langle\tilde A\rangle_{\natural}$ | trace and determinant |
-| $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$ | self-association for the trace form $\tau$ |
+| $L^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q_5\bullet\tilde Q$, $R^{\bullet}_{\tilde Q_5}\tilde Q=\tilde Q\bullet\tilde Q_5$ | the multiplication operators of the block |
+| $L^{\bullet}_{\tilde Q_5}=R^{\bullet}_{\tilde Q_5}=\tfrac12(L_{\tilde Q_5}+R_{\tilde Q_5})$ | coincidence of the two and the relation to the plain operators |
+| $\operatorname{Tr}(L^{\bullet}_{\tilde Q_5})=4Q_{5t}$, $\det(L^{\bullet}_{\tilde Q_5})=Q_{5t}^2\langle\tilde Q_5\rangle_{\natural}$ | trace and determinant |
+| $(L^{\bullet}_{\tilde Q_5})^{\approx}=L^{\bullet}_{\tilde Q_5}$ | self-association for the trace form $\tau$ |
 | $[L^{\bullet}_{\tilde Q_2},L^{\bullet}_{\tilde Q_2\bullet\tilde Q_2}]=0$ | the Jordan identity on the operators |
-| $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde Q_1}]=\tfrac14\operatorname{ad}_{[\tilde A,\tilde Q_1]}$ | the inner derivations |
+| $[L^{\bullet}_{\tilde Q_5},L^{\bullet}_{\tilde Q_1}]=\tfrac14\operatorname{ad}_{[\tilde Q_5,\tilde Q_1]}$ | the inner derivations |
 | $\operatorname{Der}(\mathbb{B},\bullet)=\operatorname{Inn}(\mathbb{B},\bullet)\cong\mathfrak{sl}(2,\mathbb{C})$ | the derivation algebra, all derivations inner |
-| $\operatorname{Ad}_{\tilde A}$, $\tilde Q_2\mapsto\tilde A\tilde Q_2\tilde A^{-1}$ | the inner automorphisms, $\operatorname{InnAut}(\mathbb{B},\bullet)\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C})$ |
+| $\operatorname{Ad}_{\tilde Q_5}$, $\tilde Q_2\mapsto\tilde Q_5\tilde Q_2\tilde Q_5^{-1}$ | the inner automorphisms, $\operatorname{InnAut}(\mathbb{B},\bullet)\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C})$ |
 | $\Gamma=\{g:N\circ g=\nu\,N\}$ | the structure group, the norm similarities |
 
 ## Further Reading

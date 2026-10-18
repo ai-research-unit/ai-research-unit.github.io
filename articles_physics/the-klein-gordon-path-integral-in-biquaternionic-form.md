@@ -154,7 +154,7 @@ with Dirichlet endpoints, and its inverse is the lattice propagator. The continu
 $$
 G_E(\tilde{Q}_E)=\left(-\Delta_E+\mu^2\right)^{-1},
 \qquad
-\tilde{G}_E(p)=\frac{1}{\vec p_E^2+\mu^2},
+G_E(p)=\frac{1}{\vec p_E^2+\mu^2},
 $$
 
 which is the standard massive Euclidean propagator. The free two-point function of the path integral is therefore the Euclidean kernel

@@ -230,7 +230,7 @@ a sum fixed by the complex conjugation.
 
 **Theorem.** The only two-sided ideals of the sesqualgebra $(\mathbb{B},\star)$ are $0$ and $\mathbb{B}$.
 
-**Proof.** Let $I$ be a two-sided ideal, so that $\tilde A \star \tilde Q_1 \in I$ and $\tilde Q_1 \star \tilde A \in I$ for every $\tilde A \in \mathbb{B}$ and $\tilde Q_1 \in I$. The first condition with $\tilde A = e_t$ gives $\tilde Q_1^{*} \in I$, so $I$ is stable under the involution; with that, the first condition reads $\mathbb{B}I \subseteq I$, and the second reads $I\mathbb{B} \subseteq I$. Hence $I$ is a two-sided ideal of the ring $\mathbb{B}$, and the ring is simple by *Ideals and Peirce Decomposition of the Biquaternion Algebra*, so $I$ is $0$ or $\mathbb{B}$.
+**Proof.** Let $I$ be a two-sided ideal, so that $\tilde Q_4 \star \tilde Q_1 \in I$ and $\tilde Q_1 \star \tilde Q_4 \in I$ for every $\tilde Q_4 \in \mathbb{B}$ and $\tilde Q_1 \in I$. The first condition with $\tilde Q_4 = e_t$ gives $\tilde Q_1^{*} \in I$, so $I$ is stable under the involution; with that, the first condition reads $\mathbb{B}I \subseteq I$, and the second reads $I\mathbb{B} \subseteq I$. Hence $I$ is a two-sided ideal of the ring $\mathbb{B}$, and the ring is simple by *Ideals and Peirce Decomposition of the Biquaternion Algebra*, so $I$ is $0$ or $\mathbb{B}$.
 
 **Remark.** The sesqualgebra is simple with respect to the multiplication $\star$ although that multiplication is neither associative nor two-sidedly unital, and it is simple for the same underlying reason as the algebra, the simplicity of the ring. In the theory of *Ideals and Quotients of a Sesqualgebra* the ideals here are the two-sided ideals of the algebra, so the answer is the same as the bilinear one.
 

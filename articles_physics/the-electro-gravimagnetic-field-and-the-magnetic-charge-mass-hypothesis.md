@@ -533,7 +533,7 @@ Hence the **shocks of the charge–current field are generally not transverse** 
 
 ## The General Front Condition of the Biwave Equation
 
-The two front systems above are specializations of one statement, and it is worth recording because it is the general theorem behind both. For an arbitrary bipotential $\tilde K$ of the biwave equation $\tilde\nabla^{\pm}\tilde K = \tilde G$ — the equation the field strength and the charge–current field both satisfy — the layer calculus of *Distributions on Surfaces, Layers, and Jump Conditions* gives, for a field with a finite gap on a front $S$,
+The two front systems above are specializations of one statement, and it is worth recording because it is the general theorem behind both. For an arbitrary bipotential $\tilde K$ and source $\tilde G$ of the biwave equation $\tilde\nabla^{\pm}\tilde K = \tilde G$ — the equation the field strength and the charge–current field both satisfy — the layer calculus of *Distributions on Surfaces, Layers, and Jump Conditions* gives, for a field with a finite gap on a front $S$,
 
 $$
 \tilde\nabla^{\pm}\tilde K = \tilde\nabla^{\pm}\tilde K + (n_{ict} + \vec w)\circ[\tilde K]_S\,\delta_S ,

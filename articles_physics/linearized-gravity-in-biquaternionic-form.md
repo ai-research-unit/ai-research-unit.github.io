@@ -164,27 +164,27 @@ reproduces it exactly, since $\langle \varepsilon_\mu, \tfrac{1}{2}h_{\nu\lambda
 
 ### The Counting
 
-The frame perturbation has $4 \times 4 = 16$ real components; a symmetric $h_{\mu\nu}$ has $10$. The difference is accounted for by the **local Lorentz transformations** of the frame. If $\tilde{U} = e_t + \tilde{G}$ is an infinitesimal unit-norm biquaternion, the frame transforms as
+The frame perturbation has $4 \times 4 = 16$ real components; a symmetric $h_{\mu\nu}$ has $10$. The difference is accounted for by the **local Lorentz transformations** of the frame. If $\tilde{U} = e_t + \vec G$ is an infinitesimal unit-norm biquaternion, the frame transforms as
 
 $$
 \tilde{E}_\mu \;\longmapsto\; \tilde{U}\tilde{E}_\mu\tilde{U}^{*}
-= \tilde{E}_\mu + \tilde{G}\tilde{E}_\mu + \tilde{E}_\mu\tilde{G}^{*} + O(\tilde{G}^2),
+= \tilde{E}_\mu + \vec G\tilde{E}_\mu + \tilde{E}_\mu\vec G^{*} + O(\vec G^2),
 $$
 
 and at linear order, with $\tilde{E}_\mu$ replaced by $\varepsilon_\mu$ in the correction,
 
 $$
-\delta\tilde{E}_\mu \;\longmapsto\; \delta\tilde{E}_\mu + \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^{*} .
+\delta\tilde{E}_\mu \;\longmapsto\; \delta\tilde{E}_\mu + \vec G\varepsilon_\mu + \varepsilon_\mu\vec G^{*} .
 $$
 
-The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\tilde{G} + \tilde{G}^{\natural} = 0$, which says that $\tilde{G}$ is a **complex pure vector**, $\tilde{G} \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$. Its elements leave the metric perturbation invariant:
+The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\vec G + \vec G^{\natural} = 0$, which says that $\vec G$ is a **complex pure vector**, $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$. Its elements leave the metric perturbation invariant:
 
 $$
-\langle \varepsilon_\mu, \tilde{G}\varepsilon_\nu + \varepsilon_\nu\tilde{G}^{*}\rangle_{\natural}
-+ \langle \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^{*}, \varepsilon_\nu\rangle_{\natural} = 0,
+\langle \varepsilon_\mu, \vec G\varepsilon_\nu + \varepsilon_\nu\vec G^{*}\rangle_{\natural}
++ \langle \vec G\varepsilon_\mu + \varepsilon_\mu\vec G^{*}, \varepsilon_\nu\rangle_{\natural} = 0,
 $$
 
-because the infinitesimal rotor conjugation preserves the bilinear form. This is the kernel of the map $\delta\tilde{E}_\mu \mapsto h_{\mu\nu}$, and it has dimension $6$, so $16 - 6 = 10$, the dimension of the metric. A computation that included an $e_t$ component in $\tilde{G}$ — which the unit-norm condition forbids — gives a nonzero shift of $h$; the restriction to the complex pure vector part is what makes the kernel statement exact. Both the vanishing shift and the failure without the restriction were checked.
+because the infinitesimal rotor conjugation preserves the bilinear form. This is the kernel of the map $\delta\tilde{E}_\mu \mapsto h_{\mu\nu}$, and it has dimension $6$, so $16 - 6 = 10$, the dimension of the metric. A computation that included an $e_t$ component in $\vec G$ — which the unit-norm condition forbids — gives a nonzero shift of $h$; the restriction to the complex pure vector part is what makes the kernel statement exact. Both the vanishing shift and the failure without the restriction were checked.
 
 ### An External Variant: Frame Fields That Carry Their Own Connection
 
@@ -415,7 +415,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $h = \eta^{\mu\nu}h_{\mu\nu} = 2\langle\varepsilon^\nu,\delta\tilde{E}_\nu\rangle_{\natural}$ | Trace of the metric perturbation |
 | $\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12\eta_{\mu\nu}h$, $\bar{h} = -h$ | Trace-reversed perturbation |
 | $\bar{\delta\tilde{E}}_\mu = \delta\tilde{E}_\mu - \tfrac14 h\,\varepsilon_\mu$ | Trace-reversed frame perturbation |
-| $\tilde{G} \in \mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$ | Infinitesimal local Lorentz generator (complex pure vector) |
+| $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$ | Infinitesimal local Lorentz generator (complex pure vector) |
 | $\tilde Q_{\mathrm d} \in \mathbb{M}_-$ | Gauge four-vector, $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial/\partial x^\mu\,\tilde Q_{\mathrm d}$ |
 | $h_{\mu\nu} \mapsto h_{\mu\nu} - \partial/\partial x^\mu\,\xi_\nu - \partial/\partial x^\nu\,\xi_\mu$, $\xi_\nu = \langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$ | Linearized gauge transformation |
 | $R_{\mu\nu\rho\sigma}$ | Linearized Riemann tensor (gauge-invariant field strength) |

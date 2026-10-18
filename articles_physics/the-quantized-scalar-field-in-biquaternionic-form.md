@@ -48,7 +48,7 @@ $$
 
 every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.
 
-- **The field commutes with the algebra.** For every $\tilde A\in\mathbb{B}$ and every test function, $[\tilde\Phi^{\mathrm{fop}}(f),\tilde A]=0$ in the sense that the field carries no value-space index on which $\tilde A$ could act. The algebra's action on the state module and the field's action on the Fock space are independent; the field is a scalar with respect to $\mathbb{B}$.
+- **The field commutes with the algebra.** For every $\tilde Q_2\in\mathbb{B}$ and every test function, $[\tilde\Phi^{\mathrm{fop}}(f),\tilde Q_2]=0$ in the sense that the field carries no value-space index on which $\tilde Q_2$ could act. The algebra's action on the state module and the field's action on the Fock space are independent; the field is a scalar with respect to $\mathbb{B}$.
 - **There is no spin part to its Lorentz transformation.** A field in a nontrivial representation of the Lorentz group transforms by a rotor $\tilde U\in\mathbb{M}_+$ acting on its indices. A central element is fixed by rotor conjugation, $\tilde U\tilde\Phi\tilde U^{*}=\tilde\Phi$, because $\tilde\Phi$ commutes with $\tilde U$ and $\tilde U\tilde U^{*}=e_t$. The triviality of the spin-$0$ representation is thus an algebraic identity about the centre, not an assumption.
 - **The field is not an element of $\mathbb{B}$.** Its coefficients $a^{\mathrm{fop}}_{\vec p},b^{\mathrm{fop}}_{\vec p}$ are not in the algebra, as the trace argument below shows; the field is an operator on the Fock space built from a module, and the centre is only its value space.
 
@@ -271,7 +271,7 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\tilde P=i\omega\,e_t+\vec p$, $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
 | $\tilde U\in\mathbb{M}_+$, $\tilde U e_t\tilde U^{*}=e_t$ | Lorentz rotor; trivial action on the centre |
-| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde A,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading
 

@@ -52,11 +52,11 @@ The catalogue is deliberately non-relativistic and structural. Obstructions that
 
 **Statement.** The only idempotents in the centre $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ are $0$ and $e_t$. Consequently $\mathbb{B}$ has no non-trivial two-sided ideals and no superselection sectors.
 
-**Proof.** A central idempotent is $\tilde{C}=c\,e_t$ with $c\in\mathbb{C}$ and
+**Proof.** A central idempotent is $\tilde{Q}_3=c\,e_t$ with $c\in\mathbb{C}$ and
 $$
-\tilde{C}^2=\tilde{C}\iff c^2=c\iff c\in\{0,1\},
+\tilde{Q}_3^2=\tilde{Q}_3\iff c^2=c\iff c\in\{0,1\},
 $$
-so the solutions are exactly $0$ and $e_t$. The corresponding two-sided ideals $\mathbb{B}\tilde{C}$ are $0$ and $\mathbb{B}$. The statement that a non-zero element generates the whole algebra, $\mathbb{B}\tilde{Q}\mathbb{B}=\mathbb{B}$ for $\tilde{Q}\neq0$, is the standard statement that $M_2(\mathbb{C})$ is simple, transported by the isomorphism $\mathsf{M}_2$.
+so the solutions are exactly $0$ and $e_t$. The corresponding two-sided ideals $\mathbb{B}\tilde{Q}_3$ are $0$ and $\mathbb{B}$. The statement that a non-zero element generates the whole algebra, $\mathbb{B}\tilde{Q}\mathbb{B}=\mathbb{B}$ for $\tilde{Q}\neq0$, is the standard statement that $M_2(\mathbb{C})$ is simple, transported by the isomorphism $\mathsf{M}_2$.
 
 **Consequence.** The framework cannot split itself into non-interfering branches labelled by central projections. Superposition across any two subspaces of the state module remains coherent unless coherence is destroyed by an external mechanism; the algebra provides no internal superselection rule.
 
@@ -66,7 +66,7 @@ so the solutions are exactly $0$ and $e_t$. The corresponding two-sided ideals $
 
 **Statement.** The kernel of the action of the invertible group $\mathbb{B}^\times$ on the projective state space is the centre, $\mathbb{C}^\times e_t$. Hence no central data is observable at the level of states.
 
-**Proof.** A central element acts on the module by scalar multiplication, $\tilde{C}\psi=\lambda\psi$, so it fixes every ray. Conversely, if $\tilde{U}$ fixes every ray then for each $\psi$ there is $\lambda(\psi)\in\mathbb{C}$ with $\tilde{U}\psi=\lambda(\psi)\psi$; linearity forces $\lambda$ to be constant and $\tilde{U}$ to be a scalar, hence central.
+**Proof.** A central element acts on the module by scalar multiplication, $\tilde{Q}_3\psi=\lambda\psi$, so it fixes every ray. Conversely, if $\tilde{U}$ fixes every ray then for each $\psi$ there is $\lambda(\psi)\in\mathbb{C}$ with $\tilde{U}\psi=\lambda(\psi)\psi$; linearity forces $\lambda$ to be constant and $\tilde{U}$ to be a scalar, hence central.
 
 **Consequence.** The global phase and the overall scale of the state carry no information in this framework. The relevant symmetry group on states is the projective group $PGL(2,\mathbb{C})$, or $SO(3)$ on the Bloch sphere after restriction to unitaries, and the centre is not represented.
 
@@ -76,7 +76,7 @@ so the solutions are exactly $0$ and $e_t$. The corresponding two-sided ideals $
 
 **Statement.** No operation of $\mathbb{B}$ fixes the numerical values of the parameters — $\hbar$, masses, couplings — that appear as central elements in the framework's equations. The centre is the store of these parameters, not their source.
 
-**Proof.** The centre is $\mathbb{C}e_t$, and every central element commutes with every element of the algebra. A relation internal to the algebra can therefore only constrain central elements by algebraic equations such as $\tilde{C}^2=\tilde{C}$ (whose solutions are $0$ and $e_t$), never by a numerical condition selecting one real multiple over another. Any equation that determines a parameter must involve data external to the algebra.
+**Proof.** The centre is $\mathbb{C}e_t$, and every central element commutes with every element of the algebra. A relation internal to the algebra can therefore only constrain central elements by algebraic equations such as $\tilde{Q}_3^2=\tilde{Q}_3$ (whose solutions are $0$ and $e_t$), never by a numerical condition selecting one real multiple over another. Any equation that determines a parameter must involve data external to the algebra.
 
 **Consequence.** Dimensional analysis and renormalization aside, the framework cannot predict the spectrum of its own parameters from its structure; the mass coefficient $m e_t$, for example, is an input.
 

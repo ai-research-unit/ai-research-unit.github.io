@@ -184,9 +184,9 @@ where $\mathbb{M}_{+}$ is the Hermitian sector, the elements with $\tilde Q^{*}=
 
 **The matrix model.** The isomorphism is fixed by its values on the basis,
 $$
-\mathsf{M}_2(e_{0})=I_{2},\qquad \mathsf{M}_2(e_{k})=-i\sigma_{k},\qquad \mathsf{M}_2(i\tilde A)=i\,\mathsf{M}_2(\tilde A),
+\mathsf{M}_2(e_{0})=I_{2},\qquad \mathsf{M}_2(e_{k})=-i\sigma_{k},\qquad \mathsf{M}_2(i\tilde Q_1)=i\,\mathsf{M}_2(\tilde Q_1),
 $$
-so that $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras onto the $2\times2$ complex matrices. The trace convention of the series is $\mathrm{Tr}=2\,\mathrm{Sc}$, where $\mathrm{Sc}(\tilde A)$ is the coefficient of $e_{0}$.
+so that $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras onto the $2\times2$ complex matrices. The trace convention of the series is $\mathrm{Tr}=2\,\mathrm{Sc}$, where $\mathrm{Sc}(\tilde Q_1)$ is the coefficient of $e_{0}$.
 
 **The four forms.** The scalar parts of the four general products give four forms,
 $$

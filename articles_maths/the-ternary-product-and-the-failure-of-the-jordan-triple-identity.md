@@ -178,7 +178,7 @@ For the right-hand side the three terms are as follows. The first is $\{\{e_t,\v
 
 ### The Operator Form of the Failure
 
-**Proposition (the operator form).** Let $\Theta_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$ be the linear operator of the pair $(\tilde Q_1,\tilde Q_2)$. The Jordan triple identity is equivalent to the operator identity
+**Proposition (the operator form).** Let $\Theta_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$ be the linear operator of the pair $(\tilde Q_1,\tilde Q_2)$, and let $\tilde T,\tilde S,\tilde W\in\mathbb{B}$ be arbitrary. The Jordan triple identity is equivalent to the operator identity
 
 $$
 [\Theta_{\tilde Q_1,\tilde Q_2},\Theta_{\tilde T,\tilde S}] = \Theta_{\{\tilde Q_1,\tilde Q_2,\tilde T\},\tilde S} - \Theta_{\tilde T,\{\tilde Q_2,\tilde Q_1,\tilde S\}} ,

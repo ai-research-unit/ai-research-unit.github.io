@@ -14,7 +14,7 @@ The one-sided operators are the left and the right multiplications, $L_{\tilde q
 
 ## Composition Laws
 
-**Theorem.** $L_{\tilde q_3}L_{\tilde q_5}=L_{\tilde q_3\tilde q_5}$ and $R_{\tilde q_4}R_{\tilde d}=R_{\tilde d\tilde q_4}$; the left and the right multiplications commute, $L_{\tilde q_3}R_{\tilde q_4}=R_{\tilde q_4}L_{\tilde q_3}$; the families intersect in the scalars, $\mathcal L\cap\mathcal R=\{\lambda\,\mathrm{id}:\lambda\in\mathbb{R}\}$.
+**Theorem.** $L_{\tilde q_3}L_{\tilde q_5}=L_{\tilde q_3\tilde q_5}$ and $R_{\tilde q_4}R_{\tilde q_6}=R_{\tilde q_6\tilde q_4}$; the left and the right multiplications commute, $L_{\tilde q_3}R_{\tilde q_4}=R_{\tilde q_4}L_{\tilde q_3}$; the families intersect in the scalars, $\mathcal L\cap\mathcal R=\{\lambda\,\mathrm{id}:\lambda\in\mathbb{R}\}$.
 
 *Proof.* The first two are the multiplicativity and anti-multiplicativity above; the commutativity is $L_{\tilde q_3}R_{\tilde q_4}(\tilde q)=\tilde q_3\tilde q\tilde q_4=R_{\tilde q_4}L_{\tilde q_3}(\tilde q)$ by associativity; an operator that is both a left and a right multiplication is multiplication by a central element, that is by a real scalar, by the centre theorem.
 

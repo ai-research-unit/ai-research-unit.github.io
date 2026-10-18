@@ -66,14 +66,14 @@ The **invariant interval** between two events is the squared modulus $p\bar p$, 
 $$
 \tilde v = \gamma\left(e_t + \beta\vec u_v\right),
 \qquad
-\tilde v\,\bar{\tilde v} = \gamma^2\left(e_t + \beta\vec u_v\right)\left(e_t - \beta\vec u_v\right)
+\tilde v\,\tilde v^{\natural} = \gamma^2\left(e_t + \beta\vec u_v\right)\left(e_t - \beta\vec u_v\right)
 = \gamma^2\left(1 - \beta^2\right)e_t = e_t .
 $$
 
 The unimodularity is the paravector form of the constant length of the four-velocity. The corpus's four-velocity is $\tilde V = \gamma(ic\,e_t + \vec v)\in\mathbb{M}_-$, and the two are related by
 
 $$
-\tilde V = ic\,\bar{\tilde v},
+\tilde V = ic\,\tilde v^{\natural},
 \qquad\text{equivalently}\qquad
 \tilde v = -\frac{i}{c}\,\tilde V^{\natural},
 $$
@@ -94,7 +94,7 @@ L^2 = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u_v\right)^2
 = \cosh w\,e_t + \sinh w\,\vec u_v \;=\; \tilde v,
 $$
 
-using $\vec u_v^2 = e_t$. This is the corpus's relation $\tilde v = \tilde U^2 = -\frac{i}{c}\tilde V^{\natural}$ read in the paravector basis: the square of the boost rotor is the **proper velocity** $\tilde v$, a paravector, and the four-velocity $\tilde V$ is its companion under the change of time convention. The relation $\tilde v\bar{\tilde v} = e_t$ is the statement that the four-velocity has fixed length.
+using $\vec u_v^2 = e_t$. This is the corpus's relation $\tilde v = \tilde U^2 = -\frac{i}{c}\tilde V^{\natural}$ read in the paravector basis: the square of the boost rotor is the **proper velocity** $\tilde v$, a paravector, and the four-velocity $\tilde V$ is its companion under the change of time convention. The relation $\tilde v\tilde v^{\natural} = e_t$ is the statement that the four-velocity has fixed length.
 
 ## The Boost Rule
 

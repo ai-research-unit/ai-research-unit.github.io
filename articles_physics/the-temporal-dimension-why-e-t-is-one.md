@@ -71,7 +71,7 @@ Four consequences follow from the identification, and they are the article's alg
 **3. The temporal coefficient is not itself invariant; the norm is.** The Lorentz action preserves the biquaternion norm,
 
 $$
-\bigl\langle \tilde U\tilde A\tilde U^{*} \bigr\rangle_{\natural} = \langle \tilde A\rangle_{\natural} ,
+\bigl\langle \tilde U\tilde Q_3\tilde U^{*} \bigr\rangle_{\natural} = \langle \tilde Q_3\rangle_{\natural} ,
 $$
 
 so the invariant the action carries is the norm $\sum_\mu Q_\mu^2$ and not the temporal coefficient. A boost changes the temporal coefficient $Q_t$ of an element exactly as it changes the spatial ones, mixing the two, which is what a Lorentz transformation of a four-vector does. The temporal coordinate is a coordinate, and it transforms; the interval built from the four coefficients is what stays.
