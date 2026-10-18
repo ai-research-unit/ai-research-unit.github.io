@@ -74,7 +74,7 @@
 <p>$$
 L : \mathbb{R} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{R}), \qquad L_{q}(b) = q b .
 $$</p>
-<p>For each $q$, the map $b \mapsto qb$ is $\mathbb{R}$-linear because multiplication is bilinear, so $L_{q}$ is an $\mathbb{R}$-linear endomorphism of the one-dimensional real space $\mathbb{R}$. Writing the endomorphism as a matrix in the basis $1$, the same symbol $\mathsf{M}_1(q)$ denotes the matrix acting on the column $(b)$ of $b = b e_t$.</p>
+<p>For each $q$, the map $b \mapsto qb$ is $\mathbb{R}$-linear because multiplication is bilinear, so $L_{q}$ is an $\mathbb{R}$-linear endomorphism of the one-dimensional real space $\mathbb{R}$. Writing the endomorphism as a matrix in the basis $1$, the same symbol $\mathsf{M}_1(q)$ denotes the matrix acting on the column $(b)$ of $b = b\cdot 1$.</p>
 <p><strong>Proposition (the regular matrix is the Cayley matrix).</strong> In the basis $1$,</p>
 <p>$$
 \mathsf{M}_1(q) = [\,q\,] .
@@ -90,7 +90,7 @@ $$</p>
 <p>Hence $\mathsf{M}_1$ is an $\mathbb{R}$-algebra homomorphism and the space $\mathbb{R}$ is a left $\mathbb{R}$-module under it. It is <strong>faithful</strong>: if $\mathsf{M}_1(q) = [0]$ then $q = L_{q}(1) = 0$. It is in fact <strong>bijective</strong> onto the algebra of $1\times1$ real matrices, since every $1\times1$ matrix is $[q]$ for its unique entry $q$; the regular representation of the field is therefore an <strong>isomorphism</strong> onto its own matrix algebra, the strongest form the representation can take, and it is the statement that $\mathbb{R}$ already is the algebra of real scalars.</p>
 <p><strong>Proof.</strong> Both sides are $\mathbb{R}$-linear and are computed on the basis. Associativity gives</p>
 <p>$$
-L_{q_1}\bigl(L_{q_2}(e_t)\bigr) = q_1(q_2 e_t) = (q_1 q_2)e_t = L_{q_1 q_2}(e_t),
+L_{q_1}\bigl(L_{q_2}(1)\bigr) = q_1(q_2\cdot 1) = (q_1 q_2)\cdot 1 = L_{q_1 q_2}(1),
 $$</p>
 <p>so the two matrices agree on a basis; in the $1\times1$ picture this is the identity $[q_1][q_2] = [q_1 q_2]$.</p>
 <p><strong>Example (a concrete check).</strong> For $q_1 = -\tfrac{3}{4}$ and $q_2 = \tfrac{7}{2}$ the product is $q_1 q_2 = -\tfrac{21}{8}$, and</p>
