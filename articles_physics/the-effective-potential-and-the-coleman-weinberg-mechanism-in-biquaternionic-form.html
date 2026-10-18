@@ -110,10 +110,10 @@ $$</p>
 <p>The effective potential is a restriction of the effective action, and the restriction is worth stating precisely because it fixes what the derivatives mean in the framework.</p>
 <p>The effective action is the Legendre transform of the connected generating functional of the central scalar,</p>
 <p>$$
-\Gamma[\tilde{\varphi}] = \langle \tilde{J},\tilde{\varphi}\rangle - W[\tilde{J}], \qquad \tilde{\varphi} = \frac{\delta W}{\delta \tilde{J}} ,
+\Gamma[\tilde\Phi_{\mathrm{cl}}] = \langle \tilde{J},\tilde\Phi_{\mathrm{cl}}\rangle - W[\tilde{J}], \qquad \tilde\Phi_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}} ,
 $$</p>
-<p>and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde{\varphi}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde\varphi$ here rather than $\tilde\phi$, because $\phi$ is the electric potential and $\phi_1,\phi_2$ are the real components of the scalar. The one structural fact imported from it is that a central action has a <strong>central</strong> second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.</p>
-<p>For a <strong>constant</strong> classical field $\tilde{\varphi} = \varphi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by</p>
+<p>and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde\Phi_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a <strong>central</strong> second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.</p>
+<p>For a <strong>constant</strong> classical field $\tilde\Phi_{\mathrm{cl}} = \varphi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by</p>
 <p>$$
 V_\text{eff}(\varphi_c) = -\frac{\Gamma[\varphi_c]}{\text{vol}},
 \qquad
@@ -131,12 +131,12 @@ $$</p>
 <h2 id="the-one-loop-correction">The One-Loop Correction</h2>
 <p>The one-loop term is the Gaussian determinant of the fluctuations about the constant background, and its evaluation is the whole computational content of the effective potential. Expand the action about the background,</p>
 <p>$$
-S[\tilde{\varphi} + \delta\tilde{\Phi}] = S[\tilde{\varphi}] + \frac12\left\langle \delta\tilde{\Phi},\,S''[\tilde{\varphi}]\,\delta\tilde{\Phi}\right\rangle + O(\delta\tilde{\Phi}^3),
+S[\tilde\Phi_{\mathrm{cl}} + \delta\tilde{\Phi}] = S[\tilde\Phi_{\mathrm{cl}}] + \frac12\left\langle \delta\tilde{\Phi},\,S''[\tilde\Phi_{\mathrm{cl}}]\,\delta\tilde{\Phi}\right\rangle + O(\delta\tilde{\Phi}^3),
 $$</p>
 <p>and perform the Gaussian integral over $\delta\tilde{\Phi}$: the result is</p>
 <p>$$
-\Gamma_1[\tilde{\varphi}] = \frac12\,\mathrm{Tr}\log S''[\tilde{\varphi}]
-= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S''[\tilde{\varphi}]),
+\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]
+= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S''[\tilde\Phi_{\mathrm{cl}}]),
 $$</p>
 <p>the proper-time form, with the ultraviolet divergence residing in the small-$s$ end. For the central scalar the second variation is the operator</p>
 <p>$$
@@ -311,15 +311,15 @@ $$</p>
 <td>Complex central scalar</td>
 </tr>
 <tr>
-<td>$\tilde{\varphi} = \delta W/\delta\tilde J$</td>
-<td>Classical field; $\tilde{\varphi}=\varphi_c\,e_t$ for a constant background</td>
+<td>$\tilde\Phi_{\mathrm{cl}} = \delta W/\delta\tilde J$</td>
+<td>Classical field; $\tilde\Phi_{\mathrm{cl}}=\varphi_c\,e_t$ for a constant background</td>
 </tr>
 <tr>
 <td>$\delta\tilde{\Phi}$</td>
-<td>Fluctuation about the background, $\tilde{\varphi}+\delta\tilde{\Phi}$</td>
+<td>Fluctuation about the background, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde{\Phi}$</td>
 </tr>
 <tr>
-<td>$\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$</td>
+<td>$\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = \lvert\varphi\rvert^2$</td>
 <td>Central invariant; the potential's argument</td>
 </tr>
 <tr>
@@ -343,11 +343,11 @@ $$</p>
 <td>Gauge charge (parameter)</td>
 </tr>
 <tr>
-<td>$\Gamma[\tilde{\varphi}] = \langle\tilde{J},\tilde{\varphi}\rangle - W[\tilde{J}]$</td>
+<td>$\Gamma[\tilde\Phi_{\mathrm{cl}}] = \langle\tilde{J},\tilde\Phi_{\mathrm{cl}}\rangle - W[\tilde{J}]$</td>
 <td>Effective action (Legendre transform)</td>
 </tr>
 <tr>
-<td>$\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde{\varphi}]$</td>
+<td>$\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$</td>
 <td>One-loop effective action (determinant)</td>
 </tr>
 <tr>

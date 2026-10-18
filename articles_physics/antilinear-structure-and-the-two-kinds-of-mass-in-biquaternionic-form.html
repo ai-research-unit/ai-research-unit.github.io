@@ -76,18 +76,18 @@ $$</p>
 <p>$$
 \tilde{Q}^{\natural} = (a_0 + ib_0)e_t - (a_1 + ib_1)\vec e_x - (a_2 + ib_2)\vec e_y - (a_3 + ib_3)\vec e_z .
 $$</p>
-<p>It is $\mathbb{C}$-<strong>linear</strong>, because it fixes $i$, and it is an anti-automorphism, $(\tilde{A}\tilde{Q}_1)^{\natural} = \tilde{Q}_1^{\natural}\,\tilde{A}^{\natural}$.</p>
+<p>It is $\mathbb{C}$-<strong>linear</strong>, because it fixes $i$, and it is an anti-automorphism, $(\tilde{Q}_2\tilde{Q}_1)^{\natural} = \tilde{Q}_1^{\natural}\,\tilde{Q}_2^{\natural}$.</p>
 <p><strong>Complex conjugation</strong> negates the scalar imaginary and fixes the units:</p>
 <p>$$
 \bar{\tilde{Q}} = (a_0 - ib_0)e_t + (a_1 - ib_1)\vec e_x + (a_2 - ib_2)\vec e_y + (a_3 - ib_3)\vec e_z .
 $$</p>
-<p>It is $\mathbb{C}$-<strong>antilinear</strong>, $\overline{(\alpha\tilde{A})} = \bar{\alpha}\,\bar{\tilde{A}}$, and it is an automorphism, $\overline{(\tilde{A}\tilde{Q}_1)} = \bar{\tilde{A}}\,\bar{\tilde{Q}_1}$.</p>
+<p>It is $\mathbb{C}$-<strong>antilinear</strong>, $\overline{(\alpha\tilde{Q}_2)} = \bar{\alpha}\,\bar{\tilde{Q}_2}$, and it is an automorphism, $\overline{(\tilde{Q}_2\tilde{Q}_1)} = \bar{\tilde{Q}_2}\,\bar{\tilde{Q}_1}$.</p>
 <p>Composing them gives the two Hermitian conjugations of the series. Because one factor is linear and the other antilinear, each composite is antilinear:</p>
 <p>$$
 \tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = \big(\bar{\tilde{Q}}\big)^{\natural} , \qquad
 \tilde{Q}^\flat = -\tilde{Q}^{*} .
 $$</p>
-<p>Both are anti-automorphisms; the second carries a sign, $(\tilde{A}\tilde{Q}_1)^\flat = -\tilde{Q}_1^\flat\tilde{A}^\flat$, and that sign is its only departure from an ordinary anti-automorphism. The two differ by the central sign alone, and that sign is what moves the fixed space from one sector to the other.</p>
+<p>Both are anti-automorphisms; the second carries a sign, $(\tilde{Q}_2\tilde{Q}_1)^\flat = -\tilde{Q}_1^\flat\tilde{Q}_2^\flat$, and that sign is its only departure from an ordinary anti-automorphism. The two differ by the central sign alone, and that sign is what moves the fixed space from one sector to the other.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -450,7 +450,7 @@ $$</p>
 <h2 id="what-the-antilinear-structure-is-for">What the Antilinear Structure Is For</h2>
 <p>The algebra's real structure is retained, and the companion articles use the antilinear structure in four ways, none of which is a Dirac mass.</p>
 <p><strong>The $\mathbb{M}_\pm$ split itself.</strong> The material and informational sectors are the fixed spaces of $\flat$ and ${}^{*}$, and the framework's identification of $\mathbb{M}_-$ with material space is the statement that the field is anti-Hermitian. The sign convention by which $\flat$ acts as $+$ on $\mathbb{M}_-$ and $-$ on $\mathbb{M}_+$ <em>is</em> the convention that makes $\mathbb{M}_-$ the material sector; the two are one convention seen twice.</p>
-<p><strong>Bilinear pairings and the trace.</strong> The invariant pairings of the series are built on $\flat$, and their order-reversing-with-a-twist character, $(\tilde{A}\tilde{Q}_1)^\flat = -\tilde{Q}_1^\flat\tilde{A}^\flat$, is what makes the trace a scalar and not a matrix.</p>
+<p><strong>Bilinear pairings and the trace.</strong> The invariant pairings of the series are built on $\flat$, and their order-reversing-with-a-twist character, $(\tilde{Q}_2\tilde{Q}_1)^\flat = -\tilde{Q}_1^\flat\tilde{Q}_2^\flat$, is what makes the trace a scalar and not a matrix.</p>
 <p><strong>Kramers degeneracy and antiunitary symmetry.</strong> An antiunitary operator squaring to $-1$ forces every level to be at least doubly degenerate. The theorem is available to the antilinear maps alone — no linear involution yields the conclusion, whatever its spectrum. The framework's real structure is itself an involution, $\flat^2 = +1$, so it is not an operator of that kind: the degeneracy belongs to the antilinear symmetries built on the structure, and the theorem is the sharpest reason the distinction between an antilinear symmetry and a linear one has content.</p>
 <p><strong>The discrete symmetries.</strong> Charge conjugation and time reversal are antilinear, and the CPT companion establishes that the antilinearity is forced — a <em>linear</em> time reversal is not a symmetry of the Dirac equation. The internal matrices of $C$, $P$ and $T$ are Clifford elements, and their grades decide which chirality each carries to: $C$ and $P$ are odd and exchange the chiral halves, $T$ is even and preserves them, so $CPT$ is even and preserves them. The grade governs the chirality; the linearity governs the spacetime parity, since an antilinear map multiplies the induced determinant by $-1$ — the point recorded in <em>The Reflection and the Rotation in Biquaternionic Form</em>.</p>
 <p>In every one of these uses the coupling pairs the field with its conjugate, and in every one of them the pairing is a <strong>constraint or a symmetry</strong>, not the mass of the Dirac equation. That is the pattern the retired equation violated, and stating it positively is the content of this article: an antilinear pairing is not thereby a mass, and a mass is not thereby antilinear.</p>

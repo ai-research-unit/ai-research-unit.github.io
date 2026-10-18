@@ -112,7 +112,7 @@ $$
 $$</p>
 <p>The result says two things. It says that the d'Alembertian is the <strong>biquaternion norm of the gradient</strong>, $\Box = \langle\tilde{\nabla}\rangle_{\natural}$, evaluated on the operator rather than on a fixed biquaternion: the composition that defines $\langle\cdot\rangle_{\natural}$ is exactly the composition of the gradient with its reversal. And it says that $\Box$ is a <strong>central scalar</strong> as an operator — a multiple of the identity of the algebra — so that it commutes with every biquaternion,
 $$
-\Box(\tilde{A}\tilde{\Phi}) = \tilde{A}\,(\Box\tilde{\Phi}), \qquad \tilde{A} \in \mathbb{B},\ \tilde{\Phi}\ \text{any field}.
+\Box(\tilde{Q}_1\tilde{\Phi}) = \tilde{Q}_1\,(\Box\tilde{\Phi}), \qquad \tilde{Q}_1 \in \mathbb{B},\ \tilde{\Phi}\ \text{any field}.
 $$
 Every later statement about the scalar Green's function follows from this centrality, and every departure from it will be a statement about the first-order operator instead.</p>
 <p>The verification of the composition was made on a random real symbol vector $s$, for which the two ordered sums $\sum_{\mu\nu} e_\mu e_\nu^{*} s_\mu s_\nu$ and $\sum_{\mu\nu} e_\mu^{*} e_\nu s_\mu s_\nu$ each reduce to $(s_0^2 + s_1^2 + s_2^2 + s_3^2)e_t$ exactly, in integer and rational arithmetic with no floating-point tolerance. It is the algebraic form of the statement that no bivector survives the symmetrisation.</p>
@@ -136,13 +136,13 @@ whose symbol reproduces $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The companion
 <h3 id="self-adjointness">Self-adjointness</h3>
 <p>The adjoint of the gradient is computed with the Hermitian pairing on fields,
 $$
-\langle \tilde{F}, \tilde{G}\rangle = \int \mathrm{Tr}\!\left(\tilde{F}^{*} \tilde{G}\right) d^4x ,
+\langle \tilde{F}, \tilde Q\rangle = \int \mathrm{Tr}\!\left(\tilde{F}^{*} \tilde Q\right) d^4x ,
 $$
 the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial Q_\mu\,\tilde{F}\bigr)^\dagger = \partial/\partial Q_\mu\,\tilde{F}^{*}$ for the real differential operators,
 $$
-\langle \tilde{F}, \tilde{\nabla}\tilde{G}\rangle
-= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, e_\mu\,\partial/\partial Q_\mu\,\tilde{G}\right) d^4x
-= -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial Q_\mu \tilde{F}^{*}\bigr) e_\mu \tilde{G}\right) d^4x .
+\langle \tilde{F}, \tilde{\nabla}\tilde Q\rangle
+= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, e_\mu\,\partial/\partial Q_\mu\,\tilde Q\right) d^4x
+= -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial Q_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4x .
 $$
 The algebraic identity
 $$
@@ -152,7 +152,7 @@ $$
 $$
 uses only the antilinearity of ${}^{*}$ and $(e_\mu^{*})^{*} = e_\mu$; it was verified on random complex biquaternion coefficients. Substituting,
 $$
-\langle \tilde{F}, \tilde{\nabla}\tilde{G}\rangle = -\langle \tilde{\nabla}^{\natural}\tilde{F}, \tilde{G}\rangle ,
+\langle \tilde{F}, \tilde{\nabla}\tilde Q\rangle = -\langle \tilde{\nabla}^{\natural}\tilde{F}, \tilde Q\rangle ,
 \qquad\text{that is,}\qquad
 \tilde{\nabla}^{*} = -\,\tilde{\nabla}^{\natural} .
 $$
@@ -202,7 +202,7 @@ G_{\mathrm{inv}}(\tilde{R}) = \frac{1}{4\pi^2\rho^2} ,
 $$
 The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4x$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\vec k)$ conjugate to the $ict$ coordinate, $\Box \to -k_4^2 - \vec k^2$ and
 $$
-\tilde{G}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2} ,
+G_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2} ,
 $$
 the four-dimensional Coulomb kernel.</p>
 <p>Three properties of $G_{\mathrm{inv}}$ are worth naming. It is <strong>real and scalar</strong>: it is a multiple of $e_t$, hence central, and it commutes with every biquaternion. It is <strong>invariant</strong>: it depends on $\tilde{R}$ only through $\langle\tilde{R}\rangle_{\natural}$, so it is unchanged by the Lorentz action $\tilde{R} \mapsto \tilde{U}\tilde{R}\tilde{U}^{*}$, which preserves the biquaternion norm. And it is <strong>singular on the light cone</strong>: $\rho^2$ vanishes exactly on the zero-divisor cone, and the kernel is not defined there as a function. As the Euclidean solution it is the one selected by decay at large $\rho$ with no reference to time; the causal solutions below differ from it by solutions of the homogeneous equation, and the difference is the whole of the physical content of the choice.</p>
@@ -262,7 +262,7 @@ G^{(\mu)}_{\mathrm{inv}}(\tilde{R}) = \frac{\mu}{4\pi^2\rho}\,K_1(\mu\rho) ,
 $$
 with $K_1$ the modified Bessel function; its Fourier transform is
 $$
-\tilde{G}^{(\mu)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2 + \mu^2} .
+G^{(\mu)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2 + \mu^2} .
 $$
 The short-distance behaviour is the massless kernel, $G^{(\mu)}_{\mathrm{inv}} \to 1/(4\pi^2\rho^2)$ as $\mu\rho \to 0$, and the large-distance behaviour is exponentially damped, $G^{(\mu)}_{\mathrm{inv}} \sim \frac{\sqrt{\mu}}{2(2\pi)^{3/2}\rho^{3/2}}\exp(-\mu\rho)$: a mass screens. The retarded and advanced kernels acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions; the closed form of the inside-cone part is the standard one and is cited rather than re-derived. The massless limit returns the delta on the cone, and the biquaternion content of the massive case is simply that the mass term is central, hence commutes with the algebra, and shifts the symbol by a constant without changing the sector structure.</p>
 <p>The mass shell is the symbol condition
@@ -296,8 +296,8 @@ $$
 so that $\tilde{\nabla}\tilde{G}_1 = -\delta$ is preserved with the rotated gradient. This is what makes the inverse of the Dirac operator a covariant object.</p>
 <p><strong>The kernel does not commute.</strong> Left multiplication by $\tilde{G}_1$ does not commute with the algebra, because $\tilde{G}_1$ is not central,
 $$
-\tilde{A}\,\tilde{G}_1 \neq \tilde{G}_1\tilde{A}
-\qquad \text{for generic } \tilde{A} \in \mathbb{B} ,
+\tilde{Q}_1\,\tilde{G}_1 \neq \tilde{G}_1\tilde{Q}_1
+\qquad \text{for generic } \tilde{Q}_1 \in \mathbb{B} ,
 $$
 in contrast with $G_\Box$. The scalar kernel may be moved through any algebraic factor; the first-order kernel may not, and its order relative to a field is part of the equation.</p>
 <p><strong>The massless first-order equation is the conjugation-invariant one.</strong> The homogeneous first-order equation $\tilde{\nabla}\tilde{\Phi} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $\tilde{\nabla}^{\natural}$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion <em>The Dirac Equation in Biquaternionic Form</em> and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.</p>
@@ -431,7 +431,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 </tr>
 <tr>
 <td>$\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, $\Box^{*} = \Box$</td>
-<td>Adjoints under $\langle\tilde{F},\tilde{G}\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde{G})$</td>
+<td>Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$</td>
 </tr>
 <tr>
 <td>$\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_1^\flat = \tilde{G}_1$</td>

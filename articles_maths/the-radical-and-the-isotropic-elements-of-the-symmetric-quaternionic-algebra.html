@@ -67,14 +67,14 @@ $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of <em>Introductio
 <h2 id="the-product-as-a-pairing-with-values-in-the-centre">The Product as a Pairing with Values in the Centre</h2>
 <p>Because the operation is $\mathbb{C}$-bilinear, it is the same thing as a family of linear maps, and because
 its value is central it is the same thing as a bilinear form.</p>
-<p><strong>Definition.</strong> For $\tilde A\in\mathbb{B}$ the <strong>left multiplication by $\tilde A$</strong> is the
+<p><strong>Definition.</strong> For $\tilde Q_4\in\mathbb{B}$ the <strong>left multiplication by $\tilde Q_4$</strong> is the
 $\mathbb{C}$-linear map</p>
 <p>$$
-L^{\star}_{\tilde A}: \mathbb{B}\longrightarrow\mathbb{C}e_t,\qquad
-L^{\star}_{\tilde A}\tilde Q_1 = \tilde A\star\tilde Q_1 = \langle\tilde A,\tilde Q_1\rangle_{\natural}\,e_t .
+L^{\star}_{\tilde Q_4}: \mathbb{B}\longrightarrow\mathbb{C}e_t,\qquad
+L^{\star}_{\tilde Q_4}\tilde Q_1 = \tilde Q_4\star\tilde Q_1 = \langle\tilde Q_4,\tilde Q_1\rangle_{\natural}\,e_t .
 $$</p>
 <p>Because the product is commutative the right multiplication coincides with it,
-$R^{\star}_{\tilde A}=L^{\star}_{\tilde A}$; the operator is examined in <em>The Multiplication Operators of the
+$R^{\star}_{\tilde Q_4}=L^{\star}_{\tilde Q_4}$; the operator is examined in <em>The Multiplication Operators of the
 Symmetric Quaternionic Algebra</em>.</p>
 <p><strong>Proposition (the operation is a form read on the central line).</strong> The operation is determined by $\langle\cdot\rangle_{\natural}$ and
 $\langle\cdot\rangle_{\natural}$ is recovered from it: for every pair,</p>
@@ -95,22 +95,22 @@ the two readings apart: the diagonal $\langle\tilde Q_1\rangle_{\natural}$ is mu
 <p><strong>Definition.</strong> The <strong>radical</strong> or <strong>two-sided annihilator</strong> of $\star$ is the set of elements annihilated by
 every element on both sides,</p>
 <p>$$
-\operatorname{Rad}(\star) = \{\tilde A\in\mathbb{B}: \tilde A\star\tilde Q_1=0 \text{ and }
-\tilde Q_1\star\tilde A=0 \text{ for every } \tilde Q_1\in\mathbb{B}\}
-= \{\tilde A\in\mathbb{B}: L^{\star}_{\tilde A}=0\}.
+\operatorname{Rad}(\star) = \{\tilde Q_4\in\mathbb{B}: \tilde Q_4\star\tilde Q_1=0 \text{ and }
+\tilde Q_1\star\tilde Q_4=0 \text{ for every } \tilde Q_1\in\mathbb{B}\}
+= \{\tilde Q_4\in\mathbb{B}: L^{\star}_{\tilde Q_4}=0\}.
 $$</p>
 <p>Because the operation is commutative the two-sided and the one-sided definitions agree, and the radical is the
-common kernel of the left multiplications, $\bigcap_{\tilde Q_1}\ker L^{\star}_{\tilde Q_1}=\{\tilde A: \langle\tilde A,\tilde Q_1\rangle_{\natural}=0 \text{ for all } \tilde Q_1\}$.</p>
+common kernel of the left multiplications, $\bigcap_{\tilde Q_1}\ker L^{\star}_{\tilde Q_1}=\{\tilde Q_4: \langle\tilde Q_4,\tilde Q_1\rangle_{\natural}=0 \text{ for all } \tilde Q_1\}$.</p>
 <p><strong>Theorem (the radical is trivial).</strong> $\operatorname{Rad}(\star)=\{0\}$: the only element annihilated by the
 whole algebra is $0$.</p>
 <p><em>Proof.</em> $\langle\cdot\rangle_{\natural}$ is the standard symmetric form of $\mathbb{C}^4$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, whose Gram
 matrix is $I_4$; a form with invertible Gram matrix has no nonzero element paired to zero with the whole
-space. Concretely $\tilde A\star e_t=A_te_t$ and $\tilde A\star \vec e_\mu=A_\mu e_t$ for $\mu\in\{x,y,z\}$, so
-$\tilde A\star\tilde Q_1=0$ for all $\tilde Q_1$ forces $A_t=A_x=A_y=A_z=0$.</p>
+space. Concretely $\tilde Q_4\star e_t=Q_{4t}e_t$ and $\tilde Q_4\star \vec e_\mu=Q_{4\mu} e_t$ for $\mu\in\{x,y,z\}$, so
+$\tilde Q_4\star\tilde Q_1=0$ for all $\tilde Q_1$ forces $Q_{4t}=Q_{4x}=Q_{4y}=Q_{4z}=0$.</p>
 <p><strong>Corollary (the operation is not the zero operation, and it is non-degenerate as a form).</strong> The operation is
 nonzero — $\langle e_t,e_t\rangle_{\natural}=1$ — and the form $\langle\cdot\rangle_{\natural}$ is non-degenerate, of rank $4$ over $\mathbb{C}$ and of Gram
 matrix $I_4$ in the basis. The image of each nonzero left multiplication is the whole central line
-$\mathbb{C}e_t$: for $\tilde A\ne0$ some coordinate $A_\mu\ne0$, so $L^{\star}_{\tilde A}e_\mu=A_\mu e_t\ne0$ and no nonzero element acts by zero.</p>
+$\mathbb{C}e_t$: for $\tilde Q_4\ne0$ some coordinate $Q_{4\mu}\ne0$, so $L^{\star}_{\tilde Q_4}e_\mu=Q_{4\mu} e_t\ne0$ and no nonzero element acts by zero.</p>
 <p><strong>Remark (a trivial radical and a poor element theory are not the same fact).</strong> A non-degenerate pairing is
 what one expects of a form, and it does not prevent the operation from being element-theoretically poor: the
 radical is trivial, yet the operation has no unit, its idempotents reduce to $0$ and $e_t$, and its
@@ -234,8 +234,8 @@ contain no nonzero isotropic element.</p>
 <td>the norm form, the diagonal of $\langle\cdot\rangle_{\natural}$</td>
 </tr>
 <tr>
-<td>$L^{\star}_{\tilde A}$</td>
-<td>the left (and right) multiplication, $L^{\star}_{\tilde A}\tilde Q_1=\langle\tilde A,\tilde Q_1\rangle_{\natural}e_t$</td>
+<td>$L^{\star}_{\tilde Q_4}$</td>
+<td>the left (and right) multiplication, $L^{\star}_{\tilde Q_4}\tilde Q_1=\langle\tilde Q_4,\tilde Q_1\rangle_{\natural}e_t$</td>
 </tr>
 <tr>
 <td>$\operatorname{Rad}(\star)$</td>
@@ -268,7 +268,7 @@ contain no nonzero isotropic element.</p>
 <li><em>Norm and Invertibility in the General Quaternionic Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md</code>) and <em>Zero Divisors of the Biquaternion Algebra</em>, for the norm, its polarisation and the isotropic cone.</li>
 <li><em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md</code>), for the idempotents of the algebra and their contrast with the idempotents of $\mathrm{SQA}$.</li>
 <li><em>Remarkable Subspaces under the Symmetric Quaternionic Algebra</em> (<code>articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra.md</code>), for the isotropic elements on each subspace.</li>
-<li><em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md</code>), for the operators $L^{\star}_{\tilde A}$ in full.</li>
+<li><em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md</code>), for the operators $L^{\star}_{\tilde Q_4}$ in full.</li>
 </ul>
       </div>
     </main>

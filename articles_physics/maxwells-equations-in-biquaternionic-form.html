@@ -190,9 +190,9 @@ $$</p>
 $$</p>
 <p>These are equivalent to the four standard Maxwell equations. The integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde{J}) = 0$ is automatically satisfied when the four-current is expressed in terms of the potentials via $\sqrt{\mu}\,\tilde{J} = -\tilde{\nabla} \tilde{F}$, and it is the consistency condition that must be imposed when the source is specified independently.</p>
 <h2 id="the-retarded-greens-function">The Retarded Green's Function</h2>
-<p>The biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is a linear first-order equation for the field strength $\tilde{F}$ in terms of the four-current $\tilde{J}$. Its solution can be written as a convolution with a <strong>Green's function</strong> $\tilde{G}(\tilde{Q})$, which is the solution of the equation with a point source:</p>
+<p>The biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is a linear first-order equation for the field strength $\tilde{F}$ in terms of the four-current $\tilde{J}$. Its solution can be written as a convolution with a <strong>Green's function</strong> $\tilde G_1(\tilde Q)$, which is the solution of the equation with a point source:</p>
 <p>$$
-\tilde{\nabla} \tilde{G}(\tilde{Q}) = \delta(\tilde{Q}) e_t.
+\tilde{\nabla} \tilde G_1(\tilde Q) = \delta(\tilde{Q}) e_t.
 $$</p>
 <p>The physically relevant Green's function is the <strong>retarded</strong> one, which vanishes for $t < 0$ and has support on the future light cone. It is the first-order kernel of the companion article <em>The Biquaternion D'Alembertian and Its Green's Functions</em>,</p>
 <p>$$
@@ -495,7 +495,7 @@ D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial
 \qquad
 k=\frac{\omega}{c}=\omega\sqrt{\epsilon\mu},
 $$</p>
-<p>whose scalar part is the constraint $\mathrm{div}\,\vec F=0$. The field-strength biquaternion is therefore left regular for the <strong>shifted</strong> three-dimensional Cauchy–Riemann operator $D_3-k$ of <em>Quaternion Regular Functions</em>: four-dimensional regularity becomes Helmholtz–Dirac regularity in three dimensions, with the shift supplied by the frequency. The companion combination $\tilde{G}=i\sqrt{\epsilon}\vec E+\sqrt{\mu}\vec H$ is annihilated by $D_3+k$ instead, and the dual field strength $-i\tilde F$ satisfies the same equation as $\tilde F$, so the electromagnetic field splits into two decoupled first-order equations — the diagonalization again, read from the four-dimensional side. The companion article works this out for a chiral medium, where the two shifts separate and become the two wavenumbers.</p>
+<p>whose scalar part is the constraint $\mathrm{div}\,\vec F=0$. The field-strength biquaternion is therefore left regular for the <strong>shifted</strong> three-dimensional Cauchy–Riemann operator $D_3-k$ of <em>Quaternion Regular Functions</em>: four-dimensional regularity becomes Helmholtz–Dirac regularity in three dimensions, with the shift supplied by the frequency. The companion combination $\vec G=i\sqrt{\epsilon}\vec E+\sqrt{\mu}\vec H$ is annihilated by $D_3+k$ instead, and the dual field strength $-i\tilde F$ satisfies the same equation as $\tilde F$, so the electromagnetic field splits into two decoupled first-order equations — the diagonalization again, read from the four-dimensional side. The companion article works this out for a chiral medium, where the two shifts separate and become the two wavenumbers.</p>
 <h2 id="the-internal-freedom-of-the-vacuum-field">The Internal Freedom of the Vacuum Field</h2>
 <p>The vacuum equation $\tilde{\nabla}\tilde{F}=0$ is Lorentz covariant: a change of frame acts on $\tilde{F}$ on the left, and left multiplication by the rotor is what the covariance means. Lanczos recorded, in the fourth chapter of the 1919 thesis, a <strong>second</strong> freedom, on the right, which the same equation possesses and which is not a change of frame. His equation (4.8) states that with $\tilde{F}$ the function $\tilde{F}\tilde{q}_0$ is also a solution, for any <strong>constant</strong> quaternion $\tilde{q}_0$ of unit norm:</p>
 <p>$$

@@ -51,7 +51,7 @@
       <div class="article-body">
         <h1 id="one-sided-operators-on-the-general-plain-sesqualgebra"><strong>One-Sided Operators on the General Plain Sesqualgebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite general plain sesquilinear form $(\tilde T,\tilde{Q}_1)=\mathrm{Sc}(\tilde{T}^{*}\tilde{Q}_1)$, whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is the identity. For $\tilde Q_3\in\mathbb{B}$ define the <strong>left</strong> and the <strong>right multiplication</strong></p>
+<p>Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite general plain sesquilinear form $(\tilde Q,\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$, whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is the identity. For $\tilde Q_3\in\mathbb{B}$ define the <strong>left</strong> and the <strong>right multiplication</strong></p>
 <p>$$
 L_{\tilde Q_3}(\tilde{Q}_1) = \tilde Q_3\,\tilde{Q}_1 ,\qquad R_{\tilde Q_4}(\tilde{Q}_1) = \tilde{Q}_1\,\tilde Q_4 .
 $$</p>
@@ -69,7 +69,7 @@ L_{\alpha \tilde Q_5+\beta \tilde Q_6} = \alpha L_{\tilde Q_5} + \beta L_{\tilde
 $$</p>
 <p>and $L_{\tilde Q_3}=0$ or $R_{\tilde Q_4}=0$ implies $\tilde Q_3=0$ or $\tilde Q_4=0$.</p>
 <p><em>Proof.</em> The two displays are the distributivity of the algebra, and the injectivity follows by evaluating on $e_t$.</p>
-<p><strong>Remark (the contrast with the two-sided case).</strong> The parameter enters <strong>once</strong>, so the assignment is linear and additive; in the two-sided case it enters twice, $\Theta_{\alpha \tilde T+\beta \tilde Q_2}(\tilde{Q}_1)=\alpha\alpha^{*}\Theta_{\tilde T}(\tilde{Q}_1)+\beta\beta^{*}\Theta_{\tilde Q_2}(\tilde{Q}_1)+(\alpha\beta^{*}\tilde T\tilde{Q}_1 \bar{\tilde Q_2}+\beta\alpha^{*}\tilde Q_2\tilde{Q}_1\tilde{T}^{*})$, which is the failure of additivity. Every difference between this article and its companion traces back to this one fact.</p>
+<p><strong>Remark (the contrast with the two-sided case).</strong> The parameter enters <strong>once</strong>, so the assignment is linear and additive; in the two-sided case it enters twice, $\Theta_{\alpha \tilde Q+\beta \tilde Q_2}(\tilde{Q}_1)=\alpha\alpha^{*}\Theta_{\tilde Q}(\tilde{Q}_1)+\beta\beta^{*}\Theta_{\tilde Q_2}(\tilde{Q}_1)+(\alpha\beta^{*}\tilde Q\tilde{Q}_1 \bar{\tilde Q_2}+\beta\alpha^{*}\tilde Q_2\tilde{Q}_1\tilde{Q}^{*})$, which is the failure of additivity. Every difference between this article and its companion traces back to this one fact.</p>
 <h2 id="the-composition-laws">The Composition Laws</h2>
 <p><strong>Theorem (the four composition laws).</strong> For all $\tilde Q_3,\tilde Q_4\in\mathbb{B}$,</p>
 <p>$$
@@ -140,7 +140,7 @@ $$</p>
 L_{\tilde Q_3} = L_{i\vec e_y} + L_{\vec e_x},
 $$</p>
 <p>and is therefore of neither of the two types, in agreement with the theorem: the parameter is in neither sector. The example records where the type is decided: by the parameter, through the sector it lies in, and never by the argument.</p>
-<p><strong>A mixed operator that is not two-sided.</strong> The operator $\tilde{Q}_1\mapsto \vec e_x\tilde{Q}_1\vec e_y=L_{\vec e_x}R_{\vec e_y}$ is not of the form $\Theta_{\tilde T}$ for any $\tilde T$. Indeed a two-sided operator satisfies $\Theta_{\tilde T}(e_t)=\tilde T\tilde{T}^{*}\in\mathbb{M}_+$, whereas $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_x\vec e_y=\vec e_z$, which is anti-Hermitian; so no parameter $\tilde T$ reproduces the operator. In general $L_{\tilde Q_3}R_{\tilde Q_4}$ is two-sided only if $\tilde Q_3\tilde Q_4\in\mathbb{M}_+$, and when $\tilde Q_4=\lambda \tilde Q_3^{*}$ with $\lambda=\lvert\mu\rvert^{2}\geq0$ one has $L_{\tilde Q_3}R_{\tilde Q_4}=\Theta_{\mu \tilde Q_3}$. Its adjoint is $L_{\vec e_x^{\dagger}}R_{\vec e_y^{\dagger}}=L_{-\vec e_x}R_{-\vec e_y}=L_{\vec e_x}R_{\vec e_y}$, so this particular mixed operator is self-adjoint, a phenomenon that the two-sided family does not show.</p>
+<p><strong>A mixed operator that is not two-sided.</strong> The operator $\tilde{Q}_1\mapsto \vec e_x\tilde{Q}_1\vec e_y=L_{\vec e_x}R_{\vec e_y}$ is not of the form $\Theta_{\tilde Q}$ for any $\tilde Q$. Indeed a two-sided operator satisfies $\Theta_{\tilde Q}(e_t)=\tilde Q\tilde{Q}^{*}\in\mathbb{M}_+$, whereas $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_x\vec e_y=\vec e_z$, which is anti-Hermitian; so no parameter $\tilde Q$ reproduces the operator. In general $L_{\tilde Q_3}R_{\tilde Q_4}$ is two-sided only if $\tilde Q_3\tilde Q_4\in\mathbb{M}_+$, and when $\tilde Q_4=\lambda \tilde Q_3^{*}$ with $\lambda=\lvert\mu\rvert^{2}\geq0$ one has $L_{\tilde Q_3}R_{\tilde Q_4}=\Theta_{\mu \tilde Q_3}$. Its adjoint is $L_{\vec e_x^{\dagger}}R_{\vec e_y^{\dagger}}=L_{-\vec e_x}R_{-\vec e_y}=L_{\vec e_x}R_{\vec e_y}$, so this particular mixed operator is self-adjoint, a phenomenon that the two-sided family does not show.</p>
 <p><strong>A check of the composition and the adjoint.</strong> For random $\tilde Q_3,\tilde Q_4$ and random $\tilde{Q}_1,\tilde Q_2$, the identities $L_{\tilde Q_3}L_{\tilde Q_4}=L_{\tilde Q_3\tilde Q_4}$, $L_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4}L_{\tilde Q_3}$ and $(L_{\tilde Q_3}\tilde{Q}_1,\tilde Q_2)=(\tilde{Q}_1,L_{\tilde Q_3^{*}}\tilde Q_2)$ were verified to machine precision, as were the four type criteria over the four subspaces.</p>
 <h2 id="summary">Summary</h2>
 <p>The left and the right multiplications $L_{\tilde Q_3}(\tilde{Q}_1)=\tilde Q_3\tilde{Q}_1$ and $R_{\tilde Q_4}(\tilde{Q}_1)=\tilde{Q}_1\tilde Q_4$ are the one-sided operators of the biquaternion algebra, and the two-sided operator of the companion article is their product $\Theta_{\tilde Q_3}=L_{\tilde Q_3}R_{\tilde Q_3^{*}}$. The parameter enters <strong>linearly</strong>, and everything follows: the assignment is additive and injective, the composition laws are $L_{\tilde Q_3}L_{\tilde Q_4}=L_{\tilde Q_3\tilde Q_4}$, $R_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4\tilde Q_3}$ and $L_{\tilde Q_3}R_{\tilde Q_4}=R_{\tilde Q_4}L_{\tilde Q_3}$, the adjoints are $(L_{\tilde Q_3})^{*}=L_{\tilde Q_3^{*}}$ and $(R_{\tilde Q_4})^{*}=R_{\tilde Q_4^{*}}$, so that $L$ is a faithful $*$-representation of the algebra on the Hilbert space of the scalar form, of complex dimension four, that is two copies of the standard module. The <strong>type criteria</strong> are the ones of the involution lattice: $L_{\tilde Q_3}$ is self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, unitary and congruent exactly on the slice $U$, and invertible exactly on the group of units; the Lie algebra of the unitary one-sided operators is $L_{\mathbb{M}_-}$ and the exponential stays inside the family, $\exp(L_{\tilde Q_3})=L_{\exp(\tilde Q_3)}$. The <strong>double centraliser theorem</strong> holds in two lines: the commutant of the left multiplications is the right multiplications and conversely, the bicommutant is the scalars, and the mixed operators $L_{\tilde Q_3}R_{\tilde Q_4}$ with two independent parameters are the ones that are not two-sided. Finally the scalar form is characterised among the positive definite general plain sesquilinear forms by the property that the adjoint of the action is the action of the adjoint element, which is the statement that the algebra is a Hermitian Clifford module over itself. The pair of articles isolates in this way what the doubling of the parameter in the sandwich costs: the additivity, the separation of the two sectors, the existence of skew operators, and the injectivity of the assignment.</p>
@@ -162,7 +162,7 @@ $$</p>
 <td>Hermitian conjugation; $\mathbb{M}_+$ fixed, $\mathbb{M}_-$ anti-fixed</td>
 </tr>
 <tr>
-<td>$(\tilde T,\tilde{Q}_1)=\mathrm{Sc}(\tilde{T}^{*}\tilde{Q}_1)$</td>
+<td>$(\tilde Q,\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$</td>
 <td>The scalar form; Gram matrix the identity</td>
 </tr>
 <tr>
@@ -190,7 +190,7 @@ $$</p>
 <td>The adjoints; $L$ is a $*$-representation</td>
 </tr>
 <tr>
-<td>$U=\{\tilde{T}^{*}\tilde T=e_t\}=\mathrm{U}(2)$</td>
+<td>$U=\{\tilde{Q}^{*}\tilde Q=e_t\}=\mathrm{U}(2)$</td>
 <td>The unitary slice; the automorphisms and the unitary operators</td>
 </tr>
 <tr>

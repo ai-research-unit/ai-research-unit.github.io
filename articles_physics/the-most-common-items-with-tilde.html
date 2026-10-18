@@ -78,7 +78,7 @@
 <td>$Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $Q_\mu\in\mathbb{C}$</td>
 <td>$\mathbb{B}$</td>
 <td>The only generic glyph; a second and a third are $\tilde Q_1,\tilde Q_2$</td>
-<td>673</td>
+<td>677</td>
 </tr>
 <tr>
 <td>$\tilde q$</td>
@@ -86,7 +86,7 @@
 <td>$q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $q_\mu\in\mathbb{R}$</td>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
 <td>The only generic glyph of that layer; a second is $\tilde q_1$</td>
-<td>198</td>
+<td>199</td>
 </tr>
 <tr>
 <td>$\tilde\Pi$</td>
@@ -142,7 +142,7 @@
 <td>$U_te_t+\vec U$, with $\mathrm{Norm}(\tilde U)=e_t$; $\tilde U^{*}\tilde U=e_t$ in the unitary case</td>
 <td>$\mathbb{B}$</td>
 <td>The rotor; the unitary group is $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$. The conjugating element of an inner automorphism, normalised by the central square root of its norm, is this glyph</td>
-<td>200</td>
+<td>205</td>
 </tr>
 <tr>
 <td>$\tilde u$</td>
@@ -166,15 +166,15 @@
 <td>$\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$</td>
 <td>$\mathbb{H}_{\mathbb{B}}$, norm one</td>
 <td>The rotor of the polar word and of every rotation here, the rotating frame included; half-angle $\theta/2$, axis $\vec u_{\mathrm r}$; unitary under every product</td>
-<td>24</td>
+<td>20</td>
 </tr>
 <tr>
 <td>$\tilde u_H$</td>
 <td>Evolution rotor</td>
-<td>$\exp(-i\tilde H_Rt/\hbar)=\exp(-\frac{\tilde\Omega t}{2}\vec u_R)$</td>
+<td>$\exp(-i\tilde H_Rt/\hbar)=\exp(-\frac{\Omega t}{2}\vec u_R)$</td>
 <td>$\mathbb{H}_{\mathbb{B}}$, norm one</td>
-<td>The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\tilde\Omega t$</td>
-<td>3</td>
+<td>The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\Omega t$</td>
+<td>1</td>
 </tr>
 </tbody>
 </table></div>
@@ -205,7 +205,7 @@
 <td>$\tilde D=\tilde\nabla+i\kappa\mathcal A$</td>
 <td>Operator, $\mathbb{B}$-valued</td>
 <td>The gauge-principle, minimal-coupling, Yang–Mills, instanton and Stueckelberg articles. Its $e_t$ coefficient is $\partial/\partial Q_t+i\kappa\mathcal A_t$, so the operator is read with its scalar part; on the curvature it acts as $\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\mathcal A,\tilde F]$, the Yang–Mills current. The component $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal A_\mu$ carries no tilde</td>
-<td>21</td>
+<td>18</td>
 </tr>
 </tbody>
 </table></div>
@@ -229,7 +229,7 @@
 <td>$i(E/c)e_t+\vec p$</td>
 <td>$\mathbb{M}_-$</td>
 <td>$\tilde P=m\tilde V$; the letter is never generic</td>
-<td>238</td>
+<td>235</td>
 </tr>
 <tr>
 <td>$\tilde p$</td>
@@ -277,15 +277,23 @@
 <td>$\tilde A=i\phi/c\,e_t+\vec A\in\mathbb{M}_-$</td>
 <td>$\mathbb{M}_-$</td>
 <td>The potential of the minimal-coupling, hydrogen, Klein–Gordon, Hopf, quadrupole and self-dual articles; the tension biquaternion of the electro-gravimagnetic programme</td>
-<td>211</td>
+<td>84</td>
 </tr>
 <tr>
 <td>$\tilde W$</td>
 <td>Energy–momentum four-vector of the electromagnetic field</td>
 <td>$\tilde W=\tfrac12\tilde F\tilde F^{*}=W e_t+\tfrac{i}{c}\vec S_{\mathrm P}$, with $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and $\vec S_{\mathrm P}=\vec E\times\vec H$</td>
 <td>$\mathbb{M}_+$</td>
-<td>The energy–momentum density: the time row of the stress–energy tensor, $T^0{}_0=-W$ and $T^0{}_k=S_{\mathrm{P}k}/c$. It is a four-vector, and the one entry of this table in $\mathbb{M}_+$: the Hermitian form carries the central $i$, and $-i\tilde W=-iW e_t+\vec S_{\mathrm P}/c$ is the $\mathbb{M}_-$ four-vector. It carries the energy density and the flux, not the stress</td>
-<td>39</td>
+<td>The energy–momentum density: the time row of the stress–energy tensor, $T^0{}_0=-W$ and $T^0{}_k=S_{\mathrm{P}k}/c$. It is a four-vector, and one of the two entries of this table in $\mathbb{M}_+$: the Hermitian form carries the central $i$, and $-i\tilde W=-iW e_t+\vec S_{\mathrm P}/c$ is the $\mathbb{M}_-$ four-vector. It carries the energy density and the flux, not the stress</td>
+<td>32</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma$</td>
+<td>Energy–momentum biquaternion</td>
+<td>$\tilde\Sigma=\tfrac12\tilde F\tilde F^{*}=W\,e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ for the electromagnetic field, the same object as $\tilde W$; $\tilde\Sigma=\tfrac12\tilde J_{\mathrm{eg}}\circ\tilde J_{\mathrm{eg}}^{*}$ for the programme's charge–current field, with $\tilde\Sigma_\Lambda=\Lambda\Lambda^{*}$ and $\tilde\Sigma_{\mathrm O}=\tfrac12\mathrm{O}\,\mathrm{O}^{*}$ for light and the photon cloud</td>
+<td>$\mathbb{M}_+$</td>
+<td>The energy–momentum element of the electro-gravimagnetic programme: the scalar part is the energy density and the vector part the flux. The capital is required by the case rule: the vector part is $i\vec S_{\mathrm P}/c$, imaginary, so the element is a biquaternion and not a real quaternion; the letter is also the source's, bound in the four programme articles. In the electromagnetic case it is the same object as $\tilde W$, the corpus's glyph for it</td>
+<td>4</td>
 </tr>
 <tr>
 <td>$\tilde K_{\mathrm{ret}}$</td>
@@ -293,7 +301,7 @@
 <td>$\tilde K_{\mathrm{ret}}=\tilde\nabla^{\natural}t_r=\frac{1}{c\kappa}(-ie_t+\vec u_R)$, $\kappa=1-\vec u_R\cdot\vec\beta$</td>
 <td>$\mathbb{M}_-$, null</td>
 <td>The gradient of the retarded time, also called the null retarded gradient: an element, not an operator, and $\tilde\nabla^{\natural}\tilde Q=\tilde K_{\mathrm{ret}}\,d\tilde Q/dt_r$ for a source depending on $t_r$ alone. It is a zero divisor, $\langle\tilde K_{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not unitary at any $\kappa$. The $\kappa$ here is the retarded denominator, not the coupling of $\tilde D$</td>
-<td>2</td>
+<td>1</td>
 </tr>
 <tr>
 <td>$\tilde Q_{\mathrm d}$</td>
@@ -305,7 +313,7 @@
 </tr>
 </tbody>
 </table></div>
-<p>$\tilde R$ is new as a glyph. Its count, $83$, is every article that writes the material four-position, most of them as $\tilde Q=ict\,e_t+\vec q$; no article uses the letter for a generic element or for a bound third multiplicand.</p>
+<p>$\tilde R$ is new as a glyph. Its count, $85$, is every article that writes the material four-position or its translation variant $\tilde R_0$, most of them as $\tilde Q=ict\,e_t+\vec q$; no article uses the letter for a generic element or for a bound third multiplicand.</p>
 <p>$\tilde j$ no longer occurs: the normalised current density it named is the same object as $\sqrt{\mu}\,\tilde J$, and it is written that way. The lowercase letter was a duplicate of $\tilde J$, not a distinct quantity.</p>
 <p>The parameter does not take the letter $\Delta$. $\Delta$ is the Laplacian, the central scalar operator of $\Box=\partial^2/\partial Q_t^2+\Delta$, and a tilde on a central operator claims a quaternionic factor that is not there; the letter is also the Dirac module $\Delta=S\oplus\bar S$, the BCS gap, the conformal weight, the horizon function and the Faddeev–Popov determinant. The parameter is a bound element, so it takes a role subscript on the Q family, $\tilde Q_{\mathrm d}$, as $\tilde K_{\mathrm{ret}}$ and $\tilde Q_{\log}$ do. The operator is unaffected: an operator carries the mark of its element, and $\partial/\partial Q_\mu$ is scalar and carries none.</p>
 <h3 id="the-fields">The Fields</h3>
@@ -350,8 +358,8 @@
 <td>Algebra-valued scalar field</td>
 <td>$\tilde\Phi=\varphi e_t$ in the central case; a general element of $\mathbb{B}$ otherwise</td>
 <td>$\mathbb{B}$; $\mathbb{C}_{\mathbb{B}}$ when central</td>
-<td>A field whose value at each point is an element of the algebra keeps the element tilde, §<em>Summary of Notation</em> of <em>Conventions in the Biquaternion Universe</em>. Central in the Higgs, axion and effective-potential articles, where $\varphi$ is complex and hence the majuscule; general in the Klein–Gordon and functional-integral articles; an $\mathbb{M}_-$-valued field in the integer-spin article; the photon biquaternion of the electro-gravimagnetic programme. The fluctuation about the central field is $\delta\tilde\Phi$</td>
-<td>53</td>
+<td>A field whose value at each point is an element of the algebra keeps the element tilde, §<em>Summary of Notation</em> of <em>Conventions in the Biquaternion Universe</em>. Central in the Higgs, axion and effective-potential articles, where $\varphi$ is complex and hence the majuscule; general in the Klein–Gordon and functional-integral articles; an $\mathbb{M}_-$-valued field in the integer-spin article; the photon biquaternion of the electro-gravimagnetic programme. The fluctuation about the central field is $\delta\tilde\Phi$; the classical field of the functional articles is $\tilde\Phi_{\mathrm{cl}}=\delta W/\delta\tilde J$, with sector parts $\tilde\Phi_{\mathrm{cl},\pm}$, and the sector parts of the field are $\tilde\Phi_\pm=\tfrac12(\tilde\Phi\pm\tilde\Phi^{\flat})$</td>
+<td>54</td>
 </tr>
 <tr>
 <td>$\tilde G_1$</td>
@@ -359,7 +367,15 @@
 <td>$\tilde G_1(\tilde R)=\tilde\nabla^{\natural}G_{\Box}(\tilde R)\in\mathbb{M}_-$</td>
 <td>$\mathbb{M}_-$</td>
 <td>The kernel that inverts $\tilde\nabla$, $\tilde\nabla\tilde G_1=-\delta^{(4)}$; its scalar part is imaginary and its vector part real. The scalar kernel $G_\Box$ and the scalar amplitudes $G(\omega,\vec p)$, $G_F(\omega,\vec p)$ take no tilde</td>
-<td>2</td>
+<td>3</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\mathrm{amp}}$</td>
+<td>Constant amplitude of the central-phase plane wave</td>
+<td>$\tilde\Phi_{\tilde P}(\tilde R)=\tilde Q_{\mathrm{amp}}\exp\!\big(i\operatorname{Sc}(\tilde P^{\natural}\tilde R)\big)$</td>
+<td>$\mathbb{B}$</td>
+<td>The external-leg amplitude of <em>The LSZ Reduction Formula in Biquaternionic Form</em>, bound where it is introduced; a general element with a complex scalar part, hence the majuscule. It replaced the earlier $\tilde w$</td>
+<td>1</td>
 </tr>
 </tbody>
 </table></div>
@@ -399,7 +415,7 @@
 <td>$\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$</td>
 <td>$\mathbb{M}_+$</td>
 <td>The vector slots of $\mathbb{M}_+$, with the total spin $\tilde S$ of a composite</td>
-<td>91</td>
+<td>85</td>
 </tr>
 <tr>
 <td>$\tilde E$</td>
@@ -420,28 +436,28 @@
 </tbody>
 </table></div>
 <h2 id="2-to-be-tested">2. To be tested</h2>
-<p>One specific role per entry, not yet verified. The test is one pass over the articles that use the symbol, checking that every use matches the description. A glyph whose uses are all bound but span several roles is listed separately at the end of the section, with the pass recorded. The section now holds no entry: its one entry failed the test, and the pass is recorded here.</p>
+<p>One specific role per entry, not yet verified. The test is one pass over the articles that use the symbol, checking that every use matches the description. A glyph whose uses are all bound but span several roles is listed separately at the end of the section, with the pass recorded. The section now holds no entry: its entries failed the test or were retired, and the passes are recorded here.</p>
 <p><strong>$\tilde\Gamma_\mu$ is not a tilde glyph.</strong> The connection one-form takes its values in the six-dimensional Lie subspace $\mathrm{span}_\mathbb{R}\{\vec e_k,i\vec e_k\}$, whose elements are traceless; in the matrix image the trace is twice the scalar part, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, so tracelessness is purity, and by §<em>Pure Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em> a pure element carries the arrow and never the tilde. The glyph is $\vec\Gamma_\mu$. The transformation law preserves the mark: a conjugation by a unit rotor preserves the vector subspace, and the inhomogeneous term is pure for a unit element, $(\partial_\mu\tilde U)\tilde U^{-1}=(\partial_\mu\tilde U)\tilde U^{\natural}$ with $\mathrm{Sc}\bigl((\partial_\mu\tilde U)\tilde U^{\natural}\bigr)=0$ because differentiating $\tilde U\tilde U^{\natural}=e_t$ gives $(\partial_\mu\tilde U)\tilde U^{\natural}=-\bigl((\partial_\mu\tilde U)\tilde U^{\natural}\bigr)^{\natural}$. The row is removed. The seven articles that write the connection — <em>Curved Spacetime and the Biquaternion Framework</em>, <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em>, <em>Gauge Curvature and the Bianchi Identity in Biquaternionic Form</em>, <em>Quantum Gravity under the Biquaternion Framework — A Research Agenda</em>, <em>Torsion, Contorsion and the Spin Connection in Biquaternionic Form</em>, <em>Linearized Gravity in Biquaternionic Form</em> and <em>The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</em> — now write $\vec\Gamma_\mu$. The glyph $\tilde\Gamma_\mu$ no longer occurs in the corpus. The field strength $\tilde F$ is the work item of this kind that remains.</p>
-<p><strong>$\tilde\phi$ carries no Fourier mark.</strong> The scan found two further uses, both of them the transform of a central scalar written with the element tilde: <em>The Klein–Gordon Path Integral in Biquaternionic Form</em> wrote $\tilde\phi_{\mathrm{cl}}(\omega,\vec k)$ and <em>The Quantized Scalar Field in Biquaternionic Form</em> wrote $\tilde\phi(\vec p)$. In each case the tilded quantity is the coefficient $\phi$ of the central field $\tilde\Phi=\phi\,e_t$, a complex number at each point, and the momentum argument is not a mark. The first equation also mixed that coefficient with the element $\tilde J$; it is now written in the coefficients, $\phi_{\mathrm{cl}}(\omega,\vec k)$ and $J(\omega,\vec k)$, like the position-space equation $(\Box-\mu^2)\phi=-J$, and the second article writes $\phi(\vec p)$. The pass over the five articles that wrote the glyph leaves three, and every remaining use is the classical field or one of its sector parts; the glyph is listed in §<em>Bound Letters Found by the Scan</em>.</p>
-<p><strong>$\tilde\varphi$ is not a single glyph.</strong> The two articles that write it name two objects. In <em>The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</em> it is the classical field $\delta W/\delta\tilde J$ of the central scalar, the same object that <em>The Generating Functional and the Effective Action in Biquaternionic Form</em> writes $\tilde\phi$ in the module-valued case. The letter $\varphi$ is kept there because $\phi$ is the electric potential and $\phi_1,\phi_2$ are the real components of the scalar; the glyph is a local variant of $\tilde\phi$, bound at the point of introduction. The effective potential itself is a function of the central coefficient $\varphi_c$, which carries no tilde; the tilded object is the field of the effective action, whose constant background is $\tilde\varphi=\varphi_c e_t$. In <em>The Stueckelberg Mechanism in Biquaternionic Form</em> it is the central scalar $\rho\exp(i\tilde\sigma)\in\mathbb{C}_{\mathbb{B}}$, bound at the point of introduction. The tilde is correct in both uses — each is an algebra element — so the mark is not the defect; the single-role row is. Both bound roles are recorded in §<em>Bound Letters Found by the Scan</em>.</p>
+<p><strong>$\tilde\phi$ is retired.</strong> The glyph held two roles, and neither takes the letter. The sector parts of the algebra-valued field in <em>The Functional Integral in Biquaternionic Form</em> are $\tilde\Phi_\pm=\tfrac12(\tilde\Phi\pm\tilde\Phi^{\flat})\in\mathbb{M}_\pm$; the earlier Fourier uses in <em>The Klein–Gordon Path Integral in Biquaternionic Form</em> and <em>The Quantized Scalar Field in Biquaternionic Form</em> were already rewritten in the central coefficient, $\phi_{\mathrm{cl}}(\omega,\vec k)$ and $\phi(\vec p)$. The classical field of <em>The Generating Functional and the Effective Action in Biquaternionic Form</em>, <em>The Functional Determinant in Biquaternionic Form</em> and <em>The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</em> is $\tilde\Phi_{\mathrm{cl}}=\delta W/\delta\tilde J$ on the module, with sector parts $\tilde\Phi_{\mathrm{cl},\pm}$; the classical field is the expectation value of the field, so it takes the field glyph with the label $\mathrm{cl}$. The minuscule was the defect: the object is an element of $\mathbb{B}$ with a complex scalar part, and §<em>The Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em> asks the majuscule and lists the algebra-valued fields as $\tilde\Psi$, $\tilde\Phi$, $\tilde U$. The glyph $\tilde\phi$ no longer occurs in the corpus, and the row is removed.</p>
+<p><strong>$\tilde\varphi$ is retired.</strong> Both articles wrote a complex central scalar in the minuscule. In <em>The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</em> the classical field is $\tilde\Phi_{\mathrm{cl}}=\delta W/\delta\tilde J=\varphi_c\,e_t$ for a constant background; in <em>The Stueckelberg Mechanism in Biquaternionic Form</em> the central scalar is $\tilde\Phi_{\mathrm{St}}=\rho\exp(i\tilde\sigma)\in\mathbb{C}_{\mathbb{B}}$, and the Stueckelberg field itself is its phase $\tilde\sigma$. Each value is a complex central scalar, so §<em>The Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em> asks the majuscule, and the subscript names the object as $\tilde K_{\mathrm{ret}}$ does. The effective potential itself remains a function of the central coefficient $\varphi_c$, which carries no tilde. The glyph $\tilde\varphi$ no longer occurs in the corpus, and the row is removed.</p>
 <p><strong>$\tilde\mu$ and $\tilde\omega$ are not tilde glyphs.</strong> The two rows named pure elements. The magnetic moment is $\vec\mu=\mu_k\vec e_k$; the Larmor generator is $\vec\omega_G=\gamma\vec B$, and the angular velocity of the precession is its negative, $\vec\omega_L=-\gamma\vec B$; the body- and space-frame angular velocities are $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt$ and $\vec\omega_s=+2(d\tilde u/dt)\tilde u^{\natural}$; the Thomas vector is $\vec\omega_T$. By §<em>Pure Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em> a pure element carries the arrow and never the tilde. The row for $\tilde\omega$ also put two objects of opposite sign under one glyph: the generator and the angular velocity are now listed separately in the Larmor article. The six articles that wrote $\tilde\omega$ now write the arrow: <em>Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</em> writes $\vec\omega_G$ and $\vec\omega_L$; <em>Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</em>, <em>The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form</em>, <em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em> and <em>The Vibrating Ellipsoid and Higher Multipole Oscillations in Biquaternionic Form</em> write $\vec\omega_b$, $\vec\omega_s$ or $\vec\omega$; <em>Thomas Precession as a Biquaternion Rotor Effect</em> writes $\vec\omega_T$. The glyph $\tilde\mu$ no longer occurs in the corpus. The frame angular velocity of the Larmor theorem is $\vec\Omega$, arrowed like every angular velocity.</p>
 <p><strong>$\tilde m$ is not a tilde glyph.</strong> The mass is the real scalar $m$ of §<em>Summary of Notation</em>, and the mass term is the chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^\natural\tilde\Psi_L=m\tilde\Psi_R$. Its chirality flip is a right multiplication by the pure nilpotent $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, and by §<em>Pure Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em> a pure element carries the arrow and never the tilde. The three articles that wrote $\mathcal{D}=\tilde\nabla+\tilde m$ — <em>The Spectral Triple of the Biquaternion Algebra</em>, <em>The Functional Determinant in Biquaternionic Form</em> and <em>Annihilators in the Biquaternioid Structures over $\mathbb{C}$</em> — now write $\mathcal{D}=\tilde\nabla+m$.</p>
 <p><strong>$\tilde\Lambda$ is not a separate glyph.</strong> The row that stood for it named the unit-norm element of the dagger sandwich, $X\mapsto\tilde U X\tilde U^{*}$; that is the norm-one element $\tilde U$ of §<em>The Layer Glyphs</em>, and the convention reserves the letter $u$ and its capital for a unit element. The letter $\Lambda$ adds a second name to an object that already has one, so the row is removed. The article corpus now writes the $\tilde U$ family: $\tilde U$ for the norm-one element, $\tilde U_{\mathrm b}$ for a Hermitian boost, and $\tilde U_{\mathrm L}$ where a second unit element is already in the statement. The untilded $\Lambda$ is unaffected: it remains the Lorentz matrix $\Lambda^\mu{}_{\nu}$.</p>
 <p><strong>A second state is a numbered stigma.</strong> The state glyph is $\tilde{Ϛ}$, bound in §<em>The Observables, the States and the Quantum Objects</em>, and it is the only state glyph. Two states of one statement are numbered in the order it introduces them, $\tilde{Ϛ}_1$ and $\tilde{Ϛ}_2$, and a reference state is $\tilde{Ϛ}_0$. The quantum-information articles already write pairs this way, as in $\Phi(a\tilde{Ϛ}_1+b\tilde{Ϛ}_2)=a\Phi(\tilde{Ϛ}_1)+b\Phi(\tilde{Ϛ}_2)$ of <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em> and $D(\tilde{Ϛ}_1,\tilde{Ϛ}_2)$ of <em>The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form</em>. The row that stood for a state element is removed; no second glyph is needed.</p>
-<p><strong>$\tilde\sigma$ is not a generic glyph.</strong> Two bound roles remain: the central scalar $\tilde\sigma=\sigma e_t\in\mathbb{C}_{\mathbb{B}}$ of <em>The Stueckelberg Mechanism in Biquaternionic Form</em>, <em>Scalar Pair Creation in Biquaternionic Form</em> and <em>The Scalar Field Path Integral in Biquaternionic Form</em> ($14$ tokens, $3$ articles); and the subnormalised operator $\tilde\sigma_{ABC}$ of <em>Strong Subadditivity in the Biquaternion Framework</em>, which that article distinguishes from a pair of states. No article writes $\tilde\sigma$ for a state.</p>
-<p><strong>$\tilde g$ is not a glyph of the catalogue.</strong> The group element of the pion article's adjoint action is the rotor $\tilde u=\exp(\vec\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$, a unit real quaternion, the glyph $\tilde u$ of §<em>The Layer Glyphs</em>, and the article now writes it so. The stabilizer and context elements of <em>Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form</em> and <em>Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</em>, and the quoted stabilizer projector of <em>Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$</em>, are bound where they are introduced. The row is removed.</p>
+<p><strong>$\tilde\sigma$ is not a generic glyph.</strong> Two bound roles remain: the central scalar $\tilde\sigma=\sigma e_t\in\mathbb{C}_{\mathbb{B}}$ of <em>The Stueckelberg Mechanism in Biquaternionic Form</em>, <em>Scalar Pair Creation in Biquaternionic Form</em> and <em>The Scalar Field Path Integral in Biquaternionic Form</em> ($16$ tokens, $3$ articles); and the subnormalised operator $\tilde\sigma_{ABC}$ of <em>Strong Subadditivity in the Biquaternion Framework</em>, which that article distinguishes from a pair of states. No article writes $\tilde\sigma$ for a state.</p>
+<p><strong>$\tilde g$ is not a glyph of the catalogue.</strong> The group element of the pion article's adjoint action is the rotor $\tilde u=\exp(\vec\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$, a unit real quaternion, the glyph $\tilde u$ of §<em>The Layer Glyphs</em>, and the article now writes it so. The stabilizer and context elements of <em>Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form</em> and <em>Contextuality and the Kochen–Specker Theorem in Biquaternionic Form</em>, and the quoted stabilizer projector of <em>Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$</em>, are bound where they are introduced. The glyph now occurs in three articles and $60$ tokens, all bound. The row is removed.</p>
 <p><strong>$\tilde r$ is not a four-vector.</strong> The physics articles that wrote $\tilde r=r_\mu\vec e_\mu$ meant the pure material <strong>spatial</strong> vector, the one in $d\tilde r/dt=\vec\omega_T\times\tilde r$ and in the orbital product $\tilde r\tilde p$. The four-position is $\tilde R=ict\,e_t+\vec r$ (section 1), and the spatial part is the pure vector $\vec r=x\vec e_x+y\vec e_y+z\vec e_z$, which takes the arrow. No article writes $\tilde r$ for $ict\,e_t+\vec r$; the three articles that carried the position role now write $\vec r$. The letter now occurs in $15$ articles, all maths articles, where it is a general element or a bound dummy. The phase-space element of <em>The Symplectic Form and the Biquaternion Norm Cone</em> was a pure quaternion and is now written $\vec r$, so the article no longer counts. The count $19$ of section 3 was the opening scan, before these rewrites; the row now reads $15$.</p>
-<p>$\tilde\Sigma$ is not a root glyph. The root of $+1$ is $\tilde\Xi$, and <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em> now writes it so throughout. The four articles of the electro-gravimagnetic programme keep $\tilde\Sigma$ as a bound energy–momentum biquaternion, the object of the $\tilde W$ row of section 1; the glyph is not generic and it is not a root.</p>
+<p>$\tilde\Sigma$ is not a root glyph. The root of $+1$ is $\tilde\Xi$, and <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em> now writes it so throughout. The four articles of the electro-gravimagnetic programme write $\tilde\Sigma$ for the energy–momentum biquaternion of section 1, the same object as $\tilde W$ in the electromagnetic case; the glyph is not generic and it is not a root.</p>
 <p>The wave four-vector and the unit four-velocity are written $\tilde P/\hbar$ and $\tilde V/c$. Each is a quotient of an object already in the list, so neither takes a glyph of its own, and the rows that stood for them are removed.</p>
 <p>$\tilde\tau$ no longer occurs: its one use was the pure torque of <em>Rigid-Body Dynamics and the Biquaternion Rotor</em>, now written $\vec\tau$.</p>
 <p><strong>$\tilde\pi$ is not the Goldstone glyph.</strong> The Goldstone field of <em>The Pion and the Chiral Lagrangian in Biquaternionic Form</em>, <em>The Nonlinear Sigma Model in Biquaternionic Form</em> and <em>The Skyrme Model and the Topological Baryon in Biquaternionic Form</em> is $\pi^ae_a$ with real $\pi^a$, a pure element of the biquaternion layer: $\mathrm{Sc}(\pi^ae_a)=0$ and $\mathrm{Sc}((\pi^ae_a)^2)=-\pi^a\pi^a$. By §<em>Pure Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em> a pure element takes the arrow and not the tilde, so the three articles now write $\vec\pi=\pi^ae_a$, and <em>Custodial Symmetry and the Rho Parameter in Biquaternionic Form</em> writes the same glyph for the triplet. The element lies in the compact subalgebra $\mathfrak{su}(2)\subset\mathbb{M}_-$, not in the group $\mathrm{SU}(2)$; the group element is the exponential $\tilde U=\exp(\vec\pi/f)\in\mathbb{H}^1_{\mathbb{B}}\cong\mathrm{SU}(2)$. The glyph $\tilde\pi$ keeps two roles, neither of them the Goldstone field: the idempotent of the quaternion and split-quaternion layers of the mathematical corpus, and the momenta of the canonical-quantization, Landau-level and quantum-gravity articles, where $\tilde\pi=\pi^0e_t+\vec\pi$ in the Maxwell and Proca cases and the scalar part is constrained or central. The row's count of $38$ covered the idempotent and the momenta as well as the Goldstone field, which alone occurs in four articles; the row now stands in section 1 with the count $34$.</p>
 <p>$\tilde{\mathcal N}$ no longer occurs. The null factor of the retarded-time gradient is $-ie_t+\vec u_R=-2\tilde{\mathcal L}(\vec u_R)=-2i\tilde\Pi(\vec u_R)$: it is $-2$ times the future null four-vector of a pure state of section 1, so it takes no glyph of its own, and the row that stood for it is removed. The row also misnamed it a direction; the direction is the pure vector $\vec u_R$. <em>Exercise: The Electromagnetic Field of a Moving Charge</em> binds the object at the point of use as $\tilde{\mathcal L}_{\mathrm{ret}}=\tilde{\mathcal L}(\vec u_R)$.</p>
-<p>$\tilde W$ no longer occurs as a gauge field. The electroweak connection is written in the tensor formalism, $W^a_\mu$ with a Lie-algebra index and a spacetime index, and its curvature $W^a_{\mu\nu}$; neither is a single element, and the tilde marks an element. The W and Z article now writes $\mathcal{L}_{\mathrm{kin}}=-\tfrac14\sum_a W^a_{\mu\nu}W^{a\,\mu\nu}-\tfrac14 B_{\mu\nu}B^{\mu\nu}$. The letter is the energy–momentum four-vector of section 1, and it remains in section 3 for its generic use in the algebra articles.</p>
+<p>$\tilde W$ no longer occurs as a gauge field. The electroweak connection is written in the tensor formalism, $W^a_\mu$ with a Lie-algebra index and a spacetime index, and its curvature $W^a_{\mu\nu}$; neither is a single element, and the tilde marks an element. The W and Z article now writes $\mathcal{L}_{\mathrm{kin}}=-\tfrac14\sum_a W^a_{\mu\nu}W^{a\,\mu\nu}-\tfrac14 B_{\mu\nu}B^{\mu\nu}$. The letter is the energy–momentum four-vector of section 1; no generic use remains.</p>
 <p><strong>Spinors carry no tilde.</strong> A spinor is an element of the state module, not a general element of the algebra: the tilde marks the quaternionic factor of an element read as an algebra element, and a module element takes the letter of the module, bare. The algebra-level representative and its matrix column therefore share the glyph, as in the bilinears $\psi\chi^{*}$, $\varepsilon(\psi,\chi)$ and $\mathfrak{b}(\psi,\chi)$, in the plane-wave amplitude $\psi_0(\vec k)\in\mathbb{B}\tilde\Pi$, and in the Dirac and Pauli articles, where the bispinor is $(\phi,\chi)^{\mathsf T}$ and the Pauli spinor is $\phi$. The Dirac field $\tilde\Psi$ keeps its tilde, because its value at each point is an element of $\mathbb{B}$; that is the distinction between a field and a module element. The spinor articles write $\psi,\phi,\chi$ bare throughout. The Dirac–Hestenes article writes the reverse of its spinor as $\psi^{\mathrm{rev}}$, which is a different operation from the element tilde. The two rows that stood for these glyphs are removed, and the Schrödinger and ideals articles write $\tilde Q$ for the generic use that earlier stood there.</p>
 <h3 id="glyphs-the-scan-found-outside-the-catalogue">Glyphs the Scan Found Outside the Catalogue</h3>
 <p>Four further tilde tokens are neither element glyphs nor bound letters, and none enters the tables above. <em>Hermitian Clifford Structures</em> writes the reversion mark $\tilde{\ }$, which marks an operation and not an element. <em>Conventions in the Biquaternion Universe</em> quotes three forbidden matrix tildes, $\tilde I_n$, $\tilde{\mathsf M}_2$ and $\tilde{\mathcal Q}$, under its ban on a tilde on an array. Each token occurs in one article. They are recorded here so that the scan accounts for these tokens; none is available for citation.</p>
 <h3 id="bound-letters-found-by-the-scan">Bound Letters Found by the Scan</h3>
-<p>These glyphs had no entry in the tables above. Each is bound where it is introduced; the scan of 18 October 2026 records every bound role it found.</p>
+<p>These glyphs had no entry of their own in the tables above. Each is bound where it is introduced; the scan of 18 October 2026 records every bound role it found.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -452,187 +468,108 @@
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\alpha$, $\tilde\beta$, $\tilde\gamma$</td>
-<td>Coefficients of the similarities $S(\tilde q)=\tilde\alpha\tilde q\tilde\beta+\tilde\gamma$ in the two iterated-function-system articles</td>
-<td>2</td>
-</tr>
-<tr>
 <td>$\tilde v$</td>
-<td>Proper velocity of the paravector and velocity-space articles, $\tilde v=\gamma(e_t+\beta\vec u_v)$ with $\vec u_v=i\vec u$ a unit paravector-vector: a Hermitian element of $\mathbb{B}$ in $\mathbb{M}_+$, of $\natural$-norm one and not unitary under ${}^{*}$; bound where it is introduced</td>
+<td>Proper velocity of the paravector and velocity-space articles, $\tilde v=\gamma(e_t+\beta\vec u_v)$ with $\vec u_v=i\vec u$ a unit paravector-vector: Hermitian in $\mathbb{M}_+$, of $\natural$-norm one, not unitary under ${}^{*}$, its scalar part real and hence the minuscule, unlike the four-velocity $\tilde V$; bound in the two articles</td>
 <td>2</td>
 </tr>
 <tr>
-<td>$\tilde\Sigma$</td>
-<td>Energy–momentum biquaternion of the electro-gravimagnetic programme, $\tilde\Sigma=\tfrac12\tilde J\circ\tilde J^{*}$ with $\tilde J$ in the programme's normalisation</td>
-<td>4</td>
-</tr>
-<tr>
-<td>$\tilde\Omega$</td>
-<td>Spacetime rotation rate, $d\tilde\Lambda/d\tau=\tfrac12\tilde\Omega\tilde\Lambda$</td>
-<td>4</td>
-</tr>
-<tr>
-<td>$\tilde{\mathcal R}$</td>
-<td>Retarded null separation, $\tilde{\mathcal R}=iR\,e_t+\vec R$, $\langle\tilde{\mathcal R}\rangle_{\natural}=0$</td>
-<td>2</td>
-</tr>
-<tr>
-<td>$\tilde\epsilon$</td>
-<td>Field shift in the Schwinger–Dyson derivation, $\mathcal D(\tilde\Phi+\tilde\epsilon)=\mathcal D\tilde\Phi$</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde\varepsilon$</td>
-<td>Polarization biquaternion of the Thomson–Compton article, $\mathrm{Sc}(\tilde\varepsilon'^{\dagger}\tilde\varepsilon)$</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde f$</td>
-<td>Radiation-reaction force biquaternion, $\tilde f_{\mathrm{rad}}$</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde\phi$</td>
-<td>Classical field, $\tilde\phi=\delta W/\delta\tilde J=\langle\tilde\Phi\rangle_{\tilde J}$; its sector parts $\tilde\phi_\pm=\tfrac12(\tilde\Phi\pm\tilde\Phi^{\flat})\in\mathbb{M}_\pm$</td>
-<td>4</td>
-</tr>
-<tr>
-<td>$\tilde\varphi$</td>
-<td>Classical field of the effective-potential article, $\delta W/\delta\tilde J$ (local variant of $\tilde\phi$); central scalar of the Stueckelberg article, $\rho\exp(i\tilde\sigma)\in\mathbb{C}_{\mathbb{B}}$</td>
-<td>2</td>
+<td>$\tilde G$</td>
+<td>Bound, element roles. The flow generator $\tilde G=-i\tilde H/\hbar\in\mathbb{M}_-$, or $-\hbar^{-1}J\tilde H$ in the Schrödinger article, of the Schrödinger, Klein–Gordon, hydrogen and Lyapunov articles. The gluon biquaternion potential $\tilde G=iG^a_te_t+\vec G^a\in\mathbb{M}_-$ of <em>The Gluon: An Octet Outside the Biquaternion Algebra</em>. The finite dilation element $\tilde G=\sqrt{\lambda}e_t$ of <em>The Conformal Group in Biquaternionic Form</em>. The source of the biwave equation $\tilde\nabla\tilde K=\tilde G$ in <em>The Poincaré Group and the Biquaternion Frame</em> and the electro-gravimagnetic article, bound where it is introduced. The first-order Green's function is the $\tilde G_1$ of section 1</td>
+<td>10</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Three roles of $\tilde v$ are retired; the proper velocity keeps the glyph.</strong> The right factor of the two-sided action is written $\tilde u_1\tilde Q\tilde u_2$ in the four articles that write the action, by the numbering rule for several unit elements of §<em>The Unitary Convention</em>: the right factor is a unit element, and the letter $u$ names a unit element. The Goldstone order parameter is the central element $v\exp(i\alpha_0)e_t$; the VEV is a value, not a bound element, so it takes no tilde. The velocity field of the vibrating ellipsoid is the pure element $\vec v$, by §<em>Pure Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em>: a pure element carries the arrow and never the tilde. The remaining role is the proper velocity of the paravector and velocity-space articles: it is a bound element of $\mathbb{B}$ in $\mathbb{M}_+$, Hermitian and of $\natural$-norm one but not unitary under ${}^{*}$, so the tilde marks its quaternionic factor, and the letter $v$ is the letter of a motion, per §<em>The Unitary Convention</em>. It is not a boost parameter; the boost parameter is the rapidity $w$, a real scalar, and it takes no tilde. The count $8$ is the opening scan; after these rewrites $\tilde v$ occurs in $2$ articles and $35$ tokens.</p>
-<h3 id="the-bound-role-of-math454-no-longer-occurs">The Bound Role of $\tilde R$ No Longer Occurs</h3>
-<p>The table that stood here recorded $\tilde R$ as a bound third multiplicand beside $\tilde P$ and $\tilde Q$, in $2629$ occurrences in $163$ articles. The scan of 18 October 2026 finds no such use: every remaining occurrence is the material four-position of section 1, in $83$ articles. The row is removed, and the generic claim in section 3 is removed with it.</p>
+<p><strong>The other uses of $\tilde G$ are withdrawn.</strong> The infinitesimal local-Lorentz generator of <em>Linearized Gravity in Biquaternionic Form</em>, <em>The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</em> and <em>The Newman–Penrose Formalism in Biquaternionic Form</em> is a complex pure vector, $\mathrm{Sc}(\vec G)=0$; the rotation generator of <em>Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</em> and <em>The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form</em> is the pure vector already written $\vec G$ in the same sentence; and the companion combination $\vec G=i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H$ of <em>Maxwell's Equations in Biquaternionic Form</em> is pure as well; the field strength $\tilde F$ is the separate work item recorded in section 2. By §<em>Pure Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em> the arrow has priority and the tilde is dropped, so these articles now write $\vec G$. Two roles named another kind of object: the unit element of <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em> is $\tilde U$ by §<em>The Unitary Convention</em>, and the norm-one group of <em>The General Plain Sesqualgebra in the 4×4 Matrix Element Representation</em> is the group $G$, since the tilde marks an element and not a group. The axion label $G\tilde G$ of <em>The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</em> is the dual field strength, not an element, and is outside the catalogue. The scalar kernels take no tilde: the d'Alembertian, Klein–Gordon propagator, Klein–Gordon path-integral and retarded-potential articles now write $G_{\mathrm{inv}}$, $G^{(\mu)}_{\mathrm{inv}}$, $G(\omega,\vec p)$, $G_F$, $G_E$ and $G_{\mathrm{ret}}$. The defining equation of the first-order kernel is recorded in section 1 with the solved sign, $\tilde\nabla\tilde G_1=-\delta^{(4)}$; the Maxwell article's $+\delta$ and the retarded-potentials exercise's record of the disagreement are unchanged.</p>
+<p>The glyphs $\tilde\epsilon$, $\tilde\phi$ and $\tilde\varphi$ are retired; §<em>2. To be tested</em> records the roles that replaced them. The field shift is $\delta\tilde\Phi$, the sector parts are $\tilde\Phi_\pm$, and the classical fields are $\tilde\Phi_{\mathrm{cl}}$ and $\tilde\Phi_{\mathrm{St}}$.</p>
+<p><strong>$\tilde\Omega$ had two roles, and neither keeps the tilde.</strong> The spacetime rotation rate of <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em> is the pure element $\vec\Omega_{\mathrm{LT}}$, with $\vec\Omega_{\mathrm{LT}}^{\natural}=-\vec\Omega_{\mathrm{LT}}$; the article shows that a scalar part would destroy the norm of the eigenspinor, and it now writes the arrow in the evolution equation, in the identification $\vec\Omega_{\mathrm{LT}}=-(ϙ/m)\tilde F^{*}$ and in the closed form. The subscript $\mathrm{LT}$ names the Lorentz transformation, so that $\vec\Omega$ stays the frame angular velocity of the Larmor theorem. The two cross-references, in <em>The Lorentz Force in Biquaternion Form</em> and <em>The Relativistic Particle in an External Field, in Biquaternionic Form</em>, now write the arrow as well. The fourth occurrence was the generalized Rabi frequency of <em>Magnetic Resonance and Rabi Oscillations in Biquaternionic Form</em>, the real scalar $\Omega=\sqrt{(\omega_0-\omega)^2+\omega_1^2}$; a real scalar is not an element and takes no mark, and the article now writes $\Omega$, as does the evolution-rotor row of §<em>The Layer Glyphs</em>. The glyph $\tilde\Omega$ no longer occurs in the corpus, and the row is removed.</p>
+<p><strong>$\tilde\varepsilon$ is a pure element and takes the arrow.</strong> The polarization biquaternion of <em>Thomson and Compton Scattering: The Biquaternion Polarization Algebra</em> is a pure vector by its own definition, and the article now writes $\vec\varepsilon$ throughout, with the pairing $\mathrm{Sc}(\vec\varepsilon'^{*}\vec\varepsilon)$. The dagger it carried on the element is replaced by the star, the mark of the Hermitian conjugation of elements, §<em>The Operators</em> of <em>Conventions in the Biquaternion Universe</em>. The row is removed.</p>
+<p><strong>The similarity coefficients are the generic elements.</strong> The two iterated-function-system articles wrote $S(\tilde q)=\tilde\alpha\tilde q\tilde\beta+\tilde\gamma$ with three bound letters. The coefficients are general quaternions, so the family glyph applies: the articles now write $S(\tilde q)=\tilde q_1\tilde q\tilde q_2+\tilde q_3$ with $\tilde q_1,\tilde q_2\in\mathbb{H}^{\times}$ and $\tilde q_3\in\mathbb{H}$, the argument $\tilde q$ being a separate element from the numbered coefficients, and a family $S_i$ carrying $\tilde q_{1,i},\tilde q_{2,i},\tilde q_{3,i}$. The tilde and the minuscule are unchanged, because each coefficient has a real scalar part; what is removed is the bound letter. The ratio is $\lambda=\lvert\tilde q_1\rvert\lvert\tilde q_2\rvert$, and the row is removed.</p>
+<p><strong>$\tilde\epsilon$ is retired.</strong> The shift in the Schwinger–Dyson derivation is a variation of the algebra-valued field, and the corpus already writes the fluctuation $\delta\tilde\Phi$; a minuscule on a $\mathbb{B}$-valued object was the defect. The derivation now writes $\mathcal D(\tilde\Phi+\delta\tilde\Phi)=\mathcal D\tilde\Phi$ for every shift $\delta\tilde\Phi$ vanishing at the boundary. The glyph $\tilde\epsilon$ no longer occurs in the corpus, and the row is removed.</p>
+<p><strong>Three roles of $\tilde v$ are retired; the proper velocity keeps the glyph.</strong> The right factor of the two-sided action is written $\tilde u_1\tilde Q\tilde u_2$ in the four articles that write the action, by the numbering rule for several unit elements of §<em>The Unitary Convention</em>: the right factor is a unit element, and the letter $u$ names a unit element. The Goldstone order parameter is the central element $v\exp(i\alpha_0)e_t$; the VEV is a value, not a bound element, so it takes no tilde. The velocity field of the vibrating ellipsoid is the pure element $\vec v$, by §<em>Pure Elements and their Coefficients</em> of <em>Conventions in the Biquaternion Universe</em>: a pure element carries the arrow and never the tilde. The remaining role is the proper velocity of the paravector and velocity-space articles: it is a bound element of $\mathbb{B}$ in $\mathbb{M}_+$, Hermitian and of $\natural$-norm one but not unitary under ${}^{*}$, so the tilde marks its quaternionic factor; its scalar part is real and the glyph is therefore the minuscule, against the four-velocity $\tilde V$ whose scalar part is imaginary; the letter $v$ is the letter of a motion, per §<em>The Unitary Convention</em>. It is not a boost parameter; the boost parameter is the rapidity $w$, a real scalar, and it takes no tilde. The conjugate in $\tilde v\tilde v^{\natural}=e_t$ is the natural mark, not a coefficient bar. The count $8$ is the opening scan; after these rewrites $\tilde v$ occurs in $2$ articles and $35$ tokens.</p>
+<h3 id="the-bound-role-of-math505-no-longer-occurs">The Bound Role of $\tilde R$ No Longer Occurs</h3>
+<p>The table that stood here recorded $\tilde R$ as a bound third multiplicand beside $\tilde P$ and $\tilde Q$, in $2629$ occurrences in $163$ articles. The scan of 18 October 2026 finds no such use: every remaining occurrence is the material four-position of section 1, in $85$ articles. The row is removed, and the generic claim in section 3 is removed with it.</p>
 <p><strong>The electric source is written with $\tilde J$, not $\tilde R$.</strong> The Maxwell source is the four-current $\tilde J=ic\rho\,e_t+\vec J$, and the field equation reads $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$. Since $c=1/\sqrt{\epsilon\mu}$,
 $$
 \sqrt{\mu}\,\tilde J=\sqrt{\mu}\left(ic\rho\,e_t+\vec J\right)=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J ,
 $$
 so the normalised combination $i\rho/\sqrt{\epsilon}\,e_t+\sqrt{\mu}\,\vec J$ is $\sqrt{\mu}\,\tilde J$, not a second object. The factor $\sqrt{\mu}$ is the whole difference, and it is written explicitly in every article. No article of the corpus now writes $\tilde R$ for a source.</p>
-<p><strong>The combined electric-magnetic source no longer carries a glyph.</strong> The source was the four-current plus an $i$-rotated copy of it. Both terms were written $ic\rho\,e_t+\vec J$ in the same subspace $\mathbb{M}_-$, so the "complementary sector" of the magnetic term was the scalar $i$ multiplying the same object, not a distinct current. The row was therefore a duplicate of $\tilde J$, and it is removed. The glyph itself survives in two articles as the retarded null separation, and it is listed in §<em>Bound Letters Found by the Scan</em>.</p>
+<p><strong>The combined electric-magnetic source no longer carries a glyph.</strong> The source was the four-current plus an $i$-rotated copy of it. Both terms were written $ic\rho\,e_t+\vec J$ in the same subspace $\mathbb{M}_-$, so the "complementary sector" of the magnetic term was the scalar $i$ multiplying the same object, not a distinct current. The row was therefore a duplicate of $\tilde J$, and it is removed.</p>
 <p><strong>The rotor is written $\tilde u_{\mathrm r}$.</strong> The unit real quaternion of §<em>The Layer Glyphs</em> is the $SU(2)$ factor of $\tilde S=\exp(i\theta)\tilde u$ in <em>The S-Matrix in Biquaternionic Form</em>, which writes it $\tilde u$. The letter $\tilde R$ never named the rotor in the corpus; the row that recorded it was a residue of the scan, and it is removed.</p>
 <p><strong>No bound role remains.</strong> The algebra articles now write the Q family for their multiplicands, and the only surviving use of $\tilde R$ is the material four-position of section 1.</p>
 <h3 id="a-removed-glyph">A Removed Glyph</h3>
 <p>The discarded limit glyph no longer occurs in any article. The last use was the value a limit tends to; that value is an arbitrary element, so it belongs to the Q family and is now $\tilde Q_2$, with $\tilde Q_3$ for the second limit in the uniqueness proof and the algebra of limits. The logarithm value is $\tilde Q_{\log}$ ($17$ places, $4$ articles). The Lorentz rotor is $\tilde U$ in <em>The Lorentz Transformation as a Biquaternionic Rotation</em>; <em>The Eigenspinor</em> writes the fixed rotor of a frame change as $\tilde U_{\mathrm L}$ and the evolving eigenspinor as $\tilde U$. The Lindblad jump operators are $\tilde K_k$ ($10$ places, $1$ article). The orbital operators are $L_k e_t$ ($75$ places, $3$ articles).</p>
 <p>The quaternion-layer logarithm is $\tilde q_{\log}$ ($16$ places, $1$ article), the same symbol as the biquaternion layer. The body-frame angular momentum of <em>Rigid-Body Dynamics and the Biquaternion Rotor</em>, $37$ places, is a pure real quaternion and is now written $\vec L_b$; the same pass made that article's angular velocity and torque $\vec\omega_b$ and $\vec\tau$, since they are pure as well. The left-inverse dummy of <em>Norm and Invertibility in the General Quaternionic Algebra</em> is now $\tilde Q_3$. The generic uses — the bilinearity dummy of <em>The Born Rule as a Trace Formula</em>, the general identity of <em>Biquaternion Elementary Functions</em>, and the periodicity statement of <em>Split-Biquaternion Spectral Theory</em> — were rewritten to $\tilde Q$. The Noether bivector is pure and is now written $\vec L$; the field strength $\tilde F$ is pure as well and still carries a tilde, so that pair differs in mark and the field strength is the remaining work item of the pair.</p>
 <h2 id="3-wrongly-generic-to-be-rewritten">3. Wrongly generic, to be rewritten</h2>
-<p>Only the <strong>wrongly generic</strong> claims are collected here: the entry asserts a generic element outside the Q family, or a placeholder where an arbitrary element stands. The fix is to write $\tilde Q$, $\tilde Q_1$, $\tilde Q_2$ or $\tilde q$, $\tilde q_1$, $\tilde q_2$, or to bind the letter where it is introduced. The counts are those of the scan of 18 October 2026. They include the bound uses of each letter, so a count is not the number of defects.</p>
+<p><strong>No entry remains.</strong> The rewrite of 18 October 2026 removed the last wrongly generic uses. The scan of the same day finds every glyph outside the Q family either bound where it is introduced or naming a specific object. The table that stood here is closed; the counts below are the articles in which each letter still occurs.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Symbol</th>
-<th>Name</th>
-<th>Formula</th>
-<th>Note</th>
-<th>Fix</th>
+<th>What it was</th>
+<th>What it is now</th>
 <th>Articles</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$\tilde A$</td>
-<td>General element of the algebra</td>
-<td>—</td>
-<td>A second general element beside $\tilde Q$; also an inner derivation $\mathrm{ad}_{\tilde A}$</td>
-<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$ for the generic use; the potential $\tilde A$ keeps its tilde and is listed in section 1.</td>
-<td>211</td>
+<td>a second general element, and an inner derivation $\mathrm{ad}_{\tilde A}$</td>
+<td>the four-potential of section 1. The generic uses are the Q family; the idempotent swap of the split-complex article is a map, and its glyph is removed</td>
+<td>84</td>
 </tr>
 <tr>
 <td>$\tilde B$</td>
-<td>General element of the algebra</td>
-<td>—</td>
-<td>A general element, as in the form $h(\tilde P\tilde B,\tilde R\tilde B)$</td>
-<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
-<td>39</td>
+<td>a general element, as in $h(\tilde P\tilde B,\tilde R\tilde B)$</td>
+<td>the Conway–Silberstein field of the Maxwell system $\tilde\nabla\tilde A=\tilde B$, and elements bound in a proof, as in $\tilde B=e_k\tilde Q^{*}$</td>
+<td>30</td>
 </tr>
 <tr>
 <td>$\tilde C$</td>
-<td>General element of the algebra</td>
-<td>—</td>
-<td>A general element acting on the spinor module, $\mathfrak b_\mu(\tilde C\cdot s,\tilde C\cdot t)$</td>
-<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
-<td>20</td>
+<td>a general element acting on the spinor module</td>
+<td>the parameter of the Julia family $F_{\tilde C}$, bound where the family is defined, and the exterior angle $\tilde C=\pi-C$ of the non-Euclidean triangle</td>
+<td>12</td>
 </tr>
 <tr>
 <td>$\tilde c$</td>
-<td>General element of the quaternion layer</td>
-<td>—</td>
-<td>A general element of the quaternion layer, as in $L_{\tilde q_1}L_{\tilde q_2}=L_{\tilde q_1\tilde q_2}$</td>
-<td>Write $\tilde q$, $\tilde q_1$ or $\tilde q_2$, or bind the letter where it is introduced.</td>
-<td>4</td>
-</tr>
-<tr>
-<td>$\tilde d$</td>
-<td>General element of the quaternion layer</td>
-<td>—</td>
-<td>A general element beside $\tilde c$, as in $T_{\tilde c,\tilde d}$</td>
-<td>Write $\tilde q$, $\tilde q_1$ or $\tilde q_2$, or bind the letter where it is introduced.</td>
-<td>5</td>
+<td>a general element of the quaternion layer</td>
+<td>the complex coefficient $\tilde c$ of the split form $\tilde C=\tilde c+j\tilde c'$, and the central product $\tilde c=\tilde q_4\tilde q_5$ bound in a proof</td>
+<td>2</td>
 </tr>
 <tr>
 <td>$\tilde M$</td>
-<td>General element in the Hadamard scheme</td>
-<td>$\tilde M=M_0e_t+\dots+M_3\vec e_z$</td>
-<td>Two generic multiplicands beside the fixed corner products; <em>The Computational Cost of Biquaternion Arithmetic</em> now writes them $\tilde Q_1,\tilde Q_2$</td>
-<td>Write $\tilde Q_1,\tilde Q_2$; the bound uses (Thomas interval rotor, limit value, conjugating element) are not generic.</td>
+<td>two generic multiplicands in the Hadamard scheme</td>
+<td>the Thomas interval rotor $\tilde M=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, and entries bound in a proof</td>
 <td>5</td>
 </tr>
 <tr>
-<td>$\tilde p$</td>
-<td>General element of the quaternion layer</td>
-<td>—</td>
-<td>A general element, as in $L_{\tilde p},R_{\tilde p}$</td>
-<td>Write $\tilde q$, $\tilde q_1$ or $\tilde q_2$, or bind the letter where it is introduced. The corpus also uses the letter for the momentum operator, which is pure and written $\vec p$.</td>
-<td>43</td>
-</tr>
-<tr>
 <td>$\tilde r$</td>
-<td>General element of the quaternion layer</td>
-<td>$\tilde r\mapsto\tilde r^{\natural}$</td>
-<td>A general element; the reflection</td>
-<td>Write $\tilde q$, $\tilde q_1$ or $\tilde q_2$, or bind the letter where it is introduced. The pure material position is the arrowed $\vec r$.</td>
-<td>15</td>
+<td>a general element of the quaternion layer</td>
+<td>the argument of a quaternion action, $\tilde r\mapsto\tilde q\tilde r\tilde p^{-1}$, bound where the action is defined. The pure material position is the arrowed $\vec r$</td>
+<td>11</td>
 </tr>
 <tr>
 <td>$\tilde T$</td>
-<td>General element of the algebra</td>
-<td>—</td>
-<td>A general element; a unit exactly when $\langle\tilde T\rangle_{\natural}\neq0$</td>
-<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
-<td>37</td>
+<td>a general element, a unit when $\langle\tilde T\rangle_{\natural}\neq0$</td>
+<td>the dummy of the sandwich $\mathrm{H}_{\tilde Q}(\tilde T)$, bound where the operator is defined, and specific matrices such as $\tilde T=\tfrac12(i\vec e_x+\vec e_y)$</td>
+<td>30</td>
 </tr>
 <tr>
 <td>$\tilde W$</td>
-<td>General element of the algebra</td>
-<td>—</td>
-<td>A general element; a basis element of the spinor module. The energy–momentum four-vector $\tilde W$ keeps its tilde and is listed in section 1.</td>
-<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
-<td>39</td>
-</tr>
-<tr>
-<td>$\tilde w$</td>
-<td>General element or unit quaternion</td>
-<td>$\{L_{\tilde w}:\operatorname{Re}\tilde w=\operatorname{Re}\tilde q\}$</td>
-<td>A general element, as in the class</td>
-<td>Write $\tilde q$, $\tilde q_1$ or $\tilde q_2$; write $\tilde U$ when the element is unitary. The LSZ article uses it as a constant amplitude.</td>
-<td>3</td>
-</tr>
-<tr>
-<td>$\tilde F$</td>
-<td>Placeholder</td>
-<td>—</td>
-<td>In the identity $\tilde\nabla\tilde F$ the letter stands for an arbitrary algebra-valued field. The letter is the field strength and is never generic</td>
-<td>$\tilde\nabla\tilde Q$, or bind the field where it is introduced.</td>
-<td>107</td>
+<td>a general element and a basis element of the spinor module</td>
+<td>the energy–momentum four-vector of section 1, and dummies bound in a statement</td>
+<td>32</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Only the Q family is generic, and the five letters are not.</strong> No article writes $\tilde X$, $\tilde x$, $\tilde Y$, $\tilde y$ or $\tilde Z$ for an arbitrary element. The scan found the five in $8$, $6$, $12$, $1$ and $12$ articles respectively; the only generic use, $E_{11}\tilde XE_{11}+E_{22}\tilde XE_{22}$ of <em>The Enveloping Operator Algebra of the General Plain Sesqualgebra and the Bi-Module Structure</em>, is now $E_{11}\tilde Q_3E_{11}+E_{22}\tilde Q_3E_{22}$, so $\tilde X$ occurs in $8$ articles. The rest are bound letters, marks that are not the element tilde, or named objects. The bound letters are the coordinate letters $\tilde Y$ and $\tilde Z$ of the Green's-function, propagator and electro-gravimagnetic articles; the noncommutative coordinate $\tilde x_i$; the base point $\tilde x$ of <em>The Geodesic Flow</em>; the coefficient sequence $\tilde X^{(n)}$ of <em>Ordinary Differential Equations</em>; and the witnesses $\tilde X=T(e_t)$, $\tilde X=(\tilde Q^{\natural})^{*}$, $\tilde X=e_0+ie_1$, $\tilde x=\tilde q_1\tilde q_2$, $\tilde y=\tilde q_3$, $\tilde Y=\tilde Q_2^{*}$, $\tilde\Upsilon\star\tilde\Upsilon=\tilde Z$, $\tilde Z=c\,e_t$ and $\tilde Z=\tilde U^{*}\tilde U$. The reversion mark $\tilde x$ of the Clifford articles, where the Clifford conjugation is $\hat x=\alpha(\tilde x)$, marks an operation and is not a bound element. The named objects are the Pauli gates $\tilde X=i\vec e_x$, $\tilde Y=i\vec e_y$ and $\tilde Z=i\vec e_z$; each is a pure root, so §<em>Pure Elements and their Coefficients</em> gives the arrow priority over the tilde, and their tildes are a defect of mark, not an allowed use and not a generic claim. The phase-space biquaternion of <em>The Symplectic Form and the Biquaternion Norm Cone</em> is $\vec Z=\vec q+i\vec p$, and <em>The Cone and the Massless Particles</em> now quotes it with the same arrow, so $\tilde Z$ also falls to $12$ articles. The five rows are removed.</p>
+<p><strong>The field strength was never a defect.</strong> $\tilde F$ is the electromagnetic field strength, a specific object of section 1, in all $107$ articles. The row is removed without a rewrite.</p>
+<p><strong>The generic sites that were rewritten.</strong> The articles that lost the letter entirely are the record: <em>The Classes of Element of the Split Complex Algebra</em>, <em>The Slices of the Biquaternion Julia Sets</em> and <em>The Squares and the Positive Cone of the Biquaternioid Sesqualgebra</em> for $\tilde A$; the last two and <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em> for $\tilde B$; <em>Modules over the Quaternion Algebra</em>, <em>Quaternion Analysis</em>, <em>The Quaternioid as a Vector Space over $\mathbb{R}$</em> and <em>The Sandwich Operator on an Algebra</em> for $\tilde r$; seven algebra articles for $\tilde T$. Each site now writes the Q family or binds the letter where it stands.</p>
+<p><strong>No other glyph is generic.</strong> The scan finds no generic use outside the Q family: $\tilde A$, $\tilde B$, $\tilde C$, $\tilde c$, $\tilde M$, $\tilde r$, $\tilde T$ and $\tilde W$ are bound where they stand or name a specific object, as the table records. The letters $\tilde X$, $\tilde x$, $\tilde Y$, $\tilde y$ and $\tilde Z$ occur only as the specific objects recorded below, never for an arbitrary element.</p>
+<p>$\tilde p$ is not generic. The maths articles bind it where the multiplication is defined, $L_{\tilde p}(\tilde q_3)=\tilde p^{\natural}\tilde q_3$ for $\tilde p\in\mathbb{H}$; the physics articles use the canonical momentum of section 1. The row is therefore removed from this section.</p>
+<p><strong>$\tilde w$ is retired.</strong> The glyph named the unit dummy of <em>Four-Dimensional Rotations</em>, now $\tilde u$, and the amplitude of <em>The LSZ Reduction Formula in Biquaternionic Form</em>, now $\tilde Q_{\mathrm{amp}}$ in §<em>The Fields</em>; it no longer occurs in the corpus.</p>
+<p><strong>Only the Q family is generic, and the five letters are not.</strong> No article writes $\tilde X$, $\tilde x$, $\tilde Y$, $\tilde y$ or $\tilde Z$ for an arbitrary element. The only generic dummy, $E_{11}\tilde XE_{11}+E_{22}\tilde XE_{22}$ of <em>The Enveloping Operator Algebra of the General Plain Sesqualgebra and the Bi-Module Structure</em>, is now $E_{11}\tilde Q_3E_{11}+E_{22}\tilde Q_3E_{22}$. The Pauli gates, written $\tilde X=i\vec e_x$, $\tilde Y=i\vec e_y$ and $\tilde Z=i\vec e_z$ in the gates, contextuality, teleportation, mutually-unbiased-bases and Born-rule articles, are pure and unitary: §<em>The Unitary Convention</em> gives the glyph $\vec U$, and §<em>Pure Elements and their Coefficients</em> gives the arrow priority over the tilde, so the five articles now write $\vec U_x$, $\vec U_y$ and $\vec U_z$, which are arrowed and outside the scope of this catalogue. The rest are bound letters or marks that are not the element tilde: the coordinate letters $\tilde Y$ and $\tilde Z$ of the Green's-function, propagator and electro-gravimagnetic articles; the noncommutative coordinate $\tilde x_i$; the base point $\tilde x$ of <em>The Geodesic Flow</em>; the coefficient sequence $\tilde X^{(n)}$ of <em>Ordinary Differential Equations</em>; the phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$ of the Lagrangian and action-principle articles, where $\tilde q$ is general and $\tilde p$ is the canonical momentum of section 1; and the witnesses $\tilde X=T(e_t)$, $\tilde X=(\tilde Q^{\natural})^{*}$, $\tilde X=e_0+ie_1$, $\tilde x=\tilde q_1\tilde q_2$, $\tilde y=\tilde q_3$, $\tilde Y=\tilde Q_2^{*}$, $\tilde\Upsilon\star\tilde\Upsilon=\tilde Z$, $\tilde Z=c\,e_t$ and $\tilde Z=\tilde U^{*}\tilde U$. The Clifford reversion $\tilde x$ of $\hat x=\alpha(\tilde x)$ is the reverse of $x$ and names no layer. After these rewrites the five occur in $4$, $6$, $7$, $1$ and $8$ articles, with $23$, $14$, $41$, $3$ and $66$ tokens. The five rows are removed.</p>
 <p>The generic $\tilde R$ and $\tilde z$ no longer occur: every remaining $\tilde R$ is the material four-position of section 1, and no article writes $\tilde z$. Their rows are removed.</p>
 <p>$\tilde h$ no longer occurs. The generic uses, in four articles, are now the real quaternions $\tilde q_1,\tilde q_2$ and the row element and differential increment $\tilde q$, and the stabilizer summation dummy of the quantum-error-correction article is written $\tilde Q$, bound by the sum. The two rows are removed.</p>
-<p>The two bound letters of the previous scan, a and b, no longer carry a tilde anywhere in the biquaternion corpus. The translation four-vector of the Poincaré, Noether, collision and conformal articles is $\tilde R_0$, a bound variant of the material four-position $\tilde R$, with $\tilde R_1$ for the second translation of the normality proof; the ladder operators of <em>The Harmonic Oscillator in Biquaternionic Form</em> take the plain operator letters $a,a^\dagger$; the similarity coefficients are $\tilde\alpha,\tilde\beta,\tilde\gamma$; and the displacements of the causality proof and the invariant pairing of <em>The Classical Spinning Particle</em> are $\tilde Q_1,\tilde Q_2$. The two rows are removed, and no bound use of either letter remains.</p>
+<p>The two bound letters of the previous scan, a and b, no longer carry a tilde anywhere in the biquaternion corpus. The translation four-vector of the Poincaré, Noether, collision and conformal articles is $\tilde R_0$, a bound variant of the material four-position $\tilde R$, with $\tilde R_1$ for the second translation of the normality proof; the ladder operators of <em>The Harmonic Oscillator in Biquaternionic Form</em> take the plain operator letters $a,a^\dagger$; the similarity coefficients are the numbered generic elements $\tilde q_1,\tilde q_2,\tilde q_3$; and the displacements of the causality proof and the invariant pairing of <em>The Classical Spinning Particle</em> are $\tilde Q_1,\tilde Q_2$. The two rows are removed, and no bound use of either letter remains.</p>
 <p>The trace dummy is resolved: the general identity is written $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ and the pairing $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ across the corpus. The physical pairing of a state and a Hamiltonian, $\mathrm{Tr}(\tilde P\tilde H)=\langle u|H|u\rangle$, keeps its letters.</p>
       </div>
     </main>

@@ -108,12 +108,12 @@ $$</p>
 <p>with the physical measure $d^3y\,dt'$ for the convolution, exactly as the companion exercise <em>The Retarded Potentials and the Green's Function</em> fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-\mu^2)G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $\mu=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(t-R/c)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.</p>
 <p>A second convention is fixed at the same time: the whole article works with the operator $\Box-\mu^2$ and never with $-\Box+\mu^2$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$, the defining equation becomes</p>
 <p>$$
-\int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-\mu^2\right)\tilde{G}(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))
+\int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-\mu^2\right)G(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))
 =-\int\frac{d^4p}{(2\pi)^4}\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)),
 $$</p>
 <p>so the amplitude is</p>
 <p>$$
-\tilde{G}(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2}
+G(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2}
 =\frac{-1}{p^2-\mu^2},
 \qquad
 p^2\equiv\omega^2-\vec p^2 .
@@ -309,10 +309,10 @@ $$</p>
 <h3 id="momentum-space-and-the-contour">Momentum space and the contour</h3>
 <p>The <strong>Feynman propagator</strong> is the Green's function whose poles are displaced to opposite sides of the real axis,</p>
 <p>$$
-\tilde{G}_F(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2-i\epsilon}
+G_F(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2-i\epsilon}
 =\frac{-1}{p^2-\mu^2+i\epsilon},
 \qquad
-G_F(\tilde{R})=\int\frac{d^4p}{(2\pi)^4}\,\tilde{G}_F(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)) .
+G_F(\tilde{R})=\int\frac{d^4p}{(2\pi)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)) .
 $$</p>
 <p>Its frequency integral was given above; its position-space content is the time-ordered correlation function,</p>
 <p>$$
@@ -345,7 +345,7 @@ $$</p>
 \int d^3y\,dt'\;G_F(\tilde{R}-\tilde{Y})\,\left[-\bigl(\Box_{\tilde{Y}}-\mu^2\bigr)\right]\delta^{(4)}(\tilde{Y}-\tilde{Z})
 =\delta^{(4)}(\tilde{R}-\tilde{Z}),
 $$</p>
-<p>the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde{R}-\tilde{Y})[-\bigl(\Box_{\tilde{Y}}-\mu^2\bigr)]G_F(\tilde{Y}-\tilde{Z})=G_F(\tilde{R}-\tilde{Z})$, which is the same statement. In momentum space this is the statement $\tilde{G}_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article <em>The Klein–Gordon Path Integral in Biquaternionic Form</em> obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.</p>
+<p>the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde{R}-\tilde{Y})[-\bigl(\Box_{\tilde{Y}}-\mu^2\bigr)]G_F(\tilde{Y}-\tilde{Z})=G_F(\tilde{R}-\tilde{Z})$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article <em>The Klein–Gordon Path Integral in Biquaternionic Form</em> obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <p>Three facts summarize what the framework does and does not contribute to the Klein–Gordon propagator.</p>
 <p><strong>The kernel is central, and the module is a spectator.</strong> The operator $\Box-\mu^2$ is a central scalar, so every Green's function is a central scalar times $e_t$, and the whole construction is the scalar construction tensored with the identity on the state module. This is not a deficiency but the exact statement of spin $0$: a scalar field has no internal index for a non-central kernel to act on. The companion article <em>The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module</em> shows why this must be so, and the present article exhibits it at the level of the kernel.</p>
@@ -374,7 +374,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The Klein–Gordon operator $(\Box-\mu^2)$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-\mu^2)G=-\delta^{(4)}$, matching the electromagnetism exercise at $\mu=0$, the momentum-space amplitude is $\tilde{G}=-(p^2-\mu^2)^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2+\mu^2}$.</p>
+<p>The Klein–Gordon operator $(\Box-\mu^2)$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-\mu^2)G=-\delta^{(4)}$, matching the electromagnetism exercise at $\mu=0$, the momentum-space amplitude is $G=-(p^2-\mu^2)^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2+\mu^2}$.</p>
 <p>The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\theta(t)\sin(\Omega_{\vec p}t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=\mu\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(\mu\sqrt{t^2-r^2})$; and differentiation gives the closed form</p>
 <p>$$
 G_R(\tilde{R})
@@ -451,7 +451,7 @@ $$</p>
 <td>On-shell frequency, natural units</td>
 </tr>
 <tr>
-<td>$\tilde{G}(\omega,\vec p)=(\vec p^2+\mu^2-\omega^2)^{-1}$</td>
+<td>$G(\omega,\vec p)=(\vec p^2+\mu^2-\omega^2)^{-1}$</td>
 <td>Momentum-space kernel, $(\Box-\mu^2)G=-\delta^{(4)}$</td>
 </tr>
 <tr>

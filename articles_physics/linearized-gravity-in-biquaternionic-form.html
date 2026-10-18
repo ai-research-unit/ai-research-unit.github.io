@@ -156,21 +156,21 @@ $$</p>
 $$</p>
 <p>reproduces it exactly, since $\langle \varepsilon_\mu, \tfrac{1}{2}h_{\nu\lambda}\varepsilon^\lambda\rangle_{\natural} = \tfrac{1}{2}h_{\nu\mu}$ and the two terms add to $h_{\mu\nu}$. Both statements were checked by direct computation, the surjectivity on randomly generated symmetric perturbations rather than on the expression that suggested it.</p>
 <h3 id="the-counting">The Counting</h3>
-<p>The frame perturbation has $4 \times 4 = 16$ real components; a symmetric $h_{\mu\nu}$ has $10$. The difference is accounted for by the <strong>local Lorentz transformations</strong> of the frame. If $\tilde{U} = e_t + \tilde{G}$ is an infinitesimal unit-norm biquaternion, the frame transforms as</p>
+<p>The frame perturbation has $4 \times 4 = 16$ real components; a symmetric $h_{\mu\nu}$ has $10$. The difference is accounted for by the <strong>local Lorentz transformations</strong> of the frame. If $\tilde{U} = e_t + \vec G$ is an infinitesimal unit-norm biquaternion, the frame transforms as</p>
 <p>$$
 \tilde{E}_\mu \;\longmapsto\; \tilde{U}\tilde{E}_\mu\tilde{U}^{*}
-= \tilde{E}_\mu + \tilde{G}\tilde{E}_\mu + \tilde{E}_\mu\tilde{G}^{*} + O(\tilde{G}^2),
+= \tilde{E}_\mu + \vec G\tilde{E}_\mu + \tilde{E}_\mu\vec G^{*} + O(\vec G^2),
 $$</p>
 <p>and at linear order, with $\tilde{E}_\mu$ replaced by $\varepsilon_\mu$ in the correction,</p>
 <p>$$
-\delta\tilde{E}_\mu \;\longmapsto\; \delta\tilde{E}_\mu + \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^{*} .
+\delta\tilde{E}_\mu \;\longmapsto\; \delta\tilde{E}_\mu + \vec G\varepsilon_\mu + \varepsilon_\mu\vec G^{*} .
 $$</p>
-<p>The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\tilde{G} + \tilde{G}^{\natural} = 0$, which says that $\tilde{G}$ is a <strong>complex pure vector</strong>, $\tilde{G} \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$. Its elements leave the metric perturbation invariant:</p>
+<p>The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ linearizes to $\vec G + \vec G^{\natural} = 0$, which says that $\vec G$ is a <strong>complex pure vector</strong>, $\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z, i\vec e_x, i\vec e_y, i\vec e_z\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$. Its elements leave the metric perturbation invariant:</p>
 <p>$$
-\langle \varepsilon_\mu, \tilde{G}\varepsilon_\nu + \varepsilon_\nu\tilde{G}^{*}\rangle_{\natural}
-+ \langle \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^{*}, \varepsilon_\nu\rangle_{\natural} = 0,
+\langle \varepsilon_\mu, \vec G\varepsilon_\nu + \varepsilon_\nu\vec G^{*}\rangle_{\natural}
++ \langle \vec G\varepsilon_\mu + \varepsilon_\mu\vec G^{*}, \varepsilon_\nu\rangle_{\natural} = 0,
 $$</p>
-<p>because the infinitesimal rotor conjugation preserves the bilinear form. This is the kernel of the map $\delta\tilde{E}_\mu \mapsto h_{\mu\nu}$, and it has dimension $6$, so $16 - 6 = 10$, the dimension of the metric. A computation that included an $e_t$ component in $\tilde{G}$ — which the unit-norm condition forbids — gives a nonzero shift of $h$; the restriction to the complex pure vector part is what makes the kernel statement exact. Both the vanishing shift and the failure without the restriction were checked.</p>
+<p>because the infinitesimal rotor conjugation preserves the bilinear form. This is the kernel of the map $\delta\tilde{E}_\mu \mapsto h_{\mu\nu}$, and it has dimension $6$, so $16 - 6 = 10$, the dimension of the metric. A computation that included an $e_t$ component in $\vec G$ — which the unit-norm condition forbids — gives a nonzero shift of $h$; the restriction to the complex pure vector part is what makes the kernel statement exact. Both the vanishing shift and the failure without the restriction were checked.</p>
 <h3 id="an-external-variant-frame-fields-that-carry-their-own-connection">An External Variant: Frame Fields That Carry Their Own Connection</h3>
 <p>An external construction dispenses with the vierbein altogether, and it linearises onto exactly this section's frame perturbation. J. Fredsted (<em>Spinor fields without Lorentz frames in curved spacetime using complexified quaternions</em>, arXiv:0811.1357v4 [math-ph], 2009) takes as primitive not a frame field in a fixed background but four $\mathbb{M}_-$-valued fields $s_\mu$ that play the roles of basis, metric and connection data at once. The metric is the polar form $g_{\mu\nu} = \langle s_\mu, s_\nu\rangle$, the local Lorentz freedom is the rotor conjugation $s_\mu \mapsto \Lambda s_\mu\bar{\Lambda}$ with $\Lambda$ in $Sp(1,\mathbb{C}) \cong SL(2,\mathbb{C})$, and — the part that has no counterpart in this article's frame route — the connection is <strong>not inserted beside the frame but determined by it</strong>, through the algebraic vielbein postulate $D_\rho s_\nu \equiv 0$ with $D_\rho s_\nu = \partial/\partial x^\rho s_\nu + \omega_\rho s_\nu + s_\nu\bar{\omega}_\rho^* - \Gamma^\mu{}_{\nu\rho}s_\mu$. Solving for the coefficients gives</p>
 <p>$$
@@ -389,7 +389,7 @@ $$</p>
 <td>Trace-reversed frame perturbation</td>
 </tr>
 <tr>
-<td>$\tilde{G} \in \mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$</td>
+<td>$\vec G \in \mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$</td>
 <td>Infinitesimal local Lorentz generator (complex pure vector)</td>
 </tr>
 <tr>

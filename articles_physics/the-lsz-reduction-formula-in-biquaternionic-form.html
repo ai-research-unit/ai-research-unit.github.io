@@ -130,12 +130,12 @@ agreeing with $-m^2=-0.49$ to machine precision. The on-shell condition and the 
 <p>The external legs carry the framework's plane waves, and this is where the reduction meets the algebra's complex structure.</p>
 <p><strong>Central-phase plane waves.</strong> The biquaternion plane wave
 $$
-\tilde\Phi_{\tilde P}(\tilde{R}) = \tilde w\,\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{R})) ,
+\tilde\Phi_{\tilde P}(\tilde{R}) = \tilde Q_{\mathrm{amp}}\,\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{R})) ,
 \qquad
 \tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
 $$
-with $\tilde w$ a constant biquaternion amplitude, satisfies $(\Box-m^2)\tilde\Phi_{\tilde P}=0$ for $\tilde P\tilde P^{\natural}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde P\tilde P^{\natural}+m^2)=-\mathcal{M}(\tilde P)$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde{R})=p\cdot x$, so the wave is a <strong>central-phase</strong> plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.</p>
-<p><strong>The one-particle states.</strong> The asymptotic states are one-particle states of the Fock module of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, labeled by on-shell momenta and by the internal (spinor or helicity) label carried by the module. The external wavefunction is the module vector $\tilde w$ times the central phase, and the LSZ integral projects a correlation function onto that module vector.</p>
+with $\tilde Q_{\mathrm{amp}}$ a constant biquaternion amplitude, a bound element of $\mathbb{B}$ whose complex scalar part fixes the majuscule. The wave satisfies $(\Box-m^2)\tilde\Phi_{\tilde P}=0$ for $\tilde P\tilde P^{\natural}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde P\tilde P^{\natural}+m^2)=-\mathcal{M}(\tilde P)$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde{R})=p\cdot x$, so the wave is a <strong>central-phase</strong> plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.</p>
+<p><strong>The one-particle states.</strong> The asymptotic states are one-particle states of the Fock module of <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>, labeled by on-shell momenta and by the internal (spinor or helicity) label carried by the module. The external wavefunction is the constant amplitude $\tilde Q_{\mathrm{amp}}$ times the central phase; for a scalar field it is an element of $\mathbb{B}$, while for a spinor field the same slot carries the module vector $w^{(r)}$ of the spinor section, bare by the rule that a spinor carries no tilde. The LSZ integral projects a correlation function onto that amplitude.</p>
 <p><strong>Momentum conservation.</strong> The integrals over the leg positions produce the momentum-conserving delta function
 $$
 (2\pi)^4\delta^{(4)}\Big(\sum p_i-\sum p'_j\Big),
@@ -305,6 +305,10 @@ verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$. Amputation is
 <tr>
 <td>$\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$</td>
 <td>Spinor mass-shell operator</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\mathrm{amp}}$</td>
+<td>Constant biquaternion amplitude of the central-phase plane wave; a bound element of $\mathbb{B}$ with a complex scalar part, hence the majuscule</td>
 </tr>
 <tr>
 <td>$w^{(r)},v^{(r)}$</td>

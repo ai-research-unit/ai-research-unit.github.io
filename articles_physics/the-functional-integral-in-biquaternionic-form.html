@@ -62,7 +62,7 @@ and its derivatives generate the correlation functions of the theory. The two in
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
-which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$ — the signature split — and for a field $\tilde\Phi=\tilde\phi_-+\tilde\phi_+$ and a central kinetic operator $\tilde K=\Box-m^2$ the quadratic action is
+which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$ — the signature split — and for a field $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and a central kinetic operator $\tilde K=\Box-m^2$ the quadratic action is
 $$
 S[\tilde\Phi] = \int d^4x\; \Big\langle \tilde\Phi, \tilde K\tilde\Phi\Big\rangle,
 \qquad
@@ -70,8 +70,8 @@ S[\tilde\Phi] = \int d^4x\; \Big\langle \tilde\Phi, \tilde K\tilde\Phi\Big\rangl
 $$
 The trace pairing is what makes the exponent a number and not a biquaternion. Because $\tilde K$ is central it preserves each sector, and the sectors are <strong>orthogonal</strong> under the real form,
 $$
-\big\langle \tilde\phi_-,\tilde\phi_+\big\rangle = 0
-\qquad\text{for all } \tilde\phi_\pm\in\mathbb{M}_\pm ,
+\big\langle \tilde\Phi_-,\tilde\Phi_+\big\rangle = 0
+\qquad\text{for all } \tilde\Phi_\pm\in\mathbb{M}_\pm ,
 $$
 checked identically over the sector bases. Hence the free functional integral <strong>factorizes</strong> over the two sectors,
 $$
@@ -112,9 +112,9 @@ $$
 $$
 with complex coefficients $\Phi_\mu(x)$. The field decomposes along the sectors,
 $$
-\tilde\Phi = \tilde\phi_- + \tilde\phi_+ ,
+\tilde\Phi = \tilde\Phi_- + \tilde\Phi_+ ,
 \qquad
-\tilde\phi_\pm = \tfrac12\big(\tilde\Phi \pm \tilde\Phi^{\flat}\big)\in \mathbb{M}_\pm ,
+\tilde\Phi_\pm = \tfrac12\big(\tilde\Phi \pm \tilde\Phi^{\flat}\big)\in \mathbb{M}_\pm ,
 $$
 where $\flat=-{}^{*}$ is the anti-Hermitian conjugation; this is the field-level use of the sector split that <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> and <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> establish.</p>
 <p><strong>The action must be a scalar, and the algebra supplies the extraction.</strong> A biquaternion is not a number, so a Lagrangian built from $\tilde\Phi$ is not automatically an action. The framework's scalar extraction is the trace, whose $e_t$ coefficient,
@@ -161,22 +161,22 @@ $$
 the zero-source integral is $Z_0=(2\pi)^{3/2}(\det K)^{-1/2}=8.9165$ and, for $J=(0.4,-0.7,1.1)$, $Z[J]=Z_0\exp(\tfrac12 J^T K^{-1}J)=23.964$, both to the accuracy shown. It is the real form that the biquaternion field's quadratic form requires, since the action is built from $\mathrm{Sc}$ and hence from a real bilinear pairing; the complex form displayed above, $Z_0=(2\pi)^n/\det K$, is the one appropriate to a complex field and gives the correspondingly larger prefactor for the same matrix. In one dimension, $W[J]-W[0]=J^2/(2a)$ for $K=a$ was checked on $a=1.7$, $J=0.9$, giving $0.23824$, equal to $J^2/(2a)$ to machine precision. The source-dependent part of the free energy is thus the classical action of the free field evaluated on the source, with the factor $\tfrac12$ that the Gaussian integration produces.</p>
 <h2 id="sector-factorization">Sector Factorization</h2>
 <p>The central kinetic operator does not mix the sectors, and this makes the free integral factorize.</p>
-<p><strong>The cross term vanishes.</strong> Write $\tilde\Phi=\tilde\phi_-+\tilde\phi_+$ and expand the real form:
+<p><strong>The cross term vanishes.</strong> Write $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and expand the real form:
 $$
 \Big\langle\tilde\Phi,\tilde K\tilde\Phi\Big\rangle
-= \mathrm{Re}\,\mathrm{Tr}\Big(\tilde K\big(\tilde\phi_-^{*}\tilde\phi_- + \tilde\phi_+^{*}\tilde\phi_+ + \tilde\phi_-^{*}\tilde\phi_+ + \tilde\phi_+^{*}\tilde\phi_-\big)\Big),
+= \mathrm{Re}\,\mathrm{Tr}\Big(\tilde K\big(\tilde\Phi_-^{*}\tilde\Phi_- + \tilde\Phi_+^{*}\tilde\Phi_+ + \tilde\Phi_-^{*}\tilde\Phi_+ + \tilde\Phi_+^{*}\tilde\Phi_-\big)\Big),
 $$
 using the centrality of $\tilde K$. The first two terms are the sector norms; the last two are cross terms. For the cross terms one has the identity
 $$
-\mathrm{Re}\,\mathrm{Tr}\big(\tilde\phi_-^{*}\tilde\phi_+\big) = 0 = \mathrm{Re}\,\mathrm{Tr}\big(\tilde\phi_+^{*}\tilde\phi_-\big)
-\qquad\text{for all } \tilde\phi_\pm\in\mathbb{M}_\pm .
+\mathrm{Re}\,\mathrm{Tr}\big(\tilde\Phi_-^{*}\tilde\Phi_+\big) = 0 = \mathrm{Re}\,\mathrm{Tr}\big(\tilde\Phi_+^{*}\tilde\Phi_-\big)
+\qquad\text{for all } \tilde\Phi_\pm\in\mathbb{M}_\pm .
 $$</p>
-<p><strong>Proof.</strong> It suffices to check the statement on the sector bases, since the real form is bilinear. For $\tilde\phi_- = \sum_\mu a_\mu b^-_\mu$ with $b^-_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\tilde\phi_+ = \sum_\nu c_\nu b^+_\nu$ with $b^+_\nu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, each elementary term is $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} b^+_\nu)$. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
+<p><strong>Proof.</strong> It suffices to check the statement on the sector bases, since the real form is bilinear. For $\tilde\Phi_- = \sum_\mu a_\mu b^-_\mu$ with $b^-_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\tilde\Phi_+ = \sum_\nu c_\nu b^+_\nu$ with $b^+_\nu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, each elementary term is $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} b^+_\nu)$. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
 <p><strong>Consequence: factorisation.</strong> With the source split as $\tilde J=\tilde J_-+\tilde J_+$, the free functional integral is
 $$
-Z_0[\tilde J] = \int\mathcal{D}\tilde\phi_-\,\exp(-\frac12\langle\tilde\phi_-,\tilde K\tilde\phi_-\rangle+\langle\tilde J_-,\tilde\phi_-\rangle)
+Z_0[\tilde J] = \int\mathcal{D}\tilde\Phi_-\,\exp(-\frac12\langle\tilde\Phi_-,\tilde K\tilde\Phi_-\rangle+\langle\tilde J_-,\tilde\Phi_-\rangle)
 \times
-\int\mathcal{D}\tilde\phi_+\,\exp(-\frac12\langle\tilde\phi_+,\tilde K\tilde\phi_+\rangle+\langle\tilde J_+,\tilde\phi_+\rangle)
+\int\mathcal{D}\tilde\Phi_+\,\exp(-\frac12\langle\tilde\Phi_+,\tilde K\tilde\Phi_+\rangle+\langle\tilde J_+,\tilde\Phi_+\rangle)
 = Z_-[J_-]\,Z_+[J_+] .
 $$
 Each factor is a Gaussian integral on one sector's four-real-dimensional space, of the form evaluated above. The free quadratic form is therefore <strong>block diagonal</strong>, and the free integral factorizes into a Gaussian on each sector; the sectors are coupled only through an interaction $S_{\mathrm{int}}$ that is not sector-diagonal. A central kinetic operator cannot couple them; a chirality-off-diagonal Dirac mass can, because it is a right multiplication and so is not central.</p>
@@ -251,7 +251,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 <h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
 <p><strong>Established (algebra).</strong>
 - The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde\Phi^{\natural}\tilde K\tilde\Phi)$; the trace pairing is the scalar extraction.
-- For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde\phi^{\natural}_-\tilde\phi_+)$ vanish identically over the sector bases, so the free quadratic form is block diagonal and the free functional integral factorizes, $Z_0=Z_-\cdot Z_+$.
+- For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde\Phi^{\natural}_-\tilde\Phi_+)$ vanish identically over the sector bases, so the free quadratic form is block diagonal and the free functional integral factorizes, $Z_0=Z_-\cdot Z_+$.
 - The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}\exp(\frac12\langle J,K^{-1}J\rangle)$ on the module; checked in finite dimension with explicit Hermitian matrices.
 - The Wick rotation is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ and turns $\exp(iS)$ into $\exp(-S_E)$.
 - The $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ fixes the null cones and the causal relation on which the causally complete regions are built, and microcausality — the vanishing of the field commutator outside the light cone — is the operator form of Einstein causality; the wedge with $\tilde K_W=2\pi G_1$ is the one fully worked causally complete region.</p>
@@ -264,11 +264,11 @@ with the spinor structure carried by the module and the mass term linear and chi
 - Whether the sector factorization has consequences for anomaly or theta-vacuum structure — where a non-central operator is essential — is taken up in <em>The Trace Anomaly in Biquaternionic Form</em> and <em>The Theta Vacuum in Biquaternionic Form</em>.
 - The determinant is not computed here; its computation and regularization are the subject of <em>The Functional Determinant in Biquaternionic Form</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde\Phi=\tilde\phi_-+\tilde\phi_+$ and a central kinetic operator $\tilde K=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$,
+<p>The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and a central kinetic operator $\tilde K=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$,
 $$
 S[\tilde\Phi]=\int d^4x\;\Big\langle\tilde\Phi,\tilde K\tilde\Phi\Big\rangle,
 \qquad
-\Big\langle\tilde\phi_-,\tilde\phi_+\Big\rangle=0 ,
+\Big\langle\tilde\Phi_-,\tilde\Phi_+\Big\rangle=0 ,
 $$
 the cross terms vanishing identically over the sector bases (their real part is exactly zero; the leftover complex cross part is purely imaginary and central), so that
 $$
@@ -304,7 +304,7 @@ The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.916
 <td>Real-quaternion subspace; centre</td>
 </tr>
 <tr>
-<td>$\tilde\Phi=\tilde\phi_-+\tilde\phi_+$</td>
+<td>$\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$</td>
 <td>Biquaternion field and its sector parts</td>
 </tr>
 <tr>
