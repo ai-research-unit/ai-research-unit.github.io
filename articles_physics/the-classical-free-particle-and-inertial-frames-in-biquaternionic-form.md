@@ -81,7 +81,7 @@ The four-vectors of relativistic kinematics, and the constraints they satisfy, a
 The free particle is defined by the vanishing of the four-force,
 
 $$
-\tilde{F} = \frac{d\tilde{P}}{d\tau} = 0 .
+\tilde{K}_{\mathrm{f}} = \frac{d\tilde{P}}{d\tau} = 0 .
 $$
 
 Since $\tilde{P} = m\tilde{V}$ and $m$ is constant, this says that the four-velocity is constant, $\tilde{V} = \tilde{V}_0$, and integrating once gives the straight worldline
@@ -95,7 +95,7 @@ with $\vec v$ a constant real vector. In words: the free particle moves with con
 Differentiating the constraint along the worldline expresses the orthogonality of the four-force to the four-momentum,
 
 $$
-\tilde{F}\overline{\tilde{P}} + \tilde{P}\overline{\tilde{F}} = 0 ,
+\tilde{K}_{\mathrm{f}}\overline{\tilde{P}} + \tilde{P}\overline{\tilde{K}_{\mathrm{f}} = 0 ,
 $$
 
 which is the biquaternion form of $f^\mu p_\mu = 0$. For the free particle both terms vanish separately; for a forced particle the identity says that a four-force can turn the four-momentum but cannot change its norm, and hence cannot change the rest mass.
@@ -255,7 +255,7 @@ The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the alg
 | Four-velocity $v^\mu$ | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $\mathbb{M}_-$ |
 | Mass shell $v^\mu v_\mu = -c^2$ | $\tilde{V}\overline{\tilde{V}} = -c^2$ | constraint in $\mathbb{M}_-$ |
 | Four-momentum $p^\mu = (E/c, \vec p)$ | $\tilde{P} = i(E/c)e_t + \vec p$ | $\mathbb{M}_-$ |
-| Four-force $f^\mu$ | $\tilde{F} = d\tilde{P}/d\tau$ | $\mathbb{M}_-$ |
+| Four-force $f^\mu$ | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $\mathbb{M}_-$ |
 | Lorentz transformation $\Lambda^\mu{}_\nu$ | rotor conjugation $\tilde U(\cdot)\tilde U^{*}$ | rotor in $\mathbb{B}$ |
 | Boost | $\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$ |
 | Spatial rotation | $R(\cdot)R^{-1}$ | $\mathbb{H}_{\mathbb{B}}$ |
@@ -271,7 +271,7 @@ $$
 \tilde{R}(t) = ic\,t\,e_t + x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + \vec v\,t \in \mathbb{M}_- ,
 $$
 
-with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{M}_-$, and constrained by the mass-shell relation $\tilde{P}\overline{\tilde{P}} = -m^2c^2$. The free particle satisfies $\tilde{F} = d\tilde{P}/d\tau = 0$, which is Newton's first law.
+with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{M}_-$, and constrained by the mass-shell relation $\tilde{P}\overline{\tilde{P}} = -m^2c^2$. The free particle satisfies $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau = 0$, which is Newton's first law.
 
 Inertial frames are the unit-norm biquaternions $\tilde U \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U^{*}$. The action is linear, preserves $\mathbb{M}_-$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.
 
@@ -294,7 +294,7 @@ The free particle occupies only the material sector, carries no internal vector,
 | $\vec v$, $\vec V$ | Particle velocity; frame velocity |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, in $\mathbb{M}_-$; $\tilde{V}\overline{\tilde{V}} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$ | Four-momentum; $\tilde{P}\overline{\tilde{P}} = -m^2c^2$ |
-| $\tilde{F} = d\tilde{P}/d\tau$ | Four-force; $\tilde{F} = 0$ for the free particle |
+| $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | Four-force; $\tilde{K}_{\mathrm{f}} = 0$ for the free particle |
 | $\tilde U \in \mathbb{B}$, $\tilde U\overline{\tilde U} = e_t$ | Lorentz rotor; frame transformation |
 | $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U^{*}$ | Rotor conjugation (frame change) |
 | $\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, in $\mathbb{M}_+$; $\tanh\psi = V/c$ |

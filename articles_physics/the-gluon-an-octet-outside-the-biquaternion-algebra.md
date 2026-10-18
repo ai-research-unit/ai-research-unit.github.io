@@ -94,7 +94,7 @@ $$
 $$
 so that the gluon is charged under its own gauge group and interacts with itself.
 
-The fields $G^a_\mu$ and the field strengths $G^a_{\mu\nu}$ are the standard real QCD fields, and no colour matrix carries a tilde: the tilde marks an element of $\mathbb{B}$, not a matrix. The framework's biquaternion for a fixed colour component is $\tilde G$, and its free field strength is $\tilde F$ of §*What the Framework Reaches: The Free Constituent*.
+The fields $G^a_\mu$ and the field strengths $G^a_{\mu\nu}$ are the standard real QCD fields, and no colour matrix carries a tilde: the tilde marks an element of $\mathbb{B}$, not a matrix. The octet is Lie-algebra-valued, so the potential and the field strength carry a colour index and take no single-element glyph; a fixed colour component is read through the abelian biquaternion of *The Photon in Biquaternionic Form*.
 
 ### Asymptotic Freedom and Confinement
 
@@ -113,14 +113,7 @@ Three facts about the octet are the ones to hold against the algebra. Its dimens
 
 ## What the Framework Reaches: The Free Constituent
 
-The framework reaches the gluon as a free field. Fix a colour index $a$; the component $G^a_\mu$ is a massless, neutral, spin-one field whose free equation is the Maxwell equation of the companion articles. Its biquaternion potential is $\tilde G=iG^a_t e_t+\vec G^a\in\mathbb{M}_-$, in the convention of *The Photon in Biquaternionic Form*, and its field-strength biquaternion
-$$
-\tilde{F}=\tilde{\nabla}^{\natural}\tilde{G}-\mathrm{Sc}\left(\tilde{\nabla}^{\natural}\tilde{G}\right)
-\in\mathbb{M}_- ,
-\qquad
-\mathrm{Sc}(\tilde{F})=0 ,
-$$
-is a pure-vector material biquaternion, and whose propagating solutions are the self-dual and anti-self-dual combinations carrying the two helicities $\pm1$. The companion articles *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* and *The Photon in Biquaternionic Form* develop exactly this structure for the massless vector, and it applies to a colour-fixed gluon without change, because a colour-fixed gluon satisfies the abelian Maxwell system component by component. The field-strength invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$ of the companion article govern its Lorentz structure, and the helicity basis is the same.
+The framework reaches the gluon as a free field. Fix a colour index $a$; the component $G^a_\mu$ is a massless, electrically neutral, spin-one field whose free equation is the Maxwell equation of the companion articles. The octet's potential and field strength are Lie-algebra-valued, not single elements of $\mathbb{B}$, and neither carries a tilde; they are expanded in the tensor formalism into the components $G^a_\mu$ and $G^a_{\mu\nu}$, with the colour index carried explicitly. A fixed component is a massless vector field satisfying the abelian Maxwell equation, and the construction of *The Photon in Biquaternionic Form* and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* applies to it without change: its propagating solutions are the self-dual and anti-self-dual combinations carrying the two helicities $\pm1$. The field-strength invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$ of the companion article govern its Lorentz structure, and the helicity basis is the same.
 
 Two qualifications keep the statement exact.
 
@@ -290,14 +283,12 @@ This does not contradict the ceiling, because it does not take place in $\mathbb
 | $f^{abc}=2\varepsilon^{abc}$, $\{T_a,T_b\}=-\tfrac12\delta_{ab}e_t$ | Antisymmetric invariant of the compact factor, in the unnormalized basis $e_a$; vanishing symmetric invariant $d^{abc}=0$ |
 | $\mathrm{SU}(3)$, $\dim_\mathbb{R}\mathrm{SU}(3)=8$ | Colour algebra; not reachable from the compact part |
 | $G^a_\mu$ $(a=1,\dots,8)$ | Gluon fields; adjoint octet |
-| $G^a_{\mu\nu}=\frac{\partial}{\partial Q_\mu}G^a_\nu-\frac{\partial}{\partial Q_\nu}G^a_\mu+g_s f^{abc}G^b_\mu G^c_\nu$ | Gluon field strength; a colour matrix, no tilde |
+| $G^a_{\mu\nu}=\frac{\partial}{\partial Q_\mu}G^a_\nu-\frac{\partial}{\partial Q_\nu}G^a_\mu+g_s f^{abc}G^b_\mu G^c_\nu$ | Gluon field strength; a colour component, no tilde |
 | $[\lambda^a,\lambda^b]=2if^{abc}\lambda^c$, $\{\lambda^a,\lambda^b\}=\tfrac43\delta^{ab}I+2d^{abc}\lambda^c$ | Gell-Mann tensors |
 | $f^{123}=1$, $f^{147}=\tfrac12$, $f^{156}=-\tfrac12$, $f^{458}=\tfrac{\sqrt3}{2}$ | Sample nonzero $SU(3)$ components of the invariant $f^{abc}$ (verified) |
 | $d^{118}=\tfrac1{\sqrt3}$, $d^{146}=\tfrac12$, $d^{448}=-\tfrac{1}{2\sqrt3}$, $d^{888}=-\tfrac1{\sqrt3}$ | Sample nonzero $SU(3)$ components of the invariant $d^{abc}$ (verified) |
 | $C_2(\mathrm{adj})=3$, $C_2(\mathrm{fund})=\tfrac43$, $T(\mathrm{fund})=\tfrac12$ | $SU(3)$ Casimir data (verified) |
 | $\beta_{g_s}=-\tfrac{g_s^3}{16\pi^2}b_0$, $b_0=11-\tfrac23N_f$ | One-loop QCD coefficient |
-| $\tilde G=iG^a_t e_t+\vec G^a\in\mathbb{M}_-$ | Biquaternion potential of a fixed colour component |
-| $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{G}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{G})\in\mathbb{M}_-$ | Free field-strength biquaternion of one gluon |
 | $\mathbb{B}\otimes\Lambda$ | Grassmann envelope adjacent to the algebra |
 | $\mathbb{O}$, $\mathrm{Aut}(\mathbb{O})=G_2\supset SU(3)$ | Octonions; the non-associative carrier of $SU(3)$ |
 | $M_2(\mathbb{B})\cong M_4(\mathbb{C})\supset \mathrm{U}(4)\supset \mathrm{U}(3)\supset SU(3)$ | Enlarged carrier; colour index external |

@@ -255,7 +255,7 @@ The following table lists the seven physical four-vectors that live in $\mathbb{
 | Four-position | $\tilde{R} = iq'_0e_t + q_ke_k = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $(ict, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, i.e. $(q'_0, q_k) = (ct, x_k)$ |
 | Four-velocity | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $(\gamma ic, \gamma\vec v)$ |
 | Four-momentum | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | $(iE/c, \vec p)$ |
-| Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $(i\gamma\,\vec f\cdot\vec v/c, \gamma\vec f)$ |
+| Four-force | $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ | $(i\gamma\,\vec f\cdot\vec v/c, \gamma\vec f)$ |
 | Four-potential | $\tilde{A} = i\phi/c\,e_t + \vec A$ | $(i\phi/c, \vec A)$ |
 | Four-current | $\tilde{J} = ic\rho\,e_t + \vec j$ | $(ic\rho, \vec j)$ |
 | Four-wavevector | $\tilde P = i\omega/c\,e_t + \vec k$ | $(i\omega/c, \vec k)$ |
@@ -295,7 +295,7 @@ The subspace $\mathbb{M}_-$ is the natural home of the four-vectors of relativis
 - The four-position $\tilde{R} = iq'_0e_t + q_ke_k = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with $q'_0 = ct$ and $q_k = x_k$.
 - The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$.
 - The four-momentum $\tilde{P} = m\tilde{V}$.
-- The four-force $\tilde{F} = d\tilde{P}/d\tau$.
+- The four-force $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$.
 - The four-potential $\tilde{A} = i\phi/c\,e_t + \vec A$.
 - The four-current $\tilde{J} = ic\rho\,e_t + \vec j$.
 - The four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$.

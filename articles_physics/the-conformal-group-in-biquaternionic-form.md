@@ -105,14 +105,13 @@ The dilation
 $$
 \tilde{Q}\;\longmapsto\;\lambda\,\tilde{Q},\qquad \lambda>0,
 $$
-is scalar multiplication on the material sector. It can be written as a signed inner conjugation,
+is scalar multiplication on the material sector. It can be written by multiplying on both sides by a central element,
 $$
-\tilde{Q}\;\longmapsto\;\tilde{G}\,\tilde{Q}\,\tilde{G}^{*},
-\qquad \tilde{G}=\sqrt{\lambda}\,e_t ,
+\tilde{Q}\;\longmapsto\;\sqrt{\lambda}\,e_t\;\tilde{Q}\;\sqrt{\lambda}\,e_t ,
 $$
 and this displays both what the algebra provides and what it withholds. Three points, each recomputed on explicit elements.
 
-**The dilation element is not a unit-norm biquaternion.** The element $\tilde{G}=\sqrt{\lambda}e_t$ has biquaternion norm $\langle\tilde{G}\rangle_{\natural}=\lambda\,e_t\ne e_t$ for $\lambda\ne1$, so it lies outside $SL(2,\mathbb{C})$. The rotor group acts by isometries and preserves $\langle\cdot\rangle_{\natural}$; the dilation scales $\langle\cdot\rangle_{\natural}$, so it cannot be a member of that group. The dilation is realizable *by* the algebra but is not *of* the group of the algebra.
+**The dilation element is not a unit-norm biquaternion.** The central element $\sqrt{\lambda}e_t$ has biquaternion norm $\langle\sqrt{\lambda}e_t\rangle_{\natural}=\lambda\,e_t\ne e_t$ for $\lambda\ne1$, so it lies outside $SL(2,\mathbb{C})$. The rotor group acts by isometries and preserves $\langle\cdot\rangle_{\natural}$; the dilation scales $\langle\cdot\rangle_{\natural}$, so it cannot be a member of that group. The dilation is realizable *by* the algebra but is not *of* the group of the algebra.
 
 **The dilation is not an algebra automorphism.** Multiplication by a scalar is linear but not multiplicative: $\lambda(\tilde{Q}\tilde{Q}_1)$ is not $(\lambda\tilde{Q})(\lambda\tilde{Q}_1)$ for $\lambda\ne1$, a defect that was checked by direct computation on a non-commuting pair. So the dilation, unlike the rotations, cannot be read as a relabelling of the algebra's own product.
 

@@ -41,7 +41,7 @@ The following table collects the quantitative results the series has obtained an
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
 | Single qubit | Bloch sphere and Bloch ball; $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_0+\vec r\cdot\vec h$; sandwich update | States, observables, Born rule, projective measurement |
-| Relativistic point mechanics | $\langle d\tilde{Q}\rangle_{\natural}=-c^2dt^2+dx^2+dy^2+dz^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{F}\tilde{P}^{\natural}+\tilde{P}\tilde{F}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
+| Relativistic point mechanics | $\langle d\tilde{Q}\rangle_{\natural}=-c^2dt^2+dx^2+dy^2+dz^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}+\tilde{P}\tilde{K}_{\mathrm{f}}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
 | Dirac field | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; massless case $\tilde{\nabla}\tilde{\Psi}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |

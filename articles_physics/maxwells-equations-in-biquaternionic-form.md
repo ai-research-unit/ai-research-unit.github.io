@@ -216,25 +216,25 @@ These are equivalent to the four standard Maxwell equations. The integrability c
 
 ## The Retarded Green's Function
 
-The biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is a linear first-order equation for the field strength $\tilde{F}$ in terms of the four-current $\tilde{J}$. Its solution can be written as a convolution with a **Green's function** $\tilde G_1(\tilde Q)$, which is the solution of the equation with a point source:
+The biquaternionic Maxwell equation $\tilde{\nabla} \tilde{F} = -\sqrt{\mu}\,\tilde{J}$ is a linear first-order equation for the field strength $\tilde{F}$ in terms of the four-current $\tilde{J}$. Its solution can be written as a convolution with a **Green's function** $\tilde{G}_{\tilde{\nabla}}(\tilde Q)$, which is the solution of the equation with a point source:
 
 $$
-\tilde{\nabla} \tilde G_1(\tilde Q) = \delta(\tilde{Q}) e_t.
+\tilde{\nabla} \tilde{G}_{\tilde{\nabla}}(\tilde Q) = \delta(\tilde{Q}) e_t.
 $$
 
 The physically relevant Green's function is the **retarded** one, which vanishes for $t < 0$ and has support on the future light cone. It is the first-order kernel of the companion article *The Biquaternion D'Alembertian and Its Green's Functions*,
 
 $$
-\tilde{G}_1 = \tilde{\nabla}^{\natural}\,G_\Box
+\tilde{G}_{\tilde{\nabla}} = \tilde{\nabla}^{\natural}\,G_\Box
 = \frac{1}{c}\frac{1}{4\pi R}\,\delta'\!\left(t - \frac{R}{c}\right)\bigl(-i\,e_t + \vec u_R\bigr) + \frac{1}{4\pi R^2}\,\delta\!\left(t - \frac{R}{c}\right)\vec u_R,
 $$
 
-where $G_\Box(R,t) = (4\pi R)^{-1}\delta(t - R/c)$ is the scalar retarded kernel of the wave operator, $R = \sqrt{x^2 + y^2 + z^2}$, $\vec u_R = (x \vec e_x + y \vec e_y + z \vec e_z)/R$ is the unit radial biquaternion, and $\delta'$ is the derivative of the delta. It satisfies $\tilde{\nabla}\tilde{G}_1 = \Box G_\Box = -\delta(\tilde{Q})$, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
+where $G_\Box(R,t) = (4\pi R)^{-1}\delta(t - R/c)$ is the scalar retarded kernel of the wave operator, $R = \sqrt{x^2 + y^2 + z^2}$, $\vec u_R = (x \vec e_x + y \vec e_y + z \vec e_z)/R$ is the unit radial biquaternion, and $\delta'$ is the derivative of the delta. It satisfies $\tilde{\nabla}\tilde{G}_{\tilde{\nabla}} = \Box G_\Box = -\delta(\tilde{Q})$, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
 
 The solution of the inhomogeneous equation is then the retarded convolution
 
 $$
-\tilde{F}(\tilde{Q}) = -\sqrt{\mu}\int \tilde{G}_1(\tilde{Q} - \tilde{Y})\,\tilde{J}(\tilde{Y})\,d^4 Y,
+\tilde{F}(\tilde{Q}) = -\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde{Y})\,\tilde{J}(\tilde{Y})\,d^4 Y,
 $$
 
 where the integral is over the past light cone of $\tilde{Q}$. This is the biquaternionic form of the retarded solution of Maxwell's equations, and it is the physically correct solution for radiation problems: the field at a point depends only on the sources in its past light cone, not on the future sources.

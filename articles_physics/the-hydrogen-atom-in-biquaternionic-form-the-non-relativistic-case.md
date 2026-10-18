@@ -78,7 +78,7 @@ The Hamiltonian is Hermitian and lies in $\mathbb{M}_+$, and its vector part is 
 The generator of the Schrödinger equation is
 
 $$
-\tilde G = -\frac{i}{\hbar}H
+-\frac{i}{\hbar}H
 = i\left(\frac{\hbar}{2m}\nabla^2+\frac{\kappa}{\hbar r}\right)e_t \in \mathbb{M}_- ,
 $$
 
@@ -237,7 +237,7 @@ Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field
 The spectrum, the eigenfunctions, the quantum numbers and the degeneracies are the standard ones. The biquaternion form is a transcription, and it predicts nothing beyond the standard solution. What it does isolate is three structural facts that the standard notation leaves implicit:
 
 1. **The kinetic term is a biquaternion-norm object.** It carries an explicit minus sign relative to $\tilde p^{\,2}$, because the quaternion square of a pure vector is minus the Euclidean square. The spinless-looking scalar $p^2/2m$ is really $\frac{1}{2m}\tilde p\tilde p^{\natural}$, a quadratic form of the momentum.
-2. **The Hamiltonian is central and the generator is in the material sector.** The observable $H$ lies in $\mathbb{M}_+$; the generator $\tilde G=-iH/\hbar$ lies in $\mathbb{M}_-$ along $ie_t$. The entire Coulomb content is carried by the scalar slot, and the vector slots, which the spin occupies, are untouched.
+2. **The Hamiltonian is central and the generator is in the material sector.** The observable $H$ lies in $\mathbb{M}_+$; the generator $-iH/\hbar$ lies in $\mathbb{M}_-$ along $ie_t$. The entire Coulomb content is carried by the scalar slot, and the vector slots, which the spin occupies, are untouched.
 3. **Orbital and spin operators occupy complementary slots.** The orbital operators are scalar multiples of $e_t$ and central; the spin operators are vector-slot elements. Their commutativity, $[L_i,\tilde S_j]=0$, is the framework's reason for the separability of the non-relativistic problem, and the reason the total-angular-momentum coupling is not required here.
 
 ## What the Framework Does Not Supply
@@ -294,7 +294,7 @@ The non-relativistic hydrogen atom in biquaternionic form is the Coulomb problem
 $$
 H = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_t = h_te_t \in \mathbb{M}_+,
 \qquad
-\tilde G = -\frac{i}{\hbar}H = i\left(\frac{\hbar}{2m}\nabla^2+\frac{\kappa}{\hbar r}\right)e_t \in \mathbb{M}_- .
+-\frac{i}{\hbar}H = i\left(\frac{\hbar}{2m}\nabla^2+\frac{\kappa}{\hbar r}\right)e_t \in \mathbb{M}_- .
 $$
 
 The Hamiltonian is central, so the spin is a spectator, the total-angular-momentum coupling is not needed, and the spinor equation reduces componentwise to the standard scalar Schrödinger equation. Separation in the framework's operators, with orbital operators in the scalar slot and spin operators in the vector slots, gives the standard radial equation with the angular coupling $\hbar^2 l(l+1)$, the standard spectrum
@@ -323,7 +323,7 @@ The framework's contribution is therefore structural, not spectral. It identifie
 | $\tilde p^{\,2}=-p^{\,2}e_t$, $\tilde p\tilde p^{\natural}=p^{\,2}e_t$ | Quaternion square and biquaternion norm of the momentum |
 | $T=-\tilde p^{\,2}/(2m)$ | Kinetic energy |
 | $H=h_te_t$, $h_t=-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}$ | Coulomb Hamiltonian, central, in $\mathbb{M}_+$ |
-| $\tilde G=-iH/\hbar\in\mathbb{M}_-$ | Time-translation generator |
+| $-iH/\hbar\in\mathbb{M}_-$ | Time-translation generator, $H$ read through $i$ |
 | $\kappa=Ze^2/(4\pi\epsilon_0)$ | Coulomb coupling |
 | $a_0=\hbar^2/(m\kappa)$ | Bohr radius |
 | $L_k e_t$, $L^2e_t$ | Orbital operators, scalar slot |

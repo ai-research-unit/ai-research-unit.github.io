@@ -48,7 +48,7 @@ Two boundaries are respected. The **spin-0 and multipole sectors** are excluded:
 
 The article proceeds as follows. The next section fixes the spin four-vector and its reduced form. The following section assembles the covariant equation from the two available structures and fixes the coefficients. The next section transcribes it into $\mathbb{B}$ and verifies the transcription. The remaining sections treat the rest-frame limit and the meaning of $g$, the degenerate case $g=2$ in which the spin is transported exactly as the four-velocity, the laboratory-frame reduction to the Larmor term and the Thomas term, and the separation of what the algebra supplies from what is standard.
 
-**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^{2}=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$; the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so that the biquaternion representative of a four-vector $Q^\mu$ is $\tilde{Q}=i Q^{0}e_t+Q_\mu \vec e_\mu$, and the invariant pairing of $\tilde Q_1,\tilde Q_2\in\mathbb{M}_-$ is
+**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^{2}=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$; the four-force is $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so that the biquaternion representative of a four-vector $Q^\mu$ is $\tilde{Q}=i Q^{0}e_t+Q_\mu \vec e_\mu$, and the invariant pairing of $\tilde Q_1,\tilde Q_2\in\mathbb{M}_-$ is
 
 $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}\!\left(\tilde{Q}_1\,\tilde{Q}_2^{\natural}\right)
@@ -65,7 +65,7 @@ F^{jk}=\epsilon_{jkl}B_l
 \qquad\text{(real components)},
 $$
 
-and the charge contraction is $\tilde{K}=ϙ\,\mathrm{F}(\tilde{V})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
+and the charge contraction is $\tilde{K}_{\mathrm{f}}=ϙ\,\mathrm{F}(\tilde{V})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
 
 
 Here $\tau$ is proper time, $t$ laboratory time, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the trace pairing on $\mathbb{M}_+$ is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
@@ -446,7 +446,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
-| $\tilde{K}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |
+| $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |
 | $\tilde{S}=iS^0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $S_\mu v^\mu=0$ |
 | $\vec s$ | Rest-frame spin, $S_\mu S^\mu=\vec s^2$ |
 | $S^{\mu\nu}$ | Antisymmetric spin tensor, $S^\mu=\frac{1}{2c}\epsilon^{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |

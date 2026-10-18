@@ -73,7 +73,7 @@ $$
 J(\tilde Q_1)=\tilde{Ϛ}^{1/2}\tilde Q_1^{*}\tilde{Ϛ}^{-1/2},\qquad
 \sigma_s(\tilde Q_1)=\tilde{Ϛ}^{is}\tilde Q_1\tilde{Ϛ}^{-is},
 $$
-with $\tilde{Ϛ}\in\mathbb{M}_+$ a faithful state and $\tilde K=-\log\tilde{Ϛ}\in\mathbb{M}_+$. It also recorded the gap that this construction leaves: the finite-dimensional flow is **inner**, and the framework supplies a family of states but no dynamics that selects one. The abstract flow $\sigma_s$ is what the present article identifies with the boost.
+with $\tilde{Ϛ}\in\mathbb{M}_+$ a faithful state and $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$. It also recorded the gap that this construction leaves: the finite-dimensional flow is **inner**, and the framework supplies a family of states but no dynamics that selects one. The abstract flow $\sigma_s$ is what the present article identifies with the boost.
 
 **What the Unruh article supplied.** It computed the massless two-point function along an accelerated orbit, found that it is periodic in imaginary proper time with period $\beta=2\pi/a$, and read off the Unruh temperature $T=\hbar a/(2\pi c k_B)$. The computation is exact only if the flow along which the correlation function is evaluated is the modular flow. That is the Bisognano–Wichmann theorem. The Unruh article imported it and labelled it as imported; this article states it and checks its two halves inside the framework.
 

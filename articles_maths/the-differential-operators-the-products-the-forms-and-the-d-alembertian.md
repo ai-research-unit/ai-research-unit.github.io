@@ -13,10 +13,10 @@ $\mathbb{C}$ Space*; the four norms are *The 4 Algebraic Norms over the Biquater
 conjugate and the d'Alembertian are developed at length in *Biquaternion Analysis*, §*The Differential Operators*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
-$e_t=1$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde F=F_te_t+\vec F$
-with $\vec F=F_x\vec e_x+F_y\vec e_y+F_z\vec e_z$, its four coefficients complex; the field is element-valued and depends on the
-coordinates $Q_t,Q_x,Q_y,Q_z$. The conjugations are the natural one $\tilde F^{\natural}$, the coefficientwise one
-$\bar{\tilde F}$ and the star $\tilde F^{*}=\bar{\tilde F}^{\natural}$; the scalar part is $\mathrm{Sc}$; and the sign vector is
+$e_t=1$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q_5=Q_{5t}e_t+\vec Q_5$
+with $\vec Q_5=Q_{5x}\vec e_x+Q_{5y}\vec e_y+Q_{5z}\vec e_z$, its four coefficients complex; the field is element-valued and depends on the
+coordinates $Q_t,Q_x,Q_y,Q_z$. The conjugations are the natural one $\tilde Q_5^{\natural}$, the coefficientwise one
+$\bar{\tilde Q_5}$ and the star $\tilde Q_5^{*}=\bar{\tilde Q_5}^{\natural}$; the scalar part is $\mathrm{Sc}$; and the sign vector is
 $\varepsilon=(1,-1,-1,-1)$. All conventions are those of *Conventions in Mathematics*.
 
 ## Conventions for Derivation
@@ -57,7 +57,7 @@ $$
 whose tilde marks its scalar part beside its vector part (*Conventions in Mathematics*, §*The Gradient*; *Biquaternion Analysis*),
 with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and
 $\varepsilon=(1,-1,-1,-1)$. Write $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial gradient, with divergence
-$\nabla\cdot\vec F$ and curl $\nabla\times\vec F$, and
+$\nabla\cdot\vec Q_5$ and curl $\nabla\times\vec Q_5$, and
 $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ for the Laplacian in the three vector
 coordinates; on the material sector it is the physical $\Delta$.
 
@@ -87,15 +87,15 @@ $$
 ### The Plain Bilinear Product, Its Form and Its Norm
 
 **The product.** The general plain bilinear product is one of the four of *The 12 Products of the Biquaternioid $\mathbb{C}$
-Space*. On the gradient, with an element-valued field $\tilde F=F_te_t+\vec F$, it is read with
+Space*. On the gradient, with an element-valued field $\tilde Q_5=Q_{5t}e_t+\vec Q_5$, it is read with
 $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, so that
 the three spatial units carry the field back onto the scalar unit,
 
 $$
-\tilde\nabla\tilde F=\Bigl(\frac{\partial}{\partial Q_t}F_t-\nabla\cdot\vec F\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec F+\nabla F_t+\nabla\times\vec F .
+\tilde\nabla\tilde Q_5=\Bigl(\frac{\partial}{\partial Q_t}Q_{5t}-\nabla\cdot\vec Q_5\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_5+\nabla Q_{5t}+\nabla\times\vec Q_5 .
 $$
 
-A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; the
+A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the
 equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the Maxwell equation, whose physical reading belongs to the physics corpus. **On the
 material sector** the same product is read with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, the space part being
 unchanged.
@@ -104,13 +104,13 @@ unchanged.
 Names* of *Conventions in Mathematics*. The half-sum keeps the form as its scalar part,
 
 $$
-\tilde\nabla\bullet\tilde F=\tfrac12\bigl(\tilde\nabla\tilde F+\tilde F\tilde\nabla\bigr)=\Bigl[\frac{\partial}{\partial Q_t}F_t-(\nabla,\vec F)\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec F+F_t\nabla=\Bigl[\frac{\partial}{\partial Q_t}F_t-\nabla\cdot\vec F\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec F+\nabla F_t ,
+\tilde\nabla\bullet\tilde Q_5=\tfrac12\bigl(\tilde\nabla\tilde Q_5+\tilde Q_5\tilde\nabla\bigr)=\Bigl[\frac{\partial}{\partial Q_t}Q_{5t}-(\nabla,\vec Q_5)\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec Q_5+Q_{5t}\nabla=\Bigl[\frac{\partial}{\partial Q_t}Q_{5t}-\nabla\cdot\vec Q_5\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec Q_5+\nabla Q_{5t} ,
 $$
 
 and the half-difference is the curl,
 
 $$
-\tilde\nabla\wedge\tilde F=\tfrac12\bigl(\tilde\nabla\tilde F-\tilde F\tilde\nabla\bigr)=\tfrac12\bigl(\nabla\times\vec F+\nabla\times\vec F\bigr)=\nabla\times\vec F ,
+\tilde\nabla\wedge\tilde Q_5=\tfrac12\bigl(\tilde\nabla\tilde Q_5-\tilde Q_5\tilde\nabla\bigr)=\tfrac12\bigl(\nabla\times\vec Q_5+\nabla\times\vec Q_5\bigr)=\nabla\times\vec Q_5 ,
 $$
 
 a pure vector, so the plain form carries the whole scalar content of the product. Throughout these four subsections the pair
@@ -121,11 +121,11 @@ $\mathbb{C}$ Space*.
 **The form.** The **plain form** is the scalar part of the product read in two arguments,
 
 $$
-\langle\tilde\nabla,\tilde F\rangle=\mathrm{Sc}(\tilde\nabla\tilde F)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}F_\mu=\frac{\partial}{\partial Q_t}F_t-\nabla\cdot\vec F ,
+\langle\tilde\nabla,\tilde Q_5\rangle=\mathrm{Sc}(\tilde\nabla\tilde Q_5)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}Q_{5\mu}=\frac{\partial}{\partial Q_t}Q_{5t}-\nabla\cdot\vec Q_5 ,
 $$
 
 a scalar, the **contraction** of the derivative with the field in the sign vector $\varepsilon$. **On the material sector** it is
-$-\frac{i}{c}\frac{\partial F_t}{\partial t}-\nabla\cdot\vec F$.
+$-\frac{i}{c}\frac{\partial Q_{5t}}{\partial t}-\nabla\cdot\vec Q_5$.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments:
 
@@ -139,11 +139,11 @@ wave operator; it is **not** the corpus's d'Alembertian.
 ### The Quaternionic Bilinear Product, Its Form and Its Norm
 
 **The product.** The general quaternionic bilinear product is the second of the four of *The 12 Products of the Biquaternioid
-$\mathbb{C}$ Space*; on the gradient it is $\tilde\nabla^{\natural}\tilde F$, the conjugate derivative, read with the same rules,
+$\mathbb{C}$ Space*; on the gradient it is $\tilde\nabla^{\natural}\tilde Q_5$, the conjugate derivative, read with the same rules,
 the three spatial units now carrying the field back onto the scalar unit with the opposite sign,
 
 $$
-\tilde\nabla^{\natural}\tilde F=\Bigl(\frac{\partial}{\partial Q_t}F_t+\nabla\cdot\vec F\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec F-\nabla F_t-\nabla\times\vec F .
+\tilde\nabla^{\natural}\tilde Q_5=\Bigl(\frac{\partial}{\partial Q_t}Q_{5t}+\nabla\cdot\vec Q_5\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_5-\nabla Q_{5t}-\nabla\times\vec Q_5 .
 $$
 
 **On the material sector** the same substitution $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$ applies.
@@ -151,24 +151,24 @@ $$
 **The symmetric and antisymmetric parts.** The half-sum is central and is the quaternionic form itself,
 
 $$
-\tilde\nabla\bullet_{\natural}\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde F+\tilde F^{\natural}\tilde\nabla\bigr)=\Bigl[\frac{\partial}{\partial Q_t}F_t+(\nabla,\vec F)\Bigr]e_t=\Bigl(\frac{\partial}{\partial Q_t}F_t+\nabla\cdot\vec F\Bigr)e_t ,
+\tilde\nabla\bullet_{\natural}\tilde Q_5=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde Q_5+\tilde Q_5^{\natural}\tilde\nabla\bigr)=\Bigl[\frac{\partial}{\partial Q_t}Q_{5t}+(\nabla,\vec Q_5)\Bigr]e_t=\Bigl(\frac{\partial}{\partial Q_t}Q_{5t}+\nabla\cdot\vec Q_5\Bigr)e_t ,
 $$
 
 and the half-difference is the vector part of the product,
 
 $$
-\tilde\nabla\wedge_{\natural}\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde F-\tilde F^{\natural}\tilde\nabla\bigr)=\frac{\partial}{\partial Q_t}\vec F-F_t\nabla-\nabla\times\vec F=\frac{\partial}{\partial Q_t}\vec F-\nabla F_t-\nabla\times\vec F .
+\tilde\nabla\wedge_{\natural}\tilde Q_5=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde Q_5-\tilde Q_5^{\natural}\tilde\nabla\bigr)=\frac{\partial}{\partial Q_t}\vec Q_5-Q_{5t}\nabla-\nabla\times\vec Q_5=\frac{\partial}{\partial Q_t}\vec Q_5-\nabla Q_{5t}-\nabla\times\vec Q_5 .
 $$
 
 **The form.** The **quaternionic form** is the scalar part of that product read in two arguments,
 
 $$
-\langle\tilde\nabla,\tilde F\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde F\bigr)=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}F_\mu=\frac{\partial}{\partial Q_t}F_t+\nabla\cdot\vec F ,
+\langle\tilde\nabla,\tilde Q_5\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde Q_5\bigr)=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}Q_{5\mu}=\frac{\partial}{\partial Q_t}Q_{5t}+\nabla\cdot\vec Q_5 ,
 $$
 
 a scalar, the **contraction** of the derivative with the field in the $ict$ metric. It differs from the plain form by the three
 signs of $\varepsilon$, which are **computed from the product** $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not
-assumed. **On the material sector** it is $-\frac{i}{c}\frac{\partial F_t}{\partial t}+\nabla\cdot\vec F$.
+assumed. **On the material sector** it is $-\frac{i}{c}\frac{\partial Q_{5t}}{\partial t}+\nabla\cdot\vec Q_5$.
 
 **The norm, and the definition of the d'Alembertian.** The norm is defined with the form, as that form at its two equal
 arguments, and the two orders of the product agree:
@@ -182,7 +182,7 @@ $$
 **This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, an operator on the whole algebra, one and
 the same before any sector is named (*The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*). The coordinates $Q_\mu$
 are those of the algebra and are complex in general; the operator is $\partial^2/\partial Q_t^2+\Delta_Q$ whatever the sector, and
-it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient, $\Box\tilde F=\sum_\mu(\Box F_\mu)e_\mu$. It is the
+it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient, $\Box\tilde Q_5=\sum_\mu(\Box Q_{5\mu})e_\mu$. It is the
 identity above, and not the $ict$ substitution, that fixes it, and **no article of the corpus defines a second d'Alembertian**; no
 mass-term sign is left to a local convention.
 
@@ -204,30 +204,30 @@ same way.
 
 **The product.** The general plain sesquilinear product is the third of the four of *The 12 Products of the Biquaternioid
 $\mathbb{C}$ Space*; it is the plain product applied to the **conjugated** field
-$\tilde F^{*}=\bar F_te_t-\overline{\vec F}$, so that on the gradient it is $\tilde\nabla\tilde F^{*}$, conjugate-linear in the
+$\tilde Q_5^{*}=\bar Q_{5t}e_t-\overline{\vec Q_5}$, so that on the gradient it is $\tilde\nabla\tilde Q_5^{*}$, conjugate-linear in the
 field while the first slot stays $\mathbb{C}$-linear,
 
 $$
-\tilde\nabla\tilde F^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar F_t+\nabla\cdot\overline{\vec F}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec F}+\nabla\bar F_t-\nabla\times\overline{\vec F} .
+\tilde\nabla\tilde Q_5^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{5t}+\nabla\cdot\overline{\vec Q_5}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_5}+\nabla\bar Q_{5t}-\nabla\times\overline{\vec Q_5} .
 $$
 
 **The symmetric and antisymmetric parts.** Under the conjugate transpose the half-sum is central and is the Hermitian form
 itself,
 
 $$
-\tilde\nabla\bullet_{*}\tilde F=\mathrm{Sc}\bigl(\tilde\nabla\tilde F^{*}\bigr)=\Bigl[\frac{\partial}{\partial Q_t}\bar F_t+(\nabla,\overline{\vec F})\Bigr]e_t=\Bigl(\frac{\partial}{\partial Q_t}\bar F_t+\nabla\cdot\overline{\vec F}\Bigr)e_t ,
+\tilde\nabla\bullet_{*}\tilde Q_5=\mathrm{Sc}\bigl(\tilde\nabla\tilde Q_5^{*}\bigr)=\Bigl[\frac{\partial}{\partial Q_t}\bar Q_{5t}+(\nabla,\overline{\vec Q_5})\Bigr]e_t=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{5t}+\nabla\cdot\overline{\vec Q_5}\Bigr)e_t ,
 $$
 
 and the half-difference is the vector part,
 
 $$
-\tilde\nabla\wedge_{*}\tilde F=\mathrm{Vect}\bigl(\tilde\nabla\tilde F^{*}\bigr)=-\frac{\partial}{\partial Q_t}\overline{\vec F}+\bar F_t\nabla-\nabla\times\overline{\vec F}=-\frac{\partial}{\partial Q_t}\overline{\vec F}+\nabla\bar F_t-\nabla\times\overline{\vec F} .
+\tilde\nabla\wedge_{*}\tilde Q_5=\mathrm{Vect}\bigl(\tilde\nabla\tilde Q_5^{*}\bigr)=-\frac{\partial}{\partial Q_t}\overline{\vec Q_5}+\bar Q_{5t}\nabla-\nabla\times\overline{\vec Q_5}=-\frac{\partial}{\partial Q_t}\overline{\vec Q_5}+\nabla\bar Q_{5t}-\nabla\times\overline{\vec Q_5} .
 $$
 
 **The form.** The **Hermitian form** is the scalar part of that product read in two arguments,
 
 $$
-\langle\tilde\nabla,\tilde F\rangle_{*}=\mathrm{Sc}\bigl(\tilde\nabla\tilde F^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}\bar F_\mu=\frac{\partial}{\partial Q_t}\bar F_t+\nabla\cdot\overline{\vec F} ,
+\langle\tilde\nabla,\tilde Q_5\rangle_{*}=\mathrm{Sc}\bigl(\tilde\nabla\tilde Q_5^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}\bar Q_{5\mu}=\frac{\partial}{\partial Q_t}\bar Q_{5t}+\nabla\cdot\overline{\vec Q_5} ,
 $$
 
 a scalar, the **contraction** of the derivative with the **conjugated** field in the sign vector $\varepsilon$. Taken on the
@@ -240,7 +240,7 @@ $$
 in which the conjugate stands on the first factor and no absolute value is taken; the two time derivatives are imaginary on the
 material sector, so that scalar part is $-c^{-2}\lvert\partial\phi/\partial t\rvert^2+\lvert\nabla\phi\rvert^2$. Its physical
 reading is the kinetic density, and it belongs to the physics corpus. **On the material sector** the form itself is
-$-\frac{i}{c}\frac{\partial\bar F_t}{\partial t}+\nabla\cdot\overline{\vec F}$.
+$-\frac{i}{c}\frac{\partial\bar Q_{5t}}{\partial t}+\nabla\cdot\overline{\vec Q_5}$.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments. By §*The Gradient*,
 $\tilde\nabla^{*}=\tilde\nabla^{\natural}$, and
@@ -258,23 +258,23 @@ $\Box|_{\mathbb{M}_-}=\Delta-c^{-2}\,\partial^2/\partial t^2$.
 ### The Krein Product, Its Form and Its Norm
 
 **The product.** The general quaternionic sesquilinear product is the fourth of the four of *The 12 Products of the Biquaternioid
-$\mathbb{C}$ Space*; it is the conjugate derivative applied to the conjugated field, $\tilde\nabla^{\natural}\tilde F^{*}$, the
+$\mathbb{C}$ Space*; it is the conjugate derivative applied to the conjugated field, $\tilde\nabla^{\natural}\tilde Q_5^{*}$, the
 companion of the quaternionic bilinear product in the second slot,
 
 $$
-\tilde\nabla^{\natural}\tilde F^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar F_t-\nabla\cdot\overline{\vec F}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec F}-\nabla\bar F_t+\nabla\times\overline{\vec F} .
+\tilde\nabla^{\natural}\tilde Q_5^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{5t}-\nabla\cdot\overline{\vec Q_5}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_5}-\nabla\bar Q_{5t}+\nabla\times\overline{\vec Q_5} .
 $$
 
 **The symmetric and antisymmetric parts.** Under the conjugate transpose the half-sum is
 
 $$
-\tilde\nabla\bullet_{\natural*}\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde F^{*}+\tilde F^{*}\tilde\nabla^{\natural}\bigr)=\Bigl[\frac{\partial}{\partial Q_t}\bar F_t-(\nabla,\overline{\vec F})\Bigr]e_t-\frac{\partial}{\partial Q_t}\overline{\vec F}-\bar F_t\nabla=\Bigl[\frac{\partial}{\partial Q_t}\bar F_t-\nabla\cdot\overline{\vec F}\Bigr]e_t-\frac{\partial}{\partial Q_t}\overline{\vec F}-\nabla\bar F_t ,
+\tilde\nabla\bullet_{\natural*}\tilde Q_5=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde Q_5^{*}+\tilde Q_5^{*}\tilde\nabla^{\natural}\bigr)=\Bigl[\frac{\partial}{\partial Q_t}\bar Q_{5t}-(\nabla,\overline{\vec Q_5})\Bigr]e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_5}-\bar Q_{5t}\nabla=\Bigl[\frac{\partial}{\partial Q_t}\bar Q_{5t}-\nabla\cdot\overline{\vec Q_5}\Bigr]e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_5}-\nabla\bar Q_{5t} ,
 $$
 
 whose scalar part is the Krein form, and the half-difference is the curl of the conjugated field,
 
 $$
-\tilde\nabla\wedge_{\natural*}\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde F^{*}-\tilde F^{*}\tilde\nabla^{\natural}\bigr)=\tfrac12\bigl(\nabla\times\overline{\vec F}+\nabla\times\overline{\vec F}\bigr)=\nabla\times\overline{\vec F} ,
+\tilde\nabla\wedge_{\natural*}\tilde Q_5=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde Q_5^{*}-\tilde Q_5^{*}\tilde\nabla^{\natural}\bigr)=\tfrac12\bigl(\nabla\times\overline{\vec Q_5}+\nabla\times\overline{\vec Q_5}\bigr)=\nabla\times\overline{\vec Q_5} ,
 $$
 
 a pure vector.
@@ -282,11 +282,11 @@ a pure vector.
 **The form.** The **Krein form** is the scalar part of that product read in two arguments,
 
 $$
-\langle\tilde\nabla,\tilde F\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde F^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}\bar F_\mu=\frac{\partial}{\partial Q_t}\bar F_t-\nabla\cdot\overline{\vec F} ,
+\langle\tilde\nabla,\tilde Q_5\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde Q_5^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}\bar Q_{5\mu}=\frac{\partial}{\partial Q_t}\bar Q_{5t}-\nabla\cdot\overline{\vec Q_5} ,
 $$
 
 a scalar, the **contraction** of the conjugate derivative with the conjugated field in the $ict$ metric. **On the material
-sector** it is $-\frac{i}{c}\frac{\partial\bar F_t}{\partial t}-\nabla\cdot\overline{\vec F}$.
+sector** it is $-\frac{i}{c}\frac{\partial\bar Q_{5t}}{\partial t}-\nabla\cdot\overline{\vec Q_5}$.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments; on the gradient, since
 $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ (§*The Gradient*),
@@ -303,9 +303,9 @@ subsections. **On the material sector** it is $-c^{-2}\frac{\partial^2}{\partial
 
 **A contraction is a form, never an index.** The metric of the corpus is the sign vector $\varepsilon$ inside the product, so no
 index is raised and none is lowered. Where a text with covariant indices contracts a derivative with a field through a raised and
-a lowered index, the corpus writes the quaternionic form $\langle\tilde\nabla,\tilde F\rangle_{\natural}$; where it contracts two
+a lowered index, the corpus writes the quaternionic form $\langle\tilde\nabla,\tilde Q_5\rangle_{\natural}$; where it contracts two
 derivatives, the corpus writes the quaternionic norm $\langle\tilde\nabla\rangle_{\natural}=\Box$; and where it moves an index
-through a metric, the corpus writes the element $\tilde F$ itself, the metric being the sign vector inside the product.
+through a metric, the corpus writes the element $\tilde Q_5$ itself, the metric being the sign vector inside the product.
 
 ## The Table of the Two Second-Order Operators
 
@@ -318,23 +318,23 @@ through a metric, the corpus writes the element $\tilde F$ itself, the metric be
 
 ## Worked Examples
 
-**A scalar field.** $\tilde F=Q_te_t$: the four products all equal $e_t$, the four forms all equal $1$, and $\Box\tilde F$
+**A scalar field.** $\tilde Q_5=Q_te_t$: the four products all equal $e_t$, the four forms all equal $1$, and $\Box\tilde Q_5$
 vanishes, as a first-degree field requires.
 
-**A single vector coordinate.** $\tilde F=Q_x\vec e_x$: the products are $-e_t$, $e_t$, $e_t$, $-e_t$ in the plain, quaternionic,
+**A single vector coordinate.** $\tilde Q_5=Q_x\vec e_x$: the products are $-e_t$, $e_t$, $e_t$, $-e_t$ in the plain, quaternionic,
 Hermitian and Krein readings, and the four forms are $-1$, $+1$, $+1$, $-1$; the example shows the two sign patterns in one line,
-and $\Box\tilde F$ vanishes.
+and $\Box\tilde Q_5$ vanishes.
 
-**Two coordinates.** $\tilde F=Q_te_t+Q_x\vec e_x$: the plain product vanishes because
-$\partial F_t/\partial Q_t=\nabla\cdot\vec F=1$, the quaternionic and Hermitian products equal $2e_t$, and the Krein product
+**Two coordinates.** $\tilde Q_5=Q_te_t+Q_x\vec e_x$: the plain product vanishes because
+$\partial Q_{5t}/\partial Q_t=\nabla\cdot\vec Q_5=1$, the quaternionic and Hermitian products equal $2e_t$, and the Krein product
 vanishes; the quaternionic and Hermitian forms are $2$, the other two are $0$.
 
-**A quadratic field.** $\tilde F=Q_t^2\vec e_x$: the products are $2Q_t\vec e_x$, $2Q_t\vec e_x$, $-2Q_t\vec e_x$, $-2Q_t\vec e_x$,
-the four forms vanish, and $\Box\tilde F=2\vec e_x$, the derivative of degree two.
+**A quadratic field.** $\tilde Q_5=Q_t^2\vec e_x$: the products are $2Q_t\vec e_x$, $2Q_t\vec e_x$, $-2Q_t\vec e_x$, $-2Q_t\vec e_x$,
+the four forms vanish, and $\Box\tilde Q_5=2\vec e_x$, the derivative of degree two.
 
-**A mixed field.** $\tilde F=Q_tQ_x\vec e_y$: the plain product is $Q_x\vec e_y+Q_t\vec e_z$, the quaternionic product is
+**A mixed field.** $\tilde Q_5=Q_tQ_x\vec e_y$: the plain product is $Q_x\vec e_y+Q_t\vec e_z$, the quaternionic product is
 $Q_x\vec e_y-Q_t\vec e_z$, the Hermitian product is $-Q_x\vec e_y-Q_t\vec e_z$, the Krein product is
-$-Q_x\vec e_y+Q_t\vec e_z$; the four forms vanish, the scalar component and the divergence being zero, and $\Box\tilde F$ vanishes.
+$-Q_x\vec e_y+Q_t\vec e_z$; the four forms vanish, the scalar component and the divergence being zero, and $\Box\tilde Q_5$ vanishes.
 
 ## Summary
 
@@ -343,9 +343,9 @@ function of one variable. Two operators carry a glyph of their own: the biquater
 $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ and its quaternion conjugate
 $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$, which is also its Hermitian conjugate, the
 coefficientwise conjugate leaving the gradient unchanged. The four general products read on the gradient give four
-algebra-valued objects and four scalar forms: the plain form $\frac{\partial F_t}{\partial Q_t}-\nabla\cdot\vec F$, the quaternionic form
-$\frac{\partial F_t}{\partial Q_t}+\nabla\cdot\vec F$, the Hermitian form $\frac{\partial\bar F_t}{\partial Q_t}+\nabla\cdot\overline{\vec F}$ and the Krein form
-$\frac{\partial\bar F_t}{\partial Q_t}-\nabla\cdot\overline{\vec F}$, one to each slot that is conjugated. At the two equal arguments the four forms
+algebra-valued objects and four scalar forms: the plain form $\frac{\partial Q_{5t}}{\partial Q_t}-\nabla\cdot\vec Q_5$, the quaternionic form
+$\frac{\partial Q_{5t}}{\partial Q_t}+\nabla\cdot\vec Q_5$, the Hermitian form $\frac{\partial\bar Q_{5t}}{\partial Q_t}+\nabla\cdot\overline{\vec Q_5}$ and the Krein form
+$\frac{\partial\bar Q_{5t}}{\partial Q_t}-\nabla\cdot\overline{\vec Q_5}$, one to each slot that is conjugated. At the two equal arguments the four forms
 give two norms: the d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$, which is the quaternionic bilinear and the Hermitian
 norm of the gradient, and its partner $\partial^2/\partial Q_t^2-\Delta_Q$, which is the plain bilinear and the Krein norm. The
 d'Alembertian is one operator, scalar and fixed by the identity $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$; the
@@ -359,13 +359,13 @@ A contraction is a form and never an index, the metric being the sign vector ins
 | $\partial/\partial Q_\mu$ | the coordinate derivative, written with an explicit operator; a subscript is never a partial derivative |
 | $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ | the biquaternionic gradient, the Cauchy–Riemann operator |
 | $\tilde\nabla^{\natural}=\tilde\nabla^{*}$ | its quaternion conjugate, the involution of the norm |
-| $\nabla$, $\nabla\cdot\vec F$, $\nabla\times\vec F$ | the spatial gradient, the divergence and the curl |
+| $\nabla$, $\nabla\cdot\vec Q_5$, $\nabla\times\vec Q_5$ | the spatial gradient, the divergence and the curl |
 | $\Delta_Q=\sum_k\partial^2/\partial Q_k^2$ | the Laplacian in the three vector coordinates |
-| $\tilde\nabla\tilde F$ | the plain product, holding divergence, gradient and curl |
-| $\langle\tilde\nabla,\tilde F\rangle=\frac{\partial F_t}{\partial Q_t}-\nabla\cdot\vec F$ | the plain form |
-| $\langle\tilde\nabla,\tilde F\rangle_{\natural}=\frac{\partial F_t}{\partial Q_t}+\nabla\cdot\vec F$ | the quaternionic form |
-| $\langle\tilde\nabla,\tilde F\rangle_{*}=\frac{\partial\bar F_t}{\partial Q_t}+\nabla\cdot\overline{\vec F}$ | the Hermitian form |
-| $\langle\tilde\nabla,\tilde F\rangle_{\natural*}=\frac{\partial\bar F_t}{\partial Q_t}-\nabla\cdot\overline{\vec F}$ | the Krein form |
+| $\tilde\nabla\tilde Q_5$ | the plain product, holding divergence, gradient and curl |
+| $\langle\tilde\nabla,\tilde Q_5\rangle=\frac{\partial Q_{5t}}{\partial Q_t}-\nabla\cdot\vec Q_5$ | the plain form |
+| $\langle\tilde\nabla,\tilde Q_5\rangle_{\natural}=\frac{\partial Q_{5t}}{\partial Q_t}+\nabla\cdot\vec Q_5$ | the quaternionic form |
+| $\langle\tilde\nabla,\tilde Q_5\rangle_{*}=\frac{\partial\bar Q_{5t}}{\partial Q_t}+\nabla\cdot\overline{\vec Q_5}$ | the Hermitian form |
+| $\langle\tilde\nabla,\tilde Q_5\rangle_{\natural*}=\frac{\partial\bar Q_{5t}}{\partial Q_t}-\nabla\cdot\overline{\vec Q_5}$ | the Krein form |
 | $\Box=\langle\tilde\nabla\rangle_{\natural}=\langle\tilde\nabla\rangle_{*}$ | the d'Alembertian $\partial^2/\partial Q_t^2+\Delta_Q$ |
 | $\langle\tilde\nabla\rangle=\langle\tilde\nabla\rangle_{\natural*}$ | the partner operator $\partial^2/\partial Q_t^2-\Delta_Q$ |
 

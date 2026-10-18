@@ -154,10 +154,10 @@ $$
 \frac{d}{dt}\left(\tilde{P}_1 + \tilde{P}_2\right) = 0,
 $$
 
-where $t$ is the time coordinate of a fixed inertial frame. Introducing the coordinate-time four-forces $\tilde{F}_a = d\tilde{P}_a/dt$, this reads
+where $t$ is the time coordinate of a fixed inertial frame. Introducing the coordinate-time four-forces $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/dt$, this reads
 
 $$
-\tilde{F}_1 + \tilde{F}_2 = 0.
+\tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = 0.
 $$
 
 Because the decomposition into scalar (time) and vector (space) parts is by real-linear projections, the single biquaternion equation is equivalent to the separate conservation of total energy and total three-momentum in the chosen frame:

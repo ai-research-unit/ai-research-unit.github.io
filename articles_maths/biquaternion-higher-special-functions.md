@@ -321,10 +321,10 @@ These questions are entirely open. The biquaternion zeta function is a research 
 
 ### The Setting
 
-The analysis article defined the biquaternion gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}$. For a biquaternion-valued function $\tilde{F}$ on $V$, the solutions of the equations
+The analysis article defined the biquaternion gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}$. For a biquaternion-valued function $F$ on $V$, the solutions of the equations
 
 $$
-\tilde{\nabla}\tilde{F} = 0, \qquad \Box\tilde{F} = 0
+\tilde{\nabla}F = 0, \qquad \BoxF = 0
 $$
 
 are the biquaternion analogues of holomorphic functions and harmonic functions. The special functions of the analysis are the kernels and fundamental solutions associated with these equations.
@@ -371,7 +371,7 @@ Its construction is standard from the fundamental solution of the d'Alembertian,
 
 3. **The Hardy spaces.** What are the biquaternion analogues of the Hardy spaces $H^p$ and the Bergman spaces?
 
-4. **The reproducing kernel.** Is there a reproducing kernel for the space of functions satisfying $\tilde{\nabla}\tilde{F} = 0$ on a domain?
+4. **The reproducing kernel.** Is there a reproducing kernel for the space of functions satisfying $\tilde{\nabla}F = 0$ on a domain?
 
 These questions are open.
 
@@ -395,7 +395,7 @@ The common thread is the **complex norm** $\theta$: the two regimes $\theta \neq
 
 3. **The zeta function.** Can the biquaternion zeta function be defined, and what are its properties? Is there an analogue of the Riemann hypothesis?
 
-4. **The special functions from the analysis.** What are the explicit forms of the Poisson kernel, the Green's function, and the reproducing kernel for the spaces of functions satisfying $\tilde{\nabla}\tilde{F} = 0$ or $\Box\tilde{F} = 0$?
+4. **The special functions from the analysis.** What are the explicit forms of the Poisson kernel, the Green's function, and the reproducing kernel for the spaces of functions satisfying $\tilde{\nabla}F = 0$ or $\BoxF = 0$?
 
 5. **The relation to Clifford analysis.** How do the biquaternion special functions relate to the corresponding functions in Clifford analysis?
 

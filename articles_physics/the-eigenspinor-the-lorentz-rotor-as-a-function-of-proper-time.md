@@ -126,7 +126,7 @@ $$
 \vec\Omega_{\mathrm{LT}} \in \mathrm{Vect}(\mathbb{B}), \qquad \vec\Omega_{\mathrm{LT}}^{\natural} = -\vec\Omega_{\mathrm{LT}} ,
 $$
 
-which is the condition under which $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is preserved along the flow. It is the biquaternion form of the Minkowski orthogonality $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$ recorded in the Lorentz-force article.
+which is the condition under which $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ is preserved along the flow. It is the biquaternion form of the Minkowski orthogonality $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$ recorded in the Lorentz-force article.
 
 ## The Field as the Rotation Rate
 
@@ -152,7 +152,7 @@ $$
 and this is the Lorentz four-force
 
 $$
-\tilde{K} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right)
+\tilde{K}_{\mathrm{f}} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right)
 $$
 
 of the component-form section of *The Lorentz Force in Biquaternion Form*.
@@ -160,10 +160,10 @@ of the component-form section of *The Lorentz Force in Biquaternion Form*.
 **Consistency with the product formula.** The companion articles write the force as
 
 $$
-\tilde{K} = -ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
+\tilde{K}_{\mathrm{f}} = -ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 $$
 
-with the velocity on the **left** and $\tilde{F}$ itself rather than $\tilde{F}^{*}$. The eigenspinor route puts the field on the left and uses the conjugate. The two expressions are different-looking but equal; both reproduce the component $\tilde{K}$, and their difference is a genuine algebraic identity, not an approximation. What the eigenspinor supplies is not a new formula for the force but the **linear object** — the rotor — whose quadratic product is the four-momentum and whose rate is the field.
+with the velocity on the **left** and $\tilde{F}$ itself rather than $\tilde{F}^{*}$. The eigenspinor route puts the field on the left and uses the conjugate. The two expressions are different-looking but equal; both reproduce the component $\tilde{K}_{\mathrm{f}}$, and their difference is a genuine algebraic identity, not an approximation. What the eigenspinor supplies is not a new formula for the force but the **linear object** — the rotor — whose quadratic product is the four-momentum and whose rate is the field.
 
 ## The Eigenframe
 
@@ -195,7 +195,7 @@ Both factors are rotors: $\vec\Omega_{\mathrm{LT}}$ is a pure vector, so $\exp(\
 
 **Transcribed.** The eigenspinor is not this series' invention. Baylis uses it throughout *Electrodynamics: A Modern Geometric Approach* and in the paravector lecture that is the source of this article; Hestenes uses the same object as the "rotor part" of the Dirac spinor in spacetime algebra. What the series adds is the $ict$ convention, the dictionary to the companion articles, and the checks.
 
-**Where the earlier articles stop, and what changes.** *The Lorentz Force in Biquaternion Form* shows that $\tilde{K}$ is **not** $\mathrm{Re}(\tilde{F}\tilde{V})$ or any single product of $\tilde{F}$ with $\tilde{V}$, and locates the obstruction in the two duality halves of the field. The eigenspinor does not contradict that finding and does not remove the obstruction. It gives the force a clean *linear* source instead: the rate $\vec\Omega_{\mathrm{LT}}$ and the rotor $\tilde U$. Whether the series should present the eigenspinor as the primary formulation of the relativistic particle, with the product formula as a derived corollary, is a matter of taste and is left open below; the two statements are consistent.
+**Where the earlier articles stop, and what changes.** *The Lorentz Force in Biquaternion Form* shows that $\tilde{K}_{\mathrm{f}}$ is **not** $\mathrm{Re}(\tilde{F}\tilde{V})$ or any single product of $\tilde{F}$ with $\tilde{V}$, and locates the obstruction in the two duality halves of the field. The eigenspinor does not contradict that finding and does not remove the obstruction. It gives the force a clean *linear* source instead: the rate $\vec\Omega_{\mathrm{LT}}$ and the rotor $\tilde U$. Whether the series should present the eigenspinor as the primary formulation of the relativistic particle, with the product formula as a derived corollary, is a matter of taste and is left open below; the two statements are consistent.
 
 ## Open Questions
 
@@ -236,7 +236,7 @@ $$
 
 With the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and the identification $\vec\Omega_{\mathrm{LT}} = -(ϙ/m)\tilde{F}^{*}$ (Heaviside–Lorentz units), this is the Lorentz four-force of the companion article, and it agrees with the companion's product form $-ϙ\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$. Under a change of frame the eigenspinor transforms one-sidedly, $\tilde U\to\tilde U_{\mathrm L}\tilde U$, the spinor law of *The Spinor Module*. In a uniform field the evolution integrates to $\tilde U = \exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)\tilde U(0)$.
 
-The eigenspinor does not remove the obstruction recorded in *The Lorentz Force in Biquaternion Form* to writing $\tilde{K}$ as a single product of $\tilde{F}$ with $\tilde{V}$. It offers a different route, in which the force has a **linear** source — the rotor and its rate — and the product formula is a derived corollary.
+The eigenspinor does not remove the obstruction recorded in *The Lorentz Force in Biquaternion Form* to writing $\tilde{K}_{\mathrm{f}}$ as a single product of $\tilde{F}$ with $\tilde{V}$. It offers a different route, in which the force has a **linear** source — the rotor and its rate — and the product formula is a derived corollary.
 
 ## Summary of Notation
 
@@ -252,7 +252,7 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 | $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
 | $\tilde{E}_{(\mu)} = \tilde U\mathcal{E}_\mu\tilde U^{*}$ | Eigenframe (tetrad) along the worldline |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity |
-| $\tilde{K}$ | Lorentz four-force, $d\tilde{P}/d\tau$ |
+| $\tilde{K}_{\mathrm{f}}$ | Lorentz four-force, $d\tilde{P}/d\tau$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

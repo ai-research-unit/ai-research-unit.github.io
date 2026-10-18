@@ -653,10 +653,10 @@ The **monogenic Bessel functions** are the radial monogenic functions, which are
 
 The pattern in all the definitions above is the same: every quaternion special function is defined by a formula that involves the quaternion algebra operations, the quaternion exponential, and the quaternion logarithm. Unlike the complex case, the resulting functions are not determined by a single scalar variable, because $\mathbb{H}$ is four-dimensional and non-commutative. The functions depend on the scalar part and the vector part separately, and the non-commutativity prevents the simple identities that hold in the commutative case.
 
-**Theorem (Structure Principle for quaternion special functions).** Let $F$ be a special function of one real variable that is analytic on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the quaternions defined by the same power series. Then for $\tilde q$ with $q_t \in I$ and $\vec q$ arbitrary,
+**Theorem (Structure Principle for quaternion special functions).** Let $F$ be a special function of one real variable that is analytic on an interval $I \subseteq \mathbb{R}$, and let $F_{\mathbb H}$ be its extension to the quaternions defined by the same power series. Then for $\tilde q$ with $q_t \in I$ and $\vec q$ arbitrary,
 
 $$
-\tilde{F}(\tilde q) = \sum_{n=0}^\infty \frac{F^{(n)}(q_t)}{n!} \vec q^n,
+F_{\mathbb H}(\tilde q) = \sum_{n=0}^\infty \frac{F^{(n)}(q_t)}{n!} \vec q^n,
 $$
 
 where the powers $\vec q^n$ are the quaternion powers of the vector part.

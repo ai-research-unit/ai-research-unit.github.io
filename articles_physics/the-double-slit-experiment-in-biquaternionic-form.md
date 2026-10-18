@@ -20,36 +20,36 @@ The article is organized as follows. The next section writes the two-route ampli
 
 ## The Two-Path Amplitude
 
-Let $\tilde{K}_j(P)$ be the amplitude for the particle to arrive at the screen point $P$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:
+Let $K_j(P)$ be the amplitude for the particle to arrive at the screen point $P$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:
 
 $$
-\tilde{K}_j(P) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(iS_j/\hbar) \in \mathbb{C}_{\mathbb{B}}, \qquad \frac{iS_j}{\hbar} \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- .
+K_j(P) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(iS_j/\hbar) \in \mathbb{C}_{\mathbb{B}}, \qquad \frac{iS_j}{\hbar} \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- .
 $$
 
-Because each phase factor is central and the sum of central elements is central, each $\tilde{K}_j$ is a complex scalar times $e_t$. Writing $a_j(P) = |\tilde{K}_j(P)| \ge 0$ and $\varphi_j(P) = S_j(P)/\hbar$ for its phase,
+Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(P) = |K_j(P)| \ge 0$ and $\varphi_j(P) = S_j(P)/\hbar$ for its phase,
 
 $$
-\tilde{K}_j(P) = a_j(P)\, \exp(i\varphi_j(P))\, e_t .
+K_j(P) = a_j(P)\, \exp(i\varphi_j(P))\, e_t .
 $$
 
 The total amplitude is the **sum of the two alternatives**,
 
 $$
-\tilde{K}(P) = \tilde{K}_1(P) + \tilde{K}_2(P) = \bigl(a_1 \exp(i\varphi_1) + a_2 \exp(i\varphi_2)\bigr) e_t ,
+K(P) = K_1(P) + K_2(P) = \bigl(a_1 \exp(i\varphi_1) + a_2 \exp(i\varphi_2)\bigr) e_t ,
 $$
 
 which is again central. The additivity is the superposition principle; in the algebra it is the linearity of the complex one-dimensional space $\mathbb{C}_{\mathbb{B}}$ over $\mathbb{C}$ (equivalently, the additivity of the path integral, which the path-integral article takes as its starting point). The intensity is the scalar coefficient of the Hermitian norm of the amplitude:
 
 $$
-\tilde{K}(P)\tilde{K}(P)^{*} = I(P)\,e_t, \qquad I(P) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(P), \qquad \delta(P) := \varphi_1(P) - \varphi_2(P).
+K(P)K(P)^{*} = I(P)\,e_t, \qquad I(P) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(P), \qquad \delta(P) := \varphi_1(P) - \varphi_2(P).
 $$
 
-**Only the relative phase is observable.** The substitution $\varphi_j \mapsto \varphi_j + c$ with $c$ constant multiplies both amplitudes by the same central element $\exp(ic)$, which cancels in the Hermitian norm $\tilde{K}\tilde{K}^{*}$; and it cancels in any state built from $\tilde{K}$ as well, since $\tilde{K}\tilde{K}^{*} \mapsto \exp(ic)\tilde{K}\tilde{K}^{*} \exp(-ic) = \tilde{K}\tilde{K}^{*}$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.
+**Only the relative phase is observable.** The substitution $\varphi_j \mapsto \varphi_j + c$ with $c$ constant multiplies both amplitudes by the same central element $\exp(ic)$, which cancels in the Hermitian norm $KK^{*}$; and it cancels in any state built from $K$ as well, since $KK^{*} \mapsto \exp(ic)KK^{*} \exp(-ic) = KK^{*}$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.
 
 Two observations about where the objects live belong here, because later sections use them.
 
 - **The relative phase is central.** $\delta = \varphi_1 - \varphi_2$ is a real number, and $i\,\delta \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_-$ lies along the $ict$ direction, the same axis on which the path-integral article locates the phase exponent and the Feynman-propagator article locates $i\epsilon$. The argument of the complex number $\exp(i\delta)$ is supplied by the central imaginary; a non-central root would supply a different kind of argument, and the section on the phase root examines what that changes.
-- **The scalar amplitude carries no spin.** $\tilde{K}$ is a complex scalar times $e_t$; it is not an element of $\mathbb{M}_+$ and not a spinor. For a spin-independent beam this is the whole amplitude, and the pattern it produces is a statement about the centre $\mathbb{C}_{\mathbb{B}}$. When the two routes can be distinguished by spin, the amplitude is a spinor and the cross term acquires a spin overlap; that is the subject of the later section on spinor-valued routes.
+- **The scalar amplitude carries no spin.** $K$ is a complex scalar times $e_t$; it is not an element of $\mathbb{M}_+$ and not a spinor. For a spin-independent beam this is the whole amplitude, and the pattern it produces is a statement about the centre $\mathbb{C}_{\mathbb{B}}$. When the two routes can be distinguished by spin, the amplitude is a spinor and the cross term acquires a spin overlap; that is the subject of the later section on spinor-valued routes.
 
 ## The Fringe Pattern
 
@@ -88,7 +88,7 @@ $$
 
 with **polar** part $r_\parallel = \vec{u}\cdot\vec r$ and **equatorial** part $\vec r_\perp = \vec r - (\vec{u}\cdot\vec r)\,\vec{u}$. The polar part is the population bias between the two paths; the equatorial part is the coherence between them. The state is pure, $\tilde{Ϛ}^2 = \tilde{Ϛ}$ and $|\vec r| = 1$, exactly when it lies on the two-sphere; it is mixed, $|\vec r| < 1$, otherwise.
 
-The connection with the two route amplitudes is explicit. For a spin-independent beam, write the two amplitudes at the screen point $P$ as $\tilde{K}_j = A_j e_t$ and form the spinor $\psi = \bigl(A_1, A_2\bigr)$ in the framework's state module $\cong \mathbb{C}^2$. The Schrödinger article's construction gives
+The connection with the two route amplitudes is explicit. For a spin-independent beam, write the two amplitudes at the screen point $P$ as $K_j = A_j e_t$ and form the spinor $\psi = \bigl(A_1, A_2\bigr)$ in the framework's state module $\cong \mathbb{C}^2$. The Schrödinger article's construction gives
 
 $$
 \tilde{Ϛ} = \frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
@@ -315,7 +315,7 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre; home of the path phase |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\tilde{K}_j = a_j \exp(i\varphi_j) e_t$ | Route amplitude through slit $j$; central |
+| $K_j = a_j \exp(i\varphi_j) e_t$ | Route amplitude through slit $j$; central |
 | $\varphi_j = S_j/\hbar$, $\delta = \varphi_1 - \varphi_2$ | Route phase; relative phase |
 | $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ | Two-path intensity |
 | $d, D, \lambda, k = 2\pi/\lambda$ | Slit separation, screen distance, wavelength, wavenumber |

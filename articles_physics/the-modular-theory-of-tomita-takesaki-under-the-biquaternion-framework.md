@@ -176,11 +176,11 @@ $$
 $$
 which is an **inner** automorphism of $\mathbb{B}$, implemented by the unitary $\tilde{Ϛ}^{it}\in\mathbb{B}$. It preserves Hermitian conjugation, $\sigma_t(\tilde{Q}_3^{*})=\sigma_t(\tilde{Q}_3)^\dagger$, and hence acts on $\mathbb{M}_+$ and $\mathbb{M}_-$ separately. With
 $$
-\tilde K := -\log\tilde{Ϛ} \ \in\mathbb{M}_+,
+\tilde{K}_{\mathrm{mod}} := -\log\tilde{Ϛ} \ \in\mathbb{M}_+,
 $$
-one has $\tilde{Ϛ}^{it}=\exp(-it\tilde K)$ and
+one has $\tilde{Ϛ}^{it}=\exp(-it\tilde{K}_{\mathrm{mod}})$ and
 $$
-\sigma_t(\tilde{Q}_3)=\exp(-it\tilde K)\tilde{Q}_3\,\exp(it\tilde K), \qquad \frac{d}{dt}\sigma_t(\tilde{Q}_3)\Big|_{t=0}=-i[\tilde K,\tilde{Q}_3].
+\sigma_t(\tilde{Q}_3)=\exp(-it\tilde{K}_{\mathrm{mod}})\tilde{Q}_3\,\exp(it\tilde{K}_{\mathrm{mod}}), \qquad \frac{d}{dt}\sigma_t(\tilde{Q}_3)\Big|_{t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3].
 $$
 
 ### The Identities, Verified
@@ -195,7 +195,7 @@ $$
 $$
 Its eigenvalues are $\lambda_\pm=\tfrac12\pm\tfrac{\sqrt{29}}{20}$, and
 $$
-\tilde K=-\log\tilde{Ϛ}=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
+\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
 a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
 $$
@@ -203,7 +203,7 @@ with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is delibera
 
 A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
 $$
-\tilde K=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_t,
+\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_t,
 $$
 with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_t$ and with that article's partition function.
 
@@ -225,7 +225,7 @@ for which
 $$
 \Delta=1, \qquad J=S_0={}^{*}, \qquad \sigma_t=\mathrm{id} :
 $$
-the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}=\exp(-\beta\tilde H)/\mathrm{Tr}(\exp(-\beta\tilde H))$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde K=-\log\tilde{Ϛ}$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
+the modular flow is trivial. A nontrivial modular flow requires a nontracial state. The natural family is the thermal states $\tilde{Ϛ}=\exp(-\beta\tilde H)/\mathrm{Tr}(\exp(-\beta\tilde H))$ with $\tilde H\in\mathbb{M}_+$, and for those $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$ generates the flow; but the algebra itself does not select one. **This is a gap, and it is left visible:** the framework supplies $S$, supplies a family of states, and supplies no dynamics that chooses among them.
 
 ## The Type of the Algebra and Inner Versus Outer Modular Flow
 
@@ -265,8 +265,8 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 - $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
 - $\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}$, $J(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_t(\tilde{Q}_3)=\tilde{Ϛ}^{it}\tilde{Q}_3\tilde{Ϛ}^{-it}$.
-- $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{Q}_3]$, and $JMJ=M'$.
-- $\tilde{K}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
+- $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M'$.
+- $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}_{\mathrm{mod}}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}^{it}\in\mathbb{B}$.
 
 **Interpretation.**
@@ -317,7 +317,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$ | Modular automorphism group |
 | $\tilde{Ϛ}\in\mathbb{M}_+$ | Faithful state (positive definite, trace one) |
 | $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ | GNS inner product on $\mathbb{B}$ |
-| $\tilde{K}=-\log\tilde{Ϛ}$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
+| $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
 | $F_{AB}(t+i)=F_{BA}(-t)$ | KMS boundary relation (parent article) |
 | $\delta:\mathbb{R}\to\operatorname{Out}(M)$ | Connes invariant, $t\mapsto[\sigma_t]$ |
 
