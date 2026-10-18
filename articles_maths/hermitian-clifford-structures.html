@@ -51,7 +51,7 @@
       <div class="article-body">
         <h1 id="hermitian-clifford-structures"><strong>Hermitian Clifford Structures</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A real Clifford algebra carries the anti-involutions of reversion $\tilde{\ }$, grade involution $\alpha$ and Clifford conjugation $\hat{\ }$, none of which uses a Hermitian form. A <strong>Hermitian Clifford structure</strong> is a Clifford structure together with a Hermitian form on its module, so that the conjugation of the form, written $x\mapsto x^{\dagger}$, becomes a fourth anti-involution, the <strong>Hermitian conjugation</strong>, and the Clifford multiplication is required to be compatible with the form in the sense</p>
+<p>A real Clifford algebra carries the anti-involutions of reversion $x\mapsto x^{r}$, grade involution $\alpha$ and Clifford conjugation $\hat x=\alpha(x^{r})$, none of which uses a Hermitian form. A <strong>Hermitian Clifford structure</strong> is a Clifford structure together with a Hermitian form on its module, so that the conjugation of the form, written $x\mapsto x^{\dagger}$, becomes a fourth anti-involution, the <strong>Hermitian conjugation</strong>, and the Clifford multiplication is required to be compatible with the form in the sense</p>
 <p>$$
 c(b)^{\dagger}=-c(b) ,
 $$</p>
@@ -63,7 +63,7 @@ $$</p>
 x\longmapsto x^{\dagger} , \qquad (x+y)^{\dagger}=x^{\dagger}+y^{\dagger} , \quad (xy)^{\dagger}=y^{\dagger}x^{\dagger} , \quad (x^{\dagger})^{\dagger}=x , \quad (\lambda x)^{\dagger}=\bar\lambda\,x^{\dagger} ,
 $$</p>
 <p>together with a non-degenerate Hermitian form $h$ on $\mathbb{C}\ell(V,\mathfrak{Q})$ with respect to which $h(x^{\dagger}y,z)=h(y,xz)$; on the vectors it is compatible with the quadratic form.</p>
-<p><strong>Proposition.</strong> The Hermitian conjugation exists, it is determined up to the unitary group of $h$, and on a vector it satisfies $b^{\dagger}=\bar\cdot$-linear in $b$ with the value determined by the compatibility with $Q$; it commutes with the grade involution, $\alpha(x^{\dagger})=\alpha(x)^{\dagger}$, and it is distinct from the Clifford conjugation $\hat x=\alpha(\tilde x)$ whenever the form is not real.</p>
+<p><strong>Proposition.</strong> The Hermitian conjugation exists, it is determined up to the unitary group of $h$, and on a vector it satisfies $b^{\dagger}=\bar\cdot$-linear in $b$ with the value determined by the compatibility with $Q$; it commutes with the grade involution, $\alpha(x^{\dagger})=\alpha(x)^{\dagger}$, and it is distinct from the Clifford conjugation $\hat x=\alpha(x^{r})$ whenever the form is not real.</p>
 <p><strong>Proof.</strong> The construction is that of a dagger on an algebra with a trace form in <em>Hilbert Algebras</em>: the form $h$ gives the conjugate-linear isomorphism with the dual, and the transpose of the left multiplication supplies the anti-involution; the compatibility with $Q$ fixes the values on the generating vectors up to a unitary; the commutation with $\alpha$ is the compatibility of the grading; the distinction from $\hat x$ is the presence of the complex conjugation of the coefficients.</p>
 <p><strong>Remark (the Witt basis).</strong> For the complex quadratic space of even dimension $2m$ with the neutral form, a Witt decomposition $\mathbb{C}^{2m}=W\oplus W'$ into maximal isotropic subspaces with a duality pairing supplies a basis $\mathfrak f_1,\dots,\mathfrak f_m$ of $W$ and $\mathfrak f_1^{\dagger},\dots,\mathfrak f_m^{\dagger}$ of $W'$ with</p>
 <p>$$
@@ -133,7 +133,7 @@ $$</p>
 <td>The multiplication by a vector interchanges the chiral halves</td>
 </tr>
 <tr>
-<td>$\hat x=\alpha(\tilde x)$</td>
+<td>$\hat x=\alpha(x^{r})$</td>
 <td>Clifford conjugation; <strong>not</strong> the Hermitian conjugation</td>
 </tr>
 </tbody>
