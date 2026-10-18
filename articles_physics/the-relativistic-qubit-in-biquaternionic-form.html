@@ -266,15 +266,15 @@ $$
 \tilde{S}_k = \frac{\hbar}{2}\,i \vec e_k , \qquad [\tilde{S}_j,\tilde{S}_k] = i\hbar\,\epsilon_{jkl}\tilde{S}_l ,
 $$
 and the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. The four-momentum is the material element $\tilde{P} = m\tilde{V}\in\mathbb{M}_-$, with $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$; it is not an observable but the frame datum that labels which little-group qubit is in question.</p>
-<p><strong>Generators.</strong> The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements,
+<p><strong>Generators.</strong> The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements, the pure vectors
 $$
-\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0},
+\tfrac12 \vec e_k\in\mathbb{M}_-^{0},
 $$
-and the boost generators are the traceless Hermitian ones,
+and the boost generators are the traceless Hermitian ones, the pure elements
 $$
-\tilde{K}_{\mathrm{boost},k} = \tfrac12\,i \vec e_k\in\mathbb{M}_+^{0},
+\tfrac12 i \vec e_k\in\mathbb{M}_+^{0},
 $$
-and $[\tilde{K}_{\mathrm{boost},j},\tilde{K}_{\mathrm{boost},k}] = -\epsilon_{jkl}\tilde{J}_l$: the commutator of two boosts is a rotation. The relativistic qubit's <em>observables</em> are the Hermitian elements of $\mathbb{M}_+$ and its <em>frame generators</em> are the Hermitian traceless elements of the same sector, while its <em>rotations</em> — the compact operations and the material generators — lie in $\mathbb{M}_-$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.</p>
+and $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$: the commutator of two boosts is a rotation. The relativistic qubit's <em>observables</em> are the Hermitian elements of $\mathbb{M}_+$ and its <em>frame generators</em> are the Hermitian traceless elements of the same sector, while its <em>rotations</em> — the compact operations and the material generators — lie in $\mathbb{M}_-$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.</p>
 <h2 id="summary">Summary</h2>
 <p>The relativistic qubit is the defining module $S$ of $\mathbb{B}$ with the left action of the unit-norm group $SL(2,\mathbb{C})$, together with the little-group structure that the action induces at fixed four-velocity. Its state vectors are the spinors, its states are the positive trace-one elements of $\mathbb{M}_+$, and its pure states are the rays, i.e. the points of $\mathbb{CP}^1$, on which the Lorentz group acts by Möbius transformations with $PSL(2,\mathbb{C})\cong SO^+(1,3)$.</p>
 <p>The left action is not unitary. The spinor norm is preserved if and only if $\tilde U^{*}\tilde U = e_t$, which selects $SU(2)$ inside $SL(2,\mathbb{C})$; a boost scales the norm and leaves the ray transformed by a Möbius map. Each pure state determines a future null four-vector
@@ -361,12 +361,12 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 <td>Spin operators</td>
 </tr>
 <tr>
-<td>$\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0}$</td>
-<td>Rotation generators (material, compact)</td>
+<td>$\tfrac12\vec e_k\in\mathbb{M}_-^{0}$</td>
+<td>Rotation generators (pure elements, material, compact)</td>
 </tr>
 <tr>
-<td>$\tilde{K}_{\mathrm{boost},k} = \tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$</td>
-<td>Boost generators (informational)</td>
+<td>$\tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$</td>
+<td>Boost generators (pure elements, informational)</td>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$</td>
