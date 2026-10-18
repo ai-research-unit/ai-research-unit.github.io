@@ -160,7 +160,7 @@ The identity is the multiplicativity of the norm of $\mathbb{H}$ in the coordina
 
 **Theorem (Hurwitz, sums-of-squares form).** A sums-of-squares identity of the shape displayed, with the forms on the right linearly independent in $a$ and in $b$, exists for $n = 1,2,4,8$ and for no other $n$.
 
-The identity fails for $n = 3$ and $n = 5,6,7$ and for every $n\geq9$, and the failure is the content of the previous section: the identity for $n$ is equivalent to a normed division algebra of dimension $n$, and the doubling produces such algebras only for the four values. The identity for $n = 16$ fails although the sedenion multiplication exists, because the norm of the sedenions is not multiplicative; the defect is exhibited by the zero divisors of the sedenions. In the basis $e_0,\dots,e_{15}$ of the doubling, in which $e_8 = \ell$ satisfies $\ell^2 = -1$ and anticommutes with $e_1,\dots,e_7$, while $e_0,\dots,e_7$ carry the octonion multiplication $e_ie_{i+1} = e_{i+3}$ with the indices read modulo $7$ on $1,\dots,7$, the two elements
+The identity fails for $n = 3$ and $n = 5,6,7$ and for every $n\geq9$, and the failure is the content of the previous section: the identity for $n$ is equivalent to a normed division algebra of dimension $n$, and the doubling produces such algebras only for the four values. The identity for $n = 16$ fails although the sedenion multiplication exists, because the norm of the sedenions is not multiplicative; the defect is exhibited by the zero divisors of the sedenions. In the basis $e_t,e_1,\dots,e_{15}$ of the doubling, in which $e_8 = \ell$ satisfies $\ell^2 = -e_t$ and anticommutes with $e_1,\dots,e_7$, while $e_t,e_1,\dots,e_7$ carry the octonion multiplication $e_ie_{i+1} = e_{i+3}$ with the indices read modulo $7$ on $1,\dots,7$, the two elements
 
 $$
 (e_1+e_8)(e_2-e_{12}) = 0
@@ -199,7 +199,7 @@ with the multiplicativity of the norm holding through the octonions and failing 
 | $\mathbb{D}$, $\mathbb{H}_{\mathbb{D}}$ | split complex numbers, split biquaternions (isotropic norm) |
 | $[x,y,z] = (xy)z - x(yz)$ | associator |
 | $\pi_{1,2} = \tfrac12(1\pm j)$ | idempotents of $\mathbb{D}$, with $\pi_1\pi_2 = 0$ |
-| $e_0 = 1$, $e_1,\dots,e_7$ | bases of $\mathbb{H}$ and $\mathbb{O}$, $e_k^2 = -e_0$ |
+| $e_t=1$, $e_1,\dots,e_7$ | bases of $\mathbb{H}$ and $\mathbb{O}$, $e_k^2 = -e_t$ |
 | $\sum_i a_i^2$ | the norm in coordinates; sums-of-squares identities |
 
 

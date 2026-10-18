@@ -53,7 +53,7 @@ a compatible Hermitian form exactly when it is of the definite type; the form is
 positive scalar on each irreducible summand, and the involution $*$ under which the axiom holds is
 the Clifford conjugation, possibly composed with the conjugation of the coefficient field. Under it
 a generator $e_i$ is **skew**, $(e_i\cdot s,t)=-(s,e_i\cdot t)$ for $i\ge1$, so the multiplication
-by a vector is skew-adjoint, and the scalar unit is Hermitian.
+by a vector is skew-adjoint, and the scalar unit $1$ is Hermitian.
 
 *Proof.* The skewness of $e_i$ is $e_i^{*}=-e_i$, which is the Clifford conjugation; the axiom then
 reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is skew-adjointness. The existence

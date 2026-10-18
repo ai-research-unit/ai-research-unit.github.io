@@ -7,7 +7,7 @@
 
 The subject is the operator, not a particular algebra. Everything below is a statement about $(A, D)$ under the standing hypotheses, and every particular hypercomplex theory is an instance: for $A = \mathbb{C}$ with $D = \partial/\partial x_0 + i\partial/\partial x_1$ the results reduce to the Cauchy–Riemann equations and the standard facts about holomorphic functions, and for $A = \mathbb{H}$ with the Fueter operator they reduce to the theory of monogenic functions. The systems themselves are treated in categories 26 to 29; here the operator is general.
 
-Throughout, $A$ is a finite-dimensional unital associative real algebra of dimension $m$, with fixed basis $e_0 = 1, e_1, \dots, e_{m-1}$; coordinates $x = \sum_\alpha x_\alpha e_\alpha$; and
+Throughout, $A$ is a finite-dimensional unital associative real algebra of dimension $m$, with fixed basis $1, e_1, \dots, e_{m-1}$; coordinates $x = x_0+\sum_{k\ge1}x_k e_k$; and
 
 $$
 D = \partial/\partial x_0 + \sum_{k \geq 1} B_k \partial/\partial x_k, \qquad \bar D = \partial/\partial x_0 - \sum_{k \geq 1} B_k \partial/\partial x_k,
@@ -306,7 +306,7 @@ The homogeneous polynomials organise under ellipticity through the **Fischer lem
 | Symbol | Meaning |
 |---|---|
 | $A$ | Finite-dimensional unital associative real algebra, $\dim_\mathbb{R} A = m$ |
-| $e_0 = 1, \dots, e_{m-1}$ | Fixed basis of $A$ |
+| $1, e_1, \dots, e_{m-1}$ | Fixed basis of $A$ |
 | $B_k$ | Coefficients of $D$, with $B_jB_k + B_kB_j = -2\delta_{jk}$ |
 | $D = \partial/\partial x_0 + \sum_k B_k\partial/\partial x_k$ | Generalised Cauchy–Riemann operator |
 | $\bar D = \partial/\partial x_0 - \sum_k B_k\partial/\partial x_k$ | Conjugate operator |

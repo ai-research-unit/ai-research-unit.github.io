@@ -212,7 +212,7 @@ satisfy the free equation, and their content differs in a way the programme read
   calls it the plane longitudinal harmonic EGM wave.
 - **A vector-potential mode is transverse exactly when its potential is.** Its scalar (ether-density)
   amplitude is $\alpha = -k_{j}\varphi$, recomputed, so it vanishes precisely when
-  $e_{j} \perp \vec k$. In that case $\vec E \perp \vec k$, $\vec H \perp \vec k$
+  $\vec e_{j} \perp \vec k$. In that case $\vec E \perp \vec k$, $\vec H \perp \vec k$
   and $\vec E \perp \vec H$ — the **tensional wave** of the paper, with zero ether density —
   while for $k_{j} \neq 0$ the mode carries a longitudinal part. This is where the ether section's
   restriction returns: the tensional wave is precisely the mode whose scalar part vanishes, that is,
@@ -227,7 +227,7 @@ satisfy the free equation, and their content differs in a way the programme read
   ${}^{*}$, the biquaternion $\tfrac12\tilde{\Phi}\tilde{\Phi}^{*}$ has the real scalar part
   $\omega^{2}$, independent of position, for every mode, and vector part $i\omega^{2}\vec u_k$;
   both are recomputed. The paper's own display instead places the vector-potential modes' flux along
-  their polarisation axis, $\omega^{2}\cos\gamma_{j}\,e_{j}$, vanishing for the tensional wave, and
+  their polarisation axis, $\omega^{2}\cos\gamma_{j}\,\vec e_{j}$, vanishing for the tensional wave, and
   that form does not reproduce from the paper's own amplitude formula. The corpus carries the
   recomputed direction; the paper's bilinear pairing is its own and the degraded text layer does not
   expose it, so the disagreement is recorded rather than resolved.
@@ -382,7 +382,7 @@ $\psi = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the **elementary photon**
 charge, a spherical wave with amplitudes $\omega/(4\pi r)$ and
 $\sqrt{\omega^{2}+1/r^{2}}/(4\pi r)$, an energy density falling as $r^{-2}$ and a radial flux; the
 homogeneous equation gives **free photons** as the four plane modes
-$\omega\varphi(1+i\vec u_k)$ and $\varphi(\omega e_{j}-ik_{j}+i[\vec k,e_{j}])$, of which
+$\omega\varphi(1+i\vec u_k)$ and $\varphi(\omega \vec e_{j}-ik_{j}+i[\vec k,\vec e_{j}])$, of which
 the first is longitudinal with the two field vectors parallel and the others are transverse exactly
 when their potentials are; and a source's field is the source convolved with the elementary photon,
 which the paper reads as light, a cloud of elementary photons over a visible band.
@@ -421,7 +421,7 @@ clearest statement of what the programme assumes.
 | $\tilde{\Phi}_{\vec kj}$ | Free plane modes, $j = 0,1,2,3$ |
 | $\vec u_k = \vec k/\omega$ | Unit wave direction, $\|\vec k\| = \omega$ |
 | $\varphi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ | Plane Helmholtz potential |
-| $\alpha = -k_{j}\varphi$ | Ether-density amplitude of the $j$-th mode; zero iff $e_{j}\perp\vec k$ |
+| $\alpha = -k_{j}\varphi$ | Ether-density amplitude of the $j$-th mode; zero iff $\vec e_{j}\perp\vec k$ |
 | $\vec u_x = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$ | Radial unit vector |
 | $\Lambda$, $\tilde{\Sigma}_{\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
 | $\mathrm{O}$, $\tilde{\Sigma}_{\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |

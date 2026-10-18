@@ -40,10 +40,10 @@ that is, a module of the Clifford algebra as in *Clifford Modules and the Twiste
 **Definition.** The **Cauchy–Riemann operator** of Clifford analysis is
 
 $$
-D = \partial/\partial x_0+\sum_{i=1}^{m}e_i\partial/\partial x_i = \sum_{\mu=0}^{m}e_\mu\partial/\partial x_\mu , \qquad e_0 = 1 ,
+D = \partial/\partial x_0+\sum_{i=1}^{m}e_i\partial/\partial x_i .
 $$
 
-and its conjugate is $\bar D = \partial/\partial x_0-\sum_{i=1}^{m}e_i\partial/\partial x_i$. It acts on a $C^1$ function $f : \Omega\to\mathcal{S}$ by $Df = \sum_\mu e_\mu\partial/\partial x_\mu f$.
+and its conjugate is $\bar D = \partial/\partial x_0-\sum_{i=1}^{m}e_i\partial/\partial x_i$. It acts on a $C^1$ function $f : \Omega\to\mathcal{S}$ by $Df = \partial f/\partial x_0+\sum_{i=1}^{m}e_i\,\partial f/\partial x_i$.
 
 **Proposition (factorisation and ellipticity).** The identities
 
@@ -51,7 +51,7 @@ $$
 D\bar D = \bar DD = \Delta = \sum_{\mu=0}^{m}\partial^2/\partial x_\mu^2
 $$
 
-hold, and $D$ is elliptic: its principal symbol $\sigma(\xi) = \sum_\mu e_\mu\xi_\mu$ is a unit of $A$ for every $\xi = (\xi_0,\dots,\xi_m)\neq0$, with
+hold, and $D$ is elliptic: its principal symbol $\sigma(\xi) = \xi_0+\sum_{i=1}^{m}e_i\xi_i$ is a unit of $A$ for every $\xi = (\xi_0,\dots,\xi_m)\neq0$, with
 
 $$
 \sigma(\xi)^{-1} = \frac{\bar\sigma(\xi)}{|\xi|^2}, \qquad \bar\sigma(\xi) = \xi_0-\sum_{i=1}^{m}e_i\xi_i .
@@ -67,7 +67,7 @@ The factorisation is the reason the Clifford case is the favourable one: the sec
 
 **Proposition (linear structure and one-sided multiplication).** The left monogenic functions on $\Omega$ form a real vector space, closed under right multiplication by constants of $A$; if $a\in A$ is central then $af$ is monogenic whenever $f$ is. The class is not closed under multiplication of two monogenic functions, and this is the non-commutative obstruction of *Hypercomplex Analysis* in its Clifford form.
 
-*Proof.* Linearity of $D$ gives the vector space statement, and for a constant $a$ the Leibniz rule gives $D(fa) = \sum_\mu e_\mu(\partial/\partial x_\mu f)a = (Df)a$ and $D(af) = \sum_\mu e_\mu a\partial/\partial x_\mu f$, which vanishes for central $a$ because $e_\mu a = ae_\mu$. The failure of closure is exhibited by the monogenic function $x\mapsto x+ae_1$ of the next example and the monogenic function $x\mapsto x$ in the complex case; over $\mathbb{H}$ the product of two monogenic functions is in general not monogenic.
+*Proof.* Linearity of $D$ gives the vector space statement, and for a constant $a$ the Leibniz rule gives $D(fa) = (\partial f/\partial x_0)a+\sum_{i=1}^{m}e_i(\partial f/\partial x_i)a = (Df)a$ and $D(af) = a\,\partial f/\partial x_0+\sum_{i=1}^{m}e_i a\,\partial f/\partial x_i$, which vanishes for central $a$ because $e_\mu a = ae_\mu$. The failure of closure is exhibited by the monogenic function $x\mapsto x+ae_1$ of the next example and the monogenic function $x\mapsto x$ in the complex case; over $\mathbb{H}$ the product of two monogenic functions is in general not monogenic.
 
 **Example (the complex case).** For $m=1$ let $z = x_0+e_1x_1$. Then $Dz = \partial/\partial x_0\,z+e_1\partial/\partial x_1\,z = 1+e_1^2=0$, so $z$ is left monogenic, and more generally $D(z^k)=0$ for every $k\ge0$: $\partial/\partial x_0\,z^k = kz^{k-1}$ and $\partial/\partial x_1\,z^k = kz^{k-1}e_1$, so $D(z^k) = kz^{k-1}+e_1kz^{k-1}e_1 = kz^{k-1}(1+e_1^2)=0$. Thus the polynomials in one complex variable are monogenic, and with $A=\mathbb{C}$ the monogenic functions are the holomorphic ones.
 
@@ -109,7 +109,7 @@ in the sense of distributions; consequently $E$ is a fundamental solution of $D$
 
 ### Cauchy–Pompeiu and Cauchy
 
-**Theorem (Cauchy–Pompeiu).** Let $\Omega\subseteq\mathbb{R}^{m+1}$ be a bounded domain with smooth boundary, oriented by the outward normal $\nu$, and put $\nu_B = \sum_{\mu=0}^{m}\nu_\mu e_\mu$, $\nu_\mu$ the components of $\nu$. For $f$ of class $C^1$ on $\bar\Omega$ and $x\in\Omega$,
+**Theorem (Cauchy–Pompeiu).** Let $\Omega\subseteq\mathbb{R}^{m+1}$ be a bounded domain with smooth boundary, oriented by the outward normal $\nu$, and put $\nu_B = \nu_0+\sum_{i=1}^{m}\nu_i e_i$, $\nu_\mu$ the components of $\nu$. For $f$ of class $C^1$ on $\bar\Omega$ and $x\in\Omega$,
 
 $$
 f(x) = \int_{\partial\Omega}E(x-y)\,\nu_B(y)\,f(y)\,dS(y)-\int_{\Omega}E(x-y)\,(Df)(y)\,dy .
@@ -671,18 +671,18 @@ Clifford analysis is the function theory of the Cauchy–Riemann operator $D=\pa
 | Symbol | Meaning |
 |---|---|
 | $m$ | Number of Clifford generators; ambient dimension $m+1$ |
-| $e_1,\dots,e_m$ | Generators, $e_ie_j+e_je_i=-2\delta_{ij}$; $e_0=1$ |
+| $e_1,\dots,e_m$ | Generators, $e_ie_j+e_je_i=-2\delta_{ij}$; $1$ the identity |
 | $\mathrm{Cl}_{0,m}$, $A$ | Clifford algebra of the negative-definite form; $\dim_\mathbb{R}A=2^m$ |
 | $x=x_0+\sum_ix_ie_i$ | Vector variable in $\mathbb{R}^{m+1}$ |
 | $x^{\natural} = x_0-\sum_ix_ie_i$ | Clifford conjugation; $x x^{\natural}=|x|^2$ |
 | $\mathcal{S}$ | Clifford module of values (spinor module in the classical case) |
-| $D=\sum_{\mu=0}^me_\mu\partial/\partial x_\mu$ | Cauchy–Riemann operator (classically, Dirac operator) |
+| $D=\partial/\partial x_0+\sum_{i=1}^me_i\partial/\partial x_i$ | Cauchy–Riemann operator (classically, Dirac operator) |
 | $\bar D=\partial/\partial x_0-\sum_ie_i\partial/\partial x_i$ | Conjugate operator; $D\bar D=\bar DD=\Delta$ |
 | $\sigma(\xi)$, $\bar\sigma(\xi)$ | Symbol and conjugate symbol |
 | $Df=0$, $fD=0$ | Left and right monogenicity |
 | $E(x)=\omega_m^{-1}x^{\natural}|x|^{-m-1}$ | Cauchy kernel, $DE=\delta_0$ |
 | $\omega_m=|S^m|$ | Surface area of the unit sphere in $\mathbb{R}^{m+1}$ |
-| $\nu_B=\sum_\mu\nu_\mu e_\mu$ | Conormal element of a boundary |
+| $\nu_B=\nu_0+\sum_{i=1}^m\nu_i e_i$ | Conormal element of a boundary |
 | $\mathcal{M}_k$ | Solid spherical monogenics of degree $k$ |
 | $\mathcal{P}_k$ | Homogeneous polynomials of degree $k$ |
 | $\mathcal{C}$, $H^2$ | Cauchy transform and monogenic Hardy space |

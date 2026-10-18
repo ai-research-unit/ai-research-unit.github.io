@@ -11,7 +11,7 @@ Both geometries are governed by the octonions: $G_2$ is the automorphism group o
 
 ## The Octonions and the Exceptional Groups
 
-**Definition.** The **octonion algebra** $\mathbb{O}$ is the real vector space with basis $e_0 = 1, e_1, \ldots, e_7$, made into a non-associative algebra by the Cayley–Dickson doubling $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ with multiplication
+**Definition.** The **octonion algebra** $\mathbb{O}$ is the real vector space with basis $e_t = 1, e_1, \ldots, e_7$, made into a non-associative algebra by the Cayley–Dickson doubling $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ with multiplication
 
 $$
 (a,b)(c,d) = (ac - d^{\natural}b,\ da + b c^{\natural}),

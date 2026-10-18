@@ -113,7 +113,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $e$ | An idempotent, $e^2 = e$ |
 | $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{D}$, $\tilde\Pi_{1,2}$ in $\mathbb{H}_{\mathbb{D}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
-| $e_t = 1$ in $\mathbb{H}_{\mathbb{D}}$ | The identity of the split-biquaternions, the trivial idempotent |
+| $1$, written $e_t$ in the quaternion layers | The identity, the trivial idempotent |
 | $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | Orthogonal matrix-unit idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = 1$ |
 | $x, y$ | The nilpotent off-diagonal elements of the Peirce corners |
 | $e_i A e_j$ | A Peirce corner of the algebra $A$ |

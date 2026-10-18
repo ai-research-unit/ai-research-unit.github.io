@@ -15,7 +15,7 @@ $$
 L : \mathbb{R} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{R}), \qquad L_{q}(b) = q b .
 $$
 
-For each $q$, the map $b \mapsto qb$ is $\mathbb{R}$-linear because multiplication is bilinear, so $L_{q}$ is an $\mathbb{R}$-linear endomorphism of the one-dimensional real space $\mathbb{R}$. Writing the endomorphism as a matrix in the basis $1$, the same symbol $\mathsf{M}_1(q)$ denotes the matrix acting on the column $(b)$ of $b = b e_t$.
+For each $q$, the map $b \mapsto qb$ is $\mathbb{R}$-linear because multiplication is bilinear, so $L_{q}$ is an $\mathbb{R}$-linear endomorphism of the one-dimensional real space $\mathbb{R}$. Writing the endomorphism as a matrix in the basis $1$, the same symbol $\mathsf{M}_1(q)$ denotes the matrix acting on the column $(b)$ of $b = b\cdot 1$.
 
 **Proposition (the regular matrix is the Cayley matrix).** In the basis $1$,
 
@@ -42,7 +42,7 @@ Hence $\mathsf{M}_1$ is an $\mathbb{R}$-algebra homomorphism and the space $\mat
 **Proof.** Both sides are $\mathbb{R}$-linear and are computed on the basis. Associativity gives
 
 $$
-L_{q_1}\bigl(L_{q_2}(1)\bigr) = q_1(q_2 1) = (q_1 q_2)1 = L_{q_1 q_2}(1),
+L_{q_1}\bigl(L_{q_2}(1)\bigr) = q_1(q_2\cdot 1) = (q_1 q_2)\cdot 1 = L_{q_1 q_2}(1),
 $$
 
 so the two matrices agree on a basis; in the $1\times1$ picture this is the identity $[q_1][q_2] = [q_1 q_2]$.

@@ -7,7 +7,7 @@ Complex analysis is the study of functions of one complex variable that are diff
 
 The point of departure is that the naive generalisation fails. Over a commutative field $\mathbb{K}$ the differentiable functions of a $\mathbb{K}$-variable are the holomorphic functions, and there are many of them. Over a non-commutative algebra, requiring the differential to be linear over the algebra forces the function to be affine; the class is far too small to support a theory. The remedy, standard in the subject, is to fix a first-order operator built from the algebra and to study the functions that operator annihilates. This is the general method, and every particular hypercomplex theory is an instance of it.
 
-Throughout, $A$ is a finite-dimensional unital associative algebra over $\mathbb{R}$, of dimension $m$, with a fixed basis $e_0 = 1, e_1, \dots, e_{m-1}$. The underlying real vector space is identified with $\mathbb{R}^m$ and carries the Euclidean topology, which by *Topological Algebras and Banach Algebras* is the unique topology making $A$ a topological algebra. Thus $A$ is a real Banach algebra, open subsets of $A$ are open subsets of $\mathbb{R}^m$, and differentiability is Fréchet differentiability. The theory is over $\mathbb{R}$; the complex case is the case $A = \mathbb{C}$.
+Throughout, $A$ is a finite-dimensional unital associative algebra over $\mathbb{R}$, of dimension $m$, with a fixed basis $1, e_1, \dots, e_{m-1}$. The underlying real vector space is identified with $\mathbb{R}^m$ and carries the Euclidean topology, which by *Topological Algebras and Banach Algebras* is the unique topology making $A$ a topological algebra. Thus $A$ is a real Banach algebra, open subsets of $A$ are open subsets of $\mathbb{R}^m$, and differentiability is Fréchet differentiability. The theory is over $\mathbb{R}$; the complex case is the case $A = \mathbb{C}$.
 
 ## The Failure of Algebra-Differentiability
 
@@ -326,7 +326,7 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | Symbol | Meaning |
 |---|---|
 | $A$ | Finite-dimensional unital associative real algebra, $\dim_\mathbb{R} A = m$ |
-| $e_0 = 1, e_1, \dots, e_{m-1}$ | Fixed basis of $A$ |
+| $1, e_1, \dots, e_{m-1}$ | Fixed basis of $A$ |
 | $\Omega$ | Open (or domain: open connected) subset of $A$ |
 | $f : \Omega \to A$ | Hypercomplex-valued function |
 | $D = \sum_\alpha B_\alpha \partial/\partial x_\alpha$ | Generalised Cauchy–Riemann operator |

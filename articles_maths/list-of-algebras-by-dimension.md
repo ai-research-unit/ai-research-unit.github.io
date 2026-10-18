@@ -113,7 +113,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $\mathbb{Z}$ | the integers, as in the rank-$4$ Lipschitz lattice |
 | $M_2(\mathbb{R})$, $M_2(\mathbb{C})$ | matrix algebras |
 | $i, j, k$ | quaternion units |
-| $e_0,\dots,e_7$ | octonion basis |
+| $e_t,e_1,\dots,e_7$ | octonion basis |
 | $\mathbb{R}[t]/(t^2+1)$ etc. | the quadratic quotients of the polynomial ring |
 
 ## Further Reading

@@ -5,7 +5,7 @@
 
 The preceding articles built the differential side of hypercomplex analysis: a generalised Cauchy–Riemann operator $D$, the regular functions it annihilates, and the Cauchy–Pompeiu representation of a function by its boundary values. This article develops the integral side as a subject in its own right: integrals of $A$-valued functions and forms, the Cauchy–Goursat theorem for closed hypersurfaces, the failure of the naive curve version of the Cauchy theorem over a non-commutative algebra, primitives and path independence in the commutative case, the Cauchy transform as a function of the parameter, and the jump formulas at a boundary.
 
-The treatment is general. The particular systems of categories 26 to 29 have their own explicit kernels, residues and expansions, and those computations are not repeated here; what is common to all of them is the shape of the integral theorems, and it is that shape that this article fixes. Throughout, $(A,D)$ is an elliptic hypercomplex system in the sense of *Hypercomplex Analysis*: $A$ is a finite-dimensional unital associative real algebra of dimension $m$ with basis $e_0 = 1, \dots, e_{m-1}$,
+The treatment is general. The particular systems of categories 26 to 29 have their own explicit kernels, residues and expansions, and those computations are not repeated here; what is common to all of them is the shape of the integral theorems, and it is that shape that this article fixes. Throughout, $(A,D)$ is an elliptic hypercomplex system in the sense of *Hypercomplex Analysis*: $A$ is a finite-dimensional unital associative real algebra of dimension $m$ with basis $1, e_1, \dots, e_{m-1}$,
 
 $$
 D = \partial/\partial x_0 + \sum_{k \geq 1} B_k \partial/\partial x_k, \qquad \bar D = \partial/\partial x_0 - \sum_{k\geq1} B_k\partial/\partial x_k, \qquad D\bar D = \bar D D = \Delta,
@@ -98,7 +98,7 @@ $$
 It is left regular, since
 
 $$
-D f = e_0\,\partial/\partial x_0 f + e_1\,\partial/\partial x_1 f = e_0(-e_1) + e_1 e_0 = -e_1 + e_1 = 0 .
+D f = \partial/\partial x_0 f + e_1\,\partial/\partial x_1 f = -e_1 + e_1 = 0 .
 $$
 
 Let $\gamma(t) = r\cos t\, e_1 + r \sin t\, e_2$ for $t \in [0, 2\pi]$, a closed circle in the plane spanned by $e_1, e_2$. Along $\gamma$ one has $q_0 = 0$ and $q_1 = r\cos t$, so $f(\gamma(t)) = r\cos t$, and $\gamma'(t) = -r\sin t\, e_1 + r\cos t\, e_2$. Therefore
