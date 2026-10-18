@@ -383,28 +383,28 @@ $$
 
 the product state $|{+}\rangle|0\rangle$.
 
-**Step two: the CNOT.** Write $\tilde{A} = \tilde\Pi_1(\vec u_x)$, $\tilde{B} = \tilde\Pi_1(\vec u_z)$, $\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\vec u_z)$, and $\tilde{Q}_{12} = \tilde{Q}_{\vec U_x}$. Since $\tilde{Q}_{12} = \tilde{Q}_{12}^{*}$ and $\tilde{Q}_{12}^2 = e_t\otimes e_t$, conjugation by $\tilde{Q}_{12}$ expands into four terms:
+**Step two: the CNOT.** Write $\tilde\Pi_{\mathrm x} = \tilde\Pi_1(\vec u_x)$ for the control state and $\tilde\Pi_{\mathrm z} = \tilde\Pi_1(\vec u_z)$ for the target state, with $\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\vec u_z)$ the control projectors; set $\tilde{Q}_{12} = \tilde{Q}_{\vec U_x}$. Since $\tilde{Q}_{12} = \tilde{Q}_{12}^{*}$ and $\tilde{Q}_{12}^2 = e_t\otimes e_t$, conjugation by $\tilde{Q}_{12}$ expands into four terms:
 
 $$
-\tilde{Q}_{12}(\tilde{A}\otimes\tilde{B})\tilde{Q}_{12}
-= \tilde\Pi_1\tilde{A}\tilde\Pi_1 \otimes \tilde{B}
-+ \tilde\Pi_1\tilde{A}\tilde\Pi_2 \otimes \tilde{B}\,(i\vec e_x)
-+ \tilde\Pi_2\tilde{A}\tilde\Pi_1 \otimes (i\vec e_x)\,\tilde{B}
-+ \tilde\Pi_2\tilde{A}\tilde\Pi_2 \otimes (i\vec e_x)\,\tilde{B}\,(i\vec e_x).
+\tilde{Q}_{12}(\tilde\Pi_{\mathrm x}\otimes\tilde\Pi_{\mathrm z})\tilde{Q}_{12}
+= \tilde\Pi_1\tilde\Pi_{\mathrm x}\tilde\Pi_1 \otimes \tilde\Pi_{\mathrm z}
++ \tilde\Pi_1\tilde\Pi_{\mathrm x}\tilde\Pi_2 \otimes \tilde\Pi_{\mathrm z}\,(i\vec e_x)
++ \tilde\Pi_2\tilde\Pi_{\mathrm x}\tilde\Pi_1 \otimes (i\vec e_x)\,\tilde\Pi_{\mathrm z}
++ \tilde\Pi_2\tilde\Pi_{\mathrm x}\tilde\Pi_2 \otimes (i\vec e_x)\,\tilde\Pi_{\mathrm z}\,(i\vec e_x).
 $$
 
-The four projectors evaluate, using $\tilde\Pi_{1,2}\tilde{A}\tilde\Pi_{1,2} = \tfrac{1}{2}\tilde\Pi_{1,2}$ (the transition probability $\tfrac{1}{2}(1 + \vec u_z\cdot\vec u_x) = \tfrac12$) and the Peirce components
+The four projectors evaluate, using $\tilde\Pi_{1,2}\tilde\Pi_{\mathrm x}\tilde\Pi_{1,2} = \tfrac{1}{2}\tilde\Pi_{1,2}$ (the transition probability $\tfrac{1}{2}(1 + \vec u_z\cdot\vec u_x) = \tfrac12$) and the Peirce components
 
 $$
-\tilde\Pi_1\tilde{A}\tilde\Pi_2 = \tfrac{1}{4}\left(i\vec e_x - \vec e_y\right),
+\tilde\Pi_1\tilde\Pi_{\mathrm x}\tilde\Pi_2 = \tfrac{1}{4}\left(i\vec e_x - \vec e_y\right),
 \qquad
-\tilde\Pi_2\tilde{A}\tilde\Pi_1 = \tfrac{1}{4}\left(i\vec e_x + \vec e_y\right),
+\tilde\Pi_2\tilde\Pi_{\mathrm x}\tilde\Pi_1 = \tfrac{1}{4}\left(i\vec e_x + \vec e_y\right),
 $$
 
-while the target products are $\tilde{B}(i\vec e_x) = \tfrac12(i\vec e_x - \vec e_y)$ and $(i\vec e_x)\tilde{B} = \tfrac12(i\vec e_x + \vec e_y)$, and $(i\vec e_x)\tilde{B}(i\vec e_x) = \tilde\Pi_2(\vec u_z)$. Substituting,
+while the target products are $\tilde\Pi_{\mathrm z}(i\vec e_x) = \tfrac12(i\vec e_x - \vec e_y)$ and $(i\vec e_x)\tilde\Pi_{\mathrm z} = \tfrac12(i\vec e_x + \vec e_y)$, and $(i\vec e_x)\tilde\Pi_{\mathrm z}(i\vec e_x) = \tilde\Pi_2$. Substituting,
 
 $$
-\tilde{Q}_{12}(\tilde{A}\otimes\tilde{B})\tilde{Q}_{12}
+\tilde{Q}_{12}(\tilde\Pi_{\mathrm x}\otimes\tilde\Pi_{\mathrm z})\tilde{Q}_{12}
 = \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right].
 $$
 

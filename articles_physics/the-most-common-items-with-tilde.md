@@ -78,29 +78,19 @@ The governing rule: **only the Q family is generic, and only an element carries 
 
 ## 2. Bound Letters
 
-These letters are bound where they are introduced. Each names a coefficient, a named field, a gate or a bound argument. A generic element is never written with one; it takes the Q family. The count gives the articles in which the letter occurs in that role. The letter $B$ is the exception: it is bound in four roles and treated in §*The Bindings of $\tilde B$*.
+These letters are bound where they are introduced. Each names a coefficient, a named field, a gate or a bound argument. A generic element is never written with one; it takes the Q family. The count gives the articles in which the letter occurs in that role. The letter $B$ is the exception: it is bound afresh in each article that uses it, and treated in §*The Bindings of $\tilde B$*.
 
 ### The Bindings of $\tilde B$
 
-$B$ is outside the Q family, so it is never generic: each article binds it afresh, and one article may bind it more than once. The tilde marks a binding with a scalar part.
+$B$ is outside the Q family, so it is never generic: each article binds it afresh, and one article may bind it more than once. The tilde marks a binding with a scalar part. The count is of the glyph $\tilde B$; the catalogue itself is excluded.
 
-| Binding | Object | Scalar part | Mark | Articles |
+| Article | Binding | Object | Scalar part | $\tilde B$ |
 |---|---|---|---|---|
-| Lanczos partner field | $\tilde B$ in $\tilde\nabla\tilde A=m\tilde B$, $\tilde\nabla\tilde B=m\tilde A$: a general biquaternion | generally nonzero | $\tilde B$ | 0 |
-| Stueckelberg combination | $\tilde B=\tilde A-\tilde\nabla\chi\in\mathbb{M}_-$ | the $e_t$ coefficient, generally nonzero | $\tilde B$ | 1 |
-| CNOT operands | $\tilde B=\tilde\Pi_1(\vec u_z)$, with $\tilde A=\tilde\Pi_1(\vec u_x)$ | $\tfrac12$ | $\tilde B$ | 1 |
-| Bound algebra element | $\tilde B=\tilde Q-\mu e_t$; $\tilde B=\vec e_k\tilde Q^{*}$; $\tilde B=e_t-i\vec e_z$ | generally nonzero | $\tilde B$ | 4 |
+| *The Stueckelberg Mechanism in Biquaternionic Form* | Stueckelberg combination | $\tilde B=\tilde A-\tilde\nabla\chi\in\mathbb{M}_-$, gauge invariant with $\tilde A$ and $\chi$, with $-\tfrac12\mu^2\langle\tilde B\rangle$ the mass term | the $e_t$ coefficient, generally nonzero | 14 |
+| *Biquaternion Spectral Theory* | Bound algebra element | $\tilde B=\tilde Q-\mu e_t$ in the resolvent identity | generally nonzero | 4 |
+| *The Four-Vector Operator Representation of Biquaternions* (maths) | Bound algebra element | $\tilde B=\vec e_k\tilde Q^{*}$ in the image proof | generally nonzero | 2 |
+| *The Four-Vector Operator Representation of Biquaternions* (physics) | Bound algebra element | $\tilde B=\vec e_k\tilde Q^{*}$ in the image proof | generally nonzero | 2 |
 
-The article column sums to $6$.
+The occurrences sum to $22$: $14$ in the Stueckelberg combination and $8$ in the bound algebra element. No other article in the two menus carries the glyph.
 
-**The two tensor entries, withdrawn.** The topological baryon current and the contracted Bianchi curvature are no longer bindings of $\tilde B$: the articles state them in tensor form only, $B^\mu$ with $\partial_\mu B^\mu=0$ in *The Skyrme Model and the Topological Baryon in Biquaternionic Form* and *Annihilators in the Biquaternioid Structures over $\mathbb{C}$*, and $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ in *Gauge Curvature and the Bianchi Identity in Biquaternionic Form*. The letter of the current stays $B$, as the index of a four-vector and not as a glyph of the algebra. Neither statement carries a tilde, so neither is catalogued.
-
-**The four tilde bindings, and the exact articles of each.** A number in parentheses is the count of $\tilde B$ in that article; the catalogue itself is excluded.
-
-1. **Lanczos partner field.** The role is the second field of $\tilde\nabla\tilde A=m\tilde B$, $\tilde\nabla\tilde B=m\tilde A$, a general biquaternion whose scalar part is generally nonzero. It is not written in the corpus: the eight articles where the role occurs are *The Petiau System and the Quantisation of Mass in Biquaternionic Form*, *The Proton in Biquaternionic Form*, *The Neutron in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form*, *The Klein–Gordon Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* and *A Brief History of Biquaternions in Physics*, and each writes the pair with the Q family, $\tilde\nabla\tilde Q_1=m\tilde Q_2$, $\tilde\nabla\tilde Q_2=m\tilde Q_1$. The count in the table is therefore zero.
-
-2. **Stueckelberg combination.** *The Stueckelberg Mechanism in Biquaternionic Form* (14): $\tilde B=\tilde A-\tilde\nabla\chi$, an element of $\mathbb{M}_-$ whose $e_t$ coefficient is generally nonzero, gauge invariant with $\tilde A$ and $\chi$, with $-\tfrac12\mu^2\langle\tilde B\rangle$ the mass term.
-
-3. **CNOT operands.** *Quantum Gates and Circuits in Biquaternionic Form* (10): $\tilde A=\tilde\Pi_1(\vec u_x)$ and $\tilde B=\tilde\Pi_1(\vec u_z)$, idempotents of scalar part $\tfrac12$ conjugated on both sides by $\tilde C$.
-
-4. **Bound algebra element.** Three local bindings, of generally nonzero scalar part: *Biquaternion Spectral Theory* (4), $\tilde B=\tilde Q-\mu e_t$ in the resolvent identity; *The Four-Vector Operator Representation of Biquaternions* (2 in the maths menu and 2 in the physics menu, counted as four articles because the title stands in both), $\tilde B=\vec e_k\tilde Q^{*}$ in the image proof; and *Worked Examples in the Biquaternion Algebra* (8), the zero-divisor partner $\tilde B=e_t-i\vec e_z$.
+**The roles that carry no tilde.** The Lanczos partner field, the second field of $\tilde\nabla\tilde A=m\tilde B$, $\tilde\nabla\tilde B=m\tilde A$, is never written so: the eight articles of the role use the Q family, $\tilde\nabla\tilde Q_1=m\tilde Q_2$, $\tilde\nabla\tilde Q_2=m\tilde Q_1$. The topological baryon current and the contracted Bianchi curvature are tensor statements, $B^\mu$ with $\partial_\mu B^\mu=0$ and $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$. The CNOT operands are idempotents, $\tilde\Pi_{\mathrm x}=\tilde\Pi_1(\vec u_x)$ and $\tilde\Pi_{\mathrm z}=\tilde\Pi_1(\vec u_z)$, and the zero-divisor pair is generic, $\tilde Q_1=e_t+i\vec e_z$, $\tilde Q_2=e_t-i\vec e_z$.

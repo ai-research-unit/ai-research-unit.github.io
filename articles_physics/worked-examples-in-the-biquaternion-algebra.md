@@ -97,13 +97,13 @@ The element is neither purely material nor purely informational: its norm is com
 
 ## Explicit Zero Divisors
 
-**Example (an explicit pair).** With the standard idempotents, $\tilde\Pi_+\tilde\Pi_-=0$ with both factors nonzero. In unnormalised form, set $\tilde A=e_t+i\vec e_z$ and $\tilde B=e_t-i\vec e_z$. Then
+**Example (an explicit pair).** With the standard idempotents, $\tilde\Pi_+\tilde\Pi_-=0$ with both factors nonzero. In unnormalised form, set $\tilde Q_1=e_t+i\vec e_z$ and $\tilde Q_2=e_t-i\vec e_z$, twice the two idempotents. Then
 $$
-\tilde A\tilde B=e_t-(i\vec e_z)^2=e_t-1=0,\qquad \tilde A\neq0,\qquad \tilde B\neq0 .
+\tilde Q_1\tilde Q_2=e_t-(i\vec e_z)^2=e_t-1=0,\qquad \tilde Q_1\neq0,\qquad \tilde Q_2\neq0 .
 $$
-Both $\tilde A$ and $\tilde B$ have two nonzero complex coefficients. Moreover $\langle\tilde A\rangle_{\natural}=1+i^2=0$, so $\tilde A$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde A^2=(e_t+i\vec e_z)^2=e_t+2i\vec e_z-(\vec e_z)^2=2e_t+2i\vec e_z=2\tilde A\neq0$.
+Both $\tilde Q_1$ and $\tilde Q_2$ have two nonzero complex coefficients. Moreover $\langle\tilde Q_1\rangle_{\natural}=1+i^2=0$, so $\tilde Q_1$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde Q_1^2=(e_t+i\vec e_z)^2=e_t+2i\vec e_z-(\vec e_z)^2=2e_t+2i\vec e_z=2\tilde Q_1\neq0$.
 
-**Physical interpretation.** The pair $\tilde A=e_t+i\vec e_z$, $\tilde B=e_t-i\vec e_z$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde A$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $\vec e_x+i\vec e_y$, whose square vanishes (*Zero Divisors of the Biquaternion Algebra*).
+**Physical interpretation.** The pair $\tilde Q_1=e_t+i\vec e_z$, $\tilde Q_2=e_t-i\vec e_z$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde Q_1$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $\vec e_x+i\vec e_y$, whose square vanishes (*Zero Divisors of the Biquaternion Algebra*).
 
 ## Physical Readings
 
@@ -111,7 +111,7 @@ The computations read as the framework's calibration set. The multiplication tab
 
 ## Summary
 
-The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z$ the remarkable subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $\langle\tilde{Q}\rangle_{\natural}=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_+,\tilde\Pi_-$ satisfy $\tilde\Pi_+\tilde\Pi_-=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ with each summand minimal; the pair $\tilde A=e_t+i\vec e_z$, $\tilde B=e_t-i\vec e_z$ is an explicit zero-divisor pair, both factors null.
+The multiplication of $\mathbb{B}$ is the quaternion table with complex coefficients and central $i$, $i^2=-1$. On the element $\tilde{Q}=(2+i)e_t+(1-i)\vec e_x+3\vec e_y+i\vec e_z$ the remarkable subspaces are exhibited by the scalar-vector, quaternion-anti-quaternion and Hermitian-anti-Hermitian decompositions of $\tilde{Q}$, and the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat}=-{}^{*}$ act on it as listed. The element has norm $\langle\tilde{Q}\rangle_{\natural}=11+2i$, so it is a unit with $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/(11+2i)$; its material part has norm $9$ and its informational part norm $2$. The idempotents $\tilde\Pi_+,\tilde\Pi_-$ satisfy $\tilde\Pi_+\tilde\Pi_-=0$ and give $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ with each summand minimal; the pair $\tilde Q_1=e_t+i\vec e_z$, $\tilde Q_2=e_t-i\vec e_z$ is an explicit zero-divisor pair, both factors null.
 
 ## Summary of Notation
 
@@ -126,7 +126,7 @@ The multiplication of $\mathbb{B}$ is the quaternion table with complex coeffici
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\ \tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Orthogonal primitive idempotents; chiral projectors |
 | $\langle\tilde{Q}\rangle_{\natural}=11+2i$ | Norm of the fixed element; nonzero, so a unit |
 | $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse of the fixed element |
-| $\tilde A=e_t+i\vec e_z,\ \tilde B=e_t-i\vec e_z$ | Null zero-divisor pair, $\tilde A\tilde B=0$ |
+| $\tilde Q_1=e_t+i\vec e_z,\ \tilde Q_2=e_t-i\vec e_z$ | Null zero-divisor pair, $\tilde Q_1\tilde Q_2=0$ |
 
 ## Further Reading
 
