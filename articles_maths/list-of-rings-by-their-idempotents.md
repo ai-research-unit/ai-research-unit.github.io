@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article lists the rings of the corpus by their idempotents — the elements $e$ with $e^2 = e$ — the direct sum decompositions those idempotents induce, the Peirce decomposition of a module or an algebra relative to an orthogonal family of them, and the two extreme cases: the von Neumann regular rings, in which every ideal is idempotent-generated, and the domains and local rings, in which the only idempotents are $0$ and $1$. Every entry points to the article that introduces the object.
+This article lists the rings of the corpus by their idempotents — the elements $p$ with $p^2 = p$ — the direct sum decompositions those idempotents induce, the Peirce decomposition of a module or an algebra relative to an orthogonal family of them, and the two extreme cases: the von Neumann regular rings, in which every ideal is idempotent-generated, and the domains and local rings, in which the only idempotents are $0$ and $1$. Every entry points to the article that introduces the object.
 
-The idempotents of a ring are indifferent to its additive and ideal structure and sensitive to its decomposition: a nontrivial idempotent $e$ with $e \neq 0, 1$ splits the ring as $R = Re \oplus R(1-e)$ and its module as $M = eM \oplus (1-e)M$, while a ring with no nontrivial idempotent is indecomposable and is called connected. The list records each ring with its idempotents, with the decomposition they give, and with the corner algebra $eRe$ that the Peirce decomposition isolates.
+The idempotents of a ring are indifferent to its additive and ideal structure and sensitive to its decomposition: a nontrivial idempotent $p$ with $p \neq 0, 1$ splits the ring as $R = Rp \oplus R(1-p)$ and its module as $M = pM \oplus (1-p)M$, while a ring with no nontrivial idempotent is indecomposable and is called connected. The list records each ring with its idempotents, with the decomposition they give, and with the corner algebra $pRp$ that the Peirce decomposition isolates.
 
 The article introduces nothing and proves nothing. It records examples and non-examples side by side.
 
@@ -36,32 +36,32 @@ The dichotomy the table records is between the rings that are connected, with $0
 
 ## The Direct Sum Decompositions
 
-| Ring | The idempotent $e$ | The decomposition | Introduced in |
+| Ring | The idempotent $p$ | The decomposition | Introduced in |
 |---|---|---|---|
-| any ring | $e$ | $R = Re \oplus R(1-e)$ | *Rings*, §§8–9 |
+| any ring | $p$ | $R = Rp \oplus R(1-p)$ | *Rings*, §§8–9 |
 | $\mathbb{Z}/6\mathbb{Z}$ | $3$ | $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{D}$ | $\pi_1$ | $\mathbb{D} \cong \mathbb{R} \pi_1 \oplus \mathbb{R} \pi_2 \cong \mathbb{R} \times \mathbb{R}$ | *Split-Complex Algebra* |
 | $\mathbb{H}_{\mathbb{D}}$ | $\pi_1$ | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\pi_1 \oplus \mathbb{H}\pi_2$ | *Split-Biquaternion Zero Divisors* |
 | $R \times S$ | $(1,0)$ | the product by construction | *Examples of Rings and Fields* |
 | $\mathbb{Q}[C_3]$ | the minimal idempotents | $\mathbb{Q}[C_3] \cong \mathbb{Q} \times \mathbb{Q}(\zeta_3)$ | *Examples of Rings and Fields* |
 | $\mathbb{R}[x]/(x^2-1)$ | $\Pi_{1,2}$ | $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$ | *Examples of Rings and Fields* |
-| a Boolean ring $B$ | every idempotent $e$ | $B = Be \oplus B(1-e)$ for every $e$, every element being idempotent | *Von Neumann Regular Rings* |
-| a commutative Artinian ring | the primitive idempotents | the product of the local rings $R e_i$ | *Noetherian and Artinian Rings* |
+| a Boolean ring $B$ | every idempotent $p$ | $B = Bp \oplus B(1-p)$ for every $p$, every element being idempotent | *Von Neumann Regular Rings* |
+| a commutative Artinian ring | the primitive idempotents | the product of the local rings $R p_i$ | *Noetherian and Artinian Rings* |
 
-A nontrivial idempotent $e$ satisfies $e(1-e) = 0$, so $R = Re \oplus R(1-e)$ is a direct sum of the two-sided ideals $Re$ and $R(1-e)$, and the two ideals are rings in their own right with identities $e$ and $1-e$. A family of idempotents that are orthogonal, $e_i e_j = 0$ for $i \neq j$, and complete, $\sum e_i = 1$, gives the decomposition $R = \bigoplus_i R e_i$; the primitive idempotents are those that cannot be split further, and for a commutative Artinian ring the primitive decomposition is the product of its localisations, as recorded in *Noetherian and Artinian Rings* and in *List of Reduced, Local and Product Rings*.
+A nontrivial idempotent $p$ satisfies $p(1-p) = 0$, so $R = Rp \oplus R(1-p)$ is a direct sum of the two-sided ideals $Rp$ and $R(1-p)$, and the two ideals are rings in their own right with identities $p$ and $1-p$. A family of idempotents that are orthogonal, $p_i p_j = 0$ for $i \neq j$, and complete, $\sum p_i = 1$, gives the decomposition $R = \bigoplus_i R p_i$; the primitive idempotents are those that cannot be split further, and for a commutative Artinian ring the primitive decomposition is the product of its localisations, as recorded in *Noetherian and Artinian Rings* and in *List of Reduced, Local and Product Rings*.
 
 ## The Peirce Decomposition
 
 | Object | The orthogonal family | The decomposition | Introduced in |
 |---|---|---|---|
-| a module $M$ over $R$ | a single idempotent $e$ | $M = eM \oplus (1-e)M$ | *Modules* |
-| an algebra $A$ | a single idempotent $e$ | $A = eAe \oplus eA(1-e) \oplus (1-e)Ae \oplus (1-e)A(1-e)$ | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |
+| a module $M$ over $R$ | a single idempotent $p$ | $M = pM \oplus (1-p)M$ | *Modules* |
+| an algebra $A$ | a single idempotent $p$ | $A = pAp \oplus pA(1-p) \oplus (1-p)Ap \oplus (1-p)A(1-p)$ | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |
 | $\mathbb{B} \cong M_2(\mathbb{C})$ | $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | the four one-dimensional corners | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |
 | $M_2(\mathbb{R})$ | $E_{11}, E_{22}$ | the column decomposition of $\mathbb{R}^2$ | *Matrix Algebras* |
 | $R \times S$ | $(1,0)$, $(0,1)$ | the two components | *Examples of Rings and Fields* |
-| a group algebra $k[G]$ | the idempotents of the group | $k[G] = \bigoplus e_i k[G] e_i \oplus \text{off-diagonal}$ | *Group Algebras* |
+| a group algebra $k[G]$ | the idempotents of the group | $k[G] = \bigoplus p_i k[G] p_i \oplus \text{off-diagonal}$ | *Group Algebras* |
 
-The Peirce decomposition relative to a complete orthogonal family of idempotents $e_1 + \cdots + e_n = 1$ writes a module as $M = \bigoplus_i e_i M$ and an algebra as the direct sum of the corner algebras $e_i A e_j$. The biquaternion case is the corpus's worked example: with $\tilde\Pi_1 = E_{11}$ and $\tilde\Pi_2 = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\vec\Upsilon_1$ and $\vec\Upsilon_2$, as recorded in *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
+The Peirce decomposition relative to a complete orthogonal family of idempotents $p_1 + \cdots + p_n = 1$ writes a module as $M = \bigoplus_i p_i M$ and an algebra as the direct sum of the corner algebras $p_i A p_j$. The biquaternion case is the corpus's worked example: with $\tilde\Pi_1 = E_{11}$ and $\tilde\Pi_2 = E_{22}$ the four corners are one-dimensional over $\mathbb{C}$, and the off-diagonal ones are spanned by the nilpotents $\vec\Upsilon_1$ and $\vec\Upsilon_2$, as recorded in *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
 
 ## The von Neumann Regular Rings
 
@@ -81,7 +81,7 @@ A ring is von Neumann regular when every principal left ideal is generated by an
 
 | Ring | The idempotents | Why | Introduced in |
 |---|---|---|---|
-| a domain | $0, 1$ | $e(1-e) = 0$ forces $e = 0$ or $1$ | *Integral Domains* |
+| a domain | $0, 1$ | $p(1-p) = 0$ forces $p = 0$ or $1$ | *Integral Domains* |
 | a local ring | $0, 1$ | the nonunits form the maximal ideal, and a nontrivial idempotent is a nonunit with a nonunit complement | *Localization and the Fraction Field* |
 | a division ring | $0, 1$ | a nonzero idempotent is a unit, and the only unit idempotent is $1$ | *Division Rings* |
 | $\mathbb{Z}/p^n\mathbb{Z}$ | $0, 1$ | a local ring | *Reduced Rings and the Nilradical* |
@@ -103,7 +103,7 @@ The third and fourth rows record the distinction the list rests on: an idempoten
 
 ## Summary
 
-This article has listed the rings of the corpus by their idempotents. The connected rings — the fields, the domains, the local rings, the division rings, $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/p^n\mathbb{Z}$, the dual numbers and $\mathbb{F}_2[C_2]$ — have $0$ and $1$ alone; the split rings — $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/12\mathbb{Z}$, the split-complex numbers, the split-biquaternions, $\mathbb{R}[x]/(x^2-1)$ and $\mathbb{Q}[C_3]$ — have four; the matrix ring and the biquaternions have infinitely many one-sided idempotents without a product decomposition, since they are simple; and the Boolean rings have one for every element. The article has recorded the direct sum decomposition $R = Re \oplus R(1-e)$ and the product decompositions it gives, the Peirce decomposition $A = \bigoplus_{i,j} e_i A e_j$ relative to a complete orthogonal family with the biquaternion corners as the worked case, and the separation of the von Neumann regular rings, in which every ideal is idempotent-generated, from the domains and local rings, in which the idempotents are scarce.
+This article has listed the rings of the corpus by their idempotents. The connected rings — the fields, the domains, the local rings, the division rings, $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/p^n\mathbb{Z}$, the dual numbers and $\mathbb{F}_2[C_2]$ — have $0$ and $1$ alone; the split rings — $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/12\mathbb{Z}$, the split-complex numbers, the split-biquaternions, $\mathbb{R}[x]/(x^2-1)$ and $\mathbb{Q}[C_3]$ — have four; the matrix ring and the biquaternions have infinitely many one-sided idempotents without a product decomposition, since they are simple; and the Boolean rings have one for every element. The article has recorded the direct sum decomposition $R = Rp \oplus R(1-p)$ and the product decompositions it gives, the Peirce decomposition $A = \bigoplus_{i,j} p_i A p_j$ relative to a complete orthogonal family with the biquaternion corners as the worked case, and the separation of the von Neumann regular rings, in which every ideal is idempotent-generated, from the domains and local rings, in which the idempotents are scarce.
 
 ## Summary of Notation
 
@@ -111,14 +111,14 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 
 | Symbol | Meaning |
 |---|---|
-| $e$ | An idempotent, $e^2 = e$ |
+| $p$ | An idempotent, $p^2 = p$ |
 | $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{D}$, $\tilde\Pi_{1,2}$ in $\mathbb{H}_{\mathbb{D}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
 | $1$, written $e_t$ in the quaternion layers | The identity, the trivial idempotent |
 | $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | Orthogonal matrix-unit idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = 1$ |
 | $x, y$ | The nilpotent off-diagonal elements of the Peirce corners |
-| $e_i A e_j$ | A Peirce corner of the algebra $A$ |
+| $p_i A p_j$ | A Peirce corner of the algebra $A$ |
 | $\omega(n)$ | The number of distinct primes dividing $n$ |
-| $eM$, $(1-e)M$ | The two summands of the Peirce decomposition of a module |
+| $pM$, $(1-p)M$ | The two summands of the Peirce decomposition of a module |
 
 ## Further Reading
 

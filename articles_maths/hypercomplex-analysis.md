@@ -7,7 +7,7 @@ Complex analysis is the study of functions of one complex variable that are diff
 
 The point of departure is that the naive generalisation fails. Over a commutative field $\mathbb{K}$ the differentiable functions of a $\mathbb{K}$-variable are the holomorphic functions, and there are many of them. Over a non-commutative algebra, requiring the differential to be linear over the algebra forces the function to be affine; the class is far too small to support a theory. The remedy, standard in the subject, is to fix a first-order operator built from the algebra and to study the functions that operator annihilates. This is the general method, and every particular hypercomplex theory is an instance of it.
 
-Throughout, $A$ is a finite-dimensional unital associative algebra over $\mathbb{R}$, of dimension $m$, with a fixed basis $1, e_1, \dots, e_{m-1}$. The underlying real vector space is identified with $\mathbb{R}^m$ and carries the Euclidean topology, which by *Topological Algebras and Banach Algebras* is the unique topology making $A$ a topological algebra. Thus $A$ is a real Banach algebra, open subsets of $A$ are open subsets of $\mathbb{R}^m$, and differentiability is Fréchet differentiability. The theory is over $\mathbb{R}$; the complex case is the case $A = \mathbb{C}$.
+Throughout, $A$ is a finite-dimensional unital associative algebra over $\mathbb{R}$, of dimension $m$, with a fixed basis $e_t = 1, e_1, \dots, e_{m-1}$. The underlying real vector space is identified with $\mathbb{R}^m$ and carries the Euclidean topology, which by *Topological Algebras and Banach Algebras* is the unique topology making $A$ a topological algebra. Thus $A$ is a real Banach algebra, open subsets of $A$ are open subsets of $\mathbb{R}^m$, and differentiability is Fréchet differentiability. The theory is over $\mathbb{R}$; the complex case is the case $A = \mathbb{C}$.
 
 ## The Failure of Algebra-Differentiability
 
@@ -53,36 +53,36 @@ $$
 
 Since $C$ is commutative, no distinction between the left and the right version arises inside $C$; the values of $f$ still lie in the possibly non-commutative algebra $A$, and it is only the variable that is restricted.
 
-**Proposition (power series).** Let $f(x) = \sum_{n \geq 0} a_n (x - x_0)^n$ with $a_n \in A$, convergent on a $C$-ball $B_C(x_0, r) = \{x \in C : \|x - x_0\| < r\}$. Then $f$ is $C$-holomorphic on that ball, with
+**Proposition (power series).** Let $f(x) = \sum_{n \geq 0} a_n (x - b)^n$ with $a_n \in A$, convergent on a $C$-ball $B_C(b, r) = \{x \in C : \|x - b\| < r\}$. Then $f$ is $C$-holomorphic on that ball, with
 
 $$
-f'(x) = \sum_{n \geq 1} n\,a_n (x - x_0)^{n-1}.
+f'(x) = \sum_{n \geq 1} n\,a_n (x - b)^{n-1}.
 $$
 
-*Proof.* Since $C$ is commutative, $(x_0 + h)^n - x_0^n = n x_0^{n-1}h + O(\|h\|^2)$ for $h \in C$, by the binomial theorem, and the terms of order $\geq 2$ contribute $O(\|h\|^2)$ in the norm by submultiplicativity. Uniform convergence on closed subballs of the differentiated series gives termwise differentiation, so the displayed series is the derivative.
+*Proof.* Since $C$ is commutative, $(b + h)^n - b^n = n b^{n-1}h + O(\|h\|^2)$ for $h \in C$, by the binomial theorem, and the terms of order $\geq 2$ contribute $O(\|h\|^2)$ in the norm by submultiplicativity. Uniform convergence on closed subballs of the differentiated series gives termwise differentiation, so the displayed series is the derivative.
 
 **Example ($A = \mathbb{H}$, $C = \mathbb{R}[u] \cong \mathbb{C}$).** Let $u \in \mathbb{H}$ satisfy $u^2 = -1$, so that $C = \mathbb{R}[u]$ is isomorphic to $\mathbb{C}$; for instance $C = \mathbb{R}[\vec e_x]$. Then the $C$-holomorphic functions with values in $\mathbb{H}$ are exactly the holomorphic functions of the complex variable $x \in C$ with coefficients in $\mathbb{H}$, they satisfy the Cauchy–Riemann equations in the two coordinates of $C$, they obey the classical Cauchy theorem for $\mathbb{H}$-valued integrals along curves in $C$, and they form a class as large as the holomorphic functions with values in $\mathbb{H} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{B} \cong M_2(\mathbb{C})$ (*Biquaternion Algebra ($\mathbb{B}$)*). This is the sense in which complex analysis survives verbatim inside a non-commutative algebra.
 
-**Remark (the two notions are independent).** $C$-holomorphy and regularity with respect to a first-order operator are different conditions, and neither implies the other. The function $f(x) = x$ is both; the function $f(x) = x^2$ is $C$-holomorphic but is not left $\mathbb{H}$-regular for the operator $D = \partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ of the next section, since $D(x^2) = -4x_0 \neq 0$; and the function $f(q) = q_x - \vec e_xq_t$ is left regular without being $C$-holomorphic on most commutative subalgebras: on $C = \mathbb{R}[u]$ it equals $x \mapsto u_xx_1 - \vec e_xx_0$ for $x = x_0 + ux_1$, which is left multiplication by a single element — and so is $C$-holomorphic — only when $u = \pm \vec e_x$, where it reduces to the linear function $-\vec e_xx$. The classical link between the two is Fueter's construction, which promotes a holomorphic function of a complex variable to a monogenic function of a quaternion variable by a radially symmetric substitution; it is a theorem of the quaternion theory and is treated.
+**Remark (the two notions are independent).** $C$-holomorphy and regularity with respect to a first-order operator are different conditions, and neither implies the other. The function $f(x) = x$ is both; the function $f(x) = x^2$ is $C$-holomorphic but is not left $\mathbb{H}$-regular for the operator $D = \partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ of the next section, since $D(x^2) = -4x_t \neq 0$; and the function $f(q) = q_x - \vec e_xq_t$ is left regular without being $C$-holomorphic on most commutative subalgebras: on $C = \mathbb{R}[u]$ it equals $x \mapsto u_xx_1 - \vec e_xx_t$ for $x = x_t + ux_1$, which is left multiplication by a single element — and so is $C$-holomorphic — only when $u = \pm \vec e_x$, where it reduces to the linear function $-\vec e_xx$. The classical link between the two is Fueter's construction, which promotes a holomorphic function of a complex variable to a monogenic function of a quaternion variable by a radially symmetric substitution; it is a theorem of the quaternion theory and is treated.
 
 ## Generalised Cauchy–Riemann Operators
 
 **Definition.** A **generalised Cauchy–Riemann operator** on $A$ is a first-order linear differential operator with constant coefficients
 
 $$
-D = \sum_{\alpha=0}^{m-1} B_\alpha \,\partial/\partial x_\alpha, \qquad B_\alpha \in A,
+D = \sum_{\alpha\in\{t,1,\dots,m-1\}} B_\alpha \,\partial/\partial x_\alpha, \qquad B_\alpha \in A,
 $$
 
 where $\partial/\partial x_\alpha = \partial/\partial x_\alpha$ and $x = \sum_\alpha x_\alpha e_\alpha$ are the coordinates of $x \in A$. Its **conjugate** is a second operator of the same shape,
 
 $$
-\bar D = \sum_{\alpha=0}^{m-1} B_\alpha^{\natural} \,\partial/\partial x_\alpha, \qquad B_\alpha^{\natural} \in A.
+\bar D = \sum_{\alpha\in\{t,1,\dots,m-1\}} B_\alpha^{\natural} \,\partial/\partial x_\alpha, \qquad B_\alpha^{\natural} \in A.
 $$
 
 The operator $D$ acts on a differentiable function $f : \Omega \to A$ by
 
 $$
-D f = \sum_{\alpha=0}^{m-1} B_\alpha \,\partial/\partial x_\alpha f,
+D f = \sum_{\alpha\in\{t,1,\dots,m-1\}} B_\alpha \,\partial/\partial x_\alpha f,
 $$
 
 the product being the product of $A$, and $(D f)(x)$ is computed pointwise at $x$.
@@ -105,7 +105,7 @@ and $D\bar D = \bar D D = \Delta$, because $\vec e_\mu^2 = -1$ and $\vec e_\mu \
 
 **Example (general coefficients).** The structural condition that makes the theory work is the following.
 
-**Proposition (factorisation of the Laplacian).** Let $D = \partial/\partial Q_t + \sum_{k \geq 1} B_k \partial/\partial Q_k$ and let its conjugate be $\bar D = \partial/\partial Q_t - \sum_{k \geq 1} B_k \partial/\partial Q_k$, so that $\bar B_0 = 1$ and $\bar B_k = -B_k$. Suppose the coefficients satisfy the **Clifford relations**
+**Proposition (factorisation of the Laplacian).** Let $D = \partial/\partial Q_t + \sum_{k \geq 1} B_k \partial/\partial Q_k$ and let its conjugate be $\bar D = \partial/\partial Q_t - \sum_{k \geq 1} B_k \partial/\partial Q_k$, so that $\bar B_t = 1$ and $\bar B_k = -B_k$. Suppose the coefficients satisfy the **Clifford relations**
 
 $$
 B_j B_k + B_k B_j = -2\delta_{jk}\,1, \qquad j, k \geq 1.
@@ -193,7 +193,7 @@ Four features of the algebra obstruct the programme, and they are logically inde
 
 In both degenerate cases $D$ is not elliptic, the characteristic variety meets the real space, and the theory of §Consequences of Ellipticity is not available.
 
-**Example (the degenerate systems solved explicitly).** For $\mathbb{D}$, write a function in the idempotent decomposition $f = f_+\Pi_x + f_-\Pi_y$ and use the characteristic coordinates $\xi_\pm = x_0 \pm x_1$, so that $\partial/\partial Q_t = \partial/\partial\xi_+ + \partial/\partial\xi_-$ and $\partial/\partial Q_x = \partial/\partial\xi_+ - \partial/\partial\xi_-$ and therefore $\Pi_x\partial/\partial\xi_+ + \Pi_y\partial/\partial\xi_- = \tfrac12(\partial/\partial Q_t + j\partial/\partial Q_x)$. Then
+**Example (the degenerate systems solved explicitly).** For $\mathbb{D}$, write a function in the idempotent decomposition $f = f_+\Pi_x + f_-\Pi_y$ and use the characteristic coordinates $\xi_\pm = x_t \pm x_1$, so that $\partial/\partial Q_t = \partial/\partial\xi_+ + \partial/\partial\xi_-$ and $\partial/\partial Q_x = \partial/\partial\xi_+ - \partial/\partial\xi_-$ and therefore $\Pi_x\partial/\partial\xi_+ + \Pi_y\partial/\partial\xi_- = \tfrac12(\partial/\partial Q_t + j\partial/\partial Q_x)$. Then
 
 $$
 D = \partial/\partial Q_t + j\partial/\partial Q_x = 2\bigl(\Pi_x\partial/\partial\xi_+ + \Pi_y\partial/\partial\xi_-\bigr),
@@ -202,10 +202,10 @@ $$
 so $f$ is left regular exactly when $f_+$ is a function of $\xi_-$ alone and $f_-$ is a function of $\xi_+$ alone. The regular functions of $\mathbb{D}$ therefore depend on arbitrary functions of one real variable, and they obey neither unique continuation nor Liouville's theorem nor the maximum principle: the bounded function
 
 $$
-f(x_0 + jx_1) = \exp(-(x_0 - jx_1)^2) = \exp(-(x_0^2+x_1^2))\bigl(\cosh(2x_0x_1) + j\sinh(2x_0x_1)\bigr)
+f(x_t + jx_1) = \exp(-(x_t - jx_1)^2) = \exp(-(x_t^2+x_1^2))\bigl(\cosh(2x_tx_1) + j\sinh(2x_tx_1)\bigr)
 $$
 
-is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{D}'$, a regular function has the form $f = u(x_1) + \varepsilon v(x_0, x_1)$ with $\partial/\partial Q_t v = -u'$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.
+is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{D}'$, a regular function has the form $f = u(x_1) + \varepsilon v(x_t, x_1)$ with $\partial/\partial Q_t v = -u'$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.
 
 ## Consequences of Ellipticity
 
@@ -303,10 +303,10 @@ The method above takes a different shape for each algebra, and the articles of c
 
 | Algebra | $m$ | $D$ | Left regular functions | What is lost |
 |---|---|---|---|---|
-| $\mathbb{R}$ | 1 | $d/dx_0$ | constants | richness |
+| $\mathbb{R}$ | 1 | $d/dx_t$ | constants | richness |
 | $\mathbb{C}$ | 2 | $\partial/\partial Q_t + i\partial/\partial Q_x$ | holomorphic | nothing |
 | $\mathbb{D}$ | 2 | $\partial/\partial Q_t + j\partial/\partial Q_x$ | arbitrary functions of one characteristic variable | ellipticity, maximum principle, Liouville |
-| $\mathbb{D}'$ | 2 | $\partial/\partial Q_t + \varepsilon\partial/\partial Q_x$ | $u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial/\partial Q_t v = -u'$ | ellipticity, maximum principle, Liouville |
+| $\mathbb{D}'$ | 2 | $\partial/\partial Q_t + \varepsilon\partial/\partial Q_x$ | $u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial Q_t v = -u'$ | ellipticity, maximum principle, Liouville |
 | $\mathbb{H}$ | 4 | $\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ | monogenic | closure under products, curve Morera |
 | $\mathbb{H}_{\mathbb{D}}$ | 8 | $\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ in the four quaternionic coordinates | monogenic | closure under products, zero divisors |
 | $\mathbb{B}$ | 8 | $\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ in the four complex coordinates | monogenic | closure under products, zero divisors |
@@ -317,7 +317,7 @@ The rows are worked out system by system:for $\mathbb{C}$, where every classical
 
 ## Summary
 
-Hypercomplex analysis studies functions $f : \Omega \subseteq A \to A$ of a variable in a finite-dimensional unital associative real algebra $A$, using a **generalised Cauchy–Riemann operator** $D = \sum_\alpha B_\alpha \partial/\partial x_\alpha$ and declaring $f$ **left regular** when $Df = 0$ (and right regular when $fD = 0$). Requiring the differential to be linear over $A$ is too strong: over $\mathbb{H}$ it forces $f(x) = ax + b$, so the construction proceeds through the operator instead. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_0 = 1$, the operator factors the Laplacian, $D\bar D = \bar D D = \Delta$, and this factorisation is the structural input the theory requires; a hypercomplex system is a pair $(A,D)$ for which it holds.
+Hypercomplex analysis studies functions $f : \Omega \subseteq A \to A$ of a variable in a finite-dimensional unital associative real algebra $A$, using a **generalised Cauchy–Riemann operator** $D = \sum_\alpha B_\alpha \partial/\partial x_\alpha$ and declaring $f$ **left regular** when $Df = 0$ (and right regular when $fD = 0$). Requiring the differential to be linear over $A$ is too strong: over $\mathbb{H}$ it forces $f(x) = ax + b$, so the construction proceeds through the operator instead. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_t = 1$, the operator factors the Laplacian, $D\bar D = \bar D D = \Delta$, and this factorisation is the structural input the theory requires; a hypercomplex system is a pair $(A,D)$ for which it holds.
 
 Regular functions form a real vector space, are closed under right multiplication by constants and under left multiplication by constants commuting with the coefficients, but not under products. Four features obstruct the naive programme: non-commutativity, which separates the left and the right theory; zero divisors, which make the difference quotient undefined along a set of directions and restrict the quotient rule to units; the one-sided module structure, which makes the regular functions a module over the centre rather than over $A$; and the dimension, which makes the requirement $df(x) \in L_A$ a system of $m^2 - m$ conditions on $m^2$ unknowns. The second notion that survives is $C$-holomorphy in a commutative subalgebra $C \subseteq A$: power series with coefficients in $A$ and variable in $C$ are $C$-differentiable, and for $C \cong \mathbb{C} \subseteq \mathbb{H}$ this recovers complex analysis with values in $\mathbb{B} \cong M_2(\mathbb{C})$. Under ellipticity regular functions are real-analytic (identity theorem), each component is harmonic (maximum principle via subharmonicity of $\|f\|^2$), and a bounded regular function on all of $A$ is constant (Liouville); for the degenerate systems $\mathbb{D}$ and $\mathbb{D}'$, whose operators have symbols vanishing on the real space, the last two fail, as does the mean value property, and the regular functions depend on arbitrary functions of fewer variables. The Cauchy–Pompeiu formula represents a general function by an integral of a Cauchy kernel of the system against its boundary values minus a volume integral of $Df$, and the Cauchy integral formula is the special case of a regular function; the kernel itself depends on the system. The algebra automorphisms act on the admissible operators and their stabiliser is the symmetry group of the system. Each system of categories 26 to 29 is a row of the table of the parallel structure.
 
@@ -326,7 +326,7 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | Symbol | Meaning |
 |---|---|
 | $A$ | Finite-dimensional unital associative real algebra, $\dim_\mathbb{R} A = m$ |
-| $1, e_1, \dots, e_{m-1}$ | Fixed basis of $A$ |
+| $e_t = 1, e_1, \dots, e_{m-1}$ | Fixed basis of $A$ |
 | $\Omega$ | Open (or domain: open connected) subset of $A$ |
 | $f : \Omega \to A$ | Hypercomplex-valued function |
 | $D = \sum_\alpha B_\alpha \partial/\partial x_\alpha$ | Generalised Cauchy–Riemann operator |
@@ -343,7 +343,7 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | $L_A$ | Left multiplications in $\operatorname{End}_\mathbb{R}(A)$, $\dim = m$ |
 | $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | Split complex numbers, $j^2=+1$; degenerate for $D = \partial/\partial Q_t + j\partial/\partial Q_x$ |
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual numbers, $\varepsilon^2=0$; degenerate for $D = \partial/\partial Q_t+\varepsilon\partial/\partial Q_x$ |
-| $\Pi_{1,2} = \tfrac12(1\pm j)$, $\xi_\pm = x_0\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
+| $\Pi_{1,2} = \tfrac12(1\pm j)$, $\xi_\pm = x_t\pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
 
 
 

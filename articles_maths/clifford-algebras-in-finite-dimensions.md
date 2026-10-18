@@ -676,7 +676,7 @@ Collecting §30 and §31, every \(B\in Cl_{3,0}\) falls into exactly one of the 
 - **Four roots.** \(b_S+ib_I\neq0\) and both values of \(z\) nonzero: two pairs \(\pm A\). This is the generic case.
 - **A complex-scalar family, alone or alongside isolated roots.** \(B=b_0+b_{123}\omega\): the four-parameter family of §31, together with the isolated roots supplied by the values of \(z\).
 
-The three central values of the algebra illustrate the trichotomy: \(B=e_t\) has the two roots \(\pm e_t\) and a family; \(B=-e_t\) has the two roots \(\pm\omega\) and a family; \(B=0\) has the family alone, its nonzero members the null elements.
+The three central values of the algebra illustrate the trichotomy: \(B=1\) has the two roots \(\pm1\) and a family; \(B=-1\) has the two roots \(\pm\omega\) and a family; \(B=0\) has the family alone, its nonzero members the null elements.
 
 ## 33. The Interpretation of the Data
 
