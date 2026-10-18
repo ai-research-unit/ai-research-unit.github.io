@@ -142,7 +142,7 @@ $$
 
 **Corollary 7.3 (analyticity).** $R$ is rational in $\lambda$ with denominator $p_{\tilde{Q}}(\lambda)$, hence holomorphic on $\mathbb{C}\setminus\sigma(\tilde{Q})$, with poles exactly at the two eigenvalues. The pole is simple when $\tilde{Q}$ is diagonalizable, and double when $B = 0$ with $\vec Q \neq 0$, where $p_{\tilde{Q}} = (\lambda-Q_t)^2$ but the numerator at $\lambda = Q_t$ is $-\vec Q \neq 0$.
 
-Finally, the resolvent satisfies $R(\lambda) - R(\mu) = (\lambda-\mu)R(\lambda)R(\mu)$, since with $\tilde A = \tilde{Q}-\lambda e_t$ and $\tilde B = \tilde{Q}-\mu e_t$ one has $\tilde A^{-1}-\tilde B^{-1} = \tilde A^{-1}(\tilde B-\tilde A)\tilde B^{-1}$; consequently $R'(\lambda) = R(\lambda)^2$.
+Finally, the resolvent satisfies $R(\lambda) - R(\mu) = (\lambda-\mu)R(\lambda)R(\mu)$, since with $\tilde Q_\lambda = \tilde{Q}-\lambda e_t$ and $\tilde Q_\mu = \tilde{Q}-\mu e_t$ one has $\tilde Q_\lambda^{-1}-\tilde Q_\mu^{-1} = \tilde Q_\lambda^{-1}(\tilde Q_\mu-\tilde Q_\lambda)\tilde Q_\mu^{-1}$; consequently $R'(\lambda) = R(\lambda)^2$.
 
 ## The Spectral Radius
 

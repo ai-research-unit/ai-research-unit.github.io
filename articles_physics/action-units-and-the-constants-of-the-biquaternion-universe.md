@@ -75,18 +75,18 @@ The constraint is **per element, and not across elements**. The biquaternion nor
 
 ### The Sign Is Algebraic; the Scale Is Local
 
-Apply the constraint to a displacement $\tilde{T}$. The four coefficients of the element are the four components of the displacement, and the norm is the invariant interval. The algebra fixes the **sign** of each term of that norm and nothing else. The temporal coefficient is attached to $ie_t$ in the material sector, and $(ie_t)^2=-e_t$; the three spatial coefficients are attached to $\vec e_x,\vec e_y,\vec e_z$, and each enters as the square of a real coefficient without a further sign. Hence
+Apply the constraint to a displacement $\tilde R$. The four coefficients of the element are the four components of the displacement, and the norm is the invariant interval. The algebra fixes the **sign** of each term of that norm and nothing else. The temporal coefficient is attached to $ie_t$ in the material sector, and $(ie_t)^2=-e_t$; the three spatial coefficients are attached to $\vec e_x,\vec e_y,\vec e_z$, and each enters as the square of a real coefficient without a further sign. Hence
 
 $$
-\langle\tilde{T}\rangle_{\natural}=(ict)^2+x^2+y^2+z^2=-c^2t^2+x^2+y^2+z^2 ,
+\langle\tilde R\rangle_{\natural}=(ict)^2+x^2+y^2+z^2=-c^2t^2+x^2+y^2+z^2 ,
 $$
 
 of signature $(-,+,+,+)$, equivalently $(3,1)$, with the minus on the temporal term. The **magnitude** of that term is $c^2$, and it is not supplied by the algebra: it is the scale of the imaginary time axis, and the algebra supplies no scale.
 
 Two writings of the same element must be kept apart, because the framework uses both and they are not the same statement.
 
-- **The length coordinate.** The temporal component is $ict$, with $c$ a speed, so all four coefficients of $\tilde{T}$ are lengths, the four terms of $\langle\cdot\rangle_{\natural}$ are commensurable, and the norm is literally a sum of four squares of lengths. This is the corpus's convention, and it is a **choice of coordinate on the temporal slot**: measuring the time in units of length, $t\mapsto c\,t$.
-- **The time coordinate.** The temporal component is $it$, with $t$ a time, and the norm reads $\langle\tilde{T}\rangle_{\natural}=-t^2+x^2+y^2+z^2$, a sum of four squares whose terms carry two different units. Written invariantly it is $\langle\tilde{T}\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2$, with the conversion between the temporal slot and the three spatial ones carried by the coefficient $g_{tt}=-c^2$ of the metric.
+- **The length coordinate.** The temporal component is $ict$, with $c$ a speed, so all four coefficients of $\tilde R$ are lengths, the four terms of $\langle\cdot\rangle_{\natural}$ are commensurable, and the norm is literally a sum of four squares of lengths. This is the corpus's convention, and it is a **choice of coordinate on the temporal slot**: measuring the time in units of length, $t\mapsto c\,t$.
+- **The time coordinate.** The temporal component is $it$, with $t$ a time, and the norm reads $\langle\tilde R\rangle_{\natural}=-t^2+x^2+y^2+z^2$, a sum of four squares whose terms carry two different units. Written invariantly it is $\langle\tilde R\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2$, with the conversion between the temporal slot and the three spatial ones carried by the coefficient $g_{tt}=-c^2$ of the metric.
 
 The two writings are related by the substitution $t\mapsto c\,t$ and describe one quadratic form. Neither is forced by the algebra, and the two slots are kept apart in both: the first measures time in the unit of length, and the second keeps time in seconds and lets the metric coefficient carry the conversion. The framework's $ict$ is the first writing, and it is a device of presentation — precisely the sense in which the companion article *The Local Complex Structure and the Speed of Light* calls the global $ict$ "a coordinate device".
 

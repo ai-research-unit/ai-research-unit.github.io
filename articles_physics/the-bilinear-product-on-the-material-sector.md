@@ -6,7 +6,7 @@ The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic phys
 element
 
 $$
-\tilde T = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z,
+\tilde R = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z,
 $$
 
 an imaginary time and three real space directions, and the operations of a relativistic system act on
@@ -58,12 +58,12 @@ real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$.
 A material element is written in its own coordinates as
 
 $$
-\tilde T = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-,
+\tilde R = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-,
 \qquad c \ \text{the speed of light}.
 $$
 
 The imaginary time is the mark of the sector: a material element is anti-fixed by the Hermitian
-conjugation, $\tilde T^{*}=-\tilde T$, so the scalar coefficient carries the $i$ and the three vector
+conjugation, $\tilde R^{*}=-\tilde R$, so the scalar coefficient carries the $i$ and the three vector
 coefficients do not. The material sector is the home of the four-vectors, of the velocity, of the
 momentum and of the configuration data of a relativistic system, and its own physics — the two sectors,
 the coordinate dictionary and the superselection interpretation — is owned by *The Anti-Hermitian Subspace
@@ -72,7 +72,7 @@ $\mathbb{M}_-$ as the Material Sector*.
 The form that carries the physics of the sector is the **interval**
 
 $$
-\langle\tilde T,\tilde T\rangle_{\natural} = \mathrm{Sc}\!\left(\tilde T^{\natural}\tilde T\right) = -c^{2}t^{2} + x^{2}+y^{2}+z^{2},
+\langle\tilde R,\tilde R\rangle_{\natural} = \mathrm{Sc}\!\left(\tilde R^{\natural}\tilde R\right) = -c^{2}t^{2} + x^{2}+y^{2}+z^{2},
 $$
 
 of signature $(-,+,+,+)$ on $\mathbb{M}_-$; its zero set is the light cone, its level set
@@ -186,7 +186,7 @@ $\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}$ with t
 $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, and the non-invertible ones are the elements of the
 **zero-divisor cone** $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$. The algebra is the disjoint union of the units and
 the cone, the origin lying in the cone and being the one element that is neither a unit nor a zero
-divisor. On the material sector the norm is the interval, $\langle\tilde T\rangle_{\natural}=-c^{2}t^{2}+x^{2}+y^{2}+z^{2}$,
+divisor. On the material sector the norm is the interval, $\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+x^{2}+y^{2}+z^{2}$,
 so the cone cuts the sector in the **light cone** and the group of units cuts it in the **off-light-cone
 four-vectors**. The mass shell is the level set $N=-m^{2}c^{2}$: for $m\neq0$ a mass shell lies inside
 the group, and the boundary of the group is the massless shell $N=0$. The inverse of a material unit is
@@ -358,7 +358,7 @@ for the central phase, which is the exchange's business and not the vector part'
 ## Summary
 
 The material sector $\mathbb{M}_-$ carries the four-vectors, an event being
-$\tilde T=ict\,e_t+x \vec e_x+y \vec e_y+z \vec e_z$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$
+$\tilde R=ict\,e_t+x \vec e_x+y \vec e_y+z \vec e_z$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$
 whose full theory on the whole algebra is *The Products, Their Forms and Their Norms*. Its scalar
 part $B=P_0Q_t-\vec P\!\cdot\!\vec Q$, the quaternion scalar product of the two elements, is
 negative definite on $\mathbb{M}_-$ with signature $(0,4)$ and positive definite on $\mathbb{M}_+$ with
@@ -386,7 +386,7 @@ $\mathbb{M}_-$, what is proposed is the naming.
 | $\bar{\cdot},{\natural},{}^{*}=\bar{\cdot}\circ{\natural}$ | Complex, natural and Hermitian conjugations |
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
-| $\tilde T=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | A material event; imaginary time, real space |
+| $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | A material event; imaginary time, real space |
 | $\tilde P\tilde Q$ | General plain bilinear product; associative, unital, non-commutative |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_t-\vec P\!\cdot\!\vec Q$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
 | $B\big|_{\mathbb{M}_-}=-\mathrm{I}_4$, $B\big|_{\mathbb{M}_+}=+\mathrm{I}_4$ | The sector sign carried by $\langle\tilde P,\tilde Q\rangle$ |

@@ -94,10 +94,10 @@ $$
 \operatorname{H}_{\tilde{Q}}(\vec e_k)^0 = 2i\,\mathrm{Im}\bigl(Q^0\overline{Q^k}\bigr) - (\vec Q\times\overline{\vec Q})^k .
 $$
 
-**Proof.** Let $\tilde B = \vec e_k\tilde{Q}^{*}$, of four-vector $B^0 = \overline{Q^k}$, $B^k = \overline{Q^0}$ and $B^j = \epsilon^{kjl}\overline{Q^l}$ for $j \neq k$, where the last expression is read from $\vec e_k \vec e_j = \epsilon^{kjl}\vec e_l$ and carries no sum over $l$. The scalar component of $\tilde{Q}\tilde B$ is then
+**Proof.** Let $\tilde Q_k = \vec e_k\tilde{Q}^{*}$, of four-vector $Q_k^0 = \overline{Q^k}$, $Q_k^k = \overline{Q^0}$ and $Q_k^j = \epsilon^{kjl}\overline{Q^l}$ for $j \neq k$, where the last expression is read from $\vec e_k \vec e_j = \epsilon^{kjl}\vec e_l$ and carries no sum over $l$. The scalar component of $\tilde{Q}\tilde Q_k$ is then
 
 $$
-Q^0B^0 - \sum_{j=1}^{3}Q^jB^j = Q^0\overline{Q^k} - Q^k\overline{Q^0} - \sum_{j\neq k}\epsilon^{kjl}Q^j\overline{Q^l},
+Q^0Q_k^0 - \sum_{j=1}^{3}Q^jQ_k^j = Q^0\overline{Q^k} - Q^k\overline{Q^0} - \sum_{j\neq k}\epsilon^{kjl}Q^j\overline{Q^l},
 $$
 
 whose first two terms are $Q^0\overline{Q^k} - \overline{Q^0\overline{Q^k}} = 2i\,\mathrm{Im}(Q^0\overline{Q^k})$, while the last is $-(\vec Q\times\overline{\vec Q})^k$, since the cross product collects exactly the terms with $j \neq k$.

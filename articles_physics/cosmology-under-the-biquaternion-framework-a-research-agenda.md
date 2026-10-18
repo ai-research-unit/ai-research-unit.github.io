@@ -141,17 +141,13 @@ This obstacle inherits a hard ceiling: because the framework has not derived the
 
 This is the obstacle specific to cosmology, and it is where the framework's invariant structure bites.
 
-The Friedmann equations require the **perfect-fluid stress–energy tensor**, a symmetric rank-two tensor with two independent thermal functions $\rho$ and $p$ and a four-velocity. The framework's objects are different in kind. The natural packaging of a symmetric rank-two tensor into the algebra is the bilinear sum
+The Friedmann equations require the **perfect-fluid stress–energy tensor**, a symmetric rank-two tensor with two independent thermal functions $\rho$ and $p$ and a four-velocity. The framework's objects are different in kind. The algebra has no faithful rank-two object. The bilinear sum
 
 $$
-\tilde{T} = \sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu \bar{\varepsilon}_\nu ,
+\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\eta^{\mu\nu}T_{\mu\nu}\right) e_t
 $$
 
-and its behaviour is the framework's most important structural limitation for cosmology.
-
-$$
-\sum_{\mu\nu} T_{\mu\nu}\,\varepsilon_\mu\bar{\varepsilon}_\nu = \left(\eta^{\mu\nu}T_{\mu\nu}\right) e_t ,
-$$
+collapses the whole tensor to its trace, and that collapse is the framework's most important structural limitation for cosmology.
 
 so the packaging collapses to the **trace** and annihilates the vector part; and for a traceless symmetric object it vanishes identically. The consequences for the cosmological source are immediate and sharp.
 
@@ -254,7 +250,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\tilde{E}_\mu \in \mathbb{M}_-$, $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
 | $a(t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \left(da/dt\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
-| $\tilde{T} = \sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu$ | natural packaging of a rank-two tensor; equals $(\eta^{\mu\nu}T_{\mu\nu})e_t$ | recomputed here from an inherited identity |
+| $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\eta^{\mu\nu}T_{\mu\nu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
 | $Z = 2\exp(-\beta h_0)\cosh(\beta|\vec h|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
 | $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |
 

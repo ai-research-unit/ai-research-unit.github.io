@@ -102,24 +102,19 @@ using the Poynting theorem for the last equality. The factor $i$ is now uniform,
 $$
 T^\mu{}_\nu = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^{*}\,\mathcal{E}_\nu\right) = \frac{1}{4}\,\mathrm{Tr}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^{*}\,\mathcal{E}_\nu\right).
 $$
-For a fixed direction $\nu$ the whole content is one biquaternion,
-$\tilde T^{(\nu)} = \tfrac12\tilde F\,\mathcal{E}_\nu\,\tilde F^{*}$, which returns the tensor through the bilinear,
+For a fixed direction $\nu$ the whole content is the four components $T^\mu{}_\nu$, with
 $$
-\mathrm{Sc}\!\left(\mathcal{E}_\mu\,\tilde T^{(\nu)}\right) = T^{\nu}{}_\mu ,
-\qquad
-T^{\mu}{}_\nu = \tfrac12\,\mathrm{Sc}\!\left(\tilde F\,\mathcal{E}_\mu\,\tilde F^{*}\,\mathcal{E}_\nu\right) ,
-\qquad
 T^{\mu\nu} = \eta^{\nu\beta}T^{\mu}{}_\beta ,
 $$
-so the conservation law is one biquaternion divergence per direction,
+so the conservation law is the four-divergence
 
 $$
-\mathrm{Sc}\!\left(\tilde\nabla\,\tilde T^{(\nu)}\right)
+\partial_\mu T^{\mu\nu}
 = \sum_\mu\frac{\partial}{\partial Q_\mu}\,T^{\mu\nu}
 = 0 ,
 $$
 
-in the coordinates of the framework, $Q_t=ict$ and $Q_k=q_k$, so that $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$. The divergence is the scalar part of the **plain** product with the plain projection $e_\mu$; the conjugated spelling $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde T^{(\nu)})$ with $e_\mu^{\natural}$ is a different combination and does not vanish, whereas the conjugation is the right operation for the framework's four-vector currents.
+in the coordinates of the framework, $Q_t=ict$ and $Q_k=q_k$, so that $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$. The divergence is taken with the **plain** derivative $\partial/\partial Q_\mu$; contracting instead with the conjugated gradient $\tilde\nabla^{\natural}$ is a different combination and does not vanish, whereas the conjugation is the right operation for the framework's four-vector currents.
 
 Show that $T^0{}_0 = -W$, $T^0{}_\nu = \frac{1}{c}S_\nu$, $T^\nu{}_0 = -\frac{1}{c}S_\nu$, and $T^\nu{}_\mu = -\sigma_{\nu\mu}$, where
 $$
@@ -194,35 +189,35 @@ The tensor is traceless. With the contracted components the same statement reads
 
 **Statement.** Show that, for a field with free charge density $\rho$ and free current density $\vec J$ satisfying Maxwell's equations and charge conservation, the tensor satisfies
 $$
-\langle\tilde\nabla,\tilde T^{(t)}\rangle = -\frac{1}{c}\,\vec E\cdot\vec J, \qquad \langle\tilde\nabla,\tilde T^{(k)}\rangle = -\left(\rho E_k + \left(\vec J\times\vec B\right)_k\right),
+\partial_\mu T^{\mu t} = -\frac{1}{c}\,\vec E\cdot\vec J, \qquad \partial_\mu T^{\mu k} = -\left(\rho E_k + \left(\vec J\times\vec B\right)_k\right),
 $$
-equivalently $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle = -f^\nu$ with the four-force density
+equivalently $\partial_\mu T^{\mu\nu} = -f^\nu$ with the four-force density
 $$
 f^\nu = \left(\frac{1}{c}\vec E\cdot\vec J,\; \rho\vec E + \vec J\times\vec B\right).
 $$
-In particular, for a source-free field, $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle = 0$.
+In particular, for a source-free field, $\partial_\mu T^{\mu\nu} = 0$.
 
-**Solution (energy component).** The time coordinate of the framework is $Q_t=ict$, so the derivative is $\partial/\partial Q_\mu$ with $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$ and $\partial/\partial Q_k=\partial/\partial q_k$. The temporal projection of the tensor carries the reciprocal factor $i$, $\mathrm{Sc}(e_t\tilde T^{(t)})=\frac{i}{c}W$, against the spatial ones $\mathrm{Sc}(e_k\tilde T^{(t)})=\frac{1}{c}S_k$, so the two factors of $i$ multiply to $+1$ and
+**Solution (energy component).** The time coordinate of the framework is $Q_t=ict$, so the derivative is $\partial/\partial Q_\mu$ with $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$ and $\partial/\partial Q_k=\partial/\partial q_k$. The temporal component of the four-vector $T^\mu{}_t$ carries the reciprocal factor $i$, $T^{t}{}_{t}=\frac{i}{c}W$, against the spatial ones $T^{k}{}_{t}=\frac{1}{c}S_k$, so the two factors of $i$ multiply to $+1$ and
 $$
-\langle\tilde\nabla,\tilde T^{(t)}\rangle = \frac{\partial}{\partial Q_t}\,\frac{i}{c}W + \frac{\partial}{\partial Q_k}\,\frac{1}{c}S_k = \frac{1}{c}\left(\frac{\partial}{\partial t}W + \mathrm{div}\,\vec S\right) = -\frac{1}{c}\,\vec E\cdot\vec J,
+\partial_\mu T^{\mu t} = \frac{\partial}{\partial Q_t}\,\frac{i}{c}W + \frac{\partial}{\partial Q_k}\,\frac{1}{c}S_k = \frac{1}{c}\left(\frac{\partial}{\partial t}W + \mathrm{div}\,\vec S\right) = -\frac{1}{c}\,\vec E\cdot\vec J,
 $$
 where the Poynting theorem $\partial/\partial tW + \mathrm{div}\,\vec S = -\vec E\cdot\vec J$ was used in the last step. The energy component of the divergence is the negative of the work done by the field on the charges: the field loses energy at the rate $\vec E\cdot\vec J$.
 
-**Solution (momentum component).** With the projections $\mathrm{Sc}(e_t\tilde T^{(k)})=\frac{i}{c}S_k$ against $\mathrm{Sc}(e_j\tilde T^{(k)})=-\sigma_{jk}$,
+**Solution (momentum component).** With the components $T^{t}{}_{k}=\frac{i}{c}S_k$ against $T^{j}{}_{k}=-\sigma_{jk}$,
 $$
-\langle\tilde\nabla,\tilde T^{(k)}\rangle = \frac{\partial}{\partial Q_t}\,\frac{i}{c}S_k - \frac{\partial}{\partial q_j}\,\sigma_{jk} = \frac{1}{c^2}\,\partial/\partial tS_k - \partial/\partial q_j\,\sigma_{jk},
+\partial_\mu T^{\mu k} = \frac{\partial}{\partial Q_t}\,\frac{i}{c}S_k - \frac{\partial}{\partial q_j}\,\sigma_{jk} = \frac{1}{c^2}\,\partial/\partial tS_k - \partial/\partial q_j\,\sigma_{jk},
 $$
 again the two factors of $i$ multiplying to $-1$. The standard momentum-balance identity for the Maxwell stress, obtained from the Ampère–Maxwell and Faraday laws together with the Gauss laws,
 $$
 \frac{1}{c^2}\,\partial/\partial t\vec S - \nabla\cdot\boldsymbol{\sigma} = -\left(\rho\,\vec E + \vec J\times\vec B\right),
 $$
-gives $\langle\tilde\nabla,\tilde T^{(k)}\rangle = -f_k$. The four statements combine into $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle = -f^\nu$.
+gives $\partial_\mu T^{\mu k} = -f_k$. The four statements combine into $\partial_\mu T^{\mu\nu} = -f^\nu$.
 
 Both component equations were checked by direct symbolic recomputation from the definition $T^\mu{}_\nu = \frac{1}{2}\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$ together with Maxwell's equations. The energy component was checked against the Poynting identity above and, independently, by substituting the time derivatives from the Ampère–Maxwell and Faraday laws into $\partial/\partial Q_\mu T^{\mu\nu}$ and simplifying; the three momentum components were checked in the same way, giving exactly $-\left(\rho\vec E + \vec J\times\vec B\right)_\mu$. The plane wave of Problem 1 is a special case: it has $\vec J = 0$ and its divergence vanishes, as Problem 5 confirms directly.
 
-**Source-free field.** When $\rho = 0$ and $\vec J = 0$, the divergence vanishes, $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle = 0$: energy and momentum are conserved. This is the standard statement, now with the tensor built from $\tilde F$ rather than quoted from the tensor calculus.
+**Source-free field.** When $\rho = 0$ and $\vec J = 0$, the divergence vanishes, $\partial_\mu T^{\mu\nu} = 0$: energy and momentum are conserved. This is the standard statement, now with the tensor built from $\tilde F$ rather than quoted from the tensor calculus.
 
-**The $ict$ bookkeeping, stated once.** The time coordinate is $Q_t=ict$ and never $ct$, so the time slot of the gradient is $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$. Every temporal index in the algebra then carries a factor $i$ that this time derivative cancels, which is why the component equations above come out with the ordinary real four-force density $f^\nu=\left(\frac{1}{c}\vec E\cdot\vec J,\ \rho\vec E+\vec J\times\vec B\right)$. The divergence is the **plain** bilinear form $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle=\mathrm{Sc}(\tilde\nabla\tilde T^{(\nu)})$, whose value is $\partial/\partial Q_\mu T^{\mu\nu}$; the **natural** form $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde T^{(\nu)})$, the component sum, is the divergence of the framework's four-vector currents, and for this rank-two element it is a different combination that does not vanish.
+**The $ict$ bookkeeping, stated once.** The time coordinate is $Q_t=ict$ and never $ct$, so the time slot of the gradient is $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$. Every temporal index in the algebra then carries a factor $i$ that this time derivative cancels, which is why the component equations above come out with the ordinary real four-force density $f^\nu=\left(\frac{1}{c}\vec E\cdot\vec J,\ \rho\vec E+\vec J\times\vec B\right)$. The divergence is the **plain** one, $\partial_\mu T^{\mu\nu}$; the **natural** contraction with the conjugated gradient $\tilde\nabla^{\natural}$, the component sum, is the divergence of the framework's four-vector currents, and for this rank-two tensor it is a different combination that does not vanish.
 
 **Remark (the same balance in a matrix formulation).** The tensor of this problem has an independent life in the $4 \times 4$ complex matrix formulation of Maxwell's equations, where the single matrix
 
@@ -281,7 +276,7 @@ reproduces the component table of Problem 2 up to the medium factors, and identi
 
 **6. The complexified field.** Repeat the construction for a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb{C}$ rather than confined to the physical combination $i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$. Which of the statements — tracelessness, symmetry, conservation — survive, and what is the trace in the complexified case? (The parent notes that the projection onto $\mathbb{M}_-$ reproduces the electromagnetic field; the question is what the extra components do to $T$.)
 
-**7. The radiated flux and the self-interaction force.** For a field with sources, apply Gauss's theorem to $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle = -f^\nu$ to show that the flux of energy–momentum through a closed 3-surface, $\left(dP/dt\right)(\Sigma) = \int_{{}^{3}\Sigma} T(d{}^{3}\Sigma)$, equals minus the four-volume integral of the force density, $\left(dP/dt\right)(\Sigma) = -\mathcal{Q}(\Omega)$. The step is formal for point charges, because $T$ is quadratic in the field and the product of the singular field with itself is undefined for distributions. Gsponer carries the calculation out in a Colombeau algebra of nonlinear generalized functions, obtains $\left(dP/dt\right)(\Sigma) = -\mathcal{Q}$ rigorously for an arbitrarily moving relativistic point charge, and derives the Lorentz–Dirac equation from it; the statement and its consequences are recorded in *Radiation from Accelerated Charges in Biquaternionic Form*.
+**7. The radiated flux and the self-interaction force.** For a field with sources, apply Gauss's theorem to $\partial_\mu T^{\mu\nu} = -f^\nu$ to show that the flux of energy–momentum through a closed 3-surface, $\left(dP/dt\right)(\Sigma) = \int_{{}^{3}\Sigma} T(d{}^{3}\Sigma)$, equals minus the four-volume integral of the force density, $\left(dP/dt\right)(\Sigma) = -\mathcal{Q}(\Omega)$. The step is formal for point charges, because $T$ is quadratic in the field and the product of the singular field with itself is undefined for distributions. Gsponer carries the calculation out in a Colombeau algebra of nonlinear generalized functions, obtains $\left(dP/dt\right)(\Sigma) = -\mathcal{Q}$ rigorously for an arbitrarily moving relativistic point charge, and derives the Lorentz–Dirac equation from it; the statement and its consequences are recorded in *Radiation from Accelerated Charges in Biquaternionic Form*.
 
 8. **The tensor on a deformed arena — tracelessness, symmetry and conservation are properties of the arena.** Every statement above, and in particular tracelessness (Problem 3) and the conservation law (Problem 4), is a property of a Lorentz-invariant, commutative arena carrying a linear field theory. The companion article *Maxwell's Theory on Non-Commutative Spaces and Quaternions* constructs the same tensor on an arena whose coordinates do not commute, and all three properties change. (i) The trace is **not** zero: for the canonical tensor
 $$
@@ -291,9 +286,9 @@ and exactly twice that for the tensor obtained by the metric variation. The sour
 
 9. **The general force equation, and the Lagrangian as the trace of the tensor.** The conservation law of Problem 4 can be written as a *force* equation with a Lagrangian-density term. In the biquaternion tensor calculus of de Haas (*Biquaternion Formulation of Relativistic Tensor Dynamics*, arXiv:1401.4470v1), the mechanical stress–energy density is $T^{\nu\mu} = \tilde V^\nu G^\mu$, the stress–energy density of a charged particle in a potential field adds a current–potential term, the Lagrangian density $L$ is given as the trace of $T$, and the conservation statement reads
 $$
-\langle\tilde\nabla,\tilde T\rangle_{\natural}+\tilde\nabla L=0,
+\partial_\mu T^{\mu\nu}+\partial^\nu L=0,
 $$
-the **general force equation**, which under continuity conditions on the four-current and the four-velocity returns the Lorentz force law of Problem 4. Verify the two steps for the case of this exercise. First, with the current conserved, use $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle=-f^\nu$ from Problem 4 to show that the general force equation is the Lorentz-force balance when the Lagrangian term is carried to the other side, and read off what $\tilde\nabla L$ must be for the balance to close. Second, compute the trace of the tensor of this exercise: by Problem 3 the electromagnetic tensor is traceless on **every** free field, so "the Lagrangian density as the trace of $T$" gives $L = 0$ on the whole free-field class, while the electromagnetic Lagrangian density is not zero. Determine which tensor the trace is taken over — the matter tensor, the field tensor, or their sum — and where the difference sits. There is a printed inconsistency to settle first: the paper's canonical-Lagrangian display gives $L = -T^\nu{}_\nu$ while its conclusion calls $L$ the trace of $T$; the two cannot both be carried, and its tensor index layouts are unreliable in extraction, so read the signs from the PDF before using them. This problem is the tensor-language counterpart of the four-force density of Problem 4, and it is the route by which this exercise connects to relativistic *tensor dynamics* rather than to field theory alone.
+the **general force equation**, which under continuity conditions on the four-current and the four-velocity returns the Lorentz force law of Problem 4. Verify the two steps for the case of this exercise. First, with the current conserved, use $\partial_\mu T^{\mu\nu}=-f^\nu$ from Problem 4 to show that the general force equation is the Lorentz-force balance when the Lagrangian term is carried to the other side, and read off what $\partial^\nu L$ must be for the balance to close. Second, compute the trace of the tensor of this exercise: by Problem 3 the electromagnetic tensor is traceless on **every** free field, so "the Lagrangian density as the trace of $T$" gives $L = 0$ on the whole free-field class, while the electromagnetic Lagrangian density is not zero. Determine which tensor the trace is taken over — the matter tensor, the field tensor, or their sum — and where the difference sits. There is a printed inconsistency to settle first: the paper's canonical-Lagrangian display gives $L = -T^\nu{}_\nu$ while its conclusion calls $L$ the trace of $T$; the two cannot both be carried, and its tensor index layouts are unreliable in extraction, so read the signs from the PDF before using them. This problem is the tensor-language counterpart of the four-force density of Problem 4, and it is the route by which this exercise connects to relativistic *tensor dynamics* rather than to field theory alone.
 
 ## Summary
 
@@ -307,7 +302,7 @@ T^0{}_0 = -W, \qquad T^0{}_\nu = \frac{1}{c}S_\nu, \qquad T^\nu{}_0 = -\frac{1}{
 $$
 with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\nu\mu} = \epsilon E_\nuE_\mu + \mu H_\nuH_\mu - W\delta_{\nu\mu}$ the Maxwell stress. Contracting the second slot with the metric gives the symmetric standard tensor, $T^{tt} = W$, $T^{tj} = T^{jt} = \frac{1}{c}S_\nu$, $T^{\nu\mu} = -\sigma_{\nu\mu}$.
 
-The tensor is traceless, $T^\mu{}_\mu = -W - \sigma_{\mu\mu} = 0$, and it is conserved: $\langle\tilde\nabla,\tilde T^{(t)}\rangle = -\frac{1}{c}\vec E\cdot\vec J$ and $\langle\tilde\nabla,\tilde T^{(k)}\rangle = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle = -f^\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T^{\mu\nu}\propto k^\mu k^\nu$.
+The tensor is traceless, $T^\mu{}_\mu = -W - \sigma_{\mu\mu} = 0$, and it is conserved: $\partial_\mu T^{\mu t} = -\frac{1}{c}\vec E\cdot\vec J$ and $\partial_\mu T^{\mu k} = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\partial_\mu T^{\mu\nu} = -f^\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T^{\mu\nu}\propto k^\mu k^\nu$.
 
 The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial Q_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial tW$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{M}_+$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
 
@@ -330,7 +325,7 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $\sigma_{\nu\mu} = \epsilon E_\nuE_\mu + \mu H_\nuH_\mu - W\delta_{\nu\mu}$ | Maxwell stress tensor |
 | $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ | Hermitian form (energy–momentum four-vector) |
 | $T^\mu{}_\nu = \frac{1}{2}\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$ | Electromagnetic energy–momentum tensor (mixed) |
-| $\tilde T^{(\nu)} = \frac{1}{2}\tilde F\mathcal{E}_\nu\tilde F^{*}$, $\langle\tilde\nabla,\tilde T^{(\nu)}\rangle=\sum_\mu\partial_{Q_\mu}T^{\mu\nu}=0$, $\mathrm{Sc}(\mathcal E_\mu\tilde T^{(\nu)})=T^{\nu}{}_\mu$ | One direction of the tensor as one biquaternion; conservation, one divergence per direction |
+| $\partial_\mu T^{\mu\nu}=\sum_\mu\partial_{Q_\mu}T^{\mu\nu}=0$ | Conservation of the energy–momentum tensor |
 | $T^{\mu\nu} = \eta^{\nu\alpha}T^\mu{}_\alpha$ | Symmetric energy–momentum tensor |
 | $\eta = \mathrm{diag}(-1,1,1,1)$ | Minkowski metric |
 | $f^\nu = (\frac{1}{c}\vec E\cdot\vec J,\,\rho\vec E+\vec J\times\vec B)$ | Four-force density (source) |

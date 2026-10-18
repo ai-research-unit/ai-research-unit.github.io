@@ -331,10 +331,10 @@ $$
 p \preceq q \quad\Longleftrightarrow\quad f(p) \preceq f(q),
 $$
 
-is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U^{*}$ with $\langle\tilde U\rangle_{\natural} = e_t$, and the translation is the addition of a fixed displacement $\tilde{T} \in \mathbb{M}_-$:
+is the composition of a Lorentz transformation, a translation, and a positive dilation. This is the theorem of Aleksandrov and Zeeman; it is cited as a standard result of the causal structure of Minkowski space. In the biquaternion formulation the Lorentz part is the rotor conjugation $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U^{*}$ with $\langle\tilde U\rangle_{\natural} = e_t$, and the translation is the addition of a fixed displacement $\tilde R_{\mathrm d} \in \mathbb{M}_-$:
 
 $$
-\tilde{R} \;\longmapsto\; \tilde U\tilde{R}\tilde U^{*} + \tilde{T}.
+\tilde{R} \;\longmapsto\; \tilde U\tilde{R}\tilde U^{*} + \tilde R_{\mathrm d}.
 $$
 
 The theorem says that the cone, together with the time orientation, determines the allowed transformations up to these two operations. Nothing beyond the causal order is needed to recover the kinematics of the frame changes; the barrier is not only preserved by the relativity group, it characterizes it.

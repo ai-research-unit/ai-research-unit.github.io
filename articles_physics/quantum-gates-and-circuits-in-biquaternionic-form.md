@@ -157,7 +157,7 @@ Under the isomorphism $\vec e_k \mapsto -i\sigma_k$, the image of $i \vec e_k$ i
 | $Z$ (Pauli) | $\vec U_z= i \vec e_z$ | $\sigma_3$ | $(-r_1,-r_2,r_3)$ |
 | $H$ (Hadamard) | $\tilde{H} = \dfrac{i}{\sqrt{2}}\left(\vec e_x+\vec e_z\right)$ | $\dfrac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$ | $(r_3,-r_2,r_1)$ |
 | $S$ (phase) | $\tilde{S} = \dfrac{1}{\sqrt{2}}\left(e_t+\vec e_z\right)$ | $\operatorname{diag}(\exp(-i\pi/4),\exp(i\pi/4))$ | $(-r_2,r_1,r_3)$ |
-| $T$ ($\pi/8$) | $\tilde{T} = \cos\dfrac{\pi}{8}e_t + \sin\dfrac{\pi}{8}\vec e_z$ | $\operatorname{diag}(\exp(-i\pi/8),\exp(i\pi/8))$ | rotation by $\pi/4$ about $\vec e_z$ |
+| $T$ ($\pi/8$) | $\tilde U_{T} = \cos\dfrac{\pi}{8}e_t + \sin\dfrac{\pi}{8}\vec e_z$ | $\operatorname{diag}(\exp(-i\pi/8),\exp(i\pi/8))$ | rotation by $\pi/4$ about $\vec e_z$ |
 | $R_{\vec u_{\mathrm r}}(\theta)$ | $\cos\dfrac{\theta}{2}e_t + \sin\dfrac{\theta}{2}\vec u_{\mathrm r}$ | $\exp(-i\theta\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma}/2)$ | rotation by $\theta$ about $\vec u_{\mathrm r}$ |
 
 The matrix column is the image under $\mathbb{B}\cong M_2(\mathbb{C})$. For $S$ and $T$ the displayed matrices are $\operatorname{diag}(\exp(-i\pi/4),\exp(i\pi/4))$ and $\operatorname{diag}(\exp(-i\pi/8),\exp(i\pi/8))$, which are the standard $S$ and $T$ up to the central phases $\exp(i\pi/4)$ and $\exp(i\pi/8)$; equivalently, $S$ and $T$ are represented exactly by the unit real quaternions shown. This is the representative-dependence noted above.
@@ -218,11 +218,11 @@ The element $\vec e_z$ is not $Z = i \vec e_z$; it differs from it by the centra
 The $T$ gate is the rotation by $\pi/4$ about $\vec e_z$:
 
 $$
-\tilde{T} = \cos\frac{\pi}{8}\,e_t + \sin\frac{\pi}{8}\,\vec e_z = \tilde u_{e,3}\!\left(\frac{\pi}{4}\right),
+\tilde U_{T} = \cos\frac{\pi}{8}\,e_t + \sin\frac{\pi}{8}\,\vec e_z = \tilde u_{e,3}\!\left(\frac{\pi}{4}\right),
 \qquad
-\tilde{T}^2 = \tilde{S}, \qquad
-\tilde{T}^{8} = -e_t, \qquad
-\tilde{T}^{16} = e_t .
+\tilde U_{T}^2 = \tilde{S}, \qquad
+\tilde U_{T}^{8} = -e_t, \qquad
+\tilde U_{T}^{16} = e_t .
 $$
 
 Thus $T$ has order eight as a gate and order sixteen as an element of $SU(2)$. The relation $T^2 = S$ and the order were recomputed. Both $S$ and $T$ are represented by unit real quaternions, i.e. by elements of the rotation group, and neither is Hermitian; this is why their biquaternion representatives lie in $\mathbb{H}_{\mathbb{B}}$ rather than in $\mathbb{M}_+$, in contrast with the Pauli and Hadamard gates.
@@ -517,7 +517,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\vec U_x=i\vec e_x,\ \vec U_y=i\vec e_y,\ \vec U_z=i\vec e_z$ | Pauli gates |
 | $\tilde{H}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$ | Hadamard gate |
-| $\tilde{S}=\tfrac{1}{\sqrt2}(e_t+\vec e_z),\ \tilde{T}=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$ | Phase and $T$ gates |
+| $\tilde{S}=\tfrac{1}{\sqrt2}(e_t+\vec e_z),\ \tilde U_{T}=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$ | Phase and $T$ gates |
 | $\tilde u_{\mathrm r}(\theta)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$ | General rotation gate |
 | $\mathcal{P}=\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$ | Pauli group (16 elements) |
 | $\tilde{Q}_{\tilde{U}}=\tilde\Pi_1\otimes e_t+\tilde\Pi_2\otimes\tilde{U}$ | Controlled gate |

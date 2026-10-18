@@ -160,7 +160,7 @@ the bridge identity of *The Fundamental Symmetry of the Biquaternioid Algebra*.
 
 ## Orthogonality of the Distinctions
 
-**Definition.** Two subspaces are **Krein-orthogonal**, written $\mathbb{W}\perp_{K}\mathbb{U}$, when $\langle\tilde{T},\tilde{Q}\rangle_{\natural*}=0$ for all $\tilde{Q}\in\mathbb{W}$ and $\tilde{T}\in\mathbb{U}$. The **Krein-orthogonal complement** is $\mathbb{W}^{\perp_{K}}=\{\tilde{T}:\langle\tilde{T},\tilde{Q}\rangle_{\natural*}=0\ \forall\tilde{Q}\in\mathbb{W}\}$.
+**Definition.** Two subspaces are **Krein-orthogonal**, written $\mathbb{W}\perp_{K}\mathbb{U}$, when $\langle\tilde Q_3,\tilde{Q}\rangle_{\natural*}=0$ for all $\tilde{Q}\in\mathbb{W}$ and $\tilde Q_3\in\mathbb{U}$. The **Krein-orthogonal complement** is $\mathbb{W}^{\perp_{K}}=\{\tilde Q_3:\langle\tilde Q_3,\tilde{Q}\rangle_{\natural*}=0\ \forall\tilde{Q}\in\mathbb{W}\}$.
 
 **Theorem (the orthogonal splitting).** The general quaternionic sesquilinear form splits the algebra as an orthogonal sum
 
@@ -173,7 +173,7 @@ $$
 
 and the four subspaces of signature $(1,3)$ are **non-degenerate**, $\mathbb{W}\cap\mathbb{W}^{\perp_{K}}=\{0\}$, and are pairwise **not** Krein-orthogonal.
 
-**Proof.** $\langle \vec e_k,e_t\rangle_{\natural*}=0$ and $\langle \vec e_k,ie_t\rangle_{\natural*}=0$ give the splitting and the two complements. In coefficients $\langle\tilde{T},e_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}T_{\mu}$ and $\langle\tilde{T},ie_{\mu}\rangle_{\natural*}=-i\varepsilon_{\mu}T_{\mu}$, so an element of one of the four subspaces that is Krein-orthogonal to that subspace has all its coefficients zero, hence vanishes: those four subspaces are non-degenerate. For the failure of mutual orthogonality, $\langle ie_t,e_t\rangle_{\natural*}=i\neq0$ shows that $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are not orthogonal, and $\langle e_t,ie_t\rangle_{\natural*}=-i\neq0$ does the same for $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$.
+**Proof.** $\langle \vec e_k,e_t\rangle_{\natural*}=0$ and $\langle \vec e_k,ie_t\rangle_{\natural*}=0$ give the splitting and the two complements. In coefficients $\langle\tilde Q_3,e_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}T_{\mu}$ and $\langle\tilde Q_3,ie_{\mu}\rangle_{\natural*}=-i\varepsilon_{\mu}T_{\mu}$, so an element of one of the four subspaces that is Krein-orthogonal to that subspace has all its coefficients zero, hence vanishes: those four subspaces are non-degenerate. For the failure of mutual orthogonality, $\langle ie_t,e_t\rangle_{\natural*}=i\neq0$ shows that $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are not orthogonal, and $\langle e_t,ie_t\rangle_{\natural*}=-i\neq0$ does the same for $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$.
 
 ## The Discriminant
 

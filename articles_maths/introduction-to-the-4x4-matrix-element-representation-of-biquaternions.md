@@ -173,7 +173,7 @@ The $2\times2$ realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix El
 
 Here $\epsilon=i\sigma_2$, and the two middle rows are the only ones that look different: the four entries of the $2\times2$ matrix are four $\mathbb{C}$-linear combinations of the four coefficients, so realness of the coefficients is not realness of the entries, whereas the entries of the regular matrix are the coefficients up to sign.
 
-**Theorem (the regular matrix is two copies of the $2\times2$ matrix).** Let $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ and $f=e_t-\tilde\Pi$, so that $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}f$ splits into two minimal left ideals, and let $\tilde Q_4=\vec e_z+i\vec e_y$, $\tilde T=\vec e_z-i\vec e_y$. In the basis $\tilde\Pi,\tilde Q_4,f,\tilde T$ the regular matrix is block diagonal,
+**Theorem (the regular matrix is two copies of the $2\times2$ matrix).** Let $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ and $f=e_t-\tilde\Pi$, so that $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}f$ splits into two minimal left ideals, and let $\tilde Q_4=\vec e_z+i\vec e_y$, $\tilde Q_7=\vec e_z-i\vec e_y$. In the basis $\tilde\Pi,\tilde Q_4,f,\tilde Q_7$ the regular matrix is block diagonal,
 
 $$
 \mathsf{M}_4(\tilde Q)=\begin{pmatrix}A_+&0\\0&A_-\end{pmatrix},\qquad A_+\text{ and }A_-\text{ conjugate to }\mathsf{M}_2(\tilde Q),

@@ -56,14 +56,14 @@ The two-sided space is **four-dimensional over $\mathbb{C}$**, so the operator i
 
 The congruence preserves the rank of its argument and scales its determinant, and both statements are the matrix forms of invariants of the operator.
 
-**Proposition (rank and determinant under the congruence).** For every $\tilde Q_1$ with image $\tilde T = \tilde{Q}\tilde Q_1\tilde{Q}^{*}$,
+**Proposition (rank and determinant under the congruence).** For every $\tilde Q_1$ with image $\tilde Q_2 = \tilde{Q}\tilde Q_1\tilde{Q}^{*}$,
 
 $$
-\operatorname{rank}\mathsf{M}_2(\tilde T) \leq \operatorname{rank}\mathsf{M}_2(\tilde Q_1), \qquad\text{with equality if } \langle\tilde{Q}\rangle_{\natural} \neq 0,
+\operatorname{rank}\mathsf{M}_2(\tilde Q_2) \leq \operatorname{rank}\mathsf{M}_2(\tilde Q_1), \qquad\text{with equality if } \langle\tilde{Q}\rangle_{\natural} \neq 0,
 $$
 
 $$
-\det \mathsf{M}_2(\tilde T) = \lvert\det M\rvert^{2}\det \mathsf{M}_2(\tilde Q_1), \qquad\text{that is}\qquad \langle\tilde T\rangle_{\natural} = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_1\rangle_{\natural} .
+\det \mathsf{M}_2(\tilde Q_2) = \lvert\det M\rvert^{2}\det \mathsf{M}_2(\tilde Q_1), \qquad\text{that is}\qquad \langle\tilde Q_2\rangle_{\natural} = \langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_1\rangle_{\natural} .
 $$
 
 **Proof.** Left and right multiplication by any matrices cannot increase rank, and multiplication by invertible matrices on either side preserves it; that gives the rank statement off the light cone. For the determinant, $\det(MXM^{\dagger}) = \det M\cdot\det X\cdot\det M^{\dagger} = \lvert\det M\rvert^{2}\det X$ by multiplicativity, and $\det \mathsf{M}_2 = N$ by the element article.
@@ -164,7 +164,7 @@ $$
 X \longmapsto M X M^{\dagger}, \qquad M = \mathsf{M}_2(\tilde{Q}) \in M_2(\mathbb{C}),
 $$
 
-a single familiar operation, linear in the argument and quadratic in the operand, and a similarity exactly when $M$ is unitary, that is, for the rotations. It preserves the two Hermitian sectors, because $(MXM^{\dagger})^{\dagger} = MXM^{\dagger}$ or its negative according to the sector of $X$, and it scales the determinant by $\lvert\det M\rvert^{2}$, which is the interval identity $\langle\tilde T\rangle_{\natural} = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_1\rangle_{\natural}$. The image of the identity is the Gram matrix $MM^{\dagger}$, positive semidefinite of rank $\operatorname{rank}M$.
+a single familiar operation, linear in the argument and quadratic in the operand, and a similarity exactly when $M$ is unitary, that is, for the rotations. It preserves the two Hermitian sectors, because $(MXM^{\dagger})^{\dagger} = MXM^{\dagger}$ or its negative according to the sector of $X$, and it scales the determinant by $\lvert\det M\rvert^{2}$, which is the interval identity $\langle\tilde Q_2\rangle_{\natural} = \langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_1\rangle_{\natural}$. The image of the identity is the Gram matrix $MM^{\dagger}$, positive semidefinite of rank $\operatorname{rank}M$.
 
 The two regimes are the two ranks of $M$. Off the light cone $M$ is invertible, the congruence is a bijection preserving the four ranks of the two-by-two matrices, and the operator has rank $4$, determinant $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$ and trace $4\lvert Q_t\rvert^{2}$, with the spectrum $\lambda_i\bar{\lambda}_j$ read from the eigenvalues of $M$. On the light cone $M = uv^{\dagger}$ has rank one and the congruence collapses the whole matrix algebra onto the single Hermitian line $\mathbb{C}uu^{\dagger}$, the line of a minimal idempotent: the operator has rank one, its square is $4\lvert Q_t\rvert^{2}$ times itself, and it is nilpotent for $Q_t = 0$ and a scaled projection otherwise. The worked null operands $\vec e_x + i\vec e_y$, $\tilde\Pi_-$ and $\vec e_y + i\vec e_z$ show the three cases of the collapse, with images the lines of $\tilde\Pi_+$, $\tilde\Pi_-$ and $\tfrac12(e_t + i\vec e_x)$. The boost rotor $\tfrac53e_t + \tfrac43i\vec e_z$ shows the invertible case, with the half-rapidity of the operand appearing as the doubled rapidity of the congruence.
 
@@ -177,7 +177,7 @@ The two regimes are the two ranks of $M$. Off the light cone $M$ is invertible, 
 | $X \mapsto MXM^{\dagger}$ | the sandwich as a congruence |
 | $MM^{\dagger} = \mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the image of the identity; the Gram matrix of $M$ |
 | $\operatorname{rank}\mathsf{M}_2(\tilde{Q}\tilde Q_1\tilde{Q}^{*}) \leq \operatorname{rank}\mathsf{M}_2(\tilde Q_1)$ | rank never increases; preserved off the cone |
-| $\det(MXM^{\dagger}) = \lvert\det M\rvert^{2}\det X$ | the determinant scales; $\langle\tilde T\rangle_{\natural} = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_1\rangle_{\natural}$ |
+| $\det(MXM^{\dagger}) = \lvert\det M\rvert^{2}\det X$ | the determinant scales; $\langle\tilde Q_2\rangle_{\natural} = \langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_1\rangle_{\natural}$ |
 | $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = (\operatorname{rank}M)^{2}$ | $4$ off the cone, $1$ on it, $0$ only at $\tilde{Q} = 0$ |
 | $M = uv^{\dagger} \Rightarrow MXM^{\dagger} = (v^{\dagger}Xv)uu^{\dagger}$ | the collapse of a null congruence onto one Hermitian line |
 | $uu^{\dagger} \leftrightarrow \tfrac12(e_t + i\vec u\cdot\mathbf{e})$ | the generator of the image line is a minimal idempotent |

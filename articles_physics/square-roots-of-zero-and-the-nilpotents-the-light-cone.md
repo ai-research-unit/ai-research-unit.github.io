@@ -107,13 +107,13 @@ The three sets are nested and distinct, and the article fixes the nesting.
 
 The empirical content of the reading is this: **the zero-divisor cone is the light cone**, the nilpotents are its pure part, and the roots of $0$ are the pure part together with the origin. The cone is the physical locus of the lightlike directions, and it is owned by *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Zero Divisors as a Physical Locus in Biquaternionic Form*.
 
-**On the material sector.** A material four-vector is $\tilde T=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, anti-Hermitian, in $\mathbb{M}_-$. Its norm is the interval,
+**On the material sector.** A material four-vector is $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, anti-Hermitian, in $\mathbb{M}_-$. Its norm is the interval,
 
 $$
-\langle\tilde T\rangle_{\natural}=-c^{2}t^{2}+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2},
+\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2},
 $$
 
-of signature $(-,+,+,+)$, so the zero-divisor cone cut by $\mathbb{M}_-$ is the physical null cone $c^{2}t^{2}=\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}$, and the level set $\langle\tilde T\rangle_{\natural}=-m^{2}c^{2}$ is the mass shell, developed in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The material sector contains **no** nilpotent: the pure part of the algebraic cone lies in the vector subspace, in neither sector, and the physical light cone is the non-pure part of the cone cut by $\mathbb{M}_-$. The reading that the algebraic cone and the physical cone are one object is the framework's, and it is stated here for the algebra and cited there for the physics.
+of signature $(-,+,+,+)$, so the zero-divisor cone cut by $\mathbb{M}_-$ is the physical null cone $c^{2}t^{2}=\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}$, and the level set $\langle\tilde R\rangle_{\natural}=-m^{2}c^{2}$ is the mass shell, developed in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The material sector contains **no** nilpotent: the pure part of the algebraic cone lies in the vector subspace, in neither sector, and the physical light cone is the non-pure part of the cone cut by $\mathbb{M}_-$. The reading that the algebraic cone and the physical cone are one object is the framework's, and it is stated here for the algebra and cited there for the physics.
 
 ## The Nilpotents as Lightlike Propagation
 

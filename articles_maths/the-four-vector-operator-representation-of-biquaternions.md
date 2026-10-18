@@ -86,10 +86,10 @@ $$
 \mathrm{H}_{\tilde{Q}}(e_k)^0 = 2i\,\mathrm{Im}\bigl(Q^0\overline{Q^k}\bigr) - (\vec Q\times(\vec Q)^{\natural})^k .
 $$
 
-**Proof.** Write $\tilde B = e_k\tilde{Q}^{*}$, of four-vector $B^0 = \overline{Q^k}$ and $B^j = \overline{Q^0}\delta^j_k + \epsilon^{\mu\nu\lambda}\overline{Q^l}$, the second term being read from $e_ke_j = \epsilon^{kjl}e_l$ and vanishing for $j = k$. The scalar component of $\tilde{Q}\tilde B$ is then
+**Proof.** Write $\tilde Q_k = e_k\tilde{Q}^{*}$, of four-vector $Q_k^0 = \overline{Q^k}$ and $Q_k^j = \overline{Q^0}\delta^j_k + \epsilon^{kjl}\overline{Q^l}$, the second term being read from $e_ke_j = \epsilon^{kjl}e_l$ and vanishing for $j = k$. The scalar component of $\tilde{Q}\tilde Q_k$ is then
 
 $$
-Q^0B^0 - \sum_{j=1}^{3}Q^jB^j = Q^0\overline{Q^k} - Q^k\overline{Q^0} - (\vec Q\times(\vec Q)^{\natural})^k,
+Q^0Q_k^0 - \sum_{j=1}^{3}Q^jQ_k^j = Q^0\overline{Q^k} - Q^k\overline{Q^0} - (\vec Q\times(\vec Q)^{\natural})^k,
 $$
 
 whose first two terms are $Q^0\overline{Q^k} - \overline{Q^0\overline{Q^k}} = 2i\,\mathrm{Im}(Q^0\overline{Q^k})$.

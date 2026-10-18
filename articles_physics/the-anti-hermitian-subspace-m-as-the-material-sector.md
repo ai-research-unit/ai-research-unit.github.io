@@ -226,19 +226,19 @@ The four forms of *Conventions in the Biquaternion Universe* are read on $\mathb
 
 **Every form is real on the sector, so each is its own real part.** An element of $\mathbb{M}_-$ is $ib_0e_t + \vec q$ with $b_0$ and $\vec q$ real, and each of the four forms takes real values on a pair of such elements. The imaginary part of each of the four therefore **vanishes identically on $\mathbb{M}_-$**, and every form is a real symmetric bilinear form in four real variables, recovered from its own diagonal. Like the informational sector, the material sector has in each form one symmetric pairing and no second one.
 
-**The four forms are the interval, its negative, the Euclidean square and its negative.** With $\tilde T = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ in the $ict$ convention,
+**The four forms are the interval, its negative, the Euclidean square and its negative.** With $\tilde R = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ in the $ict$ convention,
 
 $$
-\langle\tilde T,\tilde T\rangle = -\bigl(c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2\bigr), \qquad
-\langle\tilde T,\tilde T\rangle_{\natural} = -c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2,
+\langle\tilde R,\tilde R\rangle = -\bigl(c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2\bigr), \qquad
+\langle\tilde R,\tilde R\rangle_{\natural} = -c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2,
 $$
 
 $$
-\langle\tilde T,\tilde T\rangle_{*} = c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2, \qquad
-\langle\tilde T,\tilde T\rangle_{\natural*} = c^2t^2 - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2,
+\langle\tilde R,\tilde R\rangle_{*} = c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2, \qquad
+\langle\tilde R,\tilde R\rangle_{\natural*} = c^2t^2 - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2,
 $$
 
-of signatures $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$ in the same order. The two sesquilinear forms are the negatives of the two bilinear ones, $\langle\cdot,\cdot\rangle_{*} = -\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural*} = -\langle\cdot,\cdot\rangle_{\natural}$ on the sector, and the reason is the definition of the sector itself: the Hermitian conjugation is minus the identity on $\mathbb{M}_-$, so the star of the second slot flips the sign and nothing else. The interval is the norm form $N=\langle\tilde T,\tilde T\rangle_{\natural}$ of *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, negative on the material time and positive on the three material space directions, with the light cone as its null cone; the other three interpretations are the same interval negated and the Euclidean square with its negative.
+of signatures $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$ in the same order. The two sesquilinear forms are the negatives of the two bilinear ones, $\langle\cdot,\cdot\rangle_{*} = -\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural*} = -\langle\cdot,\cdot\rangle_{\natural}$ on the sector, and the reason is the definition of the sector itself: the Hermitian conjugation is minus the identity on $\mathbb{M}_-$, so the star of the second slot flips the sign and nothing else. The interval is the norm form $N=\langle\tilde R,\tilde R\rangle_{\natural}$ of *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, negative on the material time and positive on the three material space directions, with the light cone as its null cone; the other three interpretations are the same interval negated and the Euclidean square with its negative.
 
 **The absence of the area pairing, and why it is exact.** The four forms carry a second real pairing on a subspace only where the multiplication by the central imaginary preserves that subspace: there the imaginary part is generally non-zero and, for the two sesquilinear forms, alternating — the **area pairing**, of rank $2$ on the complex time sector and rank $6$ on the complex space sector, and tied to the real part there by the Kähler identity $\omega(\tilde P,\tilde Q_1) = \langle\tilde P,i\tilde Q_1\rangle_{*}$. On $\mathbb{M}_-$ the multiplication by $i$ carries the sector out of itself, $i\mathbb{M}_- = \mathbb{M}_+$, so the companion has no pair of directions to join inside the sector: it is zero, and **the material sector is phase-free.** Its one pairing per form is the symmetric one. As on the informational sector, this concerns the imaginary part of the **scalar-valued** form and not the **vector-valued** antisymmetric half of the product, which the corpus reads as the coherence and which is not zero on the sector (*The Biquaternioid Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$*); the two parts are the scalar and the vector halves of one block.
 

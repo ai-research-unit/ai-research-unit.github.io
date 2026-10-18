@@ -243,25 +243,22 @@ $$
 
 because $\sigma_{kk} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
 
-**Conservation.** The divergence of the tensor is the Lorentz four-force density. For each fixed direction ν the whole content is one biquaternion,
+**Conservation.** The divergence of the tensor is the Lorentz four-force density. The tensor is defined by
 
 $$
-\tilde T^{(\nu)} = \tfrac12\,\tilde F\,\mathcal E_\nu\,\tilde F^{*} ,
-\qquad
-\mathrm{Sc}\!\left(\mathcal E_\mu\,\tilde T^{(\nu)}\right) = T^{\nu}{}_\mu ,
-\qquad
 T^{\mu}{}_\nu = \tfrac12\,\mathrm{Sc}\!\left(\tilde F\,\mathcal E_\mu\,\tilde F^{*}\,\mathcal E_\nu\right) ,
+\qquad
+T^{\mu\nu} = \eta^{\nu\beta}T^{\mu}{}_\beta ,
 $$
 
-the middle identity being exact over the field algebra up to the factors the $ict$ basis elements carry, so the biquaternion reproduces the tensor. In the coordinates of the framework, $Q_t=ict$ and $Q_k=q_k$, so $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$, and the divergence is the scalar part of the **plain** product,
+the definition being exact over the field algebra up to the factors the $ict$ basis elements carry. In the coordinates of the framework, $Q_t=ict$ and $Q_k=q_k$, so $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$, and the divergence is
 
 $$
-\mathrm{Sc}\!\left(\tilde\nabla\,\tilde T^{(\nu)}\right)
-= \sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}\,\mathrm{Sc}\!\left(e_\mu\,\tilde T^{(\nu)}\right)
-= \frac{\partial}{\partial Q_\mu}\,T^{\mu\nu} ,
+\partial_\mu T^{\mu\nu}
+= \sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}\,T^{\mu\nu} ,
 $$
 
-which is the biquaternion transcription of the component law
+which is the component law
 
 $$
 \frac{\partial}{\partial Q_\mu}\,T^{\mu\nu} = -f^\nu ,
@@ -269,13 +266,13 @@ $$
 f^\nu = \left(\frac{1}{c}\vec E\cdot\vec J,\ \rho\vec E+\vec J\times\vec B\right),
 $$
 
-so that the source-free field has $\mathrm{Sc}(\tilde\nabla\tilde T^{(\nu)})=0$ and in the presence of charges the field momentum is exchanged with the matter at the rate given by the Lorentz force. The companion article *The Lorentz Force in Biquaternion Form* treats the matter side of the exchange.
+so that the source-free field has $\partial_\mu T^{\mu\nu}=0$ and in the presence of charges the field momentum is exchanged with the matter at the rate given by the Lorentz force. The companion article *The Lorentz Force in Biquaternion Form* treats the matter side of the exchange.
 
-The identity was verified off shell: for random arbitrary fields the left-hand side reproduces $\partial/\partial Q_\mu T^{\mu\nu}$ to machine precision, ratio exactly one, for all four $\nu$. The source-free case was then checked on shell: on random superpositions of one to three transverse plane waves with $\omega_i=c|\vec k_i|$, $c=1$, $\epsilon=\mu=1$, at random events, second-order finite differences with step $10^{-5}$ give $|\mathrm{Sc}(\tilde\nabla\tilde T^{(\nu)})|$ below $10^{-9}$ against tensor elements of order unity, at the discretisation floor, for all four $\nu$ — conservation for the interacting cross terms and not merely mode by mode.
+The identity was verified off shell: for random arbitrary fields the divergence reproduces $\partial/\partial Q_\mu T^{\mu\nu}$ to machine precision, ratio exactly one, for all four $\nu$. The source-free case was then checked on shell: on random superpositions of one to three transverse plane waves with $\omega_i=c|\vec k_i|$, $c=1$, $\epsilon=\mu=1$, at random events, second-order finite differences with step $10^{-5}$ give $|\partial_\mu T^{\mu\nu}|$ below $10^{-9}$ against tensor elements of order unity, at the discretisation floor, for all four $\nu$ — conservation for the interacting cross terms and not merely mode by mode.
 
-**The reading is decisive.** It is the **plain** product, and the projection is the plain $e_\mu$, not the conjugated $e_\mu^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $e_k^{\natural}=-\vec e_k$; the conjugated spelling $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde T^{(\nu)})=\sum_\mu\partial/\partial Q_\mu\,\mathrm{Sc}(e_\mu^{\natural}\tilde T^{(\nu)})$ is a different combination, it does not reproduce $\partial/\partial Q_\mu T^{\mu\nu}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)$ is the divergence; for the rank-two object the plain product is what carries it.
+**The reading is decisive.** It is the **plain** derivative, and the projection is the plain $e_\mu$, not the conjugated $e_\mu^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $e_k^{\natural}=-\vec e_k$; the conjugated contraction is a different combination, it does not reproduce $\partial/\partial Q_\mu T^{\mu\nu}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)$ is the divergence; for the rank-two tensor the plain derivative is what carries it.
 
-**Where the algebra enters.** The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $T^\mu{}_\nu$ and not a doubly covariant one, and why one direction at a time is what a biquaternion carries — the four-component object $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows, whereas for each fixed $\nu$ the single biquaternion $\tilde T^{(\nu)}=\tfrac12\tilde F\mathcal{E}_\nu\tilde F^{*}$ carries one whole row, the entries $T^{\mu}{}_\nu$ for the four values of $\mu$. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field. The divergence of the row is then the scalar part of the plain product with the gradient, $\mathrm{Sc}(\tilde\nabla\tilde T^{(\nu)})$, and it is that plain product which vanishes.
+**Where the algebra enters.** The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $T^\mu{}_\nu$ and not a doubly covariant one, and why one vector direction at a time is what the bilinear carries — the four-component object $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows, whereas fixing $\nu$ selects the four entries $T^{\mu}{}_\nu$. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field. The divergence of the row is then the plain derivative $\partial_\mu T^{\mu\nu}$, and it is that divergence which vanishes.
 
 ## The Conservation Law for Field and Matter
 
@@ -410,7 +407,7 @@ symmetric once contracted with the metric, traceless in the Minkowski pairing, a
 | $T^0{}_0=-W$, $T^0{}_j=\frac1cS_j$, $T^j{}_0=-\frac1cS_j$, $T^j{}_k=-\sigma_{jk}$ | Mixed components |
 | $T^{tt}=W$, $T^{tj}=T^{jt}=\frac1cS_j$, $T^{jk}=-\sigma_{jk}$ | Symmetric components, after contraction with $\eta$ |
 | $\eta_{\mu\nu}T^{\mu\nu}=-T^{tt}+T^{kk}=0$ | Tracelessness (Minkowski pairing) |
-| $\mathrm{Sc}(\tilde\nabla\tilde T^{(\nu)})=\partial_{Q_\mu}T^{\mu\nu}=-f^\nu$, $\tilde T^{(\nu)}=\tfrac12\tilde F\mathcal{E}_\nu\tilde F^{*}$; plain product, $ict$ coordinates $Q_t=ict$ | Conservation with source, one divergence per direction; Lorentz four-force |
+| $\partial_{Q_\mu}T^{\mu\nu}=-f^\nu$, $T^{\mu}{}_\nu=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict$ coordinates $Q_t=ict$ | Conservation with source per direction; Lorentz four-force |
 | $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\eta_{\mu\nu}\mathcal{L}_\phi$ | Scalar stress–energy |
 | $T_{tt}=T^{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

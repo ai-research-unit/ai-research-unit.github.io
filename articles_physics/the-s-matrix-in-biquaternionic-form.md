@@ -212,19 +212,19 @@ Nothing in this section is specific to a scattering process. The trace formula i
 
 The unitarity relation of the interaction picture is an algebraic identity in the one-mode truncation, and it is worth deriving it there because it is where the S-matrix's unitarity is actually used.
 
-With $\tilde S = e_t + i\tilde T$, the condition $\tilde S^{*}\tilde S = e_t$ gives, in the algebra,
+With $\tilde S = e_t + i\tilde Q_2$, the condition $\tilde S^{*}\tilde S = e_t$ gives, in the algebra,
 
 $$
-(e_t-i\tilde T^{*})(e_t+i\tilde T) = e_t
+(e_t-i\tilde Q_2^{*})(e_t+i\tilde Q_2) = e_t
 \;\;\Longleftrightarrow\;\;
-i(\tilde T-\tilde T^{*}) + \tilde T^{*}\tilde T = 0
+i(\tilde Q_2-\tilde Q_2^{*}) + \tilde Q_2^{*}\tilde Q_2 = 0
 \;\;\Longleftrightarrow\;\;
-2\,\mathrm{Im}\,\tilde T = \tilde T^{*} \tilde T,
+2\,\mathrm{Im}\,\tilde Q_2 = \tilde Q_2^{*} \tilde Q_2,
 $$
 
-with $\mathrm{Im}\,\tilde T := \tfrac{1}{2i}(\tilde T-\tilde T^{*}) \in \mathbb{M}_+$. (Using $\tilde S\tilde S^{*} = e_t$ instead gives $2\,\mathrm{Im}\,\tilde T = \tilde T\tilde T^{*}$, which agrees because $\tilde T$ built from a unitary $\tilde S$ is normal.) This is the same relation as the operator identity $2\,\mathrm{Im}\,T = T^\dagger T$ written for the one-mode truncation, and it is an exact biquaternion identity: it says that the Hermitian part $2\,\mathrm{Im}\,\tilde T$ equals the positive element $\tilde T^{*}\tilde T$.
+with $\mathrm{Im}\,\tilde Q_2 := \tfrac{1}{2i}(\tilde Q_2-\tilde Q_2^{*}) \in \mathbb{M}_+$. (Using $\tilde S\tilde S^{*} = e_t$ instead gives $2\,\mathrm{Im}\,\tilde Q_2 = \tilde Q_2\tilde Q_2^{*}$, which agrees because $\tilde Q_2$ built from a unitary $\tilde S$ is normal.) This is the same relation as the operator identity $2\,\mathrm{Im}\,T = T^\dagger T$ written for the one-mode truncation, and it is an exact biquaternion identity: it says that the Hermitian part $2\,\mathrm{Im}\,\tilde Q_2$ equals the positive element $\tilde Q_2^{*}\tilde Q_2$.
 
-The identity was checked on elements not used to state it. For four independently generated matrix-unitary biquaternions $\tilde S = \exp(i\theta)\tilde u$ with random central phase and random spin axis, $\tilde T = (\tilde S-e_t)/i$ was formed and the difference $2\,\mathrm{Im}\,\tilde T - \tilde T^{*}\tilde T$ was computed in the algebra; its largest component was of order $10^{-16}$, so the identity holds to machine precision.
+The identity was checked on elements not used to state it. For four independently generated matrix-unitary biquaternions $\tilde S = \exp(i\theta)\tilde u$ with random central phase and random spin axis, $\tilde Q_2 = (\tilde S-e_t)/i$ was formed and the difference $2\,\mathrm{Im}\,\tilde Q_2 - \tilde Q_2^{*}\tilde Q_2$ was computed in the algebra; its largest component was of order $10^{-16}$, so the identity holds to machine precision.
 
 The physical content is the **optical theorem**: the diagonal element $\langle i|2\,\mathrm{Im}\,T|i\rangle = \langle i|T^\dagger T|i\rangle$ is positive and equals the summed transition probability out of the initial state, so it is the total rate, and in a field theory with a continuum of final states it becomes the usual relation between the forward scattering amplitude and the total cross-section. The optical theorem is the statement that the operator $S$ is unitary; the algebra does not weaken or strengthen it, and in the one-mode truncation it is the exact identity above.
 
