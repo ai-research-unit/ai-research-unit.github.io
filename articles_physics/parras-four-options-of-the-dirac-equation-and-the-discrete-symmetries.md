@@ -33,7 +33,7 @@ $$
 \begin{pmatrix} E_3 + i\lambda \\ E_1 + iE_2 \\ \alpha + iB_3 \\ -B_2 + iB_1 \end{pmatrix}.
 $$
 
-The four spinors carry the same eight real fields in four different arrangements. With a Clifford basis $\{e_i\}$, $e_ie_j+e_je_i=2\eta_{ij}$, and with $\nabla$ the gradient, $A$ the potential, $m$ the mass and $ϙ$ the charge, the four options satisfy the four equations
+The four spinors carry the same eight real fields in four different arrangements. With a Clifford basis $\{e_i\}$ (distinct from the biquaternion base $e_t,\vec e_x,\vec e_y,\vec e_z$), $e_ie_j+e_je_i=2\eta_{ij}$, and with $\nabla$ the gradient, $A$ the potential, $m$ the mass and $ϙ$ the charge, the four options satisfy the four equations
 
 $$
 \begin{aligned}
@@ -94,12 +94,12 @@ The first three rows together with the identity are the elements of the Klein fo
 
 **Interpretation (the three symmetries on the characters).** The block action identifies the non-trivial characters with the discrete symmetries, the assignment being fixed by the standard transformation properties.
 
-- **Parity $P$ is ${}^{\natural}$.** It fixes the two temporal blocks and negates the two spatial ones, sending the material four-vector $ict\,e_0+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $ict\,e_0-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$: space inverted, time kept. It is $\mathbb{C}$-linear, the algebraic form of the unitarity of parity.
-- **Time reversal $T$ is $\bar{\cdot}$.** On the material sector it negates the material time $T_{\mathrm{m}}=\mathbb{R}(ie_0)$ — the $ict$ direction — and fixes the material space, and it is **anti-linear**, which is the anti-unitarity of time reversal. The corpus reaches the same object as the anti-linear part of $T$ (*The CPT Theorem in Biquaternionic Form*).
+- **Parity $P$ is ${}^{\natural}$.** It fixes the two temporal blocks and negates the two spatial ones, sending the material four-vector $ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $ict\,e_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$: space inverted, time kept. It is $\mathbb{C}$-linear, the algebraic form of the unitarity of parity.
+- **Time reversal $T$ is $\bar{\cdot}$.** On the material sector it negates the material time $T_{\mathrm{m}}=\mathbb{R}(ie_t)$ — the $ict$ direction — and fixes the material space, and it is **anti-linear**, which is the anti-unitarity of time reversal. The corpus reaches the same object as the anti-linear part of $T$ (*The CPT Theorem in Biquaternionic Form*).
 - **The full reflection $PT$ is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$**, negating both material blocks and so sending $x^\mu\mapsto-x^\mu$.
 - **Charge conjugation is $\flat=-{}^{*}$, the real structure.** It fixes the material sector and negates the informational one, is anti-linear, and is the object the corpus builds $C$ on (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*; *Charge Conjugation and the Division Ring*). That it is a character and not a group element is the algebraic statement that $C$ does not join $\{1,P,T,PT\}$ as an independent factor but is the sign that turns $PT$ into its negative.
 
-**Caution (the second dictionary).** The Clifford-algebra literature attaches the names differently: with the generators $ie_k$ of $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, the grade involution is read as $P$, the reversion as $T$ and the Clifford conjugation as $PT$ (*The CPT Theorem in Biquaternionic Form*, quoting the literature). Since the grade involution is $\bar{\cdot}$, the reversion ${}^{*}$ and the Clifford conjugation ${}^{\natural}$, that dictionary reads $P=\bar{\cdot}$, $T={}^{*}$, $PT={}^{\natural}$ — the transpose of the interpretation above. Both dictionaries are labelled and neither is proved in the corpus; the difference is the choice of which structure is called space inversion, and the interpretation above is the one whose parity fixes time and negates space. The table is the fact, the naming is the interpretation, and the article keeps the two apart.
+**Caution (the second dictionary).** The Clifford-algebra literature attaches the names differently: with the generators $i\vec e_k$ of $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, the grade involution is read as $P$, the reversion as $T$ and the Clifford conjugation as $PT$ (*The CPT Theorem in Biquaternionic Form*, quoting the literature). Since the grade involution is $\bar{\cdot}$, the reversion ${}^{*}$ and the Clifford conjugation ${}^{\natural}$, that dictionary reads $P=\bar{\cdot}$, $T={}^{*}$, $PT={}^{\natural}$ — the transpose of the interpretation above. Both dictionaries are labelled and neither is proved in the corpus; the difference is the choice of which structure is called space inversion, and the interpretation above is the one whose parity fixes time and negates space. The table is the fact, the naming is the interpretation, and the article keeps the two apart.
 
 The two dictionaries are visible even inside this article. The previous section's quotient $D=\Gamma_{1,3}/\Gamma^{+}_{1,3}$ has for its three non-identity elements space inversion, charge conjugation and time reversal, and its orbit of four options therefore reads $C$ as the product $PT$ — the Clifford convention. The interpretation above instead places the three characters on $\{P,T,PT\}$ and the **shape** of the charge-conjugation pairing on the fourth character $\flat$ (*Relations Between Subspaces*); the operation itself is defined at the module level, and the four levels of the name are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. The section records the difference rather than hiding it: the symmetries are a group of order four either way, and the question is only which of the four characters each one occupies.
 
@@ -113,7 +113,7 @@ This is the algebraic content of a familiar physical fact. In passing from the D
 
 ## The Quaternion and Matrix Forms of the Parra Spinors
 
-Parra's spinors have a compact quaternion form. With the quaternion basis $1, ik:=ie_k$ ($k=1,2,3$) and quaternion conjugation $\phantom{q}^{\natural}$, the spinor of option $\{r\}$ is
+Parra's spinors have a compact quaternion form. With the quaternion basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ and quaternion conjugation $\phantom{q}^{\natural}$, the spinor of option $\{r\}$ is
 
 $$
 \Psi_r = q_{r1} + i\,\bar q_{r2},
@@ -129,7 +129,7 @@ the $2\times2$ matrix structure being a matrix representation of the complex str
 
 **Proposition (the quaternion form is the corpus's field).** The map $q_{r1}+i\bar q_{r2}\mapsto\Psi_{\{r\}}$ sends the Parra spinor of each option into the biquaternion algebra $\mathbb B\cong\mathbb C\otimes_\mathbb R\mathbb H\cong\mathrm{Cl}^+_{1,3}$, and under the corpus's matrix representation $\Phi$ the result is a general element of $M_2(\mathbb C)$ — that is, a general biquaternion on the eight real parameters, exactly the corpus's Dirac field.
 
-*Proof.* A quaternion $q=q_0+q_1e_1+q_2e_2+q_3e_3$ has four real parameters and $i\bar q$ has four more, so $q_{r1}+i\bar q_{r2}$ ranges over the eight-dimensional real algebra; the matrix display is the action of the complex structure on the pair, and $\Phi$ realises it as an element of $M_2(\mathbb C)$. The identification of the general element with the corpus's field is the eight-component match of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*.
+*Proof.* A quaternion $q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ has four real parameters and $i\bar q$ has four more, so $q_{r1}+i\bar q_{r2}$ ranges over the eight-dimensional real algebra; the matrix display is the action of the complex structure on the pair, and $\Phi$ realises it as an element of $M_2(\mathbb C)$. The identification of the general element with the corpus's field is the eight-component match of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*.
 
 This places the Parra spinors in the same family as the Daviau spinor and the Dirac–Hestenes spinor: all three are general elements of the biquaternion algebra on eight real parameters, and the differences between the formulations are the sign conventions and the basis choices, not the size of the spinor. The quaternion form shows this directly.
 
@@ -167,7 +167,7 @@ Parra's four options are four inequivalent ways of reading the eight real Dirac 
 | $\alpha,\lambda$ | The two scalars of the vector interpretation |
 | $\vec E=(E_1,E_2,E_3)$, $\vec B=(B_1,B_2,B_3)$ | The two vectors of the vector interpretation |
 | $\vec s=-\vec s^{*}$ | The spin vector, $=-iS$ in Parra's notation |
-| $\{e_i\}$, $e_ie_j+e_je_i=2\eta_{ij}$ | The Clifford basis; $e_{21}=e_2e_1$ the spin bivector |
+| $e_0,e_1,e_2,e_3$; $e_ie_j+e_je_i=2\eta_{ij}$ | The Clifford basis, distinct from the biquaternion base; $e_{21}=e_2e_1$ the spin bivector |
 | $\nabla$, $A$, $m$, $ϙ$ | Gradient, potential, mass, charge |
 | $\Gamma_{1,3}$, $\Gamma^+_{1,3}$ | Clifford–Lipschitz group and its even part |
 | $D=\Gamma_{1,3}/\Gamma^+_{1,3}$ | The discrete quotient; order four |

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The real algebra $\mathbb{R}$ is one-dimensional over $\mathbb{R}$ and one-dimensional over itself. This article presents its **regular representation**, the algebra acting on itself on the left, and the $1 \times 1$ real matrix of that action in the basis $e_0 = 1$. The matrix is the Cayley matrix of real multiplication, and its image is the whole algebra of $1 \times 1$ real matrices, identified with the real scalars. The article is the base rung of the representation ladder of the tensor family: it sits below the $2 \times 2$ real representation of the complex algebra $\mathbb{C}$.
+The real algebra $\mathbb{R}$ is one-dimensional over $\mathbb{R}$ and one-dimensional over itself. This article presents its **regular representation**, the algebra acting on itself on the left, and the $1 \times 1$ real matrix of that action in the basis $1$. The matrix is the Cayley matrix of real multiplication, and its image is the whole algebra of $1 \times 1$ real matrices, identified with the real scalars. The article is the base rung of the representation ladder of the tensor family: it sits below the $2 \times 2$ real representation of the complex algebra $\mathbb{C}$.
 
-The conventions are those of *Real Algebra*: basis $e_0 = 1$, a general element $q = q e_0$, the sole involution the identity, and norm $N(q) = q\,q = q^2$. The word *representation* is used in both senses, as in the complex companion: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the real scalars, the determinant and the trace, and the relation to the complex regular representation; the real-linear module classification and the representation ring are the subject of *Real Element Representations* and are cited once.
+The conventions are those of *Real Algebra*: basis $1$, a general element $q = q\cdot 1$, the sole involution the identity, and norm $N(q) = q\,q = q^2$. The word *representation* is used in both senses, as in the complex companion: the concrete realization of the algebra by matrices, and the technical action of the algebra on a vector space. The article owns the left matrix, its multiplicativity, the identification with the real scalars, the determinant and the trace, and the relation to the complex regular representation; the real-linear module classification and the representation ring are the subject of *Real Element Representations* and are cited once.
 
 ## The Left Regular Representation
 
@@ -15,15 +15,15 @@ $$
 L : \mathbb{R} \longrightarrow \operatorname{End}_{\mathbb{R}}(\mathbb{R}), \qquad L_{q}(b) = q b .
 $$
 
-For each $q$, the map $b \mapsto qb$ is $\mathbb{R}$-linear because multiplication is bilinear, so $L_{q}$ is an $\mathbb{R}$-linear endomorphism of the one-dimensional real space $\mathbb{R}$. Writing the endomorphism as a matrix in the basis $e_0$, the same symbol $\mathsf{M}_1(q)$ denotes the matrix acting on the column $(b)$ of $b = b e_0$.
+For each $q$, the map $b \mapsto qb$ is $\mathbb{R}$-linear because multiplication is bilinear, so $L_{q}$ is an $\mathbb{R}$-linear endomorphism of the one-dimensional real space $\mathbb{R}$. Writing the endomorphism as a matrix in the basis $1$, the same symbol $\mathsf{M}_1(q)$ denotes the matrix acting on the column $(b)$ of $b = b e_t$.
 
-**Proposition (the regular matrix is the Cayley matrix).** In the basis $e_0$,
+**Proposition (the regular matrix is the Cayley matrix).** In the basis $1$,
 
 $$
 \mathsf{M}_1(q) = [\,q\,] .
 $$
 
-**Proof.** The single column is the image $L_{q}(e_0) = q e_0 = q$, expressed in the basis $e_0$, giving the entry $q$.
+**Proof.** The single column is the image $L_{q}(1) = q\cdot 1 = q$, expressed in the basis $1$, giving the entry $q$.
 
 The matrix has only one independent entry, the single real coordinate of $q$; it is the **Cayley matrix** of real multiplication, written interchangeably $\mathsf{M}_1(q) = [q] = M_q$. The identity matrix is $\mathsf{M}_1(1) = [1]$, and multiplication by any element is the scalar matrix $[q]$.
 
@@ -37,12 +37,12 @@ $$
 \mathsf{M}_1(q_1)\,\mathsf{M}_1(q_2) = \mathsf{M}_1(q_1 q_2).
 $$
 
-Hence $\mathsf{M}_1$ is an $\mathbb{R}$-algebra homomorphism and the space $\mathbb{R}$ is a left $\mathbb{R}$-module under it. It is **faithful**: if $\mathsf{M}_1(q) = [0]$ then $q = L_{q}(e_0) = 0$. It is in fact **bijective** onto the algebra of $1\times1$ real matrices, since every $1\times1$ matrix is $[q]$ for its unique entry $q$; the regular representation of the field is therefore an **isomorphism** onto its own matrix algebra, the strongest form the representation can take, and it is the statement that $\mathbb{R}$ already is the algebra of real scalars.
+Hence $\mathsf{M}_1$ is an $\mathbb{R}$-algebra homomorphism and the space $\mathbb{R}$ is a left $\mathbb{R}$-module under it. It is **faithful**: if $\mathsf{M}_1(q) = [0]$ then $q = L_{q}(1) = 0$. It is in fact **bijective** onto the algebra of $1\times1$ real matrices, since every $1\times1$ matrix is $[q]$ for its unique entry $q$; the regular representation of the field is therefore an **isomorphism** onto its own matrix algebra, the strongest form the representation can take, and it is the statement that $\mathbb{R}$ already is the algebra of real scalars.
 
 **Proof.** Both sides are $\mathbb{R}$-linear and are computed on the basis. Associativity gives
 
 $$
-L_{q_1}\bigl(L_{q_2}(e_0)\bigr) = q_1(q_2 e_0) = (q_1 q_2)e_0 = L_{q_1 q_2}(e_0),
+L_{q_1}\bigl(L_{q_2}(1)\bigr) = q_1(q_2 1) = (q_1 q_2)1 = L_{q_1 q_2}(1),
 $$
 
 so the two matrices agree on a basis; in the $1\times1$ picture this is the identity $[q_1][q_2] = [q_1 q_2]$.
@@ -77,7 +77,7 @@ $$
 \mathsf{M}_1(q)^{\mathsf{T}} = \mathsf{M}_1(q) = \mathsf{M}_1(\operatorname{id} q),
 $$
 
-where the transpose is taken in the basis $e_0$.
+where the transpose is taken in the basis $1$.
 
 **Proof.** A $1\times1$ matrix is its own transpose, and the sole involution is the identity.
 
@@ -194,7 +194,7 @@ whose square is the norm of the exponential, $N(\exp(a)) = \exp(2a)$.
 
 ## Summary
 
-The left regular representation of $\mathbb{R}$, defined by $L_{q}(b) = q b$, is the algebra acting on itself on the left, and in the basis $e_0$ its matrix is the Cayley matrix
+The left regular representation of $\mathbb{R}$, defined by $L_{q}(b) = q b$, is the algebra acting on itself on the left, and in the basis $1$ its matrix is the Cayley matrix
 
 $$
 \mathsf{M}_1(q) = [\,q\,] .
@@ -208,7 +208,7 @@ Because the algebra is commutative, the right regular representation coincides w
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{R}$ | the real algebra, basis $e_0 = 1$; the one-dimensional space |
+| $\mathbb{R}$ | the real algebra, basis $1$; the one-dimensional space |
 | $L_{q}(b) = qb$ | the left regular representation |
 | $R_{q}(b) = bq$ | the right regular representation, equal to $\mathsf{M}_1$ |
 | $\mathsf{M}_1(q) = [q] = M_q$ | the $1\times1$ Cayley matrix of multiplication by $q$ |

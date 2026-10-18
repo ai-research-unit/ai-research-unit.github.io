@@ -52,7 +52,7 @@ $$
 \{e_t,\; i\,\vec e_x,\; i\,\vec e_y,\; i\,\vec e_z\}.
 $$
 
-As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(i\vec e_x)(i\vec e_y) = -\vec e_z$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde Q_1 = r_te_t + i\vec v$ with $q_t, r_t$ real and $\vec q_a, \vec v$ real vectors,
+As a real vector space, $\mathbb{M}_+$ has dimension $4$ — one real direction, $e_t$, and three imaginary ones, $i\vec e_x,i\vec e_y,i\vec e_z$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(i\vec e_x)(i\vec e_y) = -\vec e_z$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde Q_1 = r_te_t + i\vec v$ with $q_t, r_t$ real and $\vec q_a, \vec v$ real vectors,
 
 $$
 \tilde{Q}\tilde Q_1 = \left(q_tr_t + (\vec q_a,\vec v)\right)e_t + i\left(q_t\vec v + r_t\vec q_a\right) - \vec q_a\times\vec v,
@@ -130,9 +130,9 @@ $$
 q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2, \qquad \text{that is} \qquad c^2(t')^2 = (x')^2 + (y')^2 + (z')^2,
 $$
 
-which is a double cone with apex at the origin. The complement of the cone has three connected components: the region $N < 0$ ($q_t^2 < (q'_x)^2 + (q'_y)^2 + (q'_z)^2$, connected) and the two components of the region $N > 0$ ($q_t > |\vec q'|$ and $q_t < -|\vec q'|$).
+which is a double cone with apex at the origin. The complement of the cone has three connected components: the region $\langle\tilde{Q}\rangle_{\natural} < 0$ ($q_t^2 < (q'_x)^2 + (q'_y)^2 + (q'_z)^2$, connected) and the two components of the region $\langle\tilde{Q}\rangle_{\natural} > 0$ ($q_t > |\vec q'|$ and $q_t < -|\vec q'|$).
 
-**Not a division algebra.** The presence of the zero divisor cone means that $\mathbb{M}_+$ is not a division algebra: there are nonzero elements of $\mathbb{M}_+$ with no inverse in $\mathbb{B}$.
+**Not a subalgebra of $\mathbb{B}$, and no inverse on the cone.** $\mathbb{M}_+$ is a four-real-dimensional subspace, not a subalgebra of $\mathbb{B}$. The zero divisor cone passes through it, so there are nonzero elements of $\mathbb{M}_+$ with no inverse in $\mathbb{B}$.
 
 **Multiplication by $i$.** Since $i$ is central, $i\mathbb{M}_+$ is again a four-dimensional real subspace. It is **not** $\mathbb{M}_+$ itself: multiplying a Hermitian element by $i$ produces an anti-Hermitian one. The sector is therefore not closed under multiplication by the central scalar, which is the visible sign that the Hermitian condition is $\mathbb{R}$-linear and not $\mathbb{C}$-linear. Under quaternion conjugation the sector is preserved: conjugation negates the vector part and leaves the scalar part alone, so $q_t + i\vec q' \mapsto q_t - i\vec q'$ stays in $\mathbb{M}_+$.
 
@@ -520,7 +520,7 @@ because $\tfrac{1}{4}\left(e_t + i\vec u\right)\left(e_t - i\vec u\right) = \tfr
 **Every pure state is a zero divisor.** The biquaternion norm of the idempotent vanishes identically on the sphere,
 
 $$
-N\!\left(\tilde\Pi_{1,2}(\vec u)\right) = \tfrac{1}{4}\left(e_t - (i\vec u)^2\right) = \tfrac{1}{4}\left(e_t - e_t\right) = 0,
+\langle\tilde\Pi_{1,2}(\vec u)\rangle_{\natural} = \tfrac{1}{4}\left(e_t - (i\vec u)^2\right) = \tfrac{1}{4}\left(e_t - e_t\right) = 0,
 $$
 
 as the product $\tilde\Pi_1\tilde\Pi_2 = 0$ already witnesses with both factors nonzero. So the pure states sit on the zero-divisor cone, while a general mixed state does not: the norm is $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - r^2)$ for $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$.

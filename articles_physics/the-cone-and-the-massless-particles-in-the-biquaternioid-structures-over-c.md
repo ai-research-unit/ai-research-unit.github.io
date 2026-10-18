@@ -1044,7 +1044,7 @@ Several further physical readings have sense under the twelve structures, and th
 
 **Mass has four readings, and two of them detect the cone.** The norm vanishes on it and the rank of the
 Hermitian square drops there, while the charge and the scale are defined only off it — the compact label
-because the unitary slice is the complement of the cone, the polar scale because its representation requires
+because the unitary slice lies in the complement of the cone, the polar scale because its representation requires
 a nonzero norm; only the massless elements are detected by the norm and the rank together (*The Four
 Readings of a Biquaternion: Norm, Rank, Charge and Scale*). The **Krein form** is the indefinite partner of the Born pairing and carries the
 **Krein cone**, the set of elements of non-negative Krein norm with respect to which the framework's

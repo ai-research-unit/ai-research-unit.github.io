@@ -188,14 +188,14 @@ $$
 $$
 
 and because of the factorisation every solution of it is $\nabla^{+}_{\omega}$ applied to a Helmholtz
-potential. Taking the plane potentials $\varphi_{j} = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))e_{j}$ with
-$\|\vec k\| = \omega$ and $e_{0} = 1$, the programme's four modes are, in the corpus's
+potential. Taking the plane potentials $\varphi_{j} = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\vec e_{j}$ with
+$\|\vec k\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corpus's
 notation and recomputed exactly,
 
 $$
 \tilde{\Phi}_{\vec k0} = \omega\,\varphi\left(1 + i\,\vec u_k\right),
 \qquad
-\tilde{\Phi}_{\vec kj} = \varphi\left(\omega\,e_{j} - i\,k_{j} + i\,[\vec k,e_{j}]\right),
+\tilde{\Phi}_{\vec kj} = \varphi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k,\vec e_{j}]\right),
 \qquad j = 1,2,3 ,
 $$
 
@@ -409,7 +409,7 @@ clearest statement of what the programme assumes.
 | $\alpha$ | Scalar part of the tension, named the density of the ether |
 | $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the programme; not the corpus four-current |
 | $\nabla^{\pm} = \partial_\tau \pm i\nabla$ | Mutual complex gradients of the postulate |
-| $\nabla = e_{1}\partial/\partial x+e_{2}\partial/\partial y+e_{3}\partial/\partial z$ | Pure-vector gradient, left quaternion multiplication |
+| $\nabla = \vec e_x\,\partial/\partial x+\vec e_y\,\partial/\partial y+\vec e_z\,\partial/\partial z$ | Pure-vector gradient, left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$ |
 | $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ | The paper's $\omega$-gradients; $\nabla^{\pm}_{\omega} = iD_{\mp}$ at fixed frequency |
 | $\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |

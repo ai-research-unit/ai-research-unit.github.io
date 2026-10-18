@@ -29,94 +29,11 @@ Exponentials for states and roots : exp(θ Ξ~ )
 
 
 
-Leave unchanged every bound use:
+U and rotor 
 
-X
-~
-,
-Y
-~
-,
-Z
-~
-X
-~
- , 
-Y
-~
- , 
-Z
-~
-  as Pauli gates in quantum-gate, teleportation or contextuality articles;
-Y
-~
-,
-Z
-~
-Y
-~
- , 
-Z
-~
-  as Green's-function arguments or spacetime points;
-a
-~
-,
-b
-~
-a
-~
- , 
-b
-~
-  as the unit-quaternion pair of SO(4), or as coefficients of the similarities 
-S
-(
-q
-~
-)
-=
-a
-~
-q
-~
-b
-~
-+
-c
-~
-S( 
-q
-~
-​
- )= 
-a
-~
-  
-q
-~
-​
-  
-b
-~
- + 
-c
-~
- ;
-B
-~
-B
-~
-  as a magnetic field, bivector or another named object;
+idempotents
 
 
-
-
-
-check on tilde 
-
-
-USES OF TILDE !
 
 
 

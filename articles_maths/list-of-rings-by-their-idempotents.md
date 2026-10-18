@@ -26,7 +26,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{Z}/n\mathbb{Z}$ | one for each factorisation into coprime parts | $2^{\omega(n)}$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | $0, 1, \pi_1, \pi_2$ | $4$ | *Split-Complex Algebra* |
 | $\mathbb{R}[x]/(x^2-1)$ | $0, 1$, the two class idempotents | $4$ | *Examples of Rings and Fields* |
-| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $0, \pi_1, \pi_2, e_0$ | $4$ | *Split-Biquaternion Algebra* |
+| $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $0, \pi_1, \pi_2, e_t$ | $4$ | *Split-Biquaternion Algebra* |
 | $\mathbb{Q}[C_3]$ | $0, 1$ and the two minimal ones | $4$ | *Examples of Rings and Fields* |
 | $M_2(\mathbb{R})$ | the projections | infinitely many | *Matrix Algebras* |
 | $\mathbb{B}$, the biquaternions | the complex multiples of the idempotents | infinitely many | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |
@@ -113,7 +113,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 |---|---|
 | $e$ | An idempotent, $e^2 = e$ |
 | $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ in $\mathbb{D}$, $\tilde\Pi_{1,2}$ in $\mathbb{H}_{\mathbb{D}}$ | The idempotents of the split-complex numbers and the split-biquaternions |
-| $e_0 = 1$ | The identity, the trivial idempotent |
+| $e_t = 1$ in $\mathbb{H}_{\mathbb{D}}$ | The identity of the split-biquaternions, the trivial idempotent |
 | $\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$ | Orthogonal matrix-unit idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = 1$ |
 | $x, y$ | The nilpotent off-diagonal elements of the Peirce corners |
 | $e_i A e_j$ | A Peirce corner of the algebra $A$ |

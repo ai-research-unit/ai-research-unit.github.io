@@ -14,7 +14,7 @@ The evidence base is the framework's established articles, in the order of the r
 | **Obstacle with a known route** | The object does not exist, but the computation that would produce it is identifiable |
 | **Obstacle with no route yet** | No mechanism has been proposed; naming an object is not a route to it |
 
-**Conventions.** The notation of the read-list articles is inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $e_k^2 = -e_t$, and scalar imaginary $i$ commuting with every $e_k$. The material and informational sectors are the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_0\}$ is the centre. The material basis is $\varepsilon_0 = ie_0$, $\varepsilon_k = e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$. Real coordinates are $x^\mu = (ct,x,y,z)$; a four-vector of $\mathbb{M}_-$ is $\tilde{Q} = X^\mu\varepsilon_\mu$; the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The frame field is $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$. Standard cosmology's $a(t)$, $k$, $H$, $\rho$, $p$, $w$, and $\Lambda$ are **not** framework objects; they are written where the standard constructions are named as targets, and the framework supplies none of them. Nothing inherited is renamed or rederived.
+**Conventions.** The notation of the read-list articles is inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with every $\vec e_k$. The material and informational sectors are the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$. Real coordinates are $x^\mu = (ct,x,y,z)$; a four-vector of $\mathbb{M}_-$ is $\tilde{Q} = X^\mu\varepsilon_\mu$; the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The frame field is $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$. Standard cosmology's $a(t)$, $k$, $H$, $\rho$, $p$, $w$, and $\Lambda$ are **not** framework objects; they are written where the standard constructions are named as targets, and the framework supplies none of them. Nothing inherited is renamed or rederived.
 
 ## The Constructions Cosmology Would Require
 
@@ -62,7 +62,7 @@ $$
 \tilde{E}_0 = i\,N(t)\,e_t, \qquad \tilde{E}_i = a(t)\,\sigma_i(x),
 $$
 
-where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_0 = ie_0$, $\tilde{E}_i = a\,e_i$, the Gram matrix is exactly
+where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_0 = ie_t$, $\tilde{E}_i = a\,\vec e_i$, the Gram matrix is exactly
 
 $$
 \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural} = \mathrm{diag}\left(-1, a^2, a^2, a^2\right),
@@ -107,13 +107,13 @@ The decomposition $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ is a pointwise d
 
 *The Partition Function in Biquaternionic Form* reaches a definite and honest set of results, and its boundary is exactly where cosmology needs it to continue.
 
-For a Hermitian Hamiltonian $\tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the trace formula gives
+For a Hermitian Hamiltonian $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the trace formula gives
 
 $$
-Z = \mathrm{Tr}\left(\exp(-\beta\tilde{H})\right) = 2\,\mathrm{Sc}\left(\exp(-\beta\tilde{H})\right) = 2\exp(-\beta h_0)\cosh\left(\beta|\vec h|\right),
+Z = \mathrm{Tr}\left(\exp(-\beta\tilde{H})\right) = 2\,\mathrm{Sc}\left(\exp(-\beta\tilde{H})\right) = 2\exp(-\beta h_t)\cosh\left(\beta|\vec h|\right),
 $$
 
-the ordinary partition function of a **two-level system** with energies $h_0 \pm |\vec h|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.
+the ordinary partition function of a **two-level system** with energies $h_t \pm |\vec h|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.
 
 This is the **rank-two limitation** in its first sense. The framework's thermal invariants are invariants of a finite, two-dimensional operator algebra: a state, an observable, a partition function, an entropy, and a heat capacity, all of a single qubit. They are not the thermodynamic quantities cosmology uses.
 
@@ -215,7 +215,7 @@ Two disciplines apply to every item. First, each candidate result must be recomp
 
 This agenda asked what it would take for the biquaternion framework to carry a cosmology, and it has recorded what the framework reaches and what it does not.
 
-**What is established.** The frame route carries the FLRW metric exactly: with $\tilde{E}_0 = ie_0$ and $\tilde{E}_i = a\,e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{H}_{\mathbb{B}}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of *The Partition Function in Biquaternionic Form*: $Z = 2\exp(-\beta h_0)\cosh(\beta|\vec h|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.
+**What is established.** The frame route carries the FLRW metric exactly: with $\tilde{E}_0 = ie_t$ and $\tilde{E}_i = a\,\vec e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{H}_{\mathbb{B}}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of *The Partition Function in Biquaternionic Form*: $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.
 
 **What is only carried, and is not a derived cosmology.** The scale factor, the spatial-curvature parameter, the Friedmann equations, the perfect-fluid source, and the cosmological constant are all **standard cosmology used as targets**. No scale factor, no Hubble rate, and no equation of state is derived here or in the framework. The framework's own locality device is not the route: a time-dependent local $c$ gives a flat metric and cannot produce an expansion, and a spatially varying local $c$ gives curvature but only on flat spatial slices.
 
@@ -239,11 +239,11 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | Symbol | Meaning | Introduced or inherited |
 |---|---|---|
 | $\mathbb{B}$ | $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the biquaternion algebra | inherited |
-| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $e_k^2 = -e_t$ | inherited |
-| $i$ | scalar imaginary, commuting with every $e_k$ | inherited |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $\vec e_k^2 = -e_t$ | inherited |
+| $i$ | scalar imaginary, commuting with every $\vec e_k$ | inherited |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | informational and material sectors, $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | inherited |
-| $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_0\}$; real-quaternion subspace | inherited |
-| $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_0$, $\varepsilon_k = e_k$ | inherited |
+| $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; real-quaternion subspace | inherited |
+| $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$ | inherited |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \eta_{\mu\nu} = \mathrm{diag}(-1,1,1,1)$ | inherited |
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace formula, a **fibre** trace over $\mathbb{C}^2$ | inherited |
@@ -251,7 +251,7 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $a(t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \left(da/dt\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
 | $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\eta^{\mu\nu}T_{\mu\nu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
-| $Z = 2\exp(-\beta h_0)\cosh(\beta|\vec h|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
+| $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
 | $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |
 
 ## Further Reading

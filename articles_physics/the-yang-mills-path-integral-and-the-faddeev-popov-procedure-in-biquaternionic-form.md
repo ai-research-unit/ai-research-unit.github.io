@@ -12,23 +12,23 @@ Three features distinguish the non-abelian procedure from the abelian one, and t
 
 The algebra contributes at three points, and they are the reason the construction is not merely a transcription. The gauge algebra is realized by the quaternion commutator inside the material sector, so the structure constants $f^{abc}$ are read off from $\varepsilon_{abc}$ and the Jacobi identity that closes the Slavnov–Taylor and BRST algebras is a consequence of the associativity of $\mathbb{B}$. The Faddeev–Popov operator is a material-sector differential operator twisted by the informational adjoint action — the same adjoint action that *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* identifies as the spin-one representation — so the operator that the ghosts invert is, on its internal indices, a spin-one object. And the ghosts themselves lie outside $\mathbb{B}$: the algebra is ungraded, every element of it is even, and no product of two elements of $\mathbb{B}$ is odd, so the determinant lives in the Grassmann envelope $\mathbb{B}\otimes\Lambda$, exactly as the fermionic Gaussian integral requires.
 
-We use the conventions of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $e_k^2=-e_t$, $e_je_k=-\delta_{jk}e_t+\varepsilon_{jkl}e_l$, and central scalar imaginary $i$. The material and informational sectors are
+We use the conventions of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j\vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, and central scalar imaginary $i$. The material and informational sectors are
 $$
-\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,\vec e_x,\vec e_y,\vec e_z\},
+\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 \qquad
-\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,ie_1,ie_2,ie_3\},
+\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 \qquad
 \mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
 $$
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_0\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The non-abelian sector is built on the compact factor
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The non-abelian sector is built on the compact factor
 $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_- ,
 \qquad
-[e_a,e_b]=2\varepsilon_{abc}e_c ,
+[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c ,
 \qquad
-T_a=\tfrac12 e_a ,\ \ [T_a,T_b]=\varepsilon_{abc}T_c ,\ \ \mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab},
+T_a=\tfrac12 \vec e_a ,\ \ [T_a,T_b]=\varepsilon_{abc}T_c ,\ \ \mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab},
 $$
-with the connection $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, the coupling $\kappa=ϙ/\hbar$, the covariant derivative $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F'_{\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial Q_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12 e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$, and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f^{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Natural units $\hbar=c=1$ are used for the integral where no dimensionful quantity is displayed.
+with the connection $\mathcal{A}_\mu=\mathcal{A}_\mu^a \vec e_a\in\mathrm{SU}(2)$, the coupling $\kappa=ϙ/\hbar$, the covariant derivative $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F'_{\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial Q_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $\vec e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12 \vec e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$, and in the Hermitian-generator realization $T^a=i\vec e_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f^{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Natural units $\hbar=c=1$ are used for the integral where no dimensionful quantity is displayed.
 
 - Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian Faddeev–Popov construction, the gauge-fixing parameter and the propagator.
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the non-abelian curvature, the field equation and covariant conservation.
@@ -107,11 +107,11 @@ M^{ab}=-\partial/\partial Q_\mu D^{\mu\,ab}
 $$
 with $D_\mu{}^{ab}=\partial/\partial Q_\mu\,\delta^{ab}-i\kappa f^{abc}\mathcal{A}_\mu^c$ the covariant derivative in the adjoint representation and $f^{abc}$ the structure constants. The identity $D_\mu{}^{ab}=\partial/\partial Q_\mu\,\delta^{ab}-i\kappa f^{abc}\mathcal{A}_\mu^c$ is fixed by the requirement that it reproduce $(D_\mu \tilde{Q})^a=\partial/\partial Q_\mu Q^a+i\kappa[\mathcal{A}_\mu,\tilde{Q}]^a$ on an algebra-valued field; it was verified on a generic superposition of the three generators, and the structure constants it uses are read off from the quaternion commutator,
 $$
-[e_a,e_b]=2\varepsilon_{abc}e_c
+[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c
 \qquad\Longrightarrow\qquad
 f^{abc}=2\varepsilon^{abc},
 $$
-which was verified on the defining representation, $[T_a,T_b]=\varepsilon_{abc}T_c$ with $T_a=\tfrac12 e_a$.
+which was verified on the defining representation, $[T_a,T_b]=\varepsilon_{abc}T_c$ with $T_a=\tfrac12 \vec e_a$.
 
 The determinant is field-dependent. In the abelian limit the connection is central, the commutator vanishes, $f^{abc}=0$, and $M=-\Box$ is the field-independent operator of the companion article; in the non-abelian theory the term $i\kappa f^{abc}\partial/\partial Q_\mu\,\mathcal{A}^{c\mu}$ is present, and $\Delta[\mathcal{A}]$ is a functional of the connection. The overall sign of $M$ is fixed by the direction of the infinitesimal transformation, $M^{ab}=\delta G^a/\delta\Gamma^b$, and a change of that sign multiplies $\Delta$ by a constant and leaves $Z$ unchanged; the companion article's $\det(\partial/\partial Q_\mu D^\mu)$ is this same determinant with the opposite overall sign, not a different operator.
 
@@ -145,7 +145,7 @@ The ghost $c^a$ and the antighost $\bar c_a$ are Lorentz scalars of opposite gho
 
 ### Where the Ghosts Live
 
-The ghosts are anticommuting, and $\mathbb{B}$ contains no such element: it is not a division algebra — $\mathbb{B}\cong M_2(\mathbb{C})$ contains nonzero nilpotents, among them $(\vec e_x+ie_2)/2$, whose square vanishes — but nilpotency is not oddness, and the algebra is ungraded, so every element of $\mathbb{B}$ is even and no element anticommutes with its fellows. The ghosts therefore cannot be elements of $\mathbb{B}$. They are elements of the Grassmann envelope
+The ghosts are anticommuting, and $\mathbb{B}$ contains no such element: it is not a division algebra — $\mathbb{B}\cong M_2(\mathbb{C})$ contains nonzero nilpotents, among them $(\vec e_x+i\vec e_y)/2$, whose square vanishes — but nilpotency is not oddness, and the algebra is ungraded, so every element of $\mathbb{B}$ is even and no element anticommutes with its fellows. The ghosts therefore cannot be elements of $\mathbb{B}$. They are elements of the Grassmann envelope
 $$
 \mathbb{B}\otimes\Lambda,
 \qquad
@@ -277,16 +277,16 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $e_k^2=-e_t$, $e_je_k=-\delta_{jk}e_t+\varepsilon_{jkl}e_l$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_j\vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_0\}$ | Centre of the algebra; abelian factor |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; abelian factor |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ | Compact gauge algebra |
-| $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
-| $f^{abc}=2\varepsilon^{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $e_a$ ($f^{abc}=\varepsilon^{abc}$ in the normalized basis $T_a=\tfrac12e_a$) |
-| $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$, $\kappa=ϙ/\hbar$ | Connection and coupling |
+| $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
+| $f^{abc}=2\varepsilon^{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $\vec e_a$ ($f^{abc}=\varepsilon^{abc}$ in the normalized basis $T_a=\tfrac12\vec e_a$) |
+| $\mathcal{A}_\mu=\mathcal{A}_\mu^a \vec e_a\in\mathrm{SU}(2)$, $\kappa=ϙ/\hbar$ | Connection and coupling |
 | $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, $D_\lambda \tilde{Q}=\partial/\partial Q_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Covariant derivative; adjoint action |
 | $\tilde{\mathcal{F}}=\tilde\nabla\mathcal{A}+\tfrac{i\kappa}{2}[\mathcal{A},\mathcal{A}]$ | Non-abelian curvature |
 | $S_{\mathrm{YM}}=-\int\mathrm{Tr}\langle\tilde{\mathcal{F}}\rangle_{\natural}$ | Yang–Mills action (matrix trace) |

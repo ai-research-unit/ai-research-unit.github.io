@@ -241,7 +241,7 @@ $$
 \tilde{Q} = Q_te_t \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ 0,\ 0,\ 0) = (q_t + iq'_0,\ 0,\ 0,\ 0) = (ct' + ict,\ 0,\ 0,\ 0),
 $$
 
-with $Q_t = q_t + iq'_0$, $q_t = ct'$ and $q'_0 = ct$, and the biquaternion norm $N = Q_t^2 = c^2(t')^2 - c^2t^2 + 2i\,c^2t't$. It is the fixed space of quaternion conjugation, so quaternion conjugation acts on it as the identity — the axis of $\mathbb{B}$.
+with $Q_t = q_t + iq'_0$, $q_t = ct'$ and $q'_0 = ct$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = Q_t^2 = c^2(t')^2 - c^2t^2 + 2i\,c^2t't$. It is the fixed space of quaternion conjugation, so quaternion conjugation acts on it as the identity — the axis of $\mathbb{B}$.
 
 ### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
@@ -251,7 +251,7 @@ $$
 \tilde{Q} = Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (0,\ Q_x,\ Q_y,\ Q_z) = (0,\ q_x + iq'_1,\ q_y + iq'_2,\ q_z + iq'_3) = (0,\ x + ix',\ y + iy',\ z + iz'),
 $$
 
-where $Q_k = q_k + iq'_k$ with $q_k = x_k$ and $q'_k = x'_k$, and the biquaternion norm is $N = (x+ix')^2 + (y+iy')^2 + (z+iz')^2$. It is the anti-fixed space of quaternion conjugation and the spatial counterpart of the centre: the centre has the two times in one complex number, the vector subspace the two spaces in three.
+where $Q_k = q_k + iq'_k$ with $q_k = x_k$ and $q'_k = x'_k$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = (x+ix')^2 + (y+iy')^2 + (z+iz')^2$. It is the anti-fixed space of quaternion conjugation and the spatial counterpart of the centre: the centre has the two times in one complex number, the vector subspace the two spaces in three.
 
 ### The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
 
@@ -261,7 +261,7 @@ $$
 \tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (q_t,\ q_x,\ q_y,\ q_z) = (ct',\ x,\ y,\ z),
 $$
 
-with $Q_\mu = q_\mu$ real, $q_t = ct'$ and $q_k = x_k$, and the biquaternion norm $N = c^2(t')^2 +x^2+y^2+z^2$. The biquaternion norm is a sum of four squares with no minus sign, so it is positive definite and vanishes only at the zero element; the unit elements of this subspace are the rotation rotors.
+with $Q_\mu = q_\mu$ real, $q_t = ct'$ and $q_k = x_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = c^2(t')^2 +x^2+y^2+z^2$. The biquaternion norm is a sum of four squares with no minus sign, so it is positive definite and vanishes only at the zero element; the unit elements of this subspace are the rotation rotors.
 
 ### The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
 
@@ -271,7 +271,7 @@ $$
 \tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (iq'_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ict,\ ix',\ iy',\ iz'),
 $$
 
-with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $N = -\big( c^2t^2 +x'^2+y'^2+z'^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.
+with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = -\big( c^2t^2 +x'^2+y'^2+z'^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.
 
 ### The Material Subspace $\mathbb{M}_-$
 
@@ -281,7 +281,7 @@ $$
 \tilde{R} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (iq'_0,\ q_x,\ q_y,\ q_z) = (ict,\ x,\ y,\ z),
 $$
 
-with $Q_t = iq'_0$, $Q_k = q_k$, $q'_0 = ct$ and $q_k = x_k$, and the biquaternion norm $N = -c^2t^2 +x^2+y^2+z^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.
+with $Q_t = iq'_0$, $Q_k = q_k$, $q'_0 = ct$ and $q_k = x_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.
 
 ### The Informational Subspace $\mathbb{M}_+$
 
@@ -291,7 +291,7 @@ $$
 \tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (q_t,\ iq'_1,\ iq'_2,\ iq'_3) = (ct',\ ix',\ iy',\ iz'),
 $$
 
-with $Q_t = q_t$, $Q_k = iq'_k$, $q_t = ct'$ and $q'_k = x'_k$, and the biquaternion norm $N = c^2(t')^2 -(x'^2+y'^2+z'^2)$, the transpose of the material condition, of signature $(1,3)$. The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_- = \mathbb{M}_+$, since $i\,(ict, x, y, z) = (-ct, ix, iy, iz)$ has the informational shape.
+with $Q_t = q_t$, $Q_k = iq'_k$, $q_t = ct'$ and $q'_k = x'_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = c^2(t')^2 -(x'^2+y'^2+z'^2)$, the transpose of the material condition, of signature $(1,3)$. The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_- = \mathbb{M}_+$, since $i\,(ict, x, y, z) = (-ct, ix, iy, iz)$ has the informational shape.
 
 ## The Biquaternion Norm
 
@@ -307,7 +307,7 @@ In four-vector form the biquaternion norm has **all four signs positive**, and t
 
 **Proof.** Expand $\tilde{Q}\tilde{Q}^{\natural} = \big(\sum_\mu Q_\mu e_\mu\big)\big(Q_te_t - \sum_k Q_k e_k\big)$. The cross terms between $e_t$ and the vector units cancel between the two orders. The remaining terms are $Q_t^2e_t$ together with $\sum_k Q_k^2 e_k^2 = -\sum_k Q_k^2e_t$ and the mixed terms $-Q_jQ_ke_je_k$ over ordered pairs with $j \neq k$. The pairs $(j,k)$ and $(k,j)$ carry the same coefficient $Q_jQ_k$ and their basis products are negatives, so the pair contributes a multiple of $e_je_k + e_ke_j = 0$ and cancels. Collecting the surviving scalar terms gives $Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$.
 
-Two consequences matter. First, the biquaternion norm is a **general plain bilinear** form of rank four, multiplicative, $\langle\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}$, and on the coefficient space itself it is not indefinite: the minus signs of a spacetime signature are not in it. Second, it can vanish on a nonzero element, and it does so exactly on the nonzero solutions of $\sum_\mu Q_\mu^2 = 0$, which are the zero divisors of the algebra. The biquaternion norm is therefore not a norm in the analytic sense, and the set of its zeros is the algebra's null cone.
+Two consequences matter. First, the biquaternion norm is a **general plain bilinear** form of rank four, multiplicative, $\langle\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}$, and its Gram matrix on the coefficient space is the identity, so no minus sign of a spacetime signature is in it. Second, it is nevertheless not a definite form: it can vanish on a nonzero element, and it does so exactly on the nonzero solutions of $\sum_\mu Q_\mu^2 = 0$, which are the zero divisors of the algebra. The biquaternion norm is therefore not a norm in the analytic sense, and the set of its zeros is the algebra's null cone.
 
 ### The Two Real Restrictions
 
@@ -340,10 +340,10 @@ The invertibility criterion, that $\tilde{Q}$ is a unit exactly when $\langle\ti
 **Proposition (the inverse in coordinates).** For an invertible biquaternion $\tilde{Q}$,
 
 $$
-\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}}, \qquad \big(\tilde{Q}^{-1}\big)^\mu = \Big( \frac{Q^t}{N}, \, -\frac{Q^x}{N}, \, -\frac{Q^y}{N}, \, -\frac{Q^z}{N} \Big), \qquad N = \langle\tilde{Q}\rangle_{\natural}.
+\tilde{Q}^{-1} = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}}, \qquad \big(\tilde{Q}^{-1}\big)^\mu = \Big( \frac{Q^t}{\langle\tilde{Q}\rangle_{\natural}}, \, -\frac{Q^x}{\langle\tilde{Q}\rangle_{\natural}}, \, -\frac{Q^y}{\langle\tilde{Q}\rangle_{\natural}}, \, -\frac{Q^z}{\langle\tilde{Q}\rangle_{\natural}} \Big).
 $$
 
-**Proof.** With $N \neq 0$, the element $\tilde{Q}^{\natural}/N$ is a two-sided inverse because $\tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = N$ is central. Its coordinate form is the vector $\tilde{Q}^{\natural}$, whose components are $(Q^t, -Q^x, -Q^y, -Q^z)$, divided by the complex scalar $\langle\cdot\rangle_{\natural}$.
+**Proof.** With $\langle\tilde{Q}\rangle_{\natural} \neq 0$, the element $\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ is a two-sided inverse because $\tilde{Q}\tilde{Q}^{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \langle\tilde{Q}\rangle_{\natural}$ is central. Its coordinate form is the vector $\tilde{Q}^{\natural}$, whose components are $(Q^t, -Q^x, -Q^y, -Q^z)$, divided by the complex scalar $\langle\cdot\rangle_{\natural}$.
 
 **Example.** For the element $\tilde{Q} = (2+i)e_t + (1-i)\vec e_x + 3\vec e_y + ie_3$ of the preceding example,
 
@@ -351,7 +351,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = (2+i)^2 + (1-i)^2 + 3^2 + i^2 = (3+4i) + (-2i) + 9 - 1 = 11 + 2i \neq 0,
 $$
 
-so $\tilde{Q}$ is a unit, with four-vector inverse $\tfrac{1}{11+2i}(2+i, -1+i, -3, -i)$. Under the conjugations the biquaternion norm becomes $\langle\tilde{Q}^{\natural}\rangle_{\natural} = 11+2i$, $\langle\tilde{Q}^{*}\rangle_{\natural} = 11-2i$ and $\langle\tilde{Q}^{*}\rangle_{\natural} = 11-2i$, and multiplication by $i$ reverses its sign, $\langle i\tilde{Q}\rangle_{\natural} = -11-2i$.
+so $\tilde{Q}$ is a unit, with four-vector inverse $\tfrac{1}{11+2i}(2+i, -1+i, -3, -i)$. Under the conjugations the biquaternion norm becomes $\langle\tilde{Q}^{\natural}\rangle_{\natural} = 11+2i$, $\langle\tilde{Q}^{*}\rangle_{\natural} = 11-2i$ and $\langle\bar{\tilde{Q}}\rangle_{\natural} = 11-2i$, and multiplication by $i$ reverses its sign, $\langle i\tilde{Q}\rangle_{\natural} = -11-2i$.
 
 ## The Four-Vectors of Relativistic Physics
 

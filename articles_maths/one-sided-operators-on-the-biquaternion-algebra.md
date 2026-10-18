@@ -8,7 +8,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),
 $$
 
-whose Gram matrix in the basis $e_{0},e_{1},e_{2},e_{3}$ is $\mathrm{diag}(1,-1,-1,-1)$. The adjoint of a $\mathbb{C}$-linear map of $\mathbb{B}$ for this form is its **associate** $F^{\approx}$, the involution of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
+whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is $\mathrm{diag}(1,-1,-1,-1)$. The adjoint of a $\mathbb{C}$-linear map of $\mathbb{B}$ for this form is its **associate** $F^{\approx}$, the involution of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
 
 For $\tilde Q_5,\tilde Q_3\in\mathbb{B}$ define the **left** and the **right multiplication**
 
@@ -26,7 +26,7 @@ $$
 
 The transpose of the left regular representation is the right regular representation, and the transpose of the right one is the left one. The Hermitian dagger keeps the side, $(L_{\tilde Q_5})^{*}=L_{\tilde Q_5^{*}}$, and the quaternionic adjoint keeps the side, $(L_{\tilde Q_5})^{N}=L_{\tilde Q_5^{\natural}}$, so the swap belongs to the plain form alone. It is the reason the operator pair of this form is not a transliteration of the other three.
 
-The algebra, the four conjugations and the remarkable subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*, *The Group of Involutions* and *Introduction to the Remarkable Subspaces*; the form, its Gram matrix and its four pairings are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; association, with the identity $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ and the basis rule $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the general transpose of a bilinear form is *Bilinear Forms*; the general one-sided operator of an algebra on itself is *Algebras of Endomorphisms* and *The Left and Right Regular Representations*.
+The algebra, the four conjugations and the remarkable subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*, *The Group of Involutions* and *Introduction to the Remarkable Subspaces*; the form, its Gram matrix and its four pairings are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; association, with the identity $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ and the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the general transpose of a bilinear form is *Bilinear Forms*; the general one-sided operator of an algebra on itself is *Algebras of Endomorphisms* and *The Left and Right Regular Representations*.
 
 ## The One-Sided Operators
 
@@ -46,7 +46,7 @@ $$
 
 and $L_{\tilde Q_5}=0$ or $R_{\tilde Q_3}=0$ forces $\tilde Q_5=0$ or $\tilde Q_3=0$.
 
-*Proof.* The two displays are the distributivity of the algebra, and injectivity follows by evaluating on $e_{0}$: $L_{\tilde Q_5}(e_{0})=\tilde Q_5$ and $R_{\tilde Q_3}(e_{0})=\tilde Q_3$.
+*Proof.* The two displays are the distributivity of the algebra, and injectivity follows by evaluating on $e_t$: $L_{\tilde Q_5}(e_t)=\tilde Q_5$ and $R_{\tilde Q_3}(e_t)=\tilde Q_3$.
 
 **Remark (the parameter enters once).** This is the property that the twisted two-sided operator of the quaternionic group loses. There the operator carries the parameter twice, $\Theta_{\lambda\tilde Q_5}=\lambda^{2}\Theta_{\tilde Q_5}$, and the assignment is quadratic, so no sector criterion can be read off the parameter linearly. Here the assignment is linear in the parameter and $\mathbb{C}$-linear in the argument at the same time, and every criterion below is an identity between parameters rather than a condition on a quadratic form.
 
@@ -69,11 +69,11 @@ and the diagonal product $L_{\tilde Q_5}R_{\tilde Q_5^{-1}}$ for a unit $\tilde 
 
 *Proof.* The first identity is $\tilde Q_5(\tilde Q_3\tilde Q)=(\tilde Q_5\tilde Q_3)\tilde Q$, the second is $(\tilde Q\tilde Q_5)\tilde Q_3=\tilde Q(\tilde Q_5\tilde Q_3)$ with the parameters read in the reverse order, the third is the associativity of the product, and the fourth composes the third with the first two. The last statement is the definition of the inner automorphism.
 
-**Corollary (the regular representations).** The left multiplications are the **left regular representation** of $\mathbb{B}$, the right multiplications are the **right regular representation** of the opposite algebra, and the two families commute inside $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$. Their products $L_{\tilde Q_5}R_{\tilde Q_3}$ span $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension $16$, because the sixteen operators $e_n[\,]e_m$ are independent: the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ is the full algebra of endomorphisms (*The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*).
+**Corollary (the regular representations).** The left multiplications are the **left regular representation** of $\mathbb{B}$, the right multiplications are the **right regular representation** of the opposite algebra, and the two families commute inside $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$. Their products $L_{\tilde Q_5}R_{\tilde Q_3}$ span $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension $16$, because the sixteen operators $e_\mu[\,]e_\nu$, $\mu,\nu\in\{t,x,y,z\}$, are independent: the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ is the full algebra of endomorphisms (*The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*).
 
 **Corollary (invertibility).** The left multiplication $L_{\tilde Q_5}$ is invertible if and only if $\tilde Q_5$ is a unit, with inverse $L_{\tilde Q_5^{-1}}$; the same holds on the right, with inverse $R_{\tilde Q_3^{-1}}$.
 
-*Proof.* If $\tilde Q_5$ is a unit then $L_{\tilde Q_5}L_{\tilde Q_5^{-1}}=L_{e_{0}}=\mathrm{id}$ by the composition law. Conversely, if $L_{\tilde Q_5}$ is invertible let $\tilde Q$ be the preimage of $e_{0}$; then $\tilde Q_5\tilde Q=e_{0}$, and applying the inverse to $\tilde Q_5$ shows that $\tilde Q$ is also a left inverse, so $\tilde Q_5$ is a unit.
+*Proof.* If $\tilde Q_5$ is a unit then $L_{\tilde Q_5}L_{\tilde Q_5^{-1}}=L_{e_t}=\mathrm{id}$ by the composition law. Conversely, if $L_{\tilde Q_5}$ is invertible let $\tilde Q$ be the preimage of $e_t$; then $\tilde Q_5\tilde Q=e_t$, and applying the inverse to $\tilde Q_5$ shows that $\tilde Q$ is also a left inverse, so $\tilde Q_5$ is a unit.
 
 ## Association on the One-Sided Operators
 
@@ -124,9 +124,9 @@ $$
 
 and the same two criteria hold for the right multiplication with $\tilde Q_3$ in place of $\tilde Q_5$.
 
-*Proof.* By the swap theorem, $L_{\tilde Q_5}$ is self-adjoint exactly when $R_{\tilde Q_5}=L_{\tilde Q_5}$, that is $\tilde Q_5\tilde Q=\tilde Q\tilde Q_5$ for all $\tilde Q$, which is centrality of $\tilde Q_5$; and it is skew-adjoint exactly when $R_{\tilde Q_5}=-L_{\tilde Q_5}$, that is $\tilde Q_5\tilde Q=-\tilde Q\tilde Q_5$ for all $\tilde Q$. Evaluating the last identity at $\tilde Q=e_{0}$ gives $\tilde Q_5=-\tilde Q_5$, hence $\tilde Q_5=0$, and $\tilde Q_5=0$ indeed gives the zero operator.
+*Proof.* By the swap theorem, $L_{\tilde Q_5}$ is self-adjoint exactly when $R_{\tilde Q_5}=L_{\tilde Q_5}$, that is $\tilde Q_5\tilde Q=\tilde Q\tilde Q_5$ for all $\tilde Q$, which is centrality of $\tilde Q_5$; and it is skew-adjoint exactly when $R_{\tilde Q_5}=-L_{\tilde Q_5}$, that is $\tilde Q_5\tilde Q=-\tilde Q\tilde Q_5$ for all $\tilde Q$. Evaluating the last identity at $\tilde Q=e_t$ gives $\tilde Q_5=-\tilde Q_5$, hence $\tilde Q_5=0$, and $\tilde Q_5=0$ indeed gives the zero operator.
 
-**Corollary (the two sectors).** The self-adjoint left multiplications are the multiplications by the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_{0}$; the skew-adjoint sector contains the zero operator alone. The two statements are the sharpest contrast with the Hermitian pair, where the Hermitian and the anti-Hermitian parameters give the self-adjoint and the skew-adjoint operators respectively and both sectors are four-dimensional, and with the quaternionic pair, where the pure parameters give nonzero skew-adjoint one-sided operators.
+**Corollary (the two sectors).** The self-adjoint left multiplications are the multiplications by the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$; the skew-adjoint sector contains the zero operator alone. The two statements are the sharpest contrast with the Hermitian pair, where the Hermitian and the anti-Hermitian parameters give the self-adjoint and the skew-adjoint operators respectively and both sectors are four-dimensional, and with the quaternionic pair, where the pure parameters give nonzero skew-adjoint one-sided operators.
 
 **Remark (why the skew sector collapses).** Association reverses the order of the factors, and the scalar part is cyclic, so the transpose of a left multiplication is a right multiplication with the same parameter. A skew-adjoint left multiplication would therefore have to satisfy $\tilde Q_5\tilde Q=-\tilde Q\tilde Q_5$ for every $\tilde Q$, and the unit of the algebra permits only $\tilde Q_5=0$. The collapse is a property of the plain form and of the unit together; it disappears as soon as the adjoint carries a conjugation of the parameter, as in the quaternionic case.
 
@@ -138,7 +138,7 @@ $$
 \bigl\langle L_{\tilde Q_5}\tilde Q_1,L_{\tilde Q_5}\tilde Q_2\bigr\rangle=\langle\tilde Q_1,\tilde Q_2\rangle\qquad\text{for all }\tilde Q_1,\tilde Q_2,
 $$
 
-if and only if $\tilde Q_5=\pm e_{0}$, that is if and only if $L_{\tilde Q_5}=\pm\mathrm{id}$. The same criterion holds for $R_{\tilde Q_3}$.
+if and only if $\tilde Q_5=\pm e_t$, that is if and only if $L_{\tilde Q_5}=\pm\mathrm{id}$. The same criterion holds for $R_{\tilde Q_3}$.
 
 *Proof.* By the swap theorem and the symmetry of the form,
 
@@ -148,7 +148,7 @@ $$
 =\bigl\langle\tilde Q_1,\tilde Q_5\tilde Q_2\tilde Q_5\bigr\rangle,
 $$
 
-so preservation is equivalent to $\tilde Q_5\tilde Q\tilde Q_5=\tilde Q$ for all $\tilde Q$. At $\tilde Q=e_{0}$ this gives $\tilde Q_5^{2}=e_{0}$, so $\tilde Q_5$ is a unit with $\tilde Q_5^{-1}=\tilde Q_5$; the identity then reads $\tilde Q_5\tilde Q=\tilde Q\tilde Q_5$ for all $\tilde Q$, so $\tilde Q_5$ is central, and a central element of square $e_{0}$ is $\pm e_{0}$ (it is $\lambda e_{0}$ with $\lambda^{2}=1$). Conversely $\pm e_{0}$ preserves the form because the two signs cancel.
+so preservation is equivalent to $\tilde Q_5\tilde Q\tilde Q_5=\tilde Q$ for all $\tilde Q$. At $\tilde Q=e_t$ this gives $\tilde Q_5^{2}=e_t$, so $\tilde Q_5$ is a unit with $\tilde Q_5^{-1}=\tilde Q_5$; the identity then reads $\tilde Q_5\tilde Q=\tilde Q\tilde Q_5$ for all $\tilde Q$, so $\tilde Q_5$ is central, and a central element of square $e_t$ is $\pm e_t$ (it is $\lambda e_t$ with $\lambda^{2}=1$). Conversely $\pm e_t$ preserves the form because the two signs cancel.
 
 **Theorem (the inner automorphisms preserve the form).** For every unit $\tilde Q_5$ the inner automorphism $\mathrm{Ad}_{\tilde Q_5}=L_{\tilde Q_5}R_{\tilde Q_5^{-1}}$ preserves the form:
 
@@ -169,10 +169,10 @@ $$
 \{\,S:SR_{\tilde Q_3}=R_{\tilde Q_3}S\ \ \forall\tilde Q_3\,\}=\{\,L_{\tilde Q_5}\,\}.
 $$
 
-*Proof.* Let $S$ commute with all $L_{\tilde Q_5}$ and put $\tilde Q_3=S(e_{0})$. For every $\tilde Q_5$, using $\tilde Q_5=L_{\tilde Q_5}(e_{0})$ and the commutation,
+*Proof.* Let $S$ commute with all $L_{\tilde Q_5}$ and put $\tilde Q_3=S(e_t)$. For every $\tilde Q_5$, using $\tilde Q_5=L_{\tilde Q_5}(e_t)$ and the commutation,
 
 $$
-S(\tilde Q_5)=S\bigl(L_{\tilde Q_5}(e_{0})\bigr)=L_{\tilde Q_5}\bigl(S(e_{0})\bigr)=\tilde Q_5\tilde Q_3=R_{\tilde Q_3}(\tilde Q_5),
+S(\tilde Q_5)=S\bigl(L_{\tilde Q_5}(e_t)\bigr)=L_{\tilde Q_5}\bigl(S(e_t)\bigr)=\tilde Q_5\tilde Q_3=R_{\tilde Q_3}(\tilde Q_5),
 $$
 
 so $S=R_{\tilde Q_3}$; the converse is the third composition law. The second identity is the same argument with the two families exchanged.
@@ -187,13 +187,13 @@ $$
 
 ## Worked Examples
 
-**The identity and the central scalars.** $L_{e_{0}}=R_{e_{0}}=\mathrm{id}$, and for a central scalar $\lambda e_{0}$ the two one-sided operators agree, $L_{\lambda e_{0}}=R_{\lambda e_{0}}=\lambda\,\mathrm{id}$. Both are self-adjoint, neither is skew-adjoint unless $\lambda=0$, and neither preserves the form unless $\lambda=\pm1$: a central scalar acts on the form by the square of the scalar.
+**The identity and the central scalars.** $L_{e_t}=R_{e_t}=\mathrm{id}$, and for a central scalar $\lambda e_t$ the two one-sided operators agree, $L_{\lambda e_t}=R_{\lambda e_t}=\lambda\,\mathrm{id}$. Both are self-adjoint, neither is skew-adjoint unless $\lambda=0$, and neither preserves the form unless $\lambda=\pm1$: a central scalar acts on the form by the square of the scalar.
 
-**The vector generators.** For $\tilde Q_5=e_{k}$, $k=1,2,3$, the parameter is neither central nor zero, so $L_{e_{k}}$ is neither self-adjoint nor skew-adjoint, and it is not an automorphism of the form either, since $e_{k}^{2}=-e_{0}\neq e_{0}$. The transpose of $L_{e_{k}}$ is $R_{e_{k}}$, and the two operators differ on every element with a nonzero vector part: $L_{e_{k}}(e_{1})=e_{k}e_{1}$ and $R_{e_{k}}(e_{1})=e_{1}e_{k}=-e_{k}e_{1}$ for $k\neq1$. This is the swap in its least degenerate instance, and it is the example that shows the transpose is not a conjugation of the algebra: association carries $L_{e_{k}}$ outside the image of $L$.
+**The vector generators.** For $\tilde Q_5=\vec e_k$, $k=x,y,z$, the parameter is neither central nor zero, so $L_{\vec e_k}$ is neither self-adjoint nor skew-adjoint, and it is not an automorphism of the form either, since $\vec e_k^{2}=-e_t\neq e_t$. The transpose of $L_{\vec e_k}$ is $R_{\vec e_k}$, and the two operators differ on every element with a nonzero vector part: $L_{\vec e_k}(\vec e_x)=\vec e_k\vec e_x$ and $R_{\vec e_k}(\vec e_x)=\vec e_x\vec e_k=-\vec e_k\vec e_x$ for $k\neq x$. This is the swap in its least degenerate instance, and it is the example that shows the transpose is not a conjugation of the algebra: association carries $L_{\vec e_k}$ outside the image of $L$.
 
-**A parameter of mixed type.** For $\tilde Q_5=e_{0}+e_{1}$ the operator is $L_{\tilde Q_5}=\mathrm{id}+L_{e_{1}}$, the sum of a self-adjoint and a non-self-adjoint operator, and the theorem says the type is decided by the parameter: $L_{\tilde Q_5}$ is self-adjoint exactly when the vector part of the parameter vanishes. The parameter carries the criterion, not the operator.
+**A parameter of mixed type.** For $\tilde Q_5=e_t+\vec e_x$ the operator is $L_{\tilde Q_5}=\mathrm{id}+L_{\vec e_x}$, the sum of a self-adjoint and a non-self-adjoint operator, and the theorem says the type is decided by the parameter: $L_{\tilde Q_5}$ is self-adjoint exactly when the vector part of the parameter vanishes. The parameter carries the criterion, not the operator.
 
-**A null parameter.** For the zero divisor $\tilde Q_5=e_{1}+ie_{2}$, whose square is $0$, the operator $L_{\tilde Q_5}$ is neither self-adjoint nor skew-adjoint, and $L_{\tilde Q_5}^{2}=L_{\tilde Q_5^{2}}=0$: the powers of a null-parameter multiplication vanish. The example records that the type criteria read the parameter and not the invertibility of the parameter. The companion case $\tilde Q_3=e_{0}$ of the two-sided article shows the same for a parameter that is not a unit, and the two-sided article records it (*Two-Sided Operators on the Biquaternion Algebra*, §*Worked Examples*).
+**A null parameter.** For the zero divisor $\tilde Q_5=\vec e_x+i\vec e_y$, whose square is $0$, the operator $L_{\tilde Q_5}$ is neither self-adjoint nor skew-adjoint, and $L_{\tilde Q_5}^{2}=L_{\tilde Q_5^{2}}=0$: the powers of a null-parameter multiplication vanish. The example records that the type criteria read the parameter and not the invertibility of the parameter. The companion case $\tilde Q_3=e_t$ of the two-sided article shows the same for a parameter that is not a unit, and the two-sided article records it (*Two-Sided Operators on the Biquaternion Algebra*, §*Worked Examples*).
 
 **A numerical check of the swap.** For random $\tilde Q_5,\tilde Q_3,\tilde Q_1,\tilde Q_2$, the identities $L_{\tilde Q_5}L_{\tilde Q_3}=L_{\tilde Q_5\tilde Q_3}$, $R_{\tilde Q_5}R_{\tilde Q_3}=R_{\tilde Q_3\tilde Q_5}$, $L_{\tilde Q_5}R_{\tilde Q_3}=R_{\tilde Q_3}L_{\tilde Q_5}$, $\langle L_{\tilde Q_5}\tilde Q_1,\tilde Q_2\rangle=\langle\tilde Q_1,R_{\tilde Q_5}\tilde Q_2\rangle$ and $\langle L_{\tilde Q_5}\tilde Q_1,L_{\tilde Q_5}\tilde Q_2\rangle=\langle\tilde Q_1,\tilde Q_5\tilde Q_2\tilde Q_5\rangle$ hold to machine precision, and the last one is the identity on which the automorphism criterion rests.
 
@@ -205,7 +205,7 @@ The left and the right multiplications $L_{\tilde Q_5}(\tilde Q)=\tilde Q_5\tild
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra; basis $e_{0},e_{1},e_{2},e_{3}$ |
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra; basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | The general plain bilinear form; Gram matrix $\mathrm{diag}(1,-1,-1,-1)$ |
 | $F^{\approx}$ | The associate, or transpose, of $F$ for this form |
 | $L_{\tilde Q_5}(\tilde Q)=\tilde Q_5\tilde Q$ | Left multiplication; linear and injective in $\tilde Q_5$ |
@@ -215,12 +215,12 @@ The left and the right multiplications $L_{\tilde Q_5}(\tilde Q)=\tilde Q_5\tild
 | $(L_{\tilde Q_5})^{\approx}=R_{\tilde Q_5}$, $(R_{\tilde Q_3})^{\approx}=L_{\tilde Q_3}$ | Association swaps the two families |
 | $L_{\tilde Q_5}R_{\tilde Q_5^{-1}}=\mathrm{Ad}_{\tilde Q_5}$ | The inner automorphism of a unit |
 | Self-adjoint $\iff \tilde Q_5$ central | Type criterion; the skew sector is $\{0\}$ |
-| $L_{\tilde Q_5}$ preserves the form $\iff \tilde Q_5=\pm e_{0}$ | The one-sided automorphisms of the form |
+| $L_{\tilde Q_5}$ preserves the form $\iff \tilde Q_5=\pm e_t$ | The one-sided automorphisms of the form |
 | $\{S:SL_{\tilde Q_5}=L_{\tilde Q_5}S\}=R(\mathbb{B})$ | The double centraliser |
 
 ## Further Reading
 
-- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the associate $F^{\approx}$, the basis rule $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, and the identity $(FG)^{\approx}=G^{\approx}F^{\approx}$ used throughout.
+- *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the associate $F^{\approx}$, the basis rule $(e_\mu[\,]e_\nu)^{\approx}=e_\nu[\,]e_\mu$, and the identity $(FG)^{\approx}=G^{\approx}F^{\approx}$ used throughout.
 - *Two-Sided Operators on the Biquaternion Algebra* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), the companion article, for the products $L_{\tilde Q_5}R_{\tilde Q_3}$, their swap adjoint, and the type, automorphism and isometry criteria of the family.
 - *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the two bilinear and the two sesquilinear pairings of the algebra and the place of $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ among them, and the polarisation of the form and its quadratic companion.
 - *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the two-sided operators as its elements.

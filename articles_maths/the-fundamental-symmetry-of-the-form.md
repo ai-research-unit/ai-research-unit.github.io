@@ -184,7 +184,7 @@ $$
 J = \operatorname{diag}(1,-1,-1,-1) ,
 $$
 
-acting on the complex coefficient vector; $J$ squares to $\mathrm{id}$ and is self-adjoint, the positive eigenspace is the complex line spanned by $e_{0}$ — two real dimensions — and the negative eigenspace is the span of $e_{1}, e_{2}, e_{3}$ — six real dimensions, which is the signature $(2,6)$. The form $h_{*}$ is itself definite and is its own companion, of symmetry $\mathrm{id}$. The example is the finite-dimensional model in which the two signs and the operator $J$ are read on the four complex coordinates, and it is the form-layer reading of the indefinite biquaternion form whose operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
+acting on the complex coefficient vector; $J$ squares to $\mathrm{id}$ and is self-adjoint, the positive eigenspace is the complex line spanned by $e_t$ — two real dimensions — and the negative eigenspace is the span of $\vec e_x, \vec e_y, \vec e_z$ — six real dimensions, which is the signature $(2,6)$. The form $h_{*}$ is itself definite and is its own companion, of symmetry $\mathrm{id}$. The example is the finite-dimensional model in which the two signs and the operator $J$ are read on the four complex coordinates, and it is the form-layer reading of the indefinite biquaternion form whose operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
 ## The Definite Case and the Collapse
 
