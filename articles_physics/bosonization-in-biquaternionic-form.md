@@ -162,7 +162,7 @@ The fermionic side of the dictionary is built from vertex operators, and their d
 
 **The current algebra.** In the bosonized language the fermion current is $\partial_\mu\phi/\sqrt{\pi}$ (the dictionary above), and its equal-time commutator in $1+1$ dimensions is
 $$
-\big[j^0(x),j^1(y)\big] = \frac{i}{\pi}\,\delta'(x-y),
+\big[j^0(x),j^1(y)\big] = \frac{i}{\pi}\,\frac{d\delta}{dx}(x-y),
 $$
 the **Schwinger term**. The term is the two-dimensional anomaly's coordinate-space form, and its coefficient is the same $1/\pi$ that appears in $\partial_\mu j^\mu_5=-\tfrac1\pi\Box\phi$. In the framework the normalisation of the current algebra is a statement about the $\mathrm{U}(1)$ current built from the module's bilinear; the Schwinger term lives in the coefficient and not in the algebra, exactly as before.
 
@@ -206,7 +206,7 @@ The non-abelian extension is stated and its status fixed.
 **Standard, and transcribed.**
 
 - The abelian dictionary: $\bar\psi\gamma^\mu\psi\leftrightarrow-\tfrac{1}{\sqrt\pi}\epsilon^{\mu\nu}\partial_\nu\phi$, $\bar\psi\psi\leftrightarrow-\tfrac{1}{\pi\alpha}\cos(2\sqrt\pi\phi)$; the axial anomaly $\partial_\mu j^\mu_5=-\tfrac1\pi\Box\phi$; the sine-Gordon parameters $\beta=2\sqrt\pi$.
-- The Schwinger term $[j^0(x),j^1(y)]=\tfrac{i}{\pi}\delta'(x-y)$; the vertex operators $\psi\sim\,:\!\exp(i\beta\phi)\!:$ with $\Delta=\beta^2/4\pi$; the Sugawara stress tensor and its $c=1$.
+- The Schwinger term $[j^0(x),j^1(y)]=\tfrac{i}{\pi}\frac{d\delta}{dx}(x-y)$; the vertex operators $\psi\sim\,:\!\exp(i\beta\phi)\!:$ with $\Delta=\beta^2/4\pi$; the Sugawara stress tensor and its $c=1$.
 - The Coleman–Mandelstam equivalence of the massive Thirring model and sine-Gordon; the soliton–fermion correspondence.
 - The central charge $c=1$ for a complex fermion and for a real boson, and $c=\tfrac12$ for a Majorana–Weyl fermion.
 - The Schwinger model's bosonic spectrum; the non-abelian bosonization and the Wess–Zumino level.

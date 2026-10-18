@@ -89,7 +89,7 @@ $$
 \frac{d}{dt}\frac{\partial L}{\partial\left(dq_{i}/dt\right)}-\frac{\partial L}{\partial q_i}=-\frac{\partial F}{\partial\left(dq_{i}/dt\right)},
 $$
 
-with **Rayleigh's dissipation function** $F=\tfrac12b_{ij}dq^{i}/dt dq^{j}/dt$, the quadratic form whose gradient is the viscous force. For a single coordinate and the mechanical Lagrangian this is the damped oscillator $md^2q/dt^2+bdq/dt+V'(q)=0$. The energy $E=\sum_idq^{i}/dt\partial L/\partial\left(dq^{i}/dt\right)-L$ is no longer conserved; it decreases at the rate
+with **Rayleigh's dissipation function** $F=\tfrac12b_{ij}dq^{i}/dt dq^{j}/dt$, the quadratic form whose gradient is the viscous force. For a single coordinate and the mechanical Lagrangian this is the damped oscillator $md^2q/dt^2+bdq/dt+dV/dq(q)=0$. The energy $E=\sum_idq^{i}/dt\partial L/\partial\left(dq^{i}/dt\right)-L$ is no longer conserved; it decreases at the rate
 
 $$
 \frac{dE}{dt}=-\sum_idq^{i}/dt\frac{\partial F}{\partial\left(dq^{i}/dt\right)}=-2F,
@@ -182,7 +182,7 @@ $$
 md^2\tilde q/dt^2=-\partial V/\partial\tilde q .
 $$
 
-When $V$ is a function of the real-quaternion modulus $\langle\tilde q\rangle_{\natural}$ alone, the right-hand side is $-\partial V/\partial\tilde q=-2V'(N)\tilde q$, a central force. The biquaternion equation is then the vector equation of a central-force problem; the specific force laws belong to the subcategory on effects without intrinsic magnetism, and are not developed here.
+When $V$ is a function of the real-quaternion modulus $\langle\tilde q\rangle_{\natural}$ alone, the right-hand side is $-\partial V/\partial\tilde q=-2\,dV/dN(N)\,\tilde q$, a central force. The biquaternion equation is then the vector equation of a central-force problem; the specific force laws belong to the subcategory on effects without intrinsic magnetism, and are not developed here.
 
 ## The Legendre Transform
 
@@ -269,7 +269,7 @@ $$
 in which the $s$ transformed coordinates obey Hamilton's equations and the $n-s$ others obey Lagrange's. The Routhian has the form of a Hamiltonian and the role of a Lagrangian: the remaining coordinates satisfy the same Lagrange equations as a system of $n-s$ degrees of freedom whose potential is shifted by the momenta that were removed. A central potential shows the mechanism. The angle $\theta$ is cyclic, its momentum $p_\theta=\ell$ is conserved, and the Routhian is a function of $r$ alone, whose Lagrange equation is
 
 $$
-md^2r/dt^2=-V'(r)+\frac{\ell^2}{mr^3},
+md^2r/dt^2=-dV/dr(r)+\frac{\ell^2}{mr^3},
 $$
 
 the centrifugal term appearing as a consequence of the transform rather than as an inserted fictitious force. The partition is arbitrary — nothing requires the transformed coordinates to be the cyclic ones, and choosing them so is a convenience. This article applies the transform to the whole configuration, which is the case $s=n$; the partial case is recorded because it is the general form, and because it shows that which variable is eliminated is a choice of description and not of physics. The other classical reformulation worth naming is **Appell's**, whose equations of motion are written in the **generalized accelerations** $\alpha_r=d^2q_{r}/dt^2$ rather than in the generalized velocities, with the generalized forces of D'Alembert's principle.

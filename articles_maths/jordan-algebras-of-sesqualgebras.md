@@ -192,7 +192,7 @@ The two cases are collected in the table.
 
 ### The Complex Matrices
 
-For $A = M_{n}(\mathbb{C})$ with the conjugate transpose, $H(A)$ is the space of the Hermitian matrices and $J(A)$ is that space with the symmetrised product $\tfrac12(xy + yx)$, a Jordan algebra over $\mathbb{R}$; its degree is $n$, its idempotents are the orthogonal projections, and at $E_{11}$ its Peirce spaces are $\mathbb{R}E_{11}$, the Hermitian off-diagonal matrices and $\mathbb{R}E_{22}$, with the eigenvalues $1, \tfrac12, 0$. Off $H(A)$ the symmetrisation is Hermitian-valued but not Jordan, with the witness of $M_{2}(\mathbb{C})$ above.
+For $A = M_{n}(\mathbb{C})$ with the conjugate transpose, $H(A)$ is the space of the Hermitian matrices and $J(A)$ is that space with the symmetrised product $\tfrac12(xy + yx)$, a Jordan algebra over $\mathbb{R}$; its degree is $n$, its idempotents are the orthogonal projection matrices, and at $E_{11}$ its Peirce spaces are $\mathbb{R}E_{11}$, the Hermitian off-diagonal matrices and $\mathbb{R}E_{22}$, with the eigenvalues $1, \tfrac12, 0$. Off $H(A)$ the symmetrisation is Hermitian-valued but not Jordan, with the witness of $M_{2}(\mathbb{C})$ above.
 
 ### The Field
 

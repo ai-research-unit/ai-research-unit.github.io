@@ -6,7 +6,7 @@ A framework built on a non-standard algebra, and on a non-standard choice of whi
 
 This article states the conventions of the series, one to a section, and records the reason each was chosen. It states conventions only: the proofs, the properties and the physical readings of the objects it names belong to the articles cited beside them. It is meant to be read before any other article is edited, and its reader is anyone writing or revising an article of the series, for whom the conventions are load-bearing — a change that looks local, a sign or a factor of $i$, generally propagates into a dozen dependent articles.
 
-The article is ordered as a dictionary of a single object, each section stated after the one it depends on. First the object and its writing: the algebra and its basis, then the element and its coefficients. Then its parts: the four involutions, the remarkable subspaces they cut out, and the coordinate dictionary and the sector names those subspaces carry. Then what is done with the object: the twelve products, the four forms that are their scalar parts and the four norms read on the diagonal, named by the generic Form and the generic Norm, and the restrictions of the central map, which the norms and the forms make precise. Then the three distinguished elements — the root, the idempotent and the nilpotent — whose glyphs the series writes. Then the three presentations of the same object, the four-vector, the 4×4 regular and the 2×2 element representation with its trace. Last the conventions a field equation inherits, the gradient and its d'Alembertian, closed by the algebra's real structure $\flat$.
+The article is ordered as a dictionary of a single object, each section stated after the one it depends on. First the object and its writing: the algebra and its basis, then the element and its coefficients. Then its parts: the four involutions, the remarkable subspaces they cut out, and the coordinate dictionary and the sector names those subspaces carry. Then what is done with the object: the twelve products, the four forms that are their scalar parts and the four norms read on the diagonal, named by the generic Form and the generic Norm, and the restrictions of the central map, which the norms and the forms make precise. Then the three distinguished elements — the root, the idempotent and the nilpotent — whose glyphs the series writes. Then the three presentations of the same object, the four-vector, the 4×4 regular and the 2×2 element representation with its trace. Last the conventions a field equation inherits, the gradient and its d'Alembertian, the physical units, the two superscript tokens, and the rules of the subscripts, closed by the summary and the summary of notation.
 
 The word *metric* is used at three levels in the series — the biquaternion norm, the two real sectors with their $ict$ metric, and the Clifford tool — and the distinction between them is set out in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, together with the one-way rule that the Clifford tool is a translation of the algebra and never a reason to change it.
 
@@ -114,7 +114,7 @@ with $\mu$ the label and $e_\mu$ the unit it carries — the arrowless $e_t$ at 
 
 **The letters of the physical quantities.** The glyphs are fixed one to a quantity, so that a reader meets the same letter for the same thing in every article; the tables of §*The Most Common Quaternions and Biquaternions* and §*Summary of Notation* list them all.
 
-**What the prime marks.** The prime belongs to the **coefficients of complex numbers**, not to the physical coordinates. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,
+**What the coefficient prime marks.** The coefficient prime belongs to the **coefficients of complex numbers**, not to the physical coordinates. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,
 
 $$
 Q_\mu = q_\mu + iq'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}, \qquad \mu \in \{t, x, y, z\},
@@ -129,7 +129,7 @@ gives $q_\mu$ as the coefficient of $e_\mu$ and $q'_\mu$ as the coefficient of $
 | $Q_y$ | $q_y$ | $\vec e_y$ | $q'_y$ | $i\vec e_y$ |
 | $Q_z$ | $q_z$ | $\vec e_z$ | $q'_z$ | $i\vec e_z$ |
 
-The primed parameter is the one attached to $ie_\mu$, so **the prime marks the slot that carries the $i$**. It is not a label of a subspace, and it has nothing to do with the physical coordinates: the primes live on the $q$'s, which index the four basis elements, while $x, y, z, t, t'$ name the physical directions those $q$'s are read as. Grouped by the algebra's real-and-imaginary split, the four unprimed parameters are the coordinates of the quaternion subspace and the four primed ones those of the antiquaternion subspace,
+The primed parameter is the one attached to $ie_\mu$, so **the coefficient prime marks the slot that carries the $i$**. It is not a label of a subspace, and it has nothing to do with the physical coordinates: the coefficient primes live on the $q$'s, which index the four basis elements, while $x, y, z, t, t'$ name the physical directions those $q$'s are read as. Grouped by the algebra's real-and-imaginary split, the four unprimed parameters are the coordinates of the quaternion subspace and the four primed ones those of the antiquaternion subspace,
 
 $$
 q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in \mathbb{H}_{\mathbb{B}}, \qquad iq'_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z \in i\mathbb{H}_{\mathbb{B}} .
@@ -166,13 +166,13 @@ A pure glyph is given from the quaternions to the biquaternions only, the layers
 
 ## The Most Common Quaternions and Biquaternions
 
-The tilde-marked glyphs a reader meets in every article are collected here, with the role, the formula, the space and the meaning of each, before the conjugations that act on them. The basis, the central $i$, the charges, the pure elements, the glyphs of the reduced biquaternion layer and the tilde-free relations carry no tilde and are collected in §*Summary of Notation*.
+The tilde-marked glyphs a reader meets in every article are collected here, with the role, the formula, the space and the meaning of each, before the sections that define the conjugations and the norms. The basis, the central $i$, the charges, the pure elements, the glyphs of the reduced biquaternion layer and the tilde-free relations carry no tilde and are collected in §*Summary of Notation*.
 
-**Scope: tilde glyphs only.** Every catalogued symbol carries a tilde. Four kinds of glyph are outside the scope and are not listed among the allowed uses: a matrix, $I_n$, $\mathsf{M}_2$, $\mathsf{M}_4$; a pure element written with an arrow, $\vec Q$, $\vec q$, $\vec u$, $\vec U$, $\vec\Xi$, $\vec\Upsilon$, $\vec\pi$; a mark that is not an element; and every glyph of the reduced, tilde-free layers, $\Pi_\pm$, $\Xi_\pm$, $\Upsilon_\pm$. The first is fixed by the rule that a matrix carries no tilde, §*General Matrix Conventions*; the others are elements of other layers or of no layer at all. The operator section states the rule that pairs the two marks; it is not a catalogue of arrowed glyphs.
+**Scope: tilde glyphs only.** Every catalogued symbol carries a tilde. Four kinds of glyph are outside the scope and are not listed among the allowed uses: a matrix, $I_n$, $\mathsf{M}_2$, $\mathsf{M}_4$; a pure element written with an arrow, $\vec Q$, $\vec q$, $\vec u$, $\vec U$, $\vec\Xi$, $\vec\Upsilon$, $\vec\pi$; a mark that is not an element; and every glyph of the reduced, tilde-free layers, $\Pi_\pm$, $\Xi_\pm$. The first is fixed by the rule that a matrix carries no tilde, §*General Matrix Conventions*; the others are elements of other layers or of no layer at all. The operator section states the rule that pairs the two marks; it is not a catalogue of arrowed glyphs.
 
 The tilde marks a quaternionic factor. A base glyph counts every numbered and subscripted variant.
 
-**Allowed tilde.** The role is fixed by this article, or by the case-and-mark rule it states, and checked against the corpus. Cite these entries as they stand. The tables are ordered by theme, as the objects are; the bound letters outside the U family are bound where they are introduced.
+**Allowed tilde.** The role is fixed by this article, or by the case-and-mark rule it states, and checked against the corpus. Cite these entries as they stand. The tables are ordered by theme, as the objects are; the letters outside the U family are bound where they are introduced.
 
 The governing rule: **only the Q family is generic, and only an element carries the tilde.** $\tilde Q$ is the biquaternion or split-biquaternion element and $\tilde q$ the quaternion or split-quaternion element; numbered variants are allowed. A generic element that is unitary is written $\tilde U$. A letter outside the family names an object, or an element bound where it is introduced. A matrix — the image of an element, an array of biquaternions, or a colour matrix — takes no tilde; a tilde on one is a defect of scope, corrected where it occurs and not catalogued here. A tensor is not an element of the algebra: its components $T^\mu{}_\nu$ and $T^{\mu\nu}$, and the irreducible tensor operators $T^{(k)}_\mu$, carry no tilde, and a free element written $\tilde T$ is the same defect, corrected to the Q family.
 
@@ -182,16 +182,17 @@ The governing rule: **only the Q family is generic, and only an element carries 
 |---|---|---|---|---|
 | $\tilde Q$ | General element of the algebra | $Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $Q_\mu\in\mathbb{C}$ | $\mathbb{B}$ | The only generic glyph; a second and a third are $\tilde Q_1,\tilde Q_2$ |
 | $\tilde q$ | General element of the quaternion layer | $q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $q_\mu\in\mathbb{R}$ | $\mathbb{H}_{\mathbb{B}}$ | The only generic glyph of that layer; a second is $\tilde q_1$ |
-| $\tilde\Pi$ | Idempotent, projector | $\Pi_te_t+\vec\Pi$, with $\tilde\Pi^2=\tilde\Pi$ | $\mathbb{B}$; $\mathbb{M}_+$ when $\tilde\Pi^{*}=\tilde\Pi$ | A Hermitian idempotent is a pure state; $\mathbb{B}\tilde\Pi$ is the minimal left ideal, the state module. The retarded pure state of the moving-charge exercise is $\tilde\Pi(\vec u_R)=\tfrac12(e_t+i\vec u_R)$ |
+| $\tilde\Pi$ | Idempotent; a Hermitian idempotent is a pure state | $\Pi_te_t+\vec\Pi$, with $\tilde\Pi^2=\tilde\Pi$ | $\mathbb{B}$; $\mathbb{M}_+$ when $\tilde\Pi^{*}=\tilde\Pi$ | A Hermitian idempotent is a pure state; $\mathbb{B}\tilde\Pi$ is the minimal left ideal, the state module. The retarded pure state of the moving-charge exercise is $\tilde\Pi(\vec u_R)=\tfrac12(e_t+i\vec u_R)$ |
 | $\tilde\pi$ | Idempotent of the quaternion and split-quaternion layers; canonical momentum | $\tilde\pi_{1,2}=\tfrac12(1\pm\vec e_y)$; $\tilde\pi=\pi^0e_t+\vec\pi$ | The quaternion and split-quaternion layers; $\mathbb{B}$ for the canonical momentum | The idempotent pair of the two layers; the canonical momentum of the canonical-quantization, Landau-level and quantum-gravity articles, with the scalar part constrained or central. It is never the Goldstone field, which is the pure element $\vec\pi$ |
 | $\tilde\Xi$ | Root of a central value | $\Xi_te_t+\vec\Xi$, with $\tilde\Xi^2=\lambda e_t$, $\lambda$ central | $\mathbb{B}$; $\mathbb{M}_+$ for the roots $i\vec e_k$; $\mathbb{C}_{\mathbb{B}}$ for $\pm i$ | For a root of $1$ the idempotents are $\tfrac12(e_t\pm\tilde\Xi)$ |
 | $\tilde\xi$ | Root of $1$ of the quaternion layer | $\xi_te_t+\vec\xi$, with $\tilde\xi^2=e_t$ | $\mathbb{H}_{\mathbb{B}}$; the split-quaternion layer writes the same glyph | The tilde-free layers write $\Xi$ |
 | $\tilde\nu$ | Nilpotent of the quaternion layer | $\nu_te_t+\vec\nu$, with $\tilde\nu^2=0$ | The null cone, in neither sector | The biquaternion layer writes $\tilde\Upsilon$ |
 | $\tilde\Upsilon$ | Nilpotent of the biquaternion layer | $\Upsilon_te_t+\vec\Upsilon$, with $\tilde\Upsilon^2=0$ | The null cone, in neither sector | The quaternion layer writes $\tilde\nu$ |
-| $\tilde U$ | Norm-one element | $U_te_t+\vec U$, with $\mathrm{Norm}(\tilde U)=e_t$; $\tilde U^{*}\tilde U=e_t$ in the unitary case | $\mathbb{B}$ | The rotor; the unitary group is $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$. The conjugating element of an inner automorphism, normalised by the central square root of its norm, is this glyph |
+| $\tilde U$ | Norm-one element | $U_te_t+\vec U$, with $\mathrm{Norm}(\tilde U)=e_t$; $\tilde U^{*}\tilde U=e_t$ in the unitary case | $\mathbb{B}$ | A unit element; a rotor when unitary. The unitary group is $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$. The conjugating element of an inner automorphism, normalised by the central square root of its norm, is this glyph |
 | $\tilde u$ | Unit quaternion | $\cos(\theta/2)e_t+\sin(\theta/2)\vec u$, $\vec u$ a unit real vector | $\mathbb{H}_{\mathbb{B}}$, norm one | The rotor of $\mathrm{Sp}(1)\cong\mathrm{SU}(2)$; a pure unit quaternion is $\vec u$ |
 | $\tilde U_{\mathrm b}$ | Hermitian positive boost | $\cosh\frac{\psi}{2}e_t+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$ | The boost factor of the polar word, one exponential, three parameters; it is not unitary under ${}^{*}$, $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}\neq e_t$. The label is $\mathrm b$; the longer spelling $\mathrm{boost}$ is not used. Its generator is the pure element $\tfrac12 i\vec u_{\mathrm b}$ |
 | $\tilde u_{\mathrm r}$ | Unit real quaternion rotor | $\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | $\mathbb{H}_{\mathbb{B}}$, norm one | The rotor of the polar word and of every rotation here, the rotating frame included; half-angle $\theta/2$, axis $\vec u_{\mathrm r}$; unitary under every product |
+| $\tilde U_{\mathrm L}$ | Unit-norm biquaternion, the product of the two factors above | $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$, with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ | $\mathbb{B}$, norm one; $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$ | The product of the boost and the rotor, in that order; it is a Lorentz transformation. The order is fixed, the factors do not commute, and the decomposition is unique when the boost is positive definite |
 | $\tilde u_H$ | Evolution rotor | $\exp(-i\tilde H_Rt/\hbar)=\exp(-\frac{\Omega t}{2}\vec u_R)$ | $\mathbb{H}_{\mathbb{B}}$, norm one | The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\Omega t$ |
 | $\tilde U_{\mathrm{int}}$ | Bound unit element: the Thomas interval rotor | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$ | $\mathbb{B}$, norm one | The unit-norm biquaternion that carries the rest frame at $t$ to the rest frame at $t+dt$. It takes the glyph of the U family because it is of norm one; the role label $\mathrm{int}$ fixes it |
 
@@ -199,7 +200,7 @@ The governing rule: **only the Q family is generic, and only an element carries 
 
 | Symbol | Name | Formula | Space | Meaning |
 |---|---|---|---|---|
-| $\tilde\nabla$ | Biquaternionic gradient | $e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$ | Operator, $\mathbb{B}$-valued | Its conjugate $\tilde\nabla^{\natural}=e_t\partial_t-\vec e_k\partial_k$ is the second factor of $\Box$ |
+| $\tilde\nabla$ | Biquaternionic gradient | $e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$ | Operator, $\mathbb{B}$-valued | Its conjugate $\tilde\nabla^{\natural}=e_t\,\partial/\partial Q_t-\vec e_k\,\partial/\partial Q_k$ is the second factor of $\Box$ |
 | $\tilde D$ | Gauge-covariant derivative | $\tilde D=\tilde\nabla+i\kappa\mathcal A$ | Operator, $\mathbb{B}$-valued | The gauge-principle, minimal-coupling, Yang–Mills, instanton and Stueckelberg articles. Its $e_t$ coefficient is $\partial/\partial Q_t+i\kappa\mathcal A_t$, so the operator is read with its scalar part; on the curvature it acts as $\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\mathcal A,\tilde F]$, the Yang–Mills current. The component $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal A_\mu$ carries no tilde |
 | $\tilde K_{\mathrm{ret}}$ | Retarded-time gradient coefficient | $\tilde K_{\mathrm{ret}}=\tilde\nabla^{\natural}t_r=\frac{1}{c\kappa}(-ie_t+\vec u_R)$, $\kappa=1-\vec u_R\cdot\vec\beta$ | $\mathbb{M}_-$, null | The gradient of the retarded time, also called the null retarded gradient: an element, not an operator, and $\tilde\nabla^{\natural}\tilde Q=\tilde K_{\mathrm{ret}}\,d\tilde Q/dt_r$ for a source depending on $t_r$ alone. It is a zero divisor, $\langle\tilde K_{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not unitary at any $\kappa$. The $\kappa$ here is the retarded denominator, not the coupling of $\tilde D$ |
 
@@ -246,7 +247,7 @@ The governing rule: **only the Q family is generic, and only an element carries 
 
 ## The Conjugations
 
-The biquaternion algebra carries four natural involutions, all of them used in the series:
+The biquaternion algebra carries three natural involutions and the anti-Hermitian sign derived from them, all of them used in the series:
 
 | Map | Mark | What it is |
 |---|---|---|
@@ -279,15 +280,17 @@ $$
 \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \bar Q_te_t - \bar Q_x\vec e_x - \bar Q_y\vec e_y - \bar Q_z\vec e_z, \qquad \tilde Q^{\flat} = -\tilde Q^{*} .
 $$
 
+**The fourth mark is a sign, not a fourth conjugation.** $\flat=-{}^{*}$ is the negative of the star, it reverses products with a twist, $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and it is an involution of the underlying real space only, not of the ring. Its fixed space is the material sector $\mathbb{M}_-$, and the sector split is its work in the series. It is retained for that split, for the bilinear pairings built on it, and for the real-form question of Dirac against Majorana fermions. It is not the mass — the retired form $\tilde\nabla\tilde\Psi=m\tilde\Psi^\flat$ conflated the two — and it is not the charge conjugation of the module, which is the conjugate-linear pseudoautomorphism $\Pi A^{*}\Pi^{-1}$ owned by *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*.
+
 **The biquaternion norm.** The natural sign carries the algebra's **biquaternion norm**,
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-used throughout the series and read on the four forms and their norms in §*The Involutions and the Four Forms* and §*The Four Algebraic Norms* below. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its unit group and its invertibility reading are *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
+used throughout the series and read on the four forms and their norms in §*The Involutions and the Four Forms* and §*The Four Algebraic Norms and the Unitary Convention* below. It is **multiplicative** and complex-valued in general, and it is not an analytic norm; its unit group and its invertibility reading are *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
 
-Each of the four involutions has a fixed space, and each of these is one of the **remarkable subspaces** of the algebra. Which involution defines which subspace, and which of them are anti-fixed, is recorded with the subspaces themselves, in *The Remarkable Subspaces* below.
+Each of the four marks has a fixed space, and each of these is one of the **remarkable subspaces** of the algebra. Which involution defines which subspace, and which of them are anti-fixed, is recorded with the subspaces themselves, in *The Remarkable Subspaces* below.
 
 ## The Remarkable Subspaces
 
@@ -301,6 +304,8 @@ The eight real parameters of a general element group into **remarkable subspaces
 | $i\mathbb{H}_{\mathbb{B}}$, the antiquaternion subspace | $\bar{\tilde{Q}} = -\tilde{Q}$ | $4$ |
 | $\mathbb{M}_+$, the Hermitian subspace | $\tilde{Q}^{*} = \tilde{Q}$ | $4$ |
 | $\mathbb{M}_-$, the anti-Hermitian subspace | $\tilde{Q}^{\flat} = \tilde{Q}$ | $4$ |
+
+The last row is the one the mark $\flat$ exists for. $\mathbb{M}_-$ is fixed by $\flat=-{}^{*}$ and not by ${}^{*}$, and the minus sign is what selects the anti-Hermitian half; it cuts out this subspace alone, and it is a sign derived from the star rather than an independent involution. The choice of that half as "real" is flagged in §*The Coordinate Dictionary and the Sector Names*.
 
 The basis of each, the coefficients it takes and the physical coordinates those carry are the table of §*The Coordinate Dictionary and the Sector Names*.
 
@@ -380,99 +385,99 @@ The algebra carries **four general products** — one to each of the four choice
 
 **The code is read letter by letter.** The first letter says which of the three operations of a row — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one, whose first slot is read as it stands, and $\mathrm Q$ the quaternionic one, whose first slot carries ${}^{\natural}$; and the third says the family — $\mathrm A$ the **algebra** over $\mathbb{C}$, whose three products are $\mathbb{C}$-bilinear, and $\mathrm S$ the **sesqualgebra** over $(\mathbb{C},\bar{\cdot})$, whose three products are sesquilinear. The four general products are the multiplications of the four general structures of the band; the eight parts are the symmetric and antisymmetric products beside them; and the twelve codes together name the twelve algebraic structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
-**The definitions.** Write the two elements $\tilde P=P_te_t+\vec P$ and $\tilde Q=Q_te_t+\vec Q$, with $\vec P=(P_x,P_y,P_z)$ and $\vec Q=(Q_x,Q_y,Q_z)$; $(\vec P,\vec Q)$ is the Euclidean inner product, $\vec P\times\vec Q$ the cross product in the units $\vec e_x,\vec e_y,\vec e_z$, and $\overline{\vec Q}$ the coefficientwise conjugation. Every product is the sum of a scalar part, a multiple of $e_t$, and a vector part.
+**The definitions.** Write the two elements $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $\vec Q_1=(Q_{1x},Q_{1y},Q_{1z})$ and $\vec Q_2=(Q_{2x},Q_{2y},Q_{2z})$; $(\vec Q_1,\vec Q_2)$ is the Euclidean inner product, $\vec Q_1\times\vec Q_2$ the cross product in the units $\vec e_x,\vec e_y,\vec e_z$, and $\overline{\vec Q_2}$ the coefficientwise conjugation. Every product is the sum of a scalar part, a multiple of $e_t$, and a vector part.
 
 **The four general products**, one to each choice of the two slots.
 
 **The general plain bilinear product**, the multiplication of the algebra, associative, with $e_t$ a unit on both sides:
 
 $$
-\tilde P\tilde Q=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P+\vec P\times\vec Q .
+\tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2 .
 $$
 
 **The general plain sesquilinear product**, the second factor read through ${}^{*}$, not associative, with $e_t$ a unit on the right only:
 
 $$
-\tilde P\tilde Q^{*}=\bigl[P_t\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q} .
+\tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **The general quaternionic bilinear product**, the first factor read through ${}^{\natural}$, not associative, with $e_t$ a unit on the left only:
 
 $$
-\tilde P^{\natural}\tilde Q=\bigl[P_tQ_t+(\vec P,\vec Q)\bigr]+P_t\vec Q-Q_t\vec P-\vec P\times\vec Q .
+\tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
 $$
 
 **The general quaternionic sesquilinear product**, both slots read through a conjugation, not associative, with a unit on neither side:
 
 $$
-\tilde P^{\natural}\tilde Q^{*}=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q} .
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **The four symmetric parts**, written with the **full dot** $\bullet$, the four half-sums under the exchange that keeps the class of the product — the interchange for the two bilinear products, the conjugate transpose for the two sesquilinear ones. The subscript names the slots as it does for the forms: none for the plain bilinear product, ${}_{\natural}$ for the quaternionic bilinear, ${}_{*}$ for the plain sesquilinear and ${}_{\natural*}$ for the quaternionic sesquilinear.
 
-**The symmetric plain bilinear product**, the half-sum of the two orders, the **Jordan product** $\tilde P\bullet\tilde Q$, written $\star$ in the symmetric-plain band of the physics corpus:
+**The symmetric plain bilinear product**, the half-sum of the two orders, the **Jordan product** $\tilde Q_1\bullet\tilde Q_2$, written $\star$ in the symmetric-plain band of the physics corpus:
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P .
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1 .
 $$
 
-**The symmetric plain sesquilinear product**, the half-sum under the conjugate transpose, the **Hermitian form** $\langle\tilde P,\tilde Q\rangle_{*}$, central-valued:
+**The symmetric plain sesquilinear product**, the half-sum under the conjugate transpose, the **Hermitian form** $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, central-valued:
 
 $$
-\tilde P\bullet_{*}\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}+(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\bigl[P_t\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr] .
+\tilde Q_1\bullet_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr] .
 $$
 
-**The symmetric quaternionic bilinear product**, the half-sum of the two orders, the **quaternion form** $\langle\tilde P,\tilde Q\rangle_{\natural}$, central-valued:
+**The symmetric quaternionic bilinear product**, the half-sum of the two orders, the **quaternion form** $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, central-valued:
 
 $$
-\tilde P\bullet_{\natural}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)=\bigl[P_tQ_t+(\vec P,\vec Q)\bigr] .
+\tilde Q_1\bullet_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr] .
 $$
 
 **The symmetric quaternionic sesquilinear product**, the half-sum under the conjugate transpose:
 
 $$
-\tilde P\bullet_{\natural*}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P .
+\tilde Q_1\bullet_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 .
 $$
 
 **The four antisymmetric parts**, written with the **wedge** $\wedge$, the four half-differences under the same exchange; all four have zero scalar part and lie in the vector subspace.
 
-**The antisymmetric plain bilinear product**, the half-difference of the two orders, the **outer product** $\tilde P\wedge\tilde Q$:
+**The antisymmetric plain bilinear product**, the half-difference of the two orders, the **outer product** $\tilde Q_1\wedge\tilde Q_2$:
 
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q .
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2 .
 $$
 
-**The antisymmetric plain sesquilinear product**, the half-difference under the conjugate transpose, the vector part $\mathrm{Vect}(\tilde P\tilde Q^{*})$:
+**The antisymmetric plain sesquilinear product**, the half-difference under the conjugate transpose, the vector part $\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$:
 
 $$
-\tilde P\wedge_{*}\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}-(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde P\tilde Q^{*})=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q} .
+\tilde Q_1\wedge_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **The antisymmetric quaternionic bilinear product**, the half-difference of the two orders:
 
 $$
-\tilde P\wedge_{\natural}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q .
+\tilde Q_1\wedge_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
 $$
 
-**The antisymmetric quaternionic sesquilinear product**, the half-difference under the conjugate transpose, the cross product $\vec P\times\overline{\vec Q}$:
+**The antisymmetric quaternionic sesquilinear product**, the half-difference under the conjugate transpose, the cross product $\vec Q_1\times\overline{\vec Q_2}$:
 
 $$
-\tilde P\wedge_{\natural*}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\vec P\times\overline{\vec Q} .
+\tilde Q_1\wedge_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **The reconstruction.** The dot and the wedge rebuild the four general products, so the eight parts carry the whole content of the twelve, one identity to a slot:
 
 $$
-\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q,\qquad
-\tilde P\tilde Q^{*}=\tilde P\bullet_{*}\tilde Q+\tilde P\wedge_{*}\tilde Q,\qquad
-\tilde P^{\natural}\tilde Q=\tilde P\bullet_{\natural}\tilde Q+\tilde P\wedge_{\natural}\tilde Q,\qquad
-\tilde P^{\natural}\tilde Q^{*}=\tilde P\bullet_{\natural*}\tilde Q+\tilde P\wedge_{\natural*}\tilde Q .
+\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2,\qquad
+\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\bullet_{*}\tilde Q_2+\tilde Q_1\wedge_{*}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2+\tilde Q_1\wedge_{\natural}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2 .
 $$
 
 **The two antisymmetrisations are not one.** The eight parts above come from the exchange that keeps the class of the product; the **bare interchange** of the two arguments gives a second antisymmetrisation and different objects — the symmetrised sesquilinear product and the **sesquilinear commutator**,
 
 $$
-[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q^{*}-\tilde Q\tilde P^{*},
+[\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
 whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*The 12 Products of the Biquaternioid $\mathbb{C}$ Space*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternioid*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.
@@ -483,11 +488,11 @@ The products themselves — their coordinates, their laws, their units and their
 
 ## The Involutions and the Four Forms
 
-The algebra carries four conjugations, and on it there are four forms, each applying one conjugation to each of its two arguments, so the two lists are one list read twice. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.
+The algebra carries the identity and three conjugations, four maps in all, and on it there are four forms, each applying one map to each of its two arguments, so the two lists are one list read twice. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.
 
 **The setting.** $\mathbb{B}$ is a $\mathbb{C}$-algebra whose centre is $\mathbb{C}$, so every complex scalar is central, $\lambda\tilde{Q} = \tilde{Q}\lambda$ for all $\lambda \in \mathbb{C}$, which is the property that makes "$\mathbb{C}$-bilinear" well defined on $\mathbb{B}$; the scalar part $\mathrm{Sc}(\tilde{Q}) = Q_t$ is $\mathbb{C}$-linear. The centre is treated in *Other Remarkable Subspaces*, §*The Complex Time Sector $\mathbb{C}_{\mathbb{B}}$*, and the forms of the algebra in *Hermitian Forms over the Biquaternioid Algebra and the Unitary Witt Group with Hermitian Adjoint* and its mathematical twin *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, and, on the side of positivity, in *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*.
 
-**The four conjugations.** The tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is built from two rings that each carry two involutions, the identity and the conjugation, so it carries $2\times 2 = 4$, together with the derived anti-Hermitian sign:
+**The four maps.** The tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is built from two rings that each carry two involutions, the identity and the conjugation, so it carries $2\times 2 = 4$, together with the derived anti-Hermitian sign:
 
 | Map | Mark | Action | As a ring map | Over $\mathbb{C}$ |
 |---|---|---|---|---|
@@ -497,9 +502,9 @@ The algebra carries four conjugations, and on it there are four forms, each appl
 | Hermitian conjugation | ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ | $\bar{Q}_te_t - \bar{Q}_x\vec e_x - \bar{Q}_y\vec e_y - \bar{Q}_z\vec e_z$ | **Anti-automorphism** | $\mathbb{C}$-**antilinear** |
 | Anti-Hermitian conjugation | ${}^{\flat} = -{}^{*}$ | $-\tilde{Q}^{*}$ | **Neither** | $\mathbb{C}$-**antilinear** |
 
-The fourth column is what the two questions separate. The bar acts on the scalars and on nothing else, so it is an order-two automorphism, $\mathbb{C}$-antilinear and **not** an anti-automorphism. The quaternion conjugation and the Hermitian conjugation are the two genuine **involutions of the ring**, $(\tilde{Q}_1\tilde{Q}_2)^{\natural} = \tilde{Q}_2^{\natural}\tilde{Q}_1^{\natural}$ and $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2^{*}\tilde{Q}_1^{*}$, the quaternion conjugation being the one that touches only the quaternion factor. The anti-Hermitian sign is neither: it reverses with a twist, $(\tilde{Q}_1\tilde{Q}_2)^{\flat} = -\tilde{Q}_2^{\flat}\tilde{Q}_1^{\flat}$, so it is an involution of the underlying real vector space and nothing more. The four maps and the sign, their fixed and anti-fixed spaces, and the lattice they form are *Comparison of the Remarkable Subspaces*.
+The fourth column is what the two questions separate. The bar acts on the scalars and on nothing else, so it is an order-two automorphism, $\mathbb{C}$-antilinear and **not** an anti-automorphism. The quaternion conjugation and the Hermitian conjugation are the two genuine **involutions of the ring**, $(\tilde{Q}_1\tilde{Q}_2)^{\natural} = \tilde{Q}_2^{\natural}\tilde{Q}_1^{\natural}$ and $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2^{*}\tilde{Q}_1^{*}$, the quaternion conjugation being the one that touches only the quaternion factor. The anti-Hermitian sign is neither: it reverses with a twist, $(\tilde{Q}_1\tilde{Q}_2)^{\flat} = -\tilde{Q}_2^{\flat}\tilde{Q}_1^{\flat}$, so it is an involution of the underlying real vector space and nothing more. It is a derived sign and not a fifth map: it is minus the star, its fixed space is the material sector alone, and a text that counts it as a fifth map will misread the lattice. The four maps, the sign they derive, their fixed and anti-fixed spaces, and the lattice they form are *Comparison of the Remarkable Subspaces*.
 
-**The generic form.** The series writes a **generic form** $\mathrm{Form}(\tilde{Q}_1,\tilde{Q}_2)$, the form of the statement at hand, of which the four below are the instances; the matching generic norm is stated with the norms in §*The Four Algebraic Norms*.
+**The generic form.** The series writes a **generic form** $\mathrm{Form}(\tilde{Q}_1,\tilde{Q}_2)$, the form of the statement at hand, of which the four below are the instances; the matching generic norm is stated with the norms in §*The Four Algebraic Norms and the Unitary Convention*.
 
 **The four forms, written out.** Each conjugation applied to the first argument and each to the second gives one form. The four are written with the single bracket $\langle\cdot,\cdot\rangle$, whose subscript records the pair of conjugations — nothing when the identity sits in both, ${}^{\natural}$ when the quaternion conjugation sits in the first, ${}^{*}$ when the Hermitian conjugation sits in the second, and $\natural*$ when both sit.
 
@@ -597,7 +602,7 @@ Read on one argument the four are the plain norm, the Hermitian norm, the quater
 
 ### The Unitary Convention
 
-A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$, as in the mathematical corpus (§*The Unitary Convention* of *Conventions in Mathematics*): the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$ and the electric charge. A unit element is an element of norm one, and the norm is the one in view: the glyph is the generic norm read at the central value $e_t$, so it names no set until the norm is named, and the four norms of the biquaternion layer give four level sets:
+A unit element carries its own glyph, the **$u$** in the two cases, beside the root $\tilde\Xi$, the idempotent $\tilde\Pi$ and the nilpotent $\tilde\nu$, as in the mathematical corpus (§*The Unitary Convention* of *Conventions in Mathematics*): the letter $u$ is reserved for a unit element, and a general element is $\tilde q$ or $\tilde Q$. **The exponential is written $\exp(\cdot)$**, never $e^{\cdot}$, the letter $e$ being the base $e_t,\vec e_x,\vec e_y,\vec e_z$. A unit element is an element of norm one, and the norm is the one in view: the glyph is the generic norm read at the central value $e_t$, so it names no set until the norm is named, and the four norms of the biquaternion layer give four level sets:
 
 | Norm | the condition $\mathrm{Norm}(\tilde U)=e_t$ | the norm-one elements |
 |---|---|---|
@@ -618,7 +623,7 @@ of real dimension $4$. The name **unitary** is the name of that group; the glyph
 
 **The case rule splits the glyph**, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.
 
-**The coordinates carry the letter of the unit element**: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_\mu = u_\mu + iu'_\mu$ and vector part $\vec U = \vec u_\mu + i\vec u'_\mu$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_\mu$. **A coordinate carries the label of its direction**, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role. **It is allowed to add subscripts when several unit elements are used**, $\tilde U_1, \tilde U_2$.
+**The coordinates carry the letter of the unit element**: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_\mu = u_\mu + iu'_\mu$ and vector part $\vec U = \vec u + i\vec u'$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_\mu$. **A coordinate carries the label of its direction**, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role. **It is allowed to add subscripts when several unit elements are used**, $\tilde U_1, \tilde U_2$.
 
 **The letter $u$ names a unit element and nothing else.** A velocity, a speed, a Lorentz factor and a rapidity are never written $u$ or $U$: the letter of a motion is $v$, and the four-velocity is the element $\tilde V$. A unitary group is written $\mathrm{U}(1)$, $SU(2)$, $SU(3)$, and its Lie algebra in the upright roman, $\mathrm{u}(1)$, $\mathrm{su}(2)$, $\mathrm{su}(3)$.
 
@@ -657,7 +662,7 @@ A **root of $1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2
 
 **The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents (§*The Nilpotent Convention*), and the class is relative to the product; the roots of a value in the four general products are those of *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
-**The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Xi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\xi}$; those of the complex, split-complex and dual layers carry the plain capital, $\Xi$; and those of the reduced biquaternion layer carry the same plain capital, $\Xi$, whose four roots are $\pm1$ and $\pm j$, no tilde being written where there is no quaternionic factor. The layer fixes the glyph.
+**The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Xi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\xi}$; those of the complex, split-complex and dual layers carry the plain capital, $\Xi$; and those of the reduced biquaternion layer carry the same plain capital, $\Xi$, no tilde being written where there is no quaternionic factor. The layer fixes the glyph.
 
 **The coordinates carry the letter of the root**: in $\mathbb{B}$ the root is $\tilde{\Xi} = \Xi_te_t + \Xi_x\vec e_x + \Xi_y\vec e_y + \Xi_z\vec e_z$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_t$ and its vector part $\vec\Xi = \vec\xi + i\vec\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_te_t + \xi_x\vec e_x + \xi_y\vec e_y + \xi_z\vec e_z$ with real $\xi_\mu$.
 
@@ -676,7 +681,7 @@ The root glyph is therefore **split by the case rule**, and the split is the rea
 
 The convention of *The Elements and their Coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.
 
-An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$; a **projector** is a Hermitian idempotent, $\tilde{\Pi}^{*} = \tilde{\Pi}$, and the rank-one projectors of $\mathbb{M}_+$ are the **pure states** of the informational sector.
+An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$; a **projector** is an idempotent operator, $p^2 = p$, that is an idempotent of the morphism space, not an element of the algebra, and an idempotent element corresponds to a projector when its multiplication operator is idempotent. An idempotent fixed by the star, $\tilde{\Pi}^{*} = \tilde{\Pi}$, is a **Hermitian idempotent**, and the rank-one Hermitian idempotents of $\mathbb{M}_+$ are the **pure states** of the informational sector.
 
 **The case rule splits the glyph, as it does in the mathematical corpus.** The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Pi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\pi}$; those of the complex, split-complex, dual and reduced biquaternion layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The series works in $\mathbb{B}$ and writes $\tilde{\Pi}$ throughout; the other glyphs are the mathematical corpus's, and the layer fixes the glyph.
 
@@ -693,7 +698,7 @@ The idempotent glyph is therefore **split by the case rule**, and the split is t
 | $\Pi$ | An idempotent of the complex, split-complex or dual layer, in the mathematical corpus |
 | $\Pi_\pm$ | An idempotent of the reduced biquaternion layer, in the mathematical corpus |
 | $\tilde{\pi}$ | An idempotent of the quaternion or split-quaternion layer, in the mathematical corpus |
-| $\tilde{\Pi}$ | An idempotent, a projector or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
+| $\tilde{\Pi}$ | An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
 
 ### The Nilpotent Convention
 
@@ -705,7 +710,7 @@ $$
 \tilde{\nu}^2 = 0 .
 $$
 
-**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (§*The Nilpotent Convention* of *Conventions in Mathematics*), and the class is relative to the product. A nilpotent is never a projector, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\vec{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
+**The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (§*The Nilpotent Convention* of *Conventions in Mathematics*), and the class is relative to the product. A nilpotent is never a Hermitian idempotent, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\vec{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
 
 **The coordinates carry the letter of the nilpotent**: in $\mathbb{B}$ the nilpotent is $\tilde{\Upsilon} = \Upsilon_te_t + \Upsilon_x\vec e_x + \Upsilon_y\vec e_y + \Upsilon_z\vec e_z$ with $\Upsilon_\mu = \nu_\mu + i\nu'_\mu$, its scalar part $\Upsilon_t$ and its vector part $\vec\Upsilon = \vec\nu + i\vec\nu'$; in $\mathbb{H}$ it is $\tilde\nu = \nu_te_t + \nu_x\vec e_x + \nu_y\vec e_y + \nu_z\vec e_z$ with real $\nu_\mu$.
 
@@ -718,7 +723,6 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 | Symbol | Role |
 |---|---|
 | $\Upsilon$ | A nilpotent of the complex, split-complex or dual layer, where no tilde is written |
-| $\Upsilon_\pm$ | A nilpotent of the reduced biquaternion layer, where no tilde is written |
 | $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer |
 | $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Upsilon}$ it generates |
 | $\vec{\Upsilon}$, $\vec{\nu}$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of §*Pure Elements and their Coefficients* |
@@ -852,17 +856,15 @@ In this work, subscripts denote vector components, not partial derivatives as in
 
 **No dot.** No derivative is written with a dot. The total derivative with respect to a parameter is written with a fraction and the parameter named: $\frac{d}{dt}$ for time, $\frac{d}{d\tau}$ for proper time, $\frac{d}{dt_r}$ for retarded time; inline, the same derivative is written $dq/dt$. The partial derivative is written $\frac{\partial}{\partial t}$ or, inline, $\partial/\partial t$. A higher derivative is written $\frac{d^2}{dt^2}$, $\frac{\partial^2}{\partial t^2}$. The derivative binds to its whole argument, so a power is written outside a bracket, $\left(\frac{dx}{dt}\right)^2$, never as $\frac{dx^2}{dt}$.
 
-**The prime.** The prime is reserved for the derivative with respect to the single argument of a function of one variable, and a second derivative is written with $\partial$, never with a repeated subscript.
+**The prime is not a derivative mark.** A prime marks the second coefficient of a complex element, $q'_\mu$ of $Q_\mu = q_\mu + iq'_\mu$, or a fixed label such as the gauge coupling $g'$; it never marks a derivative. A derivative is written with $d$ or $\partial$ and its variable named: a function of one variable is differentiated as $df/dx$, never as $f'$, and a second derivative as $d^2f/dx^2$ or $\partial^2f/\partial x^2$, never with a repeated prime or a repeated subscript.
 
 **Labels that are not derivatives.** The second Lorentz label is written $\bar l$, and a spinor index of the conjugate representation is written $\bar\alpha$; the bar on an index marks the conjugate spinor. The conjugate matrix is $\bar\Pi$. These are labels, not derivatives.
 
 **The scope mark.** In geometric calculus the factor differentiated is marked with an underline, $\underline{\partial}(AB)=\underline{\partial}A\,B+\underline{A}\,\underline{\partial}B$, not with a dot.
 
-**The two derivative operators of the series** are the **gradient** $\nabla$ and the **d'Alembertian** $\Box$; every other partial derivative is written with $\partial$.
+**The two derivative operators of the series** are the **biquaternionic gradient** $\tilde\nabla$ and the **d'Alembertian** $\Box$; every other partial derivative is written with $\partial$.
 
 ### The Gradient
-
-The two derivative operators of the series carry a glyph of their own and are fixed here and in no other place; every other partial derivative is written with $\partial$.
 
 The coordinate derivative is written $\partial/\partial Q_\mu$, and the **biquaternionic gradient** is the element-valued operator
 
@@ -887,7 +889,7 @@ $$
 \qquad \overline{\tilde\nabla}=\tilde\nabla .
 $$
 
-**The forms stay four, the norms are two.** The four forms of §*The Twelve Products and Their Names* remain four distinct conventions here, because each conjugates its own slot: the quaternionic form conjugates the first argument and the Hermitian form the second, so on a general second argument they are not the same statement. But read at the two equal arguments they give two operators, the Hermitian norm coinciding with the quaternionic bilinear norm, $\langle\tilde\nabla\rangle_{*}=\langle\tilde\nabla\rangle_{\natural}$, and the Krein norm with the plain bilinear norm, $\langle\tilde\nabla\rangle_{\natural*}=\langle\tilde\nabla\rangle$. The four subsections below carry the four forms, and their norms are the two operators $\Box$ and $\partial^2/\partial Q_t^2-\Delta_Q$.
+**The forms stay four, the norms are two.** The four forms of §*The Involutions and the Four Forms* remain four distinct conventions here, because each conjugates its own slot: the quaternionic form conjugates the first argument and the Hermitian form the second, so on a general second argument they are not the same statement. But read at the two equal arguments they give two operators, the Hermitian norm coinciding with the quaternionic bilinear norm, $\langle\tilde\nabla\rangle_{*}=\langle\tilde\nabla\rangle_{\natural}$, and the Krein norm with the plain bilinear norm, $\langle\tilde\nabla\rangle_{\natural*}=\langle\tilde\nabla\rangle$. The four subsections below carry the four forms, and their norms are the two operators $\Box$ and $\partial^2/\partial Q_t^2-\Delta_Q$.
 
 **On the material sector $\mathbb{M}_-$**, where $Q_t=ict$ and $Q_k=q_k$, the time derivative reads $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, the Laplacian is the physical $\Delta$, and the gradient is
 
@@ -933,7 +935,7 @@ $$
 \langle\tilde\nabla\rangle=\langle\tilde\nabla,\tilde\nabla\rangle=\mathrm{Sc}(\tilde\nabla\tilde\nabla)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q ,
 $$
 
-the cross terms cancelling. **On the material sector** it is $-c^{-2}\frac{\partial^2}{\partial t^2}-\Delta$, the negative of the wave operator; it is **not** the series' d'Alembertian.
+the cross terms cancelling. **On the material sector** it is $-c^{-2}\frac{\partial^2}{\partial t^2}-\Delta$, which is neither the wave operator $\partial^2/\partial t^2-c^2\Delta$ nor the series' d'Alembertian; on this sector the d'Alembertian is $\Delta-c^{-2}\partial^2/\partial t^2$ (§*The Quaternionic Bilinear Product, Its Form and Its Norm*).
 
 ### The Quaternionic Bilinear Product, Its Form and Its Norm
 
@@ -1071,29 +1073,38 @@ so the Krein norm of the gradient **coincides with the plain bilinear norm**. It
 
 **A contraction is a form, never an index.** The metric of the series is the sign vector $\varepsilon$ inside the product, so no index is raised and none is lowered. Where a text with covariant indices contracts a derivative with a field through a raised and a lowered index, the series writes the quaternionic form $\langle\tilde\nabla,\tilde Q_5\rangle_{\natural}$; where it contracts two derivatives, the series writes the quaternionic norm $\langle\tilde\nabla\rangle_{\natural}=\Box$; and where it moves an index through a metric, the series writes the element $\tilde Q_5$ itself, the metric being the sign vector inside the product.
 
-## The Real Structure $\flat$
+## Physical Units
 
-### What $\flat$ Is
+**A unit element is not a physical unit.** The base $e_t,\vec e_x,\vec e_y,\vec e_z$ of §*The Base and Its Units* is algebraic: its structure constants are $0$ or $\pm1$, and the biquaternion norm is a sum of four squares of coefficients. No element of $\mathbb{B}$ carries a metre, a second or a kilogram. A physical unit enters only where an element is **identified** with a physical quantity, and that identification is a convention of the article that makes it, not a property of the algebra. The phrase *unit element* names a basis element and *physical unit* names a convention of measurement; the two are never exchanged.
 
-The map
+**The series uses the SI.** Length is measured in metres, time in seconds, mass in kilograms, temperature in kelvin and charge in coulomb. The derived units follow from these, and the ones the articles use are collected here.
 
-$$
-\tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\overline{\tilde{\Psi}^{\natural}}
-$$
+| Quantity | Symbol | Unit |
+|---|---|---|
+| Length | $x,y,z$; $ict$ in the length coordinate | metre ($\mathrm{m}$) |
+| Time | $t$ in the time coordinate | second ($\mathrm{s}$) |
+| Mass | $m$ | kilogram ($\mathrm{kg}$) |
+| Temperature | $T$ | kelvin ($\mathrm{K}$) |
+| Electric charge | $ϙ$ | coulomb ($\mathrm{C}$) |
+| Speed | $c$, $c_0$ | $\mathrm{m\,s^{-1}}$ |
+| Momentum | $\vec p$ | $\mathrm{kg\,m\,s^{-1}}$ |
+| Energy | $E$ | joule ($\mathrm{J}$) |
+| Action, angular momentum, spin | $S$, $S_0$, $I_\mu$, $\theta$, $\vec L$, $\tilde S_3$ | joule-second ($\mathrm{J\,s}$) |
+| Metric coefficient, time writing | $g_{tt}=-c^2$ | $\mathrm{m^2\,s^{-2}}$ |
+| Inverse length | $\mu=mc/\hbar$ | $\mathrm{m^{-1}}$ |
+| Inverse temperature | $\beta=\hbar/(k_BT)$ | second ($\mathrm{s}$) |
+| Planck constants | $h$, $\hbar$ | joule-second ($\mathrm{J\,s}$) |
+| Boltzmann constant | $k_B$ | $\mathrm{J\,K^{-1}}$ |
+| Gravitational constant | $G$ | $\mathrm{m^3\,kg^{-1}\,s^{-2}}$ |
+| Permittivity and permeability | $\epsilon$, $\mu$ | $\mathrm{F\,m^{-1}}$, $\mathrm{H\,m^{-1}}$ |
 
-is the **anti-Hermitian conjugation**, the negative of the star, and the algebra's **real structure** (§*The Conjugations*). The sign convention on the two sectors is what makes $\mathbb{M}_-$ the material sector, and $\flat$'s fixed space is that sector (§*The Remarkable Subspaces*).
+**The coefficients of one element share one unit.** The biquaternion norm is a sum of four squares of the coefficients of a single element, so the four terms are commensurable only if the four coefficients carry the same unit. The requirement is per element and not across elements: the coefficients of a four-displacement are lengths and its norm a length squared, the coefficients of a four-velocity are speeds and its norm a speed squared, and the temporal slot of a four-potential carries $\phi/c$ rather than $\phi$ so that its four components share the unit of the vector potential. The unit is the unit of the quantity the element represents, and it is supplied by the identification.
 
-### What $\flat$ Is For
+**The two writings of the temporal slot.** In the length coordinate the material position is $\tilde R = ict\,e_t+\vec q$, with time measured in metres; this is the corpus's default. In the time coordinate the temporal component is $it$, time stays in seconds, and the conversion is carried by the metric coefficient $g_{tt}=-c^2$. The quadratic form is one and the same, $\langle\tilde R\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2$; the two differ only in where the factor $c$ is written, and an article that uses the second states it where the temporal slot is read.
 
-$\flat$ is retained for conjugation and for the definition of the $\mathbb{M}_\pm$ split itself, for the trace and the bilinear pairings, and for the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino and the CPT theorem develop. In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\Psi}^\flat$.
+**Dimensionless and dimensionful.** A pure number — the fine-structure constant $\alpha$, the ratio $g=2$, the phase $S/\hbar$, the trace normalisation $2$ — carries no unit and no conversion. A dimensionful constant is a unit conversion and is written with its unit. No dimensionful constant is derived by the algebra: $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are inserted at the places where the structure requires a scale. The metrology says the same thing from the other side. Since the 2019 revision the SI fixes $c$, $h$, the elementary charge and $k_B$ by definition and realises the units from them, while a dimensionless constant such as $\alpha$ has to be measured. An article that sets a constant to one — $c=1$, $\hbar=1$ or $G=1$ — says so locally, and the constant returns wherever a dimensional statement is at issue.
 
-### What $\flat$ Is Not
-
-$\flat$ is **not** the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention of *The Dirac Equation in Biquaternionic Form*. A reader who finds $\flat$ in an article should expect conjugation, a bilinear, or the sector split — never a mass.
-
-$\flat$ is **not** the charge conjugation either. It has the **shape** of a charge-conjugation pairing — it pairs an element with its own conjugate — but the operation called charge conjugation is the conjugate-linear pseudoautomorphism $\bar A=\Pi A^{*}\Pi^{-1}$, whose module form is $C[\psi]=i\gamma^{2}\psi^{*}$, and the operation is owned by *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*. The four levels of the name — the algebra's real structure $\flat$, the Clifford pseudoautomorphism, the module operation $C$, and the module real structure $\bar{\cdot}$ — are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*.
-
-**$\flat$ and the Klein four.** The four involutions $\{1,\bar{\cdot},{}^{\natural},{}^{*}\}$ form a **Klein four group** under composition, and $\flat=-{}^{*}$ is the **fourth character** and not a fourth element: it is minus the star, and its fixed space is the material sector. A reviewer must not treat $\flat$ as an independent involution. The Klein four and the four block characters are *Relations Between Subspaces*; the two $\mathbb{Z}_2$ decompositions that cannot be aligned are *The Centre of the Biquaternion Algebra as the Classical Sector*.
+**A caution on $\mu$.** The letter $\mu$ names the permeability in $c=1/\sqrt{\epsilon\mu}$ and the inverse Compton length in $\mu=mc/\hbar$, and it is the direction label in $e_\mu$ and $Q_\mu$. The corpus distinguishes the uses by context; an article should not use two of them in one expression.
 
 ## The Superscripts
 
@@ -1147,13 +1158,13 @@ The conventions of the series are one object read in order, from the object itse
 
 **The object and its parts.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry, and multiplication by it is one map whose restrictions are the global phase and the exchanges and duality rotations of the sectors (§*The Central Map and Its Restrictions*). The conjugations cut the algebra into the remarkable subspaces of §*The Remarkable Subspaces*, each carrying its own real parameters and its slice of the coordinate dictionary, with $q'_t = ct$, $q_t = ct'$, $(q_x,q_y,q_z) = (x,y,z)$ and $(q'_x,q'_y,q'_z) = (x',y',z')$. The elements with no scalar part — the vector subspace — are the **pure elements**, written with the arrow and without the tilde, $\vec{Q}$ (§*Pure Elements and their Coefficients*). The algebra carries four forms, not two — the plain form, the quaternionic form, the Hermitian form and the Krein form — read on the diagonal as the four norms, of which the quaternionic norm is the biquaternion norm. The matrix representation $\mathsf{M}_2$ is fixed by its four basis images, with the Hermitian units following as $\mathsf{M}_2(i\vec e_k) = i\,\mathsf{M}_2(\vec e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it.
 
-**The presentations, the gradient and the metric levels.** The algebra is written in three presentations — the coefficient quadruple, the $4\times4$ regular matrix and the $2\times2$ image $\mathsf{M}_2$ — each developed in its own article, and it is the trace of $\mathsf{M}_2$ that the series calls the trace. The material coordinate is $\tilde{R} = ict\,e_t + \vec q$, using the $ict$ convention so that the Minkowski interval is the biquaternion norm, vanishing on the zero-divisor cone. The series d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta_Q$, read on the material sector as $\partial^2/\partial Q_t^2 + \Delta = \Delta - c^{-2}\,\partial^2/\partial t^2$; every article uses this one operator, with the mass equation $\left(\Box - m^2c^2/\hbar^2\right)\psi = 0$. The algebra's real structure is $\flat = -{}^{*}$, and the mass term built on $\flat$ and then retired, with the dispersion that retired it, is recorded in *The Dirac Equation in Biquaternionic Form* and *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. The three levels of the word *metric* are set out in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the tool is never a reason to change a convention of the framework.
+**The presentations, the gradient and the metric levels.** The algebra is written in three presentations — the coefficient quadruple, the $4\times4$ regular matrix and the $2\times2$ image $\mathsf{M}_2$ — each developed in its own article, and it is the trace of $\mathsf{M}_2$ that the series calls the trace. The material coordinate is $\tilde{R} = ict\,e_t + \vec q$, using the $ict$ convention so that the Minkowski interval is the biquaternion norm, vanishing on the zero-divisor cone. The series d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta_Q$, read on the material sector as $\partial^2/\partial Q_t^2 + \Delta = \Delta - c^{-2}\,\partial^2/\partial t^2$; every article uses this one operator, with the mass equation $\left(\Box - m^2c^2/\hbar^2\right)\psi = 0$. The algebra's real structure is $\flat = -{}^{*}$ — a sign derived from the star, not an independent involution, and fixed on the material sector — and the mass term built on $\flat$ and then retired, with the dispersion that retired it, is recorded in *The Dirac Equation in Biquaternionic Form* and *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. Physical units are the SI, and the two writings of the temporal slot — $ict$ in metres and $it$ with $g_{tt} = -c^2$ — are stated where an article uses the second. The three levels of the word *metric* are set out in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the tool is never a reason to change a convention of the framework.
 
 The theme is single. In a framework whose algebra and sector assignment are non-standard, the most likely error is a correction of something that is deliberate. The conventions recorded above are the places where that is most likely to happen.
 
 ## Summary of Notation
 
-The tilde-marked element glyphs are collected in §*The Most Common Quaternions and Biquaternions*; the table below holds the remaining glyphs, the physical quantities and the structures built on the algebra.
+The tilde-marked element glyphs are collected in §*The Most Common Quaternions and Biquaternions*; the table below holds the structures and the physical quantities built on the algebra.
 
 | Symbol | Meaning |
 |---|---|
@@ -1167,12 +1178,11 @@ The tilde-marked element glyphs are collected in §*The Most Common Quaternions 
 | $\vec\Xi$ | A pure root of $1$ of the biquaternion layer |
 | $\vec\Upsilon$ | A pure nilpotent of the biquaternion layer |
 | $\Pi_\pm$ | An idempotent of the reduced biquaternion layer, the plain glyph of the mathematical corpus |
-| $\Upsilon_\pm$ | A nilpotent of the reduced biquaternion layer, the plain glyph of the mathematical corpus |
 | $\Xi_\pm$ | A root of $1$ of the reduced biquaternion layer, the plain glyph of the mathematical corpus |
-| $\flat = -{}^{*}$ | The anti-Hermitian conjugation, the algebra's real structure |
+| $\flat = -{}^{*}$ | The anti-Hermitian conjugation, the algebra's real structure: a sign derived from the star, not an independent involution; its fixed space is $\mathbb{M}_-$, the material sector |
 | $ϙ$ | The electric charge, the minuscule of the archaic qoppa; a physical quantity, not an element of the algebra (U+03D9) |
 | $Ϙ$ | A total charge, or a charge operator, the majuscule of the archaic qoppa; the chiral charges are $ϙ_L, ϙ_R$ and the charge operator of a chiral module is $Ϙ = ϙ_LP_L + ϙ_RP_R$ (U+03D8) |
-| $m$ | **Mass.** The rest mass, as in the mass equation $(\Box - m^2c^2/\hbar^2)\psi = 0$ |
+| $m$ | **Mass.** The rest mass, as in the mass equation $(\Box - m^2c^2/\hbar^2)\psi = 0$; not the signature index $m$ below, which occurs only inside $\mathrm{Cl}_{n,m}$ and $O(n,m)$ |
 | $\pi$ | **The circle constant.** The number; not the idempotent, which is written $\tilde\Pi$ |
 | $\hbar$ | **Reduced Planck constant.** Turns the action into the phase $\exp(iS/\hbar)$, and the mass into a wavenumber |
 | $c$ | **Speed of light.** Enters through the material time, $\tilde R = ict\,e_t + \vec q$ |
@@ -1181,18 +1191,18 @@ The tilde-marked element glyphs are collected in §*The Most Common Quaternions 
 | $\phi$, $\vec A$ | **Scalar and vector potential.** The electromagnetic potential of the minimal-coupling articles |
 | $\vec N$ | **Riemann–Silberstein vector.** The complex field vector $\vec N = \vec E + ic\vec B$ of the electromagnetic articles; its letter is not that of a velocity, and a velocity is never written $\vec N$ |
 | $S$ | **Action.** The exponent of the central phase and the classical action of the stationary-phase articles |
-| $g$, $g'$ | **Gauge couplings.** The standard weak and hypercharge couplings, not the Clifford metric $g$ below; the framework's own coupling is $\kappa$ |
+| $g$, $g'$ | **Gauge couplings.** The standard weak and hypercharge couplings, not the Clifford metric $g_{\mu\nu}$ below; the framework's own coupling is $\kappa$ |
 | $\kappa$ | **Framework coupling.** $\kappa = ϙ/\hbar$, the coefficient of the biquaternionic covariant derivative |
 | $\theta_W$ | **Weak mixing angle.** The rotation that separates the photon from the $Z$ |
 | $k_B$, $\beta$ | **Boltzmann constant and inverse temperature.** $\beta = \hbar/(k_BT)$, the corpus convention with $\hbar$ retained |
 | $\mathfrak{Z}$ | **Atomic number, nuclear charge number.** The number of elementary charges of the nucleus, the nuclear charge being $\mathfrak{Z}ϙ$; the plain $Z$ is the $Z$ boson, $\mathbb{Z}$ the integers and $\mathcal{Z}$ the light-cone set |
 | $\mathcal{Q}_{lm}$, $\mathcal{Q}_{ij}$ | **Multipole moments, quadrupole.** The charge moments of the multipole articles, spherical and Cartesian; not the generic element $\tilde Q$ |
 | $\mathcal{Q}$ | **Heat; supercharge, BRST charge.** The heat of the thermodynamic articles, as in $\mathcal{Q} = T\,\Delta S$; and the odd generator of the supersymmetry and BRST articles, with $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$ and $\mathcal{Q}^2 = 0$. Two physical uses of the one calligraphic glyph, read by context |
-| $\xi$, $\eta$ | **Canonical coordinates.** The old and the new canonical variables of a transformation, and the transformation function $\langle \xi'\vert \eta'\rangle$ |
+| $\xi$, $\eta_{\mathrm{can}}$ | **Canonical coordinates.** The old and the new canonical variables of a transformation, and the transformation function $\langle \xi'\vert \eta'\rangle$; not the metric $\eta$ below |
 | $k$ | **Mode momentum.** The integration momentum of a mode expansion, $\int d^3k$ |
 | $k^\mu$, $\vec k$ | **Exchange momentum, momentum transfer.** The momentum carried by an exchanged boson at a vertex, or transferred in a scattering; the letter of a mode momentum, and never $q$, which belongs to the elements |
 | $\zeta$ | **Quadratic Zeeman coupling.** The spin-1 coupling of the quadratic Zeeman term, $\zeta \propto B^2$ |
-| $m$, $n$ | **Signature indices.** The counts of positive and negative directions, as in $\mathrm{Cl}_{m,n}$ and $O(m,n)$; the $m$ of a signature is an index, not the mass |
+| $n$, $m$ | **Signature indices.** The counts of positive and negative directions, as in $\mathrm{Cl}_{n,m}$ and $O(n,m)$; the $m$ of a signature is an index, not the mass |
 | $(ct')\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | The informational coordinate, $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z$; the temporal coefficient $ct'$ is real and the spatial ones imaginary, the mirror of the material coordinate |
 | $\mathbb{C}_{\mathbb{B}} = \{Q_t e_t\}$ | Centre subspace, fixed points of quaternion conjugation; the centre of $\mathbb{B}$ and the complex time sector; parameters $q_t, q'_t$ with $q_t = ct'$ and $q'_t = ct$ |
 | $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\}$ | The vector subspace, i.e. the complex space sector: anti-fixed points of quaternion conjugation, real dimension six; parameters $q_k, q'_k$ with $(q_k) = (x,y,z)$ and $(q'_k) = (x',y',z')$. The pure elements are these, written $\vec{Q}$ (§*Pure Elements and their Coefficients*). |
@@ -1201,14 +1211,13 @@ The tilde-marked element glyphs are collected in §*The Most Common Quaternions 
 | $\mathbb{M}_+ = \{ \tilde{Q} : \tilde{Q}^{*} = \tilde{Q} \}$ | Hermitian subspace, the informational sector; basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$, parameters $q_t, q'_x, q'_y, q'_z$ (real), with $q_t = ct'$ |
 | $\mathbb{M}_- = \{ \tilde{Q} : \tilde{Q}^\flat = \tilde{Q} \}$ | Anti-Hermitian subspace, the material sector; basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, parameters $q'_t, q_x, q_y, q_z$ (real), with $q'_t = ct$ |
 | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$ | Biquaternion norm, level 1 of the three levels of the word *metric* (§*The Metric: Three Levels* of *The Four Forms, the Four Algebraic Norms and the Change of Scalars*) |
-| $\mathrm{Form}(\tilde{Q}_1,\tilde{Q}_2)$, $\mathrm{Norm}(\tilde{Q})=\mathrm{Form}(\tilde{Q},\tilde{Q})$ | The generic form and the generic norm, instantiated one to a general product by the four forms and the four norms (§*The Four Algebraic Norms*, §*The Involutions and the Four Forms*) |
+| $\mathrm{Form}(\tilde{Q}_1,\tilde{Q}_2)$, $\mathrm{Norm}(\tilde{Q})=\mathrm{Form}(\tilde{Q},\tilde{Q})$ | The generic form and the generic norm, instantiated one to a general product by the four forms and the four norms (§*The Four Algebraic Norms and the Unitary Convention*, §*The Involutions and the Four Forms*) |
 | $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ | The twelve products, the four general products and their symmetric and antisymmetric parts (§*The Twelve Products and Their Names*) |
-| $\tilde P\bullet\tilde Q$ | The **symmetric product**, the half-sum $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, the Jordan product for the plain slot; the subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$ name the sesquilinear, quaternionic and quaternionic-sesquilinear slots (§*The Twelve Products and Their Names*) |
-| $\tilde P\wedge\tilde Q$ | The **antisymmetric product**, the half-difference $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$, the outer product for the plain slot, with the same subscripts. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use (§*The Twelve Products and Their Names*) |
+| $\tilde Q_1\bullet\tilde Q_2$ | The **symmetric product**, the half-sum $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$, the Jordan product for the plain slot; the subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$ name the sesquilinear, quaternionic and quaternionic-sesquilinear slots (§*The Twelve Products and Their Names*) |
+| $\tilde Q_1\wedge\tilde Q_2$ | The **antisymmetric product**, the half-difference $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$, the outer product for the plain slot, with the same subscripts. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use (§*The Twelve Products and Their Names*) |
 | $\mathbb{B}_{\mathrm{r}}$, $Q_\pm = Q_+ + jQ_-$ | The reduced biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ on the basis $1, i, j, ij$, equivalently the tessarines or the double-complex numbers; its two complex coordinates are $Q_+ = q_+ + iq'_+$ and $Q_- = q_- + iq'_-$; the same twelve codes are registered on it and four collapse — $\mathrm{SPA} = \mathrm{GPA}$, $\mathrm{SQS} = \mathrm{GQS}$, $\mathrm{APA} = 0$, $\mathrm{AQS} = 0$ — leaving the eight structures GPA, GQA, GPS, GQS, SQA, AQA, SPS, APS (§*The Twelve Products and Their Names*) |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric, signature $(-,+,+,+)$ (level 2) |
-| $g$ | Clifford metric of the $\gamma^\mu$ (level 3), not the gauge coupling $g$ above; an optional tool, not a framework convention. $\mathrm{diag}(+1,-1,-1,-1)$ throughout — the $\mathbb{M}_+$ form, matching the objects the tool represents |
-| $\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} e_\mu\partial/\partial Q_\mu$, $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient and its quaternion conjugate, the two factors of the d'Alembertian |
+| $g_{\mu\nu}$, matrix $g$ | **Clifford metric** of the $\gamma^\mu$ (level 3), not the gauge coupling $g$ above; an optional tool, not a framework convention. The matrix is $(g_{\mu\nu}) = \mathrm{diag}(+1,-1,-1,-1)$ throughout — the $\mathbb{M}_+$ form, matching the objects the tool represents |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta_Q$ | The d'Alembertian, a scalar operator; on the material sector it reads $\partial^2/\partial Q_t^2 + \Delta = \Delta - c^{-2}\,\partial^2/\partial t^2$, the series convention |
 | $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ | Trace pairing, unrestricted; the case $\tilde{Q}_1\in\mathbb{M}_+$, $\tilde{Q}_2\in\mathbb{M}_+$ is the real one. $\mathrm{Tr}(e_t) = 2$ |
 | $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ | The matrix representation, with $\mathsf{M}_2(e_t) = I_2$ and $\mathsf{M}_2(\vec e_k)$ as given above; the Hermitian units follow as $\mathsf{M}_2(i\vec e_k) = i\,\mathsf{M}_2(\vec e_k)$. Fixed up to a unitary change of basis, and no further |

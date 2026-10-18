@@ -70,7 +70,7 @@ not primarily a surface in spacetime; it is the set of processes that cannot be 
 light cone of spacetime when the material coordinate is used.
 
 **The state.** The second family of the cone is the set of nonzero multiples of idempotents, and a
-rank-one projector is the extreme case. A projector satisfies $\tilde\Pi^{2}=\tilde\Pi$, so it is a
+rank-one idempotent is the extreme case. An idempotent satisfies $\tilde\Pi^{2}=\tilde\Pi$, so it is a
 nonzero element of the cone: $\langle\tilde\Pi\rangle_{\natural}=0$ and $\tilde\Pi$ has no inverse, as *The Biquaternion Vacuum
 as a Minimal Idempotent* states of the vacuum. This is not a defect of a state; it is the algebra's
 statement that asking for the inverse of a measurement is a category mistake. The zero-divisor set is
@@ -99,13 +99,13 @@ of the two is different.
   belongs to *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$* and to *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$*.
 - The **non-pure** family, $Q_t\neq0$. Its square is $\tilde Q^{2}=2Q_t\tilde Q-\langle\tilde Q\rangle_{\natural}e_t=2Q_t\tilde Q$,
   so the rescaled element $\tilde\Pi=\tilde Q/(2Q_t)$ is a nontrivial idempotent. These are the
-  **idempotent multiples**, the multiples of the projectors. The non-pure family fills the cone in real
-  dimension six. Physically it is the state family: the rank-one projectors of the informational sector
+  **idempotent multiples**, the multiples of the idempotents. The non-pure family fills the cone in real
+  dimension six. Physically it is the state family: the rank-one idempotents of the informational sector
   are its boundary, the pure states of *Decoherence as Idempotent Projection* and *The Biquaternion Vacuum
   as a Minimal Idempotent*, and the family is read in *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$*.
 
 The two families answer the natural objection to reading a state as a zero divisor: the state is on the
-cone, but it is not nilpotent, and its square is the projector it is a multiple of and not zero. The
+cone, but it is not nilpotent, and its square is the idempotent it is a multiple of and not zero. The
 vanishing of the norm is a statement about invertibility, not about the square.
 
 ### The cone in the four general products
@@ -370,7 +370,7 @@ says so.
 
 The theorem above is the zero-divisor set read through the twelve products. Six further properties of the same set are proved in the corpus, and they are gathered here because they read the zero divisor as a physical object rather than as a row of the table.
 
-**The zero-divisor set is where the square collapses.** On the cone the square is affine, $\tilde Q^{2}=2Q_t\tilde Q$ for every $\tilde Q$ with $\langle\tilde Q\rangle_{\natural}=0$, so squaring a lightlike element stays on its own complex line and never leaves the cone (*The Zero Divisors and the Singular Julia Sets*). The critical set of the quadratic map $\tilde Q\mapsto\tilde Q^{2}+\tilde Q_3$ is the union of the cone and the vector subspace, and the cone is the part of it on which the square can collapse and on which no escape radius is uniform; for $\tilde Q_3=0$ every idempotent lies on the Julia set of that map, and the singular Julia set contains a complex surface. The physical reading is that a lightlike operation squared does not leave its ray, and that the projectors — the idempotent measurements — sit on the Julia set of the squaring: a measurement squares to itself and cannot be undone, and the algebra's dynamics of the square is the sharpest form of that irreversibility.
+**The zero-divisor set is where the square collapses.** On the cone the square is affine, $\tilde Q^{2}=2Q_t\tilde Q$ for every $\tilde Q$ with $\langle\tilde Q\rangle_{\natural}=0$, so squaring a lightlike element stays on its own complex line and never leaves the cone (*The Zero Divisors and the Singular Julia Sets*). The critical set of the quadratic map $\tilde Q\mapsto\tilde Q^{2}+\tilde Q_3$ is the union of the cone and the vector subspace, and the cone is the part of it on which the square can collapse and on which no escape radius is uniform; for $\tilde Q_3=0$ every idempotent lies on the Julia set of that map, and the singular Julia set contains a complex surface. The physical reading is that a lightlike operation squared does not leave its ray, and that the idempotents — the sharp measurements — sit on the Julia set of the squaring: a measurement squares to itself and cannot be undone, and the algebra's dynamics of the square is the sharpest form of that irreversibility.
 
 **The zero-divisor set is the largest nontrivial vanishing set of a square.** Among the squares of the algebra the natural square $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ vanishes exactly on the cone, while the sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ vanishes at the origin alone (*The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*). The reading is a statement about the two pairings: only the square that carries the interval can collapse, and the square that carries the Born pairing never does, which is why a probability weight cannot be sent to zero by an operation alone. The degeneracy is a property of the indefinite form and not of the algebra's multiplication.
 
@@ -380,7 +380,7 @@ The theorem above is the zero-divisor set read through the twelve products. Six 
 
 **The quadratic criterion is a feature of the complex signature, not of zero divisors in general.** In the split-biquaternion algebra the zero-divisor criterion is linear in the idempotent basis, $\tilde Q_{+}=0$ or $\tilde Q_{-}=0$, and the zero-divisor set is the union of two four-dimensional linear subspaces meeting at the origin, rather than a quadric cone (*Split-Biquaternion Zero Divisors*); the split-quaternion algebra behaves in the same way, its zero-divisor set being the null cone of an indefinite norm (*Split-Quaternion Zero Divisors*). The reading is a caution: the physical statement that degeneracy is concentrated on the light cone of a quadratic form is a property of the complexified, biquaternion signature. A split world has a degeneracy of a different shape, linear rather than quadratic, and the equation $N=0$ that the corpus reads as the light cone is not available there in the same form.
 
-**The pure family is the nilpotent cone.** The nilpotents of the algebra are exactly the pure zero divisors, the elements with $Q_t=0$ and $\langle\tilde Q\rangle_{\natural}=0$, and they form the nilpotent cone of real dimension four; the isotropic elements of the symmetrised products are the zero divisors of the parent plain algebra (*List of Zero Divisors and Nilpotents*, *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*). The reading separates the two halves of the cone: the pure half is the nilpotent lightlike displacement, whose square vanishes, and the non-pure half is the multiples of the projectors, whose square stabilises. The first is the lightlike translation, the second the measurement, and the zero-divisor set holds both.
+**The pure family is the nilpotent cone.** The nilpotents of the algebra are exactly the pure zero divisors, the elements with $Q_t=0$ and $\langle\tilde Q\rangle_{\natural}=0$, and they form the nilpotent cone of real dimension four; the isotropic elements of the symmetrised products are the zero divisors of the parent plain algebra (*List of Zero Divisors and Nilpotents*, *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*). The reading separates the two halves of the cone: the pure half is the nilpotent lightlike displacement, whose square vanishes, and the non-pure half is the multiples of the idempotents, whose square stabilises. The first is the lightlike translation, the second the measurement, and the zero-divisor set holds both.
 
 ## The Cone as an Information Barrier and a Mass Label
 
@@ -415,7 +415,7 @@ the boundary at which the count of polarisations falls, and the shells $N=-m^2c^
 norm labels.
 
 **The state family and its irreversibility.** The non-pure family of the cone is the family of multiples of
-the positive projectors, and *Decoherence as Idempotent Projection* moves a state from that family into the
+the positive idempotents, and *Decoherence as Idempotent Projection* moves a state from that family into the
 interior of the Bloch ball: a pure state is an idempotent and hence a zero divisor, a mixed state is not,
 and decoherence is the passage off the cone. *Quantum Channels and the Reversible/Irreversible Dichotomy*
 supplies the operator reading of the same passage: a reversible channel is conjugation by a single unit,
@@ -574,7 +574,7 @@ postulate and no commutator enter.
   exactly where the interval vanishes, which is the algebraic form of lightlike propagation and of the
   rank-one massless boundary of the state cone.
 - The cone splits by the scalar part. The pure family is the nilpotent lightlike displacements; the
-  non-pure family is the multiples of the projectors, that is, the states. A state is a zero divisor
+  non-pure family is the multiples of the idempotents, that is, the states. A state is a zero divisor
   because a measurement cannot be undone, not because its square vanishes.
 - For the two symmetric structures $\mathrm{SPA}$ and $\mathrm{SQS}$ the degeneracy is larger: the
   symmetrised coupling also annihilates on the lightlike family, and an invertible unit can fail to
@@ -654,7 +654,7 @@ $\mathrm{SQS}$, and that it is the whole punctured space for the remaining six. 
 general products degenerate exactly on the light cone, so their physics is the physics of the cone: the
 boundary of invertibility in the composition, the rank drop of the sesquilinear square in the probability,
 and the null set of the indefinite metric in the gauge band. The cone splits by the scalar part into the
-pure nilpotent displacements and the non-pure multiples of the projectors, the two objects the later
+pure nilpotent displacements and the non-pure multiples of the idempotents, the two objects the later
 articles of the section own. The two symmetric structures add the pure family to the cone, because a
 symmetrised coupling can annihilate two invertible lightlike directions, and the unit $\vec e_x$ is the witness.
 The six derived structures have the whole punctured space, because a scalar-valued coupling returns a

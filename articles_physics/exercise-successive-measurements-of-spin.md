@@ -87,21 +87,21 @@ $$
 In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{M}_+$, of the form
 
 $$
-P(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
+\tilde\Pi(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$
 
 where $\vec u$ is a unit pure real quaternion. The spin-up state along $z$ corresponds to
 
 $$
-P_z = \tfrac{1}{2}\left(e_t + i \vec e_z\right).
+\tilde\Pi_z = \tfrac{1}{2}\left(e_t + i \vec e_z\right).
 $$
 
-### Step 2: The projectors along the measurement directions
+### Step 2: The idempotents along the measurement directions
 
-The projectors onto the spin-up states along the two measurement directions are the idempotents
+The idempotents for the spin-up states along the two measurement directions are
 
 $$
-P_{\vec u_x} = \tfrac{1}{2}\left(e_t + i\vec u_x\right), \qquad P_{\vec u_y} = \tfrac{1}{2}\left(e_t + i\vec u_y\right),
+\tilde\Pi_{\vec u_x} = \tfrac{1}{2}\left(e_t + i\vec u_x\right), \qquad \tilde\Pi_{\vec u_y} = \tfrac{1}{2}\left(e_t + i\vec u_y\right),
 $$
 
 with $\vec u_x = \sin\theta_1\, \vec e_x + \cos\theta_1\, \vec e_z$ and $\vec u_y = \sin\theta_2\, \vec e_x + \cos\theta_2\, \vec e_z$ as unit pure real quaternions.
@@ -111,37 +111,37 @@ with $\vec u_x = \sin\theta_1\, \vec e_x + \cos\theta_1\, \vec e_z$ and $\vec u_
 The joint probability of the two measurements both yielding spin-up is the product of the two trace formulas:
 
 $$
-p(+,+) = \mathrm{Tr}\!\left(P_{\vec u_x} \circ P_z\right) \cdot \mathrm{Tr}\!\left(P_{\vec u_y} \circ P_{\vec u_x}\right).
+p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) \cdot \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right).
 $$
 
 **First factor.** From Exercise: Measuring Spin Along an Arbitrary Direction, the first factor is
 
 $$
-\mathrm{Tr}\!\left(P_{\vec u_x} \circ P_z\right) = 2\,\mathrm{Sc}\!\left(P_{\vec u_x} \circ P_z\right) = \cos^2(\theta_1/2).
+\mathrm{Tr}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) = 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) = \cos^2(\theta_1/2).
 $$
 
-**Second factor.** Computing the product $P_{\vec u_y} \circ P_{\vec u_x}$,
+**Second factor.** Computing the product $\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}$,
 
 $$
-P_{\vec u_y} \circ P_{\vec u_x} = \tfrac{1}{4}\left(e_t + i\vec u_y\right)\left(e_t + i\vec u_x\right) = \tfrac{1}{4}\left[e_t + i\vec u_x + i\vec u_y - \vec u_y \vec u_x\right].
+\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x} = \tfrac{1}{4}\left(e_t + i\vec u_y\right)\left(e_t + i\vec u_x\right) = \tfrac{1}{4}\left[e_t + i\vec u_x + i\vec u_y - \vec u_y \vec u_x\right].
 $$
 
 For pure real quaternions, the product is $\vec u_y \vec u_x = -\vec u_y \cdot \vec u_x\, e_t + \vec u_y \times \vec u_x$. Substituting,
 
 $$
-P_{\vec u_y} \circ P_{\vec u_x} = \tfrac{1}{4}\left[\bigl(1 + \vec u_y \cdot \vec u_x\bigr) e_t + i\vec u_x + i\vec u_y - \vec u_y \times \vec u_x\right].
+\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x} = \tfrac{1}{4}\left[\bigl(1 + \vec u_y \cdot \vec u_x\bigr) e_t + i\vec u_x + i\vec u_y - \vec u_y \times \vec u_x\right].
 $$
 
 The scalar part (coefficient of $e_t$) is $\tfrac{1}{4}(1 + \vec u_y \cdot \vec u_x)$; the other terms $i\vec u_x$, $i\vec u_y$, and $\vec u_y \times \vec u_x$ are vector terms with vanishing coefficient of $e_t$. Therefore
 
 $$
-\mathrm{Tr}\!\left(P_{\vec u_y} \circ P_{\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right).
+\mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right).
 $$
 
 Since both $\vec u_x$ and $\vec u_y$ lie in the $xz$-plane, the scalar product is $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, and the second factor is
 
 $$
-\mathrm{Tr}\!\left(P_{\vec u_y} \circ P_{\vec u_x}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
+\mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
 $$
 
 ### Step 4: The result
@@ -195,14 +195,14 @@ These agree with the physical expectation: a measurement along a direction $\vec
 **1. The trace formula applies to successive measurements.** The joint probability of two successive measurements is a **product of two trace formulas**:
 
 $$
-p(+,+) = \mathrm{Tr}\!\left(P_{\vec u_x} \circ P_z\right) \cdot \mathrm{Tr}\!\left(P_{\vec u_y} \circ P_{\vec u_x}\right).
+p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) \cdot \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right).
 $$
 
 The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same trace pairing on $\mathbb{M}_+$.
 
-**2. Measurement is a projection onto an idempotent.** After the first measurement, the state is not the original $P_z$ but the new idempotent $P_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a **change of the idempotent**: from $P_z$ to $P_{\vec u_x}$.
+**2. Measurement is a projection onto an idempotent.** After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a **change of the idempotent**: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.
 
-**3. The overlap of two idempotents is their scalar product.** The trace $\mathrm{Tr}(P_{\vec u_y} \circ P_{\vec u_x})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \vec u_y \cdot \vec u_x)$, which depends only on the angle between the directions $\vec u_x$ and $\vec u_y$. This is the biquaternion expression of the transition probability between two spin states.
+**3. The overlap of two idempotents is their scalar product.** The trace $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \vec u_y \cdot \vec u_x)$, which depends only on the angle between the directions $\vec u_x$ and $\vec u_y$. This is the biquaternion expression of the transition probability between two spin states.
 
 **4. The geometry enters through the algebra.** The angle between the measurement directions enters through the scalar product $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\vec u_y \vec u_x$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.
 
@@ -225,7 +225,7 @@ We have solved a third exercise in quantum physics — the joint probability of 
 
 In the **standard formulation**, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.
 
-In the **biquaternion formulation**, the solution proceeds through the idempotents $P_z, P_{\vec u_x}, P_{\vec u_y}$ and the product of the two trace formulas $\mathrm{Tr}(P_{\vec u_x}\circ P_z)\mathrm{Tr}(P_{\vec u_y}\circ P_{\vec u_x})$, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the idempotents $\tilde\Pi_z, \tilde\Pi_{\vec u_x}, \tilde\Pi_{\vec u_y}$ and the product of the two trace formulas $\mathrm{Tr}(\tilde\Pi_{\vec u_x}\circ \tilde\Pi_z)\mathrm{Tr}(\tilde\Pi_{\vec u_y}\circ \tilde\Pi_{\vec u_x})$, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their trace pairing, and the joint probability is the product of the trace formulas.
 
@@ -238,10 +238,10 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
-| $P_z = \tfrac{1}{2}(e_t + i\vec e_z)$ | Spin-up state along $z$ |
-| $P_{n_k} = \tfrac{1}{2}(e_t + i\vec u_k)$ | Projector along direction $\vec u_k$ |
+| $\tilde\Pi_z = \tfrac{1}{2}(e_t + i\vec e_z)$ | Spin-up state along $z$ |
+| $\tilde\Pi_{n_k} = \tfrac{1}{2}(e_t + i\vec u_k)$ | Idempotent along direction $\vec u_k$ |
 | $\vec u_k = \sin\theta_k\,\vec e_x + \cos\theta_k\,\vec e_z$ | Unit vector for the $k$-th direction |
-| $\mathrm{Tr}(P_{\vec u_y} \circ P_{\vec u_x})$ | Transition probability between idempotents |
+| $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ | Transition probability between idempotents |
 
 ## Further Reading
 

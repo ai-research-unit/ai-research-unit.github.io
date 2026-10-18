@@ -202,7 +202,7 @@ uses of the one action form.
 $\mathbb{M}_+$ and its sandwich is self-adjoint for the plain form.
 - The **material conjugation** has an anti-Hermitian parameter, $\tilde Q\in\mathbb{M}_-$, and by the criterion it is
 self-adjoint too; the sector signs of the two cases are opposite, which is the $\lambda=\pm1$ of the proof.
-- The **Lorentz action** has a unit-norm parameter $\tilde U\tilde U^{\natural}=e_t$ which is in general in
+- The **Lorentz action** has a unit-norm parameter $\tilde U_{\mathrm L}$, the Lorentz rotor, with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, which is in general in
 neither sector, and then the sandwich is **not** self-adjoint for the plain form: a boost is not symmetric for the
 sector sign.
 
@@ -353,42 +353,42 @@ two operators agree exactly when $\tilde Q_7^{*}=\tilde Q_7^{-1}$, that is when 
 they coincide exactly when the two right parameters coincide; the kernel of the action $\tilde Q_7\mapsto\mathrm{Ad}_{\tilde Q_7}$
 is the centre, so no ambiguity remains.
 
-**Theorem (both preserve the interval, and they differ on a boost).** Let $\tilde U$ be of unit norm,
-$\tilde U\tilde U^{\natural}=e_t$. Then $\Theta_{\tilde U}$ and $\mathrm{Ad}_{\tilde U}$ both
+**Theorem (both preserve the interval, and they differ on a boost).** Let $\tilde U_{\mathrm L}$ be of unit norm,
+$\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. Then $\Theta_{\tilde U_{\mathrm L}}$ and $\mathrm{Ad}_{\tilde U_{\mathrm L}}$ both
 preserve the interval $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ and both preserve the sectors
 $\mathbb{M}_\pm$; the inner automorphism preserves the plain form $\langle\cdot,\cdot\rangle$ as well, and the sandwich preserves it exactly
-when $\tilde U^{*}\tilde U=\pm e_t$, a condition the unit-norm boosts fail. A boost is therefore a parameter
+when $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\pm e_t$, a condition the unit-norm boosts fail. A boost is therefore a parameter
 for which the two operators differ **and** for which the sandwich loses the plain form.
 
-*Proof.* For the interval, with $\tilde U^{\natural}=\tilde U^{-1}$ and
-$\tilde U^{*}=\bar{\tilde U}^{\,\natural}$, and writing the two-sided operator of the sandwich as
-$\Theta_{\tilde U}\tilde P=\tilde U\tilde P\tilde U^{*}$,
+*Proof.* For the interval, with $\tilde U_{\mathrm L}^{\natural}=\tilde U_{\mathrm L}^{-1}$ and
+$\tilde U_{\mathrm L}^{*}=\bar{\tilde U_{\mathrm L}}^{\,\natural}$, and writing the two-sided operator of the sandwich as
+$\Theta_{\tilde U_{\mathrm L}}\tilde P=\tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*}$,
 
 $$
-N\bigl(\Theta_{\tilde U}\tilde P,\Theta_{\tilde U}\tilde Q\bigr)
-=\mathrm{Sc}\bigl((\tilde U\tilde P\tilde U^{*})^{\natural}\,\tilde U\tilde Q\tilde U^{*}\bigr)
-=\mathrm{Sc}\bigl(\tilde U^{*\natural}\tilde P^{\natural}\tilde U^{\natural}\tilde U\tilde Q\tilde U^{*}\bigr)
-=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\,\tilde U^{*}\tilde U^{*\natural}\bigr)
+N\bigl(\Theta_{\tilde U_{\mathrm L}}\tilde P,\Theta_{\tilde U_{\mathrm L}}\tilde Q\bigr)
+=\mathrm{Sc}\bigl((\tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*})^{\natural}\,\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}\bigr)
+=\mathrm{Sc}\bigl(\tilde U_{\mathrm L}^{*\natural}\tilde P^{\natural}\tilde U_{\mathrm L}^{\natural}\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}\bigr)
+=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\,\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}^{*\natural}\bigr)
 =\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\bigr),
 $$
 
-where the third step uses $\tilde U^{\natural}\tilde U=e_t$ and the cyclicity of the scalar part, and the
+where the third step uses $\tilde U_{\mathrm L}^{\natural}\tilde U_{\mathrm L}=e_t$ and the cyclicity of the scalar part, and the
 last uses
 
 $$
-\tilde U^{*}\tilde U^{*\natural}
-=\bar{\tilde U}^{\,\natural}\bar{\tilde U}
-=\overline{\tilde U^{\natural}\tilde U}=e_t .
+\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}^{*\natural}
+=\bar{\tilde U_{\mathrm L}}^{\,\natural}\bar{\tilde U_{\mathrm L}}
+=\overline{\tilde U_{\mathrm L}^{\natural}\tilde U_{\mathrm L}}=e_t .
 $$
 
 The inner automorphism preserves the interval because it preserves the product and the natural conjugation; the sector statement is
-$(\Theta_{\tilde U}\tilde P)^{*}=\tilde U\tilde P^{*}\tilde U^{*}$, which changes the sign of the sector
+$(\Theta_{\tilde U_{\mathrm L}}\tilde P)^{*}=\tilde U_{\mathrm L}\tilde P^{*}\tilde U_{\mathrm L}^{*}$, which changes the sign of the sector
 exactly when $\tilde P$ does; and the plain form is not preserved because the sandwich is not an algebra automorphism.
 
 **Read as a physical statement.** The framework attaches a conjugation to an element in two ways, and the two agree
 only on the compact part of the parameter group. The Lorentz action is the **conjugate** one,
-$\tilde P\mapsto\tilde U\tilde P\tilde U^{*}$, and the algebra automorphism is the **inverse** one,
-$\tilde P\mapsto\tilde U\tilde P\tilde U^{-1}$; on a boost the two differ, while on a rotation they coincide,
+$\tilde P\mapsto\tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*}$, and the algebra automorphism is the **inverse** one,
+$\tilde P\mapsto\tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{-1}$; on a boost the two differ, while on a rotation they coincide,
 and the compact subgroup is exactly the place where "conjugation by the inverse" and "conjugation by the conjugate" are
 the same statement. This is the operator form of the corpus's identification of the compact slice with the internal
 charge and of the boost with the non-compact part: the difference of the two conjugations is a Lorentz-invariant
@@ -422,18 +422,18 @@ for the sector sign while the parameter is a material four-vector.
 Take next a **boost** parameter,
 
 $$
-\tilde U=\cosh u\,e_t+\sinh u\,i\vec e_x,\qquad
-\tilde U\tilde U^{\natural}=e_t,\qquad
-\tilde U\tilde U^{*}=\cosh 2u\,e_t+\sinh 2u\,i\vec e_x\neq e_t .
+\tilde U_{\mathrm L}=\cosh u\,e_t+\sinh u\,i\vec e_x,\qquad
+\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t,\qquad
+\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*}=\cosh 2u\,e_t+\sinh 2u\,i\vec e_x\neq e_t .
 $$
 
 The parameter has unit norm and is Hermitian, so it is in $\mathbb{M}_+$ and the sandwich is self-adjoint; but it is not
 unitary, so it is not in the compact slice. On $\vec e_x$ the two conjugations separate:
 
 $$
-\Theta_{\tilde U}(\vec e_x)=\tilde U^{2}\vec e_x=\cosh 2u\,\vec e_x-\sinh 2u\,ie_t,
+\Theta_{\tilde U_{\mathrm L}}(\vec e_x)=\tilde U_{\mathrm L}^{2}\vec e_x=\cosh 2u\,\vec e_x-\sinh 2u\,ie_t,
 \qquad
-\mathrm{Ad}_{\tilde U}(\vec e_x)=\vec e_x .
+\mathrm{Ad}_{\tilde U_{\mathrm L}}(\vec e_x)=\vec e_x .
 $$
 
 Both operators preserve the interval, the sandwich moves $\vec e_x$ by a hyperbolic rotation, and the inner automorphism
@@ -570,7 +570,7 @@ the naming.
 | $\tilde Q_7\tilde Q_1=e_t\iff L_{\tilde Q_7}R_{\tilde Q_1}=\mathrm{Ad}_{\tilde Q_7}$ | The multiplicative operators |
 | $\tilde Q_1\tilde Q_7$ central $\implies$ multiplicative up to $\tilde Q_1\tilde Q_7$ | The partial law; no norm enters |
 | $\{S:SL_{\tilde Q_7}=L_{\tilde Q_7}S\}=R(\mathbb{B})$ | The commutant; the bicommutant is $\mathbb{C}\,\mathrm{id}$ |
-| $\Theta_{\tilde U}=\mathrm{Ad}_{\tilde U}\iff\tilde U\tilde U^{*}=e_t$ | The two conjugations agree on the unitary slice |
+| $\Theta_{\tilde U_{\mathrm L}}=\mathrm{Ad}_{\tilde U_{\mathrm L}}\iff\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*}=e_t$ | The two conjugations agree on the unitary slice |
 | $S=\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The spinor space and its complement |
 
 ## Further Reading

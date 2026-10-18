@@ -386,7 +386,7 @@ This is a linear isomorphism $\mathbb{R}^8 \to \mathbb{H} \oplus \mathbb{H}$.
 
 **Idempotent and module.** The idempotent representation and the module representation are the same representation viewed from two different angles: the idempotent representation is the pair of components, and the module representation is the action of the algebra on each component.
 
-**Idempotent and Clifford algebra.** The idempotent representation and the Clifford algebra representation are related by the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,3}$. The idempotents $\tilde\Pi_{1,2}$ correspond to the projectors onto the two summands of the Clifford algebra.
+**Idempotent and Clifford algebra.** The idempotent representation and the Clifford algebra representation are related by the isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,3}$. The idempotents $\tilde\Pi_{1,2}$ correspond to the idempotents selecting the two summands of the Clifford algebra.
 
 **All four.** The four representations are different ways of presenting the same algebra. The idempotent representation is the primary one, because it reveals the semisimple structure and simplifies the split-biquaternion norm, the invertibility criterion, and the zero divisor analysis. The four-vector representation is the most familiar from the tensor formalism. The module and Clifford algebra representations place the algebra in the larger contexts of module theory and Clifford algebra theory.
 

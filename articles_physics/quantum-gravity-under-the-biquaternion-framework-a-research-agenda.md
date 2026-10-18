@@ -60,7 +60,7 @@ The gravitational connection is **two-sided**, and its article says why. The loc
 $$
 \delta_G\tilde{Q}=\tfrac12\big(G\tilde{Q}+\tilde{Q}G^{*}\big) ,
 $$
-which for a Hermitian boost generator $G=G^{*}$ is the anticommutator $\tfrac12\{G,\tilde{Q}\}$ and not the commutator. The same article records that the natural abbreviation $D_\mu=\partial/\partial Q_\mu+[\vec\Gamma_\mu,\cdot\,]$ is wrong for exactly the boosts, which are the Lorentzian content of the theory. This was recomputed here: for $G_1=i\vec e_x$ and a material element $\tilde{Q}=iq_0e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the two-sided generator reproduces the boost,
+which for a Hermitian boost generator $G=G^{*}$ is the anticommutator $\tfrac12\{G,\tilde{Q}\}$ and not the commutator. The same article records that the natural abbreviation $D_\mu=\partial/\partial Q_\mu+[\vec\Gamma_\mu,\cdot\,]$ is wrong for exactly the boosts, which are the Lorentzian content of the theory. This was recomputed here: for $G_1=i\vec e_x$ and a material element $\tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the two-sided generator reproduces the boost,
 $$
 \frac{d}{d\psi}\Big|_0\tilde U\tilde{Q}\tilde U^{*}=\tfrac12\{G_1,\tilde{Q}\},\qquad
 [G_1,\tilde{Q}]=\big(0,\,0,\,-2i q_z,\,2i q_y\big),

@@ -36,7 +36,7 @@ $$
 where $\gamma$ is the gyromagnetic ratio and $\vec S$ the spin operator. If the field is directed along $z$ with a gradient along the same direction,
 
 $$
-\vec B = B(z)\,\vec u_z, \qquad B'(z) = \frac{\partial B}{\partial z},
+\vec B = B(z)\,\vec u_z, \qquad \frac{dB}{dz}(z) = \frac{\partial B}{\partial z},
 $$
 
 then the force on the atom along $z$ is the negative gradient of the potential,
@@ -122,7 +122,7 @@ $$
 = \frac{\hbar}{2}\,\tilde\Pi_1(\vec u_z),
 $$
 
-and the same computation with $\vec e_z \to -\vec e_z$ gives $\tilde{S}_3\tilde\Pi_2 = -\tfrac{\hbar}{2}\tilde\Pi_2$. The idempotents are Hermitian, idempotent, and of trace one, as required of pure-state projectors; their sum is $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and their product vanishes, so they are the two complementary outcomes of the measurement.
+and the same computation with $\vec e_z \to -\vec e_z$ gives $\tilde{S}_3\tilde\Pi_2 = -\tfrac{\hbar}{2}\tilde\Pi_2$. The idempotents are Hermitian, idempotent, and of trace one, as required of pure-state idempotents; their sum is $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and their product vanishes, so they are the two complementary outcomes of the measurement.
 
 ### The General State and Its Resolution
 

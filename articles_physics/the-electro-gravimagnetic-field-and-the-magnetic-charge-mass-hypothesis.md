@@ -569,12 +569,12 @@ At the level of smooth solutions the programme constructs the corresponding wave
 
 | Mode | Potential | $(\vec E,\vec k)$ | $(\vec H,\vec k)$ |
 |---|---|---|---|
-| Longitudinal magnetic | $f$ | $0$ | $-\|\vec k\|^2 f'/\sqrt{\mu}$ |
-| Longitudinal electric | $if$ | $\|\vec k\|^2 f'/\sqrt{\epsilon}$ | $0$ |
-| Tesla's wave | $f \vec e_x$ | $-\omega k_1 f'/\sqrt{\epsilon}$ | $0$ |
-| Torsion wave | $if \vec e_x$ | $0$ | $-\omega k_1 f'/\sqrt{\mu}$ |
+| Longitudinal magnetic | $f$ | $0$ | $-\|\vec k\|^2 \frac{df}{d\eta}/\sqrt{\mu}$ |
+| Longitudinal electric | $if$ | $\|\vec k\|^2 \frac{df}{d\eta}/\sqrt{\epsilon}$ | $0$ |
+| Tesla's wave | $f \vec e_x$ | $-\omega k_1 \frac{df}{d\eta}/\sqrt{\epsilon}$ | $0$ |
+| Torsion wave | $if \vec e_x$ | $0$ | $-\omega k_1 \frac{df}{d\eta}/\sqrt{\mu}$ |
 
-the first two being pure longitudinal electric and magnetic waves, and the last two the modes the source names after Etkin. Applying $D^-$ to the potential gives the field directly; the construction was checked, and the longitudinal properties of all four modes follow from it with residuals at machine precision, as do the exact components of the Tesla mode. The source attributes the physical longitudinal electromagnetic waves to Hvorostenko and to Etkin and offers the modes as their EGM explanation; the corpus records the construction and the attribution. One printed result does not reproduce: the torsion-mode components in the source disagree with the source's own construction in one sign and one omitted term, while the other three modes reproduce exactly, so a reader returning to the PDF should confirm that one line. The exact derived form is $A = f'(-k_1 - i\omega \vec e_x + k_3 \vec e_y - k_2 \vec e_z)$.
+the first two being pure longitudinal electric and magnetic waves, and the last two the modes the source names after Etkin. Applying $D^-$ to the potential gives the field directly; the construction was checked, and the longitudinal properties of all four modes follow from it with residuals at machine precision, as do the exact components of the Tesla mode. The source attributes the physical longitudinal electromagnetic waves to Hvorostenko and to Etkin and offers the modes as their EGM explanation; the corpus records the construction and the attribution. One printed result does not reproduce: the torsion-mode components in the source disagree with the source's own construction in one sign and one omitted term, while the other three modes reproduce exactly, so a reader returning to the PDF should confirm that one line. The exact derived form is $A = \frac{df}{d\eta}(-k_1 - i\omega \vec e_x + k_3 \vec e_y - k_2 \vec e_z)$.
 
 ## The Programme's Empirical Claims
 

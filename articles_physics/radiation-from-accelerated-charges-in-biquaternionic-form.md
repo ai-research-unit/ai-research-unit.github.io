@@ -57,7 +57,7 @@ $$
 t_r = t - \frac{\left|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec r_q(t_r)\right|}{c}.
 $$
 
-Writing $h(s) = s + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec r_q(s)|/c - t$, one has $h'(s) = 1 - \vec u_R\cdot\vec\beta$, so the delta function contributes the Jacobian
+Writing $h(s) = s + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec r_q(s)|/c - t$, one has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, so the delta function contributes the Jacobian
 
 $$
 \delta\!\left(t - \frac{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec r_q(s)|}{c} - s\right)

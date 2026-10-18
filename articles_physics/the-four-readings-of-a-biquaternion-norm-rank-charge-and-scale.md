@@ -80,7 +80,7 @@ probability sense.
 
 Two limiting elements show where the interpretations must be stated with their scope.
 
-**The rank-one state.** A rank-one element of the informational sector is a pure state — the projector
+**The rank-one state.** A rank-one element of the informational sector is a pure state — the Hermitian idempotent
 $\tilde{\Pi}=\tfrac12(e_t-i\vec e_z)$ has $\langle\tilde{\Pi}\rangle_{\natural}=0$, rank one, and $\mathrm{Sc}(\tilde{\Pi}\tilde{\Pi}^{*})=\tfrac12$
 — so the same rank-one condition that reads as **massless** on the material side reads as **pure state** on
 the informational side. The two interpretations are not in conflict, because they are interpretations of the rank on two
@@ -139,8 +139,8 @@ because the internal group is compact, which is the same mechanism as the quanti
 momentum and not a separate postulate.
 - **The scale is the odd row.** The interpretation of the scale row is that it is the one reading that is not a
 property of the element alone: $r$ is a unit and moves under a conformal rescaling, so it is the row where
-the framework's mass meets its choice of units, which is the subject of *Action, Units, and the Constants
-of the Biquaternion Universe*.
+the framework's mass meets its choice of units, which is the subject of §*Physical Units* of *Conventions
+in the Biquaternion Universe*.
 
 ## Summary
 

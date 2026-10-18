@@ -63,7 +63,7 @@ $(\vec\Xi,\vec\Xi)=0$. Written with real vectors as $\tilde\Xi=\vec q+i\vec v$, 
 are $\vec q^{2}=\vec v^{2}$ and $\vec q\cdot\vec v=0$; the root set is the **pure isotropic
 cone** $\{\Xi_0=0,\ \Xi_x^{2}+\Xi_y^{2}+\Xi_z^{2}=0\}$, of real dimension four, and it is one component of
 the plain cone $(\vec\Xi,\vec\Xi)=0$. The other component is the non-pure cone, the multiples of
-the projectors, and the two components meet at the origin alone. The physical interpretation is the lightlike
+the idempotents, and the two components meet at the origin alone. The physical interpretation is the lightlike
 displacement, the solution set of the wave equation, and the owner is *The Light Cone as the Biquaternion
 Zero-Divisor Cone*.
 
@@ -150,7 +150,7 @@ The mathematics companion computes the four square-zero sets of the four general
 
 - **The composition band.** The plain square vanishes on the pure cone, of real dimension four, so a
   lightlike displacement of the composition is a pure direction with vanishing square. The non-pure cone
-  elements, the multiples of the projectors, are **not** square-zero: they are the states, and the
+  elements, the multiples of the idempotents, are **not** square-zero: they are the states, and the
   separation of the two families of the cone is the physical content of the section on the gap.
 - **The probability band.** The second square has the scalar part $H=\sum_\mu\lvert P_\mu\rvert^{2}$,
   definite, so its square-zero set is the origin alone. The physical interpretation is that **the probability
@@ -186,7 +186,7 @@ twelve in one place.
 The product is the plain product and its square is the plain square. The root set of $0$ is the pure
 isotropic cone $\{P_0=0,\ (\vec P,\vec P)=0\}$, of real dimension four, one component of the
 zero-divisor cone: the lightlike displacements that are their own annihilating partner. It is a proper
-subfamily of the cone, because a non-pure cone element is a multiple of a projector and not square-zero.
+subfamily of the cone, because a non-pure cone element is a multiple of an idempotent and not square-zero.
 The reading is *The Cone and the Massless Particles in the Biquaternioid Structures over
 $\mathbb{C}$*.
 
@@ -314,7 +314,7 @@ The physical interpretation is the distinction between the two kinds of non-inve
 any operation that cannot be undone, and a square-zero element is one that cannot be undone **because it
 is infinitesimal**: it is a lightlike displacement. The plain product shows the gap in the sharpest way.
 Its zero-divisor set is the whole punctured cone, its square-zero set is the pure part alone, and the
-complement is the non-pure cone, the multiples of the projectors, which are the **states**. A state is
+complement is the non-pure cone, the multiples of the idempotents, which are the **states**. A state is
 therefore a zero divisor that is **not** square-zero: it cannot be composed, but it is not a lightlike
 displacement, and it is idempotent, $\tilde\Pi^{2}=\tilde\Pi$, rather than nilpotent,
 $\tilde\Upsilon^{2}=0$. The two equations are the two extreme quadratic equations of the algebra, and the
@@ -379,7 +379,7 @@ $$
 $$
 
 with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ the vacuum and occupied
-projectors of *The Biquaternion Vacuum as a Minimal Idempotent*; the element $i\vec e_z$ is a root of $+1$,
+idempotents of *The Biquaternion Vacuum as a Minimal Idempotent*; the element $i\vec e_z$ is a root of $+1$,
 $(i\vec e_z)^2=e_t$, and the two are its associated idempotents. The creation and annihilation operators
 of a single fermionic mode are therefore **nilpotents of the algebra itself**, and the canonical
 anticommutator $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ is the statement that a square-zero pair multiplies to
@@ -389,7 +389,7 @@ mode cannot be occupied twice. The vacuum is the product of the two steps,
 $\tilde\Pi_+=\vec\Upsilon_x\vec\Upsilon_y$, so the state and the ladder are not independent objects:
 the state is what the nilpotent pair creates. *The Spin–Statistics Theorem in Biquaternionic Form* fixes
 the anticommutator, and *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form* gives the
-two-projector picture of the mode, which the pair $\tilde\Pi_+,\tilde\Pi_-$ is in the algebra.
+two-idempotent picture of the mode, which the pair $\tilde\Pi_+,\tilde\Pi_-$ is in the algebra.
 
 **Why the ladder is the nilpotent one.** *The Biquaternion Vacuum as a Minimal Idempotent* records that
 the algebra contains no bosonic ladder: no pair $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\in\mathbb{B}$ can satisfy
@@ -600,7 +600,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   is a zero divisor that is nilpotent.
 - The one-mode fermionic ladder is a pair of nilpotents, with
   $\vec\Upsilon_x^{2}=\vec\Upsilon_y^{2}=0$ and
-  $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, whose product is the vacuum projector. Nilpotency is Pauli
+  $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, whose product is the vacuum idempotent. Nilpotency is Pauli
   exclusion, and the trace obstruction is why the algebra's ladder is fermionic.
 - The same equation $\mathcal{Q}^{2}=0$ governs the odd nilpotents of the corpus: the BRST charge, whose cohomology
   $\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$ is the physical state space, and the supercharge, whose anticommutator is the

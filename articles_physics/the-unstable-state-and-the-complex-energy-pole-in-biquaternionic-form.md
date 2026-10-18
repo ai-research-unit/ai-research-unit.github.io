@@ -17,7 +17,7 @@ $$
 \tilde H = h_0\,e_t + i\,\vec h, \qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde P=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde P)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t)=\tilde U(t)\tilde{Ϛ}(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t)=\tilde U(t)\tilde{Ϛ}(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -25,17 +25,17 @@ The convention for the resolvent follows *The Resolvent Operator*, which writes 
 
 ### The survival amplitude and the survival probability
 
-Let $\tilde P_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t=0$, and let $\tilde{Ϛ}(t)=\tilde U(t)\tilde P_0\tilde U(t)^{*}$ be its evolution. The probability that the system is found in the initial state at time $t$ is the pairing of the evolved state with the initial projector,
+Let $\tilde\Pi_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t=0$, and let $\tilde{Ϛ}(t)=\tilde U(t)\tilde\Pi_0\tilde U(t)^{*}$ be its evolution. The probability that the system is found in the initial state at time $t$ is the pairing of the evolved state with the initial idempotent,
 
 $$
-P(t) = \mathrm{Tr}\bigl(\tilde P_0\,\tilde{Ϛ}(t)\bigr)
-= \mathrm{Tr}\bigl(\tilde P_0\,\tilde U(t)\,\tilde P_0\,\tilde U(t)^{*}\bigr).
+P(t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde{Ϛ}(t)\bigr)
+= \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t)\,\tilde\Pi_0\,\tilde U(t)^{*}\bigr).
 $$
 
-Because $\tilde P_0$ has rank one, $\tilde P_0\tilde U\tilde P_0 = A(t)\,\tilde P_0$ with
+Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde U\tilde\Pi_0 = A(t)\,\tilde\Pi_0$ with
 
 $$
-A(t) = \mathrm{Tr}\bigl(\tilde P_0\,\tilde U(t)\bigr) = \mathrm{Tr}\bigl(\tilde P_0\,\exp(-i\tilde Ht/\hbar)\bigr),
+A(t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\tilde Ht/\hbar)\bigr),
 $$
 
 and the survival probability is the squared modulus of the **survival amplitude**,
@@ -57,7 +57,7 @@ which is the norm-preservation theorem of *Unitarity from Centrality: The Biquat
 The expansion of the exponential to second order gives the exact start of the survival probability. Writing the variance of the Hamiltonian in the initial state,
 
 $$
-(\Delta\tilde H)^{2} = \mathrm{Tr}\bigl(\tilde P_0\tilde H^{2}\bigr) - \Bigl(\mathrm{Tr}\bigl(\tilde P_0\tilde H\bigr)\Bigr)^{2} \ge 0,
+(\Delta\tilde H)^{2} = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde H^{2}\bigr) - \Bigl(\mathrm{Tr}\bigl(\tilde\Pi_0\tilde H\bigr)\Bigr)^{2} \ge 0,
 $$
 
 one has
@@ -94,10 +94,10 @@ which is the matrix form of the reflective symmetry of the resolvent in the real
 
 ### The self-energy
 
-Split the Hamiltonian into a solvable part and a coupling, $\tilde H=\tilde H_0+\tilde V$, and let $\tilde P_0$ project on the state of interest with $\tilde H_0\tilde P_0=E_0\tilde P_0$. Write $Q=e_t-\tilde P_0$ for the complementary projection and $Q\tilde HQ$ for the coupling restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
+Split the Hamiltonian into a solvable part and a coupling, $\tilde H=\tilde H_0+\tilde V$, and let $\tilde\Pi_0$ project on the state of interest with $\tilde H_0\tilde\Pi_0=E_0\tilde\Pi_0$. Write $Q=e_t-\tilde\Pi_0$ for the complementary projection and $Q\tilde HQ$ for the coupling restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
 
 $$
-G_{00}(z) = \mathrm{Tr}\bigl(\tilde P_0\,G(z)\bigr) = \mathrm{Tr}\bigl(\tilde P_0\,G(z)\,\tilde P_0\bigr),
+G_{00}(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\,\tilde\Pi_0\bigr),
 $$
 
 and the block identity of *The Resolvent Operator* gives it the closed form
@@ -105,8 +105,8 @@ and the block identity of *The Resolvent Operator* gives it the closed form
 $$
 G_{00}(z) = \frac{1}{z-E_0-\Sigma(z)},
 \qquad
-\Sigma(z) = \mathrm{Tr}\bigl(\tilde P_0\tilde V\tilde P_0\bigr)
-+ \mathrm{Tr}\Bigl(\tilde P_0\tilde V\,Q\frac{1}{z-Q\tilde HQ}Q\,\tilde V\tilde P_0\Bigr).
+\Sigma(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde V\tilde\Pi_0\bigr)
++ \mathrm{Tr}\Bigl(\tilde\Pi_0\tilde V\,Q\frac{1}{z-Q\tilde HQ}Q\,\tilde V\tilde\Pi_0\Bigr).
 $$
 
 The quantity $\Sigma(z)$ is the **self-energy**. It is a scalar function of the central variable $z$ — a complex number of the centre — and it collects the entire effect of the coupling on the distinguished state. To second order in $\tilde V$, with $\lvert 0\rangle$ the state and $\lvert n\rangle$ a complete set spanning $Q$, it is
@@ -252,7 +252,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 **What the algebra does not add.**
 
-- **No scale.** The algebra fixes no value of $\Gamma$. The decay rate is fixed by the coupling and the density of states, both of which are inputs. This is the same absence of scale recorded in *Action, Units, and the Constants of the Biquaternion Universe*, and it means the framework can describe a lifetime but cannot predict one.
+- **No scale.** The algebra fixes no value of $\Gamma$. The decay rate is fixed by the coupling and the density of states, both of which are inputs. This is the same absence of scale recorded in §*Physical Units* of *Conventions in the Biquaternion Universe*, and it means the framework can describe a lifetime but cannot predict one.
 - **No prediction.** For a given coupling and continuum the framework gives the same exponential, the same width and the same level shift as the standard treatment. Nothing here distinguishes the two.
 - **No specific particle's lifetime.** A lifetime becomes a number only when the coupling is known. The neutron's beta decay, for instance, needs a weak chiral gauge structure the framework does not contain, and its lifetime therefore remains outside the framework; the mechanism by which a coupling becomes a lifetime is now stated, and is the boundary at which *The Neutron in Biquaternionic Form* now stands, but the coupling is not supplied.
 
@@ -268,7 +268,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 ## Summary
 
-The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(t)=\mathrm{Tr}(\tilde P_0\tilde U(t))$, and its survival probability is $P(t)=\lvert A(t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(t)=1-(\Delta\tilde H)^{2}t^{2}/\hbar^{2}+O(t^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
+The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(t)=\mathrm{Tr}(\tilde\Pi_0\tilde U(t))$, and its survival probability is $P(t)=\lvert A(t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(t)=1-(\Delta\tilde H)^{2}t^{2}/\hbar^{2}+O(t^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
 
 The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\Delta(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\Delta$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
 
@@ -287,9 +287,9 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde H=h_0e_t+i\vec h$ | Hamiltonian, Hermitian, $h_0\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$ |
-| $\tilde P_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
+| $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
 | $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ | Unitary evolution, $\tilde U\tilde U^{*}=e_t$ |
-| $A(t)=\mathrm{Tr}(\tilde P_0\tilde U(t))$ | Survival amplitude; $P(t)=\lvert A(t)\rvert^{2}$ |
+| $A(t)=\mathrm{Tr}(\tilde\Pi_0\tilde U(t))$ | Survival amplitude; $P(t)=\lvert A(t)\rvert^{2}$ |
 | $(\Delta\tilde H)^{2}$ | Variance of $\tilde H$ in the initial state |
 | $G(z)=(z-\tilde H)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |
 | $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$ | Reduced resolvent of the distinguished state |

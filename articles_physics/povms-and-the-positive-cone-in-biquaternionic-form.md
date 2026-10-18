@@ -37,7 +37,7 @@ $$
 C_+ = \bigl\{h_0e_t + i\vec h\in\mathbb{M}_+ : h_0 \geq |\vec h|\bigr\} .
 $$
 
-This is the **positive cone** of the algebra. Its boundary $h_0 = |\vec h|$ is the set of positive elements of rank one — the rank-one projectors and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_0>|\vec h|$ is the set of positive definite elements.
+This is the **positive cone** of the algebra. Its boundary $h_0 = |\vec h|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_0>|\vec h|$ is the set of positive definite elements.
 
 ### The cone is self-dual
 
@@ -65,7 +65,7 @@ The self-duality is what makes the trace pairing the natural pairing of measurem
 
 ### Extremal rays and the pure states
 
-The extreme rays of $C_+$ are the rays through the rank-one projectors $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{Ϛ}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
+The extreme rays of $C_+$ are the rays through the rank-one Hermitian idempotents $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{Ϛ}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
 
 ## Effects
 
@@ -99,7 +99,7 @@ $$
 \tilde{E}^2 = \tilde{E} \quad\Longleftrightarrow\quad \tilde{E}\in\mathrm{ext}[0,e_t],
 $$
 
-i.e. the elements $a_0 = 1$ with $|\vec a|=0$ (the identity) and $a_0 = \tfrac12$ with $|\vec a| = \tfrac12$ (the rank-one projectors). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_1 + (1-t)\tilde\Pi_2$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
+i.e. the elements $a_0 = 1$ with $|\vec a|=0$ (the identity) and $a_0 = \tfrac12$ with $|\vec a| = \tfrac12$ (the rank-one Hermitian idempotents). A **projective measurement** uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_1 + (1-t)\tilde\Pi_2$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.
 
 ### The Born rule for effects
 

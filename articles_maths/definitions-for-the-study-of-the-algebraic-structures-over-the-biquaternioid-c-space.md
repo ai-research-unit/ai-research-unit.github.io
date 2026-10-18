@@ -106,7 +106,7 @@ a fact about the algebra and not a property of the definitions, proved in *Zero 
 
 ---
 
-## 4. The Idempotent, the Projection and the Peirce Decomposition
+## 4. The Idempotent, the Hermitian Idempotent and the Peirce Decomposition
 
 **Definition (idempotent of a product).** Let $\star$ be a product on $\mathbb{B}$. An element $\tilde\Pi$ is an **idempotent of $\star$** when
 $$
@@ -116,7 +116,7 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (orthogonal, complete, primitive).** Idempotents $\tilde\Pi,\tilde\Pi'$ of an associative product are **orthogonal** when $\tilde\Pi\star\tilde\Pi'=\tilde\Pi'\star\tilde\Pi=0$; a family is **pairwise orthogonal** when $\tilde\Pi_i\star\tilde\Pi_j=0$ for $i\neq j$, and **complete** when in addition $\sum_i\tilde\Pi_i$ is the unit. A nontrivial idempotent is **primitive** when it is not the sum of two nonzero orthogonal idempotents, and for a semisimple algebra $\tilde\Pi$ is primitive exactly when $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ is a division ring.
 
-**Definition (projection).** When the product is the multiplication of a $*$-algebra, an idempotent $\tilde\Pi$ with $\tilde\Pi^{*}=\tilde\Pi$ is a **projection**; with the plain product and the star, the projections are the **orthogonal projections**, and the associated decomposition of §*The Peirce Decomposition* is an orthogonal direct sum.
+**Definition (Hermitian idempotent).** When the product is the multiplication of a $*$-algebra, an idempotent $\tilde\Pi$ with $\tilde\Pi^{*}=\tilde\Pi$ is a **Hermitian idempotent**; with the plain product and the star, the Hermitian idempotents are the idempotents orthogonal with respect to the form, and the associated decomposition of §*The Peirce Decomposition* is an orthogonal direct sum.
 
 **Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two algebraic norm pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
@@ -220,7 +220,7 @@ The one row on which the four products agree is the zero-divisor set. It is the 
 
 ## Summary
 
-A definition of the element theory names a product. This article states, once and for a general product $\star$, the unit and the inverses of a product; the left, right and two-sided zero divisor and the two annihilators; the idempotent, its orthogonal, complete and primitive families and the projection; the nilpotent, its index and the square-zero element; the powers and their bracketing, the root of a central value and the square root of an element; the commutator and the symmetrisation with the two parts of a product; the associator and the ternary product with the two classical identities; the left and right multiplications, the sandwich and the derivation; and the centre, the commutant, the isotropic element, the radical and the adjoint. Each is then read on the products of the space, and the dictionary of §9 records that the zero-divisor set is the single row on which the four general products agree, while the units, the idempotents, the square-zero elements and the annihilators separate them.
+A definition of the element theory names a product. This article states, once and for a general product $\star$, the unit and the inverses of a product; the left, right and two-sided zero divisor and the two annihilators; the idempotent, its orthogonal, complete and primitive families and the Hermitian idempotent; the nilpotent, its index and the square-zero element; the powers and their bracketing, the root of a central value and the square root of an element; the commutator and the symmetrisation with the two parts of a product; the associator and the ternary product with the two classical identities; the left and right multiplications, the sandwich and the derivation; and the centre, the commutant, the isotropic element, the radical and the adjoint. Each is then read on the products of the space, and the dictionary of §9 records that the zero-divisor set is the single row on which the four general products agree, while the units, the idempotents, the square-zero elements and the annihilators separate them.
 
 ## Summary of Notation
 
@@ -233,7 +233,7 @@ A definition of the element theory names a product. This article states, once an
 | $x^{-1}$ | the inverse of $x$, read in the product in force |
 | $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the central square, deciding the zero divisor of the plain product |
 | $A_\star(\tilde Q),B_\star(\tilde Q)$ | the left and the right annihilator of $\tilde Q$ in $\star$ |
-| $\tilde\Pi$ | an idempotent; $\tilde\Pi^{*}=\tilde\Pi$ makes it a projection |
+| $\tilde\Pi$ | an idempotent; $\tilde\Pi^{*}=\tilde\Pi$ makes it a Hermitian idempotent |
 | $\tilde\Upsilon$ | a nilpotent of the plain product; index two, hence square-zero |
 | $[x,y]_\star$, $x\circ_\star y$ | the commutator and the symmetrisation of $\star$ |
 | $(x,y,z)_\star$ | the associator of $\star$ |

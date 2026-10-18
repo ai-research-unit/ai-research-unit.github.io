@@ -94,7 +94,7 @@ $$
 \langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q} \circ d\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} (dQ_\mu)^2,
 $$
 
-where $\circ$ is the biquaternion product and ${}^{\natural}$ is the **quaternion conjugate**, the involution that reverses the three quaternion directions and leaves the complex coefficients alone: $e_t^{\natural}=e_t$, $\vec e_k^{\natural}=-\vec e_k$, hence $d\tilde{Q}^{\natural} = dQ_0\,e_t - dQ_1\,\vec e_x - dQ_2\,\vec e_y - dQ_3\,\vec e_z$. A second conjugation appears later in the article, the **bar**, and it acts on the other factor: it conjugates the complex coefficients and leaves the quaternion basis alone, $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}\,e_\mu$. The two are different operations of the same element, and the norm uses the first. The quaternion conjugate is what produces the sum of squares: the product $d\tilde{Q} \circ d\tilde{Q}$ of $d\tilde{Q}$ with itself is not $\sum_\mu (dQ_\mu)^2$. Expanding in real and imaginary parts,
+where $\circ$ is the biquaternion product and ${}^{\natural}$ is the **quaternion conjugate**, the involution that reverses the three quaternion directions and leaves the complex coefficients alone: $e_t^{\natural}=e_t$, $\vec e_k^{\natural}=-\vec e_k$, hence $d\tilde{Q}^{\natural} = dQ_t\,e_t - dQ_x\,\vec e_x - dQ_y\,\vec e_y - dQ_z\,\vec e_z$. A second conjugation appears later in the article, the **bar**, and it acts on the other factor: it conjugates the complex coefficients and leaves the quaternion basis alone, $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}\,e_\mu$. The two are different operations of the same element, and the norm uses the first. The quaternion conjugate is what produces the sum of squares: the product $d\tilde{Q} \circ d\tilde{Q}$ of $d\tilde{Q}$ with itself is not $\sum_\mu (dQ_\mu)^2$. Expanding in real and imaginary parts,
 
 $$
 (dQ_\mu)^2 = (dq_\mu)^2 - (dq'_\mu)^2 + 2i\,dq_\mu\,dq'_\mu.
@@ -105,20 +105,20 @@ The **real part** of $\langle d\tilde{Q}\rangle_{\natural} = \sum_\mu (dQ_\mu)^2
 Because each sector retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material sector, where only $dq'_t$ and the $dq_k$ are non-zero,
 
 $$
-\langle d\tilde{Q}\rangle_{\natural} = -(dq'_t)^2 + dq_1^2 + dq_2^2 + dq_3^2 = -c^2\,dt^2 + dx^2 + dy^2 + dz^2,
+\langle d\tilde{Q}\rangle_{\natural} = -(dq'_t)^2 + dq_x^2 + dq_y^2 + dq_z^2 = -c^2\,dt^2 + dx^2 + dy^2 + dz^2,
 $$
 
-the Minkowski interval of signature $(3,1)$. On the informational sector, where only $dq_0$ and the $dq'_k$ are non-zero,
+the Minkowski interval of signature $(3,1)$. On the informational sector, where only $dq_t$ and the $dq'_k$ are non-zero,
 
 $$
-\langle d\tilde{Q}\rangle_{\natural} = dq_0^2 - (dq'_x)^2 - (dq'_y)^2 - (dq'_z)^2 = c^2\,dt'^2 - dx'^2 - dy'^2 - dz'^2,
+\langle d\tilde{Q}\rangle_{\natural} = dq_t^2 - (dq'_x)^2 - (dq'_y)^2 - (dq'_z)^2 = c^2\,dt'^2 - dx'^2 - dy'^2 - dz'^2,
 $$
 
 the mirror interval of signature $(1,3)$. The two are exchanged by $i$, and the sign of the form reverses with them, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$. In both cases the null cone — the zero divisor set, discussed in the companion articles — has the same two interpretations:
 
 $$
-\mathbb{M}_-:\;\; (dq'_t)^2 = dq_1^2 + dq_2^2 + dq_3^2 \iff c^2dt^2 =dx^2+dy^2+dz^2, \qquad
-\mathbb{M}_+:\;\; dq_0^2 = (dq'_x)^2 + (dq'_y)^2 + (dq'_z)^2 \iff c^2dt'^2 = d(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)^2 .
+\mathbb{M}_-:\;\; (dq'_t)^2 = dq_x^2 + dq_y^2 + dq_z^2 \iff c^2dt^2 =dx^2+dy^2+dz^2, \qquad
+\mathbb{M}_+:\;\; dq_t^2 = (dq'_x)^2 + (dq'_y)^2 + (dq'_z)^2 \iff c^2dt'^2 = d(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)^2 .
 $$
 
 Each of these is one equation written twice: on the left in the sector's own parameters, on the right in the coordinates of physics.
@@ -143,16 +143,16 @@ $$
 \tilde{Q} = \tilde{R} = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-,
 $$
 
-the imaginary time $ic\,t$ together with the three real spatial coordinates $x, y, z$. The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$:
+the imaginary time $ic\,t$ together with the three real spatial coordinates $x, y, z$. The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$; its elements are the Lorentz rotors, written $\tilde U_{\mathrm L}$:
 
 $$
-SL(2,\mathbb{C}) \;\cong\; \{\tilde U \in \mathbb{B} : \tilde U\tilde U^{\natural} = e_t\}.
+SL(2,\mathbb{C}) \;\cong\; \{\tilde U_{\mathrm L} \in \mathbb{B} : \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t\}.
 $$
 
 This group **acts** on the material sector by the **rotor conjugation**
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde U\,\tilde{Q}\,\tilde U^{*}.
+\tilde{Q} \;\longmapsto\; \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*}.
 $$
 
 The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.
@@ -173,7 +173,7 @@ the real time $ct'$ together with the three imaginary spatial coordinates $ix', 
 - The **positive trace-one elements** in $\mathbb{M}_+$, of the form $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, are the mixed states, parametrizing the Bloch ball.
 - The **elements** of $\mathbb{M}_+$, of the form $\tilde{H} = h_0 e_t + i\vec h$ — equivalently written $\tilde{H} = h_0e_t + ih_1\vec e_x + ih_2\vec e_y + ih_3\vec e_z$ with $h_0, h_1, h_2, h_3 \in \mathbb{R}$, which is the usual writing of quantum physics — are the observables (they are automatically Hermitian by definition of $\mathbb{M}_+$), with spectral decomposition in terms of idempotents.
 - The **trace pairing** $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h$ gives the Born rule, as a consequence of the algebra rather than an independent postulate.
-- The **sandwich operation** $\tilde{Ϛ} \mapsto \tilde{P}\tilde{Ϛ}\tilde{P}/\mathrm{Tr}(\tilde{P}\tilde{Ϛ}\tilde{P})$ gives the projective measurement and state update (the trace in the denominator normalizes the post-measurement state).
+- The **sandwich operation** $\tilde{Ϛ} \mapsto \tilde\Pi\tilde{Ϛ}\tilde\Pi/\mathrm{Tr}(\tilde\Pi\tilde{Ϛ}\tilde\Pi)$ gives the projective measurement and state update (the trace in the denominator normalizes the post-measurement state).
 - The **unitary elements** of $\mathbb{B}$, and their conjugation action $\tilde{Ϛ} \mapsto \tilde{U}\tilde{Ϛ}\tilde{U}^{*}$, give the reversible evolution.
 - The distinction between **reversible evolution** and **irreversible measurement** is a property of the acting element (unitary vs. idempotent), not an additional postulate.
 
@@ -224,7 +224,7 @@ Two interpretations of the introduction are worth separating. Read as a statemen
 
 The framework is stated in one sentence: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the common biquaternion space of relativity and quantum physics, and its two natural real subspaces carry the two theories. The **anti-Hermitian subspace** $\mathbb{M}_-$ carries the four-vectors of relativity, the material sector, in the coordinates $(ict,x,y,z)$; the **Hermitian subspace** $\mathbb{M}_+$ carries the operator algebra of quantum physics, the informational sector, in the coordinates $(ct',ix',iy',iz')$. Multiplication by $i$ exchanges the two.
 
-Both sectors are written in the one biquaternion space. A material element is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and an informational element is $\tilde{Q}=ct'\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$; the norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde U$ with $\tilde U\tilde U^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde{H}=h_0e_t+i\vec h$ with $h_0$ real.
+Both sectors are written in the one biquaternion space. A material element is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and an informational element is $\tilde{Q}=ct'\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$; the norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde U_{\mathrm L}$ with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde{H}=h_0e_t+i\vec h$ with $h_0$ real.
 
 The framework is a research program, not a finished theory. The algebraic identifications above are established mathematics; what is open is whether the framework has consequences beyond a reformulation of known physics. Six questions are recorded: the physical reality of the biquaternionic structure; a coupling between the sectors beyond the Lorentz conjugation, of which the square $\mathbb{M}_-\to\mathbb{M}_+$ is the minimal algebraic instance already supplied by the product; the extension to many qubits and to quantum field theory; a fully relativistic quantum theory; curved spacetime; and empirical contact. The local speed of light $c=1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict$ convention the vacuum approximation of a more general local structure.
 
@@ -253,7 +253,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $\tilde{H} = h_0 e_t + i\vec h$ | Hermitian element (observable of the informational sector); $h_0 \in \mathbb{R}$ is the scalar component and $\vec h = (h_1,h_2,h_3)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $q_te_t + iq'_k\vec e_k$ |
 | $(t, x, y, z)$ | Real coordinates of the material sector ($c$ is a scale factor, not a coordinate) |
 | $(t', x', y', z')$ | Real coordinates of the informational sector |
-| $\tilde U \in \mathbb{B}$ with $\tilde U\tilde U^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
+| $\tilde U_{\mathrm L} \in \mathbb{B}$ with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
 | $v$ | Particle or frame velocity |

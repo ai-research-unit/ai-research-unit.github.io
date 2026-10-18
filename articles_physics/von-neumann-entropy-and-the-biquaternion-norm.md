@@ -115,7 +115,7 @@ $$
 \lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec r|\bigr).
 $$
 
-The two projectors are idempotent, Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
+The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
 
 ### Entropy as a function of the biquaternion norm
 
@@ -158,7 +158,7 @@ $$
 = S(\tilde{Ϛ}) ,
 $$
 
-because the projectors are orthogonal and each has scalar part $\tfrac12$. Equivalently, in the trace notation,
+because the idempotents are orthogonal and each has scalar part $\tfrac12$. Equivalently, in the trace notation,
 
 $$
 S(\tilde{Ϛ}) = -\mathrm{Tr}\bigl(\tilde{Ϛ}\log\tilde{Ϛ}\bigr),

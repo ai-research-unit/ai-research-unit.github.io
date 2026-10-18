@@ -277,7 +277,7 @@ $$
 i\partial/\partial tF + DF = 0,
 $$
 
-which for a field equal to its own conjugate is a known reformulation of the vacuum Maxwell equations, attributed by the source to Imaeda [1976]. The algebra thus supplies, in one object, the two helicities as the two minimal left ideals of the shifted pair — which is the framework's own statement (*The Biquaternion Vacuum as a Minimal Idempotent*) that a helicity state is a rank-one projector of the algebra, here with the parameter's direction in place of the vacuum's.
+which for a field equal to its own conjugate is a known reformulation of the vacuum Maxwell equations, attributed by the source to Imaeda [1976]. The algebra thus supplies, in one object, the two helicities as the two minimal left ideals of the shifted pair — which is the framework's own statement (*The Biquaternion Vacuum as a Minimal Idempotent*) that a helicity state is a rank-one Hermitian idempotent of the algebra, here with the parameter's direction in place of the vacuum's.
 
 **Which pair, and which splitting.** The projectors $P_\pm$ are **not** the chirality projectors of the following subsection. The chirality pair is built from the volume element, $\tfrac12(1\pm\gamma_5)$, and it is Hermitian and orthogonal; the pair $P_\pm$ is built from the shift parameter and acts by right multiplication, so its elements are non-Hermitian and, as the algebra requires, not orthogonal. Helicity and chirality coincide only for a massless field; at $m\neq0$ the two pairs are genuinely different splittings of the same space, and the neutrino or antineutrino identification is a statement about the helicity pair and not about $\gamma_5$. The corpus records the identification as the source's interpretation rather than as a derivation: what the algebra contributes to it is the shape — two complementary null idempotents, one for each sign of the frequency — and the name *neutrino* is the source's, not the algebra's.
 
@@ -677,10 +677,10 @@ comparing it with the biquaternion Maxwell equation $\tilde{\nabla}\tilde{F} = -
 The corpus's chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ is the same equation written in the other useful way: it displays the spinor split — the two minimal left ideals — but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by the idempotent superposition
 
 $$
-D = \tilde Q_1\sigma + \tilde Q_2^{*}\bar{\sigma},
+D = \tilde Q_1\tilde\Pi + \tilde Q_2^{*}\bar{\tilde\Pi},
 $$
 
-with $\sigma$ the idempotent along a unit vector $\vec{\nu}$ and $\bar{\sigma}$ its conjugate, the two projecting onto the two minimal left ideals — so that one half of $\tilde Q_1$ and half of the conjugate of $\tilde Q_2$ land in **different** ideals, which is what makes the superposition a **bispinor** and not a one-sided spinor; the resulting single equation
+with $\tilde\Pi$ the idempotent along a unit vector $\vec{\nu}$ and $\bar{\tilde\Pi}$ its conjugate, the two projecting onto the two minimal left ideals — so that one half of $\tilde Q_1$ and half of the conjugate of $\tilde Q_2$ land in **different** ideals, which is what makes the superposition a **bispinor** and not a one-sided spinor; the resulting single equation
 
 $$
 \tilde{\nabla}D = m\,D^{*}\,i\vec{\nu}
@@ -712,7 +712,7 @@ $$
 \bigl(D + (\varphi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \beta)I\bigr)f_- = 0,
 $$
 
-the two components $f_\pm$ being the projections of $f$ by the idempotents $P_\pm$ that the shifted-operator theory supplies. Each of the two is an equation of the form $(D + \alpha(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))u = 0$ with a **scalar** coefficient. That equation is the subject of the monograph's §4.1.5, and the corpus already carries its solution: the **zero-divisor device** recorded in *Maxwell's Equations in Chiral Media*, in which a solution of the eikonal equation $(\nabla\chi)^2 = \alpha^2$ conjugates $D + \alpha$ into $D + \mathcal{Q}_+$ with $\mathcal{Q}_+ = \nabla\chi$ a zero divisor, and the solutions are built from the exponentials $\exp(\pm i\Theta)$ of the accumulated phase and analytic transverse functions. The chain therefore closes inside the corpus: pseudoscalar-potential Dirac equation $\to$ shifted operator with a scalar coefficient $\to$ eikonal conjugation by a zero divisor $\to$ explicit solutions. The exceptional case, $\omega^2$ a zero divisor (an isotropic $\omega$), is separate; the monograph handles it with a one-variable ansatz, because the idempotents $P_\pm$ degenerate there.
+the two components $f_\pm$ being the projections of $f$ by the projectors $P_\pm$ that the shifted-operator theory supplies. Each of the two is an equation of the form $(D + \alpha(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))u = 0$ with a **scalar** coefficient. That equation is the subject of the monograph's §4.1.5, and the corpus already carries its solution: the **zero-divisor device** recorded in *Maxwell's Equations in Chiral Media*, in which a solution of the eikonal equation $(\nabla\chi)^2 = \alpha^2$ conjugates $D + \alpha$ into $D + \mathcal{Q}_+$ with $\mathcal{Q}_+ = \nabla\chi$ a zero divisor, and the solutions are built from the exponentials $\exp(\pm i\Theta)$ of the accumulated phase and analytic transverse functions. The chain therefore closes inside the corpus: pseudoscalar-potential Dirac equation $\to$ shifted operator with a scalar coefficient $\to$ eikonal conjugation by a zero divisor $\to$ explicit solutions. The exceptional case, $\omega^2$ a zero divisor (an isotropic $\omega$), is separate; the monograph handles it with a one-variable ansatz, because the projectors $P_\pm$ degenerate there.
 
 **What this does and does not add.** It adds the observation that the chirality-sensitive Dirac coupling is not new machinery: it is the shifted operator the corpus already possesses, read at a position-dependent parameter, and the corpus's zero-divisor device solves it. It does not supply solutions for the electric potential — the monograph reaches that case by the same conjugation, but the corpus treats electromagnetic coupling separately in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — and it claims no new physics: the coupling list is standard, and it is surveyed in the encyclopaedic compendium the monograph cites for the classification of exact Dirac solutions up to the late 1980s, now recorded in the Further Reading below.
 
@@ -825,7 +825,7 @@ The same construction has two consequences that belong to the equation rather th
 | $A$ | Real-linear bijection from bispinors to biquaternion-valued functions (the explicit dictionary) |
 | $C$, also written $^{*}$ | Componentwise complex conjugation; the timelike generator of that dictionary |
 | $\mathcal{N} = i\partial/\partial Q_t + D - m\,i\,C M_{i_3}$ | Biquaternionic Dirac operator with the conjugation in the mass term |
-| $P_k^{\pm} = \tfrac12 M_{(1\pm i\,i_k)}$ | Complementary idempotents (right multiplications) of the source's factorisation $\mathcal{N}=u^{+}Ru^{-}$ |
+| $P_k^{\pm} = \tfrac12 M_{(1\pm i\,i_k)}$ | Complementary projectors (right multiplications) of the source's factorisation $\mathcal{N}=u^{+}Ru^{-}$ |
 | $R = P_1^{+}(i\partial/\partial t+D)+P_1^{-}(-i\partial/\partial t+D)-m\,M_{i_2} = D-\partial/\partial tM_{i_1}-m\,M_{i_2}$ | The conjugation-free operator of the same source; *real*, with coefficients in $\mathbb{H}$, so $R[\mathrm{Re}\,F]=R[\mathrm{Im}\,F]=0$ |
 | $\Phi' = iZ_c\Phi$ | The involutive symmetry of the Dirac equation that the reality of $R$ produces; $(iZ_c)^2=1$ |
 | $\epsilon = \exp(2G)$, $\vec{\nu} = \mathrm{grad}\,G$ | The Dirac potential $g=G'$ read as the inhomogeneity of a static Maxwell medium |

@@ -164,22 +164,22 @@ which is the subject of the penultimate section.
 A Lorentz transformation acts on the material sector by **rotor conjugation**,
 
 $$
-\tilde{R}\ \longmapsto\ \tilde U\,\tilde{R}\,\tilde U^{*},
+\tilde{R}\ \longmapsto\ \tilde U_{\mathrm L}\,\tilde{R}\,\tilde U_{\mathrm L}^{*},
 \qquad
-\tilde U\in\mathbb{B},
+\tilde U_{\mathrm L}\in\mathbb{B},
 \qquad
-\tilde U\overline{\tilde U} = e_t,
+\tilde U_{\mathrm L}\overline{\tilde U_{\mathrm L}} = e_t,
 $$
 
-with $\tilde U$ a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
+with $\tilde U_{\mathrm L}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
 
 $$
-\tilde U(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
+\tilde U_{\mathrm L}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
 \qquad
-\tilde U^{\natural} = \tilde U^{*} ,
+\tilde U_{\mathrm L}^{\natural} = \tilde U_{\mathrm L}^{*} ,
 $$
 
-with $\psi$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde U = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\psi\,\vec u$ to the rest four-velocity $ic\,e_t$.
+with $\psi$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde U_{\mathrm L} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\psi\,\vec u$ to the rest four-velocity $ic\,e_t$.
 
 Composition of two boosts is composition of their rotors. For two **collinear** boosts the rotors commute and their rapidities add: if the first has rapidity $\psi_1$ and the second $\psi_2$ along the same direction, the product is the boost of rapidity $\psi_1+\psi_2$, and the composed velocity is
 
@@ -190,14 +190,14 @@ $$
 which is the standard addition law. The verification is elementary in the quaternion algebra: the boost rotor of rapidity $\psi$ along $\vec u$ acts on the rest four-velocity as
 
 $$
-\tilde U\,\bigl(ic\,e_t\bigr)\,\tilde U^{*}
-= ic\,e_t\,\tilde U^2
+\tilde U_{\mathrm L}\,\bigl(ic\,e_t\bigr)\,\tilde U_{\mathrm L}^{*}
+= ic\,e_t\,\tilde U_{\mathrm L}^2
 = ic\left(\cosh\psi\,e_t + i\sinh\psi\,\vec u\right)
 = ic\cosh\psi\,e_t - c\sinh\psi\,\vec u
 = \gamma\left(ic\,e_t - \vec v\right),
 $$
 
-using that $ic\,e_t$ is central, that $\tilde U^{*} = \tilde U$ for a pure boost, and that $\tilde U^2 = \cosh\psi + i\sinh\psi\,\vec u$. The quaternion-conjugate rotor $\tilde U^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u$, which is the boost of rapidity $-\psi$, carries the rest four-velocity to $\gamma(ic\,e_t+\vec v)$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
+using that $ic\,e_t$ is central, that $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$ for a pure boost, and that $\tilde U_{\mathrm L}^2 = \cosh\psi + i\sinh\psi\,\vec u$. The quaternion-conjugate rotor $\tilde U_{\mathrm L}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u$, which is the boost of rapidity $-\psi$, carries the rest four-velocity to $\gamma(ic\,e_t+\vec v)$ instead. Composing two such rotors and reading off the resulting rapidity gives the addition law above. The rapidity is additive because it is half the logarithm of the ratio of the light-cone coordinates, and that additivity is exactly what the hyperbolic parametrization was built to display.
 
 For **non-collinear** boosts the rotors do not commute, and their product is not a pure boost: it is a boost together with a rotation. The rotation is the Thomas–Wigner rotation, and it is the group-theoretic statement that the boosts do not form a subgroup. It is not needed for the free particle's kinematics, and it is treated in its own right in the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*; here it is enough to record that the free four-velocity composes by rotor multiplication, and that the composition is associative while the velocity addition it induces is not.
 
@@ -370,8 +370,8 @@ The interval is the biquaternion norm, the mass shell is its level set, the caus
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum |
 | $E = \gamma mc^2$, $\vec p = \gamma m\vec v$ | Energy and momentum |
 | $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Mass-shell relation |
-| $\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, $\tilde U\tilde U^{\natural}=e_t$ | Boost rotor, in $\mathbb{M}_+$ |
-| $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ | Boost rotor, in $\mathbb{M}_+$ |
+| $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$, $L = -mc^2/\gamma$ | Free action and Lagrangian |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

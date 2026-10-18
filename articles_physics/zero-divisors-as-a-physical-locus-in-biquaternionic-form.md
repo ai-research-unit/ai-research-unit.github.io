@@ -155,7 +155,7 @@ which was verified numerically for four random normalised module elements, with 
 
 ### Invariance of the locus under the flow
 
-The locus is dynamically inert. A rotor $\tilde U_{\mathrm L}$ with unit norm satisfies
+The locus is dynamically inert. A Lorentz rotor $\tilde U_{\mathrm L}$ with unit norm satisfies
 
 $$
 \langle\tilde U_{\mathrm L}\,\tilde Q\rangle_{\natural}=\langle\tilde U_{\mathrm L}\rangle_{\natural}\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural},

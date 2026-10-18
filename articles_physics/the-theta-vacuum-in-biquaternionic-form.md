@@ -86,7 +86,7 @@ The structural link between the $\theta$ vacuum and the anomaly is that the angl
 
 **The determinant's phase.** From *The Functional Determinant in Biquaternionic Form*:
 
-- a **central** fluctuation operator $S''=\kappa e_t$ has a determinant that factors; on the two-complex-dimensional module it is $\kappa^2$, real and positive for a positive operator, and its logarithm is the central scalar that enters the effective action;
+- a **central** fluctuation operator $S^{(2)}=\kappa e_t$ has a determinant that factors; on the two-complex-dimensional module it is $\kappa^2$, real and positive for a positive operator, and its logarithm is the central scalar that enters the effective action;
 - a **non-central** operator has a determinant that does not factor, and the determinant acquires a **phase**. The chirality-off-diagonal Dirac mass is the instance: the mass term is a right multiplication, it mixes the two minimal left ideals, and the determinant of the family $\mathcal{D}$ over the family's parameter has a phase given by the eta invariant, the spectral asymmetry of the family.
 
 **The link.** For an operator family whose parameter is a background configuration, the phase of the determinant is the weighted count of spectral crossings, and the topological charge is what the phase counts. The $\theta$ angle enters as the coefficient of that phase. The trace anomaly of the previous article is the *modulus* statement about the same determinant (the conformal variation of $\log|\det|$), and the $\theta$ angle is the *phase* statement about it. This is the article's organising interpretation: one determinant, two anomalous interpretations, one central in character and one a phase.

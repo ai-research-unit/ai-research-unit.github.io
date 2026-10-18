@@ -20,10 +20,10 @@ The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otim
 $$
 \tilde{V} = \gamma(ic\,e_t+\vec v),\qquad \langle\tilde{V}\rangle_{\natural} = -c^2,\qquad \gamma = \Bigl(1-\frac{\vec v^2}{c^2}\Bigr)^{-1/2},
 $$
-and the boost rotor is
+and the boost rotor, the Lorentz rotor $\tilde U_{\mathrm L}$, is
 $$
-\tilde U = \cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u = \exp((\psi/2)\,i\vec u),
-\qquad \langle\tilde U\rangle_{\natural} = 1,\qquad \tanh\psi = \frac{v_b}{c},
+\tilde U_{\mathrm L} = \cosh\frac{\psi}{2}\,e_t+i\sinh\frac{\psi}{2}\,\vec u = \exp((\psi/2)\,i\vec u),
+\qquad \langle\tilde U_{\mathrm L}\rangle_{\natural} = 1,\qquad \tanh\psi = \frac{v_b}{c},
 $$
 Hermitian and of unit norm. Throughout, $c$ is the speed of light in the medium, $\vec v$ a particle velocity, $\rho$ the geodesic distance in velocity space and $\psi = \rho/c$ the rapidity.
 
@@ -149,7 +149,7 @@ $$
 $$
 the **spherical** law of cosines-type relation — the plus sign — while the *distance* between the two frames' velocities has the minus sign above. The two laws are the two faces of one identity: they are exchanged by $\cos\theta\mapsto-\cos\theta$, and equivalently by $c\mapsto ic$ at fixed rapidities, which is exactly the Sommerfeld interchange between the Lobachevsky and the spherical representation of the velocity composition — the velocities are added on the surface of a sphere of imaginary radius, and the imaginary radius is the $R\mapsto iR$ of Taurinus (1826). The framework's own form of the interchange is the Weierstrass one recorded above: the hyperbolic and the circular functions are the same functions at $c$ and at $ic$.
 
-Two limits fix the rule. For $\theta = 0$ the composition law reduces to $\cosh(a+b)$, the collinear case. For $\theta = \pi/2$ it reduces to $\cosh\rho = \cosh a\cosh b$, so two perpendicular boosts of rapidities $a$ and $b$ give a frame whose rapidity is *not* $\sqrt{a^2+b^2}$ but the value with $\cosh$ in place of the square root; the Euclidean hypotenuse is the small-rapidity approximation, and the difference is of order $a^2b^2$. The two-boost product is also not a pure boost: written in the polar decomposition $\tilde U_2\tilde U_1 = \tilde U_{\mathrm b}\tilde{W}$ it contains the Wigner rotation $\tilde{W}$, which is the subject of the next section.
+Two limits fix the rule. For $\theta = 0$ the composition law reduces to $\cosh(a+b)$, the collinear case. For $\theta = \pi/2$ it reduces to $\cosh\rho = \cosh a\cosh b$, so two perpendicular boosts of rapidities $a$ and $b$ give a frame whose rapidity is *not* $\sqrt{a^2+b^2}$ but the value with $\cosh$ in place of the square root; the Euclidean hypotenuse is the small-rapidity approximation, and the difference is of order $a^2b^2$. The two-boost product is also not a pure boost: written in the polar decomposition $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1} = \tilde U_{\mathrm b}\tilde{W}$ it contains the Wigner rotation $\tilde{W}$, which is the subject of the next section.
 
 **Numerical check.** For $a = b = 1$ and $\theta = \pi/2$ the composition law gives $\cosh\rho = \cosh^2 1 = 2.38110$ and $\rho = 1.51337$, against the Euclidean hypotenuse $\sqrt{a^2+b^2} = 1.41421$; the two differ by $0.09916$, which is the gap of order $a^2b^2$ between the exact rule and the flat approximation. The composed four-velocity, computed by multiplying the two $4\times4$ boost matrices, has the same $\gamma$ as $\cosh\rho$ to machine precision.
 
@@ -159,7 +159,7 @@ Two limits fix the rule. For $\theta = 0$ the composition law reduces to $\cosh(
 
 A boost is a point of velocity space, and a path of boosts is a path in it; the statement that a closed path of boosts need not be a closed path of frames is the statement that the connection has curvature, and the Wigner rotation is its holonomy. The holonomy has a closed geometric value.
 
-**Proposition.** Let $\tilde U_1$ have rapidity $a$ along $\vec u_x$ and $\tilde U_2$ rapidity $b$ along $\vec u_y$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde U_2\tilde U_1$. Then, in rapidity units,
+**Proposition.** Let $\tilde U_{\mathrm L,1}$ have rapidity $a$ along $\vec u_x$ and $\tilde U_{\mathrm L,2}$ rapidity $b$ along $\vec u_y$, let $\rho$ be the rapidity of the composed frame, fixed by the composition law above, and let $\alpha$ be the angle of the Wigner rotation of the product $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$. Then, in rapidity units,
 $$
 \alpha = \pi-(A+B+C) ,
 $$

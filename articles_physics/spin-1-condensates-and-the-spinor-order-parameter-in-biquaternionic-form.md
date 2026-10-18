@@ -103,7 +103,7 @@ and the normalisation $\vec\zeta^\dagger\vec\zeta=1$ is the normalisation of the
 In the framework the triplet sector is the image of the symmetriser
 
 $$
-P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),
+\tilde\Pi_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),
 $$
 
 acting on the four-dimensional module $V\otimes V$ of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. The spin-one operators are the symmetric combinations
@@ -115,7 +115,7 @@ $$
 which act irreducibly on the triplet and annihilate the singlet, and whose restrictions reproduce the matrices $F_k$ above with matrix elements $\sqrt2\hbar$ in the standard normalisation. A condensate state is thus an element of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ of the form
 
 $$
-\rho=P_{\mathrm{sym}}\,\rho\,P_{\mathrm{sym}},\qquad \rho\ge0,\qquad \mathrm{Tr}\,\rho=1 ,
+\rho=\tilde\Pi_{\mathrm{sym}}\,\rho\,\tilde\Pi_{\mathrm{sym}},\qquad \rho\ge0,\qquad \mathrm{Tr}\,\rho=1 ,
 $$
 
 that is, a state of the two-factor algebra living in the exchange-symmetric sector. The spinor is its pure representative,
@@ -161,7 +161,7 @@ The two order parameters are therefore the framework's rank-one and rank-two ten
 The spin-one coherent states are the rotations of the stretched state. In the two-factor realisation the stretched state is the product of two identical fundamental states, $|\!\uparrow\uparrow\rangle$, and the framework's version of it is the symmetrised product of two identical fundamental idempotents,
 
 $$
-P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)P_{\mathrm{sym}}
+\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}}
 =\lvert\vec\zeta_{\vec u}\rangle\langle\vec\zeta_{\vec u}\rvert ,
 $$
 
@@ -174,11 +174,11 @@ This gives the algebraic form of the ferromagnetic order: the order parameter is
 The polar states have a different and equally transparent realisation: they are the symmetrised products of two *antipodal* fundamental idempotents,
 
 $$
-P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)P_{\mathrm{sym}}
+\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}
 =\tfrac{1}{2}\,\lvert\vec\zeta_{\vec u}^{\mathrm{pol}}\rangle\langle\vec\zeta_{\vec u}^{\mathrm{pol}}\rvert ,
 $$
 
-with $\tilde\Pi(-\vec u)$ the orthogonal idempotent along the same axis. That the result is a projector, and that it is the polar state with director $\vec u$, was verified directly: for $\vec u=\vec u_z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\vec F\rangle=0$, $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are *antiparallel*: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.
+with $\tilde\Pi(-\vec u)$ the orthogonal idempotent along the same axis. That the result is an idempotent, and that it is the polar state with director $\vec u$, was verified directly: for $\vec u=\vec u_z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\vec F\rangle=0$, $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are *antiparallel*: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.
 
 The two families exhaust the two extreme values of the magnetic invariant, and they are distinguished by a single algebraic choice — whether the two fundamental idempotents that are symmetrised are the same or orthogonal. The broken-axisymmetric family, which interpolates between them when $\zeta<0$, corresponds to symmetrising two fundamental idempotents that are neither identical nor orthogonal; the angle between the two fundamental spin directions parameterises the departure from the two extremes.
 
@@ -263,11 +263,11 @@ The pattern is the one the subcategory has established throughout: the algebra s
 
 ## Summary
 
-- The order parameter of a spin-one condensate is a unit spinor $\vec\zeta\in\mathbb{C}^3$ carrying the three spin projections, invariant under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; in the framework it is a vector in the symmetric square $\mathrm{Sym}^2V$ of the defining module, realised as the triplet sector of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ selected by $P_{\mathrm{sym}}$, with components $(c_{\uparrow\uparrow},\sqrt2c_{\uparrow\downarrow},c_{\downarrow\downarrow})$.
+- The order parameter of a spin-one condensate is a unit spinor $\vec\zeta\in\mathbb{C}^3$ carrying the three spin projections, invariant under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; in the framework it is a vector in the symmetric square $\mathrm{Sym}^2V$ of the defining module, realised as the triplet sector of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ selected by $\tilde\Pi_{\mathrm{sym}}$, with components $(c_{\uparrow\uparrow},\sqrt2c_{\uparrow\downarrow},c_{\downarrow\downarrow})$.
 - The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $\exp(i\alpha)e_t$, and the spin rotation is the adjoint action on the triplet.
 - The standard mean-field energy is a function of the spinor only through the three invariants $\lvert\langle\vec F\rangle\rvert^2$, $\langle F_z\rangle$ and $\langle F_z^2\rangle$. In the framework these are the rank-one tensor expectation, the quadratic $F_z^2$ expectation, and the $z$-component of the magnetic order; the alignment was verified to be $\langle F_z^2\rangle=\tfrac23+n_3/\sqrt3-n_8/3$ on random pure states, and the magnetic order components are $s_1=\sqrt{2/3}(n_1+n_6)$, $s_2=\sqrt{2/3}(n_2+n_7)$, $s_3=n_3/\sqrt3+n_8$.
 - The nematic (quadrupolar) order parameter is the traceless symmetric tensor $\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac23\delta_{ij}$; for the polar state along $\vec u$ it is $\tfrac13\delta_{ij}-\vec u_i\vec u_j$, invariant under $\vec u\to-\vec u$. The polar state $\vec\zeta=(0,1,0)^T$ has $\langle\vec F\rangle=0$ and $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$, both verified.
-- Ferromagnetic and polar ground states have a common algebraic origin: the ferromagnetic states are $P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)P_{\mathrm{sym}}$, symmetrised products of *identical* fundamental idempotents, with $\lvert\langle\vec F\rangle\rvert=1$; the polar states are $P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)P_{\mathrm{sym}}=\tfrac12\lvert\vec\zeta^{\mathrm{pol}}_{\vec u}\rangle\langle\vec\zeta^{\mathrm{pol}}_{\vec u}\rvert$, symmetrised products of *antipodal* idempotents, with $\langle\vec F\rangle=0$. Parallel constituents give magnetic order, antiparallel constituents give nematic order.
+- Ferromagnetic and polar ground states have a common algebraic origin: the ferromagnetic states are $\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)\tilde\Pi_{\mathrm{sym}}$, symmetrised products of *identical* fundamental idempotents, with $\lvert\langle\vec F\rangle\rvert=1$; the polar states are $\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}=\tfrac12\lvert\vec\zeta^{\mathrm{pol}}_{\vec u}\rangle\langle\vec\zeta^{\mathrm{pol}}_{\vec u}\rvert$, symmetrised products of *antipodal* idempotents, with $\langle\vec F\rangle=0$. Parallel constituents give magnetic order, antiparallel constituents give nematic order.
 - The order-parameter manifolds follow from the orbit-stabiliser computation with the stabilisers $\mathrm{U}(1)_{\mathrm{diag}}$ and $\mathrm{U}(1)\rtimes\mathbb{Z}_2$: $M_{\mathrm{FM}}\cong S^2\times S^1$ and $M_{\mathrm{polar}}\cong(S^2/\mathbb{Z}_2)\times S^1$, both of three real dimensions, the second encoding the unoriented director.
 - The uniform energy is a quadratic function of the Bloch vector of the symmetric sector; the phase diagram is the competition of two quadratic forms, and the couplings that decide the winner are imported from the two-body theory, not derived from the algebra. A numerical minimisation over superpositions reproduces the standard corners: ferromagnetic ($\lvert\langle\vec F\rangle\rvert=1$, $\langle F_z^2\rangle=1$ for the field-aligned member of the degenerate direction family) for $c_2<0$ at $\zeta=0$, polar ($0$, $0$) for $c_2>0$ at $\zeta>0$, and broken axisymmetric ($0$, $1$) for $c_2>0$ at $\zeta<0$; the minimiser is always a pure state, as convexity requires.
 
@@ -283,7 +283,7 @@ The pattern is the one the subcategory has established throughout: the algebra s
 | $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$ | Symmetry group of the order parameter |
 | $c_0,c_2$ | Spin-independent and spin-dependent contact couplings |
 | $p,\zeta$ | Linear and quadratic Zeeman coefficients |
-| $P_{\mathrm{sym}}$ | Symmetriser onto the triplet of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
+| $\tilde\Pi_{\mathrm{sym}}$ | Symmetriser onto the triplet of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
 | $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ | Triplet spin operators of the two-factor algebra |
 | $\tilde\Pi(\pm\vec u)$ | Fundamental idempotents of the informational sector |
 | $n_1,\dots,n_8$ | Bloch coordinates of the symmetric-sector state |

@@ -6,7 +6,7 @@ This article is one of a series of **worked exercises** that illustrate quantum 
 
 The immediately preceding exercise, *Exercise: The Reduced State of an Entangled Subsystem*, introduced the partial trace $\mathrm{Tr}_2$ and computed the reduced state of the singlet. That exercise is about the **state**; it observed, in passing, that the reduced state $\tfrac12 e_t$ has von Neumann entropy $\log 2$. The present exercise is about that number. It poses the computation of the **entanglement entropy** of a general pure two-qubit state, works the solution by two routes — the Schmidt decomposition, and the partial trace in $\mathbb{B}\otimes\mathbb{B}$ — and closes with further problems left to the reader. The reduced state of the singlet is used here only as a limiting case, and its computation is not repeated.
 
-The exercise applies three results of the parent articles and assumes them without rederivation: the partial trace $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ and its mirror $\mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a)$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{Ϛ}=\lambda_+\tilde\Pi_1(\vec u_r)+\lambda_-\tilde\Pi_2(\vec u_r)$ with $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ and $S(\tilde{Ϛ})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $P_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — whether the candidate entropy functional $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
+The exercise applies three results of the parent articles and assumes them without rederivation: the partial trace $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ and its mirror $\mathrm{Tr}_1(a\otimes b)=b\,\mathrm{Tr}_\mathbb{B}(a)$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{Ϛ}=\lambda_+\tilde\Pi_1(\vec u_r)+\lambda_-\tilde\Pi_2(\vec u_r)$ with $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ and $S(\tilde{Ϛ})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $\tilde\Pi_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — whether the candidate entropy functional $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary, $i^2=-1$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, and in particular $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ for idempotent $\tilde{P}$ and Hermitian $\tilde{H}$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, with $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$. Throughout, $\log$ denotes the natural logarithm, and
 
@@ -134,7 +134,7 @@ Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range 
 
 ### The biquaternion form of the worked family
 
-The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\psi_\theta\rangle$ corresponds to a Hermitian idempotent $P_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$. Equivalently, $\sigma_k\mapsto i \vec e_k$.
+The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\psi_\theta\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of trace one. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$. Equivalently, $\sigma_k\mapsto i \vec e_k$.
 
 For the state $|\psi_\theta\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $R_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, $\mu,\nu\in\{t,x,y,z\}$, are
 
@@ -148,12 +148,12 @@ $$
 and all other $R_{\mu\nu}$ vanish. The entries are recomputed directly: the diagonal weights give $R_{tz}=R_{zt}=\cos^2\theta-\sin^2\theta=\cos2\theta$ and $R_{zz}=\cos^2\theta+\sin^2\theta=1$; the only off-diagonal coherence is $\langle\uparrow\uparrow|\psi_\theta\rangle\langle\psi_\theta|\downarrow\downarrow\rangle$, which produces $R_{xx}=\sin2\theta$ via $\sigma_1\otimes\sigma_1$ and $R_{yy}=-\sin2\theta$ via $\sigma_2\otimes\sigma_2$. Translating $\sigma_\mu\otimes\sigma_\nu\mapsto(ie_\mu)\otimes(ie_\nu)$ (with $ie_t\mapsto e_t$) gives
 
 $$
-P_\theta=\tfrac14\Bigl(e_t\otimes e_t-\vec e_z\otimes \vec e_z
+\tilde\Pi_\theta=\tfrac14\Bigl(e_t\otimes e_t-\vec e_z\otimes \vec e_z
 +\sin2\theta\,\bigl(\vec e_y\otimes \vec e_y-\vec e_x\otimes \vec e_x\bigr)
 +i\cos2\theta\,\bigl(\vec e_z\otimes e_t+e_t\otimes \vec e_z\bigr)\Bigr).
 $$
 
-At $\theta=0$ this reduces to $\tilde\Pi_1\otimes \tilde\Pi_1$, a product idempotent; at $\theta=\tfrac{\pi}{4}$ it reduces to the Bell idempotent $P_{\Phi^+}$. It is therefore the correct one-parameter interpolation between the product state $|\uparrow\uparrow\rangle$ and the maximally entangled $|\Phi^+\rangle$.
+At $\theta=0$ this reduces to $\tilde\Pi_1\otimes \tilde\Pi_1$, a product idempotent; at $\theta=\tfrac{\pi}{4}$ it reduces to the Bell idempotent $\tilde\Pi_{\Phi^+}$. It is therefore the correct one-parameter interpolation between the product state $|\uparrow\uparrow\rangle$ and the maximally entangled $|\Phi^+\rangle$.
 
 ### The partial trace
 
@@ -175,7 +175,7 @@ because $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$
 Summing,
 
 $$
-\boxed{\;\rho_1=\mathrm{Tr}_2(P_\theta)=\tfrac12 e_t+\tfrac{i\cos2\theta}{2}\vec e_z
+\boxed{\;\rho_1=\mathrm{Tr}_2(\tilde\Pi_\theta)=\tfrac12 e_t+\tfrac{i\cos2\theta}{2}\vec e_z
 =\tfrac12\left(e_t+i\cos2\theta\,\vec e_z\right).\;}
 $$
 
@@ -226,12 +226,12 @@ The value at $\theta=\tfrac{\pi}{4}$ is $\log2$, the same entropy as the reduced
 
 ### The general biquaternion statement
 
-The worked family is the special case of a general statement, which is the biquaternion form of the Schmidt theorem. Let $P$ be a pure two-qubit idempotent of $\mathbb{B}\otimes\mathbb{B}$, and let
+The worked family is the special case of a general statement, which is the biquaternion form of the Schmidt theorem. Let $\tilde\Pi$ be a pure two-qubit idempotent of $\mathbb{B}\otimes\mathbb{B}$, and let
 
 $$
-\rho_1=\mathrm{Tr}_2(P)=\tfrac12\left(e_t+i\vec r_1\right),
+\rho_1=\mathrm{Tr}_2(\tilde\Pi)=\tfrac12\left(e_t+i\vec r_1\right),
 \qquad
-\rho_2=\mathrm{Tr}_1(P)=\tfrac12\left(e_t+i\vec r_2\right)
+\rho_2=\mathrm{Tr}_1(\tilde\Pi)=\tfrac12\left(e_t+i\vec r_2\right)
 $$
 
 be its reduced states. Then $\rho_1$ and $\rho_2$ are states of $\mathbb{M}_+$, and their spectra are $(1\pm|\vec r_1|)/2$ and $(1\pm|\vec r_2|)/2$. The Schmidt theorem says the spectra coincide, hence
@@ -303,19 +303,19 @@ Two qualifications belong with the verification, and neither is a defect of the 
 
 The fifth part of the exercise is a warning as much as a computation. The phrase "entanglement entropy" suggests that $S(\rho_1)$ measures the entanglement of the joint state. For **pure** joint states it does, by the Schmidt theorem. For **mixed** joint states it does not, and the counterexample is elementary.
 
-Consider the equal mixture of the two Bell idempotents $P_{\Phi^+}$ and $P_{\Phi^-}$,
+Consider the equal mixture of the two Bell idempotents $\tilde\Pi_{\Phi^+}$ and $\tilde\Pi_{\Phi^-}$,
 
 $$
-\rho_{\mathrm{mix}}=\tfrac12 P_{\Phi^+}+\tfrac12 P_{\Phi^-}.
+\rho_{\mathrm{mix}}=\tfrac12 \tilde\Pi_{\Phi^+}+\tfrac12 \tilde\Pi_{\Phi^-}.
 $$
 
-Its partial trace is $\tfrac12 e_t$ on each factor, since every Bell idempotent has $\mathrm{Tr}_1(P_\epsilon)=\mathrm{Tr}_2(P_\epsilon)=\tfrac12 e_t$ and the partial trace is linear. Hence
+Its partial trace is $\tfrac12 e_t$ on each factor, since every Bell idempotent has $\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$ and the partial trace is linear. Hence
 
 $$
 \rho_1=\tfrac12 e_t,\qquad |\vec r_1|=0,\qquad S(\rho_1)=\log2 .
 $$
 
-So the partial-trace entropy is maximal. But the joint state is **separable**. Using $P_{\Phi^\pm}=\tfrac14(e_t\otimes e_t\mp \vec e_x\otimes \vec e_x\pm \vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$, the mixture is
+So the partial-trace entropy is maximal. But the joint state is **separable**. Using $\tilde\Pi_{\Phi^\pm}=\tfrac14(e_t\otimes e_t\mp \vec e_x\otimes \vec e_x\pm \vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$, the mixture is
 
 $$
 \rho_{\mathrm{mix}}=\tfrac14\left(e_t\otimes e_t-\vec e_z\otimes \vec e_z\right)
@@ -352,9 +352,9 @@ $$
 
 which tends to $-\infty$ as $p\to1$. Interpret: as entanglement is switched on from a product state the entropy rises with an infinite slope in $p$, whereas at maximal entanglement ($p=\tfrac12$) the slope vanishes; the last increment of entanglement is entropically the cheapest.
 
-**P5 (the mixed-state question, unresolved).** For the Bell-diagonal mixture $\rho_p=pP_{\Phi^+}+(1-p)P_{\Phi^-}$, show that $\rho_1=\tfrac12 e_t$ and $S(\rho_1)=\log2$ for every $p\in[0,1]$, while the joint state is separable at least at $p=\tfrac12$. Determine the set of $p$ for which $\rho_p$ is entangled, and show that no function of $\rho_1$ can reproduce that set. What extra data about $\rho$ is needed? (The answer is the subject of the entanglement-of-formation literature; it is not developed in this series.)
+**P5 (the mixed-state question, unresolved).** For the Bell-diagonal mixture $\rho_p=p\tilde\Pi_{\Phi^+}+(1-p)\tilde\Pi_{\Phi^-}$, show that $\rho_1=\tfrac12 e_t$ and $S(\rho_1)=\log2$ for every $p\in[0,1]$, while the joint state is separable at least at $p=\tfrac12$. Determine the set of $p$ for which $\rho_p$ is entangled, and show that no function of $\rho_1$ can reproduce that set. What extra data about $\rho$ is needed? (The answer is the subject of the entanglement-of-formation literature; it is not developed in this series.)
 
-**P6 (purification).** Show that for any state $\rho_1$ of $\mathbb{M}_+$ there is a pure two-qubit idempotent $P$ in $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Tr}_2(P)=\rho_1$, and that the entanglement entropy of $P$ equals $S(\rho_1)$. Conclude that the partial-trace entropy of a mixed state is the entanglement entropy of its **purification**, not of the state itself. This is the precise sense in which the partial trace does measure entanglement — of a larger, pure system.
+**P6 (purification).** Show that for any state $\rho_1$ of $\mathbb{M}_+$ there is a pure two-qubit idempotent $\tilde\Pi$ in $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Tr}_2(\tilde\Pi)=\rho_1$, and that the entanglement entropy of $\tilde\Pi$ equals $S(\rho_1)$. Conclude that the partial-trace entropy of a mixed state is the entanglement entropy of its **purification**, not of the state itself. This is the precise sense in which the partial trace does measure entanglement — of a larger, pure system.
 
 ## Relation to the Other Exercises
 
@@ -375,11 +375,11 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 
 **The Schmidt route.** Writing $|\psi\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$ gives $\rho_1=MM^\dagger$ and $\rho_2=M^\dagger M$. The singular values of $M$ are the Schmidt coefficients $s_1,s_2$, and the reduced states have the common spectrum $s_1^2,s_2^2$. Hence $S(\rho_1)=S(\rho_2)=h(s_1^2)$: the entropy depends on the Schmidt data alone, vanishes exactly on product states, and equals $\log2$ exactly on maximally entangled states.
 
-**The biquaternion route.** For the family $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$, the state is the idempotent $P_\theta=\tfrac14(e_t\otimes e_t-\vec e_z\otimes \vec e_z+\sin2\theta(\vec e_y\otimes \vec e_y-\vec e_x\otimes \vec e_x)+i\cos2\theta(\vec e_z\otimes e_t+e_t\otimes \vec e_z))$. The partial trace keeps the terms with $e_t$ in the traced factor and gives $\rho_1=\tfrac12(e_t+i\cos2\theta\,\vec e_z)$, whose Bloch vector has length $|\cos2\theta|$. The single-qubit entropy formula on $\mathbb{M}_+$ then gives $S=h(\cos^2\theta)$.
+**The biquaternion route.** For the family $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$, the state is the idempotent $\tilde\Pi_\theta=\tfrac14(e_t\otimes e_t-\vec e_z\otimes \vec e_z+\sin2\theta(\vec e_y\otimes \vec e_y-\vec e_x\otimes \vec e_x)+i\cos2\theta(\vec e_z\otimes e_t+e_t\otimes \vec e_z))$. The partial trace keeps the terms with $e_t$ in the traced factor and gives $\rho_1=\tfrac12(e_t+i\cos2\theta\,\vec e_z)$, whose Bloch vector has length $|\cos2\theta|$. The single-qubit entropy formula on $\mathbb{M}_+$ then gives $S=h(\cos^2\theta)$.
 
 **The entropy functional.** The candidate of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, $S(\tilde{Ϛ})=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$, is correct for states in the interior of the Bloch ball when the principal branch of the biquaternion logarithm is used. It is the trace formula in disguise, since $\mathrm{Tr}=2\,\mathrm{Sc}$. Two qualifications are recorded: the branch must be the principal one, and the logarithm — hence the formula — is undefined at the pure states, which are zero divisors; the value $S=0$ there is the continuous extension.
 
-**The limit of the interpretation.** For pure joint states, the partial-trace entropy is the entanglement entropy. For mixed joint states it is not: the equal mixture of $P_{\Phi^+}$ and $P_{\Phi^-}$ is a separable state whose reduced entropy is nevertheless $\log2$. The title of the exercise holds for pure states and is left, deliberately, unclosed for mixed ones.
+**The limit of the interpretation.** For pure joint states, the partial-trace entropy is the entanglement entropy. For mixed joint states it is not: the equal mixture of $\tilde\Pi_{\Phi^+}$ and $\tilde\Pi_{\Phi^-}$ is a separable state whose reduced entropy is nevertheless $\log2$. The title of the exercise holds for pure states and is left, deliberately, unclosed for mixed ones.
 
 ## Summary of Notation
 
@@ -396,9 +396,9 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $\mathrm{Tr}_1,\mathrm{Tr}_2$ | Partial traces: $\mathrm{Tr}_2(a\otimes b)=a\,\mathrm{Tr}_\mathbb{B}(b)$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace equals twice the scalar part |
 | $\tilde\Pi(\pm\vec u_m)=\tfrac12(e_t\pm i\vec u_m)$ | Single-qubit idempotents |
-| $P_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k \vec e_k\otimes \vec e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
+| $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k \vec e_k\otimes \vec e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $|\psi_\theta\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
-| $P_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
+| $\tilde\Pi_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | General state of $\mathbb{M}_+$, $|\vec r|\le1$ |
 | $\rho_1=\mathrm{Tr}_2 P$ | Reduced state (Bloch vector $\vec r_1$) |
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |

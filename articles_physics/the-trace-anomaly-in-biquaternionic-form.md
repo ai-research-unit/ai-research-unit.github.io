@@ -6,7 +6,7 @@ A theory that is classically invariant under a local rescaling of the metric has
 
 This article asks what the biquaternion framework contributes to that statement. The findings are the following.
 
-1. **The quantum trace is a property of the determinant, not of the algebra.** The anomaly arises from the regularisation of $\log\det S''$, which is the object of *The Functional Determinant in Biquaternionic Form*. The divergence of that determinant is controlled by the heat-kernel coefficient $a_{d/2}$, and the anomalous trace is the conformal variation of the renormalised determinant. The algebra contributes neither the regularisation nor the divergence; it contributes the **operator on which the determinant is taken** and the **trace** that reads off the answer. This is the same division of labour the functional-integral and determinant articles record, and it is stated here at the outset so that the anomaly is not misattributed to the algebra.
+1. **The quantum trace is a property of the determinant, not of the algebra.** The anomaly arises from the regularisation of $\log\det S^{(2)}$, which is the object of *The Functional Determinant in Biquaternionic Form*. The divergence of that determinant is controlled by the heat-kernel coefficient $a_{d/2}$, and the anomalous trace is the conformal variation of the renormalised determinant. The algebra contributes neither the regularisation nor the divergence; it contributes the **operator on which the determinant is taken** and the **trace** that reads off the answer. This is the same division of labour the functional-integral and determinant articles record, and it is stated here at the outset so that the anomaly is not misattributed to the algebra.
 
 2. **The framework's trace is a fixed pairing, and this is where the algebra enters.** The framework reads scalars off biquaternions with the trace pairing $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$, whose value on the unit is $\mathrm{Tr}(e_t)=2$. The anomaly coefficient counts the real components of the field, and the framework's component count is fixed by the algebra: a biquaternion field has four complex coefficients, hence eight real components, four per sector. The trace pairing and the level-1 biquaternion norm $\mathrm{diag}(+1,+1,+1,+1)$ are the two interpretations of that count, and they agree with each other exactly, as the verification below shows.
 
@@ -58,9 +58,9 @@ The one-loop effective action is the determinant of the second variation, and th
 
 **The one-loop trace.** From *The Generating Functional and the Effective Action in Biquaternionic Form* the one-loop effective action is
 $$
-\Gamma_1[\phi;g] = \tfrac12\,\mathrm{Tr}\log S''[\phi;g] ,
+\Gamma_1[\phi;g] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\phi;g] ,
 $$
-with $S''$ the second variation of the classical action. Its response to a Weyl transformation is
+with $S^{(2)}$ the second variation of the classical action. Its response to a Weyl transformation is
 $$
 T^\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} ,
 $$
@@ -68,7 +68,7 @@ and the anomaly is the statement that this is non-zero for a classically Weyl-in
 
 **The heat-kernel origin.** Regulating the determinant with a proper-time cutoff, the trace of the heat kernel has the small-$t$ expansion
 $$
-\mathrm{Tr}\,\exp(-t\,S'')\;\sim\;\sum_{k\ge0} t^{(k-d)/2}\,a_k ,
+\mathrm{Tr}\,\exp(-t\,S^{(2)})\;\sim\;\sum_{k\ge0} t^{(k-d)/2}\,a_k ,
 $$
 and the divergence that survives renormalisation is $a_{d/2}$, the Seeley–DeWitt coefficient of order $d/2$. The conformal variation of the regularised determinant is
 $$
@@ -76,7 +76,7 @@ $$
 $$
 so that the anomalous trace is proportional to $a_{d/2}$. This is the standard heat-kernel account (DeWitt 2003; Vassilevich 2003), and it is the reason the anomaly is a one-loop, one-coefficient statement rather than a tower of terms: $a_{d/2}$ is local, and the higher coefficients are not.
 
-**The algebra's role in the formula.** The heat kernel of $S''$ is taken on a space that the framework names. If $S''$ is a differential operator acting on a biquaternion-valued field, then the trace in $\mathrm{Tr}\,\exp(-t S'')$ runs over the module, and the coefficient $a_{d/2}$ carries the module's multiplicity as an overall factor. The geometry of the operator supplies the curvature invariants; the algebra supplies the space on which the trace is taken. This is the same division as in the determinant article, and it is why the anomaly's *coefficient* — as opposed to its *form* — is the algebra's contribution.
+**The algebra's role in the formula.** The heat kernel of $S^{(2)}$ is taken on a space that the framework names. If $S^{(2)}$ is a differential operator acting on a biquaternion-valued field, then the trace in $\mathrm{Tr}\,\exp(-t S^{(2)})$ runs over the module, and the coefficient $a_{d/2}$ carries the module's multiplicity as an overall factor. The geometry of the operator supplies the curvature invariants; the algebra supplies the space on which the trace is taken. This is the same division as in the determinant article, and it is why the anomaly's *coefficient* — as opposed to its *form* — is the algebra's contribution.
 
 ## The Coefficients in Two and Four Dimensions
 
@@ -157,15 +157,15 @@ where $O$ is the operator multiplying the coupling. The relation is standard (th
 
 The anomaly's arithmetic comes from the heat-kernel expansion, and the framework's contribution is visible in it as a multiplicity.
 
-**The one-loop effective action.** With $S''$ the second variation of the action about the background, the one-loop contribution is
+**The one-loop effective action.** With $S^{(2)}$ the second variation of the action about the background, the one-loop contribution is
 $$
-\Gamma_1 = \tfrac12\,\mathrm{Tr}\log S'' = -\tfrac12\int_0^\infty\frac{dt}{t}\,\mathrm{Tr}\,\exp(-tS'')
+\Gamma_1 = \tfrac12\,\mathrm{Tr}\log S^{(2)} = -\tfrac12\int_0^\infty\frac{dt}{t}\,\mathrm{Tr}\,\exp(-tS^{(2)})
 $$
-up to a divergent constant, the proper-time representation of the logarithm. The integrand is the heat kernel of $S''$, and its small-$t$ behaviour carries the anomaly.
+up to a divergent constant, the proper-time representation of the logarithm. The integrand is the heat kernel of $S^{(2)}$, and its small-$t$ behaviour carries the anomaly.
 
 **The heat-kernel expansion.** For a second-order operator on a $d$-dimensional manifold,
 $$
-\mathrm{Tr}\,\exp(-tS'') \;\sim\; \frac{1}{(4\pi t)^{d/2}}\int d^dx\sqrt{g}\,\big(a_0+a_1t+a_2t^2+\cdots\big),
+\mathrm{Tr}\,\exp(-tS^{(2)}) \;\sim\; \frac{1}{(4\pi t)^{d/2}}\int d^dx\sqrt{g}\,\big(a_0+a_1t+a_2t^2+\cdots\big),
 $$
 with the Seeley–DeWitt coefficients $a_k$ built from the curvature and the operator's potential. The conformal transformation $g\to \exp(2\Omega)g$ acts on the expansion through $\Omega$, and the term that survives in the trace is the one multiplying $a_{d/2}$: that is the origin of the anomalous trace,
 $$
@@ -193,10 +193,10 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 **Standard, and transcribed.**
 
 - The definition of $T^{\mu\nu}$ as the metric variation of the action, the improvement term, and the classical vanishing of the trace.
-- The one-loop trace as the conformal variation of $\log\det S''$; the heat-kernel expansion; the identification of $a_{d/2}$ as the anomalous coefficient.
+- The one-loop trace as the conformal variation of $\log\det S^{(2)}$; the heat-kernel expansion; the identification of $a_{d/2}$ as the anomalous coefficient.
 - The values $c=1$ per real scalar in two dimensions and the four-dimensional $a$ and $c$ coefficients for scalar, fermion, and vector fields.
 - The relation $T^\mu{}_\mu\supset\frac{\beta}{2g}O$, the scheme dependence of $\Box R$, and the one-loop exactness of the anomaly (Adler–Bardeen non-renormalisation).
-- The proper-time representation $\Gamma_1=-\tfrac12\int_0^\infty\frac{dt}{t}\mathrm{Tr}\,\exp(-tS'')$ and the small-$t$ expansion of the heat kernel, $\mathrm{Tr}\,\exp(-tS'')\sim(4\pi t)^{-d/2}\int\sqrt g\,(a_0+a_1t+\cdots)$, with $k=d/2$ as the anomalous coefficient.
+- The proper-time representation $\Gamma_1=-\tfrac12\int_0^\infty\frac{dt}{t}\mathrm{Tr}\,\exp(-tS^{(2)})$ and the small-$t$ expansion of the heat kernel, $\mathrm{Tr}\,\exp(-tS^{(2)})\sim(4\pi t)^{-d/2}\int\sqrt g\,(a_0+a_1t+\cdots)$, with $k=d/2$ as the anomalous coefficient.
 
 **Interpretation.**
 
@@ -211,7 +211,7 @@ obtained by finite differences as $3.99999\ldots$ for a $4\times4$ $K$ and $1.99
 
 ## Summary
 
-The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\phi;g]$ has the conformal variation
+The trace anomaly in biquaternionic form is the standard anomaly with the framework's trace and component count. The classical trace vanishes for a Weyl-invariant action, and quantum mechanically the one-loop effective action $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\phi;g]$ has the conformal variation
 $$
 T^\mu{}_\mu\big|_{\text{one loop}} = \frac{1}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2} ,
 $$
@@ -231,7 +231,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |
 | $T^{\mu\nu}=\frac{2}{\sqrt{\vert g\vert}}\frac{\delta S}{\delta g_{\mu\nu}}$ | Stress tensor |
-| $\Gamma_1=\tfrac12\mathrm{Tr}\log S''$ | One-loop effective action whose variation is the anomaly |
+| $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$ | One-loop effective action whose variation is the anomaly |
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
 | $c$, $a$ | Two- and four-dimensional anomaly coefficients |
 
@@ -247,4 +247,4 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 - B. S. DeWitt, *The Global Approach to Quantum Field Theory* (Oxford University Press, 2003), for the heat-kernel expansion and the Seeley–DeWitt coefficients.
 - D. V. Vassilevich, "Heat kernel expansion: user's manual," *Physics Reports* **388** (2003) 279–360, for the heat-kernel coefficients used in the anomaly.
 - J. Zinn-Justin, *Quantum Field Theory and Critical Phenomena* (Oxford University Press, 2002), for the renormalisation of the effective action and the trace anomaly.
-- Companion articles: *The Functional Determinant in Biquaternionic Form*, for the regularised determinant whose variation is the anomaly; *The Generating Functional and the Effective Action in Biquaternionic Form*, for $\Gamma_1=\tfrac12\mathrm{Tr}\log S''$; *The Renormalization Group in Biquaternionic Form*, for the $\beta$ function the anomaly is read against; *Conventions in the Biquaternion Universe*, for the three metric levels and the trace pairing; *The Theta Vacuum in Biquaternionic Form*, for the phase of the non-central determinant; *The Partition Function in Biquaternionic Form* and *The Harmonic Oscillator in Biquaternionic Form*, for the sector interpretation of the component count.
+- Companion articles: *The Functional Determinant in Biquaternionic Form*, for the regularised determinant whose variation is the anomaly; *The Generating Functional and the Effective Action in Biquaternionic Form*, for $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; *The Renormalization Group in Biquaternionic Form*, for the $\beta$ function the anomaly is read against; *Conventions in the Biquaternion Universe*, for the three metric levels and the trace pairing; *The Theta Vacuum in Biquaternionic Form*, for the phase of the non-central determinant; *The Partition Function in Biquaternionic Form* and *The Harmonic Oscillator in Biquaternionic Form*, for the sector interpretation of the component count.

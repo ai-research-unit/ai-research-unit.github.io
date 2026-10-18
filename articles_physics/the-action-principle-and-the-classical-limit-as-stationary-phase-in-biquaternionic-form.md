@@ -91,7 +91,7 @@ dq_{i}/dt=\frac{\partial H}{\partial p_i},\qquad
 \,dS/dt=\sum_ip_i\frac{\partial H}{\partial p_i}-H
 $$
 
-reduce to Hamilton's equations when $\partial H/\partial S=0$; for the damped oscillator $H=\tfrac12p^2+\tfrac12\omega_0^2q^2+\gamma S$ reproduces the damped motion to $1.3\times10^{-11}$. Since $L$ is central-valued, so is $S$, and the extended space is the configuration and momentum biquaternions with one central coordinate adjoined: the algebra accommodates the construction without enlargement. The class covered is wider than damping — $d^2q/dt^2+f(q)\left(dq/dt\right)^{2}+g(t)dq/dt+h(q)=0$ is the Euler–Lagrange–Herglotz equation of $L=\tfrac12\left(dq/dt\right)^{2}-[2f(q)dq/dt+g(t)]S-U(q)$ for the $U$ solving $U'+2fU=h$, verified to $1.3\times10^{-15}$, with the Lane–Emden equation among its special cases. Herglotz's principle is the variational formulation of the non-conservative equations, not a workaround for them.
+reduce to Hamilton's equations when $\partial H/\partial S=0$; for the damped oscillator $H=\tfrac12p^2+\tfrac12\omega_0^2q^2+\gamma S$ reproduces the damped motion to $1.3\times10^{-11}$. Since $L$ is central-valued, so is $S$, and the extended space is the configuration and momentum biquaternions with one central coordinate adjoined: the algebra accommodates the construction without enlargement. The class covered is wider than damping — $d^2q/dt^2+f(q)\left(dq/dt\right)^{2}+g(t)dq/dt+h(q)=0$ is the Euler–Lagrange–Herglotz equation of $L=\tfrac12\left(dq/dt\right)^{2}-[2f(q)dq/dt+g(t)]S-U(q)$ for the $U$ solving $dU/dq+2fU=h$, verified to $1.3\times10^{-15}$, with the Lane–Emden equation among its special cases. Herglotz's principle is the variational formulation of the non-conservative equations, not a workaround for them.
 
 ### The First Variation and the Boundary Term
 
@@ -191,16 +191,16 @@ $$
 and $\mathcal{J}$ is the **Jacobi operator** of the problem. For a Lagrangian quadratic in the velocities, $L=\tfrac12 m \langle\,d\tilde q/dt\rangle_{\natural}-V(\tilde q)$, the Jacobi operator is
 
 $$
-\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/dt^2-V''(\tilde q)\,\delta\tilde q ,
+\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/dt^2-\frac{d^2V}{d\tilde q^2}(\tilde q)\,\delta\tilde q ,
 $$
 
 and the vanishing of the second variation on a nontrivial field, $\mathcal{J}\,\xi=0$, is the **Jacobi equation** for the deviation field $\xi(t)$,
 
 $$
-m\,d^2\xi/dt^2+V''(\tilde q_c)\,\xi=0 .
+m\,d^2\xi/dt^2+\frac{d^2V}{d\tilde q^2}(\tilde q_c)\,\xi=0 .
 $$
 
-This is the equation of **geodesic deviation** for the biquaternion-norm kinetic term. A point $t_2$ at which a nontrivial solution with $\xi(t_1)=0$ also satisfies $\xi(t_2)=0$ is a **conjugate point**; conjugate points are where the second variation degenerates and where the classical path ceases to be a strict minimum. For the free particle, $V''=0$ and the Jacobi equation reduces to $d^2\xi/dt^2=0$, whose solutions are linear in $t$; a linear solution vanishing at both ends of an interval of nonzero length is identically zero, so the free path has no conjugate points.
+This is the equation of **geodesic deviation** for the biquaternion-norm kinetic term. A point $t_2$ at which a nontrivial solution with $\xi(t_1)=0$ also satisfies $\xi(t_2)=0$ is a **conjugate point**; conjugate points are where the second variation degenerates and where the classical path ceases to be a strict minimum. For the free particle, $\frac{d^2V}{d\tilde q^2}=0$ and the Jacobi equation reduces to $d^2\xi/dt^2=0$, whose solutions are linear in $t$; a linear solution vanishing at both ends of an interval of nonzero length is identically zero, so the free path has no conjugate points.
 
 **Stability.** The sign of the second variation is the classical stability statement: positive for a stable extremum, a change of sign at a conjugate point. Nothing here is quantum; the second variation is the Hessian of a function on a function space, and its degeneracy is the classical Morse-theoretic datum.
 
@@ -263,14 +263,14 @@ The rotor action is the second reason the biquaternion formulation is useful for
 
 ### The Stationary-Phase Lemma
 
-The purely analytic statement is the following. Let $S(x)$ be a real smooth function with a single nondegenerate critical point $x_0$, $S'(x_0)=0$, $S''(x_0)\neq0$, and let $g$ be smooth. Then as $\hbar\to0^+$,
+The purely analytic statement is the following. Let $S(x)$ be a real smooth function with a single nondegenerate critical point $x_0$, $dS/dx(x_0)=0$, $d^2S/dx^2(x_0)\neq0$, and let $g$ be smooth. Then as $\hbar\to0^+$,
 
 $$
 \int g(x)\,\exp(\,iS(x)/\hbar)\,dx
 \;\sim\;
-g(x_0)\,\sqrt{\frac{2\pi\hbar}{\left|S''(x_0)\right|}}\;
+g(x_0)\,\sqrt{\frac{2\pi\hbar}{\left|\frac{d^2S}{dx^2}(x_0)\right|}}\;
 \exp(\,iS(x_0)/\hbar)\;
-\exp(\,i\frac{\pi}{4}\operatorname{sgn}S''(x_0)) .
+\exp(\,i\frac{\pi}{4}\operatorname{sgn}\!\left(\frac{d^2S}{dx^2}(x_0)\right)) .
 $$
 
 The dominant phase is $S(x_0)/\hbar$; the prefactor is the Gaussian fluctuation determinant about the critical point; the last factor is the Maslov phase of the critical point. Points away from $x_0$ contribute to lower order because their phases oscillate rapidly and cancel. This is the **stationary-phase lemma**, and it contains no physics.
@@ -305,13 +305,13 @@ $$
 \zeta_{\mathcal J}(s)=\sum_{n\ge1}\lambda_n^{-s}
 =m^{-s}\left(\frac{T}{\pi}\right)^{2s}\zeta(2s),
 \qquad
-\det\mathcal{J}=\exp\!\left(-\zeta_{\mathcal J}'(0)\right).
+\det\mathcal{J}=\exp\!\left(-\left.\frac{d\zeta_{\mathcal J}}{ds}\right|_{s=0}\right).
 $$
 
-Using $\zeta(0)=-\tfrac12$ and $\zeta'(0)=-\tfrac12\ln 2\pi$,
+Using $\zeta(0)=-\tfrac12$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}=-\tfrac12\ln 2\pi$,
 
 $$
-\zeta_{\mathcal J}'(0)=\left(-\ln m+2\ln\frac{T}{\pi}\right)\zeta(0)+2\zeta'(0)
+\left.\frac{d\zeta_{\mathcal J}}{ds}\right|_{s=0}=\left(-\ln m+2\ln\frac{T}{\pi}\right)\zeta(0)+2\left.\frac{d\zeta}{ds}\right|_{s=0}
 =\ln\frac{\sqrt m}{2T},
 \qquad
 \det\mathcal{J}=\frac{2T}{\sqrt m}\;\propto\;T ,
@@ -353,7 +353,7 @@ The action principle and the classical limit as stationary phase take the follow
 - The geodesic flow of the biquaternion-norm metric is a Hamiltonian flow, with Hamiltonian $H=\langle\tilde p\rangle_{\natural}/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.
 - Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt}\partial L/\partial\left(d\tilde q/dt\right)-\partial L/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt)-H]dt$ has Hamilton's equations as its critical-point equations.
-- The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/dt^2-V''\delta\tilde q$ and the geodesic-deviation equation $md^2\xi/dt^2+V''\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
+- The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/dt^2-\frac{d^2V}{d\tilde q^2}\,\delta\tilde q$ and the geodesic-deviation equation $md^2\xi/dt^2+\frac{d^2V}{d\tilde q^2}\,\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
 - The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt\rangle_{\natural}dt$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/dt^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(t)=\tilde u(0)\exp(+\tfrac12\vec\omega_bt)$: the free rigid body's motion.
 - The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $\exp(iS[\tilde q_c]/\hbar)$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.
 - The action as a function of its endpoint is Hamilton's principal function, and its eikonal equation is the Hamilton–Jacobi equation $\partial/\partial t\,W+H(\tilde q,\partial W/\partial\tilde q)=0$.

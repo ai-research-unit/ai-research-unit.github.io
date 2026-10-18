@@ -252,13 +252,13 @@ This is the algebraic content of the interpretation of $\mathbb{M}_+$ as "inform
 
 The elements of $\mathbb{M}_+$ include two important classes.
 
-**Unit-norm elements** ($\tilde{Q}\tilde{Q}^{\natural} = e_t$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{U}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^{*} = e_t$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
+**Unit-norm elements** ($\tilde{Q}\tilde{Q}^{\natural} = e_t$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by **reversible** transformations. Examples: the boost biquaternions $\tilde U_{\mathrm L}$, which are Lorentz rotors, and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^{*} = e_t$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
 
-**Idempotent elements** ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_t$). They act by **irreversible** projections: $\tilde{Q}_- \mapsto \tilde\Pi\tilde{Q}_-\tilde\Pi$. Examples: the pure-state projectors $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$. These correspond to quantum-mechanical measurements.
+**Idempotent elements** ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_t$). They act by **irreversible** projections: $\tilde{Q}_- \mapsto \tilde\Pi\tilde{Q}_-\tilde\Pi$. Examples: the pure-state idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$. These correspond to quantum-mechanical measurements.
 
 The **dichotomy between reversible and irreversible actions** is intrinsic to the structure of $\mathbb{M}_+$: a norm-preserving rotor against a norm-destroying projection. On the material sector, where the acting element is a Lorentz rotor, the two are the Lorentz transformations and the measurements; read on the informational sector, where the acting element must preserve the trace, the reversible class narrows to the **matrix-unitary** elements of §*The Correspondence*, and the pair is exactly the quantum-information dichotomy between unitary evolution and measurement.
 
-Both ends of the dichotomy have their physics names, and both are owned by later articles, but the statements belong here. The idempotent end is **decoherence**: the irreversible projection of a state onto an idempotent is the algebraic form of a measurement, and the projection onto a minimal left ideal is what a measurement completes. The distinguished projection of the sector is the **vacuum** of a single fermionic mode, the minimal idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, which is simultaneously a pure state, a rank-one projector and a zero divisor. The two are *Decoherence as Idempotent Projection* and *The Biquaternion Vacuum as a Minimal Idempotent*.
+Both ends of the dichotomy have their physics names, and both are owned by later articles, but the statements belong here. The idempotent end is **decoherence**: the irreversible projection of a state onto an idempotent is the algebraic form of a measurement, and the projection onto a minimal left ideal is what a measurement completes. The distinguished idempotent of the sector is the **vacuum** of a single fermionic mode, the minimal idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, which is simultaneously a pure state, a rank-one idempotent and a zero divisor. The two are *Decoherence as Idempotent Projection* and *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ### The Trace Formula
 
@@ -313,9 +313,9 @@ Eight statements of the sections above are not properties of the vector space $\
 
 **5. One operator carries both evolutions.** The evolution $\tilde{Ϛ}\mapsto\tilde U\tilde{Ϛ}\tilde U^{*}$ and the measurement $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ of §*Reversible Versus Irreversible Actions* are the same two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\dagger}}$, the **dagger sandwich**, evaluated at a unitary parameter and at an idempotent one. The reversible–irreversible dichotomy of the physics is therefore the unitary–self-adjoint dichotomy of the operator theory, and no second operator is needed to hold the two. The operator is quadratic in its parameter and its adjoint is linear, which is why the two parameters read differently; *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*.
 
-**6. Projections come from one sector only.** A measurement projection is an idempotent, and no nonzero idempotent lies in $\mathbb{M}_-$: if $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the anti-automorphism to the first relation gives $-\tilde\Pi=(\tilde\Pi^{*})^{2}=(-\tilde\Pi)^{2}=\tilde\Pi^{2}=\tilde\Pi$, whence $\tilde\Pi=0$. The material sector therefore owns no projector, and the Peirce decomposition of a measurement runs through $\mathbb{M}_+$ alone. *Hermitian Idempotents and the Peirce Decomposition*.
+**6. Projections come from one sector only.** A measurement projection is an idempotent, and no nonzero idempotent lies in $\mathbb{M}_-$: if $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the anti-automorphism to the first relation gives $-\tilde\Pi=(\tilde\Pi^{*})^{2}=(-\tilde\Pi)^{2}=\tilde\Pi^{2}=\tilde\Pi$, whence $\tilde\Pi=0$. The material sector therefore owns no idempotent, and the Peirce decomposition of a measurement runs through $\mathbb{M}_+$ alone. *Hermitian Idempotents and the Peirce Decomposition*.
 
-The **material element** is the object observed; the projector in $\mathbb{M}_+$ is the outcome. The measurement pairs them through the central $i$.
+The **material element** is the object observed; the idempotent in $\mathbb{M}_+$ is the outcome. The measurement pairs them through the central $i$.
 
 **7. Two pairings, because one of them is not Hermitian.** The Lorentzian interval on $\mathbb{M}_-$ is the quaternion **bilinear** form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ of *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, the second slot without the star, of signature $(-,+,+,+)$ on the four real directions $ict\,e_t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. It is excluded from the Witt classification of Hermitian forms for exactly one reason: it is not Hermitian for the dagger, being complex-valued, indefinite and isotropic on the null cone, and the two types of form must not be placed in the same classification. The framework therefore needs two pairings and not one — $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ for probability, $\langle\cdot\rangle_{\natural}$ for the metric — and on each sector the two agree up to sign, $\langle\tilde P,\tilde Q\rangle_{*}=\pm\langle\tilde P,\tilde Q\rangle$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\pm\langle\tilde P,\tilde Q\rangle_{\natural}$, with $+$ on $\mathbb{M}_+$ and $-$ on $\mathbb{M}_-$. *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; *Hermitian Forms over the Biquaternioid Algebra and the Unitary Witt Group with Hermitian Adjoint*.
 
@@ -335,7 +335,7 @@ $$
 \lambda_\pm = h_t \pm |\vec h|,
 $$
 
-real, and the two idempotents are the **eigenprojectors**, $\tilde{Q}\tilde\Pi_{1,2} = \lambda_\pm\tilde\Pi_{1,2}$. Because $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_t$ alone exactly when $\vec h = 0$. The trace and the biquaternion norm read
+real, and the two idempotents are the **eigen-idempotents**, $\tilde{Q}\tilde\Pi_{1,2} = \lambda_\pm\tilde\Pi_{1,2}$. Because $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_t$ alone exactly when $\vec h = 0$. The trace and the biquaternion norm read
 
 $$
 \mathrm{Tr}(\tilde{Q}) = 2h_t = \lambda_+ + \lambda_-, \qquad \langle\tilde{Q}\rangle_{\natural} = h_t^2 - |\vec h|^2 = \lambda_+\lambda_-,
@@ -472,12 +472,12 @@ The companion articles already contain several distinguished elements of $\mathb
 The **boost biquaternion**
 
 $$
-\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \vec u_{\mathrm b}^2 = -e_t,
+\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \vec u_{\mathrm b}^2 = -e_t,
 $$
 
-lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\vec u_{\mathrm b}$ is purely imaginary. It is Hermitian ($\tilde{U}^{*} = \tilde{U}$) and has unit norm ($\tilde{U}\tilde{U}^{\natural} = e_t$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.
+lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\vec u_{\mathrm b}$ is purely imaginary. It is Hermitian ($\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$) and has unit norm ($\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.
 
-The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is the **prototype** of an operator acting on the material sector $\mathbb{M}_-$. More generally, every unit-norm biquaternion $\tilde{U} \in \mathbb{B}$ acts on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$. For pure boosts, $\tilde{U}$ lies in $\mathbb{M}_+$. For pure spatial rotations, $\tilde{U}$ lies in $\mathbb{H}_{\mathbb{B}}$. For general Lorentz transformations, $\tilde{U}$ is a general unit-norm biquaternion in $\mathbb{B}$. The point is that the action of any such rotor on $\mathbb{M}_-$ preserves $\mathbb{M}_-$.
+The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is the **prototype** of an operator acting on the material sector $\mathbb{M}_-$. More generally, every unit-norm biquaternion $\tilde U_{\mathrm L} \in \mathbb{B}$ acts on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$. For pure boosts, $\tilde U_{\mathrm L}$ lies in $\mathbb{M}_+$. For pure spatial rotations, $\tilde U_{\mathrm L}$ lies in $\mathbb{H}_{\mathbb{B}}$. For general Lorentz transformations, $\tilde U_{\mathrm L}$ is a general unit-norm biquaternion in $\mathbb{B}$. The point is that the action of any such rotor on $\mathbb{M}_-$ preserves $\mathbb{M}_-$.
 
 ### The Idempotents
 
@@ -545,8 +545,8 @@ The identity $e_t$ is trivially in $\mathbb{M}_+$. It corresponds to the trivial
 | Object | Structure | Role |
 |---|---|---|
 | Identity $e_t$ | Real scalar | Identity operator |
-| Boost biquaternion $\tilde{U}$ | Hermitian, unit norm | Lorentz boost rotor |
-| Idempotent $\tilde\Pi_{1,2}(\vec u)$ | Hermitian, idempotent, trace 1 | Pure state / projector |
+| Boost biquaternion $\tilde U_{\mathrm L}$ | Hermitian, unit norm | Lorentz boost rotor |
+| Idempotent $\tilde\Pi_{1,2}(\vec u)$ | Hermitian, idempotent, trace 1 | Pure state |
 | Mixed state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r| \leq 1$ | Hermitian, positive, trace 1 | Density matrix (Bloch ball) |
 | Observable $\tilde{Q} = h_te_t + i\vec h$ | Hermitian, eigenvalues $h_t \pm |\vec h|$ | Observable with spectral decomposition |
 | Hermitian form $\tilde{Q}\tilde{Q}^{*}$ | Hermitian, positive scalar part | Weight of an element |
@@ -585,9 +585,9 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 | $\tilde{Q} = q_te_t + iq'_k\vec e_k = (ct')\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | Informational element, both writings; $q_t = ct'$, $q'_k = x'_k$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\tilde{U} \in \mathbb{B}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
+| $\tilde U_{\mathrm L} \in \mathbb{B}$, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde{U} \in \mathbb{B}$, $\tilde{U}\tilde{U}^{*} = e_t$ | Gate (matrix-unitary element): the reversible evolution of a state |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure-state projector) of unit trace |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Pure-state idempotent of unit trace |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r| \leq 1$ | Density matrix (Bloch ball); $\vec r$ the Bloch vector |
 | $\lambda_\pm = h_t \pm |\vec h|$ | Eigenvalues of the Hermitian element $h_te_t + i\vec h$ |
 | $[\tilde{Q},\tilde Q_1]$, $\{\tilde{Q},\tilde Q_1\}$ | Commutator and anticommutator; the two always land in opposite sectors — on two elements of one sector the first in $\mathbb{M}_-$ and the second in $\mathbb{M}_+$, exchanged on two elements of different sectors |

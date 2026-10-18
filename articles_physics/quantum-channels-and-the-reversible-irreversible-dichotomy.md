@@ -183,7 +183,7 @@ $$
 \tilde\Pi_1\,\tilde{Q}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Q}\,\tilde\Pi_2 = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
 $$
 
-since the cross terms cancel between the two projectors. For a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the elementary products are $\alpha\,e_t\,\alpha = \alpha^2 = e_t$ and $\alpha\,(i\vec r)\,\alpha = -i\,\vec u\,\vec r\,\vec u = -i(\vec r - 2(\vec u\cdot\vec r)\vec u)$, using $\vec u\,\vec r\,\vec u = \vec r - 2(\vec u\cdot\vec r)\vec u$. Combining,
+since the cross terms cancel between the two idempotents. For a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the elementary products are $\alpha\,e_t\,\alpha = \alpha^2 = e_t$ and $\alpha\,(i\vec r)\,\alpha = -i\,\vec u\,\vec r\,\vec u = -i(\vec r - 2(\vec u\cdot\vec r)\vec u)$, using $\vec u\,\vec r\,\vec u = \vec r - 2(\vec u\cdot\vec r)\vec u$. Combining,
 
 $$
 \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2

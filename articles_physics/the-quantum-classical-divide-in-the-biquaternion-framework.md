@@ -65,7 +65,7 @@ The action is reversible. The unitary element is a rotor in the sense of geometr
 $$
 \tilde{Ϛ} \;\longmapsto\; \tilde\Pi\,\tilde{Ϛ}\,\tilde\Pi.
 $$
-The action is irreversible. The idempotent is a pure-state projector, and its sandwich action is the algebraic form of a projective measurement.
+The action is irreversible. The idempotent represents a pure state, and its sandwich action is the algebraic form of a projective measurement.
 
 In the companion articles, this dichotomy is presented as a *structural* feature of the algebra: unitary and idempotent elements are the two classes of acting elements, and the reversible/irreversible distinction is read off from the algebra rather than postulated. In the specific setting of non-separability, the dichotomy acquires a direct operational meaning.
 
@@ -112,7 +112,7 @@ Two distinct excitations, one in each partition. The joint state is a non-separa
 The prototypical examples are the two-particle singlet and the two-photon polarization singlet. In the framework, the singlet is the idempotent
 
 $$
-P_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right),
+\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right),
 $$
 
 and the joint probability is the trace pairing with $\tilde\Pi_A(a^{\mathrm{fop}})\otimes \tilde\Pi_B(b^{\mathrm{fop}})$. This is the case treated in Exercise: Entanglement Entropy and the Partial Trace and Q6.

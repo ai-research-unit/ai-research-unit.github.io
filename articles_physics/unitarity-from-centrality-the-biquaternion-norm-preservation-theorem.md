@@ -183,9 +183,9 @@ $$
 $$
 By Theorem 1 these are exactly the elements for which $\Gamma_{\tilde{U}}$ preserves the Hermitian norm, and for which $\Gamma_{\tilde{U}}$ is an algebra automorphism fixing the unit. In the matrix model they are the unitary $2\times 2$ matrices; on the state module they are the norm-preserving linear maps; on the Bloch sphere their conjugation image is the rotation group $SO(3)$, with kernel $\{\pm e_t\}$, the double cover of the companion article *Angular Momentum and Spin in Biquaternionic Form*.
 
-**The unit-norm elements.** Define
+**The unit-norm elements.** A unit-norm biquaternion is a Lorentz rotor, written $\tilde U_{\mathrm L}$, and the group is
 $$
-SL(2,\mathbb{C})=\bigl\{\tilde{U}\in\mathbb{B}:\ \langle\tilde{U}\rangle_{\natural} = \langle\tilde{U},\tilde{U}\rangle_{\natural}=e_t\bigr\}=\bigl\{\tilde{U}:\ \det M(\tilde{U})=1\bigr\},
+SL(2,\mathbb{C})=\bigl\{\tilde U_{\mathrm L}\in\mathbb{B}:\ \langle\tilde U_{\mathrm L}\rangle_{\natural} = \langle\tilde U_{\mathrm L},\tilde U_{\mathrm L}\rangle_{\natural}=e_t\bigr\}=\bigl\{\tilde U_{\mathrm L}:\ \det M(\tilde U_{\mathrm L})=1\bigr\},
 $$
 the elements of unit norm. By Theorem 2 these preserve the biquaternion norm, with the scaling factor exactly $1$; they need not be unitary, and they need not be norm-preserving for the Hermitian norm. This is the group that acts on the biquaternion norm, and it is the group that the companion articles on the algebra's real structure identify with the determinant-preserving transformations.
 
@@ -201,7 +201,7 @@ G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C}),
 $$
 because if $\langle\tilde{U}\rangle_{\natural}=\mu e_t$ with $|\mu|=1$ then choosing $\lambda$ with $\lambda^2=\mu$ (possible since $\mu$ lies on the unit circle, which is divisible) gives $\langle\tilde{U}/\lambda\rangle_{\natural}=e_t$. The decomposition is not direct. The intersection consists of the central scalars that are at once of modulus one and of unit norm; a central scalar is $\lambda e_t$, and $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$, so $|N|=1$ gives $|\lambda|=1$ while $N=e_t$ gives $\lambda=\pm1$, so the intersection is $\{\pm e_t\}$.
 
-The real dimensions are worth recording. Over $\mathbb{R}$, the algebra is eight-dimensional; $SL(2,\mathbb{C})$ is the six-dimensional real group with one complex equation $\langle\tilde{U}\rangle_{\natural}=e_t$ (two real conditions); the phase group adds one more real dimension, so $G_N$ is seven-real-dimensional; and $\mathrm{U}(2)$ is four-real-dimensional. The inclusions are
+The real dimensions are worth recording. Over $\mathbb{R}$, the algebra is eight-dimensional; $SL(2,\mathbb{C})$ is the six-dimensional real group with one complex equation $\langle\tilde U_{\mathrm L}\rangle_{\natural}=e_t$ (two real conditions); the phase group adds one more real dimension, so $G_N$ is seven-real-dimensional; and $\mathrm{U}(2)$ is four-real-dimensional. The inclusions are
 $$
 SU(2)=\mathrm{U}(2)\cap SL(2,\mathbb{C})\ \subset\ \mathrm{U}(2)\ \subset\ G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C}),
 $$
@@ -231,7 +231,7 @@ both resting on the identity $\tilde{U}^{*}\bar{\tilde{U}}=\overline{\langle\til
 $$
 \mathrm{Sc}\bigl(\tilde{U}\tilde{Q}_1\tilde{U}^{*}(\tilde{U}\tilde{Q}_2\tilde{U}^{*})^{*}\bigr)=\mathrm{Sc}\bigl(\tilde{Q}_1\,(\tilde{U}^{*}\tilde{U})\,\tilde{Q}_2^{*}\,(\tilde{U}^{*}\tilde{U})\bigr),
 $$
-which returns $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ for all $\tilde{Q}_1$ and $\tilde{Q}_2$ only when $\tilde{U}^{*}\tilde{U}=e_t$ — setting $\tilde{Q}_2=e_t$ already forces $(\tilde{U}^{*}\tilde{U})^{2}=e_t$, and a Hermitian positive $\tilde{U}^{*}\tilde{U}$ with that square is $e_t$. The common part of the two groups is $\mathrm{U}(2)$, so the four forms are preserved together only by the smaller group, and the larger group is not a larger symmetry of them. The boosts of $G_N$ separate the two pairs and are the witness: $\tilde{U}=\cosh t\,e_t+i\sinh t\,\vec e_z$ has $\langle\tilde{U}\rangle_{\natural}=e_t$, preserves the general quaternionic bilinear and the Krein form, and fails the other two with no constant of proportionality at all — the failure is not a scalar multiple but a genuine change of the form.
+which returns $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ for all $\tilde{Q}_1$ and $\tilde{Q}_2$ only when $\tilde{U}^{*}\tilde{U}=e_t$ — setting $\tilde{Q}_2=e_t$ already forces $(\tilde{U}^{*}\tilde{U})^{2}=e_t$, and a Hermitian positive $\tilde{U}^{*}\tilde{U}$ with that square is $e_t$. The common part of the two groups is $\mathrm{U}(2)$, so the four forms are preserved together only by the smaller group, and the larger group is not a larger symmetry of them. The boosts of $G_N$ separate the two pairs and are the witness: $\tilde U_{\mathrm L}=\cosh t\,e_t+i\sinh t\,\vec e_z$ has $\langle\tilde U_{\mathrm L}\rangle_{\natural}=e_t$, preserves the general quaternionic bilinear and the Krein form, and fails the other two with no constant of proportionality at all — the failure is not a scalar multiple but a genuine change of the form.
 
 **A caution on the word isometry.** The isometry group of a form, read in the standard linear sense as the full group of linear maps that preserve it, is far larger than the unitary group, and it is not one group but three: $O_4(\mathbb{C})$ of real dimension twelve for the two bilinear forms, $\mathrm{U}(4)$ of real dimension sixteen and compact for the general plain sesquilinear form, and $\mathrm{U}(1,3)$ of real dimension sixteen and non-compact for the Krein form. What the unitaries supply is not one of those groups but the **inner isometries**, the conjugations by an element of the algebra, and because the central phase acts trivially the acting group is $PU(2)\cong SO(3)$, of real dimension three. The two statements do not compete, and a reader should hold both: every conjugation by a unitary is an isometry of each of the four forms, and the isometry group of each form is very much larger than the image of the unitary group. The sharper form of the first statement is that these inner isometries are exactly the isometries that also preserve the algebra's multiplication — the $\mathbb{C}$-linear isometries preserving the product are the inner ones and no others. That is why the four forms survive a unitary conjugation together: the reason is not an accident of the coefficients, it is that the conjugation is an automorphism of the algebra as well as an isometry of the forms, and the four forms are four dressings of the one product that the automorphism preserves.
 
@@ -241,11 +241,11 @@ which returns $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ for all $\tilde{Q}_1$ an
 
 The following computations exhibit each hypothesis failing when it is dropped.
 
-**Example 1: a non-unitary element of unit norm.** Take $\tilde{U}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde{U}=\cosh t\,e_t+i\sinh t\,\vec e_z$ in the algebra, with $\lambda=\exp(t)$, which the matrix model sends to $\mathrm{diag}(\exp(t),\exp(-t))$. Its determinant is $1$, so $\langle\tilde{U}\rangle_{\natural}=e_t$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
+**Example 1: a non-unitary element of unit norm.** Take $\tilde U_{\mathrm L}=\mathrm{diag}(\lambda,\lambda^{-1})$ in the matrix model with $\lambda>0$, $\lambda\neq1$; equivalently $\tilde U_{\mathrm L}=\cosh t\,e_t+i\sinh t\,\vec e_z$ in the algebra, with $\lambda=\exp(t)$, which the matrix model sends to $\mathrm{diag}(\exp(t),\exp(-t))$. Its determinant is $1$, so $\langle\tilde U_{\mathrm L}\rangle_{\natural}=e_t$ and Theorem 2's hypothesis holds: the biquaternion norm is preserved. But
 $$
-\tilde{U}^{*}\tilde{U}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
+\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
 $$
-which is not central for $\lambda\neq1$, so $\Gamma_{\tilde{U}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde{P}=\tfrac12(e_t+i \vec e_x)$ the trace pairing of $\tilde{P}$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde{U}}\tilde{P})^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the biquaternion norm $\langle\cdot\rangle_{\natural}$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the biquaternion norm sees only the determinant, and the determinant is blind to $\lambda$.
+which is not central for $\lambda\neq1$, so $\Gamma_{\tilde U_{\mathrm L}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde\Pi=\tfrac12(e_t+i \vec e_x)$ the trace pairing of $\tilde\Pi$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde U_{\mathrm L}}\tilde\Pi)^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the biquaternion norm $\langle\cdot\rangle_{\natural}$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the biquaternion norm sees only the determinant, and the determinant is blind to $\lambda$.
 
 **Example 2: a central scaling.** Take $\tilde{U}=\lambda_t e_t$ with $\lambda_t>0$, $\lambda_t\neq1$. This defect is central, $\tilde{U}^{*}\tilde{U}=\lambda_t^2e_t$, so $\Gamma_{\tilde{U}}$ is a homomorphism up to the central scalar $\lambda_t^2$: for all $\tilde{Q},\tilde{Q}_1$,
 $$
@@ -357,7 +357,7 @@ The centrality theme is carried by the defect $\tilde Q_4=\tilde{U}^{*}\tilde{U}
 | $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Conjugation action |
 | $\tilde Q_4=\tilde{U}^{*}\tilde{U}$ | Defect of the action |
 | $\mathrm{U}(2)=\{\tilde{U}:\tilde{U}^{*}\tilde{U}=e_t\}$ | Unitary group; preserves the Hermitian norm |
-| $SL(2,\mathbb{C})=\{\tilde{U}:\langle\tilde{U}\rangle_{\natural}=e_t\}$ | Unit-norm group |
+| $SL(2,\mathbb{C})=\{\tilde U_{\mathrm L}:\langle\tilde U_{\mathrm L}\rangle_{\natural}=e_t\}$ | Unit-norm group; the Lorentz rotor |
 | $G_N=\{\tilde{U}:|\langle\tilde{U}\rangle_{\natural}|=1\}=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ | Exact biquaternion-norm-preserving group |
 | $J$ | Root of $-e_t$, $J^2=-e_t$ |
 | $G=-\hbar^{-1}J\tilde{H}$ | Generator of the state-vector flow |

@@ -30,9 +30,9 @@ $$
 since the Legendre transform of a sum of independent functionals is the sum of the Legendre transforms.
 - **The one-loop term.** The first quantum correction to the effective action is the functional determinant,
 $$
-\Gamma[\tilde\Phi_{\mathrm{cl}}] = S[\tilde\Phi_{\mathrm{cl}}] + \frac{\hbar}{2}\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}] + O(\hbar^2),
+\Gamma[\tilde\Phi_{\mathrm{cl}}] = S[\tilde\Phi_{\mathrm{cl}}] + \frac{\hbar}{2}\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] + O(\hbar^2),
 $$
-where $S''[\tilde\Phi_{\mathrm{cl}}]$ is the second variation of the action about the classical field. In the biquaternion framework $S''[\tilde\Phi_{\mathrm{cl}}]$ is an operator on the module, and the trace is the trace pairing; the determinant is the subject of *The Functional Determinant in Biquaternionic Form*.
+where $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ is the second variation of the action about the classical field. In the biquaternion framework $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ is an operator on the module, and the trace is the trace pairing; the determinant is the subject of *The Functional Determinant in Biquaternionic Form*.
 - **The vacuum condition.** The classical field that extremizes $\Gamma$ is the theory's vacuum expectation value, and in the framework the tree-level vacuum is a **minimal idempotent** of $\mathbb{M}_+$, selected by the sign of the quadratic term, as *The Biquaternion Vacuum as a Minimal Idempotent* establishes. The effective-action version of that statement is that the vacuum minimizes the effective potential on the manifold of normalizable states.
 
 The article proceeds as follows. The next section defines the connected functional and its derivatives. A section defines the classical field and the Legendre transform, with the convexity in the real form. A section gives the effective action and the loop expansion, and a section the sector factorization. A section treats the effective potential and its relation to the vacuum, and a section the one-loop term and the determinant. A section separates what is established from what is interpretation, and the article closes with open questions.
@@ -130,13 +130,13 @@ $$
 $$
 The tree term is the classical action. The one-loop term is the functional determinant of the second variation,
 $$
-\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}] ,
+\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] ,
 $$
-evaluated on the module, with $S''[\tilde\Phi_{\mathrm{cl}}]$ the operator of the quadratic fluctuations about the classical field. In the biquaternion framework $S''[\tilde\Phi_{\mathrm{cl}}]$ is an operator on the module and the trace is the trace pairing of the algebra, so the one-loop effective action is the logarithm of a determinant of $\mathbb{B}$-module operators. This is the object that the next article computes.
+evaluated on the module, with $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ the operator of the quadratic fluctuations about the classical field. In the biquaternion framework $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ is an operator on the module and the trace is the trace pairing of the algebra, so the one-loop effective action is the logarithm of a determinant of $\mathbb{B}$-module operators. This is the object that the next article computes.
 
-**Standard, and transcribed.** The loop expansion, the identification of $\Gamma$ as the 1PI generator, and the form of $\Gamma_1$ are standard field theory (Weinberg, Peskin–Schroeder, Zinn-Justin) and are not rebuilt here. The biquaternion content is the module on which $S''$ acts and the trace pairing used to define its logarithm.
+**Standard, and transcribed.** The loop expansion, the identification of $\Gamma$ as the 1PI generator, and the form of $\Gamma_1$ are standard field theory (Weinberg, Peskin–Schroeder, Zinn-Justin) and are not rebuilt here. The biquaternion content is the module on which $S^{(2)}$ acts and the trace pairing used to define its logarithm.
 
-**A structural consequence.** Because $S''$ is obtained by differentiating the central action, it is central whenever the classical field multiplies a central vertex; for a scalar biquaternion field with central mass the fluctuation operator is central, so it does not mix sectors and $\Gamma_1$ factorizes. For a fermionic field the mass term is a right multiplication and $S''$ is not central; $\Gamma_1$ then does mix the chiralities, and this is where the anomaly and index structure of articles 11 and 12 enters.
+**A structural consequence.** Because $S^{(2)}$ is obtained by differentiating the central action, it is central whenever the classical field multiplies a central vertex; for a scalar biquaternion field with central mass the fluctuation operator is central, so it does not mix sectors and $\Gamma_1$ factorizes. For a fermionic field the mass term is a right multiplication and $S^{(2)}$ is not central; $\Gamma_1$ then does mix the chiralities, and this is where the anomaly and index structure of articles 11 and 12 enters.
 
 ## Sector Factorization of the Effective Action
 
@@ -150,7 +150,7 @@ because $\log$ of a product is a sum. The Legendre transform of a sum of indepen
 $$
 \Gamma[\tilde\Phi_{\mathrm{cl}}] = \Gamma_-[\tilde\Phi_{\mathrm{cl},-}]+\Gamma_+[\tilde\Phi_{\mathrm{cl},+}] .
 $$
-At one loop the same statement holds with $\Gamma_{1,\pm}=\tfrac12\mathrm{Tr}\log S_\pm''$, and the determinant factorizes, $\det S''=\det S_-''\det S_+''$.
+At one loop the same statement holds with $\Gamma_{1,\pm}=\tfrac12\mathrm{Tr}\log S_\pm^{(2)}$, and the determinant factorizes, $\det S^{(2)}=\det S_-''\det S_+''$.
 
 **What breaks the factorization.** Any term that is not sector-diagonal. The three candidates, in order of importance, are: an interaction that couples the sectors, such as a term built from $\mathrm{Sc}(\tilde\Phi\tilde\Phi^{\natural}\tilde\Phi\tilde\Phi^{\natural})$ with a non-central contraction; a kinetic operator that is not central; and the chirality-off-diagonal Dirac mass. A central scalar theory factorizes at all loops.
 
@@ -179,15 +179,15 @@ $$
 V(\tilde\Phi_{\mathrm{cl}}) = \tfrac12 m^2\,\mathrm{Re}\,\mathrm{Tr}\big(\tilde\Phi_{\mathrm{cl}}^{*}\tilde\Phi_{\mathrm{cl}}\big)
 = \tfrac12 m^2\,\big\langle \tilde\Phi_{\mathrm{cl}},\tilde\Phi_{\mathrm{cl}}\big\rangle ,
 $$
-whose minimum is $\tilde\Phi_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator is the projector $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{M}_+$ selected by the sign of the quadratic term. The effective potential's minimum is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
+whose minimum is $\tilde\Phi_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator is multiplication by the idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{M}_+$ selected by the sign of the quadratic term. The effective potential's minimum is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.
 
 **The one-loop potential and convexity.** The one-loop correction
 $$
-V_{\mathrm{eff}}(\tilde\Phi_{\mathrm{cl}}) = V(\tilde\Phi_{\mathrm{cl}}) + \frac{\hbar}{2}\int\frac{d^4k}{(2\pi)^4}\log\big(k^2+V''(\tilde\Phi_{\mathrm{cl}})\big) + \cdots
+V_{\mathrm{eff}}(\tilde\Phi_{\mathrm{cl}}) = V(\tilde\Phi_{\mathrm{cl}}) + \frac{\hbar}{2}\int\frac{d^4k}{(2\pi)^4}\log\big(k^2+\frac{\delta^2V}{\delta\tilde\Phi^2}(\tilde\Phi_{\mathrm{cl}})\big) + \cdots
 $$
-is the standard Coleman–Weinberg form, and it is manifestly convex in the region where $V''>0$; where the tree potential is non-convex the one-loop potential is amended by the Maxwell construction, which is exactly the statement that the Legendre transform is the convex envelope of $W$. The framework's contribution is again the real form with respect to which the convexity is taken, and the sectorwise sign. The standard results are transcribed and cited.
+is the standard Coleman–Weinberg form, and it is manifestly convex in the region where $\frac{d^2V}{d\phi^2}>0$; where the tree potential is non-convex the one-loop potential is amended by the Maxwell construction, which is exactly the statement that the Legendre transform is the convex envelope of $W$. The framework's contribution is again the real form with respect to which the convexity is taken, and the sectorwise sign. The standard results are transcribed and cited.
 
-**Finite-dimensional convexity check.** For the one-dimensional model $V(\phi)=\tfrac12 m^2\phi^2+\tfrac{\lambda}{4}\phi^4$ with $m^2=1.3$, $\lambda=0.7$, the curvature $V''(\phi)=m^2+3\lambda\phi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\phi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.
+**Finite-dimensional convexity check.** For the one-dimensional model $V(\phi)=\tfrac12 m^2\phi^2+\tfrac{\lambda}{4}\phi^4$ with $m^2=1.3$, $\lambda=0.7$, the curvature $\frac{d^2V}{d\phi^2}(\phi)=m^2+3\lambda\phi^2$ takes the values $1.3$, $1.825$, $4.324$ at $\phi=0,0.5,1.2$: positive at all three points, so the tree effective potential is convex on that range and the Legendre transform is unmodified there.
 
 ## The One-Loop Term and the Determinant
 
@@ -195,37 +195,37 @@ The one-loop effective action is the entry point of the determinant, and this se
 
 **The quadratic expansion.** Expand the action about the classical field,
 $$
-S[\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi] = S[\tilde\Phi_{\mathrm{cl}}] + \tfrac12\big\langle \delta\tilde\Phi, S''[\tilde\Phi_{\mathrm{cl}}]\,\delta\tilde\Phi\big\rangle + O(\delta\tilde\Phi^3) ,
+S[\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi] = S[\tilde\Phi_{\mathrm{cl}}] + \tfrac12\big\langle \delta\tilde\Phi, S^{(2)}[\tilde\Phi_{\mathrm{cl}}]\,\delta\tilde\Phi\big\rangle + O(\delta\tilde\Phi^3) ,
 $$
 where the linear term vanishes by the classical equation of motion, $\delta S/\delta\tilde\Phi_{\mathrm{cl}}=0$. The Gaussian integral over the fluctuation $\delta\tilde\Phi$ gives
 $$
-W[\tilde J] = S[\tilde\Phi_{\mathrm{cl}}] + \tfrac12\big\langle \tilde J,\tilde\Phi_{\mathrm{cl}}\big\rangle - \frac{i\hbar}{2}\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}] + O(\hbar^2) ,
+W[\tilde J] = S[\tilde\Phi_{\mathrm{cl}}] + \tfrac12\big\langle \tilde J,\tilde\Phi_{\mathrm{cl}}\big\rangle - \frac{i\hbar}{2}\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] + O(\hbar^2) ,
 $$
 so that
 $$
-\Gamma[\tilde\Phi_{\mathrm{cl}}] = S[\tilde\Phi_{\mathrm{cl}}] - \frac{i\hbar}{2}\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}] + O(\hbar^2)
+\Gamma[\tilde\Phi_{\mathrm{cl}}] = S[\tilde\Phi_{\mathrm{cl}}] - \frac{i\hbar}{2}\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] + O(\hbar^2)
 \;\;\xrightarrow[\text{Euclidean}]{}\;\;
-S_E[\tilde\Phi_{\mathrm{cl}}] + \frac{\hbar}{2}\,\mathrm{Tr}\log S_E''[\tilde\Phi_{\mathrm{cl}}] + O(\hbar^2),
+S_E[\tilde\Phi_{\mathrm{cl}}] + \frac{\hbar}{2}\,\mathrm{Tr}\log S_E^{(2)}[\tilde\Phi_{\mathrm{cl}}] + O(\hbar^2),
 $$
 the last form under the Wick rotation that turns $iS$ into $-S_E$. The logarithm of the fluctuation operator's determinant is thus the whole of the one-loop effective action, and its regularization is the source of the trace anomaly of *The Trace Anomaly in Biquaternionic Form*.
 
-**Biquaternion content.** Two features are the algebra's. First, $S''[\tilde\Phi_{\mathrm{cl}}]$ acts on the module, so its determinant is a determinant on a two-complex-dimensional fibre per mode, and the trace in $\mathrm{Tr}\log$ is the trace pairing $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$. Second, when $S''$ is central the logarithm factorizes over the sectors, giving the factorized one-loop expressions above. These are the only two places the algebra enters; the rest — the loop integral, the regularization, the renormalization — is standard.
+**Biquaternion content.** Two features are the algebra's. First, $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ acts on the module, so its determinant is a determinant on a two-complex-dimensional fibre per mode, and the trace in $\mathrm{Tr}\log$ is the trace pairing $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$. Second, when $S^{(2)}$ is central the logarithm factorizes over the sectors, giving the factorized one-loop expressions above. These are the only two places the algebra enters; the rest — the loop integral, the regularization, the renormalization — is standard.
 
 ### The Proper-Time Form
 
 The determinant is often traded for an integral over a **proper time** $s$, by
 $$
-\frac12\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}] = -\frac12\int_0^\infty\frac{ds}{s}\;\mathrm{Tr}\,\exp(-s\,S''[\tilde\Phi_{\mathrm{cl}}]),
+\frac12\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] = -\frac12\int_0^\infty\frac{ds}{s}\;\mathrm{Tr}\,\exp(-s\,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]),
 $$
-which is exact when the integral converges and is defined by regularization otherwise. In the biquaternion framework $S''[\tilde\Phi_{\mathrm{cl}}]$ is an operator on the module and the trace is the pairing, so the integrand is a one-loop **heat kernel** on the module,
+which is exact when the integral converges and is defined by regularization otherwise. In the biquaternion framework $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ is an operator on the module and the trace is the pairing, so the integrand is a one-loop **heat kernel** on the module,
 $$
-K(s) = \mathrm{Tr}\,\exp(-s\,S''[\tilde\Phi_{\mathrm{cl}}]) ,
+K(s) = \mathrm{Tr}\,\exp(-s\,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]) ,
 $$
 whose small-$s$ expansion
 $$
 K(s) \sim \frac{1}{(4\pi s)^{d/2}}\sum_{n\ge0} a_n\,s^n
 $$
-has coefficients $a_n$ built from the curvature of $S''$ and the geometry of the module. The coefficient $a_{d/2}$ controls the ultraviolet divergence of the one-loop effective action, and it is the object whose trace-part is anomalous in *The Trace Anomaly in Biquaternionic Form*. The framework's contribution is that the heat kernel is taken on the module and that the small-$s$ coefficients carry the module's dimension; the heat-kernel method itself is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt. The proper-time form is also the reason the one-loop effective action is the natural home of the **trace anomaly**: the divergence and its regularization are visible in the $s\to0$ end of the integral.
+has coefficients $a_n$ built from the curvature of $S^{(2)}$ and the geometry of the module. The coefficient $a_{d/2}$ controls the ultraviolet divergence of the one-loop effective action, and it is the object whose trace-part is anomalous in *The Trace Anomaly in Biquaternionic Form*. The framework's contribution is that the heat kernel is taken on the module and that the small-$s$ coefficients carry the module's dimension; the heat-kernel method itself is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt. The proper-time form is also the reason the one-loop effective action is the natural home of the **trace anomaly**: the divergence and its regularization are visible in the $s\to0$ end of the integral.
 
 ## What Is Established and What Is Interpretation
 
@@ -233,7 +233,7 @@ has coefficients $a_n$ built from the curvature of $S''$ and the geometry of the
 - The connected and effective functionals are the quadratic forms $W=\tfrac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle$ and $\Gamma=\tfrac12\langle\tilde\Phi_{\mathrm{cl}},K_{\mathrm{kin}}\tilde\Phi_{\mathrm{cl}}\rangle$ for a free theory, with the inverse-Hessian relation and the Legendre identity; verified in finite dimension.
 - The Legendre transform is taken on the module, and its convexity is convexity in the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$, which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$.
 - For a sector-diagonal action the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing.
-- The one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$, the logarithm of a module determinant.
+- The one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$, the logarithm of a module determinant.
 
 **Standard, and transcribed.**
 - The loop expansion, the 1PI interpretation, the Coleman–Weinberg potential, the Maxwell construction as convexification, and the free-energy Legendre structure.
@@ -242,12 +242,12 @@ has coefficients $a_n$ built from the curvature of $S''$ and the geometry of the
 - Reading the tree-level vacuum minimum as the field-theoretic counterpart of the minimal-idempotent vacuum is the interpretive link to *The Biquaternion Vacuum as a Minimal Idempotent*; the minimum itself is a computed fact of the quadratic potential.
 
 **Open.**
-- Whether a *non-central* one-loop operator produces a framework-specific anomaly or index statement is the question of *The Trace Anomaly in Biquaternionic Form* and *The Theta Vacuum in Biquaternionic Form*; this article only identifies where it would enter ($S''[\tilde\Phi_{\mathrm{cl}}]$).
+- Whether a *non-central* one-loop operator produces a framework-specific anomaly or index statement is the question of *The Trace Anomaly in Biquaternionic Form* and *The Theta Vacuum in Biquaternionic Form*; this article only identifies where it would enter ($S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$).
 - The equal sector contributions to the one-loop effective action are a component count; whether a multiplicity is observable depends on the normalization conventions of the physical fields, which the spin-0 articles fix.
 
 ## Summary
 
-The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle$ and $\Gamma[\tilde\Phi_{\mathrm{cl}}]=\tfrac12\langle\tilde\Phi_{\mathrm{cl}},K_{\mathrm{kin}}\tilde\Phi_{\mathrm{cl}}\rangle$, with $K_{\mathrm{kin}}=\Box-m^2$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde\Phi_{\mathrm{cl}}\rangle$ at $\tilde\Phi_{\mathrm{cl}}=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$, which the next article computes and regularizes.
+The connected functional and the effective action of a biquaternion field are functionals on the module, built from the real form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a free theory they are the quadratics $W[\tilde J]=\tfrac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle$ and $\Gamma[\tilde\Phi_{\mathrm{cl}}]=\tfrac12\langle\tilde\Phi_{\mathrm{cl}},K_{\mathrm{kin}}\tilde\Phi_{\mathrm{cl}}\rangle$, with $K_{\mathrm{kin}}=\Box-m^2$, the inverse-Hessian relation $\Gamma^{(2)}W^{(2)}=I$, and the Legendre identity $W+\Gamma=\langle\tilde J,\tilde\Phi_{\mathrm{cl}}\rangle$ at $\tilde\Phi_{\mathrm{cl}}=\delta W/\delta\tilde J$ — all verified in finite dimension. The one-loop effective action is the logarithm of the module determinant of the second variation, $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$, which the next article computes and regularizes.
 
 Because a central kinetic operator does not mix the material and informational sectors, the effective action factorizes, $\Gamma=\Gamma_-+\Gamma_+$, at tree level and at one loop, with the determinant factorizing with it; any non-central term — an interaction, a non-central kinetic operator, or the chirality-off-diagonal Dirac mass — breaks the factorization. The tree-level effective potential $V=\tfrac12 m^2\langle\tilde\Phi_{\mathrm{cl}},\tilde\Phi_{\mathrm{cl}}\rangle$ has its minimum at the symmetric point and, in a one-mode truncation, at a minimal idempotent of $\mathbb{M}_+$: the field-theoretic statement of the vacuum-selection rule of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
@@ -265,8 +265,8 @@ Because a central kinetic operator does not mix the material and informational s
 | $\Gamma[\tilde\Phi_{\mathrm{cl}}]=\langle\tilde J,\tilde\Phi_{\mathrm{cl}}\rangle-W[\tilde J]$ | Effective action (Legendre transform) |
 | $\Gamma^{(2)}W^{(2)}=I$, $W+\Gamma=\langle\tilde J,\tilde\Phi_{\mathrm{cl}}\rangle$ | Inverse-Hessian relation; Legendre identity |
 | $\Gamma=S+\hbar\Gamma_1+\cdots$ | Loop expansion |
-| $\Gamma_1=\tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$ | One-loop effective action |
-| $S''[\tilde\Phi_{\mathrm{cl}}]$ | Second variation of the action on the module |
+| $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ | One-loop effective action |
+| $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ | Second variation of the action on the module |
 | $\Gamma=\Gamma_-+\Gamma_+$ | Sector factorization for a central (sector-diagonal) action |
 | $V_{\mathrm{eff}}(\tilde\Phi_{\mathrm{cl}})=-\Gamma/\text{vol}$ | Effective potential |
 | $\delta V_{\mathrm{eff}}/\delta\tilde\Phi_{\mathrm{cl}}=0$, $\delta^2V_{\mathrm{eff}}/\delta\tilde\Phi_{\mathrm{cl}}^2\ge0$ | Vacuum condition; stability (convexity) |
@@ -288,4 +288,4 @@ Because a central kinetic operator does not mix the material and informational s
 - P. B. Gilkey, *Invariance Theory, the Heat Equation, and the Atiyah–Singer Index Theorem* (Publish or Perish, 1984), for the Seeley–DeWitt coefficients and their geometric content.
 - J. S. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation of the one-loop determinant.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the module on which the fluctuation operator and its determinant are taken.
-- Companion articles: *The Functional Integral in Biquaternionic Form*, for $Z[\tilde J]$, the real form, and the sector factorization; *The Functional Determinant in Biquaternionic Form*, for the computation and regularization of $\mathrm{Tr}\log S''$; *The Trace Anomaly in Biquaternionic Form*, for the anomalous part of the one-loop effective action; *The Biquaternion Vacuum as a Minimal Idempotent*, for the vacuum as a minimal idempotent and the one-mode two-level structure; *The GNS Construction in the Biquaternion Framework*, for the state space on which the vacuum expectation is taken; *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*, for the propagator and the trace conventions.
+- Companion articles: *The Functional Integral in Biquaternionic Form*, for $Z[\tilde J]$, the real form, and the sector factorization; *The Functional Determinant in Biquaternionic Form*, for the computation and regularization of $\mathrm{Tr}\log S^{(2)}$; *The Trace Anomaly in Biquaternionic Form*, for the anomalous part of the one-loop effective action; *The Biquaternion Vacuum as a Minimal Idempotent*, for the vacuum as a minimal idempotent and the one-mode two-level structure; *The GNS Construction in the Biquaternion Framework*, for the state space on which the vacuum expectation is taken; *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*, for the propagator and the trace conventions.

@@ -226,10 +226,10 @@ The physically relevant Green's function is the **retarded** one, which vanishes
 
 $$
 \tilde{G}_{\tilde{\nabla}} = \tilde{\nabla}^{\natural}\,G_\Box
-= \frac{1}{c}\frac{1}{4\pi R}\,\delta'\!\left(t - \frac{R}{c}\right)\bigl(-i\,e_t + \vec u_R\bigr) + \frac{1}{4\pi R^2}\,\delta\!\left(t - \frac{R}{c}\right)\vec u_R,
+= \frac{1}{c}\frac{1}{4\pi R}\,\frac{d\delta}{dx}\!\left(t - \frac{R}{c}\right)\bigl(-i\,e_t + \vec u_R\bigr) + \frac{1}{4\pi R^2}\,\delta\!\left(t - \frac{R}{c}\right)\vec u_R,
 $$
 
-where $G_\Box(R,t) = (4\pi R)^{-1}\delta(t - R/c)$ is the scalar retarded kernel of the wave operator, $R = \sqrt{x^2 + y^2 + z^2}$, $\vec u_R = (x \vec e_x + y \vec e_y + z \vec e_z)/R$ is the unit radial biquaternion, and $\delta'$ is the derivative of the delta. It satisfies $\tilde{\nabla}\tilde{G}_{\tilde{\nabla}} = \Box G_\Box = -\delta(\tilde{Q})$, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
+where $G_\Box(R,t) = (4\pi R)^{-1}\delta(t - R/c)$ is the scalar retarded kernel of the wave operator, $R = \sqrt{x^2 + y^2 + z^2}$, $\vec u_R = (x \vec e_x + y \vec e_y + z \vec e_z)/R$ is the unit radial biquaternion, and $\frac{d\delta}{dx}$ is the derivative of the delta. It satisfies $\tilde{\nabla}\tilde{G}_{\tilde{\nabla}} = \Box G_\Box = -\delta(\tilde{Q})$, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\frac{d\delta}{dx}$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\frac{d\delta}{dx}$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
 
 The solution of the inhomogeneous equation is then the retarded convolution
 

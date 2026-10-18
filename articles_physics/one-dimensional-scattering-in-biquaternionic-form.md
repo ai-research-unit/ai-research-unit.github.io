@@ -31,7 +31,7 @@ $$
 with $\psi$ a field taking values in the state module $\mathbb{B}\tilde\Pi$. Since $H$ is central, the equation is componentwise the scalar equation
 
 $$
--\frac{\hbar^2}{2m}\phi''(x) + V(x)\phi(x) = E\,\phi(x)
+-\frac{\hbar^2}{2m}\frac{d^2\phi}{dx^2}(x) + V(x)\phi(x) = E\,\phi(x)
 $$
 
 for the scalar envelope $\phi$, and every solution has the form $\psi = \phi\,\chi$ with $\chi$ a constant module element, or more generally a finite sum of such terms. The potential does not mix the components; the module factor is a fixed vector in $\mathbb{C}^2$ throughout.
@@ -55,14 +55,14 @@ A potential that is piecewise constant is therefore solved by matching the coeff
 The one-dimensional current is the reduction of the general current of the free-particle article. For a stationary state it is
 
 $$
-J = \frac{\hbar}{2mi}\,\mathrm{Tr}\!\left(\psi^\dagger \psi' - (\psi')^\dagger \psi\right),
+J = \frac{\hbar}{2mi}\,\mathrm{Tr}\!\left(\psi^\dagger \frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger \psi\right),
 $$
 
-where the prime is $d/dx$. For a factorised field $\psi = \phi\,\chi$ with $\mathrm{Tr}(\chi^\dagger\chi)=1$ this reduces to the familiar scalar expression
+For a factorised field $\psi = \phi\,\chi$ with $\mathrm{Tr}(\chi^\dagger\chi)=1$ this reduces to the familiar scalar expression
 
 $$
-J = \frac{\hbar}{2mi}\left(\phi^*\phi' - \phi'^*\phi\right)
-= \frac{\hbar}{m}\,\mathrm{Im}\!\left(\phi^*\phi'\right).
+J = \frac{\hbar}{2mi}\left(\phi^*\frac{d\phi}{dx} - \left(\frac{d\phi}{dx}\right)^*\phi\right)
+= \frac{\hbar}{m}\,\mathrm{Im}\!\left(\phi^*\frac{d\phi}{dx}\right).
 $$
 
 For a superposition of a right- and a left-moving exponential,
@@ -74,16 +74,16 @@ $$
 the current is constant despite the interference between the two terms. One computes
 
 $$
-\phi^*\phi' = ik\left(|A|^2 - |B|^2\right) + ik\left(-A^*B\,\exp(-2ikx) + AB^*\,\exp(2ikx)\right),
+\phi^*\frac{d\phi}{dx} = ik\left(|A|^2 - |B|^2\right) + ik\left(-A^*B\,\exp(-2ikx) + AB^*\,\exp(2ikx)\right),
 $$
 
-and the second bracket is purely imaginary (it is $Z - \bar Z$ for $Z = A^*B\exp(-2ikx)$), so it contributes nothing to $\mathrm{Im}(\phi^*\phi')$:
+and the second bracket is purely imaginary (it is $Z - \bar Z$ for $Z = A^*B\exp(-2ikx)$), so it contributes nothing to $\mathrm{Im}(\phi^*\frac{d\phi}{dx})$:
 
 $$
 J = \frac{\hbar k}{m}\left(|A|^2 - |B|^2\right).
 $$
 
-The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the trace pairing of $\psi^\dagger$ with $\psi'$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
+The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the trace pairing of $\psi^\dagger$ with $\frac{d\psi}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
 
 ## The Scattering Problem
 
@@ -152,7 +152,7 @@ $$
 |r|^2 + |t|^2 = R + T = 1 .
 $$
 
-Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a **unitary element**, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the rotor condition $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.
+Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a **unitary element**, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the Lorentz rotor $\tilde U_{\mathrm L}$, the unit-norm element with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$, is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.
 
 ## Exactly Solvable Potentials
 
@@ -209,7 +209,7 @@ t\,\exp(ikx), & x>a,
 \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar}.
 $$
 
-Matching $\phi$ and $\phi'$ at $0$ and $a$ gives, after eliminating the interior coefficients,
+Matching $\phi$ and $d\phi/dx$ at $0$ and $a$ gives, after eliminating the interior coefficients,
 
 $$
 t = \frac{4ik\kappa\,\exp(-ika)}{(k+i\kappa)^2 \exp(-\kappa a) - (k-i\kappa)^2 \exp(+\kappa a)},
@@ -246,7 +246,7 @@ Let $V(x) = \lambda\,\delta(x)$. The matching conditions are continuity of $\phi
 $$
 \phi(0^+) = \phi(0^-),
 \qquad
-\phi'(0^+)-\phi'(0^-) = \frac{2m\lambda}{\hbar^2}\,\phi(0),
+\frac{d\phi}{dx}(0^+)-\frac{d\phi}{dx}(0^-) = \frac{2m\lambda}{\hbar^2}\,\phi(0),
 $$
 
 the second obtained by integrating the equation across the origin. For $E>0$, with $\phi = \exp(ikx)+r\exp(-ikx)$ for $x<0$ and $\phi = t\exp(ikx)$ for $x>0$, continuity gives $1+r=t$ and the jump gives $2ik(t-1) = \frac{2m\lambda}{\hbar^2}t$, so with the dimensionless coupling
@@ -293,7 +293,7 @@ The formulas for the barrier and the well are the same expression continued in t
 
 ### The transfer matrix
 
-It is convenient to package the matching across a region as a transfer matrix acting on the coefficient column $(A,B)$ at a fixed reference plane. Across a step from wave vector $k_1$ to $k_2$ at the origin, continuity of $\phi$ and $\phi'$ gives
+It is convenient to package the matching across a region as a transfer matrix acting on the coefficient column $(A,B)$ at a fixed reference plane. Across a step from wave vector $k_1$ to $k_2$ at the origin, continuity of $\phi$ and $d\phi/dx$ gives
 
 $$
 \begin{pmatrix} A \\ B \end{pmatrix}
@@ -398,7 +398,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 **What the biquaternion notation provides.**
 
 - **Centrality of the potential coupling, made manifest.** The potential multiplies $e_t$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.
-- **A flux from the trace pairing.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\psi' - (\psi')^\dagger\psi)$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
+- **A flux from the trace pairing.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
 - **One notion of unit resolved.** The $S$-matrix is unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
 - **A clean statement of what a scalar potential can do.** The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.
 
@@ -423,7 +423,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 The one-dimensional biquaternion Schrödinger equation with a real potential is $(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2 + V(x))e_t\,\psi = E\psi$. The Hamiltonian is central, so the equation reduces to a scalar equation for the envelope, $\psi = \phi\chi$ with $\chi$ a constant module element, and no potential treated here acts on the module.
 
-The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\psi' - (\psi')^\dagger\psi)$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
+The current is $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$, which for a superposition $A\exp(ikx)+B\exp(-ikx)$ reduces to $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$: the oscillatory interference terms contribute nothing to the imaginary part. Flux conservation across the scattering region is $|A|^2+|D|^2 = |B|^2+|C|^2$, which is exactly the unitarity $S^{*} S = I_2$, and which for incidence from the left is $R+T=1$.
 
 The step gives $T = 4k_1k_2/(k_1+k_2)^2$ with the flux factor $k_2/k_1$; the rectangular barrier gives $T = [1+V_0^2\sinh^2(\kappa a)/4E(V_0-E)]^{-1}$ below the barrier, with the thick-barrier limit $\frac{16E(V_0-E)}{V_0^2}\exp(-2\kappa a)$, and the oscillatory Ramsauer–Townsend form above it; the delta potential gives $t = (1+i\beta)^{-1}$, $T = (1+\beta^2)^{-1}$ with $\beta = m\lambda/\hbar^2k$, and a single bound state at $E_b = -m\lambda^2/2\hbar^2$ for the attractive case; the square well gives resonant transparency at $k_2a = n\pi$. The exact barrier and step formulas were checked against independent transfer-matrix matching to a relative error below $2\times10^{-14}$, with $R+T=1$ to $10^{-12}$, the thick-barrier ratio $0.999989$, and the $E\to V_0$ limit reproduced, all on a stationary superposition of an incoming and a reflected wave and in explicit complex arithmetic.
 
@@ -443,7 +443,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $\psi = \phi\,\chi$ | Factorised stationary state |
 | $k_j = \sqrt{2m(E-V_j)}/\hbar$ | Wave vector in region $j$; imaginary when $E<V_j$ |
 | $\kappa_j = \sqrt{2m(V_j-E)}/\hbar$ | Decay constant in a forbidden region |
-| $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\psi' - (\psi')^\dagger\psi)$ | One-dimensional current |
+| $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$ | One-dimensional current |
 | $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
 | $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$ | Density |
 | $S = \begin{pmatrix} t & r' \\ r & t'\end{pmatrix}$ | Scattering matrix; unitary, $S^{*} S = I_2$ |

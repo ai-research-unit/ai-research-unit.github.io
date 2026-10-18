@@ -181,7 +181,7 @@ $$
 and the radial equation is
 
 $$
-md^2r/dt^2 = -V_{\text{eff}}'(r) = -V'(r) + \frac{L^2}{mr^3} .
+md^2r/dt^2 = -\frac{dV_{\text{eff}}}{dr}(r) = -\frac{dV}{dr}(r) + \frac{L^2}{mr^3} .
 $$
 
 The reduction is the standard one; its role here is to display the scalar character of the central-scalar limit. After the reduction, the entire problem is a one-dimensional scalar problem in the central scalars $E$ and $L$ and the radial variable $r$. The vector directions have been exhausted by the conserved angular momentum, and the only surviving dynamical variable is a scalar.
@@ -194,9 +194,9 @@ $$
 \frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2},
 $$
 
-where $F(r)$ is the radial component of the force, positive outward. The derivation is the standard one: from $dr/dt = -h\,u'$ and $d^2r/dt^2 = -h^2u^2u''$ (with $u' = du/d\theta$), substituting into $md^2r/dt^2 = F(r) + L^2/(mr^3)$ and using $L^2/(mr^3) = mh^2u^3$ gives the equation above. The equation is scalar, it is second order, and its two integration constants are the eccentricity-like amplitude and the orientation of the orbit. Every central-force orbit in the limit is a solution of this one equation.
+where $F(r)$ is the radial component of the force, positive outward. The derivation is the standard one: from $dr/dt = -h\,du/d\theta$ and $d^2r/dt^2 = -h^2u^2\,d^2u/d\theta^2$ (with $u=1/r$), substituting into $md^2r/dt^2 = F(r) + L^2/(mr^3)$ and using $L^2/(mr^3) = mh^2u^3$ gives the equation above. The equation is scalar, it is second order, and its two integration constants are the eccentricity-like amplitude and the orientation of the orbit. Every central-force orbit in the limit is a solution of this one equation.
 
-For the linear force $F(r) = -m\omega^2r$, Binet's equation becomes $u'' + u = \omega^2/(h^2u^3)$, which is nonlinear in $u$; its orbits are nevertheless closed ellipses, centred on the force centre rather than focused on it, and they are more cleanly seen in the phase plane of the second article than through Binet's equation. For the inverse-square force $F(r) = -\kappa/r^2$ the equation becomes linear,
+For the linear force $F(r) = -m\omega^2r$, Binet's equation becomes $\frac{d^2u}{d\theta^2} + u = \omega^2/(h^2u^3)$, which is nonlinear in $u$; its orbits are nevertheless closed ellipses, centred on the force centre rather than focused on it, and they are more cleanly seen in the phase plane of the second article than through Binet's equation. For the inverse-square force $F(r) = -\kappa/r^2$ the equation becomes linear,
 
 $$
 \frac{d^2u}{d\theta^2} + u = \frac{\kappa}{mh^2} = \frac{1}{p}, \qquad p = \frac{L^2}{m\kappa},
@@ -265,7 +265,7 @@ The conservation of angular momentum is therefore identical with the centrality 
 A central force gives planar motion, the areal law $dA/dt = L/(2m)$, the reduction to the radial problem with effective potential $V_{\text{eff}} = V(r) + L^2/(2mr^2)$, and Binet's equation
 
 $$
-u'' + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
+\frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
 $$
 
 whose inverse-square solution is the conic section $r = p/(1 + e\cos(\theta-\theta_0))$ with $p = L^2/(m\kappa)$.
@@ -293,7 +293,7 @@ The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{
 | $r, \theta$; $h = L/m$ | Polar coordinates; areal constant |
 | $V_{\text{eff}} = V(r) + L^2/(2mr^2)$ | Effective potential |
 | $u = 1/r$ | Binet variable |
-| $u'' + u = -F(1/u)/(mh^2u^2)$ | Binet's equation for a central force |
+| $\frac{d^2u}{d\theta^2} + u = -F(1/u)/(mh^2u^2)$ | Binet's equation for a central force |
 | $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u$ | Rotation rotor; $\vec a\mapsto R\vec aR^{-1}$ |
 | $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ | Rotation algebra in the real three-space |
 | $\{L_i,L_j\} = \epsilon_{ijk}L_k$ | Poisson-bracket angular-momentum algebra |

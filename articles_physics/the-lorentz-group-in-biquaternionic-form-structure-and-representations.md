@@ -21,17 +21,17 @@ and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point s
 
 ## Rotors, Boosts, and Rotations
 
-A **Lorentz rotor** is a biquaternion of unit norm,
+A **Lorentz rotor** $\tilde U_{\mathrm L}$ is a biquaternion of unit norm,
 $$
-\tilde U\in\mathbb{B},\qquad \tilde U\tilde U^{\natural}=e_t,
+\tilde U_{\mathrm L}\in\mathbb{B},\qquad \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t,
 $$
-where $\tilde U^{\natural}$ is the quaternion conjugate. It acts on the material sector $\mathbb{M}_-$ by **rotor conjugation**
+where $\tilde U_{\mathrm L}^{\natural}$ is the quaternion conjugate. It acts on the material sector $\mathbb{M}_-$ by **rotor conjugation**
 $$
-\tilde{Q}\ \longmapsto\ \tilde U\,\tilde{Q}\,\tilde U^{*},\qquad \tilde{Q}\in\mathbb{M}_-.
+\tilde{Q}\ \longmapsto\ \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*},\qquad \tilde{Q}\in\mathbb{M}_-.
 $$
 The set of unit-norm biquaternions is a group under biquaternion multiplication; under the algebra isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ (with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$) it is exactly
 $$
-SL(2,\mathbb{C})=\{\tilde U\in\mathbb{B}:\tilde U\tilde U^{\natural}=e_t\}
+SL(2,\mathbb{C})=\{\tilde U_{\mathrm L}\in\mathbb{B}:\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t\}
 \;\cong\;\{g\in M_2(\mathbb{C}):\det g=1\},
 $$
 because the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$ (see the companion article on the biquaternion algebra and its matrix representation).
@@ -40,11 +40,11 @@ Two families of rotors have a direct geometric meaning.
 
 A **pure boost** along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ (a pure real unit quaternion, $\vec u_{\mathrm b}^2=-e_t$) with **rapidity** $\psi$ is
 $$
-\tilde U=\exp\!\left(\frac{\psi}{2}\,i\vec u_{\mathrm b}\right)
+\tilde U_{\mathrm L}=\exp\!\left(\frac{\psi}{2}\,i\vec u_{\mathrm b}\right)
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
 \qquad \tanh\psi=\frac{v_b}{c},
 $$
-where $v_b=|\vec v_b|$ is the speed of the boosted frame. It is Hermitian, $\tilde U^{*}=\tilde U$, hence lies in $\mathbb{M}_+$, and it has unit norm. A **pure spatial rotation** about $\vec u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$ is
+where $v_b=|\vec v_b|$ is the speed of the boosted frame. It is Hermitian, $\tilde U_{\mathrm L}^{*}=\tilde U_{\mathrm L}$, hence lies in $\mathbb{M}_+$, and it has unit norm. A **pure spatial rotation** about $\vec u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$ is
 $$
 \tilde u=\exp\!\left(\frac{\theta}{2}\,\vec u_{\mathrm r}\right)
 =\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r},
@@ -57,7 +57,7 @@ $$
 \qquad
 \mathcal{R}=SU(2)\subset\mathbb{H}_{\mathbb{B}}
 $$
-are the boosts and the rotations. The parametrisation of a single transformation by a rotor, its verification against the standard component formulas, and the relation $\tilde U=\sqrt{-(i/c)\tilde{V}^{\natural}}$ between a boost rotor and a four-velocity $\tilde{V}$ are established in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*; they are not repeated here.
+are the boosts and the rotations. The parametrisation of a single transformation by a rotor, its verification against the standard component formulas, and the relation $\tilde U_{\mathrm L}=\sqrt{-(i/c)\tilde{V}^{\natural}}$ between a boost rotor and a four-velocity $\tilde{V}$ are established in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*; they are not repeated here.
 
 ## The Group of Unit-Norm Biquaternions
 
@@ -65,26 +65,26 @@ This section collects the group-theoretic facts that do not depend on the detail
 
 **Group law.** The product of two unit-norm biquaternions is again of unit norm, because the biquaternion norm is multiplicative:
 $$
-\langle\tilde U_1\tilde U_2\rangle_{\natural}=\langle\tilde U_1\rangle_{\natural}\langle\tilde U_2\rangle_{\natural}=e_t .
+\langle\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}\rangle_{\natural}=\langle\tilde U_{\mathrm L,1}\rangle_{\natural}\langle\tilde U_{\mathrm L,2}\rangle_{\natural}=e_t .
 $$
 The identity is $e_t$, and the inverse is the quaternion conjugate,
 $$
-\tilde U^{-1}=\tilde U^{\natural},
+\tilde U_{\mathrm L}^{-1}=\tilde U_{\mathrm L}^{\natural},
 $$
-since $\tilde U\tilde U^{\natural}=\tilde U^{\natural}\tilde U=\langle\tilde U\rangle_{\natural}=e_t$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde U(\vec u_{\mathrm b},\psi)^{-1}=\tilde U(\vec u_{\mathrm b},-\psi)=\tilde U^{\natural}$, and for a rotation $\tilde u(\vec u_{\mathrm r},\theta)^{-1}=\tilde u(\vec u_{\mathrm r},-\theta)$.
+since $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=\tilde U_{\mathrm L}^{\natural}\tilde U_{\mathrm L}=\langle\tilde U_{\mathrm L}\rangle_{\natural}=e_t$; the biquaternion norm of a biquaternion is central, so the two-sided inverse is the quaternion conjugate. For a boost this gives $\tilde U_{\mathrm L}(\vec u_{\mathrm b},\psi)^{-1}=\tilde U_{\mathrm L}(\vec u_{\mathrm b},-\psi)=\tilde U_{\mathrm L}^{\natural}$, and for a rotation $\tilde u(\vec u_{\mathrm r},\theta)^{-1}=\tilde u(\vec u_{\mathrm r},-\theta)$.
 
 **Dimension and topology.** As a real Lie group, $SL(2,\mathbb{C})$ has real dimension $6$ (complex dimension $3$); its maximal compact subgroup is $SU(2)$, the rotation group. It is connected and simply connected. These facts belong to the companion articles on the exponential and on biquaternion topology; the relevant consequence is used below.
 
 **The action and its kernel.** Rotor conjugation defines a map
 $$
 \mathrm{Ad}:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
-\mathrm{Ad}(\tilde U):\ \tilde{Q}\longmapsto \tilde U\tilde{Q}\tilde U^{*} ,
+\mathrm{Ad}(\tilde U_{\mathrm L}):\ \tilde{Q}\longmapsto \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*} ,
 $$
 into the restricted (proper orthochronous) Lorentz group. It is well defined because the conjugate of an anti-Hermitian element is anti-Hermitian, it preserves the biquaternion norm, and it is a group homomorphism:
 $$
-\mathrm{Ad}(\tilde U_2\tilde U_1)=\mathrm{Ad}(\tilde U_2)\circ\mathrm{Ad}(\tilde U_1),
+\mathrm{Ad}(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})=\mathrm{Ad}(\tilde U_{\mathrm L,2})\circ\mathrm{Ad}(\tilde U_{\mathrm L,1}),
 $$
-as follows from $(\tilde U_2\tilde U_1)\tilde{Q}(\tilde U_2\tilde U_1)^{*}=\tilde U_2(\tilde U_1\tilde{Q}\tilde U_1^{*})\tilde U_2^{*}$. Its kernel is
+as follows from $(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})\tilde{Q}(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})^{*}=\tilde U_{\mathrm L,2}(\tilde U_{\mathrm L,1}\tilde{Q}\tilde U_{\mathrm L,1}^{*})\tilde U_{\mathrm L,2}^{*}$. Its kernel is
 $$
 \ker\mathrm{Ad}=\{\pm e_t\}\cong\mathbb{Z}/2\mathbb{Z},
 $$
@@ -96,7 +96,7 @@ and $\mathrm{Ad}$ is a two-to-one covering homomorphism. The detailed proof, tog
 
 **The rotation subgroup and the boosts.** The rotations $\mathcal{R}=SU(2)$ are a subgroup. The boosts $\mathcal{B}$ are not: they are closed under inverse but not under multiplication, as the next two sections show. The set $\mathcal{B}$ is instead a symmetric submanifold of $SL(2,\mathbb{C})$ of dimension $3$. The group is generated by its boosts and rotations: every unit-norm biquaternion admits a decomposition
 $$
-\tilde U=\tilde U_{\mathrm b}\,\tilde u,
+\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\,\tilde u,
 \qquad \tilde U_{\mathrm b}\in\mathcal{B},\quad \tilde u\in SU(2),
 $$
 unique if $\tilde U_{\mathrm b}$ is required to have positive-definite matrix image; equivalently, $\mathcal{B}\cong SL(2,\mathbb{C})/SU(2)$. This is the **Cartan (polar) decomposition**, and it parametrises a general transformation by three boost parameters (the rapidity vector) and three rotation parameters (the axis and angle), matching the six real dimensions of the group.
@@ -117,13 +117,13 @@ Physically the unit group is the whole linear group of the framework: $GL_2(\mat
 
 The elementary reason that the boosts do not form a subgroup is visible in the product of two boost rotors. Let
 $$
-\tilde U_1=\cosh\frac{\psi_1}{2}+i\sinh\frac{\psi_1}{2}\vec u_x,
+\tilde U_{\mathrm L,1}=\cosh\frac{\psi_1}{2}+i\sinh\frac{\psi_1}{2}\vec u_x,
 \qquad
-\tilde U_2=\cosh\frac{\psi_2}{2}+i\sinh\frac{\psi_2}{2}\vec u_y,
+\tilde U_{\mathrm L,2}=\cosh\frac{\psi_2}{2}+i\sinh\frac{\psi_2}{2}\vec u_y,
 $$
 and write $c_i=\cosh(\psi_i/2)$, $s_i=\sinh(\psi_i/2)$. Using $\vec u_x\vec u_y=-\,\vec u_x\cdot\vec u_y+\vec u_x\times\vec u_y$ for pure real unit quaternions, the product is
 $$
-\tilde U_1\tilde U_2
+\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}
 = \underbrace{\bigl(c_1c_2+s_1s_2\,\vec u_x\cdot\vec u_y\bigr)
 + i\bigl(c_1s_2\,\vec u_y+s_1c_2\,\vec u_x\bigr)}_{\text{Hermitian part}}
 \;-\;\underbrace{s_1s_2\,\vec u_x\times\vec u_y}_{\text{anti-Hermitian part}} .
@@ -132,7 +132,7 @@ The first line is Hermitian: it is a real scalar plus a purely imaginary vector.
 $$
 \vec u_x\times\vec u_y=0,
 $$
-i.e. if and only if the two boosts are collinear (or one of the rapidities vanishes). Since $\tilde U_1,\tilde U_2$ are Hermitian, the product is Hermitian exactly when the two rotors commute, and two boost rotors commute exactly when their directions are parallel. So:
+i.e. if and only if the two boosts are collinear (or one of the rapidities vanishes). Since $\tilde U_{\mathrm L,1},\tilde U_{\mathrm L,2}$ are Hermitian, the product is Hermitian exactly when the two rotors commute, and two boost rotors commute exactly when their directions are parallel. So:
 
 > Two boosts combine to a boost exactly when they are collinear. Otherwise their product is a boost together with a rotation.
 
@@ -140,7 +140,7 @@ This is the **non-closure of the boosts** at the level of the group. Its infinit
 
 **The Thomas–Wigner rotation.** Since every unit-norm biquaternion has a unique polar decomposition, the product can be written
 $$
-\tilde U_1\tilde U_2=\tilde U_{\mathrm b}\,\tilde u,
+\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}=\tilde U_{\mathrm b}\,\tilde u,
 \qquad \tilde U_{\mathrm b}\in\mathcal{B},\quad \tilde u\in SU(2).
 $$
 The factor $\tilde U_{\mathrm b}$ is a boost; the factor $\tilde u$ is the **Thomas–Wigner rotation**. If $\theta\in[0,\pi]$ is the angle between the two boost directions, the rotation angle $\delta$ is determined by
@@ -150,7 +150,7 @@ $$
 {\cosh\frac{\psi_1}{2}\,\cosh\frac{\psi_2}{2}
 +\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\cos\theta}\ }
 $$
-and the rotation axis is the line through $\vec u_x\times\vec u_y$. With the rotation rotor written as $\tilde u=\cos(\delta/2)+\sin(\delta/2)\vec u_{\mathrm r}$, the axis for the product $\tilde U_1\tilde U_2$ in the order written is
+and the rotation axis is the line through $\vec u_x\times\vec u_y$. With the rotation rotor written as $\tilde u=\cos(\delta/2)+\sin(\delta/2)\vec u_{\mathrm r}$, the axis for the product $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}$ in the order written is
 $$
 \vec u_{\mathrm r}=-\frac{\vec u_x\times\vec u_y}{|\vec u_x\times\vec u_y|};
 $$
@@ -201,9 +201,9 @@ The first two say that the rotations form a subalgebra $\mathrm{SU}(2)\cong\math
 
 **Relation to $\mathrm{SO}(1,3)$ and to $\mathrm{SL}(2,\mathbb{C})$.** The real Lie algebra $\mathrm{G}$ is isomorphic to the Lie algebra $\mathrm{SO}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\mathrm{Ad}$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathrm{SL}(2,\mathbb{C})$. The exponential map $\exp:\mathrm{G}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $M$ maps to $e_t$ exactly when it is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$, so the preimage of $e_t$ is nonzero — indeed a union of conjugacy classes, not a discrete set. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a **product** of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
 $$
-\tilde U=\exp(M)\exp(N),\qquad
+\tilde U_{\mathrm L}=\exp(M)\exp(N),\qquad
 M\in\operatorname{span}_{\mathbb{R}}\{K_1,K_2,K_3\},\quad
-Y\in\operatorname{span}_{\mathbb{R}}\{J_1,J_2,J_3\}.
+N\in\operatorname{span}_{\mathbb{R}}\{J_1,J_2,J_3\}.
 $$
 The exponential map and its failure of surjectivity are treated in the companion article on the biquaternion exponential.
 
@@ -321,8 +321,8 @@ The biquaternion algebra is not merely the home of the rotors; it is itself a re
 
 **As the vector representation.** Under the conjugation action
 $$
-\tilde{Q}\ \longmapsto\ \tilde U\,\tilde{Q}\,\tilde U^{*},
-\qquad \tilde{Q}\in\mathbb{B},\quad \tilde U\in SL(2,\mathbb{C}),
+\tilde{Q}\ \longmapsto\ \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*},
+\qquad \tilde{Q}\in\mathbb{B},\quad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),
 $$
 the four-complex-dimensional algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries the irreducible representation
 $$
@@ -365,7 +365,7 @@ Consequently:
 - If $m+n\in\mathbb{Z}$, the element $-e_t$ acts trivially, and the representation descends to a genuine representation of the Lorentz group $SO^+(1,3)$. This is the **integer-spin** (tensor) case: $(0,0)$, $(\tfrac12,\tfrac12)$, $(1,0)$, $(1,1)$, and so on.
 - If $m+n\in\tfrac12+\mathbb{Z}$, the element $-e_t$ acts as $-\mathrm{id}$, and the representation does **not** descend: it is a genuine **spin representation** of the double cover $SL(2,\mathbb{C})$. This is the **half-integer-spin** case: $(\tfrac12,0)$, $(0,\tfrac12)$, $(\tfrac32,0)$, and so on.
 
-The defining spinor $(\tfrac12,0)$ is the simplest example: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U$ act differently on every spinor, whereas they act identically on every four-vector. In particular a rotation by $2\pi$, which is $e_t$ in the four-vector representation, is $-e_t$ on the spinor module; a rotation by $4\pi$ is the identity on both. The spinor therefore carries a genuine two-valued representation, and the sign of a spinor is a degree of freedom invisible to any four-vector. The companion article on the spinor module develops the spinor action and the bilinear pairings in detail; the point recorded here is its representation-theoretic classification.
+The defining spinor $(\tfrac12,0)$ is the simplest example: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U_{\mathrm L}$ act differently on every spinor, whereas they act identically on every four-vector. In particular a rotation by $2\pi$, which is $e_t$ in the four-vector representation, is $-e_t$ on the spinor module; a rotation by $4\pi$ is the identity on both. The spinor therefore carries a genuine two-valued representation, and the sign of a spinor is a degree of freedom invisible to any four-vector. The companion article on the spinor module develops the spinor action and the bilinear pairings in detail; the point recorded here is its representation-theoretic classification.
 
 ## Unitary Representations
 
@@ -416,7 +416,7 @@ the first from one Weyl spinor with the definite pairing, the second from one We
 
 ## Summary
 
-The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$; rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ is the covering homomorphism, with kernel $\{\pm e_t\}$. The same abstract group is known in geometry as the group of motions of hyperbolic three-space, as the Möbius group $\mathrm{PSL}(2,\mathbb{C})$, and as the Laguerre group of the plane.
+The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$; rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ is the covering homomorphism, with kernel $\{\pm e_t\}$. The same abstract group is known in geometry as the group of motions of hyperbolic three-space, as the Möbius group $\mathrm{PSL}(2,\mathbb{C})$, and as the Laguerre group of the plane.
 
 Within the group, the rotations form the subgroup $SU(2)\subset\mathbb{H}_{\mathbb{B}}$, while the boosts are the Hermitian unit-norm biquaternions $\mathcal{B}\subset\mathbb{M}_+$. The boosts are closed under inverse but not under multiplication: the product of two boost rotors is Hermitian exactly when the boosts are collinear, and otherwise is a boost times a rotation. The rotation angle is the Thomas–Wigner angle,
 $$
@@ -424,7 +424,7 @@ $$
 =\frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\theta}
 {\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\theta},
 $$
-about the axis $\vec u_x\times\vec u_y$; the boost factor has the composite rapidity $\cosh\psi_{\mathrm c}=\cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde U=\tilde U_{\mathrm b}\tilde u$ into a boost and a rotation.
+about the axis $\vec u_x\times\vec u_y$; the boost factor has the composite rapidity $\cosh\psi_{\mathrm c}=\cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u$ into a boost and a rotation.
 
 The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rotations $J_k=\vec e_k$ and boosts $K_k=i\vec e_k$, with $[K_j,K_k]=-2\varepsilon_{jkl}J_l$; its complexification splits into two commuting $\mathrm{SU}(2)$'s, the self-dual and anti-self-dual halves. The finite-dimensional irreducibles are the $(m,n)$, $m,n\in\tfrac12\mathbb{Z}_{\geq0}$, of dimension $(2m+1)(2n+1)$; the biquaternion algebra carries $(\tfrac12,\tfrac12)$ under conjugation. Representations with $m+n\in\mathbb{Z}$ descend to $SO^+(1,3)$; those with $m+n\in\tfrac12+\mathbb{Z}$ are genuine spin representations of the double cover.
 
@@ -441,14 +441,14 @@ The group that carries the transformations is represented as follows. The group 
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), home of boost rotors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of rotation rotors |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
-| $\tilde U\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
-| $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation (four-vector action) |
+| $\tilde U_{\mathrm L}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
+| $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
-| $\tilde U=\cosh\frac\psi2+i\sinh\frac\psi2\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde U_{\mathrm L}=\cosh\frac\psi2+i\sinh\frac\psi2\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde u=\cos\frac\theta2+\sin\frac\theta2\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
 | $\psi$ | Rapidity, $\tanh\psi=v_b/c$ |
 | $\delta$ | Thomas–Wigner rotation angle |
-| $\tilde U=\tilde U_{\mathrm b}\tilde u$ | Cartan (polar) decomposition: boost times rotation |
+| $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u$ | Cartan (polar) decomposition: boost times rotation |
 | $J_k=\vec e_k$, $K_k=i\vec e_k$ | Rotation and boost generators |
 | $[J_j,J_k]=2\varepsilon_{jkl}J_l$, $[J_j,K_k]=2\varepsilon_{jkl}K_l$, $[K_j,K_k]=-2\varepsilon_{jkl}J_l$ | Lie brackets |
 | $N_k^\pm=\frac12(\vec e_k\pm\mathsf{i}(i\vec e_k))$ | Generators of the two $\mathrm{SU}(2)$ halves |

@@ -20,13 +20,13 @@ and the tree-level potential, the vacuum manifold, the radial mode and the would
 
 The findings are the following, and they are separated at the outset in the corpus's three-way form.
 
-- **Established, and recomputed below.** The framework's scalar invariant is $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, and every gauge-invariant, $\mathrm{U}(1)$-preserving potential is a function of $\rho$ alone. The one-loop effective potential of the central scalar is a function of $\rho$ alone as well, because the fluctuation operator of a central background is central: the radiative correction respects the central symmetry exactly and does not generate a non-central operator. The one-loop coefficient that multiplies $\rho^2\ln(\rho/\mu^2)$ is fixed by the field content; for the central scalar coupled to the central gauge field it is $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ in units $\hbar = c = 1$. With $B > 0$ the one-loop potential of a classically scale-invariant central scalar has a minimum at the exponentially small value $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$, with $V''(\langle \rho\rangle) = 2B > 0$ and $V(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2 < 0$.
+- **Established, and recomputed below.** The framework's scalar invariant is $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, and every gauge-invariant, $\mathrm{U}(1)$-preserving potential is a function of $\rho$ alone. The one-loop effective potential of the central scalar is a function of $\rho$ alone as well, because the fluctuation operator of a central background is central: the radiative correction respects the central symmetry exactly and does not generate a non-central operator. The one-loop coefficient that multiplies $\rho^2\ln(\rho/\mu^2)$ is fixed by the field content; for the central scalar coupled to the central gauge field it is $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ in units $\hbar = c = 1$. With $B > 0$ the one-loop potential of a classically scale-invariant central scalar has a minimum at the exponentially small value $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$, with $\frac{d^2V}{d\rho^2}(\langle \rho\rangle) = 2B > 0$ and $V(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2 < 0$.
 - **Interpretation.** Interpretation the exponentially small scale as **dimensional transmutation** — a dimensionless coupling traded for a dimensionful vacuum scale — and reading the negative value of the potential at the minimum as the standard energy lowering of the broken phase is the standard interpretation of the algebra. It is labelled as interpretation where it occurs.
 - **Gap, left visible.** The loop integral, its regularization and its renormalization are standard field theory and are imported. The framework contributes the centrality of the fluctuation operator — which is what makes the effective potential a function of the central invariant and nothing else — and no native loop structure. Whether the framework's trace or biquaternion norm selects a preferred normalization of the renormalization scale, or a preferred value of the quartic coupling, is not shown here.
 
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the tree-level central potential and the symmetry-breaking conventions.
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the flat Goldstone direction whose loop treatment is discussed here.
-- Companion article *The Generating Functional and the Effective Action in Biquaternionic Form*, for the effective action, its Legendre structure, and the identification of its one-loop term with $\tfrac12\mathrm{Tr}\log S''$.
+- Companion article *The Generating Functional and the Effective Action in Biquaternionic Form*, for the effective action, its Legendre structure, and the identification of its one-loop term with $\tfrac12\mathrm{Tr}\log S^{(2)}$.
 - Companion article *The Functional Determinant in Biquaternionic Form*, for the determinant, its proper-time form and its regularization.
 - Companion article *The Renormalization Group in Biquaternionic Form*, for the scale dependence of the renormalized couplings.
 - Companion article *The Trace Anomaly in Biquaternionic Form*, for the anomalous part of the one-loop effective action.
@@ -85,7 +85,7 @@ $$
 \Gamma[\tilde\Phi_{\mathrm{cl}}] = \langle \tilde{J},\tilde\Phi_{\mathrm{cl}}\rangle - W[\tilde{J}], \qquad \tilde\Phi_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}} ,
 $$
 
-and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde\Phi_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
+and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde\Phi_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
 
 For a **constant** classical field $\tilde\Phi_{\mathrm{cl}} = \varphi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
 
@@ -112,20 +112,20 @@ The second is **convexity**: the generating functional $W$ is a convex functiona
 The one-loop term is the Gaussian determinant of the fluctuations about the constant background, and its evaluation is the whole computational content of the effective potential. Expand the action about the background,
 
 $$
-S[\tilde\Phi_{\mathrm{cl}} + \delta\tilde{\Phi}] = S[\tilde\Phi_{\mathrm{cl}}] + \frac12\left\langle \delta\tilde{\Phi},\,S''[\tilde\Phi_{\mathrm{cl}}]\,\delta\tilde{\Phi}\right\rangle + O(\delta\tilde{\Phi}^3),
+S[\tilde\Phi_{\mathrm{cl}} + \delta\tilde{\Phi}] = S[\tilde\Phi_{\mathrm{cl}}] + \frac12\left\langle \delta\tilde{\Phi},\,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]\,\delta\tilde{\Phi}\right\rangle + O(\delta\tilde{\Phi}^3),
 $$
 
 and perform the Gaussian integral over $\delta\tilde{\Phi}$: the result is
 
 $$
-\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]
-= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S''[\tilde\Phi_{\mathrm{cl}}]),
+\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]
+= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]),
 $$
 
 the proper-time form, with the ultraviolet divergence residing in the small-$s$ end. For the central scalar the second variation is the operator
 
 $$
-S''[\varphi_c] = -\,\Box + \mathcal{H}(\rho_c),
+S^{(2)}[\varphi_c] = -\,\Box + \mathcal{H}(\rho_c),
 \qquad
 \varphi = \frac{1}{\sqrt2}\left(\phi_1 + i\phi_2\right),
 \qquad
@@ -188,7 +188,7 @@ where the omitted terms are scheme-dependent constants times $\rho^2$ and higher
 Differentiate once,
 
 $$
-\mathcal{V}_\text{eff}'(\rho) = \frac{\lambda}{2}\rho + B\left(2\rho\ln\frac{\rho}{\mu^2} + \rho\right)
+\frac{d\mathcal{V}_\text{eff}}{d\rho}(\rho) = \frac{\lambda}{2}\rho + B\left(2\rho\ln\frac{\rho}{\mu^2} + \rho\right)
 = \rho\left[\frac{\lambda}{2} + B\left(2\ln\frac{\rho}{\mu^2} + 1\right)\right].
 $$
 
@@ -203,12 +203,12 @@ $$
 Its curvature is read from the second derivative,
 
 $$
-\mathcal{V}_\text{eff}''(\rho) = \frac{\lambda}{2} + B\left(2\ln\frac{\rho}{\mu^2} + 3\right),
+\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\rho) = \frac{\lambda}{2} + B\left(2\ln\frac{\rho}{\mu^2} + 3\right),
 \qquad
-\mathcal{V}_\text{eff}''(\langle \rho\rangle) = 2B > 0 ,
+\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\langle \rho\rangle) = 2B > 0 ,
 $$
 
-so the point is a **minimum** whenever $B > 0$, which the field content above guarantees. The origin, by contrast, has $\mathcal{V}_\text{eff}''(0^+) = \frac{\lambda}{2} - \infty\cdot B$ in the one-loop expression: the logarithm drives the curvature negative, so $\rho = 0$ is a local maximum of the one-loop potential, and the true vacuum is the radiative minimum. The value of the potential there is
+so the point is a **minimum** whenever $B > 0$, which the field content above guarantees. The origin, by contrast, has $\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(0^+) = \frac{\lambda}{2} - \infty\cdot B$ in the one-loop expression: the logarithm drives the curvature negative, so $\rho = 0$ is a local maximum of the one-loop potential, and the true vacuum is the radiative minimum. The value of the potential there is
 
 $$
 \mathcal{V}_\text{eff}(\langle \rho\rangle) = \langle \rho\rangle^2\left[\frac{\lambda}{4} + B\ln\frac{\langle \rho\rangle}{\mu^2}\right]
@@ -221,7 +221,7 @@ so the broken vacuum lies below the symmetric one, as it must for the breaking t
 Three features of the result are standard and are worth separating.
 
 1. **Dimensional transmutation.** The location of the minimum is $\langle \rho\rangle = \mu^2 \exp(-1/2)\exp\!\left(-\lambda/(4B)\right)$, which depends on the dimensionless couplings $\lambda$ and $ϙ$ only through the combination $\lambda/B$, and is exponentially small when the couplings are perturbative. A dimensionless coupling has been traded for a dimensionful scale: the theory has no classical scale, and the scale of the vacuum is generated by the running of the couplings between $\mu$ and $\langle \rho\rangle$. This is the standard interpretation of the Coleman–Weinberg result.
-2. **The mass of the radial mode.** In the physical radial coordinate the curvature at the minimum is $m_h^2 = \mathcal{V}''_{\phi_1} = \mathcal{V}_\text{eff}''(\rho)\cdot 2\rho = 4B\langle \rho\rangle$, so the Higgs mass is of the same radiatively generated order as the vacuum expectation value, $m_h^2/\langle\phi_1\rangle^2 = 2B$. The hierarchy between the two is a one-loop coefficient, not a small parameter.
+2. **The mass of the radial mode.** In the physical radial coordinate the curvature at the minimum is $m_h^2 = \frac{d^2\mathcal{V}}{d\phi_1^2} = \frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\rho)\cdot 2\rho = 4B\langle \rho\rangle$, so the Higgs mass is of the same radiatively generated order as the vacuum expectation value, $m_h^2/\langle\phi_1\rangle^2 = 2B$. The hierarchy between the two is a one-loop coefficient, not a small parameter.
 3. **The role of the gauge loop.** For $\lambda \ll ϙ^2$ the minimum is dominated by the gauge contribution, $\ln(\langle \rho\rangle/\mu^2) \approx -\lambda/(4B) \approx -\tfrac{4\pi^2\lambda}{3 ϙ^4}$, the standard Coleman–Weinberg relation. The sign of the effect is the sign of $B$, and a purely scalar theory would have $B = \tfrac{5\lambda^2}{128\pi^2} > 0$ as well; what the gauge field changes is not the sign but the relative size, and in the physically relevant regime it dominates.
 
 
@@ -288,12 +288,12 @@ with the gauge and scalar loops of the framework's field content. It has a minim
 $$
 \ln\frac{\langle \rho\rangle}{\mu^2} = -\frac12 - \frac{\lambda}{4B},
 \qquad
-\mathcal{V}_\text{eff}''(\langle \rho\rangle) = 2B > 0,
+\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\langle \rho\rangle) = 2B > 0,
 \qquad
 \mathcal{V}_\text{eff}(\langle \rho\rangle) = -\frac{B}{2}\langle \rho\rangle^2 < 0 ,
 $$
 
-so the vacuum is radiatively generated at an exponentially small scale, the origin is a local maximum, and the radial mode acquires the mass $m_h^2 = 4B\langle \rho\rangle$. This is the Coleman–Weinberg mechanism, and the framework's contribution to it is the centrality of the scalar, the modulus $\rho$ as the invariant, and the field content that fixes $B$. The coefficient was recomputed for $\lambda = 0.5$, $ϙ = 1$, $\mu = 1$: $B = 1.998719\times10^{-2}$, $\langle \rho\rangle = 1.1661976\times10^{-3}$ from the closed form against the same value from numerical minimisation (relative error $1.3\times10^{-9}$), $\mathcal{V}'' = 2B$ and $\mathcal{V}(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2$ to the precision of the second difference, and $m_h^2 = 4B\langle \rho\rangle = 9.3236\times10^{-5}$.
+so the vacuum is radiatively generated at an exponentially small scale, the origin is a local maximum, and the radial mode acquires the mass $m_h^2 = 4B\langle \rho\rangle$. This is the Coleman–Weinberg mechanism, and the framework's contribution to it is the centrality of the scalar, the modulus $\rho$ as the invariant, and the field content that fixes $B$. The coefficient was recomputed for $\lambda = 0.5$, $ϙ = 1$, $\mu = 1$: $B = 1.998719\times10^{-2}$, $\langle \rho\rangle = 1.1661976\times10^{-3}$ from the closed form against the same value from numerical minimisation (relative error $1.3\times10^{-9}$), $\frac{d^2\mathcal{V}}{d\rho^2} = 2B$ and $\mathcal{V}(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2$ to the precision of the second difference, and $m_h^2 = 4B\langle \rho\rangle = 9.3236\times10^{-5}$.
 
 The loop integral, its regularization and its renormalization are standard and are imported; the scale dependence of the minimum is the running of the couplings and is not a prediction of a number. What is open is whether the framework's trace or biquaternion norm selects a preferred renormalization scale or a preferred quartic coupling, whether the framework's gauge-fixing conventions change the Goldstone bookkeeping, and whether the mechanism yields any empirical contact.
 
@@ -317,16 +317,16 @@ The loop integral, its regularization and its renormalization are standard and a
 | $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
 | $\Gamma[\tilde\Phi_{\mathrm{cl}}] = \langle\tilde{J},\tilde\Phi_{\mathrm{cl}}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
-| $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}]$ | One-loop effective action (determinant) |
+| $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ | One-loop effective action (determinant) |
 | $V_\text{eff} = -\Gamma/\text{vol}$, $\mathcal{V}_\text{eff}(\rho)$ | Effective potential; its restriction to the invariant |
-| $S''[\varphi_c] = -\Box + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |
+| $S^{(2)}[\varphi_c] = -\Box + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |
 | $\mathcal{V}_1(\rho) = \frac{1}{64\pi^2}\sum_i n_i m_i^4[\ln(m_i^2/\mu^2) - c_i]$ | One-loop effective potential (Coleman–Weinberg form) |
 | $m_1^2(\rho) = \frac{\lambda}{2}(3\rho - v_0^2)$, $m_2^2(\rho) = \frac{\lambda}{2}(\rho - v_0^2)$ | Field-dependent masses of the two real scalar modes |
 | $m_1^2 = \frac32\lambda \rho$, $m_2^2 = \frac{\lambda}{2}\rho$ ($v_0 = 0$); $m_A^2(\rho) = 2ϙ^2\rho$ | Scale-invariant scalar masses; gauge mass; $n_A = 3$ (units $\hbar = c = 1$) |
 | $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ | One-loop coefficient of $\rho^2\ln(\rho/\mu^2)$ |
 | $\mu$ | Renormalization scale |
 | $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$ | Coleman–Weinberg minimum |
-| $\mathcal{V}_\text{eff}''(\langle \rho\rangle) = 2B$, $m_h^2 = 4B\langle \rho\rangle$ | Curvature and radial mass at the radiative minimum |
+| $\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\langle \rho\rangle) = 2B$, $m_h^2 = 4B\langle \rho\rangle$ | Curvature and radial mass at the radiative minimum |
 | $\beta_\lambda, \beta_ϙ, \gamma_\rho$ | Beta functions and anomalous dimension of the invariant $\rho$ (companion) |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |

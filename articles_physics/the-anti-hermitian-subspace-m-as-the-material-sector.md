@@ -177,14 +177,14 @@ From the physical point of view, the zero divisors of $\mathbb{M}_-$ are the **n
 The four-vectors of physics transform under the Lorentz group by **rotor conjugation**:
 
 $$
-\tilde{Q}_1' = \tilde U\,\tilde{Q}_1\,\tilde U^{*},
+\tilde{Q}_1' = \tilde U_{\mathrm L}\,\tilde{Q}_1\,\tilde U_{\mathrm L}^{*},
 $$
 
-where $\tilde U$ is a **unit-norm biquaternion**, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$ satisfying $\tilde U\tilde U^{\natural} = e_t$. The rotor $\tilde U$ is Hermitian (i.e. $\tilde U^{*} = \tilde U$) for a pure boost, and a real quaternion for a pure spatial rotation. For a general Lorentz transformation, $\tilde U$ is a general unit-norm biquaternion in $\mathbb{B}$.
+where $\tilde U_{\mathrm L}$, the Lorentz rotor, is a **unit-norm biquaternion**, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$ satisfying $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$. The rotor $\tilde U_{\mathrm L}$ is Hermitian (i.e. $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$) for a pure boost, and a real quaternion for a pure spatial rotation. For a general Lorentz transformation, $\tilde U_{\mathrm L}$ is a general unit-norm biquaternion in $\mathbb{B}$.
 
-The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{Q}_1 \in \mathbb{M}_-$ and $\tilde U$ is a unit-norm biquaternion, then $\tilde U\tilde{Q}_1\tilde U^{*} \in \mathbb{M}_-$.
+The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{Q}_1 \in \mathbb{M}_-$ and $\tilde U_{\mathrm L}$ is a unit-norm biquaternion, then $\tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*} \in \mathbb{M}_-$.
 
-This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde U$ is a general unit-norm biquaternion in $\mathbb{B}$, Hermitian for pure boosts and real for pure rotations; the space on which the rotor acts is $\mathbb{M}_-$.
+This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde U_{\mathrm L}$ is a general unit-norm biquaternion in $\mathbb{B}$, Hermitian for pure boosts and real for pure rotations; the space on which the rotor acts is $\mathbb{M}_-$.
 
 ### The Bracket Algebra
 
@@ -275,10 +275,10 @@ The four-vectors share the following structural features, which are the reasons 
 **3. Lorentz covariance.** The four-vectors transform under the Lorentz group by the **rotor conjugation**
 
 $$
-\tilde{Q}_1 \;\longmapsto\; \tilde U\,\tilde{Q}_1\,\tilde U^{*}.
+\tilde{Q}_1 \;\longmapsto\; \tilde U_{\mathrm L}\,\tilde{Q}_1\,\tilde U_{\mathrm L}^{*}.
 $$
 
-The rotor $\tilde U$ is a unit-norm biquaternion, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$. The group lives in the full algebra $\mathbb{B}$, not in any single subspace (since $\mathbb{M}_-$ and $\mathbb{M}_+$ are not closed under multiplication). The different types of Lorentz transformation have rotors in different subspaces: **pure boosts** have rotors in $\mathbb{M}_+$ (they are Hermitian), **pure spatial rotations** have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and **general Lorentz transformations** have rotors in the full algebra $\mathbb{B}$.
+The rotor $\tilde U_{\mathrm L}$ is a unit-norm biquaternion, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$. The group lives in the full algebra $\mathbb{B}$, not in any single subspace (since $\mathbb{M}_-$ and $\mathbb{M}_+$ are not closed under multiplication). The different types of Lorentz transformation have rotors in different subspaces: **pure boosts** have rotors in $\mathbb{M}_+$ (they are Hermitian), **pure spatial rotations** have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and **general Lorentz transformations** have rotors in the full algebra $\mathbb{B}$.
 
 **4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the biquaternion norm $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, and $0$ for the four-wavevector of light. The four-potential and the four-current are different in kind: the invariant statements associated with them are the gauge condition $\langle\tilde\nabla,\tilde A\rangle_{\natural} = 0$ and the conservation law $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$, which constrain the divergence of the four-vector, not its biquaternion norm. The biquaternion norm $\tilde{A}\tilde{A}^{\natural}$ vanishes only for a radiation field in the null gauge, and $\tilde{J}\tilde{J}^{\natural}$ vanishes only for a null current, $|\vec j| = c\rho$.
 
@@ -323,8 +323,8 @@ With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice 
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural}$ | Biquaternion norm |
 | $s^2 = \langle d\tilde{Q}_1\rangle_{\natural} = d\tilde{Q}_1\,\overline{d\tilde{Q}_1}$ | Invariant interval |
-| $\tilde U \in \mathbb{B}$, $\tilde U\tilde U^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
-| $\tilde{Q}_1' = \tilde U\tilde{Q}_1\tilde U^{*}$ | Rotor conjugation |
+| $\tilde U_{\mathrm L} \in \mathbb{B}$, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
+| $\tilde{Q}_1' = \tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}$ | Rotor conjugation |
 | $[\tilde{Q}_1,\tilde{Q}_2] = 2\,\vec q\times\vec r$ | Commutator on $\mathbb{M}_-$: twice the vector product, lands in $\mathbb{M}_-$ |
 | $\{\tilde{Q}_1,\tilde{Q}_2\} \in \mathbb{M}_+$ | Anticommutator on $\mathbb{M}_-$: lands in the informational sector |
 | the four forms | $\langle\tilde P,\tilde Q_1\rangle=\mathrm{Sc}(\tilde P\tilde Q_1)$, $\langle\tilde P,\tilde Q_1\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q_1)$, $\langle\tilde P,\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q_1^{*})$, $\langle\tilde P,\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q_1^{*})$; on $\mathbb{M}_-$ all four are real, with $H=-B$ and $K=-N$ |

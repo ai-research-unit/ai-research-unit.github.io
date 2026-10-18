@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The physical point comes first. The rotor group $\{\tilde{U} : \langle\tilde{U}\rangle_{\natural} = e_t\}$ acts on the material sector $\mathbb{M}_-$ by the rotor conjugation $\tilde{Q}_1 \mapsto \tilde{U}\tilde{Q}_1\tilde{U}^{*}$, and that conjugation is literally the product of the left copy of $\tilde{U}$ with the right copy of $\tilde{U}^{*}$ acting on the four-vector: in the regular representation the Lorentz transformation of a four-vector is a product of two multiplications in the algebra.
+The physical point comes first. The Lorentz rotor group, the group of unit-norm biquaternions $\{\tilde U_{\mathrm L} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t\}$, acts on the material sector $\mathbb{M}_-$ by the rotor conjugation $\tilde{Q}_1 \mapsto \tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}$, and that conjugation is literally the product of the left copy of $\tilde U_{\mathrm L}$ with the right copy of $\tilde U_{\mathrm L}^{*}$ acting on the four-vector: in the regular representation the Lorentz transformation of a four-vector is a product of two multiplications in the algebra.
 
 The **regular representation** of the biquaternion algebra is the algebra acting on itself on the left. Multiplication on the left by a fixed element is linear on the four-dimensional space $\mathbb{B}$, so in the basis $e_t, \vec e_x, \vec e_y, \vec e_z$ it is a $4 \times 4$ complex matrix. This article constructs that matrix and its companion for multiplication on the right, proves that the two constructions are multiplicative, and reads off the consequences: the determinant is the **square** of the biquaternion norm and the trace is four times the scalar part; the regular module is the direct sum of two copies of the simple module, which in this corpus are the two **chiralities**; the centralizer of the left copy is the right copy; and the two copies together give the two-sided action by which a Lorentz transformation of a four-vector is written. The image of the left multiplication is written $M_4(\mathbb{C})_L$: the subspace of $M_4(\mathbb{C})$ of the regular matrices, of complex dimension $4$ inside the $16$ of the matrix algebra.
 
@@ -583,40 +583,40 @@ One geometric statement uses both copies at once, and it is the reason the regul
 **Definition.** The **rotor group** of $\mathbb{B}$ is
 
 $$
-\{\tilde{U} \in \mathbb{B} : \langle\tilde{U}\rangle_{\natural} = e_t\} .
+\{\tilde U_{\mathrm L} \in \mathbb{B} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t\} .
 $$
 
-It is a group, and under $\mathsf{M}_4$ it is the special linear group $SL(2,\mathbb{C})$, since $\langle\tilde{U}\rangle_{\natural} = \det\mathsf{M}_4(\tilde{U}) = 1$.
+It is a group, and under $\mathsf{M}_4$ it is the special linear group $SL(2,\mathbb{C})$, since $\langle\tilde U_{\mathrm L}\rangle_{\natural} = \det\mathsf{M}_4(\tilde U_{\mathrm L}) = 1$.
 
 **Proposition (the two-sided action).** The map
 
 $$
-\tilde{Q}_1 \longmapsto \tilde{U}\tilde{Q}_1\tilde{U}^{*}
+\tilde{Q}_1 \longmapsto \tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}
 $$
 
 is a group action of the rotor group on the material sector $\mathbb{M}_-$ and on the informational sector $\mathbb{M}_+$, and it preserves the biquaternion norm on each:
 
 $$
-\langle\tilde{U}\tilde{Q}_1\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural} .
+\langle\tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural} .
 $$
 
-**Proof.** If $\tilde{Q}_1$ is anti-Hermitian then $(\tilde{U}\tilde{Q}_1\tilde{U}^{*})^{*} = \tilde{U}\tilde{Q}_1^{*}\tilde{U}^{*} = -\tilde{U}\tilde{Q}_1\tilde{U}^{*}$, so $\mathbb{M}_-$ is preserved; if $\tilde{Q}_1$ is Hermitian then $\tilde{Q}_1^{*} = \tilde{Q}_1$ and $\mathbb{M}_+$ is preserved. The biquaternion norm is multiplicative, so $\langle\tilde{U}\tilde{Q}_1\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{U}\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural}\langle\tilde{U}^{*}\rangle_{\natural}$, and $\langle\tilde{U}\rangle_{\natural} = e_t$ while $\langle\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{U}\rangle_{\natural}^{*} = e_t$. Composition holds because $\tilde{U}_1(\tilde{U}_2\tilde{Q}_1\tilde{U}_2^{*})\tilde{U}_1^{*} = (\tilde{U}_1\tilde{U}_2)\tilde{Q}_1(\tilde{U}_1\tilde{U}_2)^{*}$.
+**Proof.** If $\tilde{Q}_1$ is anti-Hermitian then $(\tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*})^{*} = \tilde U_{\mathrm L}\tilde{Q}_1^{*}\tilde U_{\mathrm L}^{*} = -\tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}$, so $\mathbb{M}_-$ is preserved; if $\tilde{Q}_1$ is Hermitian then $\tilde{Q}_1^{*} = \tilde{Q}_1$ and $\mathbb{M}_+$ is preserved. The biquaternion norm is multiplicative, so $\langle\tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural}\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural}$, and $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$ while $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}^{*} = e_t$. Composition holds because $\tilde U_{\mathrm L,1}(\tilde U_{\mathrm L,2}\tilde{Q}_1\tilde U_{\mathrm L,2}^{*})\tilde U_{\mathrm L,1}^{*} = (\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2})\tilde{Q}_1(\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2})^{*}$.
 
 ### The Lorentz Transformation as Left Times Right
 
-**Corollary (the regular form of the rotor conjugation).** For every rotor $\tilde{U}$ and every four-vector $\tilde{Q}_1$,
+**Corollary (the regular form of the rotor conjugation).** For every rotor $\tilde U_{\mathrm L}$ and every four-vector $\tilde{Q}_1$,
 
 $$
-\tilde{U}\tilde{Q}_1\tilde{U}^{*} = \mathsf{M}_4^{L}(\tilde{U})\,\mathsf{M}_4^{R}(\tilde{U}^{*})\,\tilde{Q}_1,
+\tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*} = \mathsf{M}_4^{L}(\tilde U_{\mathrm L})\,\mathsf{M}_4^{R}(\tilde U_{\mathrm L}^{*})\,\tilde{Q}_1,
 $$
 
-so the rotor conjugation is the left copy of $\tilde{U}$ composed with the right copy of $\tilde{U}^{*}$.
+so the rotor conjugation is the left copy of $\tilde U_{\mathrm L}$ composed with the right copy of $\tilde U_{\mathrm L}^{*}$.
 
-**Proof.** By definition $\mathsf{M}_4^{L}(\tilde{U})$ multiplies on the left and $\mathsf{M}_4^{R}(\tilde{U}^{*})$ on the right; applying the second to the four-vector and then the first gives $\tilde{U}(\tilde{Q}_1\tilde{U}^{*}) = \tilde{U}\tilde{Q}_1\tilde{U}^{*}$ by associativity.
+**Proof.** By definition $\mathsf{M}_4^{L}(\tilde U_{\mathrm L})$ multiplies on the left and $\mathsf{M}_4^{R}(\tilde U_{\mathrm L}^{*})$ on the right; applying the second to the four-vector and then the first gives $\tilde U_{\mathrm L}(\tilde{Q}_1\tilde U_{\mathrm L}^{*}) = \tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}$ by associativity.
 
 This is the statement promised in the introduction. A Lorentz transformation of a four-vector, in the biquaternion framework, is not primarily a matrix: it is a **two-sided multiplication**, one copy on each side, and the regular representation is the realization in which both copies are $4 \times 4$ matrices. The identity also shows why both regular representations are needed — the left one alone cannot produce the transformation, since the right factor is not central.
 
-**The invariance of the interval.** Since $\langle\cdot\rangle_{\natural}$ is multiplicative and $\langle\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{U}\rangle_{\natural}^{*} = e_t$, the interval of a material four-vector is preserved by every rotor conjugation. The zero set is therefore invariant, and the causal classes of the framework are the orbits of the rotor group. This is the algebraic statement of the invariance of the interval, and it is what makes the rotor group the Lorentz group of the framework.
+**The invariance of the interval.** Since $\langle\cdot\rangle_{\natural}$ is multiplicative and $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}^{*} = e_t$, the interval of a material four-vector is preserved by every rotor conjugation. The zero set is therefore invariant, and the causal classes of the framework are the orbits of the rotor group. This is the algebraic statement of the invariance of the interval, and it is what makes the rotor group the Lorentz group of the framework.
 
 ### Rotation Rotors and Boost Rotors
 
@@ -662,9 +662,9 @@ $$
 
 onto the identity component $SO^+(1,3)$ of the orthogonal group of the interval, with kernel $\{e_t, -e_t\}$, central of order two.
 
-**Proof.** A real-linear map of $\mathbb{M}_-$ preserving the quadratic form of signature $(3,1)$ is an element of $O(3,1)$; the action is continuous in $\tilde{U}$ and $SL(2,\mathbb{C})$ is connected, so the image is a connected subgroup of $O(3,1)$ and therefore lies in $SO^+(1,3)$. Surjectivity onto that component is the standard fact that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, cited from the standard theory of the orthogonal groups. For the kernel, $\tilde{U}$ acts trivially precisely when $\tilde{U}\tilde{Q}_1\tilde{U}^{*} = \tilde{Q}_1$ for every $\tilde{Q}_1$ in $\mathbb{M}_-$. Taking $\tilde{Q}_1 = ie_t$ gives $\tilde{U}\tilde{U}^{*} = e_t$, that is, $\tilde{U}$ is unitary, and the condition then reads $\tilde{U}\tilde{Q}_1 = \tilde{Q}_1\tilde{U}$ for every $\tilde{Q}_1$ in $\mathbb{M}_-$. The elements of $\mathbb{M}_-$ span $\mathbb{B}$ over $\mathbb{C}$, so $\tilde{U}$ commutes with every element of $\mathbb{B}$ and is therefore a central element $\lambda e_t$; the norm condition $\langle \lambda e_t\rangle_{\natural} = \lambda^2 = 1$ leaves $\lambda = \pm 1$. Both central elements act trivially and no other element does.
+**Proof.** A real-linear map of $\mathbb{M}_-$ preserving the quadratic form of signature $(3,1)$ is an element of $O(3,1)$; the action is continuous in $\tilde U_{\mathrm L}$ and $SL(2,\mathbb{C})$ is connected, so the image is a connected subgroup of $O(3,1)$ and therefore lies in $SO^+(1,3)$. Surjectivity onto that component is the standard fact that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, cited from the standard theory of the orthogonal groups. For the kernel, $\tilde U_{\mathrm L}$ acts trivially precisely when $\tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*} = \tilde{Q}_1$ for every $\tilde{Q}_1$ in $\mathbb{M}_-$. Taking $\tilde{Q}_1 = ie_t$ gives $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*} = e_t$, that is, $\tilde U_{\mathrm L}$ is unitary, and the condition then reads $\tilde U_{\mathrm L}\tilde{Q}_1 = \tilde{Q}_1\tilde U_{\mathrm L}$ for every $\tilde{Q}_1$ in $\mathbb{M}_-$. The elements of $\mathbb{M}_-$ span $\mathbb{B}$ over $\mathbb{C}$, so $\tilde U_{\mathrm L}$ commutes with every element of $\mathbb{B}$ and is therefore a central element $\lambda e_t$; the norm condition $\langle \lambda e_t\rangle_{\natural} = \lambda^2 = 1$ leaves $\lambda = \pm 1$. Both central elements act trivially and no other element does.
 
-**The physical interpretation.** The rotor group is the covering group of the Lorentz group, the map $\mathrm{Ad}$ is two-to-one, and the two-element kernel is the statement that a physical Lorentz transformation corresponds to two rotors, $\tilde{U}$ and $-\tilde{U}$. The double cover is met in the spinor articles, where it is read on the module; here it is read as the two-sided action of the regular representation, that is, as the left copy composed with the right copy of the conjugate transpose. The corpus's account of the framework records that this rotor conjugation is the **only coupling** the framework supplies, and that it is kinematic: it is a symmetry of each of the two sectors and not a source, and no equation of motion for $\mathbb{M}_+$-valued fields is supplied with it.
+**The physical interpretation.** The rotor group is the covering group of the Lorentz group, the map $\mathrm{Ad}$ is two-to-one, and the two-element kernel is the statement that a physical Lorentz transformation corresponds to two rotors, $\tilde U_{\mathrm L}$ and $-\tilde U_{\mathrm L}$. The double cover is met in the spinor articles, where it is read on the module; here it is read as the two-sided action of the regular representation, that is, as the left copy composed with the right copy of the conjugate transpose. The corpus's account of the framework records that this rotor conjugation is the **only coupling** the framework supplies, and that it is kinematic: it is a symmetry of each of the two sectors and not a source, and no equation of motion for $\mathbb{M}_+$-valued fields is supplied with it.
 
 ## Physical Readings
 
@@ -676,7 +676,7 @@ The left regular matrix $\mathsf{M}_4^{L}(\tilde{Q}_1)$ is the left multiplicati
 
 The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ with $\tilde\Pi_\pm = \tfrac12(e_t \pm i\vec e_z)$, the two chiralities; in the adapted basis $\tilde\Pi_+, \vec e_x\tilde\Pi_+, \tilde\Pi_-, \vec e_x\tilde\Pi_-$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\mathsf{M}_4(\tilde{Q}_1)$ and each a copy of the simple module $S$. So $\mathsf{M}_4^{L} \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_{1t}\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\vec\Upsilon_x = \tfrac12(i\vec e_x - \vec e_y)$. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_{1t})$, hence traceless on a material four-vector.
 
-Read on the material sector, the regular matrix of a four-vector is the matrix displayed in the first section, with trace $4iq'_t$ and determinant the square of the interval; the four-position has determinant $(-c^2t^2 +x^2+y^2+z^2)^2$, the four-velocity $c^4$, the on-shell four-momentum $m^4c^4$, and the massless four-momentum zero. The gradient's regular matrix is the first-order $4 \times 4$ matrix whose chiral block has determinant $\Box$ and whose determinant is $\Box^2$. Finally, the rotor group $\{\tilde{U} : \langle\tilde{U}\rangle_{\natural} = e_t\} \cong SL(2,\mathbb{C})$ acts on $\mathbb{M}_-$ and $\mathbb{M}_+$ by $\tilde{Q}_1 \mapsto \tilde{U}\tilde{Q}_1\tilde{U}^{*}$, which is $\mathsf{M}_4^{L}(\tilde{U})\mathsf{M}_4^{R}(\tilde{U}^{*})$ acting on the four-vector — the Lorentz transformation as left times right — preserving the interval, with rotation rotors the unit real quaternions, boost rotors the Hermitian unit elements, and the covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ two-to-one with kernel $\{\pm e_t\}$.
+Read on the material sector, the regular matrix of a four-vector is the matrix displayed in the first section, with trace $4iq'_t$ and determinant the square of the interval; the four-position has determinant $(-c^2t^2 +x^2+y^2+z^2)^2$, the four-velocity $c^4$, the on-shell four-momentum $m^4c^4$, and the massless four-momentum zero. The gradient's regular matrix is the first-order $4 \times 4$ matrix whose chiral block has determinant $\Box$ and whose determinant is $\Box^2$. Finally, the rotor group $\{\tilde U_{\mathrm L} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t\} \cong SL(2,\mathbb{C})$ acts on $\mathbb{M}_-$ and $\mathbb{M}_+$ by $\tilde{Q}_1 \mapsto \tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}$, which is $\mathsf{M}_4^{L}(\tilde U_{\mathrm L})\mathsf{M}_4^{R}(\tilde U_{\mathrm L}^{*})$ acting on the four-vector — the Lorentz transformation as left times right — preserving the interval, with rotation rotors the unit real quaternions, boost rotors the Hermitian unit elements, and the covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ two-to-one with kernel $\{\pm e_t\}$.
 
 ## Summary of Notation
 
@@ -709,7 +709,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\tilde{\nabla} = e_t\partial/\partial Q_{1t} + \vec e_x\partial/\partial Q_{1x} + \vec e_y\partial/\partial Q_{1y} + \vec e_z\partial/\partial Q_{1z}$ | Biquaternionic gradient; $\det A_+(\tilde{\nabla}) = \Box$, $\det\mathsf{M}_4^{L}(\tilde{\nabla}) = \Box^2$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_{1t}^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \operatorname{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
-| $\tilde{U}$, $\langle\tilde{U}\rangle_{\natural} = e_t$ | Rotor; the rotor group $\cong SL(2,\mathbb{C})$ |
+| $\tilde U_{\mathrm L}$, $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$ | Rotor; the rotor group $\cong SL(2,\mathbb{C})$ |
 | $\tilde u_{\mathrm r}(\theta,\vec u)$, $\tilde U_{\mathrm b}(s,\vec u)$ | Rotation rotor (real, $\tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{\natural}$) and boost rotor (Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$) |
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Covering homomorphism, kernel $\{\pm e_t\}$ |
 | $c$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$ |

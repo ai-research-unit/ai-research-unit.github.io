@@ -437,7 +437,7 @@ $$
 which is idempotent, because $(b\omega)^2 = b^2\omega^2 = (-1)(-1) = +1$, but is **not central**: it does not commute with the even algebra, since $b$ does not. For example, $\tfrac{1}{2}(e_t + i\vec e_z)$ maps to $\tfrac{1}{2}(I_4 + \gamma^0\gamma^3)$, which squares to itself and does not commute with $\mathsf{M}_4(\vec e_x) = \gamma^2\gamma^3$. So the dictionary separates two idempotent families that both carry the name $\tilde\Pi_{1,2}$ in the corpus:
 
 - the **chirality projectors** $\tfrac{1}{2}(1 \pm \gamma_5) \leftrightarrow \tfrac{1}{2}(e_t \mp i_{\mathrm{Cl}} i)$, central, two of them, splitting the complexified algebra;
-- the **state projectors** $\tfrac{1}{2}(1 + b\omega) \leftrightarrow \tfrac{1}{2}(e_t + \mu i)$, non-central, parametrized by a unit vector and the Bloch sphere.
+- the **state idempotents** $\tfrac{1}{2}(1 + b\omega) \leftrightarrow \tfrac{1}{2}(e_t + \mu i)$, non-central, parametrized by a unit vector and the Bloch sphere.
 
 Both are idempotent; only the first is central. The distinction is the same as the distinction between splitting the algebra into chiral halves and selecting a state within it.
 

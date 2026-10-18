@@ -34,7 +34,7 @@ $$
 
 Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
-The relation $\tilde\Pi_-=e_t-\tilde\Pi_+$ is the algebraic form of the word *complementary*: the second idempotent is the complement of the first in the algebra's own unit. Both are Hermitian, both are projectors of unit trace, both are primitive — each generates a minimal left ideal — and the two resolve the identity (*The Biquaternion Vacuum as a Minimal Idempotent*).
+The relation $\tilde\Pi_-=e_t-\tilde\Pi_+$ is the algebraic form of the word *complementary*: the second idempotent is the complement of the first in the algebra's own unit. Both are Hermitian, both are idempotents of unit trace, both are primitive — each generates a minimal left ideal — and the two resolve the identity (*The Biquaternion Vacuum as a Minimal Idempotent*).
 
 ### The Two Summands
 
@@ -226,7 +226,7 @@ The first physical fact is a counting one. The algebra is **two copies of the st
 
 ### The Occupation Reading
 
-The two ideals can be read as the two levels of a single mode. Writing the matrix units as occupation projectors,
+The two ideals can be read as the two levels of a single mode. Writing the matrix units as occupation idempotents,
 
 $$
 \tilde\Pi_+=|0\rangle\langle0|,\qquad \tilde\Pi_-=|1\rangle\langle1|,\qquad \vec\Upsilon_x=|0\rangle\langle1|,\qquad \vec\Upsilon_y=|1\rangle\langle0|,
@@ -280,7 +280,7 @@ $$
 \tfrac12\bigl(\vec\Upsilon_y-\vec\Upsilon_y^{*}\bigr)=\tfrac12 \vec e_y\in\mathbb{M}_-,
 $$
 
-and neither lies in the line $\mathbb{C}\vec\Upsilon_y$. The **physical interpretation** is that a sector label attaches to the **projector** direction of an ideal and to no part of the raising and lowering direction: the ideal's idempotent is the informational datum, and the nilpotent that shifts the level carries none.
+and neither lies in the line $\mathbb{C}\vec\Upsilon_y$. The **physical interpretation** is that a sector label attaches to the **idempotent** direction of an ideal and to no part of the raising and lowering direction: the ideal's idempotent is the informational datum, and the nilpotent that shifts the level carries none.
 
 ### Why the Ideal Split Can Never Be a Sector Split
 
@@ -290,7 +290,7 @@ The independence is not an accident of the coordinate pair, and it is worth stat
 
 *Proof.* The conjugation negates the scalar imaginary, $i^{*}=-i$, since it conjugates the coefficients. Being anti-multiplicative and real-linear, $(i\tilde Q)^{*}=\overline{i}\,\tilde Q^{*}=-i\,\tilde Q^{*}$, so $\tilde Q^{*}=\pm\tilde Q$ gives $(i\tilde Q)^{*}=\mp(i\tilde Q)$ and exchanges the two signs. A complex subspace $V$ satisfies $iV\subseteq V$; if $V\subseteq\mathbb{M}_+$ then the exchange puts $iV$ in $\mathbb{M}_-$ and the containment puts it back in $\mathbb{M}_+$, so $V\subseteq\mathbb{M}_+\cap\mathbb{M}_-=\{0\}$, and the case $V\subseteq\mathbb{M}_-$ is the same.
 
-**Consequence.** The two ideals are complex two-dimensional and they can never be split as the two sectors: $S$ is a $\mathbb{C}^2$, but its $\mathbb{C}^2$ splits along the **Peirce corners** of §*The Two Summands* and never along $\mathbb{M}_\pm$. A second consequence sharpens the complement. The Peirce complement of a Hermitian idempotent is Hermitian again — $\tilde\Pi_-=e_t-\tilde\Pi_+$ and $e_t^{*}=e_t$ give $\tilde\Pi_-^{*}=\tilde\Pi_-$ — so the complement of $\tilde\Pi_+$ stays in $\mathbb{M}_+$ and not in $\mathbb{M}_-$. There is in fact **no nonzero idempotent** in $\mathbb{M}_-$: if $p^2=p$ and $p^{*}=-p$ then $-p=p^{*}=(p^{2})^{*}=(p^{*})^{2}=p^{2}=p$, so $p=0$. The sector that the word *complement* might suggest is therefore empty of projectors, and the two roles — the complement in the Peirce sense and the complement in the sector sense — are different objects. The structure that **is** compatible with a module over the sectors is the grading they induce on the symmetrised product, and it is stated in the companion article *The Spinor Space as a Module and as a Hilbert Space*, §*The Sector Split Is a Third Structure, and It Is Real*.
+**Consequence.** The two ideals are complex two-dimensional and they can never be split as the two sectors: $S$ is a $\mathbb{C}^2$, but its $\mathbb{C}^2$ splits along the **Peirce corners** of §*The Two Summands* and never along $\mathbb{M}_\pm$. A second consequence sharpens the complement. The Peirce complement of a Hermitian idempotent is Hermitian again — $\tilde\Pi_-=e_t-\tilde\Pi_+$ and $e_t^{*}=e_t$ give $\tilde\Pi_-^{*}=\tilde\Pi_-$ — so the complement of $\tilde\Pi_+$ stays in $\mathbb{M}_+$ and not in $\mathbb{M}_-$. There is in fact **no nonzero idempotent** in $\mathbb{M}_-$: if $p^2=p$ and $p^{*}=-p$ then $-p=p^{*}=(p^{2})^{*}=(p^{*})^{2}=p^{2}=p$, so $p=0$. The sector that the word *complement* might suggest is therefore empty of idempotents, and the two roles — the complement in the Peirce sense and the complement in the sector sense — are different objects. The structure that **is** compatible with a module over the sectors is the grading they induce on the symmetrised product, and it is stated in the companion article *The Spinor Space as a Module and as a Hilbert Space*, §*The Sector Split Is a Third Structure, and It Is Real*.
 
 ## Conventions and Traps
 
@@ -330,7 +330,7 @@ The claims are recomputed on the basis $(\tilde\Pi_+,\vec\Upsilon_y,\vec\Upsilon
 - **A bra is not an antiparticle.** The interpretation is that the dual $S^{*}$ (the right ideal, from the adjoint) and the complement $\bar S$ (the second left ideal, from the conjugation) are different subspaces, so reversing the arrows and conjugating the coefficients are different operations. Boundary: an algebraic separation of two operations, offered as the framework's reading of the dual/conjugate distinction.
 - **The second vacuum is the complement.** The interpretation is that the two one-mode ideals are the two choices of vacuum idempotent, so the complement is what the other vacuum generates, and no algebraic fact prefers one vacuum. Boundary: the module is unique; only the vacuum is a choice.
 - **The doubling is not a chirality in the module sense.** The interpretation is that the complement is isomorphic to $S$, so at the module level the doubling is a copy and not a chirality; where the corpus calls the two ideals the two chiralities (spectral triple, chirality-off-diagonal mass) it is using a second, different convention. Boundary: a convention warning, not a new result.
-- **The sector label lives on the projector, not on the ladder.** The interpretation is that the two ideals are distinguished by their idempotents, $\tilde\Pi_+$ and $\tilde\Pi_-$, which are orthogonal idempotents **of $\mathbb{M}_+$**, while the nilpotents that shift the level carry no material or informational label. The doubling is therefore an **informational** doubling — two projectors of one sector — and not a material–informational pair. Boundary: it accounts for where the sector split is visible on the ideal and assigns no new quantum number.
+- **The sector label lives on the idempotent, not on the ladder.** The interpretation is that the two ideals are distinguished by their idempotents, $\tilde\Pi_+$ and $\tilde\Pi_-$, which are orthogonal idempotents **of $\mathbb{M}_+$**, while the nilpotents that shift the level carry no material or informational label. The doubling is therefore an **informational** doubling — two idempotents of one sector — and not a material–informational pair. Boundary: it accounts for where the sector split is visible on the ideal and assigns no new quantum number.
 
 ## Summary
 
@@ -371,7 +371,7 @@ Physically the complement is the **second copy of the state space**, $\mathbb{B}
 | $\bar{\cdot}$ (coefficient conjugation) | Anti-linear involution; $\bar S=\mathbb{B}\tilde\Pi_-$ |
 | ${}^{*}$ (Hermitian conjugation) | Gives the dual $S^{*}=\tilde\Pi_+\mathbb{B}$ |
 | $S\vec\Upsilon_x=\mathbb{B}\tilde\Pi_-$ | The module isomorphism $S\to$ complement |
-| $\tilde\Pi_+=|0\rangle\langle0|,\ \tilde\Pi_-=|1\rangle\langle1|$ | Occupation projectors of the one-mode interpretation |
+| $\tilde\Pi_+=|0\rangle\langle0|,\ \tilde\Pi_-=|1\rangle\langle1|$ | Occupation idempotents of the one-mode interpretation |
 | $\mathbb{M}_\pm$ | Hermitian and anti-Hermitian sectors |
 | $S\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$, etc. | Each ideal meets each sector in one real dimension |
 | $i\,\mathbb{M}_+=\mathbb{M}_-$, $i\,\mathbb{M}_-=\mathbb{M}_+$ | The imaginary scalar swaps the sectors; no complex subspace lies in a sector |

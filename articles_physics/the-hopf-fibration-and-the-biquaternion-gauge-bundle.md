@@ -64,7 +64,7 @@ $$
 =\tfrac14\bigl(e_t+2i\vec u-\vec u^2\bigr)=\tfrac12\bigl(e_t+i\vec u\bigr)
 $$
 
-shows, using $\vec u^2=-e_t$ and the centrality of $i$. The map $\vec u\mapsto\tilde\Pi(\vec u)$ is a bijection between the unit pure-imaginary sphere and the nontrivial idempotents of $\mathbb M_+$, so the base of the fibration is the manifold of the framework's informational projectors. This is the algebraic identity that places the Hopf fibration inside the framework rather than alongside it.
+shows, using $\vec u^2=-e_t$ and the centrality of $i$. The map $\vec u\mapsto\tilde\Pi(\vec u)$ is a bijection between the unit pure-imaginary sphere and the nontrivial idempotents of $\mathbb M_+$, so the base of the fibration is the manifold of the framework's informational idempotents. This is the algebraic identity that places the Hopf fibration inside the framework rather than alongside it.
 
 **The action and the fibre.** Conjugation by a unit real quaternion,
 

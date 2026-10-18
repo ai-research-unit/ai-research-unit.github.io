@@ -248,19 +248,19 @@ The general lesson is the one the counting predicts: the product of two rank-$1$
 
 ## The Trace Form and the Born Rule
 
-The matrix elements of a tensor operator can be extracted from traces, which is the form in which the framework's Born rule is stated. For a state idempotent $\tilde P$ and an observable $\tilde H$,
+The matrix elements of a tensor operator can be extracted from traces, which is the form in which the framework's Born rule is stated. For a state idempotent $\tilde\Pi$ and an observable $\tilde H$,
 
 $$
-\mathrm{Tr}\left(\tilde P\tilde H\right)=2\,\mathrm{Sc}\left(\tilde P\tilde H\right),
+\mathrm{Tr}\left(\tilde\Pi\tilde H\right)=2\,\mathrm{Sc}\left(\tilde\Pi\tilde H\right),
 $$
 
-the trace formula of the companion articles. A matrix element $\langle j'm'|T^{(k)}_\mu|jm\rangle$ is the trace of $T^{(k)}_\mu$ against the matrix unit $|jm\rangle\langle j'm'|$, and the reduced matrix element is therefore a trace once a normalisation is chosen. The orthogonality and completeness of the Clebsch–Gordan coefficients used in the theorem are the trace-orthogonality of the coupled projectors of the two-spin problem, written in components.
+the trace formula of the companion articles. A matrix element $\langle j'm'|T^{(k)}_\mu|jm\rangle$ is the trace of $T^{(k)}_\mu$ against the matrix unit $|jm\rangle\langle j'm'|$, and the reduced matrix element is therefore a trace once a normalisation is chosen. The orthogonality and completeness of the Clebsch–Gordan coefficients used in the theorem are the trace-orthogonality of the coupled idempotents of the two-spin problem, written in components.
 
 The trace form has one practical consequence worth stating. Because the reduced matrix element is $m$-independent, it can be extracted from any single nonzero matrix element; the trace formula then gives it as a trace, avoiding the need to fix a basis of the multiplet. In the framework this is the natural way to state the theorem, since $\mathrm{Tr}$ and $\mathrm{Sc}$ are the two invariant pairings the algebra carries, and it keeps the reduction on the algebraic side of the ledger. The price is that the Clebsch–Gordan coefficients remain imported: the trace gives the reduced element, but the geometric factor is still the rotation group's.
 
 ## What Is Algebraic and What Is Imported
 
-**Algebraic.** The adjoint action as a derivation; the invariance of the scalar part and the rotation of the vector part; the identification of $ie_k$ as a rank-$1$ tensor operator with spherical components proportional to $\tilde S_\pm$; the decomposition $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$; the ceiling that a single factor carries only ranks $0$ and $1$; and the trace form $\mathrm{Tr}(\tilde P\tilde H)=2\mathrm{Sc}(\tilde P\tilde H)$.
+**Algebraic.** The adjoint action as a derivation; the invariance of the scalar part and the rotation of the vector part; the identification of $ie_k$ as a rank-$1$ tensor operator with spherical components proportional to $\tilde S_\pm$; the decomposition $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$; the ceiling that a single factor carries only ranks $0$ and $1$; and the trace form $\mathrm{Tr}(\tilde\Pi\tilde H)=2\mathrm{Sc}(\tilde\Pi\tilde H)$.
 
 **Imported.** The definition of an irreducible tensor operator and its equivalence to the rotation law; the Wigner–Eckart theorem and its proof; the selection rules; the reduced-matrix-element technology; the vector-model corollary; and the Clebsch–Gordan coefficients used to build rank-$2$ operators. These are standard results of the representation theory of the rotation group and are cited as such.
 
@@ -280,7 +280,7 @@ The article established the following.
 - **The theorem.** $\langle j'm'|T^{(k)}_\mu|jm\rangle=\langle j,m;k,\mu|j',m'\rangle\langle j'\|T^{(k)}\|j\rangle$, with selection rules $m'=m+\mu$ and $|j-k|\le j'\le j+k$; for $k=0$ it reduces to Schur's lemma for the trivial representation.
 - **Verification.** For the one-particle spin as a vector operator under the total spin, the ratios of matrix elements to Clebsch–Gordan coefficients are $+1/\sqrt2$, $-\sqrt3/2$ and $+1/2$ for $(j',j)=(1,1),(0,1),(1,0)$ in units $\hbar=1$, independent of $(m,\mu,m')$ in each case; for the total spin on the triplet the reduced matrix element is $\sqrt2\hbar$. For the algebra's own vector operator $ie_k$ acting on the adjoint multiplet $W$, $\mathrm{ad}_{ie_k}=\tfrac{2}{\hbar}\tilde J^{(\mathrm{adj})}_k$ and the reduced matrix element is $2\sqrt2$ (units $\hbar=1$).
 - **Examples.** Within a multiplet a vector operator is proportional to $\tilde J$, with the constant fixed by the ratio of reduced matrix elements; coupling two vector operators by the $1\otimes1\to2$ coefficients produces a rank-$2$ tensor operator, whose $\mu=0$ member for the spin is the quadrupole $\tfrac{1}{\sqrt6}(3\tilde S_3^2-\tilde S^2)$, with coherent-state expectation $\tfrac{1}{\sqrt6}P_2(\cos\theta)$.
-- **Trace form.** The Born rule $\mathrm{Tr}(\tilde P\tilde H)=2\mathrm{Sc}(\tilde P\tilde H)$ extracts the reduced matrix elements as traces once a normalisation is chosen, but leaves the Clebsch–Gordan coefficients on the imported side.
+- **Trace form.** The Born rule $\mathrm{Tr}(\tilde\Pi\tilde H)=2\mathrm{Sc}(\tilde\Pi\tilde H)$ extracts the reduced matrix elements as traces once a normalisation is chosen, but leaves the Clebsch–Gordan coefficients on the imported side.
 
 ## Summary of Notation
 
@@ -298,7 +298,7 @@ The article established the following.
 | $\langle j'm'|T^{(k)}_\mu|jm\rangle$ | Matrix element |
 | $\langle j'\|T^{(k)}\|j\rangle$ | Reduced matrix element |
 | $\langle j,m;k,\mu|j',m'\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley) |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde\Pi\tilde H)=2\mathrm{Sc}(\tilde\Pi\tilde H)$ | Trace formula (Born rule) |
 
 ## Further Reading
 

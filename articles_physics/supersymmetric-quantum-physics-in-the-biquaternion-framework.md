@@ -8,7 +8,7 @@ $$
 \{\mathcal{Q},\mathcal{Q}^\dagger\} = H, \qquad \mathcal{Q}^2 = 0, \qquad (\mathcal{Q}^\dagger)^2 = 0 .
 $$
 
-Its central structural fact is that the Hamiltonian factorises: writing $H = \mathrm{diag}(H_+,H_-)$ in the grading, one has $H_+ = A^\dagger A$ and $H_- = A A^\dagger$ for a first-order operator $A$, so the two graded sectors have **partner** spectra that agree except possibly at zero energy. The partner potentials are $V_\pm = W^2 \mp W'$, where $W$ is the superpotential, and the Witten index $\Delta = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ counts the imbalance of zero-energy states between the two sectors.
+Its central structural fact is that the Hamiltonian factorises: writing $H = \mathrm{diag}(H_+,H_-)$ in the grading, one has $H_+ = A^\dagger A$ and $H_- = A A^\dagger$ for a first-order operator $A$, so the two graded sectors have **partner** spectra that agree except possibly at zero energy. The partner potentials are $V_\pm = W^2 \mp \frac{dW}{dx}$, where $W$ is the superpotential, and the Witten index $\Delta = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ counts the imbalance of zero-energy states between the two sectors.
 
 This article argues that the biquaternion framework is the natural home of that structure, for a reason that is visible in the first line. The entire relativistic quantum theory of spin $\tfrac12$ in this corpus rests on a **first-order** operator whose square is a scalar: $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, and the massive equation is the off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. That is a factorisation, and it is a factorisation by an odd operator with respect to a grading — the chirality grading of the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic Dirac operator is therefore a supercharge, the two chiralities are the two graded sectors, and the mass is the off-diagonal entry that the supersymmetry algebra writes as the superpotential. The formal correspondence is exact in the reduced theory, where it can be exhibited in closed form; in the full theory it is the structural principle that the companion articles on the Dirac square, the oscillator, and the path integral all use.
 
@@ -31,14 +31,14 @@ $$
 where $W$ is a real function, the **superpotential**. Define the two **partner Hamiltonians**
 
 $$
-H_+ = A^\dagger A = -\frac{d^2}{dx^2} + W^2 - W', \qquad
-H_- = A A^\dagger = -\frac{d^2}{dx^2} + W^2 + W',
+H_+ = A^\dagger A = -\frac{d^2}{dx^2} + W^2 - \frac{dW}{dx}, \qquad
+H_- = A A^\dagger = -\frac{d^2}{dx^2} + W^2 + \frac{dW}{dx},
 $$
 
 so that the partner potentials are
 
 $$
-V_\pm = W^2 \mp W' .
+V_\pm = W^2 \mp \frac{dW}{dx} .
 $$
 
 The supercharges are the two matrices
@@ -115,7 +115,7 @@ $$
 
 which is the anticommutator $\{\mathcal{Q},\mathcal{Q}^\dagger\} = \Box\,I$; the square of the Hermitian supercharge is the central Hamiltonian, and the mass is the eigenvalue at which the first-order pair is solved. The distinction between the two objects is worth holding on to: the nilpotent $\mathcal{Q}$ is the off-diagonal half, odd under the grading, and $\mathcal{D}$ is the Hermitian Dirac operator it generates. The supersymmetric Hamiltonian of the free theory is $\Box$, and the two partner Hamiltonians coincide, $H_+ = H_- = \Box$: the free biquaternionic Dirac operator is the case of **unbroken supersymmetry with a balanced spectrum**, and the mass is the parameter that pairs the two chiralities.
 
-**The superpotential is the mass.** In the reduced theory of the next section the mass becomes position-dependent, $m \to W(x)$, and then the two partner Hamiltonians split, $H_\pm = -\partial^2/\partial Q_x^2 + W^2 \mp W'$. The superpotential is the (possibly position-dependent) mass, and the splitting of the partners is the statement that a spatially varying mass breaks the degeneracy between the two chiral sectors. This is the biquaternion interpretation of the standard claim that the superpotential is the bosonic "potential" of the supersymmetric system: here the potential is a mass.
+**The superpotential is the mass.** In the reduced theory of the next section the mass becomes position-dependent, $m \to W(x)$, and then the two partner Hamiltonians split, $H_\pm = -\partial^2/\partial Q_x^2 + W^2 \mp \frac{dW}{dx}$. The superpotential is the (possibly position-dependent) mass, and the splitting of the partners is the statement that a spatially varying mass breaks the degeneracy between the two chiral sectors. This is the biquaternion interpretation of the standard claim that the superpotential is the bosonic "potential" of the supersymmetric system: here the potential is a mass.
 
 The dictionary is not an analogy imposed from outside; it is the statement that the biquaternion algebra's own structure — a first-order operator, a conjugate, a central square, and a grading under which the operator is odd — is the supersymmetry algebra written in the language of the corpus. What the supersymmetric quantum physics adds is the recognition that the graded object's square is the Hamiltonian, and that the zero modes of the odd operator are the invariant content.
 
@@ -161,12 +161,12 @@ $$
 where $W$ is a real superpotential and $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices. A direct computation of the square, using $\sigma_1^2 = \sigma_2^2 = I$, $\sigma_2\sigma_1 = -i\sigma_3$ and $\sigma_1\sigma_2 = i\sigma_3$, gives
 
 $$
-H_D^2 = -\partial^2/\partial Q_x^2 + W^2 - \sigma_3\,W'
-= \mathrm{diag}\left(-\partial^2/\partial Q_x^2 + W^2 - W',\; -\partial^2/\partial Q_x^2 + W^2 + W'\right)
+H_D^2 = -\partial^2/\partial Q_x^2 + W^2 - \sigma_3\,\frac{dW}{dx}
+= \mathrm{diag}\left(-\partial^2/\partial Q_x^2 + W^2 - \frac{dW}{dx},\; -\partial^2/\partial Q_x^2 + W^2 + \frac{dW}{dx}\right)
 = \mathrm{diag}\left(H_+,\,H_-\right),
 $$
 
-so the two components of the 1+1-dimensional Dirac spinor are the two supersymmetric partners, and the partner potentials are exactly $V_\pm = W^2 \mp W'$. The cross terms cancel except for the commutator: $\sigma_1W(-i\sigma_2\partial/\partial Q_x) + (-i\sigma_2\partial/\partial Q_x)\sigma_1W = -\sigma_3[\partial/\partial Q_x,W]$, whose continuum value is $-\sigma_3W'$. The identity was checked by finite-difference discretisation at $N = 121$ points with the kink superpotential $W = \tanh x$: writing $D$ for the central difference and $D\circ D$ for its matrix square, the matrix identity $H_D^2 = (-D\circ D + W^2)I - \sigma_3[D,W]$ held to $7\times10^{-15}$ in the interior of the grid, and the operator limit $[D,W]\to W'$, applied to a smooth test function, converged at second order in the step, as a commutator with a central difference must.
+so the two components of the 1+1-dimensional Dirac spinor are the two supersymmetric partners, and the partner potentials are exactly $V_\pm = W^2 \mp \frac{dW}{dx}$. The cross terms cancel except for the commutator: $\sigma_1W(-i\sigma_2\partial/\partial Q_x) + (-i\sigma_2\partial/\partial Q_x)\sigma_1W = -\sigma_3[\partial/\partial Q_x,W]$, whose continuum value is $-\sigma_3\frac{dW}{dx}$. The identity was checked by finite-difference discretisation at $N = 121$ points with the kink superpotential $W = \tanh x$: writing $D$ for the central difference and $D\circ D$ for its matrix square, the matrix identity $H_D^2 = (-D\circ D + W^2)I - \sigma_3[D,W]$ held to $7\times10^{-15}$ in the interior of the grid, and the operator limit $[D,W]\to \frac{dW}{dx}$, applied to a smooth test function, converged at second order in the step, as a commutator with a central difference must.
 
 The biquaternion form of the same operator is obtained from the isomorphism. With $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ in the appropriate blocks one has $\vec e_y\leftrightarrow -i\sigma_2$ and $i \vec e_x \leftrightarrow \sigma_1$, so
 
@@ -179,14 +179,14 @@ $$
 a first-order biquaternion operator with a superpotential multiplying the second basis unit. Its square is
 
 $$
-\tilde{Q}^2 = -\partial^2/\partial Q_x^2 + W^2 - i\,W'\,\vec e_z
-= \left(-\partial^2/\partial Q_x^2 + W^2\right)e_t - W'\,(i \vec e_z),
+\tilde{Q}^2 = -\partial^2/\partial Q_x^2 + W^2 - i\,\frac{dW}{dx}\,\vec e_z
+= \left(-\partial^2/\partial Q_x^2 + W^2\right)e_t - \frac{dW}{dx}\,(i \vec e_z),
 $$
 
 where we used $\vec e_y \vec e_x = -\vec e_z$, $\vec e_x \vec e_y = \vec e_z$ and $\vec e_x^2 = \vec e_y^2 = -e_t$. Two features of this expression are the algebraic content of the section.
 
 - The **central part** is $(-\partial^2/\partial Q_x^2+W^2)e_t$; it is the common bosonic Hamiltonian, and it is central because the cross terms of the two gradients cancel exactly as in the free case.
-- The **splitting** is $-W'(i\vec e_z)$, and $i\vec e_z$ is a Hermitian biquaternion with $(i\vec e_z)^2 = +e_t$: it is an element of $\mathbb{M}_+$ whose eigenvalues are $\pm1$. The two eigenvalues of the square — the two partner potentials — are therefore $-\partial^2/\partial Q_x^2+W^2\mp W'$, and they correspond to the two eigenspaces of the Hermitian element $i\vec e_z$, i.e. to the two spin components.
+- The **splitting** is $-\frac{dW}{dx}(i\vec e_z)$, and $i\vec e_z$ is a Hermitian biquaternion with $(i\vec e_z)^2 = +e_t$: it is an element of $\mathbb{M}_+$ whose eigenvalues are $\pm1$. The two eigenvalues of the square — the two partner potentials — are therefore $-\partial^2/\partial Q_x^2+W^2\mp \frac{dW}{dx}$, and they correspond to the two eigenspaces of the Hermitian element $i\vec e_z$, i.e. to the two spin components.
 
 The superpotential is thus the coefficient of the mass-like term, the partner splitting is the eigenvalue of a Hermitian biquaternion, and the two partner Hamiltonians are the two spectral branches of a single algebra-valued square. This is the cleanest sense in which the biquaternion framework **contains** supersymmetric quantum physics: the partner structure is the eigenvalue decomposition of the $\mathbb{M}_+$ remainder of a first-order biquaternion operator's square.
 
@@ -246,15 +246,15 @@ $$
 
 with $a_2$ a function of $a_1$ and $R$ a constant for each step. When this holds, the partner Hamiltonians are isospectral except for the ground state, and the spectrum can be generated algebraically. The oscillator, the Coulomb problem and the Morse potential are the standard examples; the Dirac oscillator is a relativistic one.
 
-In the biquaternion framework shape invariance has a direct interpretation. The superpotential is the mass (or the mass profile), and a change of the parameter $a$ is a change of that mass profile; the constant $R$ is the shift produced by the central part of the squared operator. The partner Hamiltonians are the two eigenvalue branches of the squared operator, whose splitting is the Hermitian remainder $-W'(i\vec e_z)$, and shape invariance is the statement that a one-parameter change of $W$ maps one branch into the other up to a shift. The exactly solvable problems of the corpus — the oscillator of the companion article, the hydrogen atom, and their non-relativistic limits — are the cases where this change of parameters closes on itself, which is why they are exactly solvable. The algebraic origin of solvability, in this interpretation, is that the first-order operator's square is central plus a single Hermitian element whose eigenvalues are the partners.
+In the biquaternion framework shape invariance has a direct interpretation. The superpotential is the mass (or the mass profile), and a change of the parameter $a$ is a change of that mass profile; the constant $R$ is the shift produced by the central part of the squared operator. The partner Hamiltonians are the two eigenvalue branches of the squared operator, whose splitting is the Hermitian remainder $-\frac{dW}{dx}(i\vec e_z)$, and shape invariance is the statement that a one-parameter change of $W$ maps one branch into the other up to a shift. The exactly solvable problems of the corpus — the oscillator of the companion article, the hydrogen atom, and their non-relativistic limits — are the cases where this change of parameters closes on itself, which is why they are exactly solvable. The algebraic origin of solvability, in this interpretation, is that the first-order operator's square is central plus a single Hermitian element whose eigenvalues are the partners.
 
 ## Summary
 
-Supersymmetric quantum physics is the algebra $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = (\mathcal{Q}^\dagger)^2 = 0$, with a $\mathbb{Z}_2$ grading, a pair of partner Hamiltonians $H_+ = A^\dagger A$, $H_- = A A^\dagger$ for $A = d/dx + W$, partner potentials $V_\pm = W^2 \mp W'$, and the Witten index $\Delta = \dim\ker H_+ - \dim\ker H_-$.
+Supersymmetric quantum physics is the algebra $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = (\mathcal{Q}^\dagger)^2 = 0$, with a $\mathbb{Z}_2$ grading, a pair of partner Hamiltonians $H_+ = A^\dagger A$, $H_- = A A^\dagger$ for $A = d/dx + W$, partner potentials $V_\pm = W^2 \mp \frac{dW}{dx}$, and the Witten index $\Delta = \dim\ker H_+ - \dim\ker H_-$.
 
 The biquaternion framework supplies this structure natively. The biquaternionic Dirac operator is the gradient $\tilde{\nabla}$ with $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$ central; the grading is chirality, the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$; the supercharge is the Hermitian Dirac operator $\mathcal{D} = \mathcal{Q} + \mathcal{Q}^\dagger$; the superalgebra is the mass pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; and the square is $\mathcal{D}^2 = \Box\,I$, so that the free theory has $H_+ = H_- = \Box$ and the mass is the pairing parameter. The superpotential is the (possibly position-dependent) mass.
 
-The correspondence is exact in the 1+1-dimensional reduction with a superpotential $W$: the Dirac Hamiltonian $H_D = -i\sigma_2\partial/\partial Q_x + \sigma_1 W$ squares to $\mathrm{diag}(-\partial^2/\partial Q_x^2 + W^2 - W',\, -\partial^2/\partial Q_x^2 + W^2 + W')$, and its biquaternion form $\tilde{Q} = \vec e_y\partial/\partial Q_x + iW\vec e_x$ squares to the central part $(-\partial^2/\partial Q_x^2+W^2)e_t$ plus the Hermitian remainder $-W'(i\vec e_z)$, whose two eigenvalues are the partner potentials. Both identities were checked by finite-difference computation on $N = 121$ points of $L = 12$ (step $h\approx0.099$) with the kink superpotential $W = \tanh x$: the matrix identity $H_D^2 = (-D\circ D + W^2)I - \sigma_3[D,W]$, in which $D$ is the central difference and $D\circ D$ its matrix square, held to $7\times10^{-15}$ in the interior, and the operator limit $[D,W]\to W'$, applied to a smooth test function, converged at second order in $h$, as a commutator with a central difference must. The Dirac oscillator is the three-dimensional relativistic realisation: $A_\omega = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$ has infinitely many zero modes, the supersymmetry is unbroken, and the infinite degeneracy of its ground level at $E = \pm mc^2$ is the zero-mode degeneracy of the factorisation. The Witten index is the chirality imbalance of the Dirac zero modes, an invariant of the grading; and shape invariance, the algebraic origin of exact solvability, is the statement that the two eigenvalues of the Hermitian remainder can be mapped into one another by a change of the mass profile.
+The correspondence is exact in the 1+1-dimensional reduction with a superpotential $W$: the Dirac Hamiltonian $H_D = -i\sigma_2\partial/\partial Q_x + \sigma_1 W$ squares to $\mathrm{diag}(-\partial^2/\partial Q_x^2 + W^2 - \frac{dW}{dx},\, -\partial^2/\partial Q_x^2 + W^2 + \frac{dW}{dx})$, and its biquaternion form $\tilde{Q} = \vec e_y\partial/\partial Q_x + iW\vec e_x$ squares to the central part $(-\partial^2/\partial Q_x^2+W^2)e_t$ plus the Hermitian remainder $-\frac{dW}{dx}(i\vec e_z)$, whose two eigenvalues are the partner potentials. Both identities were checked by finite-difference computation on $N = 121$ points of $L = 12$ (step $h\approx0.099$) with the kink superpotential $W = \tanh x$: the matrix identity $H_D^2 = (-D\circ D + W^2)I - \sigma_3[D,W]$, in which $D$ is the central difference and $D\circ D$ its matrix square, held to $7\times10^{-15}$ in the interior, and the operator limit $[D,W]\to \frac{dW}{dx}$, applied to a smooth test function, converged at second order in $h$, as a commutator with a central difference must. The Dirac oscillator is the three-dimensional relativistic realisation: $A_\omega = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$ has infinitely many zero modes, the supersymmetry is unbroken, and the infinite degeneracy of its ground level at $E = \pm mc^2$ is the zero-mode degeneracy of the factorisation. The Witten index is the chirality imbalance of the Dirac zero modes, an invariant of the grading; and shape invariance, the algebraic origin of exact solvability, is the statement that the two eigenvalues of the Hermitian remainder can be mapped into one another by a change of the mass profile.
 
 ## Summary of Notation
 
@@ -271,7 +271,7 @@ The correspondence is exact in the 1+1-dimensional reduction with a superpotenti
 | $A = d/dx + W$, $A^\dagger = -d/dx + W$ | First-order factor and its adjoint |
 | $W(x)$ | Superpotential (position-dependent mass) |
 | $H_+ = A^\dagger A$, $H_- = A A^\dagger$ | Partner Hamiltonians |
-| $V_\pm = W^2 \mp W'$ | Partner potentials |
+| $V_\pm = W^2 \mp \frac{dW}{dx}$ | Partner potentials |
 | $\{\mathcal{Q},\mathcal{Q}^\dagger\} = H$, $\mathcal{Q}^2 = 0$ | Supersymmetry algebra (nilpotent supercharge) |
 | $\mathcal{D} = \mathcal{Q} + \mathcal{Q}^\dagger = \begin{pmatrix} 0 & \tilde{\nabla}^{\natural} \\ \tilde{\nabla} & 0\end{pmatrix}$ | Biquaternionic (Hermitian) supercharge, $\mathcal{D}\Psi = m\Psi$ |
 | $\mathcal{D}^2 = \Box\,I$ | Its square (the anticommutator $\{\mathcal{Q},\mathcal{Q}^\dagger\}$) |
@@ -279,7 +279,7 @@ The correspondence is exact in the 1+1-dimensional reduction with a superpotenti
 | $\Delta = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |
 | $H_D = -i\sigma_2\partial/\partial Q_x + \sigma_1 W$ | 1+1-dimensional Dirac Hamiltonian |
 | $\tilde{Q} = \vec e_y\partial/\partial Q_x + iW\vec e_x$ | Biquaternion supercharge of the reduced 1+1-dimensional theory |
-| $\tilde{Q}^2 = (-\partial^2/\partial Q_x^2+W^2)e_t - W'(i\vec e_z)$ | Its square (central part plus $\mathbb{M}_+$ remainder) |
+| $\tilde{Q}^2 = (-\partial^2/\partial Q_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{M}_+$ remainder) |
 | $A_\omega = \boldsymbol\sigma\cdot(\vec p-im\omega\vec r)$ | Oscillator supercharge (written $\mathcal{Q}$ in the companion article) |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 

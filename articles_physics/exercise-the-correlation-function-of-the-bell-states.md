@@ -163,12 +163,12 @@ Each diagonal entry is $\pm 1$, and the product $T_{11}T_{22}T_{33}$ equals $-1$
 
 ### Step 1: The four Bell idempotents
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_4) = \tfrac{1}{2}(e_t + i\vec u_4)$. A two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+ \subset \mathbb{B}\otimes\mathbb{B}$.
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $\tilde\Pi(\vec u_4) = \tfrac{1}{2}(e_t + i\vec u_4)$. A two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+ \subset \mathbb{B}\otimes\mathbb{B}$.
 
 The four Bell states correspond to the four **Bell idempotents**
 
 $$
-P_{\epsilon} = \frac{1}{4}\left(e_t\otimes e_t + \epsilon_1\,\vec e_x\otimes \vec e_x + \epsilon_2\,\vec e_y\otimes \vec e_y + \epsilon_3\,\vec e_z\otimes \vec e_z\right),
+\tilde\Pi_{\epsilon} = \frac{1}{4}\left(e_t\otimes e_t + \epsilon_1\,\vec e_x\otimes \vec e_x + \epsilon_2\,\vec e_y\otimes \vec e_y + \epsilon_3\,\vec e_z\otimes \vec e_z\right),
 $$
 
 where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign patterns with $\epsilon_1\epsilon_2\epsilon_3 = +1$:
@@ -181,10 +181,10 @@ where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign 
 | $|\Psi^+\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t - \vec e_x\otimes \vec e_x - \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z)$ |
 
 
-*Idempotency.* The square of $P_\epsilon$ is
+*Idempotency.* The square of $\tilde\Pi_\epsilon$ is
 
 $$
-P_\epsilon^2 = \frac{1}{16}\sum_{m,m'\in\{t,x,y,z\}}\epsilon_m\epsilon_{m'}\,(e_m e_{m'})\otimes(e_m e_{m'}),
+\tilde\Pi_\epsilon^2 = \frac{1}{16}\sum_{m,m'\in\{t,x,y,z\}}\epsilon_m\epsilon_{m'}\,(e_m e_{m'})\otimes(e_m e_{m'}),
 $$
 
 with $\epsilon_0 \equiv 1$. We group the sixteen pairs $(m,m')$ into three classes.
@@ -195,13 +195,13 @@ with $\epsilon_0 \equiv 1$. We group the sixteen pairs $(m,m')$ into three class
 
 **Off-diagonal pairs among $\{1,2,3\}$.** For $j \neq k$ in $\{1,2,3\}$, let $l$ be the remaining index. Then $\vec e_j \vec e_k = \epsilon_{jkl}\vec e_l$ and $\vec e_k \vec e_j = -\epsilon_{jkl}\vec e_l$, and the two tensor products are both $\vec e_l\otimes \vec e_l$. The coefficients $\epsilon_j\epsilon_k$ and $\epsilon_k\epsilon_j$ are equal. Contribution: $2\epsilon_j\epsilon_k\,\vec e_l\otimes \vec e_l$.
 
-Collecting, the coefficient of $\vec e_l\otimes \vec e_l$ in $16\,P_\epsilon^2$ is $2\epsilon_l + 2\epsilon_j\epsilon_k$, where $\{j,k,l\} = \{1,2,3\}$. Since
+Collecting, the coefficient of $\vec e_l\otimes \vec e_l$ in $16\,\tilde\Pi_\epsilon^2$ is $2\epsilon_l + 2\epsilon_j\epsilon_k$, where $\{j,k,l\} = \{1,2,3\}$. Since
 
 $$
-16\,P_\epsilon = 4\,e_t\otimes e_t + 4\sum_{l=1}^{3}\epsilon_l\,\vec e_l\otimes \vec e_l,
+16\,\tilde\Pi_\epsilon = 4\,e_t\otimes e_t + 4\sum_{l=1}^{3}\epsilon_l\,\vec e_l\otimes \vec e_l,
 $$
 
-the requirement $P_\epsilon^2 = P_\epsilon$ reduces to
+the requirement $\tilde\Pi_\epsilon^2 = \tilde\Pi_\epsilon$ reduces to
 
 $$
 \epsilon_j\epsilon_k = \epsilon_l \qquad \text{for each cyclic triple } (j,k,l).
@@ -212,7 +212,7 @@ Multiplying the three equations and using $\epsilon_j^2 = 1$ gives $\epsilon_1\e
 *Trace.* The trace is
 
 $$
-\mathrm{Tr}(P_\epsilon) = \frac{1}{4}\sum_{j\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(e_j)^2 = \frac{1}{4}\cdot 4 = 1,
+\mathrm{Tr}(\tilde\Pi_\epsilon) = \frac{1}{4}\sum_{j\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(e_j)^2 = \frac{1}{4}\cdot 4 = 1,
 $$
 
 because $\mathrm{Tr}_\mathbb{B}(e_t) = 2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_j) = 0$ for $j = 1,2,3$.
@@ -228,15 +228,15 @@ $$
 where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_k b_k \vec e_k$ are pure real quaternions. The expectation is given by the tensor-product trace formula:
 
 $$
-E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(P_\epsilon \circ \tilde{H}_{ab}\right).
+E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon \circ \tilde{H}_{ab}\right).
 $$
 
 ### Step 3: Computing the trace for each Bell state
 
-We compute the trace term by term. Multiplying $P_\epsilon$ by $\tilde{H}_{ab}$,
+We compute the trace term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{H}_{ab}$,
 
 $$
-P_\epsilon \circ \tilde{H}_{ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
+\tilde\Pi_\epsilon \circ \tilde{H}_{ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
 $$
 
 with $\epsilon_0 \equiv 1$.
@@ -315,18 +315,18 @@ This follows from $\langle \sigma_j \otimes I\rangle = \langle I \otimes \sigma_
 **1. The four Bell states have a uniform algebraic form.** Each is an idempotent
 
 $$
-P_\epsilon = \frac{1}{4}\left(e_t\otimes e_t + \epsilon_1\,\vec e_x\otimes \vec e_x + \epsilon_2\,\vec e_y\otimes \vec e_y + \epsilon_3\,\vec e_z\otimes \vec e_z\right),
+\tilde\Pi_\epsilon = \frac{1}{4}\left(e_t\otimes e_t + \epsilon_1\,\vec e_x\otimes \vec e_x + \epsilon_2\,\vec e_y\otimes \vec e_y + \epsilon_3\,\vec e_z\otimes \vec e_z\right),
 $$
 
 with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is the algebraic characterization of the Bell basis: four idempotents, differing only by the sign pattern of the three vector-vector terms.
 
-**2. The correlation function is a bilinear pairing.** The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(P_\epsilon\circ\tilde{H}_{ab})$ is the tensor-product trace pairing between the state idempotent and the observable $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$. The trace pairing is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).
+**2. The correlation function is a bilinear pairing.** The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\circ\tilde{H}_{ab})$ is the tensor-product trace pairing between the state idempotent and the observable $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$. The trace pairing is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).
 
 **3. The sign pattern encodes the correlation matrix.** In the standard formulation, the correlation matrix $T$ is computed by expanding the Bell projector in the Pauli-string basis and reading off the coefficients. In the biquaternion formulation, the same coefficients appear directly as the signs $\epsilon_j$ in the idempotent. The matrix $T$ is $-\mathrm{diag}(\epsilon_1,\epsilon_2,\epsilon_3)$.
 
 **4. The singlet is the isotropic case.** Among the four Bell states, only the singlet has all signs equal, giving $T = -I$ and the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$. The other three break rotational symmetry; their correlation matrices have one sign pattern of the form $(+,-,+)$ up to permutation, and their correlations depend on the direction of the measurements. The four sign patterns with $\epsilon_1\epsilon_2\epsilon_3 = +1$ correspond exactly to the four Bell states, and no other patterns are possible because the idempotency condition enforces the product to be $+1$.
 
-**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the Bell idempotent $P_\epsilon$ corresponds exactly to the rank-one projector $|\Psi_\epsilon\rangle\langle\Psi_\epsilon|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check, and it illustrates the structural claim of the companion articles: **the kinematics of two-qubit entanglement is contained in the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$, with the Born rule given by the tensor-product trace, and the four Bell states are the four idempotents with sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$.**
+**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the Bell idempotent $\tilde\Pi_\epsilon$ corresponds exactly to the rank-one projector $|\Psi_\epsilon\rangle\langle\Psi_\epsilon|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check, and it illustrates the structural claim of the companion articles: **the kinematics of two-qubit entanglement is contained in the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$, with the Born rule given by the tensor-product trace, and the four Bell states are the four idempotents with sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$.**
 
 ## Comparison with Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field, Reduced State of an Entangled Subsystem, Successive Measurements of Spin and Two Spins in the Singlet State
 
@@ -344,7 +344,7 @@ We have solved a sixth exercise in quantum physics — the spin correlation func
 
 In the **standard formulation**, the solution proceeds through the four Bell projectors, their expansions in the Pauli-string basis, and the trace-orthogonality of the Pauli strings, giving the four diagonal correlation matrices $T = \mathrm{diag}(\pm 1, \pm 1, \pm 1)$ and the correlation functions $E = \vec u_x^T T\vec u_y$.
 
-In the **biquaternion formulation**, the solution proceeds through the four Bell idempotents $P_\epsilon$ in $\mathbb{B}\otimes\mathbb{B}$, the correlation observable $(i\vec u_x)\otimes(i\vec u_y)$, and the tensor-product trace pairing, giving the general formula $E = -\sum_j \epsilon_j a_j b_j$ for the sign pattern $\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$.
+In the **biquaternion formulation**, the solution proceeds through the four Bell idempotents $\tilde\Pi_\epsilon$ in $\mathbb{B}\otimes\mathbb{B}$, the correlation observable $(i\vec u_x)\otimes(i\vec u_y)$, and the tensor-product trace pairing, giving the general formula $E = -\sum_j \epsilon_j a_j b_j$ for the sign pattern $\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the Bell basis: the four Bell states are the four idempotents with the sign pattern $\epsilon_1\epsilon_2\epsilon_3 = +1$; the correlation function is the tensor-product trace pairing between the state idempotent and the correlation observable; and the singlet is the unique Bell state with the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$.
 
@@ -363,9 +363,9 @@ The correlation function is the object measured in Bell-inequality experiments, 
 | $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ | Spin operator on particle 1 |
 | $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ | Spin operator on particle 2 |
 | $|\Phi^\pm\rangle, |\Psi^\pm\rangle$ | The four Bell states |
-| $P_\epsilon = \tfrac{1}{4}(e_t\otimes e_t + \sum_j \epsilon_j\,\vec e_j\otimes \vec e_j)$ | Bell idempotent, with $\epsilon_1\epsilon_2\epsilon_3 = +1$ |
+| $\tilde\Pi_\epsilon = \tfrac{1}{4}(e_t\otimes e_t + \sum_j \epsilon_j\,\vec e_j\otimes \vec e_j)$ | Bell idempotent, with $\epsilon_1\epsilon_2\epsilon_3 = +1$ |
 | $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$ | Correlation observable |
-| $E(\vec u_x, \vec u_y) = \mathrm{Tr}(P_\epsilon\circ\tilde{H}_{ab})$ | Correlation function |
+| $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\circ\tilde{H}_{ab})$ | Correlation function |
 | $T_{jk} = \langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle$ | Correlation matrix |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 

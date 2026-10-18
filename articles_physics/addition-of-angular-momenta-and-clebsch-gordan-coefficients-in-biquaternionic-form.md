@@ -8,7 +8,7 @@ This article develops that remark into the general machinery. Its subject is the
 
 The distinction between what is algebraic and what is imported runs through everything below and is worth stating at the outset. The Clebsch–Gordan coefficients are pure numbers; they belong to the representation theory of the rotation group and are independent of any particular realisation of the spin operators. What the biquaternion framework supplies is three things: the spin-$\tfrac12$ factor as the fundamental module of $\mathbb{B}$, with its operators $\tilde S_k$ as elements of $\mathbb{M}_+$; the two-factor arena $\mathbb{B}\otimes\mathbb{B}$, in which a composite of two fundamental systems lives; and the identification of the $j=1$ and $j=0$ coupled subspaces with the symmetric and antisymmetric parts of the tensor square, which are canonically defined subspaces of the algebra. What the framework does not supply is a module of any dimension other than two. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, so it realises $j=0$ and $j=\tfrac12$ as modules and reaches $j\ge1$ only through tensor products, symmetric powers, or the adjoint action. The coupling of two spin-$\tfrac12$ factors is therefore the central case, and the coupling of two spin-$1$ factors is available only because each spin-$1$ factor is itself built from two fundamental ones.
 
-The article is organised as follows. The next section recalls the angular-momentum algebra and fixes the notation for the coupled problem. The section after that sets up two independent systems inside $\mathbb{B}\otimes\mathbb{B}$ and defines the total operators. Then the Clebsch–Gordan series is stated and its dimension count checked. The two cases are then worked out: $\tfrac12\otimes\tfrac12$, where the coupled projectors are the symmetric and antisymmetric projectors of the tensor square and the coefficients are obtained by a one-line ladder computation; and $1\otimes1$, where the coefficients are tabulated. The following section treats the Clebsch–Gordan transformation as an element of the algebra and identifies the sense in which it is not a product of one-factor transformations. The recursion relations satisfied by the coefficients and the Condon–Shortley phase convention are then recorded, and a closing section separates the algebraic content from the imported content.
+The article is organised as follows. The next section recalls the angular-momentum algebra and fixes the notation for the coupled problem. The section after that sets up two independent systems inside $\mathbb{B}\otimes\mathbb{B}$ and defines the total operators. Then the Clebsch–Gordan series is stated and its dimension count checked. The two cases are then worked out: $\tfrac12\otimes\tfrac12$, where the coupled idempotents are the symmetric and antisymmetric idempotents of the tensor square and the coefficients are obtained by a one-line ladder computation; and $1\otimes1$, where the coefficients are tabulated. The following section treats the Clebsch–Gordan transformation as an element of the algebra and identifies the sense in which it is not a product of one-factor transformations. The recursion relations satisfied by the coefficients and the Condon–Shortley phase convention are then recorded, and a closing section separates the algebraic content from the imported content.
 
 ## The Angular-Momentum Algebra in Biquaternion Form
 
@@ -226,28 +226,28 @@ $$
 
 which is the relation $\tilde S_-|1,1\rangle=\hbar\sqrt{(1+1)(1-1+1)}|1,0\rangle$ read off from the general formula. The orthogonal combination is the singlet, and $\tilde S_\pm|0,0\rangle=0$ because the rotation-invariant (total-spin-zero) combination is annihilated by both ladder operators.
 
-### The projectors onto the coupled subspaces
+### The coupled idempotents
 
 The two coupled subspaces are the symmetric and antisymmetric parts of the tensor square. In the algebra $\mathbb{B}\otimes\mathbb{B}$ they are the ranges of the two idempotents
 
 $$
-P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),\qquad
-P_{\mathrm{asym}}=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right).
+\tilde\Pi_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),\qquad
+\tilde\Pi_{\mathrm{asym}}=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right).
 $$
 
 Both are Hermitian; both are idempotent; they are orthogonal and sum to the identity,
 
 $$
-P_{\mathrm{sym}}^2=P_{\mathrm{sym}},\qquad P_{\mathrm{asym}}^2=P_{\mathrm{asym}},\qquad P_{\mathrm{sym}}P_{\mathrm{asym}}=0,\qquad P_{\mathrm{sym}}+P_{\mathrm{asym}}=e_t\otimes e_t ,
+\tilde\Pi_{\mathrm{sym}}^2=\tilde\Pi_{\mathrm{sym}},\qquad \tilde\Pi_{\mathrm{asym}}^2=\tilde\Pi_{\mathrm{asym}},\qquad \tilde\Pi_{\mathrm{sym}}\tilde\Pi_{\mathrm{asym}}=0,\qquad \tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}=e_t\otimes e_t ,
 $$
 
 and their traces are $3$ and $1$, the dimensions of the triplet and the singlet:
 
 $$
-\mathrm{Tr}(P_{\mathrm{sym}})=3,\qquad \mathrm{Tr}(P_{\mathrm{asym}})=1 .
+\mathrm{Tr}(\tilde\Pi_{\mathrm{sym}})=3,\qquad \mathrm{Tr}(\tilde\Pi_{\mathrm{asym}})=1 .
 $$
 
-The antisymmetric projector is the singlet idempotent of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, written there as $P_{\mathrm{singlet}}=\tfrac14(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k)$; the symmetric projector is its complement, of rank three. The two are the spectral projectors of the **exchange operator**
+The antisymmetric idempotent is the singlet idempotent of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, written there as $\tilde\Pi_{\mathrm{singlet}}=\tfrac14(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k)$; the symmetric idempotent is its complement, of rank three. The two are the spectral projectors of the **exchange operator**
 
 $$
 F=\tfrac{1}{2}\left(e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),
@@ -256,11 +256,11 @@ $$
 which satisfies $F^2=e_t\otimes e_t$ and $F^{*}=F$, and which exchanges the two factors on the product idempotents. Indeed
 
 $$
-P_{\mathrm{sym}}=\tfrac{1}{2}\left(e_t\otimes e_t+F\right),\qquad
-P_{\mathrm{asym}}=\tfrac{1}{2}\left(e_t\otimes e_t-F\right),
+\tilde\Pi_{\mathrm{sym}}=\tfrac{1}{2}\left(e_t\otimes e_t+F\right),\qquad
+\tilde\Pi_{\mathrm{asym}}=\tfrac{1}{2}\left(e_t\otimes e_t-F\right),
 $$
 
-so the coupled projectors of the fundamental coupling are the $\pm1$ spectral projectors of the exchange operator. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator maps to the standard swap, $F\mapsto\tfrac12(I\otimes I+\sum_k\sigma_k\otimes\sigma_k)$, whose action on a product basis vector is $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$.
+so the coupled idempotents of the fundamental coupling are the $\pm1$ spectral projectors of the exchange operator. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator maps to the standard swap, $F\mapsto\tfrac12(I\otimes I+\sum_k\sigma_k\otimes\sigma_k)$, whose action on a product basis vector is $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$.
 
 ### The Casimir and the coupling term
 
@@ -293,10 +293,10 @@ $$
 that is, $j(j+1)\hbar^2$ with $j=1$ and $j=0$. The same result is obtained more directly by writing $\tilde S^2=\tfrac12(\tilde S_+\tilde S_-+\tilde S_-\tilde S_+)+\tilde S_3^2$ and acting on the four product states; the two computations agree. In the form of a spectral decomposition,
 
 $$
-\tilde S^2=2\hbar^2\,P_{\mathrm{sym}}+0\cdot P_{\mathrm{asym}} ,
+\tilde S^2=2\hbar^2\,\tilde\Pi_{\mathrm{sym}}+0\cdot \tilde\Pi_{\mathrm{asym}} ,
 $$
 
-which exhibits the coupled projectors as the spectral projectors of the total Casimir and shows that the Clebsch–Gordan transformation is exactly the transformation that diagonalises $\tilde S^2$ and $\tilde S_3$ simultaneously.
+which exhibits the coupled idempotents as the spectral projectors of the total Casimir and shows that the Clebsch–Gordan transformation is exactly the transformation that diagonalises $\tilde S^2$ and $\tilde S_3$ simultaneously.
 
 ## The Clebsch–Gordan Transformation Inside the Algebra
 
@@ -323,11 +323,11 @@ $$
 |0,0\rangle=\tfrac{1}{\sqrt2}\left(|\!\uparrow\downarrow\rangle-|\!\downarrow\uparrow\rangle\right),
 $$
 
-which is maximally entangled in the product basis and is therefore not a product vector, while the rows of a product unitary $\tilde U_1\otimes\tilde U_2$ are the tensor products of the rows of $\tilde U_1$ and of $\tilde U_2$, hence product vectors in every row. No product unitary can have the singlet among its rows, so $U\neq\tilde U_1\otimes\tilde U_2$. Equivalently, the projectors $P_{\mathrm{sym}}$ and $P_{\mathrm{asym}}$ are not of product form. The Clebsch–Gordan transformation of two fundamental systems is therefore not a rotation of one factor; it is a genuinely two-factor transformation.
+which is maximally entangled in the product basis and is therefore not a product vector, while the rows of a product unitary $\tilde U_1\otimes\tilde U_2$ are the tensor products of the rows of $\tilde U_1$ and of $\tilde U_2$, hence product vectors in every row. No product unitary can have the singlet among its rows, so $U\neq\tilde U_1\otimes\tilde U_2$. Equivalently, the idempotents $\tilde\Pi_{\mathrm{sym}}$ and $\tilde\Pi_{\mathrm{asym}}$ are not of product form. The Clebsch–Gordan transformation of two fundamental systems is therefore not a rotation of one factor; it is a genuinely two-factor transformation.
 
 Second, the local transformations form a proper subgroup. The elements $\tilde U_1\otimes\tilde U_2$ with $\tilde U_a\in\mathbb{B}$ unitary constitute $\mathrm{U}(2)\times \mathrm{U}(2)$, of real dimension $8$, inside the $\mathrm{U}(4)$ of the two-qubit algebra, of real dimension $16$. The Clebsch–Gordan transformation lies in the complement of the local subgroup, in the sense that it changes the entanglement of the basis while preserving the total angular momentum.
 
-The transformation is not unique as a matrix. Only the coupled *projectors* are canonical: the decomposition $\mathbb{C}^4=\mathrm{Sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_3$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $\exp(i\alpha)e_t$, and the relative phases of a multiplet are a convention.
+The transformation is not unique as a matrix. Only the coupled *idempotents* are canonical: the decomposition $\mathbb{C}^4=\mathrm{Sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_3$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $\exp(i\alpha)e_t$, and the relative phases of a multiplet are a convention.
 
 ## The Coupling of Two Triplets
 
@@ -357,7 +357,7 @@ $$
 
 and the states with $m<0$ in the quintet follow by the symmetry $m\to-m$ with the standard phase. The states are simultaneous eigenvectors of the total Casimir and $\tilde S_3$: the quintet carries $j(j+1)=6$, the triplet $2$, the singlet $0$, in units of $\hbar^2$. This is the content of the decomposition $1\otimes1=2\oplus1\oplus0$.
 
-Three features of the table are worth naming. First, the **quintet and the singlet are symmetric** under the exchange of the two factors and the **triplet is antisymmetric**; the symmetry is $(-1)^{j_1+j_2-j}$, so the $j=1$ multiplet obtained from $1\otimes1$ is precisely the antisymmetric combination of the two vector factors, $\Lambda^2V_1\cong V_1$. Second, the singlet is the invariant $\epsilon_{m_1m_2}|m_1\rangle|m_2\rangle$ of the rotation group, and its coefficients are the entries of the alternating form; the same form appears in the two-qubit coupling of the previous section, with the alternating structure realised there by the idempotent $P_{\mathrm{asym}}$. Third, the phases are the Condon–Shortley ones: in every row the coefficient of the largest $m_1$ is positive.
+Three features of the table are worth naming. First, the **quintet and the singlet are symmetric** under the exchange of the two factors and the **triplet is antisymmetric**; the symmetry is $(-1)^{j_1+j_2-j}$, so the $j=1$ multiplet obtained from $1\otimes1$ is precisely the antisymmetric combination of the two vector factors, $\Lambda^2V_1\cong V_1$. Second, the singlet is the invariant $\epsilon_{m_1m_2}|m_1\rangle|m_2\rangle$ of the rotation group, and its coefficients are the entries of the alternating form; the same form appears in the two-qubit coupling of the previous section, with the alternating structure realised there by the idempotent $\tilde\Pi_{\mathrm{asym}}$. Third, the phases are the Condon–Shortley ones: in every row the coefficient of the largest $m_1$ is positive.
 
 The same construction iterates. In the biquaternion framework a multiplet of spin $s$ is obtained from the $2s$-fold tensor power of the fundamental module as the totally symmetric part, $V_{s}\cong\mathrm{Sym}^{2s}V_{1/2}$, of complex dimension $2s+1$; the completely symmetric projection of $V_{1/2}^{\otimes 2s}$ is the sum of the $2s+1$ totally symmetric idempotents of $(\mathbb{B}\otimes\mathbb{B})^{\otimes s}$, and the coupled states are obtained from the product states by the appropriate coefficients. This is the constructive meaning of the observation that higher spins are reached through symmetric powers rather than as modules.
 
@@ -401,19 +401,19 @@ Two consistency checks are worth recording. First, the recursion relations repro
 
 It is worth stating the accounting explicitly, because the two-spin case is where the framework's reach and its limit are both visible.
 
-**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde J_k^{(1)}+\tilde J_k^{(2)}$ and the total Casimir; the coupled projectors $P_{\mathrm{sym}}$ and $P_{\mathrm{asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled projectors with the spectral projectors of $\tilde S^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_k\in\mathbb{M}_+$ and the nilpotency $\tilde S_\pm^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_k^2=-e_t$ and $i^2=-1$.
+**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde J_k^{(1)}+\tilde J_k^{(2)}$ and the total Casimir; the coupled idempotents $\tilde\Pi_{\mathrm{sym}}$ and $\tilde\Pi_{\mathrm{asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled idempotents with the spectral projectors of $\tilde S^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_k\in\mathbb{M}_+$ and the nilpotency $\tilde S_\pm^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_k^2=-e_t$ and $i^2=-1$.
 
 **Imported.** The Clebsch–Gordan coefficients themselves, including their numerical values, their orthogonality and completeness, the recursion relations, the closed Wigner formula, and the Condon–Shortley phase convention. These belong to the representation theory of the rotation group. The framework changes nothing about them; it supplies the objects on which they act.
 
 **Neither.** The identification of $\mathbb{C}^4$ with two spin-$\tfrac12$ systems is an application, not a theorem, of the framework: it presupposes that the tensor product of two fundamental modules is the right description of a composite system, which is the assumption the companion articles leave open. The coupled basis is canonical once that assumption is granted.
 
-The result is a division that is stable across the whole series. Every coefficient of angular-momentum recoupling is imported; every operator that generates the coupling is algebraic; and the structural facts that make the coupling possible — the two-dimensional module, the symmetric and antisymmetric projectors, the exchange operator, the nilpotent ladder operators — are consequences of the algebra.
+The result is a division that is stable across the whole series. Every coefficient of angular-momentum recoupling is imported; every operator that generates the coupling is algebraic; and the structural facts that make the coupling possible — the two-dimensional module, the symmetric and antisymmetric idempotents, the exchange operator, the nilpotent ladder operators — are consequences of the algebra.
 
 ## Open Questions
 
 Two questions are raised by the accounting above and are not resolved here.
 
-The first is whether the tensor product is canonical for the framework. The two-qubit algebra is used throughout this article, and the coupled projectors are canonical relative to it; but whether the passage from one fundamental module to two is forced by the structure of $\mathbb{B}$, or is one construction among several, is the question the companion articles leave open. A Clebsch–Gordan transformation of two *algebraic* factors would be an additional structural assumption if the tensor product is not natural.
+The first is whether the tensor product is canonical for the framework. The two-qubit algebra is used throughout this article, and the coupled idempotents are canonical relative to it; but whether the passage from one fundamental module to two is forced by the structure of $\mathbb{B}$, or is one construction among several, is the question the companion articles leave open. A Clebsch–Gordan transformation of two *algebraic* factors would be an additional structural assumption if the tensor product is not natural.
 
 The second is whether a biquaternion construction of the $(2s+1)$-dimensional multiplet exists that is more intrinsic than the symmetric power of the fundamental module. The symmetric power is available and explicit, but it produces a multiplet inside a tensor power of the algebra, not an object of the algebra. Whether the adjoint action, the symmetric powers, and the tensor powers are the only routes to $s\ge1$ inside this framework is precisely the question taken up in the companion problem of the third level, and it is left open here.
 
@@ -425,14 +425,14 @@ The article established the following.
 
 - **Coupling of two systems.** With $\tilde J_k^{(1)}=\tilde J_k\otimes e_t$ and $\tilde J_k^{(2)}=e_t\otimes\tilde J_k$, the cross-commutators vanish, the total operator $\tilde J_k=\tilde J_k^{(1)}+\tilde J_k^{(2)}$ satisfies the angular-momentum algebra, and the total Casimir is $\tilde J^2=\tilde J_{(1)}^2+\tilde J_{(2)}^2+2\sum_k\tilde J_k^{(1)}\tilde J_k^{(2)}$.
 - **Clebsch–Gordan series.** $V_{j_1}\otimes V_{j_2}\cong\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}V_j$, with $(2j_1+1)(2j_2+1)=\sum_j(2j+1)$; in particular $\tfrac12\otimes\tfrac12=1\oplus0$ and $1\otimes1=2\oplus1\oplus0$.
-- **The fundamental coupling.** The coupled projectors are the symmetric and antisymmetric projectors of the tensor square,
-  $$P_{\mathrm{sym}}=\tfrac14\left(3e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k\right),\qquad P_{\mathrm{asym}}=\tfrac14\left(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k\right),$$
-  of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$, and the total Casimir is $\tilde S^2=\hbar^2(e_t\otimes e_t+F)=2\hbar^2P_{\mathrm{sym}}$.
+- **The fundamental coupling.** The coupled idempotents are the symmetric and antisymmetric idempotents of the tensor square,
+  $$\tilde\Pi_{\mathrm{sym}}=\tfrac14\left(3e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k\right),\qquad \tilde\Pi_{\mathrm{asym}}=\tfrac14\left(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k\right),$$
+  of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$, and the total Casimir is $\tilde S^2=\hbar^2(e_t\otimes e_t+F)=2\hbar^2\tilde\Pi_{\mathrm{sym}}$.
 - **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{2}F-\tfrac{\hbar^2}{4}e_t\otimes e_t$, whence $[F,\tilde S_k]=0$: the exchange operator is central in the coupled rotation algebra, which is why it is simultaneously diagonal with the coupled Casimir.
 - **The transformation.** The Clebsch–Gordan transformation is the unitary element $U$ of $\mathbb{B}\otimes\mathbb{B}$ that diagonalises $\tilde S^2$ and $\tilde S_3$; it is not a product of one-factor unitaries, since it maps product states to entangled states.
 - **The triplet coupling.** For $1\otimes1$ the coupled states carry $j(j+1)=6,2,0$; the quintet is totally symmetric, the singlet totally antisymmetric, and the triplet antisymmetric in the two vector factors.
 - **Recursions and phase.** The coefficients satisfy the standard raising and lowering recursions, and the phase is fixed by the Condon–Shortley convention, in which the coefficient of the largest $m_1$ is positive.
-- **Division of labour.** The coefficients, their recursion, and their phase convention are imported from the representation theory of the rotation group; the operators that generate the coupling, the projectors, and the exchange operator are elements of the biquaternion algebra and its tensor square.
+- **Division of labour.** The coefficients, their recursion, and their phase convention are imported from the representation theory of the rotation group; the operators that generate the coupling, the idempotents, and the exchange operator are elements of the biquaternion algebra and its tensor square.
 
 ## Summary of Notation
 
@@ -452,7 +452,7 @@ The article established the following.
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 | $V_j$ | Rotation multiplet of spin $j$, highest weight $2j$, $\dim_{\mathbb{C}}V_j=2j+1$ |
 | $\langle j_1,m_1;j_2,m_2|j,m\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley phase) |
-| $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Coupled projectors for $\tfrac12\otimes\tfrac12$ |
+| $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Coupled idempotents for $\tfrac12\otimes\tfrac12$ |
 | $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ | Exchange operator, $F^2=e_t\otimes e_t$ |
 | $U$ | Clebsch–Gordan transformation matrix |
 

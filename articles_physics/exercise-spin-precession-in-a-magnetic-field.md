@@ -89,13 +89,13 @@ $$
 In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{M}_+$, of the form
 
 $$
-P(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
+\tilde\Pi(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
 $$
 
 where $\vec u_m$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\vec u_m = \vec e_x$, giving
 
 $$
-P_x = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
+\tilde\Pi_x = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
 $$
 
 ### Step 2: The Hamiltonian
@@ -121,7 +121,7 @@ where we have used the identity $\exp(\theta\,\vec e_z) = \cos\theta\,e_t + \sin
 The evolved state is
 
 $$
-\tilde{Ϛ}(t) = \tilde{U}(t)\,P_x\,\tilde{U}(t)^{*}.
+\tilde{Ϛ}(t) = \tilde{U}(t)\,\tilde\Pi_x\,\tilde{U}(t)^{*}.
 $$
 
 Computing the product, using $\tilde{U}(t)^{*} = \tilde{U}^{\natural}(t) = \cos(\omega_L t/2)\,e_t + \sin(\omega_L t/2)\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives
@@ -204,7 +204,7 @@ We have solved a second exercise in quantum physics — the Larmor precession of
 
 In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle S_x\rangle(t) = \frac{\hbar}{2}\cos(\omega_L t)$.
 
-In the **biquaternion formulation**, the solution proceeds through the idempotent $P_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t)$, the evolved state $\tilde{Ϛ}(t)$, and the trace formula, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t)$, the evolved state $\tilde{Ϛ}(t)$, and the trace formula, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the trace pairing.
 
@@ -220,7 +220,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\gamma$ | Gyromagnetic ratio |
 | $\omega_L = \gamma B_0$ | Larmor frequency |
-| $P_x = \tfrac{1}{2}(e_t + i\vec e_x)$ | Spin-up state along $x$ |
+| $\tilde\Pi_x = \tfrac{1}{2}(e_t + i\vec e_x)$ | Spin-up state along $x$ |
 | $\tilde{S}_x = \tfrac{\hbar}{2} i\vec e_x$ | Spin observable along $x$ |
 | $\tilde{H} = -\tfrac{\hbar\omega_L}{2} i\vec e_z$ | Hamiltonian |
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Evolution biquaternion |

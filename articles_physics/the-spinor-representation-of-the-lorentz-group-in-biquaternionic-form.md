@@ -12,17 +12,17 @@ Notation is that of the read-list companions. The quaternion basis is $e_t=1,\ve
 
 ## The Spinor Representation and Its Carrier
 
-A **spinor** is an element of the two-dimensional complex vector space $S=\mathbb{C}^2$, written as a column. The algebra acts on $S$ by matrix multiplication through $\mathsf{M}_2$, and the group of unit-norm biquaternions,
+A **spinor** is an element of the two-dimensional complex vector space $S=\mathbb{C}^2$, written as a column. The algebra acts on $S$ by matrix multiplication through $\mathsf{M}_2$, and the unit-norm biquaternions $\tilde U_{\mathrm L}$, which implement the Lorentz transformations, form the group
 
 $$
-SL(2,\mathbb{C})=\{\tilde{U}\in\mathbb{B}:\tilde{U}\tilde{U}^{\natural}=e_t\}\cong\{g\in M_2(\mathbb{C}):\det g=1\},
+SL(2,\mathbb{C})=\{\tilde U_{\mathrm L}\in\mathbb{B}:\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t\}\cong\{g\in M_2(\mathbb{C}):\det g=1\},
 $$
 
-acts on it by **left multiplication**,
+which acts on it by **left multiplication**,
 
 $$
-\psi \;\longmapsto\; \mathsf{M}_2(\tilde{U})\,\psi,
-\qquad \tilde{U}\in SL(2,\mathbb{C}),\quad \psi\in S .
+\psi \;\longmapsto\; \mathsf{M}_2(\tilde U_{\mathrm L})\,\psi,
+\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \psi\in S .
 $$
 
 This is the **spinor representation** of the Lorentz group. Its carrier $S$ is the unique simple module of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, realized inside $\mathbb{B}$ as the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$; the detailed construction, together with the bilinear pairings on $S$, belongs to the companion article on the spinor module and is used here without repetition. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
@@ -31,7 +31,7 @@ Three properties of the representation are worth stating at once, because they d
 
 **It is irreducible.** Since $\mathbb{B}$ is simple, it has exactly one simple module up to isomorphism, and Schur's lemma gives $\mathrm{End}_{\mathbb{B}}(S)=\mathbb{C}$. The module $S$ carries no proper submodule, so the spinor representation is irreducible.
 
-**It is faithful.** The kernel of the action is trivial: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde{U}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ on $\mathbb{M}_-$, whose kernel is $\{\pm e_t\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
+**It is faithful.** The kernel of the action is trivial: $\mathsf{M}_2(-e_t)=-I_2$, so $\pm\tilde U_{\mathrm L}$ act differently on every spinor. This is in contrast with the four-vector action $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ on $\mathbb{M}_-$, whose kernel is $\{\pm e_t\}$. The spinor representation is a representation of the double cover $SL(2,\mathbb{C})$ that does **not** descend to $SO^+(1,3)$.
 
 **It is not unitary.** A finite-dimensional unitary representation of a real Lie algebra $\mathrm{G}$ maps every generator to a skew-adjoint operator, because each one-parameter subgroup is unitary. Every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so the boost generator $K_k=i\vec e_k$ is represented by $\rho(K_k)=i\rho(\vec e_k)$. If $\rho(\vec e_k)$ is skew-adjoint then
 
@@ -41,24 +41,24 @@ $$
 
 so $\rho(K_k)$ is Hermitian; skew-adjointness then forces $\rho(K_k)=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-unitary.
 
-The obstruction is visible concretely on $S$. The standard Hermitian form $h(\psi,\phi)=\psi^{\dagger}\phi$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde{U}=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$, because
+The obstruction is visible concretely on $S$. The standard Hermitian form $h(\psi,\phi)=\psi^{\dagger}\phi$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\mathrm L}=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$, because
 
 $$
-h(\tilde{U}\psi,\tilde{U}\phi)=\psi^{\dagger}\tilde{U}^{*}\tilde{U}\,\phi,
-\qquad \tilde{U}^{*}\tilde{U}=\tilde{U}^{2}=\cosh\psi+i\sinh\psi\,\vec u\neq e_t .
+h(\tilde U_{\mathrm L}\psi,\tilde U_{\mathrm L}\phi)=\psi^{\dagger}\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}\,\phi,
+\qquad \tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\tilde U_{\mathrm L}^{2}=\cosh\psi+i\sinh\psi\,\vec u\neq e_t .
 $$
 
-For example, on a boost along $\vec e_z$ the operator $\tilde{U}^{*}\tilde{U}$ is $\mathrm{diag}(\exp(\psi),\exp(-\psi))$, which differs from the identity for every $\psi\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$, which is symplectic rather than Hermitian.
+For example, on a boost along $\vec e_z$ the operator $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}$ is $\mathrm{diag}(\exp(\psi),\exp(-\psi))$, which differs from the identity for every $\psi\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$, which is symplectic rather than Hermitian.
 
 ## The Two Fundamental Representations Are the Two Chiralities
 
-The **conjugate** of a representation $\rho$ on a complex vector space is the representation $\bar\rho$ on the same space with the conjugate complex structure, $\bar\rho(\tilde{U})=\overline{\rho(\tilde{U})}$. Applied to the spinor representation, conjugation gives a second two-dimensional irreducible representation, the **right-handed** spinor $\bar{S}$, with action
+The **conjugate** of a representation $\rho$ on a complex vector space is the representation $\bar\rho$ on the same space with the conjugate complex structure, $\bar\rho(\tilde U_{\mathrm L})=\overline{\rho(\tilde U_{\mathrm L})}$. Applied to the spinor representation, conjugation gives a second two-dimensional irreducible representation, the **right-handed** spinor $\bar{S}$, with action
 
 $$
-\chi \;\longmapsto\; \overline{\mathsf{M}_2(\tilde{U})}\,\chi,
+\chi \;\longmapsto\; \overline{\mathsf{M}_2(\tilde U_{\mathrm L})}\,\chi,
 $$
 
-which is equivalent to $\chi\mapsto\mathsf{M}_2(\tilde{U}^{*})\chi$, where $\tilde{U}^{*}$ is the complex conjugate of the biquaternion. The two modules $S$ and $\bar{S}$ are the two **chiralities**; they are exchanged by parity, and they are the two fundamental (defining) representations of $SL(2,\mathbb{C})$.
+which is equivalent to $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$, where $\tilde U_{\mathrm L}^{*}$ is the complex conjugate of the biquaternion. The two modules $S$ and $\bar{S}$ are the two **chiralities**; they are exchanged by parity, and they are the two fundamental (defining) representations of $SL(2,\mathbb{C})$.
 
 They are **inequivalent**. To see this without appealing to the label, complexify the Lie algebra and use the two commuting $\mathrm{SU}(2)$ halves generated by $N_k^{\pm}=\tfrac12(\vec e_k\pm\mathsf{i}\,i\vec e_k)$, where $\mathsf{i}$ is the complexification unit and is distinct from the scalar imaginary $i$ as an algebra element. On a complex module the complexification acts complex-linearly, so $\mathsf{i}$ acts by the module's own complex structure. With the generators of $SL(2,\mathbb{C})$ represented on $S$ by $\vec e_k\mapsto-i\sigma_k$ and $i\vec e_k\mapsto\sigma_k$, a direct computation gives
 
@@ -91,7 +91,7 @@ $$
 the four-vector representation. The biquaternion algebra carries this representation, not by multiplication but by **conjugation**,
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{U}\,\tilde{Q}\,\tilde{U}^{*},
+\tilde{Q} \;\longmapsto\; \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*},
 \qquad \tilde{Q}\in\mathbb{B},
 $$
 
@@ -135,7 +135,7 @@ V_{j'} \cong \operatorname{Sym}^{2j'}(\bar{S}),
 (j,j')\cong \operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S}),
 $$
 
-with the **diagonal** action of the group on the tensor product, $\psi\mapsto\mathsf{M}_2(\tilde{U})\psi$ on each factor of $S$ and $\chi\mapsto\overline{\mathsf{M}_2(\tilde{U})}\chi$ on each factor of $\bar{S}$. This is the precise sense in which the whole tower is generated by the spinor module: each $(j,j')$ occurs in a tensor power of $S$ and $\bar{S}$, symmetrized. The dimensions are collected below.
+with the **diagonal** action of the group on the tensor product, $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$ on each factor of $S$ and $\chi\mapsto\overline{\mathsf{M}_2(\tilde U_{\mathrm L})}\chi$ on each factor of $\bar{S}$. This is the precise sense in which the whole tower is generated by the spinor module: each $(j,j')$ occurs in a tensor power of $S$ and $\bar{S}$, symmetrized. The dimensions are collected below.
 
 | Representation | $\dim_{\mathbb{C}}$ | Object | Carrier |
 |---|---|---|---|
@@ -172,7 +172,7 @@ The only irreducible representation realized by left multiplication on the algeb
 
 **Right multiplication.** As a right module, $\mathbb{B}\cong S^{*}\oplus S^{*}$, and $S^{*}\cong S$. So right multiplication carries two copies of the *same* chirality, $2\times(\tfrac12,0)$; it does **not** produce the right-handed chirality. This is a precise statement of the caution of the companion on the spinor module: both one-sided multiplications see a single chirality.
 
-**Conjugation.** Under $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ the algebra is irreducible,
+**Conjugation.** Under $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ the algebra is irreducible,
 $$
 \mathbb{B}\cong(\tfrac12,\tfrac12),
 $$
@@ -205,7 +205,7 @@ Two things should be kept apart here, because the construction can be misread as
 
 ## Summary
 
-The spinor representation is the action of the unit-norm biquaternions on the two-dimensional complex module $S=\mathbb{C}^2$, $\psi\mapsto\mathsf{M}_2(\tilde{U})\psi$. It is irreducible (the unique simple module of the simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$), faithful ($-e_t$ acts as $-I_2$, so it does not descend to $SO^+(1,3)$), and non-unitary: the invariant Hermitian form is preserved only by $SU(2)$, and $\tilde{U}^{*}\tilde{U}=\tilde{U}^2\neq e_t$ for a boost.
+The spinor representation is the action of the unit-norm biquaternions on the two-dimensional complex module $S=\mathbb{C}^2$, $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$. It is irreducible (the unique simple module of the simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$), faithful ($-e_t$ acts as $-I_2$, so it does not descend to $SO^+(1,3)$), and non-unitary: the invariant Hermitian form is preserved only by $SU(2)$, and $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\tilde U_{\mathrm L}^2\neq e_t$ for a boost.
 
 Its complex conjugate $\bar{S}$ is the right-handed chirality. The two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ are the only two-dimensional irreducible representations, and they are inequivalent: the two chiral Casimirs take the values $(0,-3)$ and $(-3,0)$ on them. They are not the two minimal left ideals (both carry $S$), and the conjugate chirality is not obtained by right multiplication, since $S^{*}\cong S$; it requires the real structure.
 
@@ -228,13 +228,13 @@ The higher representations are $(j,j')=V_j\boxtimes V_{j'}$, $\dim=(2j+1)(2j'+1)
 | $S=\mathbb{C}^2$ | Spinor module, the defining representation $(\tfrac12,0)$ |
 | $\bar{S}$ | Conjugate spinor module, the right-handed chirality $(0,\tfrac12)$ |
 | $\Delta=S\oplus\bar{S}$ | Dirac spinor module, $\dim_{\mathbb{C}}=4$ |
-| $\psi\mapsto\mathsf{M}_2(\tilde{U})\psi$ | Lorentz action on the spinor module (left multiplication) |
+| $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$ | Lorentz action on the spinor module (left multiplication) |
 | $g^{T}\epsilon g=\epsilon$ | Invariance of the symplectic form; $S^{*}\cong S$ |
 | $N_k^{\pm}=\tfrac12(\vec e_k\pm\mathsf{i}\,i\vec e_k)$ | Generators of the two $\mathrm{SU}(2)$ halves ($\mathsf{i}$ = complexification unit) |
 | $\Omega_\pm=\sum_k(N_k^{\pm})^2$ | Chiral Casimirs; $(0,-3)$ vs $(-3,0)$ on $S$ vs $\bar{S}$ |
 | $(j,j')=V_j\boxtimes V_{j'}$ | Irreducible representation, $\dim=(2j+1)(2j'+1)$ |
 | $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S})$ | Carrier of $(j,j')$ from symmetric powers of the spinor |
-| $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Conjugation action carrying $(\tfrac12,\tfrac12)$ on $\mathbb{B}$ |
+| $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ | Conjugation action carrying $(\tfrac12,\tfrac12)$ on $\mathbb{B}$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing on the Hermitian sector |
 
 ## Further Reading

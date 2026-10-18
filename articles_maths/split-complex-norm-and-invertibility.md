@@ -89,7 +89,7 @@ $$
 \mathrm{Cl}^+(1,1)=\langle 1,\omega\rangle\cong\mathbb{R}\oplus\mathbb{R}\cong\mathbb{D}, \qquad \mathrm{Cl}(1,1)\cong M_2(\mathbb{R}).
 $$
 
-So the split-complex algebra is the even Clifford algebra of its own norm, and the full Clifford algebra is the algebra of real $2\times2$ matrices. The two isotropic lines are the two eigenspaces of $\omega$, and the idempotents $\Pi_{1,2}$ are its spectral projections.
+So the split-complex algebra is the even Clifford algebra of its own norm, and the full Clifford algebra is the algebra of real $2\times2$ matrices. The two isotropic lines are the two eigenspaces of $\omega$, and the spectral projections of $\omega$ are multiplication by the idempotents $\Pi_{1,2}$.
 
 ### The Modulus and the Two Regimes
 

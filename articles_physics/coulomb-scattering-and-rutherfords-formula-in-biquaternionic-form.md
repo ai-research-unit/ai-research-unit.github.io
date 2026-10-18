@@ -62,7 +62,7 @@ $$
 and with the substitution $u_l(r)=rR_l(r)$ the equation takes the one-dimensional form
 
 $$
-u_l''(r)+\left[k^2-\frac{2m\alpha}{\hbar^2 r}-\frac{l(l+1)}{r^2}\right]u_l(r)=0 .
+\frac{d^2u_l}{dr^2}(r)+\left[k^2-\frac{2m\alpha}{\hbar^2 r}-\frac{l(l+1)}{r^2}\right]u_l(r)=0 .
 $$
 
 In the dimensionless variable $\rho=kr$ this is the **Coulomb wave equation**
@@ -286,7 +286,7 @@ The logarithmic phase is the non-relativistic analogue of an infrared divergence
 The Coulomb problem in the biquaternion framework is the central Hamiltonian $H=[-\frac{\hbar^2}{2m}\nabla^2+\alpha/r]e_t$ with $\alpha=Z_1Z_2e^2$ and Coulomb parameter $\eta=m\alpha/\hbar^2k=\alpha/\hbar v$. The stationary equation reduces to the scalar envelope, and the partial-wave decomposition is a decomposition of that scalar; the amplitude and all phases are central. The radial equation is the Coulomb wave equation
 
 $$
-u_l''+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0,
+\frac{d^2u_l}{dr^2}+\left[1-\frac{2\eta}{\rho}-\frac{l(l+1)}{\rho^2}\right]u_l=0,
 $$
 
 whose regular solution is $F_l=C_l\rho^{l+1}\exp(-i\rho)M(l+1-i\eta,2l+2,2i\rho)$, verified to solve the equation to $10^{-8}$ and to have the normalisation $C_l=2^l\exp(-\pi\eta/2)|\Gamma(l+1+i\eta)|/\Gamma(2l+2)$. The asymptotic form is the Coulomb-modified sine $\sin(\rho-\eta\ln2\rho-l\pi/2+\sigma_l)$ with the Coulomb phase $\sigma_l=\arg\Gamma(l+1+i\eta)$, verified by the recurrence $\sigma_{l+1}-\sigma_l=\arctan(\eta/(l+1))$ to machine precision and by the Weierstrass series for $\sigma_0$ to $10^{-8}$.

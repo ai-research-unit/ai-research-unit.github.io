@@ -155,7 +155,7 @@ $$
 \tilde\Pi\star\tilde\Pi=\tilde\Pi ,
 $$
 
-the equation naming the product, and the **idempotent set** of the structure is the set of the solutions (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* §*The Idempotent, the Projection and the Peirce Decomposition*). The equation is the algebraic form of a projection, and throughout this section the product is named in every statement; unqualified, an idempotent of an element of $\mathbb{B}$ means an idempotent of the general plain bilinear product, the multiplication of the algebra.
+the equation naming the product, and the **idempotent set** of the structure is the set of the solutions (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* §*The Idempotent, the Hermitian Idempotent and the Peirce Decomposition*). The equation is the algebraic form of the idempotent condition, and throughout this section the product is named in every statement; unqualified, an idempotent of an element of $\mathbb{B}$ means an idempotent of the general plain bilinear product, the multiplication of the algebra.
 
 ### The Halving Map
 

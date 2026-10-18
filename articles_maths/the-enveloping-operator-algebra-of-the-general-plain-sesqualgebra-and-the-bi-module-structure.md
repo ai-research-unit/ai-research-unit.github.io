@@ -28,7 +28,7 @@ T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2,\qquad
 S_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3^{*}\tilde Q_2^{*},
 $$
 
-the **ordinary two-sided multiplication** and the **sandwich**. The block's composition laws are $L_{\tilde Q_6}L_{\tilde Q_4}=T_{\tilde Q_6,\tilde Q_4^{*}}$, $R_{\tilde Q_6}R_{\tilde Q_4}=R_{\tilde Q_6\tilde Q_4}$, $L_{\tilde Q_6}R_{\tilde Q_4}=L_{\tilde Q_6\tilde Q_4}$ and $R_{\tilde Q_4}L_{\tilde Q_6}=S_{\tilde Q_6,\tilde Q_4}$ of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*. A projection is a Hermitian idempotent $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ with $\vec u$ a real unit vector; $\tilde\Pi^{\perp}=e_t-\tilde\Pi$ is its complement, and $\tilde\Pi_+=\tilde\Pi$, $\tilde\Pi_-=\tilde\Pi^{\perp}$.
+the **ordinary two-sided multiplication** and the **sandwich**. The block's composition laws are $L_{\tilde Q_6}L_{\tilde Q_4}=T_{\tilde Q_6,\tilde Q_4^{*}}$, $R_{\tilde Q_6}R_{\tilde Q_4}=R_{\tilde Q_6\tilde Q_4}$, $L_{\tilde Q_6}R_{\tilde Q_4}=L_{\tilde Q_6\tilde Q_4}$ and $R_{\tilde Q_4}L_{\tilde Q_6}=S_{\tilde Q_6,\tilde Q_4}$ of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*. A Hermitian idempotent is an idempotent $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ with $\vec u$ a real unit vector; $\tilde\Pi^{\perp}=e_t-\tilde\Pi$ is its complement, and $\tilde\Pi_+=\tilde\Pi$, $\tilde\Pi_-=\tilde\Pi^{\perp}$.
 
 ## The Sandwich and the Two-Sided Multiplications
 

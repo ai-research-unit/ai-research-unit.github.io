@@ -104,32 +104,32 @@ The left-hand side is fixed by the state $(E,L)$ and the right-hand side is non-
 
 ### From the Constraint to the Orbit Equation
 
-Let $u=1/r$, so that the orbit is the function $u(\theta)$, and let a prime denote $d/d\theta$. The radial momentum is related to $u'$ by a chain rule that is worth writing once:
+Let $u=1/r$, so that the orbit is the function $u(\theta)$, and write every derivative with respect to $\theta$ explicitly. The radial momentum is related to $du/d\theta$ by a chain rule that is worth writing once:
 
 $$
 p_r=\gamma m\,dr/dt=\gamma m\,\frac{dr}{d\theta}\,d\theta/dt
-=\gamma m\left(-\frac{u'}{u^2}\right)\frac{L}{\gamma m r^2}=-L\,u' ,
+=\gamma m\left(-\frac{du/d\theta}{u^2}\right)\frac{L}{\gamma m r^2}=-L\,\frac{du}{d\theta} ,
 $$
 
 using $d\theta/dt=L/(\gamma m r^2)$ from the definition of $L$. Substituting into the radial constraint,
 
 $$
-(E-V)^2-m^2c^4 = c^2L^2\left(u'^2+u^2\right). \tag{1}
+(E-V)^2-m^2c^4 = c^2L^2\left(\left(\frac{du}{d\theta}\right)^2+u^2\right). \tag{1}
 $$
 
 This is the orbit equation in implicit form. Differentiating with respect to $\theta$ turns it into a differential equation. With $V=V(1/u)$,
 
 $$
-\frac{dV}{d\theta}=V'\frac{dr}{d\theta}=V'\left(-\frac{u'}{u^2}\right), \qquad V'=\frac{dV}{dr}=-F(1/u),
+\frac{dV}{d\theta}=\frac{dV}{dr}\frac{dr}{d\theta}=\frac{dV}{dr}\left(-\frac{du/d\theta}{u^2}\right), \qquad \frac{dV}{dr}=-F(1/u),
 $$
 
 so that
 
 $$
-\frac{d}{d\theta}(E-V)^2=2(E-V)\bigl(-V'\bigr)\left(-\frac{u'}{u^2}\right)=\frac{2(E-V)F(1/u)\,u'}{u^2}.
+\frac{d}{d\theta}(E-V)^2=2(E-V)\left(-\frac{dV}{dr}\right)\left(-\frac{du/d\theta}{u^2}\right)=\frac{2(E-V)F(1/u)\,du/d\theta}{u^2}.
 $$
 
-Differentiating the right-hand side of (1) gives $c^2L^2(2u'u''+2uu')$. Equating and dividing by $2u'$ — the case $u'=0$ is the circular orbit, treated separately below — yields the **relativistic Binet equation**
+Differentiating the right-hand side of (1) gives $c^2L^2\left(2\frac{du}{d\theta}\frac{d^2u}{d\theta^2}+2u\frac{du}{d\theta}\right)$. Equating and dividing by $2\,du/d\theta$ — the case $du/d\theta=0$ is the circular orbit, treated separately below — yields the **relativistic Binet equation**
 
 $$
 \boxed{\;\frac{d^2u}{d\theta^2}+u=-\frac{(E-V)F(1/u)}{c^2L^2u^2}=-\frac{m_{\text{rel}}F(1/u)}{L^2u^2}.\;}
@@ -138,7 +138,7 @@ $$
 The second form is the one to read. Since $m_{\text{rel}}=(E-V)/c^2=\gamma m$, the relativistic Binet equation is **the non-relativistic Binet equation with the rest mass replaced by the relativistic mass**, the latter evaluated at the running radius. In the non-relativistic limit $\gamma\to1$ and $E\to mc^2$, and the equation reduces to
 
 $$
-u''+u=-\frac{mF(1/u)}{L^2u^2},
+\frac{d^2u}{d\theta^2}+u=-\frac{mF(1/u)}{L^2u^2},
 $$
 
 which is the equation of the companion article on the central-scalar limit. The angular momentum $L$ here is the relativistic angular momentum $\gamma mr^2d\theta/dt$, not the non-relativistic $mr^2d\theta/dt$.
@@ -162,13 +162,13 @@ $$
 with $\kappa>0$ for attraction. Substituting into the relativistic Binet equation,
 
 $$
-u''+u=\frac{\kappa(E+\kappa u)}{c^2L^2}=\frac{\kappa E}{c^2L^2}+\frac{\kappa^2}{c^2L^2}\,u ,
+\frac{d^2u}{d\theta^2}+u=\frac{\kappa(E+\kappa u)}{c^2L^2}=\frac{\kappa E}{c^2L^2}+\frac{\kappa^2}{c^2L^2}\,u ,
 $$
 
 which rearranges into a linear equation with constant coefficients,
 
 $$
-u''+\omega^2u=\frac{\kappa E}{c^2L^2}, \qquad \omega^2=1-\frac{\kappa^2}{c^2L^2}.
+\frac{d^2u}{d\theta^2}+\omega^2u=\frac{\kappa E}{c^2L^2}, \qquad \omega^2=1-\frac{\kappa^2}{c^2L^2}.
 $$
 
 This is the central result of the article: **the relativistic inverse-square problem is exactly linear, with the frequency $\omega$ replacing the unit frequency of the non-relativistic problem.** The frequency is real precisely when
@@ -194,7 +194,7 @@ $$
 p=\frac{c^2L^2\omega^2}{\kappa E}, \qquad e=Cp .
 $$
 
-The eccentricity is fixed by the radial constraint (1), evaluated at a turning point. The larger root of the constraint in $u$ is $u_{\max}=(1+e)/p$, and substituting it into (1) with $u'=0$ gives, after rearrangement,
+The eccentricity is fixed by the radial constraint (1), evaluated at a turning point. The larger root of the constraint in $u$ is $u_{\max}=(1+e)/p$, and substituting it into (1) with $du/d\theta=0$ gives, after rearrangement,
 
 $$
 e^2=1+\frac{c^2L^2\omega^2\left(E^2-m^2c^4\right)}{\kappa^2E^2}
@@ -240,7 +240,7 @@ the upper sign giving the apoapsis for a bound orbit. The roots are real and pos
 
 ### The Circular Orbit
 
-The circular orbit is the case $u'=0$, $u''=0$, for which the Binet equation requires $\omega^2u=\kappa E/(c^2L^2)$, that is, $r=1/u=p$. Imposing the radial constraint at that radius gives two exact results:
+The circular orbit is the case $du/d\theta=0$, $d^2u/d\theta^2=0$, for which the Binet equation requires $\omega^2u=\kappa E/(c^2L^2)$, that is, $r=1/u=p$. Imposing the radial constraint at that radius gives two exact results:
 
 $$
 r_c=\frac{L^2\omega}{m\kappa}, \qquad E_c=mc^2\omega .
@@ -306,7 +306,7 @@ What survives is a rotating-frame quantity: the vector constructed from the coni
 
 **The angular momentum is a product.** The vector part of $\vec r\vec p$ is $\vec L$, and the algebra's single multiplication supplies the dot and cross products together.
 
-**The orbit equation is a biquaternion-norm identity.** The starting point of the derivation, $(E-V)^2-m^2c^4=c^2L^2(u'^2+u^2)$, is the mass-shell relation written with the radial decomposition, and the mass shell is the biquaternion norm of the four-momentum. The relativistic Binet equation is therefore a consequence of the biquaternion norm, and the frequency $\omega^2=1-\kappa^2/(c^2L^2)$ is a ratio of the squared coupling to the biquaternion norm of the angular momentum. Both are central scalars, and the algebra supplies them.
+**The orbit equation is a biquaternion-norm identity.** The starting point of the derivation, $(E-V)^2-m^2c^4=c^2L^2\left(\left(\frac{du}{d\theta}\right)^2+u^2\right)$, is the mass-shell relation written with the radial decomposition, and the mass shell is the biquaternion norm of the four-momentum. The relativistic Binet equation is therefore a consequence of the biquaternion norm, and the frequency $\omega^2=1-\kappa^2/(c^2L^2)$ is a ratio of the squared coupling to the biquaternion norm of the angular momentum. Both are central scalars, and the algebra supplies them.
 
 ### What the Algebra Does Not Contain
 
@@ -386,10 +386,10 @@ In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the co
 | $\varepsilon=E-mc^2$ | Energy measured from the rest energy |
 | $\gamma=1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
 | $m_{\text{rel}}=\gamma m=(E-V)/c^2$ | Relativistic mass |
-| $p_r=\gamma mdr/dt=-Lu'$ | Radial momentum; the chain-rule identity |
+| $p_r=\gamma m\,dr/dt=-L\,du/d\theta$ | Radial momentum; the chain-rule identity |
 | $u=1/r$ | Binet variable; prime denotes $d/d\theta$ |
-| $(E-V)^2-m^2c^4=c^2L^2(u'^2+u^2)$ | The orbit constraint (mass-shell identity) |
-| $u''+u=-m_{\text{rel}}F(1/u)/(L^2u^2)$ | Relativistic Binet equation |
+| $(E-V)^2-m^2c^4=c^2L^2\left(\left(\frac{du}{d\theta}\right)^2+u^2\right)$ | The orbit constraint (mass-shell identity) |
+| $\frac{d^2u}{d\theta^2}+u=-m_{\text{rel}}F(1/u)/(L^2u^2)$ | Relativistic Binet equation |
 | $\omega^2=1-\kappa^2/(c^2L^2)$ | Relativistic orbital frequency |
 | $L>\kappa/c$ | Centrifugal-barrier condition |
 | $p=c^2L^2\omega^2/(\kappa E)$ | Semi-latus rectum |

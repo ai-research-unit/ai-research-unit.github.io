@@ -72,7 +72,7 @@ $$
 with $\chi$ a constant module element. The energy in the transverse directions is then determined by the one-dimensional equation
 
 $$
-\frac{1}{2m}\Big[-\hbar^2f''(x)+m^2\omega_c^2(x-x_0)^2f(x)\Big]=\left(E-\frac{\hbar^2k_z^2}{2m}\right)f(x),
+\frac{1}{2m}\Big[-\hbar^2\frac{d^2f}{dx^2}(x)+m^2\omega_c^2(x-x_0)^2f(x)\Big]=\left(E-\frac{\hbar^2k_z^2}{2m}\right)f(x),
 $$
 
 where

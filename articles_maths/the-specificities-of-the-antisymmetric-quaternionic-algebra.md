@@ -114,7 +114,7 @@ $L_0=0$ and $L_{e_t}=P_{\mathrm{Vect}}$ by the governing identity.
 The classification is short and rigid: two projectors, the zero operator at the origin and the
 projection onto the vector subspace at the unit, and nothing between. It is the **smallest
 projector class a structure can have while carrying a nonzero projector**, and it is the exact
-opposite of the general plain algebra, whose projector class is the whole idempotent family.
+opposite of the general plain algebra, whose projector class is indexed by the whole idempotent family.
 
 ## The Splitting Realised by One Element
 

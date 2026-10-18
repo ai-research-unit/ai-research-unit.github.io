@@ -4,7 +4,7 @@
 
 This article classifies the square roots of the central value $+1$ in the general quaternionic bilinear product, and then the **idempotents** of that product, the elements the same squaring map keeps on their own square.
 
-Both notions name a product, and throughout this article the product is the general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ of the general quaternionic algebra, the $\mathrm{GQA}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the square of the article is the square of $\star$, and an unqualified *idempotent* is an idempotent of $\star$. The general definition of the square and of the roots of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent is §*The Idempotent, the Projection and the Peirce Decomposition* of the same article.
+Both notions name a product, and throughout this article the product is the general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ of the general quaternionic algebra, the $\mathrm{GQA}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the square of the article is the square of $\star$, and an unqualified *idempotent* is an idempotent of $\star$. The general definition of the square and of the roots of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent is §*The Idempotent, the Hermitian Idempotent and the Peirce Decomposition* of the same article.
 
 The whole problem is decided by one identity. The square of every element of this product is the central element $\langle\tilde\Xi\rangle_{\natural}e_t$, so the root equation of the value $\lambda$ reduces to the single complex equation $\langle\tilde\Xi\rangle_{\natural}=\lambda$, and the idempotent equation collapses to a quadratic on the scalar line. The roots of $+1$ are the level set $N=1$, a nondegenerate complex quadric of real dimension six; the idempotents are as small as they can be, the two trivial ones $0$ and $e_t$.
 
@@ -92,7 +92,7 @@ so it is a bijection of the roots of $+1$ onto the roots of $-1$, and the roots 
 
 ### Definition and the Square
 
-**Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde\Pi\in\mathbb{B}$. The element $\tilde\Pi$ is **idempotent of $\star$** when $\tilde\Pi\star\tilde\Pi=\tilde\Pi$; the **trivial idempotents** are $0$ and the left unit $e_t$, and an idempotent different from both is **nontrivial**. The definition is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition*, and it names the product. Throughout this part the product is $\star$.
+**Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde\Pi\in\mathbb{B}$. The element $\tilde\Pi$ is **idempotent of $\star$** when $\tilde\Pi\star\tilde\Pi=\tilde\Pi$; the **trivial idempotents** are $0$ and the left unit $e_t$, and an idempotent different from both is **nontrivial**. The definition is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Idempotent, the Hermitian Idempotent and the Peirce Decomposition*, and it names the product. Throughout this part the product is $\star$.
 
 **Lemma (the square is central).** For every $\tilde Q\in\mathbb{B}$,
 
@@ -186,7 +186,7 @@ The plain classification of the idempotents is the bijection of §*The Halving M
 
 The plain idempotents are thus carried by the product into its nilpotent cone, and not into its idempotent set: the parameter set of the plain idempotents is invisible to the idempotent equation of $\star$ and reappears as the non-pure part of the nilpotent cone (*Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*).
 
-### Idempotents as Projections
+### Idempotents and Their Projectors
 
 **The left multiplication $L_{\tilde Q}$ is a projector exactly when $\tilde Q$ is an idempotent of the plain product, so the product has a family of projectors of complex dimension two indexed by elements that are not its own idempotents.**
 
@@ -249,9 +249,9 @@ Since the square is always central, the equation $\tilde\Pi\star\tilde\Pi=\tilde
 
 **The quaternionic product carries no Peirce decomposition: its only nonzero idempotent is the left unit $e_t$, whose left multiplication is the identity, so the only Peirce piece is the whole algebra.**
 
-A nonzero idempotent of an associative unital algebra carries the Peirce decomposition $A=A_1\oplus A_{1/2}\oplus A_0$ with $A_\lambda=\{x:\Pi x=\lambda x\}$, and the decomposition is the source of the minimal ideals and the matrix units (*Ideals and Peirce Decomposition of the Biquaternion Algebra*). The construction uses associativity twice, in reading the two maps as projections and in verifying that their images add.
+A nonzero idempotent $e$ of an associative unital algebra carries the Peirce decomposition $A=A_1\oplus A_{1/2}\oplus A_0$ with $A_\lambda=\{x:ex=\lambda x\}$, and the decomposition is the source of the minimal ideals and the matrix units (*Ideals and Peirce Decomposition of the Biquaternion Algebra*). The construction uses associativity twice, in reading the two maps as projections and in verifying that their images add.
 
-For the quaternionic product there is nothing to attach it to. The only nonzero idempotent is the left unit $e_t$, and $L_{e_t}$ is the identity, so the only Peirce piece is the whole algebra. The nontrivial decomposition of the algebra — the frame of two orthogonal idempotents, the four Peirce lines, the minimal left ideals — is a property of the plain product alone, and what the quaternionic product has in its place is the centrality of the square and the projectors of §*Idempotents as Projections*, which are indexed by the plain idempotents rather than computed from the idempotents of the product.
+For the quaternionic product there is nothing to attach it to. The only nonzero idempotent is the left unit $e_t$, and $L_{e_t}$ is the identity, so the only Peirce piece is the whole algebra. The nontrivial decomposition of the algebra — the frame of two orthogonal idempotents, the four Peirce lines, the minimal left ideals — is a property of the plain product alone, and what the quaternionic product has in its place is the centrality of the square and the projectors of §*Idempotents and Their Projectors*, which are indexed by the plain idempotents rather than computed from the idempotents of the product.
 
 ## Summary
 
@@ -280,7 +280,7 @@ In the general quaternionic bilinear product the square of every element is the 
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the quadratic form $\sum_\mu Q_\mu^2$ of the complex quaternion algebra and its level sets.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the idempotent equation and the Peirce decomposition in the absence of associativity.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the conjugations of an algebra and the elements they fix.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the general definitions of the root of a central value and of an idempotent.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Hermitian Idempotent and the Peirce Decomposition*, for the general definitions of the root of a central value and of an idempotent.
 - *Introduction to the General Quaternionic Algebra* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the product, the square and the left unit.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the algebraic norm and its table on the remarkable subspaces.
 - *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the Hermitian idempotents, the halving map from the roots of $+1$, the plain classification and the plain roots of $+1$ and $-1$.

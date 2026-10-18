@@ -83,7 +83,7 @@ $$
 z = \frac{c_{-1/2}}{c_{1/2}} = \frac{\psi_2}{\psi_1} = \zeta,
 $$
 
-which is exactly the stereographic coordinate of the star. The state is a single point on the sphere. The Majorana representation of a spin-1/2 is therefore the Bloch sphere, and the two are not merely analogous: the star **is** the Bloch vector, and the idempotent $\tilde\Pi_1(\vec u_x)$ is the state's own projector.
+which is exactly the stereographic coordinate of the star. The state is a single point on the sphere. The Majorana representation of a spin-1/2 is therefore the Bloch sphere, and the two are not merely analogous: the star **is** the Bloch vector, and the idempotent $\tilde\Pi_1(\vec u_x)$ is the state itself.
 
 ### Coherent States and the Coincidence Limit
 

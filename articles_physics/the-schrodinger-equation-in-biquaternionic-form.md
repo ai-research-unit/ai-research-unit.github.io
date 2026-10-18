@@ -50,7 +50,7 @@ and this expression is precisely where the conflation happens. The $i$ is the ce
 
 ### The complex structure of the state space
 
-A Schrödinger equation presupposes a complex vector space of states. In the biquaternion framework that space is a **minimal left ideal** $\mathbb{B}\tilde{P} \subset \mathbb{B}$ — the module of states, defined in the next section — and its complex structure is left multiplication by the central $i$. Because $i$ is central, this action commutes with the left action of $\mathbb{B}$, so the module is genuinely complex-linear.
+A Schrödinger equation presupposes a complex vector space of states. In the biquaternion framework that space is a **minimal left ideal** $\mathbb{B}\tilde\Pi \subset \mathbb{B}$ — the module of states, defined in the next section — and its complex structure is left multiplication by the central $i$. Because $i$ is central, this action commutes with the left action of $\mathbb{B}$, so the module is genuinely complex-linear.
 
 It is important that the complex structure does **not** live on $\mathbb{M}_+$. Multiplication by $i$ is a real-linear isomorphism
 
@@ -67,7 +67,7 @@ so $i$ carries $\mathbb{M}_+$ out of itself; it is not an operator on $\mathbb{M
 | Scalar imaginary $i$ | $\mathbb{C}_{\mathbb{B}}$, the centre | Yes | Complex structure of the state module; the $i$ of the Schrödinger equation |
 | Quaternion units $\vec e_\mu$ | $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ (pure real) | No | Rotation generators, state axes |
 | Non-central roots $\vec u$ | $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$, unit sphere | No | Bloch-sphere axes; idempotent directions |
-| Complex structure of the state module | Acts on $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$ | — | Left multiplication by the central $i$; not a structure on $\mathbb{M}_+$ |
+| Complex structure of the state module | Acts on $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | — | Left multiplication by the central $i$; not a structure on $\mathbb{M}_+$ |
 
 ## The Scalar Imaginary Exchanges the Two Sectors
 
@@ -86,16 +86,16 @@ So $i\tilde{H} \in \mathbb{M}_-$: the map $\tilde{H} \mapsto i\tilde{H}$ is a re
 Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ with $e_t \mapsto I$, $\vec e_\mu \mapsto -i\sigma_\mu$ (the convention of the companion article), the idempotent
 
 $$
-\tilde{P} = \tfrac{1}{2}\left(e_t + i\,\vec e_z\right) \;\longmapsto\; \tfrac{1}{2}(I + \sigma_3) = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} = E_{11}
+\tilde\Pi = \tfrac{1}{2}\left(e_t + i\,\vec e_z\right) \;\longmapsto\; \tfrac{1}{2}(I + \sigma_3) = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} = E_{11}
 $$
 
 is a rank-one projection. The **minimal left ideal**
 
 $$
-\mathbb{B}\tilde{P} = \{\tilde{Q}\tilde{P} : \tilde{Q} \in \mathbb{B}\}
+\mathbb{B}\tilde\Pi = \{\tilde{Q}\tilde\Pi : \tilde{Q} \in \mathbb{B}\}
 $$
 
-is the state module; in the matrix picture it is the space of matrices with only the first column nonzero, i.e. the column spinors $\mathbb{C}^2$. An element $\psi \in \mathbb{B}\tilde{P}$ is a **spinor**, characterized by $\psi\tilde{P} = \psi$.
+is the state module; in the matrix picture it is the space of matrices with only the first column nonzero, i.e. the column spinors $\mathbb{C}^2$. An element $\psi \in \mathbb{B}\tilde\Pi$ is a **spinor**, characterized by $\psi\tilde\Pi = \psi$.
 
 ### Why the wave function is not a generic element of $\mathbb{M}_+$
 
@@ -115,9 +115,9 @@ $$
 
 so the equation holds. The Hermitian-valued unknown is not inconsistent.
 
-What disqualifies this $\psi$ is not the equation but the requirement that a wave function be a state: $\langle \psi\rangle_{\natural} = \psi\bar{\psi} = -e_t$, so $\psi$ is invertible and in particular not a zero divisor. A wave function in the state module satisfies $\psi\tilde{P} = \psi$, hence $\psi(e_t - \tilde{P}) = 0$ with $e_t - \tilde{P} \neq 0$: every nonzero element of $\mathbb{B}\tilde{P}$ is a zero divisor. (The idempotent $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ — which is $\tilde{P}$ itself — is an element of $\mathbb{M}_+$ that does lie in the state module; a generic Hermitian element does not. Membership in $\mathbb{B}\tilde{P}$ does not follow from being a zero divisor: $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ is a zero divisor too, and $\tilde{Q}\tilde{P} = \tilde\Pi_-$ would give $\tilde\Pi_- = \tilde\Pi_-\tilde{P} = 0$, impossible.) The correct exclusion is therefore structural — $\mathbb{M}_+$ is not a left ideal, and its elements need not be zero divisors — not the absence of solutions. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+What disqualifies this $\psi$ is not the equation but the requirement that a wave function be a state: $\langle \psi\rangle_{\natural} = \psi\bar{\psi} = -e_t$, so $\psi$ is invertible and in particular not a zero divisor. A wave function in the state module satisfies $\psi\tilde\Pi = \psi$, hence $\psi(e_t - \tilde\Pi) = 0$ with $e_t - \tilde\Pi \neq 0$: every nonzero element of $\mathbb{B}\tilde\Pi$ is a zero divisor. (The idempotent $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ — which is $\tilde\Pi$ itself — is an element of $\mathbb{M}_+$ that does lie in the state module; a generic Hermitian element does not. Membership in $\mathbb{B}\tilde\Pi$ does not follow from being a zero divisor: $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ is a zero divisor too, and $\tilde{Q}\tilde\Pi = \tilde\Pi_-$ would give $\tilde\Pi_- = \tilde\Pi_-\tilde\Pi = 0$, impossible.) The correct exclusion is therefore structural — $\mathbb{M}_+$ is not a left ideal, and its elements need not be zero divisors — not the absence of solutions. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
-The correct relation between the two kinds of state is bilinear. From $\psi \in \mathbb{B}\tilde{P}$ one forms
+The correct relation between the two kinds of state is bilinear. From $\psi \in \mathbb{B}\tilde\Pi$ one forms
 
 $$
 \tilde{Ϛ} = \frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)} \in \mathbb{M}_+,
@@ -134,10 +134,10 @@ i\hbar\,\partial/\partial t\psi(t) = \tilde{H}\,\psi(t),
 \qquad
 \tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+,
 \qquad
-\psi(t) \in \mathbb{B}\tilde{P},
+\psi(t) \in \mathbb{B}\tilde\Pi,
 $$
 
-where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{H}i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde{P}$ is a left ideal, $\tilde{H}\psi \in \mathbb{B}\tilde{P}$, so the equation is consistent within the module.
+where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{H}i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde{H}\psi \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.
 
 **Solution.** Since $-i\tilde{H} = -ih_0e_t + \vec h$ and the scalar and vector parts commute,
 
@@ -240,11 +240,11 @@ $$
 
 so $[\tilde{H},\tilde{Ϛ}] \in \mathbb{M}_-$; and since $\tilde{Ϛ} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial t\tilde{Ϛ}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
 
-A structural caution belongs here. The wave function $\psi$ itself is an element of the state module $\mathbb{B}\tilde{P}$, not of either sector; it carries no $\mathbb{M}_\pm$ label. The decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{M}_+$ is the bilinear object $\tilde{Ϛ} = \psi\psi^\dagger$, not $\psi$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
+A structural caution belongs here. The wave function $\psi$ itself is an element of the state module $\mathbb{B}\tilde\Pi$, not of either sector; it carries no $\mathbb{M}_\pm$ label. The decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{M}_+$ is the bilinear object $\tilde{Ϛ} = \psi\psi^\dagger$, not $\psi$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 
-**The relabelling.** Under $\mathbb{B} \cong M_2(\mathbb{C})$ with $\vec e_\mu \mapsto -i\sigma_\mu$, a spinor in $\mathbb{B}\tilde{P}$ is a column vector in $\mathbb{C}^2$, the scalar imaginary is the standard imaginary unit, $\tilde{U}(t)$ is a standard element of $\mathrm{U}(2)$, and the equation is literally the two-component Schrödinger equation. Nothing is added for a single qubit beyond vocabulary: the biquaternion equation predicts exactly what the standard one predicts.
+**The relabelling.** Under $\mathbb{B} \cong M_2(\mathbb{C})$ with $\vec e_\mu \mapsto -i\sigma_\mu$, a spinor in $\mathbb{B}\tilde\Pi$ is a column vector in $\mathbb{C}^2$, the scalar imaginary is the standard imaginary unit, $\tilde{U}(t)$ is a standard element of $\mathrm{U}(2)$, and the equation is literally the two-component Schrödinger equation. Nothing is added for a single qubit beyond vocabulary: the biquaternion equation predicts exactly what the standard one predicts.
 
 **What is structural.** Three features are genuinely rearranged rather than merely renamed.
 
@@ -262,7 +262,7 @@ A structural caution belongs here. The wave function $\psi$ itself is an element
 
 **2. Many qubits.** The extension to $n$ qubits is via $\mathbb{B}^{\otimes n} \cong M_{2^n}(\mathbb{C})$. The companion article leaves the tensor product over $\mathbb{C}$ as an open question. If it is taken over $\mathbb{C}$, the scalar imaginary remains available as the complex structure; if not, the question of the imaginary unit returns in a new form.
 
-**3. Dependence on the choice of minimal left ideal.** The choice $\tilde{P} = \tfrac12(e_t + i\vec e_z)$ is a choice of the state axis. Different minimal left ideals are unitarily equivalent, so the physics should be independent of it, but this article has not argued that explicitly; it should be stated as a basis choice.
+**3. Dependence on the choice of minimal left ideal.** The choice $\tilde\Pi = \tfrac12(e_t + i\vec e_z)$ is a choice of the state axis. Different minimal left ideals are unitarily equivalent, so the physics should be independent of it, but this article has not argued that explicitly; it should be stated as a basis choice.
 
 **4. The non-relativistic limit.** Whether this Schrödinger equation is the precise non-relativistic limit of the biquaternion Dirac equation, or only an independent qubit equation, is not checked here.
 
@@ -276,7 +276,7 @@ $$
 i\hbar\,\partial/\partial t\psi = \tilde{H}\psi,
 $$
 
-with $\tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
+with $\tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
 The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.
 
@@ -297,7 +297,7 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
 | $\tilde{H} = h_0e_t + i\vec h$ | Hermitian element (Hamiltonian) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Idempotent (pure state); $\vec u$ the state axis |
-| $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\psi$ |
+| $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\psi$ |
 | $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | Density matrix associated to a spinor |
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Unitary evolution, $\psi(t) = \tilde{U}(t)\psi(0)$ |
 | $\mathrm{Tr}(\tilde\Pi_1(\vec u)\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}) = h_0 + \vec u\cdot\vec h$ | Trace formula / Born rule |

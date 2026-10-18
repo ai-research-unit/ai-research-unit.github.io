@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The biquaternion framework identifies the **pure states** of a qubit with the **idempotents** of the Hermitian subspace $\mathbb{M}_+$: those elements $\tilde{P}$ satisfying $\tilde{P}^2 = \tilde{P}$. A mixed state is a positive trace-one element that is *not* idempotent, and the amount by which it fails to be idempotent is a single scalar, the scalar part of $\tilde{Ϛ}^2 - \tilde{Ϛ}$. **Decoherence** — the loss of the phase relations between the components of a superposition — is therefore, in this language, the deformation of an idempotent into a non-idempotent positive trace-one element. That deformation is the subject of this article.
+The biquaternion framework identifies the **pure states** of a qubit with the **idempotents** of the Hermitian subspace $\mathbb{M}_+$: those elements $\tilde\Pi$ satisfying $\tilde\Pi^2 = \tilde\Pi$. A mixed state is a positive trace-one element that is *not* idempotent, and the amount by which it fails to be idempotent is a single scalar, the scalar part of $\tilde{Ϛ}^2 - \tilde{Ϛ}$. **Decoherence** — the loss of the phase relations between the components of a superposition — is therefore, in this language, the deformation of an idempotent into a non-idempotent positive trace-one element. That deformation is the subject of this article.
 
 The title couples "idempotent" to "projection", and the coupling is not innocent. Two different objects can be called an idempotent projection, and they are not the same:
 
-1. An **idempotent element** of the algebra: an operator $\tilde{P}$ with $\tilde{P}^2 = \tilde{P}$. Its action on a state, $\tilde{Ϛ} \mapsto \tilde{P}\tilde{Ϛ}\tilde{P}$ (followed by normalization), is a projective measurement. A pure state is such an element, by definition.
+1. An **idempotent element** of the algebra: an operator $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. Its action on a state, $\tilde{Ϛ} \mapsto \tilde\Pi\tilde{Ϛ}\tilde\Pi$ (followed by normalization), is a projective measurement. A pure state is such an element, by definition.
 2. An **idempotent channel**: a map $\Phi$ on the state space with $\Phi \circ \Phi = \Phi$. This is a statement about an *operation*, not about an element.
 
 A pure state satisfies the first condition by definition. The dephasing channel satisfies the second condition only in one limit, at full strength. For partial dephasing, dephasing twice is *not* the same as dephasing once: $\Phi_p \circ \Phi_p = \Phi_{2p - p^2} \neq \Phi_p$ whenever $0 < p < 1$. Since decoherence as a physical process is generically partial, the honest interpretation of the title is:
@@ -35,7 +35,7 @@ $$
 \tilde{Ϛ}^2 = \tilde{Ϛ} \qquad \Longleftrightarrow \qquad |\vec r| = 1 .
 $$
 
-For $\vec r \neq 0$ the pure state is the rank-one projector $\tilde\Pi_1(\vec u_r) = \tfrac{1}{2}(e_t + i\vec u_r)$, with $\vec u_r = \vec r/|\vec r|$ a unit pure real quaternion; the complementary idempotent $\tilde\Pi_2(\vec u_r) = \tfrac{1}{2}(e_t - i\vec u_r)$ corresponds to the antipodal point. The pure states are the boundary sphere of the Bloch ball, which is also the trace-one slice of the future light cone of the biquaternion norm, since
+For $\vec r \neq 0$ the pure state is the rank-one Hermitian idempotent $\tilde\Pi_1(\vec u_r) = \tfrac{1}{2}(e_t + i\vec u_r)$, with $\vec u_r = \vec r/|\vec r|$ a unit pure real quaternion; the complementary idempotent $\tilde\Pi_2(\vec u_r) = \tfrac{1}{2}(e_t - i\vec u_r)$ corresponds to the antipodal point. The pure states are the boundary sphere of the Bloch ball, which is also the trace-one slice of the future light cone of the biquaternion norm, since
 
 $$
 \langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_t .
@@ -186,7 +186,7 @@ We can now separate the senses cleanly.
 
 ### Sense 1: The input state is a projection
 
-This is the sense in which "idempotent" attaches to the *state*. A pure state is an idempotent element $\tilde{P}^2 = \tilde{P}$, and decoherence is precisely the process that deforms it into a non-idempotent positive trace-one element. In this sense the title is a statement about what decoherence *acts on*: it acts on an idempotent, and it destroys the idempotency. The deviation scalar $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ})$ measures how much of the projection structure has been lost.
+This is the sense in which "idempotent" attaches to the *state*. A pure state is an idempotent element $\tilde\Pi^2 = \tilde\Pi$, and decoherence is precisely the process that deforms it into a non-idempotent positive trace-one element. In this sense the title is a statement about what decoherence *acts on*: it acts on an idempotent, and it destroys the idempotency. The deviation scalar $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ})$ measures how much of the projection structure has been lost.
 
 It is worth being explicit that this is exact and not a metaphor: the condition $\tilde{Ϛ}^2 = \tilde{Ϛ}$ is the condition $\mathrm{Tr}(\tilde{Ϛ}^2) = 1$, and decoherence makes the purity strictly less than one for every off-axis input.
 
@@ -306,7 +306,7 @@ Two remarks keep this in the framework's register. First, the two channels are t
 
 ## Summary
 
-A pure state of the informational sector is an idempotent element of $\mathbb{M}_+$: $\tilde{P}^2 = \tilde{P}$. Its mixedness is measured by the deviation $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$, whose vanishing is exactly purity. Decoherence, in the form of the dephasing channel of the companion article, deforms an idempotent into a non-idempotent positive trace-one element: it preserves the populations and scales the coherences by $1-p$, sending the Bloch vector $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ and carrying a pure state from the Bloch sphere into the ball along a straight line toward the pointer axis.
+A pure state of the informational sector is an idempotent element of $\mathbb{M}_+$: $\tilde\Pi^2 = \tilde\Pi$. Its mixedness is measured by the deviation $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$, whose vanishing is exactly purity. Decoherence, in the form of the dephasing channel of the companion article, deforms an idempotent into a non-idempotent positive trace-one element: it preserves the populations and scales the coherences by $1-p$, sending the Bloch vector $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ and carrying a pure state from the Bloch sphere into the ball along a straight line toward the pointer axis.
 
 The title's phrase "idempotent projection" must therefore be read with care, and the distinction between an idempotent *element* and an idempotent *channel* is the spine of the subject:
 
@@ -330,7 +330,7 @@ One many-qubit case belongs here because a source overstates it. The singlet $\l
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\leq1$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pointer idempotents (pure states along $\vec u$) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1 + |\vec r|^2)$ | Purity |
 | $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm (positivity condition) |

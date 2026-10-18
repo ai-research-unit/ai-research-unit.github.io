@@ -287,10 +287,10 @@ $$
 
 where $M_{i_3}$ is right multiplication by $i_3$. The mass term carries the conjugation operator: that is the price of the dictionary, and it is why the equation is not of the form $\tilde{\nabla}\tilde{\Psi} = \mu\tilde{\Psi}$ for any of the framework's linear mass terms. The dictionary is set out in *The Dirac Equation in Biquaternionic Form*, where the conjugation it uses is distinguished from the algebra's real structure $\flat$.
 
-**Removal of the conjugation operator.** Because $C$ is antilinear, $\mathcal{N}$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Factoring $\mathcal{N}$ as a $2\times 2$ operator matrix with $C$ in the off-diagonal slots separates its solutions into two coupled **complex-linear** equations for the combinations $f = F + G$, $g = F^* - G^*$ of the two conjugate solutions. Applying, for a fixed $k$, the two complementary idempotents $\tilde{P}^\pm = \tfrac12(e_t \pm i \vec e_k)$ and adding and subtracting the two equations reduces the pair to a single complex-linear operator,
+**Removal of the conjugation operator.** Because $C$ is antilinear, $\mathcal{N}$ is not a left multiplier, and the boundary-value machinery of the algebra — the Cauchy kernel, the Teodorescu transform, the Cauchy-type operator — does not apply to it directly. Factoring $\mathcal{N}$ as a $2\times 2$ operator matrix with $C$ in the off-diagonal slots separates its solutions into two coupled **complex-linear** equations for the combinations $f = F + G$, $g = F^* - G^*$ of the two conjugate solutions. Applying, for a fixed $k$, the two complementary idempotents $\tilde\Pi^\pm = \tfrac12(e_t \pm i \vec e_k)$ and adding and subtracting the two equations reduces the pair to a single complex-linear operator,
 
 $$
-R = \tilde{P}^+\bigl(i\partial/\partial Q_t + D\bigr) + \tilde{P}^-\bigl(-i\partial/\partial Q_t + D\bigr) - m M_{i_3},
+R = \tilde\Pi^+\bigl(i\partial/\partial Q_t + D\bigr) + \tilde\Pi^-\bigl(-i\partial/\partial Q_t + D\bigr) - m M_{i_3},
 \qquad \mathcal{N} = u^{-1}Ru .
 $$
 
@@ -421,7 +421,7 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $D_\alpha = D + M_\alpha$, $D = i\sum_k \vec e_k\,\partial/\partial Q_k$ | Shifted Moisil–Teodoresco operator; $M_\alpha$ right multiplication by $\alpha$ |
 | $\alpha = -(i\omega \vec e_x + m \vec e_y)$ | Bag parameter; $\alpha\in S \iff \omega^2 = m^2$ |
 | $S = \{\alpha\neq0 : \bar\alpha\alpha = 0\}$ | Set of zero divisors; the mass shell in parameter space |
-| ${P}^\pm = \tfrac12(e_t\pm i\vec e_k)$ | Complementary idempotents used in removing $C$ |
+| $\tilde\Pi^\pm = \tfrac12(e_t\pm i\vec e_k)$ | Complementary idempotents used in removing $C$ |
 | $S^\pm$, $P_\alpha = \tfrac12(I+S_\alpha)$ | Boundary projectors; $P_\alpha$ built from the Cauchy-type operator $K_\alpha$ |
 | $\tilde{p} = P_\alpha\tilde{p} = S^+\tilde{p}$ | The bag reduced to one boundary integral equation |
 | **Standard QCD notation, not framework objects** | |

@@ -40,7 +40,7 @@ physical clause each, and the closing sections are the
 ledger, the interpretation, the summary, the notation table and the literature. The other articles of the
 section own the objects that the table touches: *Zero Divisors in the Biquaternioid Structures over $\mathbb{C}$* the
 degeneracy itself, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* and
-*Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* the radicands, *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$* the projectors, and *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$* the square-zero
+*Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* the radicands, *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$* the idempotents, and *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$* the square-zero
 elements.
 
 **Conventions.** We use those of the companion articles unchanged. The algebra is
@@ -616,7 +616,7 @@ is labelled by.
   with the metric complement is a property of the band, not a general theorem.
 - The annihilator is the zero-divisor condition with its witnesses displayed. It is the entry to the
   section's later articles: the square roots of zero are the elements that annihilate themselves, and the
-  idempotents are the projectors whose kernel is a full half of the space.
+  idempotents are the elements whose kernel is a full half of the space.
 - The kernel is also the zero-mode space of *The Index Theorem and the Zero-Mode Count in Biquaternionic
   Form*, the GNS null space of *The GNS Construction in the Biquaternion Framework*, and the algebraic
   obstruction behind *No-Cloning and the Algebraic Obstruction in Biquaternionic Form*: one object, and

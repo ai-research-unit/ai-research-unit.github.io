@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The algebra article defined the split-complex algebra $\mathbb{D}$, its conjugation and its two idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$. This article treats the **idempotents** of $\mathbb{D}$ — the elements satisfying $A^2 = A$ — and the projections and direct-sum decompositions they carry. The algebra $\mathbb{D}$ has no root of $-1$ at all and exactly four idempotents.
+The algebra article defined the split-complex algebra $\mathbb{D}$, its conjugation and its two idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$. This article treats the **idempotents** of $\mathbb{D}$ — the elements satisfying $A^2 = A$ — and the direct-sum decompositions they carry. The algebra $\mathbb{D}$ has no root of $-1$ at all and exactly four idempotents.
 
-Idempotents are the algebraic form of a projection, and in $\mathbb{D}$ they do three jobs at once:
+An idempotent corresponds to a projector under its multiplication, and in $\mathbb{D}$ the idempotents do three jobs at once:
 
 1. they give the direct-sum decomposition of the algebra into its two minimal ideals;
 2. they characterise the zero divisors, each of which is a real multiple of $\Pi_1$ or of $\Pi_2$;
@@ -115,28 +115,28 @@ $$
 These are exactly the **indicator functions** of the four subsets of the two-point set $\{+,-\}$: the empty set, the singleton $\{+\}$, the singleton $\{-\}$, and the whole set. Since on $\mathbb{R}\oplus\mathbb{R}$ the idempotents are precisely the pairs $(\epsilon_+,\epsilon_-)$ with each $\epsilon_\sigma \in \{0,1\}$, the correspondence is a bijection
 
 $$
-\{\text{idempotents of } \mathbb{D}\} \;\longleftrightarrow\; \{\text{subsets of } \{+,-\}\}, \qquad e \longleftrightarrow \{\sigma : e_\sigma \neq 0\},
+\{\text{idempotents of } \mathbb{D}\} \;\longleftrightarrow\; \{\text{subsets of } \{+,-\}\}, \qquad \Pi \longleftrightarrow \{\sigma : \Pi_\sigma \neq 0\},
 $$
 
-with $2^2 = 4$ elements. The idempotent $e$ is the projection onto the coordinates selected by its subset, and $1-e$ is the projection onto the complementary subset; the two complementary pairs are $\{0,1\}$ and $\{\Pi_1,\Pi_2\}$.
+with $2^2 = 4$ elements. The idempotent $\Pi$ selects the coordinates of its subset, and $1-\Pi$ the complementary subset; the two complementary pairs are $\{0,1\}$ and $\{\Pi_1,\Pi_2\}$.
 
 There is no root of $-1$ to parametrise, and the parametrising set is the two-point set itself, whose power set has four elements.
 
-## Idempotents as Projections
+## Idempotents and Direct Sum Decompositions
 
-An idempotent $e$ satisfies $e^2 = e$, so it acts as the identity on its image and annihilates its kernel; it is a **projection**. Its complement $1-e$ is also an idempotent, and
-
-$$
-e(1-e) = e - e^2 = 0,
-$$
-
-so the pair $\{e, 1-e\}$ gives a direct-sum decomposition of the underlying real vector space,
+An idempotent $\Pi$ satisfies $\Pi^2 = \Pi$, so its multiplication acts as the identity on its image and annihilates its kernel; that multiplication operator is a **projector**. Its complement $1-\Pi$ is also an idempotent, and
 
 $$
-\mathbb{D} = \mathbb{D}e \oplus \mathbb{D}(1-e),
+\Pi(1-\Pi) = \Pi - \Pi^2 = 0,
 $$
 
-and equally $\mathbb{D} = e\mathbb{D}\oplus(1-e)\mathbb{D}$ on the other side; since the algebra is commutative the two decompositions coincide.
+so the pair $\{\Pi, 1-\Pi\}$ gives a direct-sum decomposition of the underlying real vector space,
+
+$$
+\mathbb{D} = \mathbb{D}\Pi \oplus \mathbb{D}(1-\Pi),
+$$
+
+and equally $\mathbb{D} = \Pi\mathbb{D}\oplus(1-\Pi)\mathbb{D}$ on the other side; since the algebra is commutative the two decompositions coincide.
 
 For the standard pair $\{\Pi_1, \Pi_2\}$ the projections are the coordinate projections of $\mathbb{R}\oplus\mathbb{R}$:
 
@@ -150,7 +150,7 @@ $$
 P_+^2 = P_+, \qquad P_-^2 = P_-, \qquad P_+P_- = P_-P_+ = 0, \qquad P_+ + P_- = \mathrm{id}.
 $$
 
-So $P_+$ is the projection onto $\mathbb{R}\Pi_1$ along $\mathbb{R}\Pi_2$, and $P_-$ the complementary projection. A projection in the split-complex algebra is the same thing as an idempotent, and the projections $P_\pm$ select the two coordinates of the isomorphism with $\mathbb{R}\oplus\mathbb{R}$.
+So $P_+$ is the projection onto $\mathbb{R}\Pi_1$ along $\mathbb{R}\Pi_2$, and $P_-$ the complementary projection. A projector in the split-complex algebra is an idempotent operator, and the projectors $P_\pm$ select the two coordinates of the isomorphism with $\mathbb{R}\oplus\mathbb{R}$.
 
 ## Idempotents and the Zero Divisors
 
@@ -186,7 +186,7 @@ as a direct sum of ideals, the two summands being the two copies of $\mathbb{R}$
 
 **Proof.** Every $A$ satisfies $A = A(\Pi_1 + \Pi_2) = A\Pi_1 + A\Pi_2$, so the two ideals span; their intersection is zero because $\Pi_1\Pi_2 = 0$: if $A\Pi_1 = B\Pi_2$ then multiplying by $\Pi_1$ gives $A\Pi_1 = 0$. Each has real dimension $1$. For minimality, a nonzero ideal contained in $\mathbb{D}\Pi_1$ contains some $\lambda \Pi_1$ with $\lambda \neq 0$, hence contains $\Pi_1$ and equals $\mathbb{R}\Pi_1$; so each is minimal.
 
-The two ideals are also the two **minimal ideals** in the sense of the lattice of all ideals, and they are the images of the two projection idempotents. The lattice of the ideals of $\mathbb{D}$, the Peirce decomposition of the algebra with respect to an idempotent, and the failure of simplicity that these two minimal ideals express are developed in *Split-Complex Ideals and Peirce Decomposition*.
+The two ideals are also the two **minimal ideals** in the sense of the lattice of all ideals, and they are the images of the two idempotents. The lattice of the ideals of $\mathbb{D}$, the Peirce decomposition of the algebra with respect to an idempotent, and the failure of simplicity that these two minimal ideals express are developed in *Split-Complex Ideals and Peirce Decomposition*.
 
 ## The Set of Idempotents
 
@@ -202,7 +202,7 @@ It is a finite set, and its parametrisation by the subsets of $\{+,-\}$ makes th
 
 An idempotent of $\mathbb{D}$ is an element $A$ with $A^2 = A$. The algebra has exactly four: $0$, $1$, and the standard pair $\Pi_{1,2} = \tfrac12(1\pm j)$. The standard pair is orthogonal, complete and primitive, and it is central because $\mathbb{D}$ is commutative. Under the isomorphism $\mathbb{D}\cong\mathbb{R}\oplus\mathbb{R}$ the four idempotents are the four indicator functions of the two-point set $\{+,-\}$, so the set of idempotents is finite and corresponds to the power set of $\{+,-\}$ rather than to a family of roots of $-1$.
 
-The idempotents are projections: $A = A_+\Pi_1 + A_-\Pi_2$, with $A_\pm = A\Pi_{1,2}$ the two components, and $\Pi_1 + \Pi_2 = 1$, $\Pi_1\Pi_2 = 0$ give the direct-sum decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2 \cong \mathbb{R}\oplus\mathbb{R}$, whose summands are the two minimal ideals. The nontrivial idempotents are zero divisors, and conversely every zero divisor is a real multiple of $\Pi_1$ or of $\Pi_2$: in the idempotent basis the zero divisors are exactly the elements supported on a single idempotent, that is, the elements with one vanishing coordinate. This is the idempotent theory in the lowest dimension, with no vector part and no non-commutativity.
+The idempotents select the two summands: $A = A_+\Pi_1 + A_-\Pi_2$, with $A_\pm = A\Pi_{1,2}$ the two components, and $\Pi_1 + \Pi_2 = 1$, $\Pi_1\Pi_2 = 0$ give the direct-sum decomposition $\mathbb{D} = \mathbb{R}\Pi_1\oplus\mathbb{R}\Pi_2 \cong \mathbb{R}\oplus\mathbb{R}$, whose summands are the two minimal ideals. The nontrivial idempotents are zero divisors, and conversely every zero divisor is a real multiple of $\Pi_1$ or of $\Pi_2$: in the idempotent basis the zero divisors are exactly the elements supported on a single idempotent, that is, the elements with one vanishing coordinate. This is the idempotent theory in the lowest dimension, with no vector part and no non-commutativity.
 
 ## Summary of Notation
 

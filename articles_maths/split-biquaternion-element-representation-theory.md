@@ -160,7 +160,7 @@ The split biquaternion algebra is a free $\mathbb{D}$-module of rank $4$ and a r
 |---|---|
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
 | $\mathbb{D}, \mathbb{H}, \mathbb{R}$ | The split complex, quaternion and real ground structures |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Central idempotents, the Peirce projections |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Central idempotents; their multiplication operators are the Peirce projectors |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Isomorphism to $\mathbb{H} \oplus \mathbb{H}$ |
 | $S_+, S_-$ | The two simple left modules, each $\cong \mathbb{H}$, dimension $4$ |
 | $M = a S_+ \oplus b S_-$ | Classification of real representations by multiplicities |

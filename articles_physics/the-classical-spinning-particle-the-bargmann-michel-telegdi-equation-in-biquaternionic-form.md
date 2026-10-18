@@ -80,10 +80,10 @@ S_\mu v^\mu=0
 \mathrm{Sc}\!\left(\tilde{S}\tilde{V}^{\natural}\right)=0 .
 $$
 
-The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_t+\vec S_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with $\tilde U_{\vec v}$, the rest-frame spin is
+The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_t+\vec S_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with the Lorentz boost rotor $\tilde U_{\mathrm L,\vec v}$, the rest-frame spin is
 
 $$
-\vec s=\tilde U_{\vec v}\,\tilde{S}\,\tilde U_{\vec v}^{*}\Big|_{\rm vec},
+\vec s=\tilde U_{\mathrm L,\vec v}\,\tilde{S}\,\tilde U_{\mathrm L,\vec v}^{*}\Big|_{\rm vec},
 $$
 
 and the orthogonality condition may be solved for the time component,
@@ -448,6 +448,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
 | $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |
 | $\tilde{S}=iS^0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $S_\mu v^\mu=0$ |
+| $\tilde U_{\mathrm L,\vec v}$ | Lorentz boost rotor to the momentary rest frame |
 | $\vec s$ | Rest-frame spin, $S_\mu S^\mu=\vec s^2$ |
 | $S^{\mu\nu}$ | Antisymmetric spin tensor, $S^\mu=\frac{1}{2c}\epsilon^{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |

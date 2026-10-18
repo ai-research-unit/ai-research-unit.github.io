@@ -95,19 +95,19 @@ $$
 
 ### Step 1: The state
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. For a **two-qubit system**, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$.
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $\tilde\Pi(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. For a **two-qubit system**, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$.
 
 The singlet state corresponds to the idempotent
 
 $$
-P_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
+\tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$
 
 
 *Idempotency.* Using $(x\otimes y)\circ(z\otimes w) = (x\circ z)\otimes(y\circ w)$ and the quaternion multiplication rules,
 
 $$
-P_{\mathrm{singlet}}\circ P_{\mathrm{singlet}} = \frac{1}{16}\sum_{\mu,\nu\in\{t,x,y,z\}}(e_\mu\circ \vec e_\nu)\otimes(e_\mu\circ \vec e_\nu).
+\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{\mathrm{singlet}} = \frac{1}{16}\sum_{\mu,\nu\in\{t,x,y,z\}}(e_\mu\circ \vec e_\nu)\otimes(e_\mu\circ \vec e_\nu).
 $$
 
 For the diagonal pairs $\mu = \nu$, the product $e_\mu\circ e_\mu$ equals $e_t$ for $\mu = t$ and $-e_t$ for $\mu\in\{x,y,z\}$. In both cases the tensor product $(e_\mu\circ e_\mu)\otimes(e_\mu\circ e_\mu)$ equals $e_t\otimes e_t$, so the four diagonal terms contribute $4\,e_t\otimes e_t$ in total.
@@ -121,17 +121,17 @@ $$
 Combining the diagonal and off-diagonal contributions,
 
 $$
-P_{\mathrm{singlet}}\circ P_{\mathrm{singlet}} = \frac{1}{16}\cdot 4\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right) = P_{\mathrm{singlet}}.
+\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{\mathrm{singlet}} = \frac{1}{16}\cdot 4\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right) = \tilde\Pi_{\mathrm{singlet}}.
 $$
 
-*Trace.* The trace is $\mathrm{Tr}(P_{\mathrm{singlet}}) = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(e_\mu)^2$. Each $\mathrm{Tr}_\mathbb{B}(e_\mu) = 2$ for $\mu = t$ (since $\mathrm{Tr}_\mathbb{B}(e_t) = 2$) and $0$ for $\mu\in\{x,y,z\}$ (since the trace of a pure quaternion vanishes). So the sum is $4$, and $\mathrm{Tr}(P_{\mathrm{singlet}}) = \frac{1}{4}\cdot 4 = 1$.
+*Trace.* The trace is $\mathrm{Tr}(\tilde\Pi_{\mathrm{singlet}}) = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(e_\mu)^2$. Each $\mathrm{Tr}_\mathbb{B}(e_\mu) = 2$ for $\mu = t$ (since $\mathrm{Tr}_\mathbb{B}(e_t) = 2$) and $0$ for $\mu\in\{x,y,z\}$ (since the trace of a pure quaternion vanishes). So the sum is $4$, and $\mathrm{Tr}(\tilde\Pi_{\mathrm{singlet}}) = \frac{1}{4}\cdot 4 = 1$.
 
 ### Step 2: The measurement operators
 
-The single-qubit projector onto spin-up along $\vec u_a$ is the idempotent $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. The joint measurement operator is the tensor product
+The single-qubit pure-state idempotent for spin-up along $\vec u_a$ is $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. The joint measurement operator is the tensor product
 
 $$
-P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b) = \frac{1}{4}\left(e_t + i\vec u_a\right)\otimes\left(e_t + i\vec u_b\right).
+\tilde\Pi_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b) = \frac{1}{4}\left(e_t + i\vec u_a\right)\otimes\left(e_t + i\vec u_b\right).
 $$
 
 ### Step 3: The probability
@@ -139,13 +139,13 @@ $$
 The joint probability is the trace formula on $\mathbb{B}\otimes\mathbb{B}$:
 
 $$
-p(+,+) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ P_{++}(\vec u_a,\vec u_b)\right).
+p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++}(\vec u_a,\vec u_b)\right).
 $$
 
 Computing the product,
 
 $$
-P_{\mathrm{singlet}}\circ P_{++} = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}\left[e_\mu(e_t + i\vec u_a)\right]\otimes\left[e_\mu(e_t + i\vec u_b)\right].
+\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++} = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}\left[e_\mu(e_t + i\vec u_a)\right]\otimes\left[e_\mu(e_t + i\vec u_b)\right].
 $$
 
 Applying the tensor-product trace,
@@ -206,17 +206,17 @@ These agree with the physical expectation: the singlet state is perfectly anti-c
 
 ## What the Biquaternion Solution Illustrates
 
-**1. Entanglement as a non-product state.** The singlet state $P_{\mathrm{singlet}}$ is an element of $\mathbb{B}\otimes\mathbb{B}$ that is **not** of the form $P_1\otimes P_2$ for any single-qubit idempotents $P_1, P_2$. This is the algebraic content of entanglement: the joint state is not a product of the two subsystems' states.
+**1. Entanglement as a non-product state.** The singlet state $\tilde\Pi_{\mathrm{singlet}}$ is an element of $\mathbb{B}\otimes\mathbb{B}$ that is **not** of the form $\tilde\Pi_1\otimes\tilde\Pi_2$ for any single-qubit idempotents $\tilde\Pi_1, \tilde\Pi_2$. This is the algebraic content of entanglement: the joint state is not a product of the two subsystems' states.
 
 **2. The trace formula generalizes to two qubits.** The joint probability is
 
 $$
-p(+,+) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ P_{++}(\vec u_a,\vec u_b)\right),
+p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++}(\vec u_a,\vec u_b)\right),
 $$
 
 the natural pairing between the joint state and the joint measurement operator. The trace is the tensor product of the single-qubit traces, $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
-**3. The correlations arise from the tensor-product structure.** The single-qubit projectors $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_k \vec e_k\otimes \vec e_k$ in the singlet idempotent, which couple the two qubits.
+**3. The correlations arise from the tensor-product structure.** The single-qubit idempotents $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $\tilde\Pi_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_k \vec e_k\otimes \vec e_k$ in the singlet idempotent, which couple the two qubits.
 
 **4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the trace formula through the products $\vec e_\nu\vec u_a$ and $\vec e_\nu\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -240,7 +240,7 @@ We have solved a fourth exercise in quantum physics — the joint spin measureme
 
 In the **standard formulation**, the solution proceeds through the two-qubit state, the tensor-product projector, and the Born rule, giving $p(+,+) = (1/4)(1 - \vec u_a\cdot\vec u_b)$.
 
-In the **biquaternion formulation**, the solution proceeds through the singlet idempotent in $\mathbb{B}\otimes\mathbb{B}$, the tensor-product projector, and the trace formula, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the singlet idempotent in $\mathbb{B}\otimes\mathbb{B}$, the tensor-product idempotent, and the trace formula, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of entanglement: the joint state is a **non-product idempotent** of the tensor-product algebra, and the correlations arise from the tensor-product terms in the state.
 
@@ -255,9 +255,9 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $|\Psi^-\rangle$ | Singlet state |
-| $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
-| $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit projector |
-| $P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b)$ | Joint projector |
+| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
+| $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit idempotent |
+| $\tilde\Pi_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b)$ | Joint idempotent |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 
 ## Further Reading

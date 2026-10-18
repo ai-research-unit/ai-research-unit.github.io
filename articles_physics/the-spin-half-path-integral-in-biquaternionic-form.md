@@ -199,7 +199,7 @@ which is precisely the stereographic coordinate of the Majorana construction. Th
 
 ### The Biquaternion Reading
 
-In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the trace pairing supplying the energy $\mathrm{Tr}(\tilde{P}\tilde{H})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\vec u_t$ into $\vec u(t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
+In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the trace pairing supplying the energy $\mathrm{Tr}(\tilde\Pi\tilde{H})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\vec u_t$ into $\vec u(t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
 
 ## Topological Consequences
 
@@ -223,7 +223,7 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 
 **What the algebra organises.**
 
-- **The action is algebraic data.** The energy is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H})$, the path is a curve of idempotents, and the Wess–Zumino term is the central phase of the rotor along the curve. The two-level path integral is the quantisation of this data.
+- **The action is algebraic data.** The energy is the trace pairing $\mathrm{Tr}(\tilde\Pi\tilde{H})$, the path is a curve of idempotents, and the Wess–Zumino term is the central phase of the rotor along the curve. The two-level path integral is the quantisation of this data.
 - **The double cover is the two formulations.** The idempotent integral and the spinor integral are the sphere and its double cover; the Wess–Zumino term is the fibre.
 - **The topological term is the curvature.** The non-exactness of the symplectic form is the non-zero Chern number of the geometric-phase analysis, and the coefficient $j = \tfrac12$ is the spin.
 - **The saddle point is a rotor.** Larmor precession is conjugation by a time-dependent unit real quaternion, the classical limit of the quantum evolution.
@@ -263,7 +263,7 @@ one half the oriented solid angle: the geometric phase. This was verified numeri
 
 The saddle point of $S$ is the classical Larmor precession $d\vec r/dt = \gamma\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ and the classical Zeeman energy $\langle\tilde{H}\rangle = -\tfrac{\hbar\omega_L}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\bar\psi\psi=1$, related to the coherent-state form by $\zeta = \psi_2/\psi_1$.
 
-In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\vec u)$ with energy $\mathrm{Tr}(\tilde{P}\tilde{H})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\pi\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
+In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\vec u)$ with energy $\mathrm{Tr}(\tilde\Pi\tilde{H})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\pi\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
 
 ## Summary of Notation
 

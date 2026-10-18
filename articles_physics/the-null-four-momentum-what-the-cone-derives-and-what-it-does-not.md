@@ -75,7 +75,7 @@ What the cone adds to the bare equation $E=c|\vec p|$ is that the equation is no
 
 ### The propagation speed is $c$, and is frame-independent
 
-For a four-wavevector $\tilde P=i(\omega/c)e_t+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde P\tilde{R}^{\natural})) = \langle\tilde P\rangle_{\natural}f''$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde P\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.
+For a four-wavevector $\tilde P=i(\omega/c)e_t+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde P\tilde{R}^{\natural})) = \langle\tilde P\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde P\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.
 
 What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ with $\tilde U$ of unit norm acts on the sector, and the norm is multiplicative, so
 
@@ -155,15 +155,15 @@ $$
 \tilde\Pi(\vec u) \;=\; \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$
 
-an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one projector**.
+an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a **rank-one Hermitian idempotent**.
 
-This is what makes the identification "the photon's four-momentum is a zero divisor" more than a restatement of $E=c|\vec p|$. The null momentum is, up to the factor $2iE/c$, a **pure state** of the informational sector: the flagpole interpretation of the companion article *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*, where the null direction and the projector are two faces of one object. The photon's lightlike momentum and a rank-one projector are the same element read in two sectors.
+This is what makes the identification "the photon's four-momentum is a zero divisor" more than a restatement of $E=c|\vec p|$. The null momentum is, up to the factor $2iE/c$, a **pure state** of the informational sector: the flagpole interpretation of the companion article *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*, where the null direction and the idempotent are two faces of one object. The photon's lightlike momentum and a rank-one pure-state idempotent are the same element read in two sectors.
 
 ### What this gives and what it does not
 
-What it gives is a genuine structural coincidence: the algebra's non-invertible elements in the material sector are in one-to-one correspondence with the projectors of the informational sector, up to a scale. The cone of the material sector is the scaled image of the projector sphere of the informational sector. That is a strong internal linkage between the two sectors, and it is derived.
+What it gives is a genuine structural coincidence: the algebra's non-invertible elements in the material sector are in one-to-one correspondence with the Hermitian idempotents of the informational sector, up to a scale. The cone of the material sector is the scaled image of the idempotent sphere of the informational sector. That is a strong internal linkage between the two sectors, and it is derived.
 
-What it does not give is a dynamics. The projector is a description of the momentum, not an equation of motion, and the identification of the projector with a quantum state is the interpretive step the informational-sector article owns. Whether the photon should be thought of as "a projector with an energy" is an interpretation of the algebra, not a result of it; the corpus states the interpretation and does not derive it.
+What it does not give is a dynamics. The idempotent is a description of the momentum, not an equation of motion, and the identification of the idempotent with a quantum state is the interpretive step the informational-sector article owns. Whether the photon should be thought of as "an idempotent with an energy" is an interpretation of the algebra, not a result of it; the corpus states the interpretation and does not derive it.
 
 ## The Accounting
 
@@ -192,12 +192,12 @@ The division of the article, in one table. Each row is a statement about the pho
 - **The subject is one element.** This article owns the null four-momentum as an object: the shell as the norm condition $N=-m^2c^2$, mass as the value of the invariant, the null momentum as a scaled idempotent of $\mathbb{M}_+$, the absence of a rest frame, the frame-independence of $c$ from the multiplicativity of the norm, the scale-invariance argument, and the verdict that the cone marks but does not choose masslessness.
 - **The cone as a set is *The Cone and the Massless Particles in the Biquaternioid Structures over $\mathbb{C}$*'s to define.** The cone's two jobs in the two bands, the rank across the twelve rows, the nilpotent index and the roster of massless particles are stated there, and this article states them where its argument needs them; it takes the cone's boundary of invertibility from that article and from *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 - **The quantum photon is *The Photon in Biquaternionic Form*'s to define.** The polarisation space, circular polarisation, the helicity operator, the self-dual split, the ladder and the gauge are stated there; this article states the reduction to two polarisations only as far as it needs it, to record that the reduction is not a consequence of the cone.
-- **The flagpole identity is elsewhere.** That the null direction and the projector are two faces of one object is *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*.
-- **Not claimed.** No dynamics: the projector describes a momentum, not an equation of motion. No derivation of $m=0$, of any mass scale, or of the choice of the null branch. The speed $c$ is taken from the cone article's $\Box$ computation.
+- **The flagpole identity is elsewhere.** That the null direction and the idempotent are two faces of one object is *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*.
+- **Not claimed.** No dynamics: the idempotent describes a momentum, not an equation of motion. No derivation of $m=0$, of any mass scale, or of the choice of the null branch. The speed $c$ is taken from the cone article's $\Box$ computation.
 
 ## Summary
 
-The four-momentum of a massless particle is $\tilde{P}=i(E/c)e_t+\vec p$, an element of the material sector whose biquaternion norm is $-m^2c^2$; mass is the value of the invariant, and the massless shell is the level set $N=0$, which is the zero-divisor cone. The cone derives, without further input, that the massless shell is the only level set that is a cone, that the propagation speed is $c$ and is the same in every frame by the multiplicativity of the norm, that a null four-momentum has no rest frame, and that a massless particle moves at $c$ for every momentum. The null four-momentum is moreover a scaled idempotent of the informational sector, so the cone of the material sector is the scaled image of the projector sphere, and the lightlike momentum and a rank-one pure state are one element read in two sectors.
+The four-momentum of a massless particle is $\tilde{P}=i(E/c)e_t+\vec p$, an element of the material sector whose biquaternion norm is $-m^2c^2$; mass is the value of the invariant, and the massless shell is the level set $N=0$, which is the zero-divisor cone. The cone derives, without further input, that the massless shell is the only level set that is a cone, that the propagation speed is $c$ and is the same in every frame by the multiplicativity of the norm, that a null four-momentum has no rest frame, and that a massless particle moves at $c$ for every momentum. The null four-momentum is moreover a scaled idempotent of the informational sector, so the cone of the material sector is the scaled image of the idempotent sphere, and the lightlike momentum and a rank-one pure state are one element read in two sectors.
 
 The cone does not derive masslessness. The mass enters as a single free real scale on the four-velocity, $\tilde{P}=m\tilde{V}$, and the algebra treats every value alike; there is a structural reason, namely that the norm is homogeneous and the cone is scale-invariant, so the algebra contains no preferred scale and cannot manufacture one. The mass term is a term in the dynamics, and the massless and massive cases are the Maxwell and Proca alternatives, equally writable. The cone **marks** the massless case — sharply, uniquely, and non-trivially — and does not **choose** it. The correct statement is a conditional whose antecedent is empirical: if the field is massless, then the cone is its shell and all the derived consequences follow.
 
@@ -222,7 +222,7 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 | $\tilde U\tilde U^{\natural}=e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation; $\langle\cdot\rangle_{\natural}$ invariant, so the cone and $c$ are frame-independent |
 | $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Idempotent of $\mathbb{M}_+$; $\tilde\Pi^2=\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$ |
-| $\tilde{P}=2i\frac{E}{c}\tilde\Pi(-\vec u)$, $\vec u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled projector |
+| $\tilde{P}=2i\frac{E}{c}\tilde\Pi(-\vec u)$, $\vec u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled Hermitian idempotent |
 | $\langle\lambda\tilde{Q}\rangle_{\natural}=\lambda^2\langle\tilde{Q}\rangle_{\natural}$ | Homogeneity; the cone is scale-invariant, so no mass scale is native |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathcal{Z}=\{\tilde{Q}\neq0 : \langle\tilde{Q}\rangle_{\natural}=0\}$ | Zero-divisor set |

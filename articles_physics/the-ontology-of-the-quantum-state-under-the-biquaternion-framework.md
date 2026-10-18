@@ -212,7 +212,7 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar centre |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State, $|\vec r|\leq1$ (Bloch ball) |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure state (idempotent, rank-one projector, zero divisor) |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure state (Hermitian idempotent, rank one, zero divisor) |
 | $\tilde{H} = h_0e_t + i\vec h$ | Observable (general Hermitian element) |
 | $\langle\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow N\geq0$ |

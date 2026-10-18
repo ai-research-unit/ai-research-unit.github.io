@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The **functional determinant** is what a Gaussian functional integral leaves behind. Integrating out a field with quadratic operator $S''$ produces the factor
+The **functional determinant** is what a Gaussian functional integral leaves behind. Integrating out a field with the quadratic operator of the second variation, $S^{(2)}$, produces the factor
 $$
-\big(\det S''\big)^{-1/2},
+\big(\det S^{(2)}\big)^{-1/2},
 $$
 and the one-loop effective action of the previous article is its logarithm,
 $$
-\Gamma_1 = \tfrac12\,\mathrm{Tr}\log S'' .
+\Gamma_1 = \tfrac12\,\mathrm{Tr}\log S^{(2)} .
 $$
 The determinant is a formal infinite product of the operator's eigenvalues, and its meaning depends on a regularization: the product diverges in the continuum, and the physical content lies in its regularized, renormalized value. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to the determinant, and it separates the contributions that are the algebra's from the regularization that is not.
 
@@ -23,18 +23,18 @@ $$
 \det\big(L_{\tilde Q}\big) = \det\big(R_{\tilde Q}\big) = \langle\tilde Q\rangle_{\natural}^2 .
 $$
 This is the framework's algebraic determinant; it is checked below and it is the reason the biquaternion norm, and not an auxiliary object, is the determinant of an algebra element.
-- **Established (algebra): the module determinant is a square.** A biquaternion field's fluctuation operator acts on a two-complex-dimensional fibre per mode, and for a central operator $S''=\kappa e_t$ the determinant on that fibre is the square of the operator's value on a single complex dimension,
+- **Established (algebra): the module determinant is a square.** A biquaternion field's fluctuation operator acts on a two-complex-dimensional fibre per mode, and for a central operator $S^{(2)}=\kappa e_t$ the determinant on that fibre is the square of the operator's value on a single complex dimension,
 $$
-\det\big(S''\big)\Big|_{\text{module}} = \kappa^2 ,
+\det\big(S^{(2)}\big)\Big|_{\text{module}} = \kappa^2 ,
 $$
-the exponent being the module's complex dimension. The determinant on the whole algebra, which is four-complex-dimensional, would be $\kappa^4$; the framework's determinant is defined once the module is chosen, and the module is fixed by the algebra. When $S''$ is not central — the chirality-off-diagonal Dirac mass is the example — the two chiralities mix and the determinant does not factor.
+the exponent being the module's complex dimension. The determinant on the whole algebra, which is four-complex-dimensional, would be $\kappa^4$; the framework's determinant is defined once the module is chosen, and the module is fixed by the algebra. When $S^{(2)}$ is not central — the chirality-off-diagonal Dirac mass is the example — the two chiralities mix and the determinant does not factor.
 - **Standard, and transcribed.** The zeta-function regularization
 $$
-\log\det S'' = -\zeta_{S''}'(0),
+\log\det S^{(2)} = -\zeta_{S^{(2)}}'(0),
 \qquad
-\zeta_{S''}(s) = \sum_n \lambda_n^{-s},
+\zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s},
 $$
-the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\zeta'(0)$, and the proper-time representation. None of these is the algebra's; the algebra supplies the operator on which they act.
+the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$, and the proper-time representation. None of these is the algebra's; the algebra supplies the operator on which they act.
 - **The physical faces.** Two structural consequences are recorded here because later articles use them: the **phase** of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta$ vacuum of *The Theta Vacuum in Biquaternionic Form*, and the **conformal variation** of the determinant is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*.
 
 The article proceeds as follows. A section defines the determinant of a module operator and the fundamental determinant of an algebra element. A section proves the regular-representation identity and verifies it. A section connects the determinant to the Gaussian integral and the one-loop action. A section treats regularization, and a section the fermionic determinant and its phase. A section treats the conformal variation, and a section separates what is established from what is interpretation.
@@ -43,21 +43,21 @@ The article proceeds as follows. A section defines the determinant of a module o
 
 ## The Determinant of a Module Operator
 
-Let $S''$ be a linear operator on the biquaternion module, and suppose for the moment that its spectrum is discrete and its determinant exists. Then
+Let $S^{(2)}$ be a linear operator on the biquaternion module, and suppose for the moment that its spectrum is discrete and its determinant exists. Then
 $$
-\det S'' = \prod_n \lambda_n ,
+\det S^{(2)} = \prod_n \lambda_n ,
 \qquad
-\log\det S'' = \sum_n \log\lambda_n = \mathrm{Tr}\log S'' ,
+\log\det S^{(2)} = \sum_n \log\lambda_n = \mathrm{Tr}\log S^{(2)} ,
 $$
 the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.
 
-**The central case.** If $S''=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde P\tilde P^{\natural}+m^2=\mathcal{M}(\tilde P)$, whose Lorentzian continuation differs from the action's operator $\Box-m^2$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
+**The central case.** If $S^{(2)}=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde P\tilde P^{\natural}+m^2=\mathcal{M}(\tilde P)$, whose Lorentzian continuation differs from the action's operator $\Box-m^2$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
 \det\big(\kappa\,e_t\big)\Big|_{\text{module}} = \kappa^2 .
 $$
 The factor $\kappa^2$ is the module's two complex dimensions; equivalently, the central eigenvalue contributes once per complex dimension. On the algebra itself, regarded as a four-complex-dimensional space, multiplication by $\kappa$ has determinant $\kappa^4$, and the two are related by the change of the space on which the determinant is taken. The framework's determinant is thus defined once the module is chosen, and the module is fixed by the algebra.
 
-**The non-central case.** If $S''$ is not central, it mixes the two chiralities (the minimal left ideals) and the determinant does not factor. The mass term's right-multiplication form is the standard instance: the Dirac operator
+**The non-central case.** If $S^{(2)}$ is not central, it mixes the two chiralities (the minimal left ideals) and the determinant does not factor. The mass term's right-multiplication form is the standard instance: the Dirac operator
 $$
 \mathcal{D} = \tilde\nabla + m ,
 $$
@@ -108,15 +108,15 @@ the determinant taken on the module. The factor $-\tfrac12$ is the inverse squar
 
 **The one-loop action.** Expanding about a classical field as in the previous article,
 $$
-S[\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi] = S[\tilde\Phi_{\mathrm{cl}}]+\tfrac12\big\langle\delta\tilde\Phi,S''[\tilde\Phi_{\mathrm{cl}}]\delta\tilde\Phi\big\rangle+\cdots ,
+S[\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi] = S[\tilde\Phi_{\mathrm{cl}}]+\tfrac12\big\langle\delta\tilde\Phi,S^{(2)}[\tilde\Phi_{\mathrm{cl}}]\delta\tilde\Phi\big\rangle+\cdots ,
 $$
 the Gaussian integration of $\delta\tilde\Phi$ gives the one-loop effective action
 $$
-\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S''[\tilde\Phi_{\mathrm{cl}}] ,
+\Gamma_1[\tilde\Phi_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\tilde\Phi_{\mathrm{cl}}] ,
 $$
 where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
 
-**The free case.** For the free biquaternion scalar, $S''=K_{\mathrm{kin}}$ is central and mode-diagonal, and
+**The free case.** For the free biquaternion scalar, $S^{(2)}=K_{\mathrm{kin}}$ is central and mode-diagonal, and
 $$
 \Gamma_1 = \frac12\sum_{\text{modes}}\log\big(\tilde P\tilde P^{\natural}+m^2\big)^2
 = \sum_{\text{modes}}\log\big(k_E^2+m^2\big)
@@ -134,7 +134,7 @@ $$
 $$
 in the Euclidean continuation, the square being the module's two complex dimensions and the overall sign of the continuation cancelling in it. The product diverges, and only **ratios** of determinants of operators of the same type are scheme-independent. The ratio
 $$
-\frac{\det S''_1}{\det S''_2} = \frac{\prod_n \lambda_n^{(1)}}{\prod_n \lambda_n^{(2)}}
+\frac{\det S^{(2)}_1}{\det S^{(2)}_2} = \frac{\prod_n \lambda_n^{(1)}}{\prod_n \lambda_n^{(2)}}
 $$
 is the Ray–Singer torsion of the pair when the operators are Laplacians on a manifold, and it is the finite, physical content of the determinant. In the framework the ratio is taken on a fixed module, and the algebra's contribution is the module's dimension, which fixes the size of each factor.
 
@@ -142,29 +142,29 @@ is the Ray–Singer torsion of the pair when the operators are Laplacians on a m
 
 The determinant's variation is the trace of the propagator against the variation of the operator,
 $$
-\frac{\delta}{\delta\chi}\log\det S''[\chi] = \mathrm{Tr}\left( \big(S''[\chi]\big)^{-1}\,\frac{\delta S''[\chi]}{\delta\chi}\right),
+\frac{\delta}{\delta\chi}\log\det S^{(2)}[\chi] = \mathrm{Tr}\left( \big(S^{(2)}[\chi]\big)^{-1}\,\frac{\delta S^{(2)}[\chi]}{\delta\chi}\right),
 $$
-where $\chi$ is a background field and $(S'')^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S''/\delta\chi$. In the biquaternion framework the inverse is the propagator of *The Feynman Propagator in Biquaternionic Form*, taken on the module, and the trace is the trace pairing. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.
+where $\chi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S^{(2)}/\delta\chi$. In the biquaternion framework the inverse is the propagator of *The Feynman Propagator in Biquaternionic Form*, taken on the module, and the trace is the trace pairing. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.
 
 ## Regularization
 
 The determinant is a divergent product, and its regularized value is defined through the zeta function of the operator.
 
-**Zeta-function regularization.** For an operator $S''$ with discrete spectrum $\{\lambda_n\}$,
+**Zeta-function regularization.** For an operator $S^{(2)}$ with discrete spectrum $\{\lambda_n\}$,
 $$
-\zeta_{S''}(s) = \sum_n \lambda_n^{-s} = \mathrm{Tr}\big(S''\big)^{-s},
+\zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s} = \mathrm{Tr}\big(S^{(2)}\big)^{-s},
 \qquad
-\log\det S'' = -\zeta_{S''}'(0),
+\log\det S^{(2)} = -\zeta_{S^{(2)}}'(0),
 $$
-the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\lambda$ the definition gives $\zeta(s)=\lambda^{-s}$ and $-\zeta'(0)=\log\lambda$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.
+the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\lambda$ the definition gives $\zeta(s)=\lambda^{-s}$ and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\lambda$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.
 
 **Heat-kernel evaluation.** The zeta function is evaluated from the heat kernel of the previous article,
 $$
-\zeta_{S''}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dt\;t^{s-1}\,K(t),
+\zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dt\;t^{s-1}\,K(t),
 \qquad
-K(t) = \mathrm{Tr}\,\exp(-tS''),
+K(t) = \mathrm{Tr}\,\exp(-tS^{(2)}),
 $$
-and the small-$t$ expansion $K(t)\sim(4\pi t)^{-d/2}\sum_n a_n t^n$ gives $\zeta(0)$ and $\zeta'(0)$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S''$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that the trace anomaly of article 11 uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
+and the small-$t$ expansion $K(t)\sim(4\pi t)^{-d/2}\sum_n a_n t^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that the trace anomaly of article 11 uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
 
 **A remark on scheme dependence.** Different regularizations (zeta function, proper time with a cutoff, dimensional regularization) differ by local counterterms, and the *ratios* of determinants of operators of the same type are scheme-independent. In the framework, a scheme-independent statement is one that compares two determinants taken on the same module; this is the same caveat that attends any statement about the biquaternion norm's normalization.
 
@@ -204,7 +204,7 @@ The determinant responds to a Weyl rescaling of the background, and its response
 
 Under a local rescaling of the metric, $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$, the quadratic operator and hence the determinant change. For a classically conformally invariant theory the classical action is invariant, but the regularized determinant is not:
 $$
-\delta_\sigma\log\det S'' \ne 0 ,
+\delta_\sigma\log\det S^{(2)} \ne 0 ,
 \qquad
 \big\langle T^\mu_{\ \mu}\big\rangle = -\frac{1}{\sqrt{g}}\,g_{\mu\nu}\frac{\delta\,\Gamma_1}{\delta g_{\mu\nu}} ,
 $$
@@ -218,7 +218,7 @@ the trace of the energy-momentum tensor being the conformal variation of the one
 - A central operator's determinant on the two-complex-dimensional module is the square of its single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$; a non-central operator's determinant does not factor.
 
 **Standard, and transcribed.**
-- Zeta-function regularization and $-\zeta'(0)=\log\det$; the heat-kernel and Seeley–DeWitt evaluation; the Grassmann determinant; the eta invariant and its relation to the phase; the conformal variation of $\Gamma_1$ and the trace anomaly.
+- Zeta-function regularization and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\det$; the heat-kernel and Seeley–DeWitt evaluation; the Grassmann determinant; the eta invariant and its relation to the phase; the conformal variation of $\Gamma_1$ and the trace anomaly.
 
 **Interpretation.**
 - Reading the biquaternion norm as the determinant, so that zero divisors are exactly the singular elements, is the algebra's own statement. Reading the fermion determinant's phase as the analytic home of the $\theta$ vacuum is the standard Atiyah–Patodi–Singer picture applied to the framework's module.
@@ -239,7 +239,7 @@ $$
 $$
 Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$, $\det\mathsf{M}_2(\tilde Q)=-0.180000-0.060000i$ and $\det L_{\tilde Q}=\det R_{\tilde Q}=0.0288000+0.0216000i=(\det\mathsf{M}_2(\tilde Q))^2$, with $\mathsf{M}_2(\tilde Q)$'s eigenvalues multiplying correctly.
 
-For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S''$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\zeta'(0)$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (article 11) and the phase's topology is the $\theta$ vacuum (article 12). None of the regularization is the algebra's; the operator on which it acts is.
+For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (article 11) and the phase's topology is the $\theta$ vacuum (article 12). None of the regularization is the algebra's; the operator on which it acts is.
 
 ## Summary of Notation
 
@@ -251,13 +251,13 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$ | Determinant of an algebra element |
 | $L_{\tilde Q},R_{\tilde Q}$ | Left and right multiplication on the algebra |
 | $\det L_{\tilde Q}=\det R_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^2$ | Regular-representation determinant |
-| $S''[\tilde\Phi_{\mathrm{cl}}]$ | Fluctuation operator on the module |
+| $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ | Fluctuation operator on the module |
 | $\delta\tilde\Phi$ | Fluctuation about the classical field, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi$ |
-| $\det S''$, $\mathrm{Tr}\log S''$ | Functional determinant; one-loop action |
+| $\det S^{(2)}$, $\mathrm{Tr}\log S^{(2)}$ | Functional determinant; one-loop action |
 | $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
 | $(\detK_{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
-| $\zeta_{S''}(s)=\mathrm{Tr}(S'')^{-s}$, $\log\det S''=-\zeta'(0)$ | Zeta-function regularization |
-| $K(t)=\mathrm{Tr}\,\exp(-tS'')$, $K\sim(4\pi t)^{-d/2}\sum a_n t^n$ | Heat kernel; Seeley–DeWitt coefficients |
+| $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
+| $K(t)=\mathrm{Tr}\,\exp(-tS^{(2)})$, $K\sim(4\pi t)^{-d/2}\sum a_n t^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
 | $\mathcal{D}=i\partial\!\!\!/-m$ | Fermionic fluctuation operator |
 | $\det\mathcal{D}=|\det\mathcal{D}|\exp(i\phi_{\mathcal{D}})$ | Complex (chiral) fermion determinant |
@@ -266,7 +266,7 @@ For a central fluctuation operator the module determinant is the square of the s
 ## Further Reading
 
 - J. S. Schwinger, "On gauge invariance and vacuum polarization," *Physical Review* **82** (1951) 664–679, for the proper-time representation of the one-loop determinant.
-- S. W. Hawking, "Zeta function regularization of path integrals in curved spacetime," *Communications in Mathematical Physics* **55** (1977) 133–148, for zeta-function regularization and $-\zeta'(0)$.
+- S. W. Hawking, "Zeta function regularization of path integrals in curved spacetime," *Communications in Mathematical Physics* **55** (1977) 133–148, for zeta-function regularization and $-\left.\frac{d\zeta}{ds}\right|_{s=0}$.
 - J. S. Dowker and R. Critchley, "Effective Lagrangian and energy-momentum tensor in de Sitter space," *Physical Review D* **13** (1976) 3224–3232, for the zeta-function and point-splitting evaluation of the determinant.
 - B. S. DeWitt, *Dynamical Theory of Groups and Fields* (Gordon and Breach, 1965), for the heat kernel and the Seeley–DeWitt coefficients.
 - P. B. Gilkey, *Invariance Theory, the Heat Equation, and the Atiyah–Singer Index Theorem* (Publish or Perish, 1984), for the heat-kernel coefficients and the index theorem.

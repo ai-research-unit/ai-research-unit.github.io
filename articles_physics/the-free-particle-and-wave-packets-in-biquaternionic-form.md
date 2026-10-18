@@ -369,7 +369,7 @@ $$
 \tilde U\tilde U^{*} = e_t .
 $$
 
-It is not a unit-norm element of the Lorentz group: for a central element $\lambda e_t$ the condition $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $\exp(-iE t/\hbar)$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_t$ for the unitary group and $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\psi^\dagger\psi)$ and preserves the sector assignment of a field that begins in $\mathbb{M}_+$.
+It is not a unit-norm element of the Lorentz group: the Lorentz rotor $\tilde U_{\mathrm L}$ satisfies $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$, and for a central element $\lambda e_t$ this condition reads $\lambda^2 = 1$, so $\lambda = \pm1$, whereas $\exp(-iE t/\hbar)$ has unit modulus but is not $\pm1$ at generic times. The two notions of unit — $\tilde U\tilde U^{*} = e_t$ for the unitary group and $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ for the rotor group — must be kept apart, and the free evolution belongs to the first, exactly as the path-integral phase does. In particular, the free evolution operator preserves the trace form $\mathrm{Tr}(\psi^\dagger\psi)$ and preserves the sector assignment of a field that begins in $\mathbb{M}_+$.
 
 ## The Module Factor and the Meaning of a Spin-0 Field
 

@@ -108,18 +108,18 @@ The reduced state is not pure: it is a mixed state, and it carries the maximum p
 
 ### Step 1: The joint state
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and the singlet state corresponds to the idempotent
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $\tilde\Pi(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and the singlet state corresponds to the idempotent
 
 $$
-P_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
+\tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$
 
 ### Step 2: The reduced state
 
-The state of particle 1 alone is the **partial trace** of $P_{\mathrm{singlet}}$ over the second factor:
+The state of particle 1 alone is the **partial trace** of $\tilde\Pi_{\mathrm{singlet}}$ over the second factor:
 
 $$
-\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}).
+\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}).
 $$
 
 The partial trace on $\mathbb{B}\otimes\mathbb{B}$ is defined on the elementary tensor products by
@@ -205,13 +205,13 @@ $$
 In biquaternion form, the joint state is
 
 $$
-P_{\mathrm{prod}} = \tilde\Pi_1 \otimes \tilde\Pi_1,
+\tilde\Pi_{\mathrm{prod}} = \tilde\Pi_1 \otimes \tilde\Pi_1,
 $$
 
 with $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$. Computing the partial trace,
 
 $$
-\rho_1^{\mathrm{prod}} = \mathrm{Tr}_2(P_{\mathrm{prod}}) = \tilde\Pi_1 \cdot \mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
+\rho_1^{\mathrm{prod}} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{prod}}) = \tilde\Pi_1 \cdot \mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
 $$
 
 using $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = 1$ for an idempotent of trace one.
@@ -237,7 +237,7 @@ The contrast is the operational signature of entanglement: **product states have
 
 **2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{M}_+$ and mixed states as general positive trace-one elements. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.
 
-**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $P_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_k\otimes \vec e_k$ with $k \neq 0$, and none of the form $\vec e_k\otimes e_t$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_k\otimes e_t$ are present, and they carry the pure reduced state.
+**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_k\otimes \vec e_k$ with $k \neq 0$, and none of the form $\vec e_k\otimes e_t$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_k\otimes e_t$ are present, and they carry the pure reduced state.
 
 **4. The purity and entropy are natural functions on $\mathbb{M}_+$.** Both the purity $\mathrm{Tr}(\rho_1^2)$ and the entropy $-\mathrm{Tr}(\rho_1\log\rho_1)$ are expressed in terms of the trace on $\mathbb{B}$. The reduced state's mixedness is measured by these functions, and for the singlet the reduced state is maximally mixed.
 
@@ -277,9 +277,9 @@ The comparison with a product state — where the reduced state is pure — illu
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $|\Psi^-\rangle$ | Singlet state |
-| $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
-| $\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}})$ | Reduced state of particle 1 |
+| $\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}})$ | Reduced state of particle 1 |
 | $\frac{1}{2}e_t$ | Maximally mixed state of a qubit |
 | $\mathrm{Tr}(\rho_1^2)$ | Purity of the reduced state |
 | $S(\rho_1) = -\mathrm{Tr}(\rho_1\log\rho_1)$ | von Neumann entropy |

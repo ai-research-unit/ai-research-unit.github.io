@@ -20,7 +20,7 @@ Subspace $\mathbb{M}_+$ as the Informational Sector*.
 The answer is the mirror of the material one. The scalar part
 
 $$
-\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q) = p_0q_t + \vec p'\!\cdot\!\vec q'
+\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q) = p_tq_t + \vec p'\!\cdot\!\vec q'
 $$
 
 is **positive definite** on the sector, of signature $(4,0)$: in the informational coordinates it is the
@@ -75,9 +75,9 @@ Two forms carry the geometry of the sector, and they are the restrictions of the
 row:
 
 $$
-\langle\tilde P,\tilde Q\rangle=p_0q_t+\vec p'\!\cdot\!\vec q' \quad\text{of signature }(4,0),
+\langle\tilde P,\tilde Q\rangle=p_tq_t+\vec p'\!\cdot\!\vec q' \quad\text{of signature }(4,0),
 \qquad
-\langle\tilde P,\tilde Q\rangle_{\natural}=p_0q_t-\vec p'\!\cdot\!\vec q' \quad\text{of signature }(1,3).
+\langle\tilde P,\tilde Q\rangle_{\natural}=p_tq_t-\vec p'\!\cdot\!\vec q' \quad\text{of signature }(1,3).
 $$
 
 The first is the **sector sign** of this article, the scalar part of the general plain bilinear product, definite and
@@ -174,7 +174,7 @@ The composite of two informational operations need not be informational, but the
 and the square of a **material** element lands here too:
 
 $$
-\tilde Q^{2} = \bigl(q_t^{2}+\lvert\vec q'\rvert^{2}\bigr)e_t + 2iq_0\vec q' \in \mathbb{M}_+
+\tilde Q^{2} = \bigl(q_t^{2}+\lvert\vec q'\rvert^{2}\bigr)e_t + 2iq_t\vec q' \in \mathbb{M}_+
 \quad\text{for every } \tilde Q\in\mathbb{M}_+,
 \qquad
 \tilde Q^{2}\in\mathbb{M}_+ \quad\text{for every } \tilde Q\in\mathbb{M}_-.
@@ -415,7 +415,7 @@ the Sector Exchange as Relational Time*), and the product is the one operation t
 The informational sector $\mathbb{M}_+$ carries the Hermitian elements, an element being
 $\tilde Q=(ct')e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$ whose
 full theory on the whole algebra is *The Products, Their Forms and Their Norms*. Its scalar part
-$\langle\tilde P,\tilde Q\rangle=p_0q_t+\vec p'\!\cdot\!\vec q'$, the Euclidean inner product of the informational coordinates, is
+$\langle\tilde P,\tilde Q\rangle=p_tq_t+\vec p'\!\cdot\!\vec q'$, the Euclidean inner product of the informational coordinates, is
 positive definite on $\mathbb{M}_+$ with signature $(4,0)$ and negative definite on $\mathbb{M}_-$ with
 signature $(0,4)$: opposite definite signs on the two sectors, so $\langle\cdot,\cdot\rangle$ carries the **sector sign**. Being
 definite, $\langle\cdot,\cdot\rangle$ has no cone and cannot be the metric; the metric is the interval, the general quaternionic
@@ -444,7 +444,7 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\tilde Q=q_te_t+i\vec q'=(ct')e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | An informational element; real time, imaginary space |
 | $\tilde P\tilde Q$ | General plain bilinear product ($\mathrm{GPA}$); associative, unital, non-commutative |
-| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=p_0q_t+\vec p'\!\cdot\!\vec q'$ | Sector sign; $+\mathrm{I}_4$ on $\mathbb{M}_+$, $-\mathrm{I}_4$ on $\mathbb{M}_-$ |
+| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=p_tq_t+\vec p'\!\cdot\!\vec q'$ | Sector sign; $+\mathrm{I}_4$ on $\mathbb{M}_+$, $-\mathrm{I}_4$ on $\mathbb{M}_-$ |
 | $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | Interval; $(1,3)$ on $\mathbb{M}_+$, $(3,1)$ on $\mathbb{M}_-$ |
 | $\langle\tilde Q,\tilde Q\rangle-\langle\tilde Q,\tilde Q\rangle_{\natural}=2\,\vec Q\!\cdot\!\vec Q$ | The two forms differ by twice the coefficient square |
 | $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |

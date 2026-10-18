@@ -323,7 +323,7 @@ $$
 = \Gamma\,\frac{r_\perp(t)^2}{r(t)}\,\mathrm{artanh}\,r(t) \;\ge\; 0 ,
 $$
 
-using $h'(r) = -\mathrm{artanh}\,r$ and $\left(dr/dt\right)(t) = -\Gamma r_\perp(t)^2/r(t)$. The rate is supported by the instantaneous transverse component, since it is $r_\perp(t)$ that carries the contraction; the initial component alone would overstate the rate at every $t > 0$.
+using $\frac{dh}{dr}(r) = -\mathrm{artanh}\,r$ and $\left(dr/dt\right)(t) = -\Gamma r_\perp(t)^2/r(t)$. The rate is supported by the instantaneous transverse component, since it is $r_\perp(t)$ that carries the contraction; the initial component alone would overstate the rate at every $t > 0$.
 
 The distinction matters as soon as the state has an axial part. Take $\vec r = (0.3, 0.4, 0.5)$ with $\vec u = \vec e_z$ and $\Gamma = 0.7$, so that $r_\parallel = 0.5$ and $r_\perp(0) = 0.5$: at $t = 1$ the finite-difference derivative is $0.0487233141$ and $\Gamma r_\perp(t)^2\,\mathrm{artanh}\,r(t)/r(t) = 0.0487233141$, whereas the same expression with $r_\perp(0)$ in place of $r_\perp(t)$ gives $0.1975827817$. On the state of the earlier checks, $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ with $\vec u = \vec e_z$, the axial part vanishes, $r_\perp(t) = r(t)$, and at $t = 0$ the rate is $\Gamma\,r\,\mathrm{artanh}\,r = 0.4362576681$; that case cannot separate the two interpretations, which is why the state with $r_\parallel \neq 0$ is the decisive check.
 
@@ -371,7 +371,7 @@ $$
 \mathcal{S}(\tilde{Ϛ}) \le H(w) ,
 $$
 
-with equality exactly for the spectral ensemble, whose states are the two eigenprojectors $\tilde\Pi_{1,2}(\vec u_r)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the **minimum over preparations** — the least coarse description the state admits. A partition of the pure-state sphere into cells is one preparation among many; merging cells lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the *same* state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.
+with equality exactly for the spectral ensemble, whose states are the two idempotents $\tilde\Pi_{1,2}(\vec u_r)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the **minimum over preparations** — the least coarse description the state admits. A partition of the pure-state sphere into cells is one preparation among many; merging cells lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the *same* state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.
 
 The identity is verified on the three-point ensemble
 
@@ -426,7 +426,7 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State of the informational sector, Bloch vector $\vec r$ |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, rank-one projector) |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, rank one) |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ | Eigenvalues (pointer probabilities) of the state |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_t)=2$ | Trace |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |

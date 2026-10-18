@@ -137,7 +137,7 @@ The general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^
 | $\natural$, $*$, $\overline{\cdot}$ | the natural, the star and the coefficientwise conjugations, all fixing $e_t$ |
 | $\langle\tilde Q\rangle_{\natural}$ | the norm, $\langle\tilde Q\rangle_{\natural}e_t=\tilde Q\tilde Q^{\natural}$, vanishing on the zero-divisor cone |
 | pure, isotropic | vanishing scalar part; vanishing complex bilinear form on the vector part |
-| $\tilde\Pi$ | a plain idempotent, that is a projector index of $\star$ |
+| $\tilde\Pi$ | a plain idempotent; its left multiplication is a projector |
 | $\mathbb{B}$ | the complex space $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 
 ## Further Reading

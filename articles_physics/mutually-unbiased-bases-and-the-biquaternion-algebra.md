@@ -25,10 +25,10 @@ This article develops the idempotent bases of the algebra, derives the unbiasedn
 
 ### Rank-one idempotents
 
-A **rank-one idempotent** is an element $\tilde{P}\in\mathbb{M}_+$ with
+A **rank-one idempotent** is an element $\tilde\Pi\in\mathbb{M}_+$ with
 
 $$
-\tilde{P}^2 = \tilde{P}, \qquad \mathrm{Tr}(\tilde{P}) = 1, \qquad \tilde{P}\geq0 .
+\tilde\Pi^2 = \tilde\Pi, \qquad \mathrm{Tr}(\tilde\Pi) = 1, \qquad \tilde\Pi\geq0 .
 $$
 
 Up to a phase it is $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$ for a unit vector $\vec u\in\mathbb{R}^3$, and its orthogonal complement is $\tilde\Pi_2(\vec u) = \tfrac12(e_t-i\vec u)$. The pair satisfies
@@ -186,7 +186,7 @@ The bound is attained at the eigenstates of one of the two bases: for the eigens
 
 ### The frame identity
 
-Summing the projectors of a complete set of bases gives a resolution of the identity that underlies the reconstruction formula below. Each basis resolves the identity on its own, $\sum_{s}\tilde\Pi_s(\vec u_k) = e_t$, so summing over the three bases gives
+Summing the idempotents of a complete set of bases gives a resolution of the identity that underlies the reconstruction formula below. Each basis resolves the identity on its own, $\sum_{s}\tilde\Pi_s(\vec u_k) = e_t$, so summing over the three bases gives
 
 $$
 \sum_{k=1}^{3}\sum_{s=\pm}\tilde\Pi_s(\vec u_k) = 3\,e_t ,
@@ -194,7 +194,7 @@ $$
 \sum_{k=1}^{3}\sum_{s=\pm}\frac{1}{3}\tilde\Pi_s(\vec u_k) = e_t ,
 $$
 
-and in general a complete set of $d+1$ mutually unbiased bases satisfies $\sum_{b=1}^{d+1}\sum_{i=1}^{d}\tilde\Pi_i^{(b)} = (d+1)e_t$, with uniform weight $1/(d+1)$. The identity was verified by explicit computation for the qubit. It is the operator statement that the six coordinate projectors form a tight frame; the weight $1/(d+1)$ is not the same as the overlap $1/d$, and the difference between the two numbers is the reason the reconstruction formula below is an affine rather than a linear combination of the outcome probabilities.
+and in general a complete set of $d+1$ mutually unbiased bases satisfies $\sum_{b=1}^{d+1}\sum_{i=1}^{d}\tilde\Pi_i^{(b)} = (d+1)e_t$, with uniform weight $1/(d+1)$. The identity was verified by explicit computation for the qubit. It is the operator statement that the six coordinate idempotents form a tight frame; the weight $1/(d+1)$ is not the same as the overlap $1/d$, and the difference between the two numbers is the reason the reconstruction formula below is an affine rather than a linear combination of the outcome probabilities.
 
 ## The Two-Qubit Case
 
@@ -214,10 +214,10 @@ and these are mutually unbiased: their overlaps are products of the single-qubit
 
 ### The Bell basis is not unbiased with respect to the product basis
 
-The Bell idempotents $P_\epsilon$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra. Their overlap with the product (computational) idempotents is
+The Bell idempotents $\tilde\Pi_\epsilon$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra. Their overlap with the product (computational) idempotents is
 
 $$
-\mathrm{Tr}\bigl(P_\epsilon\,P_{\mathrm{prod}}\bigr) = \tfrac{1}{2},
+\mathrm{Tr}\bigl(\tilde\Pi_\epsilon\,\tilde\Pi_{\mathrm{prod}}\bigr) = \tfrac{1}{2},
 $$
 
 not $\tfrac14$. For example $|\langle\Phi^+|\psi\rangle\otimes|\psi\rangle|^2 = \tfrac12$ for any product state. Hence **the Bell basis is not mutually unbiased with respect to the product basis**, and the two cannot belong to one complete set of MUBs. This is an instructive negative statement: the idempotent basis that the algebra singles out as maximally entangled is also the basis that is maximally *biased* with respect to the product bases. The two natural structures of $\mathbb{B}\otimes\mathbb{B}$ — maximal entanglement and mutual unbiasedness — do not coincide, and the framework exhibits both without identifying them.
@@ -277,14 +277,14 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 | $i$ | Central scalar imaginary |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents along $\vec u$ |
 | $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$, $\sum_i\tilde\Pi_i = e_t$ | Idempotent basis |
-| $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$ | Trace pairing (overlap) |
+| $\mathrm{Tr}(\tilde\Pi\tilde\Pi') = 2\,\mathrm{Sc}(\tilde\Pi\tilde\Pi')$ | Trace pairing (overlap) |
 | $\mathrm{Tr}(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b')}) = 1/d$ for $b\neq b'$ | Mutual unbiasedness |
 | $\mathcal{B}_k = \{\tilde\Pi_{1,2}(\vec u_k)\}$ | The three coordinate bases |
 | $\vec U_x=i\vec e_x,\ \vec U_y=i\vec e_y,\ \vec U_z=i\vec e_z$ | Hermitian involutions defining the bases |
 | $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s'}(\vec u_k)) = \tfrac12$ ($j\neq k$) | Unbiasedness of the coordinate bases |
 | $\tilde{Ϛ} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ | Reconstruction from a complete MUB set |
-| $P_\epsilon$ | Bell idempotents (maximally entangled basis) |
-| $\mathrm{Tr}(P_\epsilon P_{\mathrm{prod}}) = \tfrac12$ | Bell basis is biased relative to the product basis |
+| $\tilde\Pi_\epsilon$ | Bell idempotents (maximally entangled basis) |
+| $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\mathrm{prod}}) = \tfrac12$ | Bell basis is biased relative to the product basis |
 
 ## Further Reading
 

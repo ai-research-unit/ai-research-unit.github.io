@@ -10,7 +10,7 @@ $$
 
 with no internal index, no axis, and no orientation. Every other field carries structure that a Lorentz transformation can act on: the four-vector carries its spacetime index, the Dirac field carries its spinor index, and the field strength carries two. The scalar carries none, and that is what "spin $0$" means.
 
-The biquaternion framework describes quantum states in a specific algebraic object. In the companion article *The Schrödinger Equation in Biquaternionic Form* the state space is a **minimal left ideal** $\mathbb{B}\tilde{P}\cong\mathbb{C}^2$, the **state module**; the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* shows that this same module carries the defining two-dimensional representation of the Lorentz group, and that its elements are the spinors. This is where spin-$\tfrac{1}{2}$ lives, and where the biquaternion Dirac field is built. The question this article asks is then immediate and unavoidable: **the framework's quantum states are spinor-like by construction, so where does a spin-$0$ field go, and why does it not go there?**
+The biquaternion framework describes quantum states in a specific algebraic object. In the companion article *The Schrödinger Equation in Biquaternionic Form* the state space is a **minimal left ideal** $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, the **state module**; the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* shows that this same module carries the defining two-dimensional representation of the Lorentz group, and that its elements are the spinors. This is where spin-$\tfrac{1}{2}$ lives, and where the biquaternion Dirac field is built. The question this article asks is then immediate and unavoidable: **the framework's quantum states are spinor-like by construction, so where does a spin-$0$ field go, and why does it not go there?**
 
 The answer worked out below is that a scalar field lives in the **centre** of the algebra, $\mathbb{C}_{\mathbb{B}}=\{Q_t e_t\}$, and that it *escapes* the state module for three reasons that turn out to be the same reason seen three ways. The state module is the defining module of $M_2(\mathbb{C})$, and a simple matrix algebra has only one kind of module: every nonzero finite-dimensional $\mathbb{B}$-module is a direct sum of copies of $\mathbb{C}^2$. There is no one-dimensional module for the trivial representation to occupy. The centre, by contrast, is not a module at all: it is a subalgebra, and under the rotation subgroup of the Lorentz group it is exactly the rotationally invariant subspace of $\mathbb{B}$. Spin $0$ is the representation that the algebra carries in its centre, not in any module. The state module is the wrong *kind* of object to hold it.
 
@@ -37,7 +37,7 @@ $$
 \mathsf{M}_2(e_t)=I_2,\qquad \mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu,\qquad \mathsf{M}_2(i)=iI_2,
 $$
 
-with $\sigma_\mu$ the Pauli matrices. A **primitive idempotent** is an element $\tilde{P}$ with $\tilde{P}^2=\tilde{P}$ that cannot be written as a sum of two nonzero orthogonal idempotents. The idempotents of the form
+with $\sigma_\mu$ the Pauli matrices. A **primitive idempotent** is an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$ that cannot be written as a sum of two nonzero orthogonal idempotents. The idempotents of the form
 
 $$
 \tilde\Pi(\vec u)=\tfrac{1}{2}\left(e_t+i\vec u\right),
@@ -51,15 +51,15 @@ $$
 \mathbb{B}\tilde\Pi(\vec u)=\{\tilde{Q}\tilde\Pi(\vec u) : \tilde{Q}\in\mathbb{B}\}\cong\mathbb{C}^2
 $$
 
-is the **state module** of the framework. Its elements are the spinors $\psi$, characterized by $\psi\tilde{P}=\psi$.
+is the **state module** of the framework. Its elements are the spinors $\psi$, characterized by $\psi\tilde\Pi=\psi$.
 
 Two features of this object are fixed by the definitions and used constantly. First, in the matrix picture it is the space of matrices whose only nonzero column is the first, that is, the column spinors $\mathbb{C}^2$; the idempotent $\tilde\Pi(\vec e_z)$ is the diagonal matrix unit $E_{11}=\mathrm{diag}(1,0)$ under the isomorphism above. Second, the algebra acts on it by **left multiplication**, $\psi\mapsto\tilde{Q}\psi$, and this action is complex-linear because the scalar imaginary $i$ is central. The state module is therefore a genuine two-dimensional complex module over $\mathbb{B}$, and
 
 $$
-\mathbb{B}\cong\mathbb{B}\tilde{P}\oplus\mathbb{B}\tilde{Q}=S\oplus S
+\mathbb{B}\cong\mathbb{B}\tilde\Pi\oplus\mathbb{B}\tilde\Pi_{\mathrm{c}}=S\oplus S
 $$
 
-as a left module, where $\tilde{Q}=e_t-\tilde{P}$ is the complementary orthogonal idempotent.
+as a left module, where $\tilde\Pi_{\mathrm{c}}=e_t-\tilde\Pi$ is the complementary orthogonal idempotent.
 
 ### The Module Is the Defining Representation
 
@@ -106,7 +106,7 @@ $$
 =\tilde\Pi(\vec u'),
 $$
 
-where $\vec u'=\tilde{u}\vec u\tilde{u}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\vec u$ leave $\tilde{P}$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $\mathrm{U}(1)$ subgroup of rotations about $\vec u$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(\vec e_z)=\tfrac{1}{2}(e_t+i\vec e_z)$ to $\tilde\Pi(\vec u')$ with $\vec u'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $\vec e_z$ fixes $\tilde\Pi(\vec e_z)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
+where $\vec u'=\tilde{u}\vec u\tilde{u}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\vec u$ leave $\tilde\Pi$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $\mathrm{U}(1)$ subgroup of rotations about $\vec u$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(\vec e_z)=\tfrac{1}{2}(e_t+i\vec e_z)$ to $\tilde\Pi(\vec u')$ with $\vec u'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $\vec e_z$ fixes $\tilde\Pi(\vec e_z)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
 
 A scalar field is exactly the opposite. It has no axis, and no rotation may move it. The remainder of the article makes that requirement precise inside the algebra and identifies the unique subspace that satisfies it.
 
@@ -161,9 +161,9 @@ $$
 (Q_te_t)\tilde{Q}=Q_t\tilde{Q},
 $$
 
-which lies in the centre only if $\tilde{Q}$ does. Taking $\tilde{Q}$ with a nonzero vector part produces a nonzero vector part in the product, so the centre is not closed under left multiplication by the algebra. In particular the centre contains no nonzero $\mathbb{B}$-submodule: the only $\mathbb{B}$-module it could be is trivial, and $M_2(\mathbb{C})$ has no one-dimensional module with a nonzero action. The centre meets the state module trivially as well: a central element $\lambda e_t$ lies in $\mathbb{B}\tilde{P}$ only if its second column vanishes, which forces $\lambda=0$. This was confirmed in the matrix representation.
+which lies in the centre only if $\tilde{Q}$ does. Taking $\tilde{Q}$ with a nonzero vector part produces a nonzero vector part in the product, so the centre is not closed under left multiplication by the algebra. In particular the centre contains no nonzero $\mathbb{B}$-submodule: the only $\mathbb{B}$-module it could be is trivial, and $M_2(\mathbb{C})$ has no one-dimensional module with a nonzero action. The centre meets the state module trivially as well: a central element $\lambda e_t$ lies in $\mathbb{B}\tilde\Pi$ only if its second column vanishes, which forces $\lambda=0$. This was confirmed in the matrix representation.
 
-The distinction has a second, more elementary face. Every nonzero element of the state module is a **zero divisor**. A spinor satisfies $\psi\tilde{P}=\psi$, hence $\psi(e_t-\tilde{P})=0$ with $e_t-\tilde{P}\neq0$; in the matrix picture its determinant vanishes. A central element $\lambda e_t$, by contrast, has determinant $\lambda^2$ and is invertible whenever $\lambda\neq0$. The scalar line is the algebra's line of invertible complex numbers; the module is its space of non-invertible spinors. They cannot be the same space, and they do not overlap except at zero.
+The distinction has a second, more elementary face. Every nonzero element of the state module is a **zero divisor**. A spinor satisfies $\psi\tilde\Pi=\psi$, hence $\psi(e_t-\tilde\Pi)=0$ with $e_t-\tilde\Pi\neq0$; in the matrix picture its determinant vanishes. A central element $\lambda e_t$, by contrast, has determinant $\lambda^2$ and is invertible whenever $\lambda\neq0$. The scalar line is the algebra's line of invertible complex numbers; the module is its space of non-invertible spinors. They cannot be the same space, and they do not overlap except at zero.
 
 ## Three Obstructions, One Reason
 
@@ -361,7 +361,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of $\bar{\cdot}$ |
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Primitive Hermitian idempotent, $\vec u$ a unit pure real quaternion |
-| $\mathbb{B}\tilde{P}\cong\mathbb{C}^2$ | State module (minimal left ideal) |
+| $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module (minimal left ideal) |
 | $\psi$ | Spinor, an element of the state module |
 | $J_\mu=\tfrac{i}{2}\vec e_\mu$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_t$ on the module |
 | $SL(2,\mathbb{C})=\{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_t\}$ | Unit-norm biquaternions; Lorentz group |

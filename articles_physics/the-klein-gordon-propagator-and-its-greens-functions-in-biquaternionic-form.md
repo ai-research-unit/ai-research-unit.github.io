@@ -210,7 +210,7 @@ This is the standard integral representation $J_0(z)=\frac{2}{\pi}\int_0^\infty\
 
 ### The closed form, its massless limit, and its support
 
-Differentiating the Bessel integral with respect to $r$ and using $J_0'(z)=-J_1(z)$ gives
+Differentiating the Bessel integral with respect to $r$ and using $\frac{dJ_0}{dz}(z)=-J_1(z)$ gives
 
 $$
 \frac{d}{dr}J_0\!\left(\mu\sqrt{t^2-r^2}\right)

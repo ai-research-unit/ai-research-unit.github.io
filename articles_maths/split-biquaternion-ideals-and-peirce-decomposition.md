@@ -9,7 +9,7 @@ The treatment is purely mathematical. Every claim is either proved or stated as 
 
 Throughout, a split biquaternion is written $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu = q_\mu + j q'_\mu$, and the idempotent components are $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$. The four conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\flat} = -{}^{*}$.
 
-The classification and the structure of the *idempotents* themselves — their orthogonality, completeness and primitivity, their role as projections, and the four-point nature of the idempotent set — belong to *Split-Biquaternion Idempotents and Projections*. This article takes those facts as given and develops the objects that the idempotents generate: the ideals and the Peirce decomposition. The two articles share the idempotents $\tilde\Pi_{1,2}$ but not their ownership: the idempotents article owns the idempotents, this article owns the ideals and the splitting.
+The classification and the structure of the *idempotents* themselves — their orthogonality, completeness and primitivity, their role in the multiplication projectors, and the four-point nature of the idempotent set — belong to *Split-Biquaternion Idempotents and Projections*. This article takes those facts as given and develops the objects that the idempotents generate: the ideals and the Peirce decomposition. The two articles share the idempotents $\tilde\Pi_{1,2}$ but not their ownership: the idempotents article owns the idempotents, this article owns the ideals and the splitting.
 
 ## Ideals in an Algebra
 
@@ -145,7 +145,7 @@ $$
 \mathbb{H}_{\mathbb{D}} = \tilde\Pi_1 \mathbb{H}_{\mathbb{D}} \tilde\Pi_1 \oplus (1 - \tilde\Pi_1) \mathbb{H}_{\mathbb{D}} (1 - \tilde\Pi_1) = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2,
 $$
 
-so the two halves do not mix. The left ideals are exactly $0$, $\mathbb{H} \tilde\Pi_1$, $\mathbb{H} \tilde\Pi_2$, $\mathbb{H}_{\mathbb{D}}$, forming a diamond lattice with two maximal ideals, in contrast with the projective line of left ideals of the simple biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$. The idempotents themselves, their classification, their role as projections and their relation to the roots of $-1$, are the subject of *Split-Biquaternion Idempotents and Projections*.
+so the two halves do not mix. The left ideals are exactly $0$, $\mathbb{H} \tilde\Pi_1$, $\mathbb{H} \tilde\Pi_2$, $\mathbb{H}_{\mathbb{D}}$, forming a diamond lattice with two maximal ideals, in contrast with the projective line of left ideals of the simple biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$. The idempotents themselves, their classification, their role in the multiplication projectors and their relation to the roots of $-1$, are the subject of *Split-Biquaternion Idempotents and Projections*.
 
 ## Summary of Notation
 

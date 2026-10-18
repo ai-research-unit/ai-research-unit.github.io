@@ -18,7 +18,7 @@ $$
 dF = H(Z)\,dZ ,
 $$
 
-with $H\in A$. For an algebra with division this is equivalent to the existence and path-independence of the derivative $H=F'$, and for $A=\mathbb{C}$ it is the Cauchy–Riemann equation. Eliminating the components of $H$ gives a linear system for the components of $F$, and the whole of one-variable complex analysis has an analogue. The construction extends to commutative algebras with zero divisors, such as the double and dual numbers, when one demands that the differential take an invariant component-less form rather than that a derivative exist.
+with $H\in A$. For an algebra with division this is equivalent to the existence and path-independence of the derivative $H=dF/dZ$, and for $A=\mathbb{C}$ it is the Cauchy–Riemann equation. Eliminating the components of $H$ gives a linear system for the components of $F$, and the whole of one-variable complex analysis has an analogue. The construction extends to commutative algebras with zero divisors, such as the double and dual numbers, when one demands that the differential take an invariant component-less form rather than that a derivative exist.
 
 For $\mathbb{H}$ the naive transcription fails, and the source gives both of the standard reasons. The first is that noncommutativity erases the distinction between an element and its conjugate. In $\mathbb{H}$ the conjugate can be written using only the units,
 
@@ -26,7 +26,7 @@ $$
 q^{*} = -\tfrac12\left(q + I^{*}q^{*}I + J^{*}q^{*}J + K^{*}q^{*}K\right),
 $$
 
-so "a function independent of the conjugated argument" — the definition of holomorphy in one complex variable — has no content here. The second is that the right derivative $F'=dF\,dZ^{-1}$ (or its left analogue) requires the limit to be independent of the path of $dZ$ to zero in the four-dimensional algebra, which is an over-determined system of partial differential equations; it is compatible only for linear functions $F = A Z + B$. This is the same obstruction the corpus records from Sudbery in *Biquaternion Regular Functions*: in four real dimensions there is no single complex variable, no invariant derivative, and the rich function theory of the plane does not transfer.
+so "a function independent of the conjugated argument" — the definition of holomorphy in one complex variable — has no content here. The second is that the right derivative $H=dF\,dZ^{-1}$ (or its left analogue) requires the limit to be independent of the path of $dZ$ to zero in the four-dimensional algebra, which is an over-determined system of partial differential equations; it is compatible only for linear functions $F = A Z + B$. This is the same obstruction the corpus records from Sudbery in *Biquaternion Regular Functions*: in four real dimensions there is no single complex variable, no invariant derivative, and the rich function theory of the plane does not transfer.
 
 ## The Two-Sided Derivative and Conformal Mappings
 
@@ -394,7 +394,7 @@ $$
 \Lambda:=\frac{d^2\Pi}{dG^2}=0 .
 $$
 
-For this $\Pi$ the pair reduces to $f:=nH-GH'=0$ and $f'=(n-1)H'-GH''=0$, and eliminating $G$ between them gives
+For this $\Pi$ the pair reduces to $f:=nH-G\,dH/dG=0$ and $df/dG=(n-1)\,dH/dG-G\,d^2H/dG^2=0$, and eliminating $G$ between them gives
 
 $$
 (n-1)^2(z+ia)^2+n(n-2)(x^2+y^2)=0 .

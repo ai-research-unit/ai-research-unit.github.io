@@ -14,7 +14,7 @@ $$
 \qquad \langle\tilde{P}\rangle_{\natural} = -m^2c^2,
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v.
 $$
-The boost biquaternion $\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ with $\tanh\psi = v_b/c$ and $\tilde U\tilde U^{\natural} = e_t$, and the rotor conjugation $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U^{*}$; the Poincaré pair $(\tilde U,\tilde{R}_0)$ acting by $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}+\tilde{R}_0$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged.
+The boost biquaternion $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, a Lorentz rotor, with $\tanh\psi = v_b/c$ and $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$, and the rotor conjugation $\tilde{R} \mapsto \tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$; the Poincaré pair $(\tilde U_{\mathrm L},\tilde{R}_0)$ acting by $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}+\tilde{R}_0$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged.
 
 **What is to be shown.** The problems are: (1) the conservation law as a single biquaternion equation, its equivalence to energy and three-momentum conservation, and its frame covariance; (2) the invariant mass and the Mandelstam invariants of a $2\to2$ collision; (3) the centre-of-momentum frame and the elastic point; (4) the production threshold, in fixed-target and collider form; (5) a numerical instance checked in two frames; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions. The exercise also tests its parents: two gaps found in the course of the work are reported explicitly in the closing section rather than smoothed over.
 
@@ -60,15 +60,15 @@ $$
 $$
 which is the invariance of the total invariant mass (Problem 2). This consequence is strictly weaker than the law: equality of the total norms fixes one number, while four-momentum conservation fixes four. Two final configurations with the same total invariant mass but different total three-momentum can both satisfy the norm condition, and at most one of them conserves four-momentum. (For a $2\to2$ elastic collision at fixed $s$, all COM scattering angles share the same $s$ and the same $t+u$, but only the value of $\theta^*$ determines the split $t,u$; see Problem 2.) The conservation law is thus a linear constraint on $\mathbb{M}_-$-valued data, and it must be imposed as such.
 
-**Solution (c).** *Lorentz rotor.* Apply the same rotor conjugation to every four-momentum, with a fixed unit-norm $\tilde U$. The conjugation is real-linear on $\mathbb{M}_-$ and distributive over addition, so
+**Solution (c).** *Lorentz rotor.* Apply the same rotor conjugation to every four-momentum, with a fixed unit-norm $\tilde U_{\mathrm L}$. The conjugation is real-linear on $\mathbb{M}_-$ and distributive over addition, so
 $$
 \tilde{P}_{\rm in}' - \tilde{P}_{\rm out}'
-= \sum_a \tilde U\tilde{P}_a\tilde U^{*} - \sum_f \tilde U\tilde{P}_f\tilde U^{*}
-= \tilde U\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right)\tilde U^{*} .
+= \sum_a \tilde U_{\mathrm L}\tilde{P}_a\tilde U_{\mathrm L}^{*} - \sum_f \tilde U_{\mathrm L}\tilde{P}_f\tilde U_{\mathrm L}^{*}
+= \tilde U_{\mathrm L}\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right)\tilde U_{\mathrm L}^{*} .
 $$
 If the unprimed difference vanishes, the primed one vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the *element* $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{M}_-$, which transforms as a whole.
 
-*Translation.* A Poincaré translation $(\tilde U,\tilde{R}_0)$ acts on the four-position by $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}+\tilde{R}_0$. The four-momentum of a free body is built from its four-velocity, $d\tilde{R}/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
+*Translation.* A Poincaré translation $(\tilde U_{\mathrm L},\tilde{R}_0)$ acts on the four-position by $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}+\tilde{R}_0$. The four-momentum of a free body is built from its four-velocity, $d\tilde{R}/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
 
 **Solution (d).** Take two equal masses $m_1 = m_2 = m$, units $c = 1$, and a projectile of total energy $E_1 = 3m$ striking the target at rest, with the collision elastic. The laboratory four-momenta are
 $$
@@ -170,7 +170,7 @@ which is $E^{*2} - p^{*2}c^2 = m^2c^4$ rearranged. For the example of Problem 1(
 
 **Statement.** (a) Construct the boost biquaternion that carries the laboratory to the COM frame and verify that it rotates the total four-momentum to a pure imaginary scalar. (b) Derive the COM energies and the initial and final momentum magnitudes for a general $2\to2$ collision. (c) Give the relation between the laboratory velocity of the COM frame and the total four-momentum. (d) Record the elastic case.
 
-**Solution (a).** Let $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ be the total four-momentum, with $\tilde{P}\tilde{P}^{\natural} = -W^2/c^2$, where $W=\sqrt{s}>0$. The parent's relation between a four-velocity and its frame rotor, $\tilde U = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$, applied to the total treated as a single body of mass $M_{\rm tot} = W/c^2$, gives the rotor
+**Solution (a).** Let $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ be the total four-momentum, with $\tilde{P}\tilde{P}^{\natural} = -W^2/c^2$, where $W=\sqrt{s}>0$. The parent's relation between a four-velocity and its frame rotor, $\tilde U_{\mathrm L} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$, applied to the total treated as a single body of mass $M_{\rm tot} = W/c^2$, gives the rotor
 $$
 \boxed{\ \tilde U_{\rm CM} = \sqrt{-\frac{ic}{W}\,\tilde{P}^{\natural}}\ }
 = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,\vec u_V,
@@ -398,8 +398,8 @@ We have worked four-momentum conservation for a collision as an application of t
 | $\tilde{P}_a = m_a\tilde{V}_a = iE_a/c\,e_t+\vec p_a$ | Four-momentum, $\langle\tilde{P}_a\rangle_{\natural}=-m_a^2c^2$ |
 | $\tilde{V}_a = \gamma_a(ic\,e_t+\vec v_a)$ | Four-velocity, $\langle\tilde{V}_a\rangle_{\natural}=-c^2$ |
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
-| $\tilde U = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$ | Boost biquaternion, $\tilde U\tilde U^{\natural}=e_t$ |
-| $(\tilde U,\tilde{R}_0)$ | Poincaré transformation, $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}+\tilde{R}_0$ |
+| $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$ | Boost biquaternion, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ |
+| $(\tilde U_{\mathrm L},\tilde{R}_0)$ | Poincaré transformation, $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}+\tilde{R}_0$ |
 | $\tilde U_{\rm CM} = \sqrt{-\frac{ic}{W}\tilde{P}^{\natural}}$ | Boost biquaternion, laboratory to COM frame |
 | $\tilde U^{\natural}_{\rm CM}$ | Quaternion conjugate, COM frame to laboratory |
 | $s,t,u$ | Mandelstam invariants, $s=-c^2\langle\tilde{P}_1+\tilde{P}_2\rangle_{\natural}$, etc. |

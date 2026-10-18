@@ -59,7 +59,7 @@ in which the colour $\mathrm{SU}(3)_c$ and the baryon-minus-lepton number $\math
 
 The interpretation above identifies the left action with $\mathrm{SU}(2)_L$ and the right action with $\mathrm{SU}(2)_R$ and leaves open the mechanism that makes each act on one chirality only.
 
-**The construction.** With the octonionic ladder operators $\alpha_1,\alpha_2,\alpha_3$ and the idempotent generator $\Omega_L=\alpha_1\alpha_2\alpha_3$ of the complex octonionic chain algebra, the source takes the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathbb{C}\otimes\mathbb{H}$ — the tensor product $(1,e_1,e_2,e_1e_2)\otimes_{\mathbb{C}}(1,e_1,e_2,e_1e_2)$ of the two quaternion bases, said to span $\mathbb{C}\mathrm{l}(4)$ — and builds four states from the totally isotropic elements
+**The construction.** With the octonionic ladder operators $\alpha_1,\alpha_2,\alpha_3$ and the ladder operator $\Omega_L=\alpha_1\alpha_2\alpha_3$ of the complex octonionic chain algebra, the source takes the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathbb{C}\otimes\mathbb{H}$ — the tensor product $(1,e_1,e_2,e_1e_2)\otimes_{\mathbb{C}}(1,e_1,e_2,e_1e_2)$ of the two quaternion bases, said to span $\mathbb{C}\mathrm{l}(4)$ — and builds four states from the totally isotropic elements
 $$
 \beta_1=\tfrac12(-e_1+ie_2\tau_3),\qquad \beta_2=\Omega_L^{\dagger}ie_2 ,
 $$

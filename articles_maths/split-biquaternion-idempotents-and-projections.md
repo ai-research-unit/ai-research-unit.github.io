@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The algebra article defined the split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, its four conjugations and its four distinguished real subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathbb{D}}$ — the elements satisfying $\tilde P^2 = \tilde P$ — together with the projections and the direct sum decompositions they carry.
+The algebra article defined the split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, its four conjugations and its four distinguished real subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathbb{D}}$ — the elements satisfying $\tilde\Pi^2 = \tilde\Pi$ — together with the direct sum decompositions they carry.
 
 The treatment is purely mathematical. Every claim is either proved or stated as a definition. No physics is invoked. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, together with its four conjugations, its four fixed-point subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ and its idempotent decomposition. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The quaternion algebra $\mathbb{H}$ is assumed to be a division algebra.
 
@@ -67,18 +67,18 @@ so the Hermitian and anti-Hermitian conjugations swap the two idempotents (up to
 
 **Theorem.** The idempotents of $\mathbb{H}_{\mathbb{D}}$ are exactly $0$, $\tilde\Pi_1$, $\tilde\Pi_2$ and $1$. There are no others.
 
-**Proof.** Write an idempotent in the idempotent basis as $\tilde P = \tilde P_1 \tilde\Pi_1 + \tilde P_2 \tilde\Pi_2$ with $\tilde P_{1,2} = \tilde P \tilde\Pi_{1,2} \in \mathbb{H}$. Since $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$, the square is
+**Proof.** Write an idempotent in the idempotent basis as $\tilde\Pi = \tilde\pi_1 \tilde\Pi_1 + \tilde\pi_2 \tilde\Pi_2$ with $\tilde\pi_{1,2} = \tilde\Pi \tilde\Pi_{1,2} \in \mathbb{H}$. Since $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$, the square is
 
 $$
-\tilde P^2 = \tilde P_1^2 \tilde\Pi_1 + \tilde P_2^2 \tilde\Pi_2.
+\tilde\Pi^2 = \tilde\pi_1^2 \tilde\Pi_1 + \tilde\pi_2^2 \tilde\Pi_2.
 $$
 
-Hence $\tilde P^2 = \tilde P$ is equivalent to the pair of equations $\tilde P_1^2 = \tilde P_1$ and $\tilde P_2^2 = \tilde P_2$ in the quaternion algebra $\mathbb{H}$. Each $\tilde P_{1,2}$ is therefore an idempotent of $\mathbb{H}$.
+Hence $\tilde\Pi^2 = \tilde\Pi$ is equivalent to the pair of equations $\tilde\pi_1^2 = \tilde\pi_1$ and $\tilde\pi_2^2 = \tilde\pi_2$ in the quaternion algebra $\mathbb{H}$. Each $\tilde\pi_{1,2}$ is therefore an idempotent of $\mathbb{H}$.
 
-The quaternion algebra is a division algebra, so its only idempotents are $0$ and $1$: if $\tilde q = a + \vec v$ with $a \in \mathbb{R}$ and $\vec v$ pure, then $\tilde q^2 = \tilde q$ gives $2a\vec v = \vec v$ and $a^2 - |\vec v|^2 = a$; if $\vec v = 0$ then $a^2 = a$, so $a \in \{0, 1\}$; if $\vec v \neq 0$ then $a = 1/2$ and then $|\vec v|^2 = -1/4$, which is impossible. Hence $\tilde P_{1,2} \in \{0, 1\}$, and the four combinations give
+The quaternion algebra is a division algebra, so its only idempotents are $0$ and $1$: if $\tilde\pi = a + \vec v$ with $a \in \mathbb{R}$ and $\vec v$ pure, then $\tilde\pi^2 = \tilde\pi$ gives $2a\vec v = \vec v$ and $a^2 - |\vec v|^2 = a$; if $\vec v = 0$ then $a^2 = a$, so $a \in \{0, 1\}$; if $\vec v \neq 0$ then $a = 1/2$ and then $|\vec v|^2 = -1/4$, which is impossible. Hence $\tilde\pi_{1,2} \in \{0, 1\}$, and the four combinations give
 
 $$
-\tilde P = 0, \qquad \tilde P = \tilde\Pi_1, \qquad \tilde P = \tilde\Pi_2, \qquad \tilde P = \tilde\Pi_1 + \tilde\Pi_2 = 1.
+\tilde\Pi = 0, \qquad \tilde\Pi = \tilde\Pi_1, \qquad \tilde\Pi = \tilde\Pi_2, \qquad \tilde\Pi = \tilde\Pi_1 + \tilde\Pi_2 = 1.
 $$
 
 These four are idempotent, and there are no others.
@@ -103,23 +103,23 @@ a set of real dimension $4$, parametrised by a pair of unit pure real quaternion
 
 **Proof.** The classification of the roots of $-1$ is the content of *Split-Biquaternion Roots of Minus One*: the equation $\tilde\Xi^2 = -1$, written in the idempotent basis as $\xi_+^2 \tilde\Pi_1 + \xi_-^2 \tilde\Pi_2 = -\tilde\Pi_1 - \tilde\Pi_2$, is equivalent to $\xi_\pm^2 = -1$ in $\mathbb{H}$, whose solutions are the unit pure real quaternions, a two-sphere. The product is two-dimensional over each of the two components, so the root set has real dimension $2 + 2 = 4$. Since the idempotent set is the four-point set of the previous section, no bijection exists.
 
-The reason for the failure is the same rigidity that produced the classification theorem. In $\mathbb{B}$ the construction $\tilde P = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i$ turns a root $\tilde\Xi$ of $-1$ into an idempotent because the central unit $i$ is available to convert the vector part into a scalar direction. In $\mathbb{H}_{\mathbb{D}}$ there is no central scalar imaginary — the only central units are $1$ and $j$, with $j^2 = +1$ — and the obstruction $|\vec v|^2 = -1/4$ in the proof above is unavailable. The idempotents of $\mathbb{H}_{\mathbb{D}}$ are therefore confined to the centre, and they cannot be parametrised by the roots of $-1$.
+The reason for the failure is the same rigidity that produced the classification theorem. In $\mathbb{B}$ the construction $\tilde\Pi = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i$ turns a root $\tilde\Xi$ of $-1$ into an idempotent because the central unit $i$ is available to convert the vector part into a scalar direction. In $\mathbb{H}_{\mathbb{D}}$ there is no central scalar imaginary — the only central units are $1$ and $j$, with $j^2 = +1$ — and the obstruction $|\vec v|^2 = -1/4$ in the proof above is unavailable. The idempotents of $\mathbb{H}_{\mathbb{D}}$ are therefore confined to the centre, and they cannot be parametrised by the roots of $-1$.
 
-## Idempotents as Projections
+## Idempotents and Direct Sum Decompositions
 
-An idempotent $\tilde P$ satisfies $\tilde P^2 = \tilde P$, and its **complement** $1 - \tilde P$ is again an idempotent with
-
-$$
-\tilde P(1 - \tilde P) = \tilde P - \tilde P^2 = 0.
-$$
-
-Because every idempotent of $\mathbb{H}_{\mathbb{D}}$ is central, the pair $\{\tilde P, 1 - \tilde P\}$ gives a direct sum decomposition of the algebra as a **two-sided** decomposition:
+An idempotent $\tilde\Pi$ satisfies $\tilde\Pi^2 = \tilde\Pi$, and its **complement** $1 - \tilde\Pi$ is again an idempotent with
 
 $$
-\mathbb{H}_{\mathbb{D}} = \mathbb{H}_{\mathbb{D}} \tilde P \oplus \mathbb{H}_{\mathbb{D}}(1 - \tilde P) = \tilde P \mathbb{H}_{\mathbb{D}} \oplus (1 - \tilde P) \mathbb{H}_{\mathbb{D}},
+\tilde\Pi(1 - \tilde\Pi) = \tilde\Pi - \tilde\Pi^2 = 0.
 $$
 
-and the two summands are ideals. This is the algebraic content of the statement that an idempotent is a projection: the idempotent is the projection, its complement is the complementary projection, and the algebra splits into the image of one and the image of the other. The decomposition attached to $\tilde P = \tilde\Pi_1$ is the idempotent decomposition
+Because every idempotent of $\mathbb{H}_{\mathbb{D}}$ is central, the pair $\{\tilde\Pi, 1 - \tilde\Pi\}$ gives a direct sum decomposition of the algebra as a **two-sided** decomposition:
+
+$$
+\mathbb{H}_{\mathbb{D}} = \mathbb{H}_{\mathbb{D}} \tilde\Pi \oplus \mathbb{H}_{\mathbb{D}}(1 - \tilde\Pi) = \tilde\Pi \mathbb{H}_{\mathbb{D}} \oplus (1 - \tilde\Pi) \mathbb{H}_{\mathbb{D}},
+$$
+
+and the two summands are ideals. This is the algebraic content of the idempotent decomposition: the idempotent selects one summand, its complement the other, and the algebra splits into the image of one and the image of the other. The decomposition attached to $\tilde\Pi = \tilde\Pi_1$ is the idempotent decomposition
 
 $$
 \mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2,
@@ -127,7 +127,7 @@ $$
 
 with $\mathbb{H} \tilde\Pi_1 = \mathbb{H}_{\mathbb{D}} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2 = \mathbb{H}_{\mathbb{D}} \tilde\Pi_2$.
 
-A **Hermitian idempotent** is one satisfying $\tilde{P}^{*} = \tilde P$; in $\mathbb{B}$ these are the orthogonal projections for the Hermitian form and the ones that occur in the spectral decomposition of a Hermitian element. In $\mathbb{H}_{\mathbb{D}}$ there is no nontrivial Hermitian idempotent: the calculation $\tilde\Pi_1^{*} = \tilde\Pi_2$ of the second section shows that the two nontrivial idempotents are interchanged by ${}^{*}$, and neither is fixed. The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is therefore a decomposition into two ideals that are exchanged by the Hermitian conjugation, not a decomposition into orthogonal projections.
+A **Hermitian idempotent** is one satisfying $\tilde\Pi^{*} = \tilde\Pi$; in $\mathbb{B}$ these are the idempotents orthogonal with respect to the Hermitian form and the ones that occur in the spectral decomposition of a Hermitian element. In $\mathbb{H}_{\mathbb{D}}$ there is no nontrivial Hermitian idempotent: the calculation $\tilde\Pi_1^{*} = \tilde\Pi_2$ of the second section shows that the two nontrivial idempotents are interchanged by ${}^{*}$, and neither is fixed. The idempotent decomposition of $\mathbb{H}_{\mathbb{D}}$ is therefore a decomposition into two ideals that are exchanged by the Hermitian conjugation, not a decomposition into Hermitian idempotents.
 
 ## Idempotents and the Zero Divisors
 
@@ -169,7 +169,7 @@ This is the sharpest form of the rigidity noted in the introduction. In $\mathbb
 
 ## Summary
 
-An idempotent of $\mathbb{H}_{\mathbb{D}}$ is an element $\tilde P$ with $\tilde P^2 = \tilde P$. The algebra has the two nontrivial idempotents
+An idempotent of $\mathbb{H}_{\mathbb{D}}$ is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. The algebra has the two nontrivial idempotents
 
 $$
 \tilde\Pi_1 = \tfrac{1}{2}(1 + j), \qquad \tilde\Pi_2 = \tfrac{1}{2}(1 - j), \qquad \tilde\Pi_1 \tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = 1,
@@ -177,13 +177,13 @@ $$
 
 which are central, lie in the split complex centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, and give the idempotent decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ into two minimal left ideals, each isomorphic to the quaternion division algebra $\mathbb{H}$.
 
-There are exactly four idempotents, namely $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and all of them are central; equivalently, $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is a product of two division algebras, and a product of two division algebras has a four-point idempotent set. The nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are primitive and orthogonal, and together with $0$ and $1$ they exhaust the primitive idempotents. Because there is no bijection with the roots of $-1$ — that set is $S^2 \times S^2$, of dimension $4$ — the biquaternion correspondence between idempotents and roots of $-1$ does not transfer, and the idempotents are confined to the centre. The Hermitian conjugation interchanges $\tilde\Pi_1$ and $\tilde\Pi_2$, so no nontrivial idempotent is Hermitian and the idempotent decomposition is not a decomposition into orthogonal projections. Each nontrivial idempotent is a zero divisor, with annihilator the complementary ideal: $\mathrm{Ann}(\tilde\Pi_1) = \mathbb{H} \tilde\Pi_2$ and $\mathrm{Ann}(\tilde\Pi_2) = \mathbb{H} \tilde\Pi_1$, each of real dimension $4$; the zero divisors themselves form the union of the two ideals, and are treated in *Split-Biquaternion Zero Divisors*.
+There are exactly four idempotents, namely $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and all of them are central; equivalently, $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is a product of two division algebras, and a product of two division algebras has a four-point idempotent set. The nontrivial idempotents $\tilde\Pi_1$ and $\tilde\Pi_2$ are primitive and orthogonal, and together with $0$ and $1$ they exhaust the primitive idempotents. Because there is no bijection with the roots of $-1$ — that set is $S^2 \times S^2$, of dimension $4$ — the biquaternion correspondence between idempotents and roots of $-1$ does not transfer, and the idempotents are confined to the centre. The Hermitian conjugation interchanges $\tilde\Pi_1$ and $\tilde\Pi_2$, so no nontrivial idempotent is Hermitian and the idempotent decomposition is not a decomposition into Hermitian idempotents. Each nontrivial idempotent is a zero divisor, with annihilator the complementary ideal: $\mathrm{Ann}(\tilde\Pi_1) = \mathbb{H} \tilde\Pi_2$ and $\mathrm{Ann}(\tilde\Pi_2) = \mathbb{H} \tilde\Pi_1$, each of real dimension $4$; the zero divisors themselves form the union of the two ideals, and are treated in *Split-Biquaternion Zero Divisors*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P, e, f$ | Idempotents, $\tilde P^2 = \tilde P$ |
+| $\tilde\Pi$; $e, f$ | Idempotents of $\mathbb{H}_{\mathbb{D}}$, $\tilde\Pi^2 = \tilde\Pi$; generic idempotents of an arbitrary algebra |
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | The two nontrivial idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = 1$ |
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ | Split biquaternion algebra, $\cong \mathbb{H} \oplus \mathbb{H}$ |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Centre, the split complex subspace; contains every idempotent |

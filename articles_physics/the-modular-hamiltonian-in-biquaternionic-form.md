@@ -289,36 +289,36 @@ G_1^2=e_t,
 \qquad
 G_1^\dagger=G_1 ,
 $$
-which is the generator $K_1=i\vec e_x$ of the Lorentz-group companion in the spatial direction $\vec e_x$. Its exponential is the boost rotor
+which is the generator $K_1=i\vec e_x$ of the Lorentz-group companion in the spatial direction $\vec e_x$. Its exponential is the boost rotor $\tilde U_{\mathrm L}(\psi)$, the unit-norm biquaternion that implements the Lorentz transformation:
 $$
-\tilde U(\psi)=\exp\!\Big(\frac{\psi}{2}G_1\Big)
+\tilde U_{\mathrm L}(\psi)=\exp\!\Big(\frac{\psi}{2}G_1\Big)
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec e_x\ \in\mathbb{M}_+,
 \qquad
-\tilde U(\psi)\tilde U^{\natural}(\psi)=e_t,
+\tilde U_{\mathrm L}(\psi)\tilde U_{\mathrm L}^{\natural}(\psi)=e_t,
 $$
-and its action on the material sector is the rotor conjugation $\tilde{Q}\mapsto\tilde U(\psi)\tilde{Q}\tilde U(\psi)$ (the rotor is Hermitian). Because Bisognano–Wichmann gives $\Delta=\exp(-2\pi G_1)$, the modular Hamiltonian of the wedge is
+and its action on the material sector is the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}(\psi)\tilde{Q}\tilde U_{\mathrm L}(\psi)$ (the rotor is Hermitian). Because Bisognano–Wichmann gives $\Delta=\exp(-2\pi G_1)$, the modular Hamiltonian of the wedge is
 $$
 \tilde{K}_{\mathrm{mod},W}=2\pi\,G_1=2\pi\,i\,\vec e_x ,
 $$
 and the modular flow is the boost by rapidity $2\pi s$ in the modular parameter $s$. The two wedges have opposite orientation: the boost generator whose flow is future-directed on the right wedge is past-directed on the left, so $\tilde{K}_{\mathrm{mod},L}=-\tilde{K}_{\mathrm{mod},R}$ and "the wedge modular Hamiltonian" is wedge-dependent, as the Unruh article records; the norm $|\tilde{K}_{\mathrm{mod},W}|$ is what enters the temperature and is the same for both.
 
-Three checks make this concrete, and all were recomputed symbolically in the algebra. First, the rotor really is the boost: on $\tilde{Q}=iq_0e_t+q_x\vec e_x$ (with $q_t=ct$, and the other components untouched),
+Three checks make this concrete, and all were recomputed symbolically in the algebra. First, the rotor really is the boost: on $\tilde{Q}=iq'_te_t+q_x\vec e_x$ (with $q'_t=ct$, and the other components untouched),
 $$
-q_t\longmapsto q_t\cosh\psi-q_x\sinh\psi,
+q'_t\longmapsto q'_t\cosh\psi-q_x\sinh\psi,
 \qquad
-q_x\longmapsto q_x\cosh\psi-q_t\sinh\psi,
+q_x\longmapsto q_x\cosh\psi-q'_t\sinh\psi,
 \qquad
-\langle\tilde U\tilde{Q}\tilde U\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}.
+\langle\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}.
 $$
 Second, the generator of this action is $G_1$ through the **anticommutator**,
 $$
-\frac{d}{d\psi}\Big(\tilde U(\psi)\tilde{Q}\tilde U(\psi)\Big)\Big|_{\psi=0}
+\frac{d}{d\psi}\Big(\tilde U_{\mathrm L}(\psi)\tilde{Q}\tilde U_{\mathrm L}(\psi)\Big)\Big|_{\psi=0}
 =\tfrac12\{G_1,\tilde{Q}\}=\tfrac12\big(G_1\tilde{Q}+\tilde{Q}G_1\big),
 $$
-and exponentiating this derivation reproduces the finite rotor action, $\exp(\psi\,\delta_{G_1})\tilde{Q}=\tilde U(\psi)\tilde{Q}\tilde U(\psi)$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde{Q}]$ is *not* the boost: on the boost plane $q_y=q_z=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
+and exponentiating this derivation reproduces the finite rotor action, $\exp(\psi\,\delta_{G_1})\tilde{Q}=\tilde U_{\mathrm L}(\psi)\tilde{Q}\tilde U_{\mathrm L}(\psi)$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde{Q}]$ is *not* the boost: on the boost plane $q_y=q_z=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
 $$
 [G_1,\tilde{Q}]=\big(0,\,0,\,-2i\,q_z,\,2i\,q_y\big)
-\quad\text{for}\quad \tilde{Q}=iq_0e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z .
+\quad\text{for}\quad \tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z .
 $$
 So the modular Hamiltonian's action here is two-sided, not an inner commutator: writing $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ identifies the algebra element, and the flow it generates on $\mathbb{M}_-$ is the rotor conjugation above. This is the same warning the curved-spacetime and Lorentz-transformation companions give for boosts, and the wedge is a case where it is load-bearing — a reader who generates the flow by $-i[\tilde{K}_{\mathrm{mod},W},\cdot]$ obtains a rotation about $\vec e_x$, not the boost.
 
@@ -400,7 +400,7 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | Vector part of $\tilde{K}_{\mathrm{mod}}$ |
 | $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$ | Gibbs-state modular Hamiltonian |
 | $G_1=i\vec e_x\in\mathbb{M}_+$ | Boost generator ($=K_1$ in the Lorentz-group companion) |
-| $\tilde U(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
+| $\tilde U_{\mathrm L}(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ | Wedge modular Hamiltonian (Bisognano–Wichmann) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

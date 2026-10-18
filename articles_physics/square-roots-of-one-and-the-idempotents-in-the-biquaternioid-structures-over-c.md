@@ -465,7 +465,7 @@ reading is *The Monoid of Acting Maps: the Process Is the Multiplication, the St
 The product is the pairing and its square is the Hermitian square. The idempotents are $0$, $e_t$ and the
 Hermitian family $\tfrac12(e_t+i\tilde\xi)$ over the real unit vectors $\tilde\xi$, which lies in the
 informational sector $\mathbb{M}_+$. Physically these are the pure states, the boundary of the positive
-cone and the extremal points of the Bloch ball, and they are zero divisors because a projector has no
+cone and the extremal points of the Bloch ball, and they are zero divisors because an idempotent has no
 inverse. The reading is *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its
 Cone* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 
@@ -587,7 +587,7 @@ complement is the same statement read on the identity.
 
 | claim | source | status |
 |---|---|---|
-| only five structures carry a nontrivial idempotent | mathematics companion, theorem; recomputed that the Hermitian projector is idempotent in GPA and not in GQS | cited |
+| only five structures carry a nontrivial idempotent | mathematics companion, theorem; recomputed that the Hermitian idempotent condition holds in GPA and not in GQS | cited |
 | the plain idempotents are $\tfrac12(e_t+\tilde\Xi)$ over the roots of $+1$ | mathematics companion; recomputed $\tfrac12(e_t+i\vec e_x)^{2}=\tfrac12(e_t+i\vec e_x)$ | verified |
 | the Hermitian idempotents have central square $0$ and are zero divisors | mathematics companion; recomputed $C(\tfrac12(e_t+i\vec e_x))=0$ | verified |
 | the fourth family $-\tfrac12e_t+\mu$ has central square $e_t$ and is a family of units | mathematics companion; recomputed with $(\mu,\mu)=\tfrac34$ | verified |
@@ -621,9 +621,9 @@ ball are exactly the states that are not idempotents.
 
 **A measurement has idempotents for outcomes.** *The Measurement Problem in Algebraic Form* and *Quantum
 Channels and the Reversible/Irreversible Dichotomy* read the sandwich
-$\tilde{Ϛ}\mapsto\tilde P\tilde{Ϛ}\tilde P$ as the projective measurement, with the idempotent
-$\tilde P$ one outcome and the complement $e_t-\tilde P$ the other. The complementation of this article is
-the algebra's two-outcome event: the pair $(\tilde P,e_t-\tilde P)$ is a complete measurement, and the
+$\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ as the projective measurement, with the idempotent
+$\tilde\Pi$ one outcome and the complement $e_t-\tilde\Pi$ the other. The complementation of this article is
+the algebra's two-outcome event: the pair $(\tilde\Pi,e_t-\tilde\Pi)$ is a complete measurement, and the
 failure of the complementation for the gauge family says that a gauge idempotent does not by itself define
 a two-outcome test. *POVMs and the Positive Cone in Biquaternionic Form* places the idempotents at the
 extreme points of the positive cone, so the projective measurement is the sharp end of the general
@@ -631,7 +631,7 @@ measurement.
 
 **An idempotent is also a basis vector of a composite.** *The Bell Basis as the Idempotent Basis of
 $\mathbb{B}\otimes\mathbb{B}$* uses the idempotents of the tensor square as a basis of the two-qubit space:
-the four Bell projectors are idempotent, orthogonal and complete, and they diagonalise the maximally
+the four Bell idempotents are orthogonal and complete, and they diagonalise the maximally
 entangled states. The idempotent therefore does two jobs at once, as a pure state of one system and as a
 basis element of the correlations of two, and the tensor-product article is where the two jobs are visibly
 the same.
@@ -745,7 +745,7 @@ Idempotency is the algebraic name of the sphere.
 **The idempotents are the sharp effects, and a general measurement softens them.** *POVMs and the Positive
 Cone in Biquaternionic Form* locates the idempotents in measurement theory exactly. The effects — the
 elements between $0$ and $e_t$ — form a convex body, the operator interval, and its **extreme points are
-exactly the idempotents**, the identity and the rank-one projectors; a projective measurement uses only
+exactly the idempotents**, the identity and the rank-one idempotents; a projective measurement uses only
 these extreme effects, while a general positive-operator-valued measure uses interior, "soft" effects that
 are convex combinations $\tilde E=t\tilde\Pi_1+(1-t)\tilde\Pi_2$ of orthogonal idempotents and respond
 partially to both alternatives. The idempotent is thus the **sharp** outcome, and every other outcome is a
@@ -790,7 +790,7 @@ square forces a noncontextual assignment to make the product of the same nine en
 **A protected subspace is an idempotent's image.** *Quantum Error Correction and the Stabilizer Formalism in
 Biquaternionic Form* puts the idempotent to a second job, beyond naming a state. A code is specified by an
 abelian group of commuting involutions of $\mathbb{M}_+^{\otimes n}$ — the stabilizer group — and the code
-space is the common $+1$ eigenspace, which is the **image of the code projector**
+space is the common $+1$ eigenspace, which is the **image of the code idempotent**
 $\tilde\Pi=|S|^{-1}\sum_{\tilde U\in S}\tilde U$, itself an idempotent of the tensor-product algebra. The
 article's structural finding is that the whole theory of stabilizer codes is a theory of **commutative
 subalgebras and their idempotents**: the code space is a **Peirce component** of a commutative subalgebra,

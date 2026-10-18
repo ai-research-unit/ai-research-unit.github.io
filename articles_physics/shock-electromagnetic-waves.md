@@ -239,7 +239,7 @@ $$
 where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\phi$ satisfying $\partial/\partial t\phi + c(\phi)\partial/\partial Q_x\phi = 0$, the equation can be written in conservation form
 
 $$
-\partial/\partial t\phi + \partial/\partial Q_x f(\phi) = 0, \qquad f'(\phi) = c(\phi),
+\partial/\partial t\phi + \partial/\partial Q_x f(\phi) = 0, \qquad \frac{df}{d\phi}(\phi) = c(\phi),
 $$
 
 where $f$ is a primitive of $c$. For the biquaternion-valued field, the same structure applies, with $f$ defined as the primitive of $c$ along the direction of propagation.

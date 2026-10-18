@@ -50,7 +50,7 @@ $$
 r_c = \frac{L^2}{m\kappa},
 $$
 
-where $V_{\text{eff}}' = 0$, and the circular orbit is stable because $V_{\text{eff}}''(r_c) > 0$. The value at the minimum is the energy of the circular orbit,
+where $dV_{\text{eff}}/dr = 0$, and the circular orbit is stable because $\frac{d^2V_{\text{eff}}}{dr^2}(r_c) > 0$. The value at the minimum is the energy of the circular orbit,
 
 $$
 E_c = V_{\text{eff}}(r_c) = -\frac{m\kappa^2}{2L^2} .
@@ -65,13 +65,13 @@ For $E < E_c$ there is no classical motion at all; for $E = E_c$ the orbit is ci
 For an inverse-square force the general Binet equation
 
 $$
-u'' + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
+\frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
 $$
 
 becomes linear. With $F(r) = -\kappa/r^2 = -\kappa u^2$,
 
 $$
-u'' + u = \frac{\kappa}{mh^2} = \frac{1}{p}, \qquad p = \frac{mh^2}{\kappa} = \frac{L^2}{m\kappa},
+\frac{d^2u}{d\theta^2} + u = \frac{\kappa}{mh^2} = \frac{1}{p}, \qquad p = \frac{mh^2}{\kappa} = \frac{L^2}{m\kappa},
 $$
 
 whose general solution is
@@ -85,7 +85,7 @@ The orbit is therefore a **conic section with the force centre at a focus**, the
 
 ### The Energy–Eccentricity Relation
 
-The eccentricity is determined by the energy. Substituting the orbit into the energy and using the turning-point condition $V_{\text{eff}}'(r) = 0$ at the apsides gives
+The eccentricity is determined by the energy. Substituting the orbit into the energy and using the turning-point condition $\frac{dV_{\text{eff}}}{dr}(r) = 0$ at the apsides gives
 
 $$
 E = \frac{m\kappa^2}{2L^2}\left(e^2 - 1\right), \qquad\text{equivalently}\qquad e = \sqrt{1 + \frac{2EL^2}{m\kappa^2}} .
@@ -232,7 +232,7 @@ The classical Kepler problem in biquaternionic form is the motion of a real vect
 Binet's equation becomes linear,
 
 $$
-u'' + u = \frac{1}{p}, \qquad p = \frac{L^2}{m\kappa},
+\frac{d^2u}{d\theta^2} + u = \frac{1}{p}, \qquad p = \frac{L^2}{m\kappa},
 $$
 
 with the conic solution
@@ -275,7 +275,7 @@ is conserved, points along the perihelion direction, and makes the momentum hodo
 | $h = L/m$ | Areal constant |
 | $V_{\text{eff}} = -\kappa/r + L^2/(2mr^2)$ | Effective potential |
 | $u = 1/r$ | Binet variable |
-| $u'' + u = 1/p$ | Linear Binet equation for the Kepler force |
+| $\frac{d^2u}{d\theta^2} + u = 1/p$ | Linear Binet equation for the Kepler force |
 | $p = L^2/(m\kappa)$ | Semi-latus rectum |
 | $e = \sqrt{1 + 2EL^2/(m\kappa^2)}$ | Eccentricity |
 | $r = p/(1 + e\cos(\theta-\theta_0))$ | Conic orbit |

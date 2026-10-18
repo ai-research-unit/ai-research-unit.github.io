@@ -175,7 +175,7 @@ S_{\mathrm{cl}}(x,t;x_0,0)
 =\frac{m\omega}{2\sin\omega t}\Big((x^2+x_0^2)\cos\omega t-2xx_0\Big)
 $$
 
-the classical action of the oscillator evaluated between the endpoints, and with the fluctuation factor $F(t)$ independent of the endpoints. Substituting this form into the Schrödinger equation gives $F'/F=-\frac{\omega}{2}\cot\omega t$, hence $F(t)=C/\sqrt{\sin\omega t}$, and the constant $C$ is fixed by the short-time limit: as $t\to0$, $\sin\omega t\to\omega t$ and the kernel must tend to the free short-time kernel $(m/2\pi i\hbar t)^{1/2}$, which gives $C=\sqrt{m\omega/2\pi i\hbar}$. The biquaternion content of the construction is again the same: the kernel is $K_\omega\,e_t$ with $K_\omega$ the scalar amplitude, a central element, because the action is a real scalar and the fluctuation factor is a function of central quantities.
+the classical action of the oscillator evaluated between the endpoints, and with the fluctuation factor $F(t)$ independent of the endpoints. Substituting this form into the Schrödinger equation gives $\frac{dF/dt}{F}=-\frac{\omega}{2}\cot\omega t$, hence $F(t)=C/\sqrt{\sin\omega t}$, and the constant $C$ is fixed by the short-time limit: as $t\to0$, $\sin\omega t\to\omega t$ and the kernel must tend to the free short-time kernel $(m/2\pi i\hbar t)^{1/2}$, which gives $C=\sqrt{m\omega/2\pi i\hbar}$. The biquaternion content of the construction is again the same: the kernel is $K_\omega\,e_t$ with $K_\omega$ the scalar amplitude, a central element, because the action is a real scalar and the fluctuation factor is a function of central quantities.
 
 The kernel has poles at $\sin\omega t=0$, i.e. at $\omega t=n\pi$. These are the caustics of the oscillator: the classical trajectories refocus after a half period, the fluctuation factor diverges, and the simple form of the kernel breaks down. They are the same points at which the Maslov phases accumulate in the semiclassical expansion.
 
@@ -232,7 +232,7 @@ $$
 =\left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{1/2}
 \int dy\;\exp(\,im(y-x)^2/2\hbar\varepsilon)
 \exp(-i\varepsilon V(y)/\hbar)
-\left[\psi(x)+(y-x)\psi'(x)+\tfrac12(y-x)^2\psi''(x)+\cdots\right].
+\left[\psi(x)+(y-x)\frac{d\psi}{dx}(x)+\tfrac12(y-x)^2\frac{\partial^2\psi}{\partial x^2}(x)+\cdots\right].
 $$
 
 The Gaussian moments are
@@ -246,7 +246,7 @@ $$
 and the linear term vanishes by symmetry. Collecting,
 
 $$
-\psi(x,t+\varepsilon)=\psi(x)-\frac{i\varepsilon}{\hbar}V(x)\psi(x)+\frac{i\hbar\varepsilon}{2m}\psi''(x)+O(\varepsilon^2),
+\psi(x,t+\varepsilon)=\psi(x)-\frac{i\varepsilon}{\hbar}V(x)\psi(x)+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\psi}{\partial x^2}(x)+O(\varepsilon^2),
 $$
 
 which rearranges to
@@ -256,7 +256,7 @@ i\hbar\,\frac{\psi(x,t+\varepsilon)-\psi(x,t)}{\varepsilon}
 =\left(-\frac{\hbar^2}{2m}\partial^2/\partial Q_x^2+V(x)\right)\psi+O(\varepsilon),
 $$
 
-that is, in the limit, the biquaternion Schrödinger equation for the envelope. The expansion was verified numerically on a superposition of two Gaussian packets: using the exact free evolution for a small time $\varepsilon=10^{-5}$, the evolved state agreed with $\psi+\frac{i\hbar\varepsilon}{2m}\psi''$ to a relative error of about $2\times10^{-11}$ at three sample points. The path integral and the state-vector equation are thus equivalent for the central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
+that is, in the limit, the biquaternion Schrödinger equation for the envelope. The expansion was verified numerically on a superposition of two Gaussian packets: using the exact free evolution for a small time $\varepsilon=10^{-5}$, the evolved state agreed with $\psi+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\psi}{\partial x^2}$ to a relative error of about $2\times10^{-11}$ at three sample points. The path integral and the state-vector equation are thus equivalent for the central Hamiltonian, and the equivalence is a statement about the scalar envelope alone.
 
 ## The Semiclassical Kernel
 
@@ -332,7 +332,7 @@ K_\omega=\left(\frac{m\omega}{2\pi i\hbar\sin\omega t}\right)^{1/2}
 \exp\left[\frac{im\omega}{2\hbar\sin\omega t}\Big((x^2+x_0^2)\cos\omega t-2xx_0\Big)\right],
 $$
 
-central, with caustic poles at $\omega t=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\psi(x,t+\varepsilon)=\psi-\frac{i\varepsilon}{\hbar}V\psi+\frac{i\hbar\varepsilon}{2m}\psi''+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
+central, with caustic poles at $\omega t=n\pi$; its composition law was verified to $10^{-14}$, its solution of the Schrödinger equation to the $10^{-8}$ level of the finite-difference check, and its $\omega\to0$ limit to the free kernel with a difference falling as $\omega^2$. After the Wick rotation it becomes the Mehler kernel. The kernel reproduces the Schrödinger equation through the infinitesimal expansion $\psi(x,t+\varepsilon)=\psi-\frac{i\varepsilon}{\hbar}V\psi+\frac{i\hbar\varepsilon}{2m}\frac{\partial^2\psi}{\partial x^2}+O(\varepsilon^2)$, verified on a two-Gaussian superposition to a relative error of about $2\times10^{-11}$.
 
 The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2\pi i\hbar)^{-3/2}|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f|^{1/2}\exp(iS_{\mathrm{cl}}/\hbar)$, central, with the Maslov phases arising from the central square root of $i$; the free kernel is exact at all times and the oscillator kernel is exact away from its caustics. The framework thus supplies the centrality of the kernel, the scalar reduction of the path integral, and the central square roots; it does not supply the measure, the space of paths, or a dynamical module factor, and it adds no prediction distinguishing the reformulation from scalar path-integral quantum physics.
 

@@ -132,7 +132,7 @@ which is the dynamical relaxation of strong CP. Expanding about the minimum,
 $$
 V(a) = \frac{\Lambda^4}{2f_a^2}\,a^2 + O(a^4)
 \qquad\Longrightarrow\qquad
-m_a^2 = V''(0) = \frac{\Lambda^4}{f_a^2}
+m_a^2 = \frac{d^2V}{da^2}(0) = \frac{\Lambda^4}{f_a^2}
 \qquad\Longrightarrow\qquad
 m_a = \frac{\Lambda^2}{f_a} .
 $$

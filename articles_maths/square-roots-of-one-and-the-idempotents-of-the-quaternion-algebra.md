@@ -112,7 +112,7 @@ and a unit is not a zero divisor. The single element common to the roots of $+e_
 
 **The idempotents of the algebra are exactly the origin and the unit, $\tilde\pi\in\{0,e_t\}$; the class is the two-point set, and there is no non-trivial idempotent.**
 
-The **idempotents** of the algebra are the elements satisfying $\tilde\pi^2=\tilde\pi$, the square being the one of the quaternion product. They are the algebraic form of a projection, and the algebra has only the two trivial ones; what remains of the theory is the halving map from the roots of $+e_t$, the complementary pairs, and a degenerate Peirce decomposition.
+The **idempotents** of the algebra are the elements satisfying $\tilde\pi^2=\tilde\pi$, the square being the one of the quaternion product. They correspond to projectors under multiplication, and the algebra has only the two trivial ones; what remains of the theory is the halving map from the roots of $+e_t$, the complementary pairs, and a degenerate Peirce decomposition.
 
 ### The Definition
 

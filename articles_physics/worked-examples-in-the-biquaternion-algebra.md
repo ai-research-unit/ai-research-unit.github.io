@@ -76,7 +76,7 @@ Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q
 
 The standard idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ satisfy $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$; they are primitive, and they give the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ into two minimal left ideals of real dimension $4$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
-**Physical interpretation.** The two idempotents are the **chiral projectors** onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is the splitting of the algebra into the two chiralities (*Modules over the Biquaternion Algebra*).
+**Physical interpretation.** The two idempotents correspond to the **chiral projectors** onto the two Weyl components, and the decomposition $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is the splitting of the algebra into the two chiralities (*Modules over the Biquaternion Algebra*).
 
 ## The Norm and the Inverse of the Concrete Element
 
@@ -123,7 +123,7 @@ The multiplication of $\mathbb{B}$ is the quaternion table with complex coeffici
 | $\mathrm{Sc}\,\tilde{Q}=Q_t$, $\vec Q=\sum_{\mu\in\{x,y,z\}}Q_\mu\vec e_\mu$ | Scalar and vector parts |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}={}^{\natural}\circ\bar{\cdot}$, ${}^{\flat}=-{}^{*}$ | The four conjugations |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | The remarkable subspaces |
-| $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\ \tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Orthogonal primitive idempotents; chiral projectors |
+| $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\ \tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Orthogonal primitive idempotents; correspond to the chiral projectors |
 | $\langle\tilde{Q}\rangle_{\natural}=11+2i$ | Norm of the fixed element; nonzero, so a unit |
 | $\tilde{Q}^{-1}=\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse of the fixed element |
 | $\tilde Q_1=e_t+i\vec e_z,\ \tilde Q_2=e_t-i\vec e_z$ | Null zero-divisor pair, $\tilde Q_1\tilde Q_2=0$ |

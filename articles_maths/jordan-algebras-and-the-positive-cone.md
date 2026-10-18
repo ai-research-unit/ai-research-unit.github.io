@@ -168,7 +168,7 @@ The construction is standard; it is the Jordan analogue of the continuous functi
 
 ### Extreme Rays and Idempotents
 
-An idempotent is **primitive** if it is nonzero and cannot be written as a sum of two nonzero orthogonal idempotents; in $H_n(\mathbb{R})$ these are the rank-one projections.
+An idempotent is **primitive** if it is nonzero and cannot be written as a sum of two nonzero orthogonal idempotents; in $H_n(\mathbb{R})$ these are the rank-one idempotents.
 
 **Proposition.** Let $J$ be a finite-dimensional formally real Jordan algebra. The extreme rays of $J_+$ are exactly the rays $\mathbb{R}_{\geq 0}e$ through the primitive idempotents $e$.
 
@@ -178,7 +178,7 @@ An idempotent is **primitive** if it is nonzero and cannot be written as a sum o
 
 *Proof.* If $x \in [0,1]$ has spectral resolution $x = \sum_i\lambda_i e_i$ with $0 \leq \lambda_i \leq 1$ and some $\lambda_j \in (0,1)$, then for small $\varepsilon > 0$ the two elements obtained from $x$ by replacing $\lambda_j$ by $\lambda_j \pm \varepsilon$ also lie in $[0,1]$, and $x$ is their midpoint, so $x$ is not extreme. If on the other hand every $\lambda_i \in \{0,1\}$, then $x = \sum_{i\in S}e_i$ is an idempotent. It remains to see that every idempotent is extreme; this is the standard characterisation of the extreme points of the order-unit interval of a JB-algebra. Put $z = \tfrac12(x - y)$, so that $x = e + z$ and $y = e - z$. The inequalities $0 \leq x, y \leq 1$ read $-e \leq z \leq e$ and $-(1 - e) \leq z \leq 1 - e$, that is $|z| \leq e$ and $|z| \leq 1 - e$. Since $0 \leq a \leq p$ for an idempotent $p$ forces $a \in J_1(p)$ by the Peirce theory, the element $|z|$ lies in $J_1(e) \cap J_1(1 - e) = J_1(e) \cap J_0(e) = 0$, so $z = 0$ and $x = y = e$.
 
-Thus the primitive idempotents generate the extreme rays of the cone, while all idempotents are the extreme points of the order interval. For the simple algebras the algebra automorphism group acts transitively on the primitive idempotents (the extreme rays), and the structure group acts transitively on $\Omega$ itself; the two transitivity statements are the extreme-ray and the interior faces of the homogeneity of the cone. For $H_n(\mathbb{C})$ the primitive idempotents are the rank-one projections, and for the Albert algebra they are the rank-one idempotents on which $F_4$ acts transitively.
+Thus the primitive idempotents generate the extreme rays of the cone, while all idempotents are the extreme points of the order interval. For the simple algebras the algebra automorphism group acts transitively on the primitive idempotents (the extreme rays), and the structure group acts transitively on $\Omega$ itself; the two transitivity statements are the extreme-ray and the interior faces of the homogeneity of the cone. For $H_n(\mathbb{C})$ the primitive idempotents are the rank-one Hermitian idempotents, and for the Albert algebra they are the rank-one idempotents on which $F_4$ acts transitively.
 
 ## The Axiomatisation: JB-Algebras
 

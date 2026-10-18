@@ -189,7 +189,7 @@ where $|0\rangle=(1,0)^{\mathsf T}$ and $|1\rangle=(0,1)^{\mathsf T}$ in the mod
 
 Three consequences follow at once, all of them recomputed above.
 
-- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated with the root of $+1$ $i\vec e_z$ since $(i\vec e_z)^2=e_t$, and $\tilde\Pi_-=\tilde\Pi_-$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.
+- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their idempotents are $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated with the root of $+1$ $i\vec e_z$ since $(i\vec e_z)^2=e_t$, and $\tilde\Pi_-=\tilde\Pi_-$. The number operator of a single fermionic mode is a pure-state idempotent of the informational sector.
 - **The grading is an element of the algebra.** Fermion parity for one mode is
 
 $$
@@ -201,7 +201,7 @@ which is Hermitian, squares to $e_t$, and satisfies $(-1)^F\vec\Upsilon_x(-1)^F=
 
 ### What the Capacity Statement Does and Does Not Say
 
-It does say that the fermionic canonical anticommutation relations, the one-mode number operator, the vacuum projector, and the fermion-parity grading all exist as elements of $\mathbb{B}$, and that this is forced by the dimension count rather than chosen: one mode saturates the algebra, so no other choice of single mode is inequivalent, and no second mode can be added.
+It does say that the fermionic canonical anticommutation relations, the one-mode number operator, the vacuum idempotent, and the fermion-parity grading all exist as elements of $\mathbb{B}$, and that this is forced by the dimension count rather than chosen: one mode saturates the algebra, so no other choice of single mode is inequivalent, and no second mode can be added.
 
 It does not say that the framework **derives** fermionic statistics, or statistics at all. The anticommutation relations are imposed on $\vec\Upsilon_x,\vec\Upsilon_y$; the identification exhibits a realization, not a derivation. Whether the framework selects the fermionic structure, or merely happens to have the dimension that hosts one fermionic mode, is the open question of the article and is recorded as such in the closing section. The dimension coincidence $4=4$ is exact but it is a coincidence of dimensions until something more is said.
 

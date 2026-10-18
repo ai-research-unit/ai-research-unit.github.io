@@ -117,7 +117,7 @@ $$
 $$
 The two summands are the two **pinor representations** of $\mathrm{Cl}(3)$: the two simple modules of $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, inequivalent and distinguished by the eigenvalue $\pm1$ of the central volume element $\omega$.
 
-*Proof.* Sending every generator to its negative preserves the quadratic relations $E_\mu^2=-1$, $E_\muE_\nu=-E_\nuE_\mu$, and is invertible, so it is an automorphism; it is the grading automorphism of the Clifford algebra, equal to $+1$ on the even subalgebra and $-1$ on the odd part. On the volume element the three sign flips give $\sigma(\omega)=(-1)^3\omega=-\omega$, and the action on $\Pi_{1,2}$ follows. A central element of a product of two simple algebras acts as a scalar on each simple module; the idempotents $\Pi_{1,2}$ are the two projections and their distinct images are the two non-isomorphic simple modules.
+*Proof.* Sending every generator to its negative preserves the quadratic relations $E_\mu^2=-1$, $E_\muE_\nu=-E_\nuE_\mu$, and is invertible, so it is an automorphism; it is the grading automorphism of the Clifford algebra, equal to $+1$ on the even subalgebra and $-1$ on the odd part. On the volume element the three sign flips give $\sigma(\omega)=(-1)^3\omega=-\omega$, and the action on $\Pi_{1,2}$ follows. A central element of a product of two simple algebras acts as a scalar on each simple module; the idempotents $\Pi_{1,2}$ act as the two projections and their distinct images are the two non-isomorphic simple modules.
 
 ## The Ladder Structure and the Minimal Left Ideal
 

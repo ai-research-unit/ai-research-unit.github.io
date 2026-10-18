@@ -87,7 +87,7 @@ using $e_t^2 = e_t$, the cross term $2\vec w$, and $\vec w^2 = +e_t$. Hence a no
 $$
 \boxed{\; \tilde{Q}^2 = 2Q_t\,\tilde{Q} \;}
 \qquad\Longleftrightarrow\qquad
-\tilde{P} := \frac{\tilde{Q}}{2Q_t}\ \text{ is idempotent, }\ \tilde{P}^2 = \tilde{P},\quad \tilde{P}\neq 0 .
+\tilde\Pi := \frac{\tilde{Q}}{2Q_t}\ \text{ is idempotent, }\ \tilde\Pi^2 = \tilde\Pi,\quad \tilde\Pi\neq 0 .
 $$
 
 The nonzero complex multiples of idempotents are therefore exactly the non-pure zero divisors. The standard idempotent is
@@ -98,13 +98,13 @@ $$
 \vec u = u_x\vec e_x + u_y\vec e_y + u_z\vec e_z,\quad \vec u\cdot\vec u = 1 ,
 $$
 
-for which $\langle\tilde{P}\rangle_{\natural} = \tfrac14(1 - (i\vec u)^2) = \tfrac14(1 - \vec u\cdot\vec u) = 0$ and $\tilde{P}^2 = \tilde{P}$, using $(i\vec u)^2 = +\vec u\cdot\vec u$ and $\vec u\cdot\vec u=1$. The verification is one line in explicit quaternion arithmetic:
+for which $\langle\tilde\Pi\rangle_{\natural} = \tfrac14(1 - (i\vec u)^2) = \tfrac14(1 - \vec u\cdot\vec u) = 0$ and $\tilde\Pi^2 = \tilde\Pi$, using $(i\vec u)^2 = +\vec u\cdot\vec u$ and $\vec u\cdot\vec u=1$. The verification is one line in explicit quaternion arithmetic:
 
 $$
-\tilde{P}^2 = \tfrac14\left(e_t + 2i\vec u + (i\vec u)^2\right)
+\tilde\Pi^2 = \tfrac14\left(e_t + 2i\vec u + (i\vec u)^2\right)
 = \tfrac14\left(e_t + 2i\vec u - \vec u\vec u\right)
 = \tfrac14\left(e_t + 2i\vec u + e_t\right)
-= \tilde{P} .
+= \tilde\Pi .
 $$
 
 The two families are disjoint, because the vanishing of the scalar part is what separates them, and they exhaust the zero divisors. The set $\mathcal{Z}$ is the union of the nilpotent cone and the cone of idempotent multiples — a single complex cone of complex dimension three, stratified by the vanishing of $Q_t$.
@@ -182,10 +182,10 @@ $$
 so that
 
 $$
-\Box f(s) = \left[(\partial/\partial Q_t\,s)^2 + \sum_{\mu\in\{x,y,z\}}(\partial/\partial Q_\mu s)^2\right] f''(s)
-+ \bigl(\Box s\bigr) f'(s)
-= \left[-\frac{\omega^2}{c^2} + \vec k^2\right] f''(s)
-= \langle\tilde P\rangle_{\natural}\,f''(s),
+\Box f(s) = \left[(\partial/\partial Q_t\,s)^2 + \sum_{\mu\in\{x,y,z\}}(\partial/\partial Q_\mu s)^2\right] \frac{d^2f}{ds^2}(s)
++ \bigl(\Box s\bigr) \frac{df}{ds}(s)
+= \left[-\frac{\omega^2}{c^2} + \vec k^2\right] \frac{d^2f}{ds^2}(s)
+= \langle\tilde P\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 $$
 
 since $s$ is linear and $\Box s = 0$. Hence
@@ -294,7 +294,7 @@ $$
 
 so $\mathcal{Z}$ meets the material sector exactly in the light cone $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| = c|t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
-The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P$ satisfies $\Box f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \langle\tilde P\rangle_{\natural}f''$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
+The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P$ satisfies $\Box f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \langle\tilde P\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
 The light cone is the set on which the biquaternion algebra ceases to be invertible; the algebra's failure of division is the algebraic form of the existence of lightlike propagation.
 
@@ -310,7 +310,7 @@ The light cone is the set on which the biquaternion algebra ceases to be inverti
 | $\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$ | Division subalgebras: complex scalar line (centre); real quaternions |
 | $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate, $\mathbb{M}_-$ |
 | $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ | Interval; zero set is the light cone |
-| $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde{P}^2=\tilde{P}$ |
+| $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$ | Gradient, conjugate gradient, d'Alembertian |
 | $\tilde P = i\frac{\omega}{c}e_t + \vec k$ | Four-wavevector, $\mathbb{M}_-$ |

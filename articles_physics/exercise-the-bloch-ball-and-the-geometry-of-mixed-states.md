@@ -225,7 +225,7 @@ $$
 Together with the transition probability $\mathrm{Tr}(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)) = \cos^2(\theta/2)$ this gives the clean pair
 
 $$
-D^2 + \mathrm{Tr}(\tilde{P}\tilde{Q}) = 1 \qquad \text{for pure states,}
+D^2 + \mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)\bigr) = 1 \qquad \text{for pure states,}
 $$
 
 so the two notions of separation are complementary on the boundary: coincident directions give $D = 0$ and transition probability $1$, antipodal directions give $D = 1$ and transition probability $0$.
@@ -325,7 +325,7 @@ We have worked six problems on the geometry of the qubit state space, using only
 
 **Convex combinations.** A mixture of two pure states lies on the chord joining them, with $|\vec r|^2 = 1 - 2p(1-p)(1-\cos\theta)$ and linear entropy $p(1-p)(1-\cos\theta)$; it is pure only in the degenerate cases $p \in \{0,1\}$ or coincident directions.
 
-**Metric.** The trace distance is $D = \tfrac12|\vec r-\vec s|$ and the squared Hilbert–Schmidt distance is $2D^2$. For pure states $D = \sin(\theta/2)$ and the transition probability is $\cos^2(\theta/2)$, so $D^2 + \mathrm{Tr}(\tilde{P}\tilde{Q}) = 1$.
+**Metric.** The trace distance is $D = \tfrac12|\vec r-\vec s|$ and the squared Hilbert–Schmidt distance is $2D^2$. For pure states $D = \sin(\theta/2)$ and the transition probability is $\cos^2(\theta/2)$, so $D^2 + \mathrm{Tr}\bigl(\tilde\Pi(\vec r)\tilde\Pi(\vec s)\bigr) = 1$.
 
 **Centre and boundary.** The centre is the maximally mixed state $\tfrac12 e_t$, with minimal purity $\tfrac12$ and maximal entropy $\log 2$; the boundary $|\vec r| = 1$ consists of the pure states, equivalently the idempotents, the zero divisors, and the extreme points. Elements with $|\vec r| > 1$ are not states.
 

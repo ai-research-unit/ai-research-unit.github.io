@@ -78,15 +78,15 @@ $$
 \tilde V_{\mathrm p} = -\frac{i}{c}\,\tilde V^{\natural},
 $$
 
-which is the corpus's relation $\tilde U^2 = -\frac{i}{c}\tilde V^{\natural}$ of *The Lorentz Transformation as a Biquaternionic Rotation* written for $\tilde V_{\mathrm p} = \tilde U^2$. The paravector $\tilde V_{\mathrm p}$ is Hermitian and its time component is real; the four-velocity $\tilde V$ is anti-Hermitian and its time component is imaginary. The two are not related by the central $i$ alone — that would reverse the spatial sign — but by $i$ followed by the quaternion conjugate, which is what the change of time convention does.
+which is the corpus's relation $\tilde U_{\mathrm L}^2 = -\frac{i}{c}\tilde V^{\natural}$ of *The Lorentz Transformation as a Biquaternionic Rotation* written for $\tilde V_{\mathrm p} = \tilde U_{\mathrm L}^2$, where $\tilde U_{\mathrm L}$ is the Lorentz boost rotor. The paravector $\tilde V_{\mathrm p}$ is Hermitian and its time component is real; the four-velocity $\tilde V$ is anti-Hermitian and its time component is imaginary. The two are not related by the central $i$ alone — that would reverse the spatial sign — but by $i$ followed by the quaternion conjugate, which is what the change of time convention does.
 
-**The boost rotor is a paravector.** The corpus's boost rotor is $\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ with $\vec u$ a unit real vector; in the paravector basis it is
+**The boost rotor is a paravector.** The corpus writes it $\tilde U_{\mathrm L} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ with $\vec u$ a unit real vector; in the paravector basis it is
 
 $$
 L = \cosh\frac{w}{2} + \sinh\frac{w}{2}\cdot i\vec u = \cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u_v,
 $$
 
-with $\vec u_v = i\vec u$, a unit paravector-vector since $(i\vec u)^2 = -i^2\vec u\vec u = -\vec u\vec u = e_t$. The rotor is thus a **paravector** — a scalar plus a vector — and its square is the proper velocity,
+with $\vec u_v = i\vec u$, a unit paravector-vector since $(i\vec u)^2 = i^2\vec u\vec u = -\vec u\vec u = e_t$. The rotor is thus a **paravector** — a scalar plus a vector — and its square is the proper velocity,
 
 $$
 L^2 = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u_v\right)^2
@@ -94,7 +94,7 @@ L^2 = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u_v\right)^2
 = \cosh w\,e_t + \sinh w\,\vec u_v \;=\; \tilde V_{\mathrm p},
 $$
 
-using $\vec u_v^2 = e_t$. This is the corpus's relation $\tilde V_{\mathrm p} = \tilde U^2 = -\frac{i}{c}\tilde V^{\natural}$ read in the paravector basis: the square of the boost rotor is the **proper velocity** $\tilde V_{\mathrm p}$, a paravector, and the four-velocity $\tilde V$ is its companion under the change of time convention. The relation $\tilde V_{\mathrm p}\tilde V_{\mathrm p}^{\natural} = e_t$ is the statement that the four-velocity has fixed length.
+using $\vec u_v^2 = e_t$. This is the corpus's relation $\tilde V_{\mathrm p} = \tilde U_{\mathrm L}^2 = -\frac{i}{c}\tilde V^{\natural}$ read in the paravector basis: the square of the boost rotor is the **proper velocity** $\tilde V_{\mathrm p}$, a paravector, and the four-velocity $\tilde V$ is its companion under the change of time convention. The relation $\tilde V_{\mathrm p}\tilde V_{\mathrm p}^{\natural} = e_t$ is the statement that the four-velocity has fixed length.
 
 ## The Boost Rule
 
@@ -130,14 +130,14 @@ $$
 
 Adding the two gives the rule.
 
-The corresponding statement in the series' conventions is the rotor conjugation on the Hermitian subspace. Writing $p$ for the Hermitian element $p_te_t + i\vec p_e$ and $\tilde U$ for the corpus boost rotor, the two are the same element ($L = \tilde U$) and the same operation ($L\,p\,L^\dagger = \tilde U\,p\,\tilde U^{*}$, the reversion being the identity on $\mathbb{M}_+$), so that
+The corresponding statement in the series' conventions is the rotor conjugation on the Hermitian subspace. Writing $p$ for the Hermitian element $p_te_t + i\vec p_e$ and $\tilde U_{\mathrm L}$ for the Lorentz boost rotor, the two are the same element ($L = \tilde U_{\mathrm L}$) and the same operation ($L\,p\,L^\dagger = \tilde U_{\mathrm L}\,p\,\tilde U_{\mathrm L}^{*}$, the reversion being the identity on $\mathbb{M}_+$), so that
 
 $$
-\tilde U\,\tilde{Q}\,\tilde U^{*} = \tilde V_{\mathrm p}\,p_\parallel + p_\perp,
+\tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*} = \tilde V_{\mathrm p}\,p_\parallel + p_\perp,
 \qquad \tilde{Q} = p = p_te_t + i\vec p_e ,
 $$
 
-with $\tilde V_{\mathrm p} = \tilde U^2$. The rule is therefore not a new transformation law but the corpus's own law, written without the second factor.
+with $\tilde V_{\mathrm p} = \tilde U_{\mathrm L}^2$. The rule is therefore not a new transformation law but the corpus's own law, written without the second factor.
 
 **Why the rule is useful.** The rule multiplies only the part of $p$ coplanar with the boost plane and leaves the orthogonal part fixed. Unlike the sandwich it requires only a product with the proper velocity, and unlike a matrix it needs no basis in which the boost is aligned. The source uses it for the standard kinematical statements — the composition of velocities, the contraction of a moving rod, the relativity of simultaneity, the transformation of the electromagnetic field — and each becomes a one-line computation in the algebra.
 
@@ -214,7 +214,7 @@ The algebra of physical space, $\mathrm{Cl}_{3,0}$, is the Hermitian subspace $\
 | $p\bar p = p_t^2 - \vec p^2$ | Minkowski interval |
 | $\tilde Q = ip \in \mathbb{M}_-$ | The same vector in the corpus's material sector; $\langle\tilde Q\rangle_{\natural} = -p\bar p$ |
 | $\vec u_v$ | Unit paravector-vector, $\vec u_v^2 = e_t$ |
-| $L = \cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u_v$ | Boost rotor (a paravector); equals the corpus rotor $\cosh\frac{w}{2}+i\sinh\frac{w}{2}\vec u$ |
+| $L = \cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u_v$ | Boost rotor (a paravector); equals the corpus rotor $\tilde U_{\mathrm L}=\cosh\frac{w}{2}+i\sinh\frac{w}{2}\vec u$ |
 | $\tilde V_{\mathrm p} = L^2 = \cosh w + \sinh w\,\vec u_v$ | Proper velocity, unimodular |
 | $p_\parallel$, $p_\perp$ | Coplanar and orthogonal components of $p$ relative to the boost plane |
 | $p\mapsto \tilde V_{\mathrm p}\,p_\parallel+p_\perp$ | The boost rule |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Relativistic Mechanics in Biquaternionic Form* established the biquaternion dictionary for a single relativistic particle. The four-position, four-velocity, four-momentum, four-force, and four-current are elements of the anti-Hermitian subspace $\mathbb{M}_-$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the mass-shell relation is the biquaternion-norm condition $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$; and the Lorentz transformation acts on four-vectors by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with $\tilde U$ a unit-norm biquaternion. The companion article *The Lorentz Transformation as a Biquaternionic Rotation* supplied the boost biquaternion and its relation to the four-velocity.
+The companion article *Relativistic Mechanics in Biquaternionic Form* established the biquaternion dictionary for a single relativistic particle. The four-position, four-velocity, four-momentum, four-force, and four-current are elements of the anti-Hermitian subspace $\mathbb{M}_-$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the mass-shell relation is the biquaternion-norm condition $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$; and the Lorentz transformation acts on four-vectors by rotor conjugation $\tilde{Q} \mapsto \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$, with $\tilde U_{\mathrm L}$ the Lorentz rotor, a unit-norm biquaternion. The companion article *The Lorentz Transformation as a Biquaternionic Rotation* supplied the boost biquaternion and its relation to the four-velocity.
 
 This article extends that dictionary to the simplest system of more than one body: **two relativistic bodies**. The two bodies carry four-momenta $\tilde{P}_1, \tilde{P}_2 \in \mathbb{M}_-$; their interaction is left unspecified, because the two-body problem at the level analysed here is a question of kinematics, and that is exactly the level at which it is a question about the algebra. Three features make the biquaternion formulation natural:
 
@@ -14,7 +14,7 @@ This article extends that dictionary to the simplest system of more than one bod
 
 The article is the foundation for the later exercise on the relativistic kinematics of a two-body decay, so the kinematics are worked out explicitly: the centre-of-momentum energies and momentum, the relative rapidity, the invariant mass, the boost to an arbitrary frame, and the reduction to an effective one-body problem. A decay is the special case in which the total four-momentum is that of a single body at rest.
 
-The conventions are those of the companion articles: the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$; the scalar imaginary $i$ with $i^2 = -1$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex subspace $\mathbb{C}_{\mathbb{B}}$; the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$; and the rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ with $\tilde U\tilde U^{\natural} = e_t$, which implements the Lorentz transformation. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum value; $\vec v$ denotes particle velocities.
+The conventions are those of the companion articles: the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$; the scalar imaginary $i$ with $i^2 = -1$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex subspace $\mathbb{C}_{\mathbb{B}}$; the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$; and the rotor conjugation $\tilde{Q} \mapsto \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$, which implements the Lorentz transformation. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum value; $\vec v$ denotes particle velocities.
 
 ## The Two Four-Momenta in the Material Sector
 
@@ -168,7 +168,7 @@ $$
 \frac{d}{dt}(\vec p_1+\vec p_2) = 0.
 $$
 
-Two comments are in order. First, the conservation law is **Lorentz covariant**: if $\tilde{P}_1 + \tilde{P}_2$ is constant in one inertial frame, then applying the same rotor conjugation to both sides, $\tilde U\tilde{P}_1\tilde U^{*} + \tilde U\tilde{P}_2\tilde U^{*} = \tilde U(\tilde{P}_1+\tilde{P}_2)\tilde U^{*}$, shows that it is constant in every inertial frame. The statement of conservation is a statement about an element of $\mathbb{M}_-$, and the element transforms as a whole. Second, the four-forces above are differentiated with respect to a **common** coordinate time. Differentiating instead with respect to each body's proper time introduces the factors $\gamma_a$, since $d\tau_a = dt/\gamma_a$; the common coordinate time is the natural choice for a two-body conservation law.
+Two comments are in order. First, the conservation law is **Lorentz covariant**: if $\tilde{P}_1 + \tilde{P}_2$ is constant in one inertial frame, then applying the same rotor conjugation to both sides, $\tilde U_{\mathrm L}\tilde{P}_1\tilde U_{\mathrm L}^{*} + \tilde U_{\mathrm L}\tilde{P}_2\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}(\tilde{P}_1+\tilde{P}_2)\tilde U_{\mathrm L}^{*}$, shows that it is constant in every inertial frame. The statement of conservation is a statement about an element of $\mathbb{M}_-$, and the element transforms as a whole. Second, the four-forces above are differentiated with respect to a **common** coordinate time. Differentiating instead with respect to each body's proper time introduces the factors $\gamma_a$, since $d\tau_a = dt/\gamma_a$; the common coordinate time is the natural choice for a two-body conservation law.
 
 When the two bodies are not isolated but are subject to external four-forces, the individual four-momenta change and the sum is no longer conserved. The external-field case is the subject of the companion article on the relativistic particle in an external field; here the sum is conserved and is the natural constant of the motion.
 
@@ -334,15 +334,15 @@ $$
 
 which is the total kinetic energy of the daughters in the parent rest frame, split in the ratio $(E_1^*-m_1c^2)/(E_2^*-m_2c^2) = m_2/m_1$ in the non-relativistic limit derived below.
 
-If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the rotor conjugation $\tilde{P}_a = \tilde U\tilde{P}_a^*\tilde U^{*}$, where $\tilde U$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section:
+If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the rotor conjugation $\tilde{P}_a = \tilde U_{\mathrm L}\tilde{P}_a^*\tilde U_{\mathrm L}^{*}$, where $\tilde U_{\mathrm L}$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section:
 
 $$
-\tilde U = \tilde U^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\vec u_V,
+\tilde U_{\mathrm L} = \tilde U^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\vec u_V,
 \qquad
 \tanh\Psi = \frac{V}{c},
 $$
 
-the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde U^{*} = \tilde U$, so $\tilde U\tilde{P}_a^*\tilde U^{*}$ and $\tilde U^{*}\tilde{P}_a^*\tilde U$ are the same expression. Note also that the quaternion conjugate is *not* the Hermitian conjugate here, since $\tilde U^{\natural}_{\rm CM} \neq \tilde U_{\rm CM}^{*}$ for a pure boost.
+the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$, so $\tilde U_{\mathrm L}\tilde{P}_a^*\tilde U_{\mathrm L}^{*}$ and $\tilde U_{\mathrm L}^{*}\tilde{P}_a^*\tilde U_{\mathrm L}$ are the same expression. Note also that the quaternion conjugate is *not* the Hermitian conjugate here, since $\tilde U^{\natural}_{\rm CM} \neq \tilde U_{\rm CM}^{*}$ for a pure boost.
 
 In components this is the standard Lorentz transformation of a four-momentum,
 

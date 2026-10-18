@@ -98,11 +98,11 @@ so the solutions are exactly $0$ and $e_t$. The corresponding two-sided ideals $
 
 **Statement.** The radical of the biquaternion norm is non-trivial: there are non-zero $\tilde{Q}$ with $\langle\tilde{Q}\rangle_{\natural}=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.
 
-**Proof.** For the pure-state projector, $\tilde{P}^{\natural}(\vec u)=e_t-\tilde\Pi(\vec u)$ and hence
+**Proof.** For the pure-state idempotent, $\tilde{\Pi}^{\natural}(\vec u)=e_t-\tilde\Pi(\vec u)$ and hence
 $$
-N\bigl(\tilde\Pi(\vec u)\bigr)=\tilde\Pi(\vec u)\,\tilde{P}^{\natural}(\vec u)=\tilde\Pi(\vec u)\bigl(e_t-\tilde\Pi(\vec u)\bigr)=0
+N\bigl(\tilde\Pi(\vec u)\bigr)=\tilde\Pi(\vec u)\,\tilde{\Pi}^{\natural}(\vec u)=\tilde\Pi(\vec u)\bigl(e_t-\tilde\Pi(\vec u)\bigr)=0
 $$
-for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\tilde{P}^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_\mu$ are null non-zero vectors, since $\langle e_t\pm i\vec e_\mu\rangle_{\natural}=(1-1)e_t=0$.
+for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property $\tilde\Pi^2=\tilde\Pi$ together with $\tilde\Pi\tilde\Pi^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_\mu$ are null non-zero vectors, since $\langle e_t\pm i\vec e_\mu\rangle_{\natural}=(1-1)e_t=0$.
 
 **Consequence.** The state space is the boundary of the cone of a degenerate quadratic form. One cannot speak of the "length" of a state; the metric must be obtained as the second variation on the null boundary, and not from the form's value at a point.
 
@@ -154,13 +154,13 @@ for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property 
 
 **Statement.** There exist non-zero $\tilde{Q},\tilde{Q}_1\in\mathbb{B}$ with $\tilde{Q}\tilde{Q}_1=0$. Hence $\mathbb{B}$ has no multiplicative inverse operation defined on all its non-zero elements.
 
-**Proof.** The complementary pure-state projectors satisfy
+**Proof.** The complementary pure-state idempotents satisfy
 $$
 \tilde\Pi(\vec u)\,\bigl(e_t-\tilde\Pi(\vec u)\bigr)=0
 $$
 for every unit $\vec u$, with both factors non-zero. In the matrix model this is the statement that rank-one matrices of orthogonal ranges multiply to zero; an element is invertible exactly when $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}\neq0$, and the zero divisors are the elements of vanishing norm.
 
-**Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde{P}$ is idempotent with $\langle\tilde{P}\rangle_{\natural}=0$, hence a zero divisor, while a mixed state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$ has $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14(1-r^2)e_t\neq0$ and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{N\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
+**Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde\Pi$ is idempotent with $\langle\tilde\Pi\rangle_{\natural}=0$, hence a zero divisor, while a mixed state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$ has $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14(1-r^2)e_t\neq0$ and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{N\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
 
 **Remedy.** None is needed; the structure is that of a matrix algebra, and the relevant group for transformations is $\mathbb{B}^\times$, acting on the module. The point of recording the obstruction is that "the quaternions are a division algebra" does not survive complexification, and the biquaternion algebra must not be used as if it did.
 

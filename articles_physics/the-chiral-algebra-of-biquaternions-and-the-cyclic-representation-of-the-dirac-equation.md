@@ -111,7 +111,7 @@ $$
 
 for every $\mathcal{B}$.
 
-The correspondence with the corpus is again a Peirce correspondence but not an identity. The corpus's projectors are $\pi_{1,2} = \tfrac12(1 \pm \vec e_x)$, with $\pi_x \pi_y = 0$; the paper's $N$ and $\bar{N}$ play the same role for the light-cone direction $\vec u$, and the author's chiral projectors turn out to be the signed parts themselves. The corpus's chirality projectors are the $\tfrac12(1 \pm \gamma_5)$ of the matrix representation (*The Dirac Algebra and Biquaternions — A Dictionary*, *gamma-five and the chirality projectors*); the paper's are not $\gamma_5$ but the two Peirce components of the light-cone decomposition, which is a different split.
+The correspondence with the corpus is again a Peirce correspondence but not an identity. The corpus's idempotents are $\tilde\Pi_{1,2} = \tfrac12(1 \pm \vec e_x)$, with $\tilde\Pi_x \tilde\Pi_y = 0$; the paper's $N$ and $\bar{N}$ play the same role for the light-cone direction $\vec u$, and the author's chiral projectors turn out to be the signed parts themselves. The corpus's chirality projectors are the $\tfrac12(1 \pm \gamma_5)$ of the matrix representation (*The Dirac Algebra and Biquaternions — A Dictionary*, *gamma-five and the chirality projectors*); the paper's are not $\gamma_5$ but the two Peirce components of the light-cone decomposition, which is a different split.
 
 ### The Four Multiplication Types
 

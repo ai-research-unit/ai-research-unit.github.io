@@ -17,7 +17,7 @@ The conventions are those of the companion articles. The biquaternion algebra is
 In the standard formulation, the singlet state is a single vector $|\Psi^-\rangle$ in $\mathbb{C}^2\otimes\mathbb{C}^2$. In the biquaternion formulation, it is a single idempotent of the tensor product:
 
 $$
-P_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
+\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$
 
 This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $\vec e_\mu\otimes \vec e_\mu$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.
@@ -26,7 +26,7 @@ The same is true in Hilbert-space language, since $|\Psi^-\rangle$ is also a sin
 
 ### The singlet as one whole
 
-The language of the preceding paragraph is not only a figure of speech, and it has a precise counterpart in a collective set theory. In classical mereology the whole is primitive and the parts are what a division of the whole produces; a whole has many divisions, and two different divisions do not give two different objects. The singlet is exactly of this kind. It is one algebraic object, the idempotent $P_{\mathrm{singlet}}$, and the two subsystems appear only when the object is divided, whether by the partial trace, by a local projector, or by a change of tensor basis. The divisions differ in their factors and agree in their whole, which is what the mereological language asserts of the parts of an object.
+The language of the preceding paragraph is not only a figure of speech, and it has a precise counterpart in a collective set theory. In classical mereology the whole is primitive and the parts are what a division of the whole produces; a whole has many divisions, and two different divisions do not give two different objects. The singlet is exactly of this kind. It is one algebraic object, the idempotent $\tilde\Pi_{\mathrm{singlet}}$, and the two subsystems appear only when the object is divided, whether by the partial trace, by a local projector, or by a change of tensor basis. The divisions differ in their factors and agree in their whole, which is what the mereological language asserts of the parts of an object.
 
 Two features of the framework acquire, in this language, the status of definitions rather than of facts. The first is that the entanglement belongs to the whole and not to either division: the reduced state $\tfrac12 e_t$ is the same for the two subsystems, and the correlations are carried by the tensor-product terms of the whole. The second is that the singlet is not a pair of systems that happen to be correlated. The pairing is the tensor product, and the tensor product is the division; the state and its divisibility are the same datum. The mathematics of this interpretation is *Mereology and Collective Set Theory*, where the whole-first construction, the division relation and the passage between a division and its factors are developed for their own sake; the interpretation itself is a **physical interpretation** and is not developed further here.
 
@@ -53,7 +53,7 @@ is maximally entangled for every $\phi$, whereas the twelve patterns fix the rel
 The state of one subsystem is obtained by tracing out the other:
 
 $$
-\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_t.
+\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t.
 $$
 
 This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\rho_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \neq 0$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \neq 0$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.
@@ -63,7 +63,7 @@ This is the maximally mixed state of a qubit, at the centre of the Bloch ball. I
 The spin correlation function, computed in full in *Exercise: The Correlation Function of the Bell States*, is
 
 $$
-E(\vec u_a, \vec u_b) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ\bigl((i\vec u_a)\otimes(i\vec u_b)\bigr)\right) = -\vec u_a\cdot\vec u_b.
+E(\vec u_a, \vec u_b) = \mathrm{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ\bigl((i\vec u_a)\otimes(i\vec u_b)\bigr)\right) = -\vec u_a\cdot\vec u_b.
 $$
 
 This is the tensor-product trace pairing between the state idempotent and the correlation observable. It is the same algebraic operation — the trace pairing — that gives the Born rule for a single qubit. The correlation function is not a separate postulate; it is the natural pairing between two elements of the tensor-product algebra.
@@ -73,13 +73,13 @@ This is the tensor-product trace pairing between the state idempotent and the co
 The phenomenon of EPR steering — that measuring one particle's spin determines the conditional state of the other — has a particularly clean form in the biquaternion language. Suppose Alice measures particle 1 along $\vec u_a$ and obtains the outcome $+$. The unnormalized post-measurement joint state is
 
 $$
-\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr),
+\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr),
 $$
 
 where $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi(\vec u_a)\,\vec e_\mu\,\tilde\Pi(\vec u_a) = \tfrac{1}{2}a_k(\vec u_a - ie_t)$ and $\vec u_a - ie_t = -2i\tilde\Pi(\vec u_a)$, gives
 
 $$
-\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a),
+\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a),
 $$
 
 where $\tilde\Pi(-\vec u_a) = \tfrac{1}{2}(e_t - i\vec u_a)$. The normalized post-measurement state is therefore the product state
@@ -260,11 +260,11 @@ The honest position is this. The framework makes certain structural features of 
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\mu \vec e_\mu\otimes \vec e_\mu)$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\mu \vec e_\mu\otimes \vec e_\mu)$ | Singlet idempotent |
 | $\tilde\Pi(\pm\vec u_a) = \tfrac{1}{2}(e_t \pm i\vec u_a)$ | Single-qubit idempotents along $\vec u_a$ |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
-| $\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
-| $E(\vec u_a, \vec u_b) = \mathrm{Tr}(P_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b)))$ | Correlation function |
+| $\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
+| $E(\vec u_a, \vec u_b) = \mathrm{Tr}(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b)))$ | Correlation function |
 | $\tilde{U}\tilde{U}^{*} = e_t$ | Unitary element (reversible evolution) |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Tensor-product trace |

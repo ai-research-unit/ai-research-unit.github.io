@@ -78,7 +78,7 @@ The two eigenvalues of $\tilde{E}\tilde{E}^{*}$ are the two mass-squareds, and e
 
 **A real scalar, $\tilde{E}=s e_t$.** Then $\tilde{E}\tilde{E}^{*}=s^2 e_t$, a central element, and both eigenvalues equal $s^2$: the doublet is **degenerate**, the two particles have equal mass $|s|$, and the operator $\tilde{E}$ is a scalar in disguise. This is the case the source reads as the **proton–neutron** doublet, with the equal-mass pair of the isospin multiplet.
 
-**A Hermitian idempotent, $\tilde{E}=\tilde{\Pi}$.** Then $\tilde{E}^{*}=\tilde{E}$ and $\tilde{E}^2=\tilde{E}$, so $\tilde{E}\tilde{E}^{*}=\tilde{E}$, which is a rank-one projection: its eigenvalues are $1$ and $0$. The doublet is **split**, one mode massive and one massless. This is the case the source reads as the **electron–neutrino** doublet — the charged fermion and its massless partner.
+**A Hermitian idempotent, $\tilde{E}=\tilde{\Pi}$.** Then $\tilde{E}^{*}=\tilde{E}$ and $\tilde{E}^2=\tilde{E}$, so $\tilde{E}\tilde{E}^{*}=\tilde{E}$, an idempotent of rank one: its eigenvalues are $1$ and $0$. The doublet is **split**, one mode massive and one massless. This is the case the source reads as the **electron–neutrino** doublet — the charged fermion and its massless partner.
 
 **A singular biquaternion, $\langle\tilde{E}\rangle_{\natural} = \langle\tilde{E},\tilde{E}\rangle_{\natural}=0$.** Then $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2=0$, so at least one eigenvalue vanishes: **a singular mass field always leaves a massless mode**, whatever else it does. The identity $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde{E}=\vec e_x+i\vec e_y$ is singular, $\langle \vec e_x+i\vec e_y\rangle_{\natural}=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.
 
@@ -205,7 +205,7 @@ The article's accounting, collected.
 
 **Empirical, and not a framework result.** Barut's leptonic formula and its quark extension, and the moduli ratio $7.464$ that the source proposes as their explanation. The formula fits the three known charged leptons well and extrapolates to a fourth that does not exist; the ratio is exact arithmetic offered as a plausible coincidence.
 
-**Not supplied.** The framework derives no mass value. The algebra is scale-free — the companion article *Action, Units, and the Constants of the Biquaternion Universe* records that it fixes no scale — so a construction built on $\mathbb{B}$ cannot by itself produce the electron mass or any other. The construction's value is structural: it shows that the algebra can carry a **mass that is a field with its own equation**, whose eigenvalues are the masses of a doublet, and it makes the mass spectrum a question about a nonlinear system rather than about free Yukawa couplings. That reframing is the article's result; the mass values remain outside the framework, exactly as the standard-model agenda's ledger has it.
+**Not supplied.** The framework derives no mass value. The algebra is scale-free — the companion article *Conventions in the Biquaternion Universe* records in §*Physical Units* that it fixes no scale — so a construction built on $\mathbb{B}$ cannot by itself produce the electron mass or any other. The construction's value is structural: it shows that the algebra can carry a **mass that is a field with its own equation**, whose eigenvalues are the masses of a doublet, and it makes the mass spectrum a question about a nonlinear system rather than about free Yukawa couplings. That reframing is the article's result; the mass values remain outside the framework, exactly as the standard-model agenda's ledger has it.
 
 ## Open Questions
 
@@ -243,7 +243,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\tilde{E}\tilde{E}^{*},\ \tilde{E}^{*}\tilde{E}$ | Mass-squared operators of $\tilde Q_1$ and $\tilde Q_2$ |
 | $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$ | Determinant identity; vanishing forces a massless mode |
 | $\sigma=\tfrac12(e_t+i\vec u_\nu)$ | Idempotent (nullquat), $\sigma^2=\sigma$, $\langle \sigma\rangle_{\natural}=0$ |
-| $\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
+| $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
 | $\vec e_x+i\vec e_y$ | Singular mass field; mass-squareds $4,0$ |
 | $\mathrm{sn}(z,k),\ \mathrm{cn}(z,k)$ | Jacobi elliptic functions of modulus $k$ |
 | $k\in[0,1]$ | Modulus; $k=0$ de Broglie, $k=1$ soliton |

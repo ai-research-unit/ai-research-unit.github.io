@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, \vec e_x, \vec e_y, \vec e_z$, its conjugation, its central product $\tilde q\tilde{q}^{\natural}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.
+The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, \vec e_x, \vec e_y, \vec e_z$, its conjugation, its central product $\tilde q\tilde{q}^{\natural}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the direct sum decompositions they carry.
 
-Idempotents are the algebraic form of a projection, and in $\mathbb{H}_{\mathrm{s}}$ they do four jobs at once:
+An idempotent corresponds to a projector under its multiplication, and in $\mathbb{H}_{\mathrm{s}}$ the idempotents do four jobs at once:
 
 1. they give direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals;
 2. they are the non-scalar solutions of the quadratic equation $\tilde\pi^2 = \tilde\pi$, and they are in bijection with the roots of $+1$ in the vector part;
@@ -132,7 +132,7 @@ $$
 
 Thus $\tilde\pi(\eta)$ and $\tilde\pi(-\eta)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\eta, -\eta\}$. The two standard idempotents $\tilde\pi_{1,2}$ are the pair of the class $\{\pm \vec e_y\}$.
 
-## Idempotents as Projections
+## Idempotents and Direct Sum Decompositions
 
 An idempotent $\tilde\pi$ satisfies $\tilde\pi^2 = \tilde\pi$. Its **complement** $1 - \tilde\pi$ is also an idempotent, and
 
@@ -146,7 +146,7 @@ $$
 \mathbb{H}_{\mathrm{s}} = \tilde\pi\,\mathbb{H}_{\mathrm{s}} \oplus (1 - \tilde\pi)\,\mathbb{H}_{\mathrm{s}},
 $$
 
-and equally $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi \oplus \mathbb{H}_{\mathrm{s}}(1 - \tilde\pi)$ on the other side. This is the algebraic content of the statement that idempotents correspond to projections: the idempotent is the projection, its complement is the complementary projection, and the algebra splits as a module into the image of one and the image of the other.
+and equally $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi \oplus \mathbb{H}_{\mathrm{s}}(1 - \tilde\pi)$ on the other side. This is the algebraic content of the statement that idempotents correspond to projectors under multiplication: the multiplication by the idempotent is the projector, its complement gives the complementary projector, and the algebra splits as a module into the image of one and the image of the other.
 
 For the standard pair this reads
 

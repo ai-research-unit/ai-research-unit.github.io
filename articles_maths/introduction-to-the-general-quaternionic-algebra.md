@@ -246,7 +246,7 @@ $$
 
 ### The Idempotents
 
-**Definition.** Let $\star$ be a product on $\mathbb{B}$. An element is **idempotent of $\star$** when $\tilde Q_2\star\tilde Q_2=\tilde Q_2$, and of **index two**, or **square-zero**, when $\tilde Q_2\neq0$ and $\tilde Q_2\star\tilde Q_2=0$. The definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition* and §*The Nilpotent*, and they name the product at every step; throughout this article the product is the multiplication $\tilde Q_1^{\natural}\tilde Q_2$.
+**Definition.** Let $\star$ be a product on $\mathbb{B}$. An element is **idempotent of $\star$** when $\tilde Q_2\star\tilde Q_2=\tilde Q_2$, and of **index two**, or **square-zero**, when $\tilde Q_2\neq0$ and $\tilde Q_2\star\tilde Q_2=0$. The definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Idempotent, the Hermitian Idempotent and the Peirce Decomposition* and §*The Nilpotent*, and they name the product at every step; throughout this article the product is the multiplication $\tilde Q_1^{\natural}\tilde Q_2$.
 
 **Proposition.** The idempotents of the multiplication are $0$ and $e_t$.
 

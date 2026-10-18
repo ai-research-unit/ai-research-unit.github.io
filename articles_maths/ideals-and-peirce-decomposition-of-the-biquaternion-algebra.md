@@ -65,7 +65,7 @@ $$
 \tilde\Xi\tilde\Pi_+=\tilde\Pi_+\tilde\Xi=\tilde\Pi_+, \qquad \tilde\Xi\tilde\Pi_-=\tilde\Pi_-\tilde\Xi=-\tilde\Pi_- .
 $$
 
-The construction inverts: a nontrivial idempotent $e$ gives the root $2e-e_t$, since $(2e-e_t)^2=4e^2-4e+e_t=e_t$, and the root returns $e$ as $\tilde\Pi_+(2e-e_t)=e$. So the complete orthogonal pairs of idempotents of $\mathbb{B}$ are exactly the pairs of the roots of $+1$, and a root and its opposite give the same pair. The computation and the classification of the roots are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Two Idempotents of a Root* and §*The Correspondence With the Roots of One*.
+The construction inverts: a nontrivial idempotent $\tilde\Pi$ gives the root $2\tilde\Pi-e_t$, since $(2\tilde\Pi-e_t)^2=4\tilde\Pi^2-4\tilde\Pi+e_t=e_t$, and the root returns $\tilde\Pi$ as $\tilde\Pi_+(2\tilde\Pi-e_t)=\tilde\Pi$. So the complete orthogonal pairs of idempotents of $\mathbb{B}$ are exactly the pairs of the roots of $+1$, and a root and its opposite give the same pair. The computation and the classification of the roots are *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Two Idempotents of a Root* and §*The Correspondence With the Roots of One*.
 
 The **standard pair** is the pair of the root $i\vec e_z$, for which $(i\vec e_z)^2=i^2\vec e_z^2=e_t$:
 
@@ -75,9 +75,9 @@ $$
 
 The two are orthogonal, sum to $e_t$, are Hermitian, $\tilde\Pi_+^{*}=\tilde\Pi_+$ and $\tilde\Pi_-^{*}=\tilde\Pi_-$, and are primitive; they generate the off-diagonal elements of the next section.
 
-In the matrix model the primitive idempotents are exactly the nontrivial ones. An idempotent of $M_2(\mathbb{C})$ is diagonalisable with eigenvalues in $\{0,1\}$, hence of rank $0$, $1$ or $2$: the two extremes are the trivial idempotents $0$ and $e_t$, and a rank-one idempotent is primitive, because a sum of two nonzero orthogonal idempotents would have image of dimension at least two. So the nontrivial idempotents of $\mathbb{B}$ and its primitive idempotents are the same set, and each nontrivial idempotent $e$ comes with the complementary primitive idempotent $e_t - e$.
+In the matrix model the primitive idempotents are exactly the nontrivial ones. An idempotent of $M_2(\mathbb{C})$ is diagonalisable with eigenvalues in $\{0,1\}$, hence of rank $0$, $1$ or $2$: the two extremes are the trivial idempotents $0$ and $e_t$, and a rank-one idempotent is primitive, because a sum of two nonzero orthogonal idempotents would have image of dimension at least two. So the nontrivial idempotents of $\mathbb{B}$ and its primitive idempotents are the same set, and each nontrivial idempotent $\tilde\Pi$ comes with the complementary primitive idempotent $e_t - \tilde\Pi$.
 
-The classification of the idempotents of $\mathbb{B}$ — the trivial idempotents, the halving map on the roots of $+1$, the Hermitian projections and the dimension of the idempotent set — is the subject of *Square Roots of One and the Idempotents of the Biquaternion Algebra*.
+The classification of the idempotents of $\mathbb{B}$ — the trivial idempotents, the halving map on the roots of $+1$, the Hermitian idempotents and the dimension of the idempotent set — is the subject of *Square Roots of One and the Idempotents of the Biquaternion Algebra*.
 
 ## The Off-Diagonal Elements
 
@@ -107,7 +107,7 @@ $$
 A = eAe \oplus eAf \oplus fAe \oplus fAf,
 $$
 
-whose summands are the **Peirce spaces**. The corner $eAe$ is a subalgebra with identity $e$; the off-diagonal corners are bimodules over the diagonal ones and carry no identity. The expansion, the directness of the four terms and the product rule below are proved in *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, where the case of a **central** idempotent is also separated: for a central $e$ the off-diagonal corners vanish and the sum is a product of algebras. That special case does not arise here, since the idempotents of this article lie in a simple algebra and no nontrivial idempotent of $\mathbb{B}$ is central. In $\mathbb{B}$ the pair $(e, f)$ is the pair of the root $\tilde\Xi=e-f=2e-e_t$ of $+1$, so the decomposition written here is the one attached to that root (§*From One Idempotent to Its Complement*).
+whose summands are the **Peirce spaces**. The corner $eAe$ is a subalgebra with identity $e$; the off-diagonal corners are bimodules over the diagonal ones and carry no identity. The expansion, the directness of the four terms and the product rule below are proved in *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, where the case of a **central** idempotent is also separated: for a central $e$ the off-diagonal corners vanish and the sum is a product of algebras. That special case does not arise here, since the idempotents of this article lie in a simple algebra and no nontrivial idempotent of $\mathbb{B}$ is central. In $\mathbb{B}$ the pair $(\tilde\Pi, \tilde\Pi^{\perp})$ is the pair of the root $\tilde\Xi=\tilde\Pi-\tilde\Pi^{\perp}=2\tilde\Pi-e_t$ of $+1$, so the decomposition written here is the one attached to that root (§*From One Idempotent to Its Complement*).
 
 ### A Complete Orthogonal Family
 
@@ -169,10 +169,10 @@ This is the rule of §*A Complete Orthogonal Family* read on the signs: a produc
 
 **The Peirce decompositions of $\mathbb{B}$ relative to a complete orthogonal pair of idempotents are in bijection with the roots of $+1$ modulo the sign change $\tilde\Xi\sim-\tilde\Xi$: a root and its opposite give the same decomposition, and no two other roots give the same one.**
 
-The map of §*Idempotents and Orthogonal Idempotents* sends a root $\tilde\Xi$ to the pair $\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi)$, hence to its decomposition. It is surjective, because a complete orthogonal pair $(e,f)$ gives the root $\tilde\Xi=e-f$, whose square is
+The map of §*Idempotents and Orthogonal Idempotents* sends a root $\tilde\Xi$ to the pair $\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi)$, hence to its decomposition. It is surjective, because a complete orthogonal pair $(\tilde\Pi,\tilde\Pi^{\perp})$ gives the root $\tilde\Xi=\tilde\Pi-\tilde\Pi^{\perp}$, whose square is
 
 $$
-\tilde\Xi^2 = e^2-ef-fe+f^2 = e+f = e_t ,
+\tilde\Xi^2 = \tilde\Pi^2-\tilde\Pi\tilde\Pi^{\perp}-\tilde\Pi^{\perp}\tilde\Pi+(\tilde\Pi^{\perp})^2 = \tilde\Pi+\tilde\Pi^{\perp} = e_t ,
 $$
 
 so the pair is the pair of a root and its decomposition is the one of that root. It is injective on the classes, because the root is read back from the pair, $\tilde\Xi=\tilde\Pi_+ - \tilde\Pi_-$, so a pair determines the root up to the interchange of its two members; and the interchange is exactly the replacement of the root by its opposite, $\tilde\Pi_+(-\tilde\Xi)=\tilde\Pi_-(\tilde\Xi)$ and $\tilde\Pi_-(-\tilde\Xi)=\tilde\Pi_+(\tilde\Xi)$. So the classes $\{\tilde\Xi,-\tilde\Xi\}$, the unordered pairs of idempotents and the decompositions correspond one to one.
@@ -187,33 +187,33 @@ So the Peirce decompositions of $\mathbb{B}$ form a two-real-parameter family of
 
 ### From One Idempotent to Its Complement
 
-Over $\mathbb{B}$ the decomposition relative to a pair of idempotents is forced by a single idempotent, equivalently by a single root. Let $e \in \mathbb{B}$ be nontrivial and put $f = e_t - e$; then
+Over $\mathbb{B}$ the decomposition relative to a pair of idempotents is forced by a single idempotent, equivalently by a single root. Let $\tilde\Pi \in \mathbb{B}$ be nontrivial and put $\tilde\Pi^{\perp} = e_t - \tilde\Pi$; then
 
 $$
-\tilde\Xi = e - f = 2e - e_t
+\tilde\Xi = \tilde\Pi - \tilde\Pi^{\perp} = 2\tilde\Pi - e_t
 $$
 
-is a root of $+1$, since $\tilde\Xi^2 = e + f = e_t$, and $e = \tilde\Pi_+(\tilde\Xi)$, $f = \tilde\Pi_-(\tilde\Xi)$: a nontrivial idempotent is a root in disguise, and the idempotent, the root $\tilde\Xi = 2e-e_t$, the unordered pair $\{e,f\}$ and the decomposition carry the same information. By §*Idempotents and Orthogonal Idempotents* both $e$ and $f$ are primitive, they are orthogonal, and $e + f = e_t$, so $e$ alone determines the pair $(e, f)$ and the decomposition
+is a root of $+1$, since $\tilde\Xi^2 = \tilde\Pi + \tilde\Pi^{\perp} = e_t$, and $\tilde\Pi = \tilde\Pi_+(\tilde\Xi)$, $\tilde\Pi^{\perp} = \tilde\Pi_-(\tilde\Xi)$: a nontrivial idempotent is a root in disguise, and the idempotent, the root $\tilde\Xi = 2\tilde\Pi-e_t$, the unordered pair $\{\tilde\Pi,\tilde\Pi^{\perp}\}$ and the decomposition carry the same information. By §*Idempotents and Orthogonal Idempotents* both $\tilde\Pi$ and $\tilde\Pi^{\perp}$ are primitive, they are orthogonal, and $\tilde\Pi + \tilde\Pi^{\perp} = e_t$, so $\tilde\Pi$ alone determines the pair $(\tilde\Pi, \tilde\Pi^{\perp})$ and the decomposition
 
 $$
-\mathbb{B} = e\mathbb{B}e \oplus e\mathbb{B}f \oplus f\mathbb{B}e \oplus f\mathbb{B}f .
+\mathbb{B} = \tilde\Pi\mathbb{B}\tilde\Pi \oplus \tilde\Pi\mathbb{B}\tilde\Pi^{\perp} \oplus \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi \oplus \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp} .
 $$
 
 Every nontrivial idempotent is conjugate to $\tilde\Pi_+$ (§*Systems of Matrix Units*), so this is the decomposition of §*The Biquaternion Case* transported by a unit: each corner is the conjugate of the corresponding standard corner and is therefore a line over $\mathbb{C}$,
 
 $$
-e\mathbb{B}e = \mathbb{C}e, \qquad f\mathbb{B}f = \mathbb{C}f, \qquad e\mathbb{B}f = \mathbb{C}u, \qquad f\mathbb{B}e = \mathbb{C}w,
+\tilde\Pi\mathbb{B}\tilde\Pi = \mathbb{C}\tilde\Pi, \qquad \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp} = \mathbb{C}\tilde\Pi^{\perp}, \qquad \tilde\Pi\mathbb{B}\tilde\Pi^{\perp} = \mathbb{C}u, \qquad \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi = \mathbb{C}w,
 $$
 
-where $u$ and $w$ are any nonzero elements of the two mixed corners. The shape does not move with $e$; only the four lines do. The two mixed corners are square-zero, so their nonzero elements are nilpotent (§*A Complete Orthogonal Family*), and a normalised pair multiplies back onto the diagonal, $e = uw$ with $u^2 = w^2 = 0$: every nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents (§*Systems of Matrix Units*).
+where $u$ and $w$ are any nonzero elements of the two mixed corners. The shape does not move with $\tilde\Pi$; only the four lines do. The two mixed corners are square-zero, so their nonzero elements are nilpotent (§*A Complete Orthogonal Family*), and a normalised pair multiplies back onto the diagonal, $\tilde\Pi = uw$ with $u^2 = w^2 = 0$: every nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents (§*Systems of Matrix Units*).
 
-Read in the matrix model, the idempotent $e$ is a rank-one projector. The standard pair is the two diagonal projectors
+Read in the matrix model, the idempotent $\tilde\Pi$ corresponds to a rank-one projector. The standard pair maps to the two diagonal projectors
 
 $$
 \mathsf{M}_2(\tilde\Pi_+)=\begin{pmatrix}1&0\\0&0\end{pmatrix}, \qquad \mathsf{M}_2(\tilde\Pi_-)=\begin{pmatrix}0&0\\0&1\end{pmatrix},
 $$
 
-and a general primitive idempotent is determined by two lines of $\mathbb{C}^2$: its **image** line $L$, on which it is the identity, and its **kernel** line $K$, which it annihilates, with $L \oplus K = \mathbb{C}^2$. The map $(L, K) \mapsto e$ is a bijection from the ordered pairs of distinct lines of $\mathbb{P}^1(\mathbb{C})$ onto the primitive idempotents, so these form the set $\mathbb{P}^1(\mathbb{C}) \times \mathbb{P}^1(\mathbb{C}) \setminus \Delta$, where $\Delta$ is the diagonal of equal pairs, of real dimension $4$; this is the four-dimensional idempotent manifold of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence With the Roots of One*, read in the coordinates of the matrix model.
+and a general primitive idempotent is determined by two lines of $\mathbb{C}^2$: its **image** line $L$, on which it is the identity, and its **kernel** line $K$, which it annihilates, with $L \oplus K = \mathbb{C}^2$. The map $(L, K) \mapsto \mathsf{M}_2(\tilde\Pi)$ is a bijection from the ordered pairs of distinct lines of $\mathbb{P}^1(\mathbb{C})$ onto the primitive idempotent matrices, so these form the set $\mathbb{P}^1(\mathbb{C}) \times \mathbb{P}^1(\mathbb{C}) \setminus \Delta$, where $\Delta$ is the diagonal of equal pairs, of real dimension $4$; this is the four-dimensional idempotent manifold of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence With the Roots of One*, read in the coordinates of the matrix model.
 
 ### The Peirce Table
 
@@ -325,23 +325,23 @@ $$
 E_{11} = \tilde\Pi_+, \qquad E_{12} = \vec\Upsilon_x, \qquad E_{21} = \vec\Upsilon_y, \qquad E_{22} = \tilde\Pi_- .
 $$
 
-**Construction from an arbitrary idempotent.** Fix a primitive $e$ and put $f = e_t - e$; choose nonzero $u \in e\mathbb{B}f$ and $w \in f\mathbb{B}e$. Under a conjugacy carrying the standard pair to $(e, f)$ (§*From One Idempotent to Its Complement*), the elements $u$ and $w$ are the images of $\alpha\vec\Upsilon_x$ and $\beta\vec\Upsilon_y$ for some $\alpha, \beta \in \mathbb{C}^\times$, and the standard products $\vec\Upsilon_x\vec\Upsilon_y = \tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x = \tilde\Pi_-$ give
+**Construction from an arbitrary idempotent.** Fix a primitive $\tilde\Pi$ and put $\tilde\Pi^{\perp} = e_t - \tilde\Pi$; choose nonzero $u \in \tilde\Pi\mathbb{B}\tilde\Pi^{\perp}$ and $w \in \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi$. Under a conjugacy carrying the standard pair to $(\tilde\Pi, \tilde\Pi^{\perp})$ (§*From One Idempotent to Its Complement*), the elements $u$ and $w$ are the images of $\alpha\vec\Upsilon_x$ and $\beta\vec\Upsilon_y$ for some $\alpha, \beta \in \mathbb{C}^\times$, and the standard products $\vec\Upsilon_x\vec\Upsilon_y = \tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x = \tilde\Pi_-$ give
 
 $$
-u w = \alpha\beta\, e, \qquad w u = \alpha\beta\, f .
+u w = \alpha\beta\,\tilde\Pi, \qquad w u = \alpha\beta\,\tilde\Pi^{\perp} .
 $$
 
 With $\lambda = \alpha\beta \in \mathbb{C}^\times$ the same on both sides, the elements
 
 $$
-E_{11} = e, \qquad E_{22} = f, \qquad E_{12} = u, \qquad E_{21} = \lambda^{-1} w
+E_{11} = \tilde\Pi, \qquad E_{22} = \tilde\Pi^{\perp}, \qquad E_{12} = u, \qquad E_{21} = \lambda^{-1} w
 $$
 
-form a system of matrix units with $E_{11} = e$. The pair $(u, w)$ is not determined by $e$: replacing $u$ by $\mu u$ and $w$ by $\mu^{-1} w$ with $\mu \in \mathbb{C}^\times$ leaves $\lambda$ and every product of the system unchanged. A fixed primitive idempotent therefore determines its Peirce decomposition but carries a reciprocal $\mathbb{C}^\times$ of normalised mixed bases, the off-diagonal rescaling that appears as the diagonal torus in the proof of the theorem below.
+form a system of matrix units with $E_{11} = \tilde\Pi$. The pair $(u, w)$ is not determined by $\tilde\Pi$: replacing $u$ by $\mu u$ and $w$ by $\mu^{-1} w$ with $\mu \in \mathbb{C}^\times$ leaves $\lambda$ and every product of the system unchanged. A fixed primitive idempotent therefore determines its Peirce decomposition but carries a reciprocal $\mathbb{C}^\times$ of normalised mixed bases, the off-diagonal rescaling that appears as the diagonal torus in the proof of the theorem below.
 
 **Proposition (a nontrivial idempotent is a product of two nilpotents).** Every nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents, and the two mixed units of its Peirce decomposition supply the factorisation.
 
-*Proof.* Let $e$ be a nontrivial idempotent and $f = e_t - e$ its complement, so that $e$ and $f$ are primitive, orthogonal and sum to $e_t$. The two mixed corners $e\mathbb{B}f$ and $f\mathbb{B}e$ are square-zero (§*From One Idempotent to Its Complement*), so every nonzero $u \in e\mathbb{B}f$ and every nonzero $w \in f\mathbb{B}e$ is nilpotent, $u^2 = w^2 = 0$. By the construction above, $uw = \lambda e$ for some $\lambda \in \mathbb{C}^\times$; replacing $w$ by $\lambda^{-1} w$ keeps it in $f\mathbb{B}e$, nonzero and square-zero, and gives $uw = e$. So $e$ is the product of the two nilpotents $u$ and $\lambda^{-1} w$. The standard case is the multiplication table of §*The Off-Diagonal Elements*, $\vec\Upsilon_x\vec\Upsilon_y = \tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x = \tilde\Pi_-$ with $\vec\Upsilon_x^2 = \vec\Upsilon_y^2 = 0$.
+*Proof.* Let $\tilde\Pi$ be a nontrivial idempotent and $\tilde\Pi^{\perp} = e_t - \tilde\Pi$ its complement, so that $\tilde\Pi$ and $\tilde\Pi^{\perp}$ are primitive, orthogonal and sum to $e_t$. The two mixed corners $\tilde\Pi\mathbb{B}\tilde\Pi^{\perp}$ and $\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi$ are square-zero (§*From One Idempotent to Its Complement*), so every nonzero $u \in \tilde\Pi\mathbb{B}\tilde\Pi^{\perp}$ and every nonzero $w \in \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi$ is nilpotent, $u^2 = w^2 = 0$. By the construction above, $uw = \lambda \tilde\Pi$ for some $\lambda \in \mathbb{C}^\times$; replacing $w$ by $\lambda^{-1} w$ keeps it in $\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi$, nonzero and square-zero, and gives $uw = \tilde\Pi$. So $\tilde\Pi$ is the product of the two nilpotents $u$ and $\lambda^{-1} w$. The standard case is the multiplication table of §*The Off-Diagonal Elements*, $\vec\Upsilon_x\vec\Upsilon_y = \tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x = \tilde\Pi_-$ with $\vec\Upsilon_x^2 = \vec\Upsilon_y^2 = 0$.
 
 The trivial idempotent $e_t$ is the one idempotent that is not such a product: if $uv = e_t$ then $u$ has the right inverse $v$, so $u$ is a unit, whereas a nilpotent is not a unit. The other trivial idempotent, $0$, is a product of two nilpotents, $0 \cdot 0 = 0$. Among the idempotents of $\mathbb{B}$, therefore, all but $e_t$ are products of two nilpotents.
 
@@ -385,7 +385,7 @@ So the simple module underlying each minimal left ideal is the standard two-dime
 
 A **minimal left ideal** is a nonzero left ideal containing no nonzero proper left ideal; equivalently, a simple submodule of the left regular module. A **minimal right ideal** is defined the same way on the right.
 
-Over $\mathbb{C}$, since $\mathbb{B}$ is semisimple, every left ideal of $\mathbb{B}$ is a direct sum of minimal left ideals, and every minimal left ideal is of the form $\mathbb{B}e$ for a primitive idempotent $e$. The examples are the left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ of §*The Decomposition into Minimal Left and Right Ideals*, and all minimal left ideals are isomorphic as left $\mathbb{B}$-modules: a general one is obtained from $\mathbb{B}\tilde\Pi_+$ by an algebra automorphism, so it has the same shape in a suitable basis. Dually, every minimal right ideal is isomorphic to $\tilde\Pi_+\mathbb{B}$. Thus there is one isomorphism class of simple left modules and one of simple right modules. Being nonzero proper one-sided ideals, none of them is two-sided — which is exactly why their abundance is compatible with §*The Two-Sided Ideals: Simplicity of $\mathbb{B}$*.
+Over $\mathbb{C}$, since $\mathbb{B}$ is semisimple, every left ideal of $\mathbb{B}$ is a direct sum of minimal left ideals, and every minimal left ideal is of the form $\mathbb{B}\tilde\Pi$ for a primitive idempotent $\tilde\Pi$. The examples are the left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ of §*The Decomposition into Minimal Left and Right Ideals*, and all minimal left ideals are isomorphic as left $\mathbb{B}$-modules: a general one is obtained from $\mathbb{B}\tilde\Pi_+$ by an algebra automorphism, so it has the same shape in a suitable basis. Dually, every minimal right ideal is isomorphic to $\tilde\Pi_+\mathbb{B}$. Thus there is one isomorphism class of simple left modules and one of simple right modules. Being nonzero proper one-sided ideals, none of them is two-sided — which is exactly why their abundance is compatible with §*The Two-Sided Ideals: Simplicity of $\mathbb{B}$*.
 
 ## The Lattice of Left Ideals
 
@@ -454,7 +454,7 @@ On the parametrizing projective line the induced map $t \mapsto -1/\bar{t}$ has 
 | Minimal left ideals | all isomorphic | same; $\sigma$ pairs them, none stable |
 | Minimal right ideals | all isomorphic | same |
 | Peirce decomposition | $\mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_x \oplus \mathbb{C}\vec\Upsilon_y \oplus \mathbb{C}\tilde\Pi_-$, four one-dimensional corners | the same four real planes; $\sigma$ permutes them in pairs |
-| Peirce datum | one primitive idempotent $e$, equivalently the root $2e - e_t$ of $+1$; the complement $e_t - e$ is forced, and a root and its opposite give the same decomposition | the same |
+| Peirce datum | one primitive idempotent $\tilde\Pi$, equivalently the root $2\tilde\Pi - e_t$ of $+1$; the complement $e_t - \tilde\Pi$ is forced, and a root and its opposite give the same decomposition | the same |
 | Mixed basis | a reciprocal $\mathbb{C}^\times$ of normalised bases of the two mixed lines | the same |
 | Peirce coordinates | the entries of $\mathsf{M}_2(\tilde Q)$; $a_{11}a_{22}-a_{12}a_{21} = \langle\tilde Q\rangle_{\natural}$ | the same, over $\mathbb{R}$ |
 | Matrix units | the standard system $\tilde\Pi_+, \vec\Upsilon_x, \vec\Upsilon_y, \tilde\Pi_-$ | the same; every system is conjugate to it |
@@ -479,9 +479,9 @@ The Peirce decomposition is the second reading of the same four-dimensional spac
 | $a_{ij}$ | Peirce coordinate, the coefficient of the corner $\mathbb{B}_{st} = \tilde\Pi_s\mathbb{B}\tilde\Pi_t$; the $(i,j)$ entry of $\mathsf{M}_2(\tilde Q)$, the position $1$ carrying the $+$ member and the position $2$ the $-$ member |
 | $\mathsf{M}_2$ | The matrix element representation $\mathbb{B} \cong M_2(\mathbb{C})$, whose entries are the Peirce coordinates |
 | $E_{ij}$ | A system of $2\times2$ matrix units, $E_{ij}E_{kl} = \delta_{jk}E_{il}$, $E_{11}+E_{22} = e_t$ |
-| $\tilde\Xi = \tilde\Pi_+ - \tilde\Pi_-$ | A root of $+1$ and its pair; a root and its opposite give the same pair, and the root of an idempotent $e$ is $2e - e_t$ |
-| $e, f = e_t - e$ | A primitive idempotent and its complement, the pair of the root $2e - e_t$; one nontrivial $e$ forces the pair $(e, f)$ |
-| $u \in e\mathbb{B}f$, $w \in f\mathbb{B}e$ | Nonzero mixed elements; $uw = \lambda e$ and $wu = \lambda f$ with $\lambda \in \mathbb{C}^\times$ |
+| $\tilde\Xi = \tilde\Pi_+ - \tilde\Pi_-$ | A root of $+1$ and its pair; a root and its opposite give the same pair, and the root of an idempotent $\tilde\Pi$ is $2\tilde\Pi - e_t$ |
+| $\tilde\Pi, \tilde\Pi^{\perp} = e_t - \tilde\Pi$ | A primitive idempotent and its complement, the pair of the root $2\tilde\Pi - e_t$; one nontrivial $\tilde\Pi$ forces the pair $(\tilde\Pi, \tilde\Pi^{\perp})$ |
+| $u \in \tilde\Pi\mathbb{B}\tilde\Pi^{\perp}$, $w \in \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi$ | Nonzero mixed elements; $uw = \lambda \tilde\Pi$ and $wu = \lambda \tilde\Pi^{\perp}$ with $\lambda \in \mathbb{C}^\times$ |
 | $A_0, A_1$ | The diagonal and the mixed parts of the Peirce decomposition, the two graded components |
 | $\natural, \bar{\cdot}, {}^{*}$ | The natural, the bar (coefficient) and the Hermitian conjugations, with ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ |
 | $\sigma$ | The real structure, pairing the two standard minimal left ideals and the Peirce corners |

@@ -4,7 +4,7 @@
 
 The companion articles develop a formulation of quantum physics in which states and observables are elements of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
 
-The claim to be established is that the informational unit of the framework — the **qubit** — is the **defining module** of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the unique simple left module $S$ on which $\mathbb{B}$ acts faithfully. A complex two-dimensional space is not chosen and then equipped with operators; it is the object the algebra is a matrix algebra *of*. The state vectors are elements of $S$, the rank-one projectors on $S$ are exactly the idempotents of $\mathbb{M}_+$ that have trace one, and the inner product that quantum physics requires is the algebra's own trace pairing, restricted to the module.
+The claim to be established is that the informational unit of the framework — the **qubit** — is the **defining module** of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the unique simple left module $S$ on which $\mathbb{B}$ acts faithfully. A complex two-dimensional space is not chosen and then equipped with operators; it is the object the algebra is a matrix algebra *of*. The state vectors are elements of $S$; the rank-one projectors on $S$ correspond exactly to the idempotents of $\mathbb{M}_+$ that have trace one; and the inner product that quantum physics requires is the algebra's own trace pairing, restricted to the module.
 
 This is the informational interpretation of a structural fact. The article does not claim that the biquaternion algebra predicts the existence of a two-state system, nor that it excludes systems of other dimension: it claims that *if* the informational sector is described by $\mathbb{B}$, then its elementary carrier is forced, because an algebra of $2\times2$ complex matrices has exactly one simple module up to isomorphism, and that module is two-dimensional over $\mathbb{C}$. The qubit is native in the sense that it is read off the algebra rather than imposed on it. What is genuinely open is whether the tensor product $\mathbb{B}\otimes\mathbb{B}$, on which the multi-qubit information-theoretic articles of this subcategory depend, is native in the same sense; that question is raised here and left where the companion articles leave it.
 
@@ -127,7 +127,7 @@ It is worth separating the two uses of the word "state" that this structure prod
 
 ### Rank-one idempotents and rays
 
-For $|u\rangle\in S$ with $\langle u|u\rangle = 1$, the rank-one projector $|u\rangle\langle u|$ is an element of $\mathbb{M}_+$ and satisfies
+For $|u\rangle\in S$ with $\langle u|u\rangle = 1$, the rank-one idempotent $|u\rangle\langle u|$ is an element of $\mathbb{M}_+$ and satisfies
 
 $$
 \bigl(|u\rangle\langle u|\bigr)^2 = |u\rangle\langle u|, \qquad \mathrm{Tr}\bigl(|u\rangle\langle u|\bigr) = 1 .
@@ -163,10 +163,10 @@ $$
 \mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{H}),
 $$
 
-and for a pure state $\tilde{P} = |u\rangle\langle u|$ it reproduces the module inner product,
+and for a pure state $\tilde\Pi = |u\rangle\langle u|$ it reproduces the module inner product,
 
 $$
-\mathrm{Tr}(\tilde{P}\tilde{H}) = \langle u|H|u\rangle ,
+\mathrm{Tr}(\tilde\Pi\tilde{H}) = \langle u|H|u\rangle ,
 $$
 
 where $H$ is the matrix image of $\tilde{H}$. This identity is the bridge between the two descriptions: the Born rule of the algebra is the ordinary expectation value on the module. Its derivation from the trace was given in *The Born Rule as a Trace Formula — Derivation and Comparison*, and it requires nothing beyond the fact that the trace of a rank-one operator is the inner product of its two vectors.
@@ -229,7 +229,7 @@ the three pairs of outcome probabilities determine $\vec r$ and hence the state.
 - **The carrier is forced, not chosen.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple left module $S=\mathbb{C}^2$, so the elementary informational unit is two-dimensional over $\mathbb{C}$ and is read off the algebra.
 - **The inner product is native.** The Hilbert-space inner product on $S$ is the trace pairing of the algebra, $\langle u|v\rangle = \mathrm{Tr}(|u\rangle\langle v|)$; it is not an independent axiom.
 - **The pure states are the module's rays.** The rank-one idempotents of $\mathbb{M}_+$ correspond bijectively to the rays of $S$, and their matrix images are the rank-one Hermitian projectors.
-- **The Born rule is a module pairing.** $\mathrm{Tr}(\tilde{P}\tilde{H}) = \langle u|H|u\rangle$; the algebra's trace formula and the module expectation value are the same operation.
+- **The Born rule is a module pairing.** $\mathrm{Tr}(\tilde\Pi\tilde{H}) = \langle u|H|u\rangle$; the algebra's trace formula and the module expectation value are the same operation.
 - **The state geometry is the biquaternion norm's cone slice.** The Bloch ball is the trace-one positive slice of $\mathbb{M}_+$, its boundary is the zero-divisor cone of the biquaternion norm, and the rays are its extreme points.
 
 **What it does not supply.**
@@ -255,7 +255,7 @@ the three pairs of outcome probabilities determine $\vec r$ and hence the state.
 
 The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.
 
-On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$. A general state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
+On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H)$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$. A general state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
 What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive.
 
@@ -275,7 +275,7 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents (pure states) |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = \langle u|H|u\rangle$ | Trace pairing (Born rule) |
+| $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = \langle u|H|u\rangle$ | Trace pairing (Born rule) |
 | $r_k = \mathrm{Tr}(\tilde{Ϛ}\,i\vec e_k)$ | Bloch components (tomography) |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 

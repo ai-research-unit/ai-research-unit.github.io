@@ -117,7 +117,7 @@ $$
 = \mathrm{div}\!\left(\psi_{nm}\vec e_\mu\right) + \omega\,\psi_{nm}\vec e_\mu - \mathrm{rot}\!\left(\psi_{nm}\vec e_\mu\right),
 $$
 
-where the three terms on the right are the scalar part, the vector part and the vector part coming from the curl, as the expansion of the biquaternion product gives them. One interpretation caution applies to the source here. Its intermediate line for the spinor prints $\omega j_0'(\omega r)\vec e_\mu$ where the expansion gives $\omega j_0(\omega r)\vec e_\mu$; the results the paper then states use $j_0$, so the prime is a slip of the transcription and is not carried below.
+where the three terms on the right are the scalar part, the vector part and the vector part coming from the curl, as the expansion of the biquaternion product gives them. One interpretation caution applies to the source here. Its intermediate line for the spinor prints $\omega\,\frac{dj_0}{dz}(\omega r)\vec e_\mu$ where the expansion gives $\omega j_0(\omega r)\vec e_\mu$; the results the paper then states use $j_0$, so the prime is a slip of the transcription and is not carried below.
 
 The two classes are not on the same footing, and the difference is exactly the behaviour at the origin that the Bessel asymptotics fixes. For a pulsar the gradient term is finite or vanishing at $r = 0$ while the $\omega\psi_{nm}$ term survives whenever $n = 0$; for $n \geq 1$ the potential itself vanishes there, so the pulsar's density vanishes too. For a spinor the scalar part is built from the divergence, which carries the factor $j_1$ and vanishes at the origin, while the vector part carries $j_0$ and does not. So:
 
@@ -128,7 +128,7 @@ That single dichotomy is what the programme turns into bosons and leptons, and t
 
 ## The Spherical Harmonic Pulsar
 
-For the spherically symmetric scalar potential $\psi_{00}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_0(\omega r)$ the pulsar amplitude closes in elementary functions. Using $j_0'(z) = -j_1(z)$,
+For the spherically symmetric scalar potential $\psi_{00}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = j_0(\omega r)$ the pulsar amplitude closes in elementary functions. Using $\frac{dj_0}{dz}(z) = -j_1(z)$,
 
 $$
 \tilde J_{\mathrm{eg},00^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)

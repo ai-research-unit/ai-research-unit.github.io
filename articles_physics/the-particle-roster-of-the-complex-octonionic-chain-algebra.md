@@ -6,7 +6,7 @@ The complex octonionic chain algebra $\overleftarrow{\mathbb{C}\otimes\mathbb{O}
 
 The article is placed here because the framework's own ledger names this construction. *The Standard Model under the Biquaternion Framework — A Research Agenda* records that the framework supplies $\mathrm{U}(2)$ and never $SU(3)$, and that the one candidate ever named for a larger internal factor was an enlargement of the carrier; *The Number of Generations and the Biquaternion Algebra* records the octonionic chain-algebra construction as one of the two nearby constructions that suggest a three, with its three coming from an interpretation of a decomposition of a larger carrier and not from a derivation inside $\mathbb{B}$; and *The Gluon: An Octet Outside the Biquaternion Algebra* establishes the octet on the same footing, outside the algebra. What none of those articles does is exhibit the sixteen states, their charges, and the exact point at which the interpretation either succeeds or fails. That is this article's task, and its main result is a statement of where the open end is: the assignment is an interpretation, the decisive tests are three finite commutator conditions, and none of them has been performed.
 
-The conventions are those of the complex octonionic chain algebra of the mathematics category, which establishes the algebra, the ladder operators, the maximal totally isotropic subspace, the $\mathrm{su}(3)$, and the charge spectrum of the minimal left ideal of the idempotent $P$. The Clifford-algebraic notion of a minimal left ideal is that of *Spinors as Minimal Left Ideals with Inner Conjugation*; the spinor representations and the $\mathrm{su}(4)$-and-$\mathrm{so}(6)$ correspondence used below are those of *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation* and *List of Clifford Algebras and Spin Groups*; the general theorem behind the intrinsic $\mathrm{su}(3)$ is the unitary symmetry of a maximal totally isotropic subspace; and the electroweak and colour content against which the interpretation is compared is that of *The Standard Model under the Biquaternion Framework — A Research Agenda* and *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*. Nothing in this article is derived from the biquaternion algebra, and no result of this article feeds back into the framework's ledger.
+The conventions are those of the complex octonionic chain algebra of the mathematics category, which establishes the algebra, the ladder operators, the maximal totally isotropic subspace, the $\mathrm{su}(3)$, and the charge spectrum of the minimal left ideal of the idempotent $\Pi$. The Clifford-algebraic notion of a minimal left ideal is that of *Spinors as Minimal Left Ideals with Inner Conjugation*; the spinor representations and the $\mathrm{su}(4)$-and-$\mathrm{so}(6)$ correspondence used below are those of *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation* and *List of Clifford Algebras and Spin Groups*; the general theorem behind the intrinsic $\mathrm{su}(3)$ is the unitary symmetry of a maximal totally isotropic subspace; and the electroweak and colour content against which the interpretation is compared is that of *The Standard Model under the Biquaternion Framework — A Research Agenda* and *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*. Nothing in this article is derived from the biquaternion algebra, and no result of this article feeds back into the framework's ledger.
 
 ## The Chain Algebra and Its Ladder Structure
 
@@ -53,15 +53,15 @@ satisfy $[\tfrac12\Lambda_a,\tfrac12\Lambda_b] = if^{abc}\tfrac12\Lambda_c$ with
 The idempotent
 
 $$
-P = \alpha_1\alpha_2\alpha_3\,\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger
+\Pi = \alpha_1\alpha_2\alpha_3\,\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger
 $$
 
-is primitive: $P^2 = P$, $\alpha_iP = 0$, $\omega^{*}\alpha_i^\dagger = 0$ with $\omega = \alpha_1\alpha_2\alpha_3$, and $P$ has rank one as an $8\times8$ matrix, so that the left ideal $S^u = \mathrm{Cl}(6)P$ is eight-dimensional with basis
+is primitive: $\Pi^2 = \Pi$, $\alpha_i\Pi = 0$, $\omega^{*}\alpha_i^\dagger = 0$ with $\omega = \alpha_1\alpha_2\alpha_3$, and $\Pi$ has rank one as an $8\times8$ matrix, so that the left ideal $S^u = \mathrm{Cl}(6)\Pi$ is eight-dimensional with basis
 
 $$
-\Bigl\{\,P,\ \alpha_1^\dagger P,\ \alpha_2^\dagger P,\ \alpha_3^\dagger P,\
-\alpha_3^\dagger\alpha_2^\dagger P,\ \alpha_1^\dagger\alpha_3^\dagger P,\ \alpha_2^\dagger\alpha_1^\dagger P,\
-\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger P \,\Bigr\} .
+\Bigl\{\,\Pi,\ \alpha_1^\dagger \Pi,\ \alpha_2^\dagger \Pi,\ \alpha_3^\dagger \Pi,\
+\alpha_3^\dagger\alpha_2^\dagger \Pi,\ \alpha_1^\dagger\alpha_3^\dagger \Pi,\ \alpha_2^\dagger\alpha_1^\dagger \Pi,\
+\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger \Pi \,\Bigr\} .
 $$
 
 On this basis the number operator takes the values $0,1,1,1,2,2,2,3$, so the charge $Ϙ = N/3$ takes the values
@@ -75,10 +75,10 @@ which is the charge spectrum of one generation's worth of states in the four mul
 The conjugate idempotent
 
 $$
-P^c = \alpha_1^\dagger\alpha_2^\dagger\alpha_3^\dagger\,\alpha_3\alpha_2\alpha_1
+\Pi^c = \alpha_1^\dagger\alpha_2^\dagger\alpha_3^\dagger\,\alpha_3\alpha_2\alpha_1
 $$
 
-is also primitive, is orthogonal to $P$, and generates a second eight-dimensional left ideal. The literature's interpretation takes its states to be the conjugates of the first ideal's states, with the charges negated, so that the sixteen states of the two ideals together are
+is also primitive, is orthogonal to $\Pi$, and generates a second eight-dimensional left ideal. The literature's interpretation takes its states to be the conjugates of the first ideal's states, with the charges negated, so that the sixteen states of the two ideals together are
 
 $$
 \underbrace{1(0)+3(\tfrac13)+3(\tfrac23)+1(1)}_{S^u} \ \oplus\ \underbrace{1(0)+3(-\tfrac13)+3(-\tfrac23)+1(-1)}_{S^{u,c}} ,
@@ -160,7 +160,7 @@ The construction is best summarised by sorting its steps, as the framework's own
 | Step | Status |
 |---|---|
 | $\overleftarrow{\mathbb{C}\otimes\mathbb{O}}\cong\mathrm{Cl}(6)\cong M_8(\mathbb{C})$; ladder operators; maximal isotropic subspace and its conjugate | Established in the mathematics article, recomputed |
-| Primitive idempotent $P$; eight-dimensional minimal left ideal; charge spectrum $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ as eigenvalues of $Ϙ=N/3$ | Established in the mathematics article, recomputed |
+| Primitive idempotent $\Pi$; eight-dimensional minimal left ideal; charge spectrum $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ as eigenvalues of $Ϙ=N/3$ | Established in the mathematics article, recomputed |
 | Intrinsic $\mathrm{su}(3)$ on the isotropic subspace, agreeing with the octonionic automorphism generators and commuting with $N$ and $e_7$ | Established in the mathematics article, recomputed |
 | Second ideal from the conjugate idempotent, with the conjugate charge spectrum | Interpretation; the corpus establishes the first ideal and records the conjugate bookkeeping as not reproduced |
 | Branchings $\mathbf 6 = \mathbf 3_{2/3}\oplus\bar{\mathbf 3}_{-2/3}$ and $\mathbf 4 = \mathbf 3_{1/3}\oplus\mathbf 1_{-1}$ | Standard; the Lie theory of the complexified orthogonal algebra |
@@ -181,7 +181,7 @@ Three statements deserve emphasis.
 
 ## Summary
 
-The complex octonionic chain algebra is $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$; Furey's ladder operators build a three-dimensional maximal totally isotropic subspace and its conjugate, the isotropic subspace carries an intrinsic $\mathrm{su}(3)$ that commutes with the number operator $N$ and with the volume element, and the primitive idempotent $P = \alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$ generates an eight-dimensional minimal left ideal whose states carry the charges $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ as eigenvalues of $Ϙ = N/3$. The conjugate idempotent gives a second eight-dimensional ideal, whose states the literature reads as the conjugates of the first, so that the two ideals together carry sixteen states: exactly the charge multiset of one chiral Standard-Model generation plus one further neutral state, arranged as four multiplets of an intrinsic colour $\mathrm{su}(3)$ with a three-dimensional module. The charges are quantised because they are eigenvalues of a number operator, and the colour triplets arise because the maximal isotropic subspace of a complexified six-space carries $\mathrm{su}(3)$. What the construction does not supply without further input is the identification of its abelian generator with the Standard Model's electric charge or hypercharge, the weak isospin that makes the spectrum chiral, the partition of the sixteen states into the Standard Model's unified multiplets, and the supercharge count of the literature's larger version, whose state count is thirty-two; the decisive open computations are the centraliser of $\mathrm{su}(3)\oplus\mathrm{u}(1)$ in $\mathrm{so}(6,\mathbb{C})$, the projection of the physical abelian generator on the colour Cartan subalgebra, and its commutator with the Lorentz algebra. The construction is outside the biquaternion algebra — $\mathrm{Cl}(6)$ is sixty-four-dimensional and complex, $\mathbb{B}$ is eight-dimensional and real — and it is recorded here because it is the largest of the nearby constructions, and the one that comes closest to supplying in a single finite algebra the three properties that the framework's ledger records as missing.
+The complex octonionic chain algebra is $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$; Furey's ladder operators build a three-dimensional maximal totally isotropic subspace and its conjugate, the isotropic subspace carries an intrinsic $\mathrm{su}(3)$ that commutes with the number operator $N$ and with the volume element, and the primitive idempotent $\Pi = \alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$ generates an eight-dimensional minimal left ideal whose states carry the charges $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ as eigenvalues of $Ϙ = N/3$. The conjugate idempotent gives a second eight-dimensional ideal, whose states the literature reads as the conjugates of the first, so that the two ideals together carry sixteen states: exactly the charge multiset of one chiral Standard-Model generation plus one further neutral state, arranged as four multiplets of an intrinsic colour $\mathrm{su}(3)$ with a three-dimensional module. The charges are quantised because they are eigenvalues of a number operator, and the colour triplets arise because the maximal isotropic subspace of a complexified six-space carries $\mathrm{su}(3)$. What the construction does not supply without further input is the identification of its abelian generator with the Standard Model's electric charge or hypercharge, the weak isospin that makes the spectrum chiral, the partition of the sixteen states into the Standard Model's unified multiplets, and the supercharge count of the literature's larger version, whose state count is thirty-two; the decisive open computations are the centraliser of $\mathrm{su}(3)\oplus\mathrm{u}(1)$ in $\mathrm{so}(6,\mathbb{C})$, the projection of the physical abelian generator on the colour Cartan subalgebra, and its commutator with the Lorentz algebra. The construction is outside the biquaternion algebra — $\mathrm{Cl}(6)$ is sixty-four-dimensional and complex, $\mathbb{B}$ is eight-dimensional and real — and it is recorded here because it is the largest of the nearby constructions, and the one that comes closest to supplying in a single finite algebra the three properties that the framework's ledger records as missing.
 
 ## Summary of Notation
 
@@ -195,8 +195,8 @@ The complex octonionic chain algebra is $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$; F
 | $N = \sum_i\alpha_i^\dagger\alpha_i$ | Number operator; eigenvalues $0,1,2,3$ with multiplicities $1,3,3,1$ |
 | $Ϙ = \tfrac13 N$ | Charge; values $0,\tfrac13,\tfrac23,1$ on one ideal |
 | $\Lambda_1,\dots,\Lambda_8$ | Generators of the intrinsic $\mathrm{su}(3)$ |
-| $P = \alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$ | Primitive idempotent; rank one |
-| $S^u = \mathrm{Cl}(6)P$, $S^{u,c} = \mathrm{Cl}(6)P^c$ | The two eight-dimensional minimal left ideals |
+| $\Pi = \alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$ | Primitive idempotent; rank one |
+| $S^u = \mathrm{Cl}(6)\Pi$, $S^{u,c} = \mathrm{Cl}(6)\Pi^c$ | The two eight-dimensional minimal left ideals |
 | $\mathbf 6 = \mathbf 3_{2/3}\oplus\bar{\mathbf 3}_{-2/3}$ | Branching of the six-space under $\mathrm{su}(3)\oplus\mathrm{u}(1)$ |
 | $\mathbf 4 = \mathbf 3_{1/3}\oplus\mathbf 1_{-1}$, $\bar{\mathbf 4} = \bar{\mathbf 3}_{-1/3}\oplus\mathbf 1_{1}$ | Branching of the two spinors of $\mathrm{so}(6,\mathbb{C})$ |
 | $\mathrm{so}(3,1)_{\mathbb C} \cong \mathrm{su}(2)_L\oplus\mathrm{su}(2)_R \subset \mathrm{so}(6,\mathbb{C})$ | Complexified Lorentz algebra, inside or outside the internal algebra as the interpretation chooses |

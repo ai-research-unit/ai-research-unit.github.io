@@ -92,7 +92,7 @@ the sum of the spin-$0$ and spin-$1$ characters, with the spin-$2$ character $\c
 The same four-dimensional object is also an algebra, and as an algebra it is simple: $M_2(\mathbb{C})$ has no nontrivial two-sided ideals, and up to isomorphism it has a single irreducible left module, the two-dimensional spinor space $S$, a minimal left ideal,
 
 $$
-S = \mathbb{B}\,\epsilon , \qquad \epsilon^2 = \epsilon \neq 0 , \qquad \dim_{\mathbb{C}} S = 2 ,
+S = \mathbb{B}\,\tilde\Pi , \qquad \tilde\Pi^2 = \tilde\Pi \neq 0 , \qquad \dim_{\mathbb{C}} S = 2 ,
 $$
 
 on which the rotation generators act by left multiplication as the spin-$\tfrac12$ representation. The spin-$\tfrac12$ content belongs to the **module**, not to the algebra-as-rotation-module of the previous subsection. The two facts — the algebra is $D^{(0)}\oplus D^{(1)}$ under conjugation, and its irreducible module is spin-$\tfrac12$ — are both true and are not in tension, because they are statements about different actions.
@@ -277,7 +277,7 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ | Clebsch–Gordan decomposition |
 | $\vec\nabla\vec\nabla = -\Delta\,e_t$ | The truncated second gradient |
 | $U(\mathrm{SU}(2))$ | Universal enveloping algebra (infinite-dimensional) |
-| $S = \mathbb{B}\epsilon$ | Minimal left ideal: the two-dimensional spinor module, $\epsilon$ a nonzero idempotent |
+| $S = \mathbb{B}\tilde\Pi$ | Minimal left ideal: the two-dimensional spinor module, $\tilde\Pi$ a nonzero idempotent |
 | $q_{lm}$ | Multipole moment (a functional of the source) |
 | $\chi_l(\theta)$ | Character of $D^{(l)}$; $\chi_0+\chi_1 = 2+2\cos\theta$ |
 

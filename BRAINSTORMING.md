@@ -29,11 +29,6 @@ Exponentials for states and roots : exp(θ Ξ~ )
 
 
 
-U and rotor 
-
-idempotents
-
-
 
 
 

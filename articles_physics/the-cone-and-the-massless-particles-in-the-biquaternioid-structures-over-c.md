@@ -692,7 +692,7 @@ $$
 \tilde P=2i\frac{E}{c}\,\tilde\Pi(-\vec u)
 $$
 
-of a rank-one Hermitian idempotent, so it is not merely non-invertible but a scaled projector. That
+of a rank-one Hermitian idempotent, so it is not merely non-invertible but a scalar multiple of one. That
 identity, its verification $\tilde\Pi^{2}=\tilde\Pi$, $\tilde\Pi^{*}=\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$, and its
 consequences for the shell, the rest frame and the speed are *The Null Four-Momentum: What the Cone Derives
 and What It Does Not*; the comparison uses them and does not re-derive them.
@@ -703,12 +703,12 @@ $$
 \tilde P\star\tilde P=4\frac{E^{2}}{c^{2}}\,\tilde\Pi(-\vec u),
 $$
 
-a positive multiple of the **same** projector. The **interpretation**, and it is this article's, is that
+a positive multiple of the **same** idempotent. The **interpretation**, and it is this article's, is that
 one element carries one face in each band: in the composition the momentum is an imaginary multiple of the
-projector, which is why it is non-invertible and why the propagation is at $c$; in the probability it is a
-positive multiple of the same projector, which is why its state is a pure boundary state and not a null
+idempotent, which is why it is non-invertible and why the propagation is at $c$; in the probability it is a
+positive multiple of the same idempotent, which is why its state is a pure boundary state and not a null
 state. Neither band alone shows this; the comparison is the two squares read side by side. The flagpole
-form of the identity, in which the null direction and the projector are two faces of one object, is in
+form of the identity, in which the null direction and the idempotent are two faces of one object, is in
 *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*, and the polarisation account is
 *The Photon in Biquaternionic Form*.
 
@@ -842,8 +842,8 @@ $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ vanishes at the origin alone
 (*The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*).
 
 **The physical interpretation** is that the cone is the boundary of the algebra's iteration: the lightlike
-elements are exactly the ones whose square can collapse to a multiple of themselves, and the idempotent
-projectors — the measurements — sit on the Julia set of the squaring. The two squares separate the two
+elements are exactly the ones whose square can collapse to a multiple of themselves, and the idempotents
+— the measurements — sit on the Julia set of the squaring. The two squares separate the two
 pairings: the interval's square can vanish, the Born pairing's cannot, which is the algebraic face of the
 fact that a probability weight is never sent to zero by an operation alone.
 
@@ -1053,7 +1053,7 @@ $(2,6,0)$ over $\mathbb{R}$ (*Indefinite Positivity and the Krein Cone of the Bi
 The **vacuum** lies on the cone: the minimal idempotent $\tilde\Pi(\vec u)$ is null for every
 unit $\vec u$, so $e_t=\tilde\Pi(\vec u)+\tilde\Pi(-\vec u)$
 decomposes the unit along two null directions — the algebraic shape of a light-cone frame — and the cone is
-the union of the rays that the projectors single out (*The Biquaternion Vacuum as a Minimal Idempotent*).
+the union of the rays that the idempotents single out (*The Biquaternion Vacuum as a Minimal Idempotent*).
 The **Lorentz group is the group of norm automorphisms** whose nonzero null vectors are the zero divisors,
 and the construction realises the closed forward cone only, with no spacelike region and no past cone
 (*The Lorentz Group as Biquaternion Norm Automorphisms*). Under **twistors** the null cone of $\mathbb{B}$ is
@@ -1255,8 +1255,8 @@ composition the cone is also the absorbing set of the product, since one lightli
 lightlike composite, and the left multiplication by a null parameter collapses the form and maps every
 element into the cone; the same multiplicativity makes the norm a character of the unit group, so a mass
 label on that row is a character and not an eigenvalue. The massless particles are the
-case list: the photon is one element read in two sectors, an imaginary multiple of a projector in the
-composition and a positive multiple of the same projector in the probability, and the graviton, the
+case list: the photon is one element read in two sectors, an imaginary multiple of an idempotent in the
+composition and a positive multiple of the same idempotent in the probability, and the graviton, the
 Rarita–Schwinger field and the chiral fermion sit on the same cone, distinguished from one another by a
 helicity that the cone does not carry. The element-level division between what the cone derives and what it
 does not is *The Null Four-Momentum: What the Cone Derives and What It Does Not*'s; what the comparison adds
@@ -1277,7 +1277,7 @@ sets — the Krein cone one dimension larger, the complex cone of $\langle\cdot,
 Hermitian form with no cone — and its dimension drops to four on the vector subspace and to three on the
 quaternion subspace and the sectors; it is the complement of the unit group, with the link $S^{1}$-bundle
 over $S^{2}\times S^{2}$ against the real slice's $S^{2}\sqcup S^{2}$; it is where squaring is affine, the
-part of the square's critical set on which the square can collapse, and for the parameter zero the projectors
+part of the square's critical set on which the square can collapse, and for the parameter zero the idempotents
 lie on the Julia set of the squaring; it is the largest nontrivial vanishing
 set of a square, the natural square vanishing on it while the Born square vanishes only at the origin; it
 is the image of the positivity map and the boundary it puts on the state cone; its isotropic lines are the

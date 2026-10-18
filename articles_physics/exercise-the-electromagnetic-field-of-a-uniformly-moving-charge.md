@@ -42,7 +42,7 @@ $$
 \qquad
 \tanh\psi_b = \frac{v_b}{c},
 $$
-**carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde U_{\vec v_b}(ic\,e_t)\tilde U_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}' = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde U\tilde{F}\tilde U^{*}$; that is the parent's Problem 5 and we use its result.
+**carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde U_{\vec v_b}(ic\,e_t)\tilde U_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}' = \tilde U^{\natural}_{\vec v_b}\tilde{F}\tilde U_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$, where $\tilde U_{\mathrm L}$ is a general Lorentz rotor; that is the parent's Problem 5 and we use its result.
 
 **New notation for this exercise.** Since the uniform case is naturally organized around the charge's *present* position, write the **present separation**
 $$
@@ -285,7 +285,7 @@ $$
 $$
 whose velocity is $-c\tanh\psi_b\,\vec u = -\vec v_b$. So the rotor built with $+\vec v_b$ carries the lab to the frame moving with $+\vec v_b$; a particle at rest in the lab appears in that frame to move with $-\vec v_b$.
 
-**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
+**Solution (b).** The field strength is a rank-two object, not a four-vector, so the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ that acts on $\mathbb{M}_-$ does **not** apply. As established by the parent's Problem 5, a pure boost acts on the field by the **similarity**
 $$
 \tilde{F}' = \tilde U^{\natural}_{\vec v_b}\,\tilde{F}\,\tilde U_{\vec v_b}
 = \tilde U_{\vec v_b}^{-1}\tilde{F}\,\tilde U_{\vec v_b}
@@ -366,7 +366,7 @@ The field is of electric type, is **not** null, and is not a zero divisor: $\lan
 1. **"Purely transverse" is a statement about the pancake, not about every direction.** The exact content is: in the transverse plane the field is exactly perpendicular to $\vec v$, and at fixed impact parameter the longitudinal component is a factor $0.385/\gamma$ below the transverse peak. At a fixed direction the longitudinal fraction is $\cos\theta$, independent of $\gamma$, so the naive interpretation is false at every finite $\gamma$. This is a clarification, not a defect, but it is the step most easily smoothed over.
 2. **Strictly uniform motion only.** The exact reduction to the boosted Coulomb field requires $d\vec v/dt_r\equiv0$, so that the charge's rest frame is inertial for all time. A charge that is only *instantaneously* unaccelerated at the emission event still carries the parent's acceleration field $\vec E_a$ at that event; the uniform-motion result is the limit in which that field is absent everywhere, and we did not attempt to bound the "almost uniform" correction.
 3. **The $\beta\to1$ behaviour of the closed-form retarded position.** The coefficient of $R^2$ in the quadratic degenerates as $\beta\to1$: for a field point ahead of the charge along the motion ($d_\parallel>0$) the closed form gives $R\sim2d_\parallel\gamma^2\to\infty$, while for one behind it ($d_\parallel<0$) $R\to(d_\parallel^2+d_\perp^2)/(2|d_\parallel|)$, finitely (checked numerically at $\beta$ up to $0.99999$). The present-position field is finite throughout, so the limit $\beta\to1$ does not commute with reading $R$ off the quadratic. We did not pursue the caustic $\kappa\to0$ or superluminal worldlines; that remains the parent's gap 3.
-4. **The similarity law is used, not derived.** We inherited $\tilde{F}' = \tilde U^{\natural}\tilde{F}\tilde U$ from the parent and verified it numerically against the standard boost, but did not derive it from the biquaternion representation of the rank-two field. That derivation remains the parent's Further Problem 3.
+4. **The similarity law is used, not derived.** We inherited $\tilde{F}' = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ from the parent and verified it numerically against the standard boost, but did not derive it from the biquaternion representation of the rank-two field. That derivation remains the parent's Further Problem 3.
 5. **The overall normalization of $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
 
 ## Summary
