@@ -72,7 +72,7 @@ $$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
 $$
 of dimension four over $\mathbb{R}$ and two over $\mathbb{C}$. This article fixes the <strong>space</strong>: the basis, the defining relations, the two idempotents and the isomorphism with the direct product of two copies of the complex field. It is the entry point of the category, and every later article reads its elements in the notation fixed here.</p>
-<p>The glyph $\mathbb{B}_{\mathrm{r}}$ and the element $Q_\pm=Q_++jQ_-$ are fixed in <em>Conventions in Mathematics</em>, §<em>The Elements and their Coefficients</em>: a reduced biquaternion is written with an upper-case letter and <strong>no tilde</strong>, with two complex coordinates, because its algebra has no quaternionic factor. The algebra is also the <strong>tessarines</strong> of Cockle, the <strong>double-complex numbers</strong> and the <strong>commutative hypercomplex</strong> algebra of the engineering literature; it is the complexification of the split-complex numbers, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}$, and the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is its quaternionic companion.</p>
+<p>The glyph $\mathbb{B}_{\mathrm{r}}$ and the element $\breve Q=Q_++jQ_-$ are fixed in <em>Conventions in Mathematics</em>, §<em>The Elements and their Coefficients</em>: a reduced biquaternion is written with an upper-case letter, with the breve and <strong>no tilde</strong>, with two complex coordinates, because its algebra has no quaternionic factor. The algebra is also the <strong>tessarines</strong> of Cockle, the <strong>double-complex numbers</strong> and the <strong>commutative hypercomplex</strong> algebra of the engineering literature; it is the complexification of the split-complex numbers, $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}$, and the split-biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is its quaternionic companion.</p>
 <p>Three warnings are stated at once and repeated wherever they bear on a result. The algebra is <strong>commutative and associative</strong>, so it is not a matrix algebra and not a quaternion algebra; it <strong>has zero divisors</strong>, so it is not a field and not a division algebra, and an element is invertible exactly when a single complex number, its reduced norm, is nonzero; and the <strong>algebraic norm is an element of the algebra</strong>, while the <strong>topological norm is a positive real</strong>. The two are different objects and are never conflated (<em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>).</p>
 <p><strong>Boundaries.</strong> The space as a real and as a complex vector space, the change of scalars and the realification are <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>, below this article in this category. The involutions, their fixed and anti-fixed spaces and the group they generate are <em>The Two Involutions and the Group of Involutions</em>, below this article. The four general products and the forms and algebraic norms they carry are <em>The Four Products, Their Forms and Their Algebraic Norms</em>, below this article; the multiplication read as an algebra is <em>Introduction to the Algebra of the Reduced Biquaternions</em>. The conjugations, the idempotents and the roots are named here only as far as the space requires.</p>
 <h2 id="the-algebra">The Algebra</h2>
@@ -133,7 +133,7 @@ $$</p>
 <p><strong>The same space is a two-dimensional complex vector space on the basis $1,j$, and its elements are pairs of complex numbers; the two readings are the reason the algebra carries two commuting conjugations.</strong></p>
 <p><strong>Definition.</strong> A <strong>general element</strong> is</p>
 <p>$$
-Q_\pm=Q_++jQ_-,\qquad Q_+=q_++iq'_+,\qquad Q_-=q_-+iq'_-
+\breve Q=Q_++jQ_-,\qquad Q_+=q_++iq'_+,\qquad Q_-=q_-+iq'_-
 $$</p>
 <p>with $Q_+,Q_-\in\mathbb{C}$ and $q_+,q'_+,q_-,q'_-\in\mathbb{R}$. The complex number $Q_+$ is the <strong>$\mathbb{C}$ scalar part</strong>, the element $jQ_-$ the <strong>$j$-part</strong>, and the quadruple $(q_+,q'_+,q_-,q'_-)$ is the real coordinate reading of <em>The Four-Vector Element Representation of the Reduced Biquaternions</em>. The basis of the complex reading is $1,j$; the basis of the real reading is $1,i,j,ij$. The algebra has no vector part and no vector subspace: both terms are scalar, the coefficients of the basis $1,j$.</p>
 <p>The two readings are the two bases of the same set, and the change between them is <em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em>. The complex reading is the one the four products use, because the two coordinates $Q_+$ and $Q_-$ are the two slots of every product.</p>
@@ -148,28 +148,28 @@ $$</p>
 \Pi_+^{2}=\Pi_+,\qquad \Pi_-^{2}=\Pi_-,\qquad \Pi_+\Pi_-=0,\qquad \Pi_++\Pi_-=1 .
 $$</p>
 <p><em>Proof.</em> $\Pi_+^{2}=\tfrac14(1+j)^{2}=\tfrac14(1+2j+j^{2})=\tfrac14(2+2j)=\Pi_+$, and the same for $\Pi_-$; $\Pi_+\Pi_-=\tfrac14(1+j)(1-j)=\tfrac14(1-j^{2})=0$; and the sum is $\tfrac12\bigl((1+j)+(1-j)\bigr)=1$.</p>
-<p><strong>Theorem (the idempotent decomposition).</strong> Every element $Q_\pm=Q_++jQ_-$ is</p>
+<p><strong>Theorem (the idempotent decomposition).</strong> Every element $\breve Q=Q_++jQ_-$ is</p>
 <p>$$
-Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-,
+\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-,
 $$</p>
-<p>and the two coefficients $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$ are the <strong>idempotent coordinates</strong> of $Q_\pm$.</p>
+<p>and the two coefficients $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$ are the <strong>idempotent coordinates</strong> of $\breve Q$.</p>
 <p><em>Proof.</em> Expand the right side, using $\Pi_++\Pi_-=1$ and $\Pi_+-\Pi_-=j$:
 $(Q_++Q_-)\Pi_++(Q_+-Q_-)\Pi_-=Q_+(\Pi_++\Pi_-)+Q_-(\Pi_+-\Pi_-)=Q_++jQ_-$.</p>
 <p>The decomposition is an <strong>algebra</strong> decomposition and not merely a linear one: because the idempotents are orthogonal, the product is componentwise in the two coordinates,</p>
 <p>$$
-Q_{\pm,1}Q_{\pm,2}=\bigl[(Q_{1+}+Q_{1-})(Q_{2+}+Q_{2-})\bigr]\Pi_++\bigl[(Q_{1+}-Q_{1-})(Q_{2+}-Q_{2-})\bigr]\Pi_-,
+\breve Q_{1}\breve Q_{2}=\bigl[(Q_{1+}+Q_{1-})(Q_{2+}+Q_{2-})\bigr]\Pi_++\bigl[(Q_{1+}-Q_{1-})(Q_{2+}-Q_{2-})\bigr]\Pi_-,
 $$</p>
 <p>so the product is carried by two independent copies of the complex multiplication. That is the whole content of the isomorphism of the next section, and the reason every quadratic question about the algebra splits into two complex questions.</p>
 <h2 id="the-isomorphism-with-the-direct-product">The Isomorphism with the Direct Product</h2>
-<p><strong>The algebra is isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by the component map $Q_\pm\mapsto(Q_++Q_-,Q_+-Q_-)$; the isomorphism is the reason there are zero divisors, no division and two maximal ideals.</strong></p>
+<p><strong>The algebra is isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by the component map $\breve Q\mapsto(Q_++Q_-,Q_+-Q_-)$; the isomorphism is the reason there are zero divisors, no division and two maximal ideals.</strong></p>
 <p><strong>Theorem (the component map).</strong> The map</p>
 <p>$$
 \varphi:\mathbb{B}_{\mathrm{r}}\longrightarrow\mathbb{C}\oplus\mathbb{C},\qquad
-\varphi(Q_\pm)=(Q_++Q_-,\;Q_+-Q_-),
+\varphi(\breve Q)=(Q_++Q_-,\;Q_+-Q_-),
 $$</p>
 <p>is an isomorphism of $\mathbb{R}$-algebras and of $\mathbb{C}$-algebras, and its inverse is
 $\varphi^{-1}(u,v)=\tfrac12(u+v)+\tfrac12(u-v)j$.</p>
-<p><em>Proof.</em> The map is $\mathbb{C}$-linear and bijective, since $Q_+=\tfrac12(u+v)$ and $Q_-=\tfrac12(u-v)$; and it is multiplicative by the componentwise product displayed in the previous section, $\varphi(Q_{\pm,1}Q_{\pm,2})=\varphi(Q_{\pm,1})\varphi(Q_{\pm,2})$. The identity $1$ maps to $(1,1)$. Hence it is an isomorphism.</p>
+<p><em>Proof.</em> The map is $\mathbb{C}$-linear and bijective, since $Q_+=\tfrac12(u+v)$ and $Q_-=\tfrac12(u-v)$; and it is multiplicative by the componentwise product displayed in the previous section, $\varphi(\breve Q_{1}\breve Q_{2})=\varphi(\breve Q_{1})\varphi(\breve Q_{2})$. The identity $1$ maps to $(1,1)$. Hence it is an isomorphism.</p>
 <p><strong>Corollary (the algebra is a direct product of two fields).</strong> The reduced biquaternion algebra is the direct product of the fields $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$,</p>
 <p>$$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,
@@ -180,7 +180,7 @@ $$</p>
 <p>$$
 \Pi_+\Pi_-=0,\qquad\text{so}\qquad (A\Pi_+)(B\Pi_-)=0\quad\text{for all }A,B\in\mathbb{C}.
 $$</p>
-<p>An element $Q_\pm$ is a <strong>unit</strong> exactly when both idempotent coordinates are nonzero, $Q_{++}\neq0$ and $Q_{--}\neq0$; otherwise it is a zero divisor. The algebra is therefore not a field and not a division algebra, and the set of zero divisors is the union of the two idempotent lines with the origin removed.</p>
+<p>An element $\breve Q$ is a <strong>unit</strong> exactly when both idempotent coordinates are nonzero, $Q_{++}\neq0$ and $Q_{--}\neq0$; otherwise it is a zero divisor. The algebra is therefore not a field and not a division algebra, and the set of zero divisors is the union of the two idempotent lines with the origin removed.</p>
 <p><em>Proof.</em> The product of an element of $\mathbb{C}\Pi_+$ and an element of $\mathbb{C}\Pi_-$ vanishes because $\Pi_+\Pi_-=0$. An element is a unit exactly when both components $Q_{++}$ and $Q_{--}$ are units of $\mathbb{C}$, that is both are nonzero; the inverse is then $\varphi^{-1}\bigl(Q_{++}^{-1},Q_{--}^{-1}\bigr)$. The zero divisors, their geometry and their families are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>, below this article in this category; the criterion and the group of units are <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>.</p>
 <p>The two conditions $Q_{++}=0$ and $Q_{--}=0$ are the two equations $Q_+=-Q_-$ and $Q_+=Q_-$, each defining a <strong>complex line</strong> through the origin, namely $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$. The zero-divisor set is the union of these two punctured lines, a complex-algebraic curve of two components; because it is a union of two planes and not the zero set of an irreducible cone, the algebra is not a division algebra and its <strong>null cone is degenerate</strong>. The reduced norm that reads the zero divisors is $Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$, the product of the two components; it is <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>.</p>
 <h2 id="the-position-among-the-hypercomplex-algebras">The Position Among the Hypercomplex Algebras</h2>
@@ -197,16 +197,16 @@ $$</p>
 <ul>
 <li>The <strong>reduced biquaternion</strong> algebra is the name of the engineering literature after Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding (2004), where it carries the idempotent decomposition and a ring-valued norm used in a signal transform; the corpus records this source in <em>Conventions in Mathematics</em>, §<em>Sources</em>.</li>
 <li>The <strong>tessarines</strong> are the historical name of James Cockle (1849), who introduced the commutative four-dimensional system $\{1,i,j,ij\}$ with $j^{2}=+1$; the same source is recorded in <em>Conventions in Mathematics</em>.</li>
-<li>The <strong>double-complex numbers</strong> and the <strong>commutative hypercomplex</strong> algebra are the names current in the algebra and analysis literature, both recording the two-complex-coordinate reading $Q_\pm=Q_++jQ_-$.</li>
+<li>The <strong>double-complex numbers</strong> and the <strong>commutative hypercomplex</strong> algebra are the names current in the algebra and analysis literature, both recording the two-complex-coordinate reading $\breve Q=Q_++jQ_-$.</li>
 </ul>
-<p>The three names denote one set with one product, and the corpus uses the first for the layer and writes the elements $Q_\pm=Q_++jQ_-$.</p>
+<p>The three names denote one set with one product, and the corpus uses the first for the layer and writes the elements $\breve Q=Q_++jQ_-$.</p>
 <h2 id="summary">Summary</h2>
 <p>The reduced biquaternion algebra is
 $$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
 $$
-the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. An element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$, its scalar part $Q_+$ and its $j$-part $jQ_-$; the glyph $\mathbb{B}_{\mathrm{r}}$ and the element $Q_\pm=Q_++jQ_-$ are those of <em>Conventions in Mathematics</em>. The algebra contains the two complementary idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, with $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$, and every element is $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$.</p>
-<p>The <strong>component map</strong> $\varphi(Q_\pm)=(Q_++Q_-,Q_+-Q_-)$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\oplus\mathbb{C}$, so the algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two complex fields, the product being componentwise in the two idempotent coordinates. Consequently the algebra is <strong>commutative and associative</strong>, it <strong>has zero divisors</strong> — every element of $\mathbb{C}\Pi_+$ annihilates every element of $\mathbb{C}\Pi_-$ — and it is <strong>not a field and not a division algebra</strong>: an element is a unit exactly when both idempotent coordinates $Q_{++}$ and $Q_{--}$ are nonzero, and otherwise it is a zero divisor. The zero-divisor set is the union of the two punctured idempotent lines, a degenerate null cone, and the reduced norm that reads it is $Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$.</p>
+the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. An element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$, its scalar part $Q_+$ and its $j$-part $jQ_-$; the glyph $\mathbb{B}_{\mathrm{r}}$ and the element $\breve Q=Q_++jQ_-$ are those of <em>Conventions in Mathematics</em>. The algebra contains the two complementary idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, with $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$, and every element is $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$.</p>
+<p>The <strong>component map</strong> $\varphi(\breve Q)=(Q_++Q_-,Q_+-Q_-)$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\oplus\mathbb{C}$, so the algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two complex fields, the product being componentwise in the two idempotent coordinates. Consequently the algebra is <strong>commutative and associative</strong>, it <strong>has zero divisors</strong> — every element of $\mathbb{C}\Pi_+$ annihilates every element of $\mathbb{C}\Pi_-$ — and it is <strong>not a field and not a division algebra</strong>: an element is a unit exactly when both idempotent coordinates $Q_{++}$ and $Q_{--}$ are nonzero, and otherwise it is a zero divisor. The zero-divisor set is the union of the two punctured idempotent lines, a degenerate null cone, and the reduced norm that reads it is $Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$.</p>
 <p>The algebra is the complexification of the split-complex numbers $\mathbb{D}$ and the commutative companion of the split-biquaternions $\mathbb{H}_{\mathbb{D}}$; it is the <strong>tessarines</strong> of Cockle and the <strong>double-complex</strong> or <strong>commutative hypercomplex</strong> algebra of the modern literature. The algebraic norm of a product (an element of the algebra) and the topological norm (a positive real) are distinct objects, and the warning is repeated in every article where it bears.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -230,16 +230,16 @@ the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$,
 <td>the second square root of $-1$, $(ij)^{2}=-1$</td>
 </tr>
 <tr>
-<td>$Q_\pm=Q_++jQ_-$</td>
+<td>$\breve Q=Q_++jQ_-$</td>
 <td>a general element, with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$ complex</td>
 </tr>
 <tr>
 <td>$Q_+$</td>
-<td>the scalar part of $Q_\pm$; $jQ_-$ the $j$-part</td>
+<td>the scalar part of $\breve Q$; $jQ_-$ the $j$-part</td>
 </tr>
 <tr>
 <td>$q_+,q'_+,q_-,q'_-$</td>
-<td>the four real coordinates of $Q_\pm$</td>
+<td>the four real coordinates of $\breve Q$</td>
 </tr>
 <tr>
 <td>$\Pi_{\pm}=\tfrac12(1\pm j)$</td>
@@ -247,10 +247,10 @@ the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$,
 </tr>
 <tr>
 <td>$Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$</td>
-<td>the idempotent coordinates of $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
+<td>the idempotent coordinates of $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
 </tr>
 <tr>
-<td>$\varphi(Q_\pm)=(Q_++Q_-,Q_+-Q_-)$</td>
+<td>$\varphi(\breve Q)=(Q_++Q_-,Q_+-Q_-)$</td>
 <td>the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$</td>
 </tr>
 <tr>
@@ -273,7 +273,7 @@ the commutative unital $\mathbb{R}$-algebra of basis $1,i,j,ij$ with $i^{2}=-1$,
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><em>Conventions in Mathematics</em> (<code>articles_maths/conventions-in-mathematics.md</code>), §<em>The Elements and their Coefficients</em>, for the glyph $\mathbb{B}_{\mathrm{r}}$, the element $Q_\pm=Q_++jQ_-$ and the idempotents $\Pi_{\pm}$.</li>
+<li><em>Conventions in Mathematics</em> (<code>articles_maths/conventions-in-mathematics.md</code>), §<em>The Elements and their Coefficients</em>, for the glyph $\mathbb{B}_{\mathrm{r}}$, the element $\breve Q=Q_++jQ_-$ and the idempotents $\Pi_{\pm}$.</li>
 <li><em>Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</em> (<code>articles_maths/reduced-biquaternions-as-a-vector-space-over-r-and-c.md</code>), below this article in this category, for the two readings of the space and the change of scalars.</li>
 <li><em>The Two Involutions and the Group of Involutions</em> (<code>articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md</code>), below this article, for the bar, the natural sign, the star and the flat.</li>
 <li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), below this article, for the four general products and the forms and norms they carry.</li>

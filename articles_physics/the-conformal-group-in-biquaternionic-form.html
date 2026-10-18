@@ -80,7 +80,7 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\mu}Q_\mu^2$, and the trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The metric on $\mathbb{M}_-$ is used in the $(ict,x,y,z)$ convention, so that $\langle ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural}=-c^2t^2+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.</p>
+the anti-Hermitian (material) and Hermitian (informational) sectors, with $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_{\mu}Q_\mu^2$, and the trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde Q\tilde H)=2\,\mathrm{Sc}(\tilde Q\tilde H) = 2\langle\tilde{Q},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The metric on $\mathbb{M}_-$ is used in the $(ict,x,y,z)$ convention, so that $\langle ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural}=-c^2t^2+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2$, with $\eta=\mathrm{diag}(-1,1,1,1)$ below.</p>
 <h2 id="the-conformal-group-and-its-generators">The Conformal Group and Its Generators</h2>
 <p>A <strong>conformal transformation</strong> of a pseudo-Riemannian manifold is a diffeomorphism whose pullback of the metric is a positive multiple of the metric,
 $$
@@ -229,7 +229,7 @@ $$
 $$
 where
 $$
-\langle\tilde{P},\tilde{Q}\rangle=\tfrac12\bigl(\langle\tilde{P}+\tilde{Q}\rangle_{\natural}-\langle\tilde{P}\rangle_{\natural}-\langle\tilde{Q}\rangle_{\natural}\bigr)=\sum_\mu P_\mu Q_\mu
+\langle\tilde Q_1,\tilde Q_2\rangle=\tfrac12\bigl(\langle\tilde Q_1+\tilde Q_2\rangle_{\natural}-\langle\tilde Q_1\rangle_{\natural}-\langle\tilde Q_2\rangle_{\natural}\bigr)=\sum_\mu Q_{1\mu} Q_{2\mu}
 $$
 is the polar form of $\langle\cdot\rangle_{\natural}$ — the complex bilinear dot product, which on $\mathbb{M}_-$ is the Minkowski inner product. In components, with $x^2=\langle\tilde{Q}\rangle_{\natural}$ and $a\cdot x=\langle\tilde{Q},\tilde Q_3\rangle$, this is the standard
 $$
@@ -310,7 +310,7 @@ which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.</p>
 <td>Biquaternion norm; its zero set is the null cone</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu P_\mu Q_\mu$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle=\sum_\mu Q_{1\mu} Q_{2\mu}$</td>
 <td>Polar form of $\langle\cdot\rangle_{\natural}$; Minkowski inner product on $\mathbb{M}_-$</td>
 </tr>
 <tr>
@@ -354,7 +354,7 @@ which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.</p>
 <td>Conformal embedding Clifford algebra; bivectors $\cong\mathrm{SO}(2,4)$, even part real dimension $32$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$</td>
+<td>$\mathrm{Tr}(\tilde Q\tilde H)=2\,\mathrm{Sc}(\tilde Q\tilde H) = 2\langle\tilde{Q},\tilde{H}\rangle$</td>
 <td>Trace pairing on the Hermitian sector</td>
 </tr>
 <tr>
@@ -367,7 +367,7 @@ which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.</p>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$</td>
-<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$</td>
+<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

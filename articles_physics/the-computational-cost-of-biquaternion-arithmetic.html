@@ -86,9 +86,9 @@ $$</p>
 <p>A complex multiplication costs four real multiplications and two real additions in the naive scheme, and three real multiplications and five real additions under Gauss's rule. The naive count for a biquaternion product is therefore four times its coefficient count; the reduced count exploits both the algebra and the complex arithmetic. Both reductions are exact: no approximation and no special case is involved.</p>
 <p>The slice structure of <em>Conventions in the Biquaternion Universe</em> fixes what the extreme counts mean. An element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has all four coefficients real, and an element of the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ has all four coefficients purely imaginary; these are the two cheapest cases, and they are the cases that correspond to the time-reversal symmetric and antisymmetric matrix structures of the source. A general element of $\mathbb{B}$ uses all eight parameters and is the most expensive case. Throughout, "a product with all eight components active" means a product of two general elements.</p>
 <h2 id="the-naive-count">The Naive Count</h2>
-<p>Write the two factors as scalar part plus vector part, $\tilde{P} = S_1 + \vec V_1$ and $\tilde{Q} = S_2 + \vec V_2$, with $S$ complex scalars and $\vec V$ complex vectors. The product is</p>
+<p>Write the two factors as scalar part plus vector part, $\tilde{Q}_1 = S_1 + \vec V_1$ and $\tilde{Q}_2 = S_2 + \vec V_2$, with $S$ complex scalars and $\vec V$ complex vectors. The product is</p>
 <p>$$
-\tilde{P}\tilde{Q} = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr).
+\tilde{Q}_1\tilde{Q}_2 = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr).
 $$</p>
 <p>The sign of the cross term is the corpus's: with $\vec e_x\vec e_y = \vec e_z$ the outer product is $+\vec V_1\times\vec V_2$, so that $\vec e_x\vec e_y$ returns $\vec e_z$; the source's convention reverses the order of the vector units and carries the opposite sign, which is a relabelling and changes no count.</p>
 <p>Counting the coefficient products that appear above, one by one:</p>

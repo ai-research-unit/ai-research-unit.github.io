@@ -67,14 +67,14 @@
       <div class="article-body">
         <h1 id="the-slices-of-the-reduced-biquaternion-julia-sets"><strong>The Slices of the Reduced Biquaternion Julia Sets</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and with the quadratic family $F_{C}(Q_\pm)=Q_\pm^{2}+C$ whose filled Julia set is the product</p>
+<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and with the quadratic family $F_{C}(\breve Q)=\breve Q^{2}+C$ whose filled Julia set is the product</p>
 <p>$$
 \mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}},\qquad \mathcal{J}_{C}=\partial\bigl(K_{c_{1}}\times K_{c_{2}}\bigr),
 $$</p>
 <p>read in the idempotent coordinates, with $C=c_{1}\Pi_++c_{2}\Pi_-$ and with the complex filled Julia sets of the two parameters. The article computes the slices of the reduced biquaternion fractal.</p>
 <p>The result is that every slice is exact, because the fractal is a product and the slices of a product are the products of the slices of the factors with the constraint read on each coordinate separately. There is no new phenomenon: a complex line slice of the fractal is either the whole of a complex filled Julia set or empty, the diagonal slice is the intersection of the two complex filled Julia sets, the real slice is the intersection of the first complex filled Julia set with the conjugate of the second, a one-real-dimensional affine slice is the intersection of two affine line slices of the two complex sets, and everything is computed from the two complex pictures without any twistor-like ambiguity. This is the sharp gain over the non-commutative companion, where only the idempotent plane gives an exact slice and the general slice is not computable from complex data.</p>
 <p>The article owns the notion of a slice for the algebra, the product rule, the complex slices and their degeneracy, the diagonal and the real slices, the affine one-real-dimensional slices, the slices at the parameter zero and the slices of the connectedness locus. The fractal and its product structure are <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>; the global decomposition is <em>The Idempotent Decomposition and the Split Fractal</em>; the dimension is <em>The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</em>; the connectedness locus is <em>The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus</em>; the real subspace and the involution that defines it are <em>Reduced Biquaternion Space</em> and <em>The Two Involutions and the Group of Involutions</em>. The companion, where only the idempotent slice is exact, is <em>The Slices of the Biquaternion Julia Sets</em>.</p>
-<p><strong>Conventions.</strong> The coordinates are $(Q_{++},Q_{--})\in\mathbb{C}^{2}$, identified with the algebra by $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$; a <strong>slice</strong> is the intersection of a set of the algebra with a subset defined by affine or linear conditions on the two coordinates; the conjugate of a set is the set of conjugates of its points.</p>
+<p><strong>Conventions.</strong> The coordinates are $(Q_{++},Q_{--})\in\mathbb{C}^{2}$, identified with the algebra by $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$; a <strong>slice</strong> is the intersection of a set of the algebra with a subset defined by affine or linear conditions on the two coordinates; the conjugate of a set is the set of conjugates of its points.</p>
 <h2 id="the-notion-of-a-slice-and-the-product-rule">The Notion of a Slice and the Product Rule</h2>
 <p><strong>Definition (the slices used).</strong> The slices of this article are the following subsets of the algebra, each written in the idempotent coordinates:</p>
 <div class="table-scroll"><table>
@@ -112,7 +112,7 @@ $$</p>
 \Sigma\cap S=\bigl\{\sigma\in\Sigma:\pi_{1}(\sigma)\in K_{1}\text{ and }\pi_{2}(\sigma)\in K_{2}\bigr\},
 $$</p>
 <p>so that the slice is obtained by intersecting the slice with the two coordinate conditions separately.</p>
-<p><strong>Proof.</strong> The membership $Q_\pm\in K_{1}\times K_{2}$ is the conjunction of the two coordinate memberships, and the slice is a set of constraints on the same two coordinates; intersecting with a product is intersecting with each factor.</p>
+<p><strong>Proof.</strong> The membership $\breve Q\in K_{1}\times K_{2}$ is the conjunction of the two coordinate memberships, and the slice is a set of constraints on the same two coordinates; intersecting with a product is intersecting with each factor.</p>
 <p><strong>Corollary (slices of the filled Julia set).</strong> For the quadratic family every slice of $\mathcal{K}_{C}$ is computed from the two complex filled Julia sets $K_{c_{1}}$ and $K_{c_{2}}$ by the rule above; for the Julia set one uses the two descriptions $\mathcal{J}_{C}=(J_{c_{1}}\times K_{c_{2}})\cup(K_{c_{1}}\times J_{c_{2}})$ and takes the union of the two slice computations.</p>
 <p><strong>Proof.</strong> The product description of the filled set and the union description of the Julia set are those of <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>, and the product rule applies to each product.</p>
 <h2 id="the-complex-slices-and-their-degeneracy">The Complex Slices and Their Degeneracy</h2>
@@ -194,7 +194,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$(Q_{++},Q_{--})$</td>
-<td>the idempotent coordinates, $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
+<td>the idempotent coordinates, $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
 </tr>
 <tr>
 <td>$\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$</td>

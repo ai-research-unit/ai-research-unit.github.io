@@ -141,7 +141,7 @@ $$</p>
 <p>The structure above is a left and a right multiplication of a two-by-two matrix, and that is exactly what the biquaternion algebra's multiplication is. This section makes the identification precise.</p>
 <p><strong>The scalar as a quaternion.</strong> A complex doublet has four real components, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has four real dimensions. The natural carrier is therefore the real quaternion</p>
 <p>$$
-\tilde H = h_0\,e_t + h_1\,\vec e_x + h_2\,\vec e_y + h_3\,\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
+\tilde H = h_t\,e_t + h_x\,\vec e_x + h_y\,\vec e_y + h_z\,\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
 \qquad h_k\in\mathbb{R},
 $$</p>
 <p>on which the unit real quaternions act on the left and on the right,</p>
@@ -151,7 +151,7 @@ $$</p>
 $$</p>
 <p>This is an action of $SU(2)_L\times SU(2)_R$ on a real four-dimensional space — the vector representation, or the $(\tfrac12,\tfrac12)$ of the two factors — and it is the framework's own multiplication rather than an import. The invariant bilinear is the norm,</p>
 <p>$$
-\tilde H\tilde H^{\natural} = \left(h_0^2+h_1^2+h_2^2+h_3^2\right)e_t ,
+\tilde H\tilde H^{\natural} = \left(h_t^2+h_x^2+h_y^2+h_z^2\right)e_t ,
 $$</p>
 <p>or equivalently $\mathrm{Sc}(\tilde H^{*}\tilde H)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde H g_R^{-1}\overline{g_L\tilde H g_R^{-1}}) = \mathrm{Sc}(\tilde H\tilde H^{\natural}) = \langle\tilde H,\tilde H\rangle_{\natural}$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.</p>
 <p><strong>The left action and the sector structure.</strong> The left multiplication by $g_L$ and the right multiplication by $g_R^{-1}$ act on the four components of $\tilde H$ as a pair of independent rotations. The left action is the framework's non-abelian gauge action of the companion articles, and the right action is the one that the framework's four-component objects have always carried: it is the same two-sided multiplication that the rotor conjugation of the Lorentz and gauge articles uses. The <strong>diagonal</strong> $g_L = g_R = g$ is the conjugation</p>
@@ -280,7 +280,7 @@ $$</p>
 <td>Standard Hermitian generators of the compact group</td>
 </tr>
 <tr>
-<td>$\tilde H = h_0e_t + h_k\vec e_k\in\mathbb{H}_{\mathbb{B}}$</td>
+<td>$\tilde H = h_te_t + h_k\vec e_k\in\mathbb{H}_{\mathbb{B}}$</td>
 <td>Quaternion-valued scalar (carrier of the custodial action)</td>
 </tr>
 <tr>

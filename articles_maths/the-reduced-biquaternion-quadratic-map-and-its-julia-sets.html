@@ -67,9 +67,9 @@
       <div class="article-body">
         <h1 id="the-reduced-biquaternion-quadratic-map-and-its-julia-sets"><strong>The Reduced Biquaternion Quadratic Map and Its Julia Sets</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $Q_\pm=Q_++jQ_-$, idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$ and the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$. The quadratic family of the algebra is</p>
+<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_++jQ_-$, idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$ and the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$. The quadratic family of the algebra is</p>
 <p>$$
-F_{C}(Q_\pm)=Q_\pm^{2}+C,\qquad C\in\mathbb{B}_{\mathrm{r}},
+F_{C}(\breve Q)=\breve Q^{2}+C,\qquad C\in\mathbb{B}_{\mathrm{r}},
 $$</p>
 <p>and it is the subject of the article. The single structural fact that decides everything is that the multiplication is componentwise in the idempotent coordinates, so the map is the pair of two complex quadratic maps,</p>
 <p>$$
@@ -77,22 +77,22 @@ F_{C}(Q_{++},Q_{--})=\bigl(Q_{++}^{2}+c_{1},\;Q_{--}^{2}+c_{2}\bigr),\qquad C=c_
 $$</p>
 <p>and the dynamics of the reduced biquaternion quadratic map is therefore the dynamics of a pair of independent complex quadratic maps. The square is unambiguous here, the algebra being commutative; the filled Julia set is the product of the two complex filled Julia sets; the Julia set is the boundary of that product; the critical set is the zero-divisor cone; and the escape is read from the topological norm.</p>
 <p>The article owns the map, the unique reading of the square, the family, the filled Julia set and the Julia set with their product description, the equivariance under the involutions, the critical set and the central parameter. The algebra and the idempotents are <em>Reduced Biquaternion Space</em>; the zero divisors that form the critical set are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>; the topological norm that measures the escape is <em>Topology and Metric for Each of the Operations</em>; the idempotent decomposition and its consequences for the dynamics are <em>The Idempotent Decomposition and the Split Fractal</em>; the slices are <em>The Slices of the Reduced Biquaternion Julia Sets</em>; the dimension is <em>The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</em>; the iterated function systems are <em>The Reduced Biquaternion Iterated Function Systems</em>; the connectedness locus is <em>The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus</em>. The companion is <em>The Biquaternion Quadratic Map and Its Julia Sets</em>, where the non-commutativity makes the square ambiguous and the fractal is not a product.</p>
-<p><strong>Conventions.</strong> The topological norm is $K(Q_\pm)=|Q_+|^{2}+|Q_-|^{2}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$, the Euclidean norm of the four-space; the algebraic norm is $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$, an element of the algebra; a set is <strong>bounded</strong> when it is bounded for $K$. The complex quadratic map of a parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$.</p>
+<p><strong>Conventions.</strong> The topological norm is $K(\breve Q)=|Q_+|^{2}+|Q_-|^{2}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$, the Euclidean norm of the four-space; the algebraic norm is $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$, an element of the algebra; a set is <strong>bounded</strong> when it is bounded for $K$. The complex quadratic map of a parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$.</p>
 <h2 id="the-square-and-its-unique-reading">The Square and Its Unique Reading</h2>
-<p><strong>Proposition (the square is coordinatewise).</strong> For $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ the square is</p>
+<p><strong>Proposition (the square is coordinatewise).</strong> For $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ the square is</p>
 <p>$$
-Q_\pm^{2}=Q_{++}^{2}\Pi_++Q_{--}^{2}\Pi_-,
+\breve Q^{2}=Q_{++}^{2}\Pi_++Q_{--}^{2}\Pi_-,
 $$</p>
-<p>and the reading is unique: the algebra being commutative, there is only one product of $Q_\pm$ with itself, and the left, the right, the plain and the natural-sign products all give the same square.</p>
-<p><strong>Proof.</strong> The multiplication is $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$, so $Q_\pm^{2}=Q_{++}^{2}\Pi_++Q_{--}^{2}\Pi_-$; in a commutative algebra the products $Q_\pm Q_\pm$, $Q_\pm Q_\pm^{\natural}$ and $Q_\pm^{*}Q_\pm$ are related by the involutions and the coefficient conjugation, and $Q_\pm Q_\pm$ is the square of the algebra. The biquaternion square, by contrast, has several readings because the multiplication is not commutative.</p>
-<p><strong>Corollary (the derivative and the critical set).</strong> The derivative of the square is the multiplication by $2Q_\pm$, an operator that is singular exactly when $Q_\pm$ is a zero divisor; the derivative vanishes identically only at $Q_\pm=0$. Hence the critical set of the map in the sense of the points where the derivative is not invertible is the zero-divisor cone</p>
+<p>and the reading is unique: the algebra being commutative, there is only one product of $\breve Q$ with itself, and the left, the right, the plain and the natural-sign products all give the same square.</p>
+<p><strong>Proof.</strong> The multiplication is $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$, $\Pi_+\Pi_-=0$, so $\breve Q^{2}=Q_{++}^{2}\Pi_++Q_{--}^{2}\Pi_-$; in a commutative algebra the products $\breve Q \breve Q$, $\breve Q \breve Q^{\natural}$ and $\breve Q^{*}\breve Q$ are related by the involutions and the coefficient conjugation, and $\breve Q \breve Q$ is the square of the algebra. The biquaternion square, by contrast, has several readings because the multiplication is not commutative.</p>
+<p><strong>Corollary (the derivative and the critical set).</strong> The derivative of the square is the multiplication by $2\breve Q$, an operator that is singular exactly when $\breve Q$ is a zero divisor; the derivative vanishes identically only at $\breve Q=0$. Hence the critical set of the map in the sense of the points where the derivative is not invertible is the zero-divisor cone</p>
 <p>$$
 \mathscr{Z}=\{Q_{++}=0\}\cup\{Q_{--}=0\},
 $$</p>
 <p>and the unique classical critical point is the origin.</p>
-<p><strong>Proof.</strong> The derivative of $Q_\pm\mapsto Q_\pm^{2}$ at $Q_\pm$ in the direction $H$ is $Q_\pm H+HQ_\pm=2Q_\pm H$, the multiplication by $2Q_\pm$; that operator is invertible exactly when $2Q_\pm$ is a unit, that is when $Q_{++}\neq0$ and $Q_{--}\neq0$; and the operator is zero exactly when $Q_\pm=0$.</p>
+<p><strong>Proof.</strong> The derivative of $\breve Q\mapsto \breve Q^{2}$ at $\breve Q$ in the direction $H$ is $\breve Q H+H\breve Q=2\breve Q H$, the multiplication by $2\breve Q$; that operator is invertible exactly when $2\breve Q$ is a unit, that is when $Q_{++}\neq0$ and $Q_{--}\neq0$; and the operator is zero exactly when $\breve Q=0$.</p>
 <h2 id="the-quadratic-family">The Quadratic Family</h2>
-<p><strong>Definition (the family).</strong> The <strong>quadratic family</strong> of the reduced biquaternion algebra is the family $F_{C}(Q_\pm)=Q_\pm^{2}+C$, parametrised by the algebra, and in the idempotent coordinates it is the pair of complex quadratic maps</p>
+<p><strong>Definition (the family).</strong> The <strong>quadratic family</strong> of the reduced biquaternion algebra is the family $F_{C}(\breve Q)=\breve Q^{2}+C$, parametrised by the algebra, and in the idempotent coordinates it is the pair of complex quadratic maps</p>
 <p>$$
 F_{c_{1},c_{2}}(Q_{++},Q_{--})=\bigl(Q_{++}^{2}+c_{1},\;Q_{--}^{2}+c_{2}\bigr).
 $$</p>
@@ -102,7 +102,7 @@ $$</p>
 <h2 id="the-filled-julia-set-and-the-julia-set">The Filled Julia Set and the Julia Set</h2>
 <p><strong>Definition (the two sets).</strong> The <strong>filled Julia set</strong> of $F_{C}$ is</p>
 <p>$$
-\mathcal{K}_{C}=\{Q_\pm\in\mathbb{B}_{\mathrm{r}}:\text{the orbit }F_{C}^{n}(Q_\pm)\text{ is bounded}\},
+\mathcal{K}_{C}=\{\breve Q\in\mathbb{B}_{\mathrm{r}}:\text{the orbit }F_{C}^{n}(\breve Q)\text{ is bounded}\},
 $$</p>
 <p>and the <strong>Julia set</strong> $\mathcal{J}_{C}$ is its boundary.</p>
 <p><strong>Theorem (the product description).</strong> With $C=c_{1}\Pi_++c_{2}\Pi_-$,</p>
@@ -112,14 +112,14 @@ $$</p>
 =\bigl(J_{c_{1}}\times K_{c_{2}}\bigr)\cup\bigl(K_{c_{1}}\times J_{c_{2}}\bigr),
 $$</p>
 <p>the product of the two complex filled Julia sets being read in the idempotent coordinates.</p>
-<p><strong>Proof.</strong> The orbit of $Q_\pm=(Q_{++},Q_{--})$ is the pair of the orbits of $Q_{++}$ under $f_{c_{1}}$ and of $Q_{--}$ under $f_{c_{2}}$, and the orbit is bounded for the topological norm exactly when both coordinate orbits are bounded; hence the filled set is the product. For a product of two compact sets the boundary is the union of the two products obtained by replacing one factor by its boundary, which gives the second identity since $K_{c}=J_{c}\cup\operatorname{int}K_{c}$ and the interior of the product is the product of the interiors.</p>
+<p><strong>Proof.</strong> The orbit of $\breve Q=(Q_{++},Q_{--})$ is the pair of the orbits of $Q_{++}$ under $f_{c_{1}}$ and of $Q_{--}$ under $f_{c_{2}}$, and the orbit is bounded for the topological norm exactly when both coordinate orbits are bounded; hence the filled set is the product. For a product of two compact sets the boundary is the union of the two products obtained by replacing one factor by its boundary, which gives the second identity since $K_{c}=J_{c}\cup\operatorname{int}K_{c}$ and the interior of the product is the product of the interiors.</p>
 <p><strong>Corollary (the escape criterion).</strong> An element escapes to infinity, that is its orbit is unbounded, exactly when one of its two coordinates escapes for the corresponding complex map; the numerical criterion is the classical one, applied to each coordinate.</p>
 <p><strong>Proof.</strong> The norm $\langle\cdot\rangle_{\natural*}$ is the half-sum of the squared moduli of the coordinates, so it is unbounded exactly when one of the two moduli is unbounded; the complex criterion $|\zeta|>R$ with $R$ the standard escape radius of the quadratic family is applied to each coordinate.</p>
 <p><strong>Remark (the direct product survives the dynamics).</strong> The filled Julia set is exactly a product, and not merely contained in one, because the single generator $F_{C}$ acts coordinatewise with the same index on the two coordinates; the product structure of the algebra and the product structure of the fractal are the same product. This is the essential difference from the non-commutative companion, where the filled set is not a product and the coupling terms appear.</p>
 <h2 id="the-conjugations-and-the-equivariance">The Conjugations and the Equivariance</h2>
 <p><strong>Proposition (the equivariance).</strong> Let $g$ be one of the involutions $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$. Then</p>
 <p>$$
-F_{C}\bigl(g(Q_\pm)\bigr)=g\bigl(F_{g(C)}(Q_\pm)\bigr),
+F_{C}\bigl(g(\breve Q)\bigr)=g\bigl(F_{g(C)}(\breve Q)\bigr),
 $$</p>
 <p>so $g$ maps the dynamics of $C$ to the dynamics of $g(C)$; in particular $g$ maps $\mathcal{K}_{C}$ onto $\mathcal{K}_{g(C)}$ and $\mathcal{J}_{C}$ onto $\mathcal{J}_{g(C)}$, and if $g(C)=C$ then $g$ preserves both sets.</p>
 <p><strong>Proof.</strong> Each involution is a real-algebra isomorphism onto its image and an isometry of the topological norm, so it commutes with the squaring and carries the translation by $C$ to the translation by $g(C)$; the statement about the sets follows from the uniqueness of the filled Julia set as the bounded orbit locus.</p>
@@ -138,7 +138,7 @@ $$</p>
 <p><strong>Proof.</strong> On the plane $Q_{++}=0$ the pair is $(0,Q_{--})$ and the boundary of the bidisc meets that plane in the circle $|Q_{--}|=1$; likewise for $Q_{--}=0$.</p>
 <p><strong>Remark (thin singular part).</strong> In the reduced biquaternion dynamics the singular part of the fractal at the parameter zero is a pair of circles, of real dimension one; in the biquaternion dynamics the corresponding singular part contains a real four-dimensional manifold. The difference is the difference between a product of two one-complex-dimensional dynamics, where the singularities are the coordinate planes of the product, and a higher-dimensional dynamics with a genuine critical hypersurface.</p>
 <h2 id="summary">Summary</h2>
-<p>The quadratic map of the reduced biquaternion algebra is $F_{C}(Q_\pm)=Q_\pm^{2}+C$, and because the algebra is commutative the square has a single reading: in the idempotent coordinates the map is the pair $F_{C}(Q_{++},Q_{--})=(Q_{++}^{2}+c_{1},Q_{--}^{2}+c_{2})$ of two complex quadratic maps. The filled Julia set is exactly the product $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ of the two complex filled Julia sets, the Julia set is the boundary of that product, the union of the two mixed products of a boundary and a filled set, and the escape of an orbit is the escape of one of its coordinates. The derivative is the multiplication by $2Q_\pm$, which is singular exactly on the zero-divisor cone $\{Q_{++}=0\}\cup\{Q_{--}=0\}$ and vanishes only at the origin, so the critical set is the cone and the unique classical critical point is the origin. The involutions are equivariances, carrying the dynamics of a parameter to the dynamics of its image, and a real central parameter is fixed by the whole group. For a central parameter the two complex maps coincide and the fractal is the product of a complex fractal with itself; at the parameter zero the filled set is a solid bidisc of real dimension four, the Julia set is its boundary of real dimension three, and the singular part of the Julia set is a pair of circles of real dimension one, thin where the non-commutative companion has a four-dimensional singular manifold.</p>
+<p>The quadratic map of the reduced biquaternion algebra is $F_{C}(\breve Q)=\breve Q^{2}+C$, and because the algebra is commutative the square has a single reading: in the idempotent coordinates the map is the pair $F_{C}(Q_{++},Q_{--})=(Q_{++}^{2}+c_{1},Q_{--}^{2}+c_{2})$ of two complex quadratic maps. The filled Julia set is exactly the product $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ of the two complex filled Julia sets, the Julia set is the boundary of that product, the union of the two mixed products of a boundary and a filled set, and the escape of an orbit is the escape of one of its coordinates. The derivative is the multiplication by $2\breve Q$, which is singular exactly on the zero-divisor cone $\{Q_{++}=0\}\cup\{Q_{--}=0\}$ and vanishes only at the origin, so the critical set is the cone and the unique classical critical point is the origin. The involutions are equivariances, carrying the dynamics of a parameter to the dynamics of its image, and a real central parameter is fixed by the whole group. For a central parameter the two complex maps coincide and the fractal is the product of a complex fractal with itself; at the parameter zero the filled set is a solid bidisc of real dimension four, the Julia set is its boundary of real dimension three, and the singular part of the Julia set is a pair of circles of real dimension one, thin where the non-commutative companion has a four-dimensional singular manifold.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -149,12 +149,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$F_{C}(Q_\pm)=Q_\pm^{2}+C$</td>
+<td>$F_{C}(\breve Q)=\breve Q^{2}+C$</td>
 <td>the quadratic map of the algebra</td>
 </tr>
 <tr>
 <td>$(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$</td>
-<td>the idempotent coordinates, $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
+<td>the idempotent coordinates, $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
 </tr>
 <tr>
 <td>$C=c_{1}\Pi_++c_{2}\Pi_-$</td>
@@ -177,7 +177,7 @@ $$</p>
 <td>the critical set, the zero-divisor cone</td>
 </tr>
 <tr>
-<td>$\langle Q_\pm\rangle_{\natural*}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$</td>
+<td>$\langle \breve Q\rangle_{\natural*}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$</td>
 <td>the topological norm that measures the escape</td>
 </tr>
 <tr>

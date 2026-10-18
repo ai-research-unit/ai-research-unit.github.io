@@ -102,13 +102,13 @@ $$</p>
 <p><strong>Proof.</strong> For real $c$, $F$ maps real coefficients to real coefficients, and the quaternion subspace is closed under multiplication; the restrictions are the maps named.</p>
 <p>The real slice is the smallest picture and shows the real Julia set; the quaternion slice is the three-dimensional picture and is the one the computer graphics of the subject has always drawn. The central slice in between is the complex one.</p>
 <h2 id="the-quaternion-and-anti-quaternion-slices">The Quaternion and Anti-Quaternion Slices</h2>
-<p><strong>Proposition (real and imaginary parts of one orbit).</strong> Write $\tilde Q=\tilde P+i\tilde Q_1$ and $\tilde Q_3=\tilde Q_4+i\tilde Q_5$ with $\tilde P,\tilde Q_1,\tilde Q_4,\tilde Q_5\in\mathbb{H}_{\mathbb{B}}$. Then</p>
+<p><strong>Proposition (real and imaginary parts of one orbit).</strong> Write $\tilde Q=\tilde Q_6+i\tilde Q_1$ and $\tilde Q_3=\tilde Q_4+i\tilde Q_5$ with $\tilde Q_6,\tilde Q_1,\tilde Q_4,\tilde Q_5\in\mathbb{H}_{\mathbb{B}}$. Then</p>
 <p>$$
-F_{\tilde Q_3}(\tilde P+i\tilde Q_1)=\bigl(\tilde P^2-\tilde Q_1^2+\tilde Q_4\bigr)+i\bigl(\tilde P\tilde Q_1+\tilde Q_1\tilde P+\tilde Q_5\bigr),
+F_{\tilde Q_3}(\tilde Q_6+i\tilde Q_1)=\bigl(\tilde Q_6^2-\tilde Q_1^2+\tilde Q_4\bigr)+i\bigl(\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6+\tilde Q_5\bigr),
 $$</p>
-<p>so the map preserves the quaternion subspace exactly when $\tilde P\tilde Q_1+\tilde Q_1\tilde P+\tilde Q_5=0$ for all initial data, which for $\tilde Q_5=0$ is the anticommutation condition $\tilde P\tilde Q_1+\tilde Q_1\tilde P=0$.</p>
+<p>so the map preserves the quaternion subspace exactly when $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6+\tilde Q_5=0$ for all initial data, which for $\tilde Q_5=0$ is the anticommutation condition $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6=0$.</p>
 <p><strong>Proof.</strong> Expand in the general plain bilinear product and collect the real and the imaginary parts; the product $i\tilde Q_1$ is central.</p>
-<p><strong>Remark (the anticommuting pair).</strong> The condition $\tilde P\tilde Q_1+\tilde Q_1\tilde P=0$ with $\tilde P,\tilde Q_1$ real quaternions means the two are purely imaginary and orthogonal, the classical anticommuting pair of a quaternion; it is satisfied in codimension one and is not generic. <strong>The orbit of a generic biquaternion alternates between the two real quaternion slices and is on neither</strong>, and this is the elementary reason the quaternion picture is a slice and not a factorisation.</p>
+<p><strong>Remark (the anticommuting pair).</strong> The condition $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6=0$ with $\tilde Q_6,\tilde Q_1$ real quaternions means the two are purely imaginary and orthogonal, the classical anticommuting pair of a quaternion; it is satisfied in codimension one and is not generic. <strong>The orbit of a generic biquaternion alternates between the two real quaternion slices and is on neither</strong>, and this is the elementary reason the quaternion picture is a slice and not a factorisation.</p>
 <h2 id="the-idempotent-slices-and-the-exact-two-dimensional-picture">The Idempotent Slices and the Exact Two-Dimensional Picture</h2>
 <p><strong>Theorem (the idempotent slice is exact).</strong> Let $\tilde\Pi$ be a primitive idempotent, $\tilde\Pi'=e_t-\tilde\Pi$, and let the parameter lie in $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$, say $\tilde Q_3=C_1\tilde\Pi+C_2\tilde\Pi'$. Then $W_{\tilde\Pi}$ is invariant, and</p>
 <p>$$

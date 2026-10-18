@@ -88,7 +88,7 @@ is of the other kind: it is the product of the two minimal ideals, it is the uni
 <p><strong>Theorem (simultaneous diagonalisation).</strong> The bar $\bar{\cdot}$ and the natural sign ${}^{\natural}$ commute, ${}^{\natural}\bar{\cdot}=\bar{\cdot}{}^{\natural}$, and each has square one; hence the real space decomposes into the four <strong>common eigenspaces</strong>
 $$
 \mathbb{B}_{\mathrm{r}}=\bigoplus_{(\varepsilon_{1},\varepsilon_{2})\in\{\pm1\}^{2}}\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})},\qquad
-\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}=\{Q_\pm:\bar Q_\pm=\varepsilon_{1}Q_\pm,\ Q_\pm^{\natural}=\varepsilon_{2}Q_\pm\},
+\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}=\{\breve Q:\bar{\breve Q}=\varepsilon_{1}\breve Q,\ \breve Q^{\natural}=\varepsilon_{2}\breve Q\},
 $$
 each of real dimension one.</p>
 <p><em>Proof.</em> The two involutions commute because ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ is an involution (<em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>), and two commuting involutions are simultaneously diagonalisable over $\mathbb{R}$; each is $\pm1$ on each common eigenline, and the four eigenvalues give the four spaces. Because the two involutions act on the four basis elements by $\pm$ signs and no two basis elements carry the same sign pair, each common eigenspace is one of the four basis lines and has dimension one.</p>
@@ -140,7 +140,7 @@ and the two summands are the two minimal ideals, the images of the two Peirce pr
 <li>A <strong>grading</strong> $\mathbb{B}_{\mathrm{r}}=\mathbb{B}_{+}\oplus\mathbb{B}_{-}$ has only the three parity inclusions of §<em>Each Halving Is a Grading</em>; the projections are not algebra homomorphisms, and the mixed product is not zero.</li>
 </ol>
 <p>The idempotent decomposition is a direct product; the three halvings are gradings and not direct products.</p>
-<p><em>Proof.</em> For the idempotent decomposition the summands are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, closed under the product, with $\mathbb{C}\Pi_+\cdot\mathbb{C}\Pi_-=\mathbb{C}\Pi_+\Pi_-=0$; the projections are $Q_\pm\mapsto\Pi_+Q_\pm$ and $Q_\pm\mapsto\Pi_-Q_\pm$; each is multiplicative, $\Pi_+(Q_{\pm,1}Q_{\pm,2})=(\Pi_+Q_{\pm,1})(\Pi_+Q_{\pm,2})$ and $\Pi_-(Q_{\pm,1}Q_{\pm,2})=(\Pi_-Q_{\pm,1})(\Pi_-Q_{\pm,2})$, because $\Pi_\pm^{2}=\Pi_\pm$ and $\Pi_+\Pi_-=0$, so they are algebra homomorphisms. For the halvings the anti-fixed plane is not closed by §<em>Each Halving Is a Grading</em> and the mixed product is the anti-fixed plane, which is nonzero.</p>
+<p><em>Proof.</em> For the idempotent decomposition the summands are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, closed under the product, with $\mathbb{C}\Pi_+\cdot\mathbb{C}\Pi_-=\mathbb{C}\Pi_+\Pi_-=0$; the projections are $\breve Q\mapsto\Pi_+\breve Q$ and $\breve Q\mapsto\Pi_-\breve Q$; each is multiplicative, $\Pi_+(\breve Q_{1}\breve Q_{2})=(\Pi_+\breve Q_{1})(\Pi_+\breve Q_{2})$ and $\Pi_-(\breve Q_{1}\breve Q_{2})=(\Pi_-\breve Q_{1})(\Pi_-\breve Q_{2})$, because $\Pi_\pm^{2}=\Pi_\pm$ and $\Pi_+\Pi_-=0$, so they are algebra homomorphisms. For the halvings the anti-fixed plane is not closed by §<em>Each Halving Is a Grading</em> and the mixed product is the anti-fixed plane, which is nonzero.</p>
 <p><strong>Corollary (why the idempotents are central).</strong> The two projections of the idempotent decomposition are the algebra homomorphisms $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\Pi_+$ and $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\Pi_-$, and the decomposition is the one of the direct product $\mathbb{C}\times\mathbb{C}$; the halving projections are only linear. The central idempotents are exactly the ones for which the split is a decomposition of the algebra, and this is the content of <em>The Specificities of the Algebra of the Reduced Biquaternions</em>, §<em>The Associative Interpretation</em>.</p>
 <h2 id="the-projections-and-the-changes-of-basis">The Projections and the Changes of Basis</h2>
 <p><strong>The projections of the three halvings and of the block decomposition are the averaging formulas, and the change from the real basis to the idempotent basis is the matrix of the two idempotents.</strong></p>
@@ -166,18 +166,18 @@ $$
 a real change of basis of determinant $\tfrac14$, so the idempotent decomposition and the block decomposition are two bases of the same real space and the change between them is invertible.</p>
 <p><em>Proof.</em> The displays are the definitions and the multiplication by $i$; the determinant is computed from the matrix whose rows are the four coordinate quadruples, $\tfrac12(1,0,1,0)$, $\tfrac12(0,1,0,1)$, $\tfrac12(1,0,-1,0)$, $\tfrac12(0,1,0,-1)$, which has determinant $\tfrac14$.</p>
 <h2 id="worked-example">Worked Example</h2>
-<p><strong>A generic element in the two decompositions.</strong> For $Q_\pm=2+i+3j+4ij$ the four blocks carry the coordinates $2,1,3,4$, and the three halvings read
+<p><strong>A generic element in the two decompositions.</strong> For $\breve Q=2+i+3j+4ij$ the four blocks carry the coordinates $2,1,3,4$, and the three halvings read
 $$
-P_{\mathbb{C}}Q_\pm=2+i,\quad P_{\mathbb{C}j}Q_\pm=3j+4ij,\qquad P_{\mathbb{R}\{1,j\}}Q_\pm=2+3j,\quad P_{\mathbb{R}\{i,ij\}}Q_\pm=i+4ij,
+P_{\mathbb{C}}\breve Q=2+i,\quad P_{\mathbb{C}j}\breve Q=3j+4ij,\qquad P_{\mathbb{R}\{1,j\}}\breve Q=2+3j,\quad P_{\mathbb{R}\{i,ij\}}\breve Q=i+4ij,
 $$
 $$
-P_{\mathbb{R}\{1,ij\}}Q_\pm=2+4ij,\quad P_{\mathbb{R}\{i,j\}}Q_\pm=i+3j,
+P_{\mathbb{R}\{1,ij\}}\breve Q=2+4ij,\quad P_{\mathbb{R}\{i,j\}}\breve Q=i+3j,
 $$
 while the idempotent decomposition reads
 $$
 Q_{++}=Q_++Q_-=(2+i)+(3+4i)=5+5i,\qquad Q_{--}=Q_+-Q_-=(2+i)-(3+4i)=-1-3i,
 $$
-so $Q_\pm=(5+5i)\Pi_++(-1-3i)\Pi_-$. The element is a unit because $Q_{++}$ and $Q_{--}$ are nonzero, and the two decompositions display it as four real coordinates and as two complex idempotent coordinates respectively.</p>
+so $\breve Q=(5+5i)\Pi_++(-1-3i)\Pi_-$. The element is a unit because $Q_{++}$ and $Q_{--}$ are nonzero, and the two decompositions display it as four real coordinates and as two complex idempotent coordinates respectively.</p>
 <h2 id="summary">Summary</h2>
 <p>The reduced biquaternion space decomposes in three ways along its remarkable subspaces. The bar and the natural sign are commuting involutions, and their <strong>block decomposition</strong> splits the real space into the four common eigenlines $\mathbb{R}\oplus\mathbb{R}i\oplus\mathbb{R}j\oplus\mathbb{R}ij$, labelled by the two signs $(\varepsilon_{\bar{}},\varepsilon_{\natural})$ with the star reading the product sign. Each involution gives a <strong>halving</strong> into its fixed and anti-fixed plane — the natural sign giving $\mathbb{C}\oplus\mathbb{C}j$, the bar giving $\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$ and the star giving $\mathbb{R}\{1,ij\}\oplus\mathbb{R}\{i,j\}$ — and each halving is the grouping of the four blocks two by two. The <strong>idempotent decomposition</strong> splits the algebra into the two eigenlines of the multiplication by $j$, $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, and it is a decomposition of the algebra and not only of the space. The distinction is what is closed under the product: each halving is a $\mathbb{Z}_{2}$-grading, with the anti-fixed plane not a subalgebra, whereas the idempotent decomposition is a direct product, with each summand a minimal ideal and the mixed product zero, and its two projections are the algebra homomorphisms onto the two factors of $\mathbb{C}\times\mathbb{C}$. The projections of the halvings and of the blocks are the averaging formulas built on the involutions, $\tfrac12(\mathrm{id}\pm\sigma)$ and $\tfrac14(\mathrm{id}\pm\bar{\cdot})(\mathrm{id}\pm{}^{\natural})$, and the change between the real basis and the idempotent basis is the invertible real matrix of the two idempotents.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

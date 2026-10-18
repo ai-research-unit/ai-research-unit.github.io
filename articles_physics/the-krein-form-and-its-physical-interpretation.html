@@ -70,7 +70,7 @@
 <p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four forms, one to each of its four general
 products, and the fourth is the <strong>Krein form</strong></p>
 <p>$$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu}=P_t\overline{Q_t}-P_x\overline{Q_x}-P_y\overline{Q_y}-P_z\overline{Q_z},
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{1t}\overline{Q_{2t}}-Q_{1x}\overline{Q_{2x}}-Q_{1y}\overline{Q_{2y}}-Q_{1z}\overline{Q_{2z}},
 $$</p>
 <p>the gauge form of the framework: Hermitian, indefinite, of signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over
 $\mathbb{R}$, real at its two equal arguments, and unable to normalise a state. The four forms and their
@@ -95,7 +95,7 @@ element. All conventions are those of <em>Conventions in the Biquaternion Univer
 <ul>
 <li><strong>The fundamental symmetry.</strong> The natural conjugation $J={}^{\natural}$ is a fundamental symmetry of the form: it is
 $\mathbb{C}$-<strong>linear</strong>, $J^{2}=\mathrm{id}$, self-adjoint for the Krein form, and it carries the bridge identity
-$\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*}$ from the indefinite form to the positive
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,J\tilde Q_2\rangle_{*}$ from the indefinite form to the positive
 definite Hermitian one. Owner: <em>The Fundamental Symmetry of the Biquaternioid Algebra</em>.</li>
 <li><strong>The eigenspaces and the family.</strong> The eigenspaces of $J$ are the centre and the vector subspace, and they are the
 <strong>fundamental decomposition</strong> of the algebra; all the other fundamental symmetries are parametrised by the open unit ball
@@ -110,7 +110,7 @@ $\mathbb{R}$. Owner: <em>The Fundamental Symmetry of the Biquaternioid Algebra</
 <li><strong>The Gram matrix.</strong> In the coefficient basis the Gram matrix is the sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$ of
 determinant $-1$, and in the real basis it is $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$; in the $2\times2$
 model the form is the Hilbert–Schmidt pairing
-$\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde Q)^{\dagger}\mathsf{M}_2(\tilde P))$.
+$\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde Q_2)^{\dagger}\mathsf{M}_2(\tilde Q_1))$.
 Owner: <em>The Krein Gram Matrix and the Restrictions of the Form</em>.</li>
 <li><strong>The restrictions.</strong> By Sylvester's law the inertia is $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$; on the
 remarkable subspaces the restriction is $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the
@@ -167,7 +167,7 @@ $J$-Cartan involution $\theta_J(T)=(T^{\dagger})^{-1}$ has the fixed group $U_J(
 <li><strong>The gauge form pairs two frames and never ranks them.</strong> It is indefinite — positive on the centre directions and negative
 on the vector ones — so it fixes no overall sign and ranks nothing. It normalises nothing: its real value at equal arguments
 carries a signature and is not a weight. The definite companion that carries a weight is the Hermitian form
-$\langle\tilde P,\tilde Q\rangle_{*}$, the Born pairing, and the two are the invariant pair of the frame — the same pair the
+$\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, the Born pairing, and the two are the invariant pair of the frame — the same pair the
 gauge band reads as a product.</li>
 <li><strong>On matter, the gauge form and the interval are one form read with a sign.</strong> On the material sector the Krein form is minus
 the interval, $\langle\cdot,\cdot\rangle_{\natural*}=-\langle\cdot,\cdot\rangle_{\natural}$, so the gauge calibration of matter
@@ -202,7 +202,7 @@ reflection. Physically: the gauge's positivity is transported by the reflection 
 compares frames and never counts states — the counting is the Hermitian form's work.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is the fourth form of
+<p>The Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ is the fourth form of
 the biquaternion algebra, the indefinite Hermitian gauge form of signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over
 $\mathbb{R}$. Its structure is fivefold and is owned on the mathematics side: the fundamental symmetry $J={}^{\natural}$ with the
 bridge to the definite form, the Gram matrix and the signatures of the restrictions, the isotropic structure with the doubly-null
@@ -219,7 +219,7 @@ with a sign; the readings above are the framework's, each labelled, and none of 
 </thead>
 <tbody>
 <tr>
-<td>$\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$</td>
 <td>the Krein form, the gauge form; signature $(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$</td>
 </tr>
 <tr>
@@ -235,7 +235,7 @@ with a sign; the readings above are the framework's, each labelled, and none of 
 <td>the fundamental symmetry, $\mathbb{C}$-linear, $J^{2}=\mathrm{id}$</td>
 </tr>
 <tr>
-<td>$\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*}$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,J\tilde Q_2\rangle_{*}$</td>
 <td>the bridge from the indefinite form to the definite one</td>
 </tr>
 <tr>

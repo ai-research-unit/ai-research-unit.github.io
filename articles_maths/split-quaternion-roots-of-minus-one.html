@@ -138,25 +138,25 @@ $$</p>
 <p><strong>Proof.</strong> The same splitting as in the proof of the main theorem gives $q_t^2 - \langle \vec q\rangle_{\natural} = 1$ and $2q_t\vec q = 0$. If $\vec q = 0$ then $q_t = \pm 1$; if $\vec q \neq 0$ then $q_t = 0$ and $\langle \vec q\rangle_{\natural} = -1$.</p>
 <p><strong>Theorem (The Idempotents Come from the Roots of $+1$).</strong> Let $\eta \in V$ be a solution of $\eta^2 = 1$. Then</p>
 <p>$$
-p_+ = \tfrac{1}{2}(1 + \eta), \qquad p_- = \tfrac{1}{2}(1 - \eta)
+\tilde\pi_+ = \tfrac{1}{2}(1 + \eta), \qquad \tilde\pi_- = \tfrac{1}{2}(1 - \eta)
 $$</p>
-<p>are idempotents with $p_+ + p_- = 1$ and $p_+ p_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_{1,2}$ of (<em>Split-Quaternion Algebra</em>, §<em>The Idempotents</em>) are the case $\eta = \vec e_y$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.</p>
+<p>are idempotents with $\tilde\pi_+ + \tilde\pi_- = 1$ and $\tilde\pi_+ \tilde\pi_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_{1,2}$ of (<em>Split-Quaternion Algebra</em>, §<em>The Idempotents</em>) are the case $\eta = \vec e_y$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.</p>
 <p><strong>Proof.</strong> The identities are the same computation as for $\tilde\pi_{1,2}$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The product that decides the zero divisor is</p>
 <p>$$
 \Big(\tfrac12(1+\eta)\Big)\overline{\Big(\tfrac12(1+\eta)\Big)} = \tfrac14(1+\eta)(1-\eta) = \tfrac14(1-\eta^2) = 0,
 $$</p>
-<p>so the idempotent is a zero divisor, and the same holds for $p_-$.</p>
-<p>For the converse, let $p$ be a non-scalar idempotent, and write $p = \tfrac12 + u$ with $u \in V$. From $p^2 = p$ one gets $u^2 = \tfrac14$, so $\langle u\rangle_{\natural} = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $\langle \eta\rangle_{\natural} = -1$, so $\eta$ is a root of $+1$ in $V$ and $p = \tfrac12(1 + \eta)$, with $\eta = 2p - 1$ determined by $p$. Also $p^{\natural} = \tfrac12 - u = 1 - p$. Put $\eta = 2p - 1$. Then</p>
+<p>so the idempotent is a zero divisor, and the same holds for $\tilde\pi_-$.</p>
+<p>For the converse, let $\tilde\pi$ be a non-scalar idempotent, and write $\tilde\pi = \tfrac12 + u$ with $u \in V$. From $\tilde\pi^2 = \tilde\pi$ one gets $u^2 = \tfrac14$, so $\langle u\rangle_{\natural} = -\tfrac14$ and $u \neq 0$; putting $\eta = 2u$ gives $\eta \in V$, $\eta^2 = 1$ and $\langle \eta\rangle_{\natural} = -1$, so $\eta$ is a root of $+1$ in $V$ and $\tilde\pi = \tfrac12(1 + \eta)$, with $\eta = 2\tilde\pi - 1$ determined by $\tilde\pi$. Also $\tilde\pi^{\natural} = \tfrac12 - u = 1 - \tilde\pi$. Put $\eta = 2\tilde\pi - 1$. Then</p>
 <p>$$
-\bar{\eta} = 2p^{\natural} - 1 = 2(1 - p) - 1 = 1 - 2p = -\eta,
+\bar{\eta} = 2\tilde\pi^{\natural} - 1 = 2(1 - \tilde\pi) - 1 = 1 - 2\tilde\pi = -\eta,
 $$</p>
-<p>so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\eta^2 = 4p^2 - 4p + 1 = 1$. The element $p$ is recovered from $\eta$ as $\tfrac12(1+\eta)$, so the correspondence is bijective.</p>
+<p>so $\eta$ lies in the $-1$ eigenspace of the conjugation, which is $V$; and $\eta^2 = 4\tilde\pi^2 - 4\tilde\pi + 1 = 1$. The element $\tilde\pi$ is recovered from $\eta$ as $\tfrac12(1+\eta)$, so the correspondence is bijective.</p>
 <h3 id="the-roots-are-not-zero-divisors">The Roots Are Not Zero Divisors</h3>
-<p><strong>Theorem (Disjointness and Generation).</strong> No solution of $\tilde\xi^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\tilde\xi$ and each idempotent $p$ of a root of $+1$, the product $\tilde\xi p$ is a nonzero zero divisor, since</p>
+<p><strong>Theorem (Disjointness and Generation).</strong> No solution of $\tilde\xi^2 = -1$ is a zero divisor. However, every solution generates a zero divisor by multiplication by an idempotent: for each solution $\tilde\xi$ and each idempotent $\tilde\pi$ of a root of $+1$, the product $\tilde\xi\tilde\pi$ is a nonzero zero divisor, since</p>
 <p>$$
-\langle\tilde\xi p\rangle_{\natural} = \langle\tilde\xi\rangle_{\natural} \langle p\rangle_{\natural} = 1 \cdot 0 = 0 .
+\langle\tilde\xi\tilde\pi\rangle_{\natural} = \langle\tilde\xi\rangle_{\natural} \langle\tilde\pi\rangle_{\natural} = 1 \cdot 0 = 0 .
 $$</p>
-<p><strong>Proof.</strong> $\langle\tilde\xi\rangle_{\natural} = 1 \neq 0$, so $\tilde\xi$ is a unit and not a zero divisor, by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>. The product $\tilde\xi p$ is nonzero because $\tilde\xi$ is invertible and $p \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle p\rangle_{\natural}$.</p>
+<p><strong>Proof.</strong> $\langle\tilde\xi\rangle_{\natural} = 1 \neq 0$, so $\tilde\xi$ is a unit and not a zero divisor, by <em>Split-Quaternion Norm and Invertibility</em>, §<em>The Invertibility Criterion</em>. The product $\tilde\xi\tilde\pi$ is nonzero because $\tilde\xi$ is invertible and $\tilde\pi \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle\tilde\pi\rangle_{\natural}$.</p>
 <p>The picture is therefore the following. The roots of $+1$ in $V$ form the level set $N = -1$ and produce the idempotents, which are zero divisors and split the algebra; the roots of $-1$ form the level set $N = 1$, produce the copies of $\mathbb{C}$, and are units. The two loci are disjoint level sets in the same three-dimensional space $V$, one cut out by $N = -1$ and one by $N = 1$.</p>
 <h2 id="comparison-with-the-quaternion-and-biquaternion-cases">Comparison with the Quaternion and Biquaternion Cases</h2>
 <h3 id="the-quaternion-case">The Quaternion Case</h3>

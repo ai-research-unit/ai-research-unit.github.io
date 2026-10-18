@@ -74,20 +74,20 @@ $$</p>
 <p>so the algebra is the direct sum of rings $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The decomposition is <strong>global</strong>: the idempotents are central, every element is a pair of complex numbers, and every multiplication, every involution and every norm of the algebra is computed coordinatewise. The article draws the consequences for the fractals of the algebra, and proves the reduction of the dynamics to the two complex slices.</p>
 <p>The result is the strongest possible reduction. A self-map of the algebra written in the coordinates is a pair of complex maps with the same index, a quadratic map of the algebra is a pair of complex quadratic maps, and a quadratic fractal is the product of the two complex fractals while the attractor of a system of contractions is the graph-like set of the pairs matched by the same coding. The coupling term that makes the non-commutative companion hard is identically zero here, and the only place where the two coordinates interact is the index of the generators: a point of the attractor has the same coding in the two coordinates, and that is the whole of the interaction. The singular sets, the zero-divisor cone and its slices, are then computed from the two complex singular sets.</p>
 <p>The article owns the global decomposition, the proof of the reduction, the coupling term and its vanishing, the matched structure of the split fractal, and the effect of the zero divisors on the singular sets. The algebra, the idempotents and the coordinates are <em>Reduced Biquaternion Space</em> and <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; the quadratic map and its fractal are <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>; the slices are <em>The Slices of the Reduced Biquaternion Julia Sets</em>; the dimension is <em>The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</em>; the systems of contractions are <em>The Reduced Biquaternion Iterated Function Systems</em>; the connectedness locus is <em>The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus</em>. The companion is <em>The Idempotent Decomposition and the Split Fractal</em>, where the idempotents are not central and the decomposition is only local.</p>
-<p><strong>Conventions.</strong> The element is $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ with $Q_{++},Q_{--}\in\mathbb{C}$; the topological norm is $\langle Q_\pm\rangle_{\natural*}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$ with filled Julia set $K_{c}$ and Julia set $J_{c}$; a <strong>map of the algebra</strong> is a map written in the coordinates, and a <strong>generator</strong> is one of the maps of a finite system.</p>
+<p><strong>Conventions.</strong> The element is $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ with $Q_{++},Q_{--}\in\mathbb{C}$; the topological norm is $\langle \breve Q\rangle_{\natural*}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$ with filled Julia set $K_{c}$ and Julia set $J_{c}$; a <strong>map of the algebra</strong> is a map written in the coordinates, and a <strong>generator</strong> is one of the maps of a finite system.</p>
 <h2 id="the-global-decomposition">The Global Decomposition</h2>
 <p><strong>Theorem (the decomposition is a direct sum of rings).</strong> The algebra is the direct sum of its two idempotent lines,</p>
 <p>$$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,
 $$</p>
-<p>and the two projections $Q_\pm\mapsto Q_{++}$ and $Q_\pm\mapsto Q_{--}$ are algebra homomorphisms onto $\mathbb{C}$, the two characters of the algebra.</p>
+<p>and the two projections $\breve Q\mapsto Q_{++}$ and $\breve Q\mapsto Q_{--}$ are algebra homomorphisms onto $\mathbb{C}$, the two characters of the algebra.</p>
 <p><strong>Proof.</strong> The four relations above give $\Pi_+(Q_{++}\Pi_++Q_{--}\Pi_-)=Q_{++}\Pi_+$ and $\Pi_-(Q_{++}\Pi_++Q_{--}\Pi_-)=Q_{--}\Pi_-$, so the decomposition is additive and multiplicative; the projections are ring homomorphisms because the multiplication is componentwise, and they are the two nontrivial complex-valued algebra homomorphisms.</p>
 <p><strong>Corollary (everything is coordinatewise).</strong> The multiplication, the four products, the involutions, the four norms and the matrix model are computed on the two coordinates separately and combined; an algebra endomorphism is the pair of a complex automorphism of the first coordinate and a complex automorphism of the second, subject to the reality condition.</p>
 <p><strong>Proof.</strong> The assertion is the definition of the componentwise multiplication together with the tables of <em>The Four Products, Their Forms and Their Algebraic Norms</em> and <em>Reduced Biquaternion Other Algebraic Element Representations</em>.</p>
 <h2 id="the-reduction-of-the-dynamics">The Reduction of the Dynamics</h2>
-<p><strong>Theorem (the reduction).</strong> Let $F:\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}}$ be a map that in the coordinates is continuous and written as $F(Q_{++},Q_{--})=(F_{1}(Q_{++}),F_{2}(Q_{--}))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $Q_\pm=(Q_{++},Q_{--})$ is the pair of the orbits of the two coordinates,</p>
+<p><strong>Theorem (the reduction).</strong> Let $F:\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}}$ be a map that in the coordinates is continuous and written as $F(Q_{++},Q_{--})=(F_{1}(Q_{++}),F_{2}(Q_{--}))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $\breve Q=(Q_{++},Q_{--})$ is the pair of the orbits of the two coordinates,</p>
 <p>$$
-F^{n}(Q_\pm)=\bigl(F_{1}^{n}(Q_{++}),\,F_{2}^{n}(Q_{--})\bigr),
+F^{n}(\breve Q)=\bigl(F_{1}^{n}(Q_{++}),\,F_{2}^{n}(Q_{--})\bigr),
 $$</p>
 <p>and the filled set of bounded orbits is</p>
 <p>$$
@@ -95,16 +95,16 @@ $$</p>
 $$</p>
 <p>where $K^{(j)}$ is the filled set of the one-variable map $F_{j}$ in the bounded sense.</p>
 <p><strong>Proof.</strong> By induction the $n$-th iterate is the pair of the $n$-th iterates; the orbit is bounded for $\langle\cdot\rangle_{\natural*}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$ exactly when both coordinate orbits are bounded.</p>
-<p><strong>Corollary (the quadratic case).</strong> The quadratic map $F_{C}(Q_\pm)=Q_\pm^{2}+C$ is a map of this form, with $F_{j}(\zeta)=\zeta^{2}+c_{j}$; hence $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ and the dynamics of the algebra is the product of the two complex dynamics.</p>
+<p><strong>Corollary (the quadratic case).</strong> The quadratic map $F_{C}(\breve Q)=\breve Q^{2}+C$ is a map of this form, with $F_{j}(\zeta)=\zeta^{2}+c_{j}$; hence $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ and the dynamics of the algebra is the product of the two complex dynamics.</p>
 <p><strong>Proof.</strong> The square and the translation are coordinatewise, and the corollary restates the product theorem of <em>The Reduced Biquaternion Quadratic Map and Its Julia Sets</em>.</p>
 <h2 id="the-coupling-term-and-its-vanishing">The Coupling Term and Its Vanishing</h2>
-<p><strong>Proposition (the coupling vanishes).</strong> Write a general quadratic map of the algebra with a linear and a constant term, $F(Q_\pm)=Q_\pm^{2}+AQ_\pm+B$, in the coordinates $A=a_{1}\Pi_++a_{2}\Pi_-$ and $B=b_{1}\Pi_++b_{2}\Pi_-$. Then</p>
+<p><strong>Proposition (the coupling vanishes).</strong> Write a general quadratic map of the algebra with a linear and a constant term, $F(\breve Q)=\breve Q^{2}+A\breve Q+B$, in the coordinates $A=a_{1}\Pi_++a_{2}\Pi_-$ and $B=b_{1}\Pi_++b_{2}\Pi_-$. Then</p>
 <p>$$
 F(Q_{++},Q_{--})=\bigl(Q_{++}^{2}+a_{1}Q_{++}+b_{1},\;Q_{--}^{2}+a_{2}Q_{--}+b_{2}\bigr),
 $$</p>
 <p>with no term mixing $Q_{++}$ and $Q_{--}$; every polynomial map of the algebra is the pair of its two complex polynomial maps.</p>
-<p><strong>Proof.</strong> The multiplication is componentwise, so $Q_\pm^{2}=(Q_{++}^{2},Q_{--}^{2})$, $AQ_\pm=(a_{1}Q_{++},a_{2}Q_{--})$ and $B=(b_{1},b_{2})$; there is no monomial of mixed coordinates because the algebra is a direct product of rings, in which the two coordinates are orthogonal.</p>
-<p><strong>Remark (what the vanishing buys).</strong> In the biquaternion algebra the product $AQ_\pm$ is not coordinatewise, and the idempotent coordinates of a product contain a term mixing the two complex coordinates, proportional to the imaginary part of the quaternion product; that term is the obstruction to the global reduction and the source of the non-product structure of the biquaternion fractal. In the reduced algebra the term is identically zero, and the global reduction is available.</p>
+<p><strong>Proof.</strong> The multiplication is componentwise, so $\breve Q^{2}=(Q_{++}^{2},Q_{--}^{2})$, $A\breve Q=(a_{1}Q_{++},a_{2}Q_{--})$ and $B=(b_{1},b_{2})$; there is no monomial of mixed coordinates because the algebra is a direct product of rings, in which the two coordinates are orthogonal.</p>
+<p><strong>Remark (what the vanishing buys).</strong> In the biquaternion algebra the product $A\breve Q$ is not coordinatewise, and the idempotent coordinates of a product contain a term mixing the two complex coordinates, proportional to the imaginary part of the quaternion product; that term is the obstruction to the global reduction and the source of the non-product structure of the biquaternion fractal. In the reduced algebra the term is identically zero, and the global reduction is available.</p>
 <h2 id="the-matched-structure-of-the-split-fractal">The Matched Structure of the Split Fractal</h2>
 <p><strong>Definition (the split fractal).</strong> Let $f_{1},\dots,f_{m}$ be <strong>generators</strong>, each a contraction of the algebra written in the coordinates as a pair of complex maps, $f_{i}(Q_{++},Q_{--})=(f_{i}^{+}(Q_{++}),f_{i}^{-}(Q_{--}))$. The <strong>split fractal</strong> of the system is the attractor of the system, the unique non-empty compact set $\mathcal{K}$ with</p>
 <p>$$
@@ -155,7 +155,7 @@ $$</p>
 <td>the global decomposition</td>
 </tr>
 <tr>
-<td>$Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
+<td>$\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
 <td>the element and its idempotent coordinates</td>
 </tr>
 <tr>

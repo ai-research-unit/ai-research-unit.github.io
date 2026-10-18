@@ -142,7 +142,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="the-scalar-imaginary-exchanges-the-two-sectors">The Scalar Imaginary Exchanges the Two Sectors</h2>
-<p>The relation $i\,\mathbb{M}_+ = \mathbb{M}_-$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+$, using $\tilde{H}^{*} = \tilde{H}$, $i^{*} = -i$, and the centrality of $i$,</p>
+<p>The relation $i\,\mathbb{M}_+ = \mathbb{M}_-$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$, using $\tilde{H}^{*} = \tilde{H}$, $i^{*} = -i$, and the centrality of $i$,</p>
 <p>$$
 (i\tilde{H})^{*} = \tilde{H}^{*} i^{*} = \tilde{H}\,(-i) = -i\tilde{H}.
 $$</p>
@@ -180,15 +180,15 @@ $$</p>
 <p>$$
 i\hbar\,\partial/\partial t\psi(t) = \tilde{H}\,\psi(t),
 \qquad
-\tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+,
+\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+,
 \qquad
 \psi(t) \in \mathbb{B}\tilde\Pi,
 $$</p>
 <p>where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{H}i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde{H}\psi \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.</p>
-<p><strong>Solution.</strong> Since $-i\tilde{H} = -ih_0e_t + \vec h$ and the scalar and vector parts commute,</p>
+<p><strong>Solution.</strong> Since $-i\tilde{H} = -ih_te_t + \vec h$ and the scalar and vector parts commute,</p>
 <p>$$
 \tilde{U}(t) = \exp\!\left(-i\tilde{H}t/\hbar\right)
-= \exp(-ih_0t/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_h\right),
+= \exp(-ih_tt/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_h\right),
 \qquad
 \theta = \frac{|\vec h|t}{\hbar},
 $$</p>
@@ -199,7 +199,7 @@ $$</p>
 = \mathrm{Tr}\!\left(\psi(0)^\dagger\psi(0)\right).
 $$</p>
 <p>Differentiating the solution gives $i\hbar\,\partial/\partial t\psi = i\hbar(-i\tilde{H}/\hbar)\psi = \tilde{H}\psi$, so it is the required solution.</p>
-<p><strong>Case checked.</strong> For $\tilde{H} = i\,\vec e_x$ one has $h_0 = 0$, $\vec h = \vec e_x$, and $\tilde{U}(t) = \cos(t/\hbar)e_t + \sin(t/\hbar)\vec e_x$. Then $\tilde{U}(t)$ is unitary, and $\tilde{H}\tilde{U} = i \vec e_x(\cos(t/\hbar)e_t + \sin(t/\hbar)\vec e_x) = i\cos(t/\hbar)\vec e_x - i\sin(t/\hbar)e_t$ equals $i\hbar\,d\tilde{U}/dt = i(-\sin(t/\hbar)e_t + \cos(t/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.</p>
+<p><strong>Case checked.</strong> For $\tilde{H} = i\,\vec e_x$ one has $h_t = 0$, $\vec h = \vec e_x$, and $\tilde{U}(t) = \cos(t/\hbar)e_t + \sin(t/\hbar)\vec e_x$. Then $\tilde{U}(t)$ is unitary, and $\tilde{H}\tilde{U} = i \vec e_x(\cos(t/\hbar)e_t + \sin(t/\hbar)\vec e_x) = i\cos(t/\hbar)\vec e_x - i\sin(t/\hbar)e_t$ equals $i\hbar\,d\tilde{U}/dt = i(-\sin(t/\hbar)e_t + \cos(t/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.</p>
 <p><strong>Consistency with the density matrix.</strong> The companion article's equation for $\tilde{Ϛ} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \psi\psi^\dagger$ and using $\partial/\partial t\psi = -i\tilde{H}\psi/\hbar$, $\partial/\partial t\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives</p>
 <p>$$
 \partial/\partial t\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
@@ -244,7 +244,7 @@ $$</p>
 <p>$$
 \partial/\partial t\psi = -\frac{i}{\hbar}\tilde{H}\psi,
 \qquad
--\frac{i}{\hbar}\tilde{H} = \frac{\vec h - i h_0 e_t}{\hbar} \in \mathbb{M}_-.
+-\frac{i}{\hbar}\tilde{H} = \frac{\vec h - i h_t e_t}{\hbar} \in \mathbb{M}_-.
 $$</p>
 <p>The generator $-i\tilde{H}/\hbar$ is anti-Hermitian; this is the general reason the exponential is unitary. The two interpretations are then:</p>
 <ul>
@@ -283,7 +283,7 @@ $$</p>
 <p>$$
 i\hbar\,\partial/\partial t\psi = \tilde{H}\psi,
 $$</p>
-<p>with $\tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and $i$ the <strong>scalar imaginary</strong> — the central root of $-1$ in $\mathbb{B}$, unique up to sign.</p>
+<p>with $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and $i$ the <strong>scalar imaginary</strong> — the central root of $-1$ in $\mathbb{B}$, unique up to sign.</p>
 <p>The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.</p>
 <p>Using a non-central root $J$ in place of $i$ fails generically: the generator $-\hbar^{-1}J\tilde{H}$ need not be anti-Hermitian, so the flow is not unitary and the norm is not preserved (explicitly for $J = \vec e_z$, $\tilde{H} = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.</p>
 <p>Read in the two sectors, the equation says that the Hermitian observable $\tilde{H} \in \mathbb{M}_+$ generates, through the intertwiner $i$, a flow whose generator $-i\tilde{H}/\hbar$ lies in the material sector $\mathbb{M}_-$. For a single qubit this is a rewriting of the standard two-component equation; the structural content is that the complex structure is supplied by the algebra, the observable/generator split is intrinsic to the Hermitian decomposition, and the roots of $-1$ are separated by role.</p>
@@ -325,7 +325,7 @@ $$</p>
 <td>Real quaternion subspace; home of the unit pure quaternions $\vec u$</td>
 </tr>
 <tr>
-<td>$\tilde{H} = h_0e_t + i\vec h$</td>
+<td>$\tilde{H} = h_te_t + i\vec h$</td>
 <td>Hermitian element (Hamiltonian)</td>
 </tr>
 <tr>
@@ -345,7 +345,7 @@ $$</p>
 <td>Unitary evolution, $\psi(t) = \tilde{U}(t)\psi(0)$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde\Pi_1(\vec u)\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}) = h_0 + \vec u\cdot\vec h$</td>
+<td>$\mathrm{Tr}(\tilde\Pi_1(\vec u)\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}) = h_t + \vec u\cdot\vec h$</td>
 <td>Trace formula / Born rule</td>
 </tr>
 <tr>

@@ -122,10 +122,13 @@ with real $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the value $\langle\tild
 scalar line $\mathbb{R}e_t$ lies in $\mathbb{M}_+$.</p>
 <p><strong>Interpretation.</strong> Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
 and it is the minimal instance of a cross-sector coupling supplied by the product itself. It is
-deliberately weak: it is a map and not an evolution, and the product of <em>two</em> material elements is not
-informational — it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
-lies in neither sector. The square is the coupling; the product is not. The identity is owned by <em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em>, and the grid-level pointer by <em>The Four General Products and Their Physical Readings</em>.
-$100$; on $100$ random pairs of material elements the product lies in neither sector on $100$ of $100$.</p>
+deliberately weak: it is a map and not an evolution, and the product of <em>two</em> material elements is not in
+general informational: unless their spatial parts are parallel, it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
+lies in neither sector. The square is the coupling; the product is not. The identity is owned by <em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em>, and the grid-level pointer by <em>The Four General Products and Their Physical Readings</em>. The exception is exact: for $\tilde{R}_1=i a_1e_t+\vec v_1$ and $\tilde{R}_2=i a_2e_t+\vec v_2$,
+$$
+\tilde{R}_1\tilde{R}_2=\bigl(-a_1a_2-(\vec v_1,\vec v_2)\bigr)+i\bigl(a_1\vec v_2+a_2\vec v_1\bigr)+\vec v_1\times\vec v_2,
+$$
+which is Hermitian exactly when $\vec v_1\times\vec v_2=0$. On $100$ random pairs with non-parallel spatial parts the product lies in neither sector in every case.</p>
 <h3 id="the-preparation-map">The Preparation Map</h3>
 <p>The second map is a rotation of the four-vector into an element of the informational sector.</p>
 <p><strong>Map.</strong> On a material element $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the central element
@@ -134,7 +137,7 @@ $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ is</p>
 \tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_t+(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) = \tfrac12\bigl(ct\,e_t-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \in \mathbb{M}_+,
 $$</p>
 <p>with $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac14 \langle\tilde{R}\rangle_{\natural}$. On the trace-one slice
-$ct = 1$ it is the Hermitian state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
+of the future cone, $ct = 1$ with $|\vec r| \le 1$, it is the Hermitian state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
 a point of the Bloch ball.</p>
 <p><strong>Interpretation.</strong> The map is a dictionary and not a dynamics: it names a <strong>state preparation</strong>, the
 correspondence between a future-directed four-vector and a mixed state, and it is the mirror dictionary
@@ -174,12 +177,12 @@ framework is the one <em>Biquaternion Rotations and Lorentz Transformations</em>
 <p><strong>Proposition (the off-sector scalar part).</strong> For $\tilde{P}\in\mathbb{M}_-$ and $\tilde{H}\in\mathbb{M}_+$,
 the scalar part of the plain product is purely imaginary,</p>
 <p>$$
-\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\vec h\bigr) \quad \text{for }
-\tilde{P} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \quad \tilde{H} = h_0e_t+i\vec h,
+\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\vec h\bigr) \quad \text{for }
+\tilde{P} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \quad \tilde{H} = h_te_t+i\vec h,
 $$</p>
 <p>with both factors real.</p>
-<p><strong>Why.</strong> The scalar part of the product is $P_0H_0-(\vec P,\vec H)$, and the two terms are
-$ict\cdot h_0$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot i\vec h$, each carrying one factor of $i$.</p>
+<p><strong>Why.</strong> The scalar part of the product is $ict\,h_t-(\vec P,i\vec h)$, and the two terms are
+$ict\cdot h_t$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot i\vec h$, each carrying one factor of $i$.</p>
 <p><strong>Interpretation.</strong> The pairing reads a material operation against an informational state and returns a phase,
 which is the off-sector interpretation of <em>The Bilinear Product on the Material Sector</em>. It is a pairing and
 not a map, and it produces no element of either sector. The <strong>imaginary part of the norm</strong> is the same
@@ -236,14 +239,14 @@ Biquaternionic Form</em>.</p>
 <td>map</td>
 <td>$\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$</td>
 <td><em>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$</em></td>
-<td>a map, not an evolution; the product of two is not informational</td>
+<td>a map, not an evolution; the product of two is not in general informational</td>
 </tr>
 <tr>
 <td>preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$</td>
 <td>map</td>
 <td>$\mathbb{M}_-\to\mathbb{M}_+$</td>
 <td><em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em></td>
-<td>a dictionary, no dynamics; state only on the trace-one slice</td>
+<td>a dictionary, no dynamics; state only on the trace-one slice of the future cone</td>
 </tr>
 <tr>
 <td>central multiplication $\tilde{Q}\mapsto i\tilde{Q}$</td>
@@ -361,8 +364,8 @@ each of its instances owned by an article that proves it.</p>
 <td>Material element, $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ real</td>
 </tr>
 <tr>
-<td>$\tilde{H} = h_0e_t+i\vec h$</td>
-<td>Informational element, $h_0$ and $\vec h$ real</td>
+<td>$\tilde{H} = h_te_t+i\vec h$</td>
+<td>Informational element, $h_t$ and $\vec h$ real</td>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$</td>

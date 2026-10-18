@@ -107,10 +107,10 @@ $$</p>
 <p>$$
 M(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix},
 $$</p>
-<p>so that the Hermitian element $\tilde{H} = h_0e_t + i(h_1\vec e_x + h_2\vec e_y + h_3\vec e_z)$ with real $h_\mu$ maps to</p>
+<p>so that the Hermitian element $\tilde{H} = h_te_t + i(h_x\vec e_x + h_y\vec e_y + h_z\vec e_z)$ with real $h_\mu$ maps to</p>
 <p>$$
-M(\tilde{H}) = \begin{pmatrix} h_0 + h_3 & h_1 - ih_2 \\ h_1 + ih_2 & h_0 - h_3 \end{pmatrix}
-= h_0 I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3 .
+M(\tilde{H}) = \begin{pmatrix} h_t + h_z & h_x - ih_y \\ h_x + ih_y & h_t - h_z \end{pmatrix}
+= h_t I_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3 .
 $$</p>
 <p>Acting on $|u\rangle = (u_x, u_y)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\vec u$ maps to</p>
 <p>$$
@@ -124,7 +124,7 @@ $$</p>
 \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\}, \qquad
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$</p>
-<p>Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde{H} = h_0e_t + i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_0I_2 + \vec h\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ <strong>is</strong> the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.</p>
+<p>Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde{H} = h_te_t + i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_tI_2 + \vec h\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ <strong>is</strong> the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.</p>
 <h2 id="the-defining-module">The Defining Module</h2>
 <h3 id="the-module">The module</h3>
 <p>Let $S = \mathbb{C}^2$ be the space of column vectors, acted on from the left by $M_2(\mathbb{C})$, hence by $\mathbb{B}$ through the isomorphism above:</p>

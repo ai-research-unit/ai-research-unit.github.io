@@ -134,9 +134,9 @@ $$</p>
 <p>So the map preserves the multiplication rules. The scalar imaginary $i$ maps to $iI_2$, which satisfies $(iI_2)^2 = -I_2$ and commutes with all $(-i\sigma_k)$. Both properties are required.</p>
 <h3 id="the-two-subspaces-under-the-isomorphism">The Two Subspaces Under the Isomorphism</h3>
 <p>Under this isomorphism, the fixed-point subspaces of the algebra acquire concrete matrix forms.</p>
-<p><strong>Hermitian subspace $\mathbb{M}_+$.</strong> A general element is $\tilde{H} = h_0 e_t + i h_1 \vec e_x + i h_2 \vec e_y + i h_3 \vec e_z$ with $h_k \in \mathbb{R}$. Under the isomorphism:</p>
+<p><strong>Hermitian subspace $\mathbb{M}_+$.</strong> A general element is $\tilde{H} = h_t e_t + i h_x \vec e_x + i h_y \vec e_y + i h_z \vec e_z$ with $h_k \in \mathbb{R}$. Under the isomorphism:</p>
 <p>$$
-\tilde{H} \mapsto h_0 I_2 + h_1 \sigma_1 + h_2 \sigma_2 + h_3 \sigma_3.
+\tilde{H} \mapsto h_t I_2 + h_x \sigma_1 + h_y \sigma_2 + h_z \sigma_3.
 $$</p>
 <p>This is a <strong>Hermitian $2 \times 2$ matrix</strong>. So $\mathbb{M}_+$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.</p>
 <p><strong>Anti-Hermitian subspace $\mathbb{M}_-$.</strong> A general element is $\tilde{Q} = i x_0 e_t + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ with $x_k \in \mathbb{R}$. Under the isomorphism:</p>
@@ -152,11 +152,11 @@ $$</p>
 <h2 id="the-observables">The Observables</h2>
 <p>The identification of $\mathbb{M}_+$ with the observables is direct.</p>
 <p><strong>Statement.</strong> The Hermitian subspace $\mathbb{M}_+$ is isomorphic, as a real vector space, to the space of observables of a spin-1/2 quantum system.</p>
-<p><strong>Proof.</strong> Under the isomorphism of the previous section, an element $\tilde{H} \in \mathbb{M}_+$ with components $(h_0, h_1, h_2, h_3)$ maps to the Hermitian matrix $h_0 I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.</p>
+<p><strong>Proof.</strong> Under the isomorphism of the previous section, an element $\tilde{H} \in \mathbb{M}_+$ with components $(h_t, h_x, h_y, h_z)$ maps to the Hermitian matrix $h_t I_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.</p>
 <h3 id="corollaries">Corollaries</h3>
 <p><strong>Real dimension.</strong> $\mathbb{M}_+$ has real dimension 4, matching the dimension of the space of Hermitian $2\times 2$ matrices. This is the same as the dimension of the space of observables of a two-state system.</p>
 <p><strong>Basis.</strong> The four elements $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ of $\mathbb{M}_+$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.</p>
-<p><strong>The identity and the traceless part.</strong> The scalar part $h_0 e_t$ maps to the identity component $h_0 I_2$, which is the "trivial" observable. The vector part $i(h_1 \vec e_x + h_2 \vec e_y + h_3 \vec e_z)$ maps to the traceless part $h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$. The trace of an element of $\mathbb{M}_+$ is $2h_0$ (twice the scalar part), which corresponds to the trace of the matrix.</p>
+<p><strong>The identity and the traceless part.</strong> The scalar part $h_t e_t$ maps to the identity component $h_t I_2$, which is the "trivial" observable. The vector part $i(h_x \vec e_x + h_y \vec e_y + h_z \vec e_z)$ maps to the traceless part $h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$. The trace of an element of $\mathbb{M}_+$ is $2h_t$ (twice the scalar part), which corresponds to the trace of the matrix.</p>
 <h2 id="the-idempotents-as-pure-states">The Idempotents as Pure States</h2>
 <p>The idempotents of $\mathbb{M}_+$ are the pure-state idempotents of the spin-1/2 system.</p>
 <p><strong>Statement.</strong> The idempotents of $\mathbb{M}_+$ are exactly the elements</p>
@@ -393,7 +393,7 @@ $$</p>
 <td>Idempotent (pure spin state)</td>
 </tr>
 <tr>
-<td>$\tilde{H} = h_0 e_t + ih_\mu \vec e_\mu$</td>
+<td>$\tilde{H} = h_t e_t + ih_\mu \vec e_\mu$</td>
 <td>Hermitian element (observable)</td>
 </tr>
 <tr>

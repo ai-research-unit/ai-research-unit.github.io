@@ -364,7 +364,7 @@ $$</p>
 $$</p>
 <p>the eigenvalues are $4$ and $2$. With $\sigma_f = 2.5$ the point lies in the region, although $\sum_k (2.5\,\tilde{Q}^{-1})^k$ diverges, its partial sums reaching Euclidean norm $6.8 \times 10^{19}$ at $k = 200$. For an element with real quaternion coordinates the two eigenvalues are conjugate, $r$ is their common modulus, and the two regions coincide, so the correction concerns the biquaternions proper and not the quaternion subspace. In the applications the variable is a complex scalar, where $\tilde{Q}^{-n}$ has norm $\lvert \tilde{Q}\rvert^{-n}$ and the classical theory of the complex Z transform carries over to the coefficients unchanged.</p>
 <h3 id="the-calculation-rules">The Calculation Rules</h3>
-<p>Each row below is an identity of series, valid wherever the series concerned converge; the rows built from the central calculus carry the commutation hypothesis displayed with them. The sequences are $f$ and $g$, the constants are $c_1, c_2 \in \mathbb{B}$ and $\tilde P, \tilde A \in \mathbb{B}$, and $k$ is a non-negative integer.</p>
+<p>Each row below is an identity of series, valid wherever the series concerned converge; the rows built from the central calculus carry the commutation hypothesis displayed with them. The sequences are $f$ and $g$, the constants are $c_1, c_2$, the bases are $\tilde Q_1, \tilde A \in \mathbb{B}$, and $k$ is a non-negative integer.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -440,12 +440,12 @@ $$</p>
 <td>$(\tilde{Q} + \tilde{Q}^2)(\tilde{Q} - e_t)^{-3}$</td>
 </tr>
 <tr>
-<td>$\tilde P^n$, for $\tilde P\tilde{Q} = \tilde{Q}\tilde P$</td>
-<td>$(e_t - \tilde P\tilde{Q}^{-1})^{-1}$</td>
+<td>$\tilde Q_1^n$, for $\tilde Q_1\tilde{Q} = \tilde{Q}\tilde Q_1$</td>
+<td>$(e_t - \tilde Q_1\tilde{Q}^{-1})^{-1}$</td>
 </tr>
 <tr>
-<td>$n\tilde P^n$, for $\tilde P\tilde{Q} = \tilde{Q}\tilde P$</td>
-<td>$\tilde P\tilde{Q}^{-1}(e_t - \tilde P\tilde{Q}^{-1})^{-2}$</td>
+<td>$n\tilde Q_1^n$, for $\tilde Q_1\tilde{Q} = \tilde{Q}\tilde Q_1$</td>
+<td>$\tilde Q_1\tilde{Q}^{-1}(e_t - \tilde Q_1\tilde{Q}^{-1})^{-2}$</td>
 </tr>
 <tr>
 <td>$\dfrac{\tilde A^n}{n!}$, for $\tilde A\tilde{Q} = \tilde{Q}\tilde A$</td>

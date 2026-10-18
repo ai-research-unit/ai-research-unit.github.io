@@ -89,7 +89,7 @@ $$</p>
 \qquad
 \mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$</p>
-<p>with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace is normalized by $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_t)=2$. The <strong>spinor module</strong> is the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with</p>
+<p>with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace is normalized by $\mathrm{Tr}(\tilde Q_1\tilde H)=2\,\mathrm{Sc}(\tilde Q_1\tilde H)$, so that $\mathrm{Tr}(e_t)=2$. The <strong>spinor module</strong> is the minimal left ideal $\mathbb{B}\tilde\Pi_+$, with</p>
 <p>$$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad \tilde\Pi_-=\tfrac12(e_t-i\vec e_z),\qquad
 \vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y),\qquad \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
@@ -187,9 +187,9 @@ with the first term of each in $\mathbb{M}_+$ and the second in $\mathbb{M}_-$. 
 <p>The phrase "the state space is $\mathbb{M}_+$" invites the interpretation that $\mathbb{M}_+$ is a Hilbert space of state vectors. That interpretation is false, and the qualifications matter.</p>
 <ul>
 <li><strong>$\mathbb{M}_+$ is not a complex vector space.</strong> Multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so $\mathbb{M}_+$ has no complex structure inherited from $\mathbb{B}$. It is a real vector space of dimension four.</li>
-<li><strong>$\mathbb{M}_+$ is not closed under multiplication.</strong> $(i\vec e_x)(i\vec e_y)=-\vec e_z\in\mathbb{M}_-$ is the standard counterexample. The product of two Hermitian elements is Hermitian only if they commute; the symmetrized product $\tfrac12(\tilde P\tilde H+\tilde H\tilde P)$ does remain in $\mathbb{M}_+$, which is the sense in which $\mathbb{M}_+$ is a Jordan (not associative) algebra.</li>
-<li><strong>$\mathbb{M}_+$ is a real Hilbert space under the trace pairing.</strong> On the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ one has $\mathrm{Tr}(i\vec e_\mu\,i\vec e_\nu)=2\delta_{\mu\nu}$ and $\mathrm{Tr}(e_t\,i\vec e_\mu)=0$, so the pairing $\langle\tilde P,\tilde H\rangle=\tfrac12\mathrm{Tr}(\tilde P\tilde H)=\mathrm{Sc}(\tilde P\tilde H)$ is the standard Euclidean inner product in the four real coordinates $(p_t,p_x,p_y,p_z)$, hence positive definite. In this sense $\mathbb{M}_+$ is a four-dimensional real Hilbert space, and $\mathsf{M}_2$ identifies it with the Hermitian $2\times2$ matrices with the Hilbert–Schmidt product.</li>
-<li><strong>$\mathbb{M}_+$ is not a Hilbert space under the biquaternion norm.</strong> The biquaternion norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ restricts to $\langle h_0e_t+i\vec h\rangle_{\natural}=h_0^2-|\vec h|^2$, of signature $(1,3)$; it is indefinite, and it vanishes on the cone $h_0^2=|\vec h|^2$. The positivity condition on states is the biquaternion-norm (light-cone) condition, not the trace-pairing one, so the two natural forms on $\mathbb{M}_+$ do different work.</li>
+<li><strong>$\mathbb{M}_+$ is not closed under multiplication.</strong> $(i\vec e_x)(i\vec e_y)=-\vec e_z\in\mathbb{M}_-$ is the standard counterexample. The product of two Hermitian elements is Hermitian only if they commute; the symmetrized product $\tfrac12(\tilde Q_1\tilde H+\tilde H\tilde Q_1)$ does remain in $\mathbb{M}_+$, which is the sense in which $\mathbb{M}_+$ is a Jordan (not associative) algebra.</li>
+<li><strong>$\mathbb{M}_+$ is a real Hilbert space under the trace pairing.</strong> On the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ one has $\mathrm{Tr}(i\vec e_\mu\,i\vec e_\nu)=2\delta_{\mu\nu}$ and $\mathrm{Tr}(e_t\,i\vec e_\mu)=0$, so the pairing $\langle\tilde Q_1,\tilde H\rangle=\tfrac12\mathrm{Tr}(\tilde Q_1\tilde H)=\mathrm{Sc}(\tilde Q_1\tilde H)$ is the standard Euclidean inner product in the four real coordinates $(p_t,p_x,p_y,p_z)$, hence positive definite. In this sense $\mathbb{M}_+$ is a four-dimensional real Hilbert space, and $\mathsf{M}_2$ identifies it with the Hermitian $2\times2$ matrices with the Hilbert–Schmidt product.</li>
+<li><strong>$\mathbb{M}_+$ is not a Hilbert space under the biquaternion norm.</strong> The biquaternion norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ restricts to $\langle h_te_t+i\vec h\rangle_{\natural}=h_t^2-|\vec h|^2$, of signature $(1,3)$; it is indefinite, and it vanishes on the cone $h_t^2=|\vec h|^2$. The positivity condition on states is the biquaternion-norm (light-cone) condition, not the trace-pairing one, so the two natural forms on $\mathbb{M}_+$ do different work.</li>
 </ul>
 <p>The correct statement is therefore: $\mathbb{M}_+$ is a four-dimensional <strong>real</strong> Hilbert space under the Hilbert–Schmidt (trace) pairing, whose elements are the Hermitian operators on the two-dimensional module; the density matrices of one fermionic mode form a three-dimensional subset of it; and it is not the module itself, which is a complex two-dimensional space of state vectors. The qualification "in the sense of the trace pairing" is not optional, because under the other natural form the space is not even positive definite.</p>
 <h2 id="counting-the-degrees-of-freedom">Counting the Degrees of Freedom</h2>
@@ -316,7 +316,7 @@ $$</p>
 <td>Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
+<td>$\mathrm{Tr}(\tilde Q_1\tilde H)=2\,\mathrm{Sc}(\tilde Q_1\tilde H)$</td>
 <td>Trace formula; $\mathrm{Tr}(e_t)=2$</td>
 </tr>
 <tr>
@@ -356,7 +356,7 @@ $$</p>
 <td>Biquaternion norm; signature $(1,3)$ on $\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(\tilde P\tilde H)$</td>
+<td>$\mathrm{Sc}(\tilde Q_1\tilde H)$</td>
 <td>Hilbert–Schmidt pairing on $\mathbb{M}_+$ (positive definite)</td>
 </tr>
 </tbody>
