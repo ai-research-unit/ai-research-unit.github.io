@@ -73,10 +73,13 @@ scalar line $\mathbb{R}e_t$ lies in $\mathbb{M}_+$.
 
 **Interpretation.** Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
 and it is the minimal instance of a cross-sector coupling supplied by the product itself. It is
-deliberately weak: it is a map and not an evolution, and the product of *two* material elements is not
-informational — it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
-lies in neither sector. The square is the coupling; the product is not. The identity is owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the grid-level pointer by *The Four General Products and Their Physical Readings*.
-$100$; on $100$ random pairs of material elements the product lies in neither sector on $100$ of $100$.
+deliberately weak: it is a map and not an evolution, and the product of *two* material elements is not in
+general informational: unless their spatial parts are parallel, it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
+lies in neither sector. The square is the coupling; the product is not. The identity is owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the grid-level pointer by *The Four General Products and Their Physical Readings*. The exception is exact: for $\tilde{R}_1=i a_1e_t+\vec v_1$ and $\tilde{R}_2=i a_2e_t+\vec v_2$,
+$$
+\tilde{R}_1\tilde{R}_2=\bigl(-a_1a_2-(\vec v_1,\vec v_2)\bigr)+i\bigl(a_1\vec v_2+a_2\vec v_1\bigr)+\vec v_1\times\vec v_2,
+$$
+which is Hermitian exactly when $\vec v_1\times\vec v_2=0$. On $100$ random pairs with non-parallel spatial parts the product lies in neither sector in every case.
 
 ### The Preparation Map
 
@@ -90,7 +93,7 @@ $$
 $$
 
 with $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac14 \langle\tilde{R}\rangle_{\natural}$. On the trace-one slice
-$ct = 1$ it is the Hermitian state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
+of the future cone, $ct = 1$ with $|\vec r| \le 1$, it is the Hermitian state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
 a point of the Bloch ball.
 
 **Interpretation.** The map is a dictionary and not a dynamics: it names a **state preparation**, the
@@ -146,14 +149,14 @@ A coupling can also be a scalar read from one element of each sector.
 the scalar part of the plain product is purely imaginary,
 
 $$
-\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\vec h\bigr) \quad \text{for }
-\tilde{P} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \quad \tilde{H} = h_0e_t+i\vec h,
+\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\vec h\bigr) \quad \text{for }
+\tilde{P} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \quad \tilde{H} = h_te_t+i\vec h,
 $$
 
 with both factors real.
 
-**Why.** The scalar part of the product is $P_0H_0-(\vec P,\vec H)$, and the two terms are
-$ict\cdot h_0$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot i\vec h$, each carrying one factor of $i$.
+**Why.** The scalar part of the product is $ict\,h_t-(\vec P,i\vec h)$, and the two terms are
+$ict\cdot h_t$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot i\vec h$, each carrying one factor of $i$.
 
 **Interpretation.** The pairing reads a material operation against an informational state and returns a phase,
 which is the off-sector interpretation of *The Bilinear Product on the Material Sector*. It is a pairing and
@@ -204,8 +207,8 @@ Biquaternionic Form*.
 
 | operation | type | source $\to$ target | owner | boundary |
 |---|---|---|---|---|
-| square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$ | *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* | a map, not an evolution; the product of two is not informational |
-| preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$ | *The Bloch Ball as the Trace-One Slice of the Future Light Cone* | a dictionary, no dynamics; state only on the trace-one slice |
+| square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$ | *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* | a map, not an evolution; the product of two is not in general informational |
+| preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$ | *The Bloch Ball as the Trace-One Slice of the Future Light Cone* | a dictionary, no dynamics; state only on the trace-one slice of the future cone |
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
 | rotor action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
 | off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The Bilinear Product on the Material Sector* | a pairing, produces no element |
@@ -261,7 +264,7 @@ each of its instances owned by an article that proves it.
 | ${}^{*}$ | Hermitian conjugation, $\vec e_k^{*} = -\vec e_k$, $i^{*} = -i$ |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat = -{}^{*}$ | Quaternion conjugation, coefficient conjugation, the real structure |
 | $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ real |
-| $\tilde{H} = h_0e_t+i\vec h$ | Informational element, $h_0$ and $\vec h$ real |
+| $\tilde{H} = h_te_t+i\vec h$ | Informational element, $h_t$ and $\vec h$ real |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$ | Biquaternion norm; equal to the interval on $\mathbb{M}_-$ |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$ |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | The rotor action, $\tilde{U}\in\mathbb{M}_+$ of unit norm |

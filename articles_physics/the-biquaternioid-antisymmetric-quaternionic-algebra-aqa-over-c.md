@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **antisymmetric quaternionic algebra**, written $\mathrm{AQA}$, whose product is the antisymmetrisation of the quaternionic product, $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$. It is the antisymmetric sibling of the causality structure, and its job in the framework is **obstruction**: the bracket does not close, the mixed term is the boost, and the failure is the missing Lie structure of the internal symmetry.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **antisymmetric quaternionic algebra**, written $\mathrm{AQA}$, whose product is the antisymmetrisation of the quaternionic product, $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$. It is the antisymmetric sibling of the causality structure, and its job in the framework is **obstruction**: the bracket does not close, the mixed term is the boost, and the failure is the missing Lie structure of the internal symmetry.
 
 The mathematics of the structure is owned by the group *The Biquaternioid Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
@@ -12,7 +12,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ### Basic Properties
 
-- **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **antisymmetric**; it is a bracket, not an associative product. Its class among the twelve structures is that of an antisymmetric algebra. Owner: *Introduction to the Antisymmetric Quaternionic Algebra*.
+- **The operation.** The product $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **antisymmetric**; it is a bracket, not an associative product. Its class among the twelve structures is that of an antisymmetric algebra. Owner: *Introduction to the Antisymmetric Quaternionic Algebra*.
 - **The absence of a unit.** The structure has no unit: $e_t$ annihilates it. Owner: *Introduction to the Antisymmetric Quaternionic Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure and the invertibility criterion of the antisymmetrised quaternionic product. Owner: *Norm and Invertibility in the Antisymmetric Quaternionic Algebra*.
 - **Zero divisors.** The zero-divisor set of the structure. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -47,14 +47,14 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ## Summary
 
-The biquaternioid antisymmetric quaternionic algebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ over $\mathbb{C}$, the obstruction band of the framework: antisymmetric, without a unit, with the Jacobi identity failing, with no non-degenerate invariant form and with every multiplication singular. Its failure is the non-closure of the informational generators, its defect is the associator of the parent product, its mixed term is the boost, and its compact part is the cross-product algebra of the rotations. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid antisymmetric quaternionic algebra is the structure $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ over $\mathbb{C}$, the obstruction band of the framework: antisymmetric, without a unit, with the Jacobi identity failing, with no non-degenerate invariant form and with every multiplication singular. Its failure is the non-closure of the informational generators, its defect is the associator of the parent product, its mixed term is the boost, and its compact part is the cross-product algebra of the rotations. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | the antisymmetric quaternionic product, $\mathrm{AQA}$ |
-| $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$ | antisymmetry |
+| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | the antisymmetric quaternionic product, $\mathrm{AQA}$ |
+| $\tilde Q_1\star\tilde Q_2=-\tilde Q_2\star\tilde Q_1$ | antisymmetry |
 | the Jacobi failure | the obstruction; no Lie algebra |
 | $D(\tilde Q_2,\tilde Q_1)$ | the deviation; the defect of the bracket |
 | $P_0\vec Q-Q_t\vec P$ | the mixed term; the boost |

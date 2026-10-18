@@ -39,14 +39,14 @@ or as the **dual row** $\tilde{Q}^{\mathsf{T}}$ of quaternion conjugation, obtai
 
 ## Multiplication in Four-Vector Form
 
-**Proposition.** In components, the product $\tilde P = \tilde{Q}_1\tilde{Q}_2$ is given by
+**Proposition.** In components, the product $\tilde Q_3 = \tilde Q_1\tilde Q_2$ is given by
 
 $$
-P_0 = Q_tR_0 - Q_xR_1 - Q_yR_2 - Q_zR_3 , \qquad P_1 = Q_tR_1 + Q_xR_0 + Q_yR_3 - Q_zR_2 ,
+Q_{3t} = Q_{1t}Q_{2t} - Q_{1x}Q_{2x} - Q_{1y}Q_{2y} - Q_{1z}Q_{2z} , \qquad Q_{3x} = Q_{1t}Q_{2x} + Q_{1x}Q_{2t} + Q_{1y}Q_{2z} - Q_{1z}Q_{2y} ,
 $$
 
 $$
-P_2 = Q_tR_2 - Q_xR_3 + Q_yR_0 + Q_zR_1 , \qquad P_3 = Q_tR_3 + Q_xR_2 - Q_yR_1 + Q_zR_0 ,
+Q_{3y} = Q_{1t}Q_{2y} - Q_{1x}Q_{2z} + Q_{1y}Q_{2t} + Q_{1z}Q_{2x} , \qquad Q_{3z} = Q_{1t}Q_{2z} + Q_{1x}Q_{2y} - Q_{1y}Q_{2x} + Q_{1z}Q_{2t} ,
 $$
 
 the structure constants being those of the quaternion basis and the coefficients multiplying in the commutative algebra $\mathbb{D}$.

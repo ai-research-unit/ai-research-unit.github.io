@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The general plain bilinear product $\tilde P\tilde Q_1$ is the multiplication of the biquaternion algebra
+The general plain bilinear product $\tilde Q_1\tilde Q_2$ is the multiplication of the biquaternion algebra
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and it acts on the whole algebra: every element,
 in either sector and in every remarkable subspace, is multiplied by it. Of the four general products of
 the space it is the only one that is associative and two-sidedly unital, so it is the product that makes
@@ -16,12 +16,12 @@ properties are read as the composition of operations. The **scalar part** is the
 form** of this block,
 
 $$
-\langle\tilde P,\tilde Q_1\rangle=\mathrm{Sc}(\tilde P\tilde Q_1)=P_0Q_{1t}-\vec P\!\cdot\!\vec Q,
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2,
 $$
 
 symmetric and non-degenerate, with Gram matrix $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient
 basis. It is neither the metric of spacetime nor the interval: the metric is the interval,
-$\mathrm{Sc}(\tilde P^{\natural}\tilde Q_1)$, the general quaternionic bilinear form of signature
+$\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, the general quaternionic bilinear form of signature
 $(-,+,+,+)$ on the material sector, and it belongs to the companion quaternionic block and to
 *The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The two forms sit on the same algebra with opposite types, $\langle\cdot,\cdot\rangle$
 definite on each sector where the interval is indefinite, and the place where that opposition is read
@@ -57,7 +57,7 @@ The biquaternion space carries **four general products**, and no more, obtained 
 **Definition.** The four general products are the operations obtained from the plain bilinear product by applying, independently, the identity or the natural conjugation in the first slot and the identity or the star conjugation in the second:
 
 $$
-\tilde P\tilde Q_1,\qquad \tilde P\tilde Q_1^{*},\qquad \tilde P^{\natural}\tilde Q_1,\qquad \tilde P^{\natural}\tilde Q_1^{*},
+\tilde Q_1\tilde Q_2,\qquad \tilde Q_1\tilde Q_2^{*},\qquad \tilde Q_1^{\natural}\tilde Q_2,\qquad \tilde Q_1^{\natural}\tilde Q_2^{*},
 $$
 
 the **general plain bilinear** ($\mathrm{GPA}$), the **general quaternionic bilinear** ($\mathrm{GQA}$), the **general plain sesquilinear** ($\mathrm{GPS}$) and the **general quaternionic sesquilinear** ($\mathrm{GQS}$) product. The first slot decides whether the product is linear or conjugate-linear in the first argument, the second whether it is bilinear or sesquilinear. Only $\mathrm{GPA}$ is associative and two-sidedly unital; it is the multiplication of $\mathbb{B}$, and the other three are built from it and the two conjugations.
@@ -68,38 +68,38 @@ the **general plain bilinear** ($\mathrm{GPA}$), the **general quaternionic bili
 
 **The symmetric parts.**
 
-**The symmetric plain bilinear product**, the **Jordan product** $\tilde P\bullet\tilde Q_1$:
+**The symmetric plain bilinear product**, the **Jordan product** $\tilde Q_1\bullet\tilde Q_2$:
 
 $$
-\tilde P\bullet\tilde Q_1=\tfrac12\bigl(\tilde P\tilde Q_1+\tilde Q_1\tilde P\bigr)=\bigl[P_tQ_{1t}-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_{1t}\vec P .
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1 .
 $$
 
 It is the symmetrised product under which the observables close: two Hermitian elements have a Hermitian symmetrised product, and the informational sector $\mathbb{M}_+$ is a special Jordan algebra under it (*The Bilinear Product on the Informational Sector*).
 
-**The symmetric quaternionic bilinear product**, $\tilde P\bullet_{\natural}\tilde Q_1$, central-valued; its scalar part is the interval:
+**The symmetric quaternionic bilinear product**, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, central-valued; its scalar part is the interval:
 
 $$
-\tilde P\bullet_{\natural}\tilde Q_1=\tfrac12\bigl(\tilde P^{\natural}\tilde Q_1+\tilde Q_1^{\natural}\tilde P\bigr)=\bigl[P_tQ_{1t}+(\vec P,\vec Q)\bigr] .
+\tilde Q_1\bullet_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr] .
 $$
 
 **The symmetric plain sesquilinear product**, the **Hermitian form**, central-valued; it is the Born pairing:
 
 $$
-\tilde P\bullet_{*}\tilde Q_1=\tfrac12\bigl(\tilde P\tilde Q_1^{*}+(\tilde P\tilde Q_1^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde P\tilde Q_1^{*})=\bigl[P_t\overline{Q_{1t}}+(\vec P,\overline{\vec Q})\bigr] .
+\tilde Q_1\bullet_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr] .
 $$
 
 **The symmetric quaternionic sesquilinear product**:
 
 $$
-\tilde P\bullet_{\natural*}\tilde Q_1=\tfrac12\bigl(\tilde P^{\natural}\tilde Q_1^{*}+\tilde Q_1^{*}\tilde P^{\natural}\bigr)=\bigl[P_t\overline{Q_{1t}}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_{1t}}\vec P .
+\tilde Q_1\bullet_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 .
 $$
 
 **The antisymmetric parts.**
 
-**The antisymmetric plain bilinear product**, the **outer product** $\tilde P\wedge\tilde Q_1$:
+**The antisymmetric plain bilinear product**, the **outer product** $\tilde Q_1\wedge\tilde Q_2$:
 
 $$
-\tilde P\wedge\tilde Q_1=\tfrac12\bigl(\tilde P\tilde Q_1-\tilde Q_1\tilde P\bigr)=\vec P\times\vec Q .
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2 .
 $$
 
 It is the **Lie bracket** of the product: the vector parts with the cross product form $\mathfrak{so}(3)\cong\mathfrak{su}(2)$, the algebra of the rotations.
@@ -107,60 +107,60 @@ It is the **Lie bracket** of the product: the vector parts with the cross produc
 **The antisymmetric quaternionic bilinear product**:
 
 $$
-\tilde P\wedge_{\natural}\tilde Q_1=\tfrac12\bigl(\tilde P^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde P\bigr)=P_t\vec Q-Q_{1t}\vec P-\vec P\times\vec Q .
+\tilde Q_1\wedge_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
 $$
 
-**The antisymmetric plain sesquilinear product**, the vector part $\mathrm{Vect}(\tilde P\tilde Q_1^{*})$:
+**The antisymmetric plain sesquilinear product**, the vector part $\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$:
 
 $$
-\tilde P\wedge_{*}\tilde Q_1=\tfrac12\bigl(\tilde P\tilde Q_1^{*}-(\tilde P\tilde Q_1^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde P\tilde Q_1^{*})=-P_t\overline{\vec Q}+\overline{Q_{1t}}\vec P-\vec P\times\overline{\vec Q} .
+\tilde Q_1\wedge_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
 $$
 
-**The antisymmetric quaternionic sesquilinear product**, the cross product $\vec P\times\overline{\vec Q}$:
+**The antisymmetric quaternionic sesquilinear product**, the cross product $\vec Q_1\times\overline{\vec Q_2}$:
 
 $$
-\tilde P\wedge_{\natural*}\tilde Q_1=\tfrac12\bigl(\tilde P^{\natural}\tilde Q_1^{*}-\tilde Q_1^{*}\tilde P^{\natural}\bigr)=\vec P\times\overline{\vec Q} .
+\tilde Q_1\wedge_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **Proposition.** The dot and the wedge rebuild the four general products:
 
 $$
-\tilde P\tilde Q_1=\tilde P\bullet\tilde Q_1+\tilde P\wedge\tilde Q_1,\qquad
-\tilde P^{\natural}\tilde Q_1=\tilde P\bullet_{\natural}\tilde Q_1+\tilde P\wedge_{\natural}\tilde Q_1,\qquad
-\tilde P\tilde Q_1^{*}=\tilde P\bullet_{*}\tilde Q_1+\tilde P\wedge_{*}\tilde Q_1,\qquad
-\tilde P^{\natural}\tilde Q_1^{*}=\tilde P\bullet_{\natural*}\tilde Q_1+\tilde P\wedge_{\natural*}\tilde Q_1 .
+\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2+\tilde Q_1\wedge_{\natural}\tilde Q_2,\qquad
+\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\bullet_{*}\tilde Q_2+\tilde Q_1\wedge_{*}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2 .
 $$
 
-The eight coordinate formulas and the four reconstructions are verified by recomputation on one hundred random pairs. Only the plain product is associative, so only its split names a classical algebra: $\tilde P\bullet\tilde Q_1$ is the Jordan product and $\tilde P\wedge\tilde Q_1=\vec P\times\vec Q$ the Lie bracket.
+The eight coordinate formulas and the four reconstructions are verified by recomputation on one hundred random pairs. Only the plain product is associative, so only its split names a classical algebra: $\tilde Q_1\bullet\tilde Q_2$ is the Jordan product and $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ the Lie bracket.
 
 ### The Plain Product and Its Laws
 
-The **general plain bilinear product** $\tilde P\tilde Q_1$ is the multiplication of the algebra. Of the four general
+The **general plain bilinear product** $\tilde Q_1\tilde Q_2$ is the multiplication of the algebra. Of the four general
 products it is the only one that is associative and two-sidedly unital, so it is the product that makes
 $\mathbb{B}$ an associative unital algebra over $\mathbb{C}$; the others are built from it and from the
 conjugations. Its scalar part is the **general plain bilinear form** of this block,
 
 $$
-\langle\tilde P,\tilde Q_1\rangle=\mathrm{Sc}(\tilde P\tilde Q_1)=P_0Q_{1t}-P_1Q_{1x}-P_2Q_{1y}-P_3Q_{1z}=P_0Q_{1t}-\vec P\!\cdot\!\vec Q,
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-Q_{11}Q_{2x}-Q_{12}Q_{2y}-Q_{13}Q_{2z}=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2,
 $$
 
 which is symmetric, since the scalar part is invariant under cyclic permutation
-$\mathrm{Sc}(\tilde P\tilde Q_1)=\mathrm{Sc}(\tilde Q_1\tilde P)$, and non-degenerate, with Gram matrix
+$\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$, and non-degenerate, with Gram matrix
 $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis. It is the scalar part of the product of
 the two underlying quaternions, and those three properties are cited from the mathematics articles named
 in the introduction.
 
 **Proposed interpretation, labelled as such.** The general plain bilinear product is read as the **composition of two
-operations**: $\tilde P\tilde Q_1$ is "the operation $\tilde P$, then the operation $\tilde Q_1$", the
+operations**: $\tilde Q_1\tilde Q_2$ is "the operation $\tilde Q_1$, then the operation $\tilde Q_2$", the
 written order of the factors being the order of the operations, as in the polar word $\exp(i\alpha)B\tilde q$
 of *The Polar Element Representation of Biquaternions* (*The Twisted Spinor Operator Representation of
 Biquaternions*). Three of its properties then carry their physical names.
 
-- Associativity is composability: $\tilde P(\tilde Q_1\tilde{Q}_2)=(\tilde P\tilde Q_1)\tilde{Q}_2$, so a chain of
+- Associativity is composability: $\tilde Q_1(\tilde Q_2\tilde{Q}_3)=(\tilde Q_1\tilde Q_2)\tilde{Q}_3$, so a chain of
 operations can be bracketed at will.
 - The unit $e_t$ is the identity operation: $e_t\tilde Q_1=\tilde Qe_t=\tilde Q_1$.
 - Non-commutativity is order dependence: two operations need not commute, and the commutator
-$[\tilde P,\tilde Q_1]=\tilde P\tilde Q_1-\tilde Q_1\tilde P$ measures the failure.
+$[\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1$ measures the failure.
 
 What is proved is the associativity, the unit and the non-commutativity; what is proposed is that they be
 read as the composition, the identity and the order of operations. The operation acts on the whole
@@ -170,10 +170,10 @@ unitary slices by *The Operators of the Bilinear Product: One-Sided, Two-Sided a
 *Observables, Gauge Generators and the Chirality of the Internal Action*.
 
 **The product and the two involutions.** The two conjugations act on a composite by reversing the order,
-$(\tilde P\tilde Q_1)^{\natural}=\tilde Q_1^{\natural}\tilde P^{\natural}$ and
-$(\tilde P\tilde Q_1)^{*}=\tilde Q_1^{*}\tilde P^{*}$, so the Hermitian conjugation is an anti-automorphism of
+$(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$ and
+$(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, so the Hermitian conjugation is an anti-automorphism of
 the general plain bilinear product, and an element and its conjugate give the same scalar
-$\langle\tilde P^{*},\tilde Q_1^{*}\rangle=\langle\tilde P,\tilde Q_1\rangle$, the scalar part being cyclically invariant and each
+$\langle\tilde Q_1^{*},\tilde Q_2^{*}\rangle=\langle\tilde Q_1,\tilde Q_2\rangle$, the scalar part being cyclically invariant and each
 conjugation reversing the order. The two identities are algebra and are used throughout the block; the
 second is the reason a product inherits the sector of its factors in the way the material article reads.
 
@@ -185,7 +185,7 @@ The algebra carries four forms and no more, the scalar parts of the four general
 bilinear $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ and the two sesquilinear $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*). $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are complex-valued, $\langle\cdot,\cdot\rangle_{*}$ is positive definite and $\langle\cdot,\cdot\rangle_{\natural*}$ is indefinite, and
 of the four only $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative. The defining property of $\langle\cdot,\cdot\rangle$ among them is that it is the scalar part
 of the general plain bilinear product itself and the **plain** pairing, while $\langle\cdot,\cdot\rangle_{\natural}$ is the same product with the natural
-conjugation inserted in the first slot, $\langle\tilde P,\tilde Q_1\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q_1)$.
+conjugation inserted in the first slot, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$.
 The two differ by twice the coefficient square of the vector part,
 
 $$
@@ -239,7 +239,7 @@ multiply to an element of vanishing $\langle\cdot,\cdot\rangle$, so $\langle\cdo
 quaternionic bilinear form, which is multiplicative,
 
 $$
-\langle\tilde P\tilde Q_1\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural},\qquad \langle\tilde Q_1\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_1\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu}^{2},
+\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},\qquad \langle\tilde Q_1\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_1\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu}^{2},
 $$
 
 so that the invertible elements are the elements of non-vanishing norm, forming the **group of units**
@@ -265,8 +265,8 @@ An operation can be attached to the left of an argument or to its right, and the
 the left and the right multiplications
 
 $$
-L_{\tilde Q_1}(\tilde{Q}_2)=\tilde Q_1\tilde{Q}_2,\qquad R_{\tilde P}(\tilde{Q}_2)=\tilde{Q}_2\tilde P,
-\qquad L_{\tilde Q_1}R_{\tilde P}=R_{\tilde P}L_{\tilde Q_1},
+L_{\tilde Q_1}(\tilde{Q}_2)=\tilde Q_1\tilde{Q}_2,\qquad R_{\tilde Q_3}(\tilde{Q}_2)=\tilde{Q}_2\tilde Q_3,
+\qquad L_{\tilde Q_1}R_{\tilde Q_3}=R_{\tilde Q_3}L_{\tilde Q_1},
 $$
 
 which commute. The composition that the framework actually uses is the **sandwich**
@@ -315,12 +315,12 @@ of the section above, and the measurement update is an idempotent projection; ne
 ## The Ledger
 
 **Proved.** The general plain bilinear product is associative and two-sidedly unital, and its scalar part
-$\langle\tilde P,\tilde Q_1\rangle=\mathrm{Sc}(\tilde P\tilde Q_1)=P_0Q_{1t}-\vec P\!\cdot\!\vec Q$ is a symmetric
+$\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ is a symmetric
 non-degenerate $\mathbb{C}$-bilinear form with Gram matrix $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$; the
 form $\langle\cdot,\cdot\rangle$ restricts to $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on
 $\mathbb{H}_{\mathbb{B}}$, $(3,1)$ on $i\mathbb{H}_{\mathbb{B}}$, $(4,0)$ on $\mathbb{M}_+$ and $(0,4)$ on
 $\mathbb{M}_-$, and its null set is a complex cone of real dimension six; the Hermitian conjugation is an
-anti-automorphism of the product, $(\tilde P\tilde Q_1)^{*}=\tilde Q_1^{*}\tilde P^{*}$; the algebraic norm
+anti-automorphism of the product, $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$; the algebraic norm
 $\langle\tilde Q_1\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_1)=\sum_\mu Q_{1,\mu}^{2}$ is multiplicative, its
 non-vanishing set $\mathbb{B}^{\times}$ is the group of invertible elements of the general plain bilinear product with
 the inverse $\tilde Q_1^{\natural}/\langle\tilde Q_1\rangle_{\natural}$, its vanishing set is the zero-divisor cone, and the algebra
@@ -335,12 +335,12 @@ region. Each is the framework's naming of a proved algebraic fact and is labelle
 
 ## Summary
 
-The biquaternion space carries four general products — $\tilde P\tilde Q_1$, $\tilde P\tilde Q_1^{*}$, $\tilde P^{\natural}\tilde Q_1$ and $\tilde P^{\natural}\tilde Q_1^{*}$ — and each splits in its two arguments into a symmetric part $\bullet$ and an antisymmetric part $\wedge$, so the four give the twelve products and the dot and the wedge rebuild the four. Only the plain split names a classical algebra: its symmetrisation is the Jordan product of the observables and its antisymmetrisation the Lie bracket $\vec P\times\vec Q$ of the rotations.
-The general plain bilinear product $\tilde P\tilde Q_1$ — the only one of the four general products that is associative
+The biquaternion space carries four general products — $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1^{\natural}\tilde Q_2^{*}$ — and each splits in its two arguments into a symmetric part $\bullet$ and an antisymmetric part $\wedge$, so the four give the twelve products and the dot and the wedge rebuild the four. Only the plain split names a classical algebra: its symmetrisation is the Jordan product of the observables and its antisymmetrisation the Lie bracket $\vec Q_1\times\vec Q_2$ of the rotations.
+The general plain bilinear product $\tilde Q_1\tilde Q_2$ — the only one of the four general products that is associative
 and two-sidedly unital — acts on the whole biquaternion algebra $\mathbb{B}$, and this article reads it
 there. Its law is associativity, the unit $e_t$ and non-commutativity, read as the composition of
 operations with the written order of the factors the order of the operations. Its scalar part, the
-general plain bilinear form $\langle\tilde P,\tilde Q_1\rangle=\mathrm{Sc}(\tilde P\tilde Q_1)=P_0Q_{1t}-\vec P\!\cdot\!\vec Q$,
+general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$,
 is symmetric and non-degenerate with Gram matrix $\mathrm{diag}(1,-1,-1,-1)$; its restriction is $(1,1)$
 on the centre, $(3,3)$ on the vector subspace, $(1,3)$ and $(3,1)$ on the two quaternionic subspaces, and
 $(4,0)$ and $(0,4)$ on the two sectors, so it is neutral on the first two, indefinite with a cone on the
@@ -367,18 +367,18 @@ companion article *The Bilinear Product on the Material Sector*; what is propose
 | $\bar{\cdot},{\natural},{}^{*}=\bar{\cdot}\circ{\natural}$ | Complex, natural and Hermitian conjugations |
 | $\mathbb{M}_-=\{\tilde Q_1:\tilde Q_1^{*}=-\tilde Q_1\}$ | Material sector, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathbb{M}_+=\{\tilde Q_1:\tilde Q_1^{*}=+\tilde Q_1\}$ | Informational sector, basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
-| $\tilde P\tilde Q_1$ | General plain bilinear product; associative, unital, non-commutative; acts on all of $\mathbb{B}$ |
-| $\tilde P\tilde Q_1$, $\tilde P^{\natural}\tilde Q_1$, $\tilde P\tilde Q_1^{*}$, $\tilde P^{\natural}\tilde Q_1^{*}$ | The four general products, $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$ |
-| $\tilde P\bullet\tilde Q_1$, $\tilde P\bullet_{\natural}\tilde Q_1$, $\tilde P\bullet_{*}\tilde Q_1$, $\tilde P\bullet_{\natural*}\tilde Q_1$ | The four symmetric parts, the half-sums; the Jordan product for the plain slot |
-| $\tilde P\wedge\tilde Q_1=\vec P\times\vec Q$ | The four antisymmetric parts, the half-differences; the Lie bracket for the plain slot |
-| $\langle\tilde P,\tilde Q_1\rangle=\mathrm{Sc}(\tilde P\tilde Q_1)=P_0Q_{1t}-\vec P\!\cdot\!\vec Q$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
+| $\tilde Q_1\tilde Q_2$ | General plain bilinear product; associative, unital, non-commutative; acts on all of $\mathbb{B}$ |
+| $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | The four general products, $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$ |
+| $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | The four symmetric parts, the half-sums; the Jordan product for the plain slot |
+| $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ | The four antisymmetric parts, the half-differences; the Lie bracket for the plain slot |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
 | $\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_-}=(0,4)$, $\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_+}=(4,0)$ | The sector sign carried by $\langle\cdot,\cdot\rangle$; the reading is the companion material article |
-| $\langle\tilde P,\tilde Q_1\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q_1)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
 | $\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}-2\,\vec Q\!\cdot\!\vec Q$ | The relation between the two forms; they agree only on the isotropic vector part |
 | $\langle\tilde Q_1\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_1)=\sum_\mu Q_{1,\mu}^{2}$ | Algebraic norm of the general plain bilinear product; multiplicative |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q_1\rangle_{\natural}\neq0\}$, $\mathcal{C}=\{\langle\tilde Q_1\rangle_{\natural}=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone |
 | $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\langle\tilde Q_1\rangle_{\natural}$ | Inverse in the general plain bilinear product |
-| $L_{\tilde Q_1},R_{\tilde P},\ \Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde Q_1^{*}}$ | Left and right multiplications and the sandwich |
+| $L_{\tilde Q_1},R_{\tilde Q_3},\ \Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde Q_1^{*}}$ | Left and right multiplications and the sandwich |
 | $(n,m)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
 ## Further Reading

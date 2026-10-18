@@ -26,7 +26,7 @@ Exponentials for states and roots : exp(θ Ξ~ )
 
 
 
-
+new symbol reduced 
 
 
 

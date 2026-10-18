@@ -13,7 +13,7 @@ The four general products are the source of the whole band. The twelve products 
 **Definition (the four general products).** The four general products are the four rules
 
 $$
-\tilde P\tilde Q , \qquad \tilde P\tilde Q^{*} , \qquad \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural}\tilde Q^{*} ,
+\tilde Q_1\tilde Q_2 , \qquad \tilde Q_1\tilde Q_2^{*} , \qquad \tilde Q_1^{\natural}\tilde Q_2 , \qquad \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
 the **general plain bilinear**, the **general plain sesquilinear**, the **general quaternionic bilinear** and the **general quaternionic sesquilinear** product.
@@ -21,7 +21,7 @@ the **general plain bilinear**, the **general plain sesquilinear**, the **genera
 **One multiplication table, two insertions.** The four rules multiply the coordinates of the two elements on the same products $e_\mu e_\nu$ of the basis, and they differ in one point alone: whether the first element is read as it stands or through ${}^{\natural}$, and whether the second is read as it stands or through ${}^{*}$, the two choices made independently. The four are therefore the orbit
 
 $$
-\tilde P\star\tilde Q=K_1(\tilde P)\,K_2(\tilde Q),\qquad K_1\in\{\mathrm{id},{}^{\natural}\},\quad K_2\in\{\mathrm{id},{}^{*}\},
+\tilde Q_1\star\tilde Q_2=K_1(\tilde Q_1)\,K_2(\tilde Q_2),\qquad K_1\in\{\mathrm{id},{}^{\natural}\},\quad K_2\in\{\mathrm{id},{}^{*}\},
 $$
 
 of one rule under the insertion of a conjugation into a slot. Nothing else varies, and ${}^{*}$ is never put in the first slot nor ${}^{\natural}$ in the second.
@@ -29,19 +29,19 @@ of one rule under the insertion of a conjugation into a slot. Nothing else varie
 **The scalar–vector forms.** Written on the coordinates of the two elements,
 
 $$
-\tilde P\tilde Q=\bigl[P_0Q_t-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_t\vec P+\vec P\times\vec Q,
+\tilde Q_1\tilde Q_2=\bigl[Q_{10}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{10}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2,
 $$
 
 $$
-\tilde P\tilde Q^{*}=\bigl[P_0\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q},
+\tilde Q_1\tilde Q_2^{*}=\bigl[Q_{10}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{10}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
 $$
 
 $$
-\tilde P^{\natural}\tilde Q=\bigl[P_0Q_t+(\vec P,\vec Q)\bigr]+P_0\vec Q-Q_t\vec P-\vec P\times\vec Q,
+\tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{10}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{10}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2,
 $$
 
 $$
-\tilde P^{\natural}\tilde Q^{*}=\bigl[P_0\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q}.
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{10}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{10}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
 $$
 
 The two bilinear products are $\mathbb{C}$-bilinear in both slots; the two sesquilinear products are $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. No two of the four agree on every pair.
@@ -53,12 +53,12 @@ The two bilinear products are $\mathbb{C}$-bilinear in both slots; the two sesqu
 The four general products are not four unrelated rules: the two insertions are independent, and every link between the four is a consequence of that single distinction. The two conjugations separate the scalar part of a factor from its vector part, by the splitting identities
 
 $$
-\tilde P\tilde Q\pm\tilde P^{\natural}\tilde Q=2P_0\tilde Q \ \text{and}\ 2\vec P\tilde Q,
+\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2=2Q_{10}\tilde Q_2 \ \text{and}\ 2\vec Q_1\tilde Q_2,
 \qquad
-\tilde P\tilde Q^{*}\pm\tilde P^{\natural}\tilde Q^{*}=2P_0\tilde Q^{*}\ \text{and}\ 2\vec P\tilde Q^{*},
+\tilde Q_1\tilde Q_2^{*}\pm\tilde Q_1^{\natural}\tilde Q_2^{*}=2Q_{10}\tilde Q_2^{*}\ \text{and}\ 2\vec Q_1\tilde Q_2^{*},
 $$
 
-and the same two identities hold with the two vector parts in place of the scalar parts. The ${}^{\natural}$ of the quaternionic product and the ${}^{*}$ of the sesquilinear product return a product with the slots exchanged, which is why the scalar parts of the two are symmetric and conjugate-symmetric respectively, while no one of the four general products is commutative. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
+and the same two identities hold with the two vector parts in place of the scalar parts. The ${}^{\natural}$ of the quaternionic product and the ${}^{*}$ of the sesquilinear product return a product with the slots exchanged, which is why the scalar parts of the two are symmetric and conjugate-symmetric respectively, while no one of the four general products is commutative. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde Q_1}\tilde Q_2)=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_1^{*})$ and $\mathrm{Sc}(\tilde Q_1\bar{\tilde Q_2})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
 
 **Comparison.** Of the four, exactly one is **associative**: the general plain bilinear product. The unit $e_t$ is two-sided for the general plain bilinear product, **right** for the general plain sesquilinear product, **left** for the general quaternionic bilinear product, and **absent** for the general quaternionic sesquilinear product. No one of the four is commutative, and none has a two-sided unit other than the plain one. The four differ in the class of the operation — the two algebras over $\mathbb{C}$ against the two sesqualgebras over $(\mathbb{C},\bar{\cdot})$ — and in the pairing they carry, not in the multiplication table of the units, which is the same in all four.
 
@@ -67,26 +67,26 @@ and the same two identities hold with the two vector parts in place of the scala
 The scalar part of a general product is a form of degree two in the pair of its arguments, and the four scalar parts are the four **forms** of the algebra. With the one bracket of *Conventions in the Biquaternion Universe* whose subscript names the inserted conjugation,
 
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu,
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu},
 \qquad
-\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu},
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\textstyle\sum_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu,
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\textstyle\sum_\mu Q_{1\mu} Q_{2\mu},
 \qquad
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}.
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}.
 $$
 
 They are named the **general plain bilinear** form $\langle\cdot,\cdot\rangle$, the **general plain sesquilinear** or **Hermitian** form $\langle\cdot,\cdot\rangle_{*}$, the **general quaternionic bilinear** form $\langle\cdot,\cdot\rangle_{\natural}$, and the **general quaternionic sesquilinear** or **Krein** form $\langle\cdot,\cdot\rangle_{\natural*}$; their values are the jobs of composition, probability, causality and gauge. The four are **one bilinear form read through the two involutions**,
 
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\langle\tilde P,\tilde Q^{*}\rangle,\qquad
-\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle,\qquad
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P^{\natural},\tilde Q^{*}\rangle,
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2^{*}\rangle,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1^{\natural},\tilde Q_2^{*}\rangle,
 $$
 
-so that the four forms are not four computations but one computation in the four insertions of the grid. The two bilinear forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are symmetric and $\mathbb{C}$-bilinear, the two sesquilinear forms $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ conjugate-symmetric and sesquilinear: $\langle\tilde P,\tilde Q\rangle_{*}=\overline{\langle\tilde Q,\tilde P\rangle_{*}}$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\overline{\langle\tilde Q,\tilde P\rangle_{\natural*}}$.
+so that the four forms are not four computations but one computation in the four insertions of the grid. The two bilinear forms $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are symmetric and $\mathbb{C}$-bilinear, the two sesquilinear forms $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ conjugate-symmetric and sesquilinear: $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}}$.
 
 **The four algebraic norms.** The **algebraic norm** of a form is its algebraic norm, the degree-two function of one element,
 
@@ -100,7 +100,7 @@ $$
 Two of the four have a sense the others lack, and the two senses are not the same sense. **$\langle\cdot,\cdot\rangle_{*}$ is positive definite**: $\langle\tilde Q\rangle_{*}>0$ for $\tilde Q\neq0$, it is real on every element, and it is the unique topological norm of the space, its square root being the Euclidean norm. **$\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative**: on the general quaternionic bilinear product,
 
 $$
-\langle\tilde P^{\natural}\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\,\langle\tilde Q\rangle_{\natural},
+\langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural},
 $$
 
 so the units and the zero divisors of that product are closed under it, and the norm behaves as a charge of the composition rather than as a length; it is the norm of no other product. $\langle\cdot,\cdot\rangle_{*}$ is the only one of the four that is definite on each of the remarkable subspaces; the other three are indefinite on the whole algebra, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ as complex bilinear forms of rank four and $\langle\cdot,\cdot\rangle_{\natural*}$ as an indefinite Hermitian form. This is the separation of the **multiplicative** sense of a norm from the **positive definite** sense, and it is one of the things the remarkable subspaces measure.
@@ -112,12 +112,12 @@ Each general product gives its elements two families of operators, the left and 
 The left multiplications of the four are the general plain bilinear ones read through the conjugations,
 
 $$
-L^{\natural}_{\tilde P}=L_{\tilde P^{\natural}},\qquad
-L^{*}_{\tilde P}=(\cdot)^{*}\circ R_{\tilde P^{*}},\qquad
-L^{\natural*}_{\tilde P}=(\cdot)^{*}\circ R_{\bar{\tilde P}},
+L^{\natural}_{\tilde Q_1}=L_{\tilde Q_1^{\natural}},\qquad
+L^{*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\tilde Q_1^{*}},\qquad
+L^{\natural*}_{\tilde Q_1}=(\cdot)^{*}\circ R_{\bar{\tilde Q_1}},
 $$
 
-so that the general plain bilinear and the general quaternionic bilinear products have a monoid of left multiplications, and the two sesquilinear products do not. The adjoint of a multiplication for the trace form is the multiplication by the star-conjugate, $(L_{\tilde Q_1})^{\dagger}=L_{\tilde Q_1^{*}}$, the trace form being $\mathrm{Tr}(\tilde P\tilde Q)=2\,\mathrm{Sc}(\tilde P\tilde Q)$. The reading of the operators of the four products is *The Four General Products and Operators*, and the family names are read in *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
+so that the general plain bilinear and the general quaternionic bilinear products have a monoid of left multiplications, and the two sesquilinear products do not. The adjoint of a multiplication for the trace form is the multiplication by the star-conjugate, $(L_{\tilde Q_1})^{\dagger}=L_{\tilde Q_1^{*}}$, the trace form being $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The reading of the operators of the four products is *The Four General Products and Operators*, and the family names are read in *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
 
 ## The Four Products on the Remarkable Subspaces
 
@@ -129,15 +129,15 @@ The four general products do not behave alike on the six remarkable subspaces, a
 
 ## Physical Readings
 
-The four general products are the four jobs a relativistic quantum theory needs, and the four forms are the four quantities the jobs measure. The readings are the framework's naming of a proved algebra and are labelled as readings. **Composition**: the general plain bilinear product $\tilde P\tilde Q$ is the composition of two operations, associative, with the two-sided unit and the non-commutativity that reads as order, and its scalar part $\langle\cdot,\cdot\rangle$ is the **sector sign**, definite of signature $(0,4)$ on the material sector and $(4,0)$ on the informational one. **Probability**: the general plain sesquilinear product $\tilde P\tilde Q^{*}$ carries the positive definite form $\langle\cdot,\cdot\rangle_{*}$, the Born pairing of a state and an observable, and the unitary evolution built on it. **Causality**: the general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ squares to the interval, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$, so that the mass shell is a level set of the multiplicative norm $\langle\cdot,\cdot\rangle_{\natural}$ and the light cone its zero set. **Gauge**: the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ carries the indefinite Krein form $\langle\cdot,\cdot\rangle_{\natural*}$, real at the two equal arguments and unable to normalise a state, the form a gauge fixing uses rather than a probability.
+The four general products are the four jobs a relativistic quantum theory needs, and the four forms are the four quantities the jobs measure. The readings are the framework's naming of a proved algebra and are labelled as readings. **Composition**: the general plain bilinear product $\tilde Q_1\tilde Q_2$ is the composition of two operations, associative, with the two-sided unit and the non-commutativity that reads as order, and its scalar part $\langle\cdot,\cdot\rangle$ is the **sector sign**, definite of signature $(0,4)$ on the material sector and $(4,0)$ on the informational one. **Probability**: the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ carries the positive definite form $\langle\cdot,\cdot\rangle_{*}$, the Born pairing of a state and an observable, and the unitary evolution built on it. **Causality**: the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ squares to the interval, $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$, so that the mass shell is a level set of the multiplicative norm $\langle\cdot,\cdot\rangle_{\natural}$ and the light cone its zero set. **Gauge**: the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ carries the indefinite Krein form $\langle\cdot,\cdot\rangle_{\natural*}$, real at the two equal arguments and unable to normalise a state, the form a gauge fixing uses rather than a probability.
 
 Two statements bind the readings to the slots. The **second slot** divides the four into the two that can be iterated and the two that can only be evaluated: a composition and a causality may be composed, a probability and a gauge calibration may only be measured, and this is the algebra's own distinction between a dynamics and a pairing. The **first slot** divides the four into the two whose form is definite on each sector and the two whose form carries a signature: the sector sign $\langle\cdot,\cdot\rangle$ and the Born form $\langle\cdot,\cdot\rangle_{*}$ measure, the interval $\langle\cdot,\cdot\rangle_{\natural}$ and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ carry a metric with a light cone. On the material sector $\mathbb{M}_-$ the four forms are real: the sector sign $\langle\cdot,\cdot\rangle$ is the negative of the Euclidean square, $\langle\cdot,\cdot\rangle_{*}$ is the Euclidean square, the interval $\langle\cdot,\cdot\rangle_{\natural}$ is the metric of signature $(3,1)$ and $\langle\cdot,\cdot\rangle_{\natural*}$ is its negative. The full reading of the four forms on the remarkable subspaces is *Remarkable Subspaces and the Four Forms*, and the four readings are collected in *The Four General Products and Their Physical Readings*.
 
 ## Summary
 
-The biquaternion complex space carries four general products, the four insertions of a conjugation into a slot of one multiplication: the general plain bilinear $\tilde P\tilde Q$, the general plain sesquilinear $\tilde P\tilde Q^{*}$, the general quaternionic bilinear $\tilde P^{\natural}\tilde Q$ and the general quaternionic sesquilinear $\tilde P^{\natural}\tilde Q^{*}$. The two bilinear products are $\mathbb{C}$-bilinear and can be iterated, the two sesquilinear ones are conjugate-linear in the second slot and can only be evaluated; no two of the four agree on every pair, and exactly one, the general plain product, is associative.
+The biquaternion complex space carries four general products, the four insertions of a conjugation into a slot of one multiplication: the general plain bilinear $\tilde Q_1\tilde Q_2$, the general plain sesquilinear $\tilde Q_1\tilde Q_2^{*}$, the general quaternionic bilinear $\tilde Q_1^{\natural}\tilde Q_2$ and the general quaternionic sesquilinear $\tilde Q_1^{\natural}\tilde Q_2^{*}$. The two bilinear products are $\mathbb{C}$-bilinear and can be iterated, the two sesquilinear ones are conjugate-linear in the second slot and can only be evaluated; no two of the four agree on every pair, and exactly one, the general plain product, is associative.
 
-The scalar part of each product is a degree-two form, and the four forms are one bilinear form $\langle\cdot,\cdot\rangle$ read through the two involutions, $H=\langle\tilde P,\tilde Q^{*}\rangle$, $N=\langle\tilde P^{\natural},\tilde Q\rangle$ and $K=\langle\tilde P^{\natural},\tilde Q^{*}\rangle$. Their algebraic norms are four, of which $\langle\cdot,\cdot\rangle_{*}$ is positive definite and $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative; $\langle\cdot,\cdot\rangle_{\natural}$ is the norm of no other product, and $\langle\cdot,\cdot\rangle_{*}$ is the only one definite on each remarkable subspace. The four general products preserve a remarkable subspace for exactly two subspaces, the centre and the quaternion subspace, and it is there, with the Hermitian subspace, that a Jordan or a Lie structure forms.
+The scalar part of each product is a degree-two form, and the four forms are one bilinear form $\langle\cdot,\cdot\rangle$ read through the two involutions, $H=\langle\tilde Q_1,\tilde Q_2^{*}\rangle$, $N=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle$ and $K=\langle\tilde Q_1^{\natural},\tilde Q_2^{*}\rangle$. Their algebraic norms are four, of which $\langle\cdot,\cdot\rangle_{*}$ is positive definite and $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative; $\langle\cdot,\cdot\rangle_{\natural}$ is the norm of no other product, and $\langle\cdot,\cdot\rangle_{*}$ is the only one definite on each remarkable subspace. The four general products preserve a remarkable subspace for exactly two subspaces, the centre and the quaternion subspace, and it is there, with the Hermitian subspace, that a Jordan or a Lie structure forms.
 
 The four products are read physically as composition, probability, causality and gauge, and the four forms as the sector sign, the Born pairing, the interval and the Krein calibration; the second slot decides whether the job is a composition or a pairing, and the first slot whether its form measures or carries a metric. The products are the source of the band: the twelve products are the four together with their parts, and the twelve structures are the algebraic structures of those twelve operations.
 
@@ -146,14 +146,14 @@ The four products are read physically as composition, probability, causality and
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$ |
-| $\tilde P=P_0e_t+\vec P$ | a biquaternion, its scalar part and vector part |
+| $\tilde Q=Q_te_t+\vec Q$ | a biquaternion, its scalar part and vector part |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | the natural, the coefficientwise and the Hermitian conjugation |
-| $\tilde P\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q$, $\tilde P^{\natural}\tilde Q^{*}$ | the four general products |
-| $K_1(\tilde P)K_2(\tilde Q)$ | the general product as one multiplication with two inserted conjugations |
+| $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products |
+| $K_1(\tilde Q_1)K_2(\tilde Q_2)$ | the general product as one multiplication with two inserted conjugations |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the four forms: general plain bilinear, general plain sesquilinear, general quaternionic bilinear, general quaternionic sesquilinear |
-| $\langle\tilde P^{\natural}\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | the multiplicativity of the quaternionic norm |
+| $\langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$ | the multiplicativity of the quaternionic norm |
 | $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the positive definite Hermitian norm, the unique topological norm |
-| $L^{\star}_{\tilde P}$, $R^{\star}_{\tilde P}$ | the left and right multiplication in a product, and $(L_{\tilde Q_1})^{\dagger}=L_{\tilde Q_1^{*}}$ |
+| $L^{\star}_{\tilde Q_1}$, $R^{\star}_{\tilde Q_1}$ | the left and right multiplication in a product, and $(L_{\tilde Q_1})^{\dagger}=L_{\tilde Q_1^{*}}$ |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the six remarkable subspaces |
 
 ## Further Reading

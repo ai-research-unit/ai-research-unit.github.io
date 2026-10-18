@@ -101,7 +101,7 @@ The structure above is a left and a right multiplication of a two-by-two matrix,
 **The scalar as a quaternion.** A complex doublet has four real components, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has four real dimensions. The natural carrier is therefore the real quaternion
 
 $$
-\tilde H = h_0\,e_t + h_1\,\vec e_x + h_2\,\vec e_y + h_3\,\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
+\tilde H = h_t\,e_t + h_x\,\vec e_x + h_y\,\vec e_y + h_z\,\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
 \qquad h_k\in\mathbb{R},
 $$
 
@@ -115,7 +115,7 @@ $$
 This is an action of $SU(2)_L\times SU(2)_R$ on a real four-dimensional space — the vector representation, or the $(\tfrac12,\tfrac12)$ of the two factors — and it is the framework's own multiplication rather than an import. The invariant bilinear is the norm,
 
 $$
-\tilde H\tilde H^{\natural} = \left(h_0^2+h_1^2+h_2^2+h_3^2\right)e_t ,
+\tilde H\tilde H^{\natural} = \left(h_t^2+h_x^2+h_y^2+h_z^2\right)e_t ,
 $$
 
 or equivalently $\mathrm{Sc}(\tilde H^{*}\tilde H)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde H g_R^{-1}\overline{g_L\tilde H g_R^{-1}}) = \mathrm{Sc}(\tilde H\tilde H^{\natural}) = \langle\tilde H,\tilde H\rangle_{\natural}$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.
@@ -256,7 +256,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{H}^1_{\mathbb{B}}$ | Real quaternions; unit real quaternions $\cong SU(2)$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the central vacuum |
 | $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ | Standard Hermitian generators of the compact group |
-| $\tilde H = h_0e_t + h_k\vec e_k\in\mathbb{H}_{\mathbb{B}}$ | Quaternion-valued scalar (carrier of the custodial action) |
+| $\tilde H = h_te_t + h_k\vec e_k\in\mathbb{H}_{\mathbb{B}}$ | Quaternion-valued scalar (carrier of the custodial action) |
 | $\tilde H\mapsto g_L\tilde H g_R^{-1}$ | Left–right $SU(2)_L\times SU(2)_R$ action |
 | $SU(2)_V = \{g_L = g_R\}$ | Custodial (diagonal) subgroup |
 | $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_t$ | Central vacuum; custodial invariant |

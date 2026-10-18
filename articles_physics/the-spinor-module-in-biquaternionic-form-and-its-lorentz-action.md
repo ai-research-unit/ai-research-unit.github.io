@@ -8,7 +8,7 @@ $$
 \tilde{Q} \;\longmapsto\; \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*}.
 $$
 
-The article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies the Hermitian subspace $\mathbb{M}_+$ with the operator algebra of a two-state system. Both accounts rest on a more primitive representation-theoretic fact: $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, so it has a two-dimensional complex module, and the Lorentz group acts on that module by **multiplication**. This module is the **spinor module**. It is the subject of the present article.
+The article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies the Hermitian subspace $\mathbb{M}_+$ with the observables of a two-state system, whose products generate its operator algebra. Both accounts rest on a more primitive representation-theoretic fact: $\mathbb{B}$ is isomorphic to $M_2(\mathbb{C})$, so it has a two-dimensional complex module, and the Lorentz group acts on that module by **multiplication**. This module is the **spinor module**. It is the subject of the present article.
 
 The two actions are different in kind. The four-vector action is two-sided — it is a conjugation — while the spinor action is one-sided. The difference is not an accident of notation. It is the algebraic origin of the double cover: the element $-e_t$ of $SL(2,\mathbb{C})$ acts trivially by conjugation on $\mathbb{M}_-$, but it acts as $-\mathrm{id}$ on the spinor module. Consequently the four-vector representation descends to the Lorentz group, while the spinor representation does not: the spinor is a genuine representation of the double cover.
 
@@ -489,7 +489,7 @@ In this interpretation the spinor module is not an add-on to the biquaternion fr
 
 ## Open Questions
 
-1. **The spinor module and the informational sector.** The article on $\mathbb{M}_+$ interprets the Hermitian subspace as the operator algebra of a qubit. The spinor module developed here is the representation space on which those operators act. The precise relation between the qubit states of the informational sector and the Weyl spinors of the Lorentz group — whether they are the same module under different real structures — is not settled here.
+1. **The spinor module and the informational sector.** The article on $\mathbb{M}_+$ interprets the Hermitian subspace as the observables of a qubit. The spinor module developed here is the representation space on which those operators act. The precise relation between the qubit states of the informational sector and the Weyl spinors of the Lorentz group — whether they are the same module under different real structures — is not settled here.
 2. **The covariance of the biquaternion Dirac equation.** The companion article on the Dirac equation formulates the equation as the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ but leaves open the transformation law of the biquaternion-valued field $\tilde{\Psi}$.
 
 A natural candidate is the module action defined here; its compatibility with the mass term requires the relationship between the one-sided action and the conjugate module to be fixed by a convention.

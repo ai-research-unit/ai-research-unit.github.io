@@ -16,13 +16,13 @@ The coupling appears only through the unknown. If $X$ is an arbitrary reduced bi
 
 **Boundaries.** The algebra, its idempotents and the coordinates are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The form $\langle\cdot\rangle_{\natural*}$ and the algebraic norms are *The Four Products, Their Forms and Their Algebraic Norms*; the involution and the adjoint are *The Two Involutions and the Group of Involutions*. The array representation $M_{m\times n}(\mathbb{B}_{\mathrm{r}})\cong M_{m\times n}(\mathbb{C})\times M_{m\times n}(\mathbb{C})$ is *Reduced Biquaternion Other Algebraic Element Representations*; the objects and their matrices are *Reduced Biquaternion Objects and their Matrix Correspondences*. The spectrum and the singular values are *Reduced Biquaternion Spectral Theory*; the singular values as a general tool are *Compact Operators*. The least squares problem in the non-commutative quaternion statistics is *Quaternion Augmented Statistics*; the non-commutative companion of the matrix dictionary is *Biquaternion Objects and Their Matrix Correspondences*.
 
-**Conventions.** The element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$, the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, and the idempotent coordinates are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so that $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$. The conjugations are the bar $\bar{\cdot}$, the natural sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the form and the norm of the quaternionic sesquilinear product are
+**Conventions.** The element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$, the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, and the idempotent coordinates are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so that $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$. The conjugations are the bar $\bar{\cdot}$, the natural sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the form and the norm of the quaternionic sesquilinear product are
 
 $$
-K(Q_{\pm,1},Q_{\pm,2})=\mathrm{Sc}\bigl(Q_{\pm,1}^{\natural}Q_{\pm,2}^{*}\bigr)=Q_{1+}\bar Q_{2+}+Q_{1-}\bar Q_{2-},\qquad K(Q_\pm)=|Q_+|^{2}+|Q_-|^{2}=\tfrac12\bigl(|Q_{++}|^{2}+|Q_{--}|^{2}\bigr).
+K(\breve Q_{1},\breve Q_{2})=\mathrm{Sc}\bigl(\breve Q_{1}^{\natural}\breve Q_{2}^{*}\bigr)=Q_{1+}\bar Q_{2+}+Q_{1-}\bar Q_{2-},\qquad K(\breve Q)=|Q_+|^{2}+|Q_-|^{2}=\tfrac12\bigl(|Q_{++}|^{2}+|Q_{--}|^{2}\bigr).
 $$
 
-For matrices the form is read entrywise, $K_{\mathrm F}(M,N)=\sum_{r,s}K(M_{rs},N_{rs})$, and $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$; it is the square of the Frobenius norm the source writes $\lVert M\rVert_{F}$. The two **idempotent components** of a matrix are the pair $(M^{+},M^{-})$ of *Reduced Biquaternion Other Algebraic Element Representations*, read entrywise, $(M^{\pm})_{rs}=\lambda_{\pm}(M_{rs})$ with $\lambda_{+}(Q_\pm)=Q_{++}$ and $\lambda_{-}(Q_\pm)=Q_{--}$ the two characters; the component $M^{+}$ is the one attached to $\Pi_+$ and $M^{-}$ the one attached to $\Pi_-$. The $\langle\cdot\rangle_{\natural*}$-**adjoint** of a matrix is written $M^{\dagger}$, in agreement with the dagger of the operator conventions, and the **Moore–Penrose inverse** is written $M_{\mathrm{MP}}$, the dagger marking the adjoint and the sign marking a component, so neither is read for the other.
+For matrices the form is read entrywise, $K_{\mathrm F}(M,N)=\sum_{r,s}K(M_{rs},N_{rs})$, and $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$; it is the square of the Frobenius norm the source writes $\lVert M\rVert_{F}$. The two **idempotent components** of a matrix are the pair $(M^{+},M^{-})$ of *Reduced Biquaternion Other Algebraic Element Representations*, read entrywise, $(M^{\pm})_{rs}=\lambda_{\pm}(M_{rs})$ with $\lambda_{+}(\breve Q)=Q_{++}$ and $\lambda_{-}(\breve Q)=Q_{--}$ the two characters; the component $M^{+}$ is the one attached to $\Pi_+$ and $M^{-}$ the one attached to $\Pi_-$. The $\langle\cdot\rangle_{\natural*}$-**adjoint** of a matrix is written $M^{\dagger}$, in agreement with the dagger of the operator conventions, and the **Moore–Penrose inverse** is written $M_{\mathrm{MP}}$, the dagger marking the adjoint and the sign marking a component, so neither is read for the other.
 
 ## The Three Approximation Problems
 
@@ -84,7 +84,7 @@ $$
 
 and $M=M^{+}\Pi_++M^{-}\Pi_-$ with the identity and the zero of the pair the identity and the zero matrices.
 
-*Proof.* The idempotent coordinates of an entry are the two characters, and applying them entrywise is an algebra homomorphism on the matrices because the multiplication of the algebra is componentwise and the matrices multiply entrywise in the two components; the displayed decomposition is the entrywise form of $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$. The inverse reads the four real blocks from the real and imaginary parts, $M_{0}=\tfrac12\operatorname{Re}(M^{+}+M^{-})$, $M_{1}=\tfrac12\operatorname{Im}(M^{+}+M^{-})$, $M_{2}=\tfrac12\operatorname{Re}(M^{+}-M^{-})$ and $M_{3}=\tfrac12\operatorname{Im}(M^{+}-M^{-})$.
+*Proof.* The idempotent coordinates of an entry are the two characters, and applying them entrywise is an algebra homomorphism on the matrices because the multiplication of the algebra is componentwise and the matrices multiply entrywise in the two components; the displayed decomposition is the entrywise form of $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$. The inverse reads the four real blocks from the real and imaginary parts, $M_{0}=\tfrac12\operatorname{Re}(M^{+}+M^{-})$, $M_{1}=\tfrac12\operatorname{Im}(M^{+}+M^{-})$, $M_{2}=\tfrac12\operatorname{Re}(M^{+}-M^{-})$ and $M_{3}=\tfrac12\operatorname{Im}(M^{+}-M^{-})$.
 
 This is the array representation of *Reduced Biquaternion Other Algebraic Element Representations*, applied to a rectangular matrix and read column by column.
 
@@ -120,7 +120,7 @@ $$
 
 and likewise $K_{\mathrm F}(M,N)=\sum_{t}\langle M_{t},N_{t}\rangle_{F}=\tfrac12\bigl(\langle M^{+},N^{+}\rangle_{F}+\langle M^{-},N^{-}\rangle_{F}\bigr)$, the real inner product of the coefficients being the Euclidean one in each reading.
 
-*Proof.* The norm $\langle Q_\pm\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}=q_+^{2}+q'^{2}_++q_-^{2}+q'^{2}_-$ is the sum of the four squares of the real coordinates, whence the first equality on summing over the entries. For the second, $|Q_{++}|^{2}+|Q_{--}|^{2}=2(|Q_+|^{2}+|Q_-|^{2})$ by the identity $|Q_++Q_-|^{2}+|Q_+-Q_-|^{2}=2|Q_+|^{2}+2|Q_-|^{2}$, and $K=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$; summing the two coordinatewise Frobenius norms gives the result. The form case is the polarisation of the norm case.
+*Proof.* The norm $\langle \breve Q\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}=q_+^{2}+q'^{2}_++q_-^{2}+q'^{2}_-$ is the sum of the four squares of the real coordinates, whence the first equality on summing over the entries. For the second, $|Q_{++}|^{2}+|Q_{--}|^{2}=2(|Q_+|^{2}+|Q_-|^{2})$ by the identity $|Q_++Q_-|^{2}+|Q_+-Q_-|^{2}=2|Q_+|^{2}+2|Q_-|^{2}$, and $K=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$; summing the two coordinatewise Frobenius norms gives the result. The form case is the polarisation of the norm case.
 
 **Corollary (the square of the real Frobenius norm).** With $\lVert M\rVert_{F}:=\sqrt{K_{\mathrm F}(M)}$ the Frobenius norm of the source, $\lVert M\rVert_{F}=\tfrac12\lVert M^{R}\rVert_{F}$, where $M^{R}$ is the real representation of §*The Representations and the Coefficient Stack*, whose coefficient blocks each occur four times.
 
@@ -166,7 +166,7 @@ $$
 
 the bar-transpose; and $(AM)^{\dagger}=M^{\dagger}A^{\dagger}$. In components $(A^{\dagger})^{+}=(A^{+})^{*}$ and $(A^{\dagger})^{-}=(A^{-})^{*}$, the complex conjugate transposes.
 
-*Proof.* The element identity is $K(AQ_{\pm,1},Q_{\pm,2})=K(Q_{\pm,1},\bar A Q_{\pm,2})$ for all elements, which is the statement that left multiplication by $\bar A$ is adjoint to left multiplication by $A$; on matrices the two identities are summed over the entries, and the transpose of the index pair converts the left multiplication into the bar-transpose. For the components, the bar conjugates the coefficients, that is conjugates each complex component, and the transpose transposes each component; so the bar-transpose acts componentwise as the complex conjugate transpose.
+*Proof.* The element identity is $K(A\breve Q_{1},\breve Q_{2})=K(\breve Q_{1},\bar A \breve Q_{2})$ for all elements, which is the statement that left multiplication by $\bar A$ is adjoint to left multiplication by $A$; on matrices the two identities are summed over the entries, and the transpose of the index pair converts the left multiplication into the bar-transpose. For the components, the bar conjugates the coefficients, that is conjugates each complex component, and the transpose transposes each component; so the bar-transpose acts componentwise as the complex conjugate transpose.
 
 **Theorem (the normal equations).** A matrix $X$ minimises $K_{\mathrm F}(AX-B)$ if and only if
 
@@ -408,7 +408,7 @@ The three approximation problems over the reduced biquaternion algebra — least
 
 | Symbol | Meaning |
 |---|---|
-| $\langle Q_\pm\rangle_{\natural*}$ | The positive definite algebraic norm $\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$ |
+| $\langle \breve Q\rangle_{\natural*}$ | The positive definite algebraic norm $\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$ |
 | $K_{\mathrm F}(M)$ | The entrywise matrix form, $\sum_{r,s}K(M_{rs})$, the square of the Frobenius norm |
 | $M^{+},M^{-}$ | The two complex idempotent components, the pair of the array representation |
 | $n_{1},n_{2}$ | The numbers of exact and of perturbed columns of $A$, $n_{1}+n_{2}=n$ |

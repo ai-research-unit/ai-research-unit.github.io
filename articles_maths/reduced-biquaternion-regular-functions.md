@@ -4,7 +4,7 @@
 
 This article studies **regular** reduced biquaternion-valued functions, the solutions of the first-order system defined by the reduced biquaternion Cauchy–Riemann operator. It follows *Reduced Biquaternion Analysis*, where the operator and its conjugate are constructed, and it records the system of equations, the examples, the harmonicity and the factorization of the Laplacian, the role of the zero divisors, and the relations to the biquaternion regular functions and to Clifford analysis. The treatment is purely mathematical, and the operator is only ever called the **Cauchy–Riemann operator**.
 
-Throughout the basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$; the idempotent coordinates are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, and $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle Q_\pm\rangle_{\natural*}=\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$, and a general function is written $f$ or $\Phi$.
+Throughout the basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$; the idempotent coordinates are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, and $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The squared Euclidean norm is $\langle \breve Q\rangle_{\natural*}=\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$, and a general function is written $f$ or $\Phi$.
 
 ## The Variable and Its Structure
 
@@ -12,13 +12,13 @@ Throughout the basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the 
 
 **Definition.** On the real algebra $\mathbb{B}_{\mathrm{r}}$ define the two real-linear maps
 $$
-J_{i}(Q_\pm)=iQ_\pm,\qquad J_{ij}(Q_\pm)=ijQ_\pm .
+J_{i}(\breve Q)=i\breve Q,\qquad J_{ij}(\breve Q)=ij\breve Q .
 $$
 They are the **two complex structures** of the algebra, and they commute.
 
-**Theorem (the coordinate structure).** $J_{i}$ and $J_{ij}$ are real-linear, satisfy $J_{i}^{2}=J_{ij}^{2}=-\mathrm{id}$, and commute, so each makes $\mathbb{B}_{\mathrm{r}}$ a two-dimensional complex vector space. The maps $Q_\pm\mapsto Q_{++}=Q_++Q_-$ and $Q_\pm\mapsto Q_{--}=Q_+-Q_-$ are complex-linear isomorphisms onto $\mathbb{C}$, and
+**Theorem (the coordinate structure).** $J_{i}$ and $J_{ij}$ are real-linear, satisfy $J_{i}^{2}=J_{ij}^{2}=-\mathrm{id}$, and commute, so each makes $\mathbb{B}_{\mathrm{r}}$ a two-dimensional complex vector space. The maps $\breve Q\mapsto Q_{++}=Q_++Q_-$ and $\breve Q\mapsto Q_{--}=Q_+-Q_-$ are complex-linear isomorphisms onto $\mathbb{C}$, and
 $$
-Q_\pm\longmapsto(Q_{++},Q_{--})
+\breve Q\longmapsto(Q_{++},Q_{--})
 $$
 is a complex-linear isomorphism $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}^{2}$ under which the multiplication is componentwise and the norm is $K=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$.
 
@@ -83,7 +83,7 @@ $$
 
 **Remark (the dependence on the second variable).** The equation $\partial/\partial\bar Q_{++}\,g_{1}=0$ is the Cauchy–Riemann system in $Q_{++}$ with $Q_{--}$ entering only as a parameter, so a $C^{1}$ solution has $g_{1}(Q_{++},Q_{--})$ holomorphic in $Q_{++}$ for each fixed $Q_{--}$, and symmetrically $g_{2}(Q_{++},Q_{--})$ holomorphic in $Q_{--}$ for each fixed $Q_{++}$. The narrower class of functions differentiable in the reduced sense — the difference-quotient class of *Reduced Biquaternion Analysis*, §*The Problem of Differentiability* — is the class in which $g_{1}$ does not depend on $Q_{--}$ and $g_{2}$ does not depend on $Q_{++}$, that is
 $$
-f(Q_\pm)=G_{1}(Q_{++})\,\Pi_++G_{2}(Q_{--})\,\Pi_-
+f(\breve Q)=G_{1}(Q_{++})\,\Pi_++G_{2}(Q_{--})\,\Pi_-
 $$
 with $G_{1},G_{2}$ holomorphic in one complex variable. The operator condition alone is the weaker and larger class; the reduced-analytic class is the one that carries the derivative and the integral theory, and it is meant when a statement needs a genuine difference quotient.
 
@@ -91,13 +91,13 @@ with $G_{1},G_{2}$ holomorphic in one complex variable. The operator condition a
 
 **Constants.** A constant $f=C$ is regular on every domain, since both derivatives vanish.
 
-**The identity is regular.** $\bar\partial Q_\pm=\Pi_+\partial/\partial\bar Q_{++}\,Q_{++}+\Pi_-\partial/\partial\bar Q_{--}\,Q_{--}=0$, the component $Q_{++}$ being holomorphic in $Q_{++}$ and the component $Q_{--}$ in $Q_{--}$. The identity is therefore regular, in contrast with the Clifford case, where $\sum_{\mu}e_{\mu}^{2}\neq0$ makes the coordinate function non-regular.
+**The identity is regular.** $\bar\partial \breve Q=\Pi_+\partial/\partial\bar Q_{++}\,Q_{++}+\Pi_-\partial/\partial\bar Q_{--}\,Q_{--}=0$, the component $Q_{++}$ being holomorphic in $Q_{++}$ and the component $Q_{--}$ in $Q_{--}$. The identity is therefore regular, in contrast with the Clifford case, where $\sum_{\mu}e_{\mu}^{2}\neq0$ makes the coordinate function non-regular.
 
-**Powers and polynomials.** Since $Q_\pm^{n}=Q_{++}^{n}\Pi_++Q_{--}^{n}\Pi_-$, every power is regular, and so is every polynomial $\sum_{n}c_{n}Q_\pm^{n}$ with constant coefficients; more generally $f=G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ is reduced-analytic and regular for every pair of holomorphic functions $G_{1},G_{2}$.
+**Powers and polynomials.** Since $\breve Q^{n}=Q_{++}^{n}\Pi_++Q_{--}^{n}\Pi_-$, every power is regular, and so is every polynomial $\sum_{n}c_{n}\breve Q^{n}$ with constant coefficients; more generally $f=G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ is reduced-analytic and regular for every pair of holomorphic functions $G_{1},G_{2}$.
 
 **The Cauchy kernel.** The function
 $$
-G(Q_\pm)=\frac{1}{2\pi i}\Bigl(\frac{\Pi_+}{Q_{++}}+\frac{\Pi_-}{Q_{--}}\Bigr)
+G(\breve Q)=\frac{1}{2\pi i}\Bigl(\frac{\Pi_+}{Q_{++}}+\frac{\Pi_-}{Q_{--}}\Bigr)
 $$
 is regular on the complement of the zero-divisor set $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, since each component is holomorphic in its own coordinate.
 
@@ -107,7 +107,7 @@ $$
 $$
 so the regular functions form a commutative algebra over $\mathbb{C}$. They are **not** closed under the bar, which conjugates the coefficients and turns a holomorphic component into an antiholomorphic one.
 
-**The conjugations.** The natural sign $Q_\pm\mapsto Q_\pm^{\natural}=Q_+-jQ_-$ swaps the two coordinates, $Q_{++}\leftrightarrow Q_{--}$, so it maps a reduced-analytic function $G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ to $G_{1}(Q_{--})\Pi_-+G_{2}(Q_{++})\Pi_+$, which is again reduced-analytic; the bar conjugates the coefficients and produces the antiholomorphic twins, and the star does both.
+**The conjugations.** The natural sign $\breve Q\mapsto \breve Q^{\natural}=Q_+-jQ_-$ swaps the two coordinates, $Q_{++}\leftrightarrow Q_{--}$, so it maps a reduced-analytic function $G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ to $G_{1}(Q_{--})\Pi_-+G_{2}(Q_{++})\Pi_+$, which is again reduced-analytic; the bar conjugates the coefficients and produces the antiholomorphic twins, and the star does both.
 
 ## Harmonicity and the Factorization of the Laplacian
 
@@ -125,7 +125,7 @@ so the regular functions form a commutative algebra over $\mathbb{C}$. They are 
 
 The zero-divisor set is $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, the union of the two idempotent **complex lines**, each of real dimension two. The set therefore has codimension two in the four-dimensional algebra, not one, and this single fact governs every difference from the complex theory.
 
-**The inverse is local.** The inverse $Q_\pm^{-1}=Q_{++}^{-1}\Pi_++Q_{--}^{-1}\Pi_-$ requires both coordinates non-zero, so the difference quotient exists only for increments off $Z$; since $Z$ has codimension two, the excluded increments form a set of measure zero but are not a hypersurface, and the quotient is defined on a dense open subset.
+**The inverse is local.** The inverse $\breve Q^{-1}=Q_{++}^{-1}\Pi_++Q_{--}^{-1}\Pi_-$ requires both coordinates non-zero, so the difference quotient exists only for increments off $Z$; since $Z$ has codimension two, the excluded increments form a set of measure zero but are not a hypersurface, and the quotient is defined on a dense open subset.
 
 **The kernel is local.** The Cauchy kernel has the two simple poles on the two lines $Q_{++}=0$ and $Q_{--}=0$; it is defined and regular off $Z$, but it is not a classical fundamental solution of a single elliptic operator, because the singular set is a union of two codimension-two planes rather than a point.
 
@@ -139,23 +139,23 @@ In the language of Clifford algebras the reduced algebra is $\mathrm{Cl}_{1,0}\o
 
 ## Summary
 
-The reduced biquaternion algebra carries two commuting complex structures, $J_{i}(Q_\pm)=iQ_\pm$ and $J_{ij}(Q_\pm)=ijQ_\pm$, and the two idempotent coordinates $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ form the two independent complex variables. The reduced Cauchy–Riemann operator $\bar\partial=\Pi_+\partial/\partial\bar Q_{++}+\Pi_-\partial/\partial\bar Q_{--}$ and its conjugate $\partial=\Pi_+\partial/\partial Q_{++}+\Pi_-\partial/\partial Q_{--}$ act coefficientwise, commute, and satisfy $\bar\partial\partial=\Pi_+\partial^2/\partial Q_{++}\partial\bar Q_{++}+\Pi_-\partial^2/\partial Q_{--}\partial\bar Q_{--}$, the two components summing to $\Delta/8$. A $C^{1}$ function is regular when $\bar\partial f=0$, equivalently when its two components satisfy the pair of complex Cauchy–Riemann systems $\partial/\partial\bar Q_{++}\,g_{1}=0$, $\partial/\partial\bar Q_{--}\,g_{2}=0$; because the algebra is commutative, left and right regularity coincide. The reduced-analytic class is $f=G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ with $G_{1},G_{2}$ holomorphic, and the identity function belongs to it. The characteristic set is the union of two two-planes, so the operator is elliptic nowhere and the operator condition alone defines a larger class than the reduced-analytic one. Every reduced-analytic function is harmonic for the Euclidean Laplacian, the elliptic tools of the mean value property, the maximum principle and Liouville's theorem being available, and the zero-divisor set is the union of the two idempotent complex lines, of codimension two, which makes the inverse and the kernel local without making them hypersurface singular. The theory is the pair of the complex one-variable theories, against the pair of quaternionic ones of the split biquaternions and the single Fueter theory of the simple biquaternion algebra.
+The reduced biquaternion algebra carries two commuting complex structures, $J_{i}(\breve Q)=i\breve Q$ and $J_{ij}(\breve Q)=ij\breve Q$, and the two idempotent coordinates $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ form the two independent complex variables. The reduced Cauchy–Riemann operator $\bar\partial=\Pi_+\partial/\partial\bar Q_{++}+\Pi_-\partial/\partial\bar Q_{--}$ and its conjugate $\partial=\Pi_+\partial/\partial Q_{++}+\Pi_-\partial/\partial Q_{--}$ act coefficientwise, commute, and satisfy $\bar\partial\partial=\Pi_+\partial^2/\partial Q_{++}\partial\bar Q_{++}+\Pi_-\partial^2/\partial Q_{--}\partial\bar Q_{--}$, the two components summing to $\Delta/8$. A $C^{1}$ function is regular when $\bar\partial f=0$, equivalently when its two components satisfy the pair of complex Cauchy–Riemann systems $\partial/\partial\bar Q_{++}\,g_{1}=0$, $\partial/\partial\bar Q_{--}\,g_{2}=0$; because the algebra is commutative, left and right regularity coincide. The reduced-analytic class is $f=G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ with $G_{1},G_{2}$ holomorphic, and the identity function belongs to it. The characteristic set is the union of two two-planes, so the operator is elliptic nowhere and the operator condition alone defines a larger class than the reduced-analytic one. Every reduced-analytic function is harmonic for the Euclidean Laplacian, the elliptic tools of the mean value property, the maximum principle and Liouville's theorem being available, and the zero-divisor set is the union of the two idempotent complex lines, of codimension two, which makes the inverse and the kernel local without making them hypersurface singular. The theory is the pair of the complex one-variable theories, against the pair of quaternionic ones of the split biquaternions and the single Fueter theory of the simple biquaternion algebra.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$ | Reduced biquaternion algebra |
-| $Q_\pm=Q_++jQ_-$ | Element, $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$ |
+| $\breve Q=Q_++jQ_-$ | Element, $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$ |
 | $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ | Idempotent coordinates |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |
-| $J_{i},J_{ij}$ | The two complex structures $Q_\pm\mapsto iQ_\pm$, $Q_\pm\mapsto ijQ_\pm$ |
+| $J_{i},J_{ij}$ | The two complex structures $\breve Q\mapsto i\breve Q$, $\breve Q\mapsto ij\breve Q$ |
 | $\partial/\partial Q_{++},\partial/\partial\bar Q_{++},\partial/\partial Q_{--},\partial/\partial\bar Q_{--}$ | Wirtinger derivatives of the two coordinates |
 | $\bar\partial=\Pi_+\partial/\partial\bar Q_{++}+\Pi_-\partial/\partial\bar Q_{--}$ | Reduced Cauchy–Riemann operator |
 | $\partial=\Pi_+\partial/\partial Q_{++}+\Pi_-\partial/\partial Q_{--}$ | Conjugate operator |
 | $\Delta=\partial^2/\partial q_+^2+\partial^2/\partial q'^2_++\partial^2/\partial q_-^2+\partial^2/\partial q'^2_-$ | Euclidean Laplacian |
 | $f=G_{1}(Q_{++})\Pi_++G_{2}(Q_{--})\Pi_-$ | Reduced-analytic function |
-| $G(Q_\pm)=\tfrac{1}{2\pi i}(\Pi_+/Q_{++}+\Pi_-/Q_{--})$ | Cauchy kernel |
+| $G(\breve Q)=\tfrac{1}{2\pi i}(\Pi_+/Q_{++}+\Pi_-/Q_{--})$ | Cauchy kernel |
 | $Z=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | Zero-divisor set |
 
 ## Further Reading

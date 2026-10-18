@@ -99,7 +99,7 @@ It is computed on the four matrix units. The form is the normalised Hilbert–Sc
 
 $$
 \langle\tilde\Pi_+,\tilde\Pi_+\rangle_*=\langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_*=\langle\vec\Upsilon_x,\vec\Upsilon_x\rangle_*=\langle\tilde\Pi_-,\tilde\Pi_-\rangle_*=\tfrac12,\qquad
-\langle\tilde P,\tilde Q_1\rangle_*=0\ \text{for}\ \tilde P\neq\tilde Q_1\ \text{among the four}.
+\langle\tilde Q_1,\tilde Q_2\rangle_*=0\ \text{for}\ \tilde Q_1\neq\tilde Q_2\ \text{among the four}.
 $$
 
 Every element of $\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ is therefore orthogonal to every element of $\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, and since both are two-dimensional while $\mathbb{B}$ is four-dimensional,
@@ -315,8 +315,8 @@ The claims are recomputed on the basis $(\tilde\Pi_+,\vec\Upsilon_y,\vec\Upsilon
 
 - **The idempotents and the complement.** $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$, so $\tilde\Pi_-=e_t-\tilde\Pi_+$.
 - **The complement is a left ideal.** Every left multiplication maps $\{\tilde\Pi_-,\vec\Upsilon_x\}$ into $\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$, and the action matrices are those of §*The Multiplication of the Complement*.
-- **The two complements coincide.** $\langle\tilde P,\tilde Q_1\rangle_*=0$ for $\tilde P\in\{\tilde\Pi_+,\vec\Upsilon_y\}$ and $\tilde Q_1\in\{\tilde\Pi_-,\vec\Upsilon_x\}$, and $\dim_{\mathbb{C}}S=\dim_{\mathbb{C}}\mathbb{B}\tilde\Pi_-=2$, so $S^{\perp}=\mathbb{B}\tilde\Pi_-$.
-- **The four units are orthonormal up to $\tfrac12$.** $\langle\tilde P,\tilde P\rangle_*=\tfrac12$ on each of the four matrix units and $0$ between any two distinct ones, so the form is $\tfrac12$ times the Hilbert–Schmidt form of the matrix model.
+- **The two complements coincide.** $\langle\tilde Q_1,\tilde Q_2\rangle_*=0$ for $\tilde Q_1\in\{\tilde\Pi_+,\vec\Upsilon_y\}$ and $\tilde Q_2\in\{\tilde\Pi_-,\vec\Upsilon_x\}$, and $\dim_{\mathbb{C}}S=\dim_{\mathbb{C}}\mathbb{B}\tilde\Pi_-=2$, so $S^{\perp}=\mathbb{B}\tilde\Pi_-$.
+- **The four units are orthonormal up to $\tfrac12$.** $\langle\tilde Q_1,\tilde Q_1\rangle_*=\tfrac12$ on each of the four matrix units and $0$ between any two distinct ones, so the form is $\tfrac12$ times the Hilbert–Schmidt form of the matrix model.
 - **The conjugate reaches it, the adjoint does not.** $\bar{\tilde\Pi_+}=\tilde\Pi_-$ and $\bar{\vec\Upsilon_y}=-\vec\Upsilon_x$, so $\bar S=\mathbb{B}\tilde\Pi_-$; while $\tilde\Pi_+^{*}=\tilde\Pi_+$ and $\vec\Upsilon_y^{*}=\vec\Upsilon_x$, so $S^{*}=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_x\}=\tilde\Pi_+\mathbb{B}\neq\mathbb{B}\tilde\Pi_-$.
 - **Right multiplication exchanges the ideals.** $\tilde\Pi_+\vec\Upsilon_x=\vec\Upsilon_x$, $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, so $S\vec\Upsilon_x=\mathbb{B}\tilde\Pi_-$; symmetrically $\tilde\Pi_-\vec\Upsilon_y=\vec\Upsilon_y$, $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$, so $(\mathbb{B}\tilde\Pi_-)\vec\Upsilon_y=\mathbb{B}\tilde\Pi_+$.
 - **The sector intersections.** With $\mathbb{M}_\pm$ the fixed spaces of $\pm{}^{*}$, one has $S\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_+\}$, $S\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_+\}$, $\mathbb{B}\tilde\Pi_-\cap\mathbb{M}_+=\mathbb{R}\{\tilde\Pi_-\}$, $\mathbb{B}\tilde\Pi_-\cap\mathbb{M}_-=\mathbb{R}\{i\tilde\Pi_-\}$, one real dimension each.

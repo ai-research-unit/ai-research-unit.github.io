@@ -6,7 +6,7 @@ The biquaternion complex space carries four general products, and each of the fo
 
 The article owns none of the twelve. The products, their laws, their units and their images are the matter of *The 12 Products of the Biquaternioid Complex Space*; the names and the structure each product defines are *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the classes — the product-relative unit, inverse, zero divisor, idempotent, nilpotent, square and form-theoretic class — are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; and each of the twelve has a band of its own in this menu, whose article reads its product and its physical job.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and central $i$ with $i^{2}=-1$; a general element is $\tilde Q=Q_te_t+\vec Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with complex coefficients $Q_\mu$ and vector part $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation ${}^{\natural}$ fixes $i$ and negates $\vec e_x,\vec e_y,\vec e_z$, the coefficientwise conjugation $\bar{\cdot}$ conjugates the coefficients, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the scalar part is $\mathrm{Sc}$, the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$, and $(\vec P,\vec Q)$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces and the two sectors $\mathbb{M}_+$, $\mathbb{M}_-$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and central $i$ with $i^{2}=-1$; a general element is $\tilde Q=Q_te_t+\vec Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with complex coefficients $Q_\mu$ and vector part $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation ${}^{\natural}$ fixes $i$ and negates $\vec e_x,\vec e_y,\vec e_z$, the coefficientwise conjugation $\bar{\cdot}$ conjugates the coefficients, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the scalar part is $\mathrm{Sc}$, the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$, and $(\vec Q_1,\vec Q_2)$ and $\vec Q_1\times\vec Q_2$ are the complex bilinear dot and cross products. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces and the two sectors $\mathbb{M}_+$, $\mathbb{M}_-$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Method of the Split
 
@@ -15,17 +15,17 @@ Every general product is split into a symmetric and an antisymmetric part, and t
 **The bilinear case.** The general plain bilinear product and the general quaternionic bilinear product have two $\mathbb{C}$-linear slots, and the exchange is the plain interchange of the arguments,
 
 $$
-f^{\mathrm{s}}(\tilde P,\tilde Q)=\tfrac12\bigl(f(\tilde P,\tilde Q)+f(\tilde Q,\tilde P)\bigr),
+f^{\mathrm{s}}(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_1,\tilde Q_2)+f(\tilde Q_2,\tilde Q_1)\bigr),
 \qquad
-f^{\mathrm{a}}(\tilde P,\tilde Q)=\tfrac12\bigl(f(\tilde P,\tilde Q)-f(\tilde Q,\tilde P)\bigr).
+f^{\mathrm{a}}(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_1,\tilde Q_2)-f(\tilde Q_2,\tilde Q_1)\bigr).
 $$
 
 **The sesquilinear case.** The general plain sesquilinear product and the general quaternionic sesquilinear product have one linear and one conjugate-linear slot, and the interchange alone returns a product of the opposite type, which is not a product of the class at all. The exchange is the **conjugate transpose**, the interchange followed by the coefficientwise conjugation of the value,
 
 $$
-f^{\mathrm{s}}(\tilde P,\tilde Q)=\tfrac12\bigl(f(\tilde P,\tilde Q)+\overline{f(\tilde Q,\tilde P)}\bigr),
+f^{\mathrm{s}}(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_1,\tilde Q_2)+\overline{f(\tilde Q_2,\tilde Q_1)}\bigr),
 \qquad
-f^{\mathrm{a}}(\tilde P,\tilde Q)=\tfrac12\bigl(f(\tilde P,\tilde Q)-\overline{f(\tilde Q,\tilde P)}\bigr).
+f^{\mathrm{a}}(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_1,\tilde Q_2)-\overline{f(\tilde Q_2,\tilde Q_1)}\bigr).
 $$
 
 **Why the exchange is adapted.** The exchange is chosen so that both parts are operations of the **same class as the product they split** — $\mathbb{C}$-bilinear in the two bilinear families and sesquilinear over $(\mathbb{C},\bar{\cdot})$ in the two sesquilinear ones — and this class-preservation is the reason the sesquilinear split is the conjugate transpose and not the bare interchange. The bare interchange of a sesquilinear product has two halves that are only $\mathbb{R}$-bilinear, the symmetrised sesquilinear product and the sesquilinear commutator, and they are not the two parts read here; the twelve names are read against the class-preserving exchange.
@@ -38,20 +38,20 @@ Each of the four general products is read with its two parts, the symmetric and 
 
 | code | name | product | scalar part | vector part |
 |---|---|---|---|---|
-| $\mathrm{GPA}$ | the general plain bilinear product | $\tilde P\tilde Q$ | $P_0Q_t-(\vec P,\vec Q)$ | $+P_0\vec Q+Q_t\vec P+\vec P\times\vec Q$ |
-| $\mathrm{GPS}$ | the general plain sesquilinear product | $\tilde P\tilde Q^{*}$ | $P_0\overline{Q_t}+(\vec P,\overline{\vec Q})$ | $-P_0\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$ |
-| $\mathrm{GQA}$ | the general quaternionic bilinear product | $\tilde P^{\natural}\tilde Q$ | $P_0Q_t+(\vec P,\vec Q)$ | $+P_0\vec Q-Q_t\vec P-\vec P\times\vec Q$ |
-| $\mathrm{GQS}$ | the general quaternionic sesquilinear product | $\tilde P^{\natural}\tilde Q^{*}$ | $P_0\overline{Q_t}-(\vec P,\overline{\vec Q})$ | $-P_0\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q}$ |
-| $\mathrm{SPA}$ | the symmetric plain bilinear product | $\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)$ | $P_0Q_t-(\vec P,\vec Q)$ | $+P_0\vec Q+Q_t\vec P$ |
-| $\mathrm{SPS}$ | the symmetric plain sesquilinear product | $\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q}\tilde P^{\natural}\bigr)$ | $P_0\overline{Q_t}+(\vec P,\overline{\vec Q})$ | $0$ |
-| $\mathrm{SQA}$ | the symmetric quaternionic bilinear product | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)$ | $P_0Q_t+(\vec P,\vec Q)$ | $0$ |
-| $\mathrm{SQS}$ | the symmetric quaternionic sesquilinear product | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)$ | $P_0\overline{Q_t}-(\vec P,\overline{\vec Q})$ | $-P_0\overline{\vec Q}-\overline{Q_t}\vec P$ |
-| $\mathrm{APA}$ | the antisymmetric plain bilinear product | $\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)$ | $0$ | $\vec P\times\vec Q$ |
-| $\mathrm{APS}$ | the antisymmetric plain sesquilinear product | $\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q}\tilde P^{\natural}\bigr)$ | $0$ | $-P_0\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$ |
-| $\mathrm{AQA}$ | the antisymmetric quaternionic bilinear product | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)$ | $0$ | $P_0\vec Q-Q_t\vec P-\vec P\times\vec Q$ |
-| $\mathrm{AQS}$ | the antisymmetric quaternionic sesquilinear product | $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)$ | $0$ | $\vec P\times\overline{\vec Q}$ |
+| $\mathrm{GPA}$ | the general plain bilinear product | $\tilde Q_1\tilde Q_2$ | $Q_{10}Q_{2t}-(\vec Q_1,\vec Q_2)$ | $+Q_{10}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$ |
+| $\mathrm{GPS}$ | the general plain sesquilinear product | $\tilde Q_1\tilde Q_2^{*}$ | $Q_{10}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | $-Q_{10}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ |
+| $\mathrm{GQA}$ | the general quaternionic bilinear product | $\tilde Q_1^{\natural}\tilde Q_2$ | $Q_{10}Q_{2t}+(\vec Q_1,\vec Q_2)$ | $+Q_{10}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ |
+| $\mathrm{GQS}$ | the general quaternionic sesquilinear product | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $Q_{10}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | $-Q_{10}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$ |
+| $\mathrm{SPA}$ | the symmetric plain bilinear product | $\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)$ | $Q_{10}Q_{2t}-(\vec Q_1,\vec Q_2)$ | $+Q_{10}\vec Q_2+Q_{2t}\vec Q_1$ |
+| $\mathrm{SPS}$ | the symmetric plain sesquilinear product | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2}\tilde Q_1^{\natural}\bigr)$ | $Q_{10}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | $0$ |
+| $\mathrm{SQA}$ | the symmetric quaternionic bilinear product | $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)$ | $Q_{10}Q_{2t}+(\vec Q_1,\vec Q_2)$ | $0$ |
+| $\mathrm{SQS}$ | the symmetric quaternionic sesquilinear product | $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)$ | $Q_{10}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | $-Q_{10}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$ |
+| $\mathrm{APA}$ | the antisymmetric plain bilinear product | $\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)$ | $0$ | $\vec Q_1\times\vec Q_2$ |
+| $\mathrm{APS}$ | the antisymmetric plain sesquilinear product | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2}\tilde Q_1^{\natural}\bigr)$ | $0$ | $-Q_{10}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ |
+| $\mathrm{AQA}$ | the antisymmetric quaternionic bilinear product | $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)$ | $0$ | $Q_{10}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ |
+| $\mathrm{AQS}$ | the antisymmetric quaternionic sesquilinear product | $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)$ | $0$ | $\vec Q_1\times\overline{\vec Q_2}$ |
 
-Two remarks fix the table. The **symmetrisation keeps the scalar part** of the general product unchanged and the **antisymmetrisation keeps the vector part**: for each family the general product and its symmetric part share one scalar part, and the general product and its antisymmetric part share one vector part. In the **plain sesquilinear** family the conjugate transpose of the value is its natural conjugate, so the antisymmetric part is the vector part of the single value $f(\tilde P,\tilde Q)$; in the **quaternionic sesquilinear** family the two orders are not conjugate values and the two parts are the half-sum and the half-difference of the two orders, which is why the values of $\mathrm{SQS}$ lie in no remarkable subspace.
+Two remarks fix the table. The **symmetrisation keeps the scalar part** of the general product unchanged and the **antisymmetrisation keeps the vector part**: for each family the general product and its symmetric part share one scalar part, and the general product and its antisymmetric part share one vector part. In the **plain sesquilinear** family the conjugate transpose of the value is its natural conjugate, so the antisymmetric part is the vector part of the single value $f(\tilde Q_1,\tilde Q_2)$; in the **quaternionic sesquilinear** family the two orders are not conjugate values and the two parts are the half-sum and the half-difference of the two orders, which is why the values of $\mathrm{SQS}$ lie in no remarkable subspace.
 
 ## The Twelve Algebraic Structures
 
@@ -72,7 +72,7 @@ The twelve together have three patterns, and they are the patterns a reader comp
 
 Each structure is asked for the law of its kind: associativity for a general product, (conjugate-)commutativity for a symmetric part, (conjugate-)alternation for an antisymmetric part. Over and above those, the two classical identities single out exactly one structure of each kind, and the twelve are mostly the account of the others failing.
 
-**The Jacobi identity**, asked of the four antisymmetric parts, holds for $\mathrm{APA}$ alone — the antisymmetric plain product is the cross product $\vec P\times\vec Q$, the Lie bracket of the rotation algebra — and fails for the other three. Its failure is densest for $\mathrm{APS}$, failing on half the triples, and sparsest for $\mathrm{AQS}$, whose witness needs a complex element: on the eight-element real basis $\{e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the failing triples number none for $\mathrm{APA}$, $252$ for $\mathrm{APS}$, $144$ of $512$ for $\mathrm{AQA}$ and $72$ for $\mathrm{AQS}$.
+**The Jacobi identity**, asked of the four antisymmetric parts, holds for $\mathrm{APA}$ alone — the antisymmetric plain product is the cross product $\vec Q_1\times\vec Q_2$, the Lie bracket of the rotation algebra — and fails for the other three. Its failure is densest for $\mathrm{APS}$, failing on half the triples, and sparsest for $\mathrm{AQS}$, whose witness needs a complex element: on the eight-element real basis $\{e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the failing triples number none for $\mathrm{APA}$, $252$ for $\mathrm{APS}$, $144$ of $512$ for $\mathrm{AQA}$ and $72$ for $\mathrm{AQS}$.
 
 **The Jordan identity**, asked of the four symmetric parts, holds for $\mathrm{SPA}$ alone — the symmetrisation of the plain product, the product of the Jordan algebra of the observables — and fails for the other three: $\mathrm{SPS}$ fails at $7$ of the $8$ basis elements, $\mathrm{SQA}$ at $6$ and $\mathrm{SQS}$ at $4$. The failures of the three are of two shapes, the central shift of $\mathrm{SQS}$ and the outright vanishing of $\mathrm{SPS}$ and $\mathrm{SQA}$, and a shift needs a product with a non-central algebraic norm, which is the mark of the sesquilinear block.
 
@@ -82,7 +82,7 @@ Each structure is asked for the law of its kind: associativity for a general pro
 
 The vocabulary the twelve structures are read with — unit, inverse, zero divisor and annihilator, idempotent, projection and Peirce decomposition, nilpotent, power and square root, derived operation and form-theoretic class — is **product-relative**. A unit is a unit in the product in force, an inverse an inverse there, a zero divisor a zero divisor there; the same element may be a unit in one of the twelve and a zero divisor in another, and neither statement needs the other to be false. The general definitions, the transport of a class along an isomorphism and the dictionary between the classes and the four general products are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, and they are the vocabulary every band article uses.
 
-Two facts of the definitional layer matter for the band. The four general products **coincide on one of the element classes they decide**: the four zero-divisor sets are one set, because they are governed by the same central square $C(\tilde P)=\sum_\mu P_\mu^{2}$; the annihilators, the squares, the idempotents and the units are product-dependent and do not coincide. And the classes are read on the **whole** complex space unless a subspace is named, since the count of twelve is the count for the complex space and a computation on a real form sees ten.
+Two facts of the definitional layer matter for the band. The four general products **coincide on one of the element classes they decide**: the four zero-divisor sets are one set, because they are governed by the same central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$; the annihilators, the squares, the idempotents and the units are product-dependent and do not coincide. And the classes are read on the **whole** complex space unless a subspace is named, since the count of twelve is the count for the complex space and a computation on a real form sees ten.
 
 ## The Twelve on the Real Forms: Twelve to Ten
 
@@ -103,7 +103,7 @@ The first coincidence is the equality of the two scalar forms of the pair, $N=H$
 
 The twelve structures are one algebra read in twelve products, and the reading places each structure by its product, its law and its form.
 
-**By product**, the four families are the four jobs of *The Four General Products and the Degree-2 Forms of the Biquaternion Space* — composition, probability, causality and gauge — and within a family the general product is the operation, the symmetric part the half that measures or couples, and the antisymmetric part the half that orders, rotates or phases. **By law**, exactly two of the twelve are the product of a classical nonassociative algebra, the Jordan product $\mathrm{SPA}$ and the Lie product $\mathrm{APA}$, and they are the two the menu names commutativity and rotation. **By form**, the eight structures that carry a form split into the two that measure — the sector sign $\langle\tilde P,\tilde Q\rangle$ of the plain product, definite on each sector, and the positive definite $\langle\tilde P,\tilde Q\rangle_{*}$ of the plain sesquilinear product — and the two that carry a metric — the indefinite interval $\langle\cdot\rangle_{\natural}$ and the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}$; the four antisymmetric parts carry no form and measure nothing.
+**By product**, the four families are the four jobs of *The Four General Products and the Degree-2 Forms of the Biquaternion Space* — composition, probability, causality and gauge — and within a family the general product is the operation, the symmetric part the half that measures or couples, and the antisymmetric part the half that orders, rotates or phases. **By law**, exactly two of the twelve are the product of a classical nonassociative algebra, the Jordan product $\mathrm{SPA}$ and the Lie product $\mathrm{APA}$, and they are the two the menu names commutativity and rotation. **By form**, the eight structures that carry a form split into the two that measure — the sector sign $\langle\tilde Q_1,\tilde Q_2\rangle$ of the plain product, definite on each sector, and the positive definite $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ of the plain sesquilinear product — and the two that carry a metric — the indefinite interval $\langle\cdot\rangle_{\natural}$ and the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$; the four antisymmetric parts carry no form and measure nothing.
 
 The reading of the twelve side by side on the three axes is *The Twelve Structures Compared: Product, Law and Form*, and the same twelve read through the maps their elements define is *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*. Each of the twelve has its own entry in the menu, and each entry names the physical job of its structure; they are grouped in the band *Focus on Biquaternioid structures*.
 
@@ -122,8 +122,8 @@ Of the twelve, exactly one general product is associative, the general plain pro
 | $\mathrm A$, $\mathrm S$ | the family: the algebra over $\mathbb{C}$, the sesqualgebra over $\mathbb{C}$ |
 | $\mathrm{GPA},\mathrm{GQA},\mathrm{SPA},\mathrm{SQA},\mathrm{APA},\mathrm{AQA}$ | the six structures of the two algebras over $\mathbb{C}$ |
 | $\mathrm{GPS},\mathrm{GQS},\mathrm{SPS},\mathrm{SQS},\mathrm{APS},\mathrm{AQS}$ | the six structures of the two sesqualgebras over $\mathbb{C}$ |
-| $f^{\mathrm{s}}(\tilde P,\tilde Q)$, $f^{\mathrm{a}}(\tilde P,\tilde Q)$ | the symmetric and antisymmetric parts of a product |
-| $\overline{f(\tilde Q,\tilde P)}$ | the conjugate transpose, the exchange of a sesquilinear product |
+| $f^{\mathrm{s}}(\tilde Q_1,\tilde Q_2)$, $f^{\mathrm{a}}(\tilde Q_1,\tilde Q_2)$ | the symmetric and antisymmetric parts of a product |
+| $\overline{f(\tilde Q_2,\tilde Q_1)}$ | the conjugate transpose, the exchange of a sesquilinear product |
 | Jordan, Jacobi | the two identities that single out $\mathrm{SPA}$ and $\mathrm{APA}$ |
 | the eight-element basis | $\{e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, the form on which the failures are counted |
 

@@ -119,7 +119,7 @@ $$
 \tilde{Q} = r_+ \tilde u_+ \tilde\Pi_1 + r_- \tilde u_- \tilde\Pi_2 , \qquad r_\pm = |\tilde{Q}_\pm| > 0 , \ \ \tilde u_\pm \in S^3 ,
 $$
 
-and every unit has an exponential parametrisation $\tilde{Q} = \exp(\tilde P)$ with $\tilde P = (\tilde P_+, \tilde P_-)$ and $\tilde P_\pm$ in the quaternion logarithm of $\tilde{Q}_\pm$.
+and every unit has an exponential parametrisation $\tilde{Q} = \exp(\tilde Q_3)$ with $\tilde Q_3 = (\tilde Q_{3+}, \tilde Q_{3-})$ and $\tilde Q_{3\pm}$ in the quaternion logarithm of $\tilde{Q}_\pm$.
 
 **Proof.** Apply the polar form and the logarithm of a nonzero quaternion in each half.
 

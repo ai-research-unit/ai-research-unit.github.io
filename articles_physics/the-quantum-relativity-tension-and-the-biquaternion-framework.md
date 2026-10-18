@@ -229,14 +229,14 @@ Three interpretations cut across the difficulties. The arrow of process is the s
 | $\flat=-{}^{*}$ | Real structure with fixed space $\mathbb{M}_-$; not an involution of the ring |
 | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | The central element exchanges the sectors |
 | $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Trace; $\mathrm{Tr}(e_t)=2$ |
-| $\tilde{H}=h_0e_t+i\vec h$ | Hermitian element (observable), vector part $\vec h$ |
+| $\tilde{H}=h_te_t+i\vec h$ | Hermitian element (observable), vector part $\vec h$ |
 | $\vec u$ | Unit vector, the axis of an idempotent |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\leq1$ | State (Bloch ball), Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde{\Pi}_{1,2}\tilde{Ϛ})=\tfrac12(1\pm\vec u\cdot\vec r)$ | Born rule as a trace formula |
 | $\langle\tilde{Q}_1\rangle_{\natural}=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\tilde{Q}_1\tilde{Q}_1^{\natural}=\sum_\mu Q_{1,\mu}^{2}$ | Biquaternion norm; indefinite, complex in general; $-c^2t^2+x^2+y^2+z^2$ on $\mathbb{M}_-$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$ | Sesquilinear form; real, positive definite; the Hilbert structure |
-| $\langle\tilde{H}\rangle_{\natural}=h_0^2-\lvert\vec h\rvert^2$ | Biquaternion norm on a Hermitian element $\tilde{H}=h_0e_t+i\vec h$ |
+| $\langle\tilde{H}\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2$ | Biquaternion norm on a Hermitian element $\tilde{H}=h_te_t+i\vec h$ |
 | $\langle\tilde{Q}_1\rangle_{\natural}=0$ | Zero-divisor cone; its material real slice is the light cone, and the trace-one slice of its informational real slice is the Bloch sphere |
 | $\tilde\Pi^{\natural}=e_t-\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$ | On a Hermitian idempotent: conjugation returns the complement, and the norm vanishes |
 | $\Gamma_{\tilde{Q}_3}(\tilde{Q}_1)=\tilde{Q}_3\tilde{Q}_1\tilde{Q}_3^{*}$ | One action form; Lorentz, unitary and idempotent cases |

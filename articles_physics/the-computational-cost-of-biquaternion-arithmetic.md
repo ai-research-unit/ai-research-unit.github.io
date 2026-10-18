@@ -33,10 +33,10 @@ The slice structure of *Conventions in the Biquaternion Universe* fixes what the
 
 ## The Naive Count
 
-Write the two factors as scalar part plus vector part, $\tilde{P} = S_1 + \vec V_1$ and $\tilde{Q} = S_2 + \vec V_2$, with $S$ complex scalars and $\vec V$ complex vectors. The product is
+Write the two factors as scalar part plus vector part, $\tilde{Q}_1 = S_1 + \vec V_1$ and $\tilde{Q}_2 = S_2 + \vec V_2$, with $S$ complex scalars and $\vec V$ complex vectors. The product is
 
 $$
-\tilde{P}\tilde{Q} = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr).
+\tilde{Q}_1\tilde{Q}_2 = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr).
 $$
 
 The sign of the cross term is the corpus's: with $\vec e_x\vec e_y = \vec e_z$ the outer product is $+\vec V_1\times\vec V_2$, so that $\vec e_x\vec e_y$ returns $\vec e_z$; the source's convention reverses the order of the vector units and carries the opposite sign, which is a relabelling and changes no count.

@@ -4,7 +4,7 @@
 
 This article studies the discrete Fourier transform of a reduced biquaternion-valued signal. The transform is defined by an algebra-valued kernel built from an algebra element whose square is $-1$; because the idempotents commute with every element and the multiplication is commutative, the transform splits into the pair of the ordinary complex discrete transforms of the two idempotent coordinates. The article records the kernel, the transform pair, the factorization, the convolution theorem, the vanishing-norm issue, and the two-dimensional and higher-dimensional transforms. The treatment is purely mathematical.
 
-Throughout the element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal of length $N$ is a map $f:\{0,1,\dots,N-1\}\to\mathbb{B}_{\mathrm{r}}$.
+Throughout the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal of length $N$ is a map $f:\{0,1,\dots,N-1\}\to\mathbb{B}_{\mathrm{r}}$.
 
 ## The Fourier Kernel
 

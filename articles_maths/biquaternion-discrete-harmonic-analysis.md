@@ -475,7 +475,7 @@ the eigenvalues are $4$ and $2$. With $\sigma_f = 2.5$ the point lies in the reg
 
 ### The Calculation Rules
 
-Each row below is an identity of series, valid wherever the series concerned converge; the rows built from the central calculus carry the commutation hypothesis displayed with them. The sequences are $f$ and $g$, the constants are $c_1, c_2 \in \mathbb{B}$ and $\tilde P, \tilde A \in \mathbb{B}$, and $k$ is a non-negative integer.
+Each row below is an identity of series, valid wherever the series concerned converge; the rows built from the central calculus carry the commutation hypothesis displayed with them. The sequences are $f$ and $g$, the constants are $c_1, c_2$, the bases are $\tilde Q_1, \tilde A \in \mathbb{B}$, and $k$ is a non-negative integer.
 
 | Property | Sequence | Transform |
 |---|---|---|
@@ -499,8 +499,8 @@ In the table below the entry $n$ abbreviates the sequence $ne_t$, and the variab
 | $e_t$ | $(e_t - \tilde{Q}^{-1})^{-1}$ |
 | $n$ | $\tilde{Q}(\tilde{Q} - e_t)^{-2}$ |
 | $n^2$ | $(\tilde{Q} + \tilde{Q}^2)(\tilde{Q} - e_t)^{-3}$ |
-| $\tilde P^n$, for $\tilde P\tilde{Q} = \tilde{Q}\tilde P$ | $(e_t - \tilde P\tilde{Q}^{-1})^{-1}$ |
-| $n\tilde P^n$, for $\tilde P\tilde{Q} = \tilde{Q}\tilde P$ | $\tilde P\tilde{Q}^{-1}(e_t - \tilde P\tilde{Q}^{-1})^{-2}$ |
+| $\tilde Q_1^n$, for $\tilde Q_1\tilde{Q} = \tilde{Q}\tilde Q_1$ | $(e_t - \tilde Q_1\tilde{Q}^{-1})^{-1}$ |
+| $n\tilde Q_1^n$, for $\tilde Q_1\tilde{Q} = \tilde{Q}\tilde Q_1$ | $\tilde Q_1\tilde{Q}^{-1}(e_t - \tilde Q_1\tilde{Q}^{-1})^{-2}$ |
 | $\dfrac{\tilde A^n}{n!}$, for $\tilde A\tilde{Q} = \tilde{Q}\tilde A$ | $\exp(\tilde A\tilde{Q}^{-1})$ |
 
 ### Recurrence Relations

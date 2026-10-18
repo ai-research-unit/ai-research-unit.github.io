@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, exactly one makes the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra: the general plain bilinear product $\tilde P\tilde Q$, the multiplication of the algebra, read throughout this article.
+Of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, exactly one makes the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra: the general plain bilinear product $\tilde Q_1\tilde Q_2$, the multiplication of the algebra, read throughout this article.
 
 The mathematics article *Ideals and Peirce Decomposition of the Biquaternion Algebra* establishes two structures of that product: its **ideal structure** and the **Peirce decomposition** of the algebra, which the source reads off a **root of $+1$** and the complete orthogonal pair of idempotents it halves into. Both are cited and read here, neither is re-proved, and the physics interpretation is added. The algebra is simple, so its ideal theory is a theory of one-sided ideals; and the four corners of the Peirce decomposition are the finest block decomposition the algebra carries.
 

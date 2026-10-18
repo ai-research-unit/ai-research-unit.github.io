@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **antisymmetric plain sesqualgebra**, written $\mathrm{APS}$, whose product is the antisymmetrisation of the plain sesquilinear product, $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}-\tilde Q^{*}\tilde P)$. It is the antisymmetric sibling of the probability structure, and its job in the framework is **phase**: its values lie in the vector subspace, so it is the imaginary part of the Born pairing, and it carries the phase of an amplitude.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **antisymmetric plain sesqualgebra**, written $\mathrm{APS}$, whose product is the antisymmetrisation of the plain sesquilinear product, $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1)$. It is the antisymmetric sibling of the probability structure, and its job in the framework is **phase**: its values lie in the vector subspace, so it is the imaginary part of the Born pairing, and it carries the phase of an amplitude.
 
 The mathematics of the structure is owned by the group *The Biquaternioid Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
@@ -12,7 +12,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ### Basic Properties
 
-- **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}-\tilde Q^{*}\tilde P)$ is $\mathbb{R}$-bilinear, sesquilinear and **antisymmetric**; the trace form vanishes on it, its values lie in the vector subspace, and it is not alternating. Its class among the twelve structures is that of an antisymmetric sesqualgebra. Owner: *Introduction to the Antisymmetric Plain Sesqualgebra*.
+- **The operation.** The product $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1)$ is $\mathbb{R}$-bilinear, sesquilinear and **antisymmetric**; the trace form vanishes on it, its values lie in the vector subspace, and it is not alternating. Its class among the twelve structures is that of an antisymmetric sesqualgebra. Owner: *Introduction to the Antisymmetric Plain Sesqualgebra*.
 - **The absence of a unit.** The structure has no unit: $e_t$ annihilates it on both sides. Owner: *Introduction to the Antisymmetric Plain Sesqualgebra*.
 - **The algebraic norm and invertibility.** The norm of the structure, which is not zero, and the invertibility criterion of the antisymmetrised product. Owner: *Norm and Invertibility in the Antisymmetric Plain Sesqualgebra*.
 - **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -46,21 +46,21 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ## Summary
 
-The biquaternioid antisymmetric plain sesqualgebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}-\tilde Q^{*}\tilde P)$ over $\mathbb{C}$, the phase band of the framework: antisymmetric, valued in the vector subspace, without a unit, with a non-vanishing norm and with the Jacobi identity failing. It is the imaginary part of the Born pairing, it carries the relative phase of an amplitude and no current of its own, and it supplies a pairing without a symmetry algebra. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid antisymmetric plain sesqualgebra is the structure $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1)$ over $\mathbb{C}$, the phase band of the framework: antisymmetric, valued in the vector subspace, without a unit, with a non-vanishing norm and with the Jacobi identity failing. It is the imaginary part of the Born pairing, it carries the relative phase of an amplitude and no current of its own, and it supplies a pairing without a symmetry algebra. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}-\tilde Q^{*}\tilde P)$ | the antisymmetric plain sesquilinear product, $\mathrm{APS}$ |
-| $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$ | antisymmetry |
-| $\mathrm{Sc}(\tilde P\star\tilde Q)=0$ | the vanishing of the trace form |
+| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1)$ | the antisymmetric plain sesquilinear product, $\mathrm{APS}$ |
+| $\tilde Q_1\star\tilde Q_2=-\tilde Q_2\star\tilde Q_1$ | antisymmetry |
+| $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=0$ | the vanishing of the trace form |
 | $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector subspace; the values of the product |
 | the Jacobi failure | no symmetry algebra of the phase |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a state; $\tfrac12 i\vec r$ is the value of the block |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |
 | $L^{\star}_{\tilde Q_1}$, $R^{\star}_{\tilde Q_1}$ | the two one-sided phase operators; one handedness |
-| $S_{\tilde P,\tilde P^{*}}$ | the two-sided quadratic representation |
+| $S_{\tilde Q_1,\tilde Q_1^{*}}$ | the two-sided quadratic representation |
 
 ## Further Reading
 

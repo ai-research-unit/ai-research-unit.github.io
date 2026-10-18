@@ -137,14 +137,14 @@ Hence $\operatorname{span}_{\mathbb{C}}\{\alpha\}$ is a maximal totally isotropi
 
 *Proof.* Expansion in the Clifford relations: $\alpha^2=\tfrac14(E_1^2+i(E_1E_2+E_2E_1)+i^2E_2^2)=\tfrac14(-1+0+1)=0$, and likewise for the mixed anticommutator, which equals $\tfrac14(E_1^2+E_2^2)$ with the cross terms cancelling. Both were computed with zero residual.
 
-**Proposition (the complementary projectors).** The elements
+**Proposition (the complementary Hermitian idempotents).** The elements
 $$
 P = \alpha\alpha^{\dagger} = \tfrac12\bigl(1+iE_1E_2\bigr), \qquad
 N = \alpha^{\dagger}\alpha = \tfrac12\bigl(1-iE_1E_2\bigr)
 $$
 are Hermitian idempotents, $P^2=P$, $N^2=N$, $P^{\dagger}=P$, $N^{\dagger}=N$, and they are complementary, $P+N=1$. The element $iE_1E_2$ is a self-adjoint involution, $(iE_1E_2)^2=1$.
 
-*Proof.* From $(E_1E_2)^2=-1$ and $(E_1E_2)^{\dagger}=E_2^{\dagger}E_1^{\dagger}=(+E_1E_2)=-E_1E_2$; hence $iE_1E_2$ is Hermitian with square $+1$, and the two elements $\tfrac12(1\pm iE_1E_2)$ are the projectors onto its $\pm1$ eigenspaces. Idempotency was checked with zero residual.
+*Proof.* From $(E_1E_2)^2=-1$ and $(E_1E_2)^{\dagger}=E_2^{\dagger}E_1^{\dagger}=(+E_1E_2)=-E_1E_2$; hence $iE_1E_2$ is Hermitian with square $+1$, and the two elements $\tfrac12(1\pm iE_1E_2)$ are the Hermitian idempotents of its $\pm1$ eigenspaces. Idempotency was checked with zero residual.
 
 **Theorem (the minimal left ideal and its charges).** The left ideal
 $$

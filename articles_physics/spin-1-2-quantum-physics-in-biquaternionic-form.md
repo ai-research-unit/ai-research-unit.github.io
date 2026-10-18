@@ -112,10 +112,10 @@ So the map preserves the multiplication rules. The scalar imaginary $i$ maps to 
 
 Under this isomorphism, the fixed-point subspaces of the algebra acquire concrete matrix forms.
 
-**Hermitian subspace $\mathbb{M}_+$.** A general element is $\tilde{H} = h_0 e_t + i h_1 \vec e_x + i h_2 \vec e_y + i h_3 \vec e_z$ with $h_k \in \mathbb{R}$. Under the isomorphism:
+**Hermitian subspace $\mathbb{M}_+$.** A general element is $\tilde{H} = h_t e_t + i h_x \vec e_x + i h_y \vec e_y + i h_z \vec e_z$ with $h_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
-\tilde{H} \mapsto h_0 I_2 + h_1 \sigma_1 + h_2 \sigma_2 + h_3 \sigma_3.
+\tilde{H} \mapsto h_t I_2 + h_x \sigma_1 + h_y \sigma_2 + h_z \sigma_3.
 $$
 
 This is a **Hermitian $2 \times 2$ matrix**. So $\mathbb{M}_+$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
@@ -142,7 +142,7 @@ The identification of $\mathbb{M}_+$ with the observables is direct.
 
 **Statement.** The Hermitian subspace $\mathbb{M}_+$ is isomorphic, as a real vector space, to the space of observables of a spin-1/2 quantum system.
 
-**Proof.** Under the isomorphism of the previous section, an element $\tilde{H} \in \mathbb{M}_+$ with components $(h_0, h_1, h_2, h_3)$ maps to the Hermitian matrix $h_0 I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.
+**Proof.** Under the isomorphism of the previous section, an element $\tilde{H} \in \mathbb{M}_+$ with components $(h_t, h_x, h_y, h_z)$ maps to the Hermitian matrix $h_t I_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.
 
 ### Corollaries
 
@@ -150,7 +150,7 @@ The identification of $\mathbb{M}_+$ with the observables is direct.
 
 **Basis.** The four elements $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ of $\mathbb{M}_+$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.
 
-**The identity and the traceless part.** The scalar part $h_0 e_t$ maps to the identity component $h_0 I_2$, which is the "trivial" observable. The vector part $i(h_1 \vec e_x + h_2 \vec e_y + h_3 \vec e_z)$ maps to the traceless part $h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$. The trace of an element of $\mathbb{M}_+$ is $2h_0$ (twice the scalar part), which corresponds to the trace of the matrix.
+**The identity and the traceless part.** The scalar part $h_t e_t$ maps to the identity component $h_t I_2$, which is the "trivial" observable. The vector part $i(h_x \vec e_x + h_y \vec e_y + h_z \vec e_z)$ maps to the traceless part $h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$. The trace of an element of $\mathbb{M}_+$ is $2h_t$ (twice the scalar part), which corresponds to the trace of the matrix.
 
 ## The Idempotents as Pure States
 
@@ -413,7 +413,7 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ | Idempotent (pure spin state) |
-| $\tilde{H} = h_0 e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
+| $\tilde{H} = h_t e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde\Pi\tilde{H}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H})$ | Born-rule expectation value |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |

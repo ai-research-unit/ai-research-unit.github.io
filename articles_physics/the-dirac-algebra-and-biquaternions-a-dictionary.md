@@ -169,7 +169,7 @@ $$
 *The map is multiplicative.* Computing all $8\times 8$ products of the real basis $\{e_t,\vec e_x,\vec e_y,\vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ confirms
 
 $$
-\mathsf{M}_4(\tilde{P}\tilde{Q}) = \mathsf{M}_4(\tilde{P})\,\mathsf{M}_4(\tilde{Q})
+\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(\tilde{Q}_2)
 $$
 
 for every basis pair. The check is exhaustive on the basis, hence holds on all of $\mathbb{B}$.
@@ -575,7 +575,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 
 **The dictionary of even basis elements is:** $e_t \leftrightarrow I_4$, $\vec e_k \leftrightarrow$ spacelike bivectors, $i \leftrightarrow -\omega$, and $i\vec e_k \leftrightarrow$ timelike bivectors, **all with positive signs**. The single minus sits on $i$ itself and is the sign the correspondence leaves free.
 
-**Products go to products.** $\mathsf{M}_4(\tilde{P}\tilde{Q}) = \mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})$; the quaternion multiplication table becomes the multiplication table of the bivectors, and the Lorentz generators $\sigma^{\mu\nu} = \tfrac{1}{2}\gamma^\mu\gamma^\nu$ are half the corresponding biquaternions, with boosts in the imaginary-quaternion directions. Multiplication by $\omega$ is multiplication by $-i$.
+**Products go to products.** $\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\mathsf{M}_4(\tilde{Q}_2)$; the quaternion multiplication table becomes the multiplication table of the bivectors, and the Lorentz generators $\sigma^{\mu\nu} = \tfrac{1}{2}\gamma^\mu\gamma^\nu$ are half the corresponding biquaternions, with boosts in the imaginary-quaternion directions. Multiplication by $\omega$ is multiplication by $-i$.
 
 **The odd part is reached by a frame.** The generators and trivectors are not biquaternions; every vector is $\gamma^0\mathsf{M}_4(w)$ with $w \in \mathbb{M}_+$ and every trivector is $\gamma^0\mathsf{M}_4(w)$ with $w \in \mathbb{M}_-$.
 

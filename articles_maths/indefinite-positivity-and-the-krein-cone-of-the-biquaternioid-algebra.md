@@ -106,7 +106,7 @@ is an involution whose fixed set is exactly the $J$-unitary group $U_{J}(\mathbb
 
 **An isotropic element of the boundary.** $\tilde{Q}=e_t+\vec e_y$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$, on the boundary; note it is **not** in the Hermitian cone, since its matrix is not positive semidefinite, and it is not a zero divisor, since $N=2$.
 
-**A Hermitian element in both cones.** $\tilde{Q}=2e_t+i\vec e_x$: $\tilde{Q}\in\mathbb{M}_{+}$ with $N=4-1=3>0$ and scalar part $2>0$, so $\tilde{Q}\in P$ and hence in $P_{K}$; the polar decomposition of *The Unitary Group of the Biquaternion Algebra* writes it as $\tilde{U}\tilde{P}$ with both factors in their cones.
+**A Hermitian element in both cones.** $\tilde{Q}=2e_t+i\vec e_x$: $\tilde{Q}\in\mathbb{M}_{+}$ with $N=4-1=3>0$ and scalar part $2>0$, so $\tilde{Q}\in P$ and hence in $P_{K}$; the polar decomposition of *The Unitary Group of the Biquaternion Algebra* writes it as $\tilde{U}\tilde Q_5$ with both factors in their cones.
 
 **A non-convexity witness.** $\tilde Q_1=e_t+\vec e_y$ and $\tilde Q_2=-e_t+\vec e_y$ are both in $P_{K}$, but their midpoint $\vec e_y$ is not.
 

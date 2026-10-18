@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **symmetric quaternionic algebra**, written $\mathrm{SQA}$, whose product is the symmetrisation of the quaternionic product, $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$. It is the symmetric sibling of the causality structure, and its job in the framework is **coupling**: its values are central, so it weights a comparison of two material operations and cannot label an outcome.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **symmetric quaternionic algebra**, written $\mathrm{SQA}$, whose product is the symmetrisation of the quaternionic product, $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$. It is the symmetric sibling of the causality structure, and its job in the framework is **coupling**: its values are central, so it weights a comparison of two material operations and cannot label an outcome.
 
 The mathematics of the structure is owned by the group *The Biquaternioid Symmetric Quaternionic Algebra (SQA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
@@ -12,7 +12,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 ### Basic Properties
 
-- **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric algebra. Owner: *Introduction to the Symmetric Quaternionic Algebra*.
+- **The operation.** The product $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric algebra. Owner: *Introduction to the Symmetric Quaternionic Algebra*.
 - **The absence of a unit.** The structure has no unit: the two one-sided actions of $e_t$ return the natural conjugate of the argument, not the argument. Owner: *Introduction to the Symmetric Quaternionic Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure — the interval read on the square — and the invertibility criterion of the symmetrised quaternionic product. Owner: *Norm and Invertibility in the Symmetric Quaternionic Algebra*.
 - **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -23,7 +23,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the Symmetric Quaternionic Algebra*.
 - **The radical and the isotropic elements.** The radical of the central product and the isotropic elements it contains, which are the null cone read as a degeneration of a product. Owner: *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*.
-- **The quaternion form as a product.** The quaternion form $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ is the product itself read on the material side, and its values are central; the structure is therefore a pairing of two material operations into a number. Owner: *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
+- **The quaternion form as a product.** The quaternion form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu} Q_{2\mu}$ is the product itself read on the material side, and its values are central; the structure is therefore a pairing of two material operations into a number. Owner: *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
 - **The remarkable subspaces and the realification.** The restriction of the product and of its form to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Symmetric Quaternionic Algebra*, *The Realification of the Eight Derived Structures*.
 
 ### Operators
@@ -47,21 +47,21 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 ## Summary
 
-The biquaternioid symmetric quaternionic algebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ over $\mathbb{C}$, the coupling band of the framework: commutative, without a unit, with central values, with the quaternion form $\langle\cdot\rangle_{\natural}$ as its pairing and with the null cone as the radical of the product. It can weight a comparison of two material operations and cannot label an outcome; its operators are rank-one functionals, it moves no state, and it realises no spin group. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid symmetric quaternionic algebra is the structure $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ over $\mathbb{C}$, the coupling band of the framework: commutative, without a unit, with central values, with the quaternion form $\langle\cdot\rangle_{\natural}$ as its pairing and with the null cone as the radical of the product. It can weight a comparison of two material operations and cannot label an outcome; its operators are rank-one functionals, it moves no state, and it realises no spin group. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ | the symmetric quaternionic product, $\mathrm{SQA}$ |
-| $\tilde P\star\tilde Q=\tilde Q\star\tilde P$ | commutativity; the absence of a side |
-| $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ | the quaternion form; the coupling |
+| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | the symmetric quaternionic product, $\mathrm{SQA}$ |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_2\star\tilde Q_1$ | commutativity; the absence of a side |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu} Q_{2\mu}$ | the quaternion form; the coupling |
 | $\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the algebraic norm; the interval |
 | $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the isotropic elements; the radical of the product |
 | $e_t\star\tilde Q_1=\tilde Q_1^{\natural}$ | the absence of a unit |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | the centre; the line of the values |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |
-| $S_{\tilde P,\tilde P}$ | the two-sided operator; a scalar times a projection |
+| $S_{\tilde Q_1,\tilde Q_1}$ | the two-sided operator; a scalar times a projection |
 
 ## Further Reading
 

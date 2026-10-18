@@ -8,7 +8,7 @@ $$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
 $$
 
-of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$, whose two complementary central idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$. An element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$ complex, and it is the pair $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$ of its idempotent coordinates, $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$. An automorphism of the algebra is a bijective linear map preserving the multiplication and the unit; a derivation is a linear map satisfying the Leibniz rule $D(Q_{\pm,1}Q_{\pm,2})=D(Q_{\pm,1})Q_{\pm,2}+Q_{\pm,1}D(Q_{\pm,2})$. Both are structural invariants of the multiplication, and both are decided by one fact: the algebra is a direct product of two copies of the complex field, and it is not simple.
+of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$, whose two complementary central idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$. An element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$ complex, and it is the pair $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$ of its idempotent coordinates, $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$. An automorphism of the algebra is a bijective linear map preserving the multiplication and the unit; a derivation is a linear map satisfying the Leibniz rule $D(\breve Q_{1}\breve Q_{2})=D(\breve Q_{1})\breve Q_{2}+\breve Q_{1}D(\breve Q_{2})$. Both are structural invariants of the multiplication, and both are decided by one fact: the algebra is a direct product of two copies of the complex field, and it is not simple.
 
 The biquaternion algebra exhibits the opposite behaviour, and the contrast organises the article. There the algebra is simple, so every derivation is inner and the automorphisms over $\mathbb{C}$ are the inner ones, a group of complex dimension three; the reduced biquaternion algebra has no nonzero derivation at all, and its automorphism group is finite of order eight. The reduction is the whole content: an automorphism must permute the two primitive idempotents, and then acts on each complex factor by an $\mathbb{R}$-algebra automorphism, of which there are two; a derivation annihilates the idempotents, and then acts on each factor by an $\mathbb{R}$-derivation of $\mathbb{C}$, of which there are none.
 
@@ -20,9 +20,9 @@ The article owns the structure of the automorphism group, its generators in the 
 
 **Proof.** In the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$ a pair $(Q_{++},Q_{--})$ satisfies $(Q_{++},Q_{--})^{2}=(Q_{++},Q_{--})$ exactly when each coordinate is $0$ or $1$, giving the four listed elements; a primitive idempotent is a nonzero idempotent that is not the sum of two nonzero orthogonal idempotents, which excludes $1$ and leaves $\Pi_+$ and $\Pi_-$. Equivalently $Q_{++}^{2}=Q_{++}$ and $Q_{--}^{2}=Q_{--}$ in the field $\mathbb{C}$ have only the roots $0$ and $1$.
 
-**Proposition (the algebra is the direct product of its factors).** The map $\varphi(Q_\pm)=(Q_++Q_-,Q_+-Q_-)$ is an isomorphism $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\oplus\mathbb{C}$ of $\mathbb{R}$-algebras and of $\mathbb{C}$-algebras, the product being componentwise.
+**Proposition (the algebra is the direct product of its factors).** The map $\varphi(\breve Q)=(Q_++Q_-,Q_+-Q_-)$ is an isomorphism $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\oplus\mathbb{C}$ of $\mathbb{R}$-algebras and of $\mathbb{C}$-algebras, the product being componentwise.
 
-**Proof.** $\varphi$ is $\mathbb{C}$-linear and bijective, and $\varphi(Q_{\pm,1}Q_{\pm,2})=((Q_{1+}+Q_{1-})(Q_{2+}+Q_{2-}),(Q_{1+}-Q_{1-})(Q_{2+}-Q_{2-}))=\varphi(Q_{\pm,1})\varphi(Q_{\pm,2})$ by the multiplication rule $Q_{\pm,1}Q_{\pm,2}=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j$.
+**Proof.** $\varphi$ is $\mathbb{C}$-linear and bijective, and $\varphi(\breve Q_{1}\breve Q_{2})=((Q_{1+}+Q_{1-})(Q_{2+}+Q_{2-}),(Q_{1+}-Q_{1-})(Q_{2+}-Q_{2-}))=\varphi(\breve Q_{1})\varphi(\breve Q_{2})$ by the multiplication rule $\breve Q_{1}\breve Q_{2}=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j$.
 
 **Corollary (the factors).** Every element is uniquely $Q_{++}\Pi_++Q_{--}\Pi_-$, the two lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are the two minimal two-sided ideals, they annihilate each other, and the algebra is semisimple but not simple.
 
@@ -59,11 +59,11 @@ $$
 
 and $\bar{\cdot}:i\mapsto-i$, $j\mapsto j$, $ij\mapsto-ij$. The natural sign is the exchange of the two factors and the coefficient conjugation is the conjugation on both factors at once; their composite is the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.
 
-**Proof.** Reading $Q_\pm=Q_++jQ_-$ gives $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so conjugating $Q_{++}$ alone sends $Q_+$ to $\bar Q_+$ and $Q_-$ to $Q_-$, that is $i\mapsto-ij$ on the basis, while conjugating both sends $Q_+$ and $Q_-$ to their conjugates, that is $i\mapsto-i$; the exchange sends $Q_-$ to $-Q_-$, that is $j\mapsto-j$. Direct substitution into the relations $i^{2}=-1$, $j^{2}=1$, $ji=ij$ verifies that each map preserves them.
+**Proof.** Reading $\breve Q=Q_++jQ_-$ gives $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so conjugating $Q_{++}$ alone sends $Q_+$ to $\bar Q_+$ and $Q_-$ to $Q_-$, that is $i\mapsto-ij$ on the basis, while conjugating both sends $Q_+$ and $Q_-$ to their conjugates, that is $i\mapsto-i$; the exchange sends $Q_-$ to $-Q_-$, that is $j\mapsto-j$. Direct substitution into the relations $i^{2}=-1$, $j^{2}=1$, $ji=ij$ verifies that each map preserves them.
 
 **Proposition (the group of involutions inside).** The three conjugations $\bar{\cdot}$, ${}^{\natural}$ and ${}^{*}$ are automorphisms, they generate the subgroup $\{1,\bar{\cdot},{}^{\natural},{}^{*}\}\cong(\mathbb{Z}/2)^{2}$ of the automorphism group, and the flat ${}^{\flat}=-{}^{*}$ is not an automorphism.
 
-**Proof.** The coefficient conjugation is an automorphism because $\overline{Q_{\pm,1}Q_{\pm,2}}=\bar Q_{\pm,1}\bar Q_{\pm,2}$ in $\mathbb{C}\oplus\mathbb{C}$, and the natural sign is the exchange, which is an automorphism; their composite is one too, and the four maps are distinct and commute. The flat is the negative of the star, so it is not unital: ${}^{\flat}(1)=-1$.
+**Proof.** The coefficient conjugation is an automorphism because $\overline{\breve Q_{1}\breve Q_{2}}=\bar{\breve Q_{1}}\bar{\breve Q_{2}}$ in $\mathbb{C}\oplus\mathbb{C}$, and the natural sign is the exchange, which is an automorphism; their composite is one too, and the four maps are distinct and commute. The flat is the negative of the star, so it is not unital: ${}^{\flat}(1)=-1$.
 
 ## Automorphisms over $\mathbb{C}$
 
@@ -75,9 +75,9 @@ and $\bar{\cdot}:i\mapsto-i$, $j\mapsto j$, $ij\mapsto-ij$. The natural sign is 
 
 ## Inner Automorphisms and Derivations
 
-**Proposition (the inner automorphisms are trivial).** The algebra is commutative, so for every unit $P$ the conjugation $Q_\pm\mapsto P Q_\pm P^{-1}$ is the identity; every inner automorphism is the identity, and all eight automorphisms of the theorem above are outer.
+**Proposition (the inner automorphisms are trivial).** The algebra is commutative, so for every unit $P$ the conjugation $\breve Q\mapsto P \breve Q P^{-1}$ is the identity; every inner automorphism is the identity, and all eight automorphisms of the theorem above are outer.
 
-**Proof.** $P Q_\pm=Q_\pm P$ for every $Q_\pm$ because the algebra is commutative, so $P Q_\pm P^{-1}=Q_\pm$.
+**Proof.** $P \breve Q=\breve Q P$ for every $\breve Q$ because the algebra is commutative, so $P \breve Q P^{-1}=\breve Q$.
 
 **Theorem (the derivations vanish).** Every $\mathbb{R}$-derivation of $\mathbb{B}_{\mathrm{r}}$ is zero, and every $\mathbb{C}$-derivation is zero: the derivation space is $\{0\}$ over both fields.
 
@@ -115,7 +115,7 @@ The reduced biquaternion algebra is the direct product $\mathbb{C}\Pi_+\oplus\ma
 | Symbol | Meaning |
 |---|---|
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | the two primitive idempotents, the coordinates of the direct product |
-| $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ | an element in idempotent coordinates, $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ |
+| $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ | an element in idempotent coordinates, $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ |
 | $\bar{\cdot}$ | the coefficient conjugation, the conjugation of both factors |
 | ${}^{\natural}$ | the natural sign, the exchange $Q_{++}\leftrightarrow Q_{--}$ of the two factors, $Q_-\mapsto-Q_-$ |
 | ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the star, the conjugation of both coordinates |
@@ -123,7 +123,7 @@ The reduced biquaternion algebra is the direct product $\mathbb{C}\Pi_+\oplus\ma
 | $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}_{\mathrm{r}})$ | the automorphism group over $\mathbb{R}$, dihedral of order eight |
 | $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})$ | the automorphism group over $\mathbb{C}$, of order two, generated by ${}^{\natural}$ |
 | $\operatorname{Der}(\mathbb{B}_{\mathrm{r}})$ | the derivation space, $\{0\}$ over $\mathbb{R}$ and over $\mathbb{C}$ |
-| $D(Q_{\pm,1}Q_{\pm,2})=D(Q_{\pm,1})Q_{\pm,2}+Q_{\pm,1}D(Q_{\pm,2})$ | the Leibniz rule defining a derivation |
+| $D(\breve Q_{1}\breve Q_{2})=D(\breve Q_{1})\breve Q_{2}+\breve Q_{1}D(\breve Q_{2})$ | the Leibniz rule defining a derivation |
 
 ## Further Reading
 

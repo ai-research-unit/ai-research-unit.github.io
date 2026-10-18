@@ -57,7 +57,7 @@ $$
 
 the dot and cross products being the general plain bilinear ones.
 
-**Proof.** The square is the ${}^{\natural}$-image of $\overline{\tilde Q}\tilde Q$, and ${}^{\natural}$ fixes the scalar coordinate and negates the vector coordinate; hence $\mathrm{Vec}\bigl(\tilde Q\star\tilde Q\bigr) = -\mathrm{Vec}\bigl(\overline{\tilde Q}\tilde Q\bigr)$. The vector part of the plain product $\overline{\tilde Q}\tilde Q$ is $\overline{Q_t}\vec Q + Q_t\overline{\vec Q} + \overline{\vec Q}\times\vec Q$ by the scalar–vector form of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, with the first factor $\tilde P = \overline{\tilde Q}$ of scalar part $\overline{Q_t}$ and vector part $\overline{\vec Q}$.
+**Proof.** The square is the ${}^{\natural}$-image of $\overline{\tilde Q}\tilde Q$, and ${}^{\natural}$ fixes the scalar coordinate and negates the vector coordinate; hence $\mathrm{Vec}\bigl(\tilde Q\star\tilde Q\bigr) = -\mathrm{Vec}\bigl(\overline{\tilde Q}\tilde Q\bigr)$. The vector part of the plain product $\overline{\tilde Q}\tilde Q$ is $\overline{Q_t}\vec Q + Q_t\overline{\vec Q} + \overline{\vec Q}\times\vec Q$ by the scalar–vector form of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, with the first factor $\overline{\tilde Q}$ of scalar part $\overline{Q_t}$ and vector part $\overline{\vec Q}$.
 
 **Remark.** The vector part is the reason the square is not generally an element of the Hermitian subspace. The scalar part is real, being a sum of moduli with signs, but the vector part is a general complex vector and it is not the imaginary multiple of a real vector; the square can be Hermitian, as for $\tilde Q = \vec e_x + i\vec e_y$ where it is $-2e_t - 2i\vec e_z$, but it need not be, and the element $\tilde Q = e_t + \vec e_z$ is a witness: its square is $-2\vec e_z$, whose star is $+2\vec e_z$ and whose natural conjugate is $+2\vec e_z$, neither equal to the square. This is the contrast with the sibling sesquilinear product, whose square $\tilde Q\tilde Q^{*}$ is Hermitian for every element by the identity $(\tilde Q\tilde Q^{*})^{*} = \tilde Q\tilde Q^{*}$.
 
@@ -65,41 +65,41 @@ the dot and cross products being the general plain bilinear ones.
 
 ### The Square on the Hermitian Half
 
-**Proposition.** For $\tilde P \in \mathbb{M}_{+}$,
+**Proposition.** For $\tilde Q_1 \in \mathbb{M}_{+}$,
 
 $$
-\tilde P \star \tilde P = \langle\tilde P\rangle_{\natural}\, e_t ,
+\tilde Q_1 \star \tilde Q_1 = \langle\tilde Q_1\rangle_{\natural}\, e_t ,
 $$
 
 a real scalar; the square lies in the centre and is fixed by both conjugations.
 
-**Proof.** Let $\tilde P \in \mathbb{M}_{+}$, so that $\tilde P^{*} = \tilde P$ and the scalar coordinate $P_t$ is real while the vector coordinates $P_k$ are purely imaginary; then $\overline{\tilde P} = \tilde P^{\natural}$. The square is $\tilde P^{\natural}\tilde P^{*} = \tilde P^{\natural}\tilde P$, and the $\natural$-product of an element with its natural conjugate is the central scalar $\tilde P^{\natural}\tilde P = \bigl(\sum_\mu P_\mu^{2}\bigr)e_t = \langle\tilde P\rangle_{\natural}e_t$ (*Introduction to the General Quaternionic Algebra* §*The Square and the Elements It Distinguishes*).
+**Proof.** Let $\tilde Q_1 \in \mathbb{M}_{+}$, so that $\tilde Q_1^{*} = \tilde Q_1$ and the scalar coordinate $Q_{1t}$ is real while the vector coordinates $Q_{1k}$ are purely imaginary; then $\overline{\tilde Q_1} = \tilde Q_1^{\natural}$. The square is $\tilde Q_1^{\natural}\tilde Q_1^{*} = \tilde Q_1^{\natural}\tilde Q_1$, and the $\natural$-product of an element with its natural conjugate is the central scalar $\tilde Q_1^{\natural}\tilde Q_1 = \bigl(\sum_\mu Q_{1\mu}^{2}\bigr)e_t = \langle\tilde Q_1\rangle_{\natural}e_t$ (*Introduction to the General Quaternionic Algebra* §*The Square and the Elements It Distinguishes*).
 
 ### The Square on the Anti-Hermitian Half
 
-**Proposition.** For $	ilde{Q} \in \mathbb{M}_{-}$,
+**Proposition.** For $\tilde Q_2 \in \mathbb{M}_{-}$,
 
 $$
-	ilde{Q} \star 	ilde{Q} = -\langle	ilde{Q}\rangle_{\natural}\, e_t ,
+\tilde Q_2 \star \tilde Q_2 = -\langle\tilde Q_2\rangle_{\natural}\, e_t ,
 $$
 
 a real scalar; in particular the square is the negative of the central scalar of the Hermitian case.
 
-**Proof.** Let $	ilde{Q} \in \mathbb{M}_{-}$, so that $	ilde{Q}^{*} = -	ilde{Q}$ and the scalar coordinate is purely imaginary while the vector coordinates are real; then $\overline{	ilde{Q}} = -	ilde{Q}^{\natural}$. The square is $	ilde{Q}^{\natural}	ilde{Q}^{*} = -	ilde{Q}^{\natural}	ilde{Q} = -\bigl(\sum_\mu K_\mu^{2}\bigr)e_t = -\langle	ilde{Q}\rangle_{\natural}e_t$, by the same central-scalar identity.
+**Proof.** Let $\tilde Q_2 \in \mathbb{M}_{-}$, so that $\tilde Q_2^{*} = -\tilde Q_2$ and the scalar coordinate is purely imaginary while the vector coordinates are real; then $\overline{\tilde Q_2} = -\tilde Q_2^{\natural}$. The square is $\tilde Q_2^{\natural}\tilde Q_2^{*} = -\tilde Q_2^{\natural}\tilde Q_2 = -\bigl(\sum_\mu Q_{2\mu}^{2}\bigr)e_t = -\langle\tilde Q_2\rangle_{\natural}e_t$, by the same central-scalar identity.
 
 ### The Sign of the Half
 
 **Corollary.** The square on the two halves is the central scalar with the sign of the half,
 
 $$
-\tilde P \star \tilde P = \langle\tilde P\rangle_{\natural}e_t \ \ (\tilde P \in \mathbb{M}_{+}) , \qquad 	ilde{Q} \star 	ilde{Q} = -\langle	ilde{Q}\rangle_{\natural}e_t \ \ (	ilde{Q} \in \mathbb{M}_{-}) ,
+\tilde Q_1 \star \tilde Q_1 = \langle\tilde Q_1\rangle_{\natural}e_t \ \ (\tilde Q_1 \in \mathbb{M}_{+}) , \qquad \tilde Q_2 \star \tilde Q_2 = -\langle\tilde Q_2\rangle_{\natural}e_t \ \ (\tilde Q_2 \in \mathbb{M}_{-}) ,
 $$
 
 so that the multiplication reads the splitting $\mathbb{B} = \mathbb{M}_{+} \oplus \mathbb{M}_{-}$ by the sign.
 
 **Proof.** The two displays are the two propositions. The splitting is the order-two property of the involution ${}^{*}$, which is *Hermitian and Skew-Hermitian Elements*; the multiplication does not preserve the splitting, but on a multiple of a single half its square is the central scalar with the sign of that half.
 
-**Remark.** The sign is the operator-level form of the anti-fixed property of the involution. The two halves are the fixed and the anti-fixed spaces of ${}^{*}$, and the same sign that distinguishes them, $	ilde{Q}^{*} = -	ilde{Q}$ against $\tilde P^{*} = \tilde P$, appears in the square as the sign $\pm N$. The group article records the two displays as *The Product Does Not Exchange the Halves*, and they are the exact sense in which the multiplication reads the two halves while failing to preserve them: it does not keep a product of two Hermitian elements Hermitian, but it keeps a square of either half in the centre.
+**Remark.** The sign is the operator-level form of the anti-fixed property of the involution. The two halves are the fixed and the anti-fixed spaces of ${}^{*}$, and the same sign that distinguishes them, $\tilde Q_2^{*} = -\tilde Q_2$ against $\tilde Q_1^{*} = \tilde Q_1$, appears in the square as the sign $\pm N$. The group article records the two displays as *The Product Does Not Exchange the Halves*, and they are the exact sense in which the multiplication reads the two halves while failing to preserve them: it does not keep a product of two Hermitian elements Hermitian, but it keeps a square of either half in the centre.
 
 ## The Square-Zero Elements
 
@@ -218,7 +218,7 @@ the vector part being $\vec u$.
 
 ## Summary
 
-The square of the general quaternionic sesquilinear multiplication is $\tilde Q \star \tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural} = \tilde Q^{\natural}\tilde Q^{*}$, an element with scalar part $\sum_\mu\varepsilon_\mu Q_\mu\overline{Q_\mu} = \lvert Q_t\rvert^{2} - \lvert Q_x\rvert^{2} - \lvert Q_y\rvert^{2} - \lvert Q_z\rvert^{2}$, the Krein form of signature $(2,2)$, and vector part $-(\overline{Q_t}\vec Q + Q_t\overline{\vec Q} + \overline{\vec Q}\times\vec Q)$. On the two halves the square collapses to the centre with the sign of the half, $\tilde P \star \tilde P = \langle\tilde P\rangle_{\natural}e_t$ on $\mathbb{M}_{+}$ and $	ilde{Q} \star 	ilde{Q} = -\langle	ilde{Q}\rangle_{\natural}e_t$ on $\mathbb{M}_{-}$, so that the multiplication reads the Hermitian splitting by a sign although it does not preserve it. The square-zero elements are the solutions of $\overline{\tilde Q}\tilde Q = 0$; every one of them has norm $0$, since $\langle\tilde Q \star \tilde Q\rangle_{\natural} = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2}$, and the converse fails, the element $ie_t + \vec e_x + \vec e_y + i\vec e_z$ being a zero divisor whose square is nonzero while $e_t + i\vec e_x$ is square-zero. The square-zero set of the product is therefore a proper subfamily of the common zero-divisor cone, placed strictly between the empty set of the sibling sesquilinear product and the whole cone of the sibling general quaternionic bilinear product. The squares of the idempotents return the idempotents, and their plain squares are their natural conjugates. The coefficientwise conjugation is an automorphism of the multiplication, $\overline{\tilde Q_1 \star \tilde Q_2} = \overline{\tilde Q_1} \star \overline{\tilde Q_2}$, so it preserves the square-zero set and the set of idempotents and reduces the complex theory to the real one; the two other conjugations are not automorphisms of the multiplication.
+The square of the general quaternionic sesquilinear multiplication is $\tilde Q \star \tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural} = \tilde Q^{\natural}\tilde Q^{*}$, an element with scalar part $\sum_\mu\varepsilon_\mu Q_\mu\overline{Q_\mu} = \lvert Q_t\rvert^{2} - \lvert Q_x\rvert^{2} - \lvert Q_y\rvert^{2} - \lvert Q_z\rvert^{2}$, the Krein form of signature $(2,2)$, and vector part $-(\overline{Q_t}\vec Q + Q_t\overline{\vec Q} + \overline{\vec Q}\times\vec Q)$. On the two halves the square collapses to the centre with the sign of the half, $\tilde Q_1 \star \tilde Q_1 = \langle\tilde Q_1\rangle_{\natural}e_t$ on $\mathbb{M}_{+}$ and $\tilde Q_2 \star \tilde Q_2 = -\langle\tilde Q_2\rangle_{\natural}e_t$ on $\mathbb{M}_{-}$, so that the multiplication reads the Hermitian splitting by a sign although it does not preserve it. The square-zero elements are the solutions of $\overline{\tilde Q}\tilde Q = 0$; every one of them has norm $0$, since $\langle\tilde Q \star \tilde Q\rangle_{\natural} = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2}$, and the converse fails, the element $ie_t + \vec e_x + \vec e_y + i\vec e_z$ being a zero divisor whose square is nonzero while $e_t + i\vec e_x$ is square-zero. The square-zero set of the product is therefore a proper subfamily of the common zero-divisor cone, placed strictly between the empty set of the sibling sesquilinear product and the whole cone of the sibling general quaternionic bilinear product. The squares of the idempotents return the idempotents, and their plain squares are their natural conjugates. The coefficientwise conjugation is an automorphism of the multiplication, $\overline{\tilde Q_1 \star \tilde Q_2} = \overline{\tilde Q_1} \star \overline{\tilde Q_2}$, so it preserves the square-zero set and the set of idempotents and reduces the complex theory to the real one; the two other conjugations are not automorphisms of the multiplication.
 
 ## Summary of Notation
 
@@ -229,8 +229,8 @@ The square of the general quaternionic sesquilinear multiplication is $\tilde Q 
 | $\varepsilon = (1,-1,-1,-1)$ | the sign vector of the product |
 | $\kappa(\tilde Q_1,\tilde Q_2) = \sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the Krein form, the scalar part of the product |
 | $\mathrm{Vec}(\tilde Q \star \tilde Q) = -\mathrm{Vec}(\overline{\tilde Q}\tilde Q)$ | the vector part of the square |
-| $\tilde P \star \tilde P = \langle\tilde P\rangle_{\natural}e_t$ | the square on $\mathbb{M}_{+}$ |
-| $	ilde{Q} \star 	ilde{Q} = -\langle	ilde{Q}\rangle_{\natural}e_t$ | the square on $\mathbb{M}_{-}$ |
+| $\tilde Q_1 \star \tilde Q_1 = \langle\tilde Q_1\rangle_{\natural}e_t$ | the square on $\mathbb{M}_{+}$ |
+| $\tilde Q_2 \star \tilde Q_2 = -\langle\tilde Q_2\rangle_{\natural}e_t$ | the square on $\mathbb{M}_{-}$ |
 | $\tilde Q \star \tilde Q = 0 \iff \overline{\tilde Q}\tilde Q = 0$ | the square-zero criterion |
 | $\langle\tilde Q \star \tilde Q\rangle_{\natural} = \lvert \langle\tilde Q\rangle_{\natural}\rvert^{2}$ | the norm of a square |
 | $\tilde Q = ie_t + \vec e_x + \vec e_y + i\vec e_z$ | a zero divisor that is not square-zero |

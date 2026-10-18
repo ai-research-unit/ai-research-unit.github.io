@@ -47,7 +47,7 @@ $$
 
 and it preserves the degree modulo two, $(\mathrm{Cl}^k)^{\dagger}\subseteq\mathrm{Cl}^k$, so $\lvert x^{*}\rvert=\lvert x\rvert$ on homogeneous elements.
 
-*Proof.* The coefficient conjugation is a $\mathbb{C}$-antilinear automorphism that acts on the coefficients and not on the degree; the quaternion conjugation of the algebra is the reversion of the even slot, which reverses the order of the factors, so on a product $\tilde{P}\tilde{Q}$ one has $(\tilde{P}\tilde{Q})^{*}=\tilde{Q}^{*}\tilde{P}^{*}$; a product of $k$ generators is sent to a product of $k$ generators. For the odd slot this is the definition used in *The Reflection Read in the Hermitian Pairing* below.
+*Proof.* The coefficient conjugation is a $\mathbb{C}$-antilinear automorphism that acts on the coefficients and not on the degree; the quaternion conjugation of the algebra is the reversion of the even slot, which reverses the order of the factors, so on a product $\tilde{Q}_1\tilde{Q}_2$ one has $(\tilde{Q}_1\tilde{Q}_2)^{*}=\tilde{Q}_2^{*}\tilde{Q}_1^{*}$; a product of $k$ generators is sent to a product of $k$ generators. For the odd slot this is the definition used in *The Reflection Read in the Hermitian Pairing* below.
 
 **The two sectors of the corpus, in the language of the dagger.** The fixed and anti-fixed loci of the dagger are the two remarkable subspaces,
 

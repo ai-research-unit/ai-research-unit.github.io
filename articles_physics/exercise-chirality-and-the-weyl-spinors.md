@@ -233,10 +233,10 @@ $$
 where the last inclusion uses $i\mathbb{M}_+ = \mathbb{M}_-$.
 
 
-**Biquaternion norm.** Write $H = h_0e_t + i\vec h$. Then $V = ih_0e_t - \vec h$, and
+**Biquaternion norm.** Write $H = h_te_t + i\vec h$. Then $V = ih_te_t - \vec h$, and
 
 $$
-\langle V\rangle_{\natural} = \langle iH\rangle_{\natural} = -\det\mathsf{M}_2(H) = -h_0^2 + \vec h^2 ,
+\langle V\rangle_{\natural} = \langle iH\rangle_{\natural} = -\det\mathsf{M}_2(H) = -h_t^2 + \vec h^2 ,
 $$
 
 which is the $(3,1)$ Minkowski form of $\mathbb{M}_-$. Two independent checks: for $w = v$ one has $H = uu^{\dagger}$, which is rank one, so $\det H = 0$ and
@@ -332,7 +332,7 @@ because the right-handed matrix is the inverse conjugate transpose, $\mathsf{M}_
 The solutions have the expected limits.
 
 - **Rapidity limits.** As $\psi\to0$ both halves become indistinguishable, reflecting that the chiral splitting is a property of the full Lorentz group, not of its compact subgroup; for large $\psi$ the halves diverge exponentially, one component of each growing as $\exp(\psi/2)$ and the other decaying as $\exp(-\psi/2)$.
-- **$v = \pm w$ (single spinor):** $H = \pm uu^{\dagger}$ is rank one, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -h_0^2+\vec h^2$.
+- **$v = \pm w$ (single spinor):** $H = \pm uu^{\dagger}$ is rank one, so $V$ is null. For a generic pair, $V$ is timelike or spacelike according to the sign of $\langle V\rangle_{\natural} = -h_t^2+\vec h^2$.
 - **$\theta = 2\pi$ versus $4\pi$:** the spinor picks up $-1$ at $2\pi$ and returns at $4\pi$, while the four-vector is unchanged at both — the double cover in its simplest instance.
 
 ## What the Solutions Illustrate

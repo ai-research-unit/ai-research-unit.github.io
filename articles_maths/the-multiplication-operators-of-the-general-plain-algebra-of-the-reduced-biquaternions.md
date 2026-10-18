@@ -2,17 +2,17 @@
 
 ## Introduction
 
-This article reads the multiplication of the general plain algebra through its **multiplication operators**: for an element $Q_\pm$ the **left multiplication** is the map $L_{Q_\pm}:Q_{\pm,2}\mapsto Q_\pm Q_{\pm,2}$, the **right multiplication** is $R_{Q_\pm}:Q_{\pm,2}\mapsto Q_{\pm,2}Q_\pm$, and the multiplication is studied by studying the operators it produces. Because the algebra is commutative the two operators coincide, $L_{Q_\pm}=R_{Q_\pm}$, and this is the first of the article's specificities: the block has one operator per element and not two. The map $Q_\pm\mapsto L_{Q_\pm}$ is the **regular representation** of the algebra, and it is injective, so the algebra is realised as a commutative algebra of operators on itself; the image is the two-dimensional space of the $2\times2$ matrices of the form $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$, not the whole endomorphism algebra.
+This article reads the multiplication of the general plain algebra through its **multiplication operators**: for an element $\breve Q$ the **left multiplication** is the map $L_{\breve Q}:\breve Q_{2}\mapsto \breve Q \breve Q_{2}$, the **right multiplication** is $R_{\breve Q}:\breve Q_{2}\mapsto \breve Q_{2}\breve Q$, and the multiplication is studied by studying the operators it produces. Because the algebra is commutative the two operators coincide, $L_{\breve Q}=R_{\breve Q}$, and this is the first of the article's specificities: the block has one operator per element and not two. The map $\breve Q\mapsto L_{\breve Q}$ is the **regular representation** of the algebra, and it is injective, so the algebra is realised as a commutative algebra of operators on itself; the image is the two-dimensional space of the $2\times2$ matrices of the form $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$, not the whole endomorphism algebra.
 
-**The results.** In the basis $1,j$ the operator $L_{Q_\pm}$ has the matrix
+**The results.** In the basis $1,j$ the operator $L_{\breve Q}$ has the matrix
 $$
-\mathsf L(Q_\pm)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},
+\mathsf L(\breve Q)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},
 $$
 symmetric with the two equal diagonal entries $Q_+$ and the two equal off-diagonal entries $Q_-$; in the idempotent basis $\Pi_+,\Pi_-$ it is the diagonal matrix
 $$
 \operatorname{diag}\bigl(Q_++Q_-,\ Q_+-Q_-\bigr),
 $$
-with the two **eigenvalues** $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$ and the two idempotent lines as eigenspaces. Its trace is $2Q_+$, its determinant is $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$, and its characteristic polynomial is $\lambda^{2}-2Q_+\lambda+\langle Q_\pm\rangle_{\natural}$; the determinant is the norm, so $L_{Q_\pm}$ is invertible exactly when $Q_\pm$ is a unit, and $L_{Q_\pm}$ is never nilpotent for $Q_\pm\neq0$. The map $L$ is an injective algebra homomorphism, $L_{Q_{\pm,1}}L_{Q_{\pm,2}}=L_{Q_{\pm,1}Q_{\pm,2}}$, and its image is the **commutative two-dimensional subalgebra** of $M_{2}(\mathbb{C})$ of the matrices of the displayed form. The **enveloping operator algebra** acts through the left multiplications alone, $L_{Q_{\pm,1}}R_{Q_{\pm,2}}=L_{Q_{\pm,1}Q_{\pm,2}}$, so its image is that same two-dimensional space; the **derivations** of the algebra into itself are all zero, and its $\mathbb{C}$-algebra automorphisms are the two elements $\mathrm{id}$ and ${}^{\natural}$.
+with the two **eigenvalues** $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$ and the two idempotent lines as eigenspaces. Its trace is $2Q_+$, its determinant is $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$, and its characteristic polynomial is $\lambda^{2}-2Q_+\lambda+\langle \breve Q\rangle_{\natural}$; the determinant is the norm, so $L_{\breve Q}$ is invertible exactly when $\breve Q$ is a unit, and $L_{\breve Q}$ is never nilpotent for $\breve Q\neq0$. The map $L$ is an injective algebra homomorphism, $L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}$, and its image is the **commutative two-dimensional subalgebra** of $M_{2}(\mathbb{C})$ of the matrices of the displayed form. The **enveloping operator algebra** acts through the left multiplications alone, $L_{\breve Q_{1}}R_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}$, so its image is that same two-dimensional space; the **derivations** of the algebra into itself are all zero, and its $\mathbb{C}$-algebra automorphisms are the two elements $\mathrm{id}$ and ${}^{\natural}$.
 
 **Boundaries.** The multiplication and its axioms are *Introduction to the Algebra of the Reduced Biquaternions*; the criterion that the operator calculus rests on is *The Specificities of the Algebra of the Reduced Biquaternions*; the norm and the units are *Norm and Invertibility in the Algebra of the Reduced Biquaternions* and *The Group of Units of the Algebra of the Reduced Biquaternions*; the idempotent lines and the ideals are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; and the forms the operators adjoint are *The Forms of the Algebra of the Reduced Biquaternions*. The operator calculus with its adjoints and its spectrum in the non-commutative biquaternion category is *The Four General Products and Operators*; the matrix model that realises the operators as matrices is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*.
 
@@ -20,92 +20,92 @@ with the two **eigenvalues** $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$ and the two i
 
 ### The Definition and the Coincidence of the Two Operators
 
-**The left and the right multiplication of $Q_\pm$ coincide, because the algebra is commutative.**
+**The left and the right multiplication of $\breve Q$ coincide, because the algebra is commutative.**
 
-**Definition.** For $Q_\pm\in\mathbb{B}_{\mathrm{r}}$ the **left multiplication** by $Q_\pm$ is the endomorphism
+**Definition.** For $\breve Q\in\mathbb{B}_{\mathrm{r}}$ the **left multiplication** by $\breve Q$ is the endomorphism
 $$
-L_{Q_\pm}:\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}},\qquad L_{Q_\pm}(Q_{\pm,2})=Q_\pm Q_{\pm,2},
+L_{\breve Q}:\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}},\qquad L_{\breve Q}(\breve Q_{2})=\breve Q \breve Q_{2},
 $$
-and the **right multiplication** is $R_{Q_\pm}(Q_{\pm,2})=Q_{\pm,2}Q_\pm$. Both are $\mathbb{C}$-linear, because the product is $\mathbb{C}$-bilinear.
+and the **right multiplication** is $R_{\breve Q}(\breve Q_{2})=\breve Q_{2}\breve Q$. Both are $\mathbb{C}$-linear, because the product is $\mathbb{C}$-bilinear.
 
-**Proposition.** $L_{Q_\pm}=R_{Q_\pm}$ for every $Q_\pm$.
+**Proposition.** $L_{\breve Q}=R_{\breve Q}$ for every $\breve Q$.
 
-*Proof.* The multiplication is commutative, $Q_\pm Q_{\pm,2}=Q_{\pm,2}Q_\pm$ for all $Q_{\pm,2}$, so the two maps agree at every element.
+*Proof.* The multiplication is commutative, $\breve Q \breve Q_{2}=\breve Q_{2}\breve Q$ for all $\breve Q_{2}$, so the two maps agree at every element.
 
-**Corollary (the operator and the element).** An **ideal** generated by $Q_\pm$ is the image of $L_{Q_\pm}$, and the **annihilator** of $Q_\pm$ is its kernel, so the left and the right readings give one ideal and one annihilator; the ideal theory of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* is the image–kernel theory of a single operator.
+**Corollary (the operator and the element).** An **ideal** generated by $\breve Q$ is the image of $L_{\breve Q}$, and the **annihilator** of $\breve Q$ is its kernel, so the left and the right readings give one ideal and one annihilator; the ideal theory of *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* is the image–kernel theory of a single operator.
 
 ### The Matrix of the Operator
 
 **In the basis $1,j$ the operator is the symmetric matrix $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$; in the idempotent basis it is diagonal.**
 
-**Theorem (the matrix).** In the complex basis $\{1,j\}$ the matrix of $L_{Q_\pm}$ is
+**Theorem (the matrix).** In the complex basis $\{1,j\}$ the matrix of $L_{\breve Q}$ is
 $$
-\mathsf L(Q_\pm)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},
+\mathsf L(\breve Q)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},
 $$
 and in the idempotent basis $\{\Pi_+,\Pi_-\}$ it is
 $$
-\mathsf L_{\Pi}(Q_\pm)=\begin{pmatrix}Q_++Q_-&0\\ 0&Q_+-Q_-\end{pmatrix}=\operatorname{diag}(Q_{++},Q_{--}).
+\mathsf L_{\Pi}(\breve Q)=\begin{pmatrix}Q_++Q_-&0\\ 0&Q_+-Q_-\end{pmatrix}=\operatorname{diag}(Q_{++},Q_{--}).
 $$
 
-*Proof.* For the first, $L_{Q_\pm}(1)=Q_\pm=Q_++jQ_-$ has coordinates $(Q_+,Q_-)$ and $L_{Q_\pm}(j)=Q_\pm j=Q_+j+Q_-j^{2}=Q_-+Q_+j$ has coordinates $(Q_-,Q_+)$, so the two columns are $(Q_+,Q_-)$ and $(Q_-,Q_+)$. For the second, $L_{Q_\pm}(\Pi_+)=Q_\pm\Pi_+=Q_{++}\Pi_+$ and $L_{Q_\pm}(\Pi_-)=Q_\pm\Pi_-=Q_{--}\Pi_-$, so the operator is diagonal with entries $Q_{++}$ and $Q_{--}$ in the idempotent basis.
+*Proof.* For the first, $L_{\breve Q}(1)=\breve Q=Q_++jQ_-$ has coordinates $(Q_+,Q_-)$ and $L_{\breve Q}(j)=\breve Q j=Q_+j+Q_-j^{2}=Q_-+Q_+j$ has coordinates $(Q_-,Q_+)$, so the two columns are $(Q_+,Q_-)$ and $(Q_-,Q_+)$. For the second, $L_{\breve Q}(\Pi_+)=\breve Q\Pi_+=Q_{++}\Pi_+$ and $L_{\breve Q}(\Pi_-)=\breve Q\Pi_-=Q_{--}\Pi_-$, so the operator is diagonal with entries $Q_{++}$ and $Q_{--}$ in the idempotent basis.
 
-**Corollary (the eigenspaces).** The idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are the eigenspaces of $L_{Q_\pm}$, with eigenvalues $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$; in particular the operator is diagonalisable for every $Q_\pm$, and its two eigenvalues are the idempotent coordinates.
+**Corollary (the eigenspaces).** The idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are the eigenspaces of $L_{\breve Q}$, with eigenvalues $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$; in particular the operator is diagonalisable for every $\breve Q$, and its two eigenvalues are the idempotent coordinates.
 
 ### The Trace, the Determinant and the Spectrum
 
-**The trace of the operator is $2Q_+$, its determinant is the norm $\langle Q_\pm\rangle_{\natural}$, and its characteristic polynomial is $\lambda^{2}-2Q_+\lambda+\langle Q_\pm\rangle_{\natural}$.**
+**The trace of the operator is $2Q_+$, its determinant is the norm $\langle \breve Q\rangle_{\natural}$, and its characteristic polynomial is $\lambda^{2}-2Q_+\lambda+\langle \breve Q\rangle_{\natural}$.**
 
-**Theorem.** For $Q_\pm=Q_++jQ_-$,
+**Theorem.** For $\breve Q=Q_++jQ_-$,
 $$
-\operatorname{Tr}L_{Q_\pm}=2Q_+,\qquad \det L_{Q_\pm}=Q_+^{2}-Q_-^{2}=\langle Q_\pm\rangle_{\natural},\qquad \chi_{L_{Q_\pm}}(\lambda)=\lambda^{2}-2Q_+\lambda+\langle Q_\pm\rangle_{\natural}.
+\operatorname{Tr}L_{\breve Q}=2Q_+,\qquad \det L_{\breve Q}=Q_+^{2}-Q_-^{2}=\langle \breve Q\rangle_{\natural},\qquad \chi_{L_{\breve Q}}(\lambda)=\lambda^{2}-2Q_+\lambda+\langle \breve Q\rangle_{\natural}.
 $$
 
 *Proof.* Read the matrix $\operatorname{diag}(Q_{++},Q_{--})$ in the idempotent basis: the trace is $Q_{++}+Q_{--}=2Q_+$, the determinant is $Q_{++}Q_{--}=(Q_++Q_-)(Q_+-Q_-)=Q_+^{2}-Q_-^{2}$, and the characteristic polynomial is $(\lambda-Q_{++})(\lambda-Q_{--})=\lambda^{2}-(Q_{++}+Q_{--})\lambda+Q_{++}Q_{--}$.
 
-**Corollary (no nilpotent operator).** $L_{Q_\pm}$ is nilpotent if and only if $Q_\pm=0$. It is invertible if and only if $\langle Q_\pm\rangle_{\natural}\neq0$, that is if and only if $Q_\pm$ is a unit; and it is a scalar operator, $L_{Q_\pm}=Q_+\,\mathrm{id}$, if and only if $Q_-=0$, that is if and only if $Q_\pm$ is a scalar.
+**Corollary (no nilpotent operator).** $L_{\breve Q}$ is nilpotent if and only if $\breve Q=0$. It is invertible if and only if $\langle \breve Q\rangle_{\natural}\neq0$, that is if and only if $\breve Q$ is a unit; and it is a scalar operator, $L_{\breve Q}=Q_+\,\mathrm{id}$, if and only if $Q_-=0$, that is if and only if $\breve Q$ is a scalar.
 
 *Proof.* A nilpotent operator has both eigenvalues zero, $Q_{++}=Q_{--}=0$, hence $Q_+=Q_-=0$. The determinant is the product of the eigenvalues, so the operator is invertible exactly when $Q_{++}Q_{--}\neq0$, which is the criterion of *The Group of Units of the Algebra of the Reduced Biquaternions*. The operator is scalar exactly when its two eigenvalues are equal, $Q_{++}=Q_{--}$, that is $Q_-=0$.
 
 ## Composition and the Regular Representation
 
-**The map $Q_\pm\mapsto L_{Q_\pm}$ is an injective algebra homomorphism whose image is the two-dimensional commutative algebra of the matrices $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$.**
+**The map $\breve Q\mapsto L_{\breve Q}$ is an injective algebra homomorphism whose image is the two-dimensional commutative algebra of the matrices $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$.**
 
-**Theorem (the regular representation).** For all $Q_{\pm,1},Q_{\pm,2}$,
+**Theorem (the regular representation).** For all $\breve Q_{1},\breve Q_{2}$,
 $$
-L_{Q_{\pm,1}}L_{Q_{\pm,2}}=L_{Q_{\pm,1}Q_{\pm,2}}=L_{Q_{\pm,2} Q_{\pm,1}}=L_{Q_{\pm,2}}L_{Q_{\pm,1}},\qquad L_{1}=\mathrm{id},
+L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}=L_{\breve Q_{2} \breve Q_{1}}=L_{\breve Q_{2}}L_{\breve Q_{1}},\qquad L_{1}=\mathrm{id},
 $$
-and the map $L:Q_\pm\mapsto L_{Q_\pm}$ is an injective algebra homomorphism from $(\mathbb{B}_{\mathrm{r}},\cdot)$ into $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})$.
+and the map $L:\breve Q\mapsto L_{\breve Q}$ is an injective algebra homomorphism from $(\mathbb{B}_{\mathrm{r}},\cdot)$ into $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})$.
 
-*Proof.* $L_{Q_{\pm,1}}L_{Q_{\pm,2}}(Q_{\pm,3})=Q_{\pm,1}(Q_{\pm,2}Q_{\pm,3})=(Q_{\pm,1} Q_{\pm,2})Q_{\pm,3}=L_{Q_{\pm,1} Q_{\pm,2}}(Q_{\pm,3})$ by associativity, and $Q_{\pm,1} Q_{\pm,2}=Q_{\pm,2}Q_{\pm,1}$ by commutativity, which is the second equality; $L_{1}(Q_\pm)=Q_\pm$. The kernel is $\{Q_\pm:L_{Q_\pm}=0\}$, and $L_{Q_\pm}=0$ evaluated at $1$ gives $Q_\pm=0$, so $L$ is injective.
+*Proof.* $L_{\breve Q_{1}}L_{\breve Q_{2}}(\breve Q_{3})=\breve Q_{1}(\breve Q_{2}\breve Q_{3})=(\breve Q_{1} \breve Q_{2})\breve Q_{3}=L_{\breve Q_{1} \breve Q_{2}}(\breve Q_{3})$ by associativity, and $\breve Q_{1} \breve Q_{2}=\breve Q_{2}\breve Q_{1}$ by commutativity, which is the second equality; $L_{1}(\breve Q)=\breve Q$. The kernel is $\{\breve Q:L_{\breve Q}=0\}$, and $L_{\breve Q}=0$ evaluated at $1$ gives $\breve Q=0$, so $L$ is injective.
 
 **Corollary (the image).** The image of $L$ is the set of the $2\times2$ matrices of the form $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$ with $Q_+,Q_-\in\mathbb{C}$, a commutative two-dimensional subalgebra of $M_{2}(\mathbb{C})$ with the unit matrix, in which the two matrices $\left(\begin{smallmatrix}1&0\\ 0&1\end{smallmatrix}\right)$ and $\left(\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}\right)$ play the roles of $1$ and $j$. It is not the whole of $M_{2}(\mathbb{C})$, which has complex dimension four.
 
 ## The Kernel and the Invertibility
 
-**The kernel of $L_{Q_\pm}$ is the annihilator of $Q_\pm$; it is nonzero exactly when $Q_\pm$ is a zero divisor, and then it is the other idempotent line.**
+**The kernel of $L_{\breve Q}$ is the annihilator of $\breve Q$; it is nonzero exactly when $\breve Q$ is a zero divisor, and then it is the other idempotent line.**
 
-**Theorem (the kernel).** For $Q_\pm=Q_++jQ_-$:
+**Theorem (the kernel).** For $\breve Q=Q_++jQ_-$:
 
-- if $Q_\pm$ is a unit, $L_{Q_\pm}$ is an automorphism and $\ker L_{Q_\pm}=0$;
-- if $Q_\pm$ lies on the idempotent line $\mathbb{C}\Pi_+$ and $Q_\pm\neq0$, then $\ker L_{Q_\pm}=\mathbb{C}\Pi_-$;
-- if $Q_\pm$ lies on $\mathbb{C}\Pi_-$ and $Q_\pm\neq0$, then $\ker L_{Q_\pm}=\mathbb{C}\Pi_+$;
-- if $Q_\pm=0$, $\ker L_{Q_\pm}=\mathbb{B}_{\mathrm{r}}$.
+- if $\breve Q$ is a unit, $L_{\breve Q}$ is an automorphism and $\ker L_{\breve Q}=0$;
+- if $\breve Q$ lies on the idempotent line $\mathbb{C}\Pi_+$ and $\breve Q\neq0$, then $\ker L_{\breve Q}=\mathbb{C}\Pi_-$;
+- if $\breve Q$ lies on $\mathbb{C}\Pi_-$ and $\breve Q\neq0$, then $\ker L_{\breve Q}=\mathbb{C}\Pi_+$;
+- if $\breve Q=0$, $\ker L_{\breve Q}=\mathbb{B}_{\mathrm{r}}$.
 
-*Proof.* The kernel is the set of $Q_{\pm,2}$ with $Q_\pm Q_{\pm,2}=0$, the annihilator of $Q_\pm$, computed in *Annihilators of the Algebra of the Reduced Biquaternions*. For $Q_\pm=Q_{++}\Pi_+$ with $Q_{++}\neq0$ the annihilator is $\mathbb{C}\Pi_-$, and symmetrically; for a unit the annihilator is $0$; for $Q_\pm=0$ it is everything.
+*Proof.* The kernel is the set of $\breve Q_{2}$ with $\breve Q \breve Q_{2}=0$, the annihilator of $\breve Q$, computed in *Annihilators of the Algebra of the Reduced Biquaternions*. For $\breve Q=Q_{++}\Pi_+$ with $Q_{++}\neq0$ the annihilator is $\mathbb{C}\Pi_-$, and symmetrically; for a unit the annihilator is $0$; for $\breve Q=0$ it is everything.
 
 ## The Bi-module Structure and the Enveloping Algebra
 
 **The algebra is a bi-module over itself through the two multiplications, but they coincide, so every sandwich operator is a left multiplication and the enveloping algebra is two-dimensional.**
 
-**Definition.** The **enveloping operator algebra** is generated by the left and the right multiplications, $\mathbb{B}_{\mathrm{r}}^{\mathrm e}=\mathbb{B}_{\mathrm{r}}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{r}}^{\mathrm{opp}}$, acting on $\mathbb{B}_{\mathrm{r}}$ by the sandwich $(Q_{\pm,1}\otimes Q_{\pm,2}^{\mathrm{opp}})\cdot Q_{\pm,3}=Q_{\pm,1} Q_{\pm,3} Q_{\pm,2}$.
+**Definition.** The **enveloping operator algebra** is generated by the left and the right multiplications, $\mathbb{B}_{\mathrm{r}}^{\mathrm e}=\mathbb{B}_{\mathrm{r}}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{r}}^{\mathrm{opp}}$, acting on $\mathbb{B}_{\mathrm{r}}$ by the sandwich $(\breve Q_{1}\otimes \breve Q_{2}^{\mathrm{opp}})\cdot \breve Q_{3}=\breve Q_{1} \breve Q_{3} \breve Q_{2}$.
 
 **Theorem (the sandwich).** Because the algebra is commutative,
 $$
-(Q_{\pm,1}\otimes Q_{\pm,2}^{\mathrm{opp}})\cdot Q_{\pm,3}=Q_{\pm,1} Q_{\pm,2}\,Q_{\pm,3}=L_{Q_{\pm,1} Q_{\pm,2}}(Q_{\pm,3}),
+(\breve Q_{1}\otimes \breve Q_{2}^{\mathrm{opp}})\cdot \breve Q_{3}=\breve Q_{1} \breve Q_{2}\,\breve Q_{3}=L_{\breve Q_{1} \breve Q_{2}}(\breve Q_{3}),
 $$
-so the sandwich operator of $Q_{\pm,1}\otimes Q_{\pm,2}^{\mathrm{opp}}$ is the left multiplication by $Q_{\pm,1} Q_{\pm,2}$, and the image of $\mathbb{B}_{\mathrm{r}}^{\mathrm e}$ in $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})$ is the two-dimensional space $\{L_{Q_\pm}:Q_\pm\in\mathbb{B}_{\mathrm{r}}\}$ of §*Composition and the Regular Representation*.
+so the sandwich operator of $\breve Q_{1}\otimes \breve Q_{2}^{\mathrm{opp}}$ is the left multiplication by $\breve Q_{1} \breve Q_{2}$, and the image of $\mathbb{B}_{\mathrm{r}}^{\mathrm e}$ in $\mathrm{End}_{\mathbb{C}}(\mathbb{B}_{\mathrm{r}})$ is the two-dimensional space $\{L_{\breve Q}:\breve Q\in\mathbb{B}_{\mathrm{r}}\}$ of §*Composition and the Regular Representation*.
 
-*Proof.* Commutativity gives $Q_{\pm,1} Q_{\pm,3}Q_{\pm,2}=Q_{\pm,3}(Q_{\pm,1} Q_{\pm,2})=(Q_{\pm,1} Q_{\pm,2})Q_{\pm,3}$, which is the displayed identity; the image is the set of all $L_{Q_\pm}$ because $Q_{\pm,1}$ and $Q_{\pm,2}$ range over the algebra.
+*Proof.* Commutativity gives $\breve Q_{1} \breve Q_{3}\breve Q_{2}=\breve Q_{3}(\breve Q_{1} \breve Q_{2})=(\breve Q_{1} \breve Q_{2})\breve Q_{3}$, which is the displayed identity; the image is the set of all $L_{\breve Q}$ because $\breve Q_{1}$ and $\breve Q_{2}$ range over the algebra.
 
 **Remark (the contrast with the biquaternion block).** In the biquaternion category the enveloping algebra acts faithfully and exhausts the endomorphisms, $\mathbb{B}^{\mathrm e}\cong\mathrm{End}_{\mathbb{C}}(\mathbb{B})\cong M_{4}(\mathbb{C})$; here the commutative product collapses the sandwich to a left multiplication, and the image has complex dimension two against the four of $\mathrm{End}_{\mathbb{C}}$. The collapsing is the operator reading of the central idempotents: a sandwich can move an element on both sides, but a central element acts the same way on both sides, so the two-sided action carries no more information than the one-sided one.
 
@@ -113,13 +113,13 @@ so the sandwich operator of $Q_{\pm,1}\otimes Q_{\pm,2}^{\mathrm{opp}}$ is the l
 
 **The algebra has no nonzero derivation, and its $\mathbb{C}$-algebra automorphisms are the two maps $\mathrm{id}$ and ${}^{\natural}$.**
 
-**Definition.** A **derivation** of the algebra is a $\mathbb{C}$-linear map $D$ with the Leibniz rule $D(Q_{\pm,1} Q_{\pm,2})=D(Q_{\pm,1})Q_{\pm,2}+Q_{\pm,1}D(Q_{\pm,2})$; it is **inner** when $D=\mathrm{ad}_{Q_{\pm,2}}:Q_{\pm,1}\mapsto Q_{\pm,2}Q_{\pm,1}-Q_{\pm,1} Q_{\pm,2}$ for some $Q_{\pm,2}$.
+**Definition.** A **derivation** of the algebra is a $\mathbb{C}$-linear map $D$ with the Leibniz rule $D(\breve Q_{1} \breve Q_{2})=D(\breve Q_{1})\breve Q_{2}+\breve Q_{1}D(\breve Q_{2})$; it is **inner** when $D=\mathrm{ad}_{\breve Q_{2}}:\breve Q_{1}\mapsto \breve Q_{2}\breve Q_{1}-\breve Q_{1} \breve Q_{2}$ for some $\breve Q_{2}$.
 
 **Theorem (no derivations).** Every derivation of $\mathbb{B}_{\mathrm{r}}$ into itself is zero.
 
 *Proof.* A derivation satisfies $D(1)=D(1\cdot1)=2D(1)$, so $D(1)=0$. Evaluating on the idempotents, $D(\Pi_\pm)=D(\Pi_\pm^{2})=2\Pi_\pm D(\Pi_\pm)$, so $(2\Pi_\pm-1)D(\Pi_\pm)=0$; but $2\Pi_\pm-1=\pm j$, a unit, so $D(\Pi_\pm)=0$. A derivation vanishing on the spanning set $1,\Pi_+,\Pi_-$ is zero.
 
-**Corollary (no inner derivations).** Because the algebra is commutative every inner derivation vanishes, $\mathrm{ad}_{Q_{\pm,2}}(Q_{\pm,1})=Q_{\pm,2}Q_{\pm,1}-Q_{\pm,1} Q_{\pm,2}=0$; the identification of $\mathrm{ad}$ with the zero map is the whole of the derivation algebra, and the theorem shows there is nothing else either.
+**Corollary (no inner derivations).** Because the algebra is commutative every inner derivation vanishes, $\mathrm{ad}_{\breve Q_{2}}(\breve Q_{1})=\breve Q_{2}\breve Q_{1}-\breve Q_{1} \breve Q_{2}=0$; the identification of $\mathrm{ad}$ with the zero map is the whole of the derivation algebra, and the theorem shows there is nothing else either.
 
 **Theorem (the automorphisms).** The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}_{\mathrm{r}}$ are the two maps
 $$
@@ -133,20 +133,20 @@ so $\operatorname{Aut}(\mathbb{B}_{\mathrm{r}})\cong\mathbb{Z}_{2}$.
 
 **The conformal group of the general plain bilinear form $\langle\cdot,\cdot\rangle$ is the union of the two lines of the natural sign, isomorphic to $\mathbb{C}^{\times}\times\mathbb{Z}_{2}$.**
 
-**Definition.** The **structure group** (conformal group) of a form $g$ is the set of invertible $Q_{\pm,1}$ for which there is a scalar $\lambda(Q_{\pm,1})$ with
+**Definition.** The **structure group** (conformal group) of a form $g$ is the set of invertible $\breve Q_{1}$ for which there is a scalar $\lambda(\breve Q_{1})$ with
 $$
-g(Q_{\pm,1}Q_{\pm,2},Q_{\pm,1}Q_{\pm,3})=\lambda(Q_{\pm,1})\,g(Q_{\pm,2},Q_{\pm,3})\qquad\text{for all }Q_{\pm,2},Q_{\pm,3} .
+g(\breve Q_{1}\breve Q_{2},\breve Q_{1}\breve Q_{3})=\lambda(\breve Q_{1})\,g(\breve Q_{2},\breve Q_{3})\qquad\text{for all }\breve Q_{2},\breve Q_{3} .
 $$
 
 **Theorem.** For the general plain bilinear form $\langle\cdot,\cdot\rangle$ the structure group is
 $$
-\{Q_{\pm,1}:B(Q_{\pm,1} Q_{\pm,2},Q_{\pm,1} Q_{\pm,3})=\lambda B(Q_{\pm,2},Q_{\pm,3})\}=\mathbb{C}^{\times}\!\cdot 1\ \cup\ \mathbb{C}^{\times}\!\cdot j,
+\{\breve Q_{1}:B(\breve Q_{1} \breve Q_{2},\breve Q_{1} \breve Q_{3})=\lambda B(\breve Q_{2},\breve Q_{3})\}=\mathbb{C}^{\times}\!\cdot 1\ \cup\ \mathbb{C}^{\times}\!\cdot j,
 $$
 the nonzero elements of the scalar line and of the $j$-line, with $\lambda=Q_+^{2}$ on the scalar line and $\lambda=Q_-^{2}$ on the $j$-line; as a group it is $\mathbb{C}^{\times}\times\mathbb{Z}_{2}$.
 
-*Proof.* In the basis $1,j$ the form $\langle\cdot,\cdot\rangle$ has Gram matrix $\mathrm I_{2}$ and the operator $L_{Q_\pm}$ has matrix $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$, so $B(Q_{\pm,1} Q_{\pm,2},Q_{\pm,1} Q_{\pm,3})=Q_{\pm,2}^{\mathsf t}\,\mathsf L(Q_{\pm,1})^{\mathsf t}\mathsf L(Q_{\pm,1})\,Q_{\pm,3}$ with
+*Proof.* In the basis $1,j$ the form $\langle\cdot,\cdot\rangle$ has Gram matrix $\mathrm I_{2}$ and the operator $L_{\breve Q}$ has matrix $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$, so $B(\breve Q_{1} \breve Q_{2},\breve Q_{1} \breve Q_{3})=\breve Q_{2}^{\mathsf t}\,\mathsf L(\breve Q_{1})^{\mathsf t}\mathsf L(\breve Q_{1})\,\breve Q_{3}$ with
 $$
-\mathsf L(Q_{\pm,1})^{\mathsf t}\mathsf L(Q_{\pm,1})=\begin{pmatrix}Q_+^{2}+Q_-^{2}&2Q_+Q_-\\ 2Q_+Q_-&Q_+^{2}+Q_-^{2}\end{pmatrix}.
+\mathsf L(\breve Q_{1})^{\mathsf t}\mathsf L(\breve Q_{1})=\begin{pmatrix}Q_+^{2}+Q_-^{2}&2Q_+Q_-\\ 2Q_+Q_-&Q_+^{2}+Q_-^{2}\end{pmatrix}.
 $$
 This is a scalar multiple of $\mathrm I_{2}$ exactly when $Q_+Q_-=0$, that is $Q_+=0$ or $Q_-=0$; then $\lambda=Q_-^{2}$ on the $j$-line and $\lambda=Q_+^{2}$ on the scalar line. The set is closed under the product and under inversion, with group law $\mathbb{C}^{\times}\times\mathbb{Z}_{2}$: the product of two elements of the scalar line stays there, the product of one of each line lies on the $j$-line, and the product of two elements of the $j$-line lies on the scalar line.
 
@@ -154,28 +154,28 @@ This is a scalar multiple of $\mathrm I_{2}$ exactly when $Q_+Q_-=0$, that is $Q
 
 ## Worked Examples
 
-**The operator of a generic element.** For $Q_\pm=2+3j$ the matrix in the basis $1,j$ is $\left(\begin{smallmatrix}2&3\\ 3&2\end{smallmatrix}\right)$, with trace $4$, determinant $4-9=-5=\langle Q_\pm\rangle_{\natural}$ and eigenvalues $5$ and $-1$ on the lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$. The element is a unit because $-5\neq0$, and the operator is invertible.
+**The operator of a generic element.** For $\breve Q=2+3j$ the matrix in the basis $1,j$ is $\left(\begin{smallmatrix}2&3\\ 3&2\end{smallmatrix}\right)$, with trace $4$, determinant $4-9=-5=\langle \breve Q\rangle_{\natural}$ and eigenvalues $5$ and $-1$ on the lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$. The element is a unit because $-5\neq0$, and the operator is invertible.
 
-**The operator of an idempotent.** For $Q_\pm=\Pi_+$ the matrix is $\left(\begin{smallmatrix}1/2&1/2\\ 1/2&1/2\end{smallmatrix}\right)$, of trace $1$, determinant $0$ and eigenvalues $1$ and $0$; its image is the line $\mathbb{C}\Pi_+$ and its kernel the line $\mathbb{C}\Pi_-$, the reading of the zero divisor.
+**The operator of an idempotent.** For $\breve Q=\Pi_+$ the matrix is $\left(\begin{smallmatrix}1/2&1/2\\ 1/2&1/2\end{smallmatrix}\right)$, of trace $1$, determinant $0$ and eigenvalues $1$ and $0$; its image is the line $\mathbb{C}\Pi_+$ and its kernel the line $\mathbb{C}\Pi_-$, the reading of the zero divisor.
 
-**The operator of $j$.** For $Q_\pm=j$ the matrix is $\left(\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}\right)$, an involution of trace $0$ and determinant $-1=\langle j\rangle_{\natural}$; it swaps the two scalar coordinates, and its eigenvectors are $\Pi_+$ and $\Pi_-$ with eigenvalues $+1$ and $-1$. It is the conformal operator of the $j$-line of the structure group.
+**The operator of $j$.** For $\breve Q=j$ the matrix is $\left(\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}\right)$, an involution of trace $0$ and determinant $-1=\langle j\rangle_{\natural}$; it swaps the two scalar coordinates, and its eigenvectors are $\Pi_+$ and $\Pi_-$ with eigenvalues $+1$ and $-1$. It is the conformal operator of the $j$-line of the structure group.
 
 ## Summary
 
-For an element $Q_\pm=Q_++jQ_-$ the left and the right multiplications coincide, $L_{Q_\pm}=R_{Q_\pm}$, and in the basis $1,j$ the operator is the symmetric matrix $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$, diagonal $\operatorname{diag}(Q_++Q_-,Q_+-Q_-)$ in the idempotent basis. Its trace is $2Q_+$, its determinant is the norm $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$, and its eigenvalues are the idempotent coordinates on the two idempotent lines; it is invertible exactly when $Q_\pm$ is a unit, nilpotent only for $Q_\pm=0$, and scalar only for $Q_-=0$. The regular representation $Q_\pm\mapsto L_{Q_\pm}$ is an injective algebra homomorphism onto the two-dimensional commutative subalgebra of $M_{2}(\mathbb{C})$ of those matrices, which is not the whole endomorphism algebra. The kernel of $L_{Q_\pm}$ is the annihilator of $Q_\pm$: $0$ for a unit, the other idempotent line for a nonzero element of a line, everything for $0$. The enveloping operator algebra acts through the left multiplications alone, $L_{Q_{\pm,1}}R_{Q_{\pm,2}}=L_{Q_{\pm,1}Q_{\pm,2}}$, so its image is the same two-dimensional space and the sandwich carries no more than one-sided multiplication; the contrast with the biquaternion $\mathbb{B}^{\mathrm e}\cong M_{4}(\mathbb{C})$ is the collapse produced by the central idempotents. The algebra has no nonzero derivation, inner or otherwise, and its $\mathbb{C}$-algebra automorphisms are $\mathrm{id}$ and the natural sign, a group $\mathbb{Z}_{2}$. The structure group of the general plain bilinear form is the union of the two lines of the natural sign, $\mathbb{C}^{\times}\times\mathbb{Z}_{2}$.
+For an element $\breve Q=Q_++jQ_-$ the left and the right multiplications coincide, $L_{\breve Q}=R_{\breve Q}$, and in the basis $1,j$ the operator is the symmetric matrix $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$, diagonal $\operatorname{diag}(Q_++Q_-,Q_+-Q_-)$ in the idempotent basis. Its trace is $2Q_+$, its determinant is the norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$, and its eigenvalues are the idempotent coordinates on the two idempotent lines; it is invertible exactly when $\breve Q$ is a unit, nilpotent only for $\breve Q=0$, and scalar only for $Q_-=0$. The regular representation $\breve Q\mapsto L_{\breve Q}$ is an injective algebra homomorphism onto the two-dimensional commutative subalgebra of $M_{2}(\mathbb{C})$ of those matrices, which is not the whole endomorphism algebra. The kernel of $L_{\breve Q}$ is the annihilator of $\breve Q$: $0$ for a unit, the other idempotent line for a nonzero element of a line, everything for $0$. The enveloping operator algebra acts through the left multiplications alone, $L_{\breve Q_{1}}R_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}$, so its image is the same two-dimensional space and the sandwich carries no more than one-sided multiplication; the contrast with the biquaternion $\mathbb{B}^{\mathrm e}\cong M_{4}(\mathbb{C})$ is the collapse produced by the central idempotents. The algebra has no nonzero derivation, inner or otherwise, and its $\mathbb{C}$-algebra automorphisms are $\mathrm{id}$ and the natural sign, a group $\mathbb{Z}_{2}$. The structure group of the general plain bilinear form is the union of the two lines of the natural sign, $\mathbb{C}^{\times}\times\mathbb{Z}_{2}$.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $L_{Q_\pm}(Q_{\pm,2})=Q_\pm Q_{\pm,2}$ | the left multiplication by $Q_\pm$ |
-| $R_{Q_\pm}(Q_{\pm,2})=Q_{\pm,2}Q_\pm$ | the right multiplication by $Q_\pm$, equal to $L_{Q_\pm}$ |
-| $\mathsf L(Q_\pm)=\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$ | the matrix of $L_{Q_\pm}$ in the basis $1,j$ |
-| $\operatorname{diag}(Q_++Q_-,Q_+-Q_-)$ | the matrix of $L_{Q_\pm}$ in the idempotent basis |
-| $2Q_+,\ Q_+^{2}-Q_-^{2}=\langle Q_\pm\rangle_{\natural}$ | the trace and the determinant of $L_{Q_\pm}$ |
-| $L_{Q_{\pm,1}}L_{Q_{\pm,2}}=L_{Q_{\pm,1}Q_{\pm,2}}$ | the regular representation, multiplicative and injective |
+| $L_{\breve Q}(\breve Q_{2})=\breve Q \breve Q_{2}$ | the left multiplication by $\breve Q$ |
+| $R_{\breve Q}(\breve Q_{2})=\breve Q_{2}\breve Q$ | the right multiplication by $\breve Q$, equal to $L_{\breve Q}$ |
+| $\mathsf L(\breve Q)=\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$ | the matrix of $L_{\breve Q}$ in the basis $1,j$ |
+| $\operatorname{diag}(Q_++Q_-,Q_+-Q_-)$ | the matrix of $L_{\breve Q}$ in the idempotent basis |
+| $2Q_+,\ Q_+^{2}-Q_-^{2}=\langle \breve Q\rangle_{\natural}$ | the trace and the determinant of $L_{\breve Q}$ |
+| $L_{\breve Q_{1}}L_{\breve Q_{2}}=L_{\breve Q_{1}\breve Q_{2}}$ | the regular representation, multiplicative and injective |
 | $\mathbb{B}_{\mathrm{r}}^{\mathrm e}$ | the enveloping operator algebra |
-| $\mathrm{ad}_{Q_\pm}=0$ | the vanishing of every inner derivation |
+| $\mathrm{ad}_{\breve Q}=0$ | the vanishing of every inner derivation |
 | $\operatorname{Aut}(\mathbb{B}_{\mathrm{r}})=\{\mathrm{id},{}^{\natural}\}$ | the automorphism group, $\mathbb{Z}_{2}$ |
 | $\mathbb{C}^{\times}\!\cdot1\cup\mathbb{C}^{\times}\!\cdot j$ | the structure group of $B$ |
 

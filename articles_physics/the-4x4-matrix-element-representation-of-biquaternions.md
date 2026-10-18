@@ -668,7 +668,7 @@ onto the identity component $SO^+(1,3)$ of the orthogonal group of the interval,
 
 ## Physical Readings
 
-The regular matrix reads as the algebra acting on itself, and its interpretation is a process: the Cayley matrix is left multiplication in coordinates, so the matrix is a transformation and not a state. Read on the two matrices, the left and the right regular matrices are the actions of the two ledgers, and the false transpose identity the article refutes is the warning that the two ledgers are not related by transposition. Read on the monoid, the multiplicativity $C_{\tilde P}C_{\tilde Q_1} = C_{\tilde P\tilde Q_1}$ is why a composition of processes is a product of matrices (*The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*).
+The regular matrix reads as the algebra acting on itself, and its interpretation is a process: the Cayley matrix is left multiplication in coordinates, so the matrix is a transformation and not a state. Read on the two matrices, the left and the right regular matrices are the actions of the two ledgers, and the false transpose identity the article refutes is the warning that the two ledgers are not related by transposition. Read on the monoid, the multiplicativity $C_{\tilde Q_2}C_{\tilde Q_1} = C_{\tilde Q_2\tilde Q_1}$ is why a composition of processes is a product of matrices (*The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*).
 
 ## Summary
 

@@ -19,7 +19,7 @@ The article closes by separating what the framework contains from what remains a
 The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{M}_- = \{iq_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_t,q_x,q_y,q_z)$, and the bilinear (polar) form on it is
 
 $$
-\langle \tilde Q, \tilde P\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q\tilde P^{\natural}\big) \;=\; -q_tp_t + q_xp_x + q_yp_y + q_zp_z ,
+\langle \tilde Q_1, \tilde Q_2\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q_1\tilde Q_2^{\natural}\big) \;=\; -q_{1t}q_{2t} + q_{1x}q_{2x} + q_{1y}q_{2y} + q_{1z}q_{2z} ,
 $$
 
 of signature $(3,1)$ in the read list's counting — three positive directions and one negative. The matrix realization is the $\mathbb{C}$-algebra isomorphism
@@ -29,7 +29,7 @@ $$
 \mathsf{M}_2(e_t) = I_2, \quad \mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu, \quad \mathsf{M}_2(i) = iI_2,
 $$
 
-so that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+so that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2) = 2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## Conventions: Signature and the Tetrad Normalization
 
@@ -101,7 +101,7 @@ $$
 
 The two real null directions are the two primitive idempotents, and the complex pair is the off-diagonal pair. The tetrad is the Peirce decomposition of the algebra read as a null frame: the "physical" content of the tetrad — two real null directions — is exactly the idempotent content of $\mathbb{B}$.
 
-The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q,\tilde P\rangle_{\natural} = \mathrm{Sc}(\tilde Q\tilde P^{\natural})$. Because $\bar{\tilde\Pi}_2 = \tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$,
+The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q_1,\tilde Q_2\rangle_{\natural} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. Because $\bar{\tilde\Pi}_2 = \tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$,
 
 $$
 \langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Pi_1\,\bar{\tilde\Pi}_2) = -2\,\mathrm{Sc}(\tilde\Pi_1^2) = -1 ,
@@ -331,7 +331,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\mathbb{H}_{\mathbb{B}}$ | real-quaternion subspace |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
-| $\langle\tilde Q,\tilde P\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$ | the general quaternionic bilinear form on $\mathbb{M}_-$, the interval, of signature $(3,1)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ | the general quaternionic bilinear form on $\mathbb{M}_-$, the interval, of signature $(3,1)$ |
 | $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{Sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |

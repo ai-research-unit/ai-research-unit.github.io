@@ -59,15 +59,15 @@ the Bloch ball of radius one.
 A general observable of the informational sector is an element
 
 $$
-\tilde{H}=h_0 e_t+i\,\vec h,\qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
+\tilde{H}=h_t e_t+i\,\vec h,\qquad h_t\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-of the same subspace $\mathbb{M}_+$. The state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ is a particular case: an observable with $h_0=\tfrac12$ and $\vec h=\tfrac12\vec r$, positive and of trace one. **States are positive trace-one observables.** The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and trace, imposed on elements of one four-dimensional real space.
+of the same subspace $\mathbb{M}_+$. The state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ is a particular case: an observable with $h_t=\tfrac12$ and $\vec h=\tfrac12\vec r$, positive and of trace one. **States are positive trace-one observables.** The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and trace, imposed on elements of one four-dimensional real space.
 
 Two facts make the cohabitation exact. First, the trace pairing
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_0+\vec r\cdot\vec h
+\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_t+\vec r\cdot\vec h
 $$
 
 is a positive-definite symmetric form on $\mathbb{M}_+$, with Gram matrix diagonal in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; up to the normalization $\mathrm{Tr}(e_t)=2$ it is the Euclidean pairing. Second — and this is the point for the ontology — because the pairing is positive definite, the map
@@ -78,10 +78,10 @@ $$
 
 is injective: an element of $\mathbb{M}_+$ is determined by its pairings with observables. So the state, regarded as a functional on observables, is an element of the very space on which it is a functional; $\mathbb{M}_+$ is its own dual under the trace pairing, and there is no second space in which the state lives.
 
-That the state is a *positive* functional is part of the same structure. If $\tilde{H}\geq0$, meaning $h_0\geq|\vec h|$, then
+That the state is a *positive* functional is part of the same structure. If $\tilde{H}\geq0$, meaning $h_t\geq|\vec h|$, then
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_0+\vec r\cdot\vec h\ \geq\ |\vec h|-|\vec r|\,|\vec h|=\left(1-|\vec r|\right)|\vec h|\ \geq\ 0 .
+\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_t+\vec r\cdot\vec h\ \geq\ |\vec h|-|\vec r|\,|\vec h|=\left(1-|\vec r|\right)|\vec h|\ \geq\ 0 .
 $$
 
 Positivity of the functional is thus not an extra postulate; it is the positivity condition $|\vec r|\leq1$ of the state seen from the dual side.
@@ -168,7 +168,7 @@ We can now separate what the algebra settles from what it leaves to interpretati
 
 ## The Informational-Sector Hypothesis and the Ontology of the State
 
-The framework's own interpretive hypothesis is stated in *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*: that $\mathbb{M}_+$ is not only a mathematical structure but an **informational sector** of the world, physically realised as the material sector $\mathbb{M}_-$ is. That article is explicit that the algebraic identification of $\mathbb{M}_+$ with the operator algebra of a qubit is established, while the physical realisation is a hypothesis.
+The framework's own interpretive hypothesis is stated in *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*: that $\mathbb{M}_+$ is not only a mathematical structure but an **informational sector** of the world, physically realised as the material sector $\mathbb{M}_-$ is. That article is explicit that the algebraic identification of $\mathbb{M}_+$ with the observables of a qubit is established, while the physical realisation is a hypothesis.
 
 Granting the hypothesis, the ontology of the state follows in one step. If $\mathbb{M}_+$ is a physical sector, then its elements are physical; a state, being a positive trace-one element, is a physical element of that sector; the Bloch ball is a physical convex body; and the interpretations above are interpretations of a physical object. This is a **sectorial realism** about the state: the state is real, but its reality is the reality of the sector, not a separate postulate. Denying the hypothesis, the state is a mathematical element of a reformulation of quantum physics — real only as mathematics — and the interpretations above are interpretations of a formalism.
 
@@ -195,7 +195,7 @@ $$
 \tilde{Ϛ}=\tfrac12\left(e_t+i\vec r\right),\qquad |\vec r|\leq1 ,
 $$
 
-equivalently a point of the Bloch ball, equivalently a trace-one element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at trace one; its mixedness is the single scalar $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and trace normalization; the trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_0+\vec r\cdot\vec h$ makes the state a positive normalized functional on that space, and its positive definiteness makes the space its own dual. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
+equivalently a point of the Bloch ball, equivalently a trace-one element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at trace one; its mixedness is the single scalar $\tilde{Ϛ}^2-\tilde{Ϛ}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and trace normalization; the trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_t+\vec r\cdot\vec h$ makes the state a positive normalized functional on that space, and its positive definiteness makes the space its own dual. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
 
 Two negative facts bound the ontology. The element is **provenance-blind** — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries **no outcome index**, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out.
 
@@ -213,12 +213,12 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar centre |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State, $|\vec r|\leq1$ (Bloch ball) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure state (Hermitian idempotent, rank one, zero divisor) |
-| $\tilde{H} = h_0e_t + i\vec h$ | Observable (general Hermitian element) |
+| $\tilde{H} = h_te_t + i\vec h$ | Observable (general Hermitian element) |
 | $\langle\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow N\geq0$ |
 | $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace |
-| $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h$ | Trace pairing (Born rule); positive definite |
+| $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_t + \vec r\cdot\vec h$ | Trace pairing (Born rule); positive definite |
 | $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde{Ϛ}$ |
 | $\vec u, \vec u, \vec u_h, \vec u_r$ | Unit pure real quaternions (directions) |
 | ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |

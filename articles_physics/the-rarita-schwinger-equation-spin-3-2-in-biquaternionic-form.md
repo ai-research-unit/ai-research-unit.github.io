@@ -141,7 +141,7 @@ $$
 \gamma^\mu = \gamma^0\,\mathsf{M}_4(e^\mu), \qquad e^0 = e_t, \qquad e^k = i \vec e_k ,
 $$
 
-with $\mathsf{M}_4$ the dictionary's map onto the even Clifford algebra; equivalently, a four-vector contracted with the generators is the fixed frame times the image of the corresponding element of the **informational** sector $\mathbb{M}_+$, whose basis is $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$. Products of generators are governed by the dictionary's multiplicativity, $\mathsf{M}_4(\tilde{P}\tilde{Q}) = \mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})$, together with one sign that the frame introduces: the images of $e_t$ and of the three $\vec e_k$ commute with $\gamma^0$, while the images of the three $i\vec e_k$ anticommute with it. Hence
+with $\mathsf{M}_4$ the dictionary's map onto the even Clifford algebra; equivalently, a four-vector contracted with the generators is the fixed frame times the image of the corresponding element of the **informational** sector $\mathbb{M}_+$, whose basis is $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$. Products of generators are governed by the dictionary's multiplicativity, $\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\mathsf{M}_4(\tilde{Q}_2)$, together with one sign that the frame introduces: the images of $e_t$ and of the three $\vec e_k$ commute with $\gamma^0$, while the images of the three $i\vec e_k$ anticommute with it. Hence
 
 $$
 \gamma^\mu\gamma^\nu = \epsilon_\mu\,\mathsf{M}_4(e^\mu e^\nu), \qquad \epsilon_0 = +1, \quad \epsilon_k = -1 ,

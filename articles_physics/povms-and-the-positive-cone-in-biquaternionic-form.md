@@ -19,32 +19,32 @@ The cone is self-dual with respect to the trace pairing, which is the algebraic 
 
 ### Positivity as the biquaternion norm
 
-Let $\tilde{H} = h_0e_t + i\vec h$ be a general Hermitian element, with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$. Its matrix image is $h_0I_2 + \vec h\cdot\boldsymbol{\sigma}$, whose eigenvalues are $h_0\pm|\vec h|$. Hence
+Let $\tilde{H} = h_te_t + i\vec h$ be a general Hermitian element, with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$. Its matrix image is $h_tI_2 + \vec h\cdot\boldsymbol{\sigma}$, whose eigenvalues are $h_t\pm|\vec h|$. Hence
 
 $$
-\tilde{H}\geq0 \quad\Longleftrightarrow\quad h_0 \geq |\vec h| ,
+\tilde{H}\geq0 \quad\Longleftrightarrow\quad h_t \geq |\vec h| ,
 $$
 
 and the biquaternion norm is
 
 $$
-\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\vec h|^2 = \det M(\tilde{H}),
+\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_t^2 - |\vec h|^2 = \det M(\tilde{H}),
 $$
 
-a real scalar. The two conditions $\langle\tilde{H}\rangle_{\natural}\geq0$ and $h_0\geq0$ are together equivalent to $h_0\geq|\vec h|$, so the set of positive elements is the future light cone of the biquaternion norm:
+a real scalar. The two conditions $\langle\tilde{H}\rangle_{\natural}\geq0$ and $h_t\geq0$ are together equivalent to $h_t\geq|\vec h|$, so the set of positive elements is the future light cone of the biquaternion norm:
 
 $$
-C_+ = \bigl\{h_0e_t + i\vec h\in\mathbb{M}_+ : h_0 \geq |\vec h|\bigr\} .
+C_+ = \bigl\{h_te_t + i\vec h\in\mathbb{M}_+ : h_t \geq |\vec h|\bigr\} .
 $$
 
-This is the **positive cone** of the algebra. Its boundary $h_0 = |\vec h|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_0>|\vec h|$ is the set of positive definite elements.
+This is the **positive cone** of the algebra. Its boundary $h_t = |\vec h|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_t>|\vec h|$ is the set of positive definite elements.
 
 ### The cone is self-dual
 
 The trace pairing on $\mathbb{M}_+$ is
 
 $$
-\mathrm{Tr}(\tilde{H}\tilde{E}) = 2\,\mathrm{Sc}(\tilde{H}\tilde{E}) = 2\bigl(h_0a_0 + \vec h\cdot\vec a\bigr),
+\mathrm{Tr}(\tilde{H}\tilde{E}) = 2\,\mathrm{Sc}(\tilde{H}\tilde{E}) = 2\bigl(h_ta_0 + \vec h\cdot\vec a\bigr),
 $$
 
 where $\tilde{E} = a_0e_t + i\vec a$. Direct computation of the pairing on the Hermitian basis gives
@@ -59,7 +59,7 @@ $$
 C_+^{*} = \bigl\{\tilde{H} : \mathrm{Tr}(\tilde{H}\tilde{E})\geq0 \ \text{ for all } \tilde{E}\in C_+\bigr\},
 $$
 
-and it coincides with $C_+$. To see this, if $h_0\geq|\vec h|$ then $h_0a_0+\vec h\cdot\vec a\geq h_0a_0-|\vec h|\,|\vec a|\geq0$ for every $a_0\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_0<|\vec h|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_h$ and $a_0 = \lambda$; then $h_0a_0+\vec h\cdot\vec a = \lambda(h_0-|\vec h|)<0$ for $\lambda>0$, so $\tilde{H}\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the trace pairing.**
+and it coincides with $C_+$. To see this, if $h_t\geq|\vec h|$ then $h_ta_0+\vec h\cdot\vec a\geq h_ta_0-|\vec h|\,|\vec a|\geq0$ for every $a_0\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_t<|\vec h|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_h$ and $a_0 = \lambda$; then $h_ta_0+\vec h\cdot\vec a = \lambda(h_t-|\vec h|)<0$ for $\lambda>0$, so $\tilde{H}\notin C_+^{*}$. Hence $C_+^{*}=C_+$: **the positive cone is self-dual with respect to the trace pairing.**
 
 The self-duality is what makes the trace pairing the natural pairing of measurement theory. The same pairing that gives the Born rule, $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, expresses the duality between states and effects, and it makes the cone its own dual. There is no second pairing needed to define the allowed measurements.
 
@@ -248,7 +248,7 @@ $$
 \tilde{E} = a_0e_t+i\vec a\geq0 \quad\Longleftrightarrow\quad a_0\geq|\vec a| \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_0^2-|\vec a|^2\geq0,\ a_0\geq0,
 $$
 
-and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\vec h\cdot\vec a)$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_t$, characterized by $|\vec a|\leq\min(a_0,1-a_0)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_t$; the outcome probabilities are the trace pairing $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the trace pairing on the effect body.
+and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_ta_0+\vec h\cdot\vec a)$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_t$, characterized by $|\vec a|\leq\min(a_0,1-a_0)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_t$; the outcome probabilities are the trace pairing $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the trace pairing on the effect body.
 
 ## Summary of Notation
 
@@ -259,9 +259,9 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $C_+ = \{h_0e_t+i\vec h: h_0\ge|\vec h|\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
+| $C_+ = \{h_te_t+i\vec h: h_t\ge|\vec h|\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
 | $C_+^{*} = C_+$ | Self-duality under the trace pairing |
-| $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_0a_0+\vec h\cdot\vec a)$ | Trace pairing |
+| $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_ta_0+\vec h\cdot\vec a)$ | Trace pairing |
 | $0\le\tilde{E}\le e_t$ | Effect (operator interval) |
 | $|\vec a|\le\min(a_0,1-a_0)$ | Effect condition in coefficients |
 | $\mathrm{ext}[0,e_t] = \{\text{idempotents}\}$ | Extreme effects |

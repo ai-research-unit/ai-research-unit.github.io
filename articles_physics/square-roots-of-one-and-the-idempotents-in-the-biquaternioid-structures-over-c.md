@@ -203,7 +203,7 @@ is *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and *T
 
 ### $\mathrm{GQA}$, the general quaternionic algebra — causality
 
-The product is the natural product $\tilde P^{\natural}\tilde Q$ and its square is the central interval $C(\tilde\Xi)e_t$, so
+The product is the natural product $\tilde Q_1^{\natural}\tilde Q_2$ and its square is the central interval $C(\tilde\Xi)e_t$, so
 the root problem of $+1$ is the level set $C=+1$, the quadric of real dimension six. It contains the
 central pair $\pm e_t$ and the real vector roots $\tilde\xi$. The reading is *The Four Forms, the Four Algebraic Norms and the Change of Scalars*.
 

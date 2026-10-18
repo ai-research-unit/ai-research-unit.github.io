@@ -11,29 +11,29 @@ $$
 
 an imaginary time and three real space directions, and the operations of a relativistic system act on
 such elements. This article reads the restriction to that sector of the one product by which they compose
-— the **general plain bilinear product** $\tilde P\tilde Q$, the multiplication of the algebra itself — and asks what
+— the **general plain bilinear product** $\tilde Q_1\tilde Q_2$, the multiplication of the algebra itself — and asks what
 its scalar part measures there. The product on the whole algebra is *The Products, Their Forms and Their Norms*; this article is its material-sector companion, the reading of the same product on
 $\mathbb{M}_-$ alone.
 
 The answer is one sentence: the scalar part
 
 $$
-\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q) = P_0Q_t - \vec P\!\cdot\!\vec Q
+\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2) = Q_{10}Q_{2t} - \vec Q_1\!\cdot\!\vec Q_2
 $$
 
 is **negative** on a material **element**, $\langle\tilde Q,\tilde Q\rangle<0$, and **positive** on an
-informational one, $\langle\tilde P,\tilde P\rangle>0$. It is the sign of the sector, and it is **not** the metric of
+informational one, $\langle\tilde Q,\tilde Q\rangle>0$. It is the sign of the sector, and it is **not** the metric of
 spacetime.
 
 Keeping those two apart is the whole of the article. The metric is the interval,
-$\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, of signature $(-,+,+,+)$ on the material sector; it belongs
+$\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, of signature $(-,+,+,+)$ on the material sector; it belongs
 to the companion quaternionic block and to *Norm and Invertibility in the General Quaternionic Algebra*, and it is cited here,
-never re-proved. The point about $\langle\tilde P,\tilde Q\rangle$ is that it is **definite** where the interval is indefinite. A
-definite form has no light cone, so $\langle\tilde P,\tilde Q\rangle$ cannot decide which events can influence which. What it carries
+never re-proved. The point about $\langle\tilde Q_1,\tilde Q_2\rangle$ is that it is **definite** where the interval is indefinite. A
+definite form has no light cone, so $\langle\tilde Q_1,\tilde Q_2\rangle$ cannot decide which events can influence which. What it carries
 is the sign that separates the material sector from the informational one, and that sign is the whole of
 its physical content.
 
-**Placement and boundaries.** This article is the material-sector companion of *The Products, Their Forms and Their Norms*, which opens the biquaternion-algebra group and states the product, its law, its scalar form $\langle\tilde P,\tilde Q\rangle$ on the whole algebra and the
+**Placement and boundaries.** This article is the material-sector companion of *The Products, Their Forms and Their Norms*, which opens the biquaternion-algebra group and states the product, its law, its scalar form $\langle\tilde Q_1,\tilde Q_2\rangle$ on the whole algebra and the
 restriction table. Here the same product is read on $\mathbb{M}_-$ alone: the sector sign, the sector of a
 composite of two material operations, the light cone as the wall of the reversible operations, and the
 absence of a material projection. The product's invertibility criterion, its group of units and its cone
@@ -78,39 +78,39 @@ $$
 of signature $(-,+,+,+)$ on $\mathbb{M}_-$; its zero set is the light cone, its level set
 $N=-m^{2}c^{2}$ is the mass shell, and both are owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The
 interval is the **general quaternionic bilinear form**, the scalar part of the second of the four general products, and it
-is quoted here only to be kept apart from $\langle\tilde P,\tilde Q\rangle$. Two forms of opposite type sit on the same sector, and the
+is quoted here only to be kept apart from $\langle\tilde Q_1,\tilde Q_2\rangle$. Two forms of opposite type sit on the same sector, and the
 rest of the article is about the one that does not carry the interval.
 
 ## The Product of Two Material Operations
 
-The general plain bilinear product $\tilde P\tilde Q$ is the multiplication of the algebra, read in full in *The Products, Their Forms and Their Norms*. The material sector is not closed under it, and the way it
+The general plain bilinear product $\tilde Q_1\tilde Q_2$ is the multiplication of the algebra, read in full in *The Products, Their Forms and Their Norms*. The material sector is not closed under it, and the way it
 fails is the sharpest consequence of the anti-fixedness $\tilde Q^{*}=-\tilde Q$. The Hermitian
-conjugation is an anti-automorphism, $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}$, so for two
+conjugation is an anti-automorphism, $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, so for two
 material operations it returns the reversed product,
 
 $$
-(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}=(-\tilde Q)(-\tilde P)=\tilde Q\tilde P,
+(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}=(-\tilde Q_2)(-\tilde Q_1)=\tilde Q_2\tilde Q_1,
 $$
 
 and the composite therefore splits into its Hermitian and anti-Hermitian parts,
 
 $$
-\tilde P\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)+\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr),
+\tilde Q_1\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)+\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr),
 $$
 
 that is, into the **anticommutator**, which is an element of $\mathbb{M}_+$, and the **commutator**,
 which is an element of $\mathbb{M}_-$. The material sector is therefore not closed under composition, and which half survives is decided by
 which relation holds: the composite is **material exactly when the two anticommute**,
-$\{\tilde P,\tilde Q\}=0$, so that the informational half vanishes, and **informational exactly when
-the two commute**, $[\tilde P,\tilde Q]=0$, so that the material half vanishes. A generic pair of
+$\{\tilde Q_1,\tilde Q_2\}=0$, so that the informational half vanishes, and **informational exactly when
+the two commute**, $[\tilde Q_1,\tilde Q_2]=0$, so that the material half vanishes. A generic pair of
 material operations composes to an element with one part in each sector: the informational part is the
-order-independent half $\tfrac12\{\tilde P,\tilde Q\}$, and the order dependence is carried by the
-material half $\tfrac12[\tilde P,\tilde Q]$, which changes sign when the two operations are
+order-independent half $\tfrac12\{\tilde Q_1,\tilde Q_2\}$, and the order dependence is carried by the
+material half $\tfrac12[\tilde Q_1,\tilde Q_2]$, which changes sign when the two operations are
 exchanged.
 
-**Remark (verified).** $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is fixed by the dagger and the
-commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ is anti-fixed, both to machine precision, and
-their sum is the composite $\tilde P\tilde Q$.
+**Remark (verified).** $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ is fixed by the dagger and the
+commutator $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ is anti-fixed, both to machine precision, and
+their sum is the composite $\tilde Q_1\tilde Q_2$.
 
 **Proposed interpretation, labelled as such.** The order dependence has a sector signature. For two
 material operations the anticommutator is the informational half and the commutator the material one, so
@@ -118,7 +118,7 @@ material operations the anticommutator is the informational half and the commuta
 
 ## The Scalar Part Is the Sector Sign
 
-The form $\langle\tilde P,\tilde Q\rangle$ is negative on a material **element** and positive on an informational one, that is at the
+The form $\langle\tilde Q_1,\tilde Q_2\rangle$ is negative on a material **element** and positive on an informational one, that is at the
 two equal arguments, and that is the fact this article is built on. On the material basis
 $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ the diagonal entries are
 $B(ie_t,ie_t)=-1$ and $B(\vec e_k,\vec e_k)=-1$ with all cross terms zero, so
@@ -139,29 +139,29 @@ $$
 \langle\tilde Q,\tilde Q\rangle=a_0^{2}+\lvert\vec p\rvert^{2}>0 .
 $$
 
-**Remark (verified).** The form $\langle\tilde P,\tilde Q\rangle$ is real and strictly negative on every material element and real and
+**Remark (verified).** The form $\langle\tilde Q_1,\tilde Q_2\rangle$ is real and strictly negative on every material element and real and
 strictly positive on every informational one; the Gram matrices on the two bases are exactly
-$-\mathrm{I}_4$ and $+\mathrm{I}_4$. The full restriction table of $\langle\tilde P,\tilde Q\rangle$ over the six remarkable subspaces
+$-\mathrm{I}_4$ and $+\mathrm{I}_4$. The full restriction table of $\langle\tilde Q_1,\tilde Q_2\rangle$ over the six remarkable subspaces
 is in *The Products, Their Forms and Their Norms*.
 
-**Proposed interpretation, labelled as such.** $\langle\tilde P,\tilde Q\rangle$ is read as the **sector sign**: to say "this element is
-material" and to say "$\langle\tilde P,\tilde Q\rangle$ is negative on it" are the same statement. The sign of $\langle\tilde Q,\tilde Q\rangle$ is the same for every element of a sector, so it is invisible to a
+**Proposed interpretation, labelled as such.** $\langle\tilde Q_1,\tilde Q_2\rangle$ is read as the **sector sign**: to say "this element is
+material" and to say "$\langle\tilde Q_1,\tilde Q_2\rangle$ is negative on it" are the same statement. The sign of $\langle\tilde Q,\tilde Q\rangle$ is the same for every element of a sector, so it is invisible to a
 computation that stays inside one sector; on a pair the form returns a varying real number, and it is the
 sign of its algebraic norm that marks the sector, with no metric content at all.
 
 **Proposed interpretation, labelled as such.** Under the composition the four material directions are
-**indistinguishable by sign**: $B(ie_t,ie_t)=B(\vec e_k,\vec e_k)=-1$, all four negative definite, so $\langle\tilde P,\tilde Q\rangle$ alone
+**indistinguishable by sign**: $B(ie_t,ie_t)=B(\vec e_k,\vec e_k)=-1$, all four negative definite, so $\langle\tilde Q_1,\tilde Q_2\rangle$ alone
 does not separate time from space. What separates them is **commutation**: $ie_t$ is central and the
 three $\vec e_k$ are not, so **in the material sector time is the central direction and space is the vector
 directions**. The Lorentzian sign of the interval is carried by the quaternion conjugation $\natural$ instead, which
 fixes the central direction $e_t$ and reverses the three vector directions, so that $\langle ie_t\rangle_{\natural}=-1$ and
 $\langle \vec e_k\rangle_{\natural}=+1$; time is the material direction that conjugation cannot see.
 
-**Proposed interpretation, labelled as such.** Write $\tilde P=\tilde P_-+\tilde P_+$ for the split of an
-element into its material and informational parts, $\tilde P_\pm\in\mathbb{M}_\pm$. On each sector $\langle\tilde P,\tilde Q\rangle$ is
+**Proposed interpretation, labelled as such.** Write $\tilde Q_1=\tilde Q_{1-}+\tilde Q_{1+}$ for the split of an
+element into its material and informational parts, $\tilde Q_{1\pm}\in\mathbb{M}_\pm$. On each sector $\langle\tilde Q_1,\tilde Q_2\rangle$ is
 real; off them it is complex, and its imaginary part is exactly the pairing of the two sectors,
-$\mathrm{Im}\,\langle\tilde P,\tilde Q\rangle=\mathrm{Im}\,\mathrm{Sc}(\tilde P_-\tilde Q_++\tilde P_+\tilde Q_-)$,
-so $\langle\tilde P,\tilde Q\rangle$ is real on any pair drawn from one sector, and a nonzero imaginary part marks a pair drawn from two
+$\mathrm{Im}\,\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Im}\,\mathrm{Sc}(\tilde Q_{1-}\tilde Q_{2+}+\tilde Q_{1+}\tilde Q_{2-})$,
+so $\langle\tilde Q_1,\tilde Q_2\rangle$ is real on any pair drawn from one sector, and a nonzero imaginary part marks a pair drawn from two
 different sectors. Read physically, **a composition of like elements carries no imaginary part, and an
 imaginary part is the mark of a composition of a material operation with an informational state.**
 
@@ -173,12 +173,12 @@ criterion, the partition of the algebra and the group structure are *The Product
 $\mathbb{M}_-$.
 
 **The units and the cone.** The invertibility of the general plain bilinear product is decided by the multiplicative
-norm $\langle\cdot\rangle_{\natural}$, not by the sector sign $\langle\tilde P,\tilde Q\rangle$,
+norm $\langle\cdot\rangle_{\natural}$, not by the sector sign $\langle\tilde Q_1,\tilde Q_2\rangle$,
 
 $$
 \langle\tilde Q\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde Q^{\natural}\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},
 \qquad
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural},
+\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},
 $$
 
 so that the invertible elements are the elements of non-vanishing norm, forming the **group of units**
@@ -195,7 +195,7 @@ scalar; but the product of two material units is material only when the two anti
 of Two Material Operations*, so the reversibility survives the composition while the sector need not. On
 the informational sector the norm is $a_0^{2}-\lvert\vec p\rvert^{2}$ of signature $(1,3)$, and the
 wall there is the cone $a_0^{2}=\lvert\vec p\rvert^{2}$; the Hermitian form $+\mathrm{I}_4$ has no
-cone, and the form $\langle\tilde P,\tilde Q\rangle$ has no cone on either sector.
+cone, and the form $\langle\tilde Q_1,\tilde Q_2\rangle$ has no cone on either sector.
 
 **Example (a lightlike and an off-cone material element).** The lightlike material element $ie_t+\vec e_x$,
 with $N=-1+1=0$, is a zero divisor: it squares to $-2e_t+2i\vec e_x$ and the partner $ie_t-\vec e_x$ annihilates it,
@@ -218,7 +218,7 @@ a partner and makes every composite lightlike: the massless operation cannot be 
 composed into a massive one.** The origin is the boundary case with the opposite reading: it is on the
 cone and it is no zero divisor, the null operation that annihilates nothing and still cannot be undone.
 
-**Proposed interpretation, labelled as such.** The norm is a homomorphism, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, so the interval is a **character of the group of reversible operations** and the mass shell
+**Proposed interpretation, labelled as such.** The norm is a homomorphism, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, so the interval is a **character of the group of reversible operations** and the mass shell
 is a level set of that character. This is the sense in which a mass read through this product is a value of a
 multiplicative quantity rather than an eigenvalue, and it is the sharp form of the reading proposed in
 *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements*; multiplicativity is not
@@ -233,10 +233,10 @@ reversal. What is proved is the generator and the doubling; the identification w
 the material reversal is an interpretation.
 
 **Remark (the sector sign is not the reversibility).** The criterion is the norm and the interval, and not
-the algebraic norm of the plain product: $\langle\tilde P,\tilde Q\rangle$ is not multiplicative and decides no invertibility, the
+the algebraic norm of the plain product: $\langle\tilde Q_1,\tilde Q_2\rangle$ is not multiplicative and decides no invertibility, the
 element $e_t+\vec e_x$ being a unit with $B=0$ and the element $e_t+i\vec e_x$ a zero divisor with $B=2$
 (*The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*). The form
-$\langle\tilde P,\tilde Q\rangle$ carries the sector sign of §*The Scalar Part Is the Sector Sign*; the reversibility is carried by the
+$\langle\tilde Q_1,\tilde Q_2\rangle$ carries the sector sign of §*The Scalar Part Is the Sector Sign*; the reversibility is carried by the
 interval, and the two must not be exchanged.
 
 ## No Material Projection: the Reference State Comes from the Informational Sector
@@ -277,23 +277,23 @@ idempotent and Hermitian for $k=1,2,3$ and both signs, while $\tfrac12(e_t\pm \v
 Take one material element and one informational element,
 
 $$
-\tilde Q=ie_t+2\vec e_x\in\mathbb{M}_-,
+\tilde Q_2=ie_t+2\vec e_x\in\mathbb{M}_-,
 \qquad
-\tilde P=3e_t+i\vec e_x\in\mathbb{M}_+ .
+\tilde Q_1=3e_t+i\vec e_x\in\mathbb{M}_+ .
 $$
 
 The two scalar forms give
 
 $$
-\langle\tilde Q,\tilde Q\rangle=-5,\qquad \langle\tilde P,\tilde P\rangle=+10,\qquad \langle\tilde Q,\tilde Q\rangle_{\natural}=+3,\qquad \langle\tilde P,\tilde P\rangle_{\natural}=+8 .
+\langle\tilde Q_2,\tilde Q_2\rangle=-5,\qquad \langle\tilde Q_1,\tilde Q_1\rangle=+10,\qquad \langle\tilde Q_2,\tilde Q_2\rangle_{\natural}=+3,\qquad \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=+8 .
 $$
 
-Read row by row, the case displays the whole distinction at once. $\langle\tilde P,\tilde Q\rangle$ changes sign between the two
-elements, $-5$ material and $+10$ informational, so it is $\langle\tilde P,\tilde Q\rangle$ that carries the sector sign, and the
+Read row by row, the case displays the whole distinction at once. $\langle\tilde Q_1,\tilde Q_2\rangle$ changes sign between the two
+elements, $-5$ material and $+10$ informational, so it is $\langle\tilde Q_1,\tilde Q_2\rangle$ that carries the sector sign, and the
 values are the negative squares $-1^{2}-2^{2}$ and $3^{2}+1^{2}$ of the coordinate dictionary. The
-interval is positive on both, $+3$ and $+8$, so it does not separate the sectors. And $\langle\tilde P,\tilde Q\rangle$ and the interval differ by twice the complex square of the vector part,
+interval is positive on both, $+3$ and $+8$, so it does not separate the sectors. And $\langle\tilde Q_1,\tilde Q_2\rangle$ and the interval differ by twice the complex square of the vector part,
 $\langle\tilde Q,\tilde Q\rangle_{\natural}-2\,\vec Q\!\cdot\!\vec Q$ with the coefficient square
-$\vec Q\!\cdot\!\vec Q=Q_x^{2}+Q_y^{2}+Q_z^{2}$, which on the two elements reads
+$\vec Q\!\cdot\!\vec Q=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$, which on the two elements reads
 $-5=+3-2(4)$ and $+10=+8-2(-1)$: the two forms agree only when the vector part vanishes, that is on the
 scalar line, and the difference $-2\,\vec Q\!\cdot\!\vec Q$ is real of a fixed sign on each sector,
 negative on $\mathbb{M}_-$ and positive on $\mathbb{M}_+$.
@@ -303,13 +303,13 @@ negative on $\mathbb{M}_-$ and positive on $\mathbb{M}_+$.
 The article states the restriction to the material sector of the product and its scalar form, and the
 boundary of what it must declare is the boundary of the sector.
 
-- **$\langle\tilde P,\tilde Q\rangle$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
+- **$\langle\tilde Q_1,\tilde Q_2\rangle$ is not the metric.** It is definite on each sector and has no cone there, so it cannot define the
 causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\mathbb{M}_-$.
-- **$\langle\tilde P,\tilde Q\rangle$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
+- **$\langle\tilde Q_1,\tilde Q_2\rangle$ is not the interval.** The interval, the mass shell, the four-velocity and invertibility are the
 level data of the general quaternionic bilinear form, owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*; the
 worked case shows the two forms giving different numbers on the same element.
-- **$\langle\tilde P,\tilde Q\rangle$ is not the reversibility.** The criterion of invertibility is the norm $\langle\cdot\rangle_{\natural}$ and not the scalar form
-$\langle\tilde P,\tilde Q\rangle$: the element $e_t+\vec e_x$ is a unit with $B=0$ and the element $e_t+i\vec e_x$ is a zero divisor with $B=2$.
+- **$\langle\tilde Q_1,\tilde Q_2\rangle$ is not the reversibility.** The criterion of invertibility is the norm $\langle\cdot\rangle_{\natural}$ and not the scalar form
+$\langle\tilde Q_1,\tilde Q_2\rangle$: the element $e_t+\vec e_x$ is a unit with $B=0$ and the element $e_t+i\vec e_x$ is a zero divisor with $B=2$.
 - **The material sector is not closed under the product.** A composite of two material elements is
 material exactly when the two anticommute, and informational exactly when they commute; the sector is not
 an algebra.
@@ -323,7 +323,7 @@ projection; neither is re-derived here.
 
 ## The Ledger
 
-**Proved.** The material sector is anti-fixed by the dagger, hence $\langle\tilde P,\tilde Q\rangle$ restricts to $-\mathrm{I}_4$ of
+**Proved.** The material sector is anti-fixed by the dagger, hence $\langle\tilde Q_1,\tilde Q_2\rangle$ restricts to $-\mathrm{I}_4$ of
 signature $(0,4)$ on $\mathbb{M}_-$ and to $+\mathrm{I}_4$ of signature $(4,0)$ on $\mathbb{M}_+$; the
 product of two material elements splits into an informational anticommutator and a material commutator and
 is material exactly when the two anticommute; the material sector contains no nonzero idempotent; on the
@@ -333,7 +333,7 @@ four-vectors, the inverse of a material unit is material, and the product of two
 and the norm restricts to a homomorphism $\mathbb{B}^{\times}\to\mathbb{C}^{\times}$, so the mass shell
 $N=-m^{2}c^{2}$, $m\neq0$, lies inside the group of units and the massless shell is its boundary.
 
-**Interpretations.** That $\langle\tilde P,\tilde Q\rangle$ carries the **sector sign** and the interval carries the metric; that the
+**Interpretations.** That $\langle\tilde Q_1,\tilde Q_2\rangle$ carries the **sector sign** and the interval carries the metric; that the
 material geometry belongs to this block and to its quaternionic companion and not to the sesqualgebra;
 that the general plain bilinear product is the **composition of material operations**; that a material field is split
 against a **reference state** rather than a material background; that the imaginary part of the
@@ -358,16 +358,16 @@ for the central phase, which is the exchange's business and not the vector part'
 ## Summary
 
 The material sector $\mathbb{M}_-$ carries the four-vectors, an event being
-$\tilde R=ict\,e_t+x \vec e_x+y \vec e_y+z \vec e_z$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$
+$\tilde R=ict\,e_t+x \vec e_x+y \vec e_y+z \vec e_z$, and this article reads on it the general plain bilinear product $\tilde Q_1\tilde Q_2$
 whose full theory on the whole algebra is *The Products, Their Forms and Their Norms*. Its scalar
-part $B=P_0Q_t-\vec P\!\cdot\!\vec Q$, the quaternion scalar product of the two elements, is
+part $B=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$, the quaternion scalar product of the two elements, is
 negative definite on $\mathbb{M}_-$ with signature $(0,4)$ and positive definite on $\mathbb{M}_+$ with
-signature $(4,0)$: opposite definite signs on the two sectors, so $\langle\tilde P,\tilde Q\rangle$ carries the **sector sign**. Being
-definite, $\langle\tilde P,\tilde Q\rangle$ has no light cone at all and cannot be the metric; the metric is the interval, the general
+signature $(4,0)$: opposite definite signs on the two sectors, so $\langle\tilde Q_1,\tilde Q_2\rangle$ carries the **sector sign**. Being
+definite, $\langle\tilde Q_1,\tilde Q_2\rangle$ has no light cone at all and cannot be the metric; the metric is the interval, the general
 quaternionic bilinear form of the companion quaternionic block, of signature $(-,+,+,+)$ on the material
 sector. The composition of two material operations is material exactly when the two anticommute, its
 informational part being the anticommutator and its order dependence the commutator. The reversibility of
-the general plain bilinear product is carried by the norm $\langle\cdot\rangle_{\natural}$ and not by $\langle\tilde P,\tilde Q\rangle$: the invertible elements are the elements
+the general plain bilinear product is carried by the norm $\langle\cdot\rangle_{\natural}$ and not by $\langle\tilde Q_1,\tilde Q_2\rangle$: the invertible elements are the elements
 of non-vanishing norm, forming the group $\mathbb{B}^{\times}$ with the inverse
 $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ and bounded by the zero-divisor cone, so on the material sector the
 light cone is the wall of the reversible operations and the mass shell $N=-m^{2}c^{2}$ lies inside the
@@ -387,11 +387,11 @@ $\mathbb{M}_-$, what is proposed is the naming.
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | A material event; imaginary time, real space |
-| $\tilde P\tilde Q$ | General plain bilinear product; associative, unital, non-commutative |
-| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_t-\vec P\!\cdot\!\vec Q$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
-| $B\big|_{\mathbb{M}_-}=-\mathrm{I}_4$, $B\big|_{\mathbb{M}_+}=+\mathrm{I}_4$ | The sector sign carried by $\langle\tilde P,\tilde Q\rangle$ |
-| $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
-| $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
+| $\tilde Q_1\tilde Q_2$ | General plain bilinear product; associative, unital, non-commutative |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
+| $B\big|_{\mathbb{M}_-}=-\mathrm{I}_4$, $B\big|_{\mathbb{M}_+}=+\mathrm{I}_4$ | The sector sign carried by $\langle\tilde Q_1,\tilde Q_2\rangle$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
+| $\tfrac12(\tilde Q_1\tilde Q_2\pm\tilde Q_2\tilde Q_1)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
 | $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ | Algebraic norm of the general plain bilinear product; the interval at equal arguments; multiplicative |
 | $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone; the light cone on $\mathbb{M}_-$ |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | Inverse in the general plain bilinear product |
@@ -408,7 +408,7 @@ on the biquaternion algebra and the sectors of the Hermitian conjugation.
 metric of signature $(-,+,+,+)$ and its contrast with a definite form.
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw–Hill, 1980), for the four-vector,
 the interval and the mass shell of the material sector.
-- Companion article *The Products, Their Forms and Their Norms*, for the product and the form $\langle\tilde P,\tilde Q\rangle$ on
+- Companion article *The Products, Their Forms and Their Norms*, for the product and the form $\langle\tilde Q_1,\tilde Q_2\rangle$ on
 the whole algebra and the restriction table over the remarkable subspaces.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material
 sector and its own physics.

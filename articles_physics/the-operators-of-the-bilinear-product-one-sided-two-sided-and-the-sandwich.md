@@ -2,12 +2,12 @@
 
 ## Introduction
 
-This article is the operator article of the general plain algebra, the algebra of *The Products, Their Forms and Their Norms*. Its product is the general plain bilinear product $\tilde P\tilde Q$, and the operators of the block are the maps
+This article is the operator article of the general plain algebra, the algebra of *The Products, Their Forms and Their Norms*. Its product is the general plain bilinear product $\tilde Q_3\tilde Q_4$, and the operators of the block are the maps
 that attach an element to an argument:
 
 $$
 L_{\tilde Q}(\tilde Q_5)=\tilde Q\tilde Q_5,\qquad
-R_{\tilde P}(\tilde Q_5)=\tilde Q_5\tilde P,\qquad
+R_{\tilde Q}(\tilde Q_5)=\tilde Q_5\tilde Q,\qquad
 \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}} .
 $$
 
@@ -20,7 +20,7 @@ Operator Representation $M_4(\mathbb{C})$ of Biquaternions*, and its action on t
 Sandwich Action in Subspaces*. This article states the one thing the composition laws do not: **which form the
 operators are adjoint for, and what that adjoint does**.
 
-The answer is one sentence. The bilinear form of the block is the scalar part $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$
+The answer is one sentence. The bilinear form of the block is the scalar part $\langle\tilde Q_3,\tilde Q_4\rangle=\mathrm{Sc}(\tilde Q_3\tilde Q_4)$
 of the product itself, its associate $F^{\approx}$ is the transpose, and the transpose of a left multiplication is a
 **right** multiplication:
 
@@ -44,11 +44,11 @@ $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The adjoint for the plain form is 
 The form is
 
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_t-\vec P\!\cdot\!\vec Q,\qquad
+\langle\tilde Q_3,\tilde Q_4\rangle=\mathrm{Sc}(\tilde Q_3\tilde Q_4)=Q_{3t}Q_{4t}-\vec Q_3\!\cdot\!\vec Q_4,\qquad
 \mathrm{Gram}=\mathrm{diag}(1,-1,-1,-1),
 $$
 
-the **sector sign** of the block; the interval is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, of
+the **sector sign** of the block; the interval is $\langle\tilde Q_3,\tilde Q_4\rangle_{\natural}=\mathrm{Sc}(\tilde Q_3^{\natural}\tilde Q_4)$, of
 signature $(-,+,+,+)$ on the material sector $\mathbb{M}_-$, and it is cited, never re-proved (*Norm and Invertibility in the General Quaternionic Algebra*). The sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$, the conjugations are the
 complex $\bar{\cdot}$, the natural ${\natural}$ and the Hermitian ${}^{*}=\bar{\cdot}\circ{\natural}$, and the sandwich
 is the one action form of the framework: the Lorentz action for a unit-norm parameter, the unitary evolution for a
@@ -355,21 +355,21 @@ is the centre, so no ambiguity remains.
 
 **Theorem (both preserve the interval, and they differ on a boost).** Let $\tilde U_{\mathrm L}$ be of unit norm,
 $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. Then $\Theta_{\tilde U_{\mathrm L}}$ and $\mathrm{Ad}_{\tilde U_{\mathrm L}}$ both
-preserve the interval $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ and both preserve the sectors
+preserve the interval $\langle\tilde Q_3,\tilde Q_4\rangle_{\natural}=\mathrm{Sc}(\tilde Q_3^{\natural}\tilde Q_4)$ and both preserve the sectors
 $\mathbb{M}_\pm$; the inner automorphism preserves the plain form $\langle\cdot,\cdot\rangle$ as well, and the sandwich preserves it exactly
 when $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\pm e_t$, a condition the unit-norm boosts fail. A boost is therefore a parameter
 for which the two operators differ **and** for which the sandwich loses the plain form.
 
 *Proof.* For the interval, with $\tilde U_{\mathrm L}^{\natural}=\tilde U_{\mathrm L}^{-1}$ and
 $\tilde U_{\mathrm L}^{*}=\bar{\tilde U_{\mathrm L}}^{\,\natural}$, and writing the two-sided operator of the sandwich as
-$\Theta_{\tilde U_{\mathrm L}}\tilde P=\tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*}$,
+$\Theta_{\tilde U_{\mathrm L}}\tilde Q_3=\tilde U_{\mathrm L}\tilde Q_3\tilde U_{\mathrm L}^{*}$,
 
 $$
-N\bigl(\Theta_{\tilde U_{\mathrm L}}\tilde P,\Theta_{\tilde U_{\mathrm L}}\tilde Q\bigr)
-=\mathrm{Sc}\bigl((\tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*})^{\natural}\,\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}\bigr)
-=\mathrm{Sc}\bigl(\tilde U_{\mathrm L}^{*\natural}\tilde P^{\natural}\tilde U_{\mathrm L}^{\natural}\tilde U_{\mathrm L}\tilde Q\tilde U_{\mathrm L}^{*}\bigr)
-=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\,\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}^{*\natural}\bigr)
-=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\bigr),
+N\bigl(\Theta_{\tilde U_{\mathrm L}}\tilde Q_3,\Theta_{\tilde U_{\mathrm L}}\tilde Q_4\bigr)
+=\mathrm{Sc}\bigl((\tilde U_{\mathrm L}\tilde Q_3\tilde U_{\mathrm L}^{*})^{\natural}\,\tilde U_{\mathrm L}\tilde Q_4\tilde U_{\mathrm L}^{*}\bigr)
+=\mathrm{Sc}\bigl(\tilde U_{\mathrm L}^{*\natural}\tilde Q_3^{\natural}\tilde U_{\mathrm L}^{\natural}\tilde U_{\mathrm L}\tilde Q_4\tilde U_{\mathrm L}^{*}\bigr)
+=\mathrm{Sc}\bigl(\tilde Q_3^{\natural}\tilde Q_4\,\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}^{*\natural}\bigr)
+=\mathrm{Sc}\bigl(\tilde Q_3^{\natural}\tilde Q_4\bigr),
 $$
 
 where the third step uses $\tilde U_{\mathrm L}^{\natural}\tilde U_{\mathrm L}=e_t$ and the cyclicity of the scalar part, and the
@@ -382,13 +382,13 @@ $$
 $$
 
 The inner automorphism preserves the interval because it preserves the product and the natural conjugation; the sector statement is
-$(\Theta_{\tilde U_{\mathrm L}}\tilde P)^{*}=\tilde U_{\mathrm L}\tilde P^{*}\tilde U_{\mathrm L}^{*}$, which changes the sign of the sector
-exactly when $\tilde P$ does; and the plain form is not preserved because the sandwich is not an algebra automorphism.
+$(\Theta_{\tilde U_{\mathrm L}}\tilde Q_3)^{*}=\tilde U_{\mathrm L}\tilde Q_3^{*}\tilde U_{\mathrm L}^{*}$, which changes the sign of the sector
+exactly when $\tilde Q_3$ does; and the plain form is not preserved because the sandwich is not an algebra automorphism.
 
 **Read as a physical statement.** The framework attaches a conjugation to an element in two ways, and the two agree
 only on the compact part of the parameter group. The Lorentz action is the **conjugate** one,
-$\tilde P\mapsto\tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*}$, and the algebra automorphism is the **inverse** one,
-$\tilde P\mapsto\tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{-1}$; on a boost the two differ, while on a rotation they coincide,
+$\tilde Q_3\mapsto\tilde U_{\mathrm L}\tilde Q_3\tilde U_{\mathrm L}^{*}$, and the algebra automorphism is the **inverse** one,
+$\tilde Q_3\mapsto\tilde U_{\mathrm L}\tilde Q_3\tilde U_{\mathrm L}^{-1}$; on a boost the two differ, while on a rotation they coincide,
 and the compact subgroup is exactly the place where "conjugation by the inverse" and "conjugation by the conjugate" are
 the same statement. This is the operator form of the corpus's identification of the compact slice with the internal
 charge and of the boost with the non-compact part: the difference of the two conjugations is a Lorentz-invariant
@@ -531,7 +531,7 @@ The operators of the general plain algebra are the left and the right multiplica
 and $R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$, and their products $L_{\tilde Q_7}R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_7\tilde Q_4\tilde Q_1$,
 the one-sided and the two-sided families. The parameter enters once in each slot, the two families commute, and
 composition reverses the second slot. The bilinear form of the block is the scalar part of the product itself,
-$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_t-\vec P\!\cdot\!\vec Q$ of Gram matrix
+$\langle\tilde Q_3,\tilde Q_4\rangle=\mathrm{Sc}(\tilde Q_3\tilde Q_4)=Q_{3t}Q_{4t}-\vec Q_3\!\cdot\!\vec Q_4$ of Gram matrix
 $\mathrm{diag}(1,-1,-1,-1)$, and the transpose for $\langle\cdot,\cdot\rangle$ **swaps the two sides**:
 $(L_{\tilde Q_7})^{\approx}=R_{\tilde Q_7}$ and $(L_{\tilde Q_7}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde Q_7}$. Every
 type criterion follows: a one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint only for
@@ -553,7 +553,7 @@ the naming.
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
-| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | General plain bilinear form; Gram $\mathrm{diag}(1,-1,-1,-1)$ |
+| $\langle\tilde Q_3,\tilde Q_4\rangle=\mathrm{Sc}(\tilde Q_3\tilde Q_4)$ | General plain bilinear form; Gram $\mathrm{diag}(1,-1,-1,-1)$ |
 | $F^{\approx}$ | The associate, or transpose, for $\langle\cdot,\cdot\rangle$ |
 | $L_{\tilde Q_7}(\tilde Q_4)=\tilde Q_7\tilde Q_4$ | Left multiplication; the left regular representation |
 | $R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$ | Right multiplication; anti-multiplicative in the parameter |

@@ -26,7 +26,7 @@ Three features organize what follows.
 
 The article proceeds as follows. The modular Hamiltonian is defined from $\Delta$, the hypotheses are checked, and the sign convention is fixed. The finite-dimensional realization in $\mathbb{B}$ is recalled from the parents and completed with $\tilde{K}_{\mathrm{mod}}$'s spectral form. $\tilde{K}_{\mathrm{mod}}$ is then verified to generate the same flow as $\Delta^{it}$. The trace formula is used to show that the Gibbs form is a scalar extraction. A closing section separates what is established from what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_t)=2$. The modular flow is $\sigma_t(\tilde Q_3)=\Delta^{it}\tilde Q_3\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=\exp(-\tilde{K}_{\mathrm{mod}})$, so that $\tilde{K}_{\mathrm{mod}}=-\log\Delta$ and $\Delta^{it}=\exp(-i\tilde{K}_{\mathrm{mod}}t)$. In the finite-dimensional model of the parents, $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_t+i\vec h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_t)=2$. The modular flow is $\sigma_t(\tilde Q_3)=\Delta^{it}\tilde Q_3\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=\exp(-\tilde{K}_{\mathrm{mod}})$, so that $\tilde{K}_{\mathrm{mod}}=-\log\Delta$ and $\Delta^{it}=\exp(-i\tilde{K}_{\mathrm{mod}}t)$. In the finite-dimensional model of the parents, $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_te_t+i\vec h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
 
 ## The Generator of the Modular Flow
 
@@ -202,9 +202,9 @@ Z=1+\exp(-\beta\omega)=1.339596,
 \qquad
 \log Z=0.292368,
 $$
-reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde H=h_0e_t+i\vec h$ at inverse temperature $\beta$, the same identity $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$ was checked on the independent data $h_0=0.7$, $\vec h=(0.3,-0.5,0.8)$, $\beta=1.2$, where
+reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde H=h_te_t+i\vec h$ at inverse temperature $\beta$, the same identity $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$ was checked on the independent data $h_t=0.7$, $\vec h=(0.3,-0.5,0.8)$, $\beta=1.2$, where
 $$
-Z=2\exp(-\beta h_0)\cosh(\beta|\vec h|)=1.547753
+Z=2\exp(-\beta h_t)\cosh(\beta|\vec h|)=1.547753
 $$
 and $\tilde{K}_{\mathrm{mod}}-(\beta\tilde H+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
 
@@ -234,14 +234,14 @@ $$
 $$
 No matrix diagonalization is needed to evaluate the state; the doubled scalar part of a biquaternion product is the whole computation.
 
-Second, the physical Gibbs form follows by the shift $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$. With $\tilde H=h_0e_t+i\vec h$,
+Second, the physical Gibbs form follows by the shift $\tilde{K}_{\mathrm{mod}}=\beta\tilde H+(\log Z)e_t$. With $\tilde H=h_te_t+i\vec h$,
 $$
 Z=\mathrm{Tr}\big(\exp(-\beta\tilde H)\big)=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)
-=2\exp(-\beta h_0)\cosh(\beta|\vec h|),
+=2\exp(-\beta h_t)\cosh(\beta|\vec h|),
 $$
 and the scalar and vector parts of $\tilde{K}_{\mathrm{mod}}$ have direct thermodynamic interpretations:
 $$
-\mathrm{Sc}(\tilde{K}_{\mathrm{mod}})=\beta h_0+\log Z,
+\mathrm{Sc}(\tilde{K}_{\mathrm{mod}})=\beta h_t+\log Z,
 \qquad
 \vec a=\beta\vec h,
 $$
@@ -338,7 +338,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 - $\tilde{K}_{\mathrm{mod}}=-\log\Delta$ is defined by $\Delta=\exp(-\tilde{K}_{\mathrm{mod}})$; with this convention $\Delta^{it}=\exp(-i\tilde{K}_{\mathrm{mod}}t)$ and $d\sigma_t/dt|_{t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
 - In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, with the spectral form $a_0=-\tfrac12\log\det\tilde{Ϛ}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\Delta>0$ for every faithful state, and $\tilde{K}_{\mathrm{mod}}$ does not exist for a non-faithful one.
 - $\tilde{K}_{\mathrm{mod}}$ generates the same flow as $\Delta^{it}$: verified symbolically and numerically on a generic rotated state and a thermal state.
-- $\mathrm{Tr}(\exp(-\tilde{K}_{\mathrm{mod}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde{K}_{\mathrm{mod}})=\beta h_0+\log Z$ and $\vec a=\beta\vec h$.
+- $\mathrm{Tr}(\exp(-\tilde{K}_{\mathrm{mod}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde{K}_{\mathrm{mod}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h$.
 - In the wedge, $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{M}_+$; the rotor action is the boost, its generator is the anticommutator $\tfrac12\{G_1,\cdot\,\}$, and the commutator is a rotation in the orthogonal plane.
 
 **Interpretation.**
@@ -374,7 +374,7 @@ a_0=-\tfrac12\log\det\tilde{Ϛ},
 \qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_r,
 $$
-so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde{K}_{\mathrm{mod}}$ generates the same flow as $\Delta^{it}$, that $\mathrm{Tr}(\exp(-\tilde{K}_{\mathrm{mod}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde{K}_{\mathrm{mod}})=\beta h_0+\log Z$ and $\vec a=\beta\vec h$.
+so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde{K}_{\mathrm{mod}}$ generates the same flow as $\Delta^{it}$, that $\mathrm{Tr}(\exp(-\tilde{K}_{\mathrm{mod}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde{K}_{\mathrm{mod}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h$.
 
 The one structural question the finite-dimensional model cannot settle is locality. For a general spacetime region the modular Hamiltonian of the vacuum is nonlocal, and the modular flow is not geometric; it is local exactly in the exceptional cases where the flow is a symmetry flow — the Bisognano–Wichmann wedge, where $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{M}_+$ and the flow is the boost by rapidity $2\pi s$, and the conformal ball, which the framework cannot fully express because the special conformal generators are not elements of $\mathbb{B}$. In the wedge the flow is outer and the action is the two-sided rotor conjugation, not the commutator $[\tilde{K}_{\mathrm{mod},W},\cdot\,]$; in the finite-dimensional model the flow is inner and the commutator is correct. Both cases have $\tilde{K}_{\mathrm{mod}}\in\mathbb{M}_+$, by different mechanisms, and the gap between them is the type gap of the modular-theory parent.
 

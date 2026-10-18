@@ -10,29 +10,29 @@ The second half turns to the other half of the dictionary. The **states** of the
 
 ## The Two One-Sided Actions
 
-For an element $\tilde{P}$ of the algebra, the **left multiplication** and the **right multiplication** are the maps
+For an element $\tilde{Q}_3$ of the algebra, the **left multiplication** and the **right multiplication** are the maps
 
 $$
-L_{\tilde{P}} : \tilde{Q}_2 \mapsto \tilde{P}\tilde{Q}_2, \qquad\qquad R_{\tilde{P}} : \tilde{Q}_2 \mapsto \tilde{Q}_2\tilde{P}.
+L_{\tilde{Q}_3} : \tilde{Q}_2 \mapsto \tilde{Q}_3\tilde{Q}_2, \qquad\qquad R_{\tilde{Q}_3} : \tilde{Q}_2 \mapsto \tilde{Q}_2\tilde{Q}_3.
 $$
 
-Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{P}}(e_t) = \tilde{P}$ and $R_{\tilde{P}}(e_t) = \tilde{P}$. Their **composition rules** are the associativity of the product read on the maps,
+Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{Q}_3}(e_t) = \tilde{Q}_3$ and $R_{\tilde{Q}_3}(e_t) = \tilde{Q}_3$. Their **composition rules** are the associativity of the product read on the maps,
 
 $$
-L_{\tilde{P}}\circ L_{\tilde{Q}_1} = L_{\tilde{P}\tilde{Q}_1}, \qquad\qquad R_{\tilde{P}}\circ R_{\tilde{Q}_1} = R_{\tilde{Q}_1\tilde{P}},
+L_{\tilde{Q}_3}\circ L_{\tilde{Q}_1} = L_{\tilde{Q}_3\tilde{Q}_1}, \qquad\qquad R_{\tilde{Q}_3}\circ R_{\tilde{Q}_1} = R_{\tilde{Q}_1\tilde{Q}_3},
 $$
 
 and the two families **commute** with one another,
 
 $$
-L_{\tilde{P}}\circ R_{\tilde{Q}_1} = R_{\tilde{Q}_1}\circ L_{\tilde{P}},
+L_{\tilde{Q}_3}\circ R_{\tilde{Q}_1} = R_{\tilde{Q}_1}\circ L_{\tilde{Q}_3},
 $$
 
-for every pair, because $\tilde{P}(\tilde{Q}_2\tilde{Q}_1) = (\tilde{P}\tilde{Q}_2)\tilde{Q}_1$ is the same associativity. The first of the two rules is the one the article turns on: **the left multiplications compose into the left multiplication of the product**, so the correspondence between elements and left multiplications respects the multiplication, whereas the right multiplications compose in the reverse order, since the product is not commutative.
+for every pair, because $\tilde{Q}_3(\tilde{Q}_2\tilde{Q}_1) = (\tilde{Q}_3\tilde{Q}_2)\tilde{Q}_1$ is the same associativity. The first of the two rules is the one the article turns on: **the left multiplications compose into the left multiplication of the product**, so the correspondence between elements and left multiplications respects the multiplication, whereas the right multiplications compose in the reverse order, since the product is not commutative.
 
 ### The Regular Representation
 
-The rule $L_{\tilde{P}}\circ L_{\tilde{Q}_1} = L_{\tilde{P}\tilde{Q}_1}$ has a name and a consequence. The map
+The rule $L_{\tilde{Q}_3}\circ L_{\tilde{Q}_1} = L_{\tilde{Q}_3\tilde{Q}_1}$ has a name and a consequence. The map
 
 $$
 \tilde{Q}_1\;\longmapsto\; L_{\tilde{Q}_1}
@@ -56,7 +56,7 @@ $$
 
 is a **monoid**: a set with an associative product and an identity. It is not a group, and the reason is the algebra's zero divisors. The element $L_{\tilde{Q}_1}$ is invertible **iff** $\tilde{Q}_1$ is a unit, that is iff $\langle\tilde{Q}_1\rangle_{\natural}\neq0$, in which case $L_{\tilde{Q}_1}^{-1} = L_{\tilde{Q}_1^{-1}}$ with $\tilde{Q}_1^{-1} = \tilde{Q}_1^{\natural}/\langle\tilde{Q}_1\rangle_{\natural}$; if $\langle\tilde{Q}_1\rangle_{\natural} = 0$ the element is a zero divisor and $L_{\tilde{Q}_1}$ is not invertible. So the group of units of the monoid is the image of the group of invertible elements, and **the zero divisors are the non-invertible maps**.
 
-Two features of the monoid are read physically and are stated here before the interpretation. The first is that the monoid is **oriented**. Since the product does not commute, $L_{\tilde{P}\tilde{Q}_1}\neq L_{\tilde{Q}_1\tilde{P}}$ in general, so the composition of the maps remembers the order of the operations; the element is an **ordered** operation and not a magnitude, and the same two operations composed in the two orders give two different maps. This is the map-level form of the corpus's statement that the material composition is oriented and cannot measure. The second is that the monoid has a **zero**: the zero element of the algebra gives the zero map, $L_0 = 0$, and it is absorbing, $L_{\tilde{Q}_1}\circ L_0 = L_0$. A monoid with a zero and with non-invertible elements is exactly the shape of a set of **processes** that can be composed and that can fail to be reversed, and this is the shape the interpretation uses.
+Two features of the monoid are read physically and are stated here before the interpretation. The first is that the monoid is **oriented**. Since the product does not commute, $L_{\tilde{Q}_3\tilde{Q}_1}\neq L_{\tilde{Q}_1\tilde{Q}_3}$ in general, so the composition of the maps remembers the order of the operations; the element is an **ordered** operation and not a magnitude, and the same two operations composed in the two orders give two different maps. This is the map-level form of the corpus's statement that the material composition is oriented and cannot measure. The second is that the monoid has a **zero**: the zero element of the algebra gives the zero map, $L_0 = 0$, and it is absorbing, $L_{\tilde{Q}_1}\circ L_0 = L_0$. A monoid with a zero and with non-invertible elements is exactly the shape of a set of **processes** that can be composed and that can fail to be reversed, and this is the shape the interpretation uses.
 
 ## Units and Zero Divisors: the Boundary of the Monoid
 
@@ -105,9 +105,9 @@ Read physically, the interpretation is the framework's **process–state split**
 - The interpretation does **not** add an operator algebra structure to the states. The monoid of maps is not a $C^{*}$-algebra, the idempotents are not given a trace rule by it, and the states remain the Hermitian idempotents of the framework; the trace and the positivity are *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
 - It does **not** claim that an element *is* an operator in the quantum sense. The left multiplication is a $\mathbb{C}$-linear map of the algebra, and the interpretation identifies the **process** with that map; whether the map is a quantum channel is a further question, and the completely positive form is read in the $2\times2$ article and not owned here.
 - It does **not** claim that a non-invertible map is automatically a measurement. The zero divisors give kernels; a measurement needs a projection onto a state, which is the idempotent side, and the passage from one to the other is the collapse and not the mere vanishing of $\langle\cdot\rangle_{\natural}$.
-- It does **not** turn the associativity of the monoid into a physical statement about time ordering. That the composition of the maps is associative is a theorem about composition, true for any algebra; what is read physically is the **order** encoded in $L_{\tilde{P}\tilde{Q}_1}\neq L_{\tilde{Q}_1\tilde{P}}$, not the associativity.
+- It does **not** turn the associativity of the monoid into a physical statement about time ordering. That the composition of the maps is associative is a theorem about composition, true for any algebra; what is read physically is the **order** encoded in $L_{\tilde{Q}_3\tilde{Q}_1}\neq L_{\tilde{Q}_1\tilde{Q}_3}$, not the associativity.
 
-**Open question — which composition is the physical one.** The monoid composes by $L_{\tilde{P}}\circ L_{\tilde{Q}_1}=L_{\tilde{P}\tilde{Q}_1}$, and the corresponding physical statement is that a process followed by a process is their product in that order. Associativity is order-blind, so the composition alone does not fix the order, and the order-sensitive object of the same row is the commutator, its antisymmetric half. **Which of the three — the associative product, its reverse, or the bracket — is the physical composition is open.**
+**Open question — which composition is the physical one.** The monoid composes by $L_{\tilde{Q}_3}\circ L_{\tilde{Q}_1}=L_{\tilde{Q}_3\tilde{Q}_1}$, and the corresponding physical statement is that a process followed by a process is their product in that order. Associativity is order-blind, so the composition alone does not fix the order, and the order-sensitive object of the same row is the commutator, its antisymmetric half. **Which of the three — the associative product, its reverse, or the bracket — is the physical composition is open.**
 
 ## Physical Readings
 
@@ -121,7 +121,7 @@ Read as a **horizon**, the zero-divisor cone is at once the locus of light, the 
 
 ## Summary
 
-An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}_1}$ and the right multiplication $R_{\tilde{Q}_1}$, with $L_{\tilde{P}}\circ L_{\tilde{Q}_1} = L_{\tilde{P}\tilde{Q}_1}$ and $R_{\tilde{P}}\circ R_{\tilde{Q}_1} = R_{\tilde{Q}_1\tilde{P}}$. The left multiplications form a **monoid** under composition: associative, with identity $L_{e_t}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.
+An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}_1}$ and the right multiplication $R_{\tilde{Q}_1}$, with $L_{\tilde{Q}_3}\circ L_{\tilde{Q}_1} = L_{\tilde{Q}_3\tilde{Q}_1}$ and $R_{\tilde{Q}_3}\circ R_{\tilde{Q}_1} = R_{\tilde{Q}_1\tilde{Q}_3}$. The left multiplications form a **monoid** under composition: associative, with identity $L_{e_t}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.
 
 The sandwich of the two matrix articles is the composition of a left action with a right action, $\operatorname{H}_{\tilde{Q}_1} = L_{\tilde{Q}_1}\circ R_{\tilde{Q}_1^{*}}$, which is why it is a congruence and not a similarity. The states are the Hermitian idempotents, and idempotent elements are idempotent maps under the injective representation; the Hermitian idempotents lie in $\mathbb{M}_+$ and $\mathbb{M}_-$ has none, the minimal ones are the rank-one Hermitian idempotents, and those are null and sit on the cone. The reading is the process–state split: the process is the map of the monoid, the state is the idempotent, the reversible dynamics is the group of units off the cone, and the measurement is the passage to a non-invertible map on it.
 
@@ -129,8 +129,8 @@ The sandwich of the two matrix articles is the composition of a left action with
 
 | Symbol | Meaning |
 |---|---|
-| $L_{\tilde{P}}$, $R_{\tilde{P}}$ | left and right multiplication by $\tilde{P}$, $L_{\tilde{P}}(\tilde{Q}_2)=\tilde{P}\tilde{Q}_2$, $R_{\tilde{P}}(\tilde{Q}_2)=\tilde{Q}_2\tilde{P}$ |
-| $L_{\tilde{P}}\circ L_{\tilde{Q}_1} = L_{\tilde{P}\tilde{Q}_1}$ | the composition rule of the left multiplications |
+| $L_{\tilde{Q}_3}$, $R_{\tilde{Q}_3}$ | left and right multiplication by $\tilde{Q}_3$, $L_{\tilde{Q}_3}(\tilde{Q}_2)=\tilde{Q}_3\tilde{Q}_2$, $R_{\tilde{Q}_3}(\tilde{Q}_2)=\tilde{Q}_2\tilde{Q}_3$ |
+| $L_{\tilde{Q}_3}\circ L_{\tilde{Q}_1} = L_{\tilde{Q}_3\tilde{Q}_1}$ | the composition rule of the left multiplications |
 | $\mathcal{L} = \{L_{\tilde{Q}_1}\}$ | the monoid of left multiplications |
 | $L_{e_t}$ | the identity of the monoid |
 | $\mathsf{M}_4, \mathsf{M}_4^{R}$ | the regular matrices of the $4\times4$ article |

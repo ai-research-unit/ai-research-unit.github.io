@@ -8,15 +8,15 @@ $$
 \mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C},
 $$
 
-with basis $1,i,j,ij$, relation $j^{2}=+1$, idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$ and element $Q_\pm=Q_++jQ_-$. Its four general products carry the four algebraic norms
+with basis $1,i,j,ij$, relation $j^{2}=+1$, idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$ and element $\breve Q=Q_++jQ_-$. Its four general products carry the four algebraic norms
 
 $$
-\langle Q_\pm\rangle=Q_+^{2}+Q_-^{2},\qquad \langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2},\qquad \langle Q_\pm\rangle_{*}=|Q_+|^{2}-|Q_-|^{2},\qquad \langle Q_\pm\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2},
+\langle \breve Q\rangle=Q_+^{2}+Q_-^{2},\qquad \langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2},\qquad \langle \breve Q\rangle_{*}=|Q_+|^{2}-|Q_-|^{2},\qquad \langle \breve Q\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2},
 $$
 
 the two bilinear ones complex-valued and the two sesquilinear ones real-valued. A form in four real variables has a null set, and the null set of a non-degenerate form has a projective geometry: its projectivisation is a quadric. This article owns that geometry for the reduced biquaternion algebra, for each of the four forms, and the comparison between them.
 
-The single most important fact is that the reduced algebra is the direct sum $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two complex lines, so its multiplicative norm factors as $\langle Q_\pm\rangle_{\natural}=(Q_+-Q_-)(Q_++Q_-)=Q_{++}Q_{--}$, a product of two linear forms in the complex coordinates; the projective null quadric of the reduced norm is therefore degenerate, a pair of lines, and not a smooth quadric. The companion smooth quadric is the one carried by the indefinite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose real signature is $(2,2)$ and whose projectivisation is a smooth ruled surface in real projective three-space. The definite form $\langle\cdot,\cdot\rangle_{\natural*}$ has no null points at all, and the plain bilinear form $\langle\cdot,\cdot\rangle$ degenerates exactly as $\langle\cdot,\cdot\rangle_{\natural}$ does.
+The single most important fact is that the reduced algebra is the direct sum $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ of two complex lines, so its multiplicative norm factors as $\langle \breve Q\rangle_{\natural}=(Q_+-Q_-)(Q_++Q_-)=Q_{++}Q_{--}$, a product of two linear forms in the complex coordinates; the projective null quadric of the reduced norm is therefore degenerate, a pair of lines, and not a smooth quadric. The companion smooth quadric is the one carried by the indefinite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose real signature is $(2,2)$ and whose projectivisation is a smooth ruled surface in real projective three-space. The definite form $\langle\cdot,\cdot\rangle_{\natural*}$ has no null points at all, and the plain bilinear form $\langle\cdot,\cdot\rangle$ degenerates exactly as $\langle\cdot,\cdot\rangle_{\natural}$ does.
 
 The article owns the four null sets, the degenerate quadric of the reduced norm with its two components, the smooth quadric of $\langle\cdot\rangle_{*}$ with its two rulings, the Segre identification with $\mathbb{P}^{1}_{\mathbb{R}}\times\mathbb{P}^{1}_{\mathbb{R}}$, the polarity that the forms induce, and the automorphism group of the smooth quadric. The forms and their Gram matrices are *The Four Products, Their Forms and Their Algebraic Norms*; the idempotent coordinates and the two ideals are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the zero divisors whose set is the null cone of $\langle\cdot\rangle_{\natural}$ are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the metric reading of the forms on the space is *Topology and Metric for Each of the Operations*; the real subspaces that the null set meets are *Introduction to the Remarkable Subspaces*. The smooth null quadric of the biquaternion algebra, in complex projective three-space, is *The Null Quadric and Its Projective Geometry*.
 
@@ -60,9 +60,9 @@ the two summands of the direct product, and the null cone of the reduced norm is
 
 ## The Degenerate Null Quadric of the Reduced Norm
 
-**Proposition (the reduced norm is a product of two linear forms).** In the idempotent coordinates the reduced norm is $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$, and in the complex coordinates it is $\langle\cdot\rangle_{\natural}=Q_+^{2}-Q_-^{2}=(Q_+-Q_-)(Q_++Q_-)$.
+**Proposition (the reduced norm is a product of two linear forms).** In the idempotent coordinates the reduced norm is $\langle \breve Q\rangle_{\natural}=Q_{++}Q_{--}$, and in the complex coordinates it is $\langle\cdot\rangle_{\natural}=Q_+^{2}-Q_-^{2}=(Q_+-Q_-)(Q_++Q_-)$.
 
-**Proof.** $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}=(Q_+-Q_-)(Q_++Q_-)$ by the identity for a difference of squares in a commutative ring, and $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$.
+**Proof.** $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}=(Q_+-Q_-)(Q_++Q_-)$ by the identity for a difference of squares in a commutative ring, and $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$.
 
 **Theorem (the quadric degenerates).** The projective null set of the reduced norm is the union of the two projective lines $\{Q_{--}=0\}$ and $\{Q_{++}=0\}$ of $\mathbb{P}^{3}_{\mathbb{R}}$; it is a quadric of rank two, a pair of lines, and it is not a smooth quadric surface. Over the complex reading the same null set is the two points $[1:0]$ and $[0:1]$ of $\mathbb{P}^{1}_{\mathbb{C}}$.
 
@@ -112,18 +112,18 @@ $$
 
 ## Summary
 
-The reduced biquaternion algebra carries four algebraic norms. The definite one, $\langle Q_\pm\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}$, has no null points. The two bilinear ones, $\langle Q_\pm\rangle=Q_+^{2}+Q_-^{2}$ and the reduced norm $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$, factor as products of two complex-linear forms, so their projective null sets are degenerate quadrics: a pair of skew lines in $\mathbb{P}^{3}_{\mathbb{R}}$, or a pair of points in the complex reading $\mathbb{P}^{1}_{\mathbb{C}}$. The two lines of the reduced norm are the two minimal ideals $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$, the two summands of the direct product, which is the reason the null quadric degenerates. The indefinite Hermitian form $\langle\cdot,\cdot\rangle_{*}=|Q_+|^{2}-|Q_-|^{2}$, of real signature $(2,2)$, is the one form whose null quadric is smooth: it is a doubly ruled quadric surface in $\mathbb{P}^{3}_{\mathbb{R}}$, ruled by the two families of totally isotropic planes $Q_-=e^{i\phi}Q_+$ and $Q_-=e^{i\phi}\bar Q_+$, isomorphic to $\mathbb{P}^{1}_{\mathbb{R}}\times\mathbb{P}^{1}_{\mathbb{R}}$ by the Segre map, and the two lines of the reduced norm are two members of one ruling. The form $\langle\cdot,\cdot\rangle_{*}$ induces a polarity whose polar plane at a point of the quadric is the tangent plane, while the null quadric of the reduced norm is degenerate. The projective automorphisms of the smooth quadric form the group $\mathrm{PO}(2,2)_{\mathbb{R}}\cong(\mathrm{PGL}_{2}(\mathbb{R})\times\mathrm{PGL}_{2}(\mathbb{R}))\rtimes(\mathbb{Z}/2)$, which acts on the two rulings and is far larger than the finite group of automorphisms of the algebra.
+The reduced biquaternion algebra carries four algebraic norms. The definite one, $\langle \breve Q\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}$, has no null points. The two bilinear ones, $\langle \breve Q\rangle=Q_+^{2}+Q_-^{2}$ and the reduced norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$, factor as products of two complex-linear forms, so their projective null sets are degenerate quadrics: a pair of skew lines in $\mathbb{P}^{3}_{\mathbb{R}}$, or a pair of points in the complex reading $\mathbb{P}^{1}_{\mathbb{C}}$. The two lines of the reduced norm are the two minimal ideals $\mathbb{C}\Pi_-$ and $\mathbb{C}\Pi_+$, the two summands of the direct product, which is the reason the null quadric degenerates. The indefinite Hermitian form $\langle\cdot,\cdot\rangle_{*}=|Q_+|^{2}-|Q_-|^{2}$, of real signature $(2,2)$, is the one form whose null quadric is smooth: it is a doubly ruled quadric surface in $\mathbb{P}^{3}_{\mathbb{R}}$, ruled by the two families of totally isotropic planes $Q_-=e^{i\phi}Q_+$ and $Q_-=e^{i\phi}\bar Q_+$, isomorphic to $\mathbb{P}^{1}_{\mathbb{R}}\times\mathbb{P}^{1}_{\mathbb{R}}$ by the Segre map, and the two lines of the reduced norm are two members of one ruling. The form $\langle\cdot,\cdot\rangle_{*}$ induces a polarity whose polar plane at a point of the quadric is the tangent plane, while the null quadric of the reduced norm is degenerate. The projective automorphisms of the smooth quadric form the group $\mathrm{PO}(2,2)_{\mathbb{R}}\cong(\mathrm{PGL}_{2}(\mathbb{R})\times\mathrm{PGL}_{2}(\mathbb{R}))\rtimes(\mathbb{Z}/2)$, which acts on the two rulings and is far larger than the finite group of automorphisms of the algebra.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\langle Q_\pm\rangle=Q_+^{2}+Q_-^{2}$ | the norm of the general plain bilinear product |
-| $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$ | the reduced norm, the norm of the general quaternionic bilinear product |
-| $\langle Q_\pm\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}$ | the norm of the general plain sesquilinear product, indefinite of signature $(2,2)$ |
-| $\langle Q_\pm\rangle_{\natural*}=\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}$ | the norm of the general quaternionic sesquilinear product, positive definite |
+| $\langle \breve Q\rangle=Q_+^{2}+Q_-^{2}$ | the norm of the general plain bilinear product |
+| $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$ | the reduced norm, the norm of the general quaternionic bilinear product |
+| $\langle \breve Q\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}$ | the norm of the general plain sesquilinear product, indefinite of signature $(2,2)$ |
+| $\langle \breve Q\rangle_{\natural*}=\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}$ | the norm of the general quaternionic sesquilinear product, positive definite |
 | $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$ | the two complex coordinates |
-| $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ | the idempotent coordinates, $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$ |
+| $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ | the idempotent coordinates, $\langle \breve Q\rangle_{\natural}=Q_{++}Q_{--}$ |
 | $\mathbb{P}^{3}_{\mathbb{R}}$ | the real projective space of the algebra read as a real four-space |
 | $\mathbb{P}^{1}_{\mathbb{C}}$ | the complex projective space of the algebra read as a complex two-space |
 | $\mathcal{F}_{1}(\phi)=\{Q_-=e^{i\phi}Q_+\}$ | the first ruling of totally isotropic planes |

@@ -24,7 +24,7 @@ The bar and the natural sign are the two generators, and the star is their compo
 
 **An involution of the algebra splits the real space into the fixed and the anti-fixed space, and the two are complementary.**
 
-**Definition.** For an involution $\sigma$ of $\mathbb{B}_{\mathrm{r}}$ the **fixed space** is $\{Q_\pm:\sigma(Q_\pm)=Q_\pm\}$ and the **anti-fixed space** is $\{Q_\pm:\sigma(Q_\pm)=-Q_\pm\}$.
+**Definition.** For an involution $\sigma$ of $\mathbb{B}_{\mathrm{r}}$ the **fixed space** is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the **anti-fixed space** is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.
 
 **Proposition.** For an involution $\sigma$ the fixed and the anti-fixed space are real subspaces, they meet in $\{0\}$, and their sum is the whole space; over $\mathbb{R}$ they are the eigenspaces of $\sigma$ for the eigenvalues $+1$ and $-1$, and the projections onto them are
 $$
@@ -80,11 +80,11 @@ $$
 
 **The Hermitian subspace is the fixed plane of the star and the anti-Hermitian subspace its anti-fixed plane; the two are the real and the imaginary part of the star.**
 
-**Definition.** An element is **Hermitian** when $Q_\pm^{*}=Q_\pm$ and **anti-Hermitian** when $Q_\pm^{*}=-Q_\pm$; the **Hermitian subspace** is $\mathbb{R}\{1,ij\}$ and the **anti-Hermitian subspace** is $\mathbb{R}\{i,j\}$.
+**Definition.** An element is **Hermitian** when $\breve Q^{*}=\breve Q$ and **anti-Hermitian** when $\breve Q^{*}=-\breve Q$; the **Hermitian subspace** is $\mathbb{R}\{1,ij\}$ and the **anti-Hermitian subspace** is $\mathbb{R}\{i,j\}$.
 
 **Proposition.** Every element decomposes uniquely as the sum of a Hermitian and an anti-Hermitian part,
 $$
-Q_\pm=Q_{\mathrm H}+Q_{\mathrm A},\qquad Q_{\mathrm H}=\tfrac12(Q_\pm+Q_\pm^{*}),\quad Q_{\mathrm A}=\tfrac12(Q_\pm-Q_\pm^{*}),
+\breve Q=Q_{\mathrm H}+Q_{\mathrm A},\qquad Q_{\mathrm H}=\tfrac12(\breve Q+\breve Q^{*}),\quad Q_{\mathrm A}=\tfrac12(\breve Q-\breve Q^{*}),
 $$
 and the two parts are the projections of §*The Fixed and Anti-Fixed Space of an Involution* for $\sigma={}^{*}$.
 
@@ -92,7 +92,7 @@ and the two parts are the projections of §*The Fixed and Anti-Fixed Space of an
 
 **Corollary (the norms on the two planes).** On the Hermitian subspace the algebraic norm is $\langle a+bij\rangle_{\natural}=a^{2}+b^{2}>0$ for a nonzero element, so every nonzero Hermitian element is a unit; on the anti-Hermitian subspace the norm is $\langle ai+bj\rangle_{\natural}=-a^{2}-b^{2}<0$. The star plane is the copy $\mathbb{R}\{1,ij\}\cong\mathbb{C}$ of the complex field inside the algebra, the element $ij$ playing the role of the imaginary unit, since $(ij)^{2}=i^{2}j^{2}=(-1)(+1)=-1$.
 
-**Remark (Hermitian is not positive).** The name refers to the star and not to a sign of a form: the general plain sesquilinear form has the value $\langle Q_\pm\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}=a^{2}-b^{2}$ on a Hermitian element $Q_\pm=a+bij$, which is indefinite in $a,b$. The definite form of the algebra is the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$, and the positivity of $\langle\cdot\rangle_{\natural}$ on the Hermitian subspace is the positivity of the diagonal of a bilinear form, not of $\langle\cdot,\cdot\rangle_{*}$. The forms are *The Forms of the Algebra of the Reduced Biquaternions*.
+**Remark (Hermitian is not positive).** The name refers to the star and not to a sign of a form: the general plain sesquilinear form has the value $\langle \breve Q\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}=a^{2}-b^{2}$ on a Hermitian element $\breve Q=a+bij$, which is indefinite in $a,b$. The definite form of the algebra is the general quaternionic sesquilinear form $\langle\cdot,\cdot\rangle_{\natural*}$, and the positivity of $\langle\cdot\rangle_{\natural}$ on the Hermitian subspace is the positivity of the diagonal of a bilinear form, not of $\langle\cdot,\cdot\rangle_{*}$. The forms are *The Forms of the Algebra of the Reduced Biquaternions*.
 
 ## The Idempotent Lines
 
@@ -100,7 +100,7 @@ and the two parts are the projections of §*The Fixed and Anti-Fixed Space of an
 
 **Theorem (the idempotent lines).** The multiplication by $j$ has the two eigenvalues $+1$ and $-1$ and the two eigenlines
 $$
-\mathbb{C}\Pi_+=\mathbb{R}\{\Pi_+,i\Pi_+\}=\{Q_\pm:jQ_\pm=Q_\pm\},\qquad \mathbb{C}\Pi_-=\{Q_\pm:jQ_\pm=-Q_\pm\},
+\mathbb{C}\Pi_+=\mathbb{R}\{\Pi_+,i\Pi_+\}=\{\breve Q:j\breve Q=\breve Q\},\qquad \mathbb{C}\Pi_-=\{\breve Q:j\breve Q=-\breve Q\},
 $$
 each of real dimension two, with $\Pi_{\pm}=\tfrac12(1\pm j)$.
 
@@ -147,7 +147,7 @@ All the other pairs sum to a real three-dimensional space, since their intersect
 
 **On the six coordinate planes the norm is either positive definite, negative definite or split, and on the idempotent lines it vanishes identically.**
 
-**Theorem (the norms).** The algebraic norm $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ restricted to the spaces is
+**Theorem (the norms).** The algebraic norm $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ restricted to the spaces is
 
 | space | parametrisation | $N$ | sign |
 |---|---|---|---|
@@ -161,7 +161,7 @@ All the other pairs sum to a real three-dimensional space, since their intersect
 
 with $a,b\in\mathbb{R}$.
 
-*Proof.* Substitute each parametrisation into $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$: for $Q_\pm=a+bj$ the coordinates are $Q_+=a$, $Q_-=b$, so $N=a^{2}-b^{2}$; for $Q_\pm=a+bij$ they are $Q_+=a$, $Q_-=ib$, so $N=a^{2}-(ib)^{2}=a^{2}+b^{2}$; for $Q_\pm=ai+bj$ they are $Q_+=ai$, $Q_-=b$, so $N=(ai)^{2}-b^{2}=-(a^{2}+b^{2})$; and for $Q_\pm=x\Pi_+$ or $Q_\pm=x\Pi_-$ the coordinates have $Q_+\pm Q_-=0$, so $N=0$. The complex cases are the two complex lines and the two split planes.
+*Proof.* Substitute each parametrisation into $\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}$: for $\breve Q=a+bj$ the coordinates are $Q_+=a$, $Q_-=b$, so $N=a^{2}-b^{2}$; for $\breve Q=a+bij$ they are $Q_+=a$, $Q_-=ib$, so $N=a^{2}-(ib)^{2}=a^{2}+b^{2}$; for $\breve Q=ai+bj$ they are $Q_+=ai$, $Q_-=b$, so $N=(ai)^{2}-b^{2}=-(a^{2}+b^{2})$; and for $\breve Q=x\Pi_+$ or $\breve Q=x\Pi_-$ the coordinates have $Q_+\pm Q_-=0$, so $N=0$. The complex cases are the two complex lines and the two split planes.
 
 **Corollary (the zero divisors).** The two idempotent lines are exactly the null set of the norm, and their nonzero elements are the zero divisors of *Zero Divisors of the Algebra of the Reduced Biquaternions*; the Hermitian and anti-Hermitian subspaces are the two kinds of element on which the norm has a definite sign, and the real subalgebra and its $i$-multiple are the two split planes.
 

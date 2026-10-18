@@ -212,16 +212,16 @@ $$
 
 This is the trace formula of the framework, and it is derived, not assumed.
 
-**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde P\tilde H)$ on each sector. For $\tilde P=p_te_t+i\vec p$ and $\tilde H=h_0e_t+i\vec h$ in $\mathbb{M}_+$,
+**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde P\tilde H)$ on each sector. For $\tilde P=p_te_t+i\vec p'$ and $\tilde H=h_te_t+i\vec h$ in $\mathbb{M}_+$,
 
 $$
-\mathrm{Tr}(\tilde P\tilde H)=2\bigl(p_th_0+\vec p\cdot\vec h\bigr),
+\mathrm{Tr}(\tilde P\tilde H)=2\bigl(p_th_t+\vec p'\cdot\vec h\bigr),
 $$
 
-which is real and positive definite; for $\tilde P=ip'_te_t+\vec p$ and $\tilde H=ih_0e_t+\vec h$ in $\mathbb{M}_-$,
+which is real and positive definite; for $\tilde P=ip'_te_t+\vec p$ and $\tilde H=ih'_te_t+\vec h$ in $\mathbb{M}_-$,
 
 $$
-\mathrm{Tr}(\tilde P\tilde H)=-2\bigl(p'_th_0+\vec p\cdot\vec h\bigr),
+\mathrm{Tr}(\tilde P\tilde H)=-2\bigl(p'_th'_t+\vec p\cdot\vec h\bigr),
 $$
 
 which is real and negative definite; and for one argument in each sector the value is purely imaginary. Hence the real part of the trace form is positive definite on $\mathbb{M}_+$, negative definite on $\mathbb{M}_-$, and the two sectors are orthogonal for it:
@@ -232,10 +232,10 @@ $$
 
 is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
-**The expectation-value form.** For a state $\tilde P=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H=h_0e_t+i\vec h$, the trace formula gives
+**The expectation-value form.** For a state $\tilde P=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H=h_te_t+i\vec h$, the trace formula gives
 
 $$
-\mathrm{Tr}(\tilde P\tilde H)=h_0+\mu\cdot\vec h,
+\mathrm{Tr}(\tilde P\tilde H)=h_t+\mu\cdot\vec h,
 $$
 
 the Born-rule expectation value. This is an application of the derived trace, not a new posit.

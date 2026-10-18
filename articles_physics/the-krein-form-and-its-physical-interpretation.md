@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ c
 products, and the fourth is the **Krein form**
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu}=P_t\overline{Q_t}-P_x\overline{Q_x}-P_y\overline{Q_y}-P_z\overline{Q_z},
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{1t}\overline{Q_{2t}}-Q_{1x}\overline{Q_{2x}}-Q_{1y}\overline{Q_{2y}}-Q_{1z}\overline{Q_{2z}},
 $$
 
 the gauge form of the framework: Hermitian, indefinite, of signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over
@@ -36,7 +36,7 @@ element. All conventions are those of *Conventions in the Biquaternion Universe*
 
 - **The fundamental symmetry.** The natural conjugation $J={}^{\natural}$ is a fundamental symmetry of the form: it is
 $\mathbb{C}$-**linear**, $J^{2}=\mathrm{id}$, self-adjoint for the Krein form, and it carries the bridge identity
-$\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*}$ from the indefinite form to the positive
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,J\tilde Q_2\rangle_{*}$ from the indefinite form to the positive
 definite Hermitian one. Owner: *The Fundamental Symmetry of the Biquaternioid Algebra*.
 - **The eigenspaces and the family.** The eigenspaces of $J$ are the centre and the vector subspace, and they are the
 **fundamental decomposition** of the algebra; all the other fundamental symmetries are parametrised by the open unit ball
@@ -51,7 +51,7 @@ $\mathbb{R}$. Owner: *The Fundamental Symmetry of the Biquaternioid Algebra*.
 - **The Gram matrix.** In the coefficient basis the Gram matrix is the sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$ of
 determinant $-1$, and in the real basis it is $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$; in the $2\times2$
 model the form is the Hilbert–Schmidt pairing
-$\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde Q)^{\dagger}\mathsf{M}_2(\tilde P))$.
+$\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde Q_2)^{\dagger}\mathsf{M}_2(\tilde Q_1))$.
 Owner: *The Krein Gram Matrix and the Restrictions of the Form*.
 - **The restrictions.** By Sylvester's law the inertia is $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$; on the
 remarkable subspaces the restriction is $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the
@@ -108,7 +108,7 @@ $J$-Cartan involution $\theta_J(T)=(T^{\dagger})^{-1}$ has the fixed group $U_J(
 - **The gauge form pairs two frames and never ranks them.** It is indefinite — positive on the centre directions and negative
 on the vector ones — so it fixes no overall sign and ranks nothing. It normalises nothing: its real value at equal arguments
 carries a signature and is not a weight. The definite companion that carries a weight is the Hermitian form
-$\langle\tilde P,\tilde Q\rangle_{*}$, the Born pairing, and the two are the invariant pair of the frame — the same pair the
+$\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, the Born pairing, and the two are the invariant pair of the frame — the same pair the
 gauge band reads as a product.
 - **On matter, the gauge form and the interval are one form read with a sign.** On the material sector the Krein form is minus
 the interval, $\langle\cdot,\cdot\rangle_{\natural*}=-\langle\cdot,\cdot\rangle_{\natural}$, so the gauge calibration of matter
@@ -144,7 +144,7 @@ compares frames and never counts states — the counting is the Hermitian form's
 
 ## Summary
 
-The Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is the fourth form of
+The Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ is the fourth form of
 the biquaternion algebra, the indefinite Hermitian gauge form of signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over
 $\mathbb{R}$. Its structure is fivefold and is owned on the mathematics side: the fundamental symmetry $J={}^{\natural}$ with the
 bridge to the definite form, the Gram matrix and the signatures of the restrictions, the isotropic structure with the doubly-null
@@ -156,11 +156,11 @@ with a sign; the readings above are the framework's, each labelled, and none of 
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the gauge form; signature $(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the Krein form, the gauge form; signature $(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the gauge inside the product |
 | $E=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of the form in the coefficient basis |
 | $J={}^{\natural}$ | the fundamental symmetry, $\mathbb{C}$-linear, $J^{2}=\mathrm{id}$ |
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*}$ | the bridge from the indefinite form to the definite one |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,J\tilde Q_2\rangle_{*}$ | the bridge from the indefinite form to the definite one |
 | $\mathcal{K}=\{\lVert c\rVert_E=\lVert v\rVert_E\}$ | the Krein null set, of real dimension $7$ |
 | $\mathbb{C}(e_t\pm i\hat\mu)$ | the doubly-null lines, crossing of the Krein and the zero-divisor cones |
 | $\mathbb{C}(e_t+\tilde V)$, $\lVert\tilde V\rVert_E<1$ | the maximal positive definite subspaces, the time axes |

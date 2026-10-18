@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **symmetric plain sesqualgebra**, written $\mathrm{SPS}$, whose product is the symmetrisation of the plain sesquilinear product, $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}+\tilde Q^{*}\tilde P)$. It is the symmetric sibling of the probability structure, and its job in the framework is **positivity**: its values are central, its algebraic norm is the positive definite form $\langle\tilde P,\tilde Q\rangle_{*}$, and its one-sided operators are the framework's ways of asking a question of a state.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **symmetric plain sesqualgebra**, written $\mathrm{SPS}$, whose product is the symmetrisation of the plain sesquilinear product, $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1)$. It is the symmetric sibling of the probability structure, and its job in the framework is **positivity**: its values are central, its algebraic norm is the positive definite form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and its one-sided operators are the framework's ways of asking a question of a state.
 
 The mathematics of the structure is owned by the group *The Biquaternioid Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the Hermitian form is $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
 ### Basic Properties
 
-- **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}+\tilde Q^{*}\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-sesquilinear in the appropriate sense and **conjugate-commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric sesqualgebra. Owner: *Introduction to the Symmetric Plain Sesqualgebra*.
+- **The operation.** The product $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-sesquilinear in the appropriate sense and **conjugate-commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric sesqualgebra. Owner: *Introduction to the Symmetric Plain Sesqualgebra*.
 - **The absence of a unit.** The structure has no unit: the two one-sided actions of $e_t$ return the star and the natural conjugate of the argument, not the argument. Owner: *Introduction to the Symmetric Plain Sesqualgebra*.
-- **The algebraic norm and invertibility.** The norm of the structure is the Hermitian form $\langle\tilde P,\tilde Q\rangle_{*}$, positive definite; the invertibility criterion and the one-sided inverses. Owner: *Norm and Invertibility in the Symmetric Plain Sesqualgebra*.
+- **The algebraic norm and invertibility.** The norm of the structure is the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, positive definite; the invertibility criterion and the one-sided inverses. Owner: *Norm and Invertibility in the Symmetric Plain Sesqualgebra*.
 - **Zero divisors.** The zero-divisor set of the product and the set on which its values vanish. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 - **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 - **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure. Owners: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -23,7 +23,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the Symmetric Plain Sesqualgebra*.
 - **The conjugate-commutative law and the idempotents.** The law of the product and the idempotents it carries, which are the projections of the state side. Owner: *The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra*.
-- **The Hermitian form as a product.** The Hermitian form $\langle\tilde P,\tilde Q\rangle_{*}$ is the product itself read on the state side, where the operation is the whole of the plain product and returns a central value. Owner: *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*.
+- **The Hermitian form as a product.** The Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is the product itself read on the state side, where the operation is the whole of the plain product and returns a central value. Owner: *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*.
 - **The remarkable subspaces and the realification.** The restriction of the product and of its form to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Symmetric Plain Sesqualgebra*, *The Realification of the Eight Derived Structures*.
 
 ### Operators
@@ -47,16 +47,16 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 
 ## Summary
 
-The biquaternioid symmetric plain sesqualgebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}+\tilde Q^{*}\tilde P)$ over $\mathbb{C}$, the positivity band of the framework: conjugate-commutative, without a unit, with the positive definite Hermitian form $\langle\tilde P,\tilde Q\rangle_{*}$ as its algebraic norm, with central values and with a calculus of rank-one question operators and no motion. Its pairing is the measurement pairing, real on the state side and silent about the phase; the phase belongs to the antisymmetric sibling. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid symmetric plain sesqualgebra is the structure $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1)$ over $\mathbb{C}$, the positivity band of the framework: conjugate-commutative, without a unit, with the positive definite Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ as its algebraic norm, with central values and with a calculus of rank-one question operators and no motion. Its pairing is the measurement pairing, real on the state side and silent about the phase; the phase belongs to the antisymmetric sibling. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}+\tilde Q^{*}\tilde P)$ | the symmetric plain sesquilinear product, $\mathrm{SPS}$ |
-| $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$ | the Hermitian form; the algebraic norm |
+| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1)$ | the symmetric plain sesquilinear product, $\mathrm{SPS}$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the Hermitian form; the algebraic norm |
 | $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}\ge0$ | positivity of the norm |
-| $\tilde P\star\tilde Q=\mathrm{Sc}(\tilde P\tilde Q)e_t=\langle\tilde P,\tilde Q\rangle_{*}e_t$ | the product on the state side |
+| $\tilde Q_1\star\tilde Q_2=\mathrm{Sc}(\tilde Q_1\tilde Q_2)e_t=\langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t$ | the product on the state side |
 | $\tfrac12\operatorname{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2)$ | the trace pairing; one half of the amplitude |
 | $R^{\star}_{\tilde Q_2}$, $L^{\star}_{\tilde Q_2}$ | the two one-sided operators of the band |
 | $\mathbb{M}_+$ | the informational sector; the state side |

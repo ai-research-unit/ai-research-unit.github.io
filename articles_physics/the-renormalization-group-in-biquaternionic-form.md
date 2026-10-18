@@ -16,7 +16,7 @@ The article is organized as follows. The next section fixes what the RG is and s
 
 **Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The wave biquaternion is $\tilde{P} = iE\,e_t + \vec p$ (natural units $\hbar = c = 1$), with biquaternion norm $\tilde{P}\tilde{P}^{\natural} = -p^2$ and mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2$. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged. The **Hermitian form** (the general plain sesquilinear form of the mathematics companions) is
 $$
-\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_\mu P_\mu\overline{Q_\mu},
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 real and positive definite of signature $(8,0)$ on $\mathbb{B}$; on the material sector it is the Euclidean square, $\langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$. Euclidean momenta are denoted $k_E$, with $k_E^2 = \langle\tilde{P}_E,\tilde{P}_E\rangle_{*} \ge 0$ for the material element $\tilde{P}_E = ik_E^0\,e_t+\vec p$. The standard route to the Euclidean momentum is the Wick rotation, the identification $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ of the path-integral and Wick-rotation articles, written in coordinates as $E \to ik_E^0$; the alternative route taken for the cutoff is the Hermitian form of that same material element, and the two agree by an identity. Throughout, $\mathrm{Tr}$ in a **functional** expression is the trace over field space, not the biquaternion trace $2\,\mathrm{Sc}(\cdot)$; the distinction is flagged where it matters.
 
@@ -62,7 +62,7 @@ $$
 \langle\tilde{P}\rangle_{\natural} = \tilde{P}\tilde{P}^{\natural} = (iE)^2 + \vec p^2 = -E^2 + \vec p^2 = -p^2 .
 $$
 
-This is the object on which the mass shell is the single condition $\tilde{P}\tilde{P}^{\natural} = -m^2$, as the propagator article records. It has a property that matters here and is verified in the companion: for a general biquaternion $\tilde{P} = k_0e_t + k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ with complex coefficients, the product $\tilde{P}\tilde{P}^{\natural} = k_0^2 + k_1^2 + k_2^2 + k_3^2$ is a **complex scalar times $e_t$** — it has no vector part — and therefore lies in the centre and commutes with every element of $\mathbb{B}$. The biquaternion norm is central.
+This is the object on which the mass shell is the single condition $\tilde{P}\tilde{P}^{\natural} = -m^2$, as the propagator article records. It has a property that matters here and is verified in the companion: for a general biquaternion $\tilde{Q} = k_0e_t + k_1\vec e_x + k_2\vec e_y + k_3\vec e_z$ with complex coefficients, the product $\tilde{Q}\tilde{Q}^{\natural} = k_0^2 + k_1^2 + k_2^2 + k_3^2$ is a **complex scalar times $e_t$** — it has no vector part — and therefore lies in the centre and commutes with every element of $\mathbb{B}$. The biquaternion norm is central.
 
 **The standard route: the Wick rotation, quoted.** Under the Wick rotation $E \to i k_E^0$ (equivalently the identification $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ of the companion article), the biquaternion norm becomes
 
@@ -365,7 +365,7 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $\tilde{P} = iE\,e_t + \vec p$ | Wave biquaternion; material for real $E$ |
 | $\tilde{P}_E = ik_E^0\,e_t + \vec p \in \mathbb{M}_-$ | Euclidean wave biquaternion of the form route |
 | $\tilde{P}\tilde{P}^{\natural} = -p^2$ | Biquaternion norm; central; cutoff invariant |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_\mu P_\mu\overline{Q_\mu}$ | Hermitian form; real, positive definite; carries the positivity of the cutoff |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | Hermitian form; real, positive definite; carries the positivity of the cutoff |
 | $k_E^2 = \langle\tilde{P}_E,\tilde{P}_E\rangle_{*} = \langle -k_E^0\,e_t+\vec p\rangle_{\natural}$ (Euclidean) | Euclidean momentum squared; the two routes agree |
 | $\Lambda$, $b$, $\delta\ell = \log b$ | Cutoff, shell ratio, RG step toward the IR |
 | $\mu$ | Renormalization scale |

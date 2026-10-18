@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$, element $Q_\pm=Q_++jQ_-$ and idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$. Its general plain sesquilinear form
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$, element $\breve Q=Q_++jQ_-$ and idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$. Its general plain sesquilinear form
 
 $$
-\langle Q_{\pm,1},Q_{\pm,2}\rangle_{\mathrm{H}}=\mathrm{Sc}(Q_{\pm,1}Q_{\pm,2}^{*})=Q_{1+}\bar Q_{2+}-Q_{1-}\bar Q_{2-},
+\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{H}}=\mathrm{Sc}(\breve Q_{1}\breve Q_{2}^{*})=Q_{1+}\bar Q_{2+}-Q_{1-}\bar Q_{2-},
 $$
 
-whose quadratic form is $\langle Q_\pm\rangle_{*}=|Q_+|^{2}-|Q_-|^{2}=q_+^{2}+q'^{2}_{+}-q_-^{2}-q'^{2}_{-}$, is real of signature $(2,2)$; it is the indefinite form of the algebra, and the article reads the hyperbolic geometry it carries.
+whose quadratic form is $\langle \breve Q\rangle_{*}=|Q_+|^{2}-|Q_-|^{2}=q_+^{2}+q'^{2}_{+}-q_-^{2}-q'^{2}_{-}$, is real of signature $(2,2)$; it is the indefinite form of the algebra, and the article reads the hyperbolic geometry it carries.
 
 The result is a degeneracy that is exact and worth stating plainly: the indefinite form carries a hyperbolic geometry, but the largest multiplication-invariant object that realises it is one-dimensional. The plane $\mathbb{R}\{1,j\}$ spanned by the unit and the hyperbolic unit is a subalgebra isomorphic to the split-complex numbers, the form restricts to it with signature $(1,1)$, and the level set $\{|Q_+|^{2}-|Q_-|^{2}=-1\}$ inside that plane is a hyperbola, the hyperbolic line. The norm-one units of the subalgebra act on it as the boosts, and the natural sign and the flat (the negative of the star) are the two reflections, so that the algebra reaches the full isometry group $O(1,1)$. Larger subspaces of signature $(2,1)$, which would carry a hyperbolic plane, exist and are determined by the form, but the algebra's multiplication does not preserve any of them: the only multiplications that preserve such a subspace are the central real scalars $\pm1$, so no hyperbolic-plane isometry is realised by the algebra itself.
 
 The article owns the signature pattern of the indefinite form, the split-complex subalgebra and its hyperbolic line, the hyperboloid model with its metric and geodesics, the boundary and the conformal picture, the classification of the isometries the algebra supplies, and the negative statement about the signature-$(2,1)$ subspaces. The form and its Gram matrix are *The Four Products, Their Forms and Their Algebraic Norms*; the idempotent coordinates are *Reduced Biquaternion Space*; the null cone and its projective geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions* and *The Null Quadric and Its Projective Geometry*; the multiplicative action of the units and the isometry groups of the four forms are *Reduced Biquaternion Rotations and Lorentz Transformations*; the remarkable subspaces and the involutions are *Introduction to the Remarkable Subspaces* and *The Two Involutions and the Group of Involutions*. The split-complex companion, which is the same algebra over $\mathbb{R}$, is *Hyperbolic Geometry* and *Hyperbolic Rotations*; the split-biquaternion companion, where the hyperbolic three-space is carried by the anti-Hermitian subspace, is *Split-Biquaternions and Hyperbolic Geometry*.
 
-**Conventions.** The four real coordinates of $Q_\pm=Q_++jQ_-$ are $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$; the form $\langle Q_\pm\rangle_{*}=q_+^{2}+q'^{2}_{+}-q_-^{2}-q'^{2}_{-}$ is the quadratic form of $\langle\cdot,\cdot\rangle_{\mathrm{H}}$; a **hyperbolic line** is a one-dimensional hyperbolic space, that is one sheet of a hyperbola, and a **hyperbolic plane** is a two-dimensional hyperbolic space.
+**Conventions.** The four real coordinates of $\breve Q=Q_++jQ_-$ are $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$; the form $\langle \breve Q\rangle_{*}=q_+^{2}+q'^{2}_{+}-q_-^{2}-q'^{2}_{-}$ is the quadratic form of $\langle\cdot,\cdot\rangle_{\mathrm{H}}$; a **hyperbolic line** is a one-dimensional hyperbolic space, that is one sheet of a hyperbola, and a **hyperbolic plane** is a two-dimensional hyperbolic space.
 
 ## The Indefinite Form and the Subspaces it Defines
 
@@ -24,7 +24,7 @@ The article owns the signature pattern of the indefinite form, the split-complex
 
 **Corollary (which subspace could carry which geometry).** A hyperbolic line lives in a subspace of signature $(1,1)$ and a hyperbolic plane in a subspace of signature $(2,1)$; a definite subspace of signature $(2,0)$ or $(0,2)$ carries no hyperbolic geometry.
 
-**Remark (the two kinds of distinguished subspace).** The involution bar has its anti-invariant plane $\{Q_\pm:\bar Q_\pm=-Q_\pm\}=\mathbb{R}\{i,ij\}$, of signature $(1,1)$, and the star has its anti-invariant plane $\{Q_\pm:Q_\pm^{*}=-Q_\pm\}=\mathbb{R}\{i,j\}$, also of signature $(1,1)$; both are hyperbolic lines, and each is preserved by the three involutions of the Klein four-group. The planes $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ are the two split-complex subalgebras of the algebra, and they are the multiplication-invariant ones.
+**Remark (the two kinds of distinguished subspace).** The involution bar has its anti-invariant plane $\{\breve Q:\bar{\breve Q}=-\breve Q\}=\mathbb{R}\{i,ij\}$, of signature $(1,1)$, and the star has its anti-invariant plane $\{\breve Q:\breve Q^{*}=-\breve Q\}=\mathbb{R}\{i,j\}$, also of signature $(1,1)$; both are hyperbolic lines, and each is preserved by the three involutions of the Klein four-group. The planes $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ are the two split-complex subalgebras of the algebra, and they are the multiplication-invariant ones.
 
 ## The Split-Complex Subalgebra and the Hyperbolic Line
 
@@ -35,7 +35,7 @@ The article owns the signature pattern of the indefinite form, the split-complex
 **Theorem (the hyperbolic line).** In the split-complex subalgebra the level set of the negative norm is the hyperbola
 
 $$
-\{Q_\pm\in\mathbb{D}:\langle Q_\pm\rangle_{*}=-1\}=\{q_++jq_-:q_+^{2}-q_-^{2}=-1\},
+\{\breve Q\in\mathbb{D}:\langle \breve Q\rangle_{*}=-1\}=\{q_++jq_-:q_+^{2}-q_-^{2}=-1\},
 $$
 
 with its two branches $q_-\geq1$ and $q_-\leq-1$; each branch is a hyperbolic line under the metric whose distance is
@@ -100,7 +100,7 @@ and the sphere of radius $t$ about $P$ is the intersection of the hyperboloid wi
 
 **Theorem (the multiplicative isometries).** A unit $P$ acts by multiplication as an isometry of the indefinite form $\langle\cdot,\cdot\rangle_{*}$ exactly when $p\bar q=1$ in the idempotent coordinates; the group of such units is the split unitary group $\{p\bar q=1\}\cong\mathbb{C}^{\times}$ of *The Unitary Group of the Reduced Biquaternion Algebra*, the versors $\{N=1\}$ of *Reduced Biquaternion Versors and the Orthogonal Group* preserve the bilinear companion of the form, and the involutions $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$ supply the reflections.
 
-**Proof.** $\langle P Q_\pm\rangle_{*}=\mathrm{Re}\bigl(p\bar q\,Q_{++}\bar Q_{--}\bigr)$ and $\langle Q_\pm\rangle_{*}=\mathrm{Re}\bigl(Q_{++}\bar Q_{--}\bigr)$, so the multiplicative preservation of $\langle\cdot\rangle_{*}$ for all $Q_\pm$ is the condition $p\bar q=1$; the versors preserve the bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ by its scaling law, and the involutions are isometries or conjugate-isometries by *The Two Involutions and the Group of Involutions*.
+**Proof.** $\langle P \breve Q\rangle_{*}=\mathrm{Re}\bigl(p\bar q\,Q_{++}\bar Q_{--}\bigr)$ and $\langle \breve Q\rangle_{*}=\mathrm{Re}\bigl(Q_{++}\bar Q_{--}\bigr)$, so the multiplicative preservation of $\langle\cdot\rangle_{*}$ for all $\breve Q$ is the condition $p\bar q=1$; the versors preserve the bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ by its scaling law, and the involutions are isometries or conjugate-isometries by *The Two Involutions and the Group of Involutions*.
 
 **Proposition (the classification).** An element of the split unitary group, written in the idempotent coordinates as $(p,q)=(r\exp(i\theta),r^{-1}\exp(i\theta))$ with $r>0$ real, is the product of the two commuting factors $(r,r^{-1})$ and $(\exp(i\theta),\exp(i\theta))$: the first, real and positive, preserves each of the split planes $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ and acts on it as the boost of parameter $\log r$, and the second, of unit modulus, preserves each of the definite planes $\mathbb{R}\{1,i\}$ and $\mathbb{R}\{j,ij\}$ and acts on it as the rotation of angle $\theta$. The elements with $r=1$ are the elliptic ones, those with $\theta=0$ the hyperbolic ones; there is no parabolic class, because a form of signature $(1,1)$ in two variables has no unipotent isometry.
 
@@ -112,7 +112,7 @@ and the sphere of radius $t$ about $P$ is the intersection of the hyperboloid wi
 
 **Proposition (only the central scalars act).** Let $W$ be the real three-space $\mathbb{R}\{1,i,j\}$. If a unit $P$ satisfies $PW\subset W$ then $P$ is a nonzero real scalar, and if in addition $P$ preserves the form $\langle\cdot,\cdot\rangle_{*}$ then $P=\pm1$; consequently the multiplication by the units realises no nontrivial isometry of the hyperbolic plane that $W$ carries.
 
-**Proof.** Write $P=P_{0}+P_{1}j$ with $P_{0},P_{1}\in\mathbb{C}$ and let $Q_\pm=q_++iq'_++jq_-$ run over $W$. The product is $P Q_\pm=(P_{0}q_++P_{0}iq'_++P_{1}q_-)+(P_{0}q_-+P_{1}q_+)j+P_{1}q'_{+}\,ij$, so the $ij$-coefficient $P_{1}q'_+$ must vanish for every real $q'_+$, which forces $P_{1}=0$; then $P Q_\pm=P_{0}q_++P_{0}iq'_++P_{0}q_-\,j$, and its $j$-coefficient $P_{0}q_-$ must be real for every real $q_-$, which forces $P_{0}$ real. Hence $P=P_{0}$ is a nonzero real scalar, and the preservation of the form among the real scalars leaves $P_{0}=\pm1$.
+**Proof.** Write $P=P_{0}+P_{1}j$ with $P_{0},P_{1}\in\mathbb{C}$ and let $\breve Q=q_++iq'_++jq_-$ run over $W$. The product is $P \breve Q=(P_{0}q_++P_{0}iq'_++P_{1}q_-)+(P_{0}q_-+P_{1}q_+)j+P_{1}q'_{+}\,ij$, so the $ij$-coefficient $P_{1}q'_+$ must vanish for every real $q'_+$, which forces $P_{1}=0$; then $P \breve Q=P_{0}q_++P_{0}iq'_++P_{0}q_-\,j$, and its $j$-coefficient $P_{0}q_-$ must be real for every real $q_-$, which forces $P_{0}$ real. Hence $P=P_{0}$ is a nonzero real scalar, and the preservation of the form among the real scalars leaves $P_{0}=\pm1$.
 
 **Corollary (the hyperbolic plane is carried by the form and not by the algebra).** The level set $\{H=-1\}\cap\mathbb{R}\{1,i,j\}$ is a two-sheeted hyperboloid, each sheet a hyperbolic plane of isometry group $O(2,1)$; it is an object determined by the form of the algebra, but the algebra's multiplication does not act on it, and only its involutions give the reflections.
 
@@ -130,8 +130,8 @@ The indefinite form of the reduced biquaternion algebra, $\langle\cdot,\cdot\ran
 
 | Symbol | Meaning |
 |---|---|
-| $\langle Q_\pm\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}$ | the indefinite form, of signature $(2,2)$ on the algebra |
-| $\langle Q_{\pm,1},Q_{\pm,2}\rangle_{\mathrm{H}}=\mathrm{Sc}(Q_{\pm,1}Q_{\pm,2}^{*})=Q_{1+}\bar Q_{2+}-Q_{1-}\bar Q_{2-}$ | its sesquilinear pairing |
+| $\langle \breve Q\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}$ | the indefinite form, of signature $(2,2)$ on the algebra |
+| $\langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{H}}=\mathrm{Sc}(\breve Q_{1}\breve Q_{2}^{*})=Q_{1+}\bar Q_{2+}-Q_{1-}\bar Q_{2-}$ | its sesquilinear pairing |
 | $\mathbb{D}=\mathbb{R}\{1,j\}$ | the split-complex subalgebra, $j^{2}=1$ |
 | $i\mathbb{D}=\mathbb{R}\{i,ij\}$ | the second split-complex subalgebra |
 | $\{H=-1\}$ in $\mathbb{D}$ | the hyperbola, the hyperbolic line |

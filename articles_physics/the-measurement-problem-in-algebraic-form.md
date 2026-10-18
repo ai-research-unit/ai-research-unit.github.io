@@ -37,7 +37,7 @@ $$
 that a general observable is a Hermitian element
 
 $$
-\tilde{H} = h_0\, e_t + i\,\vec h, \qquad \vec h \in \mathbb{R}^3,
+\tilde{H} = h_t\, e_t + i\,\vec h, \qquad \vec h \in \mathbb{R}^3,
 $$
 
 and that a pure state is an idempotent
@@ -85,7 +85,7 @@ This restatement is exact. It is also only a restatement: membership in one clas
 
 ## The Problem in Algebraic Form
 
-Fix a state $\tilde{Ϛ} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_0 e_t + i\vec h$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$ and Born probabilities $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})$. The framework places three algebraic objects at our disposal:
+Fix a state $\tilde{Ϛ} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_t e_t + i\vec h$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$ and Born probabilities $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})$. The framework places three algebraic objects at our disposal:
 
 1. **The reversible evolution** $\Gamma_{\tilde{U}}(\tilde{Ϛ}) = \tilde{U}\tilde{Ϛ}\tilde{U}^{*}$, with $\tilde{U}\tilde{U}^{*} = e_t$.
 2. **The two conditional outcomes** $\Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}) = p_\pm \tilde\Pi_{1,2}$; normalized, the post-measurement state is $\tilde\Pi_{1,2}$ itself, produced on the branch labelled $\pm$.
@@ -225,7 +225,7 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
-| $\tilde{H} = h_0e_t + i\vec h$ | Hermitian observable |
+| $\tilde{H} = h_te_t + i\vec h$ | Hermitian observable |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, projective outcome) |
 | $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ})$ | Outcome probabilities |

@@ -8,7 +8,7 @@ The two involutions are what make this layer richer than a single-conjugation al
 
 This article fixes the four maps, their fixed and anti-fixed spaces and the group they generate, following *The Group of Involutions* of the biquaternion category article for article. The four general products and the forms and algebraic norms they carry are *The Four Products, Their Forms and Their Algebraic Norms*, below this article in this category; the four maps are named there and proved here. The remarkable subspaces as subspaces are *Introduction to the Remarkable Subspaces*, below this article in this category; the fixed spaces are computed here because they are what fixes the involutions.
 
-**The results.** The bar, the natural sign and the star are involutions of the algebra; they commute pairwise, and $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}$ is a Klein four-group with the multiplication ${}^{*}\circ{}^{*}=\mathrm{id}$, ${}^{*}\circ\bar{\cdot}={}^{\natural}$, ${}^{*}\circ{}^{\natural}=\bar{\cdot}$, so that each of the three non-identity marks is the composite of the other two. The bar and the star are $\mathbb{C}$-antilinear, the natural sign is $\mathbb{C}$-linear. Every one of the three is an **algebra automorphism**, because the algebra is commutative: the order-reversing character of the natural sign and of the star over the non-commutative biquaternions disappears. The flat is not an involution of the group; it is the negative of the star, it exchanges the star's fixed and anti-fixed spaces, and it is not multiplicative, $(\lambda Q_\pm)^{\flat}=\bar\lambda Q_\pm^{\flat}$ and $(Q_{\pm,1}Q_{\pm,2})^{\flat}=-Q_{\pm,1}^{\flat}Q_{\pm,2}^{\flat}$.
+**The results.** The bar, the natural sign and the star are involutions of the algebra; they commute pairwise, and $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}$ is a Klein four-group with the multiplication ${}^{*}\circ{}^{*}=\mathrm{id}$, ${}^{*}\circ\bar{\cdot}={}^{\natural}$, ${}^{*}\circ{}^{\natural}=\bar{\cdot}$, so that each of the three non-identity marks is the composite of the other two. The bar and the star are $\mathbb{C}$-antilinear, the natural sign is $\mathbb{C}$-linear. Every one of the three is an **algebra automorphism**, because the algebra is commutative: the order-reversing character of the natural sign and of the star over the non-commutative biquaternions disappears. The flat is not an involution of the group; it is the negative of the star, it exchanges the star's fixed and anti-fixed spaces, and it is not multiplicative, $(\lambda \breve Q)^{\flat}=\bar\lambda \breve Q^{\flat}$ and $(\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}$.
 
 **Boundaries.** The space, the bases and the linear or antilinear character of the maps are *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*, above this article in this category. The idempotents $\Pi_{\pm}$ and their fixed or exchanged behaviour are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, below this article, and the idempotent decomposition is *Reduced Biquaternion Space*. The products are used here only as far as the multiplicativity of the maps requires.
 
@@ -25,7 +25,7 @@ $$
 
 **Proposition.** The bar is an involution, it is $\mathbb{R}$-linear and $\mathbb{C}$-antilinear, it fixes $1$ and $j$ and negates $i$ and $ij$:
 $$
-\bar1=1,\qquad \bar i=-i,\qquad \bar j=j,\qquad \overline{ij}=-ij,\qquad \overline{\bar Q_\pm}=Q_\pm,\qquad \overline{Q_{\pm,1}Q_{\pm,2}}=\overline{Q_{\pm,1}}\,\overline{Q_{\pm,2}} .
+\bar1=1,\qquad \bar i=-i,\qquad \bar j=j,\qquad \overline{ij}=-ij,\qquad \overline{\bar{\breve Q}}=\breve Q,\qquad \overline{\breve Q_{1}\breve Q_{2}}=\overline{\breve Q_{1}}\,\overline{\breve Q_{2}} .
 $$
 
 *Proof.* Applying the bar twice returns $Q_+$ and $Q_-$, so it is an involution; it is real-linear because the complex conjugation is; it is antilinear because $\overline{\lambda Q_+}=\bar\lambda\bar Q_+$; and on the basis $1=1+0j$, $i=i+0j$, $j=0+1j$, $ij=i\cdot j$ it gives $\bar1=1$, $\bar i=-i$, $\bar j=j$, $\overline{ij}=\bar i\bar j=(-i)j=-ij$. The multiplicativity is the multiplicativity of the complex conjugation on the two coordinates together with the commutativity of the product.
@@ -43,7 +43,7 @@ $$
 
 **Proposition.** The natural sign is an involution, it is $\mathbb{C}$-linear, it fixes $1$ and $i$ and negates $j$ and $ij$:
 $$
-1^{\natural}=1,\qquad i^{\natural}=i,\qquad j^{\natural}=-j,\qquad (ij)^{\natural}=-ij,\qquad (Q_\pm^{\natural})^{\natural}=Q_\pm,\qquad (Q_{\pm,1}Q_{\pm,2})^{\natural}=Q_{\pm,1}^{\natural}Q_{\pm,2}^{\natural}.
+1^{\natural}=1,\qquad i^{\natural}=i,\qquad j^{\natural}=-j,\qquad (ij)^{\natural}=-ij,\qquad (\breve Q^{\natural})^{\natural}=\breve Q,\qquad (\breve Q_{1}\breve Q_{2})^{\natural}=\breve Q_{1}^{\natural}\breve Q_{2}^{\natural}.
 $$
 
 *Proof.* Applying the natural sign twice returns $Q_++jQ_-$, so it is an involution; it is $\mathbb{C}$-linear because $\lambda(Q_++jQ_-)=(\lambda Q_+)+(\lambda Q_-)j$ maps to $(\lambda Q_+)-(\lambda Q_-)j=\lambda(Q_+-jQ_-)$; on the basis, $1^{\natural}=1$, $i^{\natural}=i$ (both have vanishing second coordinate), $j^{\natural}=-j$ and $(ij)^{\natural}=-ij$ (both have vanishing first coordinate). Multiplicativity follows from the commutativity of the product and the sign rule $j^{2}=+1$.
@@ -65,14 +65,14 @@ $$
 
 **Proposition.** The star is an involution and is $\mathbb{C}$-antilinear; it fixes $1$ and $ij$ and negates $i$ and $j$:
 $$
-1^{*}=1,\qquad i^{*}=-i,\qquad j^{*}=-j,\qquad (ij)^{*}=ij,\qquad (Q_\pm^{*})^{*}=Q_\pm,\qquad (Q_{\pm,1}Q_{\pm,2})^{*}=Q_{\pm,1}^{*}Q_{\pm,2}^{*}.
+1^{*}=1,\qquad i^{*}=-i,\qquad j^{*}=-j,\qquad (ij)^{*}=ij,\qquad (\breve Q^{*})^{*}=\breve Q,\qquad (\breve Q_{1}\breve Q_{2})^{*}=\breve Q_{1}^{*}\breve Q_{2}^{*}.
 $$
 The flat is not multiplicative, so it is not an involution of the algebra, although its square is the identity; it is antilinear, it exchanges the star's fixed and anti-fixed spaces, and it twists the product by a sign:
 $$
-Q_\pm^{\flat}=-Q_\pm^{*},\qquad (Q_\pm^{\flat})^{\flat}=Q_\pm,\qquad (Q_{\pm,1}Q_{\pm,2})^{\flat}=-Q_{\pm,1}^{\flat}Q_{\pm,2}^{\flat}.
+\breve Q^{\flat}=-\breve Q^{*},\qquad (\breve Q^{\flat})^{\flat}=\breve Q,\qquad (\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}.
 $$
 
-*Proof.* The star is the composite of two commuting involutions, so it is an involution; it is antilinear as the composite of an antilinear and a linear map; on the basis, $1$ and $ij$ are fixed ($\overline{ij}=-ij$ while $(ij)^{\natural}=-ij$, so $(ij)^{*}=(-ij)^{\natural}=ij$), while $i$ and $j$ are negated. The multiplicativity of the star follows from that of the bar and the natural sign. For the flat, $Q_\pm^{\flat}=-Q_\pm^{*}$ is a scalar multiple of an involution, so its square is the identity, and $Q_\pm^{\flat}=Q_\pm$ is $Q_\pm^{*}=-Q_\pm$, which is the anti-fixed condition of the star read with the sign changed; the last display is $(-Q_{\pm,1}^{*}Q_{\pm,2}^{*})=-(Q_{\pm,1}^{*}Q_{\pm,2}^{*})$ and $Q_{\pm,1}^{\flat}Q_{\pm,2}^{\flat}=(+Q_{\pm,1}^{*}Q_{\pm,2}^{*})$, whose sum with $(Q_{\pm,1}Q_{\pm,2})^{\flat}=-Q_{\pm,1}^{*}Q_{\pm,2}^{*}$ is zero.
+*Proof.* The star is the composite of two commuting involutions, so it is an involution; it is antilinear as the composite of an antilinear and a linear map; on the basis, $1$ and $ij$ are fixed ($\overline{ij}=-ij$ while $(ij)^{\natural}=-ij$, so $(ij)^{*}=(-ij)^{\natural}=ij$), while $i$ and $j$ are negated. The multiplicativity of the star follows from that of the bar and the natural sign. For the flat, $\breve Q^{\flat}=-\breve Q^{*}$ is a scalar multiple of an involution, so its square is the identity, and $\breve Q^{\flat}=\breve Q$ is $\breve Q^{*}=-\breve Q$, which is the anti-fixed condition of the star read with the sign changed; the last display is $(-\breve Q_{1}^{*}\breve Q_{2}^{*})=-(\breve Q_{1}^{*}\breve Q_{2}^{*})$ and $\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}=(+\breve Q_{1}^{*}\breve Q_{2}^{*})$, whose sum with $(\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{*}\breve Q_{2}^{*}$ is zero.
 
 **Remark (why the star is the odd one).** The star is the only one of the three involutions of the group that negates one direction in each of the two lines $\mathbb{C}$ and $\mathbb{C}j$; the bar conjugates the coefficients and the natural sign negates the whole $j$-part. The star is the involution that the two sesquilinear products use in their second slot, and its fixed space is the plane $\mathbb{R}\{1,ij\}$, which is neither the scalar line nor the $j$-line.
 
@@ -80,7 +80,7 @@ $$
 
 **Each involution splits the real four-dimensional space into a fixed and an anti-fixed space, each of real dimension two, and the three splits are the three ways of cutting the space into a plane and its complement.**
 
-**Definition.** For an involution $\sigma$ of $\mathbb{B}_{\mathrm{r}}$, the **fixed space** is $\{Q_\pm:\sigma(Q_\pm)=Q_\pm\}$ and the **anti-fixed space** is $\{Q_\pm:\sigma(Q_\pm)=-Q_\pm\}$.
+**Definition.** For an involution $\sigma$ of $\mathbb{B}_{\mathrm{r}}$, the **fixed space** is $\{\breve Q:\sigma(\breve Q)=\breve Q\}$ and the **anti-fixed space** is $\{\breve Q:\sigma(\breve Q)=-\breve Q\}$.
 
 **Theorem (the six spaces).** The fixed and anti-fixed spaces of the bar, the natural sign and the star are the following real subspaces, each of real dimension two:
 
@@ -94,7 +94,7 @@ $$
 
 **Corollary (the flat reproduces the star's spaces).** The flat has the same fixed and anti-fixed spaces as the star with the two exchanged: the flat fixes $\mathbb{R}\{i,j\}$ and negates $\mathbb{R}\{1,ij\}$, so it adds no new space, exactly as in the biquaternion category.
 
-*Proof.* $Q_\pm^{\flat}=Q_\pm$ reads $-Q_\pm^{*}=Q_\pm$, that is $Q_\pm^{*}=-Q_\pm$, the anti-fixed condition of the star; so the fixed space of the flat is the anti-fixed space of the star, and its anti-fixed space is the fixed space of the star.
+*Proof.* $\breve Q^{\flat}=\breve Q$ reads $-\breve Q^{*}=\breve Q$, that is $\breve Q^{*}=-\breve Q$, the anti-fixed condition of the star; so the fixed space of the flat is the anti-fixed space of the star, and its anti-fixed space is the fixed space of the star.
 
 ## The Group of Involutions
 
@@ -132,10 +132,10 @@ The flat satisfies ${}^{\flat}=-{}^{*}$, so it is not one of the four maps of th
 
 The action on the scalar $\lambda\in\mathbb{C}$ is
 $$
-(\lambda Q_\pm)^{\natural}=\lambda\,Q_\pm^{\natural},\qquad
-\overline{\lambda Q_\pm}=\bar\lambda\,\overline{Q_\pm},\qquad
-(\lambda Q_\pm)^{*}=\bar\lambda\,Q_\pm^{*},\qquad
-(\lambda Q_\pm)^{\flat}=\bar\lambda\,Q_\pm^{\flat}.
+(\lambda \breve Q)^{\natural}=\lambda\,\breve Q^{\natural},\qquad
+\overline{\lambda \breve Q}=\bar\lambda\,\overline{\breve Q},\qquad
+(\lambda \breve Q)^{*}=\bar\lambda\,\breve Q^{*},\qquad
+(\lambda \breve Q)^{\flat}=\bar\lambda\,\breve Q^{\flat}.
 $$
 The four displays are the four rows of *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*, §*Linear and Antilinear Maps*, read as maps of the algebra; the natural sign is the only linear one, and it is the reason a product with the natural sign in its first slot stays $\mathbb{C}$-linear in that slot.
 
@@ -145,11 +145,11 @@ The four displays are the four rows of *Reduced Biquaternions as a Vector Space 
 
 **Theorem (the three marks are automorphisms).** Each of the bar, the natural sign and the star satisfies
 $$
-\sigma(Q_{\pm,1}Q_{\pm,2})=\sigma(Q_{\pm,1})\sigma(Q_{\pm,2}),\qquad \sigma(1)=1,\qquad \sigma(\lambda Q_\pm)=\lambda\sigma(Q_\pm)\ \text{or}\ \bar\lambda\sigma(Q_\pm),
+\sigma(\breve Q_{1}\breve Q_{2})=\sigma(\breve Q_{1})\sigma(\breve Q_{2}),\qquad \sigma(1)=1,\qquad \sigma(\lambda \breve Q)=\lambda\sigma(\breve Q)\ \text{or}\ \bar\lambda\sigma(\breve Q),
 $$
 so each is a ring automorphism, the natural sign over $\mathbb{C}$ and the bar and the star over $\mathbb{C}$ with the conjugation.
 
-*Proof.* The multiplicativity of each is the last display of the three propositions above. The identity is fixed by all three, as read on the basis. For the scalar action, the natural sign is linear and the bar and the star are antilinear. The word **automorphism** replaces the word **anti-automorphism** of the biquaternion category because $Q_{\pm,1}Q_{\pm,2}=Q_{\pm,2}Q_{\pm,1}$, so the order of the factors never has to be reversed.
+*Proof.* The multiplicativity of each is the last display of the three propositions above. The identity is fixed by all three, as read on the basis. For the scalar action, the natural sign is linear and the bar and the star are antilinear. The word **automorphism** replaces the word **anti-automorphism** of the biquaternion category because $\breve Q_{1}\breve Q_{2}=\breve Q_{2}\breve Q_{1}$, so the order of the factors never has to be reversed.
 
 **Remark (what the automorphism group of the algebra is).** The three involutions of the group are automorphisms, and they are not all the automorphisms of $\mathbb{B}_{\mathrm{r}}$: the componentwise permutations of the two copies of $\mathbb{C}$ in $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$ that are continuous, and the other automorphisms of the algebra, are *Reduced Biquaternion Automorphisms and Derivations*, below this article in this category. This article keeps only the four maps of the group and their eigenspaces.
 
@@ -159,7 +159,7 @@ so each is a ring automorphism, the natural sign over $\mathbb{C}$ and the bar a
 
 ## Summary
 
-The reduced biquaternion algebra carries the **bar** $\overline{Q_++jQ_-}=\bar Q_++j\bar Q_-$, the **natural sign** $(Q_++jQ_-)^{\natural}=Q_+-jQ_-$, the **star** ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $(Q_++jQ_-)^{*}=\bar Q_+-j\bar Q_-$, and the **flat** ${}^{\flat}=-{}^{*}$. The bar, the natural sign and the star are involutions of the algebra; they commute pairwise; and they form the **Klein four-group** $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$, each non-identity member being the composite of the other two, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $\bar{\cdot}={}^{\natural}\circ{}^{*}$ and ${}^{\natural}={}^{*}\circ\bar{\cdot}$. The flat stands outside the group: it is the negative of the star, it exchanges the star's fixed and anti-fixed spaces, it is not multiplicative in the strict sense, $(Q_{\pm,1}Q_{\pm,2})^{\flat}=-Q_{\pm,1}^{\flat}Q_{\pm,2}^{\flat}$, and it is the anti-Hermitian conjugation.
+The reduced biquaternion algebra carries the **bar** $\overline{Q_++jQ_-}=\bar Q_++j\bar Q_-$, the **natural sign** $(Q_++jQ_-)^{\natural}=Q_+-jQ_-$, the **star** ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $(Q_++jQ_-)^{*}=\bar Q_+-j\bar Q_-$, and the **flat** ${}^{\flat}=-{}^{*}$. The bar, the natural sign and the star are involutions of the algebra; they commute pairwise; and they form the **Klein four-group** $\{\mathrm{id},\bar{\cdot},{}^{\natural},{}^{*}\}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$, each non-identity member being the composite of the other two, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, $\bar{\cdot}={}^{\natural}\circ{}^{*}$ and ${}^{\natural}={}^{*}\circ\bar{\cdot}$. The flat stands outside the group: it is the negative of the star, it exchanges the star's fixed and anti-fixed spaces, it is not multiplicative in the strict sense, $(\breve Q_{1}\breve Q_{2})^{\flat}=-\breve Q_{1}^{\flat}\breve Q_{2}^{\flat}$, and it is the anti-Hermitian conjugation.
 
 On the real basis the three involutions act by
 $$

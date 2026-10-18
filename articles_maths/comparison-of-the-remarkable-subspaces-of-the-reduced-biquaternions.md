@@ -20,14 +20,14 @@ and the comparison is summarised by three statements. **The subalgebras among th
 
 | space | defining equation | basis | real dim | $\mathbb{C}$-linear | norm $\langle\cdot\rangle$ |
 |---|---|---|---|---|---|
-| $\mathbb{C}$ | $Q_\pm^{\natural}=Q_\pm$ | $1,\ i$ | $2$ | yes | $Q_+^{2}$, complex |
-| $\mathbb{C}j$ | $Q_\pm^{\natural}=-Q_\pm$ | $j,\ ij$ | $2$ | yes | $-Q_-^{2}$, complex |
-| $\mathbb{R}\{1,j\}$ | $\bar Q_\pm=Q_\pm$ | $1,\ j$ | $2$ | no | $Q_+^{2}-Q_-^{2}$, split |
-| $\mathbb{R}\{i,ij\}$ | $\bar Q_\pm=-Q_\pm$ | $i,\ ij$ | $2$ | no | $-(Q_+^{2}-Q_-^{2})$, split |
-| $\mathbb{R}\{1,ij\}$ | $Q_\pm^{*}=Q_\pm$ | $1,\ ij$ | $2$ | no | $Q_+^{2}+Q_-^{2}$, positive definite |
-| $\mathbb{R}\{i,j\}$ | $Q_\pm^{*}=-Q_\pm$ | $i,\ j$ | $2$ | no | $-(Q_+^{2}+Q_-^{2})$, negative definite |
-| $\mathbb{C}\Pi_+$ | $jQ_\pm=Q_\pm$ | $\Pi_+,\ i\Pi_+$ | $2$ | yes | $0$ |
-| $\mathbb{C}\Pi_-$ | $jQ_\pm=-Q_\pm$ | $\Pi_-,\ i\Pi_-$ | $2$ | yes | $0$ |
+| $\mathbb{C}$ | $\breve Q^{\natural}=\breve Q$ | $1,\ i$ | $2$ | yes | $Q_+^{2}$, complex |
+| $\mathbb{C}j$ | $\breve Q^{\natural}=-\breve Q$ | $j,\ ij$ | $2$ | yes | $-Q_-^{2}$, complex |
+| $\mathbb{R}\{1,j\}$ | $\bar{\breve Q}=\breve Q$ | $1,\ j$ | $2$ | no | $Q_+^{2}-Q_-^{2}$, split |
+| $\mathbb{R}\{i,ij\}$ | $\bar{\breve Q}=-\breve Q$ | $i,\ ij$ | $2$ | no | $-(Q_+^{2}-Q_-^{2})$, split |
+| $\mathbb{R}\{1,ij\}$ | $\breve Q^{*}=\breve Q$ | $1,\ ij$ | $2$ | no | $Q_+^{2}+Q_-^{2}$, positive definite |
+| $\mathbb{R}\{i,j\}$ | $\breve Q^{*}=-\breve Q$ | $i,\ j$ | $2$ | no | $-(Q_+^{2}+Q_-^{2})$, negative definite |
+| $\mathbb{C}\Pi_+$ | $j\breve Q=\breve Q$ | $\Pi_+,\ i\Pi_+$ | $2$ | yes | $0$ |
+| $\mathbb{C}\Pi_-$ | $j\breve Q=-\breve Q$ | $\Pi_-,\ i\Pi_-$ | $2$ | yes | $0$ |
 
 The four complex lines $\mathbb{C}$, $\mathbb{C}j$, $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ are one-dimensional over $\mathbb{C}$; the four real planes $\mathbb{R}\{1,j\}$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{1,ij\}$, $\mathbb{R}\{i,j\}$ have no complex structure of their own, and the multiplication by $i$ permutes them in pairs, $\mathbb{R}\{1,j\}\leftrightarrow\mathbb{R}\{i,ij\}$ and $\mathbb{R}\{1,ij\}\leftrightarrow\mathbb{R}\{i,j\}$. The two idempotent lines are the null set of the norm, and their nonzero elements are the zero divisors.
 

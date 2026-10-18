@@ -217,7 +217,7 @@ $$
 (xy)z\ne x(yz) \qquad \text{for some } x,y,z\in\mathbb{O}.
 $$
 
-The biquaternion framework uses associativity at every step — the module action, the trace, the conjugation identities, and the factorisation $\tilde H=h_0e_t$ of a central operator all presuppose it. A non-associative enlargement therefore lies beyond the algebra not by a matter of convenience but by a structural obstruction: the trace pairing and the module action are not defined without associativity. The octonions are the first Cayley–Dickson algebra to fail this, and they mark the boundary.
+The biquaternion framework uses associativity at every step — the module action, the trace, the conjugation identities, and the factorisation $\tilde H=h_te_t$ of a central operator all presuppose it. A non-associative enlargement therefore lies beyond the algebra not by a matter of convenience but by a structural obstruction: the trace pairing and the module action are not defined without associativity. The octonions are the first Cayley–Dickson algebra to fail this, and they mark the boundary.
 
 ### Infinite-dimensional and non-unitary extensions
 

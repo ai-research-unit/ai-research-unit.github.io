@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **antisymmetric plain algebra**, written $\mathrm{APA}$, whose product is the antisymmetrisation of the plain product, $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$. It is one of the four **antisymmetric** structures, and its job in the framework is **rotation**: its values lie in the vector subspace, its Jacobi identity holds there, and it is the Lie algebra of the material sector.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **antisymmetric plain algebra**, written $\mathrm{APA}$, whose product is the antisymmetrisation of the plain product, $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$. It is one of the four **antisymmetric** structures, and its job in the framework is **rotation**: its values lie in the vector subspace, its Jacobi identity holds there, and it is the Lie algebra of the material sector.
 
 The mathematics of the structure is owned by the group *The Biquaternioid Antisymmetric Plain Algebra (APA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
@@ -12,7 +12,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ### Basic Properties
 
-- **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **antisymmetric**, $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$; it vanishes on the centre and its values lie in the vector subspace. Its class among the twelve structures is that of an antisymmetric algebra. Owner: *Introduction to the Antisymmetric Plain Algebra*.
+- **The operation.** The product $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **antisymmetric**, $\tilde Q_1\star\tilde Q_2=-\tilde Q_2\star\tilde Q_1$; it vanishes on the centre and its values lie in the vector subspace. Its class among the twelve structures is that of an antisymmetric algebra. Owner: *Introduction to the Antisymmetric Plain Algebra*.
 - **The absence of a unit.** $e_t$ annihilates the structure, $e_t\star\tilde Q_1=0$, so the structure has no unit and no identity element at all. Owner: *Introduction to the Antisymmetric Plain Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure and the invertibility criterion of the antisymmetrised product. Owner: *Norm and Invertibility in the Antisymmetric Plain Algebra*.
 - **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -46,20 +46,20 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ## Summary
 
-The biquaternioid antisymmetric plain algebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ over $\mathbb{C}$, the rotation band of the framework: antisymmetric, valued in the vector subspace, without a unit, and with the Jacobi identity holding on the vector subspace, which makes it the Lie algebra of the material sector. Its bracket closes where the informational generators do not, its Killing form measures the compact/non-compact split, and its generators are the rotations whose Hermitian multiples are the angular momenta. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid antisymmetric plain algebra is the structure $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ over $\mathbb{C}$, the rotation band of the framework: antisymmetric, valued in the vector subspace, without a unit, and with the Jacobi identity holding on the vector subspace, which makes it the Lie algebra of the material sector. Its bracket closes where the informational generators do not, its Killing form measures the compact/non-compact split, and its generators are the rotations whose Hermitian multiples are the angular momenta. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ | the antisymmetric plain product, $\mathrm{APA}$ |
-| $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$ | antisymmetry |
+| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | the antisymmetric plain product, $\mathrm{APA}$ |
+| $\tilde Q_1\star\tilde Q_2=-\tilde Q_2\star\tilde Q_1$ | antisymmetry |
 | $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector subspace; the values of the bracket |
 | $e_t\star\tilde Q_1=0$ | the absence of a unit |
-| $[\tilde P,\tilde Q]$, the Jacobi identity | the Lie algebra of the material sector |
+| $[\tilde Q_1,\tilde Q_2]$, the Jacobi identity | the Lie algebra of the material sector |
 | $\vec P\times\vec Q$ | the cross product; the bracket on the material vectors |
-| $\mathrm{ad}_{\tilde P}$ | the adjoint action; the derivation of the bracket |
-| $i\,\mathrm{ad}_{\tilde P}$ | the angular momentum; a Hermitian multiple of a generator |
+| $\mathrm{ad}_{\tilde Q_1}$ | the adjoint action; the derivation of the bracket |
+| $i\,\mathrm{ad}_{\tilde Q_1}$ | the angular momentum; a Hermitian multiple of a generator |
 | $K_{\mathrm{APA}}$ | the Killing form; compact on the rotations, indefinite on the boosts |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | the centre; the direction the bracket annihilates |
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **general quaternionic sesqualgebra**, written $\mathrm{GQS}$, whose product is the plain product with the natural conjugation inserted into its first slot and the star into its second, $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$. It is the fourth of the four general products, and its job in the framework is **gauge**: its algebraic norm is the indefinite Krein form, its isometry group is $\mathrm{U}(1,3)$ over $\mathbb{C}$ and $O(2,6)$ over $\mathbb{R}$, and its pairing is the one a gauge calibration is compared with.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **general quaternionic sesqualgebra**, written $\mathrm{GQS}$, whose product is the plain product with the natural conjugation inserted into its first slot and the star into its second, $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$. It is the fourth of the four general products, and its job in the framework is **gauge**: its algebraic norm is the indefinite Krein form, its isometry group is $\mathrm{U}(1,3)$ over $\mathbb{C}$ and $O(2,6)$ over $\mathbb{R}$, and its pairing is the one a gauge calibration is compared with.
 
 The mathematics of the structure is owned by the group *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
@@ -12,11 +12,11 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 
 ### Basic Properties
 
-- **The operation.** The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ is $\mathbb{R}$-bilinear and $\mathbb{C}$-sesquilinear, and it is not associative. It is the fourth product of the four general products, the one that conjugates both slots. Owner: *Introduction to the General Quaternionic Sesqualgebra*.
+- **The operation.** The product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ is $\mathbb{R}$-bilinear and $\mathbb{C}$-sesquilinear, and it is not associative. It is the fourth product of the four general products, the one that conjugates both slots. Owner: *Introduction to the General Quaternionic Sesqualgebra*.
 - **The absence of a unit.** Neither slot has a unit: $e_t\star\tilde Q_1=\tilde Q_1^{*}$ and $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$, so the structure is unital on no side. Owner: *The Two One-Sided Actions and the Absence of a Unit*.
-- **The algebraic norm and invertibility.** The norm is the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, indefinite, of inertia $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$; the invertibility criterion of the structure and its one-sided inverses. Owner: *Norm and Invertibility in the General Quaternionic Sesqualgebra*.
+- **The algebraic norm and invertibility.** The norm is the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, indefinite, of inertia $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$; the invertibility criterion of the structure and its one-sided inverses. Owner: *Norm and Invertibility in the General Quaternionic Sesqualgebra*.
 - **The square and its two halves.** The square of the product splits into a Hermitian and an anti-Hermitian half, the two products $\mathrm{SQS}$ and $\mathrm{AQS}$. Owner: *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*.
-- **Zero divisors.** The zero-divisor set of the structure, and the null set of $\langle\tilde P,\tilde Q\rangle_{\natural*}$ that it contains. Owner: *Zero Divisors of the General Quaternionic Sesqualgebra*.
+- **Zero divisors.** The zero-divisor set of the structure, and the null set of $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ that it contains. Owner: *Zero Divisors of the General Quaternionic Sesqualgebra*.
 - **Annihilators.** The left, the right and the two-sided annihilator of an element and the radical of the product. Owner: *Annihilators of the General Quaternionic Sesqualgebra*.
 - **Square roots of one and the idempotents, of zero and the nilpotents, of a general element.** The three root problems of the structure, and the class it occupies among the four existence classes of the twelve. Owners: *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*, *Square Roots of a General Element in the General Quaternionic Sesqualgebra*.
 
@@ -25,9 +25,9 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the General Quaternionic Sesqualgebra*.
 - **The associator and the ternary product.** The associator of the product; the ternary product **fails the Jordan triple identity**, and this failure is what keeps the structure from being a state space. Owners: *The Associator of the General Quaternionic Sesquilinear Product*, *The Ternary Product and the Failure of the Jordan Triple Identity*.
 - **The left and the right multiplications.** The two one-sided families of the product and the monoid they generate. Owner: *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
-- **The fundamental symmetry and the Krein Gram matrix.** The involution $J={}^{\natural}$ that turns the indefinite form into a definite one, the Gram matrix of $\langle\tilde P,\tilde Q\rangle_{\natural*}$, its fundamental decomposition, its inertia and the restrictions of the form to the remarkable subspaces. Owners: *The Fundamental Symmetry of the Biquaternioid Algebra*, *The Krein Gram Matrix and the Restrictions of the Form*.
+- **The fundamental symmetry and the Krein Gram matrix.** The involution $J={}^{\natural}$ that turns the indefinite form into a definite one, the Gram matrix of $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, its fundamental decomposition, its inertia and the restrictions of the form to the remarkable subspaces. Owners: *The Fundamental Symmetry of the Biquaternioid Algebra*, *The Krein Gram Matrix and the Restrictions of the Form*.
 - **Krein orthogonality and the isotropic structure.** The $J$-orthogonality of the structure, the fundamental decomposition, and the isotropic elements. Owners: *Krein Orthogonality and the Fundamental Decomposition*, *The Isotropic Structure of the General Quaternionic Sesqualgebra*.
-- **The remarkable subspaces and the realification.** The restriction of $\langle\tilde P,\tilde Q\rangle_{\natural*}$ to the centre, the vector subspace, the quaternion and antiquaternion subspaces and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the General Quaternionic Sesqualgebra*, *The Realification of the General Quaternionic Sesqualgebra*.
+- **The remarkable subspaces and the realification.** The restriction of $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ to the centre, the vector subspace, the quaternion and antiquaternion subspaces and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the General Quaternionic Sesqualgebra*, *The Realification of the General Quaternionic Sesqualgebra*.
 
 ### Operators
 
@@ -51,15 +51,15 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 
 ## Summary
 
-The biquaternioid general quaternionic sesqualgebra is the structure $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ over $\mathbb{C}$, the gauge band of the framework: sesquilinear, non-associative, unital on no side, with the indefinite Krein norm $\langle\tilde P,\tilde Q\rangle_{\natural*}$ of inertia $(1,3)$ over $\mathbb{C}$, the fundamental symmetry $J={}^{\natural}$, the isometry group $\mathrm{U}(1,3)$ and no state cone. Its ternary product fails the Jordan triple identity, its adjoint is the indefinite one, and its canonical reading is that the framework's transformations are compared by an indefinite metric while its states are normalised by a definite one. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid general quaternionic sesqualgebra is the structure $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ over $\mathbb{C}$, the gauge band of the framework: sesquilinear, non-associative, unital on no side, with the indefinite Krein norm $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ of inertia $(1,3)$ over $\mathbb{C}$, the fundamental symmetry $J={}^{\natural}$, the isometry group $\mathrm{U}(1,3)$ and no state cone. Its ternary product fails the Jordan triple identity, its adjoint is the indefinite one, and its canonical reading is that the framework's transformations are compared by an indefinite metric while its states are normalised by a definite one. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the fourth product; the general quaternionic sesquilinear product, $\mathrm{GQS}$ |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the fourth product; the general quaternionic sesquilinear product, $\mathrm{GQS}$ |
 | $e_t\star\tilde Q_1=\tilde Q_1^{*}$; $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$ | no unit on either side |
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the indefinite (Krein) form |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the indefinite (Krein) form |
 | $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2}$ | the diagonal value; the Krein invariant |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector |
 | $(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | the inertia and the real signature |

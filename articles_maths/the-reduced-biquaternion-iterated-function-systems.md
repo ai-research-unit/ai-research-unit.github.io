@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $Q_\pm=Q_++jQ_-=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents and with the topological norm $\langle Q_\pm\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$. An **iterated function system** of the algebra is a finite family of contractions of the algebra, and the article describes the geometry of those systems.
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_++jQ_-=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents and with the topological norm $\langle \breve Q\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$. An **iterated function system** of the algebra is a finite family of contractions of the algebra, and the article describes the geometry of those systems.
 
-The algebra forces three simplifications and one structural fact. The simplifications: an affine map of the algebra is a pair of complex affine maps, one on each idempotent coordinate, because the two-sided maps $Q_\pm\mapsto P\,Q_\pm\,Q+R$ act diagonally and their linear parts are the pair of the two products $pq$ and $p'q'$ of the idempotent coordinates; the operator norm of the left multiplication is the larger of the two moduli, $\lVert L_{Q_\pm}\rVert=\max(|Q_{++}|,|Q_{--}|)$, so that the contraction and similarity criteria are read from the two complex multipliers; and the square is invertible in the strongest sense, having four inverse branches generically and no element without a square root. The structural fact: a system of generators acts coordinatewise with the honest single index of the algebra, so the attractor is the matched set of the pairs coded by the same sequence of generators, a graph-like subset of the product of the two coordinate attractors, a picture developed in *The Idempotent Decomposition and the Split Fractal*.
+The algebra forces three simplifications and one structural fact. The simplifications: an affine map of the algebra is a pair of complex affine maps, one on each idempotent coordinate, because the two-sided maps $\breve Q\mapsto P\,\breve Q\,Q+R$ act diagonally and their linear parts are the pair of the two products $pq$ and $p'q'$ of the idempotent coordinates; the operator norm of the left multiplication is the larger of the two moduli, $\lVert L_{\breve Q}\rVert=\max(|Q_{++}|,|Q_{--}|)$, so that the contraction and similarity criteria are read from the two complex multipliers; and the square is invertible in the strongest sense, having four inverse branches generically and no element without a square root. The structural fact: a system of generators acts coordinatewise with the honest single index of the algebra, so the attractor is the matched set of the pairs coded by the same sequence of generators, a graph-like subset of the product of the two coordinate attractors, a picture developed in *The Idempotent Decomposition and the Split Fractal*.
 
 The article owns the affine maps of the algebra, the contraction and similarity criteria, the similarity dimension, the existence and the shape of the attractor, the inverse branches of the square and the symmetries of a system. The operator norm and the multiplication operators are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the group of units and the torus are *The Group of Units of the Algebra of the Reduced Biquaternions* and *The Unitary Group of the Reduced Biquaternion Algebra*; the zero-divisor cone that is the branching set of the square is *Zero Divisors of the Algebra of the Reduced Biquaternions*; the attractor structure is *The Idempotent Decomposition and the Split Fractal*; the quadratic map and its fractal are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*. The companion is *The Biquaternion Iterated Function Systems*.
 
@@ -12,10 +12,10 @@ The article owns the affine maps of the algebra, the contraction and similarity 
 
 ## Affine Maps of the Algebra
 
-**Proposition (every affine map is a pair of complex affine maps).** An $\mathbb{R}$-affine map of the algebra has the form $Q_\pm\mapsto M(Q_\pm)+R$ with $M$ real-linear, and if $M$ is one of the two-sided multiplication maps $Q_\pm\mapsto P\,Q_\pm\,Q$, then in the idempotent coordinates
+**Proposition (every affine map is a pair of complex affine maps).** An $\mathbb{R}$-affine map of the algebra has the form $\breve Q\mapsto M(\breve Q)+R$ with $M$ real-linear, and if $M$ is one of the two-sided multiplication maps $\breve Q\mapsto P\,\breve Q\,Q$, then in the idempotent coordinates
 
 $$
-P\,Q_\pm\,Q=\bigl(p\,q\,Q_{++}\bigr)\Pi_++\bigl(p'q'\,Q_{--}\bigr)\Pi_-,
+P\,\breve Q\,Q=\bigl(p\,q\,Q_{++}\bigr)\Pi_++\bigl(p'q'\,Q_{--}\bigr)\Pi_-,
 $$
 
 so that $M$ is the pair of the two complex scalars $pq$ and $p'q'$ acting on the two coordinates. Consequently every affine map that is built from the multiplications of the algebra is the pair of two complex affine maps
@@ -24,7 +24,7 @@ $$
 (Q_{++},Q_{--})\longmapsto\bigl(\alpha Q_{++}+\rho,\;\beta Q_{--}+\sigma\bigr).
 $$
 
-**Proof.** The multiplication is componentwise, so $P\,Q_\pm\,Q$ has coordinates $p\,q\,Q_{++}$ and $p'q'Q_{--}$ with $p,p'$ the coordinates of $P$ and $q,q'$ those of $Q$; adding the translation gives the displayed pair, with $\alpha=pq$, $\beta=p'q'$, $\rho$ and $\sigma$ the coordinates of $R$.
+**Proof.** The multiplication is componentwise, so $P\,\breve Q\,Q$ has coordinates $p\,q\,Q_{++}$ and $p'q'Q_{--}$ with $p,p'$ the coordinates of $P$ and $q,q'$ those of $Q$; adding the translation gives the displayed pair, with $\alpha=pq$, $\beta=p'q'$, $\rho$ and $\sigma$ the coordinates of $R$.
 
 **Corollary (the collapse of the several kinds of affine map).** In the biquaternion algebra there are three distinct kinds of affine map — the left, the right and the two-sided — and they give three different families of fractals. Here the algebra is commutative, so the left and the right affine maps coincide, the two-sided maps are again pairs of complex affine maps, and there is a single notion of affine iterated function system, with the general linear part the pair $(\alpha,\beta)$.
 
@@ -34,25 +34,25 @@ $$
 
 ## Contractions and the Operator Norm
 
-**Theorem (the operator norm).** For the left multiplication by an element $Q_\pm$ on the algebra with the topological norm,
+**Theorem (the operator norm).** For the left multiplication by an element $\breve Q$ on the algebra with the topological norm,
 
 $$
-\lVert L_{Q_\pm}\rVert=\max(|Q_{++}|,|Q_{--}|),
+\lVert L_{\breve Q}\rVert=\max(|Q_{++}|,|Q_{--}|),
 $$
 
-the maximum of the moduli of the two idempotent coordinates; in terms of the topological norm, $\max(|Q_{++}|,|Q_{--}|)^{2}\leq 2K(Q_\pm)$, with equality exactly when one of the two moduli vanishes, so that the operator norm is at most $\sqrt{2K(Q_\pm)}$ and equals $\sqrt{K(Q_\pm)}$ precisely when the two moduli coincide.
+the maximum of the moduli of the two idempotent coordinates; in terms of the topological norm, $\max(|Q_{++}|,|Q_{--}|)^{2}\leq 2K(\breve Q)$, with equality exactly when one of the two moduli vanishes, so that the operator norm is at most $\sqrt{2K(\breve Q)}$ and equals $\sqrt{K(\breve Q)}$ precisely when the two moduli coincide.
 
 **Proof.** The operator is diagonal with the two entries $Q_{++}$ and $Q_{--}$ in the idempotent basis, and the norm of a diagonal operator for the norm $\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})^{1/2}$ is the largest modulus of an entry; the comparison with $\langle\cdot\rangle_{\natural*}$ follows from $\max(|Q_{++}|,|Q_{--}|)^{2}\leq|Q_{++}|^{2}+|Q_{--}|^{2}\leq2\max(|Q_{++}|,|Q_{--}|)^{2}$, with equality in the first inequality exactly when one modulus vanishes and in the second exactly when $|Q_{++}|=|Q_{--}|$.
 
-**Corollary (the contraction criterion).** An affine map with linear part the pair $(\alpha,\beta)$ is a contraction of the algebra exactly when $\max(|\alpha|,|\beta|)<1$; in particular the affine map with linear part the left multiplication by $Q_\pm$ is a contraction exactly when both $|Q_{++}|<1$ and $|Q_{--}|<1$, that is exactly when $Q_\pm$ lies in the open unit bidisc.
+**Corollary (the contraction criterion).** An affine map with linear part the pair $(\alpha,\beta)$ is a contraction of the algebra exactly when $\max(|\alpha|,|\beta|)<1$; in particular the affine map with linear part the left multiplication by $\breve Q$ is a contraction exactly when both $|Q_{++}|<1$ and $|Q_{--}|<1$, that is exactly when $\breve Q$ lies in the open unit bidisc.
 
 **Proof.** The Lipschitz ratio of the map is the operator norm of its linear part, which is the larger modulus of the two multipliers.
 
 ## Similarities and the Similarity Dimension
 
-**Proposition (the similarity criterion).** The linear map with multipliers $(\alpha,\beta)$ is a similarity of the algebra exactly when $|\alpha|=|\beta|$, and then its ratio is $|\alpha|$. In particular the left multiplication by $Q_\pm$ is a similarity exactly when $|Q_{++}|=|Q_{--}|$, and then its ratio is $|Q_{++}|$; the elements with $|Q_{++}|=|Q_{--}|$ include the central complex scalars and the purely hyperbolic multiples $t\,j$ with $t$ real.
+**Proposition (the similarity criterion).** The linear map with multipliers $(\alpha,\beta)$ is a similarity of the algebra exactly when $|\alpha|=|\beta|$, and then its ratio is $|\alpha|$. In particular the left multiplication by $\breve Q$ is a similarity exactly when $|Q_{++}|=|Q_{--}|$, and then its ratio is $|Q_{++}|$; the elements with $|Q_{++}|=|Q_{--}|$ include the central complex scalars and the purely hyperbolic multiples $t\,j$ with $t$ real.
 
-**Proof.** A real-linear map of a Euclidean space is a similarity exactly when its two singular values coincide; the map is diagonal in the idempotent coordinates with entries $\alpha,\beta$, so its singular values are $|\alpha|$ and $|\beta|$. For the left multiplication by $Q_\pm$ the entries are $Q_{++}$ and $Q_{--}$, and for $Q_\pm=t\,j$ with $t$ real the coordinates are $Q_{++}=t$ and $Q_{--}=-t$, of equal modulus.
+**Proof.** A real-linear map of a Euclidean space is a similarity exactly when its two singular values coincide; the map is diagonal in the idempotent coordinates with entries $\alpha,\beta$, so its singular values are $|\alpha|$ and $|\beta|$. For the left multiplication by $\breve Q$ the entries are $Q_{++}$ and $Q_{--}$, and for $\breve Q=t\,j$ with $t$ real the coordinates are $Q_{++}=t$ and $Q_{--}=-t$, of equal modulus.
 
 **Theorem (the similarity dimension).** Let the system have $m$ generators, each a similarity of the algebra of ratio $r_{i}<1$ with the same ratio in the two coordinates. Then the attractor is a self-similar set, and under the open set condition its Hausdorff dimension is the unique $s$ with
 
@@ -78,15 +78,15 @@ the same equation as for each of the two coordinate systems.
 
 ## The Inverses and the Branches of the Square
 
-**Theorem (the branches of the square).** The squaring map $Q_\pm\mapsto Q_\pm^{2}$ is surjective, and the solutions of $Q_\pm^{2}=W$ with $W=w_{1}\Pi_++w_{2}\Pi_-$ are
+**Theorem (the branches of the square).** The squaring map $\breve Q\mapsto \breve Q^{2}$ is surjective, and the solutions of $\breve Q^{2}=W$ with $W=w_{1}\Pi_++w_{2}\Pi_-$ are
 
 $$
-Q_\pm=\pm\sqrt{w_{1}}\;\Pi_+\pm\sqrt{w_{2}}\;\Pi_-,
+\breve Q=\pm\sqrt{w_{1}}\;\Pi_+\pm\sqrt{w_{2}}\;\Pi_-,
 $$
 
 four of them when $w_{1}w_{2}\neq0$, two when exactly one coordinate is zero, and one when $W=0$. The branching set is the zero-divisor cone $\{w_{1}=0\}\cup\{w_{2}=0\}$.
 
-**Proof.** The square is coordinatewise, so $Q_\pm^{2}=W$ is the pair of the equations $Q_{++}^{2}=w_{1}$ and $Q_{--}^{2}=w_{2}$; each has two solutions in the complex field, one of them double when the value is zero, and none otherwise; the branching is at the values where a solution is multiple, which is the vanishing of a coordinate.
+**Proof.** The square is coordinatewise, so $\breve Q^{2}=W$ is the pair of the equations $Q_{++}^{2}=w_{1}$ and $Q_{--}^{2}=w_{2}$; each has two solutions in the complex field, one of them double when the value is zero, and none otherwise; the branching is at the values where a solution is multiple, which is the vanishing of a coordinate.
 
 **Remark (no rootless element).** Every element of the reduced biquaternion algebra has a square root, of which four in the generic case, because the two complex equations are always solvable; the inverse branches of the square are therefore the four complex affine-in-the-radical maps with multipliers $1/(2Q_{++})$ and $1/(2Q_{--})$, and a branch is a similarity exactly when $|w_{1}|=|w_{2}|$. In the companion algebra the corresponding analysis has additional cases, and the branching and rootless phenomena there are among the reasons the fractal theory is harder.
 
@@ -108,15 +108,15 @@ An affine map of the reduced biquaternion algebra is the pair of two complex aff
 
 | Symbol | Meaning |
 |---|---|
-| $Q_\pm=Q_++jQ_-=Q_{++}\Pi_++Q_{--}\Pi_-$ | the element and its coordinates |
-| $\langle Q_\pm\rangle_{\natural*}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$ | the topological norm of the algebra |
-| $P\,Q_\pm\,Q=(p\,q\,Q_{++})\Pi_++(p'q'Q_{--})\Pi_-$ | the diagonal two-sided multiplication |
-| $\lVert L_{Q_\pm}\rVert=\max(\lvert Q_{++}\rvert,\lvert Q_{--}\rvert)$ | the operator norm |
+| $\breve Q=Q_++jQ_-=Q_{++}\Pi_++Q_{--}\Pi_-$ | the element and its coordinates |
+| $\langle \breve Q\rangle_{\natural*}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$ | the topological norm of the algebra |
+| $P\,\breve Q\,Q=(p\,q\,Q_{++})\Pi_++(p'q'Q_{--})\Pi_-$ | the diagonal two-sided multiplication |
+| $\lVert L_{\breve Q}\rVert=\max(\lvert Q_{++}\rvert,\lvert Q_{--}\rvert)$ | the operator norm |
 | $\max(\lvert\alpha\rvert,\lvert\beta\rvert)<1$ | the contraction criterion |
 | $\lvert\alpha\rvert=\lvert\beta\rvert$ | the similarity criterion, ratio the common modulus |
 | $\sum_{i}r_{i}^{s}=1$ | the similarity dimension equation |
 | $\mathcal{K}=\bigcup_{i}f_{i}(\mathcal{K})$ | the attractor equation |
-| $Q_\pm=\pm\sqrt{w_{1}}\Pi_+\pm\sqrt{w_{2}}\Pi_-$ | the branches of the square |
+| $\breve Q=\pm\sqrt{w_{1}}\Pi_+\pm\sqrt{w_{2}}\Pi_-$ | the branches of the square |
 | $\{Q_{++}=0\}\cup\{Q_{--}=0\}$ | the zero-divisor cone, the branching set |
 
 ## Further Reading

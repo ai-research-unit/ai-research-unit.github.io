@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, exactly one makes the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra: the general plain bilinear product $\tilde P\tilde Q$, the multiplication of the algebra, read throughout this article.
+Of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, exactly one makes the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra: the general plain bilinear product $\tilde Q_1\tilde Q_2$, the multiplication of the algebra, read throughout this article.
 
 The article reads that product at the central value $+1$. The **roots of $+1$** are the elements $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi^2=e_t$; the **idempotents** are the elements $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$. The two subjects are one subject, because the **halving map**
 

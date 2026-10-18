@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **antisymmetric quaternionic sesqualgebra**, written $\mathrm{AQS}$, whose product is the antisymmetrisation of the fourth product, $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{\natural}\tilde P^{*})$. It is the antisymmetric sibling of the gauge structure, and its job in the framework is **polarisation**: it pairs a vector with the conjugate of another, its values are pure vector directions, and it returns an axial direction and not a state.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **antisymmetric quaternionic sesqualgebra**, written $\mathrm{AQS}$, whose product is the antisymmetrisation of the fourth product, $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{\natural}\tilde Q_1^{*})$. It is the antisymmetric sibling of the gauge structure, and its job in the framework is **polarisation**: it pairs a vector with the conjugate of another, its values are pure vector directions, and it returns an axial direction and not a state.
 
 The mathematics of the structure is owned by the group *The Biquaternioid Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
@@ -12,7 +12,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ### Basic Properties
 
-- **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{\natural}\tilde P^{*})$ is $\mathbb{R}$-bilinear, sesquilinear and **antisymmetric**; it carries no central component, its values are pure vectors, and it is the conjugate cross product of the algebra. Its class among the twelve structures is that of an antisymmetric sesqualgebra. Owner: *Introduction to the Antisymmetric Quaternionic Sesqualgebra*.
+- **The operation.** The product $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{\natural}\tilde Q_1^{*})$ is $\mathbb{R}$-bilinear, sesquilinear and **antisymmetric**; it carries no central component, its values are pure vectors, and it is the conjugate cross product of the algebra. Its class among the twelve structures is that of an antisymmetric sesqualgebra. Owner: *Introduction to the Antisymmetric Quaternionic Sesqualgebra*.
 - **The absence of a unit.** The structure has no unit, the centre being annihilated. Owner: *Introduction to the Antisymmetric Quaternionic Sesqualgebra*.
 - **The algebraic norm and invertibility.** The norm of the structure, which is not central, and the invertibility criterion of the product. Owner: *Norm and Invertibility in the Antisymmetric Quaternionic Sesqualgebra*.
 - **Zero divisors.** The zero-divisor set of the structure. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -47,18 +47,18 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ## Summary
 
-The biquaternioid antisymmetric quaternionic sesqualgebra is the structure $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{\natural}\tilde P^{*})$ over $\mathbb{C}$, the polarisation band of the framework: antisymmetric, valued in the vector subspace, without a unit, with a non-central norm, with the bracket failing and with the failure visible only off the real forms. Its operators carry axial directions and no states, its adjoint reverses the parameter, and its obstruction is read as the low operation of a higher structure. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid antisymmetric quaternionic sesqualgebra is the structure $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{\natural}\tilde Q_1^{*})$ over $\mathbb{C}$, the polarisation band of the framework: antisymmetric, valued in the vector subspace, without a unit, with a non-central norm, with the bracket failing and with the failure visible only off the real forms. Its operators carry axial directions and no states, its adjoint reverses the parameter, and its obstruction is read as the low operation of a higher structure. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{\natural}\tilde P^{*})$ | the antisymmetric quaternionic sesquilinear product, $\mathrm{AQS}$ |
-| $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$ | antisymmetry |
-| $\vec P\times\overline{\vec Q}$ | the conjugate cross product; the values of the band |
+| $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{\natural}\tilde Q_1^{*})$ | the antisymmetric quaternionic sesquilinear product, $\mathrm{AQS}$ |
+| $\tilde Q_1\star\tilde Q_2=-\tilde Q_2\star\tilde Q_1$ | antisymmetry |
+| $\vec Q_1\times\overline{\vec Q_2}$ | the conjugate cross product; the values of the band |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector of the gauge form |
 | the complex witness | the element off the real forms that exhibits the Jacobi failure |
-| $L^{\star}_{\tilde P}$, $R^{\star}_{\tilde P}$ | the one-sided operators; the left image is the plane perpendicular to $\tilde P$ |
+| $L^{\star}_{\tilde Q_1}$, $R^{\star}_{\tilde Q_1}$ | the one-sided operators; the left image is the plane perpendicular to $\tilde Q_1$ |
 | $J={}^{\natural}$ | the fundamental symmetry; the indefinite adjoint negates the parameter |
 | $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector subspace; the values of the product |
 | $\mathrm{U}(2)$ | the strict group of the framework; unchanged by the reading |

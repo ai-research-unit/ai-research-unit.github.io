@@ -133,7 +133,7 @@ with equivalence of norms; in particular $[L^1,L^\infty]_\theta=L^{1/(1-\theta)}
 
 The corollary is the classical application: the two endpoint estimates are trivial and the interpolated estimate is not. The transform theory itself, and the conventions for the constant, belong to *Fourier Analysis on Euclidean Spaces*, earlier in this Part.
 
-**Theorem (Stein's interpolation of analytic families).** Let $S$ be the strip and let $\{T_z\}$ be a family of linear maps such that $z \mapsto \int (T_zf)g$ is analytic on $S$ and continuous on $\overline S$ for simple $f,g$. Suppose $\|T_{it}\|_{L^{n_0}	o L^{m_0}}\le M_0(t)$ and $\|T_{1+it}\|_{L^{n_1}	o L^{m_1}}\le M_1(t)$ with $\sup_t M_i(t)<\infty$. Then $T_\theta$ maps $L^{n}$ to $L^{m}$ for the indices above with norm at most $\sup_tM_0(t)^{1-\theta}\sup_tM_1(t)^{\theta}$.
+**Theorem (Stein's interpolation of analytic families).** Let $S$ be the strip and let $\{T_z\}$ be a family of linear maps such that $z \mapsto \int (T_zf)g$ is analytic on $S$ and continuous on $\overline S$ for simple $f,g$. Suppose $\|T_{it}\|_{L^{n_0}\to L^{m_0}}\le M_0(t)$ and $\|T_{1+it}\|_{L^{n_1}\to L^{m_1}}\le M_1(t)$ with $\sup_t M_i(t)<\infty$. Then $T_\theta$ maps $L^{n}$ to $L^{m}$ for the indices above with norm at most $\sup_tM_0(t)^{1-\theta}\sup_tM_1(t)^{\theta}$.
 
 Stein's theorem is what permits the endpoint norms to vary with the imaginary part, and it is the version used to interpolate the analytic families of operators that arise in harmonic analysis and in the theory of singular integrals; the applications are treated elsewhere, where the Calderón–Zygmund decomposition provides the endpoint hypotheses.
 

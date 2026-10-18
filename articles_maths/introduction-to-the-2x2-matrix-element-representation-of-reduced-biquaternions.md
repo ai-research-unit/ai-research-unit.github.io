@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The **$2\times2$ matrix element representation** writes the reduced biquaternion as the matrix of its own multiplication. The regular representation sends $Q_\pm$ to the operator $L_{Q_\pm}:Q_{\pm,2}\mapsto Q_\pm Q_{\pm,2}$ on the complex two-dimensional space of the algebra, and that operator is a $2\times2$ matrix with **complex** entries; on the real four-dimensional space the same operator is a $4\times4$ matrix with **real** entries. This article writes the two models, explains why the signs of the entries are forced by $j^{2}=+1$, records the trace, the determinant and the norm, and shows how the change to the idempotent basis diagonalises the matrix. The multiplication is **commutative**, so the matrix is symmetric, and it **has zero divisors**, so the matrix may be singular at a non-zero element. The diagonal model of the algebra itself — the isomorphism onto the diagonal matrices and the structure read there — is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; this article is about the element as a matrix, not about the structure.
+The **$2\times2$ matrix element representation** writes the reduced biquaternion as the matrix of its own multiplication. The regular representation sends $\breve Q$ to the operator $L_{\breve Q}:\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ on the complex two-dimensional space of the algebra, and that operator is a $2\times2$ matrix with **complex** entries; on the real four-dimensional space the same operator is a $4\times4$ matrix with **real** entries. This article writes the two models, explains why the signs of the entries are forced by $j^{2}=+1$, records the trace, the determinant and the norm, and shows how the change to the idempotent basis diagonalises the matrix. The multiplication is **commutative**, so the matrix is symmetric, and it **has zero divisors**, so the matrix may be singular at a non-zero element. The diagonal model of the algebra itself — the isomorphism onto the diagonal matrices and the structure read there — is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; this article is about the element as a matrix, not about the structure.
 
-**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, with $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$. The four products and the forms $B,N,H,K$ are *The Four Products, Their Forms and Their Algebraic Norms*, and the multiplication operators in general are *Operators on the Reduced Biquaternions*. The element glyph is $Q_\pm$, without a tilde.
+**Conventions.** The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$, $ji=ij$; the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, with $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$. The four products and the forms $B,N,H,K$ are *The Four Products, Their Forms and Their Algebraic Norms*, and the multiplication operators in general are *Operators on the Reduced Biquaternions*. The element glyph is $\breve Q$, with the breve and without a tilde.
 
 **Boundaries.** The regular representation is defined in *Introduction to Reduced Biquaternion Element Representations*; the four-vector reading of the same element is *The Four-Vector Element Representation of the Reduced Biquaternions*; the diagonal model of the algebra is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*; the other presentations are *Reduced Biquaternion Other Algebraic Element Representations*; and the operators of the four products are collected in *Operators on the Reduced Biquaternions*. The biquaternion counterpart is *Introduction to the $2\times2$ Matrix Element Representation $M_{2}(\mathbb{C})$ of Biquaternions*, where the image is the whole of $M_{2}(\mathbb{C})$.
 
@@ -16,9 +16,9 @@ The **$2\times2$ matrix element representation** writes the reduced biquaternion
 
 **Definition.** The **matrix element representation** is
 $$
-\varphi(Q_\pm)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},
+\varphi(\breve Q)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},
 $$
-the matrix of the left multiplication $Q_{\pm,2}\mapsto Q_\pm Q_{\pm,2}$ on the complex basis $1,j$ of $\mathbb{B}_{\mathrm{r}}$.
+the matrix of the left multiplication $\breve Q_{2}\mapsto \breve Q \breve Q_{2}$ on the complex basis $1,j$ of $\mathbb{B}_{\mathrm{r}}$.
 
 **Proposition (the images of the basis).** On the real basis,
 $$
@@ -32,13 +32,13 @@ $$
 
 ### The Matrix of an Element
 
-**Theorem (the matrix).** The map $\varphi$ is an injective homomorphism of $\mathbb{C}$-algebras, $\varphi(Q_{\pm,1}Q_{\pm,2})=\varphi(Q_{\pm,1})\varphi(Q_{\pm,2})$ and $\varphi(1)=\mathrm I_{2}$, with the block form
+**Theorem (the matrix).** The map $\varphi$ is an injective homomorphism of $\mathbb{C}$-algebras, $\varphi(\breve Q_{1}\breve Q_{2})=\varphi(\breve Q_{1})\varphi(\breve Q_{2})$ and $\varphi(1)=\mathrm I_{2}$, with the block form
 $$
-\varphi(Q_\pm)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix}=\begin{pmatrix}q_+&-q'_+\\ q'_+&q_+\end{pmatrix}+j\begin{pmatrix}q_-&-q'_-\\ q'_-&q_-\end{pmatrix}
+\varphi(\breve Q)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix}=\begin{pmatrix}q_+&-q'_+\\ q'_+&q_+\end{pmatrix}+j\begin{pmatrix}q_-&-q'_-\\ q'_-&q_-\end{pmatrix}
 $$
 over the real basis, using $i=\begin{smallmatrix}0&-1\\ 1&0\end{smallmatrix}$.
 
-*Proof.* The product rule is read from $Q_{\pm,1}Q_{\pm,2}=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j$: the matrix product $\begin{smallmatrix}Q_{1+}&Q_{1-}\\ Q_{1-}&Q_{1+}\end{smallmatrix}\begin{smallmatrix}Q_{2+}&Q_{2-}\\ Q_{2-}&Q_{2+}\end{smallmatrix}=\begin{smallmatrix}Q_{1+}Q_{2+}+Q_{1-}Q_{2-}&Q_{1+}Q_{2-}+Q_{1-}Q_{2+}\\ Q_{1-}Q_{2+}+Q_{1+}Q_{2-}&Q_{1-}Q_{2-}+Q_{1+}Q_{2+}\end{smallmatrix}$ has the two diagonal entries $Q_{1+}Q_{2+}+Q_{1-}Q_{2-}$ and the two off-diagonal entries $Q_{1+}Q_{2-}+Q_{1-}Q_{2+}$, which is $\varphi(Q_{\pm,1}Q_{\pm,2})$. The injectivity is $\varphi(Q_\pm)=0\Rightarrow Q_+=Q_-=0\Rightarrow Q_\pm=0$. The real display is $\varphi(i)=i\mathrm I_{2}$ and $\varphi(j)=\sigma_{1}$ written in the real $2\times2$ basis.
+*Proof.* The product rule is read from $\breve Q_{1}\breve Q_{2}=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j$: the matrix product $\begin{smallmatrix}Q_{1+}&Q_{1-}\\ Q_{1-}&Q_{1+}\end{smallmatrix}\begin{smallmatrix}Q_{2+}&Q_{2-}\\ Q_{2-}&Q_{2+}\end{smallmatrix}=\begin{smallmatrix}Q_{1+}Q_{2+}+Q_{1-}Q_{2-}&Q_{1+}Q_{2-}+Q_{1-}Q_{2+}\\ Q_{1-}Q_{2+}+Q_{1+}Q_{2-}&Q_{1-}Q_{2-}+Q_{1+}Q_{2+}\end{smallmatrix}$ has the two diagonal entries $Q_{1+}Q_{2+}+Q_{1-}Q_{2-}$ and the two off-diagonal entries $Q_{1+}Q_{2-}+Q_{1-}Q_{2+}$, which is $\varphi(\breve Q_{1}\breve Q_{2})$. The injectivity is $\varphi(\breve Q)=0\Rightarrow Q_+=Q_-=0\Rightarrow \breve Q=0$. The real display is $\varphi(i)=i\mathrm I_{2}$ and $\varphi(j)=\sigma_{1}$ written in the real $2\times2$ basis.
 
 **Corollary (the image is not the whole matrix algebra).** The image $\varphi(\mathbb{B}_{\mathrm{r}})$ is a commutative two-dimensional subalgebra of $M_{2}(\mathbb{C})$ — the matrices of the form $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ — and not the whole of $M_{2}(\mathbb{C})$, which has complex dimension four. The biquaternion companion is realised as the whole of $M_{2}(\mathbb{C})$; here the commutativity forces the two diagonal entries to be equal and the two off-diagonal entries to be equal, halving the linear dimension.
 
@@ -48,9 +48,9 @@ over the real basis, using $i=\begin{smallmatrix}0&-1\\ 1&0\end{smallmatrix}$.
 
 **The images must satisfy $\varphi(i)^{2}=-\mathrm I_{2}$, $\varphi(j)^{2}=+\mathrm I_{2}$ and $\varphi(i)\varphi(j)=\varphi(j)\varphi(i)$, and these force the shape.**
 
-**Theorem (the shape is forced).** Let $\varphi$ be an injective homomorphism of $\mathbb{C}$-algebras with $\varphi(i)=i\mathrm I_{2}$. Then $\varphi(j)^{2}=\mathrm I_{2}$, so $\varphi(j)$ is an involution; if in addition $\varphi(j)$ has trace $0$ and is symmetric, then $\varphi(j)=\varepsilon\,\sigma_{1}$ with $\varepsilon=\pm1$ in the basis $1,j$, and the image of $Q_\pm$ is $\begin{smallmatrix}Q_+&\varepsilon Q_-\\ \varepsilon Q_-&Q_+\end{smallmatrix}$, which the normalisation $\varepsilon=+1$ reduces to the matrix of §*The Regular Representation*.
+**Theorem (the shape is forced).** Let $\varphi$ be an injective homomorphism of $\mathbb{C}$-algebras with $\varphi(i)=i\mathrm I_{2}$. Then $\varphi(j)^{2}=\mathrm I_{2}$, so $\varphi(j)$ is an involution; if in addition $\varphi(j)$ has trace $0$ and is symmetric, then $\varphi(j)=\varepsilon\,\sigma_{1}$ with $\varepsilon=\pm1$ in the basis $1,j$, and the image of $\breve Q$ is $\begin{smallmatrix}Q_+&\varepsilon Q_-\\ \varepsilon Q_-&Q_+\end{smallmatrix}$, which the normalisation $\varepsilon=+1$ reduces to the matrix of §*The Regular Representation*.
 
-*Proof.* From $\varphi(i)^{2}=\varphi(i^{2})=\varphi(-1)=-\mathrm I_{2}$ the image of $i$ is $i\mathrm I_{2}$ up to conjugation in the centre, which is scalar; from $\varphi(j)^{2}=\varphi(j^{2})=\varphi(1)=\mathrm I_{2}$ the image of $j$ is an involution. A traceless symmetric involution of $\mathbb{C}^{2}$ has $\sigma_{1}$ as its normal form, because its eigenvalues are $+1,-1$ with orthogonal eigendirections; and $ij=ji$ forces $\varphi(j)$ to commute with $\varphi(i)=i\mathrm I_{2}$, which is automatic. Reading $Q_\pm=Q_++jQ_-$ through $\varphi$ with $\varphi(j)=\sigma_{1}$ gives $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$.
+*Proof.* From $\varphi(i)^{2}=\varphi(i^{2})=\varphi(-1)=-\mathrm I_{2}$ the image of $i$ is $i\mathrm I_{2}$ up to conjugation in the centre, which is scalar; from $\varphi(j)^{2}=\varphi(j^{2})=\varphi(1)=\mathrm I_{2}$ the image of $j$ is an involution. A traceless symmetric involution of $\mathbb{C}^{2}$ has $\sigma_{1}$ as its normal form, because its eigenvalues are $+1,-1$ with orthogonal eigendirections; and $ij=ji$ forces $\varphi(j)$ to commute with $\varphi(i)=i\mathrm I_{2}$, which is automatic. Reading $\breve Q=Q_++jQ_-$ through $\varphi$ with $\varphi(j)=\sigma_{1}$ gives $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$.
 
 **Remark (the other normal form).** The same element is sent to the **diagonal** matrix $\operatorname{diag}(Q_{++},Q_{--})$ in the idempotent basis, where the image of $j$ is $\sigma_{3}=\operatorname{diag}(1,-1)$ instead of $\sigma_{1}$; the two normal forms are conjugate by the change of basis of §*The Diagonal Model*. The choice between $\sigma_{1}$ and $\sigma_{3}$ is the choice between writing the element and writing the algebra, and the algebra is the diagonal picture of *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*.
 
@@ -58,9 +58,9 @@ over the real basis, using $i=\begin{smallmatrix}0&-1\\ 1&0\end{smallmatrix}$.
 
 **On the real four-dimensional space the same operator is a real $4\times4$ matrix with the repeated-block form.**
 
-**Theorem (the real matrix).** For $Q_\pm=q_++iq'_++q_-j+iq'_-j$, the left multiplication on the real basis $1,i,j,ij$ is
+**Theorem (the real matrix).** For $\breve Q=q_++iq'_++q_-j+iq'_-j$, the left multiplication on the real basis $1,i,j,ij$ is
 $$
-L_{Q_\pm}=\begin{pmatrix}
+L_{\breve Q}=\begin{pmatrix}
 q_+&-q'_+&q_-&-q'_-\\
 q'_+&q_+&q'_-&q_-\\
 q_-&-q'_-&q_+&-q'_+\\
@@ -82,20 +82,20 @@ $$
 
 **The trace is twice the scalar complex coordinate, the determinant is the reduced norm, and the element is invertible exactly when the determinant does not vanish.**
 
-**Theorem (the invariants).** For $Q_\pm=Q_++jQ_-$,
+**Theorem (the invariants).** For $\breve Q=Q_++jQ_-$,
 $$
-\operatorname{tr}\varphi(Q_\pm)=2Q_+,\qquad \det\varphi(Q_\pm)=\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--},
+\operatorname{tr}\varphi(\breve Q)=2Q_+,\qquad \det\varphi(\breve Q)=\langle \breve Q\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--},
 $$
 and for the real matrix
 $$
-\operatorname{tr}L_{Q_\pm}=4q_+,\qquad \det L_{Q_\pm}=\lvert \langle Q_\pm\rangle_{\natural}\rvert^{2}=\lvert Q_{++}\rvert^{2}\lvert Q_{--}\rvert^{2}.
+\operatorname{tr}L_{\breve Q}=4q_+,\qquad \det L_{\breve Q}=\lvert \langle \breve Q\rangle_{\natural}\rvert^{2}=\lvert Q_{++}\rvert^{2}\lvert Q_{--}\rvert^{2}.
 $$
 
-*Proof.* The trace of $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ is $Q_++Q_+=2Q_+$ and its determinant is $Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$; the real matrix has trace $q_++q_++q_++q_+=4q_+$, which is $\operatorname{tr}\varphi(Q_\pm)+\overline{\operatorname{tr}\varphi(Q_\pm)}$ read in real coordinates, and determinant $\det(A_+-A_-)\det(A_++A_-)=\lvert Q_+-Q_-\rvert^{2}\lvert Q_++Q_-\rvert^{2}=\lvert Q_{--}\rvert^{2}\lvert Q_{++}\rvert^{2}$, by *The Four-Vector Element Representation of the Reduced Biquaternions*, §*Multiplication in Four-Vector Form*.
+*Proof.* The trace of $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ is $Q_++Q_+=2Q_+$ and its determinant is $Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$; the real matrix has trace $q_++q_++q_++q_+=4q_+$, which is $\operatorname{tr}\varphi(\breve Q)+\overline{\operatorname{tr}\varphi(\breve Q)}$ read in real coordinates, and determinant $\det(A_+-A_-)\det(A_++A_-)=\lvert Q_+-Q_-\rvert^{2}\lvert Q_++Q_-\rvert^{2}=\lvert Q_{--}\rvert^{2}\lvert Q_{++}\rvert^{2}$, by *The Four-Vector Element Representation of the Reduced Biquaternions*, §*Multiplication in Four-Vector Form*.
 
-**Corollary (the criterion in the model).** $Q_\pm$ is a **unit** exactly when $\varphi(Q_\pm)$ is invertible, that is $Q_{++}\neq0$ and $Q_{--}\neq0$; $Q_\pm$ is a **zero divisor** exactly when $\varphi(Q_\pm)\neq0$ is singular, that is exactly one of $Q_{++},Q_{--}$ is $0$; and $Q_\pm$ is **nilpotent** exactly when $\varphi(Q_\pm)$ is nilpotent, that is $Q_{++}=Q_{--}=0$, hence $Q_\pm=0$. The multiplication is **not a division algebra**, and the singular non-zero matrices are the images of the zero divisors.
+**Corollary (the criterion in the model).** $\breve Q$ is a **unit** exactly when $\varphi(\breve Q)$ is invertible, that is $Q_{++}\neq0$ and $Q_{--}\neq0$; $\breve Q$ is a **zero divisor** exactly when $\varphi(\breve Q)\neq0$ is singular, that is exactly one of $Q_{++},Q_{--}$ is $0$; and $\breve Q$ is **nilpotent** exactly when $\varphi(\breve Q)$ is nilpotent, that is $Q_{++}=Q_{--}=0$, hence $\breve Q=0$. The multiplication is **not a division algebra**, and the singular non-zero matrices are the images of the zero divisors.
 
-*Proof.* Invertibility of $\varphi(Q_\pm)$ is $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}\neq0$, the criterion of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; a diagonal model makes the three cases immediate, and the image of a diagonal matrix is nilpotent only if both entries vanish. The absence of division is the corollary of *The Four Products, Their Forms and Their Algebraic Norms*.
+*Proof.* Invertibility of $\varphi(\breve Q)$ is $\langle \breve Q\rangle_{\natural}=Q_{++}Q_{--}\neq0$, the criterion of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; a diagonal model makes the three cases immediate, and the image of a diagonal matrix is nilpotent only if both entries vanish. The absence of division is the corollary of *The Four Products, Their Forms and Their Algebraic Norms*.
 
 ## The Diagonal Model and the Change of Basis
 
@@ -107,11 +107,11 @@ P=\begin{pmatrix}1&1\\ 1&-1\end{pmatrix},\qquad \det P=-2,
 $$
 which sends the basis $1,j$ to the basis $1+j,\,1-j$, one has
 $$
-P^{-1}\varphi(Q_\pm)P=\operatorname{diag}(Q_{++},Q_{--}),
+P^{-1}\varphi(\breve Q)P=\operatorname{diag}(Q_{++},Q_{--}),
 $$
 the diagonal matrix of the two idempotent coordinates.
 
-*Proof.* $\varphi(Q_\pm)P=\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}=\begin{smallmatrix}Q_++Q_-&Q_+-Q_-\\ Q_-+Q_+&Q_--Q_+\end{smallmatrix}=\begin{smallmatrix}Q_{++}&Q_{--}\\ Q_{++}&-Q_{--}\end{smallmatrix}$, and $P^{-1}=\tfrac12\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ multiplies this to $\operatorname{diag}(Q_{++},Q_{--})$, the two columns $1+j$ and $1-j$ being the unnormalised idempotents $2\Pi_+$ and $2\Pi_-$.
+*Proof.* $\varphi(\breve Q)P=\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}=\begin{smallmatrix}Q_++Q_-&Q_+-Q_-\\ Q_-+Q_+&Q_--Q_+\end{smallmatrix}=\begin{smallmatrix}Q_{++}&Q_{--}\\ Q_{++}&-Q_{--}\end{smallmatrix}$, and $P^{-1}=\tfrac12\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ multiplies this to $\operatorname{diag}(Q_{++},Q_{--})$, the two columns $1+j$ and $1-j$ being the unnormalised idempotents $2\Pi_+$ and $2\Pi_-$.
 
 **Corollary (the two changes of basis).** The complex change has determinant $-2$ and the induced real change of the quadruple has determinant $4=\lvert-2\rvert^{2}$, which is the inverse of the $\tfrac14$ of *Decompositions Along the Remarkable Subspaces*; the two are the same change read over $\mathbb{C}$ and over $\mathbb{R}$.
 
@@ -153,17 +153,17 @@ The determinant of the matrix is the reduced norm $\langle\cdot\rangle_{\natural
 
 ## Summary
 
-The reduced biquaternion $Q_\pm=Q_++jQ_-$ is the matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ of its own multiplication on the complex basis $1,j$, and the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ on the real basis $1,i,j,ij$. The images of the basis are $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{1}$, $i\sigma_{1}$, and the shape is forced by $\varphi(j)^{2}=\mathrm I_{2}$ and the centrality of $i$. The trace is $2Q_+$ and the determinant $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$ in the complex model, $4q_+$ and $\lvert \langle Q_\pm\rangle_{\natural}\rvert^{2}$ in the real one. The change of basis $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ of determinant $-2$ diagonalises every matrix of the image to $\operatorname{diag}(Q_{++},Q_{--})$; the induced real change has determinant $4$, the inverse of the $\tfrac14$ of *Decompositions Along the Remarkable Subspaces*. The element is a **unit** exactly when $Q_{++}\neq0$ and $Q_{--}\neq0$, a **zero divisor** exactly when exactly one of them vanishes, and the multiplication is **not a division algebra**. The image is a commutative two-dimensional subalgebra of $M_{2}(\mathbb{C})$ and not the whole matrix algebra, which is the difference from the biquaternion companion.
+The reduced biquaternion $\breve Q=Q_++jQ_-$ is the matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ of its own multiplication on the complex basis $1,j$, and the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ on the real basis $1,i,j,ij$. The images of the basis are $\mathrm I_{2}$, $i\mathrm I_{2}$, $\sigma_{1}$, $i\sigma_{1}$, and the shape is forced by $\varphi(j)^{2}=\mathrm I_{2}$ and the centrality of $i$. The trace is $2Q_+$ and the determinant $\langle \breve Q\rangle_{\natural}=Q_{++}Q_{--}$ in the complex model, $4q_+$ and $\lvert \langle \breve Q\rangle_{\natural}\rvert^{2}$ in the real one. The change of basis $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ of determinant $-2$ diagonalises every matrix of the image to $\operatorname{diag}(Q_{++},Q_{--})$; the induced real change has determinant $4$, the inverse of the $\tfrac14$ of *Decompositions Along the Remarkable Subspaces*. The element is a **unit** exactly when $Q_{++}\neq0$ and $Q_{--}\neq0$, a **zero divisor** exactly when exactly one of them vanishes, and the multiplication is **not a division algebra**. The image is a commutative two-dimensional subalgebra of $M_{2}(\mathbb{C})$ and not the whole matrix algebra, which is the difference from the biquaternion companion.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\varphi(Q_\pm)$ | the $2\times2$ complex matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ of the multiplication by $Q_\pm$ |
-| $L_{Q_\pm}$ | the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ of the multiplication |
+| $\varphi(\breve Q)$ | the $2\times2$ complex matrix $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ of the multiplication by $\breve Q$ |
+| $L_{\breve Q}$ | the real $4\times4$ matrix $\begin{smallmatrix}A_+&A_-\\ A_-&A_+\end{smallmatrix}$ of the multiplication |
 | $\sigma_{1}$ | $\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}$, the image of $j$ in the basis $1,j$ |
 | $P=\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}$ | the change of basis to the idempotent basis, of determinant $-2$ |
-| $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$ | the determinant of $\varphi(Q_\pm)$, the reduced norm |
+| $\langle \breve Q\rangle_{\natural}=Q_{++}Q_{--}$ | the determinant of $\varphi(\breve Q)$, the reduced norm |
 
 ## Further Reading
 

@@ -157,10 +157,10 @@ Read in the other direction, this is the free rotor's geodesic flow seen on the 
 
 ## The Rotor Normalisation and Its Counterpart
 
-The rotor is required to have unit **biquaternion norm**, $\langle R\rangle_{\natural} = R\bar{R} = e_t$, and this is what makes the conjugation preserve $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\bar{X}$ and the subspace $\mathbb{M}_-$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^{*} = e_t$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not unitary; while the evolution operator of quantum physics, $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ with a Hamiltonian $\tilde{H} = h_0 e_t + i\vec h$ that has a trace part, is unitary but has
+The rotor is required to have unit **biquaternion norm**, $\langle R\rangle_{\natural} = R\bar{R} = e_t$, and this is what makes the conjugation preserve $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\bar{X}$ and the subspace $\mathbb{M}_-$; it is also what selects the traceless generators, as shown above. It is important to keep this condition distinct from **unitarity**, $R R^{*} = e_t$, which is a different equation. The two coincide for real quaternions (rotations) but not in general: a boost rotor is unit-norm and Hermitian, hence not unitary; while the evolution operator of quantum physics, $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ with a Hamiltonian $\tilde{H} = h_t e_t + i\vec h$ that has a trace part, is unitary but has
 
 $$
-N\big(\tilde{U}(t)\big) = \tilde{U}(t)\,\tilde{U}^{\natural}(t) = \exp(-2ih_0 t/\hbar) e_t \neq e_t .
+N\big(\tilde{U}(t)\big) = \tilde{U}(t)\,\tilde{U}^{\natural}(t) = \exp(-2ih_t t/\hbar) e_t \neq e_t .
 $$
 
 So "unit modulus" is a constraint on the **biquaternion norm**, and it is the constraint that defines the rotor group; the companion literature is careful to distinguish it from matrix unitarity, and the same care is needed here.

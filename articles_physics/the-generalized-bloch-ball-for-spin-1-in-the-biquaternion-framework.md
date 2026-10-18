@@ -20,13 +20,13 @@ Throughout, $\hbar=1$ in the geometric formulae, so that the spin-$1$ matrices h
 
 ## The Qubit Bloch Ball as the Reference Point
 
-It is worth stating the reference result in the form that will be generalised. In $\mathbb{M}_+$, an element is written $\tilde H=h_0e_t+i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$; its biquaternion norm is
+It is worth stating the reference result in the form that will be generalised. In $\mathbb{M}_+$, an element is written $\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$; its biquaternion norm is
 
 $$
-\langle\tilde H\rangle_{\natural}=h_0^2-|\vec h|^2 ,
+\langle\tilde H\rangle_{\natural}=h_t^2-|\vec h|^2 ,
 $$
 
-of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $\langle\tilde H\rangle_{\natural}\ge0$ with $h_0\ge0$. The trace-one hyperplane is $\mathrm{Sc}(\tilde H)=\tfrac12$, and the states are the intersection of that hyperplane with the cone,
+of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $\langle\tilde H\rangle_{\natural}\ge0$ with $h_t\ge0$. The trace-one hyperplane is $\mathrm{Sc}(\tilde H)=\tfrac12$, and the states are the intersection of that hyperplane with the cone,
 
 $$
 \tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec h,\qquad |\vec r|^2\le1 ,
@@ -290,7 +290,7 @@ The article established the following.
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace; positive cone $=$ future cone of $N$ |
-| $\langle\tilde H\rangle_{\natural}=h_0^2-\lvert\vec h\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
+| $\langle\tilde H\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_k$ | Spin-$1$ operators, $[F_i,F_j]=i\hbar\epsilon_{ijk}F_k$ |

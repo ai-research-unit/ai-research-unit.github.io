@@ -13,26 +13,26 @@ The article owns nothing but the ruling of §*The Metric: Three Levels*, which b
 The scalar part of a general product is a degree-two form of the pair of its arguments, and the four general products give exactly four forms and no more. With the one bracket whose subscript names the inserted conjugation,
 
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu,
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu},
 \qquad
-\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu},
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\textstyle\sum_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu,
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\textstyle\sum_\mu Q_{1\mu}Q_{2\mu},
 \qquad
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
 the general plain bilinear, the general plain sesquilinear, the general quaternionic bilinear and the general quaternionic sesquilinear form; they are the jobs of composition, probability, causality and gauge. The multiplication table of the units is the same in all four, so nothing but the insertion distinguishes them, and the four are **one bilinear form read through the two involutions**,
 
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\langle\tilde P,\tilde Q^{*}\rangle,\qquad
-\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle,\qquad
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P^{\natural},\tilde Q^{*}\rangle,
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2^{*}\rangle,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1^{\natural},\tilde Q_2^{*}\rangle,
 $$
 
-a single computation in the four cells of the grid. The symmetry separates them at once: $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are symmetric and $\mathbb{C}$-bilinear, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ conjugate-symmetric and sesquilinear, with $\langle\tilde P,\tilde Q\rangle_{*}=\overline{\langle\tilde Q,\tilde P\rangle_{*}}$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\overline{\langle\tilde Q,\tilde P\rangle_{\natural*}}$. Their Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ are $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ for $\langle\cdot,\cdot\rangle$, $\mathrm{I}_4$ for $\langle\cdot,\cdot\rangle_{*}$, $\mathrm{I}_4$ for $\langle\cdot,\cdot\rangle_{\natural}$ and $\mathrm{E}$ for $\langle\cdot,\cdot\rangle_{\natural*}$, the matrix being $\mathrm{E}$ exactly when the two slots are treated alike — neither conjugated, as in $\langle\cdot,\cdot\rangle$, or both, as in $\langle\cdot,\cdot\rangle_{\natural*}$ — and $\mathrm{I}_4$ when exactly one is conjugated, as in $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}$: two of the four forms are the two matrices, and the four forms are pairwise distinct although two pairs share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by the sign $\varepsilon_\mu$.
+a single computation in the four cells of the grid. The symmetry separates them at once: $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are symmetric and $\mathbb{C}$-bilinear, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ conjugate-symmetric and sesquilinear, with $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}}$. Their Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ are $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ for $\langle\cdot,\cdot\rangle$, $\mathrm{I}_4$ for $\langle\cdot,\cdot\rangle_{*}$, $\mathrm{I}_4$ for $\langle\cdot,\cdot\rangle_{\natural}$ and $\mathrm{E}$ for $\langle\cdot,\cdot\rangle_{\natural*}$, the matrix being $\mathrm{E}$ exactly when the two slots are treated alike — neither conjugated, as in $\langle\cdot,\cdot\rangle$, or both, as in $\langle\cdot,\cdot\rangle_{\natural*}$ — and $\mathrm{I}_4$ when exactly one is conjugated, as in $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}$: two of the four forms are the two matrices, and the four forms are pairwise distinct although two pairs share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by the sign $\varepsilon_\mu$.
 
 **Two readings of the same object.** A form is read in two ways, and they are not the same statement. Read on the **second slot** it is either $\mathbb{C}$-bilinear — a pairing that can be iterated, the pairing of a composition — or conjugate-linear, a pairing that can only be evaluated, the pairing of a measurement. Read on the **first slot** it is either definite on each sector or signed: the two forms whose first slot is read as it stands, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$, are the two that measure; the two whose first slot carries ${}^{\natural}$, $\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural*}$, are the two that carry a metric with a light cone. The second slot decides whether the form is a composability or a measurement, the first whether it measures or adds a light cone, and the four forms are the four cells of that grid.
 
@@ -50,7 +50,7 @@ $$
 Two of the four have a sense the others lack, and the senses are different. **$\langle\cdot,\cdot\rangle_{*}$ is positive definite**, $\langle\tilde Q\rangle_{*}>0$ for $\tilde Q\neq0$, real on every element, and it is the unique topological norm of the space, its square root the Euclidean norm; it is the norm of no other product either. **$\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative** on the general quaternionic bilinear product,
 
 $$
-\langle\tilde P^{\natural}\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\,\langle\tilde Q\rangle_{\natural},
+\langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural},
 $$
 
 so that the units and the zero divisors of that product are closed and the light cone is closed under composition; the norm then behaves as a **charge** of the composition, and it is the norm of no other product. $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural*}$ have neither sense: $\langle\cdot,\cdot\rangle$ is a complex bilinear algebraic norm, indefinite and isotropic over $\mathbb{C}$, and $\langle\cdot,\cdot\rangle_{\natural*}$ an indefinite Hermitian algebraic norm. The separation of the **multiplicative** from the **positive definite** sense is the first thing a reader of the four norms must keep: $\langle\cdot,\cdot\rangle_{*}$ is definite and not multiplicative, $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative and not definite, and one and the same element may have a large $\langle\cdot,\cdot\rangle_{*}$, a small $\langle\cdot,\cdot\rangle_{\natural}$, or the reverse.
@@ -184,7 +184,7 @@ The order of authority is therefore one-way. The algebra and its level-1 and lev
 
 One consequence does reach the physics, and it is the only place where a level-3 choice is not free. The Dirac adjoint is $\bar{\psi} = \psi^\dagger\gamma^0$, so it carries $\gamma^0$ and changes with the convention. With the mostly-minus generators $\bar{\psi}\gamma^0\psi = +\psi^\dagger\psi$, the positive number density; with the mostly-plus generators the same expression gives $-\psi^\dagger\psi$. A spinor bilinear written as $\bar{\psi}\Gamma\psi$ therefore requires the adjoint to be defined consistently with the generators in use. No article in the series currently writes a spinor bilinear in the mostly-plus convention, so no statement in the series is in error on this count; the point is recorded so that one is not introduced. This sign is not part of the freedom that $\gamma^\mu \mapsto i\gamma^\mu$ leaves behind.
 
-**The levels are also distinguished by the law the form obeys.** Beyond their sign, the levels differ in what they do under a product. The level-1 norm is **multiplicative**, $\langle\tilde{P}\tilde{Q}\rangle_{\natural}=\langle\tilde{P}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}$, so its level sets multiply and the unit-norm elements form a group; the level-2 interval inherits this multiplicativity on the material sector, which is why a Lorentz transformation preserves the interval and why the rotors are exactly the unit-norm elements. The level-2 Euclidean square and the level-3 Clifford metric are **not** multiplicative, and the positivity of the Hermitian form is what replaces multiplicativity on the state side: the Born weight is not a product of weights but the trace of a product, a pairing rather than a homomorphism. A form that multiplies gives a group of isometries; a form that does not gives a pairing and a Born rule.
+**The levels are also distinguished by the law the form obeys.** Beyond their sign, the levels differ in what they do under a product. The level-1 norm is **multiplicative**, $\langle\tilde{Q}_1\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_1\rangle_{\natural}\langle\tilde{Q}_2\rangle_{\natural}$, so its level sets multiply and the unit-norm elements form a group; the level-2 interval inherits this multiplicativity on the material sector, which is why a Lorentz transformation preserves the interval and why the rotors are exactly the unit-norm elements. The level-2 Euclidean square and the level-3 Clifford metric are **not** multiplicative, and the positivity of the Hermitian form is what replaces multiplicativity on the state side: the Born weight is not a product of weights but the trace of a product, a pairing rather than a homomorphism. A form that multiplies gives a group of isometries; a form that does not gives a pairing and a Born rule.
 
 ## Physical Readings
 
@@ -209,7 +209,7 @@ The change of scalars from $\mathbb{C}$ to $\mathbb{R}$ is the realification: th
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the four forms: general plain bilinear, general plain sesquilinear, general quaternionic bilinear, general quaternionic sesquilinear |
 | $\langle\tilde Q\rangle,\langle\tilde Q\rangle_{*},\langle\tilde Q\rangle_{\natural},\langle\tilde Q\rangle_{\natural*}$ | the four algebraic norms, the algebraic norms of the forms |
 | $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of $\langle\cdot,\cdot\rangle$ and of $\langle\cdot,\cdot\rangle_{\natural*}$; $\mathrm{I}_4$ of $\langle\cdot,\cdot\rangle_{*}$ and of $\langle\cdot,\cdot\rangle_{\natural}$ |
-| $\langle\tilde P^{\natural}\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | the multiplicativity of the quaternionic norm |
+| $\langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$ | the multiplicativity of the quaternionic norm |
 | $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the positive definite norm, the unique topological one |
 | $(n,m)$ | the inertia of a form, positive and negative counts of a diagonalisation |
 | $J=L_i$, $J^{2}=-\mathrm{id}$ | the complex structure the realification adds |

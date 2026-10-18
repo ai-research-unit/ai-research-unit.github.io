@@ -4,7 +4,7 @@
 
 This article studies the continuous Fourier transform of a reduced biquaternion-valued function. The transform is defined by an algebra-valued kernel built from a root of minus one; because the idempotents commute with every element and the multiplication is commutative, the transform splits into the pair of the ordinary complex Fourier transforms of the two idempotent coordinates. The article records the kernel, the transform pair, the factorization, the convolution theorem, the relation to the differential operators, the vanishing-norm issue and the relation to the discrete transform. The treatment is purely mathematical.
 
-Throughout the element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal is a function $f:\mathbb{R}\to\mathbb{B}_{\mathrm{r}}$, and the exponential is that of *Reduced Biquaternion Elementary Functions*.
+Throughout the element is $\breve Q=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. A signal is a function $f:\mathbb{R}\to\mathbb{B}_{\mathrm{r}}$, and the exponential is that of *Reduced Biquaternion Elementary Functions*.
 
 ## The Fourier Kernel
 

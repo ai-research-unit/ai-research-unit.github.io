@@ -88,7 +88,7 @@ so the solutions are exactly $0$ and $e_t$. The corresponding two-sided ideals $
 
 **Statement.** Neither the biquaternion norm nor its negative is positive definite on the Hermitian subspace $\mathbb{M}_+$, and on the full algebra the form is complex-valued, so definiteness is not defined there at all. The biquaternion norm is therefore not a norm and cannot be used to define probabilities.
 
-**Proof.** On $\mathbb{M}_+$ the biquaternion norm is $\langle h_0e_t+i\vec h\rangle_{\natural}=(h_0^2-|\vec h|^2)e_t$, of signature $(1,3)$; on the algebra it is $\langle\tilde{Q}\rangle_{\natural}=(x_0^2+x_1^2+x_2^2+x_3^2)e_t$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_t+i\vec e_x$ has $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=(1-1)e_t=0$ while $\tilde{H}\neq0$, and $\tilde{H}=i\vec e_x$ has $\langle i\vec e_x\rangle_{\natural}=-e_t$, so neither sign is definite there.
+**Proof.** On $\mathbb{M}_+$ the biquaternion norm is $\langle h_te_t+i\vec h\rangle_{\natural}=(h_t^2-|\vec h|^2)e_t$, of signature $(1,3)$; on the algebra it is $\langle\tilde{Q}\rangle_{\natural}=(x_0^2+x_1^2+x_2^2+x_3^2)e_t$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_t+i\vec e_x$ has $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=(1-1)e_t=0$ while $\tilde{H}\neq0$, and $\tilde{H}=i\vec e_x$ has $\langle i\vec e_x\rangle_{\natural}=-e_t$, so neither sign is definite there.
 
 **Consequence.** The biquaternion norm cannot certify that an element is non-zero, cannot define a topology, and cannot supply the positive quantity that Born probabilities require. Its physical role is the determinant — the Minkowski form on the Hermitian sector and the null cone of the pure states — not a metre.
 
@@ -166,11 +166,11 @@ for every unit $\vec u$, with both factors non-zero. In the matrix model this is
 
 ### O12. There are no canonical commutation relations inside the algebra
 
-**Statement.** There are no elements $\tilde{Q},\tilde{P}\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{Q},\tilde{P}]=\lambda e_t$, and no finite-dimensional module of $\mathbb{B}$ carries such a pair either.
+**Statement.** There are no elements $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{Q}_1,\tilde{Q}_2]=\lambda e_t$, and no finite-dimensional module of $\mathbb{B}$ carries such a pair either.
 
 **Proof.** The trace of any commutator vanishes,
 $$
-\mathrm{Tr}\bigl([\tilde{Q},\tilde{P}]\bigr)=\mathrm{Tr}\bigl(\tilde{Q}\tilde{P}\bigr)-\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)=0,
+\mathrm{Tr}\bigl([\tilde{Q}_1,\tilde{Q}_2]\bigr)=\mathrm{Tr}\bigl(\tilde{Q}_1\tilde{Q}_2\bigr)-\mathrm{Tr}\bigl(\tilde{Q}_2\tilde{Q}_1\bigr)=0,
 $$
 by cyclicity, whereas $\mathrm{Tr}(\lambda e_t)=2\lambda\neq0$. The same argument applies in any finite-dimensional representation, since the trace there is also cyclic.
 
@@ -319,11 +319,11 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 ### O23. No conjugation-carrying bracket closes (the three Jacobi failures)
 
-**Statement.** Of the four antisymmetric parts the four general products supply, **three** fail the Jacobi identity: the antisymmetrised quaternionic product $\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$, its sesquilinear companion, and the bracket of the state space. The plain bracket is the exception: it closes, and it is the one Lie product of the twelve, because its parent product is associative. But the plain bracket vanishes whenever either argument is central and carries no conjugation, so the three brackets that carry a conjugation — the ones the framework's interference and quantum pairings need — are exactly the three that fail. The algebra therefore supplies a Lie product only where no conjugation is involved.
+**Statement.** Of the four antisymmetric parts the four general products supply, **three** fail the Jacobi identity: the antisymmetrised quaternionic product $\tilde Q_1\wedge_{\natural}\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$, its sesquilinear companion, and the bracket of the state space. The plain bracket is the exception: it closes, and it is the one Lie product of the twelve, because its parent product is associative. But the plain bracket vanishes whenever either argument is central and carries no conjugation, so the three brackets that carry a conjugation — the ones the framework's interference and quantum pairings need — are exactly the three that fail. The algebra therefore supplies a Lie product only where no conjugation is involved.
 
 **Proof.** The failure is the **associator defect** of the parent product and not an accident of the witness.
 
-**Consequence.** The Lie structure the framework does carry is the **plain** bracket and its derived bracket on the vector subspace, where it is the cross product on $\mathbb{C}^3$, equivalently $\mathfrak{sl}(2,\mathbb{C})$. The bracket that must carry conjugation and interference does not close. For the quaternionic wedge the derived bracket still closes on $\mathrm{Vect}(\mathbb{B})$ as $\mathfrak{sl}(2,\mathbb{C})$, the identity being carried by the rotations and the obstruction by the boost-like mixed terms $P_0\vec Q-Q_t\vec P$ (*The Biquaternioid Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$*), so its failure is the extension of the derived bracket to the whole algebra and not a failure of the derived bracket itself. For the state space there is no derived rescue: interference has no Lie algebra, so the state space's antisymmetric pairing cannot be the generator of a group.
+**Consequence.** The Lie structure the framework does carry is the **plain** bracket and its derived bracket on the vector subspace, where it is the cross product on $\mathbb{C}^3$, equivalently $\mathfrak{sl}(2,\mathbb{C})$. The bracket that must carry conjugation and interference does not close. For the quaternionic wedge the derived bracket still closes on $\mathrm{Vect}(\mathbb{B})$ as $\mathfrak{sl}(2,\mathbb{C})$, the identity being carried by the rotations and the obstruction by the boost-like mixed terms $Q_{10}\vec Q_2-Q_{2t}\vec Q_1$ (*The Biquaternioid Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$*), so its failure is the extension of the derived bracket to the whole algebra and not a failure of the derived bracket itself. For the state space there is no derived rescue: interference has no Lie algebra, so the state space's antisymmetric pairing cannot be the generator of a group.
 
 **Remedy.** Read the failure measurements as the low operations of a **higher structure**: the associator and the Jacobi defect are the first terms of an $A_\infty$ and an $L_\infty$ algebra, and the repair is to state the higher identities rather than to look for a bracket that closes (*The Biquaternioid Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$*; *A-Infinity and L-Infinity Algebras*).
 

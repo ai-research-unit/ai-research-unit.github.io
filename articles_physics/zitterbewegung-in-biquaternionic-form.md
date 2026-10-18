@@ -65,7 +65,7 @@ $$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$
 
-The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_\pm = \mathbb{M}_\mp$. An element of $\mathbb{M}_-$ has imaginary scalar part and real vector part; an element of $\mathbb{M}_+$ has real scalar part and imaginary vector part. The quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the trace formula used for expectation values is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$.
+The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_\pm = \mathbb{M}_\mp$. An element of $\mathbb{M}_-$ has imaginary scalar part and real vector part; an element of $\mathbb{M}_+$ has real scalar part and imaginary vector part. The quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the trace formula used for expectation values is $\mathrm{Tr}(\tilde Q_1\tilde H) = 2\,\mathrm{Sc}(\tilde Q_1\tilde H)$.
 
 The biquaternionic Dirac equation is the parent's linear, chirality-off-diagonal pair
 
@@ -217,7 +217,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Volume element (parity grading) |
 | $\omega_Z = 2E/\hbar$ | Zitterbewegung angular frequency |
 | $\hbar/(2mc)$ | Zitterbewegung amplitude (order) |
-| $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula |
+| $\mathrm{Tr}(\tilde Q_1\tilde H) = 2\,\mathrm{Sc}(\tilde Q_1\tilde H)$ | Trace formula |
 
 ## Further Reading
 

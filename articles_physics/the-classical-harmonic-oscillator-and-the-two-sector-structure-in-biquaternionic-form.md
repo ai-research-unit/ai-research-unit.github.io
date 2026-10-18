@@ -272,7 +272,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq \nu)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_t$; $i\mathbb{M}_\pm = \mathbb{M}_\mp$ |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector: $iq'_te_t + \vec q$ |
-| $\mathbb{M}_+$ | Hermitian (informational) sector: $h_0e_t + i\vec h$ |
+| $\mathbb{M}_+$ | Hermitian (informational) sector: $h_te_t + i\vec h$ |
 | $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre; the phase plane of the oscillator |
 | $\mathbb{M}_+ \cap \mathbb{C}_{\mathbb{B}} = e_t\mathbb{R}$ | Real axis of the phase plane (position quadrature) |
 | $\mathbb{M}_- \cap \mathbb{C}_{\mathbb{B}} = ie_t\mathbb{R}$ | Imaginary axis of the phase plane (momentum quadrature) |

@@ -41,7 +41,7 @@ whose vanishing locus is the cone; the subspaces are the anti-Hermitian material
 the Hermitian informational sector $\mathbb{M}_+$; the material coordinate is $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$,
 so that $\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$, and $c=1/\sqrt{\epsilon\mu}$. An element is **pure** when
 its scalar part vanishes, $Q_t=0$, and **non-pure** when $Q_t\neq0$. The plain product is written
-$\tilde P\tilde Q$ and the plain sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the
+$\tilde Q_1\tilde Q_2$ and the plain sesquilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$; the
 trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The twelve structures are those of *The 12 Products of the
 Biquaternioid Complex Space* and *The Twelve Structures Compared: Product, Law and Form*, and they are cited
 throughout by their three-letter names.
@@ -110,10 +110,10 @@ vanishing of the norm is a statement about invertibility, not about the square.
 
 ### The cone in the four general products
 
-The four general structures are the plain product $\tilde P\tilde Q$ (GPA, the composition band), the
+The four general structures are the plain product $\tilde Q_1\tilde Q_2$ (GPA, the composition band), the
 plain sesquilinear product
-$\tilde P\tilde Q^{*}$ (GPS, the probability band), the quaternionic product $\tilde P^{\natural}\tilde Q$ (GQA) and the quaternionic sesquilinear product
-$\tilde P^{\natural}\tilde Q^{*}$ (GQS, the gauge band). Each is the plain product in one slot and one
+$\tilde Q_1\tilde Q_2^{*}$ (GPS, the probability band), the quaternionic product $\tilde Q_1^{\natural}\tilde Q_2$ (GQA) and the quaternionic sesquilinear product
+$\tilde Q_1^{\natural}\tilde Q_2^{*}$ (GQS, the gauge band). Each is the plain product in one slot and one
 conjugation, so each has the plain norm as its criterion and the cone as its zero-divisor set. The physics
 of the cone differs from band to band, and the differences are the subject of
 *The Cone and the Massless Particles in the Biquaternioid Structures over $\mathbb{C}$*: in the composition the cone is the
@@ -123,7 +123,7 @@ of the Dagger*; in the gauge band the same cone is the locus where the fourth pr
 read in *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*.
 
 What the four share is the set itself. The identity
-$\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ makes the norm a multiplicative label, and the cone is the
+$\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$ makes the norm a multiplicative label, and the cone is the
 set on which the label vanishes; no slot and no conjugation changes it. The physical statement is that
 masslessness is a property of the interval alone, and the four products are four things to do with a
 massless element, not four different notions of masslessness.
@@ -149,10 +149,10 @@ twelve readings in one place.
 
 ### $\mathrm{GPA}$, the general plain algebra — composition
 
-The product is the plain product $\tilde P\tilde Q$, and its zero-divisor set is the punctured cone
+The product is the plain product $\tilde Q_1\tilde Q_2$, and its zero-divisor set is the punctured cone
 $\mathcal{C}\setminus\{0\}$. Off the cone the norm does not vanish and the acting map
-$L_{\tilde P}:\tilde Q_1\mapsto\tilde P\tilde Q_1$ is invertible, with the two-sided inverse
-$\tilde P^{\natural}/\langle\tilde P\rangle_{\natural}$; on the cone the map drops rank and destroys its argument. The physical
+$L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\tilde Q_2$ is invertible, with the two-sided inverse
+$\tilde Q_1^{\natural}/\langle\tilde Q_1\rangle_{\natural}$; on the cone the map drops rank and destroys its argument. The physical
 statement is that the composition of operations degenerates exactly on the light cone, so the cone is at
 once the locus of lightlike propagation and the boundary between the reversible and the irreversible
 processes. *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and *Zero Divisors as a Physical Locus in
@@ -162,37 +162,37 @@ The units are the elements off the cone, and they form the group $\mathbb{B}^{\t
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra — probability
 
-The product is the pairing $\tilde P\tilde Q^{*}$, and its zero-divisor set is the punctured cone. The
+The product is the pairing $\tilde Q_1\tilde Q_2^{*}$, and its zero-divisor set is the punctured cone. The
 band reads the cone as the rank drop of the sesquilinear square: the square of a nonzero element has rank
 two off the cone and rank one on it, so the zero divisors are exactly the amplitudes of vanishing Born
 weight. The reading is *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and *The Spinor Space as a Module and as a Hilbert Space*.
 
-The element $e_t$ is a right unit alone, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{*}$ of the inverse equations; the cone is the complement of those elements, and they form no group.
+The element $e_t$ is a right unit alone, and the invertible elements are the elements off the cone, with the solution $(\tilde Q_1^{-1})^{*}$ of the inverse equations; the cone is the complement of those elements, and they form no group.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra — causality
 
-The product is $\tilde P^{\natural}\tilde Q$, the plain product with the natural conjugation in the first
+The product is $\tilde Q_1^{\natural}\tilde Q_2$, the plain product with the natural conjugation in the first
 slot, and its square is the central interval; the criterion is again the norm, so the zero-divisor set is
 the same punctured cone. The band reads the cone as the shell of vanishing interval: a lightlike element
 cannot be composed with, and the rank drop of the multiplication is the algebraic form of that statement.
 The reading is *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* and *Why the
 Material Composition Is Oriented and Cannot Measure*.
 
-The element $e_t$ is a left unit alone, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{\natural}$ of the inverse equations; the cone is the complement of those elements, and they form no group, the product being non-associative.
+The element $e_t$ is a left unit alone, and the invertible elements are the elements off the cone, with the solution $(\tilde Q_1^{-1})^{\natural}$ of the inverse equations; the cone is the complement of those elements, and they form no group, the product being non-associative.
 
 ### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
 
-The product is the fourth product $\tilde P^{\natural}\tilde Q^{*}$, and its zero-divisor set is the
+The product is the fourth product $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and its zero-divisor set is the
 punctured cone, the null set of the indefinite metric. Here the cone is the locus where the gauge metric
 degenerates, and the rank drop is the algebraic form of a gauge direction that cannot be normalised. The
 reading is *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* and *The States the Indefinite Metric Cannot
 Normalise*.
 
-There is no unit on either side, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{\natural*}$ of the inverse equations; the cone is the complement of those elements, and they form no group.
+There is no unit on either side, and the invertible elements are the elements off the cone, with the solution $(\tilde Q_1^{-1})^{\natural*}$ of the inverse equations; the cone is the complement of those elements, and they form no group.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
 
-The product is the Jordan product $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, and its zero-divisor set
+The product is the Jordan product $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$, and its zero-divisor set
 enlarges to $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$: a nonzero element is a zero divisor exactly when
 it is pure or lies on the cone, and a pure element annihilates the plane of the elements orthogonal to
 it. The enlargement is physical and not a curiosity.
@@ -203,8 +203,8 @@ The invertible elements are again the elements off the cone, with $e_t$ a two-si
 
 ### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
 
-The product is the symmetrisation $\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$,
-scalar-valued, with the non-negative value $\langle\tilde P,\tilde Q\rangle_{*}$; the zero-divisor set is the whole
+The product is the symmetrisation $\tfrac12(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}})$,
+scalar-valued, with the non-negative value $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$; the zero-divisor set is the whole
 punctured space. The band keeps the real part of the Born pairing alone, and a real number cannot invert
 anything: the value zero is one linear equation, killed by a hyperplane. A symmetrised pairing is a
 measurement and not an operation. The reading is *The Hermitian Form as a Product: Positivity and the Real
@@ -215,7 +215,7 @@ There is no unit, the value being a real number, so there is no group of units a
 
 ### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
 
-The product is the symmetrisation $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$, central and
+The product is the symmetrisation $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, central and
 scalar-valued, and its zero-divisor set is the whole punctured space: the equation "the value is zero" is
 one complex linear equation in the components of the partner, and its solutions fill a complex hyperplane.
 A scalar coupling of two operations returns a number, and a number has no inverse. The reading is *The
@@ -227,7 +227,7 @@ There is no unit — the value is a number and a number is not an operation — 
 ### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
 
 The product is the symmetrisation
-$\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}})$, and its
+$\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$, and its
 zero-divisor set is the enlarged set $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$, as for $\mathrm{SPA}$.
 The band reads the symmetric part of the gauge metric, and the same witness applies: a symmetrised gauge
 coupling annihilates two operations whose vector parts are conjugate-orthogonal. The reading is *The Gauge
@@ -238,7 +238,7 @@ There is no unit, both symmetrised terms conjugating a factor, so the complement
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
 
-The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, an
+The product is the commutator $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$, an
 alternating product, so every nonzero element is annihilated by itself and the zero-divisor set is the
 whole punctured space $\mathbb{B}\setminus\{0\}$. A bracket is not a composition: no element of it has an
 inverse. Physically the antisymmetric plain product is the Lie bracket of rotations, and the statement is
@@ -251,7 +251,7 @@ There is no unit, the bracket taking its values in the vector subspace, so the c
 ### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
 
 The product is the antisymmetrisation
-$\tfrac12(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}})$, the vector part of the pairing, and its
+$\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}})$, the vector part of the pairing, and its
 zero-divisor set is the whole punctured space. The band reads the imaginary part of the Born pairing, and
 an imaginary part is a phase, not an operation with an inverse. The reading is *The Imaginary Part of the
 Born Pairing: the Antisymmetric Sesquilinear Product* and *The Operators of the Antisymmetric Plain
@@ -261,7 +261,7 @@ There is no unit, the value lying in the vector subspace, so there is no group o
 
 ### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
 
-The product is the antisymmetrisation $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$,
+The product is the antisymmetrisation $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$,
 alternating, so the zero-divisor set is the whole punctured space. This is the bracket that obstructs the
 internal action, and the physical statement is that a bracket which does not close is not a composition
 either. The reading is *The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic
@@ -271,7 +271,7 @@ There is no unit, so there is no group of units and the complement of the whole 
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
 
-The product is the antisymmetrisation $\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})=\vec P\times\overline{\vec Q}$,
+The product is the antisymmetrisation $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})=\vec Q_1\times\overline{\vec Q_2}$,
 the conjugate cross product, and its zero-divisor set is the whole punctured space. The band reads the
 polarisation of the gauge coupling, and a conjugate bracket is not a composition. The reading is *The
 Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product* and *The Operators of the
@@ -286,18 +286,18 @@ set.
 
 | structure | product | zero-divisor set | physical reading |
 |---|---|---|---|
-| GPA | $\tilde P\tilde Q$ | $\mathcal{C}\setminus\{0\}$ | the plain composition degenerates on the light cone: lightlike propagation, no inverse |
-| GPS | $\tilde P\tilde Q^{*}$ | $\mathcal{C}\setminus\{0\}$ | the probability band degenerates on the cone: the rank drop of the sesquilinear square |
-| GQA | $\tilde P^{\natural}\tilde Q$ | $\mathcal{C}\setminus\{0\}$ | the quaternionic composition degenerates on the same cone |
-| GQS | $\tilde P^{\natural}\tilde Q^{*}$ | $\mathcal{C}\setminus\{0\}$ | the gauge band degenerates on the cone: the null set of its indefinite metric |
-| SPA | $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$ | the symmetrised composition also annihilates on the lightlike family |
-| SPS | $\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$ | $\mathbb{B}\setminus\{0\}$ | a scalar-valued pairing: the weight is a number, not an operation |
-| SQA | $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ | $\mathbb{B}\setminus\{0\}$ | a scalar-valued coupling: the value is a number that composes with nothing |
-| SQS | $\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}})$ | $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$ | the symmetrised gauge coupling also annihilates on the lightlike family |
-| APA | $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ | $\mathbb{B}\setminus\{0\}$ | the antisymmetrised composition is not invertible anywhere |
-| APS | $\tfrac12(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}})$ | $\mathbb{B}\setminus\{0\}$ | the antisymmetrised pairing is not invertible anywhere |
-| AQA | $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | $\mathbb{B}\setminus\{0\}$ | the antisymmetrised quaternionic composition is not invertible anywhere |
-| AQS | $\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})$ | $\mathbb{B}\setminus\{0\}$ | the antisymmetrised gauge coupling is not invertible anywhere |
+| GPA | $\tilde Q_1\tilde Q_2$ | $\mathcal{C}\setminus\{0\}$ | the plain composition degenerates on the light cone: lightlike propagation, no inverse |
+| GPS | $\tilde Q_1\tilde Q_2^{*}$ | $\mathcal{C}\setminus\{0\}$ | the probability band degenerates on the cone: the rank drop of the sesquilinear square |
+| GQA | $\tilde Q_1^{\natural}\tilde Q_2$ | $\mathcal{C}\setminus\{0\}$ | the quaternionic composition degenerates on the same cone |
+| GQS | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\mathcal{C}\setminus\{0\}$ | the gauge band degenerates on the cone: the null set of its indefinite metric |
+| SPA | $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$ | the symmetrised composition also annihilates on the lightlike family |
+| SPS | $\tfrac12(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ | a scalar-valued pairing: the weight is a number, not an operation |
+| SQA | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ | a scalar-valued coupling: the value is a number that composes with nothing |
+| SQS | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | $(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$ | the symmetrised gauge coupling also annihilates on the lightlike family |
+| APA | $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ | the antisymmetrised composition is not invertible anywhere |
+| APS | $\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ | the antisymmetrised pairing is not invertible anywhere |
+| AQA | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$ | $\mathbb{B}\setminus\{0\}$ | the antisymmetrised quaternionic composition is not invertible anywhere |
+| AQS | $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$ | $\mathbb{B}\setminus\{0\}$ | the antisymmetrised gauge coupling is not invertible anywhere |
 
 Three groups appear in the table, and each group has one physical statement.
 
@@ -307,8 +307,8 @@ Three groups appear in the table, and each group has one physical statement.
 - **The two symmetric structures $\mathrm{SPA}$ and $\mathrm{SQS}$.** The set is the enlarged set: the
   pure family $\{Q_t=0\}$ and the cone. The physics of the enlargement is that the symmetrised coupling of
   two **pure** operations vanishes whenever their vector parts are orthogonal. The cleanest witness is the
-  unit itself: $\tilde P=\vec e_x$ has norm $1$ and is invertible in the algebra, yet for the Jordan product
-  $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ one has
+  unit itself: $\vec e_x$ has norm $1$ and is invertible in the algebra, yet for the Jordan product
+  $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ one has
   $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x\vec e_y+\vec e_y\vec e_x)=0$. The same holds for the symmetric quaternionic sesquilinear
   product, $\vec e_x\star \vec e_y=0$. A unit that cannot be composed symmetrically with another unit is the
   physical content of the enlargement: the derived symmetric operations are couplings, and a coupling of
@@ -317,7 +317,7 @@ Three groups appear in the table, and each group has one physical statement.
   $\mathrm{AQA}$ and $\mathrm{AQS}$.** The set is the whole punctured space: every nonzero element has an
   annihilator, so the product has no invertible operation at all. The reason splits in two. The two
   **scalar-valued** structures $\mathrm{SPS}$ and $\mathrm{SQA}$ return a central number,
-  $\mathrm{Sc}(\tilde P\tilde Q^{*})e_t$ and $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)e_t$, and the
+  $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})e_t$ and $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)e_t$, and the
   equation "the value is zero" is one linear equation in the components of the second factor, whose
   solutions fill a complex hyperplane. The four **antisymmetric** structures are alternating or
   conjugate-alternating, and every nonzero element is annihilated by a partner built from itself. A product

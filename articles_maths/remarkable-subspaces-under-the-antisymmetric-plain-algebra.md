@@ -163,7 +163,7 @@ The invariant form of the block is computed in *The Killing Form of the Antisymm
 
 ## Worked Examples
 
-**The centre.** $\tilde P=e_t+ie_t$ and $\tilde Q=\vec e_x$ give $\tilde P\wedge\tilde Q=0$: the central element is annihilated, and the centre is the zero row.
+**The centre.** $\tilde Q_3=e_t+ie_t$ and $\tilde Q_4=\vec e_x$ give $\tilde Q_3\wedge\tilde Q_4=0$: the central element is annihilated, and the centre is the zero row.
 
 **A real vector bracket.** $\vec e_x\wedge \vec e_y=\vec e_z$: the bracket of two real vectors is a real vector, the first line of the sector rule.
 

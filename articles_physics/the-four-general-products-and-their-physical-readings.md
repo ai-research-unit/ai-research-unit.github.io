@@ -8,7 +8,7 @@ generates the four, the two structural rules behind their properties, and the ph
 the four is asked to do.
 
 The mechanism is that the four general products are the four ways of inserting the involutions of the algebra
-into the two slots of a multiplication. Written for a general product $\tilde P\star\tilde Q$, the first
+into the two slots of a multiplication. Written for a general product $\tilde Q_1\star\tilde Q_2$, the first
 factor is read either as it stands or through the natural conjugation ${}^{\natural}$, and the second
 factor is read either as it stands or through the involution ${}^{*}$; nothing else varies. The four general
 products are therefore indexed by a $2\times2$ grid, and the grid is the whole subject. The four rules
@@ -79,7 +79,7 @@ the two interpretations are distinguished wherever they differ below.
 
 The four general products are written out here on the coordinates, before the slot language of §*The Two Slots*
 is used, because the four rules are met first as formulas and this article is the map of the four
-physics blocks that follow. For two elements $\tilde P,\tilde Q$ of $\mathbb{B}$, with
+physics blocks that follow. For two elements $\tilde Q_1,\tilde Q_2$ of $\mathbb{B}$, with
 $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$, a conjugation either
 leaves a coordinate as it stands or reverses its sign, conjugating the coefficient in the second case:
 
@@ -92,10 +92,10 @@ coordinates of the two factors on the basis of the units, the first factor read 
 ${}^{\natural}$ and the second plain or through ${}^{*}$, the two choices independent:
 
 $$
-\tilde P\tilde Q=\sum_{\mu,\nu}P_\mu Q_\nu\,e_\mu e_\nu,\qquad \tilde P\tilde Q^{*}=\sum_{\mu,\nu}\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu,
+\tilde Q_1\tilde Q_2=\sum_{\mu,\nu}Q_{1\mu} Q_{2\nu}\,e_\mu e_\nu,\qquad \tilde Q_1\tilde Q_2^{*}=\sum_{\mu,\nu}\varepsilon_\nu Q_{1\mu}\overline{Q_{2\nu}}\,e_\mu e_\nu,
 $$
 $$
-\tilde P^{\natural}\tilde Q=\sum_{\mu,\nu}\varepsilon_\mu P_\mu Q_\nu\,e_\mu e_\nu,\qquad \tilde P^{\natural}\tilde Q^{*}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu .
+\tilde Q_1^{\natural}\tilde Q_2=\sum_{\mu,\nu}\varepsilon_\mu Q_{1\mu} Q_{2\nu}\,e_\mu e_\nu,\qquad \tilde Q_1^{\natural}\tilde Q_2^{*}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu Q_{1\mu}\overline{Q_{2\nu}}\,e_\mu e_\nu .
 $$
 
 Their scalar parts are the four forms the article reads throughout, and written out term by term they
@@ -103,10 +103,10 @@ are
 
 $$
 \begin{aligned}
-\langle\tilde P,\tilde Q\rangle&=\mathrm{Sc}(\tilde P\tilde Q)=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu=P_0Q_t-P_1Q_x-P_2Q_y-P_3Q_z,\\
-\langle\tilde P,\tilde Q\rangle_{*}&=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_t}+P_1\overline{Q_x}+P_2\overline{Q_y}+P_3\overline{Q_z},\\
-\langle\tilde P,\tilde Q\rangle_{\natural}&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu=P_0Q_t+P_1Q_x+P_2Q_y+P_3Q_z,\\
-\langle\tilde P,\tilde Q\rangle_{\natural*}&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_t}-P_1\overline{Q_x}-P_2\overline{Q_y}-P_3\overline{Q_z}.
+\langle\tilde Q_1,\tilde Q_2\rangle&=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}=Q_{10}Q_{2t}-Q_{11}Q_{2x}-Q_{12}Q_{2y}-Q_{13}Q_{2z},\\
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}&=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\textstyle\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{10}\overline{Q_{2t}}+Q_{11}\overline{Q_{2x}}+Q_{12}\overline{Q_{2y}}+Q_{13}\overline{Q_{2z}},\\
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}&=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\textstyle\sum_\mu Q_{1\mu} Q_{2\mu}=Q_{10}Q_{2t}+Q_{11}Q_{2x}+Q_{12}Q_{2y}+Q_{13}Q_{2z},\\
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}&=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{10}\overline{Q_{2t}}-Q_{11}\overline{Q_{2x}}-Q_{12}\overline{Q_{2y}}-Q_{13}\overline{Q_{2z}}.
 \end{aligned}
 $$
 
@@ -121,14 +121,14 @@ Each of the four general products of *The Four General Products of the Biquatern
 through an involution, and the involutions used are only two of the four available ones:
 
 $$
-\tilde P\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q,\qquad
-\tilde P^{\natural}\tilde Q^{*}.
+\tilde Q_1\tilde Q_2,\qquad \tilde Q_1\tilde Q_2^{*},\qquad \tilde Q_1^{\natural}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2^{*}.
 $$
 
 Every one of them is of the form
 
 $$
-\tilde P\star\tilde Q=K_1(\tilde P)\,K_2(\tilde Q),\qquad
+\tilde Q_1\star\tilde Q_2=K_1(\tilde Q_1)\,K_2(\tilde Q_2),\qquad
 K_1\in\{\mathrm{id},{}^{\natural}\},\quad K_2\in\{\mathrm{id},{}^{*}\},
 $$
 
@@ -145,8 +145,8 @@ The grid is:
 
 | | $K_2=\mathrm{id}$ | $K_2={}^{*}$ |
 |---|---|---|
-| $K_1=\mathrm{id}$ | the plain product $\tilde P\tilde Q$ | the sesquilinear product $\tilde P\tilde Q^{*}$ |
-| $K_1={}^{\natural}$ | the quaternionic product $\tilde P^{\natural}\tilde Q$ | the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ |
+| $K_1=\mathrm{id}$ | the plain product $\tilde Q_1\tilde Q_2$ | the sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ |
+| $K_1={}^{\natural}$ | the quaternionic product $\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ |
 
 **The two rows are not a second classification; they are the first slot.** The upper row has no
 ${}^{\natural}$ and the lower row has it, and by §*What the Two Slots Decide* that single difference is
@@ -159,13 +159,13 @@ are used, and it is tempting to read the unused twelve as transposes or conjugat
 redundant. They are not, and the point matters for the reason the grid is a grid of four. The transpose
 does behave inside the two bilinear cells: the transpose of the plain product is a plain product, and the
 transpose of the quaternionic product is its **natural conjugate**,
-$\tilde Q^{\natural}\tilde P=(\tilde P^{\natural}\tilde Q)^{\natural}$, so it stays in the quaternionic
+$\tilde Q_2^{\natural}\tilde Q_1=(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}$, so it stays in the quaternionic
 cell. But the transpose of a **sesquilinear** product is not a product of the family at all — it returns a
 product of the opposite type — which is exactly why the exchange used for the sesquilinear families is the
 **conjugate transpose** and not the bare interchange (§*The Method of the Decomposition* of *The 12
 Products of the Biquaternioid Complex Space*). And the twelve unused pairs are in the main **other
 products**: a pair such as $(\bar{\cdot},\mathrm{id})$, reading the first factor through the
-coefficientwise conjugation, gives the product $\bar{\tilde P}\tilde Q$, which is none of the four and not
+coefficientwise conjugation, gives the product $\bar{\tilde Q_1}\tilde Q_2$, which is none of the four and not
 a transpose or a conjugate of any of them. The restriction to the four is therefore a genuine restriction
 of the algebra and not a redundancy of naming, and reading the unused twelve as a "mirror" of the four is
 **not** supported. What the transpose does supply is the reason the four are closed in the bilinear row and
@@ -189,10 +189,10 @@ in exactly two marks. With $\varepsilon=(1,-1,-1,-1)$ and $\mathrm{Sc}$ the scal
 
 | product | scalar form | written out |
 |---|---|---|
-| $\tilde P\tilde Q$ | $\langle\tilde P,\tilde Q\rangle$ | $\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ |
-| $\tilde P\tilde Q^{*}$ | $\langle\tilde P,\tilde Q\rangle_{*}$ | $\sum_\mu P_\mu\overline{Q_\mu}$ |
-| $\tilde P^{\natural}\tilde Q$ | $\langle\tilde P,\tilde Q\rangle_{\natural}$ | $\sum_\mu P_\mu Q_\mu$ |
-| $\tilde P^{\natural}\tilde Q^{*}$ | $\langle\tilde P,\tilde Q\rangle_{\natural*}$ | $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ |
+| $\tilde Q_1\tilde Q_2$ | $\langle\tilde Q_1,\tilde Q_2\rangle$ | $\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ |
+| $\tilde Q_1\tilde Q_2^{*}$ | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | $\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | $\sum_\mu Q_{1\mu} Q_{2\mu}$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | $\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ |
 
 Read by column and row, the two marks separate cleanly:
 
@@ -240,11 +240,11 @@ properties the corpus tabulates, and the rule in the last column is the reason.
 | the left multiplications form a monoid | second slot | yes if and only if $K_2=\mathrm{id}$ |
 | $e_t$ is a **right** identity | first slot | yes if and only if $K_1=\mathrm{id}$ |
 | the coefficient $\varepsilon$ survives in the scalar form | both slots | yes if and only if the two slots agree |
-| the induced form is positive definite | exactly one product | only for $\tilde P\tilde Q^{*}$ |
+| the induced form is positive definite | exactly one product | only for $\tilde Q_1\tilde Q_2^{*}$ |
 | the induced form is definite on each sector | first slot | definite on $\mathbb{M}_-$ and on $\mathbb{M}_+$ if and only if $K_1=\mathrm{id}$ |
 | $e_t$ is a **two-sided** identity | both slots | yes if and only if $K_1=K_2=\mathrm{id}$ |
 | associative | both slots | yes if and only if $K_1=\mathrm{id}$ and $K_2=\mathrm{id}$ |
-| the square $\tilde Q\star\tilde Q$ is scalar | exactly one product | only for $\tilde P^{\natural}\tilde Q$ |
+| the square $\tilde Q\star\tilde Q$ is scalar | exactly one product | only for $\tilde Q_1^{\natural}\tilde Q_2$ |
 
 The table gathers the rows of the property table of *Comparison Between the Four General Products*
 — bilinearity, the two identities, the monoid of the left multiplications and associativity — read by
@@ -310,8 +310,8 @@ The two products whose second slot is trivial are $\mathbb{C}$-bilinear, and the
 of an **algebra over $\mathbb{C}$** in the sense the corpus uses — the two **general** algebras among the six the space carries, the general plain and the general quaternionic algebra. Both have a left identity, and both
 induce a bilinear form by squaring.
 
-**The plain product $\tilde P\tilde Q$** is the only associative one and the only one with a two-sided
-identity. Its form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ is $-\mathrm{I}_4$ on $\mathbb{M}_-$ and
+**The plain product $\tilde Q_1\tilde Q_2$** is the only associative one and the only one with a two-sided
+identity. Its form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is $-\mathrm{I}_4$ on $\mathbb{M}_-$ and
 $+\mathrm{I}_4$ on $\mathbb{M}_+$, so it is definite on each sector and carries the **sector sign**;
 within each sector it has no null cone, so it carries no Lorentzian metric. The **physical interpretation** is that
 this is the product of **composition**: it is associative, so it can be iterated without ambiguity, and
@@ -322,9 +322,9 @@ both sides, and the square roots of an element. The decomposition structure the 
 the Peirce decomposition, the minimal left ideals and the bi-module — is mathematics, read in
 *Ideals and Peirce Decomposition of the Biquaternion Algebra* and in *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
 
-**The quaternionic product $\tilde P^{\natural}\tilde Q$** is not associative, has a left identity and
+**The quaternionic product $\tilde Q_1^{\natural}\tilde Q_2$** is not associative, has a left identity and
 no right one, and is the only product of the four whose square is scalar. Its form
-$\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ is $(-,+,+,+)$ on $\mathbb{M}_-$ and $(+,-,-,-)$ on
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ is $(-,+,+,+)$ on $\mathbb{M}_-$ and $(+,-,-,-)$ on
 $\mathbb{M}_+$, so it is indefinite on both sectors and carries the opposite signs on them, and it is
 the material metric. The **physical interpretation** is that this is the product of **causality**: the scalar it
 returns when an element is squared is the interval, so the light cone, the mass shell and the level sets
@@ -344,20 +344,20 @@ The two products whose second slot carries the star are conjugate-linear in the 
 are the multiplication of a **sesqualgebra over $\mathbb{C}$** — the two **general** sesqualgebras among the six the space carries, the general plain and the general quaternionic sesqualgebra. Neither has a left identity, and both
 induce a Hermitian form.
 
-**The sesquilinear product $\tilde P\tilde Q^{*}$** has a right identity and no left one, and it is the
+**The sesquilinear product $\tilde Q_1\tilde Q_2^{*}$** has a right identity and no left one, and it is the
 **derived operation** of the algebra $\mathbb{B}$ with its conjugate-linear involution ${}^{*}$. Its
-form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ is positive definite on every subspace, so it is the one form
+form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ is positive definite on every subspace, so it is the one form
 of the four that is definite; it is the form of the state space and of the Born pairing, its Hermitian
 idempotents are the pure states, and its positive cone is the state cone. The **physical interpretation** is that
 this is the product of **probability**: it is the pairing that returns an amplitude between two elements
 and a probability after squaring, and it is the only product of the four that carries positivity. Its
 block owns the sesquilinear square, the positivity of the dagger and the interpretation mass equals rank.
 
-**The general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$** has no identity on either
+**The general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$** has no identity on either
 side. It is not the derived operation: it is the **isotope** of the derived operation by the natural
-conjugation, $\tilde P\star\tilde Q={}^{\natural}(\tilde P)\tilde Q^{*}$, so it is obtained from the
+conjugation, $\tilde Q_1\star\tilde Q_2={}^{\natural}(\tilde Q_1)\tilde Q_2^{*}$, so it is obtained from the
 sesquilinear product by acting on the first slot and not by deriving anything new from the algebra. Its
-form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$ is indefinite, of signature $(1,3)$ on each of the
+form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ is indefinite, of signature $(1,3)$ on each of the
 four four-dimensional subspaces, so it is a Krein form. The **physical interpretation** is that this is the product
 of **gauge**: it is the pairing of an indefinite-metric structure, in which positivity is replaced by a
 sign, and it is the standard form of the fourth product in the theory of sesqualgebras.
@@ -376,21 +376,21 @@ independent objects**: they are one bilinear form read through the two involutio
 the plain product is the reference,
 
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu ,
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu} ,
 $$
 
 and the other three are obtained from it by reading the first argument through ${}^{\natural}$, the
 second through ${}^{*}$, or both:
 
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\langle\tilde P,\tilde Q^{*}\rangle,\qquad
-\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle,
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2^{*}\rangle,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle,
 $$
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P^{\natural},\tilde Q\rangle_{*}=\langle\tilde P,\tilde Q^{*}\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q^{*}\rangle.
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2^{*}\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2^{*}\rangle.
 $$
 
-Nothing beyond the definitions is used: $\langle\tilde P,\cdot\rangle$ is the scalar part of the plain product, so
+Nothing beyond the definitions is used: $\langle\tilde Q,\cdot\rangle$ is the scalar part of the plain product, so
 substituting a conjugated argument into $\langle\cdot,\cdot\rangle$ returns the scalar part of the product whose slot carries
 that conjugation. The four forms are the four cells of the grid read at the level of numbers, and these
 identities are the companion, at the level of forms, of *Relations Between the Four General Products*, which states the corresponding relations between the products themselves.
@@ -422,7 +422,7 @@ carries the signature.
 **Remark (verified).** The table is checked on the six real Gram matrices in the natural bases, and the
 computed inertias agree with it on all six rows. The two rows the physics uses directly are the two
 sectors, and their algebraic norms show the pattern in numbers. On the material basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$
-the algebraic norms of $\langle\tilde P,\tilde Q\rangle,\langle\tilde P,\tilde Q\rangle_{*},\langle\tilde P,\tilde Q\rangle_{\natural},\langle\tilde P,\tilde Q\rangle_{\natural*}$ are $\mathrm{diag}(-1,-1,-1,-1)$, $\mathrm{diag}(1,1,1,1)$,
+the algebraic norms of $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ are $\mathrm{diag}(-1,-1,-1,-1)$, $\mathrm{diag}(1,1,1,1)$,
 $\mathrm{diag}(-1,1,1,1)$ and $\mathrm{diag}(1,-1,-1,-1)$, reproducing $(0,4)$, $(4,0)$, $(3,1)$ and
 $(1,3)$; on the informational basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the two **bilinear** algebraic norms change sign,
 to $\mathrm{diag}(1,1,1,1)$ and $\mathrm{diag}(1,-1,-1,-1)$, while the two **Hermitian** algebraic norms are
@@ -466,7 +466,7 @@ restrictions are
 
 **Remark (verified).**
 with the algebraic norm signs of the table. The identities hold to machine precision, and the realified
-algebraic norms of $\langle\tilde P,\tilde Q\rangle,\langle\tilde P,\tilde Q\rangle_{*},\langle\tilde P,\tilde Q\rangle_{\natural},\langle\tilde P,\tilde Q\rangle_{\natural*}$ are $(-1,-1,-1,-1)$, $(1,1,1,1)$, $(-1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_-$
+algebraic norms of $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ are $(-1,-1,-1,-1)$, $(1,1,1,1)$, $(-1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_-$
 and $(1,1,1,1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_+$, reproducing the inertias
 $(0,4)$, $(4,0)$, $(3,1)$, $(1,3)$ on $\mathbb{M}_-$ and $(4,0)$, $(4,0)$, $(1,3)$, $(1,3)$ on
 $\mathbb{M}_+$. These are the two sector rows of the table of §*Remarkable Subspaces*; what is added here
@@ -477,15 +477,15 @@ $\mathbb{M}_-$ to $\mathbb{M}_+$ and back, and it acts on the two rows of the gr
 the two **bilinear** forms change sign,
 
 $$
-\langle i\tilde P,i\tilde Q\rangle=-\langle\tilde P,\tilde Q\rangle,\qquad
-\langle i\tilde P,i\tilde Q\rangle_{\natural}=-\langle\tilde P,\tilde Q\rangle_{\natural},
+\langle i\tilde Q_1,i\tilde Q_2\rangle=-\langle\tilde Q_1,\tilde Q_2\rangle,\qquad
+\langle i\tilde Q_1,i\tilde Q_2\rangle_{\natural}=-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},
 $$
 
 while the two **sesquilinear** forms are unchanged,
 
 $$
-\langle i\tilde P,i\tilde Q\rangle_{*}=\langle\tilde P,\tilde Q\rangle_{*},\qquad
-\langle i\tilde P,i\tilde Q\rangle_{\natural*}=\langle\tilde P,\tilde Q\rangle_{\natural*}.
+\langle i\tilde Q_1,i\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2\rangle_{*},\qquad
+\langle i\tilde Q_1,i\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}.
 $$
 
 Each identity is the centrality of $i$ and the definitions, and nothing else: $i$ pulls out of both
@@ -503,14 +503,14 @@ elements, not only on the sectors, and hold identically; on a sector they reduce
 $H=\pm B$ and $K=\pm N$ above.
 
 **The exchange-invariant square.** A quantity built from a **tensor square** of a bilinear form,
-$\langle\tilde{P}_1,\tilde{Q}_1\rangle_{\natural}\langle\tilde{P}_2,\tilde{Q}_2\rangle_{\natural}$, is built from two factors that the exchange
+$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}\langle\tilde{Q}_3,\tilde{Q}_4\rangle_{\natural}$, is built from two factors that the exchange
 reverses, so the exchange multiplies it by $(-1)(-1)=+1$: the tensor square of a bilinear form is
 therefore **invariant** under the sector exchange and carries no sign of the sector, while a tensor
 square of a sesquilinear form is invariant for the opposite reason, each factor being fixed. The
 correlation structure of a two-qubit state is built from the bilinear row alone, so it sits **outside**
 the four-row grid rather than in one of its cells, and the two-qubit articles are indexed by the tensor
 square and not by a row.
-$\langle i\tilde{P}_1,i\tilde{Q}_1\rangle_{\natural}\langle i\tilde{P}_2,i\tilde{Q}_2\rangle_{\natural}=\langle\tilde{P}_1,\tilde{Q}_1\rangle_{\natural}\langle\tilde{P}_2,\tilde{Q}_2\rangle_{\natural}$
+$\langle i\tilde{Q}_1,i\tilde{Q}_2\rangle_{\natural}\langle i\tilde{Q}_3,i\tilde{Q}_4\rangle_{\natural}=\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}\langle\tilde{Q}_3,\tilde{Q}_4\rangle_{\natural}$
 on $100$ of $100$. Boundary: the identity states which sign the exchange carries and says nothing about
 the size of the correlation, which is computed in *Quantum Discord and Correlations Beyond Entanglement
 in Biquaternionic Form* and *Two Spin-Half Particles in Biquaternionic Form*.
@@ -600,10 +600,10 @@ interpretation and not a theorem.
 
 | product | slots | scalar form | the form on $\mathbb{M}_-$ | the physical job | status of the interpretation |
 |---|---|---|---|---|---|
-| $\tilde P\tilde Q$ | $(\mathrm{id},\mathrm{id})$ | $\langle\cdot,\cdot\rangle$ | definite, $(-,-,-,-)$ | **composition** | the algebra of material operations |
-| $\tilde P\tilde Q^{*}$ | $(\mathrm{id},{}^{*})$ | $\langle\cdot,\cdot\rangle_{*}$ | positive definite, $(+,+,+,+)$ | **probability** | the state space and the Born pairing |
-| $\tilde P^{\natural}\tilde Q$ | $({}^{\natural},\mathrm{id})$ | $\langle\cdot,\cdot\rangle_{\natural}$ | indefinite, $(-,+,+,+)$ | **causality** | the interval and the cone |
-| $\tilde P^{\natural}\tilde Q^{*}$ | $({}^{\natural},{}^{*})$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | indefinite, $(+,-,-,-)$ | **gauge** | the indefinite metric |
+| $\tilde Q_1\tilde Q_2$ | $(\mathrm{id},\mathrm{id})$ | $\langle\cdot,\cdot\rangle$ | definite, $(-,-,-,-)$ | **composition** | the algebra of material operations |
+| $\tilde Q_1\tilde Q_2^{*}$ | $(\mathrm{id},{}^{*})$ | $\langle\cdot,\cdot\rangle_{*}$ | positive definite, $(+,+,+,+)$ | **probability** | the state space and the Born pairing |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $({}^{\natural},\mathrm{id})$ | $\langle\cdot,\cdot\rangle_{\natural}$ | indefinite, $(-,+,+,+)$ | **causality** | the interval and the cone |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $({}^{\natural},{}^{*})$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | indefinite, $(+,-,-,-)$ | **gauge** | the indefinite metric |
 
 What is proved is the left half of the table: the four general products are the four slot pairs, and the four
 forms have the signs shown, by §*What the Two Slots Decide* and by §*The Four Forms Compared*, which
@@ -643,7 +643,7 @@ jobs of the row and must not be exchanged: reading $\langle\cdot,\cdot\rangle$ a
 composition, is the confusion the row invites.
 - **The monoid of acting maps.** The elements are oriented and the plain product is associative, but the
 physical process is not the element; it is the **act** of multiplying. The left multiplications
-$L_{\tilde P}:\tilde{Q}_5\mapsto\tilde P\tilde{Q}_5$ form an associative **monoid** under composition, with the
+$L_{\tilde Q_1}:\tilde{Q}_5\mapsto\tilde Q_1\tilde{Q}_5$ form an associative **monoid** under composition, with the
 identity $L_{e_t}$; it is a monoid and not a group, since only the units are invertible. Two consequences
 are read from this. First, the **twisted** actions are not a monoid, because the twisted products are not
 associative; it is the plain action alone that composes. Second, a measurement is an idempotent operation, whose
@@ -676,7 +676,7 @@ rapidity: a boost rotor is Hermitian with $N=1$ at every rapidity, so $\log|N|$ 
 while the rapidity is the **angle** of the polar form. Read physically, $\log|N|$ is a causal **dilation**
 potential and the rapidity is its angular companion.
 - **The scalar coupling is the kinematic overlap.** On two material four-vectors the quaternionic pairing
-$\langle\tilde P,\tilde Q\rangle_{\natural}$ is the **Minkowski inner product** of the two, in the material signature: on the
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ is the **Minkowski inner product** of the two, in the material signature: on the
 algebraic norm it is the squared interval, that is the mass shell, and away from the two equal arguments the kinematic overlap of
 two momenta. The cone is the on-shell condition, and the non-degeneracy of $\langle\cdot,\cdot\rangle_{\natural}$ on the off-cone material
 directions is the non-degeneracy of the kinematics. The interpretation must name the sector: it is the
@@ -752,9 +752,9 @@ both rows: in the bilinear row it turns $\langle\cdot,\cdot\rangle$ into $\langl
 row it turns $\langle\cdot,\cdot\rangle_{*}$ into $\langle\cdot,\cdot\rangle_{\natural*}$ and produces an indefinite metric.
 
 **Interpretation (the quaternionic product is the plain product in a conjugated frame).** The identity
-$\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle$ says that the quaternionic form is the plain form
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle$ says that the quaternionic form is the plain form
 with its **first argument read in the naturally conjugated frame**; equivalently the quaternionic product
-$\tilde P^{\natural}\tilde Q$ is the plain product of the conjugated first factor with the second. The
+$\tilde Q_1^{\natural}\tilde Q_2$ is the plain product of the conjugated first factor with the second. The
 composition rule is untouched — it is the same multiplication of the same algebra — and what the frame
 change does is move the metric: the plain form of the conjugated frame is the indefinite interval, the
 plain form of the untouched frame is the definite Euclidean square. The interpretation is that the dial
@@ -822,10 +822,10 @@ four objects this article maps, and they are placed in the order of the corpus's
 
 | block of the physics menu | the product | the form | the maths anchor |
 |---|---|---|---|
-| *Focus on the properties of the Biquaternion Algebra over $\mathbb{C}$* | $\tilde P\tilde Q$ | $\langle\cdot,\cdot\rangle$ | *Introduction to the Biquaternion Algebra* |
-| *Focus on Biquaternioid structures* | $\tilde P\tilde Q^{*}$ | $\langle\cdot,\cdot\rangle_{*}$ | *Introduction to the General Plain Sesqualgebra* |
-| *Focus on Biquaternioid structures* | $\tilde P^{\natural}\tilde Q$ | $\langle\cdot,\cdot\rangle_{\natural}$ | *Introduction to the General Quaternionic Algebra* |
-| *Focus on Biquaternioid structures* | $\tilde P^{\natural}\tilde Q^{*}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | *Introduction to the General Quaternionic Sesqualgebra* |
+| *Focus on the properties of the Biquaternion Algebra over $\mathbb{C}$* | $\tilde Q_1\tilde Q_2$ | $\langle\cdot,\cdot\rangle$ | *Introduction to the Biquaternion Algebra* |
+| *Focus on Biquaternioid structures* | $\tilde Q_1\tilde Q_2^{*}$ | $\langle\cdot,\cdot\rangle_{*}$ | *Introduction to the General Plain Sesqualgebra* |
+| *Focus on Biquaternioid structures* | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\cdot,\cdot\rangle_{\natural}$ | *Introduction to the General Quaternionic Algebra* |
+| *Focus on Biquaternioid structures* | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | *Introduction to the General Quaternionic Sesqualgebra* |
 
 The division of labour among the four is fixed, and the corpus keeps to it.
 
@@ -858,16 +858,16 @@ about them. The two slots decide the properties tabulated in §*What the Two Slo
 the left identity and the monoid of the left multiplications by the second slot; definiteness on each
 sector and the right identity by the first slot; the coefficient $\varepsilon$ by the two slots
 together; and associativity by both. $e_t$ is a left identity if and only if the second slot is trivial
-and two-sidedly unital. The scalar forms are $B=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$,
-$H=\sum_\mu P_\mu\overline{Q_\mu}$, $N=\sum_\mu P_\mu Q_\mu$ and
-$K=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, so that $\varepsilon$ survives exactly when the two
+and two-sidedly unital. The scalar forms are $B=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$,
+$H=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, $N=\sum_\mu Q_{1\mu} Q_{2\mu}$ and
+$K=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, so that $\varepsilon$ survives exactly when the two
 slots agree and the bar appears with the second slot. The quaternionic product is the only one of the
 four whose square is scalar, and $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$. Only the sesquilinear
 product is the derived operation of the algebra with ${}^{*}$, and the general quaternionic sesquilinear product
 is its ${}^{\natural}$-isotope and has no identity on either side. The four scalar forms are one
-bilinear form read through the two involutions, $\langle\tilde P,\tilde Q\rangle_{*}=\langle\tilde P,\tilde Q^{*}\rangle$,
-$\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle$ and
-$\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P^{\natural},\tilde Q^{*}\rangle$, and on the two sectors $H=\pm B$ and
+bilinear form read through the two involutions, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2^{*}\rangle$,
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle$ and
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1^{\natural},\tilde Q_2^{*}\rangle$, and on the two sectors $H=\pm B$ and
 $K=\pm N$ with the sign of the sector, so that on a sector only two of the four forms are independent;
 the restrictions read negative definite, positive definite, $(3,1)$ and $(1,3)$ on $\mathbb{M}_-$ and
 positive definite, positive definite, $(1,3)$ and $(1,3)$ on $\mathbb{M}_+$. The full restriction table
@@ -949,15 +949,15 @@ physics menu are these four objects, and this article is their map.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=K_1(\tilde P)K_2(\tilde Q)$ | A general product, with the two slots read independently |
+| $\tilde Q_1\star\tilde Q_2=K_1(\tilde Q_1)K_2(\tilde Q_2)$ | A general product, with the two slots read independently |
 | $K_1\in\{\mathrm{id},{}^{\natural}\}$ | First slot: identity or natural conjugation; the right identity, sector definiteness and the toggle of $\varepsilon$ |
 | $K_2\in\{\mathrm{id},{}^{*}\}$ | Second slot: identity or star; decides the composition |
-| $\tilde P\tilde Q$ | Plain product; slots $(\mathrm{id},\mathrm{id})$; associative, two-sided identity |
-| $\tilde P\tilde Q^{*}$ | Sesquilinear product; slots $(\mathrm{id},{}^{*})$; the derived operation |
-| $\tilde P^{\natural}\tilde Q$ | Quaternionic product; slots $({}^{\natural},\mathrm{id})$; scalar square, the interval |
-| $\tilde P^{\natural}\tilde Q^{*}$ | General quaternionic sesquilinear product; slots $({}^{\natural},{}^{*})$; no identity |
-| $\langle\tilde P,\tilde Q\rangle,\langle\tilde P,\tilde Q\rangle_{*},\langle\tilde P,\tilde Q\rangle_{\natural},\langle\tilde P,\tilde Q\rangle_{\natural*}$ | The four scalar forms; $\varepsilon$ survives when the two slots agree, the bar with the second |
-| $\varepsilon=(1,-1,-1,-1)$ | The sign pattern of $\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ |
+| $\tilde Q_1\tilde Q_2$ | Plain product; slots $(\mathrm{id},\mathrm{id})$; associative, two-sided identity |
+| $\tilde Q_1\tilde Q_2^{*}$ | Sesquilinear product; slots $(\mathrm{id},{}^{*})$; the derived operation |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | Quaternionic product; slots $({}^{\natural},\mathrm{id})$; scalar square, the interval |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | General quaternionic sesquilinear product; slots $({}^{\natural},{}^{*})$; no identity |
+| $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | The four scalar forms; $\varepsilon$ survives when the two slots agree, the bar with the second |
+| $\varepsilon=(1,-1,-1,-1)$ | The sign pattern of $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ |
 | $\mathbb{M}_-$ | Material sector, the anti-Hermitian real four-space; the four forms read $(-,-,-,-)$, $(+,+,+,+)$, $(-,+,+,+)$, $(+,-,-,-)$ |
 | $\mathbb{M}_+$ | Informational sector, the Hermitian real four-space; the four forms read $(+,+,+,+)$, $(+,+,+,+)$, $(+,-,-,-)$, $(+,-,-,-)$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The biquaternion norm; scalar only for the quaternionic product |

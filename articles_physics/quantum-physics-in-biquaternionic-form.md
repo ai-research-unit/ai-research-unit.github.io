@@ -15,13 +15,13 @@ The article is organized as follows. First the Hermitian subspace $\mathbb{M}_+$
 An element of $\mathbb{M}_+$ has the form
 
 $$
-\tilde{H} = h_0\, e_t + i h_1\, \vec e_x + i h_2\, \vec e_y + i h_3\, \vec e_z, \qquad h_0, h_1, h_2, h_3 \in \mathbb{R}.
+\tilde{H} = h_t\, e_t + i h_x\, \vec e_x + i h_y\, \vec e_y + i h_z\, \vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R}.
 $$
 
-The **real scalar part** is $h_0 e_t$, and the **imaginary vector part** is $i(h_1 \vec e_x + h_2 \vec e_y + h_3 \vec e_z)$. In compact form,
+The **real scalar part** is $h_t e_t$, and the **imaginary vector part** is $i(h_x \vec e_x + h_y \vec e_y + h_z \vec e_z)$. In compact form,
 
 $$
-\tilde{H} = h_0\, e_t + i\,\vec h, \qquad \vec h = (h_1, h_2, h_3) \in \mathbb{R}^3.
+\tilde{H} = h_t\, e_t + i\,\vec h, \qquad \vec h = (h_x, h_y, h_z) \in \mathbb{R}^3.
 $$
 
 The subspace $\mathbb{M}_+$ is a real vector space of dimension 4. Its elements are Hermitian (fixed under the Hermitian conjugation ${}^{*}$).
@@ -29,13 +29,13 @@ The subspace $\mathbb{M}_+$ is a real vector space of dimension 4. Its elements 
 **Trace.** Writing $\mathrm{Sc}(\tilde{Q})$ for the scalar part of $\tilde{Q}$, the **trace** of an element of $\mathbb{M}_+$ is twice its scalar part:
 
 $$
-\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H) = 2 h_0.
+\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H) = 2 h_t.
 $$
 
 **Biquaternion norm.** The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of signature $(1,3)$ on $\mathbb{M}_+$:
 
 $$
-\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\vec h|^2) e_t.
+\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_t^2 - |\vec h|^2) e_t.
 $$
 
 This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the nonzero elements on the cone are the zero divisors of $\mathbb{B}$ that lie in $\mathbb{M}_+$.
@@ -44,60 +44,60 @@ This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the n
 
 The algebra carries four forms, the scalar parts of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; on $\mathbb{M}_+$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **general plain bilinear form**, and the **bilinear form** $\langle\cdot,\cdot\rangle_{\natural}$ (the general quaternionic bilinear form), which here equals the **general quaternionic sesquilinear form** $\langle\cdot,\cdot\rangle_{\natural*}$ because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $\langle\cdot,\cdot\rangle_{\natural}$.
 
-**The trace pairing.** For a second Hermitian element $\tilde Q=Q_t\,e_t+i\vec Q$, the trace defines a symmetric bilinear form on $\mathbb{M}_+\times\mathbb{M}_+$:
+**The trace pairing.** For two Hermitian elements $\tilde H_1 = h_{1t}\,e_t + i\vec h_1$ and $\tilde H_2 = h_{2t}\,e_t + i\vec h_2$, the trace defines a symmetric bilinear form on $\mathbb{M}_+\times\mathbb{M}_+$:
 
 $$
-\mathrm{Tr}(\tilde{H}\tilde{Q}) = 2(h_0 Q_t + \vec h\cdot\vec Q).
+\mathrm{Tr}(\tilde{H}_1\tilde{H}_2) = 2(h_{1t} h_{2t} + \vec h_1\cdot\vec h_2).
 $$
 
-This is the **Euclidean** pairing on $\mathbb{R}^4$, up to a factor of 2. It is positive-definite, of signature $(4,0)$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it is the canonical **Hermitian form** of the algebra in real coordinates, $(\tilde{H}, \tilde{Q}) = \mathrm{Sc}(\tilde{H}^{*}\tilde{Q}) = h_0 Q_t + \vec h\cdot\vec Q$, up to the factor of $2$ carried by the trace convention.
+This is the **Euclidean** pairing on $\mathbb{R}^4$, up to a factor of 2. It is positive-definite, of signature $(4,0)$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it is the canonical **Hermitian form** of the algebra in real coordinates, $\langle\tilde{H}_1, \tilde{H}_2\rangle_{*} = \mathrm{Sc}(\tilde{H}_1\tilde{H}_2^{*}) = h_{1t} h_{2t} + \vec h_1\cdot\vec h_2$, up to the factor of $2$ carried by the trace convention.
 
 **The biquaternion norm.** The biquaternion norm is the quadratic form
 
 $$
-\langle\tilde{H}\rangle_{\natural} = h_0^2 - |\vec h|^2,
+\langle\tilde{H}\rangle_{\natural} = h_t^2 - |\vec h|^2,
 $$
 
 of signature $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space, and it is the diagonal of the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ below, $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}$. It is a quadratic form; it is not a third bilinear form.
 
-**The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}\tilde{Q}^{\natural}$:
+**The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}_1\tilde{H}_2^{\natural}$:
 
 $$
-\langle\tilde{H},\tilde{Q}\rangle_{\natural}\,e_t = \tfrac{1}{2}\left(\tilde{H}\tilde{Q}^{\natural} + \tilde{Q}\tilde{H}^{\natural}\right).
+\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural}\,e_t = \tfrac{1}{2}\left(\tilde{H}_1\tilde{H}_2^{\natural} + \tilde{H}_2\tilde{H}_1^{\natural}\right).
 $$
 
-Computing directly, using $\tilde{H}^{\natural} = h_0 e_t - i\vec h$ and the quaternion product of pure vector parts,
+Computing directly, using $\tilde{H}_1^{\natural} = h_{1t} e_t - i\vec h_1$ and the quaternion product of pure vector parts,
 
 $$
-\tilde{H}\tilde{Q}^{\natural} = (h_0 Q_t - \vec h\cdot\vec Q)\,e_t + i(Q_t\vec h - h_0\vec Q) + \vec h\times\vec Q,
+\tilde{H}_1\tilde{H}_2^{\natural} = (h_{1t} h_{2t} - \vec h_1\cdot\vec h_2)\,e_t + i(h_{2t}\vec h_1 - h_{1t}\vec h_2) + \vec h_1\times\vec h_2,
 $$
 
 $$
-\tilde{Q}\tilde{H}^{\natural} = (h_0 Q_t - \vec h\cdot\vec Q)\,e_t - i(Q_t\vec h - h_0\vec Q) - \vec h\times\vec Q.
+\tilde{H}_2\tilde{H}_1^{\natural} = (h_{1t} h_{2t} - \vec h_1\cdot\vec h_2)\,e_t - i(h_{2t}\vec h_1 - h_{1t}\vec h_2) - \vec h_1\times\vec h_2.
 $$
 
 The sum is scalar:
 
 $$
-\boxed{\;\langle\tilde{H},\tilde{Q}\rangle_{\natural} = h_0 Q_t - \vec h\cdot\vec Q.\;}
+\boxed{\;\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural} = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2.\;}
 $$
 
-This is the **Lorentzian** bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H},\tilde{H}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}$. On $\mathbb{M}_+$ it is also the **Krein form** $\langle\tilde{H},\tilde{Q}\rangle_{\natural*} = \mathrm{Sc}(\bar{\tilde{H}}\tilde{Q})$ of the companion article: for a Hermitian element the coefficient conjugation $\bar{\cdot}$ acts as the quaternion conjugation ${}^{\natural}$, so $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}$ agree on $\mathbb{M}_+$ even though they differ on the full algebra. That is why $\mathbb{M}_+$ carries two forms and not three.
+This is the **Lorentzian** bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H}_1,\tilde{H}_1\rangle_{\natural} = \langle\tilde{H}_1\rangle_{\natural}$. On $\mathbb{M}_+$ it is also the **Krein form** $\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural*} = \mathrm{Sc}(\tilde{H}_1^{\natural}\tilde{H}_2^{*})$ of the companion article: for Hermitian elements $\tilde{H}_1^{\natural} = \bar{\tilde{H}}_1$ and $\tilde{H}_2^{*} = \tilde{H}_2$, so the form reads $\mathrm{Sc}(\bar{\tilde{H}}_1\tilde{H}_2) = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_+$ even though the two differ on the full algebra. That is why $\mathbb{M}_+$ carries two forms and not three.
 
 The antisymmetric combination contains the vector part:
 
 $$
-\tfrac{1}{2}\left(\tilde{H}\tilde{Q}^{\natural} - \tilde{Q}\tilde{H}^{\natural}\right) = i(Q_t\vec h - h_0\vec Q) + \vec h\times\vec Q.
+\tfrac{1}{2}\left(\tilde{H}_1\tilde{H}_2^{\natural} - \tilde{H}_2\tilde{H}_1^{\natural}\right) = i(h_{2t}\vec h_1 - h_{1t}\vec h_2) + \vec h_1\times\vec h_2.
 $$
 
-This is not a symmetric bilinear form; it is the antisymmetric part of the full product, and it plays a role in the commutator structure of the algebra.
+This is not a symmetric bilinear form; it is the antisymmetric part of the product $\tilde H_1\tilde H_2^\natural$, and it plays a role in the commutator structure of the algebra.
 
 **Summary of the two forms.** On $\mathbb{M}_+$ two of the four forms of the algebra remain distinct, one Euclidean and one Lorentzian:
 
 | Form | Expression | Signature |
 |---|---|---|
-| Hermitian form (trace pairing $/2$) | $\mathrm{Tr}(\tilde{H}\tilde{Q}) = 2(h_0 Q_t + \vec h\cdot\vec Q) = 2\,\mathrm{Sc}(\tilde{H}^{*}\tilde{Q})$ | $(4,0)$, Euclidean |
-| Bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ (the Krein form on $\mathbb{M}_+$) | $\langle\tilde{H},\tilde{Q}\rangle_{\natural} = h_0 Q_t - \vec h\cdot\vec Q$ | $(1,3)$, Lorentzian |
+| Hermitian form ($\tfrac{1}{2}$ trace pairing) | $\langle\tilde{H}_1,\tilde{H}_2\rangle_{*} = \mathrm{Sc}(\tilde{H}_1\tilde{H}_2^{*}) = h_{1t} h_{2t} + \vec h_1\cdot\vec h_2 = \tfrac{1}{2}\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)$ | $(4,0)$, Euclidean |
+| Bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ (equal to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ on $\mathbb{M}_+$) | $\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural} = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2$ | $(1,3)$, Lorentzian |
 
 The Hermitian form is the natural inner product on the space of operators, the one the Born rule and the unitary evolution use. The bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ is the one whose quadratic form is the biquaternion norm, $\langle\tilde{H},\tilde{H}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}$, and whose future light cone defines the state space. The antisymmetric combination displayed above is not a third form.
 
@@ -176,12 +176,12 @@ This is a clean geometric characterization: **states are the trace-one elements 
 A **general observable** is a Hermitian element of $\mathbb{M}_+$:
 
 $$
-\tilde{H} = h_0\, e_t + i\,\vec h, \qquad \vec h = (h_1, h_2, h_3) \in \mathbb{R}^3.
+\tilde{H} = h_t\, e_t + i\,\vec h, \qquad \vec h = (h_x, h_y, h_z) \in \mathbb{R}^3.
 $$
 
 It is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the eigenvalues of $iA$ are the readings.
 
-The **scalar part** $h_0 e_t$ is the trace part: $\mathrm{Tr}(\tilde{H}) = 2 h_0$. The **imaginary vector part** $i\vec h$ is the traceless part.
+The **scalar part** $h_t e_t$ is the trace part: $\mathrm{Tr}(\tilde{H}) = 2 h_t$. The **imaginary vector part** $i\vec h$ is the traceless part.
 
 The **spectral decomposition** of $\tilde{H}$ is
 
@@ -192,39 +192,39 @@ $$
 with
 
 $$
-\vec u_h = \frac{\vec h}{|\vec h|}, \qquad \lambda_\pm = h_0 \pm |\vec h|.
+\vec u_h = \frac{\vec h}{|\vec h|}, \qquad \lambda_\pm = h_t \pm |\vec h|.
 $$
 
 The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_{1,2}(\vec u_h)$. So every Hermitian element of $\mathbb{M}_+$ has a spectral decomposition in terms of idempotents.
 
-**Traceless observables.** The traceless Hermitian elements $i\vec h$ (with $h_0 = 0$) are the analogs of the traceless observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec h|$ and eigenvectors $\tilde\Pi_{1,2}(\vec u_h)$.
+**Traceless observables.** The traceless Hermitian elements $i\vec h$ (with $h_t = 0$) are the analogs of the traceless observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec h|$ and eigenvectors $\tilde\Pi_{1,2}(\vec u_h)$.
 
 ### Compatibility
 
-Two observables $\tilde{H}, \tilde{Q} \in \mathbb{M}_+$ are **compatible** (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec h$ and $\vec Q$ are parallel.
+Two observables $\tilde H_1, \tilde H_2 \in \mathbb{M}_+$ are **compatible** (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec h_1$ and $\vec h_2$ are parallel or one of them vanishes.
 
-In the general case (non-parallel $\vec h$, $\vec Q$), the observables are incompatible, and their commutator is
+In the general case (non-parallel, nonzero $\vec h_1$ and $\vec h_2$), the observables are incompatible, and their commutator is
 
 $$
-[\tilde{H}, \tilde{Q}] = -2\left(\vec h \times \vec Q\right),
+[\tilde H_1, \tilde H_2] = -2\left(\vec h_1 \times \vec h_2\right),
 $$
 
-where $\vec h\times\vec Q$ is the ordinary cross product.
+where $\vec h_1\times\vec h_2$ is the ordinary cross product.
 
 **Derivation.** We compute
 
 $$
-\tilde{H}\tilde{Q} = (h_0 Q_t + \vec h\cdot\vec Q)e_t + i(h_0\vec Q + Q_t\vec h) - \vec h\times\vec Q,
+\tilde H_1\tilde H_2 = (h_{1t}h_{2t} + \vec h_1\cdot\vec h_2)e_t + i(h_{1t}\vec h_2 + h_{2t}\vec h_1) - \vec h_1\times\vec h_2,
 $$
 
 $$
-\tilde{Q}\tilde{H} = (h_0 Q_t + \vec h\cdot\vec Q)e_t + i(h_0\vec Q + Q_t\vec h) + \vec h\times\vec Q,
+\tilde H_2\tilde H_1 = (h_{1t}h_{2t} + \vec h_1\cdot\vec h_2)e_t + i(h_{1t}\vec h_2 + h_{2t}\vec h_1) + \vec h_1\times\vec h_2,
 $$
 
 so
 
 $$
-[\tilde{H}, \tilde{Q}] = -2(\vec h\times\vec Q).
+[\tilde H_1, \tilde H_2] = -2(\vec h_1\times\vec h_2).
 $$
 
 The result is a pure real quaternion (vector part only, with real coefficients): it lies in $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}}$, where $\mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ is the real quaternion subspace, and this intersection is the real span of $\vec e_x, \vec e_y, \vec e_z$. This is the biquaternion form of the $\mathfrak{su}(2)$ angular-momentum commutation relations of the qubit.
@@ -235,31 +235,31 @@ The **Born rule** gives the probability of an outcome of a measurement. In the b
 
 ### Expectation Values
 
-For an observable $\tilde{H} = h_0 e_t + i\vec h$ and a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the **expectation value** is
+For an observable $\tilde{H} = h_t e_t + i\vec h$ and a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the **expectation value** is
 
 $$
-\langle \tilde{H}\rangle_{\tilde{Ϛ}} = \mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h.
+\langle \tilde{H}\rangle_{\tilde{Ϛ}} = \mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_t + \vec r\cdot\vec h.
 $$
 
 **Derivation.** We compute
 
 $$
-\tilde{Ϛ}\tilde{H} = \tfrac{1}{2}(e_t + i\vec r)(h_0 e_t + i\vec h) = \tfrac{1}{2}\left(h_0 e_t + i\vec h + i h_0 \vec r + (i\vec r)(i\vec h)\right).
+\tilde{Ϛ}\tilde{H} = \tfrac{1}{2}(e_t + i\vec r)(h_t e_t + i\vec h) = \tfrac{1}{2}\left(h_t e_t + i\vec h + i h_t \vec r + (i\vec r)(i\vec h)\right).
 $$
 
 For pure quaternions, $(i\vec r)(i\vec h) = -\vec r\vec h = \vec r\cdot\vec h - \vec r\times\vec h$. Taking the scalar part,
 
 $$
-\mathrm{Sc}(\tilde{Ϛ}\tilde{H}) = \tfrac{1}{2}(h_0 + \vec r\cdot\vec h),
+\mathrm{Sc}(\tilde{Ϛ}\tilde{H}) = \tfrac{1}{2}(h_t + \vec r\cdot\vec h),
 $$
 
-so $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = 2\mathrm{Sc}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h$.
+so $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = 2\mathrm{Sc}(\tilde{Ϛ}\tilde{H}) = h_t + \vec r\cdot\vec h$.
 
-This is exactly the standard formula $\mathrm{Tr}(\rho H) = h_0 + \vec r\cdot\vec h$ for a qubit. So the Born rule is a direct consequence of the trace pairing on $\mathbb{M}_+$. It is not an independent postulate.
+This is exactly the standard formula $\mathrm{Tr}(\rho H) = h_t + \vec r\cdot\vec h$ for a qubit. So the Born rule is a direct consequence of the trace pairing on $\mathbb{M}_+$. It is not an independent postulate.
 
 ### Probabilities
 
-For a projective measurement of an observable $\tilde{H} = h_0 e_t + i\vec h$ in a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = h_0 \pm |\vec h|$, with probabilities
+For a projective measurement of an observable $\tilde{H} = h_t e_t + i\vec h$ in a state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = h_t \pm |\vec h|$, with probabilities
 
 $$
 p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right),
@@ -277,7 +277,7 @@ $$
 \tilde{Ϛ}' = \frac{\tilde\Pi_1(\vec u_h)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u_h)}{\mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ})}.
 $$
 
-Since $\tilde\Pi_1$ is idempotent, and since $\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1$ has rank at most one (as a product of idempotents of rank one), the sandwich is proportional to $\tilde\Pi_1$:
+Since $\tilde\Pi_1$ is idempotent, the sandwich $\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1$ is Hermitian, has its range in the line of $\tilde\Pi_1$, and vanishes on the kernel of $\tilde\Pi_1$; it is therefore a real multiple of $\tilde\Pi_1$:
 
 $$
 \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 = p_+ \tilde\Pi_1,
@@ -307,25 +307,25 @@ $$
 i\hbar\, \frac{d}{dt}\tilde{U}(t) = \tilde{H}\,\tilde{U}(t), \qquad \tilde{U}(0) = e_t,
 $$
 
-with $\tilde{H} = h_0 e_t + i\vec h \in \mathbb{M}_+$ a Hermitian element (the Hamiltonian).
+with $\tilde{H} = h_t e_t + i\vec h \in \mathbb{M}_+$ a Hermitian element (the Hamiltonian).
 
-**The solution.** We have $-i\tilde{H} = -ih_0 e_t + \vec h$. The scalar part and the vector part commute, so
+**The solution.** We have $-i\tilde{H} = -ih_t e_t + \vec h$. The scalar part and the vector part commute, so
 
 $$
-\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar) = \exp(-ih_0 t/\hbar)\left(\cos(|\vec h|t/\hbar)\,e_t + \sin(|\vec h|t/\hbar)\,\vec u_h\right),
+\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar) = \exp(-ih_t t/\hbar)\left(\cos(|\vec h|t/\hbar)\,e_t + \sin(|\vec h|t/\hbar)\,\vec u_h\right),
 $$
 
 where $\vec u_h = \vec h/|\vec h|$ (for $\vec h \neq 0$). The exponential of the vector part uses $\vec u_h^2 = -e_t$, which gives the trigonometric form.
 
-The element $\tilde{U}(t)$ is **unitary**: $\tilde{U}(t)\tilde{U}(t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h|t/\hbar$, $\tilde{U}(t)$ is Hermitian exactly when $\tilde{U}(t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $h_0t/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_0t/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_0 = 0$ only the first case survives, at the isolated times $t = n\pi\hbar/|\vec h|$; for $h_0 \neq 0$ both cases contribute, and at each Hermitian time the angle condition and the phase condition hold together, whether the times are sparser or denser than $t = n\pi\hbar/|\vec h|$ depending on $h_0/|\vec h|$. It is a general element of the unitary group $\mathrm{U}(2) \subset \mathbb{B}$.
+The element $\tilde{U}(t)$ is **unitary**: $\tilde{U}(t)\tilde{U}(t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h|t/\hbar$, $\tilde{U}(t)$ is Hermitian exactly when $\tilde{U}(t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $h_tt/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_tt/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_t = 0$ only the first case survives, at the isolated times $t = n\pi\hbar/|\vec h|$. For $h_t \neq 0$ and $\vec h \neq 0$, apart from $t=0$, the first case gives Hermitian times exactly when $h_t/|\vec h|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the unitary group $\mathrm{U}(2) \subset \mathbb{B}$.
 
-**The trace part of the Hamiltonian does not affect the state.** Since $\exp(-ih_0 t/\hbar)$ is a central complex scalar, and since the conjugation
+**The trace part of the Hamiltonian does not affect the state.** Since $\exp(-ih_t t/\hbar)$ is a central complex scalar, and since the conjugation
 
 $$
-\tilde{U}(t)\,\tilde\Pi\,\tilde{U}(t)^{*} = \exp(-ih_0 t/\hbar)\tilde u\,\tilde\Pi\,\exp(+ih_0 t/\hbar)\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
+\tilde{U}(t)\,\tilde\Pi\,\tilde{U}(t)^{*} = \exp(-ih_t t/\hbar)\tilde u\,\tilde\Pi\,\exp(+ih_t t/\hbar)\tilde u^{*} = \tilde u\,\tilde\Pi\,\tilde u^{*}
 $$
 
-(with $\tilde u = \cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h$ a unit real quaternion), the phase $\exp(-ih_0 t/\hbar)$ cancels out. So only the traceless part $\vec h$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
+(with $\tilde u = \cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h$ a unit real quaternion), the phase $\exp(-ih_t t/\hbar)$ cancels out. So only the traceless part $\vec h$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
 
 **Time evolution of a mixed state.** A general state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ evolves by the same conjugation:
 
@@ -383,7 +383,7 @@ Reversibility is one of the structural features of the biquaternion formulation.
 
 In the standard framework, the measurement postulate is stated separately from the unitary evolution. In the biquaternion framework, both are consequences of the same sesquilinear structure, the Hermitian form and its trace pairing.
 
-**Projective measurement.** A projective measurement of $\tilde{H} = h_0 e_t + i\vec h$ is specified by the spectral decomposition $\tilde{H} = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$. The outcome $+$ has:
+**Projective measurement.** A projective measurement of $\tilde{H} = h_t e_t + i\vec h$ is specified by the spectral decomposition $\tilde{H} = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$. The outcome $+$ has:
 
 - **Probability** $p_+ = \mathrm{Tr}(\tilde\Pi_1\tilde{Ϛ})$, from the trace formula.
 - **Post-measurement state** $\tilde{Ϛ}' = \tilde\Pi_1$, from the sandwich operation.
@@ -396,7 +396,7 @@ $$
 
 and the probability of outcome $i$ is $p_i = \mathrm{Tr}(\tilde{K}_i^{*} \tilde{K}_i \tilde{Ϛ})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.
 
-**A structural point.** The **reversible–irreversible distinction** is algebraic in the biquaternion framework. Unitary elements $\tilde{U}$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\tilde\Pi\tilde\Pi^{*} = \tilde\Pi \neq e_t$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.
+**A structural point.** The **reversible–irreversible distinction** is algebraic in the biquaternion framework. Unitary elements $\tilde{U}$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\langle\tilde\Pi\rangle_{\natural} = \tilde\Pi\tilde\Pi^{\natural} = 0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.
 
 ## Purity, Entropy, and Fidelity
 
@@ -469,7 +469,7 @@ The **unit quaternions** (elements of $\mathbb{H}_{\mathbb{B}}$ with unit quater
 The **Lie algebra** of the unitary group is the space of anti-Hermitian elements, $\mathbb{M}_-$, with the commutator bracket:
 
 $$
-[\tilde{Q}, \tilde{Q}_1] = \tilde{Q}\tilde{Q}_1 - \tilde{Q}_1\tilde{Q}, \qquad \tilde{Q}, \tilde{Q}_1 \in \mathbb{M}_-.
+[\tilde{Q}_1, \tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1, \qquad \tilde{Q}_1, \tilde{Q}_2 \in \mathbb{M}_-.
 $$
 
 This is a Lie algebra structure on $\mathbb{M}_-$ (which is not a subalgebra of $\mathbb{B}$, but is a Lie algebra under the commutator). The exponential map sends $\mathbb{M}_-$ to the group of unitary biquaternions.
@@ -522,19 +522,19 @@ The intersection is the set of unit real quaternions. Its conjugation action rot
 **What distinguishes the two groups.** The two groups are subgroups of the same invertible elements, acting by the same formula, and what separates them is the algebraic character of the transformation. For a unitary rotor the conjugation is multiplicative,
 
 $$
-\tilde{U}\left(\tilde{Q}\tilde{Q}_1\right)\tilde{U}^{*} = \left(\tilde{U}\tilde{Q}\tilde{U}^{*}\right)\left(\tilde{U}\tilde{Q}_1\tilde{U}^{*}\right), \qquad \tilde{U} \in \mathrm{U}(2),
+\tilde{U}\left(\tilde{Q}_1\tilde{Q}_2\right)\tilde{U}^{*} = \left(\tilde{U}\tilde{Q}_1\tilde{U}^{*}\right)\left(\tilde{U}\tilde{Q}_2\tilde{U}^{*}\right), \qquad \tilde{U} \in \mathrm{U}(2),
 $$
 
-so it is an **automorphism** of $\mathbb{B}$; conjugation by a non-unitary element has no such property, and is only a **congruence**. The difference is visible in the quadratic forms each conjugation leaves invariant.
+so it is an **automorphism** of $\mathbb{B}$; the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ for a non-unitary element has no such property, and is only a **congruence**. The difference is visible in the quadratic forms each conjugation leaves invariant.
 
-The **trace pairing** $\mathrm{Tr}(\tilde{H}\tilde{Q})$, the Euclidean Hilbert–Schmidt form on $\mathbb{M}_+$ on which the Born rule rests, is preserved by **exactly** the unitary group:
+The **trace pairing** $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)$, the Euclidean Hilbert–Schmidt form on $\mathbb{M}_+$ on which the Born rule rests, is preserved by **exactly** the unitary group:
 
 $$
-\mathrm{Tr}\!\left(\tilde U\tilde{H}\tilde U^{*}\,\tilde U\tilde{Q}\tilde U^{*}\right) = \mathrm{Tr}(\tilde{H}\tilde{Q}) \ \ \text{for all Hermitian } \tilde{H},\tilde{Q}
+\mathrm{Tr}\!\left(\tilde U\tilde{H}_1\tilde U^{*}\,\tilde U\tilde{H}_2\tilde U^{*}\right) = \mathrm{Tr}(\tilde{H}_1\tilde{H}_2) \ \ \text{for all Hermitian } \tilde{H}_1,\tilde{H}_2
 \quad \Longleftrightarrow \quad \tilde U \in \mathrm{U}(2),
 $$
 
-since the left-hand side is $\mathrm{Tr}\big((\tilde U^{*}\tilde U)\tilde{Q}(\tilde U^{*}\tilde U)\tilde{H}\big)$, and the condition on $\tilde U^{*}\tilde U$ is the unitarity condition. A boost fails it.
+since the left-hand side is $\mathrm{Tr}\big((\tilde U^{*}\tilde U)\tilde{H}_2(\tilde U^{*}\tilde U)\tilde{H}_1\big)$; setting $S=\tilde U^{*}\tilde U$ and taking $\tilde{H}_2=e_t$ gives $S^2=e_t$, and $S$ positive then forces $S=e_t$, which is the unitarity condition. A boost fails it.
 
 The **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm L}\rangle_{\natural}} = 1$:
 
@@ -542,9 +542,9 @@ $$
 N\!\left(\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\right) = \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}, \qquad \tilde U_{\mathrm L} \in SL(2,\mathbb{C}).
 $$
 
-This form does **not**, however, separate the two groups, and the point is worth stating: since $|\langle\tilde{U}\rangle_{\natural}| = |\det\tilde{U}| = 1$ for a unitary element, the unitary group preserves the biquaternion norm as well. In general $\langle\tilde Q\rangle_{\natural}$ is invariant under conjugation by every element with $|\langle\tilde Q\rangle_{\natural}| = 1$, of which the unitary elements and the unit-norm rotors are the two cases that occur here. The Lorentzian form is thus common to the quantum and the relativistic transformations. What separates them is the **Euclidean** trace pairing, which only the quantum operations preserve, together with the automorphism property, which only they possess. Neither group contains the other, and their common subgroup is the rotation group $SU(2)$.
+This form does **not**, however, separate the two groups, and the point is worth stating: since $|\langle\tilde{U}\rangle_{\natural}| = |\det\tilde{U}| = 1$ for a unitary element, the unitary group preserves the biquaternion norm as well. In general $\langle\tilde Q\rangle_{\natural}$ is invariant under conjugation by every element $\tilde U$ with $|\langle\tilde U\rangle_{\natural}| = 1$, of which the unitary elements and the unit-norm rotors are the two cases that occur here. The Lorentzian form is thus common to the quantum and the relativistic transformations. What separates the two full groups is the **Euclidean** trace pairing: $\mathrm{U}(2)$ preserves it, while a non-unitary Lorentz element does not. The automorphism property points the same way: it holds for the unitary elements and fails for the non-unitary Lorentz elements. Neither group contains the other, and their common subgroup is the rotation group $SU(2)$.
 
-**One space, several structures.** The two forms that separate the groups are the forms of two different structures of the twelve, read over the one space (*The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The indefinite form is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, the form of the structure $\mathrm{GQA}$, an algebra over $\mathbb{C}$, whose diagonal is the interval. The positive form is the general plain sesquilinear form (the Hermitian form), the form of the structure $\mathrm{GPS}$, a sesqualgebra over $(\mathbb{C},\bar{\cdot})$, the pairing on which the Born rule rests. The Lorentz group is defined by the bilinear structure and the unitary group by the sesquilinear one. That one space carries both is the whole of the compatibility, and it is why the two theories can be written side by side without being one theory. On $\mathbb{M}_+$ the four forms collapse pairwise — the Hermitian form coincides with the general plain bilinear form, and $\langle\cdot,\cdot\rangle_{\natural}$ with $\langle\cdot,\cdot\rangle_{\natural*}$ (§*The Forms on $\mathbb{M}_+$*, above) — so the distinction is a statement about the full space, not about the Hermitian sector.
+**One space, several structures.** The two forms that define the groups are the forms of two different structures of the twelve, read over the one space (*The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The indefinite form is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$, the form of the structure $\mathrm{GQA}$, an algebra over $\mathbb{C}$, whose diagonal is the interval. The positive form is the general plain sesquilinear form (the Hermitian form), the form of the structure $\mathrm{GPS}$, a sesqualgebra over $(\mathbb{C},\bar{\cdot})$, the pairing on which the Born rule rests. The Lorentz group is defined by the bilinear structure and the unitary group by the sesquilinear one. That one space carries both is the whole of the compatibility, and it is why the two theories can be written side by side without being one theory. On $\mathbb{M}_+$ the four forms collapse pairwise — the Hermitian form coincides with the general plain bilinear form, and $\langle\cdot,\cdot\rangle_{\natural}$ with $\langle\cdot,\cdot\rangle_{\natural*}$ (§*The Forms on $\mathbb{M}_+$*, above) — so the distinction is a statement about the full space, not about the Hermitian sector.
 
 **A boost is not a quantum operation.** A pure boost has a Hermitian rotor, and therefore lies in $\mathbb{M}_+$ itself, the subspace that carries the states and observables:
 
@@ -558,7 +558,7 @@ $$
 \tilde U_{\mathrm L}\,\tfrac{1}{2}e_t\,\tilde U_{\mathrm L}^{*} = \tfrac{1}{2}\left(\cosh\psi\,e_t + i\sinh\psi\,\vec u_{\mathrm b}\right),
 $$
 
-whose trace is $\cosh\psi$, not $1$. A boost therefore maps the state cone into itself while moving the state off the trace-one slice; the physical state is recovered by renormalizing. This is the algebraic form of a familiar relativistic fact: the Lorentz transformation of a state is not unitary, and the quantity it preserves is the Lorentzian biquaternion norm rather than the Euclidean trace pairing.
+whose trace is $\cosh\psi$, not $1$. A boost therefore maps the state cone into itself while moving the state off the trace-one slice; the physical state is recovered by renormalizing. This is the algebraic form of a familiar relativistic fact: the finite-dimensional Lorentz transformation of a state is not unitary, and the quantity it preserves is the Lorentzian biquaternion norm rather than the Euclidean trace pairing.
 
 **The Wigner rotation.** The product of two boost rotors is not Hermitian in general — only when the two boosts are collinear. Its polar decomposition,
 
@@ -637,16 +637,16 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace, $\operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ (unit elements: $SU(2)$) |
-| $\tilde{H} = h_0 e_t + i\vec h$ | Hermitian element (observable) |
+| $\tilde{H} = h_t e_t + i\vec h$ | Hermitian element (observable) |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state) |
-| $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
-| $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_0 + \vec r\cdot\vec h$ | Born rule |
-| $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\vec h|^2$ | Biquaternion norm, signature $(1,3)$ |
-| $\langle\tilde{H},\tilde{Q}\rangle_{\natural} = h_0 Q_t - \vec h\cdot\vec Q$ | Polarization of the biquaternion norm |
-| $[\tilde{H}, \tilde{Q}] = -2(\vec h\times\vec Q)$ | Commutator |
+| $\mathrm{Tr}(\tilde{H}) = 2 h_t$ | Trace |
+| $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_t + \vec r\cdot\vec h$ | Born rule |
+| $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_t^2 - |\vec h|^2$ | Biquaternion norm, signature $(1,3)$ |
+| $\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural} = h_{1t} h_{2t} - \vec h_1\cdot\vec h_2$ | Polarization of the biquaternion norm |
+| $[\tilde{H}_1, \tilde{H}_2] = -2(\vec h_1\times\vec h_2)$ | Commutator |
 | $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ | Projective measurement |
-| $\tilde{U}(t) = \exp(-ih_0t/\hbar)(\cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h)$ | Unitary evolution |
+| $\tilde{U}(t) = \exp(-ih_tt/\hbar)(\cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h)$ | Unitary evolution |
 | $\tilde{Ϛ}(t) = \tilde{U}(t)\tilde{Ϛ}\tilde{U}(t)^{*}$ | Von Neumann evolution |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, $\tilde U$ invertible | Conjugation; quantum if $\tilde U\tilde U^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$) |
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |

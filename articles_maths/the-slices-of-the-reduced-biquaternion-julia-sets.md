@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and with the quadratic family $F_{C}(Q_\pm)=Q_\pm^{2}+C$ whose filled Julia set is the product
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and with the quadratic family $F_{C}(\breve Q)=\breve Q^{2}+C$ whose filled Julia set is the product
 
 $$
 \mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}},\qquad \mathcal{J}_{C}=\partial\bigl(K_{c_{1}}\times K_{c_{2}}\bigr),
@@ -14,7 +14,7 @@ The result is that every slice is exact, because the fractal is a product and th
 
 The article owns the notion of a slice for the algebra, the product rule, the complex slices and their degeneracy, the diagonal and the real slices, the affine one-real-dimensional slices, the slices at the parameter zero and the slices of the connectedness locus. The fractal and its product structure are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the global decomposition is *The Idempotent Decomposition and the Split Fractal*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*; the real subspace and the involution that defines it are *Reduced Biquaternion Space* and *The Two Involutions and the Group of Involutions*. The companion, where only the idempotent slice is exact, is *The Slices of the Biquaternion Julia Sets*.
 
-**Conventions.** The coordinates are $(Q_{++},Q_{--})\in\mathbb{C}^{2}$, identified with the algebra by $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **slice** is the intersection of a set of the algebra with a subset defined by affine or linear conditions on the two coordinates; the conjugate of a set is the set of conjugates of its points.
+**Conventions.** The coordinates are $(Q_{++},Q_{--})\in\mathbb{C}^{2}$, identified with the algebra by $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **slice** is the intersection of a set of the algebra with a subset defined by affine or linear conditions on the two coordinates; the conjugate of a set is the set of conjugates of its points.
 
 ## The Notion of a Slice and the Product Rule
 
@@ -36,7 +36,7 @@ $$
 
 so that the slice is obtained by intersecting the slice with the two coordinate conditions separately.
 
-**Proof.** The membership $Q_\pm\in K_{1}\times K_{2}$ is the conjunction of the two coordinate memberships, and the slice is a set of constraints on the same two coordinates; intersecting with a product is intersecting with each factor.
+**Proof.** The membership $\breve Q\in K_{1}\times K_{2}$ is the conjunction of the two coordinate memberships, and the slice is a set of constraints on the same two coordinates; intersecting with a product is intersecting with each factor.
 
 **Corollary (slices of the filled Julia set).** For the quadratic family every slice of $\mathcal{K}_{C}$ is computed from the two complex filled Julia sets $K_{c_{1}}$ and $K_{c_{2}}$ by the rule above; for the Julia set one uses the two descriptions $\mathcal{J}_{C}=(J_{c_{1}}\times K_{c_{2}})\cup(K_{c_{1}}\times J_{c_{2}})$ and takes the union of the two slice computations.
 
@@ -157,7 +157,7 @@ The filled Julia set of the reduced biquaternion quadratic map is the product $K
 
 | Symbol | Meaning |
 |---|---|
-| $(Q_{++},Q_{--})$ | the idempotent coordinates, $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ |
+| $(Q_{++},Q_{--})$ | the idempotent coordinates, $\breve Q=Q_{++}\Pi_++Q_{--}\Pi_-$ |
 | $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ | the filled Julia set as a product |
 | product rule | $\Sigma\cap(K_{1}\times K_{2})$ read coordinatewise |
 | $\{Q_{--}={Q_{--}}_{0}\}$ | a complex line slice, empty or a full complex filled set |

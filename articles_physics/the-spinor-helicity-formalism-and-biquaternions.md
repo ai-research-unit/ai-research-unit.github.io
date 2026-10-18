@@ -149,7 +149,7 @@ This is the antisymmetry stressed at the start of the article; it is the antisym
 
 **Lorentz invariance.** Since $g^{T}\epsilon\,g = (\det g)\epsilon = \epsilon$ for every $g \in SL(2,\mathbb{C})$, the brackets are invariant under the one-sided Lorentz action $\lambda \mapsto g\lambda$, $\bar\lambda \mapsto g^{*}\bar\lambda$ (the latter being the conjugate defining representation, equivalent to $\mathsf{M}_2(\tilde U^{*})$ up to the invariant-tensor convention recorded in *Exercise: Chirality and the Weyl Spinors*). The brackets are therefore the Lorentz-invariant contractions of the formalism, as in the standard calculus.
 
-**The bracket–momentum identity.** The polar form of the norm is $\langle\tilde P,\tilde Q\rangle = \tfrac12\big(\langle\tilde P+\tilde Q\rangle_{\natural}-\langle\tilde P\rangle_{\natural}-\langle\tilde Q\rangle_{\natural}\big) = \sum_\mu P_\mu Q_\mu$. For two null momenta factorised as above, the determinant of the sum of two rank-one matrices is a product of two brackets, and one finds
+**The bracket–momentum identity.** The polar form of the norm is $\langle\tilde Q_1,\tilde Q_2\rangle = \tfrac12\big(\langle\tilde Q_1+\tilde Q_2\rangle_{\natural}-\langle\tilde Q_1\rangle_{\natural}-\langle\tilde Q_2\rangle_{\natural}\big) = \sum_\mu Q_{1\mu} Q_{2\mu}$. For two null momenta factorised as above, the determinant of the sum of two rank-one matrices is a product of two brackets, and one finds
 
 $$
 \langle ij\rangle\,[ij] \;=\; \det\!\big(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)\big) \;=\; 2\,\langle\tilde P_i,\tilde P_j\rangle.

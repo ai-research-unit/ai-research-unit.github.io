@@ -12,7 +12,7 @@ $$
 
 a **real** scalar part and three **imaginary** vector parts. This article reads the restriction to that
 sector of the one product by which informational operations compose — the **general plain bilinear
-product** $(\mathrm{GPA})$, written $\tilde P\tilde Q$, the multiplication of the algebra itself — and asks
+product** $(\mathrm{GPA})$, written $\tilde Q_1\tilde Q_2$, the multiplication of the algebra itself — and asks
 what its scalar part measures there. It is the informational companion of *The Bilinear Product on the Material Sector*; the product on the whole algebra is *The Products, Their Forms and Their Norms*,
 and the sector itself, its coordinate dictionary and its operator identification are *The Hermitian
 Subspace $\mathbb{M}_+$ as the Informational Sector*.
@@ -20,7 +20,7 @@ Subspace $\mathbb{M}_+$ as the Informational Sector*.
 The answer is the mirror of the material one. The scalar part
 
 $$
-\langle\tilde P,\tilde Q\rangle = \mathrm{Sc}(\tilde P\tilde Q) = p_tq_t + \vec p'\!\cdot\!\vec q'
+\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2) = q_{1t}q_{2t} + \vec q_1'\!\cdot\!\vec q_2'
 $$
 
 is **positive definite** on the sector, of signature $(4,0)$: in the informational coordinates it is the
@@ -54,7 +54,7 @@ material sector is the anti-Hermitian half, $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*
 real basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the two are exchanged by the central $i$, $i\mathbb{M}_+=\mathbb{M}_-$.
 The identity is $e_t\in\mathbb{M}_+$, the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$, and the zero-divisor cone
 of the general plain bilinear product is $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ with
-$\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$.
 
 ## The Informational Sector and Its Coordinates
 
@@ -75,9 +75,9 @@ Two forms carry the geometry of the sector, and they are the restrictions of the
 row:
 
 $$
-\langle\tilde P,\tilde Q\rangle=p_tq_t+\vec p'\!\cdot\!\vec q' \quad\text{of signature }(4,0),
+\langle\tilde Q_1,\tilde Q_2\rangle=q_{1t}q_{2t}+\vec q_1'\!\cdot\!\vec q_2' \quad\text{of signature }(4,0),
 \qquad
-\langle\tilde P,\tilde Q\rangle_{\natural}=p_tq_t-\vec p'\!\cdot\!\vec q' \quad\text{of signature }(1,3).
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=q_{1t}q_{2t}-\vec q_1'\!\cdot\!\vec q_2' \quad\text{of signature }(1,3).
 $$
 
 The first is the **sector sign** of this article, the scalar part of the general plain bilinear product, definite and
@@ -85,7 +85,7 @@ without cone; the second is the **interval**, the general quaternionic bilinear 
 zero set is the zero-divisor cone. The two differ by twice the coefficient square of the vector part,
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural} - 2\,\vec Q\!\cdot\!\vec Q,
+\langle\tilde Q,\tilde Q\rangle_{\natural} - 2\,\vec Q\!\cdot\!\vec Q,
 \qquad \vec Q\!\cdot\!\vec Q = Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$
 
@@ -95,30 +95,30 @@ and $\langle\cdot,\cdot\rangle_{\natural}$ carries the metric, and on $\mathbb{M
 
 ## The Product of Two Informational Operations
 
-The general plain bilinear product $\tilde P\tilde Q$ is the multiplication of the algebra. The informational sector is
+The general plain bilinear product $\tilde Q_1\tilde Q_2$ is the multiplication of the algebra. The informational sector is
 not closed under it, and the way it fails is the mirror of the material failure. The Hermitian
-conjugation is an anti-automorphism, $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}$, so for two
+conjugation is an anti-automorphism, $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, so for two
 informational operations it returns the reversed product,
 
 $$
-(\tilde P\tilde Q)^{*} = \tilde Q^{*}\tilde P^{*} = \tilde Q\tilde P,
+(\tilde Q_1\tilde Q_2)^{*} = \tilde Q_2^{*}\tilde Q_1^{*} = \tilde Q_2\tilde Q_1,
 $$
 
 and the composite therefore splits into its Hermitian and anti-Hermitian parts,
 
 $$
-\tilde P\tilde Q
-= \underbrace{\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)}_{\text{anticommutator, in }\mathbb{M}_+}
-+ \underbrace{\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)}_{\text{commutator, in }\mathbb{M}_-}.
+\tilde Q_1\tilde Q_2
+= \underbrace{\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)}_{\text{anticommutator, in }\mathbb{M}_+}
++ \underbrace{\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)}_{\text{commutator, in }\mathbb{M}_-}.
 $$
 
 The sector is therefore not closed under composition, and which half survives is decided by which
-relation holds: the composite is **informational exactly when the two commute**, $[\tilde P,\tilde Q]=0$,
+relation holds: the composite is **informational exactly when the two commute**, $[\tilde Q_1,\tilde Q_2]=0$,
 so that the material half vanishes, and **material exactly when the two anticommute**,
-$\{\tilde P,\tilde Q\}=0$, so that the informational half vanishes. A generic pair of informational
+$\{\tilde Q_1,\tilde Q_2\}=0$, so that the informational half vanishes. A generic pair of informational
 operations composes to an element with one part in each sector: the informational part is the
-order-independent half $\tfrac12\{\tilde P,\tilde Q\}$, and the order dependence is carried by the
-material half $\tfrac12[\tilde P,\tilde Q]$, which changes sign when the two operations are exchanged.
+order-independent half $\tfrac12\{\tilde Q_1,\tilde Q_2\}$, and the order dependence is carried by the
+material half $\tfrac12[\tilde Q_1,\tilde Q_2]$, which changes sign when the two operations are exchanged.
 The rule is the same as on $\mathbb{M}_-$: for two elements of **one** sector the anticommutator stays in
 that sector and the commutator leaves it, and it is only the sign form that differs.
 
@@ -413,9 +413,9 @@ the Sector Exchange as Relational Time*), and the product is the one operation t
 ## Summary
 
 The informational sector $\mathbb{M}_+$ carries the Hermitian elements, an element being
-$\tilde Q=(ct')e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$ whose
+$\tilde Q=(ct')e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$, and this article reads on it the general plain bilinear product $\tilde Q_1\tilde Q_2$ whose
 full theory on the whole algebra is *The Products, Their Forms and Their Norms*. Its scalar part
-$\langle\tilde P,\tilde Q\rangle=p_tq_t+\vec p'\!\cdot\!\vec q'$, the Euclidean inner product of the informational coordinates, is
+$\langle\tilde Q_1,\tilde Q_2\rangle=q_{1t}q_{2t}+\vec q_1'\!\cdot\!\vec q_2'$, the Euclidean inner product of the informational coordinates, is
 positive definite on $\mathbb{M}_+$ with signature $(4,0)$ and negative definite on $\mathbb{M}_-$ with
 signature $(0,4)$: opposite definite signs on the two sectors, so $\langle\cdot,\cdot\rangle$ carries the **sector sign**. Being
 definite, $\langle\cdot,\cdot\rangle$ has no cone and cannot be the metric; the metric is the interval, the general quaternionic
@@ -443,11 +443,11 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\tilde Q=q_te_t+i\vec q'=(ct')e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | An informational element; real time, imaginary space |
-| $\tilde P\tilde Q$ | General plain bilinear product ($\mathrm{GPA}$); associative, unital, non-commutative |
-| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=p_tq_t+\vec p'\!\cdot\!\vec q'$ | Sector sign; $+\mathrm{I}_4$ on $\mathbb{M}_+$, $-\mathrm{I}_4$ on $\mathbb{M}_-$ |
-| $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | Interval; $(1,3)$ on $\mathbb{M}_+$, $(3,1)$ on $\mathbb{M}_-$ |
+| $\tilde Q_1\tilde Q_2$ | General plain bilinear product ($\mathrm{GPA}$); associative, unital, non-commutative |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=q_{1t}q_{2t}+\vec q_1'\!\cdot\!\vec q_2'$ | Sector sign; $+\mathrm{I}_4$ on $\mathbb{M}_+$, $-\mathrm{I}_4$ on $\mathbb{M}_-$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | Interval; $(1,3)$ on $\mathbb{M}_+$, $(3,1)$ on $\mathbb{M}_-$ |
 | $\langle\tilde Q,\tilde Q\rangle-\langle\tilde Q,\tilde Q\rangle_{\natural}=2\,\vec Q\!\cdot\!\vec Q$ | The two forms differ by twice the coefficient square |
-| $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
+| $\tfrac12(\tilde Q_1\tilde Q_2\pm\tilde Q_2\tilde Q_1)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
 | $\tilde Q^{2}\in\mathbb{M}_+$ | The square is informational for an element of either sector |
 | $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$ | The nonzero idempotents; the Bloch sphere; on the cone |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | Unit-trace element; the Bloch ball |

@@ -56,17 +56,17 @@ The real slice is the smallest picture and shows the real Julia set; the quatern
 
 ## The Quaternion and Anti-Quaternion Slices
 
-**Proposition (real and imaginary parts of one orbit).** Write $\tilde Q=\tilde P+i\tilde Q_1$ and $\tilde Q_3=\tilde Q_4+i\tilde Q_5$ with $\tilde P,\tilde Q_1,\tilde Q_4,\tilde Q_5\in\mathbb{H}_{\mathbb{B}}$. Then
+**Proposition (real and imaginary parts of one orbit).** Write $\tilde Q=\tilde Q_6+i\tilde Q_1$ and $\tilde Q_3=\tilde Q_4+i\tilde Q_5$ with $\tilde Q_6,\tilde Q_1,\tilde Q_4,\tilde Q_5\in\mathbb{H}_{\mathbb{B}}$. Then
 
 $$
-F_{\tilde Q_3}(\tilde P+i\tilde Q_1)=\bigl(\tilde P^2-\tilde Q_1^2+\tilde Q_4\bigr)+i\bigl(\tilde P\tilde Q_1+\tilde Q_1\tilde P+\tilde Q_5\bigr),
+F_{\tilde Q_3}(\tilde Q_6+i\tilde Q_1)=\bigl(\tilde Q_6^2-\tilde Q_1^2+\tilde Q_4\bigr)+i\bigl(\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6+\tilde Q_5\bigr),
 $$
 
-so the map preserves the quaternion subspace exactly when $\tilde P\tilde Q_1+\tilde Q_1\tilde P+\tilde Q_5=0$ for all initial data, which for $\tilde Q_5=0$ is the anticommutation condition $\tilde P\tilde Q_1+\tilde Q_1\tilde P=0$.
+so the map preserves the quaternion subspace exactly when $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6+\tilde Q_5=0$ for all initial data, which for $\tilde Q_5=0$ is the anticommutation condition $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6=0$.
 
 **Proof.** Expand in the general plain bilinear product and collect the real and the imaginary parts; the product $i\tilde Q_1$ is central.
 
-**Remark (the anticommuting pair).** The condition $\tilde P\tilde Q_1+\tilde Q_1\tilde P=0$ with $\tilde P,\tilde Q_1$ real quaternions means the two are purely imaginary and orthogonal, the classical anticommuting pair of a quaternion; it is satisfied in codimension one and is not generic. **The orbit of a generic biquaternion alternates between the two real quaternion slices and is on neither**, and this is the elementary reason the quaternion picture is a slice and not a factorisation.
+**Remark (the anticommuting pair).** The condition $\tilde Q_6\tilde Q_1+\tilde Q_1\tilde Q_6=0$ with $\tilde Q_6,\tilde Q_1$ real quaternions means the two are purely imaginary and orthogonal, the classical anticommuting pair of a quaternion; it is satisfied in codimension one and is not generic. **The orbit of a generic biquaternion alternates between the two real quaternion slices and is on neither**, and this is the elementary reason the quaternion picture is a slice and not a factorisation.
 
 ## The Idempotent Slices and the Exact Two-Dimensional Picture
 

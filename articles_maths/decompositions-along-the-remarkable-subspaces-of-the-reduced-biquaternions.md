@@ -29,7 +29,7 @@ is of the other kind: it is the product of the two minimal ideals, it is the uni
 **Theorem (simultaneous diagonalisation).** The bar $\bar{\cdot}$ and the natural sign ${}^{\natural}$ commute, ${}^{\natural}\bar{\cdot}=\bar{\cdot}{}^{\natural}$, and each has square one; hence the real space decomposes into the four **common eigenspaces**
 $$
 \mathbb{B}_{\mathrm{r}}=\bigoplus_{(\varepsilon_{1},\varepsilon_{2})\in\{\pm1\}^{2}}\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})},\qquad
-\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}=\{Q_\pm:\bar Q_\pm=\varepsilon_{1}Q_\pm,\ Q_\pm^{\natural}=\varepsilon_{2}Q_\pm\},
+\mathbb{B}_{(\varepsilon_{1},\varepsilon_{2})}=\{\breve Q:\bar{\breve Q}=\varepsilon_{1}\breve Q,\ \breve Q^{\natural}=\varepsilon_{2}\breve Q\},
 $$
 each of real dimension one.
 
@@ -106,7 +106,7 @@ and the two summands are the two minimal ideals, the images of the two Peirce pr
 
 The idempotent decomposition is a direct product; the three halvings are gradings and not direct products.
 
-*Proof.* For the idempotent decomposition the summands are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, closed under the product, with $\mathbb{C}\Pi_+\cdot\mathbb{C}\Pi_-=\mathbb{C}\Pi_+\Pi_-=0$; the projections are $Q_\pm\mapsto\Pi_+Q_\pm$ and $Q_\pm\mapsto\Pi_-Q_\pm$; each is multiplicative, $\Pi_+(Q_{\pm,1}Q_{\pm,2})=(\Pi_+Q_{\pm,1})(\Pi_+Q_{\pm,2})$ and $\Pi_-(Q_{\pm,1}Q_{\pm,2})=(\Pi_-Q_{\pm,1})(\Pi_-Q_{\pm,2})$, because $\Pi_\pm^{2}=\Pi_\pm$ and $\Pi_+\Pi_-=0$, so they are algebra homomorphisms. For the halvings the anti-fixed plane is not closed by §*Each Halving Is a Grading* and the mixed product is the anti-fixed plane, which is nonzero.
+*Proof.* For the idempotent decomposition the summands are $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, closed under the product, with $\mathbb{C}\Pi_+\cdot\mathbb{C}\Pi_-=\mathbb{C}\Pi_+\Pi_-=0$; the projections are $\breve Q\mapsto\Pi_+\breve Q$ and $\breve Q\mapsto\Pi_-\breve Q$; each is multiplicative, $\Pi_+(\breve Q_{1}\breve Q_{2})=(\Pi_+\breve Q_{1})(\Pi_+\breve Q_{2})$ and $\Pi_-(\breve Q_{1}\breve Q_{2})=(\Pi_-\breve Q_{1})(\Pi_-\breve Q_{2})$, because $\Pi_\pm^{2}=\Pi_\pm$ and $\Pi_+\Pi_-=0$, so they are algebra homomorphisms. For the halvings the anti-fixed plane is not closed by §*Each Halving Is a Grading* and the mixed product is the anti-fixed plane, which is nonzero.
 
 **Corollary (why the idempotents are central).** The two projections of the idempotent decomposition are the algebra homomorphisms $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\Pi_+$ and $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\Pi_-$, and the decomposition is the one of the direct product $\mathbb{C}\times\mathbb{C}$; the halving projections are only linear. The central idempotents are exactly the ones for which the split is a decomposition of the algebra, and this is the content of *The Specificities of the Algebra of the Reduced Biquaternions*, §*The Associative Interpretation*.
 
@@ -141,18 +141,18 @@ a real change of basis of determinant $\tfrac14$, so the idempotent decompositio
 
 ## Worked Example
 
-**A generic element in the two decompositions.** For $Q_\pm=2+i+3j+4ij$ the four blocks carry the coordinates $2,1,3,4$, and the three halvings read
+**A generic element in the two decompositions.** For $\breve Q=2+i+3j+4ij$ the four blocks carry the coordinates $2,1,3,4$, and the three halvings read
 $$
-P_{\mathbb{C}}Q_\pm=2+i,\quad P_{\mathbb{C}j}Q_\pm=3j+4ij,\qquad P_{\mathbb{R}\{1,j\}}Q_\pm=2+3j,\quad P_{\mathbb{R}\{i,ij\}}Q_\pm=i+4ij,
+P_{\mathbb{C}}\breve Q=2+i,\quad P_{\mathbb{C}j}\breve Q=3j+4ij,\qquad P_{\mathbb{R}\{1,j\}}\breve Q=2+3j,\quad P_{\mathbb{R}\{i,ij\}}\breve Q=i+4ij,
 $$
 $$
-P_{\mathbb{R}\{1,ij\}}Q_\pm=2+4ij,\quad P_{\mathbb{R}\{i,j\}}Q_\pm=i+3j,
+P_{\mathbb{R}\{1,ij\}}\breve Q=2+4ij,\quad P_{\mathbb{R}\{i,j\}}\breve Q=i+3j,
 $$
 while the idempotent decomposition reads
 $$
 Q_{++}=Q_++Q_-=(2+i)+(3+4i)=5+5i,\qquad Q_{--}=Q_+-Q_-=(2+i)-(3+4i)=-1-3i,
 $$
-so $Q_\pm=(5+5i)\Pi_++(-1-3i)\Pi_-$. The element is a unit because $Q_{++}$ and $Q_{--}$ are nonzero, and the two decompositions display it as four real coordinates and as two complex idempotent coordinates respectively.
+so $\breve Q=(5+5i)\Pi_++(-1-3i)\Pi_-$. The element is a unit because $Q_{++}$ and $Q_{--}$ are nonzero, and the two decompositions display it as four real coordinates and as two complex idempotent coordinates respectively.
 
 ## Summary
 
