@@ -145,7 +145,7 @@ $$</p>
 \tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H.
 $$</p>
 <p>The combination that extracts $\vec E$ is $\tilde{F} + \tilde{F}^{*} = 2i\sqrt{\epsilon}\,\vec E$; the combination that extracts $\vec B$ is $\tilde{F}^{*} - \tilde{F} = 2\sqrt{\mu}\,\vec H = 2\vec B/\sqrt{\mu}$. So the correct product formula must involve both $\tilde{F}$ and $\tilde{F}^{*}$. This is the technical reason the earlier article anticipated "the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$": the two objects $\tilde{F}$ and $\tilde{F}^{*}$ are the self-dual and anti-self-dual halves of the field tensor, and the Lorentz force pairs the four-velocity with both.</p>
-<p><strong>A different route.</strong> The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the <strong>eigenspinor</strong> $\tilde\Lambda(\tau)$ of <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em> — then the force arises from a <strong>linear</strong> source rather than a product: $d\tilde\Lambda/d\tau = \tfrac12\tilde\Omega\tilde\Lambda$ with $\tilde\Omega = -(ϙ/m)\tilde{F}^{*}$, and the equation of motion is $d\tilde{P}/d\tau = P_{\mathbb{M}_-}(\tilde\Omega\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{V}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a <em>derived</em> corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.</p>
+<p><strong>A different route.</strong> The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the <strong>eigenspinor</strong> $\tilde U(\tau)$ of <em>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</em> — then the force arises from a <strong>linear</strong> source rather than a product: $d\tilde U/d\tau = \tfrac12\tilde\Omega\tilde U$ with $\tilde\Omega = -(ϙ/m)\tilde{F}^{*}$, and the equation of motion is $d\tilde{P}/d\tau = P_{\mathbb{M}_-}(\tilde\Omega\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{V}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a <em>derived</em> corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.</p>
 <h2 id="the-biquaternion-product-formula">The Biquaternion Product Formula</h2>
 <p>We now derive the formula. The derivation is elementary: invert the product identities above to obtain the electric and magnetic fields in terms of the symmetrized and antisymmetrized products of $\tilde{F}$ and $\tilde{V}$, substitute into the component form, and collect terms.</p>
 <p><strong>Step 1: the fields from the products.</strong> From the identities of the previous section, and the same identities with $\tilde{F}$ replaced by $\tilde{F}^{*}$,</p>
@@ -376,12 +376,12 @@ $$</p>
 <h2 id="the-transformation-of-the-force-under-boosts">The Transformation of the Force under Boosts</h2>
 <p>Because the four-force is a four-vector, it transforms under the Lorentz group by the same <strong>rotor conjugation</strong> as every other element of $\mathbb{M}_-$:</p>
 <p>$$
-\tilde{K}' = \tilde{\Lambda}\,\tilde{K}\,\tilde{\Lambda}^{*},
+\tilde{K}' = \tilde U\,\tilde{K}\,\tilde U^{*},
 $$</p>
-<p>where $\tilde{\Lambda}$ is the unit-norm biquaternion of the boost, and $\tilde{K}' = d\tilde{P}'/d\tau$ is the force measured in the boosted frame (the proper time is invariant). This is the statement that the force transforms in the <strong>vector representation</strong> of the Lorentz group.</p>
+<p>where $\tilde U$ is the unit-norm biquaternion of the boost, and $\tilde{K}' = d\tilde{P}'/d\tau$ is the force measured in the boosted frame (the proper time is invariant). This is the statement that the force transforms in the <strong>vector representation</strong> of the Lorentz group.</p>
 <p>For a pure boost with velocity $\vec v_b$ — a frame boost, distinct from the particle velocity $\vec v$ — the boost biquaternion is</p>
 <p>$$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
+\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
 \qquad
 \tanh\psi = \frac{v_b}{c},
 \qquad
@@ -394,12 +394,12 @@ $$</p>
 <p>$$
 \vec K' = \vec K + \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec K\right)\vec v_b - \gamma_b\,\frac{K^0}{c}\,\vec v_b.
 $$</p>
-<p>Written in the biquaternion variables, with $\tilde{K} = K^0e_t + \vec K$ and $\tilde{K}' = K'^0e_t + \vec K'$, these are exactly the components of $\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).</p>
+<p>Written in the biquaternion variables, with $\tilde{K} = K^0e_t + \vec K$ and $\tilde{K}' = K'^0e_t + \vec K'$, these are exactly the components of $\tilde U\tilde{K}\tilde U^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).</p>
 <p><strong>How the field transforms.</strong> The field strength is <em>not</em> a four-vector, and it does not transform like one. Under the same boost it transforms in the rank-two (bivector) representation,</p>
 <p>$$
-\tilde{F}' = \tilde{\Lambda}^{\natural}\,\tilde{F}\,\tilde{\Lambda},
+\tilde{F}' = \tilde U^{\natural}\,\tilde{F}\,\tilde U,
 $$</p>
-<p>with $\tilde{\Lambda}^{\natural}$ the quaternion conjugate of the rotor (equivalently $\tilde{\Lambda}^{-1}$ for a unit-norm rotor). This reproduces the standard field transformation</p>
+<p>with $\tilde U^{\natural}$ the quaternion conjugate of the rotor (equivalently $\tilde U^{-1}$ for a unit-norm rotor). This reproduces the standard field transformation</p>
 <p>$$
 \vec E' = \gamma_b\left(\vec E + \vec v_b\times\vec B\right) - \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec E\right)\vec v_b,
 $$</p>
@@ -407,10 +407,10 @@ $$</p>
 \vec B' = \gamma_b\left(\vec B - \frac{1}{c^2}\,\vec v_b\times\vec E\right) - \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec B\right)\vec v_b,
 $$</p>
 <p>and it is this bivector rule — not the vector rule — that leaves the field invariants $I_1$ and $I_2$ unchanged. The distinction between the vector and bivector transformation laws is the algebraic expression of the fact that four-vectors live in $\mathbb{M}_-$ while the field strength does not.</p>
-<p><strong>Covariance of the product formula.</strong> The product formula is manifestly covariant under pure boosts, in the following precise sense. Apply the vector rule to the four-velocity, $\tilde{V}' = \tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*}$, and the bivector rule to the field, $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$. Then the right-hand side of the product formula transforms into the right-hand side computed with the primed fields, and equals $\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$:</p>
+<p><strong>Covariance of the product formula.</strong> The product formula is manifestly covariant under pure boosts, in the following precise sense. Apply the vector rule to the four-velocity, $\tilde{V}' = \tilde U\tilde{V}\tilde U^{*}$, and the bivector rule to the field, $\tilde{F}' = \tilde U^{\natural}\tilde{F}\tilde U$. Then the right-hand side of the product formula transforms into the right-hand side computed with the primed fields, and equals $\tilde U\tilde{K}\tilde U^{*}$:</p>
 <p>$$
 -ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}'\tilde{F}'\right)
-= \tilde{\Lambda}\left[-ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)\right]\tilde{\Lambda}^{*}
+= \tilde U\left[-ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)\right]\tilde U^{*}
 = \tilde{K}'.
 $$</p>
 <p>In this sense the product formula is not merely a frame-dependent identity but a covariant statement: transforming the ingredients and transforming the result give the same answer.</p>
@@ -481,7 +481,7 @@ $$</p>
 = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).\;}
 $$</p>
 <p>Equivalently, $\tilde{K} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\tilde{F}^*$, the formula may be written $-\frac{ϙ\sqrt{\mu}}{2}(\tilde{V}\tilde{F} - \tilde{F}^*\tilde{V})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}$, while $\tilde{F}$ is reserved for the field strength.</p>
-<p>The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{K}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$, while the field transforms in the bivector representation, $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$, and the product formula is covariant under the pair.</p>
+<p>The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{K}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde U\tilde{K}\tilde U^{*}$, while the field transforms in the bivector representation, $\tilde{F}' = \tilde U^{\natural}\tilde{F}\tilde U$, and the product formula is covariant under the pair.</p>
 <p>At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = i\tilde J_{\mathrm{eg}}\circ\tilde F'$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -613,7 +613,7 @@ $$</p>
 <td>Second field invariant</td>
 </tr>
 <tr>
-<td>$\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$</td>
+<td>$\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$</td>
 <td>Boost biquaternion (Hermitian, unit norm)</td>
 </tr>
 <tr>

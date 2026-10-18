@@ -52,9 +52,9 @@
         <h1 id="exercise-the-relativistic-doppler-effect"><strong>Exercise: The Relativistic Doppler Effect</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic Doppler effect, using the framework and the notation of the companion articles <em>Relativistic Mechanics in Biquaternionic Form</em> and <em>The Lorentz Transformation as a Biquaternionic Rotation</em>. Those two articles are the parents of this exercise: they set up the four-vectors of $\mathbb{M}_-$ and the boost rotor that acts on them, and what follows applies them to the light of a moving source. Nothing new is introduced, and every result below is obtained from the tools already defined there.</p>
-<p><strong>What is assumed.</strong> The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ and the scalar projection $\mathrm{Sc}$. The four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ from the table of four-vectors in <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>. The rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$, and the boost biquaternion
+<p><strong>What is assumed.</strong> The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ and the scalar projection $\mathrm{Sc}$. The four-wavevector $\tilde P = i\omega/c\,e_t + \vec k$ from the table of four-vectors in <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>. The rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ with $\tilde U\tilde U^{\natural} = e_t$, and the boost biquaternion
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
+\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
 \qquad
 \tanh\psi = \frac{v_b}{c},
 \qquad
@@ -96,20 +96,20 @@ $$
 \qquad
 \tilde{R} = ic\,t\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) .
 $$
-Let $\tilde{\Lambda}$ be any unit-norm biquaternion and let $\tilde P' = \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}$, $\tilde{R}' = \tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$. Then
+Let $\tilde U$ be any unit-norm biquaternion and let $\tilde P' = \tilde U\tilde P\tilde U^{*}$, $\tilde{R}' = \tilde U\tilde{R}\tilde U^{*}$. Then
 $$
 \tilde P'{\tilde{R}^{\natural}}'
-= \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}\;\bigl(\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}\bigr)^{\natural}
-= \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}\,\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural}\,\tilde{R}^{\natural}\,\tilde{\Lambda}^{\natural} .
+= \tilde U\tilde P\tilde U^{*}\;\bigl(\tilde U\tilde{R}\tilde U^{*}\bigr)^{\natural}
+= \tilde U\tilde P\tilde U^{*}\,\bigl(\tilde U^{*}\bigr)^{\natural}\,\tilde{R}^{\natural}\,\tilde U^{\natural} .
 $$
-Since $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$ and quaternion and complex conjugation commute, $\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural} = \overline{\bigl(\tilde{\Lambda}^{\natural}\bigr)^{*}} = \bar{\tilde{\Lambda}}$; hence the inner pair collapses,
+Since $\tilde U^{*} = \overline{\tilde U^{\natural}}$ and quaternion and complex conjugation commute, $\bigl(\tilde U^{*}\bigr)^{\natural} = \overline{\bigl(\tilde U^{\natural}\bigr)^{*}} = \bar{\tilde U}$; hence the inner pair collapses,
 $$
-\tilde{\Lambda}^{*}\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural} = \overline{\tilde{\Lambda}^{\natural}}\,\bar{\tilde{\Lambda}} = \overline{\tilde{\Lambda}^{\natural}\tilde{\Lambda}} = \tilde{\Lambda}^{\natural}\tilde{\Lambda} = e_t ,
+\tilde U^{*}\bigl(\tilde U^{*}\bigr)^{\natural} = \overline{\tilde U^{\natural}}\,\bar{\tilde U} = \overline{\tilde U^{\natural}\tilde U} = \tilde U^{\natural}\tilde U = e_t ,
 $$
-so $\tilde P'{\tilde{R}^{\natural}}' = \tilde{\Lambda}(\tilde P\tilde{R}^{\natural})\tilde{\Lambda}^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_t$,
+so $\tilde P'{\tilde{R}^{\natural}}' = \tilde U(\tilde P\tilde{R}^{\natural})\tilde U^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_t$,
 $$
-\mathrm{Sc}\!\left(\tilde{\Lambda}\,(\tilde P\tilde{R}^{\natural})\,\tilde{\Lambda}^{\natural}\right)
-= \mathrm{Sc}\!\left((\tilde P\tilde{R}^{\natural})\,\tilde{\Lambda}^{\natural}\tilde{\Lambda}\right)
+\mathrm{Sc}\!\left(\tilde U\,(\tilde P\tilde{R}^{\natural})\,\tilde U^{\natural}\right)
+= \mathrm{Sc}\!\left((\tilde P\tilde{R}^{\natural})\,\tilde U^{\natural}\tilde U\right)
 = \mathrm{Sc}\!\left(\tilde P\tilde{R}^{\natural}\right) .
 $$
 Hence $\Phi' = \Phi$: the phase is a scalar of the algebra and of the Lorentz group. This is the biquaternion form of the statement that the phase of a plane wave is an invariant, and it is what makes the transformation of the frequency a transformation of the four-wavevector alone.</p>
@@ -135,7 +135,7 @@ $$
 The frequency measured by an observer is thus an invariant contraction of the wave four-vector with the observer's four-velocity. This is the general Doppler formula, obtained without choosing a frame and without composing a boost; Problem 2 obtains the same result from the rotor, and the agreement is a check on the boost-direction convention.</p>
 <h2 id="problem-2-the-boost-of-the-four-wavevector-and-the-general-formula">Problem 2: The Boost of the Four-Wavevector and the General Formula</h2>
 <p><strong>Statement.</strong> (a) State the rotor conjugation for a boost and the component action it induces on a general element of $\mathbb{M}_-$. (b) Apply it to $\tilde P$ and derive the frequency and wavevector in the observer frame. (c) Show that the transformed wavevector is again null. (d) Verify the result against the invariant formula of Problem 1.</p>
-<p><strong>Solution (a).</strong> The boost with velocity $\vec v_b$ is generated by the Hermitian unit-norm biquaternion of the Introduction, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so the rotor conjugation is $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*} = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}$. Write a general element of $\mathbb{M}_-$ as $\tilde{A} = ia\,e_t + \vec A$ with $a$ real and $\vec A$ real, and split
+<p><strong>Solution (a).</strong> The boost with velocity $\vec v_b$ is generated by the Hermitian unit-norm biquaternion of the Introduction, $\tilde U^{*} = \tilde U$, so the rotor conjugation is $\tilde{A}' = \tilde U\tilde{A}\tilde U^{*} = \tilde U\tilde{A}\tilde U$. Write a general element of $\mathbb{M}_-$ as $\tilde{A} = ia\,e_t + \vec A$ with $a$ real and $\vec A$ real, and split
 $$
 A_\parallel = \vec u\cdot\vec A,
 \qquad
@@ -160,9 +160,9 @@ $$
 For the four-potential ($a = \phi/c$, $\vec A$ the vector potential) these are precisely the component formulas that the parent <em>The Lorentz Transformation as a Biquaternionic Rotation</em> verifies against the rotor conjugation. The same rotor acts on every element of $\mathbb{M}_-$ — the parent states this for the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current — so the component action holds for any four-vector, and in particular for the four-wavevector.</p>
 <p>The scalar component is easily checked directly. Because $\mathrm{Sc}$ is cyclic,
 $$
-\mathrm{Sc}(\tilde{A}') = \mathrm{Sc}\!\left(\tilde{\Lambda}\tilde{A}\tilde{\Lambda}\right) = \mathrm{Sc}\!\left(\tilde{A}\tilde{\Lambda}^2\right),
+\mathrm{Sc}(\tilde{A}') = \mathrm{Sc}\!\left(\tilde U\tilde{A}\tilde U\right) = \mathrm{Sc}\!\left(\tilde{A}\tilde U^2\right),
 $$
-and $\tilde{\Lambda}^2 = \cosh\psi + i\sinh\psi\,\vec u = \gamma + i\gamma\beta\vec u$. Hence
+and $\tilde U^2 = \cosh\psi + i\sinh\psi\,\vec u = \gamma + i\gamma\beta\vec u$. Hence
 $$
 \mathrm{Sc}\!\left((ia + \vec A)(\gamma + i\gamma\beta\vec u)\right)
 = i\gamma a + i\gamma\beta\,\mathrm{Sc}\!\left(\vec A\vec u\right)
@@ -184,9 +184,9 @@ k_\parallel' = \gamma\left(\frac{\omega_0}{c}\cos\theta - \beta\frac{\omega_0}{c
 \vec k_\perp' = \frac{\omega_0}{c}\,\vec {u_k}_{0\perp} .
 $$
 In the longitudinal case $\theta = 0$ or $\pi$ the transverse part vanishes; in general a ray that is transverse in one frame acquires a longitudinal component in the other, which is the aberration of Problem 5.</p>
-<p><strong>Solution (c).</strong> The biquaternion norm is preserved because $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$:
+<p><strong>Solution (c).</strong> The biquaternion norm is preserved because $\tilde U\tilde U^{\natural} = e_t$:
 $$
-\langle\tilde P'\rangle_{\natural} = \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}\overline{\tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}}
+\langle\tilde P'\rangle_{\natural} = \tilde U\tilde P\tilde U^{*}\overline{\tilde U\tilde P\tilde U^{*}}
 = \tilde P\tilde P^{\natural} = 0 .
 $$
 One may also check it in components, using $\gamma^2(\cos\theta-\beta)^2 + \sin^2\theta = \gamma^2(1-\beta\cos\theta)^2$, which follows from $1-\beta^2 = \gamma^{-2}$. Hence $k' = \omega'/c$: the observer sees a light wave propagating with the same local speed $c$, as required.</p>
@@ -197,7 +197,7 @@ $$
 $$
 in agreement with (b).</p>
 <blockquote>
-<p><strong>Remark on the boost-direction convention.</strong> The rotor with vector part $+\sinh\frac{\psi}{2}\vec u$ carries the frame in which the four-vector components are given <em>to the frame moving with velocity $+\vec v_b$</em> relative to it. This is fixed by the parent's verification against the four-potential components, and it is the convention used throughout. Reversing it — using the inverse rotor $\tilde{\Lambda}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u$ in place of $\tilde{\Lambda}$ — interchanges emission and reception: it flips the sign of the Doppler term, giving $\omega' = \gamma\omega_0(1+\beta\cos\theta)$ in place of $\omega' = \gamma\omega_0(1-\beta\cos\theta)$, so that a receding observer ($\theta = 0$) is blueshifted rather than redshifted. Reversing the rotor therefore turns every receding observer into an approaching one. A sibling exercise in this series has found a parent article applying a boost rotor in the inverse direction in exactly this way; the present exercise pins the direction down before using it.</p>
+<p><strong>Remark on the boost-direction convention.</strong> The rotor with vector part $+\sinh\frac{\psi}{2}\vec u$ carries the frame in which the four-vector components are given <em>to the frame moving with velocity $+\vec v_b$</em> relative to it. This is fixed by the parent's verification against the four-potential components, and it is the convention used throughout. Reversing it — using the inverse rotor $\tilde U^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u$ in place of $\tilde U$ — interchanges emission and reception: it flips the sign of the Doppler term, giving $\omega' = \gamma\omega_0(1+\beta\cos\theta)$ in place of $\omega' = \gamma\omega_0(1-\beta\cos\theta)$, so that a receding observer ($\theta = 0$) is blueshifted rather than redshifted. Reversing the rotor therefore turns every receding observer into an approaching one. A sibling exercise in this series has found a parent article applying a boost rotor in the inverse direction in exactly this way; the present exercise pins the direction down before using it.</p>
 </blockquote>
 <h2 id="problem-3-longitudinal-doppler-the-two-factors">Problem 3: Longitudinal Doppler — The Two Factors</h2>
 <p><strong>Statement.</strong> (a) Derive the observed frequency for $\theta = 0$ and $\theta = \pi$. (b) Show that the two factors are reciprocals. (c) Express the result as a redshift.</p>
@@ -370,7 +370,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 <p><strong>Frequency invariant.</strong> An observer of four-velocity $\tilde{V}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.</p>
 </li>
 <li>
-<p><strong>General Doppler formula.</strong> Under the boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$, with $\tanh\psi = v_b/c$, the four-wavevector transforms by $\tilde P' = \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}$ and $\omega' = \gamma\omega_0(1-\beta\cos\theta)$, where $\theta$ is the source-frame angle between $\vec v_b$ and the propagation direction. The transformed wavevector is again null.</p>
+<p><strong>General Doppler formula.</strong> Under the boost rotor $\tilde U = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u$, with $\tanh\psi = v_b/c$, the four-wavevector transforms by $\tilde P' = \tilde U\tilde P\tilde U^{*}$ and $\omega' = \gamma\omega_0(1-\beta\cos\theta)$, where $\theta$ is the source-frame angle between $\vec v_b$ and the propagation direction. The transformed wavevector is again null.</p>
 </li>
 <li>
 <p><strong>Longitudinal.</strong> $\omega' = \omega_0\sqrt{(1-\beta)/(1+\beta)}$ receding and $\omega_0\sqrt{(1+\beta)/(1-\beta)}$ approaching; the two factors are reciprocals, and $1+z = \sqrt{(1+\beta)/(1-\beta)}$.</p>
@@ -439,7 +439,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 <td>Observer four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$</td>
 </tr>
 <tr>
-<td>$\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$</td>
+<td>$\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$</td>
 <td>Boost biquaternion (Hermitian, unit norm)</td>
 </tr>
 <tr>

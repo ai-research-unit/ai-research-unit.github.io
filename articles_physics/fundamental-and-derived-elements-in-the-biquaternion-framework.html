@@ -91,27 +91,27 @@ $$</p>
 <p><strong>The quaternion basis is a presentation.</strong> The units $\vec e_x,\vec e_y,\vec e_z$ are a choice of orthonormal unit pure imaginary triple. Automorphisms of $\mathbb{H}$ (conjugation by $g\in\mathbb{H}$ with $g\bar g=e_t$) rotate the triple among themselves. The individual units are therefore presentations, while the subspaces they determine — for instance the pure imaginary subspace $\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and its multiples by $i$ — are derived. The same distinction governs $i$ below.</p>
 <p><strong>The real structure.</strong> The complexification singles out an involution. Define $\bar{\cdot}$ by</p>
 <p>$$
-(Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z)^{*}=Q_t^{*}e_t+Q_x^{*}\vec e_x+Q_y^{*}\vec e_y+Q_z^{*}\vec e_z,
+(Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z)^{*}=Q_{1t}^{*}e_t+Q_{1x}^{*}\vec e_x+Q_{1y}^{*}\vec e_y+Q_{1z}^{*}\vec e_z,
 $$</p>
-<p>where $Q_\mu^{*}$ is the complex conjugate of the coefficient. This is the <strong>real structure</strong>: the unique $\mathbb{C}$-antilinear algebra involution that fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates $i$. Its fixed-point set is the real quaternion subspace</p>
+<p>where $Q_{1,\mu}^{*}$ is the complex conjugate of the coefficient. This is the <strong>real structure</strong>: the unique $\mathbb{C}$-antilinear algebra involution that fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates $i$. Its fixed-point set is the real quaternion subspace</p>
 <p>$$
 \mathbb{H}_{\mathbb{B}}=\{q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\ :\ q_\mu\in\mathbb{R}\},
 $$</p>
 <p>a real form of the complex algebra, isomorphic to $\mathbb{H}$. Given the complexification (B2), the real structure is canonical: it is the complex conjugation of the scalar factor. The posit is the complexification, and the real structure is the certificate of that posit.</p>
 <p><strong>Why the real structure is a substantive posit.</strong> It would be a mistake to conclude that the real structure is forced by the bare algebra. Forget the complexification and regard $\mathbb{B}$ only as an eight-dimensional real algebra $\mathbb{B}_{\mathbb{R}}$. The real structures on the complex algebra — the $\mathbb{C}$-antilinear algebra involutions — are not unique, and they need not have isomorphic fixed-point sets. Writing $\mathbb{B}\cong M_2(\mathbb{C})$ and letting $\bar{\ }$ denote entrywise conjugation, the maps</p>
 <p>$$
-\rho_1(\tilde{Q})=\tilde{Q}^{\natural}, \qquad \rho_2(\tilde{Q})=J\tilde{Q}^{\natural}J^{-1}, \qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+\rho_1(\tilde{Q}_1)=\tilde{Q}_1^{\natural}, \qquad \rho_2(\tilde{Q}_1)=J\tilde{Q}_1^{\natural}J^{-1}, \qquad J=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 $$</p>
 <p>are both $\mathbb{C}$-antilinear algebra involutions; the fixed set of $\rho_1$ is $M_2(\mathbb{R})$, while the fixed set of $\rho_2$ is the copy of $\mathbb{H}$ of matrices $\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix}$, whose determinant $|a|^2+|b|^2$ vanishes only at zero. The two real forms are not isomorphic: one is a division algebra, the other has zero divisors. So the algebra alone does not determine the real form, and the framework's choice — the complexification of $\mathbb{H}$, whose real form is the division algebra $\mathbb{H}_{\mathbb{B}}$ — is a genuine posit, not a consequence of dimension or simplicity. This choice is what will fix the two-sector split in the section after next.</p>
 <h2 id="derived-the-conjugations">Derived: The Conjugations</h2>
 <p>From $\mathbb{H}$ and the complexification, four conjugations are obtained. Only two of them are supplied by the base; the other two are derived.</p>
 <p><strong>Quaternion conjugation.</strong> Extend the standard involution of $\mathbb{H}$ complex-linearly ($\bar{\imath}=i$):</p>
 <p>$$
-\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z.
+\tilde Q_1^{\natural}=Q_te_t-Q_{1x}\vec e_x-Q_{1y}\vec e_y-Q_{1z}\vec e_z.
 $$</p>
-<p>It is an involution and an anti-automorphism, and it is rigidly derived from $\mathbb{H}$ in the base (B1). Two identities make it usable. Since $\tilde Q^{\natural}=2\,\mathrm{Sc}(\tilde Q)e_t-\tilde Q$, it is linear in the scalar part and negates the vector part. And</p>
+<p>It is an involution and an anti-automorphism, and it is rigidly derived from $\mathbb{H}$ in the base (B1). Two identities make it usable. Since $\tilde Q_1^{\natural}=2\,\mathrm{Sc}(\tilde Q_1)e_t-\tilde Q_1$, it is linear in the scalar part and negates the vector part. And</p>
 <p>$$
-\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
+\tilde Q_1\tilde Q_1^{\natural}=Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q_{1z}^2,
 $$</p>
 <p>a central element, so the product of a biquaternion with its quaternion conjugate is a complex scalar. This is not an assumption: it follows from the multiplication table of $\mathbb{H}$.</p>
 <p><strong>Complex conjugation.</strong> The real structure $\bar{\cdot}$ of the previous section. It is an involution and an algebra automorphism, and it is $\mathbb{C}$-antilinear. In the base it is derived from the complexification. Its two eigenspaces,</p>
@@ -121,42 +121,42 @@ $$</p>
 <p>are the fixed set and the $(-1)$-eigenspace, both of real dimension $4$; this <strong>quaternion decomposition</strong> is thus derived from the real structure.</p>
 <p><strong>Hermitian conjugation.</strong> Define</p>
 <p>$$
-\tilde Q^{*}=\overline{\tilde Q^{\natural}}.
+\tilde Q_1^{*}=\overline{\tilde Q_1^{\natural}}.
 $$</p>
 <p>Because ${}^{\natural}$ and $\bar{\cdot}$ commute (the first negates the vector part and fixes $i$; the second conjugates the complex coefficients and fixes the quaternion units), the composition is an involution. It is an anti-automorphism, since it is the composition of an anti-automorphism with an automorphism. Its explicit form is</p>
 <p>$$
-\tilde Q^{*}=Q_t^{*}e_t-Q_x^{*}\vec e_x-Q_y^{*}\vec e_y-Q_z^{*}\vec e_z.
+\tilde Q_1^{*}=Q_{1t}^{*}e_t-Q_{1x}^{*}\vec e_x-Q_{1y}^{*}\vec e_y-Q_{1z}^{*}\vec e_z.
 $$</p>
 <p>Nothing here is posited: ${}^{*}$ is <em>defined</em> as the composition of the two available involutions. It is rigidly derived.</p>
 <p><strong>Anti-Hermitian conjugation.</strong> Define</p>
 <p>$$
-\tilde Q^{\flat}=-\tilde Q^{*}.
+\tilde Q_1^{\flat}=-\tilde Q_1^{*}.
 $$</p>
-<p>It is an involution, since $(\tilde Q^\flat)^\flat=\tilde Q$; but it is <em>not</em> an anti-automorphism. Indeed</p>
+<p>It is an involution, since $(\tilde Q_1^\flat)^\flat=\tilde Q_1$; but it is <em>not</em> an anti-automorphism. Indeed</p>
 <p>$$
-(\tilde Q\tilde{Q}_1)^{\flat}=-(\tilde Q\tilde{Q}_1)^{*}=-\tilde{Q}_1^{*}\tilde Q^{*}=-\tilde{Q}_1^{\flat}\tilde Q^{\flat},
+(\tilde Q_1\tilde{Q}_2)^{\flat}=-(\tilde Q_1\tilde{Q}_2)^{*}=-\tilde{Q}_2^{*}\tilde Q_1^{*}=-\tilde{Q}_2^{\flat}\tilde Q_1^{\flat},
 $$</p>
-<p>whereas an anti-automorphism would give $\tilde{Q}_1^{\flat}\tilde Q^{\flat}$ with a <em>plus</em> sign. It also lies outside the Klein four-group generated by ${}^{\natural}$ and $\bar{\cdot}$: composing it with ${}^{*}$ gives $-1$, so it is ${}^{*}$ together with the central sign $-1$. The sign is the only freedom in its definition, and it is a convention rather than a presentation: no unital automorphism of the base carries ${}^{*}$ to $-{}^{*}$, since every such automorphism fixes $e_t$ while $(-{}^{*})(e_t)=-e_t$. Once the convention is fixed, $\flat$ is rigidly derived.</p>
+<p>whereas an anti-automorphism would give $\tilde{Q}_2^{\flat}\tilde Q_1^{\flat}$ with a <em>plus</em> sign. It also lies outside the Klein four-group generated by ${}^{\natural}$ and $\bar{\cdot}$: composing it with ${}^{*}$ gives $-1$, so it is ${}^{*}$ together with the central sign $-1$. The sign is the only freedom in its definition, and it is a convention rather than a presentation: no unital automorphism of the base carries ${}^{*}$ to $-{}^{*}$, since every such automorphism fixes $e_t$ while $(-{}^{*})(e_t)=-e_t$. Once the convention is fixed, $\flat$ is rigidly derived.</p>
 <p><strong>Consistency of the sorting.</strong> The four conjugations are not four posits. Two of them are supplied by the base — ${}^{\natural}$ by $\mathbb{H}$ and $\bar{\cdot}$ by the complexification — and the other two are defined from them. The framework's phrase "the four natural conjugations" is therefore accurate as a description but misleading as a count of posits: only ${}^{\natural}$ and $\bar{\cdot}$ are input.</p>
 <h2 id="derived-the-two-sector-split">Derived: The Two-Sector Split</h2>
 <p>The Hermitian conjugation ${}^{*}$ is an involution, so it has a $\pm1$ eigenspace decomposition. Define</p>
 <p>$$
-\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}, \qquad \mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}.
+\mathbb{M}_+=\{\tilde Q_1:\tilde Q_1^{*}=\tilde Q_1\}, \qquad \mathbb{M}_-=\{\tilde Q_1:\tilde Q_1^{*}=-\tilde Q_1\}.
 $$</p>
 <p>Both are derived: they are the eigenspaces of the derived involution ${}^{*}$, and they are preserved by every automorphism of the base (which commutes with ${}^{\natural}$ and $\bar{\cdot}$, hence with ${}^{*}$). The coordinate forms are obtained by solving the eigen-equations, and this is a derivation, so it is written out.</p>
-<p><strong>Solving for $\mathbb{M}_+$.</strong> Write $\tilde Q=\sum_\mu Q_\mu e_\mu$. The condition $\tilde Q^{*}=\tilde Q$ reads</p>
+<p><strong>Solving for $\mathbb{M}_+$.</strong> Write $\tilde Q_1=\sum_\mu Q_{1,\mu} e_\mu$. The condition $\tilde Q_1^{*}=\tilde Q_1$ reads</p>
 <p>$$
-Q_t^{*}e_t-Q_x^{*}\vec e_x-Q_y^{*}\vec e_y-Q_z^{*}\vec e_z=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z.
+Q_{1t}^{*}e_t-Q_{1x}^{*}\vec e_x-Q_{1y}^{*}\vec e_y-Q_{1z}^{*}\vec e_z=Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z.
 $$</p>
-<p>Comparing coefficients gives $Q_t^{*}=Q_t$ and $Q_k^{*}=-Q_k$ for $k=1,2,3$. Thus $Q_t$ is real and the vector coefficients are purely imaginary, and</p>
+<p>Comparing coefficients gives $Q_{1t}^{*}=Q_{1t}$ and $Q_k^{*}=-Q_k$ for $k=1,2,3$. Thus $Q_{1t}$ is real and the vector coefficients are purely imaginary, and</p>
 <p>$$
 \mathbb{M}_+=\{q_te_t+iq_1\vec e_x+iq_2\vec e_y+iq_3\vec e_z\ :\ q_\mu\in\mathbb{R}\}.
 $$</p>
-<p><strong>Solving for $\mathbb{M}_-$.</strong> The condition $\tilde Q^{\flat}=\tilde Q$, that is $-\tilde Q^{*}=\tilde Q$, reads</p>
+<p><strong>Solving for $\mathbb{M}_-$.</strong> The condition $\tilde Q_1^{\flat}=\tilde Q_1$, that is $-\tilde Q_1^{*}=\tilde Q_1$, reads</p>
 <p>$$
--Q_t^{*}e_t+Q_x^{*}\vec e_x+Q_y^{*}\vec e_y+Q_z^{*}\vec e_z=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,
+-Q_{1t}^{*}e_t+Q_{1x}^{*}\vec e_x+Q_{1y}^{*}\vec e_y+Q_{1z}^{*}\vec e_z=Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z,
 $$</p>
-<p>so $Q_t$ is purely imaginary and the vector coefficients are real:</p>
+<p>so $Q_{1t}$ is purely imaginary and the vector coefficients are real:</p>
 <p>$$
 \mathbb{M}_-=\{iq_0e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\ :\ q_\mu\in\mathbb{R}\}.
 $$</p>
@@ -169,7 +169,7 @@ $$</p>
 <p>$$
 i\,\mathbb{M}_+=\mathbb{M}_-, \qquad i\,\mathbb{M}_-=\mathbb{M}_+,
 $$</p>
-<p>since ${}^{*}$ is $\mathbb{C}$-antilinear: $(i\tilde Q)^{*}=-i\tilde Q^{*}$ whenever $i$ is central. This is multiplication by $i$, not any conjugation; the conjugations ${}^{\natural}$, $\bar{\cdot}$, and ${}^{*}$ each preserve the sectors, and $\flat$ fixes $\mathbb{M}_-$. Because multiplication by $i$ is not an algebra map, it is not an isomorphism of the sectors as algebras, and because $\langle i\tilde Q\rangle_{\natural}=i^2\langle\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$, it identifies them only as anti-isometric real quadratic spaces.</p>
+<p>since ${}^{*}$ is $\mathbb{C}$-antilinear: $(i\tilde Q_1)^{*}=-i\tilde Q_1^{*}$ whenever $i$ is central. This is multiplication by $i$, not any conjugation; the conjugations ${}^{\natural}$, $\bar{\cdot}$, and ${}^{*}$ each preserve the sectors, and $\flat$ fixes $\mathbb{M}_-$. Because multiplication by $i$ is not an algebra map, it is not an isomorphism of the sectors as algebras, and because $\langle i\tilde Q_1\rangle_{\natural}=i^2\langle\tilde Q_1\rangle_{\natural}=-\langle\tilde Q_1\rangle_{\natural}$, it identifies them only as anti-isometric real quadratic spaces.</p>
 <p><strong>Is the split forced or chosen?</strong> Relative to the base, the split is forced: it is the eigenspace decomposition of the derived involution ${}^{*}$, and no automorphism of the base can move it. It is not an independent posit, and no further choice enters.</p>
 <p>But the split is forced only <em>relative to the base</em>, and the real form the base fixes is a posit (it is the content of the complexification). If the algebra is regarded as a bare real algebra, its real structures include one whose fixed set is $M_2(\mathbb{R})$; that real form is not isomorphic to $\mathbb{H}_{\mathbb{B}}$, since $M_2(\mathbb{R})$ has zero divisors and $\mathbb{H}_{\mathbb{B}}$ does not, so no algebra automorphism carries it to the framework's real form. The Hermitian conjugation ${}^{*}$ is built from the real structure, so the sector decomposition inherits this dependence. The correct statement is therefore: <strong>the two-sector split is a theorem about the algebra together with its real form, and the real form is an input.</strong> The split is a consequence of the framework's posit of the quaternion real form, not a consequence of the algebra alone. This is the fact about the framework that the title of this section asks for.</p>
 <p><strong>The naming is not derived.</strong> Which of the two sectors is called "material" and which "informational" is not decided by the algebra. Since $i$ exchanges the sectors and $i\mapsto-i$ is a presentation, the assignment of the temporal coordinate $ict$ to $\mathbb{M}_-$ rather than to $\mathbb{M}_+$ is a convention, pinned by the choice of sign of $i$. The physical identification of the four-vectors with $\mathbb{M}_-$ and of the qubit operators with $\mathbb{M}_+$ is an <em>interpretation</em> in the sense of the criterion: it is a separate posit, recorded in the companion articles, and not a derivation of this algebra.</p>
@@ -181,7 +181,7 @@ $$</p>
 $$</p>
 <p>as one checks from $[\vec e_y,\vec e_z]=2\vec e_x$ and its cyclic analogues. Therefore a trace functional, normalized by $\mathrm{Tr}(e_t)=2$ — the degree of the central simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$ — is</p>
 <p>$$
-\mathrm{Tr}(\tilde Q)=2Q_t=2\,\mathrm{Sc}(\tilde Q).
+\mathrm{Tr}(\tilde Q_1)=2Q_{1t}=2\,\mathrm{Sc}(\tilde Q_1).
 $$</p>
 <p>The normalization is rigidly derived rather than a presentation: the reduced trace of the degree-two matrix model fixes it, and every automorphism of the base fixes $e_t$ and hence the value $\mathrm{Tr}(e_t)$; the vanishing on the vector units is forced. Consequently, for any two biquaternions $\tilde P,\tilde H$,</p>
 <p>$$
@@ -211,7 +211,7 @@ $$</p>
 <p><strong>$i$ is not in $\mathbb{H}$.</strong> The algebra $\mathbb{H}$ is four-dimensional with centre $\mathbb{R}e_t$, and no element of $\mathbb{H}$ outside $\mathbb{R}e_t$ is central; in particular there is no central square root of $-1$ in $\mathbb{H}$, since $\vec e_x,\vec e_y,\vec e_z$ are not central. So $i$ cannot be derived from the quaternion algebra alone. This is the sense in which the complexification is a genuine posit: it is not a consequence of (B1).</p>
 <p><strong>Given the algebra, $i$ is determined up to sign.</strong> Regard $\mathbb{B}$ as a real algebra. Its centre is</p>
 <p>$$
-Z(\mathbb{B})=\{z\in\mathbb{B}\ :\ z\tilde Q=\tilde Q z \text{ for all }\tilde Q\}=\operatorname{span}_{\mathbb{R}}\{e_t,i\},
+Z(\mathbb{B})=\{z\in\mathbb{B}\ :\ z\tilde Q_1=\tilde Q_1 z \text{ for all }\tilde Q_1\}=\operatorname{span}_{\mathbb{R}}\{e_t,i\},
 $$</p>
 <p>which is a copy of $\mathbb{C}$ inside $\mathbb{B}$; this is read off from the requirement that a central element commute with $\vec e_x,\vec e_y,\vec e_z$, which forces its vector coefficients to vanish. The elements of the centre that square to $-e_t$ are exactly the solutions of $z_0^2=-1$ for $z=z_0e_t$ among these, namely</p>
 <p>$$
@@ -224,19 +224,19 @@ $$</p>
 <p><strong>A gap, flagged.</strong> What the framework does <em>not</em> supply is a derivation of the complexification itself from $\mathbb{H}$, or any argument that the quaternion real form $\mathbb{H}_{\mathbb{B}}$ should be preferred to the alternative real form $M_2(\mathbb{R})$ available on the same abstract algebra. The sorting below therefore records the complexification as fundamental, with the real-form choice as its content. Whether that choice is physically motivated or merely conventional is not decidable from the algebra, and is left as an open question rather than smoothed over.</p>
 <h2 id="derived-the-polar-representations">Derived: The Polar Representations</h2>
 <p>The polar representations are the last family of objects whose status is settled here, and the verdict is that they introduce no new fundamental data.</p>
-<p><strong>The inputs are already available.</strong> The exponential $\exp(\tilde Q)=\sum_{n\ge0}\tilde Q^n/n!$ converges for every biquaternion because $\mathbb{B}$ is finite-dimensional, so it is rigged from the multiplication. The roots of $-1$ used by the polar forms are the solutions of $\tilde{\Xi}^2=-e_t$; the central ones are $\pm i$ (previous section) and the non-central ones are the real and non-trivial roots classified in the companion article. Both inputs are derived.</p>
+<p><strong>The inputs are already available.</strong> The exponential $\exp(\tilde Q_1)=\sum_{n\ge0}\tilde Q_1^n/n!$ converges for every biquaternion because $\mathbb{B}$ is finite-dimensional, so it is rigged from the multiplication. The roots of $-1$ used by the polar forms are the solutions of $\tilde{\Xi}^2=-e_t$; the central ones are $\pm i$ (previous section) and the non-central ones are the real and non-trivial roots classified in the companion article. Both inputs are derived.</p>
 <p><strong>The Hamilton polar form.</strong> For a biquaternion whose vector part has non-vanishing general plain bilinear square $(\vec Q,\vec Q)=B^2\ne0$, put</p>
 <p>$$
-R=\sqrt{\langle\tilde Q\rangle_{\natural}},\qquad \tilde{\Xi}=\vec Q/B,\qquad \cos\Theta=Q_t/R,\qquad \sin\Theta=B/R,
+R=\sqrt{\langle\tilde Q_1\rangle_{\natural}},\qquad \tilde{\Xi}=\vec Q/B,\qquad \cos\Theta=Q_{1t}/R,\qquad \sin\Theta=B/R,
 $$</p>
-<p>so that $\tilde Q=R\exp(\tilde{\Xi}\Theta)$. The construction is a sequence of operations available in the base: the biquaternion norm from the multiplication and ${}^{\natural}$, the square root and the angle functions from the exponential, and the normalization of the axis from the division by $B$. That it reconstructs $\tilde Q$ is a computation,</p>
+<p>so that $\tilde Q_1=R\exp(\tilde{\Xi}\Theta)$. The construction is a sequence of operations available in the base: the biquaternion norm from the multiplication and ${}^{\natural}$, the square root and the angle functions from the exponential, and the normalization of the axis from the division by $B$. That it reconstructs $\tilde Q_1$ is a computation,</p>
 <p>$$
-R(\cos\Theta+\tilde{\Xi}\sin\Theta)=R\cdot\frac{Q_t}{R}+R\cdot\frac{\vec Q}{B}\cdot\frac{B}{R}=Q_t+\vec Q=\tilde Q,
+R(\cos\Theta+\tilde{\Xi}\sin\Theta)=R\cdot\frac{Q_{1t}}{R}+R\cdot\frac{\vec Q}{B}\cdot\frac{B}{R}=Q_{1t}+\vec Q=\tilde Q_1,
 $$</p>
 <p>which also shows that the construction is not merely formal. The domain condition $B\ne0$ and the uniqueness up to the correlated sign $(R,\Theta)\mapsto(-R,\Theta+\pi)$ are properties of the construction, hence derived.</p>
-<p><strong>The complex polar form.</strong> For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\Psi=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\Psi)^{-1}$, so that $\tilde Q=Q\exp(i\Psi)$ with $i$ the central root. Again every ingredient is derived, and the reconstruction</p>
+<p><strong>The complex polar form.</strong> For a biquaternion with invertible real quaternion part $Q_r$, put $\tan\Psi=Q_r^{-1}Q_i$ and $Q=Q_r(\cos\Psi)^{-1}$, so that $\tilde Q_1=Q\exp(i\Psi)$ with $i$ the central root. Again every ingredient is derived, and the reconstruction</p>
 <p>$$
-Q\exp(i\Psi)=Q\cos\Psi+iQ\sin\Psi=Q_r+iQ_i=\tilde Q
+Q\exp(i\Psi)=Q\cos\Psi+iQ\sin\Psi=Q_r+iQ_i=\tilde Q_1
 $$</p>
 <p>uses the commutativity of the functions of $\Psi$ and the inversion of $Q_r$ in $\mathbb{H}$. The domain condition $Q_r\ne0$ is likewise derived.</p>
 <p><strong>No new posit.</strong> The polar forms are constructions, and the choice between them is a matter of which is defined on the biquaternion at hand — a presentational matter, not a posit. That there are two rather than one is a consequence of the existence of central and non-central roots of $-1$, which is a theorem of the algebra, not an extra input. The polar representations therefore leave the base unchanged.</p>
@@ -312,12 +312,12 @@ $$</p>
 <td>Eigen-decomposition of ${}^{*}$; the real form it uses is an input.</td>
 </tr>
 <tr>
-<td>The biquaternion norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
+<td>The biquaternion norm $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$</td>
 <td>Derived</td>
 <td>Multiplication plus ${}^{\natural}$.</td>
 </tr>
 <tr>
-<td>The trace $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$</td>
+<td>The trace $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$</td>
 <td>Derived (rigid)</td>
 <td>Vanishes on the vector units because they are commutators; the normalization is the reduced trace of the degree-two matrix model, fixed by every automorphism of the base.</td>
 </tr>
@@ -409,11 +409,11 @@ $$</p>
 <td>Anti-Hermitian subspace: imaginary scalar, real vector</td>
 </tr>
 <tr>
-<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$</td>
+<td>$\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}=\sum_\mu Q_{1,\mu}^2$</td>
 <td>Biquaternion norm; derived</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$</td>
+<td>$\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$</td>
 <td>Trace; rigidly derived</td>
 </tr>
 <tr>

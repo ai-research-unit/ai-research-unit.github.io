@@ -159,9 +159,9 @@ and the parent article's algebraic fact that $K$ is a Hermitian element of the a
 <h3 id="the-gns-hilbert-space">The GNS Hilbert Space</h3>
 <p>Take $M=\mathbb{B}\cong M_2(\mathbb{C})$, and let $\tilde{Ϛ}\in\mathbb{M}_+$ be positive definite with $\mathrm{Tr}(\tilde{Ϛ})=1$. On the vector space $\mathbb{B}$ put the inner product
 $$
-\langle \tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}} := \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde{A}^{*}\tilde{B}\big),
+\langle \tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}} := \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde{A}^{*}\tilde Q_1\big),
 $$
-let $M$ act by left multiplication, $\pi(\tilde{A})\tilde{B}=\tilde{A}\tilde{B}$, and take the vector
+let $M$ act by left multiplication, $\pi(\tilde{A})\tilde Q_1=\tilde{A}\tilde Q_1$, and take the vector
 $$
 \Omega := e_t .
 $$
@@ -178,11 +178,11 @@ $$
 <strong>The Tomita operator of the biquaternion algebra is its Hermitian conjugation.</strong> It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{A}=\sum_\mu Q_\mu e_\mu$ one has $\tilde{A}^{*}=\bar Q_te_t-\sum_{k=1}^{3}\bar Q_k\vec e_k$, using $e_t^\dagger=e_t$ and $\vec e_k^{*}=-\vec e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.</p>
 <p>The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$
-\langle S_0\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\overline{\langle\tilde{A},S_0^*\tilde{B}\rangle_{\tilde{Ϛ}}},
+\langle S_0\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\overline{\langle\tilde{A},S_0^*\tilde Q_1\rangle_{\tilde{Ϛ}}},
 $$
 is
 $$
-S_0^*(\tilde{B}) = \tilde{Ϛ}\,\tilde{B}^{*}\tilde{Ϛ}^{-1},
+S_0^*(\tilde Q_1) = \tilde{Ϛ}\,\tilde Q_1^{*}\tilde{Ϛ}^{-1},
 $$
 whence
 $$
@@ -206,7 +206,7 @@ $$
 \sigma_t(\tilde{A})=\exp(-it\tilde K)\tilde{A}\,\exp(it\tilde K), \qquad \frac{d}{dt}\sigma_t(\tilde{A})\Big|_{t=0}=-i[\tilde K,\tilde{A}].
 $$</p>
 <h3 id="the-identities-verified">The Identities, Verified</h3>
-<p>The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde{B}\mapsto\tilde{B}\tilde{C}$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.</p>
+<p>The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.</p>
 <h3 id="an-explicit-case">An Explicit Case</h3>
 <p>Take the faithful state with Bloch vector
 $$
@@ -218,7 +218,7 @@ $$
 a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
 $$
-with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde{B}$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.</p>
+with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde Q_1$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.</p>
 <p>A second, physical case ties the construction to the parent article and to <em>The Partition Function in Biquaternionic Form</em>. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
 $$
 \tilde K=-\log\tilde{Ϛ}=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_t,
@@ -294,7 +294,7 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 </ul>
 <p><strong>Established (recomputed here).</strong></p>
 <ul>
-<li>$M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.</li>
+<li>$M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.</li>
 <li>$\Delta(\tilde{A})=\tilde{Ϛ}\tilde{A}\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}\tilde{Ϛ}^{-1/2}$, $J(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_t(\tilde{A})=\tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it}$.</li>
 <li>$J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{A}]$, and $JMJ=M'$.</li>
 <li>$\tilde{K}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.</li>
@@ -313,7 +313,7 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.</p>
-<p>In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
+<p>In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$
 S_0:\tilde{A}\mapsto\tilde{A}^{*},
 $$
@@ -384,7 +384,7 @@ The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular
 <td>Faithful state (positive definite, trace one)</td>
 </tr>
 <tr>
-<td>$\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$</td>
+<td>$\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$</td>
 <td>GNS inner product on $\mathbb{B}$</td>
 </tr>
 <tr>

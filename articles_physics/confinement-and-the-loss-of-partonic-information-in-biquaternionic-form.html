@@ -67,7 +67,7 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
 \qquad
 W(C) = \mathrm{Tr}\,U(C),
 $$</p>
-<p>with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\geq0$, $\mathrm{Tr}\tilde{Ϛ} = 1$, and are parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy is $S(\tilde{Ϛ}\|\tilde{\sigma})$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are <strong>standard QCD notation, not framework objects</strong>; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.</p>
+<p>with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\geq0$, $\mathrm{Tr}\tilde{Ϛ} = 1$, and are parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are <strong>standard QCD notation, not framework objects</strong>; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.</p>
 <h2 id="confinement-and-the-order-parameter">Confinement and the Order Parameter</h2>
 <h3 id="the-wilson-loop-as-the-criterion">The Wilson Loop as the Criterion</h3>
 <p>The order parameter of the gauge theory is the expectation of the Wilson loop in the gauge-field path integral,</p>
@@ -167,7 +167,7 @@ $$</p>
 <h3 id="coarse-graining-as-a-channel">Coarse-Graining as a Channel</h3>
 <p>On general grounds the flow from an ultraviolet description to an infrared description is a <strong>completely positive trace-preserving map</strong> between state spaces, and relative entropy is monotone under it:</p>
 <p>$$
-S\bigl(\Phi(\tilde{Ϛ})\,\big\|\,\Phi(\tilde{\sigma})\bigr) \;\leq\; S(\tilde{Ϛ}\|\tilde{\sigma}).
+S\bigl(\Phi(\tilde{Ϛ}_1)\,\big\|\,\Phi(\tilde{Ϛ}_2)\bigr) \;\leq\; S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2).
 $$</p>
 <p>The inequality is the precise sense in which the flow loses information: two partonic states that were distinguishable at the ultraviolet scale become less distinguishable, or indistinguishable, at the infrared scale. When the image of the map is a proper subalgebra — when distinct states are identified by it, as for the colour-singlet expectation of the next section — the inequality can be strict, and it becomes an equality at zero whenever the two states lie in the same fibre. The restricted relative entropy computed above is exactly that case, and there the loss is total.</p>
 <p>The framework's own relative-entropy companion supplies the monotonicity statement; the flow supplies the map; and the confinement statement is that the infrared map has the colour directions in its kernel. What the framework cannot supply is the map itself, because it has no colour and no non-perturbative action.</p>
@@ -181,7 +181,7 @@ E(\tilde{Q}) = \int_{G} dU\;U \tilde{Q} U^{-1},
 $$</p>
 <p>averaging over the colour group with its normalized Haar measure, is a completely positive unital idempotent map: $E^2 = E$. It is the colour-singlet projection, and it is the natural model of what the asymptotic description retains. Applied to a state, it discards exactly the off-diagonal colour coherences and keeps the colour-neutral content, so that</p>
 <p>$$
-S\bigl(E(\tilde{Ϛ})\,\big\|\,E(\tilde{\sigma})\bigr) \;<\; S(\tilde{Ϛ}\|\tilde{\sigma})
+S\bigl(E(\tilde{Ϛ}_1)\,\big\|\,E(\tilde{Ϛ}_2)\bigr) \;<\; S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
 $$</p>
 <p>whenever at least one of the two states carries a colour coherence. The model is the same idempotent-projection structure that the companion article on decoherence develops in the informational sector; there, the projection is onto the pointer basis selected by an environment, and here it is onto the colour singlets selected by the spectrum.</p>
 <h3 id="comparison-with-decoherence">Comparison with Decoherence</h3>
@@ -404,7 +404,7 @@ $$</p>
 <td>Charge rotation</td>
 </tr>
 <tr>
-<td>$S(\tilde{Ϛ}\|\tilde{\sigma})$</td>
+<td>$S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$</td>
 <td>Relative entropy; monotone under channels</td>
 </tr>
 <tr>
