@@ -75,7 +75,7 @@ $$
 p(i,j) = \mathrm{Tr}\!\left(\bigl(\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)}\bigr)\circ \tilde{Ϛ}\right),
 $$
 
-where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the trace pairing of the state with a **product of two idempotents**. The pattern is exactly the one used in Exercise: The CHSH Inequality and Tsirelson's Bound and Q4: the Born rule applied twice, with the joint probability being the tensor-product trace pairing of the state with the joint idempotent. The result is a **statistical correlation** between the two outcomes.
+where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the trace pairing of the state with a **product of two idempotents**. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product trace pairing of the state with the joint idempotent. The result is a **statistical correlation** between the two outcomes.
 
 **Classical non-separability: one idempotent, one unitary.** A bipartite state $\tilde{Ϛ}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
@@ -135,7 +135,7 @@ The framework reads this case as quantum. The paper's point that non-locality is
 
 ### Subset III: Non-separable mode functions without attached excitations
 
-A vector light beam with a non-separable structure between its transverse spatial mode and its polarization. The beam has a definite excitation (the electromagnetic wave), but the excitation is not attached to either partition — it can be assigned to either partition by a choice of measurement scheme. The mode functions are frames for the excitation, not excitations themselves.
+The case is a vector light beam with a non-separable structure between its transverse spatial mode and its polarization. The beam has a definite excitation (the electromagnetic wave), but the excitation is not attached to either partition — it can be assigned to either partition by a choice of measurement scheme. The mode functions are frames for the excitation, not excitations themselves.
 
 In the framework, the mode functions are **not** states of $\mathbb{M}_+$. A mode function is a frame, a basis vector, a degree of freedom; it is not an excitation, and it does not have a canonical sector assignment. A complex field configuration decomposes into a real part (in $\mathbb{M}_-$) and an imaginary part (in $\mathbb{M}_+$), but the mode function per se is a structural feature of the field, not a state of either sector.
 

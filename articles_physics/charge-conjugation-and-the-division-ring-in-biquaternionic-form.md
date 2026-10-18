@@ -52,7 +52,7 @@ the sign being that of $\Pi\bar{\Pi}$ — the product of $\Pi$ with its own conj
 
 The classification is a theorem of the Clifford-algebra literature and is transcribed here. Let $\mathbb{C}_n$ be a complex Clifford algebra with $n$ even, and let $\mathrm{Cl}_{n,m}\subset\mathbb{C}_n$, $n=p+q$, be a real subalgebra. Its **division ring** $K$ — the ring of scalars of its irreducible module — is $\mathbb{R}$ when $p-q\equiv 0,2 \pmod 8$ and $\mathbb{H}$ when $p-q\equiv 4,6\pmod 8$; the remaining classes give a sum of two such rings. The form of the charge-conjugation matrix $\Pi$ follows the division ring:
 
-| division ring $K$ | $n-m\bmod 8$ | matrix $\Pi$ | map $C$ |
+| division ring $K$ | $p-q\bmod 8$ | matrix $\Pi$ | map $C$ |
 |---|---|---|---|
 | $\mathbb{R}$ | $0,2$ | $\Pi\propto I$ | trivial (identity) |
 | $\mathbb{H}$ | $4,6$ | $\Pi$ a product of generators, $\Pi\bar{\Pi}=\pm I$ | particle–antiparticle interchange |
@@ -76,7 +76,7 @@ The independence of $C^{2}$ from the representation is the point of the division
 
 ## The Three Classes of Particles
 
-The trichotomy of the previous section is the algebraic form of the three classes of charge states.
+The trichotomy of the previous section is the algebraic form of the three classes of charge states, labelled by the charge symbol $Ϙ$.
 
 ### The Dictionary
 

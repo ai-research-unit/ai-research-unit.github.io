@@ -28,10 +28,10 @@ $$
 \vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t, \qquad \vec e_x \vec e_y = \vec e_z, \qquad \vec e_y \vec e_z = \vec e_x, \qquad \vec e_z \vec e_x = \vec e_y,
 $$
 
-and $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in *Conventions in the Biquaternion Universe*: quaternion conjugation ${}^{\natural}$ ($e_t \mapsto e_t$, $\vec e_k \mapsto -\vec e_k$), complex conjugation $\bar{\cdot}$ ($i \mapsto -i$), Hermitian conjugation ${}^{*} = ({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat = -{}^{*}$. Multiplication is the complex-linear extension of the quaternion product, with the scalar–vector form
+and $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in *Conventions in the Biquaternion Universe*: quaternion conjugation ${}^{\natural}$ ($e_t \mapsto e_t$, $\vec e_k \mapsto -\vec e_k$), complex conjugation $\bar{\cdot}$ ($i \mapsto -i$), Hermitian conjugation ${}^{*} = ({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat = -{}^{*}$. Multiplication is the complex-linear extension of the quaternion product. For $\tilde Q_1 = Q_{1t}e_t + \vec Q_1$ and $\tilde Q_2 = Q_{2t}e_t + \vec Q_2$, its scalar–vector form is
 
 $$
-\tilde{Q}\circ\tilde{Q}_4 = Q_tR_0 - (\vec Q,\vec R) + Q_t\vec R + R_0\vec Q + [\vec Q,\vec R].
+\tilde{Q}_1\circ\tilde{Q}_2 = Q_{1t}Q_{2t} - (\vec Q_1,\vec Q_2) + Q_{1t}\vec Q_2 + Q_{2t}\vec Q_1 + [\vec Q_1,\vec Q_2].
 $$
 
 ### The gamma side
@@ -269,7 +269,7 @@ matching $\vec e_x \vec e_y = \vec e_z$, $\vec e_y \vec e_z = \vec e_x$, $\vec e
 
 ### Explicit checks on independent pairs
 
-The claim is not verified on the case that suggested it. The following four general products use four different pairs of dictionary entries, including both spacelike and timelike bivectors, and each is confirmed by direct multiplication of the representation matrices:
+The claim is not verified only on the case that suggested it. The following four general products use four different pairs of dictionary entries, including both spacelike and timelike bivectors, and each is confirmed by direct multiplication of the representation matrices:
 
 1. **Two spacelike bivectors.** $(\gamma^2\gamma^3)(\gamma^3\gamma^1) = \gamma^1\gamma^2$; the biquaternion side is $\vec e_x \vec e_y = \vec e_z$, and $\mathsf{M}_4(\vec e_z) = \gamma^1\gamma^2$.
 2. **Two timelike bivectors.** $(\gamma^0\gamma^1)(\gamma^0\gamma^2) = -(\gamma^0)^2\gamma^1\gamma^2 = -\gamma^1\gamma^2 = -\vec e_z$; the biquaternion side is $(i\vec e_x)(i\vec e_y) = i^2\vec e_x \vec e_y = -\vec e_z$, and $\mathsf{M}_4(-\vec e_z) = -\gamma^1\gamma^2$.
@@ -599,7 +599,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $\gamma^\mu$ | Gamma matrices, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -I_4$ |
 | $\mathsf{M}_4$ | Isomorphism $\mathbb{B} \to \mathrm{Cl}_{1,3}^{+}$ |
-| $\Phi_C$ | Its $\mathbb{C}$-linear extension |
+| $\Phi_{\mathbb{C}}$ | Its $\mathbb{C}$-linear extension |
 | $\gamma_5 = i_{\mathrm{Cl}}\omega$ | Chirality operator |
 | $\tilde\Pi_{L,R} = \tfrac{1}{2}(1 \pm \gamma_5)$ | Chirality projectors |
 | $\sigma^{\mu\nu} = \tfrac{1}{4}[\gamma^\mu,\gamma^\nu]$ | Lorentz generators |

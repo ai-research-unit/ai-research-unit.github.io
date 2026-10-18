@@ -47,7 +47,7 @@ $$
 e_t\mapsto I_2,\qquad \vec e_x\mapsto -i\sigma_1,\qquad \vec e_y\mapsto -i\sigma_2,\qquad \vec e_z\mapsto -i\sigma_3,
 $$
 
-with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Equivalently, $\sigma_\mu$ is the image of $i\vec e_\mu$. Under this isomorphism the single-qubit idempotent $\tfrac{1}{2}(e_t+i\vec u_\rho)$ corresponds to the spin-up projector along the unit vector $\vec u_\rho$. We shall use this correspondence to identify the four Bell idempotents with the standard Bell states.
+with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. Equivalently, $\sigma_\mu$ is the image of $i\vec e_\mu$. Under this isomorphism the single-qubit idempotent $\tfrac{1}{2}(e_t+i\vec u)$ corresponds to the spin-up projector along the unit vector $\vec u$. We shall use this correspondence to identify the four Bell idempotents with the standard Bell states.
 
 The trace gives a symmetric bilinear form $\mathrm{Tr}(XY)$ on $\mathbb{B}\otimes\mathbb{B}$, and the four Bell idempotents below will be orthonormal with respect to it. It is therefore natural to ask for an **idempotent basis**: a family of idempotents that play, for the algebra and its module, the role that an orthonormal basis plays for a Hilbert space.
 
@@ -57,7 +57,7 @@ $$
 E_a^2=E_a,\qquad E_aE_b=\delta_{ab}E_a,\qquad \sum_{a=1}^{r}E_a=e_t\otimes e_t,
 $$
 
-and each $E_a$ is Hermitian, $E_a^\dagger=E_a$, and minimal, in the sense that it cannot be written as the sum of two nonzero orthogonal idempotents. In $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, a Hermitian idempotent is minimal if and only if its trace is one.
+and each $E_a$ is Hermitian, $E_a^{*}=E_a$, and minimal, in the sense that it cannot be written as the sum of two nonzero orthogonal idempotents. In $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, a Hermitian idempotent is minimal if and only if its trace is one.
 
 Two comments make the name precise.
 
@@ -89,13 +89,13 @@ This is a **vector-space** identification only: the algebra product on $\mathbb{
 | $\lvert\Psi^+\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle+\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(\vec e_x+\vec e_y)$ |
 | $\lvert\Psi^-\rangle$ | $\tfrac{1}{\sqrt2}(\lvert01\rangle-\lvert10\rangle)$ | $\tfrac{1}{\sqrt2}(\vec e_x-\vec e_y)$ |
 
-At the level of state vectors the four Bell states are therefore the four combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the index pairs $\{0,3\}$ and $\{1,2\}$. This is the form in which they arise from the division of one particle in the mereological interpretation of the companion article *Entangled Subsystems in the Biquaternion Framework*, where the state is created by a split and the split is a division in the sense of *Mereology and Collective Set Theory*.
+At the level of state vectors the four Bell states are therefore the four combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the unit pairs $\{e_t,e_z\}$ and $\{e_x,e_y\}$. This is the form in which they arise from the division of one particle in the mereological interpretation of the companion article *Entangled Subsystems in the Biquaternion Framework*, where the state is created by a split and the split is a division in the sense of *Mereology and Collective Set Theory*.
 
 Two cautions follow from the identification, and both are used by the literature that motivates this section.
 
 **The vector is not the state.** The combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ are elements of $\mathbb{B}$ and are in general neither Hermitian nor idempotent; they are not elements of $\mathbb{M}_+$ and they are not states in the framework's sense. The state *object* is the idempotent $\tilde\Pi_\epsilon$ of $\mathbb{B}\otimes\mathbb{B}$ whose module-theoretic image is the line spanned by the corresponding vector. The passage is from a state vector in the four-dimensional module to a rank-one idempotent in the sixteen-dimensional algebra, and the two must not be identified. The framework's convention, fixed by the companion articles, is that a pure state **is** the idempotent; the vector is the module element on which it acts. The two descriptions agree on every prediction, because both are interpretations of the same tensor-product state, but only the second is a state in the algebra.
 
-**A single quaternion is not an entangled state.** The temptation created by the identification $\mathbb{C}^4\cong\mathbb{B}$ is to take one element of $\mathbb{B}$ and read it as an entangled two-qubit state. This fails on the standard test. Write an element of $\mathbb{B}$ as $Q=Q_t+\sum_\mu Q_\mu \vec e_\mu$ and let $\mathbf c=(c_1,c_2,c_3,c_4)$ be its components in the basis order above. The corresponding two-qubit vector is a product state exactly when
+**A single quaternion is not an entangled state.** The temptation created by the identification $\mathbb{C}^4\cong\mathbb{B}$ is to take one element of $\mathbb{B}$ and read it as an entangled two-qubit state. This fails on the standard test. Write an element of $\mathbb{B}$ as $Q=Q_t e_t+\sum_\mu Q_\mu \vec e_\mu$ and let $\mathbf c=(c_1,c_2,c_3,c_4)$ be its components in the basis order above. The corresponding two-qubit vector is a product state exactly when
 
 $$
 c_1c_4-c_2c_3=0 ,
@@ -141,7 +141,7 @@ $$
 (\vec e_\mu\otimes \vec e_\mu)^{*}=(-\vec e_\mu)\otimes(-\vec e_\mu)=\vec e_\mu\otimes \vec e_\mu .
 $$
 
-The tensor terms are therefore individually Hermitian, the coefficients $\epsilon_\mu$ and $\tfrac14$ are real, and $\tilde\Pi_\epsilon^\dagger=\tilde\Pi_\epsilon$. Each $\tilde\Pi_\epsilon$ is a legitimate state, not merely an algebraic idempotent.
+The tensor terms are therefore individually Hermitian, the coefficients $\epsilon_\mu$ and $\tfrac14$ are real, and $\tilde\Pi_\epsilon^{*}=\tilde\Pi_\epsilon$. Each $\tilde\Pi_\epsilon$ is a legitimate state, not merely an algebraic idempotent.
 
 **The $\tilde\Pi_\epsilon$ lie in the physical subspace.** The Hermitian subspace $\mathbb{M}_+$ has real basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$. Hence
 
@@ -173,7 +173,7 @@ $$
 
 They have three elementary properties, each a direct computation.
 
-**Hermiticity.** As in the previous section, $(\vec e_\mu\otimes \vec e_\mu)^{*}=\vec e_\mu\otimes \vec e_\mu$, so $S_1^\dagger=S_1$ and $S_3^\dagger=S_3$.
+**Hermiticity.** As in the previous section, $(\vec e_\mu\otimes \vec e_\mu)^{*}=\vec e_\mu\otimes \vec e_\mu$, so $S_1^{*}=S_1$ and $S_3^{*}=S_3$.
 
 **Involution.** Using $(\vec e_\mu\otimes \vec e_\mu)^2=\vec e_\mu^2\otimes \vec e_\mu^2=(-e_t)\otimes(-e_t)=e_t\otimes e_t$, we get
 
@@ -201,7 +201,7 @@ $$
 =\tfrac{1}{4}\left(e_t\otimes e_t+s_1S_1+s_3S_3+s_1s_3\,S_1S_3\right)
 $$
 
-is the joint spectral projector onto the common eigenspace with eigenvalues $(s_1,s_3)\in\{\pm1\}^2$. Each factor $\tfrac12(e_t\otimes e_t+s_\muS_\mu)$ is idempotent and Hermitian because $S_\mu$ is an involution, and the two factors commute; hence the product is idempotent and Hermitian as well. Summing over the four sign pairs,
+is the joint spectral projector onto the common eigenspace with eigenvalues $(s_1,s_3)\in\{\pm1\}^2$. Each factor $\tfrac12(e_t\otimes e_t+s_\mu S_\mu)$ is idempotent and Hermitian because $S_\mu$ is an involution, and the two factors commute; hence the product is idempotent and Hermitian as well. Summing over the four sign pairs,
 
 $$
 \sum_{s_1,s_3=\pm1}\tilde\Pi_{(s_1,s_3)}=e_t\otimes e_t .
@@ -232,10 +232,10 @@ Together with Hermiticity and the fact that the Peirce components $\tilde\Pi_\ep
 
 The orthogonality and completeness relations have a combinatorial shadow that is worth recording, because it explains *why* the four sign patterns are the right ones.
 
-Adjoin $\epsilon_0:=1$ to each triple and form the four vectors
+Adjoin $\epsilon_t:=1$ to each triple, write $(\epsilon_x,\epsilon_y,\epsilon_z)=(\epsilon_1,\epsilon_2,\epsilon_3)$, and form the four vectors
 
 $$
-v_\epsilon=(1,\epsilon_1,\epsilon_2,\epsilon_3)\in\{\pm1\}^4,\qquad \epsilon_1\epsilon_2\epsilon_3=+1 .
+v_\epsilon=(\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)\in\{\pm1\}^4,\qquad \epsilon_1\epsilon_2\epsilon_3=+1 .
 $$
 
 These are the rows of a $4\times4$ sign matrix $H$, whose row for the singlet is $(1,1,1,1)$. Direct evaluation gives
@@ -307,7 +307,7 @@ $$
 the Bell idempotents are precisely those **trace-one idempotents** whose expansion contains only the **diagonal** terms $e_\mu\otimes e_\mu$:
 
 $$
-\tilde\Pi_\epsilon=\tfrac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\epsilon_\mu\,e_\mu\otimes e_\mu,\qquad \epsilon_0=1 .
+\tilde\Pi_\epsilon=\tfrac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\epsilon_\mu\,e_\mu\otimes e_\mu,\qquad \epsilon_t=1 .
 $$
 
 There are no cross terms $e_\mu\otimes e_\nu$ with $\mu\neq\nu$. This is the "particular tensor structure" of the Bell states: the two tensor factors carry matched indices throughout, so the element is a sum of correlated pairs rather than of arbitrary products. In particular, $\tilde\Pi_\epsilon$ is invariant under the tensor flip $\tau(e_\mu\otimes e_\nu)=e_\nu\otimes e_\mu$.
@@ -351,7 +351,7 @@ $$
 
 The local action of the quaternion group therefore organises the Bell basis into a single orbit, while the global sign pattern $\epsilon$ labels the members.
 
-A final observation is that the four Bell idempotents are **locally indistinguishable**. Since every one of them has the same partial trace $\tfrac{1}{2}e_t$ on each factor, no measurement on a single qubit can reveal which Bell state was prepared. The entire distinction between them resides in the correlated, tensor-product terms $\vec e_\mu\otimes \vec e_\mu$ — that is, in the signs $\epsilon$, which are precisely the stabiliser eigenvalues and the diagonal correlation entries. The local data are constant across the basis; the correlation data are what vary.
+A final observation is that the four Bell idempotents are **locally indistinguishable**. Since every one of them has the same partial trace $\tfrac{1}{2}e_t$ on each factor, no measurement on a single qubit can reveal which Bell state was prepared. The entire distinction between them resides in the correlated, tensor-product terms $\vec e_\mu\otimes \vec e_\mu$ — that is, in the signs $\epsilon$, which determine the stabiliser eigenvalues and the diagonal correlation entries. The local data are constant across the basis; the correlation data are what vary.
 
 ## A Claimed Enumeration of the Maximally Entangled States
 
@@ -369,7 +369,7 @@ $$
 \lvert c_1c_4-c_2c_3\rvert=\tfrac{1}{2}.
 $$
 
-Obojska (*Journal of Physics Communications* **4** (2020) 055018), working in the algebra $\mathbb{B}$ with the basis written $1,i,j,k$ and using the division relation of *Mereology and Collective Set Theory*, reads a two-qubit state as an element of $\mathbb{C}^4\cong\mathbb{B}$ and restricts the quotients of its amplitudes to the set $\{-i,i,-1\}$. Under this restriction she obtains twelve **patterns** of pure maximally entangled states — eight of a simple form, four of a general form — and states as **Corollary 1** that "in the algebra of biquaternions there are no other maximally entangled states than those described by [the twelve patterns]".
+Obojska (*Journal of Physics Communications* **4** (2020) 055018), working in the algebra $\mathbb{B}$ with the basis written $1,i,j,k$ and using the division relation of *Mereology and Collective Set Theory*, reads a two-qubit state as an element of $\mathbb{C}^4\cong\mathbb{B}$ and restricts the quotients of its amplitudes to the set $\{-i,i,-1\}$. Under this restriction she obtains twelve **patterns** of pure maximally entangled states — eight of a simple form, four of a general form — and asserts as **Corollary 1** that "in the algebra of biquaternions there are no other maximally entangled states than those described by [the twelve patterns]".
 
 **The premise already implies a continuum.** The proof of the corollary begins from the concurrence equation above, whose solution set is the entire continuum of maximally entangled states. The clearest family of solutions is
 
@@ -379,7 +379,7 @@ $$
 
 for which $c_1=\tfrac{1}{\sqrt2}$, $c_4=\tfrac{1}{\sqrt2}\exp(i\phi)$, $c_2=c_3=0$, so $c_1c_4=\tfrac12 \exp(i\phi)$, $\lvert c_1c_4-c_2c_3\rvert=\tfrac12$, and $C=1$ for every $\phi$. Every member of the family is maximally entangled. The source's own first case — $\lvert c_1\rvert=\lvert c_4\rvert$, $c_2=c_3=0$ — is exactly this family, so the free relative phase $\phi$ is already present in the source's case analysis.
 
-**What the patterns select.** The twelve written patterns do not enumerate this family. They are obtained from the additional assumption — not part of the concurrence equation — that the quotient of the two amplitudes of the division lies in $\{-i,i,-1\}$. In every one of the twelve forms the relative phase of the two nonzero amplitudes is thereby fixed to one of the four values $0,\pm\pi/2,\pi$. A member of the family with $\phi=\pi/4$, say
+**What the patterns select.** The twelve written patterns do not enumerate this family. They are obtained from the additional assumption — not part of the concurrence equation — that the quotient of the two amplitudes in the division lies in $\{-i,i,-1\}$. In every one of the twelve forms the relative phase of the two nonzero amplitudes is thereby fixed to one of the four values $0,\pm\pi/2,\pi$. A member of the family with $\phi=\pi/4$, say
 
 $$
 \lvert\psi_{\pi/4}\rangle=\tfrac{1}{\sqrt2}\left(\lvert00\rangle+\exp(i\pi/4)\lvert11\rangle\right),
@@ -399,7 +399,7 @@ Because $\tilde\Pi_\epsilon$ is a sum of diagonal tensor terms, the partial trac
 
 $$
 \mathrm{Tr}_2(\tilde\Pi_\epsilon)
-=\tfrac{1}{4}\left(\mathrm{Tr}_\mathbb{B}(e_t)\,e_t+\sum_{\mu=1}^{3}\epsilon_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu)\,\vec e_\mu\right)
+=\tfrac{1}{4}\left(\mathrm{Tr}_\mathbb{B}(e_t)\,e_t+\sum_{\mu\in\{x,y,z\}}\epsilon_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu)\,\vec e_\mu\right)
 =\tfrac{1}{4}\left(2\,e_t+0\right)
 =\tfrac{1}{2}\,e_t .
 $$
@@ -410,18 +410,18 @@ $$
 \mathrm{Tr}_1(\tilde\Pi_\epsilon)=\tfrac{1}{2}\,e_t .
 $$
 
-The reason is exactly the one identified in the entangled-subsystems article: the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \neq 0$ are traceless in each factor, so the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
+The reason is exactly the one identified in the entangled-subsystems article: the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \neq t$ are traceless in each factor, so the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
 
-The reduced state $\rho_1=\rho_2=\tfrac{1}{2}e_t$ is the maximally mixed qubit state, the centre of the Bloch ball. Its purity and entropy are the standard ones:
+The reduced state $\tilde{Ϛ}_1=\tilde{Ϛ}_2=\tfrac{1}{2}e_t$ is the maximally mixed qubit state, the centre of the Bloch ball. Its purity and entropy are the standard ones:
 
 $$
-\mathrm{Tr}(\rho_1^2)=\mathrm{Tr}\!\left(\tfrac{1}{4}e_t\right)=\tfrac{1}{4}\cdot2=\tfrac{1}{2},\qquad
-S(\rho_1)=-\tfrac12\log\tfrac12-\tfrac12\log\tfrac12=\log 2 .
+\mathrm{Tr}(\tilde{Ϛ}_1^2)=\mathrm{Tr}\!\left(\tfrac{1}{4}e_t\right)=\tfrac{1}{4}\cdot2=\tfrac{1}{2},\qquad
+S(\tilde{Ϛ}_1)=-\tfrac12\log\tfrac12-\tfrac12\log\tfrac12=\log 2 .
 $$
 
-So each Bell idempotent is maximally entangled in the precise sense of the previous section: its partial trace is maximal mixed, its reduced purity is $\tfrac12$ (the minimum for a qubit), and its reduced entropy is $\log 2$ (the maximum). The computation is the same for all four states and reproduces, for the singlet, the result $\rho_1=\tfrac12e_t$ of the entangled-subsystems article and of *Exercise: The Reduced State of an Entangled Subsystem*.
+So each Bell idempotent is maximally entangled in the precise sense of the previous section: its partial trace is maximally mixed, its reduced purity is $\tfrac12$ (the minimum for a qubit), and its reduced entropy is $\log 2$ (the maximum). The computation is the same for all four states and reproduces, for the singlet, the result $\tilde{Ϛ}_1=\tfrac12e_t$ of the entangled-subsystems article and of *Exercise: The Reduced State of an Entangled Subsystem*.
 
-Combined with the previous section, the picture is complete. The four Bell idempotents form an idempotent basis of $\mathbb{B}\otimes\mathbb{B}$; they are the joint eigenbasis of the stabiliser operators $S_1$ and $S_3$; they are the only trace-one diagonal-form idempotents; and their partial traces are all the maximally mixed state $\tfrac{1}{2}e_t$. The Bell basis is thus a canonical object of the tensor-product algebra, selected simultaneously by the tensor structure, by the stabiliser spectrum, and by maximal entanglement.
+Combined with the previous section, the picture is complete. The four Bell idempotents form an idempotent basis of $\mathbb{B}\otimes\mathbb{B}$; they are the joint eigenbasis of the stabiliser operators $S_1$ and $S_3$; they are the only trace-one diagonal-form idempotents; and their partial traces are all the maximally mixed state $\tfrac{1}{2}e_t$. The Bell basis is thus a canonical object of the tensor-product algebra, singled out by the tensor structure and the stabiliser spectrum, and maximally entangled like every pure state in the surrounding continuum.
 
 ## A Remark on the Status of the Tensor Product
 
@@ -431,7 +431,7 @@ The entangled-subsystems article uses the tensor product directly: it defines th
 
 At the same time, the same quantum-physics article lists, among its open questions, the following: "The extension to $n$ qubits requires the tensor product $\mathbb{B}^{\otimes_\mathbb{C}n}$ ... Is the tensor product natural in the biquaternion framework, or does it require additional structure?" The introduction article poses the same point as an open question about the extension to many qubits.
 
-These two positions are not reconciled here. The present article uses the tensor product exactly as the entangled-subsystems article does, and every statement above is a statement about the algebra $\mathbb{B}\otimes\mathbb{B}$ once that algebra is granted. The Bell basis is canonical **relative to** the tensor-product structure: given $\mathbb{B}\otimes\mathbb{B}$ with its trace, the four Bell idempotents are singled out by the stabiliser operators, by the diagonal tensor structure, and by maximal mixedness, with no further choices.
+These two positions are not reconciled here. The present article uses the tensor product exactly as the entangled-subsystems article does, and every statement above is a statement about the algebra $\mathbb{B}\otimes\mathbb{B}$ once that algebra is granted. The Bell basis is canonical **relative to** the tensor-product structure: given $\mathbb{B}\otimes\mathbb{B}$ with its trace, the four Bell idempotents are singled out by the stabiliser operators and the diagonal tensor structure, with no further choices.
 
 Whether the tensor-product algebra is itself canonical for the biquaternion framework — whether, that is, the two-qubit algebra is forced by the structure of $\mathbb{B}$, or whether it is one natural construction among several — is the open question. If the tensor product were to require additional structure, then the Bell basis would inherit that contingency: it would be canonical within the tensor-product description, but the passage from one qubit to two would carry an assumption that the framework has not yet justified. This article takes no position on that question; it records it, because the Bell basis is a construction in the tensor-product algebra, and the status of that algebra is exactly what remains open.
 
@@ -452,7 +452,7 @@ The article established the following structure.
 - **Stabiliser eigenbasis.** The commuting Hermitian involutions $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$ (corresponding to $\sigma_1\otimes\sigma_1$ and $\sigma_3\otimes\sigma_3$) form a complete set of commuting observables whose joint spectrum is non-degenerate; the $\tilde\Pi_\epsilon$ are its joint eigen-idempotents, with eigenvalues $(-\epsilon_1,-\epsilon_3)$. Each $\tilde\Pi_\epsilon$ is conjugation-invariant under $S_1$ and $S_3$, and its stabiliser group is the Klein four-group generated by the sign-corrected $S_1$ and $S_3$.
 - **Diagonal tensor structure.** The Bell idempotents are exactly the idempotents of diagonal tensor form $\tfrac14\sum_\mu\epsilon_\mu\,e_\mu\otimes e_\mu$. There are exactly four of them, and the sign matrix whose rows are $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ is Hadamard. A generic maximally entangled state is a continuum and is not diagonal; the Bell basis is the discrete, canonical family selected by the diagonal structure.
 - **Maximal mixedness.** The partial trace of every Bell idempotent is the maximally mixed state, $\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$, of purity $\tfrac12$ and entropy $\log 2$. The four states are locally indistinguishable; their distinction resides entirely in the correlated tensor terms, i.e. in the signs $\epsilon$.
-- **State vector versus state operator.** The Bell states also have a vector form in $\mathbb{C}^4\cong\mathbb{B}$, where they are the combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the index pairs $\{0,3\}$ and $\{1,2\}$. The vector is not the state: it is an element of the four-dimensional module, while the state object is the rank-one idempotent of the sixteen-dimensional algebra. In particular a single quaternion, read as a two-qubit vector, is a product state — $Q=\tfrac12(e_t-\vec e_x-\vec e_y+\vec e_z)$ has concurrence zero — and never carries entanglement.
+- **State vector versus state operator.** The Bell states also have a vector form in $\mathbb{C}^4\cong\mathbb{B}$, where they are the combinations $\tfrac{1}{\sqrt2}(e_\mu\pm e_\nu)$ for the unit pairs $\{e_t,e_z\}$ and $\{e_x,e_y\}$. The vector is not the state: it is an element of the four-dimensional module, while the state object is the rank-one idempotent of the sixteen-dimensional algebra. In particular a single quaternion, read as a two-qubit vector, is a product state — $Q=\tfrac12(e_t-\vec e_x-\vec e_y+\vec e_z)$ has concurrence zero — and never carries entanglement.
 - **Maximal entanglement is a continuum, not a finite list.** A claimed enumeration of twelve patterns of maximally entangled states, obtained under an extra quotient rule, fails its exhaustiveness corollary: the family $\lvert\psi_\phi\rangle=\tfrac{1}{\sqrt2}(\lvert00\rangle+\exp(i\phi)\lvert11\rangle)$ is maximally entangled for every $\phi$, while the twelve forms fix the relative phase to $\{0,\pm\pi/2,\pi\}$. The maximally entangled rays have real dimension three, so no finite union of one-parameter families covers them; any discrete family among them is selected by additional structure.
 
 All of this is standard finite-dimensional algebra, expressed in the conventions of the companion articles. The construction presupposes the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$; whether that algebra is canonical for the framework is an open question inherited from the companion articles and is left unresolved.

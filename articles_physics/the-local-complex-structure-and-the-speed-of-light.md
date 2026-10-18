@@ -46,21 +46,25 @@ A general element $i q_te_t+\vec q$ of $\mathbb{M}_-$ is sent to $-q_te_t+i\vec 
 
 ### The Minkowski metric admits no compatible complex structure
 
-The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ satisfied both $J^2=-I$ and the compatibility
+The second obstruction is independent of the algebra and concerns any real complex structure on the material sector. Suppose a real-linear $J$ on $\mathbb{M}_-$ satisfied both $J^2=-I$ and the compatibility
 $$
-\langle JX,JY\rangle_{\natural}=\langle\tilde{Q},\tilde Q_3\rangle_{\natural} \qquad \text{for all } \tilde{Q},\tilde Q_3,
+\langle J\tilde{Q},J\tilde Q_3\rangle_{\natural}=\langle\tilde{Q},\tilde Q_3\rangle_{\natural} \qquad \text{for all } \tilde{Q},\tilde Q_3,
 $$
-which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde Q_3=JX$ and using $J^2=-I$ and the symmetry of $\langle\cdot,\cdot\rangle_{\natural}$,
+which is the condition that the complex structure be an isometry of the biquaternion norm. Two elementary identities follow. Taking $\tilde Q_3=J\tilde{Q}$ and using $J^2=-I$ and the symmetry of $\langle\cdot,\cdot\rangle_{\natural}$,
 $$
-\langle JX,-\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},JX\rangle_{\natural} \;\Longrightarrow\; -\langle\tilde{Q},JX\rangle_{\natural} \;\Longrightarrow\; \langle\tilde{Q},JX\rangle_{\natural}=0 ,
+\langle J\tilde{Q},J^2\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},J\tilde{Q}\rangle_{\natural}
+\;\Longrightarrow\;
+-\langle\tilde{Q},J\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},J\tilde{Q}\rangle_{\natural}
+\;\Longrightarrow\;
+\langle\tilde{Q},J\tilde{Q}\rangle_{\natural}=0 ,
 $$
 so a vector and its image under $J$ are orthogonal. Taking $\tilde Q_3=\tilde{Q}$,
 $$
-\langle JX,JX\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
+\langle J\tilde{Q},J\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
-Hence on the two-dimensional plane $\mathrm{span}\{X,JX\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde Q_3$ orthogonal to the plane and $Z$ in the plane,
+Hence on the two-dimensional plane $\mathrm{span}\{\tilde{Q},J\tilde{Q}\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde Q_3$ orthogonal to the plane and $Z$ in the plane,
 $$
-\langle JY,Z\rangle_{\natural}=\langle J^2\tilde Q_3,JZ\rangle_{\natural}=-\langle\tilde Q_3,JZ\rangle_{\natural}=0,
+\langle J\tilde Q_3,Z\rangle_{\natural}=\langle J^2\tilde Q_3,JZ\rangle_{\natural}=-\langle\tilde Q_3,JZ\rangle_{\natural}=0,
 $$
 using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
 
@@ -163,7 +167,7 @@ Four boundaries should be stated, so that the local claim is not read as a globa
 
 The two senses of complex structure read as two physical claims. Globally, the complex structure of the algebra is fixed and no physics follows from it, which is the article's negative interpretation. Locally, the structure is the medium's: $c$ is the scale of the embedding, a change of the local structure moves the interval and the composition and leaves the probability form and the zero-divisor cone, and the cone of the algebra is therefore the invariant against which the physical wave cone is compared (*Conventions in the Biquaternion Universe*, *Electromagnetism in Media — The Local Complex Structure at Work*).
 
-The medium interpretation extends in three directions. First, $\log\lvert N\rvert$ is read as a **conformal (Weyl) factor**: the norm is a scale and its logarithm a potential for a dilation, so the framework's scale is a conformal weight and its massless limit a conformal limit — the interpretation is the shape of *Conformal Invariance and the Massless Limit in Biquaternionic Form*, cited. Second, the local complex structure $c=1/\sqrt{\epsilon\mu}$ is read as an **emergent metric**, the algebraic form of the analogue-gravity programme in which the wave cone is a medium property and not a fixed background. Third, the construction is read as a **bundle of algebras**: the biquaternion algebra is the typical fibre, the local complex structure a section of the frame bundle, and a medium a connection on it — the interpretation the series' *Curved Spacetime and the Biquaternion Framework* poses as a question and does not claim.
+The medium interpretation extends in three directions. First, $\log\lvert\langle\tilde{Q}\rangle_{\natural}\rvert$ is read as a **conformal (Weyl) factor**: the norm is a scale and its logarithm a potential for a dilation, so the framework's scale is a conformal weight and its massless limit a conformal limit — the interpretation is the shape of *Conformal Invariance and the Massless Limit in Biquaternionic Form*, cited. Second, the local complex structure $c=1/\sqrt{\epsilon\mu}$ is read as an **emergent metric**, the algebraic form of the analogue-gravity programme in which the wave cone is a medium property and not a fixed background. Third, the construction is read as a **bundle of algebras**: the biquaternion algebra is the typical fibre, the local complex structure a section of the frame bundle, and a medium a connection on it — the interpretation the series' *Curved Spacetime and the Biquaternion Framework* poses as a question and does not claim.
 
 ## Summary
 
@@ -187,7 +191,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian (informational), anti-Hermitian (material) subspaces |
 | $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Sector decomposition; $i\mathbb{M}_-=\mathbb{M}_+$ |
-| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $N=0$ |
+| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; zero divisors where $\langle\tilde{Q}\rangle_{\natural}=0$ |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |

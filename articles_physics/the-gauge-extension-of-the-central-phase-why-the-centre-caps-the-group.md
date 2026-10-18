@@ -19,7 +19,7 @@ carries is *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$
 of the Framework: Which Physics Hangs on Which Product*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the centre is
-$Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\{z e_t\}$, of one complex (two real) dimensions; the unitary slice is
+$Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\{z e_t\}$, of one complex dimension (two real dimensions); the unitary slice is
 $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$.
 
 ## The Central Phase and the Gauge Principle
@@ -46,7 +46,7 @@ non-trivially, and the framework's matter lives in modules on which a central ph
 
 ## Why the Centre Caps the Group
 
-The obstruction stated, the reason the gauge group stays at $\mathrm{U}(2)$ follows. The intrinsic gauge group of the
+With the obstruction stated, the reason the gauge group stays at $\mathrm{U}(2)$ follows. The intrinsic gauge group of the
 algebra is the unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
 $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, and the **abelian factor is exactly the central phase**. The structure of
 the group is the structure of the centre:
@@ -102,7 +102,7 @@ question is being asked.
 - It does not claim that the ceiling is **permanent**. The ceiling is a statement about $\mathbb{B}$; the
   enlarged carriers of the ceiling article pass it, and the price is stated there and not repeated here.
 - It does not claim that the framework's $\mathrm{U}(1)$ is the electromagnetic one. The identification of the
-  central phase with hypercharge, with electric charge, or with a global phase of the state module is a
+  central phase with hypercharge, with electric charge, or with a global phase of the state module is an
   interpretation of the framework and not a consequence of the algebra, and no experiment is proposed here.
 
 ## Physical Readings

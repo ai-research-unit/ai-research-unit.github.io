@@ -163,7 +163,7 @@ Each diagonal entry is $\pm 1$, and the product $T_{11}T_{22}T_{33}$ equals $-1$
 
 ### Step 1: The four Bell idempotents
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $\tilde\Pi(\vec u_4) = \tfrac{1}{2}(e_t + i\vec u_4)$. A two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+ \subset \mathbb{B}\otimes\mathbb{B}$.
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $\tilde\Pi(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$. A two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+ \subset \mathbb{B}\otimes\mathbb{B}$.
 
 The four Bell states correspond to the four **Bell idempotents**
 
@@ -187,18 +187,18 @@ $$
 \tilde\Pi_\epsilon^2 = \frac{1}{16}\sum_{m,m'\in\{t,x,y,z\}}\epsilon_m\epsilon_{m'}\,(e_m e_{m'})\otimes(e_m e_{m'}),
 $$
 
-with $\epsilon_0 \equiv 1$. We group the sixteen pairs $(m,m')$ into three classes.
+with $\epsilon_t \equiv 1$. We group the sixteen pairs $(m,m')$ into three classes.
 
 **Diagonal pairs $m = m'$.** For $m = 0$, $e_t e_t = e_t$; for $m = 1, 2, 3$, $e_m e_m = -e_t$. In all four cases the tensor product $(e_m e_m)\otimes(e_m e_m)$ equals $e_t\otimes e_t$, with coefficient $\epsilon_m^2 = 1$. Contribution: $4\,e_t\otimes e_t$.
 
-**Off-diagonal pairs involving $e_t$.** The pairs $(0,j)$ and $(j,0)$ with $j \in \{1,2,3\}$ both give $\vec e_j\otimes \vec e_j$, with coefficient $\epsilon_j$. Contribution: $2\epsilon_j\,\vec e_j\otimes \vec e_j$ for each $j$.
+**Off-diagonal pairs involving $e_t$.** The pairs $(t,j)$ and $(j,t)$ with $j \in \{x,y,z\}$ both give $\vec e_j\otimes \vec e_j$, with coefficient $\epsilon_j$. Contribution: $2\epsilon_j\,\vec e_j\otimes \vec e_j$ for each $j$.
 
-**Off-diagonal pairs among $\{1,2,3\}$.** For $j \neq k$ in $\{1,2,3\}$, let $l$ be the remaining index. Then $\vec e_j \vec e_k = \epsilon_{jkl}\vec e_l$ and $\vec e_k \vec e_j = -\epsilon_{jkl}\vec e_l$, and the two tensor products are both $\vec e_l\otimes \vec e_l$. The coefficients $\epsilon_j\epsilon_k$ and $\epsilon_k\epsilon_j$ are equal. Contribution: $2\epsilon_j\epsilon_k\,\vec e_l\otimes \vec e_l$.
+**Off-diagonal pairs among $\{x,y,z\}$.** For $j \neq k$ in $\{x,y,z\}$, let $l$ be the remaining index. Then $\vec e_j \vec e_k = \epsilon_{jkl}\vec e_l$ and $\vec e_k \vec e_j = -\epsilon_{jkl}\vec e_l$, and the two tensor products are both $\vec e_l\otimes \vec e_l$. The coefficients $\epsilon_j\epsilon_k$ and $\epsilon_k\epsilon_j$ are equal. Contribution: $2\epsilon_j\epsilon_k\,\vec e_l\otimes \vec e_l$.
 
-Collecting, the coefficient of $\vec e_l\otimes \vec e_l$ in $16\,\tilde\Pi_\epsilon^2$ is $2\epsilon_l + 2\epsilon_j\epsilon_k$, where $\{j,k,l\} = \{1,2,3\}$. Since
+Collecting, the coefficient of $\vec e_l\otimes \vec e_l$ in $16\,\tilde\Pi_\epsilon^2$ is $2\epsilon_l + 2\epsilon_j\epsilon_k$, where $\{j,k,l\} = \{x,y,z\}$. Since
 
 $$
-16\,\tilde\Pi_\epsilon = 4\,e_t\otimes e_t + 4\sum_{l=1}^{3}\epsilon_l\,\vec e_l\otimes \vec e_l,
+16\,\tilde\Pi_\epsilon = 4\,e_t\otimes e_t + 4\sum_{l\in\{x,y,z\}}\epsilon_l\,\vec e_l\otimes \vec e_l,
 $$
 
 the requirement $\tilde\Pi_\epsilon^2 = \tilde\Pi_\epsilon$ reduces to
@@ -215,7 +215,7 @@ $$
 \mathrm{Tr}(\tilde\Pi_\epsilon) = \frac{1}{4}\sum_{j\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(e_j)^2 = \frac{1}{4}\cdot 4 = 1,
 $$
 
-because $\mathrm{Tr}_\mathbb{B}(e_t) = 2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_j) = 0$ for $j = 1,2,3$.
+because $\mathrm{Tr}_\mathbb{B}(e_t) = 2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_j) = 0$ for $j \in \{x,y,z\}$.
 
 ### Step 2: The correlation observable
 
@@ -228,7 +228,7 @@ $$
 where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_k b_k \vec e_k$ are pure real quaternions. The expectation is given by the tensor-product trace formula:
 
 $$
-E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon \circ \tilde{H}_{ab}\right).
+E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{H}_{ab}\right).
 $$
 
 ### Step 3: Computing the trace for each Bell state
@@ -236,20 +236,20 @@ $$
 We compute the trace term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{H}_{ab}$,
 
 $$
-\tilde\Pi_\epsilon \circ \tilde{H}_{ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
+\tilde\Pi_\epsilon\tilde{H}_{ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
 $$
 
-with $\epsilon_0 \equiv 1$.
+with $\epsilon_t \equiv 1$.
 
-**Term $m = 0$.** The trace is $\mathrm{Tr}_\mathbb{B}(i\vec u_x)\cdot\mathrm{Tr}_\mathbb{B}(i\vec u_y) = 0$, because the scalar part of $i\vec u_x$ vanishes.
+**Term $m = t$.** The trace is $\mathrm{Tr}_\mathbb{B}(i\vec u_x)\cdot\mathrm{Tr}_\mathbb{B}(i\vec u_y) = 0$, because the scalar part of $i\vec u_x$ vanishes.
 
-**Terms $m = 1, 2, 3$.** We have
+**Terms $m \in \{x,y,z\}$.** We have
 
 $$
 e_m\cdot i\vec u_x = i\,e_m \vec u_x = i\left(-a_m e_t + \text{vector}\right),
 $$
 
-using $e_m \vec e_k = -a_m e_t + \sum_{k \neq m} a_k e_m \vec e_k$. The scalar part is $-i a_m$, so
+using $e_m \vec u_x = -a_m e_t + \sum_{k \neq m} a_k e_m \vec e_k$. The scalar part is $-i a_m$, so
 
 $$
 \mathrm{Tr}_\mathbb{B}(e_m \cdot i\vec u_x) = -2 i a_m,
@@ -264,7 +264,7 @@ $$
 **Assembly.** Substituting,
 
 $$
-E(\vec u_x, \vec u_y) = \frac{1}{4}\sum_{m=1}^{3}\epsilon_m\,(-4\,a_m b_m) = -\sum_{m=1}^{3}\epsilon_m\,a_m b_m.
+E(\vec u_x, \vec u_y) = \frac{1}{4}\sum_{m\in\{x,y,z\}}\epsilon_m\,(-4\,a_m b_m) = -\sum_{m\in\{x,y,z\}}\epsilon_m\,a_m b_m.
 $$
 
 So the correlation function is
@@ -290,13 +290,13 @@ These match the standard results exactly.
 
 Both formulations give the same results, and both give the same limits. The cleanest way to read the table is by the direction of the measurements.
 
-**Parallel measurements $\vec u_x = \vec u_y = \vec u_z$.** The correlation is the diagonal entry of $T$ in the direction $\vec u_z$:
+**Parallel measurements along a coordinate axis.** Set $\vec u_x = \vec u_y = \vec u_k$; the correlation is the diagonal entry $T_{kk}$:
 
-| Direction | $\Psi^-$ | $\Phi^+$ | $\Phi^-$ | $\Psi^+$ |
+| Axis | $\Psi^-$ | $\Phi^+$ | $\Phi^-$ | $\Psi^+$ |
 |---|---|---|---|---|
-| $\vec u_z = \vec u_x$ | $-1$ | $+1$ | $-1$ | $+1$ |
-| $\vec u_z = \vec u_y$ | $-1$ | $-1$ | $+1$ | $+1$ |
-| $\vec u_z = \vec u_z$ | $-1$ | $+1$ | $+1$ | $-1$ |
+| $k=x$ | $-1$ | $+1$ | $-1$ | $+1$ |
+| $k=y$ | $-1$ | $-1$ | $+1$ | $+1$ |
+| $k=z$ | $-1$ | $+1$ | $+1$ | $-1$ |
 
 The singlet is the unique Bell state for which the parallel correlation is $-1$ along **every** direction: the singlet is perfectly anti-correlated along any common axis, and its correlation matrix is $-I$. The other three Bell states are perfectly correlated (or anti-correlated) only along the three coordinate axes, with sign patterns that depend on the direction.
 
@@ -320,7 +320,7 @@ $$
 
 with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is the algebraic characterization of the Bell basis: four idempotents, differing only by the sign pattern of the three vector-vector terms.
 
-**2. The correlation function is a bilinear pairing.** The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\circ\tilde{H}_{ab})$ is the tensor-product trace pairing between the state idempotent and the observable $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$. The trace pairing is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).
+**2. The correlation function is a bilinear pairing.** The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{ab})$ is the tensor-product trace pairing between the state idempotent and the observable $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$. The trace pairing is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).
 
 **3. The sign pattern encodes the correlation matrix.** In the standard formulation, the correlation matrix $T$ is computed by expanding the Bell projector in the Pauli-string basis and reading off the coefficients. In the biquaternion formulation, the same coefficients appear directly as the signs $\epsilon_j$ in the idempotent. The matrix $T$ is $-\mathrm{diag}(\epsilon_1,\epsilon_2,\epsilon_3)$.
 
@@ -336,7 +336,7 @@ with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is th
 | Physical process | Single measurement | Evolution | Successive measurements | Singlet measurement | Reduced state | Correlation function |
 | Structural object | Idempotent + idempotent | Idempotent + unitary | Sequence of idempotents | Idempotent in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace | Bell idempotents |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula | Partial trace + trace formula | Tensor-product trace pairing |
-| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_x\cdot\vec u_y)$ | $\rho_1 = \tfrac{1}{2}e_t$ | $E = -\sum_j \epsilon_j a_j b_j$ |
+| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_x\cdot\vec u_y)$ | $\tilde{Ϛ}_1 = \tfrac{1}{2}e_t$ | $E = -\sum_j \epsilon_j a_j b_j$ |
 
 ## Summary
 
@@ -365,7 +365,7 @@ The correlation function is the object measured in Bell-inequality experiments, 
 | $|\Phi^\pm\rangle, |\Psi^\pm\rangle$ | The four Bell states |
 | $\tilde\Pi_\epsilon = \tfrac{1}{4}(e_t\otimes e_t + \sum_j \epsilon_j\,\vec e_j\otimes \vec e_j)$ | Bell idempotent, with $\epsilon_1\epsilon_2\epsilon_3 = +1$ |
 | $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$ | Correlation observable |
-| $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\circ\tilde{H}_{ab})$ | Correlation function |
+| $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{ab})$ | Correlation function |
 | $T_{jk} = \langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle$ | Correlation matrix |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 

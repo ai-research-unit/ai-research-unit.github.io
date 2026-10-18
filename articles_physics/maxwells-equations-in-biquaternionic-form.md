@@ -533,10 +533,10 @@ The scalar part of $\tilde{W}$ is the energy density, real; the vector part is $
 The conservation of energy and momentum is expressed by the biquaternionic equation
 
 $$
-\tilde{\nabla} \tilde{W} = -\tilde{P},
+\tilde{\nabla} \tilde{W} = -\tilde{\mathcal F},
 $$
 
-where $\tilde{P}$ is the biquaternionic power–force density, whose scalar part is $-\frac{i}{c}\,\vec J\cdot\vec E$ and whose vector part is $-(\rho\vec E + \vec J\times\vec B)$. Taking the scalar part of the equation gives the standard energy conservation law
+where $\tilde{\mathcal F}$ is the biquaternionic power–force density, whose scalar part is $-\frac{i}{c}\,\vec J\cdot\vec E$ and whose vector part is $-(\rho\vec E + \vec J\times\vec B)$. Taking the scalar part of the equation gives the standard energy conservation law
 
 $$
 \frac{\partial W}{\partial t} + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0.
@@ -546,10 +546,10 @@ The energy–momentum tensor is the natural bridge between the electromagnetic f
 
 ## Energy Conservation and the Cauchy Problem
 
-The biquaternionic energy–momentum $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$ satisfies the conservation law $\tilde{\nabla} \tilde{W} = -\tilde{P}$, where $\tilde{P}$ is the biquaternionic power–force density. Integrating this law over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
+The biquaternionic energy–momentum $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$ satisfies the conservation law $\tilde{\nabla} \tilde{W} = -\tilde{\mathcal F}$, where $\tilde{\mathcal F}$ is the biquaternionic power–force density. Integrating this law over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
 
 $$
-\int_{\partial D} \tilde U_{\mathrm n} \tilde{W}\,dS = -\int_D \tilde{P}\,dV,
+\int_{\partial D} \tilde U_{\mathrm n} \tilde{W}\,dS = -\int_D \tilde{\mathcal F}\,dV,
 $$
 
 where $\tilde U_{\mathrm n} = i n_t e_t + \vec n$, $n_t^2 + \lvert\vec n\rvert^2 = 1$, is the outward unit normal on $\partial D$. This is the biquaternionic form of the **Poynting theorem**: the flux of energy–momentum through the boundary equals the work done by the sources inside.
@@ -731,7 +731,7 @@ Maxwell's equations in a linear, isotropic, non-dispersive medium collapse into 
 
 The retarded Green's function supplies the causal solution, the field at a point depending only on the sources in its past light cone; it is the fundamental solution of the hyperbolic wave operator and is related by the Wick rotation to the elliptic Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ used in biquaternion analysis. In the stationary limit the equation becomes purely spatial and the solution is the gradient of the Newton kernel, whose first term is Coulomb's law for a point charge and whose second is the Biot–Savart law. The potential $\tilde{A}$ is subject to the gauge transformation $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, under which $\tilde{F}$ is invariant while the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $S' = S - \Box\Gamma$; the Lorenz gauge $S = 0$ reduces the first-order equation to the wave equation $\Box\tilde{A} = -\mu\tilde J$.
 
-The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. It obeys the conservation law $\tilde{\nabla}\tilde{W} = -\tilde{P}$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy. The four-potential transforms by rotor conjugation, $\tilde{A}' = \tilde U\tilde{A}\tilde U^{*}$, which reproduces the standard boost formulas for $\phi$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
+The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. It obeys the conservation law $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy. The four-potential transforms by rotor conjugation, $\tilde{A}' = \tilde U\tilde{A}\tilde U^{*}$, which reproduces the standard boost formulas for $\phi$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
 
 ## Summary of Notation
 

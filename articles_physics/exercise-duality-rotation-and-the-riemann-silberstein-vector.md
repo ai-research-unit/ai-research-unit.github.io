@@ -19,7 +19,7 @@ $$
 W = \tfrac12\left(\epsilon\,\vec E^2 + \mu\,\vec H^2\right),
 \qquad \vec S = \vec E\times\vec H,
 $$
-with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ of the informational sector. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.
+with $\tilde F\tilde F^{*} = 2W e_t + \tfrac{2i}{c}\vec S$; and the trace formula, for a state $\tilde{Ϛ}$ and an observable $\tilde H$, $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde H\rangle$ of the informational sector. Throughout, $c$ is the speed of light in the medium and $c_0$ its vacuum value; $\vec v_b$ denotes a frame velocity.
 
 **What is to be shown.** (1) The duality rotation, in its three-vector form, is exactly the phase rotation $\vec N\mapsto \exp(-i\theta)\vec N$, hence $\tilde F\mapsto \exp(-i\theta)\tilde F$, and it preserves the physical reality condition on the fields. (2) Duality preserves the Hermitian form — the energy density $W$ and the Poynting vector $\vec S$ — while it rotates the biquaternion norm by $\exp(-2i\theta)$, rotating the pair $(I_1,2cI_2)$ by the doubled angle $2\theta$ and leaving $I_1^2 + 4c^2I_2^2$ invariant. (3) Duality is a symmetry of the source-free equations; with electric sources alone it is not a symmetry, and its sourced completion rotates electric charge into magnetic charge. (4) The parent's self-dual/anti-self-dual paragraph contains a notation defect: the object paired with $\vec N$ is the complex conjugate $\vec N^*$, not the quaternion conjugate $\bar{\vec N}$. (5) The parent's claim that the two pieces transform independently under the Lorentz group is not backed by a biquaternion transformation law, and the natural guess — the four-vector rotor conjugation — fails on a boost.
 
@@ -382,7 +382,7 @@ Two defects in the parent are recorded. First, the parent's equation $\bar{\vec 
 | $\tilde F\tilde F^{*} = 2We_t + \frac{2i}{c}\vec S$ | Hermitian form (in $\mathbb{M}_+$) |
 | $\tilde J = ic\rho\,e_t + \vec J$ | Electric four-current; enters as $\sqrt{\mu}\,\tilde J$ |
 | $\tilde\nabla\tilde F = -\sqrt{\mu}\,\tilde J$ | Biquaternionic Maxwell equation |
-| $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde H\rangle$ | Trace formula (Born rule) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

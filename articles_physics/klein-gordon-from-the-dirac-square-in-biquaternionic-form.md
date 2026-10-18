@@ -10,7 +10,7 @@ $$
 
 and the companion article *The Dirac Equation in Biquaternionic Form* records, in a single paragraph, that applying $\tilde{\nabla}^{\natural}$ to the first member and substituting the second gives $\Box\tilde{\Psi}_R = m^2\tilde{\Psi}_R$, so that each chiral component satisfies the Klein–Gordon equation. That paragraph is the hinge between the two halves of this category: it is where the relativistic quantum theory of spin $0$ and the relativistic quantum theory of spin $\tfrac12$ meet. The present article is the door that hangs on that hinge. It reconstructs the passage in full — the square of the Dirac operator, in the spinor module and in the algebra — and it settles what the passage does and does not carry.
 
-The question it answers is sharp because the companion article on the Klein–Gordon equation asked the mirror-image question and returned a negative result. *The Klein–Gordon Equation in Biquaternionic Form* showed that the second-order operator $\Box - m^2c^2/\hbar^2$ has **no first-order scalar square root inside the algebra** $\mathbb{B}$: the simplest attempt, $(\tilde{\nabla}^{\natural} + \mu)(\tilde{\nabla} - \mu)$, leaves the first-order residual $2\mu\vec\nabla$, with $\vec\nabla = \vec e_\mu\,\partial/\partial Q_\mu$ the vector part of the gradient, and with general constant biquaternion coefficients the residual $(A+B)\partial/\partial Q_t + \sum_\mu(A\vec e_\mu - \vec e_\mu B)\partial/\partial Q_\mu$ cannot be cancelled either, since cancellation would require an element anticommuting with all three $\vec e_\mu$ and none exists. If the Klein–Gordon operator has no first-order square root, how does a first-order equation — the Dirac pair — imply it? The answer, worked out below, is that the square root is **not scalar**: it is the gradient acting on the spinor module, and the mass term is off-diagonal between the two chiral halves. The scalar obstruction of the spin-$0$ article is exactly the evidence that the square root must be spinor-valued.
+The question it answers is sharp because the companion article on the Klein–Gordon equation asked the mirror-image question and returned a negative result. *The Klein–Gordon Equation in Biquaternionic Form* showed that the second-order operator $\Box - m^2c^2/\hbar^2$ has **no first-order scalar square root inside the algebra** $\mathbb{B}$: the simplest attempt, $(\tilde{\nabla}^{\natural} + \mu)(\tilde{\nabla} - \mu)$, leaves the first-order residual $2\mu\vec\nabla$, with $\vec\nabla = \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ the vector part of the gradient, and with general constant biquaternion coefficients the residual $(A+B)\partial/\partial Q_t + \sum_\mu(A\vec e_\mu - \vec e_\mu B)\partial/\partial Q_\mu$ cannot be cancelled either, since cancellation would require an element anticommuting with all three $\vec e_\mu$ and none exists. If the Klein–Gordon operator has no first-order square root, how does a first-order equation — the Dirac pair — imply it? The answer, worked out below, is that the square root is **not scalar**: it is the gradient acting on the spinor module, and the mass term is off-diagonal between the two chiral halves. The scalar obstruction of the spin-$0$ article is exactly the evidence that the square root must be spinor-valued.
 
 Three boundaries are respected. The Klein–Gordon **propagator** and the **scalar path integral** are the subject of the spin-$0$ companions and are not treated here. The d'Alembertian and its Green's functions are the subject of *the generalities*, and the involution lattice is not reopened. What is treated here is the algebraic transfer from the first-order pair to the second-order equation, the kernel it produces, and the sense in which the transfer is irreversible.
 
@@ -20,7 +20,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2,
 $$
 
-with $\partial^2/\partial Q_t^2 = + \partial^2/\partial Q_t^2$. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
+with $\partial^2/\partial Q_t^2 = -c^{-2}\,\partial^2/\partial t^2$. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
 
 $$
 \mu = \frac{mc}{\hbar},
@@ -282,10 +282,10 @@ The square carries the mass shell $\tilde P\tilde P^{\natural} = -\mu^2$, hence 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient (the Dirac operator) |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient (the Dirac operator) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\tilde P = i\omega/c\,e_t + \vec k$, $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-wavevector and four-position |
@@ -296,7 +296,7 @@ The square carries the mass shell $\tilde P\tilde P^{\natural} = -\mu^2$, hence 
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 | $\not\partial = \gamma^\mu\partial/\partial Q_\mu$ | Slash (Dirac operator in the spinor module) |
 | $\not p = \gamma^\mu p_\mu$ | Slash of a four-momentum |
-| $\vec\nabla = \vec e_\mu\,\partial/\partial Q_\mu$ | Vector part of the biquaternionic gradient |
+| $\vec\nabla = \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Vector part of the biquaternionic gradient |
 | $\tilde{\nabla}^2 = \left(\partial^2/\partial Q_t^2 - |\vec\nabla|^2\right)e_t + 2\partial/\partial Q_t\,\vec\nabla$ | Square of the gradient alone; non-central, with a vector remainder |
 | $\mathcal{D}_\mp$ | The Dirac pair as a $2\times2$ matrix of gradients, $\mathcal{D}_-\mathcal{D}_+ = (\Box - m^2)I$ |
 | $\Psi = (\tilde{\Psi}_L,\tilde{\Psi}_R)^{\mathsf T}$ | The chiral pair as a two-component object, $\mathcal{Q}\Psi = m\Psi$ |

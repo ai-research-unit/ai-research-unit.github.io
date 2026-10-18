@@ -31,7 +31,7 @@ $$
 \tilde\Pi^2 = \tilde\Pi, \qquad \mathrm{Tr}(\tilde\Pi) = 1, \qquad \tilde\Pi\geq0 .
 $$
 
-Up to a phase it is $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$ for a unit vector $\vec u\in\mathbb{R}^3$, and its orthogonal complement is $\tilde\Pi_2(\vec u) = \tfrac12(e_t-i\vec u)$. The pair satisfies
+It is $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$ for a unit vector $\vec u\in\mathbb{R}^3$, and its orthogonal complement is $\tilde\Pi_2(\vec u) = \tfrac12(e_t-i\vec u)$. The pair satisfies
 
 $$
 \tilde\Pi_1\tilde\Pi_2 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_t ,
@@ -41,19 +41,19 @@ so $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ is a complete orthogonal family
 
 ### The trace pairing between idempotents
 
-For two directions $\vec u,\vec u_\nu$ the trace pairing of the positive idempotents is
+For two directions $\vec u,\vec v$ the trace pairing of the positive idempotents is
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi_1(\vec u)\tilde\Pi_1(\vec u_\nu)\bigr)
-= \tfrac{1}{4}\mathrm{Tr}\bigl((e_t+i\vec u)(e_t+i\vec u_\nu)\bigr)
-= \tfrac{1}{4}\bigl(2 - 2\,\vec u\cdot\vec u_\nu\bigr)
-= \tfrac{1}{2}\bigl(1 - \vec u\cdot\vec u_\nu\bigr),
+\mathrm{Tr}\bigl(\tilde\Pi_1(\vec u)\tilde\Pi_1(\vec v)\bigr)
+= \tfrac{1}{4}\mathrm{Tr}\bigl((e_t+i\vec u)(e_t+i\vec v)\bigr)
+= \tfrac{1}{4}\bigl(2 - 2\,\vec u\cdot\vec v\bigr)
+= \tfrac{1}{2}\bigl(1 - \vec u\cdot\vec v\bigr),
 $$
 
 using $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}(i\vec e_\mu)=0$ and $\mathrm{Tr}((i\vec e_\mu)(i\vec e_\nu)) = 2\delta_{\mu\nu}$. In Hilbert-space terms this is the squared overlap
 
 $$
-\bigl|\langle \psi(\vec u)|\psi(\vec u_\nu)\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec u_\nu\bigr),
+\bigl|\langle \psi(\vec u)|\psi(\vec u_\nu)\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec v\bigr),
 $$
 
 which vanishes for antipodal directions and equals one for coincident directions. The trace pairing is thus a measure of the distinguishability of two rays, and it is the object that the mutual-unbiasedness condition constrains.
@@ -129,7 +129,7 @@ $$
 \bigl(\tilde\Pi_1(\vec u_x),\tilde\Pi_2(\vec u_x),\tilde\Pi_1(\vec u_y),\tilde\Pi_2(\vec u_y),\tilde\Pi_1(\vec u_z),\tilde\Pi_2(\vec u_z)\bigr).
 $$
 
-The matrix of trace pairings $M_{ab} = \mathrm{Tr}(\tilde\Pi_a\tilde\Pi_b)$ is block structure in $2\times2$ blocks: the diagonal blocks are the identity (orthonormal within a basis), and the off-diagonal blocks are $\tfrac12 J$, where $J$ is the all-ones $2\times2$ matrix (unbiased across bases). Thus
+The matrix of trace pairings $M_{ab} = \mathrm{Tr}(\tilde\Pi_a\tilde\Pi_b)$ has block structure in $2\times2$ blocks: the diagonal blocks are the identity (orthonormal within a basis), and the off-diagonal blocks are $\tfrac12 J$, where $J$ is the all-ones $2\times2$ matrix (unbiased across bases). Thus
 
 $$
 M = \begin{pmatrix} I_2 & \tfrac12 J_2 & \tfrac12 J_2\\[2pt] \tfrac12 J_2 & I_2 & \tfrac12 J_2\\[2pt] \tfrac12 J_2 & \tfrac12 J_2 & I_2 \end{pmatrix},
@@ -194,7 +194,7 @@ $$
 \sum_{k=1}^{3}\sum_{s=\pm}\frac{1}{3}\tilde\Pi_s(\vec u_k) = e_t ,
 $$
 
-and in general a complete set of $d+1$ mutually unbiased bases satisfies $\sum_{b=1}^{d+1}\sum_{i=1}^{d}\tilde\Pi_i^{(b)} = (d+1)e_t$, with uniform weight $1/(d+1)$. The identity was verified by explicit computation for the qubit. It is the operator statement that the six coordinate idempotents form a tight frame; the weight $1/(d+1)$ is not the same as the overlap $1/d$, and the difference between the two numbers is the reason the reconstruction formula below is an affine rather than a linear combination of the outcome probabilities.
+and in general a complete set of $d+1$ mutually unbiased bases satisfies $\sum_{b=1}^{d+1}\sum_{i=1}^{d}\tilde\Pi_i^{(b)} = (d+1)e_t$, with uniform weight $1/(d+1)$. The identity was verified by explicit computation for the qubit. It is the operator statement that the six coordinate idempotents form a tight frame; the weight $1/(d+1)$ is not the same as the overlap $1/d$, and the difference between the two numbers is the reason the reconstruction formula above is an affine rather than a linear combination of the outcome probabilities.
 
 ## The Two-Qubit Case
 

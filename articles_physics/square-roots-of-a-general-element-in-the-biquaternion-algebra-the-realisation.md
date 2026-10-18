@@ -148,8 +148,8 @@ The readings are these. A material quantity is **realised by the algebra** exact
 | $\mathbb{M}_-$ | Material sector; no nonzero nilpotent, so no refusal |
 | $\sigma(\tilde\Xi)=\tilde\Xi\tilde\Xi$ | The ordinary square, the article's square |
 | $\nu(\tilde\Xi)=\tilde\Xi\tilde\Xi^{\natural}=\langle\tilde\Xi\rangle_{\natural}e_t$ | The natural square; always scalar |
-| $N=-c^{2}t^{2}+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}$ | The interval on $\mathbb{M}_-$ |
-| $N=-m^{2}c^{2}$ | The mass shell, fibre of the natural square |
+| $\langle\tilde P\rangle_{\natural}=-c^{2}t^{2}+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}$ | The interval on $\mathbb{M}_-$ |
+| $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$ | The mass shell, fibre of the natural square |
 
 ## Further Reading
 

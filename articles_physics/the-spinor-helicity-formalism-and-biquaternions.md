@@ -31,16 +31,16 @@ The article is organized as follows. The next section identifies the massless mo
 **Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The conjugations are the quaternion conjugate $\tilde Q^{\natural}$, the complex conjugate $\bar{\tilde Q}$, and the Hermitian conjugate $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$. The subspaces are $\mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}$ (material, anti-Hermitian), $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ (informational, Hermitian), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The matrix realization is
 
 $$
-\Phi:\;\tilde Q = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu \;\longmapsto\;
+\mathsf{M}_2:\;\tilde Q = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu \;\longmapsto\;
 \begin{pmatrix}
-Q_t - iQ_3 & -iQ_1 - Q_y\\[2pt]
--iQ_1 + Q_y & Q_t + iQ_3
+Q_t - iQ_z & -iQ_x - Q_y\\[2pt]
+-iQ_x + Q_y & Q_t + iQ_z
 \end{pmatrix},
 \qquad
 \mathsf{M}_2(e_t)=I_2,\quad \mathsf{M}_2(\vec e_k)=-i\sigma_k,\quad \mathsf{M}_2(i)=iI_2,
 $$
 
-satisfying $\mathsf{M}_2(\tilde Q\tilde Q_1) = \mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q_1)$, $\det\mathsf{M}_2(\tilde Q) = \langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and $\mathsf{M}_2(\tilde Q^{*}) = \mathsf{M}_2(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_t + \vec p \in \mathbb{M}_-$, with biquaternion norm $\langle\tilde P\rangle_{\natural} = -E^2/c^2 + \vec p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged.
+satisfying $\mathsf{M}_2(\tilde Q_1\tilde Q_2) = \mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)$, $\det\mathsf{M}_2(\tilde Q) = \langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and $\mathsf{M}_2(\tilde Q^{*}) = \mathsf{M}_2(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_t + \vec p \in \mathbb{M}_-$, with biquaternion norm $\langle\tilde P\rangle_{\natural} = -E^2/c^2 + \vec p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged.
 
 ## The Massless Momentum as a Zero Divisor
 
@@ -155,7 +155,7 @@ $$
 \langle ij\rangle\,[ij] \;=\; \det\!\big(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)\big) \;=\; 2\,\langle\tilde P_i,\tilde P_j\rangle.
 $$
 
-The determinant identity was verified symbolically for two independently factorised momenta with independent complex spinors (all eight spinor components free), and the equality with $2B$ was verified on the same general symbols. For real momenta, $\langle\tilde P_i,\tilde P_j\rangle = -\frac{E_iE_j}{c^2} + \vec p_i\cdot\vec p_j$ in the framework's $ict$ (mostly-plus) convention; in the mostly-minus convention common in amplitude reviews the same identity carries the opposite overall sign. The relative sign of $\langle ij\rangle$ and $[ij]$ is convention-dependent; once both are defined by the same $\varepsilon$, their product is the momentum contraction.
+The determinant identity was verified symbolically for two independently factorised momenta with independent complex spinors (all eight spinor components free), and the equality with $2\langle\tilde P_i,\tilde P_j\rangle$ was verified on the same general symbols. For real momenta, $\langle\tilde P_i,\tilde P_j\rangle = -\frac{E_iE_j}{c^2} + \vec p_i\cdot\vec p_j$ in the framework's $ict$ (mostly-plus) convention; in the mostly-minus convention common in amplitude reviews the same identity carries the opposite overall sign. The relative sign of $\langle ij\rangle$ and $[ij]$ is convention-dependent; once both are defined by the same $\varepsilon$, their product is the momentum contraction.
 
 **On signs.** The antisymmetry is the classic source of error in the Parke–Taylor formula. Because $\langle ij\rangle^4$ is even in the interchange $i\leftrightarrow j$, the numerator is insensitive to the ordering, but every bracket that enters linearly — in particular the denominator — changes sign when its two indices are exchanged. A one-line check confirms the effect: replacing a single $\langle 12\rangle$ by $\langle 21\rangle$ in a bracket ratio multiplies the ratio by $-1$.
 
@@ -240,7 +240,7 @@ $$
 \;=\; 2\,\frac{iE}{c}\,\tilde P \;+\; m^2c^2\,e_t .
 $$
 
-The zero-divisor relation $\tilde P^2 = 2P_0\tilde P$ of the massless case holds only at $m=0$; the mass term is an additive defect of order $m^2$. The relation was verified symbolically for a general massive momentum $(\sqrt{25+m^2};3,4,0)$ as well as at rest, and the massless identity $\tilde P^2 = 2P_0\tilde P$ was verified independently on four null momenta.
+The zero-divisor relation $\tilde P^2 = 2P_t\tilde P$ of the massless case holds only at $m=0$; the mass term is an additive defect of order $m^2$. The relation was verified symbolically for a general massive momentum $(\sqrt{25+m^2};3,4,0)$ as well as at rest, and the massless identity $\tilde P^2 = 2P_t\tilde P$ was verified independently on four null momenta.
 
 Three things therefore fail to be continuous in the limit.
 
@@ -258,7 +258,7 @@ The massless limit is therefore singular at the level of the spinor variables an
 
 **Not supplied.** The framework does not contain the dynamics of the massless fields whose amplitudes these are; it does not contain a colored gauge theory; it does not derive the Parke–Taylor formula; and it does not by itself supply a massive spinor-helicity extension. The identification of a state of helicity $h$ with a definite weight under the little group is standard representation theory, imported.
 
-**Interpretation.** Interpretation the rank-one zero divisor as the momentum of a massless particle, and its factorisation as the spinor-helicity variables, is the interpretation that makes the algebra kinematical. The algebra contains the structure; the interpretation of it as a particle's momentum is the physics input, exactly as the interpretation of $\mathbb{M}_-$ as spacetime is an input elsewhere in the series.
+**Interpretation.** Interpreting the rank-one zero divisor as the momentum of a massless particle, and its factorisation as the spinor-helicity variables, is the interpretation that makes the algebra kinematical. The algebra contains the structure; the interpretation of it as a particle's momentum is the physics input, exactly as the interpretation of $\mathbb{M}_-$ as spacetime is an input elsewhere in the series.
 
 ## Gaps and Open Questions
 
@@ -270,7 +270,7 @@ The massless limit is therefore singular at the level of the spinor variables an
 
 3. **$ISO(2)$ versus $\mathrm{U}(1)$.** The full massless little group includes null rotations (the translations of $ISO(2)$), which act trivially on finite-helicity states. The framework's factorisation is invariant under the compact $\mathrm{U}(1)$ and under the complexified scaling; the precise status of the null-rotation generators in the factorisation picture is not worked out here.
 
-4. **The two families of zero divisors.** Real null momenta are non-pure zero divisors ($P_0 = iE/c \neq 0$ for $E\neq0$). The complexified null cone also contains the pure nilpotent branch, which no real null momentum of nonzero energy reaches. What, if anything, the pure branch describes physically is left open.
+4. **The two families of zero divisors.** Real null momenta are non-pure zero divisors ($P_t = iE/c \neq 0$ for $E\neq0$). The complexified null cone also contains the pure nilpotent branch, which no real null momentum of nonzero energy reaches. What, if anything, the pure branch describes physically is left open.
 
 **Open questions.** (1) Can the framework's spinor-module Dirac and Weyl equations supply an independent *dynamics* for the factors $\lambda$ and $\bar\lambda$, rather than only their kinematics? (2) The massless little group's null rotations act trivially on helicity states; can the framework exhibit them as an invariance of the zero-divisor cone at fixed momentum, and does that invariance have a name in the algebra? (3) Is the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ the natural pairing in which to state the amplitudes' positivity or unitarity, given that it is the framework's Born rule? (4) Does the complexification required by spinor-helicity, and the framework's local complex structure in a medium, have a common formulation? These are recorded as questions, not as results.
 
@@ -280,7 +280,7 @@ The spinor-helicity formalism writes a massless momentum as a product of two Wey
 
 The brackets are the invariant symplectic pairing $\varepsilon$ of the spinor module, antisymmetric by the antisymmetry of $\varepsilon$, and they satisfy $\langle ij\rangle[ij] = \det(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)) = 2\langle\tilde P_i,\tilde P_j\rangle$, checked symbolically. The little-group scaling $\lambda\to t\lambda$, $\bar\lambda\to t^{-1}\bar\lambda$ is exactly the ambiguity of the rank-one factorisation and leaves the momentum invariant; for real momenta it is a $\mathrm{U}(1)$, realized by the framework's rotation rotor about the momentum axis, and helicity is its weight, $d_{\lambda,k} = -2h_k$. The Parke–Taylor kinematic factor has precisely these weights, checked symbolically for $n=4,5,6$ including non-adjacent and cyclic-boundary negative helicities.
 
-Two things are deliberately not claimed. The framework does not derive the Parke–Taylor formula or the gauge theory, and it does not treat the massless limit as continuous: massive momenta are invertible, have rank-two image, carry a two-term bispinor, and have little group $SU(2)$, while the massless ones are zero divisors with rank-one image, a one-term factorisation, and little group $ISO(2)$ with compact part $\mathrm{U}(1)$; the defect $\tilde P^2 = 2P_0\tilde P + m^2c^2e_t$ measures the discontinuity. And the general spinor-helicity variables with independent complex spinors describe complexified momenta, off the real material slice; on the real slice the reality condition $\bar\lambda\sim\lambda^{*}$ holds. Within these limits the identification is exact.
+Two things are deliberately not claimed. The framework does not derive the Parke–Taylor formula or the gauge theory, and it does not treat the massless limit as continuous: massive momenta are invertible, have rank-two image, carry a two-term bispinor, and have little group $SU(2)$, while the massless ones are zero divisors with rank-one image, a one-term factorisation, and little group $ISO(2)$ with compact part $\mathrm{U}(1)$; the defect $\tilde P^2 = 2P_t\tilde P + m^2c^2e_t$ measures the discontinuity. And the general spinor-helicity variables with independent complex spinors describe complexified momenta, off the real material slice; on the real slice the reality condition $\bar\lambda\sim\lambda^{*}$ holds. Within these limits the identification is exact.
 
 ## Summary of Notation
 
@@ -307,7 +307,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ | Trace formula (Born rule), inherited |
 | $\mathcal A_n^{\mathrm{MHV}}\propto\langle ij\rangle^4/\prod_k\langle k,k+1\rangle$ | Parke–Taylor kinematic factor |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1\mu}\rvert^{2}$ |
 
 ## Further Reading
 

@@ -26,7 +26,7 @@ matrix model $\mathsf{M}_2$.
 
 ## The Four Readings, One at a Time
 
-**The norm.** $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=\sum_\mu Q_\mu^2$ is the complex-linear quadratic
+**The norm.** $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=\sum_\mu R_\mu^2$ is the complex-linear quadratic
 form, its zero set the zero-divisor cone, its value on the material sector the interval
 $-c^2t^2+x^2+y^2+z^2$. Read as mass, its sign is the mass-shell sign: the shell $\langle\tilde{R}\rangle_{\natural}=-m^2c^2$ is the
 hyperboloid and the light cone is $\langle\tilde{R}\rangle_{\natural}=0$. The interpretation is **value**: which level set the element lies on.
@@ -98,7 +98,7 @@ algebra and not a legitimate state.
 
 | reading | the object | what it says | and the mass | where it fails |
 |---|---|---|---|---|
-| norm | $\langle\tilde{R}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the value and its sign; the mass shell as a level set | is the mass: $\langle\tilde{R}\rangle_{\natural}=-m^2c^2$ on shell | detects no polarisation count and no label |
+| norm | $\langle\tilde{R}\rangle_{\natural}=\sum_\mu R_\mu^2$ | the value and its sign; the mass shell as a level set | is the mass: $\langle\tilde{R}\rangle_{\natural}=-m^2c^2$ on shell | detects no polarisation count and no label |
 | rank | $\mathrm{rank}\,\mathsf{M}_2(\tilde{R}\tilde{R}^{*})$ | the count of polarisations, two or one | whether $m$ vanishes, never its value | does not fix the sign of $\langle\cdot\rangle_{\natural}$ |
 | charge | the compact slice $\mathrm{U}(2)\cong(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ | the discrete internal label | nothing; $m$ is not a charge | says nothing about the cone |
 | scale | the polar modulus $r$ | the unit of length, the dilation potential | the unit of $m$: $r=mc$ for the four-momentum | is a unit and not a level set |

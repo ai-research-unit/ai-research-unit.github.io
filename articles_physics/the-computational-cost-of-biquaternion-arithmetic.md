@@ -56,24 +56,24 @@ The naive scheme therefore costs sixteen complex multiplications, or **sixty-fou
 
 ## The Bilinear Product: Sixty-Four to Twenty-Four
 
-The reduction rests on writing the four coefficients of the product as fixed linear combinations of **eight** products of linear combinations of the input coefficients. Four of the eight are the "corner" products of individual components; the other four are Hadamard products, that is products of the two vectors $(M_0,M_1,\mathsf{M}_2,M_3)$ and $(N_0,N_1,N_2,N_3)$ with the four rows of the Sylvester sign matrix of order four.
+The reduction rests on writing the four coefficients of the product as fixed linear combinations of **eight** products of linear combinations of the input coefficients. Four of the eight are the "corner" products of individual components; the other four are Hadamard products, that is products of the two vectors $(M_0,M_1,M_2,M_3)$ and $(N_0,N_1,N_2,N_3)$ with the four rows of the Sylvester sign matrix of order four.
 
 In the corpus's basis the scheme reads as follows. Let $\tilde Q_1 = M_0e_t + \dots + M_3\vec e_z$ and $\tilde Q_2 = N_0e_t + \dots + N_3\vec e_z$ with complex coefficients, and let the four Hadamard products be
 
 $$
-H_1 = (M_0+M_1+\mathsf{M}_2+M_3)(N_0+N_1+N_2+N_3),
+H_1 = (M_0+M_1+M_2+M_3)(N_0+N_1+N_2+N_3),
 $$
 $$
-H_2 = (M_0+M_1-\mathsf{M}_2-M_3)(N_0+N_1-N_2-N_3),
+H_2 = (M_0+M_1-M_2-M_3)(N_0+N_1-N_2-N_3),
 $$
 $$
-H_3 = (M_0-M_1+\mathsf{M}_2-M_3)(N_0-N_1+N_2-N_3),
+H_3 = (M_0-M_1+M_2-M_3)(N_0-N_1+N_2-N_3),
 $$
 $$
-H_4 = (M_0-M_1-\mathsf{M}_2+M_3)(N_0-N_1-N_2+N_3),
+H_4 = (M_0-M_1-M_2+M_3)(N_0-N_1-N_2+N_3),
 $$
 
-and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = \mathsf{M}_2N_1$. Then the coefficients $Q_\mu$ of the product $\tilde Q=\tilde Q_1\tilde Q_2$ satisfy
+and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = M_2N_1$. Then the coefficients $Q_\mu$ of the product $\tilde Q=\tilde Q_1\tilde Q_2$ satisfy
 
 $$
 4Q_t = 8P_{00} - (H_1+H_2+H_3+H_4),
@@ -90,7 +90,7 @@ $$
 
 The scheme uses eight coefficient products and nothing else: the Hadamard combinations supply each coefficient with the sign pattern of one Sylvester row, and the four corner products cancel the diagonal contributions that the Hadamard products carry along with them. The factors of two and four are the price of that cancellation; they are additions and scalings, which the count treats as free.
 
-This is the corpus transcription of the source's scheme, which is stated there in the reversed vector-unit order. The source writes it as eight intermediate products $P_1,\dots,P_8$, with the four coefficient products $P_1 = M_1N_1$, $P_2 = M_4N_3$, $P_3 = \mathsf{M}_2N_4$, $P_4 = M_3N_2$ in its own numbering and the four Hadamard products $P_5,\dots,P_8$ of the same shape as $H_1,\dots,H_4$, and it gives the four coefficients as $Q_x = 2P_1 - \tfrac14(P_5+P_6+P_7+P_8)$ and its three companions with the sign patterns $+\,+\,--\,$, $\,+\,-+\,-$ and $\,+\,\,--\,+$. The two forms differ only by the relabelling of the vector units; both were recomputed here and both reproduce the direct product exactly.
+This is the corpus transcription of the source's scheme, which is stated there in the reversed vector-unit order. The source writes it as eight intermediate products $P_1,\dots,P_8$, with the four coefficient products $P_1 = M_1N_1$, $P_2 = M_4N_3$, $P_3 = M_2N_4$, $P_4 = M_3N_2$ in its own numbering and the four Hadamard products $P_5,\dots,P_8$ of the same shape as $H_1,\dots,H_4$, and it gives the four coefficients as $Q_x = 2P_1 - \tfrac14(P_5+P_6+P_7+P_8)$ and its three companions with the sign patterns $+\,+\,--\,$, $\,+\,-+\,-$ and $\,+\,\,--\,+$. The two forms differ only by the relabelling of the vector units; both were recomputed here and both reproduce the direct product exactly.
 
 Each of the eight intermediate products is a complex multiplication, so the bilinear scheme alone costs $8\times4 = 32$ real multiplications, against the naive sixty-four. **Gauss's three-multiplication rule** for complex numbers,
 
@@ -108,7 +108,7 @@ For the slices the scheme already terminates at the coefficient level: a real-qu
 The scheme above has coefficients that are complex *scalars*, and it is bilinear over the real numbers: every output is a scalar linear combination of the eight intermediate products. **Nothing in it uses the commutativity of the coefficients**, so it applies unchanged when the coefficients are replaced by matrices. That is the step from a biquaternion to a *matrix-valued* biquaternion, an element of $\mathbb{B}^{n\times m}$: each of the four coefficients becomes an $n\times m$ complex matrix, and the product rule keeps exactly its scalar-vector shape,
 
 $$
-Q_xQ_y = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr),
+\tilde Q_1\tilde Q_2 = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr),
 $$
 
 with the dot and cross products understood entrywise, in the order of matrix multiplication, and with the coefficients no longer commuting. The eight intermediate products are then products of matrices, evaluated with a single real matrix-multiplication kernel; the dot and cross products are absorbed into them and are never formed separately.
@@ -144,13 +144,13 @@ Three properties of this image are used constantly, and each is exact:
 The inner $2\times2$ blocks of the image carry the slice structure. For a real-quaternion array, whose coefficients are complex matrices with real entries only, the image takes the **time-reversal symmetric** block form
 
 $$
-M^+ = \begin{pmatrix} A & B \\ -B^{*} & A^{*} \end{pmatrix}, \qquad A = Q_t - iQ_3,\quad B = -iQ_1 - Q_y ,
+M^+ = \begin{pmatrix} A & B \\ -B^{*} & A^{*} \end{pmatrix}, \qquad A = Q_t - iQ_z,\quad B = -iQ_x - Q_y ,
 $$
 
 and for an antiquaternion array, whose coefficients are purely imaginary, the **time-reversal antisymmetric** form
 
 $$
-M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_3,\quad H = -iQ_1 - Q_y .
+M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_z,\quad H = -iQ_x - Q_y .
 $$
 
 In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{M}_\pm$ split, a point returned to below.

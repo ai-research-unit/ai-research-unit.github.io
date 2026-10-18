@@ -14,7 +14,7 @@ Its question is exact: what does "Fock space and creation/annihilation operators
 
 The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$. No such pair exists in $\mathbb{B}$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$; they satisfy $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_t)=2$. The isomorphism with $M_2(\mathbb{C})$ is the one fixed in the companion articles, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. The fermionic and bosonic mode operators are those established by the two quantization articles and are not rederived.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$; they satisfy $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$, so that $\mathrm{Tr}(e_t)=2$. The isomorphism with $M_2(\mathbb{C})$ is the one fixed in the companion articles, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_k)=\sigma_k$. The fermionic and bosonic mode operators are those established by the two quantization articles and are not rederived.
 
 ## Fock Space and Its Operator Algebra
 
@@ -75,7 +75,7 @@ $$
 =(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k),
 $$
 
-with all other anticommutators vanishing. The particle number, antiparticle number, the total number of quanta and the electric charge are
+with all other anticommutators vanishing. The particle number, the antiparticle number, the total number of quanta and the electric charge are
 
 $$
 N_a=\sum_r\int\!\frac{d^3p}{(2\pi)^3}a^{\mathrm{fop}\dagger}_ra^{\mathrm{fop}}_r,\qquad
@@ -125,7 +125,7 @@ $$
 (i\vec e_x)(i\vec e_y)=i^2\vec e_x\vec e_y=-\vec e_z\in\mathbb{M}_-,
 $$
 
-whereas a grading would require $\mathbb{M}_+\cdot\mathbb{M}_+\subseteq\mathbb{M}_+$. What the splitting *does* grade is the **symmetrized** product: for $\tilde Q,\tilde Q_2$ Hermitian the anticommutator $\{\tilde Q,\tilde Q_2\}$ is Hermitian, for $\tilde{Q},\tilde Q_1$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{M}_\pm$ grading" is a phrase the corpus uses loosely.
+whereas a grading would require $\mathbb{M}_+\cdot\mathbb{M}_+\subseteq\mathbb{M}_+$. What the splitting *does* grade is the **symmetrized** product: for $\tilde Q_1,\tilde Q_2$ Hermitian the anticommutator $\{\tilde Q_1,\tilde Q_2\}$ is Hermitian, for $\tilde Q_1,\tilde Q_2$ anti-Hermitian it is Hermitian, and for one of each it is anti-Hermitian, so that $\mathbb{B}$ is $\mathbb{Z}/2$-graded as a Jordan algebra by the splitting and not as an associative one. This was checked on random elements of each subspace and is recorded because "the $\mathbb{M}_\pm$ grading" is a phrase the corpus uses loosely.
 
 **2. The number grading.** The Fock space is $\mathbb{N}$-graded by total particle number, with $N$ the degree operator. For fermions the degree is bounded per mode by Pauli exclusion; for bosons it is unbounded. This grading lives on the Fock space, never on $\mathbb{B}$.
 
@@ -152,11 +152,11 @@ $$
 \{a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\}=e_t,\qquad a^{\mathrm{fop}}^2=0,\qquad (a^{\mathrm{fop}\dagger})^2=0 .
 $$
 
-The algebra these generate is the one-mode canonical anticommutation (CAR) algebra, which is $M_2(\mathbb{C})$: using $a^{\mathrm{fop}}^2=(a^{\mathrm{fop}\dagger})^2=0$ the only monomials are $e_t,a^{\mathrm{fop}},a^{\mathrm{fop}\dagger},a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$, and a nonzero mode generates this four-dimensional simple algebra faithfully. Its complex dimension is four, equal to $\dim_\mathbb{C}\mathbb{B}$, so the one-mode algebra is all of $\mathbb{B}$. Conversely, $N$ independent fermionic modes generate the algebra $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ of complex dimension $4^N$, which for $N\ge2$ exceeds four. The conclusion is a dimension count and is therefore exact:
+The algebra these generate is the one-mode canonical anticommutation (CAR) algebra, which is $M_2(\mathbb{C})$: using $a^{\mathrm{fop}}^2=(a^{\mathrm{fop}\dagger})^2=0$ the only monomials are $e_t,a^{\mathrm{fop}},a^{\mathrm{fop}\dagger},a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$, and a nonzero mode generates this four-dimensional simple algebra faithfully. Its complex dimension is four, equal to $\dim_\mathbb{C}\mathbb{B}$, so the one-mode algebra is all of $\mathbb{B}$. Conversely, $m$ independent fermionic modes generate the algebra $\mathrm{Cl}(2m)\cong M_{2^m}(\mathbb{C})$ of complex dimension $4^m$, which for $m\ge2$ exceeds four. The conclusion is a dimension count and is therefore exact:
 
 > Up to the automorphisms of the algebra, $\mathbb{B}$ carries exactly **one** fermionic mode, and it is the whole algebra.
 
-For $N=1$, $\dim_\mathbb{C}M_2(\mathbb{C})=4=\dim_\mathbb{C}\mathbb{B}$; for $N=2$ the operator algebra is $M_4(\mathbb{C})$, dimension sixteen, and there is no room for it. No algebra of two fermionic modes is a subalgebra of $\mathbb{B}$. A Fock space is in any case a state space rather than an operator algebra, so the statement "the Fock space is in $\mathbb{B}$" can only mean that the state space is the fundamental module and the operators on it lie in the algebra — which is what happens for one mode and fails for two.
+For $m=1$, $\dim_\mathbb{C}M_2(\mathbb{C})=4=\dim_\mathbb{C}\mathbb{B}$; for $m=2$ the operator algebra is $M_4(\mathbb{C})$, dimension sixteen, and there is no room for it. No algebra of two fermionic modes is a subalgebra of $\mathbb{B}$. A Fock space is in any case a state space rather than an operator algebra, so the statement "the Fock space is in $\mathbb{B}$" can only mean that the state space is the fundamental module and the operators on it lie in the algebra — which is what happens for one mode and fails for two.
 
 ### The Explicit Operators
 
@@ -189,7 +189,7 @@ where $|0\rangle=(1,0)^{\mathsf T}$ and $|1\rangle=(0,1)^{\mathsf T}$ in the mod
 
 Three consequences follow at once, all of them recomputed above.
 
-- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their idempotents are $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated with the root of $+1$ $i\vec e_z$ since $(i\vec e_z)^2=e_t$, and $\tilde\Pi_-=\tilde\Pi_-$. The number operator of a single fermionic mode is a pure-state idempotent of the informational sector.
+- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their idempotents are $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated with the root of $+1$ $i\vec e_z$ since $(i\vec e_z)^2=e_t$. The number operator of a single fermionic mode is a pure-state idempotent of the informational sector.
 - **The grading is an element of the algebra.** Fermion parity for one mode is
 
 $$
@@ -201,7 +201,7 @@ which is Hermitian, squares to $e_t$, and satisfies $(-1)^F\vec\Upsilon_x(-1)^F=
 
 ### What the Capacity Statement Does and Does Not Say
 
-It does say that the fermionic canonical anticommutation relations, the one-mode number operator, the vacuum idempotent, and the fermion-parity grading all exist as elements of $\mathbb{B}$, and that this is forced by the dimension count rather than chosen: one mode saturates the algebra, so no other choice of single mode is inequivalent, and no second mode can be added.
+It does say that the fermionic canonical anticommutation relations, the one-mode number operator, the vacuum idempotent, and the fermion-parity grading all exist as elements of $\mathbb{B}$, and that this is forced by the dimension count rather than chosen: one mode saturates the algebra, so every other choice of a single mode is equivalent, and no second mode can be added.
 
 It does not say that the framework **derives** fermionic statistics, or statistics at all. The anticommutation relations are imposed on $\vec\Upsilon_x,\vec\Upsilon_y$; the identification exhibits a realization, not a derivation. Whether the framework selects the fermionic structure, or merely happens to have the dimension that hosts one fermionic mode, is the open question of the article and is recorded as such in the closing section. The dimension coincidence $4=4$ is exact but it is a coincidence of dimensions until something more is said.
 
@@ -239,7 +239,7 @@ The table's last row is the article's finding in one line. The statistics is car
 - The single fermionic mode is realized in $\mathbb{B}$: $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ satisfy $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and are nilpotent, with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ idempotent.
 - The one-mode Fock space is the fundamental module of $\mathbb{B}$, and $\mathbb{B}$ is its endomorphism algebra.
 - Fermion parity for one mode is the element $(-1)^F=i\vec e_z\in\mathbb{M}_+$, and conjugation by it is the $\mathbb{Z}/2$ grading; the grading is defined by the choice of a unit pure quaternion, a two-sphere of choices.
-- The capacity of $\mathbb{B}$ is one fermionic mode: $N$ modes generate $M_{2^N}(\mathbb{C})$, of dimension $4^N$, which exceeds four for $N\ge2$.
+- The capacity of $\mathbb{B}$ is one fermionic mode: $m$ modes generate $M_{2^m}(\mathbb{C})$, of dimension $4^m$, which exceeds four for $m\ge2$.
 - No bosonic mode exists in $\mathbb{B}$, by the trace of a commutator; the obstruction is the finite dimension, not the sector structure.
 - The fixed-point splitting $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is not an associative-algebra grading, though it grades the symmetrized product.
 
@@ -257,7 +257,7 @@ The table's last row is the article's finding in one line. The statistics is car
 
 The creation and annihilation operators of the biquaternion Dirac and Maxwell fields are the mode operators constructed in the two canonical-quantization articles; their Fock spaces are the exterior and symmetric algebras of the modules on which those operators act. Neither Fock space is an object of the algebra $\mathbb{B}$. The finite-dimensional part of the construction is exactly one fermionic mode: $\mathbb{B}\cong M_2(\mathbb{C})$ is the whole one-mode operator algebra, its Fock space is the fundamental module, its number operator $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ is an idempotent, and its fermion parity $(-1)^F=i\vec e_z$ is a Hermitian element whose conjugation is the $\mathbb{Z}/2$ grading. These are the oscillator article's truncated ladder operators; they satisfy the fermionic, not the bosonic, canonical relation.
 
-The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mathbb{C})$ of dimension $4^N$, which leaves no room in a four-dimensional algebra as soon as $N\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once.
+The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mathbb{C})$ of dimension $4^m$, which leaves no room in a four-dimensional algebra as soon as $m\ge2$. The bosonic case is worse rather than analogous: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, because the trace of a commutator vanishes, so the Maxwell ladder is not in the algebra at all. The statistics is carried by the bracket, and the framework's own algebra carries the fermionic bracket once.
 
 ## Summary of Notation
 
@@ -268,7 +268,7 @@ The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mat
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$ | Trace formula; $\mathrm{Tr}(e_t)=2$ |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\mathcal{H}_1$, $\mathcal{F}$ | One-particle space; Fock space |
 | $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ | Annihilation and creation operators (general) |
@@ -282,7 +282,7 @@ The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mat
 | $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Single-mode number operator (idempotent) |
 | $(-1)^F=i\vec e_z$ | Fermion parity (single mode); conjugation is the $\mathbb{Z}/2$ grading |
 | $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ | Canonical anticommutator, realized in $\mathbb{B}$ |
-| $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $N$ fermionic modes |
+| $\mathrm{Cl}(2m)\cong M_{2^m}(\mathbb{C})$ | Mode algebra of $m$ fermionic modes |
 
 ## Further Reading
 

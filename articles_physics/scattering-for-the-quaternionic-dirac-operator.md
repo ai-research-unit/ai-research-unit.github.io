@@ -40,7 +40,7 @@ so the **superscript marks the left multiplication and the subscript the right o
 
 ### Notation for the function spaces
 
-Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scalar functions $u$ with $\lVert u\rVert_s = \lVert(1+\lvert x\rvert^2)^{s/2}u\rVert_{L^2(\mathbb{R}^3)}$ finite; for $\alpha\ge0$, $H^\alpha$ is the Sobolev space of scalar $u$ with $\lVert(1+\lvert\xi\rvert^{\alpha/2})\vec u\rVert_{L^2}$ finite, and $H^{\alpha,s}$ the corresponding weighted space. A biquaternion-valued function belongs to $C(G)$, $L^p(G)$, $H^1(G)$ and so on when each complex component does. These are the spaces in which the compactness and the bounds below are stated, and they are the source's.
+Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scalar functions $u$ with $\lVert u\rVert_s = \lVert(1+\lvert x\rvert^2)^{s/2}u\rVert_{L^2(\mathbb{R}^3)}$ finite; for $\alpha\ge0$, $H^\alpha$ is the Sobolev space of scalar $u$ whose Fourier transform $\hat u$ satisfies $\lVert(1+\lvert\xi\rvert^{\alpha/2})\hat u\rVert_{L^2}<\infty$, and $H^{\alpha,s}$ the corresponding weighted space. A biquaternion-valued function belongs to $C(G)$, $L^p(G)$, $H^1(G)$ and so on when each complex component does. These are the spaces in which the compactness and the bounds below are stated, and they are the source's.
 
 ## Maxwell's Equations as a Dirac-Type System
 
@@ -249,7 +249,7 @@ $$
 
 so the kernels of the Lippmann–Schwinger equation are weakly singular, hence the integral operators are **compact** as maps on spaces of continuous functions and on $L^p$, $1<p<\infty$, for bounded domains. This is the classical route, and the corpus's scattering articles use it in the same form; it is worth noting that it needs the *boundedness* of the domain, which is why the integration is over $G$ and not over $\mathbb{R}^3$.
 
-**Uniqueness** of the homogeneous solution comes from the unique continuation principle, quoted as the source's Lemma 8.5 from Colton and Kress, with the proof going back to Müller. Let $G\subset\mathbb{R}^3$ be a domain and $u_x,\dots,u_P\in C^2(G)$ real-valued with
+**Uniqueness** of the homogeneous solution comes from the unique continuation principle, quoted as the source's Lemma 8.5 from Colton and Kress, with the proof going back to Müller. Let $G\subset\mathbb{R}^3$ be a domain, $P\in\mathbb{N}$, and $u_1,\dots,u_P\in C^2(G)$ real-valued with
 
 $$
 \lvert\Delta u_p\rvert \le c\sum_{q=1}^{P}\bigl\{\lvert u_q\rvert+\lvert\operatorname{grad}u_q\rvert\bigr\} \qquad \text{in } G, \qquad p=1,\dots,P ,
@@ -290,13 +290,13 @@ $$
 the plane wave being annihilated exactly. And for the shifted operator,
 
 $$
-(D_3+M_{ik})\bigl(\exp(ik\cdot x)b\bigr) = \exp(ik\cdot x)\bigl(D_3b + ikv + b\,ik\bigr),
+(D_3+M_{ik})\bigl(\exp(ik\cdot x)b\bigr) = \exp(ik\cdot x)\bigl(D_3b + ikb + b\,ik\bigr),
 $$
 
-which is where the side of the multiplication shows: the term $ikv$ comes from $D_3$'s action on the plane wave, and the term $b\,ik$ from the shift. For a **vector-valued** $b$ the two products $ikv$ and $b\,ik$ combine, for $i$ is central and
+which is where the side of the multiplication shows: the term $ikb$ comes from $D_3$'s action on the plane wave, and the term $b\,ik$ from the shift. For a **vector-valued** $b$ the two products $ikb$ and $b\,ik$ combine, for $i$ is central and
 
 $$
-kv + vk = -k\cdot b + k\times b - b\cdot k + b\times k = -2\,k\cdot b ,
+kb + bk = -k\cdot b + k\times b - b\cdot k + b\times k = -2\,k\cdot b ,
 $$
 
 the cross terms cancelling and the sum being a pure scalar, so that the first and third terms collapse to $-2i(k\cdot b)$ and
@@ -341,13 +341,13 @@ $$
 The two Green's functions of the shifted operators are then obtained by applying the first-order operator to $g_\gamma$: the source gives
 
 $$
-G_\gamma(\lambda,z) = (D_3+M^{iz\gamma}-k)\,g_\gamma(\lambda,z)
+G^{\mathrm L}_\gamma(\lambda,z) = (D_3+M^{iz\gamma}-k)\,g_\gamma(\lambda,z)
 $$
 
 for the left-multiplication case, obtained from $(D_3+M^{iz\gamma}-k)(D_3+M^{iz\gamma}+k) = -\Delta-2iz\gamma\cdot\nabla-\lambda^2$ with $\lambda^2=k^2-z^2$, and a **different** Faddeev Green's function
 
 $$
-G_\gamma(\lambda,z) = (D_3+M^{iz\gamma}-M_{ik})\,g_\gamma(\lambda,z)
+G^{\mathrm R}_\gamma(\lambda,z) = (D_3+M^{iz\gamma}-M_{ik})\,g_\gamma(\lambda,z)
 $$
 
 for the right-multiplication case, from the corresponding factorisation with the right multiplications. The two differ because the two sides of the multiplication differ, and the source's own remark is the blunt one: "the multiplication from the other side leads to a different Faddeev's Green's function". The properties are restated as a theorem: the same continuity and analyticity as $g_\gamma$, and for $s>\tfrac12$, $\lambda+\lvert z\rvert\ge\delta_0$ and $0\le\alpha\le1$ a constant $C$ with
@@ -356,7 +356,7 @@ $$
 \lVert g_\gamma(\lambda,z)\rVert_{(L^{2,s}\to H^{\alpha,s})} \le C\,(\lambda+\lvert z\rvert)^{\alpha} .
 $$
 
-This last estimate is printed with the *opposite* dependence on $\lambda+\lvert z\rvert$ from the proposition above it — increasing where the earlier bound decreases — and the two ranges of $\alpha$ do not coincide. As printed, the second is not a smoothing estimate and the first is; the discrepancy is recorded here and in the companion `.context`, and the reciprocal is to be checked against Isozaki's paper before either bound is relied on. The theorem's preamble speaks of the two $G_\gamma$ while its three items are printed with $g_\gamma$, one more instance of the chapter's loose use of the two symbols; the bounds are meant for the Green's functions of the shifted operators, which is how they are read here. The chapter's closing sentence draws the conclusion of the whole construction: with Faddeev's Green's function the inverse problem can be attacked, and its solution $u$ may be assumed to have the structure $u=\exp(ik\cdot x)b$, which is the appropriate setting for optical coherence tomography.
+This last estimate is printed with the *opposite* dependence on $\lambda+\lvert z\rvert$ from the proposition above it — increasing where the earlier bound decreases — and the two ranges of $\alpha$ do not coincide. As printed, the second is not a smoothing estimate and the first is; the discrepancy is recorded here and in the companion `.context`, and the reciprocal is to be checked against Isozaki's paper before either bound is relied on. The theorem's preamble speaks of the two $G^{\mathrm L}_\gamma$ and $G^{\mathrm R}_\gamma$ while its three items are printed with $g_\gamma$, one more instance of the chapter's loose use of the two symbols; the bounds are meant for the Green's functions of the shifted operators, which is how they are read here. The chapter's closing sentence draws the conclusion of the whole construction: with Faddeev's Green's function the inverse problem can be attacked, and its solution $u$ may be assumed to have the structure $u=\exp(ik\cdot x)b$, which is the appropriate setting for optical coherence tomography.
 
 ## What the Source Establishes, Transcribes, and Does Not
 
@@ -371,11 +371,11 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 - The radiation condition of Proposition 7.3 in both forms, and the additional decay hypothesis in the zero-divisor case.
 - The Lippmann–Schwinger equation (8.5) and its equivalence with the differential problem.
 - The weak-singularity bounds, the compactness they give, the unique continuation principle and the uniqueness theorem.
-- Faddeev's decomposition, the Green's operator $g_\gamma$, Isozaki's bounds and the two Green's functions $G_\gamma$.
+- Faddeev's decomposition, the Green's operator $g_\gamma$, Isozaki's bounds and the two Green's functions $G^{\mathrm L}_\gamma$ and $G^{\mathrm R}_\gamma$.
 
 **Established, in the sense that it was recomputed here.**
 
-- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm M_k)(D_3\mp M_k)=-\Delta+\lvert k\rvert^2$ and the same with $ik$, both orderings; $(D_3-M^{ik})(\exp(ik\cdot x)b)=\exp(ik\cdot x)D_3b$; and $kv+vk=-2k\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $M^k$ and $M_k$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
+- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm M_k)(D_3\mp M_k)=-\Delta+\lvert k\rvert^2$ and the same with $ik$, both orderings; $(D_3-M^{ik})(\exp(ik\cdot x)b)=\exp(ik\cdot x)D_3b$; and $kb+bk=-2k\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $M^k$ and $M_k$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
 - The identification $C_k=\mathcal K_{+k}$ in the corpus's notation, and with it the decision that the corpus's kernel sign, not the source's section 2.1 sign, is the one to keep.
 
 **Not established, and left visible.**
@@ -429,7 +429,7 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | $L^{2,s}$, $H^{\alpha,s}$ | Weighted $L^2$ and weighted Sobolev spaces of the compactness and the bounds |
 | $k=\eta+t\gamma$, $\lambda^2=k^2-t^2$ | Faddeev's decomposition of the wave vector along a unit direction $\gamma$ |
 | $g_\gamma(\lambda,z)$ | Faddeev's Green's operator; symbol $(\xi^2+2z\gamma\cdot\xi-\lambda^2)^{-1}$, $z\in\mathbb{C}_+$ |
-| $G_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
+| $G^{\mathrm L}_\gamma(\lambda,z)$, $G^{\mathrm R}_\gamma(\lambda,z)$ | The two Faddeev Green's functions of the shifted operators, one for each side of the multiplication |
 
 ## Further Reading
 

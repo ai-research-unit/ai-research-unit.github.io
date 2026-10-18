@@ -90,7 +90,7 @@ equivalently $\vec\xi\vec\xi'+\vec\xi'\vec\xi=0$. The case $\vec\xi=0$ is the pu
 
 ## The Idempotents and the Halving Map
 
-**Every idempotent of $\mathbb{B}$ is trivial, $0$ or $e_t$, or of the form $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; the halving map is a bijection from the roots of $+1$ onto the idempotents; and each root carries the complete orthogonal pair $\tilde\Pi_\pm$.**
+**Every idempotent of $\mathbb{B}$ is $0$, $e_t$, or of the form $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; the halving map is a bijection from the roots of $+1$ onto the idempotents; and each root carries the complete orthogonal pair $\tilde\Pi_\pm$.**
 
 An **idempotent** is an element with $\tilde\Pi^2=\tilde\Pi$, the square being the multiplication of the algebra. The **halving map** $\tilde\Xi\mapsto\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $\tilde\Xi=2\tilde\Pi-e_t$; the companion **pair map** $\tilde\Xi\mapsto(\tilde\Pi_+,\tilde\Pi_-)$ is a bijection from the roots onto the ordered complete orthogonal pairs of idempotents. Both computations are two lines: if $\tilde\Xi^2=e_t$ then $\tfrac14(e_t+\tilde\Xi)^2=\tfrac14(e_t+2\tilde\Xi+e_t)=\tfrac12(e_t+\tilde\Xi)$, and if $\tilde\Pi^2=\tilde\Pi$ then $(2\tilde\Pi-e_t)^2=4\tilde\Pi-4\tilde\Pi+e_t=e_t$.
 
@@ -114,15 +114,15 @@ the algebraic form of a projection and its complementary projection; a Hermitian
 
 **The Hermitian roots of $+1$ are the trivial roots $\pm e_t$ and the purely imaginary family $\pm i\tilde\xi$; a Hermitian root is a Hermitian element of square $e_t$, read as a Hermitian observable whose values are $\pm1$.**
 
-The Hermitian roots are exactly the roots that lie in the informational sector $\mathbb{M}_+$. A Hermitian element of the algebra has the form $a_0e_t+i\vec\eta$ with $a_0\in\mathbb{R}$ and $\vec\eta$ a real pure quaternion, and its square is
+The Hermitian roots are exactly the roots that lie in the informational sector $\mathbb{M}_+$. A Hermitian element of the algebra has the form $\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$ and $\vec h$ a real pure quaternion, and its square is
 
 $$
-(a_0e_t+i\vec\eta)^2=(a_0^2+\lvert\vec\eta\rvert^{2})e_t+2a_0i\vec\eta .
+(h_te_t+i\vec h)^2=(h_t^2+\lvert\vec h\rvert^{2})e_t+2h_ti\vec h .
 $$
 
-The vector part vanishes only when $a_0=0$ or $\vec\eta=0$, and the two cases give the purely imaginary family and the pair $\pm e_t$. So the Hermitian roots are the trivial roots and the family $\pm i\tilde\xi$, and no non-trivial root is Hermitian.
+The vector part vanishes only when $h_t=0$ or $\vec h=0$, and the two cases give the purely imaginary family and the pair $\pm e_t$. So the Hermitian roots are the trivial roots and the family $\pm i\tilde\xi$, and no non-trivial root is Hermitian.
 
-**The interpretation.** A Hermitian root $\tilde\Xi$ has $\tilde\Xi^{*}=\tilde\Xi$ and $\tilde\Xi^2=e_t$. It is read as a **Hermitian observable** of the informational sector, and specifically as an observable whose only values are $\pm1$: an involution of the state space, a parity or a sign. The two central roots $\pm e_t$ are the trivial observables, the constants $+1$ and $-1$; the family $i\tilde\xi$ is the family of non-trivial such observables, one for each direction $\tilde\xi$ of the real unit sphere. The family is two-real-parameter because a direction on the sphere is.
+**The interpretation.** A Hermitian root $\tilde\Xi$ has $\tilde\Xi^{*}=\tilde\Xi$ and $\tilde\Xi^2=e_t$. It is read as a **Hermitian observable** of the informational sector, and specifically as an observable whose only values are $\pm1$: an involution of the state space, a parity or a sign. The two central roots $\pm e_t$ are the trivial observables, the constants $+1$ and $-1$; the family $i\tilde\xi$ is the family of non-trivial such observables, one for each direction $\tilde\xi$ of the real unit sphere. The family has two real parameters because a direction on the sphere does.
 
 Three worked roots fix the reading. The element $i\vec e_z$ is a Hermitian root, $(i\vec e_z)^{*}=i\vec e_z$ and $(i\vec e_z)^2=e_t$, and it is the standard one; $i\vec e_x$ is another; and the non-trivial root $\vec e_x+i(\vec e_y+\vec e_z)$ is a root but is not Hermitian, hence not an observable. The distinction is the content of the table of §*The Roots of One*.
 
@@ -138,7 +138,7 @@ $$
 \tilde\Pi_\pm(i\tilde\xi)=\tfrac12(e_t\pm i\tilde\xi),\qquad \tilde\xi\in S^{2},
 $$
 
-the Bloch sphere of the pure states, with the trivial projections $e_t$ and $0$ at the centre. The trace of a state is the central part, $\operatorname{Tr}\tilde\Pi=2\operatorname{Sc}\tilde\Pi=1$, and the pairing of a state with an observable is the Hermitian form of *The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*.
+the Bloch sphere of the pure states, the trivial projections $e_t$ and $0$ being the degenerate cases. The trace of a state is the central part, $\operatorname{Tr}\tilde\Pi=2\operatorname{Sc}\tilde\Pi=1$, and the pairing of a state with an observable is the Hermitian form of *The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*.
 
 **The spectral resolution.** For the Hermitian root $\tilde\Xi=i\tilde\xi$ the two idempotents are the spectral projections of the observable:
 

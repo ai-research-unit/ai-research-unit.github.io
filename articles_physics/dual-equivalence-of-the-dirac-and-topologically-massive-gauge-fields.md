@@ -14,7 +14,7 @@ The conventions are those of the companion articles: four-vector indices $\mu = 
 
 ### The Idea
 
-A dual equivalence between two second-order theories is usually exhibited by a **first-order** action, linear in the field strength, with an auxiliary field that can be eliminated in two ways. The prototypical example is the equivalence between the Maxwell action $-\tfrac14 F_{\mu\nu}F^{\mu\nu}$ and its first-order form $\tfrac12 B^{\mu\nu}(\partial_\mu A_\nu - \partial_\nu A_\mu) - \tfrac18 B_{\mu\nu}B^{\mu\nu}$, whose elimination of $B$ gives Maxwell and whose elimination of $A$ gives the dual (magnetic) Maxwell theory. Liu's construction is the same move with the s-vector as the basic field, and the auxiliary field being the antisymmetric part of the biquaternion:
+A dual equivalence between two second-order theories is usually exhibited by a **first-order** action, linear in the field strength, with an auxiliary field that can be eliminated in two ways. The prototypical example is the equivalence between the Maxwell action $-\tfrac14 F_{\mu\nu}F^{\mu\nu}$ and its first-order form $\tfrac12 B^{\mu\nu}(\partial_\mu A_\nu - \partial_\nu A_\mu) - \tfrac18 B_{\mu\nu}B^{\mu\nu}$, whose elimination of $B$ gives Maxwell and whose elimination of $A$ gives the dual (magnetic) Maxwell theory. Liu's construction is the same move with the s-vector as the basic field, the auxiliary field being the antisymmetric part of the biquaternion:
 
 $$
 S_{\text{parent}}[G, A] = \int \tfrac12\Bigl[G^*_\nu\, i\check c^{\nu\mu\lambda}\,\tilde\nabla_\mu G_\lambda - \bigl(\tilde\nabla_\mu G_\nu\bigr)^* i\check c^{\nu\mu\lambda} G_\lambda\Bigr] + S_{\text{aux}}[G, A],
@@ -38,7 +38,7 @@ $$
 
 the second term being the topological (Chern–Simons-type / BF-type) mass. The two Lagrangians describe the same propagating modes.
 
-**Attribution.** The specific form of $S_{\text{aux}}$, the precise field content of the gauge sector, and the dimension in which the topological mass lives are the source's; the display above is the structure the equivalence has, and the reader should take the two Lagrangian *shapes* — a Dirac kinetic-plus-chirality-off-diagonal-mass form, and a Maxwell-plus-topological-mass form — as the content, not the exact coefficients of $S_{\text{aux}}$. The coefficient $m/4$ and the sign of the topological term are recorded from the source.
+**Attribution.** The specific form of $S_{\text{aux}}$, the precise field content of the gauge sector, and the dimension in which the topological mass lives are the source's; the display above shows the structure of the equivalence, and the reader should take the two Lagrangian *shapes* — a Dirac kinetic-plus-chirality-off-diagonal-mass form, and a Maxwell-plus-topological-mass form — as the content, not the exact coefficients of $S_{\text{aux}}$. The coefficient $m/4$ and the sign of the topological term are recorded from the source.
 
 ## The Machinery the Equivalence Uses
 
@@ -71,7 +71,7 @@ $$
 m\,\bar\Psi\Psi = \tfrac{m}{2}\bigl(N_\nu N^\nu - B_\nu B^\nu\bigr) = \bar\Psi\, K_\mu\gamma^\mu\Psi
 $$
 
-for a unit complex vector $K^\mu$ built from the field. The mass is a unit vector, hence a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.
+for a unit complex vector $K^\mu$ built from the field. The mass is carried by a unit vector, which the source reads as a **phase**, and the phase is *non-integrable*: it cannot be removed by a gauge transformation of the s-vector. The topological mass of the gauge field and the non-integrable mass of the Dirac field are read as the same object in the two reductions — a mass that is a phase rather than a scalar. This interpretation is the source's and is recorded, with the companion article *The Dirac Equation in Biquaternionic Form* carrying the same element.
 
 ## What the Equivalence Is and Is Not
 

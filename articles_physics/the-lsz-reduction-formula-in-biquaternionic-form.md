@@ -85,7 +85,7 @@ Multiplying a correlation function by $\mathcal{M}(\tilde P)$ on a leg is precis
 
 **Centrality and commutation.** Because $\mathcal{M}(\tilde P)$ is central — it is a complex number times $e_t$ — the amputation commutes with the algebra's left and right multiplications and does not disturb any internal index. For a scalar field this means the amputation acts identically on both sectors and on all components; the operator can be moved freely past vertex factors, and the reduction is commutative with the internal symmetry structure. This is the algebraic statement behind the factorized kinematics of the next-but-one section.
 
-**The pole set is a biquaternion-norm level set.** The mass shell $\mathcal{M}(\tilde P)=0$ is the statement $\tilde P\tilde P^{\natural}=-m^2$, a level set of the biquaternion norm. For $m=0$ it is the zero set of the biquaternion norm, i.e. the zero-divisor cone, the light cone of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The reduction formula thus places the external legs on a level set of the same biquaternion norm that determines the algebra's singular elements, the metric, and the zero-divisor cone; the mass shell and the light cone are the $m\ne0$ and $m=0$ members of one family.
+**The pole set is a biquaternion-norm level set.** The mass shell $\mathcal{M}(\tilde P)=0$ is the statement $\tilde P\tilde P^{\natural}=-m^2$, a level set of the biquaternion norm. For $m=0$ it is the zero set of the biquaternion norm, i.e. the zero-divisor cone, the light cone of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The reduction formula thus places the external legs on a level set of the same biquaternion norm that determines the algebra's singular elements, the metric, and the zero-divisor cone; the mass shell and the light cone are the $m\ne0$ and $m=0$ members of one family. A numerical check with $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ gives
 
 $$
 \tilde P\tilde P^{\natural} = -E^2+\vec p^2 = -0.490000
@@ -103,7 +103,7 @@ $$
 \qquad
 \tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
 $$
-with $\tilde Q_{\mathrm{amp}}$ a constant biquaternion amplitude, a bound element of $\mathbb{B}$ whose complex scalar part fixes the majuscule. The wave satisfies $(\Box-m^2)\tilde\Phi_{\tilde P}=0$ for $\tilde P\tilde P^{\natural}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde P\tilde P^{\natural}+m^2)=-\mathcal{M}(\tilde P)$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde{R})=p\cdot x$, so the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.
+with $\tilde Q_{\mathrm{amp}}$ a constant biquaternion amplitude, a bound element of $\mathbb{B}$ whose majuscule marks its complex scalar part. The wave satisfies $(\Box-m^2)\tilde\Phi_{\tilde P}=0$ for $\tilde P\tilde P^{\natural}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde P\tilde P^{\natural}+m^2)=-\mathcal{M}(\tilde P)$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde{R})=p\cdot x$, so the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.
 
 **The one-particle states.** The asymptotic states are one-particle states of the Fock module of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, labeled by on-shell momenta and by the internal (spinor or helicity) label carried by the module. The external wavefunction is the constant amplitude $\tilde Q_{\mathrm{amp}}$ times the central phase; for a scalar field it is an element of $\mathbb{B}$, while for a spinor field the same slot carries the module vector $w^{(r)}$ of the spinor section, bare by the rule that a spinor carries no tilde. The LSZ integral projects a correlation function onto that amplitude.
 
@@ -268,7 +268,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $w^{(r)},v^{(r)}$ | External spinors; $\sum_r w^{(r)}\bar w^{(r)}=\not p+m$ |
 | $Z=Z_-+Z_+$ | Scalar-sector splitting of the residue (sum) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\langle\tilde{Q}_1\rangle_{\natural}$ |
 
 ## Further Reading
 

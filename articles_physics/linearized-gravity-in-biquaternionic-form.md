@@ -289,7 +289,7 @@ $$
 
 Because antisymmetrization in $\rho\sigma$ is antisymmetrization in the product of two material basis vectors, each $\tilde Q_{3\mu\nu}$ is a complex pure vector, hence an element of the six-dimensional bivector subspace that the parent article identifies with $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$. The gravitational field strength is thus a **Lie-algebra-valued two-form** on the manifold, and every value it takes sits inside $\mathbb{B}$. This is the exact structural analogue of the electromagnetic field strength: the gauge article records that the electromagnetic $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is a single bivector, the curvature of an abelian connection, while the gravitational $\tilde Q_{3\mu\nu}$ is a bivector-valued two-form, the curvature of a connection valued in the non-abelian Lorentz Lie algebra. The identification of $\tilde Q_{3\mu\nu}$ with the curvature of the torsion-free spin connection is the standard tetrad identification, and the parent article records that metric compatibility and the vanishing of torsion are conditions the algebra does not select. The algebra supplies the home for each bivector value; it does not supply the object, because the object is built from $h$, which is not in the algebra.
 
-The physical, gauge-invariant content of the curvature is its **Weyl part**, the ten-component tensor obtained from $R_{\mu\nu\rho\sigma}$ by removing the Ricci and scalar traces. In vacuum the two coincide, because the Ricci part vanishes, and the propagating degrees of freedom are in the Weyl tensor. Its encoding in the biquaternion framework — through the self-dual and anti-self-dual bivectors, or through the five complex Newman–Penrose scalars $\Psi_0, \dots, \Psi_4$ — is a separate problem, and it is not attempted here; it is recorded among the open questions.
+The propagating, gauge-invariant content of the curvature is its **Weyl part**, the ten-component tensor obtained from $R_{\mu\nu\rho\sigma}$ by removing the Ricci and scalar traces. In vacuum the two coincide, because the Ricci part vanishes, and the propagating degrees of freedom are in the Weyl tensor. Its encoding in the biquaternion framework — through the self-dual and anti-self-dual bivectors, or through the five complex Newman–Penrose scalars $\Psi_0, \dots, \Psi_4$ — is a separate problem, and it is not attempted here; it is recorded among the open questions.
 
 ## The Field Equation and the Trace-Reversal Step
 
@@ -316,7 +316,7 @@ $$
 = h_{\mu\nu} - \tfrac{1}{2}\eta_{\mu\nu}h = \bar{h}_{\mu\nu},
 $$
 
-because $\langle\varepsilon_\mu, \tfrac{1}{4}h\,\varepsilon_\nu\rangle_{\natural} + \langle\tfrac{1}{4}h\,\varepsilon_\mu, \varepsilon_\nu\rangle_{\natural} = \tfrac{1}{2}h\,\eta_{\mu\nu}$. The trace-reversal is therefore not an operation that takes the graviton out of the framework: it is a shift of each $\delta\tilde{E}_\mu$ by a multiple of the corresponding basis vector $\varepsilon_\mu$, with the multiple fixed by the biquaternionic trace. The identity was checked on randomly generated $h$ with the two sides agreeing exactly, and it reproduces $\bar{h} = -h$ as it must. This is the natural place for a sign to be fitted to the case that suggested it, so it was checked on a random case and the $\bar{h} = -h$ contraction was verified independently.
+because $\langle\varepsilon_\mu, \tfrac{1}{4}h\,\varepsilon_\nu\rangle_{\natural} + \langle\tfrac{1}{4}h\,\varepsilon_\mu, \varepsilon_\nu\rangle_{\natural} = \tfrac{1}{2}h\,\eta_{\mu\nu}$. The trace-reversal is therefore not an operation that takes the graviton out of the framework: it is a shift of each $\delta\tilde{E}_\mu$ by a multiple of the corresponding basis vector $\varepsilon_\mu$, with the multiple fixed by the biquaternionic trace. The identity was checked on randomly generated $h$ with the two sides agreeing exactly, and it reproduces $\bar{h} = -h$ as it must. The sign is the natural place for an error, so the $\bar{h} = -h$ contraction was checked independently on a random case.
 
 ### The Wave Equation
 
@@ -405,7 +405,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\varepsilon_\mu = (ie_t, \vec e_x, \vec e_y, \vec e_z)$ | Material basis of $\mathbb{M}_-$ |
 | $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ | Flat metric of the material sector |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
 | $x^\mu = (ct,x,y,z)$, $\partial/\partial x^\mu$ | Real coordinates and their derivatives; $ict = i x^0$ |
 | $\partial/\partial Q_t = -i\partial/\partial x^0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x^0$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \eta^{\mu\nu}\partial^2/\partial x^\mu\partial x^\nu$ | Biquaternionic gradient, conjugate, d'Alembertian |
@@ -424,7 +424,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\partial^\lambda\bar{h}_{\lambda\nu} = 0$ | Harmonic gauge |
 | $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ | Linearized Einstein equation |
 | $A_{\mu\nu}$, plus/cross | Plane-wave amplitude; the two polarizations |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula of the informational sector |
+| $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$ | Trace pairing of the informational sector |
 
 ## Further Reading
 

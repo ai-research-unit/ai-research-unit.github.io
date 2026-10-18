@@ -45,15 +45,15 @@ $$
 $$
 so that $\mathbb{M}_+$ is the set of Hermitian elements, $\mathbb{M}_-$ the set of anti-Hermitian ones, and $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$.
 
-**Theorem.** There are no $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{M}_+$ and no non-zero central real $\lambda$ with $[\tilde{Q}_1,\tilde{Q}_2]=\lambda\,i\,e_t$.
+**Theorem.** There are no $\tilde H_1,\tilde H_2\in\mathbb{M}_+$ and no non-zero central real $\lambda$ with $[\tilde H_1,\tilde H_2]=\lambda\,i\,e_t$.
 
-**Proof.** Write $\tilde{Q}_1=h_te_t+i\vec h\cdot\mathbf{e}$ and $\tilde{Q}_2=k_te_t+i\vec k\cdot\mathbf{e}$ with $h_t,k_t\in\mathbb{R}$ and $\vec h,\vec k\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)=h_tk_t+\vec h\cdot\vec k$; the cross terms $i e_\mu\cdot i \vec e_k$ contribute the symmetric $\mathbf{e}\cdot\mathbf{e}$-part and the antisymmetric part of the product is traceless. The same computation with $\tilde{Q}_1$ and $\tilde{Q}_2$ exchanged gives the identical scalar part, so
+**Proof.** Write $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$ with $h_{1t},h_{2t}\in\mathbb{R}$ and $\vec h_1,\vec h_2\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde H_1\tilde H_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2$; the cross terms contribute the symmetric $\vec h_1\cdot\vec h_2$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde H_1$ and $\tilde H_2$ exchanged gives the identical scalar part, so
 $$
-\mathrm{Sc}\bigl([\tilde{Q}_1,\tilde{Q}_2]\bigr)=0 .
+\mathrm{Sc}\bigl([\tilde H_1,\tilde H_2]\bigr)=0 .
 $$
 The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
 
-**The general statement.** The Hermitian hypothesis is unnecessary. For **any** $\tilde Q_2,\tilde{Q}_1\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the *reading*: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\lambda\,i\,e_t$ is anti-Hermitian too — but the **absence of a scalar part**, equivalently the vanishing of the trace.
+**The general statement.** The Hermitian hypothesis is unnecessary. For **any** $\tilde Q_1,\tilde{Q}_2\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde Q_1\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_2\tilde Q_1)$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the *reading*: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\lambda\,i\,e_t$ is anti-Hermitian too — but the **absence of a scalar part**, equivalently the vanishing of the trace.
 
 **The scope of the theorem.** The same argument applies in every finite-dimensional module of $\mathbb{B}$, since the trace there is cyclic as well. The obstruction is therefore not a quirk of the algebra's particular dimension. It is a statement about every finite-dimensional carrier: the relation cannot be assembled from finitely many levels.
 
@@ -73,7 +73,7 @@ Why the framework is not in the business of satisfying the relation is a matter 
 
 The independence claim can now be stated in one paragraph, with its one-directional character made explicit.
 
-**The claim.** Separate the two layers of the framework: the **internal algebra** $\mathcal{A}$ — the algebra, its two sectors, its trace pairing, its brackets and its unitary group — and the **carrier** $\mathcal{M}$ on which the framework is represented, a module over $\mathcal{A}$ whose dimension is the domain's choice, finite for the discrete transform and infinite for the continuous one. The independence is a statement about $\mathcal{A}$, and it is exact: the content of $\mathcal{A}$ is unchanged whether $\mathrm{CCR}$ is added or removed. The relation never enters $\mathcal{A}$, and no element of $\mathcal{A}$ satisfies it. The carrier is a different matter and must be named separately, because it is where a continuum, and with it the relation, can be carried at all: the relation bears on $\mathcal{M}$ and not on $\mathcal{A}$. Stated with both layers, the claim is that **$\mathcal{A}$ is independent of the relation, and $\mathcal{M}$ is fixed by the domain of physics and not by the relation** — a carrier that holds the relation and one that does not have the same fibres, hence the same internal algebra. What the relation cannot do is constrain $\mathcal{A}$; what it does constrain is the dimension of $\mathcal{M}$, which is why it is a statement about the carrier and not about the framework's internal structure.
+**The claim.** Separate the two layers of the framework: the **internal algebra** $\mathcal{A}$ — the algebra, its two sectors, its trace pairing, its brackets and its unitary group — and the **carrier** $\mathcal{M}$ on which the framework is represented, a module over $\mathcal{A}$ whose dimension is the domain's choice, finite for the discrete transform and infinite for the continuous one. The independence is a statement about $\mathcal{A}$, and it is exact: the content of $\mathcal{A}$ is unchanged whether the relation is added or removed. The relation never enters $\mathcal{A}$, and no element of $\mathcal{A}$ satisfies it. The carrier is a different matter and must be named separately, because it is where a continuum, and with it the relation, can be carried at all: the relation bears on $\mathcal{M}$ and not on $\mathcal{A}$. Stated with both layers, the claim is that **$\mathcal{A}$ is independent of the relation, and $\mathcal{M}$ is fixed by the domain of physics and not by the relation** — a carrier that holds the relation and one that does not have the same fibres, hence the same internal algebra. What the relation cannot do is constrain $\mathcal{A}$; what it does constrain is the dimension of $\mathcal{M}$, which is why it is a statement about the carrier and not about the framework's internal structure.
 
 **The asymmetry.** The independence is not symmetric. The framework **entails** a fact about the relation, namely that no finite-dimensional carrier satisfies it; the relation entails nothing about the framework. So the correct summary is that the relation is independent of the framework, while the framework is not entirely silent about the relation. Silence would be the wrong word for a theory that proves the relation's finite-dimension obstruction.
 
@@ -156,7 +156,7 @@ The claim must not be overread, and the following are not asserted.
 
 | Item | Status |
 |---|---|
-| $[\tilde{Q}_1,\tilde{Q}_2]=\lambda\,i\,e_t$ with $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{M}_+$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{Q}_1,\tilde{Q}_2])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
+| $[\tilde H_1,\tilde H_2]=\lambda\,i\,e_t$ with $\tilde H_1,\tilde H_2\in\mathbb{M}_+$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde H_1,\tilde H_2])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
 | Trace of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ |
 | The same in any finite-dimensional module | Vanishes; the trace there is cyclic too |
 | $\mathbb{M}_+$ as an observable algebra | Hermitian $2\times2$ matrices, real dimension four; observables of one two-state system |
@@ -198,7 +198,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
-| $\tilde{Q}_1=h_te_t+i\vec h\cdot\mathbf{e}$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)=h_tk_t+\vec h\cdot\vec k$ |
+| $\tilde{H}_1=h_{1t}e_t+i\vec h_1$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{H}_1\tilde{H}_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2$ |
 | $[Q,P]=i\hbar I$ | Canonical commutation relation |
 | $\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
 | $|x\rangle$, $\langle x|x'\rangle=\delta(x-x')$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |

@@ -29,7 +29,7 @@ $$
 \mathsf{M}_2(e_t) = I_2, \quad \mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu, \quad \mathsf{M}_2(i) = iI_2,
 $$
 
-so that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2) = 2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+so that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. The trace pairing of the informational sector is $\mathrm{Tr}(\tilde H_1\tilde H_2) = 2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## Conventions: Signature and the Tetrad Normalization
 
@@ -101,7 +101,7 @@ $$
 
 The two real null directions are the two primitive idempotents, and the complex pair is the off-diagonal pair. The tetrad is the Peirce decomposition of the algebra read as a null frame: the "physical" content of the tetrad — two real null directions — is exactly the idempotent content of $\mathbb{B}$.
 
-The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q_1,\tilde Q_2\rangle_{\natural} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. Because $\bar{\tilde\Pi}_2 = \tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$,
+The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q_1,\tilde Q_2\rangle_{\natural} = \mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$. Because $\bar{\tilde\Pi}_2 = \tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$,
 
 $$
 \langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Pi_1\,\bar{\tilde\Pi}_2) = -2\,\mathrm{Sc}(\tilde\Pi_1^2) = -1 ,
@@ -217,7 +217,7 @@ $$
 
 with an overall sign that is convention-dependent. The index structure of (9) fixes the boost weights computed in the next section, and the pattern of which legs appear in which scalar is the part of the convention that matters.
 
-The counting works, and the decomposition $10 = 5$ complex is a real isomorphism rather than a coincidence. To verify it, parametrise a general tensor with the Weyl symmetries $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$, $C_{a[bcd]}=0$ and $g^{ac}C_{abcd}=0$. With the antisymmetries and pair symmetry there are $21$ independent pair-components; the first Bianchi identity imposes one independent condition and trace-freeness imposes ten, leaving a $21-11=10$ dimensional space. The map that sends such a tensor to the five complex contractions (9) was computed on that ten-dimensional space and found to have rank ten over $\mathbb{R}$ — equivalently rank five over $\mathbb{C}$ — so the five complex scalars are exactly the ten real components reorganised, and no information is lost.
+The counting works, and the passage from ten real components to five complex ones is a real isomorphism rather than a coincidence. To verify it, parametrise a general tensor with the Weyl symmetries $C_{abcd}=-C_{bacd}=-C_{abdc}=C_{cdab}$, $C_{a[bcd]}=0$ and $g^{ac}C_{abcd}=0$. With the antisymmetries and pair symmetry there are $21$ independent pair-components; the first Bianchi identity imposes one independent condition and trace-freeness imposes ten, leaving a $21-11=10$ dimensional space. The map that sends such a tensor to the five complex contractions (9) was computed on that ten-dimensional space and found to have rank ten over $\mathbb{R}$ — equivalently rank five over $\mathbb{C}$ — so the five complex scalars are exactly the ten real components reorganised, and no information is lost.
 
 The scalars have a spinorial form that names them in the framework's own objects. The self-dual part of the Weyl tensor is the totally symmetric fourth-rank spinor
 $$
@@ -230,7 +230,7 @@ $$
 $$
 where the index $0$ refers to the dyad element $o$ and $1$ to $\iota$. Since $S$ is two-dimensional, $\mathrm{Sym}^4 S$ has dimension $\binom{2+4-1}{4}=5$, matching (9); the anti-self-dual part is the complex conjugate spinor $\bar\Psi_{A'B'C'D'} \in \mathrm{Sym}^4\bar S$, and the reality of the Weyl tensor identifies the two, so the ten real components are the real and imaginary parts of the five complex scalars. This is the biquaternionic form of the Weyl scalars: **they are the five components of an element of $\mathrm{Sym}^4 S$, the fourth symmetric power of the framework's spinor module.**
 
-A qualification is required, and it is the main gap of this article. The framework hosts $\mathrm{Sym}^4 S$, because it hosts the spinor module $S$; but the Weyl tensor is an external rank-four object, and nothing in $\mathbb{B}$ determines it. The five scalars are $\mathrm{Sym}^4 S$-valued, and the algebra says what that means, but which element of $\mathrm{Sym}^4 S$ a given spacetime produces is not a question the algebra answers. The next two sections use only the representation theory of $\mathrm{Sym}^4 S$, and are therefore independent of this gap; the classification of a specific spacetime is not.
+A qualification is required, and it is the main gap of this article. The framework hosts $\mathrm{Sym}^4 S$, because it hosts the spinor module $S$; but the Weyl tensor is an external rank-four object, and nothing in $\mathbb{B}$ determines it. The Weyl spinor is $\mathrm{Sym}^4 S$-valued, and the algebra says what that means, but which element of $\mathrm{Sym}^4 S$ a given spacetime produces is not a question the algebra answers. The next two sections use only the representation theory of $\mathrm{Sym}^4 S$, and are therefore independent of this gap; the classification of a specific spacetime is not.
 
 
 ## Boost Weights and the Rotations of the Tetrad
@@ -331,7 +331,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\mathbb{H}_{\mathbb{B}}$ | real-quaternion subspace |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ | the general quaternionic bilinear form on $\mathbb{M}_-$, the interval, of signature $(3,1)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | the general quaternionic bilinear form on $\mathbb{M}_-$, the interval, of signature $(3,1)$ |
 | $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{Sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |

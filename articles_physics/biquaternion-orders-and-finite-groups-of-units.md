@@ -179,7 +179,7 @@ The integral biquaternions over the Gaussian integers have an infinite group of 
 | $A^{(1)},D^{(1)},E^{(1)}_{6,7,8}$ | Simply laced Dynkin types of the five families; the McKay correspondence |
 | $\mathbb{Z}[i]\otimes\mathcal{L}'$ | Integral biquaternions; infinite unit group |
 | $n=\vec e_x+i\vec e_y$, $n^2=0$ | Nilpotent generator of the unipotent family |
-| $e_t+kn$, $N=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
+| $e_t+kn$, $\langle e_t+kn\rangle_{\natural}=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real sector, the slice $ict=0$; home of the orders and their finite unit groups |
 | $c^2t^2=x^2+y^2+z^2$ | Light cone of the material sector; the null condition $\langle\tilde{R}\rangle_{\natural}=0$ there |
 

@@ -204,24 +204,24 @@ $$
 \mathrm{Tr}(\tilde Q_1)=2Q_{1t}=2\,\mathrm{Sc}(\tilde Q_1).
 $$
 
-The normalization is rigidly derived rather than a presentation: the reduced trace of the degree-two matrix model fixes it, and every automorphism of the base fixes $e_t$ and hence the value $\mathrm{Tr}(e_t)$; the vanishing on the vector units is forced. Consequently, for any two biquaternions $\tilde P,\tilde H$,
+The normalization is rigidly derived rather than a presentation: the reduced trace of the degree-two matrix model fixes it, and every automorphism of the base fixes $e_t$ and hence the value $\mathrm{Tr}(e_t)$; the vanishing on the vector units is forced. Consequently, for any two biquaternions $\tilde Q_1,\tilde Q_2$,
 
 $$
-\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H).
+\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2).
 $$
 
 This is the trace formula of the framework, and it is derived, not assumed.
 
-**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde P\tilde H)$ on each sector. For $\tilde P=p_te_t+i\vec p'$ and $\tilde H=h_te_t+i\vec h$ in $\mathbb{M}_+$,
+**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$ in $\mathbb{M}_+$,
 
 $$
-\mathrm{Tr}(\tilde P\tilde H)=2\bigl(p_th_t+\vec p'\cdot\vec h\bigr),
+\mathrm{Tr}(\tilde H_1\tilde H_2)=2\bigl(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\bigr),
 $$
 
-which is real and positive definite; for $\tilde P=ip'_te_t+\vec p$ and $\tilde H=ih'_te_t+\vec h$ in $\mathbb{M}_-$,
+which is real and positive definite; for $\tilde R_1=i r_{1t}e_t+\vec r_1$ and $\tilde R_2=i r_{2t}e_t+\vec r_2$ in $\mathbb{M}_-$,
 
 $$
-\mathrm{Tr}(\tilde P\tilde H)=-2\bigl(p'_th'_t+\vec p\cdot\vec h\bigr),
+\mathrm{Tr}(\tilde R_1\tilde R_2)=-2\bigl(r_{1t}r_{2t}+\vec r_1\cdot\vec r_2\bigr),
 $$
 
 which is real and negative definite; and for one argument in each sector the value is purely imaginary. Hence the real part of the trace form is positive definite on $\mathbb{M}_+$, negative definite on $\mathbb{M}_-$, and the two sectors are orthogonal for it:
@@ -232,10 +232,10 @@ $$
 
 is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
-**The expectation-value form.** For a state $\tilde P=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H=h_te_t+i\vec h$, the trace formula gives
+**The expectation-value form.** For a state $\tilde{Ϛ}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H=h_te_t+i\vec h$, the trace formula gives
 
 $$
-\mathrm{Tr}(\tilde P\tilde H)=h_t+\mu\cdot\vec h,
+\mathrm{Tr}(\tilde{Ϛ}\tilde H)=h_t+\mu\cdot\vec h,
 $$
 
 the Born-rule expectation value. This is an application of the derived trace, not a new posit.
@@ -318,7 +318,7 @@ The results are collected in one place. The statuses are those of the criterion,
 | The split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ | Forced relative to the base | Eigen-decomposition of ${}^{*}$; the real form it uses is an input. |
 | The biquaternion norm $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ | Derived | Multiplication plus ${}^{\natural}$. |
 | The trace $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Derived (rigid) | Vanishes on the vector units because they are commutators; the normalization is the reduced trace of the degree-two matrix model, fixed by every automorphism of the base. |
-| The trace form $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Derived | Consequence of the trace. |
+| The trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Derived | Consequence of the trace. |
 | Exponential, roots of $-1$, idempotents, $SL(2,\mathbb{C})$ | Derived | Solving equations with coefficients in the base. |
 | Polar representations | Derived | Constructions from the exponential and the roots of $-1$. |
 | "Material"/"informational" naming and the four-vector identification | Interpretation | A separate physical posit; not a theorem of the algebra. |
@@ -352,7 +352,7 @@ The one gap is left visible rather than closed. The complexification — equival
 | $\mathbb{M}_-$ | Anti-Hermitian subspace: imaginary scalar, real vector |
 | $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}=\sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; derived |
 | $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Trace; rigidly derived |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace form; derived |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace form; derived |
 | $\mathcal{S}$ | The base: (B1) $\mathbb{H}$, (B2) the complexification |
 
 ## Further Reading

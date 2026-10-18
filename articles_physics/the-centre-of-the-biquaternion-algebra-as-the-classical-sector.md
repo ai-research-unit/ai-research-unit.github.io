@@ -31,7 +31,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$, and a pure state is $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$.
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Q}_1\rangle_{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$, and a pure state is $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$.
 
 ## The Centre: Definition and Computation
 
@@ -61,7 +61,7 @@ Z(\mathbb{B})\cap\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t\}=\mathbb{R}e_t,
 \qquad
 Z(\mathbb{B})\cap\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t\}=\mathbb{R}\,ie_t ,
 $$
-of real dimensions one each, and $Z(\mathbb{B})$ is their direct sum. The Hermitian part is the real line of Hermitian central observables; the anti-Hermitian part carries the complex structure. The split reflects the decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ restricted to the centre: it is the same decomposition, intersected with the scalars.
+of real dimension one each, and $Z(\mathbb{B})$ is their direct sum. The Hermitian part is the real line of Hermitian central observables; the anti-Hermitian part carries the complex structure. The split reflects the decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ restricted to the centre: it is the same decomposition, intersected with the scalars.
 
 **The centre of the matrix model.** Under $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, which $\mathbb{C}$-linearity extends by $\mathsf{M}_2(i)=iI_2$, the algebra is represented by all complex $2\times2$ matrices, $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$, and the centre corresponds to the scalar matrices,
 $$
@@ -71,13 +71,13 @@ The identification $Z(M_2(\mathbb{C}))=\mathbb{C}I_2$ is the standard statement 
 
 **The two forms on the centre.** The Hermitian form restricts to
 $$
-\langle\lambda e_t,\mu e_t\rangle_{}^{*}=\mathrm{Tr}\bigl((\lambda e_t)^{*}(\mu e_t)\bigr)=2\,\lambda^{*}\mu ,
+\langle\lambda e_t,\mu e_t\rangle_{*}=\mathrm{Tr}\bigl((\lambda e_t)^{*}(\mu e_t)\bigr)=2\,\lambda^{*}\mu ,
 $$
 positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the trace normalization $\mathrm{Tr}(e_t)=2$. The biquaternion norm restricts to the **complex square**,
 $$
 \langle \lambda e_t\rangle_{\natural}=\lambda^2e_t ,
 $$
-which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $\langle ae_t\rangle_{\natural}=a^2e_t\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $\langle ibe_t\rangle_{\natural}=-b^2e_t\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the biquaternion norm indefinite (on the complexified directions). The verification of $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ for representative $\lambda$ is elementary and was checked numerically.
+which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $\langle ae_t\rangle_{\natural}=a^2e_t\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $\langle ibe_t\rangle_{\natural}=-b^2e_t\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the biquaternion norm indefinite (on the complexified directions). The verification of $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ for representative $\lambda$ is elementary; it was checked numerically.
 
 **Commutativity and associativity.** The centre is commutative, $\tilde{Q}\tilde{Q}_1=\tilde{Q}_1\tilde{Q}$, and associative, being a subalgebra; its multiplication is complex multiplication,
 $$
@@ -95,7 +95,7 @@ The centre can be described from five directions, and the equivalence of the des
 $$
 \bigl\{\tilde{Q}:\ \mathrm{Ad}_{\tilde{U}}\tilde{Q}=\tilde{Q}\ \ \forall\tilde{U}\in \mathrm{U}(2)\bigr\}=Z(\mathbb{B}).
 $$
-This is the operational characterization of the classical sector: it is the set of algebraic objects that no symmetry of the framework can move. Since the adjoint action descends to the rotations of the Bloch sphere, the rotation-invariant Hermitian observables are the real multiples of the identity, and there is exactly a one-parameter family of them.
+This is the operational characterization of the classical sector: it is the set of algebraic objects that no symmetry of the framework can move. Since the adjoint action descends to the rotations of the Bloch sphere, the rotation-invariant Hermitian observables are the real multiples of the identity, and they form a one-parameter family.
 
 **3. Vanishing of the inner derivations.** The inner derivation attached to $\tilde{Q}$ is $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_1)=[\tilde{Q},\tilde{Q}_1]$. The centre is the common kernel,
 $$
@@ -235,7 +235,7 @@ because every element commutes with the scalars. The two statements together ide
 $$
 \Gamma_{\tilde Q_3}(\tilde{Ϛ})=(\lambda e_t)\,\tilde{Ϛ}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ},
 $$
-a positive multiple of $\tilde{Ϛ}$ and hence the same state after normalization, and the identity on trace-one states exactly for the unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
+It is a positive multiple of $\tilde{Ϛ}$, hence the same state after normalization, and it is the identity on trace-one states exactly for the unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
 
 **3. The central normalizations.** The two normalizations that the framework imposes on its states are central conditions. The trace-one condition is $\mathrm{Tr}(\tilde{Ϛ})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $\mathrm{Tr}(\psi^\dagger\psi)=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.
 

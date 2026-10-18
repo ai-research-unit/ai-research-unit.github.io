@@ -55,7 +55,7 @@ $$
 because $\rho^{\natural}=-\rho$ for a pure element, and its biquaternion norm is the identity,
 
 $$
-N\big(W(t,\omega)\big)=\cos^{2}(2\pi\omega t)+\sin^{2}(2\pi\omega t)=e_t .
+\langle W(t,\omega)\rangle_{\natural}=\cos^{2}(2\pi\omega t)+\sin^{2}(2\pi\omega t)=e_t .
 $$
 
 **The central root is the exception.** The element $i$ is not pure — its scalar part is $i$ — and the kernel is then the central scalar
@@ -98,7 +98,7 @@ $$
 
 The symbol is the interval read in the conjugate variables. It vanishes on the light cone, so that the transform of a solution of $\Box\tilde F=0$ is supported on the cone. The level sets of the symbol and of the interval are the same sets — the two differ by a constant factor and by the overall sign the convention carries — so the mass-shell condition $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$ is the statement that the symbol takes a fixed value, and the **mass labels the level set**: the zero set of the symbol is the massless shell and its level sets are the massive shells.
 
-This is the spectral form of two interpretations the corpus already carries. *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* reads the interval as the square of a material composition and its mass shell as the level set $\{N=-m^{2}c^{2}\}$, and *Square Roots of a General Element in the Biquaternion Algebra: the Realisation* reads the mass shell as the fibre of the natural square over the scalar $-m^{2}c^{2}$. The transform adds the conjugate-variable form of the same statement: in the frequency variables the interval acts as a **multiplier** and not as a form, the transform is the basis in which it is diagonal, and the mass is the value it reads there. The support of a massless field on the cone and the level set of a massive one are the two ends of the same sentence.
+This is the spectral form of two interpretations the corpus already carries. *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* reads the interval as the square of a material composition and its mass shell as the level set $\{\langle\tilde R\rangle_{\natural}=-m^{2}c^{2}\}$, and *Square Roots of a General Element in the Biquaternion Algebra: the Realisation* reads the mass shell as the fibre of the natural square over the scalar $-m^{2}c^{2}$. The transform adds the conjugate-variable form of the same statement: in the frequency variables the interval acts as a **multiplier** and not as a form, the transform is the basis in which it is diagonal, and the mass is the value it reads there. The support of a massless field on the cone and the level set of a massive one are the two ends of the same sentence.
 
 ## The Choice of Root: Which Clock the Analysis Uses
 
@@ -111,7 +111,7 @@ The interpretation is that **the root is the choice of which imaginary direction
 The transform of a finite positive measure is **not** a positive-definite function for $\mathbb{B}$, and the reason is the indefiniteness of the norm. The Bochner-type identity reads
 
 $$
-\sum_{k,l}\bar A_kA_l\,G(\omega_k-\omega_l)=\int N\big(Z(\tilde Q)\big)\,d\mu(\tilde Q),
+\sum_{k,l}\bar A_kA_l\,G(\omega_k-\omega_l)=\int \langle Z(\tilde Q)\rangle_{\natural}\,d\mu(\tilde Q),
 $$
 
 with the biquaternion norm on the right, and the norm is negative on the centre: at zero frequency with the central coefficient $A_1=i$ the left-hand side is $-\mu(\mathbb{R}^{n})e_t$, negative for every non-zero measure. The positivity that a Bochner-type hypothesis needs is therefore absent, and it is not restored by any restriction to ordinary data: it fails at the element that makes the algebra biquaternionic. The repair replaces the norm by a definite form, non-negative but not the norm of the product.

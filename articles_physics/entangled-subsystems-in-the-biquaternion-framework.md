@@ -22,7 +22,7 @@ $$
 
 This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $\vec e_\mu\otimes \vec e_\mu$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.
 
-The same is true in Hilbert-space language, since $|\Psi^-\rangle$ is also a single vector. But the biquaternion formulation makes the point more vivid, because the idempotents are the canonical objects of the algebra and the tensor product is the natural algebraic operation, not an additional postulate. In the biquaternion interpretation, the entanglement is a fact about the *pairing structure* of the algebra, not about a dynamical influence passing between two systems.
+The same is true in Hilbert-space language, since $|\Psi^-\rangle$ is also a single vector. But the biquaternion formulation makes the point more vivid, because the idempotents are the canonical objects of the algebra and the tensor product is the algebraic operation that carries the state. In the biquaternion interpretation, the entanglement is a fact about the *pairing structure* of the algebra, not about a dynamical influence passing between two systems.
 
 ### The singlet as one whole
 
@@ -38,7 +38,7 @@ The question left open by the remark above is which divisions of a whole are adm
 
 Two things must be kept apart in this proposal, and the corpus keeps them apart.
 
-First, the integer-quotient rule is an **assumption**, not a consequence of the division relation. The postulates (EPT1)–(EPT3) of the companion maths article require the relation to be reflexive, transitive and non-antisymmetric; they constrain the relation and say nothing about the quotient, and in particular nothing that restricts it to the units $\pm1$ or to any finite set. The rule is a hypothesis about the physical splitting process, and it is the point at which the mereological interpretation acquires empirical content — and the point at which it can be tested.
+First, the integer-quotient rule is an **assumption**, not a consequence of the division relation. The postulates (EPT1)–(EPT3) of the companion maths article require the relation to be reflexive, transitive and non-antisymmetric; they constrain the relation and say nothing about the quotient, and in particular nothing that restricts it to the units $\pm1,\pm i$ or to any finite set. The rule is a hypothesis about the physical splitting process, and it is the point at which the mereological interpretation acquires empirical content — and the point at which it can be tested.
 
 Second, the exhaustiveness claim that comes with the rule does not survive the test. If the rule were complete, the maximally entangled states would be the twelve patterns; but the family
 
@@ -56,7 +56,7 @@ $$
 \rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t.
 $$
 
-This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\rho_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \neq 0$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \neq 0$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.
+This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\tilde{Ϛ}_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \in \{x,y,z\}$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \in \{x,y,z\}$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.
 
 ### The correlation function as a bilinear pairing
 
@@ -66,7 +66,7 @@ $$
 E(\vec u_a, \vec u_b) = \mathrm{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ\bigl((i\vec u_a)\otimes(i\vec u_b)\bigr)\right) = -\vec u_a\cdot\vec u_b.
 $$
 
-This is the tensor-product trace pairing between the state idempotent and the correlation observable. It is the same algebraic operation — the trace pairing — that gives the Born rule for a single qubit. The correlation function is not a separate postulate; it is the natural pairing between two elements of the tensor-product algebra.
+Here $\circ$ denotes the product in $\mathbb{B}\otimes\mathbb{B}$. This is the tensor-product trace pairing between the state idempotent and the correlation observable. It is the same algebraic operation — the trace pairing — that gives the Born rule for a single qubit. The correlation function is not a separate postulate; it is the natural pairing between two elements of the tensor-product algebra.
 
 ### Steering as a conditional idempotent
 
@@ -76,7 +76,7 @@ $$
 \bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr),
 $$
 
-where $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi(\vec u_a)\,\vec e_\mu\,\tilde\Pi(\vec u_a) = \tfrac{1}{2}a_k(\vec u_a - ie_t)$ and $\vec u_a - ie_t = -2i\tilde\Pi(\vec u_a)$, gives
+where $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi(\vec u_a)\,\vec e_\mu\,\tilde\Pi(\vec u_a) = \tfrac{1}{2}a_\mu(\vec u_a - ie_t)$ for $\mu\in\{x,y,z\}$ and $\vec u_a - ie_t = -2i\tilde\Pi(\vec u_a)$, gives
 
 $$
 \bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ \tilde\Pi_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a),
@@ -118,7 +118,7 @@ The EPR argument asks whether quantum physics is *complete*: whether the state d
 
 The biquaternion framework does not answer this question. What it does is state the entangled state in a language in which the correlations are visibly *structural* rather than visibly *dynamical*. The singlet is not two systems that then have to be correlated; it is one element of the tensor-product algebra, and the correlation function is a bilinear pairing between that element and a tensor-product observable. Nothing propagates between the particles; there is a pairing rule.
 
-Whether this structural interpretation satisfies a local-realist depends on what "local realism" is taken to require. If local realism requires that all correlations be traceable to dynamical influences propagating through space, then the framework's interpretation of entanglement is incompatible with it — as is standard quantum physics. If local realism can be rephrased as a requirement on the *structure* of physical states, then the framework offers a language in which the requirement can be more sharply stated. The framework does not legislate which of these interpretations is correct; it merely makes the structural character of the correlations more explicit.
+Whether this structural interpretation satisfies a local realist depends on what "local realism" is taken to require. If local realism requires that all correlations be traceable to dynamical influences propagating through space, then the framework's interpretation of entanglement is incompatible with it — as is standard quantum physics. If local realism can be rephrased as a requirement on the *structure* of physical states, then the framework offers a language in which the requirement can be more sharply stated. The framework does not legislate which of these interpretations is correct; it merely makes the structural character of the correlations more explicit.
 
 ### 2. Violation of Bell's inequalities
 
@@ -263,7 +263,7 @@ The honest position is this. The framework makes certain structural features of 
 | $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\mu \vec e_\mu\otimes \vec e_\mu)$ | Singlet idempotent |
 | $\tilde\Pi(\pm\vec u_a) = \tfrac{1}{2}(e_t \pm i\vec u_a)$ | Single-qubit idempotents along $\vec u_a$ |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
-| $\rho_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
+| $\tilde{Ϛ}_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
 | $E(\vec u_a, \vec u_b) = \mathrm{Tr}(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b)))$ | Correlation function |
 | $\tilde{U}\tilde{U}^{*} = e_t$ | Unitary element (reversible evolution) |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |

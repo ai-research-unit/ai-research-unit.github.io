@@ -60,7 +60,7 @@ $$
 \tilde{Q}^{\natural}=(2+i)e_t-(1-i)\vec e_x-3\vec e_y-i\vec e_z,
 $$
 $$
-\tilde{Q}^{*}=(2-i)e_t+(1+i)\vec e_x+3\vec e_y-i\vec e_z,
+\bar{\tilde{Q}}=(2-i)e_t+(1+i)\vec e_x+3\vec e_y-i\vec e_z,
 $$
 $$
 \tilde{Q}^{*}=\tilde{Q}^{\natural}\bar{\cdot}=(2-i)e_t-(1+i)\vec e_x-3\vec e_y+i\vec e_z,
@@ -68,7 +68,7 @@ $$
 $$
 \tilde{Q}^{\flat}=-\tilde{Q}^{*}=-(2-i)e_t+(1+i)\vec e_x+3\vec e_y-i\vec e_z .
 $$
-Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\tilde{Q}^{\natural}\bar{\cdot}=\tilde{Q}^{*{}^{\natural}}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat}=-\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give the remarkable subspaces above: for instance the Hermitian part of $\tilde{Q}$ is $\tfrac12(\tilde{Q}+\tilde{Q}^{*})=2e_t-i\vec e_x+i\vec e_z$, which agrees with the table.
+Each is an involution, and the Klein group is visible in $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}=\overline{\tilde{Q}}^{\natural}$; the fourth conjugation satisfies $(\tilde{Q}^{*})^{\flat}=-\tilde{Q}$, so it is the composition of ${}^{*}$ with the central sign $-1$. The fixed points of each involution give the remarkable subspaces above: for instance the Hermitian part of $\tilde{Q}$ is $\tfrac12(\tilde{Q}+\tilde{Q}^{*})=2e_t-i\vec e_x+i\vec e_z$, which agrees with the table.
 
 **Physical interpretation.** The quaternion conjugation reverses the spatial part and leaves the time slot, so it is the **spatial reversal** of the four-vector; the complex conjugation conjugates the coefficients $Q_\mu=q_\mu+iq'_\mu$, so it exchanges the material and informational interpretations of each slot and is the **sector exchange**; the Hermitian conjugation is the composition, the adjoint of a four-vector, and it is the involution that selects the observables.
 
@@ -101,9 +101,9 @@ The element is neither purely material nor purely informational: its norm is com
 $$
 \tilde Q_1\tilde Q_2=e_t-(i\vec e_z)^2=e_t-1=0,\qquad \tilde Q_1\neq0,\qquad \tilde Q_2\neq0 .
 $$
-Both $\tilde Q_1$ and $\tilde Q_2$ have two nonzero complex coefficients. Moreover $\langle\tilde Q_1\rangle_{\natural}=1+i^2=0$, so $\tilde Q_1$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde Q_1^2=(e_t+i\vec e_z)^2=e_t+2i\vec e_z-(\vec e_z)^2=2e_t+2i\vec e_z=2\tilde Q_1\neq0$.
+Both $\tilde Q_1$ and $\tilde Q_2$ have two nonzero complex coefficients. Moreover $\langle\tilde Q_1\rangle_{\natural}=1+i^2=0$, so $\tilde Q_1$ is **null** as well as a zero divisor; it is not nilpotent, since $\tilde Q_1^2=(e_t+i\vec e_z)^2=e_t+2i\vec e_z+(i\vec e_z)^2=2e_t+2i\vec e_z=2\tilde Q_1\neq0$.
 
-**Physical interpretation.** The pair $\tilde Q_1=e_t+i\vec e_z$, $\tilde Q_2=e_t-i\vec e_z$ is a **lightlike pair**: each is null, $N=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde Q_1$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $\vec e_x+i\vec e_y$, whose square vanishes (*Zero Divisors of the Biquaternion Algebra*).
+**Physical interpretation.** The pair $\tilde Q_1=e_t+i\vec e_z$, $\tilde Q_2=e_t-i\vec e_z$ is a **lightlike pair**: each is null, $\langle\tilde Q_1\rangle_{\natural}=0$, so each is a light-cone element, and their product vanishes. This is the algebraic content of the light cone: two null elements whose product is zero are the two null directions of a lightlike plane. The element $\tilde Q_1$ being null but not nilpotent is the statement that a lightlike direction squares to a multiple of itself and not to zero; the genuinely nilpotent directions are the pure null vectors, such as $\vec e_x+i\vec e_y$, whose square vanishes (*Zero Divisors of the Biquaternion Algebra*).
 
 ## Physical Readings
 

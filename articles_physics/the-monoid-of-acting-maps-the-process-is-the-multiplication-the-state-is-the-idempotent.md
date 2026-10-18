@@ -6,7 +6,7 @@ Two articles of the corpus describe an element of the biquaternion algebra as an
 
 This article records the abstract statement that the two matrix articles realize. An element **is** the map "multiply by it": the left multiplication $L_{\tilde{Q}_1}:\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2$ and the right multiplication $R_{\tilde{Q}_1}:\tilde{Q}_2\mapsto\tilde{Q}_2\tilde{Q}_1$ are two $\mathbb{C}$-linear maps of the algebra attached to one element, and the composition of these maps makes the set of acting maps a **monoid**. The process is the map and not the element; the elements compose well because the maps compose, and the order of the composition is the order of the operations. The sandwich of the two operator articles is the composition of a left action with a right action, which is why one article sees a congruence and the other a product of two regular matrices.
 
-The second half turns to the other half of the dictionary. The **states** of the framework are the Hermitian idempotents, not the maps: a Hermitian idempotent is an idempotent fixed by the star, the Hermitian idempotents that carry the states lie in the informational sector and the material sector has none, and the multiplication operator an idempotent generates is a **non-invertible** map. So the dictionary of the article is one line. The **process** is the map side, where the reversible processes are the units off the light cone; the **state** is the Hermitian idempotent side, and the rank-one Hermitian idempotents are null, so they lie **on** the light cone. The cone is therefore not a border between two disjoint halves: it is where the non-invertible maps are and where the states sit, while a unit is an element off the cone.
+The second half turns to the other half of the dictionary. The **pure states** of the framework are the Hermitian idempotents, not the maps: a Hermitian idempotent is an idempotent fixed by the star; the Hermitian idempotents that carry the states lie in the informational sector, the material sector has none, and the multiplication operator an idempotent generates is a **non-invertible** map. So the dictionary of the article is one line. The **process** is the map side, where the reversible processes are the units off the light cone; the **state** is the Hermitian idempotent side, and the rank-one Hermitian idempotents are null, so they lie **on** the light cone. The cone is therefore not a border between two disjoint halves: it is where the non-invertible maps are and where the states sit, while a unit is an element off the cone.
 
 ## The Two One-Sided Actions
 
@@ -66,7 +66,7 @@ $$
 \underbrace{\langle\tilde{Q}_1\rangle_{\natural}\neq0}_{\text{units, invertible maps}} \qquad\big|\qquad \underbrace{\langle\tilde{Q}_1\rangle_{\natural}=0}_{\text{zero divisors, non-invertible maps}} ,
 $$
 
-and the boundary is the light cone $N = 0$, the locus the corpus reads as the causal boundary. A process off the cone can be undone by its inverse map; a process on the cone cannot, because the map has a kernel. The article records the identification: **the group of units of the monoid is the off-cone part of the algebra, and the cone is the set of processes that cannot be reversed.**
+and the boundary is the light cone $\langle\tilde{Q}_1\rangle_{\natural}=0$, the locus the corpus reads as the causal boundary. A process off the cone can be undone by its inverse map; a process on the cone cannot, because the map has a kernel. The article records the identification: **the group of units of the monoid is the off-cone part of the algebra, and the cone is the set of processes that cannot be reversed.**
 
 ## The Sandwich as a Composition of Two Actions
 
@@ -86,7 +86,7 @@ This is the abstract form of both matrix statements. Read in the coefficient bas
 
 ## The State Side: Idempotents
 
-The states of the framework are **Hermitian idempotents**: a Hermitian idempotent is an element $\tilde{\Pi}^2 = \tilde{\Pi} = \tilde{\Pi}^{*}$, its rank measures the mixing, and the rank-one Hermitian idempotents are the pure states. Under the regular representation an idempotent element gives an idempotent map,
+The **state projectors** of the framework are the Hermitian idempotents: a Hermitian idempotent is an element $\tilde{\Pi}^2 = \tilde{\Pi} = \tilde{\Pi}^{*}$, its rank measures the mixing, and the rank-one Hermitian idempotents are the pure states. Under the regular representation an idempotent element gives an idempotent map,
 
 $$
 \tilde{\Pi}^2 = \tilde{\Pi} \quad\Longleftrightarrow\quad L_{\tilde{\Pi}}\circ L_{\tilde{\Pi}} = L_{\tilde{\Pi}},
@@ -96,7 +96,7 @@ since $L_{\tilde{\Pi}}^2 = L_{\tilde{\Pi}^2}$ and the representation is injectiv
 
 ## The Reading: the Process Is the Map, the State Is the Idempotent
 
-The dictionary is now complete and it is read in one paragraph. An element of the algebra has two faces. Its face as a **process** is the map it generates, the left multiplication $L_{\tilde{Q}_1}$, and the processes form a monoid: they compose associatively, the order matters, the identity is the unit, and the reversible ones are the units off the light cone. Its face as a **state** is the Hermitian idempotent it can be, and the pure states are the rank-one Hermitian idempotents of the informational sector. The two faces are different objects of the same algebra: a **process** is a map, invertible exactly off the cone, and a **state** is a Hermitian idempotent, the minimal ones null and sitting on the cone.
+The dictionary is now complete and it is read in one paragraph. An element of the algebra has two faces. Its face as a **process** is the map it generates, the left multiplication $L_{\tilde{Q}_1}$, and the processes form a monoid: they compose associatively, the order matters, the identity is the unit, and the reversible ones are the units off the light cone. Its face as a **pure state** is the Hermitian idempotent it can be, and the pure states are the rank-one Hermitian idempotents of the informational sector. The two faces are different objects of the same algebra: a **process** is a map, invertible exactly off the cone, and a **state** is a Hermitian idempotent, the minimal ones null and sitting on the cone.
 
 Read physically, the interpretation is the framework's **process–state split** stated algebraically. A physical operation that can be composed and undone is a left multiplication of the monoid, off the cone; a measurement is a projection, an idempotent of the informational sector; and the collapse of a measurement is the passage from an invertible map to a non-invertible one, which the sandwich of the operator articles performs on the cone. The framework's own version of this passage is *Decoherence as Idempotent Projection* and the rank-one collapse read in *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions*; the map-level statement here is that the collapse is a **non-invertible element of the monoid**, and the reversible dynamics is the group of its units. The algebra supplies both, and it supplies the light cone as the boundary between the reversible and the non-reversible.
 
@@ -123,7 +123,7 @@ Read as a **horizon**, the zero-divisor cone is at once the locus of light, the 
 
 An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}_1}$ and the right multiplication $R_{\tilde{Q}_1}$, with $L_{\tilde{Q}_3}\circ L_{\tilde{Q}_1} = L_{\tilde{Q}_3\tilde{Q}_1}$ and $R_{\tilde{Q}_3}\circ R_{\tilde{Q}_1} = R_{\tilde{Q}_1\tilde{Q}_3}$. The left multiplications form a **monoid** under composition: associative, with identity $L_{e_t}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.
 
-The sandwich of the two matrix articles is the composition of a left action with a right action, $\operatorname{H}_{\tilde{Q}_1} = L_{\tilde{Q}_1}\circ R_{\tilde{Q}_1^{*}}$, which is why it is a congruence and not a similarity. The states are the Hermitian idempotents, and idempotent elements are idempotent maps under the injective representation; the Hermitian idempotents lie in $\mathbb{M}_+$ and $\mathbb{M}_-$ has none, the minimal ones are the rank-one Hermitian idempotents, and those are null and sit on the cone. The reading is the process–state split: the process is the map of the monoid, the state is the idempotent, the reversible dynamics is the group of units off the cone, and the measurement is the passage to a non-invertible map on it.
+The sandwich of the two matrix articles is the composition of a left action with a right action, $\operatorname{H}_{\tilde{Q}_1} = L_{\tilde{Q}_1}\circ R_{\tilde{Q}_1^{*}}$, which is why it is a congruence and not a similarity. The pure states are the rank-one Hermitian idempotents, and idempotent elements are idempotent maps under the injective representation; the Hermitian idempotents lie in $\mathbb{M}_+$ and $\mathbb{M}_-$ has none, the minimal ones are the rank-one Hermitian idempotents, and those are null and sit on the cone. The reading is the process–state split: the process is the map of the monoid, the state is the idempotent, the reversible dynamics is the group of units off the cone, and the measurement is the passage to a non-invertible map on it.
 
 ## Summary of Notation
 
@@ -136,7 +136,7 @@ The sandwich of the two matrix articles is the composition of a left action with
 | $\mathsf{M}_4, \mathsf{M}_4^{R}$ | the regular matrices of the $4\times4$ article |
 | $\mathsf{M}_2$, $M = \mathsf{M}_2(\tilde{Q}_1)$ | the matrix image and its matrix |
 | $\operatorname{H}_{\tilde{Q}_1} = L_{\tilde{Q}_1}\circ R_{\tilde{Q}_1^{*}}$ | the sandwich as a composition of a left and a right action |
-| $\langle\tilde{Q}_1\rangle_{\natural}$ | the biquaternion norm; $N\neq0$ units, $N=0$ zero divisors |
+| $\langle\tilde{Q}_1\rangle_{\natural}$ | the biquaternion norm; $\langle\tilde{Q}_1\rangle_{\natural}\neq0$ units, $\langle\tilde{Q}_1\rangle_{\natural}=0$ zero divisors |
 | $\tilde{Q}_1^{-1} = \tilde{Q}_1^{\natural}/\langle\tilde{Q}_1\rangle_{\natural}$ | the inverse of a unit |
 | $\tilde{\Pi}^2=\tilde{\Pi}$ | an idempotent; a Hermitian idempotent when $\tilde{\Pi}^{*}=\tilde{\Pi}$, the states lying among the Hermitian idempotents of $\mathbb{M}_+$ |
 
