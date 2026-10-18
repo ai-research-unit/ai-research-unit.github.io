@@ -99,21 +99,21 @@ $$
 $$
 The combination
 $$
-\tilde B=\tilde A-\tilde\nabla\chi
+\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi ,
 $$
-is then gauge invariant,
+which is what the connection becomes in the unitary gauge $\chi=0$, is then gauge invariant,
 $$
-\tilde B'=\tilde A'-\tilde\nabla\chi'=\tilde A-\tilde\nabla\Gamma-\tilde\nabla\chi+\tilde\nabla\Gamma=\tilde A-\tilde\nabla\chi=\tilde B ,
+\tilde A_{\mathrm u}'=\tilde A'-\tilde\nabla\chi'=\tilde A-\tilde\nabla\Gamma-\tilde\nabla\chi+\tilde\nabla\Gamma=\tilde A-\tilde\nabla\chi=\tilde A_{\mathrm u} ,
 $$
 a cancellation that was checked explicitly on polynomial test fields, and the Stueckelberg Lagrangian is
 $$
-\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\bigl\langle\tilde A-\tilde\nabla\chi\bigr\rangle .
+\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle .
 $$
-It is invariant under the abelian gauge transformation for any $\Gamma$, because $\tilde F$ and $\tilde B$ are. The symmetry is the original abelian symmetry, not a new one: the Stueckelberg field transforms with the same parameter as the connection, so the gauge group is unchanged and the mass term is now compatible with it.</p>
+It is invariant under the abelian gauge transformation for any $\Gamma$, because $\tilde F$ and $\tilde A_{\mathrm u}$ are. The symmetry is the original abelian symmetry, not a new one: the Stueckelberg field transforms with the same parameter as the connection, so the gauge group is unchanged and the mass term is now compatible with it.</p>
 <h3 id="the-field-content">The Field Content</h3>
 <p>Expanding the invariant mass term,
 $$
--\tfrac12\mu^2\langle\tilde B\rangle
+-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle
 =-\tfrac12\mu^2\langle\tilde A\rangle+\mu^2\langle\tilde A,\tilde\nabla\chi\rangle-\tfrac12\mu^2\sum_\mu\partial/\partial Q_\mu\,\chi\,\partial/\partial Q_\mu\,\chi ,
 $$
 shows the three pieces: the Proca mass, a derivative mixing between the vector and the scalar, and the scalar's kinetic term — the last being $-\tfrac12(\partial\phi)^2$ after rescaling, the healthy sign of the Klein–Gordon companion. Rescaling the scalar to canonical normalization,
@@ -132,13 +132,13 @@ The mixing is removed by the gauge transformation that the symmetry permits, and
 <h3 id="the-equation-of-motion-and-the-constraint">The Equation of Motion and the Constraint</h3>
 <p>The equation of motion for the vector is
 $$
-\tilde\nabla\tilde F-\mu^2\bigl(\tilde A-\tilde\nabla\chi\bigr)=0 ,
+\tilde\nabla\tilde F-\mu^2\tilde A_{\mathrm u}=0 ,
 $$
 and the equation for the scalar is
 $$
-\mu^2\bigl\langle\tilde\nabla,\tilde A-\tilde\nabla\chi\bigr\rangle_{\natural}=0 .
+\mu^2\langle\tilde\nabla,\tilde A_{\mathrm u}\rangle_{\natural}=0 .
 $$
-Taking the divergence of the vector equation gives $\partial/\partial Q_\nu\tilde\nabla\tilde F-\mu^2\langle\tilde\nabla,\tilde A-\tilde\nabla\chi\rangle_{\natural}=0$, and the first term vanishes identically by the antisymmetry of $F$, so the divergence of the vector equation <strong>is</strong> the scalar equation. The scalar field is therefore not an independent dynamical degree of freedom in the covariant equations; it is the longitudinal part of the vector, and the count of physical modes is the count of the massive vector. This is the algebraic statement that the Stueckelberg scalar is the would-be Goldstone mode.</p>
+Taking the divergence of the vector equation gives $\partial/\partial Q_\nu\tilde\nabla\tilde F-\mu^2\langle\tilde\nabla,\tilde A_{\mathrm u}\rangle_{\natural}=0$, and the first term vanishes identically by the antisymmetry of $F$, so the divergence of the vector equation <strong>is</strong> the scalar equation. The scalar field is therefore not an independent dynamical degree of freedom in the covariant equations; it is the longitudinal part of the vector, and the count of physical modes is the count of the massive vector. This is the algebraic statement that the Stueckelberg scalar is the would-be Goldstone mode.</p>
 <h2 id="gauge-fixing-and-the-degree-of-freedom-count">Gauge Fixing and the Degree-of-Freedom Count</h2>
 <h3 id="the-stueckelberg-unitary-gauge">The Stueckelberg (Unitary) Gauge</h3>
 <p>The gauge freedom is used to set $\chi=0$:
@@ -152,7 +152,7 @@ $$
 \mathcal{L}_{\mathrm{S}}\big|_{\chi=0}=-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12\mu^2A_\mu A^\mu ,
 $$
 and the count is the Proca count: four components of $A_\mu$, one constraint from the deformed Gauss law, three physical polarizations. The scalar is gone — it has been absorbed into the longitudinal polarization of the vector — and the theory is manifestly that of a massive vector. This is the gauge in which the mechanism is "invisible": it has done its work by making the mass term invariant, and the field that made it invariant has been gauged away.</p>
-<h3 id="the-covariant-math62-gauges">The Covariant $R_\xi$ Gauges</h3>
+<h3 id="the-covariant-math63-gauges">The Covariant $R_\xi$ Gauges</h3>
 <p>The symmetric alternative keeps the scalar and fixes a covariant condition,
 $$
 G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi=0 ,
@@ -269,7 +269,7 @@ $$
 \qquad
 \tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}},
 $$
-so both lie in the same two-dimensional centre that carries the abelian gauge group. The invariant combination $\tilde A-\tilde\nabla\chi$ is what the covariant derivative of a central scalar produces: the covariant derivative $\tilde D\tilde\Phi_{\mathrm{St}}=(\tilde\nabla+i\kappa\tilde A)\tilde\Phi_{\mathrm{St}}$ on a central scalar of constant magnitude $\rho$ has phase $\kappa\tilde A+\tilde\nabla\vartheta$, and the gauge-invariant content is the combination $\tilde A+\tfrac{1}{\kappa}\tilde\nabla\vartheta$ — the same $\tilde B$ up to the normalization of the phase. The Stueckelberg mass term is therefore the <strong>biquaternion norm of the gauge-invariant derivative</strong>, $-\tfrac12\mu^2\langle\tilde B\rangle$, and the algebra contains it because the centre contains the scalar and the material sector contains the vector.</p>
+so both lie in the same two-dimensional centre that carries the abelian gauge group. The invariant combination $\tilde A_{\mathrm u}$ is what the covariant derivative of a central scalar produces: the covariant derivative $\tilde D\tilde\Phi_{\mathrm{St}}=(\tilde\nabla+i\kappa\tilde A)\tilde\Phi_{\mathrm{St}}$ on a central scalar of constant magnitude $\rho$ has phase $\kappa\tilde A+\tilde\nabla\vartheta$, and the gauge-invariant content is the combination $\tilde A+\tfrac{1}{\kappa}\tilde\nabla\vartheta$ — the same $\tilde A_{\mathrm u}$ up to the normalization of the phase. The Stueckelberg mass term is therefore the <strong>biquaternion norm of the gauge-invariant derivative</strong>, $-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle$, and the algebra contains it because the centre contains the scalar and the material sector contains the vector.</p>
 <h3 id="why-the-mechanism-is-the-natural-one-for-the-framework">Why the Mechanism Is the Natural One for the Framework</h3>
 <p>Three properties make the Stueckelberg mechanism the framework's natural route to a massive abelian vector.</p>
 <ul>
@@ -280,17 +280,17 @@ so both lie in the same two-dimensional centre that carries the abelian gauge gr
 <h3 id="what-does-not-carry-over-the-non-abelian-case">What Does Not Carry Over: The Non-Abelian Case</h3>
 <p>The mechanism as constructed is abelian. Its essential ingredient is that the shift is a single function and the field strength $F_{\mu\nu}$ is invariant by itself; in the non-abelian theory the field strength is not invariant but transforms in the adjoint, $F'_{\mu\nu}=UF_{\mu\nu}U^{-1}$, and a scalar that restores the mass term must transform in the adjoint as well, so that $D_\mu\chi$ and $F_{\mu\nu}$ sit in the same representation. The Stueckelberg mechanism for a non-abelian group therefore requires a scalar in the <strong>adjoint</strong> representation, and the non-linear sigma model of the Goldstone fields. The framework's central scalar is a singlet of the compact factor; its covariant derivative is the ordinary derivative and contains no adjoint action, so it cannot supply the invariant combination for the non-abelian directions. The same limitation that prevents the central scalar from breaking the non-abelian group in the Higgs mechanism prevents it from restoring the non-abelian mass term here. The framework's Stueckelberg mechanism is an abelian mechanism, and it reaches the central direction and no other.</p>
 <h2 id="what-the-algebra-supplies-and-what-it-imports">What the Algebra Supplies and What It Imports</h2>
-<p><strong>Supplied by the algebra, and recomputed here.</strong> The carrier: the Stueckelberg field as the central scalar $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the vector as the material connection $\tilde{A}\in\mathbb{M}_-$. The gauge transformation and the invariant combination: $\tilde B=\tilde A-\tilde\nabla\chi$ is invariant under $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, $\chi'=\chi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde B\rangle$, with the sign of the Proca companion, and its reduction to Proca in the gauge $\chi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.</p>
+<p><strong>Supplied by the algebra, and recomputed here.</strong> The carrier: the Stueckelberg field as the central scalar $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the vector as the material connection $\tilde{A}\in\mathbb{M}_-$. The gauge transformation and the invariant combination: $\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi$ is invariant under $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, $\chi'=\chi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle$, with the sign of the Proca companion, and its reduction to Proca in the gauge $\chi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.</p>
 <p><strong>Imported, and left visible.</strong> The Stueckelberg construction itself; the $R_\xi$ gauge-fixing condition and the gauge-parameter independence of physical amplitudes; the degree-of-freedom count and the second-class constraint analysis, the latter from the Proca companion; the propagator and the $\xi$-dependent scalar mass; the relation to the abelian Higgs and the limit in which the radial mode decouples; and the non-abelian extension with an adjoint scalar. All are standard and are cited as such.</p>
 <p><strong>Not supplied.</strong> The mechanism does not generate the mass from a vacuum value: $\mu$ is a parameter, and the framework does not explain its value. It does not extend to the compact factor, because the framework's scalar is a singlet and the non-abelian version requires an adjoint scalar. It does not supply the fermion masses, the mixing angles or any empirical content. As everywhere in the series, no new prediction is made.</p>
 <h2 id="summary">Summary</h2>
 <p>The Proca mass term is not invariant under the abelian gauge transformation, and the Stueckelberg mechanism restores the invariance by introducing a central scalar that shifts. With $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ and $\chi'=\chi-\Gamma$, the combination
 $$
-\tilde B=\tilde A-\tilde\nabla\chi
+\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi
 $$
 is invariant — checked explicitly on test fields — and the Stueckelberg Lagrangian
 $$
-\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde B\rangle
+\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle
 $$
 is gauge invariant for any $\Gamma$. Expanded and canonically normalized it is a massless vector, a massless scalar and a derivative mixing of strength $\mu$; the scalar's equation is the divergence of the vector's equation, so the scalar is the longitudinal mode. In the unitary gauge $\chi=0$ the Lagrangian reduces to Proca with three polarizations; in the $R_\xi$ gauge $G=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\xi\mu^2\chi=0$ the scalar has an $\xi$-dependent mass and the vector propagator
 $$
@@ -340,11 +340,11 @@ has a gauge-dependent longitudinal part, with physical amplitudes independent of
 <td>Central scalar whose phase is the Stueckelberg field</td>
 </tr>
 <tr>
-<td>$\tilde B=\tilde A-\tilde\nabla\chi$</td>
-<td>Gauge-invariant combination</td>
+<td>$\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi$</td>
+<td>Gauge-invariant combination; the connection in the unitary gauge</td>
 </tr>
 <tr>
-<td>$\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde B\rangle$</td>
+<td>$\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle$</td>
 <td>Stueckelberg Lagrangian</td>
 </tr>
 <tr>
@@ -352,11 +352,11 @@ has a gauge-dependent longitudinal part, with physical amplitudes independent of
 <td>Stueckelberg mass (a parameter)</td>
 </tr>
 <tr>
-<td>$\partial/\partial Q_\mu F^{\mu\nu}-\mu^2B^\nu=0$</td>
+<td>$\partial/\partial Q_\mu F^{\mu\nu}-\mu^2A_{\mathrm u}^{\nu}=0$</td>
 <td>Vector equation of motion</td>
 </tr>
 <tr>
-<td>$\langle\tilde\nabla,\tilde B\rangle_{\natural}=0$</td>
+<td>$\langle\tilde\nabla,\tilde A_{\mathrm u}\rangle_{\natural}=0$</td>
 <td>Scalar equation; the divergence of the vector equation</td>
 </tr>
 <tr>

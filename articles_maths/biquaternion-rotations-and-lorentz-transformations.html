@@ -74,41 +74,41 @@ and on the imaginary part this is the rotation of $\mathbb{R}^3$ through the ang
 <h2 id="the-dagger-sandwich">The Dagger Sandwich</h2>
 <p>The rotor of the previous section conjugates by a real quaternion and an inverse. The action the corpus uses for the Lorentz transformation of the whole algebra replaces the inverse by the Hermitian conjugate and admits any unit:</p>
 <p>$$
-\mathrm{H}_{\tilde{Q}}:\ \mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\,\tilde T\,\tilde{Q}^{*},
+\mathrm{H}_{\tilde{Q}}:\ \mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{H}_{\tilde{Q}}(\tilde Q_3)=\tilde{Q}\,\tilde Q_3\,\tilde{Q}^{*},
 $$</p>
 <p>the <strong>dagger sandwich</strong>. Its carrier is the algebra as a real vector space of dimension eight, with basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, and its group is the group of units. Two laws govern it.</p>
 <p><strong>Proposition (composition).</strong> For all $\tilde{Q}$ and $\tilde{Q}_1$,</p>
 <p>$$
 \mathrm{H}_{\tilde{Q}\tilde{Q}_1}=\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}_1}.
 $$</p>
-<p><strong>Proof.</strong> $\mathrm{H}_{\tilde{Q}}\bigl(\mathrm{H}_{\tilde{Q}_1}(\tilde T)\bigr)=\tilde{Q}\bigl(\tilde{Q}_1\tilde T\tilde{Q}_1^{*}\bigr)\tilde{Q}^{*}=(\tilde{Q}\tilde{Q}_1)\tilde T(\tilde{Q}\tilde{Q}_1)^{*}=\mathrm{H}_{\tilde{Q}\tilde{Q}_1}(\tilde T)$, using the anti-automorphism property $(\tilde{Q}\tilde{Q}_1)^{*}=\tilde{Q}_1^{*}\tilde{Q}^{*}$. Consequently $\tilde{Q}\mapsto\mathrm{H}_{\tilde{Q}}$ is a homomorphism of the group of units into $GL(\mathbb{B})$.</p>
-<p><strong>Proposition (the central rule).</strong> For every central $A$ and every $\tilde T$,</p>
+<p><strong>Proof.</strong> $\mathrm{H}_{\tilde{Q}}\bigl(\mathrm{H}_{\tilde{Q}_1}(\tilde Q_3)\bigr)=\tilde{Q}\bigl(\tilde{Q}_1\tilde Q_3\tilde{Q}_1^{*}\bigr)\tilde{Q}^{*}=(\tilde{Q}\tilde{Q}_1)\tilde Q_3(\tilde{Q}\tilde{Q}_1)^{*}=\mathrm{H}_{\tilde{Q}\tilde{Q}_1}(\tilde Q_3)$, using the anti-automorphism property $(\tilde{Q}\tilde{Q}_1)^{*}=\tilde{Q}_1^{*}\tilde{Q}^{*}$. Consequently $\tilde{Q}\mapsto\mathrm{H}_{\tilde{Q}}$ is a homomorphism of the group of units into $GL(\mathbb{B})$.</p>
+<p><strong>Proposition (the central rule).</strong> For every central $A$ and every $\tilde Q_3$,</p>
 <p>$$
-\mathrm{H}_{A\tilde{Q}}(\tilde T)=\lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}(\tilde T),
+\mathrm{H}_{A\tilde{Q}}(\tilde Q_3)=\lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}(\tilde Q_3),
 $$</p>
 <p>so that a central phase does not change the operator.</p>
-<p><strong>Why the dagger.</strong> The involution ${}^{*}$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $\tilde T\mapsto A\tilde TB$ with $A,B$ invertible, those that carry the fixed space of ${}^{*}$ into itself are exactly those with $B=\lambda A^{*}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into a different fixed space: the automorphism $\tilde T\mapsto\tilde{Q}\tilde T\tilde{Q}^{-1}$ preserves the fixed spaces of the involution ${}^{*}$ conjugated by the image of the identity, $A\mapsto\tilde{Q}\tilde{Q}^{*}\bar{A}(\tilde{Q}\tilde{Q}^{*})^{-1}$, which is a different involution as soon as $\tilde{Q}$ is not unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.</p>
+<p><strong>Why the dagger.</strong> The involution ${}^{*}$ splits the algebra into the Hermitian sector $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$. Among the two-sided maps $\tilde Q_3\mapsto A\tilde Q_3B$ with $A,B$ invertible, those that carry the fixed space of ${}^{*}$ into itself are exactly those with $B=\lambda A^{*}$ for a real $\lambda$, and the dagger sandwich is the normalised case $\lambda=1$. A sandwich built from the inverse instead carries $\mathbb{M}_+$ into a different fixed space: the automorphism $\tilde Q_3\mapsto\tilde{Q}\tilde Q_3\tilde{Q}^{-1}$ preserves the fixed spaces of the involution ${}^{*}$ conjugated by the image of the identity, $A\mapsto\tilde{Q}\tilde{Q}^{*}\bar{A}(\tilde{Q}\tilde{Q}^{*})^{-1}$, which is a different involution as soon as $\tilde{Q}$ is not unitary. Since the halves and the sectors are the fixed spaces of the involutions, the subspaces a sandwich preserves are the ones its own involution defines.</p>
 <p><strong>Theorem (the two sectors are preserved).</strong> For every unit $\tilde{Q}$, the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.</p>
-<p><strong>Proof.</strong> Let $\tilde T\in\mathbb{M}_+$, so that $\tilde{T}^{*}=\tilde T$. Then</p>
+<p><strong>Proof.</strong> Let $\tilde Q_3\in\mathbb{M}_+$, so that $\tilde Q_3^{*}=\tilde Q_3$. Then</p>
 <p>$$
-\left(\tilde{Q}\tilde T\tilde{Q}^{*}\right)^{*}=\tilde{Q}^{*{}^{*}}\tilde{T}^{*}\tilde{Q}^{*}=\tilde{Q}\tilde T\tilde{Q}^{*},
+\left(\tilde{Q}\tilde Q_3\tilde{Q}^{*}\right)^{*}=\tilde{Q}^{*{}^{*}}\tilde Q_3^{*}\tilde{Q}^{*}=\tilde{Q}\tilde Q_3\tilde{Q}^{*},
 $$</p>
-<p>so the image is Hermitian and lies in $\mathbb{M}_+$; for $\tilde T\in\mathbb{M}_-$ one has $\tilde{T}^{*}=-\tilde T$, and the image is anti-Hermitian.</p>
-<p><strong>Theorem (the scaling of the norm).</strong> For every unit $\tilde{Q}$ and every $\tilde T$,</p>
+<p>so the image is Hermitian and lies in $\mathbb{M}_+$; for $\tilde Q_3\in\mathbb{M}_-$ one has $\tilde Q_3^{*}=-\tilde Q_3$, and the image is anti-Hermitian.</p>
+<p><strong>Theorem (the scaling of the norm).</strong> For every unit $\tilde{Q}$ and every $\tilde Q_3$,</p>
 <p>$$
-N\bigl(\mathrm{H}_{\tilde{Q}}(\tilde T)\bigr)=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde T\rangle_{\natural}.
+N\bigl(\mathrm{H}_{\tilde{Q}}(\tilde Q_3)\bigr)=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}.
 $$</p>
-<p><strong>Proof.</strong> The biquaternion norm is multiplicative and central, $\langle ab\rangle_{\natural}=\langle a\rangle_{\natural}\langle b\rangle_{\natural}$, and $\langle\tilde{Q}^{*}\rangle_{\natural}=\overline{\langle\tilde{Q}\rangle_{\natural}}$, because ${}^{*}$ is the composite of quaternion conjugation, which fixes $\langle\cdot\rangle_{\natural}$, with complex conjugation, which conjugates it. Hence $\langle\tilde{Q}\tilde T\tilde{Q}^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}\langle\tilde T\rangle_{\natural}\overline{\langle\tilde{Q}\rangle_{\natural}}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde T\rangle_{\natural}$.</p>
+<p><strong>Proof.</strong> The biquaternion norm is multiplicative and central, $\langle ab\rangle_{\natural}=\langle a\rangle_{\natural}\langle b\rangle_{\natural}$, and $\langle\tilde{Q}^{*}\rangle_{\natural}=\overline{\langle\tilde{Q}\rangle_{\natural}}$, because ${}^{*}$ is the composite of quaternion conjugation, which fixes $\langle\cdot\rangle_{\natural}$, with complex conjugation, which conjugates it. Hence $\langle\tilde{Q}\tilde Q_3\tilde{Q}^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_3\rangle_{\natural}\overline{\langle\tilde{Q}\rangle_{\natural}}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}$.</p>
 <p>On the unit-norm slice, where $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert=1$, the sandwich is an isometry of the biquaternion norm on both sectors: it is the action of $SL(2,\mathbb{C})$ on the Hermitian forms and on the four-vectors, and it is the covering map onto the proper orthochronous Lorentz group. The Lorentz transformation written above as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ is the sandwich of a norm-one element, and for it no inverse and no rotation part appear.</p>
 <p><strong>The image of the unit.</strong> Applied to $e_t$ the sandwich returns $\mathrm{H}_{\tilde{Q}}(e_t)=\tilde{Q}\tilde{Q}^{*}$, which is Hermitian and, for a general unit, not central: the centre is not preserved. The image of a traceless element need not be traceless, so the vector subspace is not preserved either.</p>
-<p><strong>The sandwich is not an automorphism.</strong> For general $\tilde T,\tilde Q_2$,</p>
+<p><strong>The sandwich is not an automorphism.</strong> For general $\tilde Q_3,\tilde Q_2$,</p>
 <p>$$
-\mathrm{H}_{\tilde{Q}}(\tilde T\tilde{Q}_2)=\tilde{Q}\tilde T\tilde{Q}_2\tilde{Q}^{*}\neq\left(\tilde{Q}\tilde T\tilde{Q}^{*}\right)\left(\tilde{Q}\tilde{Q}_2\tilde{Q}^{*}\right)=\mathrm{H}_{\tilde{Q}}(\tilde T)\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2),
+\mathrm{H}_{\tilde{Q}}(\tilde Q_3\tilde{Q}_2)=\tilde{Q}\tilde Q_3\tilde{Q}_2\tilde{Q}^{*}\neq\left(\tilde{Q}\tilde Q_3\tilde{Q}^{*}\right)\left(\tilde{Q}\tilde{Q}_2\tilde{Q}^{*}\right)=\mathrm{H}_{\tilde{Q}}(\tilde Q_3)\mathrm{H}_{\tilde{Q}}(\tilde{Q}_2),
 $$</p>
-<p>because the insertion required between $\tilde T$ and $\tilde Q_2$ is $\tilde{Q}^{*}\tilde{Q}$, which is the unit exactly when $\tilde{Q}$ is unitary. The map is a linear action of the group of units on the algebra, and it is an action by automorphisms only on that slice; the automorphisms themselves are in <em>Biquaternion Automorphisms and Derivations</em>.</p>
+<p>because the insertion required between $\tilde Q_3$ and $\tilde Q_2$ is $\tilde{Q}^{*}\tilde{Q}$, which is the unit exactly when $\tilde{Q}$ is unitary. The map is a linear action of the group of units on the algebra, and it is an action by automorphisms only on that slice; the automorphisms themselves are in <em>Biquaternion Automorphisms and Derivations</em>.</p>
 <h2 id="the-kernel-and-the-remarkable-subspaces">The Kernel and the Remarkable Subspaces</h2>
 <p><strong>Theorem (the kernel is the central circle).</strong> $\mathrm{H}_{\tilde{Q}}=\mathrm{id}$ if and only if $\tilde{Q}=\exp(i\theta)e_t$ for some real $\theta$.</p>
-<p><strong>Proof.</strong> If $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde T$ for every $\tilde T$, then $\tilde T=e_t$ gives $\tilde{Q}\tilde{Q}^{*}=e_t$, so $\tilde{Q}$ is unitary, and an arbitrary $\tilde T$ gives $\tilde{Q}\tilde T=\tilde T\tilde{Q}$, so $\tilde{Q}$ is central; a central unitary is a complex number of modulus one. Conversely such an element acts trivially, its Hermitian conjugate being its inverse.</p>
+<p><strong>Proof.</strong> If $\mathrm{H}_{\tilde{Q}}(\tilde Q_3)=\tilde Q_3$ for every $\tilde Q_3$, then $\tilde Q_3=e_t$ gives $\tilde{Q}\tilde{Q}^{*}=e_t$, so $\tilde{Q}$ is unitary, and an arbitrary $\tilde Q_3$ gives $\tilde{Q}\tilde Q_3=\tilde Q_3\tilde{Q}$, so $\tilde{Q}$ is central; a central unitary is a complex number of modulus one. Conversely such an element acts trivially, its Hermitian conjugate being its inverse.</p>
 <p>The kernel is therefore the circle $\mathrm{U}(1)=\{\exp(i\theta)e_t\}$ in the centre, of one real dimension: the sandwich is blind to a central phase and to nothing else. On the unit-norm slice it reduces to the two central signs $\{\pm e_t\}$, the intersection of the circle with that slice, and it is this kernel of order two that is the double cover of the Lorentz group by the rotors.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -121,13 +121,13 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$</td>
+<td>$\mathrm{H}_{\tilde{Q}}(\tilde Q_3)=\tilde{Q}\tilde Q_3\tilde{Q}^{*}$</td>
 <td>the units of $\mathbb{B}$</td>
 <td>$\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$</td>
 <td>the circle only</td>
 </tr>
 <tr>
-<td>$\mathrm{H}_{\tilde{U}}(\tilde T)=\tilde{U}\tilde T\tilde{U}^{*}$, $\langle\tilde{U}\rangle_{\natural}=1$</td>
+<td>$\mathrm{H}_{\tilde{U}}(\tilde Q_3)=\tilde{U}\tilde Q_3\tilde{U}^{*}$, $\langle\tilde{U}\rangle_{\natural}=1$</td>
 <td>the unit-norm slice $SL(2,\mathbb{C})$</td>
 <td>$\{\pm e_t\}$</td>
 <td>the sign</td>
@@ -192,7 +192,7 @@ $$</p>
 $$</p>
 <p>of real dimension three; with the dilations admitted they form $\mathbb{R}_{>0}\times SO(3)$, of real dimension four. The rotation group sits inside the six-dimensional operator group as the rotations sit inside the Lorentz group, and the remaining three dimensions are the boosts, which move the centre, the vector subspace and the two halves.</p>
 <h2 id="orbits-the-invariants-and-the-infinitesimal-operator">Orbits, the Invariants and the Infinitesimal Operator</h2>
-<p>The sandwich preserves the rank of the matrix image $\mathsf{M}_2(\tilde T)$ (<em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>) and scales the biquaternion norm by $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.</p>
+<p>The sandwich preserves the rank of the matrix image $\mathsf{M}_2(\tilde Q_3)$ (<em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>) and scales the biquaternion norm by $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}$, the scaling being one on the unit-norm slice. The rank is unchanged because a congruence by an invertible matrix does not change it, and the biquaternion norm is the determinant. The two invariants cut the algebra as follows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -203,40 +203,40 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\operatorname{rank}\mathsf{M}_2(\tilde T)=2$</td>
-<td>$\langle\tilde T\rangle_{\natural}\neq0$</td>
-<td>$\tilde T$ is a unit</td>
+<td>$\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=2$</td>
+<td>$\langle\tilde Q_3\rangle_{\natural}\neq0$</td>
+<td>$\tilde Q_3$ is a unit</td>
 </tr>
 <tr>
-<td>$\operatorname{rank}\mathsf{M}_2(\tilde T)=1$</td>
-<td>$\langle\tilde T\rangle_{\natural}=0$, $\tilde T\neq0$</td>
-<td>$\tilde T$ is a zero divisor of rank one</td>
+<td>$\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=1$</td>
+<td>$\langle\tilde Q_3\rangle_{\natural}=0$, $\tilde Q_3\neq0$</td>
+<td>$\tilde Q_3$ is a zero divisor of rank one</td>
 </tr>
 <tr>
-<td>$\operatorname{rank}\mathsf{M}_2(\tilde T)=0$</td>
-<td>$\tilde T=0$</td>
+<td>$\operatorname{rank}\mathsf{M}_2(\tilde Q_3)=0$</td>
+<td>$\tilde Q_3=0$</td>
 <td>the origin</td>
 </tr>
 </tbody>
 </table></div>
 <p>Off the unit-norm slice every orbit is rescaled by the same positive factor, so it is enough to classify the orbits on the slice. There the two sectors carry the classification the four-vector calculus uses: on $\mathbb{M}_+$ the Hermitian forms are classified by their signature, and on $\mathbb{M}_-$ the four-vectors split into the timelike, the null and the spacelike classes, with the proper orthochronous component, so that the two time directions are not mixed. The non-zero zero divisors are the null cone, and on the slice they form a single orbit, which is the sense in which the light cone is one geometric object rather than a union of the cones of individual four-vectors.</p>
-<p><strong>Proposition (the infinitesimal operator).</strong> Let $d\tilde{Q}/dt\in\mathbb{B}$ and let $\tilde T$ be fixed. Then</p>
+<p><strong>Proposition (the infinitesimal operator).</strong> Let $d\tilde{Q}/dt\in\mathbb{B}$ and let $\tilde Q_3$ be fixed. Then</p>
 <p>$$
-\left.\frac{d}{dt}\right|_{t=0}\mathrm{H}_{e_t+t\,d\tilde{Q}/dt}(\tilde T)=d\tilde{Q}/dt\tilde T+\tilde T\left(d\tilde{Q}/dt\right)^{*}.
+\left.\frac{d}{dt}\right|_{t=0}\mathrm{H}_{e_t+t\,d\tilde{Q}/dt}(\tilde Q_3)=d\tilde{Q}/dt\tilde Q_3+\tilde Q_3\left(d\tilde{Q}/dt\right)^{*}.
 $$</p>
-<p><strong>Proof.</strong> Since $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$, differentiating the product at $\tilde{Q}=e_t$ gives $d\tilde{Q}/dt\tilde T+\tilde T\left(d\tilde{Q}/dt\right)^{*}$.</p>
-<p>The formula contains the two symmetries of the algebra in one expression. Along the anti-Hermitian directions, $X^{*}=-X$, the infinitesimal operator is the commutator $[X,\tilde T]$, the infinitesimal rotation; along the Hermitian directions, $X^{*}=X$, it is the anticommutator $X\tilde T+\tilde TX$, the infinitesimal boost. Restricted to the unit-norm slice the operator group is $SL(2,\mathbb{C})$ acting by the sandwich, with Lie algebra $\mathrm{SL}(2,\mathbb{C})$ regarded over $\mathbb{R}$, of real dimension six: the anti-Hermitian generators give the rotations and the Hermitian ones the boosts. The adjoint maps are in <em>The 12 Products of the Biquaternioid Complex Space</em> and the exponential in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
+<p><strong>Proof.</strong> Since $\mathrm{H}_{\tilde{Q}}(\tilde Q_3)=\tilde{Q}\tilde Q_3\tilde{Q}^{*}$, differentiating the product at $\tilde{Q}=e_t$ gives $d\tilde{Q}/dt\tilde Q_3+\tilde Q_3\left(d\tilde{Q}/dt\right)^{*}$.</p>
+<p>The formula contains the two symmetries of the algebra in one expression. Along the anti-Hermitian directions, $X^{*}=-X$, the infinitesimal operator is the commutator $[X,\tilde Q_3]$, the infinitesimal rotation; along the Hermitian directions, $X^{*}=X$, it is the anticommutator $X\tilde Q_3+\tilde Q_3X$, the infinitesimal boost. Restricted to the unit-norm slice the operator group is $SL(2,\mathbb{C})$ acting by the sandwich, with Lie algebra $\mathrm{SL}(2,\mathbb{C})$ regarded over $\mathbb{R}$, of real dimension six: the anti-Hermitian generators give the rotations and the Hermitian ones the boosts. The adjoint maps are in <em>The 12 Products of the Biquaternioid Complex Space</em> and the exponential in <em>Biquaternion Lie Group and Exponential Structure</em>.</p>
 <h2 id="reflections">Reflections</h2>
 <p>The sandwich also realises the <strong>reflections</strong>, on the subspaces where the multiplication is Clifford. Let $v\in\mathbb{B}$ with $\langle v\rangle_{\natural}=1$; the reflection in the hyperplane $v^{\perp}$ is the linear map
 $$
-\rho_v(\tilde T)=-v\,\tilde T\,v^{-1}=-v\,\tilde T\,v^{\natural},
+\rho_v(\tilde Q_3)=-v\,\tilde Q_3\,v^{-1}=-v\,\tilde Q_3\,v^{\natural},
 $$
 the second equality using $v^{-1}=v^{\natural}/\langle v\rangle_{\natural}=v^{\natural}$ for a norm-one element.</p>
-<p><strong>Theorem.</strong> For $v$ with $\langle v\rangle_{\natural}=1$ the map $\rho_v$ preserves the biquaternion norm and its polar form, satisfies $\rho_v(v)=-v$, and fixes pointwise every element that anticommutes with $v$; its square is the conjugation $\rho_v^2(\tilde T)=v^2\tilde Tv^{-2}$.</p>
-<p><strong>Proof.</strong> Since $v$ is invertible, $\rho_v$ is a linear automorphism, and $\langle\rho_v(\tilde T)\rangle_{\natural}=\langle v\rangle_{\natural}\langle\tilde T\rangle_{\natural}\langle v\rangle_{\natural}^{-1}=\langle\tilde T\rangle_{\natural}$ by multiplicativity of the norm, whence the polar form is preserved too; the statement $\rho_v(v)=-vvv^{-1}=-v$ is immediate. If $\tilde T$ anticommutes with $v$, then $-v\tilde Tv^{-1}=\tilde Tv\,v^{-1}=\tilde T$, so $\tilde T$ is fixed. The square is $\rho_v(\rho_v(\tilde T))=v(v\tilde Tv^{-1})v^{-1}=v^2\tilde Tv^{-2}$, a conjugation by $v^2$, and it is the identity exactly when $v^2$ is a scalar.</p>
+<p><strong>Theorem.</strong> For $v$ with $\langle v\rangle_{\natural}=1$ the map $\rho_v$ preserves the biquaternion norm and its polar form, satisfies $\rho_v(v)=-v$, and fixes pointwise every element that anticommutes with $v$; its square is the conjugation $\rho_v^2(\tilde Q_3)=v^2\tilde Q_3v^{-2}$.</p>
+<p><strong>Proof.</strong> Since $v$ is invertible, $\rho_v$ is a linear automorphism, and $\langle\rho_v(\tilde Q_3)\rangle_{\natural}=\langle v\rangle_{\natural}\langle\tilde Q_3\rangle_{\natural}\langle v\rangle_{\natural}^{-1}=\langle\tilde Q_3\rangle_{\natural}$ by multiplicativity of the norm, whence the polar form is preserved too; the statement $\rho_v(v)=-vvv^{-1}=-v$ is immediate. If $\tilde Q_3$ anticommutes with $v$, then $-v\tilde Q_3v^{-1}=\tilde Q_3v\,v^{-1}=\tilde Q_3$, so $\tilde Q_3$ is fixed. The square is $\rho_v(\rho_v(\tilde Q_3))=v(v\tilde Q_3v^{-1})v^{-1}=v^2\tilde Q_3v^{-2}$, a conjugation by $v^2$, and it is the identity exactly when $v^2$ is a scalar.</p>
 <p><strong>Remark (which subspaces carry the reflections).</strong> For the formula to be a genuine reflection, orthogonality and anticommutation must coincide on the ambient subspace. This happens when the multiplication is Clifford there: on the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ one has
 $$
-v\tilde T+\tilde Tv=-2\langle v,\tilde T\rangle\,e_t,
+v\tilde Q_3+\tilde Q_3v=-2\langle v,\tilde Q_3\rangle\,e_t,
 $$
 so the hyperplane $v^{\perp}$ is exactly the set of elements anticommuting with $v$, and $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has complex-linear determinant $-1$. Here $v^2=-\bigl(\sum_k v_k^2\bigr)e_t$ is a scalar, so $\rho_v$ is an involution. On the quaternion and Hermitian subspaces the elements do not anticommute, and a norm-one element acts there by conjugation as a rotation rather than as a reflection. On the algebra as a whole, likewise, $\rho_v$ has determinant $+1$ for every $v$ with $\langle v\rangle_{\natural}=1$, so the maps attached to the finite groups of units are rotations and not reflections; and on $\mathbb{H}_{\mathbb{B}}$ the norm-one element $e_t$ is central, so $\rho_{e_t}=-\mathrm{id}$ and nothing is fixed.</p>
 <p><strong>Theorem (Cartan–Dieudonné in the biquaternion algebra).</strong> On the complex three-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, every isometry is a product of at most three reflections $\rho_v$ with $\langle v\rangle_{\natural}=1$.</p>
@@ -309,8 +309,8 @@ $$</p>
 <p><strong>Complexification of the unitary dual.</strong> The unitary dual of the maximal compact subgroup $SU(2)$ is discrete, the family $\{V_j\}_{j \in \frac{1}{2}\mathbb{Z}_{\geq 0}}$. Passing to the complexification $SL(2,\mathbb{C})$ replaces the discrete highest-weight parameter by a continuous complex parameter; the representations that remain unitary form the principal series, with parameter on the unitary axis, together with the complementary series on a bounded interval of the imaginary axis. In this sense the unitary dual of $SL(2,\mathbb{C})$ is the complexification of the unitary dual of $SU(2)$. The polynomial representations correspond to the dominant integral highest weights, the discrete points that were unitary for $SU(2)$; under complexification those points cease to be unitary except for the trivial representation.</p>
 <h2 id="summary">Summary</h2>
 <p>The motions of the biquaternion algebra are the isometries of its biquaternion norm, and they are the rotations and the Lorentz transformations. The unit quaternions $Sp(1)$ carry the rotations of the definite form by the sandwich $\tilde{Q}\mapsto \tilde u\tilde{Q}\tilde u^{-1}$, in which the angle is halved and $\pm\tilde u$ gives the same rotation: the map $Sp(1)\to SO(3)$ is the double cover $SU(2)\to SO(3)$. Complexifying, the norm-one group $\mathbb{B}^\times_1$ carries the rotations of the indefinite form, and $\mathbb{B}^\times_1/\{\pm e_t\}\cong SO^+(1,3)$ with $\mathbb{B}^\times_1\cong Spin(1,3)$, so that the double cover of the proper orthochronous Lorentz group is realised inside the algebra; the trace-free subalgebra splits into the compact rotation directions and the hyperbolic directions, and it is the boosts generated by the latter that are the isometries of the indefinite form.</p>
-<p>The action that carries these motions on the whole algebra is the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$. It preserves the two Hermitian sectors and no other pair of the remarkable subspaces, it scales the biquaternion norm by $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}$ and preserves it on the unit-norm slice, and its kernel is the central circle $\mathrm{U}(1)$, which reduces to $\{\pm e_t\}$ on the slice and is the double cover. It is multiplicative exactly on the unitary elements, its infinitesimal form is $X\tilde T+\tilde TX^{*}$, the commutator along the anti-Hermitian directions and the anticommutator along the Hermitian ones, and the operators preserving the whole subspace structure are exactly the central multiples of the real unit quaternions, giving $SO(3)$ on the slice and $\mathbb{R}_{>0}\times SO(3)$ with the dilations admitted.</p>
-<p>The two-sided action $\tilde{Q}\mapsto \tilde u_1\tilde{Q}\tilde u_2$ with independent unit quaternions preserves the Euclidean form and gives $(Sp(1)\times Sp(1))/\{\pm e_t\}\cong SO(4)$; the one-sided action is its diagonal restriction. The reflections are the maps $\rho_v(\tilde T)=-v\tilde Tv^{-1}=-v\tilde Tv^{\natural}$ with $\langle v\rangle_{\natural}=1$, defined on the Clifford vector subspace $\mathrm{Vect}(\mathbb{B})$ and its real form, where orthogonality and anticommutation coincide; on that subspace every isometry is a product of at most three of them, by Cartan–Dieudonné. The construction is that of <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em> and <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> of Part II, and the full symmetry group of the algebra, wider than its isometries, is in <em>Biquaternion Automorphisms and Derivations</em>.</p>
+<p>The action that carries these motions on the whole algebra is the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde Q_3)=\tilde{Q}\tilde Q_3\tilde{Q}^{*}$. It preserves the two Hermitian sectors and no other pair of the remarkable subspaces, it scales the biquaternion norm by $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}$ and preserves it on the unit-norm slice, and its kernel is the central circle $\mathrm{U}(1)$, which reduces to $\{\pm e_t\}$ on the slice and is the double cover. It is multiplicative exactly on the unitary elements, its infinitesimal form is $X\tilde Q_3+\tilde Q_3X^{*}$, the commutator along the anti-Hermitian directions and the anticommutator along the Hermitian ones, and the operators preserving the whole subspace structure are exactly the central multiples of the real unit quaternions, giving $SO(3)$ on the slice and $\mathbb{R}_{>0}\times SO(3)$ with the dilations admitted.</p>
+<p>The two-sided action $\tilde{Q}\mapsto \tilde u_1\tilde{Q}\tilde u_2$ with independent unit quaternions preserves the Euclidean form and gives $(Sp(1)\times Sp(1))/\{\pm e_t\}\cong SO(4)$; the one-sided action is its diagonal restriction. The reflections are the maps $\rho_v(\tilde Q_3)=-v\tilde Q_3v^{-1}=-v\tilde Q_3v^{\natural}$ with $\langle v\rangle_{\natural}=1$, defined on the Clifford vector subspace $\mathrm{Vect}(\mathbb{B})$ and its real form, where orthogonality and anticommutation coincide; on that subspace every isometry is a product of at most three of them, by Cartan–Dieudonné. The construction is that of <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em> and <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> of Part II, and the full symmetry group of the algebra, wider than its isometries, is in <em>Biquaternion Automorphisms and Derivations</em>.</p>
 <p>The groups that carry the motions have their own representation theory. The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$, of real dimension $8$, with the unit-norm subgroup $\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$, the maximal compact subgroups $\mathrm{U}(2)$ and $SU(2)$, and the finite-dimensional algebraic representations of $GL_2(\mathbb{C})$ parameterised by the highest weights $(\lambda_1,\lambda_2)$. The finite-dimensional representations of the Lorentz group are the outer products $(m,n)=V_m\boxtimes V_n$ of dimension $(2m+1)(2n+1)$, the polynomial ones being the symmetric powers $V_j$, which the unitary trick recovers from those of $SU(2)$ by complexifying the Lie algebra; the defining representation $V_{1/2}=\mathbb{C}^2$ is the unique simple module of the algebra $M_2(\mathbb{C})$. The defining representation and its conjugate are the two Weyl spinors $(\tfrac12,0)$ and $(0,\tfrac12)$, whose sum is the Dirac spinor and whose tensor product is the four-vector representation $(\tfrac12,\tfrac12)$; the adjoint representation of the Lorentz algebra is $(1,0)\oplus(0,1)$. Tensor products obey the Clebsch–Gordan rule, with the ballot numbers counting the composition factors of the tensor powers of the spinor. Unitarity is preserved by complexification only for the compact form $SU(2)$: the only finite-dimensional unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the infinite-dimensional unitary representations are the principal series, induced from characters of the Borel subgroup, together with the complementary series.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -334,12 +334,12 @@ $$</p>
 <td>Sandwich action; rotor conjugation</td>
 </tr>
 <tr>
-<td>$\rho_v(\tilde T)=-v\tilde Tv^{-1}=-v\tilde Tv^{\natural}$</td>
+<td>$\rho_v(\tilde Q_3)=-v\tilde Q_3v^{-1}=-v\tilde Q_3v^{\natural}$</td>
 <td>Reflection in $v^{\perp}$ on $\mathrm{Vect}(\mathbb{B})$, $\langle v\rangle_{\natural}=1$</td>
 </tr>
 <tr>
-<td>$v\tilde T+\tilde Tv=-2\langle v,\tilde T\rangle e_t$</td>
-<td>Anticommutation as orthogonality on $\mathrm{Vect}(\mathbb{B})$; then $v^{\perp}=\{\tilde T:\tilde Tv=-v\tilde T\}$</td>
+<td>$v\tilde Q_3+\tilde Q_3v=-2\langle v,\tilde Q_3\rangle e_t$</td>
+<td>Anticommutation as orthogonality on $\mathrm{Vect}(\mathbb{B})$; then $v^{\perp}=\{\tilde Q_3:\tilde Q_3v=-v\tilde Q_3\}$</td>
 </tr>
 <tr>
 <td>Cartan–Dieudonné</td>
@@ -374,7 +374,7 @@ $$</p>
 <td>Two-sided action as four-dimensional rotations</td>
 </tr>
 <tr>
-<td>$\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$</td>
+<td>$\mathrm{H}_{\tilde{Q}}(\tilde Q_3)=\tilde{Q}\tilde Q_3\tilde{Q}^{*}$</td>
 <td>The dagger sandwich; the action of a unit on the algebra</td>
 </tr>
 <tr>
@@ -382,7 +382,7 @@ $$</p>
 <td>Central phase invisible; modulus as the dilation</td>
 </tr>
 <tr>
-<td>$\langle\mathrm{H}_{\tilde{Q}}(\tilde T)\rangle_{\natural}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde T\rangle_{\natural}$</td>
+<td>$\langle\mathrm{H}_{\tilde{Q}}(\tilde Q_3)\rangle_{\natural}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_3\rangle_{\natural}$</td>
 <td>Scaling of the norm; an isometry on the unit-norm slice</td>
 </tr>
 <tr>
@@ -394,7 +394,7 @@ $$</p>
 <td>Operators preserving all remarkable subspaces: the central multiples of the real unit quaternions</td>
 </tr>
 <tr>
-<td>$X\tilde T+\tilde TX^{*}$</td>
+<td>$X\tilde Q_3+\tilde Q_3X^{*}$</td>
 <td>Infinitesimal operator; commutator on $\mathbb{M}_-$, anticommutator on $\mathbb{M}_+$</td>
 </tr>
 <tr>
