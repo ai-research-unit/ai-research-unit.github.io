@@ -49,7 +49,7 @@ the longitudinal projector being the term that the mass creates. In the Stueckel
 
 ### The Stueckelberg Field
 
-Let $\tilde{\chi}=\chi e_t$ be a real **central** scalar, and let it transform by a shift under the abelian gauge transformation:
+Let $\tilde Q_5=\chi e_t$ be a real **central** scalar, and let it transform by a shift under the abelian gauge transformation:
 $$
 \tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma ,
 \qquad
@@ -205,11 +205,11 @@ The Stueckelberg mechanism has one parameter and no potential; the Higgs mechani
 
 ### The Stueckelberg Field Is the Central Scalar
 
-In the framework's terms the Stueckelberg field is the phase $\tilde\chi$ of the central scalar
+In the framework's terms the Stueckelberg field is the phase $\tilde Q_5$ of the central scalar
 $$
-\tilde\Phi_{\mathrm{St}}=\rho\,\exp(i\tilde{\chi})\in\mathbb{C}_{\mathbb{B}},
+\tilde\Phi_{\mathrm{St}}=\rho\,\exp(i\tilde Q_5)\in\mathbb{C}_{\mathbb{B}},
 \qquad
-\tilde{\chi}=\chi e_t\in\mathbb{C}_{\mathbb{B}},
+\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}},
 $$
 so both lie in the same two-dimensional centre that carries the abelian gauge group. The invariant combination $\tilde A-\tilde\nabla\chi$ is what the covariant derivative of a central scalar produces: the covariant derivative $\tilde D\tilde\Phi_{\mathrm{St}}=(\tilde\nabla+i\kappa\tilde A)\tilde\Phi_{\mathrm{St}}$ on a central scalar of constant magnitude $\rho$ has phase $\kappa\tilde A+\tilde\nabla\vartheta$, and the gauge-invariant content is the combination $\tilde A+\tfrac{1}{\kappa}\tilde\nabla\vartheta$ — the same $\tilde B$ up to the normalization of the phase. The Stueckelberg mass term is therefore the **biquaternion norm of the gauge-invariant derivative**, $-\tfrac12\mu^2\langle\tilde B\rangle$, and the algebra contains it because the centre contains the scalar and the material sector contains the vector.
 
@@ -227,7 +227,7 @@ The mechanism as constructed is abelian. Its essential ingredient is that the sh
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The carrier: the Stueckelberg field as the central scalar $\tilde{\chi}=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the vector as the material connection $\tilde{A}\in\mathbb{M}_-$. The gauge transformation and the invariant combination: $\tilde B=\tilde A-\tilde\nabla\chi$ is invariant under $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, $\chi'=\chi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde B\rangle$, with the sign of the Proca companion, and its reduction to Proca in the gauge $\chi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.
+**Supplied by the algebra, and recomputed here.** The carrier: the Stueckelberg field as the central scalar $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the vector as the material connection $\tilde{A}\in\mathbb{M}_-$. The gauge transformation and the invariant combination: $\tilde B=\tilde A-\tilde\nabla\chi$ is invariant under $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, $\chi'=\chi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde B\rangle$, with the sign of the Proca companion, and its reduction to Proca in the gauge $\chi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.
 
 **Imported, and left visible.** The Stueckelberg construction itself; the $R_\xi$ gauge-fixing condition and the gauge-parameter independence of physical amplitudes; the degree-of-freedom count and the second-class constraint analysis, the latter from the Proca companion; the propagator and the $\xi$-dependent scalar mass; the relation to the abelian Higgs and the limit in which the radial mode decouples; and the non-abelian extension with an adjoint scalar. All are standard and are cited as such.
 
@@ -249,7 +249,7 @@ D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\eta_{\mu\nu}-\frac{(\xi-1)p_\mu p_\nu}{p
 $$
 has a gauge-dependent longitudinal part, with physical amplitudes independent of $\xi$. The count is five fields, one gauge symmetry and one mass-term constraint, leaving three.
 
-The mechanism is the abelian Higgs with the radial mode removed: the Stueckelberg field is the phase of the central scalar, and the Higgs is its ultraviolet completion with $\mu=\kappa v=ϙv/\hbar$ and a radial mode of mass $m_h=\sqrt{2\beta}\,v$. In the framework the Stueckelberg field is central, $\tilde{\chi}=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the invariant mass term is the biquaternion norm of the gauge-invariant derivative; the mechanism requires only the shift, no potential and no vacuum value, which is why it is the framework's natural massive-abelian-vector mechanism. It does not extend to the compact factor: the non-abelian version requires a scalar in the adjoint representation, whereas the framework's scalar is a singlet. The mass $\mu$ remains a parameter, and the mechanism adds no empirical content.
+The mechanism is the abelian Higgs with the radial mode removed: the Stueckelberg field is the phase of the central scalar, and the Higgs is its ultraviolet completion with $\mu=\kappa v=ϙv/\hbar$ and a radial mode of mass $m_h=\sqrt{2\beta}\,v$. In the framework the Stueckelberg field is central, $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the invariant mass term is the biquaternion norm of the gauge-invariant derivative; the mechanism requires only the shift, no potential and no vacuum value, which is why it is the framework's natural massive-abelian-vector mechanism. It does not extend to the compact factor: the non-abelian version requires a scalar in the adjoint representation, whereas the framework's scalar is a singlet. The mass $\mu$ remains a parameter, and the mechanism adds no empirical content.
 
 ## Summary of Notation
 
@@ -261,8 +261,8 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; home of the Stueckelberg scalar |
 | $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ | Abelian connection and its gauge law |
-| $\tilde{\chi}=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, $\chi'=\chi-\Gamma$ | Stueckelberg field and its shift |
-| $\tilde\Phi_{\mathrm{St}}=\rho\,\exp(i\tilde{\chi})\in\mathbb{C}_{\mathbb{B}}$ | Central scalar whose phase is the Stueckelberg field |
+| $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, $\chi'=\chi-\Gamma$ | Stueckelberg field and its shift |
+| $\tilde\Phi_{\mathrm{St}}=\rho\,\exp(i\tilde Q_5)\in\mathbb{C}_{\mathbb{B}}$ | Central scalar whose phase is the Stueckelberg field |
 | $\tilde B=\tilde A-\tilde\nabla\chi$ | Gauge-invariant combination |
 | $\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde B\rangle$ | Stueckelberg Lagrangian |
 | $\mu$ | Stueckelberg mass (a parameter) |

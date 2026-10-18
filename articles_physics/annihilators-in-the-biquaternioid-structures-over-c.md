@@ -12,8 +12,8 @@ article reads them physically. It is the second physics companion of the mathema
 (`articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`).
 
 The mathematics companion computes the annihilator of a general element in each of the twelve structures
-and proves two theorems. The first: the two one-sided annihilators, the left one $\{\tilde Q_1:\tilde P\star
-\tilde Q_1=0\}$ and the right one $\{\tilde Q_1:\tilde Q_1\star\tilde P=0\}$, are equal in ten of the twelve
+and proves two theorems. The first: the two one-sided annihilators, the left one
+$\{\tilde Q_1:\tilde P\star \tilde Q_1=0\}$ and the right one $\{\tilde Q_1:\tilde Q_1\star\tilde P=0\}$, are equal in ten of the twelve
 structures and differ in exactly two, the plain product $\tilde P\tilde Q$ and the general quaternionic
 sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$, and there only at an element of vanishing
 biquaternion norm. The second: the four planes of a cone element in the four general products are one
@@ -557,7 +557,7 @@ Born pairing is a property of that band rather than a general theorem.
 Topological Baryon in Biquaternionic Form* gives the annihilator a second, stronger instance beside the
 Bianchi one. The topological current of the chiral field,
 $B^\mu=\frac{1}{24\pi^2}\varepsilon^{\mu\nu\rho\sigma}\mathrm{Tr}(j_\nu j_\rho j_\sigma)$ with
-$j_\mu=\tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$, is **conserved identically**: $\langle\tilde\nabla,\tilde B\rangle_{\natural}=0$ holds without
+$j_\mu=\tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$, is **conserved identically**: $\partial_\mu B^\mu=0$ holds without
 any equation of motion, the divergence cancelling by antisymmetry of $\varepsilon$ and by the Maurer–Cartan
 flatness of $j_\mu$. So the current lies in the kernel of the divergence as a matter of algebraic structure,
 not as a consequence of dynamics. The contrast with Noether's theorem is what the companion should record:
@@ -640,7 +640,7 @@ is labelled by.
   so the vacuum of one mode expansion is not annihilated by the operators of another (Unruh, Hawking).
 - A current can lie in the kernel for a structural reason rather than a dynamical one. The topological baryon
   current of *The Skyrme Model and the Topological Baryon in Biquaternionic Form* is conserved identically,
-  $\langle\tilde\nabla,\tilde B\rangle_{\natural}=0$ with no equation of motion, by antisymmetry and Maurer–Cartan flatness: the kernel
+  $\partial_\mu B^\mu=0$ with no equation of motion, by antisymmetry and Maurer–Cartan flatness: the kernel
   of a Noether-type divergence is made off-shell, and the charge is the degree of a map rather than the
   integral of a dynamics.
 - The kernel can be constructive rather than destructive. The self-dual instantons of *Instantons and

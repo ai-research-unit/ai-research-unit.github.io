@@ -78,34 +78,29 @@ The governing rule: **only the Q family is generic, and only an element carries 
 
 ## 2. Bound Letters
 
-These letters are bound where they are introduced. Each names a coefficient, a named field, a gate or a bound argument. A generic element is never written with one; it takes the Q family. The count gives the articles in which the letter occurs in that role. The letter $B$ is the exception: it is bound in eight roles and treated in §*The Bindings of $\tilde B$*.
-
-| Symbol | Bound roles | Articles |
-|---|---|---|
-| $\tilde\chi$ | Bound, element: the central Stueckelberg and background field $\tilde\chi=\chi e_t$. It is never a state; the subnormalized reference operator of *Strong Subadditivity in the Biquaternion Framework* is built from the marginals and takes the Q family, $\tilde Q_{ABC}$ | 3 |
+These letters are bound where they are introduced. Each names a coefficient, a named field, a gate or a bound argument. A generic element is never written with one; it takes the Q family. The count gives the articles in which the letter occurs in that role. The letter $B$ is the exception: it is bound in four roles and treated in §*The Bindings of $\tilde B$*.
 
 ### The Bindings of $\tilde B$
 
-$B$ is outside the Q family, so it is never generic: each article binds it afresh, and one article may bind it more than once. The mark is read on the object — the tilde for a binding with a scalar part, the arrow for a pure one, and neither for a spinor.
+$B$ is outside the Q family, so it is never generic: each article binds it afresh, and one article may bind it more than once. The tilde marks a binding with a scalar part.
 
 | Binding | Object | Scalar part | Mark | Articles |
 |---|---|---|---|---|
-| Lanczos partner field | general biquaternion, $\tilde\nabla\tilde A=m\tilde B$ | generally nonzero | $\tilde B$ | 8 |
+| Lanczos partner field | $\tilde B$ in $\tilde\nabla\tilde A=m\tilde B$, $\tilde\nabla\tilde B=m\tilde A$: a general biquaternion | generally nonzero | $\tilde B$ | 0 |
 | Stueckelberg combination | $\tilde B=\tilde A-\tilde\nabla\chi\in\mathbb{M}_-$ | the $e_t$ coefficient, generally nonzero | $\tilde B$ | 1 |
-| CNOT operands | idempotents $\tilde\Pi_1(\vec u_x)$ and $\tilde\Pi_1(\vec u_z)$ | $\tfrac12$ | $\tilde B$ | 1 |
-| Topological baryon current | four-vector $B^\mu e_\mu$, $B^0$ the baryon density | $B^0$ | $\tilde B$ | 2 |
-| Contracted gauge curvature | $\sum_\rho(\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu})e_\rho$ | the $\rho=t$ slot | $\tilde B$ | 1 |
-| Bound algebra element | $\tilde Q-\mu e_t$; $\vec e_k\tilde Q^{*}$; $e_t-i\vec e_z$ | generally nonzero | $\tilde B$ | 4 |
-| Conway–Silberstein field strength | $\mathrm{Vec}(\tilde\nabla\tilde A)$, pure | $0$ | $\vec B$ | 1 |
-| Weiss quaternion spinor | bireal spinor, $\tilde V=BB^{+}$ | — (module element) | $B$ | 1 |
+| CNOT operands | $\tilde B=\tilde\Pi_1(\vec u_z)$, with $\tilde A=\tilde\Pi_1(\vec u_x)$ | $\tfrac12$ | $\tilde B$ | 1 |
+| Bound algebra element | $\tilde B=\tilde Q-\mu e_t$; $\tilde B=\vec e_k\tilde Q^{*}$; $\tilde B=e_t-i\vec e_z$ | generally nonzero | $\tilde B$ | 4 |
 
-The article column sums to $19$ and the distinct total is $17$: *A Brief History of Biquaternions in Physics* binds $B$ three times — as the Lanczos partner field, as the Conway–Silberstein field strength and as Weiss's spinor — and is counted once in the row above.
+The article column sums to $6$.
 
-- **Lanczos partner field.** The second field of $\tilde\nabla\tilde A=m\tilde B$, $\tilde\nabla\tilde B=m\tilde A$, a general biquaternion whose scalar part is generally nonzero. Eight articles: *The Petiau System and the Quantisation of Mass in Biquaternionic Form*, *The Proton in Biquaternionic Form*, *The Neutron in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form*, *The Klein–Gordon Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* and *A Brief History of Biquaternions in Physics*.
-- **Stueckelberg combination.** $\tilde B=\tilde A-\tilde\nabla\chi$, an element of $\mathbb{M}_-$ whose $e_t$ coefficient is generally nonzero. It is gauge invariant with $\tilde A$ and $\chi$, and $-\tfrac12\mu^2\langle\tilde B\rangle$ is the mass term of *The Stueckelberg Mechanism in Biquaternionic Form*.
-- **CNOT operands.** $\tilde A=\tilde\Pi_1(\vec u_x)$ and $\tilde B=\tilde\Pi_1(\vec u_z)$ in *Quantum Gates and Circuits in Biquaternionic Form*: idempotents of scalar part $\tfrac12$, conjugated on both sides by $\tilde C$.
-- **Topological baryon current.** $\tilde B=B^\mu e_\mu$, with $B^0$ the baryon density. It is conserved identically, $\langle\tilde\nabla,\tilde B\rangle_{\natural}=0$, in *The Skyrme Model and the Topological Baryon in Biquaternionic Form* and in *Annihilators in the Biquaternioid Structures over $\mathbb{C}$*.
-- **Contracted gauge curvature.** $\tilde B=\sum_\rho(\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu})e_\rho$ in *Gauge Curvature and the Bianchi Identity in Biquaternionic Form*: the four contracted Bianchi equations in one element, the scalar slot included.
-- **Bound algebra elements.** Three local bindings: $\tilde B=\tilde Q-\mu e_t$ in the resolvent identity of *Biquaternion Spectral Theory*; $\tilde B=\vec e_k\tilde Q^{*}$ in the image proof of *The Four-Vector Operator Representation of Biquaternions*; and the zero-divisor partner $\tilde B=e_t-i\vec e_z$ of *Worked Examples in the Biquaternion Algebra*. Four articles, because *The Four-Vector Operator Representation of Biquaternions* stands in both the maths and the physics menu.
+**The two tensor entries, withdrawn.** The topological baryon current and the contracted Bianchi curvature are no longer bindings of $\tilde B$: the articles state them in tensor form only, $B^\mu$ with $\partial_\mu B^\mu=0$ in *The Skyrme Model and the Topological Baryon in Biquaternionic Form* and *Annihilators in the Biquaternioid Structures over $\mathbb{C}$*, and $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ in *Gauge Curvature and the Bianchi Identity in Biquaternionic Form*. The letter of the current stays $B$, as the index of a four-vector and not as a glyph of the algebra. Neither statement carries a tilde, so neither is catalogued.
 
-**The two bindings outside the tilde.** The Conway–Silberstein field strength is pure: the supplementary condition $\mathrm{Sc}(\tilde\nabla\tilde A)=0$ makes the second field of the compact system the vector part, $\vec B=\mathrm{Vec}(\tilde\nabla\tilde A)$. The letter is the source's, kept as the Lanczos letters are kept; the mark is the corpus's, and a pure element carries the arrow. The other two occurrences of $\vec B$ in that article are the real magnetic three-vector of the Riemann–Silberstein vector, a different object. The same object, up to the normalisation of the field, is the field strength $\tilde F$ of §*The Fields*, which this catalogue keeps under the tilde although it is pure. Weiss's quaternion spinor takes no mark: *Radiation from Accelerated Charges in Biquaternionic Form* already writes the same formula $\tilde V=BB^{+}$ with the letter bare, and *A Brief History of Biquaternions in Physics* now matches it. Neither row is a tilde use, and neither is available for citation as a tilde glyph.
+**The four tilde bindings, and the exact articles of each.** A number in parentheses is the count of $\tilde B$ in that article; the catalogue itself is excluded.
+
+1. **Lanczos partner field.** The role is the second field of $\tilde\nabla\tilde A=m\tilde B$, $\tilde\nabla\tilde B=m\tilde A$, a general biquaternion whose scalar part is generally nonzero. It is not written in the corpus: the eight articles where the role occurs are *The Petiau System and the Quantisation of Mass in Biquaternionic Form*, *The Proton in Biquaternionic Form*, *The Neutron in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form*, *The Klein–Gordon Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* and *A Brief History of Biquaternions in Physics*, and each writes the pair with the Q family, $\tilde\nabla\tilde Q_1=m\tilde Q_2$, $\tilde\nabla\tilde Q_2=m\tilde Q_1$. The count in the table is therefore zero.
+
+2. **Stueckelberg combination.** *The Stueckelberg Mechanism in Biquaternionic Form* (14): $\tilde B=\tilde A-\tilde\nabla\chi$, an element of $\mathbb{M}_-$ whose $e_t$ coefficient is generally nonzero, gauge invariant with $\tilde A$ and $\chi$, with $-\tfrac12\mu^2\langle\tilde B\rangle$ the mass term.
+
+3. **CNOT operands.** *Quantum Gates and Circuits in Biquaternionic Form* (10): $\tilde A=\tilde\Pi_1(\vec u_x)$ and $\tilde B=\tilde\Pi_1(\vec u_z)$, idempotents of scalar part $\tfrac12$ conjugated on both sides by $\tilde C$.
+
+4. **Bound algebra element.** Three local bindings, of generally nonzero scalar part: *Biquaternion Spectral Theory* (4), $\tilde B=\tilde Q-\mu e_t$ in the resolvent identity; *The Four-Vector Operator Representation of Biquaternions* (2 in the maths menu and 2 in the physics menu, counted as four articles because the title stands in both), $\tilde B=\vec e_k\tilde Q^{*}$ in the image proof; and *Worked Examples in the Biquaternion Algebra* (8), the zero-divisor partner $\tilde B=e_t-i\vec e_z$.
