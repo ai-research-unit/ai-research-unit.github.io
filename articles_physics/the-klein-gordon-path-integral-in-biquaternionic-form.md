@@ -208,7 +208,7 @@ a central scalar phase times a central scalar determinant. The effective action 
 The classical equation's momentum-space form is the vanishing of the symbol of the quadratic form,
 
 $$
-\left(\frac{\omega^2}{c^2}-\vec k^2-\mu^2\right)\tilde{\phi}_{\mathrm{cl}}(\omega,\vec k)=-\tilde{J}(\omega,\vec k),
+\left(\frac{\omega^2}{c^2}-\vec k^2-\mu^2\right)\phi_{\mathrm{cl}}(\omega,\vec k)=-J(\omega,\vec k),
 $$
 
 so that the propagator is the inverse of the biquaternion norm shifted by the mass. In the framework's terms, the saddle condition is that the four-wavevector of a free mode lies on the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$ of the biquaternion norm of $\mathbb{M}_-$, and the source moves the field off the shell by an amount measured by the biquaternion norm through the kernel. This is the third formulation's version of the same biquaternion-norm geometry that the equation and the propagator exhibit.

@@ -115,7 +115,7 @@ $$
 where $\vec r = 2\vec h$. The map $\vec r \mapsto \tilde{Ϛ}$ is an affine isomorphism $\mathbb{R}^3 \to \mathcal{S}$, and $\vec r$ is the **Bloch vector**. In this parametrization the trace pairing on the slice reads
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr) \qquad \text{for } \tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r),\ \tilde{\sigma} = \tfrac{1}{2}(e_t + i\vec s),
+\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr) \qquad \text{for } \tilde{Ϛ}_1 = \tfrac{1}{2}(e_t + i\vec r),\ \tilde{Ϛ}_2 = \tfrac{1}{2}(e_t + i\vec s),
 $$
 
 so the Hilbert–Schmidt geometry of the slice is the Euclidean geometry of $\mathbb{R}^3$, up to the additive constant and the factor inherited from the trace.
@@ -281,10 +281,10 @@ $$
 
 which vanishes on the boundary and is maximal, equal to $\tfrac{1}{2}$, at the centre. The last equality is worth emphasis: **the biquaternion norm is, up to the factor $2$, the linear entropy on the trace-one hyperplane.** The quadratic form whose cone cuts out the state space is the same form that measures how mixed a state is. The reason mixedness has a biquaternion-norm expression is that both are governed by the same quantity $\lambda_+ \lambda_- = \langle\tilde{Ϛ}\rangle_{\natural}$.
 
-Finally, the Euclidean geometry of the slice gives the trace pairing a direct metrical meaning on states. The squared Hilbert–Schmidt distance between $\tilde{Ϛ}$ and $\tilde{\sigma}$ is
+Finally, the Euclidean geometry of the slice gives the trace pairing a direct metrical meaning on states. The squared Hilbert–Schmidt distance between $\tilde{Ϛ}_1$ and $\tilde{Ϛ}_2$ is
 
 $$
-\mathrm{Tr}\bigl((\tilde{Ϛ} - \tilde{\sigma})^2\bigr) = \tfrac{1}{2}|\vec r - \vec s|^2 ,
+\mathrm{Tr}\bigl((\tilde{Ϛ}_1 - \tilde{Ϛ}_2)^2\bigr) = \tfrac{1}{2}|\vec r - \vec s|^2 ,
 $$
 
 and the trace distance from a state to the maximally mixed state is
@@ -334,16 +334,16 @@ a function of the angle between the Bloch directions alone. In terms of the boun
 For two general states the Uhlmann transition probability is
 
 $$
-T(\tilde{Ϛ},\tilde{\sigma}) = \Bigl(\mathrm{Tr}\sqrt{\sqrt{\tilde{Ϛ}}\;\tilde{\sigma}\sqrt{\tilde{Ϛ}}}\,\Bigr)^{2}.
+T(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \Bigl(\mathrm{Tr}\sqrt{\sqrt{\tilde{Ϛ}_1}\;\tilde{Ϛ}_2\sqrt{\tilde{Ϛ}_1}}\,\Bigr)^{2}.
 $$
 
 All square roots here are the positive square roots within $\mathbb{M}_+$: since $\tilde{Ϛ}$ is a convex combination of complementary idempotents, $\sqrt{\tilde{Ϛ}} = \sqrt{\lambda_+}\,\tilde\Pi_1(\vec u_r) + \sqrt{\lambda_-}\,\tilde\Pi_2(\vec u_r)$ lies in $\mathbb{M}_+$, and the same holds for the inner square root. In Bloch coordinates the expression evaluates to the closed form
 
 $$
-T(\tilde{Ϛ},\tilde{\sigma}) = \tfrac{1}{2}\Bigl(1 + \vec r\cdot\vec s + \sqrt{\bigl(1 - |\vec r|^2\bigr)\bigl(1 - |\vec s|^2\bigr)}\Bigr).
+T(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac{1}{2}\Bigl(1 + \vec r\cdot\vec s + \sqrt{\bigl(1 - |\vec r|^2\bigr)\bigl(1 - |\vec s|^2\bigr)}\Bigr).
 $$
 
-Three checks are immediate. When both states are pure, $|\vec r| = |\vec s| = 1$, the radical vanishes and $T = \tfrac{1}{2}(1 + \vec r\cdot\vec s)$, recovering the pure-state transition probability. When the states coincide, $\vec s = \vec r$, the expression is $\tfrac{1}{2}(1 + |\vec r|^2 + 1 - |\vec r|^2) = 1$. When $\tilde{Ϛ}$ is maximally mixed, $\vec r = 0$, it reduces to $T = \tfrac{1}{2}\bigl(1 + \sqrt{1 - |\vec s|^2}\bigr)$, which equals $\tfrac{1}{2}$ for a pure $\tilde{\sigma}$ and $1$ for $\tilde{\sigma}$ maximally mixed. The transition probability therefore measures, through $\vec r\cdot\vec s$, the alignment of the two Bloch vectors, and, through the radical, how far the two states are from the boundary. For mixed states it depends on the angle between the Bloch vectors as well as on the two radii; only the pure-pure case is a function of the angle alone.
+Three checks are immediate. When both states are pure, $|\vec r| = |\vec s| = 1$, the radical vanishes and $T = \tfrac{1}{2}(1 + \vec r\cdot\vec s)$, recovering the pure-state transition probability. When the states coincide, $\vec s = \vec r$, the expression is $\tfrac{1}{2}(1 + |\vec r|^2 + 1 - |\vec r|^2) = 1$. When $\tilde{Ϛ}_1$ is maximally mixed, $\vec r = 0$, it reduces to $T = \tfrac{1}{2}\bigl(1 + \sqrt{1 - |\vec s|^2}\bigr)$, which equals $\tfrac{1}{2}$ for a pure $\tilde{Ϛ}_2$ and $1$ for $\tilde{Ϛ}_2$ maximally mixed. The transition probability therefore measures, through $\vec r\cdot\vec s$, the alignment of the two Bloch vectors, and, through the radical, how far the two states are from the boundary. For mixed states it depends on the angle between the Bloch vectors as well as on the two radii; only the pure-pure case is a function of the angle alone.
 
 ## Symmetries of the Slice
 
@@ -410,7 +410,7 @@ so **positivity of a state is the causal condition of the four-vector it mirrors
 | interior of the timelike cone | positive definite elements; the interior of the ball at trace one |
 | trace-one slice, $ct = 1$ | trace-one hyperplane, $\mathrm{Sc} = \tfrac{1}{2}$ |
 | spatial part $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Bloch vector $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
-| unit-norm rotor, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ | unitary element, $\tilde{U}\tilde{U}^{*} = e_t$ |
+| unit-norm rotor, $\langle\tilde U\rangle_{\natural} = 1$ | unitary element, $\tilde{U}\tilde{U}^{*} = e_t$ |
 
 <!-- PHYSICAL READING — one cone, not two cones in correspondence. On the trace-one slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $ct$ to $h_0 = ct/2$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/2$, so $h_0 - |\vec h| = (ct - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $ct = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
 
@@ -436,9 +436,9 @@ The maximally mixed state is the image the map singles out. It is $\tilde{Ϛ} = 
 The two interpretations use one action. On $\mathbb{M}_-$,
 
 $$
-\Gamma_{\tilde{\Lambda}}(\tilde{Q}) \;=\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
+\Gamma_{\tilde U}(\tilde{Q}) \;=\; \tilde U\,\tilde{Q}\,\tilde U^{*},
 \qquad
-\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t ,
+\tilde U\tilde U^{\natural} = e_t ,
 $$
 
 preserves the interval and hence the cone. On $\mathbb{M}_+$ the same formula acts with the unitary of *Symmetries of the Slice*,
@@ -449,16 +449,16 @@ $$
 \tilde{U}\tilde{U}^{*} = e_t ,
 $$
 
-and preserves the Hermitian property, the trace, and the norm, hence the ball. Writing $\tilde{A}$ for whichever actor is in play, the two cases are the one formula $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, and what differs between the relativistic and the quantum reading is only the class of actor and the invariant that defines it, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ against $\tilde{U}\tilde{U}^{*} = e_t$.
+and preserves the Hermitian property, the trace, and the norm, hence the ball. Writing $\tilde{A}$ for whichever actor is in play, the two cases are the one formula $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, and what differs between the relativistic and the quantum reading is only the class of actor and the invariant that defines it, $\langle\tilde U\rangle_{\natural} = 1$ against $\tilde{U}\tilde{U}^{*} = e_t$.
 
-<!-- PHYSICAL READING — one formula, two actors. Relativity and quantum theory are not two structures laid in correspondence here; they are two classes of acting element of one algebra acting by one rule. A Lorentz transformation and a quantum evolution differ in this framework by the relation their actor satisfies, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ or $\tilde{U}\tilde{U}^{*} = e_t$, and not by the shape of the action. The intersection of the two classes is the rotation group $SU(2)$, which is the group common to the two readings. This is the sharpest single statement of the "two faces of one algebra" thesis, and it is established material rather than a proposal. -->
+<!-- PHYSICAL READING — one formula, two actors. Relativity and quantum theory are not two structures laid in correspondence here; they are two classes of acting element of one algebra acting by one rule. A Lorentz transformation and a quantum evolution differ in this framework by the relation their actor satisfies, $\langle\tilde U\rangle_{\natural} = 1$ or $\tilde{U}\tilde{U}^{*} = e_t$, and not by the shape of the action. The intersection of the two classes is the rotation group $SU(2)$, which is the group common to the two readings. This is the sharpest single statement of the "two faces of one algebra" thesis, and it is established material rather than a proposal. -->
 
 ### The Two Actors Are Not the Same Group
 
-The formula in question is not new here. *Biquaternion Rotations and Lorentz Transformations* defines the conjugation $\Phi_{\tilde{\Lambda}}(\tilde{Q}_1) = \tilde{\Lambda}\tilde{Q}_1\tilde{\Lambda}^{*}$ on the whole algebra and proves that it carries each of the two sectors to itself and preserves the norm on both. What the previous subsection adds is only the reading of that one map on the two sectors in turn, and the actor substituted into it. The two substitutions are:
+The formula in question is not new here. *Biquaternion Rotations and Lorentz Transformations* defines the conjugation $\Phi_{\tilde U}(\tilde{Q}_1) = \tilde U\tilde{Q}_1\tilde U^{*}$ on the whole algebra and proves that it carries each of the two sectors to itself and preserves the norm on both. What the previous subsection adds is only the reading of that one map on the two sectors in turn, and the actor substituted into it. The two substitutions are:
 
 $$
-\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t
+\tilde U\tilde U^{\natural} = e_t
 \quad\text{on } \mathbb{M}_-,
 \qquad\qquad
 \tilde{U}\tilde{U}^{*} = e_t
@@ -477,7 +477,7 @@ h_0 \ \text{fixed},
 R \in SO(3).
 $$
 
-That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde{\Lambda} = \cosh(\phi/2)e_t + i\sinh(\phi/2)\vec u$ has unit norm and is far from unitary, while $\exp(i\theta)e_t$ is unitary with $N = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
+That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\phi/2)e_t + i\sinh(\phi/2)\vec u$ has unit norm and is far from unitary, while $\exp(i\theta)e_t$ is unitary with $N = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
 
 The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,\exp(i\alpha)\tilde{B}\tilde{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde{B}$ and a unit real quaternion rotor $\tilde{q}$ (*The Polar Element Representation in Subspaces*, *The Twisted Spinor Operator Representation of Biquaternions*). The two classes above are exactly the two ways of keeping two of those four factors:
 
@@ -489,7 +489,7 @@ The names of the two actors are the names of the two factors of the polar word. 
 
 So it is not merely that the two groups differ: **the boost factor is what a Lorentz transformation has and a unitary does not, and the central phase is what a unitary has and a boost does not.** The polar article states the first as its criterion for a trivial boost factor — $\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_t$ exactly when $\tilde{B} = e_t$ — which in the matrix picture is the statement that the element is unitary up to a scale. The second is the same statement read the other way: unit norm forces $r = 1$ and $\exp(2i\alpha) = 1$, so the phase has no room and the boost factor has all of it. And the boost factor is not an outside object. It is $\tilde{B} = \sqrt{\tilde{Q}\tilde{Q}^{*}}/r$, a positive definite element of $\mathbb{M}_+$ itself, so the factor that carries a state off the trace-one slice belongs to the sector whose states they are. The twisted spinor article records the division on the other action: of the two, the unit-norm case is the Lorentz transformation on the material sector, while the unitary case is a rotation with no dilatation.
 
-The dividing line is sharper than a statement about groups, and the corpus draws it. *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* records that the action is an inner automorphism exactly in the unitary sector, where $\tilde{A}^{*} = \tilde{A}^{-1}$, and not elsewhere; for a unit-norm rotor that equation means $\tilde{\Lambda}$ is a real quaternion — the pure-rotation case — while a boost has $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq e_t$ and the map is not multiplicative. That same equation, $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_t$, is exactly unitarity. So one condition wears five faces:
+The dividing line is sharper than a statement about groups, and the corpus draws it. *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* records that the action is an inner automorphism exactly in the unitary sector, where $\tilde{A}^{*} = \tilde{A}^{-1}$, and not elsewhere; for a unit-norm rotor that equation means $\tilde U$ is a real quaternion — the pure-rotation case — while a boost has $\tilde U^{*} = \tilde U$, so $\tilde U^{*}\tilde U = \tilde U^{2} \neq e_t$ and the map is not multiplicative. That same equation, $\tilde U\tilde U^{*} = e_t$, is exactly unitarity. So one condition wears five faces:
 
 $$
 \tilde{U}\tilde{U}^{*} = e_t
@@ -506,7 +506,7 @@ $$
 The unitary actor is therefore the one for which the shared formula is a symmetry of the algebra itself, an inner automorphism; the unit-norm boost actor is the one for which it is a symmetry only of the sector and of the cone. This is why the general Lorentz transformation acts on the cone of $\mathbb{M}_+$ but not on the states. The remark in *Biquaternion Rotations and Lorentz Transformations* that on the identity the conjugation returns $\tilde{Q}\tilde{Q}^{*}$, so that "the unit leaves the centre and the centre is carried into the Hermitian sector", is precisely the state-space statement: the image of the identity is
 
 $$
-\Phi_{\tilde{\Lambda}}(e_t) = \tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^{2} = \cosh\phi\,e_t + i\sinh\phi\,\vec u,
+\Phi_{\tilde U}(e_t) = \tilde U\tilde U^{*} = \tilde U^{2} = \cosh\phi\,e_t + i\sinh\phi\,\vec u,
 $$
 
 which is not central. On the maximally mixed state it gives
@@ -589,7 +589,7 @@ The ball has a mirror interpretation in the material sector. The map $\tilde{H} 
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state), $|\vec u| = 1$ |
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ | Purity |
 | $S(\tilde{Ϛ}) = -\mathrm{Tr}(\tilde{Ϛ}\log\tilde{Ϛ})$ | Von Neumann entropy |
-| $T(\tilde{Ϛ},\tilde{\sigma}) = (\mathrm{Tr}\sqrt{\sqrt{\tilde{Ϛ}}\,\tilde{\sigma}\sqrt{\tilde{Ϛ}}})^2$ | Uhlmann transition probability |
+| $T(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = (\mathrm{Tr}\sqrt{\sqrt{\tilde{Ϛ}_1}\,\tilde{Ϛ}_2\sqrt{\tilde{Ϛ}_1}})^2$ | Uhlmann transition probability |
 | $S^2 = SU(2)/\mathrm{U}(1)$ | Boundary (Bloch) sphere as a homogeneous space |
 | $H^\pm = SU(1,1)/\mathrm{U}(1)$, $H^{sl}$ | Time-like two-sheeted and space-like one-sheeted hyperboloids of $\mathbb{R}^{1,2}$ |
 | $[u|v] = u^{\dagger}\sigma_3 v$ | Indefinite $SU(1,1)$-invariant pairing on the spinor module |

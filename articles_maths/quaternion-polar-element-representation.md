@@ -67,7 +67,7 @@ $$
 \mathrm{Sp}(1) = \{\tilde u_{\mathrm r} \in \mathbb{H} : \langle\tilde u_{\mathrm r}\rangle_{\natural} = \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1\},
 $$
 
-is the unit sphere $\mathrm{Sp}(1)$ of unit real quaternions in $\mathbb{H} \cong \mathbb{R}^4$, a compact three-dimensional manifold, and it is a group under multiplication: if $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde v\rangle_{\natural} = 1$ then $\langle\tilde u_{\mathrm r}\tilde v\rangle_{\natural} = \langle\tilde u_{\mathrm r}\rangle_{\natural}\langle\tilde v\rangle_{\natural} = 1$ by multiplicativity, and $\tilde u_{\mathrm r}^{-1} = \tilde u_{\mathrm r}^{\natural}$ has the same norm. The unit factor is a group element, which is what makes it a rotor in the sense of the companion articles: it acts on the vector part of the algebra by conjugation and preserves the quaternion norm there.
+is the unit sphere $\mathrm{Sp}(1)$ of unit real quaternions in $\mathbb{H} \cong \mathbb{R}^4$, a compact three-dimensional manifold, and it is a group under multiplication: if $\langle\tilde u_1\rangle_{\natural} = \langle\tilde u_2\rangle_{\natural} = 1$ then $\langle\tilde u_1\tilde u_2\rangle_{\natural} = \langle\tilde u_1\rangle_{\natural}\langle\tilde u_2\rangle_{\natural} = 1$ by multiplicativity, and $\tilde u_1^{-1} = \tilde u_1^{\natural}$ has the same norm. The unit factor is a group element, which is what makes it a rotor in the sense of the companion articles: it acts on the vector part of the algebra by conjugation and preserves the quaternion norm there.
 
 ### Existence and Uniqueness
 

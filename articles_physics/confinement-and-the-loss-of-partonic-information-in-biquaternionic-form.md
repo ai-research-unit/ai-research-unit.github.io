@@ -23,7 +23,7 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
 W(C) = \mathrm{Tr}\,U(C),
 $$
 
-with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\geq0$, $\mathrm{Tr}\tilde{Ϛ} = 1$, and are parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy is $S(\tilde{Ϛ}\|\tilde{\sigma})$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
+with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\geq0$, $\mathrm{Tr}\tilde{Ϛ} = 1$, and are parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$; the trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
 
 ## Confinement and the Order Parameter
 
@@ -166,7 +166,7 @@ with $C_2(G) = N$ and the QCD coefficient $b_0 = 11 - \tfrac{2}{3}N_f$ for $SU(3
 On general grounds the flow from an ultraviolet description to an infrared description is a **completely positive trace-preserving map** between state spaces, and relative entropy is monotone under it:
 
 $$
-S\bigl(\Phi(\tilde{Ϛ})\,\big\|\,\Phi(\tilde{\sigma})\bigr) \;\leq\; S(\tilde{Ϛ}\|\tilde{\sigma}).
+S\bigl(\Phi(\tilde{Ϛ}_1)\,\big\|\,\Phi(\tilde{Ϛ}_2)\bigr) \;\leq\; S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2).
 $$
 
 The inequality is the precise sense in which the flow loses information: two partonic states that were distinguishable at the ultraviolet scale become less distinguishable, or indistinguishable, at the infrared scale. When the image of the map is a proper subalgebra — when distinct states are identified by it, as for the colour-singlet expectation of the next section — the inequality can be strict, and it becomes an equality at zero whenever the two states lie in the same fibre. The restricted relative entropy computed above is exactly that case, and there the loss is total.
@@ -188,7 +188,7 @@ $$
 averaging over the colour group with its normalized Haar measure, is a completely positive unital idempotent map: $E^2 = E$. It is the colour-singlet projection, and it is the natural model of what the asymptotic description retains. Applied to a state, it discards exactly the off-diagonal colour coherences and keeps the colour-neutral content, so that
 
 $$
-S\bigl(E(\tilde{Ϛ})\,\big\|\,E(\tilde{\sigma})\bigr) \;<\; S(\tilde{Ϛ}\|\tilde{\sigma})
+S\bigl(E(\tilde{Ϛ}_1)\,\big\|\,E(\tilde{Ϛ}_2)\bigr) \;<\; S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
 $$
 
 whenever at least one of the two states carries a colour coherence. The model is the same idempotent-projection structure that the companion article on decoherence develops in the informational sector; there, the projection is onto the pointer basis selected by an environment, and here it is onto the colour singlets selected by the spectrum.
@@ -410,7 +410,7 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $\vec r\cdot\vec u$ | Component along the charge axis; accessible content |
 | $R_{\vec u}(\theta)$, $U = \exp(i\theta n_a ie_a/2)$ | Charge rotation |
-| $S(\tilde{Ϛ}\|\tilde{\sigma})$ | Relative entropy; monotone under channels |
+| $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$ | Relative entropy; monotone under channels |
 | $E(\tilde{Q}) = \int_G dU\, UXU^{-1}$ | Colour-singlet conditional expectation; idempotent channel |
 | $\beta_g = -(g^3/16\pi^2)b_0$, $b_0 = 11 - \tfrac{2}{3}N_f$ | One-loop running (transcribed) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t) = 2$ |

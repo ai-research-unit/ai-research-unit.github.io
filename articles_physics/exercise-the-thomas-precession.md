@@ -6,25 +6,25 @@ This is one of the worked exercises in the relativity series. It applies the boo
 
 The discrete Thomas–Wigner rotation is already in the corpus: the product of two non-collinear boost rotors is a boost times a rotation, and its angle is known. This exercise takes only the distinct part of the subject — the **continuous limit**. A particle that is accelerated has a different instantaneous rest frame at every instant. Two rest frames a lab-time interval $dt$ apart are related by a Wigner rotation, and the limit $dt\to0$ defines an angular velocity, the **Thomas precession** $\vec\omega_T$. The exercise derives that rate, fixes its direction by a computation on a geometry that can actually see the direction, and connects it to the factor $\tfrac12$ in the spin–orbit coupling.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y=\vec e_z$, and the scalar imaginary $i$ with $i^2=-1$, commuting with every $\vec e_k$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part, the material sector), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part, the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors, and the complex scalar subspace $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the centre of the algebra. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ is inherited unchanged, but no object of the informational sector arises below, so it is recorded and not used. The four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^2$ and $\gamma=(1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force $\tilde{F}=d\tilde{P}/d\tau \in \mathbb{M}_-$. The boost biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y=\vec e_z$, and the scalar imaginary $i$ with $i^2=-1$, commuting with every $\vec e_k$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part, the material sector), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part, the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors, and the complex scalar subspace $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the centre of the algebra. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ with $\tilde U\tilde U^{\natural}=e_t$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ is inherited unchanged, but no object of the informational sector arises below, so it is recorded and not used. The four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^2$ and $\gamma=(1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force $\tilde{F}=d\tilde{P}/d\tau \in \mathbb{M}_-$. The boost biquaternion
 $$
-\tilde{\Lambda}_{\vec v_b}=\cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u,
+\tilde U_{\vec v_b}=\cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u,
 \qquad \tanh\psi_b=\frac{v_b}{c},
 $$
 which is Hermitian, lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is the particle velocity, $\vec a=d\vec v/dt$ its lab acceleration, and $\vec u$ is a unit direction. Components are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
-**The boost-rotor direction, stated once.** In this series the rotor $\tilde{\Lambda}_{\vec v_b}$ is the **lab-to-frame** rotor: acting on a four-vector by $\tilde{Q}\mapsto\tilde{\Lambda}_{\vec v_b}\tilde{Q}\tilde{\Lambda}_{\vec v_b}^{*}$, it carries the lab to the frame moving with $+\vec v_b$, and for the particle four-velocity $\tilde{V}$ it is the lab-to-rest rotor that satisfies $\tilde{\Lambda}_{\vec v}\tilde{V}\tilde{\Lambda}_{\vec v}^{*} = ic\,e_t$. Its quaternion conjugate is the inverse, $\tilde{\Lambda}^{\natural}_{\vec v_b}=\tilde{\Lambda}_{\vec v_b}^{-1}=\tilde{\Lambda}_{-\vec v_b}$. This direction is *not* stated in the parent article; it is the gap recorded in *Exercise: Boosting a Four-Velocity and Rapidity Composition*, Problem 4. Problem 3 below checks what that ambiguity does and does not do to the Thomas-precession sign.
+**The boost-rotor direction, stated once.** In this series the rotor $\tilde U_{\vec v_b}$ is the **lab-to-frame** rotor: acting on a four-vector by $\tilde{Q}\mapsto\tilde U_{\vec v_b}\tilde{Q}\tilde U_{\vec v_b}^{*}$, it carries the lab to the frame moving with $+\vec v_b$, and for the particle four-velocity $\tilde{V}$ it is the lab-to-rest rotor that satisfies $\tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*} = ic\,e_t$. Its quaternion conjugate is the inverse, $\tilde U^{\natural}_{\vec v_b}=\tilde U_{\vec v_b}^{-1}=\tilde U_{-\vec v_b}$. This direction is *not* stated in the parent article; it is the gap recorded in *Exercise: Boosting a Four-Velocity and Rapidity Composition*, Problem 4. Problem 3 below checks what that ambiguity does and does not do to the Thomas-precession sign.
 
 **What is to be shown.** Problem 1 identifies the rotor that relates two neighbouring instantaneous rest frames. Problem 2 takes the continuous limit and derives the Thomas precession rate $\vec\omega_T$. Problem 3 checks the sign on a non-collinear geometry, where alone the sign is visible, and separates the manipulations that flip it from those that do not. Problem 4 treats uniform circular motion, recovers the retrograde rotation and the "Thomas half", and connects the result to the spin–orbit coupling. Problem 5 states what the parent articles do and do not supply.
 
 ## Problem 1: The Rotor Between Two Neighbouring Rest Frames
 
-**Statement.** Let a particle have lab velocity $\vec v(t)$ and let $\tilde{\Lambda}_{\vec v}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_v$, with $\tanh\psi=v/c$, be its lab-to-rest boost rotor.
+**Statement.** Let a particle have lab velocity $\vec v(t)$ and let $\tilde U_{\vec v}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_v$, with $\tanh\psi=v/c$, be its lab-to-rest boost rotor.
 
 **(a)** Show that the rest frame at lab time $t+dt$ is related to the rest frame at time $t$ by the rotor
 $$
-\tilde{M}=\tilde{\Lambda}_{\vec v+d\vec v}\,\tilde{\Lambda}_{\vec v}^{-1}
-=\tilde{\Lambda}_{\vec v+d\vec v}\,\tilde{\Lambda}^{\natural}_{\vec v} .
+\tilde{M}=\tilde U_{\vec v+d\vec v}\,\tilde U_{\vec v}^{-1}
+=\tilde U_{\vec v+d\vec v}\,\tilde U^{\natural}_{\vec v} .
 \tag{1}
 $$
 
@@ -37,22 +37,22 @@ and identify $\tilde{u}$ as the Thomas–Wigner rotation of the interval $dt$.
 
 **(c)** Express the angle and axis of $\tilde{u}$ through the parent's Wigner-angle formula.
 
-**Solution. (a)** The rotor $\tilde{\Lambda}_{\vec v}$ carries the lab to the rest frame at time $t$: by the parent's relation $\tilde{\Lambda}_{\vec v}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, one has $\tilde{\Lambda}_{\vec v}\tilde{V}\tilde{\Lambda}_{\vec v}^{*}=ic\,e_t$, and every four-vector $\tilde{Q}$ has components
+**Solution. (a)** The rotor $\tilde U_{\vec v}$ carries the lab to the rest frame at time $t$: by the parent's relation $\tilde U_{\vec v}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, one has $\tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*}=ic\,e_t$, and every four-vector $\tilde{Q}$ has components
 $$
-\tilde{Q}'=\tilde{\Lambda}_{\vec v}\tilde{Q}\tilde{\Lambda}_{\vec v}^{*}
+\tilde{Q}'=\tilde U_{\vec v}\tilde{Q}\tilde U_{\vec v}^{*}
 \tag{3}
 $$
-in that rest frame. At $t+dt$ the same construction with $\vec v+d\vec v$ gives $\tilde{Q}''=\tilde{\Lambda}_{\vec v+d\vec v}\tilde{Q}\tilde{\Lambda}_{\vec v+d\vec v}^{*}$. Since $\tilde{\Lambda}_{\vec v}$ is Hermitian and of unit norm, $\tilde{\Lambda}_{\vec v}^{*}=\tilde{\Lambda}_{\vec v}$ and $\tilde{\Lambda}_{\vec v}^{*}\tilde{\Lambda}_{\vec v}=e_t$, so
+in that rest frame. At $t+dt$ the same construction with $\vec v+d\vec v$ gives $\tilde{Q}''=\tilde U_{\vec v+d\vec v}\tilde{Q}\tilde U_{\vec v+d\vec v}^{*}$. Since $\tilde U_{\vec v}$ is Hermitian and of unit norm, $\tilde U_{\vec v}^{*}=\tilde U_{\vec v}$ and $\tilde U_{\vec v}^{*}\tilde U_{\vec v}=e_t$, so
 $$
 \tilde{Q}''=\tilde{M}\,\tilde{Q}'\,\tilde{M}^{*},
 \qquad
-\tilde{M}=\tilde{\Lambda}_{\vec v+d\vec v}\tilde{\Lambda}_{\vec v}^{-1},
+\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1},
 $$
-which is (1). The direction matters: $\tilde{\Lambda}_{\vec v}^{-1}=\tilde{\Lambda}^{\natural}_{\vec v}=\tilde{\Lambda}_{-\vec v}$ is the inverse boost, not the same boost.
+which is (1). The direction matters: $\tilde U_{\vec v}^{-1}=\tilde U^{\natural}_{\vec v}=\tilde U_{-\vec v}$ is the inverse boost, not the same boost.
 
 **(b)** The product of two unit-norm biquaternions is unit-norm, so $\langle\tilde{M}\rangle_{\natural}=e_t$. The parent's polar decomposition theorem gives the unique Cartan form $\tilde{M}=\tilde{B}\tilde{u}$ with $\tilde{B}$ a boost of positive-definite matrix image and $\tilde{u}$ a unit real quaternion, i.e. a spatial rotation. The factor $\tilde{u}$ is the rotation of the rest frame at $t+dt$ relative to the rest frame at $t$; it is the **Thomas–Wigner rotation** of the interval. It is a rotation and not a boost because the transformation between two frames with the same four-velocity direction of motion but different orientation is a rotation of their spatial triads.
 
-**(c)** Write (1) as a product in the order written, $\tilde{M}=\tilde{\Lambda}_1\tilde{\Lambda}_2$, with $\tilde{\Lambda}_1=\tilde{\Lambda}_{\vec v+d\vec v}$ the first factor and $\tilde{\Lambda}_2=\tilde{\Lambda}^{\natural}_{\vec v}=\tilde{\Lambda}_{-\vec v}$ the second. Let $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$ be their directions and $\psi_1,\psi_2$ their rapidities, $\tanh\psi_1=|\vec v+d\vec v|/c$, $\tanh\psi_2=v/c$. The parent's boxed result for the product $\tilde{\Lambda}_1\tilde{\Lambda}_2$ of two boost rotors then applies with the rotation angle $\theta_W$ of $\tilde{u}$ given by
+**(c)** Write (1) as a product in the order written, $\tilde{M}=\tilde U_1\tilde U_2$, with $\tilde U_1=\tilde U_{\vec v+d\vec v}$ the first factor and $\tilde U_2=\tilde U^{\natural}_{\vec v}=\tilde U_{-\vec v}$ the second. Let $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$ be their directions and $\psi_1,\psi_2$ their rapidities, $\tanh\psi_1=|\vec v+d\vec v|/c$, $\tanh\psi_2=v/c$. The parent's boxed result for the product $\tilde U_1\tilde U_2$ of two boost rotors then applies with the rotation angle $\theta_W$ of $\tilde{u}$ given by
 $$
 \tan\frac{\theta_W}{2}
 =\frac{\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\sin\varphi}
@@ -151,7 +151,7 @@ $$
 $$
 which follows from $v^2/c^2=1-\gamma^{-2}$ and $\gamma^2-1=(\gamma-1)(\gamma+1)$. Substituting (14) into (13) gives the magnitude in (5).
 
-*The direction.* In the notation of Problem 1(c), the parent's axis rule for the product $\tilde{M}=\tilde{\Lambda}_1\tilde{\Lambda}_2$ in the order written gives the axis $-\vec u_{\vec u_x\times\vec u_y}$, where $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$. Then
+*The direction.* In the notation of Problem 1(c), the parent's axis rule for the product $\tilde{M}=\tilde U_1\tilde U_2$ in the order written gives the axis $-\vec u_{\vec u_x\times\vec u_y}$, where $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$. Then
 $$
 -\vec u_x\times\vec u_y
 =-\vec u_{\vec v+d\vec v}\times(-\vec u_v)
@@ -179,7 +179,7 @@ The factor $\tfrac12$ is the "Thomas half". It is not put in by hand: it is the 
 
 **(b)** Compute $\vec\omega_T$ explicitly for $\vec v=v\,\vec e_x$, $\vec a=a\,\vec e_y$, an orthogonal non-collinear geometry, both from (5) and directly from the parent's formula (4).
 
-**(c)** Show that the sign in (5) is carried by the order of the two factors in (1): the reverse-order rotor $\tilde{M}_{\mathrm{rev}}=\tilde{\Lambda}_{\vec v}^{-1}\tilde{\Lambda}_{\vec v+d\vec v}$ has the opposite rotation factor $\tilde{u}^{-1}$ and flips $\vec\omega_T$. Then determine whether the unstated direction of the boost rotor — reading $\tilde{\Lambda}_{\vec v}$ as the rest-to-lab rotor — also flips it.
+**(c)** Show that the sign in (5) is carried by the order of the two factors in (1): the reverse-order rotor $\tilde{M}_{\mathrm{rev}}=\tilde U_{\vec v}^{-1}\tilde U_{\vec v+d\vec v}$ has the opposite rotation factor $\tilde{u}^{-1}$ and flips $\vec\omega_T$. Then determine whether the unstated direction of the boost rotor — reading $\tilde U_{\vec v}$ as the rest-to-lab rotor — also flips it.
 
 **(d)** Record the numerical verification.
 
@@ -199,7 +199,7 @@ $$
 \tan\frac{\theta_W}{2}=\frac{\sinh^2\frac{\psi}{2}\sin\delta}{\cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2}\cos\delta}
 =\sinh^2\frac{\psi}{2}\,\delta+O(dt^2),
 $$
-and the parent's axis rule places the rotation along $-(\vec u_x\times\vec u_y)$: in the basis used, $\vec u_x=\vec u_{\vec v+d\vec v}=\vec e_x+\frac{a\,dt}{v}\vec e_y$ is the direction of the first factor $\tilde{\Lambda}_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v=-\vec e_x$ that of the second factor $\tilde{\Lambda}^{\natural}_{\vec v}$, and
+and the parent's axis rule places the rotation along $-(\vec u_x\times\vec u_y)$: in the basis used, $\vec u_x=\vec u_{\vec v+d\vec v}=\vec e_x+\frac{a\,dt}{v}\vec e_y$ is the direction of the first factor $\tilde U_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v=-\vec e_x$ that of the second factor $\tilde U^{\natural}_{\vec v}$, and
 $$
 -\vec u_x\times\vec u_y=-\left(\vec e_x+\frac{a\,dt}{v}\vec e_y\right)\times(-\vec e_x)=\left(\vec e_x+\frac{a\,dt}{v}\vec e_y\right)\times \vec e_x=\frac{a\,dt}{v}\,\vec e_y\times \vec e_x=-\frac{a\,dt}{v}\,\vec e_z,
 $$
@@ -211,9 +211,9 @@ $$
 $$
 The parent's formula (4) evaluated on the same step gives $\theta_W/dt=0.41666667$ rad per unit time, to the printed digits.
 
-**(c)** The reverse-order rotor is $\tilde{M}_{\mathrm{rev}}=\tilde{\Lambda}_{\vec v}^{-1}\tilde{\Lambda}_{\vec v+d\vec v}$. To first order in $dt$ its rotation factor is $\tilde{u}^{-1}$: the same angle $\theta_W$ with the opposite axis. Equation (5) then reads $-\frac{\gamma^{2}}{\gamma+1}\frac{\vec a\times\vec v}{c^{2}}$, and the circular result of Problem 4 reverses its sense, becoming prograde instead of retrograde. The collinear check of (a) is blind to this; the non-collinear computation of (b) is not.
+**(c)** The reverse-order rotor is $\tilde{M}_{\mathrm{rev}}=\tilde U_{\vec v}^{-1}\tilde U_{\vec v+d\vec v}$. To first order in $dt$ its rotation factor is $\tilde{u}^{-1}$: the same angle $\theta_W$ with the opposite axis. Equation (5) then reads $-\frac{\gamma^{2}}{\gamma+1}\frac{\vec a\times\vec v}{c^{2}}$, and the circular result of Problem 4 reverses its sense, becoming prograde instead of retrograde. The collinear check of (a) is blind to this; the non-collinear computation of (b) is not.
 
-The rotor *direction* is a separate question, and it is settled by the same computation. If $\tilde{\Lambda}_{\vec v}$ is read as the rest-to-lab rotor, the lab-to-rest rotor is $\tilde{\Lambda}_{\vec v}^{-1}$, and the interval rotor built from it is $\tilde{M}'=\tilde{\Lambda}_{\vec v+d\vec v}^{-1}\tilde{\Lambda}_{\vec v}$, which inverts each factor of $\tilde{M}$ while keeping the order. To first order in $dt$ its rotation vector is the *same* as that of $\tilde{M}$, not the opposite one: inverting both factors together changes the boost part but not the first-order rotation. So the unstated direction of the parent's rotor, applied consistently, does not by itself flip the sign; the sign is fixed by the order of composition. That the sign is nevertheless delicate is why (5) is stated with its axis and not with its magnitude alone.
+The rotor *direction* is a separate question, and it is settled by the same computation. If $\tilde U_{\vec v}$ is read as the rest-to-lab rotor, the lab-to-rest rotor is $\tilde U_{\vec v}^{-1}$, and the interval rotor built from it is $\tilde{M}'=\tilde U_{\vec v+d\vec v}^{-1}\tilde U_{\vec v}$, which inverts each factor of $\tilde{M}$ while keeping the order. To first order in $dt$ its rotation vector is the *same* as that of $\tilde{M}$, not the opposite one: inverting both factors together changes the boost part but not the first-order rotation. So the unstated direction of the parent's rotor, applied consistently, does not by itself flip the sign; the sign is fixed by the order of composition. That the sign is nevertheless delicate is why (5) is stated with its axis and not with its magnitude alone.
 
 **(d)** *Numerical verification.* The biquaternion product (1) was formed directly, and $\tilde{u}$ extracted by polar decomposition $\tilde{M}=\tilde{B}\tilde{u}$, $\tilde{B}=\sqrt{\tilde{M}\tilde{M}^{*}}$, $\tilde{u}=\tilde{B}^{-1}\tilde{M}$, with $\tilde{u}$ a unit real quaternion and $\theta_W$ read from $\mathrm{Sc}(\tilde{u})=\cos(\theta_W/2)$. On randomly generated non-collinear pairs $(\vec v,\vec a)$, restricted to $|\vec v|<c$, the computed rotation vector agreed with (5) to better than $10^{-10}$ in units $c=1$, in both magnitude and direction. The special case $\vec v=0.6c\,\vec e_x$, $\vec a\perp\vec v$ reproduced $0.41666667$ as above. The reverse-order rotor $\tilde{M}_{\mathrm{rev}}$ reproduced the same magnitude with the opposite axis, while the consistently inverted reading $\tilde{M}'$ reproduced the same axis as (5), both to the same precision.
 
@@ -262,7 +262,7 @@ i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\app
 
 *The rate is not in the corpus.* The parents give the Wigner angle of a **finite pair of given boosts**. The Thomas precession is an **angular velocity**; its input is the acceleration, which the two-boost formula does not contain. The bridge is the limit taken in Problem 2, $\theta_W/dt$ with $d\vec v=\vec a\,dt$, and it appears nowhere in the parents. A reader who needs $\vec\omega_T$ finds in the corpus only the discrete angle and its leading approximation, and the phrase in the Lorentz-group article that calls $\delta\approx\tfrac12|\vec v_1\times\vec v_2|/c^2$ "the familiar leading Thomas-precession angle". That phrase is accurate only in the infinitesimal limit in which the velocity change is $\vec v_2-\vec v_1=\vec a\,dt$; for two finite boosts the angle $\delta$ is not the *accumulated* precession angle along any particle's worldline, because there is no worldline, and the two quantities agree only to leading order. The rate is the missing object, and (5) is it.
 
-*The direction of the boost rotor is unstated.* The parent Lorentz-transformation article writes $\tilde{\Lambda}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$ without saying that it is the lab-to-rest rotor; the $\mathbb{M}_+$ article says only that the boost biquaternion "acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost", again without a direction; the boosting exercise's Problem 4 records this as a genuine gap in the parent's statement. For the Thomas precession the gap is real but, as Problem 3(c) shows, benign when the ambiguity is applied consistently: inverting each boost rotor together leaves the first-order precession unchanged, and only the composition order in (1) reverses the sign. The gap does not by itself corrupt $\vec\omega_T$; what it does mean is that the sign cannot be checked from the parents' statements alone, and it is the non-collinear computation that supplies the missing information.
+*The direction of the boost rotor is unstated.* The parent Lorentz-transformation article writes $\tilde U=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$ without saying that it is the lab-to-rest rotor; the $\mathbb{M}_+$ article says only that the boost biquaternion "acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost", again without a direction; the boosting exercise's Problem 4 records this as a genuine gap in the parent's statement. For the Thomas precession the gap is real but, as Problem 3(c) shows, benign when the ambiguity is applied consistently: inverting each boost rotor together leaves the first-order precession unchanged, and only the composition order in (1) reverses the sign. The gap does not by itself corrupt $\vec\omega_T$; what it does mean is that the sign cannot be checked from the parents' statements alone, and it is the non-collinear computation that supplies the missing information.
 
 *Summary of the gap.* It is a gap of scope and of statement, not an error: the parents contain the discrete rotation and get it right, but they contain neither the precession rate nor the direction of the boost rotor. The rate is the object this exercise adds; the direction is a statement the parents leave implicit, and the sign it bears is only visible on a non-collinear geometry.
 
@@ -270,7 +270,7 @@ i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\app
 
 We have taken the discrete Thomas–Wigner rotation of the parent articles to its continuous limit.
 
-1. **The interval rotor.** The rest frame at lab time $t+dt$ is obtained from the rest frame at $t$ by the unit-norm rotor $\tilde{M}=\tilde{\Lambda}_{\vec v+d\vec v}\tilde{\Lambda}_{\vec v}^{-1}$, whose polar decomposition $\tilde{M}=\tilde{B}\tilde{u}$ separates a pure boost $\tilde{B}\in\mathbb{M}_+$ from the Thomas–Wigner rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ of the interval.
+1. **The interval rotor.** The rest frame at lab time $t+dt$ is obtained from the rest frame at $t$ by the unit-norm rotor $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose polar decomposition $\tilde{M}=\tilde{B}\tilde{u}$ separates a pure boost $\tilde{B}\in\mathbb{M}_+$ from the Thomas–Wigner rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ of the interval.
 
 2. **The rate.** Expanding the parent's Wigner-angle formula to first order in $dt$ gives the Thomas precession
 $$
@@ -301,9 +301,9 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | $\tilde{F}=d\tilde{P}/d\tau$ | Four-force, in $\mathbb{M}_-$ |
 | $\gamma=(1-\vec v^2/c^2)^{-1/2}$ | Lorentz factor |
 | $\psi$, $\tanh\psi=v/c$ | Rapidity; $v=|\vec v|$, $\vec u_v=\vec v/v$ |
-| $\tilde{\Lambda}_{\vec v}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_v$ | Lab-to-rest boost rotor, Hermitian, in $\mathbb{M}_+$ |
+| $\tilde U_{\vec v}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_v$ | Lab-to-rest boost rotor, Hermitian, in $\mathbb{M}_+$ |
 | $\vec a=d\vec v/dt$, $\vec a_\perp$ | Lab acceleration; its part perpendicular to $\vec v$ |
-| $\tilde{M}=\tilde{\Lambda}_{\vec v+d\vec v}\tilde{\Lambda}_{\vec v}^{-1}$ | Rotor between neighbouring rest frames |
+| $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$ | Rotor between neighbouring rest frames |
 | $\tilde{B}$, $\tilde{u}$ | Boost and rotation factors of $\tilde{M}=\tilde{B}\tilde{u}$ |
 | $\theta_W$ | Thomas–Wigner rotation angle of the interval |
 | $\vec\omega_T$ | Thomas precession angular velocity |

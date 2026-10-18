@@ -133,9 +133,9 @@ Now build $S$ and its polar decomposition explicitly.
 
 Take $M=\mathbb{B}\cong M_2(\mathbb{C})$, and let $\tilde{Ϛ}\in\mathbb{M}_+$ be positive definite with $\mathrm{Tr}(\tilde{Ϛ})=1$. On the vector space $\mathbb{B}$ put the inner product
 $$
-\langle \tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}} := \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde{A}^{*}\tilde{B}\big),
+\langle \tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}} := \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde{A}^{*}\tilde Q_1\big),
 $$
-let $M$ act by left multiplication, $\pi(\tilde{A})\tilde{B}=\tilde{A}\tilde{B}$, and take the vector
+let $M$ act by left multiplication, $\pi(\tilde{A})\tilde Q_1=\tilde{A}\tilde Q_1$, and take the vector
 $$
 \Omega := e_t .
 $$
@@ -155,11 +155,11 @@ $$
 
 The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$
-\langle S_0\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\overline{\langle\tilde{A},S_0^*\tilde{B}\rangle_{\tilde{Ϛ}}},
+\langle S_0\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\overline{\langle\tilde{A},S_0^*\tilde Q_1\rangle_{\tilde{Ϛ}}},
 $$
 is
 $$
-S_0^*(\tilde{B}) = \tilde{Ϛ}\,\tilde{B}^{*}\tilde{Ϛ}^{-1},
+S_0^*(\tilde Q_1) = \tilde{Ϛ}\,\tilde Q_1^{*}\tilde{Ϛ}^{-1},
 $$
 whence
 $$
@@ -185,7 +185,7 @@ $$
 
 ### The Identities, Verified
 
-The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde{B}\mapsto\tilde{B}\tilde{C}$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
+The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
 
 ### An Explicit Case
 
@@ -199,7 +199,7 @@ $$
 a_0=-\tfrac12\log\det\tilde{Ϛ}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
 $$
-with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde{B}$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.
+with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde Q_1$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.
 
 A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
 $$
@@ -263,7 +263,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 **Established (recomputed here).**
 
-- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
+- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
 - $\Delta(\tilde{A})=\tilde{Ϛ}\tilde{A}\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}\tilde{Ϛ}^{-1/2}$, $J(\tilde{A})=\tilde{Ϛ}^{1/2}\tilde{A}^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_t(\tilde{A})=\tilde{Ϛ}^{it}\tilde{A}\tilde{Ϛ}^{-it}$.
 - $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{A}]$, and $JMJ=M'$.
 - $\tilde{K}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
@@ -284,7 +284,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.
 
-In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
+In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$
 S_0:\tilde{A}\mapsto\tilde{A}^{*},
 $$
@@ -316,7 +316,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | $J$ | Modular conjugation, anti-unitary, $J^2=1$ |
 | $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$ | Modular automorphism group |
 | $\tilde{Ϛ}\in\mathbb{M}_+$ | Faithful state (positive definite, trace one) |
-| $\langle\tilde{A},\tilde{B}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde{B})$ | GNS inner product on $\mathbb{B}$ |
+| $\langle\tilde{A},\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{A}^{*}\tilde Q_1)$ | GNS inner product on $\mathbb{B}$ |
 | $\tilde{K}=-\log\tilde{Ϛ}$ | Modular Hamiltonian, in $\mathbb{M}_+$ |
 | $F_{AB}(t+i)=F_{BA}(-t)$ | KMS boundary relation (parent article) |
 | $\delta:\mathbb{R}\to\operatorname{Out}(M)$ | Connes invariant, $t\mapsto[\sigma_t]$ |

@@ -40,16 +40,16 @@ The biquaternion norm is a multiple of the identity because $\tilde{Ϛ}$ is Herm
 
 ### The Biquaternion Norm of a Difference
 
-The biquaternion norm becomes a **metric** when it is evaluated on differences of states. For two states $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$ and $\tilde{\sigma} = \tfrac{1}{2}(e_t+i\vec s)$, the difference is the traceless element
+The biquaternion norm becomes a **metric** when it is evaluated on differences of states. For two states $\tilde{Ϛ}_1 = \tfrac{1}{2}(e_t+i\vec r)$ and $\tilde{Ϛ}_2 = \tfrac{1}{2}(e_t+i\vec s)$, the difference is the traceless element
 
 $$
-\tilde{Ϛ} - \tilde{\sigma} = \tfrac{i}{2}\left(\vec r-\vec s\right),
+\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac{i}{2}\left(\vec r-\vec s\right),
 $$
 
 and its biquaternion norm is
 
 $$
-N\!\left(\tilde{Ϛ}-\tilde{\sigma}\right)
+N\!\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right)
 = \sum_k \left(\frac{i\left(r_k-s_k\right)}{2}\right)^2 e_t
 = -\frac{1}{4}\left|\vec r-\vec s\right|^2 e_t .
 $$
@@ -57,20 +57,20 @@ $$
 Equivalently, the trace pairing gives the Hilbert–Schmidt distance. Since $(\vec r-\vec s)^2 = -|\vec r-\vec s|^2 e_t$ for a real pure quaternion,
 
 $$
-\left(\tilde{Ϛ}-\tilde{\sigma}\right)^2
+\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right)^2
 = \left(\frac{i}{2}\right)^2\left(\vec r-\vec s\right)^2
 = \frac{1}{4}\left|\vec r-\vec s\right|^2 e_t ,
 \qquad
-\mathrm{Tr}\!\left(\left(\tilde{Ϛ}-\tilde{\sigma}\right)^2\right) = \frac{1}{2}\left|\vec r-\vec s\right|^2 ,
+\mathrm{Tr}\!\left(\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right)^2\right) = \frac{1}{2}\left|\vec r-\vec s\right|^2 ,
 $$
 
 so that the Euclidean distance and the biquaternion norm of the difference carry the same information,
 
 $$
-\left|\vec r-\vec s\right|^2 = 2\,\mathrm{Tr}\!\left(\left(\tilde{Ϛ}-\tilde{\sigma}\right)^2\right) = -4\,\mathrm{Sc}\,N\!\left(\tilde{Ϛ}-\tilde{\sigma}\right).
+\left|\vec r-\vec s\right|^2 = 2\,\mathrm{Tr}\!\left(\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right)^2\right) = -4\,\mathrm{Sc}\,N\!\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right).
 $$
 
-Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the trace pairing is positive definite on $\mathbb{M}_+$ (signature $(4,0)$), while the biquaternion norm restricted to the traceless elements $\tilde{Ϛ}-\tilde{\sigma} = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the trace pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
+Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the trace pairing is positive definite on $\mathbb{M}_+$ (signature $(4,0)$), while the biquaternion norm restricted to the traceless elements $\tilde{Ϛ}_1-\tilde{Ϛ}_2 = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the trace pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
 
 This is the quadratic form that the Fisher information will refine: the biquaternion norm of a difference gives a **global** distance between two states, and the Fisher information gives the **local** quadratic form whose square root is the infinitesimal distance. The reciprocity is the statement that the two are inverses rather than multiples of one another, which is why it carries information beyond the geometry.
 
@@ -208,8 +208,8 @@ The identity $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$ is 
 The relative entropy of two states of the sector is
 
 $$
-D\!\left(\tilde{Ϛ}\,\|\,\tilde{\sigma}\right) = \mathrm{Tr}\!\left(\tilde{Ϛ}\left(\log\tilde{Ϛ} - \log\tilde{\sigma}\right)\right)
-= 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\left(\log\tilde{Ϛ} - \log\tilde{\sigma}\right)\right),
+D\!\left(\tilde{Ϛ}_1\,\|\,\tilde{Ϛ}_2\right) = \mathrm{Tr}\!\left(\tilde{Ϛ}_1\left(\log\tilde{Ϛ}_1 - \log\tilde{Ϛ}_2\right)\right)
+= 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_1\left(\log\tilde{Ϛ}_1 - \log\tilde{Ϛ}_2\right)\right),
 $$
 
 which is the algebra's transcription of the classical Kullback–Leibler divergence; on the diagonal states it is the ordinary divergence of the two outcome distributions. The standard information-geometric theorem states that the Fisher information is the second derivative of this divergence along a family:
@@ -273,7 +273,7 @@ The bound also explains the rank-one degeneracy of the classical metric from the
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The biquaternion norm of a difference, $\langle\tilde{Ϛ}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_r = 1/(1-r^2)$; the identification of that denominator with the biquaternion-norm defect, $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$; the rank-one information metric $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-r^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin r$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$ rather than on a pure state.
+**Derived from the algebra.** The biquaternion norm of a difference, $\langle\tilde{Ϛ}_1-\tilde{Ϛ}_2\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$, and its equivalence with the trace-pairing distance; the spectral decomposition of the state and the eigenvalue pair $(\lambda_+,\lambda_-)$; the Fisher information of the spectral family, $F_r = 1/(1-r^2)$; the identification of that denominator with the biquaternion-norm defect, $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$; the rank-one information metric $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-r^2)$; the general measurement formula; and the Fisher–Rao distance $\arcsin r$ with the finite boundary distance $\pi/2$. All of these are worked out in the basis and, where numerical, checked on the interior superposition $\tfrac{1}{2}(\tilde\Pi_1(\vec e_x)+\tilde\Pi_1(\vec e_y))$ rather than on a pure state.
 
 **Imported from standard mathematics and physics.** The definition of the classical Fisher information and its reparametrisation invariance; the Cramér–Rao bound; the theorem that the Fisher information is the Hessian of the relative entropy; the Braunstein–Caves bound and the formula for the quantum Fisher information of a pure-state family, with the symmetric-logarithmic-derivative normalization $\mathrm{Tr}(\tilde{Ϛ}L^2)$ and the factor of four that relates it to the Bures metric of the standard geometry; and the Bures and Fubini–Study metrics. Each is transcribed as standard.
 
@@ -281,7 +281,7 @@ The bound also explains the rank-one degeneracy of the classical metric from the
 
 ## Summary
 
-A state of the informational sector is $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$, $|\vec r|\le1$, with biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$. The biquaternion norm of a difference of states is a negative multiple of the squared Euclidean distance, $\langle\tilde{Ϛ}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$, so the same quadratic form supplies the sector's metric.
+A state of the informational sector is $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$, $|\vec r|\le1$, with biquaternion norm $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$. The biquaternion norm of a difference of states is a negative multiple of the squared Euclidean distance, $\langle\tilde{Ϛ}_1-\tilde{Ϛ}_2\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$, so the same quadratic form supplies the sector's metric.
 
 The **Fisher information of the spectral family** — the classical two-outcome distribution formed by the state's eigenvalues $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ — is
 
@@ -315,8 +315,8 @@ The classical metric is the radial shadow of the full quantum Fisher information
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 | $\tfrac{1}{4}(1-|\vec r|^2)$ | Biquaternion-norm defect |
-| $\langle\tilde{Ϛ}-\tilde{\sigma}\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$ | Biquaternion norm of a difference (metric) |
-| $\mathrm{Tr}((\tilde{Ϛ}-\tilde{\sigma})^2) = \tfrac{1}{2}|\vec r-\vec s|^2$ | Hilbert–Schmidt distance |
+| $\langle\tilde{Ϛ}_1-\tilde{Ϛ}_2\rangle_{\natural} = -\tfrac{1}{4}|\vec r-\vec s|^2 e_t$ | Biquaternion norm of a difference (metric) |
+| $\mathrm{Tr}((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2) = \tfrac{1}{2}|\vec r-\vec s|^2$ | Hilbert–Schmidt distance |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ | Spectral (pointer) probabilities |
 | $\vec u_r = \vec r/|\vec r|$ | Bloch direction |
 | $F(\theta) = \sum_x (\partial/\partial\theta p)^2/p$ | Classical Fisher information |
@@ -324,7 +324,7 @@ The classical metric is the radial shadow of the full quantum Fisher information
 | $F_r = 1/(1-|\vec r|^2) = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}\rangle_{\natural})$ | Reciprocity of Fisher information and biquaternion norm |
 | $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-|\vec r|^2)$ | Rank-one information metric of the spectral family |
 | $F(\theta) = (\vec u\cdot\,d\vec r/d\theta)^2/(1-(\vec u\cdot\vec r)^2)$ | Measurement-family information |
-| $D(\tilde{Ϛ}\|\tilde{\sigma}) = 2\,\mathrm{Sc}(\tilde{Ϛ}(\log\tilde{Ϛ}-\log\tilde{\sigma}))$ | Relative entropy |
+| $D(\tilde{Ϛ}_1\|\tilde{Ϛ}_2) = 2\,\mathrm{Sc}(\tilde{Ϛ}_1(\log\tilde{Ϛ}_1-\log\tilde{Ϛ}_2))$ | Relative entropy |
 | $g_{ij} = \partial^2/\partial\theta_i\partial\theta_j D$ | Fisher information as the Hessian of the relative entropy |
 | $d_{\rm FR}(r) = \arcsin r$ | Fisher–Rao distance from the maximally mixed state |
 | $F_Q(\theta) = |d\vec r/d\theta|^2$ (pure family) | Quantum Fisher information (standard, sibling category) |

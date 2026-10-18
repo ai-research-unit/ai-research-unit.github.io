@@ -19,7 +19,7 @@ $$
 g = \mathrm{diag}(-1,+1,+1,+1)
 $$
 
-on these coordinates, the same convention in which the Maxwell density is $-\tfrac14 F_{\mu\nu}F^{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\mathrm{Tr}\tilde{Ϛ} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy is $S(\tilde{Ϛ}\|\tilde{\sigma})$.
+on these coordinates, the same convention in which the Maxwell density is $-\tfrac14 F_{\mu\nu}F^{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}\in\mathbb{M}_+$ with $\mathrm{Tr}\tilde{Ϛ} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$.
 
 ## The Symmetric Phase and the Information in Its Vacuum
 
@@ -183,7 +183,7 @@ The informational interpretation is that the mass is the **record** of the break
 On the full degrees of freedom the passage from the symmetric to the broken description is reversible. The gauge transformation that eliminates $\theta$ is implemented by a unitary (the central phase $\exp(iϙ\Gamma/\hbar)$), and on the state space of the combined scalar-and-gauge system it acts by conjugation. Relative entropy is invariant under such a map,
 
 $$
-S\bigl(U\tilde{Ϛ}\,U^\dagger \,\big\|\, U\tilde{\sigma}\,U^\dagger\bigr) = S(\tilde{Ϛ}\|\tilde{\sigma}),
+S\bigl(U\tilde{Ϛ}_1\,U^\dagger \,\big\|\, U\tilde{Ϛ}_2\,U^\dagger\bigr) = S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2),
 $$
 
 which was checked on explicit superpositions: with the Bloch vectors $\vec r = (0.41,-0.52,0.23)$ and $\vec s = (-0.33,0.61,0.47)$ and a rotation by $2.0$ radians about the axis $(0.55,0.31,-0.77)$ — a generic unitary of the informational sector; the central phase itself acts on $\mathbb{M}_+$ by $|\lambda|^2 = 1$, so for the re-encoding proper the invariance is immediate — the relative entropy took the same value $1.375407856007$ before and after the rotation, agreeing to machine precision. So no distinguishability between states is destroyed by the re-encoding in which the Goldstone mode is absorbed. The relocation is information-preserving on the full description.
@@ -290,7 +290,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $M_A^2 = ϙ^2v^2/\hbar^2$, $M_A = ϙv/\hbar$ | Gauge-field (Proca) mass; the record |
 | $-\tfrac12 M_A^2\,\mathrm{Sc}(\tilde{A}^{\natural}\tilde{A})_{\natural}$ | Proca mass term |
 | $2+2 = 1+3$ | Degree-of-freedom balance; conservation |
-| $S(\tilde{Ϛ}\|\tilde{\sigma})$ | Relative entropy; invariant under the re-encoding |
+| $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$ | Relative entropy; invariant under the re-encoding |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $k_BT\ln2$ | Landauer cost of erasing a physical bit (not incurred here) |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace pairing; $\mathrm{Tr}(e_t) = 2$ |

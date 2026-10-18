@@ -241,19 +241,19 @@ T^\mu{}_\nu = -(\partial^\mu\phi^*)\partial_\nu\phi - (\partial^\mu\phi)\partial
 $$
 whose time–time component is the energy density. The companion article records the caution that in the $ict$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
 
-**Lorentz transformations.** The actions are invariant under the rotor action $\tilde{R}\mapsto\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$ because each is built from the biquaternion norm, which the rotor preserves; the conserved quantities are the six angular momenta. The verification and the consequences are the subject of the next section.
+**Lorentz transformations.** The actions are invariant under the rotor action $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}$ because each is built from the biquaternion norm, which the rotor preserves; the conserved quantities are the six angular momenta. The verification and the consequences are the subject of the next section.
 
 ## Invariance of the Action under the Rotor
 
 The Lorentz action on the framework's coordinates is conjugation by a unit-norm rotor,
 $$
-\tilde{R} \mapsto \tilde{\Lambda}\,\tilde{R}\,\tilde{\Lambda}^{*} ,
+\tilde{R} \mapsto \tilde U\,\tilde{R}\,\tilde U^{*} ,
 \qquad
-\tilde{\Lambda}\,\tilde{\Lambda}^{\natural} = e_t ,
+\tilde U\,\tilde U^{\natural} = e_t ,
 $$
-the second statement being the unit-norm condition. Its dagger is the companion condition $\tilde{\Lambda}^{*}\overline{\tilde{\Lambda}} = e_t$, which is a separate statement and not the same one: for the boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ of the companion *The Lorentz Transformation as a Biquaternionic Rotation* one has $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ while $\tilde{\Lambda}^{\natural} = \tilde{\Lambda}^{-1}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = \gamma + i\gamma\vec v/c$ is **not** the identity. What is needed for the invariance is the pair of conditions, not the single one. The biquaternion norm is the invariant,
+the second statement being the unit-norm condition. Its dagger is the companion condition $\tilde U^{*}\overline{\tilde U} = e_t$, which is a separate statement and not the same one: for the boost rotor $\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ of the companion *The Lorentz Transformation as a Biquaternionic Rotation* one has $\tilde U^{*} = \tilde U$ while $\tilde U^{\natural} = \tilde U^{-1}$, so $\tilde U^{*}\tilde U = \tilde U^2 = \gamma + i\gamma\vec v/c$ is **not** the identity. What is needed for the invariance is the pair of conditions, not the single one. The biquaternion norm is the invariant,
 $$
-N\bigl(\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}\bigr) = \langle\tilde{R}\rangle_{\natural} ,
+N\bigl(\tilde U\tilde{R}\tilde U^{*}\bigr) = \langle\tilde{R}\rangle_{\natural} ,
 $$
 which follows from its multiplicativity. The biquaternion norm of a product factorises,
 $$
@@ -261,15 +261,15 @@ $$
 $$
 because $\langle\tilde{Q}_1\rangle_{\natural}$ is a central scalar; and the dagger of an element carries the conjugate norm, $\langle\tilde{A}^{*}\rangle_{\natural} = \overline{\langle\tilde{A}\rangle_{\natural}}$. Hence
 $$
-N\bigl(\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}\bigr) = \langle\tilde{\Lambda}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}\,\langle\tilde{\Lambda}^{*}\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}\,\bigl|\langle\tilde{\Lambda}\rangle_{\natural}\bigr|^2 = \langle\tilde{R}\rangle_{\natural} ,
+N\bigl(\tilde U\tilde{R}\tilde U^{*}\bigr) = \langle\tilde U\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}\,\bigl|\langle\tilde U\rangle_{\natural}\bigr|^2 = \langle\tilde{R}\rangle_{\natural} ,
 $$
-for $\langle\tilde{\Lambda}\rangle_{\natural} = 1$, with no appeal to any relation between $\tilde{\Lambda}^{*}$ and $\tilde{\Lambda}^{\natural}$. The superposition matters: a single plane wave is an eigenvector of the translation subgroup and does not exercise the vector part of the rotor action, whereas a sum of two different wave vectors does.
+for $\langle\tilde U\rangle_{\natural} = 1$, with no appeal to any relation between $\tilde U^{*}$ and $\tilde U^{\natural}$. The superposition matters: a single plane wave is an eigenvector of the translation subgroup and does not exercise the vector part of the rotor action, whereas a sum of two different wave vectors does.
 
 The invariance propagates to the whole action. The free particle's integrand is a function of $\langle d\tilde{R}\rangle_{\natural}$, so it is invariant; the field's kinetic term is built from the gradient and the Hermitian pairing, both of which are transported by the rotor; and the mass term is the Hermitian norm, which is invariant for the same reason. Hence
 $$
 S\bigl[\tilde{\Phi}\ \text{rotated}\bigr] = S\bigl[\tilde{\Phi}\bigr] ,
 $$
-and the conserved angular momenta follow by the Noether article. The transport law of the field itself — whether $\tilde{\Phi}\mapsto\tilde{\Lambda}\tilde{\Phi}\tilde{\Lambda}^{*}$, or a one-sided action, or a spinor action on a module — depends on which representation the field carries and is fixed by the spin articles; the invariance of the action, however, holds for the appropriate transport automatically, because every term is assembled from the two invariants. This is the practical sense in which the framework makes Lorentz invariance manifest: one verifies $\langle\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$ once, and the invariance of any action built from $\langle\cdot\rangle_{\natural}$ and the Hermitian pairing is then a statement about the assembly rather than a separate computation.
+and the conserved angular momenta follow by the Noether article. The transport law of the field itself — whether $\tilde{\Phi}\mapsto\tilde U\tilde{\Phi}\tilde U^{*}$, or a one-sided action, or a spinor action on a module — depends on which representation the field carries and is fixed by the spin articles; the invariance of the action, however, holds for the appropriate transport automatically, because every term is assembled from the two invariants. This is the practical sense in which the framework makes Lorentz invariance manifest: one verifies $\langle\tilde U\tilde{R}\tilde U^{*}\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$ once, and the invariance of any action built from $\langle\cdot\rangle_{\natural}$ and the Hermitian pairing is then a statement about the assembly rather than a separate computation.
 
 The two invariants the action uses are thus the two the group preserves, and they are the two the involution lattice supplies: the bilinear biquaternion norm $\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \mathrm{Sc}(\tilde{A}^{\natural}\tilde{A}) = \langle\tilde{A},\tilde{A}\rangle_{\natural}$, which is indefinite, and the Hermitian pairing $\mathrm{Sc}(\tilde{A}^{*}\tilde{A})$, which is positive definite. A Lagrangian is a real Lorentz scalar precisely when it is an invariant combination of these two, and the actions above are the simplest such combinations at zero, one, and two derivatives of the field.
 

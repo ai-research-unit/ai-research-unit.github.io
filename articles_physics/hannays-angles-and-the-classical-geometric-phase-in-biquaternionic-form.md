@@ -12,7 +12,7 @@ This article develops the subject in the biquaternion algebra $\mathbb{B}=\mathb
 
 The article is classical. The relation to the quantum Berry phase is used as the standard statement $-\partial\gamma/\partial I$ relating the two phases, and the Berry phase itself is not developed; the companion article on the Berry phase owns the quantum side. No state space, no measurement, and no commutator appear.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central, $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The rotor is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{\natural}$; the body-frame angular velocity is $\tilde\omega_b=+2\tilde u^{\natural}d\tilde u/dt$, the logarithmic derivative that makes the body axes turn by $d\vec e_\mu/dt=\vec\omega\times\vec e_\mu$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $\langle\tilde S\rangle_{\natural}=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_\mu,S_\nu\}=\varepsilon_{\mu\nu\lambda}S_\lambda$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central, $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The rotor is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{\natural}$; the body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt$, the logarithmic derivative that makes the body axes turn by $d\vec e_\mu/dt=\vec\omega\times\vec e_\mu$ in the corpus rotation convention. The coadjoint orbit of the spin is the level set $\langle\tilde S\rangle_{\natural}=S^2$ of the biquaternion norm, with the Poisson bracket $\{S_\mu,S_\nu\}=\varepsilon_{\mu\nu\lambda}S_\lambda$.
 
 The companion articles are:
 - Companion article *Rigid-Body Dynamics and the Biquaternion Rotor*, for the rotor, the angular velocity, and the Euler-angle parametrisation.
@@ -90,7 +90,7 @@ $$
 and the orbit is the level set $\langle\tilde S\rangle_{\natural}=S^2$, a sphere of radius $S$. The symplectic form is the Souriau form of the companion article, and the Poisson bracket is $\{S_\mu,S_\nu\}=\varepsilon_{\mu\nu\lambda}S_\lambda$. A Hamiltonian linear in the spin,
 
 $$
-H=\vec\omega\cdot\vec S=\tfrac12\,\mathrm{Sc}\!\left(\tilde\omega^{\natural}\,\tilde S+\tilde S^{\natural}\,\tilde\omega\right),
+H=\vec\omega\cdot\vec S=\tfrac12\,\mathrm{Sc}\!\left(\vec\omega^{\natural}\,\tilde S+\tilde S^{\natural}\,\vec\omega\right),
 $$
 
 generates the flow
@@ -125,10 +125,10 @@ which satisfies $\tilde u_g\vec e_z\tilde u^{\natural}_g=\vec u_x$ directly.
 
 ### The Twist of the Geodesic Frame
 
-The body-frame angular velocity of the geodesic rotor is $\tilde\omega_b=+2\tilde u^{\natural}_gd\tilde u_{g}/dt$. Along a cycle of constant polar angle $\theta_0$ with azimuth $\phi(t)$ increasing, a direct computation gives
+The body-frame angular velocity of the geodesic rotor is $\vec\omega_b=+2\tilde u^{\natural}_gd\tilde u_{g}/dt$. Along a cycle of constant polar angle $\theta_0$ with azimuth $\phi(t)$ increasing, a direct computation gives
 
 $$
-\tilde\omega_b=-d\phi/dt\left(\sin\theta_0\cos\phi\,\vec e_x+\sin\theta_0\sin\phi\,\vec e_y+(1-\cos\theta_0)\,\vec e_z\right),
+\vec\omega_b=-d\phi/dt\left(\sin\theta_0\cos\phi\,\vec e_x+\sin\theta_0\sin\phi\,\vec e_y+(1-\cos\theta_0)\,\vec e_z\right),
 $$
 
 in the body frame; the only component that matters for the phase is the one about the direction $\vec u_x$, which is the coefficient of the body axis $\vec e_z$ that the rotor carries to $\vec u_x$. That component is
@@ -159,13 +159,13 @@ around the loop. The curvature of this connection is $d\mathcal A=\sin\theta\,d\
 
 ### The Body-Frame Reading of the Connection
 
-The connection one-form is visible in the rotor itself. For a rotor field $\tilde u(t)$ with body-frame angular velocity $\tilde\omega_b=+2\tilde u^{\natural}d\tilde u/dt$, the algebra-valued one-form
+The connection one-form is visible in the rotor itself. For a rotor field $\tilde u(t)$ with body-frame angular velocity $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt$, the algebra-valued one-form
 
 $$
-\tilde u^{\natural}\,d\tilde u=+\tfrac12\,\tilde\omega_b\,dt
+\tilde u^{\natural}\,d\tilde u=+\tfrac12\,\vec\omega_b\,dt
 $$
 
-is the pullback of the connection, and the Hannay angle is the integral of its component along the generator that stabilises the direction. Writing $\tilde\omega_b=\omega_b^{\parallel}\vec u_x+\tilde\omega_b^{\perp}$ with $\tilde\omega_b^{\perp}$ the part orthogonal to $\vec u_x$, the angle is $-\int\omega_b^{\parallel}dt$; the orthogonal part is the precession that changes the direction and carries no phase. This is exactly the rigid-body statement of the preceding article: the twist of a transported frame about its own axis is the component of the body angular velocity along that axis, and the Hannay angle is minus the accumulated twist, because the transported frame is the one that is carried and the geodesic frame is the one that is referred to the direction. The parallel-transport prescription — set the twist to zero and measure the holonomy — is the same prescription that makes the transport of a rigid body or a swinging plane geometrically meaningful.
+is the pullback of the connection, and the Hannay angle is the integral of its component along the generator that stabilises the direction. Writing $\vec\omega_b=\omega_b^{\parallel}\vec u_x+\vec\omega_b^{\perp}$ with $\vec\omega_b^{\perp}$ the part orthogonal to $\vec u_x$, the angle is $-\int\omega_b^{\parallel}dt$; the orthogonal part is the precession that changes the direction and carries no phase. This is exactly the rigid-body statement of the preceding article: the twist of a transported frame about its own axis is the component of the body angular velocity along that axis, and the Hannay angle is minus the accumulated twist, because the transported frame is the one that is carried and the geodesic frame is the one that is referred to the direction. The parallel-transport prescription — set the twist to zero and measure the holonomy — is the same prescription that makes the transport of a rigid body or a swinging plane geometrically meaningful.
 
 ### The Sign and the Orientation
 
@@ -305,7 +305,7 @@ The phase is classical: it is the holonomy of a transport on the space of direct
 | $\tilde S\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, $\langle\tilde S\rangle_{\natural}=S^2$ | Classical spin on its coadjoint orbit |
 | $\vec u_x=\tilde u\vec e_z\tilde u^{\natural}$ | Slowly varying direction |
 | $\tilde u_g$ | Geodesic (untwisted) rotor field |
-| $\tilde\omega_b=+2\tilde u^{\natural}d\tilde u/dt$ | Body-frame angular velocity (twist) |
+| $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt$ | Body-frame angular velocity (twist) |
 | $\omega_b^{\parallel}=-(1-\cos\theta_0)d\phi/dt$ | Twist about the direction |
 | $\Omega=2\pi(1-\cos\theta_0)$ | Solid angle of the cycle; Hannay angle |
 | $\mathcal A=(1-\cos\theta)d\phi$ | Connection on the sphere of directions |

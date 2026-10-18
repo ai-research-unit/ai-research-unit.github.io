@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field* promotes the classical central-valued field $\tilde{\Phi}=\phi\,e_t$ to an operator, imposes the equal-time commutators, expands it in the parent's plane waves, and obtains the mode algebra, the Fock space and the Hamiltonian. It leaves one object unexamined for its own sake: the **field operator** $\\tilde\\Phi^{\mathrm{fop}}(\tilde{R})$ itself. This article is about that object — what kind of thing it is, how it splits, what its algebra is, how it transforms, and what its correlation functions are.
+The companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field* promotes the classical central-valued field $\tilde{\Phi}=\phi\,e_t$ to an operator, imposes the equal-time commutators, expands it in the parent's plane waves, and obtains the mode algebra, the Fock space and the Hamiltonian. It leaves one object unexamined for its own sake: the **field operator** $\tilde\Phi^{\mathrm{fop}}(\tilde{R})$ itself. This article is about that object — what kind of thing it is, how it splits, what its algebra is, how it transforms, and what its correlation functions are.
 
 The distinction from the companion quantization is the same as the distinction between the Dirac equation article and the *solutions* article of the spin-$\tfrac12$ sector. There the field equation was one subject and the space of its solutions, with the plane waves, normalizations and spin sums, was another. Here the mode algebra was one subject, and the field operator built from it is another. The article's question is exact:
 
@@ -30,9 +30,9 @@ The article is organised as follows. The next section treats the field as an ope
 Quantization replaces the classical field by an operator-valued distribution. For a test function $f$ on spacetime, the smeared field is
 
 $$
-\\tilde\\Phi^{\mathrm{fop}}(f)=\int d^4x\,f(x)\,\\tilde\\Phi^{\mathrm{fop}}(\tilde{R}),
+\tilde\Phi^{\mathrm{fop}}(f)=\int d^4x\,f(x)\,\tilde\Phi^{\mathrm{fop}}(\tilde{R}),
 \qquad
-\\tilde\\Phi^{\mathrm{fop}}(f)^\dagger=\int d^4x\,f^*(x)\,\\tilde\\Phi^{\mathrm{fop}}(\tilde{R})^{*},
+\tilde\Phi^{\mathrm{fop}}(f)^\dagger=\int d^4x\,f^*(x)\,\tilde\Phi^{\mathrm{fop}}(\tilde{R})^{*},
 $$
 
 and it is this smeared object, not the point value, that is a well-defined operator on the Fock space. The point value is recovered formally as $f\to\delta^{(4)}(x-x_0)$. The field is unbounded, as any field with an infinite ladder must be, and its domain is the finite-particle subspace of the Fock space.
@@ -40,7 +40,7 @@ and it is this smeared object, not the point value, that is a well-defined opera
 The value space of the field is the centre. In the mode expansion
 
 $$
-\\tilde\\Phi^{\mathrm{fop}}(\tilde{R})=\phi^{\mathrm{fop}}(x)\,e_t,
+\tilde\Phi^{\mathrm{fop}}(\tilde{R})=\phi^{\mathrm{fop}}(x)\,e_t,
 \qquad
 \phi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
 \left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot x)\right),
@@ -48,7 +48,7 @@ $$
 
 every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.
 
-- **The field commutes with the algebra.** For every $\tilde A\in\mathbb{B}$ and every test function, $[\\tilde\\Phi^{\mathrm{fop}}(f),\tilde A]=0$ in the sense that the field carries no value-space index on which $\tilde A$ could act. The algebra's action on the state module and the field's action on the Fock space are independent; the field is a scalar with respect to $\mathbb{B}$.
+- **The field commutes with the algebra.** For every $\tilde A\in\mathbb{B}$ and every test function, $[\tilde\Phi^{\mathrm{fop}}(f),\tilde A]=0$ in the sense that the field carries no value-space index on which $\tilde A$ could act. The algebra's action on the state module and the field's action on the Fock space are independent; the field is a scalar with respect to $\mathbb{B}$.
 - **There is no spin part to its Lorentz transformation.** A field in a nontrivial representation of the Lorentz group transforms by a rotor $\tilde U\in\mathbb{M}_+$ acting on its indices. A central element is fixed by rotor conjugation, $\tilde U\tilde\Phi\tilde U^{*}=\tilde\Phi$, because $\tilde\Phi$ commutes with $\tilde U$ and $\tilde U\tilde U^{*}=e_t$. The triviality of the spin-$0$ representation is thus an algebraic identity about the centre, not an assumption.
 - **The field is not an element of $\mathbb{B}$.** Its coefficients $a^{\mathrm{fop}}_{\vec p},b^{\mathrm{fop}}_{\vec p}$ are not in the algebra, as the trace argument below shows; the field is an operator on the Fock space built from a module, and the centre is only its value space.
 
@@ -177,8 +177,8 @@ The denominator is the mass-shell function of the parent article: the pole of th
 The Poincaré group acts on the field by
 
 $$
-U(\Lambda,a)\,\\tilde\\Phi^{\mathrm{fop}}(\tilde{R})\,U(\Lambda,a)^{-1}
-=\\tilde\\Phi^{\mathrm{fop}}\big(\Lambda\tilde{R}+a\big),
+U(\Lambda,a)\,\tilde\Phi^{\mathrm{fop}}(\tilde{R})\,U(\Lambda,a)^{-1}
+=\tilde\Phi^{\mathrm{fop}}\big(\Lambda\tilde{R}+a\big),
 $$
 
 the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde U\in\mathbb{M}_+$ acting on the material coordinate by conjugation, $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}$, and the rotor acts trivially on the central value, $\tilde U e_t\tilde U^{*}=e_t$. The spin-$0$ representation is thus the trivial representation of the rotor group on the centre.
@@ -188,11 +188,11 @@ The internal symmetry acts by the central phase,
 $$
 U^{\mathrm{fop}}_\alpha=\exp(\,i\alpha Ϙ^{\mathrm{fop}}),
 \qquad
-U^{\mathrm{fop}}_\alpha\,\\tilde\\Phi^{\mathrm{fop}}\,U^{\mathrm{fop}}_\alpha{}^{-1}
-=\exp(-i\alpha)\,\\tilde\\Phi^{\mathrm{fop}},
+U^{\mathrm{fop}}_\alpha\,\tilde\Phi^{\mathrm{fop}}\,U^{\mathrm{fop}}_\alpha{}^{-1}
+=\exp(-i\alpha)\,\tilde\Phi^{\mathrm{fop}},
 \qquad
-U^{\mathrm{fop}}_\alpha\,\\tilde\\Phi^{\mathrm{fop}{*}}\,U^{\mathrm{fop}}_\alpha{}^{-1}
-=\exp(+i\alpha)\,\\tilde\\Phi^{\mathrm{fop}{*}} ,
+U^{\mathrm{fop}}_\alpha\,\tilde\Phi^{\mathrm{fop}{*}}\,U^{\mathrm{fop}}_\alpha{}^{-1}
+=\exp(+i\alpha)\,\tilde\Phi^{\mathrm{fop}{*}} ,
 $$
 
 and it commutes with the Poincaré action. The generator $Ϙ^{\mathrm{fop}}$ is the Noether charge of the current $\tilde J\in\mathbb{M}_-$; the phase is central, so it multiplies the field by a central unitary and does not act on the state module's spinor structure. In this sense the framework's canonical internal symmetry is the group of central phases, and the scalar field is its simplest charged representation.
@@ -214,7 +214,7 @@ so the canonical commutator is the identity $\delta\phi(x\,\vec e_x+y\,\vec e_y+
 For the free scalar the ground-state functional is an explicit Gaussian. With the Hamiltonian of the companion quantization and the real field for economy,
 
 $$
-\Psi_0[\phi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,\big|\tilde{\phi}(\vec p)\big|^2\right)
+\Psi_0[\phi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,\big|\phi(\vec p)\big|^2\right)
 =\exp\!\left(-\frac{1}{2}\int d^3x\,d^3y\;\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,K(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\,\phi(\vec y)\right),
 $$
 
@@ -259,7 +259,7 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the field's value space |
 | $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\,\partial/\partial Q_k$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian |
-| $\\tilde\\Phi^{\mathrm{fop}}(\tilde{R})=\phi^{\mathrm{fop}}(x)e_t$ | Quantized scalar field (central-valued) |
+| $\tilde\Phi^{\mathrm{fop}}(\tilde{R})=\phi^{\mathrm{fop}}(x)e_t$ | Quantized scalar field (central-valued) |
 | $\phi^{\mathrm{fop}(+)},\phi^{\mathrm{fop}(-)}$ | Annihilation (positive-frequency) and creation parts |
 | $a^{\mathrm{fop}}_{\vec p},b^{\mathrm{fop}}_{\vec p}$ | Particle and antiparticle annihilation operators |
 | $Ϙ^{\mathrm{fop}}$ | Conserved $\mathrm{U}(1)$ charge; $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$ |

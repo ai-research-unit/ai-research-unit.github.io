@@ -146,13 +146,13 @@ $$
 the imaginary time $ic\,t$ together with the three real spatial coordinates $x, y, z$. The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$:
 
 $$
-SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t\}.
+SL(2,\mathbb{C}) \;\cong\; \{\tilde U \in \mathbb{B} : \tilde U\tilde U^{\natural} = e_t\}.
 $$
 
 This group **acts** on the material sector by the **rotor conjugation**
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*}.
+\tilde{Q} \;\longmapsto\; \tilde U\,\tilde{Q}\,\tilde U^{*}.
 $$
 
 The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.
@@ -224,7 +224,7 @@ Two interpretations of the introduction are worth separating. Read as a statemen
 
 The framework is stated in one sentence: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the common biquaternion space of relativity and quantum physics, and its two natural real subspaces carry the two theories. The **anti-Hermitian subspace** $\mathbb{M}_-$ carries the four-vectors of relativity, the material sector, in the coordinates $(ict,x,y,z)$; the **Hermitian subspace** $\mathbb{M}_+$ carries the operator algebra of quantum physics, the informational sector, in the coordinates $(ct',ix',iy',iz')$. Multiplication by $i$ exchanges the two.
 
-Both sectors are written in the one biquaternion space. A material element is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and an informational element is $\tilde{Q}=ct'\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$; the norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde{\Lambda}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde{H}=h_0e_t+i\vec h$ with $h_0$ real.
+Both sectors are written in the one biquaternion space. A material element is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and an informational element is $\tilde{Q}=ct'\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$; the norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde U$ with $\tilde U\tilde U^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde{H}=h_0e_t+i\vec h$ with $h_0$ real.
 
 The framework is a research program, not a finished theory. The algebraic identifications above are established mathematics; what is open is whether the framework has consequences beyond a reformulation of known physics. Six questions are recorded: the physical reality of the biquaternionic structure; a coupling between the sectors beyond the Lorentz conjugation, of which the square $\mathbb{M}_-\to\mathbb{M}_+$ is the minimal algebraic instance already supplied by the product; the extension to many qubits and to quantum field theory; a fully relativistic quantum theory; curved spacetime; and empirical contact. The local speed of light $c=1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict$ convention the vacuum approximation of a more general local structure.
 
@@ -253,7 +253,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $\tilde{H} = h_0 e_t + i\vec h$ | Hermitian element (observable of the informational sector); $h_0 \in \mathbb{R}$ is the scalar component and $\vec h = (h_1,h_2,h_3)$ the vector components. These are the generic names used for these components throughout the series; written as a coordinate-carrying element, the same object is $q_te_t + iq'_k\vec e_k$ |
 | $(t, x, y, z)$ | Real coordinates of the material sector ($c$ is a scale factor, not a coordinate) |
 | $(t', x', y', z')$ | Real coordinates of the informational sector |
-| $\tilde{\Lambda} \in \mathbb{B}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
+| $\tilde U \in \mathbb{B}$ with $\tilde U\tilde U^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
 | $v$ | Particle or frame velocity |

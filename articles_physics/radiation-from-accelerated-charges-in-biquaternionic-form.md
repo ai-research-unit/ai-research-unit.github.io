@@ -90,7 +90,7 @@ $$
 which is an element of the material subspace $\mathbb{M}_-$: its scalar part is imaginary and its vector part real. Its biquaternion norm is
 
 $$
-\langle\tilde{\mathcal{R}}\rangle_{\natural} = \tilde{\mathcal{R}}\bar{\tilde{\mathcal{R}}} = (iR)^2 + |\vec R|^2 = -R^2 + R^2 = 0 .
+\langle\tilde{\mathcal{R}}\rangle_{\natural} = \tilde{\mathcal{R}}\bar{\tilde{\mathcal{R}} = (iR)^2 + |\vec R|^2 = -R^2 + R^2 = 0 .
 $$
 
 The retarded separation is therefore a **null** element of $\mathbb{M}_-$ — a point of the light cone, and hence a zero divisor of $\mathbb{B}$. This is the biquaternion expression of the elementary fact that the separation between an emission event and a later observation event on the light cone is null. The whole radiation problem is built on a zero divisor.
@@ -118,10 +118,10 @@ $$
 D \equiv R - \vec R\cdot\vec\beta = R\left(1 - \vec u_R\cdot\vec\beta\right) = R\kappa, \qquad \kappa \equiv 1 - \vec u_R\cdot\vec\beta.
 $$
 
-The scalar part of the biquaternion product $(\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}$ computes directly. Using $\bar{\tilde{\mathcal{R}}} = iR\,e_t - \vec R$ and the rule that the scalar part of a product of two biquaternions is $A_0B_0 - \vec A\cdot\vec B$,
+The scalar part of the biquaternion product $(\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}$ computes directly. Using $\bar{\tilde{\mathcal{R}} = iR\,e_t - \vec R$ and the rule that the scalar part of a product of two biquaternions is $A_0B_0 - \vec A\cdot\vec B$,
 
 $$
-\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right)
+\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}\right)
 = (ic)(iR) - \vec v\cdot(-\vec R)
 = -cR + \vec v\cdot\vec R
 = -c\left(R - \frac{\vec R\cdot\vec v}{c}\right)
@@ -131,7 +131,7 @@ $$
 Hence
 
 $$
-D = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right),
+D = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}\right),
 $$
 
 and the Liénard–Wiechert potential takes the compact biquaternion form
@@ -139,7 +139,7 @@ and the Liénard–Wiechert potential takes the compact biquaternion form
 $$
 \tilde{A} = \frac{\mu ϙ}{4\pi D}\,\tilde{V}/\gamma
 = -\frac{\mu ϙ\,c}{4\pi}\,
-\frac{\tilde{V}/\gamma}{\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right)} .
+\frac{\tilde{V}/\gamma}{\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}\right)} .
 $$
 
 This is the central object of the retarded theory. Its scalar part is the scalar potential and its vector part the vector potential:
@@ -160,15 +160,15 @@ Every zero divisor factorises, and the source's spinor treatment of the retarded
 **The invariant retarded distance.** The source's scalar is
 
 $$
-\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,\bar{\tilde{\mathcal{R}}}\right),
+\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,\bar{\tilde{\mathcal{R}}\right),
 \qquad
 \frac{\tilde{V}}{ic} = \gamma\left(e_t - i\vec\beta\right),
 $$
 
-where $\tilde{V}/(ic)$ is the four-velocity reduced to unit biquaternion norm. In the $ict$ convention, with $\bar{\tilde{\mathcal{R}}} = iR\,e_t - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,
+where $\tilde{V}/(ic)$ is the four-velocity reduced to unit biquaternion norm. In the $ict$ convention, with $\bar{\tilde{\mathcal{R}} = iR\,e_t - \vec R$ and the scalar part of a product equal to $A_0B_0 - \vec A\cdot\vec B$,
 
 $$
-\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,\bar{\tilde{\mathcal{R}}}\right)
+\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\,\bar{\tilde{\mathcal{R}}\right)
 = \gamma\,(iR) - (-i\gamma\vec\beta)\cdot(-\vec R)
 = i\gamma\left(R - \vec R\cdot\vec\beta\right)
 = i\gamma D ,
@@ -225,9 +225,9 @@ This is the source's displayed relation for its separation $X - Z$. The product 
 **The four-acceleration.** In the same variables the four-acceleration of the charge is the boost conjugate of its value in the instantaneous rest frame,
 
 $$
-\frac{d\tilde{V}}{d\tau} = \tilde{B}\,\tilde{a}\,\tilde{B}^+,
+\frac{d\tilde{V}}{d\tau} = \tilde{B}\,\vec a\,\tilde{B}^+,
 \qquad
-\tilde{a} = a_1 \vec e_x + a_2 \vec e_y + a_3 \vec e_z,
+\vec a = a_1 \vec e_x + a_2 \vec e_y + a_3 \vec e_z,
 $$
 
 a real vector, and it is orthogonal to the four-velocity,
@@ -236,7 +236,7 @@ $$
 \mathrm{Sc}\!\left(\frac{d\tilde{V}}{d\tau}\,\tilde{V}^{\natural}\right) = 0 ,
 $$
 
-which is the biquaternion statement that a four-acceleration is orthogonal to its worldline. The same conjugation makes the orthogonality immediate and fixes $\tilde{a}$ as the acceleration in the instantaneous rest frame: at $\vec\beta = 0$ the spinor is the identity and the relation reads $d\tilde{V}/d\tau = \tilde{a}$. The source prints its own acceleration relation with a minus, $d^2Z/dt_r^2 = -\tilde{B}\tilde{a}\tilde{B}^+$; the minus is carried by its normalization of the position variable, since the corpus four-velocity and the source's differ by the constant factor $ic$, and the sign above is the one that reduces to the rest-frame acceleration at vanishing velocity.
+which is the biquaternion statement that a four-acceleration is orthogonal to its worldline. The same conjugation makes the orthogonality immediate and fixes $\vec a$ as the acceleration in the instantaneous rest frame: at $\vec\beta = 0$ the spinor is the identity and the relation reads $d\tilde{V}/d\tau = \vec a$. The source prints its own acceleration relation with a minus, $d^2Z/dt_r^2 = -\tilde{B}\vec a\tilde{B}^+$; the minus is carried by its normalization of the position variable, since the corpus four-velocity and the source's differ by the constant factor $ic$, and the sign above is the one that reduces to the rest-frame acceleration at vanishing velocity.
 
 These are the source's formulas, transcribed into the conventions of this article and checked component by component; no statement of the earlier sections changes. The spinor square root introduced here is the same decomposition that underlies Weiss's independent route to the Lorentz–Dirac equation in the radiation-reaction section below.
 
@@ -309,7 +309,7 @@ $$
 
 The biquaternion norm of $\tilde{F}_v$ is therefore nonzero, $\langle\tilde{F}_v\rangle_{\natural} = -\epsilon(I_{1,v} + 2ic\,I_{2,v}) = -\epsilon I_{1,v} \neq 0$, and $\tilde{F}_v$ is not a zero divisor. In the classification of the invariants article it is a field of **electric type**: there is a frame (the rest frame of the charge) in which the magnetic field vanishes and the field is purely electric. This is the algebraic statement that the velocity field is bound to the charge: at any event it can be reduced to a purely electric Coulomb field by passing to the instantaneous rest frame of the charge.
 
-Two special cases are worth recording, because they are exactly the content of the two downstream exercises. When the charge moves with constant velocity, $d\vec\beta/dt_r = 0$ and $\tilde{F} = \tilde{F}_v$ alone: this is the field of a uniformly moving charge, the subject of *Exercise: The Electromagnetic Field of a Uniformly Moving Charge*. The result is the Heaviside ellipsoid field, obtained here either by specialising the Liénard–Wiechert formulas or, equivalently, by applying the boost rotor $\tilde{\Lambda}$ of the Maxwell article to the Coulomb field of the charge at rest. When the charge accelerates but the observation is made in the far zone, the $1/R^2$ velocity field is negligible compared with the $1/R$ acceleration field, and the radiation field alone survives.
+Two special cases are worth recording, because they are exactly the content of the two downstream exercises. When the charge moves with constant velocity, $d\vec\beta/dt_r = 0$ and $\tilde{F} = \tilde{F}_v$ alone: this is the field of a uniformly moving charge, the subject of *Exercise: The Electromagnetic Field of a Uniformly Moving Charge*. The result is the Heaviside ellipsoid field, obtained here either by specialising the Liénard–Wiechert formulas or, equivalently, by applying the boost rotor $\tilde U$ of the Maxwell article to the Coulomb field of the charge at rest. When the charge accelerates but the observation is made in the far zone, the $1/R^2$ velocity field is negligible compared with the $1/R$ acceleration field, and the radiation field alone survives.
 
 ## The Acceleration Field as the Radiation Field
 
@@ -515,18 +515,18 @@ $$
 \tilde{V}/\gamma = ic\,e_t + \vec v(t_r),
 \qquad
 D = R - \vec R\cdot\vec\beta
-= -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right),
+= -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}\right),
 $$
 
 built from the null retarded separation $\tilde{\mathcal{R}} = iR\,e_t + \vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t + \vec v(t_r)\right)$, both in $\mathbb{M}_-$.
 
-The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\bar{\tilde{\mathcal{R}}}\right) = \gamma D$ and the spinor square root of the four-velocity, $\tilde{B} = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,\tilde{B}^2$:
+The same potential can be written with the invariant retarded distance $\xi = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\bar{\tilde{\mathcal{R}}\right) = \gamma D$ and the spinor square root of the four-velocity, $\tilde{B} = \cosh\tfrac{y}{2}e_t - i\sinh\tfrac{y}{2}\vec u_\beta$ with $\tilde{V} = ic\,\tilde{B}^2$:
 
 $$
 \tilde{A} = \frac{\mu ϙ}{4\pi\xi}\,\tilde{V} = \frac{i\mu ϙ c}{4\pi\xi}\,\tilde{B}^2,
 $$
 
-and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_t + i\vec u)$ as $\tilde{\mathcal{R}} = 2i\xi\,\tilde{B}\sigma\tilde{B}^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = \tilde{B}\tilde{a}\tilde{B}^+$.
+and the null separation factorises through the primitive idempotent $\sigma = \tfrac12(e_t + i\vec u)$ as $\tilde{\mathcal{R}} = 2i\xi\,\tilde{B}\sigma\tilde{B}^+$. In the same variables the four-acceleration is the boost conjugate of the rest-frame acceleration, $d\tilde{V}/d\tau = \tilde{B}\vec a\tilde{B}^+$.
 
 The field strength splits into a velocity part and an acceleration part, $\tilde{F} = \tilde{F}_v + \tilde{F}_a$. The velocity field $\tilde{F}_v$ falls as $1/R^2$, has vanishing second invariant and positive first invariant, $I_{1,v} = (\vec u_R\cdot\vec E_v)^2 > 0$, and is of electric type; it is the field of a uniformly moving charge and is not radiation. The acceleration field $\tilde{F}_a$ falls as $1/R$, is transverse, and is **null**:
 
@@ -571,11 +571,11 @@ The construction is explicit enough that the two downstream exercises are direct
 | $\vec\beta = \vec v(t_r)/c$, $\beta = \lvert\vec\beta\rvert$ | Dimensionless retarded velocity |
 | $\gamma = (1-\beta^2)^{-1/2}$ | Lorentz factor |
 | $\kappa = 1-\vec u_R\cdot\vec\beta$ | Retardation factor |
-| $D = R-\vec R\cdot\vec\beta = R\kappa$ | Retarded distance, $D = -\frac{1}{c}\mathrm{Sc}((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}})$ |
-| $\xi = \gamma D = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\bar{\tilde{\mathcal{R}}}\right)$ | Invariant retarded distance (the source's $\xi$) |
+| $D = R-\vec R\cdot\vec\beta = R\kappa$ | Retarded distance, $D = -\frac{1}{c}\mathrm{Sc}((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}})$ |
+| $\xi = \gamma D = -i\,\mathrm{Sc}\!\left(\frac{\tilde{V}}{ic}\bar{\tilde{\mathcal{R}}\right)$ | Invariant retarded distance (the source's $\xi$) |
 | $\tilde{B}$, $\tilde{B}^2 = \tilde{V}/(ic)$, $\tilde{B}^+ = \tilde{B}$ | Bireal spinor square root of the four-velocity |
 | $\sigma = \tfrac12(e_t + i\vec u)$ | Primitive idempotent; $\vec u$ the line of sight in the charge's rest frame |
-| $\tilde{a} = a_1\vec e_x + a_2\vec e_y + a_3\vec e_z$ | Rest-frame acceleration biquaternion, $d\tilde{V}/d\tau = \tilde{B}\tilde{a}\tilde{B}^+$ |
+| $\vec a = a_1\vec e_x + a_2\vec e_y + a_3\vec e_z$ | Rest-frame acceleration, a pure vector, $d\tilde{V}/d\tau = \tilde{B}\vec a\tilde{B}^+$ |
 | $d\vec\beta/dt_r$ | Retarded-time acceleration ($d/dt_r$ in the field formulas) |
 | $\vec E_v, \vec B_v, \vec H_v$ | Velocity-part fields |
 | $\vec E_a, \vec B_a, \vec H_a$ | Acceleration-part (radiation) fields |

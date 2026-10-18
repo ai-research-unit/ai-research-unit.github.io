@@ -115,13 +115,13 @@ For the non-relativistic limit the classification degenerates along with the boo
 An inertial frame is a choice of how to split the four-position into a time coordinate and a space coordinate. In the biquaternion framework such a choice is implemented by a **rotor**, that is, by a unit-norm biquaternion
 
 $$
-\tilde{\Lambda} \in \mathbb{B}, \qquad \tilde{\Lambda}\overline{\tilde{\Lambda}} = e_t ,
+\tilde U \in \mathbb{B}, \qquad \tilde U\overline{\tilde U} = e_t ,
 $$
 
 which acts on the material sector by **rotor conjugation**,
 
 $$
-\tilde{R} \;\longmapsto\; \tilde{R}' = \tilde{\Lambda}\,\tilde{R}\,\tilde{\Lambda}^{*} .
+\tilde{R} \;\longmapsto\; \tilde{R}' = \tilde U\,\tilde{R}\,\tilde U^{*} .
 $$
 
 The set of such rotors is the group $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and the action preserves $\mathbb{M}_-$ and the biquaternion norm: if $\tilde{R} \in \mathbb{M}_-$ then $\tilde{R}' \in \mathbb{M}_-$, and $\langle\tilde{R}'\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$. The group lives in the full algebra $\mathbb{B}$ — neither sector is closed under multiplication — and it acts on the material sector, which is a module rather than an algebra.
@@ -129,10 +129,10 @@ The set of such rotors is the group $SL(2,\mathbb{C})$, the double cover of the 
 The different Lorentz transformations have rotors in different subspaces. A **pure boost** along the unit direction $\vec u_{\mathrm b}$ has the rotor
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \in \mathbb{M}_+ ,
+\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \in \mathbb{M}_+ ,
 $$
 
-which is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and hence acts by $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}$. The rapidity $\psi$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by
+which is Hermitian, $\tilde U^{*} = \tilde U$, and hence acts by $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U$. The rapidity $\psi$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by
 
 $$
 \cosh\psi = \gamma_V, \qquad \sinh\psi = \gamma_V\frac{V}{c}, \qquad \tanh\psi = \frac{V}{c}, \qquad \gamma_V = \frac{1}{\sqrt{1 - V^2/c^2}} .
@@ -148,10 +148,10 @@ which is unitary, $R^{-1} = \bar{R} = R^{*}$, and acts on the vector part by $R(
 
 ### The Relativity Principle
 
-The principle of relativity is the statement that the free-particle equation is form-invariant under the rotor action. If $\tilde{R}(\tau)$ is a straight worldline in one inertial frame, then $\tilde{R}'(\tau) = \tilde{\Lambda}\tilde{R}(\tau)\tilde{\Lambda}^{*}$ is a straight worldline in another, because the action is linear and commutes with the derivative with respect to $\tau$:
+The principle of relativity is the statement that the free-particle equation is form-invariant under the rotor action. If $\tilde{R}(\tau)$ is a straight worldline in one inertial frame, then $\tilde{R}'(\tau) = \tilde U\tilde{R}(\tau)\tilde U^{*}$ is a straight worldline in another, because the action is linear and commutes with the derivative with respect to $\tau$:
 
 $$
-\frac{d\tilde{R}'}{d\tau} = \tilde{\Lambda}\frac{d\tilde{R}}{d\tau}\tilde{\Lambda}^{*} = \tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = \tilde{V}' .
+\frac{d\tilde{R}'}{d\tau} = \tilde U\frac{d\tilde{R}}{d\tau}\tilde U^{*} = \tilde U\tilde{V}\tilde U^{*} = \tilde{V}' .
 $$
 
 The four-velocity of the transformed worldline is the rotor conjugate of the original four-velocity, its norm is unchanged by the preceding section, and the mass-shell constraint therefore reads the same in every inertial frame. This is the algebraic content of the statement that the free particle cannot distinguish inertial frames: the equation $\tilde{V} = \text{const}$ is the same equation after the transformation, with the transformed constant.
@@ -159,10 +159,10 @@ The four-velocity of the transformed worldline is the rotor conjugate of the ori
 The composition of frames is the composition of rotors. Two successive rotor conjugations compose as
 
 $$
-\tilde{\Lambda}_2\left(\tilde{\Lambda}_1\tilde{R}\tilde{\Lambda}_1^{*}\right)\tilde{\Lambda}_2^{*} = (\tilde{\Lambda}_2\tilde{\Lambda}_1)\,\tilde{R}\,(\tilde{\Lambda}_2\tilde{\Lambda}_1)^{*} ,
+\tilde U_2\left(\tilde U_1\tilde{R}\tilde U_1^{*}\right)\tilde U_2^{*} = (\tilde U_2\tilde U_1)\,\tilde{R}\,(\tilde U_2\tilde U_1)^{*} ,
 $$
 
-and the product $\tilde{\Lambda}_2\tilde{\Lambda}_1$ is again a unit-norm biquaternion, since the biquaternion norm is multiplicative. The composition of frames is therefore the group multiplication of $SL(2,\mathbb{C})$, and it is here that the double cover shows: the rotors $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ implement the same Lorentz transformation, because the signs cancel in the conjugation.
+and the product $\tilde U_2\tilde U_1$ is again a unit-norm biquaternion, since the biquaternion norm is multiplicative. The composition of frames is therefore the group multiplication of $SL(2,\mathbb{C})$, and it is here that the double cover shows: the rotors $\tilde U$ and $-\tilde U$ implement the same Lorentz transformation, because the signs cancel in the conjugation.
 
 ## The Non-Relativistic Limit: the Boost Becomes a Shear
 
@@ -173,10 +173,10 @@ The free particle has a non-relativistic limit, and its transformation law has o
 Let the frame move with small velocity $V \ll c$ along $\vec u_{\mathrm b}$, so that the rapidity is small, $\psi \approx V/c$. Expanding the boost rotor,
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
+\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
 $$
 
-To first order in $V/c$ the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so the action on a material vector is $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}$, and hence
+To first order in $V/c$ the rotor is Hermitian, $\tilde U^{*} = \tilde U$, so the action on a material vector is $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U$, and hence
 
 $$
 \tilde{R}' = \tilde{R} + \frac{iV}{2c}\left(\vec u_{\mathrm b}\tilde{R} + \tilde{R}\vec u_{\mathrm b}\right) + O\!\left(\frac{V^2}{c^2}\right) .
@@ -256,8 +256,8 @@ The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the alg
 | Mass shell $v^\mu v_\mu = -c^2$ | $\tilde{V}\overline{\tilde{V}} = -c^2$ | constraint in $\mathbb{M}_-$ |
 | Four-momentum $p^\mu = (E/c, \vec p)$ | $\tilde{P} = i(E/c)e_t + \vec p$ | $\mathbb{M}_-$ |
 | Four-force $f^\mu$ | $\tilde{F} = d\tilde{P}/d\tau$ | $\mathbb{M}_-$ |
-| Lorentz transformation $\Lambda^\mu{}_\nu$ | rotor conjugation $\tilde{\Lambda}(\cdot)\tilde{\Lambda}^{*}$ | rotor in $\mathbb{B}$ |
-| Boost | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$ |
+| Lorentz transformation $\Lambda^\mu{}_\nu$ | rotor conjugation $\tilde U(\cdot)\tilde U^{*}$ | rotor in $\mathbb{B}$ |
+| Boost | $\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | $\mathbb{M}_+$ |
 | Spatial rotation | $R(\cdot)R^{-1}$ | $\mathbb{H}_{\mathbb{B}}$ |
 | Galilean boost (NR limit) | $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \mapsto (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \vec Vt$, $t \mapsto t$ | shear of $\mathbb{M}_-$ |
 
@@ -273,9 +273,9 @@ $$
 
 with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{M}_-$, and constrained by the mass-shell relation $\tilde{P}\overline{\tilde{P}} = -m^2c^2$. The free particle satisfies $\tilde{F} = d\tilde{P}/d\tau = 0$, which is Newton's first law.
 
-Inertial frames are the unit-norm biquaternions $\tilde{\Lambda} \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$. The action is linear, preserves $\mathbb{M}_-$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.
+Inertial frames are the unit-norm biquaternions $\tilde U \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U^{*}$. The action is linear, preserves $\mathbb{M}_-$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.
 
-The non-relativistic limit of a boost is a **shear**, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde{\Lambda} = e_t + \tfrac{iV}{2c}\vec u_{\mathrm b}$, and acting on $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ produces the Galilean transformation $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z - \vec Vt$, $t' = t$. The shear does not preserve the biquaternion norm, $\langle\tilde{R}'\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural} - 2t\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + t^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.
+The non-relativistic limit of a boost is a **shear**, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde U = e_t + \tfrac{iV}{2c}\vec u_{\mathrm b}$, and acting on $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ produces the Galilean transformation $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z - \vec Vt$, $t' = t$. The shear does not preserve the biquaternion norm, $\langle\tilde{R}'\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural} - 2t\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + t^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.
 
 The free particle occupies only the material sector, carries no internal vector, and is the spin-zero benchmark for the subcategory: its effects are those of a structureless point particle, with no intrinsic angular momentum and hence no intrinsic magnetism.
 
@@ -295,9 +295,9 @@ The free particle occupies only the material sector, carries no internal vector,
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, in $\mathbb{M}_-$; $\tilde{V}\overline{\tilde{V}} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$ | Four-momentum; $\tilde{P}\overline{\tilde{P}} = -m^2c^2$ |
 | $\tilde{F} = d\tilde{P}/d\tau$ | Four-force; $\tilde{F} = 0$ for the free particle |
-| $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\overline{\tilde{\Lambda}} = e_t$ | Lorentz rotor; frame transformation |
-| $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$ | Rotor conjugation (frame change) |
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, in $\mathbb{M}_+$; $\tanh\psi = V/c$ |
+| $\tilde U \in \mathbb{B}$, $\tilde U\overline{\tilde U} = e_t$ | Lorentz rotor; frame transformation |
+| $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U^{*}$ | Rotor conjugation (frame change) |
+| $\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, in $\mathbb{M}_+$; $\tanh\psi = V/c$ |
 | $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor, in $\mathbb{H}_{\mathbb{B}}$ |
 | $\langle\tilde{R}\rangle_{\natural} = \tilde{R}\overline{\tilde{R}}$ | Biquaternion norm; invariant interval on $\mathbb{M}_-$ |
 | $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z - \vec Vt$ | Galilean shear (non-relativistic limit) |

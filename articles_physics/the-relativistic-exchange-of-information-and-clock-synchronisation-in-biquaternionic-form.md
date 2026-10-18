@@ -83,7 +83,7 @@ is the retarded coordinate multiplied by the frequency. The algebra's phase inva
 
 ### Relays and Superpositions
 
-If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde P \mapsto \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
+If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, the sum $\tilde{Q}_{BA}+\tilde{Q}_{CB}$ is the displacement from $A$ to $C$ by a relay, and by the transitivity result of the companion article it is future-directed nonspacelike. It is strictly timelike unless the two legs are collinear and in the same direction, in which case it is null; a bent light path through $B$ no longer covers its ends at speed $c$, which is why a relay of two signals can carry information from $A$ to $C$ only within the cone. The linearity of the wave operator makes the same point for superpositions: since the transformation $\tilde P \mapsto \tilde U\tilde P\tilde U^{*}$ is linear, a superposition of two wavevectors transforms componentwise, and each component carries its own Doppler factor. A numerical check on a two-component superposition confirms that the transformed superposition is the sum of the transformed components, so the frequency exchange below applies to each monochromatic component of a general signal independently.
 
 ## Clocks and Proper Time
 
@@ -245,7 +245,7 @@ The k-factor is a Lorentz scalar in the following limited sense: it is the ratio
 Let frame $S'$ move with velocity $\vec v_b = v_b\,\vec u_x$ relative to frame $S$, and let each frame synchronise its clocks by the Einstein rule. The transformation from the coordinates of $S'$ to those of $S$ is the rotor conjugation with the boost biquaternion
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_x,
+\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_x,
 \qquad
 \tanh\psi = \frac{v_b}{c},
 $$
@@ -379,7 +379,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\tau$, $\Delta\tau$ | Proper time |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Clock four-velocity |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, $\tanh\psi=\beta$ |
+| $\tilde U = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, $\tanh\psi=\beta$ |
 | $t_1,t_2,t_3$ | Emission, reflection and reception times of the radar round trip |
 | $\varepsilon$ | Reichenbach synchronisation parameter, $t_2=t_1+\varepsilon(t_3-t_1)$ |
 | $k = \sqrt{(1+\beta)/(1-\beta)}$ | Bondi k-factor |

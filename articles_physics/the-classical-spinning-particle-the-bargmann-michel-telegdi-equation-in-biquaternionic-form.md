@@ -80,10 +80,10 @@ S_\mu v^\mu=0
 \mathrm{Sc}\!\left(\tilde{S}\tilde{V}^{\natural}\right)=0 .
 $$
 
-The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_t+\vec S_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with $\tilde{\Lambda}_{\vec v}$, the rest-frame spin is
+The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_t+\vec S_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with $\tilde U_{\vec v}$, the rest-frame spin is
 
 $$
-\vec s=\tilde{\Lambda}_{\vec v}\,\tilde{S}\,\tilde{\Lambda}_{\vec v}^{*}\Big|_{\rm vec},
+\vec s=\tilde U_{\vec v}\,\tilde{S}\,\tilde U_{\vec v}^{*}\Big|_{\rm vec},
 $$
 
 and the orthogonality condition may be solved for the time component,

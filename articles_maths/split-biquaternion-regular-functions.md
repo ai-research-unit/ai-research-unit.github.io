@@ -69,7 +69,7 @@ On the quaternion subspace, where the coefficients are real, the principal symbo
 
 ## Examples and Basic Properties
 
-**Constants.** A constant $F^{\mathrm{fn}} = \tilde{C}$ is regular on any subspace, and the constants form an eight-dimensional real space of regular functions.
+**Constants.** A constant $F^{\mathrm{fn}} = \tilde{Q}_3$ is regular on any subspace, and the constants form an eight-dimensional real space of regular functions.
 
 **Powers of a single-plane variable.** On the quaternion subspace, with $A = Q_t + Q_x \vec e_x$, every classical holomorphic function of $A$, extended by constancy in $Q_y, Q_z$, is regular; in particular $\tilde{\nabla} A = e_t e_t + \vec e_x \vec e_x = 0$.
 
@@ -83,7 +83,7 @@ $$
 
 is regular for $\tilde{Q} \neq 0$ and is the fundamental solution of $\tilde{\nabla}$; the proof uses $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_t$ and therefore needs the real coefficients of that subspace. On the full algebra, where the coefficients lie in $\mathbb{D}$, this identity fails because the coefficient part of $\tilde{Q}^{\natural}\tilde{Q}$ is $\langle\tilde{Q}\rangle_{\natural}$, a split complex number rather than a positive real one.
 
-**Closure.** Regular functions are closed under addition and under right multiplication by constants, $\tilde{\nabla}(F^{\mathrm{fn}}\tilde{C}) = (\tilde{\nabla}F^{\mathrm{fn}})\tilde{C} = 0$; they are stable under right multiplication by constants but not under left multiplication, because left multiplication by a general constant does not commute past the units.
+**Closure.** Regular functions are closed under addition and under right multiplication by constants, $\tilde{\nabla}(F^{\mathrm{fn}}\tilde{Q}_3) = (\tilde{\nabla}F^{\mathrm{fn}})\tilde{Q}_3 = 0$; they are stable under right multiplication by constants but not under left multiplication, because left multiplication by a general constant does not commute past the units.
 
 ## Harmonicity and the Factorization of the Laplacian
 

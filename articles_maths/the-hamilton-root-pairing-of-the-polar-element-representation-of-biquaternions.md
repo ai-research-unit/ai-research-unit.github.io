@@ -52,7 +52,7 @@ $$
 \tilde U_{\mathrm L} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec\Xi\Theta) = \frac{\tilde{Q}}{R} , \qquad \tilde U_{\mathrm L}\,\tilde U_{\mathrm L}^{\natural} = e_t ,
 $$
 
-is the whole non-central part of the polar word, factors $3$ and $4$ multiplied, and not the boost alone. It is a boost of rapidity $\psi$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost is the Hermitian case $\tilde u_{\mathrm r} = e_t$. In the physical reading $\tilde U_{\mathrm L}$ is the **Lorentz transformation**, and the modulus $R$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the dagger sandwich of the physics articles is this factor, written $\tilde\Lambda$ there.
+is the whole non-central part of the polar word, factors $3$ and $4$ multiplied, and not the boost alone. It is a boost of rapidity $\psi$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost is the Hermitian case $\tilde u_{\mathrm r} = e_t$. In the physical reading $\tilde U_{\mathrm L}$ is the **Lorentz transformation**, and the modulus $R$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the dagger sandwich of the physics articles is this factor, written $\tilde U$ there.
 
 ### The Statement
 

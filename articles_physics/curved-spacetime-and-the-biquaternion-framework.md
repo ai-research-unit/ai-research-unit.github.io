@@ -16,7 +16,7 @@ Three claims organise the discussion, and they are worth stating at the outset, 
 
 The article closes by separating what has been constructed from what remains an agenda. The separation is stark: the kinematical fibre of tetrad gravity is present, its dynamics is absent, and the informational sector $\mathbb{M}_+$ has no curved-space treatment at all.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The rotor group is $\{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## What the Flat Machinery Assumes
 
@@ -31,7 +31,7 @@ $$
 a real scalar. Write $\langle \tilde{Q}_1, \tilde{Q}_2\rangle_{\natural}$ for this form; in the basis $(ie_t, \vec e_x, \vec e_y, \vec e_z)$ of $\mathbb{M}_-$ its Gram matrix is $\mathrm{diag}(-1,1,1,1)$, so it is the Minkowski inner product of $\mathbb{M}_- \cong \mathbb{R}^{1,3}$. It is preserved by rotor conjugation,
 
 $$
-\langle \tilde{\Lambda}\tilde{Q}_1\tilde{\Lambda}^{*},\ \tilde{\Lambda}\tilde{Q}_2\tilde{\Lambda}^{*} \rangle = \langle \tilde{Q}_1, \tilde{Q}_2\rangle_{\natural},
+\langle \tilde U\tilde{Q}_1\tilde U^{*},\ \tilde U\tilde{Q}_2\tilde U^{*} \rangle = \langle \tilde{Q}_1, \tilde{Q}_2\rangle_{\natural},
 $$
 
 because the biquaternion norm is invariant and the conjugation action is linear in each argument. This is the entire metric content of the flat framework: one fixed form on one fixed real vector space.
@@ -163,15 +163,15 @@ $$
 
 Four $\mathbb{M}_-$-valued fields, so sixteen functions. Where they are linearly independent, the Gram matrix is nondegenerate, and by Sylvester's law it has signature $(3,1)$: the result is automatically a Lorentzian metric. Conversely, any Lorentzian metric can be written this way locally. Choose a $g$-orthonormal frame, map it into $\mathbb{M}_-$ by a linear isometry of quadratic spaces — which exists because both forms have signature $(3,1)$ — and read off the coordinate components. So there is no obstruction: **the framework can carry any curved metric.**
 
-What makes the route more than a change of notation is the local symmetry. If $\tilde{\Lambda}(x)$ is a unit-norm biquaternion depending on position, then
+What makes the route more than a change of notation is the local symmetry. If $\tilde U(x)$ is a unit-norm biquaternion depending on position, then
 
 $$
-\tilde{E}_\mu \longmapsto \tilde{\Lambda}\tilde{E}_\mu\tilde{\Lambda}^{*}
+\tilde{E}_\mu \longmapsto \tilde U\tilde{E}_\mu\tilde U^{*}
 $$
 
 leaves $g_{\mu\nu}$ unchanged at every point, because rotor conjugation preserves the bilinear form. So the local gauge group supplied by the algebra is exactly a copy of $SL(2,\mathbb{C})$ at each point, with the double cover, the Lie algebra, and the $\left(m,n\right)$ representation theory of the read list applying pointwise. This is the standard tetrad or vierbein structure of the spinor formulation of general relativity, written in the algebra's own notation; the interplay of the sixteen frame functions with the six local rotor parameters leaves $16 - 6 = 10$ independent components, which is the number of components of $g_{\mu\nu}$.
 
-The corresponding flatness statement is exact and instructive. If the frame is *pure rotor gauge*, $\tilde{E}_\mu = \tilde{\Lambda}(x)\,\epsilon_\mu\,\tilde{\Lambda}(x)^{*}$ for a fixed basis $\epsilon_\mu$ of $\mathbb{M}_-$, then $g_{\mu\nu}(x) = \langle \epsilon_\mu, \epsilon_\nu\rangle_{\natural}$ is a constant matrix, and the metric is flat. A point-dependent rotor field applied to a rigid basis produces no curvature whatever. Curvature in this route is exactly that part of the frame which is not of this pure-gauge form, and no amount of rotor-field machinery detects it.
+The corresponding flatness statement is exact and instructive. If the frame is *pure rotor gauge*, $\tilde{E}_\mu = \tilde U(x)\,\epsilon_\mu\,\tilde U(x)^{*}$ for a fixed basis $\epsilon_\mu$ of $\mathbb{M}_-$, then $g_{\mu\nu}(x) = \langle \epsilon_\mu, \epsilon_\nu\rangle_{\natural}$ is a constant matrix, and the metric is flat. A point-dependent rotor field applied to a rigid basis produces no curvature whatever. Curvature in this route is exactly that part of the frame which is not of this pure-gauge form, and no amount of rotor-field machinery detects it.
 
 Two honest qualifications keep this from sounding like more than it is.
 
@@ -193,7 +193,7 @@ $$
 
 six real dimensions, with the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$ of the read list. Since this Lie algebra is a subspace of $\mathbb{B}$, a connection 1-form and its curvature 2-form can both be carried as $\mathbb{B}$-valued objects — specifically, as objects valued in that six-dimensional subspace. The spin connection of the tetrad formalism is therefore not foreign to the algebra; it sits inside it.
 
-The trap concerns the covariant derivative. The group acts on the material sector by the two-sided formula $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, so the infinitesimal action of a generator $G$ is
+The trap concerns the covariant derivative. The group acts on the material sector by the two-sided formula $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, so the infinitesimal action of a generator $G$ is
 
 $$
 \tilde{Q} \longmapsto \tilde{Q} + \epsilon\left(G\tilde{Q} + \tilde{Q}G^{*}\right) + O(\epsilon^2),
@@ -213,7 +213,7 @@ $$
 
 with $\tilde{\Gamma}_\mu$ in the Lie subspace; the natural abbreviation $D_\mu = \partial/\partial Q_\mu + [\tilde{\Gamma}_\mu, \cdot]$ would be wrong for exactly the boosts, which is where the Lorentzian content of the theory lives.
 
-One object in this neighbourhood is automatic and one is not. The automatic one is the logarithmic derivative of a rotor field: if $\tilde{\Lambda}(x)$ is unit-norm, then both $\tilde{\Lambda}^{\natural}\,\partial/\partial Q_\mu\,\tilde{\Lambda}$ and $\partial/\partial Q_\mu\,\tilde{\Lambda}\,\tilde{\Lambda}^{\natural}$ are traceless, hence lie in the Lie algebra, because $\tilde{\Lambda}^{\natural}\tilde{\Lambda} = e_t$ differentiates to zero. So a frame carried by a rotor field arrives with a natural $\mathrm{SL}(2,\mathbb{C})$-valued connection. But it is pure gauge, and its curvature vanishes — which is the same statement as the flatness of the rotor-field metric in the previous section, arrived at from the other direction. Consistency, not new content.
+One object in this neighbourhood is automatic and one is not. The automatic one is the logarithmic derivative of a rotor field: if $\tilde U(x)$ is unit-norm, then both $\tilde U^{\natural}\,\partial/\partial Q_\mu\,\tilde U$ and $\partial/\partial Q_\mu\,\tilde U\,\tilde U^{\natural}$ are traceless, hence lie in the Lie algebra, because $\tilde U^{\natural}\tilde U = e_t$ differentiates to zero. So a frame carried by a rotor field arrives with a natural $\mathrm{SL}(2,\mathbb{C})$-valued connection. But it is pure gauge, and its curvature vanishes — which is the same statement as the flatness of the rotor-field metric in the previous section, arrived at from the other direction. Consistency, not new content.
 
 What is not automatic is everything one would want. Metric compatibility and the vanishing of torsion are conditions, not consequences; nothing in the algebra selects the Levi-Civita lift. And the whole dynamics is absent: there is no action, no field equation for $\tilde{E}_\mu$ or $\tilde{\Gamma}_\mu$, and therefore no Einstein equation. The algebra can hold the objects of the spin-connection formalism in the same notation in which it holds the rotors and the four-vectors. It does not generate a single equation for them.
 
@@ -239,7 +239,7 @@ The connection of the previous section was built for the material sector, where 
 
 ### The one-sided spinor derivative
 
-The Lorentz group acts on the spinor module by **left multiplication**, $\psi \mapsto \tilde\Lambda\psi$, not by rotor conjugation; the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* establishes this, and it is the algebraic difference between a four-vector and a spinor. The covariant derivative compatible with that action is therefore **one-sided**,
+The Lorentz group acts on the spinor module by **left multiplication**, $\psi \mapsto \tilde U\psi$, not by rotor conjugation; the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* establishes this, and it is the algebraic difference between a four-vector and a spinor. The covariant derivative compatible with that action is therefore **one-sided**,
 
 $$
 D_\mu\psi = \partial/\partial Q_\mu\,\psi + \tilde\Gamma_\mu\psi,
@@ -247,16 +247,16 @@ D_\mu\psi = \partial/\partial Q_\mu\,\psi + \tilde\Gamma_\mu\psi,
 \tilde\Gamma_\mu \in \mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B},
 $$
 
-which is not the two-sided prescription of the material sector, $D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \tilde\Gamma_\mu\tilde{Q} + \tilde{Q}\tilde\Gamma_\mu^{*}$. The two must not be conflated. The vector carries the transformation twice, once on each side, $\tilde{Q} \mapsto \tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$, and so receives two connection terms; the spinor carries it once, $\psi \mapsto \tilde\Lambda\psi$, and so receives one. Both connection terms live in the same six-dimensional Lie subspace, and each is the standard inhomogeneous connection of the module it belongs to.
+which is not the two-sided prescription of the material sector, $D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \tilde\Gamma_\mu\tilde{Q} + \tilde{Q}\tilde\Gamma_\mu^{*}$. The two must not be conflated. The vector carries the transformation twice, once on each side, $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, and so receives two connection terms; the spinor carries it once, $\psi \mapsto \tilde U\psi$, and so receives one. Both connection terms live in the same six-dimensional Lie subspace, and each is the standard inhomogeneous connection of the module it belongs to.
 
-Covariance fixes the transformation law. If $\psi \mapsto \tilde\Lambda\psi$, then $D_\mu\psi \mapsto \tilde\Lambda D_\mu\psi$ precisely when the connection transforms as
+Covariance fixes the transformation law. If $\psi \mapsto \tilde U\psi$, then $D_\mu\psi \mapsto \tilde U D_\mu\psi$ precisely when the connection transforms as
 
 $$
-\tilde\Gamma_\mu \longmapsto \tilde\Lambda\tilde\Gamma_\mu\tilde\Lambda^{-1}
-- \left(\partial/\partial Q_\mu\,\tilde\Lambda\right)\tilde\Lambda^{-1},
+\tilde\Gamma_\mu \longmapsto \tilde U\tilde\Gamma_\mu\tilde U^{-1}
+- \left(\partial/\partial Q_\mu\,\tilde U\right)\tilde U^{-1},
 $$
 
-which is the inhomogeneous transformation expected of a connection on a module. A rotor field supplies an example at once: $\tilde\Gamma_\mu = -\left(\partial/\partial Q_\mu\,\tilde\Lambda\right)\tilde\Lambda^{-1}$ is pure gauge, and its curvature vanishes, exactly as the rotor-carried frame of the previous sections is pure gauge and flat.
+which is the inhomogeneous transformation expected of a connection on a module. A rotor field supplies an example at once: $\tilde\Gamma_\mu = -\left(\partial/\partial Q_\mu\,\tilde U\right)\tilde U^{-1}$ is pure gauge, and its curvature vanishes, exactly as the rotor-carried frame of the previous sections is pure gauge and flat.
 
 ### The curved Dirac operator and the equation
 
@@ -469,7 +469,7 @@ Within the second interpretation's class — one function, no shift, flat spatia
 
 A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, so curvature is exactly the non-gauge part of the frame. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{R} + \tilde{R}G^{*}$, not the commutator, the two differing precisely for the boosts.
 
-The Dirac field lives on a different module from the four-vector, and its curved equation has a different derivative. The spinor module carries the **left** action $\psi \mapsto \tilde\Lambda\psi$, not the two-sided rotor conjugation, so its covariant derivative is the **one-sided** $D_\mu\psi = \partial/\partial Q_\mu\,\psi + \tilde\Gamma_\mu\psi$, with $\tilde\Gamma_\mu$ in the Lie subspace; covariance fixes the inhomogeneous transformation $\tilde\Gamma_\mu \mapsto \tilde\Lambda\tilde\Gamma_\mu\tilde\Lambda^{-1} - (\partial/\partial Q_\mu\,\tilde\Lambda)\tilde\Lambda^{-1}$. With the dual frame $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$ this gives the curved biquaternion Dirac operator $\not D = \tilde E^\mu D_\mu$, whose massless equation is $\not D\psi = 0$ and whose massive form is the same chiral pair as in the flat case, $\not D\tilde\Psi_R = m\tilde\Psi_L$, $\not D^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, the mass being untouched by the curvature. The operator reduces exactly to $\tilde\nabla$ in a rigid frame with vanishing connection, and its square is the Lichnerowicz formula $\not D^2 = \Box_g - \tfrac14 R$, so the curvature couples to the field through the Ricci scalar even without a source. That much of the curved matter equation is now constructed in the framework's own notation. What remains is unchanged and unyielding: the frame and the connection are inserted by hand and satisfy no equation, the metric is not selected, the current that would source the coupled system is the spinor-module object carrying $\gamma^0$ outside $\mathbb{B}$, and the global existence of spinor fields is a topological condition no local operator can see.
+The Dirac field lives on a different module from the four-vector, and its curved equation has a different derivative. The spinor module carries the **left** action $\psi \mapsto \tilde U\psi$, not the two-sided rotor conjugation, so its covariant derivative is the **one-sided** $D_\mu\psi = \partial/\partial Q_\mu\,\psi + \tilde\Gamma_\mu\psi$, with $\tilde\Gamma_\mu$ in the Lie subspace; covariance fixes the inhomogeneous transformation $\tilde\Gamma_\mu \mapsto \tilde U\tilde\Gamma_\mu\tilde U^{-1} - (\partial/\partial Q_\mu\,\tilde U)\tilde U^{-1}$. With the dual frame $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$ this gives the curved biquaternion Dirac operator $\not D = \tilde E^\mu D_\mu$, whose massless equation is $\not D\psi = 0$ and whose massive form is the same chiral pair as in the flat case, $\not D\tilde\Psi_R = m\tilde\Psi_L$, $\not D^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, the mass being untouched by the curvature. The operator reduces exactly to $\tilde\nabla$ in a rigid frame with vanishing connection, and its square is the Lichnerowicz formula $\not D^2 = \Box_g - \tfrac14 R$, so the curvature couples to the field through the Ricci scalar even without a source. That much of the curved matter equation is now constructed in the framework's own notation. What remains is unchanged and unyielding: the frame and the connection are inserted by hand and satisfy no equation, the metric is not selected, the current that would source the coupled system is the spinor-module object carrying $\gamma^0$ outside $\mathbb{B}$, and the global existence of spinor fields is a topological condition no local operator can see.
 
 What is missing is not a technical detail but the theory. Nothing determines the frame, the connection, or the metric; there is no action, no field equation, and no Einstein equation; the gravitating rank-2 tensors are not the framework's four-vectors; diffeomorphism invariance has no algebraic counterpart; global and topological structure is outside a pointwise algebra; and the informational sector's trace formula is a fibre trace with no measure and no integral, so its curved-space extension is not merely unwritten but unlocated. The framework contains the kinematical fibre of tetrad gravity and none of its dynamics; the title names a framework, and that is exactly what it is.
 
@@ -484,8 +484,8 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of the rotation rotors |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | The general quaternionic bilinear form, the polar form of the norm, on $\mathbb{M}_-$; the pointwise metric, the interval |
-| $\tilde{\Lambda} \in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
-| $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation (four-vector action) |
+| $\tilde U \in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
+| $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $ict$ | Local imaginary time coordinate, material sector |

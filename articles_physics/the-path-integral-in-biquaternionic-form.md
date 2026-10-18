@@ -101,14 +101,14 @@ $$
 \exp(iS/\hbar)\,\big(\exp(iS/\hbar)\big)^\dagger=e_t.
 $$
 
-It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
+It is **not**, however, a **unit-norm** element. The Lorentz rotors are the biquaternions with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ (the group $SL(2,\mathbb{C})$), and for a central element $\lambda e_t$ this condition reads $\lambda^2=1$, so $\lambda=\pm1$. For the phase,
 
 $$
 \exp(iS/\hbar)\,\overline{\big(\exp(iS/\hbar)\big)}=\exp(2iS/\hbar)\neq e_t
 \qquad\text{unless } S/\hbar\in\pi\mathbb{Z}.
 $$
 
-So the phase is a unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
+So the phase is a unitary element and not a Lorentz rotor. The two notions of "unit" — $\tilde U\tilde U^{*}=e_t$ for $\mathrm{U}(2)$ and $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ for $SL(2,\mathbb{C})$ — must be kept apart here, and the path-integral phase belongs to the first.
 
 ### Consequences of centrality
 

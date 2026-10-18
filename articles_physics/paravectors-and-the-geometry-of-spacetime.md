@@ -78,9 +78,9 @@ $$
 \tilde v = -\frac{i}{c}\,\tilde V^{\natural},
 $$
 
-which is the corpus's relation $\tilde\Lambda^2 = -\frac{i}{c}\tilde V^{\natural}$ of *The Lorentz Transformation as a Biquaternionic Rotation* written for $\tilde v = \tilde\Lambda^2$. The paravector $\tilde v$ is Hermitian and its time component is real; the four-velocity $\tilde V$ is anti-Hermitian and its time component is imaginary. The two are not related by the central $i$ alone — that would reverse the spatial sign — but by $i$ followed by the quaternion conjugate, which is what the change of time convention does.
+which is the corpus's relation $\tilde U^2 = -\frac{i}{c}\tilde V^{\natural}$ of *The Lorentz Transformation as a Biquaternionic Rotation* written for $\tilde v = \tilde U^2$. The paravector $\tilde v$ is Hermitian and its time component is real; the four-velocity $\tilde V$ is anti-Hermitian and its time component is imaginary. The two are not related by the central $i$ alone — that would reverse the spatial sign — but by $i$ followed by the quaternion conjugate, which is what the change of time convention does.
 
-**The boost rotor is a paravector.** The corpus's boost rotor is $\tilde\Lambda = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ with $\vec u$ a unit real vector; in the paravector basis it is
+**The boost rotor is a paravector.** The corpus's boost rotor is $\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ with $\vec u$ a unit real vector; in the paravector basis it is
 
 $$
 L = \cosh\frac{w}{2} + \sinh\frac{w}{2}\cdot i\vec u = \cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u_v,
@@ -94,7 +94,7 @@ L^2 = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u_v\right)^2
 = \cosh w\,e_t + \sinh w\,\vec u_v \;=\; \tilde v,
 $$
 
-using $\vec u_v^2 = e_t$. This is the corpus's relation $\tilde v = \tilde\Lambda^2 = -\frac{i}{c}\tilde V^{\natural}$ read in the paravector basis: the square of the boost rotor is the **proper velocity** $\tilde v$, a paravector, and the four-velocity $\tilde V$ is its companion under the change of time convention. The relation $\tilde v\bar{\tilde v} = e_t$ is the statement that the four-velocity has fixed length.
+using $\vec u_v^2 = e_t$. This is the corpus's relation $\tilde v = \tilde U^2 = -\frac{i}{c}\tilde V^{\natural}$ read in the paravector basis: the square of the boost rotor is the **proper velocity** $\tilde v$, a paravector, and the four-velocity $\tilde V$ is its companion under the change of time convention. The relation $\tilde v\bar{\tilde v} = e_t$ is the statement that the four-velocity has fixed length.
 
 ## The Boost Rule
 
@@ -130,14 +130,14 @@ $$
 
 Adding the two gives the rule.
 
-The corresponding statement in the series' conventions is the rotor conjugation on the Hermitian subspace. Writing $p$ for the Hermitian element $p_te_t + i\vec p_e$ and $\tilde\Lambda$ for the corpus boost rotor, the two are the same element ($L = \tilde\Lambda$) and the same operation ($L\,p\,L^\dagger = \tilde\Lambda\,p\,\tilde\Lambda^{*}$, the reversion being the identity on $\mathbb{M}_+$), so that
+The corresponding statement in the series' conventions is the rotor conjugation on the Hermitian subspace. Writing $p$ for the Hermitian element $p_te_t + i\vec p_e$ and $\tilde U$ for the corpus boost rotor, the two are the same element ($L = \tilde U$) and the same operation ($L\,p\,L^\dagger = \tilde U\,p\,\tilde U^{*}$, the reversion being the identity on $\mathbb{M}_+$), so that
 
 $$
-\tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^{*} = \tilde v\,p_\parallel + p_\perp,
+\tilde U\,\tilde{Q}\,\tilde U^{*} = \tilde v\,p_\parallel + p_\perp,
 \qquad \tilde{Q} = p = p_te_t + i\vec p_e ,
 $$
 
-with $\tilde v = \tilde\Lambda^2$. The rule is therefore not a new transformation law but the corpus's own law, written without the second factor.
+with $\tilde v = \tilde U^2$. The rule is therefore not a new transformation law but the corpus's own law, written without the second factor.
 
 **Why the rule is useful.** The rule multiplies only the part of $p$ coplanar with the boost plane and leaves the orthogonal part fixed. Unlike the sandwich it requires only a product with the proper velocity, and unlike a matrix it needs no basis in which the boost is aligned. The source uses it for the standard kinematical statements — the composition of velocities, the contraction of a moving rod, the relativity of simultaneity, the transformation of the electromagnetic field — and each becomes a one-line computation in the algebra.
 

@@ -59,9 +59,9 @@ The factor $\kappa^2$ is the module's two complex dimensions; equivalently, the 
 
 **The non-central case.** If $S''$ is not central, it mixes the two chiralities (the minimal left ideals) and the determinant does not factor. The mass term's right-multiplication form is the standard instance: the Dirac operator
 $$
-\mathcal{D} = \tilde\nabla + \tilde m ,
+\mathcal{D} = \tilde\nabla + m ,
 $$
-with $\tilde m$ implementing the chirality-off-diagonal mass, is a module operator whose determinant carries both a magnitude and a **phase**; the phase is the physically new object and is treated in a later section. The general principle is that the determinant of a central operator is a product of scalars and the determinant of a non-central one is not.
+with $m$ the real mass, is a module operator whose determinant carries both a magnitude and a **phase**; the phase is the physically new object and is treated in a later section. The general principle is that the determinant of a central operator is a product of scalars and the determinant of a non-central one is not.
 
 ## The Fundamental Determinant and the Biquaternion Norm
 

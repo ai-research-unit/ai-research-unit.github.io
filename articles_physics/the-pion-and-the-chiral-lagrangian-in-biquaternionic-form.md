@@ -78,10 +78,10 @@ $$
 \left[e_a, e_b\right] = 2\varepsilon_{abc}e_c
 $$
 
-shows that the span of the three $e_a$ closes on itself, and the adjoint action of a group element $\tilde g = \exp(\vec\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$ rotates the triplet,
+shows that the span of the three $e_a$ closes on itself, and the adjoint action of the rotor $\tilde u = \exp(\vec\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$ rotates the triplet,
 
 $$
-\vec\pi \;\longmapsto\; \tilde g\,\vec\pi\,\tilde g^{-1} ,
+\vec\pi \;\longmapsto\; \tilde u\,\vec\pi\,\tilde u^{-1} ,
 $$
 
 which is the isospin rotation of an isovector. The bilinear invariant is the norm,
@@ -318,6 +318,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $T_a = \tfrac{i}{2}e_a$ | Standard Hermitian chiral generators |
 | $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$, $\mathrm{Sc}(\overline{e_a}e_b) = \delta_{ab}$ | Trace identities fixing the normalisation |
 | $\tilde U = \exp(\vec\pi/f_\pi)\in\mathbb{H}^1_{\mathbb{B}}$ | Chiral field (unit real quaternion) |
+| $\tilde u = \exp(\vec\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$ | Adjoint rotation element (isospin rotor) |
 | $\tilde U\mapsto g_L\tilde U g_R^{-1}$ | Chiral transformation; diagonal $SU(2)_V$ unbroken |
 | $\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{4}\mathrm{Tr}(\partial/\partial Q_\mu\,\tilde U\partial/\partial Q_\mu\,\tilde U^{*})$ | Leading chiral Lagrangian |
 | $f_\pi$ | Pion decay constant ($\approx 92.1$ MeV) |

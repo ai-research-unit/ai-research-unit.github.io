@@ -51,24 +51,24 @@ The word *native* is exact and is worth one paragraph, because it is what makes 
 
 A biquaternion of unit norm,
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \quad(\text{boost}), \qquad
+\tilde U = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \quad(\text{boost}), \qquad
 \tilde u = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_{\mathrm r} \quad(\text{rotation}),
 $$
-satisfies $\langle\tilde{\Lambda}\rangle_{\natural} = 1$, hence $\tilde{\Lambda}^{-1} = \tilde{\Lambda}^{\natural}$, and the unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. The same element acts on the two sectors by different formulas:
+satisfies $\langle\tilde U\rangle_{\natural} = 1$, hence $\tilde U^{-1} = \tilde U^{\natural}$, and the unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. The same element acts on the two sectors by different formulas:
 
 **On the module**, by left multiplication,
 $$
-|u\rangle \ \longmapsto\ \tilde{\Lambda}|u\rangle := \mathsf{M}_2(\tilde{\Lambda})|u\rangle ;
+|u\rangle \ \longmapsto\ \tilde U|u\rangle := \mathsf{M}_2(\tilde U)|u\rangle ;
 $$
-this is the **spinor representation**, complex two-dimensional and faithful, and the element $\pm\tilde{\Lambda}$ act identically, which is the double covering $SL(2,\mathbb{C})\to SO^+(1,3)$.
+this is the **spinor representation**, complex two-dimensional and faithful, and the element $\pm\tilde U$ act identically, which is the double covering $SL(2,\mathbb{C})\to SO^+(1,3)$.
 
 **On the material sector**, by congruence,
 $$
-\tilde{Q} \ \longmapsto\ \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} , \qquad \tilde{Q}\in\mathbb{M}_- ;
+\tilde{Q} \ \longmapsto\ \tilde U\tilde{Q}\tilde U^{*} , \qquad \tilde{Q}\in\mathbb{M}_- ;
 $$
 this is the **four-vector representation**. It preserves $\mathbb{M}_-$ by the sector identity of the companion structural article, and it preserves the biquaternion norm,
 $$
-N\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\bigr) = \langle\tilde{\Lambda}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{\Lambda}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural},
+N\bigl(\tilde U\tilde{Q}\tilde U^{*}\bigr) = \langle\tilde U\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural},
 $$
 so it preserves the interval and the light cone.
 
@@ -76,21 +76,21 @@ so it preserves the interval and the light cone.
 
 The decisive property of the spinor action is its failure to be unitary, and it is a two-line computation. The Hermitian form on $S$ is $\langle u|v\rangle = \langle u|\cdot|v\rangle$ in the matrix model, and
 $$
-\langle \tilde{\Lambda}u\,|\,\tilde{\Lambda}v\rangle
-= \langle u|\,\mathsf{M}_2(\tilde{\Lambda})^\dagger\mathsf{M}_2(\tilde{\Lambda})\,|v\rangle
-= \langle u|\,\mathsf{M}_2(\tilde{\Lambda}^{*}\tilde{\Lambda})\,|v\rangle .
+\langle \tilde Uu\,|\,\tilde Uv\rangle
+= \langle u|\,\mathsf{M}_2(\tilde U)^\dagger\mathsf{M}_2(\tilde U)\,|v\rangle
+= \langle u|\,\mathsf{M}_2(\tilde U^{*}\tilde U)\,|v\rangle .
 $$
 The form is preserved for all spinors if and only if
 $$
-\tilde{\Lambda}^{*}\tilde{\Lambda} = e_t ,
+\tilde U^{*}\tilde U = e_t ,
 $$
-which is the unitarity condition. Among the unit-norm elements, $\tilde{\Lambda}^{*}\tilde{\Lambda} = e_t$ together with $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ is exactly the condition that $\tilde{\Lambda}$ is a unit real quaternion, i.e. an element of $SU(2)$. Therefore
+which is the unitarity condition. Among the unit-norm elements, $\tilde U^{*}\tilde U = e_t$ together with $\langle\tilde U\rangle_{\natural} = 1$ is exactly the condition that $\tilde U$ is a unit real quaternion, i.e. an element of $SU(2)$. Therefore
 $$
 \text{the spinor norm is preserved by } SU(2) \text{ and by no other subgroup of } SL(2,\mathbb{C}).
 $$
-A boost fails the condition maximally: for $\tilde{\Lambda}$ Hermitian one has $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = e_t + i\sinh\psi\,\vec u_{\mathrm b}$, so
+A boost fails the condition maximally: for $\tilde U$ Hermitian one has $\tilde U^{*}\tilde U = \tilde U^2 = e_t + i\sinh\psi\,\vec u_{\mathrm b}$, so
 $$
-\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\vec u_{\mathrm b}|u\rangle \neq \langle u|u\rangle .
+\langle\tilde Uu|\tilde Uu\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\vec u_{\mathrm b}|u\rangle \neq \langle u|u\rangle .
 $$
 The norm is scaled by a positive factor rather than rotated, so the ray is preserved but the normalization is not.
 
@@ -100,7 +100,7 @@ The state space is the boundary of the Bloch ball, and this computation says tha
 
 The intersection of the two normalization conditions is worth recording, since it is where the relativistic and the quantum actions coincide:
 $$
-SU(2) = \bigl\{\tilde{\Lambda} : \langle\tilde{\Lambda}\rangle_{\natural} = 1\bigr\}\cap\bigl\{\tilde{U} : \tilde{U}\tilde{U}^{*} = e_t\bigr\}.
+SU(2) = \bigl\{\tilde U : \langle\tilde U\rangle_{\natural} = 1\bigr\}\cap\bigl\{\tilde{U} : \tilde{U}\tilde{U}^{*} = e_t\bigr\}.
 $$
 Inside $SU(2)$ the left action is unitary and the conjugation action is an automorphism, and a central phase acts trivially on rays. The two conditions are independent outside it: a boost has unit norm but is not unitary, and a general unitary element of $\mathrm{U}(2)$ need not have unit norm. The relativistic qubit therefore has a symmetry group $SL(2,\mathbb{C})$ and a *unitary* symmetry group $SU(2)$, and the quotient structure between them — the space of boosts modulo rotations — is the hyperbolic part of the group in which the frame dependence resides.
 
@@ -112,12 +112,12 @@ A pure state vector is defined up to complex scale, so the pure states of the re
 $$
 z = \frac{u_x}{u_t}\in\mathbb{C}\cup\{\infty\},
 $$
-the left action of $\tilde{\Lambda}$ on the spinor induces on $z$ the fractional-linear map
+the left action of $\tilde U$ on the spinor induces on $z$ the fractional-linear map
 $$
-|u\rangle \ \longmapsto\ \tilde{\Lambda}|u\rangle
+|u\rangle \ \longmapsto\ \tilde U|u\rangle
 \quad\Longrightarrow\quad
 z \ \longmapsto\ \frac{\Lambda_{10} + \Lambda_{11}z}{\Lambda_{00} + \Lambda_{01}z},
-\qquad \mathsf{M}_2(\tilde{\Lambda}) = \begin{pmatrix}\Lambda_{00} & \Lambda_{01}\\ \Lambda_{10} & \Lambda_{11}\end{pmatrix}.
+\qquad \mathsf{M}_2(\tilde U) = \begin{pmatrix}\Lambda_{00} & \Lambda_{01}\\ \Lambda_{10} & \Lambda_{11}\end{pmatrix}.
 $$
 This is the standard Möbius action of $GL(2,\mathbb{C})$ on $\mathbb{CP}^1$, and on the quotient by the centre it is the action of
 $$
@@ -156,11 +156,11 @@ The map takes a pure state of the informational sector to the unit-length future
 
 **It is equivariant.** The map intertwines the spinor action with the four-vector action,
 $$
-\tilde{\mathcal L}\bigl(\tilde{\Lambda}u\bigr)
-= i\,\mathsf{M}_2^{-1}\!\bigl(\mathsf{M}_2(\tilde{\Lambda})|u\rangle\langle u|\mathsf{M}_2(\tilde{\Lambda})^\dagger\bigr)
-= \tilde{\Lambda}\,\tilde{\mathcal L}(u)\,\tilde{\Lambda}^{*} ,
+\tilde{\mathcal L}\bigl(\tilde Uu\bigr)
+= i\,\mathsf{M}_2^{-1}\!\bigl(\mathsf{M}_2(\tilde U)|u\rangle\langle u|\mathsf{M}_2(\tilde U)^\dagger\bigr)
+= \tilde U\,\tilde{\mathcal L}(u)\,\tilde U^{*} ,
 $$
-which is the statement that the diagram of the two actions commutes: the informational ray and its material null direction are carried by the same Lorentz transformation. The verification is the associativity of the matrix product together with $\mathsf{M}_2(\tilde{\Lambda}^{*}) = \mathsf{M}_2(\tilde{\Lambda})^\dagger$.
+which is the statement that the diagram of the two actions commutes: the informational ray and its material null direction are carried by the same Lorentz transformation. The verification is the associativity of the matrix product together with $\mathsf{M}_2(\tilde U^{*}) = \mathsf{M}_2(\tilde U)^\dagger$.
 
 ### The material image of an informational state
 
@@ -168,7 +168,7 @@ The null-vector map gives the relativistic qubit a geometric face and is the pre
 
 **A worked instance.** Take the spin-up state along $z$, $|u\rangle = (1,0)^{\mathsf T}$, and boost along $x$ with rapidity $\psi = 0.6$. The spinor becomes
 $$
-\tilde{\Lambda}|u\rangle = \bigl(\cosh 0.3,\ \sinh 0.3\bigr)^{\mathsf T} = \bigl(1.04534,\ 0.30452\bigr)^{\mathsf T},
+\tilde U|u\rangle = \bigl(\cosh 0.3,\ \sinh 0.3\bigr)^{\mathsf T} = \bigl(1.04534,\ 0.30452\bigr)^{\mathsf T},
 $$
 whose norm is $1.34986 = \exp(0.3)$, not $1$: the boost has scaled the spinor, as the non-unitarity computation predicts. The ray, however, has moved, and the Bloch vector of the normalized state is
 $$
@@ -187,13 +187,13 @@ which remains null, $\langle\tilde{\mathcal L}\rangle_{\natural} = 0$ in both fr
 
 The state space of the qubit is the Bloch ball, and the obvious guess for the action of a Lorentz transformation on a state is the congruence
 $$
-\tilde{Ϛ} \ \longmapsto\ \tilde{\Lambda}\tilde{Ϛ}\tilde{\Lambda}^{*} .
+\tilde{Ϛ} \ \longmapsto\ \tilde U\tilde{Ϛ}\tilde U^{*} .
 $$
 This has the right formal properties — it preserves Hermiticity and the inertia of the matrix, hence positivity — but it is not a transformation of states. It does not preserve the trace: for the maximally mixed state,
 $$
-\tilde{\Lambda}\,\tfrac12 e_t\,\tilde{\Lambda}^{*} = \tfrac12\tilde{\Lambda}^2 ,
+\tilde U\,\tfrac12 e_t\,\tilde U^{*} = \tfrac12\tilde U^2 ,
 \qquad
-\mathrm{Tr}\bigl(\tilde{\Lambda}\tfrac12 e_t\tilde{\Lambda}^{*}\bigr) = \cosh\psi \neq 1 ,
+\mathrm{Tr}\bigl(\tilde U\tfrac12 e_t\tilde U^{*}\bigr) = \cosh\psi \neq 1 ,
 $$
 and after normalizing, the centre of the Bloch ball is carried to the point
 $$
@@ -207,9 +207,9 @@ The congruence is nevertheless the correct action on the spinor ray and on the p
 
 Let the particle have four-velocity $\tilde{V}$, a future-directed timelike element of $\mathbb{M}_-$ normalized by $\langle\tilde{V}\rangle_{\natural} = -c^2$. Its **little group** is the subgroup of $SL(2,\mathbb{C})$ that fixes it,
 $$
-\mathrm{Little}(\tilde{V}) = \bigl\{\tilde{\Lambda} : \tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = \tilde{V}\bigr\}.
+\mathrm{Little}(\tilde{V}) = \bigl\{\tilde U : \tilde U\tilde{V}\tilde U^{*} = \tilde{V}\bigr\}.
 $$
-Because the congruence preserves the biquaternion norm, the stabilizer of the timelike direction $\tilde{V}$ is conjugate to the stabilizer of the rest four-velocity $ic\,e_t$; and the stabilizer of $ic\,e_t$ consists of the elements with $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_t$ (the central factor cancels), which is $\mathrm{U}(2)$, whose unit-determinant part is $SU(2)$. Hence
+Because the congruence preserves the biquaternion norm, the stabilizer of the timelike direction $\tilde{V}$ is conjugate to the stabilizer of the rest four-velocity $ic\,e_t$; and the stabilizer of $ic\,e_t$ consists of the elements with $\tilde U\tilde U^{*} = e_t$ (the central factor cancels), which is $\mathrm{U}(2)$, whose unit-determinant part is $SU(2)$. Hence
 $$
 \mathrm{Little}(\tilde{V}) \cong \mathrm{U}(2), \qquad \text{its unit-norm part} = SU(2),
 $$
@@ -223,35 +223,35 @@ and it is the standard little-group classification of Wigner, realized here insi
 
 ### The Wigner rotation
 
-The physical transformation of a spin state is constructed from the little group as follows. Choose, for each four-velocity $\tilde{V}$, a **standard boost** $\tilde{\Lambda}_{\tilde{V}}$ carrying it to the rest four-velocity,
+The physical transformation of a spin state is constructed from the little group as follows. Choose, for each four-velocity $\tilde{V}$, a **standard boost** $\tilde U_{\tilde{V}}$ carrying it to the rest four-velocity,
 $$
-\tilde{\Lambda}_{\tilde{V}}\,\tilde{V}\,\tilde{\Lambda}_{\tilde{V}}^{*} = ic\,e_t
+\tilde U_{\tilde{V}}\,\tilde{V}\,\tilde U_{\tilde{V}}^{*} = ic\,e_t
 \qquad\Longleftrightarrow\qquad
-\tilde{V} = \tilde{\Lambda}_{\tilde{V}}^{-1}\,(ic\,e_t)\,\tilde{\Lambda}_{\tilde{V}}^{-1{}^{*}},
+\tilde{V} = \tilde U_{\tilde{V}}^{-1}\,(ic\,e_t)\,\tilde U_{\tilde{V}}^{-1{}^{*}},
 $$
-which for a Hermitian unit-norm rotor means $\tilde{\Lambda}_{\tilde{V}} = \tilde{\Lambda}^{\natural}_{\tilde{V}}$ and $\tilde{\Lambda}_{\tilde{V}}^{-1} = \tilde{\Lambda}^{\natural}_{\tilde{V}}$. Under a Lorentz transformation $\tilde{\Lambda}$ the four-velocity goes to
+which for a Hermitian unit-norm rotor means $\tilde U_{\tilde{V}} = \tilde U^{\natural}_{\tilde{V}}$ and $\tilde U_{\tilde{V}}^{-1} = \tilde U^{\natural}_{\tilde{V}}$. Under a Lorentz transformation $\tilde U$ the four-velocity goes to
 $$
-\tilde{V}' = \tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} ,
+\tilde{V}' = \tilde U\tilde{V}\tilde U^{*} ,
 $$
 and the element
 $$
-\tilde{W}(\tilde{\Lambda},\tilde{V}) = \tilde{\Lambda}_{\tilde{V}'}\,\tilde{\Lambda}\,\tilde{\Lambda}_{\tilde{V}}^{-1}
+\tilde{W}(\tilde U,\tilde{V}) = \tilde U_{\tilde{V}'}\,\tilde U\,\tilde U_{\tilde{V}}^{-1}
 $$
 carries the rest frame to the rest frame:
 $$
 \tilde{W}\,(ic\,e_t)\,\tilde{W}^{*}
-= \tilde{\Lambda}_{\tilde{V}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{V}}^{-1}\,(ic\,e_t)\,\tilde{\Lambda}_{\tilde{V}}^{-1{}^{*}}\tilde{\Lambda}^{*}\tilde{\Lambda}_{\tilde{V}'}^\dagger
-= \tilde{\Lambda}_{\tilde{V}'}\,\tilde{\Lambda}\,\tilde{V}\,\tilde{\Lambda}^{*}\,\tilde{\Lambda}_{\tilde{V}'}^\dagger
-= \tilde{\Lambda}_{\tilde{V}'}\,\tilde{V}'\,\tilde{\Lambda}_{\tilde{V}'}^\dagger
+= \tilde U_{\tilde{V}'}\tilde U\tilde U_{\tilde{V}}^{-1}\,(ic\,e_t)\,\tilde U_{\tilde{V}}^{-1{}^{*}}\tilde U^{*}\tilde U_{\tilde{V}'}^\dagger
+= \tilde U_{\tilde{V}'}\,\tilde U\,\tilde{V}\,\tilde U^{*}\,\tilde U_{\tilde{V}'}^\dagger
+= \tilde U_{\tilde{V}'}\,\tilde{V}'\,\tilde U_{\tilde{V}'}^\dagger
 = ic\,e_t .
 $$
 By the stabilizer computation, $\tilde{W}$ is an element of the little group, and for a massive particle it is a unit-norm element with $\tilde{W}\tilde{W}^{*} = e_t$: a **unit real quaternion**, i.e. an element of $SU(2)$. This is the **Wigner rotation**. It is unitary, so it acts on the spin state by a genuine quantum operation,
 $$
 \tilde{Ϛ} \ \longmapsto\ \tilde{W}\tilde{Ϛ}\tilde{W}^{*} , \qquad \tilde{W}\in SU(2),
 $$
-which preserves the trace, the Hermiticity, the positivity, and — because it is a rotation — the Bloch radius. The maximally mixed state is fixed. The observable spin transformation at definite momentum is therefore a Bloch-sphere rotation by the Wigner angle, and not the non-unitary congruence of the previous subsection; the two agree only when $\tilde{\Lambda}$ is itself a rotation, in which case the standard boosts can be chosen so that $\tilde{W} = \tilde{\Lambda}$.
+which preserves the trace, the Hermiticity, the positivity, and — because it is a rotation — the Bloch radius. The maximally mixed state is fixed. The observable spin transformation at definite momentum is therefore a Bloch-sphere rotation by the Wigner angle, and not the non-unitary congruence of the previous subsection; the two agree only when $\tilde U$ is itself a rotation, in which case the standard boosts can be chosen so that $\tilde{W} = \tilde U$.
 
-The frame dependence of everything that follows enters through the momentum argument of $\tilde{W}$. For a particle with a sharp four-velocity the boost applies the single unitary $\tilde{W}(\tilde{\Lambda},\tilde{V})$ to the spin state and no entanglement with momentum can appear; for a momentum superposition the operator $\tilde{W}$ depends on the branch, and the boost acts as a momentum-controlled rotation, correlating spin with momentum. That mechanism — the momentum dependence of a unitary little-group element — is the content of the next three articles, and it is worth naming here as the reason the relativistic qubit is a *family* of qubits labelled by momentum rather than a single two-state system with an enlarged symmetry group.
+The frame dependence of everything that follows enters through the momentum argument of $\tilde{W}$. For a particle with a sharp four-velocity the boost applies the single unitary $\tilde{W}(\tilde U,\tilde{V})$ to the spin state and no entanglement with momentum can appear; for a momentum superposition the operator $\tilde{W}$ depends on the branch, and the boost acts as a momentum-controlled rotation, correlating spin with momentum. That mechanism — the momentum dependence of a unitary little-group element — is the content of the next three articles, and it is worth naming here as the reason the relativistic qubit is a *family* of qubits labelled by momentum rather than a single two-state system with an enlarged symmetry group.
 
 ## Observables, Generators, and the Two Sectors
 
@@ -275,15 +275,15 @@ and $[\tilde{K}_j,\tilde{K}_k] = -\epsilon_{jkl}\tilde{J}_l$: the commutator of 
 
 The relativistic qubit is the defining module $S$ of $\mathbb{B}$ with the left action of the unit-norm group $SL(2,\mathbb{C})$, together with the little-group structure that the action induces at fixed four-velocity. Its state vectors are the spinors, its states are the positive trace-one elements of $\mathbb{M}_+$, and its pure states are the rays, i.e. the points of $\mathbb{CP}^1$, on which the Lorentz group acts by Möbius transformations with $PSL(2,\mathbb{C})\cong SO^+(1,3)$.
 
-The left action is not unitary. The spinor norm is preserved if and only if $\tilde{\Lambda}^{*}\tilde{\Lambda} = e_t$, which selects $SU(2)$ inside $SL(2,\mathbb{C})$; a boost scales the norm and leaves the ray transformed by a Möbius map. Each pure state determines a future null four-vector
+The left action is not unitary. The spinor norm is preserved if and only if $\tilde U^{*}\tilde U = e_t$, which selects $SU(2)$ inside $SL(2,\mathbb{C})$; a boost scales the norm and leaves the ray transformed by a Möbius map. Each pure state determines a future null four-vector
 $$
-\tilde{\mathcal L}(u) = i\,\mathsf{M}_2^{-1}\bigl(|u\rangle\langle u|\bigr) = \tfrac{i}{2}e_t - \tfrac12\vec r, \qquad \langle\tilde{\mathcal L}\rangle_{\natural} = 0, \qquad \tilde{\mathcal L}(\tilde{\Lambda}u) = \tilde{\Lambda}\tilde{\mathcal L}(u)\tilde{\Lambda}^{*} ,
+\tilde{\mathcal L}(u) = i\,\mathsf{M}_2^{-1}\bigl(|u\rangle\langle u|\bigr) = \tfrac{i}{2}e_t - \tfrac12\vec r, \qquad \langle\tilde{\mathcal L}\rangle_{\natural} = 0, \qquad \tilde{\mathcal L}(\tilde Uu) = \tilde U\tilde{\mathcal L}(u)\tilde U^{*} ,
 $$
 so the informational ray and its material null direction are carried by the same Lorentz transformation; the pure-state Bloch sphere is the celestial sphere, with the spatial direction of the null vector opposite the Bloch direction. The map exists for pure states only.
 
 The physical spin state at definite four-velocity transforms not by the non-unitary congruence but by the little-group **Wigner rotation**
 $$
-\tilde{W}(\tilde{\Lambda},\tilde{V}) = \tilde{\Lambda}_{\tilde{V}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{V}}^{-1}\in SU(2), \qquad \tilde{V}' = \tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} ,
+\tilde{W}(\tilde U,\tilde{V}) = \tilde U_{\tilde{V}'}\tilde U\tilde U_{\tilde{V}}^{-1}\in SU(2), \qquad \tilde{V}' = \tilde U\tilde{V}\tilde U^{*} ,
 $$
 which fixes the rest four-velocity, is a unit real quaternion, and acts on the Bloch ball by a rotation. The massive little group is $SU(2)$ and carries spin; the massless little group is $E(2)$ and carries helicity, so the massless qubit has one state per momentum. The congruence by a non-unitary element is a map on the algebra that moves the maximally mixed state and scales the trace, and the physical state transformation is the unitary Wigner rotation; the two coincide only on the compact subgroup. Because $\tilde{W}$ depends on the four-velocity, the relativistic qubit is a momentum-labelled family of qubits, and a boost acts as a momentum-controlled rotation — the mechanism behind the frame-dependent entanglement of the next article.
 
@@ -297,15 +297,15 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $|u\rangle\in S$ | State vector (spinor) |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\leq1$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent |
-| $\tilde{\Lambda}$, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ | Unit-norm biquaternion, element of $SL(2,\mathbb{C})$ |
+| $\tilde U$, $\langle\tilde U\rangle_{\natural} = 1$ | Unit-norm biquaternion, element of $SL(2,\mathbb{C})$ |
 | $SU(2)$ | Unit real quaternions, unitary subgroup |
 | $z = u_x/u_t$ | Möbius coordinate on the pure-state sphere $\mathbb{CP}^1$ |
 | $\tilde{\mathcal L}(u) = i\mathsf{M}_2^{-1}(|u\rangle\langle u|)$ | Future null four-vector of a pure state, $\langle\tilde{\mathcal L}\rangle_{\natural} = 0$ |
 | $\vec u_p = -\vec u_r$ | Null direction opposite the Bloch direction |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\mathrm{Little}(\tilde{V})$ | Stabilizer of $\tilde{V}$: $\mathrm{U}(2)$ massive, $E(2)$ massless |
-| $\tilde{\Lambda}_{\tilde{V}}$ | Standard boost carrying $\tilde{V}$ to rest |
-| $\tilde{W}(\tilde{\Lambda},\tilde{V}) = \tilde{\Lambda}_{\tilde{V}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{V}}^{-1}$ | Wigner rotation, $\in SU(2)$ |
+| $\tilde U_{\tilde{V}}$ | Standard boost carrying $\tilde{V}$ to rest |
+| $\tilde{W}(\tilde U,\tilde{V}) = \tilde U_{\tilde{V}'}\tilde U\tilde U_{\tilde{V}}^{-1}$ | Wigner rotation, $\in SU(2)$ |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin operators |
 | $\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0}$ | Rotation generators (material, compact) |
 | $\tilde{K}_k = \tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$ | Boost generators (informational) |

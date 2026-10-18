@@ -252,10 +252,10 @@ $$
 the **geodesic equation on the group**. Writing $\vec\eta=\tilde u^{\natural}d\tilde u/dt$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/dt^2=d\vec\eta/dt+\vec\eta^2$ with $\vec\eta^2$ a real scalar; the equation therefore says that the vector part of $d\vec\eta/dt$ vanishes, and since $\vec\eta$ is pure real for all $t$ this is $d\vec\eta/dt=0$. Equivalently, the equation with the constraint is $\frac{d}{dt}(\tilde u^{\natural}d\tilde u/dt)=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
 
 $$
-\boxed{\;\tilde u(t)=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\tilde\omega_b t\right),\qquad \tilde\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-,\;}
+\boxed{\;\tilde u(t)=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\vec\omega_b t\right),\qquad \vec\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-,\;}
 $$
 
-with $\tilde\omega_b$ constant in the body frame. This is the free rigid body's motion, and it is derived here purely from the stationarity of the rotor action. The same calculation with the body-frame angular velocity replaced by the space-frame one gives the equivalent form $\tilde u(t)=\exp(+\tfrac12\tilde\omega_s t)\tilde u(0)$. The rigid-body article takes this result as its starting point and adds the inertia and the torque.
+with $\vec\omega_b$ constant in the body frame. This is the free rigid body's motion, and it is derived here purely from the stationarity of the rotor action. The same calculation with the body-frame angular velocity replaced by the space-frame one gives the equivalent form $\tilde u(t)=\exp(+\tfrac12\vec\omega_s t)\tilde u(0)$. The rigid-body article takes this result as its starting point and adds the inertia and the torque.
 
 The rotor action is the second reason the biquaternion formulation is useful for the action principle: it is a functional on a noncommutative group, its extremals are the geodesics, and the algebra computes them in closed form.
 
@@ -321,7 +321,7 @@ per real component. The determinant is therefore **linear** in $T$, and the fluc
 
 ### Rotor Paths and the Geometric Phase of the Sum
 
-The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde u(t)=\tilde u(0)\exp(+\tfrac12\tilde\omega_bt)$, and about each of them the fluctuation operator is again built from the biquaternion norm. The group of unit quaternions is compact and not simply connected, $\pi_x(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $\exp(iS[\tilde u_c]/\hbar)$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its **holonomy**: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.
+The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde u(t)=\tilde u(0)\exp(+\tfrac12\vec\omega_bt)$, and about each of them the fluctuation operator is again built from the biquaternion norm. The group of unit quaternions is compact and not simply connected, $\pi_x(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $\exp(iS[\tilde u_c]/\hbar)$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its **holonomy**: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.
 
 ## The Hamilton–Jacobi Equation and the Classical Phase
 
@@ -354,7 +354,7 @@ The action principle and the classical limit as stationary phase take the follow
 - Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt}\partial L/\partial\left(d\tilde q/dt\right)-\partial L/\partial\tilde q=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt)-H]dt$ has Hamilton's equations as its critical-point equations.
 - The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/dt^2-V''\delta\tilde q$ and the geodesic-deviation equation $md^2\xi/dt^2+V''\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
-- The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt\rangle_{\natural}dt$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/dt^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(t)=\tilde u(0)\exp(+\tfrac12\tilde\omega_bt)$: the free rigid body's motion.
+- The free rotor action $\frac{\lambda}{2}\int \langle\,d\tilde u/dt\rangle_{\natural}dt$ on the group of unit quaternions has the geodesic equation $\mathrm{Ve}(d^2\tilde u/dt^2\tilde u^{\natural})=0$, whose solutions are the one-parameter subgroups $\tilde u(t)=\tilde u(0)\exp(+\tfrac12\vec\omega_bt)$: the free rigid body's motion.
 - The stationary-phase lemma evaluates an oscillatory sum over trajectories as a sum over the critical points of the action, weighted by $\exp(iS[\tilde q_c]/\hbar)$ and the fluctuation factor. The classical content is the identification of the critical points with the classical paths; the statement is a theorem about an integral and is not a quantisation.
 - The action as a function of its endpoint is Hamilton's principal function, and its eikonal equation is the Hamilton–Jacobi equation $\partial/\partial t\,W+H(\tilde q,\partial W/\partial\tilde q)=0$.
 
@@ -375,7 +375,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $\xi$ | Deviation field; $\mathcal{J}\xi=0$ is the Jacobi/geodesic-deviation equation |
 | $\langle\tilde q\rangle_{\natural} = \langle\tilde q,\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
 | $\tilde u\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde u\rangle_{\natural}=e_t$ | Rotor configuration |
-| $\tilde\omega_b,\tilde\omega_s$ | Body- and space-frame angular velocities |
+| $\vec\omega_b,\vec\omega_s$ | Body- and space-frame angular velocities |
 | $W(\tilde q,t)$ | Hamilton's principal function |
 | $\hbar$ | Phase scale of the oscillatory integral; asymptotic parameter only |
 | $A[\tilde q_c]$ | Fluctuation (van Vleck) prefactor |

@@ -22,7 +22,7 @@ Two warnings are in order at the outset, both inherited from the companion artic
 
 First, the mathematics below is **standard quantum information theory** transcribed into biquaternion notation. Nothing here depends on the physical hypothesis that $\mathbb{M}_+$ is a distinct sector of the world. The reformulation is structural: it says where the objects of quantum computation live in the algebra and which algebraic operation each circuit ingredient is.
 
-Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions have the same form $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, but the condition on the acting element is different. The material-sector rotor satisfies the **unit-norm** condition $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ and generates $SL(2,\mathbb{C})$; a gate satisfies the **matrix-unitarity** condition $\tilde{U}\tilde{U}^{*} = e_t$ and generates $\mathrm{U}(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^2 \neq e_t$: it is a perfectly good rotor on $\mathbb{M}_-$ but **not** a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.
+Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions have the same form $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, but the condition on the acting element is different. The material-sector rotor satisfies the **unit-norm** condition $\tilde U\tilde U^{\natural} = e_t$ and generates $SL(2,\mathbb{C})$; a gate satisfies the **matrix-unitarity** condition $\tilde{U}\tilde{U}^{*} = e_t$ and generates $\mathrm{U}(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde U\tilde U^{*} = \tilde U^2 \neq e_t$: it is a perfectly good rotor on $\mathbb{M}_-$ but **not** a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.
 
 The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.
 
@@ -69,13 +69,13 @@ The condition $\tilde{U}\tilde{U}^{*} = e_t$ must not be confused with the unit-
 The distinction is visible in a single example. A **boost biquaternion**
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
+\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
 $$
 
-is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and has unit norm, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$. Hence $\tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^2 \neq e_t$, and conjugation by $\tilde{\Lambda}$ does not preserve the trace:
+is Hermitian, $\tilde U^{*} = \tilde U$, and has unit norm, $\tilde U\tilde U^{\natural} = e_t$. Hence $\tilde U\tilde U^{*} = \tilde U^2 \neq e_t$, and conjugation by $\tilde U$ does not preserve the trace:
 
 $$
-\mathrm{Tr}\!\left(\tilde{\Lambda}\tilde{Ϛ}\tilde{\Lambda}^{*}\right) \neq \mathrm{Tr}(\tilde{Ϛ}) \quad \text{in general}.
+\mathrm{Tr}\!\left(\tilde U\tilde{Ϛ}\tilde U^{*}\right) \neq \mathrm{Tr}(\tilde{Ϛ}) \quad \text{in general}.
 $$
 
 A boost is a rotor on the material sector $\mathbb{M}_-$ and **not** a gate on the informational sector $\mathbb{M}_+$. The distinction is not a technicality: it is the algebraic expression of the fact that the Lorentz group and the gate group are different groups inside one algebra, related to the two complementary subspaces.
@@ -84,10 +84,10 @@ The two actions are collected here for contrast.
 
 | | Material sector (Lorentz) | Informational sector (gates) |
 |---|---|---|
-| Acting element | $\tilde{\Lambda}\in\mathbb{B}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ | $\tilde{U}\in\mathbb{B}$, $\tilde{U}\tilde{U}^{*} = e_t$ |
+| Acting element | $\tilde U\in\mathbb{B}$, $\tilde U\tilde U^{\natural} = e_t$ | $\tilde{U}\in\mathbb{B}$, $\tilde{U}\tilde{U}^{*} = e_t$ |
 | Group | $SL(2,\mathbb{C})$ | $\mathrm{U}(2)$ |
 | Acting on | $\tilde{Q}\in\mathbb{M}_-$ | $\tilde{Ϛ}\in\mathbb{M}_+$ |
-| Action | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | $\tilde{Ϛ}\mapsto\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ |
+| Action | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | $\tilde{Ϛ}\mapsto\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ |
 | Pure boost | Hermitian, in $\mathbb{M}_+$, not unitary | not a gate |
 
 ### The Structure of the Gate Group
@@ -488,7 +488,7 @@ The channel set is convex, with the gates among its extreme points; the companio
 
 ## Summary
 
-A gate in the biquaternion framework is a **unitary element** $\tilde{U}\in\mathbb{B}$ with $\tilde{U}\tilde{U}^{*} = e_t$, acting on a state $\tilde{Ϛ}\in\mathbb{M}_+$ by **rotor conjugation** $\tilde{Ϛ}\mapsto\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $\mathrm{U}(2) = \mathrm{U}(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde{U}\tilde{U}^{*} = e_t$ is **not** the unit-norm condition $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ of the Lorentz rotors: a boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$.
+A gate in the biquaternion framework is a **unitary element** $\tilde{U}\in\mathbb{B}$ with $\tilde{U}\tilde{U}^{*} = e_t$, acting on a state $\tilde{Ϛ}\in\mathbb{M}_+$ by **rotor conjugation** $\tilde{Ϛ}\mapsto\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$. This is exactly the class of channels of Kraus rank one, and exactly the reversible, purity-preserving state maps. The gate group is $\mathrm{U}(2) = \mathrm{U}(1)\cdot SU(2)$: every gate is a central phase times a rotation, and the phase is unobservable, so the effective group is $PU(2)\cong SO(3)$ acting on the Bloch ball. The condition $\tilde{U}\tilde{U}^{*} = e_t$ is **not** the unit-norm condition $\tilde U\tilde U^{\natural} = e_t$ of the Lorentz rotors: a boost is a rotor on $\mathbb{M}_-$ but not a gate on $\mathbb{M}_+$.
 
 The standard single-qubit gate set has explicit representatives: the Pauli gates are $\tilde X=i\vec e_x$, $\tilde Y=i\vec e_y$, $\tilde Z=i\vec e_z$; the Hadamard is $\tilde{H}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$; the phase and $T$ gates are the rotations $\tfrac{1}{\sqrt2}(e_t+\vec e_z)$ and $\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$; a general gate is $\exp(i\phi)(\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r})$. Apart from the identity gate, the Hermitian gates are the $\pi$-rotations $\pm i\vec u_{\mathrm r}$; the Pauli and Hadamard gates are of this type, the phase and $T$ gates are not.
 
@@ -512,7 +512,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | State of a qubit |
 | $\tilde\Pi_{1,2}(\vec u_{\mathrm r})=\tfrac12(e_t\pm i\vec u_{\mathrm r})$ | Complementary idempotents |
 | $\tilde{U}\tilde{U}^{*}=e_t$ | Gate (matrix-unitary element); $\mathrm{U}(2)$ |
-| $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$ | Lorentz rotor (unit norm); $SL(2,\mathbb{C})$, not a gate |
+| $\tilde U\tilde U^{\natural}=e_t$ | Lorentz rotor (unit norm); $SL(2,\mathbb{C})$, not a gate |
 | $\Phi_{\tilde{U}}(\tilde{Ϛ})=\tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ | Rotor conjugation (gate action) |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\tilde X=i\vec e_x,\ \tilde Y=i\vec e_y,\ \tilde Z=i\vec e_z$ | Pauli gates |

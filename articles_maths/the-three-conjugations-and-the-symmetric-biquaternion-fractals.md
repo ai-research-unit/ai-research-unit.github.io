@@ -8,7 +8,7 @@ The four conjugations, their fixed subspaces and the involution group are *The G
 
 The article owns the three conjugations used for symmetry (the fourth is excluded, with the reason), the equivariance restated for the group, the classification of the stabiliser and the resulting symmetric families, the extra central inversion, and the identification of the symmetry subspaces with the remarkable subspaces. It does not re-derive the conjugations or the equivariance.
 
-**Standing convention.** ${}^{\natural}$ is quaternion conjugation, $\bar{\cdot}$ complex conjugation, ${}^{*}$ Hermitian conjugation and $\flat$ anti-Hermitian conjugation, so that ${}^{*}={}^{\natural}\bar{\cdot}$, $\flat=-{}^{*}$, and the four maps form the group of involutions $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$. $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$.
+**Standing convention.** ${}^{\natural}$ is quaternion conjugation, $\bar{\cdot}$ complex conjugation, ${}^{*}$ Hermitian conjugation and $\flat$ anti-Hermitian conjugation, so that ${}^{*}={}^{\natural}\bar{\cdot}$, $\flat=-{}^{*}$, and the four maps form the group of involutions $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$. $F_{\tilde C}(\tilde Q_1)=\tilde Q_1^2+\tilde C$.
 
 ## The Three Conjugations Used and the One Excluded
 
@@ -20,15 +20,15 @@ $$
 
 where the left action of $g$ on the parameter is the definition of $g(\tilde C)$. Hence $g(\mathcal K_{\tilde C})=\mathcal K_{g(\tilde C)}$ and $g(J_{\tilde C})=J_{g(\tilde C)}$.
 
-**Proof.** Each of the four maps is a ring endomorphism in the sense of the conjugation articles, so $g(\tilde Q^2)=(g\tilde Q)^2$, and each preserves the Euclidean norm, hence boundedness. Applying $g$ to $\tilde Q^2+\tilde C$ gives the identity. This is the equivariance theorem of *The Biquaternion Quadratic Map and Its Julia Sets*.
+**Proof.** Each of the four maps is a ring endomorphism in the sense of the conjugation articles, so $g(\tilde Q_1^2)=(g\tilde Q_1)^2$, and each preserves the Euclidean norm, hence boundedness. Applying $g$ to $\tilde Q_1^2+\tilde C$ gives the identity. This is the equivariance theorem of *The Biquaternion Quadratic Map and Its Julia Sets*.
 
 **Remark (the fourth conjugation is excluded by a sign).** The natural, the complex and the Hermitian conjugations are anti-automorphisms or automorphisms of the ring; the anti-Hermitian conjugation is an anti-automorphism only up to the central sign,
 
 $$
-(\tilde Q_2\tilde Q)^{\flat}=-\tilde Q^{\flat}\tilde Q_2^{\flat} ,
+(\tilde Q_2\tilde Q_1)^{\flat}=-\tilde Q_1^{\flat}\tilde Q_2^{\flat} ,
 $$
 
-so that $(\tilde Q^2)^{\flat}=-(\tilde Q^{\flat})^2$ and $\flat\circ F_{\tilde C}=F^{-}_{\flat(\tilde C)}\circ\flat$, where $F^{-}_{\tilde C'}(\tilde Q)=-\tilde Q^2+\tilde C'$ is the *odd* quadratic family. **The anti-Hermitian conjugation relates the even family to the odd family, not to itself, and is therefore not a symmetry of the even fractal.** The three conjugations ${}^{\natural},\bar{\cdot},{}^{*}$ are the ones the article uses.
+so that $(\tilde Q_1^2)^{\flat}=-(\tilde Q_1^{\flat})^2$ and $\flat\circ F_{\tilde C}=F^{-}_{\flat(\tilde C)}\circ\flat$, where $F^{-}_{\tilde C'}(\tilde Q_1)=-\tilde Q_1^2+\tilde C'$ is the *odd* quadratic family. **The anti-Hermitian conjugation relates the even family to the odd family, not to itself, and is therefore not a symmetry of the even fractal.** The three conjugations ${}^{\natural},\bar{\cdot},{}^{*}$ are the ones the article uses.
 
 ## The Stabiliser and the Symmetry Group
 
@@ -38,7 +38,7 @@ $$
 \Gamma_{\tilde C}=G_{\tilde C}\times\{\pm\mathrm{id}\} ,
 $$
 
-where $\mathrm{id}$ acts as the identity and $-\mathrm{id}$ as $\tilde Q\mapsto-\tilde Q$.
+where $\mathrm{id}$ acts as the identity and $-\mathrm{id}$ as $\tilde Q_1\mapsto-\tilde Q_1$.
 
 **Theorem (the stabiliser).** $G_{\tilde C}$ is one of the following.
 
@@ -50,9 +50,9 @@ where $\mathrm{id}$ acts as the identity and $-\mathrm{id}$ as $\tilde Q\mapsto-
 
 **Proof.** The fixed subspace of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ (*The Group of Involutions*, *Introduction to the Remarkable Subspaces*). An element fixed by a set of involutions lies in the intersection of their fixed subspaces; the intersections are $\mathbb{C}e_t\cap\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_t$, $\mathbb{C}e_t$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{B}$, for the five cases, and the real central elements are exactly the real multiples of $e_t$.
 
-**Theorem (the even symmetry).** For every parameter, $\mathcal K_{\tilde C}$ and $J_{\tilde C}$ are invariant under $\tilde Q\mapsto-\tilde Q$, and the full symmetry group of the two sets contains $\Gamma_{\tilde C}$.
+**Theorem (the even symmetry).** For every parameter, $\mathcal K_{\tilde C}$ and $J_{\tilde C}$ are invariant under $\tilde Q_1\mapsto-\tilde Q_1$, and the full symmetry group of the two sets contains $\Gamma_{\tilde C}$.
 
-**Proof.** $F_{\tilde C}(-\tilde Q)=(-\tilde Q)^2+\tilde C=\tilde Q^2+\tilde C=F_{\tilde C}(\tilde Q)$, because the square is an even map; hence $-\tilde Q$ and $\tilde Q$ have the same orbit after the first term, and one orbit is bounded exactly when the other is. The invariance under $G_{\tilde C}$ is the equivariance theorem restricted to the stabiliser. The two families of maps commute: $-\mathrm{id}$ is $(-\mathrm{id})\mathrm{id}$-linear and composes with the conjugations to the conjugations.
+**Proof.** $F_{\tilde C}(-\tilde Q_1)=(-\tilde Q_1)^2+\tilde C=\tilde Q_1^2+\tilde C=F_{\tilde C}(\tilde Q_1)$, because the square is an even map; hence $-\tilde Q_1$ and $\tilde Q_1$ have the same orbit after the first term, and one orbit is bounded exactly when the other is. The invariance under $G_{\tilde C}$ is the equivariance theorem restricted to the stabiliser. The two families of maps commute: $-\mathrm{id}$ is $(-\mathrm{id})\mathrm{id}$-linear and composes with the conjugations to the conjugations.
 
 ## The Symmetric Families
 
@@ -84,9 +84,9 @@ So the Julia set of the complex quadratic map and that of its conjugate paramete
 
 ## The Central Inversion and the Antipodal Structure
 
-**Remark (the antipodal quotient).** The even symmetry $\tilde Q\mapsto-\tilde Q$ is present for every parameter and is not a symmetry of the algebra but of the map; the quotient by it is the natural projective picture of the subject. **Every biquaternion Julia set is antipodally symmetric, and a fundamental domain for the inversion is one half of the space; a picture of the whole slice always shows two copies.** The symmetry is a symmetry of the map at every parameter and is not a statement about the parameter: $J_{\tilde C}$ and $J_{-\tilde C}$ are different sets in general, and only the map is invariant under the inversion, not the family.
+**Remark (the antipodal quotient).** The even symmetry $\tilde Q_1\mapsto-\tilde Q_1$ is present for every parameter and is not a symmetry of the algebra but of the map; the quotient by it is the natural projective picture of the subject. **Every biquaternion Julia set is antipodally symmetric, and a fundamental domain for the inversion is one half of the space; a picture of the whole slice always shows two copies.** The symmetry is a symmetry of the map at every parameter and is not a statement about the parameter: $J_{\tilde C}$ and $J_{-\tilde C}$ are different sets in general, and only the map is invariant under the inversion, not the family.
 
-**Remark (the quaternion slice as the visible symmetry).** In the quaternion slice $\mathbb{H}_{\mathbb{B}}$ the symmetry under ${}^{\natural}$ and $\bar{\cdot}$ is the classical conjugacy symmetry of the quaternion Julia sets, and the symmetry under $\tilde Q\mapsto-\tilde Q$ is the antipodal one; the two generate a group of order four acting on the three-dimensional picture. **The quaternion pictures of the subject are the pictures of the quaternion-symmetric family, and their symmetry is a slice of the full group and not the full group.**
+**Remark (the quaternion slice as the visible symmetry).** In the quaternion slice $\mathbb{H}_{\mathbb{B}}$ the symmetry under ${}^{\natural}$ and $\bar{\cdot}$ is the classical conjugacy symmetry of the quaternion Julia sets, and the symmetry under $\tilde Q_1\mapsto-\tilde Q_1$ is the antipodal one; the two generate a group of order four acting on the three-dimensional picture. **The quaternion pictures of the subject are the pictures of the quaternion-symmetric family, and their symmetry is a slice of the full group and not the full group.**
 
 ## Summary
 
@@ -101,7 +101,7 @@ The quadratic map is equivariant under three of the four conjugations, and the f
 | $G_{\tilde C}$ | the stabiliser of the parameter |
 | $\Gamma_{\tilde C}=G_{\tilde C}\times\{\pm\mathrm{id}\}$ | the even symmetry group |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
-| $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ | the quadratic family |
+| $F_{\tilde C}(\tilde Q_1)=\tilde Q_1^2+\tilde C$ | the quadratic family |
 | $J_{\tilde C}$, $\mathcal K_{\tilde C}$ | the Julia set and the filled Julia set |
 
 ## Further Reading

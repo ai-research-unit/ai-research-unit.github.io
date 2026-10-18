@@ -2,43 +2,43 @@
 
 ## Introduction
 
-An indefinite inner product is a definite one together with an involution $J$ of square one, self-adjoint for the indefinite form, such that $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',J\tilde{Q}\rangle_{*}$ and $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}>0$ off zero: the **fundamental symmetry** (*The Fundamental Symmetry*). For the general quaternionic sesquilinear form of the biquaternion algebra that involution is already at hand in the Algebra layer: it is the **natural conjugation** ${}^{\natural}$, which negates the vector units and fixes the centre. The bridge identity is
+An indefinite inner product is a definite one together with an involution $J$ of square one, self-adjoint for the indefinite form, such that $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J\tilde{Q}_1\rangle_{*}$ and $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\langle\tilde{Q}_1,J\tilde{Q}_1\rangle_{\natural*}>0$ off zero: the **fundamental symmetry** (*The Fundamental Symmetry*). For the general quaternionic sesquilinear form of the biquaternion algebra that involution is already at hand in the Algebra layer: it is the **natural conjugation** ${}^{\natural}$, which negates the vector units and fixes the centre. The bridge identity is
 
 $$
-\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',\tilde{Q}^{\natural}\rangle_{*},
+\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,\tilde{Q}_1^{\natural}\rangle_{*},
 $$
 
 with $\langle\cdot,\cdot\rangle_{*}$ the positive definite Hermitian inner product of the dagger form. This article fixes that symmetry, its eigenspaces — the centre and the vector subspace — the parametrisation of all the other fundamental symmetries by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace, and the fact that ${}^{\natural}$ is the only fundamental symmetry that respects the algebra as an anti-automorphism.
 
 The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
 
-**Conventions.** As in the companion articles: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, general quaternionic sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, with the **sign vector** $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that $(J\tilde{Q})_\mu=\varepsilon_\mu Q_\mu$, the dagger acts on the coefficients by $Q_\mu^{*}=\varepsilon_\mu\bar Q_\mu$, and the form is the four terms $\bar Q_tQ'_t-\bar Q_xQ'_x-\bar Q_yQ'_y-\bar Q_zQ'_z$ written compactly with $\sum_\mu$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, which carries ${}^{\natural}$ to the adjugate, $\mathsf{M}_2(\tilde{Q}^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q})$ (*The Matrix Element Representation and the Biquaternion Dynamics*).
+**Conventions.** As in the companion articles: $\tilde{Q}_1=\sum_\mu Q_{1,\mu} e_\mu$, $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^{2}$, $\|\tilde{Q}_1\|_E=(\sum_\mu|Q_{1,\mu}|^{2})^{1/2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, general quaternionic sesquilinear form $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}_1^{\natural*}\tilde{Q}_2)$, with the **sign vector** $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that $(J\tilde{Q}_1)_\mu=\varepsilon_\mu Q_{1,\mu}$, the dagger acts on the coefficients by $Q_{1,\mu}^{*}=\varepsilon_\mu\bar Q_{1,\mu}$, and the form is the four terms $\bar Q_tQ_{2t}-\bar Q_xQ_{2x}-\bar Q_yQ_{2y}-\bar Q_zQ_{2z}$ written compactly with $\sum_\mu$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, which carries ${}^{\natural}$ to the adjugate, $\mathsf{M}_2(\tilde{Q}_1^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q}_1)$ (*The Matrix Element Representation and the Biquaternion Dynamics*).
 
 ## The Natural Conjugation as a Fundamental Symmetry
 
 **Theorem.** The natural conjugation $J:= {}^{\natural}$ is a fundamental symmetry of the general quaternionic sesquilinear form:
 
 $$
-J^{2}=\mathrm{id},\qquad \langle\tilde{Q}',J\tilde{Q}\rangle_{\natural*}=\langle J\tilde{Q}',\tilde{Q}\rangle_{\natural*},\qquad \langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\|\tilde{Q}\|_E^{2}>0\ (\tilde{Q}\neq0),
+J^{2}=\mathrm{id},\qquad \langle\tilde{Q}_2,J\tilde{Q}_1\rangle_{\natural*}=\langle J\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*},\qquad \langle\tilde{Q}_1,J\tilde{Q}_1\rangle_{\natural*}=\|\tilde{Q}_1\|_E^{2}>0\ (\tilde{Q}_1\neq0),
 $$
 
 and the definite form it induces is the Hermitian inner product,
 
 $$
-\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',J\tilde{Q}\rangle_{*}=\langle\tilde{Q}',\tilde{Q}^{\natural}\rangle_{*} .
+\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J\tilde{Q}_1\rangle_{*}=\langle\tilde{Q}_2,\tilde{Q}_1^{\natural}\rangle_{*} .
 $$
 
-**Proof.** $J$ is $\mathbb{C}$-linear and an involution because it multiplies each coefficient $Q_\mu$ by the real sign $\varepsilon_\mu$. For the self-adjointness, $\langle\tilde{Q}',J\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',J^{2}\tilde{Q}\rangle_{*}=\langle\tilde{Q}',\tilde{Q}\rangle_{*}$ and $\langle J\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle J\tilde{Q}',J\tilde{Q}\rangle_{*}=\sum_\mu\varepsilon_\mu^{2}Q_\mu^{*}Q'_\mu=\langle\tilde{Q}',\tilde{Q}\rangle_{*}$, using $(J\tilde{Q})_\mu=\varepsilon_\mu Q_\mu$; the two agree. For positivity, $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\sum_\mu\varepsilon_\mu^{2}|Q_\mu|^{2}=\sum_\mu|Q_\mu|^{2}=\|\tilde{Q}\|_E^{2}$, which is positive off zero. The bridge identity is the first of the two computations.
+**Proof.** $J$ is $\mathbb{C}$-linear and an involution because it multiplies each coefficient $Q_{1,\mu}$ by the real sign $\varepsilon_\mu$. For the self-adjointness, $\langle\tilde{Q}_2,J\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J^{2}\tilde{Q}_1\rangle_{*}=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$ and $\langle J\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle J\tilde{Q}_2,J\tilde{Q}_1\rangle_{*}=\sum_\mu\varepsilon_\mu^{2}Q_{1,\mu}^{*}Q_{2,\mu}=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$, using $(J\tilde{Q}_1)_\mu=\varepsilon_\mu Q_{1,\mu}$; the two agree. For positivity, $\langle\tilde{Q}_1,J\tilde{Q}_1\rangle_{\natural*}=\sum_\mu\varepsilon_\mu^{2}|Q_{1,\mu}|^{2}=\sum_\mu|Q_{1,\mu}|^{2}=\|\tilde{Q}_1\|_E^{2}$, which is positive off zero. The bridge identity is the first of the two computations.
 
 **Corollary ($J$ is an automorphism of both forms).** $J$ preserves the general quaternionic sesquilinear form and the general plain sesquilinear form,
 
 $$
-\langle J\tilde{Q}',J\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*},\qquad \langle J\tilde{Q}',J\tilde{Q}\rangle_{*}=\langle\tilde{Q}',\tilde{Q}\rangle_{*},
+\langle J\tilde{Q}_2,J\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*},\qquad \langle J\tilde{Q}_2,J\tilde{Q}_1\rangle_{*}=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*},
 $$
 
-and it is orthogonal for the definite structure, $\|J\tilde{Q}\|_E=\|\tilde{Q}\|_E$.
+and it is orthogonal for the definite structure, $\|J\tilde{Q}_1\|_E=\|\tilde{Q}_1\|_E$.
 
-**Proof.** Both forms are built from $|Q_\mu|^{2}$ and from the off-diagonal coefficient pairings; $J$ permutes the coefficients among themselves up to the real signs $\varepsilon_\mu$, and $\varepsilon_\mu^{2}=1$ removes them from every diagonal expression, while the off-diagonal pairing is unchanged because the same sign multiplies both factors. Orthogonality is the third identity of the theorem.
+**Proof.** Both forms are built from $|Q_{1,\mu}|^{2}$ and from the off-diagonal coefficient pairings; $J$ permutes the coefficients among themselves up to the real signs $\varepsilon_\mu$, and $\varepsilon_\mu^{2}=1$ removes them from every diagonal expression, while the off-diagonal pairing is unchanged because the same sign multiplies both factors. Orthogonality is the third identity of the theorem.
 
 ## The Eigenspaces and the Fundamental Decomposition
 
@@ -46,7 +46,7 @@ and it is orthogonal for the definite structure, $\|J\tilde{Q}\|_E=\|\tilde{Q}\|
 
 $$
 \mathbb{B}_{+}=\ker(J-\mathrm{id})=\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{e_t\},\qquad
-\mathbb{B}_{-}=\ker(J+\mathrm{id})=\mathbb{V}_{\mathbb{B}}=\{Q_t=0\},
+\mathbb{B}_{-}=\ker(J+\mathrm{id})=\mathbb{V}_{\mathbb{B}}=\{Q_{1t}=0\},
 $$
 
 the **centre** and the **vector subspace**; they are the positive and the negative definite parts of the fundamental decomposition
@@ -88,19 +88,19 @@ The general theory attaches three numbers to an indefinite inner product (*Krein
 **Proposition.** ${}^{\natural}$ is a $\mathbb{C}$-linear algebra **anti-automorphism** of order two: ${}^{\natural}(e_t)=e_t$ and
 
 $$
-(\tilde{Q}\tilde Q_1)^{\natural}=\tilde Q_1^{\natural}\tilde{Q}^{\natural}.
+(\tilde{Q}_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde{Q}_1^{\natural}.
 $$
 
 It commutes with the complex conjugation and with the dagger, ${}^{\natural}\bar{\cdot}=\bar{\cdot}\,{}^{\natural}$ and ${}^{\natural}{}^{*}={}^{*}{}^{\natural}$, and on the left and right multiplications it exchanges the sides,
 
 $$
-{}^{\natural}\,L_{\tilde{Q}}\,{}^{\natural}=R_{\tilde{Q}^{\natural}},\qquad
-{}^{\natural}\,R_{\tilde Q_1}\,{}^{\natural}=L_{\tilde Q_1^{\natural}}.
+{}^{\natural}\,L_{\tilde{Q}_1}\,{}^{\natural}=R_{\tilde{Q}_1^{\natural}},\qquad
+{}^{\natural}\,R_{\tilde Q_2}\,{}^{\natural}=L_{\tilde Q_2^{\natural}}.
 $$
 
-**Proof.** ${}^{\natural}$ is quaternion conjugation on the coefficients, and quaternion conjugation reverses products; on the units, $\vec e_\mu^{\natural}=-\vec e_\mu$ and $(-\vec e_\mu)(-\vec e_\nu)=\vec e_\mu \vec e_\nu=-(\vec e_\nu \vec e_\mu)$ for $\mu\neq\nu$. The commutation with $\bar{\cdot}$ is that $i$ is fixed and $\bar{\cdot}$ acts on the coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ commutes with ${}^{\natural}$ because $\bar{\cdot}$ does and ${}^{\natural}{}^{2}=\mathrm{id}$. For the last identities, $\left({}^{\natural}L_{\tilde{Q}}{}^{\natural}\right)(\tilde{P})={}^{\natural}(\tilde{Q}\,\tilde{P}^{\natural})=\tilde{P}\,\tilde{Q}^{\natural}=R_{\tilde{Q}^{\natural}}\tilde{P}$, using the anti-automorphism; the second is the same computation.
+**Proof.** ${}^{\natural}$ is quaternion conjugation on the coefficients, and quaternion conjugation reverses products; on the units, $\vec e_\mu^{\natural}=-\vec e_\mu$ and $(-\vec e_\mu)(-\vec e_\nu)=\vec e_\mu \vec e_\nu=-(\vec e_\nu \vec e_\mu)$ for $\mu\neq\nu$. The commutation with $\bar{\cdot}$ is that $i$ is fixed and $\bar{\cdot}$ acts on the coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ commutes with ${}^{\natural}$ because $\bar{\cdot}$ does and ${}^{\natural}{}^{2}=\mathrm{id}$. For the last identities, $\left({}^{\natural}L_{\tilde{Q}_1}{}^{\natural}\right)(\tilde{P})={}^{\natural}(\tilde{Q}_1\,\tilde{P}^{\natural})=\tilde{P}\,\tilde{Q}_1^{\natural}=R_{\tilde{Q}_1^{\natural}}\tilde{P}$, using the anti-automorphism; the second is the same computation.
 
-**Remark (the matrix picture).** Under $\mathsf{M}_2$ the natural conjugation is the adjugate: $\mathsf{M}_2(\tilde{Q}^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q})=\mathsf{A}\,\mathsf{M}_2(\tilde{Q})^{\mathsf T}\mathsf{A}^{-1}$ with $\mathsf{A}=i\sigma_2$, and the anti-automorphism property is the classical identity $\mathrm{adj}(MN)=\mathrm{adj}(N)\mathrm{adj}(M)$. The fundamental symmetry is therefore the linear operator $X\mapsto\mathrm{adj}X=\mathsf{A}X^{\mathsf T}\mathsf{A}^{-1}$ on $M_2(\mathbb{C})$.
+**Remark (the matrix picture).** Under $\mathsf{M}_2$ the natural conjugation is the adjugate: $\mathsf{M}_2(\tilde{Q}_1^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q}_1)=\mathsf{A}\,\mathsf{M}_2(\tilde{Q}_1)^{\mathsf T}\mathsf{A}^{-1}$ with $\mathsf{A}=i\sigma_2$, and the anti-automorphism property is the classical identity $\mathrm{adj}(MN)=\mathrm{adj}(N)\mathrm{adj}(M)$. The fundamental symmetry is therefore the linear operator $X\mapsto\mathrm{adj}X=\mathsf{A}X^{\mathsf T}\mathsf{A}^{-1}$ on $M_2(\mathbb{C})$.
 
 ## The Uniqueness of the Symmetry, and the Others
 
@@ -120,7 +120,7 @@ $$
 
 **Proof.** By the general parametrisation, the fundamental symmetries correspond to the maximal positive definite subspaces, and a maximal positive definite subspace of this Krein space has complex dimension one because the positive index is one; each such line is the graph of a $\mathbb{C}$-linear map $T:\mathbb{C}_{\mathbb{B}}\to\mathbb{V}_{\mathbb{B}}$, that is, is generated by $e_t+\tilde S$ with $\tilde S=T(e_t)$; and it is positive definite exactly when $\|T\|<1$, which is $\|\tilde S\|_E<1$ because $\|e_t\|_E=1$. Distinct $\tilde S$ give distinct lines and distinct symmetries.
 
-**Theorem ($\natural$ is the only one that respects the algebra).** The natural conjugation ${}^{\natural}=J_0$ is the unique fundamental symmetry of the general quaternionic sesquilinear form that is a $\mathbb{C}$-algebra anti-automorphism, equivalently the unique one that fixes the identity and satisfies $J(\tilde{Q}\tilde Q_1)=J(\tilde Q_1)J(\tilde{Q})$. In the parametrisation above it is the member $\tilde S=0$.
+**Theorem ($\natural$ is the only one that respects the algebra).** The natural conjugation ${}^{\natural}=J_0$ is the unique fundamental symmetry of the general quaternionic sesquilinear form that is a $\mathbb{C}$-algebra anti-automorphism, equivalently the unique one that fixes the identity and satisfies $J(\tilde{Q}_1\tilde Q_2)=J(\tilde Q_2)J(\tilde{Q}_1)$. In the parametrisation above it is the member $\tilde S=0$.
 
 **Proof.** Let $J$ be a fundamental symmetry and a unital $\mathbb{C}$-algebra anti-automorphism. The $+1$-eigenspace $W$ of $J$ is a complex subspace of complex dimension one (the positive index), and it contains $e_t$, because a unital anti-automorphism of a bijective-involution type satisfies $J(e_t)=J(e_t^{2})=J(e_t)^{2}$ with $J$ bijective, whence $J(e_t)=e_t$. A one-dimensional complex subspace containing $e_t$ is $\mathbb{C}_{\mathbb{B}}$, so $W=\mathbb{C}_{\mathbb{B}}$, and then $J$ is $+\mathrm{id}$ on the centre and $-\mathrm{id}$ on the vector subspace, which is ${}^{\natural}$. Conversely ${}^{\natural}$ is such a symmetry by the two preceding sections.
 
@@ -130,7 +130,7 @@ $$
 
 ## The Indefinite Adjoint and the Order
 
-**Definition.** For a $\mathbb{C}$-linear operator $T$ on $\mathbb{B}$ the **$J$-adjoint** is $T^{\dagger}=J\,T^{*}J$, where $T^{*}$ is the adjoint for the general plain sesquilinear form; it is the unique operator with $\langle\tilde{Q}',T\tilde{Q}\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}',\tilde{Q}\rangle_{\natural*}$ (*J-Self-Adjoint and J-Unitary Operators*).
+**Definition.** For a $\mathbb{C}$-linear operator $T$ on $\mathbb{B}$ the **$J$-adjoint** is $T^{\dagger}=J\,T^{*}J$, where $T^{*}$ is the adjoint for the general plain sesquilinear form; it is the unique operator with $\langle\tilde{Q}_2,T\tilde{Q}_1\rangle_{\natural*}=\langle T^{\dagger}\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}$ (*J-Self-Adjoint and J-Unitary Operators*).
 
 **Proposition (the dictionary).** The indefinite theory is the definite theory conjugated by $J$:
 
@@ -138,12 +138,12 @@ $$
 |---|---|
 | $T$ is $J$-self-adjoint, $T^{\dagger}=T$ | $JT$ is self-adjoint |
 | $T$ is $J$-unitary, $T^{\dagger}T=TT^{\dagger}=1$ | $JTJ$ is unitary |
-| $T$ is $J$-positive, $\langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0$ | $JT$ is positive |
+| $T$ is $J$-positive, $\langle\tilde{Q}_1,T\tilde{Q}_1\rangle_{\natural*}\geq0$ | $JT$ is positive |
 | the eigenspaces $\mathbb{C}_{\mathbb{B}},\mathbb{V}_{\mathbb{B}}$ | the $\pm1$-eigenspaces of $J$ |
 
-**Proof.** Each line is the substitution $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',J\tilde{Q}\rangle_{*}$ with $J^{2}=\mathrm{id}$; for the second, $T^{\dagger}T=1\iff JT^{*}JT=1\iff T^{*}JT=J\iff (JTJ)^{*}(JTJ)=1$.
+**Proof.** Each line is the substitution $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J\tilde{Q}_1\rangle_{*}$ with $J^{2}=\mathrm{id}$; for the second, $T^{\dagger}T=1\iff JT^{*}JT=1\iff T^{*}JT=J\iff (JTJ)^{*}(JTJ)=1$.
 
-**Corollary.** The $J$-positive cone contains $J$ itself, $\langle\tilde{Q},J\tilde{Q}\rangle_{\natural*}=\|\tilde{Q}\|_E^{2}\geq0$, while $J$ is not positive for the general plain sesquilinear form, its spectrum being $\{+1,-1\}$ with multiplicities $(2,6)$. So positive definiteness in the indefinite sense is a genuinely weaker notion, and the asymmetry is exactly the sign change of ${}^{\natural}$ on the vector subspace.
+**Corollary.** The $J$-positive cone contains $J$ itself, $\langle\tilde{Q}_1,J\tilde{Q}_1\rangle_{\natural*}=\|\tilde{Q}_1\|_E^{2}\geq0$, while $J$ is not positive for the general plain sesquilinear form, its spectrum being $\{+1,-1\}$ with multiplicities $(2,6)$. So positive definiteness in the indefinite sense is a genuinely weaker notion, and the asymmetry is exactly the sign change of ${}^{\natural}$ on the vector subspace.
 
 **Proof.** The first statement is the theorem; the spectrum of $J$ is the list of its eigenvalues with the dimension of the eigenspaces of the previous section.
 
@@ -163,17 +163,17 @@ $$
 
 ## Summary
 
-The **fundamental symmetry** of the general quaternionic sesquilinear form is the natural conjugation $J={}^{\natural}$: a $\mathbb{C}$-linear involution, self-adjoint for $\langle\cdot,\cdot\rangle_{\natural*}$, positive on $e_t$-lines, with the bridge $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',\tilde{Q}^{\natural}\rangle_{*}$. Its eigenspaces are the centre (positive, complex dimension one) and the vector subspace (negative, complex dimension three), so the fundamental decomposition is precisely the eigenspace splitting of one of the algebra's four involutions. ${}^{\natural}$ is a $\mathbb{C}$-algebra anti-automorphism (quaternion conjugation, the adjugate in the matrix model) and commutes with the complex conjugation and the dagger; it exchanges left and right multiplications. All the other fundamental symmetries are the involutions with positive part a positive definite line $\mathbb{C}(e_t+\tilde S)$, $\|\tilde S\|_E<1$, a family parametrised by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace; among them ${}^{\natural}$ is the unique one that is an anti-automorphism, equivalently the unique one fixing $e_t$. The $J$-adjoint $T^{\dagger}=JT^{*}J$ makes the indefinite operator theory the definite theory conjugated by $J$, and the $J$-positive cone contains $J$ itself. The negative index is $6$ over $\mathbb{R}$ and $3$ over $\mathbb{C}$, and the Pontryagin index $2$ over $\mathbb{R}$ and $1$ over $\mathbb{C}$; the fundamental symmetry $J$ exhibits one fundamental decomposition, and every other one is obtained from a maximal positive definite line.
+The **fundamental symmetry** of the general quaternionic sesquilinear form is the natural conjugation $J={}^{\natural}$: a $\mathbb{C}$-linear involution, self-adjoint for $\langle\cdot,\cdot\rangle_{\natural*}$, positive on $e_t$-lines, with the bridge $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,\tilde{Q}_1^{\natural}\rangle_{*}$. Its eigenspaces are the centre (positive, complex dimension one) and the vector subspace (negative, complex dimension three), so the fundamental decomposition is precisely the eigenspace splitting of one of the algebra's four involutions. ${}^{\natural}$ is a $\mathbb{C}$-algebra anti-automorphism (quaternion conjugation, the adjugate in the matrix model) and commutes with the complex conjugation and the dagger; it exchanges left and right multiplications. All the other fundamental symmetries are the involutions with positive part a positive definite line $\mathbb{C}(e_t+\tilde S)$, $\|\tilde S\|_E<1$, a family parametrised by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace; among them ${}^{\natural}$ is the unique one that is an anti-automorphism, equivalently the unique one fixing $e_t$. The $J$-adjoint $T^{\dagger}=JT^{*}J$ makes the indefinite operator theory the definite theory conjugated by $J$, and the $J$-positive cone contains $J$ itself. The negative index is $6$ over $\mathbb{R}$ and $3$ over $\mathbb{C}$, and the Pontryagin index $2$ over $\mathbb{R}$ and $1$ over $\mathbb{C}$; the fundamental symmetry $J$ exhibits one fundamental decomposition, and every other one is obtained from a maximal positive definite line.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $J={}^{\natural}$ | Fundamental symmetry; negates the vector units |
-| $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',J\tilde{Q}\rangle_{*}$ | The bridge to the general plain sesquilinear form |
+| $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\langle\tilde{Q}_2,J\tilde{Q}_1\rangle_{*}$ | The bridge to the general plain sesquilinear form |
 | $\mathbb{B}_{+}=\mathbb{C}_{\mathbb{B}}$, $\mathbb{B}_{-}=\mathbb{V}_{\mathbb{B}}$ | The $\pm1$-eigenspaces; centre and vector subspace |
-| $(\tilde{Q}\tilde Q_1)^{\natural}=\tilde Q_1^{\natural}\tilde{Q}^{\natural}$ | Anti-automorphism property |
-| ${}^{\natural}L_{\tilde{Q}}{}^{\natural}=R_{\tilde{Q}^{\natural}}$ | Exchange of the sides |
+| $(\tilde{Q}_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde{Q}_1^{\natural}$ | Anti-automorphism property |
+| ${}^{\natural}L_{\tilde{Q}_1}{}^{\natural}=R_{\tilde{Q}_1^{\natural}}$ | Exchange of the sides |
 | $\ell_{\tilde S}=\mathbb{C}(e_t+\tilde S)$, $\|\tilde S\|_E<1$ | General fundamental symmetry |
 | $T^{\dagger}=JT^{*}J$ | The $J$-adjoint |
 | $(n,m)=(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | The signature; $m$ the negative index, $\min(n,m)$ the Pontryagin index |

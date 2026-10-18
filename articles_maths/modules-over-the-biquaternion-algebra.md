@@ -40,7 +40,7 @@ the multiplication of the algebra itself.
 **Definition.** The left action and the right action of $\mathbb{B}$ on $(\mathbb{B},+)$, taken together, make it a **bimodule** ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$. The two actions commute,
 
 $$
-\tilde A(\tilde Q\tilde Q_4)=(\tilde A\tilde Q)\tilde Q_4 \qquad (\tilde A,\tilde Q_4,\tilde Q\in\mathbb{B}),
+\tilde Q_1(\tilde Q\tilde Q_4)=(\tilde Q_1\tilde Q)\tilde Q_4 \qquad (\tilde Q_1,\tilde Q_4,\tilde Q\in\mathbb{B}),
 $$
 
 which is the associativity of $\mathbb{B}$ once more: the two scalar multiplications of the bimodule are the two readings of one product.
@@ -95,7 +95,7 @@ $$
 
 given by $m\otimes\tilde Q\mapsto m\tilde Q$ and $\tilde Q\otimes m\mapsto \tilde Q m$, with $m$ an element of the module in each case. For bimodules the same elements are the two-sided identity, ${}_{S}M_{\mathbb{B}}\otimes_{\mathbb{B}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\cong{}_{S}M_{\mathbb{B}}$ and ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\otimes_{\mathbb{B}}{}_{\mathbb{B}}N_{T}\cong{}_{\mathbb{B}}N_{T}$, naturally in the outer module.
 
-**Proof.** The map $m\otimes\tilde Q\mapsto m\tilde Q$ is well defined because the assignment is $\mathbb{B}$-balanced: it is additive in each variable, and $(m\tilde A)\otimes\tilde Q_4$ and $m\otimes(\tilde A\tilde Q_4)$ both go to $m(\tilde A\tilde Q_4)=(m\tilde A)\tilde Q_4$. Its inverse is $m\mapsto m\otimes e_t$, and uniqueness is the universal property of *The Balanced Product*. The left-handed statement is the mirror, and the bimodule statements follow by carrying the outer actions through both maps.
+**Proof.** The map $m\otimes\tilde Q\mapsto m\tilde Q$ is well defined because the assignment is $\mathbb{B}$-balanced: it is additive in each variable, and $(m\tilde Q_1)\otimes\tilde Q_4$ and $m\otimes(\tilde Q_1\tilde Q_4)$ both go to $m(\tilde Q_1\tilde Q_4)=(m\tilde Q_1)\tilde Q_4$. Its inverse is $m\mapsto m\otimes e_t$, and uniqueness is the universal property of *The Balanced Product*. The left-handed statement is the mirror, and the bimodule statements follow by carrying the outer actions through both maps.
 
 **Remark (the categorical reading).** The isomorphisms above say that ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ is the unit of the tensor product of bimodules: tensoring a bimodule with the regular bimodule on either side returns it. This is the module-level form of the fact that the tensor product is a monoidal structure whose unit is the base object, and its categorical statement belongs to the general theory of module categories.
 
@@ -111,13 +111,13 @@ $$
 
 the first given by the left multiplications $\tilde Q\mapsto L_{\tilde Q}$ and the second by the right multiplications $\tilde Q\mapsto R_{\tilde Q}$.
 
-**Proof.** Let $T:\mathbb{B}_{\mathbb{B}}\to\mathbb{B}_{\mathbb{B}}$ be right $\mathbb{B}$-linear, $T(\tilde Q_2\tilde Q_1)=T(\tilde Q_2)\tilde Q_1$. With $\tilde Q_2=e_t$ one has $T(\tilde Q_1)=T(e_t)\tilde Q_1=L_{T(e_t)}(\tilde Q_1)$, so $T=L_{\tilde B}$ with $\tilde B=T(e_t)$; conversely $L_{\tilde B}(\tilde Q_2\tilde Q_1)=\tilde B(\tilde Q_2\tilde Q_1)=(\tilde B\tilde Q_2)\tilde Q_1=L_{\tilde B}(\tilde Q_2)\tilde Q_1$, so $L_{\tilde B}$ is right $\mathbb{B}$-linear. The assignment $\tilde B\mapsto L_{\tilde B}$ is additive and satisfies $L_{\tilde B\tilde C}=L_{\tilde B}L_{\tilde C}$, hence is a ring isomorphism onto $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})$, injective because $L_{\tilde B}(e_t)=\tilde B$. The left-module case is the mirror: a left $\mathbb{B}$-linear $T$ has $T(\tilde Q_2)=T(\tilde Q_2 e_t)=\tilde Q_2 T(e_t)=R_{T(e_t)}(\tilde Q_2)$, and $\tilde B\mapsto R_{\tilde B}$ is additive with $R_{\tilde B\tilde C}=R_{\tilde C}R_{\tilde B}$, hence a ring isomorphism $\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})$.
+**Proof.** Let $T:\mathbb{B}_{\mathbb{B}}\to\mathbb{B}_{\mathbb{B}}$ be right $\mathbb{B}$-linear, $T(\tilde Q_2\tilde Q_1)=T(\tilde Q_2)\tilde Q_1$. With $\tilde Q_2=e_t$ one has $T(\tilde Q_1)=T(e_t)\tilde Q_1=L_{T(e_t)}(\tilde Q_1)$, so $T=L_{\tilde Q_5}$ with $\tilde Q_5=T(e_t)$; conversely $L_{\tilde Q_5}(\tilde Q_2\tilde Q_1)=\tilde Q_5(\tilde Q_2\tilde Q_1)=(\tilde Q_5\tilde Q_2)\tilde Q_1=L_{\tilde Q_5}(\tilde Q_2)\tilde Q_1$, so $L_{\tilde Q_5}$ is right $\mathbb{B}$-linear. The assignment $\tilde Q_5\mapsto L_{\tilde Q_5}$ is additive and satisfies $L_{\tilde Q_5\tilde Q_6}=L_{\tilde Q_5}L_{\tilde Q_6}$, hence is a ring isomorphism onto $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})$, injective because $L_{\tilde Q_5}(e_t)=\tilde Q_5$. The left-module case is the mirror: a left $\mathbb{B}$-linear $T$ has $T(\tilde Q_2)=T(\tilde Q_2 e_t)=\tilde Q_2 T(e_t)=R_{T(e_t)}(\tilde Q_2)$, and $\tilde Q_5\mapsto R_{\tilde Q_5}$ is additive with $R_{\tilde Q_5\tilde Q_6}=R_{\tilde Q_6}R_{\tilde Q_5}$, hence a ring isomorphism $\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})$.
 
 **Corollary (the operator reading).** The endomorphism ring of the regular module is the algebra itself, read on the same side for the representation and on the opposite side for the anti-representation: the left multiplications reproduce $\mathbb{B}$ as the endomorphisms of the right regular module, the right multiplications reproduce $\mathbb{B}^{\mathrm{opp}}$ as the endomorphisms of the left regular module. In the matrix model this is the double centraliser of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, where the reproducing copy is written $\mathsf{M}_4^{R}(\mathbb{B})=\operatorname{End}_{\mathbb{B}}(\mathbb{B})$ and the two copies are shown to generate $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.
 
 ### The bimodule endomorphisms are the centre
 
-**Proposition.** $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})$, the centre of $\mathbb{B}$, the isomorphism sending a central $\tilde S$ to $L_{\tilde S}=R_{\tilde S}$. In particular
+**Proposition.** $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})$, the centre of $\mathbb{B}$, the isomorphism sending a central $\tilde Q$ to $L_{\tilde Q}=R_{\tilde Q}$. In particular
 
 $$
 \operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong\mathbb{C}e_t\cong\mathbb{C},
@@ -125,7 +125,7 @@ $$
 
 of complex dimension one.
 
-**Proof.** A $\mathbb{B}$-$\mathbb{B}$-linear $T$ is in particular right $\mathbb{B}$-linear, so $T=L_{\tilde B}$, and in particular left $\mathbb{B}$-linear, so $T=R_{\tilde C}$; then $L_{\tilde B}=R_{\tilde C}$ gives $\tilde B\tilde Q=\tilde Q\tilde C$ for all $\tilde Q$, and with $\tilde Q=e_t$ one gets $\tilde B=\tilde C$ and then $\tilde B\tilde Q=\tilde Q\tilde B$ for all $\tilde Q$, so $\tilde B$ is central. Conversely a central $\tilde B$ has $L_{\tilde B}=R_{\tilde B}$ and this map is a bimodule endomorphism. The centre is $\mathbb{C}e_t$ by *The Biquaternioid as a Vector Space over $\mathbb{C}$*.
+**Proof.** A $\mathbb{B}$-$\mathbb{B}$-linear $T$ is in particular right $\mathbb{B}$-linear, so $T=L_{\tilde Q_5}$, and in particular left $\mathbb{B}$-linear, so $T=R_{\tilde Q_6}$; then $L_{\tilde Q_5}=R_{\tilde Q_6}$ gives $\tilde Q_5\tilde Q=\tilde Q\tilde Q_6$ for all $\tilde Q$, and with $\tilde Q=e_t$ one gets $\tilde Q_5=\tilde Q_6$ and then $\tilde Q_5\tilde Q=\tilde Q\tilde Q_5$ for all $\tilde Q$, so $\tilde Q_5$ is central. Conversely a central $\tilde Q_5$ has $L_{\tilde Q_5}=R_{\tilde Q_5}$ and this map is a bimodule endomorphism. The centre is $\mathbb{C}e_t$ by *The Biquaternioid as a Vector Space over $\mathbb{C}$*.
 
 **Corollary (no nontrivial bimodule endomorphisms).** The regular bimodule has no nontrivial endomorphism exactly when the centre reduces to the scalars, which is the case here: a sub-bimodule of ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ is a two-sided ideal, the only ones are $0$ and $\mathbb{B}$, and the endomorphism ring that acts on it is the line of central scalars $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. This is the precise sense in which the biquaternion algebra is a central simple algebra over $\mathbb{C}$.
 
@@ -331,7 +331,7 @@ one for each line $\ell$, so the family of minimal left ideals is a projective l
 
 ### Von Neumann regular and self-injective
 
-**Proposition.** The algebra $\mathbb{B}$ is von Neumann regular: for every $\tilde Q\in\mathbb{B}$ there is a $\tilde B\in\mathbb{B}$ with $\tilde Q\tilde B\tilde Q=\tilde Q$. It is self-injective: as a left module over itself it is injective, so every $\mathbb{B}$-linear map from a submodule of ${}_{\mathbb{B}}\mathbb{B}$ to ${}_{\mathbb{B}}\mathbb{B}$ extends to ${}_{\mathbb{B}}\mathbb{B}$.
+**Proposition.** The algebra $\mathbb{B}$ is von Neumann regular: for every $\tilde Q\in\mathbb{B}$ there is a $\tilde Q_5\in\mathbb{B}$ with $\tilde Q\tilde Q_5\tilde Q=\tilde Q$. It is self-injective: as a left module over itself it is injective, so every $\mathbb{B}$-linear map from a submodule of ${}_{\mathbb{B}}\mathbb{B}$ to ${}_{\mathbb{B}}\mathbb{B}$ extends to ${}_{\mathbb{B}}\mathbb{B}$.
 
 **Proof.** Both properties are properties of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: it is von Neumann regular, and it is self-injective because it is a Frobenius algebra, the trace providing the non-degenerate associative pairing. Both are preserved by isomorphism, and the injectivity statement is the Baer criterion applied to ${}_{\mathbb{B}}\mathbb{B}$.
 
@@ -395,7 +395,7 @@ The morphisms are the complex matrices: $\operatorname{End}_\mathbb{B}(S)=\mathb
 | $\operatorname{Ann}_\mathbb{B}(s)$ | annihilator, a maximal left ideal for $s\neq0$ |
 | regular element | a non-zero-divisor |
 | $\operatorname{Res}^{\mathbb{B}}_{\mathbb{H}}$ | restriction of a $\mathbb{B}$-module to $\mathbb{H}$ |
-| von Neumann regular, self-injective | $\tilde Q\tilde B\tilde Q=\tilde Q$; injectivity of ${}_{\mathbb{B}}\mathbb{B}$ |
+| von Neumann regular, self-injective | $\tilde Q\tilde Q_5\tilde Q=\tilde Q$; injectivity of ${}_{\mathbb{B}}\mathbb{B}$ |
 
 
 ## Further Reading

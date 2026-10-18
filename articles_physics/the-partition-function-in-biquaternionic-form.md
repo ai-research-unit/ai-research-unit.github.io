@@ -103,7 +103,7 @@ $$
 \qquad \vec u_h=\frac{\vec h}{|\vec h|}.
 $$
 
-This is the **thermal operator**. It is Hermitian, since $\tilde H^{*}=\tilde H$ implies $(\exp(-\beta\tilde H))^\dagger=\exp(-\beta\tilde H)$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta h_0)$ times the unit-norm element $\tilde\Lambda=\cosh(\beta|\vec h|)e_t-i\sinh(\beta|\vec h|)\vec u_h$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\vec h|$ in the parametrization $\tilde\Lambda=\cosh(\psi/2)+i\sinh(\psi/2)\vec u$, with $\vec u=-\vec u_h$.
+This is the **thermal operator**. It is Hermitian, since $\tilde H^{*}=\tilde H$ implies $(\exp(-\beta\tilde H))^\dagger=\exp(-\beta\tilde H)$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta h_0)$ times the unit-norm element $\tilde U_{\mathrm b}=\cosh(\beta|\vec h|)e_t-i\sinh(\beta|\vec h|)\vec u_h$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\vec h|$ in the parametrization $\tilde U_{\mathrm b}=\cosh(\psi/2)+i\sinh(\psi/2)\vec u$, with $\vec u=-\vec u_h$.
 
 Applying the trace formula with $\tilde P=e_t$ (the identity, which lies in $\mathbb{M}_+$) and using $\exp(-\beta\tilde H)\in\mathbb{M}_+$,
 

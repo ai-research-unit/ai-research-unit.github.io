@@ -152,7 +152,7 @@ $$
 |r|^2 + |t|^2 = R + T = 1 .
 $$
 
-Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a **unitary element**, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the rotor condition $\tilde\Lambda\tilde\Lambda^{\natural}=e_t$ is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.
+Unitarity of $S$ is thus the algebraic form of flux conservation. In the framework's vocabulary the $S$-matrix is a **unitary element**, not a unit-norm rotor: it satisfies $S^{*} S = I_2$, hence $\tilde S\tilde S^{*} = e_t$ for the element $\tilde S$ whose module image it is, whereas the rotor condition $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ is different and is not imposed here. The distinction between the two notions of "unit" is the same one that the path-integral phase and the free evolution operator illustrate.
 
 ## Exactly Solvable Potentials
 
@@ -399,7 +399,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 
 - **Centrality of the potential coupling, made manifest.** The potential multiplies $e_t$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.
 - **A flux from the trace pairing.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\psi' - (\psi')^\dagger\psi)$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
-- **One notion of unit resolved.** The $S$-matrix is unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde\Lambda\tilde\Lambda^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
+- **One notion of unit resolved.** The $S$-matrix is unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
 - **A clean statement of what a scalar potential can do.** The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.
 
 **What remains open.**

@@ -14,7 +14,7 @@ The two maps are written down first, then tabulated, then read one object at a t
 
 ### The Isomorphism $\mathsf{M}_2$
 
-The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, and the norm is $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$. On the algebra, ${}^{*}$ denotes Hermitian conjugation, with fixed space the Hermitian sector $\mathbb{M}_+$ and anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$.
+The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central imaginary $i$; a general element is $\tilde{Q}_1=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} e_\mu$ with $Q_{1,\mu}\in\mathbb{C}$, and the norm is $\langle\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^2$. On the algebra, ${}^{*}$ denotes Hermitian conjugation, with fixed space the Hermitian sector $\mathbb{M}_+$ and anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$.
 
 The map
 
@@ -34,18 +34,18 @@ $$
 and extended by $\mathsf{M}_2(ie_\mu)=i\,\mathsf{M}_2(e_\mu)$. On a general element,
 
 $$
-\mathsf{M}_2(\tilde{Q})=
+\mathsf{M}_2(\tilde{Q}_1)=
 \begin{pmatrix}
-Q_t-iQ_3 & -iQ_1-Q_y\\
--iQ_1+Q_y & Q_t+iQ_3
+Q_{1t}-iQ_3 & -iQ_1-Q_{1y}\\
+-iQ_1+Q_{1y} & Q_{1t}+iQ_3
 \end{pmatrix}.
 $$
 
 It is bijective, and injective in the strong sense: a given $2\times2$ matrix has one preimage, recovered by the same four entries. Two functionals transfer exactly:
 
 $$
-\operatorname{tr}\mathsf{M}_2(\tilde{Q})=2Q_t,\qquad
-\det\mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}.
+\operatorname{tr}\mathsf{M}_2(\tilde{Q}_1)=2Q_{1t},\qquad
+\det\mathsf{M}_2(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}.
 $$
 
 ### The Left Regular Map $\mathsf{M}_4$
@@ -59,21 +59,21 @@ $$
 and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. Its functionals are
 
 $$
-\operatorname{tr}\mathsf{M}_4(\tilde{Q})=4Q_t,\qquad
-\det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2.
+\operatorname{tr}\mathsf{M}_4(\tilde{Q}_1)=4Q_{1t},\qquad
+\det\mathsf{M}_4(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}^2.
 $$
 
 Unlike $\mathsf{M}_2$, the map $\mathsf{M}_4$ is not onto: its image is a four-complex-dimensional family inside the sixteen-dimensional algebra $M_4(\mathbb{C}).$ Concretely, it is the family of matrices of left multiplication by a biquaternion, and nothing else.
 
 ### The Relation Between the Two
 
-Because $\mathsf{M}_2$ is multiplicative, $\mathsf{M}_2(\tilde{Q}\tilde{Q}_1)=\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q}_1)$, so left multiplication by $\tilde{Q}$ acts on the four entries of $\mathsf{M}_2(\tilde{Q}_1)$ by letting $\mathsf{M}_2(\tilde{Q})$ act on each of the two columns. Reading the columns of $\mathsf{M}_2(\tilde{Q}_1)$ as the four coordinates therefore block-diagonalizes the regular matrix, and in that basis the two blocks coincide:
+Because $\mathsf{M}_2$ is multiplicative, $\mathsf{M}_2(\tilde{Q}_1\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)$, so left multiplication by $\tilde{Q}_1$ acts on the four entries of $\mathsf{M}_2(\tilde{Q}_2)$ by letting $\mathsf{M}_2(\tilde{Q}_1)$ act on each of the two columns. Reading the columns of $\mathsf{M}_2(\tilde{Q}_2)$ as the four coordinates therefore block-diagonalizes the regular matrix, and in that basis the two blocks coincide:
 
 $$
-\mathsf{M}_4(\tilde{Q})\;=\;
+\mathsf{M}_4(\tilde{Q}_1)\;=\;
 \begin{pmatrix}
-\mathsf{M}_2(\tilde{Q}) & 0\\
-0 & \mathsf{M}_2(\tilde{Q})
+\mathsf{M}_2(\tilde{Q}_1) & 0\\
+0 & \mathsf{M}_2(\tilde{Q}_1)
 \end{pmatrix}.
 $$
 
@@ -83,14 +83,14 @@ $$
 \mathbb{B}\cong V\oplus V,\qquad \mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2,
 $$
 
-which is the module-theoretic content of the display and is the statement of *Modules over the Biquaternion Algebra*. The two functionals agree with this: $4Q_t$ is twice $2Q_t$, and $N^2$ is the square of $\langle\cdot\rangle_{\natural}$. The owner article states the same block form in the idempotent basis, where each block has trace $2Q_t$ and determinant $\langle\cdot\rangle_{\natural}$ and is therefore **similar** to $\mathsf{M}_2(\tilde{Q})$; passing from that basis to the column-adapted one is a change of basis inside each block, which is what turns the similarity into an equality.
+which is the module-theoretic content of the display and is the statement of *Modules over the Biquaternion Algebra*. The two functionals agree with this: $4Q_{1t}$ is twice $2Q_{1t}$, and $N^2$ is the square of $\langle\cdot\rangle_{\natural}$. The owner article states the same block form in the idempotent basis, where each block has trace $2Q_{1t}$ and determinant $\langle\cdot\rangle_{\natural}$ and is therefore **similar** to $\mathsf{M}_2(\tilde{Q}_1)$; passing from that basis to the column-adapted one is a change of basis inside each block, which is what turns the similarity into an equality.
 
 ### The Other Realizations
 
 The two maps above are not the only realizations of the algebra. Beside them the corpus uses:
 
 - the **coefficient four-vector**, writing the element as a column of its four complex coordinates in the space $\mathbb{C}^4$, owned by *The Four-Vector Element Representation of Biquaternions*;
-- the **spinor module** $V=\mathbb{C}^2$, the two-dimensional complex space on which $\mathsf{M}_2(\tilde{Q})$ acts by multiplication, of complex dimension $2$ and real dimension $4$; this is the spin representation of the algebra, owned by *Biquaternion Spin Geometry*, and its module theory is *Modules over the Biquaternion Algebra*;
+- the **spinor module** $V=\mathbb{C}^2$, the two-dimensional complex space on which $\mathsf{M}_2(\tilde{Q}_1)$ acts by multiplication, of complex dimension $2$ and real dimension $4$; this is the spin representation of the algebra, owned by *Biquaternion Spin Geometry*, and its module theory is *Modules over the Biquaternion Algebra*;
 - the **even Clifford algebra** $\mathrm{Cl}_{1,3}^{+}$, isomorphic to $\mathbb{B}$ as a real algebra and hence also to $M_2(\mathbb{C})$ as a real algebra, owned by *Biquaternion Other Algebraic Element Representations*;
 - the **realification** $\mathsf{M}_4$ over $\mathbb{R}$, writing the operator as an $8\times8$ real matrix, since the algebra is the real space $\mathbb{R}^8$;
 - the **real Clifford algebra** $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, the opposite-sign companion, in which the biquaternions sit as the even part and so are written as $4\times4$ real matrices;
@@ -104,16 +104,16 @@ Every image below is the image of the object named in the first column; a dash i
 
 | object | $\dim_{\mathbb{C}}$ | $\dim_{\mathbb{R}}$ | $2\times2$ image under $\mathsf{M}_2$ | $4\times4$ image under $\mathsf{M}_4$ | other realizations | sets and correspondences |
 |---|---|---|---|---|---|---|
-| $\mathbb{B}$ | $4$ | $8$ | all of $M_2(\mathbb{C})$, an isomorphism | the $4$-dimensional family of left-multiplication matrices, not all of $M_4(\mathbb{C})$; equal blocks $\mathsf{M}_2(\tilde{Q})$ | the $8\times8$ real regular matrices; the $4\times4$ real matrices of $\mathrm{Cl}_{3,1}$; the $2\times2$ quaternionic matrices of $\mathrm{Cl}_{1,3}$; the coefficient column $\mathbb{C}^4$; the spinor module $V=\mathbb{C}^2$, of complex dimension $2$ | the real space $\mathbb{R}^8$; the even Clifford algebra $\mathrm{Cl}_{1,3}^{+}$ |
+| $\mathbb{B}$ | $4$ | $8$ | all of $M_2(\mathbb{C})$, an isomorphism | the $4$-dimensional family of left-multiplication matrices, not all of $M_4(\mathbb{C})$; equal blocks $\mathsf{M}_2(\tilde{Q}_1)$ | the $8\times8$ real regular matrices; the $4\times4$ real matrices of $\mathrm{Cl}_{3,1}$; the $2\times2$ quaternionic matrices of $\mathrm{Cl}_{1,3}$; the coefficient column $\mathbb{C}^4$; the spinor module $V=\mathbb{C}^2$, of complex dimension $2$ | the real space $\mathbb{R}^8$; the even Clifford algebra $\mathrm{Cl}_{1,3}^{+}$ |
 | $\mathbb{B}^{\times}$ | $4$ | $8$ | $GL(2,\mathbb{C})$ | block-diagonal $\mathrm{diag}(GL(2,\mathbb{C}),GL(2,\mathbb{C}))$ | the invertible $8\times8$ real matrices; the invertible quaternionic $2\times2$ matrices | $(\mathbb{C}^{\times}\times SL(2,\mathbb{C}))/\{\pm1\}$; a real Lie group of real dimension $8$, not simply connected; **only its norm-one part generates Lorentz transformations** |
-| $\mathbb{B}^{\times}_1$ | $3$ | $6$ | $SL(2,\mathbb{C})$ | block-diagonal $\mathrm{diag}(SL(2,\mathbb{C}),SL(2,\mathbb{C}))$ | the $8\times8$ real matrices whose blocks are each in $SL(2,\mathbb{C})$; the quaternionic $2\times2$ matrices that are complex with determinant one | the spin group $\mathrm{Spin}(1,3)$; the universal cover of $SO^{+}(1,3)$; real dimension $6$, simply connected; **its elements are the rotors $\tilde{\Lambda}$ of the Lorentz transformations**, acting by the dagger sandwich $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ |
+| $\mathbb{B}^{\times}_1$ | $3$ | $6$ | $SL(2,\mathbb{C})$ | block-diagonal $\mathrm{diag}(SL(2,\mathbb{C}),SL(2,\mathbb{C}))$ | the $8\times8$ real matrices whose blocks are each in $SL(2,\mathbb{C})$; the quaternionic $2\times2$ matrices that are complex with determinant one | the spin group $\mathrm{Spin}(1,3)$; the universal cover of $SO^{+}(1,3)$; real dimension $6$, simply connected; **its elements are the rotors $\tilde U$ of the Lorentz transformations**, acting by the dagger sandwich $\tilde{Q}_1\mapsto\tilde U\tilde{Q}_1\tilde U^{*}$ |
 | $S^3=Sp(1)$ | $3$ | $3$ | $SU(2)$ | block-diagonal $\mathrm{diag}(SU(2),SU(2))$ | the $4\times4$ real matrices of left multiplication on $\mathbb{R}^4$; the unit quaternionic $2\times2$ matrices; the $3\times3$ real rotations of the adjoint action | $Sp(1)=S^3=SU(2)=\mathrm{Spin}(3)$; the unit sphere of the real sector $\mathbb{H}_{\mathbb{B}}$; the maximal compact subgroup of $\mathbb{B}^{\times}_1$; the double cover of $SO(3)$ |
 | $\mathrm{U}(2)$ | $4$ | $4$ | the unitary matrices $\{X:X^{\dagger}X=1\}$ | block-diagonal $\mathrm{diag}(\mathrm{U}(2),\mathrm{U}(2))$ | the unitary $2\times2$ matrices; the unit group of the Hermitian form | the maximal compact subgroup of $\mathbb{B}^{\times}$; $=\mathrm{U}(1)\times SU(2)$; the compact part of the Cartan decomposition $GL(2,\mathbb{C})=\mathrm{U}(2)\exp(\mathfrak{p})$ |
 | the boosts | $3$ | $3$ | the Hermitian positive definite elements of $SL(2,\mathbb{C})$ | the same, block by block | the Hermitian positive elements $B=\exp(\sigma)$ with $\sigma$ traceless Hermitian, of unit norm; the hyperbolic space $H^3$ | the non-compact part of $\mathbb{B}^{\times}_1$; the symmetric space $SL(2,\mathbb{C})/SU(2)$; with the dilatation, the non-compact part of $\mathbb{B}^{\times}$ |
 | $\mathbb{C}^{\times}e_t$ | $1$ | $2$ | the scalar matrices $\lambda I$ | the scalar matrices $\lambda I_4$ | the $8\times8$ real scalar matrices | the centre $Z(\mathbb{B})$; the scalars of $M_2(\mathbb{C})$; the complex time direction of the centre sector |
 | $\{\pm e_t\}$ | $0$ | $0$ | $\{\pm I\}$ | $\{\pm I_4\}$ | $\{\pm I_8\}$ | the kernel of the two-to-one cover; the torsion of $\mathbb{B}^{\times}_1$; the discrete centre |
 | $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ | $3$ | $6$ | conjugation $X\mapsto \mathsf{M}_2(g)X\mathsf{M}_2(g)^{-1}$ for a unit $g$, modulo scalars, that is $PGL(2,\mathbb{C})$ | the same conjugation restricted to the image, block by block | the Möbius maps of the projective line; the $4\times4$ real Lorentz matrices, since $PSL(2,\mathbb{C})\cong SO^{+}(1,3)$ | $PGL(2,\mathbb{C})=PSL(2,\mathbb{C})$; the same abstract group as the row below |
-| $\mathbb{B}^{\times}_1/\{\pm e_t\}$ | $3$ | $6$ | the dagger sandwich $X\mapsto \mathsf{M}_2(\tilde{\Lambda})X\mathsf{M}_2(\tilde{\Lambda})^{\dagger}$ with $\langle\tilde{\Lambda}\rangle_{\natural}=1$, modulo scalars, that is $PSL(2,\mathbb{C})$ | the same sandwich, block by block | the $4\times4$ real Lorentz matrices acting on $\mathbb{R}^{1,3}$ | the proper orthochronous Lorentz group $SO^{+}(1,3)$, of real dimension $6$ |
+| $\mathbb{B}^{\times}_1/\{\pm e_t\}$ | $3$ | $6$ | the dagger sandwich $X\mapsto \mathsf{M}_2(\tilde U)X\mathsf{M}_2(\tilde U)^{\dagger}$ with $\langle\tilde U\rangle_{\natural}=1$, modulo scalars, that is $PSL(2,\mathbb{C})$ | the same sandwich, block by block | the $4\times4$ real Lorentz matrices acting on $\mathbb{R}^{1,3}$ | the proper orthochronous Lorentz group $SO^{+}(1,3)$, of real dimension $6$ |
 
 The two dimension columns are read as follows. $\dim_{\mathbb{C}}$ is the complex dimension, the number of complex parameters: the complex dimension of the group when the object is complex, and the complex dimension of the complex group of which it is a real form when it is not. It follows that $\dim_{\mathbb{R}}=2\dim_{\mathbb{C}}$ for a complex object and $\dim_{\mathbb{R}}=\dim_{\mathbb{C}}$ for a real form, so the two columns agree exactly when the object carries no complex structure. A group and its matrix image have the same dimension, so the two columns apply to the second and the third column at once.
 
@@ -126,29 +126,29 @@ The two dimension columns are read as follows. $\dim_{\mathbb{C}}$ is the comple
 
 **$2\times2$.** The image is all of $M_2(\mathbb{C})$, and the correspondence is an isomorphism, not merely an injective map. The inverse of the display above reads an arbitrary matrix back to its biquaternion. The trace sees only the scalar part, and the determinant is the norm, which is why invertibility of the matrix and invertibility of the element are the same condition.
 
-**$4\times4$.** The image is the four-dimensional family of left-multiplication operators, and in the column-adapted basis each one is the block-diagonal doubling of its $2\times2$ image. The trace is $4Q_t$ and the determinant is $N^2$, so the determinant is the square of the $2\times2$ determinant; this is the general fact that the determinant of a direct sum is the product of the determinants of its summands, applied to $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$.
+**$4\times4$.** The image is the four-dimensional family of left-multiplication operators, and in the column-adapted basis each one is the block-diagonal doubling of its $2\times2$ image. The trace is $4Q_{1t}$ and the determinant is $N^2$, so the determinant is the square of the $2\times2$ determinant; this is the general fact that the determinant of a direct sum is the product of the determinants of its summands, applied to $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$.
 
 **Other.** The coefficient column is the realization in which a field is written as a four-component object; the Clifford identification is the one in which the spinor module is natural, since the bivectors act on it as the matrices do; the realification is the same algebra read over $\mathbb{R}$, where it is $\mathbb{R}^8$ and the matrices are twice as large.
 
 ### The Unit Group $\mathbb{B}^{\times}$
 
-**Definition.** $\mathbb{B}^{\times}=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$, the invertible elements, of complex dimension $4$ and real dimension $8$. It is an open dense subset of the algebra, hence a complex Lie group of the same dimension as the algebra, since the condition is the nonvanishing of the determinant.
+**Definition.** $\mathbb{B}^{\times}=\{\tilde{Q}_1:\langle\tilde{Q}_1\rangle_{\natural}\neq0\}$, the invertible elements, of complex dimension $4$ and real dimension $8$. It is an open dense subset of the algebra, hence a complex Lie group of the same dimension as the algebra, since the condition is the nonvanishing of the determinant.
 
-**$2\times2$.** The image is $GL(2,\mathbb{C})$, by the identity $\det\mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. This is the cleanest statement of the group of units in the whole corpus: it is reached by applying the isomorphism and then taking the determinant.
+**$2\times2$.** The image is $GL(2,\mathbb{C})$, by the identity $\det\mathsf{M}_2(\tilde{Q}_1)=\langle\tilde{Q}_1\rangle_{\natural}$. This is the cleanest statement of the group of units in the whole corpus: it is reached by applying the isomorphism and then taking the determinant.
 
 **$4\times4$.** The image is block-diagonal with both blocks in $GL(2,\mathbb{C})$, by $\det\mathsf{M}_4=N^2$. The two blocks carry the same information, so no hypothesis is gained or lost by passing to the larger realization.
 
-**Other.** Every unit factors as a central scalar times a norm-one element, $\tilde{Q}=\langle\tilde{Q}\rangle_{\natural}^{1/2}\,\tilde{U}$ with $\langle\tilde{U}\rangle_{\natural}=1$, and the central factor is fixed only up to a sign, so the group is the quotient $(\mathbb{C}^{\times}\times SL(2,\mathbb{C}))/\{\pm1\}$ along the diagonal. It is not simply connected: the central circle contributes a copy of $\mathbb{Z}$ to the fundamental group. Only its norm-one subgroup is the spin group.
+**Other.** Every unit factors as a central scalar times a norm-one element, $\tilde{Q}_1=\langle\tilde{Q}_1\rangle_{\natural}^{1/2}\,\tilde{U}$ with $\langle\tilde{U}\rangle_{\natural}=1$, and the central factor is fixed only up to a sign, so the group is the quotient $(\mathbb{C}^{\times}\times SL(2,\mathbb{C}))/\{\pm1\}$ along the diagonal. It is not simply connected: the central circle contributes a copy of $\mathbb{Z}$ to the fundamental group. Only its norm-one subgroup is the spin group.
 
 ### The Norm-One Group $\mathbb{B}^{\times}_1$
 
-**Definition.** $\mathbb{B}^{\times}_1=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}=1\}$, the level set of the norm at $1$, of complex dimension $3$ and real dimension $6$. It is a group under multiplication because the norm is multiplicative; the gradient of the norm is $2\tilde{Q}$, which never vanishes on the level set, so the set is a submanifold; and it is connected, simply connected and non-compact.
+**Definition.** $\mathbb{B}^{\times}_1=\{\tilde{Q}_1:\langle\tilde{Q}_1\rangle_{\natural}=1\}$, the level set of the norm at $1$, of complex dimension $3$ and real dimension $6$. It is a group under multiplication because the norm is multiplicative; the gradient of the norm is $2\tilde{Q}_1$, which never vanishes on the level set, so the set is a submanifold; and it is connected, simply connected and non-compact.
 
 **$2\times2$.** The image is $SL(2,\mathbb{C})$, the matrices of determinant one, by $\det\mathsf{M}_2=N$. This is the realization in which the group is normally met, and it is the one in which the double cover of the Lorentz group is computed.
 
 **$4\times4$.** The image is block-diagonal with both blocks in $SL(2,\mathbb{C})$. Each block is one copy of the spinor action, and the two copies carry the same group element.
 
-**Other.** The group is the spin group $\mathrm{Spin}(1,3)$, and as a set it is the complexification of the sphere $S^3$, which is the reason it is non-compact: the complexification of a compact group is compact only in trivial cases. It is the universal cover of $SO^{+}(1,3)$, the covering being two-to-one. **Its elements are exactly the rotors of the Lorentz transformations**: the sandwich $\tilde{Q}\mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ of a norm-one element is an isometry, because $\langle\tilde{\Lambda}\rangle_{\natural}=1$ gives $\langle\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$, and every proper orthochronous Lorentz transformation arises this way, uniquely up to the sign of $\tilde{\Lambda}$.
+**Other.** The group is the spin group $\mathrm{Spin}(1,3)$, and as a set it is the complexification of the sphere $S^3$, which is the reason it is non-compact: the complexification of a compact group is compact only in trivial cases. It is the universal cover of $SO^{+}(1,3)$, the covering being two-to-one. **Its elements are exactly the rotors of the Lorentz transformations**: the sandwich $\tilde{Q}_1\mapsto \tilde U\tilde{Q}_1\tilde U^{*}$ of a norm-one element is an isometry, because $\langle\tilde U\rangle_{\natural}=1$ gives $\langle\tilde U\tilde{Q}_1\tilde U^{*}\rangle_{\natural}=\langle\tilde{Q}_1\rangle_{\natural}$, and every proper orthochronous Lorentz transformation arises this way, uniquely up to the sign of $\tilde U$.
 
 ### The Unit Quaternions $S^3=Sp(1)$
 
@@ -208,7 +208,7 @@ $$
 \mathbb{B}^{\times}_1/\{\pm e_t\}\cong SO^{+}(1,3).
 $$
 
-**$2\times2$.** The action is not conjugation but the dagger sandwich, $\tilde{Q}\mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ for a rotor $\tilde{\Lambda}\in\mathbb{B}^{\times}_1$, modulo the sign of the rotor because $\pm\tilde{\Lambda}$ give the same transformation; in the image it is $X\mapsto \mathsf{M}_2(\tilde{\Lambda})\,X\,\mathsf{M}_2(\tilde{\Lambda})^{\dagger}$. On the Hermitian matrices of trace zero this is the Lorentz action, and modulo scalars the acting group is $PSL(2,\mathbb{C})$. The distinction from the row above is the whole content: the sandwich replaces the inverse by the conjugate transpose, which is what makes it preserve the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ rather than only intertwining them.
+**$2\times2$.** The action is not conjugation but the dagger sandwich, $\tilde{Q}_1\mapsto \tilde U\tilde{Q}_1\tilde U^{*}$ for a rotor $\tilde U\in\mathbb{B}^{\times}_1$, modulo the sign of the rotor because $\pm\tilde U$ give the same transformation; in the image it is $X\mapsto \mathsf{M}_2(\tilde U)\,X\,\mathsf{M}_2(\tilde U)^{\dagger}$. On the Hermitian matrices of trace zero this is the Lorentz action, and modulo scalars the acting group is $PSL(2,\mathbb{C})$. The distinction from the row above is the whole content: the sandwich replaces the inverse by the conjugate transpose, which is what makes it preserve the two sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ rather than only intertwining them.
 
 **$4\times4$.** The same sandwich block by block, that is the Lorentz action written in the operator realization. Since the sandwich preserves the sectors, it preserves in particular the anti-Hermitian sector $\mathbb{M}_-$; reading an element of that sector as a real four-vector turns the sandwich into a $4\times4$ Lorentz matrix.
 
@@ -258,7 +258,7 @@ $$
 the compact part $\mathrm{U}(2)$ of real dimension $4$ is the rotor $SU(2)$ together with the phase $\mathrm{U}(1)$, and the non-compact part $\exp(\mathfrak{p})$, also of real dimension $4$, is the **boosts** (Hermitian traceless, three parameters) together with the **dilatation** (the scalar, one parameter). The polar form is this decomposition read factor by factor,
 
 $$
-\tilde{Q}=r\,\exp(i\alpha)\,B\,\tilde u
+\tilde{Q}_1=r\,\exp(i\alpha)\,B\,\tilde u
 =\underbrace{(\exp(i\alpha)\tilde u)}_{\text{compact, }\mathrm{U}(2)}\;\underbrace{(rB)}_{\text{non-compact, }\exp(\mathfrak{p})},
 $$
 
@@ -279,7 +279,7 @@ The groups reached in the table are classical, and two of them sit over another 
 | $SO(1,3)$ | the Lorentz group of the form of signature $(1,3)$, determinant one | $6$ | the indefinite motions; two components, time-preserving and time-reversing |
 | $SO^{+}(1,3)$ | the proper orthochronous Lorentz group | $6$ | the identity component; $=\mathbb{B}^{\times}_1/\{\pm e_t\}=PSL(2,\mathbb{C})$ |
 | $\mathrm{Spin}(1,3)$ | the spin group of Lorentzian signature | $6$ | the universal cover of $SO^{+}(1,3)$; $=\mathbb{B}^{\times}_1=SL(2,\mathbb{C})$ |
-| $\mathrm{B}_0$ | the trace-free part, the elements with $Q_t=0$ | $6$ | the Lie algebra, $\mathrm{B}_0\cong\mathrm{so}(1,3)$, the Lie algebra of $\mathbb{B}^{\times}_1$ and of $SO^{+}(1,3)$ |
+| $\mathrm{B}_0$ | the trace-free part, the elements with $Q_{1t}=0$ | $6$ | the Lie algebra, $\mathrm{B}_0\cong\mathrm{so}(1,3)$, the Lie algebra of $\mathbb{B}^{\times}_1$ and of $SO^{+}(1,3)$ |
 | $\{\pm e_t\}$ | the centre of $\mathbb{B}^{\times}_1$ | $0$ | the kernel of both covers; discrete |
 
 **The two double covers.** The definite form and the indefinite form each carry a two-sheeted cover, and the two are the same construction applied to the compact group and to its complexification:
@@ -305,25 +305,25 @@ The correspondences above are what the physical articles read the algebra throug
 
 **The sectors are the Hermitian and anti-Hermitian images.** $\mathbb{M}_+$, the Hermitian sector, is the image of the conjugate transpose equality, and $\mathbb{M}_-$, the anti-Hermitian sector, is its anti-fixed companion; the informational and material interpretations of the two are in their own articles. That the dagger sandwich preserves both is immediate in the $2\times2$ picture, since preservation of a Hermitian matrix under $X\mapsto MXM^{\dagger}$ is the statement $ (MXM^{\dagger})^{\dagger}=MXM^{\dagger}$, and this is why the sector structure is read there rather than in the doubled picture.
 
-**The spin group is the Lorentz group, twice.** $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ is the group of the Lorentz transformation, and its two-to-one cover of $SO^{+}(1,3)$ is the reason a state is a spinor: one Lorentz transformation is realized twice in $\mathbb{B}^{\times}_1$, once as $\tilde{\Lambda}$ and once as $-\tilde{\Lambda}$, and the sign is carried by the state. The dagger sandwich of *Biquaternion Rotations and Lorentz Transformations* is the transformation itself, and the compact factor $S^3=SU(2)$ is its rotation part.
+**The spin group is the Lorentz group, twice.** $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ is the group of the Lorentz transformation, and its two-to-one cover of $SO^{+}(1,3)$ is the reason a state is a spinor: one Lorentz transformation is realized twice in $\mathbb{B}^{\times}_1$, once as $\tilde U$ and once as $-\tilde U$, and the sign is carried by the state. The dagger sandwich of *Biquaternion Rotations and Lorentz Transformations* is the transformation itself, and the compact factor $S^3=SU(2)$ is its rotation part.
 
 **The sign group is the sign of the spinor.** $\{\pm e_t\}$, of real dimension zero, is the kernel of the cover and the only element of the centre inside the norm-one group. It is the algebraic origin of the statement that a rotation through a full turn returns a spinor to its negative and through two turns to itself, and it is the discrete obstruction to replacing the spin group by the Lorentz group.
 
 **The central scalars are the complex time direction.** The centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is the smallest of the remarkable subspaces and is owned, physically, by *Other Remarkable Subspaces*; its units $\mathbb{C}^{\times}e_t$ are the scalar matrices $\lambda I$, the overall complex scale and phase a field may carry. Because $\langle \lambda e_t\rangle_{\natural}=\lambda^2$, only $\lambda=\pm1$ survives inside the norm-one group, which is why the phases are not part of the spin group but sit in the full unit group.
 
-**The determinant carries the square.** A physical computation that reads a determinant off the $4\times4$ regular matrix obtains $N^2$, not $\langle\cdot\rangle_{\natural}$; the trace is $4Q_t$, not $2Q_t$. Only the criterion is unchanged, since $N\neq0$ and $N^2\neq0$ are the same condition. This is the one place where the two pictures are not interchangeable without bookkeeping, and it is recorded among the cautions below.
+**The determinant carries the square.** A physical computation that reads a determinant off the $4\times4$ regular matrix obtains $N^2$, not $\langle\cdot\rangle_{\natural}$; the trace is $4Q_{1t}$, not $2Q_{1t}$. Only the criterion is unchanged, since $N\neq0$ and $N^2\neq0$ are the same condition. This is the one place where the two pictures are not interchangeable without bookkeeping, and it is recorded among the cautions below.
 
 ## What the Table Does Not Say
 
 **The $4\times4$ map is not an isomorphism.** $\mathsf{M}_2$ is onto $M_2(\mathbb{C})$, but $\mathsf{M}_4$ is not onto $M_4(\mathbb{C})$: its image is four-complex-dimensional, against sixteen. The table's entries in that column are faithful images, not the whole matrix algebra, and the phrase "the $4\times4$ matrix representation" names a representation, not an isomorphism.
 
-**The determinants are not the same function.** $\det\mathsf{M}_2=N$ and $\det\mathsf{M}_4=N^2$, and the traces are $2Q_t$ and $4Q_t$. Only the criterion is common, since $N\neq0$ and $N^2\neq0$ are the same condition. A determinant computed in the wrong realization is off by a square.
+**The determinants are not the same function.** $\det\mathsf{M}_2=N$ and $\det\mathsf{M}_4=N^2$, and the traces are $2Q_{1t}$ and $4Q_{1t}$. Only the criterion is common, since $N\neq0$ and $N^2\neq0$ are the same condition. A determinant computed in the wrong realization is off by a square.
 
 **The sector structure lives in $\mathsf{M}_2$, not in $\mathsf{M}_4$.** Hermitian against anti-Hermitian, the signatures $(1,3)$ and $(3,1)$, the compact subalgebra and the boosts — all of these are read cleanly from the single $2\times2$ matrix, because ${}^{*}$ on the image is the conjugate transpose. In the $4\times4$ realization each is doubled, and the statement becomes one about both blocks at once. The sector theorems are therefore stated in the $2\times2$ realization for a reason and not by accident.
 
-**The two actions in the last two rows are different.** The automorphism group acts by conjugation $X\mapsto \mathsf{M}_2(g)X\mathsf{M}_2(g)^{-1}$ for a unit $g$; the Lorentz quotient acts by the dagger sandwich $X\mapsto \mathsf{M}_2(\tilde{\Lambda})X\mathsf{M}_2(\tilde{\Lambda})^{\dagger}$ for a rotor $\tilde{\Lambda}$ of norm one. They agree exactly on the unitary slice, by the identity $\tilde{\Lambda}^{*}=\tilde{\Lambda}^{-1}$ for a unitary $\tilde{\Lambda}$; off it they differ, and the sandwich is not multiplicative in the acting rotor across a central rescaling, while the conjugation is insensitive to it.
+**The two actions in the last two rows are different.** The automorphism group acts by conjugation $X\mapsto \mathsf{M}_2(g)X\mathsf{M}_2(g)^{-1}$ for a unit $g$; the Lorentz quotient acts by the dagger sandwich $X\mapsto \mathsf{M}_2(\tilde U)X\mathsf{M}_2(\tilde U)^{\dagger}$ for a rotor $\tilde U$ of norm one. They agree exactly on the unitary slice, by the identity $\tilde U^{*}=\tilde U^{-1}$ for a unitary $\tilde U$; off it they differ, and the sandwich is not multiplicative in the acting rotor across a central rescaling, while the conjugation is insensitive to it.
 
-**The Lorentz transformations correspond to the norm-one group.** The rotors are the elements of $N=1$, that is of the norm-one group $\mathbb{B}^{\times}_1$ of row three: its $2\times2$ image is $SL(2,\mathbb{C})$, its $4\times4$ image is the diagonal copy of $SL(2,\mathbb{C})$, and it is the spin group $\mathrm{Spin}(1,3)$. A rotor $\tilde{\Lambda}$ acts on a biquaternion by the sandwich $\tilde{Q}\mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, and the map from the group onto the transformations is two-to-one, with kernel the sign group $\{\pm e_t\}$ of row six, so that the transformations are the quotient of row eight, $\mathbb{B}^{\times}_1/\{\pm e_t\}\cong SO^{+}(1,3)$. The condition is exactly $N=1$: the sandwich multiplies the norm by $|\langle\tilde{\Lambda}\rangle_{\natural}|^2$, because the norm is multiplicative and $\langle\tilde{\Lambda}^{*}\rangle_{\natural}=\overline{\langle\tilde{\Lambda}\rangle_{\natural}}$, so $N=1$ is what makes it an isometry, and a zero divisor generates nothing at all, having no inverse.
+**The Lorentz transformations correspond to the norm-one group.** The rotors are the elements of $N=1$, that is of the norm-one group $\mathbb{B}^{\times}_1$ of row three: its $2\times2$ image is $SL(2,\mathbb{C})$, its $4\times4$ image is the diagonal copy of $SL(2,\mathbb{C})$, and it is the spin group $\mathrm{Spin}(1,3)$. A rotor $\tilde U$ acts on a biquaternion by the sandwich $\tilde{Q}_1\mapsto \tilde U\tilde{Q}_1\tilde U^{*}$, and the map from the group onto the transformations is two-to-one, with kernel the sign group $\{\pm e_t\}$ of row six, so that the transformations are the quotient of row eight, $\mathbb{B}^{\times}_1/\{\pm e_t\}\cong SO^{+}(1,3)$. The condition is exactly $N=1$: the sandwich multiplies the norm by $|\langle\tilde U\rangle_{\natural}|^2$, because the norm is multiplicative and $\langle\tilde U^{*}\rangle_{\natural}=\overline{\langle\tilde U\rangle_{\natural}}$, so $N=1$ is what makes it an isometry, and a zero divisor generates nothing at all, having no inverse.
 
 **The two groups in the last two rows are the same abstract group.** Both are $PSL(2,\mathbb{C})$, which is also $SO^{+}(1,3)$, so the two rows are not distinguished by their group but by the action and by the carrier the action is applied to. The conjugation is an automorphism of the algebra; the sandwich is an isometry of the sectors. This is why the same group appears twice in the table with two different descriptions, and it is not a duplication.
 
@@ -345,25 +345,25 @@ The index reads as the source of the framework's translations: every physical ob
 
 ## Summary
 
-The algebra $\mathbb{B}$ has one algebra isomorphism $\mathsf{M}_2$ onto $M_2(\mathbb{C})$ and one faithful regular map $\mathsf{M}_4$ into $M_4(\mathbb{C})$, and the second is the first taken twice: in the column-adapted basis the regular matrix is block-diagonal with two equal blocks $\mathsf{M}_2(\tilde{Q})$, and in the idempotent basis the same blocks are each similar to $\mathsf{M}_2(\tilde{Q})$. Every named object has an image under both, and the images interlock: the determinant of the element is $\langle\cdot\rangle_{\natural}$ in the small picture and $N^2$ in the large one, so the group of units becomes $GL(2,\mathbb{C})$ and then a doubled copy of it, the norm-one group becomes $SL(2,\mathbb{C})$, the unit quaternions become $SU(2)$, the centre becomes the scalars, and the sign group becomes its kernel. The automorphism group is the units modulo the centre, acting by conjugation; the Lorentz quotient is the norm-one group modulo the sign group, acting by the dagger sandwich. The classical groups reached are the compact $Sp(1)=S^3=SU(2)=\mathrm{Spin}(3)$, its complexification $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$, and the common quotient $SO^{+}(1,3)=\mathbb{B}^{\times}_1/\{\pm e_t\}=PSL(2,\mathbb{C})$, which is also the automorphism group; the two covers $SU(2)\to SO(3)$ and $\mathbb{B}^{\times}_1\to SO^{+}(1,3)$ have the same discrete kernel, and the Lie algebra $\mathrm{B}_0\cong\mathrm{so}(1,3)$ is the infinitesimal form of the second. The table is an index, and each row is owned by the article named beside it.
+The algebra $\mathbb{B}$ has one algebra isomorphism $\mathsf{M}_2$ onto $M_2(\mathbb{C})$ and one faithful regular map $\mathsf{M}_4$ into $M_4(\mathbb{C})$, and the second is the first taken twice: in the column-adapted basis the regular matrix is block-diagonal with two equal blocks $\mathsf{M}_2(\tilde{Q}_1)$, and in the idempotent basis the same blocks are each similar to $\mathsf{M}_2(\tilde{Q}_1)$. Every named object has an image under both, and the images interlock: the determinant of the element is $\langle\cdot\rangle_{\natural}$ in the small picture and $N^2$ in the large one, so the group of units becomes $GL(2,\mathbb{C})$ and then a doubled copy of it, the norm-one group becomes $SL(2,\mathbb{C})$, the unit quaternions become $SU(2)$, the centre becomes the scalars, and the sign group becomes its kernel. The automorphism group is the units modulo the centre, acting by conjugation; the Lorentz quotient is the norm-one group modulo the sign group, acting by the dagger sandwich. The classical groups reached are the compact $Sp(1)=S^3=SU(2)=\mathrm{Spin}(3)$, its complexification $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$, and the common quotient $SO^{+}(1,3)=\mathbb{B}^{\times}_1/\{\pm e_t\}=PSL(2,\mathbb{C})$, which is also the automorphism group; the two covers $SU(2)\to SO(3)$ and $\mathbb{B}^{\times}_1\to SO^{+}(1,3)$ have the same discrete kernel, and the Lie algebra $\mathrm{B}_0\cong\mathrm{so}(1,3)$ is the infinitesimal form of the second. The table is an index, and each row is owned by the article named beside it.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-| $\tilde{Q}$ | a general biquaternion $\sum_\mu Q_\mu e_\mu$, the element acted on |
-| $\tilde{\Lambda}$ | a rotor, an element of the norm-one group $\mathbb{B}^{\times}_1$, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ |
+| $\tilde{Q}_1$ | a general biquaternion $\sum_\mu Q_{1,\mu} e_\mu$, the element acted on |
+| $\tilde U$ | a rotor, an element of the norm-one group $\mathbb{B}^{\times}_1$, acting by $\tilde{Q}_1\mapsto\tilde U\tilde{Q}_1\tilde U^{*}$ |
 | $\tilde u$ | the rotation rotor of the polar form, a unit real quaternion, the compact factor |
 | $g$ | a unit, an element of $\mathbb{B}^{\times}$, acting on the algebra by conjugation |
 | $\mathsf{M}_2$ | the algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
-| $\mathsf{M}_4$ | the left regular matrix, $\mathsf{M}_4(\tilde{Q})\operatorname{col}(\tilde{Q}_1)=\operatorname{col}(\tilde{Q}\tilde{Q}_1)$ |
-| $\langle\cdot\rangle_{\natural}$ | the biquaternion norm $\sum_\mu Q_\mu^2$ |
+| $\mathsf{M}_4$ | the left regular matrix, $\mathsf{M}_4(\tilde{Q}_1)\operatorname{col}(\tilde{Q}_2)=\operatorname{col}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\cdot\rangle_{\natural}$ | the biquaternion norm $\sum_\mu Q_{1,\mu}^2$ |
 | ${}^{*}$ | Hermitian conjugation; fixed space $\mathbb{M}_+$, anti-fixed space $\mathbb{M}_-$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors |
 | $\mathbb{B}^{\times}$ | the invertible elements, $N\neq0$ |
 | $\mathbb{B}^{\times}_1$ | the norm-one elements, $N=1$ |
-| $\mathrm{B}_0$ | the trace-free part, the elements with $Q_t=0$, isomorphic to the Lie algebra $\mathrm{so}(1,3)$ |
+| $\mathrm{B}_0$ | the trace-free part, the elements with $Q_{1t}=0$, isomorphic to the Lie algebra $\mathrm{so}(1,3)$ |
 | $S^3=Sp(1)$ | the unit quaternions, the unit sphere of the real sector $\mathbb{H}_{\mathbb{B}}$ |
 | $SU(2)$, $SO(3)$ | the unitary $2\times2$ matrices of determinant one, and the rotations of $\mathbb{R}^3$ |
 | $\mathrm{Spin}(1,3)$ | the spin group of Lorentzian signature, $=\mathbb{B}^{\times}_1$ |

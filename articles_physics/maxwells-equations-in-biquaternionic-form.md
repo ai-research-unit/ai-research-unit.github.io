@@ -571,13 +571,13 @@ The argument closes under weaker hypotheses than differentiability. In Alexeyeva
 The transformation of the four-potential under a Lorentz boost is the **rotor conjugation**
 
 $$
-\tilde{A}' = \tilde{\Lambda}\,\tilde{A}\,\tilde{\Lambda}^{*},
+\tilde{A}' = \tilde U\,\tilde{A}\,\tilde U^{*},
 $$
 
-where $\tilde{\Lambda}$ is the boost biquaternion. For a pure boost with velocity $\vec v_b$, the boost biquaternion is
+where $\tilde U$ is the boost biquaternion. For a pure boost with velocity $\vec v_b$, the boost biquaternion is
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u = \exp\!\left(\frac{\psi}{2}\,i\vec u\right),
+\tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u = \exp\!\left(\frac{\psi}{2}\,i\vec u\right),
 $$
 
 with the rapidity $\psi$ related to the velocity by $\tanh\psi = v_b/c$, and $\vec u = \vec v_b/v_b$ the unit vector in the direction of the boost. The Lorentz factor is
@@ -596,7 +596,7 @@ $$
 \vec A' = \vec A + \frac{\gamma - 1}{v_b^2}(\vec v_b\cdot\vec A)\vec v_b - \gamma\frac{\phi}{c^2}\vec v_b.
 $$
 
-These are the standard Lorentz transformation formulas for the four-potential, obtained from the rotor conjugation $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}$. The same transformation law applies to the four-current $\tilde J$ and to the biquaternionic energy–momentum $\tilde{W}$. This confirms that the biquaternionic formulation is Lorentz-covariant, and it shows how the transformation laws look in biquaternionic form.
+These are the standard Lorentz transformation formulas for the four-potential, obtained from the rotor conjugation $\tilde{A}' = \tilde U\tilde{A}\tilde U^{*}$. The same transformation law applies to the four-current $\tilde J$ and to the biquaternionic energy–momentum $\tilde{W}$. This confirms that the biquaternionic formulation is Lorentz-covariant, and it shows how the transformation laws look in biquaternionic form.
 
 **A note on earlier conventions.** An earlier version of this article used the one-sided formula $\tilde{A}' = (\gamma/c)\tilde{U}\tilde{A}$ with $\tilde{U} = c + i\vec v_b$. This formula is **incorrect**: it does not reproduce the standard component formulas for a general boost, and it does not match the rotor-conjugation formulation of the Lorentz transformation established in the companion articles. The correct transformation is the rotor conjugation given above.
 
@@ -731,7 +731,7 @@ Maxwell's equations in a linear, isotropic, non-dispersive medium collapse into 
 
 The retarded Green's function supplies the causal solution, the field at a point depending only on the sources in its past light cone; it is the fundamental solution of the hyperbolic wave operator and is related by the Wick rotation to the elliptic Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ used in biquaternion analysis. In the stationary limit the equation becomes purely spatial and the solution is the gradient of the Newton kernel, whose first term is Coulomb's law for a point charge and whose second is the Biot–Savart law. The potential $\tilde{A}$ is subject to the gauge transformation $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, under which $\tilde{F}$ is invariant while the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $S' = S - \Box\Gamma$; the Lorenz gauge $S = 0$ reduces the first-order equation to the wave equation $\Box\tilde{A} = -\mu\tilde J$.
 
-The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. It obeys the conservation law $\tilde{\nabla}\tilde{W} = -\tilde{P}$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy. The four-potential transforms by rotor conjugation, $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}$, which reproduces the standard boost formulas for $\phi$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
+The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. It obeys the conservation law $\tilde{\nabla}\tilde{W} = -\tilde{P}$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy. The four-potential transforms by rotor conjugation, $\tilde{A}' = \tilde U\tilde{A}\tilde U^{*}$, which reproduces the standard boost formulas for $\phi$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
 
 ## Summary of Notation
 
@@ -747,7 +747,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\psi, \chi$ | Wave function $(4\pi R)^{-1}\delta(t - R/c)$ and its time antiderivative |
 | $\tilde J = ic\rho\,e_t+\vec J$ | Four-current; the source enters as $\sqrt{\mu}\,\tilde J$ |
 | $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*}$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
-| $\tilde{\Lambda}$ | Boost biquaternion (unit-norm biquaternion) |
+| $\tilde U$ | Boost biquaternion (unit-norm biquaternion) |
 | $\tilde{q}_0$ | Constant unit quaternion; the internal (right-multiplication) freedom of the vacuum equation, in $\mathrm{SU}(2)$ |
 | $\tilde{\nabla}$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |

@@ -237,13 +237,13 @@ Rebuilding $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$ from the last two e
 Take the Lorentz boost biquaternion of the physics articles with speed $0.6c$ along $\vec e_x$,
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec e_x , \qquad \psi = \operatorname{atanh}0.6 = 0.693147181 ,
+\tilde U = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec e_x , \qquad \psi = \operatorname{atanh}0.6 = 0.693147181 ,
 $$
 
-so that $\tilde{\Lambda} = 1.060660172\,e_t + 0.353553391\,i\,\vec e_x$. Its biquaternion norm is $N = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1$, a positive real, so the modulus is $\rho = 1$, the scale is $r = 1$ and the phase is $\alpha = 0$. The remaining construction returns $U = \tilde{\Lambda}$, $UU^{*} = \tilde{\Lambda}^2$, $\tilde U_{\mathrm b} = \tilde{\Lambda}$ and $\tilde u_{\mathrm r} = e_t$, so that the four-factor form collapses to
+so that $\tilde U = 1.060660172\,e_t + 0.353553391\,i\,\vec e_x$. Its biquaternion norm is $N = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1$, a positive real, so the modulus is $\rho = 1$, the scale is $r = 1$ and the phase is $\alpha = 0$. The remaining construction returns $U = \tilde U$, $UU^{*} = \tilde U^2$, $\tilde U_{\mathrm b} = \tilde U$ and $\tilde u_{\mathrm r} = e_t$, so that the four-factor form collapses to
 
 $$
-\tilde{\Lambda} = 1\cdot \exp(i\cdot0)\cdot\tilde{\Lambda}\cdot e_t .
+\tilde U = 1\cdot \exp(i\cdot0)\cdot\tilde U\cdot e_t .
 $$
 
 The example is the reason the representation is a strict refinement of the physics convention: a Lorentz rotor is already in polar form, with two of its four factors trivial. In the language of the two invariants, the norm is real positive, so the phase vanishes, and the Hermitian product is already its own square root in the sense of step 4.

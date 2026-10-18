@@ -81,7 +81,7 @@ On a Clifford algebra with the dagger, the adjoint of the left multiplication by
 
 ### The Biquaternions
 
-On $\mathbb{B}$ with the dagger the sandwich by a biquaternion $\tilde Q_1$ has adjoint the sandwich by $\tilde Q_1^{\dagger}$, and for the unitary slice it is the conjugation of the matrix algebra; the explicit computation is *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
+On $\mathbb{B}$ with the dagger the sandwich by a biquaternion $\tilde Q$ has adjoint the sandwich by $\tilde Q^{\dagger}$, and for the unitary slice it is the conjugation of the matrix algebra; the explicit computation is *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*.
 
 ## Summary
 

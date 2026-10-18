@@ -150,7 +150,7 @@ i.e. a diagonal $(-1,+1,+1,-1,-1,+1)$, while the printed metric is $(-1,-1,-1,+1
 
 ### The equations in R6
 
-Mapping the wave equations into $\mathbb{R}^6$ turns the four spacetime derivatives into the six bivector derivatives. With $\Lambda^{l\bar l}_j$ the generators, $a_j$ the three complex coordinates ($a_1,a_2,a_3$), $g_4=ia_1$, $g_5=ia_2$, $g_6=ia_3$ and $\tilde a_j$ the dual coordinates, the equations for the field and its conjugate become
+Mapping the wave equations into $\mathbb{R}^6$ turns the four spacetime derivatives into the six bivector derivatives. With $\Lambda^{l\bar l}_j$ the generators, $a_j$ the three complex coordinates ($a_1,a_2,a_3$), $g_4=ia_1$, $g_5=ia_2$ and $g_6=ia_3$, the equations for the field and its conjugate become
 
 $$
 \sum_{j=1}^{3}\Bigl(\Lambda^{l}_j\otimes\mathbf{1}_{2\bar l+1}-\mathbf{1}_{2l+1}\otimes\Lambda^{\bar l}_j\Bigr)\frac{\partial\psi}{\partial a_j}

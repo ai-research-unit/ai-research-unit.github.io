@@ -180,7 +180,7 @@ $$
 
 Both $\tilde K_1$ and $\tilde K_2$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.
 
-The generator content is sharper still. A squeeze, $\tilde{Q}\mapsto\tilde{Q}\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde{Q}\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}\pm\tilde P$ by $\exp(\mp r)$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde\Lambda=\cosh(\psi/2)\,e_t+i\sinh(\psi/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde{Q}_{4}=ict\,e_t+x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde{Q}_4\mapsto\tilde\Lambda\tilde{Q}_4\tilde\Lambda^{*}$; computing the result gives
+The generator content is sharper still. A squeeze, $\tilde{Q}\mapsto\tilde{Q}\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde{Q}\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}\pm\tilde P$ by $\exp(\mp r)$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde U_{\mathrm b}=\cosh(\psi/2)\,e_t+i\sinh(\psi/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde{Q}_{4}=ict\,e_t+x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde{Q}_4\mapsto\tilde U_{\mathrm b}\tilde{Q}_4\tilde U_{\mathrm b}^{*}$; computing the result gives
 
 $$
 ct'=\cosh\psi\,ct-\sinh\psi\,x,\qquad x'=\cosh\psi\,x-\sinh\psi\,ct,
@@ -232,7 +232,7 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | $\tilde K_1,\tilde K_2,\tilde K_3$ | Quadratic generators (squeezes and phase), $[\tilde K_1,\tilde K_2]=2i\tilde K_3$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Truncated lowering operator |
 | $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Truncated number operator (idempotent) |
-| $\tilde\Lambda=\cosh\frac\psi2+i\sinh\frac\psi2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |
+| $\tilde U_{\mathrm b}=\cosh\frac\psi2+i\sinh\frac\psi2\,\vec u_{\mathrm b}$ | Boost rotor in $\mathbb{M}_+$ |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (Born rule) |
 | $i\mathbb{M}_\pm=\mathbb{M}_\mp$ | Sector exchange by the scalar imaginary |

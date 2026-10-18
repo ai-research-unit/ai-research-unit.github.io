@@ -177,7 +177,7 @@ It is worth being precise about what the adjoint action is the action *on*. A fi
 $$
 \vec J = \vec L+\vec S,
 \qquad
-\vec L = \tilde{x}\times\tilde{p},
+\vec L = \vec x\times\vec p,
 \qquad
 \vec S_k = \tfrac12\mathrm{ad}_{i\vec e_k},
 $$
@@ -292,7 +292,7 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $\mathrm{ad}_{\tilde{Q}}\tilde{Q}_3=[\tilde{Q},\tilde{Q}_3]$ | Inner derivation (adjoint action) |
 | $R_Q(\tilde{Q})=Q\tilde{Q}Q^{-1}$ | Inner automorphism; rotation for $Q=\exp(\theta \vec e_k/2)$ |
 | $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ | Hermitian angular-momentum (spin) generator |
-| $\vec L=\tilde{x}\times\tilde{p}$, $\vec S_k=J_k$ | Orbital and internal parts; $\vec J=\vec L+\vec S$ |
+| $\vec L=\vec x\times\vec p$, $\vec S_k=J_k$ | Orbital and internal parts; $\vec J=\vec L+\vec S$ |
 | $[J_i,J_j]=i\varepsilon_{ijk}J_k$ | Rotation algebra (verified, residual zero) |
 | $J^2=J_1^2+J_2^2+J_3^2=2I$ | Casimir; $2=s(s+1)$ at $s=1$ |
 | $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$, $\varepsilon_0=\vec e_z$ | Weight basis of the triplet; $J_3$ eigenvalues $\pm1,0$ |

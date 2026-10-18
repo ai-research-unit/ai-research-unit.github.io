@@ -6,7 +6,7 @@
 The left multiplication $L_a$ acts on the Clifford algebra by $x\mapsto ax$, and its adjoint for the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ is the left multiplication by the Clifford conjugate,
 
 $$
-L_a^{*} = L_{\hat a} , \qquad \hat a = \alpha(\tilde a) ,
+L_a^{*} = L_{\hat a} , \qquad \hat a = \alpha(a) ,
 $$
 
 an operator of the same family with the parameter conjugated. The adjoint therefore defines an involution on the parameters, and its consequences are geometric: the **self-adjoint** left multiplications are those with $\hat a=a$, the **orthogonal** ones are the units $a$ with $\hat aa=1$, and the multiplication by a vector is skew-adjoint, $L_u^*=-L_u$. The article collects these consequences and the corresponding statements for the twisted form of *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*.
@@ -57,14 +57,14 @@ For $a=e_1e_2$ in the negative-definite plane, $\hat a=(-e_2)(-e_1)=e_2e_1=-e_1e
 
 ## Summary
 
-For the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ the adjoint of the left multiplication is the left multiplication by the **Clifford conjugate**, $L_a^*=L_{\hat a}$ with $\hat a=\alpha(\tilde a)$ an anti-automorphism and an involution acting on a vector by $\vec u=-u$. Hence $L_a$ is **self-adjoint** exactly when $\hat a=a$ and **orthogonal** exactly when $\hat aa=1$, the latter defining the group of orthogonal left multiplications inside the units; the multiplication by a vector is always **skew-adjoint**, $L_u^*=-L_u$. For the twisted form the adjoint is the **signed** left multiplication $(L_a)^{*\alpha}=L_{\hat a}\alpha$, and a left multiplication is self-adjoint for the twisted form only for central scalars in the central-simple case. The operator is *The Left and Right Multiplication Operators on a Clifford Algebra*, the form is *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*, the mirror article is *The Adjoint of the Right Multiplication*, and the manifold case is *The Adjoint of the Clifford Multiplication*.
+For the standard form $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ the adjoint of the left multiplication is the left multiplication by the **Clifford conjugate**, $L_a^*=L_{\hat a}$ with $\hat a=\alpha(a)$ an anti-automorphism and an involution acting on a vector by $\vec u=-u$. Hence $L_a$ is **self-adjoint** exactly when $\hat a=a$ and **orthogonal** exactly when $\hat aa=1$, the latter defining the group of orthogonal left multiplications inside the units; the multiplication by a vector is always **skew-adjoint**, $L_u^*=-L_u$. For the twisted form the adjoint is the **signed** left multiplication $(L_a)^{*\alpha}=L_{\hat a}\alpha$, and a left multiplication is self-adjoint for the twisted form only for central scalars in the central-simple case. The operator is *The Left and Right Multiplication Operators on a Clifford Algebra*, the form is *The Signed Adjoint of the Left Multiplication on a Clifford Algebra*, the mirror article is *The Adjoint of the Right Multiplication*, and the manifold case is *The Adjoint of the Clifford Multiplication*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $L_a(x)=ax$ | Left multiplication |
-| $\hat a=\alpha(\tilde a)$ | Clifford conjugation; anti-automorphism, involution |
+| $\hat a=\alpha(a)$ | Clifford conjugation; anti-automorphism, involution |
 | $\langle x,y\rangle=\operatorname{Sc}(\hat xy)$ | Standard form |
 | $L_a^*=L_{\hat a}$ | Adjoint of the left multiplication |
 | $\vec u=-u$ | Conjugation on a vector; $L_u^*=-L_u$ |

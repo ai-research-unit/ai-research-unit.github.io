@@ -8,7 +8,7 @@ The zero divisors and their classification are *Zero Divisors of the Biquaternio
 
 The article owns the two kinds of zero divisor and the closed form of their square, the invariance of the cone under squaring, the affine dynamics it carries, the definition of the singular Julia set, and the theorem that the idempotent manifold lies on the Julia set of the parameter zero. It does not re-derive the classification of the zero divisors, which is the zero-divisor article, and it does not treat the dimension of the singular set, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
-**Standing convention.** $\mathscr{Z}=\{\tilde Q\in\mathbb{B} : \tilde Q\neq0,\ \langle\tilde Q\rangle_{\natural}=0\}$ is the **zero-divisor cone**, $N$ the biquaternion norm, and $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ the quadratic family in the general plain bilinear product.
+**Standing convention.** $\mathscr{Z}=\{\tilde Q\in\mathbb{B} : \tilde Q\neq0,\ \langle\tilde Q\rangle_{\natural}=0\}$ is the **zero-divisor cone**, $N$ the biquaternion norm, and $F_{\tilde Q_2}(\tilde Q)=\tilde Q^2+\tilde Q_2$ the quadratic family in the general plain bilinear product.
 
 ## The Two Kinds of Zero Divisor
 
@@ -33,33 +33,33 @@ and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line 
 
 ## The Dynamics on the Cone
 
-**Theorem (the affine dynamics of the cone and its lines).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde Q=\lambda\tilde\Pi$, $\lambda\in\mathbb{C}$. Then under $F_{\tilde C}$ with central parameter $\tilde C=Ce_t$,
+**Theorem (the affine dynamics of the cone and its lines).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde Q=\lambda\tilde\Pi$, $\lambda\in\mathbb{C}$. Then under $F_{\tilde Q_2}$ with central parameter $\tilde Q_2=Ce_t$,
 
 $$
-F_{\tilde C}(\lambda\tilde\Pi)=\lambda^2\tilde\Pi+C e_t ,
+F_{\tilde Q_2}(\lambda\tilde\Pi)=\lambda^2\tilde\Pi+C e_t ,
 $$
 
 so the orbit leaves the line unless $C=0$; for $C=0$ the line $\mathbb{C}\tilde\Pi$ is invariant and the restriction is the complex map $\lambda\mapsto\lambda^2$ on the coordinate. For the pure square-zero elements and $C=0$, the orbit reaches $0$ in one step.
 
 **Proof.** $\tilde\Pi^2=\tilde\Pi$ gives $(\lambda\tilde\Pi)^2=\lambda^2\tilde\Pi$; adding $Ce_t$ leaves the line $\mathbb{C}\tilde\Pi$ exactly when $C=0$. For a square-zero $\tilde Q$, $\tilde Q^2=0$ and $F_0(\tilde Q)=0$.
 
-**Remark ($\tilde C=0$, the cone as a union of invariant lines).** For the parameter zero the cone is a union of complex lines through the origin, each mapped into itself with the square on the coordinate, and the induced map on the projective surface of lines is the identity. **The cone carries a foliation by invariant lines on which the dynamics is the scalar square**, and this is the only part of the biquaternion dynamics that is completely understood.
+**Remark ($\tilde Q_2=0$, the cone as a union of invariant lines).** For the parameter zero the cone is a union of complex lines through the origin, each mapped into itself with the square on the coordinate, and the induced map on the projective surface of lines is the identity. **The cone carries a foliation by invariant lines on which the dynamics is the scalar square**, and this is the only part of the biquaternion dynamics that is completely understood.
 
-**Remark (the cone is not invariant for $\tilde C\neq0$).** Adding a non-zero central parameter moves the point off the line and off the cone, because $Ce_t$ has norm $C^2$ and the sum of a norm-zero element with a norm-nonzero central element has norm $C^2\neq0$. **The cone is invariant for exactly one parameter, and the interaction of the cone with the rest of the space is a genuinely two-way coupling** for every other parameter.
+**Remark (the cone is not invariant for $\tilde Q_2\neq0$).** Adding a non-zero central parameter moves the point off the line and off the cone, because $Ce_t$ has norm $C^2$ and the sum of a norm-zero element with a norm-nonzero central element has norm $C^2\neq0$. **The cone is invariant for exactly one parameter, and the interaction of the cone with the rest of the space is a genuinely two-way coupling** for every other parameter.
 
 ## The Singular Julia Set
 
-**Definition.** Let $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ be the critical set of $F_{\tilde C}$, the union of the cone and the vector subspace (*The Biquaternion Quadratic Map and Its Julia Sets*). The **singular Julia set** of the parameter is
+**Definition.** Let $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ be the critical set of $F_{\tilde Q_2}$, the union of the cone and the vector subspace (*The Biquaternion Quadratic Map and Its Julia Sets*). The **singular Julia set** of the parameter is
 
 $$
-\Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B}),
+\Sigma_{\tilde Q_2}=J_{\tilde Q_2}\cap\Sigma(\mathbb{B}),
 $$
 
-and its two parts are the **zero-divisor part** $J_{\tilde C}\cap\mathscr{Z}$ and the **pure part** $J_{\tilde C}\cap\mathrm{Vect}(\mathbb{B})$.
+and its two parts are the **zero-divisor part** $J_{\tilde Q_2}\cap\mathscr{Z}$ and the **pure part** $J_{\tilde Q_2}\cap\mathrm{Vect}(\mathbb{B})$.
 
-The name records that on $\Sigma(\mathbb{B})$ the derivative of $F_{\tilde C}$ is singular, so the local dynamics is not locally invertible and the Julia set there is not a complex manifold; every quantitative statement about the fractal — the escape radius, the Green's function, the dimension — needs a separate argument on the singular set.
+The name records that on $\Sigma(\mathbb{B})$ the derivative of $F_{\tilde Q_2}$ is singular, so the local dynamics is not locally invertible and the Julia set there is not a complex manifold; every quantitative statement about the fractal — the escape radius, the Green's function, the dimension — needs a separate argument on the singular set.
 
-**Theorem (the idempotent manifold lies on the Julia set of the parameter zero).** For $\tilde C=0$, every idempotent $\tilde\Pi$ lies in $J_0$. The idempotents form the smooth complex surface $\{\tilde\Pi^2=\tilde\Pi\}$ inside the cone $\mathscr{Z}$, and hence
+**Theorem (the idempotent manifold lies on the Julia set of the parameter zero).** For $\tilde Q_2=0$, every idempotent $\tilde\Pi$ lies in $J_0$. The idempotents form the smooth complex surface $\{\tilde\Pi^2=\tilde\Pi\}$ inside the cone $\mathscr{Z}$, and hence
 
 $$
 \{\tilde\Pi : \tilde\Pi^2=\tilde\Pi\}\subset J_0\cap\mathscr{Z}=\Sigma_0\cap\mathscr{Z} .
@@ -95,8 +95,8 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde 
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $\mathscr{Z}=\{\langle\tilde Q\rangle_{\natural}=0,\ \tilde Q\neq0\}$ | the zero-divisor cone |
 | $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector part, the pure subspace |
-| $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set of $F_{\tilde C}$ |
-| $\Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B})$ | the singular Julia set |
+| $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set of $F_{\tilde Q_2}$ |
+| $\Sigma_{\tilde Q_2}=J_{\tilde Q_2}\cap\Sigma(\mathbb{B})$ | the singular Julia set |
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi^2=\tilde\Pi$ |
 | $\tau=2Q_t$ | the non-zero eigenvalue of $\mathsf{M}_2(\tilde Q)$ on the cone |
 | $\rho(\mathsf{M}_2(\tilde Q))$ | the spectral radius |

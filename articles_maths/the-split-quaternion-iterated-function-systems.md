@@ -12,7 +12,7 @@ Throughout, $\langle\cdot\rangle_{\natural}$ is the indefinite norm of signature
 
 ## Contractions in the Indefinite Metric
 
-**Proposition (the multiplicative part preserves the form up to a factor).** For $\tilde a,\tilde b\in\mathbb{H}_{\mathrm{s}}$ and $M(\tilde q)=\tilde a\tilde q\tilde b$, one has $\langle M(\tilde q)\rangle_{\natural}=\langle\tilde a\rangle_{\natural}\langle\tilde b\rangle_{\natural}\langle\tilde q\rangle_{\natural}$. Hence $M$ preserves the null cone and the two open cones $N>0$ and $N<0$, and it contracts the form when $|\langle\tilde a\rangle_{\natural}\langle\tilde b\rangle_{\natural}|<1$.
+**Proposition (the multiplicative part preserves the form up to a factor).** For the multiplicative part $M(\tilde q)=\tilde a\tilde q\tilde b$ of a similarity, one has $\langle M(\tilde q)\rangle_{\natural}=\langle\tilde a\rangle_{\natural}\langle\tilde b\rangle_{\natural}\langle\tilde q\rangle_{\natural}$. Hence $M$ preserves the null cone and the two open cones $N>0$ and $N<0$, and it contracts the form when $|\langle\tilde a\rangle_{\natural}\langle\tilde b\rangle_{\natural}|<1$.
 
 *Proof.* The norm is multiplicative, $\langle\tilde a\tilde q\tilde b\rangle_{\natural}=\langle\tilde a\rangle_{\natural}\langle\tilde q\rangle_{\natural}\langle\tilde b\rangle_{\natural}$, by *Split-Quaternion Norm and Invertibility*; the sets on which $\langle\cdot\rangle_{\natural}$ is positive, negative or zero are therefore permuted among themselves according as the sign of the factor, and the factor is $\langle\tilde a\tilde b\rangle_{\natural}=\langle\tilde a\rangle_{\natural}\langle\tilde b\rangle_{\natural}$.
 

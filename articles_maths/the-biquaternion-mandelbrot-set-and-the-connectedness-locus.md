@@ -2,26 +2,26 @@
 
 ## Introduction
 
-The Mandelbrot set is the set of complex parameters $C$ for which the orbit of the critical point $0$ under $\zeta\mapsto\zeta^2+C$ is bounded, and it is also the set for which the Julia set is connected. In the biquaternion algebra $\mathbb{B}$ the parameter is an element $\tilde C$ and not a complex number, the critical set is not a point but the union of the zero-divisor cone with the vector subspace $\mathrm{Vect}(\mathbb{B})$, and the two classical descriptions of the locus — the boundedness of the critical orbit and the connectedness of the Julia set — are no longer obviously the same. This article defines the connectedness locus and the critical-orbit locus, computes both on the subalgebras where the algebra is commutative and the reduction to the complex plane is exact, and records where the biquaternion answer is open.
+The Mandelbrot set is the set of complex parameters $C$ for which the orbit of the critical point $0$ under $\zeta\mapsto\zeta^2+C$ is bounded, and it is also the set for which the Julia set is connected. In the biquaternion algebra $\mathbb{B}$ the parameter is an element $\tilde Q_2$ and not a complex number, the critical set is not a point but the union of the zero-divisor cone with the vector subspace $\mathrm{Vect}(\mathbb{B})$, and the two classical descriptions of the locus — the boundedness of the critical orbit and the connectedness of the Julia set — are no longer obviously the same. This article defines the connectedness locus and the critical-orbit locus, computes both on the subalgebras where the algebra is commutative and the reduction to the complex plane is exact, and records where the biquaternion answer is open.
 
 The quadratic family, its filled Julia set, its Julia set and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*, and its derivative and holomorphy are *The Biquaternion Holomorphic Dynamics and the Jacobian*. The classical theory is *The Mandelbrot Set and the Quadratic Family*, *The Real Quadratic Family and Its Bifurcations* and *The Julia Sets of a Complex Polynomial*; the quaternion case is *The Quaternion Mandelbrot Set*; the two-variable complex theory is *Several Complex Variables* and the holomorphic dynamics of Part III. All are used here and none is restated.
 
 The article owns the definition of the connectedness locus and of the critical-orbit locus, the escape-time algorithm and the obstruction to a single escape radius, the exact reduction on the central and commutative slices, and the placement of the real, the complex and the quaternion parameter sweeps. It does not prove any connectedness criterion in the full algebra; that is stated as the open problem it is.
 
-**Standing convention.** The parameter is $\tilde C\in\mathbb{B}$, the map is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the general plain bilinear product, the filled Julia set is $\mathcal K_{\tilde C}$ and the Julia set is $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. A central parameter is written $\tilde C=Ce_t$ with $C\in\mathbb{C}$; the connectedness locus is written $\mathcal B$ and the critical-orbit locus $\mathcal C$.
+**Standing convention.** The parameter is $\tilde Q_2\in\mathbb{B}$, the map is $F_{\tilde Q_2}(\tilde Q)=\tilde Q^2+\tilde Q_2$ in the general plain bilinear product, the filled Julia set is $\mathcal K_{\tilde Q_2}$ and the Julia set is $J_{\tilde Q_2}=\partial\mathcal K_{\tilde Q_2}$. A central parameter is written $\tilde Q_2=Ce_t$ with $C\in\mathbb{C}$; the connectedness locus is written $\mathcal B$ and the critical-orbit locus $\mathcal C$.
 
 ## The Two Loci
 
 **Definition.** The **connectedness locus** is
 
 $$
-\mathcal B=\{\tilde C\in\mathbb{B} : J_{\tilde C} \text{ is connected}\},
+\mathcal B=\{\tilde Q_2\in\mathbb{B} : J_{\tilde Q_2} \text{ is connected}\},
 $$
 
 and the **critical-orbit locus** is
 
 $$
-\mathcal C=\{\tilde C\in\mathbb{B} : \text{the orbit of } 0 \text{ under } F_{\tilde C} \text{ is bounded}\}.
+\mathcal C=\{\tilde Q_2\in\mathbb{B} : \text{the orbit of } 0 \text{ under } F_{\tilde Q_2} \text{ is bounded}\}.
 $$
 
 **Remark (why the orbit of $0$ and not of every critical point).** In one variable the critical set is the single point $0$, so the two readings of the definition coincide. In $\mathbb{B}$ the critical set is the union of the zero-divisor cone with the vector subspace, it is unbounded, and it contains points with escaping orbits for every parameter, so the condition that *every* critical orbit be bounded is empty and cannot be the definition. The definition used here is the boundedness of the orbit of $0$, the point that is critical for every invariant complex plane, which is the condition tested by the escape-time algorithm and the one that reduces to the classical Mandelbrot set on the central slice.
@@ -54,13 +54,13 @@ $$
 \|\tilde Q^2\|_E\ge\delta^2\|\tilde Q\|_E^2 .
 $$
 
-Consequently, if $\delta^2\|\tilde Q\|_E^2-\|\tilde C\|_E>\|\tilde Q\|_E$, in particular for
+Consequently, if $\delta^2\|\tilde Q\|_E^2-\|\tilde Q_2\|_E>\|\tilde Q\|_E$, in particular for
 
 $$
-\|\tilde Q\|_E>R_\delta:=\frac{1+\sqrt{1+4\delta^2\|\tilde C\|_E}}{2\delta^2},
+\|\tilde Q\|_E>R_\delta:=\frac{1+\sqrt{1+4\delta^2\|\tilde Q_2\|_E}}{2\delta^2},
 $$
 
-then $\|F_{\tilde C}(\tilde Q)\|_E>\|\tilde Q\|_E$ and the orbit of $\tilde Q$ escapes.
+then $\|F_{\tilde Q_2}(\tilde Q)\|_E>\|\tilde Q\|_E$ and the orbit of $\tilde Q$ escapes.
 
 **Proof.** For a $2\times2$ matrix $A$, $\|A\|_F^2=\sigma_1(A)^2+\sigma_2(A)^2\ge2\sigma_2(A)^2$, so $\|A\|_F\ge\sqrt2\,\sigma_2(A)$; and $\sigma_2(M^2)\ge\sigma_2(M)^2$, because $\sigma_1\sigma_2=|\det|$, $\sigma_1$ is submultiplicative, and
 $$
@@ -78,17 +78,17 @@ and dividing by $\sqrt2$ gives $\|\tilde Q^2\|_E=\|M^2\|_F/\sqrt2\ge\delta^2\|\t
 
 ## The Central Slice
 
-**Proposition (the critical orbit of a central parameter is classical).** Let $\tilde C=Ce_t$. Then $F_{\tilde C}^n(0)=q_n(0)e_t$, where $q_n(0)$ is the $n$-th iterate of $0$ under $\zeta\mapsto\zeta^2+C$. In particular
+**Proposition (the critical orbit of a central parameter is classical).** Let $\tilde Q_2=Ce_t$. Then $F_{\tilde Q_2}^n(0)=q_n(0)e_t$, where $q_n(0)$ is the $n$-th iterate of $0$ under $\zeta\mapsto\zeta^2+C$. In particular
 
 $$
-0\in\mathcal C_{\text{central}}:=\{\tilde C=Ce_t : F_{\tilde C}^n(0) \text{ bounded}\} \iff C\in\mathcal M ,
+0\in\mathcal C_{\text{central}}:=\{\tilde Q_2=Ce_t : F_{\tilde Q_2}^n(0) \text{ bounded}\} \iff C\in\mathcal M ,
 $$
 
 the complex Mandelbrot set.
 
-**Proof.** $F_{\tilde C}(0)=\tilde C=Ce_t$, and $F_{\tilde C}(Ae_t)=A^2e_t+Ce_t=(A^2+C)e_t$ because $e_t$ is the identity and the parameter is central; induction gives the claim. Boundedness in $\mathbb{B}$ is the boundedness of the complex sequence, which is the definition of the Mandelbrot set.
+**Proof.** $F_{\tilde Q_2}(0)=\tilde Q_2=Ce_t$, and $F_{\tilde Q_2}(Ae_t)=A^2e_t+Ce_t=(A^2+C)e_t$ because $e_t$ is the identity and the parameter is central; induction gives the claim. Boundedness in $\mathbb{B}$ is the boundedness of the complex sequence, which is the definition of the Mandelbrot set.
 
-**Remark (the whole central slice is classical).** The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*: for a central parameter $\tilde C=Ce_t$ and a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde C}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. **The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.**
+**Remark (the whole central slice is classical).** The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*: for a central parameter $\tilde Q_2=Ce_t$ and a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde Q_2}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. **The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.**
 
 **Corollary (the centre is a slice of $\mathcal C$).** The intersection of $\mathcal C$ with the centre $\mathbb{C}_{\mathbb{B}}$ is the embedded copy of the Mandelbrot set $\mathcal M\subset\mathbb{C}$, under $C\mapsto Ce_t$.
 
@@ -102,7 +102,7 @@ $$
 W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'
 $$
 
-is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by $A\tilde\Pi+B\tilde\Pi'\mapsto(A,B)$; the product there is coordinatewise, and for a parameter $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ the restriction of $F_{\tilde C}$ to $W_{\tilde\Pi}$ is the pair of commuting complex quadratic maps
+is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$ by $A\tilde\Pi+B\tilde\Pi'\mapsto(A,B)$; the product there is coordinatewise, and for a parameter $\tilde Q_2=C_1\tilde\Pi+C_2\tilde\Pi'$ the restriction of $F_{\tilde Q_2}$ to $W_{\tilde\Pi}$ is the pair of commuting complex quadratic maps
 
 $$
 (A,B)\longmapsto(A^2+C_1,\;B^2+C_2).
@@ -111,7 +111,7 @@ $$
 Hence
 
 $$
-W_{\tilde\Pi}\cap\mathcal K_{\tilde C}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\} ,
+W_{\tilde\Pi}\cap\mathcal K_{\tilde Q_2}=K_{C_1}\times K_{C_2}, \qquad W_{\tilde\Pi}\cap\mathcal C=\{C_1\in\mathcal M\}\times\{C_2\in\mathcal M\} ,
 $$
 
 and the critical-orbit locus of the plane is the product $\mathcal M\times\mathcal M$. The general plain bilinear product therefore gives the **intersection** of the two conditions, not their union.
@@ -126,15 +126,15 @@ The parameter space is eight-real-dimensional, and the article records the three
 
 ### The Real Slice
 
-For $\tilde C=ce_t$ with $c\in\mathbb{R}$ the central parameter is real, the complex map has real coefficients, and the critical orbit is the real critical orbit of *The Real Quadratic Family and Its Bifurcations*. The slice is therefore the real interval $[-2,\tfrac14]$ of the classical theory, at the real axis of the embedded copy of $\mathcal M$, and on it the bifurcation structure is the one of the real quadratic family. The whole-picture symmetry is the full group of involutions $G$, since a real central parameter is fixed by every element of $G$ (*The Biquaternion Quadratic Map and Its Julia Sets*, §*The Conjugations and the Equivariance*).
+For $\tilde Q_2=ce_t$ with $c\in\mathbb{R}$ the central parameter is real, the complex map has real coefficients, and the critical orbit is the real critical orbit of *The Real Quadratic Family and Its Bifurcations*. The slice is therefore the real interval $[-2,\tfrac14]$ of the classical theory, at the real axis of the embedded copy of $\mathcal M$, and on it the bifurcation structure is the one of the real quadratic family. The whole-picture symmetry is the full group of involutions $G$, since a real central parameter is fixed by every element of $G$ (*The Biquaternion Quadratic Map and Its Julia Sets*, §*The Conjugations and the Equivariance*).
 
 ### The Complex Slice
 
-For $\tilde C=Ce_t$ with $C\in\mathbb{C}$ the slice is the whole classical Mandelbrot set, by the corollary of §*The Central Slice*, and its symmetry is the subgroup $\{\mathrm{id},{}^{\natural}\}$ together with the single reflection $C\mapsto\bar C$ of the complex plane, which is not one of the four biquaternion conjugations but the bar restricted to the centre. It is the slice on which the biquaternion escape-time picture coincides with the classical one, and is the picture usually shown as "the biquaternion Mandelbrot set".
+For $\tilde Q_2=Ce_t$ with $C\in\mathbb{C}$ the slice is the whole classical Mandelbrot set, by the corollary of §*The Central Slice*, and its symmetry is the subgroup $\{\mathrm{id},{}^{\natural}\}$ together with the single reflection $C\mapsto\bar C$ of the complex plane, which is not one of the four biquaternion conjugations but the bar restricted to the centre. It is the slice on which the biquaternion escape-time picture coincides with the classical one, and is the picture usually shown as "the biquaternion Mandelbrot set".
 
 ### The Quaternion Slice
 
-For $\tilde C\in\mathbb{H}_{\mathbb{B}}$, the real quaternion subspace, the algebra is not commutative and the reduction to the centre does not apply; but the parameter lies in a division subalgebra, the norm is real and positive definite there, and the slice reproduces the quaternion Mandelbrot set of *The Quaternion Mandelbrot Set*. The slice is the computable three-dimensional picture, and it is the one on which the classical escape radius is available, since the quaternion subspace is a division algebra.
+For $\tilde Q_2\in\mathbb{H}_{\mathbb{B}}$, the real quaternion subspace, the algebra is not commutative and the reduction to the centre does not apply; but the parameter lies in a division subalgebra, the norm is real and positive definite there, and the slice reproduces the quaternion Mandelbrot set of *The Quaternion Mandelbrot Set*. The slice is the computable three-dimensional picture, and it is the one on which the classical escape radius is available, since the quaternion subspace is a division algebra.
 
 **Remark (the warning).** The three slices are different sets, and a picture of "the biquaternion Mandelbrot set" is a picture of a slice. **Every visualisation must state its slice, and no slice is canonical.** The warning is made in full in *The Slices of the Biquaternion Julia Sets*, where it belongs.
 
@@ -146,9 +146,9 @@ The connectedness locus $\mathcal B$ and the critical-orbit locus $\mathcal C$ a
 
 | symbol | meaning |
 |---|---|
-| $\tilde C$ | the biquaternion parameter |
-| $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ | the quadratic family |
-| $\mathcal K_{\tilde C}$, $J_{\tilde C}$ | the filled Julia set and the Julia set |
+| $\tilde Q_2$ | the biquaternion parameter |
+| $F_{\tilde Q_2}(\tilde Q)=\tilde Q^2+\tilde Q_2$ | the quadratic family |
+| $\mathcal K_{\tilde Q_2}$, $J_{\tilde Q_2}$ | the filled Julia set and the Julia set |
 | $\mathcal B$ | the connectedness locus |
 | $\mathcal C$ | the critical-orbit locus, the biquaternion Mandelbrot set |
 | $\mathcal M$, $K_C$ | the complex Mandelbrot set and filled Julia set |

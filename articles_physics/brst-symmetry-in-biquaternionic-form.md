@@ -18,7 +18,7 @@ The Faddeev–Popov procedure that produces the ghost Lagrangian from the path-i
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the classical non-abelian equations of motion.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the argument that the ladder algebra, like the Grassmann coordinates, is not native to $\mathbb{B}$.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is $\tilde{A}\in\mathbb{M}_-$, the gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k\vec e_k\,\partial/\partial Q_k$, and the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the traceless material part of $\tilde{\nabla}^{\natural}\tilde{A}$. A Lie algebra of a simple gauge group is realized inside the framework by the commutator, the canonical example being $\mathrm{SU}(2)$ with the Hermitian generators $T^a=ie_a\in\mathbb{M}_+$, the brackets $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$ and the real structure constants $f^{abc}=2\varepsilon^{abc}$; equivalently, in its anti-Hermitian normalization the same algebra is the compact form $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ with $[\vec e_\mu,\vec e_\nu]=2\varepsilon_{\mu\nu\lambda}\vec e_\lambda$. The gauge coupling is $g$, the structure constants are $f^{abc}$, and the covariant derivative is $D_\mu=\partial/\partial Q_\mu+gA_\mu$ in the appropriate representation. Ghosts are Grassmann-odd fields, taking values in the Grassmann envelope $\mathbb{B}\otimes\Lambda$ of the algebra; the graded Leibniz rule is $s(\tilde{Q}\tilde{Q}_1)=(s\tilde{Q})\tilde{Q}_1+(-1)^{|\tilde{Q}|}\tilde{Q}(s\tilde{Q}_1)$ with $|\tilde{Q}|$ the Grassmann parity.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is $\tilde{A}\in\mathbb{M}_-$, the gradient is $\tilde{\nabla}=e_t\partial/\partial Q_{1t}+\sum_k\vec e_k\,\partial/\partial Q_k$, and the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the traceless material part of $\tilde{\nabla}^{\natural}\tilde{A}$. A Lie algebra of a simple gauge group is realized inside the framework by the commutator, the canonical example being $\mathrm{SU}(2)$ with the Hermitian generators $T^a=ie_a\in\mathbb{M}_+$, the brackets $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$ and the real structure constants $f^{abc}=2\varepsilon^{abc}$; equivalently, in its anti-Hermitian normalization the same algebra is the compact form $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ with $[\vec e_\mu,\vec e_\nu]=2\varepsilon_{\mu\nu\lambda}\vec e_\lambda$. The gauge coupling is $g$, the structure constants are $f^{abc}$, and the covariant derivative is $D_\mu=\partial/\partial Q_{1,\mu}+gA_\mu$ in the appropriate representation. Ghosts are Grassmann-odd fields, taking values in the Grassmann envelope $\mathbb{B}\otimes\Lambda$ of the algebra; the graded Leibniz rule is $s(\tilde{Q}_1\tilde{Q}_2)=(s\tilde{Q}_1)\tilde{Q}_2+(-1)^{|\tilde{Q}_1|}\tilde{Q}_1(s\tilde{Q}_2)$ with $|\tilde{Q}_1|$ the Grassmann parity.
 
 ## The Gauge-Fixing Problem and the Ghost Fields
 
@@ -32,7 +32,7 @@ $$
 \mathcal{L}_{\mathrm{gh}} = -\,\bar{c}\,\Box\,c,
 $$
 
-with $\xi$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\xi^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\xi}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $B^a\partial/\partial Q_\mu A^{a\mu}+\tfrac12\xi B^aB^a$ and the ghost term $-\bar{c}^a\partial/\partial Q_\mu(D^\mu c)^a$, with $D_\mu c^a=\partial/\partial Q_\mu c^a+g f^{abc}A_\mu^b c^c$.
+with $\xi$ the gauge parameter. The field $B$ is auxiliary — its equation of motion is $B=-\xi^{-1}\langle\tilde\nabla,\tilde A\rangle_{\natural}$, and eliminating it returns the familiar $-\tfrac{1}{2\xi}(\partial\cdot A)^2$ gauge fixing — and the ghosts are the fields that the Faddeev–Popov determinant contributes. For the non-abelian theory the same structure holds with the gauge-fixing term $B^a\partial/\partial Q_{1,\mu} A^{a\mu}+\tfrac12\xi B^aB^a$ and the ghost term $-\bar{c}^a\partial/\partial Q_{1,\mu}(D^\mu c)^a$, with $D_\mu c^a=\partial/\partial Q_{1,\mu} c^a+g f^{abc}A_\mu^b c^c$.
 
 The gauge-fixed Lagrangian $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}$ is no longer gauge invariant — the gauge invariance has been destroyed by the gauge-fixing term — but it carries a new invariance that replaces it.
 
@@ -65,7 +65,7 @@ so that the structure constants are $f^{abc}=2\varepsilon^{abc}$, and the genera
 The BRST transformation is a Grassmann-odd derivation $s$ of the field algebra. On the abelian fields it acts as
 
 $$
-sA_\mu = \partial/\partial Q_\mu c,
+sA_\mu = \partial/\partial Q_{1,\mu} c,
 \qquad
 sc = 0,
 \qquad
@@ -77,7 +77,7 @@ $$
 and on the non-abelian fields as
 
 $$
-sA_\mu^a = (D_\mu c)^a = \partial/\partial Q_\mu c^a+g f^{abc}A_\mu^b c^c,
+sA_\mu^a = (D_\mu c)^a = \partial/\partial Q_{1,\mu} c^a+g f^{abc}A_\mu^b c^c,
 \qquad
 sc^a = -\tfrac{g}{2}f^{abc}c^bc^c,
 \qquad
@@ -93,7 +93,7 @@ The transformation on the gauge field is the gauge transformation $\delta A_\mu^
 The abelian case is immediate. Since $s$ is a derivation of Grassmann parity one and $c$ is odd,
 
 $$
-s^2 A_\mu = s(\partial/\partial Q_\mu c) = \partial/\partial Q_\mu(sc) = 0,
+s^2 A_\mu = s(\partial/\partial Q_{1,\mu} c) = \partial/\partial Q_{1,\mu}(sc) = 0,
 \qquad
 s^2 c = 0,
 \qquad
@@ -109,10 +109,10 @@ The only nonvanishing entry is $s\bar{c}=B$, and $B$ is annihilated by $s$. Henc
 The non-abelian case is where the identity is needed. Applying $s$ to $sA_\mu^a$ and using the graded Leibniz rule,
 
 $$
-s^2A_\mu^a = \partial/\partial Q_\mu(sc^a)+gf^{abc}\left[(sA_\mu^b)c^c+A_\mu^b(sc^c)\right].
+s^2A_\mu^a = \partial/\partial Q_{1,\mu}(sc^a)+gf^{abc}\left[(sA_\mu^b)c^c+A_\mu^b(sc^c)\right].
 $$
 
-The two derivative pieces cancel between themselves: $\partial/\partial Q_\mu(sc^a)=-\tfrac{g}{2}f^{abc}\partial/\partial Q_\mu(c^bc^c)$ and $(sA_\mu^b)c^c$ contributes $gf^{abc}(\partial/\partial Q_\mu c^b)c^c$, and since $\partial/\partial Q_\mu(c^bc^c)=(\partial/\partial Q_\mu c^b)c^c+c^b\partial/\partial Q_\mu c^c$ while the antisymmetry of $f^{abc}$ in its last two indices converts $f^{abc}c^b\partial/\partial Q_\mu c^c$ into $f^{abc}(\partial/\partial Q_\mu c^b)c^c$, their sum is $gf^{abc}\left[-(\partial/\partial Q_\mu c^b)c^c+(\partial/\partial Q_\mu c^b)c^c\right]=0$. What survives is the $A$-dependent part,
+The two derivative pieces cancel between themselves: $\partial/\partial Q_{1,\mu}(sc^a)=-\tfrac{g}{2}f^{abc}\partial/\partial Q_{1,\mu}(c^bc^c)$ and $(sA_\mu^b)c^c$ contributes $gf^{abc}(\partial/\partial Q_{1,\mu} c^b)c^c$, and since $\partial/\partial Q_{1,\mu}(c^bc^c)=(\partial/\partial Q_{1,\mu} c^b)c^c+c^b\partial/\partial Q_{1,\mu} c^c$ while the antisymmetry of $f^{abc}$ in its last two indices converts $f^{abc}c^b\partial/\partial Q_{1,\mu} c^c$ into $f^{abc}(\partial/\partial Q_{1,\mu} c^b)c^c$, their sum is $gf^{abc}\left[-(\partial/\partial Q_{1,\mu} c^b)c^c+(\partial/\partial Q_{1,\mu} c^b)c^c\right]=0$. What survives is the $A$-dependent part,
 
 $$
 s^2A_\mu^a
@@ -140,8 +140,8 @@ Both nilpotency conditions were verified: with the $\mathrm{SU}(2)$ structure co
 In the biquaternion framework the Jacobi identity is not an independent postulate. The gauge algebra is realized by the commutator inside $\mathbb{B}$, and the commutator of a real associative algebra automatically satisfies the Jacobi identity:
 
 $$
-[[\tilde{Q},\tilde{Q}_1],\tilde{S}]+[[\tilde{Q}_1,\tilde{S}],\tilde{Q}]+[[\tilde{S},\tilde{Q}],\tilde{Q}_1]=0
-\qquad\text{for all }\tilde{Q},\tilde{Q}_1,\tilde{S}\in\mathbb{B},
+[[\tilde{Q}_1,\tilde{Q}_2],\tilde{S}]+[[\tilde{Q}_2,\tilde{S}],\tilde{Q}_1]+[[\tilde{S},\tilde{Q}_1],\tilde{Q}_2]=0
+\qquad\text{for all }\tilde{Q}_1,\tilde{Q}_2,\tilde{S}\in\mathbb{B},
 $$
 
 which is a rearrangement of the associativity of the product. For the realization $\mathrm{SU}(2)=\mathrm{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ the identity is exactly the statement that quaternion multiplication is associative, and the numerical check of the Jacobi combination for $f^{abc}=\varepsilon^{abc}$ returning zero is a check of that associativity through a chain of identifications.
@@ -163,7 +163,7 @@ $$
 \Psi = \bar{c}\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}+\tfrac{\xi}{2}B\right)
 \qquad\text{(abelian)},
 \qquad
-\Psi = \bar{c}^a\left(\partial/\partial Q_\mu A^{a\mu}+\tfrac{\xi}{2}B^a\right)
+\Psi = \bar{c}^a\left(\partial/\partial Q_{1,\mu} A^{a\mu}+\tfrac{\xi}{2}B^a\right)
 \qquad\text{(non-abelian)} .
 $$
 
@@ -187,7 +187,7 @@ $$
 s\mathcal{L} = s\mathcal{L}_{\mathrm{gauge}} + s^2\Psi = 0 .
 $$
 
-The non-abelian case is the same computation with the covariant derivative, $s\Psi=B^a\partial/\partial Q_\mu A^{a\mu}+\tfrac{\xi}{2}B^aB^a-\bar{c}^a\partial/\partial Q_\mu(D^\mu c)^a$, so that the ghost Lagrangian is $-\bar{c}^a\partial/\partial Q_\mu(D^\mu c)^a$ and the gauge-fixing Lagrangian is $B^a\partial/\partial Q_\mu A^{a\mu}+\tfrac{\xi}{2}B^aB^a$.
+The non-abelian case is the same computation with the covariant derivative, $s\Psi=B^a\partial/\partial Q_{1,\mu} A^{a\mu}+\tfrac{\xi}{2}B^aB^a-\bar{c}^a\partial/\partial Q_{1,\mu}(D^\mu c)^a$, so that the ghost Lagrangian is $-\bar{c}^a\partial/\partial Q_{1,\mu}(D^\mu c)^a$ and the gauge-fixing Lagrangian is $B^a\partial/\partial Q_{1,\mu} A^{a\mu}+\tfrac{\xi}{2}B^aB^a$.
 
 The structure of the result is the reason BRST is the natural framework for gauge theories: the entire unphysical sector — gauge-fixing term and ghosts — is the image of $s$, and the physical content is what remains after the image is quotiented out. In the biquaternion framework the statement is that $\Psi$ is a Grassmann-odd element of the envelope, $s\Psi$ is its image, and the physical states are the cohomology of $s$, as below.
 
@@ -210,7 +210,7 @@ $$
 and extended to products and to composite operators by additivity. The BRST operator raises the ghost number by one,
 
 $$
-\mathrm{gh}(s\tilde{Q})=\mathrm{gh}(\tilde{Q})+1,
+\mathrm{gh}(s\tilde{Q}_1)=\mathrm{gh}(\tilde{Q}_1)+1,
 $$
 
 so that $s$ is a cochain map of degree $+1$ on the graded algebra, and $s^2=0$ makes the pair $(\mathbb{B}\otimes\Lambda,s)$ into a **cochain complex**, the BRST complex. The gauge-fixing fermion has ghost number $-1$, consistent with $s\Psi$ having ghost number $0$.
@@ -222,10 +222,10 @@ Because the transformation is a symmetry of the action, it has a conserved charg
 $$
 \mathcal{Q}^2 = 0,
 \qquad
-s\tilde{Q} = [i\mathcal{Q},\tilde{Q}]_\pm ,
+s\tilde{Q}_1 = [i\mathcal{Q},\tilde{Q}_1]_\pm ,
 $$
 
-the bracket being a commutator for even $\tilde{Q}$ and an anticommutator for odd $\tilde{Q}$. The nilpotency $\mathcal{Q}^2=0$ is the operator statement of $s^2=0$, and the charge is the generator of the symmetry in the same sense that the ordinary gauge charge generates the gauge transformation. In the biquaternion framework the charge is a Grassmann-odd operator on the Fock space of the gauge and ghost fields; it is not an element of $\mathbb{B}$, for the same reason the ghosts are not.
+the bracket being a commutator for even $\tilde{Q}_1$ and an anticommutator for odd $\tilde{Q}_1$. The nilpotency $\mathcal{Q}^2=0$ is the operator statement of $s^2=0$, and the charge is the generator of the symmetry in the same sense that the ordinary gauge charge generates the gauge transformation. In the biquaternion framework the charge is a Grassmann-odd operator on the Fock space of the gauge and ghost fields; it is not an element of $\mathbb{B}$, for the same reason the ghosts are not.
 
 ### Physical States
 
@@ -282,17 +282,17 @@ What the framework does not supply is the Grassmann envelope itself. The algebra
 | $\tilde{A}=iA_te_t+\vec A\in\mathbb{M}_-$ | Gauge potential biquaternion |
 | $T^a=ie_a$, $[T^a,T^b]=2i\varepsilon^{abc}T^c$ | $\mathrm{SU}(2)$ generators realized by the commutator |
 | $f^{abc}$ | Structure constants; Jacobi identity required for nilpotency |
-| $g$, $D_\mu=\partial/\partial Q_\mu+gA_\mu$ | Coupling and covariant derivative |
+| $g$, $D_\mu=\partial/\partial Q_{1,\mu}+gA_\mu$ | Coupling and covariant derivative |
 | $c,\bar{c}$ | Faddeev–Popov ghost and antighost, Grassmann-odd |
 | $B$ | Nakanishi–Lautrup auxiliary field |
 | $\xi$ | Gauge parameter |
 | $\mathbb{B}\otimes\Lambda$, $\Lambda=\Lambda^0\oplus\Lambda^1$ | Grassmann envelope; adjoined odd coordinates |
-| $s$ | BRST operator: Grassmann-odd derivation, $\mathrm{gh}(s\tilde{Q})=\mathrm{gh}(\tilde{Q})+1$ |
+| $s$ | BRST operator: Grassmann-odd derivation, $\mathrm{gh}(s\tilde{Q}_1)=\mathrm{gh}(\tilde{Q}_1)+1$ |
 | $sA_\mu^a=(D_\mu c)^a$, $sc^a=-\tfrac{g}{2}f^{abc}c^bc^c$, $s\bar{c}^a=B^a$, $sB^a=0$ | Non-abelian BRST transformations |
 | $s^2=0$ | Nilpotency; from Jacobi, hence from associativity of $\mathbb{B}$ |
-| $\Psi=\bar{c}^a(\partial/\partial Q_\mu A^{a\mu}+\tfrac{\xi}{2}B^a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\Psi$ |
+| $\Psi=\bar{c}^a(\partial/\partial Q_{1,\mu} A^{a\mu}+\tfrac{\xi}{2}B^a)$ | Gauge-fixing fermion, $\mathcal{L}=\mathcal{L}_{\mathrm{gauge}}+s\Psi$ |
 | $\mathrm{gh}(\tilde{A})=0$, $\mathrm{gh}(c)=+1$, $\mathrm{gh}(\bar{c})=-1$, $\mathrm{gh}(B)=0$ | Ghost number |
-| $\mathcal{Q}$, $\mathcal{Q}^2=0$, $s\tilde{Q}=[i\mathcal{Q},\tilde{Q}]_\pm$ | BRST charge |
+| $\mathcal{Q}$, $\mathcal{Q}^2=0$, $s\tilde{Q}_1=[i\mathcal{Q},\tilde{Q}_1]_\pm$ | BRST charge |
 | $\mathcal{H}_{\mathrm{phys}}=\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}\big|_{\mathrm{gh}=0}$ | Physical states as BRST cohomology |
 | Kugo–Ojima quartet | $(A_t,A_z,c,\bar{c})$ zero-norm pairs removed by the cohomology |
 

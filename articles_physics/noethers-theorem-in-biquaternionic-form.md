@@ -15,7 +15,7 @@ whose integrand is built from the biquaternion norm of the displacement biquater
 **Two kinds of symmetry.** A relativistic action has
 
 - **internal** symmetries, which do not move the spacetime point — here the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and
-- **spacetime** symmetries, the Poincaré transformations — four translations $\tilde{R}\mapsto\tilde{R}+\tilde{a}$ and six Lorentz transformations $\tilde{R}\mapsto\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.
+- **spacetime** symmetries, the Poincaré transformations — four translations $\tilde{R}\mapsto\tilde{R}+\tilde{a}$ and six Lorentz transformations $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.
 
 The internal case produces a current biquaternion $\tilde{J}\in\mathbb{M}_-$ with $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, the framework form of $\partial/\partial Q_\mu J^\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.
 
@@ -165,7 +165,7 @@ $$
 \qquad (\tilde{V} = \gamma(ic\,e_t + \vec v)).
 $$
 
-The mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $d\tilde{P}/d\tau = 0$, because $L$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\vec p = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\vec e_x$ with $\psi = 1.2$: the biquaternion norm is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.
+The mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ follows. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $d\tilde{P}/d\tau = 0$, because $L$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\vec p = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde U = \cosh(\psi/2) + i\sinh(\psi/2)\vec e_x$ with $\psi = 1.2$: the biquaternion norm is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.
 
 **The conservation law for a system, stated correctly.** For an isolated system of bodies $a$ the conserved object is the **total** four-momentum, and the correct statement is
 

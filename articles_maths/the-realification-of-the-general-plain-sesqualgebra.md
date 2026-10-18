@@ -44,7 +44,7 @@ $$
 
 The two families of multiplications of the block have **opposite parities** (*The Left and Right Multiplications of the Biquaternioid Sesqualgebra*):
 $$
-L_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1\ \text{ is conjugate-linear},\qquad R_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A\ \text{ is linear},
+L_{\tilde Q_4}(\tilde Q_1)=\tilde Q_4\star\tilde Q_1\ \text{ is conjugate-linear},\qquad R_{\tilde Q_4}(\tilde Q_1)=\tilde Q_1\star\tilde Q_4\ \text{ is linear},
 $$
 because the conjugation sits in the second slot alone. Read over $\mathbb{R}$ the two parities are the two summands of the space of the real operators. Every $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$ splits as the sum of a commuting and an anticommuting one,
 $$
@@ -52,19 +52,19 @@ $$
 $$
 of real dimensions $32$ and $32$, and the two families of the block lie in the two different summands:
 $$
-L_{\tilde A}J=-J L_{\tilde A},\qquad R_{\tilde A}J=+J R_{\tilde A}.
+L_{\tilde Q_4}J=-J L_{\tilde Q_4},\qquad R_{\tilde Q_4}J=+J R_{\tilde Q_4}.
 $$
 In the real basis the two criteria are the two block shapes,
 $$
-R_{\tilde A}\rightsquigarrow\begin{pmatrix}A&-B\\B&A\end{pmatrix},\qquad L_{\tilde A}\rightsquigarrow\begin{pmatrix}A&B\\B&-A\end{pmatrix},
+R_{\tilde Q_4}\rightsquigarrow\begin{pmatrix}A&-B\\B&A\end{pmatrix},\qquad L_{\tilde Q_4}\rightsquigarrow\begin{pmatrix}A&B\\B&-A\end{pmatrix},
 $$
 the first commuting with $J$ and the second anticommuting with it.
 
-Two consequences follow, the first of them the block's own. First, the right multiplication of the block is the plain right multiplication at the conjugated index, $\tilde Q_1\star\tilde A=\tilde Q_1\tilde A^{*}$, so the right family closes in the **forward** order,
+Two consequences follow, the first of them the block's own. First, the right multiplication of the block is the plain right multiplication at the conjugated index, $\tilde Q_1\star\tilde Q_4=\tilde Q_1\tilde Q_4^{*}$, so the right family closes in the **forward** order,
 $$
-R_{\tilde A}R_{\tilde Q_3}=R_{\tilde A\tilde Q_3},
+R_{\tilde Q_4}R_{\tilde Q_3}=R_{\tilde Q_4\tilde Q_3},
 $$
-and $\tilde A\mapsto R_{\tilde A}$ is an injective $\mathbb{R}$-algebra homomorphism of $\mathbb{B}$ into $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$: over $\mathbb{R}$ the right family is the regular representation of the ring by endomorphisms, which neither family is over $\mathbb{C}$, the left multiplications being $\mathbb{C}$-linear in their parameter and conjugate-linear in their argument, the right multiplications the reverse. Over $\mathbb{C}$ the right regular map is conjugate-linear in its parameter, $R_{\lambda\tilde A}=\overline{\lambda}R_{\tilde A}$, and no nonzero left multiplication is $\mathbb{C}$-linear (*the obstruction*); the two statements are the same parity mismatch read on the two sides. Second, the left family does not close, $L_{\tilde A}L_{\tilde Q_3}=T_{\tilde A,\tilde Q_3^{*}}$, and its nonzero composites are two-sided multiplications, hence $\mathbb{C}$-linear, hence no longer left multiplications. The two sides of the block therefore straddle the two summands of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$, the left multiplications on the conjugate-linear side and the right multiplications on the $\mathbb{C}$-linear one. The general quaternionic sesqualgebra splits in the same way, its second slot carrying the star as well; what belongs to the block alone is the composition of the right family, $R_{\tilde A}R_{\tilde Q_3}=R_{\tilde A\tilde Q_3}$ in the plain product of the parameters, where the general quaternionic sesqualgebra has a two-sided multiplication and no law, since its right multiplication reads the first slot. The block is the right-handed mirror of that structure, whose twist sits in the first slot (*The Specificities of the General Plain Sesqualgebra*).
+and $\tilde Q_4\mapsto R_{\tilde Q_4}$ is an injective $\mathbb{R}$-algebra homomorphism of $\mathbb{B}$ into $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$: over $\mathbb{R}$ the right family is the regular representation of the ring by endomorphisms, which neither family is over $\mathbb{C}$, the left multiplications being $\mathbb{C}$-linear in their parameter and conjugate-linear in their argument, the right multiplications the reverse. Over $\mathbb{C}$ the right regular map is conjugate-linear in its parameter, $R_{\lambda\tilde Q_4}=\overline{\lambda}R_{\tilde Q_4}$, and no nonzero left multiplication is $\mathbb{C}$-linear (*the obstruction*); the two statements are the same parity mismatch read on the two sides. Second, the left family does not close, $L_{\tilde Q_4}L_{\tilde Q_3}=T_{\tilde Q_4,\tilde Q_3^{*}}$, and its nonzero composites are two-sided multiplications, hence $\mathbb{C}$-linear, hence no longer left multiplications. The two sides of the block therefore straddle the two summands of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$, the left multiplications on the conjugate-linear side and the right multiplications on the $\mathbb{C}$-linear one. The general quaternionic sesqualgebra splits in the same way, its second slot carrying the star as well; what belongs to the block alone is the composition of the right family, $R_{\tilde Q_4}R_{\tilde Q_3}=R_{\tilde Q_4\tilde Q_3}$ in the plain product of the parameters, where the general quaternionic sesqualgebra has a two-sided multiplication and no law, since its right multiplication reads the first slot. The block is the right-handed mirror of that structure, whose twist sits in the first slot (*The Specificities of the General Plain Sesqualgebra*).
 
 ## The Realified Form
 
@@ -127,9 +127,9 @@ S_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3^{*}\tilde Q_2^{*},\qq
 $$
 The four kinds split by parity in the same way as the two families: $T$ and $R$ are $\mathbb{C}$-linear and commute with $J$, $S$ and $L$ are conjugate-linear and anticommute with $J$. The composition laws are those of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, and they are laws of the real operators:
 $$
-L_{\tilde A}L_{\tilde Q_3}=T_{\tilde A,\tilde Q_3^{*}},\qquad R_{\tilde A}R_{\tilde Q_3}=R_{\tilde A\tilde Q_3},\qquad L_{\tilde A}R_{\tilde Q_3}=L_{\tilde A\tilde Q_3},\qquad R_{\tilde A}L_{\tilde Q_3}=S_{\tilde Q_3,\tilde A}.
+L_{\tilde Q_4}L_{\tilde Q_3}=T_{\tilde Q_4,\tilde Q_3^{*}},\qquad R_{\tilde Q_4}R_{\tilde Q_3}=R_{\tilde Q_4\tilde Q_3},\qquad L_{\tilde Q_4}R_{\tilde Q_3}=L_{\tilde Q_4\tilde Q_3},\qquad R_{\tilde Q_4}L_{\tilde Q_3}=S_{\tilde Q_3,\tilde Q_4}.
 $$
-The right family is a monoid under composition, generated by the right multiplications alone and isomorphic to the multiplicative monoid of $\mathbb{B}$ in the forward order; the left family is not, and its square lands in the two-sided multiplications; the ordinary two-sided multiplication and the sandwich are the two operators of *The Sesquilinear Sandwich on the Biquaternioid*, and the two-sided operator $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{*}$ is that of *Two-Sided Operators on the General Plain Sesqualgebra*. The adjoints of the four kinds for the form $\langle\cdot,\cdot\rangle_{*}$ are the one calculus of *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*, which carries the two one-sided families, the ordinary two-sided multiplication and the sandwich, and those for the realified forms are of the real-linear kind, the Euclidean adjoint being the one of the form of this article. The inversion of the operators is a statement about the ring and does not move: $\bigl(R_{\tilde A}\bigr)^{-1}=R_{\tilde A^{-1}}$ on the units, whose criterion is $\langle\tilde A\rangle_{\natural}\neq0$ as before.
+The right family is a monoid under composition, generated by the right multiplications alone and isomorphic to the multiplicative monoid of $\mathbb{B}$ in the forward order; the left family is not, and its square lands in the two-sided multiplications; the ordinary two-sided multiplication and the sandwich are the two operators of *The Sesquilinear Sandwich on the Biquaternioid*, and the two-sided operator $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{*}$ is that of *Two-Sided Operators on the General Plain Sesqualgebra*. The adjoints of the four kinds for the form $\langle\cdot,\cdot\rangle_{*}$ are the one calculus of *The Adjoint of the Sesquilinear Sandwich on the Biquaternioid*, which carries the two one-sided families, the ordinary two-sided multiplication and the sandwich, and those for the realified forms are of the real-linear kind, the Euclidean adjoint being the one of the form of this article. The inversion of the operators is a statement about the ring and does not move: $\bigl(R_{\tilde Q_4}\bigr)^{-1}=R_{\tilde Q_4^{-1}}$ on the units, whose criterion is $\langle\tilde Q_4\rangle_{\natural}\neq0$ as before.
 
 ## Summary
 
@@ -143,8 +143,8 @@ The general plain sesqualgebra read over $\mathbb{R}$ is the same product on the
 | $\mathbb{R}^8$ | the realification of $\mathbb{B}$, the eight real basis elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the ring, read as the field of scalars |
 | $J$ | the complex structure, multiplication by $i$, of square $-1$ |
-| $L_{\tilde A}J=-JL_{\tilde A}$ | the left multiplications, conjugate-linear, the anticommuting summand |
-| $R_{\tilde A}J=+JR_{\tilde A}$, $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*}$ | the right multiplications, $\mathbb{C}$-linear, the commuting summand; the plain right multiplication at the conjugated index |
+| $L_{\tilde Q_4}J=-JL_{\tilde Q_4}$ | the left multiplications, conjugate-linear, the anticommuting summand |
+| $R_{\tilde Q_4}J=+JR_{\tilde Q_4}$, $R_{\tilde Q_4}(\tilde Q_1)=\tilde Q_1\tilde Q_4^{*}$ | the right multiplications, $\mathbb{C}$-linear, the commuting summand; the plain right multiplication at the conjugated index |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the Hermitian form the product carries |
 | $(8,0)$ | the signature of its realification, the Euclidean form of the eight real coordinates |
 | $g=H_{\mathbb{R}}$, $\sigma=\operatorname{Im}H$ | the Euclidean form and its companion, $\sigma(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,J\tilde Q_2)$, of rank $8$ |

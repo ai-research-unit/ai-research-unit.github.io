@@ -8,43 +8,43 @@ The algebra and the four general products are *Introduction to the Biquaternion 
 
 The article owns the three kinds of affine map, the contraction criterion, the attractor theorem, the similarity case with real quaternionic multipliers, the inverse-branch system of the quadratic map and the degeneracy of the square root at the cone. It does not re-derive the classical theory and does not treat the dimension of the quadratic fractal, which is *The Hausdorff Dimension of the Biquaternion Julia Sets*.
 
-**Standing convention.** The metric is the Euclidean norm $\|\cdot\|_E$ on $\mathbb{B}\cong\mathbb{R}^8$, and $\|L_{\tilde A}\|$, $\|R_{\tilde A}\|$ are the operator norms of left and right multiplication by $\tilde A$. Maps are written $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$ unless the two-sided case is meant.
+**Standing convention.** The metric is the Euclidean norm $\|\cdot\|_E$ on $\mathbb{B}\cong\mathbb{R}^8$, and $\|L_{\tilde Q_1}\|$, $\|R_{\tilde Q_1}\|$ are the operator norms of left and right multiplication by $\tilde Q_1$. Maps are written $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ unless the two-sided case is meant.
 
 ## The Three Kinds of Affine Map
 
 **Definition.** An **affine map** of the algebra is a map of the form
 
 $$
-\tilde Q\longmapsto \tilde A\tilde Q+\tilde B \ (\text{left-affine}), \qquad \tilde Q\longmapsto\tilde Q\tilde A+\tilde B\ (\text{right-affine}), \qquad \tilde Q\longmapsto\tilde A\tilde Q\tilde C+\tilde B\ (\text{two-sided}).
+\tilde Q\longmapsto \tilde Q_1\tilde Q+\tilde Q_2 \ (\text{left-affine}), \qquad \tilde Q\longmapsto\tilde Q\tilde Q_1+\tilde Q_2\ (\text{right-affine}), \qquad \tilde Q\longmapsto\tilde Q_1\tilde Q\tilde Q_3+\tilde Q_2\ (\text{two-sided}).
 $$
 
-The three families are nested; a left-affine map is two-sided with $\tilde C=e_t$, and the two-sided form is the general shape of a map that is affine for the general plain bilinear product.
+The three families are nested; a left-affine map is two-sided with $\tilde Q_3=e_t$, and the two-sided form is the general shape of a map that is affine for the general plain bilinear product.
 
-**Proposition (the two-sided forms span the linear maps).** Every $\mathbb{C}$-linear endomorphism $L$ of $\mathbb{B}$ is a finite sum of two-sided multipliers, $L=\sum_j\tilde A_j(\cdot)\tilde C_j$; the complex-linear maps form a space of complex dimension sixteen and the two-sided forms span it.
+**Proposition (the two-sided forms span the linear maps).** Every $\mathbb{C}$-linear endomorphism $L$ of $\mathbb{B}$ is a finite sum of two-sided multipliers, $L=\sum_j\tilde Q_{1,j}(\cdot)\tilde Q_{3,j}$; the complex-linear maps form a space of complex dimension sixteen and the two-sided forms span it.
 
-**Proof.** The assignment $\tilde A\otimes\tilde C\mapsto\bigl(\tilde Q\mapsto\tilde A\tilde Q\tilde C\bigr)$ extends to an algebra isomorphism $M_2(\mathbb{C})\otimes M_2(\mathbb{C})\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, because $\mathbb{B}\cong M_2(\mathbb{C})$ and $M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong\operatorname{End}_{\mathbb{C}}\bigl(M_2(\mathbb{C})\bigr)$ (*Modules over the Biquaternion Algebra*); both spaces have complex dimension sixteen, so the span is all of them.
+**Proof.** The assignment $\tilde Q_1\otimes\tilde Q_3\mapsto\bigl(\tilde Q\mapsto\tilde Q_1\tilde Q\tilde Q_3\bigr)$ extends to an algebra isomorphism $M_2(\mathbb{C})\otimes M_2(\mathbb{C})\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, because $\mathbb{B}\cong M_2(\mathbb{C})$ and $M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong\operatorname{End}_{\mathbb{C}}\bigl(M_2(\mathbb{C})\bigr)$ (*Modules over the Biquaternion Algebra*); both spaces have complex dimension sixteen, so the span is all of them.
 
 **Remark (only the left-affine family is an iterated function system in the classical sense here).** A right-affine map is the mirror of a left-affine one under the natural conjugation, and a two-sided map is a left-affine map composed with the right multiplication; the three families have the same contraction theory, and the article treats the left-affine case and records the differences.
 
 ## Contractions in the Euclidean Norm
 
-**Proposition (the Lipschitz constant).** The map $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is Lipschitz with constant $\|L_{\tilde A}\|$, and $\|L_{\tilde A}\|\le\sqrt2\,\|\tilde A\|_E$. It is a contraction exactly when $\|L_{\tilde A}\|<1$.
+**Proposition (the Lipschitz constant).** The map $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is Lipschitz with constant $\|L_{\tilde Q_1}\|$, and $\|L_{\tilde Q_1}\|\le\sqrt2\,\|\tilde Q_1\|_E$. It is a contraction exactly when $\|L_{\tilde Q_1}\|<1$.
 
-**Proof.** $\|f(\tilde Q_2)-f(\tilde Q_1)\|_E=\|\tilde A(\tilde Q_2-\tilde Q_1)\|_E\le\|L_{\tilde A}\|\|\tilde Q_2-\tilde Q_1\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde A}\|\le\sqrt2\|\tilde A\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
+**Proof.** $\|f(\tilde Q_4)-f(\tilde Q_3)\|_E=\|\tilde Q_1(\tilde Q_4-\tilde Q_3)\|_E\le\|L_{\tilde Q_1}\|\|\tilde Q_4-\tilde Q_3\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde Q_1}\|\le\sqrt2\|\tilde Q_1\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
 
-**Theorem (the similarity multipliers).** Let $\tilde A$ be a real quaternion of positive norm, $\tilde A\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde A\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde A$ is a similarity of the eight-dimensional space with ratio $\rho$,
+**Theorem (the similarity multipliers).** Let $\tilde Q_1$ be a real quaternion of positive norm, $\tilde Q_1\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde Q_1\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde Q_1$ is a similarity of the eight-dimensional space with ratio $\rho$,
 
 $$
-\|\tilde A\tilde Q\|_E=\rho\,\|\tilde Q\|_E \quad \text{for every } \tilde Q ,
+\|\tilde Q_1\tilde Q\|_E=\rho\,\|\tilde Q\|_E \quad \text{for every } \tilde Q ,
 $$
 
-so $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a similarity with ratio $\rho$ and is a contraction exactly when $\rho<1$.
+so $f(\tilde Q)=\tilde Q_1\tilde Q+\tilde Q_2$ is a similarity with ratio $\rho$ and is a contraction exactly when $\rho<1$.
 
-**Proof.** Write $\tilde A=\rho\tilde u$ with $\tilde u$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde P+i\tilde Q_1$ with $\tilde P,\tilde Q_1\in\mathbb{H}$, one has $\tilde A\tilde Q=\tilde A\tilde P+i\tilde A\tilde Q_1$ and $\|\tilde A\tilde Q\|_E^2=\rho^2(\|\tilde P\|^2+\|\tilde Q_1\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
+**Proof.** Write $\tilde Q_1=\rho\tilde u$ with $\tilde u$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde Q_3+i\tilde Q_4$ with $\tilde Q_3,\tilde Q_4\in\mathbb{H}$, one has $\tilde Q_1\tilde Q=\tilde Q_1\tilde Q_3+i\tilde Q_1\tilde Q_4$ and $\|\tilde Q_1\tilde Q\|_E^2=\rho^2(\|\tilde Q_3\|^2+\|\tilde Q_4\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
 
-**Remark (the central multipliers).** For a central multiplier $\tilde A=\lambda e_t$ the similarity ratio is $|\lambda|$, the smallest possible among the multipliers of a given biquaternion norm, because $\|\lambda e_t\|_E=|\lambda|$ and the operator norm is $|\lambda|$. **For a real quaternionic multiplier the ratio is the square root of the biquaternion norm; for a general multiplier the ratio lies between the two extremes and there is no formula in terms of $\langle\cdot\rangle_{\natural}$ alone**, because the algebra is not a division algebra.
+**Remark (the central multipliers).** For a central multiplier $\tilde Q_1=\lambda e_t$ the similarity ratio is $|\lambda|$, the smallest possible among the multipliers of a given biquaternion norm, because $\|\lambda e_t\|_E=|\lambda|$ and the operator norm is $|\lambda|$. **For a real quaternionic multiplier the ratio is the square root of the biquaternion norm; for a general multiplier the ratio lies between the two extremes and there is no formula in terms of $\langle\cdot\rangle_{\natural}$ alone**, because the algebra is not a division algebra.
 
-**Remark (the zero divisors are not contractions of the algebra).** If $\tilde A$ is a zero divisor then left multiplication by $\tilde A$ is a singular operator, but its operator norm can still be less than one; the map is then a contraction with an image contained in a proper subspace. **A zero-divisor multiplier is a legitimate contraction whose image avoids a direction, and the attractor it produces is contained in the image subspace**; no invertibility of the multiplier is needed for the existence of the attractor.
+**Remark (the zero divisors are not contractions of the algebra).** If $\tilde Q_1$ is a zero divisor then left multiplication by $\tilde Q_1$ is a singular operator, but its operator norm can still be less than one; the map is then a contraction with an image contained in a proper subspace. **A zero-divisor multiplier is a legitimate contraction whose image avoids a direction, and the attractor it produces is contained in the image subspace**; no invertibility of the multiplier is needed for the existence of the attractor.
 
 ## The Attractor and the Similarity Dimension
 
@@ -68,7 +68,7 @@ and the Hausdorff measure in dimension $s$ of the attractor is positive and fini
 
 **Proof.** The classical theorem of Moran and Hutchinson (*Fractal Geometry*); by the similarity multipliers theorem the ratios are the numbers $\rho_i$ for real quaternionic multipliers and $|\lambda_i|$ for central ones.
 
-**Corollary (the real quaternionic system).** For multipliers $\tilde A_i=\rho_iU_i$ with $U_i$ real unit quaternions, $\rho_i\in(0,1)$, and translations $\tilde B_i$, the system is a family of similarities of ratios $\rho_i$; if the open set condition holds the attractor has Hausdorff dimension $s$ with $\sum_i\rho_i^s=1$, irrespective of the units $U_i$ and the translations.
+**Corollary (the real quaternionic system).** For multipliers $\tilde Q_{1,i}=\rho_iU_i$ with $U_i$ real unit quaternions, $\rho_i\in(0,1)$, and translations $\tilde Q_{2,i}$, the system is a family of similarities of ratios $\rho_i$; if the open set condition holds the attractor has Hausdorff dimension $s$ with $\sum_i\rho_i^s=1$, irrespective of the units $U_i$ and the translations.
 
 **Remark (the units rotate and do not change the dimension).** The units $U_i$ are the freedom of the system: the ratios fix the dimension, the units and the translations fix the geometry. **In the biquaternion algebra the units form the group of real unit quaternions, a three-dimensional rotation group, so the geometric freedom is exactly the rotational freedom of the classical three-dimensional systems times the choice of the translation.** This is the sense in which the biquaternion systems of similarities are the real three-dimensional systems with a complex phase.
 
@@ -84,9 +84,9 @@ and the Hausdorff measure in dimension $s$ of the attractor is positive and fini
 
 ## Symmetries of the Systems
 
-**Proposition (the conjugations act on the systems).** Let $g$ be one of the conjugations ${}^{\natural},\bar{\cdot},{}^{*}$. If every generator and every translation of a system satisfies $g(\tilde A_i)=\tilde A_i$ and $g(\tilde B_i)=\tilde B_i$, then $g$ maps the attractor to itself. If $g$ maps the data of a system to the data of another system, then $g$ maps the attractor of the first to the attractor of the second.
+**Proposition (the conjugations act on the systems).** Let $g$ be one of the conjugations ${}^{\natural},\bar{\cdot},{}^{*}$. If every generator and every translation of a system satisfies $g(\tilde Q_{1,i})=\tilde Q_{1,i}$ and $g(\tilde Q_{2,i})=\tilde Q_{2,i}$, then $g$ maps the attractor to itself. If $g$ maps the data of a system to the data of another system, then $g$ maps the attractor of the first to the attractor of the second.
 
-**Proof.** $g$ is an isometry of the Euclidean norm and satisfies $g(\tilde A\tilde Q)=g(\tilde A)g(\tilde Q)$ for $\tilde A\tilde Q$ with $\tilde A$ fixed; applying $g$ to $K=\bigcup f_i(K)$ gives the first statement, and the second is the same computation with the images of the generators and translations.
+**Proof.** $g$ is an isometry of the Euclidean norm and satisfies $g(\tilde Q_1\tilde Q)=g(\tilde Q_1)g(\tilde Q)$ for $\tilde Q_1\tilde Q$ with $\tilde Q_1$ fixed; applying $g$ to $K=\bigcup f_i(K)$ gives the first statement, and the second is the same computation with the images of the generators and translations.
 
 **Remark (the symmetric systems).** A system with real quaternionic generators and translations is invariant under the quaternion conjugation, and a system with central real generators is invariant under the whole group $G$; **the symmetries of the attractor are read from the symmetries of the generator list, exactly as for the quadratic fractal, and the classification of the previous article applies.**
 
@@ -98,8 +98,8 @@ The affine maps of the biquaternion algebra are of three kinds, left-affine, rig
 
 | symbol | meaning |
 |---|---|
-| $f_i(\tilde Q)=\tilde A_i\tilde Q+\tilde B_i$ | a left-affine generator |
-| $\|L_{\tilde A}\|$, $\|R_{\tilde A}\|$ | operator norms of left and right multiplication |
+| $f_i(\tilde Q)=\tilde Q_{1,i}\tilde Q+\tilde Q_{2,i}$ | a left-affine generator |
+| $\|L_{\tilde Q_1}\|$, $\|R_{\tilde Q_1}\|$ | operator norms of left and right multiplication |
 | $\rho_i$, $U_i$ | the norm and the unit of a real quaternionic multiplier |
 | $K=\bigcup_if_i(K)$ | the attractor |
 | $s$, $\sum r_i^s=1$ | the similarity dimension |

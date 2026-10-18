@@ -8,7 +8,7 @@ The isomorphism and its basic properties, the trace and the determinant, the spe
 
 The article owns the transport of the family, the norm comparison that makes the escape notions agree, the eigenvalue and determinant invariants along the orbit, the reading of the dynamics as two-variable matrix iteration, and the warning that the isomorphism concerns the elements and not the operators on them. It does not re-derive the isomorphism or the conjugations.
 
-**Standing convention.** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix realization, $M=\mathsf{M}_2(\tilde Q)$, $N=\mathsf{M}_2(\tilde C)$, and the matrix family is
+**Standing convention.** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix realization, $M=\mathsf{M}_2(\tilde Q_1)$, $N=\mathsf{M}_2(\tilde C)$, and the matrix family is
 
 $$
 \mathsf{M}_2\circ F_{\tilde C}\circ\mathsf{M}_2^{-1}=\bigl(M\mapsto M^2+N\bigr).
@@ -17,14 +17,14 @@ $$
 The model of an element is the matrix
 
 $$
-\mathsf{M}_2(\tilde Q)=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix},\qquad Q_\mu=q_\mu+iq'_\mu ,
+\mathsf{M}_2(\tilde Q_1)=\begin{pmatrix}Q_{1t}-iQ_{1z}&-iQ_{1x}-Q_{1y}\\-iQ_{1x}+Q_{1y}&Q_{1t}+iQ_{1z}\end{pmatrix},\qquad Q_{1,\mu}=q_\mu+iq'_\mu ,
 $$
 
-of determinant $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and trace $2Q_t$.
+of determinant $\langle\tilde Q_1\rangle_{\natural}=Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q_{1z}^2$ and trace $2Q_{1t}$.
 
 ## The Model as a Model of the Dynamics
 
-**Theorem (transport of the family).** For every $n$, $\mathsf{M}_2(F_{\tilde C}^n(\tilde Q))=p_n(\mathsf{M}_2(\tilde Q))$, where $p_0(M)=M$ and $p_{n+1}(M)=p_n(M)^2+N$. Consequently the map $\mathsf{M}_2$ restricts to a bijection
+**Theorem (transport of the family).** For every $n$, $\mathsf{M}_2(F_{\tilde C}^n(\tilde Q_1))=p_n(\mathsf{M}_2(\tilde Q_1))$, where $p_0(M)=M$ and $p_{n+1}(M)=p_n(M)^2+N$. Consequently the map $\mathsf{M}_2$ restricts to a bijection
 
 $$
 \mathcal K_{\tilde C}\;\longleftrightarrow\;\{M\in M_2(\mathbb{C}) : (p_n(M))_{n\ge0} \text{ bounded}\}, \qquad J_{\tilde C}\leftrightarrow \text{the boundary} ,
@@ -32,7 +32,7 @@ $$
 
 and the dynamics of the biquaternion family is conjugate to the dynamics of a polynomial map of the four complex entries of the matrix.
 
-**Proof.** $\mathsf{M}_2$ is multiplicative and $\mathbb{C}$-linear, so $\mathsf{M}_2(\tilde Q^2+\tilde C)=\mathsf{M}_2(\tilde Q)^2+\mathsf{M}_2(\tilde C)$ and induction gives the transport of the orbit; a bijective linear map preserves boundedness and boundaries.
+**Proof.** $\mathsf{M}_2$ is multiplicative and $\mathbb{C}$-linear, so $\mathsf{M}_2(\tilde Q_1^2+\tilde C)=\mathsf{M}_2(\tilde Q_1)^2+\mathsf{M}_2(\tilde C)$ and induction gives the transport of the orbit; a bijective linear map preserves boundedness and boundaries.
 
 **Remark (the reduction to four complex coordinates).** The matrix has four complex entries; with $M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}$ its square is
 
@@ -51,13 +51,13 @@ with $N=\begin{pmatrix}n_1&n_2\\n_3&n_4\end{pmatrix}$; the diagonal entries are 
 
 ## The Norm Comparison and the Escape Notions
 
-**Proposition (the Frobenius and Euclidean norms).** For every biquaternion, $\|\mathsf{M}_2(\tilde Q)\|_F=\sqrt2\,\|\tilde Q\|_E$; for every pair, $\|\tilde Q_2\tilde Q\|_E\le\sqrt2\,\|\tilde Q_2\|_E\|\tilde Q\|_E$; and the induced operator norm satisfies $\|M\|_2\le\sqrt2\,\|\tilde Q\|_E$.
+**Proposition (the Frobenius and Euclidean norms).** For every biquaternion, $\|\mathsf{M}_2(\tilde Q_1)\|_F=\sqrt2\,\|\tilde Q_1\|_E$; for every pair, $\|\tilde Q_2\tilde Q_1\|_E\le\sqrt2\,\|\tilde Q_2\|_E\|\tilde Q_1\|_E$; and the induced operator norm satisfies $\|M\|_2\le\sqrt2\,\|\tilde Q_1\|_E$.
 
-**Proof.** The Frobenius norm of the explicit matrix $\mathsf{M}_2(\tilde Q)$ displayed above is the squared sum of the moduli of the entries, which is $\sum_\mu|Q_\mu|^2$ computed twice, hence $\|\mathsf{M}_2(\tilde Q)\|_F^2=2\|\tilde Q\|_E^2$. Multiplicativity of $\mathsf{M}_2$ and submultiplicativity of the Frobenius norm give $\sqrt2\|\tilde Q_2\tilde Q\|_E=\|\mathsf{M}_2(\tilde Q_2\tilde Q)\|_F\le\|\mathsf{M}_2(\tilde Q_2)\|_F\|\mathsf{M}_2(\tilde Q)\|_F=2\|\tilde Q_2\|_E\|\tilde Q\|_E$, hence the second inequality. The operator norm is bounded by the Frobenius norm, which is $\sqrt2\|\tilde Q\|_E$.
+**Proof.** The Frobenius norm of the explicit matrix $\mathsf{M}_2(\tilde Q_1)$ displayed above is the squared sum of the moduli of the entries, which is $\sum_\mu|Q_{1,\mu}|^2$ computed twice, hence $\|\mathsf{M}_2(\tilde Q_1)\|_F^2=2\|\tilde Q_1\|_E^2$. Multiplicativity of $\mathsf{M}_2$ and submultiplicativity of the Frobenius norm give $\sqrt2\|\tilde Q_2\tilde Q_1\|_E=\|\mathsf{M}_2(\tilde Q_2\tilde Q_1)\|_F\le\|\mathsf{M}_2(\tilde Q_2)\|_F\|\mathsf{M}_2(\tilde Q_1)\|_F=2\|\tilde Q_2\|_E\|\tilde Q_1\|_E$, hence the second inequality. The operator norm is bounded by the Frobenius norm, which is $\sqrt2\|\tilde Q_1\|_E$.
 
 **Corollary (the escape notions agree).** A biquaternion orbit is bounded in the Euclidean norm exactly when its matrix orbit is bounded in the Frobenius norm, and exactly when it is bounded in the operator norm. The filled Julia set and the Julia set are the same sets in the two models.
 
-**Proof.** The three norms are pairwise comparable on the fixed finite-dimensional space, by the proposition, and a sequence is bounded for one exactly when it is bounded for the others. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is a different object: it is the determinant of the matrix and the product $\tilde Q\tilde Q^{\natural}$, it is complex-valued and indefinite and vanishes on the zero divisors, so boundedness of $\langle\cdot\rangle_{\natural}$ is **not** equivalent to boundedness in the Euclidean norm — a nilpotent element has $N=0$ and arbitrarily large Euclidean norm.
+**Proof.** The three norms are pairwise comparable on the fixed finite-dimensional space, by the proposition, and a sequence is bounded for one exactly when it is bounded for the others. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is a different object: it is the determinant of the matrix and the product $\tilde Q_1\tilde Q_1^{\natural}$, it is complex-valued and indefinite and vanishes on the zero divisors, so boundedness of $\langle\cdot\rangle_{\natural}$ is **not** equivalent to boundedness in the Euclidean norm — a nilpotent element has $N=0$ and arbitrarily large Euclidean norm.
 
 **Remark (the constant $\sqrt2$ is the only discrepancy).** Every statement of the category phrased in a norm differs between the algebra and the model by at most the factor $\sqrt2$, and the escape radius of the model and of the algebra differ accordingly. **The factor is a normalisation and not a phenomenon**, but it must be tracked, because a radius of $2$ in the model is a radius of $\sqrt2$ in the algebra.
 
@@ -66,10 +66,10 @@ with $N=\begin{pmatrix}n_1&n_2\\n_3&n_4\end{pmatrix}$; the diagonal entries are 
 **Proposition (determinant and trace).** Along the orbit,
 
 $$
-\det\mathsf{M}_2(\tilde Q_n)=\langle\tilde Q_n\rangle_{\natural}, \qquad \operatorname{tr}\mathsf{M}_2(\tilde Q_n)=2(Q_n)_0 ,
+\det\mathsf{M}_2(\tilde Q_{1,n})=\langle\tilde Q_{1,n}\rangle_{\natural}, \qquad \operatorname{tr}\mathsf{M}_2(\tilde Q_{1,n})=2(Q_{1,n})_0 ,
 $$
 
-and for the parameter zero, $\langle\tilde Q_n\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}^{2^n}$. In the entries of the matrix the two invariants are the classical ones,
+and for the parameter zero, $\langle\tilde Q_{1,n}\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}^{2^n}$. In the entries of the matrix the two invariants are the classical ones,
 
 $$
 M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix},\qquad
@@ -78,9 +78,9 @@ M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix},\qquad
 \chi_M(\zeta)=\zeta^2-(\operatorname{tr}M)\zeta+(\det M).
 $$
 
-**Proof.** $\det\mathsf{M}_2=N$ and $\operatorname{tr}\mathsf{M}_2=2Q_t$ are the trace-and-determinant proposition of the matrix-element-representation article, applied to the iterate. For a central zero parameter $\mathsf{M}_2(\tilde Q_n)=\mathsf{M}_2(\tilde Q)^{2^n}$ and the determinant is multiplicative.
+**Proof.** $\det\mathsf{M}_2=N$ and $\operatorname{tr}\mathsf{M}_2=2Q_{1t}$ are the trace-and-determinant proposition of the matrix-element-representation article, applied to the iterate. For a central zero parameter $\mathsf{M}_2(\tilde Q_{1,n})=\mathsf{M}_2(\tilde Q_1)^{2^n}$ and the determinant is multiplicative.
 
-**Theorem (the spectrum and the central parameter).** The spectrum of $\mathsf{M}_2(\tilde Q_n)$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q)$, where $q_n$ are the iterates of $\zeta\mapsto\zeta^2+C$ when $\tilde C=Ce_t$; in particular the trace and the determinant of the iterate are the elementary symmetric functions of the two transported eigenvalues.
+**Theorem (the spectrum and the central parameter).** The spectrum of $\mathsf{M}_2(\tilde Q_{1,n})$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q_1)$, where $q_n$ are the iterates of $\zeta\mapsto\zeta^2+C$ when $\tilde C=Ce_t$; in particular the trace and the determinant of the iterate are the elementary symmetric functions of the two transported eigenvalues.
 
 **Proof.** The functional calculus of the polynomial $p_n$ on a two-by-two matrix and the elementary symmetric functions of the spectrum. This is the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*, here read as a statement of the model.
 
@@ -96,32 +96,32 @@ The model turns the biquaternion dynamics into the iteration of a polynomial map
 
 The isomorphism is an isomorphism of algebras, and an algebra isomorphism carries multiplication and its derived operations; it does not carry every operator that can be built on the underlying space.
 
-**Proposition (the element and the operator are different objects).** Let $L_{\tilde Q}:\mathbb{B}\to\mathbb{B}$ be left multiplication, $L_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2$. Then $L_{\tilde Q}$ is a complex-linear endomorphism of the four-dimensional space, represented by a $4\times4$ matrix in any basis, while $\mathsf{M}_2(\tilde Q)$ is the two-by-two matrix corresponding to the element $\tilde Q$. In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the matrix of $L_{\tilde Q}$ is
+**Proposition (the element and the operator are different objects).** Let $L_{\tilde Q_1}:\mathbb{B}\to\mathbb{B}$ be left multiplication, $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2$. Then $L_{\tilde Q_1}$ is a complex-linear endomorphism of the four-dimensional space, represented by a $4\times4$ matrix in any basis, while $\mathsf{M}_2(\tilde Q_1)$ is the two-by-two matrix corresponding to the element $\tilde Q_1$. In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the matrix of $L_{\tilde Q_1}$ is
 
 $$
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\\
-Q_x&Q_t&-Q_z&Q_y\\
-Q_y&Q_z&Q_t&-Q_x\\
-Q_z&-Q_y&Q_x&Q_t
+Q_{1t}&-Q_{1x}&-Q_{1y}&-Q_{1z}\\
+Q_{1x}&Q_{1t}&-Q_{1z}&Q_{1y}\\
+Q_{1y}&Q_{1z}&Q_{1t}&-Q_{1x}\\
+Q_{1z}&-Q_{1y}&Q_{1x}&Q_{1t}
 \end{pmatrix},
 $$
 
-of determinant $\langle\tilde Q\rangle_{\natural}^2$ and trace $4Q_t$, with characteristic polynomial $\bigl((\zeta-Q_t)^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q}$ are $\{Q_t+iB,Q_t+iB,Q_t-iB,Q_t-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q)$ each counted twice.
+of determinant $\langle\tilde Q_1\rangle_{\natural}^2$ and trace $4Q_{1t}$, with characteristic polynomial $\bigl((\zeta-Q_{1t})^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q_1})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q_1}$ are $\{Q_{1t}+iB,Q_{1t}+iB,Q_{1t}-iB,Q_{1t}-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ each counted twice.
 
-**Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q)$ acts by $M$ (*Modules over the Biquaternion Algebra*). The eigenvalues of $M$ are $Q_t\pm iB$ by the characteristic polynomial of the matrix-element-representation article.
+**Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q_1}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q_1)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q_1)$ acts by $M$ (*Modules over the Biquaternion Algebra*). The eigenvalues of $M$ are $Q_{1t}\pm iB$ by the characteristic polynomial of the matrix-element-representation article.
 
 **Corollary (where the operator enters the dynamics).** The derivative of the quadratic family is the sum of two operators on the space and not an element,
 
 $$
-dF_{\tilde C}\big|_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2+\tilde Q_2\tilde Q=L_{\tilde Q}(\tilde Q_2)+R_{\tilde Q}(\tilde Q_2),
+dF_{\tilde C}\big|_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1=L_{\tilde Q_1}(\tilde Q_2)+R_{\tilde Q_1}(\tilde Q_2),
 $$
 
-which is why the critical set is read from the pair of eigenvalues of $\mathsf{M}_2(\tilde Q)$ — $\det dF=4\langle\tilde Q\rangle_{\natural}(2Q_t)^2$ — and not from the matrix of the element alone.
+which is why the critical set is read from the pair of eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ — $\det dF=4\langle\tilde Q_1\rangle_{\natural}(2Q_{1t})^2$ — and not from the matrix of the element alone.
 
 **Proof.** The product rule; the determinant computation is the critical-set proposition of *The Biquaternion Quadratic Map and Its Julia Sets*.
 
-**Remark (the moral of the warning).** A statement about the element $\tilde Q$ transports along $\mathsf{M}_2$ and can be read from the two-by-two matrix; a statement about the operator $\tilde Q_2\mapsto\tilde Q\tilde Q_2$ or about a product of the space does not, and must be proven in the algebra. **The model is a model of the elements and of their multiplication, and every use of the model must name which of the two objects is meant.** The four general products of the space are the standard trap: they are not carried by $\mathsf{M}_2$, which is the isomorphism for one product only.
+**Remark (the moral of the warning).** A statement about the element $\tilde Q_1$ transports along $\mathsf{M}_2$ and can be read from the two-by-two matrix; a statement about the operator $\tilde Q_2\mapsto\tilde Q_1\tilde Q_2$ or about a product of the space does not, and must be proven in the algebra. **The model is a model of the elements and of their multiplication, and every use of the model must name which of the two objects is meant.** The four general products of the space are the standard trap: they are not carried by $\mathsf{M}_2$, which is the isomorphism for one product only.
 
 ## Summary
 
@@ -132,13 +132,13 @@ The matrix model conjugates the biquaternion quadratic family to the polynomial 
 | symbol | meaning |
 |---|---|
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the matrix realization |
-| $M=\mathsf{M}_2(\tilde Q)$, $N=\mathsf{M}_2(\tilde C)$ | the matrix of the point and of the parameter |
+| $M=\mathsf{M}_2(\tilde Q_1)$, $N=\mathsf{M}_2(\tilde C)$ | the matrix of the point and of the parameter |
 | $\|\cdot\|_F$, $\|\cdot\|_2$ | the Frobenius and operator norms |
 | $\|\cdot\|_E$ | the Euclidean norm on $\mathbb{B}$ |
 | $p_n$ | the iterated polynomial, $p_{n+1}=p_n^2+N$ |
-| $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication operators |
-| $dF_{\tilde C}=\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$ | the derivative, the sum of two operators |
-| $\det dF=4\langle\tilde Q\rangle_{\natural}(2Q_t)^2$ | the determinant of the derivative |
+| $L_{\tilde Q_1}$, $R_{\tilde Q_1}$ | left and right multiplication operators |
+| $dF_{\tilde C}=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$ | the derivative, the sum of two operators |
+| $\det dF=4\langle\tilde Q_1\rangle_{\natural}(2Q_{1t})^2$ | the determinant of the derivative |
 
 ## Further Reading
 

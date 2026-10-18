@@ -6,7 +6,7 @@ The **Matsubara formalism** is the Euclidean formulation of quantum field theory
 
 This article asks what the biquaternion algebra $\mathbb{B}$ contributes. The answer is one structural identification and a set of transcriptions, stated at the outset.
 
-- **Established (framework).** The compactified direction is a **material-sector direction**. The imaginary time that Matsubara's circle winds around is not an auxiliary device introduced for convergence: it is the intrinsic imaginary direction of the material sector $\mathbb{M}_-$, the same direction that appears as $ict$ in the biquaternionic gradient and as the KMS analyticity strip in *The KMS Condition and the Biquaternion Framework*. The KMS strip has width $\beta$ and the Matsubara circle has circumference $\beta$, and these are the same $\beta$ because they are the same complexified material time. Concretely, the analytic strip $0<\mathrm{Im}\,t<\beta$ of the KMS boundary relation
+- **Established (framework).** The compactified direction is a **material-sector direction**. The imaginary time that Matsubara's circle winds around is not an auxiliary device introduced for convergence: it is the intrinsic imaginary direction of the material sector $\mathbb{M}_-$, the same direction that appears as $ict$ in the biquaternionic gradient and as the KMS analyticity strip in *The KMS Condition and the Biquaternion Framework*. The KMS strip has width $\beta$ and the Matsubara circle has circumference $\beta$, and these are the same $\beta$ because they are the same complexified material time. Concretely, for two elements $\tilde A,\tilde B$ of the algebra, the analytic strip $0<\mathrm{Im}\,t<\beta$ of the KMS boundary relation
 $$
 F_{\tilde A\tilde B}(t+i\beta) = F_{\tilde B\tilde A}(-t)
 $$

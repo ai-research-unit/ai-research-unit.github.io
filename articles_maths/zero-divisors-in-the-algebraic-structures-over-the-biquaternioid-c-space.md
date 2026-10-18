@@ -316,16 +316,16 @@ Only the plain product has a two-sided unit, so the classical equivalence *zero 
 **Theorem (the inverse equations).** Let $\star$ be one of the four general products and let $\tilde Q_1\neq0$. Then $\tilde Q_1$ is a zero divisor of $\star$ exactly when neither of the two equations
 
 $$
-\tilde Q_1\star\tilde X=e_t , \qquad \tilde X\star\tilde Q_1=e_t
+\tilde Q_1\star\tilde Q_3=e_t , \qquad \tilde Q_3\star\tilde Q_1=e_t
 $$
 
 has a solution; equivalently, both have a solution exactly when $\mathrm{Norm}(\tilde Q_1)\neq0$.
 
-*Proof.* If $\tilde Q_1\star\tilde X=e_t$ holds, then in the model the equation is $\mathsf{M}_2(\tilde Q_1)M=\mathrm{I}_2$ or $\mathsf{M}_2(\tilde Q_1^{\natural})M=\mathrm{I}_2$ for an invertible $M$, so $\mathsf{M}_2(\tilde Q_1)$ is invertible and $\mathrm{Norm}(\tilde Q_1)\neq0$. Conversely, if $\mathrm{Norm}(\tilde Q_1)\neq0$ then $\tilde Q_1$ is invertible and the four solutions are those of the table below.
+*Proof.* If $\tilde Q_1\star\tilde Q_3=e_t$ holds, then in the model the equation is $\mathsf{M}_2(\tilde Q_1)M=\mathrm{I}_2$ or $\mathsf{M}_2(\tilde Q_1^{\natural})M=\mathrm{I}_2$ for an invertible $M$, so $\mathsf{M}_2(\tilde Q_1)$ is invertible and $\mathrm{Norm}(\tilde Q_1)\neq0$. Conversely, if $\mathrm{Norm}(\tilde Q_1)\neq0$ then $\tilde Q_1$ is invertible and the four solutions are those of the table below.
 
 The solutions are written with the inverse $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\mathrm{Norm}(\tilde Q_1)$ of the algebra, which exists for $\mathrm{Norm}(\tilde Q_1)\neq0$. The two conjugations commute, ${}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}=\overline{\cdot}$, so the order of the two superscripts in the last row is immaterial.
 
-| product | $\tilde X$ with $\tilde Q_1\star\tilde X=e_t$ | $\tilde X$ with $\tilde X\star\tilde Q_1=e_t$ |
+| product | $\tilde Q_3$ with $\tilde Q_1\star\tilde Q_3=e_t$ | $\tilde Q_3$ with $\tilde Q_3\star\tilde Q_1=e_t$ |
 |---|---|---|
 | $\tilde Q_1\tilde Q_2$ | $\tilde Q_1^{-1}$ | $\tilde Q_1^{-1}$ |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | $(\tilde Q_1^{-1})^{\natural}$ | $(\tilde Q_1^{-1})^{\natural}$ |

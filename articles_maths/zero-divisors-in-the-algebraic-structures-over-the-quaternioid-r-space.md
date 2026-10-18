@@ -158,7 +158,7 @@ $$
 \tilde q^{2}=0\iff\tilde q=0,\qquad \tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t=0\iff\tilde q=0 .
 $$
 
-Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde Q_1\star\tilde Q_1=\tilde Q_1\tilde Q_1^{*}$ still vanishes only at the origin, but the natural square $\tilde Q_1\tilde Q_1^{\natural}$ vanishes exactly on the zero-divisor cone (*The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*).
+Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ still vanishes only at the origin, but the natural square $\tilde Q\tilde Q^{\natural}$ vanishes exactly on the zero-divisor cone (*The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*).
 
 *Proof.* The norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*), so $\langle\tilde q^{2}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{2}$, and $\tilde q^{2}=0$ forces $\langle\tilde q\rangle_{\natural}=0$; the norm is a sum of four squares of real numbers, so $\tilde q=0$. The natural square is $\tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t$ and vanishes under the same condition. **The one equation that does not vanish off the origin is the pair**, which is the criterion of $\mathrm{SPA}$.
 
@@ -183,12 +183,12 @@ Of the two structures with the empty zero-divisor set only the algebra product h
 **Theorem (the inverse equations).** Let $\star$ be the general quaternionic product and let $\tilde q\neq0$. Then $\tilde q$ admits no annihilating factor in $\star$, and the two equations
 
 $$
-\tilde q\star\tilde x=e_t , \qquad \tilde x\star\tilde q=e_t
+\tilde q\star\tilde q_3=e_t , \qquad \tilde q_3\star\tilde q=e_t
 $$
 
-have the common solution $\tilde x=(\tilde q^{-1})^{\natural}$; equivalently, both have a solution exactly when $\langle\tilde q\rangle_{\natural}\neq0$, which is every nonzero element.
+have the common solution $\tilde q_3=(\tilde q^{-1})^{\natural}$; equivalently, both have a solution exactly when $\langle\tilde q\rangle_{\natural}\neq0$, which is every nonzero element.
 
-*Proof.* The quaternion norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*). If the first equation has a solution, then $\langle\tilde q^{\natural}\rangle_{\natural}\langle\tilde x\rangle_{\natural}=1$ and $\langle\tilde q^{\natural}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$, so $\langle\tilde q\rangle_{\natural}\neq0$. Conversely, if $\langle\tilde q\rangle_{\natural}\neq0$ then $\tilde x=(\tilde q^{-1})^{\natural}$ solves both equations, because $\tilde q^{\natural}(\tilde q^{-1})^{\natural}=(\tilde q^{-1}\tilde q)^{\natural}=e_t$ and $(\tilde q^{-1})^{\natural}\tilde q^{\natural}=(\tilde q\tilde q^{-1})^{\natural}=e_t$. **The general quaternionic product has no zero divisor and the one-sided inverse equations hold at every nonzero element.**
+*Proof.* The quaternion norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*). If the first equation has a solution, then $\langle\tilde q^{\natural}\rangle_{\natural}\langle\tilde q_3\rangle_{\natural}=1$ and $\langle\tilde q^{\natural}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$, so $\langle\tilde q\rangle_{\natural}\neq0$. Conversely, if $\langle\tilde q\rangle_{\natural}\neq0$ then $\tilde q_3=(\tilde q^{-1})^{\natural}$ solves both equations, because $\tilde q^{\natural}(\tilde q^{-1})^{\natural}=(\tilde q^{-1}\tilde q)^{\natural}=e_t$ and $(\tilde q^{-1})^{\natural}\tilde q^{\natural}=(\tilde q\tilde q^{-1})^{\natural}=e_t$. **The general quaternionic product has no zero divisor and the one-sided inverse equations hold at every nonzero element.**
 
 The one-sided criterion is the substitute for the classical equivalence in the general quaternionic case, where the unit is one-sided; and it is a statement about invertibility and not a group law, the product being non-associative.
 

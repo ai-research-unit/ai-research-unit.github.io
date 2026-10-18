@@ -15,10 +15,10 @@ $$
 with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr), \qquad \tilde{\sigma} = \tfrac{1}{2}\bigl(e_t + i\vec s\bigr),
+\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr), \qquad \tilde{Ϛ}_1 = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr),\ \tilde{Ϛ}_2 = \tfrac{1}{2}\bigl(e_t + i\vec s\bigr),
 $$
 
-the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{Ϛ}-\tilde{\sigma})^2) = \tfrac{1}{2}|\vec r-\vec s|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $|\vec u| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\vec r = 0$.
+the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2) = \tfrac{1}{2}|\vec r-\vec s|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $|\vec u| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\vec r = 0$.
 
 **What is to be shown.** Six problems: (1) the parametrisation of a mixed state by its Bloch vector; (2) purity, linear entropy, and von Neumann entropy for explicit states; (3) the geometry of convex combinations; (4) the metric and distinguishability structure; (5) the centre and the boundary; (6) when two Bloch vectors give identical or orthogonal states. Each is solved in full, and numerical values are given where they aid the check.
 
@@ -170,32 +170,32 @@ so the purity is $\tfrac12(1 + \tfrac58) = \tfrac{13}{16}$ and the linear entrop
 
 ## Problem 4: The Metric and Distinguishability Structure
 
-**Problem.** (a) Compute the squared Hilbert–Schmidt distance $\mathrm{Tr}((\tilde{Ϛ}-\tilde{\sigma})^2)$ in terms of the Bloch vectors. (b) Compute the trace distance $D(\tilde{Ϛ},\tilde{\sigma}) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}-\tilde{\sigma}|$, verify the parent's formula for the distance to the centre, and relate the two distances. (c) Evaluate both for $\vec r = \tfrac12 \vec e_z$ and $\vec s = \tfrac12 \vec e_x$, and compute the trace distance between two pure states as a function of the angle. (d) State the range of $D$ on the ball.
+**Problem.** (a) Compute the squared Hilbert–Schmidt distance $\mathrm{Tr}((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2)$ in terms of the Bloch vectors. (b) Compute the trace distance $D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2|$, verify the parent's formula for the distance to the centre, and relate the two distances. (c) Evaluate both for $\vec r = \tfrac12 \vec e_z$ and $\vec s = \tfrac12 \vec e_x$, and compute the trace distance between two pure states as a function of the angle. (d) State the range of $D$ on the ball.
 
 **Solution.** (a) The difference of two states is
 
 $$
-\tilde{Ϛ} - \tilde{\sigma} = \tfrac12 i(\vec r - \vec s), \qquad \vec r - \vec s \in \mathbb{H}_{\mathbb{B}} \text{ a pure real quaternion.}
+\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r - \vec s), \qquad \vec r - \vec s \in \mathbb{H}_{\mathbb{B}} \text{ a pure real quaternion.}
 $$
 
 For a pure real quaternion $\vec q = \vec r - \vec s$ one has $\vec q^2 = -|\vec q|^2 e_t$, hence
 
 $$
-(\tilde{Ϛ} - \tilde{\sigma})^2 = \tfrac14 (i\vec q)^2 = -\tfrac14 \vec q^2 = \tfrac14 |\vec r-\vec s|^2\, e_t .
+(\tilde{Ϛ}_1 - \tilde{Ϛ}_2)^2 = \tfrac14 (i\vec q)^2 = -\tfrac14 \vec q^2 = \tfrac14 |\vec r-\vec s|^2\, e_t .
 $$
 
-Taking the trace, $\mathrm{Tr}((\tilde{Ϛ}-\tilde{\sigma})^2) = 2\cdot\tfrac14|\vec r-\vec s|^2 = \tfrac12|\vec r-\vec s|^2$, which is the parent's Hilbert–Schmidt formula. Since $(\tilde{Ϛ}-\tilde{\sigma})^2$ is a scalar multiple of $e_t$, the traceless difference $\tilde{Ϛ}-\tilde{\sigma}$ has eigenvalues $\pm\tfrac12|\vec r-\vec s|$.
+Taking the trace, $\mathrm{Tr}((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2) = 2\cdot\tfrac14|\vec r-\vec s|^2 = \tfrac12|\vec r-\vec s|^2$, which is the parent's Hilbert–Schmidt formula. Since $(\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2$ is a scalar multiple of $e_t$, the traceless difference $\tilde{Ϛ}_1-\tilde{Ϛ}_2$ has eigenvalues $\pm\tfrac12|\vec r-\vec s|$.
 
 (b) The absolute value is
 
 $$
-|\tilde{Ϛ}-\tilde{\sigma}| = \sqrt{(\tilde{Ϛ}-\tilde{\sigma})^2} = \tfrac12|\vec r-\vec s|\,e_t,
+|\tilde{Ϛ}_1-\tilde{Ϛ}_2| = \sqrt{(\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2} = \tfrac12|\vec r-\vec s|\,e_t,
 $$
 
 the positive square root in $\mathbb{M}_+$. Hence
 
 $$
-D(\tilde{Ϛ},\tilde{\sigma}) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}-\tilde{\sigma}|
+D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2|
 = \tfrac12\cdot\tfrac12|\vec r-\vec s|\cdot\mathrm{Tr}(e_t)
 = \tfrac12|\vec r-\vec s| .
 $$
@@ -203,9 +203,9 @@ $$
 Setting $\vec s = 0$ recovers the parent's statement $D(\tilde{Ϛ},\tfrac12 e_t) = \tfrac12|\vec r|$. Comparing with (a), the trace distance and the Hilbert–Schmidt distance carry the same information on a qubit,
 
 $$
-\mathrm{Tr}\bigl((\tilde{Ϛ}-\tilde{\sigma})^2\bigr) = 2\,D(\tilde{Ϛ},\tilde{\sigma})^2,
+\mathrm{Tr}\bigl((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2\bigr) = 2\,D(\tilde{Ϛ}_1,\tilde{Ϛ}_2)^2,
 \qquad
-D = \sqrt{\tfrac12\,\mathrm{Tr}\bigl((\tilde{Ϛ}-\tilde{\sigma})^2\bigr)} .
+D = \sqrt{\tfrac12\,\mathrm{Tr}\bigl((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2\bigr)} .
 $$
 
 Both are monotone functions of the Euclidean separation $|\vec r-\vec s|$; the trace distance is the one with the operational meaning, being half the trace-norm difference of the two states.
@@ -272,14 +272,14 @@ A boundary state is an **extreme point** of the ball. Suppose $\tilde{P} = \lamb
 
 ## Problem 6: Identical and Orthogonal States
 
-**Problem.** (a) Determine when two states are identical. (b) Determine when two states have orthogonal support, i.e. when $\mathrm{Tr}(\tilde{Ϛ}\tilde{\sigma}) = 0$. (c) Specialize to pure states and express the result in terms of the angle. (d) Show that the Uhlmann transition probability vanishes under the same condition.
+**Problem.** (a) Determine when two states are identical. (b) Determine when two states have orthogonal support, i.e. when $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = 0$. (c) Specialize to pure states and express the result in terms of the angle. (d) Show that the Uhlmann transition probability vanishes under the same condition.
 
-**Solution.** (a) Two states are identical exactly when their Bloch vectors are equal: from $\tilde{Ϛ} - \tilde{\sigma} = \tfrac12 i(\vec r-\vec s)$ we have $\tilde{Ϛ} = \tilde{\sigma}$ iff $\vec r = \vec s$. In that case the Hilbert–Schmidt and trace distances vanish, the transition probability is $1$, and all radius-dependent quantities (purity, entropies) coincide. Conversely, equal purity does **not** imply identical states: by Problem 2 all states of a given radius share the same purity and entropy, and they are rotated into one another by $\mathrm{U}(2)$.
+**Solution.** (a) Two states are identical exactly when their Bloch vectors are equal: from $\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r-\vec s)$ we have $\tilde{Ϛ}_1 = \tilde{Ϛ}_2$ iff $\vec r = \vec s$. In that case the Hilbert–Schmidt and trace distances vanish, the transition probability is $1$, and all radius-dependent quantities (purity, entropies) coincide. Conversely, equal purity does **not** imply identical states: by Problem 2 all states of a given radius share the same purity and entropy, and they are rotated into one another by $\mathrm{U}(2)$.
 
-(b) The trace pairing on the slice is $\mathrm{Tr}(\tilde{Ϛ}\tilde{\sigma}) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ},\tilde{\sigma}$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus
+(b) The trace pairing on the slice is $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ}_1,\tilde{Ϛ}_2$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde{\sigma}) = 0
+\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = 0
 \quad\Longleftrightarrow\quad \vec r\cdot\vec s = -1 .
 $$
 
@@ -303,11 +303,11 @@ where $\theta$ is the angle between the Bloch directions. It equals $1$ for $\th
 (d) For general states the relevant overlap is the Uhlmann transition probability,
 
 $$
-T(\tilde{Ϛ},\tilde{\sigma})
+T(\tilde{Ϛ}_1,\tilde{Ϛ}_2)
 = \tfrac12\Bigl(1 + \vec r\cdot\vec s + \sqrt{\bigl(1-|\vec r|^2\bigr)\bigl(1-|\vec s|^2\bigr)}\Bigr),
 $$
 
-which for mixed states differs from the Hilbert–Schmidt pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{\sigma})$. Setting $T = 0$ gives
+which for mixed states differs from the Hilbert–Schmidt pairing $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2)$. Setting $T = 0$ gives
 
 $$
 \vec r\cdot\vec s = -1 - \sqrt{\bigl(1-|\vec r|^2\bigr)\bigl(1-|\vec s|^2\bigr)} \leq -1 .
@@ -348,9 +348,9 @@ We have worked six problems on the geometry of the qubit state space, using only
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+|\vec r|^2)$ | Purity |
 | $S_{\mathrm{lin}} = 1-\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1-|\vec r|^2)$ | Linear entropy |
 | $S(\tilde{Ϛ}) = -\sum_\pm\lambda_\pm\log\lambda_\pm$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ |
-| $\mathrm{Tr}(\tilde{Ϛ}\tilde{\sigma}) = \tfrac12(1+\vec r\cdot\vec s)$ | Trace pairing |
-| $D(\tilde{Ϛ},\tilde{\sigma}) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}-\tilde{\sigma}| = \tfrac12|\vec r-\vec s|$ | Trace distance |
-| $T(\tilde{Ϛ},\tilde{\sigma}) = \tfrac12(1+\vec r\cdot\vec s+\sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$ | Uhlmann transition probability |
+| $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1+\vec r\cdot\vec s)$ | Trace pairing |
+| $D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2| = \tfrac12|\vec r-\vec s|$ | Trace distance |
+| $T(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12(1+\vec r\cdot\vec s+\sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$ | Uhlmann transition probability |
 
 ## Further Reading
 

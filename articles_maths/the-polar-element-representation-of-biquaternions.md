@@ -177,7 +177,7 @@ $$
 \cosh\psi = \mathrm{Sc}(UU^{*}) , \qquad \sinh\psi = \lvert \mathrm{Vec}(UU^{*})\rvert , \qquad \vec u_{\mathrm b} = \frac{\mathrm{Vec}(UU^{*})}{\lvert \mathrm{Vec}(UU^{*})\rvert} .
 $$
 
-$\psi$ the **rapidity** and $\vec u_{\mathrm b}$ the **axis**. The boost carries three parameters and its set is the hyperbolic space $H^3$, the set of Lorentz boosts; in the notation of the physics articles it is the Lorentz boost rotor $\tilde\Lambda = \cosh\tfrac{\psi}{2} + i\sinh\tfrac{\psi}{2}\vec u_{\mathrm b}$.
+$\psi$ the **rapidity** and $\vec u_{\mathrm b}$ the **axis**. The boost carries three parameters and its set is the hyperbolic space $H^3$, the set of Lorentz boosts; in the notation of the physics articles it is the Lorentz boost rotor $\tilde U = \cosh\tfrac{\psi}{2} + i\sinh\tfrac{\psi}{2}\vec u_{\mathrm b}$.
 
 ### The Order of the Boost and the Rotor
 

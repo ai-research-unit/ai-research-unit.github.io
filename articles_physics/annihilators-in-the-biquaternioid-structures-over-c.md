@@ -473,7 +473,7 @@ it is the kernel that one's own mode expansion supplies.
 
 **The kernel of the Dirac operator and the triple it belongs to.** *The Spectral Triple of the Biquaternion
 Algebra* assembles the framework's own objects into Connes' triple $(\mathcal{A},\mathcal{H},D)$ — the
-algebra, the spinor module, and the biquaternion Dirac operator $\mathcal{D}=\tilde\nabla+\tilde m$ — and is
+algebra, the spinor module, and the biquaternion Dirac operator $\mathcal{D}=\tilde\nabla+m$ — and is
 scrupulous about what it does and does not establish. What it establishes is the candidate triple, the
 spectral dimension four in the almost-commutative case, and a real-structure obstruction: the algebra's own
 conjugation is an antilinear involution with $\flat^{2}=+1$, whereas four-dimensional spin geometry needs

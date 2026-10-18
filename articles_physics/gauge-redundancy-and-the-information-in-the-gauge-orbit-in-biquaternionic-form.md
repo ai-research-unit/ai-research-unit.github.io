@@ -184,7 +184,7 @@ $$
 Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a unitary of the algebra, and the GNS representations of $\omega$ and $\omega'$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:
 
 $$
-S(\tilde{Ϛ}_{\tilde{A}'}\,\|\,\tilde{\sigma}_{\tilde{Q}_1'}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{\sigma}_{\tilde{Q}_1}) .
+S(\tilde{Ϛ}_{\tilde{A}'}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1'}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1}) .
 $$
 
 This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde U\rho \tilde U^\dagger\|\tilde U\sigma \tilde U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
@@ -296,7 +296,7 @@ The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}
 Information-theoretically the orbit is a **redundancy**, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(iϙ\Gamma/\hbar)$, which is unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,
 
 $$
-S(\tilde{Ϛ}_{\tilde{A}'}\|\tilde{\sigma}_{\tilde{Q}_1'}) = S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{\sigma}_{\tilde{Q}_1}).
+S(\tilde{Ϛ}_{\tilde{A}'}\|\tilde{Ϛ}_{\tilde{Q}_1'}) = S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{Ϛ}_{\tilde{Q}_1}).
 $$
 
 For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{M}_+$ by $\tilde{Ϛ}\mapsto|\lambda|^2\tilde{Ϛ} = \tilde{Ϛ}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.
@@ -328,7 +328,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\tilde U(C) = \mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$ | Holonomy; global obstruction |
 | $W(C) = \mathrm{Tr}\,\tilde U(C)$ | Wilson loop; two-sector bilinear |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
-| $S(\tilde{Ϛ}\|\tilde{\sigma})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |
+| $S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{Ϛ}_{\tilde{Q}_1})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |
 | $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ | Trace pairing; $\mathrm{Tr}(e_t) = 2$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

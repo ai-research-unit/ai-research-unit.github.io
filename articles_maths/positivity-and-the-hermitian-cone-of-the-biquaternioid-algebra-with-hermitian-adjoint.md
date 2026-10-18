@@ -2,22 +2,22 @@
 
 ## Introduction
 
-An involution orders an algebra. Once an element $\tilde T$ has a conjugate $\tilde{T}^{*}$, the fixed elements play the role of the real numbers, the elements $\tilde{T}^{*}\tilde T$ the role of squares of lengths, and the question whether those squares are "positive" is the question whether the dagger is a **positive involution**. On the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with the Hermitian conjugation whose fixed space is the Hermitian sector $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian sector $\mathbb{M}_-$ (*The Biquaternioid as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces*), all three notions are available, and this article treats them: the two sectors and their splitting of the algebra, the cone of elements $\tilde{Q}\tilde{Q}^{*}$, the positivity of the involution, the polar decomposition it induces, and the Cartan involution of the group of units with its Lie-algebra decomposition.
+An involution orders an algebra. Once an element $\tilde T$ has a conjugate $\tilde{T}^{*}$, the fixed elements play the role of the real numbers, the elements $\tilde{T}^{*}\tilde T$ the role of squares of lengths, and the question whether those squares are "positive" is the question whether the dagger is a **positive involution**. On the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with the Hermitian conjugation whose fixed space is the Hermitian sector $\mathbb{M}_+$ and whose anti-fixed space is the anti-Hermitian sector $\mathbb{M}_-$ (*The Biquaternioid as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces*), all three notions are available, and this article treats them: the two sectors and their splitting of the algebra, the cone of elements $\tilde{Q}_1\tilde{Q}_1^{*}$, the positivity of the involution, the polar decomposition it induces, and the Cartan involution of the group of units with its Lie-algebra decomposition.
 
-The result that organises the article is that, in the biquaternion algebra, **positivity holds** — and the reason is a change of Clifford structure, not a change of the algebra. The scalar form of the dagger is $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$, strictly positive off zero; so the dagger is positive, the cone of squares is the cone of the positive semidefinite Hermitian elements, and every element has a polar decomposition $\tilde{Q}=\tilde U\lvert\tilde{Q}\rvert$ with $\tilde U$ unitary. But the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, the interval of the corpus, is a *complex, indefinite* form that vanishes on the null cone, and the temptation is to conclude that no positivity can hold. The general theorem, that the dagger of a real Clifford algebra is positive exactly when the quadratic form is negative definite (*Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*), seems to forbid it outright, since $\langle\cdot\rangle$ is not negative definite. The resolution is the one that article itself records under the exchange of sides: a positive definite quadratic form does not fail to give a cone, it gives the cone of the **other** involution, and the involution to use is reversion rather than Clifford conjugation. The dagger of $\mathbb{B}$ is exactly that reversion, the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ (*Biquaternion Versors and the Orthogonal Group*), so its positivity and the indefiniteness of $\langle\cdot\rangle$ are statements about two different structures on one algebra, and they are compatible.
+The result that organises the article is that, in the biquaternion algebra, **positivity holds** — and the reason is a change of Clifford structure, not a change of the algebra. The scalar form of the dagger is $\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_1)=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$, strictly positive off zero; so the dagger is positive, the cone of squares is the cone of the positive semidefinite Hermitian elements, and every element has a polar decomposition $\tilde{Q}_1=\tilde U\lvert\tilde{Q}_1\rvert$ with $\tilde U$ unitary. But the biquaternion norm $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^{2}$, the interval of the corpus, is a *complex, indefinite* form that vanishes on the null cone, and the temptation is to conclude that no positivity can hold. The general theorem, that the dagger of a real Clifford algebra is positive exactly when the quadratic form is negative definite (*Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*), seems to forbid it outright, since $\langle\cdot\rangle$ is not negative definite. The resolution is the one that article itself records under the exchange of sides: a positive definite quadratic form does not fail to give a cone, it gives the cone of the **other** involution, and the involution to use is reversion rather than Clifford conjugation. The dagger of $\mathbb{B}$ is exactly that reversion, the reversion of the positive definite Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ (*Biquaternion Versors and the Orthogonal Group*), so its positivity and the indefiniteness of $\langle\cdot\rangle$ are statements about two different structures on one algebra, and they are compatible.
 
 Positivity is not only consistent here, it is simple, and that simplicity is the second theme. Because the form $\mathrm{Sc}(\tilde{T}^{*}\tilde W)$ is positive definite, every subspace of $\mathbb{B}$ inherits a positive definite restriction, so no subspace is isotropic and the module theory of the companion article needs no correction (*Hermitian Modules over the Biquaternioid Algebra with Hermitian Adjoint*). And because the algebra is a full complex matrix algebra, the cone is a **symmetric cone**: self-dual for the scalar form, with the positive definite elements as interior, and the group of units decomposing as $\mathrm{U}(2)\cdot\exp(\mathbb{M}_+)$ along the Cartan involution.
 
-The cone of the two-sided operators is described in *Two-Sided Operators on the General Plain Sesqualgebra*, §*The Image of the Identity and the Cone*, where $\{\Theta_{\tilde{Q}}(e_t)\}=\{\tilde{Q}\tilde{Q}^{*}\}$ is read as the image of the identity; the present article is its dedicated counterpart, and it does not repeat the operator statements. The scalar and the algebra-valued forms are *Hermitian Forms over the Biquaternioid Algebra and the Unitary Witt Group with Hermitian Adjoint*; the Jordan structure of $\mathbb{M}_+$ and its isotropic cone are *Remarkable Subspaces and the Four General Products* and *Remarkable Subspaces and the Analysis*; the symmetric space is cited from *Symmetric Spaces*; and the general theory, with the exchange of sides and the Cartan involution, is *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*.
+The cone of the two-sided operators is described in *Two-Sided Operators on the General Plain Sesqualgebra*, §*The Image of the Identity and the Cone*, where $\{\Theta_{\tilde{Q}_1}(e_t)\}=\{\tilde{Q}_1\tilde{Q}_1^{*}\}$ is read as the image of the identity; the present article is its dedicated counterpart, and it does not repeat the operator statements. The scalar and the algebra-valued forms are *Hermitian Forms over the Biquaternioid Algebra and the Unitary Witt Group with Hermitian Adjoint*; the Jordan structure of $\mathbb{M}_+$ and its isotropic cone are *Remarkable Subspaces and the Four General Products* and *Remarkable Subspaces and the Analysis*; the symmetric space is cited from *Symmetric Spaces*; and the general theory, with the exchange of sides and the Cartan involution, is *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*.
 
 ## Self-Adjoint and Skew Elements
 
-**Definition.** An element $\tilde{Q}$ is **Hermitian**, or self-adjoint, if $\tilde{Q}^{*}=\tilde{Q}$, and **skew-adjoint** if $\tilde{Q}^{*}=-\tilde{Q}$. Write
+**Definition.** An element $\tilde{Q}_1$ is **Hermitian**, or self-adjoint, if $\tilde{Q}_1^{*}=\tilde{Q}_1$, and **skew-adjoint** if $\tilde{Q}_1^{*}=-\tilde{Q}_1$. Write
 
 $$
-\mathrm{Herm}=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathbb{M}_+,
+\mathrm{Herm}=\{\tilde{Q}_1:\tilde{Q}_1^{*}=\tilde{Q}_1\}=\mathbb{M}_+,
 \qquad
-\mathrm{Skew}=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathbb{M}_-.
+\mathrm{Skew}=\{\tilde{Q}_1:\tilde{Q}_1^{*}=-\tilde{Q}_1\}=\mathbb{M}_-.
 $$
 
 **Proposition (the splitting).** The dagger is an anti-involution of order two, so $\mathrm{Herm}$ and $\mathrm{Skew}$ are real subspaces and
@@ -25,16 +25,16 @@ $$
 $$
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-,
 \qquad
-\tilde{Q}=\tfrac12\bigl(\tilde{Q}+\tilde{Q}^{*}\bigr)+\tfrac12\bigl(\tilde{Q}-\tilde{Q}^{*}\bigr),
+\tilde{Q}_1=\tfrac12\bigl(\tilde{Q}_1+\tilde{Q}_1^{*}\bigr)+\tfrac12\bigl(\tilde{Q}_1-\tilde{Q}_1^{*}\bigr),
 $$
 
 the splitting being the eigen-decomposition of the involution.
 
-*Proof.* $(\tilde{Q}^{*})^{\dagger}=\tilde{Q}$ gives $\mathrm{Herm}\cap\mathrm{Skew}=0$, and the displayed formula exhibits the sum, its first term fixed by the dagger and its second negated, because $2$ is invertible in $\mathbb{C}$ (the base field of the algebra, with the identity involution).
+*Proof.* $(\tilde{Q}_1^{*})^{\dagger}=\tilde{Q}_1$ gives $\mathrm{Herm}\cap\mathrm{Skew}=0$, and the displayed formula exhibits the sum, its first term fixed by the dagger and its second negated, because $2$ is invertible in $\mathbb{C}$ (the base field of the algebra, with the identity involution).
 
-**Proposition (squares are Hermitian).** For every $\tilde{Q}$ the element $\tilde{Q}^{*}\tilde{Q}$ is Hermitian, and so is $\tilde{Q}\tilde{Q}^{*}$.
+**Proposition (squares are Hermitian).** For every $\tilde{Q}_1$ the element $\tilde{Q}_1^{*}\tilde{Q}_1$ is Hermitian, and so is $\tilde{Q}_1\tilde{Q}_1^{*}$.
 
-*Proof.* $(\tilde{Q}^{*}\tilde{Q})^{\dagger}=\tilde{Q}^{*}(\tilde{Q}^{*})^{\dagger}=\tilde{Q}^{*}\tilde{Q}$, and the second statement is the first with $\tilde{Q}$ replaced by $\tilde{Q}^{*}$.
+*Proof.* $(\tilde{Q}_1^{*}\tilde{Q}_1)^{\dagger}=\tilde{Q}_1^{*}(\tilde{Q}_1^{*})^{\dagger}=\tilde{Q}_1^{*}\tilde{Q}_1$, and the second statement is the first with $\tilde{Q}_1$ replaced by $\tilde{Q}_1^{*}$.
 
 **Remark (the two sectors in matrix form).** Under the isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, the Hermitian sector maps onto the Hermitian matrices, $\mathsf{M}_2(\mathbb{M}_+)=H_2(\mathbb{C})$, and the anti-Hermitian sector onto the skew-Hermitian ones, $\mathsf{M}_2(\mathbb{M}_-)=u(2)$; both are real four-dimensional subspaces, and the splitting of the proposition is the decomposition of a matrix into its Hermitian and skew-Hermitian parts (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, *Introduction to the Remarkable Subspaces*). This is the reason the two sectors behave so differently under every formula of the article: one is the observable side, the other the generator side.
 
@@ -43,25 +43,25 @@ the splitting being the eigen-decomposition of the involution.
 **Definition.** The dagger is **positive** if
 
 $$
-\mathrm{Sc}\bigl(\tilde{Q}^{*}\tilde{Q}\bigr)>0\qquad\text{for every }\tilde{Q}\neq0 .
+\mathrm{Sc}\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)>0\qquad\text{for every }\tilde{Q}_1\neq0 .
 $$
 
 **Theorem (the biquaternion dagger is positive).** For every biquaternion,
 
 $$
-\mathrm{Sc}\bigl(\tilde{Q}^{*}\tilde{Q}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2}\ \ge 0 ,
+\mathrm{Sc}\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_{1,\mu}\rvert^{2}\ \ge 0 ,
 $$
 
-with equality if and only if $\tilde{Q}=0$. Hence the dagger of $\mathbb{B}$ is a positive involution and the scalar form $(\tilde{Q},\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$ is positive definite.
+with equality if and only if $\tilde{Q}_1=0$. Hence the dagger of $\mathbb{B}$ is a positive involution and the scalar form $(\tilde{Q}_1,\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_2)$ is positive definite.
 
-*Proof.* Write $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. By *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* the diagonal of the general plain sesquilinear form is $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}$, and $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$ by the same computation applied to $\tilde{Q}^{*}$, whose coefficients are the conjugates $Q_{\bar{\mu}}$ of those of $\tilde{Q}$. A sum of non-negative reals vanishes only if each term does, so the form vanishes only at $\tilde{Q}=0$; and the same computation with $\tilde{Q}_1$ in place of $\tilde{Q}^{*}$ makes the general plain sesquilinear form positive definite in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where its Gram matrix is the identity.
+*Proof.* Write $\tilde{Q}_1=\sum_\mu Q_{1,\mu} e_\mu$ with $Q_{1,\mu}\in\mathbb{C}$. By *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* the diagonal of the general plain sesquilinear form is $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_1^{*})=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$, and $\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_1)=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$ by the same computation applied to $\tilde{Q}_1^{*}$, whose coefficients are the conjugates $Q_{\bar{\mu}}$ of those of $\tilde{Q}_1$. A sum of non-negative reals vanishes only if each term does, so the form vanishes only at $\tilde{Q}_1=0$; and the same computation with $\tilde{Q}_2$ in place of $\tilde{Q}_1^{*}$ makes the general plain sesquilinear form positive definite in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where its Gram matrix is the identity.
 
-**Remark (why no contradiction with the general theorem).** The general article proves that the dagger of a real Clifford algebra is positive exactly when the quadratic form is negative definite, and it adds the correction that a positive definite form gives the cone of the *other* involution, the two statements being exchanged by $\vec e_\mu\mapsto i\vec e_\mu$ (*Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, §*Remark (the exchange of sides)*). The biquaternion algebra is that exchange in force. Its dagger is not the Clifford conjugation of the Minkowski structure $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$; it is the **reversion** of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, in which the vectors are the imaginary quaternions $i\vec e_\mu$ and reversion fixes them, which is why $i\vec e_z$ is Hermitian while $\vec e_z$ is not (*Biquaternion Versors and the Orthogonal Group*, §*The Two Involutions*). The scalar form it licenses is the definite form $\sum_\mu\lvert Q_\mu\rvert^{2}$, not the quaternion norm. The two structures on the one algebra carry two forms:
+**Remark (why no contradiction with the general theorem).** The general article proves that the dagger of a real Clifford algebra is positive exactly when the quadratic form is negative definite, and it adds the correction that a positive definite form gives the cone of the *other* involution, the two statements being exchanged by $\vec e_\mu\mapsto i\vec e_\mu$ (*Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint*, §*Remark (the exchange of sides)*). The biquaternion algebra is that exchange in force. Its dagger is not the Clifford conjugation of the Minkowski structure $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$; it is the **reversion** of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, in which the vectors are the imaginary quaternions $i\vec e_\mu$ and reversion fixes them, which is why $i\vec e_z$ is Hermitian while $\vec e_z$ is not (*Biquaternion Versors and the Orthogonal Group*, §*The Two Involutions*). The scalar form it licenses is the definite form $\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$, not the quaternion norm. The two structures on the one algebra carry two forms:
 
 | structure | quadratic form | on the vectors | involution | definite? |
 |---|---|---|---|---|
-| $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ | $\sum_\mu\lvert Q_\mu\rvert^{2}$, positive definite | $i\vec e_\mu$ | reversion $={}^{*}$ | positive |
-| $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, indefinite | Minkowski $V$ | Clifford conjugation | indefinite |
+| $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ | $\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$, positive definite | $i\vec e_\mu$ | reversion $={}^{*}$ | positive |
+| $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ | $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^{2}$, indefinite | Minkowski $V$ | Clifford conjugation | indefinite |
 
 **Corollary ($C^{*}$-structure).** With the dagger, $\mathbb{B}\cong M_2(\mathbb{C})$ is a finite-dimensional $C^{*}$-algebra — the full endomorphism algebra of the two-dimensional complex space $S$ of *Hermitian Modules over the Biquaternioid Algebra with Hermitian Adjoint* — and the scalar form is its trace pairing, $\mathrm{Sc}(\tilde{T}^{*}\tilde W)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde T)^{\dagger}\mathsf{M}_2(\tilde W))$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). Every theorem of the $C^{*}$-theory of the positive cone applies, and the next two sections read three of them in biquaternion terms.
 
@@ -70,7 +70,7 @@ with equality if and only if $\tilde{Q}=0$. Hence the dagger of $\mathbb{B}$ is 
 **Definition.** The **Hermitian cone** of the algebra is the image of the squaring map,
 
 $$
-P=\bigl\{\tilde{Q}^{*}\tilde{Q}:\tilde{Q}\in\mathbb{B}\bigr\}.
+P=\bigl\{\tilde{Q}_1^{*}\tilde{Q}_1:\tilde{Q}_1\in\mathbb{B}\bigr\}.
 $$
 
 Its elements are Hermitian by the proposition above, and it contains $0$ and $e_t$.
@@ -78,22 +78,22 @@ Its elements are Hermitian by the proposition above, and it contains $0$ and $e_
 **Theorem (the cone in matrix form).** The cone is the set of positive semidefinite Hermitian elements,
 
 $$
-P=\bigl\{H\in\mathbb{M}_+:\mathsf{M}_2(H)\succeq0\bigr\}=\bigl\{\tilde{Q}\tilde{Q}^{*}:\tilde{Q}\in\mathbb{B}\bigr\},
+P=\bigl\{H\in\mathbb{M}_+:\mathsf{M}_2(H)\succeq0\bigr\}=\bigl\{\tilde{Q}_1\tilde{Q}_1^{*}:\tilde{Q}_1\in\mathbb{B}\bigr\},
 $$
 
 and it is a closed convex cone of real dimension four, pointed, generating the Hermitian sector. It is **self-dual** for the scalar form: $H\in P$ if and only if $(H,K)\ge0$ for every $K\in P$.
 
-*Proof.* $\mathsf{M}_2(\tilde{Q}^{*}\tilde{Q})=\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q})\succeq0$ is the standard form of a positive semidefinite matrix, so $P$ is contained in the positive semidefinite Hermitian elements; conversely a positive semidefinite Hermitian $H$ has a positive semidefinite Hermitian square root $H^{1/2}$, and $H=H^{1/2}(H^{1/2})^{\dagger}=\tilde{Q}^{*}\tilde{Q}$ with $\tilde{Q}=H^{1/2}$, which is Hermitian and so satisfies $\tilde{Q}^{*}=\tilde{Q}$. The second description follows because $\tilde{Q}\mapsto\tilde{Q}^{*}$ is a bijection. Closedness, convexity and the four real dimensions are those of the positive semidefinite cone $H_2(\mathbb{C})_{\succeq0}$, which has real dimension four. Pointedness: $H\in P\cap(-P)$ means $H\succeq0$ and $-H\succeq0$, so $H=0$. Generation: the spectral decomposition writes any Hermitian $H$ as $H_+-H_-$ with $H_\pm\succeq0$. Self-duality: if $H\succeq0$ and $K\succeq0$ then $(H,K)=\mathrm{Sc}(HK)=\tfrac12\operatorname{Tr}(HK)=\tfrac12\operatorname{Tr}(H^{1/2}KH^{1/2})\ge0$, so $P\subseteq \bar{P}$; conversely if $(H,K)\ge0$ for every $K\in P$, testing against the rank-one elements $K=\tilde E\tilde{E}^{*}$ gives $\tilde{E}^{*}\mathsf{M}_2(H)\tilde E\ge0$ for every $\tilde E\in\mathbb{C}^2$, which is $H\succeq0$.
+*Proof.* $\mathsf{M}_2(\tilde{Q}_1^{*}\tilde{Q}_1)=\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_1)\succeq0$ is the standard form of a positive semidefinite matrix, so $P$ is contained in the positive semidefinite Hermitian elements; conversely a positive semidefinite Hermitian $H$ has a positive semidefinite Hermitian square root $H^{1/2}$, and $H=H^{1/2}(H^{1/2})^{\dagger}=\tilde{Q}_1^{*}\tilde{Q}_1$ with $\tilde{Q}_1=H^{1/2}$, which is Hermitian and so satisfies $\tilde{Q}_1^{*}=\tilde{Q}_1$. The second description follows because $\tilde{Q}_1\mapsto\tilde{Q}_1^{*}$ is a bijection. Closedness, convexity and the four real dimensions are those of the positive semidefinite cone $H_2(\mathbb{C})_{\succeq0}$, which has real dimension four. Pointedness: $H\in P\cap(-P)$ means $H\succeq0$ and $-H\succeq0$, so $H=0$. Generation: the spectral decomposition writes any Hermitian $H$ as $H_+-H_-$ with $H_\pm\succeq0$. Self-duality: if $H\succeq0$ and $K\succeq0$ then $(H,K)=\mathrm{Sc}(HK)=\tfrac12\operatorname{Tr}(HK)=\tfrac12\operatorname{Tr}(H^{1/2}KH^{1/2})\ge0$, so $P\subseteq \bar{P}$; conversely if $(H,K)\ge0$ for every $K\in P$, testing against the rank-one elements $K=\tilde E\tilde{E}^{*}$ gives $\tilde{E}^{*}\mathsf{M}_2(H)\tilde E\ge0$ for every $\tilde E\in\mathbb{C}^2$, which is $H\succeq0$.
 
 **Corollary (the interior is the image of the units).** The interior of the cone is the set of positive definite Hermitian elements, and
 
 $$
-P^{\circ}=\bigl\{\tilde{Q}^{*}\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\bigr\}=\bigl\{\tilde{Q}\tilde{Q}^{*}:\tilde{Q}\in\mathbb{B}^{\times}\bigr\},
+P^{\circ}=\bigl\{\tilde{Q}_1^{*}\tilde{Q}_1:\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\neq0\bigr\}=\bigl\{\tilde{Q}_1\tilde{Q}_1^{*}:\tilde{Q}_1\in\mathbb{B}^{\times}\bigr\},
 $$
 
-singled out by any of the equivalent conditions $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, $\tilde{Q}$ invertible, $\tilde{Q}^{*}\tilde{Q}\succ0$. The boundary consists of the nonzero singular squares, of rank one.
+singled out by any of the equivalent conditions $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\neq0$, $\tilde{Q}_1$ invertible, $\tilde{Q}_1^{*}\tilde{Q}_1\succ0$. The boundary consists of the nonzero singular squares, of rank one.
 
-*Proof.* $\det\mathsf{M}_2(\tilde{Q}^{*}\tilde{Q})=\lvert\det\mathsf{M}_2(\tilde{Q})\rvert^{2}=\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert^{2}$ by the multiplicativity of the determinant and $N=\det\mathsf{M}_2$ (*Norm and Invertibility in the General Quaternionic Algebra*, *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), and a positive semidefinite matrix is positive definite exactly when its determinant is nonzero. The equivalence of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ with invertibility is the invertibility criterion of *Norm and Invertibility in the General Quaternionic Algebra*.
+*Proof.* $\det\mathsf{M}_2(\tilde{Q}_1^{*}\tilde{Q}_1)=\lvert\det\mathsf{M}_2(\tilde{Q}_1)\rvert^{2}=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert^{2}$ by the multiplicativity of the determinant and $N=\det\mathsf{M}_2$ (*Norm and Invertibility in the General Quaternionic Algebra*, *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), and a positive semidefinite matrix is positive definite exactly when its determinant is nonzero. The equivalence of $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\neq0$ with invertibility is the invertibility criterion of *Norm and Invertibility in the General Quaternionic Algebra*.
 
 **Remark (the two cones of the Hermitian sector).** The word "cone" is already used in the algebra for a different set, and the two must not be confused. The **isotropic cone** of $\mathbb{M}_+$ is the null set of the biquaternion norm there, $q_t^{2}=(\vec q',\vec q')$, the part of the zero-divisor locus that lies in the sector (*Introduction to the Remarkable Subspaces*, *Zero Divisors of the Biquaternion Algebra*); it is a cone of real dimension three, and it is indefinite — it contains the nonzero null elements. The **Hermitian cone** $P$ of this article is the cone of squares, of real dimension four; it meets the null set only along its boundary, where it is the forward half of the isotropic cone. The isotropic cone is the **boundary** of $P$ together with the boundary of $-P$, and the two statements are related by the interval form of the next section.
 
@@ -114,69 +114,69 @@ the closed **forward light cone** of the interval form $\langle\cdot\rangle$ on 
 **Corollary (the extreme rays and the projective line).** The extreme rays of $P$ are the nonzero rank-one squares, and in the matrix model they are the outer products
 
 $$
-\tilde{Q}\tilde{Q}^{*}\longleftrightarrow \tilde E\tilde{E}^{*},
+\tilde{Q}_1\tilde{Q}_1^{*}\longleftrightarrow \tilde E\tilde{E}^{*},
 \qquad \tilde E\in\mathbb{C}^{2},\ \tilde E\neq0,
 $$
 
 the pair $(\tilde E)$ being determined up to a nonzero complex scalar; so the extreme rays are parametrised by the projective line $\mathbb{P}^{1}(\mathbb{C})$. On the boundary each element is a product $\pm \tilde E\tilde{E}^{*}$ of a spinor and its conjugate, which is the factorisation of a null element, and the parametrisation is the projective form of the two rulings of the null quadric (*Biquaternion Spin Geometry*, *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 
-**Remark (the cone and the two-sided operators).** The cone appeared in the operator family as the image of the identity, $\Theta_{\tilde{Q}}(e_t)=\tilde{Q}\tilde{Q}^{*}$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Image of the Identity and the Cone*), and as the positive cone over which the completely positive maps are defined (*Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint*). What is added here is the intrinsic description: $P$ is the cone of squares of the involution, the forward cone of the interval form, and the symmetric cone of the Jordan algebra $\mathbb{M}_+$ (*Remarkable Subspaces and the Four General Products*), the three being one object read three ways.
+**Remark (the cone and the two-sided operators).** The cone appeared in the operator family as the image of the identity, $\Theta_{\tilde{Q}_1}(e_t)=\tilde{Q}_1\tilde{Q}_1^{*}$ (*Two-Sided Operators on the General Plain Sesqualgebra*, §*The Image of the Identity and the Cone*), and as the positive cone over which the completely positive maps are defined (*Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint*). What is added here is the intrinsic description: $P$ is the cone of squares of the involution, the forward cone of the interval form, and the symmetric cone of the Jordan algebra $\mathbb{M}_+$ (*Remarkable Subspaces and the Four General Products*), the three being one object read three ways.
 
 ## The Polar Decomposition
 
 **Theorem (the dagger polar decomposition).** Every biquaternion has a decomposition
 
 $$
-\tilde{Q}=\tilde U\,\lvert\tilde{Q}\rvert,
+\tilde{Q}_1=\tilde U\,\lvert\tilde{Q}_1\rvert,
 \qquad
-\lvert\tilde{Q}\rvert=\bigl(\tilde{Q}^{*}\tilde{Q}\bigr)^{1/2}\in P,
+\lvert\tilde{Q}_1\rvert=\bigl(\tilde{Q}_1^{*}\tilde{Q}_1\bigr)^{1/2}\in P,
 \qquad
 \tilde U^{\dagger}\tilde U=e_t,
 $$
 
-with $\lvert\tilde{Q}\rvert$ the positive square root in the cone and $\tilde U$ in the unitary slice. The decomposition is unique exactly when $\tilde{Q}$ is invertible, that is exactly outside the null cone.
+with $\lvert\tilde{Q}_1\rvert$ the positive square root in the cone and $\tilde U$ in the unitary slice. The decomposition is unique exactly when $\tilde{Q}_1$ is invertible, that is exactly outside the null cone.
 
-*Proof.* The element $\tilde{Q}^{*}\tilde{Q}$ is Hermitian and in the cone, so in the matrix algebra it has a unique positive semidefinite square root $\lvert\tilde{Q}\rvert$, and $\mathsf{M}_2(\lvert\tilde{Q}\rvert)=\lvert\mathsf{M}_2(\tilde{Q})\rvert$ in the sense of the positive square root of a positive semidefinite matrix. For invertible $\tilde{Q}$ set $\tilde U=\tilde{Q}\lvert\tilde{Q}\rvert^{-1}$; then $\tilde U^{\dagger}\tilde U=\lvert\tilde{Q}\rvert^{-1}\tilde{Q}^{*}\tilde{Q}\lvert\tilde{Q}\rvert^{-1}=\lvert\tilde{Q}\rvert^{-1}\lvert\tilde{Q}\rvert^{2}\lvert\tilde{Q}\rvert^{-1}=e_t$, and the uniqueness of the positive square root makes the pair unique. For singular $\tilde{Q}$ the element $\lvert\tilde{Q}\rvert$ is a nonzero singular positive element and the unitary factor is not unique; the decomposition still exists by the matrix statement.
+*Proof.* The element $\tilde{Q}_1^{*}\tilde{Q}_1$ is Hermitian and in the cone, so in the matrix algebra it has a unique positive semidefinite square root $\lvert\tilde{Q}_1\rvert$, and $\mathsf{M}_2(\lvert\tilde{Q}_1\rvert)=\lvert\mathsf{M}_2(\tilde{Q}_1)\rvert$ in the sense of the positive square root of a positive semidefinite matrix. For invertible $\tilde{Q}_1$ set $\tilde U=\tilde{Q}_1\lvert\tilde{Q}_1\rvert^{-1}$; then $\tilde U^{\dagger}\tilde U=\lvert\tilde{Q}_1\rvert^{-1}\tilde{Q}_1^{*}\tilde{Q}_1\lvert\tilde{Q}_1\rvert^{-1}=\lvert\tilde{Q}_1\rvert^{-1}\lvert\tilde{Q}_1\rvert^{2}\lvert\tilde{Q}_1\rvert^{-1}=e_t$, and the uniqueness of the positive square root makes the pair unique. For singular $\tilde{Q}_1$ the element $\lvert\tilde{Q}_1\rvert$ is a nonzero singular positive element and the unitary factor is not unique; the decomposition still exists by the matrix statement.
 
-**Corollary (the absolute value and the norm).** $\lvert\tilde{Q}\rvert$ is Hermitian, positive semidefinite, and
-
-$$
-N\bigl(\lvert\tilde{Q}\rvert\bigr)=\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert\ \ge 0 ,
-$$
-
-so the absolute value lands in the Hermitian sector with a *non-negative* norm there, and $\tilde{Q}$ is invertible if and only if $\lvert\tilde{Q}\rvert$ lies in the interior of the cone.
-
-*Proof.* $\langle\lvert\tilde{Q}\rvert,\lvert\tilde{Q}\rvert\rangle_{\natural}=\det\mathsf{M}_2(\lvert\tilde{Q}\rvert)=\det\lvert\mathsf{M}_2(\tilde{Q})\rvert=\lvert\det\mathsf{M}_2(\tilde{Q})\rvert=\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert$, the third equality being the product of the non-negative eigenvalues of the positive semidefinite matrix $\lvert\mathsf{M}_2(\tilde{Q})\rvert$. The invertibility statement is the corollary of the previous section.
-
-**Remark (the two polar decompositions of the algebra).** This decomposition is not the polar element representation $\tilde{Q}=r \exp(i\alpha)B\tilde u$ of *The Polar Element Representation of Biquaternions*. The dagger decomposition separates a **unitary** factor from a **positive** one, exists for every element, and is unique off the null cone; the polar element representation separates a scale, a central phase, a Hermitian positive boost and a unit real quaternion, exists on the same set off the null cone. The two agree in domain and differ in factors: the dagger decomposition absorbs the scale and the phase into the unitary factor, while the polar word exhibits them. Their common failure set is the null cone, and for the same reason: it is where the modulus ceases to be invertible, so that the decomposition loses its uniqueness while the factors that remain are those of the boundary.
-
-**Corollary (the real-quaternion slice).** On the slice $\mathbb{H}_{\mathbb{B}}$ of real coefficients the dagger is the quaternion conjugation, $\tilde{Q}^{*}=\tilde{Q}^{\natural}$, so
+**Corollary (the absolute value and the norm).** $\lvert\tilde{Q}_1\rvert$ is Hermitian, positive semidefinite, and
 
 $$
-\tilde{Q}^{*}\tilde{Q}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t ,
+N\bigl(\lvert\tilde{Q}_1\rvert\bigr)=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert\ \ge 0 ,
 $$
 
-a real scalar, and $\lvert\tilde{Q}\rvert=\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert^{1/2}e_t$ with $\tilde U=\tilde{Q}/\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert^{1/2}$ for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}>0$. The cone therefore meets that slice in the ray $\mathbb{R}_{\ge0}e_t$, and on it the decomposition reduces to the polar decomposition of a quaternion, as the general article records for its quaternion example: $\tilde{Q}^{*}\tilde{Q}$ is a non-negative real scalar and $\tilde U$ lies in the norm-one group $SU(2)=\mathrm{Spin}(3)$.
+so the absolute value lands in the Hermitian sector with a *non-negative* norm there, and $\tilde{Q}_1$ is invertible if and only if $\lvert\tilde{Q}_1\rvert$ lies in the interior of the cone.
 
-*Proof.* On the slice the coefficient conjugation is the identity, so $\tilde{Q}^{*}=\tilde{Q}^{\natural}$, and $\tilde{Q}^{\natural}\tilde{Q}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}e_t$ by the defining identity of the quaternion norm (*Norm and Invertibility in the General Quaternionic Algebra*). The rest is the theorem with a scalar absolute value.
+*Proof.* $\langle\lvert\tilde{Q}_1\rvert,\lvert\tilde{Q}_1\rvert\rangle_{\natural}=\det\mathsf{M}_2(\lvert\tilde{Q}_1\rvert)=\det\lvert\mathsf{M}_2(\tilde{Q}_1)\rvert=\lvert\det\mathsf{M}_2(\tilde{Q}_1)\rvert=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert$, the third equality being the product of the non-negative eigenvalues of the positive semidefinite matrix $\lvert\mathsf{M}_2(\tilde{Q}_1)\rvert$. The invertibility statement is the corollary of the previous section.
+
+**Remark (the two polar decompositions of the algebra).** This decomposition is not the polar element representation $\tilde{Q}_1=r \exp(i\alpha)B\tilde u$ of *The Polar Element Representation of Biquaternions*. The dagger decomposition separates a **unitary** factor from a **positive** one, exists for every element, and is unique off the null cone; the polar element representation separates a scale, a central phase, a Hermitian positive boost and a unit real quaternion, exists on the same set off the null cone. The two agree in domain and differ in factors: the dagger decomposition absorbs the scale and the phase into the unitary factor, while the polar word exhibits them. Their common failure set is the null cone, and for the same reason: it is where the modulus ceases to be invertible, so that the decomposition loses its uniqueness while the factors that remain are those of the boundary.
+
+**Corollary (the real-quaternion slice).** On the slice $\mathbb{H}_{\mathbb{B}}$ of real coefficients the dagger is the quaternion conjugation, $\tilde{Q}_1^{*}=\tilde{Q}_1^{\natural}$, so
+
+$$
+\tilde{Q}_1^{*}\tilde{Q}_1=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}e_t ,
+$$
+
+a real scalar, and $\lvert\tilde{Q}_1\rvert=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert^{1/2}e_t$ with $\tilde U=\tilde{Q}_1/\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert^{1/2}$ for $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}>0$. The cone therefore meets that slice in the ray $\mathbb{R}_{\ge0}e_t$, and on it the decomposition reduces to the polar decomposition of a quaternion, as the general article records for its quaternion example: $\tilde{Q}_1^{*}\tilde{Q}_1$ is a non-negative real scalar and $\tilde U$ lies in the norm-one group $SU(2)=\mathrm{Spin}(3)$.
+
+*Proof.* On the slice the coefficient conjugation is the identity, so $\tilde{Q}_1^{*}=\tilde{Q}_1^{\natural}$, and $\tilde{Q}_1^{\natural}\tilde{Q}_1=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}e_t$ by the defining identity of the quaternion norm (*Norm and Invertibility in the General Quaternionic Algebra*). The rest is the theorem with a scalar absolute value.
 
 ## The Cartan Involution
 
 **Definition.** On the group of units $\mathbb{B}^{\times}=GL(2,\mathbb{C})$ put
 
 $$
-\theta(\tilde{Q})=\bigl(\tilde{Q}^{*}\bigr)^{-1}.
+\theta(\tilde{Q}_1)=\bigl(\tilde{Q}_1^{*}\bigr)^{-1}.
 $$
 
 **Proposition (an automorphism of order two).** $\theta$ is an automorphism of the group of units of order two, its fixed set is exactly the unitary slice,
 
 $$
-\theta(\tilde{Q})=\tilde{Q}\iff\tilde{Q}^{*}\tilde{Q}=e_t\iff\tilde{Q}\in \mathrm{U}(2),
+\theta(\tilde{Q}_1)=\tilde{Q}_1\iff\tilde{Q}_1^{*}\tilde{Q}_1=e_t\iff\tilde{Q}_1\in \mathrm{U}(2),
 $$
 
 and its differential at the identity is $\mathrm{d}\theta=-{}^{*}$, which is $+1$ on the anti-Hermitian sector and $-1$ on the Hermitian sector.
 
-*Proof.* $\theta(\tilde{Q}\tilde{Q}_1)=((\tilde{Q}\tilde{Q}_1)^{\dagger})^{-1}=(\tilde{Q}_1^{*}\tilde{Q}^{*})^{-1}=(\tilde{Q}^{*})^{-1}(\tilde{Q}_1^{*})^{-1}=\theta(\tilde{Q})\theta(\tilde{Q}_1)$, so $\theta$ is an automorphism; $\theta^{2}(\tilde{Q})=(((\tilde{Q}^{*})^{-1})^{\dagger})^{-1}=(\tilde{Q}^{-1})^{-1}=\tilde{Q}$, so it has order two. Its fixed set is $\{\tilde{Q}:(\tilde{Q}^{*})^{-1}=\tilde{Q}\}=\{\tilde{Q}:\tilde{Q}^{*}\tilde{Q}=e_t\}$, the slice. For the differential, $\theta(e_t+t \tilde A)\equiv e_t-t \tilde{A}^{*}$ to first order, so $\mathrm{d}\theta(\tilde A)=-\tilde{A}^{*}$, which is $\tilde A$ on $\mathbb{M}_-$ and $-\tilde A$ on $\mathbb{M}_+$.
+*Proof.* $\theta(\tilde{Q}_1\tilde{Q}_2)=((\tilde{Q}_1\tilde{Q}_2)^{\dagger})^{-1}=(\tilde{Q}_2^{*}\tilde{Q}_1^{*})^{-1}=(\tilde{Q}_1^{*})^{-1}(\tilde{Q}_2^{*})^{-1}=\theta(\tilde{Q}_1)\theta(\tilde{Q}_2)$, so $\theta$ is an automorphism; $\theta^{2}(\tilde{Q}_1)=(((\tilde{Q}_1^{*})^{-1})^{\dagger})^{-1}=(\tilde{Q}_1^{-1})^{-1}=\tilde{Q}_1$, so it has order two. Its fixed set is $\{\tilde{Q}_1:(\tilde{Q}_1^{*})^{-1}=\tilde{Q}_1\}=\{\tilde{Q}_1:\tilde{Q}_1^{*}\tilde{Q}_1=e_t\}$, the slice. For the differential, $\theta(e_t+t \tilde A)\equiv e_t-t \tilde{A}^{*}$ to first order, so $\mathrm{d}\theta(\tilde A)=-\tilde{A}^{*}$, which is $\tilde A$ on $\mathbb{M}_-$ and $-\tilde A$ on $\mathbb{M}_+$.
 
 **Theorem (Cartan decomposition).** With the commutator bracket $\langle\tilde D,\tilde A\rangle_{\natural*}=\tilde A\tilde D-\tilde D\tilde A$,
 
@@ -206,30 +206,30 @@ $$
 
 every invertible element being uniquely a unitary times the exponential of a Hermitian element, and the quotient being the interior of the cone, the positive definite Hermitian elements. This is the Cartan decomposition of a reductive group, read in the algebra; the general theory is *Symmetric Spaces* and the Lie-theoretic part of it in *Biquaternion Lie Group and Exponential Structure*.
 
-*Proof.* The exponential of a Hermitian element is positive definite, the exponential of the whole sector $\mathbb{M}_+$ is the whole interior of the cone, and the decomposition $\tilde{Q}=\tilde U\exp(H)$ is the polar decomposition, since $\lvert\tilde{Q}\rvert=\exp(H)$ for a unique Hermitian $H$; that the stabiliser of the quotient is exactly $\mathrm{U}(2)$ is the proposition above, so the quotient is the interior of the cone.
+*Proof.* The exponential of a Hermitian element is positive definite, the exponential of the whole sector $\mathbb{M}_+$ is the whole interior of the cone, and the decomposition $\tilde{Q}_1=\tilde U\exp(H)$ is the polar decomposition, since $\lvert\tilde{Q}_1\rvert=\exp(H)$ for a unique Hermitian $H$; that the stabiliser of the quotient is exactly $\mathrm{U}(2)$ is the proposition above, so the quotient is the interior of the cone.
 
-**Remark (the trap of the real-quaternion slice).** On $\mathbb{H}_{\mathbb{B}}$ the involution ${}^{*}$ is the quaternion conjugation and $\theta(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, which is not the identity and not the conjugation of the slice; the automorphism of the slice given by the conjugation is a different map. The Cartan involution is an operation of the full complexification, and restricting it to the real-quaternion slice changes what it is.
+**Remark (the trap of the real-quaternion slice).** On $\mathbb{H}_{\mathbb{B}}$ the involution ${}^{*}$ is the quaternion conjugation and $\theta(\tilde{Q}_1)=(\tilde{Q}_1^{\natural})^{-1}=\tilde{Q}_1/\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}$, which is not the identity and not the conjugation of the slice; the automorphism of the slice given by the conjugation is a different map. The Cartan involution is an operation of the full complexification, and restricting it to the real-quaternion slice changes what it is.
 
 ## Summary
 
-The dagger of the biquaternion algebra is a **positive involution**: $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$, strictly positive off zero, so $\mathbb{B}\cong M_2(\mathbb{C})$ with the dagger is a finite-dimensional $C^{*}$-algebra and the scalar form is its Hilbert–Schmidt form. This is not in tension with the general theorem that positivity requires a negative definite quadratic form, because the dagger of $\mathbb{B}$ is not the Clifford conjugation of the Minkowski structure $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ but the **reversion** of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$; the indefiniteness of the biquaternion norm $\langle\cdot\rangle$ belongs to the other structure, the exchange of sides being $\vec e_\mu\mapsto i\vec e_\mu$. The algebra splits as $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the Hermitian and the anti-Hermitian sector, which are $H_2(\mathbb{C})$ and $u(2)$ in the matrix model, and $\tilde{Q}^{*}\tilde{Q}$ is Hermitian for every $\tilde{Q}$.
+The dagger of the biquaternion algebra is a **positive involution**: $\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_1)=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$, strictly positive off zero, so $\mathbb{B}\cong M_2(\mathbb{C})$ with the dagger is a finite-dimensional $C^{*}$-algebra and the scalar form is its Hilbert–Schmidt form. This is not in tension with the general theorem that positivity requires a negative definite quadratic form, because the dagger of $\mathbb{B}$ is not the Clifford conjugation of the Minkowski structure $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ but the **reversion** of the positive definite structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$; the indefiniteness of the biquaternion norm $\langle\cdot\rangle$ belongs to the other structure, the exchange of sides being $\vec e_\mu\mapsto i\vec e_\mu$. The algebra splits as $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the Hermitian and the anti-Hermitian sector, which are $H_2(\mathbb{C})$ and $u(2)$ in the matrix model, and $\tilde{Q}_1^{*}\tilde{Q}_1$ is Hermitian for every $\tilde{Q}_1$.
 
-The **Hermitian cone** $P=\{\tilde{Q}^{*}\tilde{Q}\}=\{\tilde{Q}\tilde{Q}^{*}\}$ is the positive semidefinite Hermitian cone $H_2(\mathbb{C})_{\succeq0}$: closed, convex, pointed, of real dimension four, generating $\mathbb{M}_+$, and **self-dual** for the scalar form. Its interior is the image of the units, $P^{\circ}=\{\tilde{Q}^{*}\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$, and in the interval form $N=t^{2}-\lvert\vec q_a\rvert^{2}$ on $\mathbb{M}_+$ it is the **forward light cone** $t\ge\lvert\vec q_a\rvert$, whose boundary is the forward part of the isotropic cone and whose extreme rays are the rank-one squares $\tilde E\tilde{E}^{*}$, parametrised by $\mathbb{P}^{1}(\mathbb{C})$. The word is not the older one of the series: the *isotropic cone* of $\mathbb{M}_+$ is the null set of $\langle\cdot\rangle$ there, the boundary of $P$ together with the boundary of $-P$, and it is indefinite; $P$ meets the null set only along its own boundary, the forward half.
+The **Hermitian cone** $P=\{\tilde{Q}_1^{*}\tilde{Q}_1\}=\{\tilde{Q}_1\tilde{Q}_1^{*}\}$ is the positive semidefinite Hermitian cone $H_2(\mathbb{C})_{\succeq0}$: closed, convex, pointed, of real dimension four, generating $\mathbb{M}_+$, and **self-dual** for the scalar form. Its interior is the image of the units, $P^{\circ}=\{\tilde{Q}_1^{*}\tilde{Q}_1:\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\neq0\}$, and in the interval form $N=t^{2}-\lvert\vec q_a\rvert^{2}$ on $\mathbb{M}_+$ it is the **forward light cone** $t\ge\lvert\vec q_a\rvert$, whose boundary is the forward part of the isotropic cone and whose extreme rays are the rank-one squares $\tilde E\tilde{E}^{*}$, parametrised by $\mathbb{P}^{1}(\mathbb{C})$. The word is not the older one of the series: the *isotropic cone* of $\mathbb{M}_+$ is the null set of $\langle\cdot\rangle$ there, the boundary of $P$ together with the boundary of $-P$, and it is indefinite; $P$ meets the null set only along its own boundary, the forward half.
 
-Every element has a **polar decomposition** $\tilde{Q}=\tilde U\lvert\tilde{Q}\rvert$ with $\lvert\tilde{Q}\rvert=(\tilde{Q}^{*}\tilde{Q})^{1/2}\in P$ and $\tilde U\in \mathrm{U}(2)$, unique exactly off the null cone, and distinct from the polar element representation although defined on the same set; $\langle\lvert\tilde{Q}\rvert,\lvert\tilde{Q}\rvert\rangle_{\natural}=\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert$, and on the real-quaternion slice it reduces to the quaternion polar decomposition, the cone meeting the slice in the ray $\mathbb{R}_{\ge0}e_t$. The **Cartan involution** $\theta(\tilde{Q})=(\tilde{Q}^{*})^{-1}$ is an automorphism of the group of units of order two with fixed set the unitary slice $\mathrm{U}(2)$ and differential $-{}^{*}$, and its eigen-decomposition is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ with $\langle\mathbb{M}_-,\mathbb{M}_-\rangle_{\natural*}\subseteq\mathbb{M}_-$, $\langle\mathbb{M}_+,\mathbb{M}_-\rangle_{\natural*}\subseteq\mathbb{M}_+$, $\langle\mathbb{M}_+,\mathbb{M}_+\rangle_{\natural*}\subseteq\mathbb{M}_-$; at the group level $\mathbb{B}^{\times}=\mathrm{U}(2)\cdot\exp(\mathbb{M}_+)$ and $\mathbb{B}^{\times}/\mathrm{U}(2)\cong P^{\circ}$.
+Every element has a **polar decomposition** $\tilde{Q}_1=\tilde U\lvert\tilde{Q}_1\rvert$ with $\lvert\tilde{Q}_1\rvert=(\tilde{Q}_1^{*}\tilde{Q}_1)^{1/2}\in P$ and $\tilde U\in \mathrm{U}(2)$, unique exactly off the null cone, and distinct from the polar element representation although defined on the same set; $\langle\lvert\tilde{Q}_1\rvert,\lvert\tilde{Q}_1\rvert\rangle_{\natural}=\lvert \langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\rvert$, and on the real-quaternion slice it reduces to the quaternion polar decomposition, the cone meeting the slice in the ray $\mathbb{R}_{\ge0}e_t$. The **Cartan involution** $\theta(\tilde{Q}_1)=(\tilde{Q}_1^{*})^{-1}$ is an automorphism of the group of units of order two with fixed set the unitary slice $\mathrm{U}(2)$ and differential $-{}^{*}$, and its eigen-decomposition is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ with $\langle\mathbb{M}_-,\mathbb{M}_-\rangle_{\natural*}\subseteq\mathbb{M}_-$, $\langle\mathbb{M}_+,\mathbb{M}_-\rangle_{\natural*}\subseteq\mathbb{M}_+$, $\langle\mathbb{M}_+,\mathbb{M}_+\rangle_{\natural*}\subseteq\mathbb{M}_-$; at the group level $\mathbb{B}^{\times}=\mathrm{U}(2)\cdot\exp(\mathbb{M}_+)$ and $\mathbb{B}^{\times}/\mathrm{U}(2)\cong P^{\circ}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors; $H_2(\mathbb{C})$ and $u(2)$ |
-| $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$ | The dagger is positive; the scalar form is positive definite |
-| $P=\{\tilde{Q}^{*}\tilde{Q}\}=\{\tilde{Q}\tilde{Q}^{*}\}$ | Hermitian cone; positive semidefinite Hermitian elements |
-| $P^{\circ}=\{\tilde{Q}^{*}\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$ | Interior; image of the units; positive definite elements |
+| $\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_1)=\sum_\mu\lvert Q_{1,\mu}\rvert^{2}$ | The dagger is positive; the scalar form is positive definite |
+| $P=\{\tilde{Q}_1^{*}\tilde{Q}_1\}=\{\tilde{Q}_1\tilde{Q}_1^{*}\}$ | Hermitian cone; positive semidefinite Hermitian elements |
+| $P^{\circ}=\{\tilde{Q}_1^{*}\tilde{Q}_1:\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\neq0\}$ | Interior; image of the units; positive definite elements |
 | $t\ge\lvert\vec q_a\rvert$ in $H=te_t+i\vec q_a$ | $P$ as the forward cone of the interval form on $\mathbb{M}_+$ |
 | $\tilde E\tilde{E}^{*}$, $\tilde E\neq0$, up to scalar | Extreme rays; parametrised by $\mathbb{P}^{1}(\mathbb{C})$ |
-| $\lvert\tilde{Q}\rvert=(\tilde{Q}^{*}\tilde{Q})^{1/2}$, $\tilde{Q}=\tilde U\lvert\tilde{Q}\rvert$ | Polar decomposition; unique off the null cone |
-| $\theta(\tilde{Q})=(\tilde{Q}^{*})^{-1}$ | Cartan involution; fixed set $U=\mathrm{U}(2)$ |
+| $\lvert\tilde{Q}_1\rvert=(\tilde{Q}_1^{*}\tilde{Q}_1)^{1/2}$, $\tilde{Q}_1=\tilde U\lvert\tilde{Q}_1\rvert$ | Polar decomposition; unique off the null cone |
+| $\theta(\tilde{Q}_1)=(\tilde{Q}_1^{*})^{-1}$ | Cartan involution; fixed set $U=\mathrm{U}(2)$ |
 | $\mathfrak{gl}(2,\mathbb{C})=u(2)\oplus H_2(\mathbb{C})$ | Cartan decomposition; $\mathbb{B}^{\times}=\mathrm{U}(2)\cdot\exp(\mathbb{M}_+)$ |
 
 ## Further Reading

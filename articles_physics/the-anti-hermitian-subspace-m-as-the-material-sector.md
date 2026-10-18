@@ -10,7 +10,7 @@ The **interpretation** of $\mathbb{M}_-$ as the "material" subspace is an interp
 
 The present article is entirely within established physics.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v$ is reserved for particle velocities.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_{1t} + \vec e_x\,\partial/\partial Q_{1x} + \vec e_y\,\partial/\partial Q_{1y} + \vec e_z\,\partial/\partial Q_{1z}$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v$ is reserved for particle velocities.
 
 ## Basic Definition and Properties
 
@@ -19,26 +19,26 @@ The conventions are those of the companion articles: the biquaternion algebra is
 The **anti-Hermitian subspace** $\mathbb{M}_-$ is the fixed-point set of the anti-Hermitian conjugation:
 
 $$
-\mathbb{M}_- = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
+\mathbb{M}_- = \{\tilde{Q}_1 \in \mathbb{B} : \tilde{Q}_1^\flat = \tilde{Q}_1\},
 $$
 
-where $\tilde{Q}^\flat = -\tilde{Q}^{*}$ and $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. Explicitly, a biquaternion is in $\mathbb{M}_-$ if and only if it has the form
+where $\tilde{Q}_1^\flat = -\tilde{Q}_1^{*}$ and $\tilde{Q}_1^{*} = \overline{\tilde{Q}_1^{\natural}}$. Explicitly, a biquaternion is in $\mathbb{M}_-$ if and only if it has the form
 
 $$
-\tilde{Q} = i q'_0\,e_t + q_x\,\vec e_x + q_y\,\vec e_y + q_z\,\vec e_z, \qquad q'_0, q_x, q_y, q_z \in \mathbb{R}.
+\tilde{Q}_1 = i q'_0\,e_t + q_x\,\vec e_x + q_y\,\vec e_y + q_z\,\vec e_z, \qquad q'_0, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
-The scalar part is **purely imaginary** and the vector part is **real**. Equivalently, if we write $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t \in \mathbb{C}$ and $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$, then $\tilde{Q} \in \mathbb{M}_-$ iff $Q_t$ is purely imaginary and $Q_x, Q_y, Q_z$ are real — that is, $Q_t = iq'_0$ and $Q_k = q_k$.
+The scalar part is **purely imaginary** and the vector part is **real**. Equivalently, if we write $\tilde{Q}_1 = Q_{1t} e_t + \vec Q$ with $Q_{1t} \in \mathbb{C}$ and $\vec Q = Q_{1x} \vec e_x + Q_{1y} \vec e_y + Q_{1z} \vec e_z$, then $\tilde{Q}_1 \in \mathbb{M}_-$ iff $Q_{1t}$ is purely imaginary and $Q_{1x}, Q_{1y}, Q_{1z}$ are real — that is, $Q_{1t} = iq'_0$ and $Q_k = q_k$.
 
 **The two writings.** The four real parameters $q'_0, q_x, q_y, q_z$ are the components of the material four-position, the temporal one scaled by $c$, so that the same element is written in the coordinates of physics as
 
 $$
-\tilde{Q} = iq'_0e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z, \qquad q'_0 = ct,\;\; q_x = x,\;\; q_y = y,\;\; q_z = z .
+\tilde{Q}_1 = iq'_0e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z, \qquad q'_0 = ct,\;\; q_x = x,\;\; q_y = y,\;\; q_z = z .
 $$
 
-The left-hand writing is in the sector's own parameters and is the one used for algebraic statements; the right-hand one is in the coordinates of physics. The prime marks the coefficient that carries the $i$, which in $\mathbb{M}_-$ is the **scalar** $q'_0$ — the time. The four parameters are the real and imaginary parts of the four complex coefficients of a general biquaternion, $Q_\mu = q_\mu + iq'_\mu$, read off in the pattern that defines this sector: scalar imaginary, vector real.
+The left-hand writing is in the sector's own parameters and is the one used for algebraic statements; the right-hand one is in the coordinates of physics. The prime marks the coefficient that carries the $i$, which in $\mathbb{M}_-$ is the **scalar** $q'_0$ — the time. The four parameters are the real and imaginary parts of the four complex coefficients of a general biquaternion, $Q_{1,\mu} = q_\mu + iq'_\mu$, read off in the pattern that defines this sector: scalar imaginary, vector real.
 
-This element is a **material element**, the object observed; the interval is its norm and a spacelike distance is that norm. Its **observable** is the Hermitian representative $i\tilde{Q}\in\mathbb{M}_+$, whose eigenvalues are the real readings.
+This element is a **material element**, the object observed; the interval is its norm and a spacelike distance is that norm. Its **observable** is the Hermitian representative $i\tilde{Q}_1\in\mathbb{M}_+$, whose eigenvalues are the real readings.
 
 A natural basis of $\mathbb{M}_-$ is
 
@@ -46,44 +46,44 @@ $$
 \{i\,e_t,\; \vec e_x,\; \vec e_y,\; \vec e_z\}.
 $$
 
-As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ need not lie in $\mathbb{M}_-$ — for example $(ie_0)(ie_0) = -e_t$, whose scalar part is real, so the product lies outside. It **is** closed under the commutator, and the bracket is read directly off the coordinates: for $\tilde{Q} = iq'_0e_t + \vec q$ and $\tilde{Q}_1 = ir'_0e_t + \vec r$,
+As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ need not lie in $\mathbb{M}_-$ — for example $(ie_0)(ie_0) = -e_t$, whose scalar part is real, so the product lies outside. It **is** closed under the commutator, and the bracket is read directly off the coordinates: for $\tilde{Q}_1 = iq'_0e_t + \vec q$ and $\tilde{Q}_2 = ir'_0e_t + \vec r$,
 
 $$
-[\tilde{Q},\tilde{Q}_1] = \tilde{Q}\tilde{Q}_1 - \tilde{Q}_1\tilde{Q} = 2\,\vec q\times\vec r,
+[\tilde{Q}_1,\tilde{Q}_2] = \tilde{Q}_1\tilde{Q}_2 - \tilde{Q}_2\tilde{Q}_1 = 2\,\vec q\times\vec r,
 $$
 
-a pure real vector, so the bracket image is the three-dimensional real vector part and the temporal direction $ie_0$ is central for the bracket. With that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$, the direct sum of the central line and that three-dimensional bracket algebra. The symmetrised product, by contrast, always lies in the Hermitian subspace, $\tilde{Q}\tilde{Q}_1 + \tilde{Q}_1\tilde{Q} \in \mathbb{M}_+$, so the product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$ exactly when the two commute. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life; the bracket, the $\mathbb{Z}/2$-grading it puts on the two sectors and the compact real form are the subject of the companion article *The 12 Products of the Biquaternioid Complex Space*.
+a pure real vector, so the bracket image is the three-dimensional real vector part and the temporal direction $ie_0$ is central for the bracket. With that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$, the direct sum of the central line and that three-dimensional bracket algebra. The symmetrised product, by contrast, always lies in the Hermitian subspace, $\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1 \in \mathbb{M}_+$, so the product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$ exactly when the two commute. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life; the bracket, the $\mathbb{Z}/2$-grading it puts on the two sectors and the compact real form are the subject of the companion article *The 12 Products of the Biquaternioid Complex Space*.
 
 ### The Defining Involution
 
 The subspace is the fixed space of the **anti-Hermitian conjugation**
 
 $$
-\tilde{Q}^\flat = -\tilde{Q}^{*} = -\overline{\tilde{Q}^{\natural}},
+\tilde{Q}_1^\flat = -\tilde{Q}_1^{*} = -\overline{\tilde{Q}_1^{\natural}},
 $$
 
-which is an involution: applying it twice returns the original element, $(\tilde{Q}^\flat)^\flat = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
+which is an involution: applying it twice returns the original element, $(\tilde{Q}_1^\flat)^\flat = \tilde{Q}_1$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
 
 $$
-\tilde{Q} = (q_t + iq'_0)\,e_t + (q_x + iq'_1)\,\vec e_x + (q_y + iq'_2)\,\vec e_y + (q_z + iq'_3)\,\vec e_z, \qquad q_\mu, q'_\mu \in \mathbb{R}.
+\tilde{Q}_1 = (q_t + iq'_0)\,e_t + (q_x + iq'_1)\,\vec e_x + (q_y + iq'_2)\,\vec e_y + (q_z + iq'_3)\,\vec e_z, \qquad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
 The conjugation is the composite of quaternion conjugation and complex conjugation. Quaternion conjugation negates the three vector units and leaves the unit, the scalar imaginary, and every coefficient untouched,
 
 $$
-\tilde{Q}^{\natural} = (q_t + iq'_0)\,e_t - (q_x + iq'_1)\,\vec e_x - (q_y + iq'_2)\,\vec e_y - (q_z + iq'_3)\,\vec e_z,
+\tilde{Q}_1^{\natural} = (q_t + iq'_0)\,e_t - (q_x + iq'_1)\,\vec e_x - (q_y + iq'_2)\,\vec e_y - (q_z + iq'_3)\,\vec e_z,
 $$
 
 and complex conjugation then replaces $i$ by $-i$ throughout, leaving the quaternion units fixed, so that
 
 $$
-\tilde{Q}^{*} = (q_t - iq'_0)\,e_t - (q_x - iq'_1)\,\vec e_x - (q_y - iq'_2)\,\vec e_y - (q_z - iq'_3)\,\vec e_z = \overline{\tilde{Q}^{\natural}} .
+\tilde{Q}_1^{*} = (q_t - iq'_0)\,e_t - (q_x - iq'_1)\,\vec e_x - (q_y - iq'_2)\,\vec e_y - (q_z - iq'_3)\,\vec e_z = \overline{\tilde{Q}_1^{\natural}} .
 $$
 
 Negating this gives the anti-Hermitian conjugation itself,
 
 $$
-\tilde{Q}^\flat = -\tilde{Q}^{*} = (-q_t + iq'_0)\,e_t + (q_x - iq'_1)\,\vec e_x + (q_y - iq'_2)\,\vec e_y + (q_z - iq'_3)\,\vec e_z ,
+\tilde{Q}_1^\flat = -\tilde{Q}_1^{*} = (-q_t + iq'_0)\,e_t + (q_x - iq'_1)\,\vec e_x + (q_y - iq'_2)\,\vec e_y + (q_z - iq'_3)\,\vec e_z ,
 $$
 
 so that the scalar coefficient is negated in its real part and each vector coefficient in its imaginary part. Coordinate by coordinate,
@@ -91,9 +91,9 @@ so that the scalar coefficient is negated in its real part and each vector coeff
 | | $q_t$ | $q'_0$ | $q_x$ | $q'_1$ | $q_y$ | $q'_2$ | $q_z$ | $q'_3$ |
 |---|---|---|---|---|---|---|---|---|
 | image under $\flat$ | $-q_t$ | $q'_0$ | $q_x$ | $-q'_1$ | $q_y$ | $-q'_2$ | $q_z$ | $-q'_3$ |
-| $\tilde{Q}^\flat = \tilde{Q}$ requires | $q_t = 0$ | free | free | $q'_1 = 0$ | free | $q'_2 = 0$ | free | $q'_3 = 0$ |
+| $\tilde{Q}_1^\flat = \tilde{Q}_1$ requires | $q_t = 0$ | free | free | $q'_1 = 0$ | free | $q'_2 = 0$ | free | $q'_3 = 0$ |
 
-**The fixed space.** The two sides of $\tilde{Q}^\flat = \tilde{Q}$ must agree in each of the four units $e_t, \vec e_x, \vec e_y, \vec e_z$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones, and they read
+**The fixed space.** The two sides of $\tilde{Q}_1^\flat = \tilde{Q}_1$ must agree in each of the four units $e_t, \vec e_x, \vec e_y, \vec e_z$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones, and they read
 
 $$
 -q_t + iq'_0 = q_t + iq'_0 \iff q_t = 0, \qquad
@@ -103,10 +103,10 @@ $$
 the first from the scalar unit and the remaining three from the vector units. The solutions are the elements with $q_t = 0$ and $q'_1 = q'_2 = q'_3 = 0$, that is,
 
 $$
-\tilde{Q}^\flat = \tilde{Q} \iff \tilde{Q} = iq'_0\,e_t + q_x\,\vec e_x + q_y\,\vec e_y + q_z\,\vec e_z .
+\tilde{Q}_1^\flat = \tilde{Q}_1 \iff \tilde{Q}_1 = iq'_0\,e_t + q_x\,\vec e_x + q_y\,\vec e_y + q_z\,\vec e_z .
 $$
 
-**Conversely**, every element of this form is fixed. For such an element $\tilde{Q}^{\natural} = iq'_0\,e_t - q_x\,\vec e_x - q_y\,\vec e_y - q_z\,\vec e_z$, hence $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = -iq'_0\,e_t - q_x\,\vec e_x - q_y\,\vec e_y - q_z\,\vec e_z = -\tilde{Q}$, and therefore $\tilde{Q}^\flat = -\tilde{Q}^{*} = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q'_0, q_x, q_y, q_z$, which is the parametrisation recorded above: the scalar coefficient is purely imaginary, the three vector coefficients are real, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q_t = 0$ and $q'_k = 0$.
+**Conversely**, every element of this form is fixed. For such an element $\tilde{Q}_1^{\natural} = iq'_0\,e_t - q_x\,\vec e_x - q_y\,\vec e_y - q_z\,\vec e_z$, hence $\tilde{Q}_1^{*} = \overline{\tilde{Q}_1^{\natural}} = -iq'_0\,e_t - q_x\,\vec e_x - q_y\,\vec e_y - q_z\,\vec e_z = -\tilde{Q}_1$, and therefore $\tilde{Q}_1^\flat = -\tilde{Q}_1^{*} = \tilde{Q}_1$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q'_0, q_x, q_y, q_z$, which is the parametrisation recorded above: the scalar coefficient is purely imaginary, the three vector coefficients are real, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q_t = 0$ and $q'_k = 0$.
 
 ### Properties
 
@@ -115,7 +115,7 @@ The subspace $\mathbb{M}_-$ has the following algebraic properties, established 
 **Quadratic form.** The **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_-$:
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = (iq'_0)^2 + q_x^2 + q_y^2 + q_z^2 = -(q'_0)^2 + q_x^2 + q_y^2 + q_z^2 = -c^2t^2 + x^2 + y^2 + z^2.
+\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = (iq'_0)^2 + q_x^2 + q_y^2 + q_z^2 = -(q'_0)^2 + q_x^2 + q_y^2 + q_z^2 = -c^2t^2 + x^2 + y^2 + z^2.
 $$
 
 This is a real quadratic form of **signature** $(3,1)$: three positive directions (the spatial components $q_x, q_y, q_z$) and one negative direction (the temporal one, whose coordinate is $ict$). This is the Minkowski signature, expressed algebraically as a consequence of $i^2 = -1$.
@@ -128,23 +128,23 @@ $$
 
 a double cone with apex at the origin. The nonzero elements of this cone are **zero divisors** of $\mathbb{B}$ (see the companion article on biquaternion zero divisors). The complement of the cone has three connected components: the space-like region, together with the two components of the time-like region, future and past.
 
-**Not an algebra, and no inverse on the cone.** $\mathbb{M}_-$ is a real four-dimensional *subspace*, not a subalgebra: the product of two of its elements lies in general in neither sector, so the question whether $\mathbb{M}_-$ is a division algebra does not arise. The invariant statement is about the elements. A nonzero $\tilde{Q}\in\mathbb{M}_-$ on the cone has **no inverse in $\mathbb{B}$**, because inversion is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ and the cone is exactly $\langle\tilde{Q}\rangle_{\natural} = 0$; a nonzero element of $\mathbb{M}_-$ off the cone is a unit of $\mathbb{B}$. The physical significance of this is discussed below.
+**Not an algebra, and no inverse on the cone.** $\mathbb{M}_-$ is a real four-dimensional *subspace*, not a subalgebra: the product of two of its elements lies in general in neither sector, so the question whether $\mathbb{M}_-$ is a division algebra does not arise. The invariant statement is about the elements. A nonzero $\tilde{Q}_1\in\mathbb{M}_-$ on the cone has **no inverse in $\mathbb{B}$**, because inversion is $\tilde{Q}_1^{-1} = \tilde{Q}_1^{\natural}/\langle\tilde{Q}_1\rangle_{\natural}$ and the cone is exactly $\langle\tilde{Q}_1\rangle_{\natural} = 0$; a nonzero element of $\mathbb{M}_-$ off the cone is a unit of $\mathbb{B}$. The physical significance of this is discussed below.
 
 **Basis of the four-dimensional real space.** Every element of $\mathbb{M}_-$ is uniquely written as a linear combination of $ie_0, \vec e_x, \vec e_y, \vec e_z$ with real coefficients. We may therefore identify $\mathbb{M}_-$ with $\mathbb{R}^4$, with the quadratic form $\langle\cdot\rangle_{\natural}$ corresponding to the Minkowski metric in the $(ict, x, y, z)$ convention.
 
-**The parameter pattern.** The defining property of the sector is visible in the parameters alone: the scalar coefficient is imaginary and the three vector coefficients are real. Each of the four complex coefficients $Q_\mu = q_\mu + iq'_\mu$ therefore contributes exactly one real number, and the prime selects which one — for the scalar it is the imaginary part $q'_0$, for the three vectors the real parts $q_x, q_y, q_z$. This is why a single conjugation carves a four-dimensional real subspace out of an eight-dimensional real algebra: it fixes one real number in each complex coefficient, in the pattern imaginary-scalar, real-vector.
+**The parameter pattern.** The defining property of the sector is visible in the parameters alone: the scalar coefficient is imaginary and the three vector coefficients are real. Each of the four complex coefficients $Q_{1,\mu} = q_\mu + iq'_\mu$ therefore contributes exactly one real number, and the prime selects which one — for the scalar it is the imaginary part $q'_0$, for the three vectors the real parts $q_x, q_y, q_z$. This is why a single conjugation carves a four-dimensional real subspace out of an eight-dimensional real algebra: it fixes one real number in each complex coefficient, in the pattern imaginary-scalar, real-vector.
 
 ## Physical Meaning
 
 ### The Invariant Interval and the Minkowski Metric
 
-The **invariant interval** between two nearby events in spacetime is the quadratic form associated with the displacement biquaternion $d\tilde{Q} \in \mathbb{M}_-$:
+The **invariant interval** between two nearby events in spacetime is the quadratic form associated with the displacement biquaternion $d\tilde{Q}_1 \in \mathbb{M}_-$:
 
 $$
-ds^2 = \langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q} \, \overline{d\tilde{Q}} = -(dq'_0)^2 + dq_1^2 + dq_2^2 + dq_3^2 = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 +dx^2+dy^2+dz^2.
+ds^2 = \langle d\tilde{Q}_1\rangle_{\natural} = d\tilde{Q}_1 \, \overline{d\tilde{Q}_1} = -(dq'_0)^2 + dq_1^2 + dq_2^2 + dq_3^2 = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 +dx^2+dy^2+dz^2.
 $$
 
-This is the biquaternion expression of the Minkowski interval, and it is the biquaternion norm, in agreement with the expression for $\langle\cdot\rangle_{\natural}$ obtained above. The interval is *not* the square $d\tilde{Q} \, d\tilde{Q}$: for $\tilde{Q} = iq'_0e_t + \vec q$ one has $\tilde{Q} \, \tilde{Q} = -((q'_0)^2 + |\vec q|^2) + 2iq'_0\vec q$, which is a biquaternion rather than a scalar. The square therefore carries a vector part and is not the interval.
+This is the biquaternion expression of the Minkowski interval, and it is the biquaternion norm, in agreement with the expression for $\langle\cdot\rangle_{\natural}$ obtained above. The interval is *not* the square $d\tilde{Q}_1 \, d\tilde{Q}_1$: for $\tilde{Q}_1 = iq'_0e_t + \vec q$ one has $\tilde{Q}_1 \, \tilde{Q}_1 = -((q'_0)^2 + |\vec q|^2) + 2iq'_0\vec q$, which is a biquaternion rather than a scalar. The square therefore carries a vector part and is not the interval.
 
 The Lorentzian signature of the interval is not postulated: it arises algebraically from $i^2 = -1$ in the time component. This is the content of the $ict$ convention (see the companion article on the $ict$ convention). The biquaternion formulation makes explicit that the Lorentzian structure of spacetime is a **consequence of a complex structure** on the time coordinate, not an independent axiom.
 
@@ -158,15 +158,15 @@ The null interval is the **light cone**, which is the zero divisor set of $\math
 
 ### The Light Cone and the Zero Divisors
 
-The **light cone** is the set of four-vectors $\tilde{Q} \in \mathbb{M}_-$ with vanishing biquaternion norm:
+The **light cone** is the set of four-vectors $\tilde{Q}_1 \in \mathbb{M}_-$ with vanishing biquaternion norm:
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = 0 \quad \Longleftrightarrow \quad (q'_0)^2 = q_x^2 + q_y^2 + q_z^2 \quad \Longleftrightarrow \quad c^2t^2 = x^2 + y^2 + z^2,
+\langle\tilde{Q}_1\rangle_{\natural} = 0 \quad \Longleftrightarrow \quad (q'_0)^2 = q_x^2 + q_y^2 + q_z^2 \quad \Longleftrightarrow \quad c^2t^2 = x^2 + y^2 + z^2,
 $$
 
 where $q'_0$ is the (real) time component and $q_x, q_y, q_z$ are the spatial components — the sector-parameter writing on the left, the coordinate writing on the right. This is a double cone in $\mathbb{R}^4$ with apex at the origin.
 
-The nonzero elements of the light cone are **zero divisors** of the biquaternion algebra: they are nonzero elements $\tilde{Q}$ for which there exists a nonzero $\tilde{Q}_1$ with $\tilde{Q}\tilde{Q}_1 = 0$. The zero divisor structure is intrinsic to the biquaternion algebra and reflects the fact that the light cone is the **characteristic cone** of the wave operator $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$.
+The nonzero elements of the light cone are **zero divisors** of the biquaternion algebra: they are nonzero elements $\tilde{Q}_1$ for which there exists a nonzero $\tilde{Q}_2$ with $\tilde{Q}_1\tilde{Q}_2 = 0$. The zero divisor structure is intrinsic to the biquaternion algebra and reflects the fact that the light cone is the **characteristic cone** of the wave operator $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$.
 
 From the physical point of view, the zero divisors of $\mathbb{M}_-$ are the **null four-vectors**: the four-vectors of light signals, which have zero rest mass and propagate at the speed of light. The massless particles of relativistic physics correspond to the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.
 
@@ -177,21 +177,21 @@ From the physical point of view, the zero divisors of $\mathbb{M}_-$ are the **n
 The four-vectors of physics transform under the Lorentz group by **rotor conjugation**:
 
 $$
-\tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
+\tilde{Q}_1' = \tilde U\,\tilde{Q}_1\,\tilde U^{*},
 $$
 
-where $\tilde{\Lambda}$ is a **unit-norm biquaternion**, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$ satisfying $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$. The rotor $\tilde{\Lambda}$ is Hermitian (i.e. $\tilde{\Lambda}^{*} = \tilde{\Lambda}$) for a pure boost, and a real quaternion for a pure spatial rotation. For a general Lorentz transformation, $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$.
+where $\tilde U$ is a **unit-norm biquaternion**, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$ satisfying $\tilde U\tilde U^{\natural} = e_t$. The rotor $\tilde U$ is Hermitian (i.e. $\tilde U^{*} = \tilde U$) for a pure boost, and a real quaternion for a pure spatial rotation. For a general Lorentz transformation, $\tilde U$ is a general unit-norm biquaternion in $\mathbb{B}$.
 
-The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{Q} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} \in \mathbb{M}_-$.
+The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{Q}_1 \in \mathbb{M}_-$ and $\tilde U$ is a unit-norm biquaternion, then $\tilde U\tilde{Q}_1\tilde U^{*} \in \mathbb{M}_-$.
 
-This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$, Hermitian for pure boosts and real for pure rotations; the space on which the rotor acts is $\mathbb{M}_-$.
+This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde U$ is a general unit-norm biquaternion in $\mathbb{B}$, Hermitian for pure boosts and real for pure rotations; the space on which the rotor acts is $\mathbb{M}_-$.
 
 ### The Bracket Algebra
 
-The material sector is a Lie algebra, and the bracket is written out in §*Definition and Basis*: for $\tilde{Q} = iq'_0e_t + \vec q$ and $\tilde{Q}_1 = ir'_0e_t + \vec r$,
+The material sector is a Lie algebra, and the bracket is written out in §*Definition and Basis*: for $\tilde{Q}_1 = iq'_0e_t + \vec q$ and $\tilde{Q}_2 = ir'_0e_t + \vec r$,
 
 $$
-[\tilde{Q},\tilde{Q}_1] = 2\,\vec q\times\vec r,
+[\tilde{Q}_1,\tilde{Q}_2] = 2\,\vec q\times\vec r,
 $$
 
 twice the vector product of the two spatial parts. Three structural facts follow at once.
@@ -209,16 +209,16 @@ with the second summand carrying the whole bracket. This is the algebraic root o
 **The symmetrised product goes to the other sector.** The commutator stays in $\mathbb{M}_-$; the anticommutator goes to the opposite sector,
 
 $$
-\{\tilde{Q},\tilde{Q}_1\} = \tilde{Q}\tilde{Q}_1 + \tilde{Q}_1\tilde{Q} \in \mathbb{M}_+,
+\{\tilde{Q}_1,\tilde{Q}_2\} = \tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1 \in \mathbb{M}_+,
 $$
 
 for any two elements of $\mathbb{M}_-$. In particular the **square** of every element of $\mathbb{M}_-$ lies in $\mathbb{M}_+$,
 
 $$
-\tilde{Q}^2 = -\left((q'_0)^2 + |\vec q|^2\right)e_t + 2iq'_0\vec q,
+\tilde{Q}_1^2 = -\left((q'_0)^2 + |\vec q|^2\right)e_t + 2iq'_0\vec q,
 $$
 
-with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\vec q\times\vec r$ is the exact obstruction: it vanishes precisely when $\vec q$ and $\vec r$ are parallel, which is the condition for the product $\tilde{Q}\tilde{Q}_1$ to stay Hermitian. This alternation is one case of the general rule of the algebra — on two elements of one sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — and is tabulated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, §*The Bracket Table of the Two Sectors*.
+with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\vec q\times\vec r$ is the exact obstruction: it vanishes precisely when $\vec q$ and $\vec r$ are parallel, which is the condition for the product $\tilde{Q}_1\tilde{Q}_2$ to stay Hermitian. This alternation is one case of the general rule of the algebra — on two elements of one sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — and is tabulated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, §*The Bracket Table of the Two Sectors*.
 
 ### The Four Forms on the Sector, and the Absence of an Area Pairing
 
@@ -240,7 +240,7 @@ $$
 
 of signatures $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$ in the same order. The two sesquilinear forms are the negatives of the two bilinear ones, $\langle\cdot,\cdot\rangle_{*} = -\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural*} = -\langle\cdot,\cdot\rangle_{\natural}$ on the sector, and the reason is the definition of the sector itself: the Hermitian conjugation is minus the identity on $\mathbb{M}_-$, so the star of the second slot flips the sign and nothing else. The interval is the norm form $N=\langle\tilde T,\tilde T\rangle_{\natural}$ of *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, negative on the material time and positive on the three material space directions, with the light cone as its null cone; the other three interpretations are the same interval negated and the Euclidean square with its negative.
 
-**The absence of the area pairing, and why it is exact.** The four forms carry a second real pairing on a subspace only where the multiplication by the central imaginary preserves that subspace: there the imaginary part is generally non-zero and, for the two sesquilinear forms, alternating — the **area pairing**, of rank $2$ on the complex time sector and rank $6$ on the complex space sector, and tied to the real part there by the Kähler identity $\omega(\tilde P,\tilde Q) = \langle\tilde P,i\tilde Q\rangle_{*}$. On $\mathbb{M}_-$ the multiplication by $i$ carries the sector out of itself, $i\mathbb{M}_- = \mathbb{M}_+$, so the companion has no pair of directions to join inside the sector: it is zero, and **the material sector is phase-free.** Its one pairing per form is the symmetric one. As on the informational sector, this concerns the imaginary part of the **scalar-valued** form and not the **vector-valued** antisymmetric half of the product, which the corpus reads as the coherence and which is not zero on the sector (*The Biquaternioid Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$*); the two parts are the scalar and the vector halves of one block.
+**The absence of the area pairing, and why it is exact.** The four forms carry a second real pairing on a subspace only where the multiplication by the central imaginary preserves that subspace: there the imaginary part is generally non-zero and, for the two sesquilinear forms, alternating — the **area pairing**, of rank $2$ on the complex time sector and rank $6$ on the complex space sector, and tied to the real part there by the Kähler identity $\omega(\tilde P,\tilde Q_1) = \langle\tilde P,i\tilde Q_1\rangle_{*}$. On $\mathbb{M}_-$ the multiplication by $i$ carries the sector out of itself, $i\mathbb{M}_- = \mathbb{M}_+$, so the companion has no pair of directions to join inside the sector: it is zero, and **the material sector is phase-free.** Its one pairing per form is the symmetric one. As on the informational sector, this concerns the imaginary part of the **scalar-valued** form and not the **vector-valued** antisymmetric half of the product, which the corpus reads as the coherence and which is not zero on the sector (*The Biquaternioid Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$*); the two parts are the scalar and the vector halves of one block.
 
 The consequence for the interpretation of this article is one sentence. The material object of the sector — the four-vector — carries a **symmetric quadratic form, the interval**, and the reader of the sector takes a length and not an area from it: the Lorentzian structure of $\mathbb{M}_-$ is a metric, and a metric is what a symmetric pairing gives. The alternating companion, the canonical pairing of two conjugate directions, belongs to the complex time and the complex space sector, where each direction has its partner under the central imaginary (*Other Remarkable Subspaces*), and it vanishes on both physical sectors. This is the sharpest algebraic sense in which the two physical sectors, and only they, are the sectors on which the four forms are real: each carries a symmetric pairing per form, the interval and the probability among them, and neither carries an area.
 
@@ -275,12 +275,12 @@ The four-vectors share the following structural features, which are the reasons 
 **3. Lorentz covariance.** The four-vectors transform under the Lorentz group by the **rotor conjugation**
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*}.
+\tilde{Q}_1 \;\longmapsto\; \tilde U\,\tilde{Q}_1\,\tilde U^{*}.
 $$
 
-The rotor $\tilde{\Lambda}$ is a unit-norm biquaternion, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$. The group lives in the full algebra $\mathbb{B}$, not in any single subspace (since $\mathbb{M}_-$ and $\mathbb{M}_+$ are not closed under multiplication). The different types of Lorentz transformation have rotors in different subspaces: **pure boosts** have rotors in $\mathbb{M}_+$ (they are Hermitian), **pure spatial rotations** have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and **general Lorentz transformations** have rotors in the full algebra $\mathbb{B}$.
+The rotor $\tilde U$ is a unit-norm biquaternion, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$. The group lives in the full algebra $\mathbb{B}$, not in any single subspace (since $\mathbb{M}_-$ and $\mathbb{M}_+$ are not closed under multiplication). The different types of Lorentz transformation have rotors in different subspaces: **pure boosts** have rotors in $\mathbb{M}_+$ (they are Hermitian), **pure spatial rotations** have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and **general Lorentz transformations** have rotors in the full algebra $\mathbb{B}$.
 
-**4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, and $0$ for the four-wavevector of light. The four-potential and the four-current are different in kind: the invariant statements associated with them are the gauge condition $\langle\tilde\nabla,\tilde A\rangle_{\natural} = 0$ and the conservation law $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$, which constrain the divergence of the four-vector, not its biquaternion norm. The biquaternion norm $\tilde{A}\tilde{A}^{\natural}$ vanishes only for a radiation field in the null gauge, and $\tilde{J}\tilde{J}^{\natural}$ vanishes only for a null current, $|\vec j| = c\rho$.
+**4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the biquaternion norm $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, and $0$ for the four-wavevector of light. The four-potential and the four-current are different in kind: the invariant statements associated with them are the gauge condition $\langle\tilde\nabla,\tilde A\rangle_{\natural} = 0$ and the conservation law $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$, which constrain the divergence of the four-vector, not its biquaternion norm. The biquaternion norm $\tilde{A}\tilde{A}^{\natural}$ vanishes only for a radiation field in the null gauge, and $\tilde{J}\tilde{J}^{\natural}$ vanishes only for a null current, $|\vec j| = c\rho$.
 
 ## Physical Readings
 
@@ -306,9 +306,9 @@ The **light cone** of Minkowski space is the zero divisor cone of $\mathbb{M}_-$
 
 The subspace $\mathbb{M}_-$ is specifically the **representation** of the Lorentz group.
 
-Read as pairings, the four forms restricted to $\mathbb{M}_-$ are all real-valued, so the sector carries **no area pairing and no conjugate pair of its own**: no two of its directions are exchanged by the central imaginary, since $i\mathbb{M}_-=\mathbb{M}_+$. Every canonical pair of the framework has one leg in each sector: the two times $e_t$ and $ie_0$ in the complex time sector, and the three spatial pairs $(e_k,ie_k)$ in the complex space sector (*Other Remarkable Subspaces*). The sector carries one symmetric form per form — the interval $\langle\cdot\rangle_{\natural}$ of signature $(3,1)$, its negative the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}$, the Euclidean square and its negative the general plain bilinear form $\langle\tilde P,\tilde Q\rangle$ — and the two sesquilinear forms are the negatives of the two bilinear ones because the Hermitian conjugation is minus the identity on the sector. The alternating companion that the four forms carry on the complex time and the complex space sector is identically zero here, as it is on the informational sector: **the two physical sectors are the phase-free ones, and the area pairing belongs to the complex sectors** (*Remarkable Subspaces and the Four Forms*, *Other Remarkable Subspaces*).
+Read as pairings, the four forms restricted to $\mathbb{M}_-$ are all real-valued, so the sector carries **no area pairing and no conjugate pair of its own**: no two of its directions are exchanged by the central imaginary, since $i\mathbb{M}_-=\mathbb{M}_+$. Every canonical pair of the framework has one leg in each sector: the two times $e_t$ and $ie_0$ in the complex time sector, and the three spatial pairs $(e_k,ie_k)$ in the complex space sector (*Other Remarkable Subspaces*). The sector carries one symmetric form per form — the interval $\langle\cdot\rangle_{\natural}$ of signature $(3,1)$, its negative the Krein form $\langle\tilde P,\tilde Q_1\rangle_{\natural*}$, the Euclidean square and its negative the general plain bilinear form $\langle\tilde P,\tilde Q_1\rangle$ — and the two sesquilinear forms are the negatives of the two bilinear ones because the Hermitian conjugation is minus the identity on the sector. The alternating companion that the four forms carry on the complex time and the complex space sector is identically zero here, as it is on the informational sector: **the two physical sectors are the phase-free ones, and the area pairing belongs to the complex sectors** (*Remarkable Subspaces and the Four Forms*, *Other Remarkable Subspaces*).
 
-With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice the vector product of the spatial parts, $[\tilde{Q},\tilde{Q}_1] = 2\,\vec q\times\vec r$, so the time direction is central and the algebra is $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$ and the anticommutator goes to $\mathbb{M}_+$, so the **square** of every element of $\mathbb{M}_-$ lies in the Hermitian subspace, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The two sectors are thus interlocked: the antisymmetric part of a product of four-vectors carries the Lie-algebraic, material structure, and the symmetric part carries the Jordan-theoretic, informational one.
+With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice the vector product of the spatial parts, $[\tilde{Q}_1,\tilde{Q}_2] = 2\,\vec q\times\vec r$, so the time direction is central and the algebra is $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$ and the anticommutator goes to $\mathbb{M}_+$, so the **square** of every element of $\mathbb{M}_-$ lies in the Hermitian subspace, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The two sectors are thus interlocked: the antisymmetric part of a product of four-vectors carries the Lie-algebraic, material structure, and the symmetric part carries the Jordan-theoretic, informational one.
 
 ## Summary of Notation
 
@@ -316,18 +316,18 @@ With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice 
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector; parameters $q'_0, q_x, q_y, q_z$, with $q'_0 = ct$ |
-| $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient of $e_\mu$: $q_\mu$ its real part, $q'_\mu$ its imaginary part |
-| $\tilde{Q} = iq'_0e_t + q_ke_k = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, both writings; $q'_0 = ct$, $q_k = x_k$ |
+| $Q_{1,\mu} = q_\mu + iq'_\mu$ | Complex coefficient of $e_\mu$: $q_\mu$ its real part, $q'_\mu$ its imaginary part |
+| $\tilde{Q}_1 = iq'_0e_t + q_ke_k = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, both writings; $q'_0 = ct$, $q_k = x_k$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $s^2 = \langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\,\overline{d\tilde{Q}}$ | Invariant interval |
-| $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
-| $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation |
-| $[\tilde{Q},\tilde{Q}_1] = 2\,\vec q\times\vec r$ | Commutator on $\mathbb{M}_-$: twice the vector product, lands in $\mathbb{M}_-$ |
-| $\{\tilde{Q},\tilde{Q}_1\} \in \mathbb{M}_+$ | Anticommutator on $\mathbb{M}_-$: lands in the informational sector |
-| the four forms | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$, $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$, $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$; on $\mathbb{M}_-$ all four are real, with $H=-B$ and $K=-N$ |
+| $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural}$ | Biquaternion norm |
+| $s^2 = \langle d\tilde{Q}_1\rangle_{\natural} = d\tilde{Q}_1\,\overline{d\tilde{Q}_1}$ | Invariant interval |
+| $\tilde U \in \mathbb{B}$, $\tilde U\tilde U^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
+| $\tilde{Q}_1' = \tilde U\tilde{Q}_1\tilde U^{*}$ | Rotor conjugation |
+| $[\tilde{Q}_1,\tilde{Q}_2] = 2\,\vec q\times\vec r$ | Commutator on $\mathbb{M}_-$: twice the vector product, lands in $\mathbb{M}_-$ |
+| $\{\tilde{Q}_1,\tilde{Q}_2\} \in \mathbb{M}_+$ | Anticommutator on $\mathbb{M}_-$: lands in the informational sector |
+| the four forms | $\langle\tilde P,\tilde Q_1\rangle=\mathrm{Sc}(\tilde P\tilde Q_1)$, $\langle\tilde P,\tilde Q_1\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q_1)$, $\langle\tilde P,\tilde Q_1\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q_1^{*})$, $\langle\tilde P,\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q_1^{*})$; on $\mathbb{M}_-$ all four are real, with $H=-B$ and $K=-N$ |
 | the area pairing | The alternating companion of the four forms; **zero** on $\mathbb{M}_-$, non-degenerate on the complex time and the complex space sector |
 
 ## Further Reading

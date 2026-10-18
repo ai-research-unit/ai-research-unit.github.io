@@ -20,7 +20,7 @@ The division between what is standard and what belongs to the algebra is kept ex
 The classical field is a map $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$; the quantized field is a map into operators. Two transcriptions are available, and the parents use the second:
 
 $$
-\\tilde\\Psi^{\mathrm{fop}}:\mathbb{R}^{1,3}\longrightarrow \mathcal{A}\otimes\mathbb{B},
+\tilde\Psi^{\mathrm{fop}}:\mathbb{R}^{1,3}\longrightarrow \mathcal{A}\otimes\mathbb{B},
 \qquad\text{or}\qquad
 \psi^{\mathrm{fop}}:\mathbb{R}^{1,3}\longrightarrow \mathcal{A}\otimes S,
 $$
@@ -89,9 +89,9 @@ So the split of a fermion field into a "particle field" and an "antiparticle fie
 Because the mode expansion is a superposition of classical solutions with operator coefficients, and because the coefficients are constant in $x$, the field satisfies the free equation as an operator identity:
 
 $$
-\tilde{\nabla}\\tilde\\Psi^{\mathrm{fop}}_R=m\,\\tilde\\Psi^{\mathrm{fop}}_L,
+\tilde{\nabla}\tilde\Psi^{\mathrm{fop}}_R=m\,\tilde\Psi^{\mathrm{fop}}_L,
 \qquad
-\tilde{\nabla}^{\natural}\\tilde\\Psi^{\mathrm{fop}}_L=m\,\\tilde\\Psi^{\mathrm{fop}}_R,
+\tilde{\nabla}^{\natural}\tilde\Psi^{\mathrm{fop}}_L=m\,\tilde\Psi^{\mathrm{fop}}_R,
 \qquad\text{equivalently on the module}\qquad
 (i\gamma^\mu\partial_\mu-m)\psi^{\mathrm{fop}}=0 .
 $$
@@ -230,7 +230,7 @@ $$
 
 with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$, and complex coefficients $c_1,c_2,d_1$, the four-divergence $\langle\tilde\nabla,\tilde J\rangle_{\natural}$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $1.1\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.8\times10^{-10}$. A single plane wave would have tested only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
 
-In biquaternion terms, $J^\mu$ is the spinor-module representative of an operator-valued material-sector element $i\\tilde\\Psi^{\mathrm{fop}}\\tilde\\Psi^{\mathrm{fop}{*}}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd $\gamma^0$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
+In biquaternion terms, $J^\mu$ is the spinor-module representative of an operator-valued material-sector element $i\tilde\Psi^{\mathrm{fop}}\tilde\Psi^{\mathrm{fop}{*}}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd $\gamma^0$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
 
 ### Spin
 
@@ -298,7 +298,7 @@ The denominator is the deformed mass-shell scalar, and the deformation $-i\epsil
 
 **Open.**
 
-- **The intrinsic operator field.** Whether a genuinely $\mathbb{B}$-valued field $\\tilde\\Psi^{\mathrm{fop}}$, quantized with a $\mathbb{B}$-intrinsic Lagrangian and paired with the trace, gives a theory inequivalent to the module transcription, is not settled. The parent leaves it open and this article does not close it.
+- **The intrinsic operator field.** Whether a genuinely $\mathbb{B}$-valued field $\tilde\Psi^{\mathrm{fop}}$, quantized with a $\mathbb{B}$-intrinsic Lagrangian and paired with the trace, gives a theory inequivalent to the module transcription, is not settled. The parent leaves it open and this article does not close it.
 - **The grading on the field.** The parity grading is realized in $\mathbb{B}$ only for one mode; for the field it is external, by the dimension count. Whether some enlarged structure carries it inside is open.
 - **The current.** The physical current needs the Clifford-odd $\gamma^0$, outside $\mathbb{B}$; whether a biquaternion-natural current exists on a restricted module is open, as the minimal-coupling companion states.
 - **Empirical content.** Whether the quantized field in biquaternion form differs from the standard one in any observable is the framework's standing open question, and nothing here changes it.
@@ -336,7 +336,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde{Q}^\flat=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, not the mass |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\,\partial/\partial Q_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$ | Massive biquaternion Dirac equation (linear chiral pair) |
-| $\\tilde\\Psi^{\mathrm{fop}}$ | Operator-valued biquaternion field ($\mathcal{A}\otimes\mathbb{B}$ transcription) |
+| $\tilde\Psi^{\mathrm{fop}}$ | Operator-valued biquaternion field ($\mathcal{A}\otimes\mathbb{B}$ transcription) |
 | $\psi^{\mathrm{fop}}$, $\bar{\psi^{\mathrm{fop}}}=\psi^{\mathrm{fop}\dagger}\gamma^0$ | Module-valued quantized field and its adjoint |
 | $S=\mathbb{C}^2$ | Spinor module, the unique simple left $\mathbb{B}$-module |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix realization (algebra isomorphism onto $M_2(\mathbb{C})$); $S$ is its defining representation |

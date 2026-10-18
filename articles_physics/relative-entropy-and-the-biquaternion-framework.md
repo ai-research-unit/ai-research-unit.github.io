@@ -109,10 +109,10 @@ The domain is the open Bloch ball. On the pure boundary the state is a **zero di
 
 Let
 $$
-\tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
-\tilde\sigma=\tfrac12\big(e_t+i\vec s\cdot\mathbf e\big)
+\tilde{Ϛ}_1=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
+\tilde{Ϛ}_2=\tfrac12\big(e_t+i\vec s\cdot\mathbf e\big)
 $$
-be two states, with $|\vec r|,|\vec s|\le1$ and $\log\tilde\sigma$ existing, so that $|\vec s|<1$. The von Neumann entropy of a biquaternion state follows from the logarithm above and the trace formula,
+be two states, with $|\vec r|,|\vec s|\le1$ and $\log\tilde{Ϛ}_2$ existing, so that $|\vec s|<1$. The von Neumann entropy of a biquaternion state follows from the logarithm above and the trace formula,
 $$
 2\,\mathrm{Sc}\big(\tilde{Ϛ}\log\tilde{Ϛ}\big)
 =\tfrac12\log\frac{1-|\vec r|^2}{4}+|\vec r|\,\mathrm{artanh}|\vec r|,
@@ -123,7 +123,7 @@ S(\tilde{Ϛ})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec
 $$
 At $\vec r=0$ this returns $\log2$, the entropy of the maximally mixed qubit state, and at $|\vec r|\to1$ it tends to $0$, the entropy of a pure state. For the cross term, the trace formula gives
 $$
-\mathrm{Tr}\big(\tilde{Ϛ}\log\tilde\sigma\big)
+\mathrm{Tr}\big(\tilde{Ϛ}_1\log\tilde{Ϛ}_2\big)
 =\tfrac12\log\frac{1-|\vec s|^2}{4}
 +|\vec r|\,\mathrm{artanh}|\vec s|\,\cos\gamma,
 \qquad
@@ -131,7 +131,7 @@ $$
 $$
 and therefore
 $$
-\boxed{\,S(\tilde{Ϛ}\|\tilde\sigma)
+\boxed{\,S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
 +|\vec r|\Big(\mathrm{artanh}|\vec r|
 -\mathrm{artanh}|\vec s|\,\cos\gamma\Big)\,}
@@ -140,18 +140,18 @@ for $|\vec r|,|\vec s|<1$. The derivation is the whole content of the section: t
 
 Two features are worth naming. First, the relative entropy of two biquaternion states is **not** a function of the Bloch distance $|\vec r-\vec s|$ alone; it depends on the two radii and the angle, and is therefore sensitive to the direction of the Bloch vectors and not only to their separation. Second, it is manifestly **asymmetric** in the exchange $\vec r\leftrightarrow\vec s$, because the coefficient in front of the bracket is $|\vec r|$ and the bracket is not symmetric.
 
-The limits are the expected ones. If $\tilde{Ϛ}=\tilde\sigma$ the two radii and the angle give $\tfrac12\log1+|\vec r|(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec r|)=0$. If $|\vec r|\to0$, then
+The limits are the expected ones. If $\tilde{Ϛ}_1=\tilde{Ϛ}_2$ the two radii and the angle give $\tfrac12\log1+|\vec r|(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec r|)=0$. If $|\vec r|\to0$, then
 $$
-S\big(\tfrac12e_t\big\|\tilde\sigma\big)=-\tfrac12\log\big(1-|\vec s|^2\big),
+S\big(\tfrac12e_t\big\|\tilde{Ϛ}_2\big)=-\tfrac12\log\big(1-|\vec s|^2\big),
 $$
-the relative entropy of the trace state from $\tilde\sigma$, which is finite for every faithful $\tilde\sigma$ and tends to $+\infty$ only as $\tilde\sigma$ itself approaches the pure boundary. If $|\vec r|\to1$ with $|\vec s|<1$ the expression tends to the finite limit
+the relative entropy of the trace state from $\tilde{Ϛ}_2$, which is finite for every faithful $\tilde{Ϛ}_2$ and tends to $+\infty$ only as $\tilde{Ϛ}_2$ itself approaches the pure boundary. If $|\vec r|\to1$ with $|\vec s|<1$ the expression tends to the finite limit
 $$
-S\big(\tilde\Pi(\vec u_r)\big\|\tilde\sigma\big)
+S\big(\tilde\Pi(\vec u_r)\big\|\tilde{Ϛ}_2\big)
 =-\tfrac12\log\frac{1-|\vec s|^2}{4}
 -\mathrm{artanh}\big(|\vec s|\big)\cos\gamma',
 \qquad \cos\gamma'=\vec u_r\cdot\vec u_s,
 $$
-which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\vec u_r)\log\tilde\sigma)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
+which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\vec u_r)\log\tilde{Ϛ}_2)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
 
 ### Verification on Generic Superpositions
 
@@ -162,8 +162,8 @@ $$
 $$
 with $|\vec r|^2=\tfrac{61}{100}$, $|\vec s|^2=\tfrac{3}{10}$ and $\cos\gamma=-0.163633\ldots$, is a generic superposition with no component vanishing. The results are
 $$
-S(\tilde{Ϛ}\|\tilde\sigma)=0.6046559092,\qquad
-S(\tilde\sigma\|\tilde{Ϛ})=0.7233102495,
+S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=0.6046559092,\qquad
+S(\tilde{Ϛ}_2\|\tilde{Ϛ}_1)=0.7233102495,
 $$
 the first from the boxed formula and the second by exchanging the arguments; both agree with the matrix computation to twelve decimal places, and the asymmetry is $0.118654\ldots$, nonzero as it must be. The same check was run at five further pairs, including pairs on the boundary of the Bloch ball and pairs with one argument at the centre: all agree, and all are non-negative.
 
@@ -171,7 +171,7 @@ the first from the boxed formula and the second by exchanging the arguments; bot
 
 Klein's inequality is not re-derived here; it is a theorem about density matrices, and the states of $\mathbb{B}$ are density matrices. What the framework adds is a geometric interpretation of where the inequality is tight. The boxed formula vanishes if and only if $|\vec r|=|\vec s|$ and $\cos\gamma=1$, that is, if and only if $\vec r=\vec s$, so the relative entropy separates the states of $\mathbb{B}$ as well as it separates arbitrary qubit states. Near coincidence $\vec s=\vec r+\delta\vec r$ the boxed formula has no linear term, as it must, and its quadratic term is the Kubo–Mori–Bogoliubov metric of the state. For a displacement that changes the purity, $\delta\vec r\parallel\vec r$, the coefficient is exact,
 $$
-S(\tilde{Ϛ}\|\tilde\sigma)=\frac{|\delta\vec r|^2}{2\,(1-|\vec r|^2)}+O\big(|\delta\vec r|^3\big),
+S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)=\frac{|\delta\vec r|^2}{2\,(1-|\vec r|^2)}+O\big(|\delta\vec r|^3\big),
 $$
 verified by recomputation at small displacements. The coefficient is finite throughout the interior of the Bloch ball and diverges as the pure boundary is approached, where the eigenvalue gap $1-|\vec r|^2$ closes. This is the framework's form of the statement that the purity of a nearly pure state is distinguished divergingly well.
 
@@ -233,7 +233,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **1. The relative entropy of a field state.** The biquaternion module carries the one-mode truncation of a field. Is there a preferred modular structure on the module, in the sense of a faithful state of the module algebra, whose relative entropy reproduces the finite field-theoretic answer?
 
-**2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework interpretation of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde\sigma$ has one-dimensional support, which contains the support of $\tilde{Ϛ}$ only when $\tilde{Ϛ}=\tilde\sigma$, and the antipodal pair $\vec r=-\vec s$ on the sphere is its extreme instance.
+**2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework interpretation of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde{Ϛ}_2$ has one-dimensional support, which contains the support of $\tilde{Ϛ}_1$ only when $\tilde{Ϛ}_1=\tilde{Ϛ}_2$, and the antipodal pair $\vec r=-\vec s$ on the sphere is its extreme instance.
 
 **3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_\omega^{it}\tilde{Ϛ}_\varphi^{-it}$. Whether that flow has an $\mathbb{M}_+$-valued generator in the framework, as the modular flow does, is not worked out here.
 
@@ -247,7 +247,7 @@ Relative entropy is Umegaki's $S(\rho\|\sigma)=\mathrm{Tr}(\rho\log\rho)-\mathrm
 
 The states of the biquaternion algebra are the elements of $\mathbb{M}_+$ of the form $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde{Ϛ}=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
 $$
-S(\tilde{Ϛ}\|\tilde\sigma)
+S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
 +|\vec r|\Big(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec s|\,\cos\gamma\Big),
 $$
@@ -268,7 +268,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ | State of $\mathbb{B}$; Bloch vector $\vec r$ |
 | $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of the state |
 | $S(\tilde{Ϛ})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$ | von Neumann entropy of a biquaternion state |
-| $S(\tilde{Ϛ}\|\tilde\sigma)$ | Relative entropy; boxed closed form |
+| $S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)$ | Relative entropy; boxed closed form |
 | $\cos\gamma=\vec r\cdot\vec s/(|\vec r||\vec s|)$ | Bloch-vector angle |
 | $\Delta_{\omega,\varphi}$ | Araki relative modular operator |
 | $\log\tilde{Ϛ}\in\mathbb{M}_+$ | Biquaternion logarithm of a faithful state |

@@ -77,13 +77,13 @@ What the cone adds to the bare equation $E=c|\vec p|$ is that the equation is no
 
 For a four-wavevector $\tilde P=i(\omega/c)e_t+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde P\tilde{R}^{\natural})) = \langle\tilde P\rangle_{\natural}f''$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde P\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.
 
-What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}$ of unit norm acts on the sector, and the norm is multiplicative, so
+What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ with $\tilde U$ of unit norm acts on the sector, and the norm is multiplicative, so
 
 $$
-N\!\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\right) = \langle\tilde{\Lambda}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{\Lambda}^{*}\rangle_{\natural} = \left|\langle\tilde{\Lambda}\rangle_{\natural}\right|^2\langle\tilde{Q}\rangle_{\natural},
+N\!\left(\tilde U\tilde{Q}\tilde U^{*}\right) = \langle\tilde U\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural} = \left|\langle\tilde U\rangle_{\natural}\right|^2\langle\tilde{Q}\rangle_{\natural},
 $$
 
-using $\langle\tilde{\Lambda}^{*}\rangle_{\natural}=\overline{\langle\tilde{\Lambda}\rangle_{\natural}}$ and $\langle\tilde{\Lambda}\rangle_{\natural}=1$. The norm, and therefore its zero set, is invariant. A null four-momentum is null in every frame, so the condition $\omega=c|\vec k|$ is frame-independent, and the speed read off it is the same for every inertial observer. The constancy of the speed of light is thus not a second postulate laid beside the first; it is the multiplicativity of the norm applied to the invariance group of the cone.
+using $\langle\tilde U^{*}\rangle_{\natural}=\overline{\langle\tilde U\rangle_{\natural}}$ and $\langle\tilde U\rangle_{\natural}=1$. The norm, and therefore its zero set, is invariant. A null four-momentum is null in every frame, so the condition $\omega=c|\vec k|$ is frame-independent, and the speed read off it is the same for every inertial observer. The constancy of the speed of light is thus not a second postulate laid beside the first; it is the multiplicativity of the norm applied to the invariance group of the cone.
 
 The argument is short but it is doing real work. In the metric formulation the invariance of the light cone under the Lorentz group and the constancy of $c$ are two statements, and their agreement is a consistency to be checked. Here there is one statement: the norm is multiplicative and the rotor has unit norm. The cone article states the invariance; the point made here is the consequence for the speed, and the fact that the speed is a *derived* frame-independent number rather than a separate kinematical postulate.
 
@@ -219,8 +219,8 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 | $E=c\lvert\vec p\rvert$ | The null shell, $m=0$; equivalently $\langle\tilde{P}\rangle_{\natural}=0$ |
 | $v=\lvert\vec p\rvert c^2/E$ | Speed from the shell; $v=c$ exactly at $m=0$ |
 | $\tilde P=i\frac{\omega}{c}e_t+\vec k$ | Four-wavevector; $\langle\tilde P\rangle_{\natural}=0\Leftrightarrow\omega=c\lvert\vec k\rvert$ |
-| $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$ | Lorentz rotor (unit norm) |
-| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation; $\langle\cdot\rangle_{\natural}$ invariant, so the cone and $c$ are frame-independent |
+| $\tilde U\tilde U^{\natural}=e_t$ | Lorentz rotor (unit norm) |
+| $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation; $\langle\cdot\rangle_{\natural}$ invariant, so the cone and $c$ are frame-independent |
 | $\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$ | Idempotent of $\mathbb{M}_+$; $\tilde\Pi^2=\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$ |
 | $\tilde{P}=2i\frac{E}{c}\tilde\Pi(-\vec u)$, $\vec u=\vec p/\lvert\vec p\rvert$ | The null momentum as a scaled projector |
 | $\langle\lambda\tilde{Q}\rangle_{\natural}=\lambda^2\langle\tilde{Q}\rangle_{\natural}$ | Homogeneity; the cone is scale-invariant, so no mass scale is native |

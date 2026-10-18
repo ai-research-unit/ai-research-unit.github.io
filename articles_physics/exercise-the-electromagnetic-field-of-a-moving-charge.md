@@ -61,7 +61,7 @@ Numerical checks quoted below were performed on subluminal worldlines with a New
 
 **Statement.** (a) Derive $\partial/\partial t t_r = 1/\kappa$ and $\nabla t_r = -\vec u_R/(c\kappa)$ from the implicit definition of $t_r$. (b) Assemble the Liénard–Wiechert potential $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}/\gamma$ and verify the three identities
 $$
-D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right),
+D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}\right),
 \qquad
 \langle\tilde{\mathcal{R}}\rangle_{\natural} = 0,
 \qquad
@@ -95,9 +95,9 @@ Two points are worth recording because they are used implicitly throughout. Firs
 $$
 D = R - \vec R\cdot\vec\beta = R\left(1-\vec u_R\cdot\vec\beta\right) = R\kappa .
 $$
-The scalar-part identity follows from the multiplication rule $\mathrm{Sc}(\tilde{A}\tilde{B}) = A_0B_0 - \vec A\cdot\vec B$ applied to $\tilde{V}/\gamma = ic\,e_t + \vec v$ and $\bar{\tilde{\mathcal{R}}} = iR\,e_t - \vec R$:
+The scalar-part identity follows from the multiplication rule $\mathrm{Sc}(\tilde{A}\tilde{B}) = A_0B_0 - \vec A\cdot\vec B$ applied to $\tilde{V}/\gamma = ic\,e_t + \vec v$ and $\bar{\tilde{\mathcal{R}} = iR\,e_t - \vec R$:
 $$
-\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}}\right)
+\mathrm{Sc}\!\left((\tilde{V}/\gamma)\bar{\tilde{\mathcal{R}}\right)
 = (ic)(iR) - \vec v\cdot(-\vec R)
 = -cR + \vec v\cdot\vec R
 = -c\left(R - \vec R\cdot\vec\beta\right)
@@ -105,7 +105,7 @@ $$
 $$
 The retarded separation is null,
 $$
-\langle\tilde{\mathcal{R}}\rangle_{\natural} = \tilde{\mathcal{R}}\bar{\tilde{\mathcal{R}}} = (iR)^2 + |\vec R|^2 = -R^2 + R^2 = 0,
+\langle\tilde{\mathcal{R}}\rangle_{\natural} = \tilde{\mathcal{R}}\bar{\tilde{\mathcal{R}} = (iR)^2 + |\vec R|^2 = -R^2 + R^2 = 0,
 $$
 a zero divisor of $\mathbb{B}$ and a point of the light cone; and the four-velocity is timelike, of fixed norm,
 $$
@@ -121,7 +121,7 @@ $$
 \vec A = \frac{\mu ϙ}{4\pi D}\vec v = \frac{\vec v}{c^2}\,\phi .
 $$
 
-The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}(\tilde{V}/\gamma\bar{\tilde{\mathcal{R}}})/c| \le 4\times10^{-16}$, $|\langle\tilde{\mathcal{R}}\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma^2| = 0$.
+The identities of (b) were verified numerically on accelerated worldlines: $|D - R\kappa| = 0$ by construction, $|D + \mathrm{Sc}(\tilde{V}/\gamma\bar{\tilde{\mathcal{R}})/c| \le 4\times10^{-16}$, $|\langle\tilde{\mathcal{R}}\rangle_{\natural}| \le 2\times10^{-15}$, and $|\langle\tilde{V}/\gamma\rangle_{\natural} + c^2/\gamma^2| = 0$.
 
 ## Problem 2: The Field Strength and the Velocity–Acceleration Split
 
@@ -363,7 +363,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 ## Summary
 
-The Liénard–Wiechert potential of a point charge is the single biquaternion $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}/\gamma$, built from the null retarded separation $\tilde{\mathcal{R}} = iR\,e_t+\vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t_r)\right)$, paired through $D = R\kappa = -\frac{1}{c\gamma}\,\mathrm{Sc}\!\left(\tilde{V}\bar{\tilde{\mathcal{R}}}\right)$ with $\kappa = 1-\vec u_R\cdot\vec\beta$. Differentiating it once with the biquaternionic gradient gives the whole field, because the retarded time satisfies $\tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$, a null biquaternion. The field separates exactly into a part independent of the acceleration and a part linear in it,
+The Liénard–Wiechert potential of a point charge is the single biquaternion $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}/\gamma$, built from the null retarded separation $\tilde{\mathcal{R}} = iR\,e_t+\vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t_r)\right)$, paired through $D = R\kappa = -\frac{1}{c\gamma}\,\mathrm{Sc}\!\left(\tilde{V}\bar{\tilde{\mathcal{R}}\right)$ with $\kappa = 1-\vec u_R\cdot\vec\beta$. Differentiating it once with the biquaternionic gradient gives the whole field, because the retarded time satisfies $\tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$, a null biquaternion. The field separates exactly into a part independent of the acceleration and a part linear in it,
 $$
 \tilde{F}_v = \frac{g}{D^2}\left[\left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma + \frac{2\,dD_{0}/dt_r}{c\kappa}\tilde{\mathcal L}_{\mathrm{ret}}\tilde{V}/\gamma\right],
 \qquad
