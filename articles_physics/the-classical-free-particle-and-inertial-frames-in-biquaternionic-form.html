@@ -101,7 +101,7 @@ $$</p>
 <h3 id="the-straight-line">The Straight Line</h3>
 <p>The free particle is defined by the vanishing of the four-force,</p>
 <p>$$
-\tilde{F} = \frac{d\tilde{P}}{d\tau} = 0 .
+\tilde K = \frac{d\tilde{P}}{d\tau} = 0 .
 $$</p>
 <p>Since $\tilde{P} = m\tilde{V}$ and $m$ is constant, this says that the four-velocity is constant, $\tilde{V} = \tilde{V}_0$, and integrating once gives the straight worldline</p>
 <p>$$
@@ -110,7 +110,7 @@ $$</p>
 <p>with $\vec v$ a constant real vector. In words: the free particle moves with constant velocity along a straight line, which is Newton's first law transcribed into the algebra. The scalar part of $\tilde{R}$ carries the time, the vector part carries the uniform motion, and the two are related by the constraint that the four-velocity have norm $-c^2$.</p>
 <p>Differentiating the constraint along the worldline expresses the orthogonality of the four-force to the four-momentum,</p>
 <p>$$
-\tilde{F}\overline{\tilde{P}} + \tilde{P}\overline{\tilde{F}} = 0 ,
+\tilde K\overline{\tilde{P}} + \tilde{P}\overline{\tilde K} = 0 ,
 $$</p>
 <p>which is the biquaternion form of $f^\mu p_\mu = 0$. For the free particle both terms vanish separately; for a forced particle the identity says that a four-force can turn the four-momentum but cannot change its norm, and hence cannot change the rest mass.</p>
 <h3 id="the-causal-character-of-the-free-worldline">The Causal Character of the Free Worldline</h3>
@@ -237,7 +237,7 @@ $$</p>
 </tr>
 <tr>
 <td>Four-force $f^\mu$</td>
-<td>$\tilde{F} = d\tilde{P}/d\tau$</td>
+<td>$\tilde K = d\tilde{P}/d\tau$</td>
 <td>$\mathbb{M}_-$</td>
 </tr>
 <tr>
@@ -268,7 +268,7 @@ $$</p>
 <p>$$
 \tilde{R}(t) = ic\,t\,e_t + x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + \vec v\,t \in \mathbb{M}_- ,
 $$</p>
-<p>with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{M}_-$, and constrained by the mass-shell relation $\tilde{P}\overline{\tilde{P}} = -m^2c^2$. The free particle satisfies $\tilde{F} = d\tilde{P}/d\tau = 0$, which is Newton's first law.</p>
+<p>with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{M}_-$, and constrained by the mass-shell relation $\tilde{P}\overline{\tilde{P}} = -m^2c^2$. The free particle satisfies $\tilde K = d\tilde{P}/d\tau = 0$, which is Newton's first law.</p>
 <p>Inertial frames are the unit-norm biquaternions $\tilde U \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde{R} \mapsto \tilde U\tilde{R}\tilde U^{*}$. The action is linear, preserves $\mathbb{M}_-$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.</p>
 <p>The non-relativistic limit of a boost is a <strong>shear</strong>, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde U = e_t + \tfrac{iV}{2c}\vec u_{\mathrm b}$, and acting on $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ produces the Galilean transformation $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z - \vec Vt$, $t' = t$. The shear does not preserve the biquaternion norm, $\langle\tilde{R}'\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural} - 2t\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + t^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.</p>
 <p>The free particle occupies only the material sector, carries no internal vector, and is the spin-zero benchmark for the subcategory: its effects are those of a structureless point particle, with no intrinsic angular momentum and hence no intrinsic magnetism.</p>
@@ -326,8 +326,8 @@ $$</p>
 <td>Four-momentum; $\tilde{P}\overline{\tilde{P}} = -m^2c^2$</td>
 </tr>
 <tr>
-<td>$\tilde{F} = d\tilde{P}/d\tau$</td>
-<td>Four-force; $\tilde{F} = 0$ for the free particle</td>
+<td>$\tilde K = d\tilde{P}/d\tau$</td>
+<td>Four-force; $\tilde K = 0$ for the free particle</td>
 </tr>
 <tr>
 <td>$\tilde U \in \mathbb{B}$, $\tilde U\overline{\tilde U} = e_t$</td>
