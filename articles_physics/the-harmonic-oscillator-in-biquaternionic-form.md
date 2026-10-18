@@ -25,16 +25,16 @@ Fix the standard oscillator objects once; the structural question is where they 
 In units with $\hbar=1$, the two quadratures
 
 $$
-\tilde{Q}=\frac{\tilde a+\tilde a^\dagger}{\sqrt2},\qquad
-\tilde P=\frac{\tilde a-\tilde a^\dagger}{i\sqrt2},
+\tilde{Q}=\frac{a+a^\dagger}{\sqrt2},\qquad
+\tilde P=\frac{a-a^\dagger}{i\sqrt2},
 $$
 
-are Hermitian, and $[\tilde{Q},\tilde P]=i e_t$. The energy is $\tilde H=\omega(\tilde a^\dagger\tilde a+\tfrac12)$; the (shifted) number operator $\tilde a^\dagger\tilde a+\tfrac12$ counts the excitations. The quadratic combinations
+are Hermitian, and $[\tilde{Q},\tilde P]=i e_t$. The energy is $\tilde H=\omega(a^\dagger a+\tfrac12)$; the (shifted) number operator $a^\dagger a+\tfrac12$ counts the excitations. The quadratic combinations
 
 $$
 \tilde K_1=\tfrac12(\tilde{Q}^2-\tilde P^2),\qquad
 \tilde K_2=\tfrac12(\tilde{Q}\tilde P+\tilde P\tilde{Q}),\qquad
-\tilde K_3=\tilde a^\dagger\tilde a+\tfrac12
+\tilde K_3=a^\dagger a+\tfrac12
 $$
 
 are the generators of the oscillator's dynamical algebra: $\tilde K_3$ generates the phase $\mathrm{U}(1)$, and $\tilde K_1,\tilde K_2$ generate the two squeezes. They close into an $su(1,1)$ algebra; the representative relation, which we use below, is
@@ -59,11 +59,11 @@ $$
 
 This is the Hermitian/anti-Hermitian decomposition, and it is the matrix decomposition of an operator into its self-adjoint and skew-adjoint parts. It is also the operation performed by the complex structure: since $i\mathbb{M}_\pm=\mathbb{M}_\mp$, multiplication by $i$ is exactly the map that exchanges the two sectors. The complexification that defines $\mathbb{B}$ and the two-sector decomposition are therefore the same structure.
 
-Now consider the complex amplitude of the mode. Writing $\tilde a=\tilde{Q}+i\tilde P$ with $\tilde{Q},\tilde P$ Hermitian,
+Now consider the complex amplitude of the mode. Writing $a=\tilde{Q}+i\tilde P$ with $\tilde{Q},\tilde P$ Hermitian,
 
 $$
-\tilde a_{H}=\tilde{Q}\in\mathbb{M}_+,\qquad
-\tilde a_{X}=i\tilde P\in\mathbb{M}_- .
+a_{H}=\tilde{Q}\in\mathbb{M}_+,\qquad
+a_{X}=i\tilde P\in\mathbb{M}_- .
 $$
 
 So the Hermitian part of the amplitude is one quadrature and the anti-Hermitian part is $i$ times the other. This is a genuine two-sector statement, and it is the correct form of the intuition: the two pieces of the complex amplitude sit one in each sector.
@@ -151,18 +151,18 @@ $$
 \vec\Upsilon_y=\underbrace{\tfrac12 i\vec e_x}_{\in\,\mathbb{M}_+}\;\underbrace{+\tfrac12 \vec e_y}_{\in\,\mathbb{M}_-}.
 $$
 
-Each of these ladder operators is the sum of one $\mathbb{M}_+$ element and one $\mathbb{M}_-$ element of equal magnitude, and conjugation flips the sign of the $\mathbb{M}_-$ part while leaving the $\mathbb{M}_+$ part fixed. The general complex amplitude has the same shape, though not necessarily the same weights: $\tilde a=\tilde{Q}+i\tilde P$ has $\mathbb{M}_+$ part $\tilde{Q}$ and $\mathbb{M}_-$ part $i\tilde P$, and $\tilde a^\dagger=\tilde{Q}-i\tilde P$ differs from $\tilde a$ only in the sign of the $\mathbb{M}_-$ part. Raising and lowering operators are therefore, exactly, the elements with both sector components nonzero: they sit off the sector axis, and the ladder sits at equal distance from both sectors. This is the precise version of the claim that the raising and lowering structure "lives between" the sectors, and it is correct.
+Each of these ladder operators is the sum of one $\mathbb{M}_+$ element and one $\mathbb{M}_-$ element of equal magnitude, and conjugation flips the sign of the $\mathbb{M}_-$ part while leaving the $\mathbb{M}_+$ part fixed. The general complex amplitude has the same shape, though not necessarily the same weights: $a=\tilde{Q}+i\tilde P$ has $\mathbb{M}_+$ part $\tilde{Q}$ and $\mathbb{M}_-$ part $i\tilde P$, and $a^\dagger=\tilde{Q}-i\tilde P$ differs from $a$ only in the sign of the $\mathbb{M}_-$ part. Raising and lowering operators are therefore, exactly, the elements with both sector components nonzero: they sit off the sector axis, and the ladder sits at equal distance from both sectors. This is the precise version of the claim that the raising and lowering structure "lives between" the sectors, and it is correct.
 
-Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\vec\Upsilon_x^2=0$ and $\langle \vec\Upsilon_x\rangle_{\natural}=\vec\Upsilon_x\tilde a^{\natural}_{\mathrm{tr}}=0$, so they lie on the biquaternion-norm cone; this is the same zero-divisor cone that is the light cone of $\mathbb{M}_-$ and the boundary of the state space in $\mathbb{M}_+$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{M}_-$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde P$, and the factor of $i$ that turns $\tilde P$ into a generator is the same factor that exchanges the sectors.
+Two further properties are inherited from the algebra and worth recording. First, the ladder operators are nilpotent and null, $\vec\Upsilon_x^2=0$ and $\langle \vec\Upsilon_x\rangle_{\natural}=\vec\Upsilon_x a^{\natural}_{\mathrm{tr}}=0$, so they lie on the biquaternion-norm cone; this is the same zero-divisor cone that is the light cone of $\mathbb{M}_-$ and the boundary of the state space in $\mathbb{M}_+$, and it is established for the ladder operators in the angular-momentum article, so we do not rederive it. Second, the $\mathbb{M}_-$ part of the amplitude is a generator, not an observable: it is $i$ times the Hermitian quadrature $\tilde P$, and the factor of $i$ that turns $\tilde P$ into a generator is the same factor that exchanges the sectors.
 
 ## The Phase Is the Sector Exchange
 
 The oscillator's phase, the $\mathrm{U}(1)$ that multiplies the amplitude by $\exp(-i\theta)$, is generated by the number operator. In the truncation, $[\tilde\Pi_-,\vec\Upsilon_x]=-\vec\Upsilon_x$, so the phase acts as $\vec\Upsilon_x\mapsto \exp(-i\theta)\vec\Upsilon_x$. The generator of the phase is $i\tilde\Pi_-$, which is $i$ times an $\mathbb{M}_+$ element and hence lies in $\mathbb{M}_-$; the global phase is generated by $ie_t$, also in $\mathbb{M}_-$.
 
-The phase acts on the two-sector decomposition in a simple way. For $\tilde a=\tilde{Q}+i\tilde P$,
+The phase acts on the two-sector decomposition in a simple way. For $a=\tilde{Q}+i\tilde P$,
 
 $$
-\exp(-i\theta)\tilde a
+\exp(-i\theta)a
 =(\cos\theta\,\tilde{Q}+\sin\theta\,\tilde P)+i(-\sin\theta\,\tilde{Q}+\cos\theta\,\tilde P),
 $$
 
@@ -227,8 +227,8 @@ The two-sector interpretation of the oscillator is therefore formal, not a pair 
 | $\mathbb{M}_+$ | Hermitian subspace (informational): $h_0e_t+i\vec h$ |
 | $\mathbb{H}_\mathbb{B}$ | Real quaternion subspace |
 | $\tilde{Q},\tilde P$ | Quadratures, Hermitian elements of $\mathbb{M}_+$ |
-| $\tilde a,\tilde a^\dagger$ | Ladder operators, elements straddling $\mathbb{M}_+\oplus\mathbb{M}_-$ |
-| $\tilde a^\dagger\tilde a$ | Number operator |
+| $a,a^\dagger$ | Ladder operators, straddling $\mathbb{M}_+\oplus\mathbb{M}_-$ |
+| $a^\dagger a$ | Number operator |
 | $\tilde K_1,\tilde K_2,\tilde K_3$ | Quadratic generators (squeezes and phase), $[\tilde K_1,\tilde K_2]=2i\tilde K_3$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Truncated lowering operator |
 | $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Truncated number operator (idempotent) |

@@ -48,12 +48,12 @@ Two boundaries are respected. The **spin-0 and multipole sectors** are excluded:
 
 The article proceeds as follows. The next section fixes the spin four-vector and its reduced form. The following section assembles the covariant equation from the two available structures and fixes the coefficients. The next section transcribes it into $\mathbb{B}$ and verifies the transcription. The remaining sections treat the rest-frame limit and the meaning of $g$, the degenerate case $g=2$ in which the spin is transported exactly as the four-velocity, the laboratory-frame reduction to the Larmor term and the Thomas term, and the separation of what the algebra supplies from what is standard.
 
-**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^{2}=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$; the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so that the biquaternion representative of a four-vector $a^\mu$ is $\tilde{a}=i a^{0}e_t+a_\mu \vec e_\mu$ and the invariant pairing is
+**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^{2}=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$; the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so that the biquaternion representative of a four-vector $Q^\mu$ is $\tilde{Q}=i Q^{0}e_t+Q_\mu \vec e_\mu$, and the invariant pairing of $\tilde Q_1,\tilde Q_2\in\mathbb{M}_-$ is
 
 $$
-\langle\tilde{a},\tilde{b}\rangle=\mathrm{Sc}\!\left(\tilde{a}\,\tilde{b}^{\natural}\right)
-=-a^{0}b^{0}+\vec a\cdot\vec b
-=\eta_{\mu\nu}a^\mu b^\nu .
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}\!\left(\tilde{Q}_1\,\tilde{Q}_2^{\natural}\right)
+=-Q_1^{0}Q_2^{0}+\vec Q_1\cdot\vec Q_2
+=\eta_{\mu\nu}Q_1^\mu Q_2^\nu .
 $$
 
 The field-strength biquaternion is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$, as fixed once and for all in Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants. The electromagnetic field tensor has components
@@ -420,9 +420,9 @@ $$
 whose four-vector components are the contraction $F^{\mu\nu}V_\nu$, and the invariant material pairing
 
 $$
-\big\langle\tilde{a},\tilde{b}\big\rangle
-=\mathrm{Sc}\!\left(\tilde{a}\,\tilde{b}^{\natural}\right)
-=-a^{0}b^{0}+\vec a\cdot\vec b.
+\big\langle\tilde{Q}_1,\tilde{Q}_2\big\rangle
+=\mathrm{Sc}\!\left(\tilde{Q}_1\,\tilde{Q}_2^{\natural}\right)
+=-Q_1^{0}Q_2^{0}+\vec Q_1\cdot\vec Q_2.
 $$
 
 The transcription was verified by recomputation on random field and velocity configurations: the biquaternion and component right-hand sides agree to machine precision; the orthogonality $S_\mu v^\mu=0$ is preserved to machine precision; and the rest-frame reduction gives $d\vec s/d\tau=(gq/2m)\,\vec s\times\vec B$ together with the time component required by orthogonality. In the rest frame the equation is the pure gyromagnetic torque, so $g$ is the only dynamical input. At $g=2$ the second term vanishes, the equation becomes $dS^\mu/d\tau=(ϙ/m)F^{\mu\nu}S_\nu$, identical to the Lorentz-force equation for the four-velocity, and the spin follows the velocity with no anomalous precession. The non-relativistic limit is the Larmor precession of the magnetic moment; the second term is the covariant expression of the Thomas precession, whose free-field rate
@@ -455,7 +455,7 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $F^{tk}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $ict$: $F^{tk}=iE_k/c$) |
 | $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ | Field action, components $F^{\mu\nu}V_\nu$ |
-| $\langle\tilde{a},\tilde{b}\rangle=\mathrm{Sc}(\tilde{a}\tilde{b}^{\natural})=-a^0b^0+\vec a\cdot\vec b$ | Invariant pairing on $\mathbb{M}_-$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_1^0Q_2^0+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{M}_-$ |
 | $B=S_\lambda F^{\lambda\nu}v_\nu=\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$ | Spin–field–velocity invariant |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |

@@ -19,7 +19,7 @@ The cone is also the characteristic cone of the algebra's wave operator. The sta
 
 The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two interpretations share the algebra and nothing else.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_t + \vec a$, $\alpha \in \mathbb{R}$, $\vec a = a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ real. The biquaternion norm is $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$, and the material coordinate is $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q}_1 = Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with complex coefficients, and on generic configurations rather than on a single null direction.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_t + \vec Q_1$, $\alpha \in \mathbb{R}$, $\vec Q_1 = a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ real. The biquaternion norm is $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$, and the material coordinate is $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q}_1 = Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with complex coefficients, and on generic configurations rather than on a single null direction.
 
 ## Events, Displacements and the Causal Order
 
@@ -147,28 +147,28 @@ The causal order of a physical theory must be transitive: if a signal can pass f
 Write a future-directed nonspacelike displacement in the form
 
 $$
-\tilde{a} = i\alpha_a\,e_t + \vec a, \qquad \alpha_a = c\,\Delta t_a > 0, \qquad |\vec a| \le \alpha_a,
+\tilde{Q}_1 = i\alpha_1\,e_t + \vec Q_1, \qquad \alpha_1 = c\,\Delta t_1 > 0, \qquad |\vec Q_1| \le \alpha_1,
 $$
 
-the last inequality being $\langle\tilde{a}\rangle_{\natural} = -\alpha_a^2 + |\vec a|^2 \le 0$. Let $\tilde{b} = i\alpha_b\,e_t + \vec b$ be a second such displacement. Then
+the last inequality being $\langle\tilde{Q}_1\rangle_{\natural} = -\alpha_1^2 + |\vec Q_1|^2 \le 0$. Let $\tilde{Q}_2 = i\alpha_2\,e_t + \vec Q_2$ be a second such displacement. Then
 
 $$
-\tilde{a} + \tilde{b} = i(\alpha_a + \alpha_b)\,e_t + (\vec a + \vec b),
+\tilde{Q}_1 + \tilde{Q}_2 = i(\alpha_1 + \alpha_2)\,e_t + (\vec Q_1 + \vec Q_2),
 $$
 
 and the triangle inequality for the real vector part gives
 
 $$
-|\vec a + \vec b| \le |\vec a| + |\vec b| \le \alpha_a + \alpha_b .
+|\vec Q_1 + \vec Q_2| \le |\vec Q_1| + |\vec Q_2| \le \alpha_1 + \alpha_2 .
 $$
 
 Squaring,
 
 $$
-\langle\tilde{a} + \tilde{b}\rangle_{\natural} = -(\alpha_a+\alpha_b)^2 + |\vec a+\vec b|^2 \le 0,
+\langle\tilde{Q}_1 + \tilde{Q}_2\rangle_{\natural} = -(\alpha_1+\alpha_2)^2 + |\vec Q_1+\vec Q_2|^2 \le 0,
 $$
 
-while the scalar coefficient has $\alpha_a + \alpha_b > 0$, so the sum is future-directed. Hence the sum of two future-directed nonspacelike displacements is future-directed nonspacelike: if $p \preceq q$ and $q \preceq r$, then $p \preceq r$ and the causal order is transitive. Equality $\langle\tilde{a}+\tilde{b}\rangle_{\natural} = 0$ occurs only when both displacements are null and their spatial parts are parallel and equally oriented, so that the relay is itself a light signal; two null displacements in non-parallel or oppositely oriented directions sum to a strictly timelike one.
+while the scalar coefficient has $\alpha_1 + \alpha_2 > 0$, so the sum is future-directed. Hence the sum of two future-directed nonspacelike displacements is future-directed nonspacelike: if $p \preceq q$ and $q \preceq r$, then $p \preceq r$ and the causal order is transitive. Equality $\langle\tilde{Q}_1+\tilde{Q}_2\rangle_{\natural} = 0$ occurs only when both displacements are null and their spatial parts are parallel and equally oriented, so that the relay is itself a light signal; two null displacements in non-parallel or oppositely oriented directions sum to a strictly timelike one.
 
 The order is also antisymmetric. If $p \preceq q$ and $q \preceq p$ then $\Delta t \ge 0$ and $\Delta t \le 0$, so $\Delta t = 0$, and $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ then gives $|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| \le 0$, hence $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = 0$ and $p = q$. Together with reflexivity and transitivity this makes $\preceq$ a **partial order** on the events: the structure of possible influence is an order, not a graph with cycles, and distinct events are ordered in at most one direction. This is what forbids a signal loop that closes on itself and returns to its own emission event; a closed causal curve in flat spacetime would require a strict part of the order to hold in both directions.
 

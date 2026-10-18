@@ -52,7 +52,7 @@ $$
 
 its image is the real span of $\vec e_x,\vec e_y,\vec e_z$, and the smallest witness of the failure of closure is $i\vec e_x\diamond i\vec e_y=\vec e_z$.
 
-*Proof.* For $\tilde Q_1=i\tilde h_1$, $\tilde Q_2=i\tilde h_2$ with $\tilde h_1,\tilde h_2$ real, the explicit form gives $i\tilde h_1\diamond i\tilde h_2 = -h_{1t}\vec h_2+h_{2t}\vec h_1+\vec h_1\times\vec h_2$, which has zero scalar part and a real vector part, so it lies in $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{H}_{\mathbb{B}}$; at $\tilde h_1=\vec e_x$, $\tilde h_2=\vec e_y$ it is $\vec e_z$, which is not in $i\mathbb{H}_{\mathbb{B}}$, since its coefficients are real and it is nonzero. The second inclusion is the graded statement: $i\tilde h_1\diamond\tilde h_2 = i(h_{1t}\vec h_2-h_{2t}\vec h_1-\vec h_1\times\vec h_2)\in i\mathbb{H}_{\mathbb{B}}$.
+*Proof.* For $\tilde Q_1=i\tilde q_1$, $\tilde Q_2=i\tilde q_2$ with $\tilde q_1,\tilde q_2$ real, the explicit form gives $i\tilde q_1\diamond i\tilde q_2 = -q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$, which has zero scalar part and a real vector part, so it lies in $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{H}_{\mathbb{B}}$; at $\tilde q_1=\vec e_x$, $\tilde q_2=\vec e_y$ it is $\vec e_z$, which is not in $i\mathbb{H}_{\mathbb{B}}$, since its coefficients are real and it is nonzero. The second inclusion is the graded statement: $i\tilde q_1\diamond\tilde q_2 = i(q_{1t}\vec q_2-q_{2t}\vec q_1-\vec q_1\times\vec q_2)\in i\mathbb{H}_{\mathbb{B}}$.
 
 The anti-quaternion subspace is the odd part of a $\mathbb{Z}/2$-grading of the algebra, $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, and the operation respects the grading: the even part is a subalgebra, the mixed products go to the odd part, and the square of the odd part lands back in the even part. The failure of closure is exactly the statement that the odd part is not a subalgebra, and the failure is total, not marginal: every pair of non-parallel imaginary vectors produces a real vector outside the subspace.
 
@@ -101,7 +101,7 @@ The two notions of isotropy separate. The block's own square vanishes on every e
 | $\mathbb{C}_{\mathbb{B}}$ | $1/2$ | identically $0$ | $0$ | yes | holds |
 | $\mathrm{Vect}(\mathbb{B})$ | $3/6$ | $-\vec Q_1\times\vec Q_2$ | $\mathrm{Vect}(\mathbb{B})$ | yes | holds |
 | $\mathbb{H}_{\mathbb{B}}$ | $-/4$ | $p_t\vec Q_2-q_t\vec Q_1-\vec Q_1\times\vec Q_2$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | yes | fails |
-| $i\mathbb{H}_{\mathbb{B}}$ | $-/4$ | $-h_{1t}\vec h_2+h_{2t}\vec h_1+\vec h_1\times\vec h_2$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | no | fails |
+| $i\mathbb{H}_{\mathbb{B}}$ | $-/4$ | $-q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$ | $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | no | fails |
 | $\mathbb{M}_{+}$ | $-/4$ | $i(a_t\vec q-b_t\vec p)+\vec p\times\vec q$ | $\mathrm{Vect}(\mathbb{B})$ | no | fails |
 | $\mathbb{M}_{-}$ | $-/4$ | $-\vec p\times\vec q+i(a_t\vec q-b_t\vec p)$ | $\mathrm{Vect}(\mathbb{B})$ | no | fails |
 

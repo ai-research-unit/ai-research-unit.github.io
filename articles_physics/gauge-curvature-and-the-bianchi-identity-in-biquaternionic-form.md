@@ -115,7 +115,7 @@ The distinction is not cosmetic. Replacing the two-sided covariant derivative of
 
 Finally, this gauge connection must not be confused with the gravitational connection of the corpus. The gauge connection is **one-sided**: it acts on matter by left multiplication, and on the adjoint-valued curvature by the commutator. The gravitational connection of *Curved Spacetime and the Biquaternion Framework* is **two-sided in a different sense**,
 $$
-D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \tilde{\Gamma}_\mu\tilde{Q} + \tilde{Q}\tilde{\Gamma}_\mu^{*} ,
+D_\mu\tilde{Q} = \partial/\partial Q_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*} ,
 $$
 because the infinitesimal Lorentz action on $\mathbb{M}_-$ is $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathrm{SU}(2)\subset\mathbb{M}_-$ and is one-sided; the gravitational connection lives in the six-dimensional traceless subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
 
@@ -340,7 +340,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - *The Field-Strength Biquaternion and Its Invariants* — the abelian field strength, its pure-vector character, and the biquaternion-norm apparatus that the non-abelian extension does not yet reproduce.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ whose homogeneous part is the Bianchi identity.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
-- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial/\partial Q_\mu\,\tilde{Q}+\tilde{\Gamma}_\mu\tilde{Q}+\tilde{Q}\tilde{\Gamma}_\mu^{*}$, distinct from the one-sided gauge connection of this article.
+- *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial/\partial Q_\mu\,\tilde{Q}+\vec\Gamma_\mu\tilde{Q}+\tilde{Q}\vec\Gamma_\mu^{*}$, distinct from the one-sided gauge connection of this article.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Conventions in the Biquaternion Universe* and *Quaternion Algebra* — the multiplication rule, the conjugations, and the centre used throughout.

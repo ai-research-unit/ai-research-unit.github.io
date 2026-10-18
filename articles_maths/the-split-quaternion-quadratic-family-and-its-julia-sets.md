@@ -22,7 +22,7 @@ the boundedness being with respect to the Euclidean norm $|\cdot|$.
 
 **Remark (the definition is by boundedness, not by a radius).** In the definite algebra the two definitions agree, because a radius exists beyond which every point escapes. Here they do not agree, and the definition by a radius is not available; this is the content of the next section. **The filled Julia set is therefore defined as the set of points whose orbit is bounded**, and the escape is not detected by a norm test.
 
-**Proposition (the critical set).** The differential of $f_c$ at $\tilde q$ is $\tilde h\mapsto\tilde q\tilde h+\tilde h\tilde q$, and it is singular **if and only if** $q_t=0$ or $\langle\tilde q\rangle_{\natural}=0$; equivalently the critical set is the union of the vector subspace $V$ and the null cone,
+**Proposition (the critical set).** The differential of $f_c$ at $\tilde q$ is $\tilde q_2\mapsto\tilde q\tilde q_2+\tilde q_2\tilde q$, and it is singular **if and only if** $q_t=0$ or $\langle\tilde q\rangle_{\natural}=0$; equivalently the critical set is the union of the vector subspace $V$ and the null cone,
 
 $$
 \mathcal{C}=\{\tilde q : q_t=0\}\cup\{\tilde q : \langle\tilde q\rangle_{\natural}=0\} .

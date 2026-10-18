@@ -68,9 +68,9 @@ The definite norm of the algebra is $\lVert\tilde Q\rVert_E$, of *The Euclidean 
 
 **The centre in coordinates.** With $\tilde Q=Ae_t$, $A=q_t+iq'_t$, the restriction is $q_t^{2}+(q'_t)^{2}=\lvert A\rvert^{2}$, the square of the modulus of $A$; the element $e_t+ie_t$ has norm squared $2$, and no nonzero element of the centre is null.
 
-**The quaternion row.** For $\tilde Q=\tilde h=h_te_t+\dots+h_z\vec e_z$ the restriction is $\sum_\mu h_\mu^{2}$, the Euclidean square of $\mathbb{R}^{4}$; it coincides with the general quaternionic bilinear restriction of the same row, which is positive definite there, so on the quaternion subspace the two forms agree.
+**The quaternion row.** For $\tilde Q=\tilde q=q_te_t+\dots+q_z\vec e_z$ the restriction is $\sum_\mu q_\mu^{2}$, the Euclidean square of $\mathbb{R}^{4}$; it coincides with the general quaternionic bilinear restriction of the same row, which is positive definite there, so on the quaternion subspace the two forms agree.
 
-**The anti-quaternion row.** For $\tilde Q=i\tilde h$ the restriction is $\sum_\mu h_\mu^{2}$, again the Euclidean square; it is the negative of the general quaternionic bilinear restriction, which is $(0,4)$ on this row, and the two differ by the sign $i^{2}=-1$.
+**The anti-quaternion row.** For $\tilde Q=i\tilde q$ the restriction is $\sum_\mu q_\mu^{2}$, again the Euclidean square; it is the negative of the general quaternionic bilinear restriction, which is $(0,4)$ on this row, and the two differ by the sign $i^{2}=-1$.
 
 **The two Hermitian rows.** On $\mathbb{M}_+$ the restriction is $q_t^{2}+(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ and on $\mathbb{M}_-$ it is $(q'_t)^{2}+q_x^{2}+q_y^{2}+q_z^{2}$, the standard inner products of $\mathbb{R}^{4}$ in the two orders of the coordinates; each is the square of the definite norm of the subspace, and neither has a null direction.
 

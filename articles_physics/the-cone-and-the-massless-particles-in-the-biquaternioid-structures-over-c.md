@@ -129,7 +129,7 @@ objects that happen to be similar. They are the two faces of one cone, read in t
 matrix model makes them literally the same set of rank-one conditions.
 
 A third reading of the same set appears on the complexified phase space of *The Symplectic Form and the
-Biquaternion Norm Cone*, where a pure-vector phase-space biquaternion $\tilde Z=\vec q+i\vec p$ is
+Biquaternion Norm Cone*, where a pure-vector phase-space biquaternion $\vec Z=\vec q+i\vec p$ is
 null exactly when $\lvert\vec q\rvert=\lvert\vec p\rvert$ and $\vec q\cdot\vec p=0$: the cone
 is the set where the configuration and the momentum magnitudes are equal and the two vectors are
 orthogonal, which is the isotropic locus of the sector sign, since $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural}$ on the pure subspace. There the

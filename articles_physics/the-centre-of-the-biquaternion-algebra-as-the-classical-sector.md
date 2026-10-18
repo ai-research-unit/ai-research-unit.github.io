@@ -221,7 +221,7 @@ The identification of the centre with the classical sector is exact, and its exa
 
 Four further roles of the centre place it inside the framework's standard machinery.
 
-**1. Commutant and bicommutant.** For a subset $\mathbb{S}\subseteq\mathbb{B}$ write $\mathbb{S}'=\{\tilde{Q}:[\tilde{Q},\tilde{s}]=0\ \forall\tilde{s}\in\mathbb{S}\}$ for its commutant. The centre is the commutant of the largest possible set,
+**1. Commutant and bicommutant.** For a subset $\mathbb{S}\subseteq\mathbb{B}$ write $\mathbb{S}'=\{\tilde{Q}_1:[\tilde{Q}_1,\tilde{Q}_2]=0\ \forall\tilde{Q}_2\in\mathbb{S}\}$ for its commutant. The centre is the commutant of the largest possible set,
 $$
 Z(\mathbb{B})=\mathbb{B}',
 $$

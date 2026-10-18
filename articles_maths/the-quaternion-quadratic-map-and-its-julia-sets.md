@@ -35,7 +35,7 @@ Because the quaternion product is associative, the iterates satisfy $f_c^{\,m}\c
 **Proposition.** The real-linear map $\mathrm{d}(f_c)_{\tilde q} : \mathbb{H} \to \mathbb{H}$ is the sum of the left and right multiplications,
 
 $$
-\mathrm{d}(f_c)_{\tilde q}\,\tilde h = \tilde q\tilde h + \tilde h\tilde q,
+\mathrm{d}(f_c)_{\tilde q}\,\tilde q_2 = \tilde q\tilde q_2 + \tilde q_2\tilde q,
 $$
 
 and its determinant, in the real coordinates $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, is
@@ -46,7 +46,7 @@ $$
 
 Hence the differential is invertible exactly for $q_t\neq0$, and it is singular on the hyperplane $\{q_t=0\}$ of the pure vectors, a three-dimensional set; the point $0$ is one of the critical points but not the only one. Here the algebra is identified with $\mathbb{R}^4$ and the differential is taken in the real sense; no complex structure is used.
 
-*Proof.* The product is bilinear, so the differential of $\tilde q \mapsto \tilde q^2$ at $\tilde q$ in the direction $\tilde h$ is $\tilde q\tilde h+\tilde h\tilde q$, and the constant $c$ contributes nothing. The map is the sum $L_{\tilde q}+R_{\tilde q}$ of the left and the right multiplication, and passing through the matrix model $M_2(\mathbb{C})$ the sum $L_{\tilde q}+R_{\tilde q}$ acts on a matrix $X=\mathsf{M}_2(\tilde h)$ by $X\mapsto \mathsf{M}_2(\tilde q)X+X\mathsf{M}_2(\tilde q)$, whose eigenvalues are the four sums $\mu_i+\mu_j$ of the two eigenvalues $\mu_{1,2}=q_t\pm i|\vec q|$ of $\mathsf{M}_2(\tilde q)$; the product of the four sums is $4\mu_1\mu_2(\mu_1+\mu_2)^2=4\langle\tilde q\rangle_{\natural}(2q_t)^2$, the displayed determinant. It vanishes exactly when $q_t=0$, since $\langle\tilde q\rangle_{\natural}=|\tilde q|^2=0$ forces $\tilde q=0$.
+*Proof.* The product is bilinear, so the differential of $\tilde q \mapsto \tilde q^2$ at $\tilde q$ in the direction $\tilde q_2$ is $\tilde q\tilde q_2+\tilde q_2\tilde q$, and the constant $c$ contributes nothing. The map is the sum $L_{\tilde q}+R_{\tilde q}$ of the left and the right multiplication, and passing through the matrix model $M_2(\mathbb{C})$ the sum $L_{\tilde q}+R_{\tilde q}$ acts on a matrix $X=\mathsf{M}_2(\tilde q_2)$ by $X\mapsto \mathsf{M}_2(\tilde q)X+X\mathsf{M}_2(\tilde q)$, whose eigenvalues are the four sums $\mu_i+\mu_j$ of the two eigenvalues $\mu_{1,2}=q_t\pm i|\vec q|$ of $\mathsf{M}_2(\tilde q)$; the product of the four sums is $4\mu_1\mu_2(\mu_1+\mu_2)^2=4\langle\tilde q\rangle_{\natural}(2q_t)^2$, the displayed determinant. It vanishes exactly when $q_t=0$, since $\langle\tilde q\rangle_{\natural}=|\tilde q|^2=0$ forces $\tilde q=0$.
 
 **Remark (the critical set is larger than the point $0$).** The singular set is the hyperplane of the pure vectors, not a point, and the escape theory below is unaffected because it uses only the multiplicativity of the norm. What the connectedness theory uses is the orbit of the *single* point $0$: the point $0$ lies in the plane $\mathbb{R}[c]$ of the parameter, on which $f_c$ restricts to the complex quadratic map $z\mapsto z^2+\kappa(c)$, and it is the critical point of that planar restriction. The orbit of $0$ is therefore the critical orbit of the invariant complex slice, and it is the orbit that governs the locus.
 
