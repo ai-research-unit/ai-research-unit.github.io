@@ -1,4 +1,4 @@
-# __The Temporal Dimension: Why $e_t = 1$__
+# __The Temporal Dimension: Why the Temporal Unit Is the Identity__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ $$
 e_t = 1, \qquad \vec e_x, \qquad \vec e_y, \qquad \vec e_z,
 $$
 
-and the three vector units satisfy $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$, with $\vec e_x\vec e_y = \vec e_z$ and its cyclic companions. One unit of the four is therefore unlike the other three: it is the identity, it squares to itself, and it commutes with everything, while the three vector units anticommute with one another and each squares to the negative of the first.
+and the three vector units satisfy $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$, with $\vec e_x\vec e_y = \vec e_z$ and its cyclic companions. One of the four units is therefore unlike the other three: it is the identity, it squares to itself, and it commutes with everything, while the three vector units anticommute with one another and each squares to the negative of the first.
 
 The question of this article is what that asymmetry **means**. Is $e_t = 1$ a harmless choice of notation, a name given to the identity for bookkeeping, or is it a statement about the temporal dimension itself? The answer the corpus takes is the second. In the biquaternion framework the temporal direction is the **scalar** direction, and $e_t = 1$ is the algebraic expression of that fact. Time is the dimension along which the algebra multiplies an element without turning it.
 
@@ -20,7 +20,7 @@ The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}
 
 ## The Unit That Is the Identity
 
-Three properties single out $e_t$ among the four basis units, and the third is the direction the physics of the next sections reads.
+Three properties single out $e_t$ among the four basis units. The third is the one the physics of the following sections reads.
 
 **It is the identity.** For every element $\tilde Q$ of the algebra,
 
@@ -36,7 +36,7 @@ $$
 e_t^{\natural} = \bar{e_t} = e_t^{*} = e_t ,
 $$
 
-while each of the three vector units changes sign under the natural conjugation, $\vec e_k^{\natural} = -\vec e_k$. The temporal direction is the direction the natural, complex and Hermitian conjugations fix — it is only the anti-Hermitian conjugation, $\flat = -{}^{*}$, that moves $e_t$, negating it, $e_t^{\flat} = -e_t$, while fixing the three vector units.
+while each of the three vector units changes sign under the natural conjugation, $\vec e_k^{\natural} = -\vec e_k$. The temporal direction is the direction fixed by the natural, complex and Hermitian conjugations. Only the anti-Hermitian conjugation $\flat = -{}^{*}$ negates $e_t$, $e_t^{\flat} = -e_t$, while fixing the three vector units.
 
 **It is the direction the rotations fix and the boosts move.** The Lorentz action is rotor conjugation, $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$ for $\tilde U$ in the norm-one group $\mathbb{B}^\times_1 = \{\tilde U : \langle\tilde U\rangle_{\natural} = e_t\}$. A **rotation** is a unit real quaternion, an element of $Sp(1) \subset \mathbb{B}^\times_1$, and it fixes the temporal unit,
 
@@ -52,21 +52,21 @@ $$
 
 which is Hermitian of unit biquaternion norm: the boost carries the unit out of the centre and into the informational sector. The temporal direction is therefore fixed by the rotations and moved by the boosts, and it is the axis the rotations share. The boost does not exchange $e_t$ for one of the vector units; it mixes the temporal direction with a spatial one, and that mixing is what makes the temporal direction a coordinate of the element rather than a parameter outside the algebra.
 
-The algebraic content of the three properties is one statement: **$e_t$ spans the real direction of the centre of the algebra.** The centre of $\mathbb{B}$ is the complex plane
+The algebraic content of the three properties is one statement: **$e_t$ spans the real line in the centre of the algebra.** The centre of $\mathbb{B}$ is the complex plane
 
 $$
 \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\} = \{Q_t\,e_t : Q_t \in \mathbb{C}\},
 $$
 
-which *Conventions in the Biquaternion Universe* calls the complex time sector and *Other Remarkable Subspaces* lists among the remarkable subspaces. The centre is the set of elements that commute with the whole algebra, its real direction is $e_t$, and its complex coordinate is the one the next sections read. The temporal dimension, in this framework, is not one of four peers; it is the direction along which the element is a **scalar**, the direction the rotations carry without turning.
+which *Conventions in the Biquaternion Universe* calls the complex time sector and *Other Remarkable Subspaces* lists among the remarkable subspaces. The centre is the set of elements that commute with the whole algebra, its real direction is $e_t$, and its complex coordinate is the one the next sections read. The temporal dimension, in this framework, is not one of four peers; it is the direction along which the element is a **scalar**, the direction every rotation fixes.
 
 ## What $e_t = 1$ Says About Time
 
 Four consequences follow from the identification, and they are the article's algebraic content.
 
-**1. The scalar part of an element is its temporal coefficient.** For a general element $\tilde Q = Q_t e_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$, the scalar part is $\mathrm{Sc}(\tilde Q) = Q_t$. Asking for the time coordinate of a biquaternion is asking for its scalar part; the two are the same question. The three vector directions are the non-scalar part, and it is exactly the part the vector units generate.
+**1. The scalar part of an element is its temporal coefficient.** For a general element $\tilde Q = Q_t e_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$, the scalar part is $\mathrm{Sc}(\tilde Q) = Q_t$. Asking for the time coordinate of a biquaternion is asking for its scalar part; the two questions are the same. The three vector directions are the non-scalar part, and it is exactly the part the vector units generate.
 
-**2. The temporal unit is the axis the rotations share and the direction the boosts mix.** The rotation part of the Lorentz group fixes $e_t$ and acts on the three vector units; the boost part moves $e_t$ into the informational sector, through the imaginary structure of the temporal coefficient. The temporal direction is therefore not one the symmetry group leaves alone: it is the direction a boost mixes with a chosen spatial one, and it is the only direction the rotations do not touch. Both facts are read off the same element $e_t = 1$: it is central, so a rotation cannot move it, and its complex coefficient is what a boost mixes.
+**2. The temporal unit is the axis the rotations share and the direction the boosts mix.** The rotation part of the Lorentz group fixes $e_t$ and acts on the three vector units; the boost part moves $e_t$ into the informational sector, through the imaginary structure of the temporal coefficient. The Lorentz group therefore does not leave the temporal direction alone: the rotations fix it, and the boosts mix it with a chosen spatial one. No other unit of the basis is fixed by the rotations. Both facts are read off the same element $e_t = 1$: it is central, so a rotation cannot move it, and its complex coefficient is what a boost mixes.
 
 **3. The temporal coefficient is not itself invariant; the norm is.** The Lorentz action preserves the biquaternion norm,
 
@@ -74,7 +74,7 @@ $$
 \bigl\langle \tilde U\tilde Q_3\tilde U^{*} \bigr\rangle_{\natural} = \langle \tilde Q_3\rangle_{\natural} ,
 $$
 
-so the invariant the action carries is the norm $\sum_\mu Q_\mu^2$ and not the temporal coefficient. A boost changes the temporal coefficient $Q_t$ of an element exactly as it changes the spatial ones, mixing the two, which is what a Lorentz transformation of a four-vector does. The temporal coordinate is a coordinate, and it transforms; the interval built from the four coefficients is what stays.
+so the invariant the action carries is the norm $\sum_\mu Q_\mu^2$ and not the temporal coefficient. A boost changes the temporal coefficient $Q_t$ by mixing it with the spatial ones, which is what a Lorentz transformation of a four-vector does. The temporal coordinate is a coordinate, and it transforms; the interval built from the four coefficients is what stays.
 
 **4. The signature is carried by the coefficients and not by the units.** The biquaternion norm is
 
@@ -82,7 +82,7 @@ $$
 \langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_k^2$, and the difference between them — the Lorentzian signature — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_k$ contribute $Q_k^2$, and their being the negative of $e_t$ under the product is already spent in the algebra's own multiplication table.
+a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_k^2$, and the difference between them — the Lorentzian signature — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_k$ contribute $Q_k^2$, and the sign $\vec e_k^2 = -e_t$ is already in the algebra's multiplication table.
 
 The four statements are one statement: **time is the scalar dimension.** It is the direction of the identity, the direction whose coefficient is the scalar part of the element, the direction the rotations fix and the boosts mix with space; and what the action carries is the norm of the four coefficients, while what carries the signature is the value placed on the temporal coefficient.
 
@@ -108,13 +108,13 @@ the Minkowski interval. The minus sign is not inserted into a metric: it is $i^2
 
 **The real part of the element is the spatial part.** The material element is imaginary in its scalar coefficient and real in its three vector coefficients. The real coordinates are the three spatial ones; the one imaginary coordinate is time.
 
-This is the mirror, in the material sector, of the statement that time is the scalar dimension. The material element is anti-Hermitian, and the conjugation forces its scalar coefficient to be imaginary and its three vector coefficients real; the imaginary coefficient of the temporal direction is therefore the definition of the sector read on the temporal coordinate, and the minus sign of the interval is its square.
+This is the mirror, in the material sector, of the statement that time is the scalar dimension. The material element is anti-Hermitian, so the conjugation forces its scalar coefficient to be imaginary and its three vector coefficients to be real. Read on the temporal coordinate, the sector condition requires that coefficient to be imaginary; the minus sign of the interval is its square.
 
 ## Why Time Is Not Touched
 
 The material interpretation of the imaginary coefficient is already recorded in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, and this article states it in the terms that the rest of the article needs.
 
-The three real coefficients $x, y, z$ are the directions in which a material object **extends**. An extended object has a size in each of them; it can be displaced along any of them; it can be held and it can be moved through. The three vector directions are, for that reason, the directions a material body occupies. They are the part of the coordinate that a body fills.
+The three real coefficients $x, y, z$ are the directions in which a material object **extends**. An extended object has a size in each of them; it can be displaced along any of them; it can be held, and one can move through it. The three vector directions are, for that reason, the directions a material body occupies. They are the part of the coordinate that a body fills.
 
 The one imaginary coefficient $ict$ is the direction the object does not extend along. A material body has a position in time but no size in it; it is *at* a time, not *in* time the way it is in space. The imaginary character of the coefficient is the algebraic mark of that difference: the coordinate exists, it is written in the same element and it enters the same norm, but it is not a coordinate a body occupies. Time is measured — by the change of the other coordinates, by the rate at which things happen — but it is measured and not touched. It cannot be held, it cannot be displaced along, and it cannot be revisited. **Measured but not touched** is the material reading of the $i$ on $ct$.
 
@@ -160,7 +160,7 @@ which is positive definite, with every direction counting with a plus and the te
 
 This section is an interpretation, and it is the reason the article was written. It is stated as a reading and its boundaries are given in the section that follows.
 
-The informational sector is the state space of the framework. Its Hermitian elements are the observables, its positive elements of trace one are the states, the idempotents are the pure states, the positive cone and the Bloch ball organise the mixtures, and the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde Q) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde Q)$ is the Born rule (*The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *POVMs and the Positive Cone in Biquaternionic Form*, *Square Roots of One and the Idempotents: the Hermitian Observables and the States*). A state is what an apparatus prepares and what a measurement reads; it is, in the plain sense, a **record**.
+The informational sector is the state space of the framework. Its Hermitian elements are the observables, its positive elements of trace one are the states, the idempotents are the pure states, the positive cone and the Bloch ball organise the mixtures, and the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ is the Born rule (*The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *POVMs and the Positive Cone in Biquaternionic Form*, *Square Roots of One and the Idempotents: the Hermitian Observables and the States*). A state is what an apparatus prepares and what a measurement reads; it is, in the plain sense, a **record**.
 
 The reading this article adds concerns the temporal coordinate of that record. The four coordinates of the informational element are $(ct', x', y', z')$ — one temporal and real, three spatial and imaginary — and the vector directions $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ are the ones the biquaternion norm reads *negatively*. The temporal direction $ct'$ is the one both forms of the sector weigh with a plus: it is the single positive direction of the natural norm and a positive direction of the Hermitian form.
 
@@ -219,7 +219,7 @@ All of the mathematics the article uses is verified: $e_t$ is the identity and c
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian (probability) form; positive definite, $\sum_\mu\lvert Q_\mu\rvert^2$ |
 | $\mathrm{Sc}(\tilde Q) = Q_t$ | Scalar part, the temporal coefficient of the element |
 | $\tilde U \in \mathbb{B}^\times_1$, $\langle\tilde U\rangle_{\natural} = e_t$ | Rotor of the Lorentz action $\tilde Q \mapsto \tilde U\tilde Q\tilde U^{*}$, which preserves $\langle\tilde Q\rangle_{\natural}$ |
-| $B(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u$ | Boost rotor of rapidity $\psi$ along the unit real vector $\vec u$; a rotation, the other kind, fixes $e_t$ and a boost carries it into $\mathbb{M}_+$ |
+| $B(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u$ | Boost rotor of rapidity $\psi$ along the unit real vector $\vec u$; the rotation fixes $e_t$ and the boost carries it into $\mathbb{M}_+$ |
 | $\partial/\partial Q_t$ | The temporal derivative in the biquaternionic gradient |
 
 ## Further Reading
