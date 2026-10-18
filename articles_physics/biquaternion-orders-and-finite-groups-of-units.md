@@ -139,7 +139,7 @@ $$
 $$
 so the unit group contains an infinite cyclic subgroup generated along a nilpotent direction. Such a direction exists integrally, for instance $P=\vec e_x+i\vec e_y$, which is null and has Gaussian-integer coefficients.
 
-**Physical interpretation. The real orders have finite unit groups; the complex order does not. The difference is the light cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. On the material sector, where the four-position is $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the null condition is the light cone $c^2t^2=x^2+y^2+z^2$: the integral null element $P=\vec e_x+i\vec e_y$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. In physics terms the infinite unit group is the algebraic statement that the light cone is present, and the finite unit groups are the groups of the massive, non-null sector.
+**Physical interpretation. The real orders have finite unit groups; the complex order does not. The difference is the light cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. On the material sector, where the four-position is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the null condition is the light cone $c^2t^2=x^2+y^2+z^2$: the integral null element $P=\vec e_x+i\vec e_y$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. In physics terms the infinite unit group is the algebraic statement that the light cone is present, and the finite unit groups are the groups of the massive, non-null sector.
 
 ## Physical Readings
 
@@ -181,7 +181,7 @@ The integral biquaternions over the Gaussian integers have an infinite group of 
 | $n=\vec e_x+i\vec e_y$, $n^2=0$ | Nilpotent generator of the unipotent family |
 | $e_t+kn$, $N=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real sector, the slice $ict=0$; home of the orders and their finite unit groups |
-| $c^2t^2=x^2+y^2+z^2$ | Light cone of the material sector; the null condition $\langle\tilde{Q}\rangle_{\natural}=0$ there |
+| $c^2t^2=x^2+y^2+z^2$ | Light cone of the material sector; the null condition $\langle\tilde{R}\rangle_{\natural}=0$ there |
 
 ## Further Reading
 

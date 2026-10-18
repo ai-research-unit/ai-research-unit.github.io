@@ -186,7 +186,7 @@ $$
 where the sum runs over the components that acquire vacuum expectation values, with isospin $T_i$ and third component $T_{3i}$. The electroweak $\mathrm{U}(1)_Y$ breaks custodial symmetry explicitly, so the formula is exact only at tree level in the limit $g'\to0$; the hypercharge and the multiplet splittings generate corrections at higher order.
 
 
-**The relation to the pion's isospin.** The same $SU(2)$ that appears here is the framework's compact group, and the triplet $\tilde\pi$ of the companion pion article transforms in its adjoint. The custodial triplet of would-be Goldstone modes and the pion triplet are both adjoints of the framework's $SU(2)$; the difference is that the custodial triplet is eaten by the gauge bosons while the pion triplet is physical, which is a statement about the gauging and the explicit breaking and not about the algebra. The framework's algebra carries both triplets; it does not by itself decide which is which.
+**The relation to the pion's isospin.** The same $SU(2)$ that appears here is the framework's compact group, and the triplet $\vec\pi$ of the companion pion article transforms in its adjoint. The custodial triplet of would-be Goldstone modes and the pion triplet are both adjoints of the framework's $SU(2)$; the difference is that the custodial triplet is eaten by the gauge bosons while the pion triplet is physical, which is a statement about the gauging and the explicit breaking and not about the algebra. The framework's algebra carries both triplets; it does not by itself decide which is which.
 
 ## Custodial Symmetry and the Chiral Lagrangian
 
@@ -271,9 +271,9 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $T, T_3, Y$ | Isospin, third component, hypercharge (standard; not framework objects) |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric for index contractions |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

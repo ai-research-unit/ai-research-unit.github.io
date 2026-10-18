@@ -50,7 +50,7 @@ Under this framework, the **vector part** is the part carried by the three vecto
 
 **The two part columns.** The fourth column gives the scalar part — the $\mathbb{C}$ scalar part in $\mathbb{B}$ and $\mathbb{B}_{\mathrm{r}}$, the split scalar part in $\mathbb{H}_{\mathbb{D}}$ — and the fifth the vector part, each coefficient with its nature. In $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{B}_{\mathrm{r}}$ there is no vector direction, so both coefficients are scalars of the coefficient field and the vector column is empty.
 
-**Several elements of one kind take subscripts.** Where a statement needs more than one element of the same kind, each occurrence takes a number: three generic biquaternions are $\tilde Q_1, \tilde Q_2, \tilde Q_3$, two quaternions are $\tilde q_1, \tilde q_2$, and two complex numbers are $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$. The number counts the element and never names a direction; a letter names the direction.
+**Several elements of one kind take subscripts.** Where a statement needs more than one element of the same kind, each occurrence takes a number: three generic biquaternions are $\tilde Q_1, \tilde Q_2, \tilde Q_3$, two quaternions are $\tilde q_1, \tilde q_2$, and two complex numbers are $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$. The number counts the element and never names a direction; a letter names the direction. **The unnumbered glyph is the single generic element**: a bare $\tilde Q$ stands alone, or leads the pair $\tilde Q, \tilde Q_2$; two numbered elements are $\tilde Q_1, \tilde Q_2$, and a third takes the next number. The numbers count the elements in the order the statement introduces them, $\tilde Q_1, \tilde Q_2, \tilde Q_3$, and the coefficients follow their element, $Q_{1t}, \vec Q_1$ for $\tilde Q_1$.
 
 **The four coordinates are labelled $t, x, y, z$.** So that a sum over the coordinates of a quaternion, a split-quaternion, a biquaternion or a split-biquaternion shows at once which unit each term carries, the coefficients take the labels of the physical directions in place of the numbers: $Q_t$ with $e_t$, and $Q_x, Q_y, Q_z$ with $\vec e_x, \vec e_y, \vec e_z$. A sum over the four therefore runs over those labels,
 
@@ -72,9 +72,9 @@ where the four coefficients $Q_\mu$ are complex, and each of them splits into a 
 
 The case and the tilde are read independently, and the glyph of a generic element is the two together: $q$ is real, $Q$ complex, split-complex or dual, $Q_\pm$ reduced biquaternion — upper case, no tilde, and two complex coordinates — $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion.
 
-**A matrix carries no tilde, and neither does an array of elements.** The tilde marks the element, never the array that holds it: $\mathsf{M}_2(\tilde Q)$ keeps the tilde inside the argument, $I_n$ and $\mathsf{M}_4$ carry none, and an array of biquaternions, $\mathsf{Q}=(\tilde Q_{\lambda\rho})\in\mathbb{B}^{n\times m}$, carries none either, its entries carrying theirs. A tilde on a matrix or on an array is forbidden: it is a defect, not a variant.
+**A matrix carries no tilde, and neither does an array of elements.** The tilde marks the element, never the array that holds it: $\mathsf{M}_2(\tilde Q)$ keeps the tilde inside the argument, $I_n$ and $\mathsf{M}_4$ carry none, and an array of biquaternions, $\mathsf{Q}=(\tilde Q_{\lambda\rho})\in\mathbb{B}^{n\times m}$, carries none either, its entries carrying theirs. A tilde on a matrix or on an array is forbidden: it is a defect, not a variant. A matrix of a model takes a letter of its own and never a glyph of the Q family: the matrix of an element is written $\mathsf{M}_2(\tilde Q)$, and a matrix parameter is written $A$, $B$ or $M$, the letter $Q$ staying with the element.
 
-**The generic element is written $\tilde{Q}$, and only the Q family is generic.** A statement that holds for every element is written with $\tilde Q$; a statement that needs two writes them $\tilde Q_1$ and $\tilde Q_2$, and a third takes the next number. The trace pairing is $\operatorname{Tr}(\tilde Q_1\tilde Q_2) = 2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$, the commutator bracket $[\tilde Q_1, \tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$, the general plain bilinear form $\langle\tilde Q_1, \tilde Q_2\rangle$ and the multiplicativity $\langle\tilde Q_1\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, inherited from *Idempotents of the General Plain Algebra* and its companions, which write the generic element $\tilde Q$ beside the idempotent $\tilde\Pi$. The argument of an operator, the dummy of an annihilator, the second entry of a bracket and the element a map is applied to carry the same glyph: $L_{\tilde Q}(\tilde Q_1) = \tilde Q \bullet \tilde Q_1$, $\{\tilde Q_1 : \tilde Q \star \tilde Q_1 = 0\}$, $[\tilde Q, \tilde Q_1]$. The letters $X$, $Y$, $Z$ and $W$ name no element of the algebra: $X$ is kept for the universal cover $X^{\mathrm{cov}}$ and the left-invariant field, and $Y$, $Z$, $W$ are free of any element role.
+**The generic element is written $\tilde{Q}$, and only the Q family is generic.** A statement that holds for every element is written with $\tilde Q$; a statement that needs two writes them $\tilde Q_1$ and $\tilde Q_2$, and a third takes the next number. The trace pairing is $\operatorname{Tr}(\tilde Q_1\tilde Q_2) = 2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$, the commutator bracket $[\tilde Q_1, \tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$, the general plain bilinear form $\langle\tilde Q_1, \tilde Q_2\rangle$ and the multiplicativity $\langle\tilde Q_1\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, inherited from *Idempotents of the General Plain Algebra* and its companions, which write the generic element $\tilde Q$ beside the idempotent $\tilde\Pi$. The argument of an operator, the dummy of an annihilator, the second entry of a bracket and the element a map is applied to carry the same glyph: $L_{\tilde Q_1}(\tilde Q_2) = \tilde Q_1 \bullet \tilde Q_2$, $\{\tilde Q_2 : \tilde Q_1 \star \tilde Q_2 = 0\}$, $[\tilde Q_1, \tilde Q_2]$. The letters $X$, $Y$, $Z$ and $W$ name no element of the algebra: $X$ is kept for the universal cover $X^{\mathrm{cov}}$ and the left-invariant field, and $Y$, $Z$, $W$ are free of any element role. **In the layers of the biquaternion family the glyph $Q$ belongs to the element and never to an operator.** An operator generated by an element carries the structural capital and the element's own glyph in the subscript, $L_{\tilde Q}$, $R_{\tilde Q}$, $\Theta_{\tilde Q}$; an operator that is not the multiplication by an element takes the matrix letter $A$, with $T$ for its argument, so that a sandwich reads $H_A(T)=ATA^{\dagger}$. A bare $Q$ is never written for such an operator.
 
 Where the constructions that share a glyph must be told apart — the complex from the split-complex and the dual, the quaternion from the split-quaternion, the biquaternion from the split-biquaternion — the glyph is qualified by a subscript, as in $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{H}_{\mathbb{D}}$.
 
@@ -249,99 +249,99 @@ The algebra carries **four general products** — one to each of the four choice
 
 **The same code on the reduced biquaternion space.** The construction is not special to $\mathbb{B}$. On the commutative algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions, equivalently the tessarines or the double-complex numbers — the same four general products exist, $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$, and each splits into a symmetric and an antisymmetric part by the two exchanges. Because the algebra is **commutative**, four of the twelve codes name no new operation there: $\mathrm{SPA} = \mathrm{GPA}$ and $\mathrm{SQS} = \mathrm{GQS}$, while $\mathrm{APA} = 0$ and $\mathrm{AQS} = 0$. The space therefore carries **eight distinct algebraic structures** — $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and the four live halves $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$ — and the twelve slots, the four that collapse and the eight that remain are *The Four Products, Their Forms and Their Algebraic Norms* and *The Specificities of the Algebra of the Reduced Biquaternions*. The letter $\mathrm Q$ keeps its sense there — the first slot read through ${}^{\natural}$, the tessarine conjugation $e\mapsto-e$ — as in the band above.
 
-**The definitions.** Write the two elements $\tilde P=P_te_t+\vec P$ and $\tilde Q=Q_te_t+\vec Q$, with $\vec P=(P_x,P_y,P_z)$ and $\vec Q=(Q_x,Q_y,Q_z)$; $(\vec P,\vec Q)$ is the Euclidean inner product, $\vec P\times\vec Q$ the cross product in the units $\vec e_x,\vec e_y,\vec e_z$, and $\overline{\vec Q}$ the coefficientwise conjugation. Every product is the sum of a scalar part, a multiple of $e_t$, and a vector part.
+**The definitions.** Write the two elements $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $\vec Q_1=(Q_{1x},Q_{1y},Q_{1z})$ and $\vec Q_2=(Q_{2x},Q_{2y},Q_{2z})$; $(\vec Q_1,\vec Q_2)$ is the Euclidean inner product, $\vec Q_1\times\vec Q_2$ the cross product in the units $\vec e_x,\vec e_y,\vec e_z$, and $\overline{\vec Q_2}$ the coefficientwise conjugation. Every product is the sum of a scalar part, a multiple of $e_t$, and a vector part.
 
 **The four general products**, one to each choice of the two slots.
 
 **The general plain bilinear product**, the multiplication of the algebra, associative, with $e_t$ a unit on both sides:
 
 $$
-\tilde P\tilde Q=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P+\vec P\times\vec Q .
+\tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2 .
 $$
 
 **The general plain sesquilinear product**, the second factor read through ${}^{*}$, not associative, with $e_t$ a unit on the right only:
 
 $$
-\tilde P\tilde Q^{*}=\bigl[P_t\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q} .
+\tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **The general quaternionic bilinear product**, the first factor read through ${}^{\natural}$, not associative, with $e_t$ a unit on the left only:
 
 $$
-\tilde P^{\natural}\tilde Q=\bigl[P_tQ_t+(\vec P,\vec Q)\bigr]+P_t\vec Q-Q_t\vec P-\vec P\times\vec Q .
+\tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
 $$
 
 **The general quaternionic sesquilinear product**, both slots read through a conjugation, not associative, with a unit on neither side:
 
 $$
-\tilde P^{\natural}\tilde Q^{*}=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q} .
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **The four symmetric parts**, written with the **full dot** $\bullet$, the four half-sums under the exchange that keeps the class of the product — the interchange for the two bilinear products, the conjugate transpose for the two sesquilinear ones. The subscript names the slots as it does for the forms: none for the plain bilinear product, ${}_{\natural}$ for the quaternionic bilinear, ${}_{*}$ for the plain sesquilinear and ${}_{\natural*}$ for the quaternionic sesquilinear.
 
-**The symmetric plain bilinear product**, the half-sum of the two orders, the **Jordan product** $\tilde P\bullet\tilde Q$, written $\star$ in the symmetric-plain band of the physics corpus:
+**The symmetric plain bilinear product**, the half-sum of the two orders, the **Jordan product** $\tilde Q_1\bullet\tilde Q_2$, written $\star$ in the symmetric-plain band of the physics corpus:
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P .
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1 .
 $$
 
-**The symmetric plain sesquilinear product**, the half-sum under the conjugate transpose, the **Hermitian form** $\langle\tilde P,\tilde Q\rangle_{*}$, central-valued:
+**The symmetric plain sesquilinear product**, the half-sum under the conjugate transpose, the **Hermitian form** $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, central-valued:
 
 $$
-\tilde P\bullet_{*}\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}+(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\bigl[P_t\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr] .
+\tilde Q_1\bullet_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr] .
 $$
 
-**The symmetric quaternionic bilinear product**, the half-sum of the two orders, the **quaternion form** $\langle\tilde P,\tilde Q\rangle_{\natural}$, central-valued:
+**The symmetric quaternionic bilinear product**, the half-sum of the two orders, the **quaternion form** $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, central-valued:
 
 $$
-\tilde P\bullet_{\natural}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)=\bigl[P_tQ_t+(\vec P,\vec Q)\bigr] .
+\tilde Q_1\bullet_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr] .
 $$
 
 **The symmetric quaternionic sesquilinear product**, the half-sum under the conjugate transpose:
 
 $$
-\tilde P\bullet_{\natural*}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P .
+\tilde Q_1\bullet_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 .
 $$
 
 **The four antisymmetric parts**, written with the **wedge** $\wedge$, the four half-differences under the same exchange; all four have zero scalar part and lie in the vector subspace.
 
-**The antisymmetric plain bilinear product**, the half-difference of the two orders, the **outer product** $\tilde P\wedge\tilde Q$:
+**The antisymmetric plain bilinear product**, the half-difference of the two orders, the **outer product** $\tilde Q_1\wedge\tilde Q_2$:
 
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q .
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2 .
 $$
 
-**The antisymmetric plain sesquilinear product**, the half-difference under the conjugate transpose, the vector part $\mathrm{Vect}(\tilde P\tilde Q^{*})$:
+**The antisymmetric plain sesquilinear product**, the half-difference under the conjugate transpose, the vector part $\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$:
 
 $$
-\tilde P\wedge_{*}\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}-(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde P\tilde Q^{*})=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q} .
+\tilde Q_1\wedge_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **The antisymmetric quaternionic bilinear product**, the half-difference of the two orders:
 
 $$
-\tilde P\wedge_{\natural}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q .
+\tilde Q_1\wedge_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
 $$
 
-**The antisymmetric quaternionic sesquilinear product**, the half-difference under the conjugate transpose, the cross product $\vec P\times\overline{\vec Q}$:
+**The antisymmetric quaternionic sesquilinear product**, the half-difference under the conjugate transpose, the cross product $\vec Q_1\times\overline{\vec Q_2}$:
 
 $$
-\tilde P\wedge_{\natural*}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\vec P\times\overline{\vec Q} .
+\tilde Q_1\wedge_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2} .
 $$
 
 **The reconstruction.** The dot and the wedge rebuild the four general products, so the eight parts carry the whole content of the twelve, one identity to a slot:
 
 $$
-\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q,\qquad
-\tilde P\tilde Q^{*}=\tilde P\bullet_{*}\tilde Q+\tilde P\wedge_{*}\tilde Q,\qquad
-\tilde P^{\natural}\tilde Q=\tilde P\bullet_{\natural}\tilde Q+\tilde P\wedge_{\natural}\tilde Q,\qquad
-\tilde P^{\natural}\tilde Q^{*}=\tilde P\bullet_{\natural*}\tilde Q+\tilde P\wedge_{\natural*}\tilde Q .
+\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2,\qquad
+\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\bullet_{*}\tilde Q_2+\tilde Q_1\wedge_{*}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2+\tilde Q_1\wedge_{\natural}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2 .
 $$
 
 **The two antisymmetrisations are not one.** The eight parts above come from the exchange that keeps the class of the product; the **bare interchange** of the two arguments gives a second antisymmetrisation and different objects — the symmetrised sesquilinear product and the **sesquilinear commutator**,
 
 $$
-[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q^{*}-\tilde Q\tilde P^{*},
+[\tilde Q_1,\tilde Q_2]_\varsigma=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
 whose values lie in the skew-Hermitian part. **The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.** The two are not the same operation (*The 12 Products of the Biquaternioid $\mathbb{C}$ Space*; *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternioid*), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.
@@ -430,9 +430,9 @@ Outside them the letter keeps a single shape for a single meaning, and the font 
 
 | Operator | Glyph |
 |---|---|
-| left multiplication | $L_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1$ |
-| right multiplication | $R_{\tilde Q}(\tilde Q_1)=\tilde Q_1\tilde Q$ |
-| two-sided | $L_{\tilde A}R_{\tilde Q_2}(\tilde Q_1)=\tilde A\tilde Q_1\tilde Q_2$ |
+| left multiplication | $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2$ |
+| right multiplication | $R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |
+| two-sided | $L_{\tilde A}R_{\tilde Q_1}(\tilde Q_2)=\tilde A\tilde Q_2\tilde Q_1$ |
 | sandwich | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\operatorname{H}_{\tilde Q}$ |
 | inner derivation | $\operatorname{ad}_{\tilde A}(\tilde Q_1)=[\tilde A,\tilde Q_1]$ |
 | automorphism | $\operatorname{Ad}_{\tilde A}$ |
@@ -795,10 +795,10 @@ The conventions below are those used throughout the corpus.
 | $\alpha, \beta$; $q, q_1, q_2$ | The generic elements of the Booleans, and of the rationals and the reals |
 | $r/s$ | A rational written as a fraction, with numerator $r \in \mathbb{Z}$ and denominator $s \in \mathbb{N}_{\geq 1}$; in lowest terms $\gcd(r,s) = 1$; the letter $q$ is never a numerator or a denominator |
 | $n$, $m$ | The generic elements of the naturals and the integers, and the signature indices, the counts of positive and negative directions of a real form, as in $\mathrm{Cl}_{n,m}$ and $O(n,m)$; the $q$ of a signature $\mathrm{Cl}_{p,q}$ is an index too, not the element $q$ |
-| $Q = q + iq'$ | The generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime; a second and a third are $Q_1$ and $Q_2$ |
+| $Q = q + iq'$ | The generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime; where several occur they are numbered $Q_1, Q_2, \dots$ |
 | $Q_\pm = Q_+ + jQ_-$ | The generic element of the reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}}$, upper case with no tilde, its two coordinates $Q_+ = q_+ + iq'_+$ and $Q_- = q_- + iq'_-$ complex and its second unit the hyperbolic $j$, $j^{2} = +1$ and $ji = ij$, on the basis $1, i, j, ij$; its idempotent coordinates are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, with $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ |
 | $\tilde q$ | The generic element of the quaternion or split-quaternion layer |
-| $\tilde Q$ | The generic element of the biquaternion or split-biquaternion layer, and the generic element of a statement that holds for every element; a second and a third are $\tilde Q_1$ and $\tilde Q_2$ |
+| $\tilde Q$ | The generic element of the biquaternion or split-biquaternion layer, and the generic element of a statement that holds for every element; in a statement with several they are numbered $\tilde Q_1, \tilde Q_2, \dots$ |
 | $\vec q$ | A pure element of the quaternion or split-quaternion layer, an element with no scalar part |
 | $\vec Q$ | A pure element of the biquaternion or split-biquaternion layer |
 | $G$; $R$; $k$, $F$; $V$; $M$; $A$ | A group; a ring; a field; a vector space; a module; an algebra |

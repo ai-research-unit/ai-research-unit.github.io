@@ -6,7 +6,7 @@ For a bilinear antisymmetrisation the structural theory is short: the diagonal v
 
 Three comparisons organise the article. The block is the **other** antisymmetrisation of the same product, the one that keeps the class, and its relation to the bare sesquilinear commutator of *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternioid* is an identity on the real part, where the bracket is twice the block, and a defect off it; the identity and the defect are computed in §*The Identity with the Sesquilinear Bracket and its Defect*. The block has two siblings among the failing brackets of the row table, $\mathrm{AQA}$ and $\mathrm{AQS}$, and the three failures are of two kinds, the block carrying one from each sibling; the comparison is in §*The Comparison with the Two Siblings*. And on the real part of the space the block collapses to a cross product, which is developed in §*The Interpretation on the Real Part*.
 
-The setting, the notation and the definition of the block are those of *Introduction to the Antisymmetric Plain Sesqualgebra*; the product that is split is *Introduction to the General Plain Sesqualgebra*; the general construction of the two parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and its long development is *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*; the row table, the three Jacobi failures and the identity $\overline{\tilde Q\tilde P^{*}}=(\tilde P\tilde Q^{*})^{\natural}$ are *The 12 Products of the Biquaternioid Complex Space*; the form $\langle\cdot,\cdot\rangle_{*}$ and the zero divisors are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the sesquilinear commutator and the plain symmetrisation are *The Sesquilinear Commutator* and *The Sesquilinear Symmetrised Product*; and the remarkable subspaces are *Introduction to the Remarkable Subspaces*. The norm that is used is the algebraic form $\langle\cdot,\cdot\rangle_{*}$ and the multiplicative element $\tilde Q\tilde Q^{*}$.
+The setting, the notation and the definition of the block are those of *Introduction to the Antisymmetric Plain Sesqualgebra*; the product that is split is *Introduction to the General Plain Sesqualgebra*; the general construction of the two parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and its long development is *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*; the row table, the three Jacobi failures and the identity $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$ are *The 12 Products of the Biquaternioid Complex Space*; the form $\langle\cdot,\cdot\rangle_{*}$ and the zero divisors are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the sesquilinear commutator and the plain symmetrisation are *The Sesquilinear Commutator* and *The Sesquilinear Symmetrised Product*; and the remarkable subspaces are *Introduction to the Remarkable Subspaces*. The norm that is used is the algebraic form $\langle\cdot,\cdot\rangle_{*}$ and the multiplicative element $\tilde Q\tilde Q^{*}$.
 
 ## The Diagonal and its Formula
 
@@ -18,7 +18,7 @@ $$
 
 the vector part of the square of the general plain sesquilinear product.
 
-*Proof.* Put $\tilde P=\tilde Q$ in the definition: $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$, and $\overline{\tilde Q\tilde Q^{*}}=\tilde Q\tilde Q^{*}$ because $\tilde Q\tilde Q^{*}$ is Hermitian. So the two terms of the half-difference are equal and the half-difference is the value itself.
+*Proof.* Put $\tilde Q_1=\tilde Q_2$ in the definition: $\tilde Q_2\diamond\tilde Q_2=\mathrm{Vect}(\tilde Q_2\tilde Q_2^{*})$, and $\overline{\tilde Q_2\tilde Q_2^{*}}=\tilde Q_2\tilde Q_2^{*}$ because $\tilde Q_2\tilde Q_2^{*}$ is Hermitian. So the two terms of the half-difference are equal and the half-difference is the value itself.
 
 **Corollary (the real form).** Write the element in real coordinates, $Q_t=a+ib$ and $\vec Q=\vec q+i\vec v$, with $a,b\in\mathbb{R}$ and $\vec q,\vec v$ real vectors. Then
 
@@ -65,22 +65,22 @@ if and only if $\tilde Q=0$ or $\tilde Q\tilde Q^{*}$ is a scalar, $\tilde Q\til
 The corpus carries a second antisymmetrisation of the same product, the **sesquilinear commutator** of *The Sesquilinear Commutator*,
 
 $$
-[\tilde P,\tilde Q]_{\varsigma}=\tilde P\tilde Q^{*}-\tilde Q\tilde P^{*},
+[\tilde Q_1,\tilde Q_2]_{\varsigma}=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*},
 $$
 
-which is the difference of the two orders of the bare interchange. It is $R^{\varsigma}$-bilinear and antisymmetric in the bilinear sense, it is **not** a product of the class, and it is not the block either: the block is the half-difference of the product and its **conjugate**, $2\,\tilde P\diamond\tilde Q=\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}$, while the commutator is the difference of the product and its **swap**. The two agree exactly when the swapped value is its own conjugate.
+which is the difference of the two orders of the bare interchange. It is $R^{\varsigma}$-bilinear and antisymmetric in the bilinear sense, it is **not** a product of the class, and it is not the block either: the block is the half-difference of the product and its **conjugate**, $2\,\tilde Q_1\diamond\tilde Q_2=\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}$, while the commutator is the difference of the product and its **swap**. The two agree exactly when the swapped value is its own conjugate.
 
 **Theorem (the exact relation).** For all biquaternions,
 
 $$
-[\tilde P,\tilde Q]_{\varsigma}=2\,\tilde P\diamond\tilde Q+\bigl(\overline{\tilde Q\tilde P^{*}}-\tilde Q\tilde P^{*}\bigr).
+[\tilde Q_1,\tilde Q_2]_{\varsigma}=2\,\tilde Q_1\diamond\tilde Q_2+\bigl(\overline{\tilde Q_2\tilde Q_1^{*}}-\tilde Q_2\tilde Q_1^{*}\bigr).
 $$
 
 The bracket, the block and the defect are all additive and $\mathbb{R}$-bilinear, and the defect is the **imaginary part** of the swapped value with respect to the coefficientwise conjugation.
 
-*Proof.* Subtract $2\,\tilde P\diamond\tilde Q=\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}$ from the definition of the commutator: $[\tilde P,\tilde Q]_{\varsigma}-2\,\tilde P\diamond\tilde Q=\overline{\tilde Q\tilde P^{*}}-\tilde Q\tilde P^{*}$, which is the defect.
+*Proof.* Subtract $2\,\tilde Q_1\diamond\tilde Q_2=\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}$ from the definition of the commutator: $[\tilde Q_1,\tilde Q_2]_{\varsigma}-2\,\tilde Q_1\diamond\tilde Q_2=\overline{\tilde Q_2\tilde Q_1^{*}}-\tilde Q_2\tilde Q_1^{*}$, which is the defect.
 
-**Corollary (the agreement on the real part, and the failure off it).** On the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$ the coefficientwise conjugation acts trivially, the defect vanishes, and the sesquilinear bracket is **twice** the block, $[\tilde P,\tilde Q]_{\varsigma}=2\,\tilde P\diamond\tilde Q$; off the real part the identity fails. The witness is the pair $(ie_t,\vec e_x)$: the bracket is
+**Corollary (the agreement on the real part, and the failure off it).** On the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$ the coefficientwise conjugation acts trivially, the defect vanishes, and the sesquilinear bracket is **twice** the block, $[\tilde Q_1,\tilde Q_2]_{\varsigma}=2\,\tilde Q_1\diamond\tilde Q_2$; off the real part the identity fails. The witness is the pair $(ie_t,\vec e_x)$: the bracket is
 
 $$
 [ie_t,\vec e_x]_{\varsigma}=ie_t(-\vec e_x)-\vec e_x(-ie_t)=-i\vec e_x+i\vec e_x=0,
@@ -116,7 +116,7 @@ $$
 
 **Remark (the tabulated value).** The value $\vec e_z$ at $(e_t,\vec e_x,\vec e_y)$ is the one recorded for $\mathrm{APS}$ in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Twelve Structures, One by One*, and it is reproduced here by the cyclic sum as that article declares it: the factor $\tfrac12$ is in the operation, so the bracket of the table is the operation itself and not twice it. The second witness is the one recorded for $\mathrm{AQS}$ in the same table, and the two share it; §*The Comparison with the Two Siblings* draws the consequence.
 
-**Remark (the failure is not only an associator).** The two displays show that the cyclic sum is a quadratic function of the elements that does not vanish; the failure at the conjugated witness is therefore not the associator defect of a bilinear product, of the kind that $\mathrm{AQA}$ exhibits at the real triple, but the obstruction carried by the conjugations of the operation. The plain sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ is genuinely **sesquilinear**, its two slots have opposite parity, and its antisymmetrisation is $R^{\varsigma}$-bilinear only, as *The Sesquilinear Product*, §*The Transposed Product*, records; the next section states which obstruction that is.
+**Remark (the failure is not only an associator).** The two displays show that the cyclic sum is a quadratic function of the elements that does not vanish; the failure at the conjugated witness is therefore not the associator defect of a bilinear product, of the kind that $\mathrm{AQA}$ exhibits at the real triple, but the obstruction carried by the conjugations of the operation. The plain sesquilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ is genuinely **sesquilinear**, its two slots have opposite parity, and its antisymmetrisation is $R^{\varsigma}$-bilinear only, as *The Sesquilinear Product*, §*The Transposed Product*, records; the next section states which obstruction that is.
 
 ## The Obstruction of Lie Algebras of Sesqualgebras
 
@@ -126,7 +126,7 @@ $$
 
 **Corollary (the reason for the block).** The block is the antisymmetric part of the plain sesquilinear product, so its failure at the conjugated witness is the failure of the proposition, and the obstruction is the one of *Lie Algebras of Sesqualgebras*. At that witness it is not the associator defect of $\mathrm{AQA}$, which lives in the bilinear row and comes from the non-associativity of the quaternionic product, and it is not a defect of a ternary product; the real triple is the other face of the failure and is read with $\mathrm{AQA}$ in §*The Comparison with the Two Siblings*. The reason the block fails is that a genuine sesqualgebra over $(\mathbb{C},\bar{\cdot})$ carries two slots of opposite parity, and no $R^{\varsigma}$-bilinear bracket that is built out of the product alone can satisfy the identity that a bilinear bracket satisfies.
 
-**Remark (which failure is invisible on the real basis).** The failure at the real triple $(e_t,\vec e_x,\vec e_y)$ is visible on the real span already, since the triple and the value $\vec e_z$ are real: there the block is the $\mathrm{AQA}$-like operation $-P_t\vec Q+Q_t\vec P-\vec P\times\vec Q$, and it fails exactly as $\mathrm{AQA}$ does, with the opposite value. The **conjugated** failure is the invisible one: its witness $(\vec e_x,\vec e_x,i\vec e_y)$ needs the non-real coefficient in the second slot, and the real span sees nothing of it. The two failures are of two kinds, and only the first is shared with the bilinear sibling.
+**Remark (which failure is invisible on the real basis).** The failure at the real triple $(e_t,\vec e_x,\vec e_y)$ is visible on the real span already, since the triple and the value $\vec e_z$ are real: there the block is the $\mathrm{AQA}$-like operation $-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$, and it fails exactly as $\mathrm{AQA}$ does, with the opposite value. The **conjugated** failure is the invisible one: its witness $(\vec e_x,\vec e_x,i\vec e_y)$ needs the non-real coefficient in the second slot, and the real span sees nothing of it. The two failures are of two kinds, and only the first is shared with the bilinear sibling.
 
 ## The Comparison with the Two Siblings
 
@@ -141,44 +141,44 @@ $$
 
 with the block in the two rows that concern it: the real witness, where it meets $\mathrm{AQA}$, and the conjugated witness, where it meets $\mathrm{AQS}$. The three failures are of two kinds, and the block carries both: the real triple of $\mathrm{AQA}$, where the two operations differ in the sign of the mixed term, and the conjugated witness of $\mathrm{AQS}$.
 
-**$\mathrm{AQA}$, the associator defect.** The quaternionic antisymmetrisation $\tilde P\diamond_{\mathrm{AQA}}\tilde Q=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q$ is $\mathbb{C}$-bilinear, alternating, and its cyclic sum is the associator defect of the quaternionic product: it fails because the product it antisymmetrises is not associative, and the defect is a ternary object of that product. Its witness is the real triple $(e_t,\vec e_x,\vec e_y)$ with the value $-\vec e_z$.
+**$\mathrm{AQA}$, the associator defect.** The quaternionic antisymmetrisation $\tilde Q_1\diamond_{\mathrm{AQA}}\tilde Q_2=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ is $\mathbb{C}$-bilinear, alternating, and its cyclic sum is the associator defect of the quaternionic product: it fails because the product it antisymmetrises is not associative, and the defect is a ternary object of that product. Its witness is the real triple $(e_t,\vec e_x,\vec e_y)$ with the value $-\vec e_z$.
 
-**$\mathrm{AQS}$, the conjugate-linear slot.** The quaternionic sesquilinear antisymmetrisation $\tilde P\diamond_{\mathrm{AQS}}\tilde Q=\vec P\times\overline{\vec Q}$ is pure vector and conjugate-alternating, and it fails at $(\vec e_x,\vec e_x,i\vec e_y)$ with the value $-2i\vec e_y$. Its failure is the obstruction of the proposition above: the product $\tilde P^{\natural}\tilde Q^{*}$ is genuinely sesquilinear, and the antisymmetrisation of a genuine sesquilinear product is not a Lie bracket.
+**$\mathrm{AQS}$, the conjugate-linear slot.** The quaternionic sesquilinear antisymmetrisation $\tilde Q_1\diamond_{\mathrm{AQS}}\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ is pure vector and conjugate-alternating, and it fails at $(\vec e_x,\vec e_x,i\vec e_y)$ with the value $-2i\vec e_y$. Its failure is the obstruction of the proposition above: the product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ is genuinely sesquilinear, and the antisymmetrisation of a genuine sesquilinear product is not a Lie bracket.
 
-**The block, between the two.** The block is the plain-sesqualgebra sibling: pure vector, conjugate-alternating, with the same conjugated witness as $\mathrm{AQS}$ and with the real triple of $\mathrm{AQA}$, where its cyclic sum is the negative of the one of $\mathrm{AQA}$. On the real basis the two operations share the cross term and differ in the sign of the mixed term, $P_t\vec Q-Q_t\vec P$ against $-P_t\vec Q+Q_t\vec P$, and that sign is the sign of the two cyclic sums; off the real basis the block picks up the conjugation in the second slot and meets $\mathrm{AQS}$ instead. The two identities that relate the four operations of the row are the ones of §*The Exchange Behind the Split* of *The 12 Products of the Biquaternioid Complex Space*.
+**The block, between the two.** The block is the plain-sesqualgebra sibling: pure vector, conjugate-alternating, with the same conjugated witness as $\mathrm{AQS}$ and with the real triple of $\mathrm{AQA}$, where its cyclic sum is the negative of the one of $\mathrm{AQA}$. On the real basis the two operations share the cross term and differ in the sign of the mixed term, $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$ against $-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$, and that sign is the sign of the two cyclic sums; off the real basis the block picks up the conjugation in the second slot and meets $\mathrm{AQS}$ instead. The two identities that relate the four operations of the row are the ones of §*The Exchange Behind the Split* of *The 12 Products of the Biquaternioid Complex Space*.
 
 ## The Interpretation on the Real Part
 
-**Proposition (the block on the real elements).** Let $\tilde P,\tilde Q$ have real coefficients. Then
+**Proposition (the block on the real elements).** Let $\tilde Q_1,\tilde Q_2$ have real coefficients. Then
 
 $$
-\tilde P\diamond\tilde Q=-P_t\vec Q+Q_t\vec P-\vec P\times\vec Q,
+\tilde Q_1\diamond\tilde Q_2=-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2,
 $$
 
-and if in addition both are pure vectors, $\tilde P\diamond\tilde Q=-\vec P\times\vec Q$, the negative of the cross product.
+and if in addition both are pure vectors, $\tilde Q_1\diamond\tilde Q_2=-\vec Q_1\times\vec Q_2$, the negative of the cross product.
 
-*Proof.* At real coefficients the coefficientwise conjugation is the identity on the coefficients, so the coordinate rule becomes the display; at $P_t=Q_t=0$ the first two terms drop and the cross term remains.
+*Proof.* At real coefficients the coefficientwise conjugation is the identity on the coefficients, so the coordinate rule becomes the display; at $Q_{1t}=Q_{2t}=0$ the first two terms drop and the cross term remains.
 
 **Corollary (the diagonal on the real part).** On the real span the diagonal vanishes, $\tilde Q\diamond\tilde Q=0$, as it does for every cross product; on the real vectors alone the block is the cross product up to the sign, and it is alternating there. So the block is alternating on the real span, as a cross product is, but it is a Lie bracket there no more than on the complex space: the real span already fails at $(e_t,\vec e_x,\vec e_y)$, and the complex space adds the conjugated failure, which is the whole content of §*The Failure of the Jacobi Identity*.
 
-**Remark (the ten operations of the real part).** The twelve operations fall to ten on the real span, where $\mathrm{APA}=\mathrm{AQS}$ and $\mathrm{SQA}=\mathrm{SPS}$, by *The 12 Products of the Biquaternioid Complex Space*. The block is not one of the two coincidences: its real reading is $-P_t\vec Q+Q_t\vec P-\vec P\times\vec Q$, which is the real reading of $\mathrm{AQA}$ with the sign of the mixed term reversed, so the block remains distinct there. What it shares with $\mathrm{APA}$ is only the diagonal and the alternation on the real vectors, and what it shares with neither is the sign of the mixed term and the conjugation in the second slot.
+**Remark (the ten operations of the real part).** The twelve operations fall to ten on the real span, where $\mathrm{APA}=\mathrm{AQS}$ and $\mathrm{SQA}=\mathrm{SPS}$, by *The 12 Products of the Biquaternioid Complex Space*. The block is not one of the two coincidences: its real reading is $-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$, which is the real reading of $\mathrm{AQA}$ with the sign of the mixed term reversed, so the block remains distinct there. What it shares with $\mathrm{APA}$ is only the diagonal and the alternation on the real vectors, and what it shares with neither is the sign of the mixed term and the conjugation in the second slot.
 
 ## Summary
 
-The diagonal of the block is the vector part of the square, $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})=2i(a\vec v-b\vec q+\vec q\times\vec v)$ in real coordinates; it is a quadratic map into the purely imaginary vectors, its image is the whole three-dimensional space $i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$, and it vanishes exactly on the complex cone of the elements whose square is central, $\tilde Q\tilde Q^{*}=\langle\tilde Q,\tilde Q\rangle_{*}e_t$, a quadric cone of real dimension five that contains the quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ and misses $\vec e_x+i\vec e_y$. The block is the plain-sesqualgebra sibling of the sesquilinear commutator: on the real span the defect vanishes and the bracket is twice the block, and off the real span they differ by the defect $\overline{\tilde Q\tilde P^{*}}-\tilde Q\tilde P^{*}$, the witness being the pair $(ie_t,\vec e_x)$. The Jacobi identity fails, at $(e_t,\vec e_x,\vec e_y)$ with the cyclic sum $\vec e_z$ and at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, and the reason is the obstruction of *Lie Algebras of Sesqualgebras*, not an associator: a genuine sesquilinear antisymmetrisation is a Lie bracket only after the collapse of the two involutions, which the complex conjugation forbids. Among the three failing brackets of the row table, the block is the one that shares the witness of $\mathrm{AQS}$ and the opposite value of $\mathrm{AQA}$ at the real triple, and on the real vectors alone it is a cross product up to sign.
+The diagonal of the block is the vector part of the square, $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})=2i(a\vec v-b\vec q+\vec q\times\vec v)$ in real coordinates; it is a quadratic map into the purely imaginary vectors, its image is the whole three-dimensional space $i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$, and it vanishes exactly on the complex cone of the elements whose square is central, $\tilde Q\tilde Q^{*}=\langle\tilde Q,\tilde Q\rangle_{*}e_t$, a quadric cone of real dimension five that contains the quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ and misses $\vec e_x+i\vec e_y$. The block is the plain-sesqualgebra sibling of the sesquilinear commutator: on the real span the defect vanishes and the bracket is twice the block, and off the real span they differ by the defect $\overline{\tilde Q_2\tilde Q_1^{*}}-\tilde Q_2\tilde Q_1^{*}$, the witness being the pair $(ie_t,\vec e_x)$. The Jacobi identity fails, at $(e_t,\vec e_x,\vec e_y)$ with the cyclic sum $\vec e_z$ and at $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, and the reason is the obstruction of *Lie Algebras of Sesqualgebras*, not an associator: a genuine sesquilinear antisymmetrisation is a Lie bracket only after the collapse of the two involutions, which the complex conjugation forbids. Among the three failing brackets of the row table, the block is the one that shares the witness of $\mathrm{AQS}$ and the opposite value of $\mathrm{AQA}$ at the real triple, and on the real vectors alone it is a cross product up to sign.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$ | the operation of the block |
+| $\tilde Q_1\diamond\tilde Q_2=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$ | the operation of the block |
 | $\tilde Q\diamond\tilde Q=2i(a\vec v-b\vec q+\vec q\times\vec v)$ | the diagonal, $Q_t=a+ib$, $\vec Q=\vec q+i\vec v$ |
 | $i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$ | the purely imaginary vectors, the image of the diagonal |
 | $\tilde Q\tilde Q^{*}=\langle\tilde Q,\tilde Q\rangle_{*}e_t$ | the criterion for the square-zero elements |
-| $[\tilde P,\tilde Q]_{\varsigma}=\tilde P\tilde Q^{*}-\tilde Q\tilde P^{*}$ | the sesquilinear commutator, the bare antisymmetrisation |
-| $\overline{\tilde Q\tilde P^{*}}-\tilde Q\tilde P^{*}$ | the defect between the bracket and twice the block |
+| $[\tilde Q_1,\tilde Q_2]_{\varsigma}=\tilde Q_1\tilde Q_2^{*}-\tilde Q_2\tilde Q_1^{*}$ | the sesquilinear commutator, the bare antisymmetrisation |
+| $\overline{\tilde Q_2\tilde Q_1^{*}}-\tilde Q_2\tilde Q_1^{*}$ | the defect between the bracket and twice the block |
 | $\mathrm{cyc}\,\mathfrak{b}(\tilde Q_1,\tilde Q_2,\tilde Q_3)$ | the cyclic sum, with the factor $\tfrac12$ carried by $b$ |
-| $\mathrm{AQA},\mathrm{AQS}$ | the two sibling failing brackets, $\vec P\times$ and conjugate variants |
+| $\mathrm{AQA},\mathrm{AQS}$ | the two sibling failing brackets, $\vec Q_1\times$ and conjugate variants |
 
 ## Further Reading
 

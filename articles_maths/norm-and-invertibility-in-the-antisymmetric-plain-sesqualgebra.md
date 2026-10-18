@@ -5,22 +5,22 @@
 This article studies the algebraic norm and the invertibility of the antisymmetric plain sesqualgebra
 
 $$
-\tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)
-=\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr)
-=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q},
+\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)
+=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)
+=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
 $$
 
 the antisymmetric half of the general plain sesquilinear product, the operation $\mathrm{APS}$ of *Introduction to the Antisymmetric Plain Sesqualgebra*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. For the block the scalar part is identically zero, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, because every value is a pure vector; the algebraic norm of the operation is therefore **the zero function**, and by the convention of the same article a vanishing quadratic form is not an algebraic norm, so the block is counted with **no algebraic norm** rather than with a zero one.
 
 Both notions of the title are therefore **absences**. The block has no two-sided unit, so no element is invertible and the group of units is empty; the one-sided inverse equations to the centre have no solution. What replaces the invertibility is not a norm but an operator reading: the one-sided multiplication by an element has a kernel and an image, and the relative inverse below accounts for the loss on the quotient.
 
 **Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Plain Sesqualgebra*; the general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the element theory that uses the substitute is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, and the structural reading of the diagonal is *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*. The algebraic norm of the general plain sesquilinear product is $\langle\cdot\rangle_{*}$, a different form, and its theory is *Norm and Invertibility in the General Plain Sesqualgebra*. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the vector subspace is $\operatorname{Vect}(\mathbb{B})$; the projection $\operatorname{Vect}$ removes the scalar part, and it is $\mathbb{C}$-linear and surjective with kernel $\mathbb{C}_{\mathbb{B}}$.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general plain sesquilinear product is $\tilde P\tilde Q^{*}$, and the product of the block is $\diamond$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general plain sesquilinear product is $\tilde Q_1\tilde Q_2^{*}$, and the product of the block is $\diamond$.
 
-**The results.** The block has **no algebraic norm**: its scalar part vanishes identically, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, so the diagonal is the zero function and, by the convention that a vanishing quadratic form is not an algebraic norm, the block is counted with no algebraic norm rather than a zero one. It has **no unit** on either side, hence **no invertible element** and an **empty group of units**, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have **no solution**, because every value of the block is a pure vector. The invertibility criterion of the parent is **not transferred**: the form $\langle\cdot,\cdot\rangle_{*}$ is not the algebraic norm of the block and is not read here. What replaces the inverse is the operator reading, in which the multiplication by a non-central $\tilde A$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$.
+**The results.** The block has **no algebraic norm**: its scalar part vanishes identically, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, so the diagonal is the zero function and, by the convention that a vanishing quadratic form is not an algebraic norm, the block is counted with no algebraic norm rather than a zero one. It has **no unit** on either side, hence **no invertible element** and an **empty group of units**, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have **no solution**, because every value of the block is a pure vector. The invertibility criterion of the parent is **not transferred**: the form $\langle\cdot,\cdot\rangle_{*}$ is not the algebraic norm of the block and is not read here. What replaces the inverse is the operator reading, in which the multiplication by a non-central $\tilde A$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$.
 
 ## The Relative Definitions
 
@@ -41,12 +41,12 @@ Throughout this article the product is the block $\diamond$, and, unqualified, *
 *Proof.* The two one-sided actions of $e_t$ are
 
 $$
-\tilde P\diamond e_t=\vec P,\qquad e_t\diamond\tilde Q=-\overline{\vec Q},
+\tilde Q_1\diamond e_t=\vec Q_1,\qquad e_t\diamond\tilde Q=-\overline{\vec Q},
 $$
 
-the first being $\operatorname{Vect}(\tilde P)$ and the second $\operatorname{Vect}(\tilde Q^{*})$. A left unit $\tilde u$ would satisfy, at $\tilde Q_1=e_t$, the equation $\tilde u\diamond e_t=e_t$, that is $\vec q=e_t$; the left member is a vector part, of scalar part zero, while the right member has scalar part one, so the equation is impossible. A right unit $\tilde u$ would satisfy, at $\tilde Q_1=e_t$, the equation $e_t\diamond\tilde u=e_t$, that is $-\overline{\vec q}=e_t$; the same parity of the scalar part forbids it.
+the first being $\operatorname{Vect}(\tilde Q_1)$ and the second $\operatorname{Vect}(\tilde Q^{*})$. A left unit $\tilde u$ would satisfy, at $\tilde Q_1=e_t$, the equation $\tilde u\diamond e_t=e_t$, that is $\vec q=e_t$; the left member is a vector part, of scalar part zero, while the right member has scalar part one, so the equation is impossible. A right unit $\tilde u$ would satisfy, at $\tilde Q_1=e_t$, the equation $e_t\diamond\tilde u=e_t$, that is $-\overline{\vec q}=e_t$; the same parity of the scalar part forbids it.
 
-The obstruction is the projection: every value of the block is a pure vector, so its scalar part vanishes, while the unit $e_t$ has scalar part one. The block cannot see the unit of the space on either side, and the two displays above are the two one-sided actions that replace it. The parent product $\tilde P\tilde Q^{*}$ has the right unit $e_t$, and the block destroys it: the right-unit equation survives on the vector subspace alone and fails at every element with a non-zero scalar part.
+The obstruction is the projection: every value of the block is a pure vector, so its scalar part vanishes, while the unit $e_t$ has scalar part one. The block cannot see the unit of the space on either side, and the two displays above are the two one-sided actions that replace it. The parent product $\tilde Q_1\tilde Q_2^{*}$ has the right unit $e_t$, and the block destroys it: the right-unit equation survives on the vector subspace alone and fails at every element with a non-zero scalar part.
 
 ## The Absence of an Inverse
 
@@ -68,9 +68,9 @@ have no solution $\tilde Q_2$.
 
 ## The Algebraic Norm of the Block
 
-**The algebraic norm of the block is the zero function**, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ for all $\tilde P,\tilde Q$ and $\varphi_{\diamond}(\tilde Q)=0$ for all $\tilde Q$, and by the convention that a vanishing quadratic form is not an algebraic norm the block carries **no algebraic norm**.
+**The algebraic norm of the block is the zero function**, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$ for all $\tilde Q_1,\tilde Q_2$ and $\varphi_{\diamond}(\tilde Q)=0$ for all $\tilde Q$, and by the convention that a vanishing quadratic form is not an algebraic norm the block carries **no algebraic norm**.
 
-**Definition (the algebraic norm of the operation).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde P,\tilde Q)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$. The **algebraic norm of $f$** is the diagonal of that form,
+**Definition (the algebraic norm of the operation).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$. The **algebraic norm of $f$** is the diagonal of that form,
 
 $$
 \varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)=\mathrm{Sc}\,f(\tilde Q,\tilde Q),
@@ -81,14 +81,14 @@ and for an operation whose scalar part vanishes identically the algebraic norm i
 **Theorem (the algebraic norm of the block is the zero function).** For the antisymmetric plain sesqualgebra,
 
 $$
-\mathrm{Sc}\bigl(\tilde P\diamond\tilde Q\bigr)=0\quad\text{for all }\tilde P,\tilde Q,
+\mathrm{Sc}\bigl(\tilde Q_1\diamond\tilde Q_2\bigr)=0\quad\text{for all }\tilde Q_1,\tilde Q_2,
 \qquad\text{hence}\qquad
 \varphi_{\diamond}(\tilde Q)=0\quad\text{for all }\tilde Q .
 $$
 
 The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
 
-*Proof.* Every value of the block is a pure vector, $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})\in\operatorname{Vect}(\mathbb{B})$, of scalar part zero for every pair; the diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
+*Proof.* Every value of the block is a pure vector, $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})\in\operatorname{Vect}(\mathbb{B})$, of scalar part zero for every pair; the diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
 
 **Remark (the diagonal of the block).** The sesquilinear product is not alternating in the bilinear sense — its second slot is conjugate-linear — so the diagonal need not vanish as an element of the block:
 
@@ -120,20 +120,20 @@ So the equation $\tilde A\diamond\tilde Q_2=\tilde W$ is solvable exactly for th
 
 **The invertibility criterion of the parent is not transferred to the block:** the form $\langle\cdot,\cdot\rangle_{*}$ of the parent general plain sesquilinear product is not the algebraic norm of the block and is not read here, and the block loses the parent's one-sided equations at once, their place taken by the relative inverse.
 
-**Remark (the criterion of the parent is not read here).** The parent general plain sesquilinear product $\tilde P\tilde Q^{*}$ has the right unit $e_t$, and its one-sided inverse equations are decided by a quadratic form that is the algebraic norm $\langle\cdot\rangle_{*}$ of a different product, the diagonal of $\mathrm{Sc}(\tilde P\tilde Q^{*})$ (*Norm and Invertibility in the General Plain Sesqualgebra*). That form is not the algebraic norm of the block and is not read here. The block loses the parent's one-sided equations at once, because the value has been moved into a subspace that meets the centre only at the origin, and the place of the criterion is taken by the relative inverse above.
+**Remark (the criterion of the parent is not read here).** The parent general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ has the right unit $e_t$, and its one-sided inverse equations are decided by a quadratic form that is the algebraic norm $\langle\cdot\rangle_{*}$ of a different product, the diagonal of $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ (*Norm and Invertibility in the General Plain Sesqualgebra*). That form is not the algebraic norm of the block and is not read here. The block loses the parent's one-sided equations at once, because the value has been moved into a subspace that meets the centre only at the origin, and the place of the criterion is taken by the relative inverse above.
 
 ## Summary
 
-The antisymmetric plain sesqualgebra $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$ has no unit on either side, hence no invertible element and an empty group of units, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the vector part of the Hermitian square, a value and not a norm, central only where it vanishes. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $\langle\cdot\rangle_{*}$ of the parent sesquilinear product is a different form of a different product and is not read here.
+The antisymmetric plain sesqualgebra $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})$ has no unit on either side, hence no invertible element and an empty group of units, and the one-sided inverse equations $\tilde Q\diamond\tilde Q_2=e_t$ and $\tilde Q_2\diamond\tilde Q=e_t$ have no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The diagonal of the block is the vector part of the Hermitian square, a value and not a norm, central only where it vanishes. What replaces the invertibility is not a norm but the operator reading: the multiplication by a non-central element has a two-dimensional kernel and induces a conjugate-linear bijection of the quotient onto the plane of the solvable values, the relative inverse. The algebraic norm $\langle\cdot\rangle_{*}$ of the parent sesquilinear product is a different form of a different product and is not read here.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$ | the antisymmetric plain sesqualgebra, the operation $\mathrm{APS}$ |
-| $\tilde P\tilde Q^{*}$ | the parent general plain sesquilinear product |
-| $\tilde P\diamond e_t=\vec P$, $e_t\diamond\tilde Q=-\overline{\vec Q}$ | the two one-sided actions of $e_t$ |
-| $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ | the scalar part of the block vanishes identically |
+| $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | the antisymmetric plain sesqualgebra, the operation $\mathrm{APS}$ |
+| $\tilde Q_1\tilde Q_2^{*}$ | the parent general plain sesquilinear product |
+| $\tilde Q_1\diamond e_t=\vec Q_1$, $e_t\diamond\tilde Q=-\overline{\vec Q}$ | the two one-sided actions of $e_t$ |
+| $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\diamond}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
 | $\tilde Q\diamond\tilde Q=\operatorname{Vect}(\tilde Q\tilde Q^{*})$ | the diagonal, the vector part of the Hermitian square |
 | $L_{\tilde A}\tilde Q_2=\tilde A\diamond\tilde Q_2$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ |

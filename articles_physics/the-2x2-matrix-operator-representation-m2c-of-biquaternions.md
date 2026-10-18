@@ -142,7 +142,7 @@ $$
 M = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = E_{22} = uv^{\dagger}, \qquad u = v = \begin{pmatrix} 0 \\ 1 \end{pmatrix},
 $$
 
-and the congruence sends $X$ to $X_{22}E_{22}$: it is exactly the projection onto the line of the idempotent $\tilde\Pi_-$. The trace of the operator is $4\lvert\tfrac12\rvert^{2} = 1$ and its square is itself. The same idempotent appears as the generator of the image in the four-vector realization, where the operator was found to send $\tilde Q_1$ to $(R^0 + iR^3)\tilde\Pi_-$.
+and the congruence sends $X$ to $X_{22}E_{22}$: it is exactly the projection onto the line of the idempotent $\tilde\Pi_-$. The trace of the operator is $4\lvert\tfrac12\rvert^{2} = 1$ and its square is itself. The same idempotent appears as the generator of the image in the four-vector realization, where the operator was found to send $\tilde Q_1$ to $(Q_1^0 + iQ_1^3)\tilde\Pi_-$.
 
 The two examples separate the two faces of the cone exactly as in the other realizations: both matrices have rank one and determinant zero, both congruences have a one-dimensional image spanned by a rank-one Hermitian matrix, and the value of the trace $4\lvert Q_t\rvert^{2}$ decides whether the surviving operator is nilpotent or a projection. The element $\vec e_y + i\vec e_z$, a third null operand, has $M = \begin{pmatrix} 1 & -1 \\ 1 & -1 \end{pmatrix} = uv^{\dagger}$ with $u = (1,1)$ and $v = (1,-1)$, of scalar part zero, and its image is again the line of a minimal idempotent, this time $\tfrac12(e_t + i\vec e_x)$.
 
@@ -182,8 +182,8 @@ The two regimes are the two ranks of $M$. Off the light cone $M$ is invertible, 
 | $M = uv^{\dagger} \Rightarrow MXM^{\dagger} = (v^{\dagger}Xv)uu^{\dagger}$ | the collapse of a null congruence onto one Hermitian line |
 | $uu^{\dagger} \leftrightarrow \tfrac12(e_t + i\vec u\cdot\mathbf{e})$ | the generator of the image line is a minimal idempotent |
 | $4\lvert Q_t\rvert^{2}$ | trace of the operator; vanishes exactly for the nilpotent case |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

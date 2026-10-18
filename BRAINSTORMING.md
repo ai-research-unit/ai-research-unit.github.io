@@ -7282,6 +7282,78 @@ If you want an axis symbol for the purely imaginary family, tell me which letter
 
 
 
+Updated Technical Summary: Fourier, CCR, and the Biquaternion Framework
+
+Algebra:
+B = C ⊗_R H ≅ M_2(C). Complex dimension 4, real dimension 8.
+M_+ = {Q ∈ B : Q* = Q} = Hermitian 2×2 matrices, real dimension 4.
+M_- = {Q ∈ B : Q* = -Q} = skew-Hermitian 2×2 matrices, real dimension 4.
+
+Finite vs continuous harmonic analysis:
+- Discrete biquaternion Fourier transform on N samples:
+  kernel W_N(n,u) = exp(-2πρ n u / N).
+  Finite-dimensional. Does not require infinite dimension.
+- Continuous biquaternion Fourier transform on L^2(R, B):
+  inversion, Plancherel, unitarity, factorisation into four complex transforms.
+  Infinite-dimensional because the conjugate variable is continuous.
+
+Why continuous position/momentum need infinite dimension:
+- CCR: [X,P] = iℏ I.
+- For finite matrices, Tr([X,P]) = 0 ≠ Tr(iℏ I) = iℏ dim(H).
+- Stone–von Neumann: the unique irreducible representation is the Schrödinger
+  representation on L^2(R):
+      (Xψ)(x) = x ψ(x),   (Pψ)(x) = -iℏ dψ/dx.
+- Fourier transform swaps position and momentum:
+      F: L^2(R) → L^2(R).
+- In frequency picture, ∂_μ ↔ 2πρ ω_μ. Momentum is multiplication by frequency;
+  position is multiplication by coordinate. If both were multiplications on the
+  same space they would commute. To get [Q,P] = iℏ, one must be an unbounded
+  derivative, hence continuous spectrum and infinite dimension.
+- The Fourier transform alone does not force infinite dimension. The continuous
+  conjugate variable and the CCR do.
+
+Biquaternion obstruction O12:
+- For Q, P ∈ M_+:
+      Q = h_0 e_0 + i h·e,   P = k_0 e_0 + i k·e.
+      Sc(QP) = h_0 k_0 + h·k = Sc(PQ).
+      Therefore Sc([Q,P]) = 0.
+- [Q,P] is anti-Hermitian, traceless, and lies in the vector part of M_-.
+  It cannot equal iℏ e_0, which is purely scalar imaginary.
+- Remedy: work on B-valued functions of configuration variables; the commutator
+  involves a derivative and the trace argument does not apply.
+  Example import: [x̂^μ, x̂^ν] = i θ^{μν}, with external non-Lorentz θ.
+
+Corpus-specific refinements:
+- Positivity fails in the conjugate space. The biquaternion Fourier transform of
+  a finite positive measure is not positive-definite because N is indefinite.
+  The repair uses the Hermitian form H, not N.
+- M_+ is not the Fourier dual of M_-. Sector exchange i is a quarter turn inside
+  the group; do not identify position↔momentum with material↔informational.
+
+Missing finite Weyl pair:
+- On C^N, clock X = diag(1, ω, ..., ω^{N-1}), shift Z|k⟩ = |k+1 mod N⟩,
+  ω = exp(2πi/N).
+- XZ = ω ZX, so [X,Z] = (ω-1) ZX. This is an operator, not a scalar.
+- It is the exact finite shadow of the trace obstruction: the central scalar
+  commutator becomes a root-of-unity phase.
+- As N → ∞, this becomes the Weyl form of the CCR.
+- This is a representation of a finite Heisenberg group, not a Lie-algebra
+  representation with scalar iℏ.
+
+Status:
+- B ≅ M_2(C) is the operator algebra of one fermionic mode/qubit.
+  One mode fills B (complex dimension 4). Two modes need M_4(C).
+  The bosonic Weyl algebra is infinite-dimensional.
+- The biquaternion framework is finite-dimensional and kinematic for continuous
+  variables. It can describe spin, qubits, and finite fermionic modes.
+- Continuous position, momentum, and the full harmonic oscillator require
+  extension to infinite-dimensional modules or L^2(R, B) and an external CCR.
+- This is a limitation, not a contradiction with established physics.
+
+
+
+
+
 
 
 

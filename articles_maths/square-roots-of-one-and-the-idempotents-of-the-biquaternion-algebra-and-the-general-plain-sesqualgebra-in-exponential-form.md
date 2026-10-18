@@ -347,7 +347,7 @@ with $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}=1$ and $C(\til
 
 ## The Two Structures Compared
 
-| | the algebra, $\tilde P\tilde Q$ | $\mathrm{GPS}$, $\tilde P\tilde Q^{*}$ |
+| | the algebra, $\tilde Q_1\tilde Q_2$ | $\mathrm{GPS}$, $\tilde Q_1\tilde Q_2^{*}$ |
 |---|---|---|
 | the square | $\tilde\Xi^2=\bigl(\Xi_t^{2}-(\vec\Xi,\vec\Xi)\bigr)e_t+2\Xi_t\vec\Xi$ | $\tilde\Xi\tilde\Xi^{*}$, of scalar part $\sum_\mu\lvert\Xi_\mu\rvert^{2}$ |
 | roots of $+1$, exponential form | unit-scalar form for the Hermitian roots, hyperbolic form $\exp(t\,i\vec u_{\mathrm b})i\vec u_{\mathrm n}$ for the others | the unit-scalar form $\exp(i\theta)w$, complete |

@@ -204,7 +204,7 @@ The composition property of the norm â€” the multiplicativity $N(xy)=N(x)N(y)$ â
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternions, $\cong\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Norm of $\mathbb{B}$, complex-valued, signature $(4,4)$ in its real part |
 | $\tilde Q\tilde{Q}^{*}$ | Hermitian form of $\mathbb{B}$ |
-| $\langle\tilde P,\tilde Q\rangle=\sum_\mu P_{\bar{\mu}}Q_\mu$ | Complex inner product on $\mathbb{B}$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\sum_\mu Q_{1\bar{\mu}}Q_{2\mu}$ | Complex inner product on $\mathbb{B}$ |
 | $\pi_{1,2}=\tfrac12(1\pm j)$ | Idempotents of $\mathbb{D}$ |
 | $\gamma_\mu\mapsto i\vec e_\mu$ | Isomorphism $\mathrm{Cl}_{3,0}\to\mathbb{B}$ |
 | $Sp(1)$ | Unit quaternions, $\cong SU(2)\cong\mathrm{Spin}(3)$ |

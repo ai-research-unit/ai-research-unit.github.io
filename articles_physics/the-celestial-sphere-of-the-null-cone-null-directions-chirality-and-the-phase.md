@@ -12,10 +12,10 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0,
 $$
 
-and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. On the material sector $\mathbb{M}_-$, with $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm is the interval,
+and its nonzero elements are exactly the **zero divisors** of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. On the material sector $\mathbb{M}_-$, with $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm is the interval,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2,
+\langle\tilde{R}\rangle_{\natural} = -c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2,
 $$
 
 so the null cone of the algebra restricts to the **light cone** of the material sector, and its nonzero elements are the lightlike four-vectors. The cone is a real three-dimensional cone in the four real dimensions of the sector; it has a single point at the origin and is otherwise regular, and its nonzero elements are the lightlike directions of the material geometry.
@@ -94,7 +94,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 | Symbol | Meaning |
 |---|---|
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm; $N=0$ is the null cone |
-| $\mathbb{M}_-$ | the material sector, $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
+| $\mathbb{M}_-$ | the material sector, $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
 | $\mathcal{C} \cong S^2$ | the celestial sphere, the null directions up to scale |
 | $\mathbb{P}^1\times\mathbb{P}^1$ | the Segre quadric, the projective complex null cone, the two chiral spheres |
 | $\xi \in \mathbb{C}^2$ | the spinor; the direction is its ray, $\xi\mapsto \exp(i\alpha)\xi$ |

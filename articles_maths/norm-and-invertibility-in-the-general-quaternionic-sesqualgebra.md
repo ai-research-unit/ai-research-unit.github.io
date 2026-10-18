@@ -5,7 +5,7 @@
 A **unit** of a product $\star$ is an element $\tilde E$ with $\tilde E\star\tilde Q_1 = \tilde Q_1\star\tilde E = \tilde Q_1$ for every $\tilde Q_1$, an **inverse** of $\tilde Q_1$ is an element $\tilde Q_2$ with $\tilde Q_1\star\tilde Q_2 = \tilde Q_2\star\tilde Q_1 = \tilde E$, and $\tilde Q_1$ is **invertible** when it has an inverse; the definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. This article fixes the product to the **general quaternionic sesquilinear product**
 
 $$
-\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*}
+\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}
 $$
 
 of *Introduction to the General Quaternionic Sesqualgebra*, and it answers the two questions of its title.
@@ -20,13 +20,13 @@ the general quaternionic sesquilinear algebraic norm of *The 4 Algebraic Norms o
 
 **Boundaries.** The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; none of the other three is read here. The absence of the unit and the two one-sided families are *The Two One-Sided Actions and the Absence of a Unit*; the form $\langle\cdot,\cdot\rangle_{\natural*}$, its Gram matrix and its restrictions are *The Krein Gram Matrix and the Restrictions of the Form*; the element classes of the block, read without a unit, are *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* and *Square Roots of a General Element in the General Quaternionic Sesqualgebra*.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q = Q_te_t+\vec Q$. The conjugations are $\tilde Q^{\natural} = Q_t-\vec Q$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The product is $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition is the general plain bilinear product. The sign vector is $\varepsilon = (1,-1,-1,-1)$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q = Q_te_t+\vec Q$. The conjugations are $\tilde Q^{\natural} = Q_t-\vec Q$, $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The product is $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second; juxtaposition is the general plain bilinear product. The sign vector is $\varepsilon = (1,-1,-1,-1)$.
 
-**The results.** The general quaternionic sesquilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ has **no unit, no inverse and no invertible element**: the two actions of $e_t$ are the star and the natural conjugation, so no element is a two-sided unit. It carries one algebraic norm, the general quaternionic sesquilinear algebraic norm $\langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}$, real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}$-isotropic cone as its vanishing set, and $\langle\cdot\rangle_{\natural*}$ is **not multiplicative**. Because the block has no invertible element, $\langle\cdot\rangle_{\natural*}$ has no invertibility of the block to decide, and it does not decide the invertibility of the plain product either: the plain unit $e_t+\vec e_x$ has $\langle\cdot\rangle_{\natural*}=0$ and the plain zero divisor $\vec e_x+i\vec e_y$ has $\langle\cdot\rangle_{\natural*}=-2$. Each section below states its result first and then proves it.
+**The results.** The general quaternionic sesquilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ has **no unit, no inverse and no invertible element**: the two actions of $e_t$ are the star and the natural conjugation, so no element is a two-sided unit. It carries one algebraic norm, the general quaternionic sesquilinear algebraic norm $\langle\tilde Q_2\rangle_{\natural*}=\lvert Q_{2t}\rvert^{2}-\lvert Q_{2x}\rvert^{2}-\lvert Q_{2y}\rvert^{2}-\lvert Q_{2z}\rvert^{2}$, real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}$-isotropic cone as its vanishing set, and $\langle\cdot\rangle_{\natural*}$ is **not multiplicative**. Because the block has no invertible element, $\langle\cdot\rangle_{\natural*}$ has no invertibility of the block to decide, and it does not decide the invertibility of the plain product either: the plain unit $e_t+\vec e_x$ has $\langle\cdot\rangle_{\natural*}=0$ and the plain zero divisor $\vec e_x+i\vec e_y$ has $\langle\cdot\rangle_{\natural*}=-2$. Each section below states its result first and then proves it.
 
 ## The Double Absence
 
-**The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ has no left unit, no right unit and no two-sided unit, so no element has an inverse and the set of invertible elements is empty.**
+**The product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ has no left unit, no right unit and no two-sided unit, so no element has an inverse and the set of invertible elements is empty.**
 
 **Proposition (the two one-sided actions of $e_t$).** For every $\tilde Q$,
 
@@ -59,7 +59,7 @@ $$
 equivalently $\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}$ for the form
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu},
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
 the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, also called the **Krein form** of the block, whose Gram matrix and restrictions are computed in *The Krein Gram Matrix and the Restrictions of the Form*.
@@ -68,20 +68,20 @@ the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternioi
 
 - $\langle\tilde Q\rangle_{\natural*}$ is **real**, and **indefinite**: the four entries $1,-1,-1,-1$ on the real and the imaginary parts of the four coefficients give the inertia $(2,6)$ on the realification $\mathbb{B}\cong\mathbb{R}^{8}$.
 - $\langle\cdot\rangle_{\natural*}$ is **homogeneous of degree two over the reals**, $\langle\lambda\tilde Q\rangle_{\natural*}=\lvert\lambda\rvert^{2}\langle\tilde Q\rangle_{\natural*}$ for $\lambda\in\mathbb{C}$.
-- Its polarisation is the sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}$, and $\langle\tilde Q,\tilde P\rangle_{\natural*}=\overline{\langle\tilde P,\tilde Q\rangle_{\natural*}}$: the form is Hermitian.
+- Its polarisation is the sesquilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, and $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}}$: the form is Hermitian.
 - Its **vanishing set** is the $\langle\cdot,\cdot\rangle_{\natural*}$-isotropic cone, a nonzero cone: $\langle e_t+\vec e_x\rangle_{\natural*}=1-1=0$, so the algebraic norm vanishes on nonzero elements.
 
 ## The Algebraic Norm Is Not Multiplicative
 
-**The algebraic norm of the block is not multiplicative, $\langle\tilde P\star\tilde Q\rangle_{\natural*}\neq \langle\tilde P\rangle_{\natural*}\langle\tilde Q\rangle_{\natural*}$ in general, the pair $\tilde P=\tilde Q=e_t+\vec e_x$ separating the two sides.**
+**The algebraic norm of the block is not multiplicative, $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\langle\tilde Q_2\rangle_{\natural*}$ in general, the pair $\tilde Q_1=\tilde Q_2=e_t+\vec e_x$ separating the two sides.**
 
 **Proposition.** The algebraic norm of the block is **not** multiplicative:
 
 $$
-\langle\tilde P\star\tilde Q\rangle_{\natural*}\neq \langle\tilde P\rangle_{\natural*}\,\langle\tilde Q\rangle_{\natural*}\quad\text{in general.}
+\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\,\langle\tilde Q_2\rangle_{\natural*}\quad\text{in general.}
 $$
 
-*Proof.* The pair $\tilde P=\tilde Q=e_t+\vec e_x$ separates the two sides. Here $\langle\tilde P\rangle_{\natural*}=\langle\tilde Q\rangle_{\natural*}=1-1=0$, so $\langle\tilde P\rangle_{\natural*}\langle\tilde Q\rangle_{\natural*}=0$, while $\tilde P\star\tilde Q=(e_t-\vec e_x)(e_t+\vec e_x)=e_t+\vec e_x-\vec e_x-\vec e_x^{2}=2e_t$ and $\langle 2e_t\rangle_{\natural*}=4$. The two values differ, so no multiplicativity holds.
+*Proof.* The pair $\tilde Q_1=\tilde Q_2=e_t+\vec e_x$ separates the two sides. Here $\langle\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2\rangle_{\natural*}=1-1=0$, so $\langle\tilde Q_1\rangle_{\natural*}\langle\tilde Q_2\rangle_{\natural*}=0$, while $\tilde Q_1\star\tilde Q_2=(e_t-\vec e_x)(e_t+\vec e_x)=e_t+\vec e_x-\vec e_x-\vec e_x^{2}=2e_t$ and $\langle 2e_t\rangle_{\natural*}=4$. The two values differ, so no multiplicativity holds.
 
 **Remark (the failure belongs to the block).** The block, whose two slots carry the two conjugations, does not respect its own algebraic norm $\langle\cdot\rangle_{\natural*}$ under its product.
 
@@ -107,7 +107,7 @@ $$
 
 ## Summary
 
-The general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ has no unit, no inverse and no invertible element: the left action of $e_t$ is the star, $e_t\star\tilde Q = \tilde Q^{*}$, and the right action is the natural conjugation, $\tilde Q\star e_t = \tilde Q^{\natural}$, so no element is a two-sided unit.
+The general quaternionic sesquilinear product $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ has no unit, no inverse and no invertible element: the left action of $e_t$ is the star, $e_t\star\tilde Q_2 = \tilde Q_2^{*}$, and the right action is the natural conjugation, $\tilde Q_2\star e_t = \tilde Q_2^{\natural}$, so no element is a two-sided unit.
 
 It carries one algebraic norm, the diagonal of its scalar-part form, the general quaternionic sesquilinear algebraic norm
 
@@ -115,19 +115,19 @@ $$
 \langle\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2},
 $$
 
-real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}$-isotropic cone as its vanishing set, also called the Krein form; it is **not multiplicative**, the pair $\tilde P=\tilde Q=e_t+\vec e_x$ separating the two sides, $\langle\tilde P\star\tilde Q\rangle_{\natural*}=\langle 2e_t\rangle_{\natural*}=4$ against $\langle\tilde P\rangle_{\natural*}\langle\tilde Q\rangle_{\natural*}=0$. The algebraic norm does **not** decide invertibility: the plain unit $e_t+\vec e_x$ has $\langle\cdot\rangle_{\natural*}=0$ and the plain zero divisor $\vec e_x+i\vec e_y$ has $\langle\cdot\rangle_{\natural*}=-2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient. The article records that absence, and the block has no criterion of its own to state.
+real, indefinite of signature $(2,6)$, with the $\langle\cdot\rangle_{\natural*}$-isotropic cone as its vanishing set, also called the Krein form; it is **not multiplicative**, the pair $\tilde Q_1=\tilde Q_2=e_t+\vec e_x$ separating the two sides, $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}=\langle 2e_t\rangle_{\natural*}=4$ against $\langle\tilde Q_1\rangle_{\natural*}\langle\tilde Q_2\rangle_{\natural*}=0$. The algebraic norm does **not** decide invertibility: the plain unit $e_t+\vec e_x$ has $\langle\cdot\rangle_{\natural*}=0$ and the plain zero divisor $\vec e_x+i\vec e_y$ has $\langle\cdot\rangle_{\natural*}=-2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient. The article records that absence, and the block has no criterion of its own to state.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquilinear product |
+| $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product |
 | unit, inverse, invertible | relative to a product; the block has none |
 | $e_t\star\tilde Q = \tilde Q^{*}$, $\tilde Q\star e_t = \tilde Q^{\natural}$ | the two actions of $e_t$, star and natural conjugation |
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the general quaternionic sesquilinear form, the Krein form |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the general quaternionic sesquilinear form, the Krein form |
 | $\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, real, indefinite of signature $(2,6)$ |
 | $\{\langle\tilde Q\rangle_{\natural*}=0\}$ | the $\langle\cdot\rangle_{\natural*}$-isotropic cone, the vanishing set of the algebraic norm |
-| $\langle\tilde P\star\tilde Q\rangle_{\natural*}\neq \langle\tilde P\rangle_{\natural*}\langle\tilde Q\rangle_{\natural*}$ | the failure of multiplicativity |
+| $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\langle\tilde Q_2\rangle_{\natural*}$ | the failure of multiplicativity |
 | $e_t+\vec e_x$, $\vec e_x+i\vec e_y$ | the witnesses: plain unit with $\langle\cdot\rangle_{\natural*}=0$, and plain zero divisor with $\langle\cdot\rangle_{\natural*}=-2$ |
 
 ## Further Reading

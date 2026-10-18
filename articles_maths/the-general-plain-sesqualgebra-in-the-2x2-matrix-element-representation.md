@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The reading group *Topology on the Introduction to the General Plain Sesqualgebra of Biquaternions* reads the algebra through the **general plain sesquilinear form** $\langle\tilde{P},\tilde{Q}\rangle_{*}=\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ and through the **sesquilinear product** $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$ that it polarises, whose algebra is *Introduction to the General Plain Sesqualgebra*. This article reads that group through the $2\times2$ matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and it is the first of the two representation articles of the group; the companion *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* repeats the reading on the left regular representation.
+The reading group *Topology on the Introduction to the General Plain Sesqualgebra of Biquaternions* reads the algebra through the **general plain sesquilinear form** $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ and through the **sesquilinear product** $\tilde{Q}_1\star\tilde{Q}_2=\tilde{Q}_1\tilde{Q}_2^{*}$ that it polarises, whose algebra is *Introduction to the General Plain Sesqualgebra*. This article reads that group through the $2\times2$ matrix realization $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and it is the first of the two representation articles of the group; the companion *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* repeats the reading on the left regular representation.
 
-The Hermitian conjugation is the characteristic operation of the group, and in the model it is the **conjugate transpose**: $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The sesquilinear product is therefore the matrix product with the conjugate transpose of the second factor, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})^{\dagger}$, and the general plain sesquilinear form is the **Hilbert–Schmidt pairing** of the matrices. The form is positive definite, so its matrix reading is the one of the five that is definite rather than indefinite, and the Frobenius norm is its carrier.
+The Hermitian conjugation is the characteristic operation of the group, and in the model it is the **conjugate transpose**: $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The sesquilinear product is therefore the matrix product with the conjugate transpose of the second factor, $\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)^{\dagger}$, and the general plain sesquilinear form is the **Hilbert–Schmidt pairing** of the matrices. The form is positive definite, so its matrix reading is the one of the five that is definite rather than indefinite, and the Frobenius norm is its carrier.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; sesquilinear product $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; sesquilinear product $\tilde{Q}_1\star\tilde{Q}_2=\tilde{Q}_1\tilde{Q}_2^{*}$.
 
 ## The Representation
 
@@ -31,12 +31,12 @@ The realization is a $*$-isomorphism: it is multiplicative and it carries the He
 **Theorem (the product is the conjugate-transposed matrix product).** For all biquaternions,
 
 $$
-\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})^{\dagger} ,
+\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\,\mathsf{M}_2(\tilde{Q}_2)^{\dagger} ,
 $$
 
 the ordinary matrix product with the conjugate transpose in the second slot.
 
-*Proof.* $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$, $\mathsf{M}_2$ is multiplicative and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$.
+*Proof.* $\tilde{Q}_1\star\tilde{Q}_2=\tilde{Q}_1\tilde{Q}_2^{*}$, $\mathsf{M}_2$ is multiplicative and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$.
 
 **The two actions of the unit.** The identity matrix acts by
 
@@ -44,7 +44,7 @@ $$
 I\star Y=IY^{\dagger}=Y^{\dagger},\qquad Y\star I=YI^{\dagger}=Y,
 $$
 
-so $e_t$ is a **right unit and not a left unit** of the product: the right action of the unit is the identity while the left action is the conjugate transpose. In the notation of the two multiplication operators, $\mathsf{M}_2(L_{\tilde{A}}(\tilde{Q}_1))=\mathsf{M}_2(\tilde{A})\mathsf{M}_2(\tilde{Q}_1)^{\dagger}$ and $\mathsf{M}_2(R_{\tilde{A}}(\tilde{Q}_1))=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{A})^{\dagger}$. The absence of a two-sided unit is the failure of the conjugate transpose to be the identity, and every asymmetry of the group has this origin. The involution ${}^{*}$ is the conjugate transpose, so an element is self-adjoint exactly when its matrix is Hermitian and the Hermitian subspace $\mathbb{M}_+$ is the set of Hermitian matrices of $M_2(\mathbb{C})$.
+so $e_t$ is a **right unit and not a left unit** of the product: the right action of the unit is the identity while the left action is the conjugate transpose. In the notation of the two multiplication operators, $\mathsf{M}_2(L_{\tilde{A}}(\tilde{Q}))=\mathsf{M}_2(\tilde{A})\mathsf{M}_2(\tilde{Q})^{\dagger}$ and $\mathsf{M}_2(R_{\tilde{A}}(\tilde{Q}))=\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{A})^{\dagger}$. The absence of a two-sided unit is the failure of the conjugate transpose to be the identity, and every asymmetry of the group has this origin. The involution ${}^{*}$ is the conjugate transpose, so an element is self-adjoint exactly when its matrix is Hermitian and the Hermitian subspace $\mathbb{M}_+$ is the set of Hermitian matrices of $M_2(\mathbb{C})$.
 
 **The units and the zero divisors.** An element is a unit of the algebra exactly when its matrix is invertible, so the units are $GL_2(\mathbb{C})$ and the zero divisors are the singular matrices; the norm-one group $\{\tilde{A}:\langle\tilde{A},\tilde{A}\rangle_{\natural}=1\}$ is $SL_2(\mathbb{C})$.
 
@@ -53,7 +53,7 @@ so $e_t$ is a **right unit and not a left unit** of the product: the right actio
 **The ternary product and the quadratic representation.** The ternary product is the matrix product
 
 $$
-\mathsf{M}_2\bigl(\{\tilde{P},\tilde{Q},\tilde{Q}_2\}\bigr)=\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})^{\dagger}\,\mathsf{M}_2(\tilde{Q}_2),\qquad\text{so}\qquad \{X,Y,Z\}=XY^{\dagger}Z ,
+\mathsf{M}_2\bigl(\{\tilde{Q}_1,\tilde{Q}_2,\tilde{Q}_3\}\bigr)=\mathsf{M}_2(\tilde{Q}_1)\,\mathsf{M}_2(\tilde{Q}_2)^{\dagger}\,\mathsf{M}_2(\tilde{Q}_3),\qquad\text{so}\qquad \{X,Y,Z\}=XY^{\dagger}Z ,
 $$
 
 the **middle model** of the matrix algebra, and its quadratic representation is $Z\mapsto ZY^{\dagger}Z$.
@@ -66,13 +66,13 @@ $$
 
 the two groupings of the product being $(X\star Y)\star Z=XY^{\dagger}Z^{\dagger}$ and $X\star(Y\star Z)=XZY^{\dagger}$.
 
-**The sandwich, the commutator and the symmetrised product.** The sandwich operator $S_{\tilde{P},\tilde{Q}}$ is $X\mapsto PX^{\dagger}Q^{\dagger}$, the commutator is the antisymmetric part $X\mapsto XY^{\dagger}-YX^{\dagger}$, and the symmetrised product is $\tfrac12(XY^{\dagger}+YX^{\dagger})$, whose diagonal is the Hermitian part of $XY^{\dagger}$. The rank of an element is the rank of its matrix, and the rank of a sandwich is at most the smaller of the ranks of its two parameters.
+**The sandwich, the commutator and the symmetrised product.** The sandwich operator $S_{\tilde{Q}_1,\tilde{Q}_2}$ is $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$, the commutator is the antisymmetric part $X\mapsto XY^{\dagger}-YX^{\dagger}$, and the symmetrised product is $\tfrac12(XY^{\dagger}+YX^{\dagger})$, whose diagonal is the Hermitian part of $XY^{\dagger}$. The rank of an element is the rank of its matrix, and the rank of a sandwich is at most the smaller of the ranks of its two parameters.
 
 **The idempotents.** The idempotents of the multiplication are the **Hermitian projections**: $\Pi\star\Pi=\Pi$ is $\Pi\Pi^{\dagger}=\Pi$, that is $\Pi^{\dagger}=\Pi=\Pi^{2}$. They are $0$, $I$ and the orthogonal projections onto the lines of $\mathbb{C}^{2}$; the rank-one ones form the complex projective line $\mathbb{CP}^{1}\cong S^{2}$.
 
 **Simplicity.** The multiplication has exactly the two two-sided ideals of $M_2(\mathbb{C})$, because a nonzero two-sided ideal of a full matrix algebra contains a matrix unit and hence the identity; the centre is $\mathbb{C}I=\mathbb{C}e_t$, and the only central idempotents are $0$ and $I$.
 
-**The square and its invariants.** At $\tilde{P}=\tilde{Q}$ the value is $\tilde{Q}\star\tilde{Q}=\tilde{Q}\tilde{Q}^{*}$, of matrix $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^{\dagger}$, and
+**The square and its invariants.** At a single element $\tilde{Q}$ the value is $\tilde{Q}\star\tilde{Q}=\tilde{Q}\tilde{Q}^{*}$, of matrix $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^{\dagger}$, and
 
 $$
 \operatorname{Tr}\mathsf{M}_2(\tilde{Q}\star\tilde{Q})=2\sum_\mu|Q_\mu|^{2},\qquad \det \mathsf{M}_2(\tilde{Q}\star\tilde{Q})=\bigl|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\bigr|^{2},
@@ -88,18 +88,18 @@ The model collects the objects of the group in one dictionary.
 |---|---|
 | element $\tilde{Q}=Q_te_t+\vec Q$ | $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\-iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}$ |
 | involution $\tilde{Q}^{*}$ | the conjugate transpose $\mathsf{M}_2(\tilde{Q})^{\dagger}$ |
-| multiplication $\tilde{P}\star\tilde{Q}$ | $XY^{\dagger}$ |
-| ternary product $\{\tilde{P},\tilde{Q},\tilde{Q}_2\}$ | $XY^{\dagger}Z$ |
-| associator $[\tilde{P},\tilde{Q},\tilde{Q}_2]$ | $X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$ |
+| multiplication $\tilde{Q}_1\star\tilde{Q}_2$ | $XY^{\dagger}$ |
+| ternary product $\{\tilde{Q}_1,\tilde{Q}_2,\tilde{Q}_3\}$ | $XY^{\dagger}Z$ |
+| associator $[\tilde{Q}_1,\tilde{Q}_2,\tilde{Q}_3]$ | $X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$ |
 | idempotents of the multiplication | the Hermitian projections; the rank-one ones the projective line $\mathbb{CP}^{1}$ |
 | simplicity | $M_2(\mathbb{C})$ simple, centre $\mathbb{C}I$ |
 | left and right multiplications | $Y\mapsto AY^{\dagger}$, $Y\mapsto YA^{\dagger}$ |
-| sandwich $S_{\tilde{P},\tilde{Q}}$ | $X\mapsto PX^{\dagger}Q^{\dagger}$ |
-| commutator $[\tilde{P},\tilde{Q}]_\varsigma$ | $XY^{\dagger}-YX^{\dagger}$ |
-| symmetrised product $\tilde{P}\circ\tilde{Q}$ | $\tfrac12(XY^{\dagger}+YX^{\dagger})$ |
+| sandwich $S_{\tilde{Q}_1,\tilde{Q}_2}$ | $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$ |
+| commutator $[\tilde{Q}_1,\tilde{Q}_2]_\varsigma$ | $XY^{\dagger}-YX^{\dagger}$ |
+| symmetrised product $\tilde{Q}_1\circ\tilde{Q}_2$ | $\tfrac12(XY^{\dagger}+YX^{\dagger})$ |
 | norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ | $\det \mathsf{M}_2(\tilde{Q})$ |
 | scalar part $\mathrm{Sc}(\tilde{Q})$ | $\tfrac12\operatorname{Tr}\mathsf{M}_2(\tilde{Q})$ |
-| Hermitian form $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | $\tfrac12\operatorname{Tr}(XY^{\dagger})$ |
+| Hermitian form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | $\tfrac12\operatorname{Tr}(XY^{\dagger})$ |
 | rank of an element | the rank of the matrix |
 
 The ordinary matrix algebra, with no transpose, is the bilinear reading of the algebra; the table is the sesquilinear reading, and the transpose is the whole difference between the two columns.
@@ -109,10 +109,10 @@ The ordinary matrix algebra, with no transpose, is the bilinear reading of the a
 **Theorem (the Hilbert–Schmidt pairing).** For all biquaternions,
 
 $$
-\langle\tilde{Q},\tilde{P}\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q})\bigr),
+\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*} = \tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2)\bigr),
 $$
 
-the **Hilbert–Schmidt pairing** of the matrices; since $\mathsf{M}_2(\tilde{P})^{\dagger}=\mathsf{M}_2(\tilde{P}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P}^{*}\tilde{Q}))=\mathrm{Sc}(\tilde{P}^{*}\tilde{Q})$ by the trace identity $\mathrm{Sc}(\tilde{Q}_2\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_2)\mathsf{M}_2(\tilde{S}))$.
+the **Hilbert–Schmidt pairing** of the matrices; since $\mathsf{M}_2(\tilde{Q})^{\dagger}=\mathsf{M}_2(\tilde{Q}^{*})$, the right-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1^{*}\tilde{Q}_2))=\mathrm{Sc}(\tilde{Q}_1^{*}\tilde{Q}_2)$ by the trace identity $\mathrm{Sc}(\tilde{Q}_2\tilde{S})=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_2)\mathsf{M}_2(\tilde{S}))$.
 
 **Theorem (the Frobenius norm).** On the diagonal,
 
@@ -125,7 +125,7 @@ so that $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$
 **Theorem (the trace and the determinant of a value).** For all biquaternions,
 
 $$
-\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\langle\tilde{P},\tilde{Q}\rangle_{*},\qquad \det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}},
+\operatorname{Tr}\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=2\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*},\qquad \det \mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\overline{\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}},
 $$
 
 the trace of a value twice its Hermitian form and the determinant of a value the norm of the first factor times the conjugate of the norm of the second. The determinant is multiplicative and $\det \mathsf{M}_2(\tilde{Q})^{\dagger}=\overline{\det \mathsf{M}_2(\tilde{Q})}$, so the value of two norm-one elements again has determinant one and the product of two units is a unit.
@@ -172,7 +172,7 @@ the last Hermitian as the congruence action requires.
 
 **A Hermitian element.** Let $\tilde{Q}=e_t+i\vec e_z$, so $Q_t=1$, $Q_z=i$. Then the coefficients of $\tilde{Q}^{*}$ are $\varepsilon_\mu\overline{Q_\mu}=(1,0,0,(-1)(-i))=Q_\mu$, so $\tilde{Q}^{*}=\tilde{Q}$ and the element is Hermitian; in the model $\mathsf{M}_2(\tilde{Q})=I+\sigma_3=\operatorname{diag}(2,0)$, a Hermitian matrix, and $\langle\tilde{Q},\tilde{Q}\rangle_{*}=2=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q}))$.
 
-**A product read in matrices.** Let $\tilde{P}=\vec e_x$ and $\tilde{Q}=\vec e_y$. Then $\tilde{P}\star\tilde{Q}=\vec e_x \vec e_y^{*}=-\vec e_z$, and in the model $\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y)^{\dagger}=(-i\sigma_1)(i\sigma_2)=\sigma_1\sigma_2=i\sigma_3=-\mathsf{M}_2(\vec e_z)$, as the theorem requires.
+**A product read in matrices.** Let $\tilde{Q}_1=\vec e_x$ and $\tilde{Q}_2=\vec e_y$. Then $\tilde{Q}_1\star\tilde{Q}_2=\vec e_x \vec e_y^{*}=-\vec e_z$, and in the model $\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y)^{\dagger}=(-i\sigma_1)(i\sigma_2)=\sigma_1\sigma_2=i\sigma_3=-\mathsf{M}_2(\vec e_z)$, as the theorem requires.
 
 ## The Matrices
 
@@ -212,7 +212,7 @@ Hermitian of square itself; the other rank-one idempotents of the multiplication
 
 ## Summary
 
-The $2\times2$ realization turns the Hermitian conjugation into the conjugate transpose, so the sesquilinear product is the matrix product with the conjugate transpose in the second slot, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})^{\dagger}$, with the identity matrix as a right unit alone (the left action of the unit is the conjugate transpose) and the Hermitian subspace the Hermitian matrices. The ternary product is the middle model $XY^{\dagger}Z$, the associator is $X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$, the sandwich is $X\mapsto PX^{\dagger}Q^{\dagger}$, and the idempotents are the Hermitian projections, $0$, $I$ and the orthogonal projections onto the lines of $\mathbb{C}^{2}$, of which the rank-one ones form $\mathbb{CP}^{1}$; the multiplication is simple with centre $\mathbb{C}I$, and the rank of an element is the rank of its matrix. The general plain sesquilinear form of the group is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q}))=\langle\tilde{Q},\tilde{P}\rangle_{*}$, whose diagonal is the definite norm, $\tfrac12\lVert \mathsf{M}_2(\tilde{Q})\rVert_F^2=\sum_\mu|Q_\mu|^2$, with $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert_E$; it is positive definite of signature $(8,0)$, of null set $\{0\}$. Its automorphism group is $\mathrm{U}(4)$, whose algebra-preserving part is $\mathrm{U}(2)\times \mathrm{U}(2)$ modulo the centre; the units are $GL_2(\mathbb{C})$, the norm-one group is $SL_2(\mathbb{C})$, and the unitary slice is $\mathrm{U}(2)$ with special part $SU(2)\cong\mathrm{Spin}(3)$. The determinant of a value is $\langle\tilde{P},\tilde{P}\rangle_{\natural}\overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ and its trace is $2\langle\tilde{P},\tilde{Q}\rangle_{*}$; the realization has scale $\sqrt2$, $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$.
+The $2\times2$ realization turns the Hermitian conjugation into the conjugate transpose, so the sesquilinear product is the matrix product with the conjugate transpose in the second slot, $\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)^{\dagger}$, with the identity matrix as a right unit alone (the left action of the unit is the conjugate transpose) and the Hermitian subspace the Hermitian matrices. The ternary product is the middle model $XY^{\dagger}Z$, the associator is $X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$, the sandwich is $X\mapsto \mathsf{M}_2(\tilde Q_1)X^{\dagger}\mathsf{M}_2(\tilde Q_2)^{\dagger}$, and the idempotents are the Hermitian projections, $0$, $I$ and the orthogonal projections onto the lines of $\mathbb{C}^{2}$, of which the rank-one ones form $\mathbb{CP}^{1}$; the multiplication is simple with centre $\mathbb{C}I$, and the rank of an element is the rank of its matrix. The general plain sesquilinear form of the group is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2))=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$, whose diagonal is the definite norm, $\tfrac12\lVert \mathsf{M}_2(\tilde{Q})\rVert_F^2=\sum_\mu|Q_\mu|^2$, with $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\lVert\tilde{Q}\rVert_E$; it is positive definite of signature $(8,0)$, of null set $\{0\}$. Its automorphism group is $\mathrm{U}(4)$, whose algebra-preserving part is $\mathrm{U}(2)\times \mathrm{U}(2)$ modulo the centre; the units are $GL_2(\mathbb{C})$, the norm-one group is $SL_2(\mathbb{C})$, and the unitary slice is $\mathrm{U}(2)$ with special part $SU(2)\cong\mathrm{Spin}(3)$. The determinant of a value is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\overline{\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}}$ and its trace is $2\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$; the realization has scale $\sqrt2$, $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$.
 
 ## Summary of Notation
 
@@ -220,12 +220,12 @@ The $2\times2$ realization turns the Hermitian conjugation into the conjugate tr
 |---|---|
 | $\mathsf{M}_2(\tilde{Q})$ | the $2\times2$ matrix of the realization, $\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_t$ |
 | $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ | the Hermitian conjugation is the conjugate transpose |
-| $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})^{\dagger}$ | the sesquilinear product is the conjugate-transposed matrix product |
+| $\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2)^{\dagger}$ | the sesquilinear product is the conjugate-transposed matrix product |
 | $I\star Y=Y^{\dagger}$, $Y\star I=Y$ | the identity is a right unit alone |
 | $\{X,Y,Z\}=XY^{\dagger}Z$, $[X,Y,Z]=X(Y^{\dagger}Z^{\dagger}-ZY^{\dagger})$ | the ternary product and the associator |
 | $\Pi^{\dagger}=\Pi=\Pi^{2}$ | the idempotents are the Hermitian projections |
-| $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})^{\dagger}\mathsf{M}_2(\tilde{Q}))=\langle\tilde{Q},\tilde{P}\rangle_{*}$ | the general plain sesquilinear form as the Hilbert–Schmidt pairing |
-| $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\langle\tilde{P},\tilde{Q}\rangle_{*}$, $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | the trace and the determinant of a value |
+| $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{Q}_1)^{\dagger}\mathsf{M}_2(\tilde{Q}_2))=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$ | the general plain sesquilinear form as the Hilbert–Schmidt pairing |
+| $\operatorname{Tr}\mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=2\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$, $\det \mathsf{M}_2(\tilde{Q}_1\star\tilde{Q}_2)=\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}\overline{\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}}$ | the trace and the determinant of a value |
 | $\lVert \mathsf{M}_2(\tilde{Q})\rVert_F=\sqrt2\,\lVert\tilde{Q}\rVert_E$ | the scale of the realization |
 | $\mathrm{U}(4)$, $\mathrm{U}(2)\times \mathrm{U}(2)$ modulo the centre | the automorphism group and the algebra-preserving part |
 

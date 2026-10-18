@@ -13,14 +13,14 @@ real span is the whole algebra.
 
 The product is *Introduction to the Symmetric Quaternionic Sesqualgebra*; the diagonal and the elements of square zero are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the form $K$ and its restrictions are *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra* and *The Krein Gram Matrix and the Restrictions of the Form*; the analogous closure table for the general product is *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the comparison of the closure patterns of the four rows is assembled in *The 12 Products of the Biquaternioid Complex Space*.
 
-**Conventions.** $\tilde Q=\sum_\mu Q_\mu e_\mu$; $\mathbb{B}=\mathbb{C}e_t\oplus\mathbf{e}$ is the scalar–vector decomposition; $\langle\tilde P,\tilde Q\rangle_{\natural*}=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})$; a real element has real coefficients, a Hermitian element has a real scalar coefficient and purely imaginary vector coefficients, and an anti-Hermitian element the reverse. The product is $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural*}e_t-P_t\overline{\vec Q}-\overline{Q_t}\vec P$.
+**Conventions.** $\tilde Q=\sum_\mu Q_\mu e_\mu$; $\mathbb{B}=\mathbb{C}e_t\oplus\mathbf{e}$ is the scalar–vector decomposition; $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$; a real element has real coefficients, a Hermitian element has a real scalar coefficient and purely imaginary vector coefficients, and an anti-Hermitian element the reverse. The product is $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$.
 
 ## The Product Rule on Each Subspace
 
 **Theorem (the scalar–vector form is the common rule).** On each of the remarkable subspaces the product is read from the single rule
 
 $$
-\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural*}e_t-P_t\overline{\vec Q}-\overline{Q_t}\vec P,
+\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1,
 $$
 
 the first summand lying in the centre and the second in the vector subspace.
@@ -43,17 +43,17 @@ The centre is closed, and with this product it is a conjugate-commutative, non-a
 
 ## The Vector Subspace
 
-**Theorem (the product lands in the centre).** For $\tilde P,\tilde Q$ in the vector subspace,
+**Theorem (the product lands in the centre).** For $\tilde Q_1,\tilde Q_2$ in the vector subspace,
 
 $$
-\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural*}\,e_t,
+\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}\,e_t,
 \qquad
-\langle\tilde P,\tilde Q\rangle_{\natural*}=-(\vec P,\overline{\vec Q}),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1,\overline{\vec Q_2}),
 $$
 
 a central element. The vector subspace is not closed; the image of the product on it is the centre, of real rank two.
 
-*Proof.* For $\tilde P,\tilde Q$ in the vector subspace the scalar coefficients $P_t,Q_t$ vanish, so the mixed term $-P_t\overline{\vec Q}-\overline{Q_t}\vec P$ vanishes and only the centre part remains. The value $\langle\tilde P,\tilde Q\rangle_{\natural*}=-(\vec P,\overline{\vec Q})$ ranges over $\mathbb{C}$ as $\vec P,\vec Q$ range, so the image is the whole centre, of real rank two.
+*Proof.* For $\tilde Q_1,\tilde Q_2$ in the vector subspace the scalar coefficients $Q_{1t},Q_{2t}$ vanish, so the mixed term $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$ vanishes and only the centre part remains. The value $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1,\overline{\vec Q_2})$ ranges over $\mathbb{C}$ as $\vec Q_1,\vec Q_2$ range, so the image is the whole centre, of real rank two.
 
 **Remark.** The product of two vectors is a scalar, as in a Clifford algebra; the difference is that the scalar is the *form value* and not the symmetric bilinear pair, and that the product of a vector with itself is negative, $\vec e_x\star \vec e_x=-e_t$, on every vector direction.
 
@@ -82,45 +82,45 @@ The real quaternion subspace is closed under the product and commutative on it, 
 
 ## The Anti-Quaternion Subspace
 
-**Theorem (the product lands in the real quaternion subspace).** For $\tilde P=i p$, $\tilde Q=iq$ with $p,q$ real,
+**Theorem (the product lands in the real quaternion subspace).** For $\tilde Q_1=i p$, $\tilde Q_2=iq$ with $p,q$ real,
 
 $$
-\tilde P\star\tilde Q=\Bigl(p_tq_t-\sum_{\mu\in\{x,y,z\}}p_\mu q_\mu\Bigr)e_t-p_t\vec q-q_t\vec p,
+\tilde Q_1\star\tilde Q_2=\Bigl(p_tq_t-\sum_{\mu\in\{x,y,z\}}p_\mu q_\mu\Bigr)e_t-p_t\vec q-q_t\vec p,
 $$
 
 an element of the real quaternion subspace. The anti-quaternion subspace is not closed; its image is the real quaternion subspace, of real rank four.
 
-*Proof.* For $\tilde P=ip$ the scalar coefficient is $ip_t$ and the vector coefficients are $ip_k$, so $\langle\tilde P,\tilde Q\rangle_{\natural*}=(ip_t)\overline{(iq_t)}-\sum_k(ip_k)\overline{(iq_k)}=(ip_t)(-iq_t)-\sum_k(ip_k)(-iq_k)=p_tq_t-\sum_kp_kq_k$, real. The vector part is $-ip_t\overline{iq}-\overline{iq_t}\,ip=-ip_t(-i)\vec q-(-iq_t)ip=-p_t\vec q-q_t\vec p$, real. So the value is real, and the image is the whole real quaternion subspace.
+*Proof.* For $\tilde Q_1=ip$ the scalar coefficient is $ip_t$ and the vector coefficients are $ip_k$, so $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=(ip_t)\overline{(iq_t)}-\sum_k(ip_k)\overline{(iq_k)}=(ip_t)(-iq_t)-\sum_k(ip_k)(-iq_k)=p_tq_t-\sum_kp_kq_k$, real. The vector part is $-ip_t\overline{iq}-\overline{iq_t}\,ip=-ip_t(-i)\vec q-(-iq_t)ip=-p_t\vec q-q_t\vec p$, real. So the value is real, and the image is the whole real quaternion subspace.
 
 **Remark.** The anti-quaternion subspace carries the same product as the real quaternion subspace, transported by $p\mapsto ip$; the two are the two real forms of the same four-real-dimensional product.
 
 ## The Hermitian Subspace
 
-**Theorem (closure).** For $\tilde P=a_t+i\vec\alpha$, $\tilde Q=b_t+i\vec\beta$ with real scalar coefficients and real vector parts,
+**Theorem (closure).** For $\tilde Q_1=a_t+i\vec\alpha$, $\tilde Q_2=b_t+i\vec\beta$ with real scalar coefficients and real vector parts,
 
 $$
-\tilde P\star\tilde Q=\Bigl(a_tb_t-\sum_{\mu\in\{x,y,z\}}\alpha_\mu\beta_\mu\Bigr)e_t
+\tilde Q_1\star\tilde Q_2=\Bigl(a_tb_t-\sum_{\mu\in\{x,y,z\}}\alpha_\mu\beta_\mu\Bigr)e_t
 +i\bigl(a_t\vec\beta-b_t\vec\alpha\bigr),
 $$
 
 an element of the Hermitian subspace: a real scalar part and a purely imaginary vector part. The Hermitian subspace is closed under the product, and its image is itself, of real rank four.
 
-*Proof.* A Hermitian element has a real scalar coefficient and purely imaginary vector coefficients; thus $P_t=a_t$, $\vec P=i\vec\alpha$ with $a_t,\vec\alpha$ real. Then $K=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})=a_tb_t-\sum_k(i\alpha_k)\overline{(i\beta_k)}=a_tb_t-\sum_k(i\alpha_k)(-i\beta_k)=a_tb_t-\sum_k\alpha_k\beta_k$, real. The vector part is $-P_t\overline{\vec Q}-\overline{Q_t}\vec P=-a_t(-i\vec\beta)-b_t(i\vec\alpha)=i(a_t\vec\beta-b_t\vec\alpha)$, purely imaginary. So the value is Hermitian. The image is the whole subspace, since $e_t\star e_t=e_t$ and $e_t\star i\vec e_k=i\vec e_k$ span the four real directions $e_t,i\vec e_x,i\vec e_y,i\vec e_z$.
+*Proof.* A Hermitian element has a real scalar coefficient and purely imaginary vector coefficients; thus $Q_{1t}=a_t$, $\vec Q_1=i\vec\alpha$ with $a_t,\vec\alpha$ real. Then $K=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})=a_tb_t-\sum_k(i\alpha_k)\overline{(i\beta_k)}=a_tb_t-\sum_k(i\alpha_k)(-i\beta_k)=a_tb_t-\sum_k\alpha_k\beta_k$, real. The vector part is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1=-a_t(-i\vec\beta)-b_t(i\vec\alpha)=i(a_t\vec\beta-b_t\vec\alpha)$, purely imaginary. So the value is Hermitian. The image is the whole subspace, since $e_t\star e_t=e_t$ and $e_t\star i\vec e_k=i\vec e_k$ span the four real directions $e_t,i\vec e_x,i\vec e_y,i\vec e_z$.
 
 **Remark.** With the centre and the real quaternion subspace, the Hermitian subspace is the third closed subspace of the block; the three closed subspaces are exactly the centre, the real quaternion subspace and the Hermitian subspace. On the real quaternion subspace the product is commutative; on the centre it is only conjugate-commutative; and on the Hermitian subspace it is not commutative either, since the imaginary vector part $i(a_t\vec\beta-b_t\vec\alpha)$ changes sign under the exchange of the two factors. The Hermitian subspace carries the form of signature $(1,3)$, one of the two real four-dimensional restrictions of $K$ read in *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*.
 
 ## The Anti-Hermitian Subspace
 
-**Theorem (the product lands in the Hermitian subspace).** For $\tilde P=ia_t+\vec\alpha$, $\tilde Q=ib_t+\vec\beta$ with real coefficients,
+**Theorem (the product lands in the Hermitian subspace).** For $\tilde Q_1=ia_t+\vec\alpha$, $\tilde Q_2=ib_t+\vec\beta$ with real coefficients,
 
 $$
-\tilde P\star\tilde Q=\Bigl(a_tb_t-\sum_{\mu\in\{x,y,z\}}\alpha_\mu\beta_\mu\Bigr)e_t
+\tilde Q_1\star\tilde Q_2=\Bigl(a_tb_t-\sum_{\mu\in\{x,y,z\}}\alpha_\mu\beta_\mu\Bigr)e_t
 +i\bigl(b_t\vec\alpha-a_t\vec\beta\bigr),
 $$
 
 an element of the Hermitian subspace. The anti-Hermitian subspace is not closed; its image is the Hermitian subspace, of real rank four.
 
-*Proof.* Here $P_t=ia_t$ and $\vec P=\vec\alpha$, so $\overline{Q_t}=-ib_t$ and $\overline{\vec Q}=\vec\beta$. The scalar part is $K=(ia_t)(-ib_t)-\sum_k\alpha_k\beta_k=a_tb_t-\sum_k\alpha_k\beta_k$, real. The vector part is $-P_t\overline{\vec Q}-\overline{Q_t}\vec P=-(ia_t)\vec\beta-(-ib_t)\vec\alpha=i(b_t\vec\alpha-a_t\vec\beta)$, purely imaginary. So the value is Hermitian, and the span of the values is the Hermitian subspace.
+*Proof.* Here $Q_{1t}=ia_t$ and $\vec Q_1=\vec\alpha$, so $\overline{Q_{2t}}=-ib_t$ and $\overline{\vec Q_2}=\vec\beta$. The scalar part is $K=(ia_t)(-ib_t)-\sum_k\alpha_k\beta_k=a_tb_t-\sum_k\alpha_k\beta_k$, real. The vector part is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1=-(ia_t)\vec\beta-(-ib_t)\vec\alpha=i(b_t\vec\alpha-a_t\vec\beta)$, purely imaginary. So the value is Hermitian, and the span of the values is the Hermitian subspace.
 
 **Remark.** The anti-Hermitian subspace carries the product out of itself into the Hermitian subspace, exactly as the anti-quaternion subspace carries it into the real quaternion subspace; the pattern is that the three not-closed subspaces each lose one level, in the chain $\mathbf{e}\to\mathbb{C}e_t$, $i\mathbb{H}_{\mathbb{B}}\to\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{-}\to\mathbb{M}_{+}$.
 
@@ -143,9 +143,9 @@ an element of the Hermitian subspace. The anti-Hermitian subspace is not closed;
 
 ## The Values of a General Pair
 
-**Theorem (the smallest real span of the values).** The smallest real subspace of $\mathbb{B}$ that contains the values $\tilde P\star\tilde Q$ of all pairs is $\mathbb{B}$ itself, of real dimension eight, with basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$. The scalar part of a value lies in the centre and the vector part in the vector subspace, and the two parts together generate the whole algebra.
+**Theorem (the smallest real span of the values).** The smallest real subspace of $\mathbb{B}$ that contains the values $\tilde Q_1\star\tilde Q_2$ of all pairs is $\mathbb{B}$ itself, of real dimension eight, with basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$. The scalar part of a value lies in the centre and the vector part in the vector subspace, and the two parts together generate the whole algebra.
 
-*Proof.* The scalar part $\langle\tilde P,\tilde Q\rangle_{\natural*}=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})$ ranges over $\mathbb{C}$: taking $\vec P=\vec Q=0$ gives $K=P_t\overline{Q_t}$, which is any complex number. The vector part is $-P_t\overline{\vec Q}-\overline{Q_t}\vec P$; taking $\tilde P=e_t$ and $\tilde Q$ arbitrary gives $-\overline{\vec Q}$, which ranges over the whole vector subspace. Hence the span contains the complex line $\mathbb{C}e_t$ and the vector subspace, whose sum is $\mathbb{B}$ of real dimension eight; no smaller subspace contains all values.
+*Proof.* The scalar part $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ ranges over $\mathbb{C}$: taking $\vec Q_1=\vec Q_2=0$ gives $K=Q_{1t}\overline{Q_{2t}}$, which is any complex number. The vector part is $-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$; taking $\tilde Q_1=e_t$ and $\tilde Q_2$ arbitrary gives $-\overline{\vec Q_2}$, which ranges over the whole vector subspace. Hence the span contains the complex line $\mathbb{C}e_t$ and the vector subspace, whose sum is $\mathbb{B}$ of real dimension eight; no smaller subspace contains all values.
 
 **Theorem (the span on each subspace).** Restricted to the remarkable subspaces, the values span subspaces of real dimension
 
@@ -155,7 +155,7 @@ $$
 
 for the centre, the vector subspace, the real quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces respectively.
 
-*Proof.* On the centre the value is $(\lambda e_t)\star(\mu e_t)=\lambda\overline{\mu}\,e_t$, which spans $\mathbb{C}e_t$, of real dimension two as $\lambda\overline{\mu}$ ranges over $\mathbb{C}$; on the vector subspace the value is $\langle\tilde P,\tilde Q\rangle_{\natural*}e_t$, and $K=-(\vec P,\overline{\vec Q})$ likewise ranges over $\mathbb{C}$, so the span is again the centre, of real dimension two. On each of the four four-dimensional subspaces the values span a space of real dimension four, read from pairs that lie in the subspace itself: $e_t\star e_t=e_t$ and $e_t\star \vec e_k=-\vec e_k$ span $\mathbb{H}_{\mathbb{B}}$, the image of the real quaternion subspace; $e_t\star e_t=e_t$ and $e_t\star i\vec e_k=i\vec e_k$ span $\mathbb{M}_{+}$, the image of the Hermitian subspace; and $ie_t\star ie_t=e_t$, $ie_t\star i\vec e_k=-\vec e_k$ span $\mathbb{H}_{\mathbb{B}}$ for the anti-quaternion subspace, while $ie_t\star ie_t=e_t$, $ie_t\star \vec e_k=-i\vec e_k$ span $\mathbb{M}_{+}$ for the anti-Hermitian one.
+*Proof.* On the centre the value is $(\lambda e_t)\star(\mu e_t)=\lambda\overline{\mu}\,e_t$, which spans $\mathbb{C}e_t$, of real dimension two as $\lambda\overline{\mu}$ ranges over $\mathbb{C}$; on the vector subspace the value is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t$, and $K=-(\vec Q_1,\overline{\vec Q_2})$ likewise ranges over $\mathbb{C}$, so the span is again the centre, of real dimension two. On each of the four four-dimensional subspaces the values span a space of real dimension four, read from pairs that lie in the subspace itself: $e_t\star e_t=e_t$ and $e_t\star \vec e_k=-\vec e_k$ span $\mathbb{H}_{\mathbb{B}}$, the image of the real quaternion subspace; $e_t\star e_t=e_t$ and $e_t\star i\vec e_k=i\vec e_k$ span $\mathbb{M}_{+}$, the image of the Hermitian subspace; and $ie_t\star ie_t=e_t$, $ie_t\star i\vec e_k=-\vec e_k$ span $\mathbb{H}_{\mathbb{B}}$ for the anti-quaternion subspace, while $ie_t\star ie_t=e_t$, $ie_t\star \vec e_k=-i\vec e_k$ span $\mathbb{M}_{+}$ for the anti-Hermitian one.
 
 **Remark (the image is not among the remarkable subspaces).** The values of a general pair lie in no subspace of the remarkable subspaces, and their span is the whole algebra; this is the content of the first theorem, and it is the reason the block's image is not one of the remarkable subspaces — unlike the image of the sibling sesquilinear symmetrisation $\mathrm{SPS}$, which is the centre. The corresponding statement for the general quaternionic sesquilinear row is in *Remarkable Subspaces under the General Quaternionic Sesqualgebra*.
 
@@ -175,7 +175,7 @@ for the centre, the vector subspace, the real quaternion, anti-quaternion, Hermi
 
 ## Summary
 
-The product of the block is read on the remarkable subspaces by the single rule $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural*}e_t-P_t\overline{\vec Q}-\overline{Q_t}\vec P$. The centre is closed, with $(\lambda e_t)\star(\mu e_t)=\lambda\overline{\mu}\,e_t$; the vector subspace is not closed and maps into the centre, of real rank two; the real quaternion subspace is closed and commutative, of real rank four; the anti-quaternion subspace is not closed and maps onto the real quaternion subspace; the Hermitian subspace is closed, of real rank four; and the anti-Hermitian subspace is not closed and maps onto the Hermitian subspace. Three subspaces are closed — the centre, the real quaternion subspace and the Hermitian subspace — and three are not, with images one level down. The values of a general pair are not confined to a subspace of the remarkable subspaces: their smallest real span is the whole algebra, of real dimension eight, with the scalar part in the centre and the vector part in the vector subspace.
+The product of the block is read on the remarkable subspaces by the single rule $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}e_t-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1$. The centre is closed, with $(\lambda e_t)\star(\mu e_t)=\lambda\overline{\mu}\,e_t$; the vector subspace is not closed and maps into the centre, of real rank two; the real quaternion subspace is closed and commutative, of real rank four; the anti-quaternion subspace is not closed and maps onto the real quaternion subspace; the Hermitian subspace is closed, of real rank four; and the anti-Hermitian subspace is not closed and maps onto the Hermitian subspace. Three subspaces are closed — the centre, the real quaternion subspace and the Hermitian subspace — and three are not, with images one level down. The values of a general pair are not confined to a subspace of the remarkable subspaces: their smallest real span is the whole algebra, of real dimension eight, with the scalar part in the centre and the vector part in the vector subspace.
 
 ## Summary of Notation
 
@@ -187,7 +187,7 @@ The product of the block is read on the remarkable subspaces by the single rule 
 | $i\mathbb{H}_{\mathbb{B}}$ | the anti-quaternion subspace; image $\mathbb{H}_{\mathbb{B}}$, rank $4$ |
 | $\mathbb{M}_{+}$ | the Hermitian subspace; closed, image rank $4$ |
 | $\mathbb{M}_{-}$ | the anti-Hermitian subspace; image $\mathbb{M}_{+}$, rank $4$ |
-| $\mathrm{span}_{\mathbb{R}}\{\tilde P\star\tilde Q:\tilde P,\tilde Q\in\mathbb{B}\}=\mathbb{B}$ | the smallest real span, of the values of all pairs, of real dimension eight |
+| $\mathrm{span}_{\mathbb{R}}\{\tilde Q_1\star\tilde Q_2:\tilde Q_1,\tilde Q_2\in\mathbb{B}\}=\mathbb{B}$ | the smallest real span, of the values of all pairs, of real dimension eight |
 
 ## Further Reading
 

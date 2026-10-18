@@ -186,10 +186,10 @@ The reason for the difference is that the split complex algebra $\mathbb{D}$ has
 
 ### The Idempotents of $\mathbb{H}_{\mathbb{D}}$
 
-The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde P$ with $\tilde P^2 = \tilde P$. In the idempotent basis, an element $\tilde P = \tilde P_+ \tilde\Pi_1 + \tilde P_- \tilde\Pi_2$ is idempotent if and only if
+The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde Q$ with $\tilde Q^2 = \tilde Q$. In the idempotent basis, an element $\tilde Q = \tilde Q_+ \tilde\Pi_1 + \tilde Q_- \tilde\Pi_2$ is idempotent if and only if
 
 $$
-\tilde P_+^2 = \tilde P_+, \qquad \tilde P_-^2 = \tilde P_-.
+\tilde Q_+^2 = \tilde Q_+, \qquad \tilde Q_-^2 = \tilde Q_-.
 $$
 
 In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements
@@ -205,7 +205,7 @@ These are the only idempotents. The two nontrivial idempotents $\tilde\Pi_1$ and
 In the biquaternion case, the roots of $-1$ are related to the idempotents by the formula
 
 $$
-\tilde P = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i,
+\tilde\Pi = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i,
 $$
 
 where $\tilde\Xi$ is a root of $-1$ and $i$ is the scalar imaginary. This formula gives all the idempotents of the biquaternion algebra.

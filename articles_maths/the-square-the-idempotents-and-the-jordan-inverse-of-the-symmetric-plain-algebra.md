@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the three structures a commutative unital Jordan algebra is built from: the **square** $\tilde Q\mapsto\tilde Q\bullet\tilde Q$ and the quadratic map it defines, the **idempotents** $\tilde Q\bullet\tilde Q=\tilde Q$, and the **inverse** of an element.
+The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*. This article reads the three structures a commutative unital Jordan algebra is built from: the **square** $\tilde Q_2\mapsto\tilde Q_2\bullet\tilde Q_2$ and the quadratic map it defines, the **idempotents** $\tilde Q_2\bullet\tilde Q_2=\tilde Q_2$, and the **inverse** of an element.
 
 The results are collected here because they are one subject. The block is a Jordan algebra of degree two, and its degree is the statement that every element satisfies a quadratic identity with a **generic trace** $T(\tilde Q)=2Q_t$ and a **generic norm** $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$; the idempotents are read off the same identity at integral trace; the inverse is the companion root of the quadratic; and the isotropic cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ is what makes the algebra not a division Jordan algebra.
 
 The square of the block is the plain square, so the idempotents of the block are the idempotents of the plain product, classified in *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the norm is the biquaternion norm of *Norm and Invertibility in the General Quaternionic Algebra*. What this article adds is the reading of those facts as the degree-two structure of the Jordan algebra, and the fuller theory of the Jordan inverse. The Common Theory articles of the block are *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *The Specificities of the Symmetric Plain Algebra*; the trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the idempotents as minimal ideals of the parent are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; and the placement of the block among the twelve operations is *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec Q,\vec Q)=\sum_kQ_k^2$. The product is $\bullet$, the symmetric plain product; the product $\tilde P\tilde Q$ without a mark is the general plain one. The natural conjugate is $\tilde Q^{\natural}=Q_te_t-\vec Q$, and the biquaternion norm is $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ of *Norm and Invertibility in the General Quaternionic Algebra*, written $\langle\tilde Q\rangle_{\natural}$ here.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec Q,\vec Q)=\sum_kQ_k^2$. The product is $\bullet$, the symmetric plain product; the product $\tilde Q_1\tilde Q_2$ without a mark is the general plain one. The natural conjugate is $\tilde Q^{\natural}=Q_te_t-\vec Q$, and the biquaternion norm is $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ of *Norm and Invertibility in the General Quaternionic Algebra*, written $\langle\tilde Q\rangle_{\natural}$ here.
 
 ## The Square and the Quadratic Map
 
@@ -20,7 +20,7 @@ $$
 \tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_t^2-(\vec Q,\vec Q)\bigr]e_t+2Q_t\vec Q.
 $$
 
-*Proof.* $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^2+\tilde Q^2)=\tilde Q^2$, and the plain square is the displayed form, read from the scalar–vector rule of *Introduction to the Biquaternion Algebra* at $\tilde P=\tilde Q$.
+*Proof.* $\tilde Q_2\bullet\tilde Q_2=\tfrac12(\tilde Q_2^2+\tilde Q_2^2)=\tilde Q_2^2$, and the plain square is the displayed form, read from the scalar–vector rule of *Introduction to the Biquaternion Algebra* at $\tilde Q_1=\tilde Q_2$.
 
 **Remark (the block's square and the algebra's square are one).** Because the antisymmetric part of the plain product is alternating, its diagonal vanishes, and the plain square is carried by the symmetric part alone. **The square of the block and the square of the algebra are therefore the same map** $\tilde Q\mapsto\tilde Q^2$, and the antisymmetric part carries none of it. The spectrum of the block is the spectrum of the algebra, and the minimal polynomial is read from this square.
 
@@ -29,7 +29,7 @@ $$
 **Proposition.** The product is the polarisation of the square:
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl((\tilde P+\tilde Q)\bullet(\tilde P+\tilde Q)-\tilde P\bullet\tilde P-\tilde Q\bullet\tilde Q\bigr).
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl((\tilde Q_1+\tilde Q_2)\bullet(\tilde Q_1+\tilde Q_2)-\tilde Q_1\bullet\tilde Q_1-\tilde Q_2\bullet\tilde Q_2\bigr).
 $$
 
 *Proof.* The product is $\mathbb{C}$-bilinear and commutative, so the square of a sum expands as the sum of the two squares and twice the product.
@@ -120,7 +120,7 @@ $$
 
 ### The Generic Norm and the Isotropic Cone
 
-The generic norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the biquaternion norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$ of *Norm and Invertibility in the General Quaternionic Algebra*, a complex-valued multiplicative algebraic norm vanishing exactly on the isotropic cone $\{N=0\}$, the origin together with the zero divisors. Its polar form is the complex bilinear dot product $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, symmetric and non-degenerate, with Gram matrix the identity $\mathrm{I}_4$ in the coefficient basis.
+The generic norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the biquaternion norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$ of *Norm and Invertibility in the General Quaternionic Algebra*, a complex-valued multiplicative algebraic norm vanishing exactly on the isotropic cone $\{N=0\}$, the origin together with the zero divisors. Its polar form is the complex bilinear dot product $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1,\mu} Q_{2,\mu}$, symmetric and non-degenerate, with Gram matrix the identity $\mathrm{I}_4$ in the coefficient basis.
 
 **Definition.** The **isotropic cone** of the block is the set
 

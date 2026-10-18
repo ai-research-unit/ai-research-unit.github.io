@@ -27,10 +27,10 @@ The article is organised as follows. The next section fixes the classical field,
 The relativistic scalar field of the framework is the central-valued complex field
 
 $$
-\tilde{\Phi}(\tilde{Q})=\phi(\tilde{Q})\,e_t,\qquad \phi:\mathbb{R}^{1,3}\to\mathbb{C},
+\tilde{\Phi}(\tilde{R})=\phi(\tilde{R})\,e_t,\qquad \phi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
 
-with $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$. Its action is $S[\tilde{\Phi}]=\int\mathcal{L}\,d^4x$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
+with $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$. Its action is $S[\tilde{\Phi}]=\int\mathcal{L}\,d^4x$ with the real Lagrangian density established by the companion article *Noether's Theorem in Biquaternionic Form*,
 
 $$
 \mathcal{L}=-\,\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right]
@@ -82,7 +82,7 @@ $$
 \langle\tilde P/\hbar\rangle_{\natural}=\tilde P\tilde P^{\natural}/\hbar^{2}=\left(-\frac{\omega^2}{c^2}+\vec k^2\right)e_t ,
 $$
 
-and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$. Substituting $\tilde{\Phi}=\phi_0\exp(i\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar)e_t$ into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ gives $\omega^2/c^2-\vec k^2=\mu^2$, which is the mass-shell condition
+and the plane-wave phase is the scalar part $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$. Substituting $\tilde{\Phi}=\phi_0\exp(i\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar)e_t$ into $\left(\Box-\mu^2\right)\tilde{\Phi}=0$ gives $\omega^2/c^2-\vec k^2=\mu^2$, which is the mass-shell condition
 
 $$
 \langle\tilde P/\hbar\rangle_{\natural}=-\frac{m^2c^2}{\hbar^2}\,e_t .
@@ -137,11 +137,11 @@ The operator $a^{\mathrm{fop}}_{\vec p}$ annihilates a particle of momentum $\ve
 The biquaternion form of the expansion is the replacement of the phase $\exp(\mp ip\cdot x)$ by a central unitary element built from the material four-wavevector. With $\tilde P/\hbar=iE_{\vec p}e_t+\vec p$ in natural units, the identity above gives
 
 $$
-\mathrm{Sc}\!\left(\tilde P\tilde Q^{\natural}\right)/\hbar=\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-E_{\vec p}t=-p\cdot x ,
+\mathrm{Sc}\!\left(\tilde P\tilde R^{\natural}\right)/\hbar=\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-E_{\vec p}t=-p\cdot x ,
 \qquad
-\exp(-ip\cdot x)=\exp(\,i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar),
+\exp(-ip\cdot x)=\exp(\,i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar),
 \qquad
-\exp(+ip\cdot x)=\exp(-i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar) .
+\exp(+ip\cdot x)=\exp(-i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar) .
 $$
 
 The exponentials are central, so the mode expansion is a sum of central phases multiplying operators; the field operator at each event is an operator times $e_t$, i.e. it is central-valued as an operator-valued distribution, and the transport of the phase is the framework's own. The normalization $1/\sqrt{2E_{\vec p}}$ and the measure $d^3p/(2\pi)^3$ are the standard Lorentz-invariant ones and are inherited.
@@ -233,7 +233,7 @@ $$
 \big[\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),\phi^{\mathrm{fop}\dagger}(\vec y,t)\big]=0,
 $$
 
-because the integrand of the momentum integral is odd under $\vec p\to-\vec p$; this is the statement that the field is a canonical coordinate and not its own momentum. For spacelike separation, $\langle\tilde{Q}-\tilde{Y}\rangle_{\natural}>0$, it vanishes as well, which is **microcausality**: two measurements of the field in causally disconnected regions commute, and the quantization does not correlate them. For timelike separation it does not vanish, and the commutator is what enforces the canonical relation and the positivity of the energy. The standard result that $\Delta$ has support on the light cone and its interior is inherited from the standard theory; the framework's notation neither alters it nor needs to.
+because the integrand of the momentum integral is odd under $\vec p\to-\vec p$; this is the statement that the field is a canonical coordinate and not its own momentum. For spacelike separation, $\langle\tilde{R}-\tilde{Y}\rangle_{\natural}>0$, it vanishes as well, which is **microcausality**: two measurements of the field in causally disconnected regions commute, and the quantization does not correlate them. For timelike separation it does not vanish, and the commutator is what enforces the canonical relation and the positivity of the energy. The standard result that $\Delta$ has support on the light cone and its interior is inherited from the standard theory; the framework's notation neither alters it nor needs to.
 
 ## What Is Standard and What Is Open
 
@@ -276,7 +276,7 @@ $$
 \left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot x)\right),
 $$
 
-the phases being central unitaries $\exp(\pm i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar)$ built from the material four-wavevector $\tilde P/\hbar=iE_{\vec p}e_t+\vec p$; the mode commutators are $[a^{\mathrm{fop}}_{\vec p},{a^{\mathrm{fop}}_{\vec k}}^\dagger]=[b^{\mathrm{fop}}_{\vec p},{b^{\mathrm{fop}}_{\vec k}}^\dagger]=(2\pi)^3\delta^{(3)}(\vec p-\vec k)$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
+the phases being central unitaries $\exp(\pm i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar)$ built from the material four-wavevector $\tilde P/\hbar=iE_{\vec p}e_t+\vec p$; the mode commutators are $[a^{\mathrm{fop}}_{\vec p},{a^{\mathrm{fop}}_{\vec k}}^\dagger]=[b^{\mathrm{fop}}_{\vec p},{b^{\mathrm{fop}}_{\vec k}}^\dagger]=(2\pi)^3\delta^{(3)}(\vec p-\vec k)$ and all others zero, and they reproduce the equal-time relation. The Fock space is the symmetric algebra of the one-particle space. The Hamiltonian is $:\!H\!:=\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ after normal ordering, and the normal-ordered charge has particles and antiparticles of opposite sign.
 
 The field's value space is the centre $\mathbb{C}_{\mathbb{B}}$, and the algebra supplies no ladder for it: no pair in $\mathbb{B}$ satisfies $[a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=e_t$, since the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$. The scalar mode algebra is thus the Weyl algebra of an imported module. The quantization is a transcription of standard canonical quantization into the framework's notation; its distinctive content is the central-valuedness of the field, the biquaternion-norm interpretation of the mass shell, and the explicit determination that this sector, alone among the three, receives nothing algebraic from $\mathbb{B}$.
 
@@ -289,7 +289,7 @@ The field's value space is the centre $\mathbb{C}_{\mathbb{B}}$, and the algebra
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the scalar field's value space |
-| $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Material coordinate, $\in\mathbb{M}_-$, and its biquaternion norm; spacelike means $N>0$ |
+| $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}$ | Material coordinate, $\in\mathbb{M}_-$, and its biquaternion norm; spacelike means $N>0$ |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian |
 | $\tilde{\Phi}=\phi\,e_t$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |

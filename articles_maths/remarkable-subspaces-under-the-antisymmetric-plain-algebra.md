@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The bracket of the antisymmetric plain algebra, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, meets the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — and this article reads the bracket on each of the remarkable subspaces, one to a section.
+The bracket of the antisymmetric plain algebra, $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$, meets the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — and this article reads the bracket on each of the remarkable subspaces, one to a section.
 
 Because the bracket is the cross product of the vector parts and nothing else, the readings are read off a single fact: the sector, real or purely imaginary, that the vector part of an element of the subspace occupies. The result is a table of four stabilities and two failures. The centre, the vector subspace, the quaternion subspace and the anti-Hermitian subspace are **stable** under the bracket, hence Lie subalgebras; the anti-quaternion subspace and the Hermitian subspace are **not**, and the bracket of two of their elements is always a real vector. The identifications of the Lie subalgebras are $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$, $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and $\mathbb{M}_-\cong\mathfrak{u}(2)$; the two failures have image the real vector triple $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, identified with $\mathfrak{su}(2)$. The centre is where the bracket vanishes and the vector subspace is where it takes its values; the two together are the whole algebra.
 
@@ -10,17 +10,17 @@ The bracket is introduced in *Introduction to the Antisymmetric Plain Algebra* a
 
 ## The Bracket on the Remarkable Subspaces: the Rule
 
-**Lemma (the sector rule).** Let $\tilde P,\tilde Q$ have vector parts in the real vector triple $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ or in the imaginary triple $i\mathbf{B}_1=\mathbb{R}(i\vec e_x)\oplus\mathbb{R}(i\vec e_y)\oplus\mathbb{R}(i\vec e_z)$. Then
+**Lemma (the sector rule).** Let $\tilde Q_1,\tilde Q_2$ have vector parts in the real vector triple $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ or in the imaginary triple $i\mathbf{B}_1=\mathbb{R}(i\vec e_x)\oplus\mathbb{R}(i\vec e_y)\oplus\mathbb{R}(i\vec e_z)$. Then
 
 $$
-\vec P\times\vec Q\in
+\vec Q_1\times\vec Q_2\in
 \begin{cases}
-\mathbf{B}_1, & \vec P,\vec Q\in\mathbf{B}_1\text{ or }\vec P,\vec Q\in i\mathbf{B}_1,\\[2pt]
+\mathbf{B}_1, & \vec Q_1,\vec Q_2\in\mathbf{B}_1\text{ or }\vec Q_1,\vec Q_2\in i\mathbf{B}_1,\\[2pt]
 i\mathbf{B}_1, & \text{one in }\mathbf{B}_1\text{ and one in }i\mathbf{B}_1.
 \end{cases}
 $$
 
-*Proof.* Write $\vec P=i^{\varepsilon}\vec p$, $\vec Q=i^{\eta}\vec q$ with $\vec p,\vec q$ in the real vector triple and $\varepsilon,\eta\in\{0,1\}$. Then $\vec P\times\vec Q=i^{\varepsilon+\eta}(\vec p\times\vec q)$, and $\vec p\times\vec q\in\mathbf{B}_1$; the sector is $\varepsilon+\eta$ modulo two, which is the statement.
+*Proof.* Write $\vec Q_1=i^{\varepsilon}\vec p$, $\vec Q_2=i^{\eta}\vec q$ with $\vec p,\vec q$ in the real vector triple and $\varepsilon,\eta\in\{0,1\}$. Then $\vec Q_1\times\vec Q_2=i^{\varepsilon+\eta}(\vec p\times\vec q)$, and $\vec p\times\vec q\in\mathbf{B}_1$; the sector is $\varepsilon+\eta$ modulo two, which is the statement.
 
 **Remark (the two gradings).** The rule is a $\mathbb{Z}/2$-grading of the real algebra in two ways. With the two real subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ the brackets are $[\mathbb{H}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}]\subseteq\mathbb{H}_{\mathbb{B}}$, $[\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}}]\subseteq i\mathbb{H}_{\mathbb{B}}$ and $[i\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}}]\subseteq\mathbb{H}_{\mathbb{B}}$; with the two subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ they are $[\mathbb{M}_-,\mathbb{M}_-]\subseteq\mathbb{M}_-$, $[\mathbb{M}_-,\mathbb{M}_+]\subseteq\mathbb{M}_+$ and $[\mathbb{M}_+,\mathbb{M}_+]\subseteq\mathbb{M}_-$. **Both decompositions of the real algebra, $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$, are gradings of the bracket**, the first with subalgebra $\mathbb{H}_{\mathbb{B}}$ and the second with subalgebra $\mathbb{M}_-$.
 
@@ -29,7 +29,7 @@ $$
 **Theorem.** The bracket vanishes identically on the centre:
 
 $$
-\tilde P\wedge\tilde Q=0\qquad(\tilde P,\tilde Q\in\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t).
+\tilde Q_1\wedge\tilde Q_2=0\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t).
 $$
 
 The centre is a Lie subalgebra of $\mathfrak{g}$, abelian of complex dimension one and real dimension two; it is the kernel of the adjoint of every element and the radical of the bracket, and it is the radical of the Killing form of *The Killing Form of the Antisymmetric Plain Algebra*.
@@ -43,7 +43,7 @@ The centre is a Lie subalgebra of $\mathfrak{g}$, abelian of complex dimension o
 **Theorem.** The vector subspace $\mathrm{Vect}(\mathbb{B})$ is stable under the bracket:
 
 $$
-\vec P\times\vec Q\in\mathrm{Vect}(\mathbb{B})\qquad(\vec P,\vec Q\in\mathrm{Vect}(\mathbb{B})),
+\vec Q_1\times\vec Q_2\in\mathrm{Vect}(\mathbb{B})\qquad(\vec Q_1,\vec Q_2\in\mathrm{Vect}(\mathbb{B})),
 $$
 
 and it is a Lie subalgebra of complex dimension three and real dimension six, an ideal, and the derived algebra of the whole block. It is identified with the cross-product algebra of $\mathbb{C}^3$ and with $\mathfrak{sl}(2,\mathbb{C})$,
@@ -142,7 +142,7 @@ $$
 
 The invariant form of the block is computed in *The Killing Form of the Antisymmetric Plain Algebra*, where its restriction to each of the remarkable subspaces and its isotropic elements are found; the section is recorded here as the sixth row of the table, and one line of it belongs to the bracket. An element $\tilde Q$ is isotropic for the form when $\kappa(\tilde Q,\tilde Q)=-2\,\vec Q\cdot\vec Q=0$, that is when its vector part is isotropic for the complexified scalar product.
 
-**Theorem.** The isotropic elements of the remarkable subspaces are: the whole centre, since the form vanishes there; the scalar directions $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ on the four real subspaces, and no vector direction, because the vector part there is real or purely imaginary and a sum of three squares of real numbers vanishes only at zero; and the complex null cone $\{\vec P\cdot\vec P=0\}$ on the vector subspace, of real dimension four. On the centre and on the scalar directions the isotropy is the vanishing of the bracket as well, since those are the central directions; on the vector null cone the bracket is not identically zero, and the isotropic elements are the elements of the simple derived algebra that are isotropic for its invariant form.
+**Theorem.** The isotropic elements of the remarkable subspaces are: the whole centre, since the form vanishes there; the scalar directions $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ on the four real subspaces, and no vector direction, because the vector part there is real or purely imaginary and a sum of three squares of real numbers vanishes only at zero; and the complex null cone $\{\vec Q_1\cdot\vec Q_1=0\}$ on the vector subspace, of real dimension four. On the centre and on the scalar directions the isotropy is the vanishing of the bracket as well, since those are the central directions; on the vector null cone the bracket is not identically zero, and the isotropic elements are the elements of the simple derived algebra that are isotropic for its invariant form.
 
 *Proof.* The form is $-2\,\vec Q\cdot\vec Q$ on the vector part and zero on the scalar part, by *The Killing Form of the Antisymmetric Plain Algebra*; the four real subspaces have real or purely imaginary vector parts, and the two complex subspaces, the centre and the vector subspace, have the components as displayed. The vanishing of the bracket on the central directions is the previous sections.
 
@@ -185,7 +185,7 @@ The bracket of the antisymmetric plain algebra is the cross product of the vecto
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\wedge\tilde Q=\vec P\times\vec Q$ | the bracket of the block, the cross product of the vector parts |
+| $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ | the bracket of the block, the cross product of the vector parts |
 | $\mathbf{B}_1=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ | the real vector triple, the image of the two failures |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre, the subspace on which the bracket vanishes |
 | $\mathrm{Vect}(\mathbb{B})$ | the stable image of the bracket $\cong\mathfrak{sl}(2,\mathbb{C})$ |

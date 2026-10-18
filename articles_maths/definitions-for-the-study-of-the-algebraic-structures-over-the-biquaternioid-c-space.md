@@ -6,11 +6,11 @@ This article collects, in one place, the definitions of the classes of elements 
 
 The point of collecting them is that **every definition is relative to a product**, and this is easy to lose when each structure is read on its own. The words *zero divisor*, *idempotent*, *nilpotent*, *unit* each name an equation, and the equation names a product; an element that satisfies the equation of one product need not satisfy that of another. The definitions are therefore stated for a general product $\star$, and every statement that singles out a product names it.
 
-**Conventions.** The complex space is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central imaginary $i$, and an element is $\tilde P=P_0e_t+\vec P$ with $\vec P=\sum_{k=1}^{3}P_k\vec e_k$, $P_\mu\in\mathbb{C}$. The natural conjugation is ${}^{\natural}$, the star is ${}^{*}$, and the four general products are
+**Conventions.** The complex space is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central imaginary $i$, and an element is $\tilde Q=Q_0e_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$, $Q_\mu\in\mathbb{C}$. The natural conjugation is ${}^{\natural}$, the star is ${}^{*}$, and the four general products are
 $$
-\tilde P\tilde Q,\qquad \tilde P^{\natural}\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q^{*}.
+\tilde Q\tilde Q_2,\qquad \tilde Q^{\natural}\tilde Q_2,\qquad \tilde Q\tilde Q_2^{*},\qquad \tilde Q^{\natural}\tilde Q_2^{*}.
 $$
-The **generic product** is written $\star$; the **general plain bilinear product**, the multiplication of the algebra, is written $\tilde P\tilde Q$. Unqualified, a class is taken in the general plain bilinear product, and where another product is meant it is named. The twelve products are the four general products and their symmetric and antisymmetric parts.
+The **generic product** is written $\star$; the **general plain bilinear product**, the multiplication of the algebra, is written $\tilde Q\tilde Q_2$. Unqualified, a class is taken in the general plain bilinear product, and where another product is meant it is named. The twelve products are the four general products and their symmetric and antisymmetric parts.
 
 - The elements, the basis and the four conjugations are *The Biquaternioid as a Vector Space over $\mathbb{C}$*.
 - The four general products, their co-ordinate forms and the tables of the twelve are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *The 12 Products of the Biquaternioid Complex Space*.
@@ -73,14 +73,14 @@ The inverse is defined by an equation in $\star$, so it is relative to the produ
 
 | product | left unit | right unit | two-sided unit |
 |---|---|---|---|
-| $\tilde P\tilde Q$ | $e_t$ | $e_t$ | $e_t$ |
-| $\tilde P\tilde Q^{*}$ | none | $e_t$ | none |
-| $\tilde P^{\natural}\tilde Q$ | $e_t$ | none | none |
-| $\tilde P^{\natural}\tilde Q^{*}$ | none | none | none |
+| $\tilde Q\tilde Q_2$ | $e_t$ | $e_t$ | $e_t$ |
+| $\tilde Q\tilde Q_2^{*}$ | none | $e_t$ | none |
+| $\tilde Q^{\natural}\tilde Q_2$ | $e_t$ | none | none |
+| $\tilde Q^{\natural}\tilde Q_2^{*}$ | none | none | none |
 
 The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*.
 
-The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde P$ invertible exactly when the central square $C(\tilde P)=\sum_\mu P_\mu^{2}$ is nonzero, is *Norm and Invertibility in the General Quaternionic Algebra*.
+The general reading, for an associative unital algebra, is *Unital Algebras*; the invertibility criterion of the plain product, $\tilde Q$ invertible exactly when the central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ is nonzero, is *Norm and Invertibility in the General Quaternionic Algebra*.
 
 ---
 
@@ -138,10 +138,10 @@ The square-zero sets of the four general products differ, and the difference is 
 
 | product | square-zero elements |
 |---|---|
-| $\tilde P\tilde Q$ | the pure isotropic cone $\{P_0=0,\ (\vec P,\vec P)=0\}$ |
-| $\tilde P\tilde Q^{*}$ | the origin alone |
-| $\tilde P^{\natural}\tilde Q$ | the whole zero-divisor cone $\mathcal{C}$ |
-| $\tilde P^{\natural}\tilde Q^{*}$ | the solutions of $\overline{\tilde P}\tilde P=0$ |
+| $\tilde Q\tilde Q_2$ | the pure isotropic cone $\{Q_0=0,\ (\vec Q,\vec Q)=0\}$ |
+| $\tilde Q\tilde Q_2^{*}$ | the origin alone |
+| $\tilde Q^{\natural}\tilde Q_2$ | the whole zero-divisor cone $\mathcal{C}$ |
+| $\tilde Q^{\natural}\tilde Q_2^{*}$ | the solutions of $\overline{\tilde Q}\tilde Q=0$ |
 
 The table is verified on the squares and is the table of *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, where the four sets, their chain $Z_1\subseteq Z_2$, $Z_4\subseteq Z_2$, $Z_3=\{0\}$ and their incomparable pair are proved. **The implication "nilpotent implies zero divisor" is not uniform**: it holds for the plain product and the natural product, and it fails for the plain sesquilinear product, whose only square-zero element is the origin. It is a statement of a product and not of the twelve.
 
@@ -149,15 +149,15 @@ The table is verified on the squares and is the table of *Zero Divisors in the A
 
 ## 6. Powers, the Square and the Roots
 
-**Definition (power).** Let $\star$ be a product. The **square** of an element is $\tilde P^{\star2}=\tilde P\star\tilde P$. When $\star$ is associative the higher powers are unambiguous, $\tilde P^{\star k}=\tilde P\star\cdots\star\tilde P$, and they obey $\tilde P^{\star(i+j)}=\tilde P^{\star i}\star\tilde P^{\star j}$; when $\star$ is not associative the notation needs a bracketing, and the **left-nested reading** is $\tilde P^{\star k}=\bigl(\cdots\bigl((\tilde P\star\tilde P)\star\tilde P\bigr)\cdots\star\tilde P\bigr)$. Of the four general products only the plain one is associative, so only there is $\tilde P^{\star k}$ bracketing-free.
+**Definition (power).** Let $\star$ be a product. The **square** of an element is $\tilde Q^{\star2}=\tilde Q\star\tilde Q$. When $\star$ is associative the higher powers are unambiguous, $\tilde Q^{\star k}=\tilde Q\star\cdots\star\tilde Q$, and they obey $\tilde Q^{\star(i+j)}=\tilde Q^{\star i}\star\tilde Q^{\star j}$; when $\star$ is not associative the notation needs a bracketing, and the **left-nested reading** is $\tilde Q^{\star k}=\bigl(\cdots\bigl((\tilde Q\star\tilde Q)\star\tilde Q\bigr)\cdots\star\tilde Q\bigr)$. Of the four general products only the plain one is associative, so only there is $\tilde Q^{\star k}$ bracketing-free.
 
 **Definition (root of a central value).** Let $\lambda\in\mathbb{C}$. A **root of $\lambda$ in $\star$** is a nonzero element with
 $$
-\tilde P\star\tilde P=\lambda e_t .
+\tilde Q\star\tilde Q=\lambda e_t .
 $$
 The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the nonzero nilpotents of §5.
 
-**Definition (square root of an element).** For an element $a\in\mathbb{B}$, a **square root of $a$ in $\star$** is an element with $\tilde P\star\tilde P=a$; the roots of a central value are the special case $a=\lambda e_t$.
+**Definition (square root of an element).** For an element $a\in\mathbb{B}$, a **square root of $a$ in $\star$** is an element with $\tilde Q\star\tilde Q=a$; the roots of a central value are the special case $a=\lambda e_t$.
 
 The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of a General Element in the Biquaternion Algebra*. The idempotents of §4 are the roots of $+1$ halved: the map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
 
@@ -205,12 +205,12 @@ The classes so far are those of the multiplication alone. The structures also ca
 
 The four general products are four definitions to a class, and the table says which of the four agree. The entry *coincide* means that the four definitions select one and the same subset of $\mathbb{B}$; *differ* means that they do not, and the specializing article carries the sets.
 
-| class of §  | $\tilde P\tilde Q$ | $\tilde P\tilde Q^{*}$ | $\tilde P^{\natural}\tilde Q$ | $\tilde P^{\natural}\tilde Q^{*}$ | verdict |
+| class of §  | $\tilde Q\tilde Q_2$ | $\tilde Q\tilde Q_2^{*}$ | $\tilde Q^{\natural}\tilde Q_2$ | $\tilde Q^{\natural}\tilde Q_2^{*}$ | verdict |
 |---|---|---|---|---|---|
 | unit | $e_t$ two-sided | right only | left only | none | differ |
 | zero divisor | $\mathcal{C}\setminus\{0\}$ | same | same | same | **coincide** |
 | idempotent | $\tfrac12(e_t+\tilde\Xi i)$ | the Hermitian ones | the trivial pair | $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ | differ |
-| square-zero | the pure cone | $\{0\}$ | the whole cone | $\{\overline{\tilde P}\tilde P=0\}$ | differ |
+| square-zero | the pure cone | $\{0\}$ | the whole cone | $\{\overline{\tilde Q}\tilde Q=0\}$ | differ |
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
 | invertibility | $C\neq0$ | no two-sided notion | no two-sided notion | no two-sided notion | — |
 
@@ -227,11 +227,11 @@ A definition of the element theory names a product. This article states, once an
 | Symbol | Meaning |
 |---|---|
 | $\star$ | a general product, one of the twelve, with the class of §1 |
-| $\tilde P\tilde Q$ | the general plain bilinear product, the multiplication of the algebra |
-| $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$ | the other three general products |
+| $\tilde Q\tilde Q_2$ | the general plain bilinear product, the multiplication of the algebra |
+| $\tilde Q^{\natural}\tilde Q_2$, $\tilde Q\tilde Q_2^{*}$, $\tilde Q^{\natural}\tilde Q_2^{*}$ | the other three general products |
 | $e$ | a unit; left, right or two-sided, per §2 |
 | $x^{-1}$ | the inverse of $x$, read in the product in force |
-| $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, deciding the zero divisor of the plain product |
+| $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ | the central square, deciding the zero divisor of the plain product |
 | $A_\star(\tilde Q),B_\star(\tilde Q)$ | the left and the right annihilator of $\tilde Q$ in $\star$ |
 | $\tilde\Pi$ | an idempotent; $\tilde\Pi^{*}=\tilde\Pi$ makes it a projection |
 | $\tilde\Upsilon$ | a nilpotent of the plain product; index two, hence square-zero |

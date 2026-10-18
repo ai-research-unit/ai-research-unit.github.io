@@ -10,7 +10,7 @@ The article also owns the **dagger sandwich** $\operatorname{H}_{\tilde{Q}}(\til
 
 Physically the sandwich $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ is the Lorentz transformation of the material sector: the boost is the change of inertial frame and the rotor is the spatial rotation, so that a four-vector of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* is carried from one frame to another by a biquaternion multiplication. The doubling of the half-angle is the geometric origin of the spinor double cover: the same motion is realised twice in $\mathbb{B}^{\times}_1$, once as $\tilde{U}$ and once as $-\tilde{U}$, which is why the carrier of the state in the Biquaternion Quantum Fields category is a spinor and not a vector.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde{Q}=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k \vec e_k$. The products are $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. The quaternion conjugation is $\tilde{Q}^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficient conjugation $\bar{\tilde{Q}}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$; the fixed space of ${}^{*}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, of polar form $\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu P_\mu Q_\mu$, and $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q}\rangle_{\natural}\neq0$ (*The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*). The elements with four real coefficients form the **quaternion layer** $\mathbb{H}_{\mathbb{B}}=\{Q_te_t+\vec Q:Q_t,Q_x,Q_y,Q_z\in\mathbb{R}\}$, a copy of the quaternion algebra $\mathbb{H}$ inside $\mathbb{B}$; its unit sphere is the set of **unit quaternions**, $Sp(1)=\{\tilde u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}:\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural}=e_t\}$, whose elements this article calls **rotors**, and the norm-one group of the algebra is $\mathbb{B}^\times_1=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}=e_t\}$. The pure elements, those with no scalar part, form the vector subspace $\mathrm{Vect}(\mathbb{B})=\{\tilde{Q}:Q_t=0\}$, and the unit pure quaternion, the axis of a rotor, is written $\vec u$. The four-position of a world line is $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with $c$ the speed of light and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ its spatial part.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde{Q}=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k \vec e_k$. The products are $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^2=-e_t$. The quaternion conjugation is $\tilde{Q}^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficient conjugation $\bar{\tilde{Q}}$ conjugates the four coefficients, and the Hermitian conjugation is their composite, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$; the fixed space of ${}^{*}$ is the Hermitian sector $\mathbb{M}_+$ and its anti-fixed space the anti-Hermitian sector $\mathbb{M}_-$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, of polar form $\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu P_\mu Q_\mu$, and $\tilde{Q}$ is a unit exactly when $\langle\tilde{Q}\rangle_{\natural}\neq0$ (*The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*). The elements with four real coefficients form the **quaternion layer** $\mathbb{H}_{\mathbb{B}}=\{Q_te_t+\vec Q:Q_t,Q_x,Q_y,Q_z\in\mathbb{R}\}$, a copy of the quaternion algebra $\mathbb{H}$ inside $\mathbb{B}$; its unit sphere is the set of **unit quaternions**, $Sp(1)=\{\tilde u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}:\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural}=e_t\}$, whose elements this article calls **rotors**, and the norm-one group of the algebra is $\mathbb{B}^\times_1=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}=e_t\}$. The pure elements, those with no scalar part, form the vector subspace $\mathrm{Vect}(\mathbb{B})=\{\tilde{Q}:Q_t=0\}$, and the unit pure quaternion, the axis of a rotor, is written $\vec u$. The four-position of a world line is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with $c$ the speed of light and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ its spatial part.
 
 ---
 
@@ -153,7 +153,7 @@ which is Hermitian, of unit norm, and lies in the informational sector $\mathbb{
 
 ### The Four-Position Goes to the Rest Frame
 
-The action of the boost rotor on a four-position is the boost relation of the series. With $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the four-position of a world line of velocity $\vec v$, and $\tilde{U}$ the boost rotor along $\vec u_v$ of rapidity $\psi$ with $\tanh\psi = |\vec v|/c$,
+The action of the boost rotor on a four-position is the boost relation of the series. With $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the four-position of a world line of velocity $\vec v$, and $\tilde{U}$ the boost rotor along $\vec u_v$ of rapidity $\psi$ with $\tanh\psi = |\vec v|/c$,
 
 $$
 \tilde{U}\,\tilde{Q}\,\tilde{U}^{*} = ic\tau\,e_t ,
@@ -181,7 +181,7 @@ $$
 a real unit quaternion lying in $\mathbb{H}_{\mathbb{B}}$. The rotation rotor is unitary, $\tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{\natural} = \tilde u_{\mathrm r}^{-1}$, which is the property that makes the sandwich preserve the product of two elements of the algebra, as the section on the product shows. Its operator rotates the spatial part of a four-vector:
 
 $$
-\tilde u_{\mathrm r}\,\tilde{Q}\,\tilde u_{\mathrm r}^{*} = icte_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cos\theta + \left(\vec u_{\mathrm r}\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\sin\theta + \vec u_{\mathrm r}\left(\vec u_{\mathrm r}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\left(1-\cos\theta\right),
+\tilde u_{\mathrm r}\,\tilde{R}\,\tilde u_{\mathrm r}^{*} = icte_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cos\theta + \left(\vec u_{\mathrm r}\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\sin\theta + \vec u_{\mathrm r}\left(\vec u_{\mathrm r}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\left(1-\cos\theta\right),
 $$
 
 and it leaves the scalar part untouched. The angle in the operator is twice the half-angle in the element, which is the doubling that the spinor double cover rests on.
@@ -353,7 +353,7 @@ on the algebra. The one-sided action is its diagonal restriction, and the Lorent
 
 ### A Boost Rotor Acting on a Four-Position
 
-Let $\beta = 0.6$ along $\vec e_z$, so that $\psi = \operatorname{artanh}0.6$, $\cosh\frac{\psi}{2} = 1.060660172$ and $\sinh\frac{\psi}{2} = 0.353553391$, and let $\tilde{Q} = ict\,e_t + 0.6ct\,\vec e_z$ with $ct = 1$. Then
+Let $\beta = 0.6$ along $\vec e_z$, so that $\psi = \operatorname{artanh}0.6$, $\cosh\frac{\psi}{2} = 1.060660172$ and $\sinh\frac{\psi}{2} = 0.353553391$, and let $\tilde{R} = ict\,e_t + 0.6ct\,\vec e_z$ with $ct = 1$. Then
 
 $$
 \tilde{U}\,\tilde{Q}\,\tilde{U}^{*} = i\tau e_t , \qquad \tau = \sqrt{1-0.36} = 0.8 ,
@@ -444,9 +444,9 @@ The two-sided action $\tilde{Q}\mapsto \tilde u_{\mathrm r}\tilde{Q}\tilde v$ wi
 | $\vec u_{\mathrm b},\psi$ | Axis and rapidity of a boost rotor, $\tilde{U}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, $\tanh\psi=v_b/c$ |
 | $\tilde u_{\mathrm r}$ | The rotation rotor of the polar form, a unit real quaternion, the compact factor of $\tilde{Q}=r\exp(i\alpha)B\tilde u_{\mathrm r}$ |
 | $\theta_W$ | The Wigner angle of two successive boosts |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

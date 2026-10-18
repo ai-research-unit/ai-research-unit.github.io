@@ -316,7 +316,7 @@ its proof being the data-processing inequality applied to the measurement channe
 | $\rho_{XQ} = \sum_x p_x|x\rangle\langle x|\otimes\tilde{Ϛ}_x$ | Classical-quantum state, $I(X:Q)=\chi$ |
 | $I(X:Y)\leq\chi\leq\log2$ | Holevo bound and qubit ceiling |
 | $c = |\langle\psi_0|\psi_1\rangle|$ | Overlap of two pure states |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 
 ## Further Reading
 

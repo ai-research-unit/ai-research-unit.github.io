@@ -342,7 +342,7 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | $\tilde{\Pi}_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Rank-one Hermitian idempotents; the $H$-twistor's amplitude is a real multiple of one |
 | $Z(\kappa)$, $\kappa\in\mathbb{C}$ | World line of the "virtual" charge generating a shear-free null congruence (Kassandrov) |
 | $\{\xi,\tau\}$, $(Z-\mathcal{Z}(\kappa))\xi=0$, $\tau=Z\xi$ | Twistor field of the congruence; the Penrose incidence relation over complexified Minkowski space |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

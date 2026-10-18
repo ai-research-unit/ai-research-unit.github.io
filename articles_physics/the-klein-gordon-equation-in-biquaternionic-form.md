@@ -159,18 +159,18 @@ The plane-wave solutions are written with the four-wavevector of the read list,
 $$
 \tilde P/\hbar = i\frac{\omega}{c}e_t + \vec k\in\mathbb{M}_-,
 \qquad
-\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_- ,
+\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_- ,
 $$
 
-and the phase is the scalar part of the product of the wave biquaternion with the conjugate four-position, $\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar$, the convention of the companion articles. Using $\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \sum_j k_jx_j$ and $i^2 = -1$,
+and the phase is the scalar part of the product of the wave biquaternion with the conjugate four-position, $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar$, the convention of the companion articles. Using $\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \sum_j k_jx_j$ and $i^2 = -1$,
 
 $$
-\mathrm{Sc}\!\left(\tilde P\tilde Q^{\natural}\right)/\hbar
+\mathrm{Sc}\!\left(\tilde P\tilde R^{\natural}\right)/\hbar
 = \left(i\frac{\omega}{c}\right)(ict) + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$
 
-which is real. A plane wave of positive frequency is $\tilde{\Phi} = \tilde{\Phi}_0\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar)$ with $\omega>0$; the exponent $i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar$ is a purely imaginary central element, so the exponential is central and commutes with everything. With the exponential central, differentiation is elementary: $\partial/\partial t\tilde{\Phi} = -i\omega\,\tilde{\Phi}$ and $\partial/\partial x_j\,\tilde{\Phi} = ik_j\,\tilde{\Phi}$, so
+which is real. A plane wave of positive frequency is $\tilde{\Phi} = \tilde{\Phi}_0\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar)$ with $\omega>0$; the exponent $i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar$ is a purely imaginary central element, so the exponential is central and commutes with everything. With the exponential central, differentiation is elementary: $\partial/\partial t\tilde{\Phi} = -i\omega\,\tilde{\Phi}$ and $\partial/\partial x_j\,\tilde{\Phi} = ik_j\,\tilde{\Phi}$, so
 
 $$
 \Box\tilde{\Phi} = \left(-\frac{1}{c^2}(-i\omega)^2 + (i\vec k)^2\right)\tilde{\Phi}
@@ -310,7 +310,7 @@ The honest bottom line is a negative result about the framework's central struct
 
 3. **Which first-order structure is canonical?** The scalar Klein–Gordon operator has no scalar square root in $\mathbb{B}$, but it has the spinor square root $\tilde{\nabla}$ with the linear chirality-off-diagonal mass term. Whether that is the *only* admissible first-order-isation, or whether a different one exists that stays closer to the sector split, is not settled here.
 
-4. **The local complex structure.** The parent article leaves open whether the $i$ of the Schrödinger equation remains global when the complex structure is made local through $c=1/\sqrt{\epsilon\mu}$. The same question attaches to the Klein–Gordon imaginary unit, since the phase $i\,\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar$ is central while $c$ is a function of position. This is inherited from the parent, not resolved here.
+4. **The local complex structure.** The parent article leaves open whether the $i$ of the Schrödinger equation remains global when the complex structure is made local through $c=1/\sqrt{\epsilon\mu}$. The same question attaches to the Klein–Gordon imaginary unit, since the phase $i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar$ is central while $c$ is a function of position. This is inherited from the parent, not resolved here.
 
 5. **Second quantization in the biquaternion framework.** The resolution of both defects is to quantize the field, with $\tilde{\Phi}$ and $\tilde{\Phi}^*$ becoming operators. Whether the biquaternion structure adds anything to that procedure, or is again a relabelling of the complex scalar field's second quantization, is open.
 
@@ -328,7 +328,7 @@ $$
 
 with $\tilde{\Phi}$ a biquaternion-valued field. Because $\Box$ is central and scalar, the equation decomposes into four decoupled scalar equations, and the biquaternion writing is for the scalar field a relabelling.
 
-Being second order in time, the equation has two frequency branches and requires both $\tilde{\Phi}$ and $\tilde{\Phi}^*$. Its dispersion relation is $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$, which is the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde P\tilde Q^{\natural})/\hbar = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J} = ic\rho e_t + \vec j$ lies in $\mathbb{M}_-$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
+Being second order in time, the equation has two frequency branches and requires both $\tilde{\Phi}$ and $\tilde{\Phi}^*$. Its dispersion relation is $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$, which is the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$. Both branches were checked on a case chosen independently of the derivation. The conserved current $\tilde{J} = ic\rho e_t + \vec j$ lies in $\mathbb{M}_-$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 
 The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{M}_-/\mathbb{M}_+$ split naturally. Since $\Box$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{M}_-$ part of a solution is the $i$-image of an $\mathbb{M}_+$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde{\nabla}$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit recovers the parent article's free Schrödinger equation with the same central scalar imaginary $i$, so the two articles use one complex structure and no competing unit.
 
@@ -350,7 +350,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \sum_\mu \vec e_\mu\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian |
 | $\tilde{\Phi}$ | Biquaternion-valued Klein–Gordon field |
-| $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion |
+| $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion |
 | $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ | Four-wavevector biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde P\tilde P^{\natural}=-m^2c^2$ | Mass-shell condition |

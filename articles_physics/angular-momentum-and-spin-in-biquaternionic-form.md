@@ -107,13 +107,13 @@ which is a pure real quaternion, an element of $\mathbb{M}_-\cap\mathbb{H}_{\mat
 The orbital angular momentum is built from position and momentum. In the biquaternion framework the position of a point of the material sector is the real quaternion
 
 $$
-\tilde{r} = x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{H}_{\mathbb{B}},
+\vec r = x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{H}_{\mathbb{B}},
 $$
 
 and the momentum operator is $\tilde{p} = -i\hbar\nabla$ with the vector gradient $\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. For pure quaternions the product rule is $\vec q\,\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, so
 
 $$
-\tilde{r}\,\tilde{p} = -i\hbar\,\vec r\circ\nabla = i\hbar\,\vec r\cdot\nabla \;-\; i\hbar\,\vec r\times\nabla .
+\vec r\,\tilde{p} = -i\hbar\,\vec r\circ\nabla = i\hbar\,\vec r\cdot\nabla \;-\; i\hbar\,\vec r\times\nabla .
 $$
 
 The **vector part** of the quaternionic product has components
@@ -404,7 +404,7 @@ It is useful to separate the two kinds of result that the article contains.
 
 Angular momentum in the biquaternion framework is organised by the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, under which the spin operators $S_k=\tfrac{\hbar}{2}\sigma_k$ correspond to the Hermitian elements $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k\in\mathbb{M}_+$. The rotation generators lie in the Lie algebra $\mathbb{M}_-$ and, for spatial rotations, in the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where they are $-\tfrac12\vec e_k$; their exponentials are the unit real quaternions, which are the group $SU(2)$.
 
-The orbital angular momentum operator is the vector part of the quaternionic product $\tilde r\tilde p$ of position and momentum, with components $L_k=-i\hbar\epsilon_{klm}x_l\partial/\partial x_m$ and central representatives $L_k e_t$. The spin operators generate the same algebra internally, and the commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow directly from the quaternion multiplication rule, the square $\vec e_k^2=-e_t$, and $i^2=-1$. The pure-spin Casimir is the central element $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$; the total Casimir $\tilde J^2$ takes the value $j(j+1)\hbar^2$ on coupled states with $j=l\pm\tfrac12$.
+The orbital angular momentum operator is the vector part of the quaternionic product $\vec r\tilde p$ of position and momentum, with components $L_k=-i\hbar\epsilon_{klm}x_l\partial/\partial x_m$ and central representatives $L_k e_t$. The spin operators generate the same algebra internally, and the commutation relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ follow directly from the quaternion multiplication rule, the square $\vec e_k^2=-e_t$, and $i^2=-1$. The pure-spin Casimir is the central element $\tilde S^2=\tfrac{3\hbar^2}{4}e_t$; the total Casimir $\tilde J^2$ takes the value $j(j+1)\hbar^2$ on coupled states with $j=l\pm\tfrac12$.
 
 The spin ladder operators are nilpotent and null in the biquaternion norm, and hence zero divisors of the algebra. The addition of angular momenta follows the standard Clebsch–Gordan scheme, with the spin factor expressed through the elements $\tilde S_k$; for a spin-1/2 coupled to orbital $l$ the coupled states carry $j=l\pm\tfrac12$, and the spin–orbit operator takes the eigenvalue $+\tfrac{\hbar^2 l}{2}$ for $j=l+\tfrac12$ and $-\tfrac{\hbar^2(l+1)}{2}$ for $j=l-\tfrac12$. Rotations are realised by rotor conjugation with unit quaternions, and the rotor $\tilde u(\theta,\vec u)$ is identical to the exponential of the spin angular momentum. The framework thus contains the complete angular-momentum algebra, with the orbital part standard and the spin part algebraic; the operators and their spectra are those that a position-space treatment of the hydrogen atom requires.
 

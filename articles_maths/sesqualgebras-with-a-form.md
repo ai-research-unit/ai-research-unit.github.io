@@ -93,7 +93,7 @@ Let $\varphi : A \to R$ be $R$-linear and put $h_{\varphi}(x,y) = \varphi(y^{*}x
 
 ### The Biquaternion Algebra
 
-On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the dagger of *Hermitian Algebras*, the form $h(\tilde P, \tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ is Hermitian and non-degenerate and the compatibility holds. The two-slot analysis of the biquaternion forms is *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
+On $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the dagger of *Hermitian Algebras*, the form $h(\tilde Q_1, \tilde Q_2) = \operatorname{Sc}(\tilde Q_1\tilde Q_2^{\dagger})$ is Hermitian and non-degenerate and the compatibility holds. The two-slot analysis of the biquaternion forms is *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
 
 ## What Belongs Elsewhere
 

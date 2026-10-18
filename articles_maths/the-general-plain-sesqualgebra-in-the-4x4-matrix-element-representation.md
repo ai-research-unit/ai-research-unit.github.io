@@ -6,7 +6,7 @@ The left regular representation $\mathsf{M}_4$ of *Introduction to the 4×4 Matr
 
 The regular representation adds one thing to the $2\times2$ reading: the positive definite form makes the Hermitian subspace a definite space on which the norm-one group acts, and that action is the two-to-one cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ of the identity component of the Lorentz group. The Frobenius norm of the regular matrix is twice the definite norm of the element.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_\mu^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; sesquilinear product $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$; sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_\mu^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ and $\tilde{Q}_2=\sum_\mu Q_{2\mu}e_\mu$ with $Q_\mu,Q_{2\mu}\in\mathbb{C}$; scalar part $\mathrm{Sc}$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; sesquilinear product $\tilde{Q}\star\tilde{Q}_2=\tilde{Q}\tilde{Q}_2^{*}$; sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$.
 
 ## The Representation
 
@@ -19,7 +19,7 @@ $$
 and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. It satisfies
 
 $$
-\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_t,\qquad \det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2 ,
+\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q}_2)=\mathsf{M}_4(\tilde{Q}\tilde{Q}_2),\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_t,\qquad \det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2 ,
 $$
 
 so $\mathsf{M}_4$ is a $*$-representation for the Hermitian conjugation and the conjugate transpose.
@@ -29,14 +29,14 @@ so $\mathsf{M}_4$ is a $*$-representation for the Hermitian conjugation and the 
 **Theorem (the product is the conjugate-transposed product of the regular matrices).** For all biquaternions,
 
 $$
-\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})\,\mathsf{M}_4(\tilde{Q})^{\dagger} ,
+\mathsf{M}_4(\tilde{Q}\star\tilde{Q}_2)=\mathsf{M}_4(\tilde{Q})\,\mathsf{M}_4(\tilde{Q}_2)^{\dagger} ,
 $$
 
 so the sesquilinear product is read on the regular matrices by conjugating and transposing the second factor and multiplying.
 
-*Proof.* $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$, the representation is multiplicative, and $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$ by the $*$-property.
+*Proof.* $\tilde{Q}\star\tilde{Q}_2=\tilde{Q}\tilde{Q}_2^{*}$, the representation is multiplicative, and $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$ by the $*$-property.
 
-**The square and the unit.** At $\tilde{P}=\tilde{Q}$ the theorem gives the square $\mathsf{M}_4(\tilde{Q}\star\tilde{Q})=\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q})^{\dagger}$, a positive semidefinite matrix whatever $\tilde{Q}$ is, which is the matrix form of the fact that $\tilde{Q}\tilde{Q}^{*}$ is a sum of Hermitian squares; the identity matrix $I_4=\mathsf{M}_4(e_t)$ is a **right unit alone** of the product, its left action being the conjugate transpose.
+**The square and the unit.** At $\tilde{Q}_2=\tilde{Q}$ the theorem gives the square $\mathsf{M}_4(\tilde{Q}\star\tilde{Q})=\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q})^{\dagger}$, a positive semidefinite matrix whatever $\tilde{Q}$ is, which is the matrix form of the fact that $\tilde{Q}\tilde{Q}^{*}$ is a sum of Hermitian squares; the identity matrix $I_4=\mathsf{M}_4(e_t)$ is a **right unit alone** of the product, its left action being the conjugate transpose.
 
 **The units.** The units of the algebra are the elements of non-zero determinant, so under $\mathsf{M}_4$ their images form the group $\mathsf{M}_4(\mathbb{B}^{\times})\cong GL_2(\mathbb{C})$ inside $GL_4(\mathbb{C})$; the norm-one group $\{\tilde{A}:\langle\tilde{A},\tilde{A}\rangle_{\natural}=1\}$ is $SL_2(\mathbb{C})$, whose regular matrices have determinant one.
 
@@ -45,12 +45,12 @@ so the sesquilinear product is read on the regular matrices by conjugating and t
 **Theorem (the Hilbert–Schmidt pairing of the regular matrices).** For all biquaternions,
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q})\bigr) = 2\,\langle\tilde{Q},\tilde{P}\rangle_{*} ,
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_4(\tilde{Q})^{\dagger}\mathsf{M}_4(\tilde{Q}_2)\bigr) = 2\,\langle\tilde{Q}_2,\tilde{Q}\rangle_{*} ,
 $$
 
 so the Hilbert–Schmidt pairing of the regular matrices is twice the general plain sesquilinear form of the algebra.
 
-*Proof.* $\mathsf{M}_4(\tilde{P})^{\dagger}=\mathsf{M}_4(\tilde{P}^{*})$, so the left-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P}^{*}\tilde{Q}))=2\,\mathrm{Sc}(\tilde{P}^{*}\tilde{Q})=2\langle\tilde{Q},\tilde{P}\rangle_{*}$, using $\operatorname{Tr}\mathsf{M}_4(\tilde{Q}_2)=4\,\mathrm{Sc}(\tilde{Q}_2)$.
+*Proof.* $\mathsf{M}_4(\tilde{Q})^{\dagger}=\mathsf{M}_4(\tilde{Q}^{*})$, so the left-hand side is $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{Q}^{*}\tilde{Q}_2))=2\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_2)=2\langle\tilde{Q}_2,\tilde{Q}\rangle_{*}$, using $\operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4\,\mathrm{Sc}(\tilde{Q})$.
 
 **Theorem (the Frobenius norm).** On the diagonal,
 
@@ -121,7 +121,7 @@ which is $\vec e_x\star \vec e_y=\vec e_x\vec e_y^{*}=-\vec e_z$, the relation $
 
 ## Summary
 
-The left regular representation is a $*$-representation, $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$, and it reads the sesquilinear product as the product with the conjugate-transposed second factor, $\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})^{\dagger}$, whose square is always positive semidefinite. The general plain sesquilinear form of the group is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{Q},\tilde{P}\rangle_{*}$, positive definite of signature $(32,0)$ on the matrices, with Frobenius norm $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F=2\lVert\tilde{Q}\rVert_E$ and null set $\{0\}$; its automorphism group is $\mathrm{U}(16)$, whose algebra-preserving part is $\mathrm{U}(4)\times \mathrm{U}(4)$ modulo the centre. The two-sided action of the norm-one group $SL_2(\mathbb{C})$ on the Hermitian subspace gives the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$, and the units of the algebra appear as the matrices of $GL_2(\mathbb{C})$.
+The left regular representation is a $*$-representation, $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$, and it reads the sesquilinear product as the product with the conjugate-transposed second factor, $\mathsf{M}_4(\tilde{Q}\star\tilde{Q}_2)=\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q}_2)^{\dagger}$, whose square is always positive semidefinite. The general plain sesquilinear form of the group is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{Q})^{\dagger}\mathsf{M}_4(\tilde{Q}_2))=2\langle\tilde{Q}_2,\tilde{Q}\rangle_{*}$, positive definite of signature $(32,0)$ on the matrices, with Frobenius norm $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F=2\lVert\tilde{Q}\rVert_E$ and null set $\{0\}$; its automorphism group is $\mathrm{U}(16)$, whose algebra-preserving part is $\mathrm{U}(4)\times \mathrm{U}(4)$ modulo the centre. The two-sided action of the norm-one group $SL_2(\mathbb{C})$ on the Hermitian subspace gives the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$, and the units of the algebra appear as the matrices of $GL_2(\mathbb{C})$.
 
 ## Summary of Notation
 
@@ -129,8 +129,8 @@ The left regular representation is a $*$-representation, $\mathsf{M}_4(\tilde{Q}
 |---|---|
 | $\mathsf{M}_4(\tilde{Q})$ | the $4\times4$ regular matrix, $\operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_t$ |
 | $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$ | the Hermitian conjugation is the conjugate transpose |
-| $\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})^{\dagger}$ | the sesquilinear product on the regular matrices |
-| $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{Q},\tilde{P}\rangle_{*}$ | the general plain sesquilinear form as the Hilbert–Schmidt pairing |
+| $\mathsf{M}_4(\tilde{Q}\star\tilde{Q}_2)=\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q}_2)^{\dagger}$ | the sesquilinear product on the regular matrices |
+| $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{Q})^{\dagger}\mathsf{M}_4(\tilde{Q}_2))=2\langle\tilde{Q}_2,\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form as the Hilbert–Schmidt pairing |
 | $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F=2\lVert\tilde{Q}\rVert_E$ | the Frobenius norm of the regular matrix |
 | $SL_2(\mathbb{C})\to SO^{+}(1,3)$ | the double cover of the two-sided action on the Hermitian subspace |
 

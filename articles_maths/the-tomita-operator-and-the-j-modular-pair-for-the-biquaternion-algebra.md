@@ -8,11 +8,11 @@ The computation splits in two, and the split is the content. In the **definite r
 
 The general theory is *The Indefinite Modular Operator*, *Krein–Tomita–Takesaki Theory* and *The Modular Operator and Tomita-Takesaki Theory*; the definite instance of the operator is *The Adjoint of the Left Multiplication on a Hermitian Algebra* and *The Two-Sided Operators on a Hermitian Algebra*; the Hilbert structure of the biquaternion algebra is *Hilbert Algebras*, *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*; the failure of the indefinite representation is *The Biquaternion Algebra and the Krein–von Neumann Property*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, central $i$, and $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$. The involution is the Hermitian star ${}^{*}$, the natural conjugation is ${}^{\natural}$, the bar is the coefficient conjugation, and $\mathrm{Sc}$ is the scalar part. The definite form is $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P^{*}\tilde Q)=\sum_\mu P_\mu^{*}Q_\mu$, and the general quaternionic sesquilinear form is $\langle\tilde Q,\tilde P\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural*}\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu^{*}Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$ and fundamental symmetry $J={}^{\natural}$. The left regular image is $\mathcal{M}=\{L_{\tilde Q}\}$, $L_{\tilde Q}(\tilde S)=\tilde Q\tilde S$, the right regular image is $\mathcal{M}'=\{R_{\tilde Q}\}$. The **modular conjugation** is written $\jmath$ to keep it apart from the fundamental symmetry $J={}^{\natural}$; the general articles write $J$ for the former, and the biquaternion articles write $J$ for the latter.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, central $i$, and $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$. The involution is the Hermitian star ${}^{*}$, the natural conjugation is ${}^{\natural}$, the bar is the coefficient conjugation, and $\mathrm{Sc}$ is the scalar part. The definite form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)=\sum_\mu Q_{1,\mu}^{*}Q_{2,\mu}$, and the general quaternionic sesquilinear form is $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural*}\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}^{*}Q_{2,\mu}$ with $\varepsilon=(1,-1,-1,-1)$ and fundamental symmetry $J={}^{\natural}$. The left regular image is $\mathcal{M}=\{L_{\tilde Q}\}$, $L_{\tilde Q}(\tilde S)=\tilde Q_2\tilde S$, the right regular image is $\mathcal{M}'=\{R_{\tilde Q}\}$. The **modular conjugation** is written $\jmath$ to keep it apart from the fundamental symmetry $J={}^{\natural}$; the general articles write $J$ for the former, and the biquaternion articles write $J$ for the latter.
 
 ## The Hilbert Algebra of the Biquaternion Algebra
 
-**Proposition (the Hilbert algebra).** With the involution ${}^{*}$, the trace $\tau=\mathrm{Sc}$ and the form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P^{*}\tilde Q)$, the biquaternion algebra is a Hilbert algebra: the form is positive definite and Hermitian, and the adjoint axiom
+**Proposition (the Hilbert algebra).** With the involution ${}^{*}$, the trace $\tau=\mathrm{Sc}$ and the form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)$, the biquaternion algebra is a Hilbert algebra: the form is positive definite and Hermitian, and the adjoint axiom
 
 $$
 \langle\tilde Q\tilde S,\tilde T\rangle=\langle\tilde S,\tilde Q^{*}\tilde T\rangle
@@ -41,15 +41,15 @@ $$
 **Proposition (elementary properties).** $S$ is antilinear and involutive, $S^{2}=\mathrm{id}$, and it is antiunitary for the definite form,
 
 $$
-\langle S\tilde P,S\tilde Q\rangle=\overline{\langle\tilde P,\tilde Q\rangle} ,
+\langle S\tilde Q_1,S\tilde Q_2\rangle=\overline{\langle\tilde Q_1,\tilde Q_2\rangle} ,
 \qquad\text{whence}\qquad
-\|S\tilde P\|=\|\tilde P\| .
+\|S\tilde Q_1\|=\|\tilde Q_1\| .
 $$
 
 **Proof.** Antilinearity is that of the star. For the involution, $S^{2}(\tilde Q)=(\tilde Q^{*})^{*}=\tilde Q$. For the antiunitarity, using $(Q^{*})_\mu=\varepsilon_\mu\bar Q_\mu$ with $\varepsilon_0=1$ and $\varepsilon_k=-1$,
 
 $$
-\langle\tilde P^{*},\tilde Q^{*}\rangle=\sum_\mu (P^{*})_\mu^{*}\,(Q^{*})_\mu=\sum_\mu \varepsilon_\mu^{2}P_\mu\bar Q_\mu=\sum_\mu P_\mu\bar Q_\mu=\overline{\langle\tilde P,\tilde Q\rangle} .
+\langle\tilde Q_1^{*},\tilde Q_2^{*}\rangle=\sum_\mu (Q_1^{*})_\mu^{*}\,(Q_2^{*})_\mu=\sum_\mu \varepsilon_\mu^{2}Q_{1,\mu}\bar Q_{2,\mu}=\sum_\mu Q_{1,\mu}\bar Q_{2,\mu}=\overline{\langle\tilde Q_1,\tilde Q_2\rangle} .
 $$
 
 **Corollary (the polar decomposition).** $S=\jmath\Delta^{1/2}$ with

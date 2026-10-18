@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra*. The algebra carries remarkable real subspaces, and this article reads the product on each of them: whether it stays inside, and the rule it follows where it does; the units and the idempotents it contains; and its isotropic elements. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*, with their natural real bases.
+The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*. The algebra carries remarkable real subspaces, and this article reads the product on each of them: whether it stays inside, and the rule it follows where it does; the units and the idempotents it contains; and its isotropic elements. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*, with their natural real bases.
 
 The reading follows the pattern of *Remarkable Subspaces and the Four Forms*, and the subspaces themselves, their bases and their relations are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*. The products of the four general products on the same remarkable subspaces are *Remarkable Subspaces and the Four General Products*; the isotropic set of the block is the isotropic cone of *Norm and Invertibility in the General Quaternionic Algebra*; and the idempotents are those of *Idempotents of the General Plain Algebra*. This article owns the product $\bullet$ on the remarkable subspaces and the table that gathers the readings.
 
@@ -42,13 +42,13 @@ The generic norm of a central element is $N(Ae_t)=A^2$, so the **units** of the 
 
 ### The Product Rule and the Failure of Closure
 
-Two vector parts $\vec P,\vec Q$ (pure elements in the sense of *Introduction to the Remarkable Subspaces*) multiply as
+Two vector parts $\vec Q_1,\vec Q_2$ (pure elements in the sense of *Introduction to the Remarkable Subspaces*) multiply as
 
 $$
-\vec P\bullet\vec Q=-\bigl(\vec P,\vec Q\bigr)e_t,
+\vec Q_1\bullet\vec Q_2=-\bigl(\vec Q_1,\vec Q_2\bigr)e_t,
 $$
 
-because the mixed vector part $P_t\vec Q+Q_t\vec P$ vanishes when both elements are pure and the cross term is absent. The value is a **central** element, so
+because the mixed vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ vanishes when both elements are pure and the cross term is absent. The value is a **central** element, so
 
 $$
 \mathrm{Vect}(\mathbb{B})\bullet\mathrm{Vect}(\mathbb{B})\subseteq\mathbb{C}_{\mathbb{B}},
@@ -64,15 +64,15 @@ the first of which leaves the vector subspace and the second of which stays in i
 
 ### Units, Idempotents and Isotropic Elements
 
-A vector element $\vec P$ has $N(\vec P)=(\vec P,\vec P)$, so the **units** of the vector subspace are the elements with $(\vec P,\vec P)\neq0$; **every non-zero element of the subspace is a zero divisor of the block**, since the product of two pure elements is the scalar $-(\vec P,\vec Q)$, which vanishes for the orthogonal $\vec Q$, and the isotropic elements are those with $(\vec P,\vec P)=0$ (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The **idempotents** are the solutions of $\vec P\bullet\vec P=\vec P$, that is $-\bigl(\vec P,\vec P\bigr)e_t=\vec P$, and since the left side is central and the right side is a vector part, both must vanish: $\vec P=0$. So the vector subspace contains no non-zero idempotent. The **isotropic** elements are the isotropic cone of the vector subspace, $\{(\vec P,\vec P)=0\}$, and it is non-empty: for instance $\vec e_x+i\vec e_x$ has $(\vec e_x+i\vec e_x,\vec e_x+i\vec e_x)=1+i^2=0$.
+A vector element $\vec Q$ has $N(\vec Q)=(\vec Q,\vec Q)$, so the **units** of the vector subspace are the elements with $(\vec Q,\vec Q)\neq0$; **every non-zero element of the subspace is a zero divisor of the block**, since the product of two pure elements is the scalar $-(\vec Q_1,\vec Q_2)$, which vanishes for the orthogonal $\vec Q_2$, and the isotropic elements are those with $(\vec Q,\vec Q)=0$ (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The **idempotents** are the solutions of $\vec Q\bullet\vec Q=\vec Q$, that is $-\bigl(\vec Q,\vec Q\bigr)e_t=\vec Q$, and since the left side is central and the right side is a vector part, both must vanish: $\vec Q=0$. So the vector subspace contains no non-zero idempotent. The **isotropic** elements are the isotropic cone of the vector subspace, $\{(\vec Q,\vec Q)=0\}$, and it is non-empty: for instance $\vec e_x+i\vec e_x$ has $(\vec e_x+i\vec e_x,\vec e_x+i\vec e_x)=1+i^2=0$.
 
-**Remark (the isotropic elements of the vector subspace are of square zero).** On the vector subspace the generic norm is the dot form itself, $N(\vec P)=(\vec P,\vec P)$, so an isotropic vector is exactly a vector of square zero: $\vec P\bullet\vec P=-(\vec P,\vec P)e_t=0$. **On the vector subspace the isotropic elements and the elements of square zero are the same set**, and both are the isotropic cone of the dot form; on the block as a whole the two sets differ, as *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* records.
+**Remark (the isotropic elements of the vector subspace are of square zero).** On the vector subspace the generic norm is the dot form itself, $N(\vec Q)=(\vec Q,\vec Q)$, so an isotropic vector is exactly a vector of square zero: $\vec Q\bullet\vec Q=-(\vec Q,\vec Q)e_t=0$. **On the vector subspace the isotropic elements and the elements of square zero are the same set**, and both are the isotropic cone of the dot form; on the block as a whole the two sets differ, as *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* records.
 
 ## The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
 
 ### The Product Rule and the Closure
 
-The quaternion subspace is the real span of the four units, and on its elements the conjugated product $\tilde Q^{\natural}\tilde Q_1$ of *Introduction to the General Quaternionic Algebra* is the ordinary quaternion product. The product $\bullet$ reads there as the **symmetrised quaternion product**,
+The quaternion subspace is the real span of the four units, and on its elements the conjugated product $\tilde Q_1^{\natural}\tilde Q_2$ of *Introduction to the General Quaternionic Algebra* is the ordinary quaternion product. The product $\bullet$ reads there as the **symmetrised quaternion product**,
 
 $$
 h\bullet k=\tfrac12(hk+kh)=h_tk_t-(\vec h,\vec k)+h_t\vec k+k_t\vec h,
@@ -118,17 +118,17 @@ An anti-quaternion element $i\mathbf n$ has $N(i\mathbf n)=-(\mathbf n,\mathbf n
 
 ### The Product Rule and the Closure
 
-The Hermitian subspace is the set of elements fixed by the Hermitian conjugation, $\tilde Q^{*}=\tilde Q$, of the form $\tilde Q=P_te_t+\sum_k iP'_k\vec e_k$ with $P_t,P'_k$ real. The star is an anti-automorphism of the algebra, $(\tilde P\tilde Q)^{*}=\tilde Q^{*}\tilde P^{*}$, so for Hermitian $\tilde P,\tilde Q$,
+The Hermitian subspace is the set of elements fixed by the Hermitian conjugation, $\tilde Q^{*}=\tilde Q$, of the form $\tilde Q=Q_te_t+\sum_k iQ'_k\vec e_k$ with $Q_t,Q'_k$ real. The star is an anti-automorphism of the algebra, $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, so for Hermitian $\tilde Q_1,\tilde Q_2$,
 
 $$
-(\tilde P\bullet\tilde Q)^{*}=\tfrac12\bigl((\tilde P\tilde Q)^{*}+(\tilde Q\tilde P)^{*}\bigr)=\tfrac12\bigl(\tilde Q\tilde P+\tilde P\tilde Q\bigr)=\tilde P\bullet\tilde Q,
+(\tilde Q_1\bullet\tilde Q_2)^{*}=\tfrac12\bigl((\tilde Q_1\tilde Q_2)^{*}+(\tilde Q_2\tilde Q_1)^{*}\bigr)=\tfrac12\bigl(\tilde Q_2\tilde Q_1+\tilde Q_1\tilde Q_2\bigr)=\tilde Q_1\bullet\tilde Q_2,
 $$
 
 and the Hermitian subspace is **closed** under $\bullet$. It is a Jordan subalgebra of the block, and it is the **Hermitian Jordan algebra** $J(\mathbb{B})$ of *The 12 Products of the Biquaternioid Complex Space*.
 
 ### Units, Idempotents and Isotropic Elements
 
-A Hermitian element has $\langle\tilde P\rangle_{\natural}=P_t^2-\sum_k(P'_k)^2$, so the **units** are the Hermitian elements with $P_t^2\neq\sum_k(P'_k)^2$, and the **isotropic** elements are those with $P_t^2=\sum_k(P'_k)^2$. The isotropic set is non-empty: the element $e_t+i\vec e_x$ is Hermitian and $N(e_t+i\vec e_x)=1+i^2=0$. The **idempotents** are the Hermitian idempotents of *Idempotents of the General Plain Algebra*,
+A Hermitian element has $\langle\tilde Q\rangle_{\natural}=Q_t^2-\sum_k(Q'_k)^2$, so the **units** are the Hermitian elements with $Q_t^2\neq\sum_k(Q'_k)^2$, and the **isotropic** elements are those with $Q_t^2=\sum_k(Q'_k)^2$. The isotropic set is non-empty: the element $e_t+i\vec e_x$ is Hermitian and $N(e_t+i\vec e_x)=1+i^2=0$. The **idempotents** are the Hermitian idempotents of *Idempotents of the General Plain Algebra*,
 
 $$
 \tilde\Pi=\tfrac12(e_t\pm \tilde\Xi),\qquad \vec u\in\mathbb{R}^3,\ |\vec u|=1,
@@ -136,16 +136,16 @@ $$
 
 the pure states, together with the trivial $0$ and $e_t$.
 
-**Remark (the trace form is definite but the norm is not).** The trace form of *The Trace Form and the Invariance of the Symmetric Plain Algebra* restricts to the Hermitian subspace as the **positive definite** form $P_tQ_t+\sum_kP'_kQ'_k$ of signature $(4,0)$; the generic norm restricts as $P_t^2-\sum_k(P'_k)^2$, of signature $(1,3)$. **On the Hermitian subspace the trace form is definite and the generic norm is indefinite**, and it is the generic norm that decides the isotropic elements and the units.
+**Remark (the trace form is definite but the norm is not).** The trace form of *The Trace Form and the Invariance of the Symmetric Plain Algebra* restricts to the Hermitian subspace as the **positive definite** form $Q_{1t}Q_{2t}+\sum_kQ'_{1k}Q'_{2k}$ of signature $(4,0)$; the generic norm restricts as $Q_t^2-\sum_k(Q'_k)^2$, of signature $(1,3)$. **On the Hermitian subspace the trace form is definite and the generic norm is indefinite**, and it is the generic norm that decides the isotropic elements and the units.
 
 ## The Anti-Hermitian Subspace $\mathbb{M}_-$
 
 ### The Product Rule and the Failure of Closure
 
-The anti-Hermitian subspace is the set of elements with $\tilde Q^{*}=-\tilde Q$, of the form $\tilde Q=iP'_te_t+\sum_kP_k\vec e_k$ with $P'_t,P_k$ real. The product of two anti-Hermitian elements is Hermitian,
+The anti-Hermitian subspace is the set of elements with $\tilde Q^{*}=-\tilde Q$, of the form $\tilde Q=iQ'_te_t+\sum_kQ_k\vec e_k$ with $Q'_t,Q_k$ real. The product of two anti-Hermitian elements is Hermitian,
 
 $$
-(\tilde P\bullet\tilde Q)^{*}=\tfrac12\bigl((\tilde P\tilde Q)^{*}+(\tilde Q\tilde P)^{*}\bigr)=\tfrac12\bigl(\tilde Q^{*}\tilde P^{*}+\tilde P^{*}\tilde Q^{*}\bigr)=\tfrac12\bigl(\tilde Q\tilde P+\tilde P\tilde Q\bigr)=\tilde P\bullet\tilde Q,
+(\tilde Q_1\bullet\tilde Q_2)^{*}=\tfrac12\bigl((\tilde Q_1\tilde Q_2)^{*}+(\tilde Q_2\tilde Q_1)^{*}\bigr)=\tfrac12\bigl(\tilde Q_2^{*}\tilde Q_1^{*}+\tilde Q_1^{*}\tilde Q_2^{*}\bigr)=\tfrac12\bigl(\tilde Q_2\tilde Q_1+\tilde Q_1\tilde Q_2\bigr)=\tilde Q_1\bullet\tilde Q_2,
 $$
 
 so the value is Hermitian and leaves the anti-Hermitian subspace. The subspace is **not closed** under $\bullet$, and the smallest witness is
@@ -158,18 +158,18 @@ a central Hermitian element.
 
 ### Units, Idempotents and Isotropic Elements
 
-An anti-Hermitian element has $\langle\tilde P\rangle_{\natural}=-(P'_t)^2+\sum_kP_k^2$, so the **units** are the anti-Hermitian elements with $\sum_kP_k^2\neq(P'_t)^2$, and the **isotropic** elements are those with $\sum_kP_k^2=(P'_t)^2$, a non-empty set: the element $ie_t+\vec e_x$ is anti-Hermitian and $N(ie_t+\vec e_x)=-1+1=0$. The **idempotents** are the solutions of $\tilde P\bullet\tilde P=\tilde P$ with $\tilde P=iP'_te_t+\vec P$. Writing the square as $\bigl((iP'_t)^2-(\vec P,\vec P)\bigr)e_t+2(iP'_t)\vec P$ and equating to $\tilde P$, the vector equation gives $2iP'_t\vec P=\vec P$; if $\vec P\neq0$ this forces $iP'_t=\tfrac12$, impossible because $iP'_t$ is purely imaginary, so $\vec P=0$, and the scalar equation gives $(iP'_t)^2=iP'_t$, with purely imaginary root $0$. The anti-Hermitian subspace contains no non-zero idempotent.
+An anti-Hermitian element has $\langle\tilde Q\rangle_{\natural}=-(Q'_t)^2+\sum_kQ_k^2$, so the **units** are the anti-Hermitian elements with $\sum_kQ_k^2\neq(Q'_t)^2$, and the **isotropic** elements are those with $\sum_kQ_k^2=(Q'_t)^2$, a non-empty set: the element $ie_t+\vec e_x$ is anti-Hermitian and $N(ie_t+\vec e_x)=-1+1=0$. The **idempotents** are the solutions of $\tilde Q\bullet\tilde Q=\tilde Q$ with $\tilde Q=iQ'_te_t+\vec Q$. Writing the square as $\bigl((iQ'_t)^2-(\vec Q,\vec Q)\bigr)e_t+2(iQ'_t)\vec Q$ and equating to $\tilde Q$, the vector equation gives $2iQ'_t\vec Q=\vec Q$; if $\vec Q\neq0$ this forces $iQ'_t=\tfrac12$, impossible because $iQ'_t$ is purely imaginary, so $\vec Q=0$, and the scalar equation gives $(iQ'_t)^2=iQ'_t$, with purely imaginary root $0$. The anti-Hermitian subspace contains no non-zero idempotent.
 
 ## The Table of the Remarkable Subspaces
 
 | Subspace | Closed under $\bullet$? | Product rule | Unit | Idempotents | Isotropic elements |
 |---|---|---|---|---|---|
 | Centre $\mathbb{C}_{\mathbb{B}}$ | yes | $(Ae_t)\bullet(Be_t)=ABe_t$ | $Ae_t$, $A\neq0$ | $0,\ e_t$ | $0$ only |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | no | $\vec P\bullet\vec Q=-(\vec P,\vec Q)e_t$ | $(\vec P,\vec P)\neq0$ | $0$ only | $\{(\vec P,\vec P)=0\}$, non-empty |
+| Vector $\mathrm{Vect}(\mathbb{B})$ | no | $\vec Q_1\bullet\vec Q_2=-(\vec Q_1,\vec Q_2)e_t$ | $(\vec Q,\vec Q)\neq0$ | $0$ only | $\{(\vec Q,\vec Q)=0\}$, non-empty |
 | Quaternion $\mathbb{H}_{\mathbb{B}}$ | yes | $h\bullet k=h_tk_t-(\vec h,\vec k)+h_t\vec k+k_t\vec h$ | all $h\neq0$ | $0,\ e_t$ | $0$ only |
 | Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | no | $(i\mathbf n)\bullet(i\mathbf m)=-\mathbf n\bullet\mathbf m$ | all $i\mathbf n\neq0$ | $0$ only | $0$ only |
-| Hermitian $\mathbb{M}_+$ | yes | $(\tilde P\bullet\tilde Q)^{*}=\tilde P\bullet\tilde Q$ | $P_t^2\neq\sum_k(P'_k)^2$ | $0,\ e_t,\ \tfrac12(e_t\pm \tilde\Xi)$ | $\{P_t^2=\sum_k(P'_k)^2\}$, non-empty |
-| Anti-Hermitian $\mathbb{M}_-$ | no | $(\tilde P\bullet\tilde Q)^{*}=\tilde P\bullet\tilde Q$ | $\sum_kP_k^2\neq(P'_t)^2$ | $0$ only | $\{\sum_kP_k^2=(P'_t)^2\}$, non-empty |
+| Hermitian $\mathbb{M}_+$ | yes | $(\tilde Q_1\bullet\tilde Q_2)^{*}=\tilde Q_1\bullet\tilde Q_2$ | $Q_t^2\neq\sum_k(Q'_k)^2$ | $0,\ e_t,\ \tfrac12(e_t\pm \tilde\Xi)$ | $\{Q_t^2=\sum_k(Q'_k)^2\}$, non-empty |
+| Anti-Hermitian $\mathbb{M}_-$ | no | $(\tilde Q_1\bullet\tilde Q_2)^{*}=\tilde Q_1\bullet\tilde Q_2$ | $\sum_kQ_k^2\neq(Q'_t)^2$ | $0$ only | $\{\sum_kQ_k^2=(Q'_t)^2\}$, non-empty |
 
 **Remark (three of the remarkable subspaces are closed).** Exactly **three of the remarkable subspaces are closed under $\bullet$ — the centre, the quaternion subspace and the Hermitian subspace** — and each of the three is a Jordan subalgebra: the centre is the field $\mathbb{C}$, the quaternion subspace is the Jordan division algebra of the symmetrised quaternions, and the Hermitian subspace is the Hermitian Jordan algebra $J(\mathbb{B})$. The other three fail: the vector subspace squares into the centre, the anti-quaternion subspace into the quaternion subspace, and the anti-Hermitian subspace into the Hermitian subspace. **The three failures are the three sign changes $\vec e_k^2=-e_t$, $i^2=-1$ and $(ie_t)^2=-e_t$**, each sending an element out of its subspace.
 
@@ -177,16 +177,16 @@ An anti-Hermitian element has $\langle\tilde P\rangle_{\natural}=-(P'_t)^2+\sum_
 
 ## Summary
 
-On the remarkable real subspaces the symmetric plain product is closed on the centre $\mathbb{C}_{\mathbb{B}}$, on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and on the Hermitian subspace $\mathbb{M}_+$, which are the three Jordan subalgebras of the block — the field $\mathbb{C}$, the Jordan division algebra of the symmetrised quaternions, and the Hermitian Jordan algebra $J(\mathbb{B})$. It fails to close on the vector subspace, where $\vec P\bullet\vec Q=-(\vec P,\vec Q)e_t$ lands in the centre; on the anti-quaternion subspace, where $(i\mathbf n)\bullet(i\mathbf m)=-\mathbf n\bullet\mathbf m$ lands in the quaternion subspace; and on the anti-Hermitian subspace, where $(ie_t)^2=-e_t$ lands in the Hermitian subspace. The units are the non-zero scalars in the centre, all non-zero elements in the two quaternion subspaces, the elements of non-zero dot form in the vector subspace, and the elements of non-zero generic norm in the two Hermitian sectors. The idempotents are $0$ and $e_t$ in the centre and the quaternion subspace and the Hermitian idempotents $\tfrac12(e_t\pm \tilde\Xi)$ in the Hermitian subspace, and $0$ alone in the other three. The isotropic elements are absent off zero in the centre and the two quaternion subspaces, and non-empty in the vector, Hermitian and anti-Hermitian subspaces; the elements of square zero agree with them on the vector subspace and are strictly smaller on the two Hermitian sectors.
+On the remarkable real subspaces the symmetric plain product is closed on the centre $\mathbb{C}_{\mathbb{B}}$, on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and on the Hermitian subspace $\mathbb{M}_+$, which are the three Jordan subalgebras of the block — the field $\mathbb{C}$, the Jordan division algebra of the symmetrised quaternions, and the Hermitian Jordan algebra $J(\mathbb{B})$. It fails to close on the vector subspace, where $\vec Q_1\bullet\vec Q_2=-(\vec Q_1,\vec Q_2)e_t$ lands in the centre; on the anti-quaternion subspace, where $(i\mathbf n)\bullet(i\mathbf m)=-\mathbf n\bullet\mathbf m$ lands in the quaternion subspace; and on the anti-Hermitian subspace, where $(ie_t)^2=-e_t$ lands in the Hermitian subspace. The units are the non-zero scalars in the centre, all non-zero elements in the two quaternion subspaces, the elements of non-zero dot form in the vector subspace, and the elements of non-zero generic norm in the two Hermitian sectors. The idempotents are $0$ and $e_t$ in the centre and the quaternion subspace and the Hermitian idempotents $\tfrac12(e_t\pm \tilde\Xi)$ in the Hermitian subspace, and $0$ alone in the other three. The isotropic elements are absent off zero in the centre and the two quaternion subspaces, and non-empty in the vector, Hermitian and anti-Hermitian subspaces; the elements of square zero agree with them on the vector subspace and are strictly smaller on the two Hermitian sectors.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}_{\mathbb{B}},\ \mathrm{Vect}(\mathbb{B}),\ \mathbb{H}_{\mathbb{B}},\ i\mathbb{H}_{\mathbb{B}},\ \mathbb{M}_+,\ \mathbb{M}_-$ | the remarkable real subspaces |
-| $\vec P\bullet\vec Q=-(\vec P,\vec Q)e_t$ | the product on the vector subspace, into the centre |
+| $\vec Q_1\bullet\vec Q_2=-(\vec Q_1,\vec Q_2)e_t$ | the product on the vector subspace, into the centre |
 | $i\mathbb{H}_{\mathbb{B}}\bullet i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$ | the product of two anti-quaternion elements |
-| $(\tilde P\bullet\tilde Q)^{*}=\tilde P\bullet\tilde Q$ | the closure of the Hermitian and the failure for the anti-Hermitian |
+| $(\tilde Q_1\bullet\tilde Q_2)^{*}=\tilde Q_1\bullet\tilde Q_2$ | the closure of the Hermitian and the failure for the anti-Hermitian |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the generic norm, deciding units and isotropic elements |
 | $\tfrac12(e_t\pm \tilde\Xi)$, $|\vec u|=1$ | the Hermitian idempotents, in $\mathbb{M}_+$ |
 

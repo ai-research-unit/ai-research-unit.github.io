@@ -5,7 +5,7 @@
 The antisymmetric plain sesquilinear product
 
 $$
-\tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}
+\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}
 $$
 
 is **conjugate-alternating**, vector valued and without a unit, and it fails the Jacobi identity (*Introduction to the Antisymmetric Plain Sesqualgebra*, *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*). As an element-theoretic object the block is poor: the origin is its only idempotent, it has no root of $-1$ or of $+1$, no unit and no inverse, every nonzero element is a zero divisor, and its nilpotents are a thin cone inside them. As an **operator-theoretic** object it has one sharp feature, and the feature is the whole of the present article.
@@ -32,7 +32,7 @@ The article is the closing entry of the block, after the introduction, the vecto
 
 ## Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The **plain product** is written by juxtaposition $\tilde P\tilde Q$ and the parent sesquilinear product $\tilde P\tilde Q^{*}$; a product written $\star$ is a generic one and its identity is stated at each use, and $\diamond$ is the product of the block. The conjugations are the natural conjugation ${}^{\natural}$, $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugations $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the **left** and the **right multiplication** of a product $\star$ by $\tilde Q_1$ are the maps
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The **plain product** is written by juxtaposition $\tilde Q_1\tilde Q_2$ and the parent sesquilinear product $\tilde Q_1\tilde Q_2^{*}$; a product written $\star$ is a generic one and its identity is stated at each use, and $\diamond$ is the product of the block. The conjugations are the natural conjugation ${}^{\natural}$, $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugations $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the **left** and the **right multiplication** of a product $\star$ by $\tilde Q_1$ are the maps
 
 $$
 L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2,
@@ -66,7 +66,7 @@ $$
 L^{\diamond}_{e_t}\tilde Q_1=e_t\diamond\tilde Q_1=\operatorname{Vect}\bigl(e_t\tilde Q_1^{*}\bigr)=\operatorname{Vect}\tilde Q_1^{*}=-\overline{\operatorname{Vect}\tilde Q_1}.
 $$
 
-*Proof.* The product is $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$ and $e_t^{*}=e_t$ is the unit of the plain product, so $\tilde Q_1e_t^{*}=\tilde Q_1$ and $\operatorname{Vect}(\tilde Q_1)=\operatorname{Vect}\tilde Q_1$; the left side is $e_t\tilde Q_1^{*}=\tilde Q_1^{*}$, and $\operatorname{Vect}(\tilde Q_1^{*})=-\overline{\operatorname{Vect}\tilde Q_1}$ because the vector part carries the coefficientwise conjugation with the signs $\varepsilon=(1,-1,-1,-1)$ and the natural conjugation.
+*Proof.* The product is $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})$ and $e_t^{*}=e_t$ is the unit of the plain product, so $\tilde Q_1e_t^{*}=\tilde Q_1$ and $\operatorname{Vect}(\tilde Q_1)=\operatorname{Vect}\tilde Q_1$; the left side is $e_t\tilde Q_1^{*}=\tilde Q_1^{*}$, and $\operatorname{Vect}(\tilde Q_1^{*})=-\overline{\operatorname{Vect}\tilde Q_1}$ because the vector part carries the coefficientwise conjugation with the signs $\varepsilon=(1,-1,-1,-1)$ and the natural conjugation.
 
 The two displays say the same thing twice: **the splitting is visible to the right multiplication and conjugate-visible to the left one.** The right multiplication by the ambient unit is the projection, so its image is the vector subspace and its kernel is the centre; the left multiplication is the projection followed by the coefficientwise conjugation, so its image is the *conjugate* vector subspace, which is the same space, and its kernel is again the centre.
 
@@ -134,10 +134,10 @@ The criteria of the twin articles are not the criterion of the block, and the bl
 **Remark (the companion law).** The block carries a second law, and it is not unique. The product is **conjugate-alternating**,
 
 $$
-\tilde Q\diamond\tilde P=-\overline{\tilde P\diamond\tilde Q},
+\tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2},
 $$
 
-and of the twelve structures exactly two are conjugate-alternating, the block and the quaternionic sesquilinear antisymmetrisation $\mathrm{AQS}=\vec P\times\overline{\vec Q}$. The law isolates the pair and not the block, and the criterion $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ separates the pair: $\mathrm{AQS}$ has $R^{\mathrm{AQS}}_{e_t}=0$ while the block has $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$. **The distinction between the two conjugate-alternating structures is exactly the nonvanishing of the square**: the diagonal of the block, $\tilde Q_1\diamond\tilde Q_1=\operatorname{Vect}(\tilde Q_1\tilde Q_1^{*})$, is the Hermitian square and is generally nonzero, while the diagonal of $\mathrm{AQS}$, $\vec Q_1\times\overline{\vec Q_1}$, vanishes on the elements whose two real parts are linearly dependent. This is the reading of the root of $0$ in *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*.
+and of the twelve structures exactly two are conjugate-alternating, the block and the quaternionic sesquilinear antisymmetrisation $\mathrm{AQS}=\vec Q_1\times\overline{\vec Q_2}$. The law isolates the pair and not the block, and the criterion $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ separates the pair: $\mathrm{AQS}$ has $R^{\mathrm{AQS}}_{e_t}=0$ while the block has $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$. **The distinction between the two conjugate-alternating structures is exactly the nonvanishing of the square**: the diagonal of the block, $\tilde Q_1\diamond\tilde Q_1=\operatorname{Vect}(\tilde Q_1\tilde Q_1^{*})$, is the Hermitian square and is generally nonzero, while the diagonal of $\mathrm{AQS}$, $\vec Q_1\times\overline{\vec Q_1}$, vanishes on the elements whose two real parts are linearly dependent. This is the reading of the root of $0$ in *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Sesqualgebra*.
 
 ## What the Criterion Delivers
 
@@ -162,7 +162,7 @@ The criterion is sharp and it has one neighbour on each side.
 
 ## Summary
 
-The block is the product $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$, conjugate-alternating, vector valued and without a unit, and its one sharp operator property is the identity
+The block is the product $\tilde Q_1\diamond\tilde Q_2=\operatorname{Vect}(\tilde Q_1\tilde Q_2^{*})$, conjugate-alternating, vector valued and without a unit, and its one sharp operator property is the identity
 
 $$
 R^{\diamond}_{e_t}=P_{\operatorname{Vect}},
@@ -184,7 +184,7 @@ The identity is equivalent to the projector classification of the block: a right
 | $P_{\mathbb{C}_{\mathbb{B}}}$ | the projection onto the centre along the vector subspace |
 | $R^{\diamond}_{e_t}=P_{\operatorname{Vect}}$ | the criterion, the splitting realised on the right |
 | $L^{\diamond}_{e_t}=-\overline{\cdot}\circ P_{\operatorname{Vect}}$ | the left multiplication by the ambient unit |
-| $\tilde Q\diamond\tilde P=-\overline{\tilde P\diamond\tilde Q}$ | the companion law, conjugate-alternation |
+| $\tilde Q_2\diamond\tilde Q_1=-\overline{\tilde Q_1\diamond\tilde Q_2}$ | the companion law, conjugate-alternation |
 | $\mathrm{APS}$, $\mathrm{AQS}$, $\mathrm{AQA}$ | the block, its conjugate-alternating sibling and its left twin |
 
 ## Further Reading

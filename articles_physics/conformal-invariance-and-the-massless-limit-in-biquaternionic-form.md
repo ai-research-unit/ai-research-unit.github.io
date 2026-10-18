@@ -317,7 +317,7 @@ The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell 
 | $\Theta_{\mu\nu} = T_{\mu\nu} + \xi(\delta_{\mu\nu}\Box - \partial^2/\partial Q_\mu\partial Q_\nu)\phi^2$ | Improved stress tensor; $\xi = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
 | $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ | Trace on shell (framework normalisation); proportional to the mass term |
 | $\Theta^\mu{}_\mu = 0$ (Maxwell) | Trace-free conformally invariant vector field |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 
 ## Further Reading
 

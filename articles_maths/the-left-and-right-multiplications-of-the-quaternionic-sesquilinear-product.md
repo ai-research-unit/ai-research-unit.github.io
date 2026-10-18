@@ -6,10 +6,10 @@
 The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ carries four general products on its underlying $\mathbb{C}$-vector space (*The Four General Products of the Biquaternioid $\mathbb{C}$ Space*), and the fourth of them,
 
 $$
-\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
+\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_t - \vec P$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde Q^{\natural} = Q_t - \vec Q$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
 
 The subject of this article is the pair of **multiplication operators** attached to the multiplication,
 
@@ -23,7 +23,7 @@ $$
 L_{\tilde A} \circ L_{\tilde Q_2} = T_{\tilde A^{\natural},\,\overline{\tilde Q_2}} , \qquad R_{\tilde A} \circ R_{\tilde Q_2} = T_{\overline{\tilde Q_2},\,\tilde A^{*}} ,
 $$
 
-where $T_{\tilde P,\tilde Q}(\tilde Q_1) = \tilde P\tilde Q_1\tilde Q$ is the ordinary two-sided operator. Third, the **absence of a monoid**: the composition of two left multiplications is $\mathbb{C}$-linear whereas every left multiplication is conjugate-linear, so the class is not closed under composition and the left multiplications do not form a monoid. They are sandwiches in the sense of *The Sesquilinear Sandwich Operator*, $L_{\tilde A} = S_{\tilde A^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of that article.
+where $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \tilde Q_1\tilde Q_3\tilde Q_2$ is the ordinary two-sided operator. Third, the **absence of a monoid**: the composition of two left multiplications is $\mathbb{C}$-linear whereas every left multiplication is conjugate-linear, so the class is not closed under composition and the left multiplications do not form a monoid. They are sandwiches in the sense of *The Sesquilinear Sandwich Operator*, $L_{\tilde A} = S_{\tilde A^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of that article.
 
 The article owns the two families, their parities, their composition laws and the failure of the monoid property. It cites the general operator theory to *The Left and Right Multiplication Operators of a Sesqualgebra*; it cites the sandwich and its composition table to *The Sesquilinear Sandwich Operator*; it cites the composition of the left multiplications of the four general products to *Relations Between the Four General Products* §*The Left Multiplications*; and it does not treat the ternary operator, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the matrix realization, which is *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*.
 
@@ -69,7 +69,7 @@ $$
 
 ### The Two Families in the Plain Operators
 
-Writing $\lambda_{\tilde P}(\tilde Q_1) = \tilde P\tilde Q_1$ and $\rho_{\tilde P}(\tilde Q_1) = \tilde Q_1\tilde P$ for the left and right multiplications of the plain product, the two multiplication operators are the plain multiplications composed with the two conjugations:
+Writing $\lambda_{\tilde A}(\tilde Q_1) = \tilde A\tilde Q_1$ and $\rho_{\tilde A}(\tilde Q_1) = \tilde Q_1\tilde A$ for the left and right multiplications of the plain product, the two multiplication operators are the plain multiplications composed with the two conjugations:
 
 $$
 L_{\tilde A} = \lambda_{\tilde A^{\natural}} \circ {}^{*} , \qquad R_{\tilde A} = \rho_{\tilde A^{*}} \circ {}^{\natural} .
@@ -91,7 +91,7 @@ $$
 L_{\tilde A} \circ L_{\tilde Q_2} = T_{\tilde A^{\natural},\,\overline{\tilde Q_2}} ,
 $$
 
-where $T_{\tilde P,\tilde Q}(\tilde Q_1) = \tilde P\tilde Q_1\tilde Q$ is the ordinary two-sided operator of the plain product.
+where $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \tilde Q_1\tilde Q_3\tilde Q_2$ is the ordinary two-sided operator of the plain product.
 
 **Proof.** Expanding the rule twice and using the anti-multiplicativity of the star and the identity $(\tilde Q_1^{*})^{\natural} = \overline{\tilde Q_1}$,
 
@@ -105,7 +105,7 @@ which is $T_{\tilde A^{\natural},\overline{\tilde Q_2}}(\tilde Q_1)$.
 
 **Corollary.** The composition of two left multiplications is $\mathbb{C}$-linear, whereas every left multiplication is conjugate-linear; hence the composition is a left multiplication if and only if it is zero, and for nonzero $\tilde A, \tilde Q_2$ it is not one. The class $\mathcal{L}$ is not closed under composition.
 
-**Proof.** The operator $T_{\tilde A^{\natural},\overline{\tilde Q_2}}$ is a plain two-sided multiplication and therefore $\mathbb{C}$-linear, being the composition of two $\mathbb{C}$-linear maps; but every element of $\mathcal{L}$ is conjugate-linear by the parity proposition. A map that is both $\mathbb{C}$-linear and conjugate-linear is zero, and the plain two-sided operator $T_{\tilde P,\tilde Q}$ vanishes identically only when $\tilde P = 0$ or $\tilde Q = 0$: a rank-one $\tilde Q_1$ gives the value $\tilde P\tilde Q_1\tilde Q$, a rank-one element of the matrix model of *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*, which is nonzero as soon as $\tilde P$ and $\tilde Q$ are. Hence for nonzero $\tilde A$ and $\tilde Q_2$ the composition $T_{\tilde A^{\natural},\overline{\tilde Q_2}}$ is a nonzero $\mathbb{C}$-linear operator and is not in $\mathcal{L}$.
+**Proof.** The operator $T_{\tilde A^{\natural},\overline{\tilde Q_2}}$ is a plain two-sided multiplication and therefore $\mathbb{C}$-linear, being the composition of two $\mathbb{C}$-linear maps; but every element of $\mathcal{L}$ is conjugate-linear by the parity proposition. A map that is both $\mathbb{C}$-linear and conjugate-linear is zero, and the plain two-sided operator $T_{\tilde Q_1,\tilde Q_2}$ vanishes identically only when $\tilde Q_1 = 0$ or $\tilde Q_2 = 0$: a rank-one $\tilde Q_3$ gives the value $\tilde Q_1\tilde Q_3\tilde Q_2$, a rank-one element of the matrix model of *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*, which is nonzero as soon as $\tilde Q_1$ and $\tilde Q_2$ are. Hence for nonzero $\tilde A$ and $\tilde Q_2$ the composition $T_{\tilde A^{\natural},\overline{\tilde Q_2}}$ is a nonzero $\mathbb{C}$-linear operator and is not in $\mathcal{L}$.
 
 **Remark.** The composition law is the reason the left multiplications do not form a monoid, and it is the same phenomenon as the failure of associativity read on the operators: the associator $\tilde A \star (\tilde Q_2 \star \tilde Q_1) - (\tilde A \star \tilde Q_2) \star \tilde Q_1$ measures the difference between $L_{\tilde A} \circ L_{\tilde Q_2}$ and $L_{\tilde A \star \tilde Q_2}$, both of which are operators on $\tilde Q_1$. The composition is a two-sided operator of the plain product, while the left multiplication of the product is a sandwich, and the two classes are disjoint.
 
@@ -114,7 +114,7 @@ which is $T_{\tilde A^{\natural},\overline{\tilde Q_2}}(\tilde Q_1)$.
 **Theorem (the generated monoid).** The left multiplications are the sandwiches $L_{\tilde A} = S_{\tilde A^{\natural},e_t}$, and the monoid they generate under composition is the sandwich monoid of *The Sesquilinear Sandwich Operator*, the set
 
 $$
-\{ T_{\tilde P,\tilde Q} : \tilde P, \tilde Q \in \mathbb{B} \} \cup \{ S_{a,b} : a, b \in \mathbb{B} \} ,
+\{ T_{\tilde Q_1,\tilde Q_2} : \tilde Q_1, \tilde Q_2 \in \mathbb{B} \} \cup \{ S_{a,b} : a, b \in \mathbb{B} \} ,
 $$
 
 with unit $T_{e_t,e_t} = \mathrm{id}$.
@@ -151,7 +151,7 @@ $$
 
 for every $\tilde Q_1$; at $\tilde Q_1 = e_t$ this gives $\tilde Q_3^{*} = \overline{\tilde Q_2}\tilde A^{*}$, and at $\tilde Q_1 = \vec e_k$ it gives $\overline{\tilde Q_2}\vec e_k\tilde A^{*} + \vec e_k\overline{\tilde Q_2}\tilde A^{*} = 0$. When $\tilde A$ is a unit of the algebra these conditions force $\tilde Q_2 = 0$, so with $\tilde A$ invertible the only composition $R_{\tilde A}\circ R_{\tilde Q_2}$ that is a right multiplication is the zero operator.
 
-**Proof.** The composition is the plain two-sided operator $T_{\overline{\tilde Q_2},\tilde A^{*}}$, which is linear, so the parity argument of the left case is unavailable. For the witness, $R_{e_t}(\tilde Q_1) = \tilde Q_1^{\natural}$, so $R_{e_t}\bigl(R_{e_t}(\tilde Q_1)\bigr) = (\tilde Q_1^{\natural})^{\natural} = \tilde Q_1$; if this were $R_{\tilde Q_3}$ then at $\tilde Q_1 = e_t$ it would give $\tilde Q_3^{*} = e_t$ and at $\tilde Q_1 = \vec e_x$ it would give $\vec e_x^{\natural}\tilde Q_3^{*} = -\vec e_x$, contradicting $\tilde Q_3^{*} = e_t$. For the general condition, write $\tilde P = \overline{\tilde Q_2}$ and $\tilde Z = \tilde A^{*}$; the three conditions read $(\tilde P\vec e_k + \vec e_k\tilde P)\tilde Z = 0$, and $\tilde P\vec e_k + \vec e_k\tilde P = 2P_t\vec e_k - 2P_ke_t$ for $\tilde P = \sum_\mu P_\mu e_\mu$. If $\tilde A$ is a unit then $\tilde Z$ is invertible, so $P_t\vec e_k - P_ke_t = 0$ for $k = 1, 2, 3$, hence $P_t = P_x = P_y = P_z = 0$ and $\tilde P = 0$, that is $\tilde Q_2 = 0$.
+**Proof.** The composition is the plain two-sided operator $T_{\overline{\tilde Q_2},\tilde A^{*}}$, which is linear, so the parity argument of the left case is unavailable. For the witness, $R_{e_t}(\tilde Q_1) = \tilde Q_1^{\natural}$, so $R_{e_t}\bigl(R_{e_t}(\tilde Q_1)\bigr) = (\tilde Q_1^{\natural})^{\natural} = \tilde Q_1$; if this were $R_{\tilde Q_3}$ then at $\tilde Q_1 = e_t$ it would give $\tilde Q_3^{*} = e_t$ and at $\tilde Q_1 = \vec e_x$ it would give $\vec e_x^{\natural}\tilde Q_3^{*} = -\vec e_x$, contradicting $\tilde Q_3^{*} = e_t$. For the general condition, write $\tilde Q_4 = \overline{\tilde Q_2}$; the three conditions read $(\tilde Q_4\vec e_k + \vec e_k\tilde Q_4)\tilde A^{*} = 0$, and $\tilde Q_4\vec e_k + \vec e_k\tilde Q_4 = 2Q_{4t}\vec e_k - 2Q_ke_t$ for $\tilde Q_4 = \sum_\mu Q_{4,\mu} e_\mu$. If $\tilde A$ is a unit then $\tilde A^{*}$ is invertible, so $Q_{4t}\vec e_k - Q_ke_t = 0$ for $k = 1, 2, 3$, hence $Q_{4t} = Q_{4x} = Q_{4y} = Q_{4z} = 0$ and $\tilde Q_4 = 0$, that is $\tilde Q_2 = 0$.
 
 ### The Mixed Compositions
 
@@ -260,7 +260,7 @@ The left and right multiplications of the general quaternionic sesquilinear mult
 | $L_{\tilde A}(\tilde Q_1) = \tilde A \star \tilde Q_1 = \tilde A^{\natural}\tilde Q_1^{*}$ | the left multiplication, conjugate-linear |
 | $R_{\tilde A}(\tilde Q_1) = \tilde Q_1 \star \tilde A = \tilde Q_1^{\natural}\tilde A^{*}$ | the right multiplication, linear |
 | $L_{\tilde A} = S_{\tilde A^{\natural},e_t}$ | the left multiplication as a sandwich |
-| $T_{\tilde P,\tilde Q}(\tilde Q_1) = \tilde P\tilde Q_1\tilde Q$ | the ordinary two-sided operator |
+| $T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3) = \tilde Q_1\tilde Q_3\tilde Q_2$ | the ordinary two-sided operator |
 | $L_{\tilde A} \circ L_{\tilde Q_2} = T_{\tilde A^{\natural},\overline{\tilde Q_2}}$ | the composition of two left multiplications |
 | $R_{\tilde A} \circ R_{\tilde Q_2} = T_{\overline{\tilde Q_2},\tilde A^{*}}$ | the composition of two right multiplications |
 | $L_{\tilde A} \circ R_{\tilde Q_2} = \tilde A^{\natural}\tilde Q_2\overline{\tilde Q_1}$ | a mixed composition, conjugate-linear |

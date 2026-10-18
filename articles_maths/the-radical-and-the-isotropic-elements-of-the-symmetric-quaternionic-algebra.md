@@ -2,20 +2,20 @@
 
 ## Introduction
 
-The symmetric quaternionic multiplication $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$
+The symmetric quaternionic multiplication $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$
 (*Introduction to the Symmetric Quaternionic Algebra*) collapses every product onto the
 central line, so the element theory of the operation is read entirely from the coefficient
-$\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$ and its diagonal. This article reads that coefficient as a
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ and its diagonal. This article reads that coefficient as a
 pairing and develops the two objects the article title names: the **radical**, which is the set of elements
 annihilated by the whole algebra on both sides, and the **isotropic elements**, the elements whose square
 vanishes. It then records the derived objects the collapse produces — the derived law and the ternary law — and identifies the isotropic elements with the zero divisors of the parent plain algebra.
 
 **Placement.** The article is the first entry of the *Specific Theory* section of the block, the section that carries the block's own structural theory, and it is followed by *The Specificities of the Symmetric Quaternionic Algebra*. It assumes the operation and its formula from *Introduction to the Symmetric Quaternionic Algebra*, the centrality from *The Symmetrised Quaternionic Product and the Hermitian Subspace*, the norm, its polarisation and its isotropic cone from *Norm and Invertibility in the General Quaternionic Algebra* and *Zero Divisors of the Biquaternion Algebra*; the idempotents, the nilpotents and the zero-divisor set of the block are the Common Theory slots *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, cited here and not restated. The remarkable subspaces are treated in the companion article *Remarkable Subspaces under the Symmetric Quaternionic Algebra*, and the form reader is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
 
-**Conventions.** The operation is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$,
-equal to $\langle\tilde P,\tilde Q\rangle_{\natural}e_t$; the coefficient $\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$ is the
-quaternion form, and $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ is its diagonal; the quaternionic
-bracket is $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$. The remarkable subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$,
+**Conventions.** The operation is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$,
+equal to $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$; the coefficient $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ is the
+quaternion form, and $\langle\tilde Q_1\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^2$ is its diagonal; the quaternionic
+bracket is $[\tilde Q_1,\tilde Q_2]_{\natural}=\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$. The remarkable subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$,
 $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*.
 
 ## The Product as a Pairing with Values in the Centre
@@ -39,21 +39,21 @@ Symmetric Quaternionic Algebra*.
 $\langle\cdot\rangle_{\natural}$ is recovered from it: for every pair,
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural} = \operatorname{Sc}\bigl(\tilde P\star\tilde Q\bigr),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \operatorname{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr),
 $$
 
 the coefficient of $e_t$ in the value. In particular $\star$ is the **quaternion form** placed on the central
 line, and the only datum of the operation is the symmetric $\mathbb{C}$-bilinear form $\langle\cdot\rangle_{\natural}$.
 
-*Proof.* The value is $\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ by the theorem of *Introduction to the Symmetric Quaternionic
-Algebra of Biquaternions*, and its scalar part is $\langle\tilde P,\tilde Q\rangle_{\natural}$. Conversely a bilinear operation given
+*Proof.* The value is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ by the theorem of *Introduction to the Symmetric Quaternionic
+Algebra of Biquaternions*, and its scalar part is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$. Conversely a bilinear operation given
 by a form is the form.
 
 **Remark (an algebraic form).** The coefficient $\langle\cdot\rangle_{\natural}$ is a $\mathbb{C}$-bilinear form, symmetric,
-with values in $\mathbb{C}$; its values are complex and not real in general, as at $\tilde P=e_t$,
-$\tilde Q=ie_t$, where $N=i$. The diagonal $\langle\cdot\rangle_{\natural}$ is the algebraic
+with values in $\mathbb{C}$; its values are complex and not real in general, as at $\tilde Q_1=e_t$,
+$\tilde Q_2=ie_t$, where $N=i$. The diagonal $\langle\cdot\rangle_{\natural}$ is the algebraic
 norm of *Norm and Invertibility in the General Quaternionic Algebra*, and $\langle\cdot\rangle_{\natural}$ is multiplicative on the algebra. The reader must keep
-the two readings apart: the diagonal $\langle\tilde Q\rangle_{\natural}$ is multiplicative and central-valued, while the form $\langle\tilde P,\tilde Q\rangle_{\natural}$ is only bilinear.
+the two readings apart: the diagonal $\langle\tilde Q_1\rangle_{\natural}$ is multiplicative and central-valued, while the form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ is only bilinear.
 
 ## The Radical
 
@@ -96,11 +96,11 @@ set of isotropic elements.
 
 **Theorem (the isotropic elements are the zero divisors of the parent).** An element is isotropic for $\star$ exactly when
 $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=0$, and the nonzero isotropic elements are exactly the zero divisors of the parent plain
-product, $\{N=0\}\setminus\{0\}=\mathcal{Z}_{\tilde P\tilde Q}$; the zero-divisor set of the block itself is strictly larger, being the whole punctured space
+product, $\{N=0\}\setminus\{0\}=\mathcal{Z}_{\tilde Q_1\tilde Q_2}$; the zero-divisor set of the block itself is strictly larger, being the whole punctured space
 (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The
 cone is the affine cone over the quadric $\{[Q_t:Q_x:Q_y:Q_z]:\sum_\mu Q_\mu^2=0\}$ of
 $\mathbb{P}^3(\mathbb{C})$, of complex dimension $2$ in the projective space and $3$ in the algebra, and it is
-the isotropic cone of the form $\langle\tilde P,\tilde Q\rangle_{\natural}$ and of the norm $\langle\tilde Q\rangle_{\natural}$ alike (*Zero Divisors of the Biquaternion Algebra*, *Norm
+the isotropic cone of the form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ and of the norm $\langle\tilde Q_1\rangle_{\natural}$ alike (*Zero Divisors of the Biquaternion Algebra*, *Norm
 and Invertibility in the Symmetric Quaternionic Algebra*). It splits into the **pure family**, the elements with $Q_t=0$, a cone of complex
 dimension $2$, and the **non-pure family**, the elements with $Q_t\ne0$, of complex dimension $3$; the two are
 disjoint and their union is the cone (*Zero Divisors of the Biquaternion Algebra*).
@@ -114,9 +114,9 @@ element is isotropic; it lies on the Hermitian subspace $\mathbb{M}_+$ and is a 
 $\tilde Q=\vec e_x+i\vec e_y$ the norm is $N=1+i^2=0$ as well, and the element is a pure zero divisor, lying in the
 vector subspace. For $\tilde Q=\vec e_x+\vec e_y+\vec e_z$ the norm is $N=1+1+1=3\ne0$, and the element is not isotropic.
 
-**Remark (isotropy is not the vanishing of the value).** An element with $\langle\tilde Q\rangle_{\natural}=0$ still multiplies
-nonzero elements to nonzero values: the product $\tilde Q\star\tilde Q_1=\langle\tilde Q,\tilde Q_1\rangle_{\natural}e_t$ can be
-nonzero even when $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$, because the form is indefinite and not positive. The isotropy of
+**Remark (isotropy is not the vanishing of the value).** An element with $\langle\tilde Q_1\rangle_{\natural}=0$ still multiplies
+nonzero elements to nonzero values: the product $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ can be
+nonzero even when $\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=0$, because the form is indefinite and not positive. The isotropy of
 $\langle\cdot\rangle_{\natural}$ is the vanishing of the form on one direction, and it is the diagonal that reads it; the radical, by
 contrast, is the vanishing on all directions, and it is trivial. Isotropy is a property of each element, and
 the radical is a property of the space.
@@ -128,7 +128,7 @@ the radical is a property of the space.
 **Proposition (the derived law collapses).** The commutator of the operation vanishes identically,
 
 $$
-[\tilde P,\tilde Q]_{\star} = \tilde P\star\tilde Q-\tilde Q\star\tilde P = 0 ,
+[\tilde Q_1,\tilde Q_2]_{\star} = \tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1 = 0 ,
 $$
 
 so the operation has no derived Lie structure: the derived operation of $\mathrm{SQA}$ is the zero operation
@@ -140,36 +140,36 @@ multiplication of $\mathbb{C}$ by the proposition of *Introduction to the Symmet
 Biquaternions*.
 
 **Proposition (the associative law does not collapse).** The operation is not associative: at
-$\tilde P=\tilde Q=\vec e_x$, $\tilde Q_1=e_t$ the two bracketings are
+$\tilde Q_1=\tilde Q_2=\vec e_x$, $\tilde Q_3=e_t$ the two bracketings are
 
 $$
-(\tilde P\star\tilde Q)\star\tilde Q_1 = e_t, \qquad
-\tilde P\star(\tilde Q\star\tilde Q_1) = 0 ,
+(\tilde Q_1\star\tilde Q_2)\star\tilde Q_3 = e_t, \qquad
+\tilde Q_1\star(\tilde Q_2\star\tilde Q_3) = 0 ,
 $$
 
 so the associator is the nonzero element $e_t$. The general associator is
 
 $$
-(\tilde P\star\tilde Q)\star\tilde Q_1-\tilde P\star(\tilde Q\star\tilde Q_1)
-= \Bigl(\langle\tilde P,\tilde Q\rangle_{\natural}R_t - P_t\langle\tilde Q,\tilde Q_1\rangle_{\natural}\Bigr)e_t .
+(\tilde Q_1\star\tilde Q_2)\star\tilde Q_3-\tilde Q_1\star(\tilde Q_2\star\tilde Q_3)
+= \Bigl(\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}Q_{3t} - Q_{1t}\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}\Bigr)e_t .
 $$
 
-*Proof.* $(\tilde P\star\tilde Q)\star\tilde Q_1=\langle\tilde P,\tilde Q\rangle_{\natural}e_t\star\tilde Q_1=\langle\tilde P,\tilde Q\rangle_{\natural}R_te_t$, and $\tilde P\star(\tilde Q\star\tilde Q_1)=\langle\tilde Q,\tilde Q_1\rangle_{\natural}\,L^{\star}_{\tilde P}e_t=\langle\tilde Q,\tilde Q_1\rangle_{\natural}P_te_t$. At the witness the first is
+*Proof.* $(\tilde Q_1\star\tilde Q_2)\star\tilde Q_3=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t\star\tilde Q_3=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}Q_{3t}e_t$, and $\tilde Q_1\star(\tilde Q_2\star\tilde Q_3)=\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}\,L^{\star}_{\tilde Q_1}e_t=\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}Q_te_t$. At the witness the first is
 $\langle \vec e_x,\vec e_x\rangle_{\natural}\cdot 1\cdot e_t=e_t$ and the second is $\langle \vec e_x,e_t\rangle_{\natural}\cdot 0=0$.
 
 **Remark (the ternary law).** The ternary object the operation carries is the one obtained by composing the
 quaternionic bracket with the product,
 
 $$
-T(\tilde P,\tilde Q,\tilde Q_1) = [\tilde P,\tilde Q_1]_{\natural}\star\tilde Q
-= N\bigl([\tilde P,\tilde Q_1]_{\natural},\tilde Q\bigr)e_t ,
+T(\tilde Q_1,\tilde Q_2,\tilde Q_3) = [\tilde Q_1,\tilde Q_3]_{\natural}\star\tilde Q_2
+= N\bigl([\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\bigr)e_t ,
 $$
 
 which is linear in each of its three arguments and alternating in the first and the third, the bracket
-$[\tilde P,\tilde Q_1]_{\natural}=2\bigl(P_t\vec R-R_t\vec P-\vec P\times\vec R\bigr)$ being alternating. It does
-**not** vanish in general: at $\tilde P=\vec e_x$, $\tilde Q_1=\vec e_y$, $\tilde Q=\vec e_z$ the bracket is
-$[\tilde P,\tilde Q_1]_{\natural}=-2\vec e_z$ and $\langle -2\vec e_z,\vec e_z\rangle_{\natural}=-2$, so $T=-2e_t$, and the sum
-$[\tilde P,\tilde Q_1]_{\natural}\star\tilde Q+\tilde Q\star[\tilde P,\tilde Q_1]_{\natural}=2\langle[\tilde P,\tilde Q_1]_{\natural},\tilde Q\rangle_{\natural}e_t$ is twice this value and is not $0$. The operation therefore
+$[\tilde Q_1,\tilde Q_3]_{\natural}=2\bigl(Q_{1t}\vec Q_3-Q_{3t}\vec Q_1-\vec Q_1\times\vec Q_3\bigr)$ being alternating. It does
+**not** vanish in general: at $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_z$, $\tilde Q_3=\vec e_y$ the bracket is
+$[\tilde Q_1,\tilde Q_3]_{\natural}=-2\vec e_z$ and $\langle -2\vec e_z,\vec e_z\rangle_{\natural}=-2$, so $T=-2e_t$, and the sum
+$[\tilde Q_1,\tilde Q_3]_{\natural}\star\tilde Q_2+\tilde Q_2\star[\tilde Q_1,\tilde Q_3]_{\natural}=2\langle[\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\rangle_{\natural}e_t$ is twice this value and is not $0$. The operation therefore
 does not kill the bracket by symmetrisation; what is zero is the commutator of $\star$ itself, not its
 composition with the bracket.
 
@@ -198,7 +198,7 @@ generic situation.
 
 ## Summary
 
-The symmetric quaternionic multiplication is a pairing: $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$, the
+The symmetric quaternionic multiplication is a pairing: $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, the
 quaternion form placed on the central line, and the form is recovered from the product as the coefficient of
 $e_t$. Its radical — the two-sided annihilator — is trivial, the Gram matrix of $N$ being the unit matrix; the
 operation is therefore not the zero operation and its form is non-degenerate. Its isotropic elements are the
@@ -207,22 +207,22 @@ $\sum_\mu Q_\mu^2=0$ of $\mathbb{P}^3(\mathbb{C})$, of complex dimension $3$ in 
 witnesses are $e_t+i\vec e_x$ on the Hermitian subspace and $\vec e_x+i\vec e_y$ on the vector subspace. The square-zero
 elements are exactly the isotropic ones; the idempotents are $0$ and $e_t$ alone; the derived law collapses,
 the commutator of $\star$ being identically zero; the associative law does not collapse, the associator being
-$\langle\tilde P,\tilde Q\rangle_{\natural}R_t-P_t\langle\tilde Q,\tilde Q_1\rangle_{\natural}$ times $e_t$, nonzero at $\vec e_x,\vec e_x,e_t$; and the ternary
-object $\langle[\tilde P,\tilde Q_1]_{\natural},\tilde Q\rangle_{\natural}e_t$ does not vanish. The two definite rows of the remarkable subspaces
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}Q_{3t}-Q_{1t}\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}$ times $e_t$, nonzero at $\vec e_x,\vec e_x,e_t$; and the ternary
+object $\langle[\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\rangle_{\natural}e_t$ does not vanish. The two definite rows of the remarkable subspaces
 contain no nonzero isotropic element.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ | the symmetric quaternionic multiplication |
-| $\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$ | the quaternion form, the coefficient of the product |
+| $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ | the symmetric quaternionic multiplication |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ | the quaternion form, the coefficient of the product |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the norm form, the diagonal of $\langle\cdot\rangle_{\natural}$ |
 | $L^{\star}_{\tilde A}$ | the left (and right) multiplication, $L^{\star}_{\tilde A}\tilde Q_1=\langle\tilde A,\tilde Q_1\rangle_{\natural}e_t$ |
 | $\operatorname{Rad}(\star)$ | the two-sided annihilator, $\{0\}$ |
-| $[\tilde P,\tilde Q]_{\natural}$ | the quaternionic bracket $\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$ |
-| $[\tilde P,\tilde Q]_{\star}$ | the commutator of the operation, identically zero |
-| $T(\tilde P,\tilde Q,\tilde Q_1)=\langle[\tilde P,\tilde Q_1]_{\natural},\tilde Q\rangle_{\natural}e_t$ | the ternary object of the operation |
+| $[\tilde Q_1,\tilde Q_2]_{\natural}$ | the quaternionic bracket $\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1$ |
+| $[\tilde Q_1,\tilde Q_2]_{\star}$ | the commutator of the operation, identically zero |
+| $T(\tilde Q_1,\tilde Q_2,\tilde Q_3)=\langle[\tilde Q_1,\tilde Q_3]_{\natural},\tilde Q_2\rangle_{\natural}e_t$ | the ternary object of the operation |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
 
 ## Further Reading

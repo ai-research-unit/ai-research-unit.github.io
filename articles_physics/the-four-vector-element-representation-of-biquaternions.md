@@ -278,7 +278,7 @@ with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm
 The anti-fixed space of Hermitian conjugation: a purely imaginary scalar coefficient and three real vector coefficients, three real components and one imaginary one,
 
 $$
-\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (iq'_0,\ q_x,\ q_y,\ q_z) = (ict,\ x,\ y,\ z),
+\tilde{R} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (iq'_0,\ q_x,\ q_y,\ q_z) = (ict,\ x,\ y,\ z),
 $$
 
 with $Q_t = iq'_0$, $Q_k = q_k$, $q'_0 = ct$ and $q_k = x_k$, and the biquaternion norm $N = -c^2t^2 +x^2+y^2+z^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.
@@ -360,7 +360,7 @@ The material sector is the home of the four-vectors, and the four-vector represe
 **The four-position.**
 
 $$
-\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad \langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2,
+\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad \langle\tilde{R}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2,
 $$
 
 which is the Minkowski interval. The four-position is the element whose biquaternion norm vanishes on the light cone through the origin, and it is the object acted on by the rotor conjugation.
@@ -457,8 +457,8 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$ | Biquaternionic gradient; $\langle\tilde{\nabla}\rangle_{\natural} = \Box$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | The $ict$-coordinate metric of the explicit contractions (level 2) |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

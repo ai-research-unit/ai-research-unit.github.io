@@ -86,7 +86,7 @@ On the remarkable real subspaces the general plain sesquilinear form carries the
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$ | the general plain sesquilinear form |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the general plain sesquilinear form |
 | $\mathrm{I}_2,\mathrm{I}_6,\mathrm{I}_4$ | the restriction matrices on the centre, the vector subspace and each four-dimensional subspace |
 | $(2,0),(6,0),(4,0)$ | the signatures of the restrictions |
 | $\lVert\tilde Q\rVert_E^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the definite norm the form defines |

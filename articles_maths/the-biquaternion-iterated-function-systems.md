@@ -30,7 +30,7 @@ The three families are nested; a left-affine map is two-sided with $\tilde C=e_t
 
 **Proposition (the Lipschitz constant).** The map $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is Lipschitz with constant $\|L_{\tilde A}\|$, and $\|L_{\tilde A}\|\le\sqrt2\,\|\tilde A\|_E$. It is a contraction exactly when $\|L_{\tilde A}\|<1$.
 
-**Proof.** $\|f(\tilde Q_2)-f(\tilde Q)\|_E=\|\tilde A(\tilde Q_2-\tilde Q)\|_E\le\|L_{\tilde A}\|\|\tilde Q_2-\tilde Q\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde A}\|\le\sqrt2\|\tilde A\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
+**Proof.** $\|f(\tilde Q_2)-f(\tilde Q_1)\|_E=\|\tilde A(\tilde Q_2-\tilde Q_1)\|_E\le\|L_{\tilde A}\|\|\tilde Q_2-\tilde Q_1\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde A}\|\le\sqrt2\|\tilde A\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
 
 **Theorem (the similarity multipliers).** Let $\tilde A$ be a real quaternion of positive norm, $\tilde A\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde A\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde A$ is a similarity of the eight-dimensional space with ratio $\rho$,
 
@@ -40,7 +40,7 @@ $$
 
 so $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a similarity with ratio $\rho$ and is a contraction exactly when $\rho<1$.
 
-**Proof.** Write $\tilde A=\rho U$ with $U$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde P+i\tilde Q_1$ with $\tilde P,\tilde Q_1\in\mathbb{H}$, one has $\tilde A\tilde Q=\tilde A\tilde P+i\tilde A\tilde Q_1$ and $\|\tilde A\tilde Q\|_E^2=\rho^2(\|\tilde P\|^2+\|\tilde Q_1\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
+**Proof.** Write $\tilde A=\rho\tilde u$ with $\tilde u$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde P+i\tilde Q_1$ with $\tilde P,\tilde Q_1\in\mathbb{H}$, one has $\tilde A\tilde Q=\tilde A\tilde P+i\tilde A\tilde Q_1$ and $\|\tilde A\tilde Q\|_E^2=\rho^2(\|\tilde P\|^2+\|\tilde Q_1\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
 
 **Remark (the central multipliers).** For a central multiplier $\tilde A=\lambda e_t$ the similarity ratio is $|\lambda|$, the smallest possible among the multipliers of a given biquaternion norm, because $\|\lambda e_t\|_E=|\lambda|$ and the operator norm is $|\lambda|$. **For a real quaternionic multiplier the ratio is the square root of the biquaternion norm; for a general multiplier the ratio lies between the two extremes and there is no formula in terms of $\langle\cdot\rangle_{\natural}$ alone**, because the algebra is not a division algebra.
 
@@ -74,7 +74,7 @@ and the Hausdorff measure in dimension $s$ of the attractor is positive and fini
 
 ## The Inverse Branches of the Quadratic Map
 
-**Proposition (the square root and its branches).** For $\tilde W\in\mathbb{B}$ the equation $\tilde Q^2=\tilde W$ is solved by the square-root formula of the algebra: writing the root as $\tilde Q=Q_te_t+\vec Q$, its scalar part is $P_0=\pm\sqrt{x}$ for the two solutions $x_\pm=\tfrac12(Q_t\pm\sqrt{n})$ of the reduced quadratic in $x=P_0^2$, and there are generically four roots, falling to two in the degenerate cases and to none for a non-zero nilpotent $\tilde W$ (*Square Roots of a General Element in the Biquaternion Algebra*). On the regular part of the square map the roots are therefore the values of finitely many local branches.
+**Proposition (the square root and its branches).** For $\tilde Q_2\in\mathbb{B}$ the equation $\tilde Q_1^2=\tilde Q_2$ is solved by the square-root formula of the algebra: writing the root as $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, its scalar part is $Q_{1t}=\pm\sqrt{x}$ for the two solutions $x_\pm=\tfrac12(Q_{2t}\pm\sqrt{n})$ of the reduced quadratic in $x=Q_{1t}^2$, and there are generically four roots, falling to two in the degenerate cases and to none for a non-zero nilpotent $\tilde Q_2$ (*Square Roots of a General Element in the Biquaternion Algebra*). On the regular part of the square map the roots are therefore the values of finitely many local branches.
 
 **Proof.** The count is the corollary on the number of roots of *Square Roots of a General Element in the Biquaternion Algebra*: four roots when $(\vec Q,\vec Q)\neq0$ and $n\neq0$, two in the degenerate cases, and none for a rootless element, the example being a non-zero nilpotent of the algebra; the square map is the polynomial $M\mapsto M^2$ in the matrix model (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 

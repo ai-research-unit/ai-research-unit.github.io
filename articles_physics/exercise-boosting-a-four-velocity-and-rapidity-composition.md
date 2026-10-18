@@ -278,7 +278,7 @@ The sign is therefore fixed entirely by whether one uses $\tilde{V}^{\natural}$ 
 
 **Statement.** Let the boost parameter vary along a scalar parameter $\tau$ instead of being fixed, and let the material coordinate of the moving frame's origin be
 $$
-\tilde{Q}(\tau) = ic\,\tau\cosh\chi(\tau)\,e_t + c\,\tau\sinh\chi(\tau)\,\vec u_y,
+\tilde{R}(\tau) = ic\,\tau\cosh\chi(\tau)\,e_t + c\,\tau\sinh\chi(\tau)\,\vec u_y,
 \qquad \chi = \chi(\tau),
 $$
 so that $t = \tau\cosh\chi$ and the displacement along $\vec u_y$ is $x_1 = c\tau\sinh\chi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dt$.

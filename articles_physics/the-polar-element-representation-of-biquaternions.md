@@ -269,7 +269,7 @@ with $B = \tilde{\Lambda}$, since a Hermitian positive-definite element is its o
 
 ### A Four-Position and Its Proper Time
 
-Take $\tilde{Q} = i\,e_t + 0.6\,\vec e_x$, the four-position of a particle at $ct = 1$ moving at $0.6c$ along $\vec e_x$. Then
+Take $\tilde{R} = i\,e_t + 0.6\,\vec e_x$, the four-position of a particle at $ct = 1$ moving at $0.6c$ along $\vec e_x$. Then
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = -1+0.36 = -0.64 , \qquad r = 0.8 = c\tau , \qquad \alpha = \frac{\pi}{2} ,
@@ -375,7 +375,7 @@ The rotor is the Thomas–Wigner rotation when two boosts are composed, and it i
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, $\vec u_{\mathrm b} = \vec v/|\vec v|$ | the physics boost rotor; for a four-position $B = (\tilde{\Lambda}^{\natural})^2 = -(i/c)\tilde{V}$ |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$ | the four-velocity |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors; four-vectors live in $\mathbb{M}_-$ |
-| $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | a four-position, interval $N = -c^2t^2+x^2+y^2+z^2$ |
+| $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | a four-position, interval $N = -c^2t^2+x^2+y^2+z^2$ |
 
 ## Further Reading
 

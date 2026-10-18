@@ -4,10 +4,10 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is not a division algebra. It contains nonzero elements whose biquaternion norm vanishes, and those elements annihilate other nonzero elements. This article is about the physical meaning of that fact in its simplest case: the set on which the biquaternion norm vanishes is the **light cone** of the material sector, and its algebraic character as the **zero-divisor set** is what makes the cone a boundary of the algebra and not merely a surface in spacetime.
 
-The starting observation is one line long. For the material coordinate $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the biquaternion norm is
+The starting observation is one line long. For the material coordinate $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the biquaternion norm is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\overline{\tilde{Q}} = -c^2t^2 +x^2+y^2+z^2 ,
+\langle\tilde{R}\rangle_{\natural} = \langle\tilde{R},\tilde{R}\rangle_{\natural} = \tilde{R}\,\overline{\tilde{R}} = -c^2t^2 +x^2+y^2+z^2 ,
 $$
 
 so the equation $\langle\tilde{Q}\rangle_{\natural} = 0$ is exactly the equation of the light cone, $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| = c|t|$. The Minkowski interval is not imported into the algebra and then made to vanish; it is the algebra's own quadratic form, and the cone is its zero set. What the zero-divisor structure adds is a classification of the points of the cone and a reason why the cone is special: it is the locus where the algebra fails to be invertible, and the failure is precisely the existence of lightlike propagation.
@@ -18,7 +18,7 @@ Three threads are developed below.
 - **The cone in the remarkable subspaces.** The complex scalar line and the real-quaternion subspace are division algebras and contain no zero divisors. The two Hermitian-type subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ each contain a cone, and the $\mathbb{M}_-$ cone is the physical light cone.
 - **The cone as the locus of propagation.** The d'Alembertian is the biquaternion norm of the gradient, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$, and a four-wavevector $\tilde P$ is null exactly when $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$. For such a $\tilde P$ every function of the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \langle\tilde P,\tilde{Q}\rangle_{\natural}$ solves the wave equation, so the null directions are the directions in which the algebra propagates without dispersion. The light cone is where the biquaternion norm degenerates, the wave operator factorizes, and signals travel at $c$.
 
-**Conventions.** We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the central scalar imaginary. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, with $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on the real material slice — and the material coordinate is $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$.
+**Conventions.** We use those of the read list unchanged. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the central scalar imaginary. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, with $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on the real material slice — and the material coordinate is $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$.
 
 ## The Biquaternion Norm and Its Vanishing Set
 
@@ -38,10 +38,10 @@ $$
 
 a complex cone of complex dimension three with the origin removed. Since the form is isotropic, the algebra is split by it, and the elements of $\mathcal{Z}$ are exactly the **zero divisors**: a nonzero $\tilde{Q}$ has $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ if and only if there is a nonzero $\tilde{Q}'$ with $\tilde{Q}\tilde{Q}' = 0$ (or with $\tilde{Q}'\tilde{Q} = 0$).
 
-On the **real material slice**, writing $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{R}^4$, the form becomes
+On the **real material slice**, writing $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{R}^4$, the form becomes
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = (ic\,t)^2 +x^2+y^2+z^2 = -c^2t^2 +x^2+y^2+z^2 ,
+\langle\tilde{R}\rangle_{\natural} = (ic\,t)^2 +x^2+y^2+z^2 = -c^2t^2 +x^2+y^2+z^2 ,
 $$
 
 and the trichotomy of causal type is the trichotomy of sign:
@@ -286,10 +286,10 @@ The conventions of the construction are those of the following companion article
 
 ## Summary
 
-The biquaternion norm of the biquaternion algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Its vanishing set is the zero-divisor set $\mathcal{Z}$, a complex cone of complex dimension three, stratified into a **pure** family ($Q_t = 0$, nilpotent, $\tilde{Q}^2 = 0$) and a **non-pure** family ($Q_t\neq 0$, idempotent multiple, $\tilde{Q}^2 = 2Q_t\tilde{Q}$). On the real material slice $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the form restricts to
+The biquaternion norm of the biquaternion algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. Its vanishing set is the zero-divisor set $\mathcal{Z}$, a complex cone of complex dimension three, stratified into a **pure** family ($Q_t = 0$, nilpotent, $\tilde{Q}^2 = 0$) and a **non-pure** family ($Q_t\neq 0$, idempotent multiple, $\tilde{Q}^2 = 2Q_t\tilde{Q}$). On the real material slice $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the form restricts to
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2 ,
+\langle\tilde{R}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2 ,
 $$
 
 so $\mathcal{Z}$ meets the material sector exactly in the light cone $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| = c|t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
@@ -308,7 +308,7 @@ The light cone is the set on which the biquaternion algebra ceases to be inverti
 | $\mathcal{Z} = \{\tilde{Q}\neq0 : \langle\tilde{Q}\rangle_{\natural}=0\}$ | Zero-divisor set: the cone |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$ | Division subalgebras: complex scalar line (centre); real quaternions |
-| $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate, $\mathbb{M}_-$ |
+| $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate, $\mathbb{M}_-$ |
 | $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ | Interval; zero set is the light cone |
 | $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$ | Idempotent; $N=0$, $\tilde{P}^2=\tilde{P}$ |
 | $\tilde{Q}^2 = 2Q_t\tilde{Q}$ | Non-pure zero-divisor identity |
@@ -318,8 +318,8 @@ The light cone is the set on which the biquaternion algebra ceases to be inverti
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit norm) |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Rotor conjugation; preserves the cone |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

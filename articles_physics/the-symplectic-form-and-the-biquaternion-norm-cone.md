@@ -268,13 +268,13 @@ The algebra's reason for caring about the cone is that its points are the **zero
 
 ### The Material Light Cone
 
-The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$,
+The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$,
 
 $$
-\langle\tilde{Q}\rangle_{\natural}=(ict)^2+x^2+y^2+z^2=-c^2t^2+x^2+y^2+z^2 ,
+\langle\tilde{R}\rangle_{\natural}=(ict)^2+x^2+y^2+z^2=-c^2t^2+x^2+y^2+z^2 ,
 $$
 
-which is the Minkowski interval; its zero set $\langle\tilde{Q}\rangle_{\natural}=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
+which is the Minkowski interval; its zero set $\langle\tilde{R}\rangle_{\natural}=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
 
 The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde P=\frac{i\omega}{c}e_t+\vec k$, the biquaternion norm is
 
@@ -358,12 +358,12 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\theta=\frac12\mathrm{Im}\,\mathrm{Sc}(\tilde Z^{*} d\tilde Z)$ | Symplectic potential, $d\theta=\omega$ |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (holomorphic) |
 | $\langle\tilde Z,\tilde W\rangle=\mathrm{Sc}(\tilde Z\tilde W^{\natural}) = \langle\tilde Z,\tilde W\rangle_{\natural}$ | Symmetric general plain bilinear form of $\langle\cdot,\cdot\rangle_{\natural}$ |
-| $\langle\tilde{Q}\rangle_{\natural}=0$, $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Light cone of the material sector |
+| $\langle\tilde{R}\rangle_{\natural}=0$, $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Light cone of the material sector |
 | $\langle\tilde P\rangle_{\natural}=0$, $\tilde P=\frac{i\omega}{c}e_t+\vec k$ | Characteristic cone of $\Box$ |
 | $\langle\tilde S\rangle_{\natural}=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
 | $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{ijk}S_i dS_j\wedge dS_k$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

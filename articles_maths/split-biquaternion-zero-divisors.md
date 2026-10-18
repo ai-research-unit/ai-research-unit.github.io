@@ -260,10 +260,10 @@ So $Z_+$ and $Z_-$ are two-sided ideals of $\mathbb{H}_{\mathbb{D}}$. This is th
 
 ### The Idempotents
 
-The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde P$ with $\tilde P^2 = \tilde P$. In the idempotent basis, an element $\tilde P = \tilde P_+ \tilde\Pi_1 + \tilde P_- \tilde\Pi_2$ is idempotent if and only if
+The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. In the idempotent basis, an element $\tilde Q = \tilde Q_+ \tilde\Pi_1 + \tilde Q_- \tilde\Pi_2$ is idempotent if and only if
 
 $$
-\tilde P_+^2 = \tilde P_+, \qquad \tilde P_-^2 = \tilde P_-.
+\tilde Q_+^2 = \tilde Q_+, \qquad \tilde Q_-^2 = \tilde Q_-.
 $$
 
 In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements

@@ -36,7 +36,7 @@ so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) 
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the anomaly context of the Wess–Zumino–Witten term.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the flavour and matter content.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_a e_b = -\delta_{ab}e_t + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U\in\mathrm{SU}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_a e_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$, the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $(x,y,z)\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\tilde\pi = \pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\tilde\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.
+**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_a e_b = -\delta_{ab}e_t + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U\in\mathfrak{su}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_a e_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$, the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $(x,y,z)\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\vec\pi = \pi^a e_a\in\mathfrak{su}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\vec\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.
 
 ## The Skyrme Field and the Skyrme Term
 
@@ -47,7 +47,7 @@ The Skyrme model is the pion effective theory with one extra term, and both term
 $$
 \tilde U(\tilde{Q})\in\mathbb{H}^1_{\mathbb{B}} ,
 \qquad
-\tilde U = \exp\!\left(\frac{\tilde\pi}{f_\pi}\right),
+\tilde U = \exp\!\left(\frac{\vec\pi}{f_\pi}\right),
 \qquad
 \tilde U^{-1} = \tilde U^{\natural} = \tilde U^{*} ,
 $$
@@ -57,7 +57,7 @@ where the last identities hold because $\tilde U$ is a unit real quaternion. The
 **The current.** The Maurer–Cartan form of the companion article is
 
 $$
-j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U \in \mathrm{SU}(2)\subset\mathbb{M}_- ,
+j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U \in\mathfrak{su}(2)\subset\mathbb{M}_- ,
 $$
 
 and it is **flat**,
@@ -274,7 +274,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}^1_{\mathbb{B}}$ | Unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$; the skyrmion target |
-| $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | Skyrmion field; $\tilde U = \exp(\tilde\pi/f_\pi)$, $\tilde U\tilde U^{\natural} = e_t$ |
+| $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ | Skyrmion field; $\tilde U = \exp(\vec\pi/f_\pi)$, $\tilde U\tilde U^{\natural} = e_t$ |
 | $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$ | Flat Maurer–Cartan current |
 | $\partial/\partial Q_\mu j_\nu - \partial/\partial Q_\nu j_\mu + [j_\mu,j_\nu] = 0$ | Flatness (zero curvature) |
 | $\mathcal{L}_2 = -\frac{f_\pi^2}{2}\mathrm{Sc}(\bar j_\mu j_\mu)$ | Two-derivative (chiral) term |

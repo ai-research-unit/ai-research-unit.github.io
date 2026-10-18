@@ -2,17 +2,17 @@
 
 ## Introduction
 
-The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra*, and a commutative algebra carries a form with it: the **trace form**
+The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*, and a commutative algebra carries a form with it: the **trace form**
 
 $$
-\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_tQ_t-(\vec P,\vec Q),
+\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
 $$
 
-the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\tau(\tilde P,\tilde Q\bullet\tilde Q_4)$, the operator traces built from it, and its restriction to the remarkable subspaces.
+the scalar part of the product of the two elements. This article reads the form, its identity with the scalar part of the plain product, its Gram matrix, its **invariance** $\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)$, the operator traces built from it, and its restriction to the remarkable subspaces.
 
-The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four Forms*; the form is used here with the product and not re-derived.
+The form is not new to the algebra: it is the **general plain bilinear form** $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which the associativity of the plain product makes invariant, and its operator theory is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* and *Two-Sided Operators on the Biquaternion Algebra*. What this article adds is the same form read as the **trace form of the Jordan algebra**: the invariance becomes the associativity of the Jordan product read on the form, the polarisation of the form recovers the product, and the operator traces are the Jordan-algebra reading of the plain operators. The restrictions of the form to the remarkable subspaces are the subject of *Remarkable Subspaces and the Four Forms*; the form is used here with the product and not re-derived.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec P,\vec Q)=\sum_kP_kQ_k$. The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$; the general plain bilinear form is $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$, and $\tau$ denotes it read as the trace form of the block. The multiplication operator of the block is $L^{\bullet}_{\tilde P}\tilde Q=\tilde P\bullet\tilde Q$, and $L_{\tilde P},R_{\tilde P}$ are the left and right operators of the plain product, still with the halved product and the unhalved ones distinguished as in *The Multiplication Operators of the Symmetric Plain Algebra*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$. The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$; the general plain bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ with $\varepsilon=(1,-1,-1,-1)$, and $\tau$ denotes it read as the trace form of the block. The multiplication operator of the block is $L^{\bullet}_{\tilde Q_1}\tilde Q_2=\tilde Q_1\bullet\tilde Q_2$, and $L_{\tilde Q_1},R_{\tilde Q_1}$ are the left and right operators of the plain product, still with the halved product and the unhalved ones distinguished as in *The Multiplication Operators of the Symmetric Plain Algebra*.
 
 ## The Trace Form
 
@@ -21,17 +21,17 @@ The form is not new to the algebra: it is the **general plain bilinear form** $\
 **Definition.** The **trace form** of the symmetric plain algebra is
 
 $$
-\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q).
+\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2).
 $$
 
 **Proposition.** The form is $\mathbb{C}$-bilinear and **symmetric**:
 
 $$
-\tau(\tilde P,\tilde Q)=P_tQ_t-(\vec P,\vec Q)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu Q_\mu,\qquad
-\tau(\tilde P,\tilde Q)=\tau(\tilde Q,\tilde P).
+\tau(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1\mu} Q_{2\mu},\qquad
+\tau(\tilde Q_1,\tilde Q_2)=\tau(\tilde Q_2,\tilde Q_1).
 $$
 
-*Proof.* The scalar part of the product is $\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_tQ_t-(\vec P,\vec Q)$ by the scalar–vector rule of *Introduction to the Symmetric Plain Algebra*; the expression is symmetric in the two elements because the dot product is. Bilinearity is inherited from the product.
+*Proof.* The scalar part of the product is $\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ by the scalar–vector rule of *Introduction to the Symmetric Plain Algebra*; the expression is symmetric in the two elements because the dot product is. Bilinearity is inherited from the product.
 
 **Proposition (non-degeneracy).** The form is **non-degenerate**, and its Gram matrix on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is
 
@@ -48,10 +48,10 @@ the coefficient matrix $D$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ S
 **Theorem.** The trace form of the block is the scalar part of the **plain** product:
 
 $$
-\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\langle\tilde P,\tilde Q\rangle .
+\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle .
 $$
 
-*Proof.* $\mathrm{Sc}(\tilde P\bullet\tilde Q)=\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q)+\mathrm{Sc}(\tilde Q\tilde P)\bigr)$, and the scalar part of a plain product is symmetric, $\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde Q\tilde P)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$. The half-sum is therefore the common value.
+*Proof.* $\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=\tfrac12\bigl(\mathrm{Sc}(\tilde Q_1\tilde Q_2)+\mathrm{Sc}(\tilde Q_2\tilde Q_1)\bigr)$, and the scalar part of a plain product is symmetric, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$. The half-sum is therefore the common value.
 
 **Remark (the two readings are one form).** **The trace form of the Jordan algebra and the general plain bilinear form are the same form**, because the scalar part cannot see the cross term that distinguishes the plain product from its symmetrisation. The form is a form of the algebra and of the block at once, and the two readings differ only in what is put on the other side of it: the plain product in the algebra theory, the Jordan product here.
 
@@ -74,22 +74,22 @@ of signature $(4,4)$.
 **Theorem.** The trace form is **invariant** under the product:
 
 $$
-\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\tau(\tilde P,\tilde Q\bullet\tilde Q_4)
+\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)
 $$
 
-for all $\tilde P,\tilde Q,\tilde Q_4\in\mathbb{B}$.
+for all $\tilde Q_1,\tilde Q_2,\tilde Q_4\in\mathbb{B}$.
 
 *Proof.* By the definition of the form and the product,
 
 $$
-\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\mathrm{Sc}\bigl((\tilde P\bullet\tilde Q)\tilde Q_4\bigr)=\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde Q_4)+\mathrm{Sc}(\tilde Q\tilde P\tilde Q_4)\bigr),
+\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\mathrm{Sc}\bigl((\tilde Q_1\bullet\tilde Q_2)\tilde Q_4\bigr)=\tfrac12\bigl(\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_4)+\mathrm{Sc}(\tilde Q_2\tilde Q_1\tilde Q_4)\bigr),
 $$
 
 $$
-\tau(\tilde P,\tilde Q\bullet\tilde Q_4)=\mathrm{Sc}\bigl(\tilde P(\tilde Q\bullet\tilde Q_4)\bigr)=\tfrac12\bigl(\mathrm{Sc}(\tilde P\tilde Q\tilde Q_4)+\mathrm{Sc}(\tilde P\tilde Q_4\tilde Q)\bigr).
+\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)=\mathrm{Sc}\bigl(\tilde Q_1(\tilde Q_2\bullet\tilde Q_4)\bigr)=\tfrac12\bigl(\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_4)+\mathrm{Sc}(\tilde Q_1\tilde Q_4\tilde Q_2)\bigr).
 $$
 
-The first terms agree, and the second terms agree because $\mathrm{Sc}$ is invariant under the cyclic permutation of its factors, $\mathrm{Sc}(\tilde Q\tilde P\tilde Q_4)=\mathrm{Sc}(\tilde P\tilde Q_4\tilde Q)$; equivalently $\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_3)=\mathrm{Sc}(\tilde Q_3\tilde Q_1\tilde Q_2)$, the associativity of the plain product read on the scalar part.
+The first terms agree, and the second terms agree because $\mathrm{Sc}$ is invariant under the cyclic permutation of its factors, $\mathrm{Sc}(\tilde Q_2\tilde Q_1\tilde Q_4)=\mathrm{Sc}(\tilde Q_1\tilde Q_4\tilde Q_2)$; equivalently $\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde Q_3)=\mathrm{Sc}(\tilde Q_3\tilde Q_1\tilde Q_2)$, the associativity of the plain product read on the scalar part.
 
 **Remark (invariance is associativity on the Jordan product).** The plain product is associative, so the scalar part of a triple product is invariant under cyclic permutation; the invariance of the trace form is exactly that statement written with the symmetrised product. **The form is associative in the Jordan sense**, and it is the trace form that the general theory of Jordan algebras attaches to a special Jordan algebra. The plain operator theory of the same form, the association and the transpose relative to the plain product, is *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
 
@@ -98,22 +98,22 @@ The first terms agree, and the second terms agree because $\mathrm{Sc}$ is invar
 **Theorem.** The trace form and the unit recover the product. From
 
 $$
-T(\tilde P)=2\tau(\tilde P,e_t)=2P_t,\qquad
-\langle\tilde P\rangle_{\natural}=2\tau(\tilde P,e_t)^2-\tau(\tilde P,\tilde P)=P_t^2+(\vec P,\vec P),
+T(\tilde Q_1)=2\tau(\tilde Q_1,e_t)=2Q_{1t},\qquad
+\langle\tilde Q_1\rangle_{\natural}=2\tau(\tilde Q_1,e_t)^2-\tau(\tilde Q_1,\tilde Q_1)=Q_{1t}^2+(\vec Q_1,\vec Q_1),
 $$
 
-the square is $\tilde P\bullet\tilde P=T(\tilde P)\tilde P-\langle\tilde P\rangle_{\natural}e_t$, and the product is its polarisation,
+the square is $\tilde Q_1\bullet\tilde Q_1=T(\tilde Q_1)\tilde Q_1-\langle\tilde Q_1\rangle_{\natural}e_t$, and the product is its polarisation,
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl((\tilde P+\tilde Q)\bullet(\tilde P+\tilde Q)-\tilde P\bullet\tilde P-\tilde Q\bullet\tilde Q\bigr).
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl((\tilde Q_1+\tilde Q_2)\bullet(\tilde Q_1+\tilde Q_2)-\tilde Q_1\bullet\tilde Q_1-\tilde Q_2\bullet\tilde Q_2\bigr).
 $$
 
-*Proof.* The generic trace is $T(\tilde P)=2P_t=2\tau(\tilde P,e_t)$, and the generic norm of *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* is $\langle\tilde P\rangle_{\natural}=P_t^2+(\vec P,\vec P)=2P_t^2-\bigl(P_t^2-(\vec P,\vec P)\bigr)=2\tau(\tilde P,e_t)^2-\tau(\tilde P,\tilde P)$. The quadratic identity of the block gives $\tilde P\bullet\tilde P=T(\tilde P)\tilde P-\langle\tilde P\rangle_{\natural}e_t$, and the polarisation of the square gives the product.
+*Proof.* The generic trace is $T(\tilde Q_1)=2Q_{1t}=2\tau(\tilde Q_1,e_t)$, and the generic norm of *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* is $\langle\tilde Q_1\rangle_{\natural}=Q_{1t}^2+(\vec Q_1,\vec Q_1)=2Q_{1t}^2-\bigl(Q_{1t}^2-(\vec Q_1,\vec Q_1)\bigr)=2\tau(\tilde Q_1,e_t)^2-\tau(\tilde Q_1,\tilde Q_1)$. The quadratic identity of the block gives $\tilde Q_1\bullet\tilde Q_1=T(\tilde Q_1)\tilde Q_1-\langle\tilde Q_1\rangle_{\natural}e_t$, and the polarisation of the square gives the product.
 
-**Remark (the form is a polar form).** The form is also the polar form of the **quadratic trace** $\tilde P\mapsto\mathrm{Sc}(\tilde P\bullet\tilde P)=\mathrm{Sc}(\tilde P^2)=\tau(\tilde P,\tilde P)$:
+**Remark (the form is a polar form).** The form is also the polar form of the **quadratic trace** $\tilde Q_1\mapsto\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_1)=\mathrm{Sc}(\tilde Q_1^2)=\tau(\tilde Q_1,\tilde Q_1)$:
 
 $$
-\tau(\tilde P,\tilde Q)=\tfrac12\bigl(\tau(\tilde P+\tilde Q,\tilde P+\tilde Q)-\tau(\tilde P,\tilde P)-\tau(\tilde Q,\tilde Q)\bigr).
+\tau(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(\tau(\tilde Q_1+\tilde Q_2,\tilde Q_1+\tilde Q_2)-\tau(\tilde Q_1,\tilde Q_1)-\tau(\tilde Q_2,\tilde Q_2)\bigr).
 $$
 
 **The same form is the polarisation of the quadratic trace and the datum from which the generic trace and the generic norm, and hence the product, are recovered**; this double role is what makes it the trace form of the block.
@@ -122,40 +122,40 @@ $$
 
 ### The Trace of a Multiplication Operator
 
-**Proposition.** The multiplication operator of the block is $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$, and
+**Proposition.** The multiplication operator of the block is $L^{\bullet}_{\tilde Q_1}=\tfrac12(L_{\tilde Q_1}+R_{\tilde Q_1})$, and
 
 $$
-\operatorname{Tr}\bigl(L^{\bullet}_{\tilde P}\bigr)=4P_t=2T(\tilde P),\qquad
-\det\bigl(L^{\bullet}_{\tilde P}\bigr)=P_t^2\,\langle\tilde P\rangle_{\natural}.
+\operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q_1}\bigr)=4Q_{1t}=2T(\tilde Q_1),\qquad
+\det\bigl(L^{\bullet}_{\tilde Q_1}\bigr)=Q_{1t}^2\,\langle\tilde Q_1\rangle_{\natural}.
 $$
 
-*Proof.* $L^{\bullet}_{\tilde P}\tilde Q=\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=\tfrac12(L_{\tilde P}+R_{\tilde P})\tilde Q$, so the two operators differ by the factor $\tfrac12$ and not by the sum alone; the trace of a plain operator is $\operatorname{Tr}(L_{\tilde P})=\operatorname{Tr}(R_{\tilde P})=4P_t$, so the trace of the half-sum is $4P_t=2T(\tilde P)$. The determinant is computed on the matrix of the operator; in the $2\times2$ model the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde P)M+M\mathsf{M}_2(\tilde P))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde P)$, giving $\det= P_t^2\langle\tilde P\rangle_{\natural}$.
+*Proof.* $L^{\bullet}_{\tilde Q_1}\tilde Q_2=\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)=\tfrac12(L_{\tilde Q_1}+R_{\tilde Q_1})\tilde Q_2$, so the two operators differ by the factor $\tfrac12$ and not by the sum alone; the trace of a plain operator is $\operatorname{Tr}(L_{\tilde Q_1})=\operatorname{Tr}(R_{\tilde Q_1})=4Q_{1t}$, so the trace of the half-sum is $4Q_{1t}=2T(\tilde Q_1)$. The determinant is computed on the matrix of the operator; in the $2\times2$ model the operator is $M\mapsto\tfrac12(\mathsf{M}_2(\tilde Q_1)M+M\mathsf{M}_2(\tilde Q_1))$, whose eigenvalues are $\tfrac12(\lambda_i+\lambda_j)$ over the eigenvalues $\lambda_1,\lambda_2$ of $\mathsf{M}_2(\tilde Q_1)$, giving $\det= Q_{1t}^2\langle\tilde Q_1\rangle_{\natural}$.
 
 **Remark (the factor of the operator identity).** The operator identity is
 
 $$
-L_{\tilde P}+R_{\tilde P}=2L^{\bullet}_{\tilde P},
+L_{\tilde Q_1}+R_{\tilde Q_1}=2L^{\bullet}_{\tilde Q_1},
 $$
 
-so the sum of the two plain operators is **twice** the multiplication operator of the block, and not the operator itself. **The multiplication operator of the symmetric plain algebra is half the sum of the left and right operators of the plain product**; the sum is the operator of the doubled product $\tilde P\tilde Q+\tilde Q\tilde P$.
+so the sum of the two plain operators is **twice** the multiplication operator of the block, and not the operator itself. **The multiplication operator of the symmetric plain algebra is half the sum of the left and right operators of the plain product**; the sum is the operator of the doubled product $\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$.
 
 ### The Operator Trace and Its Relation to the Form
 
-**Theorem.** For all $\tilde P,\tilde Q$,
+**Theorem.** For all $\tilde Q_1,\tilde Q_2$,
 
 $$
-\operatorname{Tr}\bigl(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q}\bigr)=4P_tQ_t-2(\vec P,\vec Q)=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q).
+\operatorname{Tr}\bigl(L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_2}\bigr)=4Q_{1t}Q_{2t}-2(\vec Q_1,\vec Q_2)=2\tau(\tilde Q_1,\tilde Q_2)+\tfrac12T(\tilde Q_1)T(\tilde Q_2).
 $$
 
 *Proof.* With $L^{\bullet}=\tfrac12(L+R)$, the product expands as
 
 $$
-L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q}=\tfrac14\bigl(L_{\tilde P}L_{\tilde Q}+L_{\tilde P}R_{\tilde Q}+R_{\tilde P}L_{\tilde Q}+R_{\tilde P}R_{\tilde Q}\bigr),
+L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_2}=\tfrac14\bigl(L_{\tilde Q_1}L_{\tilde Q_2}+L_{\tilde Q_1}R_{\tilde Q_2}+R_{\tilde Q_1}L_{\tilde Q_2}+R_{\tilde Q_1}R_{\tilde Q_2}\bigr),
 $$
 
-and the four plain traces are $\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=4\tau(\tilde P,\tilde Q)$, $\operatorname{Tr}(R_{\tilde P}R_{\tilde Q})=4\tau(\tilde P,\tilde Q)$, and $\operatorname{Tr}(L_{\tilde P}R_{\tilde Q})=\operatorname{Tr}(R_{\tilde P}L_{\tilde Q})=4P_tQ_t$, computed on the bases of the left and right operators. Summing gives $\tfrac14\bigl(8\tau(\tilde P,\tilde Q)+8P_tQ_t\bigr)=2\tau(\tilde P,\tilde Q)+2P_tQ_t$, and $2P_tQ_t=\tfrac12T(\tilde P)T(\tilde Q)$.
+and the four plain traces are $\operatorname{Tr}(L_{\tilde Q_1}L_{\tilde Q_2})=4\tau(\tilde Q_1,\tilde Q_2)$, $\operatorname{Tr}(R_{\tilde Q_1}R_{\tilde Q_2})=4\tau(\tilde Q_1,\tilde Q_2)$, and $\operatorname{Tr}(L_{\tilde Q_1}R_{\tilde Q_2})=\operatorname{Tr}(R_{\tilde Q_1}L_{\tilde Q_2})=4Q_{1t}Q_{2t}$, computed on the bases of the left and right operators. Summing gives $\tfrac14\bigl(8\tau(\tilde Q_1,\tilde Q_2)+8Q_{1t}Q_{2t}\bigr)=2\tau(\tilde Q_1,\tilde Q_2)+2Q_{1t}Q_{2t}$, and $2Q_{1t}Q_{2t}=\tfrac12T(\tilde Q_1)T(\tilde Q_2)$.
 
-**Remark (the trace is not the form).** The operator trace is **not** the trace form, and not a multiple of it either: the two coefficient pairs $(4,-2)$ and $(1,-1)$ are not proportional. Its excess over twice the form is exactly the term $\tfrac12T(\tilde P)T(\tilde Q)$ built from the generic trace, so the operator trace and $2\tau(\tilde P,\tilde Q)$ agree exactly on the elements of generic trace zero, that is on the hyperplane $P_t=0$ or $Q_t=0$; against four times the form, $\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=4\tau(\tilde P,\tilde Q)$, the agreement is exactly on the pairs with $(\vec P,\vec Q)=0$. **The trace form is the polarisation of the quadratic trace, while the operator trace is a second, larger invariant**, and the two are related by the generic trace functional.
+**Remark (the trace is not the form).** The operator trace is **not** the trace form, and not a multiple of it either: the two coefficient pairs $(4,-2)$ and $(1,-1)$ are not proportional. Its excess over twice the form is exactly the term $\tfrac12T(\tilde Q_1)T(\tilde Q_2)$ built from the generic trace, so the operator trace and $2\tau(\tilde Q_1,\tilde Q_2)$ agree exactly on the elements of generic trace zero, that is on the hyperplane $Q_{1t}=0$ or $Q_{2t}=0$; against four times the form, $\operatorname{Tr}(L_{\tilde Q_1}L_{\tilde Q_2})=4\tau(\tilde Q_1,\tilde Q_2)$, the agreement is exactly on the pairs with $(\vec Q_1,\vec Q_2)=0$. **The trace form is the polarisation of the quadratic trace, while the operator trace is a second, larger invariant**, and the two are related by the generic trace functional.
 
 ### The Trace Functional
 
@@ -192,19 +192,19 @@ The matrices are the same six as in *Remarkable Subspaces and the Four Forms*, b
 
 ## Summary
 
-The trace form of the symmetric plain algebra is $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_tQ_t-(\vec P,\vec Q)$, which is the scalar part of the plain product and the general plain bilinear form. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ on the basis and realified signature $(4,4)$; it is invariant, $\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\tau(\tilde P,\tilde Q\bullet\tilde Q_4)$, which is the associativity of the plain product read on the Jordan product, and its polarisation recovers the quadratic trace, the generic trace $T(\tilde Q)=2\tau(\tilde Q,e_t)$ and the generic norm $\langle\tilde Q\rangle_{\natural}=2\tau(\tilde Q,e_t)^2-\tau(\tilde Q,\tilde Q)$, hence the product. The multiplication operator is $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$, of trace $4P_t=2T(\tilde P)$ and determinant $P_t^2\langle\tilde P\rangle_{\natural}$, and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_tQ_t-2(\vec P,\vec Q)=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q)$. On the remarkable subspaces the restrictions are those of the general plain bilinear form, of ranks $2,6,4,4,4,4$ and signatures $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$.
+The trace form of the symmetric plain algebra is $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$, which is the scalar part of the plain product and the general plain bilinear form. It is $\mathbb{C}$-bilinear, symmetric and non-degenerate, with Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ on the basis and realified signature $(4,4)$; it is invariant, $\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)$, which is the associativity of the plain product read on the Jordan product, and its polarisation recovers the quadratic trace, the generic trace $T(\tilde Q_2)=2\tau(\tilde Q_2,e_t)$ and the generic norm $\langle\tilde Q_2\rangle_{\natural}=2\tau(\tilde Q_2,e_t)^2-\tau(\tilde Q_2,\tilde Q_2)$, hence the product. The multiplication operator is $L^{\bullet}_{\tilde Q_1}=\tfrac12(L_{\tilde Q_1}+R_{\tilde Q_1})$, of trace $4Q_{1t}=2T(\tilde Q_1)$ and determinant $Q_{1t}^2\langle\tilde Q_1\rangle_{\natural}$, and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_2})=4Q_{1t}Q_{2t}-2(\vec Q_1,\vec Q_2)=2\tau(\tilde Q_1,\tilde Q_2)+\tfrac12T(\tilde Q_1)T(\tilde Q_2)$. On the remarkable subspaces the restrictions are those of the general plain bilinear form, of ranks $2,6,4,4,4,4$ and signatures $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_tQ_t-(\vec P,\vec Q)$ | the trace form of the block |
+| $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ | the trace form of the block |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
-| $\tau(\tilde P\bullet\tilde Q,\tilde Q_4)=\tau(\tilde P,\tilde Q\bullet\tilde Q_4)$ | the invariance of the form |
+| $\tau(\tilde Q_1\bullet\tilde Q_2,\tilde Q_4)=\tau(\tilde Q_1,\tilde Q_2\bullet\tilde Q_4)$ | the invariance of the form |
 | $T(\tilde Q)=2\tau(\tilde Q,e_t)=2Q_t$ | the trace functional, the generic trace |
 | $\langle\tilde Q\rangle_{\natural}=2\tau(\tilde Q,e_t)^2-\tau(\tilde Q,\tilde Q)$ | the generic norm |
-| $L^{\bullet}_{\tilde P}=\tfrac12(L_{\tilde P}+R_{\tilde P})$ | the multiplication operator of the block |
-| $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_tQ_t-2(\vec P,\vec Q)$ | the operator trace |
+| $L^{\bullet}_{\tilde Q_1}=\tfrac12(L_{\tilde Q_1}+R_{\tilde Q_1})$ | the multiplication operator of the block |
+| $\operatorname{Tr}(L^{\bullet}_{\tilde Q_1}L^{\bullet}_{\tilde Q_2})=4Q_{1t}Q_{2t}-2(\vec Q_1,\vec Q_2)$ | the operator trace |
 | $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$ | the signatures of the restrictions |
 
 ## Further Reading

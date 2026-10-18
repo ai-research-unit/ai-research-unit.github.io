@@ -373,10 +373,10 @@ The ball has so far been described entirely inside $\mathbb{M}_+$, by its own co
 
 ### The Dictionary Between the Ball and the Cone
 
-Multiplication by $-\tfrac{i}{2}$ is a real-linear bijection carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$. For a material four-vector $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it gives the Hermitian element
+Multiplication by $-\tfrac{i}{2}$ is a real-linear bijection carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$. For a material four-vector $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it gives the Hermitian element
 
 $$
-\tilde{H} \;=\; -\tfrac{i}{2}\,\tilde{Q} \;=\; \tfrac{1}{2}\bigl(ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \;=\; h_0\,e_t + i\vec h,
+\tilde{H} \;=\; -\tfrac{i}{2}\,\tilde{R} \;=\; \tfrac{1}{2}\bigl(ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \;=\; h_0\,e_t + i\vec h,
 $$
 
 with $h_0 = \tfrac{1}{2}ct$ and $\vec h = -\tfrac{1}{2}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and
@@ -384,7 +384,7 @@ with $h_0 = \tfrac{1}{2}ct$ and $\vec h = -\tfrac{1}{2}(x\,\vec e_x+y\,\vec e_y+
 $$
 \mathrm{Tr}(\tilde{H}) \;=\; 2\,\mathrm{Sc}(\tilde{H}) \;=\; ct,
 \qquad
-\langle\tilde{H}\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}.
+\langle\tilde{H}\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}.
 $$
 
 Each of the two relations is exact. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the trace-one slice $ct = 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with Bloch vector $\vec r = 2\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; there the relations specialize to
@@ -394,19 +394,19 @@ $$
 \;\Longleftrightarrow\;
 \langle\tilde{Ϛ}\rangle_{\natural} \geq 0
 \;\Longleftrightarrow\;
-\langle\tilde{Q}\rangle_{\natural} \leq 0
+\langle\tilde{R}\rangle_{\natural} \leq 0
 \;\Longleftrightarrow\;
 ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
 $$
 
-so **positivity of a state is the causal condition of the four-vector it mirrors**. The boundary $|\vec r| = 1$ is $\langle\tilde{Q}\rangle_{\natural} = 0$, so the pure states of the ball are the lightlike four-vectors of the slice and the mixed states are the timelike ones. The correspondence is summarized in the following table.
+so **positivity of a state is the causal condition of the four-vector it mirrors**. The boundary $|\vec r| = 1$ is $\langle\tilde{R}\rangle_{\natural} = 0$, so the pure states of the ball are the lightlike four-vectors of the slice and the mixed states are the timelike ones. The correspondence is summarized in the following table.
 
 | Material object in $\mathbb{M}_-$ | Informational object in $\mathbb{M}_+$ |
 |---|---|
-| four-vector $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Hermitian element $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ |
-| interval $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ | norm $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$ |
+| four-vector $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Hermitian element $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ |
+| interval $\langle\tilde{R}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ | norm $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ |
 | future cone, $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$ | positive cone, $\tilde{H} \geq 0$ |
-| null cone, $\langle\tilde{Q}\rangle_{\natural} = 0$ | null cone, $\langle\tilde{H}\rangle_{\natural} = 0$; the pure states at trace one |
+| null cone, $\langle\tilde{R}\rangle_{\natural} = 0$ | null cone, $\langle\tilde{H}\rangle_{\natural} = 0$; the pure states at trace one |
 | interior of the timelike cone | positive definite elements; the interior of the ball at trace one |
 | trace-one slice, $ct = 1$ | trace-one hyperplane, $\mathrm{Sc} = \tfrac{1}{2}$ |
 | spatial part $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Bloch vector $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
@@ -414,7 +414,7 @@ so **positivity of a state is the causal condition of the four-vector it mirrors
 
 <!-- PHYSICAL READING — one cone, not two cones in correspondence. On the trace-one slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $ct$ to $h_0 = ct/2$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/2$, so $h_0 - |\vec h| = (ct - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $ct = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
 
-<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde{Q} = ict\,e_t$ at $ct = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural}$ and $\langle\tilde{Q}\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde{Q}\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$, is exact. -->
+<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde{R} = ict\,e_t$ at $ct = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural}$ and $\langle\tilde{R}\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde{R}\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$, is exact. -->
 
 ### The Whole Timelike Cone, Not Only the Slice
 
@@ -424,10 +424,10 @@ $$
 \lambda_\pm \;=\; h_0 \pm |\vec h| \;=\; \tfrac{1}{2}\bigl(ct \pm |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\bigr),
 $$
 
-both non-negative for $ct > 0$ and both non-positive for $ct < 0$. The sign of the trace is the sign of $ct$, so it is the **trace sign and not the sign of the norm** that separates the two sheets: $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$ is positive on both timelike cones, and the quadratic form alone cannot tell them apart.
+both non-negative for $ct > 0$ and both non-positive for $ct < 0$. The sign of the trace is the sign of $ct$, so it is the **trace sign and not the sign of the norm** that separates the two sheets: $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ is positive on both timelike cones, and the quadratic form alone cannot tell them apart.
 
 
-The maximally mixed state is the image the map singles out. It is $\tilde{Ϛ} = \tfrac{1}{2}e_t$, the centre of the ball, and its mirror on the trace-one slice is $\tilde{Q} = i\,e_t$: timelike, of the largest interval on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
+The maximally mixed state is the image the map singles out. It is $\tilde{Ϛ} = \tfrac{1}{2}e_t$, the centre of the ball, and its mirror on the trace-one slice is $\tilde{R} = i\,e_t$: timelike, of the largest interval on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
 
 **Interpretation (decoherence as inward motion).** The dictionary has a process interpretation. The pure states are the boundary of the ball and the light cone of the material sector; the maximally mixed state is the centre and the rest four-vector. A decoherence process moves a state from the boundary toward the centre, and under the mirror map that is motion from the null boundary into the **causal interior**, from a lightlike four-vector toward the timelike rest vector. Because the linear entropy is $S_{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{2}\langle\tilde{Q}\rangle_{\natural}$, an increase in entropy is exactly the growth of the timelike interval of the mirror, so **entropy increase tracks the inward motion** on the causal side. The interpretation is an interpretation of the dictionary and not a new theorem: the dictionary is static and exact, the motion is the added interpretation, and the algebra supplies no rate and no mechanism for it.
 
@@ -599,8 +599,8 @@ The ball has a mirror interpretation in the material sector. The map $\tilde{H} 
 | $\tilde{Q} = r \exp(i\alpha)\tilde{B}\tilde{q}$ | Polar word: scale, central phase, boost factor, rotor |
 | $\tilde{B}$, $\tilde{q}$ | Boost factor, in $\mathbb{M}_+$ positive definite; rotor, in $Sp(1)$ |
 | $\tilde{B}\tilde{q}$, $\exp(i\alpha)\tilde{q}$ | The two actors: $SL(2,\mathbb{C})$ on the cone, $\mathrm{U}(2)$ on the slice; both meet at $Sp(1) = SU(2)$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

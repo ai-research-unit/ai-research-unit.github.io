@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ is conjugate-linear in its second argument, so the left multiplication by a fixed element is conjugate-linear and the right multiplication is linear. The two families are
+The product $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$ is conjugate-linear in its second argument, so the left multiplication by a fixed element is conjugate-linear and the right multiplication is linear. The two families are
 
 $$
 L^{\star}_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1,
@@ -161,7 +161,7 @@ so the adjoint of the left multiplication by $\tilde A$ is the left multiplicati
 
 ## The Groups
 
-**Theorem (the group of linear maps preserving $K$).** The set of $\mathbb{C}$-linear operators $T$ with $\langle T\tilde P,T\tilde Q\rangle_{\natural*}=\langle\tilde P,\tilde Q\rangle_{\natural*}$ for all $\tilde P,\tilde Q$ is a group of real dimension sixteen; in the coefficient basis its matrices $M$ satisfy
+**Theorem (the group of linear maps preserving $K$).** The set of $\mathbb{C}$-linear operators $T$ with $\langle T\tilde Q_1,T\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ for all $\tilde Q_1,\tilde Q_2$ is a group of real dimension sixteen; in the coefficient basis its matrices $M$ satisfy
 
 $$
 M^{\dagger}EM=E,
@@ -170,7 +170,7 @@ $$
 
 and its Lie algebra is the set of $\mathbb{C}$-linear $X$ with $X^{\dagger}E+EX=0$, of real dimension sixteen.
 
-*Proof.* Write $\langle\tilde P,\tilde Q\rangle_{\natural*}=P^{T}E\overline{Q}$ in the coefficient basis; then $\langle T\tilde P,T\tilde Q\rangle_{\natural*}=P^{T}M^{T}E\overline{M}\,\overline{Q}$, which equals $\langle\tilde P,\tilde Q\rangle_{\natural*}$ for all $P,Q$ exactly when $M^{T}E\overline{M}=E$, equivalently, after conjugation, $M^{\dagger}EM=E$. The condition is quadratic and its linearisation at the identity is $X^{\dagger}E+EX=0$; the matrices of the group are counted by $32$ real parameters subject to the $16$ real equations of $M^{\dagger}EM=E$, since $M^{\dagger}EM$ is Hermitian, so the group has real dimension $16$.
+*Proof.* Write $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_1^{T}E\overline{Q_2}$ in the coefficient basis; then $\langle T\tilde Q_1,T\tilde Q_2\rangle_{\natural*}=Q_1^{T}M^{T}E\overline{M}\,\overline{Q_2}$, which equals $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ for all $Q_1,Q_2$ exactly when $M^{T}E\overline{M}=E$, equivalently, after conjugation, $M^{\dagger}EM=E$. The condition is quadratic and its linearisation at the identity is $X^{\dagger}E+EX=0$; the matrices of the group are counted by $32$ real parameters subject to the $16$ real equations of $M^{\dagger}EM=E$, since $M^{\dagger}EM$ is Hermitian, so the group has real dimension $16$.
 
 **Remark.** The group is the one of the general quaternionic sesquilinear row, because $\langle\cdot,\cdot\rangle_{\natural*}$ is that form with the arguments read in the other order; the details and the corresponding $J$-unitary family are in *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*. The Lie algebra of the theorem is the linearisation recorded there.
 
@@ -182,7 +182,7 @@ $$
 
 acting on the block.
 
-*Proof.* The three maps satisfy $\varphi(\tilde P\star\tilde Q)=\varphi(\tilde P)\star\varphi(\tilde Q)$ for all $\tilde P,\tilde Q$, by the definition of the product and the two anti-automorphism properties of the conjugations; each is an involution and ${}^{*}={}^{\natural}\circ\bar{\cdot}$, so they generate the Klein group of the display.
+*Proof.* The three maps satisfy $\varphi(\tilde Q_1\star\tilde Q_2)=\varphi(\tilde Q_1)\star\varphi(\tilde Q_2)$ for all $\tilde Q_1,\tilde Q_2$, by the definition of the product and the two anti-automorphism properties of the conjugations; each is an involution and ${}^{*}={}^{\natural}\circ\bar{\cdot}$, so they generate the Klein group of the display.
 
 **Remark (what is not decided).** The theorem exhibits four automorphisms; whether they exhaust the automorphism group of the block is not decided here. The group preserving $K$ is larger, of dimension sixteen, and the two groups are not the same: the automorphisms of the product are a finite group, while the maps preserving the form include the whole sixteen-dimensional family of the theorem above.
 

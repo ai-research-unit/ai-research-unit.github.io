@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The general plain sesqualgebra is the operation $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ on the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ (*Introduction to the General Plain Sesqualgebra*, *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*). This article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi$ with
+The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ (*Introduction to the General Plain Sesqualgebra*, *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*). This article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi$ with
 
 $$
 \tilde\Xi\star\tilde\Xi=0 ,
@@ -24,9 +24,9 @@ The answer is not the parent's. The block has **no nonzero square-zero element**
 
 **Boundaries.** The product, its class and its placement are *Introduction to the General Plain Sesqualgebra*; the relative definition of the power, the square-zero element, the nilpotent and the index of nilpotency is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Nilpotent*. The square-zero set of the block and of the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the nilpotents and the two families of the parent are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* and *Zero Divisors of the Biquaternion Algebra*; the matrix model that carries the powers is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the idempotents that the roots of $+1$ produce are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*. Nothing topological and nothing metric appears.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $Q_\mu\in\mathbb{C}$; the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}-\overline{\vec Q}$. The product is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, and the **central square** is $C(\tilde Q)=\sum_\mu Q_\mu^{2}=Q_t^{2}+(\vec Q,\vec Q)$. An element is **pure** when $Q_t=0$, that is when it lies in the vector part $\mathbb{C}\otimes\mathbb{R}^{3}$. A nilpotent is written $\tilde\Upsilon$ (§*The Nilpotent Convention* of *Conventions in Mathematics*), with $\tilde\Upsilon=\Upsilon_te_t+\vec\Upsilon$; a general element whose powers are at stake keeps the letter $\tilde Q_1$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $Q_\mu\in\mathbb{C}$; the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}-\overline{\vec Q}$. The product is $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$, and the **central square** is $C(\tilde Q)=\sum_\mu Q_\mu^{2}=Q_t^{2}+(\vec Q,\vec Q)$. An element is **pure** when $Q_t=0$, that is when it lies in the vector part $\mathbb{C}\otimes\mathbb{R}^{3}$. A nilpotent is written $\tilde\Upsilon$ (§*The Nilpotent Convention* of *Conventions in Mathematics*), with $\tilde\Upsilon=\Upsilon_te_t+\vec\Upsilon$; a general element whose powers are at stake keeps the letter $\tilde Q_1$.
 
-The equations name a product, so the powers, the square-zero elements and the nilpotents are relative to it. Throughout this article the product is the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the general definition of the nilpotent is §*The Nilpotent* of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The origin is a nilpotent, the **trivial** one, and the article is concerned with the nonzero ones.
+The equations name a product, so the powers, the square-zero elements and the nilpotents are relative to it. Throughout this article the product is the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$; the general definition of the nilpotent is §*The Nilpotent* of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The origin is a nilpotent, the **trivial** one, and the article is concerned with the nonzero ones.
 
 ## The Roots of Zero
 
@@ -56,7 +56,7 @@ $$
 
 so $\tilde Q_1^{\star2}=\tilde Q_1\tilde Q_1^{*}$, $\tilde Q_1^{\star3}=\tilde Q_1\tilde Q_1^{*}\tilde Q_1^{*}$, and in the matrix model $\mathsf{M}_2(\tilde Q_1^{\star k})=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_1)^{\dagger(k-1)}$.
 
-*Proof.* By induction on the left-nested reading: $\tilde Q_1^{\star(k+1)}=\tilde Q_1^{\star k}\star\tilde Q_1=\tilde Q_1^{\star k}\tilde Q_1^{*}=\tilde Q_1(\tilde Q_1^{*})^{k-1}\tilde Q_1^{*}=\tilde Q_1(\tilde Q_1^{*})^{k}$. The matrix display is the multiplicativity $\mathsf{M}_2(\tilde P\star\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ and $\mathsf{M}_2(\tilde Q_1^{*})=\mathsf{M}_2(\tilde Q_1)^{\dagger}$.
+*Proof.* By induction on the left-nested reading: $\tilde Q_1^{\star(k+1)}=\tilde Q_1^{\star k}\star\tilde Q_1=\tilde Q_1^{\star k}\tilde Q_1^{*}=\tilde Q_1(\tilde Q_1^{*})^{k-1}\tilde Q_1^{*}=\tilde Q_1(\tilde Q_1^{*})^{k}$. The matrix display is the multiplicativity $\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}$ and $\mathsf{M}_2(\tilde Q_1^{*})=\mathsf{M}_2(\tilde Q_1)^{\dagger}$.
 
 **Remark (why the index can be larger than two).** The square of the block is $\tilde Q_1\tilde Q_1^{*}$, the Hermitian square, and the iterated powers are the products of $\tilde Q_1$ with the successive powers of the conjugate transpose. The index is therefore a property of the pair $(\mathsf{M}_2(\tilde Q_1),\mathsf{M}_2(\tilde Q_1)^{\dagger})$ and not of the plain square, and it can be larger than two even when the plain element is a square-zero element of index two.
 
@@ -118,7 +118,7 @@ The powers of the general plain sesqualgebra are $\tilde Q_1^{\star k}=\tilde Q_
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the product of the block |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the product of the block |
 | $\tilde\Upsilon=\Upsilon_te_t+\vec\Upsilon$ | a nilpotent of the block |
 | $\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1}$ | the left-nested power |
 | $\tilde Q_1\star\tilde Q_1=\tilde Q_1\tilde Q_1^{*}$ | the Hermitian square |

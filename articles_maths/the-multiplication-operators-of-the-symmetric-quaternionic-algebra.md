@@ -24,8 +24,8 @@ form $\langle\cdot\rangle_{\natural}$ and its role as the coefficient are *The Q
 Algebra*; the derivation layer of a general algebra is *Automorphisms and Derivations of Algebras*; the matrix models are
 *Introduction to the Symmetric Quaternionic Algebra*. Nothing of the enriched layer of Part II is used.
 
-**Conventions.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$; the product is $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$
-with $\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$; an operator is written as a $4\times4$ matrix in the
+**Conventions.** The basis is $e_t,\vec e_x,\vec e_y,\vec e_z$; the product is $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$
+with $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$; an operator is written as a $4\times4$ matrix in the
 basis when its entries are needed, and the matrix of a linear map $T$ is written $[T]$; the transpose of a
 matrix is written with a superscript $\mathsf T$.
 

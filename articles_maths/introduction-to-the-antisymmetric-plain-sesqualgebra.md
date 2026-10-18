@@ -2,27 +2,27 @@
 
 ## Introduction
 
-The general plain sesquilinear product $\tilde P\tilde Q^{*}$ splits into two halves, and the split is the **adapted** one of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*: the exchange is not the bare interchange of the two arguments but the interchange followed by the coefficientwise conjugation of the value, and its two parts are the conjugate-symmetric half $\mathrm{SPS}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})e_t$ and the **skew-conjugate-symmetric** half developed here,
+The general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ splits into two halves, and the split is the **adapted** one of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*: the exchange is not the bare interchange of the two arguments but the interchange followed by the coefficientwise conjugation of the value, and its two parts are the conjugate-symmetric half $\mathrm{SPS}(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})e_t$ and the **skew-conjugate-symmetric** half developed here,
 
 $$
-\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr)
-=\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)
-=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q} .
+\tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)
+=\mathrm{Vect}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)
+=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
 $$
 
-The first half is *Introduction to the Symmetric Plain Sesqualgebra*; the two together reconstruct the product, $\tilde P\tilde Q^{*}=\mathrm{SPS}(\tilde P,\tilde Q)+\tilde P\diamond\tilde Q$, and this article introduces the second. It is the **antisymmetric plain sesqualgebra** (APS) of the block: the antisymmetric part of the general plain sesquilinear product under the conjugate transpose.
+The first half is *Introduction to the Symmetric Plain Sesqualgebra*; the two together reconstruct the product, $\tilde Q_1\tilde Q_2^{*}=\mathrm{SPS}(\tilde Q_1,\tilde Q_2)+\tilde Q_1\diamond\tilde Q_2$, and this article introduces the second. It is the **antisymmetric plain sesqualgebra** (APS) of the block: the antisymmetric part of the general plain sesquilinear product under the conjugate transpose.
 
 The insertion of the conjugation into the exchange changes the whole vocabulary. A bilinear antisymmetrisation is *alternating*, it vanishes on the diagonal, and for such an operation the exchange of the arguments alone reverses the sign. Here the conjugation is part of the operation, and the symmetry that survives is the **conjugate-alternation**
 
 $$
-\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P},
+\tilde Q_1\diamond\tilde Q_2=-\overline{\tilde Q_2\diamond\tilde Q_1},
 $$
 
 a statement about the two arguments and the coefficientwise conjugate of the value at once, and not the alternating sign of the bilinear rows. The diagonal is consequently **not** zero: it is the vector part of the square of the row, $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$, which is $2i\vec e_z$ at the element $\vec e_x+i\vec e_y$. The operation is therefore neither alternating nor anti-commutative; it is conjugate-alternating, and this article fixes that vocabulary before anything else.
 
 Three boundaries are stated at once. The product that is split, its two-sided operators and its two models are *Introduction to the General Plain Sesqualgebra*, *The Left and Right Multiplications of the Biquaternioid Sesqualgebra* and the two articles *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*, and none of the three is repeated here. The product itself, the four general products as a family and the row table are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *Comparison Between the Four General Products*. The general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and its long development, with the conjugation, the projections and the structure constants, is *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*; both are cited and not restated. The **other** antisymmetrisation of the same product, the sesquilinear commutator of *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternioid*, is the half of the **bare** interchange and is a different operation; §*The Adapted Exchange* of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product* sets the two side by side, and the exact defect between them is computed in *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*, below in this block.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, $\vec e_k^2=-e_t$, and central scalar imaginary $i$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$ and $\overline{\vec Q}$ the coefficientwise conjugate of the vector part. The natural conjugation ${}^{\natural}$ negates the vector part, the coefficientwise conjugation $\bar{\cdot}$ conjugates the coefficients, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, with coordinates $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$. The dot and cross products of vector parts are the complex bilinear ones of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, and the Hermitian form is $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*. Throughout, $\diamond$ is the operation of this block.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, $\vec e_k^2=-e_t$, and central scalar imaginary $i$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_k\vec e_k$ and $\overline{\vec Q}$ the coefficientwise conjugate of the vector part. The natural conjugation ${}^{\natural}$ negates the vector part, the coefficientwise conjugation $\bar{\cdot}$ conjugates the coefficients, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, with coordinates $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$. The dot and cross products of vector parts are the complex bilinear ones of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, and the Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*. Throughout, $\diamond$ is the operation of this block.
 
 ## The Operation
 
@@ -32,37 +32,37 @@ Three boundaries are stated at once. The product that is split, its two-sided op
 
 $$
 \diamond\;:\;\mathbb{B}\times\mathbb{B}\longrightarrow\mathbb{B},\qquad
-(\tilde P,\tilde Q)\longmapsto \tilde P\diamond\tilde Q=\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr),
+(\tilde Q_1,\tilde Q_2)\longmapsto \tilde Q_1\diamond\tilde Q_2=\mathrm{Vect}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr),
 $$
 
-the vector part of the general plain sesquilinear product. Equivalently, it is the **skew-conjugate-symmetric part** of that product under the exchange $\tilde P\tilde Q^{*}\mapsto\overline{\tilde Q\tilde P^{*}}$,
+the vector part of the general plain sesquilinear product. Equivalently, it is the **skew-conjugate-symmetric part** of that product under the exchange $\tilde Q_1\tilde Q_2^{*}\mapsto\overline{\tilde Q_2\tilde Q_1^{*}}$,
 
 $$
-\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr),
+\tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr),
 $$
 
 which is the general definition of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, §*The Two Parts Under Their Own Names*, read on the biquaternion product with the conjugation $\bar{\cdot}$.
 
-The equivalence of the two displays is the definition of the vector part. Indeed $\overline{\tilde Q\tilde P^{*}}=(\tilde P\tilde Q^{*})^{\natural}$ for the biquaternion product, since $\natural(\overline{\tilde Q_1})=\tilde Q_1^{*}$ and $\natural$ is an anti-automorphism, so that $\tfrac12\bigl(\tilde Q_1-\tilde Q_1^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_1)$ at $\tilde Q_1=\tilde P\tilde Q^{*}$. That identity is the reason the two sesqualgebra rows of the row table admit the exchange *read on the value*: the conjugate transpose of the value is the natural conjugate of the same value, and the two halves of the same element fall out.
+The equivalence of the two displays is the definition of the vector part. Indeed $\overline{\tilde Q_2\tilde Q_1^{*}}=(\tilde Q_1\tilde Q_2^{*})^{\natural}$ for the biquaternion product, since $\natural(\overline{\tilde Q_3})=\tilde Q_3^{*}$ and $\natural$ is an anti-automorphism, so that $\tfrac12\bigl(\tilde Q_3-\tilde Q_3^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_3)$ at $\tilde Q_3=\tilde Q_1\tilde Q_2^{*}$. That identity is the reason the two sesqualgebra rows of the row table admit the exchange *read on the value*: the conjugate transpose of the value is the natural conjugate of the same value, and the two halves of the same element fall out.
 
 Written on the coordinates, collecting the scalar and the vector parts and conjugating the second one,
 
 $$
-\tilde P\diamond\tilde Q=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q},
+\tilde Q_1\diamond\tilde Q_2=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
 $$
 
-so the scalar part vanishes identically, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, and the vector part is the antisymmetrisation of the scalar–vector formula of the product. The first two terms mix the scalar parts with the vector parts, and the last is the cross product of the vector part of the first argument with the conjugate of the vector part of the second.
+so the scalar part vanishes identically, $\mathrm{Sc}(\tilde Q_1\diamond\tilde Q_2)=0$, and the vector part is the antisymmetrisation of the scalar–vector formula of the product. The first two terms mix the scalar parts with the vector parts, and the last is the cross product of the vector part of the first argument with the conjugate of the vector part of the second.
 
 ### The Class
 
 **Proposition.** The operation $\diamond$ is additive in each variable and **sesquilinear** over $(\mathbb{C},\bar{\cdot})$: $\mathbb{C}$-linear in the first argument and conjugate-linear in the second,
 
 $$
-(\lambda\tilde P)\diamond\tilde Q=\lambda\,(\tilde P\diamond\tilde Q),\qquad
-\tilde P\diamond(\lambda \tilde Q)=\overline{\lambda}\,(\tilde P\diamond\tilde Q)\qquad(\lambda\in\mathbb{C}).
+(\lambda\tilde Q_1)\diamond\tilde Q_2=\lambda\,(\tilde Q_1\diamond\tilde Q_2),\qquad
+\tilde Q_1\diamond(\lambda \tilde Q_2)=\overline{\lambda}\,(\tilde Q_1\diamond\tilde Q_2)\qquad(\lambda\in\mathbb{C}).
 $$
 
-*Proof.* The values lie in the vector subspace and the two rules are the two scalar rules of the sesquilinear product read through the vector part: $\mathrm{Vect}(\lambda\tilde P\,\tilde Q^{*})=\lambda\,\mathrm{Vect}(\tilde P\tilde Q^{*})$ and $\mathrm{Vect}(\tilde P(\lambda\tilde Q)^{*})=\mathrm{Vect}(\overline{\lambda}\,\tilde P\tilde Q^{*})=\overline{\lambda}\,\mathrm{Vect}(\tilde P\tilde Q^{*})$.
+*Proof.* The values lie in the vector subspace and the two rules are the two scalar rules of the sesquilinear product read through the vector part: $\mathrm{Vect}(\lambda\tilde Q_1\,\tilde Q_2^{*})=\lambda\,\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$ and $\mathrm{Vect}(\tilde Q_1(\lambda\tilde Q_2)^{*})=\mathrm{Vect}(\overline{\lambda}\,\tilde Q_1\tilde Q_2^{*})=\overline{\lambda}\,\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$.
 
 **Remark.** The operation therefore belongs to the same class as the product it splits, and not to the class of the six $\mathbb{C}$-bilinear parts of the two algebra rows. In the row table of *The 12 Products of the Biquaternioid Complex Space* it is the entry $\mathrm{APS}$, in the plain sesqualgebra row, between $\mathrm{GPS}$ and $\mathrm{SPS}$. The distinction is the one the two rows of the table exhibit: the six operations of the algebra rows are $\mathbb{C}$-bilinear, the six of the sesqualgebra rows are sesquilinear over $(\mathbb{C},\bar{\cdot})$, and the count twelve is the count over the complex space alone.
 
@@ -71,34 +71,34 @@ $$
 **Theorem (the operation is conjugate-alternating).** For all biquaternions,
 
 $$
-\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}.
+\tilde Q_1\diamond\tilde Q_2=-\overline{\tilde Q_2\diamond\tilde Q_1}.
 $$
 
-*Proof.* $\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr)$ and $\tilde Q\diamond\tilde P=\tfrac12\bigl(\tilde Q\tilde P^{*}-\overline{\tilde P\tilde Q^{*}}\bigr)$; conjugating the second and negating, $-\overline{\tilde Q\diamond\tilde P}=\tfrac12\bigl(\overline{\tilde Q\tilde P^{*}}-\tilde P\tilde Q^{*}\bigr)=\tilde P\diamond\tilde Q$.
+*Proof.* $\tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)$ and $\tilde Q_2\diamond\tilde Q_1=\tfrac12\bigl(\tilde Q_2\tilde Q_1^{*}-\overline{\tilde Q_1\tilde Q_2^{*}}\bigr)$; conjugating the second and negating, $-\overline{\tilde Q_2\diamond\tilde Q_1}=\tfrac12\bigl(\overline{\tilde Q_2\tilde Q_1^{*}}-\tilde Q_1\tilde Q_2^{*}\bigr)=\tilde Q_1\diamond\tilde Q_2$.
 
-**Remark (the vocabulary).** Three words have to be separated, because the operation satisfies none of the bilinear ones. It is **not alternating**, since its diagonal is not zero; it is **not anti-commutative**, since $\tilde P\diamond\tilde Q\ne-\tilde Q\diamond\tilde P$ off the real part; and it is **not a Lie bracket**, since the cyclic sum fails at the triple $(e_t,\vec e_x,\vec e_y)$ of the next section. It is conjugate-alternating and nothing else, and what replaces the vanishing diagonal is not a sign but the conjugation: the diagonal is **purely imaginary**, $\tilde Q\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde Q}$, and the pair of statements that the exchange yields is $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$ and $\overline{\tilde P\diamond\tilde Q}=\overline{\tilde P}\diamond\overline{\tilde Q}$.
+**Remark (the vocabulary).** Three words have to be separated, because the operation satisfies none of the bilinear ones. It is **not alternating**, since its diagonal is not zero; it is **not anti-commutative**, since $\tilde Q_1\diamond\tilde Q_2\ne-\tilde Q_2\diamond\tilde Q_1$ off the real part; and it is **not a Lie bracket**, since the cyclic sum fails at the triple $(e_t,\vec e_x,\vec e_y)$ of the next section. It is conjugate-alternating and nothing else, and what replaces the vanishing diagonal is not a sign but the conjugation: the diagonal is **purely imaginary**, $\tilde Q\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde Q}$, and the pair of statements that the exchange yields is $\tilde Q_1\diamond\tilde Q_2=-\overline{\tilde Q_2\diamond\tilde Q_1}$ and $\overline{\tilde Q_1\diamond\tilde Q_2}=\overline{\tilde Q}_1\diamond\overline{\tilde Q}_2$.
 
 **Proposition (the coefficientwise conjugation is an automorphism).** For all biquaternions,
 
 $$
-\overline{\tilde P\diamond\tilde Q}=\overline{\tilde P}\diamond\overline{\tilde Q}.
+\overline{\tilde Q_1\diamond\tilde Q_2}=\overline{\tilde Q}_1\diamond\overline{\tilde Q}_2.
 $$
 
-*Proof.* $\overline{\mathrm{Vect}(\tilde P\tilde Q^{*})}=\mathrm{Vect}(\overline{\tilde P\tilde Q^{*}})=\mathrm{Vect}(\overline{\tilde P}\,\overline{\tilde Q^{*}})$ and $\overline{\tilde Q^{*}}=\tilde Q^{\natural}$, so the value is $\mathrm{Vect}(\overline{\tilde P}\,\tilde Q^{\natural})=(\overline{\tilde P})\diamond(\overline{\tilde Q})$, since $(\overline{\tilde Q})^{*}=\tilde Q^{\natural}$.
+*Proof.* $\overline{\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})}=\mathrm{Vect}(\overline{\tilde Q_1\tilde Q_2^{*}})=\mathrm{Vect}(\overline{\tilde Q}_1\,\overline{\tilde Q_2^{*}})$ and $\overline{\tilde Q^{*}}=\tilde Q^{\natural}$, so the value is $\mathrm{Vect}(\overline{\tilde Q}_1\,\tilde Q_2^{\natural})=(\overline{\tilde Q}_1)\diamond(\overline{\tilde Q}_2)$, since $(\overline{\tilde Q})^{*}=\tilde Q^{\natural}$.
 
-**Remark.** The proposition is the conjugation-symmetry of the block, and it is the reason the block is stable under the conjugation of the space: the conjugation is a conjugate-linear automorphism of $\diamond$, in the same way that the interchange is an automorphism of a commutative product and its negative one of a Lie product. It is also the shape the exchange takes in this row, and it is what makes the two halves $\mathrm{SPS}$ and $\diamond$ read the same value $\tilde P\tilde Q^{*}$ through the two conjugations ${}^{\natural}$ and $\bar{\cdot}$.
+**Remark.** The proposition is the conjugation-symmetry of the block, and it is the reason the block is stable under the conjugation of the space: the conjugation is a conjugate-linear automorphism of $\diamond$, in the same way that the interchange is an automorphism of a commutative product and its negative one of a Lie product. It is also the shape the exchange takes in this row, and it is what makes the two halves $\mathrm{SPS}$ and $\diamond$ read the same value $\tilde Q_1\tilde Q_2^{*}$ through the two conjugations ${}^{\natural}$ and $\bar{\cdot}$.
 
 ## The Image and the Absence of a Unit
 
 **Proposition (the image is the vector subspace; the centre is not in it).** The image of $\diamond$ is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three over $\mathbb{C}$; the operation is central-free, so no value lies in the centre $\mathbb{C}_{\mathbb{B}}$ except $0$. The two one-sided actions of the unit are
 
 $$
-\tilde P\diamond e_t=\vec P,\qquad e_t\diamond\tilde Q=-\overline{\vec Q} .
+\tilde Q_1\diamond e_t=\vec Q_1,\qquad e_t\diamond\tilde Q=-\overline{\vec Q} .
 $$
 
-*Proof.* Every value is a vector part, so the image is contained in $\mathrm{Vect}(\mathbb{B})$. The first display gives the whole vector subspace, since $\vec P$ is an arbitrary vector part, and it is the computation of $\mathrm{Vect}(\tilde P e_t^{*})=\mathrm{Vect}(\tilde P)$. The second is $\mathrm{Vect}(\tilde Q^{*})=\mathrm{Vect}(-\overline{\vec Q})=-\overline{\vec Q}$. The scalar part vanishing with a nonzero vector part is not central, and the zero value is central.
+*Proof.* Every value is a vector part, so the image is contained in $\mathrm{Vect}(\mathbb{B})$. The first display gives the whole vector subspace, since $\vec Q_1$ is an arbitrary vector part, and it is the computation of $\mathrm{Vect}(\tilde Q_1 e_t^{*})=\mathrm{Vect}(\tilde Q_1)$. The second is $\mathrm{Vect}(\tilde Q^{*})=\mathrm{Vect}(-\overline{\vec Q})=-\overline{\vec Q}$. The scalar part vanishing with a nonzero vector part is not central, and the zero value is central.
 
-**Remark (the unit is not a unit of the block).** The sesqualgebra has a unit on the right alone, by *Introduction to the General Plain Sesqualgebra*, and the block inherits neither side. A left unit $\tilde u$ would give $\tilde u\diamond e_t=e_t$, but $\tilde u\diamond e_t=\vec q$ has zero scalar part while $e_t$ has scalar part $1$: no left unit. A right unit $\tilde u$ would give $\tilde Q_4\diamond\tilde u=\tilde Q_4$ for all $\tilde Q_4$; the left member is a value of the block and so has zero scalar part, while the right member $e_t$ has scalar part $1$, so the condition already fails at $\tilde Q_4=e_t$. So the block has no unit on either side, and the two displays of the proposition are the two one-sided actions that replace it.
+**Remark (the unit is not a unit of the block).** The sesqualgebra has a unit on the right alone, by *Introduction to the General Plain Sesqualgebra*, and the block inherits neither side. A left unit $\tilde u$ would give $\tilde u\diamond e_t=e_t$, but $\tilde u\diamond e_t=\vec q$ has zero scalar part while $e_t$ has scalar part $1$: no left unit. A right unit $\tilde u$ would give $\tilde Q_6\diamond\tilde u=\tilde Q_6$ for all $\tilde Q_6$; the left member is a value of the block and so has zero scalar part, while the right member $e_t$ has scalar part $1$, so the condition already fails at $\tilde Q_6=e_t$. So the block has no unit on either side, and the two displays of the proposition are the two one-sided actions that replace it.
 
 ### The Sixteen Values of the Basis
 
@@ -135,10 +135,10 @@ $$
 
 The formula, the criterion for the vanishing and the cone that the diagonal traces are the subject of *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*, below in this block, where they are computed; here the non-vanishing alone is recorded, because it is what forbids reading the block as a Lie product.
 
-**Theorem (the Jacobi identity fails).** Write, for an operation $b$, the **cyclic sum** at a triple $(\tilde Q_1,\tilde Q_2,\tilde Q_3)$ as
+**Theorem (the Jacobi identity fails).** Write, for an operation $b$, the **cyclic sum** at a triple $(\tilde Q_3,\tilde Q_4,\tilde Q_5)$ as
 
 $$
-\mathrm{cyc}\,\mathfrak{b}(\tilde Q_1,\tilde Q_2,\tilde Q_3)=b\bigl(\mathfrak{b}(\tilde Q_1,\tilde Q_2),\tilde Q_3\bigr)+b\bigl(\mathfrak{b}(\tilde Q_2,\tilde Q_3),\tilde Q_1\bigr)+b\bigl(\mathfrak{b}(\tilde Q_3,\tilde Q_1),\tilde Q_2\bigr),
+\mathrm{cyc}\,\mathfrak{b}(\tilde Q_3,\tilde Q_4,\tilde Q_5)=b\bigl(\mathfrak{b}(\tilde Q_3,\tilde Q_4),\tilde Q_5\bigr)+b\bigl(\mathfrak{b}(\tilde Q_4,\tilde Q_5),\tilde Q_3\bigr)+b\bigl(\mathfrak{b}(\tilde Q_5,\tilde Q_3),\tilde Q_4\bigr),
 $$
 
 the outer form of *The Symmetric and Antisymmetric Parts of an Algebra Product*, §*Lie-Admissible Algebras*, with the factor $\tfrac12$ carried by $b$ itself. Then
@@ -158,8 +158,8 @@ so $\diamond$ is not a Lie bracket. The value is the one tabulated for $\mathrm{
 **Theorem (the reconstruction).** The general plain sesquilinear product is the sum of its two adapted parts,
 
 $$
-\tilde P\tilde Q^{*}=\mathrm{SPS}(\tilde P,\tilde Q)+\tilde P\diamond\tilde Q
-=\bigl[P_t\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr]e_t+\bigl(-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}\bigr),
+\tilde Q_1\tilde Q_2^{*}=\mathrm{SPS}(\tilde Q_1,\tilde Q_2)+\tilde Q_1\diamond\tilde Q_2
+=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]e_t+\bigl(-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}\bigr),
 $$
 
 the symmetric half being central-valued and the antisymmetric half pure-vector. Each half of the sum is a sesquilinear product of the class, by the independence theorem of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and neither is recoverable from the other; together they are the product.
@@ -168,19 +168,19 @@ the symmetric half being central-valued and the antisymmetric half pure-vector. 
 
 | name | the product | scalar part | vector part | law | unit | image |
 |---|---|---|---|---|---|---|
-| $\mathrm{APS}$ | $\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr)$ | $\bigl[0\bigr]$ | $-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$ | conjugate-alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
+| $\mathrm{APS}$ | $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)$ | $\bigl[0\bigr]$ | $-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$ | conjugate-alternating, no Jacobi | none | $\mathrm{Vect}(\mathbb{B})$ |
 
-and it is the plain-sesqualgebra sibling of three other antisymmetrisations: $\mathrm{APA}=\vec P\times\vec Q$, which is the one Lie product of the twelve, $\mathrm{AQA}=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q$, which fails on the associator, and $\mathrm{AQS}=\vec P\times\overline{\vec Q}$, which fails as the block does. On the **real** part of the space the block is its own operation: it is $\tilde P\diamond\tilde Q=-P_t\vec Q+Q_t\vec P-\vec P\times\overline{\vec Q}$, which coincides with no other of the twelve, while on the real **vectors** alone it is the cross product up to sign, $\vec P\diamond\vec Q=-\vec P\times\vec Q$. The ten operations of the real part, and the two coincidences $\mathrm{APA}=\mathrm{AQS}$ and $\mathrm{SQA}=\mathrm{SPS}$ that reduce the twelve to ten there, are tabulated in *The 12 Products of the Biquaternioid Complex Space*; the block is not one of the coincidences.
+and it is the plain-sesqualgebra sibling of three other antisymmetrisations: $\mathrm{APA}=\vec Q_1\times\vec Q_2$, which is the one Lie product of the twelve, $\mathrm{AQA}=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$, which fails on the associator, and $\mathrm{AQS}=\vec Q_1\times\overline{\vec Q_2}$, which fails as the block does. On the **real** part of the space the block is its own operation: it is $\tilde Q_1\diamond\tilde Q_2=-Q_{1t}\vec Q_2+Q_{2t}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, which coincides with no other of the twelve, while on the real **vectors** alone it is the cross product up to sign, $\vec Q_1\diamond\vec Q_2=-\vec Q_1\times\vec Q_2$. The ten operations of the real part, and the two coincidences $\mathrm{APA}=\mathrm{AQS}$ and $\mathrm{SQA}=\mathrm{SPS}$ that reduce the twelve to ten there, are tabulated in *The 12 Products of the Biquaternioid Complex Space*; the block is not one of the coincidences.
 
 ## The Interpretation in the Physics Band
 
-The block is the **phase** of the pairing. Its diagonal does not vanish: it is the vector part of the square, $\tilde Q\diamond\tilde Q = \mathrm{Vect}(\tilde Q\tilde Q^{*})$, and it is purely imaginary, so its direction is a real axis. Its law is conjugate-alternation, $\tilde P\diamond\tilde Q = -\overline{\tilde Q\diamond\tilde P}$, so an exchange of the two arguments both reverses and conjugates the value. Its Jacobi identity fails, so this phase structure is not a Lie algebra.
+The block is the **phase** of the pairing. Its diagonal does not vanish: it is the vector part of the square, $\tilde Q\diamond\tilde Q = \mathrm{Vect}(\tilde Q\tilde Q^{*})$, and it is purely imaginary, so its direction is a real axis. Its law is conjugate-alternation, $\tilde Q_1\diamond\tilde Q_2 = -\overline{\tilde Q_2\diamond\tilde Q_1}$, so an exchange of the two arguments both reverses and conjugates the value. Its Jacobi identity fails, so this phase structure is not a Lie algebra.
 
 The readings are these, and each belongs to the physics article named; this article stops at the algebra. The diagonal, as $i$ times a real vector, is read as the axis of the relative phase of two amplitudes in *The Biquaternioid Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$*. The failure of the Jacobi identity, and the absence of a Lie algebra of the phase on the state space, are read in *The Biquaternioid Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$*.
 
 ## Summary
 
-The antisymmetric part of the general plain sesquilinear product is $\tilde P\diamond\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$, a sesquilinear operation over $(\mathbb{C},\bar{\cdot})$ that is **conjugate-alternating**, $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$, and neither alternating nor anti-commutative. Its values are pure vector and fill the vector subspace, its scalar part vanishes, it has no unit on either side, and the coefficientwise conjugation is an automorphism of it. The diagonal is the vector part of the square, $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$, which is $2i\vec e_z$ at $\vec e_x+i\vec e_y$ and zero on the real basis; the Jacobi identity fails, at the real triple $(e_t,\vec e_x,\vec e_y)$ with the cyclic sum $\vec e_z$ and at the conjugated witness $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, the first failure being the bilinear face shared with $\mathrm{AQA}$ and the second the obstruction of *Lie Algebras of Sesqualgebras*, and the block is the plain-sesqualgebra sibling of $\mathrm{AQS}$ among the two failures of that kind. With the symmetric half it reconstructs the product, $\tilde P\tilde Q^{*}=\mathrm{SPS}(\tilde P,\tilde Q)+\tilde P\diamond\tilde Q$.
+The antisymmetric part of the general plain sesquilinear product is $\tilde Q_1\diamond\tilde Q_2=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2}$, a sesquilinear operation over $(\mathbb{C},\bar{\cdot})$ that is **conjugate-alternating**, $\tilde Q_1\diamond\tilde Q_2=-\overline{\tilde Q_2\diamond\tilde Q_1}$, and neither alternating nor anti-commutative. Its values are pure vector and fill the vector subspace, its scalar part vanishes, it has no unit on either side, and the coefficientwise conjugation is an automorphism of it. The diagonal is the vector part of the square, $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$, which is $2i\vec e_z$ at $\vec e_x+i\vec e_y$ and zero on the real basis; the Jacobi identity fails, at the real triple $(e_t,\vec e_x,\vec e_y)$ with the cyclic sum $\vec e_z$ and at the conjugated witness $(\vec e_x,\vec e_x,i\vec e_y)$ with $-2i\vec e_y$, the first failure being the bilinear face shared with $\mathrm{AQA}$ and the second the obstruction of *Lie Algebras of Sesqualgebras*, and the block is the plain-sesqualgebra sibling of $\mathrm{AQS}$ among the two failures of that kind. With the symmetric half it reconstructs the product, $\tilde Q_1\tilde Q_2^{*}=\mathrm{SPS}(\tilde Q_1,\tilde Q_2)+\tilde Q_1\diamond\tilde Q_2$.
 
 ## Summary of Notation
 
@@ -190,12 +190,12 @@ The antisymmetric part of the general plain sesquilinear product is $\tilde P\di
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis; $e_t$ the unit, $\vec e_k$ the quaternion units; $i$ the central scalar imaginary |
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion and its scalar–vector split, $Q_\mu\in\mathbb{C}$ |
 | $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the coefficientwise, the natural and the Hermitian conjugations, $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |
-| $\tilde P\diamond\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$ | the operation of the block, the antisymmetric plain sesqualgebra $\mathrm{APS}$ |
-| $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ | the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* |
+| $\tilde Q_1\diamond\tilde Q_2=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$ | the operation of the block, the antisymmetric plain sesqualgebra $\mathrm{APS}$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* |
 | $\mathrm{Vect}(\mathbb{B}),\mathbb{C}_{\mathbb{B}}$ | the vector subspace and the centre of the remarkable subspaces |
-| $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$ | conjugate-alternation, the law the block satisfies |
+| $\tilde Q_1\diamond\tilde Q_2=-\overline{\tilde Q_2\diamond\tilde Q_1}$ | conjugate-alternation, the law the block satisfies |
 | $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$ | the diagonal, the vector part of the square |
-| $\mathrm{cyc}\,b$ | the cyclic sum $b(\mathfrak{b}(\tilde Q_1,\tilde Q_2),\tilde Q_3)+b(\mathfrak{b}(\tilde Q_2,\tilde Q_3),\tilde Q_1)+b(\mathfrak{b}(\tilde Q_3,\tilde Q_1),\tilde Q_2)$ |
+| $\mathrm{cyc}\,b$ | the cyclic sum $b(\mathfrak{b}(\tilde Q_3,\tilde Q_4),\tilde Q_5)+b(\mathfrak{b}(\tilde Q_4,\tilde Q_5),\tilde Q_3)+b(\mathfrak{b}(\tilde Q_5,\tilde Q_3),\tilde Q_4)$ |
 
 ## Further Reading
 

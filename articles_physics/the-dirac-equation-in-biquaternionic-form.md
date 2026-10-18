@@ -328,7 +328,7 @@ Before developing the biquaternionic Dirac equation, it is useful to collect the
 The **four-position biquaternion** is
 
 $$
-\tilde{Q} = ic t\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z,
+\tilde{R} = ic t\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z,
 $$
 
 with $x_0 = ict$. The scalar part is the complex time coordinate, and the vector part is the ordinary spatial position.
@@ -338,7 +338,7 @@ with $x_0 = ict$. The scalar part is the complex time coordinate, and the vector
 The invariant interval is the square of the biquaternion displacement:
 
 $$
-ds^2 = \langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q} \circ \overline{d\tilde{Q}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2 dt^2 +dx^2+dy^2+dz^2.
+ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R} \circ \overline{d\tilde{R}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2 dt^2 +dx^2+dy^2+dz^2.
 $$
 
 This is the biquaternion form of the Minkowski interval. The Lorentzian signature emerges algebraically from $i^2 = -1$, as discussed in the companion article on the $ict$ convention.
@@ -397,8 +397,8 @@ The **four-acceleration biquaternion** is $\tilde{A} = d\tilde{V}/d\tau$, where 
 
 | Quantity | Biquaternion | Constraint |
 |---|---|---|
-| Four-position | $\tilde{Q} = ict\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | — |
-| Interval | $ds^2 = \langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\circ\overline{d\tilde{Q}}$ | $= -c^2 dt^2 +dx^2+dy^2+dz^2$ |
+| Four-position | $\tilde{R} = ict\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | — |
+| Interval | $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\circ\overline{d\tilde{R}}$ | $= -c^2 dt^2 +dx^2+dy^2+dz^2$ |
 | Four-velocity | $\tilde{V} = \gamma(ic\, e_t + \vec v)$ | $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | Four-momentum | $\tilde{P} = m\tilde{V}$ | $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ |
 | Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | — |
@@ -496,11 +496,11 @@ in agreement with the companion article on the Klein–Gordon equation, whose op
 Plane-wave solutions of the massless biquaternionic Dirac equation are
 
 $$
-\tilde{\Psi}(\tilde{Q}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{Q}^{\natural}\right)/\hbar\right)
+\tilde{\Psi}(\tilde{R}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{R}^{\natural}\right)/\hbar\right)
 = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)),
 $$
 
-where $\tilde{\Psi}_0 \in \mathbb{B}$ is a constant biquaternion, $\tilde{P}/\hbar = i k_0 e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_0 = \omega/c$) is the wave biquaternion, and $\tilde{Q} = e_t (ict) + \vec e_x x + \vec e_y y + \vec e_z z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{\Psi}_0$ and differentiates to left multiplication by $i\tilde{P}/\hbar$,
+where $\tilde{\Psi}_0 \in \mathbb{B}$ is a constant biquaternion, $\tilde{P}/\hbar = i k_0 e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_0 = \omega/c$) is the wave biquaternion, and $\tilde{R} = e_t (ict) + \vec e_x x + \vec e_y y + \vec e_z z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{\Psi}_0$ and differentiates to left multiplication by $i\tilde{P}/\hbar$,
 
 $$
 \tilde{\nabla}\tilde{\Psi} = i\,\tilde P\tilde\Psi/\hbar,
@@ -521,7 +521,7 @@ Nonzero solutions of $\tilde P\tilde\Psi_0/\hbar = 0$ exist only when $\tilde{P}
 For the massive equation a single central-phase plane wave,
 
 $$
-\tilde{\Psi}(\tilde{Q}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{Q}^{\natural}\right)/\hbar\right) = \tilde{\Psi}_0\,\exp(i\theta), \qquad \theta = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t,
+\tilde{\Psi}(\tilde{R}) = \tilde{\Psi}_0 \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{P}\tilde{R}^{\natural}\right)/\hbar\right) = \tilde{\Psi}_0\,\exp(i\theta), \qquad \theta = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t,
 $$
 
 does solve the pair, with one polarization biquaternion per chirality, $\tilde{\Psi}_0 = \tilde{\Psi}_0^L + \tilde{\Psi}_0^R$. Differentiating as in the massless case, $\tilde{\nabla}$ acts on $\exp(i\theta)$ as left multiplication by $i\tilde{P}/\hbar$ and $\tilde{\nabla}^{\natural}$ acts on it as left multiplication by $i\tilde{P}^{\natural}/\hbar$, so the chiral pair becomes the momentum-space system
@@ -734,7 +734,7 @@ The biquaternion formulation adds three things:
 
 **2. A compact notation for the spinor structure.** The two-component structure of the Weyl spinor is naturally encoded in the biquaternion algebra, without the need for explicit spinor indices. The left- and right-handed spinors are the two chiral components of the field — the two minimal left ideals of $\mathbb{B}$ — and the mass term is the linear coupling between them.
 
-**3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}$, the four-momentum $\tilde{P}$, and the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave biquaternion $\tilde{P}/\hbar$ and the four-position $\tilde{Q}$.
+**3. A natural language for relativistic kinematics.** The four-velocity $\tilde{V}$, the four-momentum $\tilde{P}$, and the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$ are all natural objects in the biquaternion algebra. The Dirac equation is naturally stated in terms of these objects, and the plane-wave solutions are naturally written in terms of the wave biquaternion $\tilde{P}/\hbar$ and the four-position $\tilde{R}$.
 
 ### The Mass as a Non-Integrable Phase
 
@@ -790,9 +790,9 @@ $$
 
 for mass $m$, where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is the spinor field with one component per chirality, and the mass term is linear. The massless equation has the same form as the source-free biquaternion Maxwell equation. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to its even subalgebra. Each chiral component satisfies the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$.
 
-The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{Q} = ict\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\circ\overline{d\tilde{Q}}$.
+The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{V} = \gamma(ic\, e_t + \vec v)$ satisfies $\tilde{V}\tilde{V}^{\natural} = -c^2$, the four-momentum $\tilde{P} = m\tilde{V}$ satisfies the mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2 c^2$, and the four-position $\tilde{R} = ict\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ gives the invariant interval $ds^2 = \langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\circ\overline{d\tilde{R}}$.
 
-The plane-wave solutions of the massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ with $\tilde P\tilde\Psi_0/\hbar = 0$ (nonzero solutions only for null $\tilde{P}/\hbar$), giving the two spin states of a massless fermion. The massive plane waves satisfy the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
+The plane-wave solutions of the massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})/\hbar\right) = \tilde{\Psi}_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ with $\tilde P\tilde\Psi_0/\hbar = 0$ (nonzero solutions only for null $\tilde{P}/\hbar$), giving the two spin states of a massless fermion. The massive plane waves satisfy the mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$; the two frequency branches are the particle and the antiparticle, and with the two spin states they give the four components of the Dirac spinor.
 
 The spherical and cylindrical solutions are constructed by the methods of Clifford analysis, via the monogenic completion of harmonic functions. They describe the angular momentum states of the fermion field and the waveguide modes, respectively.
 
@@ -814,7 +814,7 @@ The same construction has two consequences that belong to the equation rather th
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\vec v$ | Particle three-velocity |
 | $\gamma = 1/\sqrt{1 - \vec v^2/c^2}$ | Lorentz factor |
-| $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion |
+| $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{P} = m\tilde{V}$ | Four-momentum biquaternion |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu \vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient (Dirac operator) |

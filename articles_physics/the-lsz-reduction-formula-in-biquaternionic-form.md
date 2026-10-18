@@ -99,11 +99,11 @@ The external legs carry the framework's plane waves, and this is where the reduc
 
 **Central-phase plane waves.** The biquaternion plane wave
 $$
-\tilde\Phi_{\tilde P}(\tilde{Q}) = \tilde w\,\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{Q})) ,
+\tilde\Phi_{\tilde P}(\tilde{R}) = \tilde w\,\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{R})) ,
 \qquad
-\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
+\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
 $$
-with $\tilde w$ a constant biquaternion amplitude, satisfies $(\Box-m^2)\tilde\Phi_{\tilde P}=0$ for $\tilde P\tilde P^{\natural}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde P\tilde P^{\natural}+m^2)=-\mathcal{M}(\tilde P)$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde{Q})=p\cdot x$, so the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.
+with $\tilde w$ a constant biquaternion amplitude, satisfies $(\Box-m^2)\tilde\Phi_{\tilde P}=0$ for $\tilde P\tilde P^{\natural}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde P\tilde P^{\natural}+m^2)=-\mathcal{M}(\tilde P)$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde{R})=p\cdot x$, so the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.
 
 **The one-particle states.** The asymptotic states are one-particle states of the Fock module of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, labeled by on-shell momenta and by the internal (spinor or helicity) label carried by the module. The external wavefunction is the module vector $\tilde w$ times the central phase, and the LSZ integral projects a correlation function onto that module vector.
 
@@ -262,12 +262,12 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $p^2-m^2=-\mathcal{M}(\tilde P)$ | Symbol of the wave operator $(\Box-m^2)$; amputation uses $\mathcal{M}$ |
 | $Z=\lim_{p^2\to m^2}(m^2-p^2)D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
 | $\langle f\lvert S\rvert i\rangle$ | S-matrix element from the reduction |
-| $\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{Q}))=\exp(\,ip\cdot x)$ | Central-phase plane wave (external leg) |
+| $\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{R}))=\exp(\,ip\cdot x)$ | Central-phase plane wave (external leg) |
 | $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Spinor mass-shell operator |
 | $w^{(r)},v^{(r)}$ | External spinors; $\sum_r w^{(r)}\bar w^{(r)}=\not p+m$ |
 | $Z=Z_-+Z_+$ | Scalar-sector splitting of the residue (sum) |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 
 ## Further Reading
 

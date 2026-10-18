@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The general plain sesqualgebra is the operation $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ on the biquaternion space (*Introduction to the General Plain Sesqualgebra*). This article solves the square-root problem of the block: for a given element $\tilde a\in\mathbb{B}$, decide whether there is a **square root** $\tilde\Xi$ with
+The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space (*Introduction to the General Plain Sesqualgebra*). This article solves the square-root problem of the block: for a given element $\tilde a\in\mathbb{B}$, decide whether there is a **square root** $\tilde\Xi$ with
 
 $$
 \tilde\Xi\star\tilde\Xi=\tilde a,
@@ -20,7 +20,7 @@ the set of the Hermitian elements whose scalar part dominates the modulus of the
 
 **Boundaries.** The product, its class and its placement are *Introduction to the General Plain Sesqualgebra*; the relative definition of the square root is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, and the two-involution arithmetic of the parent is *Square Roots of a General Element in the Biquaternion Algebra*. The central values of the block and their root sets are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra* for the value $+1$ and *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra* for the value $0$; the Hermitian subspace, the positivity and the cone are *Hermitian and Skew-Hermitian Elements* and *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*; the idempotents that the roots of $+1$ produce are in the first. Nothing topological and nothing metric appears.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$; the natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$. The product is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. In the imaginary decomposition $\tilde Q=q_r+iq_i$ the halves $q_r,q_i$ are real quaternions, with real scalar parts $q_{r0},q_{i0}$ and vector parts $\vec q,\vec v$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$; the natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$. The product is $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. In the imaginary decomposition $\tilde Q=q_r+iq_i$ the halves $q_r,q_i$ are real quaternions, with real scalar parts $q_{r0},q_{i0}$ and vector parts $\vec q,\vec v$.
 
 **The results.** The block-square is the Hermitian element $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=(\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2})e_t+2i(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v)$ in the real halves, with scalar part $s=\lvert q_r\rvert^{2}+\lvert q_i\rvert^{2}$ and vector part $\vec w=2(q_{r0}\vec v-q_{i0}\vec q+\vec q\times\vec v)$ satisfying $\lvert\vec w\rvert\leq s$. Its image is exactly the Hermitian cone $\mathcal{C}=\{\alpha e_t+i\vec w:\alpha\geq\lvert\vec w\rvert\}$, so the equation $\tilde\Xi\star\tilde\Xi=\tilde a$ has a solution exactly when $\tilde a\in\mathcal{C}$, the boundary being the image of the zero divisors and the interior the image of the regular elements. On the interior the root set of a value is a single orbit $\{\exp(i\theta)\tilde\Xi_0u\}$ of real dimension four under $\mathrm{U}(1)\times S^{3}$, and on the central line a root exists exactly for $\lambda\geq0$ real.
 
@@ -134,7 +134,7 @@ The square of an element of the general plain sesqualgebra is the Hermitian elem
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the product of the block |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the product of the block |
 | $\tilde\Xi=q_r+iq_i$ | the imaginary decomposition, $q_r,q_i$ real quaternions |
 | $\vec q,\vec v$ | the vector parts of $q_r,q_i$ |
 | $\tilde\Xi\star\tilde\Xi=\tilde\Xi\tilde\Xi^{*}$ | the square, Hermitian |

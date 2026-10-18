@@ -12,7 +12,7 @@ the map that pairs $\tilde A$ with the second slot of the multiplication. The ma
 
 The block is *Introduction to the Antisymmetric Quaternionic Sesqualgebra*; its pairing with the form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; its diagonal and the failure of the Jacobi identity are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the form is *The Krein Gram Matrix and the Restrictions of the Form*. This article owns the operators of the block.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$; a generic element $\tilde Q=Q_te_t+\vec Q$; the product is $\diamond$ and the form is $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, linear in the first argument and conjugate-linear in the second. The real basis of the algebra is ordered as $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, so that a real-linear map of the space is an eight-by-eight real matrix in it.
+**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$; a generic element $\tilde Q_2=Q_{2t}e_t+\vec Q_2$; the product is $\diamond$ and the form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, linear in the first argument and conjugate-linear in the second. The real basis of the algebra is ordered as $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, so that a real-linear map of the space is an eight-by-eight real matrix in it.
 
 ## The Left Multiplication
 
@@ -86,8 +86,8 @@ a conjugate-linear map. Equivalently, $\langle\tilde A\diamond\tilde Q_2,\tilde 
 **Definition.** A **derivation** of the block is a real-linear map $D$ with
 
 $$
-D(\tilde P\diamond\tilde Q)=D\tilde P\diamond\tilde Q+\tilde P\diamond D\tilde Q
-\qquad\text{for all }\tilde P,\tilde Q .
+D(\tilde Q_1\diamond\tilde Q_2)=D\tilde Q_1\diamond\tilde Q_2+\tilde Q_1\diamond D\tilde Q_2
+\qquad\text{for all }\tilde Q_1,\tilde Q_2 .
 $$
 
 **Theorem (the derivations).** The derivations of the block form a real vector space of dimension $7$, the direct sum
@@ -96,19 +96,19 @@ $$
 \mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R}),
 $$
 
-where the first summand consists of the maps $\tilde Q\mapsto\lambda(Q_t)e_t$ for $\mathbb{R}$-linear $\lambda:\mathbb{C}\to\mathbb{C}$, of real dimension $4$, and the second consists of the complex-linear skew maps of the vector part with real entries, of real dimension $3$.
+where the first summand consists of the maps $\tilde Q_2\mapsto\lambda(Q_{2t})e_t$ for $\mathbb{R}$-linear $\lambda:\mathbb{C}\to\mathbb{C}$, of real dimension $4$, and the second consists of the complex-linear skew maps of the vector part with real entries, of real dimension $3$.
 
-*Proof.* Let $D\tilde Q=\lambda(Q_t)e_t+D_V(\vec Q)$. Substituting into the defining identity and using that the block kills the centre in both slots, the centre part $\lambda$ cancels on both sides for every $\mathbb{R}$-linear $\lambda$, which gives the first summand. On the vector part, the identity reads $D_V(\vec P\times\overline{\vec Q})=D_V\vec P\times\overline{\vec Q}+\vec P\times\overline{D_V\vec Q}$; taking $\vec P,\vec Q$ real reduces it to $D_V(\vec P\times\vec Q)=D_V\vec P\times\vec Q+\vec P\times D_V\vec Q$, the classical derivation condition for the cross product, whose solutions are the skew maps of $\mathbb{R}^{3}$; and taking one argument imaginary forces the entries to be real, so the second summand is $\mathfrak{so}(3,\mathbb{R})$, of real dimension $3$. The two summands are independent, and no derivation mixes the centre with the vector part, since a map carrying the centre into the vector part fails the identity on a real pair. The total dimension is $4+3=7$.
+*Proof.* Let $D\tilde Q_2=\lambda(Q_{2t})e_t+D_V(\vec Q_2)$. Substituting into the defining identity and using that the block kills the centre in both slots, the centre part $\lambda$ cancels on both sides for every $\mathbb{R}$-linear $\lambda$, which gives the first summand. On the vector part, the identity reads $D_V(\vec Q_1\times\overline{\vec Q_2})=D_V\vec Q_1\times\overline{\vec Q_2}+\vec Q_1\times\overline{D_V\vec Q_2}$; taking $\vec Q_1,\vec Q_2$ real reduces it to $D_V(\vec Q_1\times\vec Q_2)=D_V\vec Q_1\times\vec Q_2+\vec Q_1\times D_V\vec Q_2$, the classical derivation condition for the cross product, whose solutions are the skew maps of $\mathbb{R}^{3}$; and taking one argument imaginary forces the entries to be real, so the second summand is $\mathfrak{so}(3,\mathbb{R})$, of real dimension $3$. The two summands are independent, and no derivation mixes the centre with the vector part, since a map carrying the centre into the vector part fails the identity on a real pair. The total dimension is $4+3=7$.
 
 **Theorem (the structure group).** The group of invertible real-linear maps preserving the block contains the subgroup
 
 $$
-\bigl\{\tilde Q\mapsto\lambda(Q_t)e_t+g\vec Q\ :\ \lambda\in GL_{\mathbb{R}}(\mathbb{C}),\ g\in SO(3,\mathbb{R})\bigr\}\cong GL(2,\mathbb{R})\times SO(3,\mathbb{R}),
+\bigl\{\tilde Q_2\mapsto\lambda(Q_{2t})e_t+g\vec Q_2\ :\ \lambda\in GL_{\mathbb{R}}(\mathbb{C}),\ g\in SO(3,\mathbb{R})\bigr\}\cong GL(2,\mathbb{R})\times SO(3,\mathbb{R}),
 $$
 
 of real dimension $4+3=7$; its Lie algebra is $\mathrm{Der}(\diamond)$.
 
-*Proof.* For $\lambda\in GL_{\mathbb{R}}(\mathbb{C})$ and $g\in SO(3,\mathbb{R})$ the map is invertible, and $\lambda$ acts on the centre which the block kills, while $g(\vec P\times\overline{\vec Q})=g\vec P\times g\overline{\vec Q}=g\vec P\times\overline{g\vec Q}$ for a real **orthogonal** map of determinant one (the real entries make $g$ commute with the conjugation), so the multiplication is preserved. The Lie algebra of the subgroup is the summand decomposition of the linearisation, which is $\mathrm{Der}(\diamond)$ by the preceding theorem: the skew maps $\mathfrak{so}(3,\mathbb{R})$ of the derivation are the linearisations of the determinant-one orthogonal maps. A reflection $g$ of determinant $-1$ reverses the cross product and fails the identity.
+*Proof.* For $\lambda\in GL_{\mathbb{R}}(\mathbb{C})$ and $g\in SO(3,\mathbb{R})$ the map is invertible, and $\lambda$ acts on the centre which the block kills, while $g(\vec Q_1\times\overline{\vec Q_2})=g\vec Q_1\times g\overline{\vec Q_2}=g\vec Q_1\times\overline{g\vec Q_2}$ for a real **orthogonal** map of determinant one (the real entries make $g$ commute with the conjugation), so the multiplication is preserved. The Lie algebra of the subgroup is the summand decomposition of the linearisation, which is $\mathrm{Der}(\diamond)$ by the preceding theorem: the skew maps $\mathfrak{so}(3,\mathbb{R})$ of the derivation are the linearisations of the determinant-one orthogonal maps. A reflection $g$ of determinant $-1$ reverses the cross product and fails the identity.
 
 **Remark (the block is more symmetric than its class suggests).** The structure group is the product of the real-linear maps of the scalar coordinate and the real orthogonal maps of determinant one on the vector part; it does not act complex-linearly on the whole space, because $\lambda$ is only real-linear, while the vector-part factor, having real entries, is complex-linear and commutes with the conjugation. The group is the block's substitute for the group of the two algebras, and it is the group under which the conjugate cross product is invariant.
 

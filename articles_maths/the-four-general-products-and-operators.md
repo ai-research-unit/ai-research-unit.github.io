@@ -20,13 +20,13 @@ The four general products, their relations and their comparison are *The Four Ge
 **Definition (the four general products).** The four general products are
 
 $$
-\tilde P\tilde Q ,
+\tilde Q_1\tilde Q_2 ,
 \qquad
-\tilde P\tilde Q^{*} ,
+\tilde Q_1\tilde Q_2^{*} ,
 \qquad
-\tilde P^{\natural}\tilde Q ,
+\tilde Q_1^{\natural}\tilde Q_2 ,
 \qquad
-\tilde P^{\natural}\tilde Q^{*} ,
+\tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
 the plain bilinear, the general plain sesquilinear, the general quaternionic bilinear and the general quaternionic sesquilinear product.
@@ -34,12 +34,12 @@ the plain bilinear, the general plain sesquilinear, the general quaternionic bil
 **Proposition (one table, two insertions).** The four rules multiply the coordinates on the same products $e_\mu e_\nu$ of the basis. They differ in one point alone: whether the coordinates of each of the two elements are used as they stand or taken from the conjugated element, the two elements being treated independently of one another. Equivalently, the four general products are the four members of the orbit
 
 $$
-\bigl\{K_1(\tilde P)\,K_2(\tilde Q)\;:\;K_1\in\{\mathrm{id},{}^{\natural}\},\;K_2\in\{\mathrm{id},{}^{*}\}\bigr\}
+\bigl\{K_1(\tilde Q_1)\,K_2(\tilde Q_2)\;:\;K_1\in\{\mathrm{id},{}^{\natural}\},\;K_2\in\{\mathrm{id},{}^{*}\}\bigr\}
 $$
 
 of a single rule under the insertion of a conjugation into the first slot and a conjugation into the second.
 
-*Proof.* Reading the four definitions side by side, the products $e_\mu e_\nu$ of the basis and the order of the factors are the same in all four; the only difference is the source of $P_\mu$ in the first factor and of $Q_\nu$ in the second.
+*Proof.* Reading the four definitions side by side, the products $e_\mu e_\nu$ of the basis and the order of the factors are the same in all four; the only difference is the source of $Q_{1,\mu}$ in the first factor and of $Q_{2,\nu}$ in the second.
 
 **Remark (why "complex products").** The word *complex* records the base field and not a second multiplication: the multiplication of the units is that of $\mathbb{H}$ extended to $\mathbb{C}$, and the four rules move over it. There is no product among the four that is not the plain one with an insertion.
 
@@ -48,10 +48,10 @@ of a single rule under the insertion of a conjugation into the first slot and a 
 **Theorem (the scalar parts are the four pairings).** The scalar parts of the four general products are the four pairings of the algebra,
 
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q),\quad
-\langle\tilde P,\tilde Q\rangle_{\ast}=\mathrm{Sc}(\tilde P\tilde Q^{*}),\quad
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q),\quad
-\langle\tilde P,\tilde Q\rangle_{\natural\ast}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*}),
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural\ast}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}),
 $$
 
 with Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ equal to $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
@@ -125,7 +125,7 @@ $$
 
 ### The Plain Product Gives Minus the Reflection
 
-**Theorem (the reflection is reached only through the sign).** Let $\tilde A\in V$ be a vector with $\langle\tilde A\rangle_{\natural}\ne0$, and let $\rho_{\tilde A}$ be the reflection of $V$ in the hyperplane $\tilde A^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$,
+**Theorem (the reflection is reached only through the sign).** Let $\tilde A\in V$ be a vector with $\langle\tilde A\rangle_{\natural}\ne0$, and let $\rho_{\tilde A}$ be the reflection of $V$ in the hyperplane $\tilde A^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$,
 
 $$
 \rho_{\tilde A}(\tilde Q_3)=\tilde Q_3-\frac{2\langle\tilde Q_3,\tilde A\rangle}{\mathfrak{Q}(\tilde A)}\,\tilde A .
@@ -197,7 +197,7 @@ The four general products of the biquaternion algebra are one multiplication wit
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q$, $\tilde P^{\natural}\tilde Q^{*}$ | the four general products: one table, the two insertions |
+| $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | the four general products: one table, the two insertions |
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\ast}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural\ast}$ | their scalar parts, the four pairings, Gram matrices $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ |
 | ${}^{\approx}$, ${}^{*}$, ${}^{N}$, ${}^{\natural\ast}$ | the four adjoints, decided by the four general products |
 | $\natural$, $\bar{\cdot}$, ${}^{*}$ | the sign, the coefficient conjugation, the Hermitian conjugation; $\natural$ has sign vector $(1,-1,-1,-1)$ |

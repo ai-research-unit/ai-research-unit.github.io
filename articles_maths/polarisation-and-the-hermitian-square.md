@@ -104,7 +104,7 @@ Over $\mathbb{R}$ with the trivial involution every Hermitian form is symmetric 
 
 ### The Biquaternion Form
 
-On $\mathbb{B}$ with the dagger, $\mathfrak{Q}(\tilde Q) = \operatorname{Sc}(\tilde Q\tilde Q^{\dagger}) = \sum_{\mu}|Q_{\mu}|^{2}$, and the polarisation gives the real symmetric form $\operatorname{Re}\operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ together with the alternating form $\operatorname{Im}\operatorname{Sc}(\tilde P\tilde Q^{\dagger})$. The indefinite companion $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ and its signature are *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
+On $\mathbb{B}$ with the dagger, $\mathfrak{Q}(\tilde Q) = \operatorname{Sc}(\tilde Q\tilde Q^{\dagger}) = \sum_{\mu}|Q_{\mu}|^{2}$, and the polarisation gives the real symmetric form $\operatorname{Re}\operatorname{Sc}(\tilde Q_1\tilde Q_2^{\dagger})$ together with the alternating form $\operatorname{Im}\operatorname{Sc}(\tilde Q_1\tilde Q_2^{\dagger})$. The indefinite companion $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ and its signature are *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
 
 ## Summary
 

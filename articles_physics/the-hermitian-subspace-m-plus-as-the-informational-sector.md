@@ -596,7 +596,7 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 | $\tilde{Q}_+$, $\tilde{Q}_-$ | Hermitian element of $\mathbb{M}_+$ (operator) and anti-Hermitian element of $\mathbb{M}_-$ (acted upon); written $\tilde{Q}$ when only one element is in play |
 | $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}) = 2\mathrm{Sc}(\tilde{Ϛ}\tilde{Q}) = 2\langle\tilde{Ϛ},\tilde{Q}\rangle$ | Trace formula (Born rule) |
 | $SL(2,\mathbb{C})$ | Group of unit-norm biquaternions |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | the four forms | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$, $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$, $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$; on $\mathbb{M}_+$ all four are real, with $H=B$ and $K=N$ |
 | the area pairing | The alternating companion of the four forms; **zero** on $\mathbb{M}_+$, non-degenerate on the complex time and the complex space sector |
 

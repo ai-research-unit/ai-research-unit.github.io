@@ -11,11 +11,11 @@ The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebr
 **Theorem (the three involutions).** On $\mathfrak{g}$ the three pairings of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* define three adjoints,
 
 $$
-\langle M\tilde{P},\tilde{Q}\rangle=\langle\tilde{P},M^{\mathsf T}\tilde{Q}\rangle,
+\langle M\tilde{Q}_1,\tilde{Q}_2\rangle=\langle\tilde{Q}_1,M^{\mathsf T}\tilde{Q}_2\rangle,
 \qquad
-\langle M\tilde{P},\tilde{Q}\rangle=\langle\tilde{P},M^{*}\tilde{Q}\rangle,
+\langle M\tilde{Q}_1,\tilde{Q}_2\rangle=\langle\tilde{Q}_1,M^{*}\tilde{Q}_2\rangle,
 \qquad
-\langle\tilde{Q},M\tilde{P}\rangle_{\natural*}=\langle M^{\dagger}\tilde{Q},\tilde{P}\rangle_{\natural*},
+\langle\tilde{Q}_2,M\tilde{Q}_1\rangle_{\natural*}=\langle M^{\dagger}\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*},
 $$
 
 namely the **transpose** $M^{\mathsf T}$, the **Hermitian adjoint** $M^{*}$ and the **Krein adjoint** $M^{\dagger}=JM^{*}J$; in the coefficient basis these are the transpose, the conjugate transpose and the conjugate transpose conjugated by $E$. Each gives an involution of $\mathfrak{g}$,

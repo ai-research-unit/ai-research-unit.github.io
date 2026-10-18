@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The square of an element for the sesquilinear multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$, and it is a Hermitian element whose scalar part is the sum of the modulus squares of the four coordinates,
+The square of an element for the sesquilinear multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$, and it is a Hermitian element whose scalar part is the sum of the modulus squares of the four coordinates,
 
 $$
 \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu\overline{Q_\mu}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2} .
@@ -45,10 +45,10 @@ and it is the product of $\tilde Q$ with its own conjugate.
 
 ### The Scalar Part
 
-**Theorem (the scalar part of the square).** For every $\tilde P,\tilde Q$ the scalar part of the product is sesquilinear in the two arguments,
+**Theorem (the scalar part of the square).** For every $\tilde Q_1,\tilde Q_2$ the scalar part of the product is sesquilinear in the two arguments,
 
 $$
-\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}P_\mu\overline{Q_\mu} ,
+\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu}\overline{Q_{2,\mu}} ,
 $$
 
 and the square of $\tilde Q$ has the scalar part
@@ -59,7 +59,7 @@ $$
 
 a nonnegative real number that vanishes if and only if $\tilde Q=0$.
 
-**Proof.** The scalar part of $\tilde P\tilde Q^{*}$ is $P_t\overline{Q_t}-(\vec P,-\overline{\vec Q})=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})=\sum_\mu P_\mu\overline{Q_\mu}$, by the scalar–vector form of the product of *Introduction to the General Plain Sesqualgebra*, §*The Scalar Part of the Multiplication*. At $\tilde P=\tilde Q$ the sum is $\sum_\mu\lvert Q_\mu\rvert^{2}$, a sum of modulus squares; it is nonnegative, and it vanishes only when every coordinate vanishes.
+**Proof.** The scalar part of $\tilde Q_1\tilde Q_2^{*}$ is $Q_{1t}\overline{Q_{2t}}-(\vec Q_1,-\overline{\vec Q_2})=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$, by the scalar–vector form of the product of *Introduction to the General Plain Sesqualgebra*, §*The Scalar Part of the Multiplication*. At $\tilde Q_1=\tilde Q_2$ the sum is $\sum_\mu\lvert Q_{2,\mu}\rvert^{2}$, a sum of modulus squares; it is nonnegative, and it vanishes only when every coordinate vanishes.
 
 **Remark.** The display is the reason the square is non-vanishing: a nonzero square has a strictly positive scalar part, so it is not zero and its scalar part fixes a genuine sign. It is also the reason the general plain bilinear sum $\sum_\mu Q_\mu^{2}$ and the scalar part of the square are not the same function: the first is a general plain bilinear sum, the second a sum of modulus squares, and they agree exactly on the real subspace.
 
@@ -175,7 +175,7 @@ so the preorder $\tilde Q_2\preceq\tilde Q_3$ defined by $\tilde Q_3-\tilde Q_2\
 
 **Proof.** Take the additive map $f=\mathrm{Re}\circ\mathrm{Sc}:\mathbb{B}\to\mathbb{R}$, which is additive because the scalar part is additive and the real part is additive. On a square, $f(\tilde Q\star\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ by §*The Square of an Element*, which is a nonnegative real number and is strictly positive for $\tilde Q\neq0$. The sufficient criterion for properness of *Hermitian Squares and the Algebraic Positive Cone*, §*The Order*, therefore applies with $K=\mathbb{R}$, and gives $C(\mathbb{B})\cap(-C(\mathbb{B}))=\{0\}$ and $f(\tilde Q_4)>0$ for every nonzero $\tilde Q_4\in C(\mathbb{B})$. The preorder is a partial order by the same article.
 
-**Remark.** Properness is the point at which the biquaternion cone differs from the cones of the two bilinear products: for the products $\tilde P\tilde Q$ and $\tilde P^{\natural}\tilde Q$ the involution is trivial on the scalars and the cone of the squares is not proper, by the non-proper examples of *Hermitian Squares and the Algebraic Positive Cone*. The conjugation in the involution is exactly what makes the square a sum of modulus squares and the cone proper, and the next section reads the criterion in the coordinates.
+**Remark.** Properness is the point at which the biquaternion cone differs from the cones of the two bilinear products: for the products $\tilde Q_1\tilde Q_2$ and $\tilde Q_1^{\natural}\tilde Q_2$ the involution is trivial on the scalars and the cone of the squares is not proper, by the non-proper examples of *Hermitian Squares and the Algebraic Positive Cone*. The conjugation in the involution is exactly what makes the square a sum of modulus squares and the cone proper, and the next section reads the criterion in the coordinates.
 
 **Remark (the sign of a positive element).** The map $f=\mathrm{Re}\circ\mathrm{Sc}$ is the strict positive functional that the criterion supplies, and it is the only scalar datum used. It is not an isomorphism-invariant of the cone alone, but the properness it proves is a property of the cone, so the choice does not enter the conclusion.
 
@@ -254,7 +254,7 @@ $$
 \mathrm{tr}\bigl(\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}\bigr)=\sum_{i,j=1}^{2}\lvert X_{ij}\rvert^{2}=2\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2} .
 $$
 
-**Proof.** The first identity is the multiplicativity of $\mathsf{M}_2$ on the sesquilinear product, $\mathsf{M}_2(\tilde P\star\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$, together with $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$. The trace identity is $\sum_{i,j}\lvert X_{ij}\rvert^{2}$ for the matrix $\mathsf{M}_2(\tilde Q)$, and the comparison with the scalar part is the factor two from $\mathrm{tr}(I)=2$ and the identity $\mathrm{tr}(\mathsf{M}_2(\tilde Q))=2Q_t$ of *Biquaternion $2\times2$ Matrix Element Representation* together with the fact that the modulus is computed on the four coordinates.
+**Proof.** The first identity is the multiplicativity of $\mathsf{M}_2$ on the sesquilinear product, $\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}$, together with $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$. The trace identity is $\sum_{i,j}\lvert X_{ij}\rvert^{2}$ for the matrix $\mathsf{M}_2(\tilde Q)$, and the comparison with the scalar part is the factor two from $\mathrm{tr}(I)=2$ and the identity $\mathrm{tr}(\mathsf{M}_2(\tilde Q))=2Q_t$ of *Biquaternion $2\times2$ Matrix Element Representation* together with the fact that the modulus is computed on the four coordinates.
 
 **Remark.** The trace is the matrix reading of the map $\mathrm{Sc}$, and the factor $2$ is the only difference between the two. The properness of the cone is therefore the properness of the cone of the Hermitian squares of $M_2(\mathbb{C})$, which is the standard proper cone of the matrix algebra.
 
@@ -266,10 +266,10 @@ The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q
 
 | symbol | meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the sesquilinear multiplication |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the sesquilinear multiplication |
 | $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ | the square of the multiplication |
 | $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ | the natural square |
-| $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu P_\mu\overline{Q_\mu}$ | the scalar part of the product |
+| $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the scalar part of the product |
 | $\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the scalar part of the square, nonnegative real |
 | $C(\mathbb{B})=\{\sum_i\tilde Q_i\star\tilde Q_i\}$ | the cone of squares |
 | $Q(\mathbb{C})=\mathbb{R}_{\ge0}$ | the square semiring of the base |

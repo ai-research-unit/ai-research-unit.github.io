@@ -38,7 +38,7 @@ $$
 In the framework the worldline is the material-sector curve
 
 $$
-\tilde{Q}(t) = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z, \qquad (x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z) = x(t)\,\vec e_x + y(t)\,\vec e_y + z(t)\,\vec e_z ,
+\tilde{R}(t) = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z, \qquad (x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z) = x(t)\,\vec e_x + y(t)\,\vec e_y + z(t)\,\vec e_z ,
 $$
 
 and the equation of motion is a statement about its vector part alone. The scalar direction $ie_t$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.
@@ -244,7 +244,7 @@ A genuinely two-oscillator structure would require two independent complex ampli
 
 ## Summary
 
-The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{Q} = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z$ with $d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt^2 = -\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
+The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{R} = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z$ with $d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt^2 = -\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
 
 The complex amplitude $a = x + ip/(m\omega)$ embeds in the algebra as the central element
 
@@ -276,7 +276,7 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$ | Centre; the phase plane of the oscillator |
 | $\mathbb{M}_+ \cap \mathbb{C}_{\mathbb{B}} = e_t\mathbb{R}$ | Real axis of the phase plane (position quadrature) |
 | $\mathbb{M}_- \cap \mathbb{C}_{\mathbb{B}} = ie_t\mathbb{R}$ | Imaginary axis of the phase plane (momentum quadrature) |
-| $\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Worldline, in $\mathbb{M}_-$ |
+| $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Worldline, in $\mathbb{M}_-$ |
 | $\omega$, $k = m\omega^2$ | Angular frequency; spring constant |
 | $\vec F = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Restoring force, real vector in $\mathbb{M}_-$; central, $[\vec F,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z]=0$ |
 | $x$, $p$, $\varpi = p/(m\omega)$ | Displacement, momentum, normalized momentum |
@@ -290,9 +290,9 @@ positive definite and bounded below, whereas the biquaternion norm $\langle\tild
 | $\langle\tilde{A}\rangle_{\natural} = a^2e_t$ | Biquaternion norm (indefinite) |
 | $J = i|_{\mathbb{C}_{\mathbb{B}}}$ | Complex structure of the phase plane; swaps the two sectors |
 | $\{x, p\} = 1$ | Poisson bracket; bracket conventions of the companion article |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

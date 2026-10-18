@@ -482,7 +482,7 @@ All of this is standard finite-dimensional algebra, expressed in the conventions
 | $\mathrm{Tr}_2(P_\epsilon)=\mathrm{Tr}_1(P_\epsilon)=\tfrac12 e_t$ | Maximally mixed reduced state |
 | $T_{\nu\nu}=-\epsilon_\nu$ | Diagonal correlation matrix entry |
 | $e_t\mapsto I_2,\ \vec e_\mu\mapsto-i\sigma_\mu$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

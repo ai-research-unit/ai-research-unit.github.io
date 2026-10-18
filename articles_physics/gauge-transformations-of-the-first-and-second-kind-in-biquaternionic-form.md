@@ -188,7 +188,7 @@ Tanişli's EPL paper writes the source-free Maxwell equations as $\nabla F=0$ wi
 | $(1+\alpha)$ | Infinitesimal parameter, named "of the first kind" | Phase of the duality rotation, of the second kind when $\alpha=\alpha(x,t)$ |
 | $u$ | $\tfrac12(\vec E^2+\vec B^2)$ | Energy density $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ |
 | $\vec S=\vec E\times\vec B$ | Poynting vector | $\vec S=\vec E\times\vec H$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

@@ -347,7 +347,7 @@ $$
 \det \mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2 ,
 $$
 
-the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, read on the material four-position of the companion article, $\tilde{Q} = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$, that is $q'_t = ct$, $q_x = x$, $q_y = y$, $q_z = z$, giving $-(ct)^2 +x^2+y^2+z^2$. This is the most economical place to see why the material subspace is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.
+the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, read on the material four-position of the companion article, $\tilde{R} = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$, that is $q'_t = ct$, $q_x = x$, $q_y = y$, $q_z = z$, giving $-(ct)^2 +x^2+y^2+z^2$. This is the most economical place to see why the material subspace is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.
 
 ### How They Fit Together
 
@@ -545,9 +545,9 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin operators; the images $\tfrac{\hbar}{2}\mathsf{M}_2(i\vec e_k)$ are Hermitian |
 | $\rho = \tfrac12\big(\mathsf{M}_2(e_t) + r_k\mathsf{M}_2(i\vec e_k)\big)$ | Density matrix; Bloch vector $\vec r$, $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(i\vec e_k)\big)$ |
 | $\mathrm{SL}(2,\mathbb{C})$ | Image of the unit-norm biquaternions |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

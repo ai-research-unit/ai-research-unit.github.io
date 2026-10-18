@@ -61,7 +61,7 @@ $$
 with $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the real spatial vector and $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z$ its informational counterpart. Its two ends are the coordinates of the two sectors,
 
 $$
-\tilde Q = i c t\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad \tilde Q = c t'\, e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z),
+\tilde R = i c t\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad \tilde Q = c t'\, e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z),
 $$
 
 the **material coordinate**, with the temporal direction imaginary and the three spatial directions real, and the **informational coordinate**, with the temporal direction real and the three spatial directions imaginary. Read together with the complex coefficients, each $Q_\mu$ has three guises:

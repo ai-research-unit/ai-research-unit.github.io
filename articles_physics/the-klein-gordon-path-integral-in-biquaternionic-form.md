@@ -10,7 +10,7 @@ The biquaternion content of the Klein–Gordon path integral is a statement abou
 
 The article is organised as follows. The field configuration space and the action are set up first, and the equation of motion is derived from the action by variation. The generating functional is defined and the free Gaussian is evaluated, first on a finite lattice where it is an ordinary finite-dimensional integral and can be checked exactly, and then in the formal continuum limit. The stationary-phase expansion and the classical field are treated next. The Wick rotation and Euclidean functional are then discussed, with the positivity question. A closing section states the biquaternion interpretation, and open questions are recorded.
 
-Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$; $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$. The scalar field is $\tilde{\Phi}=\phi\,e_t$ with $\phi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.
+Throughout, the conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$; $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$; and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$. The scalar field is $\tilde{\Phi}=\phi\,e_t$ with $\phi$ complex, and the mass parameter is $\mu=mc/\hbar$. The analytic parts use natural units $\hbar=c=1$, as the companion articles do.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation, its mass-term sign, and the central scalar operator.
 - Companion article *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, for the free two-point function, the four contour prescriptions, and the Euclidean kernel.
@@ -26,7 +26,7 @@ Throughout, the conventions are those of the companion articles: $\mathbb{B}=\ma
 The field of the theory is a function on spacetime taking values in the centre,
 
 $$
-\tilde{\Phi}(\tilde{Q})=\phi(\tilde{Q})\,e_t,
+\tilde{\Phi}(\tilde{R})=\phi(\tilde{R})\,e_t,
 \qquad
 \phi:\mathbb{R}^{1,3}\to\mathbb{C},
 $$
@@ -220,7 +220,7 @@ so that the propagator is the inverse of the biquaternion norm shifted by the ma
 The oscillatory functional integral is converted into a decaying one by the Wick rotation, which the companion article *Interpretation of the Wick Rotation in the Biquaternion Universe* identifies with the passage from the material sector to the quaternion subspace: the imaginary time coefficient $ict$ is relabelled as the real coefficient $c\tau$, and a point of $\mathbb{M}_-$ becomes a point of $\mathbb{H}_{\mathbb{B}}$,
 
 $$
-\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\;\in\;\mathbb{M}_-
+\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\;\in\;\mathbb{M}_-
 \qquad\longmapsto\qquad
 \tilde{Q}_E=c\tau\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\;\in\;\mathbb{H}_{\mathbb{B}} .
 $$
@@ -308,7 +308,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, target of the Wick rotation |
-| $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate, $\in\mathbb{M}_-$ |
+| $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate, $\in\mathbb{M}_-$ |
 | $\tilde{Q}_E=c\tau\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Euclidean coordinate, $\in\mathbb{H}_{\mathbb{B}}$ |
 | $\tilde{\Phi}=\phi e_t$ | Scalar (spin-$0$) field, valued in the centre |
 | $\tilde P=i\omega/c\,e_t+\vec k$ | Material four-wavevector, $\in\mathbb{M}_-$ |

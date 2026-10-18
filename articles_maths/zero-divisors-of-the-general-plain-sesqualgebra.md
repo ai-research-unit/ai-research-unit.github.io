@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The general plain sesqualgebra is the operation $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ on the
+The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the
 biquaternion space (*Introduction to the General Plain Sesqualgebra*). This
 article studies its **zero divisors**: the nonzero elements that annihilate a nonzero element.
 
 A zero divisor names a product, and the definition is relative; it is stated once for a general
 product in *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and is read here on the
 block. The criterion of the block is **one element**: because the involution ${}^{*}$ is a
-bijection of $\mathbb{B}$, the vanishing of $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$ is the
-vanishing of the plain product $\tilde Q\tilde Q_2^{*}$, and $\tilde Q_2^{*}$ ranges over all of
+bijection of $\mathbb{B}$, the vanishing of $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ is the
+vanishing of the plain product $\tilde Q_1\tilde Q_2^{*}$, and $\tilde Q_2^{*}$ ranges over all of
 $\mathbb{B}$ as $\tilde Q_2$ does, so the block's zero-divisor set is exactly the plain one, the
 nonzero elements of the zero-divisor cone $\{C(\tilde Q)=\sum_\mu Q_\mu^{2}=0\}$, which is also the
 common set of the four general products (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The **set** is
@@ -43,26 +43,26 @@ $Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q
 coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and
 the Hermitian conjugation is
 $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}-\overline{\vec Q}$. Juxtaposition is
-the **plain** product and $\star$ the block, $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The
+the **plain** product and $\star$ the block, $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. The
 **central square** is $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_t^{2}+(\vec Q,\vec Q)$ with
 $(\vec Q,\vec Q)=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and its vanishing set, the origin removed, is the
 common zero-divisor cone.
 
-**The results.** A nonzero biquaternion is a zero divisor of the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ exactly when its central square vanishes, $C(\tilde Q)=Q_t^{2}+(\vec Q,\vec Q)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_t=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_t\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_t+\tilde\Xi)$ are idempotents of the block.
+**The results.** A nonzero biquaternion is a zero divisor of the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ exactly when its central square vanishes, $C(\tilde Q_1)=Q_{1t}^{2}+(\vec Q_1,\vec Q_1)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_{1t}=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_{1t}\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_t+\tilde\Xi)$ are idempotents of the block.
 
 ## The Criterion
 
-**Theorem (the criterion of the block).** For nonzero $\tilde Q$, the following are equivalent:
+**Theorem (the criterion of the block).** For nonzero $\tilde Q_1$, the following are equivalent:
 
-1. $\tilde Q$ is a left zero divisor of $\star$: there is a nonzero $\tilde Q_2$ with
-$\tilde Q\star\tilde Q_2=0$; 2. $\tilde Q$ is a right zero divisor of $\star$: there is a nonzero
-$\tilde Q_2$ with $\tilde Q_2\star\tilde Q=0$; 3. $\tilde Q$ is a zero divisor of the plain product:
-there is a nonzero $\tilde Q_2$ with $\tilde Q\tilde Q_2=0$; 4. $C(\tilde Q)=0$.
+1. $\tilde Q_1$ is a left zero divisor of $\star$: there is a nonzero $\tilde Q_2$ with
+$\tilde Q_1\star\tilde Q_2=0$; 2. $\tilde Q_1$ is a right zero divisor of $\star$: there is a nonzero
+$\tilde Q_2$ with $\tilde Q_2\star\tilde Q_1=0$; 3. $\tilde Q_1$ is a zero divisor of the plain product:
+there is a nonzero $\tilde Q_2$ with $\tilde Q_1\tilde Q_2=0$; 4. $C(\tilde Q_1)=0$.
 
-*Proof.* The equation $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}=0$ is, because ${}^{*}$ is a
-bijection, the existence of a nonzero $\tilde Z=\tilde Q_2^{*}$ with $\tilde Q\tilde Z=0$, which is
-(3). The right equation is the same: $\tilde Q_2\star\tilde Q=\tilde Q_2\tilde Q^{*}=0$, and applying
-${}^{*}$ gives $\tilde Q\tilde Q_2^{*}=0$ again, which is (1). The equivalence of (3) and (4) is the
+*Proof.* The equation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}=0$ is, because ${}^{*}$ is a
+bijection, the existence of a nonzero $\tilde Q_2^{*}$ with $\tilde Q_1\tilde Q_2^{*}=0$, which is
+(3). The right equation is the same: $\tilde Q_2\star\tilde Q_1=\tilde Q_2\tilde Q_1^{*}=0$, and applying
+${}^{*}$ gives $\tilde Q_1\tilde Q_2^{*}=0$ again, which is (1). The equivalence of (3) and (4) is the
 invertibility criterion of the parent algebra, reproduced in *Zero Divisors of the General Plain
 Algebra*: $\tilde Q$ is a zero divisor of the plain product exactly when $C(\tilde Q)=0$.
 
@@ -83,8 +83,8 @@ hence of complex dimension three, and it is the common set by *Zero Divisors in 
 
 **Remark (the criterion of the block is one element, like the parent's).** Unlike the symmetric
 plain sesqualgebra, whose criterion is a bilinear equation in the element and its partner, the
-block's criterion is a single quadratic equation $C(\tilde Q)=0$ in the element alone, and the
-reason is that its annihilation equation $\tilde Q\tilde Q_2^{*}=0$ still has the element alone on
+block's criterion is a single quadratic equation $C(\tilde Q_1)=0$ in the element alone, and the
+reason is that its annihilation equation $\tilde Q_1\tilde Q_2^{*}=0$ still has the element alone on
 the left. The block changes the square and not the shape of the criterion, and its zero divisors
 are a cone.
 
@@ -163,7 +163,7 @@ a zero divisor, of the non-pure family. The unit $e_t$ is not a zero divisor, $c
 | sides | left and right, generally distinct sets of partners | left and right, with the same annihilator |
 | pure family | $Q_t=0$, isotropic, the nonzero nilpotents of index two | $Q_t=0$, isotropic, the nonzero nilpotents of index three |
 | non-pure family | $Q_t\neq0$, multiples of idempotents, not nilpotent | the same; those that are block-idempotent are the Hermitian ones |
-| annihilator of a zero divisor | the plain annihilator $\langle\tilde Q\rangle_{\natural*}=\{\tilde Q_1:\tilde Q\tilde Q_1=0\}$, of dimension two; the two sides are generally different | the same space carried through the involution, of dimension two, equal on the two sides |
+| annihilator of a zero divisor | the plain annihilator $\langle\tilde Q_1\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1\tilde Q_2=0\}$, of dimension two; the two sides are generally different | the same space carried through the involution, of dimension two, equal on the two sides |
 
 The block's set is the common set of the four general products, and the coincidence is a theorem of
 the space and not a property of the block (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). What the block adds
@@ -176,14 +176,14 @@ nilpotency is the visible consequence.
 ## Summary
 
 The zero divisors of the general plain sesqualgebra are decided by one equation in the element
-alone, and the equation is the parent's: because $\tilde P\star\tilde Q_2=\tilde P\tilde Q_2^{*}$ and
+alone, and the equation is the parent's: because $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ and
 ${}^{*}$ is a bijection, an element is a zero divisor of the block exactly when it is a zero
 divisor of the plain product, that is exactly when its central square vanishes,
 $C(\tilde Q)=Q_t^{2}+(\vec Q,\vec Q)=0$ with $\tilde Q\neq0$. The **set** is the nonzero
 zero-divisor cone, of complex dimension three, which is the common set of the four general
 products, and every member is **two-sided**. The **annihilators** are equal on the two sides and
 are the image under the involution of the plain annihilator
-$\langle\tilde Q\rangle_{\natural*}=\{\tilde Q_1:\tilde Q\tilde Q_1=0\}$, a **complex plane of dimension two** for every
+$\langle\tilde Q_1\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1\tilde Q_2=0\}$, a **complex plane of dimension two** for every
 nonzero zero divisor and the origin otherwise; the two-sided annihilator is $\{0\}$. The **two
 families** of the parent are inherited as a partition of the elements, since the partition is read
 on the scalar coordinate: the pure family has $Q_t=0$ and isotropic vector part, and the non-pure
@@ -199,12 +199,12 @@ annihilators, and changes the index.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the product of the block |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the product of the block |
 | $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_t^{2}+(\vec Q,\vec Q)$ | the central square |
 | $\mathcal{Z}_\star=\{\tilde Q\neq0:C(\tilde Q)=0\}$ | the zero-divisor set, the nonzero cone |
-| $\tilde Q\star\tilde Q_2=0\Leftrightarrow\tilde Q\tilde Q_2^{*}=0$ | the annihilation equation |
+| $\tilde Q_1\star\tilde Q_2=0\Leftrightarrow\tilde Q_1\tilde Q_2^{*}=0$ | the annihilation equation |
 | $A_\star(\tilde Q)$, $B_\star(\tilde Q)$ | the left and the right annihilators, equal |
-| $\langle\tilde Q\rangle_{\natural*}^{*}$, $\langle\tilde Q\rangle_{\natural*}=\{\tilde Q_1:\tilde Q\tilde Q_1=0\}$ | the common annihilator, the plain annihilator carried through the involution |
+| $\langle\tilde Q_1\rangle_{\natural*}^{*}$, $\langle\tilde Q_1\rangle_{\natural*}=\{\tilde Q_2:\tilde Q_1\tilde Q_2=0\}$ | the common annihilator, the plain annihilator carried through the involution |
 | $Q_t=0$ | the pure family, isotropic: the nilpotents of the block, index three |
 | $Q_t\neq0$ | the non-pure family, multiples of the idempotents, not nilpotent |
 | $\tfrac12(e_t+\tilde\Xi)$ | the Hermitian idempotents, zero divisors and block idempotents |

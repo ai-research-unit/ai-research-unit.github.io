@@ -5,14 +5,14 @@
 The central value $+1$ and the idempotents are the two faces of one subject in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$: a **root of one** is an element $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = e_t$, an **idempotent** is an element $\tilde\Pi$ with $\tilde\Pi\star\tilde\Pi = \tilde\Pi$, and both are read from the square of the same multiplication, the **general quaternionic sesquilinear product**
 
 $$
-\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
+\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
-whose rule, scalar–vector form and table are *Introduction to the General Quaternionic Sesqualgebra*, and whose place among the four general products is *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. A root of a central value and an idempotent are notions of a **product** and not of an algebra: the root of $\lambda$ is defined for a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* §6, and the idempotent there as well. The article treats the roots of one first and the idempotents after, and it reads both from the square identity $\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural}$ of *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*.
+whose rule, scalar–vector form and table are *Introduction to the General Quaternionic Sesqualgebra*, and whose place among the four general products is *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. A root of a central value and an idempotent are notions of a **product** and not of an algebra: the root of $\lambda$ is defined for a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* §6, and the idempotent there as well. The article treats the roots of one first and the idempotents after, and it reads both from the square identity $\tilde Q_2\star\tilde Q_2 = (\overline{\tilde Q}_2\tilde Q_2)^{\natural}$ of *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*.
 
 **What the article does not do.** The roots of the central value $0$ and the nilpotents are *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*; the roots of a **general** element are *Square Roots of a General Element in the General Quaternionic Sesqualgebra*, and the central value is the special case of that problem. The roots of $-1$ are **not** a subject of this article; they are quoted in one short paragraph at the end of §*The Roots of One*, they are used by no other passage, and the idempotent part rests on the roots of $+1$ alone. The zero divisors are *Zero Divisors of the General Quaternionic Sesqualgebra*, the criterion of invertibility of the plain algebra that the article uses is *Norm and Invertibility in the General Quaternionic Sesqualgebra*, and the four idempotent sets of the four general products are compared in *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x \vec e_y = \vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q = Q_te_t+\vec Q$ with $\vec Q = \sum_{\mu\in\{x,y,z\}}Q_\mu\vec e_\mu$; $Q_t$ is the scalar part and $\vec Q$ the vector part. The natural conjugation is $\tilde Q^{\natural} = Q_t-\vec Q$, the star is $\tilde Q^{*} = \overline{\tilde Q^{\natural}} = \overline{Q_t}-\overline{\vec Q}$, and the Hermitian conjugation is $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The **central square** is $C(\tilde Q) = \sum_\mu Q_\mu^2$, with $C(\tilde Q)e_t = \tilde Q\tilde Q^{\natural}$. The product throughout is the **general quaternionic sesquilinear product** $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, the fourth of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second: the two **slot involutions** are ${}^{\natural}$ and ${}^{*}$. The juxtaposition $\tilde P\tilde Q$ is the general plain bilinear product, the multiplication of the algebra. The dot and cross products of vector parts are the general plain bilinear ones, and $\vec u$ denotes a real unit vector, $\sum_{\mu\in\{x,y,z\}}u_\mu^2 = 1$. A **root of the central value $\lambda$** is a nonzero $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_t$, and a **root of one** is a root of $+1$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x \vec e_y = \vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q_2 = Q_{2t}e_t+\vec Q_2$ with $\vec Q_2 = \sum_{\mu\in\{x,y,z\}}Q_{2,\mu}\vec e_\mu$; $Q_{2t}$ is the scalar part and $\vec Q_2$ the vector part. The natural conjugation is $\tilde Q_2^{\natural} = Q_{2t}-\vec Q_2$, the star is $\tilde Q_2^{*} = \overline{\tilde Q_2^{\natural}} = \overline{Q_{2t}}-\overline{\vec Q_2}$, and the Hermitian conjugation is $\overline{\tilde Q}_2 = \tilde Q_2^{\natural*} = \tilde Q_2^{*\natural}$. The **central square** is $C(\tilde Q_2) = \sum_\mu Q_{2,\mu}^2$, with $C(\tilde Q_2)e_t = \tilde Q_2\tilde Q_2^{\natural}$. The product throughout is the **general quaternionic sesquilinear product** $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$, the fourth of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second: the two **slot involutions** are ${}^{\natural}$ and ${}^{*}$. The juxtaposition $\tilde Q_1\tilde Q_2$ is the general plain bilinear product, the multiplication of the algebra. The dot and cross products of vector parts are the general plain bilinear ones, and $\vec u$ denotes a real unit vector, $\sum_{\mu\in\{x,y,z\}}u_\mu^2 = 1$. A **root of the central value $\lambda$** is a nonzero $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_t$, and a **root of one** is a root of $+1$.
 
 **The results.** In the general quaternionic sesquilinear product the square reduces to $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$, so a root of $\lambda$ exists only for real $\lambda$, and for real $\lambda$ the nonzero roots are the family $\tilde\Xi = c(\vec u+it)$ with $(t^2-1)\lvert c\rvert^2 = \lambda$, of real dimension four, together with the central circle $\lvert a\rvert^2 = \lambda$ when $\lambda>0$. The value $+1$ takes the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^2 = 1/(t^2-1)$, beside the central circle, and contains $e_t$ and $i$; every root of one is a unit of the plain algebra. The idempotents are exactly the two trivial elements $0$ and $e_t$ together with the two-parameter family $\tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ over the real vectors $\vec u$ with $(\vec u,\vec u)=1$; every nontrivial idempotent has central square $1$, so it is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u$, and it lies outside the Hermitian subspace, being neither Hermitian nor skew-Hermitian. The four general products carry four different idempotent sets, and only this one has nontrivial idempotents that are units of the plain algebra; the idempotents of the sibling sesquilinear product are isotropic here, each of them square-zero. Each section below states its result first and then proves it.
 
@@ -88,24 +88,24 @@ a real four-dimensional family beside the circle; the elements $e_t$ and $i$ are
 
 ## The Idempotent Equation
 
-**An element $\tilde\Pi$ is idempotent exactly when $\overline{\tilde\Pi}\tilde\Pi = \tilde\Pi^{\natural}$, equivalently when the coordinates satisfy $Q_t\in\mathbb{R}$, $Q_t = \lvert Q_t\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvert Q_\mu\rvert^{2}$, $(2Q_t+1)\vec a = 0$ and $\vec a\times\vec b = -\tfrac12\vec b$ for $\vec Q = \vec a+i\vec b$.**
+**An element $\tilde\Pi$ is idempotent exactly when $\overline{\tilde\Pi}\tilde\Pi = \tilde\Pi^{\natural}$, equivalently when the coordinates satisfy $Q_{2t}\in\mathbb{R}$, $Q_{2t} = \lvert Q_{2t}\rvert^{2}-\sum_{\mu\in\{x,y,z\}}\lvert Q_{2,\mu}\rvert^{2}$, $(2Q_{2t}+1)\vec a = 0$ and $\vec a\times\vec b = -\tfrac12\vec b$ for $\vec Q_2 = \vec a+i\vec b$.**
 
 ### The Criterion
 
 **Definition.** An element $\tilde\Pi$ is **idempotent** for the multiplication when $\tilde\Pi \star \tilde\Pi = \tilde\Pi$.
 
-**Proposition (the criterion).** An element $\tilde Q$ is idempotent if and only if
+**Proposition (the criterion).** An element $\tilde Q_2$ is idempotent if and only if
 
 $$
-\overline{\tilde Q}\,\tilde Q = \tilde Q^{\natural} .
+\overline{\tilde Q}_2\,\tilde Q_2 = \tilde Q_2^{\natural} .
 $$
 
-**Proof.** The equation $\tilde Q \star \tilde Q = \tilde Q$ reads $\tilde Q^{\natural}\tilde Q^{*} = \tilde Q$. The map ${}^{\natural}$ is an involution and an anti-automorphism of the plain product, and $(\tilde Q^{*})^{\natural} = \overline{\tilde Q}$ because the two conjugations commute and ${}^{*} = \overline{\cdot} \circ {}^{\natural}$. Applying ${}^{\natural}$ to the equation therefore gives
+**Proof.** The equation $\tilde Q_2 \star \tilde Q_2 = \tilde Q_2$ reads $\tilde Q_2^{\natural}\tilde Q_2^{*} = \tilde Q_2$. The map ${}^{\natural}$ is an involution and an anti-automorphism of the plain product, and $(\tilde Q_2^{*})^{\natural} = \overline{\tilde Q}_2$ because the two conjugations commute and ${}^{*} = \overline{\cdot} \circ {}^{\natural}$. Applying ${}^{\natural}$ to the equation therefore gives
 
 $$
-\bigl(\tilde Q^{\natural}\tilde Q^{*}\bigr)^{\natural}
-= (\tilde Q^{*})^{\natural}\,(\tilde Q^{\natural})^{\natural}
-= \overline{\tilde Q}\,\tilde Q = \tilde Q^{\natural} ,
+\bigl(\tilde Q_2^{\natural}\tilde Q_2^{*}\bigr)^{\natural}
+= (\tilde Q_2^{*})^{\natural}\,(\tilde Q_2^{\natural})^{\natural}
+= \overline{\tilde Q}_2\,\tilde Q_2 = \tilde Q_2^{\natural} ,
 $$
 
 which is the criterion. Conversely, applying ${}^{\natural}$ to the criterion returns the original equation, so the two are equivalent.
@@ -114,25 +114,25 @@ The criterion is the form in which the equation is read on the coordinates, sinc
 
 ### The Equation on the Coordinates
 
-**Proposition (the coordinate equations).** Write $\tilde Q = Q_t + \vec Q$ with $\vec Q = \vec a + i\vec b$, where $\vec a$ and $\vec b$ are vectors with real coefficients. Then $\tilde Q$ is idempotent if and only if
+**Proposition (the coordinate equations).** Write $\tilde Q_2 = Q_{2t} + \vec Q_2$ with $\vec Q_2 = \vec a + i\vec b$, where $\vec a$ and $\vec b$ are vectors with real coefficients. Then $\tilde Q_2$ is idempotent if and only if
 
 $$
-Q_t \in \mathbb{R} , \qquad Q_t = \lvert Q_t\rvert^{2} - \sum_{\mu\in\{x,y,z\}}\lvert Q_\mu\rvert^{2} , \qquad (2Q_t + 1)\vec a = 0 , \qquad \vec a \times \vec b = -\tfrac12 \vec b .
+Q_{2t} \in \mathbb{R} , \qquad Q_{2t} = \lvert Q_{2t}\rvert^{2} - \sum_{\mu\in\{x,y,z\}}\lvert Q_{2,\mu}\rvert^{2} , \qquad (2Q_{2t} + 1)\vec a = 0 , \qquad \vec a \times \vec b = -\tfrac12 \vec b .
 $$
 
-**Proof.** The left-hand side of the criterion is the plain product of $\overline{\tilde Q} = \overline{Q_t} + \overline{\vec Q}$ and $\tilde Q = Q_t + \vec Q$, whose scalar–vector form is that of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*,
+**Proof.** The left-hand side of the criterion is the plain product of $\overline{\tilde Q}_2 = \overline{Q_{2t}} + \overline{\vec Q_2}$ and $\tilde Q_2 = Q_{2t} + \vec Q_2$, whose scalar–vector form is that of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*,
 
 $$
-\overline{\tilde Q}\,\tilde Q = \overline{Q_t}Q_t - (\overline{\vec Q},\vec Q) + \overline{Q_t}\vec Q + Q_t\overline{\vec Q} + \overline{\vec Q}\times\vec Q ,
+\overline{\tilde Q}_2\,\tilde Q_2 = \overline{Q_{2t}}Q_{2t} - (\overline{\vec Q_2},\vec Q_2) + \overline{Q_{2t}}\vec Q_2 + Q_{2t}\overline{\vec Q_2} + \overline{\vec Q_2}\times\vec Q_2 ,
 $$
 
-the dot and cross products being the general plain bilinear ones. The right-hand side is $\tilde Q^{\natural} = Q_t - \vec Q$. Equating scalar parts gives $Q_t = \lvert Q_t\rvert^{2} - \sum_{k}\lvert Q_\mu\rvert^{2}$, which exhibits $Q_t$ as the difference of two real numbers and hence real; writing $Q_t = u \in \mathbb{R}$ and $\vec Q = \vec a + i\vec b$, the same equation is the second displayed relation. Equating vector parts gives $\overline{Q_t}\vec Q + Q_t\overline{\vec Q} + \overline{\vec Q}\times\vec Q = -\vec Q$, that is
+the dot and cross products being the general plain bilinear ones. The right-hand side is $\tilde Q_2^{\natural} = Q_{2t} - \vec Q_2$. Equating scalar parts gives $Q_{2t} = \lvert Q_{2t}\rvert^{2} - \sum_{k}\lvert Q_{2,\mu}\rvert^{2}$, which exhibits $Q_{2t}$ as the difference of two real numbers and hence real; writing $Q_{2t} = u \in \mathbb{R}$ and $\vec Q_2 = \vec a + i\vec b$, the same equation is the second displayed relation. Equating vector parts gives $\overline{Q_{2t}}\vec Q_2 + Q_{2t}\overline{\vec Q_2} + \overline{\vec Q_2}\times\vec Q_2 = -\vec Q_2$, that is
 
 $$
-u(\vec Q + \overline{\vec Q}) + \overline{\vec Q}\times\vec Q = -\vec Q ,
+u(\vec Q_2 + \overline{\vec Q_2}) + \overline{\vec Q_2}\times\vec Q_2 = -\vec Q_2 ,
 $$
 
-using $Q_t = u$ real. Now $\vec Q + \overline{\vec Q} = 2\vec a$ and $\overline{\vec Q}\times\vec Q = (\vec a - i\vec b)\times(\vec a + i\vec b) = 2i\,\vec a\times\vec b$, the two real cross terms cancelling and the two mixed terms doubling. Substituting and separating the real and the imaginary coefficients of the vector equation gives $2u\vec a = -\vec a$ and $2\vec a\times\vec b = -\vec b$, which are the last two displayed relations.
+using $Q_{2t} = u$ real. Now $\vec Q_2 + \overline{\vec Q_2} = 2\vec a$ and $\overline{\vec Q_2}\times\vec Q_2 = (\vec a - i\vec b)\times(\vec a + i\vec b) = 2i\,\vec a\times\vec b$, the two real cross terms cancelling and the two mixed terms doubling. Substituting and separating the real and the imaginary coefficients of the vector equation gives $2u\vec a = -\vec a$ and $2\vec a\times\vec b = -\vec b$, which are the last two displayed relations.
 
 The two vector relations are of different kinds: the first constrains $\vec a$ alone, the second couples $\vec a$ and $\vec b$ through the cross product.
 
@@ -144,7 +144,7 @@ The two vector relations are of different kinds: the first constrains $\vec a$ a
 
 **Proposition.** The elements $0$ and $e_t$ are idempotent, and they are the only idempotents with vanishing vector part.
 
-**Proof.** Directly, $0 \star 0 = 0$ and $e_t \star e_t = e_t^{\natural}e_t^{*} = e_t$. Conversely let $\tilde Q = Q_t e_t$ be a scalar element, so that $\vec a = \vec b = 0$. The coordinate equations reduce to $Q_t \in \mathbb{R}$ and $Q_t = Q_t^{2}$, whose solutions are $Q_t = 0$ and $Q_t = 1$.
+**Proof.** Directly, $0 \star 0 = 0$ and $e_t \star e_t = e_t^{\natural}e_t^{*} = e_t$. Conversely let $\tilde Q_2 = Q_{2t} e_t$ be a scalar element, so that $\vec a = \vec b = 0$. The coordinate equations reduce to $Q_{2t} \in \mathbb{R}$ and $Q_{2t} = Q_{2t}^{2}$, whose solutions are $Q_{2t} = 0$ and $Q_{2t} = 1$.
 
 ### The Family
 
@@ -154,13 +154,13 @@ $$
 0 , \qquad e_t , \qquad\text{and}\qquad \tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\vec u,\vec u)=1 .
 $$
 
-**Proof.** Let $\tilde Q$ be idempotent and write $\tilde Q = u + \vec a + i\vec b$ as above. The proof splits on whether the real vector $\vec a$ vanishes.
+**Proof.** Let $\tilde Q_2$ be idempotent and write $\tilde Q_2 = u + \vec a + i\vec b$ as above. The proof splits on whether the real vector $\vec a$ vanishes.
 
-Suppose first that $\vec a \neq 0$. The relation $(2u+1)\vec a = 0$ forces $u = -\tfrac12$. The relation $\vec a\times\vec b = -\tfrac12\vec b$ says that $\vec b$ lies in the kernel of the operator $\vec w\mapsto\vec a\times\vec w+\tfrac12\vec w$, that is, that $\vec b$ is a kernel vector of $L_{\vec a} + \tfrac12 I$ with $L_{\vec a}(\vec w) = \vec a\times\vec w$. The operator $L_{\vec a}$ is antisymmetric with respect to the real definite structure, since $(\vec a\times\vec w,\vec y) = -(\vec w,\vec a\times\vec y)$; an antisymmetric real operator has purely imaginary spectrum, together with the eigenvalue $0$, so $L_{\vec a} + \tfrac12 I$ has spectrum $\{ \tfrac12 \} \cup \{ \tfrac12 \pm i\lvert \vec a\rvert \}$, which does not contain $0$. Hence $L_{\vec a} + \tfrac12 I$ is invertible and $\vec b = 0$. The coordinate equation $u = u^{2} - \lvert\vec Q\rvert^{2}$ then gives $\lvert\vec Q\rvert^{2} = u^{2} - u = \tfrac14 + \tfrac12 = \tfrac34$, that is $(\vec Q,\vec Q) = \tfrac34$ for $\vec Q = \vec a$, so the idempotent is $\tilde\Pi(\vec u)$ with the real unit vector $\vec u = \tfrac{2}{\sqrt3}\vec Q$; this is the family.
+Suppose first that $\vec a \neq 0$. The relation $(2u+1)\vec a = 0$ forces $u = -\tfrac12$. The relation $\vec a\times\vec b = -\tfrac12\vec b$ says that $\vec b$ lies in the kernel of the operator $\vec w\mapsto\vec a\times\vec w+\tfrac12\vec w$, that is, that $\vec b$ is a kernel vector of $L_{\vec a} + \tfrac12 I$ with $L_{\vec a}(\vec w) = \vec a\times\vec w$. The operator $L_{\vec a}$ is antisymmetric with respect to the real definite structure, since $(\vec a\times\vec w,\vec y) = -(\vec w,\vec a\times\vec y)$; an antisymmetric real operator has purely imaginary spectrum, together with the eigenvalue $0$, so $L_{\vec a} + \tfrac12 I$ has spectrum $\{ \tfrac12 \} \cup \{ \tfrac12 \pm i\lvert \vec a\rvert \}$, which does not contain $0$. Hence $L_{\vec a} + \tfrac12 I$ is invertible and $\vec b = 0$. The coordinate equation $u = u^{2} - \lvert\vec Q_2\rvert^{2}$ then gives $\lvert\vec Q_2\rvert^{2} = u^{2} - u = \tfrac14 + \tfrac12 = \tfrac34$, that is $(\vec Q_2,\vec Q_2) = \tfrac34$ for $\vec Q_2 = \vec a$, so the idempotent is $\tilde\Pi(\vec u)$ with the real unit vector $\vec u = \tfrac{2}{\sqrt3}\vec Q_2$; this is the family.
 
-Suppose next that $\vec a = 0$. The relation $(2u+1)\vec a = 0$ is vacuous, and the relation $\vec a\times\vec b = -\tfrac12\vec b$ reads $\vec b = 0$. Then $\vec Q = 0$ and the coordinate equation gives $u = u^{2}$, that is $u = 0$ or $u = 1$. These are the two trivial idempotents.
+Suppose next that $\vec a = 0$. The relation $(2u+1)\vec a = 0$ is vacuous, and the relation $\vec a\times\vec b = -\tfrac12\vec b$ reads $\vec b = 0$. Then $\vec Q_2 = 0$ and the coordinate equation gives $u = u^{2}$, that is $u = 0$ or $u = 1$. These are the two trivial idempotents.
 
-**Remark.** The theorem classifies the idempotents of the whole algebra. The group article *Introduction to the General Quaternionic Sesqualgebra* states the classification on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real and the criterion reads $\tilde Q^{2} = \tilde Q^{\natural}$; the two statements agree, and every nontrivial idempotent lies in that subspace, since the family has real coordinates. No idempotent has a nonzero imaginary part of the scalar coordinate and none has a non-real component in the vector coordinates.
+**Remark.** The theorem classifies the idempotents of the whole algebra. The group article *Introduction to the General Quaternionic Sesqualgebra* states the classification on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real and the criterion reads $\tilde Q_2^{2} = \tilde Q_2^{\natural}$; the two statements agree, and every nontrivial idempotent lies in that subspace, since the family has real coordinates. No idempotent has a nonzero imaginary part of the scalar coordinate and none has a non-real component in the vector coordinates.
 
 ## The Idempotents and the Roots of One
 
@@ -204,11 +204,11 @@ $$
 
 and hence is a unit of the plain algebra, with inverse its own natural conjugate, $\tilde\Pi(\vec u)^{-1} = \tilde\Pi(\vec u)^{\natural} = -\tfrac12 e_t - \tfrac{\sqrt3}{2}\vec u$. The two trivial idempotents have central squares $C(0) = 0$ and $C(e_t) = 1$.
 
-**Proof.** The central square of $\tilde\Pi(\vec u)$ is $\lvert-\tfrac12\rvert^{2} + \tfrac34(\vec u,\vec u) = \tfrac14 + \tfrac34 = 1$. An element of central square $1$ is a unit of the plain algebra because $\tilde P\tilde P^{\natural} = C(\tilde P)e_t = e_t$, and $\tilde\Pi(\vec u)^{\natural} = -\tfrac12e_t - \tfrac{\sqrt3}{2}\vec u$ by the linearity of ${}^{\natural}$. The values for $0$ and $e_t$ are immediate.
+**Proof.** The central square of $\tilde\Pi(\vec u)$ is $\lvert-\tfrac12\rvert^{2} + \tfrac34(\vec u,\vec u) = \tfrac14 + \tfrac34 = 1$. An element of central square $1$ is a unit of the plain algebra because $\tilde Q_1\tilde Q_1^{\natural} = C(\tilde Q_1)e_t = e_t$, and $\tilde\Pi(\vec u)^{\natural} = -\tfrac12e_t - \tfrac{\sqrt3}{2}\vec u$ by the linearity of ${}^{\natural}$. The values for $0$ and $e_t$ are immediate.
 
 The proposition is the sharpest difference of this multiplication from its three companions. Among the four general products, only this one has a nontrivial idempotent, and the nontrivial idempotents of the other three are degenerate in a way the central square detects: they are zero divisors.
 
-**Remark (which unit, and which algebra).** The word **unit** in this section and in the summaries is the unit of the **plain algebra** $\tilde P\tilde Q$ and never the unit of the multiplication $\star$: the multiplication $\star$ has **no unit at all**, its two actions of $e_t$ being the star $\tilde Q\star e_t = \tilde Q^{\natural}$ and the natural conjugation $e_t\star\tilde Q = \tilde Q^{*}$ (*The Two One-Sided Actions and the Absence of a Unit*). The element $\tilde\Pi(\vec u)^{-1} = -\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u$ is the inverse of $\tilde\Pi(\vec u)$ in the plain algebra, $\tilde\Pi\tilde\Pi^{-1} = e_t$, and it is an inverse in no sense of the multiplication $\star$, which has no inverse because it has no unit. The corrected claim is therefore the one of *Norm and Invertibility in the General Quaternionic Sesqualgebra*: the nontrivial idempotents of the block are units of the plain algebra, and the block has no unit.
+**Remark (which unit, and which algebra).** The word **unit** in this section and in the summaries is the unit of the **plain algebra** $\tilde Q_1\tilde Q_2$ and never the unit of the multiplication $\star$: the multiplication $\star$ has **no unit at all**, its two actions of $e_t$ being the star $\tilde Q_2\star e_t = \tilde Q_2^{\natural}$ and the natural conjugation $e_t\star\tilde Q_2 = \tilde Q_2^{*}$ (*The Two One-Sided Actions and the Absence of a Unit*). The element $\tilde\Pi(\vec u)^{-1} = -\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u$ is the inverse of $\tilde\Pi(\vec u)$ in the plain algebra, $\tilde\Pi\tilde\Pi^{-1} = e_t$, and it is an inverse in no sense of the multiplication $\star$, which has no inverse because it has no unit. The corrected claim is therefore the one of *Norm and Invertibility in the General Quaternionic Sesqualgebra*: the nontrivial idempotents of the block are units of the plain algebra, and the block has no unit.
 
 ## The Idempotents of the Other Multiplications
 
@@ -216,7 +216,7 @@ The proposition is the sharpest difference of this multiplication from its three
 
 ### The Idempotents of the Plain Product
 
-The idempotents of the plain product $\tilde P\tilde Q$ are the idempotents of the algebra, classified in *Idempotents of the General Plain Algebra*: the elements $\tfrac12(e_t + \tilde\Xi)$ with $\tilde\Xi$ a **root of one of the plain algebra**, $\tilde\Xi\tilde\Xi = e_t$, with the two trivial idempotents at the two trivial roots $\tilde\Xi = \pm e_t$. They fall into the Hermitian family, where $\tilde\Xi=i\vec u$ with $\vec u$ a real unit vector, and the non-Hermitian family, where it is not.
+The idempotents of the plain product $\tilde Q_1\tilde Q_2$ are the idempotents of the algebra, classified in *Idempotents of the General Plain Algebra*: the elements $\tfrac12(e_t + \tilde\Xi)$ with $\tilde\Xi$ a **root of one of the plain algebra**, $\tilde\Xi\tilde\Xi = e_t$, with the two trivial idempotents at the two trivial roots $\tilde\Xi = \pm e_t$. They fall into the Hermitian family, where $\tilde\Xi=i\vec u$ with $\vec u$ a real unit vector, and the non-Hermitian family, where it is not.
 
 **Proposition.** Every nontrivial idempotent of the plain product is a zero divisor and is not a unit.
 
@@ -233,7 +233,7 @@ since $C(\tilde\Xi) = \xi_t^{2}+(\vec v,\vec v) = -1$, and $\tilde\Xi+\tilde\Xi^
 
 ### The Idempotents of the Sibling Sesquilinear Product
 
-The sibling general plain sesquilinear product $\tilde P\tilde Q^{*}$ is the derived operation of the algebra with its star conjugation (*Introduction to the General Plain Sesqualgebra*). Its idempotents are exactly the Hermitian idempotents of the algebra,
+The sibling general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ is the derived operation of the algebra with its star conjugation (*Introduction to the General Plain Sesqualgebra*). Its idempotents are exactly the Hermitian idempotents of the algebra,
 
 $$
 \tilde\Pi_+(\tilde\Xi) = \tfrac12\bigl(e_t + \tilde\Xi\bigr) , \qquad \vec u \in \mathbb{R}^{3} , \quad \lvert\vec u\rvert = 1 ,
@@ -253,13 +253,13 @@ $$
 
 ### The Idempotents of the Sibling Bilinear Product
 
-The sibling general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ has the two trivial idempotents alone,
+The sibling general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ has the two trivial idempotents alone,
 
 $$
-\tilde Q \star \tilde Q = \tilde Q \iff \tilde Q = 0 \ \text{or}\ \tilde Q = e_t ,
+\tilde Q_2 \star \tilde Q_2 = \tilde Q_2 \iff \tilde Q_2 = 0 \ \text{or}\ \tilde Q_2 = e_t ,
 $$
 
-because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ (*Introduction to the General Quaternionic Algebra* §*The Square and the Elements It Distinguishes*). This is the smallest idempotent set of the four, and it is the one that agrees with the second row of the comparison table.
+because its square is the central scalar $\bigl(\sum_\mu Q_{2,\mu}^{2}\bigr)e_t$ (*Introduction to the General Quaternionic Algebra* §*The Square and the Elements It Distinguishes*). This is the smallest idempotent set of the four, and it is the one that agrees with the second row of the comparison table.
 
 ### The Comparison
 
@@ -267,10 +267,10 @@ because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ (*I
 
 | product | idempotents | nontrivial idempotents are |
 |---|---|---|
-| $\tilde P\tilde Q$ | $0$, $e_t$, and $\tfrac12(e_t + \tilde\Xi)$ for a root of one $\tilde\Xi$ of the plain algebra | zero divisors |
-| $\tilde P^{\natural}\tilde Q$ | $0$ and $e_t$ | none |
-| $\tilde P\tilde Q^{*}$ | $0$, $e_t$, and the Hermitian idempotents $\tfrac12(e_t + \tilde\Xi)$ | zero divisors |
-| $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_t$, and the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ | units of the plain algebra, of central square $1$ |
+| $\tilde Q_1\tilde Q_2$ | $0$, $e_t$, and $\tfrac12(e_t + \tilde\Xi)$ for a root of one $\tilde\Xi$ of the plain algebra | zero divisors |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $0$ and $e_t$ | none |
+| $\tilde Q_1\tilde Q_2^{*}$ | $0$, $e_t$, and the Hermitian idempotents $\tfrac12(e_t + \tilde\Xi)$ | zero divisors |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $0$, $e_t$, and the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ | units of the plain algebra, of central square $1$ |
 
 **Proof.** The four rows are the propositions above and the statement of the classification theorem; the last column is the central-square computation for each family, $C = 0$ for the nontrivial idempotents of the plain and of the sibling sesquilinear product and $C = 1$ for the family. The table is the idempotent row of *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*, read with the central square attached to each entry.
 
@@ -344,11 +344,11 @@ for $\vec u \neq 0$, and it is not skew-Hermitian either.
 
 ## Summary
 
-The roots of $+1$ and the idempotents of the general quaternionic sesquilinear product $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ are read from the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$, whose scalar part is the Krein form $\sum_\mu\varepsilon_\mu\lvert \Xi_\mu\rvert^2$ with $\varepsilon = (1,-1,-1,-1)$.
+The roots of $+1$ and the idempotents of the general quaternionic sesquilinear product $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ are read from the identity $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$, whose scalar part is the Krein form $\sum_\mu\varepsilon_\mu\lvert \Xi_\mu\rvert^2$ with $\varepsilon = (1,-1,-1,-1)$.
 
 A root of the central value $\lambda$ exists only for real $\lambda$, and for real $\lambda$ the nonzero roots are the family $\tilde\Xi = c(\vec u+it)$ with $(t^2-1)\lvert c\rvert^2 = \lambda$, of real dimension four, together with the central circle $\lvert a\rvert^2 = \lambda$ when $\lambda>0$. The value $+1$ takes the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^2 = 1/(t^2-1)$, beside the central circle, and contains $e_t$ and $i$; the central square of a root is $C(\tilde\Xi) = c^{2}(1-t^{2})$, so every root of one is a unit of the plain algebra. The roots of $-1$ are the negative sign of the same formula: $\lvert t\rvert<1$ with $\lvert c\rvert^2 = 1/(1-t^2)$, they contain $\vec e_x,\vec e_y,\vec e_z$, they are non-empty, and they are not obtained by multiplying the roots of one by the central imaginary. The three central classes are **not** the plain classes of the same name: in the plain algebra the roots of $-1$ are the imaginary units, the roots of $+1$ the involutions that halve to the idempotents, and the roots of $0$ the pure isotropic cone, while here the roots of $0$ are the non-pure family and the roots of $+1$ are not the idempotent parameters; the comparison is the row of *Comparison Between the Four General Products*.
 
-The idempotents are the solutions of $\overline{\tilde Q}\tilde Q = \tilde Q^{\natural}$, equivalently of the four coordinate equations $Q_t = u \in \mathbb{R}$, $u = u^{2} - \lvert\vec Q\rvert^{2}$, $(2u+1)\vec a = 0$ and $\vec a\times\vec b = -\tfrac12\vec b$ for $\vec Q = \vec a + i\vec b$. Their list is the two trivial idempotents $0$ and $e_t$ together with the family
+The idempotents are the solutions of $\overline{\tilde Q}_2\tilde Q_2 = \tilde Q_2^{\natural}$, equivalently of the four coordinate equations $Q_{2t} = u \in \mathbb{R}$, $u = u^{2} - \lvert\vec Q_2\rvert^{2}$, $(2u+1)\vec a = 0$ and $\vec a\times\vec b = -\tfrac12\vec b$ for $\vec Q_2 = \vec a + i\vec b$. Their list is the two trivial idempotents $0$ and $e_t$ together with the family
 
 $$
 \tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\vec u,\vec u)=1 ,
@@ -360,7 +360,7 @@ and each nontrivial idempotent has central square $1$, so that it is a unit of t
 
 | symbol | meaning |
 |---|---|
-| $\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquilinear product |
+| $\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product |
 | $\tilde\Xi$ | a root, $\tilde\Xi \star \tilde\Xi = \lambda e_t$ |
 | root of one | a nonzero $\tilde\Xi$ with $\tilde\Xi \star \tilde\Xi = e_t$ |
 | $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$ | the reduction of the square |
@@ -369,9 +369,9 @@ and each nontrivial idempotent has central square $1$, so that it is a unit of t
 | central circle, $\lvert a\rvert^2 = \lambda$ | the scalar roots, present only for $\lambda>0$ |
 | $C(\tilde\Xi) = c^2(1-t^2)$ | the central square of a root |
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi \star \tilde\Pi = \tilde\Pi$ |
-| $\overline{\tilde Q}\tilde Q = \tilde Q^{\natural}$ | the criterion for idempotence |
-| $Q_t = u \in \mathbb{R}$, $u = u^{2} - \lvert\vec Q\rvert^{2}$ | the scalar coordinate equations |
-| $(2u+1)\vec a = 0$, $\vec a\times\vec b = -\tfrac12\vec b$ | the vector coordinate equations, $\vec Q = \vec a + i\vec b$ |
+| $\overline{\tilde Q}_2\tilde Q_2 = \tilde Q_2^{\natural}$ | the criterion for idempotence |
+| $Q_{2t} = u \in \mathbb{R}$, $u = u^{2} - \lvert\vec Q_2\rvert^{2}$ | the scalar coordinate equations |
+| $(2u+1)\vec a = 0$, $\vec a\times\vec b = -\tfrac12\vec b$ | the vector coordinate equations, $\vec Q_2 = \vec a + i\vec b$ |
 | $\tilde\Pi(\vec u) = -\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ | a nontrivial idempotent |
 | $\vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}}$, $(\vec u,\vec u)=1$ | the parameter and its constraint: a two-dimensional family |
 | $C(\tilde\Pi(\vec u)) = 1$ | every nontrivial idempotent is a unit of the plain algebra |

@@ -271,7 +271,7 @@ and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde
 | $\tilde{Ϛ}_y = \tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}/p_y$ | Post-measurement state |
 | $\tilde{E}_y = V^\dagger\tilde{F}_yV$ | Naimark dilation |
 | $\tilde{E}_k = \tfrac23\tilde\Pi_1(\vec u_k)$ | Trine POVM |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

@@ -195,10 +195,10 @@ The symmetrised product is the symmetric half of the **plain** exchange, the swa
 On the biquaternion sesqualgebra over $(\mathbb{C},\bar{\cdot})$ with the derived operation $x \star y = xy^{*}$ and $c=\overline{\cdot}$ the conjugate-symmetric part is the **scalar part** of the product,
 
 $$
-\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\bigl(\tilde{P}\tilde{Q}^{*}\bigr)^{\natural}\bigr)=\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr)=P_t\overline{Q_t}+(\vec P,\overline{\vec Q}),
+\tfrac12\bigl(\tilde{Q}_1\tilde{Q}_2^{*}+\bigl(\tilde{Q}_1\tilde{Q}_2^{*}\bigr)^{\natural}\bigr)=\mathrm{Sc}\bigl(\tilde{Q}_1\tilde{Q}_2^{*}\bigr)=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}),
 $$
 
-the Hermitian form of the sesqualgebra read as a central element, and its antisymmetric partner is the vector part $\mathrm{Vect}(\tilde{P}\tilde{Q}^{*})$. The symmetrised product and the conjugate-symmetric part are the two symmetric halves of the one product, taken under the two exchanges, and they are not the same operation: the symmetrisation here is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear, while the conjugate-symmetric part is central and sesquilinear. The twelve names of *The 12 Products of the Biquaternioid Complex Space* belong to the reading that keeps the class, whose symmetric half for the derived operation is the conjugate-symmetric part just written, the operation $\mathrm{SPS}$.
+the Hermitian form of the sesqualgebra read as a central element, and its antisymmetric partner is the vector part $\mathrm{Vect}(\tilde{Q}_1\tilde{Q}_2^{*})$. The symmetrised product and the conjugate-symmetric part are the two symmetric halves of the one product, taken under the two exchanges, and they are not the same operation: the symmetrisation here is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear, while the conjugate-symmetric part is central and sesquilinear. The twelve names of *The 12 Products of the Biquaternioid Complex Space* belong to the reading that keeps the class, whose symmetric half for the derived operation is the conjugate-symmetric part just written, the operation $\mathrm{SPS}$.
 
 ## Summary
 

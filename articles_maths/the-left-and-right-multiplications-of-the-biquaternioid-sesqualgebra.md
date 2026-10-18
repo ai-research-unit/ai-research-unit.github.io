@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Every element of the sesqualgebra $(\mathbb{B},\star)$ of *Introduction to the General Plain Sesqualgebra* gives two operators on the underlying space, the **left multiplication** $L_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1$ and the **right multiplication** $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A$. The multiplication is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, so on the coordinates
+Every element of the sesqualgebra $(\mathbb{B},\star)$ of *Introduction to the General Plain Sesqualgebra* gives two operators on the underlying space, the **left multiplication** $L_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1$ and the **right multiplication** $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A$. The multiplication is $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$, so on the coordinates
 
 $$
 L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}, \qquad R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*} .
@@ -15,7 +15,7 @@ The consequence is an asymmetry between the two families. The left multiplicatio
 
 The subject is the operator theory of the biquaternion sesqualgebra, read from the general article *The Left and Right Multiplication Operators of a Sesqualgebra*, whose parity theorem, regular maps and obstruction to a linear representation are quoted. The ternary operator forms are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*; the two-sided operator produced by the left compositions is *The Sesquilinear Sandwich on the Biquaternioid*; and the comparison with the bilinear readings is *Comparison Between the Four General Products*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are written $\tilde Q=Q_te_t+\vec Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, where the ordinary product $\tilde P\tilde Q$ makes $\mathbb{M}_+$ a Jordan algebra, by *The 12 Products of the Biquaternioid Complex Space*.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde Q\star\tilde Q_2=\tilde Q\tilde Q_2^{*}$. The scalar and vector parts are written $\tilde Q=Q_te_t+\vec Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, where the ordinary product $\tilde Q\tilde Q_2$ makes $\mathbb{M}_+$ a Jordan algebra, by *The 12 Products of the Biquaternioid Complex Space*.
 
 ## The Two Operators
 
@@ -29,7 +29,7 @@ $$
 
 Both are additive in $\tilde Q_1$, since the multiplication is additive in each variable, and both are determined by $\tilde A$. The definition is the one of *The Left and Right Multiplication Operators of a Sesqualgebra*, §*The Two Operators*, read on $\mathbb{B}$ with the standard example $\star$.
 
-**Remark.** The operators are written with the ordinary product on the right, so that the involution is visible: $L_{\tilde A}$ is the two-sided multiplication by $\tilde A$ composed with the involution, $L_{\tilde A}=T_{\tilde A,e_t}\circ{}^{*}$, and $R_{\tilde A}$ is the transpose of the same, $R_{\tilde A}=T_{e_t,\tilde A^{*}}$. The two-sided multiplication $T_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1\tilde Q$ is the linear operator of *The Sesquilinear Sandwich on the Biquaternioid*; it is not itself a left or a right multiplication unless one of its parameters is the unit.
+**Remark.** The operators are written with the ordinary product on the right, so that the involution is visible: $L_{\tilde A}$ is the two-sided multiplication by $\tilde A$ composed with the involution, $L_{\tilde A}=T_{\tilde A,e_t}\circ{}^{*}$, and $R_{\tilde A}$ is the transpose of the same, $R_{\tilde A}=T_{e_t,\tilde A^{*}}$. The two-sided multiplication $T_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2$ is the linear operator of *The Sesquilinear Sandwich on the Biquaternioid*; it is not itself a left or a right multiplication unless one of its parameters is the unit.
 
 ### The Two Parities
 
@@ -122,7 +122,7 @@ Both mixed composites are expressible in the two families and the two-sided oper
 **Theorem (the mixed composites).** For all $\tilde A,\tilde Q_2$,
 
 $$
-L_{\tilde A}R_{\tilde Q_2}=L_{\tilde A\tilde Q_2} , \qquad R_{\tilde A}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde A} , \qquad S_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1^{*}\tilde Q^{*} .
+L_{\tilde A}R_{\tilde Q_2}=L_{\tilde A\tilde Q_2} , \qquad R_{\tilde A}L_{\tilde Q_2}=S_{\tilde Q_2,\tilde A} , \qquad S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*} .
 $$
 
 So the composite of a left and a right multiplication, in the order left-of-right, is again a left multiplication; in the other order it is the **sandwich** of *The Sesquilinear Sandwich on the Biquaternioid*, below in this group.
@@ -136,7 +136,7 @@ So the composite of a left and a right multiplication, in the order left-of-righ
 **Theorem (the four kinds of operator).** The set generated by the left and the right multiplications under composition is contained in the union of the four families
 
 $$
-\{L_{\tilde A}\}, \qquad \{R_{\tilde A}\}, \qquad \{S_{\tilde P,\tilde Q}\}, \qquad \{T_{\tilde P,\tilde Q}\},
+\{L_{\tilde A}\}, \qquad \{R_{\tilde A}\}, \qquad \{S_{\tilde Q,\tilde Q_2}\}, \qquad \{T_{\tilde Q,\tilde Q_2}\},
 $$
 
 the left multiplications, the right multiplications, the sandwiches and the ordinary two-sided multiplications, and it is a monoid with identity $R_{e_t}=T_{e_t,e_t}=\mathrm{id}$.
@@ -173,15 +173,15 @@ They are the two halves of the regular representation of *The Left and Right Mul
 
 ## The Comparison with the Two Bilinear Multiplications
 
-The two bilinear multiplications $\tilde P\tilde Q$ and $\tilde P^{\natural}\tilde Q$ have $\mathbb{C}$-linear left multiplications, and their left families compose. The two sesquilinear products carry the involution in a slot, and of the two families only the right one of the derived product survives composition.
+The two bilinear multiplications $\tilde Q\tilde Q_2$ and $\tilde Q^{\natural}\tilde Q_2$ have $\mathbb{C}$-linear left multiplications, and their left families compose. The two sesquilinear products carry the involution in a slot, and of the two families only the right one of the derived product survives composition.
 
 | multiplication | left multiplication | $L_{\tilde A}L_{\tilde Q_2}$ | right multiplication | $R_{\tilde A}R_{\tilde Q_2}$ |
 |---|---|---|---|---|
-| $\tilde P\tilde Q$ (associative) | $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1$ | $L_{\tilde A\tilde Q_2}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A$ | $R_{\tilde Q_2\tilde A}$ |
-| $\tilde P^{\natural}\tilde Q$ | $L_{\tilde A}(\tilde Q_1)=\tilde A^{\natural}\tilde Q_1$ | $L_{\tilde Q_2\tilde A}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1^{\natural}\tilde A$ | not a right multiplication |
-| $\tilde P\tilde Q^{*}$ (this article) | $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}$ | $T_{\tilde A,\tilde Q_2^{*}}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*}$ | $R_{\tilde A\tilde Q_2}$ |
+| $\tilde Q\tilde Q_2$ (associative) | $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1$ | $L_{\tilde A\tilde Q_2}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A$ | $R_{\tilde Q_2\tilde A}$ |
+| $\tilde Q^{\natural}\tilde Q_2$ | $L_{\tilde A}(\tilde Q_1)=\tilde A^{\natural}\tilde Q_1$ | $L_{\tilde Q_2\tilde A}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1^{\natural}\tilde A$ | not a right multiplication |
+| $\tilde Q\tilde Q_2^{*}$ (this article) | $L_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1^{*}$ | $T_{\tilde A,\tilde Q_2^{*}}$ | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\tilde A^{*}$ | $R_{\tilde A\tilde Q_2}$ |
 
-**Remark.** The table is read with *Comparison Between the Four General Products*: for the two bilinear products the left family is closed, in the ordinary order for $\tilde P\tilde Q$ and in the reversed order $L_{\tilde A}L_{\tilde Q_2}=L_{\tilde Q_2\tilde A}$ for $\tilde P^{\natural}\tilde Q$ by the anti-multiplicativity of ${}^{\natural}$, and the ordinary right family is closed as well, $R_{\tilde A}R_{\tilde Q_2}=R_{\tilde Q_2\tilde A}$. The right family of the ${}^{\natural}$-product, $R_{\tilde A}(\tilde Q_1)=\tilde Q_1^{\natural}\tilde A$, does not close: its composite is $\tilde Q_1\mapsto\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr)^{\natural}\tilde A=\tilde Q_2^{\natural}\tilde Q_1\tilde A$, which is not a right multiplication. For the sesquilinear product the left family is open onto the two-sided multiplications while the right family closes, and the closing of the right family is a property of the derived operation and not of a general product. The fourth product, whose first slot carries ${}^{\natural}$, has the same operator shapes as the third in the first column but is not the derived operation, by *Introduction to the General Quaternionic Sesqualgebra*.
+**Remark.** The table is read with *Comparison Between the Four General Products*: for the two bilinear products the left family is closed, in the ordinary order for $\tilde Q\tilde Q_2$ and in the reversed order $L_{\tilde A}L_{\tilde Q_2}=L_{\tilde Q_2\tilde A}$ for $\tilde Q^{\natural}\tilde Q_2$ by the anti-multiplicativity of ${}^{\natural}$, and the ordinary right family is closed as well, $R_{\tilde A}R_{\tilde Q_2}=R_{\tilde Q_2\tilde A}$. The right family of the ${}^{\natural}$-product, $R_{\tilde A}(\tilde Q_1)=\tilde Q_1^{\natural}\tilde A$, does not close: its composite is $\tilde Q_1\mapsto\bigl(\tilde Q_1^{\natural}\tilde Q_2\bigr)^{\natural}\tilde A=\tilde Q_2^{\natural}\tilde Q_1\tilde A$, which is not a right multiplication. For the sesquilinear product the left family is open onto the two-sided multiplications while the right family closes, and the closing of the right family is a property of the derived operation and not of a general product. The fourth product, whose first slot carries ${}^{\natural}$, has the same operator shapes as the third in the first column but is not the derived operation, by *Introduction to the General Quaternionic Sesqualgebra*.
 
 ## The Action on the Two Halves
 
@@ -211,8 +211,8 @@ The left family does not close: $L_{\tilde A}L_{\tilde Q_2}=T_{\tilde A,\tilde Q
 |---|---|
 | $L_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1=\tilde A\tilde Q_1^{*}$ | the left multiplication, conjugate-linear |
 | $R_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A=\tilde Q_1\tilde A^{*}$ | the right multiplication, linear |
-| $T_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1\tilde Q$ | the ordinary two-sided multiplication, linear |
-| $S_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1^{*}\tilde Q^{*}$ | the sesquilinear sandwich, conjugate-linear |
+| $T_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_2$ | the ordinary two-sided multiplication, linear |
+| $S_{\tilde Q,\tilde Q_2}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_2^{*}$ | the sesquilinear sandwich, conjugate-linear |
 | $L_{\lambda\tilde A}=\lambda L_{\tilde A}$ | the left family is linear in its parameter |
 | $R_{\lambda\tilde A}=\overline{\lambda}R_{\tilde A}$ | the right family is conjugate-linear in its parameter |
 | $L_{e_t}={}^{*}$, $R_{e_t}=\mathrm{id}$ | the two elementary operators at the unit |

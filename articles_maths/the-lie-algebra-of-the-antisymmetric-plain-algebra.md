@@ -5,7 +5,7 @@
 The antisymmetric part of the plain product of the biquaternions, introduced in *Introduction to the Antisymmetric Plain Algebra*,
 
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q,
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2,
 $$
 
 is $\mathbb{C}$-bilinear, alternating and satisfies the Jacobi identity, so it makes the underlying complex space $\mathbb{B}$ a Lie algebra, written
@@ -25,10 +25,10 @@ The bracket and its Jacobi identity are established in *Introduction to the Anti
 **Definition.** The **centre** of $\mathfrak{g}$ is
 
 $$
-\mathfrak{z}(\mathfrak{g})=\{\tilde P\in\mathbb{B}:\tilde P\wedge\tilde Q_1=0\text{ for all }\tilde Q_1\in\mathbb{B}\}.
+\mathfrak{z}(\mathfrak{g})=\{\tilde Q_1\in\mathbb{B}:\tilde Q_1\wedge\tilde Q_2=0\text{ for all }\tilde Q_2\in\mathbb{B}\}.
 $$
 
-**Theorem (the centre is the centre of the algebra).** For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P$ lies in $\mathfrak{z}(\mathfrak{g})$; its vector part is zero, $\vec P=0$; and $\tilde P$ lies in $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the centre of the biquaternion algebra. Hence
+**Theorem (the centre is the centre of the algebra).** For $\tilde Q_1\in\mathbb{B}$ the following are equivalent: $\tilde Q_1$ lies in $\mathfrak{z}(\mathfrak{g})$; its vector part is zero, $\vec Q_1=0$; and $\tilde Q_1$ lies in $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the centre of the biquaternion algebra. Hence
 
 $$
 \mathfrak{z}(\mathfrak{g})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t,
@@ -36,7 +36,7 @@ $$
 
 of complex dimension one and real dimension two.
 
-*Proof.* The bracket depends only on the vector parts, $\tilde P\wedge\tilde Q_1=\vec P\times\vec Q_1$, so it vanishes for every $\tilde Q_1$ exactly when $\vec P\times\vec Q_1=0$ for every vector $\vec Q_1$. If $\vec P\neq0$, a vector $\vec Q_1$ that is not parallel to $\vec P$ gives a nonzero cross product, so the condition forces $\vec P=0$; conversely $\vec P=0$ gives $\tilde P\in\mathbb{C}e_t$. The centre of the biquaternion algebra is $\mathbb{C}e_t$, the complex multiples of the unit, because the quaternion units anticommute off the scalar direction; the second equivalence is that standard fact.
+*Proof.* The bracket depends only on the vector parts, $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$, so it vanishes for every $\tilde Q_2$ exactly when $\vec Q_1\times\vec Q_2=0$ for every vector $\vec Q_2$. If $\vec Q_1\neq0$, a vector $\vec Q_2$ that is not parallel to $\vec Q_1$ gives a nonzero cross product, so the condition forces $\vec Q_1=0$; conversely $\vec Q_1=0$ gives $\tilde Q_1\in\mathbb{C}e_t$. The centre of the biquaternion algebra is $\mathbb{C}e_t$, the complex multiples of the unit, because the quaternion units anticommute off the scalar direction; the second equivalence is that standard fact.
 
 **Remark.** The centre of the bracket and the centre of the algebra are therefore the same subspace, and it is the first structural coincidence of the block: **the elements the bracket cannot see are exactly the central elements of the multiplication, the complex multiples of $e_t$.** The centre is abelian under the bracket, and it is annihilated by the adjoint of every element.
 
@@ -80,9 +80,9 @@ $$
 
 of complex dimension three and real dimension six.
 
-*Proof.* The assignment $P_x\vec e_x+P_y\vec e_y+P_z\vec e_z\mapsto(P_x,P_y,P_z)$ carries the bracket to the cross product, since $\vec e_x\wedge \vec e_y=\vec e_z$ and its cyclic analogues are the cross-product table. The cross-product algebra of $\mathbb{C}^3$ is the complex orthogonal algebra $\mathfrak{so}(3,\mathbb{C})$, and the classical isomorphism $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})$ of the structure theory of *Structure of Lie Algebras* applies; the isomorphism is exhibited in the two-dimensional matrix model in *Introduction to the Symmetric Plain Algebra*, where $\tilde P\wedge\tilde Q$ becomes $\tfrac12[\,\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)\,]$ on the trace-free matrices.
+*Proof.* The assignment $Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z\mapsto(Q_{1x},Q_{1y},Q_{1z})$ carries the bracket to the cross product, since $\vec e_x\wedge \vec e_y=\vec e_z$ and its cyclic analogues are the cross-product table. The cross-product algebra of $\mathbb{C}^3$ is the complex orthogonal algebra $\mathfrak{so}(3,\mathbb{C})$, and the classical isomorphism $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})$ of the structure theory of *Structure of Lie Algebras* applies; the isomorphism is exhibited in the two-dimensional matrix model in *Introduction to the Symmetric Plain Algebra*, where $\tilde Q_1\wedge\tilde Q_2$ becomes $\tfrac12[\,\mathsf{M}_2(\tilde Q_1),\mathsf{M}_2(\tilde Q_2)\,]$ on the trace-free matrices.
 
-**Remark (the two descriptions of the same Lie algebra).** The identification is the reason the block is called the Lie block: **the derived algebra of the antisymmetric plain algebra is $\mathfrak{sl}(2,\mathbb{C})$**, the smallest simple complex Lie algebra, and the whole algebra is $\mathfrak{sl}(2,\mathbb{C})$ with a one-dimensional central summand. The identification up to the factor two between the halved bracket and the matrix commutator is the one of *Introduction to the Antisymmetric Plain Algebra*: the matrix commutator is twice the block's bracket, and the two presentations differ by the rescaling $\tilde P\mapsto2\tilde P$ of the Lie algebra.
+**Remark (the two descriptions of the same Lie algebra).** The identification is the reason the block is called the Lie block: **the derived algebra of the antisymmetric plain algebra is $\mathfrak{sl}(2,\mathbb{C})$**, the smallest simple complex Lie algebra, and the whole algebra is $\mathfrak{sl}(2,\mathbb{C})$ with a one-dimensional central summand. The identification up to the factor two between the halved bracket and the matrix commutator is the one of *Introduction to the Antisymmetric Plain Algebra*: the matrix commutator is twice the block's bracket, and the two presentations differ by the rescaling $\tilde Q_1\mapsto2\tilde Q_1$ of the Lie algebra.
 
 ### The Real Forms
 
@@ -124,7 +124,7 @@ $$
 0,\qquad \mathbb{C}_{\mathbb{B}},\qquad \mathrm{Vect}(\mathbb{B}),\qquad \mathfrak{g}.
 $$
 
-*Proof.* The centre and the derived algebra are ideals, because the bracket vanishes on the centre and the derived algebra is mapped into itself. For the converse, take a nonzero ideal $\mathfrak{a}$ and an element $\tilde P\in\mathfrak{a}$. If $\vec P=0$ then $\mathfrak{a}$ contains a nonzero central element, hence the whole centre. If $\vec P\neq0$, then $[\mathfrak{g},\tilde P]$ is the span of the cross products $\vec X\times\vec P$ over all vectors $\vec X$, which is the plane orthogonal to $\vec P$; and $[\mathfrak{g},[\mathfrak{g},\tilde P]]$ is all of $\mathrm{Vect}(\mathbb{B})$, since the cross product of two vectors in that plane generates the third direction. Hence an ideal that contains an element with nonzero vector part contains $\mathrm{Vect}(\mathbb{B})$, and then either it stops at $\mathrm{Vect}(\mathbb{B})$ or, if it also contains a nonzero central element, it is $\mathfrak{g}$. Computed on the ideal generated by $e_t$, by $\vec e_x$ and by $e_t+\vec e_x$, of complex dimensions one, three and four.
+*Proof.* The centre and the derived algebra are ideals, because the bracket vanishes on the centre and the derived algebra is mapped into itself. For the converse, take a nonzero ideal $\mathfrak{a}$ and an element $\tilde Q_1\in\mathfrak{a}$. If $\vec Q_1=0$ then $\mathfrak{a}$ contains a nonzero central element, hence the whole centre. If $\vec Q_1\neq0$, then $[\mathfrak{g},\tilde Q_1]$ is the span of the cross products $\vec X\times\vec Q_1$ over all vectors $\vec X$, which is the plane orthogonal to $\vec Q_1$; and $[\mathfrak{g},[\mathfrak{g},\tilde Q_1]]$ is all of $\mathrm{Vect}(\mathbb{B})$, since the cross product of two vectors in that plane generates the third direction. Hence an ideal that contains an element with nonzero vector part contains $\mathrm{Vect}(\mathbb{B})$, and then either it stops at $\mathrm{Vect}(\mathbb{B})$ or, if it also contains a nonzero central element, it is $\mathfrak{g}$. Computed on the ideal generated by $e_t$, by $\vec e_x$ and by $e_t+\vec e_x$, of complex dimensions one, three and four.
 
 **Corollary (the quotients).** The quotients of $\mathfrak{g}$ by its ideals are
 
@@ -186,17 +186,17 @@ is the numerical form of the count, with $\binom{k+2}{2}$ the degree-$k$ part of
 
 ## Worked Examples
 
-**A central bracket.** For $\tilde P=2e_t+3ie_t$ the vector part is zero, so $\tilde P\wedge \vec e_x=0$: the two complex coordinates of the centre both stand in the kernel of the adjoint.
+**A central bracket.** For $\tilde Q_1=2e_t+3ie_t$ the vector part is zero, so $\tilde Q_1\wedge \vec e_x=0$: the two complex coordinates of the centre both stand in the kernel of the adjoint.
 
-**A bracket with a scalar part.** For $\tilde P=e_t+\vec e_x$ and $\tilde Q=e_t+\vec e_y$ the bracket is $\vec e_z$, computed in *Introduction to the Antisymmetric Plain Algebra*; the scalar parts of the two elements do not enter, and the value lies in the derived algebra.
+**A bracket with a scalar part.** For $\tilde Q_1=e_t+\vec e_x$ and $\tilde Q_2=e_t+\vec e_y$ the bracket is $\vec e_z$, computed in *Introduction to the Antisymmetric Plain Algebra*; the scalar parts of the two elements do not enter, and the value lies in the derived algebra.
 
-**The derived algebra in one step.** $(e_t+\vec e_x)\wedge \vec e_x=0$ and $\vec e_x\wedge \vec e_y=\vec e_z$: the central direction of $\tilde P=e_t+\vec e_x$ contributes nothing, and the derived algebra is generated by the vector parts alone.
+**The derived algebra in one step.** $(e_t+\vec e_x)\wedge \vec e_x=0$ and $\vec e_x\wedge \vec e_y=\vec e_z$: the central direction of $\tilde Q_1=e_t+\vec e_x$ contributes nothing, and the derived algebra is generated by the vector parts alone.
 
 **The quaternion real form.** For $\tilde q=e_t+\vec e_x$ and $\tilde r=e_t+\vec e_y$ in $\mathbb{H}_{\mathbb{B}}$ the bracket is $\tilde q\wedge\tilde r=\vec e_z$, a real vector element: the quaternion subspace is stable, and its derived algebra is the real vector triple.
 
 **The anti-Hermitian real form.** For $x=ie_t+\vec e_x$ and $y=ie_t+\vec e_y$ in $\mathbb{M}_-$ the bracket is $x\wedge y=\vec e_z$, again a real vector element: the scalar directions $ie_t$ commute with everything and the derived algebra is again the real vector triple, which is the identification $\mathfrak{u}(2)$ with derived algebra $\mathfrak{su}(2)$.
 
-**An element with rank-two adjoint.** For $\tilde P=\vec e_x+i\vec e_y$ the adjoint is the complex matrix of rank two on the four-dimensional space, with kernel the complex plane spanned by $e_t$ and $\vec e_x+i\vec e_y$, of complex dimension two; the rank and the kernel are read in *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*.
+**An element with rank-two adjoint.** For $\tilde Q_1=\vec e_x+i\vec e_y$ the adjoint is the complex matrix of rank two on the four-dimensional space, with kernel the complex plane spanned by $e_t$ and $\vec e_x+i\vec e_y$, of complex dimension two; the rank and the kernel are read in *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*.
 
 ## Summary
 
@@ -207,7 +207,7 @@ The antisymmetric plain algebra makes $\mathbb{B}$ a complex Lie algebra $\mathf
 | Symbol | Meaning |
 |---|---|
 | $\mathfrak{g}=(\mathbb{B},\wedge)$ | the Lie algebra of the antisymmetric plain algebra |
-| $\tilde P\wedge\tilde Q=\vec P\times\vec Q$ | the bracket, the cross product of the vector parts |
+| $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ | the bracket, the cross product of the vector parts |
 | $\mathfrak{z}(\mathfrak{g})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the Lie algebra, the centre of the algebra |
 | $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ | the splitting of the Lie algebra into the centre and the derived algebra |
 | $[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{B})$ | the derived algebra, of complex dimension three and real dimension six |

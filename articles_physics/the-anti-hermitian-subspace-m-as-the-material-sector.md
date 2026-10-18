@@ -252,7 +252,7 @@ The following table lists the seven physical four-vectors that live in $\mathbb{
 
 | Four-vector | Biquaternion form | Components |
 |---|---|---|
-| Four-position | $\tilde{Q} = iq'_0e_t + q_ke_k = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $(ict, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, i.e. $(q'_0, q_k) = (ct, x_k)$ |
+| Four-position | $\tilde{R} = iq'_0e_t + q_ke_k = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $(ict, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, i.e. $(q'_0, q_k) = (ct, x_k)$ |
 | Four-velocity | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $(\gamma ic, \gamma\vec v)$ |
 | Four-momentum | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | $(iE/c, \vec p)$ |
 | Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $(i\gamma\,\vec f\cdot\vec v/c, \gamma\vec f)$ |
@@ -292,7 +292,7 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is a four-dimensional real subspace o
 
 The subspace $\mathbb{M}_-$ is the natural home of the four-vectors of relativistic physics:
 
-- The four-position $\tilde{Q} = iq'_0e_t + q_ke_k = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with $q'_0 = ct$ and $q_k = x_k$.
+- The four-position $\tilde{R} = iq'_0e_t + q_ke_k = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with $q'_0 = ct$ and $q_k = x_k$.
 - The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$.
 - The four-momentum $\tilde{P} = m\tilde{V}$.
 - The four-force $\tilde{F} = d\tilde{P}/d\tau$.

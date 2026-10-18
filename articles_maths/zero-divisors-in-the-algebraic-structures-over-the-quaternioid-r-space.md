@@ -158,7 +158,7 @@ $$
 \tilde q^{2}=0\iff\tilde q=0,\qquad \tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t=0\iff\tilde q=0 .
 $$
 
-Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde P\star\tilde P=\tilde P\tilde P^{*}$ still vanishes only at the origin, but the natural square $\tilde P\tilde P^{\natural}$ vanishes exactly on the zero-divisor cone (*The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*).
+Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde Q_1\star\tilde Q_1=\tilde Q_1\tilde Q_1^{*}$ still vanishes only at the origin, but the natural square $\tilde Q_1\tilde Q_1^{\natural}$ vanishes exactly on the zero-divisor cone (*The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*).
 
 *Proof.* The norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*), so $\langle\tilde q^{2}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{2}$, and $\tilde q^{2}=0$ forces $\langle\tilde q\rangle_{\natural}=0$; the norm is a sum of four squares of real numbers, so $\tilde q=0$. The natural square is $\tilde q\tilde q^{\natural}=\langle\tilde q\rangle_{\natural}e_t$ and vanishes under the same condition. **The one equation that does not vanish off the origin is the pair**, which is the criterion of $\mathrm{SPA}$.
 

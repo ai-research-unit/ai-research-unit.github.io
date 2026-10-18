@@ -204,7 +204,7 @@ $$
 Z_E=\int\mathcal{D}\tilde{\Phi}\;\exp(-S_E[\tilde{\Phi}]/\hbar),
 $$
 
-a sum of positive weights. The step from the material coordinate $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ to its Euclidean form is the replacement of the imaginary time coefficient by a real one, i.e. the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the framework's interpretation of the Wick rotation, and it is the reason the Euclidean Gaussian converges. The action is central, the weight is positive and central, and the configuration space is unchanged.
+a sum of positive weights. The step from the material coordinate $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ to its Euclidean form is the replacement of the imaginary time coefficient by a real one, i.e. the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the framework's interpretation of the Wick rotation, and it is the reason the Euclidean Gaussian converges. The action is central, the weight is positive and central, and the configuration space is unchanged.
 
 **The lattice regulator.** Discretizing the Euclidean direction on a lattice of spacing $h$, the quadratic form of one degree of freedom is a tridiagonal matrix with diagonal $a=2/h^2+\mu^2$ and off-diagonal $b=-1/h^2$, and its determinant obeys the recursion
 
@@ -272,7 +272,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 **The quadratic form is the biquaternion norm.** The momentum-space symbol of the Gaussian's operator is $-(\langle\tilde P\rangle_{\natural}+\mu^2)$ with $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$, and it vanishes on the mass shell, the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three interpretations of one algebraic object, and the framework's convention for $\Box$ makes them mutually consistent.
 
-**The phase is central, and the Wick rotation is a sector relabelling.** The phase $\exp(iS/\hbar)$ is a central unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
+**The phase is central, and the Wick rotation is a sector relabelling.** The phase $\exp(iS/\hbar)$ is a central unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
 
 **The algebra supplies nothing beyond the centre.** There is no bosonic ladder in $\mathbb{B}$, as the companion Fock-space article's trace argument shows, so the mode expansion, the Fock space and the perturbative expansion that the path integral organises are all constructed on an imported module. The functional integral's algebraic content is exhausted by the centrality of the field and the biquaternion-norm geometry of the quadratic form.
 
@@ -306,7 +306,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
 | $\tilde{\Phi}=\phi\,e_t$, $\tilde J=J\,e_t$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Scalar field and central source; real components |
-| $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
+| $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu \vec e_\mu\,\partial/\partial Q_\mu$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian |
 | $S[\tilde{\Phi}]$ | Central scalar action |
 | $Z[\tilde J]=\int\mathcal{D}\tilde{\Phi}\,\exp(\,iS+i\int[\mathrm{Sc}(\tilde J^{*}\tilde{\Phi})+\mathrm{Sc}(\tilde{\Phi}^{*}\tilde J)])$ | Generating functional |

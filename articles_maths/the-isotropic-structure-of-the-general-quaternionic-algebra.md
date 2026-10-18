@@ -6,7 +6,7 @@
 The general quaternionic bilinear form
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\sum_\mu Q_{1,\mu} Q_{2,\mu}
 $$
 
 has for its null set the zero-divisor cone of the algebra. This article develops the cone: its two families of maximal totally isotropic planes, the minimal ideals it carries, and its identification with the zero-divisor set of the algebra. The topology of the cone and the realified invariants are not developed here; the pointers are in the last paragraph of this introduction.
@@ -33,7 +33,7 @@ The projective geometry of the cone is *The Null Quadric and Its Projective Geom
 
 ## The Maximal Totally Isotropic Planes
 
-**Definition.** A subspace $W\subset\mathbb{B}$ is **totally isotropic** when the form vanishes on it identically, $\langle\tilde P,\tilde Q\rangle_{\natural}=0$ for all $\tilde P,\tilde Q\in W$; equivalently when $W$ is isotropic and orthogonal to itself.
+**Definition.** A subspace $W\subset\mathbb{B}$ is **totally isotropic** when the form vanishes on it identically, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=0$ for all $\tilde Q_1,\tilde Q_2\in W$; equivalently when $W$ is isotropic and orthogonal to itself.
 
 **Proposition (the maximal totally isotropic planes).** Over $\mathbb{C}$ the maximal totally isotropic dimension is $2$, and the maximal totally isotropic subspaces are the planes of two families. The two planes
 

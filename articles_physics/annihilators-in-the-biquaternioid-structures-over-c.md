@@ -48,7 +48,7 @@ $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_
 $\vec e_\nu \vec e_\mu=-\delta_{\nu\mu}e_t+\varepsilon_{\nu\mu\lambda}\vec e_\lambda$; $i$ is the central scalar imaginary. The conjugations are
 ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The biquaternion norm is
 $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$, whose vanishing locus is the cone; the trace
-is $\mathrm{Tr}=2\,\mathrm{Sc}$; the material coordinate is $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The twelve
+is $\mathrm{Tr}=2\,\mathrm{Sc}$; the material coordinate is $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The twelve
 structures are cited by their three-letter names, and the left and right annihilators are written
 $A_\star(\tilde P)$ and $B_\star(\tilde P)$ as in the mathematics companion.
 

@@ -3,7 +3,7 @@
 ## Introduction
 
 This article records what the block, the symmetric quaternionic sesquilinear product
-$\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ of
+$\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$ of
 *Introduction to the Symmetric Quaternionic Sesqualgebra*, carries in the place of a unit,
 an inverse and a norm. The answer is negative on the two first counts and precise on the third: the block has
 no unit, so it has no inverse and no group of units; the replacing object is the **regularity** of
@@ -14,7 +14,7 @@ A norm and an inverse name a product, and the product is part of the definition:
 stated once for a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 §*The Unit and the Inverse*, and the algebraic norm of a product is the diagonal of its scalar-part form,
 the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. For the block the form is
-$\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ and
+$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ and
 its diagonal is
 
 $$
@@ -41,11 +41,11 @@ different form, and its theory is *Norm and Invertibility in the Biquaternion Al
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
 $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
-scalar imaginary $i$; $\vec Q=\sum_kQ_k\vec e_k$; $(\vec P,\vec Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
+scalar imaginary $i$; $\vec Q=\sum_kQ_k\vec e_k$; $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$; ${}^{\natural}$ negates
 $\vec e_x,\vec e_y,\vec e_z$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
 ${}^{*}={}^{\natural}\circ\bar{\cdot}$. The **algebraic norm of the block** is
 $\langle\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$,
-the diagonal of the **Krein form** $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with
+the diagonal of the **Krein form** $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ with
 $\varepsilon=(1,-1,-1,-1)$; the square of an element is
 $\tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$.
 Throughout this article the product is the block.
@@ -108,7 +108,7 @@ $$
 equivalently $\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}$ for the form
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu},
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}},
 $$
 
 the general quaternionic sesquilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, also
@@ -134,25 +134,25 @@ of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternio
   parts of the four coefficients give the inertia $(2,6)$ on the realification $\mathbb{B}\cong\mathbb{R}^{8}$.
 - $\langle\cdot\rangle_{\natural*}$ is **homogeneous of degree two over the reals**, $\langle\lambda\tilde Q\rangle_{\natural*}=\lvert\lambda\rvert^{2}\langle\tilde Q\rangle_{\natural*}$
   for $\lambda\in\mathbb{C}$.
-- Its polarisation is the sesquilinear form $\langle\tilde P,\tilde Q\rangle_{\natural*}$, and
-  $\langle\tilde Q,\tilde P\rangle_{\natural*}=\overline{\langle\tilde P,\tilde Q\rangle_{\natural*}}$: the form is Hermitian.
+- Its polarisation is the sesquilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, and
+  $\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}}$: the form is Hermitian.
 - Its **vanishing set** is the $\langle\cdot,\cdot\rangle_{\natural*}$-isotropic cone, a nonzero cone: $\langle e_t+\vec e_x\rangle_{\natural*}=1-1=0$, so the algebraic norm
   vanishes on nonzero elements.
 
 ## The Algebraic Norm Is Not Multiplicative
 
-**Neither the algebraic norm nor the square map is multiplicative: $\langle\tilde P\star\tilde Q\rangle_{\natural*}\neq \langle\tilde P\rangle_{\natural*}\langle\tilde Q\rangle_{\natural*}$ and $(\tilde P\star\tilde Q)\star(\tilde P\star\tilde Q)\neq(\tilde P\star\tilde P)\star(\tilde Q\star\tilde Q)$ in general, the pair $\vec e_z,\vec e_y$ separating both.**
+**Neither the algebraic norm nor the square map is multiplicative: $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\langle\tilde Q_2\rangle_{\natural*}$ and $(\tilde Q_1\star\tilde Q_2)\star(\tilde Q_1\star\tilde Q_2)\neq(\tilde Q_1\star\tilde Q_1)\star(\tilde Q_2\star\tilde Q_2)$ in general, the pair $\vec e_z,\vec e_y$ separating both.**
 
 **Theorem (neither the algebraic norm nor the square is multiplicative).** For the block,
 
 $$
-\langle\tilde P\star\tilde Q\rangle_{\natural*}\neq \langle\tilde P\rangle_{\natural*}\,\langle\tilde Q\rangle_{\natural*}\quad\text{in general},
+\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\,\langle\tilde Q_2\rangle_{\natural*}\quad\text{in general},
 $$
 
 and the square map is not multiplicative,
-$(\tilde P\star\tilde Q)\star(\tilde P\star\tilde Q)\neq(\tilde P\star\tilde P)\star(\tilde Q\star\tilde Q)$.
+$(\tilde Q_1\star\tilde Q_2)\star(\tilde Q_1\star\tilde Q_2)\neq(\tilde Q_1\star\tilde Q_1)\star(\tilde Q_2\star\tilde Q_2)$.
 
-*Proof.* Take $\tilde P=\vec e_z$ and $\tilde Q=\vec e_y$. For the algebraic norm,
+*Proof.* Take $\tilde Q_1=\vec e_z$ and $\tilde Q_2=\vec e_y$. For the algebraic norm,
 $\langle \vec e_z\star \vec e_y\rangle_{\natural*}=\langle 0\rangle_{\natural*}=0$ while $\langle \vec e_z\rangle_{\natural*}\langle \vec e_y\rangle_{\natural*}=(-1)(-1)=1$. For the square map,
 $(\vec e_z\star \vec e_y)\star(\vec e_z\star \vec e_y)=0\star0=0$ while
 $(\vec e_z\star \vec e_z)\star(\vec e_y\star \vec e_y)=(-e_t)\star(-e_t)=e_t$. The values use
@@ -222,7 +222,7 @@ has rank four and is not injective.
 $C=2\neq0$, so it is regular; $L^{\star}_{\tilde Q}$ is a conjugate-linear bijection, though $\tilde Q$ has
 no inverse.
 
-**A multiplicativity failure.** $\tilde P=\vec e_z$, $\tilde Q=\vec e_y$: the algebraic norm gives
+**A multiplicativity failure.** $\tilde Q_1=\vec e_z$, $\tilde Q_2=\vec e_y$: the algebraic norm gives
 $0\neq1$ and the square map gives $0\neq e_t$.
 
 **The unit candidate.** $\tilde Q=e_t$: $e_t\star(e_t+\vec e_x)=e_t-\vec e_x$, so the element $e_t$ does not fix the
@@ -256,10 +256,10 @@ central square, not by $\langle\cdot\rangle_{\natural*}$.
 |---|---|
 | $\tilde E\star\tilde Q_1=\tilde Q_1$ (left), $\tilde Q_1\star\tilde E=\tilde Q_1$ (right) | the unit equations; the block has no solution |
 | $\tilde Q\star\tilde Q^{-1}=\tilde Q^{-1}\star\tilde Q=\tilde E$ | the inverse equation; empty without a unit |
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the scalar-part form of the product |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the Krein form, the scalar-part form of the product |
 | $\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, one of the four algebraic norms of the space |
 | $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$ | the square, a real quaternion with scalar part $\langle\tilde Q\rangle_{\natural*}$ |
-| $\langle\tilde P\star\tilde Q\rangle_{\natural*}\neq \langle\tilde P\rangle_{\natural*}\langle\tilde Q\rangle_{\natural*}$ | the failure of multiplicativity |
+| $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural*}\neq \langle\tilde Q_1\rangle_{\natural*}\langle\tilde Q_2\rangle_{\natural*}$ | the failure of multiplicativity |
 | $Q_t\neq0,\ C(\tilde Q)\neq0$ | the regular elements, the substitute for the invertible ones |
 | $\mathrm{rank}\,L^{\star}_{\tilde Q}\in\{8,6,4,0\}$ | the ranks: regular, non-pure divisor, pure divisor, origin |
 

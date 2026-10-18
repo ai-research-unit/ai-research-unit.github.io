@@ -7,7 +7,7 @@ The free particle is the simplest mechanical system, and it is the system on whi
 In the biquaternion framework the worldline of a point particle is a curve in the **material sector** $\mathbb{M}_-$, the anti-Hermitian subspace of $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The position of the particle is the biquaternion
 
 $$
-\tilde{Q}(t) = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z,
+\tilde{R}(t) = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z,
 $$
 
 with $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ a real pure quaternion. The free particle is the case in which this curve is a straight timelike line, and the four-velocity is a constant element of $\mathbb{M}_-$.
@@ -27,18 +27,18 @@ The conventions are those of the read list. The algebra is $\mathbb{B} = \mathbb
 The four-position of a particle is the element
 
 $$
-\tilde{Q}(t) = ic\,t\,e_t + x(t)\,\vec e_x + y(t)\,\vec e_y + z(t)\,\vec e_z \in \mathbb{M}_- ,
+\tilde{R}(t) = ic\,t\,e_t + x(t)\,\vec e_x + y(t)\,\vec e_y + z(t)\,\vec e_z \in \mathbb{M}_- ,
 $$
 
-written compactly as $\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Its scalar coefficient is the imaginary time coordinate $ict$ and its vector part $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is real. Both features are the definition of membership in $\mathbb{M}_-$, and both are inherited from the conventions of the framework: the temporal direction of the material sector is the imaginary scalar $ie_t$, and its spatial directions are the three real vectors $\vec e_x, \vec e_y, \vec e_z$.
+written compactly as $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Its scalar coefficient is the imaginary time coordinate $ict$ and its vector part $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is real. Both features are the definition of membership in $\mathbb{M}_-$, and both are inherited from the conventions of the framework: the temporal direction of the material sector is the imaginary scalar $ie_t$, and its spatial directions are the three real vectors $\vec e_x, \vec e_y, \vec e_z$.
 
 The biquaternion norm of the displacement between two nearby events is the invariant interval,
 
 $$
-\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\,\overline{d\tilde{Q}} = (ic\,dt)^2 +dx^2+dy^2+dz^2 = -c^2\,dt^2 +dx^2+dy^2+dz^2 ,
+\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,\overline{d\tilde{R}} = (ic\,dt)^2 +dx^2+dy^2+dz^2 = -c^2\,dt^2 +dx^2+dy^2+dz^2 ,
 $$
 
-whose Lorentzian signature is a consequence of $i^2 = -1$ rather than an independent postulate. A worldline is **timelike**, **null** or **spacelike** according to whether $\langle d\tilde{Q}\rangle_{\natural}$ is negative, zero or positive along it. The null directions are the zero divisors of the algebra, and they form the light cone of the material sector.
+whose Lorentzian signature is a consequence of $i^2 = -1$ rather than an independent postulate. A worldline is **timelike**, **null** or **spacelike** according to whether $\langle d\tilde{R}\rangle_{\natural}$ is negative, zero or positive along it. The null directions are the zero divisors of the algebra, and they form the light cone of the material sector.
 
 ### The Four-Velocity and the Parameter Along the Worldline
 
@@ -51,7 +51,7 @@ $$
 The four-velocity is the derivative of the four-position with respect to proper time,
 
 $$
-\tilde{V} = \frac{d\tilde{Q}}{d\tau} = \gamma\left(ic\,e_t + \vec v\right) = ic\,\gamma\,e_t + \gamma\vec v \in \mathbb{M}_- ,
+\tilde{V} = \frac{d\tilde{R}}{d\tau} = \gamma\left(ic\,e_t + \vec v\right) = ic\,\gamma\,e_t + \gamma\vec v \in \mathbb{M}_- ,
 $$
 
 again an element of the material sector: imaginary scalar part $i\gamma c$, real vector part $\gamma\vec v$. Its biquaternion norm is fixed,
@@ -87,10 +87,10 @@ $$
 Since $\tilde{P} = m\tilde{V}$ and $m$ is constant, this says that the four-velocity is constant, $\tilde{V} = \tilde{V}_0$, and integrating once gives the straight worldline
 
 $$
-\tilde{Q}(t) = \tilde{Q}_0 + \tilde{V}_0\,\tau(t), \qquad (x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z) = x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + \vec v\,t ,
+\tilde{R}(t) = \tilde{R}_0 + \tilde{V}_0\,\tau(t), \qquad (x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z) = x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + \vec v\,t ,
 $$
 
-with $\vec v$ a constant real vector. In words: the free particle moves with constant velocity along a straight line, which is Newton's first law transcribed into the algebra. The scalar part of $\tilde{Q}$ carries the time, the vector part carries the uniform motion, and the two are related by the constraint that the four-velocity have norm $-c^2$.
+with $\vec v$ a constant real vector. In words: the free particle moves with constant velocity along a straight line, which is Newton's first law transcribed into the algebra. The scalar part of $\tilde{R}$ carries the time, the vector part carries the uniform motion, and the two are related by the constraint that the four-velocity have norm $-c^2$.
 
 Differentiating the constraint along the worldline expresses the orthogonality of the four-force to the four-momentum,
 
@@ -106,7 +106,7 @@ The biquaternion norm classifies the free worldline, and the classification is p
 
 The three cases are invariant under frame changes because the rotor action preserves the biquaternion norm. A boost cannot turn a timelike worldline into a spacelike one, and it cannot create or destroy a zero divisor. The free particle's causal character is therefore a frame-independent property, which is the Minkowski statement that the interval's sign is a Lorentz invariant.
 
-For the non-relativistic limit the classification degenerates along with the boost. Since the Galilean shear does not preserve the biquaternion norm, it does not preserve the sign of $\langle\tilde{Q}\rangle_{\natural}$; and since it leaves the scalar direction untouched, a vector that was timelike can be sheared into one whose biquaternion norm has either sign. The non-relativistic world has no light cone in the algebraic sense, only the simultaneity foliation $t = \text{const}$ that the shear respects. The cone reappears only as the limit of a sequence of cones that flatten with $c \to \infty$, which is the same degeneration seen from the other side.
+For the non-relativistic limit the classification degenerates along with the boost. Since the Galilean shear does not preserve the biquaternion norm, it does not preserve the sign of $\langle\tilde{R}\rangle_{\natural}$; and since it leaves the scalar direction untouched, a vector that was timelike can be sheared into one whose biquaternion norm has either sign. The non-relativistic world has no light cone in the algebraic sense, only the simultaneity foliation $t = \text{const}$ that the shear respects. The cone reappears only as the limit of a sequence of cones that flatten with $c \to \infty$, which is the same degeneration seen from the other side.
 
 ## Inertial Frames as Rotors
 
@@ -121,10 +121,10 @@ $$
 which acts on the material sector by **rotor conjugation**,
 
 $$
-\tilde{Q} \;\longmapsto\; \tilde{Q}' = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} .
+\tilde{R} \;\longmapsto\; \tilde{R}' = \tilde{\Lambda}\,\tilde{R}\,\tilde{\Lambda}^{*} .
 $$
 
-The set of such rotors is the group $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and the action preserves $\mathbb{M}_-$ and the biquaternion norm: if $\tilde{Q} \in \mathbb{M}_-$ then $\tilde{Q}' \in \mathbb{M}_-$, and $\langle\tilde{Q}'\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$. The group lives in the full algebra $\mathbb{B}$ — neither sector is closed under multiplication — and it acts on the material sector, which is a module rather than an algebra.
+The set of such rotors is the group $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group, and the action preserves $\mathbb{M}_-$ and the biquaternion norm: if $\tilde{R} \in \mathbb{M}_-$ then $\tilde{R}' \in \mathbb{M}_-$, and $\langle\tilde{R}'\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$. The group lives in the full algebra $\mathbb{B}$ — neither sector is closed under multiplication — and it acts on the material sector, which is a module rather than an algebra.
 
 The different Lorentz transformations have rotors in different subspaces. A **pure boost** along the unit direction $\vec u_{\mathrm b}$ has the rotor
 
@@ -132,7 +132,7 @@ $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \in \mathbb{M}_+ ,
 $$
 
-which is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and hence acts by $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$. The rapidity $\psi$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by
+which is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, and hence acts by $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}$. The rapidity $\psi$ is related to the frame velocity $V = V\vec u_{\mathrm b}$ by
 
 $$
 \cosh\psi = \gamma_V, \qquad \sinh\psi = \gamma_V\frac{V}{c}, \qquad \tanh\psi = \frac{V}{c}, \qquad \gamma_V = \frac{1}{\sqrt{1 - V^2/c^2}} .
@@ -148,10 +148,10 @@ which is unitary, $R^{-1} = \bar{R} = R^{*}$, and acts on the vector part by $R(
 
 ### The Relativity Principle
 
-The principle of relativity is the statement that the free-particle equation is form-invariant under the rotor action. If $\tilde{Q}(\tau)$ is a straight worldline in one inertial frame, then $\tilde{Q}'(\tau) = \tilde{\Lambda}\tilde{Q}(\tau)\tilde{\Lambda}^{*}$ is a straight worldline in another, because the action is linear and commutes with the derivative with respect to $\tau$:
+The principle of relativity is the statement that the free-particle equation is form-invariant under the rotor action. If $\tilde{R}(\tau)$ is a straight worldline in one inertial frame, then $\tilde{R}'(\tau) = \tilde{\Lambda}\tilde{R}(\tau)\tilde{\Lambda}^{*}$ is a straight worldline in another, because the action is linear and commutes with the derivative with respect to $\tau$:
 
 $$
-\frac{d\tilde{Q}'}{d\tau} = \tilde{\Lambda}\frac{d\tilde{Q}}{d\tau}\tilde{\Lambda}^{*} = \tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = \tilde{V}' .
+\frac{d\tilde{R}'}{d\tau} = \tilde{\Lambda}\frac{d\tilde{R}}{d\tau}\tilde{\Lambda}^{*} = \tilde{\Lambda}\tilde{V}\tilde{\Lambda}^{*} = \tilde{V}' .
 $$
 
 The four-velocity of the transformed worldline is the rotor conjugate of the original four-velocity, its norm is unchanged by the preceding section, and the mass-shell constraint therefore reads the same in every inertial frame. This is the algebraic content of the statement that the free particle cannot distinguish inertial frames: the equation $\tilde{V} = \text{const}$ is the same equation after the transformation, with the transformed constant.
@@ -159,7 +159,7 @@ The four-velocity of the transformed worldline is the rotor conjugate of the ori
 The composition of frames is the composition of rotors. Two successive rotor conjugations compose as
 
 $$
-\tilde{\Lambda}_2\left(\tilde{\Lambda}_1\tilde{Q}\tilde{\Lambda}_1^{*}\right)\tilde{\Lambda}_2^{*} = (\tilde{\Lambda}_2\tilde{\Lambda}_1)\,\tilde{Q}\,(\tilde{\Lambda}_2\tilde{\Lambda}_1)^{*} ,
+\tilde{\Lambda}_2\left(\tilde{\Lambda}_1\tilde{R}\tilde{\Lambda}_1^{*}\right)\tilde{\Lambda}_2^{*} = (\tilde{\Lambda}_2\tilde{\Lambda}_1)\,\tilde{R}\,(\tilde{\Lambda}_2\tilde{\Lambda}_1)^{*} ,
 $$
 
 and the product $\tilde{\Lambda}_2\tilde{\Lambda}_1$ is again a unit-norm biquaternion, since the biquaternion norm is multiplicative. The composition of frames is therefore the group multiplication of $SL(2,\mathbb{C})$, and it is here that the double cover shows: the rotors $\tilde{\Lambda}$ and $-\tilde{\Lambda}$ implement the same Lorentz transformation, because the signs cancel in the conjugation.
@@ -176,22 +176,22 @@ $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} = e_t + \frac{iV}{2c}\,\vec u_{\mathrm b} + O\!\left(\frac{V^2}{c^2}\right) .
 $$
 
-To first order in $V/c$ the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so the action on a material vector is $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$, and hence
+To first order in $V/c$ the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so the action on a material vector is $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}$, and hence
 
 $$
-\tilde{Q}' = \tilde{Q} + \frac{iV}{2c}\left(\vec u_{\mathrm b}\tilde{Q} + \tilde{Q}\vec u_{\mathrm b}\right) + O\!\left(\frac{V^2}{c^2}\right) .
+\tilde{R}' = \tilde{R} + \frac{iV}{2c}\left(\vec u_{\mathrm b}\tilde{R} + \tilde{R}\vec u_{\mathrm b}\right) + O\!\left(\frac{V^2}{c^2}\right) .
 $$
 
-Now let $\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The scalar $ic\,t\,e_t$ is central, so $\vec u_{\mathrm b}$ commutes with it; the real vector $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is a pure quaternion, so $\vec u_{\mathrm b}$ anticommutes with it. Therefore
+Now let $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The scalar $ic\,t\,e_t$ is central, so $\vec u_{\mathrm b}$ commutes with it; the real vector $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is a pure quaternion, so $\vec u_{\mathrm b}$ anticommutes with it. Therefore
 
 $$
-\vec u_{\mathrm b}\tilde{Q} + \tilde{Q}\vec u_{\mathrm b} = 2ic\,t\,\vec u_{\mathrm b} + \left(\vec u_{\mathrm b}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\vec u_{\mathrm b}\right) = 2ic\,t\,\vec u_{\mathrm b} ,
+\vec u_{\mathrm b}\tilde{R} + \tilde{R}\vec u_{\mathrm b} = 2ic\,t\,\vec u_{\mathrm b} + \left(\vec u_{\mathrm b}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\vec u_{\mathrm b}\right) = 2ic\,t\,\vec u_{\mathrm b} ,
 $$
 
 and the correction is
 
 $$
-\tilde{Q}' = \tilde{Q} + \frac{iV}{2c}\cdot 2ic\,t\,\vec u_{\mathrm b} = \tilde{Q} - Vt\,\vec u_{\mathrm b} .
+\tilde{R}' = \tilde{R} + \frac{iV}{2c}\cdot 2ic\,t\,\vec u_{\mathrm b} = \tilde{R} - Vt\,\vec u_{\mathrm b} .
 $$
 
 Reading off the components,
@@ -212,10 +212,10 @@ where $x_\parallel$ is the component along $\vec u_{\mathrm b}$ and $(x\,\vec e_
 
 The striking feature of the result is not the relation itself but what it is not. The Galilean boost is the limit of a family of rotor conjugations, but the limit is not a rotor conjugation, and this can be checked independently.
 
-A rotor conjugation preserves the biquaternion norm, $\langle\tilde{Q}'\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$. The Galilean shear does not:
+A rotor conjugation preserves the biquaternion norm, $\langle\tilde{R}'\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural}$. The Galilean shear does not:
 
 $$
-\langle\tilde{Q}'\rangle_{\natural} = (ic\,t)^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Vt|^2 = \langle\tilde{Q}\rangle_{\natural} - 2t\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + t^2\vec V^2 .
+\langle\tilde{R}'\rangle_{\natural} = (ic\,t)^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Vt|^2 = \langle\tilde{R}\rangle_{\natural} - 2t\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + t^2\vec V^2 .
 $$
 
 The change $2t\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - t^2\vec V^2$ is nonzero for a generic worldline, so no unit-norm biquaternion implements the map. Equivalently, the shear leaves the scalar direction $ie_t$ of the material sector untouched while changing the vector directions, which is exactly what a rotation in a Minkowski plane does not do. The Galilean boost is a **shear of the material sector along its scalar direction**, and the scalar direction is the one the shear fixes.
@@ -240,7 +240,7 @@ The free particle is the case against which the rest of this subcategory is cali
 
 **There is no internal vector.** A particle with intrinsic spin would carry an internal real vector in $\mathbb{M}_+$, of the form $i\vec s$, and the direction of that vector would be a further dynamical variable with its own precession. The free particle has no such variable. Its only vector is the external position $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and its only dynamics is the uniform translation of that vector. The effects of the present subcategory are exactly those a **structureless point particle** shows: no intrinsic angular momentum, hence no intrinsic magnetism, and no multipole structure.
 
-**The invariance is the Poincaré invariance.** The free particle's symmetry group is the full Poincaré group: translations of the origin, rotor conjugations of $SL(2,\mathbb{C})$, and the discrete transformations. In the algebra, the translations are shifts of $\tilde{Q}$ by a constant element of $\mathbb{M}_-$ and the rotor conjugations are the action described above. The rotations and the boosts are the compact and non-compact parts of the same rotor group, and the contraction of the boosts to shears is the only part of the symmetry that fails to survive the non-relativistic limit.
+**The invariance is the Poincaré invariance.** The free particle's symmetry group is the full Poincaré group: translations of the origin, rotor conjugations of $SL(2,\mathbb{C})$, and the discrete transformations. In the algebra, the translations are shifts of $\tilde{R}$ by a constant element of $\mathbb{M}_-$ and the rotor conjugations are the action described above. The rotations and the boosts are the compact and non-compact parts of the same rotor group, and the contraction of the boosts to shears is the only part of the symmetry that fails to survive the non-relativistic limit.
 
 It is worth recording what the framework does **not** add here. The free particle is a transcription: its trajectory, its conserved four-momentum, and its transformation law are the standard ones, and the biquaternion form predicts nothing beyond them. What the transcription isolates is the location of each object — the worldline in $\mathbb{M}_-$, the frame as a rotor in $\mathbb{B}$, the boost rotor in $\mathbb{M}_+$, the rotation rotor in $\mathbb{H}_{\mathbb{B}}$ — and the single structural fact that the Galilean limit is a contraction rather than a subgroup.
 
@@ -250,8 +250,8 @@ The transcription is transparent under the isomorphism $\mathsf{M}_2$ of the alg
 
 | Standard object | Biquaternion object | Location |
 |---|---|---|
-| Event $x^\mu = (ct, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | $\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $\mathbb{M}_-$ |
-| Interval $dx^\mu dx_\mu$ | $\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\overline{d\tilde{Q}}$ | biquaternion norm on $\mathbb{M}_-$ |
+| Event $x^\mu = (ct, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $\mathbb{M}_-$ |
+| Interval $dx^\mu dx_\mu$ | $\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\overline{d\tilde{R}}$ | biquaternion norm on $\mathbb{M}_-$ |
 | Four-velocity $v^\mu$ | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | $\mathbb{M}_-$ |
 | Mass shell $v^\mu v_\mu = -c^2$ | $\tilde{V}\overline{\tilde{V}} = -c^2$ | constraint in $\mathbb{M}_-$ |
 | Four-momentum $p^\mu = (E/c, \vec p)$ | $\tilde{P} = i(E/c)e_t + \vec p$ | $\mathbb{M}_-$ |
@@ -268,14 +268,14 @@ The table shows that the algebra makes no new prediction for the free particle. 
 The free particle in biquaternionic form is a straight timelike worldline in the material sector,
 
 $$
-\tilde{Q}(t) = ic\,t\,e_t + x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + \vec v\,t \in \mathbb{M}_- ,
+\tilde{R}(t) = ic\,t\,e_t + x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + \vec v\,t \in \mathbb{M}_- ,
 $$
 
 with four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and four-momentum $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$, both in $\mathbb{M}_-$, and constrained by the mass-shell relation $\tilde{P}\overline{\tilde{P}} = -m^2c^2$. The free particle satisfies $\tilde{F} = d\tilde{P}/d\tau = 0$, which is Newton's first law.
 
-Inertial frames are the unit-norm biquaternions $\tilde{\Lambda} \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. The action is linear, preserves $\mathbb{M}_-$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.
+Inertial frames are the unit-norm biquaternions $\tilde{\Lambda} \in SL(2,\mathbb{C})$, acting on the material sector by rotor conjugation $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$. The action is linear, preserves $\mathbb{M}_-$ and preserves the biquaternion norm, and it commutes with the proper-time derivative, so the free-particle equation is form-invariant: this is the relativity principle. Compositions of frames compose as rotor products.
 
-The non-relativistic limit of a boost is a **shear**, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde{\Lambda} = e_t + \tfrac{iV}{2c}\vec u_{\mathrm b}$, and acting on $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ produces the Galilean transformation $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z - \vec Vt$, $t' = t$. The shear does not preserve the biquaternion norm, $\langle\tilde{Q}'\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} - 2t\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + t^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.
+The non-relativistic limit of a boost is a **shear**, not a rotation. Expanding the boost rotor to first order in $V/c$ gives $\tilde{\Lambda} = e_t + \tfrac{iV}{2c}\vec u_{\mathrm b}$, and acting on $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ produces the Galilean transformation $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z - \vec Vt$, $t' = t$. The shear does not preserve the biquaternion norm, $\langle\tilde{R}'\rangle_{\natural} = \langle\tilde{R}\rangle_{\natural} - 2t\,\vec V\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + t^2\vec V^2$, so no unit-norm biquaternion implements it. The Galilean group is therefore a contraction of the rotor group, not a subgroup: the rotations survive exactly, the time coordinate becomes an inert scalar parameter, and the centrality of $i$ is untouched.
 
 The free particle occupies only the material sector, carries no internal vector, and is the spin-zero benchmark for the subcategory: its effects are those of a structureless point particle, with no intrinsic angular momentum and hence no intrinsic magnetism.
 
@@ -289,17 +289,17 @@ The free particle occupies only the material sector, carries no internal vector,
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector: $iq_0e_t + \vec q$, $\vec q$ real |
 | $\mathbb{M}_+$ | Hermitian (informational) sector: $h_0e_t + i\vec h$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subalgebra (rotation rotors) |
-| $\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, a curve in $\mathbb{M}_-$ |
+| $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, a curve in $\mathbb{M}_-$ |
 | $\tau$, $\gamma$ | Proper time; Lorentz factor $1/\sqrt{1-\vec v^2/c^2}$ |
 | $\vec v$, $\vec V$ | Particle velocity; frame velocity |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, in $\mathbb{M}_-$; $\tilde{V}\overline{\tilde{V}} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = i(E/c)e_t + \vec p$ | Four-momentum; $\tilde{P}\overline{\tilde{P}} = -m^2c^2$ |
 | $\tilde{F} = d\tilde{P}/d\tau$ | Four-force; $\tilde{F} = 0$ for the free particle |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\overline{\tilde{\Lambda}} = e_t$ | Lorentz rotor; frame transformation |
-| $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation (frame change) |
+| $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$ | Rotor conjugation (frame change) |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, in $\mathbb{M}_+$; $\tanh\psi = V/c$ |
 | $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor, in $\mathbb{H}_{\mathbb{B}}$ |
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\overline{\tilde{Q}}$ | Biquaternion norm; invariant interval on $\mathbb{M}_-$ |
+| $\langle\tilde{R}\rangle_{\natural} = \tilde{R}\overline{\tilde{R}}$ | Biquaternion norm; invariant interval on $\mathbb{M}_-$ |
 | $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z - \vec Vt$ | Galilean shear (non-relativistic limit) |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions, the Lorentz group |
 

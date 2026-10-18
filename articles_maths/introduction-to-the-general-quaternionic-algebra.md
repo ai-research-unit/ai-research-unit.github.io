@@ -2,16 +2,16 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, defined side by side in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Read as a multiplication, the first of them makes that space an associative unital algebra, and that reading is *Introduction to the Biquaternion Algebra*; the second is the **general quaternionic bilinear product** $\tilde P^{\natural}\tilde Q$, and it is the subject of this article. The name is the one of the four-general-products article: *complex* is the base ring, over which all four rules are written, and *quaternionic* marks the product whose first element is read through the natural conjugation ${}^{\natural}$, the $\mathbb{C}$-linear extension of the quaternionic conjugation. The word names a slot and not a base ring. The product is $\mathbb{C}$-bilinear and it is nothing more: it is not associative and it is unital on one side alone, so it is not the multiplication of an associative unital algebra, as the comparison of the four settles. What it defines is a multiplication in the weak sense of *Algebras: A General Introduction*, additive in each variable and linear over the commutative ring $\mathbb{C}$, and this article builds the algebra that this multiplication makes of $\mathbb{B}$.
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, defined side by side in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Read as a multiplication, the first of them makes that space an associative unital algebra, and that reading is *Introduction to the Biquaternion Algebra*; the second is the **general quaternionic bilinear product** $\tilde Q_1^{\natural}\tilde Q_2$, and it is the subject of this article. The name is the one of the four-general-products article: *complex* is the base ring, over which all four rules are written, and *quaternionic* marks the product whose first element is read through the natural conjugation ${}^{\natural}$, the $\mathbb{C}$-linear extension of the quaternionic conjugation. The word names a slot and not a base ring. The product is $\mathbb{C}$-bilinear and it is nothing more: it is not associative and it is unital on one side alone, so it is not the multiplication of an associative unital algebra, as the comparison of the four settles. What it defines is a multiplication in the weak sense of *Algebras: A General Introduction*, additive in each variable and linear over the commutative ring $\mathbb{C}$, and this article builds the algebra that this multiplication makes of $\mathbb{B}$.
 
 The construction is short and the consequences are of two kinds. The product is the plain multiplication with one conjugation inserted in the first slot, so the table is read off the quaternion table, bilinearity is immediate, and the failure of the axioms is decided by short computations on the basis; but the product is also the multiplication whose square of every element lands in the scalar line and whose symmetrisation is scalar. The article therefore has a negative half — the axioms the product fails, among them the three quaternionic scalar laws, which is where the base ring is fixed — and a positive half, in which the square, the idempotents, the nilpotents and the graded behaviour on the remarkable subspaces are read off.
 
 The boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, the identities that link the four general products are *Relations Between the Four General Products*, and their properties are compared in *Comparison Between the Four General Products*. The same space read with the plain product is *Introduction to the Biquaternion Algebra* and with the star in the second slot is *Introduction to the General Plain Sesqualgebra*; the fourth product is *Introduction to the General Quaternionic Sesqualgebra*. The question of the base rings is *The Realification and the Effect of the Change of Scalars*, and the centre is proved in *Introduction to the Biquaternion Algebra*, §*The Scalars Are the Centre*; what is done here with the base ring is narrower and sharp: the three quaternionic scalar laws are tested on the product and the answer fixes the base at $\mathbb{C}$. The elements, the basis, the conjugations and the remarkable subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces*, *Decompositions Along the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, and the span table of the plain product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*; what is done here with the subspaces is narrower, the agreement with the plain product on the scalar line, the negated quaternion product on the vector part, and the $\mathbb{Z}/2$-grading that the real quaternion splitting gives to this multiplication. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the three weaker identities are *Non-Associative Algebras and the Property Ladder*, and the anti-automorphisms are *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *Zero Divisors of the Biquaternion Algebra*, and the idempotents of the algebra are *Idempotents of the General Plain Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu=1}^{3}Q_\mu\vec e_\mu$, and $(\vec P,\vec Q)=\sum_\mu P_\mu Q_\mu$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$, so that $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$. The plain product is written $\tilde P\tilde Q$ and the product of this article is written $\star$, with
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu=1}^{3}Q_\mu\vec e_\mu$, and $(\vec Q_1,\vec Q_2)=\sum_\mu Q_{1,\mu} Q_{2,\mu}$ and $\vec Q_1\times\vec Q_2$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$, so that $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$. The plain product is written $\tilde Q_1\tilde Q_2$ and the product of this article is written $\star$, with
 
 $$
-\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q
+\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2
 $$
 
 throughout. The four general products and their notation are those of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*.
@@ -24,16 +24,16 @@ throughout. The four general products and their notation are those of *The Four 
 
 $$
 \star \; : \; \mathbb{B}\times\mathbb{B}\longrightarrow\mathbb{B} , \qquad
-(\tilde P,\tilde Q)\longmapsto \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu Q_\nu\,e_\mu e_\nu ,
+(\tilde Q_1,\tilde Q_2)\longmapsto \tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\mu Q_{1,\mu} Q_{2,\nu}\,e_\mu e_\nu ,
 $$
 
 the general quaternionic bilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t,\dots,\vec e_z$: the rule is a map into $\mathbb{B}$ and is well defined. On the four coordinates it reads
 
 $$
-\tilde P\star\tilde Q=\bigl(P_tQ_t+P_xQ_x+P_yQ_y+P_zQ_z\bigr)
-+\bigl(P_tQ_x-P_xQ_t-P_yQ_z+P_zQ_y\bigr)\vec e_x
-+\bigl(P_tQ_y+P_xQ_z-P_yQ_t-P_zQ_x\bigr)\vec e_y
-+\bigl(P_tQ_z-P_xQ_y+P_yQ_x-P_zQ_t\bigr)\vec e_z ,
+\tilde Q_1\star\tilde Q_2=\bigl(Q_{1t}Q_{2t}+Q_{1x}Q_{2x}+Q_{1y}Q_{2y}+Q_{1z}Q_{2z}\bigr)
++\bigl(Q_{1t}Q_{2x}-Q_{1x}Q_{2t}-Q_{1y}Q_{2z}+Q_{1z}Q_{2y}\bigr)\vec e_x
++\bigl(Q_{1t}Q_{2y}+Q_{1x}Q_{2z}-Q_{1y}Q_{2t}-Q_{1z}Q_{2x}\bigr)\vec e_y
++\bigl(Q_{1t}Q_{2z}-Q_{1x}Q_{2y}+Q_{1y}Q_{2x}-Q_{1z}Q_{2t}\bigr)\vec e_z ,
 $$
 
 ### The Scalar–Vector Form
@@ -41,10 +41,10 @@ $$
 Collecting the scalar part and the vector part of the two elements, the same product reads
 
 $$
-\tilde P\star\tilde Q=\bigl(P_tQ_t+(\vec P,\vec Q)\bigr)+P_t\vec Q-Q_t\vec P-\vec P\times\vec Q ,
+\tilde Q_1\star\tilde Q_2=\bigl(Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 ,
 $$
 
-the coordinate display of the definition with the vector part of the first factor negated, which is what the conjugation ${}^{\natural}$ does to it; both displays are quoted from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. The scalar part of the product is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}P_\mu Q_\mu$, written on the coordinates of the two factors.
+the coordinate display of the definition with the vector part of the first factor negated, which is what the conjugation ${}^{\natural}$ does to it; both displays are quoted from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. The scalar part of the product is $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\mu}$, written on the coordinates of the two factors.
 
 ### The Multiplication Table
 
@@ -68,12 +68,12 @@ The table is not the quaternion table, and the differences are worth naming beca
 **Proposition.** The multiplication is **$\mathbb{C}$-bilinear**: it is additive in each variable and
 
 $$
-(\tilde P+\tilde Q)\star\tilde Q_4=\tilde P\star\tilde Q_4+\tilde Q\star\tilde Q_4 , \qquad
-\tilde Q_4\star(\tilde P+\tilde Q)=\tilde Q_4\star\tilde P+\tilde Q_4\star\tilde Q , \qquad
-(A\tilde P)\star\tilde Q=A(\tilde P\star\tilde Q)=\tilde P\star(A\tilde Q) , \qquad A\in\mathbb{C} .
+(\tilde Q_1+\tilde Q_2)\star\tilde Q_4=\tilde Q_1\star\tilde Q_4+\tilde Q_2\star\tilde Q_4 , \qquad
+\tilde Q_4\star(\tilde Q_1+\tilde Q_2)=\tilde Q_4\star\tilde Q_1+\tilde Q_4\star\tilde Q_2 , \qquad
+(A\tilde Q_1)\star\tilde Q_2=A(\tilde Q_1\star\tilde Q_2)=\tilde Q_1\star(A\tilde Q_2) , \qquad A\in\mathbb{C} .
 $$
 
-**Proof.** The natural conjugation is $\mathbb{C}$-linear, $(\lambda\tilde P)^{\natural}=\lambda\tilde P^{\natural}$, and the plain product is $\mathbb{C}$-bilinear; the three identities follow. Equivalently they are read coordinate by coordinate on the developed form, every coordinate of which is a sum of terms $P_\mu Q_\nu$ with fixed coefficients.
+**Proof.** The natural conjugation is $\mathbb{C}$-linear, $(\lambda\tilde Q_1)^{\natural}=\lambda\tilde Q_1^{\natural}$, and the plain product is $\mathbb{C}$-bilinear; the three identities follow. Equivalently they are read coordinate by coordinate on the developed form, every coordinate of which is a sum of terms $Q_{1,\mu} Q_{2,\nu}$ with fixed coefficients.
 
 **Proposition (determination by the table).** The multiplication is the unique $\mathbb{C}$-bilinear map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$ sending the pair $(e_\mu,e_\nu)$ to the product $e_\mu\star e_\nu$ of the table.
 
@@ -87,51 +87,51 @@ $$
 
 The space $\mathbb{B}$ is a module over $\mathbb{C}$ and also, by restriction of scalars along $\mathbb{R}\subset\mathbb{C}$, a real vector space of dimension eight carrying the left and the right action of the subalgebra $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$. Four laws ask whether a multiplication is linear for those two actions, and they are the four a product must satisfy to define an algebra over the skew field $\mathbb{H}$ rather than over the field $\mathbb{C}$.
 
-**Definition.** Let $\cdot$ be a multiplication on $\mathbb{B}$. Then $\cdot$ is **left $\mathbb{H}$-linear in the first slot**, **left $\mathbb{H}$-linear in the second**, **right $\mathbb{H}$-linear in the second** and **compatible with the $\mathbb{H}$-ring structure** when, for all $h\in\mathbb{H}$ and all $\tilde P,\tilde Q\in\mathbb{B}$,
+**Definition.** Let $\cdot$ be a multiplication on $\mathbb{B}$. Then $\cdot$ is **left $\mathbb{H}$-linear in the first slot**, **left $\mathbb{H}$-linear in the second**, **right $\mathbb{H}$-linear in the second** and **compatible with the $\mathbb{H}$-ring structure** when, for all $h\in\mathbb{H}$ and all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
 $$
-(h\tilde P)\cdot\tilde Q=h(\tilde P\cdot\tilde Q) , \qquad
-\tilde P\cdot(h\tilde Q)=h(\tilde P\cdot\tilde Q) , \qquad
-\tilde P\cdot(\tilde Q h)=(\tilde P\cdot\tilde Q)h , \qquad
-(\tilde P h)\cdot\tilde Q=\tilde P\cdot(h\tilde Q) ,
+(h\tilde Q_1)\cdot\tilde Q_2=h(\tilde Q_1\cdot\tilde Q_2) , \qquad
+\tilde Q_1\cdot(h\tilde Q_2)=h(\tilde Q_1\cdot\tilde Q_2) , \qquad
+\tilde Q_1\cdot(\tilde Q_2 h)=(\tilde Q_1\cdot\tilde Q_2)h , \qquad
+(\tilde Q_1 h)\cdot\tilde Q_2=\tilde Q_1\cdot(h\tilde Q_2) ,
 $$
 
-the products $h\tilde P$ and $\tilde Q h$ being those of the algebra. The first two are the two ways the left action of $\mathbb{H}$ moves through the product, the third is the way the right action does, and the fourth is the balance of the two actions in the middle slot, the condition for the product to descend to the tensor product $\mathbb{B}\otimes_{\mathbb{H}}\mathbb{B}$; a product that satisfies the first, the third and the fourth makes of $\mathbb{B}$ a multiplication of the $\mathbb{H}$-bimodule, and one that satisfies all four makes it one over a central action.
+the products $h\tilde Q_1$ and $\tilde Q_2 h$ being those of the algebra. The first two are the two ways the left action of $\mathbb{H}$ moves through the product, the third is the way the right action does, and the fourth is the balance of the two actions in the middle slot, the condition for the product to descend to the tensor product $\mathbb{B}\otimes_{\mathbb{H}}\mathbb{B}$; a product that satisfies the first, the third and the fourth makes of $\mathbb{B}$ a multiplication of the $\mathbb{H}$-bimodule, and one that satisfies all four makes it one over a central action.
 
 **Proposition.** The product $\star$ is right $\mathbb{H}$-linear in the second slot, and it fails the other three laws.
 
-**Proof.** Since $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, the second slot enters as a factor of the plain product, so moving $h$ within that factor is free: $\tilde P\star(\tilde Q h)=\tilde P^{\natural}\tilde Qh=(\tilde P\star\tilde Q)h$, which is the third law. For the first law put $h=\vec e_x$ and $\tilde P=\tilde Q=e_t$: the left-hand side is $(\vec e_x e_t)\star e_t=\vec e_x\star e_t=-\vec e_x$, while the right-hand side is $\vec e_x(e_t\star e_t)=\vec e_x e_t=\vec e_x$, and the two differ. For the second law put $h=\vec e_x$, $\tilde P=\vec e_y$ and $\tilde Q=e_t$: the left-hand side is $\vec e_y\star \vec e_x=(\vec e_y)^{\natural}\vec e_x=-\vec e_y \vec e_x=\vec e_z$, while the right-hand side is $\vec e_x(\vec e_y\star e_t)=\vec e_x(\vec e_y)^{\natural}=-\vec e_x \vec e_y=-\vec e_z$, and the two differ. For the fourth law put $h=\vec e_x$ and $\tilde P=\tilde Q=e_t$: the left-hand side is $(e_t \vec e_x)\star e_t=\vec e_x\star e_t=-\vec e_x$, while the right-hand side is $e_t\star(\vec e_x e_t)=e_t\star \vec e_x=\vec e_x$, and the two differ.
+**Proof.** Since $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$, the second slot enters as a factor of the plain product, so moving $h$ within that factor is free: $\tilde Q_1\star(\tilde Q_2 h)=\tilde Q_1^{\natural}\tilde Qh=(\tilde Q_1\star\tilde Q_2)h$, which is the third law. For the first law put $h=\vec e_x$ and $\tilde Q_1=\tilde Q_2=e_t$: the left-hand side is $(\vec e_x e_t)\star e_t=\vec e_x\star e_t=-\vec e_x$, while the right-hand side is $\vec e_x(e_t\star e_t)=\vec e_x e_t=\vec e_x$, and the two differ. For the second law put $h=\vec e_x$, $\tilde Q_1=\vec e_y$ and $\tilde Q_2=e_t$: the left-hand side is $\vec e_y\star \vec e_x=(\vec e_y)^{\natural}\vec e_x=-\vec e_y \vec e_x=\vec e_z$, while the right-hand side is $\vec e_x(\vec e_y\star e_t)=\vec e_x(\vec e_y)^{\natural}=-\vec e_x \vec e_y=-\vec e_z$, and the two differ. For the fourth law put $h=\vec e_x$ and $\tilde Q_1=\tilde Q_2=e_t$: the left-hand side is $(e_t \vec e_x)\star e_t=\vec e_x\star e_t=-\vec e_x$, while the right-hand side is $e_t\star(\vec e_x e_t)=e_t\star \vec e_x=\vec e_x$, and the two differ.
 
-The laws are gathered in the table, "yes" meaning that the law holds for every $h$, $\tilde P$ and $\tilde Q$.
+The laws are gathered in the table, "yes" meaning that the law holds for every $h$, $\tilde Q_1$ and $\tilde Q_2$.
 
 | law of the multiplication | plain | $\star$ |
 |---|---|---|
-| left linear in the first slot, $(h\tilde P)\cdot\tilde Q=h(\tilde P\cdot\tilde Q)$ | yes | no |
-| left linear in the second slot, $\tilde P\cdot(h\tilde Q)=h(\tilde P\cdot\tilde Q)$ | no | no |
-| right linear in the second slot, $\tilde P\cdot(\tilde Q h)=(\tilde P\cdot\tilde Q)h$ | yes | yes |
-| compatible with the $\mathbb{H}$-ring, $(\tilde P h)\cdot\tilde Q=\tilde P\cdot(h\tilde Q)$ | yes | no |
+| left linear in the first slot, $(h\tilde Q_1)\cdot\tilde Q_2=h(\tilde Q_1\cdot\tilde Q_2)$ | yes | no |
+| left linear in the second slot, $\tilde Q_1\cdot(h\tilde Q_2)=h(\tilde Q_1\cdot\tilde Q_2)$ | no | no |
+| right linear in the second slot, $\tilde Q_1\cdot(\tilde Q_2 h)=(\tilde Q_1\cdot\tilde Q_2)h$ | yes | yes |
+| compatible with the $\mathbb{H}$-ring, $(\tilde Q_1 h)\cdot\tilde Q_2=\tilde Q_1\cdot(h\tilde Q_2)$ | yes | no |
 
 **Corollary.** The product $\star$ is not $\mathbb{H}$-bilinear in any sense, and $\mathbb{B}$ with $\star$ is not an algebra over the quaternion skew field $\mathbb{H}$: three of the four laws fail, the only survivor being the right action in the second slot, and a multiplication over a skew field needs the left action in both slots together with the balance of the two actions.
 
-**Proposition (the plain product, for contrast).** The plain product satisfies the first, the third and the fourth laws, and it fails the second: at $h=\vec e_x$, $\tilde P=\vec e_y$ and $\tilde Q=e_t$ the left-hand side $\tilde P(h\tilde Q)$ is $-\vec e_z$ while the right-hand side $h(\tilde P\tilde Q)$ is $\vec e_z$.
+**Proposition (the plain product, for contrast).** The plain product satisfies the first, the third and the fourth laws, and it fails the second: at $h=\vec e_x$, $\tilde Q_1=\vec e_y$ and $\tilde Q_2=e_t$ the left-hand side $\tilde Q_1(h\tilde Q_2)$ is $-\vec e_z$ while the right-hand side $h(\tilde Q_1\tilde Q_2)$ is $\vec e_z$.
 
-**Proof.** The first, the third and the fourth are associativity of the plain product read in the three slots; the second is the first composed with the commutation of $h$ past $\tilde P$, and it fails at the witness because the quaternion units do not commute.
+**Proof.** The first, the third and the fourth are associativity of the plain product read in the three slots; the second is the first composed with the commutation of $h$ past $\tilde Q_1$, and it fails at the witness because the quaternion units do not commute.
 
 **Remark.** The plain product is thus the multiplication of the $\mathbb{H}$-**bimodule** $\mathbb{B}$: it is balanced, left $\mathbb{H}$-linear in the first slot and right $\mathbb{H}$-linear in the second, which is what *Modules over the Quaternion Algebra* records as the two commuting actions. The $\natural$-product keeps the third law alone, the one that involves the second slot and the right action; it fails the balance and both laws of the first slot, so **it is not a multiplication of the $\mathbb{H}$-bimodule**, and what it keeps is exactly what survives of the bimodule laws when the first factor is conjugated. The second law fails for the plain product too, and for the same reason: it asks the left action to pass a factor that need not commute with it, and over the non-commutative $\mathbb{H}$ only a central scalar does.
 
-**Corollary (where the scalars come from).** The base ring of the multiplication $\star$ is $\mathbb{C}$: the product is $\mathbb{C}$-bilinear by the proposition of the preceding section, and the $\mathbb{H}$-actions do not pass through it, by the two columns of the table, the plain product keeping the three laws of the bimodule and this one keeping a single one-sided law. The central imaginary $i$ acts as a scalar, $i(\tilde P\star\tilde Q)=(i\tilde P)\star\tilde Q=\tilde P\star(i\tilde Q)$, while the quaternion units $\vec e_x,\vec e_y,\vec e_z$ do not, as the witness of the first law shows. This is the narrow statement the article owns; the general question of which rings are admissible for the *plain* product, and the centrality criterion that answers it, are *The Realification and the Effect of the Change of Scalars*.
+**Corollary (where the scalars come from).** The base ring of the multiplication $\star$ is $\mathbb{C}$: the product is $\mathbb{C}$-bilinear by the proposition of the preceding section, and the $\mathbb{H}$-actions do not pass through it, by the two columns of the table, the plain product keeping the three laws of the bimodule and this one keeping a single one-sided law. The central imaginary $i$ acts as a scalar, $i(\tilde Q_1\star\tilde Q_2)=(i\tilde Q_1)\star\tilde Q_2=\tilde Q_1\star(i\tilde Q_2)$, while the quaternion units $\vec e_x,\vec e_y,\vec e_z$ do not, as the witness of the first law shows. This is the narrow statement the article owns; the general question of which rings are admissible for the *plain* product, and the centrality criterion that answers it, are *The Realification and the Effect of the Change of Scalars*.
 
 ### The Product as the Plain Product with the Conjugation Inserted
 
 **Proposition.** The multiplication $\star$ is the **isotope** of the plain multiplication determined by the pair $(\natural,\mathrm{id})$, that is,
 
 $$
-\tilde P\star\tilde Q=\natural(\tilde P)\,\tilde Q \qquad\text{with}\qquad \natural(\tilde P)=\tilde P^{\natural} ,
+\tilde Q_1\star\tilde Q_2=\natural(\tilde Q_1)\,\tilde Q_2 \qquad\text{with}\qquad \natural(\tilde Q_1)=\tilde Q_1^{\natural} ,
 $$
 
 the insertion of $\natural$ in the first slot being the isotope, and $\natural$ being a $\mathbb{C}$-linear anti-automorphism of the algebra.
 
-**Proof.** The first display is the definition of the product: an isotope of a binary operation is the operation $(\tilde P,\tilde Q)\mapsto\varphi(\tilde P)\psi(\tilde Q)$ obtained by inserting a pair of bijections, here $\natural$ in the first slot and the identity in the second. The map $\natural$ is $\mathbb{C}$-linear, involutive and anti-multiplicative, $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$ (*The Group of Involutions*, *Introduction to the Biquaternion Algebra*), so it is an anti-automorphism, and it is its own inverse, hence bijective.
+**Proof.** The first display is the definition of the product: an isotope of a binary operation is the operation $(\tilde Q_1,\tilde Q_2)\mapsto\varphi(\tilde Q_1)\psi(\tilde Q_2)$ obtained by inserting a pair of bijections, here $\natural$ in the first slot and the identity in the second. The map $\natural$ is $\mathbb{C}$-linear, involutive and anti-multiplicative, $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$ (*The Group of Involutions*, *Introduction to the Biquaternion Algebra*), so it is an anti-automorphism, and it is its own inverse, hence bijective.
 
 **Remark.** The reading is worth keeping because it explains the failures at once. An isotope of an associative product is associative only when the inserted maps are compatible with the multiplication, and the anti-automorphism $\natural$ is the wrong way round; it is this reversal that produces the associator of the next section, the reversed composition of the left multiplications, and the failure of the quaternionic scalar laws. The two bilinear products of the four are therefore not two unrelated multiplications: one is the isotope of the other, and the comparison of the four records the same fact in its own words, the $\natural$-product being *the general plain bilinear product read with the $\mathbb{C}$-linear conjugation inserted in the first slot* (*Comparison Between the Four General Products*).
 
@@ -146,18 +146,18 @@ the insertion of $\natural$ in the first slot being the isotope, and $\natural$ 
 **Proposition (the associator).** The **associator** of the multiplication,
 
 $$
-[\tilde P,\tilde Q,\tilde Q_4]=(\tilde P\star\tilde Q)\star\tilde Q_4-\tilde P\star(\tilde Q\star\tilde Q_4) ,
+[\tilde Q_1,\tilde Q_2,\tilde Q_4]=(\tilde Q_1\star\tilde Q_2)\star\tilde Q_4-\tilde Q_1\star(\tilde Q_2\star\tilde Q_4) ,
 $$
 
 is
 
 $$
-[\tilde P,\tilde Q,\tilde Q_4]=\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde Q_4 .
+[\tilde Q_1,\tilde Q_2,\tilde Q_4]=\bigl(\tilde Q_2^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde Q_2^{\natural}\bigr)\tilde Q_4 .
 $$
 
-**Proof.** The product satisfies $(\tilde P\star\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, since $\natural$ is an anti-automorphism and an involution; hence $(\tilde P\star\tilde Q)\star\tilde Q_4=(\tilde P\star\tilde Q)^{\natural}\tilde Q_4=\tilde Q^{\natural}\tilde P\tilde Q_4$, while $\tilde P\star(\tilde Q\star\tilde Q_4)=\tilde P^{\natural}(\tilde Q\star\tilde Q_4)=\tilde P^{\natural}\tilde Q^{\natural}\tilde Q_4$. The difference is the displayed form.
+**Proof.** The product satisfies $(\tilde Q_1\star\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1$, since $\natural$ is an anti-automorphism and an involution; hence $(\tilde Q_1\star\tilde Q_2)\star\tilde Q_4=(\tilde Q_1\star\tilde Q_2)^{\natural}\tilde Q_4=\tilde Q_2^{\natural}\tilde Q_1\tilde Q_4$, while $\tilde Q_1\star(\tilde Q_2\star\tilde Q_4)=\tilde Q_1^{\natural}(\tilde Q_2\star\tilde Q_4)=\tilde Q_1^{\natural}\tilde Q_2^{\natural}\tilde Q_4$. The difference is the displayed form.
 
-**Corollary.** The associator is $\mathbb{C}$-bilinear in the three variables, and it is the product of a fixed defect, $\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}$, on the right by $\tilde Q_4$.
+**Corollary.** The associator is $\mathbb{C}$-bilinear in the three variables, and it is the product of a fixed defect, $\tilde Q_2^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde Q_2^{\natural}$, on the right by $\tilde Q_4$.
 
 **Corollary.** The multiplication agrees with the plain product, and is therefore associative and commutative, on the scalar line $\mathbb{C}e_t$, which is the fixed subspace of $\natural$; and it is not associative on the subspace spanned by $e_t$ and any one of $\vec e_x,\vec e_y,\vec e_z$, by the witness above. Associativity of the $\natural$-product is thus the triviality of the conjugation, which happens on the scalar line alone.
 
@@ -167,21 +167,21 @@ $$
 
 **Proof.** $\natural$ fixes $e_t$, so $e_t\star\tilde Q=e_t\tilde Q=\tilde Q$; and a left unit $\tilde E$ satisfies $\tilde E\star\tilde Q=\tilde Q$ for every $\tilde Q$, which at $\tilde Q=e_t$ reads $\tilde E^{\natural}=e_t$, whence $\tilde E=e_t$, the map $\natural$ being an involution.
 
-**Proposition.** There is **no right unit**: the equation $\tilde P\star\tilde E=\tilde P$ for all $\tilde P$ has no solution.
+**Proposition.** There is **no right unit**: the equation $\tilde Q_1\star\tilde E=\tilde Q_1$ for all $\tilde Q_1$ has no solution.
 
-**Proof.** At $\tilde P=e_t$ it reads $\tilde E=e_t$, and at $\tilde P=\vec e_x$ it reads $\vec e_x\star e_t=\vec e_x$, which is false, the value being $-\vec e_x$.
+**Proof.** At $\tilde Q_1=e_t$ it reads $\tilde E=e_t$, and at $\tilde Q_1=\vec e_x$ it reads $\vec e_x\star e_t=\vec e_x$, which is false, the value being $-\vec e_x$.
 
 **Remark.** The two actions of the unit by multiplication are therefore the identity and a conjugation: the left action is the identity, $e_t\star\tilde Q=\tilde Q$, and the right action is the natural conjugation, $\tilde Q\star e_t=\tilde Q^{\natural}$. Neither is a two-sided unit, and no element of $\mathbb{B}$ is one, so the multiplication has a unit on one side alone. The left multiplications nonetheless compose, in reversed order, by the proposition below, and that is why the comparison of the four records a monoid of left multiplications for this product although the product has no two-sided unit.
 
-**Proposition (the left multiplications).** The left multiplications $L_{\tilde P}(\tilde Q_1)=\tilde P\star\tilde Q_1$ compose in the reversed order of the algebra,
+**Proposition (the left multiplications).** The left multiplications $L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\star\tilde Q_2$ compose in the reversed order of the algebra,
 
 $$
-L_{\tilde P}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde P} ,
+L_{\tilde Q_1}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde Q_1} ,
 $$
 
 so they form a monoid anti-isomorphic to the multiplicative monoid of $\mathbb{B}$.
 
-**Proof.** $L_{\tilde P}(L_{\tilde Q_4}(\tilde Q_1))=\tilde P^{\natural}(\tilde Q_4^{\natural}\tilde Q_1)=(\tilde Q_4\tilde P)^{\natural}\tilde Q_1=L_{\tilde Q_4\tilde P}(\tilde Q_1)$, using the anti-multiplicativity of $\natural$ twice.
+**Proof.** $L_{\tilde Q_1}(L_{\tilde Q_4}(\tilde Q_2))=\tilde Q_1^{\natural}(\tilde Q_4^{\natural}\tilde Q_2)=(\tilde Q_4\tilde Q_1)^{\natural}\tilde Q_2=L_{\tilde Q_4\tilde Q_1}(\tilde Q_2)$, using the anti-multiplicativity of $\natural$ twice.
 
 ### Non-Commutativity and the Centre
 
@@ -191,7 +191,7 @@ so they form a monoid anti-isomorphic to the multiplicative monoid of $\mathbb{B
 
 **Proposition (the centre is trivial).** No nonzero element of $\mathbb{B}$ commutes with every element for the multiplication $\star$.
 
-**Proof.** Let $\tilde Q_2$ satisfy $\tilde Q_2\star\tilde Q_1=\tilde Q_1\star\tilde Q_2$ for every $\tilde Q_1$. At $\tilde Q_1=e_t$ it reads $\tilde Q_2\star e_t=\tilde Q_2^{\natural}$ on the left and $e_t\star\tilde Q_2=\tilde Q_2$ on the right, so $\tilde Q_2^{\natural}=\tilde Q_2$ and $\tilde Q_2$ has zero vector part, $\tilde Q_2=Q_{2t}e_t$. The identity then reads $Q_{2t}\tilde Q_1$ on the left, since $\tilde Q_2\star\tilde Q_1=\tilde Q_2^{\natural}\tilde Q_1=Q_{2t}\tilde Q_1$, and $Q_{2t}\tilde Q_1^{\natural}$ on the right, so $Q_{2t}\tilde Q_1=Q_{2t}\tilde Q_1^{\natural}$ for every $\tilde Q_1$; at $\tilde Q_1=\vec e_x$ this is $Q_{2t}\vec e_x=-Q_{2t}\vec e_x$, whence $Q_{2t}=0$.
+**Proof.** Let $\tilde Q_3$ satisfy $\tilde Q_3\star\tilde Q_2=\tilde Q_2\star\tilde Q_3$ for every $\tilde Q_2$. At $\tilde Q_2=e_t$ it reads $\tilde Q_3\star e_t=\tilde Q_3^{\natural}$ on the left and $e_t\star\tilde Q_3=\tilde Q_3$ on the right, so $\tilde Q_3^{\natural}=\tilde Q_3$ and $\tilde Q_3$ has zero vector part, $\tilde Q_3=Q_{3t}e_t$. The identity then reads $Q_{3t}\tilde Q_2$ on the left, since $\tilde Q_3\star\tilde Q_2=\tilde Q_3^{\natural}\tilde Q_2=Q_{3t}\tilde Q_2$, and $Q_{3t}\tilde Q_2^{\natural}$ on the right, so $Q_{3t}\tilde Q_2=Q_{3t}\tilde Q_2^{\natural}$ for every $\tilde Q_2$; at $\tilde Q_2=\vec e_x$ this is $Q_{3t}\vec e_x=-Q_{3t}\vec e_x$, whence $Q_{3t}=0$.
 
 **Remark.** The product has no centre at all, and this separates it sharply from the plain product, whose centre is the scalar line $\mathbb{C}e_t$ (*Introduction to the Biquaternion Algebra*). The complex scalars still act, by the corollary of the preceding section, and their action is left multiplication by $\varphi(A)=Ae_t$, since $\natural$ fixes the scalar line and $A\tilde Q=(Ae_t)\star\tilde Q$; but the element $\varphi(A)$ that represents the action is not central, $\tilde Q\star(Ae_t)=A\tilde Q^{\natural}$. Centrality is an axiom of the associative reading and not of the bilinear one: a $\mathbb{C}$-bilinear product needs its scalars to act compatibly in both slots, which $\star$ does, and needs no central element to represent them, which $\star$ does not have.
 
@@ -201,7 +201,7 @@ The three classical weakenings of associativity are settled by the witnesses alr
 
 **Proposition.** The multiplication is **not alternative**, **not flexible** and **not power associative**.
 
-**Proof.** The left alternative law $\tilde P\star(\tilde P\star\tilde Q)=(\tilde P\star\tilde P)\star\tilde Q$ fails at $\tilde P=\vec e_z$, $\tilde Q=-\vec e_z$, where the two sides are $\vec e_z$ and $-\vec e_z$; the flexible law $(\tilde P\star\tilde Q)\star\tilde P=\tilde P\star(\tilde Q\star\tilde P)$ fails at $\tilde P=\vec e_z$, $\tilde Q=e_t$, where the two sides are $-e_t$ and $e_t$; and the degree-three identity $\tilde P\star(\tilde P\star\tilde P)=(\tilde P\star\tilde P)\star\tilde P$ fails at $\tilde P=\vec e_z$, where the two sides are $-\vec e_z$ and $\vec e_z$.
+**Proof.** The left alternative law $\tilde Q_1\star(\tilde Q_1\star\tilde Q_2)=(\tilde Q_1\star\tilde Q_1)\star\tilde Q_2$ fails at $\tilde Q_1=\vec e_z$, $\tilde Q_2=-\vec e_z$, where the two sides are $\vec e_z$ and $-\vec e_z$; the flexible law $(\tilde Q_1\star\tilde Q_2)\star\tilde Q_1=\tilde Q_1\star(\tilde Q_2\star\tilde Q_1)$ fails at $\tilde Q_1=\vec e_z$, $\tilde Q_2=e_t$, where the two sides are $-e_t$ and $e_t$; and the degree-three identity $\tilde Q_1\star(\tilde Q_1\star\tilde Q_1)=(\tilde Q_1\star\tilde Q_1)\star\tilde Q_1$ fails at $\tilde Q_1=\vec e_z$, where the two sides are $-\vec e_z$ and $\vec e_z$.
 
 **Corollary.** The multiplication is not a Jordan algebra multiplication, being not commutative, and no power of an element is well defined in the sense of power associativity: the two ways of bracketing the triple product of $\vec e_z$ differ.
 
@@ -236,17 +236,17 @@ so the square is a scalar element, in the scalar line $\mathbb{C}e_t$.
 **Proposition.** The product is symmetric modulo its scalar line, and its symmetrisation is scalar:
 
 $$
-\tilde P\star\tilde Q+\tilde Q\star\tilde P=2\,\mathrm{Sc}(\tilde P^{\natural}\tilde Q)\,e_t=2\bigl(P_tQ_t+(\vec P,\vec Q)\bigr)e_t , \qquad
-\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_t\vec Q-2Q_t\vec P-2\vec P\times\vec Q .
+\tilde Q_1\star\tilde Q_2+\tilde Q_2\star\tilde Q_1=2\,\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)\,e_t=2\bigl(Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)e_t , \qquad
+\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1=2Q_{1t}\vec Q_2-2Q_{2t}\vec Q_1-2\vec Q_1\times\vec Q_2 .
 $$
 
-**Proof.** The sum of the left-hand sides is $\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P$, whose scalar part is twice $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_tQ_t+(\vec P,\vec Q)$ and whose vector part is $P_t\vec Q-Q_t\vec P-\vec P\times\vec Q+Q_t\vec P-P_t\vec Q+\vec P\times\vec Q=0$; the difference is the same computation with the signs kept.
+**Proof.** The sum of the left-hand sides is $\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1$, whose scalar part is twice $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ and whose vector part is $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2+Q_{2t}\vec Q_1-Q_{1t}\vec Q_2+\vec Q_1\times\vec Q_2=0$; the difference is the same computation with the signs kept.
 
 **Corollary.** The symmetrised product lies in the scalar line and the antisymmetrised product in the vector part. The multiplication is thus the sum of a symmetric scalar part and an antisymmetric vector part, the two added inside the algebra rather than in separate spaces, which is the shape in which the quaternion product itself is usually written.
 
 ### The Idempotents
 
-**Definition.** Let $\star$ be a product on $\mathbb{B}$. An element is **idempotent of $\star$** when $\tilde Q\star\tilde Q=\tilde Q$, and of **index two**, or **square-zero**, when $\tilde Q\neq0$ and $\tilde Q\star\tilde Q=0$. The definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition* and §*The Nilpotent*, and they name the product at every step; throughout this article the product is the multiplication $\tilde P^{\natural}\tilde Q$.
+**Definition.** Let $\star$ be a product on $\mathbb{B}$. An element is **idempotent of $\star$** when $\tilde Q_2\star\tilde Q_2=\tilde Q_2$, and of **index two**, or **square-zero**, when $\tilde Q_2\neq0$ and $\tilde Q_2\star\tilde Q_2=0$. The definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition* and §*The Nilpotent*, and they name the product at every step; throughout this article the product is the multiplication $\tilde Q_1^{\natural}\tilde Q_2$.
 
 **Proposition.** The idempotents of the multiplication are $0$ and $e_t$.
 
@@ -286,7 +286,7 @@ Let $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y
 
 **Proposition.** The product respects the splitting: $\mathbb{H}_{\mathbb{B}}\star\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}\star i\mathbb{H}_{\mathbb{B}}\subseteq i\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}\star\mathbb{H}_{\mathbb{B}}\subseteq i\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}\star i\mathbb{H}_{\mathbb{B}}\subseteq\mathbb{H}_{\mathbb{B}}$. The splitting is therefore a $\mathbb{Z}/2$-grading for the multiplication.
 
-**Proof.** The complex structure is $J(\tilde Q)=i\tilde Q$, and $\natural$ commutes with $J$, being $\mathbb{C}$-linear; the plain product is compatible with $J$ in both slots, $J(\tilde P\tilde Q)=(J\tilde P)\tilde Q=\tilde P(J\tilde Q)$, since $i$ is central. Hence $\star$, which is the plain product with $\natural$ in the first slot, is compatible with $J$ in the same way, and the four inclusions are that statement read on the two halves.
+**Proof.** The complex structure is $J(\tilde Q_2)=i\tilde Q_2$, and $\natural$ commutes with $J$, being $\mathbb{C}$-linear; the plain product is compatible with $J$ in both slots, $J(\tilde Q_1\tilde Q_2)=(J\tilde Q_1)\tilde Q_2=\tilde Q_1(J\tilde Q_2)$, since $i$ is central. Hence $\star$, which is the plain product with $\natural$ in the first slot, is compatible with $J$ in the same way, and the four inclusions are that statement read on the two halves.
 
 **Proposition.** On the quaternion subspace the multiplication is the plain product with the quaternionic conjugate in the first slot, $h\star g=\bar h\,g$ for real $h,g$, and its square is $h\star h=\bigl(h_t^2+h_x^2+h_y^2+h_z^2\bigr)e_t$. It is not associative there: on the subspace spanned by $e_t$ and one vector unit it fails the associative law, as in §*Associativity*. Its square vanishes on $\mathbb{H}_{\mathbb{B}}$ only at $0$, a sum of squares of real coordinates vanishing only when every coordinate vanishes, and in this it agrees with the record of *Zero Divisors of the Biquaternion Algebra* that the real quaternion subspace carries no zero divisor.
 
@@ -301,9 +301,9 @@ Let $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y
 The identities of *Relations Between the Four General Products* give the multiplication in terms of the plain one and of the scalar part of the first factor:
 
 $$
-\tilde P^{\natural}\tilde Q=2P_t\tilde Q-\tilde P\tilde Q , \qquad
-\tilde P\tilde Q+\tilde P^{\natural}\tilde Q=2P_t\tilde Q , \qquad
-\tilde P\tilde Q-\tilde P^{\natural}\tilde Q=2\vec P\tilde Q .
+\tilde Q_1^{\natural}\tilde Q_2=2Q_{1t}\tilde Q_2-\tilde Q_1\tilde Q_2 , \qquad
+\tilde Q_1\tilde Q_2+\tilde Q_1^{\natural}\tilde Q_2=2Q_{1t}\tilde Q_2 , \qquad
+\tilde Q_1\tilde Q_2-\tilde Q_1^{\natural}\tilde Q_2=2\vec Q_1\tilde Q_2 .
 $$
 
 The first display is the second identity solved for the $\natural$-product, and the three say the same thing: **the multiplication of this article is the plain multiplication with the scalar part of the first factor doubled and the plain product subtracted, that is, with the first factor replaced by its conjugate.** Hence the two bilinear products agree exactly where the first factor is scalar, and the whole difference is carried by the vector part of the first factor. In the language of the preceding section, this is the isotope identity read on the coordinates.
@@ -312,13 +312,13 @@ The first display is the second identity solved for the $\natural$-product, and 
 
 The comparison of the four settles the question of the two-sided object at once: the two rows that name the categories read yes, yes, no, no for the bilinear kind and no, no, yes, yes for the sesquilinear one, the two bilinear products being the ones that define an algebra over $\mathbb{C}$ in the broad sense (*Comparison Between the Four General Products*). Within the bilinear pair, **exactly one product is the multiplication of an associative unital algebra, and it is the plain product**: the $\natural$-product is $\mathbb{C}$-bilinear, not associative and unital on the left alone, which is the theorem of *Introduction to the Biquaternion Algebra*.
 
-The sharper test of the *derived operation* of *Sesqualgebras* separates the pair in the same way and for the same reason. Let $\sigma(\tilde Q_3)=e_t\star\tilde Q_3$ be the first row of the product, as in the sibling article. Here $\sigma$ is the identity, since $\natural$ fixes $e_t$, so $\sigma$ is not conjugate-linear and condition (i) fails; and condition (ii), $\tilde P\star\tilde Q=\tilde P\sigma(\tilde Q)$, would read $\tilde P^{\natural}\tilde Q=\tilde P\tilde Q$, which fails at $\tilde P=\vec e_x$ and $\tilde Q=e_t$. The $\natural$-product therefore fails both conditions, and it is not the derived operation of the algebra with an involution on either side; the correction it needs is not a conjugation in the second slot but the $\mathbb{C}$-linear conjugation inserted in the first, which is the isotope of §*The Product as the Plain Product with the Conjugation Inserted*.
+The sharper test of the *derived operation* of *Sesqualgebras* separates the pair in the same way and for the same reason. Let $\sigma(\tilde Q_3)=e_t\star\tilde Q_3$ be the first row of the product, as in the sibling article. Here $\sigma$ is the identity, since $\natural$ fixes $e_t$, so $\sigma$ is not conjugate-linear and condition (i) fails; and condition (ii), $\tilde Q_1\star\tilde Q_2=\tilde Q_1\sigma(\tilde Q_2)$, would read $\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\tilde Q_2$, which fails at $\tilde Q_1=\vec e_x$ and $\tilde Q_2=e_t$. The $\natural$-product therefore fails both conditions, and it is not the derived operation of the algebra with an involution on either side; the correction it needs is not a conjugation in the second slot but the $\mathbb{C}$-linear conjugation inserted in the first, which is the isotope of §*The Product as the Plain Product with the Conjugation Inserted*.
 
 **The classification of the four.** One product is the multiplication of an associative unital algebra, the plain one; one is a $\mathbb{C}$-bilinear multiplication that keeps only the left unit and the reversed composition of the left multiplications, the $\natural$-product, which is the isotope of the first; and two are the multiplications of a sesqualgebra over the conjugation, of which one, the general plain sesquilinear product, is the derived operation of the algebra with its star, while the fourth, the general quaternionic sesquilinear product, is the isotope of that derived operation by the same conjugation and the subject of *Introduction to the General Quaternionic Sesqualgebra*.
 
 ## Summary
 
-The general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, read as a multiplication, is $\mathbb{C}$-bilinear and additive in each variable, and it is the isotope of the plain product determined by the natural conjugation in the first slot.
+The general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, read as a multiplication, is $\mathbb{C}$-bilinear and additive in each variable, and it is the isotope of the plain product determined by the natural conjugation in the first slot.
 
 $$
 \boxed{\
@@ -329,7 +329,7 @@ $$
 \ }
 $$
 
-Its table has $e_t$ on the diagonal, the identity row and the negated column, and the negated quaternion table on the imaginary block. It is $\mathbb{C}$-linear and fails the three $\mathbb{H}$-laws that involve the first slot, keeping only right $\mathbb{H}$-linearity in the second, so it is a multiplication over $\mathbb{C}$ and not over $\mathbb{H}$; the plain product, by contrast, satisfies the three laws that make the same space an $\mathbb{H}$-bimodule, and the two products differ exactly in the laws of the first slot. The associator is $\bigl(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural}\bigr)\tilde Q_4$, the product is neither alternative, flexible nor power associative, the left multiplications compose in the reversed order and form a monoid anti-isomorphic to that of the algebra, and the centre is zero while the complex scalars still act by left multiplication by $Ae_t$. The square of an element is the central scalar $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, so the square lies in the scalar line, the idempotents are $0$ and $e_t$ alone, and the square-zero elements are the zero divisors, the origin apart; the symmetrised product is scalar, read on the scalar line. On the scalar line the multiplication is the plain one, on the vector part it is minus the quaternion product, and the splitting of $\mathbb{B}$ into the quaternion subspace and its imaginary is a $\mathbb{Z}/2$-grading for it.
+Its table has $e_t$ on the diagonal, the identity row and the negated column, and the negated quaternion table on the imaginary block. It is $\mathbb{C}$-linear and fails the three $\mathbb{H}$-laws that involve the first slot, keeping only right $\mathbb{H}$-linearity in the second, so it is a multiplication over $\mathbb{C}$ and not over $\mathbb{H}$; the plain product, by contrast, satisfies the three laws that make the same space an $\mathbb{H}$-bimodule, and the two products differ exactly in the laws of the first slot. The associator is $\bigl(\tilde Q_2^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde Q_2^{\natural}\bigr)\tilde Q_4$, the product is neither alternative, flexible nor power associative, the left multiplications compose in the reversed order and form a monoid anti-isomorphic to that of the algebra, and the centre is zero while the complex scalars still act by left multiplication by $Ae_t$. The square of an element is the central scalar $\tilde Q_2\star\tilde Q_2=\bigl(\sum_\mu Q_{2,\mu}^2\bigr)e_t$, so the square lies in the scalar line, the idempotents are $0$ and $e_t$ alone, and the square-zero elements are the zero divisors, the origin apart; the symmetrised product is scalar, read on the scalar line. On the scalar line the multiplication is the plain one, on the vector part it is minus the quaternion product, and the splitting of $\mathbb{B}$ into the quaternion subspace and its imaginary is a $\mathbb{Z}/2$-grading for it.
 
 ## Summary of Notation
 
@@ -339,14 +339,14 @@ Its table has $e_t$ on the diagonal, the identity row and the negated column, an
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | complex basis; $e_t$ the unit, $\vec e_\mu$ the quaternion units |
 | $i$ | central scalar imaginary, $i^2=-1$ |
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion and its scalar–vector split, $\vec Q=\sum_\mu Q_\mu\vec e_\mu$ |
-| $(\vec P,\vec Q)=\sum_\mu P_\mu Q_\mu$ | complex bilinear dot product of the vector parts |
-| $\vec P\times\vec Q$ | complex bilinear cross product of the vector parts |
+| $(\vec Q_1,\vec Q_2)=\sum_\mu Q_{1,\mu} Q_{2,\mu}$ | complex bilinear dot product of the vector parts |
+| $\vec Q_1\times\vec Q_2$ | complex bilinear cross product of the vector parts |
 | ${}^{\natural}$ | the natural conjugation, the $\mathbb{C}$-linear anti-automorphism of the first slot |
 | $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the coefficientwise conjugation and the star |
-| $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of the article |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the multiplication of the article |
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugation on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ |
-| $[\tilde P,\tilde Q,\tilde Q_4]$ | the associator, $(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural})\tilde Q_4$ |
-| $L_{\tilde P}$ | the left multiplication $\tilde Q_1\mapsto\tilde P\star\tilde Q_1$, with $L_{\tilde P}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde P}$ |
+| $[\tilde Q_1,\tilde Q_2,\tilde Q_4]$ | the associator, $(\tilde Q_2^{\natural}\tilde Q_1-\tilde Q_1^{\natural}\tilde Q_2^{\natural})\tilde Q_4$ |
+| $L_{\tilde Q_1}$ | the left multiplication $\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2$, with $L_{\tilde Q_1}\circ L_{\tilde Q_4}=L_{\tilde Q_4\tilde Q_1}$ |
 | $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the quaternion subspace, on which $\star$ is $\bar hg$ |
 | $\sum_\mu Q_\mu^2$ | the scalar coefficient of the square, $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$ |
 
@@ -357,7 +357,7 @@ Its table has $e_t$ on the diagonal, the identity row and the negated column, an
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the isotopes and homotopes of an algebra, which is the reading of the $\natural$-product used in this article.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the anti-automorphisms of an algebra and the maps they insert in a product.
 - *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the product, its coordinate rule and its scalar–vector form.
-- *Relations Between the Four General Products* (`articles_maths/relations-between-the-four-general-products.md`), for the identities that link the four general products, among them $\tilde P^{\natural}\tilde Q=2P_t\tilde Q-\tilde P\tilde Q$.
+- *Relations Between the Four General Products* (`articles_maths/relations-between-the-four-general-products.md`), for the identities that link the four general products, among them $\tilde Q_1^{\natural}\tilde Q_2=2Q_{1t}\tilde Q_2-\tilde Q_1\tilde Q_2$.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the property table, the witnesses and the position of the product among the four.
 - *Introduction to the Biquaternion Algebra* (`articles_maths/introduction-to-the-biquaternion-algebra.md`), for the associative unital reading of the plain product, its centre and its presentation.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the units and the invertibility criterion.

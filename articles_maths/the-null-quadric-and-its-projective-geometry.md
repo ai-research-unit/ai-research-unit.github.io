@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}P_\mu Q_\mu$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity and its automorphism group are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the remarkable real subspaces.
+The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\mu}$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity and its automorphism group are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the remarkable real subspaces.
 
 The article is the companion of *The Isotropic Structure of the General Quaternionic Algebra*, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the remarkable subspaces — and of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which owns the form and its diagonal. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in *The Topology of the Zero-Divisor Cone*; the real forms of the form and their signatures are *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*; the Lorentzian and conformal reading of the real slices is *Biquaternion Lorentzian and Conformal Geometry*; the algebra and its fixed-point subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; and the classical groups that act are *Lie Groups*.
 
 **Scope.** The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, and the automorphism group of the complex quadric. No physics is invoked and no new result about the algebra is claimed.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$; the projectivised null cone is $\mathbb{P}(\mathcal{N})\subset\mathbb{P}^3$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\sum_\mu Q_{1,\mu} Q_{2,\mu}$; the projectivised null cone is $\mathbb{P}(\mathcal{N})\subset\mathbb{P}^3$.
 
 ## The Segre Embedding
 
@@ -82,13 +82,13 @@ Its real points depend on the real form of the general quaternionic bilinear for
 
 ## Lines in $\mathbb{P}^3$, the Klein Quadric and the Plücker Embedding
 
-A line in $\mathbb{P}^3$ is $\mathbb{P}(U)$ for a two-dimensional subspace $U\subset\mathbb{C}^4$. With a basis $\tilde Q,\tilde P$ of $U$, the **Plücker coordinates** are the six minors
+A line in $\mathbb{P}^3$ is $\mathbb{P}(U)$ for a two-dimensional subspace $U\subset\mathbb{C}^4$. With a basis $\tilde Q_2,\tilde Q_1$ of $U$, the **Plücker coordinates** are the six minors
 
 $$
-p_{ij}=Q_iP_j-Q_jP_i,\qquad 0\le i < j\le3,
+p_{ij}=Q_{2,i}Q_{1,j}-Q_{2,j}Q_{1,i},\qquad 0\le i < j\le3,
 $$
 
-the coordinates of the decomposable bivector $\tilde Q\wedge\tilde P\in\Lambda^2\mathbb{C}^4$, defined up to an overall scalar. This gives the **Plücker embedding**
+the coordinates of the decomposable bivector $\tilde Q_2\wedge\tilde Q_1\in\Lambda^2\mathbb{C}^4$, defined up to an overall scalar. This gives the **Plücker embedding**
 
 $$
 \mathrm{Gr}(2,4)\hookrightarrow\mathbb{P}(\Lambda^2\mathbb{C}^4)=\mathbb{P}^5,
@@ -109,22 +109,22 @@ The rulings of $Q^2$ appear in this picture as follows. A line of $Q^2$ is a max
 The form defines a **polarity**, the correlation
 
 $$
-[\tilde{P}]\longmapsto[\tilde{P}]^{\perp}=\{[\tilde{Q}]:\langle\tilde{P},\tilde{Q}\rangle_{\natural}=0\},
+[\tilde Q_1]\longmapsto[\tilde Q_1]^{\perp}=\{[\tilde Q_2]:\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=0\},
 $$
 
-well defined by bilinearity and bijective by non-degeneracy. The quadric is the locus of self-polar points, $[\tilde{P}]\in Q^2\iff \langle\tilde{P},\tilde{P}\rangle_{\natural}=0$. For $[\tilde{P}]\in Q^2$, since the differential of $N$ at $\tilde{P}$ is $2\langle\tilde{P},\cdot\,\rangle_{\natural}$, the polar hyperplane is the **tangent hyperplane**, and its intersection with the quadric is the pair of ruling lines through $[\tilde{P}]$,
+well defined by bilinearity and bijective by non-degeneracy. The quadric is the locus of self-polar points, $[\tilde Q_1]\in Q^2\iff \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=0$. For $[\tilde Q_1]\in Q^2$, since the differential of $N$ at $\tilde Q_1$ is $2\langle\tilde Q_1,\cdot\,\rangle_{\natural}$, the polar hyperplane is the **tangent hyperplane**, and its intersection with the quadric is the pair of ruling lines through $[\tilde Q_1]$,
 
 $$
-Q^2\cap[\tilde{P}]^{\perp}=\ell_{[u]}\cup m_{[v]},
+Q^2\cap[\tilde Q_1]^{\perp}=\ell_{[u]}\cup m_{[v]},
 $$
 
-one line from each family. For two distinct null points $[\tilde{P}],[\tilde{Q}]$, the form on the line $\tilde{P}+t\tilde{Q}$ is $2t\,\langle\tilde{P},\tilde{Q}\rangle_{\natural}$, so
+one line from each family. For two distinct null points $[\tilde Q_1],[\tilde Q_2]$, the form on the line $\tilde Q_1+t\tilde Q_2$ is $2t\,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, so
 
 $$
-[\tilde{P}][\tilde{Q}]\subset Q^2\iff \langle\tilde{P},\tilde{Q}\rangle_{\natural}=0,
+[\tilde Q_1][\tilde Q_2]\subset Q^2\iff \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=0,
 $$
 
-in which case the two points lie on a common ruling line. A line through $[\tilde{P}]\in Q^2$ is therefore tangent exactly when its direction lies in the tangent hyperplane; the two ruling lines are tangent, and every other tangent line meets the quadric only at $[\tilde{P}]$.
+in which case the two points lie on a common ruling line. A line through $[\tilde Q_1]\in Q^2$ is therefore tangent exactly when its direction lies in the tangent hyperplane; the two ruling lines are tangent, and every other tangent line meets the quadric only at $[\tilde Q_1]$.
 
 ## Automorphisms of the Quadric
 
@@ -149,15 +149,15 @@ acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, wit
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\tilde P,\tilde Q\rangle_{\natural} = \sum_\mu P_\mu Q_\mu$ | the general quaternionic bilinear form; polar form of the algebraic norm |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \sum_\mu Q_{1,\mu} Q_{2,\mu}$ | the general quaternionic bilinear form; polar form of the algebraic norm |
 | $Z_0,\dots,Z_3$ | Linear coordinates in which the form is $Z_0Z_3 - Z_1Z_2$ |
 | $\mathbb{P}(\mathcal{N}) = Q^2 \cong \mathbb{P}^1 \times \mathbb{P}^1$ | Projectivised null cone, the Segre quadric |
 | $s : \mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ | Segre embedding, $([u],[v]) \mapsto [\alpha\gamma:\alpha\delta:\beta\gamma:\beta\delta]$ |
 | $[u] = [\alpha:\beta]$, $[v] = [\gamma:\delta]$ | The two factors of a null point, up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$ |
 | $W_{[u]}$, $W^{[v]}$ | The two families of maximal isotropic null planes |
 | $\ell_{[u]}, m_{[v]}$ | The two rulings of $Q^2$ |
-| $p_{ij} = Q_i P_j - Q_j P_i$ | Plücker coordinates; the Klein quadric in $\mathbb{P}^5$ is their Plücker locus |
-| $[\tilde{P}]^{\perp}$ | Polar hyperplane of $[\tilde{P}]$; the tangent hyperplane when $[\tilde{P}] \in Q^2$ |
+| $p_{ij} = Q_{2,i}Q_{1,j}-Q_{2,j}Q_{1,i}$ | Plücker coordinates; the Klein quadric in $\mathbb{P}^5$ is their Plücker locus |
+| $[\tilde Q_1]^{\perp}$ | Polar hyperplane of $[\tilde Q_1]$; the tangent hyperplane when $[\tilde Q_1] \in Q^2$ |
 | $\operatorname{Aut}(Q^2) \cong PO_4(\mathbb{C})$ | Projective automorphisms of the quadric |
 
 ## Further Reading

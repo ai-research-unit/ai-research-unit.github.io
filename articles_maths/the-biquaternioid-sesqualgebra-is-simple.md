@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The general plain sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ makes $\mathbb{B}$ a sesqualgebra by *Introduction to the General Plain Sesqualgebra*, and the two-sided ideals of that multiplication are the two trivial ones,
+The general plain sesquilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ makes $\mathbb{B}$ a sesqualgebra by *Introduction to the General Plain Sesqualgebra*, and the two-sided ideals of that multiplication are the two trivial ones,
 
 $$
 0 \quad\text{and}\quad \mathbb{B} .
@@ -13,7 +13,7 @@ This article proves the statement in full. The proof is a single computation: a 
 
 The article is the third of the structural batch: the element theory is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, the square theory is *The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*, and the structure theory of the ideals is here. The general theory that it reads is *Ideals and Quotients of a Sesqualgebra*, where the one-sided and two-sided ideals of a sesqualgebra are defined, and *Simple Sesqualgebras and Minimal Ideals*, where the two notions of simplicity are compared and the one-sided case is treated. On the biquaternion side the two-sided ideals of the algebra and the simplicity of the ring are *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and the minimal one-sided ideals of the algebra and the idempotents that determine them are the same article.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, and the ideal theory of the general sesqualgebra is the one that is applied.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, and the multiplication $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, and the ideal theory of the general sesqualgebra is the one that is applied.
 
 ## Ideals of the Multiplication
 
@@ -73,7 +73,7 @@ is a two-sided algebra ideal, it contains $\tilde Q_1$, and it is contained in $
 
 ### The Two-Sided Lattice
 
-| ideal | of the multiplication $\star$ | of the algebra $\tilde P\tilde Q$ |
+| ideal | of the multiplication $\star$ | of the algebra $\tilde Q_1\tilde Q_2$ |
 |---|---|---|
 | zero | $0$ | $0$ |
 | whole | $\mathbb{B}$ | $\mathbb{B}$ |
@@ -132,7 +132,7 @@ The two-sided ideals of the sesquilinear multiplication on $\mathbb{B}$ are $0$ 
 
 | symbol | meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the sesquilinear multiplication |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the sesquilinear multiplication |
 | $I^{*}=\{\tilde Q_1^{*}:\tilde Q_1\in I\}$ | the conjugate image of a subset |
 | left, right, two-sided $\star$-ideal | an $R$-submodule closed under $\mathbb{B}\star\cdot$, $\cdot\star\mathbb{B}$, or both |
 | $\ast$-ideal | a two-sided algebra ideal with $I^{*}\subseteq I$ |

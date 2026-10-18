@@ -123,7 +123,7 @@ in general, the left-hand side being $A_tR^{\star}_{\tilde Q_1}$ and the right-h
 **Definition.** Let $G_H$ be the group of $\mathbb{C}$-linear bijections $T$ of $\mathbb{B}$ that **preserve the form**,
 
 $$
-G_H = \{\,T\in GL_{\mathbb{C}}(\mathbb{B}) : \langle T\tilde P,T\tilde Q\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\ \text{for all }\tilde P,\tilde Q\,\} .
+G_H = \{\,T\in GL_{\mathbb{C}}(\mathbb{B}) : \langle T\tilde Q,T\tilde{Q}_2\rangle_{*} = \langle\tilde Q,\tilde{Q}_2\rangle_{*}\ \text{for all }\tilde Q,\tilde{Q}_2\,\} .
 $$
 
 In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, whose Gram matrix for $H$ is the identity, the condition on the matrix $T$ of the map is
@@ -137,22 +137,22 @@ and the group is named by its invariance condition and by nothing metric.
 **Theorem (the Lie algebra).** The Lie algebra of $G_H$ is the space of the $\mathbb{C}$-linear endomorphisms $X$ of $\mathbb{B}$ with
 
 $$
-\langle X\tilde P,\tilde Q\rangle_{*} + \langle\tilde P,X\tilde Q\rangle_{*} = 0 \quad\text{for all }\tilde P,\tilde Q , \qquad\text{that is}\qquad X^{\mathsf H} + X = 0 ,
+\langle X\tilde Q,\tilde{Q}_2\rangle_{*} + \langle\tilde Q,X\tilde{Q}_2\rangle_{*} = 0 \quad\text{for all }\tilde Q,\tilde{Q}_2 , \qquad\text{that is}\qquad X^{\mathsf H} + X = 0 ,
 $$
 
 the endomorphisms **skew with respect to $H$**.
 
-*Proof.* Extend the scalars to the ring of dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ and put $S = I + \varepsilon X$ in $G_H$: the invariance $\langle S\tilde P,S\tilde Q\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}$ reads $\langle\tilde P,\tilde Q\rangle_{*} + \varepsilon\bigl(\langle X\tilde P,\tilde Q\rangle_{*} + \langle\tilde P,X\tilde Q\rangle_{*}\bigr) = \langle\tilde P,\tilde Q\rangle_{*}$, the terms of order $\varepsilon^2$ vanishing because $\varepsilon^2 = 0$. The order-one part is $\langle X\tilde P,\tilde Q\rangle_{*} + \langle\tilde P,X\tilde Q\rangle_{*}$, which therefore vanishes identically, and in the basis this is $X^{\mathsf H} + X = 0$. The same computation read backwards gives the converse, so the two conditions cut out the same space.
+*Proof.* Extend the scalars to the ring of dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ and put $S = I + \varepsilon X$ in $G_H$: the invariance $\langle S\tilde Q,S\tilde{Q}_2\rangle_{*} = \langle\tilde Q,\tilde{Q}_2\rangle_{*}$ reads $\langle\tilde Q,\tilde{Q}_2\rangle_{*} + \varepsilon\bigl(\langle X\tilde Q,\tilde{Q}_2\rangle_{*} + \langle\tilde Q,X\tilde{Q}_2\rangle_{*}\bigr) = \langle\tilde Q,\tilde{Q}_2\rangle_{*}$, the terms of order $\varepsilon^2$ vanishing because $\varepsilon^2 = 0$. The order-one part is $\langle X\tilde Q,\tilde{Q}_2\rangle_{*} + \langle\tilde Q,X\tilde{Q}_2\rangle_{*}$, which therefore vanishes identically, and in the basis this is $X^{\mathsf H} + X = 0$. The same computation read backwards gives the converse, so the two conditions cut out the same space.
 
-**Theorem (the automorphisms of the block).** A $\mathbb{C}$-linear bijection $T$ is an automorphism of the product, $T(\tilde P\star\tilde Q) = T\tilde P\star T\tilde Q$, if and only if it preserves the form and fixes the idempotent $e_t$:
+**Theorem (the automorphisms of the block).** A $\mathbb{C}$-linear bijection $T$ is an automorphism of the product, $T(\tilde Q\star\tilde{Q}_2) = T\tilde Q\star T\tilde{Q}_2$, if and only if it preserves the form and fixes the idempotent $e_t$:
 
 $$
 \operatorname{Aut}(\star) = \{\,T\in G_H : Te_t = e_t\,\} .
 $$
 
-*Proof.* If $T\in G_H$ with $Te_t = e_t$, then $T(\tilde P\star\tilde Q) = \langle\tilde P,\tilde Q\rangle_{*}Te_t = \langle\tilde P,\tilde Q\rangle_{*}e_t$ and $T\tilde P\star T\tilde Q = \langle T\tilde P,T\tilde Q\rangle_{*}e_t = \langle\tilde P,\tilde Q\rangle_{*}e_t$, so $T$ is an automorphism. Conversely, let $T$ be an automorphism. Applying it to the identity exhibited in the central form gives $\langle\tilde P,\tilde Q\rangle_{*}Te_t = \langle T\tilde P,T\tilde Q\rangle_{*}e_t$ for all $\tilde P,\tilde Q$; comparing the vector part gives $Te_t = c_te_t$ a central element, and comparing the scalar part then gives $\langle T\tilde P,T\tilde Q\rangle_{*} = c_t\langle\tilde P,\tilde Q\rangle_{*}$; taking $\tilde P = \tilde Q = e_t$ gives $c_t = \lvert c_t\rvert^{2}$, so $c_t\in\{0,1\}$, and the invertibility of $T$ forces $c_t = 1$. Hence $T\in G_H$ and $Te_t = e_t$.
+*Proof.* If $T\in G_H$ with $Te_t = e_t$, then $T(\tilde Q\star\tilde{Q}_2) = \langle\tilde Q,\tilde{Q}_2\rangle_{*}Te_t = \langle\tilde Q,\tilde{Q}_2\rangle_{*}e_t$ and $T\tilde Q\star T\tilde{Q}_2 = \langle T\tilde Q,T\tilde{Q}_2\rangle_{*}e_t = \langle\tilde Q,\tilde{Q}_2\rangle_{*}e_t$, so $T$ is an automorphism. Conversely, let $T$ be an automorphism. Applying it to the identity exhibited in the central form gives $\langle\tilde Q,\tilde{Q}_2\rangle_{*}Te_t = \langle T\tilde Q,T\tilde{Q}_2\rangle_{*}e_t$ for all $\tilde Q,\tilde{Q}_2$; comparing the vector part gives $Te_t = c_te_t$ a central element, and comparing the scalar part then gives $\langle T\tilde Q,T\tilde{Q}_2\rangle_{*} = c_t\langle\tilde Q,\tilde{Q}_2\rangle_{*}$; taking $\tilde Q = \tilde{Q}_2 = e_t$ gives $c_t = \lvert c_t\rvert^{2}$, so $c_t\in\{0,1\}$, and the invertibility of $T$ forces $c_t = 1$. Hence $T\in G_H$ and $Te_t = e_t$.
 
-**Remark (the structure group).** The group that preserves the product **up to a scalar** is the group of $\mathbb{C}$-linear maps $T$ for which $T(\tilde P\star\tilde Q) = \chi(T)(T\tilde P\star T\tilde Q)$ for a nonzero scalar $\chi(T)$; the same computation shows that $T$ must be a **similarity** of $H$, $\langle T\tilde P,T\tilde Q\rangle_{*} = r(T)\langle\tilde P,\tilde Q\rangle_{*}$ with $r(T)$ a nonzero scalar, and must send $e_t$ into the line $\mathbb{C}e_t$, with the two scalars related by $Te_t = \chi(T)r(T)e_t$. The automorphism group above is the part with $\chi = r = 1$; the structure group is the bundle of similarities of $H$ that fix the line of the idempotent.
+**Remark (the structure group).** The group that preserves the product **up to a scalar** is the group of $\mathbb{C}$-linear maps $T$ for which $T(\tilde Q\star\tilde{Q}_2) = \chi(T)(T\tilde Q\star T\tilde{Q}_2)$ for a nonzero scalar $\chi(T)$; the same computation shows that $T$ must be a **similarity** of $H$, $\langle T\tilde Q,T\tilde{Q}_2\rangle_{*} = r(T)\langle\tilde Q,\tilde{Q}_2\rangle_{*}$ with $r(T)$ a nonzero scalar, and must send $e_t$ into the line $\mathbb{C}e_t$, with the two scalars related by $Te_t = \chi(T)r(T)e_t$. The automorphism group above is the part with $\chi = r = 1$; the structure group is the bundle of similarities of $H$ that fix the line of the idempotent.
 
 ## Worked Examples
 

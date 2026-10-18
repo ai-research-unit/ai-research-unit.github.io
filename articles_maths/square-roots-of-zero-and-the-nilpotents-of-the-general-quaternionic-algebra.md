@@ -4,7 +4,7 @@
 
 This article classifies the square roots of the central value $0$ in the general quaternionic bilinear product, and then the **nilpotents** of that product, the elements some power of which vanishes in the same product.
 
-Both notions name a product, and throughout this article the product is the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ of the general quaternionic algebra, the $\mathrm{GQA}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the square of the article is the square of $\star$, and an unqualified *nilpotent* is a nilpotent of $\star$. The general definition of the square and of the roots of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of a nilpotent is §*The Nilpotent* of the same article.
+Both notions name a product, and throughout this article the product is the general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ of the general quaternionic algebra, the $\mathrm{GQA}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the square of the article is the square of $\star$, and an unqualified *nilpotent* is a nilpotent of $\star$. The general definition of the square and of the roots of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of a nilpotent is §*The Nilpotent* of the same article.
 
 The whole article is settled by one computation, the square of every element being the central element $\langle\tilde Q\rangle_{\natural}e_t$. The root equation of the value $0$ therefore reads $\langle\tilde Q\rangle_{\natural}=0$, which is the criterion for a zero divisor, and the nilpotent equation is decided by the same scalar: a vanishing cube already forces a vanishing square, so the only index is two. The roots of $0$ and the nilpotents are the same set, the **zero-divisor cone**, and they are the largest of the four general products.
 
@@ -12,7 +12,7 @@ The whole article is settled by one computation, the square of every element bei
 
 **Boundaries.** The root equation and the reduction are *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, whose roots of $+1$ and idempotents are the other half of the classification; the plain nilpotents, their cone and their index are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the zero divisors and their two families are *Zero Divisors of the General Quaternionic Algebra*; the algebraic norm is *Norm and Invertibility in the General Quaternionic Algebra*; the idempotents of the product and the displacement are *Square Roots of One and the Idempotents of the General Quaternionic Algebra*; and the square-zero elements of the four general products side by side are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, which owns the comparison. The matrix representation is *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, and the ideals and the operator theory are *Ideals and Peirce Decomposition of the Biquaternion Algebra* and *The Specificities of the General Quaternionic Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu=1}^{3}Q_\mu\vec e_\mu$, the **algebraic norm** is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+(\vec Q,\vec Q)$, and $(\vec P,\vec Q)=\sum_\mu P_\mu Q_\mu$ is the complex bilinear form of the vector parts. An element is **pure** when $Q_t=0$, and $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ is the Hermitian idempotent over a real unit vector $\vec u$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu=1}^{3}Q_\mu\vec e_\mu$, the **algebraic norm** is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+(\vec Q,\vec Q)$, and $(\vec P,\vec Q)=\sum_\mu P_\mu Q_\mu$ is the complex bilinear form of the vector parts. An element is **pure** when $Q_t=0$, and $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ is the Hermitian idempotent over a real unit vector $\vec u$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$.
 
 ## The Roots of Zero
 
@@ -92,9 +92,9 @@ $$
 
 **Proof.** The set is the vanishing set of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$, one complex equation, hence two independent real equations off the origin, homogeneous of degree two; the dimension is $8-2=6$. The elements $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ lie in $C$ and their sum $2\vec e_x$ does not, so $C$ is not a subspace.
 
-**Corollary.** The cone is a multiplicative set: for every $\tilde P$ and every $\tilde\Upsilon$ with $\langle\tilde\Upsilon\rangle_{\natural}=0$, the products $\tilde P\star\tilde\Upsilon$ and $\tilde\Upsilon\star\tilde P$ lie in $C$.
+**Corollary.** The cone is a multiplicative set: for every $\tilde Q_1$ and every $\tilde\Upsilon$ with $\langle\tilde\Upsilon\rangle_{\natural}=0$, the products $\tilde Q_1\star\tilde\Upsilon$ and $\tilde\Upsilon\star\tilde Q_1$ lie in $C$.
 
-**Proof.** The multiplicativity of the algebraic norm, $\langle\tilde P\star\tilde\Upsilon\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde\Upsilon\rangle_{\natural}=0$, and the same in the other order.
+**Proof.** The multiplicativity of the algebraic norm, $\langle\tilde Q_1\star\tilde\Upsilon\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde\Upsilon\rangle_{\natural}=0$, and the same in the other order.
 
 The cone is the same set as the zero-divisor cone of *Zero Divisors of the General Quaternionic Algebra*, and it is the union of the pure family, the isotropic cone of the vector subspace of real dimension four, and the non-pure family, the complex multiples of the nontrivial plain idempotents, which fills the rest. The two families are §*The Two Families*.
 
@@ -219,7 +219,7 @@ In the general quaternionic bilinear product the square is the central element $
 
 | symbol | meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product |
 | $\tilde\Upsilon$ | a nilpotent of the product, a root of $0$ |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the algebraic norm, $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ |
 | $\tilde Q^{\star k}$ | the $k$-th power, left-nested; the index is two |

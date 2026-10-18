@@ -128,9 +128,9 @@ twice the spatial cross product, with the time direction absent: the time axis i
 
 Five reasons, in increasing order of strength.
 
-1. **It is a four-dimensional real space with a real form of the right signature.** On $\mathbb{M}_-$, with $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm reads
+1. **It is a four-dimensional real space with a real form of the right signature.** On $\mathbb{M}_-$, with $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm reads
 $$
-\langle\tilde{Q}\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2,
+\langle\tilde{R}\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2,
 $$
 a real form of signature $(3,1)$. Position, velocity, momentum, energy–momentum, four-current and four-potential are all elements of this one subspace, so the kinematical content of relativity — that these are one kind of object — is a statement about the algebra.
 
@@ -299,9 +299,9 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | ${}^{\natural}$, ${}^{*}$ | Quaternion conjugation; Hermitian conjugation ($\mathbb{C}$-antilinear, fixes $\mathbb{M}_+$) |
 | $\mathbb{M}_-$ | Material sector: imaginary scalar, real vector, $ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
 | $\mathbb{M}_+$ | Informational sector: real scalar, imaginary vector, $ct'\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}) = \sum_\mu P_\mu Q_\mu$ | The general quaternionic bilinear form; its diagonal is the biquaternion norm, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$: complex in general, real of signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$, multiplicative; the interval |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_\mu P_\mu\bar{Q}_\mu$ | The general plain sesquilinear form, also called the Hermitian form: real, positive definite, not multiplicative; the Hilbert structure |
-| $\langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q}) = \sum_\mu\varepsilon_\mu P_\mu Q_\mu$, $\varepsilon = (1,-1,-1,-1)$ | The general plain bilinear form; $H = \pm B$ on $\mathbb{M}_\pm$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = \sum_\mu Q_{1\mu}Q_{2\mu}$ | The general quaternionic bilinear form; its diagonal is the biquaternion norm, $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural} = \tilde{Q}_2\tilde{Q}_2^{\natural} = \sum_\mu Q_{2\mu}^2$: complex in general, real of signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$, multiplicative; the interval |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\bar{Q}_{2\mu}$ | The general plain sesquilinear form, also called the Hermitian form: real, positive definite, not multiplicative; the Hilbert structure |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) = \sum_\mu\varepsilon_\mu Q_{1\mu}Q_{2\mu}$, $\varepsilon = (1,-1,-1,-1)$ | The general plain bilinear form; $H = \pm B$ on $\mathbb{M}_\pm$ |
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}$ | The fourth of the four forms, the quaternionic sesquilinear form, also called the Krein form; named for the systematic background, and not used in the physics |
 | $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention; $\mathrm{Tr}(e_t) = 2$, $\mathrm{Tr}(\tilde{\Pi}) = 1$ |
 | $\mathsf{M}_2$ | The matrix element representation $\mathbb{B}\to M_2(\mathbb{C})$: $\mathsf{M}_2(e_t) = I_2$, and the three images of $\vec e_x,\vec e_y,\vec e_z$ are $-i$ times the Pauli matrices |

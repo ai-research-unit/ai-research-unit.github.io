@@ -21,18 +21,18 @@ product are *Conventions in the Biquaternion Universe*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, units
 $\vec e_k^2=-e_t$; the material sector $\mathbb{M}_-$ with the four-position
-$\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the Hermitian square $\tilde{Q}\tilde{Q}^{*}$ and the rank taken in the
+$\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the Hermitian square $\tilde{R}\tilde{R}^{*}$ and the rank taken in the
 matrix model $\mathsf{M}_2$.
 
 ## The Four Readings, One at a Time
 
-**The norm.** $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ is the complex-linear quadratic
+**The norm.** $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=\sum_\mu Q_\mu^2$ is the complex-linear quadratic
 form, its zero set the zero-divisor cone, its value on the material sector the interval
 $-c^2t^2+x^2+y^2+z^2$. Read as mass, its sign is the mass-shell sign: the shell $N=-m^2c^2$ is the
 hyperboloid and the light cone is $N=0$. The interpretation is **value**: which level set the element lies on.
 
-**The rank.** The Hermitian square $\tilde{Q}\tilde{Q}^{*}$ is positive semidefinite, of rank two when
-$\langle\tilde{Q}\rangle_{\natural}\neq0$ and of rank at most one on the cone. Beside the mass, the rank gives the **count of
+**The rank.** The Hermitian square $\tilde{R}\tilde{R}^{*}$ is positive semidefinite, of rank two when
+$\langle\tilde{R}\rangle_{\natural}\neq0$ and of rank at most one on the cone. Beside the mass, the rank gives the **count of
 polarisations**: two for the massive type and one for the massless type. The interpretation is **count**: how many
 independent rank-one terms the square needs.
 
@@ -46,10 +46,10 @@ one of these labels.
 
 **The scale.** The polar representation writes an element as a polar factor times a phase and a unit
 element, and the modulus $r$ is the polar scale. The norm is reversed by the central imaginary,
-$\langle i\tilde{Q}\rangle_{\natural}=-\langle\tilde{Q}\rangle_{\natural}$, and its logarithm $\log\lvert N\rvert$ is read as a dilation potential. Beside
+$\langle i\tilde{R}\rangle_{\natural}=-\langle\tilde{R}\rangle_{\natural}$, and its logarithm $\log\lvert N\rvert$ is read as a dilation potential. Beside
 the mass, the scale is the **unit**: a change of $r$ is a change of the unit of length, and the conformal
 rescaling acts on it. The interpretation is **unit**: how the element scales, not what level set it lies on. The
-polar representation is stated only for $\langle\tilde{Q}\rangle_{\natural}\neq0$, so the cone is the boundary of its domain and not a
+polar representation is stated only for $\langle\tilde{R}\rangle_{\natural}\neq0$, so the cone is the boundary of its domain and not a
 locus it detects.
 
 ## Where the Norm and the Rank Agree
@@ -64,8 +64,8 @@ calling the norm and the rank two readings of one word: on the massless locus th
 element, and the dictionary of the corpus — massless, rank one, null, on the cone — is the agreement stated
 twice.
 
-$\langle\tilde{Q}\rangle_{\natural}=0$ exactly when the rank of $\tilde{Q}\tilde{Q}^{*}$ is at most one, with rank zero only at
-$\tilde{Q}=0$; off the cone the rank is two. The two directions were recomputed on $100$ of $100$ random
+$\langle\tilde{R}\rangle_{\natural}=0$ exactly when the rank of $\tilde{R}\tilde{R}^{*}$ is at most one, with rank zero only at
+$\tilde{R}=0$; off the cone the rank is two. The two directions were recomputed on $100$ of $100$ random
 non-null elements each way, and every constructed nonzero null element has rank one.
 
 Off the cone the agreement stops, and it stops in a stated way. A rank-two element may have $N>0$ or $N<0$;
@@ -98,8 +98,8 @@ algebra and not a legitimate state.
 
 | reading | the object | what it says | and the mass | where it fails |
 |---|---|---|---|---|
-| norm | $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the value and its sign; the mass shell as a level set | is the mass: $N=-m^2c^2$ on shell | detects no polarisation count and no label |
-| rank | $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the count of polarisations, two or one | whether $m$ vanishes, never its value | does not fix the sign of $\langle\cdot\rangle_{\natural}$ |
+| norm | $\langle\tilde{R}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the value and its sign; the mass shell as a level set | is the mass: $N=-m^2c^2$ on shell | detects no polarisation count and no label |
+| rank | $\mathrm{rank}\,\mathsf{M}_2(\tilde{R}\tilde{R}^{*})$ | the count of polarisations, two or one | whether $m$ vanishes, never its value | does not fix the sign of $\langle\cdot\rangle_{\natural}$ |
 | charge | the compact slice $\mathrm{U}(2)\cong(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ | the discrete internal label | nothing; $m$ is not a charge | says nothing about the cone |
 | scale | the polar modulus $r$ | the unit of length, the dilation potential | the unit of $m$: $r=mc$ for the four-momentum | is a unit and not a level set |
 
@@ -113,8 +113,8 @@ the word should ask which reading is meant.
 ## The Fifth Reading, Named and Left Out
 
 A fifth interpretation exists and is deliberately not one of the four. The **left-regular eigenvalue
-problem** $L_{\tilde{Q}}\tilde Q_1=\lambda\tilde Q_1$ has the spectrum of the operator,
-$\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\mathsf{M}_2(\tilde{Q}))$ with each eigenvalue twice, and a
+problem** $L_{\tilde{R}}\tilde Q_1=\lambda\tilde Q_1$ has the spectrum of the operator,
+$\mathrm{spec}(L_{\tilde{R}})=\mathrm{spec}(\mathsf{M}_2(\tilde{R}))$ with each eigenvalue twice, and a
 spectrum is not a label. The operator spectrum is owned by *The Spectra of the Operators on the Biquaternion
 Algebra with Hermitian Adjoint*, and the element spectrum it is built on by *Biquaternion Spectral Theory*.
 It is named here because it is the interpretation a reader may expect to find in this list, and it is left
@@ -151,15 +151,15 @@ the mass vanishes), the compact-slice label (a discrete internal charge, not a m
 nowhere else; the charge and the scale are silent about the cone because both are defined only off it. Off the
 cone the rank does not fix the sign of the norm, so "massive" covers the timelike and the spacelike alike. The rank-one
 condition that reads as massless on the material sector reads as pure state on the informational sector, and
-the article keeps the two apart. A fifth interpretation — the operator spectrum of $L_{\tilde{Q}}$ — is named and
+the article keeps the two apart. A fifth interpretation — the operator spectrum of $L_{\tilde{R}}$ — is named and
 left out, and the Dirac and Majorana pair is placed at the equation level, outside the four rows.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm, the interval, the value and its level set |
-| $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the rank of the Hermitian square, two off the cone and at most one on it |
+| $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}$ | the biquaternion norm, the interval, the value and its level set |
+| $\mathrm{rank}\,\mathsf{M}_2(\tilde{R}\tilde{R}^{*})$ | the rank of the Hermitian square, two off the cone and at most one on it |
 | $\mathrm{U}(2)$ | the unitary slice, compact, the internal group whose labels are the discrete charge |
 | $r$ | the polar scale, the modulus of the polar factor, the unit of the scale reading |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the material and informational sectors, on which the rank-one condition reads as massless and as a pure state respectively |

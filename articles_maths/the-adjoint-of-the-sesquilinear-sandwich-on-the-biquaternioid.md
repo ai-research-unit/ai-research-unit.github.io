@@ -3,29 +3,29 @@
 
 ## Introduction
 
-The sesquilinear sandwich $S_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\star\tilde Q_1\star\tilde Q=\tilde P\tilde Q_1^{*}\tilde Q^{*}$ of *The Sesquilinear Sandwich on the Biquaternioid* is a conjugate-linear operator, and the Hermitian form
+The sesquilinear sandwich $S_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\star\tilde Q_1\star\tilde Q_3=\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$ of *The Sesquilinear Sandwich on the Biquaternioid* is a conjugate-linear operator, and the Hermitian form
 
 $$
 \varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}=\tfrac12\,\mathrm{tr}\bigl(\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}\bigr)
 $$
 
-of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde P,\tilde Q}^{\dagger}$ characterised by
+of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* is perfect and sesqui-symmetric. The two together give the **adjoint** of the sandwich: the conjugate-linear operator $S_{\tilde Q,\tilde Q_3}^{\dagger}$ characterised by
 
 $$
-\varphi\bigl(S_{\tilde P,\tilde Q}\tilde Q_1,\tilde Q_2\bigr)=\overline{\varphi\bigl(\tilde Q_1,S_{\tilde P,\tilde Q}^{\dagger}\tilde Q_2\bigr)} .
+\varphi\bigl(S_{\tilde Q,\tilde Q_3}\tilde Q_1,\tilde Q_2\bigr)=\overline{\varphi\bigl(\tilde Q_1,S_{\tilde Q,\tilde Q_3}^{\dagger}\tilde Q_2\bigr)} .
 $$
 
 The computation is one line in the coordinates, and its result is symmetric and memorable:
 
 $$
-S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P^{*}} , \qquad\text{equivalently}\qquad (\tilde P\star\cdot\star\tilde Q)^{\dagger}=\tilde Q^{*}\star\cdot\star\tilde P^{*} .
+S_{\tilde Q,\tilde Q_3}^{\dagger}=S_{\tilde Q_3^{*},\tilde Q^{*}} , \qquad\text{equivalently}\qquad (\tilde Q\star\cdot\star\tilde Q_3)^{\dagger}=\tilde Q_3^{*}\star\cdot\star\tilde Q^{*} .
 $$
 
-The adjoint exchanges the two parameters and conjugates them; it is an involution on the sandwich family, and the **self-adjoint** sandwiches are those whose two parameters are a conjugate pair, $S_{\tilde P,\tilde P^{*}}$, the conjugate pair being the self-adjoint pairs up to the scalar ambiguity of the parametrisation. The quadratic representation of the ternary product, which is the sandwich $\tilde Q_3\tilde Q_2^{*}\tilde Q_3=S_{\tilde Q_3,\tilde Q_3^{*}}$, is therefore self-adjoint, and this is the operator form of the Hermitian symmetry of the ternary product.
+The adjoint exchanges the two parameters and conjugates them; it is an involution on the sandwich family, and the **self-adjoint** sandwiches are those whose two parameters are a conjugate pair, $S_{\tilde Q,\tilde Q^{*}}$, the conjugate pair being the self-adjoint pairs up to the scalar ambiguity of the parametrisation. The quadratic representation of the ternary product, which is the sandwich $\tilde Q_3\tilde Q_2^{*}\tilde Q_3=S_{\tilde Q_3,\tilde Q_3^{*}}$, is therefore self-adjoint, and this is the operator form of the Hermitian symmetry of the ternary product.
 
 The article is the seventh of the batch and reads the general article *The Sesquilinear Adjoint Operator*, whose definition for a conjugate-linear operator, twisted rule and computation for the standard model are quoted; the operator whose adjoint is taken is *The Sesquilinear Sandwich on the Biquaternioid*, above in this group, and its relation to the ternary product is *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*. The ternary forms of the adjoint are *The Adjoint of the Ternary Product* and *The Ternary Product as an Operator*, and the model in which the form becomes the trace is *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model*. The two one-sided operators whose adjoints are computed below are those of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The sandwich is $S_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1^{*}\tilde Q^{*}$ and the ordinary two-sided multiplication is $T_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1\tilde Q$.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, ${}^{*}$ the conjugate-linear involution with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$, and the multiplication $\tilde Q\star\tilde Q_3=\tilde Q\tilde Q_3^{*}$. The sandwich is $S_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$ and the ordinary two-sided multiplication is $T_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q_3$.
 
 ## The Hermitian Form and the Adjoint
 
@@ -67,34 +67,34 @@ for all $\tilde Q_1,\tilde Q_2$. For a linear operator $T$ the adjoint is define
 
 **Proof.** These are the two computations of *The Sesquilinear Adjoint Operator*, §*The Sandwich and the Two-Sided Multiplication*, with the trace functional $\tau$ of that article read as the scalar part $\mathrm{Sc}$ here, the datum $(\mathbb{C},\varsigma)$ being the conjugation on the scalars; the compatibility $\mathrm{Sc}(\tilde S^{*})=\overline{\mathrm{Sc}(\tilde S)}$ and the centrality $\mathrm{Sc}(\tilde S\tilde Q_4)=\mathrm{Sc}(\tilde Q_4\tilde S)$ are the properties of the scalar part, and the pairings are perfect by §*The Form*.
 
-**Remark.** The translation between the general notation and the notation of this batch is the placement of the star: in the general article the sandwich is $ax^{*}b$, while the batch writes the sandwich of *The Sesquilinear Sandwich on the Biquaternioid* as $\tilde P\tilde Q_1^{*}\tilde Q^{*}$, that is $S_{\tilde P,\tilde Q}=S_{\tilde P,\tilde Q^{*}}$ in the general notation, with the second parameter conjugated. The next section translates the general theorem accordingly.
+**Remark.** The translation between the general notation and the notation of this batch is the placement of the star: in the general article the sandwich is $ax^{*}b$, while the batch writes the sandwich of *The Sesquilinear Sandwich on the Biquaternioid* as $\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$, that is $S_{\tilde Q,\tilde Q_3}=S_{\tilde Q,\tilde Q_3^{*}}$ in the general notation, with the second parameter conjugated. The next section translates the general theorem accordingly.
 
 ## The Adjoint of the Sandwich
 
 ### The Main Identity
 
-**Theorem (the adjoint of the sandwich).** For all $\tilde P,\tilde Q$,
+**Theorem (the adjoint of the sandwich).** For all $\tilde Q,\tilde Q_3$,
 
 $$
-S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P^{*}} ,
+S_{\tilde Q,\tilde Q_3}^{\dagger}=S_{\tilde Q_3^{*},\tilde Q^{*}} ,
 $$
 
-that is, $(\tilde P\star\cdot\star\tilde Q)^{\dagger}=\tilde Q^{*}\star\cdot\star\tilde P^{*}$; explicitly,
+that is, $(\tilde Q\star\cdot\star\tilde Q_3)^{\dagger}=\tilde Q_3^{*}\star\cdot\star\tilde Q^{*}$; explicitly,
 
 $$
-\varphi\bigl(\tilde P\tilde Q_1^{*}\tilde Q^{*},\tilde Q_2\bigr)=\overline{\varphi\bigl(\tilde Q_1,\tilde Q^{*}\tilde Q_2^{*}\tilde P\bigr)} .
+\varphi\bigl(\tilde Q\tilde Q_1^{*}\tilde Q_3^{*},\tilde Q_2\bigr)=\overline{\varphi\bigl(\tilde Q_1,\tilde Q_3^{*}\tilde Q_2^{*}\tilde Q\bigr)} .
 $$
 
-**Proof.** The general sandwich of *The Sesquilinear Adjoint Operator*, §*The Sandwich and the Two-Sided Multiplication*, is $S_{a,b}(x)=ax^{*}b$ with the adjoint $S_{b,a}$; the batch sandwich is $S_{\tilde P,\tilde Q}=S_{\tilde P,\tilde Q^{*}}$ in that notation, so the general theorem gives $S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P}$, and $S_{\tilde Q^{*},\tilde P}$ is the batch sandwich with the first parameter $\tilde Q^{*}$ and the second parameter $\tilde P^{*}$, that is $S_{\tilde Q^{*},\tilde P^{*}}$ because the batch writes the second parameter already starred. The explicit display is the resulting computation in the coordinates.
+**Proof.** The general sandwich of *The Sesquilinear Adjoint Operator*, §*The Sandwich and the Two-Sided Multiplication*, is $S_{a,b}(x)=ax^{*}b$ with the adjoint $S_{b,a}$; the batch sandwich is $S_{\tilde Q,\tilde Q_3}=S_{\tilde Q,\tilde Q_3^{*}}$ in that notation, so the general theorem gives $S_{\tilde Q,\tilde Q_3}^{\dagger}=S_{\tilde Q_3^{*},\tilde Q}$, and $S_{\tilde Q_3^{*},\tilde Q}$ is the batch sandwich with the first parameter $\tilde Q_3^{*}$ and the second parameter $\tilde Q^{*}$, that is $S_{\tilde Q_3^{*},\tilde Q^{*}}$ because the batch writes the second parameter already starred. The explicit display is the resulting computation in the coordinates.
 
-**Remark.** The adjoint therefore stars the two parameters and exchanges them, and it is again a sandwich. Applied twice it returns the original, $S_{\tilde P,\tilde Q}^{\dagger\dagger}=S_{\tilde P,\tilde Q}$, so the adjoint is an involution on the sandwich family; it is conjugate-linear in the sandwich and it exchanges the two parameters, which is the operator form of the exchange of the two outer slots of the ternary product.
+**Remark.** The adjoint therefore stars the two parameters and exchanges them, and it is again a sandwich. Applied twice it returns the original, $S_{\tilde Q,\tilde Q_3}^{\dagger\dagger}=S_{\tilde Q,\tilde Q_3}$, so the adjoint is an involution on the sandwich family; it is conjugate-linear in the sandwich and it exchanges the two parameters, which is the operator form of the exchange of the two outer slots of the ternary product.
 
 ### The Exchange Identity
 
-**Corollary (the identity that exchanges the two).** For all $\tilde P,\tilde Q,\tilde Q_1,\tilde Q_2$,
+**Corollary (the identity that exchanges the two).** For all $\tilde Q,\tilde Q_3,\tilde Q_1,\tilde Q_2$,
 
 $$
-\varphi\bigl(S_{\tilde P,\tilde Q}\tilde Q_1,\tilde Q_2\bigr)=\overline{\varphi\bigl(\tilde Q_1,S_{\tilde Q^{*},\tilde P^{*}}\tilde Q_2\bigr)} ,
+\varphi\bigl(S_{\tilde Q,\tilde Q_3}\tilde Q_1,\tilde Q_2\bigr)=\overline{\varphi\bigl(\tilde Q_1,S_{\tilde Q_3^{*},\tilde Q^{*}}\tilde Q_2\bigr)} ,
 $$
 
 and with the Hermitian adjoint written $S^{\dagger}$ the identity is the definition of the adjoint of §*The Twisted Adjoint Rule*.
@@ -105,17 +105,17 @@ and with the Hermitian adjoint written $S^{\dagger}$ the identity is the definit
 
 ### The Self-Adjoint Sandwiches
 
-**Theorem (the self-adjoint criterion).** The sandwich $S_{\tilde P,\tilde Q}$ is self-adjoint if and only if $S_{\tilde Q^{*},\tilde P^{*}}=S_{\tilde P,\tilde Q}$; in particular every sandwich with conjugate parameters is self-adjoint,
+**Theorem (the self-adjoint criterion).** The sandwich $S_{\tilde Q,\tilde Q_3}$ is self-adjoint if and only if $S_{\tilde Q_3^{*},\tilde Q^{*}}=S_{\tilde Q,\tilde Q_3}$; in particular every sandwich with conjugate parameters is self-adjoint,
 
 $$
-S_{\tilde P,\tilde P^{*}}(\tilde Q_1)=\tilde P\tilde Q_1^{*}\tilde P ,
+S_{\tilde Q,\tilde Q^{*}}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q ,
 $$
 
-and for two invertible parameters the criterion is equivalent to $\tilde Q=\bar c\,\tilde P^{*}$ for a nonzero complex number $c$, so that the self-adjoint sandwiches with invertible parameters are the conjugate pairs up to that scalar ambiguity.
+and for two invertible parameters the criterion is equivalent to $\tilde Q_3=\bar c\,\tilde Q^{*}$ for a nonzero complex number $c$, so that the self-adjoint sandwiches with invertible parameters are the conjugate pairs up to that scalar ambiguity.
 
-**Proof.** By the main identity, $S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P^{*}}$, so self-adjointness is the equality $S_{\tilde Q^{*},\tilde P^{*}}=S_{\tilde P,\tilde Q}$. The conjugate pair satisfies it, because $(\tilde Q^{*},\tilde P^{*})=(\tilde P,\tilde P^{*})$ when $\tilde Q=\tilde P^{*}$. Conversely the equality of two sandwiches is the equality of two parametrised two-sided operators, and the kernel of the parametrisation is the group of the central units $\tilde Z=c\,e_t$, by *The Sesquilinear Sandwich on the Biquaternioid*, §*The Invertible Sandwiches*; for invertible parameters the equality therefore reads $(\tilde Q^{*},\tilde P^{*})=(\tilde P\tilde Z,\tilde Q\tilde Z^{-1*})$ with $\tilde Z=c\,e_t$ a central unit, $c\in\mathbb{C}^{\times}$, that is $\tilde Q^{*}=c\tilde P$ and $\tilde P^{*}=\bar c^{-1}\tilde Q$, which is the single equation $\tilde Q=\bar c\,\tilde P^{*}$.
+**Proof.** By the main identity, $S_{\tilde Q,\tilde Q_3}^{\dagger}=S_{\tilde Q_3^{*},\tilde Q^{*}}$, so self-adjointness is the equality $S_{\tilde Q_3^{*},\tilde Q^{*}}=S_{\tilde Q,\tilde Q_3}$. The conjugate pair satisfies it, because $(\tilde Q_3^{*},\tilde Q^{*})=(\tilde Q,\tilde Q^{*})$ when $\tilde Q_3=\tilde Q^{*}$. Conversely the equality of two sandwiches is the equality of two parametrised two-sided operators, and the kernel of the parametrisation is the group of the central units $\tilde Z=c\,e_t$, by *The Sesquilinear Sandwich on the Biquaternioid*, §*The Invertible Sandwiches*; for invertible parameters the equality therefore reads $(\tilde Q_3^{*},\tilde Q^{*})=(\tilde Q\tilde Z,\tilde Q_3\tilde Z^{-1*})$ with $\tilde Z=c\,e_t$ a central unit, $c\in\mathbb{C}^{\times}$, that is $\tilde Q_3^{*}=c\tilde Q$ and $\tilde Q^{*}=\bar c^{-1}\tilde Q_3$, which is the single equation $\tilde Q_3=\bar c\,\tilde Q^{*}$.
 
-**Remark.** The self-adjoint sandwiches are therefore the sandwiches of the conjugate pairs, and they are parametrised by the elements $\tilde P$ of the algebra together with the scalar ambiguity $\tilde Q=\bar c\,\tilde P^{*}$, a four-dimensional complex family of operators. The adjoint is an involution on the sandwich family, so the self-adjoint sandwiches are the fixed points of that involution. The involution $S_{e_t,e_t}={}^{*}$ is the case $\tilde P=e_t$, and it is self-adjoint; the quadratic representation of the ternary product is the general case, by the next section.
+**Remark.** The self-adjoint sandwiches are therefore the sandwiches of the conjugate pairs, and they are parametrised by the elements $\tilde Q$ of the algebra together with the scalar ambiguity $\tilde Q_3=\bar c\,\tilde Q^{*}$, a four-dimensional complex family of operators. The adjoint is an involution on the sandwich family, so the self-adjoint sandwiches are the fixed points of that involution. The involution $S_{e_t,e_t}={}^{*}$ is the case $\tilde Q=e_t$, and it is self-adjoint; the quadratic representation of the ternary product is the general case, by the next section.
 
 ## The Special Cases
 
@@ -136,12 +136,12 @@ $$
 **Theorem.** For the left multiplication, the right multiplication and the ordinary two-sided multiplication,
 
 $$
-L_{\tilde P}^{\dagger}=S_{e_t,\tilde P^{*}} , \qquad R_{\tilde Q}^{\dagger}=T_{e_t,\tilde Q} , \qquad T_{\tilde P,\tilde Q}^{\dagger}=T_{\tilde P^{*},\tilde Q^{*}} .
+L_{\tilde Q}^{\dagger}=S_{e_t,\tilde Q^{*}} , \qquad R_{\tilde Q_3}^{\dagger}=T_{e_t,\tilde Q_3} , \qquad T_{\tilde Q,\tilde Q_3}^{\dagger}=T_{\tilde Q^{*},\tilde Q_3^{*}} .
 $$
 
-**Proof.** The left multiplication is the sandwich $S_{\tilde P,e_t}$, so the main identity gives $L_{\tilde P}^{\dagger}=S_{e_t,\tilde P^{*}}$. The right multiplication is linear and equals $T_{e_t,\tilde Q^{*}}$, so the second display is the general theorem for the two-sided multiplication; the third display is the same theorem.
+**Proof.** The left multiplication is the sandwich $S_{\tilde Q,e_t}$, so the main identity gives $L_{\tilde Q}^{\dagger}=S_{e_t,\tilde Q^{*}}$. The right multiplication is linear and equals $T_{e_t,\tilde Q_3^{*}}$, so the second display is the general theorem for the two-sided multiplication; the third display is the same theorem.
 
-**Remark.** The left multiplication is conjugate-linear and its adjoint is a sandwich with a unit in the first slot; the operator $S_{e_t,\tilde P^{*}}$ is the map $\tilde Q_1\mapsto\tilde Q_1^{*}\tilde P$, which is neither a left nor a right multiplication, by *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*, and it is the mixed composite $R_{\tilde P^{*}}L_{e_t}$. The right multiplication is linear and its adjoint is again an ordinary multiplication on the other side. This is the operator form of the asymmetry of the two sides that the one-sided unit produces.
+**Remark.** The left multiplication is conjugate-linear and its adjoint is a sandwich with a unit in the first slot; the operator $S_{e_t,\tilde Q^{*}}$ is the map $\tilde Q_1\mapsto\tilde Q_1^{*}\tilde Q$, which is neither a left nor a right multiplication, by *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*, and it is the mixed composite $R_{\tilde Q^{*}}L_{e_t}$. The right multiplication is linear and its adjoint is again an ordinary multiplication on the other side. This is the operator form of the asymmetry of the two sides that the one-sided unit produces.
 
 ### The Quadratic Representation
 
@@ -159,21 +159,21 @@ is self-adjoint for every $\tilde Q_3$.
 
 ## The Matrix Model Interpretation
 
-**Proposition.** In the model of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model* the sandwich is $S_{P,Q}(X)=PX^{\dagger}Q^{\dagger}$ and the form is $\varphi(X,Y)=\tfrac12\mathrm{tr}(XY^{\dagger})$, with $P=\mathsf{M}_2(\tilde P)$ and $Q=\mathsf{M}_2(\tilde Q)$ the matrices of the two parameters; the adjoint of the sandwich is
+**Proposition.** In the model of *The Biquaternion Sesqualgebra in the $2\times2$ Matrix Model* the sandwich is $S_{A,B}(X)=AX^{\dagger}B^{\dagger}$ and the form is $\varphi(X,Y)=\tfrac12\mathrm{tr}(XY^{\dagger})$, with $A=\mathsf{M}_2(\tilde Q)$ and $B=\mathsf{M}_2(\tilde Q_3)$ the matrices of the two parameters; the adjoint of the sandwich is
 
 $$
-S_{P,Q}^{\dagger}(X)=Q^{\dagger}X^{\dagger}P ,
+S_{A,B}^{\dagger}(X)=B^{\dagger}X^{\dagger}A ,
 $$
 
 which is the sandwich of the adjoint parameters, the two matrices exchanged and each read with the Hermitian transpose.
 
-**Proof.** In the model the involution is the Hermitian transpose, so $\Phi(S_{\tilde Q^{*},\tilde P^{*}}(\tilde Q_1))=\mathsf{M}_2(\tilde Q^{*})\mathsf{M}_2(\tilde Q_1)^{\dagger}\mathsf{M}_2(\tilde P^{*})^{\dagger}=Q^{\dagger}X^{\dagger}(P^{\dagger})^{\dagger}=Q^{\dagger}X^{\dagger}P$, which is the display; the trace form is the standard form of the matrix algebra, for which the adjoint of $X\mapsto PX^{\dagger}Q^{\dagger}$ is $X\mapsto Q^{\dagger}X^{\dagger}P$ by the theorem.
+**Proof.** In the model the involution is the Hermitian transpose, so $\Phi(S_{\tilde Q_3^{*},\tilde Q^{*}}(\tilde Q_1))=\mathsf{M}_2(\tilde Q_3^{*})\mathsf{M}_2(\tilde Q_1)^{\dagger}\mathsf{M}_2(\tilde Q^{*})^{\dagger}=B^{\dagger}X^{\dagger}(A^{\dagger})^{\dagger}=B^{\dagger}X^{\dagger}A$, which is the display; the trace form is the standard form of the matrix algebra, for which the adjoint of $X\mapsto AX^{\dagger}B^{\dagger}$ is $X\mapsto B^{\dagger}X^{\dagger}A$ by the theorem.
 
-**Remark.** The model makes the adjoint an explicit operation on the two outer factors: the adjoint of the sandwich with the matrices $P$ and $Q$ is the sandwich with the two matrices exchanged and Hermitian-transposed, that is the sandwich of the matrices of the adjoint elements $\tilde Q^{*}$ and $\tilde P^{*}$. This is the matrix form of the exchange of the two outer slots of the ternary product, and it is the same exchange that the identity of §*The Exchange Identity* performs on the parameters.
+**Remark.** The model makes the adjoint an explicit operation on the two outer factors: the adjoint of the sandwich with the matrices $A$ and $B$ is the sandwich with the two matrices exchanged and Hermitian-transposed, that is the sandwich of the matrices of the adjoint elements $\tilde Q_3^{*}$ and $\tilde Q^{*}$. This is the matrix form of the exchange of the two outer slots of the ternary product, and it is the same exchange that the identity of §*The Exchange Identity* performs on the parameters.
 
 ## Summary
 
-With respect to the Hermitian form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ the adjoint of the sandwich $S_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1^{*}\tilde Q^{*}$ is $S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P^{*}}$: the adjoint stars the two parameters and exchanges them, satisfies the identity $\varphi(S_{\tilde P,\tilde Q}\tilde Q_1,\tilde Q_2)=\overline{\varphi(\tilde Q_1,S_{\tilde Q^{*},\tilde P^{*}}\tilde Q_2)}$, and is an involution on the sandwich family. The self-adjoint sandwiches are the sandwiches with conjugate parameters, $S_{\tilde P,\tilde P^{*}}=\tilde P(\cdot)^{*}\tilde P$, and the involution $S_{e_t,e_t}={}^{*}$ and the quadratic representation $S_{\tilde Q_3,\tilde Q_3^{*}}$ of the ternary product are the two distinguished cases. The left multiplication has the adjoint $S_{e_t,\tilde P^{*}}$, the right multiplication the adjoint $T_{e_t,\tilde Q}$, and the ordinary two-sided multiplication the adjoint $T_{\tilde P^{*},\tilde Q^{*}}$. In the model the adjoint of $X\mapsto PX^{\dagger}Q^{\dagger}$ is $X\mapsto Q^{\dagger}X^{\dagger}P$, the two factors exchanged and conjugated, and the form is the trace pairing.
+With respect to the Hermitian form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ the adjoint of the sandwich $S_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$ is $S_{\tilde Q,\tilde Q_3}^{\dagger}=S_{\tilde Q_3^{*},\tilde Q^{*}}$: the adjoint stars the two parameters and exchanges them, satisfies the identity $\varphi(S_{\tilde Q,\tilde Q_3}\tilde Q_1,\tilde Q_2)=\overline{\varphi(\tilde Q_1,S_{\tilde Q_3^{*},\tilde Q^{*}}\tilde Q_2)}$, and is an involution on the sandwich family. The self-adjoint sandwiches are the sandwiches with conjugate parameters, $S_{\tilde Q,\tilde Q^{*}}=\tilde Q(\cdot)^{*}\tilde Q$, and the involution $S_{e_t,e_t}={}^{*}$ and the quadratic representation $S_{\tilde Q_3,\tilde Q_3^{*}}$ of the ternary product are the two distinguished cases. The left multiplication has the adjoint $S_{e_t,\tilde Q^{*}}$, the right multiplication the adjoint $T_{e_t,\tilde Q_3}$, and the ordinary two-sided multiplication the adjoint $T_{\tilde Q^{*},\tilde Q_3^{*}}$. In the model the adjoint of $X\mapsto AX^{\dagger}B^{\dagger}$ is $X\mapsto B^{\dagger}X^{\dagger}A$, the two factors exchanged and conjugated, and the form is the trace pairing.
 
 ## Summary of Notation
 
@@ -181,16 +181,16 @@ With respect to the Hermitian form $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\
 |---|---|
 | $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the Hermitian form, perfect and sesqui-symmetric |
 | $\varphi(S\tilde Q_1,\tilde Q_2)=\overline{\varphi(\tilde Q_1,S^{\dagger}\tilde Q_2)}$ | the twisted adjoint rule for a conjugate-linear operator |
-| $S_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1^{*}\tilde Q^{*}$ | the sandwich |
-| $S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P^{*}}$ | the adjoint of the sandwich |
-| $\varphi(S_{\tilde P,\tilde Q}\tilde Q_1,\tilde Q_2)=\overline{\varphi(\tilde Q_1,S_{\tilde Q^{*},\tilde P^{*}}\tilde Q_2)}$ | the identity that exchanges the two parameters |
-| $S_{\tilde P,\tilde P^{*}}=\tilde P(\cdot)^{*}\tilde P$ | the self-adjoint sandwiches with conjugate parameters |
+| $S_{\tilde Q,\tilde Q_3}(\tilde Q_1)=\tilde Q\tilde Q_1^{*}\tilde Q_3^{*}$ | the sandwich |
+| $S_{\tilde Q,\tilde Q_3}^{\dagger}=S_{\tilde Q_3^{*},\tilde Q^{*}}$ | the adjoint of the sandwich |
+| $\varphi(S_{\tilde Q,\tilde Q_3}\tilde Q_1,\tilde Q_2)=\overline{\varphi(\tilde Q_1,S_{\tilde Q_3^{*},\tilde Q^{*}}\tilde Q_2)}$ | the identity that exchanges the two parameters |
+| $S_{\tilde Q,\tilde Q^{*}}=\tilde Q(\cdot)^{*}\tilde Q$ | the self-adjoint sandwiches with conjugate parameters |
 | $S_{e_t,e_t}={}^{*}$ | the involution, self-adjoint |
 | $S_{\tilde Q_3,\tilde Q_3^{*}}(\tilde Q_2)=\tilde Q_3\tilde Q_2^{*}\tilde Q_3$ | the quadratic representation, self-adjoint |
-| $L_{\tilde P}^{\dagger}=S_{e_t,\tilde P^{*}}$ | the adjoint of the left multiplication |
-| $R_{\tilde Q}^{\dagger}=T_{e_t,\tilde Q}$ | the adjoint of the right multiplication |
-| $T_{\tilde P,\tilde Q}^{\dagger}=T_{\tilde P^{*},\tilde Q^{*}}$ | the adjoint of the ordinary two-sided multiplication |
-| $S_{P,Q}^{\dagger}(X)=Q^{\dagger}X^{\dagger}P$ | the adjoint in the matrix model |
+| $L_{\tilde Q}^{\dagger}=S_{e_t,\tilde Q^{*}}$ | the adjoint of the left multiplication |
+| $R_{\tilde Q_3}^{\dagger}=T_{e_t,\tilde Q_3}$ | the adjoint of the right multiplication |
+| $T_{\tilde Q,\tilde Q_3}^{\dagger}=T_{\tilde Q^{*},\tilde Q_3^{*}}$ | the adjoint of the ordinary two-sided multiplication |
+| $S_{A,B}^{\dagger}(X)=B^{\dagger}X^{\dagger}A$ | the adjoint in the matrix model |
 
 ## Further Reading
 

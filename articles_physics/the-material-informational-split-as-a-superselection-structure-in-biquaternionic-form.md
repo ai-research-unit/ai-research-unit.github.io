@@ -253,7 +253,7 @@ with even part $\mathbb{M}_-^{0}$ and odd part $\mathbb{M}_+^{0}$.
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the interpretation in one place.
 
-**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
 Each observable is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the Hermitian representative is its reading operator.
 
@@ -298,9 +298,9 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{M}_\pm^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}$ |
 | $\mathbb{M}_-^{0}\cong\mathrm{SU}(2)$ | Material traceless part, compact rotations |
 | $\mathbb{M}_+^{0}$ | Informational traceless part, non-compact boosts |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

@@ -682,7 +682,7 @@ element theory of the algebra.
 - $C(\tilde Q)e_t=\tilde Q^{\natural}\tilde Q$ the central square; the cone $\mathcal{C}=\{C=0\}$.
 - $Z_1,Z_2,Z_3,Z_4$ the square-zero sets of the plain, natural, general plain sesquilinear and general quaternionic sesquilinear products.
 - $A_\star(\tilde P)$, $B_\star(\tilde P)$ the left and right annihilators; self-annihilation is $\tilde P\in A_\star(\tilde P)$.
-- ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde Q=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$.
+- ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde R=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; $\langle\tilde R\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$.
 - The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 
 ## Further Reading

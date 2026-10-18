@@ -5,7 +5,7 @@
 This article isolates the block among the twelve structures of the biquaternion complex space by a single
 law, the law of being **$\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian**. The block is the symmetric
 quaternionic sesquilinear product
-$\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ of
+$\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural})$ of
 *Introduction to the Symmetric Quaternionic Sesqualgebra*; the twelve structures and their
 four general products are the subject of *The 12 Products of the Biquaternioid Complex Space*, and the model
 of the method is *The Specificities of the Biquaternion Algebra*, which isolates the plain product by left
@@ -14,9 +14,9 @@ alternativity. The twin articles are
 Algebra*.
 
 The law has two clauses, and each is an identity in the product. The first is the **conjugate-symmetry**
-$\tilde P\star\tilde Q=\overline{\tilde Q\star\tilde P}$, which is to say that the product is fixed by the
+$\tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1}$, which is to say that the product is fixed by the
 adapted exchange of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the second is that
-the **scalar part is the Krein form**, $\mathrm{Sc}(\tilde P\star\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}$, the form
+the **scalar part is the Krein form**, $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, the form
 of *Introduction to the General Quaternionic Sesqualgebra* and *The Krein Gram Matrix and
 the Restrictions of the Form*. The theorem of the article is that among the twelve structures the block is
 the only one satisfying both clauses, each clause alone being satisfied by another structure: the plain
@@ -35,14 +35,14 @@ Sesqualgebra*, where the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness tha
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
 $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
-scalar imaginary $i$; $\vec Q=\sum_kQ_k\vec e_k$; $(\vec P,\vec Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
+scalar imaginary $i$; $\vec Q=\sum_kQ_k\vec e_k$; $(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$; ${}^{\natural}$ negates
 $\vec e_x,\vec e_y,\vec e_z$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
 ${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}(\tilde Q_1)=Q_{1t}$ is the scalar part;
 $\varepsilon=(1,-1,-1,-1)$; and
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}
-=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}
+=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})
 $$
 
 is the Krein form. The twelve structures are the four general products
@@ -59,12 +59,12 @@ names.
 identities
 
 $$
-\text{(C1)}\quad \tilde P\circ\tilde Q=\overline{\tilde Q\circ\tilde P},
+\text{(C1)}\quad \tilde Q_1\circ\tilde Q_2=\overline{\tilde Q_2\circ\tilde Q_1},
 \qquad
-\text{(C2)}\quad \mathrm{Sc}\bigl(\tilde P\circ\tilde Q\bigr)=\langle\tilde P,\tilde Q\rangle_{\natural*}
+\text{(C2)}\quad \mathrm{Sc}\bigl(\tilde Q_1\circ\tilde Q_2\bigr)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}
 $$
 
-hold for all $\tilde P,\tilde Q\in\mathbb{B}$. The first is the **conjugate-symmetry** of the product, the
+hold for all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$. The first is the **conjugate-symmetry** of the product, the
 second is the **scalar-part identity**.
 
 **Remark (the two clauses read one at a time).** The clause (C1) says that the product is fixed by the
@@ -72,7 +72,7 @@ adapted exchange $f\mapsto\overline{f\circ E}$, the transposition composed with 
 conjugation, which is the exchange that keeps the sesqualgebra class
 (*The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*). The clause (C2) says that the scalar
 part of the product is the form $\langle\cdot,\cdot\rangle_{\natural*}$ and not another of the four forms of the row, the complex bilinear form,
-the plain Hermitian form or the plain bilinear form. Each clause is an identity in $\tilde P,\tilde Q$ and
+the plain Hermitian form or the plain bilinear form. Each clause is an identity in $\tilde Q_1,\tilde Q_2$ and
 each is invariant under the change of the product, so they can be tested one structure at a time.
 
 **Theorem (the block is $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian).** The block satisfies (C1) and (C2).
@@ -81,13 +81,13 @@ each is invariant under the change of the product, so they can be tested one str
 Biquaternions* is
 
 $$
-\tilde P\star\tilde Q=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P;
+\tilde Q_1\star\tilde Q_2=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1;
 $$
 
-the bracket is $\langle\tilde P,\tilde Q\rangle_{\natural*}$ and is the scalar part, which is (C2). For (C1), conjugate the product with the arguments exchanged and use that the two
+the bracket is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ and is the scalar part, which is (C2). For (C1), conjugate the product with the arguments exchanged and use that the two
 conjugations are anti-automorphisms of the plain product: the scalar bracket is fixed because $\langle\cdot,\cdot\rangle_{\natural*}$ is
-Hermitian, and the vector part $-Q_t\overline{\vec P}-\overline{Q_t}\vec P$ is the same as the vector
-part of $\tilde P\star\tilde Q$. So $\overline{\tilde Q\star\tilde P}=\tilde P\star\tilde Q$.
+Hermitian, and the vector part $-Q_{2t}\overline{\vec Q_1}-\overline{Q_{2t}}\vec Q_1$ is the same as the vector
+part of $\tilde Q_1\star\tilde Q_2$. So $\overline{\tilde Q_2\star\tilde Q_1}=\tilde Q_1\star\tilde Q_2$.
 
 ## The Criterion
 
@@ -101,7 +101,7 @@ $\mathrm{SQS}$ is the only $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian pro
 
 **Theorem (the isolation).** Among the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, the block is the only $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian product.
 
-*Proof.* The block satisfies both clauses by §*The Law: Being $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian*. The other eleven each fail at least one clause. The three bilinear general products GPA and the bilinear parts SPA, SQA fail conjugate-symmetry at $(i\vec e_x,\vec e_x)$, where a bilinear product reverses the imaginary unit, and fail the scalar-part identity at the elements $\vec e_x$ and $i\vec e_x$, where the bilinear form differs from $\langle\cdot,\cdot\rangle_{\natural*}$; the two sesquilinear general products GPS and GQS fail conjugate-symmetry at $(\vec e_x,\vec e_y)$, where the two sides are opposite signs of $\vec e_z$, GQS satisfying the scalar-part identity while GPS fails it at $\vec e_x$; the symmetric plain sesquilinear part SPS satisfies conjugate-symmetry and fails the scalar-part identity at $\vec e_x$, its scalar part being the definite form $|P_t|^2+\lVert\vec P\rVert^2$ and not $\langle\cdot,\cdot\rangle_{\natural*}$; and the four antisymmetric parts fail both, being skew-conjugate-symmetric — so conjugate-symmetry would force them to vanish — and having identically vanishing scalar part.
+*Proof.* The block satisfies both clauses by §*The Law: Being $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian*. The other eleven each fail at least one clause. The three bilinear general products GPA and the bilinear parts SPA, SQA fail conjugate-symmetry at $(i\vec e_x,\vec e_x)$, where a bilinear product reverses the imaginary unit, and fail the scalar-part identity at the elements $\vec e_x$ and $i\vec e_x$, where the bilinear form differs from $\langle\cdot,\cdot\rangle_{\natural*}$; the two sesquilinear general products GPS and GQS fail conjugate-symmetry at $(\vec e_x,\vec e_y)$, where the two sides are opposite signs of $\vec e_z$, GQS satisfying the scalar-part identity while GPS fails it at $\vec e_x$; the symmetric plain sesquilinear part SPS satisfies conjugate-symmetry and fails the scalar-part identity at $\vec e_x$, its scalar part being the definite form $|Q_{1t}|^2+\lVert\vec Q_1\rVert^2$ and not $\langle\cdot,\cdot\rangle_{\natural*}$; and the four antisymmetric parts fail both, being skew-conjugate-symmetric — so conjugate-symmetry would force them to vanish — and having identically vanishing scalar part.
 
 | family | structures | conjugate-symmetry | scalar part $\langle\cdot,\cdot\rangle_{\natural*}$ |
 |---|---|---|---|
@@ -160,8 +160,8 @@ of the first boundary nor the vanishing vector part of the second.
 
 The block is isolated among the twelve structures of the biquaternion complex space by the law of being
 $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian: the product is conjugate-symmetric,
-$\tilde P\star\tilde Q=\overline{\tilde Q\star\tilde P}$, and its scalar part is the Krein form,
-$\mathrm{Sc}(\tilde P\star\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}$. The block satisfies both clauses; the eleven other
+$\tilde Q_1\star\tilde Q_2=\overline{\tilde Q_2\star\tilde Q_1}$, and its scalar part is the Krein form,
+$\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. The block satisfies both clauses; the eleven other
 structures each fail at least one, the failures being read at the pairs $(i\vec e_x,\vec e_x)$ and $(\vec e_x,\vec e_y)$ and at
 the elements $\vec e_x$ and $i\vec e_x$. The criterion is sharp: deleting the conjugate-symmetry admits the general quaternionic sesquilinear
 product $\mathrm{GQS}$, and deleting the scalar-part identity admits the symmetric plain sesquilinear part
@@ -176,9 +176,9 @@ square.
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{SQS}$ | the block, the symmetric quaternionic sesquilinear product |
-| $\tilde P\circ\tilde Q=\overline{\tilde Q\circ\tilde P}$ | the clause (C1), conjugate-symmetry |
-| $\mathrm{Sc}(\tilde P\circ\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}$ | the clause (C2), the scalar-part identity |
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})$ | the Krein form, the scalar part of the block |
+| $\tilde Q_1\circ\tilde Q_2=\overline{\tilde Q_2\circ\tilde Q_1}$ | the clause (C1), conjugate-symmetry |
+| $\mathrm{Sc}(\tilde Q_1\circ\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | the clause (C2), the scalar-part identity |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | the Krein form, the scalar part of the block |
 | $\mathrm{GQS}$ | the boundary of (C1): scalar part $\langle\cdot,\cdot\rangle_{\natural*}$, no symmetry |
 | $\mathrm{SPS}$ | the boundary of (C2): conjugate-symmetric, definite scalar part |
 | $\langle L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_2\rangle_{\natural*}}$ | the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness delivered by the law |

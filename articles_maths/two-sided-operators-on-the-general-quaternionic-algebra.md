@@ -13,7 +13,7 @@ This is the **conjugation sandwich** of the biquaternion algebra, the member of 
 
 This article treats the operator: its factors, its multiplication law, its injectivity up to sign, its adjoint for the general quaternionic bilinear form, the criterion that singles it out among the products $L_aR_b$, its automorphisms, and its dagger adjoint. The general Clifford theory of the family is *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation*, to which this is the biquaternion instance; the one-sided factors are *One-Sided Operators on the General Quaternionic Algebra*; the groups cut out by the norm are *The Pin and Spin Groups of the General Quaternionic Algebra*; and the corresponding family over the Hermitian form is *Mixed Inner Conjugation on the General Plain Sesqualgebra*. The form, its matrix and its adjoint are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; nothing of the general theory is re-derived here.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The natural conjugation is $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, an anti-automorphism and an involution; the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, central and multiplicative; the general quaternionic bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$, with $\langle\cdot,\cdot\rangle_{\natural}$-adjoint written ${}^{N}$, so that $\langle T\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P,T^{N}\tilde Q\rangle_{\natural}$. The Hermitian form is $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ and its adjoint is written ${}^{*}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The natural conjugation is $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, an anti-automorphism and an involution; the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, central and multiplicative; the general quaternionic bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, with $\langle\cdot,\cdot\rangle_{\natural}$-adjoint written ${}^{N}$, so that $\langle T\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,T^{N}\tilde Q_2\rangle_{\natural}$. The Hermitian form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and its adjoint is written ${}^{*}$.
 
 ## The Operator and Its Factors
 
@@ -148,7 +148,7 @@ so that $\Theta_{\tilde A}$ is an automorphism of the general quaternionic bilin
 
 ## The Dagger Adjoint
 
-**Proposition (the adjoint for the Hermitian form).** For the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$,
+**Proposition (the adjoint for the Hermitian form).** For the general plain sesquilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$,
 
 $$
 \bigl\langle\Theta_{\tilde A}\tilde Q_1,\tilde Q_3\bigr\rangle_{*}=\bigl\langle\tilde Q_1,\Theta_{\tilde A^{*}}\tilde Q_3\bigr\rangle_{*},

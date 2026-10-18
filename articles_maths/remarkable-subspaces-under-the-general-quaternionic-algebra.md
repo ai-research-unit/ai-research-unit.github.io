@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The general quaternionic bilinear form $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, whose diagonal is the biquaternion norm, is read here on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* – the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace. On each, separating the real and imaginary parts of the coefficients turns the restriction into a real symmetric form, and this article records the signatures, the restriction Gram matrices, the two definite rows and the maximal definite subspaces, the isotropic lines of each indefinite restriction, and the automorphism group of each restriction.
+The general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu} Q_{2\mu}$, whose diagonal is the biquaternion norm, is read here on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* – the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace, the Hermitian subspace and the anti-Hermitian subspace. On each, separating the real and imaginary parts of the coefficients turns the restriction into a real symmetric form, and this article records the signatures, the restriction Gram matrices, the two definite rows and the maximal definite subspaces, the isotropic lines of each indefinite restriction, and the automorphism group of each restriction.
 
 This article is the development of the restriction table stated in *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the form itself, its polarisation and its quadratic space are in *Norm and Invertibility in the General Quaternionic Algebra*. The signatures are the ones recorded in *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the other three forms on the same remarkable subspaces are *Remarkable Subspaces and the Four Forms*, *Remarkable Subspaces under the General Plain Sesqualgebra* and *Remarkable Subspaces under the General Quaternionic Sesqualgebra*; and the null structure of the form on the subspaces is *The Isotropic Structure of the General Quaternionic Algebra*.
 
@@ -37,7 +37,7 @@ The restriction of the form to a subspace is the real symmetric form obtained by
 The **quaternion subspace** carries the signature $(4,0)$ and the **anti-quaternion subspace** the signature $(0,4)$: these are the definite rows, exchanged by multiplication by $i$, under which the norm changes sign,
 
 $$
-\langle i\tilde P,i\tilde Q\rangle_{\natural}=-\langle\tilde P,\tilde Q\rangle_{\natural}.
+\langle i\tilde Q_1,i\tilde Q_2\rangle_{\natural}=-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}.
 $$
 
 The quaternion subspace is thus a **maximal positive definite** subspace of the norm, of dimension $4$, and the anti-quaternion subspace a maximal negative definite one; they are orthogonal complements for the realified form, $\mathbb{H}_{\mathbb B}\oplus i\mathbb H_{\mathbb B}=\mathbb B$, since the real part of the pairing of a real direction with its imaginary companion vanishes, while the complex pairing itself takes the value $i$ between them; and the norm is the positive form on the first and its negative on the second. This splitting is the one the norm uses to decide invertibility: on a definite subspace the restriction vanishes only at the origin, so no nonzero element of either quaternion subspace is a zero divisor, and the classical quaternion algebra $\mathbb{H}_{\mathbb B}$ is a division algebra.
@@ -123,7 +123,7 @@ On the remarkable real subspaces the general quaternionic bilinear form carries 
 | $\operatorname{diag}(I_4,-I_4)$ | the Gram matrix of the realified form in the grouped real basis $e_t,\dots,\vec e_z,ie_t,\dots,i\vec e_z$ |
 | $\mathbb{R}(e_t\pm ie_t)$ | the two null lines of the realified centre |
 | $\mathbb H_{\mathbb B}\oplus i\mathbb H_{\mathbb B}$ | the maximal definite splitting of the algebra |
-| $\langle i\tilde P,i\tilde Q\rangle_{\natural}=-\langle\tilde P,\tilde Q\rangle_{\natural}$ | the sign change pairing the definite rows |
+| $\langle i\tilde Q_1,i\tilde Q_2\rangle_{\natural}=-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | the sign change pairing the definite rows |
 | $O(1,1),O(3,3),O(4),O(4),O(1,3),O(3,1)$ | the automorphism groups of the restrictions |
 
 ## Further Reading

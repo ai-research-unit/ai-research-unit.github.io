@@ -4,8 +4,8 @@
 
 The antisymmetric quaternionic multiplication
 $$
-\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
-=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q
+\tilde Q_1\diamond\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)
+=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2
 $$
 is alternating, vector valued and without a unit, and it fails the Jacobi identity
 (*Introduction to the Antisymmetric Quaternionic Algebra*, *The Jacobi Failure
@@ -52,9 +52,9 @@ subspace.
 
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with
 $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. The operation of the block is $\diamond$,
-$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$;
-the parent product is $\tilde P^{\natural}\tilde Q$ and the symmetric half is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$. An element
-is $\tilde P=P_te_t+\vec P$ with $\vec P=P_x\vec e_x+P_y\vec e_y+P_z\vec e_z$; $\mathrm{Vect}(\mathbb{B})$ is the
+$\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$;
+the parent product is $\tilde Q_1^{\natural}\tilde Q_2$ and the symmetric half is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$. An element
+is $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ with $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$; $\mathrm{Vect}(\mathbb{B})$ is the
 vector subspace of the pure elements, of complex dimension three, and
 $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is the centre. The **left multiplication** of the block
 is $L_{\tilde A}\tilde Q_1=\tilde A\diamond\tilde Q_1$, and $L_{\tilde A}^{2}=L_{\tilde A}L_{\tilde A}$
@@ -73,7 +73,7 @@ $$
 The image of $L_{e_t}$ is $\mathrm{Vect}(\mathbb{B})$, its kernel is $\mathbb{C}_{\mathbb{B}}$,
 and $\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$.
 
-*Proof.* The explicit form at $\tilde P=e_t$, where $P_t=1$ and $\vec P=\mathbf 0$, gives
+*Proof.* The explicit form at $\tilde Q_1=e_t$, where $Q_{1t}=1$ and $\vec Q_1=\mathbf 0$, gives
 $e_t\diamond\tilde Q_1=\vec Q_1$, and at $\tilde Q=e_t$ it gives
 $\tilde Q_1\diamond e_t=-\vec Q_1$. The map $\tilde Q_1\mapsto\vec Q_1$ is the identity on the
 vector subspace and vanishes on the centre, so it is a projector, its square is itself, its
@@ -158,7 +158,7 @@ The criterion of the block is the projector classification of §*The Projector C
 | zero | APA, AQS |
 | **the projection onto the vector subspace** | **AQA** |
 
-The block is alone in its class, and the reason is the two mixed terms $P_t\vec Q-Q_t\vec P$ that it carries and that the plain antisymmetrisation does not: those terms make the unit act on the scalar direction and so turn its multiplication into a proper projection.
+The block is alone in its class, and the reason is the two mixed terms $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$ that it carries and that the plain antisymmetrisation does not: those terms make the unit act on the scalar direction and so turn its multiplication into a proper projection.
 
 ## The Other Criteria Fail Here
 
@@ -219,7 +219,7 @@ no Peirce calculus.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde Q_1\diamond\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $L_{\tilde A}\tilde Q_1=\tilde A\diamond\tilde Q_1$, $R_{\tilde A}\tilde Q_1=\tilde Q_1\diamond\tilde A$ | the left and the right multiplication of the block |
 | $L_{e_t}=P_{\mathrm{Vect}}$ | the criterion, the unit multiplying as the projection onto the vector subspace |
 | $L_{\tilde Q_1}^{2}=L_{\tilde Q_1}$ | the projector equation; its solutions are $0$ and $e_t$ |

@@ -278,7 +278,7 @@ The same manifold, read as the structure group $SU(2)$, classifies the instanton
 | $[g_\infty]\in\pi_z(SU(2))\cong\mathbb Z$ | Instanton number; boundary winding |
 | $\tilde A=i\phi/c\,e_t+\vec A$ | Abelian biquaternionic potential |
 | $D_\mu=\partial_\mu+i\kappa\mathcal A_\mu$ | Covariant derivative on the associated bundle |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 
 ## Further Reading
 

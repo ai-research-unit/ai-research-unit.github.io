@@ -127,9 +127,9 @@ The identities of (b) were verified numerically on accelerated worldlines: $|D -
 
 **Statement.** (a) Show that for a source quantity depending only on the retarded time, $\tilde{\nabla}^{\natural}\tilde{Q} = \tilde K_{\mathrm{ret}}d\tilde{Q}/dt_r$ with
 $$
-\tilde K_{\mathrm{ret}} \equiv \tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}\left(\vec u_R - i\,e_t\right),
+\tilde K_{\mathrm{ret}} \equiv \tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}\left(-i\,e_t + \vec u_R\right),
 \qquad
-N\!\left(\vec u_R - i\,e_t\right) = 0 .
+N\!\left(-i\,e_t + \vec u_R\right) = 0 .
 $$
 (b) Compute $\tilde{\nabla}^{\natural}D$ and hence $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$, and exhibit the split $\tilde{F} = \tilde{F}_v+\tilde{F}_a$ into brackets independent of and linear in $d\vec\beta/dt_r$. (c) Verify that both brackets are pure vectors and that expanding them gives the component formulas of the Introduction, with $\vec B = \frac{1}{c}\vec u_R\times\vec E$.
 
@@ -146,9 +146,9 @@ $$
 = \left(-\frac{i}{c\kappa}e_t + \frac{\vec u_R}{c\kappa}\right)d\tilde{Q}/dt_r
 = \tilde K_{\mathrm{ret}}d\tilde{Q}/dt_r .
 $$
-The scalar coefficient of $\tilde K_{\mathrm{ret}} = \frac{1}{c\kappa}\left(\vec u_R-ie_t\right)$ is $-\frac{i}{c\kappa}$, so
+The scalar coefficient of $\tilde K_{\mathrm{ret}} = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$ is $-\frac{i}{c\kappa}$, so
 $$
-N\!\left(\vec u_R-ie_t\right) = (-i)^2 + |\vec u_R|^2 = -1+1 = 0 .
+N\!\left(-ie_t+\vec u_R\right) = (-i)^2 + |\vec u_R|^2 = -1+1 = 0 .
 $$
 The gradient of the retarded time is a null biquaternion, hence a zero divisor: the light-cone structure enters the differentiation itself. This was checked against finite differences of $t_r$ ($\|\tilde K_{\mathrm{ret,FD}}-\tilde K_{\mathrm{ret}}\| \lesssim 6\times10^{-9}$, limited by the finite-difference step).
 
@@ -163,7 +163,7 @@ $$
 \tilde{F} = \tilde{\nabla}^{\natural}\frac{g\tilde{V}/\gamma}{D}
 = \frac{g}{D^2}\left[D\,\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) - \left(\tilde{\nabla}^{\natural}D\right)\tilde{V}/\gamma\right].
 $$
-Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) = \tilde K_{\mathrm{ret}}\,d\tilde{V}/\gamma/dt_r$ with $d\tilde{V}/\gamma/dt_r = cd\vec\beta/dt_r$, and using $D\tilde K_{\mathrm{ret}} = \frac{D}{c\kappa}(\vec u_R-ie_t) = \frac{R}{c}(\vec u_R-ie_t) = -2\frac{R}{c}\tilde{\mathcal L}_{\mathrm{ret}}$, where $\tilde{\mathcal L}_{\mathrm{ret}} \equiv \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (*The Relativistic Qubit in Biquaternionic Form*),
+Substituting $\tilde{\nabla}^{\natural}\!\left(\tilde{V}/\gamma\right) = \tilde K_{\mathrm{ret}}\,d\tilde{V}/\gamma/dt_r$ with $d\tilde{V}/\gamma/dt_r = cd\vec\beta/dt_r$, and using $D\tilde K_{\mathrm{ret}} = \frac{D}{c\kappa}(-ie_t+\vec u_R) = \frac{R}{c}(-ie_t+\vec u_R) = -2\frac{R}{c}\tilde{\mathcal L}_{\mathrm{ret}}$, where $\tilde{\mathcal L}_{\mathrm{ret}} \equiv \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ is the future null four-vector of the retarded pure state (*The Relativistic Qubit in Biquaternionic Form*),
 $$
 \tilde{F} = \frac{g}{D^2}\left[-2R\,\tilde{\mathcal L}_{\mathrm{ret}}\,d\vec\beta/dt_r
 + \left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma
@@ -363,7 +363,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 ## Summary
 
-The Liénard–Wiechert potential of a point charge is the single biquaternion $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}/\gamma$, built from the null retarded separation $\tilde{\mathcal{R}} = iR\,e_t+\vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t_r)\right)$, paired through $D = R\kappa = -\frac{1}{c\gamma}\,\mathrm{Sc}\!\left(\tilde{V}\bar{\tilde{\mathcal{R}}}\right)$ with $\kappa = 1-\vec u_R\cdot\vec\beta$. Differentiating it once with the biquaternionic gradient gives the whole field, because the retarded time satisfies $\tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}\left(\vec u_R-ie_t\right)$, a null biquaternion. The field separates exactly into a part independent of the acceleration and a part linear in it,
+The Liénard–Wiechert potential of a point charge is the single biquaternion $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}/\gamma$, built from the null retarded separation $\tilde{\mathcal{R}} = iR\,e_t+\vec R$ and the four-velocity $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t_r)\right)$, paired through $D = R\kappa = -\frac{1}{c\gamma}\,\mathrm{Sc}\!\left(\tilde{V}\bar{\tilde{\mathcal{R}}}\right)$ with $\kappa = 1-\vec u_R\cdot\vec\beta$. Differentiating it once with the biquaternionic gradient gives the whole field, because the retarded time satisfies $\tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}\left(-ie_t+\vec u_R\right)$, a null biquaternion. The field separates exactly into a part independent of the acceleration and a part linear in it,
 $$
 \tilde{F}_v = \frac{g}{D^2}\left[\left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma + \frac{2\,dD_{0}/dt_r}{c\kappa}\tilde{\mathcal L}_{\mathrm{ret}}\tilde{V}/\gamma\right],
 \qquad
@@ -402,7 +402,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{V} = \gamma\left(ic\,e_t+\vec v(t_r)\right)$ | Four-velocity biquaternion, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\tilde{V}/\gamma = ic\,e_t+\vec v(t_r)$ | Retarded coordinate velocity, the four-velocity divided by $\gamma$ |
 | $\tilde{\mathcal{R}} = iR\,e_t+\vec R$ | Retarded null separation, in $\mathbb{M}_-$ |
-| $\tilde K_{\mathrm{ret}} = \tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}(\vec u_R-ie_t)$ | Gradient of the retarded time (null, hence a zero divisor and not unitary) |
+| $\tilde K_{\mathrm{ret}} = \tilde{\nabla}^{\natural}t_r = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not unitary) |
 | $\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde K_{\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\mathrm{ret}}$ |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |

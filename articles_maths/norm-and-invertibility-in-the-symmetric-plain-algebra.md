@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article studies the algebraic norm that the symmetric plain algebra, the biquaternion space under the Jordan product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ of *Introduction to the Symmetric Plain Algebra*, carries, and the invertibility of its elements.
+This article studies the algebraic norm that the symmetric plain algebra, the biquaternion space under the Jordan product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ of *Introduction to the Symmetric Plain Algebra*, carries, and the invertibility of its elements.
 
 A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. The symmetrisation keeps the scalar part of a product, so the block carries the algebraic norm of the general plain bilinear product, the general plain bilinear algebraic norm
 
@@ -18,7 +18,7 @@ The invertibility is where the article records an **absence**. The block is comm
 
 **Boundaries.** The algebraic norm of the general plain bilinear product is *Norm and Invertibility in the Biquaternion Algebra*, and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; none of the four is read here beyond $\langle\cdot\rangle$. The product, its unit and its non-associativity are *Introduction to the Symmetric Plain Algebra*; the trace form the algebraic norm polarises is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the square and the quadratic identity are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*; the zero divisors are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; $(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. Juxtaposition is the plain product and $\bullet$ is the product of the block, $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; the two elements of a product are $\tilde Q_1=Q_{1t}e_t+\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ the complex bilinear dot product of the vector parts. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. Juxtaposition is the plain product and $\bullet$ is the product of the block, $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$.
 
 ## The Algebraic Norm of the Block
 
@@ -33,7 +33,7 @@ $$
 equivalently $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ for the form
 
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}\bigl(\tilde P\bullet\tilde Q\bigr)=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=P_tQ_t-(\vec P,\vec Q),
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}\bigl(\tilde Q_1\bullet\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2\bigr)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
 $$
 
 which is the general plain bilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The symmetrisation does not change the scalar part, so the block carries the algebraic norm of the general plain bilinear product; the form and its diagonal are of the same letter.
@@ -41,19 +41,19 @@ which is the general plain bilinear form of *The 4 Forms over the Biquaternioid 
 **Basic properties.** Each is a direct reading of the definition.
 
 - $\langle\tilde Q\rangle$ is **complex-valued** in general; it is real exactly on the union of the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and its imaginary translate $i\mathbb{H}_{\mathbb{B}}$.
-- $\langle\cdot\rangle$ is **homogeneous of degree two**, $\langle\lambda\tilde Q\rangle=\lambda^{2}\langle\tilde Q\rangle$ for $\lambda\in\mathbb{C}$, and its polarisation is the form of the same letter, $\langle\tilde P+\tilde Q\rangle-\langle\tilde P\rangle-\langle\tilde Q\rangle=2\langle\tilde P,\tilde Q\rangle$.
+- $\langle\cdot\rangle$ is **homogeneous of degree two**, $\langle\lambda\tilde Q\rangle=\lambda^{2}\langle\tilde Q\rangle$ for $\lambda\in\mathbb{C}$, and its polarisation is the form of the same letter, $\langle\tilde Q_1+\tilde Q_2\rangle-\langle\tilde Q_1\rangle-\langle\tilde Q_2\rangle=2\langle\tilde Q_1,\tilde Q_2\rangle$.
 - $\langle\cdot\rangle$ is **not positive definite** and **not definite**.
 - Its Gram matrix on the basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and the realification of $\langle\cdot\rangle$ is non-degenerate of signature $(4,4)$ on $\mathbb{B}\cong\mathbb{R}^{8}$.
 - Its **vanishing set** is the complex cone $\{\langle\tilde Q\rangle=0\}$, the complex quadric of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, and not the zero-divisor set of the block.
 
 ## The Algebraic Norm Is Not Multiplicative
 
-**The algebraic norm of the block is not multiplicative:** $\langle\tilde P\bullet\tilde Q\rangle\neq \langle\tilde P\rangle\langle\tilde Q\rangle$ in general, the pair $(\vec e_x,\vec e_y)$ separating the two sides.
+**The algebraic norm of the block is not multiplicative:** $\langle\tilde Q_1\bullet\tilde Q_2\rangle\neq \langle\tilde Q_1\rangle\langle\tilde Q_2\rangle$ in general, the pair $(\vec e_x,\vec e_y)$ separating the two sides.
 
 **Proposition.** The algebraic norm of the block is **not** multiplicative:
 
 $$
-\langle\tilde P\bullet\tilde Q\rangle\neq \langle\tilde P\rangle\,\langle\tilde Q\rangle\quad\text{in general.}
+\langle\tilde Q_1\bullet\tilde Q_2\rangle\neq \langle\tilde Q_1\rangle\,\langle\tilde Q_2\rangle\quad\text{in general.}
 $$
 
 *Proof.* The pair $\vec e_x,\vec e_y$ separates the two sides: $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x\vec e_y+\vec e_y\vec e_x)=\tfrac12(\vec e_z-\vec e_z)=0$, so $\langle \vec e_x\bullet \vec e_y\rangle=\langle 0\rangle=0$, while $\langle \vec e_x\rangle\langle \vec e_y\rangle=(-1)(-1)=1$. The two values differ, so no multiplicativity holds.
@@ -62,9 +62,9 @@ $$
 
 ## The Unit and the Degeneracy of the Naive Inverse
 
-**The block is commutative and unital with unit $e_t$, but it is not associative, and its naive inverse equation $\tilde Q\bullet\tilde Q_1=e_t$ is degenerate: the element $\tilde\Upsilon=\vec e_x+i\vec e_y$ satisfies it for a two-dimensional affine family of $\tilde Q_1$.**
+**The block is commutative and unital with unit $e_t$, but it is not associative, and its naive inverse equation $\tilde Q_1\bullet\tilde Q_2=e_t$ is degenerate: the element $\tilde\Upsilon=\vec e_x+i\vec e_y$ satisfies it for a two-dimensional affine family of $\tilde Q_2$.**
 
-The unit of the block is $e_t$: the product is commutative, so its one-sided inverse equations coincide, and $e_t$ is the two-sided unit (*Introduction to the Symmetric Plain Algebra*). The block is **not associative**: $(\tilde P\bullet\tilde Q)\bullet\tilde Q_1\neq\tilde P\bullet(\tilde Q\bullet\tilde Q_1)$ in general, and the single equation $\tilde Q\bullet\tilde Q_1=e_t$ is **degenerate**: the element $\tilde\Upsilon=\vec e_x+i\vec e_y$ satisfies $\tilde\Upsilon\bullet\tilde Q_1=e_t$ for a two-dimensional affine family of $\tilde Q_1$, because its left multiplication has a two-dimensional kernel. The naive inverse equation therefore does not define an inverse, and the block is treated with the inverse of the Jordan theory in *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
+The unit of the block is $e_t$: the product is commutative, so its one-sided inverse equations coincide, and $e_t$ is the two-sided unit (*Introduction to the Symmetric Plain Algebra*). The block is **not associative**: $(\tilde Q_1\bullet\tilde Q_2)\bullet\tilde Q_3\neq\tilde Q_1\bullet(\tilde Q_2\bullet\tilde Q_3)$ in general, and the single equation $\tilde Q_1\bullet\tilde Q_2=e_t$ is **degenerate**: the element $\tilde\Upsilon=\vec e_x+i\vec e_y$ satisfies $\tilde\Upsilon\bullet\tilde Q_2=e_t$ for a two-dimensional affine family of $\tilde Q_2$, because its left multiplication has a two-dimensional kernel. The naive inverse equation therefore does not define an inverse, and the block is treated with the inverse of the Jordan theory in *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
 ## The Absence of a Criterion from the Algebraic Norm
 
@@ -88,7 +88,7 @@ $$
 
 ## Summary
 
-The symmetric plain product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ carries one algebraic norm, the diagonal of its scalar-part form, the general plain bilinear algebraic norm
+The symmetric plain product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ carries one algebraic norm, the diagonal of its scalar-part form, the general plain bilinear algebraic norm
 
 $$
 \langle\tilde Q\rangle=\mathrm{Sc}\bigl(\tilde Q\bullet\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
@@ -96,14 +96,14 @@ $$
 
 complex-valued, of Gram matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ and realification of signature $(4,4)$, with the complex cone as its vanishing set, and it is **not multiplicative**, the pair $(\vec e_x,\vec e_y)$ separating the two sides, $\langle \vec e_x\bullet \vec e_y\rangle=\langle 0\rangle=0$ against $\langle \vec e_x\rangle\langle \vec e_y\rangle=1$.
 
-The block is commutative and unital, with the unit $e_t$, and it is not associative, the naive inverse equation $\tilde Q\bullet\tilde Q_1=e_t$ being degenerate at $\tilde\Upsilon=\vec e_x+i\vec e_y$. Its algebraic norm does **not** decide invertibility: the invertible element $e_t+\vec e_x$ has $\langle\cdot\rangle=0$ and the zero divisor $e_t+i\vec e_x$ has $\langle\cdot\rangle=2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient. The article records that absence; the invertibility the block does have is the invertibility of the Jordan theory, carried by a different quadratic form, which is not the algebraic norm of the block.
+The block is commutative and unital, with the unit $e_t$, and it is not associative, the naive inverse equation $\tilde Q_1\bullet\tilde Q_2=e_t$ being degenerate at $\tilde\Upsilon=\vec e_x+i\vec e_y$. Its algebraic norm does **not** decide invertibility: the invertible element $e_t+\vec e_x$ has $\langle\cdot\rangle=0$ and the zero divisor $e_t+i\vec e_x$ has $\langle\cdot\rangle=2$, so the non-vanishing of the algebraic norm is neither necessary nor sufficient. The article records that absence; the invertibility the block does have is the invertibility of the Jordan theory, carried by a different quadratic form, which is not the algebraic norm of the block.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | the symmetric plain product, the multiplication of the block |
-| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\bullet\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ | the general plain bilinear form, the scalar-part form of the product |
+| $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | the symmetric plain product, the multiplication of the block |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\bullet\tilde Q_2)=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$ | the general plain bilinear form, the scalar-part form of the product |
 | $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$ | the algebraic norm of the block, one of the four algebraic norms of the space |
 | $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of $\langle\cdot\rangle$; the signature of its realification is $(4,4)$ |
 | $\{\langle\tilde Q\rangle=0\}$ | the complex cone, the vanishing set of the algebraic norm |

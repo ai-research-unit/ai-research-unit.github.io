@@ -38,7 +38,7 @@ Written as elements of the algebra, each sector carries its own four real parame
 - **$\mathbb{M}_-$**, the material sector, with the dictionary between the two writings:
 
     $$
-    \tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-, \qquad q'_t = ct,\;\; q_x = x,\;\; q_y = y,\;\; q_z = z.
+    \tilde{R} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-, \qquad q'_t = ct,\;\; q_x = x,\;\; q_y = y,\;\; q_z = z.
     $$
 
 - **$\mathbb{M}_+$**, the informational sector, with the dictionary between the two writings:
@@ -140,7 +140,7 @@ The main result of the framework so far is that the biquaternion algebra **conta
 A point of the material sector is written in the coordinates of relativistic physics as
 
 $$
-\tilde{Q} = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-,
+\tilde{R} = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-,
 $$
 
 the imaginary time $ic\,t$ together with the three real spatial coordinates $x, y, z$. The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$:
@@ -224,7 +224,7 @@ Two interpretations of the introduction are worth separating. Read as a statemen
 
 The framework is stated in one sentence: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the common biquaternion space of relativity and quantum physics, and its two natural real subspaces carry the two theories. The **anti-Hermitian subspace** $\mathbb{M}_-$ carries the four-vectors of relativity, the material sector, in the coordinates $(ict,x,y,z)$; the **Hermitian subspace** $\mathbb{M}_+$ carries the operator algebra of quantum physics, the informational sector, in the coordinates $(ct',ix',iy',iz')$. Multiplication by $i$ exchanges the two.
 
-Both sectors are written in the one biquaternion space. A material element is $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and an informational element is $\tilde{Q}=ct'\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$; the norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde{\Lambda}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde{H}=h_0e_t+i\vec h$ with $h_0$ real.
+Both sectors are written in the one biquaternion space. A material element is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and an informational element is $\tilde{Q}=ct'\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$; the norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ is the interval on $\mathbb{M}_-$, of signature $(-,+,+,+)$ there, and the Hermitian form on $\mathbb{M}_+$. The Lorentz rotors are the unit-norm elements $\tilde{\Lambda}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$, acting by conjugation; the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ are the pure states of the informational sector; and the observables are the Hermitian elements $\tilde{H}=h_0e_t+i\vec h$ with $h_0$ real.
 
 The framework is a research program, not a finished theory. The algebraic identifications above are established mathematics; what is open is whether the framework has consequences beyond a reformulation of known physics. Six questions are recorded: the physical reality of the biquaternionic structure; a coupling between the sectors beyond the Lorentz conjugation, of which the square $\mathbb{M}_-\to\mathbb{M}_+$ is the minimal algebraic instance already supplied by the product; the extension to many qubits and to quantum field theory; a fully relativistic quantum theory; curved spacetime; and empirical contact. The local speed of light $c=1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict$ convention the vacuum approximation of a more general local structure.
 
@@ -237,7 +237,7 @@ The framework is a research program, not a finished theory. The algebraic identi
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Biquaternionic coordinate |
 | $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient: $q_\mu$ its real part (the coefficient of $e_\mu$), $q'_\mu$ its imaginary part (the coefficient of $ie_\mu$) |
-| $\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, both writings; $q'_t = ct$, $q_k = x_k$ |
+| $\tilde{R} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, both writings; $q'_t = ct$, $q_k = x_k$ |
 | $\tilde{Q} = q_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z = (ct')\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | Informational element, both writings; $q_t = ct'$, $q'_k = x'_k$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector |
 | $\langle\tilde{Q},\tilde{P}\rangle_{*} = \sum_\mu Q_\mu\overline{P_\mu}$ | Hermitian form, positive definite; the probability weight, $\langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$; the coefficient of $e_t$ in $\tilde{Q}\tilde{Q}^{*}$ |

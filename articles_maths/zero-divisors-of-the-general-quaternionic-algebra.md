@@ -38,13 +38,13 @@ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$. Jux
 and $\star$ the general quaternionic bilinear product,
 
 $$
-\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q ,
+\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2 ,
 $$
 
 with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. An element is
 $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$, the **algebraic norm** is
 $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^2$, and
-$(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts. An element
+$(\vec Q_1,\vec Q_2)=\sum_kQ_{1,k}Q_{2,k}$ is the complex bilinear form of the vector parts. An element
 is **pure** when $Q_t=0$ and **non-pure** when $Q_t\neq0$.
 
 ## Definition
@@ -62,7 +62,7 @@ when it is both. The definition is *Definitions for the Study of the Algebraic S
 required to be nonzero.
 
 Throughout this article the product is the general quaternionic bilinear product
-$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$. On it the two defining equations are
+$\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$. On it the two defining equations are
 
 $$
 \tilde Q^{\natural}\tilde{Q}_1=0 \quad\text{(left)},\qquad \tilde{Q}_1^{\natural}\tilde Q=0 \quad\text{(right)} ,
@@ -238,17 +238,17 @@ independent off the origin, so the real dimension is $8-2=6$. For the failure of
 elements $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ have algebraic norm $1-1=0$, while their sum $2\vec e_x$ has
 algebraic norm $4$.
 
-**Corollary.** The cone is a multiplicative set: for every $\tilde P$ and every $\tilde Q$ with
-$\langle\tilde Q\rangle_{\natural}=0$,
+**Corollary.** The cone is a multiplicative set: for every $\tilde Q_1$ and every $\tilde Q_2$ with
+$\langle\tilde Q_2\rangle_{\natural}=0$,
 
 $$
-\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}=0 ,
+\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}=0 ,
 $$
 
 so the product of a cone point with any element is again in the cone, on either side.
 
 **Proof.** The multiplicativity of the algebraic norm of *Norm and Invertibility in the General
-Quaternionic Algebra*, §*Multiplicativity*, evaluated at $\langle\tilde Q\rangle_{\natural}=0$.
+Quaternionic Algebra*, §*Multiplicativity*, evaluated at $\langle\tilde Q_2\rangle_{\natural}=0$.
 
 **The two families and the cone.** The cone is the union of the two families and of the origin: the
 pure family is the isotropic cone of the vector subspace, of real dimension four, and the non-pure
@@ -312,7 +312,7 @@ subspace, are the two standard witnesses.
 
 ## Summary
 
-For the general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$,
+For the general quaternionic bilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$,
 a nonzero element is a zero divisor exactly when its algebraic norm vanishes,
 $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=0$, and the zero divisors are the nonzero points of the zero-divisor
 cone, a real cone of dimension six that is not a subspace and is stable under the product. The cone
@@ -335,7 +335,7 @@ symmetric here where the sesquilinear products make it conjugate-symmetric.
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity, $\vec e_k^2=-e_t$ |
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
-| $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the algebraic norm, vanishing exactly on the zero-divisor cone |
 | $C=\{N=0\}$ | the zero-divisor cone, the square-zero set of the product |
 | pure, non-pure | $Q_t=0$; $Q_t\neq0$ |

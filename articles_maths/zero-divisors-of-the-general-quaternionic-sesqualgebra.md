@@ -8,7 +8,7 @@ Biquaternioid $\mathbb{C}$ Space*, and this article treats the **zero divisors**
 **general quaternionic sesquilinear product**
 
 $$
-\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
+\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$
 
 whose rule, multiplication table and axioms are *Introduction to the General Quaternionic
@@ -41,12 +41,12 @@ C(\tilde Q) = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 , \qquad C(\tilde Q)e_t = \tilde 
 $$
 
 and its vanishing is the zero-divisor criterion of the general plain algebra (*Zero Divisors of the
-General Plain Algebra*). The product is $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$,
+General Plain Algebra*). The product is $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$,
 with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second;
-the juxtaposition $\tilde P\tilde Q$ is the general plain bilinear product, the multiplication of
+the juxtaposition $\tilde Q_1\tilde Q_2$ is the general plain bilinear product, the multiplication of
 the algebra.
 
-**The results.** A nonzero element $\tilde Q$ is a zero divisor of the general quaternionic sesquilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ if and only if its central square vanishes, $C(\tilde Q)=\sum_\mu Q_\mu^{2}=0$; the left and the right reading give the same condition, and the four general products share this one set. The set is the complex cone $\{C(\tilde Q)=0\}$ of complex dimension three and real dimension six, the same subset the plain product cuts out. It splits by the scalar part into the pure family $Q_t=0$ with $\sum_k Q_k^{2}=0$ and the non-pure family $Q_t\neq0$ with $\sum_k Q_k^{2}=-Q_t^{2}$, and the square-zero elements, of real dimension four, lie in the **non-pure** family, so the split by the square and the split by the scalar part cut across each other. Each section below states its result first and then proves it.
+**The results.** A nonzero element $\tilde Q$ is a zero divisor of the general quaternionic sesquilinear product $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2^{*}$ if and only if its central square vanishes, $C(\tilde Q)=\sum_\mu Q_\mu^{2}=0$; the left and the right reading give the same condition, and the four general products share this one set. The set is the complex cone $\{C(\tilde Q)=0\}$ of complex dimension three and real dimension six, the same subset the plain product cuts out. It splits by the scalar part into the pure family $Q_t=0$ with $\sum_k Q_k^{2}=0$ and the non-pure family $Q_t\neq0$ with $\sum_k Q_k^{2}=-Q_t^{2}$, and the square-zero elements, of real dimension four, lie in the **non-pure** family, so the split by the square and the split by the scalar part cut across each other. Each section below states its result first and then proves it.
 
 ## The Definition
 
@@ -58,7 +58,7 @@ or a right zero divisor. The equation and the pair both name the product, so the
 to it; the general definition, with the two-sided reading, is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
 Throughout this article the product is the general quaternionic sesquilinear product
-$\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, and, unqualified, **zero divisor** means
+$\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$, and, unqualified, **zero divisor** means
 **zero divisor of $\star$**. The zero-divisor sets of the other three general products, and the
 theorem that the four coincide, are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
@@ -232,7 +232,7 @@ on the square does not.
 ## Summary
 
 The zero divisors of the general quaternionic sesquilinear product
-$\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ are defined relative to the product, and
+$\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ are defined relative to the product, and
 they are the nonzero elements with $C(\tilde Q) = \sum_\mu Q_\mu^2 = 0$, equivalently
 $\tilde Q\tilde Q^{\natural} = 0$; the left and the right reading give the same condition. The set
 is the complex cone $C = 0$ of complex dimension three and real dimension six, the same subset of
@@ -252,7 +252,7 @@ and the element $e_t + i\vec e_x$ is a non-pure zero divisor whose square vanish
 
 | symbol | meaning |
 |---|---|
-| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquilinear product |
+| $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2^{*}$ | the general quaternionic sesquilinear product |
 | $\tilde Q^{\natural}$, $\tilde Q^{*}$, $\overline{\tilde Q}$ | the natural, the star and the Hermitian conjugations |
 | zero divisor of $\star$ | a nonzero $\tilde Q$ with a nonzero right or left partner of vanishing product |
 | $C(\tilde Q) = \sum_\mu Q_\mu^2$ | the central square, $C(\tilde Q)e_t = \tilde Q\tilde Q^{\natural}$ |

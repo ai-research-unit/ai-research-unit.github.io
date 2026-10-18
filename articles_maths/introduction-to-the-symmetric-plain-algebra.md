@@ -2,18 +2,18 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the general plain bilinear product $\tilde P\tilde Q$, the multiplication of *Introduction to the Biquaternion Algebra*. Its exchange of the two arguments splits it into a symmetric and an antisymmetric part, and each of the two parts is again a $\mathbb{C}$-bilinear product of the space. This article reads the **symmetric part** as a multiplication in its own right:
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries the general plain bilinear product $\tilde Q_1\tilde Q_2$, the multiplication of *Introduction to the Biquaternion Algebra*. Its exchange of the two arguments splits it into a symmetric and an antisymmetric part, and each of the two parts is again a $\mathbb{C}$-bilinear product of the space. This article reads the **symmetric part** as a multiplication in its own right:
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
-=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P.
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)
+=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1.
 $$
 
 The operation is the plain product with the cross term dropped, and the space it makes of $\mathbb{B}$ is a commutative unital Jordan algebra over $\mathbb{C}$. The reading is one of the twelve operations of *The 12 Products of the Biquaternioid Complex Space*, where the operation is named $\mathrm{SPA}$ and is one of the two members of the twelve that satisfies the identity of a classical nonassociative algebra.
 
 The split that produces the operation, its two projections and the two admissibility conditions are *The Symmetric and Antisymmetric Parts of an Algebra Product*, and the order-symmetry reading of the same split, with the worked examples on the four general products, is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*. This article owns the operation as a multiplication: the rule, the class, the laws, the sixteen products of the basis, the square and its polarisation, the reconstruction, and the placement of the block among the twelve. The algebra it builds is read further in the companions of the block: the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, which close with *The Specificities of the Symmetric Plain Algebra*; the Specific Theory article *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*; and, in the other sections of the block, *The Trace Form and the Invariance of the Symmetric Plain Algebra*, *Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions*, *The Multiplication Operators of the Symmetric Plain Algebra* and the two articles *Introduction to the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, central scalar imaginary $i$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_j \vec e_k=-\vec e_k \vec e_j$ for $j\neq k$. A generic element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; $(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The product $\tilde P\tilde Q$ is the general plain bilinear one throughout. The inner product $(\cdot,\cdot)$ and the general plain product are as in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, central scalar imaginary $i$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_j \vec e_k=-\vec e_k \vec e_j$ for $j\neq k$. A generic element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$; $(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$ is the complex bilinear dot product of the vector parts. The product $\tilde Q_1\tilde Q_2$ is the general plain bilinear one throughout. The inner product $(\cdot,\cdot)$ and the general plain product are as in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*.
 
 ## The Symmetrisation of the Plain Product
 
@@ -22,10 +22,10 @@ The split that produces the operation, its two projections and the two admissibi
 **Definition.** The **symmetric plain product** of two biquaternions is
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr).
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr).
 $$
 
-It is the **symmetrisation** of the general plain bilinear product $\tilde P\tilde Q$, the operation called the symmetric part of the product in *The Symmetric and Antisymmetric Parts of an Algebra Product*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The space $\mathbb{B}$ with the product $\bullet$ is written $\mathbb{B}^{\bullet}$ and is the **symmetric plain algebra** of the block.
+It is the **symmetrisation** of the general plain bilinear product $\tilde Q_1\tilde Q_2$, the operation called the symmetric part of the product in *The Symmetric and Antisymmetric Parts of an Algebra Product*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The space $\mathbb{B}$ with the product $\bullet$ is written $\mathbb{B}^{\bullet}$ and is the **symmetric plain algebra** of the block.
 
 The rule needs no more than the plain product, and *The Symmetric and Antisymmetric Parts of an Algebra Product* proves that the split is canonical: if a product is written as a sum of a symmetric and an antisymmetric operation, the two are forced to be the two halves. The symmetric half is therefore fixed by the plain product alone and not by a choice of notation.
 
@@ -34,24 +34,24 @@ The rule needs no more than the plain product, and *The Symmetric and Antisymmet
 The plain product reads, in the scalar–vector form of *Introduction to the Biquaternion Algebra*,
 
 $$
-\tilde P\tilde Q=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P+\vec P\times\vec Q,
+\tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2,
 $$
 
-and its exchange $\tilde Q\tilde P$ differs from it only in the sign of the cross term. Adding the two and halving gives the rule that names the block:
+and its exchange $\tilde Q_2\tilde Q_1$ differs from it only in the sign of the cross term. Adding the two and halving gives the rule that names the block:
 
 $$
-\tilde P\bullet\tilde Q=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P.
+\tilde Q_1\bullet\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1.
 $$
 
-**Remark (the cross term is what the symmetrisation removes).** The scalar part $P_tQ_t-(\vec P,\vec Q)$ is symmetric by itself, since $(\vec P,\vec Q)=(\vec Q,\vec P)$, and the mixed vector part $P_t\vec Q+Q_t\vec P$ is symmetric as well; the only asymmetric piece of the plain product is the cross product $\vec P\times\vec Q$, which changes sign under the exchange. **The symmetric plain product is therefore exactly the plain product with the cross term dropped**, and the vector part of the value is $P_t\vec Q+Q_t\vec P$.
+**Remark (the cross term is what the symmetrisation removes).** The scalar part $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ is symmetric by itself, since $(\vec Q_1,\vec Q_2)=(\vec Q_2,\vec Q_1)$, and the mixed vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ is symmetric as well; the only asymmetric piece of the plain product is the cross product $\vec Q_1\times\vec Q_2$, which changes sign under the exchange. **The symmetric plain product is therefore exactly the plain product with the cross term dropped**, and the vector part of the value is $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$.
 
 Read on the coordinates, the same rule is the plain coordinate rule of *Introduction to the Biquaternion Algebra* with the cross terms deleted:
 
 $$
-\tilde P\bullet\tilde Q=\bigl(P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z\bigr)
-+\bigl(P_tQ_x+P_xQ_t\bigr)\vec e_x
-+\bigl(P_tQ_y+P_yQ_t\bigr)\vec e_y
-+\bigl(P_tQ_z+P_zQ_t\bigr)\vec e_z.
+\tilde Q_1\bullet\tilde Q_2=\bigl(Q_{1t}Q_{2t}-Q_{1x}Q_{2x}-Q_{1y}Q_{2y}-Q_{1z}Q_{2z}\bigr)
++\bigl(Q_{1t}Q_{2x}+Q_{1x}Q_{2t}\bigr)\vec e_x
++\bigl(Q_{1t}Q_{2y}+Q_{1y}Q_{2t}\bigr)\vec e_y
++\bigl(Q_{1t}Q_{2z}+Q_{1z}Q_{2t}\bigr)\vec e_z.
 $$
 
 The two forms are one rule, and each is used where it is shorter.
@@ -61,9 +61,9 @@ The two forms are one rule, and each is used where it is shorter.
 **Proposition.** The symmetric plain product is $\mathbb{C}$-**bilinear**:
 
 $$
-(\tilde P+\tilde Q_1)\bullet\tilde Q=\tilde P\bullet\tilde Q+\tilde Q_1\bullet\tilde Q,\qquad
-\tilde Q\bullet(\tilde P+\tilde Q_1)=\tilde Q\bullet\tilde P+\tilde Q\bullet\tilde Q_1,\qquad
-(A\tilde P)\bullet\tilde Q=A(\tilde P\bullet\tilde Q)=\tilde P\bullet(A\tilde Q)
+(\tilde Q_1+\tilde Q_3)\bullet\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_3\bullet\tilde Q_2,\qquad
+\tilde Q_2\bullet(\tilde Q_1+\tilde Q_3)=\tilde Q_2\bullet\tilde Q_1+\tilde Q_2\bullet\tilde Q_3,\qquad
+(A\tilde Q_1)\bullet\tilde Q_2=A(\tilde Q_1\bullet\tilde Q_2)=\tilde Q_1\bullet(A\tilde Q_2)
 $$
 
 for every $A\in\mathbb{C}$.
@@ -79,12 +79,12 @@ for every $A\in\mathbb{C}$.
 **Proposition.** The symmetric plain product is **commutative**:
 
 $$
-\tilde P\bullet\tilde Q=\tilde Q\bullet\tilde P .
+\tilde Q_1\bullet\tilde Q_2=\tilde Q_2\bullet\tilde Q_1 .
 $$
 
-*Proof.* The half-sum of the plain product and its exchange is unchanged when the two arguments are interchanged; equivalently, the scalar part is the symmetric bilinear form $P_tQ_t-(\vec P,\vec Q)$ and the vector part $P_t\vec Q+Q_t\vec P$ is symmetric in the two elements.
+*Proof.* The half-sum of the plain product and its exchange is unchanged when the two arguments are interchanged; equivalently, the scalar part is the symmetric bilinear form $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ and the vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1$ is symmetric in the two elements.
 
-Commutativity is the defining departure from the plain product, which is not commutative, since $\vec e_x \vec e_y=\vec e_z$ and $\vec e_y \vec e_x=-\vec e_z$. The commutator of the plain product is carried entirely by the antisymmetric part, $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P=2(\vec P\times\vec Q)$, which is the operation of the companion block *Introduction to the Antisymmetric Plain Algebra*.
+Commutativity is the defining departure from the plain product, which is not commutative, since $\vec e_x \vec e_y=\vec e_z$ and $\vec e_y \vec e_x=-\vec e_z$. The commutator of the plain product is carried entirely by the antisymmetric part, $[\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1=2(\vec Q_1\times\vec Q_2)$, which is the operation of the companion block *Introduction to the Antisymmetric Plain Algebra*.
 
 ### The Unit
 
@@ -110,10 +110,10 @@ $$
 
 and a commutative algebra with a Jordan product is a **Jordan algebra**. The identity is the one named in *The Symmetric and Antisymmetric Parts of an Algebra Product* and in *Jordan Algebras*.
 
-**Theorem.** The symmetric plain product satisfies the Jordan identity: for all $\tilde P,\tilde Q\in\mathbb{B}$,
+**Theorem.** The symmetric plain product satisfies the Jordan identity: for all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
 $$
-(\tilde P\bullet\tilde Q)\bullet(\tilde P\bullet\tilde P)=\tilde P\bullet\bigl(\tilde Q\bullet(\tilde P\bullet\tilde P)\bigr).
+(\tilde Q_1\bullet\tilde Q_2)\bullet(\tilde Q_1\bullet\tilde Q_1)=\tilde Q_1\bullet\bigl(\tilde Q_2\bullet(\tilde Q_1\bullet\tilde Q_1)\bigr).
 $$
 
 *Proof.* The symmetrisation of an associative product always satisfies the Jordan identity: for an associative algebra $A$, the algebra $A^{\bullet}$ with the product $\tfrac12(xy+yx)$ is the classical special Jordan algebra, and the identity is the theorem of *Jordan Algebras*, §*The Symmetrisation of an Associative Algebra*, that $A^{+}$ is a Jordan algebra, proved there by the direct expansion with the product $xy+yx$ (the halved product satisfies it as well, every coefficient being halved). Expanding both sides in the associative product of $\mathbb{B}$ and using its associativity verifies the identity directly.
@@ -126,7 +126,7 @@ The relation of the associativity of the plain product to the Jordan identity is
 
 **Proposition.** The symmetric plain product is **not associative**.
 
-*Proof.* The witness is the pair $\tilde P=\tilde Q=\vec e_x$ read against $\tilde Q_1=\vec e_y$:
+*Proof.* The witness is the pair $\tilde Q_1=\tilde Q_2=\vec e_x$ read against $\tilde Q_3=\vec e_y$:
 
 $$
 (\vec e_x\bullet \vec e_x)\bullet \vec e_y=(-e_t)\bullet \vec e_y=-\vec e_y,\qquad
@@ -164,17 +164,17 @@ $$
 
 so the diagonal of $\bullet$ and the diagonal of the plain product agree.
 
-*Proof.* $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^2+\tilde Q^2)=\tilde Q^2$, and the plain square is the displayed form by the scalar–vector rule with $\tilde P=\tilde Q$.
+*Proof.* $\tilde Q_2\bullet\tilde Q_2=\tfrac12(\tilde Q_2^2+\tilde Q_2^2)=\tilde Q_2^2$, and the plain square is the displayed form by the scalar–vector rule with $\tilde Q_1=\tilde Q_2$.
 
 The square is the symmetric part of the plain square, and the antisymmetric part vanishes on the diagonal because it is alternating; this is the general fact that the antisymmetric part of a product has zero diagonal and the square carries the symmetric part alone.
 
 **Proposition (polarisation).** The product off the diagonal is recovered from the square by polarisation:
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl((\tilde P+\tilde Q)\bullet(\tilde P+\tilde Q)-\tilde P\bullet\tilde P-\tilde Q\bullet\tilde Q\bigr).
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl((\tilde Q_1+\tilde Q_2)\bullet(\tilde Q_1+\tilde Q_2)-\tilde Q_1\bullet\tilde Q_1-\tilde Q_2\bullet\tilde Q_2\bigr).
 $$
 
-*Proof.* The product is $\mathbb{C}$-bilinear and commutative, so expanding the square of the sum gives $(\tilde P+\tilde Q)\bullet(\tilde P+\tilde Q)=\tilde P\bullet\tilde P+2\tilde P\bullet\tilde Q+\tilde Q\bullet\tilde Q$, and the displayed identity follows by subtraction and halving.
+*Proof.* The product is $\mathbb{C}$-bilinear and commutative, so expanding the square of the sum gives $(\tilde Q_1+\tilde Q_2)\bullet(\tilde Q_1+\tilde Q_2)=\tilde Q_1\bullet\tilde Q_1+2\tilde Q_1\bullet\tilde Q_2+\tilde Q_2\bullet\tilde Q_2$, and the displayed identity follows by subtraction and halving.
 
 So the square map $\tilde Q\mapsto\tilde Q\bullet\tilde Q$ determines the whole product, and the block is generated by its square and its linear structure. The square is the quadratic map whose study, with the norm, the idempotents and the nilpotents, is *Norm and Invertibility in the Symmetric Plain Algebra*, *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the fuller theory is the Specific Theory article *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
@@ -185,8 +185,8 @@ So the square map $\tilde Q\mapsto\tilde Q\bullet\tilde Q$ determines the whole 
 **Theorem.** The plain product is the sum of its two parts:
 
 $$
-\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q,\qquad
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q,
+\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2,\qquad
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2,
 $$
 
 and the symmetric part is $\mathrm{SPA}$ and the antisymmetric part $\mathrm{APA}$.
@@ -213,8 +213,8 @@ The name $\mathrm{SPA}$ is read with the code of *The Algebraic Structures over 
 The symmetric part of the general plain bilinear product of $\mathbb{B}$ is the operation
 
 $$
-\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
-=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P,
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)
+=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1,
 $$
 
 the plain product with the cross term dropped. It is $\mathbb{C}$-bilinear and commutative, $e_t$ is a two-sided unit, it satisfies the Jordan identity, and it is not associative, with the witness $(\vec e_x\bullet \vec e_x)\bullet \vec e_y=-\vec e_y$ against $\vec e_x\bullet(\vec e_x\bullet \vec e_y)=0$. Read with the product, the space is a commutative unital special Jordan algebra over $\mathbb{C}$, and it is the only part of the twelve operations that has a unit and the only one that is a Jordan product. The sixteen products of the basis are the quaternion table with the six off-diagonal vector entries set to $0$; the square is the plain square, $\tilde Q\bullet\tilde Q=Q_t^2-(\vec Q,\vec Q)+2Q_t\vec Q$, and the product is the polarisation of the square. The plain product reconstructs as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, the symmetrisation of an associative product in the plain row of *The 12 Products of the Biquaternioid Complex Space*.
@@ -223,13 +223,13 @@ the plain product with the cross term dropped. It is $\mathbb{C}$-bilinear and c
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | the symmetrised (Jordan) product, the multiplication of the block |
+| $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ | the symmetrised (Jordan) product, the multiplication of the block |
 | $\mathbb{B}^{\bullet}$ | the biquaternion space with the symmetric plain product |
 | $\mathrm{SPA}$ | the name of the operation among the twelve |
-| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ | the antisymmetric part, $\mathrm{APA}$ |
+| $\tilde Q_1\wedge\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$ | the antisymmetric part, $\mathrm{APA}$ |
 | $\tilde Q\bullet\tilde Q=\tilde Q^2$ | the square of the block = the plain square |
 | $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ | the reconstruction of the plain product |
-| $(\vec P,\vec Q)$ | the complex bilinear dot product of the vector parts |
+| $(\vec Q_1,\vec Q_2)$ | the complex bilinear dot product of the vector parts |
 
 ## Further Reading
 

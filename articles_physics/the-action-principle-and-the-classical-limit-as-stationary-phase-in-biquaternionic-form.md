@@ -224,7 +224,7 @@ $$
 
 the two forms agreeing because the biquaternion-norm metric is Euclidean in the basis $e_\mu$, so that the inverse metric is the metric itself. Hamilton's equations for it are $d\tilde q/dt=\partial H/\partial\tilde p=\tilde p/m$ and $d\tilde p/dt=0$, whose solutions are the straight lines found above: the geodesic flow of the biquaternion norm **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=\langle\tilde p\rangle_{\natural}/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
 
-The biquaternion norm is positive definite on $\mathbb{H}_{\mathbb{B}}$, so its metric is Riemannian and there are no null directions. The **biquaternion-norm cone** $\langle\tilde{Q}\rangle_{\natural}=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{M}_-$ of the complexified algebra, where the four-vector $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ has the indefinite norm $\langle\tilde{Q}\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_t=ict$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
+The biquaternion norm is positive definite on $\mathbb{H}_{\mathbb{B}}$, so its metric is Riemannian and there are no null directions. The **biquaternion-norm cone** $\langle\tilde{Q}\rangle_{\natural}=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{M}_-$ of the complexified algebra, where the four-vector $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ has the indefinite norm $\langle\tilde{R}\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_t=ict$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
 
 ### The Rotor Action
 
@@ -379,7 +379,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | $W(\tilde q,t)$ | Hamilton's principal function |
 | $\hbar$ | Phase scale of the oscillatory integral; asymptotic parameter only |
 | $A[\tilde q_c]$ | Fluctuation (van Vleck) prefactor |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

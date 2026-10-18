@@ -150,10 +150,10 @@ Throughout the series a signature is written $(n,m)$ with the **positive** direc
 
 Read as a statement about **objects** rather than directions: an element of $\mathbb{M}_-$ carries the metric $(-,+,+,+)$, and an element of $\mathbb{M}_+$ carries $(+,-,-,-)$. This is not a separate choice made sector by sector — it is the one level-1 form read on two different real bases, and the two are mirror images of one another through the identity below.
 
-The Minkowski interval is not postulated at this level either. It is the level-1 form read on the material sector with the time coordinate written $ict$: the four-position is $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, whose scalar coefficient $ict$ is imaginary, and
+The Minkowski interval is not postulated at this level either. It is the level-1 form read on the material sector with the time coordinate written $ict$: the four-position is $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, whose scalar coefficient $ict$ is imaginary, and
 
 $$
-\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = (ict)^2 + x^2 + y^2 + z^2 = -c^2t^2 +x^2+y^2+z^2 ,
+\langle\tilde{R},\tilde{R}\rangle_{\natural} = (ict)^2 + x^2 + y^2 + z^2 = -c^2t^2 +x^2+y^2+z^2 ,
 $$
 
 with the minus arising from $i^2 = -1$ alone. Multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $\langle i\tilde{Q},i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$; the mirror relation between the two signatures is that identity. The Lorentzian signature is therefore an *output* of the biquaternion conventions, not an input to them.

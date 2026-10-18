@@ -59,7 +59,7 @@ which is the determinant of the matrix model $\mathsf{M}_2$ with $\mathsf{M}_2(e
 $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$. The subspaces are the anti-Hermitian material sector $\mathbb{M}_-$,
 the Hermitian informational sector $\mathbb{M}_+$, the real-quaternion subspace
 $\mathbb{H}_{\mathbb{B}}$ and the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$.
-The material coordinate is $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, so that $\langle\tilde Q\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$,
+The material coordinate is $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, so that $\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$,
 and $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula is
 $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)=2\langle\tilde P,\tilde H\rangle$. The
 plain product is written $\tilde P\tilde Q$ and the plain sesquilinear product
@@ -76,8 +76,8 @@ $$
 \langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}=\det\mathsf{M}_2(\tilde Q).
 $$
 
-On the material sector the norm is the Minkowski interval, $\langle\tilde Q\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$ for
-$\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, so its zero set is the light cone $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|=c|t|$. The algebraic
+On the material sector the norm is the Minkowski interval, $\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$ for
+$\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, so its zero set is the light cone $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|=c|t|$. The algebraic
 character of that zero set is the subject of *The Light Cone as the Biquaternion Zero-Divisor Cone*: a
 nonzero biquaternion has vanishing norm if and only if it is a zero divisor, that is, if and only if it
 annihilates some nonzero element. The same article splits the zero divisors into the **nilpotents**, whose

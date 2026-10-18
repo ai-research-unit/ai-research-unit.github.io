@@ -87,7 +87,7 @@ $$
 
 an anti-automorphism of order two, and the **conjugate reversion** $x^{r,\sigma} = \sigma(x^{r})$ is the other anti-involution of order two, the two being related by $x^{\dagger} = \alpha(x^{r,\sigma})$. The construction, the table of signs, the Klein four-group on the biquaternions and the trace form $\tau(x^{\dagger}y)$ are *Hilbert Algebras*; the point taken here is that they are available over every commutative base and use no positivity.
 
-**Example.** For the biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$ the conjugations ${}^{\natural}$, $\sigma$ and $\bar{\cdot}$ commute and $\bar{\cdot} = \sigma\circ{}^{\natural}$ is the dagger; the form $\operatorname{Trd}(\tilde P\bar{\tilde Q})$ is the Hermitian one, while $\operatorname{Trd}(\tilde P\tilde Q)$ is the symmetric form of the ordinary trace. The difference between the two is exactly the dagger, and it is stated in *Hilbert Algebras*.
+**Example.** For the biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$ the conjugations ${}^{\natural}$, $\sigma$ and $\bar{\cdot}$ commute and $\bar{\cdot} = \sigma\circ{}^{\natural}$ is the dagger; the form $\operatorname{Trd}(\tilde Q_1\bar{\tilde Q_2})$ is the Hermitian one, while $\operatorname{Trd}(\tilde Q_1\tilde Q_2)$ is the symmetric form of the ordinary trace. The difference between the two is exactly the dagger, and it is stated in *Hilbert Algebras*.
 
 ## The Self-Adjoint and Skew Elements
 

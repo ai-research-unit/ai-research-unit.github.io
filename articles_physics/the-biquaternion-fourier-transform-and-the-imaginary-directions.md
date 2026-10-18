@@ -81,7 +81,7 @@ so that the **momentum operator is a root of $-1$ times a real frequency**. In o
 The material coordinate of the series is
 
 $$
-\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
+\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
 $$
 
 an element of the material sector $\mathbb{M}_-$ whose scalar coefficient is imaginary and whose vector part is real: the material time is imaginary and the material space is real, and the placement of the $i$ is the sector's. The conjugate variable of that coordinate enters through the root and not through a real number. On the informational hypothesis of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* the interpretation sharpens, because the imaginary directions are not extra spatial directions: the sector's own coordinates show the placement, the informational time being real while the informational space is imaginary, and the transform adds the complementary fact that **the imaginary directions are the conjugate directions**. Read this way, an imaginary axis is a conjugate axis and not a direction of propagation: it is the axis the root selects, along which the frequency and the wavevector are paired, and not a further direction in which anything travels.
@@ -160,7 +160,7 @@ which vanishes on the light cone, so that the interval acts as a multiplier, the
 | $W(t,\omega)=\exp(-2\pi\rho\,\omega t)$ | The Fourier kernel; $=\cos(2\pi\omega t)e_t-\sin(2\pi\omega t)\rho$ |
 | $W(t,\omega)^{-1}$ | The inverse; $=\cos(2\pi\omega t)e_t+\sin(2\pi\omega t)\rho$, for every root |
 | $\langle\tilde Q\rangle_{\natural}$ | The biquaternion norm; $\langle W\rangle_{\natural}=e_t$ for a pure root |
-| $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | The material coordinate in $\mathbb{M}_-$ |
+| $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | The material coordinate in $\mathbb{M}_-$ |
 | $\partial_\mu\mapsto 2\pi\rho\,\omega_\mu$ | The diagonalisation of the derivative; the momentum operator |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | The biquaternionic gradient and the d'Alembertian |
 | $-4\pi^{2}(\omega_0^{2}-\omega_1^{2}-\omega_2^{2}-\omega_3^{2})$ | The symbol of $\Box$; the interval in the conjugate variables |

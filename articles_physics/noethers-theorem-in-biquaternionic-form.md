@@ -7,7 +7,7 @@ Noether's theorem connects two things a physical theory supplies separately: its
 The two ends of the theorem are both already in the read list. *Relativistic Mechanics in Biquaternionic Form* gives the free-particle action
 
 $$
-S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}},
+S = -mc\int\sqrt{-\,d\tilde{R}\,\overline{d\tilde{R}}},
 $$
 
 whose integrand is built from the biquaternion norm of the displacement biquaternion, and it gives the conservation of the four-current in the framework form $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$. This article joins the two ends: it derives the current from the symmetry of the action, for the two kinds of symmetry the framework contains.
@@ -15,7 +15,7 @@ whose integrand is built from the biquaternion norm of the displacement biquater
 **Two kinds of symmetry.** A relativistic action has
 
 - **internal** symmetries, which do not move the spacetime point — here the central phase $\tilde{\Phi}\mapsto \exp(i\alpha)\tilde{\Phi}$ of a complex biquaternion field, the symmetry whose localization is the gauge principle; and
-- **spacetime** symmetries, the Poincaré transformations — four translations $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$ and six Lorentz transformations $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.
+- **spacetime** symmetries, the Poincaré transformations — four translations $\tilde{R}\mapsto\tilde{R}+\tilde{a}$ and six Lorentz transformations $\tilde{R}\mapsto\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$. Translation invariance gives the conserved four-momentum; Lorentz invariance gives the conserved angular momentum.
 
 The internal case produces a current biquaternion $\tilde{J}\in\mathbb{M}_-$ with $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, the framework form of $\partial/\partial Q_\mu J^\mu = 0$. The spacetime case produces an energy–momentum current and an angular-momentum bivector.
 
@@ -36,11 +36,11 @@ lies in $\mathbb{M}_-$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tild
 **The particle.** The free relativistic particle of rest mass $m$ has the action
 
 $$
-S[\tilde{Q}] = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}},
-\qquad d\tilde{Q} = ic\,dt\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{M}_- .
+S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,\overline{d\tilde{R}}},
+\qquad d\tilde{R} = ic\,dt\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{M}_- .
 $$
 
-Because $d\tilde{Q}\,\overline{d\tilde{Q}} = -c^2dt^2 +dx^2+dy^2+dz^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt/\gamma$, and the Lagrangian in the coordinate time $t$ is
+Because $d\tilde{R}\,\overline{d\tilde{R}} = -c^2dt^2 +dx^2+dy^2+dz^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt/\gamma$, and the Lagrangian in the coordinate time $t$ is
 
 $$
 L(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma},
@@ -72,7 +72,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0 \ \text{on shell}.
 $$
 
-For a spacetime symmetry, the same construction applied to a transformation that moves the point $\tilde{Q}$ yields a current carrying one index per generator: for translations the energy–momentum current, for Lorentz transformations the angular-momentum current. The two forms differ only in what the symmetry variation acts on. The general identity behind both is that the divergence of the current is the field equation contracted with the symmetry variation; it is written out for the central phase in the next section and for translations after that.
+For a spacetime symmetry, the same construction applied to a transformation that moves the point $\tilde{R}$ yields a current carrying one index per generator: for translations the energy–momentum current, for Lorentz transformations the angular-momentum current. The two forms differ only in what the symmetry variation acts on. The general identity behind both is that the divergence of the current is the field equation contracted with the symmetry variation; it is written out for the central phase in the next section and for translations after that.
 
 ## The Current of the Central Phase
 
@@ -121,7 +121,7 @@ $$
 
 which is the continuity equation $\partial/\partial t\rho + \mathrm{div}\,\vec j = 0$.
 
-**On what case was this checked?** A single plane wave is a trap: for $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde P\tilde{Q}))$ the current is *constant*, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:
+**On what case was this checked?** A single plane wave is a trap: for $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}))$ the current is *constant*, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:
 
 - **a superposition of on-shell plane waves.** With $c = \hbar = m = 1$ and the momenta $(|\vec k|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = \vec k^2 + 1$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ simplifies to **exactly zero**;
 - **a standing wave**, $\tilde{\Phi} = \sin(kx)\cos(\omega t) + i\sin(kx)\sin(\omega t)$ with $\omega^2 = c^2k^2 + m^2c^4/\hbar^2$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ is **exactly zero**;
@@ -143,10 +143,10 @@ which vanishes only in the massless limit. In the biquaternion interpretation th
 
 ## Translation Invariance and the Conserved Four-Momentum
 
-**The particle charge.** The action $S[\tilde{Q}]$ above depends on $\tilde{Q}$ only through $d\tilde{Q}$, so the constant shift
+**The particle charge.** The action $S[\tilde{R}]$ above depends on $\tilde{R}$ only through $d\tilde{R}$, so the constant shift
 
 $$
-\tilde{Q}\ \longmapsto\ \tilde{Q} + \tilde{a},
+\tilde{R}\ \longmapsto\ \tilde{R} + \tilde{a},
 \qquad \tilde{a}\in\mathbb{M}_-\ \text{constant},
 $$
 
@@ -199,10 +199,10 @@ $$
 
 The naive sum of the parent's four-forces is not zero even though the total four-momentum is conserved. For the collision of *Exercise: Four-Momentum Conservation in a Collision* ($E_1 = 3mc^2$, equal masses, $\theta^* = 90^\circ$), the total four-momenta $\tilde{P}_{\mathrm{in}}$ and $\tilde{P}_{\mathrm{out}}$ were recomputed and agree component by component in the laboratory.
 
-**What translation does to a plane wave.** A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde P\tilde{Q}))$, $\tilde P\in\mathbb{M}_-$, and $\tilde{Q}\mapsto\tilde{Q}+\tilde{a}$,
+**What translation does to a plane wave.** A free field is a plane wave, and a translation acts on it by a central phase. With the series' phase convention $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}))$, $\tilde P\in\mathbb{M}_-$, and $\tilde{R}\mapsto\tilde{R}+\tilde{a}$,
 
 $$
-\tilde{\Phi}\big|_{\tilde{Q}+\tilde{a}} = \exp(\,i\,\mathrm{Sc}(\tilde P\tilde{a}))\,\tilde{\Phi}\big|_{\tilde{Q}},
+\tilde{\Phi}\big|_{\tilde{R}+\tilde{a}} = \exp(\,i\,\mathrm{Sc}(\tilde P\tilde{a}))\,\tilde{\Phi}\big|_{\tilde{R}},
 \qquad
 \tilde{\Phi}_0\ \text{constant}.
 $$
@@ -321,9 +321,9 @@ The field translation current is the canonical energy–momentum, $\partial/\par
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_\mu\,\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian |
-| $S = -mc\int\sqrt{-d\tilde{Q}\,\overline{d\tilde{Q}}}$ | Free-particle action |
+| $S = -mc\int\sqrt{-d\tilde{R}\,\overline{d\tilde{R}}}$ | Free-particle action |
 | $L = -mc^2\sqrt{1-\vec v^2/c^2}$ | Free-particle Lagrangian |
-| $\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, in $\mathbb{M}_-$ |
+| $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, in $\mathbb{M}_-$ |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation |
 | $\tilde{F}_a = d\tilde{P}_a/d\tau_a$ | Four-force (proper-time derivative; not summable) |
@@ -340,9 +340,9 @@ The field translation current is the canonical energy–momentum, $\partial/\par
 | $\exp(i\,\mathrm{Sc}(\tilde P\tilde{a}))$ | Central translation multiplier on a plane wave |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula of the informational sector |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

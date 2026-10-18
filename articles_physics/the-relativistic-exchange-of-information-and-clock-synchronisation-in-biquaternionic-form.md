@@ -9,7 +9,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 The article develops the following.
 
 - **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $t_{\mathrm{ret}} = t - \vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t_{\mathrm{adv}} = t + \vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
-- **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde{Q}\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde{Q}/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
+- **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde{R}\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde{R}/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $t_2 = (t_1+t_3)/2$, and the distance is $L = c(t_3-t_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
 - **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta t = \gamma v_b\,\Delta x'/c^2$.
@@ -18,7 +18,7 @@ The article develops the following.
 
 The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_t+\vec a$ of imaginary scalar part and real vector part. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_t+\vec a$ of imaginary scalar part and real vector part. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
 
 ## Signals as Null Displacements
 
@@ -89,15 +89,15 @@ If $A \rightsquigarrow B$ and $B \rightsquigarrow C$ are two light exchanges, th
 
 ### Proper Time from the Biquaternion Norm
 
-A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde{Q}(\lambda)$, the **proper time** is defined by
+A clock is a physical system that measures the interval along its own worldline. If the worldline is $\tilde{R}(\lambda)$, the **proper time** is defined by
 
 $$
-c\,d\tau = \sqrt{-\,\langle d\tilde{Q}\rangle_{\natural}}
+c\,d\tau = \sqrt{-\,\langle d\tilde{R}\rangle_{\natural}}
 = \sqrt{-\left(ic\,dt\right)^2 -(dx^2+dy^2+dz^2)}
 = \sqrt{c^2\,dt^2 -(dx^2+dy^2+dz^2)},
 $$
 
-the positive root being taken because $d\tilde{Q}$ is timelike along a physical worldline, so that $\langle d\tilde{Q}\rangle_{\natural} < 0$ and $-\langle d\tilde{Q}\rangle_{\natural} > 0$. Factoring the coordinate time,
+the positive root being taken because $d\tilde{R}$ is timelike along a physical worldline, so that $\langle d\tilde{R}\rangle_{\natural} < 0$ and $-\langle d\tilde{R}\rangle_{\natural} > 0$. Factoring the coordinate time,
 
 $$
 d\tau = \sqrt{1 - \frac{\vec v^2}{c^2}}\;dt = \frac{dt}{\gamma},
@@ -110,7 +110,7 @@ $$
 which is the standard time-dilation relation. The interpretation of the clock between two events on the worldline is the integral
 
 $$
-\Delta\tau = \int_{A}^{B}\frac{\sqrt{-\,\langle d\tilde{Q}\rangle_{\natural}}}{c}
+\Delta\tau = \int_{A}^{B}\frac{\sqrt{-\,\langle d\tilde{R}\rangle_{\natural}}}{c}
 = \int_{t_A}^{t_B}\sqrt{1-\frac{\vec v(t)^2}{c^2}}\;dt .
 $$
 
@@ -121,8 +121,8 @@ The biquaternion form has one structural advantage over the component form: the 
 Differentiating the worldline with respect to proper time gives the **four-velocity**
 
 $$
-\tilde{V} = \frac{d\tilde{Q}}{d\tau}
-= \frac{d\tilde{Q}}{dt}\frac{dt}{d\tau}
+\tilde{V} = \frac{d\tilde{R}}{d\tau}
+= \frac{d\tilde{R}}{dt}\frac{dt}{d\tau}
 = \gamma\left(ic\,e_t + \vec v\right),
 $$
 
@@ -345,7 +345,7 @@ The exchange of information and the synchronisation of clocks are built from the
 
 1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t\,\vec u_{\mathrm s}$, and the retarded coordinate $t_{\mathrm{ret}} = t-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega t_{\mathrm{ret}}$.
 
-2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde{Q}\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dt$, and the clock four-velocity is $\tilde{V} = d\tilde{Q}/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
+2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde{R}\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dt$, and the clock four-velocity is $\tilde{V} = d\tilde{R}/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 
 3. **Einstein synchronisation is the round trip.** For emission at $t_1$, reflection at $t_2$, reception at $t_3$, the null conditions give $t_2 = (t_1+t_3)/2$ and the distance $L = c(t_3-t_1)/2$. The split of the round trip into one-way times is fixed by the convention $t_2 = t_1+\varepsilon(t_3-t_1)$; the round-trip time is independent of $\varepsilon$, and only the two-way speed of light is measured.
 
@@ -367,7 +367,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde{Q} = ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material four-position |
+| $\tilde{R} = ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |

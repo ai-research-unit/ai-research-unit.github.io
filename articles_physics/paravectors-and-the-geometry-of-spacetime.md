@@ -53,7 +53,7 @@ $$
 
 so a paravector is timelike, lightlike or spacelike exactly when the corresponding material element is, with the sign of the interval reversed in the two conventions. The null cone is the same set in both interpretations.
 
-**The dictionary in one line.** Under the identification $\gamma_k = i\vec e_k$, the algebra of physical space is the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra, the Clifford conjugate is the quaternion conjugate, the reversion is the Hermitian conjugation, and the Minkowski interval of a paravector is the negative of the corpus norm of its central-imaginary multiple. The material four-vectors are $\tilde Q = ip$ with $p$ a paravector; in coordinates, $\tilde Q = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ corresponds to the paravector $p = ct\,e_t - (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ in the paravector basis, the spatial sign being the convention that $\gamma_k = i\vec e_k$ fixes.
+**The dictionary in one line.** Under the identification $\gamma_k = i\vec e_k$, the algebra of physical space is the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra, the Clifford conjugate is the quaternion conjugate, the reversion is the Hermitian conjugation, and the Minkowski interval of a paravector is the negative of the corpus norm of its central-imaginary multiple. The material four-vectors are $\tilde R = ip$ with $p$ a paravector; in coordinates, $\tilde R = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ corresponds to the paravector $p = ct\,e_t - (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ in the paravector basis, the spatial sign being the convention that $\gamma_k = i\vec e_k$ fixes.
 
 ## The Paravector as a Spacetime Vector
 

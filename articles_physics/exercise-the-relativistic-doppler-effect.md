@@ -48,27 +48,27 @@ the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zer
 
 **Solution (b).** Fix the plane-wave convention $\propto \exp(i\Phi)$ with
 $$
-\Phi = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right)
+\Phi = \mathrm{Sc}\!\left(\tilde P\tilde{R}^{\natural}\right)
 = \left(\frac{i\omega}{c}\right)(ic\,t) + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t ,
 \qquad
-\tilde{Q} = ic\,t\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) .
+\tilde{R} = ic\,t\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) .
 $$
-Let $\tilde{\Lambda}$ be any unit-norm biquaternion and let $\tilde P' = \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}$, $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. Then
+Let $\tilde{\Lambda}$ be any unit-norm biquaternion and let $\tilde P' = \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}$, $\tilde{R}' = \tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$. Then
 $$
-\tilde P'{\tilde{Q}^{\natural}}'
-= \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}\;\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\bigr)^{\natural}
-= \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}\,\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural}\,\tilde{Q}^{\natural}\,\tilde{\Lambda}^{\natural} .
+\tilde P'{\tilde{R}^{\natural}}'
+= \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}\;\bigl(\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}\bigr)^{\natural}
+= \tilde{\Lambda}\tilde P\tilde{\Lambda}^{*}\,\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural}\,\tilde{R}^{\natural}\,\tilde{\Lambda}^{\natural} .
 $$
 Since $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$ and quaternion and complex conjugation commute, $\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural} = \overline{\bigl(\tilde{\Lambda}^{\natural}\bigr)^{*}} = \bar{\tilde{\Lambda}}$; hence the inner pair collapses,
 $$
 \tilde{\Lambda}^{*}\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural} = \overline{\tilde{\Lambda}^{\natural}}\,\bar{\tilde{\Lambda}} = \overline{\tilde{\Lambda}^{\natural}\tilde{\Lambda}} = \tilde{\Lambda}^{\natural}\tilde{\Lambda} = e_t ,
 $$
-so $\tilde P'{\tilde{Q}^{\natural}}' = \tilde{\Lambda}(\tilde P\tilde{Q}^{\natural})\tilde{\Lambda}^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_t$,
+so $\tilde P'{\tilde{R}^{\natural}}' = \tilde{\Lambda}(\tilde P\tilde{R}^{\natural})\tilde{\Lambda}^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_t$,
 $$
-\mathrm{Sc}\!\left(\tilde{\Lambda}\,(\tilde P\tilde{Q}^{\natural})\,\tilde{\Lambda}^{\natural}\right)
-= \mathrm{Sc}\!\left((\tilde P\tilde{Q}^{\natural})\,\tilde{\Lambda}^{\natural}\tilde{\Lambda}\right)
-= \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{\natural}\right) .
+\mathrm{Sc}\!\left(\tilde{\Lambda}\,(\tilde P\tilde{R}^{\natural})\,\tilde{\Lambda}^{\natural}\right)
+= \mathrm{Sc}\!\left((\tilde P\tilde{R}^{\natural})\,\tilde{\Lambda}^{\natural}\tilde{\Lambda}\right)
+= \mathrm{Sc}\!\left(\tilde P\tilde{R}^{\natural}\right) .
 $$
 Hence $\Phi' = \Phi$: the phase is a scalar of the algebra and of the Lorentz group. This is the biquaternion form of the statement that the phase of a plane wave is an invariant, and it is what makes the transformation of the frequency a transformation of the four-wavevector alone.
 
@@ -314,7 +314,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde P = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde P = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde P\tilde{R}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$ is invariant under rotor conjugation.
 
 2. **Frequency invariant.** An observer of four-velocity $\tilde{V}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 
@@ -340,7 +340,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position |
+| $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position |
 | $\tilde P = i\omega/c\,e_t + \vec k$ | Four-wavevector, $\langle\tilde P\rangle_{\natural} = 0$ for light |
 | $\tilde{V} = \gamma_b(ic\,e_t + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |

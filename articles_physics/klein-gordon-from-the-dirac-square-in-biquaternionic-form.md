@@ -205,11 +205,11 @@ The square is now applied to the plane waves of the series. Write the four-wavev
 $$
 \tilde P = i\frac{\omega}{c}e_t + \vec k\in\mathbb{M}_-,
 \qquad
-\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-,
+\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-,
 \qquad \vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
 $$
 
-and take the phase $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+and take the phase $\mathrm{Sc}(\tilde P\tilde{R}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
 \partial/\partial t \longmapsto -i\omega, \qquad \partial/\partial x_j\longmapsto ik_j, \qquad \partial/\partial Q_t \longmapsto -\frac{\omega}{c},
@@ -288,7 +288,7 @@ The square carries the mass shell $\tilde P\tilde P^{\natural} = -\mu^2$, hence 
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient (the Dirac operator) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
-| $\tilde P = i\omega/c\,e_t + \vec k$, $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-wavevector and four-position |
+| $\tilde P = i\omega/c\,e_t + \vec k$, $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-wavevector and four-position |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde P\tilde P^{\natural} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\mu = mc/\hbar$ | Mass parameter of the operator pair (inverse reduced Compton wavelength) |

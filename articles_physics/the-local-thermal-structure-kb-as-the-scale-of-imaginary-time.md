@@ -16,7 +16,7 @@ The article *Action, Units, and the Constants of the Biquaternion Universe* reco
 
 This article answers that question. The answer has two halves, and they point in opposite directions. **Yes**: $k_B$ is a scale attached to the same fixed algebraic direction, of the same local character as $c$, and the parallel can be made precise as a *local thermal structure* on the field of states. **No**: it is not the same kind of scale as $c$, because $c$ is required by the algebra and $k_B$ is required by no algebraic structure. The framework's thermal scale is a scale of a state, not of the algebra, and that difference is the content of the interpretation.
 
-Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$, the material sector is $\mathbb{M}_-$ with $\tilde{Q}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$, and the framework's local metric is $g=\mathrm{diag}(-c^2,1,1,1)$. $\hbar$ is the reduced Planck constant, $k_B$ Boltzmann's constant, $T$ the temperature and $\beta=\hbar/(k_BT)$ the inverse temperature.
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$, the material sector is $\mathbb{M}_-$ with $\tilde{R}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and norm $\langle\tilde{R}\rangle_{\natural}=\sum_\mu Q_\mu^2$, and the framework's local metric is $g=\mathrm{diag}(-c^2,1,1,1)$. $\hbar$ is the reduced Planck constant, $k_B$ Boltzmann's constant, $T$ the temperature and $\beta=\hbar/(k_BT)$ the inverse temperature.
 
 ## The Local Complex Structure, Recalled
 
@@ -120,8 +120,8 @@ The disanalogy is decided by the algebra's own requirement. The biquaternion nor
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $i$ | Central scalar imaginary, the fixed phase of the imaginary-time direction |
-| $\mathbb{M}_-$ | Material sector, $\tilde{Q}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
-| $\langle\tilde{Q}\rangle_{\natural}=(ic\,t)^2+x^2+y^2+z^2$ | Biquaternion norm; needs the scale $c$ to have a length |
+| $\mathbb{M}_-$ | Material sector, $\tilde{R}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
+| $\langle\tilde{R}\rangle_{\natural}=(ic\,t)^2+x^2+y^2+z^2$ | Biquaternion norm; needs the scale $c$ to have a length |
 | $c=1/\sqrt{\epsilon\mu}$ | Local speed of light: the algebra's scale |
 | $g_{\mu\nu}=\mathrm{diag}(-c^2,1,1,1)$ | Framework's local metric |
 | $\beta=\hbar/(k_BT)$ | Inverse temperature: the state's scale |

@@ -6,7 +6,7 @@
 The product of this group is the **general quaternionic bilinear product**
 
 $$
-\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_t - \vec P ,
+\tilde Q_1 \star \tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2 , \qquad \tilde Q_1^{\natural} = Q_{1t} - \vec Q_1 ,
 $$
 
 the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra*. The preceding articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,
@@ -15,7 +15,7 @@ $$
 \mathbb{H}_{\mathbb{B}} = \mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z ,
 $$
 
-the **quaternion subspace** (*Introduction to the Remarkable Subspaces* §*The Quaternion Subspace*). Its elements are the real quaternions: the four coefficients are real, and the subspace is the fixed space of complex conjugation, $\bar{\tilde P} = \tilde P$ if and only if $\tilde P \in \mathbb{H}_{\mathbb{B}}$. On it the natural conjugation acts as the quaternion conjugate, $h^{\natural} = \bar h$, which fixes the real line alone; the fixed set of ${}^{\natural}$ on the whole algebra is the centre, not the subspace.
+the **quaternion subspace** (*Introduction to the Remarkable Subspaces* §*The Quaternion Subspace*). Its elements are the real quaternions: the four coefficients are real, and the subspace is the fixed space of complex conjugation, $\bar{\tilde Q_1} = \tilde Q_1$ if and only if $\tilde Q_1 \in \mathbb{H}_{\mathbb{B}}$. On it the natural conjugation acts as the quaternion conjugate, $h^{\natural} = \bar h$, which fixes the real line alone; the fixed set of ${}^{\natural}$ on the whole algebra is the centre, not the subspace.
 
 The article establishes four things. First, the subspace is closed under the product, and the restriction is the familiar operation of putting the first factor into its quaternion conjugate,
 
@@ -154,10 +154,10 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of real dimension four, is th
 | $\mathbb{H}_{\mathbb{B}}$ | the quaternion subspace $\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ |
 | $h = h_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ | a real quaternion, all four coefficients real |
 | $\bar h = h_t-h_x\vec e_x-h_y\vec e_y-h_z\vec e_z$ | the quaternion conjugate, the restriction of ${}^{\natural}$ |
-| ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_t-\vec P$ |
-| $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
+| ${}^{\natural}$ | the natural conjugation $\tilde Q_1^{\natural} = Q_{1t}-\vec Q_1$ |
+| $\tilde Q_1\star\tilde Q_2 = \tilde Q_1^{\natural}\tilde Q_2$ | the general quaternionic bilinear product, the multiplication of this group |
 | $h\bullet g = \tfrac12(\bar hg+\bar gh)$ | the symmetrisation of the restricted product, the definite inner product of the subspace |
-| $\tilde P\tilde Q$ | the plain (associative) product of the algebra |
+| $\tilde Q_1\tilde Q_2$ | the plain (associative) product of the algebra |
 | $\langle h\rangle_{\natural} = \bar hh = \lvert h\rvert^2$ | the reduced norm of a real quaternion |
 | $L_h$ | the left multiplication of the product, $L_h(g) = \bar hg$ |
 | $\mathbb{H}^{\mathrm{opp}}$ | the opposite quaternion algebra, the monoid of the left multiplications |

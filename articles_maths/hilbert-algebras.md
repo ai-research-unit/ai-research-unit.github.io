@@ -191,13 +191,13 @@ The transpose that appears in the Gram matrix is $\bar{\cdot}$, not ${}^{\natura
 
 **Example (the biquaternions).** For $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$ the reduced norm is the determinant and the regular norm is its square; the norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ is the reduced norm. It is $\mathbb{C}$-valued and isotropic, and it vanishes on the zero divisors, its nonzero zeros being exactly the matrices of rank one.
 
-The dagger changes the picture completely. The form $\operatorname{Trd}(\tilde P\bar{\tilde{Q}})$ is complex-Hermitian with diagonal
+The dagger changes the picture completely. The form $\operatorname{Trd}(\tilde Q_1\bar{\tilde{Q}}_2)$ is complex-Hermitian with diagonal
 
 $$
-\operatorname{Trd}(\tilde Q\bar{\tilde{Q}}) = 2\sum_\mu \lvert Q_\mu\rvert^2 ,
+\operatorname{Trd}(\tilde Q_1\bar{\tilde{Q}}_1) = 2\sum_\mu \lvert Q_{1\mu}\rvert^2 ,
 $$
 
-which is a sum of non-negative reals: it is positive definite on the underlying real space, and it vanishes only at $\tilde Q = 0$. It is therefore the trace form of a Hilbert algebra, while $\operatorname{Trd}(\tilde P\tilde Q)$ is the symmetric form of the ordinary trace and is not positive definite. The two forms are related by the conjugation $\bar{\cdot}$, and the whole difference between the two lies in the dagger.
+which is a sum of non-negative reals: it is positive definite on the underlying real space, and it vanishes only at $\tilde Q_1 = 0$. It is therefore the trace form of a Hilbert algebra, while $\operatorname{Trd}(\tilde Q_1\tilde Q_2)$ is the symmetric form of the ordinary trace and is not positive definite. The two forms are related by the conjugation $\bar{\cdot}$, and the whole difference between the two lies in the dagger.
 
 ### The Polar Form of the Reduced Norm
 
@@ -230,7 +230,7 @@ For each $x$ the element $x^{\dagger}x$ is self-adjoint and $\langle x^{\dagger}
 
 The involution is built in two steps. The algebra carries a $\mathbb{Z}/2$-grading and the grade involution $\alpha$, and with them two intrinsic anti-involutions, **reversion** $x^{r}$ and the **conjugate** $x^{\natural} = \alpha(x^{r})$, which agree on the even part and differ on the odd part by a sign per degree. An involution $\sigma$ of the base extends to a $\sigma$-semilinear automorphism fixing the vectors, and the composite $x^{\dagger} = \sigma(\alpha(x^{r})) = \sigma(x^{\natural})$ is the **dagger**, an anti-automorphism of order two with $(xz)^{\dagger} = \bar{z}x^{\dagger}$ and $(ax)^{\dagger} = \sigma(a)x^{\dagger}$. Its companion is the **conjugate reversion** $x^{r,\sigma} = \sigma(x^{r})$, related by $x^{\dagger} = \alpha(x^{r,\sigma})$; the choice between them is a choice of sign per grade, hence of signature.
 
-The form is the **trace form** $\langle x, y\rangle = \tau(x^{\dagger}y)$, with $\tau$ the reduced trace $\operatorname{Trd} = \operatorname{Tr}/d$ for a central simple algebra of degree $d$ and the regular trace otherwise. It is Hermitian with respect to the dagger, its Gram matrix satisfies $H^{\dagger} = \sigma(H)^T = H$, the form is represented by $x^{\dagger}Hy$, and its radical is the kernel of $H$, so it is non-degenerate. In the biquaternion algebra the trace form $\operatorname{Trd}(\tilde P\bar{\tilde{Q}})$ has diagonal $2\sum_\mu\lvert Q_\mu\rvert^2$, a sum of non-negative reals, so it is positive definite, while the symmetric form $\operatorname{Trd}(\tilde P\tilde Q)$ is not; the two differ by the insertion of the dagger. The polar form of the reduced norm, $B_N(x,y) = \tfrac{1}{2}\operatorname{Trd}(x y^{\natural})$, is never proportional to the reduced trace form.
+The form is the **trace form** $\langle x, y\rangle = \tau(x^{\dagger}y)$, with $\tau$ the reduced trace $\operatorname{Trd} = \operatorname{Tr}/d$ for a central simple algebra of degree $d$ and the regular trace otherwise. It is Hermitian with respect to the dagger, its Gram matrix satisfies $H^{\dagger} = \sigma(H)^T = H$, the form is represented by $x^{\dagger}Hy$, and its radical is the kernel of $H$, so it is non-degenerate. In the biquaternion algebra the trace form $\operatorname{Trd}(\tilde Q_1\bar{\tilde{Q}}_2)$ has diagonal $2\sum_\mu\lvert Q_{1\mu}\rvert^2$, a sum of non-negative reals, so it is positive definite, while the symmetric form $\operatorname{Trd}(\tilde Q_1\tilde Q_2)$ is not; the two differ by the insertion of the dagger. The polar form of the reduced norm, $B_N(x,y) = \tfrac{1}{2}\operatorname{Trd}(x y^{\natural})$, is never proportional to the reduced trace form.
 
 ## Summary of Notation
 

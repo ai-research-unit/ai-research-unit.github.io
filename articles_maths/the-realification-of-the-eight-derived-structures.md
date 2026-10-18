@@ -14,7 +14,7 @@ Every structure below is read over $\mathbb{R}$ on the eight-dimensional real sp
 
 The product carries the general plain bilinear $\langle\cdot,\cdot\rangle$ form, the scalar part of the general product of its family, quoted from *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*:
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_tQ_t-(\vec P,\vec Q)
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)
 $$
 Over $\mathbb{C}$ it is a symmetric bilinear form; a nondegenerate symmetric bilinear form over $\mathbb{C}$ is classified by its rank alone, so its realification is not the doubling of a complex inertia but the **split** pair described in §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*: the real part $\operatorname{Re}\Phi$ and the imaginary part $\operatorname{Im}\Phi$ are two real symmetric bilinear forms, and on the identification $\mathbb{R}^8$ the realification has signature
 $$
@@ -22,7 +22,7 @@ $$
 $$
 on the basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$. On the realifications the complex structure reverses the form,
 $$
-\Phi_{\mathbb{R}}(J\tilde P,J\tilde Q)=-\Phi_{\mathbb{R}}(\tilde P,\tilde Q),
+\Phi_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=-\Phi_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
 which is the same statement as the two opposite blocks $\mathrm{D}$ and $-\mathrm{D}$ of its Gram matrix. The instance is the row general plain bilinear $B$ of the table of *The Realification of the Four Forms*, §*The Four Gram Matrices*.
 
@@ -40,15 +40,15 @@ and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^
 
 The product carries the general plain sesquilinear, the Hermitian $\langle\cdot,\cdot\rangle_{*}$ form, the scalar part of the general product of its family, quoted from *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*:
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=P_t\overline{Q_t}+(\vec P,\overline{\vec Q}).
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}).
 $$
 Over $\mathbb{C}$ it is a Hermitian form of complex inertia $(4,0)$; the realification of a Hermitian form is not split but the **doubling** of its inertia, by §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*: the form is real on the diagonal, the realification keeps its real part $\operatorname{Re}H$, and the realified signature is
 $$
 (8,0),
 $$
-with Gram matrix $\mathrm{I}_8$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$. The discarded imaginary part is not a second independent form: it is the alternating companion of the Hermitian structure, the Kähler form, and it is determined by the real part through $\operatorname{Im}\langle\tilde P,\tilde Q\rangle_{*}=\operatorname{Re}\langle\tilde P,i\tilde Q\rangle_{*}$, so that a Hermitian form needs **one** real form where a bilinear form needs two. On the realifications the complex structure preserves the form,
+with Gram matrix $\mathrm{I}_8$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$. The discarded imaginary part is not a second independent form: it is the alternating companion of the Hermitian structure, the Kähler form, and it is determined by the real part through $\operatorname{Im}\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Re}\langle\tilde Q_1,i\tilde Q_2\rangle_{*}$, so that a Hermitian form needs **one** real form where a bilinear form needs two. On the realifications the complex structure preserves the form,
 $$
-\Phi_{\mathbb{R}}(J\tilde P,J\tilde Q)=+\Phi_{\mathbb{R}}(\tilde P,\tilde Q),
+\Phi_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=+\Phi_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
 the opposite of the bilinear case. The instance is the general plain sesquilinear form $\langle\cdot,\cdot\rangle_{*}$, the Hermitian form, whose row in the table of *The Realification of the Four Forms*, §*The Four Gram Matrices*, is the Hermitian one. Because the block's product is exactly this form read as a multiplication, the form's realification is also the realification of the product: the signature $(8,0)$, the Gram matrix $\mathrm{I}_8$ and the null set $\{0\}$ belong to the block as much as to the form it carries, and they are the definite row of the four.
 
@@ -62,13 +62,13 @@ and over $\mathbb{R}$ they are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^
 
 The **trace form** of the real regular representation is the symmetric bilinear form
 $$
-\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr),
+\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr),
 $$
-the analogue for this block of $\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})$ of the general plain algebra. The composition law $L^{\star}_{\tilde P}L^{\star}_{\tilde Q}=P_tR^{\star}_{\tilde Q}$ of *The Multiplication Operators of the Symmetric Plain Sesqualgebra* evaluates it: $L_{\tilde P}L_{\tilde Q}=P_tR_{\tilde Q}$ has complex trace $P_t\overline{Q_t}$, so that
+the analogue for this block of $\operatorname{Tr}(L_{\tilde Q_1}L_{\tilde Q_2})$ of the general plain algebra. The composition law $L^{\star}_{\tilde Q_1}L^{\star}_{\tilde Q_2}=Q_{1t}R^{\star}_{\tilde Q_2}$ of *The Multiplication Operators of the Symmetric Plain Sesqualgebra* evaluates it: $L_{\tilde Q_1}L_{\tilde Q_2}=Q_{1t}R_{\tilde Q_2}$ has complex trace $Q_{1t}\overline{Q_{2t}}$, so that
 $$
-\tau(\tilde P,\tilde Q)=2\operatorname{Re}\bigl(P_t\overline{Q_t}\bigr).
+\tau(\tilde Q_1,\tilde Q_2)=2\operatorname{Re}\bigl(Q_{1t}\overline{Q_{2t}}\bigr).
 $$
-The trace form is **degenerate**: its radical is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of real dimension six, its rank is two, and it sees the real and the imaginary parts of the central coordinate $P_t$ alone. in the block's own terms it is the conjugate-linear map $\tilde S\mapsto\overline{S_t}\tilde Q_1$, which is neither multiplication, as *The Multiplication Operators of the Symmetric Plain Sesqualgebra* computes.
+The trace form is **degenerate**: its radical is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of real dimension six, its rank is two, and it sees the real and the imaginary parts of the central coordinate $Q_t$ alone. in the block's own terms it is the conjugate-linear map $\tilde S\mapsto\overline{S_t}\tilde Q_1$, which is neither multiplication, as *The Multiplication Operators of the Symmetric Plain Sesqualgebra* computes.
 
 ### What Is Specific to This Product Read over $\mathbb{R}$
 
@@ -80,7 +80,7 @@ $$
 $$
 is a real subalgebra of real dimension three: the odd dimension is the mark of the real reading. The vector subspace $\mathrm{Vect}(\mathbb{B})$ is **not** a subalgebra, because $\vec e_x\star \vec e_x=\langle \vec e_x,\vec e_x\rangle_{*}e_t=e_t$ leaves it; closure is a condition on the product, not on the coordinate span.
 
-**The Galois-twisted automorphisms.** The coefficientwise conjugation $c=\overline{\cdot}$ is an $\mathbb{R}$-linear algebra automorphism of the block, because $\overline{\tilde P\star\tilde Q}=\overline{\tilde P}\star\overline{\tilde Q}$, an identity which is conjugate-commutativity read on the involution, and $c$ is not $\mathbb{C}$-linear, since it induces the Galois conjugation $\kappa$ on the centre. Hence the real automorphism group of the block is **twice** the complex one,
+**The Galois-twisted automorphisms.** The coefficientwise conjugation $c=\overline{\cdot}$ is an $\mathbb{R}$-linear algebra automorphism of the block, because $\overline{\tilde Q_1\star\tilde Q_2}=\overline{\tilde Q_1}\star\overline{\tilde Q_2}$, an identity which is conjugate-commutativity read on the involution, and $c$ is not $\mathbb{C}$-linear, since it induces the Galois conjugation $\kappa$ on the centre. Hence the real automorphism group of the block is **twice** the complex one,
 $$
 \operatorname{Aut}_{\mathbb{R}}(\star)=\operatorname{Aut}_{\mathbb{C}}(\star)\cup c\,\operatorname{Aut}_{\mathbb{C}}(\star),
 $$
@@ -88,7 +88,7 @@ the extra coset conjugate-linear: the complex automorphisms are the elements of 
 
 **The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\mathrm{SQA}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*:
 $$
-\tilde P\star\tilde Q=\mathrm{SQA}(\tilde P,\tilde Q)\qquad(\tilde P,\tilde Q\in\mathbb{H}_{\mathbb{B}}),
+\tilde Q_1\star\tilde Q_2=\mathrm{SQA}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}),
 $$
 because on the real quaternions the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ agrees with the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ and the vector part of the quaternionic product is antisymmetric, hence killed by the symmetrisation. Over $\mathbb{C}$ the two structures are distinct on the whole space; the real reading makes them meet on a real form, and the coincidence is a statement of the real reading and not of the products.
 
@@ -96,7 +96,7 @@ because on the real quaternions the Hermitian form $\langle\cdot,\cdot\rangle_{*
 
 ### Instance: the Symmetric Plain Sesqualgebra
 
-Two statements of the real reading are specific to the block. The product read over $\mathbb{R}$ is an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in which conjugate-commutativity still holds and the square is the central element $\langle\tilde Q,\tilde Q\rangle_{*}e_t=\lVert\tilde Q\rVert_E^{2}e_t$, real and positive off the origin; associativity fails at the triple $(\vec e_x,\vec e_x,e_t)$, the Jordan identity fails with the witness $x=y=\vec e_x$, and there is no unit. Every ring-theoretic property is unchanged: the idempotents stay $\{0,e_t\}$, the nilpotents stay the vector subspace $\mathrm{Vect}(\mathbb{B})=\{P_t=0\}$ of index three, the zero divisors stay the complement of the origin, and the root of $-1$ stays absent. The second slot is $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, so the left multiplications anticommute with $J$, $L_{\tilde Q_1}J=-JL_{\tilde Q_1}$, and carry the block shape $\begin{pmatrix}A&B\\ B&-A\end{pmatrix}$, while the right multiplications commute, $R_{\tilde Q_1}J=JR_{\tilde Q_1}$, and carry the shape $\begin{pmatrix}A&-B\\ B&A\end{pmatrix}$; the block is the instance in which the two shapes are carried by the two halves of one operator family.
+Two statements of the real reading are specific to the block. The product read over $\mathbb{R}$ is an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in which conjugate-commutativity still holds and the square is the central element $\langle\tilde Q_1,\tilde Q_1\rangle_{*}e_t=\lVert\tilde Q_1\rVert_E^{2}e_t$, real and positive off the origin; associativity fails at the triple $(\vec e_x,\vec e_x,e_t)$, the Jordan identity fails with the witness $x=y=\vec e_x$, and there is no unit. Every ring-theoretic property is unchanged: the idempotents stay $\{0,e_t\}$, the nilpotents stay the vector subspace $\mathrm{Vect}(\mathbb{B})=\{Q_{1t}=0\}$ of index three, the zero divisors stay the complement of the origin, and the root of $-1$ stays absent. The second slot is $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, so the left multiplications anticommute with $J$, $L_{\tilde Q_1}J=-JL_{\tilde Q_1}$, and carry the block shape $\begin{pmatrix}A&B\\ B&-A\end{pmatrix}$, while the right multiplications commute, $R_{\tilde Q_1}J=JR_{\tilde Q_1}$, and carry the shape $\begin{pmatrix}A&-B\\ B&A\end{pmatrix}$; the block is the instance in which the two shapes are carried by the two halves of one operator family.
 
 ## The Symmetric Quaternionic Algebra (SQA)
 
@@ -108,7 +108,7 @@ $$
 $$
 of signature $(4,4)$ and index four, and the complex structure reverses the realification,
 $$
-\Phi_{\mathbb{R}}(J\tilde P,J\tilde Q)=-\Phi_{\mathbb{R}}(\tilde P,\tilde Q),
+\Phi_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=-\Phi_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
 which is the statement of the two opposite blocks of the Gram matrix; the verification is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, §*The Realification and the Signature*. The restriction to the quaternion subspace is positive definite, of signature $(4,0)$, the restriction to the anti-quaternion subspace is negative definite, of signature $(0,4)$, and the two Hermitian subspaces carry the two real light cones (*Remarkable Subspaces under the Symmetric Quaternionic Algebra*).
 
@@ -167,7 +167,7 @@ is kept inside itself, because $e_t$ pairs to zero with the two other generators
 
 ### Instance: the Symmetric Quaternionic Algebra
 
-**The change of scalars.** Over $\mathbb{R}$ the same product on the same set is an $\mathbb{R}$-bilinear product on $\mathbb{R}^8=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, with the complex structure $J=L_i$, $\mathbb{R}$-linear and $\mathbb{C}$-linear, of square $-\mathrm{id}$. The dictionary fixes everything read from the ring alone — commutativity, the failure of associativity, of power-associativity, of the Jordan and Jacobi identities, the centrality of the value, the absence of a unit, the idempotents, the nilpotents and the zero divisors — while the dimension moves from complex four to real eight; the witness of the failure of associativity, $\tilde P=\tilde Q=\vec e_x$, $\tilde Q_5=e_t$, lies in the real span and serves in both readings. The image, the central line over $\mathbb{C}$, is the real plane spanned by $e_t$ and $ie_t$, of real dimension two.
+**The change of scalars.** Over $\mathbb{R}$ the same product on the same set is an $\mathbb{R}$-bilinear product on $\mathbb{R}^8=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, with the complex structure $J=L_i$, $\mathbb{R}$-linear and $\mathbb{C}$-linear, of square $-\mathrm{id}$. The dictionary fixes everything read from the ring alone — commutativity, the failure of associativity, of power-associativity, of the Jordan and Jacobi identities, the centrality of the value, the absence of a unit, the idempotents, the nilpotents and the zero divisors — while the dimension moves from complex four to real eight; the witness of the failure of associativity, $\tilde Q_1=\tilde Q_2=\vec e_x$, $\tilde Q_5=e_t$, lies in the real span and serves in both readings. The image, the central line over $\mathbb{C}$, is the real plane spanned by $e_t$ and $ie_t$, of real dimension two.
 
 **The real algebra and its centre.** The operation is commutative, non-associative, non-power-associative, and satisfies neither the Jordan nor the Jacobi identity, and it has no one-sided unit. The coefficient $N$ is a symmetric $\mathbb{R}$-bilinear pairing of $\mathbb{R}^8\times\mathbb{R}^8$ into the centre $\mathbb{C}$, non-degenerate, with real part of rank eight and signature $(4,4)$, Gram matrix $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$, and imaginary part the companion form of the same signature $(4,4)$, Gram matrix the swap block $\left(\begin{smallmatrix}0&\mathrm{I}_4\\ \mathrm{I}_4&0\end{smallmatrix}\right)$; the two-sided annihilator of the product is $\{0\}$. The centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is a real subalgebra of real dimension two isomorphic to $\mathbb{C}$, and $\mathbb{R}e_t$ a subalgebra of real dimension one.
 
@@ -179,13 +179,13 @@ is kept inside itself, because $e_t$ pairs to zero with the two other generators
 
 The block carries the Krein form
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P\star\tilde Q)=P_t\overline{Q_t}-(\vec P,\overline{\vec Q}),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}),
 $$
 Hermitian of complex inertia $(1,3)$. The realification of a Hermitian form doubles its inertia, by §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*, so the form $\Phi_{\mathbb{R}}=\operatorname{Re}K$ is the real symmetric bilinear form on $\mathbb{R}^8$ of signature
 $$
 (2,6),\qquad\text{Gram matrix }\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1),
 $$
-and the complex structure preserves it, $\Phi_{\mathbb{R}}(J\tilde P,J\tilde Q)=+\Phi_{\mathbb{R}}(\tilde P,\tilde Q)$. The instance is the row general quaternionic sesquilinear, the Krein $K$ of the table of *The Realification of the Four Forms*, §*The Four Gram Matrices*.
+and the complex structure preserves it, $\Phi_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=+\Phi_{\mathbb{R}}(\tilde Q_1,\tilde Q_2)$. The instance is the row general quaternionic sesquilinear, the Krein $K$ of the table of *The Realification of the Four Forms*, §*The Four Gram Matrices*.
 
 The compatibility of $K$ with the left multiplications realifies with the form. Over $\mathbb{C}$ it is
 $$
@@ -209,7 +209,7 @@ are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §*The Realification
 
 **The trace form.** The composite of two left multiplications is $\mathbb{C}_{\mathbb{B}}$-linear, so
 $$
-\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}\bigl(L^{\star}_{\tilde P}L^{\star}_{\tilde Q}\bigr)
+\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}\bigl(L^{\star}_{\tilde Q_1}L^{\star}_{\tilde Q_2}\bigr)
 $$
 is a real symmetric bilinear form on $\mathbb{R}^8$, of signature
 $$
@@ -217,13 +217,13 @@ $$
 $$
 on $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$. The trace of a $\mathbb{C}$-linear map is twice the real part of its complex trace, so $\tau=2\operatorname{Re}\Theta$ with
 $$
-\Theta(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{C}}\bigl(L^{\star}_{\tilde P}L^{\star}_{\tilde Q}\bigr)=4P_t\overline{Q_t}+2\sum_{\mu\in\{x,y,z\}}P_\mu\overline{Q_\mu},
+\Theta(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{C}}\bigl(L^{\star}_{\tilde Q_1}L^{\star}_{\tilde Q_2}\bigr)=4Q_{1t}\overline{Q_{2t}}+2\sum_{\mu\in\{x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}},
 $$
-a **positive definite** Hermitian form of complex inertia $(4,0)$. This is the trace form of the left regular representation of the block, the analogue of $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})$ for the parent. The block therefore carries two real forms over $\mathbb{R}$, of opposite kinds: the indefinite $\Phi_{\mathbb{R}}$, of signature $(2,6)$, attached to the product, and the definite $\tau$, of signature $(8,0)$, attached to its left multiplications; the definite one is no multiple of the indefinite one.
+a **positive definite** Hermitian form of complex inertia $(4,0)$. This is the trace form of the left regular representation of the block, the analogue of $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1}L_{\tilde Q_2})$ for the parent. The block therefore carries two real forms over $\mathbb{R}$, of opposite kinds: the indefinite $\Phi_{\mathbb{R}}$, of signature $(2,6)$, attached to the product, and the definite $\tau$, of signature $(8,0)$, attached to its left multiplications; the definite one is no multiple of the indefinite one.
 
 **The Galois twist.** The four conjugations of the ring — the identity, the natural conjugation ${}^{\natural}$, the coefficientwise conjugation $\kappa$ and the Hermitian star ${}^{*}=\kappa\circ{}^{\natural}$ — are $\mathbb{R}$-linear and are automorphisms of the block,
 $$
-T(\tilde P\star\tilde Q)=T(\tilde P)\star T(\tilde Q),
+T(\tilde Q_1\star\tilde Q_2)=T(\tilde Q_1)\star T(\tilde Q_2),
 $$
 so the group of $\mathbb{R}$-algebra automorphisms of the block contains the Klein four group $\{\mathrm{id},{}^{\natural},\kappa,{}^{*}\}$. Of the four, $\mathrm{id}$ and ${}^{\natural}$ are $\mathbb{C}_{\mathbb{B}}$-linear while $\kappa$ and ${}^{*}$ are conjugate-linear, the Galois twist of the centre: the real reading acquires conjugate-linear symmetries that are not $\mathbb{C}_{\mathbb{B}}$-linear. The four are the group recorded as the structure group of the block in *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*; whether they exhaust the automorphism group is left undecided there, and no attempt is made here to extend it.
 
@@ -237,11 +237,11 @@ The form of an operation is its **scalar part** (*The 4 Forms over the Biquatern
 $$
 \langle\tilde A,\tilde Q_3\rangle_{\natural*}=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde Q_3}\bigr)=-2\,\vec A\cdot\vec Q_3,
 \qquad
-\varphi(\tilde P,\tilde Q)=P_tQ_t .
+\varphi(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t} .
 $$
 $\langle\cdot,\cdot\rangle_{\natural*}$ is the operator trace form, of complex rank three, with radical the centre; it is at once the Killing form of the block in the normalisation of *The Killing Form of the Antisymmetric Plain Algebra*, where the adjoint is read with the block's own halved bracket, $\kappa(\tilde A,\tilde Q_3)=\operatorname{Tr}(\operatorname{ad}_{\tilde A}\operatorname{ad}_{\tilde Q_3})$. $\varphi$ is the scalar-part form, of complex rank one, with radical the vector subspace; the two are independent and span the invariant symmetric forms of the block; and their combination
 $$
-\varphi+\tfrac12K=\mathrm{Sc}(\tilde P\tilde Q)=B
+\varphi+\tfrac12K=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=B
 $$
 is the general plain bilinear form of the parent product.
 
@@ -265,7 +265,7 @@ The first is the real Gram matrix of the invariant form of the block, of signatu
 
 **The action of the complex structure.** On all three forms the realification reverses $J$,
 $$
-\Phi_{\mathbb{R}}\bigl(J\tilde P,J\tilde Q\bigr)=-\Phi_{\mathbb{R}}\bigl(\tilde P,\tilde Q\bigr),
+\Phi_{\mathbb{R}}\bigl(J\tilde Q_1,J\tilde Q_2\bigr)=-\Phi_{\mathbb{R}}\bigl(\tilde Q_1,\tilde Q_2\bigr),
 $$
 the same statement as the two opposite blocks $\mathrm{D}$ and $-\mathrm{D}$ of the Gram matrix, and the rule of the bilinear kind: none of the three is Hermitian. On the derived algebra the two halves of $K$ carry opposite signs, $\operatorname{diag}(-2,-2,-2)$ on the real vector directions and $\operatorname{diag}(2,2,2)$ on the imaginary ones, which is the reading of the same form on the quaternion and the anti-quaternion subspace in the table of *The Killing Form of the Antisymmetric Plain Algebra*.
 
@@ -286,7 +286,7 @@ R_{\tilde Q_1}=-L_{\tilde Q_1},
 \operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}\bigr)=\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde Q_1}\bigr)=0 .
 $$
 
-*Proof.* Alternation gives $\tilde Q_2\wedge\tilde Q_1=-(\tilde Q_1\wedge\tilde Q_2)$. The operator $L_{\tilde Q_1}$ kills the scalar coordinate and acts on the derived algebra by the skew matrix $\vec Q_2\mapsto\vec Q_1\times\vec Q_2$, whose complex trace vanishes; the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace, so it vanishes too. Computed on the basis. **The trace row of the table of the four effects is not this row.** That row, $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde P})=4\,\mathrm{Sc}(\tilde P)$ and $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P})=8\operatorname{Re}\mathrm{Sc}(\tilde P)$, is the row of the products of the table whose element $e_t$ is a **left unit** — the general plain, the symmetric plain and the general quaternionic product; on the other nine, this one included, it fails, and on this one both traces vanish.
+*Proof.* Alternation gives $\tilde Q_2\wedge\tilde Q_1=-(\tilde Q_1\wedge\tilde Q_2)$. The operator $L_{\tilde Q_1}$ kills the scalar coordinate and acts on the derived algebra by the skew matrix $\vec Q_2\mapsto\vec Q_1\times\vec Q_2$, whose complex trace vanishes; the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace, so it vanishes too. Computed on the basis. **The trace row of the table of the four effects is not this row.** That row, $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde Q})=4\,\mathrm{Sc}(\tilde Q)$ and $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q})=8\operatorname{Re}\mathrm{Sc}(\tilde Q)$, is the row of the products of the table whose element $e_t$ is a **left unit** — the general plain, the symmetric plain and the general quaternionic product; on the other nine, this one included, it fails, and on this one both traces vanish.
 
 **Theorem (the operator trace form in the two readings).** For all $\tilde A,\tilde Q_3$,
 $$
@@ -312,7 +312,7 @@ $$
 $$
 of real dimension $6+4=10$, against the complex $\operatorname{Der}_{\mathbb{C}}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$ of real dimension $6+2=8$. The extra two dimensions are conjugate-linear and act on the centre alone.
 
-*Proof.* A derivation preserves the centre, because the centre is the annihilator and the Leibniz rule carries an annihilated element to an annihilated one, and it preserves the derived algebra, by the Leibniz rule and the stability of the image; so it is the sum of its two restrictions. The restrictions to the derived algebra are the derivations of the simple $\mathfrak{sl}(2,\mathbb{C})$ read over $\mathbb{R}$, hence the inner ones $\operatorname{ad}_{\vec P}$, of real dimension six, which is the factor $\mathfrak{sl}(2,\mathbb{C})$. A map vanishing on the derived algebra is a derivation exactly when it preserves the centre, and the centre is abelian of real dimension two, so every $\mathbb{R}$-linear endomorphism of it occurs: that is the factor $\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})$, of real dimension four, whose $\mathbb{C}$-linear half is the complex scalars $\mathbb{C}$ and completes the $\mathbb{C}$-linear part to $\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$. Computed on the basis. The identity $\operatorname{Der}_{\mathbb{R}}=\operatorname{Der}_{\mathbb{C}}$ of the associative parent does not carry over, **because a derivation of a bracket is not a derivation of the ring**: a ring derivation kills $i$, from $i^2=-1$ and $D(-1)=0$, while a bracket derivation is free to move $i$ inside the centre, and here that freedom is two real dimensions.
+*Proof.* A derivation preserves the centre, because the centre is the annihilator and the Leibniz rule carries an annihilated element to an annihilated one, and it preserves the derived algebra, by the Leibniz rule and the stability of the image; so it is the sum of its two restrictions. The restrictions to the derived algebra are the derivations of the simple $\mathfrak{sl}(2,\mathbb{C})$ read over $\mathbb{R}$, hence the inner ones $\operatorname{ad}_{\vec Q}$, of real dimension six, which is the factor $\mathfrak{sl}(2,\mathbb{C})$. A map vanishing on the derived algebra is a derivation exactly when it preserves the centre, and the centre is abelian of real dimension two, so every $\mathbb{R}$-linear endomorphism of it occurs: that is the factor $\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})$, of real dimension four, whose $\mathbb{C}$-linear half is the complex scalars $\mathbb{C}$ and completes the $\mathbb{C}$-linear part to $\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$. Computed on the basis. The identity $\operatorname{Der}_{\mathbb{R}}=\operatorname{Der}_{\mathbb{C}}$ of the associative parent does not carry over, **because a derivation of a bracket is not a derivation of the ring**: a ring derivation kills $i$, from $i^2=-1$ and $D(-1)=0$, while a bracket derivation is free to move $i$ inside the centre, and here that freedom is two real dimensions.
 
 **Proposition (the automorphisms grow at the centre).** An $\mathbb{R}$-automorphism of the bracket preserves the centre and the derived algebra, so
 $$
@@ -356,7 +356,7 @@ The form of an operation is its scalar part (*The 4 Forms over the Biquaternioid
 
 The block does carry two two-argument objects of its own, and they are read off the invariance condition and the operators in *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*: the invariant form
 $$
-\varphi(\tilde P,\tilde Q)=P_tQ_t ,
+\varphi(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t} ,
 $$
 the unique $\mathbb{C}$-bilinear form invariant under the block, of rank one over $\mathbb{C}$ and of radical the vector subspace; and the operator trace form
 $$
@@ -379,7 +379,7 @@ The first is the realification of the invariant form, whose entries are $1$ at $
 
 The complex structure reverses both realifications,
 $$
-\Phi_{\mathbb{R}}(J\tilde P,J\tilde Q)=-\Phi_{\mathbb{R}}(\tilde P,\tilde Q),
+\Phi_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=-\Phi_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
 the sign of the bilinear slot, and the two Gram matrices above are the two opposite blocks $D$ and $-D$ of the same rule. The signatures are the split ones of the table, $(1,1)$ and $(4,4)$. Neither realified form is one of the four forms of *The Realification of the Four Forms*, which are the forms of the space and not of the block, and the failure of $\operatorname{Re}K$ is the same obstruction as the Jacobi failure.
 
@@ -419,7 +419,7 @@ is a subalgebra as well, of real dimension three: on the vector subspace the ope
 
 **The conjugate-linear automorphism.** The coefficientwise conjugation $\bar{\cdot}$ is an automorphism of the block over $\mathbb{R}$: it is $\mathbb{R}$-linear, and the structure constants of the operation are real, so
 $$
-\overline{\tilde P\diamond\tilde Q}=\bar{\tilde P}\diamond\bar{\tilde Q} .
+\overline{\tilde Q_1\diamond\tilde Q_2}=\bar{\tilde Q_1}\diamond\bar{\tilde Q_2} .
 $$
 It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and composing it with the $\mathbb{C}$-linear automorphism group (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, §*The Automorphism Group and the Structure Group*) gives the conjugate-linear coset $\bar{\cdot}\,\mathrm{Aut}_{\mathbb{C}}$ of the real automorphism group, which the complex reading does not see. The natural conjugation is not an automorphism of the block: at $(\vec e_x,\vec e_y)$ it gives ${}^{\natural}(\vec e_x\diamond \vec e_y)=\vec e_z$ while ${}^{\natural}\vec e_x\diamond{}^{\natural}\vec e_y=-\vec e_z$; the block reads its real automorphisms through the coefficientwise conjugation and not through the natural one.
 
@@ -429,7 +429,7 @@ It is conjugate-linear, so it is not an automorphism over $\mathbb{C}$, and comp
 
 The block carries no degree-two form of its own. Its scalar part vanishes — it is the antisymmetrisation of the general product of its family, and the antisymmetrisation kills the scalar part — so the third column of the table of *The 12 Products of the Biquaternioid Complex Space* gives it the zero form, and the four realified signatures $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ of *The Realification of the Four Forms* do not include it. What does realify is the **pairing** of its values with the Krein form of its row. The form
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q^{*}\bigr)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_t\overline{Q_t}-(\vec P,\overline{\vec Q}),\qquad\varepsilon=(1,-1,-1,-1),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}),\qquad\varepsilon=(1,-1,-1,-1),
 $$
 is Hermitian of complex inertia $(1,3)$, and a Hermitian form realifies by the second rule of §*The Realification of a Form* of the general article: its realification $K_{\mathbb{R}}=\operatorname{Re}K$ is a real symmetric bilinear form of signature
 $$
@@ -437,7 +437,7 @@ $$
 $$
 on $\mathbb{R}^8$, preserved by the complex structure,
 $$
-K_{\mathbb{R}}(J\tilde P,J\tilde Q)=+K_{\mathbb{R}}(\tilde P,\tilde Q).
+K_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=+K_{\mathbb{R}}(\tilde Q_1,\tilde Q_2).
 $$
 The sign is the rule of the Hermitian kind: a Hermitian form doubles its inertia to $(2p,2q)$ and is preserved by $J$. The contrast is with the bilinear kind: the two $\mathbb{C}$-bilinear forms of the corpus, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, realify to the split signature $(4,4)$ and are **reversed** by $J$, and the other Hermitian form $\langle\cdot,\cdot\rangle_{*}$ realifies to $(8,0)$.
 
@@ -455,9 +455,9 @@ vanishing exactly when the value vanishes.
 
 **The invariant forms do not move.** A form $\beta$ is invariant under the block when
 $$
-\beta\bigl(\tilde P\diamond\tilde Q,\tilde Q_5\bigr)=-\overline{\beta\bigl(\tilde P,\tilde Q\diamond\tilde Q_5\bigr)}
+\beta\bigl(\tilde Q_1\diamond\tilde Q_2,\tilde Q_5\bigr)=-\overline{\beta\bigl(\tilde Q_1,\tilde Q_2\diamond\tilde Q_5\bigr)}
 $$
-for all $\tilde P,\tilde Q,\tilde Q_5$, and in each of the four homogeneous classes the invariant forms are a central line, of real dimension two, spanned by the central form $\beta_0(\tilde P,\tilde Q)=P_t\overline{Q_t}$ or $P_tQ_t$ according to the class; the enlarged class of all real-bilinear invariants has real dimension eight, the direct sum of the four central lines. Every invariant is central and the passage adds nothing to that space: the invariance condition is a statement about the ring and the realification changes neither the space nor its dimension. The whole of the computation is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*.
+for all $\tilde Q_1,\tilde Q_2,\tilde Q_5$, and in each of the four homogeneous classes the invariant forms are a central line, of real dimension two, spanned by the central form $\beta_0(\tilde Q_1,\tilde Q_2)=Q_{1t}\overline{Q_{2t}}$ or $Q_{1t}Q_{2t}$ according to the class; the enlarged class of all real-bilinear invariants has real dimension eight, the direct sum of the four central lines. Every invariant is central and the passage adds nothing to that space: the invariance condition is a statement about the ring and the realification changes neither the space nor its dimension. The whole of the computation is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*.
 
 ### The Real Part and the Subalgebras
 
@@ -467,19 +467,19 @@ $$
 $$
 of real dimension four, the block coincides with the antisymmetric plain algebra: for two real vector parts the conjugation is the identity, so
 $$
-\tilde P\diamond\tilde Q=\vec P\times\vec Q=\mathrm{APA}(\tilde P,\tilde Q),
+\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{APA}(\tilde Q_1,\tilde Q_2),
 $$
 the ordinary cross product of the real vector parts. The coincidence holds because the conjugation of a real vector is the identity, and it disappears as soon as one argument leaves $\mathbb{H}_{\mathbb{B}}$ for a direction in $i\mathbb{R}^{3}$.
 
 **The count of ten.** The coincidence, with its symmetric companion — the symmetric quaternionic product coinciding with the symmetric plain sesquilinear product on $\mathbb{H}_{\mathbb{B}}$ — is the reason the comment of *The 12 Products of the Biquaternioid Complex Space* records a **count of ten**. On the four-dimensional real part the twelve operations reduce to ten, because the pair $(\mathrm{AQS},\mathrm{APA})$ and the pair $(\mathrm{SQA},\mathrm{SPS})$ each collapse to one operation there, the remaining eight staying distinct. The caution of the corpus applies: a computation restricted to the real part can hide the obstruction that separates the two members of a coincident pair, and twelve distinct operations require the full eight-dimensional real space.
 
-**Proposition (the closure criterion).** A real subspace $W$ of $\mathbb{R}^8$ is a subalgebra of the block exactly when $\tilde P\diamond\tilde Q\in W$ for all $\tilde P,\tilde Q\in W$. Every value of the block lies in the vector subspace, so the condition reads
+**Proposition (the closure criterion).** A real subspace $W$ of $\mathbb{R}^8$ is a subalgebra of the block exactly when $\tilde Q_1\diamond\tilde Q_2\in W$ for all $\tilde Q_1,\tilde Q_2\in W$. Every value of the block lies in the vector subspace, so the condition reads
 $$
-\tilde P\diamond\tilde Q\in W\cap\mathrm{Vect}(\mathbb{B})\qquad\text{for all }\tilde P,\tilde Q\in W:
+\tilde Q_1\diamond\tilde Q_2\in W\cap\mathrm{Vect}(\mathbb{B})\qquad\text{for all }\tilde Q_1,\tilde Q_2\in W:
 $$
 a subspace is closed exactly when its intersection with the vector subspace receives all the values of its pairs.
 
-*Proof.* The first sentence is the definition. For the second, the value is $\vec P\times\overline{\vec Q}$, a pure vector, so the membership of the value in $W$ is the membership of the value in $W\cap\mathrm{Vect}(\mathbb{B})$.
+*Proof.* The first sentence is the definition. For the second, the value is $\vec Q\times\overline{\vec Q_2}$, a pure vector, so the membership of the value in $W$ is the membership of the value in $W\cap\mathrm{Vect}(\mathbb{B})$.
 
 **The notable subalgebras.** A subalgebra of the complex reading is a complex subspace closed under the product, of even real dimension; over $\mathbb{R}$ odd dimensions appear, and the block exhibits them at the smallest sizes.
 
@@ -517,29 +517,29 @@ and its image is the complex plane of the values orthogonal to the vector part i
 
 *Proof.* The class and the two shapes are the theorem of §*The Second Slot and the Centre*; the vanishing of the trace of a conjugate-linear map is the opposite diagonal blocks. The rank, the kernel and the image are computed in *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra* and in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, on the $64$ basis pairs; the vanishing of the trace of $R$ is the trace of a $\mathbb{C}$-linear map, twice the real part of its complex trace, and the complex trace is zero because $\vec e_\mu\mapsto \vec e_\mu\times\overline{\vec Q_1}$ has the two skew blocks of the cross product alone.
 
-**Theorem (the operator trace form in the two readings).** For all $\tilde P,\tilde Q$,
+**Theorem (the operator trace form in the two readings).** For all $\tilde Q_1,\tilde Q_2$,
 $$
-\kappa(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr)=-2\,(\vec P,\overline{\vec Q})=2\bigl(\langle\tilde P,\tilde Q\rangle_{\natural*}-P_t\overline{Q_t}\bigr),
+\kappa(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=-2\,(\vec Q_1,\overline{\vec Q_2})=2\bigl(\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}-Q_{1t}\overline{Q_{2t}}\bigr),
 $$
 the composition being $\mathbb{C}$-linear because it is the product of two conjugate-linear maps; $\kappa$ is a Hermitian form of complex inertia $(0,3)$ with the centre as radical, and its realification is the **real operator trace form**
 $$
-\kappa_{\mathbb{R}}(\tilde P,\tilde Q)=\operatorname{Re}\kappa(\tilde P,\tilde Q)=-2\operatorname{Re}\,(\vec P,\overline{\vec Q}),
+\kappa_{\mathbb{R}}(\tilde Q_1,\tilde Q_2)=\operatorname{Re}\kappa(\tilde Q_1,\tilde Q_2)=-2\operatorname{Re}\,(\vec Q_1,\overline{\vec Q_2}),
 \qquad
-\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr)=2\,\kappa_{\mathbb{R}}(\tilde P,\tilde Q),
+\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=2\,\kappa_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
 a real symmetric bilinear form of real rank $6$ and signature $(0,6)$, negative semidefinite with the centre as radical, equal to twice the restriction of $K_{\mathbb{R}}$ to the vector subspace.
 
-*Proof.* The composition $L_{\tilde P}L_{\tilde Q}$ is the map $\tilde Q_5\mapsto\vec P\times\overline{\vec Q\times\overline{\vec R}}$, and the two conjugations cancel, so it is $\mathbb{C}$-linear and has a complex trace; on the complex basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its matrix has trace $-2(\vec P,\overline{\vec Q})$, computed on the $64$ basis pairs. The real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace, which is the factor $2$ and the same factor that relates the two readings of the trace of the left multiplication of the general plain product, $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P})=8\operatorname{Re}\mathrm{Sc}(\tilde P)$ against $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde P})=4\,\mathrm{Sc}(\tilde P)$. The Hermitian form $-2(\vec P,\overline{\vec Q})$ has the three vector coordinates negative and the scalar coordinate absent, hence inertia $(0,3)$ and radical the centre; a Hermitian form of inertia $(0,3)$ realifies to $(0,6)$ by the second rule of the realification of a form, and on the vector subspace $\kappa_{\mathbb{R}}=2K_{\mathbb{R}}$.
+*Proof.* The composition $L_{\tilde Q_1}L_{\tilde Q_2}$ is the map $\tilde Q_5\mapsto\vec Q_1\times\overline{\vec Q_2\times\overline{\vec Q_5}}$, and the two conjugations cancel, so it is $\mathbb{C}$-linear and has a complex trace; on the complex basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its matrix has trace $-2(\vec Q_1,\overline{\vec Q_2})$, computed on the $64$ basis pairs. The real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace, which is the factor $2$ and the same factor that relates the two readings of the trace of the left multiplication of the general plain product, $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1})=8\operatorname{Re}\mathrm{Sc}(\tilde Q_1)$ against $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde Q_1})=4\,\mathrm{Sc}(\tilde Q_1)$. The Hermitian form $-2(\vec Q_1,\overline{\vec Q_2})$ has the three vector coordinates negative and the scalar coordinate absent, hence inertia $(0,3)$ and radical the centre; a Hermitian form of inertia $(0,3)$ realifies to $(0,6)$ by the second rule of the realification of a form, and on the vector subspace $\kappa_{\mathbb{R}}=2K_{\mathbb{R}}$.
 
 **The element trace form, and the distinction.** The **element** trace form of the block,
 $$
-\mathrm{Tr}\bigl(\tilde P\diamond\tilde Q\bigr)=2\,\mathrm{Sc}\bigl(\tilde P\diamond\tilde Q\bigr),
+\mathrm{Tr}\bigl(\tilde Q_1\diamond\tilde Q_2\bigr)=2\,\mathrm{Sc}\bigl(\tilde Q_1\diamond\tilde Q_2\bigr),
 $$
 vanishes identically, because the block is pure vector; the vanishing is the form side of the absence of a unit and of the pure-vector image, and it is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*. The operator trace form $\kappa_{\mathbb{R}}$ does not vanish: the two objects differ, one being the trace of the product and the other the trace of the composition of the two left multiplications, and only the second is a nondegenerate form on the vector subspace. The adjoints with respect to $\langle\cdot,\cdot\rangle_{\natural*}$, the derivations (of real dimension $7$) and the structure group of the block are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, whose statements are of the real-linear kind and hold unchanged.
 
 **The general construction.** The reading is the instance of the operator trace form of the real biquaternion algebra. For the plain product that form is
 $$
-\tau(\tilde P,\tilde Q)=\operatorname{Tr}\bigl(L_{\tilde P}L_{\tilde Q}\bigr)=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle,\qquad \operatorname{Tr}(L_{\tilde Q_1})=8\operatorname{Re}\mathrm{Sc}(\tilde Q_1),
+\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle,\qquad \operatorname{Tr}(L_{\tilde Q_1})=8\operatorname{Re}\mathrm{Sc}(\tilde Q_1),
 $$
 real symmetric of signature $(4,4)$, with the general factor $2$ between the real and the complex trace, $8=2\cdot4$; the same factor appears here as $\kappa_{\mathbb{R}}=\operatorname{Re}\kappa$ of $\operatorname{Tr}_{\mathbb{R}}=2\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}$. What the block changes is the left multiplication, conjugate-linear in place of linear: the signature $(4,4)$ becomes the negative semidefinite $(0,6)$ and the trivial radical becomes the centre. the block shares the reality of its operator theory and not the Cartan structure, its operator calculus being conjugate-linear at every step.
 
@@ -547,7 +547,7 @@ real symmetric of signature $(4,4)$, with the general factor $2$ between the rea
 
 The block is the **vector half** of the split of the general plain sesquilinear product,
 $$
-\tilde P\tilde Q^{*}=\langle\tilde P,\tilde Q\rangle_{*}e_t+\tilde P\diamond\tilde Q,
+\tilde Q_1\tilde Q_2^{*}=\langle\tilde Q_1,\tilde Q_2\rangle_{*}e_t+\tilde Q_1\diamond\tilde Q_2,
 $$
 the scalar half being the product of the symmetric plain sesqualgebra; its scalar part therefore vanishes and it carries no form of its own. Over $\mathbb{C}$ it is a sesqualgebra over $(\mathbb{C},\varsigma)$ with $\varsigma={}^{*}$ on the centre; over $\mathbb{R}$ the involution disappears, the product becomes an $\mathbb{R}$-algebra, and the passage **changes the kind** of the structure, the distinction migrating from the field to the centre. The criterion of $\mathbb{C}_{\mathbb{B}}$-conjugate-linearity is the anticommutation $LJ=-JL$ of the left multiplication by a central element with the complex structure.
 
@@ -591,6 +591,6 @@ R_{\tilde Q_1}J=JR_{\tilde Q_1}\quad\text{with}\quad\begin{pmatrix}A&-B\\ B&A\en
 $$
 Both operators vanish in real trace; for a non-central element both have real rank $4$ and nullity $4$, the kernel of the left multiplication being $\ker L_{\tilde Q_1}=\mathbb{C}\overline{\vec Q_1}\oplus\mathbb{C}e_t$ of real dimension four. The operator trace form
 $$
-\kappa_{\mathbb{R}}(\tilde P,\tilde Q)=\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr)=-2\operatorname{Re}(\vec P,\overline{\vec Q}),\qquad \operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr)=2\,\kappa_{\mathbb{R}}(\tilde P,\tilde Q),
+\kappa_{\mathbb{R}}(\tilde Q_1,\tilde Q_2)=\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=-2\operatorname{Re}(\vec Q_1,\overline{\vec Q_2}),\qquad \operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=2\,\kappa_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
-is real symmetric of rank $6$ and signature $(0,6)$, negative semidefinite with radical the centre, while the element trace form $\mathrm{Tr}(\tilde P\diamond\tilde Q)$ vanishes identically. On the quaternion subspace the block coincides with the antisymmetric plain algebra, and the collapse of the pair $(\mathrm{AQS},\mathrm{APA})$ there is part of the count of ten of the twelve operations.
+is real symmetric of rank $6$ and signature $(0,6)$, negative semidefinite with radical the centre, while the element trace form $\mathrm{Tr}(\tilde Q_1\diamond\tilde Q_2)$ vanishes identically. On the quaternion subspace the block coincides with the antisymmetric plain algebra, and the collapse of the pair $(\mathrm{AQS},\mathrm{APA})$ there is part of the count of ten of the twelve operations.

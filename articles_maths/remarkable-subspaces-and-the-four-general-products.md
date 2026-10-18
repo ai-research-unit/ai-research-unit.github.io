@@ -2,28 +2,28 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, defined on the coordinates of a pair in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*: the **general plain bilinear** $\tilde{P}\tilde{Q}$, the **general plain sesquilinear** $\tilde{P}\tilde{Q}^{*}$, the **general quaternionic bilinear** $\tilde{P}^{\natural}\tilde{Q}$ and the **general quaternionic sesquilinear** $\tilde{P}^{\natural}\tilde{Q}^{*}$. The two bilinear products are $\mathbb{C}$-bilinear and the two sesquilinear ones only over $\mathbb{R}$, and the general plain bilinear product is associative while the other three are not.
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, defined on the coordinates of a pair in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*: the **general plain bilinear** $\tilde{Q}_1\tilde{Q}_2$, the **general plain sesquilinear** $\tilde{Q}_1\tilde{Q}_2^{*}$, the **general quaternionic bilinear** $\tilde{Q}_1^{\natural}\tilde{Q}_2$ and the **general quaternionic sesquilinear** $\tilde{Q}_1^{\natural}\tilde{Q}_2^{*}$. The two bilinear products are $\mathbb{C}$-bilinear and the two sesquilinear ones only over $\mathbb{R}$, and the general plain bilinear product is associative while the other three are not.
 
 This article reads the four general products against the remarkable subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$ — one subspace to a section. For every subspace it asks the same three questions, in the same order: **which of the four general products keep the subspace inside itself**, **which of their symmetrisations make it a Jordan algebra**, and **which of their brackets make it a Lie algebra**. Each of the six sections opens with the answer and then justifies it.
 
 Each product $f$ splits into a symmetric and an antisymmetric half,
 $$
-\tilde{P}\bullet_{f}\tilde{Q}:=\tfrac12\bigl(f(\tilde{P},\tilde{Q})+f(\tilde{Q},\tilde{P})\bigr),\qquad
-[\tilde{P},\tilde{Q}]_{f}:=f(\tilde{P},\tilde{Q})-f(\tilde{Q},\tilde{P}),
+\tilde{Q}_1\bullet_{f}\tilde{Q}_2:=\tfrac12\bigl(f(\tilde{Q}_1,\tilde{Q}_2)+f(\tilde{Q}_2,\tilde{Q}_1)\bigr),\qquad
+[\tilde{Q}_1,\tilde{Q}_2]_{f}:=f(\tilde{Q}_1,\tilde{Q}_2)-f(\tilde{Q}_2,\tilde{Q}_1),
 $$
-so that $f(\tilde{P},\tilde{Q})=\tilde{P}\bullet_{f}\tilde{Q}+\tfrac12[\tilde{P},\tilde{Q}]_{f}$, the subscript naming the product from which the half is taken. The subscript is dropped for the **general plain bilinear** product, the only associative one, whose bracket is the bare commutator $[\tilde{P},\tilde{Q}]=\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}$, and whose symmetrisation is written $\bullet_{\mathrm{pl}}$ to distinguish it from the quaternionic one; and for the **general quaternionic bilinear** product, the multiplication of the quaternionic blocks of the corpus, whose symmetrisation is the bare $\bullet$, the **symmetrised product**, in agreement with those blocks. The two halves themselves are the subject of *The 12 Products of the Biquaternioid Complex Space*; here they are used only as the two ways in which a subspace can be an algebra.
+so that $f(\tilde{Q}_1,\tilde{Q}_2)=\tilde{Q}_1\bullet_{f}\tilde{Q}_2+\tfrac12[\tilde{Q}_1,\tilde{Q}_2]_{f}$, the subscript naming the product from which the half is taken. The subscript is dropped for the **general plain bilinear** product, the only associative one, whose bracket is the bare commutator $[\tilde{Q}_1,\tilde{Q}_2]=\tilde{Q}_1\tilde{Q}_2-\tilde{Q}_2\tilde{Q}_1$, and whose symmetrisation is written $\bullet_{\mathrm{pl}}$ to distinguish it from the quaternionic one; and for the **general quaternionic bilinear** product, the multiplication of the quaternionic blocks of the corpus, whose symmetrisation is the bare $\bullet$, the **symmetrised product**, in agreement with those blocks. The two halves themselves are the subject of *The 12 Products of the Biquaternioid Complex Space*; here they are used only as the two ways in which a subspace can be an algebra.
 
-The criterion for each is the classical one. A subspace $U$ is a **Jordan algebra** for the symmetrisation $\bullet_{f}$ when $\tilde{P}\bullet_{f}\tilde{Q}$ lies in $U$ for all $\tilde{P},\tilde{Q}\in U$ and the Jordan identity holds on $U$; because $\mathbb{B}$ is associative, the symmetrisation of the general plain bilinear product inherits the identity, so for that product closure is the only test, while for the three non-associative products the identity must be checked as well. A subspace $U$ is a **Lie algebra** for the bracket $[\cdot,\cdot]_{f}$ when the bracket lies in $U$ and the Jacobi identity holds on $U$; the commutator of an associative algebra always satisfies Jacobi, so closure decides the Lie case for the general plain bilinear product, while for the other three products Jacobi must be tested, and on $\mathbb{B}$ it fails.
+The criterion for each is the classical one. A subspace $U$ is a **Jordan algebra** for the symmetrisation $\bullet_{f}$ when $\tilde{Q}_1\bullet_{f}\tilde{Q}_2$ lies in $U$ for all $\tilde{Q}_1,\tilde{Q}_2\in U$ and the Jordan identity holds on $U$; because $\mathbb{B}$ is associative, the symmetrisation of the general plain bilinear product inherits the identity, so for that product closure is the only test, while for the three non-associative products the identity must be checked as well. A subspace $U$ is a **Lie algebra** for the bracket $[\cdot,\cdot]_{f}$ when the bracket lies in $U$ and the Jacobi identity holds on $U$; the commutator of an associative algebra always satisfies Jacobi, so closure decides the Lie case for the general plain bilinear product, while for the other three products Jacobi must be tested, and on $\mathbb{B}$ it fails.
 
 The scalar–vector form of the general plain bilinear product,
 $$
-\tilde{P}\tilde{Q}=\bigl(P_0Q_t-(\vec P,\vec Q)\bigr)+P_0\vec Q+Q_t\vec P+\vec P\times\vec Q,
+\tilde{Q}_1\tilde{Q}_2=\bigl(Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr)+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2,
 $$
-with $\vec P,\vec Q$ the vector parts and $(\vec P,\vec Q)$, $\vec P\times\vec Q$ the complex dot and cross products, is used throughout. The remarkable subspaces, their defining conditions, their bases and their dimensions are not restated here; they belong to *Introduction to the Remarkable Subspaces*, and the coordinate blocks $B_0=\mathbb{R}e_t$, $B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and $B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ come from *Comparison of the Remarkable Subspaces*.
+with $\vec Q_1,\vec Q_2$ the vector parts and $(\vec Q_1,\vec Q_2)$, $\vec Q_1\times\vec Q_2$ the complex dot and cross products, is used throughout. The remarkable subspaces, their defining conditions, their bases and their dimensions are not restated here; they belong to *Introduction to the Remarkable Subspaces*, and the coordinate blocks $B_0=\mathbb{R}e_t$, $B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and $B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ come from *Comparison of the Remarkable Subspaces*.
 
 ### The four general products have the same value set
 
-**Proposition.** For each of the remarkable subspaces the real span of $f(\tilde{P},\tilde{Q})$, as $\tilde{P}$ and $\tilde{Q}$ run over the subspace, is the same for all four general products $f$.
+**Proposition.** For each of the remarkable subspaces the real span of $f(\tilde{Q}_1,\tilde{Q}_2)$, as $\tilde{Q}_1$ and $\tilde{Q}_2$ run over the subspace, is the same for all four general products $f$.
 
 **Proof.** Each of the two conjugations $\natural$ and $*$ preserves each of the remarkable subspaces, since each subspace is a fixed or anti-fixed space of one of the four conjugations of the group they generate (*The Group of Involutions*). Hence $\natural U=U$ and ${}^{*}U=U$ for every subspace $U$ of the list, and
 $$
@@ -68,7 +68,7 @@ The bracket of any two central elements is a real multiple of the central imagin
 
 **The vector subspace is a Lie algebra but not a Jordan algebra.** Under the two bilinear brackets it is $(\mathrm{Vect}(\mathbb{B}),[\cdot,\cdot])\cong\mathfrak{sl}(2,\mathbb{C})$, the general quaternionic bilinear bracket being the negative of the commutator, and it is **no Jordan algebra** for any of the four symmetrisations.
 
-A pure vector is $\vec P=P_1\vec e_x+P_2\vec e_y+P_3\vec e_z$ with $P_1,P_2,P_3 \in \mathbb{C}$. Its scalar part vanishes and the natural conjugation reverses its sign, so the subspace, of real dimension six and complex dimension three, is the largest of the remarkable subspaces and is the complex analogue of the imaginary quaternions. The three operations behave here as differently as anywhere in the article: the product leaves the subspace at once, the symmetrisation collapses to the centre, and only the bracket stays.
+A pure vector is $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with $Q_{1x},Q_{1y},Q_{1z} \in \mathbb{C}$. Its scalar part vanishes and the natural conjugation reverses its sign, so the subspace, of real dimension six and complex dimension three, is the largest of the remarkable subspaces and is the complex analogue of the imaginary quaternions. The three operations behave here as differently as anywhere in the article: the product leaves the subspace at once, the symmetrisation collapses to the centre, and only the bracket stays.
 
 **The four general products.** The square of a single basis vector already leaves the subspace, and is a nonzero central scalar for each of the four general products:
 $$
@@ -76,28 +76,28 @@ $$
 $$
 In general the product of two pure vectors is the sum of a scalar and a vector: the scalar–vector form of the general plain bilinear product read on the vector subspace,
 $$
-\vec P\vec Q=-(\vec P,\vec Q)e_t+\vec P\times\vec Q,
+\vec Q_1\vec Q_2=-(\vec Q_1,\vec Q_2)e_t+\vec Q_1\times\vec Q_2,
 $$
-with $(\vec P,\vec Q)$ the complex dot product and $\vec P\times\vec Q$ the complex cross product. The other three products are the same expression with the second factor replaced as the conjugation prescribes, and differ only in the signs of the two terms. Since the scalar part is a general complex number and the vector part a general vector, each of the four general products of a suitable pair **spans the whole algebra**, of real dimension eight. The vector subspace is therefore closed under **none of the four general products**.
+with $(\vec Q_1,\vec Q_2)$ the complex dot product and $\vec Q_1\times\vec Q_2$ the complex cross product. The other three products are the same expression with the second factor replaced as the conjugation prescribes, and differ only in the signs of the two terms. Since the scalar part is a general complex number and the vector part a general vector, each of the four general products of a suitable pair **spans the whole algebra**, of real dimension eight. The vector subspace is therefore closed under **none of the four general products**.
 
 **The symmetrisation.** No symmetrisation keeps the vector subspace inside itself either, and here the two bilinear and the two sesquilinear products part company. The two bilinear symmetrisations collapse to the centre, the cross-product terms cancelling in the symmetrised sum:
 $$
-\vec P\bullet_{\mathrm{pl}}\vec Q=-(\vec P,\vec Q)e_t,\qquad \vec P\bullet\vec Q=(\vec P,\vec Q)e_t,
+\vec Q_1\bullet_{\mathrm{pl}}\vec Q_2=-(\vec Q_1,\vec Q_2)e_t,\qquad \vec Q_1\bullet\vec Q_2=(\vec Q_1,\vec Q_2)e_t,
 $$
-so that the pair $\vec P=\vec Q=\vec e_x$ has plain symmetrisation $-e_t$ and quaternionic symmetrisation $e_t$, a central element outside the subspace in either case. The contrast is sharp: the same two pure vectors whose plain product spans the whole algebra have their symmetrised product confined to the two-dimensional centre. The two sesquilinear symmetrisations instead fill the Hermitian subspace,
+so that the pair $\vec Q_1=\vec Q_2=\vec e_x$ has plain symmetrisation $-e_t$ and quaternionic symmetrisation $e_t$, a central element outside the subspace in either case. The contrast is sharp: the same two pure vectors whose plain product spans the whole algebra have their symmetrised product confined to the two-dimensional centre. The two sesquilinear symmetrisations instead fill the Hermitian subspace,
 $$
-\vec P\bullet_{*}\vec Q=\tfrac12\bigl(\vec P\vec Q^{*}+\vec Q\vec P^{*}\bigr)\in\mathbb{M}_{+},\qquad \vec P\bullet_{\natural*}\vec Q\in\mathbb{M}_{+},
+\vec Q_1\bullet_{*}\vec Q_2=\tfrac12\bigl(\vec Q_1\vec Q_2^{*}+\vec Q_2\vec Q_1^{*}\bigr)\in\mathbb{M}_{+},\qquad \vec Q_1\bullet_{\natural*}\vec Q_2\in\mathbb{M}_{+},
 $$
-of real dimension four, again outside the vector subspace. The vector subspace is therefore a **Jordan algebra for none** of the four general products. The collapse $\vec P\bullet_{\mathrm{pl}}\vec P=-(\vec P,\vec P)e_t$ explains the square-zero elements of the vector subspace, which are its zero divisors (*Introduction to the Remarkable Subspaces*).
+of real dimension four, again outside the vector subspace. The vector subspace is therefore a **Jordan algebra for none** of the four general products. The collapse $\vec Q_1\bullet_{\mathrm{pl}}\vec Q_1=-(\vec Q_1,\vec Q_1)e_t$ explains the square-zero elements of the vector subspace, which are its zero divisors (*Introduction to the Remarkable Subspaces*).
 
 **The bracket.** The commutator keeps the vector subspace inside itself, because the scalar part is symmetric and cancels in the antisymmetric half:
 $$
-[\vec P,\vec Q]=2\,\vec P\times\vec Q\in\mathrm{Vect}(\mathbb{B}),\qquad
+[\vec Q_1,\vec Q_2]=2\,\vec Q_1\times\vec Q_2\in\mathrm{Vect}(\mathbb{B}),\qquad
 [\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})]=\mathrm{Vect}(\mathbb{B}) .
 $$
 The bracket of two pure vectors is twice their complex cross product, and the cross products of the complex vectors fill the whole subspace, so the algebra is equal to its own derived subalgebra and is perfect. It is the complex **Lie algebra $\mathfrak{sl}(2,\mathbb{C})$** of the traceless complex $2\times2$ matrices, of complex dimension three, read here in the coordinates $\vec e_x,\vec e_y,\vec e_z$ against the Pauli matrices. The general quaternionic bilinear bracket is the negative of the commutator, since the natural conjugation negates a pure vector:
 $$
-[\vec P,\vec Q]_{\natural}=\vec P^{\natural}\vec Q-\vec Q^{\natural}\vec P=(-\vec P)\vec Q-(-\vec Q)\vec P=-[\vec P,\vec Q],
+[\vec Q_1,\vec Q_2]_{\natural}=\vec Q_1^{\natural}\vec Q_2-\vec Q_2^{\natural}\vec Q_1=(-\vec Q_1)\vec Q_2-(-\vec Q_2)\vec Q_1=-[\vec Q_1,\vec Q_2],
 $$
 so it is a **Lie algebra** too, the same one with the opposite sign. The two sesquilinear brackets leave the subspace: their values are anti-Hermitian, and they fill the anti-Hermitian subspace,
 $$
@@ -126,9 +126,9 @@ $$
 $$
 the symmetrisation of the real quaternion algebra, a commutative Jordan algebra of real dimension four. The other three symmetrisations stay inside the subspace but **fail the Jordan identity**, so that the quaternion subspace, closed under all four general products, is a Jordan algebra for exactly one of them. The general plain sesquilinear and the general quaternionic bilinear symmetrisations coincide there and collapse to the centre:
 $$
-\tilde{P}\bullet\tilde{Q}=\tilde{P}\bullet_{*}\tilde{Q}=\bigl(P_0Q_t+(\vec P,\vec Q)\bigr)e_t,
+\tilde{Q}_1\bullet\tilde{Q}_2=\tilde{Q}_1\bullet_{*}\tilde{Q}_2=\bigl(Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)e_t,
 $$
-the trace form of the general quaternionic bilinear product; the general quaternionic sesquilinear one is the natural conjugate of the Jordan product, $\tilde{P}\bullet_{\natural*}\tilde{Q}=(\tilde{P}\bullet_{\mathrm{pl}}\tilde{Q})^{\natural}$. Each of the three fails the identity at $x=\vec e_x$: for the general plain sesquilinear and the general quaternionic bilinear symmetrisations $x\bullet x=e_t$, so the two sides of $(x\bullet x)\bullet(x\bullet x)=x\bullet\bigl(x\bullet(x\bullet x)\bigr)$ are $e_t$ and $0$; for the general quaternionic sesquilinear one, where $x\bullet_{\natural*}x=-e_t$, they are $e_t$ and $-e_t$.
+the trace form of the general quaternionic bilinear product; the general quaternionic sesquilinear one is the natural conjugate of the Jordan product, $\tilde{Q}_1\bullet_{\natural*}\tilde{Q}_2=(\tilde{Q}_1\bullet_{\mathrm{pl}}\tilde{Q}_2)^{\natural}$. Each of the three fails the identity at $x=\vec e_x$: for the general plain sesquilinear and the general quaternionic bilinear symmetrisations $x\bullet x=e_t$, so the two sides of $(x\bullet x)\bullet(x\bullet x)=x\bullet\bigl(x\bullet(x\bullet x)\bigr)$ are $e_t$ and $0$; for the general quaternionic sesquilinear one, where $x\bullet_{\natural*}x=-e_t$, they are $e_t$ and $-e_t$.
 
 **The bracket.** The commutator stays inside the subspace and gives a **Lie algebra**:
 $$
@@ -145,32 +145,32 @@ so the quaternion subspace is a Lie algebra for the general plain bilinear produ
 
 **The anti-quaternion subspace carries no algebra at all.** It is neither a Jordan nor a Lie algebra, for any product, any symmetrisation or any bracket; its only structure is that of a two-sided module over the quaternion subspace.
 
-An anti-quaternion element is $i\tilde{P}$ with $\tilde{P}$ a real quaternion. The subspace is the fixed set of the composition of the quaternionic and the natural conjugations, and it equals $i\mathbb{H}_{\mathbb{B}}$, so that $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$. It is the subspace on which nothing closes, since neither the product nor either of its two halves returns to it, and it is the odd part of the $\mathbb{Z}/2$-grading whose even part is the quaternion subspace.
+An anti-quaternion element is $i\tilde{Q}_1$ with $\tilde{Q}_1$ a real quaternion. The subspace is the fixed set of the composition of the quaternionic and the natural conjugations, and it equals $i\mathbb{H}_{\mathbb{B}}$, so that $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$. It is the subspace on which nothing closes, since neither the product nor either of its two halves returns to it, and it is the odd part of the $\mathbb{Z}/2$-grading whose even part is the quaternion subspace.
 
 **The four general products.** **None of the four keeps the anti-quaternion subspace inside itself.** Since the natural conjugation reverses the central imaginary unit and the quaternionic conjugation ignores it, the four general products of a pair fall back into the quaternion subspace:
 $$
-(i\tilde{P})(i\tilde{Q})=-\tilde{P}\tilde{Q},\quad
-(i\tilde{P})^{\natural}(i\tilde{Q})=-\tilde{P}^{\natural}\tilde{Q},\quad
-(i\tilde{P})(i\tilde{Q})^{*}=\tilde{P}\tilde{Q}^{\natural},\quad
-(i\tilde{P})^{\natural}(i\tilde{Q})^{*}=\tilde{P}^{\natural}\tilde{Q}^{\natural}=(\tilde{Q}\tilde{P})^{\natural} .
+(i\tilde{Q}_1)(i\tilde{Q}_2)=-\tilde{Q}_1\tilde{Q}_2,\quad
+(i\tilde{Q}_1)^{\natural}(i\tilde{Q}_2)=-\tilde{Q}_1^{\natural}\tilde{Q}_2,\quad
+(i\tilde{Q}_1)(i\tilde{Q}_2)^{*}=\tilde{Q}_1\tilde{Q}_2^{\natural},\quad
+(i\tilde{Q}_1)^{\natural}(i\tilde{Q}_2)^{*}=\tilde{Q}_1^{\natural}\tilde{Q}_2^{\natural}=(\tilde{Q}_2\tilde{Q}_1)^{\natural} .
 $$
 Each of the four **spans $\mathbb{H}_{\mathbb{B}}$**, so the anti-quaternion subspace is closed under none of the four general products. The product of two odd elements is even, which is exactly the statement that the split $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ is a grading, and the anti-quaternion subspace is a two-sided module over the quaternion subspace — the module structure being the only structure it carries.
 
 **The symmetrisation.** **No symmetrisation keeps the anti-quaternion subspace inside itself** either; every value is even:
 $$
-(i\tilde{P})\bullet_{\mathrm{pl}}(i\tilde{Q})=-\tilde{P}\bullet_{\mathrm{pl}}\tilde{Q},\qquad
-(i\tilde{P})\bullet(i\tilde{Q})=-\tilde{P}\bullet\tilde{Q}\in\mathbb{R}e_t,\qquad
-(i\tilde{P})\bullet_{*}(i\tilde{Q})=\tilde{P}\bullet_{*}\tilde{Q}\in\mathbb{R}e_t,\qquad
-(i\tilde{P})\bullet_{\natural*}(i\tilde{Q})=\bigl(\tilde{P}\bullet_{\mathrm{pl}}\tilde{Q}\bigr)^{\natural}\in\mathbb{H}_{\mathbb{B}} ,
+(i\tilde{Q}_1)\bullet_{\mathrm{pl}}(i\tilde{Q}_2)=-\tilde{Q}_1\bullet_{\mathrm{pl}}\tilde{Q}_2,\qquad
+(i\tilde{Q}_1)\bullet(i\tilde{Q}_2)=-\tilde{Q}_1\bullet\tilde{Q}_2\in\mathbb{R}e_t,\qquad
+(i\tilde{Q}_1)\bullet_{*}(i\tilde{Q}_2)=\tilde{Q}_1\bullet_{*}\tilde{Q}_2\in\mathbb{R}e_t,\qquad
+(i\tilde{Q}_1)\bullet_{\natural*}(i\tilde{Q}_2)=\bigl(\tilde{Q}_1\bullet_{\mathrm{pl}}\tilde{Q}_2\bigr)^{\natural}\in\mathbb{H}_{\mathbb{B}} ,
 $$
 the first and the fourth lying in the quaternion subspace, the second and the third in the centre $\mathbb{R}e_t$. The anti-quaternion subspace is therefore a **Jordan algebra for none** of the four general products.
 
 **The bracket.** **No bracket keeps the anti-quaternion subspace inside itself** either; every value is again even:
 $$
-[i\tilde{P},i\tilde{Q}]=-[\tilde{P},\tilde{Q}],\qquad
-[i\tilde{P},i\tilde{Q}]_{\natural}=-[\tilde{P},\tilde{Q}]_{\natural},\qquad
-[i\tilde{P},i\tilde{Q}]_{*}=[\tilde{P},\tilde{Q}]_{*},\qquad
-[i\tilde{P},i\tilde{Q}]_{\natural*}=[\tilde{P},\tilde{Q}] ,
+[i\tilde{Q}_1,i\tilde{Q}_2]=-[\tilde{Q}_1,\tilde{Q}_2],\qquad
+[i\tilde{Q}_1,i\tilde{Q}_2]_{\natural}=-[\tilde{Q}_1,\tilde{Q}_2]_{\natural},\qquad
+[i\tilde{Q}_1,i\tilde{Q}_2]_{*}=[\tilde{Q}_1,\tilde{Q}_2]_{*},\qquad
+[i\tilde{Q}_1,i\tilde{Q}_2]_{\natural*}=[\tilde{Q}_1,\tilde{Q}_2] ,
 $$
 each lying in the real vector triple $B_1\subset\mathbb{H}_{\mathbb{B}}$. The anti-quaternion subspace has an imaginary scalar part and an imaginary vector part, and every value above is real, so nothing returns. It is a **Lie algebra for none** of the four general products and, with the symmetrisations, the subspace carries **no algebra at all**: not for the product and not for either of its two halves.
 
@@ -251,7 +251,7 @@ with the witness $[ie_t,\vec e_x]_{\natural}=2i\vec e_x\notin\mathbb{M}_{-}$. Th
 
 The remarkable subspaces of this article are the homes of the parts of the four general products under the **plain** exchange of the two arguments. The two parts of a bilinear product are read there directly, the antisymmetric parts of the two bilinear products spanning the vector subspace and the symmetric part of the quaternionic one collapsing to the centre; and the two parts of the plain sesquilinear product are the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$.
 
-The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde{P},\tilde{Q})=\overline{f(\tilde{Q},\tilde{P})}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. For $\tilde{P}\tilde{Q}^{*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{C}_{\mathbb{B}}$ and in the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ — the two subspaces that carry the parts of the general quaternionic bilinear product under the plain exchange. For $\tilde{P}^{\natural}\tilde{Q}^{*}$ the skew half is the cross product $\vec P\times\overline{\vec Q}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the form $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=P_0\overline{Q_t}-(\vec P,\overline{\vec Q})$ in its scalar part and is not central, so it lies in no subspace of the remarkable subspaces.
+The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde{Q}_1,\tilde{Q}_2)=\overline{f(\tilde{Q}_2,\tilde{Q}_1)}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. For $\tilde{Q}_1\tilde{Q}_2^{*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{C}_{\mathbb{B}}$ and in the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ — the two subspaces that carry the parts of the general quaternionic bilinear product under the plain exchange. For $\tilde{Q}_1^{\natural}\tilde{Q}_2^{*}$ the skew half is the cross product $\vec Q_1\times\overline{\vec Q_2}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ in its scalar part and is not central, so it lies in no subspace of the remarkable subspaces.
 
 So three of the passages of the adapted reading land in the list — the centre and the vector subspace for the plain sesquilinear product, the vector subspace again for the quaternionic one — against the Hermitian and the anti-Hermitian subspace, where the plain reading of the same two products lands. The two readings are of one pair of products each and neither is the other; the twelve names of *The 12 Products of the Biquaternioid Complex Space* belong to the **adapted** reading and not to the plain one tabulated here, and the plain reading's own four halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator* (*The 12 Products of the Biquaternioid Complex Space*, §*The Other Exchange, and the Class It Keeps*).
 
@@ -272,12 +272,12 @@ So three of the passages of the adapted reading land in the list — the centre 
 | $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
 | $\mathbb{M}_{+}, \mathbb{M}_{-}$ | the Hermitian and anti-Hermitian subspaces |
 | $B_0, B_1, B_2$ | the real scalar line, the real and the imaginary vector triples |
-| $\tilde{P}\tilde{Q}, \tilde{P}\tilde{Q}^{*}, \tilde{P}^{\natural}\tilde{Q}, \tilde{P}^{\natural}\tilde{Q}^{*}$ | the four general products, from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* |
-| $\tilde{P}\bullet_{f}\tilde{Q}$ | the symmetrisation $\tfrac12(f(\tilde{P},\tilde{Q})+f(\tilde{Q},\tilde{P}))$ |
-| $[\tilde{P},\tilde{Q}]_{f}$ | the bracket $f(\tilde{P},\tilde{Q})-f(\tilde{Q},\tilde{P})$ |
+| $\tilde{Q}_1\tilde{Q}_2, \tilde{Q}_1\tilde{Q}_2^{*}, \tilde{Q}_1^{\natural}\tilde{Q}_2, \tilde{Q}_1^{\natural}\tilde{Q}_2^{*}$ | the four general products, from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* |
+| $\tilde{Q}_1\bullet_{f}\tilde{Q}_2$ | the symmetrisation $\tfrac12(f(\tilde{Q}_1,\tilde{Q}_2)+f(\tilde{Q}_2,\tilde{Q}_1))$ |
+| $[\tilde{Q}_1,\tilde{Q}_2]_{f}$ | the bracket $f(\tilde{Q}_1,\tilde{Q}_2)-f(\tilde{Q}_2,\tilde{Q}_1)$ |
 | $\bullet$ | the symmetrised product, the symmetrisation of the general quaternionic bilinear product |
 | $\bullet_{\mathrm{pl}}, [\cdot,\cdot]$ | the symmetrisation and the commutator of the general plain bilinear product |
-| $(\vec P,\vec Q), \vec P\times\vec Q$ | the complex dot and cross products of the vector parts |
+| $(\vec Q_1,\vec Q_2), \vec Q_1\times\vec Q_2$ | the complex dot and cross products of the vector parts |
 | $\mathfrak{sl}(2,\mathbb{C}), \mathfrak{u}(2), \mathfrak{su}(2)$ | the classical Lie algebras of the vector, anti-Hermitian and quaternion subspaces |
 
 ## Further Reading

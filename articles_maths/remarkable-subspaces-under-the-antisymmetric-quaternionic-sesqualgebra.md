@@ -2,18 +2,18 @@
 
 ## Introduction
 
-The block $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra* depends on its two arguments through their vector parts alone, with the vector part of the second argument conjugated. This article reads the block on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — and answers three questions for each: whether the block is stable on it, that is whether the value of two of its elements stays in it; what the diagonal of the block does on it; and which of its elements give the value zero. The block kills the centre in both slots, so the centre is the one subspace on which the product vanishes identically, and the values of the block always lie in the vector subspace, so closure of any other subspace requires its intersection with the vector subspace to receive those values; that requirement separates the remarkable subspaces into the four on which the block is stable and the two on which it is not.
+The block $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra* depends on its two arguments through their vector parts alone, with the vector part of the second argument conjugated. This article reads the block on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — and answers three questions for each: whether the block is stable on it, that is whether the value of two of its elements stays in it; what the diagonal of the block does on it; and which of its elements give the value zero. The block kills the centre in both slots, so the centre is the one subspace on which the product vanishes identically, and the values of the block always lie in the vector subspace, so closure of any other subspace requires its intersection with the vector subspace to receive those values; that requirement separates the remarkable subspaces into the four on which the block is stable and the two on which it is not.
 
 The remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; the same six are read by the other pairings in *Remarkable Subspaces under the General Quaternionic Sesqualgebra* and its companions; the form that the block pairs with is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; and the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*. This article owns the reading of the block on the remarkable subspaces themselves.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, and a generic element $\tilde Q=Q_te_t+\vec Q$, with $Q_\mu=q_\mu+iq'_\mu$ real and imaginary parts. The remarkable subspaces are real subspaces of the complex space; the word *stable* means that the value of two elements of the subspace lies in it, in the real sense, and not that the subspace is a complex subspace. The centre and the vector subspace are the only two of the remarkable subspaces that are complex subspaces.
+**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, and a generic element $\tilde Q_2=Q_{2t}e_t+\vec Q_2$, with $Q_{2,\mu}=q_\mu+iq'_\mu$ real and imaginary parts. The remarkable subspaces are real subspaces of the complex space; the word *stable* means that the value of two elements of the subspace lies in it, in the real sense, and not that the subspace is a complex subspace. The centre and the vector subspace are the only two of the remarkable subspaces that are complex subspaces.
 
 ## The Vanishing on the Centre and the Image
 
 **Proposition.** The block annihilates the centre in both slots: for every central element $\tilde A=Ae_t$,
 
 $$
-\tilde A\diamond\tilde Q=0,\qquad \tilde Q\diamond\tilde A=0 .
+\tilde A\diamond\tilde Q_2=0,\qquad \tilde Q_2\diamond\tilde A=0 .
 $$
 
 *Proof.* A central element has $\vec A=0$, so the value is the cross product of a zero vector; the value is zero from either slot.
@@ -37,14 +37,14 @@ The vector subspace is the complex span of $\vec e_x,\vec e_y,\vec e_z$, with re
 The quaternion subspace is the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$, of real coefficients. The block is **stable** on it: two real vector parts have a real cross product, which lies in $\mathbb{H}_{\mathbb{B}}\cap\mathrm{Vect}(\mathbb{B})$, the real vector directions. On this subspace the block is the ordinary cross product of the real vector parts,
 
 $$
-\tilde P\diamond\tilde Q=\vec P\times\vec Q=\mathrm{APA}(\tilde P,\tilde Q)\qquad(\tilde P,\tilde Q\in\mathbb{H}_{\mathbb{B}}),
+\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\vec Q_2=\mathrm{APA}(\tilde Q_1,\tilde Q_2)\qquad(\tilde Q_1,\tilde Q_2\in\mathbb{H}_{\mathbb{B}}),
 $$
 
 the real coincidence of the block, and its image is the three real dimensions of the real vector directions. The diagonal is **identically zero**, a real vector being its own conjugate.
 
 ### The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
 
-The anti-quaternion subspace is the real span of $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, of imaginary coefficients. The block is **not stable** on it: for two imaginary elements $\tilde P=i\vec a$, $\tilde Q=i\vec b$ with $\vec a,\vec b$ real, the value is
+The anti-quaternion subspace is the real span of $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, of imaginary coefficients. The block is **not stable** on it: for two imaginary elements $\tilde Q_1=i\vec a$, $\tilde Q_2=i\vec b$ with $\vec a,\vec b$ real, the value is
 
 $$
 (i\vec a)\diamond(i\vec b)=i\vec a\times\overline{i\vec b}=i\vec a\times(-i\vec b)=\vec a\times\vec b,
@@ -80,16 +80,16 @@ The anti-Hermitian subspace is the real span of $ie_t,\vec e_x,\vec e_y,\vec e_z
 **Theorem.** For two biquaternions,
 
 $$
-\tilde P\diamond\tilde Q=0
+\tilde Q_1\diamond\tilde Q_2=0
 \iff
-\vec P\ \text{and}\ \overline{\vec Q}\ \text{are}\ \mathbb{C}\text{-linearly dependent},
+\vec Q_1\ \text{and}\ \overline{\vec Q_2}\ \text{are}\ \mathbb{C}\text{-linearly dependent},
 $$
 
 that is, exactly when the vector part of one is a complex multiple of the conjugate of the vector part of the other, or one of the two vector parts is zero.
 
-*Proof.* The value is the cross product $\vec P\times\overline{\vec Q}$, and a cross product of two complex vectors vanishes exactly when the two are linearly dependent over $\mathbb{C}$ or one of them is zero.
+*Proof.* The value is the cross product $\vec Q_1\times\overline{\vec Q_2}$, and a cross product of two complex vectors vanishes exactly when the two are linearly dependent over $\mathbb{C}$ or one of them is zero.
 
-**Remark (the annihilators).** For a fixed $\tilde Q$ the elements $\tilde P$ with $\tilde P\diamond\tilde Q=0$ are the central elements together with the complex line $\mathbb{C}\overline{\vec Q}$; for a fixed $\tilde P$ the elements $\tilde Q$ with $\tilde P\diamond\tilde Q=0$ are the central elements together with the complex line $\mathbb{C}\overline{\vec P}$. The left and the right annihilator of an element are therefore complex planes through the origin, the centre together with a complex line, of complex dimension two, except when the element is central, in which case the annihilator is the whole space. The annihilators are the reason the block has no unit: no element can be reproduced by a product whose values always have a line of annihilation.
+**Remark (the annihilators).** For a fixed $\tilde Q_2$ the elements $\tilde Q_1$ with $\tilde Q_1\diamond\tilde Q_2=0$ are the central elements together with the complex line $\mathbb{C}\overline{\vec Q_2}$; for a fixed $\tilde Q_1$ the elements $\tilde Q_2$ with $\tilde Q_1\diamond\tilde Q_2=0$ are the central elements together with the complex line $\mathbb{C}\overline{\vec Q_1}$. The left and the right annihilator of an element are therefore complex planes through the origin, the centre together with a complex line, of complex dimension two, except when the element is central, in which case the annihilator is the whole space. The annihilators are the reason the block has no unit: no element can be reproduced by a product whose values always have a line of annihilation.
 
 ## Summary
 
@@ -100,11 +100,11 @@ On the remarkable subspaces the block vanishes identically on the centre, has it
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the remarkable real subspaces |
-| $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$ | the block on the remarkable subspaces |
+| $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ | the block on the remarkable subspaces |
 | stable | the value of two elements of the subspace stays in the subspace |
 | the four stable subspaces | centre, vector, quaternion, anti-Hermitian |
 | the two failing subspaces | anti-quaternion, Hermitian |
-| $\tilde P\diamond\tilde Q=0\iff\vec P\parallel_{\mathbb{C}}\overline{\vec Q}$ | the vanishing of the value |
+| $\tilde Q_1\diamond\tilde Q_2=0\iff\vec Q_1\parallel_{\mathbb{C}}\overline{\vec Q_2}$ | the vanishing of the value |
 
 ## Further Reading
 

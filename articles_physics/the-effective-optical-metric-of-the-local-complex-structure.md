@@ -12,7 +12,7 @@ That construction is announced as a **metric**, and the word invites a specific 
 
 This article takes up that separate question. The result is short and sharp: **in a static medium the framework's local metric is exactly the optical metric**, to machine precision and with no extra assumption, and the two independent boundaries — motion and anisotropy — show exactly where the framework's single scalar $c$ runs out. A third boundary is more interesting than either: when $\epsilon\mu$ changes sign the framework's metric changes signature, and that change is the Wick rotation of the local structure.
 
-Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central $i$. The material sector is $\mathbb{M}_-$ with $\tilde{Q}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is $\eta=\mathrm{diag}(-c^2,1,1,1)$ in the coordinate basis $(\partial/\partial t,\partial/\partial Q_x,\partial/\partial Q_y,\partial/\partial Q_z)$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central $i$. The material sector is $\mathbb{M}_-$ with $\tilde{R}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and norm $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is $\eta=\mathrm{diag}(-c^2,1,1,1)$ in the coordinate basis $(\partial/\partial t,\partial/\partial Q_x,\partial/\partial Q_y,\partial/\partial Q_z)$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
 
 ## The Optical Metric of a Medium
 
@@ -122,7 +122,7 @@ The interpretation adds no prediction and no gravity. It is a repackaging of Gor
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$ | Material sector, $\tilde{Q}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
+| $\mathbb{M}_-$ | Material sector, $\tilde{R}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; null cone $N=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium and vacuum speeds |
 | $n=c_0/c$ | Refractive index |

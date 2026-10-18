@@ -20,25 +20,25 @@ The conventions are inherited from the read-list articles and none is redefined.
 
 ## What the Flat Machinery Assumes
 
-The pointwise metric of the framework is the polar form of the biquaternion norm. For $\tilde{Q} = iq_t + \vec q$ and $\tilde{P} = ip_t + \vec p$ in $\mathbb{M}_-$,
+The pointwise metric of the framework is the polar form of the biquaternion norm. For $\tilde{Q}_1 = iq_{1t} + \vec q_1$ and $\tilde{Q}_2 = iq_{2t} + \vec q_2$ in $\mathbb{M}_-$,
 
 $$
-\tfrac{1}{2}\left(\tilde{Q}\tilde{P}^{\natural} + \tilde{P}\tilde{Q}^{\natural}\right)
-= \mathrm{Sc}\left(\tilde{Q}\tilde{P}^{\natural}\right)
-= -q_tp_t + \vec q\cdot\vec p,
+\tfrac{1}{2}\left(\tilde{Q}_1\tilde{Q}_2^{\natural} + \tilde{Q}_2\tilde{Q}_1^{\natural}\right)
+= \mathrm{Sc}\left(\tilde{Q}_1\tilde{Q}_2^{\natural}\right)
+= -q_{1t}q_{2t} + \vec q_1\cdot\vec q_2,
 $$
 
-a real scalar. Write $\langle \tilde{Q}, \tilde{P}\rangle_{\natural}$ for this form; in the basis $(ie_t, \vec e_x, \vec e_y, \vec e_z)$ of $\mathbb{M}_-$ its Gram matrix is $\mathrm{diag}(-1,1,1,1)$, so it is the Minkowski inner product of $\mathbb{M}_- \cong \mathbb{R}^{1,3}$. It is preserved by rotor conjugation,
+a real scalar. Write $\langle \tilde{Q}_1, \tilde{Q}_2\rangle_{\natural}$ for this form; in the basis $(ie_t, \vec e_x, \vec e_y, \vec e_z)$ of $\mathbb{M}_-$ its Gram matrix is $\mathrm{diag}(-1,1,1,1)$, so it is the Minkowski inner product of $\mathbb{M}_- \cong \mathbb{R}^{1,3}$. It is preserved by rotor conjugation,
 
 $$
-\langle \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*},\ \tilde{\Lambda}\tilde{P}\tilde{\Lambda}^{*} \rangle = \langle \tilde{Q}, \tilde{P}\rangle_{\natural},
+\langle \tilde{\Lambda}\tilde{Q}_1\tilde{\Lambda}^{*},\ \tilde{\Lambda}\tilde{Q}_2\tilde{\Lambda}^{*} \rangle = \langle \tilde{Q}_1, \tilde{Q}_2\rangle_{\natural},
 $$
 
-because the biquaternion norm is invariant and the conjugation action is linear in $\tilde{Q}$. This is the entire metric content of the flat framework: one fixed form on one fixed real vector space.
+because the biquaternion norm is invariant and the conjugation action is linear in each argument. This is the entire metric content of the flat framework: one fixed form on one fixed real vector space.
 
 Four assumptions are built into that statement, and each is a flat-space assumption.
 
-**1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde{Q}$, the four-velocity $\tilde{V}$, and every other four-vector are elements of $\mathbb{M}_-$; separation between events enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$, never as a displacement along a path.
+**1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde{R}$, the four-velocity $\tilde{V}$, and every other four-vector are elements of $\mathbb{M}_-$; separation between events enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$, never as a displacement along a path.
 
 **2. A biquaternion norm with constant coefficients.** The form $\langle \cdot,\cdot \rangle_{\natural}$ is the same at every point, by construction. Nothing in the algebra can vary it.
 
@@ -83,13 +83,13 @@ It is at this point that a genuine ambiguity appears, and it should be stated be
 
 ### The Two Readings
 
-**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with the local $c$. Then $c$ is a function of position and
+**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with the local $c$. Then $c$ is a function of position and
 
 $$
 d(ict) = ic\,dt + i\,t\,dc,
 $$
 
-so the displacement biquaternion is $d\tilde{Q} = i(c\,dt + t\,dc)e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = \langle d\tilde{Q}\rangle_{\natural}$,
+so the displacement biquaternion is $d\tilde{R} = i(c\,dt + t\,dc)e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = \langle d\tilde{R}\rangle_{\natural}$,
 
 $$
 ds^2 = -c^2\,dt^2 - 2ct\,dt\,dc - t^2 (dc)^2 +dx^2+dy^2+dz^2
@@ -151,10 +151,10 @@ The profile agrees with the local-scale route's $c^2=c_0^2(1-r_s/r)$ to first or
 The general way to make the embedding of spacetime into the algebra local is to allow the coordinate differentials to be carried into $\mathbb{M}_-$ by a point-dependent frame:
 
 $$
-d\tilde{Q} = \tilde{E}_\mu(x)\,dx^\mu, \qquad \tilde{E}_\mu(x) \in \mathbb{M}_- .
+d\tilde{R} = \tilde{E}_\mu(x)\,dx^\mu, \qquad \tilde{E}_\mu(x) \in \mathbb{M}_- .
 $$
 
-The interval is $ds^2 = \langle d\tilde{Q}\rangle_{\natural}$, and since $\langle\cdot\rangle_{\natural}$ is the polar form evaluated on $d\tilde{Q} = \tilde{E}_\mu dx^\mu$,
+The interval is $ds^2 = \langle d\tilde{R}\rangle_{\natural}$, and since $\langle\cdot\rangle_{\natural}$ is the polar form evaluated on $d\tilde{R} = \tilde{E}_\mu dx^\mu$,
 
 $$
 g_{\mu\nu}(x) = \langle \tilde{E}_\mu(x), \tilde{E}_\nu(x)\rangle_{\natural}
@@ -463,11 +463,11 @@ Read further, the local complex structure is an **emergent metric** in the sense
 
 The read-list machinery is flat and pointwise: one fixed algebra, one fixed biquaternion norm with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
 
-The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde{Q} = i\,c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial/\partial Q_t = -(i/c)\partial/\partial t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = u\Delta u$, $R_{0i} = 0$, $R_{ij} = -\partial^2/\partial Q_i\partial Q_j u / u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
+The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde{R} = i\,c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial/\partial Q_t = -(i/c)\partial/\partial t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = u\Delta u$, $R_{0i} = 0$, $R_{ij} = -\partial^2/\partial Q_i\partial Q_j u / u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
 
 Within the second interpretation's class — one function, no shift, flat spatial slices — Ricci-flatness forces $u$ to be affine in the spatial coordinates, and every such metric is flat. The class therefore contains no non-flat vacuum geometry: no Weyl curvature, no gravitational waves, no black-hole exteriors. The local scale factor is not the route to general relativity. Nor is it the same object as the metric: $c$ is the Maxwell speed of a medium, and the standard effective metric of a dielectric is a metric for light, not for free fall.
 
-A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, so curvature is exactly the non-gauge part of the frame. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator, the two differing precisely for the boosts.
+A general curved metric can be carried, by a frame field $\tilde{E}_\mu(x) \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle \tilde{E}_\mu, \tilde{E}_\nu\rangle_{\natural}$, since any Lorentzian metric has a local orthonormal frame. The algebra then supplies the pointwise $SL(2,\mathbb{C})$, its vector representation, and its Lie algebra; the sixteen frame functions modulo six local rotor parameters reproduce the ten components of the metric; and a frame that is pure rotor gauge is flat, so curvature is exactly the non-gauge part of the frame. The algebra can even carry the connection and its curvature, since the Lie algebra is the six-dimensional traceless subspace of $\mathbb{B}$ — with the caveat that the infinitesimal action is the two-sided $G\tilde{R} + \tilde{R}G^{*}$, not the commutator, the two differing precisely for the boosts.
 
 The Dirac field lives on a different module from the four-vector, and its curved equation has a different derivative. The spinor module carries the **left** action $\psi \mapsto \tilde\Lambda\psi$, not the two-sided rotor conjugation, so its covariant derivative is the **one-sided** $D_\mu\psi = \partial/\partial Q_\mu\,\psi + \tilde\Gamma_\mu\psi$, with $\tilde\Gamma_\mu$ in the Lie subspace; covariance fixes the inhomogeneous transformation $\tilde\Gamma_\mu \mapsto \tilde\Lambda\tilde\Gamma_\mu\tilde\Lambda^{-1} - (\partial/\partial Q_\mu\,\tilde\Lambda)\tilde\Lambda^{-1}$. With the dual frame $\tilde E^\mu = g^{\mu\nu}\tilde E_\nu$ this gives the curved biquaternion Dirac operator $\not D = \tilde E^\mu D_\mu$, whose massless equation is $\not D\psi = 0$ and whose massive form is the same chiral pair as in the flat case, $\not D\tilde\Psi_R = m\tilde\Psi_L$, $\not D^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, the mass being untouched by the curvature. The operator reduces exactly to $\tilde\nabla$ in a rigid frame with vanishing connection, and its square is the Lichnerowicz formula $\not D^2 = \Box_g - \tfrac14 R$, so the curvature couples to the field through the Ricci scalar even without a source. That much of the curved matter equation is now constructed in the framework's own notation. What remains is unchanged and unyielding: the frame and the connection are inserted by hand and satisfy no equation, the metric is not selected, the current that would source the coupled system is the spinor-module object carrying $\gamma^0$ outside $\mathbb{B}$, and the global existence of spinor fields is a topological condition no local operator can see.
 
@@ -483,14 +483,14 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian (informational) and anti-Hermitian (material) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, home of the rotation rotors |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\langle \tilde{Q},\tilde{P}\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$ | The general quaternionic bilinear form, the polar form of the norm, on $\mathbb{M}_-$; the pointwise metric, the interval |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | The general quaternionic bilinear form, the polar form of the norm, on $\mathbb{M}_-$; the pointwise metric, the interval |
 | $\tilde{\Lambda} \in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $ict$ | Local imaginary time coordinate, material sector |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Biquaternionic gradient (needs a global chart) |
-| $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{Q} = \tilde{E}_\mu dx^\mu$ |
+| $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{R} = \tilde{E}_\mu dx^\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | Metric carried by the frame field |
 | $J_k = \vec e_k$, $K_k = i\vec e_k$ | Rotation and boost generators, spanning $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \subset \mathbb{B}$ |
 | $\tilde{\Gamma}_\mu$ | Connection 1-form, valued in the Lie subspace |

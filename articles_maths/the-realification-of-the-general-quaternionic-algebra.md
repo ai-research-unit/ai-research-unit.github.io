@@ -4,7 +4,7 @@
 
 The General Quaternionic Algebra is one of the twelve algebraic structures that the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries, the structure carried by the product
 $$
-\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q,
+\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2,
 $$
 the general quaternionic bilinear product of *The 12 Products of the Biquaternioid Complex Space*, the structure of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. It is an $A$ structure: the product is $\mathbb{C}$-bilinear in both slots. Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
 
@@ -51,7 +51,7 @@ the two shapes are the two criteria of §*The Realification of a Linear Map* of 
 
 The product carries the general quaternionic bilinear form, the scalar part of the general quaternionic product, quoted from *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*:
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_tQ_t+(\vec P,\vec Q).
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2).
 $$
 Over $\mathbb{C}$ it is a symmetric bilinear form; a nondegenerate symmetric bilinear form over $\mathbb{C}$ is classified by its rank alone, so its realification is the **split** pair $(\operatorname{Re}N,\operatorname{Im}N)$ of §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*, and on the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ its Gram matrix is
 $$
@@ -59,7 +59,7 @@ $$
 $$
 of signature $(4,4)$, the second row of the table of *The Realification of the Four Forms*, §*The Four Gram Matrices*. On the realification the complex structure **reverses** the form,
 $$
-N_{\mathbb{R}}(J\tilde P,J\tilde Q)=-N_{\mathbb{R}}(\tilde P,\tilde Q),
+N_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=-N_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
 which is the same statement as the two opposite blocks $\mathrm{I}_4$ and $-\mathrm{I}_4$ of the Gram matrix.
 
@@ -82,11 +82,11 @@ $$
 
 The trace form of the product is
 $$
-\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr).
+\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr).
 $$
-Since $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$, the composite is the plain left multiplication by $\tilde P^{\natural}\tilde Q^{\natural}$, and $\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{\natural})=\mathrm{Sc}\bigl((\tilde Q\tilde P)^{\natural}\bigr)=\mathrm{Sc}(\tilde Q\tilde P)=\langle\tilde P,\tilde Q\rangle$, so
+Since $L_{\tilde Q_1}=L^{\mathrm{plain}}_{\tilde Q_1^{\natural}}$, the composite is the plain left multiplication by $\tilde Q_1^{\natural}\tilde Q_2^{\natural}$, and $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\natural})=\mathrm{Sc}\bigl((\tilde Q_2\tilde Q_1)^{\natural}\bigr)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)=\langle\tilde Q_1,\tilde Q_2\rangle$, so
 $$
-\tau(\tilde P,\tilde Q)=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle,
+\tau(\tilde Q_1,\tilde Q_2)=8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle,
 $$
 
 
@@ -117,7 +117,7 @@ $$
 $$
 and $e_t$ acts on the left by the identity and on the right by the natural conjugation, which sends each generator to its negative; every product therefore stays in the span. This is the smallest illustration that the real reading carries subalgebras the complex reading cannot see.
 
-**The trace form.** By §*The Real Operators and the Trace Form* the trace form of the product is $8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$, a real symmetric bilinear form of signature $(4,4)$ and zero radical, the realified general plain bilinear form. It is the same real form as the trace form of the general plain algebra: the two products, one associative with a two-sided unit and one not associative with a left unit alone, have the same trace form, and the conjugation that separates them is invisible to the trace.
+**The trace form.** By §*The Real Operators and the Trace Form* the trace form of the product is $8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle$, a real symmetric bilinear form of signature $(4,4)$ and zero radical, the realified general plain bilinear form. It is the same real form as the trace form of the general plain algebra: the two products, one associative with a two-sided unit and one not associative with a left unit alone, have the same trace form, and the conjugation that separates them is invisible to the trace.
 
 The other two real objects of the ring — the Galois-twisted automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})=\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\rtimes\mathbb{Z}/2$ and the real models $M_2(\mathbb{C})$, $M_4(\mathbb{C})_L$ and $\mathrm{Cl}^+_{1,3}(\mathbb{R})$ — are shared by the twelve products and belong to the **ring** and not to this product: the automorphisms and the models are §*What Is Specific to the Real Interpretation* of *The Realification and the Effect of the Change of Scalars*. They are cited here and not repeated.
 
@@ -129,15 +129,15 @@ Read over $\mathbb{R}$ the General Quaternionic Algebra is the same product on t
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the product of the General Quaternionic Algebra |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ | the product of the General Quaternionic Algebra |
 | $\mathbb{R}^8$ | the realification of $\mathbb{B}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the ring, the field of scalars read over $\mathbb{R}$ |
 | $J=L_i$ | multiplication by $i$, the complex structure, of square $-1$ |
-| $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | the general quaternionic bilinear form carried by the product |
-| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form, the form of the trace form |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | the general quaternionic bilinear form carried by the product |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | the general plain bilinear form, the form of the trace form |
 | $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$ | Gram matrix of the realified form $\langle\cdot,\cdot\rangle_{\natural}$, of signature $(4,4)$ |
 | $L_{\tilde Q_3}$, $R_{\tilde Q_3}$ | the left and the right multiplications, $\mathbb{C}_{\mathbb{B}}$-linear on $\mathbb{R}^8$ |
-| $\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})$ | the trace form, $=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$, signature $(4,4)$ |
+| $\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1}L_{\tilde Q_2})$ | the trace form, $=8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle$, signature $(4,4)$ |
 | $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | the real form closed under the product, with $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ |
 
 ## Further Reading

@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The symmetric quaternionic bilinear product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is governed by one formula, proved in *Introduction to the Symmetric Quaternionic Algebra* and read throughout the block,
+The symmetric quaternionic bilinear product $\tilde Q_1\bullet\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$ is governed by one formula, proved in *Introduction to the Symmetric Quaternionic Algebra* and read throughout the block,
 
 $$
-\tilde P\bullet\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}\,e_t,\qquad
-\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q),
+\tilde Q_1\bullet\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}\,e_t,\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
 $$
 
 in which $\langle\cdot,\cdot\rangle_{\natural}$ is the quaternion form, symmetric, non-degenerate, of Gram matrix the identity on the basis. The formula makes the algebra element-theoretically the poorest of the twelve: it is commutative with vanishing commutator, its image is the central line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, it has no unit, its radical is $\{0\}$ because the form is non-degenerate, and its idempotents are $0$ and $e_t$ alone (*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
@@ -44,7 +44,7 @@ $$
 
 **Theorem (the block is the only structure with the scalar law).** The symmetric quaternionic product satisfies the scalar law, with $\beta=N$; and among the twelve operations of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* it is the only one that does.
 
-**Proof.** The product is $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ with $\langle\cdot,\cdot\rangle_{\natural}$ symmetric, bilinear and central-valued by *Introduction to the Symmetric Quaternionic Algebra*, so the law holds; the uniqueness is §*The Isolation among the Twelve*, where each other operation is exhibited with a witness of the failure of clause 1 or of clause 2.
+**Proof.** The product is $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ with $\langle\cdot,\cdot\rangle_{\natural}$ symmetric, bilinear and central-valued by *Introduction to the Symmetric Quaternionic Algebra*, so the law holds; the uniqueness is §*The Isolation among the Twelve*, where each other operation is exhibited with a witness of the failure of clause 1 or of clause 2.
 
 **Theorem (the operator reading).** The left multiplications of the block obey the composition law
 
@@ -165,13 +165,13 @@ The operator reading of the law, $L^{\circ}_{\tilde Q_1}L^{\circ}_{\tilde Q_3}=\
 
 ## Summary
 
-The symmetric quaternionic product satisfies the **scalar law** — it is commutative and its values lie in the centre, equivalently $\tilde P\bullet\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ for a symmetric bilinear form — and it is the only one of the twelve operations that does: the two other symmetrisations that survive one clause each fail the other (the symmetric plain product is commutative and not central, the symmetric plain sesquilinear product central and not commutative), and the four general products and the four antisymmetrisations fail both. Its left multiplication is the rank-one operator $L_{\tilde Q_1}\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, faithful in $\tilde Q_1$ because the form is non-degenerate, and the single identity $L_{\tilde Q_1}^{2}=X_tL_{\tilde Q_1}$ classifies everything: the operator is a projector exactly when $\tilde Q_1=0$ or $X_t=1$, and square-zero exactly when $X_t=0$; the operator reading $L_{\tilde Q_1}L_{\tilde Q_3}=X_tL_{\tilde Q_3}$ likewise fails for the other eleven, for the six sesquilinear ones by the parity obstruction and for the rest on explicit witnesses. The projectors are the affine hyperplane $X_t=1$ together with the zero operator, a family of complex dimension three of pairwise distinct rank-one projections onto the central line, indexed by the hyperplane and not by the idempotents of the algebra, which are $0$ and $e_t$ alone; even the element $e_t$ gives the projection onto the central line and not the identity, since the algebra has no unit. The square-zero operators are the vector subspace $X_t=0$, which is not the isotropic cone of the square-zero elements, the two coinciding only on the intersection. Among the four symmetric products the block is the only one with a hyperplane of projectors, and the law that isolates it among the twelve is the scalar law of §*The Isolation among the Twelve*.
+The symmetric quaternionic product satisfies the **scalar law** — it is commutative and its values lie in the centre, equivalently $\tilde Q_1\bullet\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ for a symmetric bilinear form — and it is the only one of the twelve operations that does: the two other symmetrisations that survive one clause each fail the other (the symmetric plain product is commutative and not central, the symmetric plain sesquilinear product central and not commutative), and the four general products and the four antisymmetrisations fail both. Its left multiplication is the rank-one operator $L_{\tilde Q_1}\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$, faithful in $\tilde Q_1$ because the form is non-degenerate, and the single identity $L_{\tilde Q_1}^{2}=X_tL_{\tilde Q_1}$ classifies everything: the operator is a projector exactly when $\tilde Q_1=0$ or $X_t=1$, and square-zero exactly when $X_t=0$; the operator reading $L_{\tilde Q_1}L_{\tilde Q_3}=X_tL_{\tilde Q_3}$ likewise fails for the other eleven, for the six sesquilinear ones by the parity obstruction and for the rest on explicit witnesses. The projectors are the affine hyperplane $X_t=1$ together with the zero operator, a family of complex dimension three of pairwise distinct rank-one projections onto the central line, indexed by the hyperplane and not by the idempotents of the algebra, which are $0$ and $e_t$ alone; even the element $e_t$ gives the projection onto the central line and not the identity, since the algebra has no unit. The square-zero operators are the vector subspace $X_t=0$, which is not the isotropic cone of the square-zero elements, the two coinciding only on the intersection. Among the four symmetric products the block is the only one with a hyperplane of projectors, and the law that isolates it among the twelve is the scalar law of §*The Isolation among the Twelve*.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\bullet$, $\star$ | the symmetric quaternionic product $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ |
+| $\bullet$, $\star$ | the symmetric quaternionic product $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ |
 | $\circ$ | the generic operation of another structure of the catalogue, in §*The Isolation among the Twelve* |
 | scalar law | commutative with central values: $\tilde Q_1\circ\tilde Q_2=\beta(\tilde Q_1,\tilde Q_2)e_t$, $\beta$ symmetric |
 | $X_t$, $\vec X$ | the scalar coordinate and the vector part of $\tilde Q_1=X_t+\vec X$ |
@@ -187,6 +187,6 @@ The symmetric quaternionic product satisfies the **scalar law** — it is commut
 
 - *The Specificities of the Biquaternion Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the criterion of the plain product, the model of the family.
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the companion family of projectors in the general quaternionic product.
-- *Introduction to the Symmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra.md`), for the governing formula $\tilde P\bullet\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ and for the absence of a unit.
+- *Introduction to the Symmetric Quaternionic Algebra* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra.md`), for the governing formula $\tilde Q_1\bullet\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ and for the absence of a unit.
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the trivial radical, the idempotents $0$ and $e_t$, and the isotropic cone of the square-zero elements.
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the composition law and the rank, trace and adjoint of the operators.

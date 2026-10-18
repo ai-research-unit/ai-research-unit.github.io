@@ -67,8 +67,8 @@ $$
 \tilde{Q}^{\natural}\tilde{Q} = \langle\tilde{Q}\rangle_{\natural}\,e_t,
 $$
 
-with $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$
-with real $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the value $\langle\tilde{Q}\rangle_{\natural} = -c^{2}t^{2}+x^2+y^2+z^2$ is **real**, and the
+with $\langle\tilde{R}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{R}\in\mathbb{M}_-$, written $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$
+with real $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the value $\langle\tilde{R}\rangle_{\natural} = -c^{2}t^{2}+x^2+y^2+z^2$ is **real**, and the
 scalar line $\mathbb{R}e_t$ lies in $\mathbb{M}_+$.
 
 **Interpretation.** Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
@@ -82,14 +82,14 @@ $100$; on $100$ random pairs of material elements the product lies in neither se
 
 The second map is a rotation of the four-vector into an element of the informational sector.
 
-**Map.** On a material element $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the central element
-$\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ is
+**Map.** On a material element $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the central element
+$\tilde{H} = -\tfrac{i}{2}\tilde{R}$ is
 
 $$
 \tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_t+(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) = \tfrac12\bigl(ct\,e_t-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \in \mathbb{M}_+,
 $$
 
-with $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac14 \langle\tilde{Q}\rangle_{\natural}$. On the trace-one slice
+with $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac14 \langle\tilde{R}\rangle_{\natural}$. On the trace-one slice
 $ct = 1$ it is the Hermitian state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
 a point of the Bloch ball.
 
@@ -260,7 +260,7 @@ each of its instances owned by an article that proves it.
 | $\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$ | Material ($-$) and informational ($+$) sectors |
 | ${}^{*}$ | Hermitian conjugation, $\vec e_k^{*} = -\vec e_k$, $i^{*} = -i$ |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat = -{}^{*}$ | Quaternion conjugation, coefficient conjugation, the real structure |
-| $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ real |
+| $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ real |
 | $\tilde{H} = h_0e_t+i\vec h$ | Informational element, $h_0$ and $\vec h$ real |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$ | Biquaternion norm; equal to the interval on $\mathbb{M}_-$ |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$ |

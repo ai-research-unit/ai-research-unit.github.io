@@ -38,8 +38,8 @@ the natural conjugation ${}^{\natural}$, the coefficient conjugation $\bar{\cdot
 conjugation ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, with $\tilde Q^{\flat}=-\tilde Q^{*}$. The biquaternion
 norm is $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$,
 whose vanishing locus is the cone; the subspaces are the anti-Hermitian material sector $\mathbb{M}_-$ and
-the Hermitian informational sector $\mathbb{M}_+$; the material coordinate is $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$,
-so that $\langle\tilde Q\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$, and $c=1/\sqrt{\epsilon\mu}$. An element is **pure** when
+the Hermitian informational sector $\mathbb{M}_+$; the material coordinate is $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$,
+so that $\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$, and $c=1/\sqrt{\epsilon\mu}$. An element is **pure** when
 its scalar part vanishes, $Q_t=0$, and **non-pure** when $Q_t\neq0$. The plain product is written
 $\tilde P\tilde Q$ and the plain sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the
 trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The twelve structures are those of *The 12 Products of the
@@ -682,7 +682,7 @@ edge of the state space, the critical set of the square and the complement of th
 - pure means $Q_t=0$; non-pure means $Q_t\neq0$; a nilpotent is a nonzero element with $\tilde\Upsilon^{2}=0$; an idempotent satisfies $\tilde\Pi^{2}=\tilde\Pi$.
 - The twelve structures: GPA, GPS, GQA, GQS the four general products; SPA, SPS, SQA, SQS the symmetric parts; APA, APS, AQA, AQS the antisymmetric parts.
 - $\mathbb{M}_\pm$ the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ the centre.
-- $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium; $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the material coordinate.
+- $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium; $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the material coordinate.
 
 ## Further Reading
 

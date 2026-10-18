@@ -185,15 +185,15 @@ The interval rotor $\tilde{M}=\tilde{\Lambda}_{\vec v+d\vec v}\tilde{\Lambda}^{\
 The precession can be written as a rotor conjugation in the same half-angle form used throughout the series. Let $\vec u_\omega=\vec u_{\vec a\times\vec v}$ be the unit axis and $\theta_T(t)$ the accumulated angle, $d\theta_T=\omega_T\,dt$. A spatial triad that is carried rigidly by the instantaneous rest frame rotates relative to the laboratory according to
 
 $$
-\frac{d\tilde r}{dt}=\vec\omega_T\times\tilde r,
+\frac{d\vec r}{dt}=\vec\omega_T\times\vec r,
 \qquad
-\tilde r=r_\mu \vec e_\mu\in\mathbb{H}_{\mathbb{B}},
+\vec r=r_\mu \vec e_\mu\in\mathbb{H}_{\mathbb{B}},
 $$
 
 and, for constant $\vec\omega_T$, the solution is the rotor conjugation
 
 $$
-\tilde r(t)=\tilde{u}_T(t)\,\tilde r(0)\,\tilde{u}_T(t)^{*},
+\vec r(t)=\tilde{u}_T(t)\,\vec r(0)\,\tilde{u}_T(t)^{*},
 \qquad
 \tilde{u}_T(t)=\exp\!\left(\frac{\theta_T(t)}{2}\,\vec u_{\omega,\mu}\vec e_\mu\right),
 $$
@@ -201,7 +201,7 @@ $$
 with $\tilde{u}_T$ a unit real quaternion. The frame turns through $\theta_T$ while the rotor turns through half that angle: this is the double-cover half-angle of the algebra, the same one that appears in the Larmor rotor and in the spin-$\tfrac12$ evolution. The generator form is the commutator
 
 $$
-\frac{d\tilde r}{dt}=\tfrac{1}{2}\left[\tilde r,\tilde\omega_T\right],
+\frac{d\vec r}{dt}=\tfrac{1}{2}\left[\vec r,\tilde\omega_T\right],
 \qquad
 \tilde\omega_T=-\omega_{T,\mu}\vec e_\mu ,
 $$
@@ -360,11 +360,11 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
 | $\vec\Omega$ | Orbital angular velocity (circular motion) |
 | $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ | Thomas rotor (half-angle) |
-| $\tilde r=r_\mu\vec e_\mu$ | Material spatial vector |
+| $\vec r=r_\mu\vec e_\mu$ | Material spatial vector |
 | $g$, $\gamma_g=gq/2m$ | Gyromagnetic factor and ratio |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

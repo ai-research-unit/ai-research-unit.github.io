@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The symmetric quaternionic multiplication $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ is central, commutative and without unit (*Introduction to the Symmetric Quaternionic Algebra*). This article is the second Common Theory entry of the block, and its subject is the algebraic norm that the block carries and the inverse that it does not.
+The symmetric quaternionic multiplication $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ is central, commutative and without unit (*Introduction to the Symmetric Quaternionic Algebra*). This article is the second Common Theory entry of the block, and its subject is the algebraic norm that the block carries and the inverse that it does not.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. For the block the form is $\mathrm{Sc}(\tilde P\star\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}$ and its diagonal is
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. For the block the form is $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ and its diagonal is
 
 $$
 \langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},
@@ -16,9 +16,9 @@ The invertibility is where the article records an **absence**. The block has **n
 
 **Boundaries.** The general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*; the definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*. The isotropic cone of the block is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the form read as the multiplication of the block is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; the group of linear maps preserving the form and its Lie algebra are *The Multiplication Operators of the Symmetric Quaternionic Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and $(\vec P,\vec Q)=\sum_{k\in\{x,y,z\}}P_kQ_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$. The **symmetric quaternionic multiplication** is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=\mathrm{Sc}(\tilde P\star\tilde Q)\,e_t$, with $\mathrm{Sc}(\tilde P\star\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$; it is written $\bullet$ in the Specific Theory and Operators entries of the block. Its diagonal is the algebraic norm of the block, $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x+\mathbb{C}\vec e_y+\mathbb{C}\vec e_z$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and $(\vec Q_1,\vec Q_2)=\sum_{k\in\{x,y,z\}}Q_{1,k}Q_{2,k}$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$. The **symmetric quaternionic multiplication** is $\tilde Q_1\star\tilde Q_2=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)\,e_t$, with $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$; it is written $\bullet$ in the Specific Theory and Operators entries of the block. Its diagonal is the algebraic norm of the block, $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x+\mathbb{C}\vec e_y+\mathbb{C}\vec e_z$.
 
-**The results.** The block carries exactly one algebraic norm, the diagonal of its scalar-part form, $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, complex-valued, indefinite, of Gram matrix the identity on $e_t,\vec e_x,\vec e_y,\vec e_z$ and radical $\{0\}$. It is the multiplicative form of the plain product, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ with $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, but it is **not** multiplicative for the block, where $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P,\tilde Q\rangle_{\natural}^2$. The block has no left unit, no right unit and no two-sided unit, hence no inverse and no group of units. The non-isotropic class $\langle\cdot\rangle_{\natural}\neq0$ is exactly the group of units of the plain product, with the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
+**The results.** The block carries exactly one algebraic norm, the diagonal of its scalar-part form, $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, complex-valued, indefinite, of Gram matrix the identity on $e_t,\vec e_x,\vec e_y,\vec e_z$ and radical $\{0\}$. It is the multiplicative form of the plain product, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ with $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, but it is **not** multiplicative for the block, where $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2$. The block has no left unit, no right unit and no two-sided unit, hence no inverse and no group of units. The non-isotropic class $\langle\cdot\rangle_{\natural}\neq0$ is exactly the group of units of the plain product, with the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$.
 
 ## The General Definitions
 
@@ -32,7 +32,7 @@ Throughout this article the product is the **symmetric quaternionic product** of
 
 ## The Algebraic Norm of the Block
 
-**The block carries one algebraic norm, the diagonal of its scalar-part form $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$; it is complex-valued and indefinite, of Gram matrix the identity on $e_t,\vec e_x,\vec e_y,\vec e_z$ and radical $\{0\}$, it is the multiplicative form of the plain product, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ with $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and it is **not** multiplicative for the block, where $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P,\tilde Q\rangle_{\natural}^2$; the three conjugations preserve the product, and $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ while $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$.**
+**The block carries one algebraic norm, the diagonal of its scalar-part form $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$; it is complex-valued and indefinite, of Gram matrix the identity on $e_t,\vec e_x,\vec e_y,\vec e_z$ and radical $\{0\}$, it is the multiplicative form of the plain product, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ with $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and it is **not** multiplicative for the block, where $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2$; the three conjugations preserve the product, and $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ while $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$.**
 
 **Definition.** The **algebraic norm of the block** is the diagonal of the scalar-part form of the product,
 
@@ -43,7 +43,7 @@ $$
 equivalently $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}$ for the form
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=P_tQ_t+(\vec P,\vec Q),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
 $$
 
 which is the general quaternionic bilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The two are related by the square of the product, which is the diagonal placed in the centre, $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ (*Introduction to the Symmetric Quaternionic Algebra*). The form is symmetric, $\mathbb{C}$-bilinear and non-degenerate, of Gram matrix the identity on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$; its radical is $\{0\}$ (*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
@@ -51,42 +51,42 @@ which is the general quaternionic bilinear form of *The 4 Forms over the Biquate
 **Theorem (the algebraic norm is the multiplicative form of the plain product).** The algebraic norm of the block satisfies
 
 $$
-\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural},\qquad \langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\,\langle\tilde Q\rangle_{\natural},
+\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural},\qquad \langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural},
 $$
 
 the second identity being the multiplicativity of the form for the **plain** product, not for the block; and the product of the block is the polarisation read on the central line,
 
 $$
-\tilde P\star\tilde Q=\tfrac12\bigl(\langle\tilde P+\tilde Q\rangle_{\natural}-\langle\tilde P\rangle_{\natural}-\langle\tilde Q\rangle_{\natural}\bigr)e_t .
+\tilde Q_1\star\tilde Q_2=\tfrac12\bigl(\langle\tilde Q_1+\tilde Q_2\rangle_{\natural}-\langle\tilde Q_1\rangle_{\natural}-\langle\tilde Q_2\rangle_{\natural}\bigr)e_t .
 $$
 
-*Proof.* In the plain product $\tilde Q\tilde Q^{\natural}=\bigl(Q_t^2+(\vec Q,\vec Q)\bigr)e_t=\langle\tilde Q\rangle_{\natural}e_t$ by the multiplication table; the multiplicativity is the standard identity $(\tilde P\tilde Q)(\tilde P\tilde Q)^{\natural}=\tilde P\tilde Q\tilde Q^{\natural}\tilde P^{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}e_t$, using the centrality of the scalar; and the polarisation is the expansion of the square of $\tilde P+\tilde Q$ by bilinearity.
+*Proof.* In the plain product $\tilde Q\tilde Q^{\natural}=\bigl(Q_t^2+(\vec Q,\vec Q)\bigr)e_t=\langle\tilde Q\rangle_{\natural}e_t$ by the multiplication table; the multiplicativity is the standard identity $(\tilde Q_1\tilde Q_2)(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_1\tilde Q_2\tilde Q_2^{\natural}\tilde Q_1^{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}e_t$, using the centrality of the scalar; and the polarisation is the expansion of the square of $\tilde Q_1+\tilde Q_2$ by bilinearity.
 
 **Remark (the diagonal is the form, and only the form).** The symbol $\langle\cdot,\cdot\rangle_{\natural}$ denotes the algebraic norm of the block and its polar form, and nothing else; the other three algebraic norms of the space are not read here. In particular the conjugate square $\tilde Q\star\tilde Q^{\natural}$ is a different element of the central line, with coefficient $\langle\tilde Q,\tilde Q^{\natural}\rangle_{\natural}=Q_t^2-(\vec Q,\vec Q)$, and that coefficient is not the algebraic norm of the block.
 
 **Proposition (the algebraic norm is not multiplicative for the block).** For the product of the block,
 
 $$
-\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P,\tilde Q\rangle_{\natural}^2,\qquad\text{which differs in general from } \langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}.
+\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2,\qquad\text{which differs in general from } \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}.
 $$
 
-At $\tilde P=\vec e_x$, $\tilde Q=\vec e_y$ the first is $0$ because $\langle \vec e_x,\vec e_y\rangle_{\natural}=0$, while the second is $1$.
+At $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y$ the first is $0$ because $\langle \vec e_x,\vec e_y\rangle_{\natural}=0$, while the second is $1$.
 
-*Proof.* $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ and $\langle \lambda e_t\rangle_{\natural}=\lambda^2$, so the first value is $\langle\tilde P,\tilde Q\rangle_{\natural}^2$; the witness is the computation of the table entry $\vec e_x\star \vec e_y=0$.
+*Proof.* $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ and $\langle \lambda e_t\rangle_{\natural}=\lambda^2$, so the first value is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2$; the witness is the computation of the table entry $\vec e_x\star \vec e_y=0$.
 
-The block therefore carries **no multiplicative algebraic norm of its own**: the multiplicativity holds for the plain product, and the diagonal of the block transmits it to that product and no further. A reader who expects $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ is reading the multiplicity of the plain product into the block.
+The block therefore carries **no multiplicative algebraic norm of its own**: the multiplicativity holds for the plain product, and the diagonal of the block transmits it to that product and no further. A reader who expects $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$ is reading the multiplicity of the plain product into the block.
 
 **Proposition (the three conjugations preserve the product).** The natural conjugation, the star and the Hermitian conjugation satisfy
 
 $$
-(\tilde P\star\tilde Q)^{\natural}=\tilde P^{\natural}\star\tilde Q^{\natural},\qquad
-(\tilde P\star\tilde Q)^{*}=\tilde P^{*}\star\tilde Q^{*},\qquad
-\overline{\tilde P\star\tilde Q}=\overline{\tilde P}\star\overline{\tilde Q},
+(\tilde Q_1\star\tilde Q_2)^{\natural}=\tilde Q_1^{\natural}\star\tilde Q_2^{\natural},\qquad
+(\tilde Q_1\star\tilde Q_2)^{*}=\tilde Q_1^{*}\star\tilde Q_2^{*},\qquad
+\overline{\tilde Q_1\star\tilde Q_2}=\overline{\tilde Q}_1\star\overline{\tilde Q}_2,
 $$
 
 and the natural conjugation preserves the algebraic norm while the star conjugates its value, $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$.
 
-*Proof.* The value is central, so each conjugation acts on it coefficientwise: $(\tilde P\star\tilde Q)^{\natural}=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ and $\tilde P^{\natural}\star\tilde Q^{\natural}=\langle\tilde P^{\natural},\tilde Q^{\natural}\rangle_{\natural}e_t$, and $\langle\tilde P^{\natural},\tilde Q^{\natural}\rangle_{\natural}=P_tQ_t+(-\vec P,-\vec Q)=\langle\tilde P,\tilde Q\rangle_{\natural}$; the star and the bar are the same computation with the coefficients conjugated. On the diagonal the first is $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ and the second $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$.
+*Proof.* The value is central, so each conjugation acts on it coefficientwise: $(\tilde Q_1\star\tilde Q_2)^{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ and $\tilde Q_1^{\natural}\star\tilde Q_2^{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2^{\natural}\rangle_{\natural}e_t$, and $\langle\tilde Q_1^{\natural},\tilde Q_2^{\natural}\rangle_{\natural}=Q_{1t}Q_{2t}+(-\vec Q_1,-\vec Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$; the star and the bar are the same computation with the coefficients conjugated. On the diagonal the first is $\langle\tilde Q^{\natural}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ and the second $\langle\tilde Q^{*}\rangle_{\natural}=\overline{\langle\tilde Q\rangle_{\natural}}$.
 
 The natural conjugation, an anti-automorphism of the plain product, is an **automorphism** of the block, because it is $\mathbb{C}$-linear and the block is commutative with central values; the star and the Hermitian conjugation are **conjugate-linear**, hence conjugations of the block and not automorphisms of it.
 
@@ -124,7 +124,7 @@ $$
 
 *Proof.* The plain product has the unit $e_t$ and the identity $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$; for $\langle\tilde Q\rangle_{\natural}\neq0$ the displayed element is a two-sided inverse, and for $\langle\tilde Q\rangle_{\natural}=0$ with $\tilde Q\neq0$ the equation $\tilde Q\tilde Q_1=e_t$ has no solution, the plain product being the multiplication of an algebra with zero divisors. The statement is a statement about the **plain** product read through the form $\langle\cdot,\cdot\rangle_{\natural}$; it is not an invertibility of the block, which has none.
 
-**Remark (the block owns the form, not the group).** The non-isotropic class is stable under the plain product by the multiplicativity $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and it is **not** stable under the product of the block: $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P,\tilde Q\rangle_{\natural}^2$ can vanish for non-isotropic factors, as at $\vec e_x,\vec e_y$. The invertibility of the plain product is therefore read on the algebraic norm of the block, and the product of the block has no invertibility to read.
+**Remark (the block owns the form, not the group).** The non-isotropic class is stable under the plain product by the multiplicativity $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and it is **not** stable under the product of the block: $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2$ can vanish for non-isotropic factors, as at $\vec e_x,\vec e_y$. The invertibility of the plain product is therefore read on the algebraic norm of the block, and the product of the block has no invertibility to read.
 
 **Remark (the algebraic norm-one slice).** The set $\langle\tilde Q\rangle_{\natural}=1$ is a quadric of complex dimension three, containing the four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$; the three level sets $\langle\cdot\rangle_{\natural}=-1$, $\langle\cdot\rangle_{\natural}=0$, $\langle\cdot\rangle_{\natural}=1$ are the root sets of the block, read in *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* for $\langle\cdot\rangle_{\natural}=-1$ and $\langle\cdot\rangle_{\natural}=1$ and in *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* for $\langle\cdot\rangle_{\natural}=0$. The slice is the analogue of the norm-one group of an associative unital product, and it is not a group here, because the block has no unit to be the identity of it.
 
@@ -132,7 +132,7 @@ $$
 
 ## Summary
 
-The symmetric quaternionic product $\tilde P\star\tilde Q=\mathrm{Sc}(\tilde P\star\tilde Q)e_t$ has no unit and no one-sided unit, hence no inverse and no group of units: the definitions of the unit and the inverse are those of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the block answers them with an absence, the element $e_t$ being a unit of the central line alone.
+The symmetric quaternionic product $\tilde Q_1\star\tilde Q_2=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)e_t$ has no unit and no one-sided unit, hence no inverse and no group of units: the definitions of the unit and the inverse are those of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the block answers them with an absence, the element $e_t$ being a unit of the central line alone.
 
 The one object the block carries is its algebraic norm, the diagonal of its scalar-part form,
 
@@ -140,16 +140,16 @@ $$
 \langle\tilde Q\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},
 $$
 
-complex-valued, indefinite, the coefficient of the block-square and the multiplicative form of the plain product; it is **not multiplicative for the block**, $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P,\tilde Q\rangle_{\natural}^2$. The non-isotropic class $\langle\cdot\rangle_{\natural}\neq0$ is precisely the group of units of the plain product, with the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, so the invertibility of the plain product is read on the algebraic norm of the block; the isotropic class $\langle\cdot\rangle_{\natural}=0$ consists of $0$ together with the square-zero elements. The block owns the form and not the group, and it has no invertibility of its own.
+complex-valued, indefinite, the coefficient of the block-square and the multiplicative form of the plain product; it is **not multiplicative for the block**, $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2$. The non-isotropic class $\langle\cdot\rangle_{\natural}\neq0$ is precisely the group of units of the plain product, with the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, so the invertibility of the plain product is read on the algebraic norm of the block; the isotropic class $\langle\cdot\rangle_{\natural}=0$ consists of $0$ together with the square-zero elements. The block owns the form and not the group, and it has no invertibility of its own.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ | the symmetric quaternionic multiplication |
-| $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\star\tilde Q)=P_tQ_t+(\vec P,\vec Q)$ | the general quaternionic bilinear form, the scalar-part form of the product |
+| $\tilde Q_1\star\tilde Q_2=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}e_t$ | the symmetric quaternionic multiplication |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ | the general quaternionic bilinear form, the scalar-part form of the product |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the algebraic norm of the block, one of the four algebraic norms of the space |
-| $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P,\tilde Q\rangle_{\natural}^2$ | the failure of multiplicativity for the block |
+| $\langle\tilde Q_1\star\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}^2$ | the failure of multiplicativity for the block |
 | $N\neq0$, $\langle\cdot,\cdot\rangle_{\natural}=0$ | the non-isotropic class, the isotropic cone |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | the inverse in the plain product, read on the algebraic norm of the block |
 | ${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$ | the three conjugations; the natural one is an automorphism of the block, the other two are conjugate-linear |

@@ -47,7 +47,7 @@ $$
 where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices and, as in the companion article *Quantum Physics in Biquaternionic Form*, the $i$ on the right is the standard imaginary unit of $\mathbb{C}\subset M_2(\mathbb{C})$ (the image of the scalar imaginary of $\mathbb{B}$). Under this convention $i \vec e_\mu$ corresponds to $\sigma_\mu$, and the quaternion relations $\vec e_\mu \vec e_\nu = \sum_\lambda \epsilon_{\mu\nu\lambda}\vec e_\lambda$ hold on both sides. Two properties of $\mathsf{M}_2$ are used repeatedly:
 
 $$
-\mathsf{M}_2(\tilde{Q}\tilde Q_3) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde Q_3), \qquad
+\mathsf{M}_2(\tilde{Q}\tilde Q_1) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde Q_1), \qquad
 \det\mathsf{M}_2(\tilde{Q}) = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \langle\tilde{Q}\rangle_{\natural},
 $$
 
@@ -90,7 +90,7 @@ $$
 \end{pmatrix}.
 $$
 
-The action is $\mathbb{C}$-linear in $\psi$ and compatible with the algebra product, $\mathsf{M}_2(\tilde{Q})(\mathsf{M}_2(\tilde Q_3)\psi) = \mathsf{M}_2(\tilde{Q}\tilde Q_3)\psi$; this compatibility is the module structure. The algebra is exactly the algebra of all $\mathbb{C}$-linear endomorphisms of $S$: $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$.
+The action is $\mathbb{C}$-linear in $\psi$ and compatible with the algebra product, $\mathsf{M}_2(\tilde{Q})(\mathsf{M}_2(\tilde Q_1)\psi) = \mathsf{M}_2(\tilde{Q}\tilde Q_1)\psi$; this compatibility is the module structure. The algebra is exactly the algebra of all $\mathbb{C}$-linear endomorphisms of $S$: $\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(S)$.
 
 ## The Spinor Module as a Left Ideal
 
@@ -546,8 +546,8 @@ The algebraic origin of the one-sided spinor action and the two-sided four-vecto
 | $\varsigma=(\sigma_3,i\sigma_2,-i\sigma_1)$ | Hermitian triple; $\varsigma^i\varsigma^j=\eta^{ij}-i\varepsilon^{ijk}\eta_{kl}\varsigma^l$ |
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere and the two hyperboloids modelled on the module |
 | $\omega=i\sigma_3^{ij}dz_i\wedge dz_j$ | Symplectic form on the doubled spinor space; $\{v^i,v^j\}=-\varepsilon^{ijk}\eta_{kl}v^l$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

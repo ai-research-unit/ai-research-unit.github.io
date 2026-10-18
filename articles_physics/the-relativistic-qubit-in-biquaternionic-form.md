@@ -148,7 +148,7 @@ $$
 $$
 \tilde{\mathcal L}(u) = \tfrac{i}{2}\,e_t - \tfrac12\,\vec r ,
 $$
-so in the four-vector coordinates $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ its time component is $ct = \tfrac12 > 0$ and its spatial direction is
+so in the four-vector coordinates $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ its time component is $ct = \tfrac12 > 0$ and its spatial direction is
 $$
 \vec u_p = -\vec u_r .
 $$
@@ -309,9 +309,9 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin operators |
 | $\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0}$ | Rotation generators (material, compact) |
 | $\tilde{K}_k = \tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$ | Boost generators (informational) |
-| $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

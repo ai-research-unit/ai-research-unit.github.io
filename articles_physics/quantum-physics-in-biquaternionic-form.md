@@ -651,8 +651,8 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, $\tilde{\Lambda}$ invertible | Conjugation; quantum if $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$) |
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |
 | $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac{1}{4}(|\vec r|^2-1)e_t$ | Deviation from idempotency |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

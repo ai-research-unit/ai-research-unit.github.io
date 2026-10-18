@@ -90,9 +90,9 @@ Three features of this definition are the content of its locality.
 - **It is pointwise, not holomorphic.** The local structure is an identification on the local tangent space at each point. It is not a system of holomorphic coordinates and it does not make spacetime a complex manifold, since by the previous section no such structure exists. In flat spacetime with constant $c$ the pointwise identifications fit together and the structure becomes global; in general they do not.
 - **It requires a scale.** The coordinate $ict$ is a length and $t$ is a time, so the map $t\mapsto ict$ is dimensionally consistent only because $c$ is a speed. Without a scale, the statement "the temporal direction is imaginary" has no metric content. The local complex structure is therefore not a structure that merely *has* a scale; it is a structure *with* a scale, and that scale is $c$.
 
-At each point the local structure induces the quadratic form of the material sector. With $d\tilde{Q}=ic\,dt\,e_t+d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
+At each point the local structure induces the quadratic form of the material sector. With $d\tilde{R}=ic\,dt\,e_t+d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
 $$
-\langle d\tilde{Q}\rangle_{\natural}=(ic\,dt)^2+dx^2+dy^2+dz^2=-c^2\,dt^2+dx^2+dy^2+dz^2 .
+\langle d\tilde{R}\rangle_{\natural}=(ic\,dt)^2+dx^2+dy^2+dz^2=-c^2\,dt^2+dx^2+dy^2+dz^2 .
 $$
 This is the Minkowski interval with the local speed $c$. The signature is produced by the complex structure, and the one number that remains free — the scale of the imaginary time axis — becomes the coefficient $c^2$ in the metric.
 
@@ -191,7 +191,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 | $J^2=-I$ | Abstract complex structure |
 | $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ | Complex structure of the algebra |
-| $\tilde{Q}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position of the material sector |
+| $\tilde{R}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position of the material sector |
 | $g_{\mu\nu}=\mathrm{diag}(-c^2,1,1,1)$ | Local metric induced by the local complex structure |
 | $ds^2=-c^2dt^2+dx^2+dy^2+dz^2$ | Interval; null cone $|d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt|=c$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed, vacuum speed |

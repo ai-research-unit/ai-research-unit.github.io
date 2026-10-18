@@ -2,12 +2,12 @@
 
 ## Introduction
 
-The general plain sesqualgebra is the operation $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ on the biquaternion space, the general plain sesquilinear product read as a multiplication, the operation of *Introduction to the General Plain Sesqualgebra*. This article studies the algebraic norm that the block carries and the invertibility that it does not.
+The general plain sesqualgebra is the operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ on the biquaternion space, the general plain sesquilinear product read as a multiplication, the operation of *Introduction to the General Plain Sesqualgebra*. This article studies the algebraic norm that the block carries and the invertibility that it does not.
 
 A norm is relative to a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*. For the block the form is
 
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr),
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr),
 $$
 
 and its diagonal is
@@ -22,15 +22,15 @@ The invertibility is where the article records an **absence**. The block has a *
 
 **Boundaries.** The product, its class and its placement among the twelve structures are *Introduction to the General Plain Sesqualgebra*; the relative definitions of the unit, the inverse and the group of units are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the four general products with their one-sided units are *Comparison Between the Four General Products*; the one-sided inverse equations and the common zero-divisor set are *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*; the algebraic norm of the plain product is $\langle\cdot\rangle$, a different form, and its theory is *Norm and Invertibility in the Biquaternion Algebra*. The matrix model that carries the block-square is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. Nothing topological and nothing metric appears; the Euclidean norm is the algebraic norm of the block and not a length.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=\sum_\mu\varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon=(1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde Q}=\sum_\mu\overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\sum_\mu\varepsilon_\mu\overline{Q_\mu}e_\mu$. Juxtaposition is the **plain** product $\tilde P\tilde Q$ and $\star$ the block, $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The **algebraic norm of the block** is the diagonal of the scalar-part form,
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=\sum_\mu\varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon=(1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde Q}=\sum_\mu\overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\sum_\mu\varepsilon_\mu\overline{Q_\mu}e_\mu$. Juxtaposition is the **plain** product $\tilde Q_1\tilde Q_2$ and $\star$ the block, $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$. The **algebraic norm of the block** is the diagonal of the scalar-part form,
 
 $$
 \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2},
 $$
 
-with the form $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$.
+with the form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$.
 
-**The results.** The block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ has the right unit $e_t$ and no left unit, hence no two-sided unit and no group of units, and its one-sided inverse equations are decided by a form that is not the algebraic norm. Its algebraic norm is the diagonal of the scalar-part form, $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2}$, real and positive definite of signature $(8,0)$ and Gram matrix the identity, one of the four algebraic norms of the space. It is **not** multiplicative but submultiplicative, $\langle\tilde P\star\tilde Q\rangle_{*}=\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, so $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}-\langle\tilde P\star\tilde Q\rangle_{*}\geq0$, and the absence of a criterion is the definiteness, $\langle\tilde Q\rangle_{*}=0$ exactly at $\tilde Q=0$.
+**The results.** The block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ has the right unit $e_t$ and no left unit, hence no two-sided unit and no group of units, and its one-sided inverse equations are decided by a form that is not the algebraic norm. Its algebraic norm is the diagonal of the scalar-part form, $\langle\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_2\star\tilde Q_2)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_{2\mu}\rvert^{2}$, real and positive definite of signature $(8,0)$ and Gram matrix the identity, one of the four algebraic norms of the space. It is **not** multiplicative but submultiplicative, $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}$, so $\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}-\langle\tilde Q_1\star\tilde Q_2\rangle_{*}\geq0$, and the absence of a criterion is the definiteness, $\langle\tilde Q_2\rangle_{*}=0$ exactly at $\tilde Q_2=0$.
 
 ## The Relative Notions
 
@@ -38,7 +38,7 @@ The word *unit*, the word *inverse* and the word *group of units* name a product
 
 **Definition (recalled).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde Q=\tilde Q$ for every $\tilde Q$, a **right unit** when $\tilde Q\star e=\tilde Q$ for every $\tilde Q$, and a **two-sided unit** when it is both. When a two-sided unit $e$ exists, an element $\tilde Q$ is **invertible of $\star$** when there is a $\tilde Q_1$ with $\tilde Q\star\tilde Q_1=\tilde Q_1\star\tilde Q=e$, the element $\tilde Q_1$ being the **inverse of $\tilde Q$**, and the invertible elements form the **group of units of $\star$**. When no two-sided unit exists, the two-sided inverse is not defined.
 
-Throughout this article the product is the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$.
+Throughout this article the product is the block $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$.
 
 ## The Right Unit and the Absence of the Left One
 
@@ -54,7 +54,7 @@ Consequently $e_t$ is a **right unit** of $\star$, it is **not** a left unit, an
 
 *Proof.* The first display is $\tilde Q\star e_t=\tilde Q e_t^{*}=\tilde Q e_t=\tilde Q$, and the second is $e_t\star\tilde Q=e_t\tilde Q^{*}=\tilde Q^{*}$. The left action of $e_t$ is the involution ${}^{*}$, which is not the identity because $\tilde Q^{*}\neq\tilde Q$ for an element with a nonzero vector part, for instance $\tilde Q=\vec e_x$, whose image is $\vec e_x^{*}=-\vec e_x$. A left unit $e$ would satisfy $e\star\tilde Q=\tilde Q$ for all $\tilde Q$, hence $e\tilde Q^{*}=\tilde Q$; at $\tilde Q=e_t$ this gives $e=e_t$, and then at $\tilde Q=\vec e_x$ it gives $e_t\star \vec e_x=-\vec e_x\neq \vec e_x$, a contradiction. So there is no left unit and no two-sided unit.
 
-**Remark (the reason is the derived-operation shape).** The second display is the identity that fixes the whole block: the row of $e_t$ is the involution, because the product is the derived operation $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ and the involution sits in the second slot. The right unit is the plain unit, unaffected, and the left action is twisted by the involution; the block is therefore **right-unital and not left-unital**, the mirror of the general quaternionic algebra, which is left-unital and not right-unital (*Comparison Between the Four General Products*).
+**Remark (the reason is the derived-operation shape).** The second display is the identity that fixes the whole block: the row of $e_t$ is the involution, because the product is the derived operation $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ and the involution sits in the second slot. The right unit is the plain unit, unaffected, and the left action is twisted by the involution; the block is therefore **right-unital and not left-unital**, the mirror of the general quaternionic algebra, which is left-unital and not right-unital (*Comparison Between the Four General Products*).
 
 **Corollary (no inverse, no group of units).** Since the block has no two-sided unit, no element has a two-sided inverse and the block has no group of units. The two-sided inverse of the block is not defined.
 
@@ -85,7 +85,7 @@ $$
 equivalently $\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}$ for the form
 
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}P_\mu\overline{Q_\mu},
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q_1\star\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_{1\mu}\overline{Q_{2\mu}},
 $$
 
 the general plain sesquilinear form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The equation names the product: the algebraic norm is relative to the product, and the other three rows carry different quadratic maps on the same space.
@@ -105,7 +105,7 @@ which vanishes only at $\tilde Q=0$. The block-square is **not** the plain squar
 - $\langle\tilde Q\rangle_{*}$ is a **real** number, and **non-negative**, vanishing exactly at $\tilde Q=0$: the quadratic form is **positive definite** of signature $(8,0)$ on the realification $\mathbb{B}\cong\mathbb{R}^{8}$.
 - $\langle\cdot,\cdot\rangle_{*}$ is **invariant under the three conjugations**, because each preserves the moduli $\lvert Q_\mu\rvert$.
 - $\langle\cdot,\cdot\rangle_{*}$ is **homogeneous of degree two over the reals**, $\langle\lambda\tilde Q\rangle_{*}=\lvert\lambda\rvert^{2}\langle\tilde Q\rangle_{*}$ for $\lambda\in\mathbb{C}$.
-- Its polarisation is the sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}$, and $\langle\tilde Q,\tilde P\rangle_{*}=\overline{\langle\tilde P,\tilde Q\rangle_{*}}$: the form is Hermitian.
+- Its polarisation is the sesquilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and $\langle\tilde Q_2,\tilde Q_1\rangle_{*}=\overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}}$: the form is Hermitian.
 
 **Proposition (the Gram matrix).** On the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the form has Gram matrix the identity, $\langle e_\mu,e_\nu\rangle_{*}=\delta_{\mu\nu}$, so $\langle e_\mu\rangle_{*}=1$.
 
@@ -113,22 +113,22 @@ which vanishes only at $\tilde Q=0$. The block-square is **not** the plain squar
 
 ## The Failure of Multiplicativity
 
-**The algebraic norm of the block is not multiplicative but submultiplicative: $\langle\tilde P\star\tilde Q\rangle_{*}=\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, so $\langle\tilde P\star\tilde Q\rangle_{*}=\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}$ exactly on linearly dependent pairs, and the defect $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}-\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq0$.**
+**The algebraic norm of the block is not multiplicative but submultiplicative: $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}$, so $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}$ exactly on linearly dependent pairs, and the defect $\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}-\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}\geq0$.**
 
-**Theorem (the algebraic norm of a product).** For all $\tilde P,\tilde Q$,
-
-$$
-\langle\tilde P\star\tilde Q\rangle_{*}=\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2},
-$$
-
-so that $\langle\tilde P\star\tilde Q\rangle_{*}=\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}$ exactly when $\tilde P$ and $\tilde Q$ are linearly dependent over $\mathbb{C}$.
-
-*Proof.* The form is computed on the block-square, $\mathrm{Sc}(\tilde P\star\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}$; the square $\tilde P\star\tilde Q$ is too, so polarising the diagonal $\langle\cdot,\cdot\rangle_{*}$ gives $\langle\tilde P\star\tilde Q\rangle_{*}=\langle\tilde P\tilde Q^{*}\rangle_{*}$ with the explicit value $\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$. Indeed $\tilde P\star\tilde Q$ is a single element and $\langle\cdot,\cdot\rangle_{*}$ of an element of the form $\lambda\tilde Q_1$ is $\lvert\lambda\rvert^{2}\langle\tilde Q_1\rangle_{*}$; the identity $\mathrm{Sc}(\tilde P\tilde Q^{*})=\langle\tilde P,\tilde Q\rangle_{*}$ closes the computation. For the equality case, the form $t\mapsto \langle\tilde P-t\tilde Q\rangle_{*}\geq0$ has discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}-\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, non-negative, vanishing exactly at proportionality.
-
-**Corollary (the defect is the discriminant).** For all $\tilde P,\tilde Q$,
+**Theorem (the algebraic norm of a product).** For all $\tilde Q_1,\tilde Q_2$,
 
 $$
-\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}-\langle\tilde P\star\tilde Q\rangle_{*}=\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}-\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq0,
+\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2},
+$$
+
+so that $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}$ exactly when $\tilde Q_1$ and $\tilde Q_2$ are linearly dependent over $\mathbb{C}$.
+
+*Proof.* The form is computed on the block-square, $\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}$; the square $\tilde Q_1\star\tilde Q_2$ is too, so polarising the diagonal $\langle\cdot,\cdot\rangle_{*}$ gives $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\langle\tilde Q_1\tilde Q_2^{*}\rangle_{*}$ with the explicit value $\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}$. Indeed $\tilde Q_1\star\tilde Q_2$ is a single element and $\langle\cdot,\cdot\rangle_{*}$ of an element of the form $\lambda\tilde Q_1$ is $\lvert\lambda\rvert^{2}\langle\tilde Q_1\rangle_{*}$; the identity $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ closes the computation. For the equality case, the form $t\mapsto \langle\tilde Q_1-t\tilde Q_2\rangle_{*}\geq0$ has discriminant $\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}-\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}$, non-negative, vanishing exactly at proportionality.
+
+**Corollary (the defect is the discriminant).** For all $\tilde Q_1,\tilde Q_2$,
+
+$$
+\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}-\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}-\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}\geq0,
 $$
 
 with equality exactly on linearly dependent pairs. The algebraic norm is **submultiplicative**.
@@ -137,21 +137,21 @@ with equality exactly on linearly dependent pairs. The algebraic norm is **submu
 
 ## The Polarisation of the Algebraic Norm
 
-**The polar form of the algebraic norm is twice the real part of the sesquilinear form, $\langle\tilde P+\tilde Q\rangle_{*}-\langle\tilde P\rangle_{*}-\langle\tilde Q\rangle_{*}=2\Re \langle\tilde P,\tilde Q\rangle_{*}$, and the full Hermitian form is recovered by $\langle\tilde P,\tilde Q\rangle_{*}=\tfrac{1}{4}\sum_{k=0}^{3}i^{k}\langle\tilde P+i^{k}\tilde Q\rangle_{*}$.**
+**The polar form of the algebraic norm is twice the real part of the sesquilinear form, $\langle\tilde Q_1+\tilde Q_2\rangle_{*}-\langle\tilde Q_1\rangle_{*}-\langle\tilde Q_2\rangle_{*}=2\Re \langle\tilde Q_1,\tilde Q_2\rangle_{*}$, and the full Hermitian form is recovered by $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\tfrac{1}{4}\sum_{k=0}^{3}i^{k}\langle\tilde Q_1+i^{k}\tilde Q_2\rangle_{*}$.**
 
 **Theorem (the polarisation).** The polar form of the algebraic norm is twice the real part of the sesquilinear form,
 
 $$
-\langle\tilde P+\tilde Q\rangle_{*}-\langle\tilde P\rangle_{*}-\langle\tilde Q\rangle_{*}=2\Re \langle\tilde P,\tilde Q\rangle_{*},
+\langle\tilde Q_1+\tilde Q_2\rangle_{*}-\langle\tilde Q_1\rangle_{*}-\langle\tilde Q_2\rangle_{*}=2\Re \langle\tilde Q_1,\tilde Q_2\rangle_{*},
 $$
 
 and the full Hermitian form is recovered by
 
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\tfrac{1}{4}\sum_{k=0}^{3}i^{k}\,\langle\tilde P+i^{k}\tilde Q\rangle_{*}.
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\tfrac{1}{4}\sum_{k=0}^{3}i^{k}\,\langle\tilde Q_1+i^{k}\tilde Q_2\rangle_{*}.
 $$
 
-*Proof.* The first display expands $\langle\tilde P+\tilde Q\rangle_{*}=\langle\tilde P\rangle_{*}+\langle\tilde Q\rangle_{*}+\langle\tilde P,\tilde Q\rangle_{*}+\overline{\langle\tilde P,\tilde Q\rangle_{*}}$. The second is the four-term Hermitian polarisation, the coefficients being the fourth roots of unity.
+*Proof.* The first display expands $\langle\tilde Q_1+\tilde Q_2\rangle_{*}=\langle\tilde Q_1\rangle_{*}+\langle\tilde Q_2\rangle_{*}+\langle\tilde Q_1,\tilde Q_2\rangle_{*}+\overline{\langle\tilde Q_1,\tilde Q_2\rangle_{*}}$. The second is the four-term Hermitian polarisation, the coefficients being the fourth roots of unity.
 
 **Remark (the polarisation is the Hermitian one).** The four coefficients $1,i,-1,-i$ are the fourth roots of unity, not the pair $\pm1$ of the symmetric polarisation; the first display extracts the real part, because the diagonal of a Hermitian form is real; the imaginary part is carried by the four-term display.
 
@@ -178,7 +178,7 @@ $$
 | clause | general plain algebra | general plain sesqualgebra |
 |---|---|---|
 | algebraic norm | $\langle\tilde Q\rangle=\mathrm{Sc}(\tilde Q\tilde Q)=Q_t^2-(\vec Q,\vec Q)$, complex, indefinite | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, real, definite |
-| multiplicativity of the algebraic norm | $\langle\cdot\rangle$ not multiplicative | $\langle\cdot\rangle_{*}$ submultiplicative, $\langle\tilde P\star\tilde Q\rangle_{*}=\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$ |
+| multiplicativity of the algebraic norm | $\langle\cdot\rangle$ not multiplicative | $\langle\cdot\rangle_{*}$ submultiplicative, $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}$ |
 | isotropic vectors | the complex cone of $B$ | none but the origin |
 | unit | $e_t$, two-sided | $e_t$ right unit only, no left unit |
 | two-sided invertible elements | defined | none |
@@ -188,25 +188,25 @@ The two products carry **different** algebraic norms, $\langle\cdot\rangle$ and 
 
 ## Summary
 
-The general plain sesqualgebra $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ has a **right unit** $e_t$, because $\tilde Q\star e_t=\tilde Q$, and **no left unit**, because the left action of $e_t$ is the involution, $e_t\star\tilde Q=\tilde Q^{*}$; consequently it has **no two-sided unit** and **no group of units** in the ordinary sense. The one-sided inverse equations exist, and their solvability is decided by a quadratic form that is **not** the algebraic norm of the block and is not studied here. The block carries one algebraic norm, the diagonal of its scalar-part form,
+The general plain sesqualgebra $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ has a **right unit** $e_t$, because $\tilde Q_2\star e_t=\tilde Q_2$, and **no left unit**, because the left action of $e_t$ is the involution, $e_t\star\tilde Q_2=\tilde Q_2^{*}$; consequently it has **no two-sided unit** and **no group of units** in the ordinary sense. The one-sided inverse equations exist, and their solvability is decided by a quadratic form that is **not** the algebraic norm of the block and is not studied here. The block carries one algebraic norm, the diagonal of its scalar-part form,
 
 $$
 \langle\tilde Q\rangle_{*}=\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2},
 $$
 
-real, positive definite of signature $(8,0)$, the general plain sesquilinear algebraic norm, one of the four algebraic norms of the space and not one of the other three. It is **not multiplicative**: $\langle\tilde P\star\tilde Q\rangle_{*}=\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, submultiplicative, the defect $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}-\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq0$ vanishing exactly on linearly dependent pairs; it polarises to the Hermitian form, $\Re H$ at the symmetric step and $\langle\cdot,\cdot\rangle_{*}$ at the four-term display. The **absence of a criterion** is the definiteness, $\langle\tilde Q\rangle_{*}=0\Leftrightarrow\tilde Q=0$: the block has no nonzero isotropic vector and no two-sided invertible element, and its algebraic norm does not decide the invertibility that its one-sided equations leave open.
+real, positive definite of signature $(8,0)$, the general plain sesquilinear algebraic norm, one of the four algebraic norms of the space and not one of the other three. It is **not multiplicative**: $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}$, submultiplicative, the defect $\langle\tilde Q_1\rangle_{*}\langle\tilde Q_2\rangle_{*}-\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}\geq0$ vanishing exactly on linearly dependent pairs; it polarises to the Hermitian form, $\Re H$ at the symmetric step and $\langle\cdot,\cdot\rangle_{*}$ at the four-term display. The **absence of a criterion** is the definiteness, $\langle\tilde Q_2\rangle_{*}=0\Leftrightarrow\tilde Q_2=0$: the block has no nonzero isotropic vector and no two-sided invertible element, and its algebraic norm does not decide the invertibility that its one-sided equations leave open.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the product of the block |
+| $\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$ | the product of the block |
 | $e_t$ | the right unit; $e_t\star\tilde Q=\tilde Q^{*}$ is the involution |
-| $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu P_\mu\overline{Q_\mu}$ | the general plain sesquilinear form, the scalar-part form of the product |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the general plain sesquilinear form, the scalar-part form of the product |
 | $\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, one of the four algebraic norms of the space |
 | $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ | the block-square, Hermitian, scalar part $\langle\tilde Q\rangle_{*}$ |
-| $\langle\tilde P\star\tilde Q\rangle_{*}=\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$ | the algebraic norm of a product |
-| $\langle\tilde P,\tilde Q\rangle_{*}=\tfrac14\sum_k i^{k}\langle\tilde P+i^{k}\tilde Q\rangle_{*}$ | the Hermitian polarisation of the algebraic norm |
+| $\langle\tilde Q_1\star\tilde Q_2\rangle_{*}=\lvert \langle\tilde Q_1,\tilde Q_2\rangle_{*}\rvert^{2}$ | the algebraic norm of a product |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\tfrac14\sum_k i^{k}\langle\tilde Q_1+i^{k}\tilde Q_2\rangle_{*}$ | the Hermitian polarisation of the algebraic norm |
 | $\langle\tilde Q\rangle_{*}=0\Leftrightarrow\tilde Q=0$ | the definiteness, the substitute for the criterion |
 | no left unit, no two-sided unit, no group of units | the absence carried by the block |
 
@@ -219,5 +219,5 @@ real, positive definite of signature $(8,0)$, the general plain sesquilinear alg
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the one-sided unit table of the four products.
 - *Norm and Invertibility in the Biquaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.md`), for the algebraic norm $\langle\cdot\rangle$ of the plain product, which is not the form $\langle\cdot,\cdot\rangle_{*}$ of this article.
 - *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the one-sided inverse equations and the common zero-divisor set.
-- *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the matrix model $\mathsf{M}_2(\tilde P\star\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ in which the block-square is positive semidefinite.
+- *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the matrix model $\mathsf{M}_2(\tilde Q_1\star\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2)^{\dagger}$ in which the block-square is positive semidefinite.
 - *The Squares and the Positive Cone of the Biquaternioid Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternioid-sesqualgebra.md`), for the image of the block-square and the cone it generates in the Hermitian subspace.

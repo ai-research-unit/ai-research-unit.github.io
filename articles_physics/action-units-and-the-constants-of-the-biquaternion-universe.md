@@ -20,7 +20,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2 ,
 $$
 
-the configuration–momentum product of §*The Product $\tilde q\tilde p$ in the Algebra* is the first, and the sesquilinear pairings belong to the informational articles. The trace is normalized by $\mathrm{Tr}(e_t)=2$, and the trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)=2\langle\tilde{P},\tilde{H}\rangle$. The material coordinate is written in the length coordinate $\tilde Q=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, equivalently $\tilde\nabla=c^{-1}e_t\partial/\partial t+\nabla$, and the series d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
+the configuration–momentum product of §*The Product $\tilde q\tilde p$ in the Algebra* is the first, and the sesquilinear pairings belong to the informational articles. The trace is normalized by $\mathrm{Tr}(e_t)=2$, and the trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)=2\langle\tilde{P},\tilde{H}\rangle$. The material coordinate is written in the length coordinate $\tilde R=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, equivalently $\tilde\nabla=c^{-1}e_t\partial/\partial t+\nabla$, and the series d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
 
 The companion articles used below are:
 
@@ -55,7 +55,7 @@ $$
 (\lambda\tilde{A})(\lambda\tilde{Q}_1)=\lambda^2\tilde{A}\tilde{Q}_1\neq\lambda(\tilde{A}\tilde{Q}_1).
 $$
 
-This is worth stating carefully, because the algebraic fact has a **physical interpretation**. The multiplication of the algebra is not invariant under a rescaling of its elements — the product of two rescaled elements acquires a factor $\lambda^2$ — so the scale of an element of the algebra is not a redundancy of the algebra. It is data the algebra does not contain, and which must therefore be supplied by the identification that says what the element represents. When the framework says that $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ *is* a displacement in metres, it is supplying that data. Nothing in the algebra did it.
+This is worth stating carefully, because the algebraic fact has a **physical interpretation**. The multiplication of the algebra is not invariant under a rescaling of its elements — the product of two rescaled elements acquires a factor $\lambda^2$ — so the scale of an element of the algebra is not a redundancy of the algebra. It is data the algebra does not contain, and which must therefore be supplied by the identification that says what the element represents. When the framework says that $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ *is* a displacement in metres, it is supplying that data. Nothing in the algebra did it.
 
 There is an exception worth noting, because it is the only place where the algebra speaks about a scale at all. An element's biquaternion norm is homogeneous of degree two under the rescaling, $\langle\lambda\tilde{Q}\rangle_{\natural}=\lambda^2\langle\tilde{Q}\rangle_{\natural}$, so a *ratio* of biquaternion norms is rescaling-invariant. The framework therefore has access to ratios and to pure numbers, and to nothing dimensionful. This is the algebraic root of the dichotomy that organises the whole article and is stated flatly in the summary: **the framework's outputs are pure numbers; its inputs are dimensionful.**
 
@@ -359,7 +359,7 @@ The framework's guideline follows from the dichotomy: a dimensionful constant is
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (real scalar, imaginary vector) and material (imaginary scalar, real vector) sectors |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | Centre; real-quaternion subspace |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^2$ | Biquaternion norm, the scalar form of the quaternionic product: a sum of four squares |
-| $\tilde{Q}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate in the length coordinate; equivalently $\tilde Q=it\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with the metric coefficient $g_{tt}=-c^2$ |
+| $\tilde{R}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate in the length coordinate; equivalently $\tilde R=it\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with the metric coefficient $g_{tt}=-c^2$ |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla=c^{-1}e_t\partial/\partial t+\nabla$ | Biquaternionic gradient; the two writings of the temporal coordinate |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$ | d'Alembertian |
 | $\mu=mc/\hbar$ | Inverse Compton length; the mass parameter as an inverse length |
@@ -380,7 +380,7 @@ The framework's guideline follows from the dichotomy: a dimensionful constant is
 | $h=2\pi\hbar$ | Planck constant; the quantum of action, where $\hbar$ is the quantum of angular momentum |
 | $m$, $e$, $\alpha=e^2/(4\pi\epsilon_0\hbar c)$ | Imported mass, charge and dimensionless coupling; $e$ is a defining constant of the SI, $m$ and $\alpha$ are measured |
 | $k_B$, $G$ | Imported: energy–temperature, and stress–energy–curvature; $k_B$ is a defining constant of the SI, $G$ is measured |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

@@ -273,7 +273,7 @@ T^{\mu\nu} = \frac{1}{\mu}\left(F^{\mu\alpha}{F^\nu}_\alpha - \frac{1}{4}\,\eta^
 $$
 reproduces the component table of Problem 2 up to the medium factors, and identify the normalization of the bracketed expression in terms of $W$ and $\sigma_{\nu\mu}$. This shows that the bigeneral quaternionic bilinear and the standard tensor formula are the same object.
 
-**3. Angular momentum.** Define the angular-momentum density $M^{\mu\nu\lambda} = Q^\nu T^{\mu\lambda} - Q^\lambda T^{\mu\nu}$, with $\tilde{Q}$ the four-position in $\mathbb{M}_-$. Show that $\partial/\partial Q_\mu M^{\mu\nu\lambda} = 0$ for a source-free field, and identify the three spatial components as the field angular momentum and the three mixed components as the boost (centre-of-energy) densities. Does the bigeneral quaternionic bilinear simplify $M$, or is the position biquaternion $\tilde{Q}$ the only extra ingredient?
+**3. Angular momentum.** Define the angular-momentum density $M^{\mu\nu\lambda} = Q^\nu T^{\mu\lambda} - Q^\lambda T^{\mu\nu}$, with $\tilde{R}$ the four-position in $\mathbb{M}_-$. Show that $\partial/\partial Q_\mu M^{\mu\nu\lambda} = 0$ for a source-free field, and identify the three spatial components as the field angular momentum and the three mixed components as the boost (centre-of-energy) densities. Does the bigeneral quaternionic bilinear simplify $M$, or is the position biquaternion $\tilde{R}$ the only extra ingredient?
 
 **4. The medium and the Abraham–Minkowski question.** The tensor constructed here is the symmetric tensor with $T^{tt} = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ and $\vec S = \vec E\times\vec H$. In a dispersive or moving medium the physically correct momentum density is a matter of the Abraham–Minkowski controversy, and the symmetric tensor used here is only one of the candidates. Determine which choice makes $\partial/\partial Q_\mu T^{\mu\nu} = -f^\nu$ hold with the least additional force term, and whether the bigeneral quaternionic bilinear of Problem 2 can be written with a different field normalization to produce the Minkowski tensor instead. This is an open question, not a computation with a standard answer.
 
@@ -336,8 +336,8 @@ The exercise also settles the form of the four-component *biquaternionic energy�
 | $f^\nu = (\frac{1}{c}\vec E\cdot\vec J,\,\rho\vec E+\vec J\times\vec B)$ | Four-force density (source) |
 | $\langle\tilde F\rangle_{\natural} = \langle\tilde F,\tilde F\rangle_{\natural} = \tilde F\tilde F^{\natural}$ | Biquaternion norm (vanishes for a null field) |
 | $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ | Trace formula |
-| $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
-| $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 
 ## Further Reading
 

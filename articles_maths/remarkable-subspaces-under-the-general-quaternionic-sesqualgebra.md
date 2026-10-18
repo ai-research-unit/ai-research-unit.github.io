@@ -112,7 +112,7 @@ On the remarkable real subspaces the general quaternionic sesquilinear form carr
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the general quaternionic sesquilinear form |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$ | the general quaternionic sesquilinear form |
 | $(2,0),(0,6),(1,3)$ | the signatures of the restrictions |
 | $\operatorname{diag}(1,1)$, $-\mathrm{I}_6$, $\mathrm{E}$ | the restriction matrices on the centre, the vector subspace and the four four-dimensional subspaces |
 | $\mathbb{C}_{\mathbb{B}}\perp^{+}\mathrm{Vect}(\mathbb{B})$ | the fundamental decomposition $(2,0)+(0,6)$ |
