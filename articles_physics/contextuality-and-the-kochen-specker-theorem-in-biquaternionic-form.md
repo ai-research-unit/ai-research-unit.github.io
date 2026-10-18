@@ -55,7 +55,7 @@ for a fixed hidden direction $\vec u_\lambda$, with a convention on the measure-
 
 The conclusion for the framework is structural: the obstruction cannot be exhibited by the native unit alone. It requires a composite, or a system of dimension at least three, and the smallest composite the framework supplies is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, whose module has dimension four.
 
-**Why the single-qubit model cannot be extended.** The reason is the scarcity of contexts. Two rank-one projectors of a qubit lie in a common context only if they are orthogonal, and for a qubit orthogonality of $\tilde\Pi(\vec u_z)$ and $\tilde\Pi(\vec u_4)$ means the directions are antipodal. Consequently every context of the qubit is the pair $\{\tilde\Pi_1(\vec u_z),\tilde\Pi_2(\vec u_z)\}$ for a single direction, and the value assignment of Bell is consistent on each such context by construction. Noncontextuality is then trivially satisfied, because no observable belongs to two distinct contexts: an observable's ray determines its context uniquely. In dimension $d\geq3$ this fails — a rank-one projector belongs to a continuum of orthogonal resolutions, and those resolutions impose incompatible constraints — and it is the sharing of observables among many contexts that drives the obstruction. In the two-qubit algebra the sharing is realized by the magic square: each of the nine entries belongs to one row context and one column context simultaneously, and it is precisely that double membership — for instance $e_t\otimesec U_z$ sitting in row $2$ and column $1$ at once — that the parity argument exploits.
+**Why the single-qubit model cannot be extended.** The reason is the scarcity of contexts. Two rank-one projectors of a qubit lie in a common context only if they are orthogonal, and for a qubit orthogonality of $\tilde\Pi(\vec u_z)$ and $\tilde\Pi(\vec u_4)$ means the directions are antipodal. Consequently every context of the qubit is the pair $\{\tilde\Pi_1(\vec u_z),\tilde\Pi_2(\vec u_z)\}$ for a single direction, and the value assignment of Bell is consistent on each such context by construction. Noncontextuality is then trivially satisfied, because no observable belongs to two distinct contexts: an observable's ray determines its context uniquely. In dimension $d\geq3$ this fails — a rank-one projector belongs to a continuum of orthogonal resolutions, and those resolutions impose incompatible constraints — and it is the sharing of observables among many contexts that drives the obstruction. In the two-qubit algebra the sharing is realized by the magic square: each of the nine entries belongs to one row context and one column context simultaneously, and it is precisely that double membership — for instance $e_t\otimes\vec U_z$ sitting in row $2$ and column $1$ at once — that the parity argument exploits.
 
 ## The Kochen–Specker Theorem
 
@@ -82,14 +82,14 @@ The two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ is isomorphic to $M_4(\mathb
 On a single qubit introduce the three Hermitian involutions
 
 $$
-ec U_x= i\vec e_x, \qquad ec U_y= i\vec e_y, \qquad ec U_z= i\vec e_z,
+\vec U_x= i\vec e_x, \qquad \vec U_y= i\vec e_y, \qquad \vec U_z= i\vec e_z,
 $$
 
-each of which satisfies $ec U_x^2 = ec U_y^2 = ec U_z^2 = e_t$ and which multiply as the Pauli matrices do up to central phases, for example
+each of which satisfies $\vec U_x^2 = \vec U_y^2 = \vec U_z^2 = e_t$ and which multiply as the Pauli matrices do up to central phases, for example
 
 $$
-ec U_xec U_z= (i\vec e_x)(i\vec e_z) = -\vec e_x\vec e_z = \vec e_y = -iec U_y, \qquad
-ec U_zec U_x= -\vec e_y = iec U_y.
+\vec U_x\vec U_z= (i\vec e_x)(i\vec e_z) = -\vec e_x\vec e_z = \vec e_y = -i\vec U_y, \qquad
+\vec U_z\vec U_x= -\vec e_y = i\vec U_y.
 $$
 
 On the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, tensor these with $e_t$ and with one another to form the nine elements
@@ -97,9 +97,9 @@ On the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, tensor these with $e_t$ 
 
 |  |  |  |
 |---|---|---|
-| $ec U_x\otimes e_t$ | $e_t\otimesec U_x$ | $ec U_x\otimesec U_x$ |
-| $e_t\otimesec U_z$ | $ec U_z\otimes e_t$ | $ec U_z\otimesec U_z$ |
-| $ec U_x\otimesec U_z$ | $ec U_z\otimesec U_x$ | $ec U_y\otimesec U_y$ |
+| $\vec U_x\otimes e_t$ | $e_t\otimes\vec U_x$ | $\vec U_x\otimes\vec U_x$ |
+| $e_t\otimes\vec U_z$ | $\vec U_z\otimes e_t$ | $\vec U_z\otimes\vec U_z$ |
+| $\vec U_x\otimes\vec U_z$ | $\vec U_z\otimes\vec U_x$ | $\vec U_y\otimes\vec U_y$ |
 
 
 Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\{\pm1\}$; this is why the array is called a **magic square**. The entries are the framework's transcription of the standard Mermin–Peres observables built from $\sigma_1,\sigma_2,\sigma_3$ and the identity, using the identification $\sigma_k\leftrightarrow i\vec e_k$.
@@ -111,9 +111,9 @@ Within each row and each column the three entries commute, so their product is u
 
 |  | $\text{column }1$ | $\text{column }2$ | $\text{column }3$ | $\text{row product}$ |
 |---|---|---|---|---|
-| **row 1** | $ec U_x\otimes e_t$ | $e_t\otimesec U_x$ | $ec U_x\otimesec U_x$ | $\prod = e_t\otimes e_t$ |
-| **row 2** | $e_t\otimesec U_z$ | $ec U_z\otimes e_t$ | $ec U_z\otimesec U_z$ | $\prod = e_t\otimes e_t$ |
-| **row 3** | $ec U_x\otimesec U_z$ | $ec U_z\otimesec U_x$ | $ec U_y\otimesec U_y$ | $\prod = e_t\otimes e_t$ |
+| **row 1** | $\vec U_x\otimes e_t$ | $e_t\otimes\vec U_x$ | $\vec U_x\otimes\vec U_x$ | $\prod = e_t\otimes e_t$ |
+| **row 2** | $e_t\otimes\vec U_z$ | $\vec U_z\otimes e_t$ | $\vec U_z\otimes\vec U_z$ | $\prod = e_t\otimes e_t$ |
+| **row 3** | $\vec U_x\otimes\vec U_z$ | $\vec U_z\otimes\vec U_x$ | $\vec U_y\otimes\vec U_y$ | $\prod = e_t\otimes e_t$ |
 | **column product** | $\prod = e_t\otimes e_t$ | $\prod = e_t\otimes e_t$ | $\prod = -e_t\otimes e_t$ |  |
 
 
@@ -127,7 +127,7 @@ The value assignments of the parity argument use multiplicativity within each ro
 
 *Proof.* Multiplying the eigenvalue equations gives $\tilde{A}_1\cdots\tilde{A}_m\tilde{Q}_\alpha = a^{(\alpha)}_1\cdots a^{(\alpha)}_m\tilde{Q}_\alpha$.
 
-For the magic square each generator has spectrum $\{\pm1\}$, so on each joint eigen-idempotent the product relation reads as a product of signs. Applying the lemma to row $1$, whose joint idempotents are built from $\tilde\Pi_{1,2}(\vec u_{e,1})$ on both factors, the identity $ec U_x\otimesec U_x= (ec U_x\otimes e_t)(e_t\otimesec U_x)$ forces the third entry's value to be the product of the first two on every joint eigen-idempotent, so the row product relation holds automatically. The same argument applies to each row and column. The parity contradiction then needs only the two evaluations of the product of all nine values, one from the rows and one from the columns.
+For the magic square each generator has spectrum $\{\pm1\}$, so on each joint eigen-idempotent the product relation reads as a product of signs. Applying the lemma to row $1$, whose joint idempotents are built from $\tilde\Pi_{1,2}(\vec u_{e,1})$ on both factors, the identity $\vec U_x\otimes\vec U_x= (\vec U_x\otimes e_t)(e_t\otimes\vec U_x)$ forces the third entry's value to be the product of the first two on every joint eigen-idempotent, so the row product relation holds automatically. The same argument applies to each row and column. The parity contradiction then needs only the two evaluations of the product of all nine values, one from the rows and one from the columns.
 
 ### The parity contradiction
 
@@ -233,7 +233,7 @@ The two are related but not identical. The magic square is the stronger statemen
 
 A context is a maximal set of mutually commuting Hermitian elements of $\mathbb{M}_+$, realized by a complete family of orthogonal idempotents. A noncontextual value assignment is an algebra homomorphism on each context, with a value for each observable independent of which context contains it. The **Kochen–Specker theorem** states that for a module of complex dimension at least three no such assignment exists; the hypothesis is necessary, and the native qubit, of dimension two, admits a noncontextual model.
 
-The smallest arena in which the obstruction appears in the framework is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module has dimension four. There the **Mermin–Peres magic square** gives the obstruction explicitly: nine Hermitian involutions $ec U_x=i\vec e_x,ec U_y=i\vec e_y,ec U_z=i\vec e_z$ and $e_t$ arranged in a $3\times3$ array, every row and column a commuting set, with every row product equal to $+e_t\otimes e_t$, the first two column products equal to $+e_t\otimes e_t$, and the third column product equal to $-e_t\otimes e_t$. Multiplying the row equations and the column equations evaluates the product of all nine entries as $+1$ and as $-1$ respectively, so no noncontextual $\{\pm1\}$ assignment exists.
+The smallest arena in which the obstruction appears in the framework is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module has dimension four. There the **Mermin–Peres magic square** gives the obstruction explicitly: nine Hermitian involutions $\vec U_x=i\vec e_x,\vec U_y=i\vec e_y,\vec U_z=i\vec e_z$ and $e_t$ arranged in a $3\times3$ array, every row and column a commuting set, with every row product equal to $+e_t\otimes e_t$, the first two column products equal to $+e_t\otimes e_t$, and the third column product equal to $-e_t\otimes e_t$. Multiplying the row equations and the column equations evaluates the product of all nine entries as $+1$ and as $-1$ respectively, so no noncontextual $\{\pm1\}$ assignment exists.
 
 State-independent contextuality (the Kochen–Specker theorem and the magic square) is a property of the algebra $\mathbb{M}_+^{\otimes2}$ alone; state-dependent contextuality (the Bell and CHSH inequalities) is a property of a state paired with a context and is expressed in the framework by the trace pairing. The framework transcribes both; it does not change their predictions.
 
@@ -249,7 +249,7 @@ State-independent contextuality (the Kochen–Specker theorem and the magic squa
 | $\tilde\Pi_a$, $\sum_a\tilde\Pi_a = e_t$ | Idempotent basis of a context |
 | $v(\cdot)$ | Noncontextual value assignment |
 | $v(\tilde{A}\tilde{Q}_1) = v(\tilde{A})v(\tilde{Q}_1)$ on a context | Multiplicativity |
-| $ec U_x=i\vec e_x,\ ec U_y=i\vec e_y,\ ec U_z=i\vec e_z$ | Hermitian involutions ($\sigma_1,\sigma_2,\sigma_3$) |
+| $\vec U_x=i\vec e_x,\ \vec U_y=i\vec e_y,\ \vec U_z=i\vec e_z$ | Hermitian involutions ($\sigma_1,\sigma_2,\sigma_3$) |
 | $S_1=-\vec e_x\otimes \vec e_x,\ S_3=-\vec e_z\otimes \vec e_z$ | Context generators (Bell stabilizers) |
 | $P_\epsilon$ | Bell idempotents (joint spectral basis) |
 | Magic square | $3\times3$ array of commuting involutions |
