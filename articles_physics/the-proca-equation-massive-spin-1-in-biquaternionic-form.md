@@ -270,9 +270,9 @@ The source adds one further statement, which the corpus records without re-deriv
 
 ## The Lanczos Parent and the Two Reversal Combinations
 
-The Proca equation is one of four relativistic field equations that descend from a **single** first-order system. Lanczos's coupled system $\tilde{\nabla}\tilde{A}=m\tilde{B}$, $\tilde{\nabla}\tilde{B}=m\tilde{A}$ sits beneath the classical layer, and its descendants are reached by four different algebraic operations:
+The Proca equation is one of four relativistic field equations that descend from a **single** first-order system. Lanczos's coupled system $\tilde{\nabla}\tilde Q_1=m\tilde Q_2$, $\tilde{\nabla}\tilde Q_2=m\tilde Q_1$ sits beneath the classical layer, and its descendants are reached by four different algebraic operations:
 
-- the **Dirac** equation, by the idempotent superposition $D=\tilde{A}\sigma+\tilde{B}^{*}\bar{\sigma}$ of the standard-model agenda article, whose combined form is strictly equivalent to Dirac's equation;
+- the **Dirac** equation, by the idempotent superposition $D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}$ of the standard-model agenda article, whose combined form is strictly equivalent to Dirac's equation;
 - the **Proca** equation, by combining the second Lanczos equation with its **order reverse** (its ordinal conjugate), the potential being ordinal-invariant, $\tilde{A}=\tilde{A}^{\sim}$;
 - the **Maxwell** equation, as the massless limit of Proca;
 - the **Klein–Gordon** equation, as the spin-0 member, by restricting the pair to scalar fields (see *The Klein–Gordon Equation in Biquaternionic Form*: one-dimensional in its first-order form, the four-dimensional free scalar equation after the elimination).

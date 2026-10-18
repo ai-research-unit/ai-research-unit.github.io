@@ -464,7 +464,7 @@ not identify them, while the mass fixes the scale of both.
 
 **The value can be a field.** *The Petiau System and the Quantisation of Mass in Biquaternionic Form*
 generalises the root problem in a way that article states plainly. The Lanczos feedback
-$\tilde\nabla\tilde A=m\tilde B$, $\tilde\nabla\tilde B=m\tilde A$ turns a massive field equation into a
+$\tilde\nabla\tilde Q_1=m\tilde Q_2$, $\tilde\nabla\tilde Q_2=m\tilde Q_1$ turns a massive field equation into a
 self-sourcing pair, and promoting the scalar $m$ to a biquaternion field $\tilde E$ makes the second-order
 equations **eigenvalue equations for the mass**, whose two eigenvalues are those of $\tilde E\tilde E^{*}$.
 The radicand of this companion's root problem is therefore not always a fixed central number: in this line it

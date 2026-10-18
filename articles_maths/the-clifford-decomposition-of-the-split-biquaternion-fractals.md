@@ -8,7 +8,7 @@ The Clifford description of the algebra and of $\mathrm{Cl}(3)$ is *Complex Spli
 
 The article owns the parity grading of the algebra, the even–odd formula of the quadratic family, the invariance of the even part, the two decompositions and their Hadamard relation, the identification of the quaternion fractal with the diagonal slice, and the symmetry by the volume element.
 
-**Standing convention.** $\mathbb{H}_{\mathbb{D}}=\mathrm{Cl}(0,3)$ with generators $E_\mu=j\vec e_\mu$ satisfying $E_\mu^2=-1$ and $E_\mu E_\nu=-E_\nu E_\mu$; the scalar is $e_t$, the bivectors are $\vec e_x,\vec e_y,\vec e_z$ and the trivector is $\omega=E_1E_2E_3=-j$. The even part is $\mathrm{Cl}^0=\operatorname{span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}\cong\mathbb{H}$ and the odd part is $\mathrm{Cl}^1=\operatorname{span}\{je_t,j\vec e_x,j\vec e_y,j\vec e_z\}=j\mathbb{H}$. A split biquaternion is written $\tilde Q=\tilde q+j\tilde q'$ with $\tilde q,\tilde q'\in\mathbb{H}$, so that $\tilde q$ is the even part and $j\tilde q'$ the odd part.
+**Standing convention.** $\mathbb{H}_{\mathbb{D}}=\mathrm{Cl}(0,3)$ with generators $E_\mu=j\vec e_\mu$ satisfying $E_\mu^2=-1$ and $E_\mu E_\nu=-E_\nu E_\mu$; the scalar is $e_t$, the bivectors are $\vec e_x,\vec e_y,\vec e_z$ and the trivector is $\omega=E_1E_2E_3=-j$. The even part is $\mathrm{Cl}^0=\operatorname{span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}\cong\mathbb{H}$ and the odd part is $\mathrm{Cl}^1=\operatorname{span}\{je_t,j\vec e_x,j\vec e_y,j\vec e_z\}=j\mathbb{H}$. A split biquaternion is written $\tilde Q=\tilde q+j\tilde q'$ with $\tilde q,\tilde q'\in\mathbb{H}$, so that $\tilde q$ is the even part and $j\tilde q'$ the odd part; a numbered element carries its number on both halves, $\tilde Q_1=\tilde q_1+j\tilde q_1'$.
 
 ## The Parity Grading and the Even Part
 
@@ -24,19 +24,19 @@ and the even part is a subalgebra isomorphic to the quaternion algebra, hence a 
 
 ## The Even–Odd Formula of the Quadratic Family
 
-**Proposition (the even–odd formula).** Write $\tilde Q=\tilde q+j\tilde q'$ and $\tilde Q_1=\tilde c+j\tilde c'$ with $\tilde q,\tilde q',\tilde c,\tilde c'\in\mathbb{H}$. Then
+**Proposition (the even–odd formula).** Write $\tilde Q=\tilde q+j\tilde q'$ and $\tilde Q_1=\tilde q_1+j\tilde q_1'$ with $\tilde q,\tilde q',\tilde q_1,\tilde q_1'\in\mathbb{H}$. Then
 
 $$
-F_{\tilde Q_1}(\tilde Q)=\bigl(\tilde q^2+\tilde q'^2+\tilde c\bigr)+j\bigl(\tilde q\tilde q'+\tilde q'\tilde q+\tilde c'\bigr) ,
+F_{\tilde Q_1}(\tilde Q)=\bigl(\tilde q^2+\tilde q'^2+\tilde q_1\bigr)+j\bigl(\tilde q\tilde q'+\tilde q'\tilde q+\tilde q_1'\bigr) ,
 $$
 
-so the even part of the image is $\tilde q^2+\tilde q'^2+\tilde c$ and the odd part is $j$ times the anticommutator $\{\tilde q,\tilde q'\}$ plus $\tilde c'$. In particular the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is invariant if and only if $\tilde Q_1$ is even, and then the restriction of the family to it is the quaternion quadratic family,
+so the even part of the image is $\tilde q^2+\tilde q'^2+\tilde q_1$ and the odd part is $j$ times the sum of the anticommutator $\{\tilde q,\tilde q'\}$ and $\tilde q_1'$. In particular the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is invariant if and only if $\tilde Q_1$ is even, and then the restriction of the family to it is the quaternion quadratic family,
 
 $$
-F_{\tilde Q_1}\big|_{\mathrm{Cl}^0}:\tilde q\longmapsto\tilde q^2+\tilde c .
+F_{\tilde Q_1}\big|_{\mathrm{Cl}^0}:\tilde q\longmapsto\tilde q^2+\tilde q_1 .
 $$
 
-**Proof.** Expand $(\tilde q+j\tilde q')^2=\tilde q^2+\tilde q'^2+j(\tilde q\tilde q'+\tilde q'\tilde q)$ using the centrality of $j$ and $j^2=e_t$; the split of the result into the even part and $j$ times a quaternion is the difference of the two components of the Hadamard transform. The invariance of $\{\tilde q'=0\}$ under the map is the vanishing of the odd part $j\{\tilde q,0\}+\tilde c'$, which happens for all $\tilde q$ exactly when $\tilde c'=0$.
+**Proof.** Expand $(\tilde q+j\tilde q')^2=\tilde q^2+\tilde q'^2+j(\tilde q\tilde q'+\tilde q'\tilde q)$ using the centrality of $j$ and $j^2=e_t$; the split of the result into the even part and $j$ times a quaternion is the difference of the two components of the Hadamard transform. The invariance of $\{\tilde q'=0\}$ under the map is the vanishing of the odd part $j(\{\tilde q,0\}+\tilde q_1')$, which happens for all $\tilde q$ exactly when $\tilde q_1'=0$.
 
 **Remark (the anticommutator is the Clifford product).** The odd part of the image is governed by the anticommutator of the two quaternion components, which is the Clifford product of an even and an odd element written in the quaternion language; **the family is the square in the Clifford algebra and the even–odd formula is the explicit form of the square of a graded element.**
 
@@ -50,7 +50,7 @@ $$
 
 For an even parameter $\tilde Q_1\in\mathrm{Cl}^0$ one has $\tilde Q_{1+}=\tilde Q_{1-}=\tilde Q_1$, and the slice is the quaternion filled Julia set $K_{\tilde Q_1}$; the same holds for the Julia set.
 
-**Proof.** The Hadamard change of variables $\tilde Q_\pm=\tilde q\pm\tilde q'$ carries $\tilde q'=0$ to $\tilde Q_+=\tilde Q_-=\tilde q$, the diagonal; the slice of the product $K_{\tilde Q_{1+}}\times K_{\tilde Q_{1-}}$ with the diagonal is the intersection. For an even parameter $j\tilde c'=0$ gives $\tilde Q_{1+}=\tilde Q_{1-}=\tilde Q_1$.
+**Proof.** The Hadamard change of variables $\tilde Q_\pm=\tilde q\pm\tilde q'$ carries $\tilde q'=0$ to $\tilde Q_+=\tilde Q_-=\tilde q$, the diagonal; the slice of the product $K_{\tilde Q_{1+}}\times K_{\tilde Q_{1-}}$ with the diagonal is the intersection. For an even parameter the odd part $j\tilde q_1'$ vanishes, so $\tilde Q_{1+}=\tilde Q_{1-}=\tilde Q_1$.
 
 **Corollary (the even slice is not the whole fractal).** For an even parameter the quaternion fractal appears twice in a picture of the split-biquaternion fractal, once in the even slice and once in the odd slice, and the two slices are exchanged by the symmetry of the volume element below; for a general parameter the even slice is the intersection $K_{\tilde Q_{1+}}\cap K_{\tilde Q_{1-}}$ of the two quaternion filled Julia sets.
 
@@ -92,7 +92,7 @@ so the orbit of $j\tilde Q$ agrees with the orbit of $\tilde Q$ from the first s
 
 ## Summary
 
-The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, graded by parity into the even part, a copy of the quaternion division algebra generated by the bivectors, and the odd part $j\mathbb{H}$. The quadratic family in even–odd form has even part $\tilde q^2+\tilde q'^2+\tilde c$ and odd part $j(\{\tilde q,\tilde q'\}+\tilde c')$, so the even part is invariant exactly for an even parameter and then carries the quaternion quadratic family. Under the idempotent identification the even part is the diagonal of the product, and its slice of the fractal is the intersection $K_{\tilde Q_{1+}}\cap K_{\tilde Q_{1-}}$, the whole quaternion filled Julia set for an even parameter. The idempotent and parity decompositions are Hadamard-equivalent as decompositions of the real space and serve different purposes: the first makes the dynamics a product, the second exhibits the quaternion subalgebra. The volume element $\omega=-j$ is central with $\omega^2=e_t$ and acts by $\mp1$ on the two ideals, which are the chiral halves and the two $\mathbb{B}$ summands of the complexification; multiplication by $j$ is an isometric symmetry of the fractal for every parameter, exchanging the even and the odd parts.
+The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, graded by parity into the even part, a copy of the quaternion division algebra generated by the bivectors, and the odd part $j\mathbb{H}$. The quadratic family in even–odd form has even part $\tilde q^2+\tilde q'^2+\tilde q_1$ and odd part $j(\{\tilde q,\tilde q'\}+\tilde q_1')$, so the even part is invariant exactly for an even parameter and then carries the quaternion quadratic family. Under the idempotent identification the even part is the diagonal of the product, and its slice of the fractal is the intersection $K_{\tilde Q_{1+}}\cap K_{\tilde Q_{1-}}$, the whole quaternion filled Julia set for an even parameter. The idempotent and parity decompositions are Hadamard-equivalent as decompositions of the real space and serve different purposes: the first makes the dynamics a product, the second exhibits the quaternion subalgebra. The volume element $\omega=-j$ is central with $\omega^2=e_t$ and acts by $\mp1$ on the two ideals, which are the chiral halves and the two $\mathbb{B}$ summands of the complexification; multiplication by $j$ is an isometric symmetry of the fractal for every parameter, exchanging the even and the odd parts.
 
 ## Summary of Notation
 
@@ -104,9 +104,9 @@ The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, grade
 | $\omega=E_1E_2E_3=-j$ | the volume element |
 | $\mathrm{Cl}^0=\mathbb{H}$, $\mathrm{Cl}^1=j\mathbb{H}$ | the even part and the odd part |
 | $\tilde Q=\tilde q+j\tilde q'$ | the parity decomposition |
-| $\tilde Q_1=\tilde c+j\tilde c'$ | the parameter of the family |
-| $\tilde c,\ \tilde c'$ | its two quaternion halves |
-| $\tilde Q_{1\pm}=\tilde c\pm\tilde c'$ | the Hadamard components of the parameter |
+| $\tilde Q_1=\tilde q_1+j\tilde q_1'$ | the parameter of the family |
+| $\tilde q_1,\ \tilde q_1'$ | its two quaternion halves |
+| $\tilde Q_{1\pm}=\tilde q_1\pm\tilde q_1'$ | the Hadamard components of the parameter |
 | $\tilde Q_\pm=\tilde q\pm\tilde q'$ | the Hadamard transform |
 | $\mathbb{H}\tilde\Pi_{1,2}$ | the two chiral halves, of volume eigenvalue $\mp1$ |
 

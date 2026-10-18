@@ -48,12 +48,12 @@ which is a genuine algebraic statement: the d'Alembertian is the **biquaternion 
 The free Klein–Gordon equation is the spin-0 member of a first-order family the corpus already writes. Lanczos's coupled biquaternion system
 
 $$
-\tilde{\nabla}\tilde{A} = m\tilde{B}, \qquad \tilde{\nabla}\tilde{B} = m\tilde{A}
+\tilde{\nabla}\tilde Q_1 = m\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2 = m\tilde Q_1
 $$
 
 is the parent of the Dirac equation (the idempotent superposition of the two fields), of the Proca equation and of the Maxwell equation, as set out in *The Dirac Equation in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form* and *The Standard Model under the Biquaternion Framework — A Research Agenda*; the second-order equation of the family, obtained by eliminating the auxiliary field, is the Klein–Gordon equation of this article. What the family adds here is the placement: the equation below is not an isolated second-order equation but a member of the one classical family, its spin-0 label being the restriction of the pair to scalar fields.
 
-**The scalar restriction.** Take $\tilde{A}=A_0e_t$ and $\tilde{B}=be_t$ with $A_0$ and $b$ complex scalars. The first equation forces $\tilde{\nabla}A_0$ to have no vector part, hence $A_0$, and with it $b$, to depend on $ict$ alone; the pair then collapses to
+**The scalar restriction.** Take $\tilde Q_1=A_0e_t$ and $\tilde Q_2=be_t$ with $A_0$ and $b$ complex scalars. The first equation forces $\tilde{\nabla}A_0$ to have no vector part, hence $A_0$, and with it $b$, to depend on $ict$ alone; the pair then collapses to
 
 $$
 \partial/\partial Q_t\,A_0 = b, \qquad \partial/\partial Q_t\,b = m^2A_0, \qquad\text{hence}\qquad \left(\partial^2/\partial Q_t^2 - m^2\right)A_0 = 0 .
@@ -65,7 +65,7 @@ $$
 \left(\Box - \frac{m^2c^2}{\hbar^2}\right)A_0 = 0,
 $$
 
-which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde{A}=(m^2c^2/\hbar^2)\tilde{A}$, whose scalar restriction is the equation above.
+which is the same elimination applied to the pair that carries one gradient of each kind: the conjugate gradient squares to $\Box$, and eliminating the auxiliary field leaves $\Box\tilde Q_1=(m^2c^2/\hbar^2)\tilde Q_1$, whose scalar restriction is the equation above.
 
 
 ## Second Order in Time and the Conjugate Pair

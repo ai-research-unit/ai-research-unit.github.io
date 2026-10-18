@@ -669,18 +669,18 @@ which is the **mass shell** in the corpus's natural units and, with $\hbar$ and 
 The identity of form is not an artifact of the notation, and Lanczos read it as a statement about matter. In his 1929 articles he derived Dirac's equation from the coupled biquaternion system
 
 $$
-\tilde{\nabla}\tilde{A} = m\tilde{B}, \qquad \tilde{\nabla}\tilde{B} = m\tilde{A},
+\tilde{\nabla}\tilde Q_1 = m\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2 = m\tilde Q_1,
 $$
 
-comparing it with the biquaternion Maxwell equation $\tilde{\nabla}\tilde{F} = -4\pi\tilde{J}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde{B}$ acts back on the object that generates it, with the strength $m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde{\nabla}$, a square root of $\Box$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
+comparing it with the biquaternion Maxwell equation $\tilde{\nabla}\tilde{F} = -4\pi\tilde{J}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde Q_2$ acts back on the object that generates it, with the strength $m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde{\nabla}$, a square root of $\Box$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
 
 The corpus's chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ is the same equation written in the other useful way: it displays the spinor split — the two minimal left ideals — but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by the idempotent superposition
 
 $$
-D = \tilde{A}\sigma + \tilde{B}^{*}\bar{\sigma},
+D = \tilde Q_1\sigma + \tilde Q_2^{*}\bar{\sigma},
 $$
 
-with $\sigma$ the idempotent along a unit vector $\vec{\nu}$ and $\bar{\sigma}$ its conjugate, the two projecting onto the two minimal left ideals — so that one half of $\tilde{A}$ and half of the conjugate of $\tilde{B}$ land in **different** ideals, which is what makes the superposition a **bispinor** and not a one-sided spinor; the resulting single equation
+with $\sigma$ the idempotent along a unit vector $\vec{\nu}$ and $\bar{\sigma}$ its conjugate, the two projecting onto the two minimal left ideals — so that one half of $\tilde Q_1$ and half of the conjugate of $\tilde Q_2$ land in **different** ideals, which is what makes the superposition a **bispinor** and not a one-sided spinor; the resulting single equation
 
 $$
 \tilde{\nabla}D = m\,D^{*}\,i\vec{\nu}

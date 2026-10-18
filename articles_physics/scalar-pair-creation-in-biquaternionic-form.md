@@ -8,7 +8,7 @@ The physics is standard and the framework's role is once again delimiting. A bac
 
 Three statements organise the article.
 
-1. **The background is a classical central-valued field.** In the framework the scalar background that drives the process is a classical field $\tilde\sigma(\tilde{Q})=\sigma(\tilde{Q})e_t$ in the centre, and the coupling that makes the mass spacetime-dependent is central. The background therefore enters the field equation exactly as the mass does, and the mode equation is an ordinary second-order oscillator equation with a time-dependent frequency.
+1. **The background is a classical central-valued field.** In the framework the scalar background that drives the process is a classical field $\tilde\chi(\tilde{Q})=\chi(\tilde{Q})e_t$ in the centre, and the coupling that makes the mass spacetime-dependent is central. The background therefore enters the field equation exactly as the mass does, and the mode equation is an ordinary second-order oscillator equation with a time-dependent frequency.
 2. **Pair creation is a two-mode squeezing, and it conserves charge.** The transformation mixes $a^{\mathrm{fop}}_{\vec k}$ with ${b^{\mathrm{fop}}_{-\vec k}}^\dagger$; its generator commutes with the $\mathrm{U}(1)$ charge, so pairs are created with zero net charge, and the mean pair number is $|\beta_{\vec k}|^2$. The framework's canonical continuous symmetry — the central $\mathrm{U}(1)$ — is what makes the antiparticle well defined and the pair the unit of production.
 3. **The framework supplies no new mechanism.** The algebra contributes the central-valuedness of the background and the biquaternion-norm interpretation of the in- and out-frequencies; the transformation itself is the standard Bogoliubov mixing on an imported module, because the scalar sector has no native ladder in $\mathbb{B}$, as the companion Fock-space article proves.
 
@@ -29,18 +29,18 @@ The article is organised as follows. The next section sets up the background and
 A classical background that couples to the scalar field through the invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$ shifts the mass term. Write the background as a central-valued classical field,
 
 $$
-\tilde\sigma(\tilde{Q})=\sigma(\tilde{Q})\,e_t\in\mathbb{C}_{\mathbb{B}},
+\tilde\chi(\tilde{Q})=\chi(\tilde{Q})\,e_t\in\mathbb{C}_{\mathbb{B}},
 \qquad
-\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\sigma ,
+\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\chi ,
 $$
 
 so that the effective equation of motion is
 
 $$
-\left(\Box-\mu^2-g\,\sigma(\tilde{Q})\right)\tilde{\Phi}=0 .
+\left(\Box-\mu^2-g\,\chi(\tilde{Q})\right)\tilde{\Phi}=0 .
 $$
 
-If the background is **homogeneous**, $\sigma=\sigma(t)$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
+If the background is **homogeneous**, $\chi=\chi(t)$, the spatial translation invariance survives and the field can be expanded in spatial plane waves,
 
 $$
 \phi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\int\!\frac{d^3k}{(2\pi)^3}\,u_{\vec k}(t)\,\exp(\,i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
@@ -51,39 +51,39 @@ with the mode functions satisfying
 $$
 d^2u_{\vec k}/dt^2+\omega_{\vec k}^2(t)\,u_{\vec k}=0,
 \qquad
-\omega_{\vec k}^2(t)=\vec k^2+\mu^2+g\,\sigma(t).
+\omega_{\vec k}^2(t)=\vec k^2+\mu^2+g\,\chi(t).
 $$
 
 This is the central object of the article: a set of independent harmonic oscillators with a time-dependent frequency. The biquaternion packaging is that the effective mass-squared is read off the biquaternion norm of a material four-wavevector whose time component is not conserved: the mass shell is the level set
 
 $$
-\langle\tilde P_{\vec k}(t)\rangle_{\natural}=-\left(\mu^2+g\,\sigma(t)\right)e_t ,
+\langle\tilde P_{\vec k}(t)\rangle_{\natural}=-\left(\mu^2+g\,\chi(t)\right)e_t ,
 \qquad
 \tilde P_{\vec k}(t)=i\omega_{\vec k}(t)e_t+\vec k,
 $$
 
-equivalently $\mu^2+g\,\sigma(t)=-\mathrm{Sc}(\langle\tilde P_{\vec k}(t)\rangle_{\natural})$, since $\langle\tilde P\rangle_{\natural}=(\vec k^2-\omega^2)e_t$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_t$, it commutes with the algebra, and no spinor structure is involved.
+equivalently $\mu^2+g\,\chi(t)=-\mathrm{Sc}(\langle\tilde P_{\vec k}(t)\rangle_{\natural})$, since $\langle\tilde P\rangle_{\natural}=(\vec k^2-\omega^2)e_t$ for this four-wavevector. A time-dependent background is therefore a time-dependent level set of the biquaternion norm. The interaction itself is central: $\mathcal{L}_{\mathrm{int}}$ is a multiple of $e_t$, it commutes with the algebra, and no spinor structure is involved.
 
 Two standard realizations fix the interpretation. A **mass quench** changes $\mu^2$ abruptly or smoothly in time; an **expanding background** makes the frequency depend on time through a scale factor, $u''+(\vec k^2+a^2(t)\mu^2)u=0$ in conformal time for a suitably coupled field. Both are captured by $\omega_{\vec k}^2(t)$ above, and both are standard cosmological and condensed-matter problems; the framework writes their operator in the notation of the centre.
 
-If the background is not homogeneous, $\sigma=\sigma(\tilde{Q})$, the mode equation acquires a spatial dependence, and the decomposition into spatial plane waves with a single $\vec k$ fails; a slowly varying background can be treated in the adiabatic approximation, and a rapidly varying one requires the full field equation. This article keeps the homogeneous case, which is the exactly solvable one and the one that isolates the temporal mechanism.
+If the background is not homogeneous, $\chi=\chi(\tilde{Q})$, the mode equation acquires a spatial dependence, and the decomposition into spatial plane waves with a single $\vec k$ fails; a slowly varying background can be treated in the adiabatic approximation, and a rapidly varying one requires the full field equation. This article keeps the homogeneous case, which is the exactly solvable one and the one that isolates the temporal mechanism.
 
 ## In and Out Regions and the Bogoliubov Transformation
 
 Suppose the background is constant in the remote past and in the remote future,
 
 $$
-\sigma(t)\to\sigma_{\mathrm{in}}\ \ (t\to-\infty),
+\chi(t)\to\chi_{\mathrm{in}}\ \ (t\to-\infty),
 \qquad
-\sigma(t)\to\sigma_{\mathrm{out}}\ \ (t\to+\infty),
+\chi(t)\to\chi_{\mathrm{out}}\ \ (t\to+\infty),
 $$
 
 with corresponding asymptotic frequencies
 
 $$
-\omega_{\mathrm{in},\vec k}=\sqrt{\vec k^2+\mu^2+g\sigma_{\mathrm{in}}},
+\omega_{\mathrm{in},\vec k}=\sqrt{\vec k^2+\mu^2+g\chi_{\mathrm{in}}},
 \qquad
-\omega_{\mathrm{out},\vec k}=\sqrt{\vec k^2+\mu^2+g\sigma_{\mathrm{out}}} .
+\omega_{\mathrm{out},\vec k}=\sqrt{\vec k^2+\mu^2+g\chi_{\mathrm{out}}} .
 $$
 
 In each asymptotic region the field admits a standard mode decomposition, and the corresponding operators define the **in** and **out** Fock spaces. The two sets of positive-frequency solutions are, in each region,
@@ -231,7 +231,7 @@ Four statements summarise what the framework contributes to scalar pair creation
 
 **The background is central.** The driving field is a classical element of $\mathbb{C}_{\mathbb{B}}$; it enters the equation only through the invariant $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, it commutes with every element of the algebra, and it carries no spinor index. Pair creation by a scalar background is therefore a process in the centre, and the state module is not acted on by the background.
 
-**The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $\langle\tilde P\rangle_{\natural}=-\mu^2-g\sigma_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
+**The in- and out-modes are the parent's plane waves at two masses.** Each asymptotic region has its own on-shell level set $\langle\tilde P\rangle_{\natural}=-\mu^2-g\chi_{\mathrm{in/out}}$, and the Bogoliubov coefficients are the overlap of two such plane-wave systems. The mass shell, which is a level set of the biquaternion norm, is time-dependent during the transition and constant on either side.
 
 **The charge selects pairs.** The framework's canonical continuous symmetry is the central $\mathrm{U}(1)$, whose Noether current $\tilde J$ lies in $\mathbb{M}_-$ and whose charge is the difference of the particle and antiparticle number operators. Because the generator of the mixing commutes with the charge, the background creates pairs and not single quanta; the pair is the framework's unit of production for the same reason it is the standard one.
 
@@ -253,7 +253,7 @@ The standard realizations are worth naming for orientation. Cosmological particl
 
 ## Summary
 
-Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde\sigma=\sigma e_t$ coupling through $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, so a homogeneous background makes the frequency time-dependent, $d^2u_{\vec k}/dt^2+\omega_{\vec k}^2(t)u_{\vec k}=0$ with $\omega_{\vec k}^2=\vec k^2+\mu^2+g\sigma(t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\sigma=-\mathrm{Sc}(\langle\tilde P\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a^{\mathrm{fop}}_{\vec k}$ with ${b^{\mathrm{fop}}_{-\vec k}}^\dagger$, with $|\alpha_{\vec k}|^2-|\beta_{\vec k}|^2=1$.
+Scalar pair creation is the production of particle–antiparticle pairs by a classical background that breaks time-translation invariance. In the framework the background is a central-valued classical field $\tilde\chi=\chi e_t$ coupling through $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, so a homogeneous background makes the frequency time-dependent, $d^2u_{\vec k}/dt^2+\omega_{\vec k}^2(t)u_{\vec k}=0$ with $\omega_{\vec k}^2=\vec k^2+\mu^2+g\chi(t)$, and the effective mass-squared is the time-dependent level set of the biquaternion norm of the material four-wavevector, $\mu^2+g\chi=-\mathrm{Sc}(\langle\tilde P\rangle_{\natural})$. The in- and out-mode decompositions are related by a Bogoliubov transformation mixing $a^{\mathrm{fop}}_{\vec k}$ with ${b^{\mathrm{fop}}_{-\vec k}}^\dagger$, with $|\alpha_{\vec k}|^2-|\beta_{\vec k}|^2=1$.
 
 The transformation is charge neutral: its generator $G_{\vec k}={a^{\mathrm{fop}}_{\vec k}}^\dagger {b^{\mathrm{fop}}_{-\vec k}}^\dagger-a^{\mathrm{fop}}_{\vec k}b^{\mathrm{fop}}_{-\vec k}$ commutes with the $\mathrm{U}(1)$ charge, so the background creates pairs and not single quanta. The in-vacuum is a two-mode squeezed state, the mean number of created pairs per mode is $|\beta_{\vec k}|^2$, and the vacuum persistence amplitude is $|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2=1/|\alpha_{\vec k}|^2=1/(1+|\beta_{\vec k}|^2)$, with the continuum product $\exp\big(-\int\frac{d^3k}{(2\pi)^3}\ln(1+|\beta_{\vec k}|^2)\big)$. On the sudden-quench background $\omega_1\to\omega_2$ the result is $|\beta|^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$, verified numerically, with $|\alpha|^2-|\beta|^2=1$ to fifteen decimal places.
 
@@ -267,9 +267,9 @@ The process is standard scalar quantum field theory in an external background, t
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; value space of the background |
-| $\tilde{\Phi}=\phi\,e_t$, $\tilde\sigma=\sigma\,e_t$ | Scalar field and central background |
-| $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})\sigma$ | Central interaction |
-| $\omega_{\vec k}^2(t)=\vec k^2+\mu^2+g\sigma(t)$ | Time-dependent frequency |
+| $\tilde{\Phi}=\phi\,e_t$, $\tilde\chi=\chi\,e_t$ | Scalar field and central background |
+| $\mathcal{L}_{\mathrm{int}}=-g\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})\chi$ | Central interaction |
+| $\omega_{\vec k}^2(t)=\vec k^2+\mu^2+g\chi(t)$ | Time-dependent frequency |
 | $\tilde P_{\vec k}(t)=i\omega_{\vec k}(t)e_t+\vec k$ | Material four-wavevector; $\langle\tilde P\rangle_{\natural}$ its biquaternion norm |
 | $\omega_{\mathrm{in}},\omega_{\mathrm{out}}$ | Asymptotic frequencies |
 | $\alpha_{\vec k},\beta_{\vec k}$ | Bogoliubov coefficients, $\vert\alpha\vert^2-\vert\beta\vert^2=1$ |

@@ -145,7 +145,7 @@ The norm of each of the eight algebras is multiplicative, and the eight divide b
 | $\langle\tilde q\rangle_{\natural}=q_t^2+q_x^2-q_y^2-q_z^2$ | the norm of $\mathbb{H}_{\mathrm{s}}$, signature $(2,2)$ |
 | $\langle\tilde Q_1\rangle_{\natural}=\sum_\mu Q_{1,\mu}^2$ | the biquaternion and split biquaternion norm |
 | $Q_{1,\mu}$ | the four complex coordinates of a biquaternion |
-| $\tilde Q_1=\tilde q+j\tilde q'$, $\tilde q,\tilde q'\in\mathbb{H}$ | a split biquaternion, in the split complex form |
+| $\tilde Q_1=\tilde q_1+j\tilde q_1'$, $\tilde q_1,\tilde q_1'\in\mathbb{H}$ | a split biquaternion, in the split complex form |
 | $\tilde Q_{1,\pm}$ | the two quaternion components of $\tilde Q_1$ in $\mathbb{H}_{\mathbb{D}}$ |
 | $\mathrm{M}=(\varepsilon)$ | the maximal ideal of $\mathbb{D}'$ |
 | $\tilde q^{-1}=\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the quaternion inverse |

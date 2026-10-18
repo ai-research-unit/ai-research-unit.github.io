@@ -59,16 +59,16 @@ $$
 is equivalent to the monotonicity, hence to strong subadditivity.
 3. **Positivity of a relative entropy.** For the positive operator
 $$
-\sigma_{ABC}:=\exp\Big(\log\rho_{AB}\otimes I_C+I_A\otimes\log\rho_{BC}-I_{AC}\otimes\log\rho_B\Big),
+Q_{ABC}:=\exp\Big(\log(\rho_{AB}\otimes I_C)+\log(I_A\otimes\rho_{BC})-\log(I_A\otimes\rho_B\otimes I_C)\Big),
 $$
-built from the $AB$, $BC$ and $B$ marginals of $\rho_{ABC}$, strong subadditivity is the statement $S(\rho_{ABC}\|\sigma_{ABC})\ge0$. The operator is subnormalized rather than normalized, $\mathrm{Tr}\,\sigma_{ABC}\le1$, with equality whenever the three marginal-built operators commute — that is, whenever $\rho_{AB}$, $\rho_{BC}$ and $\rho_B$ are simultaneously diagonal in a product basis, which is the classical case in which the construction reduces to the conditional product $p_{ab}p_{bc}/p_b$. What holds for every faithful $\rho_{ABC}$ is the identity
+built from the $AB$, $BC$ and $B$ marginals of $\rho_{ABC}$, strong subadditivity is the statement $S(\rho_{ABC}\|Q_{ABC})\ge0$. The operator is subnormalized rather than normalized, $\mathrm{Tr}\,Q_{ABC}\le1$, with equality whenever the three marginal-built operators commute — that is, whenever $\rho_{AB}$, $\rho_{BC}$ and $\rho_B$ are simultaneously diagonal in a product basis, which is the classical case in which the construction reduces to the conditional product $p_{AB}p_{BC}/p_B$. What holds for every faithful $\rho_{ABC}$ is the identity
 $$
-\mathrm{Tr}\big(\rho_{ABC}\log\sigma_{ABC}\big)
+\mathrm{Tr}\big(\rho_{ABC}\log Q_{ABC}\big)
 =-S(\rho_{AB})-S(\rho_{BC})+S(\rho_B),
 $$
-so that $S(\rho_{ABC}\|\sigma_{ABC})$ equals the deficit identically.
+so that $S(\rho_{ABC}\|Q_{ABC})$ equals the deficit identically.
 
-The third form is the one used in the examples below, because $\log\sigma_{ABC}$ is built from the closed-form biquaternion logarithms of the companion article; the proof of the inequality itself is the product-state form of the section on monotonicity.
+The third form is the one used in the examples below, because $\log Q_{ABC}$ is built from the closed-form biquaternion logarithms of the companion article; the proof of the inequality itself is the product-state form of the section on monotonicity.
 
 ### Why It Is the Fundamental Inequality
 
@@ -122,30 +122,36 @@ Two structural facts are worth recording at this point, both consequences of the
 
 The derivation is standard and is transcribed here in the biquaternion notation, because it is the bridge between the two articles of this subcategory.
 
-Write $a=\rho_{AB}\otimes I_C$, $b=I_A\otimes\rho_{BC}$, $c=I_{AC}\otimes\rho_B$ for the three operators built from the marginals, and let
+Write the three lifts of the marginals to the tripartite algebra,
 $$
-\tilde\sigma_{ABC}:=\exp\big(\log a+\log b-\log c\big).
+\tilde Q_{\mathrm{AB}}:=\rho_{AB}\otimes I_C,\qquad
+\tilde Q_{\mathrm{BC}}:=I_A\otimes\rho_{BC},\qquad
+\tilde Q_{\mathrm B}:=I_A\otimes\rho_B\otimes I_C,
 $$
-The three operators do not commute in general — $a$ is nontrivial on $AB$, $b$ on $BC$, and the two share $B$ — so $\log a+\log b-\log c$ is not the logarithm of the product $abc$. It is the logarithm of $\tilde\sigma_{ABC}$ by construction: the exponential of a Hermitian algebra element is positive and nonsingular, and its logarithm is that element. Hence
+and let
 $$
-\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde\sigma_{ABC}\big]
-=\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log a\big]
-+\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log b\big]
--\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log c\big],
+\tilde Q_{ABC}:=\exp\big(\log\tilde Q_{\mathrm{AB}}+\log\tilde Q_{\mathrm{BC}}-\log\tilde Q_{\mathrm B}\big).
+$$
+The three elements do not commute in general — $\tilde Q_{\mathrm{AB}}$ is nontrivial on $AB$, $\tilde Q_{\mathrm{BC}}$ on $BC$, and the two share $B$ — so $\log\tilde Q_{\mathrm{AB}}+\log\tilde Q_{\mathrm{BC}}-\log\tilde Q_{\mathrm B}$ is not the logarithm of $\tilde Q_{\mathrm{AB}}\tilde Q_{\mathrm{BC}}\tilde Q_{\mathrm B}^{-1}$. It is the logarithm of $\tilde Q_{ABC}$ by construction: the exponential of a Hermitian algebra element is positive and nonsingular, and its logarithm is that element. Hence
+$$
+\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{ABC}\big]
+=\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{\mathrm{AB}}\big]
++\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{\mathrm{BC}}\big]
+-\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{\mathrm B}\big],
 $$
 and each term is a marginal identity,
 $$
-\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log a\big]
+\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{\mathrm{AB}}\big]
 =\mathrm{Tr}_{AB}\big[\rho_{AB}\log\rho_{AB}\big]=-S(\rho_{AB}),
 $$
-and its analogues, which use only that the $AB$ marginal of $\rho_{ABC}$ is $\rho_{AB}$ and that $\log a$ acts trivially on $C$. With these,
+and its analogues, which use only that the $AB$ marginal of $\rho_{ABC}$ is $\rho_{AB}$ and that $\log\tilde Q_{\mathrm{AB}}$ acts trivially on $C$. With these,
 $$
-S(\tilde{Ϛ}_{ABC}\|\tilde\sigma_{ABC})
+S(\tilde{Ϛ}_{ABC}\|\tilde Q_{ABC})
 =\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde{Ϛ}_{ABC}\big]
--\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde\sigma_{ABC}\big]
+-\mathrm{Tr}\big[\tilde{Ϛ}_{ABC}\log\tilde Q_{ABC}\big]
 =-S(\rho_{ABC})+S(\rho_{AB})+S(\rho_{BC})-S(\rho_B).
 $$
-The right-hand side is the deficit itself, so the third form is exactly equivalent to the inequality rather than an independent route to it: $S(\tilde{Ϛ}_{ABC}\|\tilde\sigma_{ABC})\ge0$ **is** strong subadditivity. The operator $\tilde\sigma_{ABC}$ is subnormalized rather than normalized, $\mathrm{Tr}\,\tilde\sigma_{ABC}\le1$ — the value one is attained on the classical states diagonal in the product basis, where the construction is the classical conditional product $p_{ab}p_{bc}/p_b$, and it is strictly below one on the non-commuting states tested here — so the quantity is not the relative entropy of a pair of states, and Klein's inequality is not what makes it non-negative.
+The right-hand side is the deficit itself, so the third form is exactly equivalent to the inequality rather than an independent route to it: $S(\tilde{Ϛ}_{ABC}\|\tilde Q_{ABC})\ge0$ **is** strong subadditivity. The operator $\tilde Q_{ABC}$ is subnormalized rather than normalized, $\mathrm{Tr}\,\tilde Q_{ABC}\le1$ — the value one is attained on the classical states diagonal in the product basis, where the construction is the classical conditional product $p_{AB}p_{BC}/p_B$, and it is strictly below one on the non-commuting states tested here — so the quantity is not the relative entropy of a pair of states, and Klein's inequality is not what makes it non-negative.
 
 The proof is cleanest in the form in which both reference states are products. Partial trace is a completely positive trace-preserving map, so by the monotonicity of relative entropy the pair $(\rho_{ABC},\rho_{AB}\otimes\rho_C)$ dominates its image $(\rho_{BC},\rho_B\otimes\rho_C)$ under $\mathrm{Tr}_A$:
 $$
@@ -266,7 +272,7 @@ The framework's contribution to this is exactly its contribution to the finite-d
 
 **Established (theorem, imported).** Strong subadditivity (Lieb–Ruskai); its equivalence to the monotonicity and to the joint convexity of relative entropy; the data-processing interpretation; the Hayden–Jozsa–Petz–Winter equality condition; the monotonicity of entanglement entropy under coarse-graining that strong subadditivity implies. All standard.
 
-**Established (recomputed here).** The tensor power $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ with the product trace; the partial trace as a completely positive trace-preserving map on the framework's states; the derivation of strong subadditivity from the monotonicity of the biquaternion relative entropy, with the reference-operator identity $S(\rho_{ABC}\|\sigma_{ABC})=S(\rho_{AB})+S(\rho_{BC})-S(\rho_B)-S(\rho_{ABC})$; and the three tripartite examples, with the tabulated entropies and deficits.
+**Established (recomputed here).** The tensor power $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ with the product trace; the partial trace as a completely positive trace-preserving map on the framework's states; the derivation of strong subadditivity from the monotonicity of the biquaternion relative entropy, with the reference-operator identity $S(\rho_{ABC}\|Q_{ABC})=S(\rho_{AB})+S(\rho_{BC})-S(\rho_B)-S(\rho_{ABC})$; and the three tripartite examples, with the tabulated entropies and deficits.
 
 **Interpretation.** That the biquaternion algebra's tensor powers give an information-theoretic interpretation of the inequality in which the conditional mutual information $I(A:C|B)$ is the arithmetic quantity computed from the framework's entropies, and that the Markov saturation is the framework's equality case.
 
@@ -308,7 +314,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | $S(\rho_{ABC})+S(\rho_B)\le S(\rho_{AB})+S(\rho_{BC})$ | Strong subadditivity |
 | $S(A|B)=S(\rho_{AB})-S(\rho_B)$ | Conditional entropy |
 | $I(A:C|B)$ | Conditional mutual information; the deficit |
-| $\sigma_{ABC}=\exp(\log\rho_{AB}+\log\rho_{BC}-\log\rho_B)$ | Reference operator ($\mathrm{Tr}\,\sigma_{ABC}\le1$) |
+| $Q_{ABC}$ | Reference operator, $\mathrm{Tr}\,Q_{ABC}\le1$; its element reading is $\tilde Q_{ABC}=\exp(\log\tilde Q_{\mathrm{AB}}+\log\tilde Q_{\mathrm{BC}}-\log\tilde Q_{\mathrm B})$ on the lifts $\tilde Q_{\mathrm{AB}}=\rho_{AB}\otimes I_C$, $\tilde Q_{\mathrm{BC}}=I_A\otimes\rho_{BC}$ and $\tilde Q_{\mathrm B}=I_A\otimes\rho_B\otimes I_C$ |
 | $\Lambda$ | Completely positive trace-preserving map (e.g. $\mathrm{Tr}_C$) |
 | $\rho_{ABC}=\bigoplus_k p_k\,\rho_{Ab_k^L}\otimes\rho_{b_k^R C}$ | Quantum Markov chain (equality case) |
 

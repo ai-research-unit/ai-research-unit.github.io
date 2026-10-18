@@ -143,13 +143,13 @@ Three further distinctions belong here, because the framework has several conser
 The equation of this article carries one field, and the proton–neutron near-degeneracy is nowhere in it. There is a second way to place a spin-$\tfrac12$ fermion in the algebra, however, and there the pair *is* structural. In Lanczos's doubled system
 
 $$
-\tilde{\nabla}\tilde{A}=m\tilde{B}, \qquad \tilde{\nabla}\tilde{B}=m\tilde{A},
+\tilde{\nabla}\tilde Q_1=m\tilde Q_2, \qquad \tilde{\nabla}\tilde Q_2=m\tilde Q_1,
 $$
 
 one takes the two idempotent superpositions of the companion articles, with $\sigma$ the idempotent along a unit vector $\vec{\nu}$, $\bar{\sigma}$ its conjugate, and $\vec{\tau}$ any unit vector orthogonal to it:
 
 $$
-D=\tilde{A}\sigma+\tilde{B}^{*}\bar{\sigma}, \qquad N=\left(\tilde{A}\bar{\sigma}-\tilde{B}^{*}\sigma\right)i\vec{\tau}.
+D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}, \qquad N=\left(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma\right)i\vec{\tau}.
 $$
 
 These are Gürsey's proton and neutron. Both descend from the one system with the one mass parameter $m$, so they have **equal mass by construction**; the relative sign and the factor $i\vec{\tau}$ place them in orthogonal isospin directions, so they carry different charge. The transformations that preserve both superpositions form a two-parameter group, found by Nishijima in a different context,
@@ -160,7 +160,7 @@ $$
 
 under which $D\mapsto \exp(-\vec{\nu}\alpha)D$ and $N\mapsto \exp(-\vec{\nu}\beta)N$: two independent phases, hence two particles of equal mass and different electric charge. The source's interpretation is that Lanczos's "doubling" of the spin-$\tfrac12$ field was isospin in 1929, three decades early.
 
-The corpus's own position is not overturned by this, and it becomes sharper. The isospin of the doubled system is **not** the material sector's $\mathrm{SU}(2)$: it acts by *right* multiplication on the two biquaternions $\tilde{A}$, $\tilde{B}$ of the doubled field, whereas the rotation and gauge $\mathrm{SU}(2)$ of the previous section acts on the algebra's own module by left multiplication and commutator. The corpus's refusal to identify flavour isospin with that $\mathrm{SU}(2)$ therefore stands unchanged. What the doubled route shows is that the near-degeneracy need not be imported *if* the two particles are taken as the two superpositions of one Lanczos pair — at the price of doubling the field and of a mass parameter the algebra still does not fix. In the single-field equation used here, the pair must be inserted; that is the choice this article makes, and the doubling is the alternative.
+The corpus's own position is not overturned by this, and it becomes sharper. The isospin of the doubled system is **not** the material sector's $\mathrm{SU}(2)$: it acts by *right* multiplication on the two biquaternions $\tilde Q_1$, $\tilde Q_2$ of the doubled field, whereas the rotation and gauge $\mathrm{SU}(2)$ of the previous section acts on the algebra's own module by left multiplication and commutator. The corpus's refusal to identify flavour isospin with that $\mathrm{SU}(2)$ therefore stands unchanged. What the doubled route shows is that the near-degeneracy need not be imported *if* the two particles are taken as the two superpositions of one Lanczos pair — at the price of doubling the field and of a mass parameter the algebra still does not fix. In the single-field equation used here, the pair must be inserted; that is the choice this article makes, and the doubling is the alternative.
 
 ## What the Framework Does Not Supply: Compositeness and Colour
 
@@ -287,4 +287,4 @@ What the framework does not supply is everything that makes the proton a proton.
 - C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system whose doubling is the isospin of the section *The Isospin Partner, and Why It Is Not in This Equation*.
 - F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, and "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, for the proton and neutron as the two idempotent superpositions of Lanczos's doubled system.
 - K. Nishijima, "On the theory of leptons," *Nuovo Cimento* **5** (1957) 1349–1354, for the two-parameter group $G_N=\sigma \exp(i\alpha)+\bar{\sigma}\exp(i\beta)$ that leaves the proton and neutron superpositions intact.
-- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the interpretation of Lanczos's doubling as isospin and for the explicit neutron construction $N=(\tilde{A}\bar{\sigma}-\tilde{B}^{*}\sigma)i\vec{\tau}$.
+- A. Gsponer and J.-P. Hurni, "The physical heritage of Sir W. R. Hamilton," arXiv:math-ph/0201058, §8, for the interpretation of Lanczos's doubling as isospin and for the explicit neutron construction $N=(\tilde Q_1\bar{\sigma}-\tilde Q_2^{*}\sigma)i\vec{\tau}$.
