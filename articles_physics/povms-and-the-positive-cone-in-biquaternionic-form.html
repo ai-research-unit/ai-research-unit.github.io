@@ -89,7 +89,7 @@ $$</p>
 <p>$$
 C_+ = \bigl\{h_0e_t + i\vec h\in\mathbb{M}_+ : h_0 \geq |\vec h|\bigr\} .
 $$</p>
-<p>This is the <strong>positive cone</strong> of the algebra. Its boundary $h_0 = |\vec h|$ is the set of positive elements of rank one — the rank-one projectors and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_0>|\vec h|$ is the set of positive definite elements.</p>
+<p>This is the <strong>positive cone</strong> of the algebra. Its boundary $h_0 = |\vec h|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_0>|\vec h|$ is the set of positive definite elements.</p>
 <h3 id="the-cone-is-self-dual">The cone is self-dual</h3>
 <p>The trace pairing on $\mathbb{M}_+$ is</p>
 <p>$$
@@ -106,7 +106,7 @@ $$</p>
 <p>and it coincides with $C_+$. To see this, if $h_0\geq|\vec h|$ then $h_0a_0+\vec h\cdot\vec a\geq h_0a_0-|\vec h|\,|\vec a|\geq0$ for every $a_0\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_0<|\vec h|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_h$ and $a_0 = \lambda$; then $h_0a_0+\vec h\cdot\vec a = \lambda(h_0-|\vec h|)<0$ for $\lambda>0$, so $\tilde{H}\notin C_+^{*}$. Hence $C_+^{*}=C_+$: <strong>the positive cone is self-dual with respect to the trace pairing.</strong></p>
 <p>The self-duality is what makes the trace pairing the natural pairing of measurement theory. The same pairing that gives the Born rule, $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, expresses the duality between states and effects, and it makes the cone its own dual. There is no second pairing needed to define the allowed measurements.</p>
 <h3 id="extremal-rays-and-the-pure-states">Extremal rays and the pure states</h3>
-<p>The extreme rays of $C_+$ are the rays through the rank-one projectors $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{Ϛ}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.</p>
+<p>The extreme rays of $C_+$ are the rays through the rank-one Hermitian idempotents $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{Ϛ}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.</p>
 <h2 id="effects">Effects</h2>
 <h3 id="definition">Definition</h3>
 <p>An <strong>effect</strong> is a positive element bounded above by the identity:</p>
@@ -127,7 +127,7 @@ $$</p>
 <p>$$
 \tilde{E}^2 = \tilde{E} \quad\Longleftrightarrow\quad \tilde{E}\in\mathrm{ext}[0,e_t],
 $$</p>
-<p>i.e. the elements $a_0 = 1$ with $|\vec a|=0$ (the identity) and $a_0 = \tfrac12$ with $|\vec a| = \tfrac12$ (the rank-one projectors). A <strong>projective measurement</strong> uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_1 + (1-t)\tilde\Pi_2$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.</p>
+<p>i.e. the elements $a_0 = 1$ with $|\vec a|=0$ (the identity) and $a_0 = \tfrac12$ with $|\vec a| = \tfrac12$ (the rank-one Hermitian idempotents). A <strong>projective measurement</strong> uses only these extreme effects; a general measurement uses interior effects, which are convex combinations $\tilde{E} = t\tilde\Pi_1 + (1-t)\tilde\Pi_2$ of orthogonal idempotents. An interior effect is a "soft" outcome: it responds partially to both alternatives, which is exactly what allows a measurement to have more outcomes than the dimension.</p>
 <h3 id="the-born-rule-for-effects">The Born rule for effects</h3>
 <p>For any state $\tilde{Ϛ}$ and effect $\tilde{E}$,</p>
 <p>$$

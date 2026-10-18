@@ -120,11 +120,11 @@ $$</p>
 <h3 id="step-1-the-state_1">Step 1: The state</h3>
 <p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
 <p>$$
-P(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
+\tilde\Pi(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
 $$</p>
 <p>where $\vec u_m$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\vec u_m = \vec e_x$, giving</p>
 <p>$$
-P_x = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
+\tilde\Pi_x = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
 $$</p>
 <h3 id="step-2-the-hamiltonian_1">Step 2: The Hamiltonian</h3>
 <p>The spin observable along $z$ is $\tilde{S}_z = \frac{\hbar}{2}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{M}_+$</p>
@@ -140,7 +140,7 @@ $$</p>
 <p>where we have used the identity $\exp(\theta\,\vec e_z) = \cos\theta\,e_t + \sin\theta\,\vec e_z$, which follows from $\vec e_z^2 = -e_t$, and set $\theta = -\omega_L t/2$.</p>
 <p>The evolved state is</p>
 <p>$$
-\tilde{Ϛ}(t) = \tilde{U}(t)\,P_x\,\tilde{U}(t)^{*}.
+\tilde{Ϛ}(t) = \tilde{U}(t)\,\tilde\Pi_x\,\tilde{U}(t)^{*}.
 $$</p>
 <p>Computing the product, using $\tilde{U}(t)^{*} = \tilde{U}^{\natural}(t) = \cos(\omega_L t/2)\,e_t + \sin(\omega_L t/2)\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives</p>
 <p>$$
@@ -219,7 +219,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>We have solved a second exercise in quantum physics — the Larmor precession of a spin in a magnetic field — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle S_x\rangle(t) = \frac{\hbar}{2}\cos(\omega_L t)$.</p>
-<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotent $P_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t)$, the evolved state $\tilde{Ϛ}(t)$, and the trace formula, giving the same result.</p>
+<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t)$, the evolved state $\tilde{Ϛ}(t)$, and the trace formula, giving the same result.</p>
 <p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the trace pairing.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -263,7 +263,7 @@ $$</p>
 <td>Larmor frequency</td>
 </tr>
 <tr>
-<td>$P_x = \tfrac{1}{2}(e_t + i\vec e_x)$</td>
+<td>$\tilde\Pi_x = \tfrac{1}{2}(e_t + i\vec e_x)$</td>
 <td>Spin-up state along $x$</td>
 </tr>
 <tr>

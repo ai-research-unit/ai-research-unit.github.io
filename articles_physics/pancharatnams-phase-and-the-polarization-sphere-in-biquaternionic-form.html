@@ -129,7 +129,7 @@ $$</p>
 <p>$$
 \langle\tilde{Ϛ}\rangle_{\natural}=0 .
 $$</p>
-<p>This is the <strong>biquaternion-norm cone</strong> of $\mathbb{M}_+$, and it is exactly the cone of idempotents: a rank-one projection satisfies $\tilde{Ϛ}^2=\tilde{Ϛ}$ and $\langle\tilde{Ϛ}\rangle_{\natural}=0$, and conversely a Hermitian element of the cone with unit trace is a pure state. Normalising $S_0=1$, the cone is</p>
+<p>This is the <strong>biquaternion-norm cone</strong> of $\mathbb{M}_+$, and it is exactly the cone of idempotents: a rank-one idempotent satisfies $\tilde\Pi^2=\tilde\Pi$ and $\langle\tilde\Pi\rangle_{\natural}=0$, and conversely a Hermitian element of the cone with unit trace is a pure state. Normalising $S_0=1$, the cone is</p>
 <p>$$
 S_1^2+S_2^2+S_3^2=1 ,
 $$</p>
@@ -139,8 +139,8 @@ $$</p>
 $$</p>
 <p>for the beam, and the same cone is the Hermitian idempotent sphere of the sector. The unpolarized state $S_0\neq0$, $\vec S=0$ is the centre of the ball; the partially polarized states are the interior points $0<P<1$; and the closure of the interior is the ball of radius $S_0$, with the cone as its boundary. Depolarization moves the coherence biquaternion inward along a radius, and the cone is the extremal boundary where the coherence is complete.</p>
 <h2 id="polarizers-and-phase-shifters-as-algebra-elements">Polarizers and Phase Shifters as Algebra Elements</h2>
-<p>The two elementary optical elements, the polarizer and the phase shifter, are in the algebra a <strong>projector</strong> and a <strong>rotor</strong>, and the contrast between the two is the content of this section.</p>
-<p><strong>The polarizer.</strong> A polarizer that transmits the polarization $\vec u$ is the rank-one projector of $\mathbb{M}_+$</p>
+<p>The two elementary optical elements, the polarizer and the phase shifter, are in the algebra an <strong>idempotent</strong> and a <strong>rotor</strong>, and the contrast between the two is the content of this section.</p>
+<p><strong>The polarizer.</strong> A polarizer that transmits the polarization $\vec u$ is the rank-one idempotent of $\mathbb{M}_+$</p>
 <p>$$
 \tilde\Pi_{\vec u} = \tfrac12\left(e_t + i\vec u\right),
 \qquad
@@ -152,23 +152,23 @@ $$</p>
 <p>$$
 \tilde{Ϛ} \;\longmapsto\; \tilde\Pi_{\vec u}\,\tilde{Ϛ}\,\tilde\Pi_{\vec u} = \mathrm{Tr}\!\left(\tilde{Ϛ}\,\tilde\Pi_{\vec u}\right)\tilde\Pi_{\vec u},
 $$</p>
-<p>which holds because a rank-one projector satisfies $\tilde\Pi\tilde{Ϛ}\tilde\Pi = \mathrm{Tr}(\tilde{Ϛ}\tilde\Pi)\tilde\Pi$. The trace is Malus' law,</p>
+<p>which holds because a rank-one idempotent satisfies $\tilde\Pi\tilde{Ϛ}\tilde\Pi = \mathrm{Tr}(\tilde{Ϛ}\tilde\Pi)\tilde\Pi$. The trace is Malus' law,</p>
 <p>$$
 \mathrm{Tr}\!\left(\tilde{Ϛ}\,\tilde\Pi_{\vec u}\right) = \tfrac12\left(S_0 + \vec u\cdot\vec S\right),
 $$</p>
-<p>so the transmitted intensity follows the cosine of the angle between the polarizer axis and the Stokes vector. The two opposite axes give complementary projectors,</p>
+<p>so the transmitted intensity follows the cosine of the angle between the polarizer axis and the Stokes vector. The two opposite axes give complementary idempotents,</p>
 <p>$$
 \tilde\Pi_{\vec u} + \tilde\Pi_{-\vec u} = e_t,
 \qquad
 \tilde\Pi_{-\vec u}\,\tilde\Pi_{\vec u} = 0 ,
 $$</p>
-<p>which is the algebraic statement that two orthogonal polarizations are mutually exclusive: the projector onto one annihilates the other. This orthogonality is what makes the Stokes sphere a sphere of states rather than of directions.</p>
+<p>which is the algebraic statement that two orthogonal polarizations are mutually exclusive: the idempotent of one annihilates the other. This orthogonality is what makes the Stokes sphere a sphere of states rather than of directions.</p>
 <p><strong>The phase shifter.</strong> A phase shifter that retards one circular component relative to the other is the rotor</p>
 <p>$$
 \tilde U_{\vec u}(\alpha) = \exp(\alpha\vec u/2) = \cos\tfrac{\alpha}{2}\,e_t + \sin\tfrac{\alpha}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}},
 $$</p>
 <p>acting by $\tilde{Ϛ} \mapsto \tilde U\tilde{Ϛ}\,\tilde U^{*}$ with $\tilde U^{*} = \tilde U_{\vec u}(-\alpha) = \tilde U_{\vec u}^{-1}$. It fixes $S_0$ and the component $\vec u\cdot\vec S$, and rotates the transverse part of $\vec S$ about $\vec u$ by the angle $\alpha$: the phase shifter is a <strong>rotation of the Poincaré sphere</strong>. This is the Faraday effect, with $\vec u$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\vec u$ the optic axis and $\alpha$ the retardation.</p>
-<p><strong>Two kinds of operation.</strong> The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general lossless optical element is a product of the two — a rotor for the retardation and a projector for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.</p>
+<p><strong>Two kinds of operation.</strong> The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general lossless optical element is a product of the two — a rotor for the retardation and an idempotent for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.</p>
 <h2 id="pancharatnams-in-phase-criterion">Pancharatnam's In-Phase Criterion</h2>
 <p>Two beams with Jones vectors $\vec J_A$ and $\vec J_B$ can interfere. The intensity of the sum is</p>
 <p>$$
@@ -353,7 +353,7 @@ $$</p>
 <li>M. Born and E. Wolf, <em>Principles of Optics</em> (Cambridge, 1999), for the Stokes parameters, the Poincaré sphere, and the coherence matrix.</li>
 <li>G. B. Airy, "On the composition and resolution of streams of polarized light from different sources," <em>Transactions of the Cambridge Philosophical Society</em> <strong>9</strong> (1852) 399, for the early interference of polarized beams.</li>
 <li>J. H. Hannay, "Angle variable holonomy in adiabatic excursion of an integrable Hamiltonian," <em>Journal of Physics A</em> <strong>18</strong> (1985) 221–230, for the dynamical counterpart of the same geometry.</li>
-<li>William E. Baylis, <em>Geometry of Paravector Space, with Applications to Relativistic Physics</em> (University of Windsor lecture, 2003), for the polarizer as the idempotent projector $\tfrac12(1+\vec u)$ and the phase shifter as the Stokes-space rotation $\exp(i\vec u\alpha/2)$ — the two operations transcribed into the series' conventions in <em>Polarizers and Phase Shifters as Algebra Elements</em> above.</li>
+<li>William E. Baylis, <em>Geometry of Paravector Space, with Applications to Relativistic Physics</em> (University of Windsor lecture, 2003), for the polarizer as the idempotent $\tfrac12(1+\vec u)$ and the phase shifter as the Stokes-space rotation $\exp(i\vec u\alpha/2)$ — the two operations transcribed into the series' conventions in <em>Polarizers and Phase Shifters as Algebra Elements</em> above.</li>
 </ul>
       </div>
     </main>

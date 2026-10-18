@@ -77,7 +77,7 @@ $$
 $$
 The two lists are exchanged by the <strong>halving map</strong> $Q_\pm\mapsto\tfrac12(1+Q_\pm)$, which sends a root of one to an idempotent and back; the two nontrivial idempotents are complementary and orthogonal, $\Pi_++\Pi_-=1$ and $\Pi_+\Pi_-=0$, and the two projections are $Q_\pm\mapsto\Pi_+Q_\pm$ and $Q_\pm\mapsto\Pi_-Q_\pm$, so that the algebra resolves as the sum of the two idempotent lines.</p>
 <p>The computation is short because the multiplication is componentwise in the idempotent coordinates: for $Q_\pm=(Q_{++},Q_{--})$, with $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, one has $Q_\pm^{2}=(Q_{++}^{2},Q_{--}^{2})$, so $Q_\pm^{2}=1$ is the pair of complex equations $Q_{++}^{2}=1$, $Q_{--}^{2}=1$ and $Q_\pm^{2}=Q_\pm$ is the pair $Q_{++}^{2}=Q_{++}$, $Q_{--}^{2}=Q_{--}$. Every list of solutions is therefore a product of two complex lists, and the four figures come from the two solutions $\pm1$ and the two solutions $0,1$ of the complex equations.</p>
-<p><strong>The results.</strong> The roots of one are $1,-1,j,-j$, and they form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ under the multiplication. The idempotents are $0,1,\Pi_+,\Pi_-$, of which $\Pi_+$ and $\Pi_-$ are the nontrivial ones and are complementary, orthogonal and zero divisors. Each idempotent $e$ carries the projection $P_{e}(Q_\pm)=eQ_\pm$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{e}^{2}=P_{e}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the two projections are the Peirce projections onto the two lines, and the Peirce decomposition itself is <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>, below this article in this category. The <strong>natural sign</strong> and the <strong>star</strong> both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$.</p>
+<p><strong>The results.</strong> The roots of one are $1,-1,j,-j$, and they form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ under the multiplication. The idempotents are $0,1,\Pi_+,\Pi_-$, of which $\Pi_+$ and $\Pi_-$ are the nontrivial ones and are complementary, orthogonal and zero divisors. Each idempotent $\Pi$ carries the projector $P_{\Pi}(Q_\pm)=\Pi Q_\pm$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{\Pi}^{2}=P_{\Pi}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the two projections are the Peirce projections onto the two lines, and the Peirce decomposition itself is <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>, below this article in this category. The <strong>natural sign</strong> and the <strong>star</strong> both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$.</p>
 <p><strong>Boundaries.</strong> The algebra, its product and its structure as a direct product of two fields are <em>Introduction to the Algebra of the Reduced Biquaternions</em>, above this article in this category. The involutions and the idempotents' behaviour under them are <em>The Two Involutions and the Group of Involutions</em>, above this article. The zero divisors and the two lines are <em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>, above this article; the annihilators are <em>Annihilators of the Algebra of the Reduced Biquaternions</em>, above this article; and the roots of zero and the nilpotents are <em>Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions</em>, below this article. The Peirce decomposition into the ideals the idempotents carry is <em>Ideals and Peirce Decomposition</em>, below this article in this category.</p>
 <h2 id="the-roots-of-one">The Roots of One</h2>
 <h3 id="the-equation-and-the-four-roots">The Equation and the Four Roots</h3>
@@ -127,16 +127,16 @@ $$</p>
 <p><em>Proof.</em> The two displays are the definitions; the root of one used is $j$, since $j^{2}=1$ is what makes $\Pi_\pm^{2}=\Pi_\pm$.</p>
 <h2 id="the-projections">The Projections</h2>
 <h3 id="the-projection-onto-an-idempotent-line">The Projection onto an Idempotent Line</h3>
-<p><strong>Each idempotent $e$ carries the projection $P_{e}(Q_\pm)=eQ_\pm$, the orthogonal projection onto the line $\mathbb{C}e$ along the other line.</strong></p>
-<p><strong>Definition.</strong> For an idempotent $e$ of the multiplication, the <strong>projection</strong> it carries is
+<p><strong>Each idempotent $\Pi$ carries the projector $P_{\Pi}(Q_\pm)=\Pi Q_\pm$, the orthogonal projection onto the line $\mathbb{C}\Pi$ along the other line.</strong></p>
+<p><strong>Definition.</strong> For an idempotent $\Pi$, the <strong>projector</strong> it carries is
 $$
-P_{e}(Q_\pm)=eQ_\pm.
+P_{\Pi}(Q_\pm)=\Pi Q_\pm.
 $$</p>
-<p><strong>Theorem (the projections are projections).</strong> For $e=\Pi_+$ and $e=\Pi_-$,
+<p><strong>Theorem (the projectors are idempotent).</strong> For $\Pi=\Pi_+$ and $\Pi=\Pi_-$,
 $$
-P_{e}^{2}=P_{e},\qquad P_{\Pi_+}+P_{\Pi_-}=\mathrm{id},\qquad P_{\Pi_+}P_{\Pi_-}=0=P_{\Pi_-}P_{\Pi_+}.
+P_{\Pi}^{2}=P_{\Pi},\qquad P_{\Pi_+}+P_{\Pi_-}=\mathrm{id},\qquad P_{\Pi_+}P_{\Pi_-}=0=P_{\Pi_-}P_{\Pi_+}.
 $$</p>
-<p><em>Proof.</em> $P_{e}^{2}(Q_\pm)=e(eQ_\pm)=e^{2}Q_\pm=eQ_\pm$; the sum is $(\Pi_++\Pi_-)Q_\pm=1\,Q_\pm=Q_\pm$; and the product is $\Pi_+\Pi_-Q_\pm=0$. The identity $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$ is the <strong>resolution of the identity</strong>, and the two projections are the Peirce projections of the algebra.</p>
+<p><em>Proof.</em> $P_{\Pi}^{2}(Q_\pm)=\Pi(\Pi Q_\pm)=\Pi^{2}Q_\pm=\Pi Q_\pm$; the sum is $(\Pi_++\Pi_-)Q_\pm=1\,Q_\pm=Q_\pm$; and the product is $\Pi_+\Pi_-Q_\pm=0$. The identity $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$ is the <strong>resolution of the identity</strong>, and the two projections are the Peirce projections of the algebra.</p>
 <p><strong>Proposition (the explicit projections).</strong> For $Q_\pm=Q_++jQ_-$,
 $$
 P_{\Pi_+}(Q_\pm)=(Q_++Q_-)\Pi_+,\qquad P_{\Pi_-}(Q_\pm)=(Q_+-Q_-)\Pi_-,
@@ -151,14 +151,14 @@ $$
 $$
 and every element has the unique decomposition $Q_\pm=P_{\Pi_+}(Q_\pm)+P_{\Pi_-}(Q_\pm)$.</p>
 <p><em>Proof.</em> $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$ gives the decomposition, and $P_{\Pi_+}P_{\Pi_-}=0$ gives its uniqueness; the images are the two lines, which meet only at the origin (<em>Zero Divisors of the Algebra of the Reduced Biquaternions</em>). The decomposition of a general element reads $Q_\pm=(Q_++Q_-)\Pi_++(Q_+-Q_-)\Pi_-$ (<em>Reduced Biquaternion Space</em>).</p>
-<p><strong>Remark (the Peirce decomposition).</strong> The projections and the lines they carry are the <strong>Peirce</strong> data of the two idempotents; the spaces in the general Peirce decomposition of a pair of idempotents, the four subspaces $e\mathbb{B}e$, $e\mathbb{B}(1-e)$, $(1-e)\mathbb{B}e$ and $(1-e)\mathbb{B}(1-e)$, are <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>, below this article in this category; here only the two projections and the two lines they carry are read.</p>
+<p><strong>Remark (the Peirce decomposition).</strong> The projections and the lines they carry are the <strong>Peirce</strong> data of the two idempotents; the spaces in the general Peirce decomposition of a pair of idempotents, the four subspaces $\Pi\mathbb{B}\Pi$, $\Pi\mathbb{B}(1-\Pi)$, $(1-\Pi)\mathbb{B}\Pi$ and $(1-\Pi)\mathbb{B}(1-\Pi)$, are <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>, below this article in this category; here only the two projections and the two lines they carry are read.</p>
 <h2 id="the-idempotents-under-the-involutions">The Idempotents Under the Involutions</h2>
 <p><strong>The natural sign and the star both exchange the two nontrivial idempotents, and only the bar fixes every idempotent.</strong></p>
 <p><strong>Theorem.</strong> $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$, $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, and $\overline{\Pi_+}=\Pi_+$, $\overline{\Pi_-}=\Pi_-$; the flat sends each idempotent to the negative of the other, $\Pi_+^{\flat}=-\Pi_-$ and $\Pi_-^{\flat}=-\Pi_+$, which is not an idempotent.</p>
 <p><em>Proof.</em> $\Pi_+^{\natural}=\tfrac12(1+j)^{\natural}=\tfrac12(1-j)=\Pi_-$, and $\Pi_-^{\natural}=\Pi_+$ (<em>The Two Involutions and the Group of Involutions</em>); the bar conjugates the coefficients of $\Pi_\pm=\tfrac12\pm\tfrac12 j$, which are real, so it fixes each idempotent; the star is $\bar{\cdot}\circ{}^{\natural}$, so $\Pi_+^{*}=\overline{\Pi_+^{\natural}}=\overline{\Pi_-}=\Pi_-$ and $\Pi_-^{*}=\Pi_+$, the star exchanging the two as the natural sign does. The flat is $-{}^{*}$, so it sends each idempotent to the negative of the other.</p>
 <p><strong>Corollary (the involution swaps the two lines).</strong> The natural sign restricts to a $\mathbb{C}$-linear exchange of the two idempotent lines, $\mathbb{C}\Pi_+\leftrightarrow\mathbb{C}\Pi_-$, and the two lines are therefore conjugate under the intrinsic conjugate.</p>
 <h2 id="the-halving-map">The Halving Map</h2>
-<p><strong>The map $Q_\pm\mapsto\tfrac12(1+Q_\pm)$ sends the roots of one bijectively to the idempotents, and its inverse on the idempotents is $e\mapsto 2e-1$.</strong></p>
+<p><strong>The map $Q_\pm\mapsto\tfrac12(1+Q_\pm)$ sends the roots of one bijectively to the idempotents, and its inverse on the idempotents is $\Pi\mapsto 2\Pi-1$.</strong></p>
 <p><strong>Theorem (the halving map).</strong> The map
 $$
 H(Q_\pm)=\tfrac12(1+Q_\pm)
@@ -167,8 +167,8 @@ restricts to a bijection from the roots of one $\{1,-1,j,-j\}$ onto the idempote
 $$
 H(1)=1,\qquad H(-1)=0,\qquad H(j)=\Pi_+,\qquad H(-j)=\Pi_-,
 $$
-and the inverse on the idempotents is $e\mapsto 2e-1$.</p>
-<p><em>Proof.</em> The four values are direct: $\tfrac12(1+1)=1$, $\tfrac12(1-1)=0$, $\tfrac12(1+j)=\Pi_+$, $\tfrac12(1-j)=\Pi_-$. If $Q_\pm^{2}=1$ then $H(Q_\pm)^{2}=\tfrac14(1+2Q_\pm+Q_\pm^{2})=\tfrac14(2+2Q_\pm)=H(Q_\pm)$, so $H$ maps roots of one into idempotents; if $e^{2}=e$ then $2e-1$ has $(2e-1)^{2}=4e^{2}-4e+1=1$, so $2e-1$ is a root of one; and the two maps are inverse, since $H(2e-1)=\tfrac12(1+2e-1)=e$.</p>
+and the inverse on the idempotents is $\Pi\mapsto 2\Pi-1$.</p>
+<p><em>Proof.</em> The four values are direct: $\tfrac12(1+1)=1$, $\tfrac12(1-1)=0$, $\tfrac12(1+j)=\Pi_+$, $\tfrac12(1-j)=\Pi_-$. If $Q_\pm^{2}=1$ then $H(Q_\pm)^{2}=\tfrac14(1+2Q_\pm+Q_\pm^{2})=\tfrac14(2+2Q_\pm)=H(Q_\pm)$, so $H$ maps roots of one into idempotents; if $\Pi^{2}=\Pi$ then $2\Pi-1$ has $(2\Pi-1)^{2}=4\Pi^{2}-4\Pi+1=1$, so $2\Pi-1$ is a root of one; and the two maps are inverse, since $H(2\Pi-1)=\tfrac12(1+2\Pi-1)=\Pi$.</p>
 <p><strong>Remark (the classical form of the correspondence).</strong> The correspondence between the roots of one and the idempotents by halving is the classical correspondence between an involution and the projection it carries; here it reads the two nontrivial idempotents as the halves of the sum and the difference of the identity and the two nontrivial roots $j$ and $-j$.</p>
 <h2 id="summary">Summary</h2>
 <p>The roots of one of the general plain algebra are the four elements
@@ -183,7 +183,7 @@ solutions of $Q_\pm^{2}=Q_\pm$, and the two nontrivial ones are complementary, o
 $$
 \Pi_+^{2}=\Pi_+,\quad \Pi_-^{2}=\Pi_-,\quad \Pi_+\Pi_-=0,\quad \Pi_++\Pi_-=1 .
 $$</p>
-<p>Each idempotent $e$ carries the projection $P_{e}(Q_\pm)=eQ_\pm$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{e}^{2}=P_{e}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the explicit projections are $P_{\Pi_+}(Q_\pm)=(Q_++Q_-)\Pi_+$ and $P_{\Pi_-}(Q_\pm)=(Q_+-Q_-)\Pi_-$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The <strong>natural sign</strong> and the <strong>star</strong> both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$ and $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$. The <strong>halving map</strong> $H(Q_\pm)=\tfrac12(1+Q_\pm)$ is a bijection from the roots of one onto the idempotents, with inverse $e\mapsto2e-1$, and it sends $-1$ to $0$, $j$ to $\Pi_+$ and $-j$ to $\Pi_-$.</p>
+<p>Each idempotent $\Pi$ carries the projector $P_{\Pi}(Q_\pm)=\Pi Q_\pm$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{\Pi}^{2}=P_{\Pi}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the explicit projections are $P_{\Pi_+}(Q_\pm)=(Q_++Q_-)\Pi_+$ and $P_{\Pi_-}(Q_\pm)=(Q_+-Q_-)\Pi_-$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The <strong>natural sign</strong> and the <strong>star</strong> both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$ and $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$. The <strong>halving map</strong> $H(Q_\pm)=\tfrac12(1+Q_\pm)$ is a bijection from the roots of one onto the idempotents, with inverse $\Pi\mapsto2\Pi-1$, and it sends $-1$ to $0$, $j$ to $\Pi_+$ and $-j$ to $\Pi_-$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -206,8 +206,8 @@ $$</p>
 <td>the two nontrivial idempotents</td>
 </tr>
 <tr>
-<td>$P_{e}(Q_\pm)=eQ_\pm$</td>
-<td>the projection carried by an idempotent</td>
+<td>$P_{\Pi}(Q_\pm)=\Pi Q_\pm$</td>
+<td>the projector carried by an idempotent</td>
 </tr>
 <tr>
 <td>$P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$</td>
@@ -222,7 +222,7 @@ $$</p>
 <td>the halving map from the roots of one to the idempotents</td>
 </tr>
 <tr>
-<td>$e\mapsto2e-1$</td>
+<td>$\Pi\mapsto2\Pi-1$</td>
 <td>the inverse halving map</td>
 </tr>
 </tbody>

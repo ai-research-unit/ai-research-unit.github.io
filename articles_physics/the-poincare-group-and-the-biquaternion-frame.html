@@ -72,10 +72,10 @@ $$
 x^\mu \;\longmapsto\; \Lambda^\mu{}_\nu\,x^\nu + a^\mu
 $$
 of Minkowski space. The question this article answers is how much of that group the biquaternion algebra $\mathbb{B}$ contains.</p>
-<p>The homogeneous factor is contained exactly. The unit-norm biquaternions are $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$, and rotor conjugation
+<p>The homogeneous factor is contained exactly. The unit-norm biquaternions are $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$, and rotor conjugation by the Lorentz rotor $\tilde U_{\mathrm L}$,
 $$
-\tilde{Q}\;\longmapsto\;\tilde U\,\tilde{Q}\,\tilde U^{*},
-\qquad \tilde{Q}\in\mathbb{M}_-,\quad \tilde U\tilde U^{\natural}=e_t,
+\tilde{Q}\;\longmapsto\;\tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*},
+\qquad \tilde{Q}\in\mathbb{M}_-,\quad \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t,
 $$
 is that group's action on the material sector $\mathbb{M}_-$. This is the content of the companion article <em>The Biquaternion Lorentz Group — Structure and Representations</em>, and it is recalled below rather than rederived.</p>
 <p>The translation factor is <strong>not</strong> a rotation in this algebra. A rotor conjugation is linear in $\tilde{Q}$ and fixes $\tilde{Q}=0$; a shift $\tilde{Q}\mapsto\tilde{Q}+\tilde{R}_0$ is affine and does not fix the origin unless $\tilde{R}_0=0$. No unit-norm biquaternion generates a shift, and the obstruction is quantitative as well as qualitative: the restricted Poincaré group has real dimension ten, while the group of unit-norm biquaternions has real dimension six, so no assignment of a rotor to each Poincaré element can be faithful. The translation must be carried as an extra datum, an element $\tilde{R}_0\in\mathbb{M}_-$ placed beside the rotor. The group law on the resulting pairs is a <strong>semidirect product</strong>,
@@ -95,11 +95,11 @@ and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point s
 <p>Rotor conjugation restricted to $\mathbb{M}_-$ is linear in $\tilde{Q}$, it preserves the subspace $\mathbb{M}_-$, and it preserves the biquaternion norm, $\tilde{Q}'\tilde{Q}'^{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; it is an inner automorphism of $\mathbb{B}$ in the unitary sector, where $\tilde u^{*}=\tilde u^{-1}$ and the map is conjugation, but a boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and acts by the twisted map $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$, which is linear but not multiplicative and so is not an algebra automorphism. The map
 $$
 \mathrm{Ad}:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
-\mathrm{Ad}(\tilde U):\ \tilde{Q}\longmapsto\tilde U\tilde{Q}\tilde U^{*}
+\mathrm{Ad}(\tilde U_{\mathrm L}):\ \tilde{Q}\longmapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}
 $$
 is a surjective two-to-one homomorphism with kernel $\{\pm e_t\}$; the two-to-one cover is the reason the biquaternion description of the Lorentz group is a description of $SL(2,\mathbb{C})$ and not of $SO^+(1,3)$ directly. The homomorphism property
 $$
-\mathrm{Ad}(\tilde U_2\tilde U_1)=\mathrm{Ad}(\tilde U_2)\circ\mathrm{Ad}(\tilde U_1)
+\mathrm{Ad}(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1})=\mathrm{Ad}(\tilde U_{\mathrm L,2})\circ\mathrm{Ad}(\tilde U_{\mathrm L,1})
 $$
 is what makes the product of rotors compose Lorentz transformations, and it is the homogeneous half of the group law derived below.</p>
 <p>Three families of rotors are distinguished by the subspace they occupy. A pure boost along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ with rapidity $\psi$,
@@ -110,32 +110,32 @@ is Hermitian, hence lies in $\mathbb{M}_+$, and is unit-norm. A pure spatial rot
 $$
 \tilde u=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r},
 $$
-is a unit real quaternion, lying in $\mathbb{H}_{\mathbb{B}}$. A general rotor has the Cartan decomposition $\tilde U=\tilde U_{\mathrm b}\tilde u$ into a boost and a rotation. The boosts are closed under inverse but not under multiplication: the product of two non-collinear boosts is a boost times a rotation, the Thomas–Wigner rotation, whose angle and axis are derived in the parent article. What matters here is only that all of these transformations are algebraic in the rotor and linear in the four-vector they act on.</p>
+is a unit real quaternion, lying in $\mathbb{H}_{\mathbb{B}}$. A general rotor has the Cartan decomposition $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u$ into a boost and a rotation. The boosts are closed under inverse but not under multiplication: the product of two non-collinear boosts is a boost times a rotation, the Thomas–Wigner rotation, whose angle and axis are derived in the parent article. What matters here is only that all of these transformations are algebraic in the rotor and linear in the four-vector they act on.</p>
 <h2 id="pairs-and-the-group-law">Pairs and the Group Law</h2>
 <p>A Poincaré transformation acts on the material sector by the affine map
 $$
-\tilde{Q}\;\longmapsto\;\tilde U\,\tilde{Q}\,\tilde U^{*}+\tilde{R}_0,
-\qquad \tilde U\in SL(2,\mathbb{C}),\quad \tilde{R}_0\in\mathbb{M}_-,
+\tilde{Q}\;\longmapsto\;\tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*}+\tilde{R}_0,
+\qquad \tilde U_{\mathrm L}\in SL(2,\mathbb{C}),\quad \tilde{R}_0\in\mathbb{M}_-,
 $$
-and we write it as the pair $(\tilde U,\tilde{R}_0)$. The displacement $\tilde{R}_0$ is a four-vector and lives in the same subspace as the four-position, $\mathbb{M}_-$; that is the only subspace available to it, and it is the additive data the rotor cannot supply.</p>
-<p>Composing two such maps, applying $(\tilde U_1,\tilde{R}_{0,1})$ first and $(\tilde U_2,\tilde{R}_{0,2})$ second, gives
+and we write it as the pair $(\tilde U_{\mathrm L},\tilde{R}_0)$. The displacement $\tilde{R}_0$ is a four-vector and lives in the same subspace as the four-position, $\mathbb{M}_-$; that is the only subspace available to it, and it is the additive data the rotor cannot supply.</p>
+<p>Composing two such maps, applying $(\tilde U_{\mathrm L,1},\tilde{R}_{0,1})$ first and $(\tilde U_{\mathrm L,2},\tilde{R}_{0,2})$ second, gives
 $$
-\tilde U_2\bigl(\tilde U_1\tilde{Q}\tilde U_1^{*}+\tilde{R}_{0,1}\bigr)\tilde U_2^{*}+\tilde{R}_{0,2}
-=\bigl(\tilde U_2\tilde U_1\bigr)\tilde{Q}\bigl(\tilde U_2\tilde U_1\bigr)^{*}
-+\tilde U_2\tilde{R}_{0,1}\tilde U_2^{*}+\tilde{R}_{0,2} .
+\tilde U_{\mathrm L,2}\bigl(\tilde U_{\mathrm L,1}\tilde{Q}\tilde U_{\mathrm L,1}^{*}+\tilde{R}_{0,1}\bigr)\tilde U_{\mathrm L,2}^{*}+\tilde{R}_{0,2}
+=\bigl(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}\bigr)\tilde{Q}\bigl(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}\bigr)^{*}
++\tilde U_{\mathrm L,2}\tilde{R}_{0,1}\tilde U_{\mathrm L,2}^{*}+\tilde{R}_{0,2} .
 $$
-The result is again a transformation of the same form, because $\tilde U_2\tilde U_1$ is unit-norm and $\tilde U_2\tilde{R}_{0,1}\tilde U_2^{*}$ lies in $\mathbb{M}_-$. The composition law is therefore
+The result is again a transformation of the same form, because $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ is unit-norm and $\tilde U_{\mathrm L,2}\tilde{R}_{0,1}\tilde U_{\mathrm L,2}^{*}$ lies in $\mathbb{M}_-$. The composition law is therefore
 $$
-\boxed{\ (\tilde U_2,\tilde{R}_{0,2})\circ(\tilde U_1,\tilde{R}_{0,1})
-=\bigl(\tilde U_2\tilde U_1,\ \tilde U_2\tilde{R}_{0,1}\tilde U_2^{*}+\tilde{R}_{0,2}\bigr)\ }
+\boxed{\ (\tilde U_{\mathrm L,2},\tilde{R}_{0,2})\circ(\tilde U_{\mathrm L,1},\tilde{R}_{0,1})
+=\bigl(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1},\ \tilde U_{\mathrm L,2}\tilde{R}_{0,1}\tilde U_{\mathrm L,2}^{*}+\tilde{R}_{0,2}\bigr)\ }
 $$
 with the right factor applied first. Several features of this law are worth isolating.</p>
 <ul>
 <li><strong>The rotors multiply.</strong> The homogeneous slot composes by biquaternion multiplication, as in the parent article.</li>
-<li><strong>The translations are not simply added.</strong> The first displacement is carried through the second rotor before the second displacement is added, so the translation slot of the product is $\mathrm{Ad}(\tilde U_2)\tilde{R}_{0,1}+\tilde{R}_{0,2}$, not $\tilde{R}_{0,1}+\tilde{R}_{0,2}$.</li>
+<li><strong>The translations are not simply added.</strong> The first displacement is carried through the second rotor before the second displacement is added, so the translation slot of the product is $\mathrm{Ad}(\tilde U_{\mathrm L,2})\tilde{R}_{0,1}+\tilde{R}_{0,2}$, not $\tilde{R}_{0,1}+\tilde{R}_{0,2}$.</li>
 <li><strong>The identity</strong> is $(e_t,0)$, and the <strong>inverse</strong> is
 $$
-(\tilde U,\tilde{R}_0)^{-1}=\bigl(\tilde U^{\natural},\ -\tilde U^{\natural}\,\tilde{R}_0\,\overline{\tilde U}\bigr),
+(\tilde U_{\mathrm L},\tilde{R}_0)^{-1}=\bigl(\tilde U_{\mathrm L}^{\natural},\ -\tilde U_{\mathrm L}^{\natural}\,\tilde{R}_0\,\overline{\tilde U_{\mathrm L}}\bigr),
 $$
 as one verifies directly: the inverse rotor is the quaternion conjugate, and the displacement is carried back through it.</li>
 <li><strong>Associativity</strong> is inherited from composition of maps on $\mathbb{M}_-$; it was also checked on concrete elements.</li>
@@ -143,8 +143,8 @@ as one verifies directly: the inverse rotor is the quaternion conjugate, and the
 <p>This law makes the set of pairs a group. It is a group of <strong>pairs</strong>, not a group of biquaternions: the first slot uses the algebra's multiplication and the second uses the vector-space addition. The algebra appears twice in different roles, and the group structure joins them.</p>
 <h2 id="translation-is-not-a-rotation">Translation Is Not a Rotation</h2>
 <p>It is not an accident of parametrisation that the translation is separated out. Three statements, of increasing strength, show that no multiplicative gadget in $\mathbb{B}$ can produce it.</p>
-<p><strong>A rotor conjugation cannot shift.</strong> Conjugation fixes the origin: $\tilde U\,0\,\tilde U^{*}=0$ for every rotor. A shift by $\tilde{R}_0\ne0$ sends $0$ to $\tilde{R}_0$. Since both maps are linear-plus-constant and they disagree at one point, no rotor conjugation equals a nonzero translation.</p>
-<p><strong>Conjugation preserves the biquaternion norm pointwise; a shift does not.</strong> For any rotor, $\langle\tilde U\tilde{Q}\tilde U^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$. A shift changes the biquaternion norm of a single element:
+<p><strong>A rotor conjugation cannot shift.</strong> Conjugation fixes the origin: $\tilde U_{\mathrm L}\,0\,\tilde U_{\mathrm L}^{*}=0$ for every rotor. A shift by $\tilde{R}_0\ne0$ sends $0$ to $\tilde{R}_0$. Since both maps are linear-plus-constant and they disagree at one point, no rotor conjugation equals a nonzero translation.</p>
+<p><strong>Conjugation preserves the biquaternion norm pointwise; a shift does not.</strong> For any rotor, $\langle\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$. A shift changes the biquaternion norm of a single element:
 $$
 \langle\tilde{Q}+\tilde{R}_0\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}+\mathrm{Sc}\bigl(\tilde{Q}\tilde{R}_0^{\natural}+\tilde{R}_0\tilde{Q}^{\natural}\bigr)+\langle\tilde{R}_0\rangle_{\natural},
 $$
@@ -161,10 +161,10 @@ with the Lorentz generators acting on $P_\mu$ through the vector representation 
 $$
 N=\{(e_t,\tilde{R}_0):\tilde{R}_0\in\mathbb{M}_-\}\cong(\mathbb{M}_-,+)\cong\mathbb{R}^4 .
 $$
-$N$ is an abelian subgroup, and it is <strong>normal</strong>. To see the conjugation action, let $\tilde{R}_1\in\mathbb{M}_-$ and consider $g=(\tilde U,\tilde{R}_1)$. Using the law and the inverse,
+$N$ is an abelian subgroup, and it is <strong>normal</strong>. To see the conjugation action, let $\tilde{R}_1\in\mathbb{M}_-$ and consider $g=(\tilde U_{\mathrm L},\tilde{R}_1)$. Using the law and the inverse,
 $$
-(\tilde U,\tilde{R}_1)\,(e_t,\tilde{R}_0)\,(\tilde U,\tilde{R}_1)^{-1}
-=\bigl(e_t,\ \tilde U\tilde{R}_0\tilde U^{*}\bigr).
+(\tilde U_{\mathrm L},\tilde{R}_1)\,(e_t,\tilde{R}_0)\,(\tilde U_{\mathrm L},\tilde{R}_1)^{-1}
+=\bigl(e_t,\ \tilde U_{\mathrm L}\tilde{R}_0\tilde U_{\mathrm L}^{*}\bigr).
 $$
 The displacement slot returns to $e_t$: the residual translations $\tilde{R}_1$ cancel, and what survives is exactly the rotor conjugation of $\tilde{R}_0$. In other words, the homogeneous factor acts on the translation subgroup by the <strong>vector representation</strong> $\mathrm{Ad}$ on $\mathbb{M}_-$ — the same action that defines four-vectors. The semidirect product is therefore
 $$
@@ -173,11 +173,11 @@ $$
 which is the double cover of the restricted Poincaré group $SO^+(1,3)\ltimes\mathbb{R}^4$. The whole structure is determined by data already present in $\mathbb{B}$: the group $SL(2,\mathbb{C})$ of unit-norm biquaternions, and the conjugation action $\mathrm{Ad}$ of that group on the subspace $\mathbb{M}_-$. The algebra does not need to be told what a translation is; it needs only to be told that there is one, in the form of an additive copy of $\mathbb{M}_-$.</p>
 <p>The product is <strong>not</strong> direct. A translation and a homogeneous transformation fail to commute:
 $$
-(\tilde U,0)\circ(e_t,\tilde{R}_0)=(\tilde U,\tilde U\tilde{R}_0\tilde U^{*}),
+(\tilde U_{\mathrm L},0)\circ(e_t,\tilde{R}_0)=(\tilde U_{\mathrm L},\tilde U_{\mathrm L}\tilde{R}_0\tilde U_{\mathrm L}^{*}),
 \qquad
-(e_t,\tilde{R}_0)\circ(\tilde U,0)=(\tilde U,\tilde{R}_0),
+(e_t,\tilde{R}_0)\circ(\tilde U_{\mathrm L},0)=(\tilde U_{\mathrm L},\tilde{R}_0),
 $$
-and these agree only when $\tilde{R}_0$ is fixed by $\mathrm{Ad}(\tilde U)$. Equivalently, the commutator of a pure Lorentz transformation with a pure translation is the pure translation by $\mathrm{Ad}(\tilde U)\tilde{R}_0-\tilde{R}_0$. For a boost and a displacement transverse to it this is nonzero whenever the displacement has a time component; for the boost $\tilde U_{\mathrm b}$ along $\vec e_x$ with rapidity $\psi=0.9$ used below, a displacement $\tilde{R}_0=0.4\,ie_t+0.25\vec e_x-0.35\vec e_y+0.15\vec e_z$ gives $\mathrm{Ad}(\tilde U_{\mathrm b})\tilde{R}_0-\tilde{R}_0=-0.0834\,ie_t-0.3023\,\vec e_x$. The nonvanishing of this commutator is the group-theoretic content of the statement that translations are not merely added: a change of frame drags the origin with it.</p>
+and these agree only when $\tilde{R}_0$ is fixed by $\mathrm{Ad}(\tilde U_{\mathrm L})$. Equivalently, the commutator of a pure Lorentz transformation with a pure translation is the pure translation by $\mathrm{Ad}(\tilde U_{\mathrm L})\tilde{R}_0-\tilde{R}_0$. For a boost and a displacement transverse to it this is nonzero whenever the displacement has a time component; for the boost $\tilde U_{\mathrm b}$ along $\vec e_x$ with rapidity $\psi=0.9$ used below, a displacement $\tilde{R}_0=0.4\,ie_t+0.25\vec e_x-0.35\vec e_y+0.15\vec e_z$ gives $\mathrm{Ad}(\tilde U_{\mathrm b})\tilde{R}_0-\tilde{R}_0=-0.0834\,ie_t-0.3023\,\vec e_x$. The nonvanishing of this commutator is the group-theoretic content of the statement that translations are not merely added: a change of frame drags the origin with it.</p>
 <h2 id="a-composition-checked-directly">A Composition Checked Directly</h2>
 <p>The group law is verified here on a case chosen for the check, not on a case from which the law was read off. Take $c=1$ and the two transformations
 $$
@@ -206,12 +206,12 @@ Applying the two maps in turn to $\tilde{Q}=0.2\,ie_t+0.3\,\vec e_x+0.4\,\vec e_
 <p>First, the boost acting on the displacement has changed both its time component and its spatial component: the pair $(0.5i,\,0.7,\,0,\,0)$ has become $(-0.0020i,\,0.4899,\,0,\,0)$. A shift of origin is itself a four-vector, and its components mix under a boost; this is the relativity of simultaneity appearing as a statement about the composition of frame transformations. The second displacement $\tilde{R}_{0,2}$ is simply added afterwards, as the law requires.</p>
 <p>Second, the rotor of the composite is not symmetric in the two factors. Reversing the order gives $\tilde u\tilde U_{\mathrm b}=1.0159+0.4286\,i\vec e_x+0.1812\,i\vec e_y+0.4295\,\vec e_z$: the same angle, but the opposite sign on the $i\vec e_y$ term. This is the Thomas–Wigner rotation of the parent article, entering here through the sign of one component of the composite rotor. The group law reproduces it without being told to.</p>
 <h2 id="the-frame-reading">The Frame Reading</h2>
-<p>A biquaternion <strong>frame</strong> is the data of an orientation and a state of motion together with an origin: a rotor $\tilde U$ that carries the reference frame to the frame in question, and a displacement $\tilde{R}_0$ that carries the reference origin to its origin. A Poincaré transformation is a change of frame, and the pair $(\tilde U,\tilde{R}_0)$ is exactly that change. In this interpretation the two slots have distinct jobs: the rotor is a multiplicative object, an element of the group of unit-norm biquaternions, while the displacement is an additive object, an element of the vector space $\mathbb{M}_-$. The group law says that frame changes compose in the familiar way — orientations compose multiplicatively, origins transform as four-vectors and then add.</p>
+<p>A biquaternion <strong>frame</strong> is the data of an orientation and a state of motion together with an origin: a rotor $\tilde U_{\mathrm L}$ that carries the reference frame to the frame in question, and a displacement $\tilde{R}_0$ that carries the reference origin to its origin. A Poincaré transformation is a change of frame, and the pair $(\tilde U_{\mathrm L},\tilde{R}_0)$ is exactly that change. In this interpretation the two slots have distinct jobs: the rotor is a multiplicative object, an element of the group of unit-norm biquaternions, while the displacement is an additive object, an element of the vector space $\mathbb{M}_-$. The group law says that frame changes compose in the familiar way — orientations compose multiplicatively, origins transform as four-vectors and then add.</p>
 <p>The rotor attached to a frame is not independent of its state of motion. For a frame whose four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$, the boost rotor that carries the rest frame to it is
 $$
-\tilde U=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}},
+\tilde U_{\mathrm L}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}},
 $$
-the square root being multivalued by sign, with the branch selected by $\mathrm{Sc}(\tilde U)>0$. This relation, established in <em>The Lorentz Transformation as a Biquaternionic Rotation</em>, populates the multiplicative slot from the material data; the additive slot is populated by the position of the origin. The limitation is felt here: the rotor is a biquaternion, the origin is not.</p>
+the square root being multivalued by sign, with the branch selected by $\mathrm{Sc}(\tilde U_{\mathrm L})>0$. This relation, established in <em>The Lorentz Transformation as a Biquaternionic Rotation</em>, populates the multiplicative slot from the material data; the additive slot is populated by the position of the origin. The limitation is felt here: the rotor is a biquaternion, the origin is not.</p>
 <h2 id="what-the-frame-captures-and-what-it-does-not">What the Frame Captures, and What It Does Not</h2>
 <p><strong>Captured exactly.</strong> The biquaternion algebra contains the connected, restricted Lorentz group: its unit-norm elements are $SL(2,\mathbb{C})$, its conjugation action on $\mathbb{M}_-$ is the vector representation, and the covering homomorphism onto $SO^+(1,3)$ is two-to-one with kernel $\{\pm e_t\}$. The material sector $\mathbb{M}_-$ carries the four-vectors, their interval, and the light cone as the zero-divisor set. Because the semidirect product is determined by $SL(2,\mathbb{C})$ together with the representation $\mathrm{Ad}$ on $\mathbb{M}_-$, the biquaternion frame determines the full restricted Poincaré group once the translation factor is supplied; in that precise sense the group is a property of the algebra even though its elements are pairs rather than rotors.</p>
 <p><strong>Not captured as rotors.</strong> The translation is additive. It is not a conjugation and not a product of rotors, and no faithful homomorphism of the Poincaré group into $\mathbb{B}^\times$ exists at all; the dimension count settles this. The discrete inversions are also outside the connected rotor group: the spatial inversion $t\mapsto t$, $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is implemented on $\mathbb{M}_-$ by quaternion conjugation $\tilde{Q}\mapsto\tilde{Q}^{\natural}$, which is an algebra <strong>anti</strong>-automorphism, not an inner automorphism, and it is this that places spatial inversion outside $SL(2,\mathbb{C})$. The cover of the Lorentz group is therefore a cover of its connected part, and an extension of the group by spatial inversion requires that anti-automorphism as well.</p>
@@ -224,24 +224,24 @@ the square root being multivalued by sign, with the branch selected by $\mathrm{
 <p>The honest summary is that the biquaternion frame answers the homogeneous question exactly and the translation question not at all: the biquaternions supply the first factor of the semidirect product and the action on the second, and whether the second can be absorbed into a biquaternion-like algebra, and which one, is open. No choice among the candidates is made here.</p>
 <h2 id="covariance-of-the-biwave-equation">Covariance of the Biwave Equation</h2>
 <p>The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of <em>spacetime</em> rather than equations in a preferred frame. The equation to state it for is the first-order <strong>biwave equation</strong> $\tilde{\nabla}\tilde\Phi = \tilde{G}$, the corpus gradient acting on a biquaternion field $\tilde\Phi$, with a source $\tilde G$; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.</p>
-<p><strong>The conjugated gradient is the gradient in the rotated basis.</strong> The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ of the section <em>The Frame Reading</em>, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
+<p><strong>The conjugated gradient is the gradient in the rotated basis.</strong> The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ of the section <em>The Frame Reading</em>, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
 $$
-\tilde{\nabla}' := \sum_\mu \left(\tilde U\,e_\mu\,\tilde U^{-1}\right)\partial_\mu .
+\tilde{\nabla}' := \sum_\mu \left(\tilde U_{\mathrm L}\,e_\mu\,\tilde U_{\mathrm L}^{-1}\right)\partial_\mu .
 $$
 Conjugation by a constant rotor is an algebra automorphism and it commutes with the constant-coefficient derivatives, so for the field transformed with the basis,
 $$
-\tilde{\nabla}'\left(\tilde U\tilde\Phi\tilde U^{*}\right) = \tilde U\left(\tilde{\nabla}\tilde\Phi\right)\tilde U^{*} ,
+\tilde{\nabla}'\left(\tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}\right) = \tilde U_{\mathrm L}\left(\tilde{\nabla}\tilde\Phi\right)\tilde U_{\mathrm L}^{*} ,
 $$
-which was checked on random rotors and random $\tilde\Phi$. The equation $\tilde{\nabla}\tilde\Phi = \tilde{G}$ therefore maps to $\tilde{\nabla}'\tilde\Phi' = \tilde{G}'$ with $\tilde\Phi' = \tilde U\tilde\Phi\tilde U^{*}$ and $\tilde{G}' = \tilde U\tilde{G}\tilde U^{*}$: the equation is <strong>form-invariant</strong>, its form unchanged although its basis has moved.</p>
-<p><strong>Why it is a theorem and not a tautology.</strong> Three facts carry the statement. The rotated elements $\tilde Ue_\mu\tilde U^{-1}$ are again a basis with the same multiplication table, so the rotated equation is an equation of the same kind and not a different one; the map $\tilde U\mapsto\mathrm{Ad}$ is the two-to-one cover onto $SO^+(1,3)$ of the section <em>The Homogeneous Part, Recalled</em>, so the basis rotation is a Lorentz transformation of the frame; and a central shift or a central second-order factor is carried along unchanged, so the shift of the companion d'Alembertian article adds nothing to the argument. The translation completes it rather than complicating it: translations act additively on the argument, and an operator with constant coefficients is unchanged by a shift of its argument, so the full Poincaré statement is the semidirect extension of the homogeneous one — which is the source's Theorem 4.1 read in the corpus frame.</p>
+which was checked on random rotors and random $\tilde\Phi$. The equation $\tilde{\nabla}\tilde\Phi = \tilde{G}$ therefore maps to $\tilde{\nabla}'\tilde\Phi' = \tilde{G}'$ with $\tilde\Phi' = \tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}$ and $\tilde{G}' = \tilde U_{\mathrm L}\tilde{G}\tilde U_{\mathrm L}^{*}$: the equation is <strong>form-invariant</strong>, its form unchanged although its basis has moved.</p>
+<p><strong>Why it is a theorem and not a tautology.</strong> Three facts carry the statement. The rotated elements $\tilde U_{\mathrm L}e_\mu\tilde U_{\mathrm L}^{-1}$ are again a basis with the same multiplication table, so the rotated equation is an equation of the same kind and not a different one; the map $\tilde U_{\mathrm L}\mapsto\mathrm{Ad}$ is the two-to-one cover onto $SO^+(1,3)$ of the section <em>The Homogeneous Part, Recalled</em>, so the basis rotation is a Lorentz transformation of the frame; and a central shift or a central second-order factor is carried along unchanged, so the shift of the companion d'Alembertian article adds nothing to the argument. The translation completes it rather than complicating it: translations act additively on the argument, and an operator with constant coefficients is unchanged by a shift of its argument, so the full Poincaré statement is the semidirect extension of the homogeneous one — which is the source's Theorem 4.1 read in the corpus frame.</p>
 <p><strong>The two restrictions.</strong> The statement is about the <strong>free</strong> operator, and it needs the coefficients constant. It does not extend to the <em>coupled, nonlinear</em> systems of the electro-gravimagnetic programme, and that is exactly why the negative result of the companion article on that programme is compatible with it: there the charge–current conservation law of the coupled system fails to be invariant, while the free biwave operator here is invariant, and the two statements are about different operators. And it is a covariance, not a construction: it says that a solution transforms to a solution of the equation written in the new basis, which is what makes the equation well posed on Minkowski space, and it says nothing about which solutions exist.</p>
 <h2 id="summary">Summary</h2>
-<p>The Poincaré group is the ten-parameter group of affine isometries of Minkowski space, and its restricted connected form is the semidirect product $SO^+(1,3)\ltimes\mathbb{R}^4$; its double cover is $SL(2,\mathbb{C})\ltimes\mathbb{R}^4$. The biquaternion algebra $\mathbb{B}$ contains the homogeneous factor exactly: the unit-norm biquaternions are $SL(2,\mathbb{C})$, rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ is the action on the material sector $\mathbb{M}_-$, and $\mathrm{Ad}$ is the two-to-one covering map onto $SO^+(1,3)$.</p>
+<p>The Poincaré group is the ten-parameter group of affine isometries of Minkowski space, and its restricted connected form is the semidirect product $SO^+(1,3)\ltimes\mathbb{R}^4$; its double cover is $SL(2,\mathbb{C})\ltimes\mathbb{R}^4$. The biquaternion algebra $\mathbb{B}$ contains the homogeneous factor exactly: the unit-norm biquaternions are $SL(2,\mathbb{C})$, rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ is the action on the material sector $\mathbb{M}_-$, and $\mathrm{Ad}$ is the two-to-one covering map onto $SO^+(1,3)$.</p>
 <p>Translation is not a rotation in this algebra. A rotor conjugation is linear and fixes the origin; a shift is affine and does not. Conjugation preserves the biquaternion norm pointwise while a shift preserves only the biquaternion norm of differences, which is why the interval survives translation; and no faithful assignment of rotors to Poincaré elements exists, because the group has ten real dimensions and the rotor group six.</p>
-<p>The correct object is the pair $(\tilde U,\tilde{R}_0)$, with $\tilde{R}_0\in\mathbb{M}_-$, acting by $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}+\tilde{R}_0$, and composing by
+<p>The correct object is the pair $(\tilde U_{\mathrm L},\tilde{R}_0)$, with $\tilde{R}_0\in\mathbb{M}_-$, acting by $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}+\tilde{R}_0$, and composing by
 $$
-(\tilde U_2,\tilde{R}_{0,2})\circ(\tilde U_1,\tilde{R}_{0,1})
-=\bigl(\tilde U_2\tilde U_1,\ \tilde U_2\tilde{R}_{0,1}\tilde U_2^{*}+\tilde{R}_{0,2}\bigr).
+(\tilde U_{\mathrm L,2},\tilde{R}_{0,2})\circ(\tilde U_{\mathrm L,1},\tilde{R}_{0,1})
+=\bigl(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1},\ \tilde U_{\mathrm L,2}\tilde{R}_{0,1}\tilde U_{\mathrm L,2}^{*}+\tilde{R}_{0,2}\bigr).
 $$
 The pure translations form a normal abelian subgroup, and conjugation by a homogeneous transformation acts on it by the vector representation $\mathrm{Ad}$, so the group is the semidirect product $SL(2,\mathbb{C})\ltimes_{\mathrm{Ad}}\mathbb{R}^4$. The group law was verified on a rotation, a boost, and two translations chosen for the check; the composite translation mixed as a four-vector under the boost, and the composite rotor showed the Thomas–Wigner asymmetry on reversal of the order.</p>
 <p>What the frame captures is the connected homogeneous group and its action; what it does not capture as a rotor is the translation. Whether an enlarged algebra can absorb the translation multiplicatively, as dual quaternions do in the Euclidean case, is stated as open.</p>
@@ -283,11 +283,11 @@ The pure translations form a normal abelian subgroup, and conjugation by a homog
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde U\in SL(2,\mathbb{C})$</td>
+<td>$\tilde U_{\mathrm L}\in SL(2,\mathbb{C})$</td>
 <td>Unit-norm biquaternion (Lorentz rotor)</td>
 </tr>
 <tr>
-<td>$\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$</td>
+<td>$\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$</td>
 <td>Rotor conjugation (four-vector action)</td>
 </tr>
 <tr>
@@ -303,7 +303,7 @@ The pure translations form a normal abelian subgroup, and conjugation by a homog
 <td>Rotation rotor (unit real quaternion)</td>
 </tr>
 <tr>
-<td>$\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\tilde U=\sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$</td>
+<td>$\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\tilde U_{\mathrm L}=\sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$</td>
 <td>Four-velocity and its frame rotor</td>
 </tr>
 <tr>
@@ -311,11 +311,11 @@ The pure translations form a normal abelian subgroup, and conjugation by a homog
 <td>Translation (displacement)</td>
 </tr>
 <tr>
-<td>$(\tilde U,\tilde{R}_0)$</td>
-<td>Poincaré transformation, acting by $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}+\tilde{R}_0$</td>
+<td>$(\tilde U_{\mathrm L},\tilde{R}_0)$</td>
+<td>Poincaré transformation, acting by $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}+\tilde{R}_0$</td>
 </tr>
 <tr>
-<td>$(\tilde U_2,\tilde{R}_{0,2})\circ(\tilde U_1,\tilde{R}_{0,1})=(\tilde U_2\tilde U_1,\tilde U_2\tilde{R}_{0,1}\tilde U_2^{*}+\tilde{R}_{0,2})$</td>
+<td>$(\tilde U_{\mathrm L,2},\tilde{R}_{0,2})\circ(\tilde U_{\mathrm L,1},\tilde{R}_{0,1})=(\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1},\tilde U_{\mathrm L,2}\tilde{R}_{0,1}\tilde U_{\mathrm L,2}^{*}+\tilde{R}_{0,2})$</td>
 <td>Poincaré group law</td>
 </tr>
 <tr>
@@ -331,7 +331,7 @@ The pure translations form a normal abelian subgroup, and conjugation by a homog
 <td>Biquaternionic gradient (material four-vector of operators)</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}' = \sum_\mu(\tilde Ue_\mu\tilde U^{-1})\partial_\mu$</td>
+<td>$\tilde{\nabla}' = \sum_\mu(\tilde U_{\mathrm L}e_\mu\tilde U_{\mathrm L}^{-1})\partial_\mu$</td>
 <td>Conjugated gradient, the gradient in the rotated basis</td>
 </tr>
 <tr>

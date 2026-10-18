@@ -214,7 +214,7 @@ D\bigl(\tilde\Pi(\vec u), \tilde\Pi(\vec u_\nu)\bigr) = \sin\frac{\theta}{2}.
 $$</p>
 <p>Together with the transition probability $\mathrm{Tr}(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)) = \cos^2(\theta/2)$ this gives the clean pair</p>
 <p>$$
-D^2 + \mathrm{Tr}(\tilde{P}\tilde{Q}) = 1 \qquad \text{for pure states,}
+D^2 + \mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)\bigr) = 1 \qquad \text{for pure states,}
 $$</p>
 <p>so the two notions of separation are complementary on the boundary: coincident directions give $D = 0$ and transition probability $1$, antipodal directions give $D = 1$ and transition probability $0$.</p>
 <p>(d) Since $|\vec r-\vec s| \leq |\vec r| + |\vec s| \leq 2$, we have $0 \leq D \leq 1$. The upper bound is attained exactly when $|\vec r| = |\vec s| = 1$ and $\vec s = -\vec r$, the case of orthogonal states treated in Problem 6. The trace distance is thus bounded by the information-theoretic maximum $1$, the probability of perfectly distinguishing the two states, and it reaches it only at the two ends of a diameter.</p>
@@ -276,7 +276,7 @@ $$</p>
 <p><strong>Parametrisation.</strong> A state is $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ with $|\vec r| \leq 1$; the components of $\vec r$ are the single-qubit expectation values $r_k = \langle\sigma_k\rangle$, and a measurement along $\vec u$ has outcomes $\tfrac12(1 \pm \vec u\cdot\vec r)$.</p>
 <p><strong>Purity and entropy.</strong> Purity, linear entropy, and von Neumann entropy are functions of the radius alone: $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+|\vec r|^2)$, $S_{\mathrm{lin}} = \tfrac12(1-|\vec r|^2)$, and $S = -\sum_\pm\lambda_\pm\log\lambda_\pm$ with $\lambda_\pm = \tfrac12(1\pm|\vec r|)$.</p>
 <p><strong>Convex combinations.</strong> A mixture of two pure states lies on the chord joining them, with $|\vec r|^2 = 1 - 2p(1-p)(1-\cos\theta)$ and linear entropy $p(1-p)(1-\cos\theta)$; it is pure only in the degenerate cases $p \in \{0,1\}$ or coincident directions.</p>
-<p><strong>Metric.</strong> The trace distance is $D = \tfrac12|\vec r-\vec s|$ and the squared Hilbert–Schmidt distance is $2D^2$. For pure states $D = \sin(\theta/2)$ and the transition probability is $\cos^2(\theta/2)$, so $D^2 + \mathrm{Tr}(\tilde{P}\tilde{Q}) = 1$.</p>
+<p><strong>Metric.</strong> The trace distance is $D = \tfrac12|\vec r-\vec s|$ and the squared Hilbert–Schmidt distance is $2D^2$. For pure states $D = \sin(\theta/2)$ and the transition probability is $\cos^2(\theta/2)$, so $D^2 + \mathrm{Tr}\bigl(\tilde\Pi(\vec r)\tilde\Pi(\vec s)\bigr) = 1$.</p>
 <p><strong>Centre and boundary.</strong> The centre is the maximally mixed state $\tfrac12 e_t$, with minimal purity $\tfrac12$ and maximal entropy $\log 2$; the boundary $|\vec r| = 1$ consists of the pure states, equivalently the idempotents, the zero divisors, and the extreme points. Elements with $|\vec r| > 1$ are not states.</p>
 <p><strong>Identical and orthogonal.</strong> Two states are identical iff $\vec r = \vec s$; they have orthogonal supports — and the Uhlmann transition probability vanishes — iff $\vec r\cdot\vec s = -1$, which forces $|\vec r| = |\vec s| = 1$ and $\vec s = -\vec r$. Only the two ends of a diameter are perfectly distinguishable.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>

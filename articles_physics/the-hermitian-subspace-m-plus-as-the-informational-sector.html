@@ -262,10 +262,10 @@ $$</p>
 <p>This is the algebraic content of the interpretation of $\mathbb{M}_+$ as "informational" (or "operational"): its elements are the things that act, rather than the things that are acted upon. The two roles are not symmetric — one acts, the other is acted upon — and the asymmetry is what earns the sector its name.</p>
 <h3 id="reversible-versus-irreversible-actions">Reversible Versus Irreversible Actions</h3>
 <p>The elements of $\mathbb{M}_+$ include two important classes.</p>
-<p><strong>Unit-norm elements</strong> ($\tilde{Q}\tilde{Q}^{\natural} = e_t$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by <strong>reversible</strong> transformations. Examples: the boost biquaternions $\tilde{U}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^{*} = e_t$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.</p>
-<p><strong>Idempotent elements</strong> ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_t$). They act by <strong>irreversible</strong> projections: $\tilde{Q}_- \mapsto \tilde\Pi\tilde{Q}_-\tilde\Pi$. Examples: the pure-state projectors $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$. These correspond to quantum-mechanical measurements.</p>
+<p><strong>Unit-norm elements</strong> ($\tilde{Q}\tilde{Q}^{\natural} = e_t$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by <strong>reversible</strong> transformations. Examples: the boost biquaternions $\tilde U_{\mathrm L}$, which are Lorentz rotors, and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^{*} = e_t$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.</p>
+<p><strong>Idempotent elements</strong> ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_t$). They act by <strong>irreversible</strong> projections: $\tilde{Q}_- \mapsto \tilde\Pi\tilde{Q}_-\tilde\Pi$. Examples: the pure-state idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$. These correspond to quantum-mechanical measurements.</p>
 <p>The <strong>dichotomy between reversible and irreversible actions</strong> is intrinsic to the structure of $\mathbb{M}_+$: a norm-preserving rotor against a norm-destroying projection. On the material sector, where the acting element is a Lorentz rotor, the two are the Lorentz transformations and the measurements; read on the informational sector, where the acting element must preserve the trace, the reversible class narrows to the <strong>matrix-unitary</strong> elements of §<em>The Correspondence</em>, and the pair is exactly the quantum-information dichotomy between unitary evolution and measurement.</p>
-<p>Both ends of the dichotomy have their physics names, and both are owned by later articles, but the statements belong here. The idempotent end is <strong>decoherence</strong>: the irreversible projection of a state onto an idempotent is the algebraic form of a measurement, and the projection onto a minimal left ideal is what a measurement completes. The distinguished projection of the sector is the <strong>vacuum</strong> of a single fermionic mode, the minimal idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, which is simultaneously a pure state, a rank-one projector and a zero divisor. The two are <em>Decoherence as Idempotent Projection</em> and <em>The Biquaternion Vacuum as a Minimal Idempotent</em>.</p>
+<p>Both ends of the dichotomy have their physics names, and both are owned by later articles, but the statements belong here. The idempotent end is <strong>decoherence</strong>: the irreversible projection of a state onto an idempotent is the algebraic form of a measurement, and the projection onto a minimal left ideal is what a measurement completes. The distinguished idempotent of the sector is the <strong>vacuum</strong> of a single fermionic mode, the minimal idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, which is simultaneously a pure state, a rank-one idempotent and a zero divisor. The two are <em>Decoherence as Idempotent Projection</em> and <em>The Biquaternion Vacuum as a Minimal Idempotent</em>.</p>
 <h3 id="the-trace-formula">The Trace Formula</h3>
 <p>For $\tilde\Pi \in \mathbb{M}_+$ idempotent (a state) and $\tilde{Q} \in \mathbb{M}_+$ Hermitian (an observable), the quantity</p>
 <p>$$
@@ -296,8 +296,8 @@ $$</p>
 <p><strong>3. The level sets are the groups the physics uses.</strong> Each of the four forms singles out a level set, and the physics reads three of them. The level set of the unit form, $Q^{*}Q=e_t$, is the unitary slice $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$, the internal unitary group of the evolution. The level set of the norm form, $\langle\tilde Q,\tilde Q\rangle_{\natural}=1$, is the norm-one group $\mathbb{B}^{\times}_{1}$, the Lorentz rotors. The Euclidean sphere $S^{7}$, the level set of the general plain sesquilinear form, is <strong>not</strong> used, and the reason is that the general plain bilinear form is not multiplicative: the witness is the element $\vec e_x+i\vec e_y$, whose Euclidean norm is $\sqrt2$ while $\sum_\mu Q_\mu^{2}=0$, so the sphere contains zero divisors and is not a group at all. <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>; <em>The Euclidean Topology of the Biquaternion Algebra</em>.</p>
 <p><strong>4. The operator dictionary is the adjointness dictionary.</strong> The observables are the self-adjoint operators and they are exactly $\mathbb{M}_+$: each is the reading $L_{\tilde H}$, $\tilde H\in\mathbb{M}_+$, whose eigenvalues are the real numbers a measurement returns, and each Hermitian element is the representative $\tilde H=iA$ of a <strong>material element</strong> $A\in\mathbb{M}_-$, which is what is observed. Generators are the skew-adjoint elements, that is $\mathbb{M}_-$; unitaries are the slice of the first item above. This is why the series of mathematical articles is titled "with Hermitian Adjoint": the physical roles are read from the adjoint of one element and nothing else. <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em>.</p>
 <p><strong>5. One operator carries both evolutions.</strong> The evolution $\tilde{Ϛ}\mapsto\tilde U\tilde{Ϛ}\tilde U^{*}$ and the measurement $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ of §<em>Reversible Versus Irreversible Actions</em> are the same two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{\dagger}}$, the <strong>dagger sandwich</strong>, evaluated at a unitary parameter and at an idempotent one. The reversible–irreversible dichotomy of the physics is therefore the unitary–self-adjoint dichotomy of the operator theory, and no second operator is needed to hold the two. The operator is quadratic in its parameter and its adjoint is linear, which is why the two parameters read differently; <em>Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint</em>.</p>
-<p><strong>6. Projections come from one sector only.</strong> A measurement projection is an idempotent, and no nonzero idempotent lies in $\mathbb{M}_-$: if $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the anti-automorphism to the first relation gives $-\tilde\Pi=(\tilde\Pi^{*})^{2}=(-\tilde\Pi)^{2}=\tilde\Pi^{2}=\tilde\Pi$, whence $\tilde\Pi=0$. The material sector therefore owns no projector, and the Peirce decomposition of a measurement runs through $\mathbb{M}_+$ alone. <em>Hermitian Idempotents and the Peirce Decomposition</em>.</p>
-<p>The <strong>material element</strong> is the object observed; the projector in $\mathbb{M}_+$ is the outcome. The measurement pairs them through the central $i$.</p>
+<p><strong>6. Projections come from one sector only.</strong> A measurement projection is an idempotent, and no nonzero idempotent lies in $\mathbb{M}_-$: if $\tilde\Pi^{2}=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the anti-automorphism to the first relation gives $-\tilde\Pi=(\tilde\Pi^{*})^{2}=(-\tilde\Pi)^{2}=\tilde\Pi^{2}=\tilde\Pi$, whence $\tilde\Pi=0$. The material sector therefore owns no idempotent, and the Peirce decomposition of a measurement runs through $\mathbb{M}_+$ alone. <em>Hermitian Idempotents and the Peirce Decomposition</em>.</p>
+<p>The <strong>material element</strong> is the object observed; the idempotent in $\mathbb{M}_+$ is the outcome. The measurement pairs them through the central $i$.</p>
 <p><strong>7. Two pairings, because one of them is not Hermitian.</strong> The Lorentzian interval on $\mathbb{M}_-$ is the quaternion <strong>bilinear</strong> form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ of <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em>, the second slot without the star, of signature $(-,+,+,+)$ on the four real directions $ict\,e_t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. It is excluded from the Witt classification of Hermitian forms for exactly one reason: it is not Hermitian for the dagger, being complex-valued, indefinite and isotropic on the null cone, and the two types of form must not be placed in the same classification. The framework therefore needs two pairings and not one — $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ for probability, $\langle\cdot\rangle_{\natural}$ for the metric — and on each sector the two agree up to sign, $\langle\tilde P,\tilde Q\rangle_{*}=\pm\langle\tilde P,\tilde Q\rangle$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\pm\langle\tilde P,\tilde Q\rangle_{\natural}$, with $+$ on $\mathbb{M}_+$ and $-$ on $\mathbb{M}_-$. <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>; <em>Hermitian Forms over the Biquaternioid Algebra and the Unitary Witt Group with Hermitian Adjoint</em>.</p>
 <p><strong>8. The two pairings have no alternating companion on the sector.</strong> §<em>The Four Forms on the Sector, and the Absence of an Area Pairing</em>: the four forms restricted to $\mathbb{M}_+$ are real-valued, so their imaginary parts vanish and the sector carries no alternating companion and no conjugate pair of its own, since $i\mathbb{M}_+=\mathbb{M}_-$; every canonical pair of the framework has one leg in each sector, the two times $e_t$ and $ie_t$ in the complex time sector and the three spatial pairs $(\vec e_k,i\vec e_k)$ in the complex space sector (<em>Other Remarkable Subspaces</em>). The statement is a property of the restriction of a form to a subspace and of where the multiplication by the central imaginary closes, and it is owned, for the remarkable subspaces at once, by <em>Remarkable Subspaces and the Four Forms</em> — with the four forms themselves, their two slots and their four names in <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em> and the convention of the four pairings in <em>Conventions in the Biquaternion Universe</em>.</p>
 <h3 id="the-spectral-decomposition">The Spectral Decomposition</h3>
@@ -309,7 +309,7 @@ $$</p>
 <p>$$
 \lambda_\pm = h_t \pm |\vec h|,
 $$</p>
-<p>real, and the two idempotents are the <strong>eigenprojectors</strong>, $\tilde{Q}\tilde\Pi_{1,2} = \lambda_\pm\tilde\Pi_{1,2}$. Because $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_t$ alone exactly when $\vec h = 0$. The trace and the biquaternion norm read</p>
+<p>real, and the two idempotents are the <strong>eigen-idempotents</strong>, $\tilde{Q}\tilde\Pi_{1,2} = \lambda_\pm\tilde\Pi_{1,2}$. Because $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_t$ alone exactly when $\vec h = 0$. The trace and the biquaternion norm read</p>
 <p>$$
 \mathrm{Tr}(\tilde{Q}) = 2h_t = \lambda_+ + \lambda_-, \qquad \langle\tilde{Q}\rangle_{\natural} = h_t^2 - |\vec h|^2 = \lambda_+\lambda_-,
 $$</p>
@@ -483,10 +483,10 @@ $$</p>
 <h3 id="the-boost-biquaternion">The Boost Biquaternion</h3>
 <p>The <strong>boost biquaternion</strong></p>
 <p>$$
-\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \vec u_{\mathrm b}^2 = -e_t,
+\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \vec u_{\mathrm b}^2 = -e_t,
 $$</p>
-<p>lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\vec u_{\mathrm b}$ is purely imaginary. It is Hermitian ($\tilde{U}^{*} = \tilde{U}$) and has unit norm ($\tilde{U}\tilde{U}^{\natural} = e_t$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.</p>
-<p>The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is the <strong>prototype</strong> of an operator acting on the material sector $\mathbb{M}_-$. More generally, every unit-norm biquaternion $\tilde{U} \in \mathbb{B}$ acts on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$. For pure boosts, $\tilde{U}$ lies in $\mathbb{M}_+$. For pure spatial rotations, $\tilde{U}$ lies in $\mathbb{H}_{\mathbb{B}}$. For general Lorentz transformations, $\tilde{U}$ is a general unit-norm biquaternion in $\mathbb{B}$. The point is that the action of any such rotor on $\mathbb{M}_-$ preserves $\mathbb{M}_-$.</p>
+<p>lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\vec u_{\mathrm b}$ is purely imaginary. It is Hermitian ($\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$) and has unit norm ($\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.</p>
+<p>The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is the <strong>prototype</strong> of an operator acting on the material sector $\mathbb{M}_-$. More generally, every unit-norm biquaternion $\tilde U_{\mathrm L} \in \mathbb{B}$ acts on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$. For pure boosts, $\tilde U_{\mathrm L}$ lies in $\mathbb{M}_+$. For pure spatial rotations, $\tilde U_{\mathrm L}$ lies in $\mathbb{H}_{\mathbb{B}}$. For general Lorentz transformations, $\tilde U_{\mathrm L}$ is a general unit-norm biquaternion in $\mathbb{B}$. The point is that the action of any such rotor on $\mathbb{M}_-$ preserves $\mathbb{M}_-$.</p>
 <h3 id="the-idempotents">The Idempotents</h3>
 <p>The <strong>idempotents</strong> of $\mathbb{B}$ of the form</p>
 <p>$$
@@ -543,14 +543,14 @@ The Hermitian form is the natural "weight" or "energy" of the element $\tilde{Q}
 <td>Identity operator</td>
 </tr>
 <tr>
-<td>Boost biquaternion $\tilde{U}$</td>
+<td>Boost biquaternion $\tilde U_{\mathrm L}$</td>
 <td>Hermitian, unit norm</td>
 <td>Lorentz boost rotor</td>
 </tr>
 <tr>
 <td>Idempotent $\tilde\Pi_{1,2}(\vec u)$</td>
 <td>Hermitian, idempotent, trace 1</td>
-<td>Pure state / projector</td>
+<td>Pure state</td>
 </tr>
 <tr>
 <td>Mixed state $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r| \leq 1$</td>
@@ -615,7 +615,7 @@ The Hermitian form is the natural "weight" or "energy" of the element $\tilde{Q}
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\tilde{U} \in \mathbb{B}$, $\tilde{U}\tilde{U}^{\natural} = e_t$</td>
+<td>$\tilde U_{\mathrm L} \in \mathbb{B}$, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$</td>
 <td>Lorentz rotor (unit-norm biquaternion)</td>
 </tr>
 <tr>
@@ -624,7 +624,7 @@ The Hermitian form is the natural "weight" or "energy" of the element $\tilde{Q}
 </tr>
 <tr>
 <td>$\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$</td>
-<td>Idempotent (pure-state projector) of unit trace</td>
+<td>Pure-state idempotent of unit trace</td>
 </tr>
 <tr>
 <td>$\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r| \leq 1$</td>

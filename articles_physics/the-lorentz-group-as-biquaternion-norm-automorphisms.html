@@ -81,11 +81,11 @@ $$</p>
 <ul>
 <li><strong>At the complex level</strong>, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{-1}$.</li>
 <li><strong>At the real level</strong>, the restricted form on the anti-Hermitian slice is the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.</li>
-<li><strong>At the rotor level</strong>, the identity component is exactly the group of conjugations $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ by unit-norm biquaternions, and the correspondence is two-to-one.</li>
+<li><strong>At the rotor level</strong>, the identity component is exactly the group of conjugations $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ by the Lorentz rotor $\tilde U_{\mathrm L}$, a unit-norm biquaternion, and the correspondence is two-to-one.</li>
 <li><strong>At the algebra level</strong>, the automorphisms that preserve the <strong>product</strong> and not only the form are the inner ones, and they are the diagonal $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is <em>bilinear</em> in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section <em>The Algebra Automorphisms: the Diagonal, and an Induced Causality</em> treats it as the middle case between the norm and the slice.</li>
 </ul>
 <p><strong>Boundaries.</strong> This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article <em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em>. The structure and the finite-dimensional representations of the group as such are treated in <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>; this article's subject is the characterization of the group by the form.</p>
-<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$.</p>
+<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$.</p>
 <h2 id="the-biquaternion-norm-as-a-quadratic-form">The Biquaternion Norm as a Quadratic Form</h2>
 <p>The biquaternion norm is the quadratic map</p>
 <p>$$
@@ -247,37 +247,37 @@ $$</p>
 <h2 id="the-rotor-realization-of-the-automorphisms">The Rotor Realization of the Automorphisms</h2>
 <p>The identity component has an explicit algebraic form. A <strong>Lorentz rotor</strong> is a unit-norm biquaternion,</p>
 <p>$$
-\tilde{U}\in\mathbb{B},
+\tilde U_{\mathrm L}\in\mathbb{B},
 \qquad
-\tilde{U}\overline{\tilde{U}} = e_t ,
+\tilde U_{\mathrm L}\overline{\tilde U_{\mathrm L}} = e_t ,
 $$</p>
 <p>and it acts by <strong>conjugation</strong>,</p>
 <p>$$
-\pi(\tilde{U}):\ \tilde{Q}\ \longmapsto\ \tilde{U}\,\tilde{Q}\,\tilde{U}^{*} .
+\pi(\tilde U_{\mathrm L}):\ \tilde{Q}\ \longmapsto\ \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*} .
 $$</p>
 <p>Three properties, each a one-line verification, are the content of the identification.</p>
 <p><strong>It preserves the slice.</strong> If $\tilde{Q}^{*} = -\tilde{Q}$ then</p>
 <p>$$
-\left(\tilde{U}\tilde{Q}\tilde{U}^{*}\right)^\dagger
-= \tilde{U}\tilde{Q}^{*}\tilde{U}^{*}
-= -\tilde{U}\tilde{Q}\tilde{U}^{*},
+\left(\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\right)^\dagger
+= \tilde U_{\mathrm L}\tilde{Q}^{*}\tilde U_{\mathrm L}^{*}
+= -\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*},
 $$</p>
 <p>so the image is again anti-Hermitian.</p>
 <p><strong>It preserves the form.</strong> By multiplicativity,</p>
 <p>$$
-\langle\tilde{U}\tilde{Q}\tilde{U}^{*}\rangle_{\natural}
-= \langle\tilde{U}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{U}^{*}\rangle_{\natural}
-= 1\cdot \langle\tilde{Q}\rangle_{\natural}\cdot\overline{\langle\tilde{U}\rangle_{\natural}}
+\langle\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\rangle_{\natural}
+= \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural}
+= 1\cdot \langle\tilde{Q}\rangle_{\natural}\cdot\overline{\langle\tilde U_{\mathrm L}\rangle_{\natural}}
 = \langle\tilde{Q}\rangle_{\natural},
 $$</p>
-<p>using $\langle\tilde{U}\rangle_{\natural} = 1$ and $\langle\tilde{U}^{*}\rangle_{\natural} = \overline{\langle\tilde{U}\rangle_{\natural}} = 1$.</p>
-<p><strong>It defines a homomorphism.</strong> Since $\pi(\tilde{U}_1)\pi(\tilde{U}_2) = \pi(\tilde{U}_1\tilde{U}_2)$ and $(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*}$ reuses the same $\tilde{U}$ on both sides, the assignment is a continuous group homomorphism</p>
+<p>using $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ and $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm L}\rangle_{\natural}} = 1$.</p>
+<p><strong>It defines a homomorphism.</strong> Since $\pi(\tilde U_{\mathrm L,1})\pi(\tilde U_{\mathrm L,2}) = \pi(\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2})$ and $(\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*})^{*}$ reuses the same $\tilde U_{\mathrm L}$ on both sides, the assignment is a continuous group homomorphism</p>
 <p>$$
-\pi:\ SL(2,\mathbb{C}) = \{\tilde{U} : \langle\tilde{U}\rangle_{\natural} = 1\} \longrightarrow SO^+(1,3).
+\pi:\ SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = 1\} \longrightarrow SO^+(1,3).
 $$</p>
 <p>Its kernel is the set of rotors acting trivially on every $\tilde{Q}\in\mathbb{M}_-$. Since $-e_t$ is central,</p>
 <p>$$
-(-e_t)\,\tilde{Q}\,(-e_t)^{*} = \tilde{U}\tilde{Q}\tilde{U}^{*}\big|_{\tilde{U} = -e_t}
+(-e_t)\,\tilde{Q}\,(-e_t)^{*} = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\big|_{\tilde U_{\mathrm L} = -e_t}
 = (-e_t)\tilde{Q}(-e_t) = \tilde{Q},
 $$</p>
 <p>so $\pm e_t$ act identically, and no other element does; hence</p>
@@ -289,7 +289,7 @@ $$</p>
 <p>The map $\pi$ is <strong>surjective</strong> onto $SO^+(1,3)$; that every proper orthochronous Lorentz transformation of $\mathbb{M}_-$ arises as a rotor conjugation is the standard theorem that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, and it is cited here as standard rather than re-derived. The identification of the previous section is therefore complete at the level of the identity component:</p>
 <p>$$
 \boxed{\; SO^+(1,3)\;\cong\;SL(2,\mathbb{C})/\{\pm e_t\}
-\;=\;\{\pi(\tilde{U}): \langle\tilde{U}\rangle_{\natural}=1\}/\ker\pi .\;}
+\;=\;\{\pi(\tilde U_{\mathrm L}): \langle\tilde U_{\mathrm L}\rangle_{\natural}=1\}/\ker\pi .\;}
 $$</p>
 <p>A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by conjugation with unit-norm elements.</p>
 <h2 id="the-algebra-automorphisms-the-diagonal-and-an-induced-causality">The Algebra Automorphisms: the Diagonal, and an Induced Causality</h2>
@@ -365,10 +365,10 @@ $$</p>
 <h2 id="the-infinitesimal-automorphisms-the-lie-algebra">The Infinitesimal Automorphisms: the Lie Algebra</h2>
 <p>Differentiating the unit-norm condition gives the Lie algebra of infinitesimal biquaternion-norm automorphisms. Let</p>
 <p>$$
-\tilde{U} = e_t + \varepsilon\,\tilde{Q},
+\tilde U_{\mathrm L} = e_t + \varepsilon\,\tilde{Q},
 \qquad \varepsilon\in\mathbb{R},\quad \varepsilon\ll1 .
 $$</p>
-<p>The condition $\langle\tilde{U}\rangle_{\natural} = 1$ becomes</p>
+<p>The condition $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ becomes</p>
 <p>$$
 \langle e_t+\varepsilon\tilde{Q}\rangle_{\natural} = (e_t+\varepsilon\tilde{Q})(e_t+\varepsilon\tilde{Q}^{\natural})
 = e_t + \varepsilon\left(\tilde{Q}+\tilde{Q}^{\natural}\right) + O(\varepsilon^2)
@@ -463,9 +463,9 @@ $$</p>
 <p>$$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \qquad
-\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*},
+\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*},
 \qquad
-\langle\tilde{U}\rangle_{\natural}=1,
+\langle\tilde U_{\mathrm L}\rangle_{\natural}=1,
 $$</p>
 <p>the map being two-to-one with kernel $\{\pm e_t\}$. Infinitesimally, the algebra is $\mathrm{SL}(2,\mathbb{C}) = \{X : \mathrm{Sc}(\tilde{Q})=0\}$, spanned by the rotation generators $\mathcal{J}_\mu = \vec e_\mu$ and the boost generators $\mathcal{K}_\mu = i\vec e_\mu$, with</p>
 <p>$$
@@ -567,11 +567,11 @@ $$</p>
 <td>Lorentz group; restricted (proper orthochronous) Lorentz group</td>
 </tr>
 <tr>
-<td>$\tilde{U}$, $\langle\tilde{U}\rangle_{\natural}=1$</td>
+<td>$\tilde U_{\mathrm L}$, $\langle\tilde U_{\mathrm L}\rangle_{\natural}=1$</td>
 <td>Unit-norm biquaternion (Lorentz rotor)</td>
 </tr>
 <tr>
-<td>$\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$</td>
+<td>$\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$</td>
 <td>Rotor conjugation; the automorphism of the slice</td>
 </tr>
 <tr>

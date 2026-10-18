@@ -86,14 +86,14 @@ $$</p>
 <p><strong>Conventions.</strong> The conventions of <em>Conventions in the Biquaternion Universe</em> are used throughout. The quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the scalar imaginary is $i$, commuting with the quaternion units. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, and the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The <strong>material sector</strong> is the anti-Hermitian subspace $\mathbb{M}_-$ and the <strong>informational sector</strong> is the Hermitian subspace $\mathbb{M}_+$ (<em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>); the group of units is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ and the group of unit-norm elements is $\mathbb{B}^{\times}_1=\{N=1\}\cong SL(2,\mathbb{C})$ (<em>The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</em>, <em>The 12 Products of the Biquaternioid Complex Space</em>, <em>Biquaternion Lie Group and Exponential Structure</em>). The word <strong>unit</strong> is used here in the ring sense: a unit is an element of the group of units, that is, an invertible element, while a <strong>unit element</strong> is an element of norm one, the group $\mathbb{B}^{\times}_1$ above; the two are kept apart throughout. <strong>Unitary</strong> is a third and narrower notion: an element is unitary when it preserves the sesquilinear form, $\tilde{Q}^{*}\tilde{Q}=e_t$, and the unitary elements form the group $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ (<em>Conventions in the Biquaternion Universe</em>, §<em>The Unitary Convention</em>). A <strong>representation</strong> is called unitary in the different sense of preserving an inner product, and <strong>unitarizable</strong> when some inner product is invariant, which is the sense of the closing section. The polar form and its four factors are <em>The Polar Element Representation of Biquaternions</em> and <em>The Polar Element Representation in Subspaces</em>, and are used here without repetition; the module is <em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>Modules over the Biquaternion Algebra</em>; the realizations of the algebra are <em>The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em> and <em>The Four-Vector Element Representation of Biquaternions</em>; and the operator on the algebra, with its laws and its invariants, is <em>Biquaternion Rotations and Lorentz Transformations</em> and <em>The Sandwich Action in Subspaces</em>.</p>
 <h2 id="the-operator-version-of-the-polar-element-representation">The Operator Version of the Polar Element Representation</h2>
 <p>The polar word and the operator data are the same information, cut differently, and the cut is the one the two-sided action makes.</p>
-<p><strong>Theorem (the correspondence).</strong> Let $\tilde{Q}=r\exp(i\alpha)B\tilde q$ with $\langle\tilde{Q}\rangle_{\natural}\neq0$, and let $\rho=\sqrt{\langle\tilde{Q}\rangle_{\natural}}=r\exp(i\alpha)$ and $\tilde{U}=B\tilde q$, so that $\tilde{Q}=\rho\tilde{U}$ with $\langle\tilde{U}\rangle_{\natural}=1$. Then:</p>
+<p><strong>Theorem (the correspondence).</strong> Let $\tilde{Q}=r\exp(i\alpha)B\tilde q$ with $\langle\tilde{Q}\rangle_{\natural}\neq0$, and let $\rho=\sqrt{\langle\tilde{Q}\rangle_{\natural}}=r\exp(i\alpha)$ and $\tilde U_{\mathrm L}=B\tilde q$, the Lorentz rotor, so that $\tilde{Q}=\rho\tilde U_{\mathrm L}$ with $\langle\tilde U_{\mathrm L}\rangle_{\natural}=1$. Then:</p>
 <ol>
-<li>the module of $\tilde{Q}$ is the module of $\tilde{U}$, unchanged;</li>
+<li>the module of $\tilde{Q}$ is the module of $\tilde U_{\mathrm L}$, unchanged;</li>
 <li>the scale $r$ and the phase $\exp(i\alpha)$ act on that module by the single complex number $\rho$, that is, through the <strong>twist</strong> $\chi(\rho)=\rho$;</li>
-<li>the boost $B$ and the rotor $\tilde q$ act on that module as the norm-one element $\tilde{U}=B\tilde q$, that is, as the <strong>spinor representation</strong> of the Lorentz group;</li>
+<li>the boost $B$ and the rotor $\tilde q$ act on that module as the norm-one element $\tilde U_{\mathrm L}=B\tilde q$, that is, as the <strong>spinor representation</strong> of the Lorentz group;</li>
 <li>the sandwich, by contrast, is $r^{2}$ times the norm-one sandwich, so it keeps the scale squared, discards the phase, and doubles the boost and the rotor parameters.</li>
 </ol>
-<p><strong>Proof.</strong> The matrix image factorizes as $\mathsf{M}_2(\tilde{Q}) = \mathsf{M}_2(\rho\tilde{U}) = \rho\,\mathsf{M}_2(\tilde{U})$, with $\rho$ central and $\mathsf{M}_2(\tilde{U})\in SL(2,\mathbb{C})$; the action on the module is left multiplication by this product, which is (1) and (2) and (3). The sandwich statement is the factorization $\mathrm{H}_{\tilde{Q}}=r^{2}\mathrm{H}_{\tilde{U}}$ of <em>The Sandwich Action in Subspaces</em>.</p>
+<p><strong>Proof.</strong> The matrix image factorizes as $\mathsf{M}_2(\tilde{Q}) = \mathsf{M}_2(\rho\tilde U_{\mathrm L}) = \rho\,\mathsf{M}_2(\tilde U_{\mathrm L})$, with $\rho$ central and $\mathsf{M}_2(\tilde U_{\mathrm L})\in SL(2,\mathbb{C})$; the action on the module is left multiplication by this product, which is (1) and (2) and (3). The sandwich statement is the factorization $\mathrm{H}_{\tilde{Q}}=r^{2}\mathrm{H}_{\tilde U_{\mathrm L}}$ of <em>The Sandwich Action in Subspaces</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -137,25 +137,25 @@ $$</p>
 </table></div>
 <p>The table is the article in miniature. <strong>The polar representation is the object; the twisted spinor representation is the same object read as an operator on its module; the sandwich is the same object read as an operator on the algebra.</strong> The three are not three constructions but three interpretations of one factorization, and that is why they share a domain: all three are statements about the polar word. The physical content is the same sentence: the scale is a length, the phase is the sector, the boost is a rapidity and the rotor is a rotation, and the operator that carries all four of them is not a Lorentz transformation but a Lorentz transformation together with a dilatation and a phase.</p>
 <p><strong>The condition of existence is the same cone.</strong> The construction above begins with an invertible element, and that is exactly the condition: the twisted spinor representation exists precisely for the biquaternions outside the null cone, $\langle\tilde{Q}\rangle_{\natural}\neq0$, which by the determinant criterion of <em>The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</em> are the invertible, non-zero-divisor elements. A null element still acts on the module $S$ by left multiplication, since the action of the algebra on its own simple module is defined for every element, but it is a singular operator, of rank at most one, and it carries no modulus and therefore no twist. The cone is one complex equation, hence two real equations, so it has real codimension two and the group of units $\mathbb{B}^{\times}$ has the same real dimension $8$ as the algebra $\mathbb{B}$: the domain of the twisted spinors is the algebra with a codimension-two set removed. The set is exactly the domain of the polar element representation, since the polar and the twisted descriptions exist on the same elements and fail on the same cone; the failure is a failure of the <em>description</em>, not of the action, and the action itself survives, which is what the next section records.</p>
-<p><strong>Remark (the order of the four factors).</strong> The correspondence is faithful, so the order of the factors is the order of the operations: the boost acts first in the polar word $B\tilde q$ and the rotor second, and the same order appears in the operator $\tilde{U}=B\tilde q$ and in the sandwich $\tilde{U}\tilde Q_1\tilde{U}^{*}=\langle\tilde q\tilde Q_1\tilde q^{-1}\rangle B$. Nothing here reorders them.</p>
+<p><strong>Remark (the order of the four factors).</strong> The correspondence is faithful, so the order of the factors is the order of the operations: the boost acts first in the polar word $B\tilde q$ and the rotor second, and the same order appears in the operator $\tilde U_{\mathrm L}=B\tilde q$ and in the sandwich $\tilde U_{\mathrm L}\tilde Q_1\tilde U_{\mathrm L}^{*}=\langle\tilde q\tilde Q_1\tilde q^{-1}\rangle B$. Nothing here reorders them.</p>
 <h2 id="the-twisted-module-of-the-operator">The Twisted Module of the Operator</h2>
 <p>Let $\tilde{Q}$ be invertible. Write its polar modulus and its norm-one part,</p>
 <p>$$
 \rho = \sqrt{\langle\tilde{Q}\rangle_{\natural}} = r\,\exp(i\alpha)\in\mathbb{C}^{\times},
 \qquad
-\tilde{U} = \frac{\tilde{Q}}{\rho},
+\tilde U_{\mathrm L} = \frac{\tilde{Q}}{\rho},
 \qquad
-\langle\tilde{U}\rangle_{\natural}=1,
+\langle\tilde U_{\mathrm L}\rangle_{\natural}=1,
 \qquad
-\tilde{U}=B\,\tilde q.
+\tilde U_{\mathrm L}=B\,\tilde q.
 $$</p>
 <p>Under the matrix isomorphism the operator on the module is a scalar times a norm-one element,</p>
 <p>$$
-\tilde{Q}\;\longmapsto\;\mathsf{M}_2(\tilde{Q})=\rho\,\mathsf{M}_2(\tilde{U})
+\tilde{Q}\;\longmapsto\;\mathsf{M}_2(\tilde{Q})=\rho\,\mathsf{M}_2(\tilde U_{\mathrm L})
 =\underbrace{\rho}_{\text{scalar}}\;\underbrace{\mathsf{M}_2(B)\,\mathsf{M}_2(\tilde q)}_{\text{in }SL(2,\mathbb{C})},
 $$</p>
 <p>and the action on $S=\mathbb{C}^2$ is left multiplication, $\psi\mapsto\mathsf{M}_2(\tilde{Q})\psi$.</p>
-<p><strong>The module is the spinor module, twisted.</strong> The factor $\mathsf{M}_2(\tilde{U})$ acts as the ordinary spinor representation; the scalar $\rho$ needs no module of its own. By Schur's lemma the centre acts on any simple module by a scalar, so the scale $r$ and the phase $\exp(i\alpha)$ do not enlarge the module, they multiply it. What they produce is a <strong>twist</strong>, a one-dimensional representation $\chi$ of the scaling group, here $\chi(\rho)=\rho$. The module of the general operator is therefore the module of the norm-one group <strong>twisted</strong> by $\chi$, written $S\otimes\chi$, and its elements are the <strong>twisted spinors</strong>. Three names, in increasing generality:</p>
+<p><strong>The module is the spinor module, twisted.</strong> The factor $\mathsf{M}_2(\tilde U_{\mathrm L})$ acts as the ordinary spinor representation; the scalar $\rho$ needs no module of its own. By Schur's lemma the centre acts on any simple module by a scalar, so the scale $r$ and the phase $\exp(i\alpha)$ do not enlarge the module, they multiply it. What they produce is a <strong>twist</strong>, a one-dimensional representation $\chi$ of the scaling group, here $\chi(\rho)=\rho$. The module of the general operator is therefore the module of the norm-one group <strong>twisted</strong> by $\chi$, written $S\otimes\chi$, and its elements are the <strong>twisted spinors</strong>. Three names, in increasing generality:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -167,12 +167,12 @@ $$</p>
 <tbody>
 <tr>
 <td>spinor</td>
-<td>norm-one element $\tilde{U}$</td>
+<td>norm-one element $\tilde U_{\mathrm L}$</td>
 <td>the Lorentz double cover $SL(2,\mathbb{C})$</td>
 </tr>
 <tr>
 <td>twisted spinor</td>
-<td>general unit $\tilde{Q}=\rho\tilde{U}$</td>
+<td>general unit $\tilde{Q}=\rho\tilde U_{\mathrm L}$</td>
 <td>the group of units $GL(2,\mathbb{C})$</td>
 </tr>
 <tr>
@@ -240,12 +240,12 @@ $$</p>
 H_{\tilde{Q}}(\tilde Q_1)=\tilde{Q}\,\tilde Q_1\,\tilde{Q}^{*}
 =r\,\exp(i\alpha)B\tilde q\;\tilde Q_1\;\tilde q^{-1}B\,r\,\exp(-i\alpha)
 =r^{2}\,B\bigl(\tilde q\,\tilde Q_1\,\tilde q^{-1}\bigr)B
-=r^{2}\,\tilde{U}\,\tilde Q_1\,\tilde{U}^{*}.
+=r^{2}\,\tilde U_{\mathrm L}\,\tilde Q_1\,\tilde U_{\mathrm L}^{*}.
 $$</p>
 <p>This is the central identity of the article. Everything else is an interpretation of it.</p>
 <p><strong>Double dilatation.</strong> The identity separates the sandwich into a scalar factor and a norm-one sandwich,</p>
 <p>$$
-H_{\tilde{Q}}=r^{2}\,H_{\tilde{U}},
+H_{\tilde{Q}}=r^{2}\,H_{\tilde U_{\mathrm L}},
 \qquad\text{so}\qquad
 H_{z\tilde{Q}}=\lvert z\rvert^{2}H_{\tilde{Q}}\quad (z\in\mathbb{C}^{\times}).
 $$</p>
@@ -254,9 +254,9 @@ $$</p>
 N\bigl(H_{\tilde{Q}}(\tilde Q_1)\bigr)=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\bigl(r^{2}\bigr)^{2}\langle\tilde Q_1\rangle_{\natural},
 $$</p>
 <p>which is the scaling already recorded in the polar article: the interval of the material sector is dilated by the square of the scale, and the length by the scale. And the phase, which is the other central factor, does the opposite of the scale: it appears once on the module and <strong>never</strong> in the sandwich, since $\exp(i\alpha)$ and $\exp(-i\alpha)$ are inverse and commute past everything. A central phase therefore changes the module and leaves the material sector untouched.</p>
-<p><strong>Doubled boost and rotation.</strong> The norm-one part of the sandwich is the conjugation by $\tilde{U}=B\tilde q$,</p>
+<p><strong>Doubled boost and rotation.</strong> The norm-one part of the sandwich is the conjugation by $\tilde U_{\mathrm L}=B\tilde q$,</p>
 <p>$$
-\tilde Q_1\;\longmapsto\;\tilde{U}\,\tilde Q_1\,\tilde{U}^{*}=B\bigl(\tilde q\,\tilde Q_1\,\tilde q^{-1}\bigr)B ,
+\tilde Q_1\;\longmapsto\;\tilde U_{\mathrm L}\,\tilde Q_1\,\tilde U_{\mathrm L}^{*}=B\bigl(\tilde q\,\tilde Q_1\,\tilde q^{-1}\bigr)B ,
 $$</p>
 <p>a rotation followed by a boost, both with <strong>doubled</strong> parameters. The rotor $\tilde q$ stores a half-angle, $\exp(\vec q/2)$ with rotation angle $\lvert\vec q\rvert=\theta$, and the conjugation $\tilde q\,\tilde Q_1\,\tilde q^{-1}$ is the rotation by the full angle; the same half-angle is what makes a spinor change sign under a rotation by $2\pi$. The boost factor $B$ stores a half-rapidity, $\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u_{\mathrm b}$, and the conjugation $B\,\tilde Q_1\,B$ is the Lorentz boost of the full rapidity. On the boost axis $\vec e_z$ both are diagonal and exact:</p>
 <p>$$
@@ -269,13 +269,13 @@ $$</p>
 t'=t\cosh\psi+z\sinh\psi, \qquad z'=t\sinh\psi+z\cosh\psi ,
 $$</p>
 <p>the standard boost with rapidity $\psi$, produced by the rotor that stores $\psi/2$. The exponent that the operator stores is doubled, and the same holds for the rotation angle: the <strong>double rotation</strong> and the <strong>double dilatation</strong> are the two faces of the single statement that the sandwich uses each non-central factor twice, and the central factors once or not at all.</p>
-<p><strong>What the sandwich generates.</strong> Combining the two interpretations, the map $H_{\tilde{Q}}$ is a dilatation composed with a Lorentz transformation, and as $\tilde{Q}$ runs over all invertible elements the pair $(r^{2},\tilde{U})$ runs over all positive reals and all of $\mathbb{B}^{\times}_1$. The image of the sandwich action on the material sector is therefore</p>
+<p><strong>What the sandwich generates.</strong> Combining the two interpretations, the map $H_{\tilde{Q}}$ is a dilatation composed with a Lorentz transformation, and as $\tilde{Q}$ runs over all invertible elements the pair $(r^{2},\tilde U_{\mathrm L})$ runs over all positive reals and all of $\mathbb{B}^{\times}_1$. The image of the sandwich action on the material sector is therefore</p>
 <p>$$
 \{H_{\tilde{Q}}\}\cong\mathbb{R}_{>0}\times SO^{+}(1,3),
 $$</p>
 <p>the Lorentz group together with the dilatations — the <strong>similitude</strong> group, the Lorentz group extended by the scale — with no phase anywhere. Physically this is the statement that a general biquaternion operator is a Lorentz transformation together with a change of units, and that the unit of length is not the phase. No choice of $\tilde{Q}$ produces a phase in the sandwich, and no choice produces anything outside this group. The sandwich preserves the two Hermitian sectors and the rank of the matrix image, as the scalar factor $r^{2}$ cannot change either.</p>
 <h2 id="the-special-case-of-norm-one-the-lorentz-group">The Special Case of Norm One: the Lorentz Group</h2>
-<p>Put $r=1$ and $\alpha=0$, so that $\tilde{Q}=\tilde{U}\in\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$, the double cover of the proper orthochronous group $SO^{+}(1,3)$. This is the untwisted case, and it is the case the corpus treats as the Lorentz group.</p>
+<p>Put $r=1$ and $\alpha=0$, so that $\tilde{Q}=\tilde U_{\mathrm L}\in\mathbb{B}^{\times}_1\cong SL(2,\mathbb{C})$, the double cover of the proper orthochronous group $SO^{+}(1,3)$. This is the untwisted case, and it is the case the corpus treats as the Lorentz group.</p>
 <p><strong>The operator.</strong> A norm-one element is written in several equivalent ways.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -287,15 +287,15 @@ $$</p>
 <tbody>
 <tr>
 <td>component</td>
-<td>$\tilde{U}=\sum_{\mu}a_{\mu}e_{\mu}$, $a_{\mu}\in\mathbb{C}$, $\langle\tilde{U}\rangle_{\natural}=1$</td>
+<td>$\tilde U_{\mathrm L}=\sum_{\mu}a_{\mu}e_{\mu}$, $a_{\mu}\in\mathbb{C}$, $\langle\tilde U_{\mathrm L}\rangle_{\natural}=1$</td>
 </tr>
 <tr>
 <td>quaternionic</td>
-<td>$\tilde{U}=\tilde q+i\tilde p$, $\tilde q,\tilde p\in\mathbb{H}$, $\langle\tilde{U}\rangle_{\natural}=1$</td>
+<td>$\tilde U_{\mathrm L}=\tilde q+i\tilde p$, $\tilde q,\tilde p\in\mathbb{H}$, $\langle\tilde U_{\mathrm L}\rangle_{\natural}=1$</td>
 </tr>
 <tr>
 <td>exponential</td>
-<td>$\tilde{U}=\exp(\vec q/2)\exp(i\vec v/2)$, $\vec q,\vec v$ real pure quaternions</td>
+<td>$\tilde U_{\mathrm L}=\exp(\vec q/2)\exp(i\vec v/2)$, $\vec q,\vec v$ real pure quaternions</td>
 </tr>
 <tr>
 <td>matrix</td>
@@ -311,14 +311,14 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The exponential form is the polar form with $r=1$, $\alpha=0$: the pure quaternion $\vec q$ carries the three rotation parameters and $i\vec v$ the three boosts, $3+3=6$ real dimensions, the dimension of the group. In the exponential form the half-angles are visible, $\exp(\vec q/2)$ and $\exp(i\vec v/2)$, and this is why the sandwich doubles them in the general case above and why this case is the untwisted one: with $\rho=1$ the modulus is $r=1$ and both the scale and the phase have disappeared. The rotation example also shows the double cover directly: $\theta\to\theta+2\pi$ sends $\tilde{U}\to-\tilde{U}$, the same element of the group with opposite sign, which is the effect seen in neutron interferometry.</p>
-<p><strong>The module.</strong> The action $\psi\mapsto\mathsf{M}_2(\tilde{U})\psi$ is the spinor representation proper. It is irreducible, because $\mathbb{B}$ is simple; it is faithful, because $\mathsf{M}_2(-e_t)=-I_2$, so the operator distinguishes $\tilde{U}$ from $-\tilde{U}$ and the representation does not descend to the quotient $\mathbb{B}^{\times}_1/\{\pm e_t\}$; and it is non-unitary, because every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so $\rho(i\vec e_k)=i\rho(\vec e_k)$ is Hermitian while skew-adjointness would force it to vanish, killing the boosts and the whole algebra. On the module the obstruction is the identity</p>
+<p>The exponential form is the polar form with $r=1$, $\alpha=0$: the pure quaternion $\vec q$ carries the three rotation parameters and $i\vec v$ the three boosts, $3+3=6$ real dimensions, the dimension of the group. In the exponential form the half-angles are visible, $\exp(\vec q/2)$ and $\exp(i\vec v/2)$, and this is why the sandwich doubles them in the general case above and why this case is the untwisted one: with $\rho=1$ the modulus is $r=1$ and both the scale and the phase have disappeared. The rotation example also shows the double cover directly: $\theta\to\theta+2\pi$ sends $\tilde U_{\mathrm L}\to-\tilde U_{\mathrm L}$, the same element of the group with opposite sign, which is the effect seen in neutron interferometry.</p>
+<p><strong>The module.</strong> The action $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$ is the spinor representation proper. It is irreducible, because $\mathbb{B}$ is simple; it is faithful, because $\mathsf{M}_2(-e_t)=-I_2$, so the operator distinguishes $\tilde U_{\mathrm L}$ from $-\tilde U_{\mathrm L}$ and the representation does not descend to the quotient $\mathbb{B}^{\times}_1/\{\pm e_t\}$; and it is non-unitary, because every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so $\rho(i\vec e_k)=i\rho(\vec e_k)$ is Hermitian while skew-adjointness would force it to vanish, killing the boosts and the whole algebra. On the module the obstruction is the identity</p>
 <p>$$
-\tilde{U}^{*}\tilde{U}=\tilde{U}^{2}=\cosh\psi+i\sinh\psi\,\vec u_{\mathrm b}\neq e_t ,
+\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\tilde U_{\mathrm L}^{2}=\cosh\psi+i\sinh\psi\,\vec u_{\mathrm b}\neq e_t ,
 $$</p>
 <p>which is the "sub-case $r=1$" of the double-dilatation statement. Physically it is the absence of an invariant probability on a finite-component object: a boost scales the two components of the spinor in opposite senses, one up and one down, and there is no finite-dimensional unitary representation of the group other than the trivial one. That is why the unitary representations are the infinite-dimensional fields.</p>
 <p><strong>The two chiralities are the untwisted two-dimensional representations.</strong> The conjugate module $\bar{S}$ carries the other handedness, and the two are inequivalent: with the two chiral Casimirs $\Omega_{\pm}=\sum_k(N_k^{\pm})^2$ built from $N_k^{\pm}=\tfrac12(\vec e_k\pm\mathsf{i}\,i\vec e_k)$, one finds $C_+\mapsto0$, $C_-\mapsto-3I_2$ on $S$ and the reverse on $\bar{S}$, so $S=(\tfrac12,0)\ncong(0,\tfrac12)=\bar{S}$. Neither is a minimal left ideal, since both ideals carry $S$, and neither is obtained by right multiplication, since $S^{*}\cong S$; the handedness requires the real structure, the operation that also produces the antiparticle.</p>
-<p><strong>The sandwich.</strong> With $r=1$ the sandwich is the norm-one conjugation $\tilde Q_1\mapsto\tilde{U}\tilde Q_1\tilde{U}^{*}$, an isometry of the biquaternion norm, $\langle H_{\tilde{U}}(\tilde Q_1)\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}$. The scale is what the norm detects: the sandwich preserves the norm exactly when $r=1$, whatever the phase, and the norm-one case is the phase-free representative of the isometries. This is why the Lorentz group, and not the similitude group, is the group of the metric: the dilatation is present in the operator as soon as $r\neq1$. A general biquaternion operator therefore describes a Lorentz transformation up to a change of scale, and only the operators of scale one are the symmetries of the interval.</p>
+<p><strong>The sandwich.</strong> With $r=1$ the sandwich is the norm-one conjugation $\tilde Q_1\mapsto\tilde U_{\mathrm L}\tilde Q_1\tilde U_{\mathrm L}^{*}$, an isometry of the biquaternion norm, $\langle H_{\tilde U_{\mathrm L}}(\tilde Q_1)\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}$. The scale is what the norm detects: the sandwich preserves the norm exactly when $r=1$, whatever the phase, and the norm-one case is the phase-free representative of the isometries. This is why the Lorentz group, and not the similitude group, is the group of the metric: the dilatation is present in the operator as soon as $r\neq1$. A general biquaternion operator therefore describes a Lorentz transformation up to a change of scale, and only the operators of scale one are the symmetries of the interval.</p>
 <h2 id="further-particular-cases">Further Particular Cases</h2>
 <p>The general operator has four parameters, and every interesting case is obtained by switching one of them off. The table gives the sandwich and the module in each case, with the <strong>physical interpretation</strong>.</p>
 <div class="table-scroll"><table>
@@ -391,18 +391,18 @@ $$</p>
 <h2 id="the-trace-and-the-two-actors">The Trace and the Two Actors</h2>
 <p>The norm-one row and the unitary row are the two the framework uses most, and what separates them is not the group each generates but the invariant each keeps. Both keep the interval, because both have scale one: the sandwich multiplies the biquaternion norm by $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2} = r^{4}$, so it is an isometry exactly when $r = 1$, the central phase cancelling on the two sides. They differ in the trace.</p>
 <p><strong>The unitary actor keeps the trace.</strong> Let $\tilde{Q} = \lambda\tilde q$ with $\lvert\lambda\rvert = 1$. Then $\mathsf{M}_2(\tilde{Q})$ is unitary and the sandwich fixes the unit, $\mathrm{H}_{\tilde{Q}}(e_t) = \tilde{Q}\tilde{Q}^{*} = e_t$. It is multiplicative, since $\mathsf{M}_2(\tilde{Q}\tilde Q_1\tilde{S}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde{S})$ with the two outer factors regrouping, so it is an algebra automorphism, and it is the inner one $\tilde Q_1\mapsto\tilde{Q}\tilde Q_1\tilde{Q}^{-1}$ with $\tilde{Q}^{-1} = \tilde{Q}^{*}$. An inner automorphism preserves the trace, $\mathrm{Tr}(\mathrm{H}_{\tilde{Q}}(\tilde Q_1)) = \mathrm{Tr}(\tilde Q_1)$, so the operator carries every trace-one hyperplane into itself; on the informational sector it is the operator that permutes the states among themselves.</p>
-<p><strong>The norm-one actor does not.</strong> Let $\tilde{U} = B\tilde q$ with a nontrivial boost factor. On the identity the sandwich returns the square of the element,</p>
+<p><strong>The norm-one actor does not.</strong> Let $\tilde U_{\mathrm L} = B\tilde q$ with a nontrivial boost factor. On the identity the sandwich returns the square of the element,</p>
 <p>$$
-\mathrm{H}_{\tilde{U}}(e_t) = \tilde{U}\tilde{U}^{*} = \tilde{U}^{2} = \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b} , \qquad \mathrm{Tr}\left(\mathrm{H}_{\tilde{U}}(e_t)\right) = 2\cosh\psi ,
+\mathrm{H}_{\tilde U_{\mathrm L}}(e_t) = \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}^{2} = \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b} , \qquad \mathrm{Tr}\left(\mathrm{H}_{\tilde U_{\mathrm L}}(e_t)\right) = 2\cosh\psi ,
 $$</p>
 <p>which is $2$ only when the boost is absent, and on a Hermitian element $\tilde{H} = h_0e_t + i\vec h$ it returns a boosted time,</p>
 <p>$$
-\mathrm{Tr}\left(\mathrm{H}_{\tilde{U}}(\tilde{H})\right) = 2\left(h_0\cosh\psi + \left(\vec u_{\mathrm b}\cdot\vec h\right)\sinh\psi\right) .
+\mathrm{Tr}\left(\mathrm{H}_{\tilde U_{\mathrm L}}(\tilde{H})\right) = 2\left(h_0\cosh\psi + \left(\vec u_{\mathrm b}\cdot\vec h\right)\sinh\psi\right) .
 $$</p>
 <p>The trace of the sandwich is therefore a time coordinate, and a boost cannot leave it alone: the trace-one hyperplane of the informational sector is carried off itself, which is the trace-side interpretation of the absence of an invariant probability recorded above.</p>
-<p><strong>The polar word says which factor is responsible.</strong> With $\tilde{U} = B\tilde q$ the sandwich is</p>
+<p><strong>The polar word says which factor is responsible.</strong> With $\tilde U_{\mathrm L} = B\tilde q$ the sandwich is</p>
 <p>$$
-\mathrm{H}_{\tilde{U}}(\tilde{H}) = B\left(\tilde q\tilde{H}\tilde q^{*}\right)B ,
+\mathrm{H}_{\tilde U_{\mathrm L}}(\tilde{H}) = B\left(\tilde q\tilde{H}\tilde q^{*}\right)B ,
 $$</p>
 <p>so the rotor acts by conjugation, an automorphism of the algebra, and preserves the trace; the boost factor stands on the two sides and is what changes it; and the central phase has already cancelled. Of the four factors of the polar word, therefore, exactly one moves the trace. The scale, counted twice, and the phase, cancelling, set the modulus $r^{2}$; the rotor reorients the element without touching its trace; and <strong>the boost factor is the only factor of the polar word that leaves the trace-one slice.</strong></p>
 <p>The two rows are then the two answers to the question of which group acts on which object, and the two conditions are nested rather than parallel:</p>
@@ -462,8 +462,8 @@ $$</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <p>The article's statement that the twisted spinor representation is the operator version of the polar representation reads as a boundary: the operator is available only outside the cone, so a spinor description of a light direction is not offered here. Read on the clock, the polar angle that survives in the operator is the central phase, so the operator carries the clock reading wherever it exists; read on the mass shell, the restriction is the same exterior of the cone that the polar form requires, which is why the two articles share a domain.</p>
 <h2 id="summary">Summary</h2>
-<p>The polar representation writes a biquaternion as an object, $\tilde{Q}=r \exp(i\alpha)B\tilde q$; this article writes it as an operator, and the two descriptions are the same information on the same elements. Acting on the module $S=\mathbb{C}^2$ by left multiplication, its matrix image is $\mathsf{M}_2(\tilde{Q})=\rho\mathsf{M}_2(\tilde{U})$ with $\rho=\sqrt{\langle\tilde{Q}\rangle_{\natural}}=r\exp(i\alpha)$ and $\tilde{U}=B\tilde q$ of norm one, so the module is the spinor module of the Lorentz double cover <strong>twisted</strong> by the character $\chi(\rho)=\rho$. The twist does not enlarge the module — by Schur the module stays $\mathbb{C}^2$, irreducible — it changes the weight, and it is the record of the scale and the phase that the polar form carries. The correspondence is one-to-one: scale and phase become the twist, boost and rotor become the norm-one operator, and the order of the factors is preserved. Because it is the operator version of the polar word, the description exists exactly where the polar word does, on the complement of the light cone; the action on the module survives on the cone, but the twist and the modulus do not, and there is nothing to read.</p>
-<p>Acting on the material sector by the Hermitian sandwich, $H_{\tilde{Q}}(\tilde Q_1)=\tilde{Q}\tilde Q_1\tilde{Q}^{*}$, the operator factors as $r^{2}\tilde{U}\tilde Q_1\tilde{U}^{*}$. The scale is counted <strong>twice</strong>, once per side, giving $r^{2}$ on lengths and $r^{4}$ on the interval; the phase cancels, since it and its inverse appear on the two sides and are central, so the phase is invisible to the material sector. The norm-one part, a rotation by the doubled angle followed by a boost of the doubled rapidity, has its stored half-angles doubled by the sandwich: the boost rotor stores $\psi/2$ and produces the rapidity $\psi$, as the diagonal example $\mathrm{diag}(\exp(\psi/2),\exp(-\psi/2))\mapsto\mathrm{diag}(\exp(\psi),\exp(-\psi))$ shows exactly. The image of the sandwich is the Lorentz group together with the dilatations, the similitude group $\mathbb{R}_{>0}\times SO^{+}(1,3)$, with no phase anywhere. A general biquaternion operator is therefore a Lorentz transformation together with a change of units, and the unit of length is not the phase.</p>
+<p>The polar representation writes a biquaternion as an object, $\tilde{Q}=r \exp(i\alpha)B\tilde q$; this article writes it as an operator, and the two descriptions are the same information on the same elements. Acting on the module $S=\mathbb{C}^2$ by left multiplication, its matrix image is $\mathsf{M}_2(\tilde{Q})=\rho\mathsf{M}_2(\tilde U_{\mathrm L})$ with $\rho=\sqrt{\langle\tilde{Q}\rangle_{\natural}}=r\exp(i\alpha)$ and $\tilde U_{\mathrm L}=B\tilde q$ of norm one, so the module is the spinor module of the Lorentz double cover <strong>twisted</strong> by the character $\chi(\rho)=\rho$. The twist does not enlarge the module — by Schur the module stays $\mathbb{C}^2$, irreducible — it changes the weight, and it is the record of the scale and the phase that the polar form carries. The correspondence is one-to-one: scale and phase become the twist, boost and rotor become the norm-one operator, and the order of the factors is preserved. Because it is the operator version of the polar word, the description exists exactly where the polar word does, on the complement of the light cone; the action on the module survives on the cone, but the twist and the modulus do not, and there is nothing to read.</p>
+<p>Acting on the material sector by the Hermitian sandwich, $H_{\tilde{Q}}(\tilde Q_1)=\tilde{Q}\tilde Q_1\tilde{Q}^{*}$, the operator factors as $r^{2}\tilde U_{\mathrm L}\tilde Q_1\tilde U_{\mathrm L}^{*}$. The scale is counted <strong>twice</strong>, once per side, giving $r^{2}$ on lengths and $r^{4}$ on the interval; the phase cancels, since it and its inverse appear on the two sides and are central, so the phase is invisible to the material sector. The norm-one part, a rotation by the doubled angle followed by a boost of the doubled rapidity, has its stored half-angles doubled by the sandwich: the boost rotor stores $\psi/2$ and produces the rapidity $\psi$, as the diagonal example $\mathrm{diag}(\exp(\psi/2),\exp(-\psi/2))\mapsto\mathrm{diag}(\exp(\psi),\exp(-\psi))$ shows exactly. The image of the sandwich is the Lorentz group together with the dilatations, the similitude group $\mathbb{R}_{>0}\times SO^{+}(1,3)$, with no phase anywhere. A general biquaternion operator is therefore a Lorentz transformation together with a change of units, and the unit of length is not the phase.</p>
 <p>The norm-one case, $r=1$ and $\alpha=0$, is the Lorentz group, the untwisted case, and the phase-free isometry — the sandwich preserves the norm exactly when the scale is one — and it is where the spinor is the module, the double cover is visible as $-e_t\mapsto-I_2$ and as the sign change under a rotation by $2\pi$, and the two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ are inequivalent, separated by the chiral Casimirs. The other particular cases are read off by switching off one parameter: a central operator gives a pure double dilatation, a real quaternion gives a dilated rotation of space, a pure boost gives the doubled rapidity, and a vanishing norm removes the operator entirely. The two rows of the case table that lie closest to each other, the norm-one row and the unitary row, are separated by the invariant each keeps rather than by the group each generates: the sandwich scales the biquaternion norm by $r^{4}$, so both are isometries of the interval, but only the unitary elements fix the unit and hence preserve the trace, and among the four factors of the polar word it is the boost factor alone that moves the trace-one slice.</p>
 <p>The twisted labels are $(j,j')_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a}\bar{z}^{b}$, $a-b\in\mathbb{Z}$, and the parity compatibility $a-b\equiv 2j+2j'\pmod 2$. Conjugation sends $(j,j')_{(a,b)}$ to $(j',j)_{(b,a)}$, and unitarity requires a purely imaginary scale exponent and is then still destroyed by the norm-one part. The algebra carries the twisted spinor and the twisted four-vector and no higher module: the rest of the tower is generated by symmetric powers of the twisted spinor, and lives in the tensor category rather than in the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -500,7 +500,7 @@ $$</p>
 <td>Complex modulus; the twist parameter</td>
 </tr>
 <tr>
-<td>$\tilde{U}=\tilde{Q}/\rho=B\tilde q$</td>
+<td>$\tilde U_{\mathrm L}=\tilde{Q}/\rho=B\tilde q$</td>
 <td>Norm-one part; the Lorentz transformation</td>
 </tr>
 <tr>
@@ -536,12 +536,12 @@ $$</p>
 <td>Hermitian sandwich, the operator on the material sector</td>
 </tr>
 <tr>
-<td>$H_{\tilde{Q}}=r^{2}\tilde{U}\tilde Q_1\tilde{U}^{*}$</td>
+<td>$H_{\tilde{Q}}=r^{2}\tilde U_{\mathrm L}\tilde Q_1\tilde U_{\mathrm L}^{*}$</td>
 <td>Factorization: dilatation times Lorentz</td>
 </tr>
 <tr>
 <td>$\mathrm{H}_{\tilde{Q}}(e_t)=\tilde{Q}\tilde{Q}^{*}$</td>
-<td>Image of the unit: $e_t$ for a unitary, $\tilde{U}^{2}$ for a norm-one rotor</td>
+<td>Image of the unit: $e_t$ for a unitary, $\tilde U_{\mathrm L}^{2}$ for a norm-one rotor</td>
 </tr>
 <tr>
 <td>$\operatorname{Tr}\left(\mathrm{H}_{\tilde{Q}}(\tilde Q_1)\right)$</td>

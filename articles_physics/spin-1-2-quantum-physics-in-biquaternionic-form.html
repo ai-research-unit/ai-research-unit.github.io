@@ -73,7 +73,7 @@
 <blockquote>
 <p>The biquaternion algebra $\mathbb{B}$ contains the complete algebraic structure of a spin-1/2 quantum-mechanical system.</p>
 </blockquote>
-<p>This is not an analogy. It is an identity of algebras. Every idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state projector. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ is the Born rule for spin-1/2. The unitary biquaternions of $SU(2)$ are the spin rotation operators.</p>
+<p>This is not an analogy. It is an identity of algebras. Every idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state idempotent. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ is the Born rule for spin-1/2. The unitary biquaternions of $SU(2)$ are the spin rotation operators.</p>
 <p>This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about <strong>where</strong> this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.</p>
 <p>The article is organized as follows. First the two-state system of quantum physics is recalled. Then the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is stated explicitly. Then the identification of $\mathbb{M}_+$ with the observables is given, and the idempotents with the states. Then the trace formula is stated as the Born rule. Then the relation to the four-vector space $\mathbb{M}_-$ is discussed. The article closes with a summary of what the biquaternion framework does and does not contain.</p>
 <p>The conventions are those of the companion articles: the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the four fixed-point subspaces are $\mathbb{C}_\mathbb{B}, \mathbb{H}_\mathbb{B}, \mathbb{M}_+, \mathbb{M}_-$.</p>
@@ -158,7 +158,7 @@ $$</p>
 <p><strong>Basis.</strong> The four elements $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ of $\mathbb{M}_+$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.</p>
 <p><strong>The identity and the traceless part.</strong> The scalar part $h_0 e_t$ maps to the identity component $h_0 I_2$, which is the "trivial" observable. The vector part $i(h_1 \vec e_x + h_2 \vec e_y + h_3 \vec e_z)$ maps to the traceless part $h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$. The trace of an element of $\mathbb{M}_+$ is $2h_0$ (twice the scalar part), which corresponds to the trace of the matrix.</p>
 <h2 id="the-idempotents-as-pure-states">The Idempotents as Pure States</h2>
-<p>The idempotents of $\mathbb{M}_+$ are the pure-state projectors of the spin-1/2 system.</p>
+<p>The idempotents of $\mathbb{M}_+$ are the pure-state idempotents of the spin-1/2 system.</p>
 <p><strong>Statement.</strong> The idempotents of $\mathbb{M}_+$ are exactly the elements</p>
 <p>$$
 \tilde\Pi_{1,2} = \tfrac{1}{2}\left(e_t \pm \vec u i\right),
@@ -180,12 +180,12 @@ $$</p>
 <p>So <strong>every spin-1/2 pure state corresponds to exactly one idempotent of $\mathbb{M}_+$</strong>, and vice versa.</p>
 <h2 id="the-trace-formula-as-the-born-rule">The Trace Formula as the Born Rule</h2>
 <p>The expectation value of an observable in a state is given by the trace formula.</p>
-<p><strong>Statement.</strong> For an idempotent $P \in \mathbb{M}_+$ (a pure state) and a Hermitian element $\tilde{H} \in \mathbb{M}_+$ (an observable), the quantity</p>
+<p><strong>Statement.</strong> For an idempotent $\tilde\Pi \in \mathbb{M}_+$ (a pure state) and a Hermitian element $\tilde{H} \in \mathbb{M}_+$ (an observable), the quantity</p>
 <p>$$
-\langle \tilde{H} \rangle_P = \mathrm{Tr}(P\tilde{H}) = 2\,\mathrm{Sc}(P\tilde{H})
+\langle \tilde{H} \rangle_{\tilde\Pi} = \mathrm{Tr}(\tilde\Pi\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H})
 $$</p>
-<p>is <strong>real</strong> and is the <strong>Born-rule expectation value</strong> of $\tilde{H}$ in the state $P$.</p>
-<p><strong>Proof.</strong> Under the isomorphism, $P$ maps to the projector $|\psi\rangle\langle\psi|$ and $\tilde{H}$ maps to the Hermitian matrix $H$. The trace formula $\mathrm{Tr}(P\tilde{H})$ maps to $\mathrm{Tr}(|\psi\rangle\langle\psi| H) = \langle\psi|H|\psi\rangle$, which is the standard Born-rule expectation. The biquaternion trace formula $2\,\mathrm{Sc}(P\tilde{H})$ is the same quantity, expressed in biquaternion language.</p>
+<p>is <strong>real</strong> and is the <strong>Born-rule expectation value</strong> of $\tilde{H}$ in the state $\tilde\Pi$.</p>
+<p><strong>Proof.</strong> Under the isomorphism, $\tilde\Pi$ maps to the projector $|\psi\rangle\langle\psi|$ and $\tilde{H}$ maps to the Hermitian matrix $H$. The trace formula $\mathrm{Tr}(\tilde\Pi\tilde{H})$ maps to $\mathrm{Tr}(|\psi\rangle\langle\psi| H) = \langle\psi|H|\psi\rangle$, which is the standard Born-rule expectation. The biquaternion trace formula $2\,\mathrm{Sc}(\tilde\Pi\tilde{H})$ is the same quantity, expressed in biquaternion language.</p>
 <h3 id="example">Example</h3>
 <p>Take $\vec u = \vec e_z$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_t + \vec e_z i)$ corresponds to the spin-up state along the $z$ axis; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_t - \vec e_z i)$ are its two associated idempotents. Let $\tilde{H} = i \vec e_x$ (the spin observable along the $x$ axis). Then</p>
 <p>$$
@@ -283,10 +283,10 @@ $$</p>
 <p><strong>The full algebra of observables of a spin-1/2 system.</strong> The Hermitian subspace $\mathbb{M}_+$ is the space of Hermitian operators on $\mathbb{C}^2$, i.e., the observables.</p>
 </li>
 <li>
-<p><strong>The pure states.</strong> The idempotents of $\mathbb{M}_+$ are the rank-1 projectors, i.e., the pure states of a spin-1/2 system.</p>
+<p><strong>The pure states.</strong> The idempotents of $\mathbb{M}_+$ are the rank-1 idempotents, i.e., the pure states of a spin-1/2 system.</p>
 </li>
 <li>
-<p><strong>The Born rule.</strong> The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born-rule expectation value.</p>
+<p><strong>The Born rule.</strong> The trace formula $\mathrm{Tr}(\tilde\Pi\tilde{H}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H})$ is the Born-rule expectation value.</p>
 </li>
 <li>
 <p><strong>The spin rotation group.</strong> The $SU(2)$ subgroup of unit-norm biquaternions acts as the spin rotation group.</p>
@@ -351,7 +351,7 @@ $$</p>
 </ol>
 <p>These questions are open.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 projectors, i.e., the pure spin states. The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born rule.</p>
+<p>The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 idempotents, i.e., the pure spin states. The trace formula $\mathrm{Tr}(\tilde\Pi\tilde{H}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H})$ is the Born rule.</p>
 <p>The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part. The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.</p>
 <p>The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field. The biquaternion formulation describes this field as a pair of Weyl spinors (left-handed and right-handed); the full four-component Dirac spinor is recovered by taking the direct sum of this pair with its complex conjugate. The framework contains the classical Dirac field coupled to electromagnetism, but it does not contain the quantization of the field, the extension to bosonic or higher-spin fields, or the structure of many-body systems.</p>
 <p>The identification is not an analogy. It is the same mathematics, expressed in the biquaternion algebra, and it is the deepest structural connection between the biquaternion framework and established quantum physics.</p>
@@ -397,7 +397,7 @@ $$</p>
 <td>Hermitian element (observable)</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$</td>
+<td>$\mathrm{Tr}(\tilde\Pi\tilde{H}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H})$</td>
 <td>Born-rule expectation value</td>
 </tr>
 <tr>

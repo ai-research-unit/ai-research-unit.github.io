@@ -157,7 +157,7 @@ E(\lambda) = \frac{E_2}{\lambda} + \lambda\,E_4 ,
 $$</p>
 <p>and its stationary point,</p>
 <p>$$
-E'(\lambda) = -\frac{E_2}{\lambda^2} + E_4 = 0
+\frac{dE}{d\lambda}(\lambda) = -\frac{E_2}{\lambda^2} + E_4 = 0
 \qquad\Longrightarrow\qquad
 \lambda_* = \sqrt{\frac{E_2}{E_4}},
 \qquad
@@ -197,7 +197,7 @@ r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
 $$</p>
 <p>which is the most general spherically symmetric map with the identity embedded at the origin, the winding-number density is</p>
 <p>$$
-B^0(r) = -\frac{1}{2\pi^2}\,\frac{\sin^2 F(r)\,F'(r)}{r^2} ,
+B^0(r) = -\frac{1}{2\pi^2}\,\frac{\sin^2 F(r)\,\frac{dF}{dr}(r)}{r^2} ,
 $$</p>
 <p>and the charge reduces to the radial integral</p>
 <p>$$
@@ -257,7 +257,7 @@ B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_
 \qquad
 \partial_\mu B^\mu = 0 \text{ identically.}
 $$</p>
-<p>For the hedgehog $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$ the density is $B^0 = -\frac{1}{2\pi^2}\sin^2F\,F'/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,F'\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.</p>
+<p>For the hedgehog $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$ the density is $B^0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.</p>
 <p>The framework supplies the target manifold, the flat current, the commutator structure and the biquaternion-norm organisation of the derivative expansion; it supplies neither the fermionic baryon, whose statistics come from the Wess–Zumino–Witten term, nor the anomaly that fixes the level, nor the large-$N_c$ justification of the identification. The topological baryon is thus a framework-compatible construction on the framework's own group manifold, with its dynamics and its quantisation imported.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -329,11 +329,11 @@ $$</p>
 <td>Hedgehog ansatz</td>
 </tr>
 <tr>
-<td>$B^0 = -\frac{1}{2\pi^2}\sin^2F\,F'/r^2$</td>
+<td>$B^0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$</td>
 <td>Hedgehog winding density</td>
 </tr>
 <tr>
-<td>$B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,F'\,dr = \frac{1}{\pi}[F-\frac12\sin2F]_{F(\infty)}^{F(0)}$</td>
+<td>$B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\frac12\sin2F]_{F(\infty)}^{F(0)}$</td>
 <td>Hedgehog winding number</td>
 </tr>
 <tr>

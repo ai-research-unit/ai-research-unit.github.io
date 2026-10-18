@@ -136,16 +136,16 @@ G_u(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \frac{u(g)}{4\pi R}.
 $$
 Write $\phi = 1/(4\pi R)$, so that $G_u = \phi\, u(g)$. The chain rule gives
 $$
-\Delta G_u = u\,\Delta\phi + 2u'\,\nabla\phi\cdot\nabla g + u'\,\phi\,\Delta g + u''\,\phi\,(\nabla g)^2,
+\Delta G_u = u\,\Delta\phi + 2\frac{du}{dg}\,\nabla\phi\cdot\nabla g + \frac{du}{dg}\,\phi\,\Delta g + \frac{d^2u}{dg^2}\,\phi\,(\nabla g)^2,
 \qquad
-\partial^2/\partial t^2 G_u = u''\,\phi,
+\partial^2/\partial t^2 G_u = \frac{d^2u}{dg^2}\,\phi,
 $$
 and therefore, with $\Box = \Delta + \partial^2/\partial Q_t^2$,
 $$
 \Box G_u
 = \frac{u(g)}{4\pi}\,\Delta\frac{1}{R}
-+ \frac{u'(g)}{4\pi}\left[2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta g\right]
-+ \frac{u''(g)}{4\pi R}\left[(\nabla g)^2 - \frac{1}{c^2}\right].
++ \frac{\frac{du}{dg}(g)}{4\pi}\left[2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta g\right]
++ \frac{\frac{d^2u}{dg^2}(g)}{4\pi R}\left[(\nabla g)^2 - \frac{1}{c^2}\right].
 $$
 Three elementary radial identities now decide the outcome:
 $$
@@ -155,7 +155,7 @@ $$
 \qquad
 \Delta\frac{1}{R} = -4\pi\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z).
 $$
-The first says the coefficient of $u''$ vanishes; the second says the coefficient of $u'$ vanishes; the third converts the coefficient of $u$ into a source at the origin. Hence
+The first says the coefficient of $\frac{d^2u}{dg^2}$ vanishes; the second says the coefficient of $\frac{du}{dg}$ vanishes; the third converts the coefficient of $u$ into a source at the origin. Hence
 $$
 \Box G_u = -u(g)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -u(t)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$
@@ -165,7 +165,7 @@ G_{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \frac{\delta(t - R/c)}
 \qquad
 \Box\,G_{\mathrm{ret}} = -\delta(t)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}).
 $$</p>
-<p>Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $u'$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $u'$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the <em>argument</em> $g$: because $(\nabla g)^2 = 1/c^2$ exactly, the two second-derivative terms combine, and because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.</p>
+<p>Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $\frac{du}{dg}$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $\frac{du}{dg}$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the <em>argument</em> $g$: because $(\nabla g)^2 = 1/c^2$ exactly, the two second-derivative terms combine, and because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.</p>
 <p><strong>(b) The light-cone delta and its Jacobian.</strong> The same kernel is a distribution concentrated on the light cone. The cone is the zero set of the invariant
 $$
 \sigma(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = t^2 - \frac{R^2}{c^2},
@@ -176,7 +176,7 @@ G_{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \frac{1}{2\pi c}\,\The
 \qquad
 \Theta(t) = \begin{cases} 1, & t > 0,\\ 0, & t < 0. \end{cases}
 $$
-To convert the invariant delta into a delta of $t - R/c$ one uses the composition rule $\delta(f(t)) = \sum_i \delta(t - t_i)/|f'(t_i)|$ at the roots $t_i$ of $f$. For $f(t) = t^2 - R^2/c^2$ the roots are $t = \pm R/c$, and at the future root the Jacobian is
+To convert the invariant delta into a delta of $t - R/c$ one uses the composition rule $\delta(f(t)) = \sum_i \delta(t - t_i)/\left|\frac{df}{dt}(t_i)\right|$ at the roots $t_i$ of $f$. For $f(t) = t^2 - R^2/c^2$ the roots are $t = \pm R/c$, and at the future root the Jacobian is
 $$
 \left|\frac{d}{dt}\left(t^2 - \frac{R^2}{c^2}\right)\right|_{t = R/c} = 2t\Big|_{t=R/c} = \frac{2R}{c}.
 $$
@@ -190,7 +190,7 @@ $$
 = \frac{1}{2\pi c}\cdot\frac{c}{2R}\,\delta\!\left(t - \frac{R}{c}\right)
 = \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right) = G_{\mathrm{ret}} .
 $$
-This is the Jacobian the exercise warns about: the factor $c/(2R)$ is what turns the invariant coefficient $1/(2\pi c)$ into the radial coefficient $1/(4\pi R)$. Dropping it — writing the radial kernel as $\frac{1}{2\pi c}\delta(t-R/c)$, or as $\frac{1}{2\pi R}\delta(t-R/c)$, or as a coefficient without the $R$ in the denominator — gives a kernel that fails in part (a). The $u'$ term does not cancel, except for the middle form, whose $u'$ term does cancel but which produces twice the unit point source. The conversion was checked numerically for several pairs $(R,c)$ by smearing the invariant delta against test functions.</p>
+This is the Jacobian the exercise warns about: the factor $c/(2R)$ is what turns the invariant coefficient $1/(2\pi c)$ into the radial coefficient $1/(4\pi R)$. Dropping it — writing the radial kernel as $\frac{1}{2\pi c}\delta(t-R/c)$, or as $\frac{1}{2\pi R}\delta(t-R/c)$, or as a coefficient without the $R$ in the denominator — gives a kernel that fails in part (a). The $\frac{du}{dg}$ term does not cancel, except for the middle form, whose $\frac{du}{dg}$ term does cancel but which produces twice the unit point source. The conversion was checked numerically for several pairs $(R,c)$ by smearing the invariant delta against test functions.</p>
 <p><strong>(c) The coefficient from the Fourier representation.</strong> The defining equation in Fourier space is algebraic. With the transform convention $\delta^{(4)}(\tilde{Q}) = \int \frac{d^3k}{(2\pi)^3}\frac{d\omega}{2\pi}\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ and the symbol $\omega^2/c^2 - k^2$ from part (a), the equation $(\omega^2/c^2 - k^2)G = -1$ gives
 $$
 G(\vec k,\omega) = \frac{c^2}{c^2 k^2 - \omega^2},
@@ -248,7 +248,7 @@ $$
 \vec A = \frac{\mu}{4\pi}\int \frac{\vec J_{\mathrm{ret}}}{R}\,d^3y ,
 $$
 where $\rho_{\mathrm{ret}} = \rho(\vec y, t - R/c)$ and $\vec J_{\mathrm{ret}} = \vec J(\vec y, t - R/c)$. These are the standard retarded potentials, obtained here from a single biquaternionic convolution rather than from four component equations.</p>
-<p>A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(t - R/c)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a <em>second</em> Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(s)|/c - t$ has $h'(s) = 1 - \vec u_R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.</p>
+<p>A word on the two retarded-time Jacobians, because the exercise's first trap and the radiation article's construction both involve one. The Jacobian used in Problem 2 is the one that converts the invariant delta on the light cone into $\delta(t - R/c)$, and it produces the $1/(4\pi R)$ coefficient. When the source is a point charge on a worldline, a <em>second</em> Jacobian appears when the remaining source integral is localized on the worldline: there the argument $h(s) = s + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec r_q(s)|/c - t$ has $\frac{dh}{ds}(s) = 1 - \vec u_R\cdot\vec\beta$, which produces the Liénard–Wiechert denominator. The two Jacobians are different objects — one is the light-cone normalization of the kernel, the other the worldline localization of a moving source — and conflating them is a second way to lose a factor. This exercise treats the first; the second belongs to the radiation article.</p>
 <p><strong>(c) The Lorenz gauge is automatic.</strong> Write the gauge scalar
 $$
 S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial/\partial Q_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c^2}\partial/\partial t\,\phi + \mathrm{div}\,\vec A,
@@ -335,7 +335,7 @@ G_{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \frac{1}{4\pi R}\,\del
 \Box\,G_{\mathrm{ret}} = -\delta(t)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 \qquad R = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|,
 $$
-derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(t-R/c)}{4\pi R}$ and exhibiting the two cancellations (the $u''$ coefficient because $(\nabla g)^2 = 1/c^2$, the $u'$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi c}\Theta(t)\delta(t^2 - R^2/c^2)$ by the Jacobian conversion $\delta(t^2 - R^2/c^2) = \frac{c}{2R}\delta(t-R/c)$; and from the Fourier amplitude $\frac{c^2}{c^2k^2-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.</p>
+derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(t-R/c)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\nabla g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi c}\Theta(t)\delta(t^2 - R^2/c^2)$ by the Jacobian conversion $\delta(t^2 - R^2/c^2) = \frac{c}{2R}\delta(t-R/c)$; and from the Fourier amplitude $\frac{c^2}{c^2k^2-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.</p>
 <p>The defining equation does not select the kernel: the advanced kernel $\frac{1}{4\pi R}\delta(t+R/c)$ solves it equally, the difference is a solution of the homogeneous equation, and the retarded choice is fixed by the causality (no-incoming-radiation) boundary condition, implemented by displacing both frequency poles below the real axis. Convolving the retarded kernel with the source gives the retarded potentials
 $$
 \phi = \frac{1}{4\pi\epsilon}\int \frac{\rho_{\mathrm{ret}}}{R}\,d^3y,

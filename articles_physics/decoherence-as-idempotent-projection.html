@@ -67,10 +67,10 @@
       <div class="article-body">
         <h1 id="decoherence-as-idempotent-projection"><strong>Decoherence as Idempotent Projection</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion framework identifies the <strong>pure states</strong> of a qubit with the <strong>idempotents</strong> of the Hermitian subspace $\mathbb{M}_+$: those elements $\tilde{P}$ satisfying $\tilde{P}^2 = \tilde{P}$. A mixed state is a positive trace-one element that is <em>not</em> idempotent, and the amount by which it fails to be idempotent is a single scalar, the scalar part of $\tilde{Ϛ}^2 - \tilde{Ϛ}$. <strong>Decoherence</strong> — the loss of the phase relations between the components of a superposition — is therefore, in this language, the deformation of an idempotent into a non-idempotent positive trace-one element. That deformation is the subject of this article.</p>
+<p>The biquaternion framework identifies the <strong>pure states</strong> of a qubit with the <strong>idempotents</strong> of the Hermitian subspace $\mathbb{M}_+$: those elements $\tilde\Pi$ satisfying $\tilde\Pi^2 = \tilde\Pi$. A mixed state is a positive trace-one element that is <em>not</em> idempotent, and the amount by which it fails to be idempotent is a single scalar, the scalar part of $\tilde{Ϛ}^2 - \tilde{Ϛ}$. <strong>Decoherence</strong> — the loss of the phase relations between the components of a superposition — is therefore, in this language, the deformation of an idempotent into a non-idempotent positive trace-one element. That deformation is the subject of this article.</p>
 <p>The title couples "idempotent" to "projection", and the coupling is not innocent. Two different objects can be called an idempotent projection, and they are not the same:</p>
 <ol>
-<li>An <strong>idempotent element</strong> of the algebra: an operator $\tilde{P}$ with $\tilde{P}^2 = \tilde{P}$. Its action on a state, $\tilde{Ϛ} \mapsto \tilde{P}\tilde{Ϛ}\tilde{P}$ (followed by normalization), is a projective measurement. A pure state is such an element, by definition.</li>
+<li>An <strong>idempotent element</strong> of the algebra: an operator $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$. Its action on a state, $\tilde{Ϛ} \mapsto \tilde\Pi\tilde{Ϛ}\tilde\Pi$ (followed by normalization), is a projective measurement. A pure state is such an element, by definition.</li>
 <li>An <strong>idempotent channel</strong>: a map $\Phi$ on the state space with $\Phi \circ \Phi = \Phi$. This is a statement about an <em>operation</em>, not about an element.</li>
 </ol>
 <p>A pure state satisfies the first condition by definition. The dephasing channel satisfies the second condition only in one limit, at full strength. For partial dephasing, dephasing twice is <em>not</em> the same as dephasing once: $\Phi_p \circ \Phi_p = \Phi_{2p - p^2} \neq \Phi_p$ whenever $0 < p < 1$. Since decoherence as a physical process is generically partial, the honest interpretation of the title is:</p>
@@ -90,7 +90,7 @@ $$</p>
 <p>$$
 \tilde{Ϛ}^2 = \tilde{Ϛ} \qquad \Longleftrightarrow \qquad |\vec r| = 1 .
 $$</p>
-<p>For $\vec r \neq 0$ the pure state is the rank-one projector $\tilde\Pi_1(\vec u_r) = \tfrac{1}{2}(e_t + i\vec u_r)$, with $\vec u_r = \vec r/|\vec r|$ a unit pure real quaternion; the complementary idempotent $\tilde\Pi_2(\vec u_r) = \tfrac{1}{2}(e_t - i\vec u_r)$ corresponds to the antipodal point. The pure states are the boundary sphere of the Bloch ball, which is also the trace-one slice of the future light cone of the biquaternion norm, since</p>
+<p>For $\vec r \neq 0$ the pure state is the rank-one Hermitian idempotent $\tilde\Pi_1(\vec u_r) = \tfrac{1}{2}(e_t + i\vec u_r)$, with $\vec u_r = \vec r/|\vec r|$ a unit pure real quaternion; the complementary idempotent $\tilde\Pi_2(\vec u_r) = \tfrac{1}{2}(e_t - i\vec u_r)$ corresponds to the antipodal point. The pure states are the boundary sphere of the Bloch ball, which is also the trace-one slice of the future light cone of the biquaternion norm, since</p>
 <p>$$
 \langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_t .
 $$</p>
@@ -187,7 +187,7 @@ $$</p>
 <h2 id="is-decoherence-a-projection">Is Decoherence a Projection?</h2>
 <p>We can now separate the senses cleanly.</p>
 <h3 id="sense-1-the-input-state-is-a-projection">Sense 1: The input state is a projection</h3>
-<p>This is the sense in which "idempotent" attaches to the <em>state</em>. A pure state is an idempotent element $\tilde{P}^2 = \tilde{P}$, and decoherence is precisely the process that deforms it into a non-idempotent positive trace-one element. In this sense the title is a statement about what decoherence <em>acts on</em>: it acts on an idempotent, and it destroys the idempotency. The deviation scalar $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ})$ measures how much of the projection structure has been lost.</p>
+<p>This is the sense in which "idempotent" attaches to the <em>state</em>. A pure state is an idempotent element $\tilde\Pi^2 = \tilde\Pi$, and decoherence is precisely the process that deforms it into a non-idempotent positive trace-one element. In this sense the title is a statement about what decoherence <em>acts on</em>: it acts on an idempotent, and it destroys the idempotency. The deviation scalar $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ})$ measures how much of the projection structure has been lost.</p>
 <p>It is worth being explicit that this is exact and not a metaphor: the condition $\tilde{Ϛ}^2 = \tilde{Ϛ}$ is the condition $\mathrm{Tr}(\tilde{Ϛ}^2) = 1$, and decoherence makes the purity strictly less than one for every off-axis input.</p>
 <h3 id="sense-2-full-dephasing-is-an-idempotent-channel">Sense 2: Full dephasing is an idempotent channel</h3>
 <p>At $p = 1$ the channel itself is idempotent, and the projection metaphor becomes exact in a strong operator-algebraic sense. Write $A$ for the complex span of the two pointer idempotents,</p>
@@ -269,7 +269,7 @@ $$</p>
 <li><strong>Extension.</strong> The treatment is single-qubit. Many-qubit decoherence, entanglement between decohered qubits, and the field-theoretic setting are not developed here, and the tensor-product structure of the framework — the analogue of the partial trace that Stinespring dilation requires — is inherited rather than derived.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>A pure state of the informational sector is an idempotent element of $\mathbb{M}_+$: $\tilde{P}^2 = \tilde{P}$. Its mixedness is measured by the deviation $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$, whose vanishing is exactly purity. Decoherence, in the form of the dephasing channel of the companion article, deforms an idempotent into a non-idempotent positive trace-one element: it preserves the populations and scales the coherences by $1-p$, sending the Bloch vector $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ and carrying a pure state from the Bloch sphere into the ball along a straight line toward the pointer axis.</p>
+<p>A pure state of the informational sector is an idempotent element of $\mathbb{M}_+$: $\tilde\Pi^2 = \tilde\Pi$. Its mixedness is measured by the deviation $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$, whose vanishing is exactly purity. Decoherence, in the form of the dephasing channel of the companion article, deforms an idempotent into a non-idempotent positive trace-one element: it preserves the populations and scales the coherences by $1-p$, sending the Bloch vector $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ and carrying a pure state from the Bloch sphere into the ball along a straight line toward the pointer axis.</p>
 <p>The title's phrase "idempotent projection" must therefore be read with care, and the distinction between an idempotent <em>element</em> and an idempotent <em>channel</em> is the spine of the subject:</p>
 <ul>
 <li>The <strong>input state</strong> is an idempotent; decoherence destroys that idempotency.</li>
@@ -320,7 +320,7 @@ $$</p>
 <td>Trace</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$</td>
+<td>$\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$</td>
 <td>Trace formula (Born rule)</td>
 </tr>
 <tr>

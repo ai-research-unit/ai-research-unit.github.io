@@ -67,18 +67,18 @@
       <div class="article-body">
         <h1 id="the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form"><strong>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The preceding article identifies the restricted Lorentz group with the group of rotor conjugations of the biquaternion algebra,</p>
+<p>The preceding article identifies the restricted Lorentz group with the group of rotor conjugations of the biquaternion algebra by the Lorentz rotor $\tilde U_{\mathrm L}$, a unit-norm biquaternion. Explicitly,</p>
 <p>$$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \qquad
-SL(2,\mathbb{C}) = \{\tilde{U}\in\mathbb{B} : \langle\tilde{U}\rangle_{\natural} = e_t\},
+SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L}\in\mathbb{B} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t\},
 $$</p>
-<p>and shows that the correspondence is two-to-one. The identification raises two questions that are not answered by the group law alone. What is the topology of the covering group, and what is the topology of the subgroup formed by the boosts? The two questions have contrasting answers, and the contrast is the subject of this article.</p>
+<p>and the correspondence is two-to-one. The identification raises two questions that are not answered by the group law alone. What is the topology of the covering group, and what is the topology of the subgroup formed by the boosts? The two questions have contrasting answers, and the contrast is the subject of this article.</p>
 <p>The <strong>covering group</strong> $SL(2,\mathbb{C})$ is simply connected. As a manifold it is diffeomorphic to $SU(2)\times\mathbb{R}^3$, and it deformation-retracts onto $SU(2)\cong S^3$. Consequently the map</p>
 <p>$$
 \pi:\ SL(2,\mathbb{C})\ \longrightarrow\ SO^+(1,3),
 \qquad
-\pi(\tilde{U}):\tilde{Q}\longmapsto\tilde{U}\tilde{Q}\tilde{U}^{*},
+\pi(\tilde U_{\mathrm L}):\tilde{Q}\longmapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*},
 $$</p>
 <p>is the <strong>universal cover</strong> of the restricted Lorentz group, and the fundamental group of that group is</p>
 <p>$$
@@ -88,9 +88,9 @@ $$</p>
 <p>The <strong>boosts</strong>, by contrast, are topologically trivial. The pure boosts form a three-dimensional manifold diffeomorphic to $\mathbb{R}^3$ — the hyperbolic three-space carried by the positive Hermitian unit-norm elements — and every loop in it is contractible. A boost can never be deformed continuously into a rotation while remaining a boost, and the obstruction to closing two boosts into a boost is carried entirely by the rotation that their product contains. That rotation is the Thomas–Wigner rotation, and its angle is computed here in the rotor algebra.</p>
 <p>The article develops three threads. The first is the manifold structure of the covering group and its contraction onto $SU(2)$. The second is the covering itself, the $2\pi$ loop and the belt picture. The third is the topology of the boost manifold, the non-closure of the boost composition law, and the Wigner angle. The closing sections separate the algebraic content from the standard topology and record the open questions.</p>
 <p><strong>Boundaries.</strong> The physical consequences of the double cover for spinning matter — spinor representations, the transformation law of a spinor under a $2\pi$ rotation, and the observed sign change — belong to the sibling category on relativistic quantum theory and are not developed here. This article is the group-theoretic and geometric statement: what the covering group is, what its fundamental group is, and what the boost manifold is. The structure and representations of the group are treated in the companion article <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>, and the automorphism characterization in <em>The Lorentz Group as Biquaternion Norm Automorphisms</em>.</p>
-<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the centre). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on $\mathbb{M}_-$. A <strong>rotor</strong> is a unit-norm biquaternion, $\langle\tilde{U}\rangle_{\natural} = e_t$, and a general rotor decomposes as</p>
+<p><strong>Conventions.</strong> We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar and real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar and imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the centre). The conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = ({}^{\natural})^{\,*}$ and ${}^\flat = -{}^{*}$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$, restricting to the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ on $\mathbb{M}_-$. A <strong>rotor</strong> is a unit-norm biquaternion, $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$, and a general rotor decomposes as</p>
 <p>$$
-\tilde{U} = R\,B,
+\tilde U_{\mathrm L} = R\,B,
 \qquad
 R\in SU(2)\subset\mathbb{H}_{\mathbb{B}},
 \qquad
@@ -108,12 +108,12 @@ $$</p>
 <h2 id="the-manifold-of-the-covering-group">The Manifold of the Covering Group</h2>
 <p>The unit-norm elements</p>
 <p>$$
-SL(2,\mathbb{C}) = \{\tilde{U}\in\mathbb{B} : \langle\tilde{U}\rangle_{\natural} = e_t\}
+SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L}\in\mathbb{B} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t\}
 $$</p>
-<p>form a real Lie group of dimension six, because the single complex equation $\langle\tilde{U}\rangle_{\natural} = 1$ is two real conditions on the eight real coordinates of $\tilde{U}$. It is the double cover of the restricted Lorentz group and, as a manifold, it has a simple structure given by the polar decomposition.</p>
+<p>form a real Lie group of dimension six, because the single complex equation $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ is two real conditions on the eight real coordinates of $\tilde U_{\mathrm L}$. It is the double cover of the restricted Lorentz group and, as a manifold, it has a simple structure given by the polar decomposition.</p>
 <p>Every invertible matrix has a unique decomposition into a unitary and a positive Hermitian factor; transported to the algebra, this reads</p>
 <p>$$
-\tilde{U} = R\,B,
+\tilde U_{\mathrm L} = R\,B,
 \qquad
 R^{*} = R^{-1},
 \qquad
@@ -141,15 +141,15 @@ $$</p>
 $$</p>
 <p>A simply connected cover of a connected group is its universal cover, so the two-to-one map $\pi$ of the introduction is the universal covering map of $SO^+(1,3)$. The whole topology of the covering group is the topology of $SU(2)$: the non-compact boost directions are contractible and contribute nothing to the homotopy.</p>
 <p>$$
-\tilde{U}^{*}\tilde{U} = B^\dagger R^{*} R B = B\,R^{*} R\,B = B^2,
+\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L} = B^\dagger R^{*} R B = B\,R^{*} R\,B = B^2,
 \qquad
-B = (\tilde{U}^{*}\tilde{U})^{1/2},
+B = (\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L})^{1/2},
 $$</p>
-<p>using $R^{*} R = e_t$; the other ordering gives $\tilde{U}\tilde{U}^{*} = RB^2R^{-1}$, the conjugated boost $RBR^\dagger$, which is not the boost factor of $\tilde{U}$. With $R = \tilde{U}B^{-1}$ the factor $R$ was unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B$ was Hermitian positive with $\langle B\rangle_{\natural}=e_t$, and the reconstruction $RB$ reproduced $\tilde{U}$ to machine precision. The eigenvalues of $B$ were real and positive, as required for the positive square root.</p>
+<p>using $R^{*} R = e_t$; the other ordering gives $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*} = RB^2R^{-1}$, the conjugated boost $RBR^\dagger$, which is not the boost factor of $\tilde U_{\mathrm L}$. With $R = \tilde U_{\mathrm L}B^{-1}$ the factor $R$ was unitary and lay in $\mathbb{H}_{\mathbb{B}}$, the factor $B$ was Hermitian positive with $\langle B\rangle_{\natural}=e_t$, and the reconstruction $RB$ reproduced $\tilde U_{\mathrm L}$ to machine precision. The eigenvalues of $B$ were real and positive, as required for the positive square root.</p>
 <h2 id="the-two-sheeted-cover">The Two-Sheeted Cover</h2>
 <p>The conjugation map</p>
 <p>$$
-\pi(\tilde{U}):\ \tilde{Q}\ \longmapsto\ \tilde{U}\,\tilde{Q}\,\tilde{U}^{*}
+\pi(\tilde U_{\mathrm L}):\ \tilde{Q}\ \longmapsto\ \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*}
 $$</p>
 <p>is a continuous surjective homomorphism from $SL(2,\mathbb{C})$ onto the restricted Lorentz group, and its kernel is</p>
 <p>$$
@@ -164,7 +164,7 @@ $$</p>
 \pi_x\bigl(SO^+(1,3)\bigr)\cong\ker\pi\cong\mathbb{Z}/2\mathbb{Z}.
 $$</p>
 <p>The statement is worth making twice, because it is the algebraic heart of the matter: <strong>the restricted Lorentz group has exactly one nontrivial loop</strong>, and it is the image of a path in $SL(2,\mathbb{C})$ that joins $e_t$ to $-e_t$. The rotor group itself is simply connected, so nothing is lost by working with rotors; what is lost by working with four-vectors is precisely the distinction between the two sheets.</p>
-<h2 id="the-math86-loop-and-the-belt">The $2\pi$ Loop and the Belt</h2>
+<h2 id="the-math87-loop-and-the-belt">The $2\pi$ Loop and the Belt</h2>
 <p>The generating loop is explicit. Let $\vec u_{\mathrm r}$ be any unit real vector and define the rotation rotor</p>
 <p>$$
 R(\theta) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r}\,\in\mathbb{H}_{\mathbb{B}},
@@ -308,9 +308,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The covering group of the restricted Lorentz group is the group of unit-norm biquaternions,</p>
 <p>$$
-SL(2,\mathbb{C}) = \{\tilde{U} : \langle\tilde{U}\rangle_{\natural} = e_t\} \cong SU(2)\times\mathbb{R}^3 \simeq S^3 ,
+SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t\} \cong SU(2)\times\mathbb{R}^3 \simeq S^3 ,
 $$</p>
-<p>which is simply connected, with $\pi_x = 0$ and $\pi_z = \mathbb{Z}$. The conjugation map $\pi(\tilde{U}):\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ has kernel $\{\pm e_t\}$ and is the universal cover,</p>
+<p>which is simply connected, with $\pi_x = 0$ and $\pi_z = \mathbb{Z}$. The conjugation map $\pi(\tilde U_{\mathrm L}):\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ has kernel $\{\pm e_t\}$ and is the universal cover,</p>
 <p>$$
 SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \qquad
@@ -355,11 +355,11 @@ $$</p>
 <td>Real-quaternion subspace; complex scalar line (centre)</td>
 </tr>
 <tr>
-<td>$\tilde{U}$, $\langle\tilde{U}\rangle_{\natural} = e_t$</td>
+<td>$\tilde U_{\mathrm L}$, $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$</td>
 <td>Unit-norm biquaternion; Lorentz rotor</td>
 </tr>
 <tr>
-<td>$\pi(\tilde{U}):\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$</td>
+<td>$\pi(\tilde U_{\mathrm L}):\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$</td>
 <td>Conjugation action on $\mathbb{M}_-$</td>
 </tr>
 <tr>
@@ -367,7 +367,7 @@ $$</p>
 <td>Two-sheeted universal cover</td>
 </tr>
 <tr>
-<td>$SL(2,\mathbb{C}) = \{\tilde{U}:\langle\tilde{U}\rangle_{\natural}=e_t\}\cong SU(2)\times\mathbb{R}^3$</td>
+<td>$SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L}:\langle\tilde U_{\mathrm L}\rangle_{\natural}=e_t\}\cong SU(2)\times\mathbb{R}^3$</td>
 <td>Covering group manifold</td>
 </tr>
 <tr>

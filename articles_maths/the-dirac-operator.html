@@ -142,8 +142,8 @@ $$</p>
 <p>so $\sigma(\xi)$ is a unit of $A$, with $\sigma(\xi)^{-1}=\bar\sigma(\xi)/|\xi|^2$, and $D$ is
 <strong>elliptic</strong>.</p>
 <p><em>Proof.</em> Expanding the product, the diagonal terms contribute $\xi_t^2+\sum_{i\ge1} e_i\bar e_i\xi_i^2$.
-The scalar term is $\xi_t^2$; for $i\ge1$, $e_i\bar e_i=-e_i^2=1$. Hence every diagonal term is
-$\xi_t^2$ or $\xi_i^2$. The off-diagonal terms cancel pairwise, because $\xi_\mu\xi_\nu$ is a real scalar and
+For $i\ge1$, $e_i\bar e_i=-e_i^2=1$, so every diagonal term is $\xi_t^2$ or $\xi_i^2$. The off-diagonal
+terms cancel pairwise, because $\xi_i\xi_j$ is a real scalar and
 $e_i\bar e_j+\bar e_j e_i=0$ for $i\neq j\ge1$, this being the Clifford relation
 $e_ie_j+e_je_i=-2\delta_{ij}$ after the sign $\bar e_j=\epsilon_j e_j$ with
 $\epsilon_i=-1$; the scalar term commutes with everything. The value $|\xi|^2$ is a positive real number, hence a unit of $A$,
@@ -164,7 +164,7 @@ $$</p>
 theorem applies to it directly. For a domain $\Omega$ with smooth boundary and outward unit normal
 $\nu$, the <strong>conormal element</strong> is</p>
 <p>$$
-\nu_B = \nu_0+\sum_{i=1}^{m}\nu_i\,e_i \in A .
+\nu_B = \nu_t+\sum_{i=1}^{m}\nu_i\,e_i \in A .
 $$</p>
 <p><em>Proof.</em> The derivative of a constant times a function is the constant times the derivative, and
 $\partial/\partial x_\mu(e_\mu f)=e_\mu\partial/\partial x_\mu f$.</p>
@@ -300,7 +300,7 @@ self-adjoint family of <em>Dirac Differential Operators</em>. Its principal symb
 by $\sigma(\xi)=\xi_t+\sum_{i\ge1}e_i\xi_i$, which satisfies $\sigma(\xi)\bar\sigma(\xi)=|\xi|^2$; hence
 $\sigma(\xi)$ is a unit for $\xi\neq0$, $D$ is elliptic, and $D\bar D=\bar DD=\Delta$. Because the
 coefficients are constant, $D$ is the divergence of the field with components $e_\mu f$, and the
-divergence theorem applies to it with the conormal element $\nu_B=\nu_0+\sum_{i\ge1}\nu_i e_i$.</p>
+divergence theorem applies to it with the conormal element $\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$.</p>
 <p>The operator is not symmetric: with respect to the module form in which the vectors are skew,
 $D^{*}=-\bar D$, so $D$ is neither symmetric nor normal, and it splits into the self-adjoint vector
 part $D_{\mathrm{sa}}=\sum_{i\ge1}e_i\partial/\partial x_i$, with $D_{\mathrm{sa}}^2=-\Delta$, and the
@@ -362,7 +362,7 @@ Twisted Cauchy–Riemann Operator</em>.</p>
 <td>Principal symbol; $\sigma\bar\sigma=|\xi|^2$</td>
 </tr>
 <tr>
-<td>$\nu_B=\nu_0+\sum_{i\ge1}\nu_i e_i$</td>
+<td>$\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$</td>
 <td>Conormal element of a boundary</td>
 </tr>
 <tr>

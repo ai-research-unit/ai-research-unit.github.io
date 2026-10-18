@@ -130,7 +130,7 @@ $$</p>
 <p><em>Proof.</em> Let $\Phi$ be the fundamental solution of the Laplacian in $\mathbb{R}^{m+1}$, normalised so that $\Delta\Phi=\delta_0$; then $D\bar D = \Delta$ gives $D(\bar D\Phi) = \delta_0$, so $E = \bar D\Phi$ is a fundamental solution, and the computation of $\bar D\Phi$ for the radially symmetric $\Phi$ produces the displayed formula. In one dimension $E(x) = \frac{1}{2\pi}\frac{x^{\natural}}{|x|^2}$, which is the classical kernel $1/(2\pi z)$; for $m=2$ the kernel is $\frac{1}{4\pi}\frac{x^{\natural}}{|x|^3}$; and in general the homogeneity is $1-(m+1)$.</p>
 <p><strong>Remark (verification in the quaternionic case).</strong> The identity $DE=0$ off the origin is readily checked by direct computation for $m=2$: with the quaternion multiplication of $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and the finite-difference approximation of $D=\partial/\partial x_t+e_1\partial/\partial x_1+e_2\partial/\partial x_2$, the quantity $DE$ at the points $(0.3,0.4,0.5)$, $(1,-0.7,0.2)$ and $(0.11,0.22,-0.31)$ is zero to machine precision, and $Dx=-1=1-m$ at the same points, as the general formula requires.</p>
 <h3 id="cauchypompeiu-and-cauchy">Cauchy–Pompeiu and Cauchy</h3>
-<p><strong>Theorem (Cauchy–Pompeiu).</strong> Let $\Omega\subseteq\mathbb{R}^{m+1}$ be a bounded domain with smooth boundary, oriented by the outward normal $\nu$, and put $\nu_B = \nu_0+\sum_{i=1}^{m}\nu_i e_i$, $\nu_\mu$ the components of $\nu$. For $f$ of class $C^1$ on $\bar\Omega$ and $x\in\Omega$,</p>
+<p><strong>Theorem (Cauchy–Pompeiu).</strong> Let $\Omega\subseteq\mathbb{R}^{m+1}$ be a bounded domain with smooth boundary, oriented by the outward normal $\nu$, and put $\nu_B = \nu_t+\sum_{i=1}^{m}\nu_i e_i$, $\nu_\mu$ the components of $\nu$. For $f$ of class $C^1$ on $\bar\Omega$ and $x\in\Omega$,</p>
 <p>$$
 f(x) = \int_{\partial\Omega}E(x-y)\,\nu_B(y)\,f(y)\,dS(y)-\int_{\Omega}E(x-y)\,(Df)(y)\,dy .
 $$</p>
@@ -567,7 +567,7 @@ the integral representation of several complex variables, which is the classical
 <td>Surface area of the unit sphere in $\mathbb{R}^{m+1}$</td>
 </tr>
 <tr>
-<td>$\nu_B=\nu_0+\sum_{i=1}^m\nu_i e_i$</td>
+<td>$\nu_B=\nu_t+\sum_{i=1}^m\nu_i e_i$</td>
 <td>Conormal element of a boundary</td>
 </tr>
 <tr>

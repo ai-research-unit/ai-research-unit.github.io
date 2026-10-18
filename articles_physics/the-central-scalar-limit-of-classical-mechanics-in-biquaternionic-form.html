@@ -180,7 +180,7 @@ E = \frac{1}{2}m\left(dr/dt\right)^{2} + V_{\text{eff}}(r) = \text{const},
 $$</p>
 <p>and the radial equation is</p>
 <p>$$
-md^2r/dt^2 = -V_{\text{eff}}'(r) = -V'(r) + \frac{L^2}{mr^3} .
+md^2r/dt^2 = -\frac{dV_{\text{eff}}}{dr}(r) = -\frac{dV}{dr}(r) + \frac{L^2}{mr^3} .
 $$</p>
 <p>The reduction is the standard one; its role here is to display the scalar character of the central-scalar limit. After the reduction, the entire problem is a one-dimensional scalar problem in the central scalars $E$ and $L$ and the radial variable $r$. The vector directions have been exhausted by the conserved angular momentum, and the only surviving dynamical variable is a scalar.</p>
 <h3 id="binets-equation">Binet's Equation</h3>
@@ -188,8 +188,8 @@ $$</p>
 <p>$$
 \frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2},
 $$</p>
-<p>where $F(r)$ is the radial component of the force, positive outward. The derivation is the standard one: from $dr/dt = -h\,u'$ and $d^2r/dt^2 = -h^2u^2u''$ (with $u' = du/d\theta$), substituting into $md^2r/dt^2 = F(r) + L^2/(mr^3)$ and using $L^2/(mr^3) = mh^2u^3$ gives the equation above. The equation is scalar, it is second order, and its two integration constants are the eccentricity-like amplitude and the orientation of the orbit. Every central-force orbit in the limit is a solution of this one equation.</p>
-<p>For the linear force $F(r) = -m\omega^2r$, Binet's equation becomes $u'' + u = \omega^2/(h^2u^3)$, which is nonlinear in $u$; its orbits are nevertheless closed ellipses, centred on the force centre rather than focused on it, and they are more cleanly seen in the phase plane of the second article than through Binet's equation. For the inverse-square force $F(r) = -\kappa/r^2$ the equation becomes linear,</p>
+<p>where $F(r)$ is the radial component of the force, positive outward. The derivation is the standard one: from $dr/dt = -h\,du/d\theta$ and $d^2r/dt^2 = -h^2u^2\,d^2u/d\theta^2$ (with $u=1/r$), substituting into $md^2r/dt^2 = F(r) + L^2/(mr^3)$ and using $L^2/(mr^3) = mh^2u^3$ gives the equation above. The equation is scalar, it is second order, and its two integration constants are the eccentricity-like amplitude and the orientation of the orbit. Every central-force orbit in the limit is a solution of this one equation.</p>
+<p>For the linear force $F(r) = -m\omega^2r$, Binet's equation becomes $\frac{d^2u}{d\theta^2} + u = \omega^2/(h^2u^3)$, which is nonlinear in $u$; its orbits are nevertheless closed ellipses, centred on the force centre rather than focused on it, and they are more cleanly seen in the phase plane of the second article than through Binet's equation. For the inverse-square force $F(r) = -\kappa/r^2$ the equation becomes linear,</p>
 <p>$$
 \frac{d^2u}{d\theta^2} + u = \frac{\kappa}{mh^2} = \frac{1}{p}, \qquad p = \frac{L^2}{m\kappa},
 $$</p>
@@ -229,7 +229,7 @@ $$</p>
 <p>The conservation of angular momentum is therefore identical with the centrality of the force, and both are statements that the position and the force commute as quaternions.</p>
 <p>A central force gives planar motion, the areal law $dA/dt = L/(2m)$, the reduction to the radial problem with effective potential $V_{\text{eff}} = V(r) + L^2/(2mr^2)$, and Binet's equation</p>
 <p>$$
-u'' + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
+\frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
 $$</p>
 <p>whose inverse-square solution is the conic section $r = p/(1 + e\cos(\theta-\theta_0))$ with $p = L^2/(m\kappa)$.</p>
 <p>The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{-1}$, with Lie algebra $[\vec e_\mu,\vec e_\nu] = 2\epsilon_{\mu\nu\lambda}\vec e_\lambda$ in the real three-space; the components of $\vec L$ satisfy $\{L_i,L_j\} = \epsilon_{ijk}L_k$ under the Poisson bracket, which is a phase-space operation and is not the quaternion commutator. The limit excludes internal vectors (spin), noncentral scalars, and noncentral vector couplings; those structures are the subjects of the sibling subcategories.</p>
@@ -311,7 +311,7 @@ $$</p>
 <td>Binet variable</td>
 </tr>
 <tr>
-<td>$u'' + u = -F(1/u)/(mh^2u^2)$</td>
+<td>$\frac{d^2u}{d\theta^2} + u = -F(1/u)/(mh^2u^2)$</td>
 <td>Binet's equation for a central force</td>
 </tr>
 <tr>

@@ -270,7 +270,7 @@ $$</p>
 = -\left(dr/dt\right)(t)\,\mathrm{artanh}\,r(t)
 = \Gamma\,\frac{r_\perp(t)^2}{r(t)}\,\mathrm{artanh}\,r(t) \;\ge\; 0 ,
 $$</p>
-<p>using $h'(r) = -\mathrm{artanh}\,r$ and $\left(dr/dt\right)(t) = -\Gamma r_\perp(t)^2/r(t)$. The rate is supported by the instantaneous transverse component, since it is $r_\perp(t)$ that carries the contraction; the initial component alone would overstate the rate at every $t > 0$.</p>
+<p>using $\frac{dh}{dr}(r) = -\mathrm{artanh}\,r$ and $\left(dr/dt\right)(t) = -\Gamma r_\perp(t)^2/r(t)$. The rate is supported by the instantaneous transverse component, since it is $r_\perp(t)$ that carries the contraction; the initial component alone would overstate the rate at every $t > 0$.</p>
 <p>The distinction matters as soon as the state has an axial part. Take $\vec r = (0.3, 0.4, 0.5)$ with $\vec u = \vec e_z$ and $\Gamma = 0.7$, so that $r_\parallel = 0.5$ and $r_\perp(0) = 0.5$: at $t = 1$ the finite-difference derivative is $0.0487233141$ and $\Gamma r_\perp(t)^2\,\mathrm{artanh}\,r(t)/r(t) = 0.0487233141$, whereas the same expression with $r_\perp(0)$ in place of $r_\perp(t)$ gives $0.1975827817$. On the state of the earlier checks, $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ with $\vec u = \vec e_z$, the axial part vanishes, $r_\perp(t) = r(t)$, and at $t = 0$ the rate is $\Gamma\,r\,\mathrm{artanh}\,r = 0.4362576681$; that case cannot separate the two interpretations, which is why the state with $r_\parallel \neq 0$ is the decisive check.</p>
 <p>The rate is positive and it vanishes when the transverse component vanishes. It also vanishes at the maximally mixed state, since there $r_\perp(t) \le r(t) \to 0$ and $\mathrm{artanh}\,r(t) \to 0$ together. It <strong>diverges on the boundary sphere off the pointer axis</strong>, where $\mathrm{artanh}\,r$ blows up while the transverse component stays positive: a state that is nearly pure and nearly orthogonal to the pointer axis has the most information left to lose, and it loses that information fastest. The extremum of the rate over the ball is therefore at purity, not at maximal mixing: the rate is zero at the maximally mixed state and grows without bound as the pure sphere is approached away from the axis, so it is unbounded above over the ball and has no finite maximum.</p>
 <h2 id="fine-and-coarse-liouville-and-the-second-law">Fine and Coarse: Liouville and the Second Law</h2>
@@ -299,7 +299,7 @@ $$</p>
 <p>$$
 \mathcal{S}(\tilde{Ϛ}) \le H(w) ,
 $$</p>
-<p>with equality exactly for the spectral ensemble, whose states are the two eigenprojectors $\tilde\Pi_{1,2}(\vec u_r)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the <strong>minimum over preparations</strong> — the least coarse description the state admits. A partition of the pure-state sphere into cells is one preparation among many; merging cells lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the <em>same</em> state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.</p>
+<p>with equality exactly for the spectral ensemble, whose states are the two idempotents $\tilde\Pi_{1,2}(\vec u_r)$ with weights $\lambda_\pm$. The fine-grained entropy is therefore the <strong>minimum over preparations</strong> — the least coarse description the state admits. A partition of the pure-state sphere into cells is one preparation among many; merging cells lowers $H$ but changes the mean state, so the comparison is not between $H$ and the entropy of the <em>same</em> state. The invariant entropy of the state is the infimum, and the coarse-grained entropies are the values above it.</p>
 <p>The identity is verified on the three-point ensemble</p>
 <p>$$
 w = (0.5,\,0.3,\,0.2), \qquad \vec u = (\vec e_x,\,\vec e_y,\,-\vec e_z),
@@ -357,7 +357,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$</td>
-<td>Idempotent (pure state, rank-one projector)</td>
+<td>Idempotent (pure state, rank one)</td>
 </tr>
 <tr>
 <td>$\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$</td>

@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 r_c = \frac{L^2}{m\kappa},
 $$</p>
-<p>where $V_{\text{eff}}' = 0$, and the circular orbit is stable because $V_{\text{eff}}''(r_c) > 0$. The value at the minimum is the energy of the circular orbit,</p>
+<p>where $dV_{\text{eff}}/dr = 0$, and the circular orbit is stable because $\frac{d^2V_{\text{eff}}}{dr^2}(r_c) > 0$. The value at the minimum is the energy of the circular orbit,</p>
 <p>$$
 E_c = V_{\text{eff}}(r_c) = -\frac{m\kappa^2}{2L^2} .
 $$</p>
@@ -105,11 +105,11 @@ $$</p>
 <h3 id="solving-binets-equation">Solving Binet's Equation</h3>
 <p>For an inverse-square force the general Binet equation</p>
 <p>$$
-u'' + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
+\frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
 $$</p>
 <p>becomes linear. With $F(r) = -\kappa/r^2 = -\kappa u^2$,</p>
 <p>$$
-u'' + u = \frac{\kappa}{mh^2} = \frac{1}{p}, \qquad p = \frac{mh^2}{\kappa} = \frac{L^2}{m\kappa},
+\frac{d^2u}{d\theta^2} + u = \frac{\kappa}{mh^2} = \frac{1}{p}, \qquad p = \frac{mh^2}{\kappa} = \frac{L^2}{m\kappa},
 $$</p>
 <p>whose general solution is</p>
 <p>$$
@@ -118,7 +118,7 @@ r(\theta) = \frac{p}{1 + e\cos(\theta - \theta_0)}, \qquad e = Cp .
 $$</p>
 <p>The orbit is therefore a <strong>conic section with the force centre at a focus</strong>, the semi-latus rectum is $p = L^2/(m\kappa)$, and the eccentricity $e$ and the orientation $\theta_0$ are the two integration constants. The angle $\theta_0$ fixes the direction of the apsidal line — the line through the perihelion and aphelion — and, as the next section shows, it is the direction of the Runge–Lenz vector.</p>
 <h3 id="the-energyeccentricity-relation">The Energy–Eccentricity Relation</h3>
-<p>The eccentricity is determined by the energy. Substituting the orbit into the energy and using the turning-point condition $V_{\text{eff}}'(r) = 0$ at the apsides gives</p>
+<p>The eccentricity is determined by the energy. Substituting the orbit into the energy and using the turning-point condition $\frac{dV_{\text{eff}}}{dr}(r) = 0$ at the apsides gives</p>
 <p>$$
 E = \frac{m\kappa^2}{2L^2}\left(e^2 - 1\right), \qquad\text{equivalently}\qquad e = \sqrt{1 + \frac{2EL^2}{m\kappa^2}} .
 $$</p>
@@ -233,7 +233,7 @@ $$</p>
 <p>The classical Kepler problem in biquaternionic form is the motion of a real vector $\vec r$ in the material sector under the central scalar potential $V(r) = -\kappa/r$. The force $-\kappa\vec u_r/r^2$ is a real vector commuting with the position, so the angular momentum $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$ is conserved and the motion is planar.</p>
 <p>Binet's equation becomes linear,</p>
 <p>$$
-u'' + u = \frac{1}{p}, \qquad p = \frac{L^2}{m\kappa},
+\frac{d^2u}{d\theta^2} + u = \frac{1}{p}, \qquad p = \frac{L^2}{m\kappa},
 $$</p>
 <p>with the conic solution</p>
 <p>$$
@@ -308,7 +308,7 @@ $$</p>
 <td>Binet variable</td>
 </tr>
 <tr>
-<td>$u'' + u = 1/p$</td>
+<td>$\frac{d^2u}{d\theta^2} + u = 1/p$</td>
 <td>Linear Binet equation for the Kepler force</td>
 </tr>
 <tr>
