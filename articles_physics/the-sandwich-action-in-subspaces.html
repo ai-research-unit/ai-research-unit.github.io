@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -120,24 +136,24 @@ $$</p>
 <p>The identity is the statement that the sandwich is an action of the group of units, not merely a collection of linear maps: the individual maps are not algebra automorphisms, but they compose as their elements do. The case of rotors is stated in <em>Biquaternion Rotations and Lorentz Transformations</em>, §<em>Composition of Operators</em>; the identity holds for every unit, which is what the subspace interpretation needs. It is the tool that decomposes an operator whose element is a product, and it is used twice below.</p>
 <h2 id="the-centre-the-operator-of-a-complex-scalar">The Centre: the Operator of a Complex Scalar</h2>
 <h3 id="the-element-and-its-operator">The Element and Its Operator</h3>
-<p>Let $\tilde{Q} = ze_0$ with $z = r\exp(i\alpha)\neq 0$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = z^2$, of modulus $r^2$. The sandwich of a central element is the dilation</p>
+<p>Let $\tilde{Q} = ze_t$ with $z = r\exp(i\alpha)\neq 0$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = z^2$, of modulus $r^2$. The sandwich of a central element is the dilation</p>
 <p>$$
-\operatorname{H}_{ze_0}(\tilde S) = |z|^2\tilde S = r^2\tilde S .
+\operatorname{H}_{ze_t}(\tilde S) = |z|^2\tilde S = r^2\tilde S .
 $$</p>
 <p>The centre therefore contributes to the operator nothing but a dilation of the whole algebra by the modulus of the biquaternion norm, and on the unit-modulus slice $|z| = 1$ it contributes the identity. In the language of the classes, the centre is a class whose operator is a dilation by the squared modulus of the element, trivial on the unit circle of the class.</p>
 <h3 id="why-this-is-the-right-reading">Why This Is the Right Reading</h3>
 <p>The result is the operator form of a fact about the polar representation: the two factors of a polar element that lie in the centre are the scale $r$ and the phase $\exp(i\alpha)$, and a dilation by $r^2$ is the only trace of them that an operator can carry. The sandwich carries the modulus but not the argument, since $|z|^2$ distinguishes $z$ from $\bar{z}$, from $-z$ and from $\exp(i\alpha)z$. In the four-factor polar language the centre is the class in which the boost factor and the rotor are both trivial, and the operator statement is that the surviving datum is the modulus, once, squared.</p>
-<p><strong>Example.</strong> Take $z = 3 + 2i$, of modulus $\sqrt{13}$ and biquaternion norm $N = (3+2i)^2 = 5 + 12i$ of modulus $13$. Then $\operatorname{H}_{ze_0}(\tilde S) = 13\tilde S$ on every element, so $N\!\left(\operatorname{H}_{ze_0}(\tilde S)\right) = 169\langle\tilde S\rangle_{\natural} = \langle\tilde S,\tilde S\rangle_{\natural} = |\langle\tilde{Q}\rangle_{\natural}|^2\langle\tilde S\rangle_{\natural}$, in agreement with the scaling of the biquaternion norm.</p>
+<p><strong>Example.</strong> Take $z = 3 + 2i$, of modulus $\sqrt{13}$ and biquaternion norm $N = (3+2i)^2 = 5 + 12i$ of modulus $13$. Then $\operatorname{H}_{ze_t}(\tilde S) = 13\tilde S$ on every element, so $N\!\left(\operatorname{H}_{ze_t}(\tilde S)\right) = 169\langle\tilde S\rangle_{\natural} = \langle\tilde S,\tilde S\rangle_{\natural} = |\langle\tilde{Q}\rangle_{\natural}|^2\langle\tilde S\rangle_{\natural}$, in agreement with the scaling of the biquaternion norm.</p>
 <h2 id="the-vector-subspace-the-similarities">The Vector Subspace: the Similarities</h2>
 <h3 id="a-vector-has-a-central-square">A Vector Has a Central Square</h3>
-<p>An element of the vector subspace is $\tilde{Q} = \vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z$ with complex coefficients; equivalently $\operatorname{Sc}\tilde{Q} = 0$. Writing a general element as $\tilde{Q} = ae_0 + \vec v$ with $a$ complex, its square is</p>
+<p>An element of the vector subspace is $\tilde{Q} = \vec v = v_x\vec e_x + v_y\vec e_y + v_z\vec e_z$ with complex coefficients; equivalently $\operatorname{Sc}\tilde{Q} = 0$. Writing a general element as $\tilde{Q} = ae_t + \vec v$ with $a$ complex, its square is</p>
 <p>$$
 \tilde{Q}^2 = \left(a^2 - \vec v\cdot\vec v\right)e_t + 2a\vec v ,
 $$</p>
-<p>where $\vec v\cdot\vec v = v_1^2+v_2^2+v_3^2 = \langle \vec v\rangle_{\natural}$ is the biquaternion norm of the vector part. The square is central exactly when the vector part of the square vanishes, that is when $a\vec v = 0$.</p>
+<p>where $\vec v\cdot\vec v = v_x^2+v_y^2+v_z^2 = \langle \vec v\rangle_{\natural}$ is the biquaternion norm of the vector part. The square is central exactly when the vector part of the square vanishes, that is when $a\vec v = 0$.</p>
 <p><strong>Proposition.</strong> $\tilde{Q}^2$ is central if and only if $\tilde{Q}$ lies in the centre or in the vector subspace.</p>
 <p><em>Proof.</em> If $a = 0$ or $\vec v = 0$ the displayed square is central. Conversely if $2a\vec v = 0$ with $\tilde{Q}$ not central, then $\vec v\neq 0$ and $a = 0$.</p>
-<p>For an element of the vector subspace the square is therefore central and computable in closed form: the products $e_je_k$ with $j\neq k$ cancel in pairs because they anticommute, so $\vec v^2 = -\langle \vec v\rangle_{\natural}e_t$ and</p>
+<p>For an element of the vector subspace the square is therefore central and computable in closed form: the products $\vec e_j\vec e_k$ with $j\neq k$ cancel in pairs because they anticommute, so $\vec v^2 = -\langle \vec v\rangle_{\natural}e_t$ and</p>
 <p>$$
 \vec v^2 = -\langle \vec v\rangle_{\natural}\,e_t .
 $$</p>
@@ -156,10 +172,10 @@ $$</p>
 <th>$\vec e_x$</th>
 <th>$\vec e_y$</th>
 <th>$\vec e_z$</th>
-<th>$ie_0$</th>
-<th>$ie_1$</th>
-<th>$ie_2$</th>
-<th>$ie_3$</th>
+<th>$ie_t$</th>
+<th>$i\vec e_x$</th>
+<th>$i\vec e_y$</th>
+<th>$i\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
@@ -169,10 +185,10 @@ $$</p>
 <td>$\vec e_x$</td>
 <td>$-\vec e_y$</td>
 <td>$-\vec e_z$</td>
-<td>$ie_0$</td>
-<td>$ie_1$</td>
-<td>$-ie_2$</td>
-<td>$-ie_3$</td>
+<td>$ie_t$</td>
+<td>$i\vec e_x$</td>
+<td>$-i\vec e_y$</td>
+<td>$-i\vec e_z$</td>
 </tr>
 </tbody>
 </table></div>
@@ -184,7 +200,7 @@ N\!\left(\operatorname{H}_{\vec v}(\tilde S)\right) = |\langle \vec v\rangle_{\n
 $$</p>
 <p>so a vector preserves the causal type of every element and rescales the interval by one positive factor; on the unit-norm vectors the factor is one and the map is an isometry. The Hermitian element that measures the scaling is $\vec v\vec v^{*}$, computable from the cross product of the coefficient vector and its conjugate,</p>
 <p>$$
-\vec v\,\vec v^{*} = |\vec v|^2e_t - \vec v\times\vec v^{*} , \qquad |\vec v|^2 = |v_1|^2+|v_2|^2+|v_3|^2 ,
+\vec v\,\vec v^{*} = |\vec v|^2e_t - \vec v\times\vec v^{*} , \qquad |\vec v|^2 = |v_x|^2+|v_y|^2+|v_z|^2 ,
 $$</p>
 <p>where $|\vec v|^2$ is the Euclidean norm squared and $\vec v\times\vec v^{*}$ is the cross product of the coefficient triple with its complex conjugate. That cross product is purely imaginary in each coordinate, so $\vec v\vec v^{*}$ is an element of the informational sector; it is central exactly when the three coefficients share a common complex factor, $\vec v = c\,\vec w$ with $c\in\mathbb{C}$ and $\vec w$ real, and then the operator of the complex vector is the operator of the real direction multiplied by the biquaternion norm,</p>
 <p>$$
@@ -194,14 +210,14 @@ $$</p>
 <p>A vector of unit norm, $\langle \vec v\rangle_{\natural} = 1$, is an element of the Lorentz group, so its sandwich, read on the material sector, lies in $O(1,3)$: it preserves the two sectors and scales the biquaternion norm by $|N|^2 = 1$, and the family of unit-norm vectors is connected and contains the real unit vectors, whose operators are the rotations by $\pi$, so the induced map on the material sector lies in the identity component $SO^+(1,3)$. It is not in general a pure boost: a complex vector acts as a boost composed with the rotation by $\pi$ about its own direction, a composition that the section on the sectors returns to. The computation is instructive:</p>
 <p><strong>Example.</strong> Take $\vec v = a\,\vec e_x + b\,\vec e_y$ with $a = 0.6 + 0.5i$ and $b = \sqrt{1-a^2} = 0.99079746 - 0.30278640\,i$, so that $\langle \vec v\rangle_{\natural} = 1$. Then</p>
 <p>$$
-\operatorname{H}_{\vec v}(ie_0) = 1.683359\,ie_0 + 1.354141\,\vec e_z , \qquad \operatorname{H}_{\vec v}(\vec e_x) = -0.463359\,\vec e_x + 0.886171\,\vec e_y .
+\operatorname{H}_{\vec v}(ie_t) = 1.683359\,ie_t + 1.354141\,\vec e_z , \qquad \operatorname{H}_{\vec v}(\vec e_x) = -0.463359\,\vec e_x + 0.886171\,\vec e_y .
 $$</p>
 <p>The time axis stays in the cone, the transverse plane stays in the material sector, and the biquaternion norm is the unit one: the operator is a Lorentz transformation, with a boost part of rapidity $\operatorname{arcosh}1.683359 = 1.111035$ and a rotation part. The element is a rotor of unit norm, and its operator is not a pure boost.</p>
 <h3 id="the-imaginary-vectors-give-the-same-operators">The Imaginary Vectors Give the Same Operators</h3>
 <p>For $\vec v$ in the vector subspace the element $i\vec v$ is again in the vector subspace, and by the central rule the two elements have the same operator. The traceless Hermitian elements $i\vec w$ with $\vec w$ a real vector, which are the vector-subspace part of the informational sector, therefore act exactly as the real vectors $\vec w$, and in particular a unit imaginary vector $i\vec u$ acts as the rotation by $\pi$ about $\vec u$ even though its element is Hermitian. This is the first appearance of a phenomenon that the two sectors will show again: the sector label of an element does not fix the type of its operator.</p>
 <h2 id="the-two-halves-the-rotations">The Two Halves: the Rotations</h2>
 <h3 id="the-quaternion-subspace">The Quaternion Subspace</h3>
-<p>Let $\tilde Q_2$ be a real quaternion, $\tilde Q_2 = a_0e_t + a_1\vec e_x+a_2\vec e_y+a_3\vec e_z$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde Q_2^{*} = \tilde Q_2^{\natural} = |\tilde Q_2|^2\tilde Q_2^{-1}$, with $\langle\tilde Q_2\rangle_{\natural} = \langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = |\tilde Q_2|^2$ a positive real, so the central rule gives</p>
+<p>Let $\tilde Q_2$ be a real quaternion, $\tilde Q_2 = a_te_t + a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde Q_2^{*} = \tilde Q_2^{\natural} = |\tilde Q_2|^2\tilde Q_2^{-1}$, with $\langle\tilde Q_2\rangle_{\natural} = \langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = |\tilde Q_2|^2$ a positive real, so the central rule gives</p>
 <p>$$
 \operatorname{H}_{\tilde Q_2}(\tilde S) = \tilde Q_2\,\tilde S\,\tilde Q_2^{\natural} = |\tilde Q_2|^2\,\operatorname{H}_{\tilde u}(\tilde S) , \qquad \tilde u = \tilde Q_2/|\tilde Q_2| .
 $$</p>
@@ -238,9 +254,9 @@ $$</p>
 <p>$$
 \tilde{U} = 1.060660172\,e_t + 0.353553391\,i\,\vec e_z , \qquad \langle\tilde{U}\rangle_{\natural} = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1 ,
 $$</p>
-<p>and the four-position $\tilde{R} = icte_0 + 0.6ct\,\vec e_z$ of a world line of velocity $0.6c$, at $ct = 1$. Then</p>
+<p>and the four-position $\tilde{R} = icte_t + 0.6ct\,\vec e_z$ of a world line of velocity $0.6c$, at $ct = 1$. Then</p>
 <p>$$
-\operatorname{H}_{\tilde{U}}(\tilde{Q}) = \tilde{U}\tilde{Q}\tilde{U} = 0.8\,ie_0 ,
+\operatorname{H}_{\tilde{U}}(\tilde{Q}) = \tilde{U}\tilde{Q}\tilde{U} = 0.8\,ie_t ,
 $$</p>
 <p>the four-position in the rest frame, with $ct' = 0.8 = \sqrt{1-0.6^2}$ and $z' = 0$. The boost formula of the corpus, $ct' = ct\cosh\psi - z\sinh\psi$ and $z' = z\cosh\psi - ct\sinh\psi$, is the same computation in components, and the element of the informational sector is the operator that performs it.</p>
 <h3 id="the-negative-norm-branch-of-the-sector">The Negative-Norm Branch of the Sector</h3>
@@ -260,7 +276,7 @@ $$</p>
 <p>a boost composed with the rotation by $\pi$ about $\vec u$. At $\varphi = 0$ the element is the traceless $i\vec u$ of the vector subspace and the boost factor is the identity, so the family is connected to the rotations by $\pi$; at every $\varphi$ the operator is orthochronous and proper, and the sign of the biquaternion norm decides whether the rotation by $\pi$ is present.</p>
 <p><strong>Example.</strong> For $\tilde{Q} = \sqrt{3}\,e_t + 2i\,\vec e_z$, which is Hermitian with $\langle\tilde{Q}\rangle_{\natural} = 3-4 = -1$, the same data are $\vec u = \vec e_z$, $\cosh\varphi = 2$, $\sinh\varphi = \sqrt3$, the boost rotor $\tilde{U} = 2e_t + i\sqrt3\,\vec e_z$ of rapidity $\operatorname{arcosh}7 = 2.633915794$, and</p>
 <p>$$
-\operatorname{H}_{\tilde{Q}}(ie_0) = 7\,ie_0 - 4\sqrt3\,\vec e_z = 7\,ie_0 - 6.928203\,\vec e_z , \qquad \tilde{U}\vec e_z = -i\tilde{Q} ,
+\operatorname{H}_{\tilde{Q}}(ie_t) = 7\,ie_t - 4\sqrt3\,\vec e_z = 7\,ie_t - 6.928203\,\vec e_z , \qquad \tilde{U}\vec e_z = -i\tilde{Q} ,
 $$</p>
 <p>so that $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{U}}\circ\operatorname{H}_{\vec e_z}$: the transverse plane is negated and the time axis is carried to the four-velocity of rapidity $\operatorname{arcosh}7$. The example is the exact statement that a Hermitian element of negative biquaternion norm acts as a Lorentz operator with a rotation part, not as a boost.</p>
 <h3 id="the-material-sector-gives-the-same-operators">The Material Sector Gives the Same Operators</h3>
@@ -269,7 +285,7 @@ $$</p>
 \operatorname{H}_{\tilde{R}} = \operatorname{H}_{i\tilde{R}} , \qquad i\tilde{R}\in\mathbb{M}_+ ,
 $$</p>
 <p>so the sandwich of a four-vector is the sandwich of the informational element $i\tilde{R}$, and the material sector adds no operator family: the boosts, the rotations by $\pi$, and their compositions are already all present in the informational sector. The interpretation is the one the corpus uses everywhere: the same Lorentz transformation can be written with a Hermitian form, which is the informational interpretation, and with a four-vector, which is the material interpretation; the traceless Hermitian elements $i\vec u$ correspond exactly to the unit spacelike four-vectors $-\vec u$ and act as the rotations by $\pi$.</p>
-<p><strong>Example.</strong> The element of the previous example, $\tilde{Q} = \sqrt3\,e_t + 2i\,\vec e_z$, has $i\tilde{Q} = \sqrt3\,ie_0 - 2\vec e_z$, a four-vector of biquaternion norm $N = -3+4 = 1$, that is, a unit spacelike four-vector; and $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0 - 4\sqrt3\vec e_z$ with the same right-hand side, so the two interpretations agree element by element, as the central rule requires.</p>
+<p><strong>Example.</strong> The element of the previous example, $\tilde{Q} = \sqrt3\,e_t + 2i\,\vec e_z$, has $i\tilde{Q} = \sqrt3\,ie_t - 2\vec e_z$, a four-vector of biquaternion norm $N = -3+4 = 1$, that is, a unit spacelike four-vector; and $\operatorname{H}_{i\tilde{Q}}(ie_t) = 7ie_t - 4\sqrt3\vec e_z$ with the same right-hand side, so the two interpretations agree element by element, as the central rule requires.</p>
 <h2 id="the-operator-dictionary">The Operator Dictionary</h2>
 <p>The remarkable subspaces, the operator each produces, and the subspace's own interpretation, in one table. The kernel column records the kernel of the operator inside the class; on the unit-norm slice it reduces to the fibre $\{\pm e_t\}$ in every class.</p>
 <div class="table-scroll"><table>
@@ -285,7 +301,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$</td>
-<td>$ze_0$</td>
+<td>$ze_t$</td>
 <td>dilation by $|z|^2$</td>
 <td>$\mathrm{U}(1)e_t$</td>
 <td>the scale and the phase</td>
@@ -339,19 +355,19 @@ $$</p>
 <h3 id="a-central-element">A Central Element</h3>
 <p>$\tilde{Q} = (3+2i)e_t$: $\operatorname{H}_{\tilde{Q}}(\tilde S) = 13\tilde S$, the dilation by the modulus of the biquaternion norm; the class contributes no other operator.</p>
 <h3 id="a-real-unit-vector">A Real Unit Vector</h3>
-<p>$\vec u = \vec e_x$: the sandwich acts as the rotation by $\pi$ about $\vec e_x$, with $\vec e_y\mapsto-\vec e_y$, $\vec e_z\mapsto-\vec e_z$, $ie_2\mapsto-ie_2$, $ie_3\mapsto-ie_3$, and $e_t$, $\vec e_x$, $ie_0$, $ie_1$ fixed. The operator is an involution and preserves all remarkable subspaces.</p>
+<p>$\vec u = \vec e_x$: the sandwich acts as the rotation by $\pi$ about $\vec e_x$, with $\vec e_y\mapsto-\vec e_y$, $\vec e_z\mapsto-\vec e_z$, $i\vec e_y\mapsto-i\vec e_y$, $i\vec e_z\mapsto-i\vec e_z$, and $e_t$, $\vec e_x$, $ie_t$, $i\vec e_x$ fixed. The operator is an involution and preserves all remarkable subspaces.</p>
 <h3 id="an-imaginary-unit-vector">An Imaginary Unit Vector</h3>
-<p>$i\vec u = ie_1$: the same operator as $\vec e_x$, by the central rule, so a Hermitian element of the informational sector acts as a rotation by $\pi$; the sector label does not fix the type of the operator.</p>
+<p>$i\vec u = i\vec e_x$: the same operator as $\vec e_x$, by the central rule, so a Hermitian element of the informational sector acts as a rotation by $\pi$; the sector label does not fix the type of the operator.</p>
 <h3 id="a-unit-quaternion">A Unit Quaternion</h3>
 <p>$\tilde Q_2 = \cos\frac{\pi}{6}e_t + \sin\frac{\pi}{6}\vec e_z$: the sandwich gives $\operatorname{H}_{\tilde Q_2}(\vec e_x) = \frac12\vec e_x + \frac{\sqrt3}{2}\vec e_y$, the rotation through $\pi/3$ about $\vec e_z$, which is twice the angle $\pi/6$ in the element. The kernel is $\{\pm e_t\}$.</p>
 <h3 id="a-central-real-quaternion">A Central Real Quaternion</h3>
 <p>$\tilde Q_2 = 2e_t$: the element is central, so $\operatorname{H}_{\tilde Q_2} = 4\,\mathrm{id}$; the example shows that the scalar of a real quaternion is the dilation $|\tilde Q_2|^2$ of its operator, and that it disappears on the unit-norm slice.</p>
 <h3 id="a-boost-rotor">A Boost Rotor</h3>
-<p>$\beta = 0.6$, $\tilde{U} = 1.060660172e_t + 0.353553391ie_3$: $\operatorname{H}_{\tilde{U}}(ie_0+0.6\vec e_z) = 0.8ie_0$, the rest-frame four-position, and the time axis of the moving world line is carried to the rest frame.</p>
+<p>$\beta = 0.6$, $\tilde{U} = 1.060660172e_t + 0.353553391i\vec e_z$: $\operatorname{H}_{\tilde{U}}(ie_t+0.6\vec e_z) = 0.8ie_t$, the rest-frame four-position, and the time axis of the moving world line is carried to the rest frame.</p>
 <h3 id="a-hermitian-element-of-negative-biquaternion-norm">A Hermitian Element of Negative Biquaternion Norm</h3>
-<p>$\tilde{Q} = \sqrt3e_t+2ie_3$: $\operatorname{H}_{\tilde{Q}}(ie_0) = 7ie_0 - 4\sqrt3\vec e_z$, and $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{U}}\circ\operatorname{H}_{\vec e_z}$ with $\tilde{U} = 2e_t+i\sqrt3\vec e_z$ of rapidity $\operatorname{arcosh}7 = 2.633915794$; the operator is a boost with a rotation by $\pi$, not a pure boost.</p>
+<p>$\tilde{Q} = \sqrt3e_t+2i\vec e_z$: $\operatorname{H}_{\tilde{Q}}(ie_t) = 7ie_t - 4\sqrt3\vec e_z$, and $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{U}}\circ\operatorname{H}_{\vec e_z}$ with $\tilde{U} = 2e_t+i\sqrt3\vec e_z$ of rapidity $\operatorname{arcosh}7 = 2.633915794$; the operator is a boost with a rotation by $\pi$, not a pure boost.</p>
 <h3 id="a-unit-spacelike-four-vector">A Unit Spacelike Four-Vector</h3>
-<p>$i\tilde{Q} = \sqrt3ie_0 - 2\vec e_z$, of biquaternion norm $1$: the same operators as $\tilde{Q}$, with $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0-4\sqrt3\vec e_z$, which is the material-sector interpretation of the previous example.</p>
+<p>$i\tilde{Q} = \sqrt3ie_t - 2\vec e_z$, of biquaternion norm $1$: the same operators as $\tilde{Q}$, with $\operatorname{H}_{i\tilde{Q}}(ie_t) = 7ie_t-4\sqrt3\vec e_z$, which is the material-sector interpretation of the previous example.</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <p>The sandwich reads as an isometry of the form of each subspace, and the article's own interpretation is that one map gives one symmetry per subspace. Read on the split, the sandwich is the reason a change of frame cannot mix the material and the informational data: the acting element keeps the grading, so the relativity of the frame and the sharpness of the split are compatible (<em>The Material-Informational Split as a Superselection Structure in Biquaternionic Form</em>). Read on the clock, the unit-norm slice of the sandwich is the group that moves the ledger and does not move the phase, which is why the temporal interpretation of the exchange and the transformation theory of the material sector are separate.</p>
 <h2 id="summary">Summary</h2>
@@ -381,7 +397,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$</td>
-<td>the centre, of elements $ze_0$</td>
+<td>the centre, of elements $ze_t$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>

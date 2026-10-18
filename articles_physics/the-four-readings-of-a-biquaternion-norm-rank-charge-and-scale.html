@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -73,8 +89,8 @@ matrix model $\mathsf{M}_2$.</p>
 <h2 id="the-four-readings-one-at-a-time">The Four Readings, One at a Time</h2>
 <p><strong>The norm.</strong> $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=\sum_\mu Q_\mu^2$ is the complex-linear quadratic
 form, its zero set the zero-divisor cone, its value on the material sector the interval
-$-c^2t^2+x^2+y^2+z^2$. Read as mass, its sign is the mass-shell sign: the shell $N=-m^2c^2$ is the
-hyperboloid and the light cone is $N=0$. The interpretation is <strong>value</strong>: which level set the element lies on.</p>
+$-c^2t^2+x^2+y^2+z^2$. Read as mass, its sign is the mass-shell sign: the shell $\langle\tilde{R}\rangle_{\natural}=-m^2c^2$ is the
+hyperboloid and the light cone is $\langle\tilde{R}\rangle_{\natural}=0$. The interpretation is <strong>value</strong>: which level set the element lies on.</p>
 <p><strong>The rank.</strong> The Hermitian square $\tilde{R}\tilde{R}^{*}$ is positive semidefinite, of rank two when
 $\langle\tilde{R}\rangle_{\natural}\neq0$ and of rank at most one on the cone. Beside the mass, the rank gives the <strong>count of
 polarisations</strong>: two for the massive type and one for the massless type. The interpretation is <strong>count</strong>: how many
@@ -84,11 +100,11 @@ finite-dimensional unitary representations of a compact group are labelled by di
 this is the <strong>other internal label</strong>: the charge is the discrete label of a representation of the compact
 internal group, and it is discrete because the group is compact and for no other reason. The interpretation is
 <strong>label</strong>: which irreducible representation the element transforms in. The slice lies inside the invertible
-elements and the cone is its complement, so no null element is in the slice and no element of the cone carries
+elements, and the cone is the complement of the invertible elements, so no null element is in the slice and no element of the cone carries
 one of these labels.</p>
 <p><strong>The scale.</strong> The polar representation writes an element as a polar factor times a phase and a unit
 element, and the modulus $r$ is the polar scale. The norm is reversed by the central imaginary,
-$\langle i\tilde{R}\rangle_{\natural}=-\langle\tilde{R}\rangle_{\natural}$, and its logarithm $\log\lvert N\rvert$ is read as a dilation potential. Beside
+$\langle i\tilde{R}\rangle_{\natural}=-\langle\tilde{R}\rangle_{\natural}$, and its logarithm $\log\lvert\langle\tilde{R}\rangle_{\natural}\rvert$ is read as a dilation potential. Beside
 the mass, the scale is the <strong>unit</strong>: a change of $r$ is a change of the unit of length, and the conformal
 rescaling acts on it. The interpretation is <strong>unit</strong>: how the element scales, not what level set it lies on. The
 polar representation is stated only for $\langle\tilde{R}\rangle_{\natural}\neq0$, so the cone is the boundary of its domain and not a
@@ -97,8 +113,8 @@ locus it detects.</p>
 <p>Two of the four readings agree on one locus, and they agree exactly: <strong>the norm vanishes on the
 zero-divisor cone and the rank of the Hermitian square drops there, while the charge and the scale are defined
 only off it.</strong> The norm vanishes there; the rank drops to at most one; the other two readings do not reach the
-cone at all, the compact label because the unitary slice is the complement of the cone and the polar scale
-because its representation requires $N\neq0$. Only the massless elements are detected by the norm and the rank
+cone at all, the compact label because the unitary slice lies in the complement of the cone and the polar scale
+because its representation requires $\langle\tilde{R}\rangle_{\natural}\neq0$. Only the massless elements are detected by the norm and the rank
 together, and the agreement is a statement about that pair, not about the four. This is what justifies
 calling the norm and the rank two readings of one word: on the massless locus they are two descriptions of one
 element, and the dictionary of the corpus — massless, rank one, null, on the cone — is the agreement stated
@@ -106,7 +122,7 @@ twice.</p>
 <p>$\langle\tilde{R}\rangle_{\natural}=0$ exactly when the rank of $\tilde{R}\tilde{R}^{*}$ is at most one, with rank zero only at
 $\tilde{R}=0$; off the cone the rank is two. The two directions were recomputed on $100$ of $100$ random
 non-null elements each way, and every constructed nonzero null element has rank one.</p>
-<p>Off the cone the agreement stops, and it stops in a stated way. A rank-two element may have $N>0$ or $N<0$;
+<p>Off the cone the agreement stops, and it stops in a stated way. A rank-two element may have $\langle\tilde{R}\rangle_{\natural}>0$ or $\langle\tilde{R}\rangle_{\natural}<0$;
 on the material sector those are the spacelike and the timelike regions, so <strong>rank two does not say which
 sign</strong>, and the mass label "massive" covers both the timelike and the spacelike elements. The corpus's own
 caution is <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em>: no element of the
@@ -116,14 +132,14 @@ probability sense.</p>
 <h2 id="the-pole">The Pole</h2>
 <p>Two limiting elements show where the interpretations must be stated with their scope.</p>
 <p><strong>The rank-one state.</strong> A rank-one element of the informational sector is a pure state — the projector
-$\tilde{\Pi}=\tfrac12(e_t-i\vec e_z)$ has $N=0$, rank one, and $\mathrm{Sc}(\tilde{\Pi}\tilde{\Pi}^{*})=\tfrac12$
+$\tilde{\Pi}=\tfrac12(e_t-i\vec e_z)$ has $\langle\tilde{\Pi}\rangle_{\natural}=0$, rank one, and $\mathrm{Sc}(\tilde{\Pi}\tilde{\Pi}^{*})=\tfrac12$
 — so the same rank-one condition that reads as <strong>massless</strong> on the material side reads as <strong>pure state</strong> on
 the informational side. The two interpretations are not in conflict, because they are interpretations of the rank on two
 different sectors: a massless material element is a null four-vector, and a rank-one informational element
 is a state, and both are the same algebraic fact, that the square has one independent rank-one term. What
 the pole shows is that "rank one = massless" is a statement of the <strong>material</strong> interpretation, and it must not be
 carried to the state side, where rank one is what a state <em>is</em>.</p>
-<p><strong>The spacelike element.</strong> A rank-two element with $N>0$ on the material sector is spacelike: massive in the
+<p><strong>The spacelike element.</strong> A rank-two element with $\langle\tilde{R}\rangle_{\natural}>0$ on the material sector is spacelike: massive in the
 rank count and tachyon-like in the interval. Whether it is a physical particle is not an algebraic question,
 and the algebra settles only that its sesquilinear square is positive, so it is a legitimate element of the
 algebra and not a legitimate state.</p>
@@ -143,7 +159,7 @@ algebra and not a legitimate state.</p>
 <td>norm</td>
 <td>$\langle\tilde{R}\rangle_{\natural}=\sum_\mu Q_\mu^2$</td>
 <td>the value and its sign; the mass shell as a level set</td>
-<td>is the mass: $N=-m^2c^2$ on shell</td>
+<td>is the mass: $\langle\tilde{R}\rangle_{\natural}=-m^2c^2$ on shell</td>
 <td>detects no polarisation count and no label</td>
 </tr>
 <tr>
@@ -193,7 +209,7 @@ readings of one element, and this pair is a reading of one term.</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <ul>
 <li><strong>One of the four readings is the mass; the other three are read beside it.</strong> The interpretation is that the
-framework's mass is the norm's level set, $N=-m^2c^2$ on shell, and that the rank, the charge and the scale are
+framework's mass is the norm's level set, $\langle\tilde{R}\rangle_{\natural}=-m^2c^2$ on shell, and that the rank, the charge and the scale are
 separate labels the word mass does not name. The massless locus — the cone — is the one place where the norm
 and the rank agree. Boundary: a statement about usage, and it adds no identity between the four.</li>
 <li><strong>Discreteness of charge is compactness.</strong> The interpretation of the charge row is that charge is discrete

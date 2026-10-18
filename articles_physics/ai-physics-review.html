@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -70,7 +86,7 @@ $$</p>
 <h3 id="the-two-sectors">The two sectors</h3>
 <p>Take the Hermitian conjugation, the coefficient-wise complex conjugate with the three vector coefficients negated:</p>
 <p>$$
-\tilde{Q}^{*} = \bar{Q}_0e_t - \bar{Q}_1\vec e_x - \bar{Q}_2\vec e_y - \bar{Q}_3\vec e_z .
+\tilde{Q}^{*} = \bar{Q}_te_t - \bar{Q}_x\vec e_x - \bar{Q}_y\vec e_y - \bar{Q}_z\vec e_z .
 $$</p>
 <p>The two sectors are its two fixed spaces:</p>
 <p>$$
@@ -91,7 +107,7 @@ $$</p>
 <p><strong>Material element and observable.</strong> An element of $\mathbb{M}_-$ is a <strong>material element</strong>; it is what is observed, a four-vector or a field. Its <strong>observable</strong> is the Hermitian representative $iA\in\mathbb{M}_+$, whose eigenvalues are the real readings. The two are one quantity in two writings, and the central $i$ is the exchange between them.</p>
 <h3 id="two-forms-two-jobs">Two forms, two jobs</h3>
 <p>Two forms are used, and the whole framework turns on their difference. The corpus builds its forms systematically. Its twelve products carry twelve scalar parts, and those take four values and no more: the four forms, one per general product, each written with the one bracket whose subscript records the conjugation of its first and second slots. The four are the plain bilinear $\langle\tilde P,\tilde Q\rangle$, the quaternionic bilinear $\langle\tilde P,\tilde Q\rangle_{\natural}$, the plain sesquilinear $\langle\tilde P,\tilde Q\rangle_{*}$ — also called the Hermitian form — and the quaternionic sesquilinear $\langle\tilde P,\tilde Q\rangle_{\natural*}$, also called the Krein form. The two that the physics uses are $\langle\tilde P,\tilde Q\rangle_{\natural}$ and $\langle\tilde P,\tilde Q\rangle_{*}$, and $\langle\tilde P,\tilde Q\rangle$ is needed once, to compare them. So the twelve products and the four forms are the systematic background, and the article quotes the three it uses.</p>
-<p><strong>The form of the norm, $\langle\tilde P,\tilde Q\rangle_{\natural}$.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}) = P_0Q_t+P_1Q_x+P_2Q_y+P_3Q_z$, where ${}^{\natural}$ negates the three vector coefficients and fixes $Q_t$. Its diagonal, the biquaternion norm, is</p>
+<p><strong>The form of the norm, $\langle\tilde P,\tilde Q\rangle_{\natural}$.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{\natural} = \mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q}) = P_tQ_t+P_xQ_x+P_yQ_y+P_zQ_z$, where ${}^{\natural}$ negates the three vector coefficients and fixes $Q_t$. Its diagonal, the biquaternion norm, is</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$</p>
@@ -100,13 +116,13 @@ $$</p>
 \langle\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}.
 $$</p>
 <p>It is not positive definite — it vanishes on nonzero elements — and its zero set is a cone.</p>
-<p><strong>The Hermitian form, $\langle\tilde P,\tilde Q\rangle_{*}$.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = P_0\bar{Q}_0 + P_1\bar{Q}_1 + P_2\bar{Q}_2 + P_3\bar{Q}_3$, so that its diagonal is $\langle\tilde{Q},\tilde{Q}\rangle_{*} = \lvert Q_t\rvert^2+\dots+\lvert Q_z\rvert^2$. It is real, positive definite, and it does not multiply.</p>
+<p><strong>The Hermitian form, $\langle\tilde P,\tilde Q\rangle_{*}$.</strong> $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = P_t\bar{Q}_t + P_x\bar{Q}_x + P_y\bar{Q}_y + P_z\bar{Q}_z$, so that its diagonal is $\langle\tilde{Q},\tilde{Q}\rangle_{*} = \lvert Q_t\rvert^2+\dots+\lvert Q_z\rvert^2$. It is real, positive definite, and it does not multiply.</p>
 <p>The two forms do the two different jobs that the two theories need:</p>
 <ul>
 <li>a form that multiplies gives a group of isometries — the elements that preserve it — and that is what a metric and its symmetry group are;</li>
 <li>a form that does not multiply gives a pairing and a positive number attached to a pair, and that is what a probability weight is.</li>
 </ul>
-<p>One algebra carries one of each. This is the sharpest way to state the framework's claim, and it is exact rather than rhetorical. On a sector the bar of $\langle\tilde P,\tilde Q\rangle_{*}$ acts as a sign, so that $H = -B$ on $\mathbb{M}_-$ and $H = +B$ on $\mathbb{M}_+$, where $\langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q}) = P_0Q_t-P_1Q_x-P_2Q_y-P_3Q_z$ is the general plain bilinear form, the scalar part of the plain product. The letters $\langle\tilde P,\tilde Q\rangle$, $\langle\tilde P,\tilde Q\rangle_{\natural}$, $\langle\tilde P,\tilde Q\rangle_{*}$, $\langle\tilde P,\tilde Q\rangle_{\natural*}$ and the bracket are the corpus's own convention, which records the four forms as the scalar parts of its four general products.</p>
+<p>One algebra carries one of each. This is the sharpest way to state the framework's claim, and it is exact rather than rhetorical. On a sector the bar of $\langle\tilde P,\tilde Q\rangle_{*}$ acts as a sign, so that $H = -B$ on $\mathbb{M}_-$ and $H = +B$ on $\mathbb{M}_+$, where $\langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q}) = P_tQ_t-P_xQ_x-P_yQ_y-P_zQ_z$ is the general plain bilinear form, the scalar part of the plain product. The letters $\langle\tilde P,\tilde Q\rangle$, $\langle\tilde P,\tilde Q\rangle_{\natural}$, $\langle\tilde P,\tilde Q\rangle_{*}$, $\langle\tilde P,\tilde Q\rangle_{\natural*}$ and the bracket are the corpus's own convention, which records the four forms as the scalar parts of its four general products.</p>
 <p>The physical interpretation: $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_-$ is the interval — metric, causal cone, isometry group; and $\langle\tilde P,\tilde Q\rangle_{*}$ is the Hilbert structure from which the Born weight is built.</p>
 <h3 id="one-operation-three-uses">One operation, three uses</h3>
 <p>A single formula acts on the algebra,</p>
@@ -168,7 +184,7 @@ a real form of signature $(3,1)$. Position, velocity, momentum, energy–momentu
 <p><strong>The invariance group comes for free, and it is the Lorentz group.</strong> A form that multiplies always brings its own isometry group: the elements of unit norm. Those are the biquaternions with $\langle\tilde{U}\rangle_{\natural} = 1$, they form $SL(2,\mathbb{C})$, and they act on $\mathbb{M}_-$ by $\Gamma$ above. That action is the double cover of the proper orthochronous Lorentz group. Lorentz invariance is therefore not an axiom added to the algebra; it is the invariance group of the algebra's own norm. This is the strongest single reason to call $\mathbb{M}_-$ the relativistic sector, because it is the one place where the framework produces a physical symmetry group rather than naming one.</p>
 </li>
 <li>
-<p><strong>The causal structure is an algebraic locus.</strong> $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone. Its nonzero elements are precisely the elements with no inverse — $3ie_t+\vec e_x+2\vec e_y+2\vec e_z$ has $N=-9+1+4+4=0$, so it is a zero divisor. So the light cone, massless propagation and the failure of division are one fact seen three ways.</p>
+<p><strong>The causal structure is an algebraic locus.</strong> $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone. Its nonzero elements are precisely the elements with no inverse — $3ie_t+\vec e_x+2\vec e_y+2\vec e_z$ has $\langle\tilde{Q}\rangle_{\natural}=-9+1+4+4=0$, so it is a zero divisor. So the light cone, massless propagation and the failure of division are one fact seen three ways.</p>
 </li>
 <li>
 <p><strong>Rotations are the bracket.</strong> $[\tilde{Q},\tilde{Q}_3] = 2\,\vec q\times\vec r$, so angular momentum and the rotation generators are the commutator of the sector, and the Lie algebra is $\mathfrak{u}(2)$.</p>
@@ -184,14 +200,14 @@ a real form of signature $(3,1)$. Position, velocity, momentum, energy–momentu
 <li>
 <p><strong>The sector is the observable algebra of a two-state system, exactly.</strong> $\mathsf{M}_2(\mathbb{M}_+)$ is the Hermitian $2\times2$ matrices; an element is
 $$
-\mathsf{M}_2(\tilde{H}) = h_0I_2 + \vec h\cdot\boldsymbol{\sigma}, \qquad \tilde{H} = h_0e_t + i(h_1\vec e_x+h_2\vec e_y+h_3\vec e_z),
+\mathsf{M}_2(\tilde{H}) = h_tI_2 + \vec h\cdot\boldsymbol{\sigma}, \qquad \tilde{H} = h_te_t + i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z),
 $$
-with real $h_0,\vec h$, and its spectrum is $h_0+\lvert\vec h\rvert$ and $h_0-\lvert\vec h\rvert$. This is not an analogy with quantum mechanics: it is the operator algebra of one qubit.</p>
+with real $h_t,\vec h$, and its spectrum is $h_t+\lvert\vec h\rvert$ and $h_t-\lvert\vec h\rvert$. This is not an analogy with quantum mechanics: it is the operator algebra of one qubit.</p>
 </li>
 <li>
 <p><strong>The probability weight is the definite form, and on $\mathbb{M}_+$ it is the Born rule.</strong> The Born weight is the trace pairing
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*} = h_0 + \vec r\cdot\vec h,
+\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*} = h_t + \vec r\cdot\vec h,
 $$
 in the trace convention $\mathrm{Tr} = 2\,\mathrm{Sc}$. Note what this says: probability is here a pairing of two elements with the positive-definite form, not a product of weights. That is exactly what the quantum side needs, and it is why the framework can claim that the difference between its two halves is the difference between a form that multiplies and a form that does not.</p>
 </li>
@@ -213,7 +229,7 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 <p><strong>Interference has a home.</strong> A state can be represented as the left ideal $\mathbb{B}\tilde{\Pi}$ with basis $\{\tilde{\Pi}, \tilde\Upsilon\}$. Here $\tilde{\Pi} = \tfrac12(e_t+i\vec e_z)$ is idempotent and $\tilde\Upsilon = \tfrac12(i\vec e_x+\vec e_y)$ is nilpotent, $\tilde\Upsilon^2 = 0$, with $\tilde\Upsilon^{*}\neq\tilde\Upsilon$: a partner to the state and not itself a state. On that basis the positive form has Gram matrix $\tfrac12I_2$. So the two amplitudes are the two coefficients of the element, and the amplitudes add while the weights do not.</p>
 </li>
 <li>
-<p><strong>What the sector does not supply.</strong> The complex phase lives in the state module and not in the sector. $\mathbb{M}_+$ is a real algebra, and the complex structure acts through the centre. So the $i$ of quantum mechanics is carried by the module. The canonical commutation relation is not in the algebra and must be imported. And only one qubit is built: a boost of a trace-one element exits the trace-one slice, so the relativistic state space does not exist yet.</p>
+<p><strong>What the sector does not supply.</strong> The complex phase lives in the state module and not in the sector. $\mathbb{M}_+$ is a four-real-dimensional subspace, $\mathbb{R}e_t\oplus i\mathbb{R}\vec e_x\oplus i\mathbb{R}\vec e_y\oplus i\mathbb{R}\vec e_z$ — one real direction and three imaginary ones. It is not an algebra under the ambient product, only a Jordan algebra under the anticommutator; the complex structure acts through the centre. So the $i$ of quantum mechanics is carried by the module. The canonical commutation relation is not in the algebra and must be imported. And only one qubit is built: a boost of a trace-one element exits the trace-one slice, so the relativistic state space does not exist yet.</p>
 </li>
 </ol>
 <h2 id="established-results-rewritten-with-biquaternions">Established Results Rewritten with Biquaternions</h2>
@@ -328,7 +344,7 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 </tr>
 <tr>
 <td>The improvement of the quaternionic quantum theory</td>
-<td>The corpus places its framework against the earlier programme of Finkelstein, Jauch, Schiminovich, Speiser and Adler, in which the quaternion algebra is the scalar field, and it states the difference as one change: the biquaternion theory takes the complex numbers as its scalars and keeps the quaternion units as elements of the algebra, where they generate the rotations and act on the state module through $\mathsf{M}_2(e_{k})=-i\sigma_{k}$. Under that change <strong>three of the programme's five limits are removed outright</strong> — the non-commuting scalars, the conjugacy-class spectrum, and the phase group $SU(2)$; the fourth is repaired in its scalar form, since $\mathbb{C}\otimes_{\mathbb{C}}\mathbb{C}\cong\mathbb{C}$, and remains in its algebra form, $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_{4}(\mathbb{C})$, which is the non-closure every matrix algebra shares and which is carried on the module; and the fifth, the complex structure the programme's own analysis found to be forced, is adopted and proved as a theorem of the successor, since a unit that preserves the Hermitian norm for every Hermitian generator is forced into the centre. The quaternions are not discarded: $\mathbb{H}$ is a real form of $\mathbb{B}$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\text{-span}\{e_{0},e_{1},e_{2},e_{3}\}$ is a subalgebra isomorphic to it. The comparison is a theorem about the algebra together with an interpretation of which limits are physical; the price, stated openly, is empirical equivalence with ordinary quantum mechanics rather than a departure from it.</td>
+<td>The corpus places its framework against the earlier programme of Finkelstein, Jauch, Schiminovich, Speiser and Adler, in which the quaternion algebra is the scalar field, and it states the difference as one change: the biquaternion theory takes the complex numbers as its scalars and keeps the quaternion units as elements of the algebra, where they generate the rotations and act on the state module through $\mathsf{M}_2(\vec e_k)=-i\sigma_k$. Under that change <strong>three of the programme's five limits are removed outright</strong> — the non-commuting scalars, the conjugacy-class spectrum, and the phase group $SU(2)$; the fourth is repaired in its scalar form, since $\mathbb{C}\otimes_{\mathbb{C}}\mathbb{C}\cong\mathbb{C}$, and remains in its algebra form, $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_{4}(\mathbb{C})$, which is the non-closure every matrix algebra shares and which is carried on the module; and the fifth, the complex structure the programme's own analysis found to be forced, is adopted and proved as a theorem of the successor, since a unit that preserves the Hermitian norm for every Hermitian generator is forced into the centre. The quaternions are not discarded: $\mathbb{H}$ is a real form of $\mathbb{B}$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\text{-span}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is a subalgebra isomorphic to it. The comparison is a theorem about the algebra together with an interpretation of which limits are physical; the price, stated openly, is empirical equivalence with ordinary quantum mechanics rather than a departure from it.</td>
 </tr>
 <tr>
 <td>Interpretation of the Wick rotation</td>
@@ -492,8 +508,8 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 <td>State: positive, trace one; the Bloch ball</td>
 </tr>
 <tr>
-<td>$\tilde{H} = h_0e_t+i\vec h\cdot\mathbf e$</td>
-<td>Observable: Hermitian, real spectrum $h_0\pm\lvert\vec h\rvert$</td>
+<td>$\tilde{H} = h_te_t+i(h_x\vec e_x+h_y\vec e_y+h_z\vec e_z)$</td>
+<td>Observable: Hermitian, real spectrum $h_t\pm\lvert\vec h\rvert$</td>
 </tr>
 <tr>
 <td>$\tilde\Upsilon = \tfrac12(i\vec e_x+\vec e_y)$</td>

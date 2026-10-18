@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -145,7 +161,7 @@
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{D}}$, the split-biquaternions</td>
-<td>$0, \pi_1, \pi_2, e_0$</td>
+<td>$0, \pi_1, \pi_2, e_t$</td>
 <td>$4$</td>
 <td><em>Split-Biquaternion Algebra</em></td>
 </tr>
@@ -447,8 +463,8 @@
 <td>The idempotents of the split-complex numbers and the split-biquaternions</td>
 </tr>
 <tr>
-<td>$e_0 = 1$</td>
-<td>The identity, the trivial idempotent</td>
+<td>$e_t = 1$ in $\mathbb{H}_{\mathbb{D}}$</td>
+<td>The identity of the split-biquaternions, the trivial idempotent</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_1 = E_{11}$, $\tilde\Pi_2 = E_{22}$</td>

@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -72,7 +88,7 @@ $$
 f_{2}(U,U)=U^{\natural}U=U\cdot U=f_{1}(U,U),
 $$
 and likewise $f_{3}(U,U)=U\,U^{*}=U\cdot U$ and $f_{4}(U,U)=U^{\natural}U^{*}=U\cdot U$. The four general products therefore take the same set of values on $U\times U$, and the common span is the span of the general plain bilinear product.</p>
-<p>The common span is the subspace itself for the centre and for the quaternion subspace, the whole algebra for the vector subspace, the quaternion subspace for the anti-quaternion subspace, and $\mathbb{R}e_{0}\oplus\mathrm{Vect}(\mathbb{B})$, of real dimension seven, for the two Hermitian subspaces. The four general products thus differ not in where they send a pair but in the structure they leave on the value: the product keeps a subspace inside itself for exactly two of the remarkable subspaces, the centre and the quaternion subspace, and in both cases for all four general products at once, while the vector, anti-quaternion, Hermitian and anti-Hermitian subspaces are closed under none of the four general products.</p>
+<p>The common span is the subspace itself for the centre and for the quaternion subspace, the whole algebra for the vector subspace, the quaternion subspace for the anti-quaternion subspace, and $\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{B})$, of real dimension seven, for the two Hermitian subspaces. The four general products thus differ not in where they send a pair but in the structure they leave on the value: the product keeps a subspace inside itself for exactly two of the remarkable subspaces, the centre and the quaternion subspace, and in both cases for all four general products at once, while the vector, anti-quaternion, Hermitian and anti-Hermitian subspaces are closed under none of the four general products.</p>
 <p>The symmetrisation and the bracket close on more of the remarkable subspaces, and the pattern is the same for all four general products. The symmetrisation of every one of the four stays inside exactly the centre, the quaternion subspace and the Hermitian subspace; the bracket of every one of the four stays inside exactly the centre and the quaternion subspace, the two bilinear brackets also staying inside the vector subspace and the general plain sesquilinear bracket also inside the anti-Hermitian subspace. Whether the closed operation then satisfies the Jordan identity or the Jacobi identity decides the algebra, and the six sections below carry the answer subspace by subspace.</p>
 <h2 id="the-centre-subspace">The Centre Subspace</h2>
 <p><strong>The centre is both a Jordan algebra and a Lie algebra, and it is the only subspace of the remarkable subspaces for which the Lie structure survives all four general products.</strong> As a Jordan algebra it is the field $\mathbb{C}$, under $\bullet_{\mathrm{pl}}$ and $\bullet$; as a Lie algebra it is abelian under the two bilinear brackets and the <strong>two-dimensional non-abelian Lie algebra</strong> under the two sesquilinear ones.</p>

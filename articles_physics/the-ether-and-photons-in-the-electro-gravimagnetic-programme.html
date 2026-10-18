@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -207,13 +223,13 @@ density.</p>
 \nabla^{-}_{\omega}\tilde{\Phi} = 0 ,
 $$</p>
 <p>and because of the factorisation every solution of it is $\nabla^{+}_{\omega}$ applied to a Helmholtz
-potential. Taking the plane potentials $\varphi_{j} = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))e_{j}$ with
-$\|\vec k\| = \omega$ and $e_{0} = 1$, the programme's four modes are, in the corpus's
+potential. Taking the plane potentials $\varphi_{j} = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\vec e_{j}$ with
+$\|\vec k\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corpus's
 notation and recomputed exactly,</p>
 <p>$$
 \tilde{\Phi}_{\vec k0} = \omega\,\varphi\left(1 + i\,\vec u_k\right),
 \qquad
-\tilde{\Phi}_{\vec kj} = \varphi\left(\omega\,e_{j} - i\,k_{j} + i\,[\vec k,e_{j}]\right),
+\tilde{\Phi}_{\vec kj} = \varphi\left(\omega\,\vec e_{j} - i\,k_{j} + i\,[\vec k,\vec e_{j}]\right),
 \qquad j = 1,2,3 ,
 $$</p>
 <p>with $\varphi = \exp(\,i(\vec k,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ and $\vec u_k = \vec k/\omega$. All four
@@ -421,7 +437,7 @@ clearest statement of what the programme assumes.</p>
 <td>Mutual complex gradients of the postulate</td>
 </tr>
 <tr>
-<td>$\nabla = e_{1}\partial/\partial x+e_{2}\partial/\partial y+e_{3}\partial/\partial z$</td>
+<td>$\nabla = \vec e_x\,\partial/\partial x+\vec e_y\,\partial/\partial y+\vec e_z\,\partial/\partial z$</td>
 <td>Pure-vector gradient, left quaternion multiplication</td>
 </tr>
 <tr>

@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -86,7 +102,7 @@ $$</p>
 <p>$$
 \langle\tilde P^{\natural}\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\,\langle\tilde Q\rangle_{\natural},
 $$</p>
-<p>so that the units and the zero divisors of that product are closed and the light cone is closed under composition; the norm then behaves as a <strong>charge</strong> of the composition, and it is the norm of no other product. $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural*}$ have neither sense: $\langle\cdot,\cdot\rangle$ is a complex bilinear algebraic norm, indefinite and anisotropic over $\mathbb{C}$, and $\langle\cdot,\cdot\rangle_{\natural*}$ an indefinite Hermitian algebraic norm. The separation of the <strong>multiplicative</strong> from the <strong>positive definite</strong> sense is the first thing a reader of the four norms must keep: $\langle\cdot,\cdot\rangle_{*}$ is definite and not multiplicative, $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative and not definite, and one and the same element may have a large $\langle\cdot,\cdot\rangle_{*}$, a small $\langle\cdot,\cdot\rangle_{\natural}$, or the reverse.</p>
+<p>so that the units and the zero divisors of that product are closed and the light cone is closed under composition; the norm then behaves as a <strong>charge</strong> of the composition, and it is the norm of no other product. $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural*}$ have neither sense: $\langle\cdot,\cdot\rangle$ is a complex bilinear algebraic norm, indefinite and isotropic over $\mathbb{C}$, and $\langle\cdot,\cdot\rangle_{\natural*}$ an indefinite Hermitian algebraic norm. The separation of the <strong>multiplicative</strong> from the <strong>positive definite</strong> sense is the first thing a reader of the four norms must keep: $\langle\cdot,\cdot\rangle_{*}$ is definite and not multiplicative, $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative and not definite, and one and the same element may have a large $\langle\cdot,\cdot\rangle_{*}$, a small $\langle\cdot,\cdot\rangle_{\natural}$, or the reverse.</p>
 <p>A second separation runs the other way. $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ have a <strong>complex</strong> algebraic norm, real on some elements and complex on others; $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ have a <strong>real</strong> one, being Hermitian. The two complex algebraic norms are the two indefinite forms of the algebras over $\mathbb{C}$; the two real algebraic norms are the two forms of the sesqualgebras. Of the four it is the two complex algebraic norms that are real on the two sectors and complex off them; and of those two, $\langle\cdot,\cdot\rangle$ is the sector sign and $\langle\cdot,\cdot\rangle_{\natural}$ the interval — $\langle\cdot,\cdot\rangle_{\natural}$ indefinite on each sector, its level sets the mass shells, so that the mass is a level set of a real number.</p>
 <h2 id="the-four-forms-on-the-remarkable-subspaces">The Four Forms on the Remarkable Subspaces</h2>
 <p>Restricted to a subspace, each form is read by its <strong>signature</strong> and by its <strong>coincidences</strong>: two forms may agree, or agree up to sign, on a subspace where they are different on the whole algebra, and the coincidences are the sharpest anatomy of the subspaces. The inertia of the restrictions, over $\mathbb{R}$, on the six subspaces:</p>

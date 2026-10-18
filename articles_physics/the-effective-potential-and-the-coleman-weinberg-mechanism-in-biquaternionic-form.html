@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -54,7 +70,7 @@
 <p>The <strong>effective potential</strong> is the part of the quantum effective action that survives when the classical field is taken constant, and it is the object that decides where the vacuum of a quantum field theory lies. Its classical value is the potential written in the Lagrangian, and its <strong>one-loop correction</strong> is the logarithm of a functional determinant: integrating out the fluctuations about a constant background produces a term proportional to the fourth power of the fluctuation mass times the logarithm of that mass in units of the renormalization scale. That logarithm can move the minimum. When it does, the vacuum is not where the classical potential put it, and if the classical potential has no minimum away from the origin at all — if the theory is classically scale invariant — then a minimum can appear that is entirely radiative. This is the <strong>Coleman–Weinberg mechanism</strong>.</p>
 <p>This article works the effective potential of the scalar sector of the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ in the notation of the companion articles, and derives the Coleman–Weinberg result for the framework's scalar. The scalar sector has already been fixed by the read list. The framework's scalar is the <strong>complex central field</strong></p>
 <p>$$
-\tilde{\Phi}(\tilde{Q}) = \varphi(\tilde{Q})\,e_t \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_0\},
+\tilde{\Phi}(\tilde{Q}) = \varphi(\tilde{Q})\,e_t \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\},
 $$</p>
 <p>with $\varphi$ a complex function and $\mathbb{C}_{\mathbb{B}}$ the centre of the algebra. Its renormalizable invariant potential is a function of the single modulus</p>
 <p>$$
@@ -80,7 +96,7 @@ $$</p>
 <li>Companion article <em>Noether's Theorem in Biquaternionic Form</em>, for the construction of the current from the central scalar action.</li>
 <li>Companion article <em>The Gauge Principle in Biquaternionic Form</em>, for the gauging of the central phase.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_0\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + e_k\,\partial/\partial Q_k$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_t - e_k\,\partial/\partial Q_k$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The scalar is $\tilde{\Phi} = \varphi\,e_t$ with $\varphi$ complex and $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$; the connection is $\tilde{A} = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ with $A_0$ imaginary and $\vec A$ real, and the covariant derivative of the gauge-principle article is $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$ with $\kappa = ϙ/\hbar$. The $ict$ metric for index contractions is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and $\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\Phi^{*}\,\tilde\nabla\tilde\Phi\bigr)$ denotes the Lorentz-invariant contraction in that metric. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged. In the loop integrals of this article we set $\hbar = c = 1$ and restore $\hbar$ only where the gauge-boson mass is quoted; the effective-potential loop integrals are conventionally written in that system. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_k\,\partial/\partial Q_k$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_t - \vec e_k\,\partial/\partial Q_k$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The scalar is $\tilde{\Phi} = \varphi\,e_t$ with $\varphi$ complex and $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$; the connection is $\tilde{A} = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ with $A_0$ imaginary and $\vec A$ real, and the covariant derivative of the gauge-principle article is $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$ with $\kappa = ϙ/\hbar$. The $ict$ metric for index contractions is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and $\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\Phi^{*}\,\tilde\nabla\tilde\Phi\bigr)$ denotes the Lorentz-invariant contraction in that metric. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged. In the loop integrals of this article we set $\hbar = c = 1$ and restore $\hbar$ only where the gauge-boson mass is quoted; the effective-potential loop integrals are conventionally written in that system. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.</p>
 <h2 id="the-invariant-potential-and-its-symmetry">The Invariant Potential and Its Symmetry</h2>
 <p>The scalar sector of the framework is a single complex central field, and its symmetry is the unitary part of the centre. The general renormalizable potential that is invariant under the central phase $\varphi\mapsto \exp(i\alpha)\varphi$ and real as a density is an arbitrary function of the invariant $\rho = \varphi^*\varphi = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$,</p>
 <p>$$
@@ -288,14 +304,14 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$</td>
 </tr>
 <tr>
 <td>$i$</td>
 <td>Central scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_0\}$</td>
+<td>$\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$</td>
 <td>Centre of the algebra; value space of the scalar</td>
 </tr>
 <tr>
@@ -303,7 +319,7 @@ $$</p>
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla} = e_t\,\partial/\partial Q_t + e_k\,\partial/\partial Q_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$</td>
+<td>$\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_k\,\partial/\partial Q_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$</td>
 <td>Biquaternionic gradient; d'Alembertian</td>
 </tr>
 <tr>

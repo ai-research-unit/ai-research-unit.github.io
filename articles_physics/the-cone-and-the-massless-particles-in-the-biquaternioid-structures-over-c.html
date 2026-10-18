@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -1023,7 +1039,7 @@ that sits on it, the horizon, is the object the pointwise algebra cannot itself 
 <p>Several further physical readings have sense under the twelve structures, and they are gathered here.</p>
 <p><strong>Mass has four readings, and two of them detect the cone.</strong> The norm vanishes on it and the rank of the
 Hermitian square drops there, while the charge and the scale are defined only off it — the compact label
-because the unitary slice is the complement of the cone, the polar scale because its representation requires
+because the unitary slice lies in the complement of the cone, the polar scale because its representation requires
 a nonzero norm; only the massless elements are detected by the norm and the rank together (<em>The Four
 Readings of a Biquaternion: Norm, Rank, Charge and Scale</em>). The <strong>Krein form</strong> is the indefinite partner of the Born pairing and carries the
 <strong>Krein cone</strong>, the set of elements of non-negative Krein norm with respect to which the framework's

@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -81,7 +97,7 @@ $$</p>
 <p>$$
 \{e_t,\; i\,\vec e_x,\; i\,\vec e_y,\; i\,\vec e_z\}.
 $$</p>
-<p>As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is <strong>not</strong> a subalgebra of $\mathbb{B}$: for example, $(i\vec e_x)(i\vec e_y) = -\vec e_z$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde Q_1 = r_te_t + i\vec v$ with $q_t, r_t$ real and $\vec q_a, \vec v$ real vectors,</p>
+<p>As a real vector space, $\mathbb{M}_+$ has dimension $4$ — one real direction, $e_t$, and three imaginary ones, $i\vec e_x,i\vec e_y,i\vec e_z$. It is <strong>not</strong> a subalgebra of $\mathbb{B}$: for example, $(i\vec e_x)(i\vec e_y) = -\vec e_z$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde Q_1 = r_te_t + i\vec v$ with $q_t, r_t$ real and $\vec q_a, \vec v$ real vectors,</p>
 <p>$$
 \tilde{Q}\tilde Q_1 = \left(q_tr_t + (\vec q_a,\vec v)\right)e_t + i\left(q_t\vec v + r_t\vec q_a\right) - \vec q_a\times\vec v,
 $$</p>
@@ -167,8 +183,8 @@ $$</p>
 <p>$$
 q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2, \qquad \text{that is} \qquad c^2(t')^2 = (x')^2 + (y')^2 + (z')^2,
 $$</p>
-<p>which is a double cone with apex at the origin. The complement of the cone has three connected components: the region $N < 0$ ($q_t^2 < (q'_x)^2 + (q'_y)^2 + (q'_z)^2$, connected) and the two components of the region $N > 0$ ($q_t > |\vec q'|$ and $q_t < -|\vec q'|$).</p>
-<p><strong>Not a division algebra.</strong> The presence of the zero divisor cone means that $\mathbb{M}_+$ is not a division algebra: there are nonzero elements of $\mathbb{M}_+$ with no inverse in $\mathbb{B}$.</p>
+<p>which is a double cone with apex at the origin. The complement of the cone has three connected components: the region $\langle\tilde{Q}\rangle_{\natural} < 0$ ($q_t^2 < (q'_x)^2 + (q'_y)^2 + (q'_z)^2$, connected) and the two components of the region $\langle\tilde{Q}\rangle_{\natural} > 0$ ($q_t > |\vec q'|$ and $q_t < -|\vec q'|$).</p>
+<p><strong>Not a subalgebra of $\mathbb{B}$, and no inverse on the cone.</strong> $\mathbb{M}_+$ is a four-real-dimensional subspace, not a subalgebra of $\mathbb{B}$. The zero divisor cone passes through it, so there are nonzero elements of $\mathbb{M}_+$ with no inverse in $\mathbb{B}$.</p>
 <p><strong>Multiplication by $i$.</strong> Since $i$ is central, $i\mathbb{M}_+$ is again a four-dimensional real subspace. It is <strong>not</strong> $\mathbb{M}_+$ itself: multiplying a Hermitian element by $i$ produces an anti-Hermitian one. The sector is therefore not closed under multiplication by the central scalar, which is the visible sign that the Hermitian condition is $\mathbb{R}$-linear and not $\mathbb{C}$-linear. Under quaternion conjugation the sector is preserved: conjugation negates the vector part and leaves the scalar part alone, so $q_t + i\vec q' \mapsto q_t - i\vec q'$ stays in $\mathbb{M}_+$.</p>
 <p><strong>The parameter pattern.</strong> The defining property of the sector is visible in the parameters alone: the scalar coefficient is real and the three vector coefficients are imaginary. Each of the four complex coefficients $Q_\mu = q_\mu + iq'_\mu$ therefore contributes exactly one real number, and the prime selects which one — for the scalar it is the real part $q_t$, for the three vectors the imaginary parts $q'_x, q'_y, q'_z$. This is why a single conjugation carves a four-dimensional real subspace out of an eight-dimensional real algebra: it fixes one real number in each complex coefficient, in the pattern real-scalar, imaginary-vector.</p>
 <h2 id="physical-meaning">Physical Meaning</h2>
@@ -220,7 +236,7 @@ $$</p>
 <p><strong>8. The interpretation of the "imaginary directions".</strong> The imaginary vector part of $\mathbb{M}_+$ carries the $i$. What is the precise sense in which these imaginary directions are "informational" rather than "spatial"? The formal structure is clear; the <strong>physical interpretation</strong> is not yet formal. One partial formalisation is in <em>The Biquaternion Fourier Transform and the Imaginary Directions</em>: there the imaginary directions are the <strong>conjugate</strong> directions, the axis that the root of $-1$ in the Fourier kernel selects and along which the conjugate variable — the frequency, the wavevector — is paired, so that an imaginary direction is a direction the pairing uses and not a direction in which anything propagates.</p>
 <p>These questions are open, and they constitute the research program associated with the informational hypothesis.</p>
 <h2 id="advanced-algebraic-properties">Advanced Algebraic Properties</h2>
-<h3 id="the-action-of-math177-on-math178">The Action of $\mathbb{M}_+$ on $\mathbb{M}_-$</h3>
+<h3 id="the-action-of-math181-on-math182">The Action of $\mathbb{M}_+$ on $\mathbb{M}_-$</h3>
 <p>The most important structural fact about $\mathbb{M}_+$ is that its elements <strong>act</strong> on the elements of $\mathbb{M}_-$ by <strong>conjugation</strong>:</p>
 <p>$$
 \tilde{Q}_- \;\longmapsto\; \tilde{Q}_+\,\tilde{Q}_-\,\tilde{Q}_+^{*}, \qquad \tilde{Q}_+ \in \mathbb{M}_+, \; \tilde{Q}_- \in \mathbb{M}_-.
@@ -499,7 +515,7 @@ $$</p>
 <p>because $\tfrac{1}{4}\left(e_t + i\vec u\right)\left(e_t - i\vec u\right) = \tfrac{1}{4}\left(e_t - (i\vec u)^2\right) = 0$. The pair is a <strong>complete orthogonal pair</strong>, a frame of the algebra, and it is what the spectral decomposition of §<em>The Spectral Decomposition</em> is written in.</p>
 <p><strong>Every pure state is a zero divisor.</strong> The biquaternion norm of the idempotent vanishes identically on the sphere,</p>
 <p>$$
-N\!\left(\tilde\Pi_{1,2}(\vec u)\right) = \tfrac{1}{4}\left(e_t - (i\vec u)^2\right) = \tfrac{1}{4}\left(e_t - e_t\right) = 0,
+\langle\tilde\Pi_{1,2}(\vec u)\rangle_{\natural} = \tfrac{1}{4}\left(e_t - (i\vec u)^2\right) = \tfrac{1}{4}\left(e_t - e_t\right) = 0,
 $$</p>
 <p>as the product $\tilde\Pi_1\tilde\Pi_2 = 0$ already witnesses with both factors nonzero. So the pure states sit on the zero-divisor cone, while a general mixed state does not: the norm is $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - r^2)$ for $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$.</p>
 <h3 id="the-hermitian-forms">The Hermitian Forms</h3>
@@ -511,7 +527,7 @@ $$</p>
 The Hermitian form is the natural "weight" or "energy" of the element $\tilde{Q}$, and it is the closest biquaternion analogue of the trace of a density matrix.</p>
 <h3 id="the-identity">The Identity</h3>
 <p>The identity $e_t$ is trivially in $\mathbb{M}_+$. It corresponds to the trivial state or the identity operator.</p>
-<h3 id="summary-of-the-elements-of-math523">Summary of the Elements of $\mathbb{M}_+$</h3>
+<h3 id="summary-of-the-elements-of-math527">Summary of the Elements of $\mathbb{M}_+$</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>

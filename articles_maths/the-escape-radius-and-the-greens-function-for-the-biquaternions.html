@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -95,13 +111,13 @@ $$</p>
 <p><strong>Remark (why $\delta$ is unavoidable).</strong> The condition is a lower bound on the reciprocal condition number of the iterate and is exactly what the collapse of the square forbids on the zero divisors. <strong>The Green's function of a biquaternion parameter is a function on the $\delta$-regular part of the escaping set for every $\delta>0$, and it is on the union over $\delta$ of these sets; it fails to have a meaning on the orbits that meet the cone infinitely often, and there it is open.</strong> The conditional radius $R_\delta$ of the previous article is the level set of $G_{\tilde Q_2}$ implied by the same estimate.</p>
 <h2 id="the-central-parameter">The Central Parameter</h2>
 <p>For a central parameter the whole pluripotential picture collapses to the complex one, because the orbit is the polynomial in one element and the spectrum separates.</p>
-<p><strong>Theorem (the Green's function of a central parameter).</strong> Let $\tilde Q_2=Ce_0$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then</p>
+<p><strong>Theorem (the Green's function of a central parameter).</strong> Let $\tilde Q_2=Ce_t$, let $G_C$ be the Green's function of $\zeta\mapsto\zeta^2+C$, and let $\tilde Q$ have a diagonalisable matrix $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$. Then</p>
 <p>$$
 G_{\tilde Q_2}(\tilde Q)=\max\bigl(G_C(\lambda_1),\,G_C(\lambda_2)\bigr),
 $$</p>
 <p>and in particular $\tilde Q\in\Omega_{\tilde Q_2}$ if and only if at least one eigenvalue escapes, while $\tilde Q\in\mathcal K_{\tilde Q_2}$ if and only if both eigenvalues lie in the filled Julia set $K_C$.</p>
 <p><strong>Proof.</strong> By the eigenvalue reduction the spectrum of $\mathsf{M}_2(F_{\tilde Q_2}^n(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$. A matrix norm is comparable to the maximum modulus of the eigenvalues up to a constant depending only on the matrix and its diagonaliser, so $\log\|\mathsf{M}_2(F^n(\tilde Q))\|_F=\max_j\log|q_n(\lambda_j)|+O(1)$; dividing by $2^n$ and letting $n\to\infty$ the $O(2^{-n})$ term vanishes and the limit is the maximum of the two complex Green's functions. The escape and boundedness statements follow from $\Omega=\{G>0\}$ and $\mathcal K=\{G=0\}$ in the complex theory.</p>
-<p><strong>Corollary (the escape radius of the central slice).</strong> For $\tilde Q_2=Ce_0$ every point whose matrix has an eigenvalue of modulus exceeding $1+|C|$ escapes, and the level sets of $G_{\tilde Q_2}$ on a slice are the level sets of the two complex Green's functions.</p>
+<p><strong>Corollary (the escape radius of the central slice).</strong> For $\tilde Q_2=Ce_t$ every point whose matrix has an eigenvalue of modulus exceeding $1+|C|$ escapes, and the level sets of $G_{\tilde Q_2}$ on a slice are the level sets of the two complex Green's functions.</p>
 <h2 id="the-general-parameter">The General Parameter</h2>
 <p>For a non-central parameter the orbit is no longer a polynomial in one element, the spectrum does not separate, and there is no formula. What remains is the general pluripotential theory of polynomial maps of a complex space, and it must be quoted carefully, because the map here is degenerate.</p>
 <p><strong>Remark (what the general theory gives, and what it does not).</strong> For a polynomial map $F:\mathbb{C}^k\to\mathbb{C}^k$ of algebraic degree $d$ whose leading homogeneous part is proper, the limit $d^{-n}\log^+\|F^n\|$ exists, is plurisubharmonic or identically $-\infty$, vanishes exactly on the filled Julia set and satisfies $G(F)=d\,G$ (<em>Several Complex Variables</em>, <em>Plurisubharmonic Functions</em>, and the pluripotential theory of Part III). <strong>The leading part of the biquaternion quadratic map is $\tilde Q^2$, and it is not proper: its fibre over $0$ is the square-zero cone</strong> (a subset of the zero-divisor cone, of complex dimension two; <em>Square Roots of a General Element in the Biquaternion Algebra</em>). The general theory therefore does not apply off the cone without modification, the plurisubharmonic candidate $\log^+\|\tilde Q\|_E$ has the right growth but the pullback estimate fails on the cone, and the existence and regularity of the Green's function for a general biquaternion parameter are open. <strong>The article's position is: the object is defined on the regular part, is exact for a central parameter, and is a research question in general.</strong></p>

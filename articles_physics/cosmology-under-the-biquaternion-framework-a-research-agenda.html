@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -76,7 +92,7 @@
 </tr>
 </tbody>
 </table></div>
-<p><strong>Conventions.</strong> The notation of the read-list articles is inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $e_k^2 = -e_t$, and scalar imaginary $i$ commuting with every $e_k$. The material and informational sectors are the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_0\}$ is the centre. The material basis is $\varepsilon_0 = ie_0$, $\varepsilon_k = e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$. Real coordinates are $x^\mu = (ct,x,y,z)$; a four-vector of $\mathbb{M}_-$ is $\tilde{Q} = X^\mu\varepsilon_\mu$; the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The frame field is $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$. Standard cosmology's $a(t)$, $k$, $H$, $\rho$, $p$, $w$, and $\Lambda$ are <strong>not</strong> framework objects; they are written where the standard constructions are named as targets, and the framework supplies none of them. Nothing inherited is renamed or rederived.</p>
+<p><strong>Conventions.</strong> The notation of the read-list articles is inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with every $\vec e_k$. The material and informational sectors are the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$. Real coordinates are $x^\mu = (ct,x,y,z)$; a four-vector of $\mathbb{M}_-$ is $\tilde{Q} = X^\mu\varepsilon_\mu$; the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The frame field is $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$. Standard cosmology's $a(t)$, $k$, $H$, $\rho$, $p$, $w$, and $\Lambda$ are <strong>not</strong> framework objects; they are written where the standard constructions are named as targets, and the framework supplies none of them. Nothing inherited is renamed or rederived.</p>
 <h2 id="the-constructions-cosmology-would-require">The Constructions Cosmology Would Require</h2>
 <p>Cosmology is a specific application of gravity, and it is worth stating the application precisely so that the gaps can be located. The standard constructions are three, and each is a target here rather than a framework result.</p>
 <p><strong>The FLRW line element and its two functions.</strong> A homogeneous and isotropic universe is described by the Friedmann–Lemaître–Robertson–Walker line element</p>
@@ -106,7 +122,7 @@ $$</p>
 <p>$$
 \tilde{E}_0 = i\,N(t)\,e_t, \qquad \tilde{E}_i = a(t)\,\sigma_i(x),
 $$</p>
-<p>where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_0 = ie_0$, $\tilde{E}_i = a\,e_i$, the Gram matrix is exactly</p>
+<p>where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_0 = ie_t$, $\tilde{E}_i = a\,\vec e_i$, the Gram matrix is exactly</p>
 <p>$$
 \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural} = \mathrm{diag}\left(-1, a^2, a^2, a^2\right),
 $$</p>
@@ -136,11 +152,11 @@ $$</p>
 <p>The decomposition $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ is a pointwise decomposition and survives on any background; the informational sector's elements become fields of Hermitian operators without difficulty. What does not survive is the trace: the trace in $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a $2\times2$ fibre trace, with no volume element and no measure. This is the structural reason the informational sector has no curved-space field theory, and it is where the cosmological thermodynamics fails; it is stated in <em>Curved Spacetime and the Biquaternion Framework</em> and inherited here unchanged.</p>
 <h3 id="the-frameworks-thermodynamics-is-rank-two">The framework's thermodynamics is rank-two</h3>
 <p><em>The Partition Function in Biquaternionic Form</em> reaches a definite and honest set of results, and its boundary is exactly where cosmology needs it to continue.</p>
-<p>For a Hermitian Hamiltonian $\tilde{H} = h_0e_t + i\vec h \in \mathbb{M}_+$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the trace formula gives</p>
+<p>For a Hermitian Hamiltonian $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the trace formula gives</p>
 <p>$$
-Z = \mathrm{Tr}\left(\exp(-\beta\tilde{H})\right) = 2\,\mathrm{Sc}\left(\exp(-\beta\tilde{H})\right) = 2\exp(-\beta h_0)\cosh\left(\beta|\vec h|\right),
+Z = \mathrm{Tr}\left(\exp(-\beta\tilde{H})\right) = 2\,\mathrm{Sc}\left(\exp(-\beta\tilde{H})\right) = 2\exp(-\beta h_t)\cosh\left(\beta|\vec h|\right),
 $$</p>
-<p>the ordinary partition function of a <strong>two-level system</strong> with energies $h_0 \pm |\vec h|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.</p>
+<p>the ordinary partition function of a <strong>two-level system</strong> with energies $h_t \pm |\vec h|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.</p>
 <p>This is the <strong>rank-two limitation</strong> in its first sense. The framework's thermal invariants are invariants of a finite, two-dimensional operator algebra: a state, an observable, a partition function, an entropy, and a heat capacity, all of a single qubit. They are not the thermodynamic quantities cosmology uses.</p>
 <ul>
 <li>There is no field-theoretic partition function. A cosmology needs the thermodynamics of a continuum — a radiation bath with a density of states growing with energy, an entropy density proportional to $T^3$, an energy density proportional to $T^4$ — and a finite two-level system has none of these. The framework's entropy saturates where a field's diverges.</li>
@@ -213,7 +229,7 @@ $$</p>
 <p>Two disciplines apply to every item. First, each candidate result must be recomputed on a case chosen independently of the one that suggested it — a second spatial-curvature sign, a second equation of state, a second frame — because a carrier that works for $k=0$ or for dust has not been shown to work in general. Second, a carried or transcribed cosmological statement must not be reported as a framework result. That distinction is the standing content of this agenda, and the easiest way to lose it is to write one sentence too many.</p>
 <h2 id="summary">Summary</h2>
 <p>This agenda asked what it would take for the biquaternion framework to carry a cosmology, and it has recorded what the framework reaches and what it does not.</p>
-<p><strong>What is established.</strong> The frame route carries the FLRW metric exactly: with $\tilde{E}_0 = ie_0$ and $\tilde{E}_i = a\,e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{H}_{\mathbb{B}}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of <em>The Partition Function in Biquaternionic Form</em>: $Z = 2\exp(-\beta h_0)\cosh(\beta|\vec h|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.</p>
+<p><strong>What is established.</strong> The frame route carries the FLRW metric exactly: with $\tilde{E}_0 = ie_t$ and $\tilde{E}_i = a\,\vec e_i$ the Gram matrix is $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied scale factor, recomputed here from the inherited bilinear form. Isotropy has an exact algebraic home, as the invariance of the spatial metric under the unit real quaternions in $\mathbb{H}_{\mathbb{B}}$. The two-sector decomposition survives pointwise on any background. The framework's thermodynamics is the qubit thermodynamics of <em>The Partition Function in Biquaternionic Form</em>: $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h|)$, an entropy bounded by $\log 2$, and a temperature that measures imaginary-time displacement.</p>
 <p><strong>What is only carried, and is not a derived cosmology.</strong> The scale factor, the spatial-curvature parameter, the Friedmann equations, the perfect-fluid source, and the cosmological constant are all <strong>standard cosmology used as targets</strong>. No scale factor, no Hubble rate, and no equation of state is derived here or in the framework. The framework's own locality device is not the route: a time-dependent local $c$ gives a flat metric and cannot produce an expansion, and a spatially varying local $c$ gives curvature but only on flat spatial slices.</p>
 <p><strong>The obstacles, and the computation that would close each.</strong></p>
 <div class="table-scroll"><table>
@@ -276,12 +292,12 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>quaternion basis, $e_k^2 = -e_t$</td>
+<td>quaternion basis, $\vec e_k^2 = -e_t$</td>
 <td>inherited</td>
 </tr>
 <tr>
 <td>$i$</td>
-<td>scalar imaginary, commuting with every $e_k$</td>
+<td>scalar imaginary, commuting with every $\vec e_k$</td>
 <td>inherited</td>
 </tr>
 <tr>
@@ -291,12 +307,12 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$</td>
-<td>centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_0\}$; real-quaternion subspace</td>
+<td>centre $\mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$; real-quaternion subspace</td>
 <td>inherited</td>
 </tr>
 <tr>
 <td>$\varepsilon_\mu$</td>
-<td>material basis $\varepsilon_0 = ie_0$, $\varepsilon_k = e_k$</td>
+<td>material basis $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$</td>
 <td>inherited</td>
 </tr>
 <tr>
@@ -335,7 +351,7 @@ $$</p>
 <td>recomputed here from an inherited identity</td>
 </tr>
 <tr>
-<td>$Z = 2\exp(-\beta h_0)\cosh(\beta|\vec h|)$</td>
+<td>$Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h|)$</td>
 <td>qubit partition function; entropy bounded by $\log 2$</td>
 <td>inherited from the partition-function article</td>
 </tr>

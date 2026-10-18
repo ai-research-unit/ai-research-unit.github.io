@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -93,7 +109,7 @@ a compatible Hermitian form exactly when it is of the definite type; the form is
 positive scalar on each irreducible summand, and the involution $*$ under which the axiom holds is
 the Clifford conjugation, possibly composed with the conjugation of the coefficient field. Under it
 a generator $e_i$ is <strong>skew</strong>, $(e_i\cdot s,t)=-(s,e_i\cdot t)$ for $i\ge1$, so the multiplication
-by a vector is skew-adjoint, and the scalar unit $e_0=1$ is Hermitian.</p>
+by a vector is skew-adjoint, and the scalar unit is Hermitian.</p>
 <p><em>Proof.</em> The skewness of $e_i$ is $e_i^{*}=-e_i$, which is the Clifford conjugation; the axiom then
 reads $(e_i\cdot s,t)=(s,(-e_i)\cdot t)=-(s,e_i\cdot t)$, which is skew-adjointness. The existence
 and uniqueness of a compatible definite form on a Clifford module are the results of Part II's
@@ -106,7 +122,7 @@ $J$-Self-Adjoint and $J$-Unitary Operators<em> and </em>Spectral Theory on Krein
 the definite case, and the word </em>Hermitian* throughout refers to the positive form and the Clifford
 conjugation.</p>
 <h2 id="the-hilbert-module-of-sections">The Hilbert Module of Sections</h2>
-<h3 id="the-math33-completion">The $L^2$ Completion</h3>
+<h3 id="the-math32-completion">The $L^2$ Completion</h3>
 <p><strong>Definition.</strong> Let $\Omega\subseteq\mathbb{R}^{m+1}$ be open and let $\mathcal{S}$ be a definite
 Clifford module with a compatible Hermitian form. The <strong>Hilbert module of sections</strong> is the
 completion</p>
@@ -144,7 +160,7 @@ $$</p>
 scalar is unitary.</p>
 <p><em>Proof.</em> The pointwise axiom $(x\cdot s,t)=(s,x^{*}\cdot t)$ integrates to
 $\langle c(x)s,t\rangle=\langle s,c(x^{*})t\rangle$.</p>
-<h3 id="the-adjoint-of-the-operator-math59">The Adjoint of the Operator $D$</h3>
+<h3 id="the-adjoint-of-the-operator-math58">The Adjoint of the Operator $D$</h3>
 <p><strong>Theorem (formal adjointness and the boundary term).</strong> On $L^2(\Omega;\mathcal{S})$ the operator
 $D=\sum_\mu c(e_\mu)\partial/\partial x_\mu$ has formal adjoint $D^{\dagger}=-\bar D$ on compactly supported
 sections, and for sections on a bounded domain with smooth boundary,</p>

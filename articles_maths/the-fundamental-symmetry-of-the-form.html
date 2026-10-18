@@ -17,11 +17,27 @@
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
           integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
           crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
   <script defer
           src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
           integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
           crossorigin="anonymous"
-          onload="renderMathInElement(document.body, {
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
             delimiters: [
               {left: '$$', right: '$$', display: true},
               {left: '$',  right: '$',  display: false}
@@ -156,7 +172,7 @@ $$</p>
 <p>$$
 J = \operatorname{diag}(1,-1,-1,-1) ,
 $$</p>
-<p>acting on the complex coefficient vector; $J$ squares to $\mathrm{id}$ and is self-adjoint, the positive eigenspace is the complex line spanned by $e_{0}$ — two real dimensions — and the negative eigenspace is the span of $e_{1}, e_{2}, e_{3}$ — six real dimensions, which is the signature $(2,6)$. The form $h_{*}$ is itself definite and is its own companion, of symmetry $\mathrm{id}$. The example is the finite-dimensional model in which the two signs and the operator $J$ are read on the four complex coordinates, and it is the form-layer reading of the indefinite biquaternion form whose operators are <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>.</p>
+<p>acting on the complex coefficient vector; $J$ squares to $\mathrm{id}$ and is self-adjoint, the positive eigenspace is the complex line spanned by $e_t$ — two real dimensions — and the negative eigenspace is the span of $\vec e_x, \vec e_y, \vec e_z$ — six real dimensions, which is the signature $(2,6)$. The form $h_{*}$ is itself definite and is its own companion, of symmetry $\mathrm{id}$. The example is the finite-dimensional model in which the two signs and the operator $J$ are read on the four complex coordinates, and it is the form-layer reading of the indefinite biquaternion form whose operators are <em>J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra</em>.</p>
 <h2 id="the-definite-case-and-the-collapse">The Definite Case and the Collapse</h2>
 <p><strong>Theorem (the definite case).</strong> Let $h$ be positive definite. Then the only fundamental decomposition is $A = A\oplus 0$, the companion is $h$ itself, $J = \mathrm{id}$, the bridge is trivial, and the adjoint identity $T^{\dagger} = J T^{*} J$ reduces to $T^{\dagger} = T^{*}$: the theory of the article is the theory of <em>The Norm Defined by a Form</em> and <em>The Adjoint under a Hermitian Form</em>, with no $J$ to insert.</p>
 <p><em>Proof.</em> A positive definite space has no nonzero negative definite subspace, so $A^{-} = 0$; the remaining statements are the definitions at $J=\mathrm{id}$.</p>
