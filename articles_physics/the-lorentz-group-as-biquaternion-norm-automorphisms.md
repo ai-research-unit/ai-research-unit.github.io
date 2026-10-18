@@ -20,7 +20,7 @@ for all biquaternions $\tilde{Q},\tilde Q_1$. A multiplicative quadratic form on
 
 Four statements organize the article. The first three are the levels at which the identification by the **form** can be read; the fourth is the level supplied by the **product**.
 
-- **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$.
+- **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{-1}$.
 - **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
 - **At the rotor level**, the identity component is exactly the group of conjugations $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ by unit-norm biquaternions, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they are the diagonal $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
@@ -115,20 +115,20 @@ The biquaternion norm **is the determinant**, and $\mathsf{M}_2$ is an isomorphi
 The determinant is a quadratic form on the four-dimensional space $M_2(\mathbb{C})$, and its automorphism group is classical. Consider the map
 
 $$
-T_{\tilde{A},\tilde{B}}:\ \tilde{Q}\ \longmapsto\ \tilde{A}\,\tilde{Q}\,\tilde{B}^{-1},
+T_{A,B}:\ \tilde{Q}\ \longmapsto A\,\tilde{Q}\,B^{-1},
 \qquad
-\tilde{A},\tilde{B}\in GL_2(\mathbb{C}).
+A,B\in GL_2(\mathbb{C}).
 $$
 
 It is invertible and $\mathbb{C}$-linear, and its effect on the form is
 
 $$
-\langle T_{\tilde{A},\tilde{B}}\tilde{Q}\rangle_{\natural} = \det\!\left(\tilde{A}\tilde{Q}\tilde{B}^{-1}\right)
-= \frac{\det\tilde{A}}{\det\tilde{B}}\,\det\tilde{Q}
-= \frac{\det\tilde{A}}{\det\tilde{B}}\,\langle\tilde{Q}\rangle_{\natural}.
+\langle T_{A,B}\tilde{Q}\rangle_{\natural} = \det\!\left(A\tilde{Q}B^{-1}\right)
+= \frac{\det A}{\det B}\,\det\tilde{Q}
+= \frac{\det A}{\det B}\,\langle\tilde{Q}\rangle_{\natural}.
 $$
 
-Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det\tilde{A} = \det\tilde{B}$, and one may normalize both to unit determinant; the surviving pairs are $(\tilde{A},\tilde{B})\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(\tilde{A},\tilde{B})\mapsto T_{\tilde{A},\tilde{B}}$ is the set of pairs acting trivially, $T_{\tilde{A},\tilde{B}} = \mathrm{id}$, which is
+Preservation of $\langle\cdot\rangle_{\natural}$ therefore requires $\det A = \det B$, and one may normalize both to unit determinant; the surviving pairs are $(A,B)\in SL(2,\mathbb{C})\times SL(2,\mathbb{C})$. The kernel of the assignment $(A,B)\mapsto T_{A,B}$ is the set of pairs acting trivially, $T_{A,B} = \mathrm{id}$, which is
 
 $$
 \ker = \{\,(\lambda I_2,\lambda I_2) : \lambda\in\mathbb{C}^\times\,\},
@@ -286,13 +286,13 @@ A word on the relation between the complex and the real descriptions is in order
 
 The automorphisms used so far preserve the **form**. The algebra has a smaller automorphism group, the maps that also preserve the **product**, and the difference between the two is the subject of open question 1 below. That difference has a sharp algebraic description, and a neighbouring research programme — Kassandrov's biquaternionic *algebrodynamics*, in Further Reading — builds on it a derivation of Minkowski geometry and of its causal structure rather than treating it as a curiosity. The group-theoretic content of this section is standard; the construction and its consequences are the source's, and the checks are this article's.
 
-**The algebra automorphisms are the diagonal of the form automorphisms.** By Skolem–Noether (companion article *Biquaternion Automorphisms and Derivations*) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, $\tilde{Q}\mapsto\tilde{M}\tilde{Q}\tilde{M}^{-1}$, and the group is
+**The algebra automorphisms are the diagonal of the form automorphisms.** By Skolem–Noether (companion article *Biquaternion Automorphisms and Derivations*) every $\mathbb{C}$-algebra automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner, $\tilde{Q}\mapsto M\tilde{Q}M^{-1}$, and the group is
 
 $$
 \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \;\cong\; PGL(2,\mathbb{C}) \;\cong\; PSL(2,\mathbb{C}) \;\cong\; SO(3,\mathbb{C}),
 $$
 
-of complex dimension three. In the parametrization $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det\tilde{A}=\det\tilde{B}$ — this is the **diagonal** $\tilde{A}=\tilde{B}=\tilde{M}$, and the determinant condition then holds automatically. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$,
+of complex dimension three. In the parametrization $\tilde{Q}\mapsto A\tilde{Q}B^{-1}$ of the norm automorphisms above — where preservation of $\langle\cdot\rangle_{\natural}$ required only $\det A=\det B$ — this is the **diagonal** $A=B=M$, and the determinant condition then holds automatically. Since the full complex group is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$,
 
 $$
 SO(3,\mathbb{C}) \;\cong\; \frac{SL(2,\mathbb{C})}{\{\pm e_t\}} \;\subset\; SO(4,\mathbb{C}),
@@ -302,7 +302,7 @@ $$
 
 Two consequences are worth separating. The algebra automorphisms are exactly the norm automorphisms with the **two chiral factors locked together** — the ones that preserve the multiplication and not merely the quadratic form. And it is the diagonal, not an arbitrary pair, that is real-isomorphic to the Lorentz group: $SO(3,\mathbb{C})$ and $SO^+(1,3)$ are both $PSL(2,\mathbb{C})$, connected of real dimension six, hence the same real group. The group recovered from the **algebra** is thus the restricted Lorentz group, whereas the group recovered from the **form** alone is the larger $SO(4,\mathbb{C})$; the source reads this as evidence that the algebra, not the form, is the primitive object.
 
-**What it acts on, and what it preserves.** The inner automorphism fixes $\mathrm{tr}\,\tilde{Q}$ and therefore the scalar coordinate $z_0$, and it acts on the traceless part $\tilde{V}=\tilde{Q}-\tfrac12(\mathrm{tr}\tilde{Q})e_t$ by $\tilde{V}\mapsto\tilde{M}\tilde{V}\tilde{M}^{-1}$, preserving $\det\tilde{V}$. The traceless part is three-dimensional over $\mathbb{C}$, and on it the action is the **complex-orthogonal** one: with $x=(z_1,z_2,z_3)$,
+**What it acts on, and what it preserves.** The inner automorphism fixes $\mathrm{tr}\,\tilde{Q}$ and therefore the scalar coordinate $z_0$, and it acts on the traceless part $\tilde{V}=\tilde{Q}-\tfrac12(\mathrm{tr}\tilde{Q})e_t$ by $\tilde{V}\mapsto M\tilde{V}M^{-1}$, preserving $\det\tilde{V}$. The traceless part is three-dimensional over $\mathbb{C}$, and on it the action is the **complex-orthogonal** one: with $x=(z_1,z_2,z_3)$,
 
 $$
 x \longmapsto Rx , \qquad R^TR = I_3 , \qquad \det R = 1 ,
@@ -469,7 +469,7 @@ This is what makes each combination close on itself with the same structure cons
 
 ## Open Questions
 
-1. **Automorphisms of the full algebra.** The maps considered here preserve the biquaternion norm and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{-1}$, a subgroup of the form automorphisms. The group-theoretic half of the question has a sharp answer, given in the section above: the subgroup is the **diagonal** $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$, and as a real group it is the restricted Lorentz group itself — which is why a construction can take the algebra automorphisms, rather than the slice automorphisms, as the physical Lorentz group. What remains open is whether the framework adopts that interpretation, in which Minkowski space is a bilinear image of $\mathbb{C}^3$ and the causal structure follows from the Lagrange identity, or keeps the slice interpretation of the summary. The corpus records the construction and its checks, and leaves the choice to the foundational articles.
+1. **Automorphisms of the full algebra.** The maps considered here preserve the biquaternion norm and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, $\tilde{Q}\mapsto A\tilde{Q}A^{-1}$, a subgroup of the form automorphisms. The group-theoretic half of the question has a sharp answer, given in the section above: the subgroup is the **diagonal** $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$, and as a real group it is the restricted Lorentz group itself — which is why a construction can take the algebra automorphisms, rather than the slice automorphisms, as the physical Lorentz group. What remains open is whether the framework adopts that interpretation, in which Minkowski space is a bilinear image of $\mathbb{C}^3$ and the causal structure follows from the Lagrange identity, or keeps the slice interpretation of the summary. The corpus records the construction and its checks, and leaves the choice to the foundational articles.
 
 2. **The discrete components.** $O(1,3)$ has four components; the rotor group covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside the rotor group. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.
 
@@ -504,7 +504,7 @@ $$
 SO(4,\mathbb{C}) \cong \frac{SL(2,\mathbb{C})\times SL(2,\mathbb{C})}{\{\pm(e_t,e_t)\}},
 $$
 
-realized by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ with $\det\tilde{A}=\det\tilde{B}=1$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to
+realized by $\tilde{Q}\mapsto A\tilde{Q}B^{-1}$ with $\det A=\det B=1$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to
 
 $$
 \langle ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2,
@@ -562,7 +562,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\langle\tilde{Q},\tilde Q_1\rangle = \sum_\mu Q_\mu R_\mu$ | Polar (symmetric bilinear) form, matrix $G=I_4$ |
 | $O(4,\mathbb{C}),\ SO(4,\mathbb{C})$ | Complex automorphism group of $\langle\cdot\rangle_{\natural}$; its identity component |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $N=\det\mathsf{M}_2$ | Matrix realization; biquaternion norm is the determinant |
-| $T_{\tilde{A},\tilde{B}}:\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$ | General norm-preserving complex map |
+| $T_{A,B}:\tilde{Q}\mapsto A\tilde{Q}B^{-1}$ | General norm-preserving complex map |
 | $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$ | Complex group |
 | $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ | Algebra automorphism group; the diagonal of $SO(4,\mathbb{C})$; as a real group $SO^+(1,3)$ |
 | $\sigma=z_1^2+z_2^2+z_3^2$ | Complex 3-metric on the vector part; invariant of the algebra automorphisms |

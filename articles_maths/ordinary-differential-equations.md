@@ -346,21 +346,21 @@ $$
 with $\omega$ an arbitrary complex number, is $u = c_1u_1 + c_2u_2$, where
 
 $$
-u_1 = g_0\!\!\sum_{\substack{n=0\\ n\ \text{even}}}^{\infty}\!\!\frac{\omega^n\tilde X^{(n)}}{n!},
+u_1 = g_0\!\!\sum_{\substack{n=0\\ n\ \text{even}}}^{\infty}\!\!\frac{\omega^nX_1^{(n)}}{n!},
 \qquad
-u_2 = g_0\!\!\sum_{\substack{n=1\\ n\ \text{odd}}}^{\infty}\!\!\frac{\omega^nX^{(n)}}{n!},
+u_2 = g_0\!\!\sum_{\substack{n=1\\ n\ \text{odd}}}^{\infty}\!\!\frac{\omega^nX_2^{(n)}}{n!},
 $$
 
-and the coefficients are generated from $\tilde X^{(0)} = X^{(0)} \equiv 1$ by the recursions
+and the coefficients are generated from $X_1^{(0)} = X_2^{(0)} \equiv 1$ by the recursions
 
 $$
-\tilde X^{(n)}(x)=
+X_1^{(n)}(x)=
 \begin{cases}
-n\displaystyle\int_0^x\tilde X^{(n-1)}(\xi)\,g^{2}(\xi)\,d\xi, & n\ \text{odd},\\[6pt]
-n\displaystyle\int_0^x\tilde X^{(n-1)}(\xi)\,g^{-2}(\xi)\,d\xi, & n\ \text{even},
+n\displaystyle\int_0^xX_1^{(n-1)}(\xi)\,g^{2}(\xi)\,d\xi, & n\ \text{odd},\\[6pt]
+n\displaystyle\int_0^xX_1^{(n-1)}(\xi)\,g^{-2}(\xi)\,d\xi, & n\ \text{even},
 \end{cases}
 \qquad
-X^{(n)}(x)=
+X_2^{(n)}(x)=
 \begin{cases}
 n\displaystyle\int_0^xX^{(n-1)}(\xi)\,g^{-2}(\xi)\,d\xi, & n\ \text{odd},\\[6pt]
 n\displaystyle\int_0^xX^{(n-1)}(\xi)\,g^{2}(\xi)\,d\xi, & n\ \text{even}.
@@ -372,25 +372,25 @@ The coefficient of $\omega^0$ in $u_1$ is $g_0$ itself, so $g_0$ is the particul
 *Proof.* For the case $p \equiv 1$, which is $-u'' + qu = 0$, the recursions lose $g$ and acquire $q$, and the estimate is transparent: for even $n$,
 
 $$
-\bigl|\tilde X^{(n)}(x)\bigr| \le \Bigl(\max_{[0,a]}|q|\Bigr)^{n/2}|x|^n \le c^n,
+\bigl|X_1^{(n)}(x)\bigr| \le \Bigl(\max_{[0,a]}|q|\Bigr)^{n/2}|x|^n \le c^n,
 \qquad c = \Bigl(\max_{[0,a]}|q|\Bigr)^{1/2}a ,
 $$
 
 so the terms of the two series are bounded by $c^n/n!$ and the series, together with the series of their derivatives, converge uniformly on $[0,a]$ by the Weierstrass test. The recursion is arranged so that
 
 $$
-\frac{d^2}{dx^2}\tilde X^{(n)} = n(n-1)\,q\,\tilde X^{(n-2)} ,
+\frac{d^2}{dx^2}X_1^{(n)} = n(n-1)\,q\,X_1^{(n-2)} ,
 $$
 
-which telescopes the second derivative of the series into $q$ times the series itself, so $u_1'' = qu_1$ and $u_2'' = qu_2$. At the base point every $\tilde X^{(n)}$ and $X^{(n)}$ with $n > 0$ vanishes, so $u_1(0) = 1$, $u_1'(0) = 0$, $u_2(0) = 0$ and $u_2'(0) = 1$; the Wronskian $u_1u_2' - u_1'u_2$ therefore equals $1$ at $0$ and the two series are a fundamental system. The general case follows by the same computation with $g$ in place of $q$, the estimates being in terms of $\max|g^{\pm2}|$.
+which telescopes the second derivative of the series into $q$ times the series itself, so $u_1'' = qu_1$ and $u_2'' = qu_2$. At the base point every $X_1^{(n)}$ and $X_2^{(n)}$ with $n > 0$ vanishes, so $u_1(0) = 1$, $u_1'(0) = 0$, $u_2(0) = 0$ and $u_2'(0) = 1$; the Wronskian $u_1u_2' - u_1'u_2$ therefore equals $1$ at $0$ and the two series are a fundamental system. The general case follows by the same computation with $g$ in place of $q$, the estimates being in terms of $\max|g^{\pm2}|$.
 
-**Consequences.** The coefficients $\tilde X^{(n)}$ and $X^{(n)}$ do not depend on $\omega$. Truncating the series at order $N$ therefore gives a **polynomial** in $\omega$ that solves the initial-value problem for all values of the spectral parameter at once, with $c_1 = u(0)$ and $c_2 = u'(0)$ as the only input; an eigenvalue problem in $\omega$ becomes the root-finding problem for that polynomial. This is what distinguishes the representation from a numerical integrator, which returns one solution for one value of $\omega$. In the form $-u'' + \omega^2q(x)u = 0$ the two series read
+**Consequences.** The coefficients $X_1^{(n)}$ and $X_2^{(n)}$ do not depend on $\omega$. Truncating the series at order $N$ therefore gives a **polynomial** in $\omega$ that solves the initial-value problem for all values of the spectral parameter at once, with $c_1 = u(0)$ and $c_2 = u'(0)$ as the only input; an eigenvalue problem in $\omega$ becomes the root-finding problem for that polynomial. This is what distinguishes the representation from a numerical integrator, which returns one solution for one value of $\omega$. In the form $-u'' + \omega^2q(x)u = 0$ the two series read
 
 $$
-u = c_1\!\!\sum_{\substack{n\ \text{even}}}\frac{\omega^n\tilde X^{(n)}}{n!} + c_2\!\!\sum_{\substack{n\ \text{odd}}}\frac{\omega^{n-1}X^{(n)}}{n!},
+u = c_1\!\!\sum_{\substack{n\ \text{even}}}\frac{\omega^nX_1^{(n)}}{n!} + c_2\!\!\sum_{\substack{n\ \text{odd}}}\frac{\omega^{n-1}X_2^{(n)}}{n!},
 $$
 
-with the same $\tilde X^{(n)}, X^{(n)}$ built from $q$ alone — the powers of $\omega$ count the occurrences of $q$ in each coefficient — so one run of the recursion serves every wave number.
+with the same $X_1^{(n)}, X_2^{(n)}$ built from $q$ alone — the powers of $\omega$ count the occurrences of $q$ in each coefficient — so one run of the recursion serves every wave number.
 
 **Standing of the result.** The representation itself is not new: the series solution of a second-order linear equation in this form goes back to Weyl's 1910 paper, and the same representation is used in inverse spectral theory. What the hypothesis $g_0, 1/g_0 \in L^\infty$ adds is that the particular solution is nonvanishing and nondegenerate at both endpoints, which is what makes the coefficients computable and of controlled size across the whole interval rather than only locally; a singular endpoint, at which $1/g_0$ need not be bounded, is outside the statement. The method has been developed for complex-valued coefficients, which is the case that matters when $q$ is a complex potential or a frequency-dependent medium parameter; the electromagnetic instance, where the equation is $-(pu')' + qu = \omega^2u$ in a stratified medium, is recorded in *Electromagnetism in Media — The Local Complex Structure at Work*, where the same function $g$ appears as the carrier of a factorisation of the operator. The author reports that the truncated series is more accurate than Matlab's adaptive solver `ode45` on test problems by several orders of magnitude, up to an absolute error of $0.28$ for the solver against $10^{-9}$ for the series at the stiffest test case; the comparison is the author's own and with a single solver, and it is recorded as reported.
 
@@ -465,7 +465,7 @@ For an autonomous system the equilibria are classified by the derivative at the 
 | $\lambda_n$, $y_n$ | Sturm–Liouville eigenvalues and eigenfunctions |
 | $g_0$, $g = \sqrt{p\,g_0}$ | Bounded particular solution of the auxiliary equation $(pg_0')'+qg_0=0$ and the carrier of the series; $1/g_0$ bounded |
 | $\omega$ | Spectral parameter of $(pu')'+qu=\omega^2u$ |
-| $\tilde X^{(n)}$, $X^{(n)}$ | Coefficients of the two series, $\tilde X^{(0)}=X^{(0)}=1$ |
+| $X_1^{(n)}$, $X_2^{(n)}$ | Coefficients of the two series, $X_1^{(0)}=X_2^{(0)}=1$ |
 | $R(y)$ | Rayleigh quotient |
 | $y_*$ | Equilibrium of an autonomous system |
 | $A = Df(y_*)$, $\tau$, $\delta$ | Linearisation matrix, its trace and determinant |

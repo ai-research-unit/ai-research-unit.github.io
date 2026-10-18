@@ -53,10 +53,10 @@ $$
 s_K(t) = \begin{cases} \sin(t\sqrt K)/\sqrt K, & K > 0, \\ t, & K = 0, \\ \sinh(t\sqrt{-K})/\sqrt{-K}, & K < 0. \end{cases}
 $$
 
-Then for a geodesic triangle with sides $a, b, c$ and the interior angle $C$ between the sides $a$ and $b$, writing $\tilde C = \pi - C$ for the exterior angle at that vertex,
+Then for a geodesic triangle with sides $a, b, c$ and the interior angle $C$ between the sides $a$ and $b$, writing $C_{\mathrm{ext}} = \pi - C$ for the exterior angle at that vertex,
 
 $$
-c_K(c) = c_K(a)c_K(b) - K\,s_K(a)s_K(b)\cos\tilde C ,
+c_K(c) = c_K(a)c_K(b) - K\,s_K(a)s_K(b)\cos C_{\mathrm{ext}} ,
 $$
 
 where $c_K(t) = s_K'(t)$ is the cosine in the positive case, the constant $1$ in the flat case, and the hyperbolic cosine in the negative case. The three classical laws of cosines are the three cases: for $K > 0$ the formula reads $\cos c = \cos a\cos b + \sin a\sin b\cos C$, for $K = 0$ it reads $c^2 = a^2 + b^2 - 2ab\cos C$, and for $K < 0$ it reads $\cosh c = \cosh a\cosh b - \sinh a\sinh b\cos C$.

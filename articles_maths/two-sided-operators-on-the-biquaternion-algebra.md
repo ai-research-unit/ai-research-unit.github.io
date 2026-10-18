@@ -141,16 +141,16 @@ $$
 
 if and only if $\tilde Q_3\tilde Q_5=\pm e_{0}$, that is if and only if $\tilde Q_3=\pm\tilde Q_5^{-1}$. In that case the operator is $\pm\mathrm{Ad}_{\tilde Q_5}$, the inner automorphism of $\tilde Q_5$ up to sign.
 
-*Proof.* If the operator preserves the form it is injective, because the form is non-degenerate, hence $\tilde Q_5$ and $\tilde Q_3$ are units. Put $\tilde M=\tilde Q_3\tilde Q_5$, so that $\tilde Q_3=\tilde M\tilde Q_5^{-1}$, and compute with the cyclicity of the scalar part:
+*Proof.* If the operator preserves the form it is injective, because the form is non-degenerate, hence $\tilde Q_5$ and $\tilde Q_3$ are units. Put $\tilde Q_6=\tilde Q_3\tilde Q_5$, so that $\tilde Q_3=\tilde Q_6\tilde Q_5^{-1}$, and compute with the cyclicity of the scalar part:
 
 $$
 \mathrm{Sc}\bigl(\tilde Q_5\tilde Q_1\tilde Q_3\tilde Q_5\tilde Q_2\tilde Q_3\bigr)
-=\mathrm{Sc}\bigl(\tilde Q_5\tilde Q_1\tilde M\tilde Q_2\tilde M\tilde Q_5^{-1}\bigr)
-=\mathrm{Sc}\bigl(\tilde M\tilde Q_1\tilde M\tilde Q_2\bigr)
-=\bigl\langle\tilde Q_1,\tilde M\tilde Q_2\tilde M\bigr\rangle .
+=\mathrm{Sc}\bigl(\tilde Q_5\tilde Q_1\tilde Q_6\tilde Q_2\tilde Q_6\tilde Q_5^{-1}\bigr)
+=\mathrm{Sc}\bigl(\tilde Q_6\tilde Q_1\tilde Q_6\tilde Q_2\bigr)
+=\bigl\langle\tilde Q_1,\tilde Q_6\tilde Q_2\tilde Q_6\bigr\rangle .
 $$
 
-Preservation is therefore equivalent to $\tilde M\tilde Q\tilde M=\tilde Q$ for all $\tilde Q$, which by the one-sided theorem forces $\tilde M=\pm e_{0}$ (*One-Sided Operators on the Biquaternion Algebra*, §*Which Multiplications Preserve the Form*). Conversely $\tilde Q_3=\tilde Q_5^{-1}$ gives the inner automorphism, which preserves the form, and $\tilde Q_3=-\tilde Q_5^{-1}$ gives its negative, which preserves the form up to the sign $(-1)^{2}=1$.
+Preservation is therefore equivalent to $\tilde Q_6\tilde Q\tilde Q_6=\tilde Q$ for all $\tilde Q$, which by the one-sided theorem forces $\tilde Q_6=\pm e_{0}$ (*One-Sided Operators on the Biquaternion Algebra*, §*Which Multiplications Preserve the Form*). Conversely $\tilde Q_3=\tilde Q_5^{-1}$ gives the inner automorphism, which preserves the form, and $\tilde Q_3=-\tilde Q_5^{-1}$ gives its negative, which preserves the form up to the sign $(-1)^{2}=1$.
 
 **Theorem (the multiplicative operators).** The operator $L_{\tilde Q_5}R_{\tilde Q_3}$ is multiplicative,
 
@@ -160,7 +160,7 @@ $$
 
 if and only if $\tilde Q_5\tilde Q_3=e_{0}$, that is $\tilde Q_3=\tilde Q_5^{-1}$; and then it is the inner automorphism $\mathrm{Ad}_{\tilde Q_5}$, an automorphism of the algebra for every unit $\tilde Q_5$.
 
-*Proof.* The left side is $\tilde Q_5\tilde Q_1\tilde Q_3\tilde Q_5\tilde Q_2\tilde Q_3$ and the right side is $\tilde Q_5\tilde Q_1\tilde Q_2\tilde Q_3$, so with $\tilde M=\tilde Q_5\tilde Q_3$ the identity reads $\tilde Q_5\tilde Q_1\tilde M\tilde Q_2\tilde Q_3=\tilde Q_5\tilde Q_1\tilde Q_2\tilde Q_3$ for all $\tilde Q_1,\tilde Q_2$. At $\tilde Q_1=e_{0}$ and for units $\tilde Q_5,\tilde Q_3$ this is $\tilde M\tilde Q_2=\tilde Q_2$ for all $\tilde Q_2$, hence $\tilde M=e_{0}$, that is $\tilde Q_3=\tilde Q_5^{-1}$; conversely $\tilde Q_5\tilde Q_3=e_{0}$ makes the two sides equal for all $\tilde Q_1,\tilde Q_2$, and the operator is $\tilde Q\mapsto\tilde Q_5\tilde Q\tilde Q_5^{-1}$.
+*Proof.* The left side is $\tilde Q_5\tilde Q_1\tilde Q_3\tilde Q_5\tilde Q_2\tilde Q_3$ and the right side is $\tilde Q_5\tilde Q_1\tilde Q_2\tilde Q_3$, so with $\tilde Q_7=\tilde Q_5\tilde Q_3$ the identity reads $\tilde Q_5\tilde Q_1\tilde Q_7\tilde Q_2\tilde Q_3=\tilde Q_5\tilde Q_1\tilde Q_2\tilde Q_3$ for all $\tilde Q_1,\tilde Q_2$. At $\tilde Q_1=e_{0}$ and for units $\tilde Q_5,\tilde Q_3$ this is $\tilde Q_7\tilde Q_2=\tilde Q_2$ for all $\tilde Q_2$, hence $\tilde Q_7=e_{0}$, that is $\tilde Q_3=\tilde Q_5^{-1}$; conversely $\tilde Q_5\tilde Q_3=e_{0}$ makes the two sides equal for all $\tilde Q_1,\tilde Q_2$, and the operator is $\tilde Q\mapsto\tilde Q_5\tilde Q\tilde Q_5^{-1}$.
 
 **Corollary (multiplicative and form preserving).** The two-sided operators that are multiplicative and preserve the form at once are exactly the inner automorphisms $\mathrm{Ad}_{\tilde Q_5}$ with $\tilde Q_5$ a unit, without the sign $-\mathrm{Ad}_{\tilde Q_5}$: the sign that the criterion of the first theorem allows is excluded by multiplicativity.
 

@@ -48,7 +48,7 @@ Two points of discipline are kept in view. Every displayed formula is applied to
 
 ## Problem 1: The Wave Operator and the Defining Equation
 
-**Statement.** (a) Show that with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the wave operator $\Delta + \partial^2/\partial Q_t^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{Y})\tilde J(\tilde{Y})\,d^3y\,dt'$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.
+**Statement.** (a) Show that with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the wave operator $\Delta + \partial^2/\partial Q_t^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde R')\tilde J(\tilde R')\,d^3y\,dt'$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.
 
 **Solution.** (a) Since $\partial/\partial Q_t = \frac{1}{ic}\partial/\partial t = -\frac{i}{c}\partial/\partial t$,
 $$
@@ -67,16 +67,16 @@ $$
 \qquad
 \delta^{(4)}(\tilde{Q}) = \delta(t)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$
-with the physical measure $d^3y\,dt'$ for the convolution (the parent writes $d^4Y$ for the four-dimensional volume element; the constant conventions relating the four-dimensional delta, the volume element, and the kernel are fixed here once and for all by using $d^3y\,dt'$). The minus sign is not free: the potential equation carries $-\mu\tilde J$ on the right, so a kernel with $\Box G = -\delta^{(4)}$ gives that sign directly. With $\Box G = +\delta^{(4)}$ one would have to insert a compensating minus in the convolution; we fix both once by the convention above.
+with the physical measure $d^3y\,dt'$ for the convolution (the parent writes $d^4R'$ for the four-dimensional volume element; the constant conventions relating the four-dimensional delta, the volume element, and the kernel are fixed here once and for all by using $d^3y\,dt'$). The minus sign is not free: the potential equation carries $-\mu\tilde J$ on the right, so a kernel with $\Box G = -\delta^{(4)}$ gives that sign directly. With $\Box G = +\delta^{(4)}$ one would have to insert a compensating minus in the convolution; we fix both once by the convention above.
 
 (c) Differentiation under the convolution integral gives
 $$
 \Box_{\tilde{Q}}\tilde{A}(\tilde{Q})
-= \mu\int \Box_{\tilde{Q}}G(\tilde{Q} - \tilde{Y})\,\tilde J(\tilde{Y})\,d^3y\,dt'
-= \mu\int \bigl(-\delta^{(4)}(\tilde{Q} - \tilde{Y})\bigr)\tilde J(\tilde{Y})\,d^3y\,dt'
+= \mu\int \Box_{\tilde{Q}}G(\tilde{Q} - \tilde R')\,\tilde J(\tilde R')\,d^3y\,dt'
+= \mu\int \bigl(-\delta^{(4)}(\tilde{Q} - \tilde R')\bigr)\tilde J(\tilde R')\,d^3y\,dt'
 = -\mu\,\tilde J(\tilde{Q}),
 $$
-where in the last step the delta picks out $\tilde{Y} = \tilde{Q}$. The derivative acts only on $G$, because $\tilde J$ does not depend on $\tilde{Q}$; equivalently $\Box_{\tilde{Q}}G(\tilde{Q}-\tilde{Y}) = \Box_{\tilde{Y}}G(\tilde{Q}-\tilde{Y})$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
+where in the last step the delta picks out $\tilde R' = \tilde{Q}$. The derivative acts only on $G$, because $\tilde J$ does not depend on $\tilde{Q}$; equivalently $\Box_{\tilde{Q}}G(\tilde{Q}-\tilde R') = \Box_{\tilde R'}G(\tilde{Q}-\tilde R')$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
 
 ## Problem 2: The Retarded Green's Function and the Light-Cone Jacobian
 

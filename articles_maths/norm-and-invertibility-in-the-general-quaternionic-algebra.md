@@ -225,11 +225,11 @@ $$
 \tilde Q^{-1}=\tilde Q^{\natural},
 $$
 
-the quaternion conjugate; this is the case of every rotor. The dagger coincides with it exactly on the unitary elements, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor with real coefficients has $\tilde u^{-1}=\tilde u^{\natural}=\tilde u^{*}$, while a boost rotor is Hermitian, $\tilde B^{*}=\tilde B$, so its dagger is itself and not its inverse,
+the quaternion conjugate; this is the case of every rotor. The dagger coincides with it exactly on the unitary elements, $\tilde Q\tilde Q^{*}=e_t$: a rotation rotor with real coefficients has $\tilde u^{-1}=\tilde u^{\natural}=\tilde u^{*}$, while a boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, so its dagger is itself and not its inverse,
 
 $$
-\tilde B = \cosh\frac{\psi}{2}e_t + i\sinh\frac{\psi}{2}\,\vec e_z, \qquad
-\tilde B^{-1} = \tilde B^{\natural} = \cosh\frac{\psi}{2}e_t - i\sinh\frac{\psi}{2}\,\vec e_z \neq \tilde B^{*} = \tilde B .
+\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}e_t + i\sinh\frac{\psi}{2}\,\vec e_z, \qquad
+\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural} = \cosh\frac{\psi}{2}e_t - i\sinh\frac{\psi}{2}\,\vec e_z \neq \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} .
 $$
 
 The two operations are therefore interchangeable in the rotation case and must be kept apart in the boost case; the distinction is the algebraic form of the statement that the action $\tilde Q\mapsto\tilde u\tilde Q\tilde u^{*}$ is an inner automorphism in the unitary sector and not elsewhere (*Biquaternion Rotations and Lorentz Transformations*; *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*; *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*).

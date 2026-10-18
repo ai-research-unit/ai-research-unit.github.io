@@ -86,41 +86,41 @@ $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad
 \tilde\Pi_-=e_t-\tilde\Pi_+,\qquad
 \vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y),\qquad
-\tilde T=\tfrac12(i\vec e_x+\vec e_y),
+\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
 be the idempotents and the off-diagonal elements of *Ideals and Peirce Decomposition of the Biquaternion Algebra*. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. They satisfy $\tilde\Pi_+^2=\tilde\Pi_+$, $\tilde\Pi_-^2=\tilde\Pi_-$, $\tilde\Pi_+\tilde\Pi_-=0$, $\tilde\Pi_++\tilde\Pi_-=e_t$, the multiplication table
 
 $$
 \tilde\Pi_+\vec\Upsilon_x=\vec\Upsilon_x=\vec\Upsilon_x\tilde\Pi_-,\qquad
-\tilde\Pi_-\tilde T=\tilde T=\tilde T\tilde\Pi_+,\qquad
-\vec\Upsilon_x\tilde T=\tilde\Pi_+,\qquad
-\tilde T\vec\Upsilon_x=\tilde\Pi_-,
+\tilde\Pi_-\vec\Upsilon_y=\vec\Upsilon_y=\vec\Upsilon_y\tilde\Pi_+,\qquad
+\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+,\qquad
+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-,
 $$
 
-together with $\vec\Upsilon_x\tilde\Pi_+=\tilde\Pi_-\vec\Upsilon_x=\tilde\Pi_+\tilde T=\tilde T\tilde\Pi_-=0$ and $\vec\Upsilon_x^2=\tilde T^2=0$. The minimal left ideal
+together with $\vec\Upsilon_x\tilde\Pi_+=\tilde\Pi_-\vec\Upsilon_x=\tilde\Pi_+\vec\Upsilon_y=\vec\Upsilon_y\tilde\Pi_-=0$ and $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$. The minimal left ideal
 
 $$
-S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde T\}
+S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}
 $$
 
 is the simple left module, of complex dimension two; all minimal left ideals are isomorphic to it (*Modules over the Biquaternion Algebra*).
 
-**Lemma (the idempotents are self-adjoint).** $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$ and $\tilde\Pi_-^{\dagger}=\tilde\Pi_-$; equivalently $i\vec e_z$ and $e_t$ are Hermitian. Also $\tilde{T}^{*}=\tfrac12(i\vec e_x-\vec e_y)$ and $\tilde{T}^{*}\tilde T=\tilde\Pi_+$.
+**Lemma (the idempotents are self-adjoint).** $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$ and $\tilde\Pi_-^{\dagger}=\tilde\Pi_-$; equivalently $i\vec e_z$ and $e_t$ are Hermitian. Also $\vec\Upsilon_y^{*}=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_y^{*}\vec\Upsilon_y=\tilde\Pi_+$.
 
-*Proof.* On the basis, $e_t^{\dagger}=e_t$ and $\vec e_k^{\dagger}=-\vec e_k$, so $(i\vec e_z)^{\dagger}=i^{*}\vec e_z^{\dagger}=(-i)(-\vec e_z)=i\vec e_z$ and $\tilde\Pi_+^{\dagger}=\tfrac12(e_t+i\vec e_z)=\tilde\Pi_+$; the second idempotent is $e_t-\tilde\Pi_+$ and is fixed with it. Further $\tilde{T}^{*}=\tfrac12\bigl((i\vec e_x)^{\dagger}+\vec e_y^{\dagger}\bigr)=\tfrac12(i\vec e_x-\vec e_y)$, and multiplying out, using $\vec e_x^2=\vec e_y^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, gives $\tilde{T}^{*}\tilde T=\tfrac14\bigl(e_t+i\vec e_z+i\vec e_z+e_t\bigr)=\tilde\Pi_+$. The sign that matters is $(i\vec e_x)^{\dagger}=+i\vec e_x$, which is the Hermitian sector meeting the generators.
+*Proof.* On the basis, $e_t^{\dagger}=e_t$ and $\vec e_k^{\dagger}=-\vec e_k$, so $(i\vec e_z)^{\dagger}=i^{*}\vec e_z^{\dagger}=(-i)(-\vec e_z)=i\vec e_z$ and $\tilde\Pi_+^{\dagger}=\tfrac12(e_t+i\vec e_z)=\tilde\Pi_+$; the second idempotent is $e_t-\tilde\Pi_+$ and is fixed with it. Further $\vec\Upsilon_y^{*}=\tfrac12\bigl((i\vec e_x)^{\dagger}+\vec e_y^{\dagger}\bigr)=\tfrac12(i\vec e_x-\vec e_y)$, and multiplying out, using $\vec e_x^2=\vec e_y^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, gives $\vec\Upsilon_y^{*}\vec\Upsilon_y=\tfrac14\bigl(e_t+i\vec e_z+i\vec e_z+e_t\bigr)=\tilde\Pi_+$. The sign that matters is $(i\vec e_x)^{\dagger}=+i\vec e_x$, which is the Hermitian sector meeting the generators.
 
-**Theorem (the restriction is positive definite).** The restriction of the scalar form to $S=\mathbb{B}\tilde\Pi_+$ satisfies the adjointness axiom, and in the basis $\{\tilde\Pi_+,\tilde T\}$ its Gram matrix is
+**Theorem (the restriction is positive definite).** The restriction of the scalar form to $S=\mathbb{B}\tilde\Pi_+$ satisfies the adjointness axiom, and in the basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$ its Gram matrix is
 
 $$
 \begin{pmatrix}
-\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*} & \langle\tilde T,\tilde\Pi_+\rangle_{*}\\
-\langle\tilde\Pi_+,\tilde T\rangle_{*} & \langle\tilde T,\tilde T\rangle_{*}
+\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*} & \langle\vec\Upsilon_y,\tilde\Pi_+\rangle_{*}\\
+\langle\tilde\Pi_+,\vec\Upsilon_y\rangle_{*} & \langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_{*}
 \end{pmatrix}
 =\frac12\begin{pmatrix}1&0\\0&1\end{pmatrix}.
 $$
 
-*Proof.* For $s,t\in S$ and any $\tilde Q_3$ one has $\tilde Q_3s\in S$ and $\tilde Q_3^{*}t\in S$, and $\mathrm{Sc}((\tilde Q_3s)^{\dagger}t)=\mathrm{Sc}(s^{\dagger}\tilde Q_3^{*}t)$, so the restriction inherits the axiom from the regular module and is invariant. For the entries, $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$ and $\tilde\Pi_+^2=\tilde\Pi_+$ give $\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*}=\mathrm{Sc}(\tilde\Pi_+)=\tfrac12$; the table gives $\tilde\Pi_+\tilde T=0$, so $\langle\tilde T,\tilde\Pi_+\rangle_{*}=\mathrm{Sc}(\tilde\Pi_+^{\dagger}\tilde T)=0$ and the matrix is Hermitian; and the lemma gives $\tilde{T}^{*}\tilde T=\tilde\Pi_+$, so $\langle\tilde T,\tilde T\rangle_{*}=\mathrm{Sc}(\tilde\Pi_+)=\tfrac12$. Positivity is the restriction of the positive definite form of the regular module to a subspace.
+*Proof.* For $s,t\in S$ and any $\tilde Q_3$ one has $\tilde Q_3s\in S$ and $\tilde Q_3^{*}t\in S$, and $\mathrm{Sc}((\tilde Q_3s)^{\dagger}t)=\mathrm{Sc}(s^{\dagger}\tilde Q_3^{*}t)$, so the restriction inherits the axiom from the regular module and is invariant. For the entries, $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$ and $\tilde\Pi_+^2=\tilde\Pi_+$ give $\langle\tilde\Pi_+,\tilde\Pi_+\rangle_{*}=\mathrm{Sc}(\tilde\Pi_+)=\tfrac12$; the table gives $\tilde\Pi_+\vec\Upsilon_y=0$, so $\langle\vec\Upsilon_y,\tilde\Pi_+\rangle_{*}=\mathrm{Sc}(\tilde\Pi_+^{\dagger}\vec\Upsilon_y)=0$ and the matrix is Hermitian; and the lemma gives $\vec\Upsilon_y^{*}\vec\Upsilon_y=\tilde\Pi_+$, so $\langle\vec\Upsilon_y,\vec\Upsilon_y\rangle_{*}=\mathrm{Sc}(\tilde\Pi_+)=\tfrac12$. Positivity is the restriction of the positive definite form of the regular module to a subspace.
 
 **Corollary (no isotropic ideal in $\mathbb{B}$).** The general theory warns that the restriction of the scalar form to a minimal left ideal may be totally isotropic, and exhibits the example $\pi=\tfrac12(1+\vec e_x)$ in $\mathrm{Cl}_{1,1}(\mathbb{R})$, where $\vec e_x^2=+1$ and the Gram matrix on $\mathrm{Cl}\pi$ is the zero matrix. No such ideal exists in $\mathbb{B}$: the scalar form $\mathrm{Sc}(\tilde Q_3^{*}\tilde Q_3)$ is positive definite, so its restriction to every nonzero subspace is positive definite, and no minimal left ideal is isotropic. The reason is visible in the comparison of the two computations: the general failure is $\pi^{\dagger}\pi=0$ for an idempotent built from a vector that the dagger negates, whereas here $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$ and $\tilde\Pi_+^{\dagger}\tilde\Pi_+=\tilde\Pi_+$ has scalar part $\tfrac12$. The standard idempotents of $\mathbb{B}$ are **self-adjoint**, which is exactly the condition the general article asks for when it prescribes a self-adjoint idempotent as the resolution.
 
@@ -162,7 +162,7 @@ $$
 
 an operator on the regular module; since each $L_{\vec e_k}$ preserves the left ideals, it restricts to an operator of the simple module, written $D_S$.
 
-**Theorem (skew-adjointness, square, and gap).** On the simple module, in the basis $\{\tilde\Pi_+,\tilde T\}$, the generators act by $c(\vec e_k)=-i\sigma_k$; hence
+**Theorem (skew-adjointness, square, and gap).** On the simple module, in the basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$, the generators act by $c(\vec e_k)=-i\sigma_k$; hence
 
 $$
 D_S=-i\bigl(\sigma_1+\sigma_2+\sigma_3\bigr),
@@ -184,7 +184,7 @@ The spectrum of $D_S$ is $\{\pm i\sqrt3\}$, the real operator $iD_S$ is self-adj
 
 ## Summary
 
-A **Hermitian Clifford module** over $\mathbb{B}$ is a left $\mathbb{B}$-module with a Hermitian form satisfying the single axiom $\langle t,\tilde Q_3\cdot s\rangle_{*}=\langle\tilde Q_3^{*}\cdot t,s\rangle_{*}$, equivalently with every element of $\mathbb{M}_-$ acting skew-adjointly and every element of $\mathbb{M}_+$ self-adjointly, so that the action is a $*$-representation of $(\mathbb{B},{}^{*})$. The **regular module** ${}_{\mathbb{B}}\mathbb{B}$ with the form $\langle\tilde Q,\tilde Q_3\rangle_{*}=\mathrm{Sc}(\tilde Q_3^{*}\tilde Q)=\sum_\mu Q_{3\bar{\mu}}Q_\mu$ is a Hermitian Clifford module: the form is positive definite, non-degenerate, and unique up to a positive scalar, and its adjoint identity is the theorem $L_{\tilde Q_1}^{*}=L_{\tilde{Q}_1^{*}}$ of the one-sided companion. The **simple module** $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde T\}$ carries the restriction of that form, with Gram matrix $\tfrac12 I_2$ in the basis $\{\tilde\Pi_+,\tilde T\}$: it is **positive definite**, not isotropic. The general warning that the restriction of a scalar form to a minimal left ideal can be totally isotropic has **no instance in $\mathbb{B}$**, because the scalar form of the dagger is positive definite and because the standard idempotents are **self-adjoint**, $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$; the vanishing case of the general theory requires an idempotent built from a vector that the dagger negates, and $\mathbb{B}$ has none. On the irreducible module the form is unique up to a positive scalar by **Schur's lemma**, so the spinor inner product is canonical.
+A **Hermitian Clifford module** over $\mathbb{B}$ is a left $\mathbb{B}$-module with a Hermitian form satisfying the single axiom $\langle t,\tilde Q_3\cdot s\rangle_{*}=\langle\tilde Q_3^{*}\cdot t,s\rangle_{*}$, equivalently with every element of $\mathbb{M}_-$ acting skew-adjointly and every element of $\mathbb{M}_+$ self-adjointly, so that the action is a $*$-representation of $(\mathbb{B},{}^{*})$. The **regular module** ${}_{\mathbb{B}}\mathbb{B}$ with the form $\langle\tilde Q,\tilde Q_3\rangle_{*}=\mathrm{Sc}(\tilde Q_3^{*}\tilde Q)=\sum_\mu Q_{3\bar{\mu}}Q_\mu$ is a Hermitian Clifford module: the form is positive definite, non-degenerate, and unique up to a positive scalar, and its adjoint identity is the theorem $L_{\tilde Q_1}^{*}=L_{\tilde{Q}_1^{*}}$ of the one-sided companion. The **simple module** $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ carries the restriction of that form, with Gram matrix $\tfrac12 I_2$ in the basis $\{\tilde\Pi_+,\vec\Upsilon_y\}$: it is **positive definite**, not isotropic. The general warning that the restriction of a scalar form to a minimal left ideal can be totally isotropic has **no instance in $\mathbb{B}$**, because the scalar form of the dagger is positive definite and because the standard idempotents are **self-adjoint**, $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$; the vanishing case of the general theory requires an idempotent built from a vector that the dagger negates, and $\mathbb{B}$ has none. On the irreducible module the form is unique up to a positive scalar by **Schur's lemma**, so the spinor inner product is canonical.
 
 The **unitary slice** $U=\mathrm{U}(2)$ acts on every Hermitian module by unitary operators, and its Lie algebra is the anti-Hermitian sector $\mathbb{M}_-\cong u(2)$; the norm-one slice $\mathbb{B}^{\times}_1=SL(2,\mathbb{C})$ does not act unitarily, only its unitary part $SU(2)$ does, because the spinor representation preserves no positive definite form. The **Dirac element** $D_{\mathrm{alg}}=\sum_kL_{\vec e_k}$ is skew-adjoint, with $D_S=-i(\sigma_1+\sigma_2+\sigma_3)$, $D_S^{2}=-3\,\mathrm{id}$ and positive Hermitian square $3\,\mathrm{id}$; and the analytic Dirac operator built from it is *Dirac Operators with Hermitian Adjoint*.
 
@@ -192,13 +192,13 @@ The **unitary slice** $U=\mathrm{U}(2)$ acts on every Hermitian module by unitar
 
 | Symbol | Meaning |
 |---|---|
-| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde T\}$ | The simple left module, $\cong\mathbb{C}^2$; the spinor module |
+| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ | The simple left module, $\cong\mathbb{C}^2$; the spinor module |
 | $(s,t)\mapsto\langle t,s\rangle_{*}$ | Hermitian form, $\mathbb{C}$-linear in the second argument |
 | $\langle t,\tilde Q_3\cdot s\rangle_{*}=\langle\tilde Q_3^{*}\cdot t,s\rangle_{*}$ | Adjointness axiom; $\rho(\tilde Q_3^{*})=\rho(\tilde Q_3)^{*}$ |
 | $\mathbb{M}_-$ acts skew, $\mathbb{M}_+$ self-adjoint | The sector criterion for the axiom |
 | $\langle\tilde Q,\tilde Q_3\rangle_{*}=\mathrm{Sc}(\tilde Q_3^{*}\tilde Q)=\sum_\mu Q_{3\bar{\mu}}Q_\mu$ | Form of the regular module; positive definite |
 | $\tilde\Pi_+^{\dagger}=\tilde\Pi_+$ | The idempotents are self-adjoint; hence no isotropic ideal |
-| Gram $=\tfrac12 I_2$ in $\{\tilde\Pi_+,\tilde T\}$ | Positive definite restriction to $S$ |
+| Gram $=\tfrac12 I_2$ in $\{\tilde\Pi_+,\vec\Upsilon_y\}$ | Positive definite restriction to $S$ |
 | $U=\mathrm{U}(2)=\{\tilde{U}^{*}\tilde U=e_t\}$ | Unitary slice, acting by unitaries; Lie algebra $\mathbb{M}_-$ |
 | $SL(2,\mathbb{C})$ | Norm-one slice; not unitary on $S$ except on $SU(2)$ |
 | $D_{\mathrm{alg}}=\sum_kL_{\vec e_k}$, $D_S=-i(\sigma_1+\sigma_2+\sigma_3)$ | Dirac element and its restriction |

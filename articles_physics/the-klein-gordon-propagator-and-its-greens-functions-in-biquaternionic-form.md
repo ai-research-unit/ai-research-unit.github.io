@@ -152,10 +152,10 @@ G_R(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 \frac{\sin(\Omega_{\vec p}t)}{\Omega_{\vec p}}\,\exp(i\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
 $$
 
-a **superposition of on-shell plane waves** with the relativistic phase velocity; this is the representation in which every claim below is checked. For a source $J(\tilde{Y})$ the convolution
+a **superposition of on-shell plane waves** with the relativistic phase velocity; this is the representation in which every claim below is checked. For a source $J(\tilde R')$ the convolution
 
 $$
-\tilde{\Phi}(\tilde{R})=\int G_R(\tilde{R}-\tilde{Y})\,J(\tilde{Y})\,d^3y\,dt'
+\tilde{\Phi}(\tilde{R})=\int G_R(\tilde{R}-\tilde R')\,J(\tilde R')\,d^3y\,dt'
 $$
 
 then solves $(\Box-\mu^2)\tilde{\Phi}=-J$, by the same translation-invariance argument as in the massless exercise.
@@ -297,8 +297,8 @@ $$
 and normalize the field so that the field commutator, of which $G_C$ is the kernel, reads
 
 $$
-\left[\,\tilde{\Phi}(\tilde{R}),\,\tilde{\Phi}^{*}(\tilde{Y})\,\right]
-=G_C(\tilde{R}-\tilde{Y})\,e_t .
+\left[\,\tilde{\Phi}(\tilde{R}),\,\tilde{\Phi}^{*}(\tilde R')\,\right]
+=G_C(\tilde{R}-\tilde R')\,e_t .
 $$
 
 The overall constant in this normalization is a convention — the relation carries an explicit factor of $i$ in the standard canonical normalization, which the kernels of this article absorb into their defining equation — while the support of $G_C$, and hence microcausality, is not. The commutator vanishes at equal times, since $G_C$ vanishes for purely spatial separation.
@@ -344,8 +344,8 @@ $$
 which is the standard interpretation of the asymmetric prescription: the two boundary values are the positive- and negative-frequency Wightman functions, and the $t$-ordering puts them in the order that makes the amplitude a causal Green's function. The two-point function of the biquaternion field is therefore
 
 $$
-\langle0|\,T\,\tilde{\Phi}(\tilde{R})\,\tilde{\Phi}^{*}(\tilde{Y})\,|0\rangle
-=G_F(\tilde{R}-\tilde{Y})\,e_t,
+\langle0|\,T\,\tilde{\Phi}(\tilde{R})\,\tilde{\Phi}^{*}(\tilde R')\,|0\rangle
+=G_F(\tilde{R}-\tilde R')\,e_t,
 $$
 
 a complex scalar times the identity; the module factor is absent, as it must be for a central field. The identification fixes the field-normalization convention, the kernels throughout being the distributions defined by $(\Box-\mu^2)G=-\delta^{(4)}$; the standard canonical normalization of the complex scalar differs from it by the explicit factor of $i$ carried by the canonical commutation relation, and that constant, unlike the support, is not physical.
@@ -374,11 +374,11 @@ with $K_1$ the modified Bessel function of the second kind. It decays exponentia
 The Feynman propagator is the inverse of the Klein–Gordon operator in the distributional sense, $(\Box-\mu^2)G_F=-\delta^{(4)}$, and the inverse relation between the two reads
 
 $$
-\int d^3y\,dt'\;G_F(\tilde{R}-\tilde{Y})\,\left[-\bigl(\Box_{\tilde{Y}}-\mu^2\bigr)\right]\delta^{(4)}(\tilde{Y}-\tilde{Z})
+\int d^3y\,dt'\;G_F(\tilde{R}-\tilde R')\,\left[-\bigl(\Box_{\tilde R'}-\mu^2\bigr)\right]\delta^{(4)}(\tilde R'-\tilde{Z})
 =\delta^{(4)}(\tilde{R}-\tilde{Z}),
 $$
 
-the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde{R}-\tilde{Y})[-\bigl(\Box_{\tilde{Y}}-\mu^2\bigr)]G_F(\tilde{Y}-\tilde{Z})=G_F(\tilde{R}-\tilde{Z})$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
+the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde{R}-\tilde R')[-\bigl(\Box_{\tilde R'}-\mu^2\bigr)]G_F(\tilde R'-\tilde{Z})=G_F(\tilde{R}-\tilde{Z})$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
 
 ## The Biquaternion Reading
 

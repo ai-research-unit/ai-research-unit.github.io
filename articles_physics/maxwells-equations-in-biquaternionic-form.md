@@ -234,7 +234,7 @@ where $G_\Box(R,t) = (4\pi R)^{-1}\delta(t - R/c)$ is the scalar retarded kernel
 The solution of the inhomogeneous equation is then the retarded convolution
 
 $$
-\tilde{F}(\tilde{Q}) = -\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde{Y})\,\tilde{J}(\tilde{Y})\,d^4 Y,
+\tilde{F}(\tilde{Q}) = -\sqrt{\mu}\int \tilde{G}_{\tilde{\nabla}}(\tilde{Q} - \tilde R')\,\tilde{J}(\tilde R')\,d^4R',
 $$
 
 where the integral is over the past light cone of $\tilde{Q}$. This is the biquaternionic form of the retarded solution of Maxwell's equations, and it is the physically correct solution for radiation problems: the field at a point depends only on the sources in its past light cone, not on the future sources.

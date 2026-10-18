@@ -639,10 +639,10 @@ while $\vec e_x$ and the time direction $ict\,e_t$ are fixed. The rotor carries 
 **Boost rotors** have a real scalar part and purely imaginary vector part, so they are Hermitian and complex conjugation negates their vector part:
 
 $$
-\tilde{B}(s, \vec u) = \cosh s\,e_t + i\sinh s\,\vec u\cdot e, \qquad \langle\tilde{B}\rangle_{\natural} = \cosh^2 s - \sinh^2 s = e_t, \qquad \tilde{B}^{*} = \tilde{B} .
+\tilde U_{\mathrm b}(s, \vec u) = \cosh s\,e_t + i\sinh s\,\vec u\cdot e, \qquad \langle\tilde U_{\mathrm b}\rangle_{\natural} = \cosh^2 s - \sinh^2 s = e_t, \qquad \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} .
 $$
 
-Because $\tilde{B}^{*} = \tilde{B}$, the action is $\tilde{Q}_1\mapsto\tilde{B}\tilde{Q}_1\tilde{B}$, and it is a boost with **rapidity** $2s$. Taking $\cosh s = \tfrac53$ and $\sinh s = \tfrac43$, so that $\cosh 2s = \tfrac{41}{9}$ and $\sinh 2s = \tfrac{40}{9}$, a boost along $\vec e_x$ acts on the four-position by
+Because $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, the action is $\tilde{Q}_1\mapsto\tilde U_{\mathrm b}\tilde{Q}_1\tilde U_{\mathrm b}$, and it is a boost with **rapidity** $2s$. Taking $\cosh s = \tfrac53$ and $\sinh s = \tfrac43$, so that $\cosh 2s = \tfrac{41}{9}$ and $\sinh 2s = \tfrac{40}{9}$, a boost along $\vec e_x$ acts on the four-position by
 
 $$
 ct \mapsto \cosh 2s\;ct - \sinh 2s\;x, \qquad x \mapsto \cosh 2s\;x - \sinh 2s\;ct, \qquad y \mapsto y, \quad z \mapsto z .
@@ -710,7 +710,7 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_{1t}^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \operatorname{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\tilde{U}$, $\langle\tilde{U}\rangle_{\natural} = e_t$ | Rotor; the rotor group $\cong SL(2,\mathbb{C})$ |
-| $\tilde u_{\mathrm r}(\theta,\vec u)$, $\tilde{B}(s,\vec u)$ | Rotation rotor (real, $\tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{\natural}$) and boost rotor (Hermitian, $\tilde{B}^{*} = \tilde{B}$) |
+| $\tilde u_{\mathrm r}(\theta,\vec u)$, $\tilde U_{\mathrm b}(s,\vec u)$ | Rotation rotor (real, $\tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{\natural}$) and boost rotor (Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$) |
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Covering homomorphism, kernel $\{\pm e_t\}$ |
 | $c$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$ |
 | $ict$, $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; $ct'$, $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | Material coordinate; informational coordinate |

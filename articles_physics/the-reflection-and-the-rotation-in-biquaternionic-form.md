@@ -232,7 +232,7 @@ Geometrically the criterion is that **$\tilde{U}$ fixes a two-dimensional subspa
 The factorisations are explicit. A boost is
 
 $$
-\tilde{U}_{\text{boost}} = \gamma^0 \cdot v, \qquad v = \gamma^0\tilde{U}_{\text{boost}} ,
+\tilde U_{\mathrm b} = \gamma^0 \cdot v, \qquad v = \gamma^0\tilde U_{\mathrm b} ,
 $$
 
 where $v$ is the **boosted time axis**: the boost is the reflection in the resting time axis composed with the reflection in the moving one. A spatial rotation in the coordinate plane spanned by $\gamma^j$ and $\gamma^k$ is $\gamma^j\cdot v$ with $v$ a unit vector in that plane,

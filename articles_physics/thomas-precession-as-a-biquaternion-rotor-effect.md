@@ -16,7 +16,7 @@ The purpose of this article is to exhibit the Thomas precession as what it algeb
 
 The first step is that the transformation that carries the laboratory to the instantaneous rest frame of a particle is a **unit-norm biquaternion** $\tilde U_{\vec v}$, and for a pure boost it is Hermitian and lies in the informational sector $\mathbb{M}_+$. A single boost therefore contains no rotation: it is a boost, and a boost is not a rotation.
 
-The second step is that the composition of two boosts is **not** a boost. The product $\tilde U_{1}\tilde U_{2}$ of two boost rotors is a unit-norm biquaternion, so it admits the **polar decomposition** $\tilde U_{1}\tilde U_{2}=\tilde{B}\tilde{u}$ into a pure boost $\tilde{B}$ and a rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, and the rotation factor is present whenever the two boost directions are not collinear. The rotation is the **Thomas–Wigner rotation**, its exact angle is a rational function of the two rapidities and the angle between the directions, and it is the algebraic expression of the fact that the boosts do not form a subgroup.
+The second step is that the composition of two boosts is **not** a boost. The product $\tilde U_{1}\tilde U_{2}$ of two boost rotors is a unit-norm biquaternion, so it admits the **polar decomposition** $\tilde U_{1}\tilde U_{2}=\tilde U_{\mathrm b}\tilde{u}$ into a pure boost $\tilde U_{\mathrm b}$ and a rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, and the rotation factor is present whenever the two boost directions are not collinear. The rotation is the **Thomas–Wigner rotation**, its exact angle is a rational function of the two rapidities and the angle between the directions, and it is the algebraic expression of the fact that the boosts do not form a subgroup.
 
 The third step is to **take the continuous limit**. The rest frames at two laboratory times $t$ and $t+dt$ are related by the interval rotor $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose rotation factor is the Thomas–Wigner rotation of the interval. Expanding the exact product to first order in $dt$ gives $\vec\omega_T$, with the axis $\vec u_{\vec a\times\vec v}$ and the coefficient $\gamma^{2}/(\gamma+1)$; the "Thomas half" is the value of that coefficient at $\gamma=1$. The whole of the Thomas precession is thus the linearization of a quaternion product.
 
@@ -70,9 +70,9 @@ $$
 be two boost rotors. Because the product of two unit-norm biquaternions is unit-norm, the product $\tilde U_{1}\tilde U_{2}$ is a unit-norm biquaternion, and it admits the **polar decomposition**
 
 $$
-\tilde U_{1}\tilde U_{2}=\tilde{B}\,\tilde{u},
+\tilde U_{1}\tilde U_{2}=\tilde U_{\mathrm b}\,\tilde{u},
 \qquad
-\tilde{B}\in\mathbb{M}_+ \ \text{a pure boost},
+\tilde U_{\mathrm b}\in\mathbb{M}_+ \ \text{a pure boost},
 \qquad
 \tilde{u}\in\mathbb{H}_{\mathbb{B}}\ \text{a rotation}.
 $$
@@ -115,9 +115,9 @@ $$
 so $\tilde{M}$ is the transformation between the two rest frames. It is unit-norm, and its polar decomposition
 
 $$
-\tilde{M}=\tilde{B}\,\tilde{u},
+\tilde{M}=\tilde U_{\mathrm b}\,\tilde{u},
 \qquad
-\tilde{B}\in\mathbb{M}_+,
+\tilde U_{\mathrm b}\in\mathbb{M}_+,
 \qquad
 \tilde{u}\in\mathbb{H}_{\mathbb{B}},
 $$
@@ -178,7 +178,7 @@ The factor $\tfrac12$ is not inserted by hand: it is the limit of $\gamma^{2}/(\
 
 Only the **transverse** acceleration precesses the frame. Since $\vec a\times\vec v=\vec a_\perp\times\vec v$, a purely longitudinal acceleration gives $\vec\omega_T=0$: it changes the rapidity but not the direction of the velocity, and a boost along the instantaneous direction generates no rotation. This is the first sign that a collinear configuration cannot test the direction of $\vec\omega_T$.
 
-The interval rotor $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U^{\natural}_{\vec v}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_\mu)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde{M}=\tilde{B}\tilde{u}$, $\tilde{B}=\sqrt{\tilde{M}\tilde{M}^{*}}$, $\tilde{u}=\tilde{B}^{-1}\tilde{M}$, is carried out at $dt=10^{-5}$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dt$ in both magnitude and direction to better than $10^{-10}$ in units $c=1$; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
+The interval rotor $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U^{\natural}_{\vec v}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_\mu)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde{M}=\tilde U_{\mathrm b}\tilde{u}$, $\tilde U_{\mathrm b}=\sqrt{\tilde{M}\tilde{M}^{*}}$, $\tilde{u}=\tilde U_{\mathrm b}^{-1}\tilde{M}$, is carried out at $dt=10^{-5}$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dt$ in both magnitude and direction to better than $10^{-10}$ in units $c=1$; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
 
 ## The Thomas Rotor
 
@@ -269,7 +269,7 @@ It is useful to separate the algebraic content of the derivation from the standa
 **Supplied by the algebra.**
 
 - The boost rotor is a Hermitian unit-norm biquaternion in $\mathbb{M}_+$, and a **single** boost contains no rotation; the rotation is created by composition.
-- The product of two boost rotors admits a unique polar decomposition $\tilde{B}\tilde{u}$ into a pure boost and a rotation of $\mathbb{H}_{\mathbb{B}}$, and the rotation factor is the Wigner rotation.
+- The product of two boost rotors admits a unique polar decomposition $\tilde U_{\mathrm b}\tilde{u}$ into a pure boost and a rotation of $\mathbb{H}_{\mathbb{B}}$, and the rotation factor is the Wigner rotation.
 - The exact Wigner angle and its axis follow from the quaternion product with $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ and $\vec e_\mu^{2}=-e_t$, without any matrix or tensor apparatus; the whole of the Thomas precession is the first-order term of that product.
 - The interval rotor $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U^{\natural}_{\vec v}$ is the rotor between neighbouring rest frames, and its rotation factor is the Thomas–Wigner rotor.
 - The half-angle rotor $\tilde{u}_T$ that carries the frame, and its double-valued sign, are the same rotor that acts one-sidedly on the spinor module.
@@ -307,7 +307,7 @@ $$
 \tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*}=ic\,e_t ,
 $$
 
-and a single boost contains no rotation. The composition of two non-collinear boosts is a unit-norm biquaternion with polar decomposition $\tilde U_1\tilde U_2=\tilde{B}\tilde{u}$, and the rotation factor $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ is the Thomas–Wigner rotation, of exact angle
+and a single boost contains no rotation. The composition of two non-collinear boosts is a unit-norm biquaternion with polar decomposition $\tilde U_1\tilde U_2=\tilde U_{\mathrm b}\tilde{u}$, and the rotation factor $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ is the Thomas–Wigner rotation, of exact angle
 
 $$
 \tan\frac{\omega}{2}
@@ -318,7 +318,7 @@ $$
 about the normal to the plane of the two boost directions. The rest frames at two neighbouring laboratory times are related by the interval rotor
 
 $$
-\tilde{M}=\tilde U_{\vec v+d\vec v}\,\tilde U^{\natural}_{\vec v}=\tilde{B}\tilde{u},
+\tilde{M}=\tilde U_{\vec v+d\vec v}\,\tilde U^{\natural}_{\vec v}=\tilde U_{\mathrm b}\tilde{u},
 \qquad
 d\vec v=\vec a\,dt,
 $$
@@ -352,7 +352,7 @@ along $\vec a\times\vec v$, with only the transverse acceleration contributing. 
 | $\psi$, $\tanh\psi=v/c$ | Rapidity |
 | $\tilde U_{\vec v_b}=\cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$ | Boost rotor, Hermitian, in $\mathbb{M}_+$ |
 | $\tilde U_{\vec v}$ | Lab-to-rest rotor, $\tilde U_{\vec v}\tilde{V}\tilde U_{\vec v}^{*}=ic\,e_t$ |
-| $\tilde U_1\tilde U_2=\tilde{B}\tilde{u}$ | Polar decomposition of a composition of boosts |
+| $\tilde U_1\tilde U_2=\tilde U_{\mathrm b}\tilde{u}$ | Polar decomposition of a composition of boosts |
 | $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ | Thomas–Wigner rotation (unit real quaternion) |
 | $\varphi$, $\theta_W$, $\omega$ | Angle between boost directions; Wigner angle |
 | $\vec a=d\vec v/dt$, $\vec a_\perp$ | Laboratory acceleration; its part perpendicular to $\vec v$ |

@@ -261,15 +261,15 @@ $$
 $$
 and the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. The four-momentum is the material element $\tilde{P} = m\tilde{V}\in\mathbb{M}_-$, with $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$; it is not an observable but the frame datum that labels which little-group qubit is in question.
 
-**Generators.** The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements,
+**Generators.** The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements, the pure vectors
 $$
-\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0},
+\tfrac12 \vec e_k\in\mathbb{M}_-^{0},
 $$
-and the boost generators are the traceless Hermitian ones,
+and the boost generators are the traceless Hermitian ones, the pure elements
 $$
-\tilde{K}_{\mathrm{boost},k} = \tfrac12\,i \vec e_k\in\mathbb{M}_+^{0},
+\tfrac12 i \vec e_k\in\mathbb{M}_+^{0},
 $$
-and $[\tilde{K}_{\mathrm{boost},j},\tilde{K}_{\mathrm{boost},k}] = -\epsilon_{jkl}\tilde{J}_l$: the commutator of two boosts is a rotation. The relativistic qubit's *observables* are the Hermitian elements of $\mathbb{M}_+$ and its *frame generators* are the Hermitian traceless elements of the same sector, while its *rotations* — the compact operations and the material generators — lie in $\mathbb{M}_-$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.
+and $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$: the commutator of two boosts is a rotation. The relativistic qubit's *observables* are the Hermitian elements of $\mathbb{M}_+$ and its *frame generators* are the Hermitian traceless elements of the same sector, while its *rotations* — the compact operations and the material generators — lie in $\mathbb{M}_-$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.
 
 ## Summary
 
@@ -307,8 +307,8 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $\tilde U_{\tilde{V}}$ | Standard boost carrying $\tilde{V}$ to rest |
 | $\tilde{W}(\tilde U,\tilde{V}) = \tilde U_{\tilde{V}'}\tilde U\tilde U_{\tilde{V}}^{-1}$ | Wigner rotation, $\in SU(2)$ |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin operators |
-| $\tilde{J}_k = \tfrac12 \vec e_k\in\mathbb{M}_-^{0}$ | Rotation generators (material, compact) |
-| $\tilde{K}_{\mathrm{boost},k} = \tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$ | Boost generators (informational) |
+| $\tfrac12\vec e_k\in\mathbb{M}_-^{0}$ | Rotation generators (pure elements, material, compact) |
+| $\tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$ | Boost generators (pure elements, informational) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

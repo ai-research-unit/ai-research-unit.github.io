@@ -82,7 +82,7 @@ $$
 
 The norm is the form at the two equal arguments, $\langle\tilde Q_1\rangle_{*}=\mathrm{Form}(\tilde Q_1,\tilde Q_1)=\mathrm{Sc}(\tilde Q_1\tilde Q_1^{*})=|Q_{1t}|^{2}+|\vec Q_1|^{2}$, definite.
 
-**The zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$.** The definite norm $\langle\cdot\rangle_{*}$ vanishes at the origin alone and cuts no cone. Put $\tilde Q_2=\tilde Y^{*}$; then $\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\tilde Y$ is the plain product, whose form is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Y)$ and whose scalar at the two equal arguments is the reduced norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$, since $\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\tilde Q_1^{\natural}=\mathrm{Norm}(\tilde Q_1)e_t=0$ on the cone.
+**The zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$.** The definite norm $\langle\cdot\rangle_{*}$ vanishes at the origin alone and cuts no cone. Then $\tilde Q_1\tilde Q_2^{*}$ is the plain product, whose form is $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ and whose scalar at the two equal arguments is the reduced norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$, since $\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\tilde Q_1^{\natural}=\mathrm{Norm}(\tilde Q_1)e_t=0$ on the cone.
 
 The element $e_t$ is a right unit alone, $e_t\star\tilde Q_2=\tilde Q_2^{*}$, and an element off the cone has the two-sided solution $(\tilde Q_1^{-1})^{*}$ of the inverse equations; the invertible elements are the complement of the cone and, the product being non-associative, they form no group.
 
@@ -110,7 +110,7 @@ $$
 
 The norm is the form at the two equal arguments, $\langle\tilde Q_1\rangle_{\natural*}=\mathrm{Form}(\tilde Q_1,\tilde Q_1)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_1^{*})=|Q_{1t}|^{2}-|\vec Q_1|^{2}$, indefinite.
 
-**The zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$.** The indefinite norm $\langle\cdot\rangle_{\natural*}$ vanishes on a real cone of its own, distinct from $\mathcal{C}$. Put $\tilde Q_2=\tilde Y^{*}$; then $\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1^{\natural}\tilde Y$ is the plain product of $\tilde Q_1^{\natural}$, whose form is $\mathrm{Sc}(\tilde Q_1\tilde Y)$ and whose scalar at the two equal arguments is $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$.
+**The zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$.** The indefinite norm $\langle\cdot\rangle_{\natural*}$ vanishes on a real cone of its own, distinct from $\mathcal{C}$. Then $\tilde Q_1^{\natural}\tilde Q_2^{*}$ is the plain product of $\tilde Q_1^{\natural}$, whose form is $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and whose scalar at the two equal arguments is $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde Q_1)=0$, the witness is $\tilde Q_2=(\tilde Q_1^{\natural})^{*}$.
 
 There is no unit on either side, and an element off the cone has the two-sided solution $(\tilde Q_1^{-1})^{\natural*}$ of the inverse equations; the elements off the cone satisfy both inverse equations, but they form no group, and the structure carries no unit.
 
@@ -174,10 +174,10 @@ $$
 
 The norm is the form at the two equal arguments, $\langle\tilde Q_1\rangle_{\natural*}=\mathrm{Form}(\tilde Q_1,\tilde Q_1)=|Q_{1t}|^{2}-|\vec Q_1|^{2}$, indefinite.
 
-**The zero-divisor set is the enlarged set $\left(\{Q_{1t}=0\}\cup\mathcal{C}\right)\setminus\{0\}$.** Put $\tilde Y=\tilde Q_2^{*}$; the two conjugations commute and the product becomes the Jordan product of $\tilde Q_1^{\natural}$ with $\tilde Y$,
+**The zero-divisor set is the enlarged set $\left(\{Q_{1t}=0\}\cup\mathcal{C}\right)\setminus\{0\}$.** The two conjugations commute and the product becomes the Jordan product of $\tilde Q_1^{\natural}$ with $\tilde Q_2^{*}$,
 
 $$
-\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})=\tfrac12(\tilde Q_1^{\natural}\tilde Y+\tilde Y\tilde Q_1^{\natural}).
+\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})=\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}).
 $$
 
 By §*The Symmetric Plain Algebra (SPA)* the criterion is read on $\tilde Q_1^{\natural}$: the natural conjugation leaves $Q_{1t}$ unchanged and $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$, so the condition is $Q_{1t}=0$ or $Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}=0$, (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*).

@@ -30,7 +30,7 @@ $$
 
 **(b)** Show that $\tilde{M}$ is a unit-norm biquaternion and admits the polar decomposition
 $$
-\tilde{M}=\tilde{B}\tilde{u},\qquad \tilde{B}\in\mathbb{M}_+\ \text{a pure boost},\qquad \tilde{u}\in\mathbb{H}_{\mathbb{B}}\ \text{a rotation},
+\tilde{M}=\tilde U_{\mathrm b}\tilde{u},\qquad \tilde U_{\mathrm b}\in\mathbb{M}_+\ \text{a pure boost},\qquad \tilde{u}\in\mathbb{H}_{\mathbb{B}}\ \text{a rotation},
 \tag{2}
 $$
 and identify $\tilde{u}$ as the Thomas–Wigner rotation of the interval $dt$.
@@ -50,7 +50,7 @@ $$
 $$
 which is (1). The direction matters: $\tilde U_{\vec v}^{-1}=\tilde U^{\natural}_{\vec v}=\tilde U_{-\vec v}$ is the inverse boost, not the same boost.
 
-**(b)** The product of two unit-norm biquaternions is unit-norm, so $\langle\tilde{M}\rangle_{\natural}=e_t$. The parent's polar decomposition theorem gives the unique Cartan form $\tilde{M}=\tilde{B}\tilde{u}$ with $\tilde{B}$ a boost of positive-definite matrix image and $\tilde{u}$ a unit real quaternion, i.e. a spatial rotation. The factor $\tilde{u}$ is the rotation of the rest frame at $t+dt$ relative to the rest frame at $t$; it is the **Thomas–Wigner rotation** of the interval. It is a rotation and not a boost because the transformation between two frames with the same four-velocity direction of motion but different orientation is a rotation of their spatial triads.
+**(b)** The product of two unit-norm biquaternions is unit-norm, so $\langle\tilde{M}\rangle_{\natural}=e_t$. The parent's polar decomposition theorem gives the unique Cartan form $\tilde{M}=\tilde U_{\mathrm b}\tilde{u}$ with $\tilde U_{\mathrm b}$ a boost of positive-definite matrix image and $\tilde{u}$ a unit real quaternion, i.e. a spatial rotation. The factor $\tilde{u}$ is the rotation of the rest frame at $t+dt$ relative to the rest frame at $t$; it is the **Thomas–Wigner rotation** of the interval. It is a rotation and not a boost because the transformation between two frames with the same four-velocity direction of motion but different orientation is a rotation of their spatial triads.
 
 **(c)** Write (1) as a product in the order written, $\tilde{M}=\tilde U_1\tilde U_2$, with $\tilde U_1=\tilde U_{\vec v+d\vec v}$ the first factor and $\tilde U_2=\tilde U^{\natural}_{\vec v}=\tilde U_{-\vec v}$ the second. Let $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$ be their directions and $\psi_1,\psi_2$ their rapidities, $\tanh\psi_1=|\vec v+d\vec v|/c$, $\tanh\psi_2=v/c$. The parent's boxed result for the product $\tilde U_1\tilde U_2$ of two boost rotors then applies with the rotation angle $\theta_W$ of $\tilde{u}$ given by
 $$
@@ -215,7 +215,7 @@ The parent's formula (4) evaluated on the same step gives $\theta_W/dt=0.4166666
 
 The rotor *direction* is a separate question, and it is settled by the same computation. If $\tilde U_{\vec v}$ is read as the rest-to-lab rotor, the lab-to-rest rotor is $\tilde U_{\vec v}^{-1}$, and the interval rotor built from it is $\tilde{M}'=\tilde U_{\vec v+d\vec v}^{-1}\tilde U_{\vec v}$, which inverts each factor of $\tilde{M}$ while keeping the order. To first order in $dt$ its rotation vector is the *same* as that of $\tilde{M}$, not the opposite one: inverting both factors together changes the boost part but not the first-order rotation. So the unstated direction of the parent's rotor, applied consistently, does not by itself flip the sign; the sign is fixed by the order of composition. That the sign is nevertheless delicate is why (5) is stated with its axis and not with its magnitude alone.
 
-**(d)** *Numerical verification.* The biquaternion product (1) was formed directly, and $\tilde{u}$ extracted by polar decomposition $\tilde{M}=\tilde{B}\tilde{u}$, $\tilde{B}=\sqrt{\tilde{M}\tilde{M}^{*}}$, $\tilde{u}=\tilde{B}^{-1}\tilde{M}$, with $\tilde{u}$ a unit real quaternion and $\theta_W$ read from $\mathrm{Sc}(\tilde{u})=\cos(\theta_W/2)$. On randomly generated non-collinear pairs $(\vec v,\vec a)$, restricted to $|\vec v|<c$, the computed rotation vector agreed with (5) to better than $10^{-10}$ in units $c=1$, in both magnitude and direction. The special case $\vec v=0.6c\,\vec e_x$, $\vec a\perp\vec v$ reproduced $0.41666667$ as above. The reverse-order rotor $\tilde{M}_{\mathrm{rev}}$ reproduced the same magnitude with the opposite axis, while the consistently inverted reading $\tilde{M}'$ reproduced the same axis as (5), both to the same precision.
+**(d)** *Numerical verification.* The biquaternion product (1) was formed directly, and $\tilde{u}$ extracted by polar decomposition $\tilde{M}=\tilde U_{\mathrm b}\tilde{u}$, $\tilde U_{\mathrm b}=\sqrt{\tilde{M}\tilde{M}^{*}}$, $\tilde{u}=\tilde U_{\mathrm b}^{-1}\tilde{M}$, with $\tilde{u}$ a unit real quaternion and $\theta_W$ read from $\mathrm{Sc}(\tilde{u})=\cos(\theta_W/2)$. On randomly generated non-collinear pairs $(\vec v,\vec a)$, restricted to $|\vec v|<c$, the computed rotation vector agreed with (5) to better than $10^{-10}$ in units $c=1$, in both magnitude and direction. The special case $\vec v=0.6c\,\vec e_x$, $\vec a\perp\vec v$ reproduced $0.41666667$ as above. The reverse-order rotor $\tilde{M}_{\mathrm{rev}}$ reproduced the same magnitude with the opposite axis, while the consistently inverted reading $\tilde{M}'$ reproduced the same axis as (5), both to the same precision.
 
 ## Problem 4: Uniform Circular Motion, the Retrograde Rotation, and the Thomas Half
 
@@ -270,7 +270,7 @@ i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\app
 
 We have taken the discrete Thomas–Wigner rotation of the parent articles to its continuous limit.
 
-1. **The interval rotor.** The rest frame at lab time $t+dt$ is obtained from the rest frame at $t$ by the unit-norm rotor $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose polar decomposition $\tilde{M}=\tilde{B}\tilde{u}$ separates a pure boost $\tilde{B}\in\mathbb{M}_+$ from the Thomas–Wigner rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ of the interval.
+1. **The interval rotor.** The rest frame at lab time $t+dt$ is obtained from the rest frame at $t$ by the unit-norm rotor $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose polar decomposition $\tilde{M}=\tilde U_{\mathrm b}\tilde{u}$ separates a pure boost $\tilde U_{\mathrm b}\in\mathbb{M}_+$ from the Thomas–Wigner rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$ of the interval.
 
 2. **The rate.** Expanding the parent's Wigner-angle formula to first order in $dt$ gives the Thomas precession
 $$
@@ -304,7 +304,7 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | $\tilde U_{\vec v}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_v$ | Lab-to-rest boost rotor, Hermitian, in $\mathbb{M}_+$ |
 | $\vec a=d\vec v/dt$, $\vec a_\perp$ | Lab acceleration; its part perpendicular to $\vec v$ |
 | $\tilde{M}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$ | Rotor between neighbouring rest frames |
-| $\tilde{B}$, $\tilde{u}$ | Boost and rotation factors of $\tilde{M}=\tilde{B}\tilde{u}$ |
+| $\tilde U_{\mathrm b}$, $\tilde{u}$ | Boost and rotation factors of $\tilde{M}=\tilde U_{\mathrm b}\tilde{u}$ |
 | $\theta_W$ | Thomas–Wigner rotation angle of the interval |
 | $\vec\omega_T$ | Thomas precession angular velocity |
 | $\vec\Omega=\Omega\,\vec e_z$ | Orbital angular velocity (circular motion) |

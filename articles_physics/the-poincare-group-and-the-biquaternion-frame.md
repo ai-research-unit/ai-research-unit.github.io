@@ -33,7 +33,7 @@ and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point s
 
 ## The Homogeneous Part, Recalled
 
-Rotor conjugation restricted to $\mathbb{M}_-$ is linear in $\tilde{Q}$, it preserves the subspace $\mathbb{M}_-$, and it preserves the biquaternion norm, $\tilde{Q}'\tilde{Q}'^{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; it is an inner automorphism of $\mathbb{B}$ in the unitary sector, where $\tilde u^{*}=\tilde u^{-1}$ and the map is conjugation, but a boost rotor is Hermitian, $\tilde{B}^{*}=\tilde{B}$, and acts by the twisted map $\tilde{Q}\mapsto\tilde{B}\tilde{Q}\tilde{B}$, which is linear but not multiplicative and so is not an algebra automorphism. The map
+Rotor conjugation restricted to $\mathbb{M}_-$ is linear in $\tilde{Q}$, it preserves the subspace $\mathbb{M}_-$, and it preserves the biquaternion norm, $\tilde{Q}'\tilde{Q}'^{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; it is an inner automorphism of $\mathbb{B}$ in the unitary sector, where $\tilde u^{*}=\tilde u^{-1}$ and the map is conjugation, but a boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and acts by the twisted map $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$, which is linear but not multiplicative and so is not an algebra automorphism. The map
 $$
 \mathrm{Ad}:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
 \mathrm{Ad}(\tilde U):\ \tilde{Q}\longmapsto\tilde U\tilde{Q}\tilde U^{*}
@@ -46,13 +46,13 @@ is what makes the product of rotors compose Lorentz transformations, and it is t
 
 Three families of rotors are distinguished by the subspace they occupy. A pure boost along the unit direction $\vec u_{\mathrm b}\in\mathbb{H}_{\mathbb{B}}$ with rapidity $\psi$,
 $$
-\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
+\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
 $$
 is Hermitian, hence lies in $\mathbb{M}_+$, and is unit-norm. A pure spatial rotation about $\vec u_{\mathrm r}\in\mathbb{H}_{\mathbb{B}}$ by angle $\theta$,
 $$
 \tilde u=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r},
 $$
-is a unit real quaternion, lying in $\mathbb{H}_{\mathbb{B}}$. A general rotor has the Cartan decomposition $\tilde U=\tilde{B}\tilde u$ into a boost and a rotation. The boosts are closed under inverse but not under multiplication: the product of two non-collinear boosts is a boost times a rotation, the Thomas–Wigner rotation, whose angle and axis are derived in the parent article. What matters here is only that all of these transformations are algebraic in the rotor and linear in the four-vector they act on.
+is a unit real quaternion, lying in $\mathbb{H}_{\mathbb{B}}$. A general rotor has the Cartan decomposition $\tilde U=\tilde U_{\mathrm b}\tilde u$ into a boost and a rotation. The boosts are closed under inverse but not under multiplication: the product of two non-collinear boosts is a boost times a rotation, the Thomas–Wigner rotation, whose angle and axis are derived in the parent article. What matters here is only that all of these transformations are algebraic in the rotor and linear in the four-vector they act on.
 
 ## Pairs and the Group Law
 
@@ -131,19 +131,19 @@ $$
 \qquad
 (e_t,\tilde{R}_0)\circ(\tilde U,0)=(\tilde U,\tilde{R}_0),
 $$
-and these agree only when $\tilde{R}_0$ is fixed by $\mathrm{Ad}(\tilde U)$. Equivalently, the commutator of a pure Lorentz transformation with a pure translation is the pure translation by $\mathrm{Ad}(\tilde U)\tilde{R}_0-\tilde{R}_0$. For a boost and a displacement transverse to it this is nonzero whenever the displacement has a time component; for the boost $\tilde{B}$ along $\vec e_x$ with rapidity $\psi=0.9$ used below, a displacement $\tilde{R}_0=0.4\,ie_t+0.25\vec e_x-0.35\vec e_y+0.15\vec e_z$ gives $\mathrm{Ad}(\tilde{B})\tilde{R}_0-\tilde{R}_0=-0.0834\,ie_t-0.3023\,\vec e_x$. The nonvanishing of this commutator is the group-theoretic content of the statement that translations are not merely added: a change of frame drags the origin with it.
+and these agree only when $\tilde{R}_0$ is fixed by $\mathrm{Ad}(\tilde U)$. Equivalently, the commutator of a pure Lorentz transformation with a pure translation is the pure translation by $\mathrm{Ad}(\tilde U)\tilde{R}_0-\tilde{R}_0$. For a boost and a displacement transverse to it this is nonzero whenever the displacement has a time component; for the boost $\tilde U_{\mathrm b}$ along $\vec e_x$ with rapidity $\psi=0.9$ used below, a displacement $\tilde{R}_0=0.4\,ie_t+0.25\vec e_x-0.35\vec e_y+0.15\vec e_z$ gives $\mathrm{Ad}(\tilde U_{\mathrm b})\tilde{R}_0-\tilde{R}_0=-0.0834\,ie_t-0.3023\,\vec e_x$. The nonvanishing of this commutator is the group-theoretic content of the statement that translations are not merely added: a change of frame drags the origin with it.
 
 ## A Composition Checked Directly
 
 The group law is verified here on a case chosen for the check, not on a case from which the law was read off. Take $c=1$ and the two transformations
 $$
-g_1=(\tilde u,\tilde{R}_{0,1}),\qquad g_2=(\tilde{B},\tilde{R}_{0,2}),
+g_1=(\tilde u,\tilde{R}_{0,1}),\qquad g_2=(\tilde U_{\mathrm b},\tilde{R}_{0,2}),
 $$
 with
 $$
 \tilde u=\cos(0.4)+\sin(0.4)\,\vec e_z,
 \qquad
-\tilde{B}=\cosh(0.45)+i\sinh(0.45)\,\vec e_x,
+\tilde U_{\mathrm b}=\cosh(0.45)+i\sinh(0.45)\,\vec e_x,
 $$
 a rotation about $\vec e_z$ by $\theta=0.8$ and a boost along $\vec e_x$ by rapidity $\psi=0.9$, and with displacements
 $$
@@ -152,18 +152,18 @@ $$
 $$
 Thus $g_1$ is a rotation combined with a translation and $g_2$ is a boost combined with a translation in an independent spatial direction.
 
-The composed law predicts the pair $g_2\circ g_1=(\tilde{B}\tilde u,\ \tilde{B}\tilde{R}_{0,1}\tilde{B}^{*}+\tilde{R}_{0,2})$ with
+The composed law predicts the pair $g_2\circ g_1=(\tilde U_{\mathrm b}\tilde u,\ \tilde U_{\mathrm b}\tilde{R}_{0,1}\tilde U_{\mathrm b}^{*}+\tilde{R}_{0,2})$ with
 $$
-\tilde{B}\tilde u=1.0159+0.4286\,i\vec e_x-0.1812\,i\vec e_y+0.4295\,\vec e_z,
+\tilde U_{\mathrm b}\tilde u=1.0159+0.4286\,i\vec e_x-0.1812\,i\vec e_y+0.4295\,\vec e_z,
 $$
 $$
-\tilde{B}\tilde{R}_{0,1}\tilde{B}^{*}+\tilde{R}_{0,2}=-0.3020\,ie_t+0.4899\,\vec e_x+0.6000\,\vec e_y .
+\tilde U_{\mathrm b}\tilde{R}_{0,1}\tilde U_{\mathrm b}^{*}+\tilde{R}_{0,2}=-0.3020\,ie_t+0.4899\,\vec e_x+0.6000\,\vec e_y .
 $$
 Applying the two maps in turn to $\tilde{Q}=0.2\,ie_t+0.3\,\vec e_x+0.4\,\vec e_y+0.5\,\vec e_z$, and the composed map to the same point, gives identical results. Two features make the structure visible.
 
 First, the boost acting on the displacement has changed both its time component and its spatial component: the pair $(0.5i,\,0.7,\,0,\,0)$ has become $(-0.0020i,\,0.4899,\,0,\,0)$. A shift of origin is itself a four-vector, and its components mix under a boost; this is the relativity of simultaneity appearing as a statement about the composition of frame transformations. The second displacement $\tilde{R}_{0,2}$ is simply added afterwards, as the law requires.
 
-Second, the rotor of the composite is not symmetric in the two factors. Reversing the order gives $\tilde u\tilde{B}=1.0159+0.4286\,i\vec e_x+0.1812\,i\vec e_y+0.4295\,\vec e_z$: the same angle, but the opposite sign on the $i\vec e_y$ term. This is the Thomas–Wigner rotation of the parent article, entering here through the sign of one component of the composite rotor. The group law reproduces it without being told to.
+Second, the rotor of the composite is not symmetric in the two factors. Reversing the order gives $\tilde u\tilde U_{\mathrm b}=1.0159+0.4286\,i\vec e_x+0.1812\,i\vec e_y+0.4295\,\vec e_z$: the same angle, but the opposite sign on the $i\vec e_y$ term. This is the Thomas–Wigner rotation of the parent article, entering here through the sign of one component of the composite rotor. The group law reproduces it without being told to.
 
 ## The Frame Reading
 
@@ -197,7 +197,7 @@ The honest summary is that the biquaternion frame answers the homogeneous questi
 
 ## Covariance of the Biwave Equation
 
-The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of *spacetime* rather than equations in a preferred frame. The equation to state it for is the first-order **biwave equation** $\tilde{\nabla}\tilde{K}_{\mathrm{bip}} = \tilde{G}$, the corpus gradient acting on a biquaternion field $\tilde K_{\mathrm{bip}}$, with a source $\tilde G$; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.
+The frame's action on the algebra extends to the operators built from it, and it yields one theorem worth isolating, because it is what makes the differential equations of the series equations of *spacetime* rather than equations in a preferred frame. The equation to state it for is the first-order **biwave equation** $\tilde{\nabla}\tilde\Phi = \tilde{G}$, the corpus gradient acting on a biquaternion field $\tilde\Phi$, with a source $\tilde G$; the second-order $\Box$ and the $\kappa$-shifted operators of the companion d'Alembertian article inherit the statement, being built from the same gradient.
 
 **The conjugated gradient is the gradient in the rotated basis.** The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ of the section *The Frame Reading*, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
 $$
@@ -205,9 +205,9 @@ $$
 $$
 Conjugation by a constant rotor is an algebra automorphism and it commutes with the constant-coefficient derivatives, so for the field transformed with the basis,
 $$
-\tilde{\nabla}'\left(\tilde U\tilde{K}_{\mathrm{bip}}\tilde U^{*}\right) = \tilde U\left(\tilde{\nabla}\tilde{K}_{\mathrm{bip}}\right)\tilde U^{*} ,
+\tilde{\nabla}'\left(\tilde U\tilde\Phi\tilde U^{*}\right) = \tilde U\left(\tilde{\nabla}\tilde\Phi\right)\tilde U^{*} ,
 $$
-which was checked on random rotors and random $\tilde{K}_{\mathrm{bip}}$. The equation $\tilde{\nabla}\tilde{K}_{\mathrm{bip}} = \tilde{G}$ therefore maps to $\tilde{\nabla}'\tilde{K}_{\mathrm{bip}}' = \tilde{G}'$ with $\tilde{K}_{\mathrm{bip}}' = \tilde U\tilde{K}_{\mathrm{bip}}\tilde U^{*}$ and $\tilde{G}' = \tilde U\tilde{G}\tilde U^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
+which was checked on random rotors and random $\tilde\Phi$. The equation $\tilde{\nabla}\tilde\Phi = \tilde{G}$ therefore maps to $\tilde{\nabla}'\tilde\Phi' = \tilde{G}'$ with $\tilde\Phi' = \tilde U\tilde\Phi\tilde U^{*}$ and $\tilde{G}' = \tilde U\tilde{G}\tilde U^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
 
 **Why it is a theorem and not a tautology.** Three facts carry the statement. The rotated elements $\tilde Ue_\mu\tilde U^{-1}$ are again a basis with the same multiplication table, so the rotated equation is an equation of the same kind and not a different one; the map $\tilde U\mapsto\mathrm{Ad}$ is the two-to-one cover onto $SO^+(1,3)$ of the section *The Homogeneous Part, Recalled*, so the basis rotation is a Lorentz transformation of the frame; and a central shift or a central second-order factor is carried along unchanged, so the shift of the companion d'Alembertian article adds nothing to the argument. The translation completes it rather than complicating it: translations act additively on the argument, and an operator with constant coefficients is unchanged by a shift of its argument, so the full Poincaré statement is the semidirect extension of the homogeneous one — which is the source's Theorem 4.1 read in the corpus frame.
 
@@ -242,7 +242,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\tilde U\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
-| $\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
+| $\tilde U_{\mathrm b}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde u=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion) |
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\tilde U=\sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$ | Four-velocity and its frame rotor |
 | $\tilde{R}_0\in\mathbb{M}_-$ | Translation (displacement) |
@@ -252,7 +252,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (informational sector) |
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ | Biquaternionic gradient (material four-vector of operators) |
 | $\tilde{\nabla}' = \sum_\mu(\tilde Ue_\mu\tilde U^{-1})\partial_\mu$ | Conjugated gradient, the gradient in the rotated basis |
-| $\tilde{\nabla}\tilde{K}_{\mathrm{bip}} = \tilde{G}$ | Biwave equation; form-invariant under the rotor action |
+| $\tilde{\nabla}\tilde\Phi = \tilde{G}$ | Biwave equation; form-invariant under the rotor action |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
