@@ -73,15 +73,15 @@
 $$</p>
 <p>are Hermitian, and $[\tilde{Q},\tilde P]=i e_t$. The energy is $\tilde H=\omega(a^\dagger a+\tfrac12)$; the (shifted) number operator $a^\dagger a+\tfrac12$ counts the excitations. The quadratic combinations</p>
 <p>$$
-\tilde K_1=\tfrac12(\tilde{Q}^2-\tilde P^2),\qquad
-\tilde K_2=\tfrac12(\tilde{Q}\tilde P+\tilde P\tilde{Q}),\qquad
-\tilde K_3=a^\dagger a+\tfrac12
+\tilde{K}_{\mathrm{osc},1}=\tfrac12(\tilde{Q}^2-\tilde P^2),\qquad
+\tilde{K}_{\mathrm{osc},2}=\tfrac12(\tilde{Q}\tilde P+\tilde P\tilde{Q}),\qquad
+\tilde{K}_{\mathrm{osc},3}=a^\dagger a+\tfrac12
 $$</p>
-<p>are the generators of the oscillator's dynamical algebra: $\tilde K_3$ generates the phase $\mathrm{U}(1)$, and $\tilde K_1,\tilde K_2$ generate the two squeezes. They close into an $su(1,1)$ algebra; the representative relation, which we use below, is</p>
+<p>are the generators of the oscillator's dynamical algebra: $\tilde{K}_{\mathrm{osc},3}$ generates the phase $\mathrm{U}(1)$, and $\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2}$ generate the two squeezes. They close into an $su(1,1)$ algebra; the representative relation, which we use below, is</p>
 <p>$$
-[\tilde K_1,\tilde K_2]=2i\,\tilde K_3 .
+[\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2}]=2i\,\tilde{K}_{\mathrm{osc},3} .
 $$</p>
-<p>Each $\tilde K_\nu$ is Hermitian; the bracket is $i$ times a Hermitian element, hence anti-Hermitian. This is the algebra whose placement in $\mathbb{B}$ we now examine.</p>
+<p>Each $\tilde{K}_{\mathrm{osc},\nu}$ is Hermitian; the bracket is $i$ times a Hermitian element, hence anti-Hermitian. This is the algebra whose placement in $\mathbb{B}$ we now examine.</p>
 <h2 id="the-two-sectors-are-not-the-two-quadratures">The Two Sectors Are Not the Two Quadratures</h2>
 <p>The claim to test begins from the observation that one complex degree of freedom is two real degrees of freedom. In $\mathbb{B}$ there is indeed a canonical decomposition of every element into two parts, and it is worth stating exactly what the two parts are.</p>
 <p>Every $\tilde Q_1\in\mathbb{B}$ decomposes uniquely as</p>
@@ -161,11 +161,11 @@ $$</p>
 <p>so the phase rotates the $\mathbb{M}_+$ quadrature $\tilde{Q}$ into the $\mathbb{M}_-$ content of the amplitude and back. The oscillator's phase is literally the rotation that mixes the two sectors. This is a genuine addition of the framework: the "complex structure" that gives the oscillator its complex amplitude is identified with the operation that exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and the oscillator's phase is the one-parameter group it generates.</p>
 <p>The connection to the dynamics is direct. The parent article's evolution $\tilde U(t)=\exp(-ih_0t/\hbar)(\cos(|\vec h|t/\hbar)e_t+\sin(|\vec h|t/\hbar)\vec u_h)$ carries the trace part $h_0$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\hbar\omega$, twice the zero-point energy $\tfrac12\hbar\omega$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.</p>
 <h2 id="squeezing-is-a-boost">Squeezing Is a Boost</h2>
-<p>The oscillator's squeezes are where the algebra adds the most. In the standard theory the quadratic generators $\tilde K_1,\tilde K_2,\tilde K_3$ close into $su(1,1)$ with a structure constant equal to $i$:</p>
+<p>The oscillator's squeezes are where the algebra adds the most. In the standard theory the quadratic generators $\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2},\tilde{K}_{\mathrm{osc},3}$ close into $su(1,1)$ with a structure constant equal to $i$:</p>
 <p>$$
-[\tilde K_1,\tilde K_2]=2i\,\tilde K_3 .
+[\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2}]=2i\,\tilde{K}_{\mathrm{osc},3} .
 $$</p>
-<p>Both $\tilde K_1$ and $\tilde K_2$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.</p>
+<p>Both $\tilde{K}_{\mathrm{osc},1}$ and $\tilde{K}_{\mathrm{osc},2}$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.</p>
 <p>The generator content is sharper still. A squeeze, $\tilde{Q}\mapsto\tilde{Q}\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde{Q}\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}\pm\tilde P$ by $\exp(\mp r)$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde U_{\mathrm b}=\cosh(\psi/2)\,e_t+i\sinh(\psi/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde{Q}_{4}=ict\,e_t+x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde{Q}_4\mapsto\tilde U_{\mathrm b}\tilde{Q}_4\tilde U_{\mathrm b}^{*}$; computing the result gives</p>
 <p>$$
 ct'=\cosh\psi\,ct-\sinh\psi\,x,\qquad x'=\cosh\psi\,x-\sinh\psi\,ct,
@@ -235,8 +235,8 @@ $$</p>
 <td>Number operator</td>
 </tr>
 <tr>
-<td>$\tilde K_1,\tilde K_2,\tilde K_3$</td>
-<td>Quadratic generators (squeezes and phase), $[\tilde K_1,\tilde K_2]=2i\tilde K_3$</td>
+<td>$\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2},\tilde{K}_{\mathrm{osc},3}$</td>
+<td>Quadratic generators (squeezes and phase), $[\tilde{K}_{\mathrm{osc},1},\tilde{K}_{\mathrm{osc},2}]=2i\tilde{K}_{\mathrm{osc},3}$</td>
 </tr>
 <tr>
 <td>$\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$</td>
