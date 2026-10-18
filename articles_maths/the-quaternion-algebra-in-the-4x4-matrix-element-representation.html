@@ -55,7 +55,7 @@
 <h2 id="the-left-regular-representation">The Left Regular Representation</h2>
 <p><strong>Definition.</strong> The <strong>left regular representation</strong> is the map</p>
 <p>$$
-\mathsf M_4:\mathbb{H}\to M_4(\mathbb{R}),\qquad \mathsf M_4(\tilde q)(\tilde r)=\tilde q\tilde r,
+\mathsf M_4:\mathbb{H}\to M_4(\mathbb{R}),\qquad \mathsf M_4(\tilde q)(\tilde q_5)=\tilde q\tilde q_5,
 $$</p>
 <p>the matrix of the operator $L_{\tilde q}$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$; its entries are the coordinates of the products, $(\mathsf M_4(\tilde q))_{\mu\nu}=$ the $e_\mu$-coordinate of $\tilde q e_\nu$.</p>
 <p><strong>Theorem.</strong> $\mathsf M_4$ is an injective algebra homomorphism, $\mathsf M_4(\tilde q_1\tilde q_2)=\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)$, and its image has real dimension $4$.</p>
@@ -82,7 +82,7 @@ $$</p>
 <p><strong>Theorem (the same Gram matrix).</strong> $G_{\mu\nu}=\tfrac14\operatorname{tr}(\mathsf M_4(e_\mu)\mathsf M_4(e_\nu))=\operatorname{diag}(1,-1,-1,-1)=D$, of signature $(1,3)$, the same matrix as in the $2\times2$ model.</p>
 <p><em>Proof.</em> $\operatorname{tr}\mathsf M_4(e_t)=4$ and $\operatorname{tr}\mathsf M_4(\vec e_\mu^2)=\operatorname{tr}(-\mathrm I_4)=-4$, with the cross traces $0$; the computation is the one of the trace of the product of the four basis matrices.</p>
 <h2 id="the-two-commuting-copies">The Two Commuting Copies</h2>
-<p><strong>Definition.</strong> The <strong>right regular representation</strong> is $\mathsf R_4(\tilde q)(\tilde r)=\tilde r\tilde q$, the matrix of $R_{\tilde q}$; it is an anti-homomorphism, $\mathsf R_4(\tilde q_1\tilde q_2)=\mathsf R_4(\tilde q_2)\mathsf R_4(\tilde q_1)$, and an algebra map on $\mathbb{H}^{\mathrm{opp}}$.</p>
+<p><strong>Definition.</strong> The <strong>right regular representation</strong> is $\mathsf R_4(\tilde q)(\tilde q_5)=\tilde q_5\tilde q$, the matrix of $R_{\tilde q}$; it is an anti-homomorphism, $\mathsf R_4(\tilde q_1\tilde q_2)=\mathsf R_4(\tilde q_2)\mathsf R_4(\tilde q_1)$, and an algebra map on $\mathbb{H}^{\mathrm{opp}}$.</p>
 <p><strong>Theorem.</strong> The two images commute: $\mathsf M_4(\tilde q_1)\mathsf R_4(\tilde q_2)=\mathsf R_4(\tilde q_2)\mathsf M_4(\tilde q_1)$ for all $\tilde q_1,\tilde q_2$, and the image of $\mathsf M_4$ and the image of $\mathsf R_4$ are two commuting four-dimensional algebras inside $M_4(\mathbb{R})$.</p>
 <p><em>Proof.</em> $L_{\tilde q_1}R_{\tilde q_2}=R_{\tilde q_2}L_{\tilde q_1}$, the commutativity of the two-sided operators, read in the regular matrices.</p>
 <h2 id="the-transposition-relation">The Transposition Relation</h2>
@@ -105,7 +105,7 @@ $$</p>
 <h2 id="comparison-with-the-complex-case">Comparison with the Complex Case</h2>
 <p>The difference is the coefficient field and the module on which the matrices act: over $\mathbb{R}$ the standard module is the four-dimensional $\mathbb{H}$, while over $\mathbb{C}$ the left regular module of $M_2(\mathbb{C})$ is a sum of two copies of the column space.</p>
 <h2 id="summary">Summary</h2>
-<p>The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde r)=\tilde q\tilde r$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image; on it the quaternion product is the matrix product, the plain form is $\langle\tilde q_1,\tilde q_2\rangle=\tfrac14\operatorname{tr}(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2))$ with the same Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf M_4(\tilde q)=4q_t$ and $\det\mathsf M_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$.</p>
+<p>The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde q_5)=\tilde q\tilde q_5$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image; on it the quaternion product is the matrix product, the plain form is $\langle\tilde q_1,\tilde q_2\rangle=\tfrac14\operatorname{tr}(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2))$ with the same Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf M_4(\tilde q)=4q_t$ and $\det\mathsf M_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -117,11 +117,11 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathsf M_4(\tilde q)$</td>
-<td>Left regular matrix of $\tilde q$, $\tilde r\mapsto\tilde q\tilde r$</td>
+<td>Left regular matrix of $\tilde q$, $\tilde q_5\mapsto\tilde q\tilde q_5$</td>
 </tr>
 <tr>
 <td>$\mathsf R_4(\tilde q)$</td>
-<td>Right regular matrix, $\tilde r\mapsto\tilde r\tilde q$</td>
+<td>Right regular matrix, $\tilde q_5\mapsto\tilde q_5\tilde q$</td>
 </tr>
 <tr>
 <td>$D=\operatorname{diag}(1,-1,-1,-1)$</td>

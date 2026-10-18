@@ -150,19 +150,19 @@ $$
 \qquad\text{for all }\tilde{Q},
 $$
 if and only if $\tilde{U}$ is unitary, $\tilde{U}^{*}\tilde{U}=e_t$.</p>
-<p><strong>Proof.</strong> Write $\tilde{Z}=\tilde{U}^{*}\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{Q})^{*}=\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}$,
+<p><strong>Proof.</strong> Write $\tilde Q_4=\tilde{U}^{*}\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{Q})^{*}=\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}$,
 $$
 \mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^{*}\Gamma_{\tilde{U}}(\tilde{Q})\bigr)
 =\mathrm{Tr}\bigl(\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}\tilde{U}\tilde{Q}\tilde{U}^{*}\bigr)
-=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Z}\tilde{Q}\tilde{Z}\bigr),
+=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde Q_4\tilde{Q}\tilde Q_4\bigr),
 $$
-using the cyclicity of the trace twice. If $\tilde{Z}=e_t$ this is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde{Q}$ and take $\tilde{Q}$ rank one, $\tilde{Q}=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde{Q}^{*}\tilde{Z}\tilde{Q}=\langle\varphi|\tilde{Z}\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
+using the cyclicity of the trace twice. If $\tilde Q_4=e_t$ this is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde{Q}$ and take $\tilde{Q}$ rank one, $\tilde{Q}=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde{Q}^{*}\tilde Q_4\tilde{Q}=\langle\varphi|\tilde Q_4\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
 $$
-\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Z}\tilde{Q}\tilde{Z}\bigr)
-=\langle\varphi|\tilde{Z}\varphi\rangle\,\mathrm{Tr}\bigl(|\varphi\rangle\langle\varphi|\tilde{Z}\bigr)
-=\langle\varphi|\tilde{Z}\varphi\rangle^2 .
+\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde Q_4\tilde{Q}\tilde Q_4\bigr)
+=\langle\varphi|\tilde Q_4\varphi\rangle\,\mathrm{Tr}\bigl(|\varphi\rangle\langle\varphi|\tilde Q_4\bigr)
+=\langle\varphi|\tilde Q_4\varphi\rangle^2 .
 $$
-The preserved value is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})=1$, so $\langle\varphi|\tilde{Z}\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde{Z}\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde{Z}=e_t$.</p>
+The preserved value is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})=1$, so $\langle\varphi|\tilde Q_4\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde Q_4\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde Q_4=e_t$.</p>
 <p>The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1)$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.</p>
 <h3 id="part-2-the-biquaternion-norm">Part 2: the biquaternion norm</h3>
 <p><strong>Theorem 2.</strong> Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation scales the biquaternion norm by a central scalar,
@@ -186,9 +186,9 @@ Since $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$ for every $\tilde{Q
 <p>Two features of the proof are worth isolating. First, the scaling factor $|\langle\tilde{U}\rangle_{\natural}|^2$ is a <strong>central</strong> scalar: it is a real non-negative multiple of $e_t$, so it commutes with everything and multiplies the biquaternion norm uniformly. The biquaternion norm of an element is itself central-valued, and its modulus is therefore a classical number; preservation of the biquaternion norm is a condition on that number. This is the second appearance of the centre, and it is of a different kind from the first: there the centre appeared as the condition for the multiplicative anomaly to be scalar, here as the target space of the biquaternion norm itself.</p>
 <p>Second, the hypothesis $|\langle\tilde{U}\rangle_{\natural}|=1$ is genuinely weaker than unitarity. A unitary $\tilde{U}$ has $|\det M(\tilde{U})|=1$, hence $|\langle\tilde{U}\rangle_{\natural}|=1$, so every unitary preserves the biquaternion norm; but the converse fails, as the next section's counterexample shows. The two theorems are therefore not equivalent, and the difference between them is the difference between the quantum norm and the determinant.</p>
 <h3 id="putting-the-two-together">Putting the two together</h3>
-<p>The two preservation conditions can be read as statements about the same central defect. With $\tilde{Z}=\tilde{U}^{*}\tilde{U}$,
+<p>The two preservation conditions can be read as statements about the same central defect. With $\tilde Q_4=\tilde{U}^{*}\tilde{U}$,
 $$
-\tilde{Z}=e_t\ \Longrightarrow\ \Gamma_{\tilde{U}}\text{ is an automorphism}\ \Longrightarrow\ \text{both norms preserved},
+\tilde Q_4=e_t\ \Longrightarrow\ \Gamma_{\tilde{U}}\text{ is an automorphism}\ \Longrightarrow\ \text{both norms preserved},
 $$
 and the converse implication holds for the Hermitian norm. For the biquaternion norm the condition is weaker, and the enlargement is exactly the group of elements whose determinant has modulus one. The next section identifies the two groups and their intersection.</p>
 <h2 id="the-norm-preserving-groups">The Norm-Preserving Groups</h2>
@@ -320,7 +320,7 @@ so the hypothesis reads $-\tilde{H}J^\dagger=J\tilde{H}$ for every Hermitian $\t
 N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\langle\tilde{Q}\rangle_{\natural},
 $$</p>
 <p>so it is preserved exactly when $|\langle\tilde{U}\rangle_{\natural}|=1$; that is Theorem 2, and its group is the seven-real-dimensional $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, which contains $\mathrm{U}(2)$; the intersection is $\mathrm{U}(2)$ itself, while $\mathrm{U}(2)\cap SL(2,\mathbb{C})=SU(2)$.</p>
-<p>The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$. The action is multiplicative exactly when $\tilde{Z}=e_t$, i.e. exactly when $\tilde{U}$ is unitary and $\Gamma_{\tilde{U}}$ is an automorphism; when $\tilde{Z}$ is central the multiplicative anomaly collapses to the scalar $\tilde{Z}$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}J\tilde{H}$ is anti-Hermitian for every Hermitian $\tilde{H}$ if and only if the root $J$ of $-e_t$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.</p>
+<p>The centrality theme is carried by the defect $\tilde Q_4=\tilde{U}^{*}\tilde{U}$. The action is multiplicative exactly when $\tilde Q_4=e_t$, i.e. exactly when $\tilde{U}$ is unitary and $\Gamma_{\tilde{U}}$ is an automorphism; when $\tilde Q_4$ is central the multiplicative anomaly collapses to the scalar $\tilde Q_4$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}J\tilde{H}$ is anti-Hermitian for every Hermitian $\tilde{H}$ if and only if the root $J$ of $-e_t$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -371,7 +371,7 @@ $$</p>
 <td>Conjugation action</td>
 </tr>
 <tr>
-<td>$\tilde{Z}=\tilde{U}^{*}\tilde{U}$</td>
+<td>$\tilde Q_4=\tilde{U}^{*}\tilde{U}$</td>
 <td>Defect of the action</td>
 </tr>
 <tr>

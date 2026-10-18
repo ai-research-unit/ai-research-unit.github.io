@@ -57,7 +57,7 @@
 <h2 id="the-left-regular-representation">The Left Regular Representation</h2>
 <p><strong>Definition.</strong> The <strong>left regular representation</strong> is the map</p>
 <p>$$
-\mathsf M_4(\tilde q) : \tilde r \mapsto \tilde q\tilde r , \qquad (\mathsf M_4(\tilde q))_{\mu\nu} = \text{the } e_\mu\text{-coordinate of } \tilde q e_\nu ,
+\mathsf M_4(\tilde q) : \tilde q_5 \mapsto \tilde q\tilde q_5 , \qquad (\mathsf M_4(\tilde q))_{\mu\nu} = \text{the } e_\mu\text{-coordinate of } \tilde q e_\nu ,
 $$</p>
 <p>the matrix of the plain left multiplication $L_{\tilde q}$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$.</p>
 <p><strong>Theorem.</strong> $\mathsf M_4$ is an injective algebra homomorphism, $\mathsf M_4(\tilde q_1\tilde q_2) = \mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)$, with four-dimensional image; the image is a subalgebra of $M_4(\mathbb{R})$ isomorphic to $\mathbb{H}$, with the identity matrix for unit. $\mathsf M_4(\vec e_x)$ and $\mathsf M_4(\vec e_y)$ are the matrices of the companion reading of the plain algebra, and $\mathsf M_4(\vec e_z) = \mathsf M_4(\vec e_x)\mathsf M_4(\vec e_y)$, $\mathsf M_4(e_t) = \mathrm I_4$.</p>
@@ -95,7 +95,7 @@ $$</p>
 <p><em>Proof.</em> $\operatorname{tr}\mathsf M_4(e_t) = 4$ gives the scalar entry $1$; $\mathsf M_4(\vec e_\mu)^{\mathsf T} = -\mathsf M_4(\vec e_\mu)$ by the transposition relation, so $\operatorname{tr}(\mathsf M_4(\vec e_\mu)\mathsf M_4(\vec e_\mu)^{\mathsf T}) = -\operatorname{tr}\mathsf M_4(\vec e_\mu^2) = -\operatorname{tr}(-\mathrm I_4) = 4$; and the cross traces vanish because $\operatorname{tr}\mathsf M_4(\vec e_\mu \vec e_\nu) = 0$ for $\mu \neq \nu$.</p>
 <p><strong>Corollary (the two forms compared).</strong> The plain form is a quarter of the trace pairing without the transpose, $\langle\tilde q_1,\tilde q_2\rangle = \tfrac14\operatorname{tr}(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2))$, with Gram matrix $D = \operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$; the quaternionic form is the same pairing with the transpose in the second slot, with Gram matrix $\mathbb{1}_4$ of signature $(4,0)$. The transpose is the matrix form of the conjugation, and it is the whole difference of the two forms.</p>
 <h2 id="the-two-commuting-copies">The Two Commuting Copies</h2>
-<p><strong>Definition.</strong> The <strong>right regular representation</strong> is $\mathsf R_4(\tilde q) : \tilde r \mapsto \tilde r\tilde q$, the matrix of the plain right multiplication; it is an anti-homomorphism, $\mathsf R_4(\tilde q_1\tilde q_2) = \mathsf R_4(\tilde q_2)\mathsf R_4(\tilde q_1)$.</p>
+<p><strong>Definition.</strong> The <strong>right regular representation</strong> is $\mathsf R_4(\tilde q) : \tilde q_5 \mapsto \tilde q_5\tilde q$, the matrix of the plain right multiplication; it is an anti-homomorphism, $\mathsf R_4(\tilde q_1\tilde q_2) = \mathsf R_4(\tilde q_2)\mathsf R_4(\tilde q_1)$.</p>
 <p><strong>Theorem.</strong> The two images commute, $\mathsf M_4(\tilde q_1)\mathsf R_4(\tilde q_2) = \mathsf R_4(\tilde q_2)\mathsf M_4(\tilde q_1)$, and the centraliser of the image of $\mathsf M_4$ in $M_4(\mathbb{R})$ is the image of $\mathsf R_4$, of dimension four; the two images generate $M_4(\mathbb{R})$ and the bicommutant of either is itself.</p>
 <p><em>Proof.</em> The commutativity is $L_{\tilde q_1}R_{\tilde q_2} = R_{\tilde q_2}L_{\tilde q_1}$; for the centraliser, an operator commuting with every left multiplication is a right multiplication, by the double centraliser computation of the block, which is <em>One-Sided Operators on the General Quaternionic Algebra</em>, above this article in this category; the two copies generate the sixteen-dimensional enveloping algebra because $\operatorname{span}(\mathcal L \cup \mathcal R)$ together with its products gives all of $\operatorname{End}_\mathbb{R}(\mathbb{H})$.</p>
 <p><strong>Corollary.</strong> The quaternionic product uses the transpose inside the left regular copy alone, and the two commuting copies are those of the plain block; the enveloping algebra of the block is $M_4(\mathbb{R})$, as in the plain reading.</p>
@@ -151,7 +151,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p>The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde r) = \tilde q\tilde r$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image. On it the quaternionic product is the transposed product $\mathsf M_4(\tilde q_1 \star \tilde q_2) = \mathsf M_4(\tilde q_1)^{\mathsf T}\mathsf M_4(\tilde q_2)$, so the quaternionic square of an element is the positive scalar matrix $\langle\tilde q\rangle_{\natural}\mathrm I_4$; the quaternionic form is $\tfrac14\operatorname{tr}(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)^{\mathsf T})$ with Gram matrix the identity of signature $(4,0)$; the invariants are $\operatorname{tr}\mathsf M_4(\tilde q) = 4q_t$ and $\det\mathsf M_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$; the shell is the intersection of the image with $SO(4)$, the orthogonal matrix model of the unit sphere.</p>
+<p>The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde q_5) = \tilde q\tilde q_5$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image. On it the quaternionic product is the transposed product $\mathsf M_4(\tilde q_1 \star \tilde q_2) = \mathsf M_4(\tilde q_1)^{\mathsf T}\mathsf M_4(\tilde q_2)$, so the quaternionic square of an element is the positive scalar matrix $\langle\tilde q\rangle_{\natural}\mathrm I_4$; the quaternionic form is $\tfrac14\operatorname{tr}(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)^{\mathsf T})$ with Gram matrix the identity of signature $(4,0)$; the invariants are $\operatorname{tr}\mathsf M_4(\tilde q) = 4q_t$ and $\det\mathsf M_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$; the shell is the intersection of the image with $SO(4)$, the orthogonal matrix model of the unit sphere.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -163,11 +163,11 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathsf M_4(\tilde q)$</td>
-<td>left regular matrix of $\tilde q$, $\tilde r \mapsto \tilde q\tilde r$</td>
+<td>left regular matrix of $\tilde q$, $\tilde q_5 \mapsto \tilde q\tilde q_5$</td>
 </tr>
 <tr>
 <td>$\mathsf R_4(\tilde q)$</td>
-<td>right regular matrix, $\tilde r \mapsto \tilde r\tilde q$, generating the centraliser</td>
+<td>right regular matrix, $\tilde q_5 \mapsto \tilde q_5\tilde q$, generating the centraliser</td>
 </tr>
 <tr>
 <td>$\mathsf M_4(\tilde q_1 \star \tilde q_2) = \mathsf M_4(\tilde q_1)^{\mathsf T}\mathsf M_4(\tilde q_2)$</td>
