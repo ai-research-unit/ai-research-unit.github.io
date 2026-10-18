@@ -2,53 +2,53 @@
 
 ## Introduction
 
-The biquaternion Julia set of a parameter $\tilde C$ is a subset of an eight-real-dimensional space, and every picture of it is a picture of a slice. The word slice carries three inequivalent meanings in the corpus and in the literature: the *intersection* $J_{\tilde C}\cap V$ with a chosen subspace, the *restriction* of the dynamics to a subspace $V$ that the map leaves invariant, and the *projection* of the whole set to a plane, which is what a rendered image shows. The three agree exactly when the subspace is invariant and the projection is the identity on the slice, and they differ otherwise, which is the source of most of the confusion the subject produces.
+The biquaternion Julia set of a parameter $\tilde Q_3$ is a subset of an eight-real-dimensional space, and every picture of it is a picture of a slice. The word slice carries three inequivalent meanings in the corpus and in the literature: the *intersection* $J_{\tilde Q_3}\cap V$ with a chosen subspace, the *restriction* of the dynamics to a subspace $V$ that the map leaves invariant, and the *projection* of the whole set to a plane, which is what a rendered image shows. The three agree exactly when the subspace is invariant and the projection is the identity on the slice, and they differ otherwise, which is the source of most of the confusion the subject produces.
 
 The quadratic family, its filled Julia set and its critical set are *The Biquaternion Quadratic Map and Its Julia Sets*; the parameter locus is *The Biquaternion Mandelbrot Set and the Connectedness Locus*; the remarkable real subspaces are *Introduction to the Remarkable Subspaces*; the idempotents are *Idempotents of the Biquaternion Algebra* and the matrix model is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. The quaternion slices are *The Quaternion Quadratic Map and Its Julia Sets* and *The Quaternion Mandelbrot Set*; the complex ones are *The Julia Sets of a Complex Polynomial*.
 
 The article owns the three notions of a slice, the invariance criterion and the identification of the invariant slices, the central and real slices, the quaternion and anti-quaternion slices, the idempotent slices as the exact two-dimensional ones, and the warning that a rendered picture is a projection and not an intersection. The idempotent decomposition itself is *The Idempotent Decomposition and the Split Fractal*.
 
-**Standing convention.** $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ with the general plain bilinear product, $\mathcal K_{\tilde C}$ the filled Julia set and $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. A subspace is a real linear subspace $V\subset\mathbb{B}$ unless it is called complex.
+**Standing convention.** $F_{\tilde Q_3}(\tilde Q)=\tilde Q^2+\tilde Q_3$ with the general plain bilinear product, $\mathcal K_{\tilde Q_3}$ the filled Julia set and $J_{\tilde Q_3}=\partial\mathcal K_{\tilde Q_3}$. A subspace is a real linear subspace $V\subset\mathbb{B}$ unless it is called complex.
 
 ## The Three Notions of a Slice
 
 **Definition.** Let $V$ be a real subspace of $\mathbb{B}$.
 
-1. The **intersection slice** is $J_{\tilde C}\cap V$.
-2. The subspace is **invariant** if $F_{\tilde C}(V)\subset V$; then the **restriction** is the self-map $F_{\tilde C}|_V:V\to V$, and its filled Julia set is $\mathcal K_{F|_V}$.
-3. For a real-linear projection $P:\mathbb{B}\to V$, the **projection slice** is $P(J_{\tilde C})$.
+1. The **intersection slice** is $J_{\tilde Q_3}\cap V$.
+2. The subspace is **invariant** if $F_{\tilde Q_3}(V)\subset V$; then the **restriction** is the self-map $F_{\tilde Q_3}|_V:V\to V$, and its filled Julia set is $\mathcal K_{F|_V}$.
+3. For a real-linear projection $P:\mathbb{B}\to V$, the **projection slice** is $P(J_{\tilde Q_3})$.
 
-**Proposition (invariance gives agreement).** Let $V$ be invariant. Then $\mathcal K_{\tilde C}\cap V$ is the filled Julia set of $F_{\tilde C}|_V$, and
+**Proposition (invariance gives agreement).** Let $V$ be invariant. Then $\mathcal K_{\tilde Q_3}\cap V$ is the filled Julia set of $F_{\tilde Q_3}|_V$, and
 
 $$
-\partial(\mathcal K_{\tilde C}\cap V)\subset J_{\tilde C}\cap V .
+\partial(\mathcal K_{\tilde Q_3}\cap V)\subset J_{\tilde Q_3}\cap V .
 $$
 
-**Proof.** A point of $V$ has its whole orbit in $V$ by invariance, and boundedness of that orbit is the same whether it is measured in $V$ or in $\mathbb{B}$ because a finite-dimensional subspace is closed. Hence $\mathcal K_{\tilde C}\cap V=\{v\in V: \text{orbit of } v \text{ bounded}\}=\mathcal K_{F|_V}$. For the inclusion, let $p\in\partial(\mathcal K\cap V)$: then $p\in\mathcal K\cap V$ and points $v_n\in V\setminus\mathcal K$ with $v_n\to p$. The points $v_n$ lie in $\mathbb{B}\setminus\mathcal K$ and tend to $p$, so every neighbourhood of $p$ in $\mathbb{B}$ meets $\mathcal K$ (at $p$) and its complement, that is $p\in\partial\mathcal K=J_{\tilde C}$. **The reverse inclusion is a statement about the extension of the dynamics off $V$; it holds for the exact product slices below and is not asserted in general.**
+**Proof.** A point of $V$ has its whole orbit in $V$ by invariance, and boundedness of that orbit is the same whether it is measured in $V$ or in $\mathbb{B}$ because a finite-dimensional subspace is closed. Hence $\mathcal K_{\tilde Q_3}\cap V=\{v\in V: \text{orbit of } v \text{ bounded}\}=\mathcal K_{F|_V}$. For the inclusion, let $p\in\partial(\mathcal K\cap V)$: then $p\in\mathcal K\cap V$ and points $v_n\in V\setminus\mathcal K$ with $v_n\to p$. The points $v_n$ lie in $\mathbb{B}\setminus\mathcal K$ and tend to $p$, so every neighbourhood of $p$ in $\mathbb{B}$ meets $\mathcal K$ (at $p$) and its complement, that is $p\in\partial\mathcal K=J_{\tilde Q_3}$. **The reverse inclusion is a statement about the extension of the dynamics off $V$; it holds for the exact product slices below and is not asserted in general.**
 
 **Remark (the three differ in general).** If $V$ is not invariant, a point of $\mathcal K\cap V$ has an orbit that leaves $V$, so the restriction is not defined; and if $P$ is not the identity on $V$, the projection carries points of $\mathcal K$ outside $V$ onto the picture, so $P(\mathcal K)$ is generally larger than $\mathcal K\cap V$. **Only for an invariant subspace with $P=\mathrm{id}_V$ do the intersection, the restriction and the picture coincide.** The next sections list the invariant subspaces that the corpus uses.
 
 ## The Invariant Slices
 
-**Proposition (the slices that are invariant).** Let $\tilde C$ be the parameter.
+**Proposition (the slices that are invariant).** Let $\tilde Q_3$ be the parameter.
 
-1. The centre $\mathbb{C}e_t$ is invariant if and only if $\tilde C$ is central.
-2. Any complex plane $\mathbb{C}e_t\oplus\mathbb{C}\tilde Q$ generated by one element is invariant if $\tilde C$ is central.
-3. The real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is invariant if $\tilde C$ is real central; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is invariant if and only if $\tilde C=0$.
-4. The idempotent planes $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ are invariant if $\tilde C\in W_{\tilde\Pi}$.
-5. The real line $\mathbb{R}\tilde Q_2$ through a non-zero element is invariant if and only if $\tilde Q_2^2\in\mathbb{R}\tilde Q_2$ and $\tilde C\in\mathbb{R}\tilde Q_2$.
+1. The centre $\mathbb{C}e_t$ is invariant if and only if $\tilde Q_3$ is central.
+2. Any complex plane $\mathbb{C}e_t\oplus\mathbb{C}\tilde Q$ generated by one element is invariant if $\tilde Q_3$ is central.
+3. The real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is invariant if $\tilde Q_3$ is real central; the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is invariant if and only if $\tilde Q_3=0$.
+4. The idempotent planes $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ are invariant if $\tilde Q_3\in W_{\tilde\Pi}$.
+5. The real line $\mathbb{R}\tilde Q_2$ through a non-zero element is invariant if and only if $\tilde Q_2^2\in\mathbb{R}\tilde Q_2$ and $\tilde Q_3\in\mathbb{R}\tilde Q_2$.
 
-**Proof.** (1) $F(Ae_t)=A^2e_t+\tilde C$; this lies in $\mathbb{C}e_t$ for every $A$ exactly when $\tilde C\in\mathbb{C}e_t$, that is when $\tilde C$ is central. (2) $\mathbb{C}[\tilde Q]=\mathbb{C}e_t\oplus\mathbb{C}\tilde Q$ is a subalgebra containing the centre, so $A^2+\tilde C$ lies in it for $A$ in it. (3) The real quaternions are a real subalgebra of $\mathbb{B}$, and adding $\tilde C$ keeps them there exactly when $\tilde C$ is there. For $i\mathbb{H}_{\mathbb{B}}$: $\mu\in\mathbb{H}$ gives $(i\mu)^2=-\mu^2\in\mathbb{H}_{\mathbb{B}}$, not in $i\mathbb{H}_{\mathbb{B}}$ unless $\mu^2=0$, so only the parameter $0$ keeps the subspace. (4) is the coordinatewise product of §*The Commutative Plane and the Product Locus* of *The Biquaternion Mandelbrot Set and the Connectedness Locus*. (5) $F(t\tilde Q_2)=t^2\tilde Q_2^2+\tilde C$ must lie in $\mathbb{R}\tilde Q_2$ for every real $t$; taking $t=0$ gives $\tilde C\in\mathbb{R}\tilde Q_2$ and then $\tilde Q_2^2\in\mathbb{R}\tilde Q_2$, and both conditions are clearly sufficient.
+**Proof.** (1) $F(Ae_t)=A^2e_t+\tilde Q_3$; this lies in $\mathbb{C}e_t$ for every $A$ exactly when $\tilde Q_3\in\mathbb{C}e_t$, that is when $\tilde Q_3$ is central. (2) $\mathbb{C}[\tilde Q]=\mathbb{C}e_t\oplus\mathbb{C}\tilde Q$ is a subalgebra containing the centre, so $A^2+\tilde Q_3$ lies in it for $A$ in it. (3) The real quaternions are a real subalgebra of $\mathbb{B}$, and adding $\tilde Q_3$ keeps them there exactly when $\tilde Q_3$ is there. For $i\mathbb{H}_{\mathbb{B}}$: $\mu\in\mathbb{H}$ gives $(i\mu)^2=-\mu^2\in\mathbb{H}_{\mathbb{B}}$, not in $i\mathbb{H}_{\mathbb{B}}$ unless $\mu^2=0$, so only the parameter $0$ keeps the subspace. (4) is the coordinatewise product of §*The Commutative Plane and the Product Locus* of *The Biquaternion Mandelbrot Set and the Connectedness Locus*. (5) $F(t\tilde Q_2)=t^2\tilde Q_2^2+\tilde Q_3$ must lie in $\mathbb{R}\tilde Q_2$ for every real $t$; taking $t=0$ gives $\tilde Q_3\in\mathbb{R}\tilde Q_2$ and then $\tilde Q_2^2\in\mathbb{R}\tilde Q_2$, and both conditions are clearly sufficient.
 
 **Remark (the failure for the anti-quaternion subspace).** The anti-quaternion subspace is the one invariant-looking slice that is not invariant: $i\mathbb{H}_{\mathbb{B}}$ is a real subspace of square root type, closed under the square only up to sign, and the square of an anti-quaternion lands in the quaternion subspace. **The square of a non-real slice is not on the slice**, which is why the anti-Hermitian sector is a slice used for computations and never a self-contained dynamical system.
 
 ## The Central and Real Slices
 
-**Proposition (the central slice).** For $\tilde C=Ce_t$ the centre is invariant and the restriction is $\zeta\mapsto\zeta^2+C$ under $Ae_t\leftrightarrow A$; hence $\mathcal K_{\tilde C}\cap\mathbb{C}e_t=(K_C)e_t$ and $J_{\tilde C}\cap\mathbb{C}e_t=(J_C)e_t$, the classical filled Julia set and Julia set of the complex quadratic map.
+**Proposition (the central slice).** For $\tilde Q_3=Ce_t$ the centre is invariant and the restriction is $\zeta\mapsto\zeta^2+C$ under $Ae_t\leftrightarrow A$; hence $\mathcal K_{\tilde Q_3}\cap\mathbb{C}e_t=(K_C)e_t$ and $J_{\tilde Q_3}\cap\mathbb{C}e_t=(J_C)e_t$, the classical filled Julia set and Julia set of the complex quadratic map.
 
 **Proof.** Invariance and the identification of the restriction are part (1) of the invariance proposition with $F(Ae_t)=(A^2+C)e_t$; the filled Julia set of the restriction is by definition $K_C$, and the invariance proposition identifies it with the intersection.
 
-**Proposition (the real slice).** For $\tilde C=ce_t$ with $c\in\mathbb{R}$ the real axis $\mathbb{R}e_t$ and the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ are invariant; on the axis the restriction is the real quadratic map, and on the quaternion subspace it is the quaternion quadratic map, so the two slices are the real and the quaternion Julia sets of the classical theories.
+**Proposition (the real slice).** For $\tilde Q_3=ce_t$ with $c\in\mathbb{R}$ the real axis $\mathbb{R}e_t$ and the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ are invariant; on the axis the restriction is the real quadratic map, and on the quaternion subspace it is the quaternion quadratic map, so the two slices are the real and the quaternion Julia sets of the classical theories.
 
 **Proof.** For real $c$, $F$ maps real coefficients to real coefficients, and the quaternion subspace is closed under multiplication; the restrictions are the maps named.
 
@@ -56,10 +56,10 @@ The real slice is the smallest picture and shows the real Julia set; the quatern
 
 ## The Quaternion and Anti-Quaternion Slices
 
-**Proposition (real and imaginary parts of one orbit).** Write $\tilde Q=\tilde P+i\tilde Q_1$ and $\tilde C=\tilde Q_4+i\tilde Q_5$ with $\tilde P,\tilde Q_1,\tilde Q_4,\tilde Q_5\in\mathbb{H}_{\mathbb{B}}$. Then
+**Proposition (real and imaginary parts of one orbit).** Write $\tilde Q=\tilde P+i\tilde Q_1$ and $\tilde Q_3=\tilde Q_4+i\tilde Q_5$ with $\tilde P,\tilde Q_1,\tilde Q_4,\tilde Q_5\in\mathbb{H}_{\mathbb{B}}$. Then
 
 $$
-F_{\tilde C}(\tilde P+i\tilde Q_1)=\bigl(\tilde P^2-\tilde Q_1^2+\tilde Q_4\bigr)+i\bigl(\tilde P\tilde Q_1+\tilde Q_1\tilde P+\tilde Q_5\bigr),
+F_{\tilde Q_3}(\tilde P+i\tilde Q_1)=\bigl(\tilde P^2-\tilde Q_1^2+\tilde Q_4\bigr)+i\bigl(\tilde P\tilde Q_1+\tilde Q_1\tilde P+\tilde Q_5\bigr),
 $$
 
 so the map preserves the quaternion subspace exactly when $\tilde P\tilde Q_1+\tilde Q_1\tilde P+\tilde Q_5=0$ for all initial data, which for $\tilde Q_5=0$ is the anticommutation condition $\tilde P\tilde Q_1+\tilde Q_1\tilde P=0$.
@@ -70,10 +70,10 @@ so the map preserves the quaternion subspace exactly when $\tilde P\tilde Q_1+\t
 
 ## The Idempotent Slices and the Exact Two-Dimensional Picture
 
-**Theorem (the idempotent slice is exact).** Let $\tilde\Pi$ be a primitive idempotent, $\tilde\Pi'=e_t-\tilde\Pi$, and let the parameter lie in $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$, say $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$. Then $W_{\tilde\Pi}$ is invariant, and
+**Theorem (the idempotent slice is exact).** Let $\tilde\Pi$ be a primitive idempotent, $\tilde\Pi'=e_t-\tilde\Pi$, and let the parameter lie in $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$, say $\tilde Q_3=C_1\tilde\Pi+C_2\tilde\Pi'$. Then $W_{\tilde\Pi}$ is invariant, and
 
 $$
-\mathcal K_{\tilde C}\cap W_{\tilde\Pi}=K_{C_1}\tilde\Pi+K_{C_2}\tilde\Pi' ,
+\mathcal K_{\tilde Q_3}\cap W_{\tilde\Pi}=K_{C_1}\tilde\Pi+K_{C_2}\tilde\Pi' ,
 $$
 
 with the identification $A\tilde\Pi+B\tilde\Pi'\leftrightarrow(A,B)$. The slice is the product of two complex filled Julia sets, and the picture is exact in the strong sense: the slice of the boundary is the boundary of the product.
@@ -84,9 +84,9 @@ with the identification $A\tilde\Pi+B\tilde\Pi'\leftrightarrow(A,B)$. The slice 
 
 ## The Coordinate Slices and the Rendered Picture
 
-A rendering of $J_{\tilde C}$ fixes some of the eight real coordinates and iterates the rest, draws the escaping points in one colour and the bounded ones in another, and captions the result "the slice". The object drawn is $\pi_V(\mathcal K_{\tilde C})$ for the coordinate projection, and the caption is correct only if the coordinate subspace is invariant.
+A rendering of $J_{\tilde Q_3}$ fixes some of the eight real coordinates and iterates the rest, draws the escaping points in one colour and the bounded ones in another, and captions the result "the slice". The object drawn is $\pi_V(\mathcal K_{\tilde Q_3})$ for the coordinate projection, and the caption is correct only if the coordinate subspace is invariant.
 
-**Proposition (a non-invariant coordinate picture is not an intersection).** Let $V$ be a real subspace of $\mathbb{B}$, $P$ the orthogonal projection onto $V$, and let $p\in V$ be a point whose orbit leaves $V$ and is bounded in $\mathbb{B}$. Then $p\in P(\mathcal K_{\tilde C})$ but $p\notin\mathcal K_{\tilde C}\cap V$ if the orbit is not bounded in the slice's own test. Hence $P(\mathcal K_{\tilde C})\neq\mathcal K_{\tilde C}\cap V$ in general.
+**Proposition (a non-invariant coordinate picture is not an intersection).** Let $V$ be a real subspace of $\mathbb{B}$, $P$ the orthogonal projection onto $V$, and let $p\in V$ be a point whose orbit leaves $V$ and is bounded in $\mathbb{B}$. Then $p\in P(\mathcal K_{\tilde Q_3})$ but $p\notin\mathcal K_{\tilde Q_3}\cap V$ if the orbit is not bounded in the slice's own test. Hence $P(\mathcal K_{\tilde Q_3})\neq\mathcal K_{\tilde Q_3}\cap V$ in general.
 
 **Proof.** $P(p)=p$ for $p\in V$, so an orbit that leaves $V$ and stays bounded contributes $p$ to the projection; the failure of boundedness of the orbit in the slice for the same point is the stated condition, and such points exist because the orbit leaves $V$ and $V$ is not invariant.
 
@@ -94,13 +94,13 @@ A rendering of $J_{\tilde C}$ fixes some of the eight real coordinates and itera
 
 ## Summary
 
-A slice of a biquaternion Julia set can mean the intersection with a subspace, the restriction of an invariant subspace to itself, or a projection used for rendering, and the three agree exactly on the invariant subspaces. The invariant subspaces are the centre (for a central parameter), the plane of one element (for a central parameter), the real quaternion subspace (for a real central parameter), the idempotent planes (for parameters in the plane), and the real lines $\mathbb{R}\tilde Q_2$ with $\tilde Q_2^2\in\mathbb{R}\tilde Q_2$ and $\tilde C\in\mathbb{R}\tilde Q_2$; the anti-quaternion subspace is not invariant because the square of an anti-quaternion is a quaternion. The central slice is the classical complex Julia set, the real and quaternion slices are the classical real and quaternion Julia sets, and the idempotent slices are exactly products of two complex Julia sets. A rendered picture is a projection of the whole set, not the intersection with the drawn plane, unless the plane is invariant; the article states this as a proposition and recommends that every picture name its slice.
+A slice of a biquaternion Julia set can mean the intersection with a subspace, the restriction of an invariant subspace to itself, or a projection used for rendering, and the three agree exactly on the invariant subspaces. The invariant subspaces are the centre (for a central parameter), the plane of one element (for a central parameter), the real quaternion subspace (for a real central parameter), the idempotent planes (for parameters in the plane), and the real lines $\mathbb{R}\tilde Q_2$ with $\tilde Q_2^2\in\mathbb{R}\tilde Q_2$ and $\tilde Q_3\in\mathbb{R}\tilde Q_2$; the anti-quaternion subspace is not invariant because the square of an anti-quaternion is a quaternion. The central slice is the classical complex Julia set, the real and quaternion slices are the classical real and quaternion Julia sets, and the idempotent slices are exactly products of two complex Julia sets. A rendered picture is a projection of the whole set, not the intersection with the drawn plane, unless the plane is invariant; the article states this as a proposition and recommends that every picture name its slice.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $J_{\tilde C}$, $\mathcal K_{\tilde C}$ | the Julia set and the filled Julia set |
+| $J_{\tilde Q_3}$, $\mathcal K_{\tilde Q_3}$ | the Julia set and the filled Julia set |
 | $V$ | a real subspace of $\mathbb{B}$ |
 | $P$ | a real-linear projection onto $V$ |
 | $\mathbb{C}e_t$ | the centre, the scalar subspace |

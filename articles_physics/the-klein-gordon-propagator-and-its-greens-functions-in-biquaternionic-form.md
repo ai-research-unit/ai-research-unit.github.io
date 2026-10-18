@@ -374,11 +374,11 @@ with $K_1$ the modified Bessel function of the second kind. It decays exponentia
 The Feynman propagator is the inverse of the Klein–Gordon operator in the distributional sense, $(\Box-\mu^2)G_F=-\delta^{(4)}$, and the inverse relation between the two reads
 
 $$
-\int d^3y\,dt'\;G_F(\tilde{R}-\tilde R')\,\left[-\bigl(\Box_{\tilde R'}-\mu^2\bigr)\right]\delta^{(4)}(\tilde R'-\tilde{Z})
-=\delta^{(4)}(\tilde{R}-\tilde{Z}),
+\int d^3y\,dt'\;G_F(\tilde{R}-\tilde R')\,\left[-\bigl(\Box_{\tilde R'}-\mu^2\bigr)\right]\delta^{(4)}(\tilde R'-\tilde Q_3)
+=\delta^{(4)}(\tilde{R}-\tilde Q_3),
 $$
 
-the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde{R}-\tilde R')[-\bigl(\Box_{\tilde R'}-\mu^2\bigr)]G_F(\tilde R'-\tilde{Z})=G_F(\tilde{R}-\tilde{Z})$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
+the operator acting on the delta and not on a second propagator, so that the bracket is the bare inverse kernel. Equivalently, convoluting two propagators with one operator insertion returns a single propagator, $\int d^4y\,G_F(\tilde{R}-\tilde R')[-\bigl(\Box_{\tilde R'}-\mu^2\bigr)]G_F(\tilde R'-\tilde Q_3)=G_F(\tilde{R}-\tilde Q_3)$, which is the same statement. In momentum space this is the statement $G_F^{-1}=\vec p^2+\mu^2-\omega^2$, and it is the free propagator that the path-integral article *The Klein–Gordon Path Integral in Biquaternionic Form* obtains as the Gaussian two-point function of the scalar field. The consistency of the two constructions — the Green's-function inverse here and the Gaussian fluctuation kernel there — is the statement that the free theory's two-point function is the inverse of the quadratic form in the action, and it is checked in that article on a finite lattice.
 
 ## The Biquaternion Reading
 

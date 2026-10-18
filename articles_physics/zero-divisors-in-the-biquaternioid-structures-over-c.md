@@ -425,14 +425,14 @@ the reversible and the irreversible halves of the state space.
 
 **The cone is the characteristic cone of the wave operator.** The algebra carries two canonical quadratic
 structures, and the zero-divisor cone is the isotropy of one of them. *The Symplectic Form and the
-Biquaternion Norm Cone* separates them: the **Hermitian** form $\mathrm{Sc}(\tilde Z^{*}\tilde Q)$ is
+Biquaternion Norm Cone* separates them: the **Hermitian** form $\mathrm{Sc}(\tilde Q_4^{*}\tilde Q)$ is
 positive definite, so it has no isotropic direction off the origin and defines no cone; the **holomorphic
-biquaternion norm** $\langle\tilde Z\rangle_{\natural}=\tilde Z\tilde Z^{\natural}$ is a general bilinear form, and its vanishing
+biquaternion norm** $\langle\tilde Q_4\rangle_{\natural}=\tilde Q_4\tilde Q_4^{\natural}$ is a general bilinear form, and its vanishing
 set is the cone this article studies. On the material sector that cone is the light cone, and the article
 identifies it as the **characteristic cone of the d'Alembertian** — the surface along which a
 discontinuous wavefront spreads, the cone of the wave operator rather than of the state space. The same
 article shows that one complex structure produces both faces at once: reading a phase-space element
-$\tilde Z=\tilde q+i\tilde p$, the Hermitian pairing splits into its real part, a positive-definite metric,
+$\tilde Q_4=\tilde q+i\tilde p$, the Hermitian pairing splits into its real part, a positive-definite metric,
 and its imaginary part, a symplectic form, with the algebra's central $i$ as the compatible complex
 structure. The zero-divisor cone and the symplectic structure are therefore two faces of one quadratic
 geometry, and the cone is where the *holomorphic* face degenerates.
@@ -556,7 +556,7 @@ $\mathrm{U}(1)$ symmetry.
 
 **The cone is the degenerate orbit of the symplectic structure.** *The Symplectic Form and the Biquaternion
 Norm Cone* gives the cone a dynamical identity, and the identification is exact. Writing a phase-space point
-as the biquaternion $\tilde Z=\tilde q+i\tilde p$, the **Hermitian pairing** has real part the Euclidean
+as the biquaternion $\tilde Q_4=\tilde q+i\tilde p$, the **Hermitian pairing** has real part the Euclidean
 metric $g$ and imaginary part the **symplectic form** $\omega$, and the algebra's central $i$ is the
 compatible complex structure $J$ of the Kähler triple — the root of $-1$ is the $J$. The coadjoint orbit is
 a **level set of the biquaternion norm**, and the article's own phrase is that "the cone is the degenerate
@@ -640,7 +640,7 @@ postulate and no commutator enter.
   single global potential exists and the charge is a winding is invertible wherever it is smooth: the
   failure is in the patching, not in the norm, and its quantisation condition imports $\hbar$.
 - The cone is also a **degenerate orbit of the symplectic structure**. On the phase-space biquaternion
-  $\tilde Z=\tilde q+i\tilde p$ the Hermitian pairing has real part the Euclidean metric and imaginary part
+  $\tilde Q_4=\tilde q+i\tilde p$ the Hermitian pairing has real part the Euclidean metric and imaginary part
   the symplectic form, its complex structure is the central $i$, and the cone is the zero-level (degenerate)
   coadjoint orbit (*The Symplectic Form and the Biquaternion Norm Cone*).
 

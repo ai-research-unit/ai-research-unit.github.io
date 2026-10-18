@@ -156,7 +156,7 @@ and the identity involution gives $\mathsf{M}_4(\tilde q)$ itself.
 
 ## The Right Regular Representation
 
-**Definition.** The **right regular representation** is $\mathsf{M}_4^{R} : \mathbb{H}\to M_4(F)$ with $R_{\tilde q}(\tilde r) = \tilde r\tilde q$.
+**Definition.** The **right regular representation** is $\mathsf{M}_4^{R} : \mathbb{H}\to M_4(F)$ with $R_{\tilde q}(\tilde q_3) = \tilde q_3\tilde q$.
 
 **Theorem.** The map $\mathsf{M}_4^{R}$ is an injective algebra anti-homomorphism, $\mathsf{M}_4^{R}(p\tilde q) = \mathsf{M}_4^{R}(\tilde q)\mathsf{M}_4^{R}(p)$, and the matrix of right multiplication is
 
@@ -169,7 +169,7 @@ q_z & q_y & -q_x & q_t
 \end{pmatrix}.
 $$
 
-*Proof.* $(\mathsf{M}_4^{R}(p)\mathsf{M}_4^{R}(\tilde q))(\tilde r) = R_{p}(\tilde r\tilde q) = \tilde r\tilde q p = R_{\tilde q p}(\tilde r)$, so $\mathsf{M}_4^{R}(p\tilde q) = \mathsf{M}_4^{R}(\tilde q)\mathsf{M}_4^{R}(p)$. The columns are $R_{\tilde q}(\vec e_k) = \vec e_k\tilde q$, computed directly as
+*Proof.* $(\mathsf{M}_4^{R}(p)\mathsf{M}_4^{R}(\tilde q))(\tilde q_3) = R_{p}(\tilde q_3\tilde q) = \tilde q_3\tilde q p = R_{\tilde q p}(\tilde q_3)$, so $\mathsf{M}_4^{R}(p\tilde q) = \mathsf{M}_4^{R}(\tilde q)\mathsf{M}_4^{R}(p)$. The columns are $R_{\tilde q}(\vec e_k) = \vec e_k\tilde q$, computed directly as
 
 $$
 e_t\tilde q = \tilde q, \quad \vec e_x\tilde q = -q_x+q_t\vec e_x-q_z\vec e_y+q_y\vec e_z, \quad \vec e_y\tilde q = -q_y+q_z\vec e_x+q_t\vec e_y-q_x\vec e_z, \quad \vec e_z\tilde q = -q_z-q_y\vec e_x+q_x\vec e_y+q_t\vec e_z .
@@ -189,17 +189,17 @@ $$
 
 where $D$ is the matrix of quaternion conjugation.
 
-*Proof.* The trace is $4q_t$ from the diagonal. The relation $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ is the same entrywise comparison as for $\mathsf{M}_4$. For the last identity, $D$ is the matrix of the linear map $\tilde r\mapsto \tilde r^{\natural}$, so for every $\tilde r$,
+*Proof.* The trace is $4q_t$ from the diagonal. The relation $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ is the same entrywise comparison as for $\mathsf{M}_4$. For the last identity, $D$ is the matrix of the linear map $\tilde q_3\mapsto \tilde q_3^{\natural}$, so for every $\tilde q_3$,
 
 $$
-D \mathsf{M}_4(\tilde q)^{T} D \tilde r = D \mathsf{M}_4(\tilde{q}^{\natural}) D \tilde r = D\bigl(\tilde{q}^{\natural}\,\tilde r^{\natural}\bigr) = (\tilde{q}^{\natural}\,\tilde r^{\natural})^{\natural} = \tilde r\tilde q = \mathsf{M}_4^{R}(\tilde q)\,\tilde r,
+D \mathsf{M}_4(\tilde q)^{T} D \tilde q_3 = D \mathsf{M}_4(\tilde{q}^{\natural}) D \tilde q_3 = D\bigl(\tilde{q}^{\natural}\,\tilde q_3^{\natural}\bigr) = (\tilde{q}^{\natural}\,\tilde q_3^{\natural})^{\natural} = \tilde q_3\tilde q = \mathsf{M}_4^{R}(\tilde q)\,\tilde q_3,
 $$
 
 using $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$ and the reversal $(\tilde q_1\tilde q_2)^{\natural} = \tilde{q}^{\natural}_2\,\tilde{q}^{\natural}_1$ of conjugation. Hence $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$, and the determinant is that of $\mathsf{M}_4(\tilde q)$ because $D^2 = I$.
 
 **Proposition.** The left and right representations commute: $\mathsf{M}_4(p)\mathsf{M}_4^{R}(\tilde q) = \mathsf{M}_4^{R}(\tilde q)\mathsf{M}_4(p)$ for all $p,\tilde q$.
 
-*Proof.* Both sides applied to $\tilde r$ give $pxq$, by associativity.
+*Proof.* Both sides applied to $\tilde q_3$ give $pxq$, by associativity.
 
 ## The Double Centraliser
 
@@ -222,7 +222,7 @@ The left regular matrix is an injective algebra homomorphism $\mathbb{H}\to M_4(
 
 The determinant and trace of the Cayley matrix are $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_t$, computed from the identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}I$ that also shows $\mathsf{M}_4(\tilde q)$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, and the three involutions of the algebra act by the four sign combinations $\pm \mathsf{M}_4(\tilde q),\pm \mathsf{M}_4(\tilde q)^{T}$ of the Cayley matrix.
 
-The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is an injective anti-homomorphism with the same determinant and trace, related to the left one by the identity $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ with $D$ the conjugation matrix, and the two representations are each other's commutants; the double centraliser theorem makes the left image its own double commutant and shows the two images together to span $M_4(F)$.
+The right regular representation $R_{\tilde q}(\tilde q_3) = \tilde q_3\tilde q$ is an injective anti-homomorphism with the same determinant and trace, related to the left one by the identity $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ with $D$ the conjugation matrix, and the two representations are each other's commutants; the double centraliser theorem makes the left image its own double commutant and shows the two images together to span $M_4(F)$.
 
 ## Summary of Notation
 
@@ -232,10 +232,10 @@ The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is 
 | $F$ | Base field |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Basis, $\vec e_k^2 = -e_t$ |
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural}$ |
-| $\mathsf{M}_4(\tilde q)$ | Cayley matrix of left multiplication $\tilde r\mapsto \tilde q \tilde r$ |
+| $\mathsf{M}_4(\tilde q)$ | Cayley matrix of left multiplication $\tilde q_3\mapsto \tilde q \tilde q_3$ |
 | $M_4(\mathbb{R})_L=\operatorname{image}\mathsf{M}_4$ | the regular matrices, the real subspace of dimension $4$ inside $M_4(\mathbb{R})$ |
 | $\Omega_q = \mathsf{M}_4(\tilde q) - q_tI$ | Skew-symmetric part of the Cayley matrix |
-| $\mathsf{M}_4^{R}(\tilde q)$ | Matrix of right multiplication $\tilde r\mapsto \tilde r\tilde q$ |
+| $\mathsf{M}_4^{R}(\tilde q)$ | Matrix of right multiplication $\tilde q_3\mapsto \tilde q_3\tilde q$ |
 | $D = \operatorname{diag}(1,-1,-1,-1)$ | Matrix of conjugation, $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ |
 | $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ | Transposition as conjugation |
 | $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$, $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_t$ | Determinant and trace |

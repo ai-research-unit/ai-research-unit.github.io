@@ -8,11 +8,11 @@ The fractal and the critical set are *The Biquaternion Quadratic Map and Its Jul
 
 The article owns the dimension of the slices, the exact values at the parameter zero, the upper bound for a central parameter, the lower bound from the singular surface, and the statement of the open problem. It does not attempt a general dimension formula.
 
-**Standing convention.** $\dim_H$ is the Hausdorff dimension, $\mathcal K_{\tilde C}$ and $J_{\tilde C}$ are the filled Julia set and the Julia set, and a **slice** of a fractal is its intersection with a real or complex subspace in the sense of *The Slices of the Biquaternion Julia Sets*.
+**Standing convention.** $\dim_H$ is the Hausdorff dimension, $\mathcal K_{\tilde Q_1}$ and $J_{\tilde Q_1}$ are the filled Julia set and the Julia set, and a **slice** of a fractal is its intersection with a real or complex subspace in the sense of *The Slices of the Biquaternion Julia Sets*.
 
 ## The Dimension of a Slice
 
-**Proposition (the classical slices).** Let $\tilde C=Ce_t$ be central. Then
+**Proposition (the classical slices).** Let $\tilde Q_1=Ce_t$ be central. Then
 
 $$
 \dim_H\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=\dim_H J_C,\qquad \dim_H\bigl(\mathcal K_{Ce_t}\cap\mathbb{C}e_t\bigr)=\dim_H K_C,
@@ -22,21 +22,21 @@ and for a real central parameter the same with the real quaternion subspace and 
 
 **Proof.** The central slice is the image of the classical sets under the isometry $A\mapsto Ae_t$ of the Euclidean plane onto the centre (*The Slices of the Biquaternion Julia Sets*), and the quaternion slice is the classical quaternion picture; Hausdorff dimension is invariant under isometries.
 
-**Theorem (the dimension of a product slice).** Let $\tilde\Pi$ be a primitive idempotent and $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ a parameter in the idempotent plane $W_{\tilde\Pi}$. Then
+**Theorem (the dimension of a product slice).** Let $\tilde\Pi$ be a primitive idempotent and $\tilde Q_1=C_1\tilde\Pi+C_2\tilde\Pi'$ a parameter in the idempotent plane $W_{\tilde\Pi}$. Then
 
 $$
-\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr),
+\dim_H\bigl(J_{\tilde Q_1}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr),
 $$
 
 the maximum of the two products of a boundary and a filled Julia set; when a factor has empty interior its boundary and its filled set coincide and the corresponding terms agree.
 
-**Proof.** The slice is the boundary of the product, $J_{\tilde C}\cap W_{\tilde\Pi}=\partial(K_{C_1}\times K_{C_2})=(J_{C_1}\times K_{C_2})\cup(K_{C_1}\times J_{C_2})$ (*The Idempotent Decomposition and the Split Fractal*). For a product of two sets in Euclidean spaces the Hausdorff dimension satisfies $\dim_H(A\times B)=\dim_H A+\dim_H B$ when one of the factors is sufficiently regular, in particular for the Julia sets and the filled Julia sets of the quadratic family (*Fractal Geometry*, §*Products and the Dimension Formula*); applying it to the two products of the displayed union and taking the maximum gives the value.
+**Proof.** The slice is the boundary of the product, $J_{\tilde Q_1}\cap W_{\tilde\Pi}=\partial(K_{C_1}\times K_{C_2})=(J_{C_1}\times K_{C_2})\cup(K_{C_1}\times J_{C_2})$ (*The Idempotent Decomposition and the Split Fractal*). For a product of two sets in Euclidean spaces the Hausdorff dimension satisfies $\dim_H(A\times B)=\dim_H A+\dim_H B$ when one of the factors is sufficiently regular, in particular for the Julia sets and the filled Julia sets of the quadratic family (*Fractal Geometry*, §*Products and the Dimension Formula*); applying it to the two products of the displayed union and taking the maximum gives the value.
 
 **Remark (the slice need not have the dimension of the complex fractal).** A slice lies in the four-real-dimensional plane $W_{\tilde\Pi}$, so its dimension is at most four, and it can exceed the dimension of a single complex Julia set by the dimension of the other filled factor: at $C_1=C_2=0$ the two complex filled Julia sets are discs of dimension two and the slice, the boundary of the bidisc, has real dimension three. **The dimension of the biquaternion fractal is a statement about the whole eight-dimensional set, and a slice exhibits only the part of it carried by the plane.**
 
 ## The Parameter Zero
 
-**Theorem (the dimension at the parameter zero).** For $\tilde C=0$,
+**Theorem (the dimension at the parameter zero).** For $\tilde Q_1=0$,
 
 $$
 \dim_H\mathcal K_0=8, \qquad \dim_H J_0=7 .
@@ -50,7 +50,7 @@ Moreover $J_0$ contains the idempotent manifold, a real four-dimensional smooth 
 
 ## The Central Parameter
 
-**Theorem (the central parameter bound).** Let $\tilde C=Ce_t$ be central and let $\mathcal K_c$ be the complex filled Julia set of $\zeta\mapsto\zeta^2+C$.
+**Theorem (the central parameter bound).** Let $\tilde Q_1=Ce_t$ be central and let $\mathcal K_c$ be the complex filled Julia set of $\zeta\mapsto\zeta^2+C$.
 
 1. If $C$ lies in the interior of the Mandelbrot set, then $\dim_H\mathcal K_{Ce_t}=8$.
 2. If the complex filled Julia set has dimension $\alpha$, then
@@ -78,7 +78,7 @@ The Hausdorff dimension of a biquaternion Julia set is known in three situations
 | symbol | meaning |
 |---|---|
 | $\dim_H$ | Hausdorff dimension |
-| $\mathcal K_{\tilde C}$, $J_{\tilde C}$ | the filled Julia set and the Julia set |
+| $\mathcal K_{\tilde Q_1}$, $J_{\tilde Q_1}$ | the filled Julia set and the Julia set |
 | $K_C$, $J_C$ | the complex filled Julia set and Julia set |
 | $\rho(\mathsf{M}_2(\tilde Q))$ | the spectral radius of the matrix model |
 | $W_{\tilde\Pi}$ | the idempotent plane $\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ |

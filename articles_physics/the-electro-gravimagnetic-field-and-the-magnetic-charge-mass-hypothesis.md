@@ -236,7 +236,7 @@ $$
 \tilde{Q}' = \tilde{U}\,\tilde{Q}\,\tilde{U}^{*},
 $$
 
-the law the corpus already uses for four-vectors of either sector. The paper states it for the Hermitian coordinate $\tau + i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ as $\tilde{Z}' = U\tilde{Z}U$, which is the corpus's law because $U^\dagger = U$; on that coordinate it returns
+the law the corpus already uses for four-vectors of either sector. The paper states it for the Hermitian coordinate $\tau + i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ as $\tilde Q_1' = U\tilde Q_1U$, which is the corpus's law because $U^\dagger = U$; on that coordinate it returns
 
 $$
 \tau' = \gamma\left(\tau + v\,\vec u\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right),

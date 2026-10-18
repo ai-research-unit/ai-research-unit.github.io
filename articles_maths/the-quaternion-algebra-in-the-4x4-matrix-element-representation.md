@@ -9,7 +9,7 @@ The left regular representation of $\mathbb{H}$ is the map that sends a quaterni
 **Definition.** The **left regular representation** is the map
 
 $$
-\mathsf M_4:\mathbb{H}\to M_4(\mathbb{R}),\qquad \mathsf M_4(\tilde q)(\tilde r)=\tilde q\tilde r,
+\mathsf M_4:\mathbb{H}\to M_4(\mathbb{R}),\qquad \mathsf M_4(\tilde q)(\tilde q_5)=\tilde q\tilde q_5,
 $$
 
 the matrix of the operator $L_{\tilde q}$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$; its entries are the coordinates of the products, $(\mathsf M_4(\tilde q))_{\mu\nu}=$ the $e_\mu$-coordinate of $\tilde q e_\nu$.
@@ -56,7 +56,7 @@ $$
 
 ## The Two Commuting Copies
 
-**Definition.** The **right regular representation** is $\mathsf R_4(\tilde q)(\tilde r)=\tilde r\tilde q$, the matrix of $R_{\tilde q}$; it is an anti-homomorphism, $\mathsf R_4(\tilde q_1\tilde q_2)=\mathsf R_4(\tilde q_2)\mathsf R_4(\tilde q_1)$, and an algebra map on $\mathbb{H}^{\mathrm{opp}}$.
+**Definition.** The **right regular representation** is $\mathsf R_4(\tilde q)(\tilde q_5)=\tilde q_5\tilde q$, the matrix of $R_{\tilde q}$; it is an anti-homomorphism, $\mathsf R_4(\tilde q_1\tilde q_2)=\mathsf R_4(\tilde q_2)\mathsf R_4(\tilde q_1)$, and an algebra map on $\mathbb{H}^{\mathrm{opp}}$.
 
 **Theorem.** The two images commute: $\mathsf M_4(\tilde q_1)\mathsf R_4(\tilde q_2)=\mathsf R_4(\tilde q_2)\mathsf M_4(\tilde q_1)$ for all $\tilde q_1,\tilde q_2$, and the image of $\mathsf M_4$ and the image of $\mathsf R_4$ are two commuting four-dimensional algebras inside $M_4(\mathbb{R})$.
 
@@ -100,14 +100,14 @@ The difference is the coefficient field and the module on which the matrices act
 
 ## Summary
 
-The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde r)=\tilde q\tilde r$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image; on it the quaternion product is the matrix product, the plain form is $\langle\tilde q_1,\tilde q_2\rangle=\tfrac14\operatorname{tr}(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2))$ with the same Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf M_4(\tilde q)=4q_t$ and $\det\mathsf M_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$.
+The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde q_5)=\tilde q\tilde q_5$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image; on it the quaternion product is the matrix product, the plain form is $\langle\tilde q_1,\tilde q_2\rangle=\tfrac14\operatorname{tr}(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2))$ with the same Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf M_4(\tilde q)=4q_t$ and $\det\mathsf M_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathsf M_4(\tilde q)$ | Left regular matrix of $\tilde q$, $\tilde r\mapsto\tilde q\tilde r$ |
-| $\mathsf R_4(\tilde q)$ | Right regular matrix, $\tilde r\mapsto\tilde r\tilde q$ |
+| $\mathsf M_4(\tilde q)$ | Left regular matrix of $\tilde q$, $\tilde q_5\mapsto\tilde q\tilde q_5$ |
+| $\mathsf R_4(\tilde q)$ | Right regular matrix, $\tilde q_5\mapsto\tilde q_5\tilde q$ |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | Gram matrix of the plain form |
 | $\natural$ | Natural sign, the transpose of the regular matrix |
 | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | Quaternion norm, the square root of the determinant |

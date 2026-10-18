@@ -8,13 +8,13 @@ The algebra, its conjugations and its remarkable subspaces are *Introduction to 
 
 This article owns the several readings of the square and the choice of the map, the definition of the biquaternion quadratic family, the filled Julia set and the Julia set, their complete invariance, the equivariance of the family under the conjugations, the critical set, and the reduction of the central-parameter family to a pair of complex quadratic families in the matrix model. It does not treat the escape radius (*The Escape Radius and the Green's Function for the Biquaternions*), the parameter locus (*The Biquaternion Mandelbrot Set and the Connectedness Locus*), the slices (*The Slices of the Biquaternion Julia Sets*), the zero divisors as a dynamical phenomenon (*The Zero Divisors and the Singular Julia Sets*), the Jacobian and the Fatou theory (*The Biquaternion Holomorphic Dynamics and the Jacobian*), or the dimension (*The Hausdorff Dimension of the Biquaternion Julia Sets*). No physical vocabulary is used.
 
-**Standing convention.** Throughout, $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ is a biquaternion, $\tilde C$ is the parameter, and $\tilde Q^2$ is the square in the general plain bilinear product, so that the family is
+**Standing convention.** Throughout, $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ is a biquaternion, $\tilde Q_5$ is the parameter, and $\tilde Q^2$ is the square in the general plain bilinear product, so that the family is
 
 $$
-F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C ,
+F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde Q_5,
 $$
 
-the sum being that of the underlying complex vector space. The parameter is fixed and the article writes $F$ for $F_{\tilde C}$ where no confusion results.
+the sum being that of the underlying complex vector space. The parameter is fixed and the article writes $F$ for $F_{\tilde Q_5}$ where no confusion results.
 
 ## The Several Interpretations of the Square
 
@@ -25,20 +25,20 @@ The formula $\tilde Q\mapsto\tilde Q^2$ is unambiguous once a product is chosen 
 **The diagonal of a left or a right multiplication.** For a fixed element $\tilde Q_3$ the two maps
 
 $$
-\tilde Q_1\mapsto \tilde Q_3\tilde Q_1+\tilde C \quad (\text{left}), \qquad \tilde Q_1\mapsto \tilde Q_1\tilde Q_3+\tilde C \quad (\text{right})
+\tilde Q_1\mapsto \tilde Q_3\tilde Q_1+\tilde Q_5\quad (\text{left}), \qquad \tilde Q_1\mapsto \tilde Q_1\tilde Q_3+\tilde Q_5\quad (\text{right})
 $$
 
 are affine: for $\tilde Q_3$ a unit they are conjugate to a linear map, their orbits are exponentials, and their Julia set is empty. They return the quadratic family only on the diagonal $\tilde Q_1=\tilde Q=\tilde Q_3$. **The left and the right products give the square only on the diagonal; off the diagonal they give two affine families with no fractal content.** The matrix product agrees with the general plain bilinear square on the nose, because $\mathsf{M}_2$ is an algebra isomorphism (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 
-**The conjugate squares.** Replacing one factor by a conjugate gives a map of a different kind. With the natural conjugate, $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ is central and scalar, so the "natural quadratic family" is $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde C$, a scalar-valued map whose orbit is governed by the complex numbers $\langle F^n(\tilde Q)\rangle_{\natural}$ alone. With the Hermitian conjugate, $\tilde Q\tilde Q^{*}$ is the Hermitian biquaternion whose scalar part is the square of the Euclidean norm, and the "Hermitian quadratic family" is a real-analytic, non-holomorphic map with values in the Hermitian subspace $\mathbb{M}_+$. These are different theories; neither is the theory of this article.
+**The conjugate squares.** Replacing one factor by a conjugate gives a map of a different kind. With the natural conjugate, $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$ is central and scalar, so the "natural quadratic family" is $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde Q_5$, a scalar-valued map whose orbit is governed by the complex numbers $\langle F^n(\tilde Q)\rangle_{\natural}$ alone. With the Hermitian conjugate, $\tilde Q\tilde Q^{*}$ is the Hermitian biquaternion whose scalar part is the square of the Euclidean norm, and the "Hermitian quadratic family" is a real-analytic, non-holomorphic map with values in the Hermitian subspace $\mathbb{M}_+$. These are different theories; neither is the theory of this article.
 
 | reading of the square | the map | kind | the theory |
 |---|---|---|---|
-| general plain bilinear $\tilde Q\tilde Q$ | $\tilde Q\mapsto\tilde Q^2+\tilde C$ | holomorphic, quadratic | this article |
-| natural $\tilde Q\tilde Q^{\natural}$ | $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde C$ | scalar-valued, uses the bar | *Square Roots of a General Element in the Biquaternion Algebra* |
-| Hermitian $\tilde Q\tilde Q^{*}$ | $\tilde Q\mapsto\tilde Q\tilde Q^{*}+\tilde C$ | real-analytic, not holomorphic | *Norm and Invertibility in the General Quaternionic Algebra* |
+| general plain bilinear $\tilde Q\tilde Q$ | $\tilde Q\mapsto\tilde Q^2+\tilde Q_5$ | holomorphic, quadratic | this article |
+| natural $\tilde Q\tilde Q^{\natural}$ | $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde Q_5$ | scalar-valued, uses the bar | *Square Roots of a General Element in the Biquaternion Algebra* |
+| Hermitian $\tilde Q\tilde Q^{*}$ | $\tilde Q\mapsto\tilde Q\tilde Q^{*}+\tilde Q_5$ | real-analytic, not holomorphic | *Norm and Invertibility in the General Quaternionic Algebra* |
 | left or right $\tilde Q_3\tilde Q_1$, $\tilde Q_1\tilde Q_3$ | affine in $\tilde Q_1$ | no fractal | — |
-| matrix $\mathsf{M}_2^{-1}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)$ | $\tilde Q\mapsto\tilde Q^2+\tilde C$ | the same map | *The Matrix Element Representation and the Biquaternion Dynamics* |
+| matrix $\mathsf{M}_2^{-1}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)$ | $\tilde Q\mapsto\tilde Q^2+\tilde Q_5$ | the same map | *The Matrix Element Representation and the Biquaternion Dynamics* |
 
 **Remark (why the choice is a choice).** The general plain bilinear product is the canonical multiplication of $\mathbb{B}$ once $\mathbb{B}$ is presented as a $\mathbb{C}$-algebra with the quaternion relations, so the first line of the table is the canonical reading. What is *not* canonical is the size. The algebra carries a complex-valued multiplicative norm $\langle\cdot\rangle_{\natural}$, its modulus $r=\sqrt{|N|}$, and the Euclidean norm $\|\cdot\|_E$, and no one of the three is singled out by the algebra. **The map is canonical; the norm used to define boundedness is a choice of metric, and the escape radius depends on it.** Boundedness itself does not, by the next section.
 
@@ -47,36 +47,36 @@ are affine: for $\tilde Q_3$ a unit they are conjugate to a linear map, their or
 **Definition.** The **biquaternion quadratic family** is the family of self-maps of $\mathbb{B}$
 
 $$
-F_{\tilde C}:\mathbb{B}\to\mathbb{B}, \qquad F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C ,
+F_{\tilde Q_5}:\mathbb{B}\to\mathbb{B}, \qquad F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde Q_5,
 $$
 
-one map for each parameter $\tilde C\in\mathbb{B}$. The **orbit** of a point $\tilde Q$ is the sequence $\tilde Q_0=\tilde Q$, $\tilde Q_{n+1}=F_{\tilde C}(\tilde Q_n)$.
+one map for each parameter $\tilde Q_5\in\mathbb{B}$. The **orbit** of a point $\tilde Q$ is the sequence $\tilde Q_0=\tilde Q$, $\tilde Q_{n+1}=F_{\tilde Q_5}(\tilde Q_n)$.
 
 **Proposition (the orbit is a polynomial in the initial point).** For every $n$ there is a polynomial $p_n$ of degree $2^n$ with
 
 $$
-p_0(\tilde Q)=\tilde Q, \qquad p_{n+1}(\tilde Q)=p_n(\tilde Q)^2+\tilde C, \qquad \tilde Q_n=p_n(\tilde Q).
+p_0(\tilde Q)=\tilde Q, \qquad p_{n+1}(\tilde Q)=p_n(\tilde Q)^2+\tilde Q_5, \qquad \tilde Q_n=p_n(\tilde Q).
 $$
 
-If $\tilde C$ is central, $\tilde C=Ce_t$ with $C\in\mathbb{C}$, every $p_n$ has coefficients in the centre and $\tilde Q_n$ is a polynomial in $\tilde Q$ alone.
+If $\tilde Q_5$ is central, $\tilde Q_5=Ce_t$ with $C\in\mathbb{C}$, every $p_n$ has coefficients in the centre and $\tilde Q_n$ is a polynomial in $\tilde Q$ alone.
 
-**Proof.** Induction on $n$: $\tilde Q_{n+1}=p_n(\tilde Q)^2+\tilde C=p_{n+1}(\tilde Q)$ by the recursion. If $\tilde C$ is central the recursion stays in the polynomial ring over the centre, and the evaluation is taken in the commutative subalgebra $\mathbb{C}[\tilde Q]$ generated by one element.
+**Proof.** Induction on $n$: $\tilde Q_{n+1}=p_n(\tilde Q)^2+\tilde Q_5=p_{n+1}(\tilde Q)$ by the recursion. If $\tilde Q_5$ is central the recursion stays in the polynomial ring over the centre, and the evaluation is taken in the commutative subalgebra $\mathbb{C}[\tilde Q]$ generated by one element.
 
 The last clause is why the central parameter is the computable one: $\mathbb{C}[\tilde Q]$ has complex dimension at most two, and a polynomial in one element is a polynomial in its two coordinates there (*Introduction to the Biquaternion Algebra*, §*The Subalgebra Generated by One Element*).
 
 ## The Filled Julia Set and the Julia Set
 
-**Definition.** The **filled Julia set** of $F_{\tilde C}$ is the set of points whose orbit is bounded,
+**Definition.** The **filled Julia set** of $F_{\tilde Q_5}$ is the set of points whose orbit is bounded,
 
 $$
-\mathcal K_{\tilde C}=\{\tilde Q\in\mathbb{B} : (F_{\tilde C}^{n}(\tilde Q))_{n\ge0} \text{ is bounded}\},
+\mathcal K_{\tilde Q_5}=\{\tilde Q\in\mathbb{B} : (F_{\tilde Q_5}^{n}(\tilde Q))_{n\ge0} \text{ is bounded}\},
 $$
 
-and the **Julia set** is its boundary, $J_{\tilde C}=\partial\mathcal K_{\tilde C}$.
+and the **Julia set** is its boundary, $J_{\tilde Q_5}=\partial\mathcal K_{\tilde Q_5}$.
 
 **Remark (boundedness does not depend on the norm).** In the finite-dimensional real vector space $\mathbb{B}\cong\mathbb{R}^8$ all norms are equivalent, so a sequence is bounded for one norm exactly when it is bounded for every norm. **The filled Julia set is a set-theoretic object of the algebra and not of a chosen metric.** This is the sharpest contrast with the escape radius, which is a metric statement and does depend on the norm (*The Escape Radius and the Green's Function for the Biquaternions*).
 
-**Proposition (complete invariance).** $F_{\tilde C}(\mathcal K_{\tilde C})\subset\mathcal K_{\tilde C}$ and $F_{\tilde C}^{-1}(\mathcal K_{\tilde C})=\mathcal K_{\tilde C}$; the same holds with $J_{\tilde C}$ in place of $\mathcal K_{\tilde C}$. Both sets are closed.
+**Proposition (complete invariance).** $F_{\tilde Q_5}(\mathcal K_{\tilde Q_5})\subset\mathcal K_{\tilde Q_5}$ and $F_{\tilde Q_5}^{-1}(\mathcal K_{\tilde Q_5})=\mathcal K_{\tilde Q_5}$; the same holds with $J_{\tilde Q_5}$ in place of $\mathcal K_{\tilde Q_5}$. Both sets are closed.
 
 **Proof.** If $\tilde Q\in\mathcal K$ then the orbit of $F(\tilde Q)$ is the orbit of $\tilde Q$ with its first term deleted, hence bounded, so $F(\tilde Q)\in\mathcal K$ and $F(\mathcal K)\subset\mathcal K$. Conversely if $F(\tilde Q)\in\mathcal K$ then the orbit of $\tilde Q$ is the bounded orbit of $F(\tilde Q)$ preceded by the single point $\tilde Q$, hence bounded, so $\tilde Q\in\mathcal K$; thus $F^{-1}(\mathcal K)=\mathcal K$. For the Julia set: if $\tilde Q\in J=\partial\mathcal K$ and $V$ is a neighbourhood of $F(\tilde Q)$, then $F^{-1}(V)$ is a neighbourhood of $\tilde Q$, so it meets $\mathcal K$ — giving $V\cap\mathcal K\neq\emptyset$ because $F(\mathcal K)\subset\mathcal K$ — and it meets the complement of $\mathcal K$ — giving a point whose image lies in $V$ and, since $F^{-1}(\mathcal K)=\mathcal K$, outside $\mathcal K$. Hence $F(J)\subset J$. Conversely if $F(\tilde Q)\in J$ then $\tilde Q\in F^{-1}(\mathcal K)=\mathcal K$; if $\tilde Q$ were interior to $\mathcal K$ then $F(\tilde Q)$ would be interior, because a non-constant holomorphic map is open, contradicting $F(\tilde Q)\in\partial\mathcal K$; hence $\tilde Q\in J$ and $F^{-1}(J)\subset J$; the inclusion $J\subset F^{-1}(J)$ is the previous one. Closedness of $\mathcal K$ is that of a sublevel set of a continuous function, and of $J$ that of a boundary.
 
@@ -87,39 +87,39 @@ No properness of $F$ was used, and none holds: the equation $\tilde Q^2=\tilde Q
 **Theorem (equivariance).** Let $g$ be one of the three conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ — the non-identity elements of the group of involutions — and let $g$ act coefficientwise on the parameter. Then
 
 $$
-g\circ F_{\tilde C}=F_{g(\tilde C)}\circ g .
+g\circ F_{\tilde Q_5}=F_{g(\tilde Q_5)}\circ g .
 $$
 
-Consequently $g(\mathcal K_{\tilde C})=\mathcal K_{g(\tilde C)}$ and $g(J_{\tilde C})=J_{g(\tilde C)}$.
+Consequently $g(\mathcal K_{\tilde Q_5})=\mathcal K_{g(\tilde Q_5)}$ and $g(J_{\tilde Q_5})=J_{g(\tilde Q_5)}$.
 
-**Proof.** Each of the three maps is an anti-automorphism of the ring, so $g(\tilde Q^2)=(g\tilde Q)^2$; and each is real-linear or conjugate-linear, hence preserves boundedness of a sequence. Applying $g$ to $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ gives $(g\tilde Q)^2+g\tilde C=F_{g(\tilde C)}(g\tilde Q)$.
+**Proof.** Each of the three maps is an anti-automorphism of the ring, so $g(\tilde Q^2)=(g\tilde Q)^2$; and each is real-linear or conjugate-linear, hence preserves boundedness of a sequence. Applying $g$ to $F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde Q_5$ gives $(g\tilde Q)^2+g\tilde Q_5=F_{g(\tilde Q_5)}(g\tilde Q)$.
 
-**Remark (the reversal is excluded by a sign).** The fourth conjugation, the reversal $\flat$, satisfies $(\tilde Q\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q^{\flat}$, so $(\tilde Q^2)^{\flat}=-(\tilde Q^{\flat})^2$ and $\flat\circ F_{\tilde C}=F^{-}_{\flat(\tilde C)}\circ\flat$, where $F^{-}_{\tilde C'}(\tilde Q)=-\tilde Q^2+\tilde C'$ is the odd quadratic family. **The reversal carries the even family to the odd family and is not a symmetry of the even fractal** (*The Three Conjugations and the Symmetric Biquaternion Fractals*).
+**Remark (the reversal is excluded by a sign).** The fourth conjugation, the reversal $\flat$, satisfies $(\tilde Q\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q^{\flat}$, so $(\tilde Q^2)^{\flat}=-(\tilde Q^{\flat})^2$ and $\flat\circ F_{\tilde Q_5}=F^{-}_{\flat(\tilde Q_5)}\circ\flat$, where $F^{-}_{\tilde Q_5'}(\tilde Q)=-\tilde Q^2+\tilde Q_5'$ is the odd quadratic family. **The reversal carries the even family to the odd family and is not a symmetry of the even fractal** (*The Three Conjugations and the Symmetric Biquaternion Fractals*).
 
-**Corollary (the symmetry group of the fractal).** Let $G_{\tilde C}=\{g\in\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\} : g(\tilde C)=\tilde C\}$. Then $\mathcal K_{\tilde C}$ and $J_{\tilde C}$ are invariant under every element of $G_{\tilde C}$, and $G_{\tilde C}$ is one of the five subgroups
+**Corollary (the symmetry group of the fractal).** Let $G_{\tilde Q_5}=\{g\in\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\} : g(\tilde Q_5)=\tilde Q_5\}$. Then $\mathcal K_{\tilde Q_5}$ and $J_{\tilde Q_5}$ are invariant under every element of $G_{\tilde Q_5}$, and $G_{\tilde Q_5}$ is one of the five subgroups
 
-1. the Klein four-group $G$, when $\tilde C=Ce_t$ with $C$ real;
-2. $\{\mathrm{id},{}^{\natural}\}$, when $\tilde C$ is central with $C$ non-real;
-3. $\{\mathrm{id},\bar{\cdot}\}$, when $\tilde C$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ but is not central;
-4. $\{\mathrm{id},{}^{*}\}$, when $\tilde C$ lies in the Hermitian sector $\mathbb{M}_+$ but is not central;
+1. the Klein four-group $G$, when $\tilde Q_5=Ce_t$ with $C$ real;
+2. $\{\mathrm{id},{}^{\natural}\}$, when $\tilde Q_5$ is central with $C$ non-real;
+3. $\{\mathrm{id},\bar{\cdot}\}$, when $\tilde Q_5$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ but is not central;
+4. $\{\mathrm{id},{}^{*}\}$, when $\tilde Q_5$ lies in the Hermitian sector $\mathbb{M}_+$ but is not central;
 5. the trivial group $\{\mathrm{id}\}$, otherwise.
 
-**Proof.** The group of involutions $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ is *The Group of Involutions*; the fixed set of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$, so the stabiliser of $\tilde C$ is the stabiliser of the intersection of the fixed spaces that contain it. The invariance of the sets is the theorem applied elementwise. The five cases and the names of the corresponding symmetric fractals are the subject of *The Three Conjugations and the Symmetric Biquaternion Fractals*.
+**Proof.** The group of involutions $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ is *The Group of Involutions*; the fixed set of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$, so the stabiliser of $\tilde Q_5$ is the stabiliser of the intersection of the fixed spaces that contain it. The invariance of the sets is the theorem applied elementwise. The five cases and the names of the corresponding symmetric fractals are the subject of *The Three Conjugations and the Symmetric Biquaternion Fractals*.
 
 ## The Critical Set
 
-**Definition.** The **critical set** of $F_{\tilde C}$ is the set of points where the complex derivative $dF_{\tilde C}$ fails to be invertible.
+**Definition.** The **critical set** of $F_{\tilde Q_5}$ is the set of points where the complex derivative $dF_{\tilde Q_5}$ fails to be invertible.
 
-**Proposition (the critical set).** For every parameter, the derivative of $F_{\tilde C}$ at $\tilde Q$ is the sum of the left and the right multiplication,
+**Proposition (the critical set).** For every parameter, the derivative of $F_{\tilde Q_5}$ at $\tilde Q$ is the sum of the left and the right multiplication,
 
 $$
-dF_{\tilde C}|_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2+\tilde Q_2\tilde Q ,
+dF_{\tilde Q_5}|_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2+\tilde Q_2\tilde Q ,
 $$
 
 and its determinant is, up to a fixed non-zero factor depending only on the identification of $\mathbb{B}$ with $\mathbb{C}^4$,
 
 $$
-\det dF_{\tilde C}|_{\tilde Q} \;=\; 4\,\langle\tilde Q\rangle_{\natural}\,(2Q_t)^2 .
+\det dF_{\tilde Q_5}|_{\tilde Q} \;=\; 4\,\langle\tilde Q\rangle_{\natural}\,(2Q_t)^2 .
 $$
 
 Hence the critical set is the union of the zero-divisor cone $\{\langle\tilde Q\rangle_{\natural}=0\}$ and the vector subspace $\{Q_t=0\}=\mathrm{Vect}(\mathbb{B})$.
@@ -132,17 +132,17 @@ Counting the coordinates, the critical set is the zero set of that one non-zero 
 
 ## The Central Parameter and the Eigenvalue Reduction
 
-**Theorem (central parameter, eigenvalue reduction).** Let $\tilde C=Ce_t$ with $C\in\mathbb{C}$, let $q_n$ be the iterates of the complex quadratic map $\zeta\mapsto\zeta^2+C$ starting from $\zeta_0=\zeta$, and let $p_n$ be as above. For every $\tilde Q$,
+**Theorem (central parameter, eigenvalue reduction).** Let $\tilde Q_5=Ce_t$ with $C\in\mathbb{C}$, let $q_n$ be the iterates of the complex quadratic map $\zeta\mapsto\zeta^2+C$ starting from $\zeta_0=\zeta$, and let $p_n$ be as above. For every $\tilde Q$,
 
 $$
-\mathsf{M}_2(F_{\tilde C}^{n}(\tilde Q))=p_n\bigl(\mathsf{M}_2(\tilde Q)\bigr)=q_n\text{ applied to the spectrum},
+\mathsf{M}_2(F_{\tilde Q_5}^{n}(\tilde Q))=p_n\bigl(\mathsf{M}_2(\tilde Q)\bigr)=q_n\text{ applied to the spectrum},
 $$
 
-in the sense that the spectrum of $\mathsf{M}_2(F_{\tilde C}^{n}(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q)$. If $\mathsf{M}_2(\tilde Q)$ is diagonalisable, then $\tilde Q\in\mathcal K_{\tilde C}$ if and only if both eigenvalues lie in the filled Julia set $K_C$ of $\zeta\mapsto\zeta^2+C$. If $\mathsf{M}_2(\tilde Q)$ has a repeated eigenvalue $\lambda$ and is not scalar, the extra condition is that the derivative sequence $(q_n'(\lambda))$ be bounded as well.
+in the sense that the spectrum of $\mathsf{M}_2(F_{\tilde Q_5}^{n}(\tilde Q))$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q)$. If $\mathsf{M}_2(\tilde Q)$ is diagonalisable, then $\tilde Q\in\mathcal K_{\tilde Q_5}$ if and only if both eigenvalues lie in the filled Julia set $K_C$ of $\zeta\mapsto\zeta^2+C$. If $\mathsf{M}_2(\tilde Q)$ has a repeated eigenvalue $\lambda$ and is not scalar, the extra condition is that the derivative sequence $(q_n'(\lambda))$ be bounded as well.
 
 **Proof.** For a polynomial $p$ and a matrix $M$, the eigenvalues of $p(M)$ are the values of $p$ on the eigenvalues of $M$; this is the statement that the spectrum is transported by polynomial functional calculus, and it holds for every polynomial without any hypothesis on $M$. Boundedness: if $M=SJS^{-1}$ with $J$ the Jordan form, then $p_n(M)=Sp_n(J)S^{-1}$, and $p_n(J)$ is diagonal with entries $p_n(\lambda_j)$ when the eigenvalues are distinct, bounded exactly when each $(p_n(\lambda_j))$ is bounded, and is a Jordan block $\left(\begin{smallmatrix}p_n(\lambda)&p_n'(\lambda)\\0&p_n(\lambda)\end{smallmatrix}\right)$ for a repeated non-scalar eigenvalue, bounded exactly when both $(p_n(\lambda))$ and $(p_n'(\lambda))$ are. Norm equivalence finishes the boundedness claim.
 
-**Corollary ($\tilde C=0$).** For the map $F_0(\tilde Q)=\tilde Q^2$ the iterated polynomial is $p_n(x)=x^{2^n}$, so the spectrum of $\mathsf{M}_2(F_0^n(\tilde Q))$ is $\{\lambda_1^{2^n},\lambda_2^{2^n}\}$ and
+**Corollary ($\tilde Q_5=0$).** For the map $F_0(\tilde Q)=\tilde Q^2$ the iterated polynomial is $p_n(x)=x^{2^n}$, so the spectrum of $\mathsf{M}_2(F_0^n(\tilde Q))$ is $\{\lambda_1^{2^n},\lambda_2^{2^n}\}$ and
 
 $$
 \mathcal K_0=\{\tilde Q : \rho(\mathsf{M}_2(\tilde Q))<1\}\cup\{\tilde Q : \rho(\mathsf{M}_2(\tilde Q))=1 \text{ and } \mathsf{M}_2(\tilde Q) \text{ diagonalisable}\} .
@@ -156,7 +156,7 @@ In particular every square-zero element has $\rho(\mathsf{M}_2(\tilde Q))=0$ and
 
 ## Summary
 
-The biquaternion quadratic family is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the general plain bilinear product, the only one of the four general products that makes the space an associative unital $\mathbb{C}$-algebra; the other readings of the square give a scalar map for the natural conjugate, a real-analytic map for the Hermitian conjugate, and two affine families for the left and right multiplications, the last coinciding with the quadratic family only on the diagonal. The filled Julia set $\mathcal K_{\tilde C}$ is the set of bounded orbits and the Julia set is its boundary; both are closed and completely invariant, and boundedness is independent of the norm because the algebra is finite-dimensional. The family is equivariant under the three conjugations of the group of involutions, $g\circ F_{\tilde C}=F_{g(\tilde C)}\circ g$, the reversal being excluded because it carries the even family to the odd one; so the fractal carries the stabiliser of the parameter, which is the whole group for a real central parameter, the subgroup $\{\mathrm{id},{}^{\natural}\}$ for a non-real central parameter, $\{\mathrm{id},\bar{\cdot}\}$ for a non-central real quaternion, $\{\mathrm{id},{}^{*}\}$ for a non-central Hermitian element, and the trivial group otherwise. The derivative is $\tilde Q_2\mapsto\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$ and its determinant is proportional to $\langle\tilde Q\rangle_{\natural}Q_t^2$, so the critical set is the union of the zero-divisor cone and the vector subspace of pure vectors. For a central parameter the whole dynamics reduces, through the matrix model, to the complex quadratic map acting on the two eigenvalues; the reduction is exact for a diagonalisable matrix and acquires a derivative condition on a non-scalar Jordan block, and for the parameter zero it gives $\mathcal K_0$ as the set of matrices with spectral radius below one together with the diagonalisable matrices of spectral radius one.
+The biquaternion quadratic family is $F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde Q_5$ in the general plain bilinear product, the only one of the four general products that makes the space an associative unital $\mathbb{C}$-algebra; the other readings of the square give a scalar map for the natural conjugate, a real-analytic map for the Hermitian conjugate, and two affine families for the left and right multiplications, the last coinciding with the quadratic family only on the diagonal. The filled Julia set $\mathcal K_{\tilde Q_5}$ is the set of bounded orbits and the Julia set is its boundary; both are closed and completely invariant, and boundedness is independent of the norm because the algebra is finite-dimensional. The family is equivariant under the three conjugations of the group of involutions, $g\circ F_{\tilde Q_5}=F_{g(\tilde Q_5)}\circ g$, the reversal being excluded because it carries the even family to the odd one; so the fractal carries the stabiliser of the parameter, which is the whole group for a real central parameter, the subgroup $\{\mathrm{id},{}^{\natural}\}$ for a non-real central parameter, $\{\mathrm{id},\bar{\cdot}\}$ for a non-central real quaternion, $\{\mathrm{id},{}^{*}\}$ for a non-central Hermitian element, and the trivial group otherwise. The derivative is $\tilde Q_2\mapsto\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$ and its determinant is proportional to $\langle\tilde Q\rangle_{\natural}Q_t^2$, so the critical set is the union of the zero-divisor cone and the vector subspace of pure vectors. For a central parameter the whole dynamics reduces, through the matrix model, to the complex quadratic map acting on the two eigenvalues; the reduction is exact for a diagonalisable matrix and acquires a derivative condition on a non-scalar Jordan block, and for the parameter zero it gives $\mathcal K_0$ as the set of matrices with spectral radius below one together with the diagonalisable matrices of spectral radius one.
 
 ## Summary of Notation
 
@@ -170,10 +170,10 @@ The biquaternion quadratic family is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C
 | $\|\tilde Q\|_E$ | the Euclidean norm $\sqrt{\sum_\mu|Q_\mu|^2}$ |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the matrix realization |
 | ${}^{\natural},\bar{\cdot},{}^{*},\flat$ | quaternion, complex, Hermitian and anti-Hermitian conjugation |
-| $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ | the biquaternion quadratic family |
-| $p_n$ | the polynomial with $\tilde Q_n=p_n(\tilde Q)$, $p_{n+1}=p_n^2+\tilde C$ |
-| $\mathcal K_{\tilde C}$ | the filled Julia set, the locus of bounded orbits |
-| $J_{\tilde C}=\partial\mathcal K_{\tilde C}$ | the Julia set |
+| $F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde Q_5$ | the biquaternion quadratic family |
+| $p_n$ | the polynomial with $\tilde Q_n=p_n(\tilde Q)$, $p_{n+1}=p_n^2+\tilde Q_5$ |
+| $\mathcal K_{\tilde Q_5}$ | the filled Julia set, the locus of bounded orbits |
+| $J_{\tilde Q_5}=\partial\mathcal K_{\tilde Q_5}$ | the Julia set |
 | $q_n$, $K_C$ | the complex iterates $\zeta\mapsto\zeta^2+C$ and the complex filled Julia set |
 | $G=\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ | the group of involutions |
 

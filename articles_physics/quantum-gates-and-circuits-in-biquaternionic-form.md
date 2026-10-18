@@ -258,10 +258,10 @@ Second, because the map $\tilde{U}\mapsto\Phi_{\tilde{U}}$ has kernel $\mathrm{U
 The Hadamard conjugation of the Pauli gates is a compact illustration. The identity $\tilde{H}\vec U_z\tilde{H} = \vec U_x$ already displayed says that the circuit "Hadamard, then $Z$, then Hadamard" realises the $X$ gate:
 
 $$
-\Phi_{\tilde{H}}\circ\Phi_{\vec U_z\circ\Phi_{\tilde{H}} = \Phi_{\tilde{H}\vec U_z\tilde{H}} = \Phi_{\vec U_x .
+\Phi_{\tilde{H}}\circ\Phi_{\vec U_z}\circ\Phi_{\tilde{H}} = \Phi_{\tilde{H}\vec U_z\tilde{H}} = \Phi_{\vec U_x}.
 $$
 
-The identity $\tilde{H}\vec U_x\tilde{H} = \vec U_z$ gives the reverse. These are exact as algebra identities, and they hold as gate identities. The identity $\tilde{H}\vec U_y\tilde{H} = -\vec U_y$ holds only up to the central phase $-e_t$; as gates, $\Phi_{\tilde{H}}\circ\Phi_{\vec U_y\circ\Phi_{\tilde{H}} = \Phi_{\vec U_y$.
+The identity $\tilde{H}\vec U_x\tilde{H} = \vec U_z$ gives the reverse. These are exact as algebra identities, and they hold as gate identities. The identity $\tilde{H}\vec U_y\tilde{H} = -\vec U_y$ holds only up to the central phase $-e_t$; as gates, $\Phi_{\tilde{H}}\circ\Phi_{\vec U_y}\circ\Phi_{\tilde{H}} = \Phi_{\vec U_y}$.
 
 Non-commuting gates give distinct circuits. For example, the two orderings of a Hadamard and a controlled gate differ, as they do in standard circuit notation; the framework expresses this as the failure of $\tilde{H}\otimes e_t$ and the controlled gate to commute in $\mathbb{B}\otimes\mathbb{B}$. Composition is the algebra product, and the algebra is non-commutative.
 
@@ -304,18 +304,18 @@ The status of the tensor product is the open question inherited from the compani
 A **controlled gate** is built from the two fundamental objects of the framework: an idempotent on the control factor and a gate on the target factor. Along the control axis $\vec u_{\mathrm r}$, let $\tilde\Pi_{1,2}(\vec u_{\mathrm r}) = \tfrac{1}{2}(e_t \pm i\vec u_{\mathrm r})$ be the complementary idempotents, and let $\tilde{U}$ be any single-qubit gate. Define
 
 $$
-\tilde{C}_{\tilde{U}} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes \tilde{U} \;\in\; \mathbb{B}\otimes\mathbb{B}.
+\tilde{Q}_{\tilde{U}} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes \tilde{U} \;\in\; \mathbb{B}\otimes\mathbb{B}.
 $$
 
 This is a single element of the two-qubit algebra, and it is unitary:
 
 $$
-\tilde{C}_{\tilde{U}}\tilde{C}_{\tilde{U}}^{*}
+\tilde{Q}_{\tilde{U}}\tilde{Q}_{\tilde{U}}^{*}
 = \tilde\Pi_1^2\otimes e_t + \tilde\Pi_1\tilde\Pi_2\otimes\tilde{U}^{*} + \tilde\Pi_2\tilde\Pi_1\otimes\tilde{U} + \tilde\Pi_2^2\otimes\tilde{U}\tilde{U}^{*}
 = (\tilde\Pi_1 + \tilde\Pi_2)\otimes e_t = e_t\otimes e_t ,
 $$
 
-where the cross terms vanish because $\tilde\Pi_1\tilde\Pi_2 = 0$ and the last step uses the resolution of the identity $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ together with $\tilde{U}\tilde{U}^{*} = e_t$. The same computation with a general single-qubit $\tilde{U}$ shows that **any** unitary target operation is admitted, so the construction defines $\tilde{C}_{\tilde{U}}$ for every gate $\tilde{U}$.
+where the cross terms vanish because $\tilde\Pi_1\tilde\Pi_2 = 0$ and the last step uses the resolution of the identity $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ together with $\tilde{U}\tilde{U}^{*} = e_t$. The same computation with a general single-qubit $\tilde{U}$ shows that **any** unitary target operation is admitted, so the construction defines $\tilde{Q}_{\tilde{U}}$ for every gate $\tilde{U}$.
 
 The unitarity of the controlled gate uses exactly two properties: the idempotents are complementary and orthogonal, and the target element is unitary. It is worth pausing on this, because the same idempotents, used differently, are the operators of an irreversible measurement. The controlled gate is the **coherent** use of an idempotent: the two outcomes are kept, paired with two different target operations, and added inside a single unitary element. The measurement channel, in contrast, adds the two *conjugated states*,
 
@@ -338,17 +338,17 @@ With the control axis $\vec u_z$ — the $|0\rangle/|1\rangle$ basis of the cont
 All three were verified to be unitary, Hermitian, and involutive. The CNOT is the controlled-$X$; the CZ is the controlled-$Z$. The SWAP form follows from the standard identity $\mathrm{SWAP} = \tfrac{1}{2}(I\otimes I + \sum_k\sigma_k\otimes\sigma_k)$ together with $\vec e_k\otimes \vec e_k = -(i\vec e_k)\otimes(i\vec e_k) = -\sigma_k\otimes\sigma_k$ under the isomorphism. The SWAP is not a controlled gate but a permutation of the two factors, and it satisfies the standard factor-exchange relation
 
 $$
-(\tilde{C}_{12})\,\mathrm{SWAP} = \mathrm{SWAP}\,(\tilde{C}_{21}),
+(\tilde{Q}_{12})\,\mathrm{SWAP} = \mathrm{SWAP}\,(\tilde{Q}_{21}),
 $$
 
-where $\tilde{C}_{12}$ is the CNOT with control on the first qubit and $\tilde{C}_{21}$ the CNOT with control on the second; this too was recomputed. It is the algebraic statement that swapping the qubits converts a control on one into a control on the other.
+where $\tilde{Q}_{12}$ is the CNOT with control on the first qubit and $\tilde{Q}_{21}$ the CNOT with control on the second; this too was recomputed. It is the algebraic statement that swapping the qubits converts a control on one into a control on the other.
 
 Two standard circuit identities express the relations among these gates, and both were verified in the tensor algebra:
 
 $$
-\mathrm{SWAP} = \tilde{C}_{12}\,\tilde{C}_{21}\,\tilde{C}_{12},
+\mathrm{SWAP} = \tilde{Q}_{12}\,\tilde{Q}_{21}\,\tilde{Q}_{12},
 \qquad
-\tilde{C}_{12} = (I_2\otimes \tilde{H})\,\mathrm{CZ}\,(I_2\otimes \tilde{H}).
+\tilde{Q}_{12} = (I_2\otimes \tilde{H})\,\mathrm{CZ}\,(I_2\otimes \tilde{H}).
 $$
 
 The first is the three-CNOT decomposition of the swap. The second is the conjugation of the CZ into the CNOT by a Hadamard on the target; equivalently, the same identity with the roles of CNOT and CZ exchanged on the other side. Each identity is a statement about the product of unitary elements of $\mathbb{B}\otimes\mathbb{B}$: the circuits are equal because the algebra products are equal.
@@ -364,7 +364,7 @@ $$
 the biquaternion idempotent corresponding to $|00\rangle$. Apply the Hadamard to the first qubit and then the CNOT with the first qubit as control. As a circuit, the operation is the product
 
 $$
-\tilde{W} = \tilde{C}_{\vec U_x\,\left(\tilde{H}\otimes e_t\right), \qquad \tilde{C}_{\vec U_x = \tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x),
+\tilde{W} = \tilde{Q}_{\vec U_x}(\tilde{H}\otimes e_t), \qquad \tilde{Q}_{\vec U_x} = \tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x),
 $$
 
 and the output state is $\tilde{W}\tilde{Ϛ}_0\tilde{W}^{*}$, a single conjugation because $\tilde{W}$ is a single gate.
@@ -383,10 +383,10 @@ $$
 
 the product state $|{+}\rangle|0\rangle$.
 
-**Step two: the CNOT.** Write $\tilde{A} = \tilde\Pi_1(\vec u_x)$, $\tilde{B} = \tilde\Pi_1(\vec u_z)$, $\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\vec u_z)$, and $\tilde{C} = \tilde{C}_{\vec U_x$. Since $\tilde{C} = \tilde{C}^{*}$ and $\tilde{C}^2 = e_t\otimes e_t$, conjugation by $\tilde{C}$ expands into four terms:
+**Step two: the CNOT.** Write $\tilde{A} = \tilde\Pi_1(\vec u_x)$, $\tilde{B} = \tilde\Pi_1(\vec u_z)$, $\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\vec u_z)$, and $\tilde{Q}_{12} = \tilde{Q}_{\vec U_x}$. Since $\tilde{Q}_{12} = \tilde{Q}_{12}^{*}$ and $\tilde{Q}_{12}^2 = e_t\otimes e_t$, conjugation by $\tilde{Q}_{12}$ expands into four terms:
 
 $$
-\tilde{C}(\tilde{A}\otimes\tilde{B})\tilde{C}
+\tilde{Q}_{12}(\tilde{A}\otimes\tilde{B})\tilde{Q}_{12}
 = \tilde\Pi_1\tilde{A}\tilde\Pi_1 \otimes \tilde{B}
 + \tilde\Pi_1\tilde{A}\tilde\Pi_2 \otimes \tilde{B}\,(i\vec e_x)
 + \tilde\Pi_2\tilde{A}\tilde\Pi_1 \otimes (i\vec e_x)\,\tilde{B}
@@ -404,13 +404,13 @@ $$
 while the target products are $\tilde{B}(i\vec e_x) = \tfrac12(i\vec e_x - \vec e_y)$ and $(i\vec e_x)\tilde{B} = \tfrac12(i\vec e_x + \vec e_y)$, and $(i\vec e_x)\tilde{B}(i\vec e_x) = \tilde\Pi_2(\vec u_z)$. Substituting,
 
 $$
-\tilde{C}(\tilde{A}\otimes\tilde{B})\tilde{C}
+\tilde{Q}_{12}(\tilde{A}\otimes\tilde{B})\tilde{Q}_{12}
 = \tfrac{1}{4}\left[e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z\right].
 $$
 
 The right-hand side is the **Bell idempotent** $P_\epsilon$ of the companion article on the Bell basis, with sign pattern $\epsilon = (-1,+1,-1)$, which is the idempotent of $|\Phi^+\rangle$. The identification was verified independently by mapping both sides to $M_4(\mathbb{C})$: the biquaternion element equals $\tfrac{1}{2}(|00\rangle+|11\rangle)(\langle 00|+\langle 11|)$.
 
-The whole circuit is thus the single element $\tilde{W} = \tilde{C}_{\vec U_x(\tilde{H}\otimes e_t)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
+The whole circuit is thus the single element $\tilde{W} = \tilde{Q}_{\vec U_x}(\tilde{H}\otimes e_t)$ of $\mathbb{B}\otimes\mathbb{B}$, and its output is
 
 $$
 \tilde{W}\left[\tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z)\right]\tilde{W}^{*}
@@ -444,7 +444,7 @@ which acts on the Bloch vector as $\vec r\mapsto(1-p)\vec r + p(\vec u_{\mathrm 
 **The same idempotents, used coherently and incoherently.** The sharpest contrast is between two objects built from the same complementary idempotents:
 
 $$
-\tilde{C}_{\tilde{U}} = \tilde\Pi_1\otimes e_t + \tilde\Pi_2\otimes\tilde{U} \quad\text{(a gate)},
+\tilde{Q}_{\tilde{U}} = \tilde\Pi_1\otimes e_t + \tilde\Pi_2\otimes\tilde{U} \quad\text{(a gate)},
 \qquad
 \Phi(\tilde{Ϛ}) = \tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}\tilde\Pi_2 \quad\text{(a channel)}.
 $$
@@ -494,7 +494,7 @@ The standard single-qubit gate set has explicit representatives: the Pauli gates
 
 **Composition** is the algebra product: applying $\tilde{U}$ then $\tilde{V}$ gives $\tilde{V}\tilde{U}$, and the whole circuit is a single element whose action is a single conjugation. The Pauli group is the sixteen-element set $\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$, and the Clifford group is its normaliser in the gate group; $H$ and $S$ generate it, and its image in $PU(2)$ is the octahedral rotation group of order $24$.
 
-In the **multi-qubit** arena $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, the controlled gate is $\tilde{C}_{\tilde{U}} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes\tilde{U}$, unitary by the complementarity of the idempotents and the unitarity of $\tilde{U}$. The CNOT, CZ, and SWAP gates have explicit representatives, and the standard circuit identities hold as algebra identities. A worked circuit — Hadamard then CNOT on two qubits — produces the Bell idempotent $\tfrac14(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ from a product state by a single conjugation.
+In the **multi-qubit** arena $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, the controlled gate is $\tilde{Q}_{\tilde{U}} = \tilde\Pi_1(\vec u_{\mathrm r})\otimes e_t + \tilde\Pi_2(\vec u_{\mathrm r})\otimes\tilde{U}$, unitary by the complementarity of the idempotents and the unitarity of $\tilde{U}$. The CNOT, CZ, and SWAP gates have explicit representatives, and the standard circuit identities hold as algebra identities. A worked circuit — Hadamard then CNOT on two qubits — produces the Bell idempotent $\tfrac14(e_t\otimes e_t - \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y - \vec e_z\otimes \vec e_z)$ from a product state by a single conjugation.
 
 The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A circuit of gates is a gate, hence reversible; inserting a measurement or a dephasing step makes it a channel of Kraus rank at least two, represented by a *sum* of conjugations rather than one. The controlled gate and the measurement channel use the same idempotents; the difference is whether the sum over the outcomes is taken inside a single unitary element (coherent, reversible) or between conjugated states (incoherent, irreversible). The reformulation is standard quantum information theory in biquaternion notation: it makes the algebraic location of each circuit ingredient explicit without adding physical content.
 
@@ -520,7 +520,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde{S}=\tfrac{1}{\sqrt2}(e_t+\vec e_z),\ \tilde{T}=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$ | Phase and $T$ gates |
 | $\tilde u_{\mathrm r}(\theta)=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$ | General rotation gate |
 | $\mathcal{P}=\{\pm e_t,\pm ie_t,\pm \vec e_k,\pm i\vec e_k\}$ | Pauli group (16 elements) |
-| $\tilde{C}_{\tilde{U}}=\tilde\Pi_1\otimes e_t+\tilde\Pi_2\otimes\tilde{U}$ | Controlled gate |
+| $\tilde{Q}_{\tilde{U}}=\tilde\Pi_1\otimes e_t+\tilde\Pi_2\otimes\tilde{U}$ | Controlled gate |
 | $\mathrm{CNOT}=\tilde\Pi_1(\vec u_z)\otimes e_t+\tilde\Pi_2(\vec u_z)\otimes(i\vec e_x)$ | Controlled-$X$ |
 | $\mathrm{SWAP}=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ | Swap gate |
 | $\Phi(\tilde{Ϛ})=\sum_l\tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |

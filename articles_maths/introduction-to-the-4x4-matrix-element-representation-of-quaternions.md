@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The left multiplications of the quaternion algebra give, in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, a four-dimensional real representation by $4\times4$ matrices: the map sends $\tilde q$ to the matrix of $\tilde r\mapsto \tilde q\tilde r$. This article presents the map, its multiplicativity, the trace and the determinant of the image, the images of the scalar and vector subspaces, and the two regular representations, left and right. The element and the basis are those of *Quaternion Algebra*; the left and right multiplications are $L_{\tilde p}$ and $R_{\tilde q}$ of *Quaternion Algebra*; the companion matrix article is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions*, above this article in this category.
+The left multiplications of the quaternion algebra give, in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, a four-dimensional real representation by $4\times4$ matrices: the map sends $\tilde q$ to the matrix of $\tilde q_3\mapsto \tilde q\tilde q_3$. This article presents the map, its multiplicativity, the trace and the determinant of the image, the images of the scalar and vector subspaces, and the two regular representations, left and right. The element and the basis are those of *Quaternion Algebra*; the left and right multiplications are $L_{\tilde p}$ and $R_{\tilde q}$ of *Quaternion Algebra*; the companion matrix article is *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions*, above this article in this category.
 
 Here the norm is definite and the set $\langle\tilde q\rangle_{\natural}=1$ maps into the group of matrices satisfying $\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde q)=I$ of determinant one. The article owns the map, the Cayley matrix, the multiplicativity, the trace, the determinant and the two subspace images; the regular representation as an operator and its bi-module structure are *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, below this article in this category.
 
@@ -10,7 +10,7 @@ Here the norm is definite and the set $\langle\tilde q\rangle_{\natural}=1$ maps
 
 **Definition.** The **left regular representation** is the map
 $$
-\mathsf{M}_4:\mathbb{H}\longrightarrow M_4(\mathbb{R}), \qquad \mathsf{M}_4(\tilde q)=\text{the matrix of }\tilde r\mapsto \tilde q\tilde r
+\mathsf{M}_4:\mathbb{H}\longrightarrow M_4(\mathbb{R}), \qquad \mathsf{M}_4(\tilde q)=\text{the matrix of }\tilde q_3\mapsto \tilde q\tilde q_3
 $$
 in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$. Its $\mu$-th column, $\mu\in\{t,x,y,z\}$, is the coordinate column of $\tilde q e_\mu$:
 $$
@@ -36,7 +36,7 @@ $$
 $$
 The map $\mathsf{M}_4$ is therefore an injective $\mathbb{R}$-algebra homomorphism, whose image is a four-dimensional subalgebra of $M_4(\mathbb{R})$.
 
-**Proof.** The matrix of a composition is the product of the matrices, and $L_{\tilde q_2}\circ L_{\tilde q_1}=L_{\tilde q_2\tilde q_1}$ because $\tilde q_2(\tilde q_1\tilde r)=(\tilde q_2\tilde q_1)\tilde r$; in coordinates, $\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)$ acts on a column vector as $L_{\tilde q_2} L_{\tilde q_1}$, which is $L_{\tilde q_2\tilde q_1}$. Injectivity is the first column.
+**Proof.** The matrix of a composition is the product of the matrices, and $L_{\tilde q_2}\circ L_{\tilde q_1}=L_{\tilde q_2\tilde q_1}$ because $\tilde q_2(\tilde q_1\tilde q_3)=(\tilde q_2\tilde q_1)\tilde q_3$; in coordinates, $\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)$ acts on a column vector as $L_{\tilde q_2} L_{\tilde q_1}$, which is $L_{\tilde q_2\tilde q_1}$. Injectivity is the first column.
 
 Associativity is thus the single fact behind the multiplicativity, and the representation is a faithful realization of $\mathbb{H}$ inside the real matrices. The right multiplication $R_{\tilde q}$ gives a second representation, treated below; the two commute and together generate the enveloping algebra of *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, below this article in this category.
 
@@ -70,7 +70,7 @@ On the scalar line the representation is scalar, $\mathsf{M}_4(s)=sI_4$, with de
 
 **Definition.** The **right regular representation** is
 $$
-\mathsf{M}_4^{R}(\tilde q)=\text{the matrix of }\tilde r\mapsto \tilde r\tilde q, \qquad \mathsf{M}_4^{R}(\tilde q)=\bigl(\ e_t\tilde q\ \big|\ \vec e_x\tilde q\ \big|\ \vec e_y\tilde q\ \big|\ \vec e_z\tilde q\ \bigr),
+\mathsf{M}_4^{R}(\tilde q)=\text{the matrix of }\tilde q_3\mapsto \tilde q_3\tilde q, \qquad \mathsf{M}_4^{R}(\tilde q)=\bigl(\ e_t\tilde q\ \big|\ \vec e_x\tilde q\ \big|\ \vec e_y\tilde q\ \big|\ \vec e_z\tilde q\ \bigr),
 $$
 the columns being the coordinate columns of $e_\mu q$.
 
@@ -80,20 +80,20 @@ $$
 $$
 The right representation also satisfies $\mathsf{M}_4^{R}(\tilde q)^{\mathsf T}=\mathsf{M}_4^{R}(\tilde q^{\natural})$ and $\mathsf{M}_4^{R}(\tilde q)\mathsf{M}_4^{R}(\tilde q)^{\mathsf T}=\langle\tilde q\rangle_{\natural}I_4$.
 
-**Proof.** The commutativity is associativity: $\tilde q_2(\tilde r\tilde q_1)=(\tilde q_2\tilde r)\tilde q_1$. The anti-multiplicativity is the order in $R_{\tilde q_2}\circ R_{\tilde q_1}=R_{\tilde q_1\tilde q_2}$, since $R_{\tilde q_2}(R_{\tilde q_1}(\tilde r))=(\tilde r\tilde q_1)\tilde q_2=\tilde r(\tilde q_1\tilde q_2)$; the transpose identities are as for $\mathsf{M}_4$.
+**Proof.** The commutativity is associativity: $\tilde q_2(\tilde q_3\tilde q_1)=(\tilde q_2\tilde q_3)\tilde q_1$. The anti-multiplicativity is the order in $R_{\tilde q_2}\circ R_{\tilde q_1}=R_{\tilde q_1\tilde q_2}$, since $R_{\tilde q_2}(R_{\tilde q_1}(\tilde q_3))=(\tilde q_3\tilde q_1)\tilde q_2=\tilde q_3(\tilde q_1\tilde q_2)$; the transpose identities are as for $\mathsf{M}_4$.
 
-The left representation is a homomorphism and the right one an anti-homomorphism; the pair is exactly the two-sided structure of the algebra, $\mathsf{M}_4(\tilde q_2)\mathsf{M}_4^{R}(\tilde q_1)$ being the operator $\tilde r\mapsto \tilde q_2\tilde r\tilde q_1$. The operator viewpoint, the enveloping algebra generated by the two families and the bi-module structure are *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure* and *The Quaternion Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
+The left representation is a homomorphism and the right one an anti-homomorphism; the pair is exactly the two-sided structure of the algebra, $\mathsf{M}_4(\tilde q_2)\mathsf{M}_4^{R}(\tilde q_1)$ being the operator $\tilde q_3\mapsto \tilde q_2\tilde q_3\tilde q_1$. The operator viewpoint, the enveloping algebra generated by the two families and the bi-module structure are *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure* and *The Quaternion Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
 
 ## Summary
 
-The left multiplication $\tilde r\mapsto \tilde q\tilde r$, in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, is the Cayley matrix $\mathsf{M}_4(\tilde q)$, with first column the coordinates of $\tilde q$. It is multiplicative, $\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)=\mathsf{M}_4(\tilde q_2\tilde q_1)$, by associativity, and injective; its trace is $4q_t$, its determinant is the square of the quaternion norm, and $\mathsf{M}_4(\tilde q)^{\mathsf T}=\mathsf{M}_4(\tilde q^{\natural})$, so the image of the unit sphere is the group of matrices satisfying $\mathsf{M}_4^{\mathsf T}\mathsf{M}_4=I$. The scalar line goes to the real scalar matrices and the vector space to the skew-symmetric traceless matrices of the image. The right multiplication gives the commuting, anti-multiplicative representation $\mathsf{M}_4^{R}(\tilde q)$, and the pair $\mathsf{M}_4,\mathsf{M}_4^{R}$ carries the two-sided action $\tilde r\mapsto \tilde q_2\tilde r\tilde q_1$.
+The left multiplication $\tilde q_3\mapsto \tilde q\tilde q_3$, in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, is the Cayley matrix $\mathsf{M}_4(\tilde q)$, with first column the coordinates of $\tilde q$. It is multiplicative, $\mathsf{M}_4(\tilde q_2)\mathsf{M}_4(\tilde q_1)=\mathsf{M}_4(\tilde q_2\tilde q_1)$, by associativity, and injective; its trace is $4q_t$, its determinant is the square of the quaternion norm, and $\mathsf{M}_4(\tilde q)^{\mathsf T}=\mathsf{M}_4(\tilde q^{\natural})$, so the image of the unit sphere is the group of matrices satisfying $\mathsf{M}_4^{\mathsf T}\mathsf{M}_4=I$. The scalar line goes to the real scalar matrices and the vector space to the skew-symmetric traceless matrices of the image. The right multiplication gives the commuting, anti-multiplicative representation $\mathsf{M}_4^{R}(\tilde q)$, and the pair $\mathsf{M}_4,\mathsf{M}_4^{R}$ carries the two-sided action $\tilde q_3\mapsto \tilde q_2\tilde q_3\tilde q_1$.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\mathsf{M}_4(\tilde q)$ | the left regular representation, the Cayley matrix of $\tilde r\mapsto \tilde q\tilde r$ |
-| $\mathsf{M}_4^{R}(\tilde q)$ | the right regular representation of $\tilde r\mapsto \tilde r\tilde q$ |
+| $\mathsf{M}_4(\tilde q)$ | the left regular representation, the Cayley matrix of $\tilde q_3\mapsto \tilde q\tilde q_3$ |
+| $\mathsf{M}_4^{R}(\tilde q)$ | the right regular representation of $\tilde q_3\mapsto \tilde q_3\tilde q$ |
 | $\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_t$ | the trace is four times the scalar part |
 | $\det\mathsf{M}_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$ | the determinant is the square of the quaternion norm |
 | $\mathsf{M}_4(\tilde q)^{\mathsf T}=\mathsf{M}_4(\tilde q^{\natural})$ | the transpose is the left multiplication by the conjugate |

@@ -37,7 +37,7 @@ $$
 with $\epsilon^{\mu\nu}$ dimensionless and antisymmetric and $\Lambda_{NC}\ge 10^{3}$ GeV the bound the source quotes. Two consequences are stated at once, because they shape everything that follows. The tensor $\theta^{\mu\nu}$ is **constant**, so it picks out a direction in the Lorentz group: **Lorentz invariance is broken** on the deformed arena. And because a constant $\theta$ can be traded for a shift of the coordinates,
 
 $$
-\tilde x_i = x_i + \frac{1}{2\hbar}\theta_{ij}p_j,
+\tilde q_i = x_i + \frac{1}{2\hbar}\theta_{ij}p_j,
 $$
 
 the field theories on the arena are **non-local** — the same shift that removes the coordinate commutator introduces a derivative-dependent displacement.

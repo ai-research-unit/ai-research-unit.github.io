@@ -177,10 +177,10 @@ $$
 PGL_2(\mathbb{H}) = GL_2(\mathbb{H})/\mathbb{R}^\times.
 $$
 
-**Theorem.** The action of $PGL_2(\mathbb{H})$ on $\mathbb{H}P^1\cong S^4$ is faithful, transitive, and by homeomorphisms; in the affine chart $\tilde p\neq 0$, with $\tilde r = \tilde q\tilde p^{-1}\in\mathbb{H}$, an element acts by the fractional transformation
+**Theorem.** The action of $PGL_2(\mathbb{H})$ on $\mathbb{H}P^1\cong S^4$ is faithful, transitive, and by homeomorphisms; in the affine chart $\tilde p\neq 0$, with $\tilde q_3 = \tilde q\tilde p^{-1}\in\mathbb{H}$, an element acts by the fractional transformation
 
 $$
-\tilde r \longmapsto (a\tilde r + b)(c\tilde r + d)^{-1}, \qquad \begin{pmatrix} a & b \\ c & d \end{pmatrix}\in GL_2(\mathbb{H}),
+\tilde q_3 \longmapsto (a\tilde q_3 + b)(c\tilde q_3 + d)^{-1}, \qquad \begin{pmatrix} a & b \\ c & d \end{pmatrix}\in GL_2(\mathbb{H}),
 $$
 
 and these maps are exactly the orientation-preserving conformal transformations of $S^4$; the full conformal group is $PGL_2(\mathbb{H})\rtimes\mathbb{Z}/2\mathbb{Z}$, the extra factor being an orientation-reversing conformal map.

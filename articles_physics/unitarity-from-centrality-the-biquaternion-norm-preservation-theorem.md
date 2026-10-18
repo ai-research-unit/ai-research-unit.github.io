@@ -123,19 +123,19 @@ $$
 $$
 if and only if $\tilde{U}$ is unitary, $\tilde{U}^{*}\tilde{U}=e_t$.
 
-**Proof.** Write $\tilde{Z}=\tilde{U}^{*}\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{Q})^{*}=\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}$,
+**Proof.** Write $\tilde Q_4=\tilde{U}^{*}\tilde{U}$, which is Hermitian and positive. Since $\Gamma_{\tilde{U}}(\tilde{Q})^{*}=\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}$,
 $$
 \mathrm{Tr}\bigl(\Gamma_{\tilde{U}}(\tilde{Q})^{*}\Gamma_{\tilde{U}}(\tilde{Q})\bigr)
 =\mathrm{Tr}\bigl(\tilde{U}\tilde{Q}^{*}\tilde{U}^{*}\tilde{U}\tilde{Q}\tilde{U}^{*}\bigr)
-=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Z}\tilde{Q}\tilde{Z}\bigr),
+=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde Q_4\tilde{Q}\tilde Q_4\bigr),
 $$
-using the cyclicity of the trace twice. If $\tilde{Z}=e_t$ this is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde{Q}$ and take $\tilde{Q}$ rank one, $\tilde{Q}=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde{Q}^{*}\tilde{Z}\tilde{Q}=\langle\varphi|\tilde{Z}\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
+using the cyclicity of the trace twice. If $\tilde Q_4=e_t$ this is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, so unitarity is sufficient. Conversely, suppose the identity holds for all $\tilde{Q}$ and take $\tilde{Q}$ rank one, $\tilde{Q}=|\varphi\rangle\langle\varphi|$ in the matrix model. Then $\tilde{Q}^{*}\tilde Q_4\tilde{Q}=\langle\varphi|\tilde Q_4\varphi\rangle\,|\varphi\rangle\langle\varphi|$ and
 $$
-\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Z}\tilde{Q}\tilde{Z}\bigr)
-=\langle\varphi|\tilde{Z}\varphi\rangle\,\mathrm{Tr}\bigl(|\varphi\rangle\langle\varphi|\tilde{Z}\bigr)
-=\langle\varphi|\tilde{Z}\varphi\rangle^2 .
+\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde Q_4\tilde{Q}\tilde Q_4\bigr)
+=\langle\varphi|\tilde Q_4\varphi\rangle\,\mathrm{Tr}\bigl(|\varphi\rangle\langle\varphi|\tilde Q_4\bigr)
+=\langle\varphi|\tilde Q_4\varphi\rangle^2 .
 $$
-The preserved value is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})=1$, so $\langle\varphi|\tilde{Z}\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde{Z}\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde{Z}=e_t$.
+The preserved value is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})=1$, so $\langle\varphi|\tilde Q_4\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde Q_4\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde Q_4=e_t$.
 
 The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1)$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.
 
@@ -167,9 +167,9 @@ Second, the hypothesis $|\langle\tilde{U}\rangle_{\natural}|=1$ is genuinely wea
 
 ### Putting the two together
 
-The two preservation conditions can be read as statements about the same central defect. With $\tilde{Z}=\tilde{U}^{*}\tilde{U}$,
+The two preservation conditions can be read as statements about the same central defect. With $\tilde Q_4=\tilde{U}^{*}\tilde{U}$,
 $$
-\tilde{Z}=e_t\ \Longrightarrow\ \Gamma_{\tilde{U}}\text{ is an automorphism}\ \Longrightarrow\ \text{both norms preserved},
+\tilde Q_4=e_t\ \Longrightarrow\ \Gamma_{\tilde{U}}\text{ is an automorphism}\ \Longrightarrow\ \text{both norms preserved},
 $$
 and the converse implication holds for the Hermitian norm. For the biquaternion norm the condition is weaker, and the enlargement is exactly the group of elements whose determinant has modulus one. The next section identifies the two groups and their intersection.
 
@@ -339,7 +339,7 @@ $$
 
 so it is preserved exactly when $|\langle\tilde{U}\rangle_{\natural}|=1$; that is Theorem 2, and its group is the seven-real-dimensional $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, which contains $\mathrm{U}(2)$; the intersection is $\mathrm{U}(2)$ itself, while $\mathrm{U}(2)\cap SL(2,\mathbb{C})=SU(2)$.
 
-The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$. The action is multiplicative exactly when $\tilde{Z}=e_t$, i.e. exactly when $\tilde{U}$ is unitary and $\Gamma_{\tilde{U}}$ is an automorphism; when $\tilde{Z}$ is central the multiplicative anomaly collapses to the scalar $\tilde{Z}$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}J\tilde{H}$ is anti-Hermitian for every Hermitian $\tilde{H}$ if and only if the root $J$ of $-e_t$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.
+The centrality theme is carried by the defect $\tilde Q_4=\tilde{U}^{*}\tilde{U}$. The action is multiplicative exactly when $\tilde Q_4=e_t$, i.e. exactly when $\tilde{U}$ is unitary and $\Gamma_{\tilde{U}}$ is an automorphism; when $\tilde Q_4$ is central the multiplicative anomaly collapses to the scalar $\tilde Q_4$, and the centre is precisely the locus where that collapse occurs. The same collapse governs the dynamics: the generator $G=-\hbar^{-1}J\tilde{H}$ is anti-Hermitian for every Hermitian $\tilde{H}$ if and only if the root $J$ of $-e_t$ is central, and the only central roots are $\pm i$, so the unit of the Schrödinger equation is forced into the centre of the algebra. Unitarity, in this framework, is a centrality statement.
 
 ## Summary of Notation
 
@@ -355,7 +355,7 @@ The centrality theme is carried by the defect $\tilde{Z}=\tilde{U}^{*}\tilde{U}$
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, centre-valued |
 | $\langle\tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Hermitian (Hilbert–Schmidt) pairing |
 | $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Conjugation action |
-| $\tilde{Z}=\tilde{U}^{*}\tilde{U}$ | Defect of the action |
+| $\tilde Q_4=\tilde{U}^{*}\tilde{U}$ | Defect of the action |
 | $\mathrm{U}(2)=\{\tilde{U}:\tilde{U}^{*}\tilde{U}=e_t\}$ | Unitary group; preserves the Hermitian norm |
 | $SL(2,\mathbb{C})=\{\tilde{U}:\langle\tilde{U}\rangle_{\natural}=e_t\}$ | Unit-norm group |
 | $G_N=\{\tilde{U}:|\langle\tilde{U}\rangle_{\natural}|=1\}=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ | Exact biquaternion-norm-preserving group |

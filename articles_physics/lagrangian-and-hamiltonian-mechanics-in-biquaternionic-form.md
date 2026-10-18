@@ -9,7 +9,7 @@ Both formulations are usually written in coordinates. This article writes them i
 Three structural statements organise the article, and they are worth stating at the outset.
 
 1. **The kinetic energy is the biquaternion norm.** For a configuration whose generalized coordinates are assembled into a real quaternion $\tilde q$, the kinetic energy of a free particle is $\tfrac{m}{2}\langle\,d\tilde q/dt\rangle_{\natural}=\tfrac{m}{2}d\tilde q/dt\,\overline{d\tilde q/dt}$, the biquaternion norm of the velocity. The biquaternion norm is the algebra's own quadratic form, and the free Lagrangian is a scalar multiple of it.
-2. **The phase-space coordinate is one biquaternion.** The position and the momentum assemble into $\tilde Z=\tilde q+i\tilde p$, whose anti-Hermitian part is the position and whose Hermitian part is $i$ times the momentum. The algebra's two sectors thus separate a kinematic configuration from its conjugate momentum, and the algebra's complex structure is the phase-space complex structure.
+2. **The phase-space coordinate is one biquaternion.** The position and the momentum assemble into $\tilde Q_3=\tilde q+i\tilde p$, whose anti-Hermitian part is the position and whose Hermitian part is $i$ times the momentum. The algebra's two sectors thus separate a kinematic configuration from its conjugate momentum, and the algebra's complex structure is the phase-space complex structure.
 3. **The boundary is finite-dimensional.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is eight-dimensional over $\mathbb{R}$. It carries the configuration of a system with at most four real degrees of freedom, and it carries the *rotational* bracket exactly; it does not carry the canonical Heisenberg structure, as the companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator* establishes and as the companion article *The Harmonic Oscillator in Biquaternionic Form* confirms. This article is classical throughout: no commutator is introduced, and no canonical relation of the form $[\tilde q,\tilde p]=i\hbar$ is used or needed.
 
 The conventions are those of the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar, real vector) is the material sector, and the Hermitian subspace $\mathbb{M}_+$ (real scalar, imaginary vector) is the informational sector, with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the trace is normalized by $\mathrm{Tr}(e_t)=2$. The symbol $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, and $c_0$ its vacuum value. Throughout, $\tilde q$ denotes a configuration quaternion, $\tilde p$ its conjugate momentum, and the scalar pairing of two real quaternions $\tilde q_1,\tilde q_2$ is $\mathrm{Sc}(\tilde q_1^{\natural}\,\tilde q_2)=\sum_\mu q_{1\mu} q_{2\mu}$.
@@ -60,7 +60,7 @@ $$
 
 the difference being an endpoint term, which a variation with fixed endpoints cannot see. What the formalism determines is therefore the **equations of motion**, not the Lagrangian, and the ambiguity is exactly a boundary term: the same structure the companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* meets from the other side, where the boundary term of $\delta S$ is the symplectic potential. The Hamiltonian carries the analogous freedom — a generating function of the coordinates, momenta and time shifts it by a partial time derivative — and that is the freedom a canonical transformation exploits.
 
-The **conjugate momenta** are $p_i=\partial L/\partial \left(dq_{i}/dt\right)$. In the Hamiltonian description the coordinates, velocities and momenta are **mutually independent** variables: the relation $p_i=\partial L/\partial\left(dq_{i}/dt\right)$ is used once, to eliminate the velocities in favour of the momenta, and does not thereafter act as a constraint among the phase-space variables. So $H(q,p)$ is differentiated with respect to $p_i$ at fixed $q$, with $dq/dt$ already eliminated; holding $dq/dt$ fixed while varying $p_i$ would describe a different object. This is what makes the passage a change of variables rather than a definition, and it is why the phase-space element $\tilde Z=\tilde q+i\tilde p$ constructed below is a coordinate. When the Hessian matrix $\partial^2L/\partial\left(dq_{i}/dt\right)\partial\left(dq_{j}/dt\right)$ is non-singular, the map $(q,dq/dt)\mapsto(q,p)$ is invertible, and the **Legendre transform**
+The **conjugate momenta** are $p_i=\partial L/\partial \left(dq_{i}/dt\right)$. In the Hamiltonian description the coordinates, velocities and momenta are **mutually independent** variables: the relation $p_i=\partial L/\partial\left(dq_{i}/dt\right)$ is used once, to eliminate the velocities in favour of the momenta, and does not thereafter act as a constraint among the phase-space variables. So $H(q,p)$ is differentiated with respect to $p_i$ at fixed $q$, with $dq/dt$ already eliminated; holding $dq/dt$ fixed while varying $p_i$ would describe a different object. This is what makes the passage a change of variables rather than a definition, and it is why the phase-space element $\tilde Q_3=\tilde q+i\tilde p$ constructed below is a coordinate. When the Hessian matrix $\partial^2L/\partial\left(dq_{i}/dt\right)\partial\left(dq_{j}/dt\right)$ is non-singular, the map $(q,dq/dt)\mapsto(q,p)$ is invertible, and the **Legendre transform**
 
 $$
 H(q,p,t)=p_i\,dq_{i}/dt-L(q,dq/dt,t)
@@ -279,22 +279,22 @@ the centrifugal term appearing as a consequence of the transform rather than as 
 For a system with three degrees of freedom the position and momentum are pure real quaternions, $\tilde q,\tilde p\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, and they combine into the single biquaternion
 
 $$
-\tilde Z=\tilde q+i\tilde p\in\mathbb{B}.
+\tilde Q_3=\tilde q+i\tilde p\in\mathbb{B}.
 $$
 
 Its anti-Hermitian and Hermitian parts are
 
 $$
-\tilde Z_{-}=\tfrac{1}{2}\!\left(\tilde Z-\tilde Z^{*}\right)=\tilde q\in\mathbb{M}_-,\qquad
-\tilde Z_{+}=\tfrac{1}{2}\!\left(\tilde Z+\tilde Z^{*}\right)=i\tilde p\in\mathbb{M}_+,
+\tilde Q_{3-}=\tfrac{1}{2}\!\left(\tilde Q_3-\tilde Q_3^{*}\right)=\tilde q\in\mathbb{M}_-,\qquad
+\tilde Q_{3+}=\tfrac{1}{2}\!\left(\tilde Q_3+\tilde Q_3^{*}\right)=i\tilde p\in\mathbb{M}_+,
 $$
 
 as follows from $\tilde q^{*}=-\tilde q$ and $(i\tilde p)^\dagger=i\tilde p$ for pure real $\tilde q,\tilde p$. The phase-space coordinate is thus a general biquaternion; its **material part is the configuration** and its **informational part is $i$ times the momentum**. The two sectors of the algebra separate position from conjugate momentum, and the decomposition $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ is the algebraic form of the split of the phase space into configuration and momentum.
 
-The algebra's **complex structure** is the map $\tilde Z\mapsto i\tilde Z$. Since $i\mathbb{M}_\pm=\mathbb{M}_\mp$, it exchanges the two parts; explicitly,
+The algebra's **complex structure** is the map $\tilde Q_3\mapsto i\tilde Q_3$. Since $i\mathbb{M}_\pm=\mathbb{M}_\mp$, it exchanges the two parts; explicitly,
 
 $$
-i\tilde Z=i\tilde q-\tilde p .
+i\tilde Q_3=i\tilde q-\tilde p .
 $$
 
 Multiplication by $i$ therefore turns the configuration into (minus) the momentum and the momentum into the configuration, up to the sector assignment. This is why the oscillator's quarter-period evolution exchanges the two: the oscillator flow is a rotation in the plane spanned by $\tilde q$ and $\tilde p$, and the complex structure is that rotation by $\pi/2$. It is also the structural statement behind the observation, in the companion article *The Harmonic Oscillator in Biquaternionic Form*, that the oscillator's phase is generated by the sector-exchanging element $ie_t$.
@@ -302,15 +302,15 @@ Multiplication by $i$ therefore turns the configuration into (minus) the momentu
 The same assembly works for a system with four degrees of freedom, with $\tilde q,\tilde p$ general real quaternions, and the sector split then reads
 
 $$
-\tilde Z_{+}=\tfrac{1}{2}\!\left(\tilde Z+\tilde Z^{*}\right)=q_t\,e_t+i\,\vec p ,\qquad
-\tilde Z_{-}=\tfrac{1}{2}\!\left(\tilde Z-\tilde Z^{*}\right)=i\,p_t\,e_t+\vec q ,
+\tilde Q_{3+}=\tfrac{1}{2}\!\left(\tilde Q_3+\tilde Q_3^{*}\right)=q_t\,e_t+i\,\vec p ,\qquad
+\tilde Q_{3-}=\tfrac{1}{2}\!\left(\tilde Q_3-\tilde Q_3^{*}\right)=i\,p_t\,e_t+\vec q ,
 $$
 
 so that the two vector parts separate as configuration and momentum while the two scalar components pair the other way: the configuration scalar $q_t$ is Hermitian and the momentum scalar $i\,p_t$ is anti-Hermitian. The clean statement — material part the configuration, informational part $i$ times the momentum — is the three-degree-of-freedom case $q_t=p_t=0$, which is also the one that carries the spatial interpretation.
 
 ## The Four-Hamiltonian and the Exactness of the Action Form
 
-The phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$ packages the **configuration** with the **momentum**. There is a second packaging, and it is the covariant one: the Hamiltonian with the canonical momentum in the same biquaternion. Gsponer and Hurni call it the **four-Hamiltonian**
+The phase-space biquaternion $\tilde Q_3=\tilde q+i\tilde p$ packages the **configuration** with the **momentum**. There is a second packaging, and it is the covariant one: the Hamiltonian with the canonical momentum in the same biquaternion. Gsponer and Hurni call it the **four-Hamiltonian**
 
 $$
 \Pi = \left[H(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\vec\pi)\,;\,-i\vec\pi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right],
@@ -339,7 +339,7 @@ $$
 which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} dX\circ\Pi = 0$. Hamilton's principle is thus, in this formulation, the **exactness of the four-Hamiltonian one-form**; and for a Hamiltonian with no explicit time dependence the same condition is equivalent to Hamilton's equations $d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt=d H/d\vec\pi$, $d\vec\pi/dt=-d H/d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$.
 
 
-**Two packagings, two sectors.** The contrast with the previous section is exact. The phase-space biquaternion $\tilde Z$ pairs a material part with an informational part; the four-Hamiltonian $\Pi$ lies **entirely** in the Hermitian (informational) sector, its two halves being the Hamiltonian and the momentum rather than a position and a momentum. The corpus has both objects: $\tilde Z$ for the configuration–momentum split and $\Pi$ for the covariant energy–momentum-plus-potential object whose potential is the action.
+**Two packagings, two sectors.** The contrast with the previous section is exact. The phase-space biquaternion $\tilde Q_3$ pairs a material part with an informational part; the four-Hamiltonian $\Pi$ lies **entirely** in the Hermitian (informational) sector, its two halves being the Hamiltonian and the momentum rather than a position and a momentum. The corpus has both objects: $\tilde Q_3$ for the configuration–momentum split and $\Pi$ for the covariant energy–momentum-plus-potential object whose potential is the action.
 
 **The Hamilton–Jacobi rewriting.** With the four-Hamiltonian in hand the relativistic mass-shell identity converts the action postulate into the **relativistic Hamilton–Jacobi equation** for a charged particle in an electromagnetic field: the source's form sets the quaternion square of $i\tilde\nabla S+e\tilde A$ equal to $m^2$, the sign of the $e\tilde A$ term following the charge-sign convention. The non-relativistic Hamilton–Jacobi equation and its biquaternion-norm interpretation are the subject of the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form*; the four-Hamiltonian is the covariant object beneath that equation, and the corpus records it here.
 
@@ -433,7 +433,7 @@ $$
 
 The biquaternion norm is invariant, $\langle\tilde u\tilde q\tilde u^{*}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}$, because the rotor has unit norm. If the potential is rotationally invariant, so is the Lagrangian, and the conserved Noether charge is the angular momentum $\vec L=\vec q\times\vec p$ of the previous section. This is the classical mechanics reading of the rotor: the rotation group is the group of unit real quaternions $SU(2)$, acting on the configuration by conjugation. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the rotor-flow correspondence, and the companion article *Noether's Theorem in Biquaternionic Form* develops the general current construction.
 
-**The central phase.** Because $i$ is central, a central phase acts on the biquaternion-valued configuration by $\tilde q\mapsto \exp(i\alpha)\tilde q$. For a real-quaternion configuration it does not preserve the real subspace — $\exp(i\alpha)\tilde q$ is a complex biquaternion unless $\tilde q=0$ — so it is a symmetry of the complexified formulation rather than of the real configuration space; it becomes a genuine internal symmetry only for a complex biquaternion-valued field, where it is the $\mathrm{U}(1)$ of the companion article *The Gauge Principle in Biquaternionic Form*. It also acts on the free Lagrangian, $L=\tfrac12mN(d\tilde q/dt)\mapsto \exp(2i\alpha)L$, so a real Lagrangian is invariant only for $\exp(2i\alpha)=1$: the transformation is a symmetry of the complexified formulation and not of the real one. In the present classical setting it acts on the phase-space biquaternion $\tilde Z$ and is the algebra's complex structure; its consequences for the action and for the symplectic structure are developed in the companion articles *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* and *The Symplectic Form and the Biquaternion Norm Cone*.
+**The central phase.** Because $i$ is central, a central phase acts on the biquaternion-valued configuration by $\tilde q\mapsto \exp(i\alpha)\tilde q$. For a real-quaternion configuration it does not preserve the real subspace — $\exp(i\alpha)\tilde q$ is a complex biquaternion unless $\tilde q=0$ — so it is a symmetry of the complexified formulation rather than of the real configuration space; it becomes a genuine internal symmetry only for a complex biquaternion-valued field, where it is the $\mathrm{U}(1)$ of the companion article *The Gauge Principle in Biquaternionic Form*. It also acts on the free Lagrangian, $L=\tfrac12mN(d\tilde q/dt)\mapsto \exp(2i\alpha)L$, so a real Lagrangian is invariant only for $\exp(2i\alpha)=1$: the transformation is a symmetry of the complexified formulation and not of the real one. In the present classical setting it acts on the phase-space biquaternion $\tilde Q_3$ and is the algebra's complex structure; its consequences for the action and for the symplectic structure are developed in the companion articles *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* and *The Symplectic Form and the Biquaternion Norm Cone*.
 
 ## What the Formulation Does and Does Not Give
 
@@ -453,12 +453,12 @@ The Lagrangian and Hamiltonian formulations of classical mechanics take the foll
 - The action $S[\tilde q]=\int L\,dt$ is stationary at the physical path, and stationarity gives the single quaternion Euler–Lagrange equation $\frac{d}{dt}\partial L/\partial\left(d\tilde q/dt\right)-\partial L/\partial\tilde q=0$, equivalent to the four real equations.
 - The conjugate momentum is $\tilde p=\partial L/\partial\left(d\tilde q/dt\right)$, and the Hamiltonian is the Legendre transform $H=\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt)-L$. For a free particle $H=\langle\tilde p\rangle_{\natural}/2m$: the free Hamiltonian is the biquaternion norm of the momentum.
 - Hamilton's equations are $d\tilde q/dt=\partial H/\partial\tilde p$, $d\tilde p/dt=-\partial H/\partial\tilde q$.
-- Position and momentum combine into the phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$, whose anti-Hermitian part is the configuration and whose Hermitian part is $i$ times the momentum. The algebra's complex structure $i$ exchanges the two parts.
+- Position and momentum combine into the phase-space biquaternion $\tilde Q_3=\tilde q+i\tilde p$, whose anti-Hermitian part is the configuration and whose Hermitian part is $i$ times the momentum. The algebra's complex structure $i$ exchanges the two parts.
 - The Poisson bracket is $\{f,g\}=\mathrm{Sc}(\overline{\nabla_{\tilde q}f}\nabla_{\tilde p}g)-\mathrm{Sc}(\overline{\nabla_{\tilde p}f}\nabla_{\tilde q}g)$, the scalar part of a quaternion expression; the discarded vector part is the cross product that makes the angular-momentum bracket $\{L_i,L_j\}=\varepsilon_{ijk}L_k$ exact.
 - Rotational symmetry acts by rotor conjugation $\tilde q\mapsto\tilde u\tilde q\tilde u^{*}$, and its Noether charge is $\vec L=\vec q\times\vec p$.
 - The Lagrangian is determined only up to a total time derivative: $L$ and $L+dF(q,t)/dt$ have the same equations of motion, and their actions differ by the endpoint term $F(t_2)-F(t_1)$, which a variation with fixed endpoints cannot see. This is the same boundary freedom that appears as the symplectic potential in the variation of the action.
 - The Legendre transform may be applied to a subset of the coordinates. The partial transform is the **Routhian**, which puts the transformed coordinates — conventionally the cyclic ones, whose momenta are conserved — in Hamiltonian form and the rest in Lagrangian form; for a central potential it produces the centrifugal term as a transformed potential.
-- In the Hamiltonian description coordinates, velocities and momenta are **mutually independent** variables; the relation $\tilde p=\partial L/\partial\left(d\tilde q/dt\right)$ is used only to eliminate the velocity. This is what makes the transform a change of variables and $\tilde Z=\tilde q+i\tilde p$ a coordinate.
+- In the Hamiltonian description coordinates, velocities and momenta are **mutually independent** variables; the relation $\tilde p=\partial L/\partial\left(d\tilde q/dt\right)$ is used only to eliminate the velocity. This is what makes the transform a change of variables and $\tilde Q_3=\tilde q+i\tilde p$ a coordinate.
 - $H=T+V$ is not automatic. It requires $T$ homogeneous of degree two in the velocities, which $T=\tfrac12mN(d\tilde q/dt)$ satisfies by construction; with $L$ time-independent, $H$ is then the conserved energy. Explicit time dependence is preserved by the transform, $\partial H/\partial t=-\partial L/\partial t$.
 - A change of phase-space variables is **canonical** exactly when it preserves the brackets $\{Q_\mu,P_\nu\}=\delta_{\mu\nu}$. The criterion is scalar, so the permitted changes of variable live in the scalar projection of the quaternion product alone.
 
@@ -486,7 +486,7 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $\partial L/\partial\tilde q=\sum_\mu e_\mu\partial L/\partial q_\mu$ | Quaternion gradient of a central-valued function |
 | $\tilde p=\partial L/\partial\left(d\tilde q/dt\right)$ | Conjugate momentum (real quaternion) |
 | $H=\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt)-L$ | Hamiltonian (Legendre transform) |
-| $\tilde Z=\tilde q+i\tilde p$ | Phase-space biquaternion |
+| $\tilde Q_3=\tilde q+i\tilde p$ | Phase-space biquaternion |
 | $\nabla_{\tilde q}f,\nabla_{\tilde p}f$ | Gradients of an observable |
 | $\{f,g\}$ | Poisson bracket |
 | $\vec L=\vec q\times\vec p$ | Angular momentum |

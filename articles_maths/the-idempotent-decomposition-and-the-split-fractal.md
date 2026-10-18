@@ -14,7 +14,7 @@ $$
 \tilde Q_{11}=\tilde\Pi\tilde Q\tilde\Pi,\quad \tilde Q_{12}=\tilde\Pi\tilde Q\tilde\Pi',\quad \tilde Q_{21}=\tilde\Pi'\tilde Q\tilde\Pi,\quad \tilde Q_{22}=\tilde\Pi'\tilde Q\tilde\Pi',
 $$
 
-so that $\tilde Q=\tilde Q_{11}+\tilde Q_{12}+\tilde Q_{21}+\tilde Q_{22}$. The family is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$.
+so that $\tilde Q=\tilde Q_{11}+\tilde Q_{12}+\tilde Q_{21}+\tilde Q_{22}$. The family is $F_{\tilde Q_3}(\tilde Q)=\tilde Q^2+\tilde Q_3$.
 
 ## The Peirce Components and the Halves
 
@@ -36,7 +36,7 @@ $$
 
 ## The Split Subalgebra and Its Fractal
 
-**Theorem (the split fractal).** Let $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ be a parameter in the idempotent plane $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$. Then $W_{\tilde\Pi}$ is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$, the restriction of $F_{\tilde C}$ to it is
+**Theorem (the split fractal).** Let $\tilde Q_3=C_1\tilde\Pi+C_2\tilde\Pi'$ be a parameter in the idempotent plane $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$. Then $W_{\tilde\Pi}$ is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$, the restriction of $F_{\tilde Q_3}$ to it is
 
 $$
 A\tilde\Pi+B\tilde\Pi'\longmapsto(A^2+C_1)\tilde\Pi+(B^2+C_2)\tilde\Pi',
@@ -45,7 +45,7 @@ $$
 and the restriction of the filled Julia set and the Julia set to the plane are
 
 $$
-\mathcal K_{\tilde C}\cap W_{\tilde\Pi}=\bigl(K_{C_1}\tilde\Pi\bigr)\oplus\bigl(K_{C_2}\tilde\Pi'\bigr), \qquad J_{\tilde C}\cap W_{\tilde\Pi}=\partial\bigl(K_{C_1}\times K_{C_2}\bigr),
+\mathcal K_{\tilde Q_3}\cap W_{\tilde\Pi}=\bigl(K_{C_1}\tilde\Pi\bigr)\oplus\bigl(K_{C_2}\tilde\Pi'\bigr), \qquad J_{\tilde Q_3}\cap W_{\tilde\Pi}=\partial\bigl(K_{C_1}\times K_{C_2}\bigr),
 $$
 
 the product of two complex filled Julia sets. The **split fractal** is this product, and it is the fractal of the diagonal model.
@@ -66,9 +66,9 @@ Hence the two diagonal entries evolve by $a\mapsto a^2+bc$ and $d\mapsto cb+d^2$
 
 **Proof.** Direct multiplication of two two-by-two matrices.
 
-**Theorem (the product description is exactly the plane).** The idempotent plane is invariant under $F_{\tilde C}$ if and only if $\tilde C\in W_{\tilde\Pi}$, and in that case the Julia set restricted to the plane is the boundary of $K_{C_1}\times K_{C_2}$. If $\tilde C\notin W_{\tilde\Pi}$ the plane is not invariant and no product $J_{C_1}\times J_{C_2}$ of two complex Julia sets describes $J_{\tilde C}$: the two halves are coupled through the trace and the off-diagonal product.
+**Theorem (the product description is exactly the plane).** The idempotent plane is invariant under $F_{\tilde Q_3}$ if and only if $\tilde Q_3\in W_{\tilde\Pi}$, and in that case the Julia set restricted to the plane is the boundary of $K_{C_1}\times K_{C_2}$. If $\tilde Q_3\notin W_{\tilde\Pi}$ the plane is not invariant and no product $J_{C_1}\times J_{C_2}$ of two complex Julia sets describes $J_{\tilde Q_3}$: the two halves are coupled through the trace and the off-diagonal product.
 
-**Proof.** $F_{\tilde C}(W_{\tilde\Pi})\subset W_{\tilde\Pi}$ requires the off-diagonal entries of $\tilde C$ to vanish, i.e. $\tilde C\in W_{\tilde\Pi}$; for such a parameter the set is the product by the theorem above. For any other parameter the plane is not invariant, and the entry formula of the previous proposition exhibits the coupling: the diagonal entries of $\mathsf{M}_2(\tilde Q^2)$ contain the off-diagonal product $bc$ and the off-diagonal entries contain the trace $a+d$, so the two halves are not independent and their orbits are not the orbits of a pair of one-variable maps. A set that is a product of two one-variable Julia sets would give independent halves, and no such description is available.
+**Proof.** $F_{\tilde Q_3}(W_{\tilde\Pi})\subset W_{\tilde\Pi}$ requires the off-diagonal entries of $\tilde Q_3$ to vanish, i.e. $\tilde Q_3\in W_{\tilde\Pi}$; for such a parameter the set is the product by the theorem above. For any other parameter the plane is not invariant, and the entry formula of the previous proposition exhibits the coupling: the diagonal entries of $\mathsf{M}_2(\tilde Q^2)$ contain the off-diagonal product $bc$ and the off-diagonal entries contain the trace $a+d$, so the two halves are not independent and their orbits are not the orbits of a pair of one-variable maps. A set that is a product of two one-variable Julia sets would give independent halves, and no such description is available.
 
 **Remark (the reconstruction is obstructed).** The pair of halves is not enough to determine the orbit, because the coupling term $bc$ enters the diagonal dynamics; the reconstruction of the biquaternion fractal from the split fractal therefore fails, and the failure is quantitative: the coupling is bilinear in the off-diagonal entries and can be small in a slice and large in the fractal. **The split fractal is an exact slice and not a decomposition.**
 

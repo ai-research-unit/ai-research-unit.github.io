@@ -162,7 +162,7 @@ $$
 
 **Example (a unit of norm one).** For $\tilde p = 1 + \vec e_x + \vec e_y$, the split-quaternion norm is $\langle\tilde p\rangle_{\natural} = 1 + 1 - 1 = 1$, so $\tilde p^{-1} = \tilde p^{\natural} = 1 - \vec e_x - \vec e_y$; indeed $\tilde p \tilde p^{\natural} = (1+\vec e_x+\vec e_y)(1-\vec e_x-\vec e_y) = 1$. Since $\langle\tilde p\rangle_{\natural} = 1$, the element is a unit split-quaternion.
 
-**Example (a unit of negative norm).** For $\tilde r = \vec e_y$, the split-quaternion norm is $\langle\tilde r\rangle_{\natural} = -1$, and $\tilde r^{-1} = \bar{\tilde r}/\langle\tilde r\rangle_{\natural} = (-\vec e_y)/(-1) = \vec e_y$, consistent with $\vec e_y^2 = 1$. 
+**Example (a unit of negative norm).** For $\tilde q_1 = \vec e_y$, the split-quaternion norm is $\langle\tilde q_1\rangle_{\natural} = -1$, and $\tilde q_1^{-1} = \bar{\tilde q_1}/\langle\tilde q_1\rangle_{\natural} = (-\vec e_y)/(-1) = \vec e_y$, consistent with $\vec e_y^2 = 1$. 
 
 **Example (a non-unit).** For $w = 1 + \vec e_z$, the split-quaternion norm is $\langle w\rangle_{\natural} = 1 - 1 = 0$, so $w$ is not invertible; and indeed $(1+\vec e_z)(1-\vec e_z) = 0$. 
 

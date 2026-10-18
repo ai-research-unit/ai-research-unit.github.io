@@ -2,16 +2,16 @@
 
 ## Introduction
 
-The biquaternion algebra is isomorphic to the algebra of two-by-two complex matrices, and the isomorphism transports the quadratic family to the matrix family $M\mapsto M^2+N$ with $N=\mathsf{M}_2(\tilde C)$, the conjugations to the operations of adjugate, conjugate transpose and their composition, and the two norms $\langle\cdot\rangle_{\natural}$ and $\|\cdot\|_E$ to the determinant and, up to the factor $\sqrt2$, the Frobenius norm. The model is the working tool of the category: every computation in the biquaternion dynamics is a computation in $M_2(\mathbb{C})$, and every invariant of the element is an invariant of its matrix. The article states what the model carries, what it does not, and where the passage has a twist.
+The biquaternion algebra is isomorphic to the algebra of two-by-two complex matrices, and the isomorphism transports the quadratic family to the matrix family $M\mapsto M^2+N$ with $N=\mathsf{M}_2(\tilde Q_3)$, the conjugations to the operations of adjugate, conjugate transpose and their composition, and the two norms $\langle\cdot\rangle_{\natural}$ and $\|\cdot\|_E$ to the determinant and, up to the factor $\sqrt2$, the Frobenius norm. The model is the working tool of the category: every computation in the biquaternion dynamics is a computation in $M_2(\mathbb{C})$, and every invariant of the element is an invariant of its matrix. The article states what the model carries, what it does not, and where the passage has a twist.
 
 The isomorphism and its basic properties, the trace and the determinant, the spectrum and the Cayley–Hamilton identity are *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; the four conjugations in matrix form are in the second of these; the quadratic family is *The Biquaternion Quadratic Map and Its Julia Sets*; the norms are *Norm and Invertibility in the General Quaternionic Algebra*. The several-variable complex theory the matrix family belongs to is *Several Complex Variables* and the holomorphic dynamics of Part III.
 
 The article owns the transport of the family, the norm comparison that makes the escape notions agree, the eigenvalue and determinant invariants along the orbit, the reading of the dynamics as two-variable matrix iteration, and the warning that the isomorphism concerns the elements and not the operators on them. It does not re-derive the isomorphism or the conjugations.
 
-**Standing convention.** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix realization, $M=\mathsf{M}_2(\tilde Q_1)$, $N=\mathsf{M}_2(\tilde C)$, and the matrix family is
+**Standing convention.** $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ is the matrix realization, $M=\mathsf{M}_2(\tilde Q_1)$, $N=\mathsf{M}_2(\tilde Q_3)$, and the matrix family is
 
 $$
-\mathsf{M}_2\circ F_{\tilde C}\circ\mathsf{M}_2^{-1}=\bigl(M\mapsto M^2+N\bigr).
+\mathsf{M}_2\circ F_{\tilde Q_3}\circ\mathsf{M}_2^{-1}=\bigl(M\mapsto M^2+N\bigr).
 $$
 
 The model of an element is the matrix
@@ -24,15 +24,15 @@ of determinant $\langle\tilde Q_1\rangle_{\natural}=Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q
 
 ## The Model as a Model of the Dynamics
 
-**Theorem (transport of the family).** For every $n$, $\mathsf{M}_2(F_{\tilde C}^n(\tilde Q_1))=p_n(\mathsf{M}_2(\tilde Q_1))$, where $p_0(M)=M$ and $p_{n+1}(M)=p_n(M)^2+N$. Consequently the map $\mathsf{M}_2$ restricts to a bijection
+**Theorem (transport of the family).** For every $n$, $\mathsf{M}_2(F_{\tilde Q_3}^n(\tilde Q_1))=p_n(\mathsf{M}_2(\tilde Q_1))$, where $p_0(M)=M$ and $p_{n+1}(M)=p_n(M)^2+N$. Consequently the map $\mathsf{M}_2$ restricts to a bijection
 
 $$
-\mathcal K_{\tilde C}\;\longleftrightarrow\;\{M\in M_2(\mathbb{C}) : (p_n(M))_{n\ge0} \text{ bounded}\}, \qquad J_{\tilde C}\leftrightarrow \text{the boundary} ,
+\mathcal K_{\tilde Q_3}\;\longleftrightarrow\;\{M\in M_2(\mathbb{C}) : (p_n(M))_{n\ge0} \text{ bounded}\}, \qquad J_{\tilde Q_3}\leftrightarrow \text{the boundary} ,
 $$
 
 and the dynamics of the biquaternion family is conjugate to the dynamics of a polynomial map of the four complex entries of the matrix.
 
-**Proof.** $\mathsf{M}_2$ is multiplicative and $\mathbb{C}$-linear, so $\mathsf{M}_2(\tilde Q_1^2+\tilde C)=\mathsf{M}_2(\tilde Q_1)^2+\mathsf{M}_2(\tilde C)$ and induction gives the transport of the orbit; a bijective linear map preserves boundedness and boundaries.
+**Proof.** $\mathsf{M}_2$ is multiplicative and $\mathbb{C}$-linear, so $\mathsf{M}_2(\tilde Q_1^2+\tilde Q_3)=\mathsf{M}_2(\tilde Q_1)^2+\mathsf{M}_2(\tilde Q_3)$ and induction gives the transport of the orbit; a bijective linear map preserves boundedness and boundaries.
 
 **Remark (the reduction to four complex coordinates).** The matrix has four complex entries; with $M=\begin{pmatrix}\alpha&\beta\\\gamma&\delta\end{pmatrix}$ its square is
 
@@ -80,7 +80,7 @@ $$
 
 **Proof.** $\det\mathsf{M}_2=N$ and $\operatorname{tr}\mathsf{M}_2=2Q_{1t}$ are the trace-and-determinant proposition of the matrix-element-representation article, applied to the iterate. For a central zero parameter $\mathsf{M}_2(\tilde Q_{1,n})=\mathsf{M}_2(\tilde Q_1)^{2^n}$ and the determinant is multiplicative.
 
-**Theorem (the spectrum and the central parameter).** The spectrum of $\mathsf{M}_2(\tilde Q_{1,n})$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q_1)$, where $q_n$ are the iterates of $\zeta\mapsto\zeta^2+C$ when $\tilde C=Ce_t$; in particular the trace and the determinant of the iterate are the elementary symmetric functions of the two transported eigenvalues.
+**Theorem (the spectrum and the central parameter).** The spectrum of $\mathsf{M}_2(\tilde Q_{1,n})$ is $\{q_n(\lambda_1),q_n(\lambda_2)\}$ for the spectrum $\{\lambda_1,\lambda_2\}$ of $\mathsf{M}_2(\tilde Q_1)$, where $q_n$ are the iterates of $\zeta\mapsto\zeta^2+C$ when $\tilde Q_3=Ce_t$; in particular the trace and the determinant of the iterate are the elementary symmetric functions of the two transported eigenvalues.
 
 **Proof.** The functional calculus of the polynomial $p_n$ on a two-by-two matrix and the elementary symmetric functions of the spectrum. This is the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*, here read as a statement of the model.
 
@@ -114,7 +114,7 @@ of determinant $\langle\tilde Q_1\rangle_{\natural}^2$ and trace $4Q_{1t}$, with
 **Corollary (where the operator enters the dynamics).** The derivative of the quadratic family is the sum of two operators on the space and not an element,
 
 $$
-dF_{\tilde C}\big|_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1=L_{\tilde Q_1}(\tilde Q_2)+R_{\tilde Q_1}(\tilde Q_2),
+dF_{\tilde Q_3}\big|_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1=L_{\tilde Q_1}(\tilde Q_2)+R_{\tilde Q_1}(\tilde Q_2),
 $$
 
 which is why the critical set is read from the pair of eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ — $\det dF=4\langle\tilde Q_1\rangle_{\natural}(2Q_{1t})^2$ — and not from the matrix of the element alone.
@@ -132,12 +132,12 @@ The matrix model conjugates the biquaternion quadratic family to the polynomial 
 | symbol | meaning |
 |---|---|
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the matrix realization |
-| $M=\mathsf{M}_2(\tilde Q_1)$, $N=\mathsf{M}_2(\tilde C)$ | the matrix of the point and of the parameter |
+| $M=\mathsf{M}_2(\tilde Q_1)$, $N=\mathsf{M}_2(\tilde Q_3)$ | the matrix of the point and of the parameter |
 | $\|\cdot\|_F$, $\|\cdot\|_2$ | the Frobenius and operator norms |
 | $\|\cdot\|_E$ | the Euclidean norm on $\mathbb{B}$ |
 | $p_n$ | the iterated polynomial, $p_{n+1}=p_n^2+N$ |
 | $L_{\tilde Q_1}$, $R_{\tilde Q_1}$ | left and right multiplication operators |
-| $dF_{\tilde C}=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$ | the derivative, the sum of two operators |
+| $dF_{\tilde Q_3}=\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1$ | the derivative, the sum of two operators |
 | $\det dF=4\langle\tilde Q_1\rangle_{\natural}(2Q_{1t})^2$ | the determinant of the derivative |
 
 ## Further Reading

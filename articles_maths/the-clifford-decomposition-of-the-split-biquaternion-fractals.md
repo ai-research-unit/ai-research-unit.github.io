@@ -24,16 +24,16 @@ and the even part is a subalgebra isomorphic to the quaternion algebra, hence a 
 
 ## The Even–Odd Formula of the Quadratic Family
 
-**Proposition (the even–odd formula).** Write $\tilde Q=\tilde q+j\tilde q'$ and $\tilde C=\tilde c+j\tilde c'$ with $\tilde q,\tilde q',\tilde c,\tilde c'\in\mathbb{H}$. Then
+**Proposition (the even–odd formula).** Write $\tilde Q=\tilde q+j\tilde q'$ and $\tilde Q_1=\tilde c+j\tilde c'$ with $\tilde q,\tilde q',\tilde c,\tilde c'\in\mathbb{H}$. Then
 
 $$
-F_{\tilde C}(\tilde Q)=\bigl(\tilde q^2+\tilde q'^2+\tilde c\bigr)+j\bigl(\tilde q\tilde q'+\tilde q'\tilde q+\tilde c'\bigr) ,
+F_{\tilde Q_1}(\tilde Q)=\bigl(\tilde q^2+\tilde q'^2+\tilde c\bigr)+j\bigl(\tilde q\tilde q'+\tilde q'\tilde q+\tilde c'\bigr) ,
 $$
 
-so the even part of the image is $\tilde q^2+\tilde q'^2+\tilde c$ and the odd part is $j$ times the anticommutator $\{\tilde q,\tilde q'\}$ plus $\tilde c'$. In particular the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is invariant if and only if $\tilde C$ is even, and then the restriction of the family to it is the quaternion quadratic family,
+so the even part of the image is $\tilde q^2+\tilde q'^2+\tilde c$ and the odd part is $j$ times the anticommutator $\{\tilde q,\tilde q'\}$ plus $\tilde c'$. In particular the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is invariant if and only if $\tilde Q_1$ is even, and then the restriction of the family to it is the quaternion quadratic family,
 
 $$
-F_{\tilde C}\big|_{\mathrm{Cl}^0}:\tilde q\longmapsto\tilde q^2+\tilde c .
+F_{\tilde Q_1}\big|_{\mathrm{Cl}^0}:\tilde q\longmapsto\tilde q^2+\tilde c .
 $$
 
 **Proof.** Expand $(\tilde q+j\tilde q')^2=\tilde q^2+\tilde q'^2+j(\tilde q\tilde q'+\tilde q'\tilde q)$ using the centrality of $j$ and $j^2=e_t$; the split of the result into the even part and $j$ times a quaternion is the difference of the two components of the Hadamard transform. The invariance of $\{\tilde q'=0\}$ under the map is the vanishing of the odd part $j\{\tilde q,0\}+\tilde c'$, which happens for all $\tilde q$ exactly when $\tilde c'=0$.
@@ -45,14 +45,14 @@ $$
 **Theorem (the diagonal slice).** Under the idempotent identification $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$, the even part $\mathrm{Cl}^0=\{\tilde q'=0\}$ is the diagonal $\{(\tilde q,\tilde q)\}$, and the slice of the fractal is
 
 $$
-K_{\tilde C}\cap\mathrm{Cl}^0=\bigl\{\tilde q\in\mathbb{H} : \tilde q\in K_{\tilde C_+}\cap K_{\tilde C_-}\bigr\} .
+K_{\tilde Q_1}\cap\mathrm{Cl}^0=\bigl\{\tilde q\in\mathbb{H} : \tilde q\in K_{\tilde Q_{1+}}\cap K_{\tilde Q_{1-}}\bigr\} .
 $$
 
-For an even parameter $\tilde C\in\mathrm{Cl}^0$ one has $\tilde C_+=\tilde C_-=\tilde C$, and the slice is the quaternion filled Julia set $K_{\tilde C}$; the same holds for the Julia set.
+For an even parameter $\tilde Q_1\in\mathrm{Cl}^0$ one has $\tilde Q_{1+}=\tilde Q_{1-}=\tilde Q_1$, and the slice is the quaternion filled Julia set $K_{\tilde Q_1}$; the same holds for the Julia set.
 
-**Proof.** The Hadamard change of variables $\tilde Q_\pm=\tilde q\pm\tilde q'$ carries $\tilde q'=0$ to $\tilde Q_+=\tilde Q_-=\tilde q$, the diagonal; the slice of the product $K_{\tilde C_+}\times K_{\tilde C_-}$ with the diagonal is the intersection. For an even parameter $j\tilde c'=0$ gives $\tilde C_+=\tilde C_-=\tilde C$.
+**Proof.** The Hadamard change of variables $\tilde Q_\pm=\tilde q\pm\tilde q'$ carries $\tilde q'=0$ to $\tilde Q_+=\tilde Q_-=\tilde q$, the diagonal; the slice of the product $K_{\tilde Q_{1+}}\times K_{\tilde Q_{1-}}$ with the diagonal is the intersection. For an even parameter $j\tilde c'=0$ gives $\tilde Q_{1+}=\tilde Q_{1-}=\tilde Q_1$.
 
-**Corollary (the even slice is not the whole fractal).** For an even parameter the quaternion fractal appears twice in a picture of the split-biquaternion fractal, once in the even slice and once in the odd slice, and the two slices are exchanged by the symmetry of the volume element below; for a general parameter the even slice is the intersection $K_{\tilde C_+}\cap K_{\tilde C_-}$ of the two quaternion filled Julia sets.
+**Corollary (the even slice is not the whole fractal).** For an even parameter the quaternion fractal appears twice in a picture of the split-biquaternion fractal, once in the even slice and once in the odd slice, and the two slices are exchanged by the symmetry of the volume element below; for a general parameter the even slice is the intersection $K_{\tilde Q_{1+}}\cap K_{\tilde Q_{1-}}$ of the two quaternion filled Julia sets.
 
 ## The Two Decompositions and Their Relation
 
@@ -79,20 +79,20 @@ So the two ideals $\mathbb{H}\tilde\Pi_{1,2}$ are the eigenspaces of the volume 
 **Theorem (the symmetry by the volume element).** Multiplication by $j$ is an isometry of the Euclidean norm and satisfies
 
 $$
-F_{\tilde C}(j\tilde Q)=F_{\tilde C}(\tilde Q) \quad\text{for every } \tilde Q ,
+F_{\tilde Q_1}(j\tilde Q)=F_{\tilde Q_1}(\tilde Q) \quad\text{for every } \tilde Q ,
 $$
 
 so the orbit of $j\tilde Q$ agrees with the orbit of $\tilde Q$ from the first step, and $j$ maps the filled Julia set and the Julia set to themselves for every parameter, exchanging the even part and the odd part.
 
 **Proof.** $(j\tilde Q)^2=j^2\tilde Q^2=\tilde Q^2$ because $j$ is central with $j^2=e_t$; the isometry is the norm identity of *The Split-Biquaternion Quadratic Family*. Applying the identity to the iterates gives $F^n(j\tilde Q)=F^n(\tilde Q)$ for $n\ge1$, hence the invariance of the two sets.
 
-**Remark (reconstruction from the two chiral components).** The fractal is reconstructed from its two chiral components as their product: $K_{\tilde C}=K_{\tilde C_+}\times K_{\tilde C_-}$ is the set of the pairs, one from each eigenspace of the volume element, and the two components are the two quaternion fractals of the two parameters. The volume element selects the components by the sign of its eigenvalue, so **the two chiral fractals are the two eigenvalues $\mp1$ of $\omega$ read as dynamics, and the split-biquaternion fractal is recovered from them by the product, with no coupling.** The complexification replaces each component by a biquaternion fractal, and the reconstruction is the same product.
+**Remark (reconstruction from the two chiral components).** The fractal is reconstructed from its two chiral components as their product: $K_{\tilde Q_1}=K_{\tilde Q_{1+}}\times K_{\tilde Q_{1-}}$ is the set of the pairs, one from each eigenspace of the volume element, and the two components are the two quaternion fractals of the two parameters. The volume element selects the components by the sign of its eigenvalue, so **the two chiral fractals are the two eigenvalues $\mp1$ of $\omega$ read as dynamics, and the split-biquaternion fractal is recovered from them by the product, with no coupling.** The complexification replaces each component by a biquaternion fractal, and the reconstruction is the same product.
 
 **Remark (the added symmetry and its meaning).** Besides the antipodal symmetry $F(-\tilde Q)=F(\tilde Q)$ of every quadratic family, the split-biquaternion family has the symmetry $j$, which the biquaternion family does not have: the biquaternion algebra has no non-trivial central element of square $+1$ (its centre is $\mathbb{C}$, whose only central elements of square $+1$ are $\pm e_t$) and no parity grading of its square. **The volume-element symmetry is the geometric content of the parity grading: it is an isometry of the fractal that exchanges the two decompositions, and it is the reason the quaternion fractal appears twice, once on each chiral side.**
 
 ## Summary
 
-The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, graded by parity into the even part, a copy of the quaternion division algebra generated by the bivectors, and the odd part $j\mathbb{H}$. The quadratic family in even–odd form has even part $\tilde q^2+\tilde q'^2+\tilde c$ and odd part $j(\{\tilde q,\tilde q'\}+\tilde c')$, so the even part is invariant exactly for an even parameter and then carries the quaternion quadratic family. Under the idempotent identification the even part is the diagonal of the product, and its slice of the fractal is the intersection $K_{\tilde C_+}\cap K_{\tilde C_-}$, the whole quaternion filled Julia set for an even parameter. The idempotent and parity decompositions are Hadamard-equivalent as decompositions of the real space and serve different purposes: the first makes the dynamics a product, the second exhibits the quaternion subalgebra. The volume element $\omega=-j$ is central with $\omega^2=e_t$ and acts by $\mp1$ on the two ideals, which are the chiral halves and the two $\mathbb{B}$ summands of the complexification; multiplication by $j$ is an isometric symmetry of the fractal for every parameter, exchanging the even and the odd parts.
+The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, graded by parity into the even part, a copy of the quaternion division algebra generated by the bivectors, and the odd part $j\mathbb{H}$. The quadratic family in even–odd form has even part $\tilde q^2+\tilde q'^2+\tilde c$ and odd part $j(\{\tilde q,\tilde q'\}+\tilde c')$, so the even part is invariant exactly for an even parameter and then carries the quaternion quadratic family. Under the idempotent identification the even part is the diagonal of the product, and its slice of the fractal is the intersection $K_{\tilde Q_{1+}}\cap K_{\tilde Q_{1-}}$, the whole quaternion filled Julia set for an even parameter. The idempotent and parity decompositions are Hadamard-equivalent as decompositions of the real space and serve different purposes: the first makes the dynamics a product, the second exhibits the quaternion subalgebra. The volume element $\omega=-j$ is central with $\omega^2=e_t$ and acts by $\mp1$ on the two ideals, which are the chiral halves and the two $\mathbb{B}$ summands of the complexification; multiplication by $j$ is an isometric symmetry of the fractal for every parameter, exchanging the even and the odd parts.
 
 ## Summary of Notation
 
@@ -104,9 +104,9 @@ The split-biquaternion algebra is the Clifford algebra $\mathrm{Cl}(0,3)$, grade
 | $\omega=E_1E_2E_3=-j$ | the volume element |
 | $\mathrm{Cl}^0=\mathbb{H}$, $\mathrm{Cl}^1=j\mathbb{H}$ | the even part and the odd part |
 | $\tilde Q=\tilde q+j\tilde q'$ | the parity decomposition |
-| $\tilde C=\tilde c+j\tilde c'$ | the parameter of the family |
+| $\tilde Q_1=\tilde c+j\tilde c'$ | the parameter of the family |
 | $\tilde c,\ \tilde c'$ | its two quaternion halves |
-| $\tilde C_\pm=\tilde c\pm\tilde c'$ | the Hadamard components of the parameter |
+| $\tilde Q_{1\pm}=\tilde c\pm\tilde c'$ | the Hadamard components of the parameter |
 | $\tilde Q_\pm=\tilde q\pm\tilde q'$ | the Hadamard transform |
 | $\mathbb{H}\tilde\Pi_{1,2}$ | the two chiral halves, of volume eigenvalue $\mp1$ |
 
