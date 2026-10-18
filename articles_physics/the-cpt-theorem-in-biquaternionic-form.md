@@ -225,7 +225,7 @@ A second interpretation of the same eight operations comes from the Clifford-alg
 | $A\mapsto A$ | identity | $+1$ |
 | $A\mapsto A^{\star}$ | involution (grade involution) | $(-1)^{k}$ |
 | $A\mapsto \tilde{A}$ | reversion | $(-1)^{k(k-1)/2}$ |
-| $A\mapsto A^{\mathrm{rev}}$ | conjugation ($=\tilde{\star}$) | $(-1)^{k(k+1)/2}$ |
+| $A\mapsto A^{\mathrm{rev}}$ | conjugation | $(-1)^{k(k+1)/2}$ |
 
 The conjugation is the composite of the involution and the reversion, so the non-trivial maps form $\{1,\star,\sim,\mathrm{rev}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$. These are exactly the intrinsic maps that the corpus's *Clifford Algebra Representation* computes for $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, where the generators are the grade-one elements $i\vec e_k$: the grade involution is the algebra's complex conjugation $\bar{\cdot}$, reversion is the Hermitian conjugation ${}^{*}$, and their composite, the Clifford conjugation, is the quaternion conjugation ${}^{\natural}$. The classification is therefore not foreign to the algebra; it names maps the algebra already has.
 

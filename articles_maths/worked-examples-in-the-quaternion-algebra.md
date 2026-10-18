@@ -151,7 +151,7 @@ The conjugation action of the unit $u = (1+\vec e_x)/\sqrt2$ maps $\vec e_x$ to 
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Worked element $\tilde q = 1+2\vec e_x-\vec e_y+3\vec e_z$ |
 | $\tilde{q}^{\natural}, -\tilde{q}^{\natural}, -\tilde q$ | Quaternion, vector and total conjugation |
 | $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_t$ | Fixed space of ${}^{\natural}$ |
-| $\operatorname{Im}\mathbb{H}$ | Fixed space of $\tilde{\cdot}$ |
+| $\operatorname{Im}\mathbb{H}$ | Fixed space of the vector conjugate, $q\mapsto-\tilde q^{\natural}$ |
 | $\langle\cdot\rangle_{\natural}$ | Quaternion norm, from *Quaternion Norm and Invertibility*; $\langle\tilde q\rangle_{\natural} = 15$ for the worked element |
 | $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{\natural}$ | Conjugation action |
 | $R_u$ | Matrix of $\operatorname{Ad}_u$ on $\operatorname{Im}\mathbb{H}$ |

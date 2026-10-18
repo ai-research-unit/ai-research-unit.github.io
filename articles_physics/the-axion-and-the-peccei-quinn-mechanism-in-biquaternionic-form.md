@@ -12,7 +12,7 @@ $$
 a \;\longmapsto\; a + 2\pi f_a ,
 $$
 
-so the Peccei–Quinn symmetry is the framework's central phase symmetry and the axion is its pseudo-Goldstone phase. The framework therefore hosts the Peccei–Quinn symmetry natively. What it does not supply is the anomaly that gives the axion its mass: the coupling $\frac{a}{f_a}F\tilde F$ that generates the potential requires the dual field strength and the chiral measure, which belong to the spinor and general-gauge sectors.
+so the Peccei–Quinn symmetry is the framework's central phase symmetry and the axion is its pseudo-Goldstone phase. The framework therefore hosts the Peccei–Quinn symmetry natively. What it does not supply is the anomaly that gives the axion its mass: the coupling $\frac{a}{f_a}FF^{\mathrm{dual}}$ that generates the potential requires the dual field strength and the chiral measure, which belong to the spinor and general-gauge sectors.
 
 The findings are the following.
 
@@ -35,7 +35,7 @@ is minimised at $a/f_a = -\bar\theta$ modulo $2\pi$, which is the dynamical rela
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the anomaly context and the axial rotation.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the programme the axion belongs to.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$, and the central scalar is $\tilde\Phi = \varphi e_t$ with complex $\varphi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$, whose phase is the axion angle $a/f_a$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, $\Box = \partial^2/\partial Q_t^2+\Delta$, and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$; the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$. The theta term is $S_\theta = \frac{\theta}{32\pi^2}\int F_{\mu\nu}\tilde F^{\mu\nu}$ with $\tilde F^{\mu\nu} = \tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$ and the physical parameter $\bar\theta = \theta + \arg\det M_q$, following the companion article; the strong-CP bound is $|\bar\theta|\lesssim10^{-10}$. The Peccei–Quinn field is $a$, its decay constant $f_a$, and the anomaly-generated scale is $\Lambda^2 = \frac{\sqrt{m_um_d}}{m_u+m_d}m_\pi f_\pi$ with $m_\pi = 135$ MeV, $f_\pi = 92$ MeV and $m_u/m_d = 0.47$. The axion–photon coupling is $g_{a\gamma\gamma} = \frac{\alpha}{2\pi f_a}(E/N - 1.92)$ with $E/N$ the model-dependent anomaly ratio. Natural units $\hbar = c = 1$ are used in the numerical values.
+**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$, and the central scalar is $\tilde\Phi = \varphi e_t$ with complex $\varphi = \tfrac{\rho}{\sqrt2}\exp(ia/f_a)$, whose phase is the axion angle $a/f_a$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, $\Box = \partial^2/\partial Q_t^2+\Delta$, and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$; the trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$. The theta term is $S_\theta = \frac{\theta}{32\pi^2}\int F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}$ with ${F^{\mathrm{dual}}}^{\mu\nu} = \tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$ and the physical parameter $\bar\theta = \theta + \arg\det M_q$, following the companion article; the strong-CP bound is $|\bar\theta|\lesssim10^{-10}$. The Peccei–Quinn field is $a$, its decay constant $f_a$, and the anomaly-generated scale is $\Lambda^2 = \frac{\sqrt{m_um_d}}{m_u+m_d}m_\pi f_\pi$ with $m_\pi = 135$ MeV, $f_\pi = 92$ MeV and $m_u/m_d = 0.47$. The axion–photon coupling is $g_{a\gamma\gamma} = \frac{\alpha}{2\pi f_a}(E/N - 1.92)$ with $E/N$ the model-dependent anomaly ratio. Natural units $\hbar = c = 1$ are used in the numerical values.
 
 ## The Strong CP Problem and the Theta Parameter
 
@@ -44,12 +44,12 @@ The Peccei–Quinn mechanism is a response to strong CP, and this section states
 **The theta term.** Quantum chromodynamics admits the CP-odd term
 
 $$
-S_\theta = \frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}\tilde F^{a\,\mu\nu} ,
+S_\theta = \frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} ,
 \qquad
-\tilde F^{a\,\mu\nu} = \frac12\epsilon^{\mu\nu\rho\sigma}F^a_{\rho\sigma} ,
+{F^{\mathrm{dual}}}^{a\,\mu\nu} = \frac12\epsilon^{\mu\nu\rho\sigma}F^a_{\rho\sigma} ,
 $$
 
-whose integrand is a total derivative but whose integral is the topological charge, $Ϙ = \frac{1}{32\pi^2}\int d^4x\,F^a_{\mu\nu}\tilde F^{a\,\mu\nu}\in\mathbb{Z}$, so that $S_\theta = \theta Ϙ$ and the vacuum is a superposition of sectors weighted by $\exp(i\theta Ϙ)$; this is why $\theta$ is a parameter of the theory and not a coupling that can be removed. The gauge coupling is absorbed into the normalisation of $F$ in this convention, which is the companion article's. The companion article shows that in the biquaternion framework this density is proportional to the framework's second invariant, $F_{\mu\nu}\tilde F^{\mu\nu} = \frac{4i}{c}I_2$ with $I_2 = \vec E\cdot\vec B$ in the $ict$ convention, so the CP-odd character of the theta term is visible in the algebra as the parity of the pseudoscalar invariant. The theta dependence, its periodicity and its vacuum structure are the subject of that article; this article takes $\theta$, and the physical combination $\bar\theta = \theta+\arg\det M_q$, as given.
+whose integrand is a total derivative but whose integral is the topological charge, $Ϙ = \frac{1}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}\in\mathbb{Z}$, so that $S_\theta = \theta Ϙ$ and the vacuum is a superposition of sectors weighted by $\exp(i\theta Ϙ)$; this is why $\theta$ is a parameter of the theory and not a coupling that can be removed. The gauge coupling is absorbed into the normalisation of $F$ in this convention, which is the companion article's. The companion article shows that in the biquaternion framework this density is proportional to the framework's second invariant, $F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu} = \frac{4i}{c}I_2$ with $I_2 = \vec E\cdot\vec B$ in the $ict$ convention, so the CP-odd character of the theta term is visible in the algebra as the parity of the pseudoscalar invariant. The theta dependence, its periodicity and its vacuum structure are the subject of that article; this article takes $\theta$, and the physical combination $\bar\theta = \theta+\arg\det M_q$, as given.
 
 **The problem.** A chiral rotation of the quark fields shifts $\theta$ by $-2N_f\alpha$ and $\arg\det M_q$ by $+2N_f\alpha$, so the physical parameter is the invariant sum $\bar\theta$, and $\theta = 0$ with complex masses is physically equivalent to $\theta\neq0$ with real masses. Nothing in the Standard Model forces $\bar\theta$ to vanish; the natural expectation is $\bar\theta\sim1$, but the neutron electric dipole moment bounds it by
 
@@ -65,7 +65,7 @@ $$
 \bar\theta_{\text{eff}} = \bar\theta + \frac{a}{f_a} ,
 $$
 
-and if the axion's potential is generated by the same anomaly that makes $\bar\theta$ physical, the potential is minimised where the total coefficient of $F\tilde F$ vanishes. The vacuum then selects $\bar\theta_{\text{eff}} = 0$, CP is restored dynamically, and the axion settles at the CP-conserving point. The mechanism is standard (Peccei and Quinn 1977; Weinberg 1978; Wilczek 1978) and is imported up to the identification below.
+and if the axion's potential is generated by the same anomaly that makes $\bar\theta$ physical, the potential is minimised where the total coefficient of $FF^{\mathrm{dual}}$ vanishes. The vacuum then selects $\bar\theta_{\text{eff}} = 0$, CP is restored dynamically, and the axion settles at the CP-conserving point. The mechanism is standard (Peccei and Quinn 1977; Weinberg 1978; Wilczek 1978) and is imported up to the identification below.
 
 ## The Peccei–Quinn Symmetry as the Central Phase
 
@@ -183,18 +183,18 @@ The potential of the previous section is the vacuum energy of the theta vacuum p
 **The coupling.** The Peccei–Quinn current is anomalous, and its divergence is the topological density,
 
 $$
-\partial/\partial Q_\mu\,j^\mu_{PQ} = \frac{1}{32\pi^2}\,F^a_{\mu\nu}\tilde F^{a\,\mu\nu} .
+\partial/\partial Q_\mu\,j^\mu_{PQ} = \frac{1}{32\pi^2}\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} .
 $$
 
-That density is itself a total derivative, $F^a_{\mu\nu}\tilde F^{a\,\mu\nu} = \partial/\partial Q_\mu\,K^\mu$, with $K^\mu$ the Chern–Simons current. The axion therefore couples to the gauge fields through the topological density,
+That density is itself a total derivative, $F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} = \partial/\partial Q_\mu\,K^\mu$, with $K^\mu$ the Chern–Simons current. The axion therefore couples to the gauge fields through the topological density,
 
 $$
-\mathcal{L}_{aG\tilde G} = \frac{a}{f_a}\,\frac{1}{32\pi^2}\,F^a_{\mu\nu}\tilde F^{a\,\mu\nu} ,
+\mathcal{L}_{aGG} = \frac{a}{f_a}\,\frac{1}{32\pi^2}\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu} ,
 $$
 
 and, because the density is a total derivative, the coupling is equivalent to a derivative coupling of the axion to the Chern–Simons current, $\frac{1}{f_a}\partial/\partial Q_\mu\,a\,K^\mu$. This is the coupling that generates the potential: integrating out the gauge fields in the presence of this term produces the periodic function of $a/f_a+\bar\theta$ written above, and the coefficient $\Lambda^4$ is the topological susceptibility of the gauge sector.
 
-**Compatibility with the periodicity.** The theta term's charge is quantised, $\frac{1}{32\pi^2}\int d^4x\,F\tilde F = Ϙ\in\mathbb{Z}$, so under the shift $a\to a+2\pi f_a$ the axion's coupling changes the action by
+**Compatibility with the periodicity.** The theta term's charge is quantised, $\frac{1}{32\pi^2}\int d^4x\,FF^{\mathrm{dual}} = Ϙ\in\mathbb{Z}$, so under the shift $a\to a+2\pi f_a$ the axion's coupling changes the action by
 
 $$
 \Delta S = \frac{2\pi f_a}{f_a}\,Ϙ = 2\pi Ϙ ,
@@ -210,7 +210,7 @@ and $\exp(i\Delta S) = 1$. The periodicity of the axion field is therefore **com
 
 **The axion is a central phase.** The axion field is the angular part of the central scalar, $a = f_a\arg\varphi$, and its kinetic term is the central scalar's kinetic term with the radial mode frozen at its expectation value. The axion is therefore a **central**, and hence singlet, field: it carries no isospin, no colour and no electric charge, which is the correct Standard Model assignment for the QCD axion at the level of the algebra. The material-sector and informational-sector contents are untouched. This is the same central singlet that the Higgs and Goldstone articles use, read in its angular mode.
 
-**The anomaly is the boundary.** The axion's mass, its CP-restoring minimum and its couplings all come from the coupling $\frac{a}{f_a}F\tilde F$, which requires the QCD field strength, its dual, and the fermionic measure that makes the axial rotation anomalous. The dual field strength and the chiral measure belong to the general-gauge and spinor sectors; the framework's centre is not anomalously coupled by itself, and the companion articles on chiral fermions and on the theta parameter record where the anomaly sits. The framework therefore supplies the field and the symmetry, and the anomaly that lifts the field is imported. This is the same boundary the pion article draws for the axial current, seen from the scalar side.
+**The anomaly is the boundary.** The axion's mass, its CP-restoring minimum and its couplings all come from the coupling $\frac{a}{f_a}FF^{\mathrm{dual}}$, which requires the QCD field strength, its dual, and the fermionic measure that makes the axial rotation anomalous. The dual field strength and the chiral measure belong to the general-gauge and spinor sectors; the framework's centre is not anomalously coupled by itself, and the companion articles on chiral fermions and on the theta parameter record where the anomaly sits. The framework therefore supplies the field and the symmetry, and the anomaly that lifts the field is imported. This is the same boundary the pion article draws for the axial current, seen from the scalar side.
 
 **The theta parameter is not an output.** As the companion theta-article states, $\theta$ labels the vacuum and is not an element of the algebra; the framework supplies the density and the periodicity and not the value. The Peccei–Quinn mechanism is the dynamical promotion of that parameter to a field, and so it converts the framework's inability to fix $\theta$ into a field that the vacuum fixes itself. What remains unavailable to the framework is the anomaly that does the fixing and the value of $f_a$, which is a parameter of the Peccei–Quinn sector rather than an output of the algebra.
 
@@ -269,7 +269,7 @@ The framework's contribution is the exact global phase symmetry of the centre, t
 | $v_0 = \vert\langle\varphi\rangle\vert$, $f_a = \sqrt2\,v_0$ | Scalar vacuum value; its relation to the decay constant |
 | $f_a$ | Peccei–Quinn / axion decay constant |
 | $\bar\theta = \theta+\arg\det M_q$ | Physical CP-violating parameter (companion article) |
-| $S_\theta = \frac{\theta}{32\pi^2}\int F\tilde F$ | Theta term (companion article) |
+| $S_\theta = \frac{\theta}{32\pi^2}\int FF^{\mathrm{dual}}$ | Theta term (companion article) |
 | $\bar\theta_{\text{eff}} = \bar\theta + a/f_a$ | Effective theta parameter including the axion |
 | $V = \Lambda^4[1-\cos(\bar\theta+a/f_a)]$ | Anomaly-generated axion potential |
 | $\Lambda^2 = \frac{\sqrt{m_um_d}}{m_u+m_d}m_\pi f_\pi$ | Topological-susceptibility matching scale ($\approx(76\ \mathrm{MeV})^2$) |

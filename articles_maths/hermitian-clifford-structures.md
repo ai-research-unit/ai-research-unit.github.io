@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A real Clifford algebra carries the anti-involutions of reversion $\tilde{\ }$, grade involution $\alpha$ and Clifford conjugation $\hat{\ }$, none of which uses a Hermitian form. A **Hermitian Clifford structure** is a Clifford structure together with a Hermitian form on its module, so that the conjugation of the form, written $x\mapsto x^{\dagger}$, becomes a fourth anti-involution, the **Hermitian conjugation**, and the Clifford multiplication is required to be compatible with the form in the sense
+A real Clifford algebra carries the anti-involutions of reversion $x\mapsto x^{r}$, grade involution $\alpha$ and Clifford conjugation $\hat x=\alpha(x^{r})$, none of which uses a Hermitian form. A **Hermitian Clifford structure** is a Clifford structure together with a Hermitian form on its module, so that the conjugation of the form, written $x\mapsto x^{\dagger}$, becomes a fourth anti-involution, the **Hermitian conjugation**, and the Clifford multiplication is required to be compatible with the form in the sense
 
 $$
 c(b)^{\dagger}=-c(b) ,
@@ -23,7 +23,7 @@ $$
 
 together with a non-degenerate Hermitian form $h$ on $\mathbb{C}\ell(V,\mathfrak{Q})$ with respect to which $h(x^{\dagger}y,z)=h(y,xz)$; on the vectors it is compatible with the quadratic form.
 
-**Proposition.** The Hermitian conjugation exists, it is determined up to the unitary group of $h$, and on a vector it satisfies $b^{\dagger}=\bar\cdot$-linear in $b$ with the value determined by the compatibility with $Q$; it commutes with the grade involution, $\alpha(x^{\dagger})=\alpha(x)^{\dagger}$, and it is distinct from the Clifford conjugation $\hat x=\alpha(\tilde x)$ whenever the form is not real.
+**Proposition.** The Hermitian conjugation exists, it is determined up to the unitary group of $h$, and on a vector it satisfies $b^{\dagger}=\bar\cdot$-linear in $b$ with the value determined by the compatibility with $Q$; it commutes with the grade involution, $\alpha(x^{\dagger})=\alpha(x)^{\dagger}$, and it is distinct from the Clifford conjugation $\hat x=\alpha(x^{r})$ whenever the form is not real.
 
 **Proof.** The construction is that of a dagger on an algebra with a trace form in *Hilbert Algebras*: the form $h$ gives the conjugate-linear isomorphism with the dual, and the transpose of the left multiplication supplies the anti-involution; the compatibility with $Q$ fixes the values on the generating vectors up to a unitary; the commutation with $\alpha$ is the compatibility of the grading; the distinction from $\hat x$ is the presence of the complex conjugation of the coefficients.
 
@@ -101,7 +101,7 @@ A **Hermitian Clifford structure** is a Clifford structure together with a Hermi
 | $c(b)^{\dagger}=-c(b)$ | Skew-adjointness; geometric convention |
 | $\Pi^{\dagger}=\Pi=\Pi^{-1}$ | Self-adjoint unitary chirality in even dimension |
 | $c(b)S^\pm\subseteq S^\mp$ | The multiplication by a vector interchanges the chiral halves |
-| $\hat x=\alpha(\tilde x)$ | Clifford conjugation; **not** the Hermitian conjugation |
+| $\hat x=\alpha(x^{r})$ | Clifford conjugation; **not** the Hermitian conjugation |
 
 ## Further Reading
 

@@ -315,7 +315,7 @@ The commutator $[\tilde q_1,\tilde q_2] = \tilde q_1\tilde q_2 - \tilde q_2\tild
 | $-\tilde{q}^{\natural} = -q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Vector conjugate |
 | $-\tilde q = -q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ | Total conjugate |
 | $\mathbb{R}_{\mathbb{H}}$ | Real subspace, fixed-point set of ${}^{\natural}$ |
-| $\operatorname{Im}\mathbb{H}$ | Vector subspace, fixed-point set of $\tilde{\cdot}$ |
+| $\operatorname{Im}\mathbb{H}$ | Vector subspace, fixed-point set of the vector conjugate, $q\mapsto-\tilde q^{\natural}$ |
 | $\mathrm{SO}(3)$ | Lie algebra of rotations |
 
 ## Further Reading
