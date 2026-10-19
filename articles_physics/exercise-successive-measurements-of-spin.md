@@ -188,7 +188,7 @@ $$
 
 Measuring $z$ first leaves the state unchanged (it is already spin-up along $z$), and then measuring $x$ gives $+$ with probability $1/2$.
 
-These agree with the physical expectation: a measurement along a direction $\vec u$ destroys the information about the spin along any non-parallel direction, and the information about parallel directions is preserved.
+These agree with the physical expectation: a measurement along a direction $\vec u$ destroys the previous information about the spin along any non-parallel direction, and the information about parallel directions is preserved.
 
 ## What the Biquaternion Solution Illustrates
 

@@ -6,7 +6,7 @@ The physical point comes first. The Lorentz rotor group, the group of unit-norm 
 
 The **regular representation** of the biquaternion algebra is the algebra acting on itself on the left. Multiplication on the left by a fixed element is linear on the four-dimensional space $\mathbb{B}$, so in the basis $e_t, \vec e_x, \vec e_y, \vec e_z$ it is a $4 \times 4$ complex matrix. This article constructs that matrix and its companion for multiplication on the right, proves that the two constructions are multiplicative, and reads off the consequences: the determinant is the **square** of the biquaternion norm and the trace is four times the scalar part; the regular module is the direct sum of two copies of the simple module, which in this corpus are the two **chiralities**; the centralizer of the left copy is the right copy; and the two copies together give the two-sided action by which a Lorentz transformation of a four-vector is written. The image of the left multiplication is written $M_4(\mathbb{C})_L$: the subspace of $M_4(\mathbb{C})$ of the regular matrices, of complex dimension $4$ inside the $16$ of the matrix algebra.
 
-The conventions are those of *Conventions in the Biquaternion Universe* and of the two companion articles, and none is redefined. The basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$; the scalar imaginary $i$ commutes with every unit; the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$; the biquaternion norm is $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$; the subspaces are $\mathbb{C}_{\mathbb{B}}$ (centre), $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ (real), $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ (informational) and $\mathbb{M}_-$ (material); the physical coordinates are $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ in $\mathbb{M}_-$ and $ct'\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ in $\mathbb{M}_+$, with $x,y,z$ and $x',y',z'$ real; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_{1t}^2 + \Delta$.
+The conventions are those of *Conventions in the Biquaternion Universe* and of the two companion articles, and none is redefined. The basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$; the scalar imaginary $i$ commutes with every unit; the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$; the biquaternion norm is $N:=\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$; the subspaces are $\mathbb{C}_{\mathbb{B}}$ (centre), $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ (real), $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ (informational) and $\mathbb{M}_-$ (material); the physical coordinates are $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ in $\mathbb{M}_-$ and $ct'\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ in $\mathbb{M}_+$, with $x,y,z$ and $x',y',z'$ real; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_{1t}^2 + \Delta$.
 
 ## The Left Regular Matrix
 
@@ -40,10 +40,10 @@ $$
 
 the Cayley matrix of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Each entry is a single coefficient of $\tilde{Q}_1$ carrying a sign, and **no entry is a sum of two or more coefficients**, because in this basis every product of basis elements is one basis element times a sign.
 
-**Proof (the general matrix).** The columns are the products $\tilde{Q}e_m$ expressed in the basis. For $m = 0$ the image is $\tilde{Q}_1$ itself, giving the first column $(Q_{1t}, Q_{1x}, Q_{1y}, Q_{1z})$. For $m = \mu \in \{x,y,z\}$ one uses $e_t \vec e_\mu = \vec e_\mu$ and $\vec e_\mu \vec e_\nu = \epsilon^{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$ with $\{\mu,\nu,\lambda\} = \{x,y,z\}$, so that
+**Proof (the general matrix).** The columns are the products $\tilde{Q}_1 e_m$ expressed in the basis. For $m = t$ the image is $\tilde{Q}_1$ itself, giving the first column $(Q_{1t}, Q_{1x}, Q_{1y}, Q_{1z})$. For $m = \mu \in \{x,y,z\}$ one uses $e_t \vec e_\mu = \vec e_\mu$ and $\vec e_\mu \vec e_\nu = \epsilon^{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$ with $\{\mu,\nu,\lambda\} = \{x,y,z\}$, so that
 
 $$
-\tilde{Q}_1\vec e_\mu = Q_{1t}\vec e_\mu + Q_{1,\mu}\vec e_\mu^2 + \sum_{\nu \neq \mu} Q_\nu\vec e_\nu \vec e_\mu = Q_{1t}\vec e_\mu - Q_{1,\mu} e_t + \sum_{\nu \neq \mu} \epsilon^{\lambda\nu\mu}Q_\nu\vec e_\lambda .
+\tilde{Q}_1\vec e_\mu = Q_{1t}\vec e_\mu + Q_{1,\mu}\vec e_\mu^2 + \sum_{\nu \neq \mu} Q_{1,\nu}\vec e_\nu \vec e_\mu = Q_{1t}\vec e_\mu - Q_{1,\mu} e_t + \sum_{\nu \neq \mu} \epsilon^{\lambda\nu\mu}Q_{1,\nu}\vec e_\lambda .
 $$
 
 Expanding with $\vec e_x \vec e_y = \vec e_z$, $\vec e_y \vec e_z = \vec e_x$, $\vec e_z \vec e_x = \vec e_y$ gives the displayed columns.
@@ -60,7 +60,7 @@ $$
 \mathsf{M}_4^{L}(\vec e_x)\mathsf{M}_4^{L}(\vec e_y) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 & -1 \\ 0 & 0 & -1 & 0 \\ 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix} = \mathsf{M}_4^{L}(\vec e_z),
 $$
 
-and the other products give $\mathsf{M}_4^{L}(\vec e_y)\mathsf{M}_4^{L}(\vec e_z) = \mathsf{M}_4^{L}(\vec e_x)$ and $\mathsf{M}_4^{L}(\vec e_z)\mathsf{M}_4^{L}(\vec e_x) = \mathsf{M}_4^{L}(\vec e_y)$, reproducing $\vec e_x \vec e_y = \vec e_z$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy. In particular the $m$-th column of $\mathsf{M}_4^{L}(\tilde{Q}_1)$ is the coordinate column of the product $\tilde{Q}e_m$. Write $\operatorname{col}(\tilde{S})$ for the coordinate column of $\tilde{S}$; then the matrix acts on columns by $\mathsf{M}_4^{L}(\tilde{Q}_1)\operatorname{col}(\tilde{S}) = \operatorname{col}(\tilde{Q}_1\tilde{S})$, which is the column convention of *The Four-Vector Element Representation of Biquaternions*, whose column of $\tilde{S}$ is written $S$.
+and the other products give $\mathsf{M}_4^{L}(\vec e_y)\mathsf{M}_4^{L}(\vec e_z) = \mathsf{M}_4^{L}(\vec e_x)$ and $\mathsf{M}_4^{L}(\vec e_z)\mathsf{M}_4^{L}(\vec e_x) = \mathsf{M}_4^{L}(\vec e_y)$, reproducing $\vec e_x \vec e_y = \vec e_z$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy. In particular the $m$-th column of $\mathsf{M}_4^{L}(\tilde{Q}_1)$ is the coordinate column of the product $\tilde{Q}_1 e_m$. Write $\operatorname{col}(\tilde{S})$ for the coordinate column of $\tilde{S}$; then the matrix acts on columns by $\mathsf{M}_4^{L}(\tilde{Q}_1)\operatorname{col}(\tilde{S}) = \operatorname{col}(\tilde{Q}_1\tilde{S})$, which is the column convention of *The Four-Vector Element Representation of Biquaternions*, whose column of $\tilde{S}$ is written $S$.
 
 **The four basis columns.** The matrices act on the columns $Q$ of *The Four-Vector Element Representation of Biquaternions*, whose four basis columns are
 
@@ -224,7 +224,7 @@ $$
 
 The two agree in the lower-right block, which mixes the two space directions $\vec e_y$ and $\vec e_z$, and differ by the sign of the upper-left block, which mixes the time direction $e_t$ with $\vec e_x$.
 
-The proposition above gives the reason: $\mathsf{M}_4^{L}(\tilde{Q}_1)^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}_1^{\natural})$ is a **left** multiplication, so it can equal the right multiplication $\mathsf{M}_4^{R}(\tilde{Q}_1)$ only when the two actions coincide on $\tilde{Q}_1$. Measured exactly, the equations $\mathsf{M}_4^{R}(\tilde{Q}_1) = \mathsf{M}_4^{L}(\tilde{Q}_1)^{\mathsf{T}}$ are linear in the eight real coordinates of $\tilde{Q}_1$ and their solution space has real dimension two, spanned by $e_t$ and $ie_t$: the identity holds on the centre $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_t$ and nowhere else. Replacing $\tilde{Q}_1$ by $\tilde{Q}_1^{\natural}$ gives no second identity, since $\tilde{Q}_1 \mapsto \tilde{Q}_1^{\natural}$ is a bijection of the algebra and the variant is the same equation with the element renamed.
+The proposition above gives the reason: $\mathsf{M}_4^{L}(\tilde{Q}_1)^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}_1^{\natural})$ is a **left** multiplication, so it can equal the right multiplication $\mathsf{M}_4^{R}(\tilde{Q}_1)$ only when the two actions coincide on every element. Measured exactly, the equations $\mathsf{M}_4^{R}(\tilde{Q}_1) = \mathsf{M}_4^{L}(\tilde{Q}_1)^{\mathsf{T}}$ are linear in the eight real coordinates of $\tilde{Q}_1$ and their solution space has real dimension two, spanned by $e_t$ and $ie_t$: the identity holds on the centre $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_t$ and nowhere else. Replacing $\tilde{Q}_1$ by $\tilde{Q}_1^{\natural}$ gives no second identity, since $\tilde{Q}_1 \mapsto \tilde{Q}_1^{\natural}$ is a bijection of the algebra and the variant is the same equation with the element renamed.
 
 **Theorem (the correct relation).** Let $D = \operatorname{diag}(-1,1,1,1)$, so that $D^2 = I$. Then for every biquaternion $\tilde{Q}_1$,
 
@@ -248,10 +248,10 @@ for all columns $R, S$. This is what the failure of the false identity above amo
 
 **Proof.** If $\tilde{Q}_1 = \lambda e_t$ then $\mathsf{M}_4^{L}(\tilde{Q}_1) = \mathsf{M}_4^{R}(\tilde{Q}_1) = \lambda I$, since scalar multiplication is central. Conversely, comparing the two closed forms in the lower-right $3 \times 3$ block, the off-diagonal entries agree only when $Q_{1x} = Q_{1y} = Q_{1z} = 0$; then the element is scalar and the two matrices coincide. Comparing the closed forms directly is the whole proof and no module theory is needed.
 
-**Remark (what left and right mean).** The $m$-th column of the difference $\mathsf{M}_4^{L}(\tilde{Q}_1) - \mathsf{M}_4^{R}(\tilde{Q}_1)$ is the coordinate column of the commutator $[\tilde{Q}_1, e_m] = \tilde{Q}e_m - e_m\tilde{Q}_1$. The difference vanishes on the centre and nowhere else, which is the precise sense in which the two matrices differ because the algebra is non-commutative. On the material sector the commutator has a **physical interpretation**: for two four-vectors $\tilde{Q}_1, \tilde Q_2 \in \mathbb{M}_-$ with real time parameters $q'_t, r'_t$, the scalar component and the symmetric part $q'_tr_\mu + r'_tq_\mu$ cancel, leaving only the antisymmetric combination of the spatial parameters,
+**Remark (what left and right mean).** The $m$-th column of the difference $\mathsf{M}_4^{L}(\tilde{Q}_1) - \mathsf{M}_4^{R}(\tilde{Q}_1)$ is the coordinate column of the commutator $[\tilde{Q}_1, e_m] = \tilde{Q}_1 e_m - e_m\tilde{Q}_1$. The difference vanishes on the centre and nowhere else, which is the precise sense in which the two matrices differ because the algebra is non-commutative. On the material sector the commutator has a **physical interpretation**: for two four-vectors $\tilde{Q}_1, \tilde Q_2 \in \mathbb{M}_-$ with real time parameters $q'_t, r'_t$, the scalar component and the symmetric part $q'_tr_\mu + r'_tq_\mu$ cancel, leaving only the antisymmetric combination of the spatial parameters,
 
 $$
-\tilde{Q}_1\tilde Q_2 - \tilde Q_2\tilde{Q}_1 = 2 \sum_{\lambda=1}^{3} \Big( \sum_{\mu,\nu=1}^{3} \epsilon^{\lambda\mu\nu} q_\mu r_\nu \Big) \vec e_\lambda ,
+\tilde{Q}_1\tilde Q_2 - \tilde Q_2\tilde{Q}_1 = 2 \sum_{\lambda\in\{x,y,z\}} \Big( \sum_{\mu,\nu\in\{x,y,z\}} \epsilon^{\lambda\mu\nu} q_\mu r_\nu \Big) \vec e_\lambda ,
 $$
 
 so the matrix $\mathsf{M}_4^{L}(\tilde{Q}_1) - \mathsf{M}_4^{R}(\tilde{Q}_1)$ carries $\tilde Q_2$ to the element of $\mathrm{Vect}(\mathbb{B})$ whose spatial part is twice $\vec q \times \vec r$.
@@ -276,7 +276,7 @@ $$
 
 so that $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ as a direct sum of left ideals.
 
-**Proof.** Because $i$ is central, $\vec e_z^2 = -e_t$ and $i^2 = -1$, one computes $\tilde\Pi_+^2 = \tfrac14(e_t + 2i\vec e_z + i^2\vec e_z^2) = \tfrac14(e_t + 2i\vec e_z + e_t) = \tilde\Pi_+$, and similarly $\tilde\Pi_-^2 = \tilde\Pi_-$; while $\tilde\Pi_+\tilde\Pi_- = \tfrac14(e_t - i^2\vec e_z^2) = \tfrac14(e_t - e_t) = 0$. The sum is $e_t$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q}_1 = \tilde{Q}_1\tilde\Pi_- = 0$, because membership of $\mathbb{B}\tilde\Pi_-$ gives $\tilde{Q}_1\tilde\Pi_- = \tilde{Q}_1$ while $\tilde\Pi_+\tilde\Pi_- = 0$. The sum is therefore direct. Under the isomorphism $\mathsf{M}_4$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the two idempotents are the matrix units $\tilde\Pi_+ \mapsto E_{11}$ and $\tilde\Pi_- \mapsto E_{22}$, and the two ideals are the two **columns** of the matrix algebra, which the corpus calls the two chiralities.
+**Proof.** Because $i$ is central, $\vec e_z^2 = -e_t$ and $i^2 = -1$, one computes $\tilde\Pi_+^2 = \tfrac14(e_t + 2i\vec e_z + i^2\vec e_z^2) = \tfrac14(e_t + 2i\vec e_z + e_t) = \tilde\Pi_+$, and similarly $\tilde\Pi_-^2 = \tilde\Pi_-$; while $\tilde\Pi_+\tilde\Pi_- = \tfrac14(e_t - i^2\vec e_z^2) = \tfrac14(e_t - e_t) = 0$. The sum is $e_t$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q}_1 = \tilde{Q}_1\tilde\Pi_- = 0$, because membership of $\mathbb{B}\tilde\Pi_-$ gives $\tilde{Q}_1\tilde\Pi_- = \tilde{Q}_1$ while $\tilde\Pi_+\tilde\Pi_- = 0$. The sum is therefore direct. Under the isomorphism $\mathsf{M}_2$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the two idempotents are the matrix units $\tilde\Pi_+ \mapsto E_{11}$ and $\tilde\Pi_- \mapsto E_{22}$, and the two ideals are the two **columns** of the matrix algebra, which the corpus calls the two chiralities.
 
 **Theorem (the left regular matrix is the sum of the two chiralities).** In the basis
 
@@ -296,7 +296,7 @@ $$
 A_-(\tilde{Q}_1) = \begin{pmatrix} Q_{1t} + iQ_{1z} & -Q_{1x} - iQ_{1y} \\ Q_{1x} - iQ_{1y} & Q_{1t} - iQ_{1z} \end{pmatrix},
 $$
 
-and each block has trace $2Q_{1t}$ and determinant $\langle\tilde{Q}_1\rangle_{\natural}$. Consequently each block is similar to the matrix $\mathsf{M}_4(\tilde{Q}_1)$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, each block is a copy of the simple module $S$, and
+and each block has trace $2Q_{1t}$ and determinant $\langle\tilde{Q}_1\rangle_{\natural}$. Consequently each block is similar to the matrix $\mathsf{M}_2(\tilde{Q}_1)$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, each block is a copy of the simple module $S$, and
 
 $$
 \mathsf{M}_4^{L} \cong S \oplus S
@@ -325,20 +325,20 @@ $$
 one has
 
 $$
-\mathsf{M}_4(u_+) = \begin{pmatrix} 1-i & 0 \\ 0 & 1+i \end{pmatrix}, \qquad \mathsf{M}_4(u_-) = \begin{pmatrix} 0 & -1-i \\ 1-i & 0 \end{pmatrix},
+\mathsf{M}_2(u_+) = \begin{pmatrix} 1-i & 0 \\ 0 & 1+i \end{pmatrix}, \qquad \mathsf{M}_2(u_-) = \begin{pmatrix} 0 & -1-i \\ 1-i & 0 \end{pmatrix},
 $$
 
 and
 
 $$
-A_+(\tilde{Q}_1) = \mathsf{M}_4(u_+)\,\mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(u_+)^{-1}, \qquad A_-(\tilde{Q}_1) = \mathsf{M}_4(u_-)\,\mathsf{M}_4(\tilde{Q}_1)\,\mathsf{M}_4(u_-)^{-1}
+A_+(\tilde{Q}_1) = \mathsf{M}_2(u_+)\,\mathsf{M}_2(\tilde{Q}_1)\,\mathsf{M}_2(u_+)^{-1}, \qquad A_-(\tilde{Q}_1) = \mathsf{M}_2(u_-)\,\mathsf{M}_2(\tilde{Q}_1)\,\mathsf{M}_2(u_-)^{-1}
 $$
 
-for every $\tilde{Q}_1$: both sides are $\mathbb{C}$-linear in $\tilde{Q}_1$, so it suffices to compare them on the four basis elements, where they agree. Both conjugating matrices are invertible, since $\det\mathsf{M}_4(u_+) = (1-i)(1+i) = 2 = \det\mathsf{M}_4(u_-)$. Each block therefore realizes the simple module $S$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the regular module is $S \oplus S$.
+for every $\tilde{Q}_1$: both sides are $\mathbb{C}$-linear in $\tilde{Q}_1$, so it suffices to compare them on the four basis elements, where they agree. Both conjugating matrices are invertible, since $\det\mathsf{M}_2(u_+) = (1-i)(1+i) = 2 = \det\mathsf{M}_2(u_-)$. Each block therefore realizes the simple module $S$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and the regular module is $S \oplus S$.
 
 ### The Characteristic Polynomial
 
-**Corollary.** In the block basis above the regular matrix is block diagonal with the two blocks similar to $\mathsf{M}_4(\tilde{Q}_1)$, so its characteristic polynomial is the square of that of the simple module,
+**Corollary.** In the block basis above the regular matrix is block diagonal with the two blocks similar to $\mathsf{M}_2(\tilde{Q}_1)$, so its characteristic polynomial is the square of that of the simple module,
 
 $$
 \chi_{\mathsf{M}_4^{L}(\tilde{Q}_1)}(\lambda) = \bigl( \lambda^2 - 2Q_{1t}\lambda + \langle\tilde{Q}_1\rangle_{\natural} \bigr)^2 .
@@ -386,7 +386,7 @@ For the four-position, with $q'_t = ct$ and $\vec q = x\,\vec e_x+y\,\vec e_y+z\
 
 **The regular matrix is singular exactly on the light cone.** Since $\det\mathsf{M}_4^{L}(\tilde{Q}_1) = \langle\tilde{Q}_1\rangle_{\natural}^2$, the regular matrix of an element fails to be invertible exactly when $\langle\tilde{Q}_1\rangle_{\natural} = 0$, that is, exactly on the zero-divisor cone. For a material four-vector that is the light cone $-c^2t^2 +x^2+y^2+z^2 = 0$; for the four-momentum it is the massless case $m = 0$. The physical statement and the algebraic one are the same: a four-vector is a zero divisor of the algebra exactly when it is null, and the determinant of the regular representation is the test. Moreover the determinant is a **square**, and the square has a **physical interpretation**: the four-vector is the direct sum of two chiral copies, and each copy carries one factor of the biquaternion norm.
 
-**Remark (the determinant is not the biquaternion norm).** The simple module carries the biquaternion norm as its determinant, $\det\mathsf{M}_4(\tilde{Q}_1) = \langle\tilde{Q}_1\rangle_{\natural}$, and the regular module is the direct sum of two copies of it, so its determinant is the product of two biquaternion norms. The square appears because the regular representation acts on a space of twice the dimension, and the factor $2$ is the number of chiralities. Squaring does not change the zero set, which is why the light-cone statement survives the doubling, but it does change the degree: an identity that holds for $\langle\cdot\rangle_{\natural}$ to the first power in the 2×2 article holds only for $N^2$ here.
+**Remark (the determinant is not the biquaternion norm).** The simple module carries the biquaternion norm as its determinant, $\det\mathsf{M}_2(\tilde{Q}_1) = \langle\tilde{Q}_1\rangle_{\natural}$, and the regular module is the direct sum of two copies of it, so its determinant is the product of two biquaternion norms. The square appears because the regular representation acts on a space of twice the dimension, and the factor $2$ is the number of chiralities. Squaring does not change the zero set, which is why the light-cone statement survives the doubling, but it does change the degree: an identity that holds for $\langle\cdot\rangle_{\natural}$ to the first power in the 2×2 article holds only for $N^2$ here.
 
 ## The Matrix of a Four-Vector
 
@@ -586,7 +586,7 @@ $$
 \{\tilde U_{\mathrm L} \in \mathbb{B} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t\} .
 $$
 
-It is a group, and under $\mathsf{M}_4$ it is the special linear group $SL(2,\mathbb{C})$, since $\langle\tilde U_{\mathrm L}\rangle_{\natural} = \det\mathsf{M}_4(\tilde U_{\mathrm L}) = 1$.
+It is a group, and under $\mathsf{M}_2$ it is the special linear group $SL(2,\mathbb{C})$, since $\langle\tilde U_{\mathrm L}\rangle_{\natural} = \det\mathsf{M}_2(\tilde U_{\mathrm L}) = 1$.
 
 **Proposition (the two-sided action).** The map
 
@@ -674,7 +674,7 @@ The regular matrix reads as the algebra acting on itself, and its interpretation
 
 The left regular matrix $\mathsf{M}_4^{L}(\tilde{Q}_1)$ is the left multiplication of the algebra on itself written in the basis $e_t, \vec e_x, \vec e_y, \vec e_z$, and it is the Cayley matrix of quaternion multiplication, each entry of which is a single coefficient of $\tilde{Q}_1$ carrying a sign and none of which is a sum of coefficients. It is multiplicative, its transpose is the left matrix of the quaternion conjugate, $\mathsf{M}_4^{L}(\tilde{Q}_1)^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}_1^{\natural})$, its determinant is the square of the biquaternion norm, $\det\mathsf{M}_4^{L}(\tilde{Q}_1) = \langle\tilde{Q}_1\rangle_{\natural}^2$, and its trace is $4Q_{1t}$. The right regular matrix $\mathsf{M}_4^{R}(\tilde{Q}_1)$, whose $m$-th column is the column of $e_m\tilde{Q}_1$, is anti-multiplicative and is the regular representation of the opposite algebra; the naive identity $\mathsf{M}_4^{R}(\tilde{Q}_1) = \mathsf{M}_4^{L}(\tilde{Q}_1)^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}_1^{\natural}$ is the same statement, since $\mathsf{M}_4^{L}(\tilde{Q}_1^{\natural})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}_1)$ — while what holds is $\mathsf{M}_4^{R}(\tilde{Q}_1) = D\mathsf{M}_4^{L}(\tilde{Q}_1)^{\mathsf{T}}D = D\mathsf{M}_4^{L}(\tilde{Q}_1^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1) = \eta$, the $ict$ metric.
 
-The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ with $\tilde\Pi_\pm = \tfrac12(e_t \pm i\vec e_z)$, the two chiralities; in the adapted basis $\tilde\Pi_+, \vec e_x\tilde\Pi_+, \tilde\Pi_-, \vec e_x\tilde\Pi_-$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\mathsf{M}_4(\tilde{Q}_1)$ and each a copy of the simple module $S$. So $\mathsf{M}_4^{L} \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_{1t}\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\vec\Upsilon_x = \tfrac12(i\vec e_x - \vec e_y)$. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_{1t})$, hence traceless on a material four-vector.
+The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ with $\tilde\Pi_\pm = \tfrac12(e_t \pm i\vec e_z)$, the two chiralities; in the adapted basis $\tilde\Pi_+, \vec e_x\tilde\Pi_+, \tilde\Pi_-, \vec e_x\tilde\Pi_-$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\mathsf{M}_2(\tilde{Q}_1)$ and each a copy of the simple module $S$. So $\mathsf{M}_4^{L} \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_{1t}\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\vec\Upsilon_x = \tfrac12(i\vec e_x - \vec e_y)$. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_{1t})$, hence traceless on a material four-vector.
 
 Read on the material sector, the regular matrix of a four-vector is the matrix displayed in the first section, with trace $4iq'_t$ and determinant the square of the interval; the four-position has determinant $(-c^2t^2 +x^2+y^2+z^2)^2$, the four-velocity $c^4$, the on-shell four-momentum $m^4c^4$, and the massless four-momentum zero. The gradient's regular matrix is the first-order $4 \times 4$ matrix whose chiral block has determinant $\Box$ and whose determinant is $\Box^2$. Finally, the rotor group $\{\tilde U_{\mathrm L} : \langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t\} \cong SL(2,\mathbb{C})$ acts on $\mathbb{M}_-$ and $\mathbb{M}_+$ by $\tilde{Q}_1 \mapsto \tilde U_{\mathrm L}\tilde{Q}_1\tilde U_{\mathrm L}^{*}$, which is $\mathsf{M}_4^{L}(\tilde U_{\mathrm L})\mathsf{M}_4^{R}(\tilde U_{\mathrm L}^{*})$ acting on the four-vector — the Lorentz transformation as left times right — preserving the interval, with rotation rotors the unit real quaternions, boost rotors the Hermitian unit elements, and the covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ two-to-one with kernel $\{\pm e_t\}$.
 
@@ -691,17 +691,17 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | $\mathsf{M}_4^{R}(\tilde{Q}_1)$ | Matrix of right multiplication; an anti-homomorphism, the regular representation of $\mathbb{B}^{\mathrm{opp}}$ |
 | $D = \operatorname{diag}(-1,1,1,1) = \eta$ | Fixed sign matrix; $\mathsf{M}_4^{R}(\tilde{Q}_1) = D\mathsf{M}_4^{L}(\tilde{Q}_1)^{\mathsf{T}}D$; equals the $ict$ metric |
 | $\epsilon^{\mu\nu\lambda}$ | Levi-Civita symbol on the three vector directions |
-| $\langle\tilde{Q}_1\rangle_{\natural} = \sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; $\det\mathsf{M}_4^{L} = N^2$, $\det\mathsf{M}_4 = N$ |
+| $\langle\tilde{Q}_1\rangle_{\natural} = \sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; $\det\mathsf{M}_4^{L} = N^2$, $\det\mathsf{M}_2 = N$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*} = {}^{\natural}\circ\bar{\cdot}, {}^{\flat} = -{}^{*}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_t$; locus where $\mathsf{M}_4^{L} = \mathsf{M}_4^{R}$ |
 | $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | Real sector, imaginary sector, informational sector, material sector |
 | $\tilde\Pi_+ = \tfrac12(e_t + i\vec e_z)$, $\tilde\Pi_- = \tfrac12(e_t - i\vec e_z)$ | Orthogonal idempotents, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_- = 0$ |
 | $\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The two minimal left ideals, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ |
 | $A_+(\tilde{Q}_1), A_-(\tilde{Q}_1)$ | The two $2 \times 2$ blocks of $\mathsf{M}_4^{L}$ in the adapted basis; $\operatorname{Tr} = 2Q_{1t}$, $\det = N$ |
-| $u_+ = e_t + \vec e_z$, $u_- = \vec e_x + \vec e_y$ | Conjugating elements, $A_\pm(\tilde{Q}_1) = \mathsf{M}_4(u_\pm)\mathsf{M}_4(\tilde{Q}_1)\mathsf{M}_4(u_\pm)^{-1}$ |
+| $u_+ = e_t + \vec e_z$, $u_- = \vec e_x + \vec e_y$ | Conjugating elements, $A_\pm(\tilde{Q}_1) = \mathsf{M}_2(u_\pm)\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(u_\pm)^{-1}$ |
 | $\vec\Upsilon_x = \tfrac12(i\vec e_x - \vec e_y) \mapsto E_{12}$ | Truncated ladder element (the convention's $\vec\Upsilon_x$); right multiplication carries $\mathbb{B}\tilde\Pi_+$ onto $\mathbb{B}\tilde\Pi_-$ |
 | $S = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, the spinor module; $\mathsf{M}_4^{L} \cong S \oplus S$ |
-| $\mathsf{M}_4(\tilde{Q}_1)$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* |
+| $\mathsf{M}_2(\tilde{Q}_1)$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* |
 | $\{C : C\mathsf{M}_4^{L}(\tilde Q_2) = \mathsf{M}_4^{L}(\tilde Q_2)C \ \forall \tilde Q_2\} = \mathsf{M}_4^{R}(\mathbb{B})$ | The centralizer of the left copy in $M_4(\mathbb{C})$ is the right copy, of complex dimension $4$: the double centralizer statement |
 | $\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}_1)$ | Real $8 \times 8$ regular matrix; $\det = |N|^4$, $\operatorname{Tr} = 8\operatorname{Re}(Q_{1t})$ |
 | $q'_t, q_x, q_y, q_z$ | Real parameters of a material four-vector, $\tilde{Q}_1 = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; $q'_t = ct$, $(q_x,q_y,q_z) = (x,y,z)$; $\operatorname{Tr}\mathsf{M}_4^{L} = 4iq'_t$, $\det\mathsf{M}_4^{L} = (-(q'_t)^2 + \vec q^2)^2$ |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An **unstable state** is a state that is not an eigenstate of the Hamiltonian that governs it. A system prepared in it does not remain in it, and the probability of finding the system still in the initial state falls away from one. That probability is the **survival probability**, and the rate of its fall is the **decay rate**. The unstable state is one of the few objects in quantum theory whose natural description is not a real number: it is described by a **complex energy** whose imaginary part is half the width of the state, the width being the inverse lifetime.
+An **unstable state** is a state that is not an eigenstate of the Hamiltonian that governs it. A system prepared in it does not remain in it, and the probability of finding the system still in the initial state falls away from one. That probability is the **survival probability**, and the rate of its fall is the **decay rate**. The unstable state is one of the few objects in quantum theory whose natural description is not a real number: it is described by a **complex energy** whose imaginary part is half the width of the state.
 
 This article treats the unstable state in the biquaternion framework of this series. It answers two questions.
 
@@ -94,7 +94,7 @@ which is the matrix form of the reflective symmetry of the resolvent in the real
 
 ### The self-energy
 
-Split the Hamiltonian into a solvable part and a coupling, $\tilde H=\tilde H_0+\tilde V$, and let $\tilde\Pi_0$ project on the state of interest with $\tilde H_0\tilde\Pi_0=E_0\tilde\Pi_0$. Write $Q=e_t-\tilde\Pi_0$ for the complementary projection and $Q\tilde HQ$ for the coupling restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
+Split the Hamiltonian into a solvable part and a coupling, $\tilde H=\tilde H_0+\tilde V$, and let $\tilde\Pi_0$ project on the state of interest with $\tilde H_0\tilde\Pi_0=E_0\tilde\Pi_0$. Write $\tilde\Pi_\perp=e_t-\tilde\Pi_0$ for the complementary projection and $\tilde\Pi_\perp\tilde H\tilde\Pi_\perp$ for the Hamiltonian restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
 
 $$
 G_{00}(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\,\tilde\Pi_0\bigr),
@@ -106,10 +106,10 @@ $$
 G_{00}(z) = \frac{1}{z-E_0-\Sigma(z)},
 \qquad
 \Sigma(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde V\tilde\Pi_0\bigr)
-+ \mathrm{Tr}\Bigl(\tilde\Pi_0\tilde V\,Q\frac{1}{z-Q\tilde HQ}Q\,\tilde V\tilde\Pi_0\Bigr).
++ \mathrm{Tr}\Bigl(\tilde\Pi_0\tilde V\,\tilde\Pi_\perp\frac{1}{z-\tilde\Pi_\perp\tilde H\tilde\Pi_\perp}\tilde\Pi_\perp\,\tilde V\tilde\Pi_0\Bigr).
 $$
 
-The quantity $\Sigma(z)$ is the **self-energy**. It is a scalar function of the central variable $z$ — a complex number of the centre — and it collects the entire effect of the coupling on the distinguished state. To second order in $\tilde V$, with $\lvert 0\rangle$ the state and $\lvert n\rangle$ a complete set spanning $Q$, it is
+The quantity $\Sigma(z)$ is the **self-energy**. It is a scalar function of the central variable $z$ — a complex number of the centre — and it collects the entire effect of the coupling on the distinguished state. To second order in $\tilde V$, with $\lvert 0\rangle$ the state and $\lvert n\rangle$ a complete set spanning the complement, it is
 
 $$
 \Sigma(z) = \langle 0\lvert\tilde V\rvert 0\rangle

@@ -10,7 +10,7 @@ $$
 \tilde U(\tilde{Q}) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\tilde U^{\natural} = e_t ,
 $$
 
-which is the chiral field of the companion pion article; its target is the group manifold $\mathbb{S}^3$, whose third homotopy group is $\pi_z(\mathbb{S}^3) = \mathbb{Z}$, so the winding number is an integer. The Skyrme term is the fourth-order invariant built from the flat current $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$ of the nonlinear-sigma-model article, and the topological baryon number is its winding.
+which is the chiral field of the companion pion article; its target is the group manifold $\mathbb{S}^3$, whose third homotopy group is $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, so the winding number is an integer. The Skyrme term is the fourth-order invariant built from the flat current $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$ of the nonlinear-sigma-model article, and the topological baryon number is its winding.
 
 The findings are the following.
 
@@ -168,7 +168,7 @@ $$
 B = \int d^3x\, B^0
 $$
 
-is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the configuration together with its boundary condition $\tilde U\to e_t$ at spatial infinity. Because $\pi_z(\mathbb{S}^3) = \mathbb{Z}$, the degree is an integer and is invariant under any continuous deformation that keeps the boundary condition; a configuration with $B\neq0$ cannot relax to the vacuum, which has $B = 0$. This is the topological obstruction that makes the skyrmion stable, and it is standard (Skyrme 1961; Witten 1983).
+is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the configuration together with its boundary condition $\tilde U\to e_t$ at spatial infinity. Because $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, the degree is an integer and is invariant under any continuous deformation that keeps the boundary condition; a configuration with $B\neq0$ cannot relax to the vacuum, which has $B = 0$. This is the topological obstruction that makes the skyrmion stable, and it is standard (Skyrme 1961; Witten 1983).
 
 **The hedgehog reduction.** For a configuration of the **hedgehog** form
 
@@ -247,7 +247,7 @@ because the topological charge is conserved for the same reason baryon number is
 
 ## Summary
 
-The Skyrme model is the pion effective theory with the fourth-order Skyrme term, whose solitons are identified with baryons through a topological winding number. In the biquaternion framework the field is the unit real quaternion $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, the target is the group manifold $\mathbb{S}^3$ with $\pi_z(\mathbb{S}^3) = \mathbb{Z}$, the flat current is $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$, the Lagrangian is
+The Skyrme model is the pion effective theory with the fourth-order Skyrme term, whose solitons are identified with baryons through a topological winding number. In the biquaternion framework the field is the unit real quaternion $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, the target is the group manifold $\mathbb{S}^3$ with $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, the flat current is $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$, the Lagrangian is
 
 $$
 \mathcal{L} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\bar j_\mu j_\mu\right) + \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_\mu,j_\nu][j_\mu,j_\nu]\right),
@@ -282,7 +282,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $f_\pi, e$ | Decay constant; dimensionless Skyrme parameter |
 | $B^\mu = \frac{1}{24\pi^2}\varepsilon^{\mu\nu\rho\sigma}\mathrm{Tr}(j_\nu j_\rho j_\sigma)$ | Topological (baryon) current |
 | $B = \int d^3x\,B^0$ | Winding number; baryon number |
-| $\pi_z(\mathbb{S}^3) = \mathbb{Z}$ | Homotopy group making the charge an integer |
+| $\pi_3(\mathbb{S}^3) = \mathbb{Z}$ | Homotopy group making the charge an integer |
 | $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$, $\vec u_r = x^ae_a/r$ | Hedgehog ansatz |
 | $B^0 = -\frac{1}{2\pi^2}\sin^2F\,\frac{dF}{dr}/r^2$ | Hedgehog winding density |
 | $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}[F-\frac12\sin2F]_{F(\infty)}^{F(0)}$ | Hedgehog winding number |

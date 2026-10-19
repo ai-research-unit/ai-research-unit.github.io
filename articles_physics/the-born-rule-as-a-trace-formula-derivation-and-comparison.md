@@ -5,7 +5,7 @@
 The companion article *Quantum Physics in Biquaternionic Form* identifies the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the common home of the states and observables of a two-state system, and states the Born rule there as the trace formula
 
 $$
-\mathrm{Tr}(\tilde Q_1\tilde H)=2\,\mathrm{Sc}(\tilde Q_1\tilde H) = 2\langle\tilde{Q}_1,\tilde{H}\rangle.
+\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle.
 $$
 
 Earlier articles use the formula; this article develops it and, as the title promises, separates what the framework **derives** from what it merely **restates**.
@@ -24,17 +24,17 @@ $$
 \mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)=2h_t .
 $$
 
-It is **tracial**, $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1)=\mathrm{Tr}(\tilde{Q}_1\tilde{Q})$, because $\mathrm{Sc}(\tilde{Q}\tilde{Q}_1)=Q_tQ_{1,0}-\sum_kQ_kQ_{1k}$ is symmetric, and **normalized** by $\mathrm{Tr}(e_t)=2$, the dimension of the algebra's representation. It defines the **trace pairing**
+It is **tracial**, $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1)=\mathrm{Tr}(\tilde{Q}_1\tilde{Q})$, because $\mathrm{Sc}(\tilde{Q}\tilde{Q}_1)=Q_tQ_{1t}-\sum_kQ_kQ_{1k}$ is symmetric, and **normalized** by $\mathrm{Tr}(e_t)=2$, the dimension of the algebra's representation. For two Hermitian elements $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$, it defines the **trace pairing**
 
 $$
-\mathrm{Tr}(\tilde{H}\tilde{H}')=2(h_th'_t+\vec h\cdot\vec h'),
+\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=2(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2),
 $$
 
-obtained from $\tilde{H}\tilde{H}'=(h_th'_t+\vec h\cdot\vec h')e_t+i(h_t\vec h'+h'_t\vec h)-\vec h\times\vec h'$, using $(i\vec h)(i\vec h')=(\vec h\cdot\vec h')e_t-\vec h\times\vec h'$. In the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the Gram matrix is diagonal, with $\mathrm{Tr}(e_t e_t)=2$, $\mathrm{Tr}(e_t\,i\vec e_\mu)=0$ and $\mathrm{Tr}(i\vec e_\mu\,i\vec e_\nu)=2\delta_{\mu\nu}$. The pairing is positive-definite of signature $(4,0)$: up to the factor $2$, the Euclidean inner product on $\mathbb{R}^4$, and the restriction of the Hilbert–Schmidt form.
+obtained from $\tilde{H}_1\tilde{H}_2=(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2)e_t+i(h_{1t}\vec h_2+h_{2t}\vec h_1)-\vec h_1\times\vec h_2$, using $(i\vec h_1)(i\vec h_2)=(\vec h_1\cdot\vec h_2)e_t-\vec h_1\times\vec h_2$. In the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the Gram matrix is diagonal, with $\mathrm{Tr}(e_t e_t)=2$, $\mathrm{Tr}(e_t\,i\vec e_\mu)=0$ and $\mathrm{Tr}(i\vec e_\mu\,i\vec e_\nu)=2\delta_{\mu\nu}$. The pairing is positive-definite of signature $(4,0)$: up to the factor $2$, the Euclidean inner product on $\mathbb{R}^4$, and the restriction of the Hilbert–Schmidt form.
 
-Two immediate consequences will be used repeatedly. First, the pairing is bilinear and symmetric: $\mathrm{Tr}(\tilde{H}\tilde{H}')=\mathrm{Tr}(\tilde{H}'\tilde{H})$, and expansion in the basis gives $\mathrm{Tr}((\alpha\tilde{H}+\beta\tilde{H}')\tilde{Q})=\alpha\,\mathrm{Tr}(\tilde{H}\tilde{Q})+\beta\,\mathrm{Tr}(\tilde{H}'\tilde{Q})$. Second, it is positive definite, since $\mathrm{Tr}(\tilde{H}^2)=2(h_t^2+|\vec h|^2)\geq0$ with equality only for $\tilde{H}=0$; the trace pairing is therefore an inner product, not merely a symmetric form.
+Two immediate consequences will be used repeatedly. First, the pairing is bilinear and symmetric: for Hermitian $\tilde H_1,\tilde H_2,\tilde H_3$, $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=\mathrm{Tr}(\tilde{H}_2\tilde{H}_1)$, and expansion in the basis gives $\mathrm{Tr}((\alpha\tilde{H}_1+\beta\tilde{H}_2)\tilde{H}_3)=\alpha\,\mathrm{Tr}(\tilde{H}_1\tilde{H}_3)+\beta\,\mathrm{Tr}(\tilde{H}_2\tilde{H}_3)$. Second, it is positive definite, since $\mathrm{Tr}(\tilde{H}_1^2)=2(h_{1t}^2+|\vec h_1|^2)\geq0$ with equality only for $\tilde{H}_1=0$; the trace pairing is therefore an inner product, not merely a symmetric form.
 
-Three properties single it out. **Invariance:** under unitary conjugation $\tilde{H}\mapsto\tilde{U}\tilde{H}\tilde{U}^{*}$ the pairing is invariant; since the unit quaternions rotate $\vec h$ and fix $h_t$, an invariant symmetric bilinear form must be $\mathrm{B}=A h_th'_t+B\,\vec h\cdot\vec h'$, so invariance alone leaves two parameters. **Traciality:** requiring the pairing to come from the algebra's product, $\mathrm{B}(\tilde{H},\tilde{H}')=f(\tilde{H}\tilde{H}')$ with $f$ tracial, forces $f$ to be a multiple of $\mathrm{Tr}$ and hence $A=B$; this is the condition that pins the form down. **Positivity:** $A,B>0$ makes the form positive-definite, capable of producing non-negative probabilities; the scale is fixed by $\mathrm{Tr}(e_t)=2$, though the scale cancels in probabilities, which are ratios. Thus the trace pairing is the unique symmetric pairing compatible with the associative product and positive — but traciality is a genuine assumption, not a consequence of symmetry.
+Three properties single it out. **Invariance:** under unitary conjugation $\tilde{H}_1\mapsto\tilde{U}\tilde{H}_1\tilde{U}^{*}$ the pairing is invariant; since the unit quaternions rotate $\vec h_1$ and fix $h_{1t}$, an invariant symmetric bilinear form must be $\mathcal{B}=\alpha h_{1t}h_{2t}+\beta\,\vec h_1\cdot\vec h_2$, so invariance alone leaves two parameters. **Traciality:** requiring the pairing to come from the algebra's product, $\mathcal{B}(\tilde{H}_1,\tilde{H}_2)=f(\tilde{H}_1\tilde{H}_2)$ with $f$ tracial, forces $f$ to be a multiple of $\mathrm{Tr}$ and hence $\alpha=\beta$; this is the condition that pins the form down. **Positivity:** $\alpha,\beta>0$ makes the form positive-definite, capable of producing non-negative probabilities; the scale is fixed by $\mathrm{Tr}(e_t)=2$, though the scale cancels in probabilities, which are ratios. Thus the trace pairing is the unique symmetric pairing compatible with the associative product and positive — but traciality is a genuine assumption, not a consequence of symmetry.
 
 ### It Is Not the Biquaternion Norm
 
@@ -65,7 +65,7 @@ the convention of the companion article. It gives $\varphi(\tilde{H})=h_tI_2+\ve
 $$
 \mathrm{tr}\,\varphi(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})=\mathrm{Tr}(\tilde{Q}),
 \qquad\text{hence}\qquad
-\mathrm{Tr}(\tilde{H}\tilde{H}')=\mathrm{tr}\bigl(\varphi(\tilde{H})\varphi(\tilde{H}')\bigr).
+\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=\mathrm{tr}\bigl(\varphi(\tilde{H}_1)\varphi(\tilde{H}_2)\bigr).
 $$
 
 The idempotents of $\mathbb{M}_+$,
@@ -128,7 +128,7 @@ $$
 $$
 vanishing precisely when $\vec r=\pm\vec u_h$, i.e. when the state is an eigenstate of the observable. This is a nontrivial check that the statistical content is carried by the trace pairing and not by the biquaternion norm.
 
-Three algebraic properties make the pairing a probability assignment. **Reality:** for $\tilde{H},\tilde{H}'\in\mathbb{M}_+$, $\mathrm{Sc}(\tilde{H}\tilde{H}')=h_th'_t+\vec h\cdot\vec h'\in\mathbb{R}$, so the pairing is real without conjugation. **Positivity:** if $\tilde{Q}_1\geq0$ and $\tilde{Ϛ}\geq0$ then $\mathrm{Tr}(\tilde{Q}_1\tilde{Ϛ})\geq0$, since under $\varphi$ this is $A,B\geq0\Rightarrow\mathrm{tr}(AB)=\mathrm{tr}(\sqrt{A}B\sqrt{A})\geq0$; with $|\vec r|\leq1$ it also gives $p_+\leq1$. **Normalization:** by completeness and traciality,
+Three algebraic properties make the pairing a probability assignment. **Reality:** for $\tilde{H}_1,\tilde{H}_2\in\mathbb{M}_+$, $\mathrm{Sc}(\tilde{H}_1\tilde{H}_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\in\mathbb{R}$, so the pairing is real without conjugation. **Positivity:** if $\tilde{Q}_1\geq0$ and $\tilde{Ϛ}\geq0$ then $\mathrm{Tr}(\tilde{Q}_1\tilde{Ϛ})\geq0$, since under $\varphi$, with $A=\varphi(\tilde{Q}_1)$ and $B=\varphi(\tilde{Ϛ})$, this is $A,B\geq0\Rightarrow\mathrm{tr}(AB)=\mathrm{tr}(\sqrt{A}B\sqrt{A})\geq0$; with $|\vec r|\leq1$ it also gives $p_+\leq1$. **Normalization:** by completeness and traciality,
 
 $$
 p_++p_-=\mathrm{Tr}\bigl((\tilde\Pi_1+\tilde\Pi_2)\tilde{Ϛ}\bigr)=\mathrm{Tr}(e_t\tilde{Ϛ})=\mathrm{Tr}(\tilde{Ϛ})=1.
@@ -195,21 +195,21 @@ The comparison is for a single qubit, $\mathbb{B}\cong M_2(\mathbb{C})$. The ext
 
 ## Non-Uniqueness of the Trace
 
-On $M_n(\mathbb{C})$ the functionals satisfying $f(XY)=f(YX)$ form a one-dimensional space spanned by the trace. Hence on $\mathbb{B}\cong M_2(\mathbb{C})$ every tracial functional is $f=\lambda\mathrm{Tr}$, and every symmetric pairing $\mathrm{B}(\tilde{H},\tilde{H}')=f(\tilde{H}\tilde{H}')$ with $f$ tracial is a multiple of the trace pairing. The normalization $\mathrm{Tr}(e_t)=2$ fixes $\lambda=1$; the normalized alternative $\tfrac12\mathrm{Tr}=\mathrm{Sc}$ sends $e_t\mapsto1$. Either gives the same probabilities, since the scale cancels in $p_i=\mathrm{Tr}(\tilde{E}_i\tilde{Ϛ})/\mathrm{Tr}(\tilde{Ϛ})$ with $\mathrm{Tr}(\tilde{Ϛ})=1$.
+On $M_n(\mathbb{C})$ the functionals satisfying $f(XY)=f(YX)$ form a one-dimensional space spanned by the trace. Hence on $\mathbb{B}\cong M_2(\mathbb{C})$ every tracial functional is $f=\lambda\mathrm{Tr}$, and every symmetric pairing $\mathcal{B}(\tilde{H}_1,\tilde{H}_2)=f(\tilde{H}_1\tilde{H}_2)$ with $f$ tracial is a multiple of the trace pairing. The normalization $\mathrm{Tr}(e_t)=2$ fixes $\lambda=1$; the normalized alternative $\tfrac12\mathrm{Tr}=\mathrm{Sc}$ sends $e_t\mapsto1$. Either gives the same probabilities, since the scale cancels in $p_i=\mathrm{Tr}(\tilde{E}_i\tilde{Ϛ})/\mathrm{Tr}(\tilde{Ϛ})$ with $\mathrm{Tr}(\tilde{Ϛ})=1$.
 
 Uniqueness fails as soon as traciality is dropped. Keeping symmetry, invariance, and positivity leaves
 
 $$
-\mathrm{B}(\tilde{H},\tilde{H}')=A\,h_th'_t+B\,\vec h\cdot\vec h',\qquad A,B>0,
+\mathcal{B}(\tilde{H}_1,\tilde{H}_2)=\alpha\,h_{1t}h_{2t}+\beta\,\vec h_1\cdot\vec h_2,\qquad \alpha,\beta>0,
 $$
 
-a genuine two-parameter family; traciality is the extra condition $A=B$. Keeping positivity and normalization but dropping traciality, the normalized positive functionals on $\mathbb{M}_+$ are exactly the states: for every $\vec q\in\mathbb{R}^3$ with $|\vec q|\leq1$,
+a genuine two-parameter family; traciality is the extra condition $\alpha=\beta$. Keeping positivity and normalization but dropping traciality, the normalized positive functionals on $\mathbb{M}_+$ are exactly the states: for every $\vec q\in\mathbb{R}^3$ with $|\vec q|\leq1$,
 
 $$
 f_{\vec q}(\tilde{H})=h_t+\vec q\cdot\vec h
 $$
 
-is positive on the positive cone, being the pairing with the state $\tilde{Ϛ}_{\vec q}=\tfrac12(e_t+i\vec q)$. Why is positivity restricted to $|\vec q|\leq1$? Under $\varphi$ the functional is $f_{\vec q}(\tilde{H})=\mathrm{tr}(\rho_{\vec q}A)$ with $A=\varphi(\tilde{H})$ and $\rho_{\vec q}=\tfrac12(I+\vec q\cdot\boldsymbol{\sigma})$; positivity of the functional is positivity of the density matrix, which holds exactly when $\vec q$ lies in the Bloch ball. The trace corresponds to $\vec q=0$, the maximally mixed state, which is the only point at which the functional is tracial. The trace is not the unique functional "chosen by nature"; it is the unique *tracial* functional. Concretely, extending $f_{\vec q}$ to $\mathbb{B}$ by $f_{\vec q}(\tilde{Q})=\mathrm{Re}(Q_t)+\vec q\cdot\vec v_i(\tilde{Q})$, where $\vec v_i$ is the coefficient of the imaginary vector part, one finds for $\tilde{Q}=\vec e_x$, $\vec U_y=i\vec e_y$ that $f_{\vec q}(\tilde{Q}\vec U_y)=+u_z$ while $f_{\vec q}(\vec U_y\tilde{Q})=-u_z$; the extension of $f_{\vec q}$ to $\mathbb{B}$ is not tracial unless $\vec q=0$.
+is positive on the positive cone, being the pairing with the state $\tilde{Ϛ}_{\vec q}=\tfrac12(e_t+i\vec q)$. Why is positivity restricted to $|\vec q|\leq1$? Under $\varphi$ the functional is $f_{\vec q}(\tilde{H})=\mathrm{tr}(\rho_{\vec q}A)$ with $A=\varphi(\tilde{H})$ and $\rho_{\vec q}=\tfrac12(I+\vec q\cdot\boldsymbol{\sigma})$; positivity of the functional is positivity of the density matrix, which holds exactly when $\vec q$ lies in the Bloch ball. The trace corresponds to $\vec q=0$, the maximally mixed state, which is the only point at which the functional is tracial. The trace is not the unique functional "chosen by nature"; it is the unique *tracial* functional. Concretely, extending $f_{\vec q}$ to $\mathbb{B}$ by $f_{\vec q}(\tilde{Q})=\mathrm{Re}(Q_t)+\vec q\cdot\vec v_i(\tilde{Q})$, where $\vec v_i$ is the coefficient of the imaginary vector part, one finds for $\tilde{Q}=\vec e_x$, $\vec U_y=i\vec e_y$ that $f_{\vec q}(\tilde{Q}\vec U_y)=+q_z$ while $f_{\vec q}(\vec U_y\tilde{Q})=-q_z$; the extension of $f_{\vec q}$ to $\mathbb{B}$ is not tracial unless $\vec q=0$.
 
 There is a further uniqueness question: is the trace form the only probability measure on the projection lattice? In dimension at least three, **Gleason's theorem** says yes. In dimension two it **fails**: the projection lattice of $\mathbb{C}^2$ is the Bloch sphere with $P$ and $I-P$ complementary, and assignments in $[0,1]$ with complementary projectors summing to one need not be of trace form — non-trace frame functions exist. Uniqueness is restored if the domain is enlarged from projections to all effects and additivity is required there: by **Busch's** effect-based version of Gleason's theorem, a normalized additive assignment on the full effect algebra is of trace form in every dimension, including two. For a qubit, then, uniqueness of the probability measure is not a consequence of the algebra alone; it requires the effect structure, i.e. the POVM framework. It is significant that the trace formula extends cleanly to effects, since that is precisely the statement whose uniqueness is a theorem.
 
@@ -225,7 +225,7 @@ There is a further uniqueness question: is the trace form the only probability m
 
 ## Summary
 
-The Born rule in the biquaternion framework is the trace formula $\mathrm{Tr}(\tilde Q_1\tilde H)=2\,\mathrm{Sc}(\tilde Q_1\tilde H) = 2\langle\tilde{Q}_1,\tilde{H}\rangle$. On $\mathbb{M}_+$ the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{H}')=2(h_th'_t+\vec h\cdot\vec h')$ is the Euclidean positive-definite pairing of signature $(4,0)$, distinct from the Lorentzian biquaternion norm $\langle\tilde{H}\rangle_{\natural}=h_t^2-|\vec h|^2$ whose future cone cuts out the state space. It is natural because it is the product's trace: among symmetric invariant positive pairings it is the tracial one.
+The Born rule in the biquaternion framework is the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$. On $\mathbb{M}_+$ the trace pairing $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=2(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2)$ is the Euclidean positive-definite pairing of signature $(4,0)$, distinct from the Lorentzian biquaternion norm $\langle\tilde{H}\rangle_{\natural}=h_t^2-|\vec h|^2$ whose future cone cuts out the state space. It is natural because it is the product's trace: among symmetric invariant positive pairings it is the tracial one.
 
 Under $\varphi:\mathbb{B}\to M_2(\mathbb{C})$ the idempotents map to rank-one projectors, states to density matrices, and $\mathrm{tr}\circ\varphi=\mathrm{Tr}$. The probability $p_+=\mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ})=\tfrac12(1+\vec u_h\cdot\vec r)$ is real, in $[0,1]$, and normalized, all as consequences of the algebra. General measurements are effects $\tilde{E}=ae_t+i\vec w$ with $|\vec w|\leq\min(a,1-a)$; POVMs are families of effects summing to $e_t$; the probabilities are $a_i+\vec w_i\cdot\vec r$, as the unsharp and trine examples show.
 
@@ -242,12 +242,12 @@ The comparison with the standard statement is exact, because $\mathbb{B}\cong M_
 | $\mathbb{M}_-$, $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | Anti-Hermitian subspace (generators) |
 | $\tilde{H} = h_t e_t + i\vec h$ | General Hermitian element |
 | $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H) = 2h_t$ | Trace |
-| $\mathrm{Tr}(\tilde{H}\tilde{H}') = 2(h_th'_t + \vec h\cdot\vec h')$ | Trace pairing, signature $(4,0)$ |
+| $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2) = 2(h_{1t}h_{2t} + \vec h_1\cdot\vec h_2)$ | Trace pairing, signature $(4,0)$ |
 | $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_t^2 - |\vec h|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r|\leq 1$ | State; Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, $|\vec u|=1$ | Idempotent (pure state) |
 | $\tilde{E} = a e_t + i\vec w$, $|\vec w|\leq\min(a,1-a)$ | Effect |
-| $\mathrm{Tr}(\tilde Q_1\tilde H)=2\,\mathrm{Sc}(\tilde Q_1\tilde H) = 2\langle\tilde{Q}_1,\tilde{H}\rangle$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ}) = \tfrac{1}{2}(1+\vec u_h\cdot\vec r)$ | Born probability, projective |
 | $\mathrm{Tr}(\tilde{E}_i\tilde{Ϛ}) = a_i + \vec w_i\cdot\vec r$ | Born probability, POVM |
 | $\mathrm{Tr}(\tilde\Pi(\vec u_x)\tilde\Pi(\vec u_y)) = \tfrac{1}{2}(1+\vec u_x\cdot\vec u_y) = \cos^2(\theta/2)$ | Transition probability |

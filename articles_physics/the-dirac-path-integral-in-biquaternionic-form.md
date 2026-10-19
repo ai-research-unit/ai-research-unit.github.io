@@ -94,7 +94,7 @@ $$
 
 with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$ whose precise constant depends on the measure convention and is not needed below. Three features of this expression carry the physics.
 
-- The **proper time $T$ is the worldline length parameter**, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x')^2}{4T}$ being the kinetic term and $\mu^2T$ the mass term; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
+- The **proper time $T$ is the Schwinger parameter**, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x')^2}{4T}$ being the kinetic term and $\mu^2T$ the mass term; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
 - The **mass is a constant in the exponent**. There is no spin and no matrix structure: $G_F$ is a scalar, and it obeys $(\Box - \mu^2)G_F = i\delta^{(4)}$ up to the measure convention.
 - The **first-order structure enters only through the differential prefactor**. The Dirac propagator is obtained by applying $(i\not\partial + \mu)$ to $G_F$, which is why the spin is invisible until that operation is performed.
 
@@ -118,7 +118,7 @@ $$
 \{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\} = \frac{1}{2}g^{\mu\nu}\,I ,
 $$
 
-in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The path integral over the odd variables, with the boundary conditions appropriate to the propagator (anti-periodic for the fermionic trace, periodic for the matrix element), is a **spin factor** $\Phi[x]$ multiplying the scalar measure:
+in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The path integral over the odd variables, with the boundary conditions appropriate to the propagator (periodic for the fermionic trace, anti-periodic for the matrix element), is a **spin factor** $\Phi[x]$ multiplying the scalar measure:
 
 $$
 K(x,x') = \int_0^\infty dT\int\mathcal{D}x\,\Phi[x]\,\exp(\,iS_0[x]),
@@ -132,7 +132,7 @@ The spin factor is the path-ordered exponential of the odd kinetic term; expande
 
 The spin factor is where the algebra sits, and its structure is exactly the algebra's defining relation to the Clifford algebra.
 
-**The odd variable generates $\mathrm{Cl}_{1,3}$, and the biquaternion algebra is its even part.** The quantized $\psi^{\mathrm{op}\mu}$ generate the Clifford algebra with the metric $g$. Products of an even number of $\psi^{\mathrm{fop}}$'s close under multiplication and form the even subalgebra $\mathrm{Cl}_{1,3}^{+}$, which is isomorphic to $\mathbb{B}$: this is the dictionary of *The Dirac Algebra and Biquaternions — A Dictionary*, $\mathsf{M}_4(\mathbb{B}) = \mathrm{Cl}_{1,3}^{+}$. A single $\psi^{\mathrm{op}\mu}$ is Clifford-odd — it exchanges the two chiral halves and is the generator of the reflection — and it is exactly the kind of object the biquaternion algebra does not contain. The worldline spin variable is therefore the **odd** object whose even products are the biquaternions.
+**The odd variable generates $\mathrm{Cl}_{1,3}$, and the biquaternion algebra is its even part.** The quantized $\psi^{\mathrm{op}\mu}$ generate the Clifford algebra with the metric $g$. Products of an even number of $\psi^{\mathrm{op}}$'s close under multiplication and form the even subalgebra $\mathrm{Cl}_{1,3}^{+}$, which is isomorphic to $\mathbb{B}$: this is the dictionary of *The Dirac Algebra and Biquaternions — A Dictionary*, $\mathsf{M}_4(\mathbb{B}) = \mathrm{Cl}_{1,3}^{+}$. A single $\psi^{\mathrm{op}\mu}$ is Clifford-odd — it exchanges the two chiral halves and is the generator of the reflection — and it is exactly the kind of object the biquaternion algebra does not contain. The worldline spin variable is therefore the **odd** object whose even products are the biquaternions.
 
 **The spin factor is the Clifford-algebra path-ordered product.** The weight $\Phi[x]$ is, order by order, a sum of Clifford elements: the identity, then bivectors, then quadrilinears. Its even part lies in $\mathsf{M}_4(\mathbb{B})$, its odd part is the Clifford-odd remainder. In the free case the odd part renormalises the boundary spinor and the even part is what multiplies the biquaternion-valued field; in a background field the bivector term is the spin–field coupling $\sigma_{\mu\nu}F^{\mu\nu}$ of the standard spin factor. The biquaternion framework thus reads the spin factor as the algebraic object that converts a material curve into a spinor transport: the curve is $\mathbb{M}_-$-valued, and the transport is $\mathsf{M}_4(\mathbb{B})$-valued with an odd dressing.
 

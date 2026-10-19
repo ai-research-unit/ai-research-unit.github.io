@@ -226,7 +226,7 @@ $$
 which are the three- and four-gauge-boson vertices with the structure constants $f^{abc}=2\varepsilon^{abc}$ of the compact factor in the unnormalized basis $e_a$. For the charged and neutral combinations these become the $WWZ$ and $WW\gamma$ vertices, with the couplings $g\cos\theta_W$ and $e$ respectively, and the quartic $WWZZ$, $WW\gamma\gamma$, $WWZ\gamma$ vertices. The algebra supplies the Lorentz and Lie-algebraic structure of these vertices; the identification of the neutral combination with the Z and the photon, and the numerical values of the couplings, are imported, as is the mixing angle. Two points are specific to the framework.
 
 - **The vertices are those of the adjoint action.** The structure constants $f^{abc}$ of the compact factor are the ones read from the quaternion commutator, and the four-point vertex is built from their products. In the algebra the cubic and quartic interactions are the expansion of the commutator, so the gauge self-couplings are a direct consequence of the non-commutativity of the generators in the material basis $e_a$.
-- **The abelian factor does not self-couple.** The central direction has vanishing structure constants, so the neutral hypercharge field has no self-coupling; the $ZZZ$ and $ZZZZ$ vertices are absent. This is the algebra's statement of the abelian nature of the hypercharge factor.
+- **The abelian factor does not self-couple.** The central direction has vanishing structure constants, so the abelian hypercharge field has no self-coupling; the $BBB$ and $BBBB$ vertices are absent. This is the algebra's statement of the abelian nature of the hypercharge factor.
 
 ## What the Algebra Supplies and What It Imports
 

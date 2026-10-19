@@ -405,7 +405,7 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area})$ | Area law (confinement) |
 | $\mu_{\mathrm{per}}$ | Perimeter coefficient |
 | $\sigma$ | String tension |
-| $_{L\times T}$, $V(L)$ | Rectangular loop; static potential; $\langle W\rangle\sim \exp(-iTV(L))$ |
+| $\Box_{L\times T}$, $V(L)$ | Rectangular loop; static potential; $\langle W\rangle\sim \exp(-iTV(L))$ |
 | $I(C) = -\log|\langle W(C)\rangle|$ | Information cost of the loop |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $\vec r\cdot\vec u$ | Component along the charge axis; accessible content |

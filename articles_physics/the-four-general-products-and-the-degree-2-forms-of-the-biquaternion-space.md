@@ -29,19 +29,19 @@ of one rule under the insertion of a conjugation into a slot. Nothing else varie
 **The scalar–vector forms.** Written on the coordinates of the two elements,
 
 $$
-\tilde Q_1\tilde Q_2=\bigl[Q_{10}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{10}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2,
+\tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2,
 $$
 
 $$
-\tilde Q_1\tilde Q_2^{*}=\bigl[Q_{10}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{10}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
+\tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2},
 $$
 
 $$
-\tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{10}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{10}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2,
+\tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2,
 $$
 
 $$
-\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{10}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{10}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}.
 $$
 
 The two bilinear products are $\mathbb{C}$-bilinear in both slots; the two sesquilinear products are $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. No two of the four agree on every pair.
@@ -53,9 +53,9 @@ The two bilinear products are $\mathbb{C}$-bilinear in both slots; the two sesqu
 The four general products are not four unrelated rules: the two insertions are independent, and every link between the four is a consequence of that single distinction. The two conjugations separate the scalar part of a factor from its vector part, by the splitting identities
 
 $$
-\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2=2Q_{10}\tilde Q_2 \ \text{and}\ 2\vec Q_1\tilde Q_2,
+\tilde Q_1\tilde Q_2\pm\tilde Q_1^{\natural}\tilde Q_2=2Q_{1t}\tilde Q_2 \ \text{and}\ 2\vec Q_1\tilde Q_2,
 \qquad
-\tilde Q_1\tilde Q_2^{*}\pm\tilde Q_1^{\natural}\tilde Q_2^{*}=2Q_{10}\tilde Q_2^{*}\ \text{and}\ 2\vec Q_1\tilde Q_2^{*},
+\tilde Q_1\tilde Q_2^{*}\pm\tilde Q_1^{\natural}\tilde Q_2^{*}=2Q_{1t}\tilde Q_2^{*}\ \text{and}\ 2\vec Q_1\tilde Q_2^{*},
 $$
 
 and the same two identities hold with the two vector parts in place of the scalar parts. The ${}^{\natural}$ of the quaternionic product and the ${}^{*}$ of the sesquilinear product return a product with the slots exchanged, which is why the scalar parts of the two are symmetric and conjugate-symmetric respectively, while no one of the four general products is commutative. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde Q_1}\tilde Q_2)=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_1^{*})$ and $\mathrm{Sc}(\tilde Q_1\bar{\tilde Q_2})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$.
@@ -137,7 +137,7 @@ Two statements bind the readings to the slots. The **second slot** divides the f
 
 The biquaternion complex space carries four general products, the four insertions of a conjugation into a slot of one multiplication: the general plain bilinear $\tilde Q_1\tilde Q_2$, the general plain sesquilinear $\tilde Q_1\tilde Q_2^{*}$, the general quaternionic bilinear $\tilde Q_1^{\natural}\tilde Q_2$ and the general quaternionic sesquilinear $\tilde Q_1^{\natural}\tilde Q_2^{*}$. The two bilinear products are $\mathbb{C}$-bilinear and can be iterated, the two sesquilinear ones are conjugate-linear in the second slot and can only be evaluated; no two of the four agree on every pair, and exactly one, the general plain product, is associative.
 
-The scalar part of each product is a degree-two form, and the four forms are one bilinear form $\langle\cdot,\cdot\rangle$ read through the two involutions, $H=\langle\tilde Q_1,\tilde Q_2^{*}\rangle$, $N=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle$ and $K=\langle\tilde Q_1^{\natural},\tilde Q_2^{*}\rangle$. Their algebraic norms are four, of which $\langle\cdot,\cdot\rangle_{*}$ is positive definite and $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative; $\langle\cdot,\cdot\rangle_{\natural}$ is the norm of no other product, and $\langle\cdot,\cdot\rangle_{*}$ is the only one definite on each remarkable subspace. The four general products preserve a remarkable subspace for exactly two subspaces, the centre and the quaternion subspace, and it is there, with the Hermitian subspace, that a Jordan or a Lie structure forms.
+The scalar part of each product is a degree-two form, and the four forms are one bilinear form $\langle\cdot,\cdot\rangle$ read through the two involutions, $\langle\tilde Q_1,\tilde Q_2\rangle$, $\langle\tilde Q_1,\tilde Q_2^{*}\rangle$, $\langle\tilde Q_1^{\natural},\tilde Q_2\rangle$ and $\langle\tilde Q_1^{\natural},\tilde Q_2^{*}\rangle$. Their algebraic norms are four, of which $\langle\cdot,\cdot\rangle_{*}$ is positive definite and $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative; $\langle\cdot,\cdot\rangle_{\natural}$ is the norm of no other product, and $\langle\cdot,\cdot\rangle_{*}$ is the only one definite on each remarkable subspace. The four general products preserve a remarkable subspace for exactly two subspaces, the centre and the quaternion subspace, and it is there, with the Hermitian subspace, that a Jordan or a Lie structure forms.
 
 The four products are read physically as composition, probability, causality and gauge, and the four forms as the sector sign, the Born pairing, the interval and the Krein calibration; the second slot decides whether the job is a composition or a pairing, and the first slot whether its form measures or carries a metric. The products are the source of the band: the twelve products are the four together with their parts, and the twelve structures are the algebraic structures of those twelve operations.
 

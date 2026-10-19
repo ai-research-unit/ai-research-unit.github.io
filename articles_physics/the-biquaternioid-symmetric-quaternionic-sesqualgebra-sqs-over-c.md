@@ -41,7 +41,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 - **The band's form is a metric-like datum and not a state.** Its value carries the scalar part $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ and the mixed vector part side by side and therefore lies, for a general pair, in no one of the remarkable subspaces; the self-pairing $\tilde Q\star\tilde Q$ is in general not central, and the standard reconstruction of a state space — positivity, a unit, a Jordan structure, a module action — does not reach it. The metric belongs to the transformation side of the frame, whose invariants are the pairings left unchanged, and not to the state side, whose invariants are positive numbers.
 - **A gauge calibration is transported by reflecting the vector directions and not by reversing a charge.** The left attachment reads the argument through the star and the right through the natural conjugation, and the two differ by the coefficientwise conjugation that the symmetrisation installed; the band's adjoint is the indefinite $J$-adjoint, so the pairing does not distinguish left from right and conjugates the calibration instead.
 - **The two classes of the band are the centre and the vector directions.** A central calibration is a self-adjoint multiplication and a pure vector calibration a skew-adjoint one, and a calibration that mixes a scale with a direction is neither; the symmetric class is the complex line of central calibrations and the antisymmetric class is the vector subspace, so the band separates a scale from a direction and labels the mixing element as the one that belongs to neither.
-- **The band measures a calibration through its norm and its scale.** The collapse at $N=0$ is the algebraic trace of the null directions of the metric, and the operators of the band are a deformation: their scalar part a conformal factor and their traceless vector part a shear, so the gauge pairing deforms an element rather than rotating it or translating it.
+- **The band measures a calibration through its norm and its scale.** The collapse at $\langle\tilde Q\rangle_{\natural}=0$ is the algebraic trace of the null directions of the metric, and the operators of the band are a deformation: their scalar part a conformal factor and their traceless vector part a shear, so the gauge pairing deforms an element rather than rotating it or translating it.
 
 ## Summary
 
@@ -55,7 +55,7 @@ The biquaternioid symmetric quaternionic sesqualgebra is the structure $\tilde Q
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | the Krein form; the metric read as a product |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector; signature $(1,3)$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ | the algebraic norm; not central in general |
-| $\tilde Q=e_t+\vec e_x$; $N=-2\vec e_x$ | the mixing witness of the non-central norm |
+| $\tilde Q=e_t+\vec e_x$; $\langle\tilde Q\rangle_{\natural}=-2\vec e_x$ | the mixing witness of the non-central norm |
 | $J={}^{\natural}$ | the fundamental symmetry; the $J$-adjoint of the band |
 | $\mathbb{C}_{\mathbb{B}}$ | the centre; the self-adjoint class of the band |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |

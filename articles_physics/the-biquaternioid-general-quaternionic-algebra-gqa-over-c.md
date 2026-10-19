@@ -51,7 +51,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 
 ## Summary
 
-The biquaternioid general quaternionic algebra is the structure $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ over $\mathbb{C}$, the causality band of the framework: bilinear, non-associative, of a left identity only, with the multiplicative norm $N=\sum_\mu Q_\mu^{2}$ whose vanishing set is the causal cone and whose norm-one multiplications are the Lorentz transformations. Its square map sends the material sector to the informational one, its sandwich is the inner automorphism scaled by the norm, and its interval is the form a change of the local complex structure moves. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid general quaternionic algebra is the structure $\tilde Q_1\star\tilde Q_2=\tilde Q_1^{\natural}\tilde Q_2$ over $\mathbb{C}$, the causality band of the framework: bilinear, non-associative, of a left identity only, with the multiplicative norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ whose vanishing set is the causal cone and whose norm-one multiplications are the Lorentz transformations. Its square map sends the material sector to the informational one, its sandwich is the inner automorphism scaled by the norm, and its interval is the form a change of the local complex structure moves. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 

@@ -60,7 +60,7 @@ $$
 
 where $\varphi$ is the CP-odd phase. The estimate is the one that governs the reach of the experiments: the smaller the bound, the larger the scale probed, and the heavier the fermion, the larger the contribution. The numbers are used in the last section.
 
-**The observable.** A permanent EDM precesses in an electric field, and the precession is what the experiments measure — in atoms and molecules, in stored neutrons, and in storage rings. The observable is the coefficient of $\vec E\cdot\boldsymbol{\sigma}$, and it is the only renormalisable CP-odd coupling of a spin-$\tfrac12$ particle to the electromagnetic field up to dimension five. The framework's proton and neutron articles treat those composites and note that the framework supplies no value for their EDMs; this article treats the operator and its structure.
+**The observable.** A permanent EDM precesses in an electric field, and the precession is what the experiments measure — in atoms and molecules, in stored neutrons, and in storage rings. The observable is the coefficient of $\vec E\cdot\boldsymbol{\sigma}$, and it is the only CP-odd coupling of a spin-$\tfrac12$ particle to the electromagnetic field up to dimension five. The framework's proton and neutron articles treat those composites and note that the framework supplies no value for their EDMs; this article treats the operator and its structure.
 
 ## The Anti-Hermitian Structure of $\sigma^{\mu\nu}\gamma_5$
 
@@ -76,7 +76,7 @@ $$
 \sigma^{0k}\gamma_5 = \text{(anti-Hermitian)},\qquad \sigma^{ij}\gamma_5 = \text{(Hermitian)}.
 $$
 
-The pattern is the standard one: $\gamma^0$ is Hermitian and $\gamma^k$ anti-Hermitian; the boost generators $\sigma^{0k}$ therefore change sign under Hermitian conjugation while the rotation generators $\sigma^{ij}$ do not, and $\gamma_5$, being Hermitian and anticommuting with the $\gamma^\mu$, conjugates the same way as $\gamma_5^2$ would suggest. **The $\vec E$-coupling insertion is the anti-Hermitian one.**
+The pattern is the standard one: $\gamma^0$ is Hermitian and $\gamma^k$ anti-Hermitian; the boost generators $\sigma^{0k}$ therefore change sign under Hermitian conjugation while the rotation generators $\sigma^{ij}$ do not, and $\gamma_5$, being Hermitian and anticommuting with each $\gamma^\mu$, commutes with the bilinear $\sigma^{\mu\nu}$ and so leaves its Hermiticity unchanged. **The $\vec E$-coupling insertion is the anti-Hermitian one.**
 
 **The Hodge duality.** The two families of insertions are dual to each other. In terms of the totally antisymmetric symbol,
 
@@ -184,7 +184,7 @@ H_{\mathrm{NR}} = -\,\mu\,\vec B\cdot\boldsymbol{\sigma} - d\,\vec E\cdot\boldsy
 \mu = \frac{e}{2m}\big(1+F_2(0)\big),\qquad d = \frac{e}{2m}F_3(0),
 $$
 
-so that the two coefficients are the same form factor at zero momentum transfer, multiplied by the same dimensionful factor and distinguished by the $\gamma_5$. The magnetic moment is the Hermitian member of the pair; the EDM is the anti-Hermitian member; and the two are Hodge duals of each other. This is the standard form-factor decomposition, and it is the reason the EDM is called the "dual" of the anomalous magnetic moment.
+so that the two coefficients are the form factors at zero momentum transfer, multiplied by the same dimensionful factor and distinguished by the $\gamma_5$. The magnetic moment is the Hermitian member of the pair; the EDM is the anti-Hermitian member; and the two are Hodge duals of each other. This is the standard form-factor decomposition, and it is the reason the EDM is called the "dual" of the anomalous magnetic moment.
 
 **Why the dual is the CP-odd one.** The form-factor pair $(F_2,F_3)$ is the framework's Hermitian/anti-Hermitian pair, and the two differ by the insertion of the volume element. The magnetic term has $F_2$ and no $\gamma_5$; the EDM term has $F_3$ and one $\gamma_5$. Under the Hodge duality $\sigma^{\mu\nu}\gamma_5=\tfrac{i}{2}\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma}$, the EDM insertion is the dual of the magnetic one with a factor of $i$; the factor is what makes the EDM's coefficient CP-odd and the magnetic moment's coefficient CP-even. The framework does not compute $F_3$; it places it in the anti-Hermitian sector and shows that its vanishing is the parity of the informational sector.
 
@@ -195,7 +195,7 @@ so that the two coefficients are the same form factor at zero momentum transfer,
 **Where a nonzero EDM comes from.** The EDM is CP-odd, so it can be generated only by a CP-violating interaction. The candidates are standard:
 
 - **The CKM phase.** In the Standard Model the only CP-violating parameter of the quark sector is the phase of the Cabibbo–Kobayashi–Maskawa matrix; the companion article on the CKM matrix treats it. Its contribution to the neutron EDM arises only at the three-loop level and is of order $d_n\sim10^{-32}\ e\cdot\mathrm{cm}$, far below the present bound; the CKM phase is not the source of any measurable hadronic or atomic EDM.
-- **The $\theta$ parameter.** Quantum chromodynamics admits a CP-odd topological term $\theta\,(\alpha_s/8\pi)\,\epsilon^{\mu\nu\rho\sigma}G^a_{\mu\nu}G^a_{\rho\sigma}$; its contribution to the neutron EDM is of order $d_n\sim\theta\times10^{-16}\ e\cdot\mathrm{cm}$, and the bound on $d_n$ forces $|\theta|\lesssim10^{-10}$. The $\theta$ parameter belongs to the corpus's general gauge apparatus and are not developed here; the fermion-sector statement is that the EDM is where the $\theta$ problem is measured.
+- **The $\theta$ parameter.** Quantum chromodynamics admits a CP-odd topological term $\theta\,(\alpha_s/8\pi)\,\epsilon^{\mu\nu\rho\sigma}G^a_{\mu\nu}G^a_{\rho\sigma}$; its contribution to the neutron EDM is of order $d_n\sim\theta\times10^{-16}\ e\cdot\mathrm{cm}$, and the bound on $d_n$ forces $|\theta|\lesssim10^{-10}$. The $\theta$ parameter belongs to the corpus's general gauge apparatus and is not developed here; the fermion-sector statement is that the EDM is where the $\theta$ problem is measured.
 - **New physics.** Any new CP-violating phase in a theory of fermions and gauge fields contributes to the EDMs, usually at the one- or two-loop level, and the bounds constrain the scale of that physics. This is the sense in which the EDM searches probe beyond the Standard Model.
 
 **The Standard Model prediction, and its smallness.** The Standard Model's CKM phase gives EDMs that are far below the current bounds; the electron EDM, in particular, is generated only at four loops and is unobservably small. The framework inherits this: its fermion sector carries the linear chiral mass and the antilinear real structure, neither of which contains a CP-odd phase, and the algebra's central imaginaries are the volume element and the vector phase, not a CP-violating angle. The framework therefore predicts no measurable EDM, and observes that any EDM would be evidence for a phase it does not contain.

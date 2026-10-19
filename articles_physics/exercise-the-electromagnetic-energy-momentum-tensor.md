@@ -14,7 +14,7 @@ $$
 $$
 whose mixed components are $T^0{}_0 = -W$, $T^0{}_\nu = \frac{1}{c}S_\nu$, $T^\nu{}_0 = -\frac{1}{c}S_\nu$, $T^\nu{}_\mu = -\sigma_{\nu\mu}$, with $\sigma_{\nu\mu}$ the Maxwell stress. Contracting the second slot with the metric gives a symmetric tensor; it is traceless, and it is conserved with the four-force density as source.
 
-An exercise built on parents tests them. The four-component energy–momentum is the case in point, and Problem 1 states it plainly: the real form $\tilde W = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not reproduce the Poynting theorem, while the Hermitian form $\frac{1}{2}\tilde F\tilde F^{*}$ that the parents state does. The failing form is displayed, the failure is demonstrated by computation on a free plane wave, and the construction is then redone in the form that works.
+An exercise built on parents tests them. The four-component energy–momentum is the case in point, and Problem 1 states it plainly: the real form $\tilde W = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde{\mathcal F}$, with $\tilde{\mathcal F}$ the biquaternionic power–force density, do not reproduce the Poynting theorem, while the Hermitian form $\frac{1}{2}\tilde F\tilde F^{*}$ that the parents state does. The failing form is displayed, the failure is demonstrated by computation on a free plane wave, and the construction is then redone in the form that works.
 
 ## The Problem
 
@@ -24,7 +24,7 @@ The natural pair of directions is supplied by the basis $\mathcal{E}_\mu$ of $\m
 
 ## Problem 1: The Four-Component Object, and the Failure of the Real Form
 
-**Statement.** (a) Recompute the Hermitian form $\tilde F\tilde F^{*}$ in terms of the energy density $W$ and the Poynting vector $\vec S$. (b) Compare it with the real form $\tilde W = W + \frac{1}{c}\vec S$ and locate the difference. (c) For the real form, compute the scalar part of $\tilde\nabla\tilde W$ for general fields and check whether the equation $\tilde\nabla\tilde W = -\tilde P$ expands to the Poynting theorem $\partial/\partial t W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. (d) Identify the four-component object whose scalar divergence does give the energy law.
+**Statement.** (a) Recompute the Hermitian form $\tilde F\tilde F^{*}$ in terms of the energy density $W$ and the Poynting vector $\vec S$. (b) Compare it with the real form $\tilde W = W + \frac{1}{c}\vec S$ and locate the difference. (c) For the real form, compute the scalar part of $\tilde\nabla\tilde W$ for general fields and check whether the equation $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ expands to the Poynting theorem $\partial/\partial t W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. (d) Identify the four-component object whose scalar divergence does give the energy law.
 
 **Solution (a).** With $\vec F = \tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ a pure vector, the quaternion conjugate is $\tilde F^{\natural} = -\vec F$ and the Hermitian conjugate is
 $$
@@ -74,7 +74,7 @@ The claim to be tested is that this expands to the Poynting theorem, whose state
 $$
 \partial/\partial tW + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0 \quad\Longleftrightarrow\quad -\frac{1}{c}\left(\partial/\partial tW + \mathrm{div}\,\vec S\right) = \frac{1}{c}\,\vec J\cdot\vec E.
 $$
-The two differ: the time-derivative term in $\mathrm{Sc}(\tilde\nabla\tilde W)$ carries a factor $i$ that the divergence term does not. The scalar part is not a multiple of $\partial/\partial tW + \mathrm{div}\,\vec S$, and no choice of the source $\tilde P$ repairs the mismatch, since $\tilde P$'s scalar part is a single quantity. The claimed expansion is not what the equation gives.
+The two differ: the time-derivative term in $\mathrm{Sc}(\tilde\nabla\tilde W)$ carries a factor $i$ that the divergence term does not. The scalar part is not a multiple of $\partial/\partial tW + \mathrm{div}\,\vec S$, and no choice of the source $\tilde{\mathcal F}$ repairs the mismatch, since $\tilde{\mathcal F}$'s scalar part is a single quantity. The claimed expansion is not what the equation gives.
 
 **Witness: a free plane wave.** Take a plane wave in a medium,
 $$
@@ -84,7 +84,7 @@ which satisfies $\mathrm{rot}\,\vec E = -\partial/\partial t\vec B$ and $\mathrm
 $$
 \mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = -\frac{i}{c}\partial/\partial tW - \frac{1}{c}\partial/\partial Q_z\,S_z = -\frac{i}{c}\partial/\partial tW - \partial/\partial Q_z\,W = \frac{1-i}{c}\,\partial/\partial tW,
 $$
-using $\partial/\partial Q_z\,S_z = c\,\partial/\partial Q_z\,W = -\partial/\partial tW$. This is nonzero whenever $\cos(kz-\omega t)\sin(kz-\omega t)\neq 0$. A conservation law that fails on a free plane wave is not a conservation law for the field. **For the real form, the equation $\tilde\nabla\tilde W = -\tilde P$ does not expand to the Poynting theorem; the real form is not the biquaternionic energy–momentum.** The failure is a factor $i$ on the Poynting part, together with the fact — shown in Problem 2 — that a four-component object cannot carry the spatial stress at all.
+using $\partial/\partial Q_z\,S_z = c\,\partial/\partial Q_z\,W = -\partial/\partial tW$. This is nonzero whenever $\cos(kz-\omega t)\sin(kz-\omega t)\neq 0$. A conservation law that fails on a free plane wave is not a conservation law for the field. **For the real form, the equation $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ does not expand to the Poynting theorem; the real form is not the biquaternionic energy–momentum.** The failure is a factor $i$ on the Poynting part, together with the fact — shown in Problem 2 — that a four-component object cannot carry the spatial stress at all.
 
 **Solution (d).** The object whose scalar divergence does give the energy law is the Hermitian form itself, halved:
 $$
@@ -159,7 +159,7 @@ $$
 $$
 This is the mixed tensor: it is **not symmetric**, and that is correct, because $T^0{}_\nu$ (energy flux) and $T^\nu{}_0$ (momentum density times $c$) are related through the metric. Contracting the second slot with $\eta = \mathrm{diag}(-1,1,1,1)$ gives the symmetric tensor
 $$
-T^{tt} = W, \qquad T^{tj} = T^{jt} = \frac{1}{c}S_\nu, \qquad T^{\nu\mu} = -\sigma_{\nu\mu},
+T^{tt} = W, \qquad T^{tj} = T^{jt} = \frac{1}{c}S_j, \qquad T^{\nu\mu} = -\sigma_{\nu\mu},
 $$
 because $T^{tj} = \frac{1}{c}S_\nu$, $T^{jt} = (-1)(-\frac{1}{c}S_\nu) = \frac{1}{c}S_\nu$, and $T^{\nu\mu} = -\sigma_{\nu\mu}$, which is symmetric because $\sigma$ is. This is the standard electromagnetic energy–momentum tensor in the medium: $W$ is the energy density, $\frac{1}{c}\vec S$ the energy flux and the momentum density times $c$, and $-\sigma_{\nu\mu}$ the momentum flux.
 
@@ -254,7 +254,7 @@ The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the
 
 The rank-one character is the energy–momentum expression of the vanishing biquaternion norm. A null field, $\langle\tilde F\rangle_{\natural} = 0$, is a zero divisor of $\mathbb{B}$, and its energy–momentum tensor is built from a single null direction. The plane wave is the model case; the general null field behaves the same way pointwise, which is the content of the first further problem below.
 
-**Remark on why this case matters.** The plane wave is exactly the case on which the real form's conservation law fails (Problem 1) and on which the parents' Hermitian form and the constructed tensor both work. A claim checked only on the case that suggested it is not checked; the real form's $\tilde\nabla\tilde W = -\tilde P$ is refuted here on the simplest free field, the case where the Poynting theorem is most transparent.
+**Remark on why this case matters.** The plane wave is exactly the case on which the real form's conservation law fails (Problem 1) and on which the parents' Hermitian form and the constructed tensor both work. A claim checked only on the case that suggested it is not checked; the real form's $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ is refuted here on the simplest free field, the case where the Poynting theorem is most transparent.
 
 ## Further Problems
 
@@ -300,11 +300,11 @@ with $\mathcal{E}_\mu \in \{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ the basis of the 
 $$
 T^0{}_0 = -W, \qquad T^0{}_\nu = \frac{1}{c}S_\nu, \qquad T^\nu{}_0 = -\frac{1}{c}S_\nu, \qquad T^\nu{}_\mu = -\sigma_{\nu\mu},
 $$
-with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\nu\mu} = \epsilon E_\nuE_\mu + \mu H_\nuH_\mu - W\delta_{\nu\mu}$ the Maxwell stress. Contracting the second slot with the metric gives the symmetric standard tensor, $T^{tt} = W$, $T^{tj} = T^{jt} = \frac{1}{c}S_\nu$, $T^{\nu\mu} = -\sigma_{\nu\mu}$.
+with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec S = \vec E\times\vec H$ the Poynting vector, and $\sigma_{\nu\mu} = \epsilon E_\nuE_\mu + \mu H_\nuH_\mu - W\delta_{\nu\mu}$ the Maxwell stress. Contracting the second slot with the metric gives the symmetric standard tensor, $T^{tt} = W$, $T^{tj} = T^{jt} = \frac{1}{c}S_j$, $T^{\nu\mu} = -\sigma_{\nu\mu}$.
 
 The tensor is traceless, $T^\mu{}_\mu = -W - \sigma_{\mu\mu} = 0$, and it is conserved: $\partial_\mu T^{\mu t} = -\frac{1}{c}\vec E\cdot\vec J$ and $\partial_\mu T^{\mu k} = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\partial_\mu T^{\mu\nu} = -f^\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T^{\mu\nu}\propto k^\mu k^\nu$.
 
-The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde P$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial Q_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial tW$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{M}_+$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
+The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial Q_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial tW$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{M}_+$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
 
 ## Summary of Notation
 

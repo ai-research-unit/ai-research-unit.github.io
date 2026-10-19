@@ -14,7 +14,7 @@ The unifying statement is that the zero divisor locus is a **kinematic boundary*
 
 The article is organised as follows. The second section recalls the algebraic criterion and classification, as input from the mathematics articles, and locates the cone in each real subspace. The third section treats the momentum-space image and the non-relativistic dispersion. The fourth treats the configuration-space image: the turning surfaces and the caustics. The fifth treats the state-space image and the invariance of the locus under the flow. The sixth collects what stops at the locus. The closing sections are the open questions, the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a complex-linear form; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are the complex and real scalar subspaces; the material coordinate is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$, the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a complex-linear form; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are the centre and the real-quaternion subspace; the material coordinate is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$.
 
 ## The Algebraic Locus
 
@@ -133,7 +133,7 @@ $$
 \Delta_{\mathrm{vV}}=\left|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\partial x_f}\right|,
 $$
 
-whose zeros are the conjugate points and whose square root is the amplitude. The caustics of the propagator and the turning surfaces of the wave function are the same locus described in two ways: the places where the family of classical trajectories degenerates, which is where the configuration-space momentum loses rank. In the biquaternion interpretation the degeneracy is a rank drop of the real momentum form, and the locus is the configuration-space trace of the cone. The framework does not add a new equation here; it identifies the caustic, the turning surface, and the apex of the cone as one locus.
+whose singularities are the conjugate points and whose square root is the amplitude. The caustics of the propagator and the turning surfaces of the wave function are the same locus described in two ways: the places where the family of classical trajectories degenerates, which is where the configuration-space momentum loses rank. In the biquaternion interpretation the degeneracy is a rank drop of the real momentum form, and the locus is the configuration-space trace of the cone. The framework does not add a new equation here; it identifies the caustic, the turning surface, and the apex of the cone as one locus.
 
 ## The Locus in State Space
 
@@ -173,7 +173,7 @@ Both identities were verified numerically to machine precision — the first wit
 - a zero-divisor envelope stays null;
 - the locus is a **kinematic** feature of the algebra, not a dynamical attractor or a decay channel.
 
-This is the sharpest statement the article can make. The zero divisor cone is not a place the non-relativistic dynamics drives a system toward; it is the boundary that the algebra's division property, the semiclassical expansions and the non-relativistic description each have in their own way.
+This is the sharpest statement the article can make. The zero divisor cone is not a place the non-relativistic dynamics drives a system toward; it is the boundary that the algebra's division property, the semiclassical expansions and the non-relativistic description each has in its own way.
 
 ### Why the cone is not a causal boundary here
 
@@ -250,7 +250,7 @@ The table is the article's content in one view. The locus is the meeting point o
 
 ## Summary
 
-The zero divisor set of $\mathbb{B}$ is $\mathcal{Z}=\{\tilde Q\ne0:\langle\tilde Q\rangle_{\natural}=0\}$, a complex cone of complex dimension $3$ minus the origin, split into the pure nilpotents ($Q_t=0$, $\tilde Q^2=0$) and the non-pure multiples of idempotents ($Q_t\ne0$, $\tilde Q^2=2Q_t\tilde Q$, $\tilde\Pi=\tilde Q/2Q_t$); both identities were verified exactly for $\tilde Q=\vec e_x+i\vec e_y$ and $\tilde Q=e_t+i\vec e_x$. The cone lies in $\mathbb{M}_\pm$ and is absent from $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$; in $\mathbb{M}_-$ with $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it is the light cone.
+The zero divisor set of $\mathbb{B}$ is $\mathcal{Z}=\{\tilde Q\ne0:\langle\tilde Q\rangle_{\natural}=0\}$, a complex cone of complex dimension $3$ minus the origin, split into the pure nilpotents ($Q_t=0$, $\tilde Q^2=0$) and the non-pure multiples of idempotents ($Q_t\ne0$, $\tilde Q^2=2Q_t\tilde Q$, $\tilde\Pi=\tilde Q/(2Q_t)$); both identities were verified exactly for $\tilde Q=\vec e_x+i\vec e_y$ and $\tilde Q=e_t+i\vec e_x$. The cone lies in $\mathbb{M}_\pm$ and is absent from $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$; in $\mathbb{M}_-$ with $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it is the light cone.
 
 Physically the locus has three images. In **momentum space** it is the massless shell, and the non-relativistic free dispersion has $\langle\tilde P\rangle_{\natural}=p^2(1-p^2/4m^2c^2)$, spacelike for $p<2mc$, null at $p=2mc$ and timelike beyond, verified at $p=0.5,1,1.5,1.999,2,2.001,3$ with $c=m=1$. Tunnelling momenta are timelike, not null; genuine complex null momenta exist but are not evanescent waves. In **configuration space** it is the turning surface $E=V(x)$ and the caustic of the semiclassical propagator, where the WKB amplitude diverges. In **state space** it is the boundary of the trace-one slice of the future light cone, the pure states with $|\vec r|=1$ (verified to $10^{-16}$) at the boundary and the invertible mixed states inside.
 
@@ -266,7 +266,7 @@ The locus is kinematically inert: $\langle\tilde U_{\mathrm L}\tilde Q\rangle_{\
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (level 1) |
 | $\mathcal{Z}=\{\tilde Q\ne0:\langle\tilde Q\rangle_{\natural}=0\}$ | Zero divisor set |
 | $\tilde Q^2=0$ | Pure (nilpotent) zero divisor, $Q_t=0$ |
-| $\tilde Q^2=2Q_t\tilde Q$, $\tilde\Pi=\tilde Q/2Q_t$ | Non-pure zero divisor and its idempotent |
+| $\tilde Q^2=2Q_t\tilde Q$, $\tilde\Pi=\tilde Q/(2Q_t)$ | Non-pure zero divisor and its idempotent |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | Division subalgebras; no zero divisors |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian / anti-Hermitian sectors; each contains the cone |
 | $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate; $\mathbb{M}_-$ cone is the light cone |
@@ -276,7 +276,7 @@ The locus is kinematically inert: $\langle\tilde U_{\mathrm L}\tilde Q\rangle_{\
 | $\sum_\mu\lvert Q_\mu\rvert^2$ | Hermitian form (positive definite); the probability form, distinct from $\langle\cdot\rangle_{\natural}$ |
 | $\psi=q\tilde Q$, $\langle \psi\rangle_{\natural}=0$ | Null solution of the free equation for a nilpotent $\tilde Q$ |
 | $E=V(x)$ | Turning surface; $p(x)=0$ |
-| $\Delta_{\mathrm{vV}}$ | Van Vleck determinant; vanishes at caustics |
+| $\Delta_{\mathrm{vV}}$ | Van Vleck determinant; singular at caustics |
 | $\vec r=(2\mathrm{Re}(\alpha\bar\beta),2\mathrm{Im}(\alpha\bar\beta),|\alpha|^2-|\beta|^2)$ | Bloch vector; $|\vec r|=1$ for pure states |
 | $\flat=-{}^{*}$ | The algebra's real structure |
 | $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace convention |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Proca equation carries spin one, and the Dirac equation carries spin one-half, and both are first-order equations for a single field. Spin three-halves is the first case that requires a field with two indices: the **Rarita–Schwinger field** $\psi_\mu$ is a four-vector whose components are Dirac spinors, sixteen complex components in all, and its equation removes twelve of them, leaving the four states of a spin-$\tfrac32$ particle. The equation was written down by Rarita and Schwinger in 1941, and it is the field equation of the gravitino in supergravity; it is also the place where the standard field theory of higher spin first becomes delicate, since its minimal coupling to electromagnetism propagates superluminally.
+The Proca equation carries spin one, and the Dirac equation carries spin one-half, and both describe a single field. Spin three-halves is the first case that requires a field with two indices: the **Rarita–Schwinger field** $\psi_\mu$ is a four-vector whose components are Dirac spinors, sixteen complex components in all, and its equation removes twelve of them, leaving the four states of a spin-$\tfrac32$ particle. The equation was written down by Rarita and Schwinger in 1941, and it is the field equation of the gravitino in supergravity; it is also the place where the standard field theory of higher spin first becomes delicate, since under minimal coupling to electromagnetism the field propagates superluminally.
 
 This article writes the Rarita–Schwinger system in biquaternionic form and reduces it in the rest frame, where the spin-$\tfrac32$ content is transparent. The framework treats the field as a **biquaternion-valued four-vector**, that is, as a family $\tilde{\Psi}_\mu$, $\mu=0,1,2,3$, of elements of $\mathbb{B}$, and the equation as two statements: a Dirac equation on each component, and a trace constraint that contracts the vector index with the Clifford generators. In the rest frame the two together force the time component to vanish, force the spatial components to their upper (positive-frequency) parts, and impose the single vector condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ on the spatial amplitudes. The surviving space is exactly four-dimensional, and it carries the spin-$\tfrac32$ quartet. The construction also exhibits the spin-$\tfrac32$ projector: the transverse projector on the vector index, $P_{ij} = \delta_{ij} - \tfrac13\sigma_i\sigma_j$, which is idempotent and selects precisely the constrained spatial amplitudes.
 
@@ -144,7 +144,7 @@ $$
 with $\mathsf{M}_4$ the dictionary's map onto the even Clifford algebra; equivalently, a four-vector contracted with the generators is the fixed frame times the image of the corresponding element of the **informational** sector $\mathbb{M}_+$, whose basis is $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$. Products of generators are governed by the dictionary's multiplicativity, $\mathsf{M}_4(\tilde{Q}_1\tilde{Q}_2) = \mathsf{M}_4(\tilde{Q}_1)\mathsf{M}_4(\tilde{Q}_2)$, together with one sign that the frame introduces: the images of $e_t$ and of the three $\vec e_k$ commute with $\gamma^0$, while the images of the three $i\vec e_k$ anticommute with it. Hence
 
 $$
-\gamma^\mu\gamma^\nu = \epsilon_\mu\,\mathsf{M}_4(e^\mu e^\nu), \qquad \epsilon_0 = +1, \quad \epsilon_k = -1 ,
+\gamma^\mu\gamma^\nu = s_\mu\,\mathsf{M}_4(e^\mu e^\nu), \qquad s_0 = +1, \quad s_k = -1 ,
 $$
 
 a relation verified for all sixteen index pairs in the Dirac representation. The mass term of the equation, the antisymmetrized pair, comes out of the same rule as $\gamma^{0k} = \mathsf{M}_4(i\vec e_k)$ for the timelike pairs and $\gamma^{jk} = \mathsf{M}_4(\pm \vec e_\lambda)$, $\lambda$ the remaining spatial index, for the spacelike pairs; the ambiguous sign is the one fixed by the orientation $\vec e_x \vec e_y = \vec e_z$. This is the dictionary's statement that the timelike bivectors are the images of the informational sector and the spacelike ones the images of the material sector. The trivectors, which carry the kinetic structure, are $\gamma^{\mu\nu\rho} = \gamma^0\,\mathsf{M}_4(w)$ with $w \in \mathbb{M}_-$, the four of them being the images of $\vec e_z$, $-\vec e_y$, $\vec e_x$ and $-i$, again as the dictionary records. Chirality is the one place where the correspondence needs a word. The dictionary assigns the biquaternion imaginary the Clifford image of minus the pseudoscalar, $\mathsf{M}_4(i)=-\omega$, so the chirality operator is the product of the two commuting square roots of $-1$,
@@ -191,17 +191,17 @@ acting on each component. Since $\gamma^0 = \mathrm{diag}(I_2,-I_2)$, the operat
 Write $\psi_0$ and $\psi_k$ for the components, and use the trace constraint $\gamma^\mu\psi_\mu = \gamma^0\psi_0 + \gamma^k\psi_k = 0$. The Dirac equation forces $\psi_0$ upper and $\psi_k$ upper. Writing $\psi_k = (\chi_k, 0)$ with $\chi_k$ a two-component spinor and using $\gamma^k = \big(\begin{smallmatrix}0&\sigma^k\\-\sigma^k&0\end{smallmatrix}\big)$,
 
 $$
-\gamma^k\psi_k = \begin{pmatrix} \sigma^k\chi_k \\ -\sigma^k\chi_k \end{pmatrix},
+\gamma^k\psi_k = \begin{pmatrix} 0 \\ -\sigma^k\chi_k \end{pmatrix},
 $$
 
 so the trace constraint reads, in its two chiral halves,
 
 $$
-\psi_0 + \boldsymbol{\sigma}\cdot\vec\chi = 0 \quad\text{(upper)}, \qquad
+\psi_0 = 0 \quad\text{(upper)}, \qquad
 -\boldsymbol{\sigma}\cdot\vec\chi = 0 \quad\text{(lower)} .
 $$
 
-The lower equation gives $\boldsymbol{\sigma}\cdot\vec\chi=0$; the upper then gives $\psi_0 = -\boldsymbol{\sigma}\cdot\vec\chi = 0$. The trace constraint therefore forces the time component to vanish **and** imposes the single vector condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ on the three spatial amplitudes. The combined system of the Dirac equation on all four components and the trace constraint has nullity four, the constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ has nullity four, and the two solution spaces coincide.
+The lower equation gives $\boldsymbol{\sigma}\cdot\vec\chi=0$; the upper gives $\psi_0 = 0$. The trace constraint therefore forces the time component to vanish **and** imposes the single vector condition $\boldsymbol{\sigma}\cdot\vec\chi=0$ on the three spatial amplitudes. The combined system of the Dirac equation on all four components and the trace constraint has nullity four, the constraint $\boldsymbol{\sigma}\cdot\vec\chi=0$ has nullity four, and the two solution spaces coincide.
 
 ### The spin-one-half content and its removal
 

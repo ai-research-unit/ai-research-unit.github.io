@@ -25,7 +25,7 @@ $$
 with the cyclic companions $\vec e_y\vec e_z = -\vec e_z\vec e_y = \vec e_x$ and $\vec e_z\vec e_x = -\vec e_x\vec e_z = \vec e_y$. A general element is
 
 $$
-\tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu = Q_t e_t + \vec Q, \qquad \vec Q = \sum_{k=1}^{3} Q_k \vec e_k, \qquad Q_\mu \in \mathbb{C},
+\tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu = Q_t e_t + \vec Q, \qquad \vec Q = \sum_{k\in\{x,y,z\}} Q_k \vec e_k, \qquad Q_\mu \in \mathbb{C},
 $$
 
 the **scalar part** $Q_te_t$ and the **vector part** $\vec Q$. The tilde marks an element of the algebra, the majuscule a complex coefficient and the boldface a vector part.
@@ -50,7 +50,7 @@ One element, three scalar systems, all three used in the corpus.
 | complex | $e_t, \vec e_x, \vec e_y, \vec e_z$ | $4$ | $\mathbb{C}$ |
 | quaternionic | $e_t, ie_t$ | $2$ | $\mathbb{H}$ |
 
-The third row gathers the eight real numbers as a real quaternion plus $i$ times another, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$ in $\mathbb{H}$; the first two gather the same numbers as eight real coordinates or as four complex ones. The three rows are one object.
+The third row gathers the eight real numbers as a real quaternion plus $i$ times another, $\tilde Q = \tilde q + i \tilde q'$ with $\tilde q = \sum_\mu q_\mu e_\mu$ and $\tilde q' = \sum_\mu q'_\mu e_\mu$ in $\mathbb{H}$; the first two gather the same numbers as eight real coordinates or as four complex ones. The three rows are one object.
 
 **The physical dictionary.** The eight real parameters are read as physical coordinates by the dictionary, fixed once and for all,
 
@@ -136,7 +136,7 @@ Two readings of the space and of the involutions belong to this article: the sec
 
 **The involutions preserve the sectors.** Each of the four conjugations maps each sector into itself, because the star acts by a sign on $\mathbb{M}_\pm$ and the natural conjugation acts by a sign on the vector directions. No conjugation carries an element from the material sector to the informational one, and this is why the two sectors can carry two different physical readings without a cross-term.
 
-**The complex structure is local.** The physical dictionary of the coordinates is fixed by the identification of the scalar imaginary, and that identification is not rigid: the dictionary varies from point to point through the local scale $c = 1/\sqrt{\epsilon\mu}$ of a material medium, so the complex structure itself is a field and not a constant. This is the algebra's way of carrying the same freedom the metric carries in general relativity, and the corpus's `ict` is the vacuum value of the family.
+**The complex structure is local.** The physical dictionary of the coordinates is fixed by the identification of the scalar imaginary, and that identification is not rigid: the dictionary varies from point to point through the local scale $c = 1/\sqrt{\epsilon\mu}$ of a material medium, so the complex structure itself is a field and not a constant. This is the algebra's way of carrying the same freedom the metric carries in general relativity, and the corpus's $ict$ is the vacuum value of the family.
 
 **The discrete structure of the algebra.** Read physically, the four involutions are what the discrete symmetries of the corpus are built on: the bar conjugates the phase carried by $i$, the natural conjugation reflects the three vector directions, the star does both at once, and the reversal is the real structure. The four sign characters act on the four coordinate blocks, and the labels the corpus reads are parity, time reversal and charge conjugation for three of them; the owner is *The Centre of the Biquaternion Algebra as the Classical Sector*.
 

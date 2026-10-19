@@ -85,7 +85,7 @@ The analogy sharpens in the Dirac materials of the companion article *Dirac Matt
 
 ### The two branches are the framework's two mass-shell roots
 
-The framework's mass shell $\tilde P\tilde P^{\natural} = -m^2c^2$ has two roots, and the same two branches appear in every component of the Dirac field. The corpus's companion articles use the two branches explicitly: the Klein article shows that a strong step exchanges them, and the canonical-quantization article expands the field in `positive-frequency' and `negative-frequency' plane waves, with the two branches the two roots of the single biquaternion mass-shell condition. Nothing in this is new to the framework; what matters for the Dirac sea is what the framework does *next*.
+The framework's mass shell $\tilde P\tilde P^{\natural} = -m^2c^2\,e_t$ has two roots, and the same two branches appear in every component of the Dirac field. The corpus's companion articles use the two branches explicitly: the Klein article shows that a strong step exchanges them, and the canonical-quantization article expands the field in 'positive-frequency' and 'negative-frequency' plane waves, with the two branches the two roots of the single biquaternion mass-shell condition. Nothing in this is new to the framework; what matters for the Dirac sea is what the framework does *next*.
 
 ### The operator content is already the reinterpretation
 
@@ -99,7 +99,7 @@ $$
 E_0 = -2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p},
 $$
 
-which the canonical-quantization article removes by the standard prescription and describes as "an ultraviolet feature of the free field." The framework's added question is whether the biquaternion structure singles out a distinguished regularization or assigns $E_0$ a geometric meaning; the article records that "nothing in the biquaternion structure as used here changes that," and the question is open. This is the correct place to fix the article's negative conclusion: **the framework inherits the sea's infinity as the ordinary normal-ordering constant and does not, in the corpus as it stands, explain it.**
+which the canonical-quantization article removes by the standard prescription and describes as "an ultraviolet feature of the free field." The framework's added question is whether the biquaternion structure singles out a distinguished regularization or assigns $E_0$ a geometric meaning; the article records that "nothing in the biquaternion structure as used here changes that," and the question is open. This is the correct place to state the article's negative conclusion: **the framework inherits the sea's infinity as the ordinary normal-ordering constant and does not, in the corpus as it stands, explain it.**
 
 ### Charge conjugation and the two branches
 

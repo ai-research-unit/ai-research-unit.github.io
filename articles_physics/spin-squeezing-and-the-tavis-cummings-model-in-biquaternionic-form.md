@@ -83,7 +83,7 @@ $$
 \tilde{H} = \hbar\omega_c\,a^\dagger a + \omega_a\,\tilde{J}_3 + g\left(a^\dagger \tilde{J}_- + a\,\tilde{J}_+\right),
 $$
 
-where $a,a^\dagger$ are the mode operators, $\omega_c$ the mode frequency, $\omega_a$ the level splitting, and $g$ the single-spin coupling. The interaction conserves the total excitation number
+where $a,a^\dagger$ are the mode operators, $\omega_c$ the mode frequency, $\omega_a$ the atomic transition frequency, and $g$ the single-spin coupling. The interaction conserves the total excitation number
 
 $$
 N^{\mathrm{fop}}_{\mathrm{exc}} = a^\dagger a + \frac{\tilde{J}_3}{\hbar} + \frac{N}{2},
@@ -197,7 +197,7 @@ The **two-axis countertwisting** Hamiltonian $\frac{\chi}{\hbar}(\tilde{J}_+^2 +
 
 ### Collective Observables in $\mathbb{M}_+$
 
-Each $\tilde{J}_\alpha$ is a sum of Hermitian elements $ie_\alpha^{(i)}$ and is Hermitian; the mean spin is the trace pairing
+Each $\tilde{J}_\alpha$ is a sum of the Hermitian elements $\tilde{S}_\alpha^{(i)}=\tfrac{\hbar}{2}i\vec e_\alpha^{(i)}$ and is Hermitian; the mean spin is the trace pairing
 
 $$
 \langle \tilde{J}_\alpha\rangle = \mathrm{Tr}\!\left(\tilde{Ϛ}\,\tilde{J}_\alpha\right),

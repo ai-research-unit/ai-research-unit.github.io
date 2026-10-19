@@ -12,7 +12,7 @@ This article constructs those states and reads their biquaternion content. It es
 
 The signs are the delicate part of any Grassmann construction, so every convention is stated at the point of use and every identity used below was recomputed in that convention.
 
-**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the mass term is the linear chirality-off-diagonal pair; the module carries $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$. The Fock space is $\mathcal{F}=\Lambda S$ over the one-particle module $S=\mathbb{B}\tilde\Pi_+$. **Grassmann conventions.** To each mode belong two odd generators $\theta$ and $\theta^*$ with
+**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the mass term is the linear chirality-off-diagonal pair; the module carries $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$. The Fock space is $\mathcal{F}=\Lambda S$ over the one-particle module $S=\mathbb{B}\tilde\Pi_+$. **Grassmann conventions.** To each mode belong two odd generators $\theta$ and $\theta^*$ with
 
 $$
 \theta^2=\theta^{*2}=0 ,
@@ -50,7 +50,7 @@ g_ig_j=(-1)^{|i||j|}g_jg_i ,
 g^2=0\ \text{for odd }g .
 $$
 
-**Why an extension is needed, and what it extends.** The biquaternion algebra $\mathbb{B}$ is even: it has no odd part, since all four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$ are even and, by the dimension count, every nonzero element of $\mathbb{B}$ is even. The fermionic parity of the field is therefore *not* an element of $\mathbb{B}$ beyond one mode; this is the open item the companion article *The Spin–Statistics Theorem in Biquaternionic Form* records, and the Grassmann algebra is the minimal structure that supplies it. Enlarging the coefficients from $\mathbb{C}$ to $\mathcal{G}$ — that is, passing from $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ to the $\mathbb{Z}/2$-graded algebra $\mathbb{B}\otimes\mathcal{G}$ with the graded product — gives an algebra in which an odd element exists, and the original algebra sits inside it unchanged as the degree-zero part:
+**Why an extension is needed, and what it extends.** The biquaternion algebra $\mathbb{B}$ is purely even: it has no odd part, since all four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$ are even. The fermionic parity of the field is therefore *not* an element of $\mathbb{B}$ beyond one mode; this is the open item the companion article *The Spin–Statistics Theorem in Biquaternionic Form* records, and the Grassmann algebra is the minimal structure that supplies it. Enlarging the coefficients from $\mathbb{C}$ to $\mathcal{G}$ — that is, passing from $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ to the $\mathbb{Z}/2$-graded algebra $\mathbb{B}\otimes\mathcal{G}$ with the graded product — gives an algebra in which an odd element exists, and the original algebra sits inside it unchanged as the degree-zero part:
 
 $$
 (\mathbb{B}\otimes\mathcal{G})_0=\mathbb{B}\otimes\mathcal{G}_0=\mathbb{B}\oplus\mathbb{B}\,\theta\theta^* ,
@@ -114,7 +114,7 @@ $$
 +\theta^*|0\rangle\langle1|+\theta\theta^*|1\rangle\langle1| ,
 $$
 
-multiplying by $\exp(-\theta^*\theta)=1-\theta^*\theta$ and keeping the top components gives $\theta\theta^*\big(|0\rangle\langle0|+|1\rangle\langle1|\big)=\theta\theta^*.I$, and integrating with $\int d\theta^*d\theta\,\theta\theta^*=1$,
+multiplying by $\exp(-\theta^*\theta)=1-\theta^*\theta$ and keeping the top components gives $\theta\theta^*\big(|0\rangle\langle0|+|1\rangle\langle1|\big)=\theta\theta^*\,I$, and integrating with $\int d\theta^*d\theta\,\theta\theta^*=1$,
 
 $$
 \int d\theta^*d\theta\;\exp(-\theta^*\theta)\,|\theta\rangle\langle\theta|=1 .
@@ -173,7 +173,7 @@ $$
 and the matrix elements are recovered by Berezin integration. For the Hamiltonian of one mode, $H=\varepsilon\,a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$, the symbol is
 
 $$
-\langle\theta|H|\theta\rangle=\varepsilon\,\theta^*\theta ,
+\langle\theta|H|\theta\rangle=-\varepsilon\,\theta^*\theta ,
 $$
 
 a top-form element of the Grassmann algebra. The operator is even, its symbol is even, and its expectation in the state $|\theta\rangle$ is a Grassmann number rather than a number — the fermionic feature that makes coherent-state symbols *measures* rather than probability densities.
@@ -213,7 +213,7 @@ $$
 
 so the parity is the reflection of the label, in agreement with the trace formula's need for $\langle-\theta|$. For one mode $(-1)^{N}=i\vec e_z$ as the parents record; the reflection is therefore both an algebra element and a relabelling of the coherent states.
 
-**Bilinear pairings.** The bilinear $\langle\theta|O|\eta\rangle$ is a function of a pair of odd labels and is the natural object to appear in the invariant pairings. Since the biquaternion norm on $\mathbb{B}$ is the general plain bilinear $N=\sum_\mu Q_\mu^2$ and vanishes on the one-particle ideal, while the Hermitian form is positive definite, the two roles separate as in the Fock-space article: the Berezin-integral pairing is the Hermitian one, and the Lorentz-invariant bilinears of the module are the antisymmetric form $\varepsilon$ and the mixed pairing with the dual.
+**Bilinear pairings.** The bilinear $\langle\theta|O|\eta\rangle$ is a function of a pair of odd labels and is the natural object to appear in the invariant pairings. Since the biquaternion norm on $\mathbb{B}$ is the general bilinear $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ and vanishes on the one-particle ideal, while the Hermitian form is positive definite, the two roles separate as in the Fock-space article: the Berezin-integral pairing is the Hermitian one, and the Lorentz-invariant bilinears of the module are the antisymmetric form $\varepsilon$ and the mixed pairing with the dual.
 
 ## The Thermal Kernel
 

@@ -8,7 +8,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ con
 
 1. **Orientation is a rotor.** A rotation is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural}=e_t$, acting on a vector by $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$; the body axes are $\tilde u \vec e_k\tilde u^{*}$.
 2. **Angular velocity is the logarithmic derivative of the rotor.** The body-frame angular velocity is $\vec\omega_b=+2\tilde u^{\natural}d\tilde u/dt$ and the space-frame angular velocity is $\vec\omega_s=+2d\tilde u/dt\tilde u^{\natural}$; both are real pure quaternions, and $\vec\omega_s=\tilde u\vec\omega_b\tilde u^{\natural}$.
-3. **The kinetic energy is the inertia form of the angular velocity, and the free isotropic top's is the biquaternion norm.** For a spherical top, $T=\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$; for a general top, $T=\frac12\vec\omega_b\cdot I\vec\omega_b$, with the inertia tensor a symmetric positive-definite operator on the real vector part.
+3. **The kinetic energy is the inertia form of the angular velocity; for the free isotropic top it is the biquaternion norm.** For a spherical top, $T=\frac{\lambda}{2}\langle\vec\omega_b\rangle_{\natural}$; for a general top, $T=\frac12\vec\omega_b\cdot I\vec\omega_b$, with the inertia tensor a symmetric positive-definite operator on the real vector part.
 4. **Euler's equations are one quaternion equation.** In the body frame, $d\vec L/dt=\frac12[\vec L,\vec\omega_b]+\vec\tau$; the commutator is the cross product.
 5. **The free symmetric top is integrable in closed form**, and its rotor is a product of two one-parameter subgroups; the general free top is Euler's classical problem.
 
@@ -40,7 +40,7 @@ $$
 T=\tfrac12\vec\omega\cdot I\vec\omega=\tfrac12\vec L\cdot\vec\omega .
 $$
 
-For an isolated body the angular momentum is conserved in the space frame, and in the body frame its rate of change is the torque:
+For an isolated body the angular momentum is conserved in the space frame, and in the body frame it obeys
 
 $$
 d\vec L_{\text{space}}/dt=\vec\tau_{\text{space}},\qquad
@@ -161,7 +161,7 @@ T=-\tfrac12\,\mathrm{Sc}\!\left(\vec\omega_b\,\vec L_b\right)
 \vec L_b=I(\vec\omega_b)=\sum_k I_k\omega_k \vec e_k ,
 $$
 
-using $\mathrm{Sc}(\vec a\vec b)=-\vec a\cdot\vec b$ for pure real quaternions. The scalar part here is negative-definite because the quaternion product of two pure vectors has the sign of the negative dot product; the two minus signs give a positive energy.
+using $\mathrm{Sc}(\vec a\vec b)=-\vec a\cdot\vec b$ for pure real quaternions. The quadratic form $\mathrm{Sc}(\vec\omega_b\vec L_b)$ is negative-definite because the quaternion product of two pure vectors has the sign of the negative dot product; the two minus signs give a positive energy.
 
 **Spherical top.** If the three principal moments are equal, $I_1=I_2=I_3=\lambda$, the inertia operator is $\lambda$ times the identity on the real vector part and
 

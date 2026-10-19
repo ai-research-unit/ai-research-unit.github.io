@@ -17,11 +17,11 @@ The contribution is an interpretation, and it is small.
 
 The article proceeds as follows. A section fixes the total-derivative argument on which both relations rest. Two sections derive the Schwinger–Dyson equations — the quantum equation of motion and the master equation — and specialise them to the scalar field, the gauge field, and the fermion. A section derives the Ward–Takahashi identities in general form, and two sections treat the central phase, which is the framework's canonical case, and the axial identity with its anomaly. A section separates what the algebra supplies from what it imports, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form* and *The Generating Functional and the Effective Action in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central imaginary $i$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $\flat=-{}^{*}$ the anti-Hermitian conjugation. The real bilinear form is
+**Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form* and *The Generating Functional and the Effective Action in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central imaginary $i$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $\flat=-{}^{*}$ the anti-Hermitian conjugation. The real bilinear form,
 $$
 \langle \tilde Q,\tilde Q_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde Q^{*}\tilde Q_1\big),
 $$
-positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Tr}(e_t)=2$. The material coordinate is $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the quadratic operator is $K_{\mathrm{kin}}=\Box-m^2$. The functional integral with source is
+is the positive-definite Hilbert–Schmidt form on the algebra; the sector signature belongs to the biquaternion norm. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\mathrm{Tr}(e_t)=2$. The material coordinate is $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the quadratic operator is $K_{\mathrm{kin}}=\Box-m^2$. The functional integral with source is
 $$
 Z[\tilde J]=\int\mathcal{D}\tilde\Phi\;\exp(\,iS[\tilde\Phi]/\hbar+\langle\tilde J,\tilde\Phi\rangle),
 $$
@@ -79,7 +79,7 @@ $$
 a sum of products with one field removed and a delta at the point of variation. The working identity becomes
 $$
 \Big\langle\frac{\delta S}{\delta\tilde\Phi(x)}\,\tilde\Phi(y_1)\cdots\tilde\Phi(y_n)\Big\rangle_{\!J}
-=i\hbar\Big(\tilde J(x)\big\langle\tilde\Phi(y_1)\cdots\tilde\Phi(y_n)\big\rangle_{\!J}-\sum_{k}\delta(y_k-x)\big\langle\cdots\widehat{\tilde\Phi(y_k)}\cdots\big\rangle_{\!J}\Big),
+=i\hbar\Big(\tilde J(x)\big\langle\tilde\Phi(y_1)\cdots\tilde\Phi(y_n)\big\rangle_{\!J}+\sum_{k}\delta(y_k-x)\big\langle\cdots\widehat{\tilde\Phi(y_k)}\cdots\big\rangle_{\!J}\Big),
 $$
 which is the hierarchy: the divergence of the current-like object $\delta S/\delta\tilde\Phi$ is a source term plus **contact terms**, and the contact terms are what distinguish the quantum equation from the naive insertion of the classical equation. At coincident points the equation is distributional, and the delta terms are the whole of the difference. This is general and standard; it is not special to the gauge field, and the same structure appears for the scalar and the fermion below.
 
@@ -95,12 +95,12 @@ $$
 $$
 the **master Schwinger–Dyson equation**. Setting $F=1$ recovers the quantum equation of motion; expanding both sides in powers of $\tilde J$ and using $Z=\exp(W/i\hbar)$ generates the whole hierarchy of the connected correlation functions. The bracket in the box means that the classical variation $\delta S/\delta\tilde\Phi$ is evaluated with the field replaced by the operator $\delta/\delta\tilde J$.
 
-
+**Finite-dimensional check.** On the Hermitian positive-definite matrix
 $$
 K=\begin{pmatrix}2&0.3&0\\0.3&1.4&0.2\\0&0.2&1.1\end{pmatrix},
 \qquad J=(0.5,-0.4,0.9),
 $$
-for which $K^{-1}J=(0.322647,-0.484316,0.906239)$ and $K\,(K^{-1}J)=J$ to machine precision; the two-point contact term $K_{\mathrm{kin}}\langle\tilde\Phi\tilde\Phi^{\mathsf T}\rangle_{\!J}=I+\tilde J\langle\tilde\Phi\rangle^{\mathsf T}_{\!J}$ was checked on the same matrix and closed with the same accuracy. The sign recorded in the box is the one that makes the $J$-expansion reproduce the free propagator $K_{\mathrm{kin}}^{-1}$ and not its negative.
+For this matrix and source, $K^{-1}J=(0.322647,-0.484316,0.906239)$ and $K\,(K^{-1}J)=J$ to machine precision; the two-point contact term $K_{\mathrm{kin}}\langle\tilde\Phi\tilde\Phi^{\mathsf T}\rangle_{\!J}=I+\tilde J\langle\tilde\Phi\rangle^{\mathsf T}_{\!J}$ was checked on the same matrix and closed with the same accuracy. The sign recorded in the box is the one that makes the $J$-expansion reproduce the free propagator $K_{\mathrm{kin}}^{-1}$ and not its negative.
 
 ## The Equations in the Framework's Theories
 
@@ -148,7 +148,7 @@ Let $Q$ be a derivation generating a one-parameter group of transformations of t
 $$
 Q S=\int d^4x\;\langle\tilde\nabla,\tilde J\rangle_{\natural}(x)
 $$
-for some current $j^\mu$ — that is, $QS$ is a total divergence, so that the transformation is a symmetry of the bulk action up to a boundary term. Take $F$ in the working identity and replace the generic variation by the symmetry variation $Q$:
+for some current $\tilde J$ — that is, $QS$ is a total divergence, so that the transformation is a symmetry of the bulk action up to a boundary term. Take $F$ in the working identity and replace the generic variation by the symmetry variation $Q$:
 $$
 0=\int\mathcal{D}\tilde\Phi\;Q\Big(F\,\exp(\,iS/\hbar)\Big)
 =\int\mathcal{D}\tilde\Phi\;\exp(\,iS/\hbar)\Big(QF+\frac{i}{\hbar}F\,QS\Big),
@@ -185,11 +185,11 @@ $$
 with the Noether identity $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=i\,\mathrm{Sc}[\tilde\Phi^{*}(\Box\tilde\Phi)-(\Box\tilde\Phi^{*})\tilde\Phi]$, zero on shell. The Ward–Takahashi identity of the central phase is the quantum interpretation of that identity:
 $$
 \partial/\partial Q_\mu\,\big\langle J^\mu(x)\,F\big\rangle
-=i\big\langle\tilde\Phi(x)F\big\rangle+\text{contact terms},
+=-i\big\langle\tilde\Phi(x)F\big\rangle+\text{contact terms},
 $$
 the current divergence given by the variation of the inserted fields. The algebra supplies three things here and no more: the symmetry, because the centre is $\mathbb{C}$ and its unit circle is a continuous group; the current's address, in the material sector $\mathbb{M}_-$; and the compactness of the identity, because the divergence is the scalar part of $\tilde\nabla^{\natural}\tilde J$. What it does not supply is the invariance of the measure over $\mathbb{B}$-valued fields, which is the premise of the identity and is transcribed.
 
-**The abelian Ward identity.** In the gauge theory the central phase is the $\mathrm{U}(1)$ of the abelian connection $\tilde A=ict\cdots$ of *Maxwell's Equations in the Biquaternionic Formulation* and *Canonical Quantization of the Biquaternion Maxwell Field*. The Ward identity of that symmetry is the statement that the longitudinal part of the photon's vacuum polarisation vanishes and that the vertex renormalisation equals the wave-function renormalisation, $Z_1=Z_2$; in the framework these are standard results of the abelian theory, transcribed, and their content is the conservation of the current that the algebra locates in $\mathbb{M}_-$. The non-abelian generalisation replaces the single identity by one per external leg and by the Slavnov–Taylor family, below.
+**The abelian Ward identity.** In the gauge theory the central phase is the $\mathrm{U}(1)$ of the abelian connection $\tilde A$ of *Maxwell's Equations in the Biquaternionic Formulation* and *Canonical Quantization of the Biquaternion Maxwell Field*. The Ward identity of that symmetry is the statement that the longitudinal part of the photon's vacuum polarisation vanishes and that the vertex renormalisation equals the wave-function renormalisation, $Z_1=Z_2$; in the framework these are standard results of the abelian theory, transcribed, and their content is the conservation of the current that the algebra locates in $\mathbb{M}_-$. The non-abelian generalisation replaces the single identity by one per external leg and by the Slavnov–Taylor family, below.
 
 ### The Axial Identity and the Anomaly
 
@@ -205,7 +205,7 @@ the second term being the topological density. In the quantum theory the axial c
 
 ### Non-Abelian: the Slavnov–Taylor Identities
 
-For a non-abelian gauge theory the symmetry whose Ward–Takahashi identity is at issue is the BRST symmetry of *BRST Symmetry in Biquaternionic Form*, and its identities are the **Slavnov–Taylor identities**. They are one identity for each external leg, relating amplitudes with different numbers of ghosts and longitudinal gauge fields, and they express the gauge-parameter independence of physical amplitudes and the decoupling of longitudinal modes. The framework's contribution to them is exactly its contribution to BRST: the gauge algebra realized by the commutator, the Jacobi identity inherited from associativity, and hence the nilpotency $s^2=0$ that makes the identities close. The identities themselves, their renormalisation, and the four-dimensional consistency conditions are standard and are transcribed; they are recorded here as the non-abelian face of the same measure-invariance argument, with $Q$ the odd derivation $s$.
+For a non-abelian gauge theory the symmetry whose Ward–Takahashi identity is at issue is the BRST symmetry of *BRST Symmetry in Biquaternionic Form*, and its identities are the **Slavnov–Taylor identities**. They are one identity for each external leg, relating amplitudes with different numbers of ghosts and longitudinal gauge fields, and they express the gauge-parameter independence of physical amplitudes and the decoupling of longitudinal modes. The framework's contribution to them is exactly its contribution to BRST: the gauge algebra realized by the commutator, the Jacobi identity inherited from associativity, and hence the nilpotency $s^2=0$ that makes the identities close. The identities themselves, their renormalisation, and the four-dimensional consistency conditions are standard and are transcribed; they are recorded here as the non-abelian face of the same measure-invariance argument, with $s$ the odd derivation.
 
 ## What the Algebra Supplies, What It Imports, What It Does Not Supply
 
@@ -253,7 +253,7 @@ The algebra's contribution is specific and limited. It supplies the functional d
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\flat=-{}^{*}$ | Anti-Hermitian conjugation |
 | $\langle\tilde Q,\tilde Q_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde Q^{*}\tilde Q_1)$ | Real bilinear form; source pairing |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_t)=2$ | Trace formula |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t)=2$ | Trace formula |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, series convention |
 | $K_{\mathrm{kin}}=\Box-m^2$ | Quadratic operator |
 | $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,\exp(\,iS/\hbar+\langle\tilde J,\tilde\Phi\rangle)$ | Functional integral with module-valued source |

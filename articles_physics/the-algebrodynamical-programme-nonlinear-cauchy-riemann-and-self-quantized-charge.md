@@ -41,7 +41,9 @@ The functions $L$ and $R$ are the **left and right semi-derivatives** of $F$; th
 For $\mathbb{H}$ the condition has a clean geometric meaning. Taking the quaternionic norm of both sides and using its multiplicativity, $N^2(pq)=N^2(p)N^2(q)$, gives
 
 $$
-ds^2 \equiv N^2(dF) = N^2(LR)\,N^2(dZ) \equiv \Lambda(Z)\,ds^2 ,
+d\tilde s^2 \equiv N^2(dF) = N^2(LR)\,N^2(dZ) = \Lambda(Z)\,ds^2 ,
+\qquad
+ds^2 \equiv N^2(dZ),
 $$
 
 so a $\mathbb{H}$-differentiable function is exactly a **conformal map of the Euclidean four-space** $E^4$, with scale factor $\Lambda=N^2(LR)$. The inversion $F=Z^{-1}$ has $dF = -Z^{-1}\,dZ\,Z^{-1}$, and translations, rotations and dilatations verify the condition directly. By Liouville's theorem the conformal maps of $E^4$ form a finite fifteen-parameter group, so the class is again too small to carry fundamental physics: an algebra with division is not enough.

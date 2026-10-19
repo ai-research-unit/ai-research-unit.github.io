@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Hamiltonian mechanics is symplectic geometry. The phase space carries a closed, non-degenerate two-form $\omega$, the Hamiltonian vector field of a function $f$ is defined by $\iota_{X_f}\omega=df$, and the Poisson bracket is $\{f,g\}=\omega(X_f,X_g)$. When the phase space is linear and the form is constant, the same data can be presented as a triple: a positive-definite metric $g$, an antisymmetric form $\omega$, and a complex structure $J$ compatible with both, with $g(JQ_1,JQ_2)=g(Q_x,Q_y)$ and $\omega(Q_x,Q_y)=g(JQ_1,Q_y)$. This is the **Kähler** presentation, and it is the one the biquaternion algebra reproduces.
+Hamiltonian mechanics is symplectic geometry. The phase space carries a closed, non-degenerate two-form $\omega$, the Hamiltonian vector field of a function $f$ is defined by $\iota_{X_f}\omega=df$, and the Poisson bracket is $\{f,g\}=\omega(X_f,X_g)$. When the phase space is linear and the form is constant, the same data can be presented as a triple: a positive-definite metric $g$, an antisymmetric form $\omega$, and a complex structure $J$ compatible with both, with $g(JQ_x,JQ_y)=g(Q_x,Q_y)$ and $\omega(Q_x,Q_y)=g(JQ_x,Q_y)$. This is the **Kähler** presentation, and it is the one the biquaternion algebra reproduces.
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries two canonical quadratic structures: the **Hermitian form** $\vec Z^{*}\vec W$ with its scalar part $\mathrm{Sc}(\vec Z^{*}\vec W)$, and the **holomorphic biquaternion norm** $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\vec Z\vec Z^{\natural}=\sum_\mu Z_\mu^2$. The first is positive definite; the second is a general plain bilinear form whose vanishing set is a complex cone — the **biquaternion-norm cone**. The thesis of this article is that these two structures are the two faces of one object:
 
@@ -12,7 +12,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ car
 
 The article is classical throughout. The Hermitian pairing is the trace pairing that the companion articles on $\mathbb{M}_+$ write as the Born pairing; here it is read as a phase-space metric and a symplectic form, and no measurement postulate is involved. No commutator appears.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian of the series is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$.
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors. The phase-space biquaternion is $\vec Z=\vec q+i\vec p$ with $\vec q,\vec p$ pure real quaternions, identified with a point of the six-dimensional real phase space; the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian of the series is $\Box=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial Q_t^2+\Delta$.
 
 The companion articles are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the phase-space biquaternion and the Poisson bracket.
@@ -45,10 +45,10 @@ The form $\omega$ is closed ($d\omega=0$, trivially for a constant form), and **
 A **Kähler structure** on $(V,\omega)$ is a pair $(g,J)$ with $g$ a positive-definite symmetric bilinear form and $J$ a complex structure, $J^2=-\mathrm{id}$, such that
 
 $$
-g(JQ_1,JQ_2)=g(Q_x,Q_y),\qquad \omega(Q_x,Q_y)=g(JQ_1,Q_y).
+g(JQ_x,JQ_y)=g(Q_x,Q_y),\qquad \omega(Q_x,Q_y)=g(JQ_x,Q_y).
 $$
 
-In that case $\omega(JQ_1,JQ_2)=\omega(Q_x,Q_y)$, and $(g,\omega,J)$ is called a compatible triple. The standard example on $\mathbb{R}^{2n}$ is the Euclidean metric $g(Q_x,Q_y)=\sum_k(q_k^{(1)}q_k^{(2)}+p_k^{(1)}p_k^{(2)})$ with the block matrix $J$ sending $q_k\mapsto p_k$, $p_k\mapsto -q_k$. The biquaternion algebra realizes exactly this triple with $J$ equal to its own complex structure $i$.
+In that case $\omega(JQ_x,JQ_y)=\omega(Q_x,Q_y)$, and $(g,\omega,J)$ is called a compatible triple. The standard example on $\mathbb{R}^{2n}$ is the Euclidean metric $g(Q_x,Q_y)=\sum_k(q_k^{(1)}q_k^{(2)}+p_k^{(1)}p_k^{(2)})$ with the block matrix $J$ sending $q_k\mapsto p_k$, $p_k\mapsto -q_k$. The biquaternion algebra realizes exactly this triple with $J$ equal to its own complex structure $i$.
 
 ## The Hermitian Pairing of the Phase-Space Biquaternion
 
@@ -66,7 +66,7 @@ $$
 \vec Z^{*}=-\vec q+i\vec p,
 $$
 
-since $\vec q^{*}=-\vec q$ and $(i\vec p)^\dagger=i\vec p$ for pure real $\vec q,\vec p$. For a second phase-space biquaternion $\vec W=\vec r+i\vec s$, a direct computation of the scalar part gives the central identity of the article,
+since $\vec q^{*}=-\vec q$ and $(i\vec p)^{*}=i\vec p$ for pure real $\vec q,\vec p$. For a second phase-space biquaternion $\vec W=\vec r+i\vec s$, a direct computation of the scalar part gives the central identity of the article,
 
 $$
 \boxed{\;\mathrm{Sc}\!\left(\vec Z^{*}\vec W\right)
@@ -201,7 +201,7 @@ $$
 Then
 
 $$
-\mathrm{Sc}\!\left((\nabla f)^\dagger\,\nabla g\right)
+\mathrm{Sc}\!\left((\nabla f)^{*}\,\nabla g\right)
 =\sum_\mu\left(\frac{\partial f}{\partial q_\mu}\frac{\partial g}{\partial q_\mu}
 +\frac{\partial f}{\partial p_\mu}\frac{\partial g}{\partial p_\mu}\right)
 +i\sum_\mu\left(\frac{\partial f}{\partial q_\mu}\frac{\partial g}{\partial p_\mu}
@@ -211,10 +211,10 @@ $$
 whose imaginary part is the Poisson bracket:
 
 $$
-\boxed{\;\{f,g\}=\mathrm{Im}\,\mathrm{Sc}\!\left((\nabla f)^\dagger\,\nabla g\right).\;}
+\boxed{\;\{f,g\}=\mathrm{Im}\,\mathrm{Sc}\!\left((\nabla f)^{*}\,\nabla g\right).\;}
 $$
 
-The conjugate here must be the **Hermitian** one, $(\nabla f)^\dagger=\overline{(\nabla f)}^*$, and not the quaternion conjugate alone: the gradient is a complex biquaternion, and conjugating only its quaternion structure would flip the relative sign between the two terms of the real part and symmetrise the imaginary part. With the Hermitian conjugate the real part is the positive-definite metric pairing of the two gradients and the imaginary part is the antisymmetric symplectic pairing. The bracket is thus the imaginary part of the same Hermitian pairing, evaluated on gradients, and the identity displays the Kähler structure in the bracket itself: the metric and the bracket are two projections of one complex pairing. This is verified directly on the canonical functions, where $\nabla q_\mu=e_\mu$ and $\nabla p_\mu=ie_\mu$, giving $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$.
+The conjugate here must be the **Hermitian** one, $(\nabla f)^{*}$, and not the quaternion conjugate alone: the gradient is a complex biquaternion, and conjugating only its quaternion structure would flip the relative sign between the two terms of the real part and symmetrise the imaginary part. With the Hermitian conjugate the real part is the positive-definite metric pairing of the two gradients and the imaginary part is the antisymmetric symplectic pairing. The bracket is thus the imaginary part of the same Hermitian pairing, evaluated on gradients, and the identity displays the Kähler structure in the bracket itself: the metric and the bracket are two projections of one complex pairing. This is verified directly on the canonical functions, where $\nabla q_\mu=e_\mu$ and $\nabla p_\mu=ie_\mu$, giving $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$.
 
 ## The Biquaternion Norm and Its Cone
 
@@ -330,7 +330,7 @@ The material of this article divides as follows.
 1. The Hermitian pairing's scalar part splits as $g+i\omega$: the metric and the symplectic form are the real and imaginary parts of one complex pairing. The algebra carries the pairing; the split is forced by the Hermitian conjugation.
 2. The algebra's complex structure $i$ is the Kähler $J$; it satisfies $g(i\vec Z,\vec W)=\omega(\vec Z,\vec W)$ and $g(i\vec Z,i\vec W)=g(\vec Z,\vec W)$ identically.
 3. The symplectic form is the scalar part of a biquaternion two-form: $\omega=\frac{i}{2}\mathrm{Sc}(d\vec Z\wedge d\vec Z^{*})$, and $d\vec Z\wedge d\vec Z=0$.
-4. The Poisson bracket is the imaginary part of the same pairing on gradients: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^\dagger\nabla g)$.
+4. The Poisson bracket is the imaginary part of the same pairing on gradients: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^{*}\nabla g)$.
 5. The biquaternion-norm cone is simultaneously the zero-divisor cone of the algebra, the light cone of the material sector, and the characteristic cone of $\Box$; and it is the degenerate member of the family of coadjoint orbits.
 
 ## Summary
@@ -340,7 +340,7 @@ The symplectic form and the biquaternion-norm cone are the two canonical quadrat
 - For the phase-space biquaternion $\vec Z=\vec q+i\vec p$, the Hermitian scalar pairing satisfies $\mathrm{Sc}(\vec Z^{*}\vec W)=g(\vec Z,\vec W)+i\omega(\vec Z,\vec W)$, with $g$ the Euclidean metric of phase space and $\omega$ the symplectic form $\omega=\sum_\mu dq_\mu\wedge dp_\mu$.
 - The algebra's complex structure $i$ is the Kähler $J$: $g(i\vec Z,\vec W)=\omega(\vec Z,\vec W)$ and $g(i\vec Z,i\vec W)=g(\vec Z,\vec W)$.
 - The symplectic potential is $\theta=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$, with $d\theta=\omega$; equivalently $\omega=\frac{i}{2}\mathrm{Sc}(d\vec Z\wedge d\vec Z^{*})$, while $d\vec Z\wedge d\vec Z=0$.
-- The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^\dagger\nabla g)$ with $\nabla f=\sum_\mu e_\mu(\partial/\partial q_\mu\,f+i\partial/\partial p_\mu\,f)$.
+- The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^{*}\nabla g)$ with $\nabla f=\sum_\mu e_\mu(\partial/\partial q_\mu\,f+i\partial/\partial p_\mu\,f)$.
 - The holomorphic companion of the Hermitian pairing is the biquaternion norm $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\sum_\mu Z_\mu^2$, whose zero set is the biquaternion-norm cone. On the material sector the cone is the light cone $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$ and the characteristic cone $\langle\tilde P\rangle_{\natural}=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
 
 The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairing, the metric is its symmetric (real) part, the algebra's complex structure is the compatible $J$, and the biquaternion-norm cone is the isotropic cone of the holomorphic form of the same complex structure. Nothing in this article is quantum: the Hermitian pairing is read as a classical phase-space form, and the cone is the classical light and wave cone.

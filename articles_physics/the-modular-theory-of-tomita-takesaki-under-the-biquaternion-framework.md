@@ -97,11 +97,11 @@ with $i$ the scalar imaginary. The modular conjugation does not commute with $i$
 
 **Separation** is what makes $S_0$ single-valued. Without it there are $A\in M$ with $A\Omega=0$ but $A^*\Omega\neq0$, and the rule $A\Omega\mapsto A^*\Omega$ has no content.
 
-Both failures are visible in the defining representation of $M_2(\mathbb{C})$ on $\mathbb{C}^2$. Let $\Omega=\vec e_x$. The vector is cyclic, since $M_2(\mathbb{C})\vec e_x=\mathbb{C}^2$, but it is not separating, since $E_{22}\Omega=0$ with $E_{22}\neq0$. The Tomita operator is not merely unproven — it is ill-defined: for $A=E_{12}$,
+Both failures are visible in the defining representation of $M_2(\mathbb{C})$ on $\mathbb{C}^2$. Let $\Omega=(1,0)^{T}$. The vector is cyclic, since $M_2(\mathbb{C})\Omega=\mathbb{C}^2$, but it is not separating, since $E_{22}\Omega=0$ with $E_{22}\neq0$. The Tomita operator is not merely unproven — it is ill-defined: for $A=E_{12}$,
 $$
-A\Omega=E_{12}\vec e_x=0, \qquad A^*\Omega=E_{12}^\dagger \vec e_x=E_{21}\vec e_x=\vec e_y\neq0 .
+A\Omega=E_{12}\Omega=0, \qquad A^*\Omega=E_{12}^\dagger \Omega=E_{21}\Omega=(0,1)^{T}\neq0 .
 $$
-The same vector $0$ has the two images $0$ and $\vec e_y$, so no polar decomposition follows. Equivalently, the vector state $\omega(A)=\langle \vec e_x,A\vec e_x\rangle$ is not faithful, since $\omega(E_{22})=0$ while $E_{22}>0$.
+The same vector $0$ has the two images $0$ and $(0,1)^{T}$, so no polar decomposition follows. Equivalently, the vector state $\omega(A)=\langle (1,0)^{T},A(1,0)^{T}\rangle$ is not faithful, since $\omega(E_{22})=0$ while $E_{22}>0$.
 
 **Faithfulness is the invariant form of the hypothesis.** In the GNS representation of a normal state $\omega$, the GNS vector $\Omega$ is cyclic and separating for $M$ if and only if $\omega$ is faithful. So "cyclic and separating" is not a technicality about a vector; it is the statement that the state assigns a nonzero expectation to every nonzero positive element. A pure state on $M_2(\mathbb{C})$ fails it; a faithful state, with positive-definite density, passes it.
 

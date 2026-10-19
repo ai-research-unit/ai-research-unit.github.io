@@ -19,7 +19,7 @@ The article is organised as follows. The next section fixes the one-particle spa
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the states, and the trace formula of the Born rule.
 - Companion article *The Vacuum State and the Casimir Effect in Biquaternionic Form*, for the vacuum energy and its regularization.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H)$, normalized so that $\mathrm{Tr}(e_t)=2$, and the isomorphism used for the capacity count is $\mathbb{B}\cong M_2(\mathbb{C})$. Natural units $\hbar=c=1$ are used throughout, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, normalized so that $\mathrm{Tr}(e_t)=2$, and the isomorphism used for the capacity count is $\mathbb{B}\cong M_2(\mathbb{C})$. Natural units $\hbar=c=1$ are used throughout, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$.
 
 ## The One-Particle Space and Its Module Structure
 
@@ -36,8 +36,8 @@ and it is a complex Hilbert space on which the orthochronous Lorentz group acts 
 The module-theoretic statement is worth making precisely, because it is where the framework's structure enters the state space. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has, up to equivalence, one irreducible module: the two-dimensional spinor module on which it acts by matrix multiplication. The scalar one-particle space is **not** that module. Since the scalar state transforms trivially under the Lorentz group, no non-central element of $\mathbb{B}$ can act on it without mixing it into a higher-spin sector; the only elements that preserve the spin-$0$ subspace are the central scalars. Hence
 
 $$
-\tilde Q_2\in\mathbb{C}_{\mathbb{B}}\ \text{acts as a scalar},\qquad
-\tilde Q_2\notin\mathbb{C}_{\mathbb{B}}\ \text{does not act on a spin-}0\ \text{state},
+\tilde Q\in\mathbb{C}_{\mathbb{B}}\ \text{acts as a scalar},\qquad
+\tilde Q\notin\mathbb{C}_{\mathbb{B}}\ \text{does not act on a spin-}0\ \text{state},
 $$
 
 and the scalar one-particle space is a module over the centre. At the level of the generators every commutator $[\tilde Q_2,\tilde Q_1]$ acts as zero, so only the central part of an element contributes and the spin part of the algebra is invisible on a spin-$0$ state. In the associative sense no nonzero action of the whole algebra exists, and the reason is one line: the trace-free part generates $\mathbb{B}$, so if $\vec e_x$ acted as zero then $\vec e_x^2=-e_t$ would force the identity to act as zero as well, and with it every element. The irreducible biquaternion modules are the spinor modules; the scalar state space is a module for the centre and for the mode algebra, not for $\mathbb{B}$. This is the representation-theoretic content of "spin $0$ lives in the centre", stated at the level of the state space rather than the field.
@@ -80,7 +80,7 @@ a^{\mathrm{fop}\dagger}(\vec p):\ \mathrm{Sym}^n\to\mathrm{Sym}^{n+1},
 a^{\mathrm{fop}}(\vec p):\ \mathrm{Sym}^n\to\mathrm{Sym}^{n-1},
 $$
 
-and the **occupation basis** $|n_{\vec p_1},n_{\vec p_2},\dots\rangle$, with finitely many nonzero occupations, diagonalizes the single-family number operator $\vec u=\int\frac{d^3p}{(2\pi)^3}a^{\mathrm{fop}\dagger}_{\vec p}a^{\mathrm{fop}}_{\vec p}$, whose eigenvalues are the total occupation of the particle modes; the total number operator of the complex field, below, adds the antiparticle family. The basis vectors are obtained from the vacuum by
+and the **occupation basis** $|n_{\vec p_1},n_{\vec p_2},\dots\rangle$, with finitely many nonzero occupations, diagonalizes the single-family number operator $N_a=\int\frac{d^3p}{(2\pi)^3}a^{\mathrm{fop}\dagger}_{\vec p}a^{\mathrm{fop}}_{\vec p}$, whose eigenvalues are the total occupation of the particle modes; the total number operator of the complex field, below, adds the antiparticle family. The basis vectors are obtained from the vacuum by
 
 $$
 |n_{\vec p_1},n_{\vec p_2},\dots\rangle
@@ -146,14 +146,14 @@ and its commutators with the modes are $[N,a^{\mathrm{fop}\dagger}_{\vec p}]=+a^
 The complex scalar field carries a second grading, by the conserved charge,
 
 $$
-\u03d8^{\mathrm{fop}}=\int\!\frac{d^3p}{(2\pi)^3}\left({a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p}-{b^{\mathrm{fop}}_{\vec p}}^\dagger b^{\mathrm{fop}}_{\vec p}\right),
+Ϙ^{\mathrm{fop}}=\int\!\frac{d^3p}{(2\pi)^3}\left({a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p}-{b^{\mathrm{fop}}_{\vec p}}^\dagger b^{\mathrm{fop}}_{\vec p}\right),
 \qquad
-\mathcal{F}=\bigoplus_{ϙ\in\mathbb{Z}}\mathcal{F}_ϙ,
+\mathcal{F}=\bigoplus_{Ϙ\in\mathbb{Z}}\mathcal{F}_Ϙ,
 \qquad
-\u03d8^{\mathrm{fop}}\big|_{\mathcal{F}_ϙ}=ϙ .
+Ϙ^{\mathrm{fop}}\big|_{\mathcal{F}_Ϙ}=Ϙ .
 $$
 
-The charge grading is a $\mathbb{Z}$-grading, and it is the grading that separates the particle from the antiparticle sectors; a state of charge $ϙ$ contains, in the simplest case, $ϙ$ more particles than antiparticles. It is a superselection rule: the charge is central and conserved, so no local operator of the theory connects different $\mathcal{F}_ϙ$, and the relative phase between charge sectors is unobservable. This is the bosonic counterpart of the fermionic charge; a process that creates a particle–antiparticle pair changes the total number by two and the charge by zero, so it moves within a fixed $\mathcal{F}_ϙ$.
+The charge grading is a $\mathbb{Z}$-grading, and it is the grading that separates the particle from the antiparticle sectors; a state of charge $Ϙ$ contains, in the simplest case, $Ϙ$ more particles than antiparticles. It is a superselection rule: the charge is central and conserved, so no local operator of the theory connects different $\mathcal{F}_Ϙ$, and the relative phase between charge sectors is unobservable. This is the bosonic counterpart of the fermionic charge; a process that creates a particle–antiparticle pair changes the total number by two and the charge by zero, so it moves within a fixed $\mathcal{F}_Ϙ$.
 
 The two gradings are distinct and neither is the fermion parity. The parity grading of the Dirac sector is a $\mathbb{Z}/2$-grading of the **operator algebra**, because the fermionic modes anticommute and the algebra is graded-commutative; for the bosonic field the modes commute, no anticommutation is imposed, and there is no parity operator analogous to $(-1)^F$. The number grading is an $\mathbb{N}$-grading of the state space; the charge grading is a $\mathbb{Z}$-grading of the state space; the parity grading, where it exists, is a $\mathbb{Z}/2$-grading of the algebra. The three must not be conflated, and in the scalar sector only the first two are present.
 
@@ -172,13 +172,13 @@ $$
 the density in which every creation operator stands to the left of every annihilation operator. The first two terms are the particle and antiparticle number densities and the last two are the crossed particle–antiparticle terms; all four terms of $\phi^{\mathrm{fop}\dagger}\phi^{\mathrm{fop}}$ appear, the antiparticle density displayed second being the one term whose operators are reversed relative to the unordered product $\phi^{\mathrm{fop}{}(-){}^{*}}\phi^{\mathrm{fop}(-)}$. The normal-ordered density has vanishing vacuum expectation by construction, whereas the unordered product carries the c-number commutator $[\phi^{\mathrm{fop}{}(-){}^{*}},\phi^{\mathrm{fop}(-)}]$; this is why the vacuum energy of the companion quantization is a contact term. Integrating the normal-ordered density over space and projecting onto a mode gives the mode number,
 
 $$
-\vec u_{\vec p}={a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p} ,
+N_{\vec p}={a^{\mathrm{fop}}_{\vec p}}^\dagger a^{\mathrm{fop}}_{\vec p} ,
 \qquad
-\langle\psi|\vec u_{\vec p}|\psi\rangle
+\langle\psi|N_{\vec p}|\psi\rangle
 =\big\|a^{\mathrm{fop}}_{\vec p}\psi\big\|^2\ge0 ,
 $$
 
-so the expectation of the number is a sum of squared norms and the spectrum is non-negative and integer. The normal-ordered charge of the complex field is $\u03d8^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$, and it is the difference of two positive operators, hence unbounded above and below; the normal-ordered Hamiltonian is their sum with weights $E_{\vec p}$, hence bounded below. The two statements together are the operator form of the statement that the Fock space's $\mathbb{N}$-grading is compatible with the Hamiltonian and that the $\mathbb{Z}$-grading is not bounded, as a charge must not be.
+so the expectation of the number is a sum of squared norms and the spectrum is non-negative and integer. The normal-ordered charge of the complex field is $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$, and it is the difference of two positive operators, hence unbounded above and below; the normal-ordered Hamiltonian is their sum with weights $E_{\vec p}$, hence bounded below. The two statements together are the operator form of the statement that the Fock space's $\mathbb{N}$-grading is compatible with the Hamiltonian and that the $\mathbb{Z}$-grading is not bounded, as a charge must not be.
 
 ## Why There Is No Scalar Fock Space Inside Biquaternions
 
@@ -239,7 +239,7 @@ $$
 a^{\mathrm{fop}}|\alpha\rangle=\alpha|\alpha\rangle,
 $$
 
-and the **displacement** $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$ generates it from the vacuum. The central $\mathrm{U}(1)$ acts on the Fock space through $U^{\mathrm{fop}}_{\alpha_0}=\exp(i\alpha_0\u03d8^{\mathrm{fop}})$, the same generator as in the companion field article, and since $[\u03d8^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=+a^{\mathrm{fop}\dagger}$ the coherent state is carried to $|\alpha\rangle\mapsto|\exp(i\alpha_0)\alpha\rangle$; the coherent states are thus the orbit of the vacuum under the semidirect product of the displacement and phase groups, and the charge is the generator of the phase. The biquaternion content here is only that the phase is central: it multiplies the state by a central unitary and does not rotate any spinor index. There is no native displacement operator in $\mathbb{B}$, for the same trace reason, and the coherent-state construction is imported with the module.
+and the **displacement** $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$ generates it from the vacuum. The central $\mathrm{U}(1)$ acts on the Fock space through $U^{\mathrm{fop}}_{\alpha_0}=\exp(i\alpha_0Ϙ^{\mathrm{fop}})$, the same generator as in the companion field article, and since $[Ϙ^{\mathrm{fop}},a^{\mathrm{fop}\dagger}]=+a^{\mathrm{fop}\dagger}$ the coherent state is carried to $|\alpha\rangle\mapsto|\exp(i\alpha_0)\alpha\rangle$; the coherent states are thus the orbit of the vacuum under the semidirect product of the displacement and phase groups, and the charge is the generator of the phase. The biquaternion content here is only that the phase is central: it multiplies the state by a central unitary and does not rotate any spinor index. There is no native displacement operator in $\mathbb{B}$, for the same trace reason, and the coherent-state construction is imported with the module.
 
 ## What Is Standard and What Is Open
 
@@ -275,13 +275,13 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | $a^{\mathrm{fop}}_{\vec p},a^{\mathrm{fop}\dagger}_{\vec p},b^{\mathrm{fop}}_{\vec p},b^{\mathrm{fop}\dagger}_{\vec p}$ | Mode operators (particle and antiparticle) |
 | $\vert n_{\vec p_1},n_{\vec p_2},\dots\rangle$ | Occupation basis; $n_i\in\mathbb{N}$ |
 | $N=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}+b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Number operator ($\mathbb{N}$-grading) |
-| $\u03d8^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Charge operator ($\mathbb{Z}$-grading) |
+| $Ϙ^{\mathrm{fop}}=\int\frac{d^3p}{(2\pi)^3}(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}-b^{\mathrm{fop}\dagger}b^{\mathrm{fop}})$ | Charge operator ($\mathbb{Z}$-grading) |
 | $\mathrm{Sym}^n$, $\binom{d+n_{\max}}{n_{\max}}$ | Symmetric powers and their dimensions |
 | $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$, $\mathrm{Tr}(e_t)=2$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 | $\tfrac12(e_t+i\vec e_z)$, $\tfrac12(e_t-i\vec e_z)$ | Fermionic vacuum and occupied idempotents (contrast case) |
 | $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ | Trace formula (Born rule), for finite truncations |
 | $D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$, $\vert\alpha\rangle$ | Displacement operator and coherent state |
-| $U^{\mathrm{fop}}_\alpha=\exp(i\alpha \u03d8^{\mathrm{fop}})$, $\vert\alpha\rangle\mapsto\vert \exp(+i\alpha)\alpha\rangle$ | Central $\mathrm{U}(1)$ phase |
+| $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\vert\alpha\rangle\mapsto\vert \exp(+i\alpha)\alpha\rangle$ | Central $\mathrm{U}(1)$ phase |
 
 ## Further Reading
 

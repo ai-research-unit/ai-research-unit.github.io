@@ -19,7 +19,7 @@ The cone is also the characteristic cone of the algebra's wave operator. The sta
 
 The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two interpretations share the algebra and nothing else.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_t + \vec Q_1$, $\alpha \in \mathbb{R}$, $\vec Q_1 = a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ real. The biquaternion norm is $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$, and the material coordinate is $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q}_1 = Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with complex coefficients, and on generic configurations rather than on a single null direction.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_t + \vec Q_1$, $\alpha \in \mathbb{R}$, $\vec Q_1 = a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ real. The biquaternion norm is $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$, abbreviated $N(\tilde{Q}_1)$ where its sign is the point, and the material coordinate is $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q}_1 = Q_{1t}e_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with complex coefficients, and on generic configurations rather than on a single null direction.
 
 ## Events, Displacements and the Causal Order
 
@@ -96,7 +96,7 @@ $$
 \vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|},
 $$
 
-so the material cone is the idempotent-multiple branch of $\mathcal{Z}$ realized over the reals, and the nilpotent branch would require complex spatial components. The cone is therefore the locus at which the algebra fails to be invertible. Off the cone the inverse exists explicitly,
+so the material cone is the idempotent-multiple branch of $\mathcal{Z}$ realized over the reals, and the nilpotent branch would require complex spatial components. The cone is therefore the locus at which elements of the algebra fail to be invertible. Off the cone the inverse exists explicitly,
 
 $$
 \tilde{Q}_1^{-1} = \frac{\tilde{Q}_1^{\natural}}{\langle\tilde{Q}_1\rangle_{\natural}}, \qquad \langle\tilde{Q}_1\rangle_{\natural} \ne 0,
@@ -231,7 +231,7 @@ $$
 v_{\mathrm{rel}} = c\sqrt{1 - \gamma_{\mathrm{rel}}^{-2}},
 $$
 
-the inequality says $v_{\mathrm{rel}} < c$ for every pair of distinct observers, with $v_{\mathrm{rel}} = 0$ for coincident velocities. The contraction of two future timelike four-velocities is bounded below by $-c^2$, and the bound is attained only in the rest frame common to both. No pair of observers can be in relative motion at the speed of light or beyond, and the bound is an algebraic consequence of the biquaternion norm rather than an extra dynamical assumption.
+the inequality says $v_{\mathrm{rel}} < c$ for every pair of distinct observers, with $v_{\mathrm{rel}} = 0$ for coincident velocities. The contraction of two future timelike four-velocities is bounded above by $-c^2$, and the bound is attained only in the rest frame common to both. No pair of observers can be in relative motion at the speed of light or beyond, and the bound is an algebraic consequence of the biquaternion norm rather than an extra dynamical assumption.
 
 ### Two Evaluations
 
@@ -337,7 +337,7 @@ $$
 \tilde{R} \;\longmapsto\; \tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*} + \tilde R_{\mathrm d}.
 $$
 
-The theorem says that the cone, together with the time orientation, determines the allowed transformations up to these two operations. Nothing beyond the causal order is needed to recover the kinematics of the frame changes; the barrier is not only preserved by the relativity group, it characterizes it.
+The theorem says that the cone, together with the time orientation, determines the allowed transformations up to these operations. Nothing beyond the causal order is needed to recover the kinematics of the frame changes; the barrier is not only preserved by the relativity group, it characterizes it.
 
 Within the full Lorentz group, the proper orthochronous component is the one realized by the rotor conjugation with $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$, namely $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$. This is the identity component, and it is the component that preserves the distinction between future and past: a composition of boosts and spatial rotations maps a future-directed timelike displacement to a future-directed timelike displacement, never to a past-directed one. The discrete transformations that exchange the sheets — time reversal and the combined parity–time reversal — are not rotor conjugations, and in the biquaternion interpretation they are not elements of the connected group at all. The immediate physical consequence is that a process built from continuous changes of frame cannot reverse a causal arrow, and the two timelike components of the complement of $\mathcal{Z}$, though related by an inadmissible reflection, are not connected by any allowed motion.
 
@@ -363,7 +363,7 @@ The information-theoretic content is the following pair of statements.
 
 The honest qualification is that the second statement is a physical postulate, not a theorem of the algebra. The algebra contains spacelike elements of $\mathbb{M}_-$ with $N > 0$, and it assigns them an inverse and a well-defined norm; it does not by itself exclude a process that propagates on them. What the algebra does is fix the structure on which the postulate is imposed: the three invariant strata, the partial order, the relative-velocity bound and the characteristic cone. Given the postulate that physical signals travel on or inside the cone, the barrier is then complete: the elsewhere is informationally inert, the cone is its boundary, and no change of frame moves the boundary. The sharpness of the barrier is the sharpness of the postulate, and the clean separation of the two — the algebra's invariant structure on the one hand, the causal postulate on the other — is the contribution of the biquaternion interpretation.
 
-There is no corresponding barrier for observers at a single event: two observers may coincide at an event and separate thereafter, and each later event of either worldline lies in the causal future of that coincidence, though events on the two worldlines after the coincidence need not be causally related to one another. The barrier is between events and between velocities, not between observers as such. What the relative-velocity bound adds is that the two observers' worldlines remain inside each other's cones forever, and no finite sequence of frame changes can bring either worldline onto the cone of the other.
+There is no corresponding barrier for observers at a single event: two observers may coincide at an event and separate thereafter, and each later event of either worldline lies in the causal future of that coincidence, though events on the two worldlines after the coincidence need not be causally related to one another. The barrier is between events and between velocities, not between observers as such. What the relative-velocity bound adds is that the relative speed of the two observers remains below $c$, and no finite sequence of frame changes can make it reach $c$.
 
 The conventions and the results taken over from the relativity series are those of the following companion articles:
 

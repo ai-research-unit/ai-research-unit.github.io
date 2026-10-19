@@ -16,7 +16,7 @@ The algebra carries six **remarkable subspaces**, defined in *Introduction to th
 
 **The approach.** The article establishes four things, in this order. The four blocks and the exponent of each factor are identified. The blocks are put against the Clifford grades and against the six subspaces, which are their sums two by two. The incidence of the exponents with the subspaces is tabulated, with the polar data each subspace carries. The two products of the series — of two boosts, and of the word of a pure vector — are computed, and the domain and the conjugations of the word close the account.
 
-**The result, in one sentence.** The four exponents of the polar word lie one in each of the four coordinate blocks of the algebra, so that each exponent lies in exactly three of the six remarkable subspaces and each remarkable subspace contains exactly two of the exponents, and the representation fails on a subspace exactly on its zero divisors.
+**The result, in one sentence.** The four exponents of a generic polar word lie one in each of the four coordinate blocks of the algebra, so that each exponent lies in exactly three of the six remarkable subspaces and each remarkable subspace contains exactly two of them, and the representation fails on a subspace exactly on the origin or its nonzero zero divisors.
 
 **Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$, with $Q_\mu\in\mathbb{C}$.
 
@@ -68,9 +68,9 @@ The two scalar blocks $A_1,A_2$ have real dimension one, the two vector blocks $
 | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | the real vector block | the rotor |
 | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $B_2 = \operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ | the imaginary vector block | the boost |
 
-**Theorem (the block reading of the polar word).** Each one of the four exponents of the polar word lies in exactly one of the four coordinate blocks, and every one of the four blocks carries exactly one exponent.
+**Theorem (the block reading of the polar word).** For a generic polar word, each one of the four exponents lies in exactly one of the four coordinate blocks, and every one of the four blocks carries exactly one exponent.
 
-**Proof.** The exponent $\ln r$ is a real multiple of $e_t$, hence in $A_1$; the exponent $i\alpha$ is a real multiple of $ie_t$, hence in $A_2$; the exponent $\tfrac{\theta}{2}\vec u_{\mathrm r}$ has three real coordinates on $\vec e_x,\vec e_y,\vec e_z$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ has three real coordinates on $i\vec e_x,i\vec e_y,i\vec e_z$ and vanishing others, hence is in $B_2$. Since the blocks are disjoint, the assignment is a bijection between the four exponents and the four blocks.
+**Proof.** The exponent $\ln r$ is a real multiple of $e_t$, hence in $A_1$; the exponent $i\alpha$ is a real multiple of $ie_t$, hence in $A_2$; the exponent $\tfrac{\theta}{2}\vec u_{\mathrm r}$ has three real coordinates on $\vec e_x,\vec e_y,\vec e_z$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ has three real coordinates on $i\vec e_x,i\vec e_y,i\vec e_z$ and vanishing others, hence is in $B_2$. Since distinct blocks meet only at $0$ and the four exponents are nonzero, the assignment is a bijection between the four exponents and the four blocks.
 
 The additivity of the dimensions of the blocks is the block form of the count of the four factors,
 
@@ -145,9 +145,9 @@ The block reading of the word and the block reading of the subspaces give the in
 | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ (boost) | $B_2$ | $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ |
 | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ (rotor) | $B_1$ | $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ |
 
-**Theorem (the incidence).** Each of the four exponents of the polar word lies in exactly three of the six remarkable subspaces, and each of the six remarkable subspaces contains exactly two of the four exponents.
+**Theorem (the incidence).** For a generic polar word, each of the four exponents lies in exactly three of the six remarkable subspaces, and each of the six remarkable subspaces contains exactly two of the four exponents.
 
-**Proof.** Each exponent lies in exactly one block, by the block reading of the word; each block lies in exactly three remarkable subspaces, by the six-row table above; hence each exponent lies in exactly three of them. The dual statement is the same count read row by row of the subspace table: the centre contains $A_1$ and $A_2$, the vector subspace $B_1$ and $B_2$, the quaternion subspace $A_1$ and $B_1$, the anti-quaternion subspace $A_2$ and $B_2$, the Hermitian subspace $A_1$ and $B_2$, and the anti-Hermitian subspace $A_2$ and $B_1$. The counts agree: $4\times3 = 12 = 6\times2$.
+**Proof.** Each exponent lies in exactly one block, by the block reading of the word; each nonzero element of a block lies in exactly three remarkable subspaces, by the six-row table above; hence each exponent lies in exactly three of them. The dual statement is the same count read row by row of the subspace table: the centre contains $A_1$ and $A_2$, the vector subspace $B_1$ and $B_2$, the quaternion subspace $A_1$ and $B_1$, the anti-quaternion subspace $A_2$ and $B_2$, the Hermitian subspace $A_1$ and $B_2$, and the anti-Hermitian subspace $A_2$ and $B_1$. The counts agree: $4\times3 = 12 = 6\times2$.
 
 Read subspace by subspace, the incidence gives the pair of exponents each subspace carries:
 
@@ -185,19 +185,19 @@ The behaviour of the phase is decided by the norm alone. The phase is $\alpha = 
 
 The coordinates of the last two rows are those of the sectors: an element of the Hermitian subspace is $\sigma e_t+i\vec w$ with $\sigma = \operatorname{Re}Q_t$ and $\vec w = w_x\vec e_x+w_y\vec e_y+w_z\vec e_z$ real, and an element of the anti-Hermitian subspace is $i\tau e_t+\vec\rho$ with $\tau = \operatorname{Im}Q_t$ and $\vec\rho$ real. The two bars denote the Euclidean norm of the vector, $\lvert\vec w\rvert^{2} = w_x^{2}+w_y^{2}+w_z^{2}$ and likewise for $\vec\rho$; on the vector subspace the same notation reads $(\vec Q,\vec Q) = Q_x^{2}+Q_y^{2}+Q_z^{2}$ with complex components, the complex Euclidean square.
 
-**The phase is a free coordinate on exactly the two subspaces whose norm is complex**, the centre and the vector subspace; it is frozen on the two halves, at $0$ and at $\pi/2$; and it is a two-valued label on the two sectors, where the norm is real indefinite. The norm is complex on exactly the two subspaces that are not real forms of the algebra, which is the same pair.
+**The phase is a free coordinate on exactly the two subspaces whose norm is complex**, the centre and the vector subspace, in the sense that it takes every value in the branch interval as the element varies; on a given element it is fixed by the norm, and it is $0$ or $\pi/2$ wherever the norm is real and nonzero, in particular on the real and imaginary lines. It is frozen on the two halves, at $0$ and at $\pi/2$, and it is a two-valued label on the two sectors, where the norm is real indefinite. The norm is complex on exactly the two subspaces that are not real forms of the algebra, which is the same pair.
 
 The two non-central factors behave as follows.
 
 | subspace | the boost | the rotor |
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $e_t$ | $\pm e_t$ |
-| $\mathrm{Vect}(\mathbb{B})$ | a boost, or $e_t$ on the lines of a single direction | a half turn |
+| $\mathrm{Vect}(\mathbb{B})$ | a boost, or $e_t$ on the complex lines through a real direction | a half turn |
 | $\mathbb{H}_{\mathbb{B}}$ | $e_t$ | free in $\mathrm{Sp}(1)$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | $e_t$ | free in $\mathrm{Sp}(1)$ |
 | $\mathbb{M}_+$, $N>0$ | the normalised element, up to sign | a sign, $\pm e_t$ |
-| $\mathbb{M}_+$, $N<0$ | a nontrivial boost | a half turn |
-| $\mathbb{M}_-$, $N>0$ | a nontrivial boost | a half turn |
+| $\mathbb{M}_+$, $N<0$ | a nontrivial boost, or $e_t$ on the imaginary vector subspace | a half turn |
+| $\mathbb{M}_-$, $N>0$ | a nontrivial boost, or $e_t$ on the real vector subspace | a half turn |
 | $\mathbb{M}_-$, $N<0$ | the element times $-i/r$ | a sign, $\pm e_t$ |
 
 Four of the rows are degenerate cases worth naming, and the derivations are those of *The Polar Element Representation in Subspaces*.
@@ -207,12 +207,12 @@ Four of the rows are degenerate cases worth naming, and the derivations are thos
 - **The real vector block.** An element of $B_1$ has a positive real norm, so the phase is $0$, the boost is $e_t$, and the rotor is the direction of the element, a half turn about it.
 - **A definite Hermitian element.** On $\mathbb{M}_+$ with $N>0$ the normalised element is Hermitian and definite, so it is a boost up to sign, and the rotor is a sign. The same holds on $\mathbb{M}_-$ with $N<0$, where the boost is $-i$ times the normalised element.
 
-The pattern of the last two rows is the symmetry of the two sectors: **on each sector the sign of the norm decides which of the two non-central factors is trivial.** A definite element of a sector is a boost with a sign rotor; an indefinite one has a half-turn rotor and a genuine boost.
+The pattern of the last two rows is the symmetry of the two sectors: **on each sector the sign of the norm decides which of the two non-central factors is trivial, except on the vector subspace.** A definite element of a sector is a boost with a sign rotor; an indefinite element outside the vector subspace has a half-turn rotor and a genuine boost, and on the vector subspace the rotor is a half turn, with the boost trivial on the complex lines through a real direction.
 
 | sector | $N>0$ | $N<0$ |
 |---|---|---|
-| $\mathbb{M}_+$ | the boost carries the element, the rotor is a sign | the rotor carries a direction, the boost is genuine |
-| $\mathbb{M}_-$ | the rotor carries a direction, the boost is genuine | the boost carries the element, the rotor is a sign |
+| $\mathbb{M}_+$ | the boost carries the element, the rotor is a sign | the rotor carries a direction; the boost is genuine, or $e_t$ on the imaginary vector subspace |
+| $\mathbb{M}_-$ | the rotor carries a direction; the boost is genuine, or $e_t$ on the real vector subspace | the boost carries the element, the rotor is a sign |
 
 The two rows are exchanged row for row under the interchange $\mathbb{M}_+\leftrightarrow\mathbb{M}_-$ with $N\mapsto-N$, which is the central unit $i$ read on the sectors.
 
@@ -220,14 +220,14 @@ The signs in the two sign rows are the signs of the two central coordinates of t
 
 ## The Boost Family and the Rotor Group
 
-The four factors are four subsets of the algebra, one per block, and two of them are groups and two are not.
+The four factors are four subsets of the algebra, one for each of the four exponents, and three of them are groups and one is not.
 
-- The scale runs over $\mathbb{R}_{>0}$, a half-line of the real scalar block.
+- The scale runs over $\mathbb{R}_{>0}$, a half-line of the real scalar block and a group under multiplication.
 - The phase runs over $\mathrm{U}(1)$, the unit circle of the imaginary scalar block.
 - The boost runs over the Hermitian positive definite elements of norm one, the unit sphere of the positive cone in $\mathbb{M}_+$.
 - The rotor runs over $\mathrm{Sp}(1)$, the unit sphere of the quaternion subspace.
 
-The rotor set is a **group**: the product of two unit real quaternions is a unit real quaternion. The phase set is a group as well, and the two of them are the groups the word carries.
+The rotor set is a **group**: the product of two unit real quaternions is a unit real quaternion. The phase set is a group as well, and the scale set is a group under multiplication; these three are the groups the word carries.
 
 The boost set is **not** a group: the product of two Hermitian positive elements is not Hermitian in general, so the product of two boosts does not stay in the boost set. The product of two boosts is a boost times a rotor,
 
@@ -249,13 +249,13 @@ $$
 
 Both identities were verified in double precision over $300$ random pairs, the first to $9.8\times10^{-13}$ and the second to $2.8\times10^{-13}$. The residual rotor is the Thomas-Wigner rotation of the physics articles, *The Lorentz Group in Biquaternionic Form — Structure and Representations*; the algebra records it as the statement that the boost set is a symmetric space and not a group, and the word records it as the escape into the rotor factor.
 
-The two axes are two directions of the vector subspace, $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$, and the question whether they commute is the question whether the word may be reordered. They commute exactly when they are parallel, and then the word is a single boost-rotation about the common axis; the bracket is developed in *The Polar Element Representation of Biquaternions*, §*The Boost*.
+The two axes are two directions of the vector subspace, $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$, and the question whether they commute is the question whether the word may be reordered. With both factors nontrivial, they commute exactly when they are parallel, and then the word is a single boost-rotation about the common axis; if one factor is central, the word is already order-free. The bracket is developed in *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions*, §*The Two Exponents of the Word*.
 
 ## The Vector Subspace Is Rigid
 
 The vector subspace is the one subspace on which the polar data of every element is fixed in shape. The block table gives the reason: the vector subspace is the sum $B_1\oplus B_2$ of the two blocks that carry the two non-central exponents, and nothing else. The two central coordinates vanish, and their vanishing is a condition on the two non-central factors.
 
-**Proposition (the half-turn rotor of a pure vector).** Let $\vec Q$ be an element of the vector subspace with $N(\vec Q)\neq0$, and let $\vec Q = \rho\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its polar word. Then the rotor is a half turn, $\theta = \pi$, and the rotor axis is orthogonal to the boost axis.
+**Proposition (the half-turn rotor of a pure vector).** Let $\vec Q$ be an element of the vector subspace with $N(\vec Q)\neq0$, and let $\vec Q = \rho\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its polar word. Then the rotor is a half turn, $\theta = \pi$; either the boost is trivial, $\psi=0$, or its axis is orthogonal to the rotor axis.
 
 **Proof.** Write the two non-central factors in their closed forms,
 
@@ -289,9 +289,9 @@ $$
 \left(\frac{\vec Q}{\rho}\right)^{\natural} = -\frac{\vec Q}{\rho} , \qquad \left(\frac{\vec Q}{\rho}\right)^{2} = -e_t ,
 $$
 
-so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified over $1000$ random complex vectors, the natural conjugate to machine precision and the square to $3.6\times10^{-15}$, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $4.4\times10^{-16}$ and the dot product of the two axes to $2.6\times10^{-15}$.
+so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified over $1000$ random complex vectors, the natural conjugate to machine precision and the square to $3.6\times10^{-15}$, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $4.4\times10^{-16}$, and the dot product of the two axes vanished to $2.6\times10^{-15}$ whenever the boost was nontrivial.
 
-**Converse.** The argument reverses. If the rotor of the word of an element is a half turn about an axis orthogonal to the boost axis, then the scalar part of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ vanishes, so the element with that word and any central modulus is pure. The vector subspace is therefore exactly the set of elements whose word has a half-turn rotor orthogonal to the boost axis.
+**Converse.** The argument reverses. If the rotor of the word of an element is a half turn and either the boost is trivial or its axis is orthogonal to the rotor axis, then the scalar part of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ vanishes, so the element with that word and any central modulus is pure. The vector subspace is therefore exactly the set of elements whose word has a half-turn rotor, with the boost trivial or its axis orthogonal to the rotor axis.
 
 The proposition is the algebra behind the reading of *The Polar Element Representation in Subspaces*, where the rotor of an element of the vector subspace is a unit vector of the plane of the two real parts; the block form of the same fact is that the vector subspace is the sum of the two non-central blocks and nothing else.
 
@@ -308,11 +308,11 @@ The domain of the polar representation is the complement of the null cone $\{N =
 | $\mathbb{M}_+$ | the cone $\sigma^{2} = \lvert\vec w\rvert^{2}$ | $3$ | fails on the cone |
 | $\mathbb{M}_-$ | the cone $\lvert\vec\rho\rvert^{2} = \tau^{2}$ | $3$ | fails on the cone |
 
-**Theorem (the domain on the subspaces).** The polar representation exists on the whole of the punctured centre, punctured quaternion subspace and punctured anti-quaternion subspace, and it fails on the other three subspaces exactly on their nonzero zero divisors.
+**Theorem (the domain on the subspaces).** The polar representation exists on the whole of the punctured centre, punctured quaternion subspace and punctured anti-quaternion subspace, and it fails on the other three subspaces exactly on the origin and their nonzero zero divisors.
 
 **Proof.** By the table, the norm of an element of each of the centre, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ vanishes only at the origin: the centre is a field, the quaternion subspace is a division algebra, and the anti-quaternion subspace is its purely imaginary copy, where the norm is minus a sum of squares. On the other three subspaces the vanishing of the norm is one complex equation on the vector subspace and two real equations on each sector, defining the isotropic cone and the two light cones, and $N = 0$ with $\tilde Q\neq0$ is exactly the zero-divisor condition.
 
-The three subspaces on which the representation never fails are exactly the three that carry no nonzero zero divisor, which is the statement of *Introduction to the Remarkable Subspaces* read through the polar representation. The intersection of the domain with the algebra is thus the complement of a single cone, and the trace of that cone on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the four-dimensional complex isotropic cone on the vector subspace, and a three-dimensional light cone on each sector.
+The three subspaces on which the representation fails only at the origin are exactly the three that carry no nonzero zero divisor, which is the statement of *Introduction to the Remarkable Subspaces* read through the polar representation. The intersection of the domain with the algebra is thus the complement of a single cone, and the trace of that cone on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the four-dimensional complex isotropic cone on the vector subspace, and a three-dimensional light cone on each sector.
 
 The behaviour of the word at the boundary completes the picture: along a path to the cone of $\mathbb{M}_+$ the scale collapses and the word tends to the minimal idempotent $\tfrac{1}{2}(e_t+\vec\Xi i)$ with $\vec\Xi$ a unit real vector, Hermitian, of norm zero and idempotent. The boundary of the family of boosts is the family of minimal idempotents of the Hermitian subspace, and the two objects — the boundary of the domain and the set of minimal idempotents — are one cone.
 
@@ -347,7 +347,7 @@ $$
 \tilde{Q}^{\natural} = r\,\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b}^{-1} ,
 $$
 
-with $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$, so the word of $\tilde Q^{\natural}$ is the word of the inverse of the unit-norm part. Read in the standard order, it has the same scale and the same phase, the boost $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ and the rotor $\tilde u_{\mathrm r}^{-1}$: the rapidity is reversed, the boost axis is rotated by the rotor and reversed, and the rotation angle is reversed. Verified over $300$ elements, the word to $2.1\times10^{-14}$, its boost to $9.8\times10^{-15}$ and its rotor to $2.6\times10^{-15}$.
+with $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$, so the word of $\tilde Q^{\natural}$ is the word of the inverse of the unit-norm part. Read in the standard order, it has the same scale and the same phase, the boost $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ and the rotor $\tilde u_{\mathrm r}^{-1}$: the rapidity is unchanged, the boost axis is rotated by the rotor and reversed, and the rotation angle is reversed. Verified over $300$ elements, the word to $2.1\times10^{-14}$, its boost to $9.8\times10^{-15}$ and its rotor to $2.6\times10^{-15}$.
 
 The Hermitian conjugation and the reversal reverse the order of the two factors and negate the phase. The Hermitian conjugate of the word is
 
@@ -383,13 +383,13 @@ of angle $\theta = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.6095
 
 ## Summary
 
-The polar representation of a biquaternion of non-vanishing norm is read against the six remarkable subspaces by its four exponents. The four exponents lie one in each of the four coordinate blocks — the scale in the real scalar block, the phase in the imaginary scalar block, the rotor in the real vector block, the boost in the imaginary vector block — and the four blocks are the four Clifford grades, of which the word uses the scalar, the pseudoscalar, the vector and the bivector. Under the identification $\gamma_k\mapsto i\vec e_k$ the scale is the scalar, the phase the pseudoscalar, the boost the Clifford vector and the rotor the bivector, and the order of the word is not the order of the grades.
+The polar representation of a biquaternion of non-vanishing norm is read against the six remarkable subspaces by its four exponents. For a generic word, the four exponents lie one in each of the four coordinate blocks — the scale in the real scalar block, the phase in the imaginary scalar block, the rotor in the real vector block, the boost in the imaginary vector block — and the four blocks are the four Clifford grades, of which the word uses the scalar, the pseudoscalar, the vector and the bivector. Under the identification $\gamma_k\mapsto i\vec e_k$ the scale is the scalar, the phase the pseudoscalar, the boost the Clifford vector and the rotor the bivector, and the order of the word is not the order of the grades.
 
-Because each block lies in exactly three of the six subspaces and each subspace is the sum of two blocks, each exponent lies in exactly three subspaces and each subspace carries exactly two exponents. The centre carries the two central exponents, the vector subspace the two axial ones, and the four mixed subspaces separate the pairs: the quaternion subspace carries the scale and the rotor, the anti-quaternion subspace the phase and the boost, the Hermitian subspace the scale and the boost, the anti-Hermitian subspace the phase and the rotor. The Hermitian split of the incidence reproduces the Hermitian split of the Cartan pairing.
+Because each nonzero element of a block lies in exactly three of the six subspaces and each subspace is the sum of two blocks, each exponent of a generic word lies in exactly three subspaces and each subspace carries exactly two of them. The centre carries the two central exponents, the vector subspace the two axial ones, and the four mixed subspaces separate the pairs: the quaternion subspace carries the scale and the rotor, the anti-quaternion subspace the phase and the boost, the Hermitian subspace the scale and the boost, the anti-Hermitian subspace the phase and the rotor. The Hermitian split of the incidence reproduces the Hermitian split of the Cartan pairing.
 
-The polar data of an element of a subspace follow from its norm. The phase is free on exactly the two subspaces whose norm is complex, the centre and the vector subspace, frozen at $0$ and $\pi/2$ on the two halves and two-valued on the two sectors. The boost is trivial on the centre and on the two halves; the rotor is a sign on the centre and on the definite branch of each sector; and the vector subspace is rigid, every one of its non-null elements having a half-turn rotor about an axis orthogonal to the boost axis.
+The polar data of an element of a subspace follow from its norm. The phase is free on exactly the two subspaces whose norm is complex, the centre and the vector subspace, frozen at $0$ and $\pi/2$ on the two halves and two-valued on the two sectors. The boost is trivial on the centre and on the two halves; the rotor is a sign on the centre and on the definite branch of each sector; and the vector subspace is rigid, every one of its non-null elements having a half-turn rotor, with the boost trivial or its axis orthogonal to the rotor axis.
 
-The two products of the series are the product of two boosts, which is a boost times a rotor with the classical rapidity and the Thomas-Wigner angle, and the word of a pure vector, whose unit-norm part is a root of $-1$ with a half-turn rotor about an axis orthogonal to the boost axis. The domain is the complement of the null cone, and its trace on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the complex isotropic cone on the vector subspace, and the two light cones on the sectors; the representation fails on a subspace exactly on its zero divisors. The four conjugations preserve the domain, and the complex conjugation preserves the shape of the word, reversing the phase and reflecting the boost axis while fixing the rotor.
+The two products of the series are the product of two boosts, which is a boost times a rotor with the classical rapidity and the Thomas-Wigner angle, and the word of a pure vector, whose unit-norm part is a root of $-1$ with a half-turn rotor, the boost being trivial or its axis orthogonal to the rotor axis. The domain is the complement of the null cone, and its trace on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the complex isotropic cone on the vector subspace, and the two light cones on the sectors; the representation fails on a subspace exactly on the origin or its nonzero zero divisors. The four conjugations preserve the domain, and the complex conjugation preserves the shape of the word, reversing the phase and reflecting the boost axis while fixing the rotor.
 
 ## Summary of Notation
 

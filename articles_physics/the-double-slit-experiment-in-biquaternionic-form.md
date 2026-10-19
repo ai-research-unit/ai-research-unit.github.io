@@ -9,7 +9,7 @@ This article asks what the biquaternion framework $\mathbb{B} = \mathbb{C}\otime
 The division between what is established and what is interpretation is stated here and kept explicit.
 
 - **Established, and recomputed below.** Two route amplitudes add, $K = K_1 + K_2$, and the intensity is $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ with $\delta$ the relative phase; a common phase shift of both routes is unobservable. The which-path degree of freedom is a qubit whose state is an element $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ of $\mathbb{M}_+$. The fringe **visibility** is the length of the equatorial part of its Bloch vector, the **path predictability** is its polar part, and $V^2 + P^2 = |\vec r|^2 \le 1$, with equality if and only if $\tilde{Ϛ}$ is pure — that is, if and only if $\tilde{Ϛ}$ lies on the zero-divisor cone of $\mathbb{M}_+$. A which-path measurement, or full dephasing along the path axis, annihilates the equatorial part and with it the fringes. For spinor-valued routes, $I = I_1 + I_2 + 2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2)$, and a spin overlap reduces the visibility.
-- **Interpretation.** Interpretation the fringe pattern as the projection of a rotating equatorial Bloch vector, and reading the two-slit arrangement as the place where a material-sector action is converted through the central phase into an informational-sector state, are geometric and structural interpretations of the algebra. The algebra is consistent with them; it does not force them.
+- **Interpretation.** Interpreting the fringe pattern as the projection of a rotating equatorial Bloch vector, and reading the two-slit arrangement as the place where a material-sector action is converted through the central phase into an informational-sector state, are geometric and structural interpretations of the algebra. The algebra is consistent with them; it does not force them.
 - **Gap, left visible.** The framework supplies the phase and the state geometry but not the **action**, the **measure**, or the space of paths; and it does not select which slit, or which screen point, a given detection realises. The first gap is inherited from the path-integral article, the second from the measurement-problem article; both are restated where they arise and collected in the open questions.
 
 One further finding is reported as a **limit on what the double slit demonstrates**. For a beam whose two routes carry the same spin state, the *spin-summed* two-path intensity is unchanged when the central root $i$ of the phase is replaced by a fixed non-central root $\vec{u}$; the difference between the two choices appears only under spin analysis, or when the two routes carry different spin states. The spin-summed double-slit pattern therefore does not by itself witness the centrality of the phase; the framework's grounds for the central root lie in the state-vector equation and in the complex structure of the state module, not in this pattern. The computation is in the section on the phase root below, and it is stated against the pull to claim more for the experiment than it shows.
@@ -20,28 +20,28 @@ The article is organized as follows. The next section writes the two-route ampli
 
 ## The Two-Path Amplitude
 
-Let $K_j(P)$ be the amplitude for the particle to arrive at the screen point $P$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:
+Let $K_j(X)$ be the amplitude for the particle to arrive at the screen point $X$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a **central** unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:
 
 $$
-K_j(P) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(iS_j/\hbar) \in \mathbb{C}_{\mathbb{B}}, \qquad \frac{iS_j}{\hbar} \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- .
+K_j(X) \;=\; \int_{\text{paths via slit }j}\!\mathcal{D}x\; \exp(iS_j[x]/\hbar), \qquad \exp(iS_j/\hbar) \in \mathbb{C}_{\mathbb{B}}, \qquad \frac{iS_j}{\hbar} \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- .
 $$
 
-Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(P) = |K_j(P)| \ge 0$ and $\varphi_j(P) = S_j(P)/\hbar$ for its phase,
+Because each phase factor is central and the sum of central elements is central, each $K_j$ is a complex scalar times $e_t$. Writing $a_j(X) = |K_j(X)| \ge 0$ and $\varphi_j(X) = S_j(X)/\hbar$ for its phase,
 
 $$
-K_j(P) = a_j(P)\, \exp(i\varphi_j(P))\, e_t .
+K_j(X) = a_j(X)\, \exp(i\varphi_j(X))\, e_t .
 $$
 
 The total amplitude is the **sum of the two alternatives**,
 
 $$
-K(P) = K_1(P) + K_2(P) = \bigl(a_1 \exp(i\varphi_1) + a_2 \exp(i\varphi_2)\bigr) e_t ,
+K(X) = K_1(X) + K_2(X) = \bigl(a_1 \exp(i\varphi_1) + a_2 \exp(i\varphi_2)\bigr) e_t ,
 $$
 
 which is again central. The additivity is the superposition principle; in the algebra it is the linearity of the complex one-dimensional space $\mathbb{C}_{\mathbb{B}}$ over $\mathbb{C}$ (equivalently, the additivity of the path integral, which the path-integral article takes as its starting point). The intensity is the scalar coefficient of the Hermitian norm of the amplitude:
 
 $$
-K(P)K(P)^{*} = I(P)\,e_t, \qquad I(P) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(P), \qquad \delta(P) := \varphi_1(P) - \varphi_2(P).
+K(X)K(X)^{*} = I(X)\,e_t, \qquad I(X) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(X), \qquad \delta(X) := \varphi_1(X) - \varphi_2(X).
 $$
 
 **Only the relative phase is observable.** The substitution $\varphi_j \mapsto \varphi_j + c$ with $c$ constant multiplies both amplitudes by the same central element $\exp(ic)$, which cancels in the Hermitian norm $KK^{*}$; and it cancels in any state built from $K$ as well, since $KK^{*} \mapsto \exp(ic)KK^{*} \exp(-ic) = KK^{*}$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.
@@ -53,7 +53,7 @@ Two observations about where the objects live belong here, because later section
 
 ## The Fringe Pattern
 
-The standard idealisation of the experiment is two narrow slits separated by a distance $d$ and a screen at distance $D$, with the point $P$ at transverse coordinate $x$ and the two routes equally illuminated. The path-length difference is $L_1 - L_2 \approx d\sin\theta \approx dx/D$, so the relative phase is
+The standard idealisation of the experiment is two narrow slits separated by a distance $d$ and a screen at distance $D$, with the point $X$ at transverse coordinate $x$ and the two routes equally illuminated. The path-length difference is $L_1 - L_2 \approx d\sin\theta \approx dx/D$, so the relative phase is
 
 $$
 \delta(x) = k\,(L_1 - L_2) \approx \frac{2\pi d}{\lambda D}\, x,
@@ -88,7 +88,7 @@ $$
 
 with **polar** part $r_\parallel = \vec{u}\cdot\vec r$ and **equatorial** part $\vec r_\perp = \vec r - (\vec{u}\cdot\vec r)\,\vec{u}$. The polar part is the population bias between the two paths; the equatorial part is the coherence between them. The state is pure, $\tilde{Ϛ}^2 = \tilde{Ϛ}$ and $|\vec r| = 1$, exactly when it lies on the two-sphere; it is mixed, $|\vec r| < 1$, otherwise.
 
-The connection with the two route amplitudes is explicit. For a spin-independent beam, write the two amplitudes at the screen point $P$ as $K_j = A_j e_t$ and form the spinor $\psi = \bigl(A_1, A_2\bigr)$ in the framework's state module $\cong \mathbb{C}^2$. The Schrödinger article's construction gives
+The connection with the two route amplitudes is explicit. For a spin-independent beam, write the two amplitudes at the screen point $X$ as $K_j = A_j e_t$ and form the spinor $\psi = \bigl(A_1, A_2\bigr)$ in the framework's state module $\cong \mathbb{C}^2$. The Schrödinger article's construction gives
 
 $$
 \tilde{Ϛ} = \frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)},
@@ -106,7 +106,7 @@ Three identifications follow, each of which is a translation rather than a new f
 
 1. **The population bias is the polar component,** $r_\parallel = \rho_{11} - \rho_{22} = \dfrac{|A_1|^2 - |A_2|^2}{|A_1|^2 + |A_2|^2}$.
 2. **The coherence is the equatorial component,** with length $|\vec r_\perp| = 2|\rho_{12}| = \dfrac{2|A_1 A_2|}{|A_1|^2 + |A_2|^2}$.
-3. **The relative phase is the argument of the off-diagonal element,** $\arg \rho_{12} = \arg A_1 - \arg A_2 = \delta(P)$.
+3. **The relative phase is the argument of the off-diagonal element,** $\arg \rho_{12} = \arg A_1 - \arg A_2 = \delta(X)$.
 
 So the central phase does double duty. It is the *global* phase of each route, which cancels in the state, and it is the *complex structure* whose argument is the relative phase stored in the off-diagonal element. As the screen point sweeps and $\delta(x)$ varies, the equatorial vector $(r_1, r_2)$ rotates in the equatorial plane of the Bloch sphere. The normalised intensity is exactly the equatorial component along one axis,
 
@@ -116,7 +116,7 @@ $$
 
 which was checked on random amplitudes independently of the derivation: the normalised intensity and $1 + r_1$ agreed to machine precision, and the reconstruction $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ from the Bloch components agreed with $\psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ to machine precision.
 
-**Interpretation.** Interpretation the fringe pattern as the projection of a rotating equatorial Bloch vector is a geometric interpretation. The algebra is consistent with it and makes it precise, but the algebra does not require the interpretation; the standard statement in terms of the two amplitudes is complete without it.
+**Interpretation.** Interpreting the fringe pattern as the projection of a rotating equatorial Bloch vector is a geometric interpretation. The algebra is consistent with it and makes it precise, but the algebra does not require the interpretation; the standard statement in terms of the two amplitudes is complete without it.
 
 ## Visibility, Predictability, and the Biquaternion-Norm Bound
 

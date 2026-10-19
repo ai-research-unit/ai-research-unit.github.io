@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the **Hermitian norm** $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, which is positive definite and is the norm that Born probabilities are built from, and the **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
+Unitarity is the statement that the norm of a state does not change in time. In the biquaternion framework there are two norms on the algebra, and they behave differently: the **Hermitian norm** $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$, which is positive definite and is the Hilbert–Schmidt norm of the matrix model, and the **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, which is central-valued and indefinite. This article asks, for each of them, under exactly which elements of $\mathbb{B}$ the conjugation action
 $$
 \Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}
 $$
@@ -10,7 +10,7 @@ preserves it. The answer is a norm-preservation theorem with a single organising
 
 Three statements are proved. The first is that $\Gamma_{\tilde{U}}$ preserves the Hermitian norm if and only if $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*}=e_t$. The second is that $\Gamma_{\tilde{U}}$ scales the biquaternion norm by a **central scalar**,
 $$
-N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\,\langle\tilde{Q}\rangle_{\natural},
+\langle\Gamma_{\tilde{U}}\tilde{Q}\rangle_{\natural}=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\,\langle\tilde{Q}\rangle_{\natural},
 $$
 so that it preserves the biquaternion norm exactly when $|\langle\tilde{U}\rangle_{\natural}|=1$, i.e. when $\langle\tilde{U}\rangle_{\natural}$ lies on the unit circle of the centre $\mathbb{C}_{\mathbb{B}}$. The third is the structural reason behind the word *centrality* in the title: the product $\tilde{U}^{*}\tilde{U}$, which measures the failure of $\Gamma_{\tilde{U}}$ to be multiplicative, is central if and only if that failure is a scalar rather than an operator-valued anomaly; and it equals $e_t$ — the case of a genuine algebra automorphism — if and only if $\tilde{U}$ is unitary. Thus
 
@@ -143,7 +143,7 @@ The theorem extends from the norm to the pairing by polarization, and it extends
 
 **Theorem 2.** Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation scales the biquaternion norm by a central scalar,
 $$
-N\bigl(\Gamma_{\tilde{U}}(\tilde{Q})\bigr)=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\,\langle\tilde{Q}\rangle_{\natural}
+\langle\Gamma_{\tilde{U}}(\tilde{Q})\rangle_{\natural}=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\,\langle\tilde{Q}\rangle_{\natural}
 \qquad
 \text{for all }\tilde{Q},
 $$
@@ -199,7 +199,7 @@ G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C}),
 \qquad
 \tilde{U}=\lambda\,\tilde U_{\mathrm L},\quad |\lambda|=1,\quad \langle\tilde U_{\mathrm L}\rangle_{\natural}=e_t ,
 $$
-because if $\langle\tilde{U}\rangle_{\natural}=\mu e_t$ with $|\mu|=1$ then choosing $\lambda$ with $\lambda^2=\mu$ (possible since $\mu$ lies on the unit circle, which is divisible) gives $\langle\tilde{U}/\lambda\rangle_{\natural}=e_t$. The decomposition is not direct. The intersection consists of the central scalars that are at once of modulus one and of unit norm; a central scalar is $\lambda e_t$, and $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$, so $|N|=1$ gives $|\lambda|=1$ while $N=e_t$ gives $\lambda=\pm1$, so the intersection is $\{\pm e_t\}$.
+because if $\langle\tilde{U}\rangle_{\natural}=\mu e_t$ with $|\mu|=1$ then choosing $\lambda$ with $\lambda^2=\mu$ (possible since $\mu$ lies on the unit circle, which is divisible) gives $\langle\tilde{U}/\lambda\rangle_{\natural}=e_t$. The decomposition is not direct. The intersection consists of the central scalars that are at once of modulus one and of unit norm; a central scalar is $\lambda e_t$, and $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$, so $|\lambda^2|=1$ gives $|\lambda|=1$ while $\lambda^2=1$ gives $\lambda=\pm1$, so the intersection is $\{\pm e_t\}$.
 
 The real dimensions are worth recording. Over $\mathbb{R}$, the algebra is eight-dimensional; $SL(2,\mathbb{C})$ is the six-dimensional real group with one complex equation $\langle\tilde U_{\mathrm L}\rangle_{\natural}=e_t$ (two real conditions); the phase group adds one more real dimension, so $G_N$ is seven-real-dimensional; and $\mathrm{U}(2)$ is four-real-dimensional. The inclusions are
 $$
@@ -269,7 +269,7 @@ $$
 \qquad
 \mathrm{Tr}\bigl(\exp(Gt)^\dagger\exp(Gt)\bigr)=2\cosh(2\hbar^{-1}t),
 $$
-which grows without bound, so the Hermitian norm of a state is not preserved. Its biquaternion norm, by contrast, is $\langle \exp Gt\rangle_{\natural}=\bigl(\cosh^2\hbar^{-1}t-\sinh^2\hbar^{-1}t\bigr)e_t=e_t$, so this non-unitary element has $|N|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $J=\vec e_z$ with the Hermitian element $i\vec e_x$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
+which grows without bound, so the Hermitian norm of a state is not preserved. Its biquaternion norm, by contrast, is $\langle \exp Gt\rangle_{\natural}=\bigl(\cosh^2\hbar^{-1}t-\sinh^2\hbar^{-1}t\bigr)e_t=e_t$, so this non-unitary element has $|\langle\exp Gt\rangle_{\natural}|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $J=\vec e_z$ with the Hermitian element $i\vec e_x$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
 
 **Example 4: an accidental invariance.** If one tests norm preservation only on a single fixed element, non-unitary elements can appear to preserve it. With $\tilde{Q}=\tilde\Pi(\vec u)$ and $\tilde{U}$ a rotation element of $G_N$ that happens to fix $\vec u$, the Hermitian norm of that particular $\tilde{Q}$ can be unchanged even though $\Gamma_{\tilde{U}}$ is not unitary. The quantifier "for all $\tilde{Q}$" in Theorem 1 is therefore essential, and the numerical checks of this article were run on random superpositions precisely to avoid this accident.
 
@@ -334,7 +334,7 @@ Third, the **forced centrality of the unit in the dynamics** is algebraic in a w
 The biquaternion algebra carries two quadratic forms, and unambiguity about which one is being preserved is the whole content of the norm-preservation theorem. The Hermitian norm $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})$ is real, positive definite, and preserved by the conjugation action $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ exactly when $\tilde{U}$ is unitary; that is Theorem 1, and it is the framework's statement of unitarity. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ is central-valued and indefinite, and under the same action it scales by a **central** scalar,
 
 $$
-N\bigl(\Gamma_{\tilde{U}}\tilde{Q}\bigr)=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\langle\tilde{Q}\rangle_{\natural},
+\langle\Gamma_{\tilde{U}}\tilde{Q}\rangle_{\natural}=\bigl|\langle\tilde{U}\rangle_{\natural}\bigr|^2\langle\tilde{Q}\rangle_{\natural},
 $$
 
 so it is preserved exactly when $|\langle\tilde{U}\rangle_{\natural}|=1$; that is Theorem 2, and its group is the seven-real-dimensional $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, which contains $\mathrm{U}(2)$; the intersection is $\mathrm{U}(2)$ itself, while $\mathrm{U}(2)\cap SL(2,\mathbb{C})=SU(2)$.

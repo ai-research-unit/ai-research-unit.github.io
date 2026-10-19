@@ -16,7 +16,7 @@ properties are read as the composition of operations. The **scalar part** is the
 form** of this block,
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2,
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2,
 $$
 
 symmetric and non-degenerate, with Gram matrix $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient
@@ -40,10 +40,10 @@ products is *The Four General Products and Their Physical Readings*. None of tho
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
 $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$, and central scalar imaginary $i$, $i^{2}=-1$; a
-general element is $\tilde Q_1=Q_te_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with complex coefficients; the scalar part is
-$\mathrm{Sc}(\tilde Q_1)=Q_{1t}$ and the vector part is $\vec Q=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$. The conjugations are
-the complex conjugation $\bar{\cdot}$, the natural (quaternion) conjugation ${\natural}$, and the
-Hermitian conjugation ${}^{*}=\bar{\cdot}\circ{\natural}$. The material sector is the anti-Hermitian half,
+general element is $\tilde Q_1=Q_{1t}e_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with complex coefficients; the scalar part is
+$\mathrm{Sc}(\tilde Q_1)=Q_{1t}$ and the vector part is $\vec Q_1=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$. The conjugations are
+the complex conjugation $\bar{\cdot}$, the natural (quaternion) conjugation ${}^{\natural}$, and the
+Hermitian conjugation ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The material sector is the anti-Hermitian half,
 $\mathbb{M}_-=\{\tilde Q_1:\tilde Q_1^{*}=-\tilde Q_1\}$, with the real basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$; the
 informational sector is the Hermitian half, $\mathbb{M}_+=\{\tilde Q_1:\tilde Q_1^{*}=+\tilde Q_1\}$, with the
 real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$.
@@ -141,7 +141,7 @@ $\mathbb{B}$ an associative unital algebra over $\mathbb{C}$; the others are bui
 conjugations. Its scalar part is the **general plain bilinear form** of this block,
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-Q_{11}Q_{2x}-Q_{12}Q_{2y}-Q_{13}Q_{2z}=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2,
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-Q_{1x}Q_{2x}-Q_{1y}Q_{2y}-Q_{1z}Q_{2z}=Q_{1t}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2,
 $$
 
 which is symmetric, since the scalar part is invariant under cyclic permutation
@@ -158,7 +158,7 @@ Biquaternions*). Three of its properties then carry their physical names.
 
 - Associativity is composability: $\tilde Q_1(\tilde Q_2\tilde{Q}_3)=(\tilde Q_1\tilde Q_2)\tilde{Q}_3$, so a chain of
 operations can be bracketed at will.
-- The unit $e_t$ is the identity operation: $e_t\tilde Q_1=\tilde Qe_t=\tilde Q_1$.
+- The unit $e_t$ is the identity operation: $e_t\tilde Q_1=\tilde Q_1 e_t=\tilde Q_1$.
 - Non-commutativity is order dependence: two operations need not commute, and the commutator
 $[\tilde Q_1,\tilde Q_2]=\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1$ measures the failure.
 
@@ -172,8 +172,8 @@ unitary slices by *The Operators of the Bilinear Product: One-Sided, Two-Sided a
 **The product and the two involutions.** The two conjugations act on a composite by reversing the order,
 $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$ and
 $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, so the Hermitian conjugation is an anti-automorphism of
-the general plain bilinear product, and an element and its conjugate give the same scalar
-$\langle\tilde Q_1^{*},\tilde Q_2^{*}\rangle=\langle\tilde Q_1,\tilde Q_2\rangle$, the scalar part being cyclically invariant and each
+the general plain bilinear product, and an element and its conjugate give conjugate scalars
+$\langle\tilde Q_1^{*},\tilde Q_2^{*}\rangle=\overline{\langle\tilde Q_1,\tilde Q_2\rangle}$, the scalar part being cyclically invariant and each
 conjugation reversing the order. The two identities are algebra and are used throughout the block; the
 second is the reason a product inherits the sector of its factors in the way the material article reads.
 
@@ -189,7 +189,7 @@ conjugation inserted in the first slot, $\langle\tilde Q_1,\tilde Q_2\rangle_{\n
 The two differ by twice the coefficient square of the vector part,
 
 $$
-\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}-2\,\vec Q\!\cdot\!\vec Q,\qquad \vec Q\!\cdot\!\vec Q=Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2},
+\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_1\rangle+2\,\vec Q_1\!\cdot\!\vec Q_1,\qquad \vec Q_1\!\cdot\!\vec Q_1=Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2},
 $$
 
 so they agree only when the vector part is isotropic; the difference is the whole distinction between the
@@ -265,8 +265,8 @@ An operation can be attached to the left of an argument or to its right, and the
 the left and the right multiplications
 
 $$
-L_{\tilde Q_1}(\tilde{Q}_2)=\tilde Q_1\tilde{Q}_2,\qquad R_{\tilde Q_3}(\tilde{Q}_2)=\tilde{Q}_2\tilde Q_3,
-\qquad L_{\tilde Q_1}R_{\tilde Q_3}=R_{\tilde Q_3}L_{\tilde Q_1},
+L_{\tilde Q_1}(\tilde{Q})=\tilde Q_1\tilde{Q},\qquad R_{\tilde Q_2}(\tilde{Q})=\tilde{Q}\tilde Q_2,
+\qquad L_{\tilde Q_1}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q_1},
 $$
 
 which commute. The composition that the framework actually uses is the **sandwich**
@@ -315,7 +315,7 @@ of the section above, and the measurement update is an idempotent projection; ne
 ## The Ledger
 
 **Proved.** The general plain bilinear product is associative and two-sidedly unital, and its scalar part
-$\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ is a symmetric
+$\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ is a symmetric
 non-degenerate $\mathbb{C}$-bilinear form with Gram matrix $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$; the
 form $\langle\cdot,\cdot\rangle$ restricts to $(1,1)$ on the centre, $(3,3)$ on the vector subspace, $(1,3)$ on
 $\mathbb{H}_{\mathbb{B}}$, $(3,1)$ on $i\mathbb{H}_{\mathbb{B}}$, $(4,0)$ on $\mathbb{M}_+$ and $(0,4)$ on
@@ -340,7 +340,7 @@ The general plain bilinear product $\tilde Q_1\tilde Q_2$ — the only one of th
 and two-sidedly unital — acts on the whole biquaternion algebra $\mathbb{B}$, and this article reads it
 there. Its law is associativity, the unit $e_t$ and non-commutativity, read as the composition of
 operations with the written order of the factors the order of the operations. Its scalar part, the
-general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$,
+general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$,
 is symmetric and non-degenerate with Gram matrix $\mathrm{diag}(1,-1,-1,-1)$; its restriction is $(1,1)$
 on the centre, $(3,3)$ on the vector subspace, $(1,3)$ and $(3,1)$ on the two quaternionic subspaces, and
 $(4,0)$ and $(0,4)$ on the two sectors, so it is neutral on the first two, indefinite with a cone on the
@@ -364,21 +364,21 @@ companion article *The Bilinear Product on the Material Sector*; what is propose
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^{2}=-1$ |
-| $\bar{\cdot},{\natural},{}^{*}=\bar{\cdot}\circ{\natural}$ | Complex, natural and Hermitian conjugations |
+| $\bar{\cdot},{}^{\natural},{}^{*}=\bar{\cdot}\circ{}^{\natural}$ | Complex, natural and Hermitian conjugations |
 | $\mathbb{M}_-=\{\tilde Q_1:\tilde Q_1^{*}=-\tilde Q_1\}$ | Material sector, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathbb{M}_+=\{\tilde Q_1:\tilde Q_1^{*}=+\tilde Q_1\}$ | Informational sector, basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | $\tilde Q_1\tilde Q_2$ | General plain bilinear product; associative, unital, non-commutative; acts on all of $\mathbb{B}$ |
 | $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | The four general products, $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$ |
 | $\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | The four symmetric parts, the half-sums; the Jordan product for the plain slot |
 | $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ | The four antisymmetric parts, the half-differences; the Lie bracket for the plain slot |
-| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
 | $\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_-}=(0,4)$, $\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_+}=(4,0)$ | The sector sign carried by $\langle\cdot,\cdot\rangle$; the reading is the companion material article |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
-| $\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}-2\,\vec Q\!\cdot\!\vec Q$ | The relation between the two forms; they agree only on the isotropic vector part |
+| $\langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_1\rangle+2\,\vec Q_1\!\cdot\!\vec Q_1$ | The relation between the two forms; they agree only on the isotropic vector part |
 | $\langle\tilde Q_1\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_1)=\sum_\mu Q_{1,\mu}^{2}$ | Algebraic norm of the general plain bilinear product; multiplicative |
-| $\mathbb{B}^{\times}=\{\langle\tilde Q_1\rangle_{\natural}\neq0\}$, $\mathcal{C}=\{\langle\tilde Q_1\rangle_{\natural}=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone |
+| $\mathbb{B}^{\times}=\{\tilde Q_1:\langle\tilde Q_1\rangle_{\natural}\neq0\}$, $\mathcal{C}=\{\tilde Q_1:\langle\tilde Q_1\rangle_{\natural}=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone |
 | $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\langle\tilde Q_1\rangle_{\natural}$ | Inverse in the general plain bilinear product |
-| $L_{\tilde Q_1},R_{\tilde Q_3},\ \Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde Q_1^{*}}$ | Left and right multiplications and the sandwich |
+| $L_{\tilde Q_1},R_{\tilde Q_2},\ \Theta_{\tilde Q_1}=L_{\tilde Q_1}R_{\tilde Q_1^{*}}$ | Left and right multiplications and the sandwich |
 | $(n,m)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
 ## Further Reading

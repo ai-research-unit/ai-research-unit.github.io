@@ -13,7 +13,7 @@ The article is organized as follows. The holonomy is defined for the abelian and
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the covariant derivative.
 - Companion article *The Photon in Biquaternionic Form*, for the massless one-particle state.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is $\tilde{A}=iA_te_t+\vec A\in\mathbb{M}_-$ and the connection one-form is $\tilde{A}=\tilde{A}_\mu dx^\mu$. The field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with the component form $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ in the abelian case. The gauge group is realized by the commutator, in the physics normalization with the Hermitian generators $T^a=ie_a\in\mathbb{M}_+$ obeying $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$ with the real structure constants $f^{abc}=2\varepsilon^{abc}$; equivalently, in its anti-Hermitian normalization the same algebra is the compact form $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; the generators are $T^a=ie_a$ in the fundamental representation, normalized so that the trace $\mathrm{Tr}$ is the matrix trace in that representation, equal to twice the scalar part for the quaternion realization. The coupling is $g$ and the path ordering is denoted $\mathcal{P}$. Natural units are used.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is $\tilde{A}=iA_te_t+\vec A\in\mathbb{M}_-$ and the connection one-form is $\tilde{A}=\tilde{A}_\mu dx^\mu$. The field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with the component form $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ in the abelian case. The gauge group is realized by the commutator, in the physics normalization with the Hermitian generators $T^a=i\vec e_a\in\mathbb{M}_+$ obeying $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$ with the real structure constants $f^{abc}=2\varepsilon^{abc}$; equivalently, in its anti-Hermitian normalization the same algebra is the compact form $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; the generators are $T^a=i\vec e_a$ in the fundamental representation, normalized so that the trace $\mathrm{Tr}$ is the matrix trace in that representation, equal to twice the scalar part for the quaternion realization. The coupling is $g$ and the path ordering is denoted $\mathcal{P}$. Natural units are used.
 
 ## The Holonomy of the Connection
 
@@ -37,7 +37,7 @@ W(C) = \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C A_\mu\,dx^\mu\right)
 = \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C A^a_\mu T^a\,dx^\mu\right),
 $$
 
-where the generators $T^a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $ie_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
+where the generators $T^a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $i\vec e_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
 
 ## Gauge Invariance and Stokes' Theorem
 
@@ -236,7 +236,7 @@ Three consequences are worth stating separately. The untraced holonomy is an ele
 
 ## Open Questions
 
-1. **A sector-theoretic interpretation of the trace.** The Wilson loop is the trace of a holonomy: an $\mathbb{M}_+$ trace of an object whose logarithm is in $\mathbb{M}_-$. Is there an intrinsic pairing between the two sectors that selects the trace, in the way the bilinear form $\mathrm{Sc}(\tilde{Q}\bar{Y})$ pairs elements of $\mathbb{B}$, and does it reproduce the matrix trace? A positive answer would make the loop's gauge invariance a statement about the two sectors rather than about a chosen representation.
+1. **A sector-theoretic interpretation of the trace.** The Wilson loop is the trace of a holonomy: an $\mathbb{M}_+$ trace of an object whose logarithm is in $\mathbb{M}_-$. Is there an intrinsic pairing between the two sectors that selects the trace, in the way the bilinear form $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ pairs elements of $\mathbb{B}$, and does it reproduce the matrix trace? A positive answer would make the loop's gauge invariance a statement about the two sectors rather than about a chosen representation.
 
 2. **The order parameter and the sector split.** The confinement transition is a change in the long-distance behaviour of $\langle W(C)\rangle$. Is there a biquaternionic order parameter — an element whose norm measures the transition, rather than a functional of loops — and does the transition appear as a change in a property of the algebra's own objects?
 
@@ -272,7 +272,7 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 | $U(C)=\mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$ | Holonomy (group element), non-abelian |
 | $W(C)=\mathrm{Tr}\,\mathcal{P}\exp(i\oint_C A^a_\mu T^a dx^\mu)$ | Non-abelian Wilson loop |
 | $\mathcal{P}$ | Path ordering |
-| $T^a=ie_a\in\mathbb{M}_+$ | Gauge generators realized in the informational sector |
+| $T^a=i\vec e_a\in\mathbb{M}_+$ | Gauge generators realized in the informational sector |
 | $U(C)\mapsto Q\,U(C)\,Q^{-1}$ | Conjugation of the holonomy; trace invariant |
 | $\oint_C A_\mu dx^\mu=\frac12\int_S F_{\mu\nu}d\Sigma^{\mu\nu}$ | Stokes' theorem; loop equals enclosed flux |
 | $W=1+i a^2F_{\mu\nu}+O(a^4)$ | Small-loop expansion; exponentiated field strength |

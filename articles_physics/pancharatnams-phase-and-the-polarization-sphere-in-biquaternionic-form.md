@@ -52,7 +52,7 @@ $$
 
 $P=1$ for a fully polarized beam and $P=0$ for an unpolarized one. For a fully polarized beam the normalised Stokes vector $\vec u=\vec S/S_0$ is a unit vector, and the map $\vec J\mapsto\vec u$ sends rays to points of the unit sphere: the **Poincaré sphere**. Right and left circular polarizations are the poles, linear polarizations form the equator, and the antipode of a polarization is the orthogonal one.
 
-The quantity $\langle A|B\rangle=\vec J_A^\dagger\vec J_B$ is the overlap of two Jones vectors; its modulus is $\sqrt{S_0^AS_0^B}$ times the cosine of half the angle between the Poincaré points of the two beams, and it sets the visibility of the interference between them.
+The quantity $\langle A|B\rangle=\vec J_A^\dagger\vec J_B$ is the overlap of two Jones vectors; its modulus is $\sqrt{S_0^AS_0^B}$ times the absolute value of the cosine of half the angle between the Poincaré points of the two beams, and it sets the visibility of the interference between them.
 
 ## The Coherence Biquaternion and the Poincaré Sphere
 
@@ -150,7 +150,7 @@ $$
 
 acting by $\tilde{Ϛ} \mapsto \tilde U\tilde{Ϛ}\,\tilde U^{*}$ with $\tilde U^{*} = \tilde U_{\vec u}(-\alpha) = \tilde U_{\vec u}^{-1}$. It fixes $S_0$ and the component $\vec u\cdot\vec S$, and rotates the transverse part of $\vec S$ about $\vec u$ by the angle $\alpha$: the phase shifter is a **rotation of the Poincaré sphere**. This is the Faraday effect, with $\vec u$ the propagation direction and $\alpha$ proportional to the Verdet constant and the path; in a birefringent medium the same rotor has $\vec u$ the optic axis and $\alpha$ the retardation.
 
-**Two kinds of operation.** The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general lossless optical element is a product of the two — a rotor for the retardation and an idempotent for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.
+**Two kinds of operation.** The polarizer is an idempotent: it projects, lowers the degree of polarization and is not invertible, and applying it twice changes nothing further. The phase shifter is a rotor: it is unitary, preserves the degree of polarization, and is reversible. A general optical element is a product of the two — a rotor for the retardation and an idempotent for the absorption — and the Jones calculus is this statement in matrix form, while the algebra states it as the two elementary operations of $\mathbb{M}_+$.
 
 
 ## Pancharatnam's In-Phase Criterion

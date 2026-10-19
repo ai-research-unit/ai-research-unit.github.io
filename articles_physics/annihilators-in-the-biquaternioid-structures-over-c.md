@@ -39,8 +39,7 @@ its polarisation operator and its information channels. A table collects the twe
 physical clause each, and the closing sections are the
 ledger, the interpretation, the summary, the notation table and the literature. The other articles of the
 section own the objects that the table touches: *Zero Divisors in the Biquaternioid Structures over $\mathbb{C}$* the
-degeneracy itself, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* and
-*Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* the radicands, *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$* the idempotents, and *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$* the square-zero
+degeneracy itself, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* the radicands, *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$* the idempotents, and *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$* the square-zero
 elements.
 
 **Conventions.** We use those of the companion articles unchanged. The algebra is
@@ -157,14 +156,14 @@ the square-zero class.
 ## The Hyperplane of a Scalar-Valued Coupling
 
 Two structures collapse their product to a form: the symmetric plain sesqualgebra $\tilde Q\star\tilde Q_1=\langle\tilde Q,\tilde Q_1\rangle_{*}e_t$ with
-$\langle\tilde Q,\tilde Q_1\rangle_{*}=Q_t\overline{Q_{1,0}}+(\vec Q,\overline{\vec Q_1})$, and the symmetric quaternionic algebra
-$\tilde Q\star\tilde Q_1=\langle\tilde Q,\tilde Q_1\rangle_{\natural}e_t$ with $\langle\tilde Q,\tilde Q_1\rangle_{\natural}=Q_tQ_{1,0}+(\vec Q,\vec Q_1)$.
+$\langle\tilde Q,\tilde Q_1\rangle_{*}=Q_t\overline{Q_{1t}}+(\vec Q,\overline{\vec Q_1})$, and the symmetric quaternionic algebra
+$\tilde Q\star\tilde Q_1=\langle\tilde Q,\tilde Q_1\rangle_{\natural}e_t$ with $\langle\tilde Q,\tilde Q_1\rangle_{\natural}=Q_tQ_{1t}+(\vec Q,\vec Q_1)$.
 For each, the annihilator of
 any nonzero element is the hyperplane cut by the form,
 
 $$
-Q_t\overline{Q_{1,0}}+(\vec Q,\overline{\vec Q_1})=0\quad\text{(SPS)},\qquad
-Q_tQ_{1,0}+(\vec Q,\vec Q_1)=0\quad\text{(SQA)} .
+Q_t\overline{Q_{1t}}+(\vec Q,\overline{\vec Q_1})=0\quad\text{(SPS)},\qquad
+Q_tQ_{1t}+(\vec Q,\vec Q_1)=0\quad\text{(SQA)} .
 $$
 
 The physical object is a coupling that returns a number. A number has no slot in which to act, so the
@@ -256,7 +255,7 @@ Indefinite Metric*.
 The product is the Jordan product $\tfrac12(\tilde Q\tilde Q_1+\tilde Q_1\tilde Q)$, which is commutative, so
 there is a single annihilator. Off the cone with $Q_t\neq0$ it is $\{0\}$; on the cone with $Q_t\neq0$ it
 is the line $\mathbb{C}\tilde Q^{\natural}$; and at a pure element it is the plane
-$\{Q_{1,0}=0,\ (\vec Q,\vec Q_1)=0\}$. A pure operation therefore kills the plane of operations
+$\{Q_{1t}=0,\ (\vec Q,\vec Q_1)=0\}$. A pure operation therefore kills the plane of operations
 orthogonal to it. The reading is *The Biquaternioid Symmetric Plain Algebra (SPA) over $\mathbb{C}$*.
 
 ### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
@@ -278,7 +277,7 @@ Scalar Coupling of Two Material Operations*.
 
 The product is the symmetrisation, conjugate-commutative, so there is a single annihilator: $\{0\}$ off
 the cone with $Q_t\neq0$, the line $\mathbb{C}\tilde Q^{*}$ on the cone with $Q_t\neq0$, and the plane
-$\{Q_{1,0}=0,\ \langle\tilde Q,\tilde Q_1\rangle_{\natural*}=0\}$ at a pure element. The symmetric gauge coupling separates its two
+$\{Q_{1t}=0,\ \langle\tilde Q,\tilde Q_1\rangle_{\natural*}=0\}$ at a pure element. The symmetric gauge coupling separates its two
 families by the size of the kernel, a plane at a pure element against a line at a non-pure one. The
 reading is *The Biquaternioid Symmetric Quaternionic Sesqualgebra (SQS) over $\mathbb{C}$*.
 
@@ -323,10 +322,10 @@ interpretation.
 | GPS | $\tilde Q\tilde Q_1^{*}$ | $\{0\}$ off the cone; the star-image of the plain plane on the cone | the pairing's kernel is the conjugate image of the composition kernel |
 | GQA | $\tilde Q^{\natural}\tilde Q_1$ | $\{0\}$ off the cone; one plane containing $\mathbb{C}\tilde Q$ on the cone | the natural product has one kernel, and a lightlike element lies in it |
 | GQS | $\tilde Q^{\natural}\tilde Q_1^{*}$ | $\{0\}$ off the cone; two distinct planes through $\mathbb{C}\tilde Q^{*}$ on the cone | the gauge coupling is chiral, like the plain composition |
-| SPA | $\tfrac12(\tilde Q\tilde Q_1+\tilde Q_1\tilde Q)$ | $\{0\}$ off the cone with $Q_t\neq0$; the line $\mathbb{C}\tilde Q^{\natural}$ on the cone; the plane $\{Q_{1,0}=0,(\vec Q,\vec Q_1)=0\}$ for $Q_t=0$ | the symmetric composition has one kernel; a pure operation kills the plane orthogonal to it |
+| SPA | $\tfrac12(\tilde Q\tilde Q_1+\tilde Q_1\tilde Q)$ | $\{0\}$ off the cone with $Q_t\neq0$; the line $\mathbb{C}\tilde Q^{\natural}$ on the cone; the plane $\{Q_{1t}=0,(\vec Q,\vec Q_1)=0\}$ for $Q_t=0$ | the symmetric composition has one kernel; a pure operation kills the plane orthogonal to it |
 | SPS | $\langle\tilde Q,\tilde Q_1\rangle_{*}e_t$ | the hyperplane $\langle\tilde Q,\tilde Q_1\rangle_{*}=0$ | the Born pairing kills the amplitudes orthogonal to $\tilde Q$: zero overlap |
 | SQA | $\langle\tilde Q,\tilde Q_1\rangle_{\natural}e_t$ | the hyperplane $\langle\tilde Q,\tilde Q_1\rangle_{\natural}=0$ | a scalar coupling kills the orthogonal hyperplane; a number cannot act |
-| SQS | the symmetrisation | $\{0\}$ off the cone with $Q_t\neq0$; the line $\mathbb{C}\tilde Q^{*}$ on the cone; the plane $\{Q_{1,0}=0,\langle\tilde Q,\tilde Q_1\rangle_{\natural*}=0\}$ for $Q_t=0$ | the symmetric gauge coupling has one kernel, a plane at a pure element against a line at a non-pure one |
+| SQS | the symmetrisation | $\{0\}$ off the cone with $Q_t\neq0$; the line $\mathbb{C}\tilde Q^{*}$ on the cone; the plane $\{Q_{1t}=0,\langle\tilde Q,\tilde Q_1\rangle_{\natural*}=0\}$ for $Q_t=0$ | the symmetric gauge coupling has one kernel, a plane at a pure element against a line at a non-pure one |
 | APA | $\tfrac12(\tilde Q\tilde Q_1-\tilde Q_1\tilde Q)$ | the plane $\mathbb{C}e_t\oplus\mathbb{C}\vec Q$ for $\vec Q\neq0$; the whole space for a central element | the bracket's centraliser is the centre and the element's own direction; a global phase is annihilated by everything |
 | APS | the antisymmetrisation | $\{0\}$ off the cone; the line $\mathbb{C}\overline{\tilde Q}$ at nonzero norm; the star-image of the plain plane on the cone | the conjugate bracket reads the conjugate direction |
 | AQA | the antisymmetrisation | a line or a plane through $\mathbb{C}\tilde Q$; the centre for a central element | the quaternionic bracket's centraliser, with the norm deciding line against plane |
@@ -346,7 +345,7 @@ Four facts of the table are physical statements, and the mathematics companion s
 - **In the six remaining rows the annihilator is small off the cone, but not always trivial, and it grows
   on the cone.** The four general products $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$ and
   $\mathrm{GQS}$ have the origin alone off the cone and a plane of lightlike partners on it. The two
-  antisymmetric sesquilinear structures $\mathrm{APS}$ and $\mathrm{AQA}$ are already non-injective off
+  antisymmetric sesquilinear structures $\mathrm{APS}$ and $\mathrm{AQS}$ are already non-injective off
   the cone: their annihilator is the line $\mathbb{C}\tilde Q$, or its conjugate, because a bracket kills
   its own direction, and it grows to a plane on the cone. The two symmetric structures $\mathrm{SPA}$ and
   $\mathrm{SQS}$ are locally non-injective as well: every pure element, the unit $\vec e_x$ included, has a
@@ -677,7 +676,7 @@ the roots of zero, the idempotents and the nilpotents of the rest of the section
 
 - $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$.
 - $A_\star(\tilde Q)=\{\tilde Q_1:\tilde Q\star\tilde Q_1=0\}$ the left annihilator, $B_\star(\tilde Q)=\{\tilde Q_1:\tilde Q_1\star\tilde Q=0\}$ the right one, the kernels of $L_{\tilde Q}$ and $R_{\tilde Q}$.
-- $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm; the cone is $\{N=0\}$; $\langle\tilde Q,\tilde Q_1\rangle_{\natural}=Q_tQ_{1,0}+(\vec Q,\vec Q_1)$ and $\langle\tilde Q,\tilde Q_1\rangle_{*}=Q_t\overline{Q_{1,0}}+(\vec Q,\overline{\vec Q_1})$ the two forms of the scalar-valued structures.
+- $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm; the cone is $\{\langle\tilde Q\rangle_{\natural}=0\}$; $\langle\tilde Q,\tilde Q_1\rangle_{\natural}=Q_tQ_{1t}+(\vec Q,\vec Q_1)$ and $\langle\tilde Q,\tilde Q_1\rangle_{*}=Q_t\overline{Q_{1t}}+(\vec Q,\overline{\vec Q_1})$ the two forms of the scalar-valued structures.
 - ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; $\mathrm{Tr}=2\,\mathrm{Sc}$; $\mathbb{C}\{u,v\}$ a complex plane, $\mathbb{C}u$ a complex line.
 - The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 - $\mathbb{M}_\pm$ the sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ the centre.
@@ -687,7 +686,7 @@ the roots of zero, the idempotents and the nilpotents of the rest of the section
 - The mathematics companion: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve computations, the two-sided theorem and the four general planes.
 - The zero-divisor context: *Zero Divisors in the Biquaternioid Structures over $\mathbb{C}$*; *The Light Cone as the Biquaternion Zero-Divisor Cone*.
 - The operators and the kernels: *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*; *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*; *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*; *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions*.
-- The scalar-valued and bracket rows: *The Biquaternioid Symmetric Quaternionic Algebra (SQA) over $\mathbb{C}$*; *The Biquaternioid Symmetric Quaternionic Algebra (SQA) over $\mathbb{C}$*; *The Biquaternioid Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$*; *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*.
+- The scalar-valued and bracket rows: *The Biquaternioid Symmetric Quaternionic Algebra (SQA) over $\mathbb{C}$*; *The Biquaternioid Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$*; *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*.
 - The kernel in the quantum corpus: *The Index Theorem and the Zero-Mode Count in Biquaternionic Form*; *The GNS Construction in the Biquaternion Framework*; *No-Cloning and the Algebraic Obstruction in Biquaternionic Form*; *The Born Rule as a Trace Formula — Derivation and Comparison*; *The Centre of the Biquaternion Algebra as the Classical Sector*; *Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form*.
 - The kernel as a structural identity: *Gauge Curvature and the Bianchi Identity in Biquaternionic Form*, for the Bianchi identity as the operator Jacobi identity and the annihilating role of associativity; *The Skyrme Model and the Topological Baryon in Biquaternionic Form*, for the topological current conserved identically by antisymmetry and Maurer–Cartan flatness, the off-shell kernel whose charge is a degree.
 - The kernel that generates and labels: *Instantons and Solitons in Biquaternionic Form*, for the self-dual solutions generated from the kernel of a Fueter-type operator, the moduli as the flat directions of the action, and the abelian-versus-non-abelian topological-density gap.

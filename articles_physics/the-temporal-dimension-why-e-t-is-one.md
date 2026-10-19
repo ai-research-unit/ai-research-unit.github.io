@@ -82,7 +82,7 @@ $$
 \langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_k^2$, and the difference between them — the Lorentzian signature — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_k$ contribute $Q_k^2$, and the sign $\vec e_k^2 = -e_t$ is already in the algebra's multiplication table.
+a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_k^2$, and the difference between them — the Lorentzian signature — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_k$ contribute $Q_k^2$.
 
 The four statements are one statement: **time is the scalar dimension.** It is the direction of the identity, the direction whose coefficient is the scalar part of the element, the direction the rotations fix and the boosts mix with space; and what the action carries is the norm of the four coefficients, while what carries the signature is the value placed on the temporal coefficient.
 

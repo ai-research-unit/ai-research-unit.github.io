@@ -21,7 +21,7 @@ The article is organized as follows. The linearized field and its gauge symmetry
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the bosonic statistics of integer-spin fields.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the Clifford metric $g$ and the spinor carrier used in the spin-$\tfrac32$ comparison.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The vector part of the material sector is $V=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, carrying the spin-one adjoint action; $\odot$ denotes the symmetric product, and the trace is taken with the algebra's general quaternionic bilinear form $\langle\cdot,\cdot\rangle=\mathrm{Sc}(\cdot\,{}^{\natural})$. The graviton field is the small perturbation of the metric, $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ with $|h_{\mu\nu}|\ll1$, and the coupling that multiplies its source is $\kappa^2=16\pi G$; the coordinate metric is the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the Clifford metric of the companion Dirac article is $g=\mathrm{diag}(+1,-1,-1,-1)$, its negative; the index algebra of the linearized theory follows $\eta$ throughout. The d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, natural units are used, and $T_{\mu\nu}$ denotes the matter energy–momentum tensor.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The vector part of the material sector is $V=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, carrying the spin-one adjoint action; $\odot$ denotes the symmetric product, and the trace is taken with the algebra's general quaternionic bilinear form $\langle\cdot,\cdot\rangle=\mathrm{Sc}(\cdot\,{}^{\natural})$. The graviton field is the small perturbation of the metric, $g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$ with $|h_{\mu\nu}|\ll1$, and the coupling that multiplies its source is $\kappa^2=16\pi G$; the coordinate metric is the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the Clifford metric of the companion Dirac article is $g=\mathrm{diag}(+1,-1,-1,-1)$, its negative; the index algebra of the linearized theory follows $\eta$ throughout. The d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, natural units are used, and $T_{\mu\nu}$ denotes the matter energy–momentum tensor.
 
 ## The Linearized Field and Its Gauge Symmetry
 
@@ -225,10 +225,10 @@ What is genuinely algebraic in this account is the trace removal. The bilinear f
 The split is explicit in components. Write a material vector as $u=u_k\vec e_k$ with real coefficients $u_k$, and take the symmetric square with components $T_{jk}=u_ju_k$, or $T_{jk}=u_jv_k+u_kv_j$ for a pair of vectors. The bilinear form gives the trace
 
 $$
-\langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec q_a\cdot\vec v ,
+\langle u,v\rangle = \mathrm{Sc}\left(u\bar{v}\right) = \vec u\cdot\vec v ,
 $$
 
-which for the symmetric square is $|\vec q_a|^2$, and the trace-free part is
+which for the symmetric square is $|\vec u|^2$, and the trace-free part is
 
 $$
 T_{jk}-\tfrac13\delta_{jk}T^l{}_l ,

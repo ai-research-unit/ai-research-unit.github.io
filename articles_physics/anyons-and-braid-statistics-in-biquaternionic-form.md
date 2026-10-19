@@ -11,7 +11,7 @@ The article is organized as follows. The braid group and its difference from the
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian connection and its representation structure.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the four-dimensional theorem whose two cases the anyon interpolates.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$; the trace of a quaternion is $\mathrm{Tr}(q)=2\,\mathrm{Sc}(q)$ and the scalar part is $\mathrm{Sc}$. The algebraic structure of the gauge group is the one of the non-abelian gauge field construction; the spacetime is three-dimensional, with coordinates $x^\mu=(t,x,y)$ or, in the $ict$ convention, $x^\mu=(ict,x,y)$, so that the coordinate metric is $\eta=\mathrm{diag}(-1,+1,+1)$ and the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. The statistics angle is $\theta$, the exchange phase $\exp(i\theta)$, the spin $s$, and the Chern–Simons level $k$; the linking number of two curves is $\mathrm{Lk}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$; the trace of a quaternion is $\mathrm{Tr}(q)=2\,\mathrm{Sc}(q)$ and the scalar part is $\mathrm{Sc}$. The algebraic structure of the gauge group is the one of the non-abelian gauge field construction; the spacetime is three-dimensional, with coordinates $x^\mu=(t,x,y)$ or, in the $ict$ convention, $x^\mu=(ict,x,y)$, so that the coordinate metric is $\eta=\mathrm{diag}(-1,+1,+1)$ and the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. The statistics angle is $\theta$, the exchange phase $\exp(i\theta)$, the spin $s$, and the Chern–Simons level $k$; the linking number of two curves is $\mathrm{Lk}$.
 
 ## The Braid Group and the Failure of the Permutation Group
 
@@ -31,7 +31,7 @@ $$
 S_n = B_n\big/\langle\sigma_i^2=e\rangle ,
 $$
 
-so that the braid group is larger than the permutation group and its representations are correspondingly richer. A wavefunction on the configuration space carries a representation of $\pi_x$, and in $2+1$ dimensions the representation is a representation of $B_n$ rather than of $S_n$; this is the origin of fractional statistics.
+so that the braid group is larger than the permutation group and its representations are correspondingly richer. A wavefunction on the configuration space carries a representation of $\pi_1$, and in $2+1$ dimensions the representation is a representation of $B_n$ rather than of $S_n$; this is the origin of fractional statistics.
 
 ### Representations: Abelian and Non-Abelian Anyons
 

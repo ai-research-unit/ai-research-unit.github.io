@@ -102,7 +102,7 @@ $$
 $$
 
 $$
-a_{11}=Q_t-iQ_3,\qquad a_{12}=-iQ_1-Q_y,\qquad a_{21}=-iQ_1+Q_y,\qquad a_{22}=Q_t+iQ_3 ,
+a_{11}=Q_t-iQ_z,\qquad a_{12}=-iQ_x-Q_y,\qquad a_{21}=-iQ_x+Q_y,\qquad a_{22}=Q_t+iQ_z ,
 $$
 
 and conversely
@@ -114,7 +114,7 @@ $$
 The four numbers $a_{ij}$ are the **Peirce coordinates**, and the map
 
 $$
-\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a_{11}&a_{12}\\ a_{21}&a_{22}\end{pmatrix}=\begin{pmatrix}Q_0-iQ_3&-iQ_1-Q_y\\ -iQ_1+Q_y&Q_t+iQ_3\end{pmatrix}
+\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a_{11}&a_{12}\\ a_{21}&a_{22}\end{pmatrix}=\begin{pmatrix}Q_t-iQ_z&-iQ_x-Q_y\\ -iQ_x+Q_y&Q_t+iQ_z\end{pmatrix}
 $$
 
 is an isomorphism of $\mathbb{C}$-algebras $\mathbb{B}\to M_2(\mathbb{C})$ carrying the four Peirce spaces onto the four matrix units (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). The Peirce decomposition therefore supplies the matrix model directly: the four spaces are the four matrix positions and the coordinate functions are the entries. The two invariants of the decomposition are the trace and the determinant of the array,
@@ -139,7 +139,7 @@ Four identities make the reading exact, all of them linear or quadratic in the c
 
 1. **The populations sum to the trace,** $p_++p_-=a_{11}+a_{22}=2\,\mathrm{Sc}(\tilde{Ϛ})=1$ for a trace-one state. The two populations are the weights of the two outcomes, and they are the two eigenvalues of the observable on the state.
 2. **The populations differ by the mean of the observable,** $p_+-p_-=a_{11}-a_{22}=\vec r\!\cdot\!\vec\mu=\langle\tilde\Xi\rangle$. The observable of square one has values $\pm1$, and the state's mean value is the population difference.
-3. **The populations are probabilities,** $p_\pm=\tfrac12(1\pm\vec r\!\cdot\!\vec\mu)$ lies in $[0,1]$, and the coherences are a conjugate pair, $a_{21}=\overline{a_{12}}$.
+3. **The populations are probabilities,** $p_\pm=\tfrac12(1\pm\vec r\!\cdot\!\vec\mu)$ lie in $[0,1]$, and the coherences are a conjugate pair, $a_{21}=\overline{a_{12}}$.
 4. **The norm is the population product minus the coherence square,** $\langle\tilde{Ϛ}\rangle_{\natural}=a_{11}a_{22}-a_{12}a_{21}=p_+p_--\lvert c\rvert^{2}$ with $c=a_{12}$. The norm of the framework is therefore the classical population product minus the non-classical interference.
 
 The last identity carries the purity. On the Bloch ball the norm of a Hermitian state is $\langle\tilde{Ϛ}\rangle_{\natural}=\tfrac14(1-\lvert\vec r\rvert^{2})$, which vanishes exactly on the pure states, the boundary of the ball. In the population-and-coherence form the vanishing is the **saturation**
@@ -225,7 +225,7 @@ The readings are these. Relative to a **Hermitian root of $+1$**, that is an obs
 | $a_{11}a_{22}-a_{12}a_{21}=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
 | $p_+=a_{11}$, $p_-=a_{22}$, $c=a_{12}$ | Populations and coherence in a Hermitian frame |
 | $p_++p_-=1$, $p_+-p_-=\langle\tilde\Xi\rangle$ | The populations sum to the trace and differ by the mean |
-| $N=p_+p_--\lvert c\rvert^{2}$ | The norm as population product minus coherence square |
+| $\langle\tilde{Ϛ}\rangle_{\natural}=p_+p_--\lvert c\rvert^{2}$ | The norm as population product minus coherence square |
 | $p_+p_-=\lvert c\rvert^{2}$ | Purity, the zero-divisor cone in population form |
 | $\natural,\bar{\cdot},{}^{*}$ | The natural, the bar and the Hermitian conjugations, ${}^{*}=\bar{\cdot}\circ\natural$ |
 | $\mathbb{P}^1(\mathbb{C})$ | The projective line parametrising the minimal left ideals |

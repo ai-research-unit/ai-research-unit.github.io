@@ -25,8 +25,8 @@ nothing; every result is owned on the mathematics side, and every reading is lab
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
 $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is
 $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the
-coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sign vector is
-$\varepsilon=(1,-1,-1,-1)$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$;
+coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; the sign vector is
+$\varepsilon=(1,-1,-1,-1)$; the sectors are $\mathbb{M}_+=\{\tilde Q^{*}=\tilde Q\}$ and $\mathbb{M}_-=\{\tilde Q^{*}=-\tilde Q\}$;
 $\|\tilde Q\|_E^{2}=\langle\tilde Q,\tilde Q\rangle_{*}$ is the Euclidean square; and $c,v$ are the centre and vector parts of an
 element. All conventions are those of *Conventions in the Biquaternion Universe*.
 
@@ -120,7 +120,7 @@ the two coincide.
 $J={}^{\natural}$, the natural conjugation that fixes the scale and reverses every direction. Physically this is the parity of
 the frame: the split of the algebra into the clock direction (the centre) and the spatial directions (the vector subspace). That
 ${}^{\natural}$ alone is an anti-automorphism of the algebra is the statement that the gauge's parity is not an extra choice but
-the algebra's own involution, the one that respects the multiplication.
+the algebra's own involution.
 - **The sign vector is the gauge itself and not an index.** The metric of the series is the sign vector $\varepsilon$ inside the
 product, so no index is raised and none is lowered, and the gauge is a permanent $(1,3)$: one sense of scale and three of
 direction. The framework reads the Minkowski-type sign pattern as carried by the algebra and not imposed from outside — it is
@@ -166,7 +166,7 @@ with a sign; the readings above are the framework's, each labelled, and none of 
 | $\mathbb{C}(e_t+\tilde V)$, $\lVert\tilde V\rVert_E<1$ | the maximal positive definite subspaces, the time axes |
 | $P_K=\{\lVert c\rVert_E\ge\lVert v\rVert_E\}$ | the Krein cone; closed, not convex, not pointed |
 | $\mathcal{P}_J=J\cdot\{S\ge0\}$ | the $J$-positive operator cone, containing $J$ |
-| $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors; $K=\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_+$ and $K=-\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_-$ |
+| $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors; $\langle\cdot,\cdot\rangle_{\natural*}=\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_+$ and $\langle\cdot,\cdot\rangle_{\natural*}=-\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_-$ |
 | $\mathrm{U}(1,3)$ | the fixed group of the $J$-Cartan involution |
 
 ## Further Reading

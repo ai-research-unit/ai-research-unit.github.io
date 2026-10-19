@@ -220,7 +220,7 @@ the Hermitian element that the companion article on the Dirac non-relativistic l
 
 ### Why the Ratio, and Not the Scale
 
-It is worth stating precisely what this argument does and does not fix. It fixes the *ratio* $\mu/S$ and therefore the dimensionless factor $g$, because both quantities are carried by the same algebra and their weights are algebraically determined. It does not fix the *scale* of the moment, because the proportionality constant between the angular momentum and the numerical value of the moment involves $\hbar$ and the mass, and neither is an algebraic quantity. The algebra supplies the two, not the one Bohr magneton $\mu_B = e\hbar/2m_e$; the scale is the imported quantum normalization. The distinction is the same one that the companion article *The Electron in Biquaternionic Form* draws for the electron: the framework forces the representation content and the tree-level factor $g=2$, and it inserts the mass, the charge, and the unit $\hbar$.
+It is worth stating precisely what this argument does and does not fix. It fixes the *ratio* $\mu/S$ and therefore the dimensionless factor $g$, because both quantities are carried by the same algebra and their weights are algebraically determined. It does not fix the *scale* of the moment, because the proportionality constant between the angular momentum and the numerical value of the moment involves $\hbar$ and the mass, and neither is an algebraic quantity. The algebra supplies the factor two, not the Bohr magneton $\mu_B = e\hbar/2m_e$; the scale is the imported quantum normalization. The distinction is the same one that the companion article *The Electron in Biquaternionic Form* draws for the electron: the framework forces the representation content and the tree-level factor $g=2$, and it inserts the mass, the charge, and the unit $\hbar$.
 
 ## Consistency Checks
 
@@ -234,7 +234,7 @@ $$
 [\,\tilde{S}_i,\tilde{S}_j\,] = i\hbar\,\epsilon_{ijk}\,\tilde{S}_k ,
 $$
 
-which are the same relation transported across the sector exchange. The numerical check is immediate: in the quaternion basis $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, so $[g_\mu,g_\nu] = \tfrac{1}{4}[\vec e_\mu,\vec e_\nu] = \tfrac{1}{2}\epsilon_{\mu\nu\lambda}\vec e_\lambda = -\epsilon_{\mu\nu\lambda}g_\lambda$, and the multiplication by $-i\hbar$ converts the structure constant $-\epsilon_{ijk}$ into the $i\hbar\,\epsilon_{ijk}$ of the spin algebra. The structure constants agree, whose sign and magnitude are precisely what the half-unit produces; a full-unit generator would have given a commutator twice as large and an angular momentum in units of $\hbar$ rather than $\hbar/2$.
+which are the same relation transported across the sector exchange. The numerical check is immediate: in the quaternion basis $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, so $[g_\mu,g_\nu] = \tfrac{1}{4}[\vec e_\mu,\vec e_\nu] = \tfrac{1}{2}\epsilon_{\mu\nu\lambda}\vec e_\lambda = -\epsilon_{\mu\nu\lambda}g_\lambda$, and the multiplication by $-i\hbar$ converts the structure constant $-\epsilon_{ijk}$ into the $i\hbar\,\epsilon_{ijk}$ of the spin algebra. The structure constants agree, and their sign and magnitude are precisely what the half-unit produces; a full-unit generator would have given a commutator twice as large and an angular momentum in units of $\hbar$ rather than $\hbar/2$.
 
 ### The Landé Vector Model
 

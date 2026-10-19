@@ -129,7 +129,7 @@ $$
 an element of $\mathbb{M}_-$ whose biquaternion norm is fixed:
 
 $$
-\langle\tilde{V}\rangle_{\natural} = \gamma^2\left((ic)^2 + \vec v^2\right) = \gamma^2\left(-c^2+t_{\mathrm{adv}}^2\right) = -c^2 .
+\langle\tilde{V}\rangle_{\natural} = \gamma^2\left((ic)^2 + \vec v^2\right) = \gamma^2\left(-c^2+\vec v^2\right) = -c^2 .
 $$
 
 Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{V} = ic\,e_t$; a clock moving with velocity $\vec v$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
@@ -263,7 +263,7 @@ the inverse of the relations $a' = \gamma(a-\beta A_\parallel)$, $A'_\parallel =
 Now apply this to two events that are simultaneous in $S'$ and separated along the boost direction by $\Delta x'$. Then $a' = c\,\Delta t' = 0$ and $A'_\parallel = \Delta x'$, so
 
 $$
-\Delta t = \frac{\gamma\,\beta\,\Delta x'}{c} = \frac{\gamma\,t_{\mathrm{adv}}\,\Delta x'}{c^2}.
+\Delta t = \frac{\gamma\,\beta\,\Delta x'}{c} = \frac{\gamma\,v_b\,\Delta x'}{c^2}.
 $$
 
 The two events are not simultaneous in $S$: their time separation is proportional to their spatial separation in $S'$. A direct rotor computation in the coefficient representation reproduces this value for $\beta = 0.3, 0.6, -0.8$ and both signs of $\Delta x'$, so the sign convention of the boost is fixed consistently with the Doppler article. In SI units, two clocks one metre apart in a frame moving at $\beta = 0.6$ are desynchronised, as seen from the frame at rest, by $\gamma v_b/c^2 \cdot 1\,\mathrm{m} \approx 2.5\times10^{-9}\,\mathrm{s}$.
@@ -299,7 +299,7 @@ This is the **twin effect**, and it is a statement about worldlines, not about f
 
 ### Transport Versus Radar Synchronisation
 
-The transport procedure gives a synchronisation that depends on the transported clock's history, so it is not by itself a definition of distant simultaneity. In the limit of arbitrarily slow transport the accumulated time dilation vanishes and the transport convention agrees with the Einstein convention; this is the standard **slow clock transport** result. Over a distance $L$ and at transport speed $t_{\mathrm{adv}}$ the transported clock loses an amount of order $vL/c^2$, which tends to zero as $t_{\mathrm{adv}}\to0$, so the two conventions coincide in the limit even though they differ at any finite transport speed. The radar convention is preferred in the relativistic setting not because transport is wrong, but because the radar rule is defined directly in terms of the null exchanges that the algebra supplies, while transport introduces an additional dynamical assumption about the clock's response to acceleration.
+The transport procedure gives a synchronisation that depends on the transported clock's history, so it is not by itself a definition of distant simultaneity. In the limit of arbitrarily slow transport the accumulated time dilation vanishes and the transport convention agrees with the Einstein convention; this is the standard **slow clock transport** result. Over a distance $L$ and at transport speed $v$ the transported clock loses an amount of order $vL/c^2$, which tends to zero as $v\to0$, so the two conventions coincide in the limit even though they differ at any finite transport speed. The radar convention is preferred in the relativistic setting not because transport is wrong, but because the radar rule is defined directly in terms of the null exchanges that the algebra supplies, while transport introduces an additional dynamical assumption about the clock's response to acceleration.
 
 ## Non-Transitivity: The Sagnac Effect
 

@@ -142,7 +142,7 @@ so the defining representation is **self-dual**: the spinor metric behind the in
 The plain product carries the symmetric bilinear form of the algebra,
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle=\operatorname{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-(\vec Q_1,\vec Q_2),
+\langle\tilde Q_1,\tilde Q_2\rangle=\operatorname{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
 $$
 
 symmetric, $\mathbb{C}$-bilinear and non-degenerate on $\mathbb{B}$; on the real space it is indefinite of signature $(4,4)$, positive definite on the informational sector $\mathbb{M}_+$ and negative definite on the material sector $\mathbb{M}_-$. It is the form of the GPA band (*The Products, Their Forms and Their Norms*), and it is not the metric: it carries the sector sign and no positivity off the sectors.

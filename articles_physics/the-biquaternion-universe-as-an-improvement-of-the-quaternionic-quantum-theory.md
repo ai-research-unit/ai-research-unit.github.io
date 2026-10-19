@@ -188,15 +188,18 @@ $$
 $$
 so that $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras onto the $2\times2$ complex matrices. The trace convention of the series is $\mathrm{Tr}=2\,\mathrm{Sc}$, where $\mathrm{Sc}(\tilde Q_1)$ is the coefficient of $e_t$.
 
-**The four forms.** The scalar parts of the four general products give four forms,
+**The four forms.** The scalar parts of the four general products give the four series forms,
 $$
-B=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\quad N=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\quad H=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\quad K=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}).
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}).
 $$
 Two of them are the metric and the probability. The form $\langle\cdot\rangle_{\natural}$ is the biquaternion norm, and on the material sector it is the **Minkowski interval**. The form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is the Hermitian form,
 $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu}Q_{1\mu}\overline{Q_{2\mu}},
 $$
-which is linear in the first slot, conjugate-linear in the second, and **positive definite**; its unit group is $\mathrm{U}(2)$, its signature is $(8,0)$ on $\mathbb{B}$ and $(4,0)$ on $\mathbb{M}_{-}$, and it is the internal Hilbert-space structure that the Born rule and the unitary evolution use. On the material sector all four forms are real and $H=-B$, so the definite form and the indefinite form meet there in the way that the quaternionic conjugation and the quaternionic norm met.
+which is linear in the first slot, conjugate-linear in the second, and **positive definite**; its unit group is $\mathrm{U}(2)$, its signature is $(8,0)$ on $\mathbb{B}$ and $(4,0)$ on $\mathbb{M}_{-}$, and it is the internal Hilbert-space structure that the Born rule and the unitary evolution use. On the material sector all four forms are real and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=-\langle\tilde Q_1,\tilde Q_2\rangle$, so the definite form and the indefinite form meet there in the way that the quaternionic conjugation and the quaternionic norm met.
 
 **The state module.** The algebra is an algebra of operators on a complex two-dimensional module,
 $$
@@ -225,7 +228,7 @@ The first limit is therefore not answered by an argument. It is avoided by const
 
 **The metric is not a family either.** In the quaternionic theory the generator is anti-Hermitian, and it is not made Hermitian by multiplying by a c-number; a positive metric $\eta$ for a generator $G$ is a positive operator commuting with it, equivalently $\eta G\eta^{-1}=-G^{\dagger}$, and it is not unique. Every such metric endows the state space with its own inner product, and the same system then receives several descriptions with different mean values. In the two-level example of Blasi, Scolarici and Solombrino, with $\omega$ the real coefficient of the diagonal generator, $\Omega$ the complex off-diagonal coefficient and $z$ the off-diagonal parameter of the metric, the modulus of the mean value of the generator is $|\omega|/2$ under the plain inner product and $\sqrt{\omega^{2}/4+|z|^{2}\lvert\Omega\rvert^{2}}$ under the alternative one, and the two agree only as $|z|\to0$. The biquaternion theory has no family of this kind. A positive operator on the state module $S\cong\mathbb{C}^{2}$ that is to serve as a metric for the whole operator algebra must commute with every anti-Hermitian element, hence with all of $\mathsf{M}_{2}(\mathbb{C})$, hence is a scalar multiple of the identity, and such a multiple changes only the normalisation of the inner product. The forms of the biquaternion theory are fixed by the algebra and carry no parameter. The definite Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ pairs the states of the module, and its adjoint is the Hermitian adjoint owned by the probability band (*The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*); the indefinite Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ pairs the gauge structure, and its adjoint is the J-adjoint owned by the gauge bands (*The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*). Neither form is one of a family, and neither offers a second reading of the same states. This is the non-commutativity limit once more, removed by the same centrality that removes the first.
 
-**And the choice is not merely available, it is selected.** The corpus proves that a dynamics which preserves the Hermitian norm for **every** Hermitian generator forces its unit into the centre (*Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem*). The central roots of $-e_t$ are $\pm i$, and a non-central unit fails: with $J=\vec e_z$ and $\tilde H=i\vec e_x$ the generator is $-i\vec e_y$, which is Hermitian rather than anti-Hermitian, so the norm grows. A uniform norm-preserving evolution therefore requires commutative scalars, and the biquaternion theory is what that requirement selects. This is why the fifth limit is treated below as a theorem rather than as a difficulty.
+**And the choice is not merely available, it is selected.** The corpus proves that a dynamics which preserves the Hermitian norm for **every** Hermitian generator forces its unit into the centre (*Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem*). The central roots of $-e_t$ are $\pm i$, and a non-central unit fails: with the non-central unit $\vec e_z$ and $\tilde H=i\vec e_x$, the generator $\tilde H\vec e_z=-i\vec e_y$ is Hermitian rather than anti-Hermitian, so the norm grows. A uniform norm-preserving evolution therefore requires commutative scalars, and the biquaternion theory is what that requirement selects. This is why the fifth limit is treated below as a theorem rather than as a difficulty.
 
 ### The Spectrum Is the Ordinary Spectrum
 
@@ -309,7 +312,7 @@ The older role of the quaternions is geometry, and the biquaternion theory keeps
 $$
 \mathbb{M}_{-}\cong\mathbb{R}^{3,1},
 $$
-with the biquaternion norm $\langle\cdot\rangle_{\natural}$ as the interval, the pure imaginary directions as space, the central imaginary as the source of the sign, and the unit-norm elements as the Lorentz transformations. On $\mathbb{M}_{-}$ all four forms are real and $H=-B$, so the definite form and the indefinite form differ by a sign there, which is the precise statement of how the Euclidean structure and the Lorentzian structure sit together in one algebra. This is the quaternions' classical role, kept in full. The sector identification is owned by *The Anti-Hermitian Subspace $\mathbb{M}_{-}$ as the Material Sector*.
+with the biquaternion norm $\langle\cdot\rangle_{\natural}$ as the interval, the pure imaginary directions as space, the central imaginary as the source of the sign, and the unit-norm elements as the Lorentz transformations. On $\mathbb{M}_{-}$ all four forms are real and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=-\langle\tilde Q_1,\tilde Q_2\rangle$, so the definite form and the indefinite form differ by a sign there, which is the precise statement of how the Euclidean structure and the Lorentzian structure sit together in one algebra. This is the quaternions' classical role, kept in full. The sector identification is owned by *The Anti-Hermitian Subspace $\mathbb{M}_{-}$ as the Material Sector*.
 
 ### Associativity, Centrality, and the Explicit Formalism
 

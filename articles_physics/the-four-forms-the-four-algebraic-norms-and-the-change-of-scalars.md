@@ -70,7 +70,7 @@ Restricted to a subspace, each form is read by its **signature** and by its **co
 | Hermitian $\mathbb{M}_+$ | $(4,0)$ | $(4,0)$ | $(1,3)$ | $(1,3)$ |
 | anti-Hermitian $\mathbb{M}_-$ | $(0,4)$ | $(4,0)$ | $(3,1)$ | $(1,3)$ |
 
-**$\langle\cdot,\cdot\rangle_{*}$ is definite on every subspace**, positive on the complex and the real-type subspaces alike, and it is the only one of the four that is: the other three are indefinite on the whole algebra, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ as complex bilinear forms of rank four and $\langle\cdot,\cdot\rangle_{\natural*}$ as an indefinite Hermitian form. The definiteness of $\langle\cdot\rangle_{*}$ is what makes it the Born form, and its presence on every subspace is what makes it the only form a state can be normalised with.
+**$\langle\cdot,\cdot\rangle_{*}$ is definite on every subspace**, positive on the complex and the real-type subspaces alike, and it is the only one of the four that is: the other three are indefinite on the whole algebra, $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ as complex bilinear forms of rank four and $\langle\cdot,\cdot\rangle_{\natural*}$ as an indefinite Hermitian form. The definiteness of $\langle\cdot,\cdot\rangle_{*}$ is what makes it the Born form, and its presence on every subspace is what makes it the only form a state can be normalised with.
 
 **The coincidences.** On each subspace the four forms coincide up to sign, and the pattern is the subspace's fingerprint:
 
@@ -93,7 +93,7 @@ Read as norms, the four algebraic norms on the subspaces give the same table wit
 
 **The sector sign.** $\langle\cdot,\cdot\rangle$ is negative definite on $\mathbb{M}_-$ of signature $(0,4)$ and positive definite on $\mathbb{M}_+$ of signature $(4,0)$: on the sectors $\langle\cdot,\cdot\rangle$ is a sign and not an interval, and the sign is the sector's. $\langle\cdot,\cdot\rangle_{*}$ is positive definite on both, so it is by $\langle\cdot,\cdot\rangle_{*}$ alone that a material and an informational element are measured on the same scale; by $\langle\cdot,\cdot\rangle$ they are measured with opposite signs, and by $\langle\cdot,\cdot\rangle_{\natural}$ or $\langle\cdot,\cdot\rangle_{\natural*}$ they are measured with a light cone.
 
-**The interval.** $\langle\cdot,\cdot\rangle_{\natural}$ is of signature $(3,1)$ on $\mathbb{M}_-$ — the metric of the material sector, whose null set is the light cone and whose level sets are the mass shells — and of signature $(1,3)$ on $\mathbb{M}_+$, the same form with the sign of its inertia reversed by the sector. The interval of a material element is a real number, and its level set $\{N=-m^{2}c^{2}\}$ is the mass shell.
+**The interval.** $\langle\cdot,\cdot\rangle_{\natural}$ is of signature $(3,1)$ on $\mathbb{M}_-$ — the metric of the material sector, whose null set is the light cone and whose level sets are the mass shells — and of signature $(1,3)$ on $\mathbb{M}_+$, the same form with the sign of its inertia reversed by the sector. The interval of a material element is a real number, and its level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$ is the mass shell.
 
 **The Krein form.** $\langle\cdot,\cdot\rangle_{\natural*}$ is positive definite on the centre of signature $(2,0)$, negative definite on the vector subspace of signature $(0,6)$, and of signature $(1,3)$ on each of the other four subspaces; on the whole algebra it is indefinite of inertia $(2,6)$ as a real form. It is real at the two equal arguments wherever it is defined and its zero set is a cone, which is why it normalises nothing and is read as the gauge form rather than as a probability.
 
@@ -112,7 +112,7 @@ and the two kinds of real-linear map are then distinguished by their relation to
 **The two rules of realification.** The change of scalars moves the forms by two rules, and they are the reason the four forms have the real signatures they have. A **symmetric bilinear form** realifies to the **split** signature: a complex bilinear form of complex rank $n$ becomes a real bilinear form of signature $(n,n)$. A **Hermitian form** realifies by **doubling its inertia**: a Hermitian form of complex inertia $(n,m)$ becomes a real form of signature $(2n,2m)$. Read on the four forms of $\mathbb{B}$, whose complex data are $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ of complex rank four, and $\langle\cdot,\cdot\rangle_{*}$ of inertia $(4,0)$, $\langle\cdot,\cdot\rangle_{\natural*}$ of inertia $(1,3)$, the rules give the realified signatures
 
 $$
-B:(4,4),\qquad H:(8,0),\qquad N:(4,4),\qquad K:(2,6),
+\langle\cdot,\cdot\rangle:(4,4),\qquad \langle\cdot,\cdot\rangle_{*}:(8,0),\qquad \langle\cdot,\cdot\rangle_{\natural}:(4,4),\qquad \langle\cdot,\cdot\rangle_{\natural*}:(2,6),
 $$
 
 all four indefinite over the reals except $\langle\cdot,\cdot\rangle_{*}$, which stays positive definite and is the real Euclidean square. The two rules are also what the restriction table of the previous section re-derives subspace by subspace: the complex line $\mathbb{C}_{\mathbb{B}}$ realifies to a real plane, and the $(1,1)$, $(2,0)$, $(1,1)$, $(2,0)$ of the table are the two rules read on that plane.

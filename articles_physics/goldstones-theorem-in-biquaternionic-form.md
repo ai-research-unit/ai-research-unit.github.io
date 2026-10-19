@@ -15,7 +15,7 @@ Three statements organise the article.
 The article is organised as follows. The next section states the symmetry and its spontaneous breaking. The following section fixes the potential, the vacuum manifold and the order parameter. The next section expands about the minimum and derives the mass matrix, with the radial and angular curvatures. The section after that derives the conserved current, the charge and the decay constant. The next section states the theorem and its proof in the form used here. A section counts the Goldstone bosons and states the coset rule. A section states the biquaternion interpretation. The article closes with the standard/open separation.
 
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the field, the $\mathrm{U}(1)$ charge, and the mode algebra.
-- Companion article *The Quantized Scalar Field in Biquaternionic Form*, for the central $\mathrm{U}(1)$ phase, $[\u03d8^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$, and the field's transformation.
+- Companion article *The Quantized Scalar Field in Biquaternionic Form*, for the central $\mathrm{U}(1)$ phase, $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$, and the field's transformation.
 - Companion article *The Scalar Fock Space in Biquaternionic Form*, for the charge grading and the superselection sectors of the broken symmetry.
 - Companion article *Scalar Pair Creation in Biquaternionic Form*, for the external-background process and the mode equation with a time-dependent mass.
 - Companion article *The Scalar Field Path Integral in Biquaternionic Form*, for the vacuum functional and the effective action.
@@ -37,14 +37,14 @@ so that $\phi_1,\phi_2$ are the two real scalar fields of the sector and the kin
 The framework's canonical continuous symmetry of the scalar sector is the central phase,
 
 $$
-U^{\mathrm{fop}}_\alpha=\exp\!\left(i\alpha \u03d8^{\mathrm{fop}}\right),
+U^{\mathrm{fop}}_\alpha=\exp\!\left(i\alpha Ϙ^{\mathrm{fop}}\right),
 \qquad
 U^{\mathrm{fop}}_\alpha\,\tilde\Phi^{\mathrm{fop}}\,U^{\mathrm{fop}}_\alpha{}^{-1}=\exp(-i\alpha)\,\tilde\Phi^{\mathrm{fop}},
 \qquad
 U^{\mathrm{fop}}_\alpha\,\tilde\Phi^{\mathrm{fop}{*}}\,U^{\mathrm{fop}}_\alpha{}^{-1}=\exp(+i\alpha)\,\tilde\Phi^{\mathrm{fop}{*}} ,
 $$
 
-with $\u03d8^{\mathrm{fop}}$ the conserved charge of the Noether current $\tilde J\in\mathbb{M}_-$. The transformation is an internal symmetry: it commutes with the Poincaré action, it does not rotate any spinor index, and its parameter multiplies the field by a **central** unitary. The group is $\mathrm{U}(1)$, one generator, one phase.
+with $Ϙ^{\mathrm{fop}}$ the conserved charge of the Noether current $\tilde J\in\mathbb{M}_-$. The transformation is an internal symmetry: it commutes with the Poincaré action, it does not rotate any spinor index, and its parameter multiplies the field by a **central** unitary. The group is $\mathrm{U}(1)$, one generator, one phase.
 
 A symmetry is **spontaneously broken** when it is a symmetry of the action but not of the vacuum. For a $\mathrm{U}(1)$ acting on a complex scalar, breaking means that the vacuum expectation value
 
@@ -52,12 +52,12 @@ $$
 \langle0|\,\tilde\Phi^{\mathrm{fop}}\,|0\rangle=v\,\exp(i\alpha_0)\,e_t
 $$
 
-is nonzero for a suitable choice of the vacuum's phase $\alpha_0$; in the component normalisation below, in which $\tilde\Phi=(\phi_1+i\phi_2)e_t/\sqrt2$ and the symmetry-breaking minimum sits at $\phi_1=\sqrt2\,v$, the expectation of the complex component is $\langle\phi\rangle=v$, so the order parameter's modulus is $v$. The freedom to rotate $\alpha_0$ is the degeneracy, and the choice of one value is the breaking. The order parameter is the central element $v\exp(i\alpha_0)e_t$: it lies in $\mathbb{C}_{\mathbb{B}}$, it commutes with the algebra, and it carries no spinor index. The symmetry multiplies the field by the central phase, $\tilde\Phi^{\mathrm{fop}}\mapsto \exp(-i\alpha)\tilde\Phi^{\mathrm{fop}}$ (equivalently $\tilde\Phi^{\mathrm{fop}}\mapsto U^{\mathrm{fop}}_\alpha\tilde\Phi^{\mathrm{fop}}U^{\mathrm{fop}}_\alpha{}^{-1}$ with $U^{\mathrm{fop}}_\alpha=\exp(i\alpha \u03d8^{\mathrm{fop}})$), and it acts on the vacua by carrying the one with phase $\alpha_0$ into the one with phase $\alpha_0+\alpha$; the transformed vacuum is a different but energetically equivalent state, and the vacuum manifold is the circle of phases.
+is nonzero for a suitable choice of the vacuum's phase $\alpha_0$; in the component normalisation below, in which $\tilde\Phi=(\phi_1+i\phi_2)e_t/\sqrt2$ and the symmetry-breaking minimum sits at $\phi_1=\sqrt2\,v$, the expectation of the complex component is $\langle\phi\rangle=v$, so the order parameter's modulus is $v$. The freedom to rotate $\alpha_0$ is the degeneracy, and the choice of one value is the breaking. The order parameter is the central element $v\exp(i\alpha_0)e_t$: it lies in $\mathbb{C}_{\mathbb{B}}$, it commutes with the algebra, and it carries no spinor index. The symmetry multiplies the field by the central phase, $\tilde\Phi^{\mathrm{fop}}\mapsto \exp(-i\alpha)\tilde\Phi^{\mathrm{fop}}$ (equivalently $\tilde\Phi^{\mathrm{fop}}\mapsto U^{\mathrm{fop}}_\alpha\tilde\Phi^{\mathrm{fop}}U^{\mathrm{fop}}_\alpha{}^{-1}$ with $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$), and it acts on the vacua by carrying the one with phase $\alpha_0$ into the one with phase $\alpha_0+\alpha$; the transformed vacuum is a different but energetically equivalent state, and the vacuum manifold is the circle of phases.
 
 Three consequences must be distinguished, because they are often conflated.
 
 - **The symmetry is still a symmetry of the dynamics.** The current is conserved, and the generator, where it is defined, commutes with the Hamiltonian; what fails is that the vacuum is not invariant, $U^{\mathrm{fop}}_\alpha|0\rangle\ne|0\rangle$ up to a phase.
-- **The charge does not annihilate the vacuum.** For an unbroken symmetry the charge annihilates the vacuum; for a broken one it does not, $\u03d8^{\mathrm{fop}}|0\rangle\ne0$. In the infinite-volume theory the charge integral $\int d^3x\,J^0$ does not converge, so that relation is the finite-volume way of saying that the broken generator is not implemented by a unitary operator on the Hilbert space: if it were, $U^{\mathrm{fop}}_\alpha|0\rangle$ would be a normalizable state degenerate with the vacuum, which the cluster property forbids. The charge grading of the companion Fock-space article survives as a superselection structure, but the vacuum sits on the degenerate circle rather than at a definite phase.
+- **The charge does not annihilate the vacuum.** For an unbroken symmetry the charge annihilates the vacuum; for a broken one it does not, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$. In the infinite-volume theory the charge integral $\int d^3x\,J^0$ does not converge, so that relation is the finite-volume way of saying that the broken generator is not implemented by a unitary operator on the Hilbert space: if it were, $U^{\mathrm{fop}}_\alpha|0\rangle$ would be a normalizable state degenerate with the vacuum, which the cluster property forbids. The charge grading of the companion Fock-space article survives as a superselection structure, but the vacuum sits on the degenerate circle rather than at a definite phase.
 - **The order parameter is central.** This is the framework's structural statement: the field whose modulus is the order parameter is central-valued, so the breaking is a breaking of a symmetry acting on the centre. The Goldstone mode that results is likewise central-valued, and the theorem's content is entirely within the scalar sector.
 
 ## The Potential, the Vacuum Manifold and the Order Parameter
@@ -129,7 +129,7 @@ where the masses are read from $\mathcal L\supset-\frac12 m^2(\text{field})^2$. 
 
 The masslessness has a structural reason that the expansion makes visible. The potential depends on the fields only through $\phi_1^2+\phi_2^2$, so its restriction to the circle of minima is constant; the angular direction is a direction of exact flatness, not merely of small curvature. The angular fluctuation $\theta$ moves along the symmetry orbit, and the potential cannot give it a mass because the symmetry relates all points of the orbit. Equivalently, the $\theta$-dependence of $V$ enters only through the invariant, and at a point where the invariant is stationary in $\theta$, every $\theta$ derivative of $V$ vanishes. The field $\theta$ is the **Goldstone (Nambu–Goldstone) boson** of the broken $\mathrm{U}(1)$; it is a scalar, and in this framework it is central-valued like the field it comes from.
 
-The Goldstone field's interactions are of the derivative type. The potential's expansion contains no term linear in $\theta$ and no term $\propto\theta^2$; the first $\theta$-dependent terms are of the form $h\theta^2$ and $\theta^4$, whose vertices carry the momenta of the Goldstone lines. This derivative coupling is the standard reason the Goldstone boson decouples at low energy, and it is visible directly in the expansion above.
+The Goldstone field's low-energy interactions are of the derivative type. The potential's expansion contains no term linear in $\theta$ and no term $\propto\theta^2$; the first $\theta$-dependent terms are of the form $h\theta^2$ and $\theta^4$. The derivative couplings that suppress the Goldstone boson at low energy come from the kinetic term, where the shift symmetry acts nonlinearly, and are visible in the current below.
 
 ## The Goldstone Current and the Decay Constant
 
@@ -138,7 +138,7 @@ The broken symmetry's current is the Noether current of the companion article. O
 $$
 \tilde J=i\left(\phi^*\tilde\nabla\phi-\phi\,\tilde\nabla\phi^*\right),
 \qquad
-\u03d8=\int d^3x\,J^0 ,
+Ϙ=\int d^3x\,J^0 ,
 $$
 
 which in the real components is
@@ -157,7 +157,7 @@ $$
 f=\sqrt2\,v ,
 $$
 
-so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $\u03d8=-f\int d^3x\,d\theta/dt$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
+so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3x\,d\theta/dt$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
 
 $$
 \langle0|\tilde J(0)|\theta(p)\rangle=i f\,p^\mu ,
@@ -176,15 +176,15 @@ so the leading term is $-fd\theta/dt$ and the remainder is the two-field term $-
 
 ## The Theorem and Its Proof
 
-Goldstone's theorem states: **if a continuous global symmetry is spontaneously broken, then for each generator of the broken symmetry there is a massless scalar particle.** For the $\mathrm{U}(1)$ of this article there is one generator $\u03d8^{\mathrm{fop}}$ and one Goldstone boson $\theta$. The proof has two standard forms, and both are worth stating because the framework's version uses both.
+Goldstone's theorem states: **if a continuous global symmetry is spontaneously broken, then for each generator of the broken symmetry there is a massless scalar particle.** For the $\mathrm{U}(1)$ of this article there is one generator $Ϙ^{\mathrm{fop}}$ and one Goldstone boson $\theta$. The proof has two standard forms, and both are worth stating because the framework's version uses both.
 
-**The current form.** If the symmetry is broken, the order parameter is nonzero, equivalently the charge does not annihilate the vacuum in the finite-volume sense discussed above, $\u03d8^{\mathrm{fop}}|0\rangle\ne0$, so
+**The current form.** If the symmetry is broken, the order parameter is nonzero, equivalently the charge does not annihilate the vacuum in the finite-volume sense discussed above, $Ϙ^{\mathrm{fop}}|0\rangle\ne0$, so
 
 $$
-\langle0|\big[\u03d8^{\mathrm{fop}},\phi^{\mathrm{fop}}(0)\big]|0\rangle\ne0 ,
+\langle0|\big[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}(0)\big]|0\rangle\ne0 ,
 $$
 
-and since $\u03d8^{\mathrm{fop}}=\int d^3x\,J^0$, the current–field commutator cannot vanish identically. Define the matrix element
+and since $Ϙ^{\mathrm{fop}}=\int d^3x\,J^0$, the current–field commutator cannot vanish identically. Define the matrix element
 
 $$
 F(x-y)=\langle0|\big[\tilde J(x),\phi^{\mathrm{fop}}(y)\big]|0\rangle ,
@@ -229,17 +229,17 @@ the field being the canonically normalized one used above, so that its kinetic t
 
 The derivative structure has a sharp consequence, the **soft limit**. The amplitude for a process with an additional Goldstone boson of momentum $k$ is proportional to $k$ at small momentum; in the limit $k\to0$ the amplitude with the extra Goldstone vanishes. The reason is visible in the effective Lagrangian: every Goldstone leg carries a derivative, so a leg with vanishing momentum contributes nothing, and the remaining amplitude is the amplitude without that leg. This "Adler zero" is the standard statement that softly emitted Goldstone bosons decouple, and it is why a broken continuous symmetry's low-energy theory is weakly coupled at low energy even when the underlying coupling is strong.
 
-At the level of the field algebra the breaking is expressed by the charge's action on the Goldstone field. In components the charge acts as $[\u03d8^{\mathrm{fop}},\phi^{\mathrm{fop}}_1]=-i\phi^{\mathrm{fop}}_2$ and $[\u03d8^{\mathrm{fop}},\phi^{\mathrm{fop}}_2]=+i\phi^{\mathrm{fop}}_1$, so for the fluctuation fields $h$ and $\theta^{\mathrm{fop}}$ defined about the minimum,
+At the level of the field algebra the breaking is expressed by the charge's action on the Goldstone field. In components the charge acts as $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}_1]=-i\phi^{\mathrm{fop}}_2$ and $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}_2]=+i\phi^{\mathrm{fop}}_1$, so for the fluctuation fields $h$ and $\theta^{\mathrm{fop}}$ defined about the minimum,
 
 $$
-\big[\u03d8^{\mathrm{fop}},h\big]=-i\theta^{\mathrm{fop}} ,
+\big[Ϙ^{\mathrm{fop}},h\big]=-i\theta^{\mathrm{fop}} ,
 \qquad
-\langle0|\big[\u03d8^{\mathrm{fop}},\theta^{\mathrm{fop}}(0)\big]|0\rangle=i f ,
+\langle0|\big[Ϙ^{\mathrm{fop}},\theta^{\mathrm{fop}}(0)\big]|0\rangle=i f ,
 \qquad
 f=\sqrt2\,v ,
 $$
 
-the second relation being a statement about the vacuum expectation value, since the full commutator is $[\u03d8^{\mathrm{fop}},\theta^{\mathrm{fop}}]=i(\sqrt2 v+h)$ and the fluctuation has vanishing expectation. The generator thus shifts the Goldstone field by a constant, which is the non-linear realization of the broken symmetry; $f$ is the order parameter in the normalization of the kinetic term. In the framework's terms the charge is the central $\mathrm{U}(1)$ generator of the companion articles, the Goldstone field is central-valued, and the c-number $if$ is a central scalar multiple of $e_t$; the non-linear realization and the soft limit are standard and are imported with the rest of the broken-symmetry apparatus.
+the second relation being a statement about the vacuum expectation value, since the full commutator is $[Ϙ^{\mathrm{fop}},\theta^{\mathrm{fop}}]=i(\sqrt2 v+h)$ and the fluctuation has vanishing expectation. The generator thus shifts the Goldstone field by a constant, which is the non-linear realization of the broken symmetry; $f$ is the order parameter in the normalization of the kinetic term. In the framework's terms the charge is the central $\mathrm{U}(1)$ generator of the companion articles, the Goldstone field is central-valued, and the c-number $if$ multiplies the central unit $e_t$; the non-linear realization and the soft limit are standard and are imported with the rest of the broken-symmetry apparatus.
 
 ## The Biquaternion Reading
 
@@ -257,7 +257,7 @@ The discrete case is worth one remark for contrast. A $\mathbb{Z}/2$ symmetry ca
 
 ## What Is Standard and What Is Open
 
-**Standard, and imported.** The definition of spontaneous symmetry breaking and the order parameter; the vacuum manifold and its degeneracy; the expansion about the minimum, the diagonal mass matrix, the massive radial mode and the massless angular mode; the derivative couplings of the Goldstone field, the non-linear realization, the effective Lagrangian $\frac{f^2}{2}(\partial\theta)^2+\cdots$ and the soft limit; the Noether current, the charge and the decay constant with the matrix element $ifp^\mu$ and the charge–field commutators $[\u03d8^{\mathrm{fop}},h]=-i\theta^{\mathrm{fop}}$, $\langle0|[\u03d8^{\mathrm{fop}},\theta^{\mathrm{fop}}]|0\rangle=if$; the non-implementation of a broken generator by a unitary operator on the Hilbert space; Goldstone's theorem in both its current and effective-potential forms; the counting rule $\dim(G/H)$ and the cases $\mathrm{U}(1)\to\{1\}$, $\mathrm{U}(1)\to \mathrm{U}(1)$ and $O(N)\to O(N-1)$. None of this is re-derived here, and none of it depends on the biquaternion structure beyond the kinematical conventions.
+**Standard, and imported.** The definition of spontaneous symmetry breaking and the order parameter; the vacuum manifold and its degeneracy; the expansion about the minimum, the diagonal mass matrix, the massive radial mode and the massless angular mode; the derivative couplings of the Goldstone field, the non-linear realization, the effective Lagrangian $\frac{f^2}{2}(\partial\theta)^2+\cdots$ and the soft limit; the Noether current, the charge and the decay constant with the matrix element $ifp^\mu$ and the charge–field commutators $[Ϙ^{\mathrm{fop}},h]=-i\theta^{\mathrm{fop}}$, $\langle0|[Ϙ^{\mathrm{fop}},\theta^{\mathrm{fop}}]|0\rangle=if$; the non-implementation of a broken generator by a unitary operator on the Hilbert space; Goldstone's theorem in both its current and effective-potential forms; the counting rule $\dim(G/H)$ and the cases $\mathrm{U}(1)\to\{1\}$, $\mathrm{U}(1)\to \mathrm{U}(1)$ and $O(N)\to O(N-1)$. None of this is re-derived here, and none of it depends on the biquaternion structure beyond the kinematical conventions.
 
 **Open in the biquaternion framework.**
 
@@ -271,7 +271,7 @@ The discrete case is worth one remark for contrast. A $\mathbb{Z}/2$ symmetry ca
 
 The scalar sector's canonical continuous symmetry is the central phase $\mathrm{U}(1)$ generated by the Noether charge of the current $\tilde J\in\mathbb{M}_-$, acting on the central-valued field by $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$. Taking the renormalizable invariant potential $V=\frac{\lambda}{4}(\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)-v^2)^2$, the vacuum manifold is the circle $\mathrm{Sc}(\tilde\Phi^{*}\tilde\Phi)=v^2$, the order parameter $\langle\tilde\Phi^{\mathrm{fop}}\rangle=v\exp(i\alpha_0)e_t$ is a central condensate, and the symmetry breaks as $\mathrm{U}(1)\to\{1\}$. Expanding in the two real components, $\phi_1=\sqrt2v+h$ and $\phi_2=\theta$, the kinetic term is canonical, the mass matrix is diagonal with entries $(m_h^2,m_G^2)=(\lambda v^2,0)$, and the Goldstone boson $\theta$ is exactly massless: the potential depends only on the modulus, so the angular direction is exactly flat. The values were verified numerically — radial curvature $\lambda v^2$ in the modulus coordinate, angular curvature the numerical zero of a second difference, mixed derivative identically zero.
 
-The Goldstone field's current is $\tilde J=-f\tilde\nabla\theta+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\phi^{\mathrm{fop}}\rangle$, and its defining matrix element is $\langle0|\tilde J(0)|\theta(p)\rangle=ifp^\mu$; the couplings of $\theta$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $\mathrm{U}(1)\to\{1\}$, none for $\mathrm{U}(1)\to \mathrm{U}(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.
+The Goldstone field's current is $\tilde J=-f\tilde\nabla\theta+O(\text{two fields})$ with decay constant $f=\sqrt2v\propto\langle\phi^{\mathrm{fop}}\rangle$, and its defining matrix element is $\langle0|\tilde J(0)|\theta(p)\rangle=ifp^\mu$; the low-energy couplings of $\theta$ are of derivative type. Goldstone's theorem — one massless scalar per broken generator — holds, with the spectral proof and the effective-potential proof both applying, and the counting rule $n_{\mathrm{NG}}=\dim(G/H)$ giving one for $\mathrm{U}(1)\to\{1\}$, none for $\mathrm{U}(1)\to \mathrm{U}(1)$, and $N-1$ for $O(N)\to O(N-1)$. The framework's contribution is the centrality of the symmetry, the order parameter and the Goldstone mode, and the biquaternion-norm geometry of the invariant potential; the theorem and its consequences are standard, and the scalar sector supplies no new mechanism, as its absence of a native ladder in $\mathbb{B}$ requires.
 
 ## Summary of Notation
 
@@ -290,7 +290,7 @@ The Goldstone field's current is $\tilde J=-f\tilde\nabla\theta+O(\text{two fiel
 | $\tilde J\in\mathbb{M}_-$, $\tilde J=i(\phi^*\tilde\nabla\phi-\phi\tilde\nabla\phi^*)$ | Noether current, in the material sector |
 | $\tilde J=-f\tilde\nabla\theta+\ldots$, $f=\sqrt2v$ | Current and decay constant |
 | $\langle0\vert\tilde J(0)\vert\theta(p)\rangle=ifp^\mu$ | Defining matrix element of the decay constant |
-| $U^{\mathrm{fop}}_\alpha=\exp(i\alpha \u03d8^{\mathrm{fop}})$, $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
+| $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
 | $n_{\mathrm{NG}}=\dim G-\dim H$ | Goldstone counting rule |
 | $\mathrm{U}(1)\to\{1\}$; $O(N)\to O(N-1)$ | One Goldstone; $N-1$ Goldstones |
 | $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |

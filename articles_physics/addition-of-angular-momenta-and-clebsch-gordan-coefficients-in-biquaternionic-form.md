@@ -134,7 +134,7 @@ $$
 
 which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi(\pm\vec u_z)\otimes \tilde\Pi(\pm\vec u_z)$.
 
-One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article *Modules over the Biquaternion Algebra* records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The angular momenta $\tilde J_k^{(1)},\tilde J_k^{(2)}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.
+One caution belongs here, because it is the reason the tensor product is an assumption rather than a theorem. For a non-commutative algebra, the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module; the companion article *Modules over the Biquaternion Algebra* records the point. What does act on $\mathbb{B}\otimes\mathbb{B}$ is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself, together with its diagonal subgroup. The total angular momenta $\tilde J_k=\tilde J_k^{(1)}+\tilde J_k^{(2)}$ generate the diagonal copy of the rotation algebra, and the coupled states are multiplets of that diagonal algebra. They are not elements of a $\mathbb{B}$-module. This is the structural reason that higher spins enter the framework through the group rather than through the algebra, and it is taken up again in the closing sections.
 
 ## The Clebsch–Gordan Series
 
@@ -178,7 +178,7 @@ $$
 \sum_{j,m}\langle j_1,m_1;j_2,m_2|j,m\rangle\langle j_1,m_1';j_2,m_2'|j,m\rangle=\delta_{m_1m_1'}\delta_{m_2m_2'} .
 $$
 
-Both relations are statements about numbers; neither involves the biquaternion realisation. What the realisation enters is the identification of the factor multiplets with the fundamental module and its tensor powers.
+Both relations are statements about numbers; neither involves the biquaternion realisation. What the realisation supplies is the identification of the factor multiplets with the fundamental module and its tensor powers.
 
 The closed expression, Wigner's formula, is
 

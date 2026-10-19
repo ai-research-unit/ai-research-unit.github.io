@@ -147,7 +147,7 @@ $$
 \qquad
 \vec B = (\vec u\times\vec E_0)\,\exp(ik_\mu x^\mu),
 \qquad
-\vec u = \vec k/k_0,
+\vec u = \vec k/|\vec k|,
 $$
 
 the non-linear terms arrange themselves to cancel, and the plane wave solves the deformed equations exactly as it solves the linear ones. The cancellation is worth one line of algebra because it is not an accident: for a vacuum plane wave $\vec E^2=\vec B^2$, so the last term of $\vec h$ drops; $\vec d$ and $\vec h$ become the transverse pair multiplying the single phase $\exp(2ik_\mu x^\mu)$; the double-frequency phase squares the wave vector, and the vacuum dispersion $k^2=0$ makes the deformed contributions vanish identically, for every $\vec\theta$ (checked for the companion `.context`, where dropping the two time derivatives — as the column layout invites — makes the same test fail). Two consequences follow. First, **"plane wave" does not imply "linear theory"**: non-linearity does not by itself destroy plane-wave propagation, and the corpus's *Exercise: Plane-Wave Propagation in a Medium* is, in this picture, the **linear limit** of a one-parameter family. Second, the deformation is nonetheless physically present, because it does affect the **speed**. The source cites the result that for propagation **transverse to a background magnetic induction** the velocity differs from $c$ — a birefringence-like effect that is a direct consequence of the non-linearity and that is **very small**, being suppressed by $\vec\theta$.

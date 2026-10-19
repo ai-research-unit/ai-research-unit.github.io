@@ -243,7 +243,7 @@ $$
 \langle\tilde\nabla,\tilde Q_5\rangle_{*}=\mathrm{Sc}\bigl(\tilde\nabla\tilde Q_5^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}\bar Q_{5\mu}=\frac{\partial}{\partial Q_t}\bar Q_{5t}+\nabla\cdot\overline{\vec Q_5} ,
 $$
 
-a scalar, the **contraction** of the derivative with the **conjugated** field in the sign vector $\varepsilon$. Taken on the
+a scalar, the **contraction** of the derivative with the **conjugated** field. Taken on the
 scalar field it gives the scalar part of the product of the two conjugated gradients,
 
 $$
@@ -310,7 +310,7 @@ $$
 
 so the Krein norm of the gradient **coincides with the plain bilinear norm**. It is the indefinite partner of the Hermitian form,
 and on the elements it is the form of signature $(1,3)$ whose diagonal is
-$\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$: Hermitian, and negative on a nonzero element, so
+$\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$: Hermitian, indefinite, and negative on a spacelike element, so
 it carries no positivity. It is the form of the indefinite theory — the Krein space — and not of the contractions of these
 subsections. **On the material sector** it is $-c^{-2}\frac{\partial^2}{\partial t^2}-\Delta$.
 

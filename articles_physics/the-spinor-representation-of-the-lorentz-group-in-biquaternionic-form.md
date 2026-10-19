@@ -95,15 +95,13 @@ $$
 \qquad \tilde{Q}\in\mathbb{B},
 $$
 
-and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $\psi\otimes\bar{\chi}\mapsto \tilde{Q}=\psi\,\chi^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(\psi\chi^{\dagger}+\chi\psi^{\dagger})$ is the element of $\mathbb{M}_+$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself.
-
-
+and the correspondence with the tensor product is the outer product of a spinor and a conjugate spinor, $\psi\otimes\bar{\chi}\mapsto \tilde{Q}=\psi\,\chi^{\dagger}$, written in matrix coordinates; the Hermitian part $\tfrac12(\psi\chi^{\dagger}+\chi\psi^{\dagger})$ is the element of $\mathbb{M}_+$ whose four-vector image is $iH$. That this map intertwines the tensor action with the conjugation action is recorded in the companion on the spinor module. What is not recorded there, and is checked here, is the tensor decomposition itself. On $S\otimes\bar{S}$ the corresponding rotation generator has eigenvalues
 $$
 -i s_a + i s_b, \qquad s_a,s_b\in\{+1,-1\},
 \qquad\text{i.e.}\qquad \{0,\,0,\,+2i,\,-2i\}.
 $$
 
-On $\mathbb{B}$ the conjugation action of the same generator is $\tilde{Q}\mapsto J_3\tilde{Q}-XJ_3$ (the two signs are opposite because $J_3^{\dagger}=-J_3$). Its eigenvalues on the basis $I,\sigma_1,\sigma_2,\sigma_3$ are $0$ on $I$ and $\sigma_3$, and $\pm2i$ on the combinations of $\sigma_1,\sigma_2$ — the same multiset $\{0,0,\pm2i\}$. The boost generator agrees as well: on $\mathbb{B}$ the action is $\tilde{Q}\mapsto K_3\tilde{Q}+XK_3$ (the two signs are equal because $K_3^{\dagger}=K_3$), with eigenvalues $\{+2,-2,0,0\}$, matching $K_3\otimes I+I\otimes K_3$ on $S\otimes\bar{S}$. Both representations are four-dimensional and irreducible, so agreement of the Cartan eigenvalues identifies them: the algebra under conjugation **is** the tensor product of the two chiralities.
+On $\mathbb{B}$ the conjugation action of the same generator is $\tilde{Q}\mapsto J_3\tilde{Q}-\tilde{Q}J_3$ (the two signs are opposite because $J_3^{\dagger}=-J_3$). Its eigenvalues on the basis $I,\sigma_1,\sigma_2,\sigma_3$ are $0$ on $I$ and $\sigma_3$, and $\pm2i$ on the combinations of $\sigma_1,\sigma_2$ — the same multiset $\{0,0,\pm2i\}$. The boost generator agrees as well: on $\mathbb{B}$ the action is $\tilde{Q}\mapsto K_3\tilde{Q}+\tilde{Q}K_3$ (the two signs are equal because $K_3^{\dagger}=K_3$), with eigenvalues $\{+2,-2,0,0\}$, matching $K_3\otimes I+I\otimes K_3$ on $S\otimes\bar{S}$. Both representations are four-dimensional and irreducible, so agreement of the Cartan eigenvalues identifies them: the algebra under conjugation **is** the tensor product of the two chiralities.
 
 This identification is also what makes the tensor product concrete physically. Restricting the four-vector representation to the rotation subgroup $SU(2)\subset SL(2,\mathbb{C})$, the tensor product of two spin-$\tfrac12$ representations decomposes by the Clebsch–Gordan rule,
 

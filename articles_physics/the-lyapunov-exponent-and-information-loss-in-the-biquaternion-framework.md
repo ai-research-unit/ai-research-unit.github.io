@@ -7,7 +7,7 @@ A Lyapunov exponent is the rate at which a dynamical system loses track of its i
 This article computes the Lyapunov exponents of the informational sector $\mathbb{M}_+$ of the biquaternion algebra, and locates the information loss of the framework in the sign of those exponents. The sector's state space is the Bloch ball, $\tilde{Ϛ} = \tfrac{1}{2}(e_t+i\vec r)$ with $|\vec r|\le1$, and the natural measure of a tangent vector is the sector's biquaternion norm: a tangent vector to the state space is a traceless element of $\mathbb{M}_+$, and its biquaternion norm is negative definite there, so $|\langle\delta\tilde{Ϛ}\rangle_{\natural}|^{1/2}$ is the length of the tangent vector. The Lyapunov exponent of a tangent vector is
 
 $$
-\lambda(v) = \lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|N\!\left(\delta\tilde{Ϛ}(t)\right)\right|}{\left|N\!\left(\delta\tilde{Ϛ}(0)\right)\right|},
+\lambda(v) = \lim_{t\to\infty}\frac{1}{2t}\log\frac{\left|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|},
 $$
 
 the factor $\tfrac{1}{2}$ being present because the biquaternion norm is quadratic.
@@ -18,7 +18,7 @@ $$
 \{0,\,-\Gamma,\,-\Gamma\},
 $$
 
-with the zero along the pointer axis and the two negative exponents in the plane transverse to it. Information is lost at the rate $\Gamma$ in each transverse direction. Because the biquaternion norm is quadratic, the scalar $|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}|$ decays at twice that rate, $\exp(-2\Gamma t)$; the Lyapunov exponent defined above carries the compensating factor $\tfrac{1}{2}$, so it is the decay rate of the length $\sqrt{|N|}$ and equals the vector exponent $-\Gamma$. The factor of two is a property of the quadratic form, not of the exponent.
+with the zero along the pointer axis and the two negative exponents in the plane transverse to it. Information is lost at the rate $\Gamma$ in each transverse direction. Because the biquaternion norm is quadratic, the scalar $|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}|$ decays at twice that rate, $\exp(-2\Gamma t)$; the Lyapunov exponent defined above carries the compensating factor $\tfrac{1}{2}$, so it is the decay rate of the length $\sqrt{\left|\langle\delta\tilde{Ϛ}\rangle_{\natural}\right|}$ and equals the vector exponent $-\Gamma$. The factor of two is a property of the quadratic form, not of the exponent.
 
 The article also states what the framework does **not** produce: positive Lyapunov exponents. A positive exponent from linear dynamics would require an expansion, and an expansion carries states out of the Bloch ball, so the linear dynamics of the sector — an isometry in the reversible class, a contraction in the irreversible one — has a non-positive spectrum. The remaining dynamics of the framework is nonlinear, and it lives on a phase space too small to host chaos. The compact coadjoint orbit of the framework is the two-sphere $|\vec S| = \text{const}$ — the Bloch sphere at the spin-$\tfrac{1}{2}$ radius — a two-dimensional symplectic manifold, and every Hamiltonian flow on a two-dimensional symplectic manifold is integrable, so its exponents vanish; for a Hamiltonian flow a positive exponent first becomes possible at four phase-space dimensions, which the material sector supplies and the informational sector does not. The information loss of the framework is therefore **contraction, not chaos**: the entropy produced in a coarse-graining is the deficit of the contracting directions, and the Kolmogorov–Sinai entropy of the framework's linear flows is zero.
 
@@ -64,7 +64,7 @@ $$
 
 This is the precise sense in which positive Lyapunov exponents are the rate of *information production* of a chaotic flow: they are the rate at which the flow generates new distinctions.
 
-**Two-dimensional Hamiltonian flows are integrable.** On a two-dimensional symplectic manifold the Hamiltonian is the only independent invariant, its level sets are curves, and the motion is periodic or quasi-periodic on them. Every Lyapunov exponent of such a flow vanishes. For a Hamiltonian flow, chaos — and with it a positive exponent — requires a phase space of dimension four or more, because the exponents pair as $\pm\lambda$ and sum to zero, so two dimensions force them all to vanish. The restriction to Hamiltonian flows matters: a dissipative flow need not pair its exponents, and three dimensions already suffice for chaos there.
+**Two-dimensional Hamiltonian flows are integrable.** On a two-dimensional symplectic manifold the Hamiltonian is the only independent invariant, its level sets are curves, and the motion is periodic or quasi-periodic on them. Every Lyapunov exponent of such a flow vanishes. For a Hamiltonian flow, chaos — and with it a positive exponent — requires a phase space of dimension four or more: in two dimensions the energy surface is one-dimensional, so the motion is periodic or quasi-periodic and every exponent vanishes. The restriction to Hamiltonian flows matters: a dissipative flow need not pair its exponents, and three dimensions already suffice for chaos there.
 
 ## Reversible Rotor Flow Is Lyapunov-Neutral
 
@@ -89,8 +89,8 @@ $$
 The biquaternion norm is invariant under this action, because the rotor is unitary and the biquaternion norm is multiplicative:
 
 $$
-N\!\left(\tilde u\,\tilde{Q}\,\tilde u^{*}\right)
-= \tilde u\,\tilde{Q}\,\tilde u^{*}\,\overline{\tilde u\,\tilde{Q}\,\tilde u^{*}}
+\langle\tilde u\,\tilde{Q}\,\tilde u^{*}\rangle_{\natural}
+= \tilde u\,\tilde{Q}\,\tilde u^{*}\,\left(\tilde u\,\tilde{Q}\,\tilde u^{*}\right)^{\natural}
 = \tilde u\,\tilde{Q}\,\tilde{Q}^{\natural}\,\tilde u^{*}
 = \langle\tilde{Q}\rangle_{\natural}\,\tilde u\tilde u^{*}
 = \langle\tilde{Q}\rangle_{\natural} .
@@ -99,7 +99,7 @@ $$
 The same computation applies to the trace pairing, $\mathrm{Tr}((\tilde u\tilde{Q}\tilde u^{*})^2) = \mathrm{Tr}(\tilde{Q}^2)$, since the conjugation is an algebra automorphism. Therefore
 
 $$
-\left|N\!\left(\delta\tilde{Ϛ}(t)\right)\right| = \left|N\!\left(\delta\tilde{Ϛ}(0)\right)\right|
+\left|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}\right| = \left|\langle\delta\tilde{Ϛ}(0)\rangle_{\natural}\right|
 \quad\text{for all } t ,
 $$
 
@@ -180,13 +180,13 @@ so the Bloch ball shrinks in volume at rate $2\Gamma$ and the state is driven on
 The tangent vector of the sector is a traceless element of $\mathbb{M}_+$. Writing a tangent displacement as $\delta\tilde{Ϛ} = \tfrac{i}{2}\,\delta\vec r$, its biquaternion norm is
 
 $$
-N\!\left(\delta\tilde{Ϛ}\right) = -\frac{1}{4}\left|\delta\vec r\right|^2 e_t ,
+\langle\delta\tilde{Ϛ}\rangle_{\natural} = -\frac{1}{4}\left|\delta\vec r\right|^2 e_t ,
 $$
 
 the identity established in the companion article *Fisher Information and the Biquaternion Norm*. Under the dephasing semigroup the transverse displacement decays, so
 
 $$
-\left|N\!\left(\delta\tilde{Ϛ}(t)\right)\right| = \frac{1}{4}\left|\delta\vec r(t)\right|^2 ,
+\left|\langle\delta\tilde{Ϛ}(t)\rangle_{\natural}\right| = \frac{1}{4}\left|\delta\vec r(t)\right|^2 ,
 $$
 
 and a transverse tangent vector has
@@ -287,7 +287,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $L(t) = \mathrm{diag}(\exp(-\Gamma t),\exp(-\Gamma t),1)$ | Dephasing semigroup |
 | $\{0,-\Gamma,-\Gamma\}$ | Dephasing Lyapunov spectrum |
 | $\sum_k\lambda_k = -2\Gamma$ | Volume contraction rate |
-| $\lambda = -\Gamma$, $|N|\propto \exp(-2\Gamma t)$ | Transverse tangent vector: length exponent $-\Gamma$, quadratic form decaying at $-2\Gamma$ |
+| $\lambda = -\Gamma$, $\left|\langle\delta\tilde{Ϛ}\rangle_{\natural}\right|\propto \exp(-2\Gamma t)$ | Transverse tangent vector: length exponent $-\Gamma$, quadratic form decaying at $-2\Gamma$ |
 | $d\mathcal{S}/dt = \Gamma(r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$ | Entropy production rate (instantaneous $r_\perp$) |
 | $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$ | Pesin's formula (standard) |
 | $|\vec S| = \text{const}$ | Coadjoint orbit (Bloch sphere); Hamiltonian flows integrable |

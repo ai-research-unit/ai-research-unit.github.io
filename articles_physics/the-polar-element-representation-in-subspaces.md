@@ -25,7 +25,7 @@ The conventions are those of *Conventions in the Biquaternion Universe*.
 
 - **The basis.** $e_t = 1$ the algebra unit and $\vec e_x,\vec e_y,\vec e_z$ the quaternion units with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, so an element is written $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with coefficients $Q_\mu \in \mathbb{C}$.
 - **The scalar imaginary.** $i$, central, with $i^2 = -1$.
-- **The norm.** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2(e_t) = I$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI$.
+- **The norm.** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2(e_t) = I$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI$; write $N=\langle\tilde Q\rangle_{\natural}$ for the norm.
 - **The subspaces.**
     - $\mathbb{C}_{\mathbb{B}}$, the centre;
     - $\mathrm{Vect}(\mathbb{B})$, the kernel of the scalar part;
@@ -116,7 +116,7 @@ In the matrix picture the criterion reads $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\
 
 **The rotor is a central sign, $\tilde q = \pm e_t$, if and only if $\tilde{Q}/\rho$ is Hermitian**, equivalently if and only if $\tilde{Q} = \pm\rho B$ for a Hermitian positive $B$ of unit norm.
 
-*Proof.* If $\tilde q = \pm e_t$ then $\tilde{Q}/\rho = \pm B$ is Hermitian. Conversely let $\tilde{Q}/\rho = H$ be Hermitian of biquaternion norm one; then $H$ is either positive definite or negative definite, so $H = B$ or $H = -B$ with $B$ Hermitian positive of biquaternion norm one, and therefore $\tilde q = e_t$ or $\tilde q = -e_t$.
+*Proof.* If $\tilde q = \pm e_t$ then $\tilde{Q}/\rho = \pm B$ is Hermitian. Conversely let $\tilde{Q}/\rho = \tilde H$ be Hermitian of biquaternion norm one; then $\tilde H$ is either positive definite or negative definite, so $\tilde H = B$ or $\tilde H = -B$ with $B$ Hermitian positive of biquaternion norm one, and therefore $\tilde q = e_t$ or $\tilde q = -e_t$.
 
 The rotor is thus the part of the element that obstructs its being a complex multiple of a Hermitian element, and the central sign $\pm e_t$ is the discrete residue of that obstruction, which is the kernel of the two-to-one cover of the Lorentz group.
 
@@ -174,7 +174,7 @@ whose argument is $2\arg z$. The biquaternion norm vanishes only at $z = 0$: the
 
 ### Which Factors Survive
 
-Both criteria apply automatically. Since $\tilde{Q}\tilde{Q}^{*} = |z|^2e_t$ is a positive scalar, the first criterion gives the trivial boost $B = e_t$, and since $\tilde{Q}/\rho = (z/\rho)e_t$ is a real multiple of the unit, the second criterion gives a rotor that is a central sign, $\tilde q = \pm e_t$. The four factors therefore collapse to one number, the phase, which is the only factor with a continuous range:
+Both criteria apply automatically. Since $\tilde{Q}\tilde{Q}^{*} = |z|^2e_t$ is a positive scalar, the first criterion gives the trivial boost $B = e_t$, and since $\tilde{Q}/\rho = (z/\rho)e_t$ is a real multiple of the unit, the second criterion gives a rotor that is a central sign, $\tilde q = \pm e_t$. The four factors therefore collapse to two numbers, the scale and the phase, which are the only factors with a continuous range:
 
 $$
 ze_t = \rho\,(\pm e_t) , \qquad \rho = \sqrt{z^2} , \qquad r = |z| , \qquad \alpha \equiv \arg z \ (\mathrm{mod}\ \pi)\ \text{taken in}\ \left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right] ,
@@ -213,7 +213,7 @@ $$
 \tilde{Q} = \vec q + i\,\vec q' , \qquad \vec q,\vec q'\in\mathbb{R}^3 , \qquad \langle\tilde{Q}\rangle_{\natural} = |\vec q|^2 - |\vec q'|^2 + 2i\,\vec q\cdot\vec q' , \qquad \operatorname{Sc}(\tilde{Q}) = 0 .
 $$
 
-The biquaternion norm is complex and indefinite, so the phase is free here exactly as it is on the centre; it vanishes on the four-dimensional complex null cone $|\vec q| = |\vec q'|$, $\vec q\cdot\vec q' = 0$, and the representation is defined on the complement of that cone. In the matrix picture the subspace is the traceless class, $\mathsf{M}_2(\tilde{Q}) = \left(w_k - iv_k\right)\sigma_k$.
+The biquaternion norm is complex and indefinite, so the phase is free here exactly as it is on the centre; the norm vanishes on the four-dimensional complex null cone $|\vec q| = |\vec q'|$, $\vec q\cdot\vec q' = 0$, and the representation is defined on the complement of that cone. In the matrix picture the subspace is the traceless class, $\mathsf{M}_2(\tilde{Q}) = \left(w_k - iv_k\right)\sigma_k$.
 
 ### Which Factors Survive
 
@@ -274,7 +274,7 @@ In the first row $\vec q\times\vec q' = \vec e_z-\vec e_y$, the boost axis is $(
 
 ### The Element and Its Biquaternion Norm
 
-Let $\tilde{Q}\in\mathbb{H}_{\mathbb{B}}$, that is $\tilde{Q}^* = \tilde{Q}$, so that $\tilde{Q} = \sum_\mu q_\mu e_\mu$ with all four coefficients real. The subspace is the image of the real quaternion algebra inside $\mathbb{B}$, of real dimension four, and its biquaternion norm is the sum of four squares,
+Let $\tilde{Q}\in\mathbb{H}_{\mathbb{B}}$, that is $\bar{\tilde Q} = \tilde{Q}$, so that $\tilde{Q} = \sum_\mu q_\mu e_\mu$ with all four coefficients real. The subspace is the image of the real quaternion algebra inside $\mathbb{B}$, of real dimension four, and its biquaternion norm is the sum of four squares,
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2 > 0 \quad (\tilde{Q}\neq0), \qquad r = |\tilde{Q}| , \qquad \alpha = 0 ,
@@ -319,7 +319,7 @@ Both rows have the trivial boost and the phase $0$, and the rotor is free: the f
 
 ### The Element and Its Biquaternion Norm
 
-Let $\tilde{Q}\in i\mathbb{H}_{\mathbb{B}}$, that is $\tilde{Q}^* = -\tilde{Q}$ and $\tilde{Q} = iq$ with $q$ a real quaternion. The subspace is the imaginary half of the coefficient split $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, of real dimension four, and its biquaternion norm is the negative of a sum of four squares,
+Let $\tilde{Q}\in i\mathbb{H}_{\mathbb{B}}$, that is $\bar{\tilde Q} = -\tilde{Q}$ and $\tilde{Q} = iq$ with $q$ a real quaternion. The subspace is the imaginary half of the coefficient split $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$, of real dimension four, and its biquaternion norm is the negative of a sum of four squares,
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -\sum_\mu q_\mu^2 < 0 \quad (\tilde{Q}\neq0), \qquad r = |q| > 0 , \qquad \alpha = \frac{\pi}{2} ,
@@ -362,10 +362,10 @@ The sector is the fixed space of Hermitian conjugation, of real dimension four; 
 
 ### Why There Are Exactly Two Branches
 
-Write the representation as $\tilde{Q} = \rho B\tilde q$ and impose Hermitian conjugation. With $\tilde q$ a real unit quaternion, $\tilde q^{*} = \bar{\tilde q} = 2q_t - \tilde q$, while $B$ and the central factor $\rho$ are fixed by ${}^{*}$, so
+Write the representation as $\tilde{Q} = \rho B\tilde q$ and impose Hermitian conjugation. With $\tilde q$ a real unit quaternion, $\tilde q^{*} = \tilde q^{\natural} = 2q_t - \tilde q$, while $B$ and the central factor $\rho$ are fixed by ${}^{*}$, so
 
 $$
-\tilde{Q}^{*} = \bar{\rho}\,B\,\bar{\tilde q} = \tilde{Q} = \rho\,B\,\tilde q \quad\Longrightarrow\quad \bar{\tilde q} = \exp(2i\alpha)\tilde q \quad\Longrightarrow\quad 2q_t = \left(1 + \exp(2i\alpha)\right)\tilde q .
+\tilde{Q}^{*} = \bar{\rho}\,B\,\tilde q^{\natural} = \tilde{Q} = \rho\,B\,\tilde q \quad\Longrightarrow\quad \tilde q^{\natural} = \exp(2i\alpha)\tilde q \quad\Longrightarrow\quad 2q_t = \left(1 + \exp(2i\alpha)\right)\tilde q .
 $$
 
 The left-hand side is a real multiple of the unit, so either $q_t = 0$, which forces $\exp(2i\alpha) = -1$, or $\tilde q = \pm e_t$, which forces $\exp(2i\alpha) = 1$ with the same sign in $q_t$ and in $\tilde q$. The two branches are therefore
@@ -406,14 +406,14 @@ $$
 \tilde{Q} = i\,a\,e_t + \vec q , \qquad a = ct\in\mathbb{R}, \quad \vec q\in\mathbb{R}^3, \quad s = |\vec q| , \qquad \langle\tilde{Q}\rangle_{\natural} = s^2 - a^2 \in\mathbb{R} .
 $$
 
-The sector is the fixed space of the anti-Hermitian conjugation $\flat$ and the $-1$ eigenspace of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $s^2-a^2$, vanishing on the light cone $s = |a|$, and the representation is defined off that cone. In the matrix picture it is $i$ times the Hermitian class, $\mathsf{M}_2(\tilde{Q}) = i\left(aI - v_k\sigma_k\right)$. The biquaternion norm is real, so the phase takes one of the two values compatible with a real biquaternion norm, and the element is anti-Hermitian, $\tilde{Q}^{*} = -\tilde{Q}$. That single condition fixes the shape of the representation.
+The sector is the anti-fixed space of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $s^2-a^2$, vanishing on the light cone $s = |a|$, and the representation is defined off that cone. In the matrix picture it is $i$ times the Hermitian class, $\mathsf{M}_2(\tilde{Q}) = i\left(aI - v_k\sigma_k\right)$. The biquaternion norm is real, so the phase takes one of the two values compatible with a real biquaternion norm, and the element is anti-Hermitian, $\tilde{Q}^{*} = -\tilde{Q}$. That single condition fixes the shape of the representation.
 
 ### Why There Are Exactly Two Branches
 
-Write the representation as $\tilde{Q} = \rho B\tilde q$ and apply the anti-Hermitian condition. With $\tilde q$ a real unit quaternion, $\tilde q^{*} = \bar{\tilde q} = 2q_t - \tilde q$, so
+Write the representation as $\tilde{Q} = \rho B\tilde q$ and apply the anti-Hermitian condition. With $\tilde q$ a real unit quaternion, $\tilde q^{*} = \tilde q^{\natural} = 2q_t - \tilde q$, so
 
 $$
-\tilde{Q}^{*} = \bar{\rho}\,B\,\bar{\tilde q} = -\tilde{Q} = -\rho\,B\,\tilde q \quad\Longrightarrow\quad \bar{\tilde q} = -\exp(2i\alpha)\tilde q \quad\Longrightarrow\quad 2q_t = \left(1 - \exp(2i\alpha)\right)\tilde q .
+\tilde{Q}^{*} = \bar{\rho}\,B\,\tilde q^{\natural} = -\tilde{Q} = -\rho\,B\,\tilde q \quad\Longrightarrow\quad \tilde q^{\natural} = -\exp(2i\alpha)\tilde q \quad\Longrightarrow\quad 2q_t = \left(1 - \exp(2i\alpha)\right)\tilde q .
 $$
 
 The left-hand side is a real multiple of the unit, so either $q_t = 0$, which forces $\exp(2i\alpha) = 1$, or $\tilde q = \pm e_t$, which forces $\exp(2i\alpha) = -1$ with the same sign in $q_t$ and in $\tilde q$. The two solutions are therefore
@@ -451,7 +451,7 @@ with $\beta = s/(ct)$; the scale is the proper length $r = c\tau = ct\sqrt{1-\be
 
 On the **timelike** branch the rotor is a central sign, so the continuous data of the four-vector are the scale and the boost alone: $1 + 3 = 4$, the dimension of the sector. The boost factor is the four-velocity in the Hermitian normalisation, which is the identification of the companion article; the phase is the constant $\pi/2$; and the rotor is the discrete sign $\operatorname{sign}(a)$. This is the precise sense in which the physics of the corpus uses two of the four factors.
 
-On the **spacelike** branch the rotor is the pure unit vector $\vec u_q$, a point of $\mathcal{A}$, and the boost is a boost about the same line: with $\tanh\varphi = m/M$ and $m/M = |a|/s < 1$, its axis is $-\operatorname{sign}(a)\vec u_q$, opposite to the direction the rotor carries when $a$ is positive. The four parameters of a spacelike displacement are therefore the scale $r$, the direction $\vec u_q$ carried by the rotor, and the remaining number $m/M$ carried by the rapidity of the boost. The direction of the displacement is a property of the rotor and not of the boost, and the boost measures how far the displacement is tilted out of the spatial slice: it is the unit, $m = 0$, exactly for a displacement in the spatial slice, $a = 0$.
+On the **spacelike** branch the rotor is the pure unit vector $\vec u_q$, a point of $\mathcal{A}$, and the boost is a boost about the same line: with $\tanh\varphi = m/M$ and $m/M = |a|/s < 1$, its axis is $-\operatorname{sign}(a)\vec u_q$, opposite to the direction the rotor carries when $a$ is positive. The four parameters of a spacelike displacement are therefore the scale $r$, the direction $\vec u_q$ carried by the rotor, and the remaining number $m/M$ carried by the rapidity of the boost. The direction of the displacement is a property of the rotor and not of the boost, and the boost measures how far the displacement is tilted out of the spatial slice: the boost is the identity, $m = 0$, exactly for a displacement in the spatial slice, $a = 0$.
 
 ### Worked Examples
 
@@ -504,7 +504,7 @@ Each row below is the count of the real dimensions of the subspace, distributed 
 | $\mathbb{M}_-$, timelike | $4$ | $1$ | $0$ (fixed $\pi/2$) | $3$ | $0$ (discrete $\pm e_t$) |
 | $\mathbb{M}_-$, spacelike | $4$ | $1$ | $0$ (fixed $0$) | $1$ (the rapidity) | $2$ (the direction) |
 
-Only the vector subspace carries the phase as a dimension of its own together with a nontrivial boost and a nontrivial rotor, and this is why it is the largest of the remarkable subspaces. On the centre only the modulus survives; on the two halves the boost is absent and the rotor absorbs everything but the scale; on the two sectors either the rotor or the boost is reduced to a single number or to a direction. No subspace carries the four factors independently, and the counting above is the exact statement of the dependencies.
+Only the vector subspace carries the phase as a dimension of its own together with a nontrivial boost and a nontrivial rotor, and this is why it is the largest of the remarkable subspaces. On the centre the scale and the phase survive, and the rotor is a discrete sign; on the two halves the boost is absent and the rotor absorbs everything but the scale; on the two sectors either the rotor or the boost is reduced to a single number or to a direction. No subspace carries the four factors independently, and the counting above is the exact statement of the dependencies.
 
 ## The Four Blocks
 

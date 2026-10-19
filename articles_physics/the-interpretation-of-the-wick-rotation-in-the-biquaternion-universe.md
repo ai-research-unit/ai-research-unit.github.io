@@ -22,7 +22,7 @@ $$
 \tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (ct')\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
-All four coefficients are **real**. The quadratic form
+Here $t'$ is the Euclidean time coordinate. All four coefficients are **real**. The quadratic form
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2
@@ -143,7 +143,7 @@ The reason the transfer is useful is that $\mathbb{H}_{\mathbb{B}}$ is better be
 | Symmetry group | $SO(4)$, compact | $SO(3, 1)$, non-compact |
 | Analytic theory | Fueter quaternionic analysis | Lorentzian Clifford analysis |
 
-The quaternion subspace is elliptic, has no zero divisors, is a division algebra, and admits a compact symmetry group. The material sector is hyperbolic, has a light cone of zero divisors, is not a division algebra, and has a non-compact symmetry group. The elliptic character of $\mathbb{H}_{\mathbb{B}}$ is what makes the transferred problem tractable: the elliptic Laplacian has a well-behaved fundamental solution, a Cauchy integral formula with a positive-definite kernel, a maximum principle, and a mean-value property, all of which are properties of elliptic operators and not of hyperbolic ones.
+The quaternion subspace is elliptic, has no zero divisors, is a division algebra, and admits a compact symmetry group. The material sector is hyperbolic, has a light cone of zero divisors, is not a division algebra, and has a non-compact symmetry group. The elliptic character of $\mathbb{H}_{\mathbb{B}}$ is what makes the transferred problem tractable: the elliptic Laplacian has a well-behaved fundamental solution, a Cauchy integral formula, a maximum principle, and a mean-value property, all of which are properties of elliptic operators and not of hyperbolic ones.
 
 The transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ therefore replaces a problem in a hyperbolic setting (with an indefinite quadratic form) by a problem in an elliptic setting (with a positive-definite quadratic form). The elliptic problem is easier: it has fewer pathologies, it has more structure, and its solutions behave better at infinity.
 
@@ -155,7 +155,7 @@ When the physics of the problem depends on this Lorentzian structure, the transf
 
 The two facts — that the transfer is useful (because $\mathbb{H}_{\mathbb{B}}$ is better behaved) and that the transfer changes the physics (because the Lorentzian structure is lost) — are two sides of the same coin. The subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved precisely because it has given up the Lorentzian structure. So the usefulness of the trick and the possibility of its failure are the same fact, seen from two sides.
 
-## A Prediction: Which Applications Transfer, Which Resist
+## A Classification: Which Applications Transfer, Which Resist
 
 The interpretation above suggests a classification of the applications of the Wick rotation by whether the physics of the problem depends on the Lorentzian structure or not.
 
@@ -178,7 +178,7 @@ The interpretation above suggests a classification of the applications of the Wi
 
 The split is not exact; some applications lie between the two lists. But the general pattern is as follows: whenever a problem is genuinely about **correlations and equilibrium**, the transfer to $\mathbb{H}_{\mathbb{B}}$ is harmless; whenever a problem is genuinely about **causality and dynamics**, the transfer destroys what the problem was about.
 
-The split is observed in practice. The successful uses of the Wick rotation (lattice computations of equilibrium quantities, finite-temperature partition functions, instanton calculus) are all in the first list. The persistent difficulties (sign problem, real-time dynamics, quantum gravity) are all in the second list. The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ predicts this pattern.
+The split is observed in practice. The successful uses of the Wick rotation (lattice computations of equilibrium quantities, finite-temperature partition functions, instanton calculus) are all in the first list. The persistent difficulties (sign problem, real-time dynamics, quantum gravity) are all in the second list. The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ accounts for this pattern.
 
 ## Status of the Reading
 
@@ -208,7 +208,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than the mat
 
 The same transfer destroys the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase. When the physics of a problem depends on this structure, the transfer is fatal, and the Wick rotation fails. The usefulness of the trick and the possibility of its failure are the same fact.
 
-The interpretation predicts a split of applications into those that transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.
+The interpretation organizes the applications into a split between those that transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.
 
 ## Summary of Notation
 

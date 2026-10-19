@@ -97,7 +97,7 @@ $$
 \tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{4}\,(i\vec e_k)\otimes(i\vec e_k)=-\tfrac{\hbar^2}{4}\,\vec e_k\otimes \vec e_k ,
 $$
 
-with no sum over $k$ on the right, because $(i\vec e_k)^2=\vec e_k^2=-e_t$ implies $(i\vec e_k)\otimes(i\vec e_k)=i^2\vec e_k\otimes \vec e_k=-\vec e_k\otimes \vec e_k$. Summing,
+with no sum over $k$ on the right, because $i^2=-1$ implies $(i\vec e_k)\otimes(i\vec e_k)=i^2\,\vec e_k\otimes \vec e_k=-\vec e_k\otimes \vec e_k$. Summing,
 
 $$
 \sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=-\frac{\hbar^2}{4}\sum_{k=1}^{3}\vec e_k\otimes \vec e_k .

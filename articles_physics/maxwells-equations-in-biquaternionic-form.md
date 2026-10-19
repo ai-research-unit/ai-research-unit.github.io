@@ -63,7 +63,7 @@ which follows from taking the divergence of the Ampère–Maxwell law and substi
 The electromagnetic field is described by a **potential biquaternion**
 
 $$
-\tilde{A} = A_0 + \vec A, \qquad A_0 = \frac{i\phi}{c}, \qquad \vec A = \vec A,
+\tilde{A} = A_0 + \vec A, \qquad A_0 = \frac{i\phi}{c},
 $$
 
 where $\phi$ is the scalar potential and $\vec A$ is the vector potential. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.

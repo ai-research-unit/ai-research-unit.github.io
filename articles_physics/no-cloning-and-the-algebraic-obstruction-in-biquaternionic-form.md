@@ -77,10 +77,10 @@ Two independent copies have an overlap that factorizes:
 
 $$
 \bigl\langle \psi\otimes\psi \,\big|\, \phi\otimes\phi \bigr\rangle
-= \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle^2 .
+= \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle = \langle\psi|\phi\rangle^2 .
 $$
 
-Equating the two evaluations gives $\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the **trace pairing of the idempotents**, which is the modulus squared of the inner product,
+Equating the two evaluations gives $\langle\psi|\phi\rangle=\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the **trace pairing of the idempotents**, which is the modulus squared of the inner product,
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
@@ -187,7 +187,7 @@ the same pairing that gives the Born rule. The no-cloning obstruction and its ap
 
 ## No-Cloning and No-Signalling
 
-There is a physical argument for the obstruction that complements the algebraic one and explains why the theorem must hold if relativity does. Suppose a universal cloner existed. Given one copy of a state drawn from a set of non-orthogonal alternatives, one could produce many copies and then measure a different observable on each copy; with enough copies the state could be identified with arbitrarily small error. Cloning would thus convert a single copy into a statistical sample, making non-orthogonal states distinguishable. But distinguishability of non-orthogonal states, combined with shared entanglement, gives faster-than-light signalling: Alice, sharing an entangled pair with Bob, could choose which of two non-orthogonal ensembles to prepare on her half, and Bob could then determine her choice from his half alone. The algebraic obstruction of this article is therefore not an accident of the framework; it is a necessary feature of any theory whose joint distributions on spacelike-separated systems are consistent, which is exactly the content of the companion articles on the correlation function and the CHSH inequality. In the framework's terms: the trace pairing of the algebra is a **relational** quantity between two subsystems, and no local operation on one subsystem alone may convert it into information about which state the other holds.
+There is a physical argument for the obstruction that complements the algebraic one and explains why the theorem must hold if relativity does. Suppose a universal cloner existed. Given one copy of a state drawn from a set of non-orthogonal alternatives, one could produce many copies and then measure a different observable on each copy; with enough copies the state could be identified with arbitrarily small error. Cloning would thus convert a single copy into a statistical sample, making non-orthogonal states distinguishable. But distinguishability of non-orthogonal states, combined with shared entanglement, would give faster-than-light signalling: Alice, sharing an entangled pair with Bob, could choose which of two non-orthogonal ensembles to prepare on her half, and Bob could then determine her choice from his half alone. The algebraic obstruction of this article is therefore not an accident of the framework; it is a necessary feature of any theory whose joint distributions on spacelike-separated systems are consistent, which is exactly the content of the companion articles on the correlation function and the CHSH inequality. In the framework's terms: the trace pairing of the algebra is a **relational** quantity between two subsystems, and no local operation on one subsystem alone may convert it into information about which state the other holds.
 
 ## Related No-Go Theorems
 
@@ -261,7 +261,7 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $\tilde{U}$ | Cloning unitary, $\tilde{U}\tilde{U}^{*} = e_t\otimes e_t$ |
 | $\Phi$ | Cloning channel, completely positive trace preserving |
 | $\Phi(\tilde{Ϛ}\otimes\tilde{Ϛ}_0) = \tilde{Ϛ}\otimes\tilde{Ϛ}$ | Cloning requirement |
-| $\mathrm{Tr}(P_\psi P_\phi) = (\mathrm{Tr}(P_\psi P_\phi))^2$ | Algebraic obstruction |
+| $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = (\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)))^2$ | Algebraic obstruction |
 | $F = \mathrm{Tr}(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}})$ | Cloning fidelity |
 | $F = 5/6$ | Bužek–Hillery optimal universal fidelity |
 | $F = 2/3$ | Measurement-and-preparation fidelity |

@@ -77,10 +77,10 @@ $$
 In the biquaternion framework, a pure spin state is an **idempotent** of the Hermitian subspace $\mathbb{M}_+$, of the form
 
 $$
-\tilde\Pi(\vec u_y) = \tfrac{1}{2}\left(e_t + i\vec u_y\right),
+\tilde\Pi(\vec u) = \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$
 
-where $\vec u_y$ is a unit pure real quaternion (a unit vector in $\mathbb{R}^3$). The spin-up state along $z$ corresponds to
+where $\vec u$ is a unit pure real quaternion (a unit vector in $\mathbb{R}^3$). The spin-up state along $z$ corresponds to
 
 $$
 \tilde\Pi_z = \tfrac{1}{2}\left(e_t + i \vec e_z\right).
@@ -224,7 +224,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
-| $\tilde\Pi(\vec u_y) = \tfrac{1}{2}(e_t + i\vec u_y)$ | Pure-state idempotent |
+| $\tilde\Pi(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Pure-state idempotent |
 | $\tilde{H} = h_t e_t + i\vec h$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace of an element of $\mathbb{M}_+$ |
 | $p_+ = \mathrm{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$ | Born rule in biquaternion form |

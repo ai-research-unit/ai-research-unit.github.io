@@ -93,7 +93,7 @@ The centre is the natural home of a complex amplitude, because it is exactly the
 
 ### The Two-Sector Decomposition
 
-The element $\tilde{A}$ decomposes into its Hermitian and anti-Hermitian parts. Since $e_t^\dagger = e_t$ and $i^{*} = -i$,
+The element $\tilde{A}$ decomposes into its Hermitian and anti-Hermitian parts. Since $e_t^{*} = e_t$ and $i^{*} = -i$,
 
 $$
 \tilde{A} = \underbrace{x\,e_t}_{\text{Hermitian}} + \underbrace{i\,\varpi\,e_t}_{\text{anti-Hermitian}} ,
@@ -206,7 +206,7 @@ The energy is therefore the **Hermitian form** of the amplitude, and it is posit
 The contrast with the **biquaternion norm** is instructive. The biquaternion norm of the central element is not the squared modulus but the complex square,
 
 $$
-\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\,\overline{\tilde{A}} = a^2\,e_t = \left(x^2 - \varpi^2\right)e_t + 2ix\varpi\,e_t ,
+\langle\tilde{A}\rangle_{\natural} = \langle\tilde{A},\tilde{A}\rangle_{\natural} = \tilde{A}\,\tilde{A}^{\natural} = a^2\,e_t = \left(x^2 - \varpi^2\right)e_t + 2ix\varpi\,e_t ,
 $$
 
 which is indefinite: it vanishes on the pair of lines $x = \pm\varpi$ and is negative for $|\varpi| > |x|$. A "energy" built from the biquaternion norm would be unbounded below on the centre, and the orbit would be a hyperbola rather than a circle. The oscillator's stability is precisely the statement that its energy is the Hermitian form and not the biquaternion norm. This is the same distinction that separates the two sectors: $\langle\cdot\rangle_{\natural}$ restricted to $\mathbb{M}_-$ has the Lorentzian signature $(3,1)$ and restricted to $\mathbb{M}_+$ has the signature $(1,3)$, while the Hermitian form $\tilde{Q}\tilde{Q}^{*}$ is positive definite on the centre.

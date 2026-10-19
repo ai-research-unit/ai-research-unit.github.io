@@ -291,7 +291,7 @@ The two effects are **reciprocal**, being the two derivatives of the single spin
 | $\vec M$ | Magnetization |
 | $\vec S = S_k\vec e_k$ | Spin angular momentum |
 | $\vec L = I\vec\omega$ | Mechanical angular momentum |
-| $I$, $I$ | Inertia tensor; its scalar value about the fixed axis |
+| $I$ | Moment of inertia about the fixed axis |
 | $\vec J = \vec S + \vec L$ | Total angular momentum |
 | $\gamma = g\,ϙ/2m$ | Gyromagnetic ratio |
 | $g$ | Gyromagnetic factor |

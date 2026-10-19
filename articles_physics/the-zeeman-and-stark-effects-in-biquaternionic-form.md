@@ -29,7 +29,7 @@ $$
 \tilde{H}_Z = -\gamma\,\vec B\cdot\tilde S = -\gamma B\,\tilde{S}(\vec u)
 = -\frac{\hbar\omega_L}{2}\,i\vec u,
 \qquad
-\tilde{S}(\vec u) = \vec u_k\tilde{S}_k = \frac{\hbar}{2}\,i\vec u,
+\tilde{S}(\vec u) = u_k\tilde{S}_k = \frac{\hbar}{2}\,i\vec u,
 $$
 
 where $\vec u = \vec B/B$ and
@@ -48,7 +48,7 @@ $$
 \tilde{H}_Z = -\frac{\hbar\omega_L}{2}\,\tilde\Pi_1(\vec u) + \frac{\hbar\omega_L}{2}\,\tilde\Pi_2(\vec u),
 $$
 
-because $\vec u_k\tilde{S}_k\tilde\Pi_{1,2}(\vec u) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{H}_Z\propto\vec u_k\tilde{S}_k$. The two eigenvalues are
+because $u_k\tilde{S}_k\tilde\Pi_{1,2}(\vec u) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{H}_Z\propto u_k\tilde{S}_k$. The two eigenvalues are
 
 $$
 E_\pm = \pm\frac{\hbar\omega_L}{2},
@@ -72,7 +72,7 @@ $$
 \tilde{H}_Z = \frac{\mu_B}{\hbar}\,B_i\, g_{ij}\tilde{S}_j,
 $$
 
-where $g_{ij}$ is the **g-tensor**, a real $3\times3$ matrix whose isotropic value is the g-factor $g_e$ of the preceding paragraph. This is still a Hermitian element of $\mathbb{M}_+$, of the form $i\vec h\cdot\mathbf{e}$ with
+where $g_{ij}$ is the **g-tensor**, a real $3\times3$ matrix whose isotropic value is the g-factor $g_e$ of the preceding paragraph. This is still a Hermitian element of $\mathbb{M}_+$, of the form $i h_j\vec e_j$ with
 
 $$
 h_j = \frac{\mu_B}{2}\,g_{ij}B_i,
@@ -86,7 +86,7 @@ Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting i
 
 ### The Selection Rule as a Commutator
 
-A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ of the companion article *Quantum Physics in Biquaternionic Form*,
+A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde H_1,\tilde H_2] = -2(\vec h_1\times\vec h_2)$ of the companion article *Quantum Physics in Biquaternionic Form*,
 
 $$
 \left[\tilde{H}_Z,\,dE\,i\vec e_x\right] = -2\left(-\frac{\hbar\omega_L}{2}\vec u\right)\times(dE\,\vec u_x)
@@ -178,7 +178,7 @@ $$
 
 which defines the polarizability tensor $\alpha_{ij} = 2\sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0}$ through $\Delta E_0 = -\tfrac12\alpha_{ij}E_iE_j$. The two-level formula $\alpha = 2d^2/\hbar\omega_0$ is the single-term version with one intermediate state. In the algebra the sum is over the spectral resolutions of the intermediate states, and the structure of the expression is the standard one: the coupling enters twice, once in the matrix element and once in the energy denominator, and the overall sign is negative because the ground state is pushed down by the admixture of the excited states.
 
-For the hydrogen ground state the sum gives the standard result $\alpha\mathfrak{a}_{\mathrm{H}} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha\mathfrak{a}_{\mathrm{H}} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*.
+For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm H} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha_{\mathrm H} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*.
 
 ### The Avoided Crossing
 
@@ -284,7 +284,7 @@ The two effects differ because a spin-1/2 carries a permanent magnetic dipole an
 | $E_\pm = \pm\sqrt{(\hbar\omega_0/2)^2+(Ed)^2}$ | Exact two-level Stark levels |
 | $\alpha = 2d^2/\hbar\omega_0$ | Static polarizability of the two-level system |
 | $\Delta E_0 = -\tfrac12\alpha E^2$ | Quadratic Stark shift |
-| $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ | Commutator of two Hermitian elements |
+| $[\tilde H_1,\tilde H_2] = -2(\vec h_1\times\vec h_2)$ | Commutator of two Hermitian elements |
 
 ## Further Reading
 

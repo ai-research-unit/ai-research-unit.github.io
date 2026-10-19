@@ -48,13 +48,13 @@ Two points of discipline are kept in view. Every displayed formula is applied to
 
 ## Problem 1: The Wave Operator and the Defining Equation
 
-**Statement.** (a) Show that with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the wave operator $\Delta + \partial^2/\partial Q_t^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde R')\tilde J(\tilde R')\,d^3y\,dt'$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.
+**Statement.** (a) Show that with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the wave operator $\Delta - \frac{1}{c^2}\partial^2/\partial t^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde R')\tilde J(\tilde R')\,d^3y\,dt'$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.
 
 **Solution.** (a) Since $\partial/\partial Q_t = \frac{1}{ic}\partial/\partial t = -\frac{i}{c}\partial/\partial t$,
 $$
-\partial^2/\partial Q_t^2 = \left(-\frac{i}{c}\partial/\partial t\right)^2 = + \partial^2/\partial Q_t^2,
+\partial^2/\partial Q_t^2 = \left(-\frac{i}{c}\partial/\partial t\right)^2 = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2},
 \qquad\text{so}\qquad
-\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2 .
+\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial t^2} .
 $$
 The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t))$, the operator has symbol
 $$
@@ -290,7 +290,7 @@ The parent and its companion are correct where they are defined, and the derivat
 
 ## Summary
 
-The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2$, has the retarded Green's function
+The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$, has the retarded Green's function
 $$
 G_{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right),
 \qquad
@@ -319,7 +319,7 @@ with all sources at the retarded time $t - R/c$; the retarded solution is automa
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ | Temporal component of the gradient |
-| $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2$ | Wave operator (d'Alembertian) |
+| $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$ | Wave operator (d'Alembertian) |
 | $\delta^{(4)}(\tilde{Q}) = \delta(t)\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Four-dimensional Dirac delta |
 | $G(\tilde{Q})$ | Green's function, $\Box G = -\delta^{(4)}$ |
 | $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ | Retarded Green's function |

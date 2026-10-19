@@ -62,7 +62,7 @@ which is the standard transformation. The second equality uses $\vec v_\parallel
 
 **(d)** If $\vec v = v\vec u_x$ then $\vec v_\perp = 0$ and (2) reduces to
 $$
-v' = \frac{v-u}{1-v_b v/c^2},
+v' = \frac{v-v_b}{1-v_b v/c^2},
 $$
 so that in rapidities $v' = c\tanh(\psi_v - \psi_b)$: **a boost subtracts its rapidity from the rapidity of the four-velocity it acts on.** This is the statement that the transformation (1) is the lab-to-moving-frame map, and it fixes the direction convention used throughout: the rotor $\tilde U_{\vec v_b}$ carries the lab to the frame moving with $+\vec v_b$, so the particle's speed is reduced by $v_b$.
 

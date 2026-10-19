@@ -11,7 +11,7 @@ $$
 S(\tilde{Ϛ}) = h\!\left(\frac{1+|\vec r|}{2}\right),
 \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p).
 $$
-The radius is fixed by the algebra's biquaternion norm, $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)$, so the spin entropy is a function of $\langle\tilde{Ϛ}\rangle_{\natural}$ alone and is therefore an **algebraic invariant**: it is the same function of the biquaternion norm for every state, and it can be written
+The radius is fixed by the algebra's biquaternion norm, $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)$, so, writing $N:=\langle\tilde{Ϛ}\rangle_{\natural}$, the spin entropy is a function of $N$ alone and is therefore an **algebraic invariant**: it is the same function of the biquaternion norm for every state, and it can be written
 $$
 S(\tilde{Ϛ}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right).
 $$
@@ -28,7 +28,7 @@ The findings are stated in advance.
 5. **Momentum uncertainty makes the entropy frame-dependent.** The boost's channel is unital, so the maximally mixed state is fixed, but a non-maximally-mixed state is dephased by the Wigner angle and its entropy rises; for a transverse spin the entropy is $h((1+\cos\alpha)/2)$ with $\alpha$ the Wigner angle.
 6. **The entropy labels the little-group orbit.** The quotient of the Bloch ball by $SU(2)$ is the interval of radii, and the entropy is a bijection from that interval onto $[0,1]$ bit; the Lorentz group acts on the orbit label only through the momentum, so the entropy of a sharp-momentum state is a genuine little-group invariant.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The state is $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$; the spin operators are $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$; the Wigner rotation is $\tilde{W}(\tilde U_{\mathrm L},\tilde V) = \tilde U_{\mathrm L,\tilde V'}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde V}^{-1}\in SU(2)$, with $\tilde U_{\mathrm L}$ the unit-norm biquaternion that implements the Lorentz transformation, $\tilde U_{\mathrm L,\tilde V}$ the standard boost carrying $\tilde V$ to rest, and $\tilde V'=\tilde U_{\mathrm L}\tilde V\tilde U_{\mathrm L}^{*}$.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\mathsf{M}_2$. The state is $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$; the spin operators are $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$; the Wigner rotation is $\tilde{W}(\tilde U_{\mathrm L},\tilde V) = \tilde U_{\mathrm L,\tilde V'}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde V}^{-1}\in SU(2)$, with $\tilde U_{\mathrm L}$ the unit-norm biquaternion that implements the Lorentz transformation, $\tilde U_{\mathrm L,\tilde V}$ the standard boost carrying $\tilde V$ to rest, and $\tilde V'=\tilde U_{\mathrm L}\tilde V\tilde U_{\mathrm L}^{*}$.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the state space, the Bloch ball, and the little group.
@@ -63,7 +63,7 @@ The biquaternion norm evaluates on a state to
 $$
 \langle\tilde{Ϛ}\rangle_{\natural} = \tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac14\bigl(1-|\vec r|^2\bigr)e_t ,
 $$
-because the scalar and vector parts contribute $\tfrac14$ and $\tfrac14\sum_k(ir_k)^2 = -\tfrac14|\vec r|^2$ respectively. Hence $|\vec r| = \sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}$ and
+because the scalar part contributes $\tfrac14$ and the vector term contributes $-\tfrac14(i\vec r)^2 = -\tfrac14|\vec r|^2$. Hence $|\vec r| = \sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}$ and
 $$
 \boxed{\,S(\tilde{Ϛ}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right)\,}
 $$
@@ -159,7 +159,7 @@ When the momentum is uncertain, the boost acts branch by branch on the spin and 
 $$
 \tilde{Ϛ}\ \longmapsto\ \sum_i w_i\,\tilde{W}_i\tilde{Ϛ}\tilde{W}_i^{*}, \qquad \tilde{W}_i = \tilde{W}(\tilde U_{\mathrm L},\tilde V_i) .
 $$
-The channel is unital — the identity is fixed, because every $\tilde{W}_i$ is unitary — so the maximally mixed state is invariant and the entropy of a state is unchanged only if the state is a fixed point of every branch rotation. In the symmetric two-branch configuration the channel is the dephasing about the Wigner axis, the transverse Bloch components are damped by $\cos\alpha$, and the entropy becomes $h((1+\cos\alpha)/2)$ for a purely transverse initial state. For a particle of speed $0.5c$ at transverse momentum,
+The channel is unital — the identity is fixed, because every $\tilde{W}_i$ is unitary — so the maximally mixed state is invariant; in the symmetric two-branch configuration below, the entropy of a state is unchanged only if the state is a fixed point of every branch rotation. In the symmetric two-branch configuration the channel is the dephasing about the Wigner axis, the transverse Bloch components are damped by $\cos\alpha$, and the entropy becomes $h((1+\cos\alpha)/2)$ for a purely transverse initial state. For a particle of speed $0.5c$ at transverse momentum,
 
 | $\psi$ | $0.5$ | $1.0$ | $2.0$ | $3.0$ | $5.0$ |
 |---|---|---|---|---|---|
@@ -170,7 +170,7 @@ The entropy rises with the rapidity and saturates, in the large-rapidity limit, 
 $$
 h\!\left(\frac{1+\sqrt{1-v^2/c^2}}{2}\right) ,
 $$
-which for $v = 0.5c$ is $h((1+0.866025)/2) = h(0.933013) = 0.354578$. Only in the ultrarelativistic limit $v\to c$ does the saturating entropy reach one bit. The entropy is therefore increased by a boost precisely when the momentum is uncertain, and the amount is a function of the Wigner angle, which is a function of the rapidity and of the angle between the boost and the momentum.
+which for $v = 0.5c$ is $h((1+0.866025)/2) = h(0.933013) = 0.354578$. Only in the ultrarelativistic limit $v\to c$ does the saturating entropy reach one bit. The entropy can therefore increase under a boost only when the momentum is uncertain, and the amount is a function of the Wigner angle, which is a function of the rapidity and of the angle between the boost and the momentum.
 
 ### The general dephasing formula
 
@@ -201,13 +201,13 @@ In every case the entropy increases, the increase is larger for a purer state an
 
 ### Massive particles
 
-For a massive particle the four-velocity is timelike and the little group is $SU(2)$; its irreducible representations are the spin representations, labelled by $s = 0,\tfrac12,1,\dots$, and the one-particle Hilbert space at fixed four-velocity is the carrier of the spin-$s$ representation. The entropy of a spin-$s$ state is a function on that carrier, invariant under the little group, and the orbit-space statement of the qubit case generalizes: the entropy labels the orbit of the state under the compact subgroup.
+For a massive particle the four-velocity is timelike and the little group is $SU(2)$; its irreducible representations are the spin representations, labelled by $s = 0,\tfrac12,1,\dots$, and the one-particle Hilbert space at fixed four-velocity is the carrier of the spin-$s$ representation. The entropy of a spin-$s$ state is a function on that carrier, invariant under the little group, and the orbit-space statement of the qubit case generalizes: the entropy is constant on the orbit of the state under the compact subgroup.
 
 Two group-theoretic facts organise the interpretation. First, the mass and the spin are the Casimir labels of the Poincaré group,
 $$
 P^2 = m^2c^2, \qquad -W^2 = m^2c^2\,s(s+1),
 $$
-with $W^\mu$ the Pauli–Lubanski vector; they label the irreducible representation, not the state. Second, the entropy is *not* a Casimir; it is a function on the representation space, constant on the little-group orbits. The pair $(m,s)$ says which representation a particle belongs to; the entropy says which orbit within it a given state occupies. The Lorentz group maps the representation to itself and the orbit to an orbit, and at sharp momentum it maps each orbit to itself, because the map is the unitary little-group action. This is the precise group-theoretic sense in which spin entropy is a frame-independent property of a momentum eigenstate.
+with $W^\mu$ the Pauli–Lubanski vector; they label the irreducible representation, not the state. Second, the entropy is *not* a Casimir; it is a function on the representation space, constant on the little-group orbits. The pair $(m,s)$ says which representation a particle belongs to; the entropy is one invariant of the orbit within it that a given state occupies. The Lorentz group maps the representation to itself and the orbit to an orbit, and at sharp momentum it maps each orbit to itself, because the map is the unitary little-group action. This is the precise group-theoretic sense in which spin entropy is a frame-independent property of a momentum eigenstate.
 
 ### Massless particles and helicity
 
@@ -215,7 +215,7 @@ For a massless particle the four-momentum is null and the little group is the tw
 
 ### The entropy of the compact subgroup
 
-The two cases can be stated together. The little group is a subgroup of the unit-norm group, and the entropy of a state is a function of the biquaternion norm, which is invariant under the **unitary** part of the group and only under it. The unitary part is $SU(2)$ for a massive particle and a phase group for a massless one; correspondingly, the spin entropy is a non-trivial function on the state space in the massive case and a trivial one in the massless case. The entropy therefore measures the size of the compact part of the little group available to the state, which is the representation-theoretic content of the statement that spin entropy is a relativistic quantity: it exists because the massive little group is non-abelian.
+The two cases can be stated together. The little group is a subgroup of the unit-norm group, and the entropy of a state is a function of the biquaternion norm, which is invariant under the **unitary** part of the group and only under it. The unitary part is $SU(2)$ for a massive particle and a phase group for a massless one; correspondingly, the spin entropy is a non-trivial function on the state space in the massive case and a trivial one in the massless case. The entropy therefore reflects the size of the compact part of the little group available to the state, which is the representation-theoretic content of the statement that spin entropy is a relativistic quantity: it is nontrivial because the massive little group is non-abelian.
 
 ## The Two Regimes of Frame Dependence
 
@@ -255,7 +255,7 @@ The entropy is invariant under the compact subgroup, because $\langle\tilde{U}\t
 
 At uncertain momentum the boost acts by the unital mixed-unitary channel $\tilde{Ϛ}\mapsto\sum_iw_i\tilde{W}_i\tilde{Ϛ}\tilde{W}_i^{*}$; the maximally mixed state is a fixed point, and a transverse spin is dephased by the Wigner angle, its entropy becoming $h((1+\cos\alpha)/2)$. For a particle of speed $0.5c$ at transverse momentum the entropy is $0.039902$, $0.112969$, $0.242196$, $0.309540$, and $0.348220$ at rapidities $0.5$, $1$, $2$, $3$, and $5$, saturating at $h((1+\sqrt{1-v^2/c^2})/2) = 0.354578$. The increase is bounded by one bit and saturates only in the ultrarelativistic limit.
 
-For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s)$, and the entropy is a function on the representation space, constant on the little-group orbits: the pair $(m,s)$ names the representation and the entropy names the orbit within it. For a massless particle the little group is $E(2)$, the internal space of a helicity eigenstate is one-dimensional, and the spin entropy is identically zero. The entropy is a relativistic quantity because the massive little group is non-abelian, and it is frame-independent exactly when the momentum is sharp.
+For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s)$, and the entropy is a function on the representation space, constant on the little-group orbits: the pair $(m,s)$ names the representation and the entropy is constant on each orbit within it. For a massless particle the little group is $E(2)$, the internal space of a helicity eigenstate is one-dimensional, and the spin entropy is identically zero. The entropy is a relativistic quantity because the massive little group is non-abelian, and it is frame-independent exactly when the momentum is sharp.
 
 ## Summary of Notation
 

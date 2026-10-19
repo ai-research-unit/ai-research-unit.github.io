@@ -45,9 +45,9 @@ The conventions are those of *Conventions in the Biquaternion Universe* as used 
 - **The biquaternion norm.** $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.
 - **The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.** The fixed space of complex conjugation, the home of the rotations, whose unit sphere is $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : \tilde q\tilde q^{\natural} = 1\}$, the group of unit real quaternions, meeting the informational sector in $\mathbb{R}e_t$ and the material sector in the pure-vector space.
 - **The informational sector $\mathbb{M}_+$.** The Hermitian subspace, the home of the boosts.
-- **The material sector $\mathbb{M}_-$.** The anti-fixed space of quaternion conjugation, with $Q_t = iq'_t$ and $Q_k = q_k$ real, the home of the four-vectors, with the interval $N = -c^2t^2+x^2+y^2+z^2$.
+- **The material sector $\mathbb{M}_-$.** The anti-fixed space of quaternion conjugation, with $Q_t = iq'_t$ and $Q_k = q_k$ real, the home of the four-vectors, with the interval $\langle\tilde Q\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2$.
 
-An element is **unitary** when it preserves the form, $\tilde{Q}\tilde{Q}^{*}=e_t$, and the unitary elements form the group $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$; the condition is narrower than norm one, the norm-one group being $\mathbb{B}^{\times}_1=\{N=e_t\}\cong SL(2,\mathbb{C})$ (*Conventions in the Biquaternion Universe*, §*The Unitary Convention*), and the rotor of a Lorentz transformation is the norm-one unitary element.
+An element is **unitary** when it preserves the form, $\tilde{Q}\tilde{Q}^{*}=e_t$, and the unitary elements form the group $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$; the condition is narrower than norm one, the norm-one group being $\mathbb{B}^{\times}_1=\{\langle\tilde Q\rangle_{\natural}=e_t\}\cong SL(2,\mathbb{C})$ (*Conventions in the Biquaternion Universe*, §*The Unitary Convention*), and the rotor of a Lorentz transformation is the norm-one unitary element.
 
 ## The Polar Word
 
@@ -83,7 +83,7 @@ The determinant column shows what each factor contributes to the determinant of 
 | $B$ | $\psi$ | $-i\vec u_{\mathrm b}$ | $+e_t$ | hyperbolic |
 | $\tilde q$ | $\tfrac{\theta}{2}$ | $\vec u_{\mathrm r}$ | $-e_t$ | trigonometric |
 
-The parabolic row carries no factor of this representation, although the algebra has nilpotents on which it is occupied. The three exponent types distribute as the table shows: the boost factor has a Hermitian root of $+e_t$ and is hyperbolic, the rotor and the central phase have roots of $-e_t$ and are trigonometric, and the scale is the degenerate hyperbolic factor, the only one written without an exponential.
+The parabolic row carries no factor of this representation, although the algebra has nilpotents on which it can be realised. The three exponent types distribute as the table shows: the boost factor has a Hermitian root of $+e_t$ and is hyperbolic, the rotor and the central phase have roots of $-e_t$ and are trigonometric, and the scale is the degenerate hyperbolic factor, the only one written without an exponential.
 
 **The two axes and the frame.** The boost factor carries the frame's velocity, and the rotor the frame's rotation. The rapidity is $\psi \in \mathbb{R}$, $\psi \ge 0$, the velocity is $\vec v \in \mathbb{R}^3$ with $\tanh\psi = \lvert\vec v\rvert/c$, and the boost axis is the unit direction $\vec u_{\mathrm b} = \vec v/\lvert\vec v\rvert \in \mathcal{A}$; the rotation angle is $\theta \in [0,2\pi]$ about the unit axis $\vec u_{\mathrm r} \in \mathcal{A}$, a pure real quaternion of norm one. Here $\mathcal{A}$ is the axis sphere, the set of unit vectors of $\mathbb{R}^3$. The physics boost rotor of the corpus is the square root of the boost factor,
 
@@ -123,7 +123,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural}\neq0 ,
 $$
 
-and the excluded elements are exactly the zero divisors, of which the null four-vector of the worked examples below is the physics instance. The condition is one complex equation, hence two real equations, $\mathrm{Re}\,N = 0$ and $\mathrm{Im}\,N = 0$, so the light cone has real codimension two in the algebra: with $\dim_{\mathbb{R}}\mathbb{B} = 8$ the cone has real dimension $6$, while the group of units and the algebra itself both have real dimension $8$. Removing the cone therefore leaves an eight-dimensional domain, the same dimension as the algebra, and every failure of the representation is the failure of invertibility on that cone. The count is that of the algebra, where the four coefficients are complex; restricted to the four-dimensional slice of physical four-vectors, whose first coefficient is $ict$ and whose last three are real, the same equation is the familiar light cone of codimension one in that slice, of real dimension three.
+and the excluded elements are exactly the zero divisors, of which the null four-vector of the worked examples below is the physics instance. The condition is one complex equation, hence two real equations, $\mathrm{Re}\,\langle\tilde Q\rangle_{\natural} = 0$ and $\mathrm{Im}\,\langle\tilde Q\rangle_{\natural} = 0$, so the light cone has real codimension two in the algebra: with $\dim_{\mathbb{R}}\mathbb{B} = 8$ the cone has real dimension $6$, while the group of units and the algebra itself both have real dimension $8$. Removing the cone therefore leaves an eight-dimensional domain, the same dimension as the algebra, and every failure of the representation is the failure of invertibility on that cone. The count is that of the algebra, where the four coefficients are complex; restricted to the four-dimensional slice of physical four-vectors, whose first coefficient is $ict$ and whose last three are real, the same equation is the familiar light cone of codimension one in that slice, of real dimension three.
 
 ### The Scale Is the Proper Length
 
@@ -145,9 +145,9 @@ $$
 r = c t\sqrt{1-\beta^2} = c\tau ,
 $$
 
-where $\tau$ is the proper time: the scale is $c$ times the proper time. For a spacelike displacement, whose interval is positive, the modulus is real and the scale is the ordinary length $\sqrt{N}$.
+where $\tau$ is the proper time: the scale is $c$ times the proper time. For a spacelike displacement, whose interval is positive, the modulus is real and the scale is the ordinary length $\sqrt{\langle\tilde Q\rangle_{\natural}}$.
 
-For the four-velocity and the four-momentum the same computation gives the standard constants. With $v^\mu = \gamma c(1,\vec\beta)$ the interval is $N = -c^2$, so the scale is $c$ itself; with $p^\mu = \gamma m c(1,\vec\beta)$ the interval is $N = -m^2c^2$, so the scale is $mc$. In each case the boost and rotation factors carry the frame, and the phase is fixed (§*The Central Phase*).
+For the four-velocity and the four-momentum the same computation gives the standard constants. With $v^\mu = \gamma c(1,\vec\beta)$ the interval is $\langle\tilde Q\rangle_{\natural} = -c^2$, so the scale is $c$ itself; with $p^\mu = \gamma m c(1,\vec\beta)$ the interval is $\langle\tilde Q\rangle_{\natural} = -m^2c^2$, so the scale is $mc$. In each case the boost and rotation factors carry the frame, and the phase is fixed (§*The Central Phase*).
 
 ### The Unit-Norm Slice Is the Lorentz Group
 
@@ -182,10 +182,10 @@ The phase factor $\exp(i\alpha)$ is central, so it commutes with every element o
 The biquaternion norm is invariant under the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ with $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$, and the modulus inherits the invariance:
 
 $$
-N\left(\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\right) = \langle\tilde U_{\mathrm L}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}N\left(\tilde U_{\mathrm L}^{*}\right) = \langle\tilde{Q}\rangle_{\natural} .
+\langle\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} .
 $$
 
-Hence $r$ and $\alpha$ are invariants of the orbit of $\tilde{Q}$ under the Lorentz group, and the phase is not a gauge artefact of the frame: two elements with different phases cannot be carried into one another by a Lorentz transformation. The phase is an invariant of the element, and it is the only one of the four factors that the algebra's own symmetry group cannot move.
+Hence $r$ and $\alpha$ are invariants of the orbit of $\tilde{Q}$ under the Lorentz group, and the phase is not a gauge artefact of the frame: two elements with different phases cannot be carried into one another by a Lorentz transformation. The phase is an invariant of the element, and it is one of the two factors — the other is the scale — that the algebra's own symmetry group cannot move.
 
 ## The Boost
 
@@ -285,7 +285,7 @@ $$
 \det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = 5+2i ,
 $$
 
-with modulus $\sqrt{29} = 5.385164807$, so $r = 2.320595787$ and $\alpha = 0.190253189$ rad; its determinant in the $4\times4$ representation is $N^2 = 21+20i$, whose square root has modulus $29$ and argument $2\alpha$, and its $4\times4$ trace is $4Q_t = 4+4i$. The boost factor is
+with modulus $\sqrt{29} = 5.385164807$, so $r = 2.320595787$ and $\alpha = 0.190253189$ rad; its determinant in the $4\times4$ representation is $\langle\tilde Q\rangle_{\natural}^2 = 21+20i$, whose square root has modulus $29$ and argument $2\alpha$, and its $4\times4$ trace is $4Q_t = 4+4i$. The boost factor is
 
 $$
 B = 1.072349609\,e_t - 0.173166789\,i\vec e_x - 0.346333577\,i\vec e_y ,
@@ -301,7 +301,7 @@ a rotation of $2.161669$ rad about $(1,2,0)/\sqrt5$. The element is a scale, a p
 
 ### A Null Four-Vector
 
-Take $\tilde{Q} = i\,e_t + \vec e_x$, a displacement on the light cone, since $\langle\tilde{Q}\rangle_{\natural} = -1+1 = 0$. The polar representation does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and the algebra's zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.
+Take $\tilde{Q} = i\,e_t + \vec e_x$, a displacement on the light cone, since $\langle\tilde{Q}\rangle_{\natural} = -1+1 = 0$. The polar representation does not exist: the modulus is zero, the element is a zero divisor, and every one of the four factors fails. The physics is the standard one: a null four-vector has no proper length, so there is no scale to extract, and on the four-vector slice the zero divisors and the light cone are the same set, as the companion articles on zero divisors and on causality state.
 
 
 ## The Order of the Factors
@@ -339,7 +339,7 @@ $$
 
 with a complex modulus in place of the corpus's scale and phase. Their trigonometric factor is the rotor $\tilde q$ of this section exactly, and their hyperbolic factor is the boost about the rotor-conjugated axis, $\tilde q^{-1}B\tilde q$, of the same rapidity and the same biquaternion norm; recomputed on their own example the two factors multiply to the corpus word, since $\tilde q\,(\tilde q^{-1}B\tilde q) = B\tilde q$. Their reversed order is therefore not the reversed physical order of this section and must not be read as an identification of $\tilde qB$ with $B\tilde q$: the hyperbolic factor they write is not $B$ but its conjugate, the conjugation being the one already displayed above, which rotates the boost axis and leaves the rapidity alone. The same element is described by the two words, once with the boost in the original frame and once with the boost in the rotated one.
 
-The non-commutativity of $B$ is a property of the algebra and not of the representation, and its infinitesimal form is in the brackets of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*: with the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$, the brackets read $[J_j,K_k] = 2\varepsilon_{jkl}K_l$ and $[K_j,K_k] = -2\varepsilon_{jkl}J_l$. The rotations and the boosts do not commute, and the boosts do not close: the bracket of two boost generators is a rotation generator, which is the Lie-algebraic origin of the rotor in the polar representation of a product of boosts. The two extremes are the ones where the order ceases to matter: two boosts along the same line commute, compose into a boost, and leave the rotor trivial, and a rotation about the axis of a boost commutes with it, so that the word is a single boost-rotation about that axis.
+The non-commutativity of $B$ with $\tilde q$ is a property of the algebra and not of the representation, and its infinitesimal form is in the brackets of the companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*: with the rotation generators $J_k = \vec e_k$ and the boost generators $K_k = i\vec e_k$, the brackets read $[J_j,K_k] = 2\varepsilon_{jkl}K_l$ and $[K_j,K_k] = -2\varepsilon_{jkl}J_l$. The rotations and the boosts do not commute, and the boosts do not close: the bracket of two boost generators is a rotation generator, which is the Lie-algebraic origin of the rotor in the polar representation of a product of boosts. The two extremes are the ones where the order ceases to matter: two boosts along the same line commute, compose into a boost, and leave the rotor trivial, and a rotation about the axis of a boost commutes with it, so that the word is a single boost-rotation about that axis.
 
 ## Physical Readings
 
@@ -375,7 +375,7 @@ The rotor is the Thomas–Wigner rotation when two boosts are composed, and it i
 | $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, $\vec u_{\mathrm b} = \vec v/|\vec v|$ | the physics boost rotor; for a four-position $B = (\tilde U_{\mathrm L}^{\natural})^2 = -(i/c)\tilde{V}$ |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$ | the four-velocity |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors; four-vectors live in $\mathbb{M}_-$ |
-| $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | a four-position, interval $N = -c^2t^2+x^2+y^2+z^2$ |
+| $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | a four-position, interval $\langle\tilde Q\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2$ |
 
 ## Further Reading
 

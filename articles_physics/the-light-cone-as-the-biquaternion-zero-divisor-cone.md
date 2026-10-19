@@ -7,10 +7,10 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ i
 The starting observation is one line long. For the material coordinate $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the biquaternion norm is
 
 $$
-\langle\tilde{R}\rangle_{\natural} = \langle\tilde{R},\tilde{R}\rangle_{\natural} = \tilde{R}\,\overline{\tilde{R}} = -c^2t^2 +x^2+y^2+z^2 ,
+\langle\tilde{R}\rangle_{\natural} = \langle\tilde{R},\tilde{R}\rangle_{\natural} = \tilde{R}\,\tilde{R}^{\natural} = -c^2t^2 +x^2+y^2+z^2 ,
 $$
 
-so the equation $\langle\tilde{Q}\rangle_{\natural} = 0$ is exactly the equation of the light cone, $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| = c|t|$. The Minkowski interval is not imported into the algebra and then made to vanish; it is the algebra's own quadratic form, and the cone is its zero set. What the zero-divisor structure adds is a classification of the points of the cone and a reason why the cone is special: it is the locus where the algebra fails to be invertible, and the failure is precisely the existence of lightlike propagation.
+so the equation $\langle\tilde{Q}\rangle_{\natural} = 0$ is exactly the equation of the light cone, $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| = c|t|$. The Minkowski interval is not imported into the algebra and then made to vanish; it is the algebra's own quadratic form, and the cone is its zero set. What the zero-divisor structure adds is a classification of the points of the cone and a reason why the cone is special: it is the locus where elements of the algebra fail to be invertible, and the failure is precisely the existence of lightlike propagation.
 
 Three threads are developed below.
 
@@ -25,7 +25,7 @@ Three threads are developed below.
 The biquaternion norm on $\mathbb{B}$ is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\overline{\tilde{Q}} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 \qquad
 \tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z ,
 $$
@@ -38,7 +38,7 @@ $$
 
 a complex cone of complex dimension three with the origin removed. Since the form is isotropic, the algebra is split by it, and the elements of $\mathcal{Z}$ are exactly the **zero divisors**: a nonzero $\tilde{Q}$ has $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ if and only if there is a nonzero $\tilde{Q}'$ with $\tilde{Q}\tilde{Q}' = 0$ (or with $\tilde{Q}'\tilde{Q} = 0$).
 
-On the **real material slice**, writing $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{R}^4$, the form becomes
+On the **real material slice**, writing $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $(t,x,y,z)\in\mathbb{R}^4$, the form becomes
 
 $$
 \langle\tilde{R}\rangle_{\natural} = (ic\,t)^2 +x^2+y^2+z^2 = -c^2t^2 +x^2+y^2+z^2 ,
@@ -54,7 +54,7 @@ $$
 \text{spacelike}: \langle\tilde{Q}\rangle_{\natural} > 0 .
 $$
 
-The vanishing set is therefore the pair of cones $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| = c|t|$, and the future cone, the past cone and the spacelike exterior are, respectively, the timelike interior of the future cone, the timelike interior of the past cone, and the exterior of both. In the $ict$ convention the minus sign in $\langle\cdot\rangle_{\natural}$ is carried by the coordinate itself: $(ic\,t)^2 = -c^2t^2$. This is the level-2 Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ appearing as the restriction of the level-1 identity form of the algebra. The cone is not put into the algebra; it is where the algebra's form degenerates.
+The vanishing set is therefore the pair of cones $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| = c|t|$, and the future timelike region, the past timelike region and the spacelike exterior are, respectively, the interior of the future cone, the interior of the past cone, and the exterior of both. In the $ict$ convention the minus sign in $\langle\cdot\rangle_{\natural}$ is carried by the coordinate itself: $(ic\,t)^2 = -c^2t^2$. This is the level-2 Minkowski form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ appearing as the restriction of the level-1 identity form of the algebra. The cone is not put into the algebra; it is where the algebra's form degenerates.
 
 ## Zero Divisors: the Criterion and the Two Families
 
@@ -125,7 +125,7 @@ $$
 \vec u_k\left(i + \vec u_k\right) \;=\; i\left(i + \vec u_k\right) \;=\; \left(i + \vec u_k\right)\vec u_k,
 $$
 
-which is the form in which it appears in the boost of a plane wave. The name, due to Baylis, records that a null element can absorb a factor matched to its own direction without changing. It is a property of the null cone alone: for a general element $e_t+\vec q$ the product with $i\vec q$ is $i\vec q+\vec q\cdot\vec q$, which equals $e_t+\vec q$ only when $\vec q\cdot\vec q=1$, that is, only when $e_t+\vec q$ is itself null.
+which is the form in which it appears in the boost of a plane wave. The name, due to Baylis, records that a null element can absorb a factor matched to its own direction without changing. It is a property of the null cone alone: for a general element $e_t+\vec q$ the product with $\vec q$ is $\vec q-\vec q\cdot\vec q$, which equals $e_t+\vec q$ only when $\vec q\cdot\vec q=-1$, that is, only when $e_t+\vec q$ is itself null.
 
 ## The Cone in the Remarkable Subspaces
 
@@ -161,7 +161,7 @@ $$
 \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta =: \Box ,
 $$
 
-because the cross terms cancel and the spatial part gives $-\sum_{\mu\in\{x,y,z\}}\partial^2/\partial Q_\mu^2$ with the correct sign from $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
+because the cross terms cancel and the spatial part gives $+\sum_{\mu\in\{x,y,z\}}\partial^2/\partial Q_\mu^2$, the minus sign in $\tilde{\nabla}^{\natural}$ combining with $\vec e_\mu^2 = -e_t$. The wave operator is thus the biquaternion norm of the gradient biquaternion, exactly as $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ is the biquaternion norm of $\tilde{Q}$. The factorization $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is available in the algebra and is not available in a scalar wave operator; it is the algebraic statement that the second-order operator is a product of first-order ones.
 
 Now let $\tilde P$ be a four-wavevector, meaning an element of $\mathbb{M}_-$ written as
 
@@ -171,7 +171,7 @@ $$
 \langle\tilde P\rangle_{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 .
 $$
 
-For a plane-wave phase $\mathsf{M}_2 = f(s)$ with $s = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the chain rule gives
+For a plane wave $\Phi = f(s)$ with $s = \mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the chain rule gives
 
 $$
 \partial/\partial Q_t\,s = \frac{-\omega}{ic} = \frac{i\omega}{c} = K_0,
@@ -198,16 +198,16 @@ $$
 
 A four-wavevector supports a dispersionless wave precisely when it is null, and the null condition is the zero-divisor condition: $\tilde P\in\mathcal{Z}$. The wave travels at the speed $c$ because $\langle\tilde P\rangle_{\natural} = 0$ reads $\omega = c|\vec k|$, and it is the biquaternion norm of the wavevector, not a separate postulate, that fixes $c$ as the propagation speed. Equivalently, the lightlike $\tilde P = i(\omega/c)e_t + \vec k$ with $\omega = c|\vec k|$ has the form $i(\omega/c)(e_t - i\vec u_k) = 2i(\omega/c)\tilde\Pi(-\vec u_k)$, an idempotent multiple, so the null wavevectors are exactly the non-pure zero divisors of the material sector, in parallel with the null positions of the previous section.
 
-
+A superposition of three such modes checks the cancellation explicitly. Let
 $$
-\mathsf{M}_2(\tilde{Q}) = \exp(is_1) + \tfrac12 \exp(is_2) + \tfrac13 \exp(is_3),
+\Phi(\tilde{Q}) = \exp(is_1) + \tfrac12 \exp(is_2) + \tfrac13 \exp(is_3),
 \qquad
 \vec k_1 = (1,0,0),\quad \vec k_2 = (0,1,0),\quad \vec k_3 = (0.6,0.8,0),
 $$
 
-with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde P_i\rangle_{\natural} = 0$. Evaluating $\Box\mathsf{M}_2 = \partial^2/\partial Q_t^2\mathsf{M}_2 + \Delta\mathsf{M}_2$ numerically at a generic event gives $|\Box\Phi| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
+with $\omega_i = c|\vec k_i|$ and $c = 1$, so that each $\langle\tilde P_i\rangle_{\natural} = 0$. Evaluating $\Box\Phi = \partial^2/\partial Q_t^2\Phi + \Delta\Phi$ numerically at a generic event gives $|\Box\Phi| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
 
-The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}\mathsf{M}_2) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
+The factorization has a second face. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ and the two factors commute, the wave equation is also $\tilde{\nabla}(\tilde{\nabla}^{\natural}\Phi) = 0$, and the cone is the set of directions in which the first-order operator $\tilde{\nabla}^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
 
 ## Invariance of the Cone
 
@@ -250,7 +250,7 @@ $$
 \tilde{Q}\tilde{Q}^{-1} = \frac{\tilde{Q}\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} = e_t ,
 $$
 
-and the corresponding right inverse is the same expression. Off the cone the biquaternion norm is a nonzero complex number, the inverse exists, and the element generates a two-sided translation of the algebra. On the cone the inverse does not exist, and the failure is not a limit that can be repaired: $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ makes every candidate inverse of the form $\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ undefined, and the existence of a nonzero annihilator is exactly the statement that multiplication by $\tilde{Q}$ has a nontrivial kernel.
+and the corresponding right inverse is the same expression. Off the cone the biquaternion norm is a nonzero complex number, the inverse exists, and the element is a unit that generates the whole algebra as a two-sided ideal. On the cone the inverse does not exist, and the failure is not a limit that can be repaired: $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ makes every candidate inverse of the form $\tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ undefined, and the existence of a nonzero annihilator is exactly the statement that multiplication by $\tilde{Q}$ has a nontrivial kernel.
 
 The **physical interpretation** of this algebraic boundary is the content of the preceding sections. A massive particle has $\langle\tilde{P}\rangle_{\natural} = -m^2c^2 \neq 0$, so its momentum is invertible and its worldline lies in the interior of the cone; a massless particle has $\langle\tilde{P}\rangle_{\natural} = 0$, so its momentum is a zero divisor and lies on the boundary. A timelike worldline can be continuously deformed into a lightlike one only at the cost of sending $m\to 0$, where the invertibility of the momentum is lost. The cone is therefore not merely the set of paths that light follows; it is the locus where the algebra's multiplication loses invertibility, and the two statements are the same statement in this framework.
 
@@ -296,7 +296,7 @@ so $\mathcal{Z}$ meets the material sector exactly in the light cone $|x\,\vec e
 
 The cone is also the locus of propagation. Because $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P$ satisfies $\Box f(\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \langle\tilde P\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P\rangle_{\natural} = 0$, which is $\omega = c|\vec k|$ and the zero-divisor condition on $\tilde P$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
-The light cone is the set on which the biquaternion algebra ceases to be invertible; the algebra's failure of division is the algebraic form of the existence of lightlike propagation.
+The light cone is the set on which elements of the biquaternion algebra cease to be invertible; the algebra's failure of division is the algebraic form of the existence of lightlike propagation.
 
 ## Summary of Notation
 

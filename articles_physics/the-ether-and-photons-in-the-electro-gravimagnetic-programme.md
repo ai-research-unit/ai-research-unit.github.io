@@ -48,8 +48,8 @@ the bigradient of the field.
 
 One algebraic remark fixes what the object is. The classical biquaternion form of Maxwell's equations
 requires the scalar part of the field biquaternion to vanish, and that constraint is what makes the
-complex three-vector $-i\tilde F$ the whole of the field. The paper's own statement of
-what its EGM field is: the restriction is **dropped** — the scalar part returns, and the paper
+complex three-vector $-i\tilde F$ the whole of the field. In the paper's own statement of
+what its EGM field is, the restriction is **dropped** — the scalar part returns, and the paper
 names it the density of the ether. That is the whole of the extension, and it is the cleanest
 statement in the programme of what the programme is; the object is the one the companion article
 already records. The consistency check the paper offers is that at $\alpha = 0$ the energy–momentum

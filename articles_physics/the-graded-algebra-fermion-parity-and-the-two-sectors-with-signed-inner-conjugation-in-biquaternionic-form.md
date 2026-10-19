@@ -21,7 +21,7 @@ $$
 \text{odd}\cdot\text{odd}=\text{even},
 $$
 
-that is, the parity of a product is the sum of the parities. The generators $\gamma^\mu$ are odd; the bivectors $\gamma^\mu\gamma^\nu$ and the volume element are even; the square $(\gamma^\mu)^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: **a product of an odd number of fermionic objects is fermionic, a product of an even number is bosonic.** In particular two fermionic steps are bosonic, which is the statement of the next section but one.
+that is, the parity of a product is the sum of the parities. The generators $\gamma^\mu$ are odd; the bivectors $\gamma^\mu\gamma^\nu$ and the volume element are even; the square $(\gamma^\mu)^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: **a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.** In particular two fermionic steps are bosonic, which is the statement of the next section but one.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a Clifford algebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector. The fermionic sector is the other graded component, and the rest of this article says what it contributes.
 
@@ -68,7 +68,7 @@ and if $x$ and $z$ are both odd then $xz$ is even and the composite is the **ord
 | odd | even | odd | signed, $-\mathrm{Ad}_{xz}$ |
 | odd | odd | even | ordinary, $\mathrm{Ad}_{xz}$ |
 
-**Physical interpretation: the parity word of an isometry.** An odd element is a product of an odd number of vectors and acts by an isometry of determinant $-1$; an even element acts by one of determinant $+1$; this is the theorem of the odd and even versors of *Biquaternion Versors and the Orthogonal Group*. The table above is therefore the algebra behind the reflection count: **two reflections compose to a rotation**, and the composite is carried by an element of the biquaternion algebra, a bosonic element. The element $xz$ of two odd vectors is a bivector, that is, an element of the even slot, and the difference between the two conjugations has disappeared in the product. The parity of the number of reflections is the $\mathbb{Z}/2$ that separates $O(1,3)$ from $SO(1,3)$, and the same $\mathbb{Z}/2$ is the quotient $\mathrm{Pin}/\mathrm{Spin}$ of the pin and spin groups of the maths corpus.
+**Physical interpretation: the parity word of an isometry.** An odd element is a product of an odd number of vectors and acts by an isometry of determinant $-1$; an even element acts by one of determinant $+1$; this is the theorem of the odd and even versors of *Biquaternion Versors and the Orthogonal Group*. The table above is therefore the algebra behind the reflection count: **two reflections compose to a rotation**, and the composite is carried by an element of the biquaternion algebra, a bosonic element. The element $xz$ of two odd vectors is even, that is, an element of the even slot, and the difference between the two conjugations has disappeared in the product. The parity of the number of reflections is the $\mathbb{Z}/2$ that separates $O(1,3)$ from $SO(1,3)$, and the same $\mathbb{Z}/2$ is the quotient $\mathrm{Pin}/\mathrm{Spin}$ of the pin and spin groups of the maths corpus.
 
 **Corollary (the square of an odd step is bosonic).** For odd $x$ one has $x^2$ even and $(\mathrm{Ad}^{\alpha}_x)^2=\mathrm{Ad}_{x^2}$; for a generator this reads $(\mathrm{Ad}^{\alpha}_{\gamma^\mu})^2=\mathrm{Ad}_{(\gamma^\mu)^2}$, and $(\gamma^\mu)^2=\pm1$ is a scalar, so the square of the signed conjugation by a generator is the identity.
 
@@ -78,7 +78,7 @@ and if $x$ and $z$ are both odd then $xz$ is even and the composite is the **ord
 
 **Proof.** Odd $\times$ odd is even by the grading table; for the second statement, an odd $y$ is $y=\gamma(\gamma^{-1}y)$ and $\gamma^{-1}y$ is even.
 
-**Remark (why the two copies are not independent).** The two slots are isomorphic as modules over the even part but are not two subalgebras, and the multiplication between them is the graded multiplication. Two independent copies $A,B\cong\mathbb{B}$ would have no rule for the product of two elements of $B$; the rule odd $\times$ odd $=$ even is exactly what is lost, and with it the reflection, the parity and the twist. The consistent object is the single graded algebra, and the framework's parity is the grading of that one algebra.
+**Remark (why the two copies are not independent).** The two slots are isomorphic as modules over the even part but are not two subalgebras, and the multiplication between them is the graded multiplication. Two independent copies of $\mathbb{B}$ would have no rule for the product of two elements of the odd copy; the rule odd $\times$ odd $=$ even is exactly what is lost, and with it the reflection, the parity and the twist. The consistent object is the single graded algebra, and the framework's parity is the grading of that one algebra.
 
 **Corollary (the algebra's own elements do not contain a reflection).** Every non-isotropic vector can be rescaled to a vector of square $\pm1$, and such a vector is odd, hence not an element of $\mathbb{B}$ — the corollary recorded by *Biquaternion Versors and the Orthogonal Group*. The reflection is therefore not in the algebra's even slot; it acts on the algebra through the signed conjugation by an element of the odd slot, which is a Clifford element and not a biquaternion. This is the same fact as the table of the previous section: reflections are the odd steps, rotations the even products of two of them.
 
@@ -90,13 +90,13 @@ Several distinct $\mathbb{Z}/2$'s coexist in the framework, and the parity of th
 |---|---|---|
 | Clifford parity (this article) | $\mathrm{Cl}_{1,3}=\mathrm{Cl}^0\oplus\mathrm{Cl}^1$, bosonic/fermionic | yes, of the ambient algebra only |
 | chirality $L/R$ | the two minimal left ideals of $\mathbb{B}$, the operator $\gamma^5$ | a $\mathbb{Z}/2$ of the module structure |
-| sector splitting $\mathbb{M}_+\oplus\mathbb{M}_-$ | the Hermitian dagger, informational/material | **no**; it grades the symmetrized product only |
+| sector splitting $\mathbb{M}_+\oplus\mathbb{M}_-$ | Hermitian conjugation, informational/material | **no**; it grades the symmetrized product only |
 | frame grading $\beta$ | large/small components, Foldy–Wouthuysen | no; a frame-dependent split |
 | number grading $N$ | the Fock space by total particle number | a grading of the state space |
 
 The first row is the grading of this article; the second is the grading the supersymmetry article uses, and *Supersymmetric Quantum Physics in the Biquaternion Framework* records that the chirality grading must not be conflated with the frame grading. The third row is explicitly **not** an algebra grading, because the product of two Hermitian elements need not be Hermitian; the counterexample $(i\vec e_x)(i\vec e_y)=-\vec e_z$ is the one recorded in the three-gradings section of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The fifth is a grading of the state space and never of the algebra.
 
-**What the grading does not supply.** The parity of a many-mode field is a product over the modes, $\Gamma(-I)=(-1)^{N}=\prod_{\text{modes}}i\vec e_z^{(\text{mode})}$, and the product over modes is not an element of $\mathbb{B}$: the parity of the field is external to the algebra, which is the open item recorded by *The Fermionic Fock Space in Biquaternionic Form*. For one mode, $(-1)^F=i\vec e_z$ is an element of the algebra and is even, as the grading requires of a parity operator: the operator that measures the fermion parity is itself bosonic.
+**What the grading does not supply.** The parity of a many-mode field is a product over the modes, $\Gamma(-I)=(-1)^{N}=\prod_{\text{modes}}i\vec e_z^{(\text{mode})}$, with $\Gamma$ the Fock-space representation of the parity element, and the product over modes is not an element of $\mathbb{B}$: the parity of the field is external to the algebra, which is the open item recorded by *The Fermionic Fock Space in Biquaternionic Form*. For one mode, $(-1)^F=i\vec e_z$ is an element of the algebra and is even, as the grading requires of a parity operator: the operator that measures the fermion parity is itself bosonic.
 
 ## Worked Cases
 
@@ -132,7 +132,7 @@ $$
 \mathrm{Ad}^{\alpha}_{\gamma^0}\circ\mathrm{Ad}^{\alpha}_{\gamma^0}=\mathrm{Ad}^{\alpha}_{(\gamma^0)^2}=\mathrm{Ad}_{(\gamma^0)^2}=\mathrm{id},
 $$
 
-the identity on the ambient algebra. The reflection in a timelike direction therefore has order two as a conjugation but is not an involution of the signed kind: its square has forgotten the twist, exactly as the parity table says.
+the identity on the ambient algebra. The reflection in a timelike direction therefore squares to the identity: its square has forgotten the twist, exactly as the parity table says.
 
 ## Summary
 
@@ -140,7 +140,7 @@ The ambient Clifford algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathr
 
 The twist $\alpha$ of the signed inner conjugation is a conjugation: by the volume element $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$, equivalently by the central scalar imaginary $i=-\Omega$, one has $\alpha(x)=\Omega x\Omega^{-1}=(-1)^{\lvert x\rvert}x$. The signed inner conjugation is therefore the ordinary conjugation with a chirality factor inserted on the left, and the factor is invisible on the bosonic sector and is the minus sign on the fermionic one. Two odd steps compose to an even one: $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$ with $xz$ even whenever $x$ and $z$ are odd, so the composite of two signed conjugations by fermionic elements is an ordinary conjugation by a bosonic element. Physically this is the reflection count: two reflections compose to a rotation, the composite element is a bivector and hence an element of the biquaternion algebra, and the parity of the reflection word is the $\mathbb{Z}/2$ behind $\mathrm{Pin}/\mathrm{Spin}$ and the split of $O(1,3)$ from $SO(1,3)$.
 
-The grading is the parity of the theory, and it is one of several $\mathbb{Z}/2$'s in the framework: the chirality $L/R$ grading of the supersymmetry article, the sector splitting by the dagger, which is not an algebra grading, the frame grading $\beta$, and the number grading of the Fock space. The parity operator is itself bosonic, $(-1)^F=i\vec e_z$ for one mode, and for the field it is a product over modes and therefore external to the algebra.
+The grading is the parity of the theory, and it is one of several $\mathbb{Z}/2$'s in the framework: the chirality $L/R$ grading of the supersymmetry article, the sector splitting by Hermitian conjugation, which is not an algebra grading, the frame grading $\beta$, and the number grading of the Fock space. The parity operator is itself bosonic, $(-1)^F=i\vec e_z$ for one mode, and for the field it is a product over modes and therefore external to the algebra.
 
 ## Summary of Notation
 
@@ -153,7 +153,7 @@ The grading is the parity of the theory, and it is one of several $\mathbb{Z}/2$
 | $\alpha(x)=\Omega x\Omega^{-1}=(-1)^{\lvert x\rvert}x$ | The twist as a conjugation by the pseudoscalar |
 | $i=-\Omega$ | The dictionary; the central imaginary, conjugation by it is the twist |
 | $\gamma^5=i\Omega$, $(\gamma^5)^2=+1$ | The chirality operator, the involution interpretation of the same element |
-| $\mathrm{Ad}^{\alpha}_x=\alpha(x)\,(\ )\,x^{-1}$ | Signed inner conjugation, conjugation with a chirality factor on the left |
+| $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}$ | Signed inner conjugation, conjugation with a chirality factor on the left |
 | $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$ | Composition; ordinary composite for two odd factors |
 | $\mathrm{Ad}^{\alpha}_{\gamma^1}\mathrm{Ad}^{\alpha}_{\gamma^2}=\mathrm{Ad}_{\vec e_z}$ | Two reflections give a rotation by a bosonic element |
 | $\mathrm{Cl}^1=\mathbb{B}\gamma$ | The odd slot as a coset; not a subalgebra |

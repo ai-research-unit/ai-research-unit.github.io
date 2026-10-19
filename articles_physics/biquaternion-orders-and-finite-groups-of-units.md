@@ -6,13 +6,13 @@ The biquaternion algebra carries integral structures, and the groups of units of
 
 This article is the integral and finite-group entry of the Topology group. The unit criterion is the biquaternion norm, which is *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*, and the topology of the group of units is *The Biquaternion Unit Group as a Topological Group*. Those results are cited, not re-derived, and the present article owns the orders inside $\mathbb{B}$, their finite unit groups as abstract groups, the figures those groups determine in the real sector, and the infinite unit group of the complex order. The quotient $Sp(1)/\{\pm e_t\}\cong SO(3)$, the rotor, the twofold cover and the rotation $\rho_v(\tilde Q_1)=-v\tilde Q_1v^{-1}$ are *Biquaternion Rotations and Lorentz Transformations*, cited.
 
-**Conventions. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and units $\vec e_k^2=-e_t$; the real slice is $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, and the material sector is $\mathbb{M}_-$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and units $\vec e_k^2=-e_t$; the real slice is $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, and the material sector is $\mathbb{M}_-$.
 
 ## The Quaternion Orders
 
-**Definition. A subset $\Lambda\subseteq\mathbb{H}$ is an **order** if it is a subring and a free abelian group of rank four whose $\mathbb{Q}$-span is $\mathbb{H}$; equivalently, it is a lattice that is also closed under multiplication and contains $e_t$.
+**Definition.** A subset $\Lambda\subseteq\mathbb{H}$ is an **order** if it is a subring and a free abelian group of rank four whose $\mathbb{Q}$-span is $\mathbb{H}$; equivalently, it is a lattice that is also closed under multiplication and contains $e_t$.
 
-**Definition. The **Lipschitz order** is
+**Definition.** The **Lipschitz order** is
 $$
 \mathcal{L}=\mathbb{Z}e_t\oplus\mathbb{Z}\vec e_x\oplus\mathbb{Z}\vec e_y\oplus\mathbb{Z}\vec e_z,
 $$
@@ -21,17 +21,17 @@ $$
 \mathcal{L}'=\mathcal{L}\oplus\mathbb{Z}\omega .
 $$
 
-**Theorem. The Hurwitz order contains the Lipschitz order with index two, and it is a maximal order of $\mathbb{H}$; the Lipschitz order is an order but is not maximal.
+**Theorem.** The Hurwitz order contains the Lipschitz order with index two, and it is a maximal order of $\mathbb{H}$; the Lipschitz order is an order but is not maximal.
 
 *Proof. The change of basis from $(e_t,\vec e_x,\vec e_y,\vec e_z)$ to $(\omega,\vec e_x,\vec e_y,\vec e_z)$ has determinant $\tfrac12$, so the index is $|\det|^{-1}=2$; equivalently $\mathcal{L}'/\mathcal{L}\cong\mathbb{Z}/2$, of prime order. Maximality of $\mathcal{L}'$ is the classical statement that the Hurwitz order is a maximal order in the rational quaternion algebra, and the half-integral element of $\mathcal{L}'\setminus\mathcal{L}$ witnesses that $\mathcal{L}$ is not maximal.
 
-**Remark. The orders are orders in the *real* quaternion algebra, inside the quaternion subspace of $\mathbb{B}$. The biquaternion algebra contains them and their complexification, and it is the complexification that changes the nature of the unit group, below.
+**Remark.** The orders are orders in the *real* quaternion algebra, inside the quaternion subspace of $\mathbb{B}$. The biquaternion algebra contains them and their complexification, and it is the complexification that changes the nature of the unit group, below.
 
-**Physical interpretation. The two orders are the two lattices the real sector admits, and they are the two the physics of the crystalline sector uses. Their relation is the relation between the two ways of assigning half-integer coordinates to a site, and the element $\omega$ is the half-integral shift. The lattices lie in the real sector $\mathbb{H}_{\mathbb{B}}$, the slice on which the material time $ict$ vanishes.
+**Physical interpretation.** The two orders are the two lattices the real sector admits, and they are the two the physics of the crystalline sector uses. Their relation is the relation between the two ways of assigning half-integer coordinates to a site, and the element $\omega$ is the half-integral shift. The lattices lie in the real sector $\mathbb{H}_{\mathbb{B}}$, the slice on which the material time $ict$ vanishes.
 
 ## The Groups of Units
 
-**Theorem. The group of units of the Lipschitz order is the eight-element quaternion group,
+**Theorem.** The group of units of the Lipschitz order is the eight-element quaternion group,
 $$
 \mathcal{L}^{\times}\cong Q_8=\{\pm e_t,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z\},
 $$
@@ -40,11 +40,11 @@ $$
 (\mathcal{L}')^{\times}\cong 2T=\{\pm e_t,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z,\tfrac12(\pm e_t\pm \vec e_x\pm \vec e_y\pm \vec e_z)\}.
 $$
 
-**Proof. On real quaternion coordinates the norm is $\langle\tilde q\rangle_{\natural}=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ with $\tilde q^{\natural}$ the quaternion conjugate, and $\tilde q^{\natural}$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $\langle\tilde q\rangle_{\natural}=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_t\pm \vec e_x\pm \vec e_y\pm \vec e_z)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
+**Proof.** On real quaternion coordinates the norm is $\langle\tilde q\rangle_{\natural}=\sum_\mu q_\mu^2\geq0$, an integer for $\tilde q$ in either order; the inverse is $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ with $\tilde q^{\natural}$ the quaternion conjugate, and $\tilde q^{\natural}$ lies in the order whenever $\tilde q$ does, so $\tilde q$ is a unit exactly when $\langle\tilde q\rangle_{\natural}=1$. The norm-one elements with integer coordinates are the eight signed units $\pm e_\mu$, and with half-integer coordinates they are those together with the sixteen elements $\tfrac12(\pm e_t\pm \vec e_x\pm \vec e_y\pm \vec e_z)$, of norm one. The resulting groups are closed under multiplication, have the stated orders, and are the quaternion group and the binary tetrahedral group respectively.
 
-**Remark (the two indices). The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.
+**Remark (the two indices).** The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.
 
-**Physical interpretation. The finite unit groups are the **spin point groups** the material sector admits: they are the double covers of the crystallographic point groups, so the quaternion group $Q_8$, the double cover of the four-group, is the smallest non-abelian one, and $2T$ is the next. They are the finite groups of symmetry of a discrete configuration of the material sector, and because they lie in the definite real slice no null direction enters them.
+**Physical interpretation.** The finite unit groups are the **spin point groups** the material sector admits: they are the double covers of the crystallographic point groups, so the quaternion group $Q_8$, the double cover of the four-group, is the smallest non-abelian one, and $2T$ is the next. They are the finite groups of symmetry of a discrete configuration of the material sector, and because they lie in the definite real slice no null direction enters them.
 
 ### The Elements of Order Six
 
@@ -64,7 +64,7 @@ Q^3=Q\,Q^2=-QQ^{\natural}=-e_t,\qquad Q^6=e_t ,
 $$
 so $Q$ has order six and generates a cyclic subgroup $\langle Q\rangle\cong C_6$ of the unit group.
 
-**Remark. The identity $Q^2=-Q^{\natural}$ is a property of the half-integral units and not of this example alone, and the sign of the real part decides the order. For a half-integral unit
+**Remark.** The identity $Q^2=-Q^{\natural}$ is a property of the half-integral units and not of this example alone, and the sign of the real part decides the order. For a half-integral unit
 $$
 Q=\tfrac12(s_0e_t+s_1\vec e_x+s_2\vec e_y+s_3\vec e_z),\qquad s_\mu=\pm1,
 $$
@@ -77,7 +77,7 @@ the real part is $\tfrac12s_0$, so $Q^2=-Q^{\natural}$ when $s_0=+1$, which give
 
 The eight elements of order six form four cyclic subgroups of order six, and their squares are the eight elements of order three, so the unit group has four subgroups of order three and four of order six, each subgroup of order three lying in exactly one of order six. None of these subgroups lies in the Lipschitz units, whose element orders are $1$, $2$ and $4$.
 
-**Physical interpretation. The order of a unit is the order of the rotation it generates, and the twelve rotations the twenty-four units define split as the identity, three rotations by $\pi$ and eight rotations by $120^\circ$. The sixteen half-integral units, of orders three and six, are exactly those above the eight rotations by $120^\circ$, and no Lipschitz unit is among them: the Lipschitz units give only the identity and the three rotations by $\pi$. The orders missing from the Lipschitz group are therefore exactly the rotations missing from it, which is the discrete face of the statement that the half-integral coordinates are what the Hurwitz order adds.
+**Physical interpretation.** The order of a unit is the order of the rotation it generates, and the twelve rotations the twenty-four units define split as the identity, three rotations by $\pi$ and eight rotations by $120^\circ$. The sixteen half-integral units, of orders three and six, are exactly those above the eight rotations by $120^\circ$, and no Lipschitz unit is among them: the Lipschitz units give only the identity and the three rotations by $\pi$. The orders missing from the Lipschitz group are therefore exactly the rotations missing from it, which is the discrete face of the statement that the half-integral coordinates are what the Hurwitz order adds.
 
 ## The Finite Subgroups of the Unit Sphere
 
@@ -87,33 +87,33 @@ Sp(1)/\{\pm e_t\}\cong SO(3)
 $$
 is the rotation group of Euclidean three-space (*Biquaternion Rotations and Lorentz Transformations*). The cover being twofold, a finite rotation group is the one that preserves a figure, so the figures classify the finite rotation groups first.
 
-**Physical interpretation. The unit sphere is the group of the spatial rotations of the material sector, and the twofold cover is the same doubling that the rotor of *Biquaternion Rotations and Lorentz Transformations* carries: a full turn of the figure is a half-turn of the quaternion. This is why the discrete symmetries of a material configuration are read on $Sp(1)$ and not on $SO(3)$: the extra sign is what a spinor carries and a position does not.
+**Physical interpretation.** The unit sphere is the group of the spatial rotations of the material sector, and the twofold cover is the same doubling that the rotor of *Biquaternion Rotations and Lorentz Transformations* carries: a full turn of the figure is a half-turn of the quaternion. This is why the discrete symmetries of a material configuration are read on $Sp(1)$ and not on $SO(3)$: the extra sign is what a spinor carries and a position does not.
 
-**Theorem. The finite subgroups of $SO(3)$ are the rotation groups of the plane and the three Platonic figures: the cyclic groups, the rotation groups of a regular pyramid; the dihedral groups, the rotation groups of a regular prism; and the three polyhedral groups
+**Theorem.** The finite subgroups of $SO(3)$ are the rotation groups of the plane and the three Platonic figures: the cyclic groups, the rotation groups of a regular pyramid; the dihedral groups, the rotation groups of a regular prism; and the three polyhedral groups
 $$
 T\ (12),\qquad O\ (24),\qquad I\ (60),
 $$
 the rotation groups of the tetrahedron, the octahedron and the icosahedron.
 
-**Theorem. The finite subgroups of the unit quaternions $Sp(1)=S^3$ are the twofold preimages of these: the cyclic groups, the **binary dihedral** groups, and the three binary polyhedral groups
+**Theorem.** The finite subgroups of the unit quaternions $Sp(1)=S^3$ are the twofold preimages of these: the cyclic groups, the **binary dihedral** groups, and the three binary polyhedral groups
 $$
 2T\ (24),\qquad 2O\ (48),\qquad 2I\ (120),
 $$
 the binary tetrahedral, octahedral and icosahedral groups.
 
-**Proof. Let $\Gamma\subset Sp(1)$ be finite. Its image under the quotient is a finite subgroup $\bar\Gamma\subset SO(3)$, and the cover being twofold, $|\Gamma|=2|\bar\Gamma|$; conversely the preimage of a finite subgroup of $SO(3)$ is finite, of twice the order. The preimage of a cyclic group of order $n$ is cyclic of order $2n$, since the preimage of a cyclic group is cyclic; the preimage of a dihedral group of order $2n$ is a binary dihedral group of order $4n$; and the preimages of the three polyhedral groups of orders twelve, twenty-four and sixty are $2T$, $2O$ and $2I$, of orders twenty-four, forty-eight and one hundred twenty.
+**Proof.** Let $\Gamma\subset Sp(1)$ be finite. Its image under the quotient is a finite subgroup $\bar\Gamma\subset SO(3)$, and the cover being twofold, $|\Gamma|=2|\bar\Gamma|$; conversely the preimage of a finite subgroup of $SO(3)$ is finite, of twice the order. The preimage of a cyclic group of order $n$ is cyclic of order $2n$, since the preimage of a cyclic group is cyclic; the preimage of a dihedral group of order $2n$ is a binary dihedral group of order $4n$; and the preimages of the three polyhedral groups of orders twelve, twenty-four and sixty are $2T$, $2O$ and $2I$, of orders twenty-four, forty-eight and one hundred twenty.
 
-**Physical interpretation. The binary polyhedral groups are the **spin point groups**: they are the double covers of the crystallographic point groups, and the doubling is the spin double cover, so a finite unit group is a group of spins and not only of positions. The orders $24$, $48$, $120$ are the orders of the binary tetrahedral, octahedral and icosahedral groups, and the appearance of the icosahedral case is the algebraic origin of the icosahedral symmetry in the framework's crystallography. Because the finite groups are the **real** ones, a finite symmetry of a physical configuration is a symmetry of the material sector and not of the informational one. The Hurwitz order realises $2T$ integrally, as above; the other two are figures of the unit sphere without an integral model of the same kind.
+**Physical interpretation.** The binary polyhedral groups are the **spin point groups**: they are the double covers of the crystallographic point groups, and the doubling is the spin double cover, so a finite unit group is a group of spins and not only of positions. The orders $24$, $48$, $120$ are the orders of the binary tetrahedral, octahedral and icosahedral groups, and the appearance of the icosahedral case is the algebraic origin of the icosahedral symmetry in the framework's crystallography. Because the finite groups are the **real** ones, a finite symmetry of a physical configuration is a symmetry of the material sector and not of the informational one. The Hurwitz order realises $2T$ integrally, as above; the other two are figures of the unit sphere without an integral model of the same kind.
 
 ## The 24-Cell and the Twelve Rotations
 
 The twenty-four Hurwitz units are points of the unit sphere $S^3\subset\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^4$, and they are the vertices of a regular **$24$-cell**, the regular polytope of four-dimensional Euclidean space whose twenty-four cells are octahedra. The unit group is drawn as a figure.
 
-**Theorem (the symmetry group). The symmetry group of the $24$-cell is larger than the unit group: the signed permutations of the four coordinates form the Weyl group $B_4$ of order $384$, and the full symmetry group is the Weyl group $F_4$ of order $1152$, whereas the unit group is $2T$ of order $24$.
+**Theorem (the symmetry group).** The symmetry group of the $24$-cell is larger than the unit group: the signed permutations of the four coordinates form the Weyl group $B_4$ of order $384$, and the full symmetry group is the Weyl group $F_4$ of order $1152$, whereas the unit group is $2T$ of order $24$.
 
-**Proof. A symmetry of the $24$-cell permutes the vertices, so the symmetry group acts on the twenty-four units; the group generated by sign changes and coordinate permutations is the hyperoctahedral group $B_4$ of order $2^4\cdot 4!=384$, and it preserves the vertex set; the $24$-cell is the $F_4$ root polytope, whose full symmetry group is the Weyl group $F_4$ of order $1152$. Both contain the unit group $2T$, and both are strictly larger.
+**Proof.** A symmetry of the $24$-cell permutes the vertices, so the symmetry group acts on the twenty-four units; the group generated by sign changes and coordinate permutations is the hyperoctahedral group $B_4$ of order $2^4\cdot 4!=384$, and it preserves the vertex set; the $24$-cell is the $F_4$ root polytope, whose full symmetry group is the Weyl group $F_4$ of order $1152$. Both contain the unit group $2T$, and both are strictly larger.
 
-**Physical interpretation. The two Weyl groups are the symmetry groups of the Hurwitz lattice and of the root system $F_4$, and they are symmetries of the **lattice**, not of the unit group. The distinction is the one the framework needs: the twenty-four units do not act as the $1152$ symmetries of $F_4$, because a unit acts by conjugation and conjugation gives only twelve distinct maps, all of them proper rotations. The figure is larger than the group that acts on it, and the two must not be conflated.
+**Physical interpretation.** The two Weyl groups are the symmetry groups of the Hurwitz lattice and of the root system $F_4$, and they are symmetries of the **lattice**, not of the unit group. The distinction is the one the framework needs: the twenty-four units do not act as the $1152$ symmetries of $F_4$, because a unit acts by conjugation and conjugation gives only twelve distinct maps, all of them proper rotations. The figure is larger than the group that acts on it, and the two must not be conflated.
 
 The unit group reaches the algebra through the rotations $\rho_v$ of *Biquaternion Rotations and Lorentz Transformations*, §*Reflections*, not through these symmetries: the map
 $$
@@ -121,7 +121,7 @@ $$
 $$
 is a rotation of determinant $+1$ of the real slice and depends on $v$ only up to sign, so the twenty-four Hurwitz units give twelve distinct rotations. Together they generate the conjugation action of $2T$ on the real slice, of kernel $\{\pm e_t\}$, so that $2T/\{\pm e_t\}\cong A_4$ of order twelve, and adjoining the central negation, which is $\rho_{e_t}$, gives a group of order $24$. Read on the vector subspace $\mathrm{Vect}(\mathbb{B})\cong\mathbb{R}^3$ instead of on the real slice, the same map $\rho_{\vec e_x}$ is the reflection in the hyperplane orthogonal to $\vec e_x$, which generates the Weyl group $W(A_1)=\mathbb{Z}/2$ on that three-dimensional space.
 
-**Physical interpretation. The twelve proper rotations of the figure are the twelve distinct maps the twenty-four units give, so the discrete motions of the real slice are rotations and not reflections. This is the discrete counterpart of the continuous statement of *Biquaternion Rotations and Lorentz Transformations*, that a norm-one element acts on the Clifford vector subspace by a reflection only where orthogonality and anticommutation coincide, and elsewhere by a rotation.
+**Physical interpretation.** The twelve proper rotations of the figure are the twelve distinct maps the twenty-four units give, so the discrete motions of the real slice are rotations and not reflections. This is the discrete counterpart of the continuous statement of *Biquaternion Rotations and Lorentz Transformations*, that a norm-one element acts on the Clifford vector subspace by a reflection only where orthogonality and anticommutation coincide, and elsewhere by a rotation.
 
 ## The McKay Correspondence
 
@@ -139,7 +139,7 @@ $$
 $$
 so the unit group contains an infinite cyclic subgroup generated along a nilpotent direction. Such a direction exists integrally, for instance $P=\vec e_x+i\vec e_y$, which is null and has Gaussian-integer coefficients.
 
-**Physical interpretation. The real orders have finite unit groups; the complex order does not. The difference is the light cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. On the material sector, where the four-position is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the null condition is the light cone $c^2t^2=x^2+y^2+z^2$: the integral null element $P=\vec e_x+i\vec e_y$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. In physics terms the infinite unit group is the algebraic statement that the light cone is present, and the finite unit groups are the groups of the massive, non-null sector.
+**Physical interpretation.** The real orders have finite unit groups; the complex order does not. The difference is the light cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. On the material sector, where the four-position is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the null condition is the light cone $c^2t^2=x^2+y^2+z^2$: the integral null element $P=\vec e_x+i\vec e_y$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. In physics terms the infinite unit group is the algebraic statement that the light cone is present, and the finite unit groups are the groups of the massive, non-null sector.
 
 ## Physical Readings
 
@@ -178,8 +178,8 @@ The integral biquaternions over the Gaussian integers have an infinite group of 
 | $2T/\{\pm e_t\}\cong A_4$ | Conjugation action of the binary tetrahedral group on the real slice |
 | $A^{(1)},D^{(1)},E^{(1)}_{6,7,8}$ | Simply laced Dynkin types of the five families; the McKay correspondence |
 | $\mathbb{Z}[i]\otimes\mathcal{L}'$ | Integral biquaternions; infinite unit group |
-| $n=\vec e_x+i\vec e_y$, $n^2=0$ | Nilpotent generator of the unipotent family |
-| $e_t+kn$, $\langle e_t+kn\rangle_{\natural}=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
+| $P=\vec e_x+i\vec e_y$, $P^2=0$ | Nilpotent generator of the unipotent family |
+| $e_t+kP$, $\langle e_t+kP\rangle_{\natural}=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real sector, the slice $ict=0$; home of the orders and their finite unit groups |
 | $c^2t^2=x^2+y^2+z^2$ | Light cone of the material sector; the null condition $\langle\tilde{R}\rangle_{\natural}=0$ there |
 

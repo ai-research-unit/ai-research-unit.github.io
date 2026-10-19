@@ -17,13 +17,13 @@ $$
 \tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\,\tilde{F} + \tilde{F}^{*}\,\tilde{V}\right),
 $$
 
-or, since $\tilde{F}^{*} = -\tilde{F}^*$,
+or, since $\tilde{F}^{*} = -\bar{\tilde F}$,
 
 $$
-\tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\,\tilde{F} - \tilde{F}^*\,\tilde{V}\right).
+\tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\,\tilde{F} - \bar{\tilde F}\,\tilde{V}\right).
 $$
 
-Here $\tilde{F}^{*}$ is the Hermitian conjugate of the field strength and $\tilde{F}^*$ its complex conjugate. The appearance of the conjugate field is not a technicality: $\tilde{F}$ and $\tilde{F}^{*}$ are (up to constant factors) the self-dual and anti-self-dual halves of the field tensor, and the formula pairs the four-velocity with both halves. This is the sense in which the result "involves the representation theory of $\mathbb{B}$" — but, as the derivation below shows, the formula itself lives entirely inside $\mathbb{B}$ and needs no Clifford algebra beyond the identification $\mathbb{B}\cong\mathbb{C}\ell_{1,3}^{+}$.
+Here $\tilde{F}^{*}$ is the Hermitian conjugate of the field strength and $\bar{\tilde F}$ its complex conjugate. The appearance of the conjugate field is not a technicality: $\tilde{F}$ and $\tilde{F}^{*}$ are (up to constant factors) the self-dual and anti-self-dual halves of the field tensor, and the formula pairs the four-velocity with both halves. This is the sense in which the result "involves the representation theory of $\mathbb{B}$" — but, as the derivation below shows, the formula itself lives entirely inside $\mathbb{B}$ and needs no Clifford algebra beyond the identification $\mathbb{B}\cong\mathbb{C}\ell_{1,3}^{+}$.
 
 **A note on notation.** The companion article *The Field-Strength Biquaternion and Its Invariants* fixes the symbol $\tilde{F}$ for the field-strength biquaternion "once and for all". The companion article *Relativistic Mechanics in Biquaternionic Form* wrote $\tilde{F}_{\text{EM}}$ for the field and, in its earlier versions, $\tilde{F}$ for the four-force. To remove the collision this article adopts, and the corpus now uses, the letter $\tilde{K}_{\mathrm{f}}$ for the **four-force biquaternion** (the Minkowski force), reserving $\tilde{F}$ for the field strength. Thus
 
@@ -33,7 +33,7 @@ $$
 
 and the field strength keeps the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the field-strength article.
 
-The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The conjugate of a biquaternion $\tilde{Q} = \tilde{Q}_te_t + \tilde{Q}_x\vec e_x + \tilde{Q}_y\vec e_y + \tilde{Q}_z\vec e_z$ is $\bar{X} = \tilde{Q}_te_t - \vec Q$, its complex conjugate is $\tilde{Q}^* = \sum_\mu \tilde{Q}_\mu^* e_\mu$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{X}^{\,*} = \sum_\mu \tilde{Q}_\mu^* e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.
+The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The quaternion conjugate of a biquaternion $\tilde{Q} = \tilde{Q}_te_t + \tilde{Q}_x\vec e_x + \tilde{Q}_y\vec e_y + \tilde{Q}_z\vec e_z$ is $\tilde{Q}^{\natural} = \tilde{Q}_te_t - \vec Q$, its complex conjugate is $\bar{\tilde{Q}} = \sum_\mu \bar{Q}_\mu e_\mu$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{\tilde{Q}}^{\natural} = \sum_\mu \bar{Q}_\mu e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.
 
 ## The Lorentz Four-Force in Component Form
 
@@ -243,10 +243,10 @@ $$
 \;}
 $$
 
-The two coefficients are equal, $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$, so either may be used. Since $\tilde{F}^{*} = -\tilde{F}^*$, the formula may also be written
+The two coefficients are equal, $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$, so either may be used. Since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may also be written
 
 $$
-\tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} - \tilde{F}^*\tilde{V}\right).
+\tilde{K}_{\mathrm{f}} = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} - \bar{\tilde F}\tilde{V}\right).
 $$
 
 **Step 6: the projection form.** Because $\tilde{V}\in\mathbb{M}_-$ and $\tilde{V}^{*} = -\tilde{V}$, the Hermitian conjugate of the product is
@@ -628,7 +628,7 @@ $$
 = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).\;}
 $$
 
-Equivalently, $\tilde{K}_{\mathrm{f}} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\tilde{F}^*$, the formula may be written $-\frac{ϙ\sqrt{\mu}}{2}(\tilde{V}\tilde{F} - \tilde{F}^*\tilde{V})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}_{\mathrm{f}}$, while $\tilde{F}$ is reserved for the field strength.
+Equivalently, $\tilde{K}_{\mathrm{f}} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may be written $-\frac{ϙ\sqrt{\mu}}{2}(\tilde{V}\tilde{F} - \bar{\tilde F}\tilde{V})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}_{\mathrm{f}}$, while $\tilde{F}$ is reserved for the field strength.
 
 The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}_{\mathrm{f}}' = \tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$, while the field transforms in the bivector representation, $\tilde{F}' = \tilde U^{\natural}\tilde{F}\tilde U$, and the product formula is covariant under the pair.
 
@@ -642,8 +642,8 @@ At the level of densities the companion programme replaces the per-particle forc
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
-| $\tilde{Q}^{*} = \bar{X}^{\,*}$ | Hermitian conjugate |
-| $\tilde{Q}^*$, $\bar{X}$ | Complex conjugate, quaternion conjugate |
+| $\tilde{Q}^{*} = \bar{\tilde Q}^{\natural}$ | Hermitian conjugate |
+| $\bar{\tilde Q}$, $\tilde{Q}^{\natural}$ | Complex conjugate, quaternion conjugate |
 | $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q} - \tilde{Q}^{*})$ | Projection onto $\mathbb{M}_-$ (anti-Hermitian part) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E + \sqrt{\mu}\,\vec H$ | Hermitian conjugate of the field strength |

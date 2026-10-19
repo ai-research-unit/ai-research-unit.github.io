@@ -48,7 +48,7 @@ with $L=\int d^3x\,\mathcal{L}$; the phase-space form is obtained by inserting a
 In the framework's notation the field is central-valued and the weight is a central phase,
 
 $$
-\tilde{\Phi}(\tilde{Q})=\phi(\tilde{Q})e_t,
+\tilde{\Phi}(\tilde R)=\phi(\tilde R)e_t,
 \qquad
 S[\tilde{\Phi}]=\int d^4x\left[-\mathrm{Sc}\!\left[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})\right]-\mu^2\,\mathrm{Sc}\!\left(\tilde{\Phi}^{*}\tilde{\Phi}\right)\right],
 $$
@@ -180,7 +180,7 @@ $$
 =i\hbar\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),
 $$
 
-which is the equal-time commutator imposed in the companion quantization. The commutator is thus not extra input: it is the statement $\delta\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\delta\phi(\vec y)=\delta^{(3)}$ in the functional representation. The conjugate momentum is the derivative of the action, $\pi=\delta S/\delta\partial\phi/\partial t$ on shell, matching the classical Legendre transform.
+which is the equal-time commutator imposed in the companion quantization. The commutator is thus not extra input: it is the statement $\delta\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\delta\phi(\vec y)=\delta^{(3)}$ in the functional representation. The conjugate momentum is the derivative of the action, $\pi=\delta S/\delta(\partial\phi/\partial t)$ on shell, matching the classical Legendre transform.
 
 **The mode expansion and the correlators.** The Gaussian integration produces the Wightman and Feynman functions of the companion field article, and the standard free-field Wick expansion recovers the mode algebra from them. The Hamiltonian and the charge are the generators of the time and phase translations, and their matrix elements are reproduced by the functional integral with the appropriate insertions. The equivalence is the standard one and is not re-derived; what the framework changes is the notation.
 
@@ -235,7 +235,7 @@ $$
 =\frac{|Z[\tilde Q_5]|^2}{|Z[0]|^2}.
 $$
 
-For a homogeneous background with a slow or sudden time dependence, the Gaussian in a time-dependent frequency gives the same two-mode squeezed state and the same coefficients as the mode-matching computation of the companion article, and the probability of pair creation is $1-|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2$. The general connection between the imaginary part of the effective action and the pair-creation rate is standard: $\Im\ln Z$ measures the failure of the vacuum to persist. The Gaussian evaluation above is the free case; the background makes the quadratic form time-dependent and the same functional determinant produces the persistence amplitude. The three formulations therefore agree on the process: canonical quantization through the Bogoliubov coefficients, the path integral through the vacuum functional.
+For a homogeneous background with a slow or sudden time dependence, the Gaussian in a time-dependent frequency gives the same two-mode squeezed state and the same coefficients as the mode-matching computation of the companion article, and the probability of pair creation is $1-|\langle0_{\mathrm{out}}|0_{\mathrm{in}}\rangle|^2$. The general connection between the imaginary part of the effective action and the pair-creation rate is standard: $\Im\ln Z$ measures the failure of the vacuum to persist. The Gaussian evaluation above is the free case; the background makes the quadratic form time-dependent and the same functional determinant produces the persistence amplitude. The two formulations therefore agree on the process: canonical quantization through the Bogoliubov coefficients, the path integral through the vacuum functional.
 
 This is also the point at which the path integral's determinant is visible. The free determinant $[\det(\Box-\mu^2)]^{-1}$ is a central scalar — the inverse power is the complex field's, as in the finite-dimensional identity above; in a background it becomes the central functional determinant whose modulus produces the persistence amplitude. Whether the framework singles out a regularization of that determinant is open, exactly as for the vacuum energy.
 

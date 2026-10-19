@@ -16,13 +16,13 @@ This article asks what the modular Hamiltonian and the first law of entanglement
 $$
 \delta S=\delta\langle K_0\rangle-S(\tilde{Ϛ}\|\tilde{Ϛ}_0),
 $$
-where $\delta S=S(\tilde{Ϛ})-S(\tilde{Ϛ}_0)$ and $\delta\langle K_0\rangle=\mathrm{Tr}((\tilde{Ϛ}-\tilde{Ϛ}_0)K_0)$. The deficit is exactly the relative entropy, which is quadratic in the perturbation and non-negative. The first law $\delta S=\delta\langle K_0\rangle$ is therefore exact to first order, and the framework's closed-form relative entropy makes the correction term explicit at every order.
+where $\delta S=S(\tilde{Ϛ})-S(\tilde{Ϛ}_0)$ and $\delta\langle K_0\rangle=\mathrm{Tr}((\tilde{Ϛ}-\tilde{Ϛ}_0)K_0)$. The deficit is exactly the relative entropy, which vanishes quadratically to leading order in the perturbation and is non-negative. The first law $\delta S=\delta\langle K_0\rangle$ is therefore exact to first order, and the framework's closed-form relative entropy makes the correction term explicit at every order.
 
 3. **The relation is verified on a perturbation.** Taking the reference state $\vec r_0=(0.3,-0.2,0.4)$ and the displacement $\vec v=(0.12,0.18,-0.07)$, at $s=0.05$ the two sides of the law differ by the relative entropy $-7.314\times10^{-5}$, and at $s=0.3$ by $-2.619\times10^{-3}$; the identity $\delta S-\delta\langle K_0\rangle=-S(\tilde{Ϛ}\|\tilde{Ϛ}_0)$ holds to machine precision at both steps, the discrepancy being below $2\times10^{-15}$.
 
 The article proceeds as follows. The modular Hamiltonian is defined and its biquaternion closed form is given. The first law is stated, and the exact identity from which it follows is derived. The identity is verified on the explicit perturbation. The linearity that makes the law exact to first order is explained in the framework's terms, and the entanglement Hamiltonian of a subsystem is discussed. The standard applications are recalled, and the article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_t)=2$. States are $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)\in\mathbb{M}_+$ with $|\vec r|\le1$; the logarithms, entropies and relative entropies are the closed forms of *Relative Entropy and the Biquaternion Framework*, and the modular operator, flow and generator are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, with $\mathrm{Tr}(e_t)=2$. States are $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)\in\mathbb{M}_+$ with $|\vec r|\le1$; the logarithms, entropies and relative entropies are the closed forms of *Relative Entropy and the Biquaternion Framework*, and the modular operator, flow and generator are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion Framework*.
 
 ## The Modular Hamiltonian
 
@@ -59,7 +59,7 @@ $$
 =-\tfrac12\log\frac{1-r_0^2}{4}
 -r\,\mathrm{artanh}(r_0)\cos\gamma ,
 $$
-which is identically real, as every trace is. At $\tilde{Ϛ}=\tilde{Ϛ}_0$ it reduces to
+which is identically real, as the trace of two Hermitian elements must be. At $\tilde{Ϛ}=\tilde{Ϛ}_0$ it reduces to
 $$
 S(\tilde{Ϛ}_0)=\langle K_0\rangle_{\tilde{Ϛ}_0}
 =-\tfrac12\log\frac{1-r_0^2}{4}
@@ -224,7 +224,7 @@ The biquaternion framework's role is to make the finite-dimensional prototype of
 
 **3. The second law of entanglement.** The exact identity gives $\delta S\le\delta\langle K_0\rangle$. Does the framework's closed form give a similarly exact monotonicity under partial trace or under coarse-graining, refining the strong-subadditivity companion article?
 
-**4. The geometry of the deficit.** The deficit is the Kubo–Mori metric distance to the reference state. On the Bloch ball this is a computable Riemannian geometry; does its completion, continued to a regulated many-mode model, reproduce the geometric data of the applications (the ball's modular Hamiltonian and the stress-tensor response)?
+**4. The geometry of the deficit.** The deficit is measured to second order by the Kubo–Mori metric distance to the reference state. On the Bloch ball this is a computable Riemannian geometry; does its completion, continued to a regulated many-mode model, reproduce the geometric data of the applications (the ball's modular Hamiltonian and the stress-tensor response)?
 
 **5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum information theory is derived.
 
@@ -248,7 +248,7 @@ The mechanism is that the modular energy is linear in the state while the relati
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
 | $\Delta_\sigma=S^*S$ | Modular operator of the state $\sigma$ |
 | $K_\sigma=-\log\Delta_\sigma$ | Modular Hamiltonian |
 | $K_0=-\log\tilde{Ϛ}_0$ | Modular Hamiltonian of a biquaternion state $\in\mathbb{M}_+$ |

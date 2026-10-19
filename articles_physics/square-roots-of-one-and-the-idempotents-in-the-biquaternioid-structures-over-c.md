@@ -27,7 +27,7 @@ Form* and *The Reflection and the Rotation in Biquaternionic Form*. An idempoten
 a projection is a **determinate state**: the equation $\tilde\Pi^{2}=\tilde\Pi$ reads as "measuring twice
 equals measuring once", the reading of *The Monoid of Acting Maps: the Process Is the Multiplication, the
 State Is the Idempotent*. The state families of the twelve bands are the idempotent families their own
-squares define: the plain states, one to each root of one of the plain product; the pure states of the
+squares define: the plain states, one for each root of $+1$ of the plain product; the pure states of the
 probability band, the Hermitian subfamily shared by the plain and the pairing products; and the invertible
 states of the gauge band, the displaced family of the fourth product.
 
@@ -47,7 +47,7 @@ $C(\tilde\Xi)e_t=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ wi
 $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$; the **Hermitian square** is $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$;
 the **Krein value** is $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$. An element is
 **pure** when $\Xi_t=0$ and **central** when $\vec\Xi=0$. The material coordinate is
-$\tilde\Xi=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $c=1/\sqrt{\epsilon\mu}$. The twelve structures are cited by their
+$\tilde R=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $c=1/\sqrt{\epsilon\mu}$. The twelve structures are cited by their
 three-letter names throughout.
 
 ## The Halving Map

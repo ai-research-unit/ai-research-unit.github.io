@@ -32,7 +32,7 @@ $$
 \Theta_{ij} = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\left(3x_i'x_j' - r'^{\,2}\delta_{ij}\right)d^3x' .
 $$
 
-It is symmetric, $\Theta_{ij} = \Theta_{ji}$, and traceless, $\Theta_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ would contribute a monopole-like $r^{-1}$ tail and is already accounted for by the total charge. The five independent components are the representation $D^{(2)}$ of the rotation group, and it is useful to write them in the symmetric-traceless form the definition suggests:
+It is symmetric, $\Theta_{ij} = \Theta_{ji}$, and traceless, $\Theta_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The tracelessness is not an extra assumption: the trace part is an $l=0$ contribution at the same $r^{-3}$ order, carries no quadrupole information, and is removed by the traceless definition. The five independent components are the representation $D^{(2)}$ of the rotation group, and it is useful to write them in the symmetric-traceless form the definition suggests:
 
 $$
 \Theta_{ij} \in \operatorname{Sym}^2_0(D^{(1)}) \cong D^{(2)} ,
@@ -281,7 +281,7 @@ proportional to $\sin^2 2\theta$, with the nulls on the axis and in the equatori
 
 ### The Magnetic Quadrupole
 
-The magnetic quadrupole is the companion of the electric quadrupole at the same order, and it is built from the antisymmetric current structure one order higher. Its far field has the same $r^{-1}$ fall-off and the same power law, with the magnetic quadrupole moment in place of the electric one, and its parity is opposite: an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$. The magnetic quadrupole therefore contributes to the same $D^{(2)}$ angular structure with the opposite behaviour under parity, and the two types are mixed by a boost, as the transformation derived above shows.
+The magnetic quadrupole is the companion of the electric quadrupole at the same angular order $l=2$, and it is built from the antisymmetric current structure one order higher in $k$. Its far field has the same $r^{-1}$ fall-off and the same power law, with the magnetic quadrupole moment in place of the electric one, and its parity is opposite: an electric $l$-pole has parity $(-1)^l$, a magnetic $l$-pole parity $(-1)^{l+1}$. The magnetic quadrupole therefore contributes to the same $D^{(2)}$ angular structure with the opposite behaviour under parity, and the two types are mixed by a boost, as the transformation derived above shows.
 
 ### Angular Momentum and the Spin-1+ Origin
 
@@ -349,7 +349,7 @@ The field-strength biquaternion of a radiation field is therefore a **zero divis
 
 The relativistic quadrupole is the first multipole above the dipole, and it differs from the dipole in every way that a boost can reveal.
 
-Its tensor is symmetric and traceless, $\Theta_{ij} = \int\rho(3x_ix_j-r^2\delta_{ij})d^3x'$, five components transforming as $D^{(2)}$. Under a boost along the motion, the lab-frame tensor of a source that is static in its rest frame is
+Its tensor is symmetric and traceless, $\Theta_{ij} = \int\rho(3x_i'x_j'-r'^2\delta_{ij})d^3x'$, five components transforming as $D^{(2)}$. Under a boost along the motion, the lab-frame tensor of a source that is static in its rest frame is
 
 $$
 \Theta_{xx} = 2D'_{xx}-D'_{yy}-\frac{D'_{zz}}{\gamma^2} ,
@@ -391,7 +391,7 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $\rho$, $\vec J$ | Charge and current densities |
 | $ϙ$, $\vec p$, $\vec m$ | Monopole, dipole and magnetic dipole moments |
 | $D_{ij} = \int\rho\,x_ix_j\,d^3x$ | Second moment of the charge |
-| $\Theta_{ij} = \int\rho(3x_ix_j-r^2\delta_{ij})d^3x$ | Quadrupole tensor (symmetric traceless) |
+| $\Theta_{ij} = \int\rho(3x_i'x_j'-r'^2\delta_{ij})d^3x'$ | Quadrupole tensor (symmetric traceless) |
 | $T' = \int\rho'\,r'^{\,2}d^3x'$ | Trace of the rest-frame second moment |
 | $\vec D(\vec u)$, $\vec{\mathcal{Q}}(\vec u)$ | $D_{ij}n_j$, $\Theta_{ij}n_j$ |
 | $\Phi_{quad}$ | Quadrupole potential |

@@ -59,7 +59,7 @@ by the saturated Bogomolny bound of *Instantons and Solitons in Biquaternionic F
 
 ## The One-Instanton Measure and Collective Coordinates
 
-The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_0^\mu$ and one dilatation $\rho$, together with the three global $SU(2)$ orientations that are in the gauge orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
+The moduli space of the charge-one saddle is the five-dimensional family of *The ADHM Construction and Biquaternion Instanton Data*: four translations $x_0^\mu$ and one dilatation $\rho$, the three global $SU(2)$ orientations being in the gauge orbit. The collective-coordinate measure is the volume element of this space, and the classical part of the one-instanton contribution is
 
 $$
 Z_1^{\mathrm{cl}} \;\propto\; \int d^4x_0\int_0^\infty\frac{d\rho}{\rho^5}\;\exp(-8\pi^2/g^2) ,

@@ -44,7 +44,7 @@ For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion r
 $$
 \langle\tilde P\rangle_{\natural} = 0 :
 $$
-the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\tilde P = \tilde{P}/\hbar$ and hence $\langle\tilde P\rangle_{\natural} = -m^2c^2/\hbar^2$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$.
+the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\langle\tilde P\rangle_{\natural} = -m^2c^2/\hbar^2$, a fixed negative biquaternion norm, whereas for light the biquaternion norm vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\vec k$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$.
 
 **Solution (b).** Fix the plane-wave convention $\propto \exp(i\Phi)$ with
 $$

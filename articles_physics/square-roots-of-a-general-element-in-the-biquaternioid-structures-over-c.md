@@ -39,7 +39,7 @@ ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The **central square** is
 $C(\tilde\Xi)e_t=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$; the **Hermitian square**
 is $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$; the **Krein value** is
 $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_\mu\lvert\Xi_\mu\rvert^{2}$. The material coordinate is
-$\tilde\Xi=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The twelve structures are cited by their three-letter names.
+$\tilde R=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The twelve structures are cited by their three-letter names.
 
 ## The Root Problem at a General Value
 
@@ -332,7 +332,7 @@ and Scale*.
 
 **The value is a level of the interval.** For the natural product the root equation is
 $C(\tilde\Xi)=\lambda$, and $C$ is the interval of the element. The root set of $\lambda$ is the set of
-elements whose interval is $\lambda$, and on the material coordinate the level set $N=-m^2c^2$ is the mass
+elements whose interval is $\lambda$, and on the material coordinate the level set $\langle\tilde\Xi\rangle_{\natural}=-m^2c^2$ is the mass
 shell. *Square Roots of a General Element in the Biquaternion Algebra: the Realisation* and *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* read the value as the interval, the root problem as the shell problem, and the
 sign of $\lambda$ as the causal class of the element; *The Symplectic Form and the Biquaternion Norm Cone*
 reads the same level sets as the energy surfaces of the material dynamics. The value $0$ is the cone, and
@@ -372,7 +372,7 @@ The value $\lambda$ has a magnitude and a sign, and for the natural product the 
 root equation $C(\tilde\Xi)=\lambda$ is the shell equation, and the three signs of a real $\lambda$ are the
 three shells of the material sector.
 
-**The three shells.** The interval $C=N$ is negative on the two timelike components, zero on the cone and
+**The three shells.** The interval $C=\langle\tilde\Xi\rangle_{\natural}$ is negative on the two timelike components, zero on the cone and
 positive on the spacelike region, as *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* computes for the material
 sector. The root set of a **negative** value is therefore the massive shell: the timelike elements of
 squared interval $-m^2c^2$, the trajectories of a particle with a rest frame. The root set of **zero** is
@@ -402,8 +402,8 @@ element as $\tilde Q=r\,\exp(i\alpha)B\tilde u$ and identifies the modulus $\rho
 root of the biquaternion norm, $\rho^{2}=\langle\tilde Q\rangle_{\natural}$; the representation is available exactly on the
 nonzero elements off the cone, which is the invertibility theorem of *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*
 in polar dress. On the **material sector** the article computes the phase explicitly: a timelike
-displacement has $N=-c^{2}t^{2}(1-\beta^{2})<0$, so $\rho=i\,ct\sqrt{1-\beta^{2}}$, that is $r=c\tau$ with
-$\alpha=\pi/2$, while a spacelike displacement has $N>0$ and a real modulus, $\alpha=0$. *On the material
+displacement has $\langle\tilde\Xi\rangle_{\natural}=-c^{2}t^{2}(1-\beta^{2})<0$, so $\rho=i\,ct\sqrt{1-\beta^{2}}$, that is $r=c\tau$ with
+$\alpha=\pi/2$, while a spacelike displacement has $\langle\tilde\Xi\rangle_{\natural}>0$ and a real modulus, $\alpha=0$. *On the material
 sector* the phase of the polar modulus **is** the causal class — imaginary for timelike, real for spacelike;
 for a general element $\alpha$ is the continuous angle that carries the complex-conjugation imbalance, so the
 two-valued statement is a statement about four-vectors and not about all elements. Where this article's
@@ -538,7 +538,7 @@ root's splitting and the restoration of the conformal symmetry are one event.
   the scale: the mass shell is the unit shell scaled by $mc$, and the cone is the scale-free limit of the
   family.
 - The value is a modulus and a phase. On the material sector the phase is the causal class: the polar modulus
-  $\rho=\sqrt N$ is real for a spacelike element and imaginary for a timelike one, and the representation
+  $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$ is real for a spacelike element and imaginary for a timelike one, and the representation
   exists exactly off the cone. For a general element the phase is a continuous angle. In the natural band the
   value a root realises is the square of its own polar modulus, and the sign of $\lambda$ is the sign of the
   interval.
@@ -623,7 +623,7 @@ different root sets, so degeneracy is universal while factorisation is band-spec
 
 - $\lambda e_t$ a central value with a general complex $\lambda$; the root set $\mathcal R_\lambda=\{\tilde\Xi:\tilde\Xi\star\tilde\Xi=\lambda e_t\}$.
 - $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$ the central square; $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ the Hermitian square; $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_\mu\lvert\Xi_\mu\rvert^{2}$ the Krein value.
-- The material coordinate $\tilde\Xi=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the slope $t$ of the family $c(\tilde\xi+it)$; the real unit vectors $\tilde\xi$.
+- The material coordinate $\tilde R=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the slope $t$ of the family $c(\tilde\xi+it)$; the real unit vectors $\tilde\xi$.
 - ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; $\mathrm{Tr}=2\,\mathrm{Sc}$; $c=1/\sqrt{\epsilon\mu}$.
 - The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 - The four existence classes: bilateral, indefinite sesquilinear, definite sesquilinear, antisymmetric.

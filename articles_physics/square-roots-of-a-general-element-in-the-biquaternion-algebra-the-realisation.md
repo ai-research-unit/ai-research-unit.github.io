@@ -99,15 +99,15 @@ $$
 
 which is $\mathbb{C}$-valued and always lands in the centre. The two must be kept apart, and the separation is the one of *Mass, Rank and the Positivity of the Dagger*.
 
-**The natural square and the interval.** On a material four-momentum $\tilde P=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the natural square is the interval,
+**The natural square and the interval.** On a material four-vector $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the natural square is the interval,
 
 $$
-\langle\tilde P\rangle_{\natural}=-c^{2}t^{2}+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2},
+\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2},
 $$
 
-of signature $(-,+,+,+)$; its zero set cut by $\mathbb{M}_-$ is the light cone, and its level set $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$ is the **mass shell**, developed in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The mass is the label of the slice, and the mass shell is the **fibre** of the natural square map over that scalar. That the natural square is a scalar is automatic; what the mass-shell condition adds is the **value**.
+of signature $(-,+,+,+)$; its zero set cut by $\mathbb{M}_-$ is the light cone, and its level set $\langle\tilde R\rangle_{\natural}=-m^{2}c^{2}$ is the **mass shell**, developed in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The mass is the label of the slice, and the mass shell is the **fibre** of the natural square map over that scalar. That the natural square is a scalar is automatic; what the mass-shell condition adds is the **value**.
 
-**The scalar slice of the ordinary square.** For completeness, the ordinary square $\sigma$ lands in the centre exactly when $2\Xi_t\vec\Xi=0$, that is when the element is central ($\vec\Xi=0$) or pure ($\Xi_t=0$). The scalar slice of the ordinary square is therefore the union of the centre and the vector subspace, on which the square takes the values $\Xi_t^{2}$ and $-(\vec\Xi,\vec\Xi)$. This slice is **larger than the mass shell and is not the mass shell**; it is recorded because it is the set on which the ordinary square, like the natural one, is scalar, and it is the reason the two squares are easily confused. **The mass shell is not $\tilde P^{2}=-m^{2}c^{2}$ in the ordinary square.**
+**The scalar slice of the ordinary square.** For completeness, the ordinary square $\sigma$ lands in the centre exactly when $2\Xi_t\vec\Xi=0$, that is when the element is central ($\vec\Xi=0$) or pure ($\Xi_t=0$). The scalar slice of the ordinary square is therefore the union of the centre and the vector subspace, on which the square takes the values $\Xi_t^{2}$ and $-(\vec\Xi,\vec\Xi)$. This slice is **larger than the mass shell and is not the mass shell**; it is recorded because it is the set on which the ordinary square, like the natural one, is scalar, and it is the reason the two squares are easily confused. **The mass shell is not $\tilde R^{2}=-m^{2}c^{2}$ in the ordinary square.**
 
 ## The Reading: Realisation by the Algebra
 
@@ -148,8 +148,8 @@ The readings are these. A material quantity is **realised by the algebra** exact
 | $\mathbb{M}_-$ | Material sector; no nonzero nilpotent, so no refusal |
 | $\sigma(\tilde\Xi)=\tilde\Xi\tilde\Xi$ | The ordinary square, the article's square |
 | $\nu(\tilde\Xi)=\tilde\Xi\tilde\Xi^{\natural}=\langle\tilde\Xi\rangle_{\natural}e_t$ | The natural square; always scalar |
-| $\langle\tilde P\rangle_{\natural}=-c^{2}t^{2}+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}$ | The interval on $\mathbb{M}_-$ |
-| $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$ | The mass shell, fibre of the natural square |
+| $\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^{2}$ | The interval on $\mathbb{M}_-$ |
+| $\langle\tilde R\rangle_{\natural}=-m^{2}c^{2}$ | The mass shell, fibre of the natural square |
 
 ## Further Reading
 

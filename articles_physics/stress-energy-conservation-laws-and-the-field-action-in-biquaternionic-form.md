@@ -29,10 +29,10 @@ Three threads are developed.
 **Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector, with basis $\mathcal{E}_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$ and
 
 $$
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2+\Delta = + \partial^2/\partial Q_t^2+\Delta .
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2+\Delta .
 $$
 
-The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
+The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $T^0{}_0$ carries a sign in the $ict$ convention: for the electromagnetic field $T^0{}_0=-W$, while the physical energy density is $T^{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -65,7 +65,7 @@ $$
 \mu = \frac{mc}{\hbar} .
 $$
 
-Because $\Box$ is central and scalar, the field decomposes into its four real components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\phi$ the variation gives
+Because $\Box$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\phi$ the variation gives
 
 $$
 \Box\phi - \mu^2\phi = 0 ,
@@ -84,7 +84,7 @@ $$
 = \frac{1}{2c^2}\left(\partial\phi/\partial t\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2 ,
 $$
 
-and it is this sign that makes the energy density of the next section positive. Two independent real fields, or equivalently one complex field, are needed for the general solution, exactly the doubling the Klein–Gordon article records.
+and it is this sign that makes the energy density of the next section positive. A complex scalar field, equivalently two real scalar fields, carries the doubling that the Klein–Gordon article records.
 
 ### The Electromagnetic Action
 
@@ -122,11 +122,10 @@ The stress–energy tensor is the Noether current of invariance under spacetime 
 
 $$
 \delta\mathcal{L} = \epsilon^\nu\partial/\partial Q_\nu\,\mathcal{L}
-= \epsilon^\nu\partial/\partial Q_\mu\,\left(\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\psi_a)}\partial/\partial Q_\nu\,\psi_a\right)
-- \epsilon^\nu\partial/\partial Q_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\psi_a)}\partial/\partial Q_\nu\,\psi_a ,
+= \epsilon^\nu\partial/\partial Q_\mu\,\left(\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\psi_a)}\partial/\partial Q_\nu\,\psi_a\right),
 $$
 
-where the second equality uses the Euler–Lagrange equation to replace the derivative with respect to $\psi_a$. Combining the two terms gives the divergence of the **canonical stress–energy tensor**
+where the second equality uses the Euler–Lagrange equation to replace the derivative with respect to $\psi_a$. Bringing the Lagrangian term to the left gives the divergence of the **canonical stress–energy tensor**
 
 $$
 T^\mu{}_\nu = \sum_a \frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\psi_a)}\,\partial/\partial Q_\nu\,\psi_a - \delta^\mu_\nu\,\mathcal{L},
@@ -134,11 +133,11 @@ T^\mu{}_\nu = \sum_a \frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu
 \partial/\partial Q_\mu T^\mu{}_\nu = 0 \ \text{on shell} .
 $$
 
-The ten conserved quantities are the four components of energy–momentum (from $\nu=0$) and the six components of angular momentum (from the spatial part, after improvement to a symmetric tensor). The biquaternion framework's contribution is not to this derivation but to the interpretation of the result: for a field whose values lie in $\mathbb{B}$, the sum over components makes $T^\mu{}_\nu$ the bilinear of the field with its conjugate, and for the electromagnetic field the bilinear has a closed algebraic form.
+The four conserved quantities are the components of energy–momentum (from $\nu=0$); the six components of angular momentum follow from Lorentz invariance once the tensor is improved to a symmetric form. The biquaternion framework's contribution is not to this derivation but to the interpretation of the result: for a field whose values lie in $\mathbb{B}$, the sum over components makes $T^\mu{}_\nu$ the bilinear of the field with its conjugate, and for the electromagnetic field the bilinear has a closed algebraic form.
 
 **Symmetry and improvement.** The canonical tensor need not be symmetric or gauge invariant; the physical stress–energy is obtained by adding a divergence of an antisymmetric tensor, which does not change the conserved charges. For the electromagnetic field the improved tensor is symmetric and gauge invariant, and it is the one constructed in the next sections. For a single real scalar the canonical tensor is already symmetric. The improvement is standard and is recorded here because the bigeneral quaternionic bilinear automatically gives the improved form.
 
-**Overall sign.** The canonical tensor is defined up to an overall sign by the sign of the Lagrangian, and this article follows the convention of the companion exercise: the tensor is taken with the sign that makes the physical energy density positive, $T^{tt}>0$, which for the electromagnetic field means $T^0{}_0=-T^{tt}=-W$. Since an overall constant does not affect $\partial/\partial Q_\mu T^{\mu\nu}=0$, the conservation law is unaltered.
+**Overall sign.** The canonical tensor is defined up to an overall sign by the sign of the Lagrangian, and this article follows the convention of the companion exercise: the tensor is taken with the sign that makes the physical energy density positive, $T^{tt}>0$, which for the electromagnetic field means $T^0{}_0=-T^{tt}=-W$. Since an overall factor does not affect $\partial/\partial Q_\mu T^{\mu\nu}=0$, the conservation law is unaltered.
 
 ## The Scalar Field Stress–Energy
 
@@ -178,6 +177,7 @@ $$
 
 is time-independent, which follows by integrating the conservation law over a spatial volume and using the vanishing of the flux at infinity.
 
+As a check, consider the superposition
 
 $$
 \phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \cos\!\left(k_1x-\omega_1t\right) + 0.6\cos\!\left(k_2y-\omega_2t\right),

@@ -26,7 +26,7 @@ The article verifies the correspondence on two independent pairs of observables 
 
 ## The Classical Bracket
 
-Let phase space be $\mathbb{R}^{2n}$ with canonical coordinates $(q_x,\dots,q_n)$ and conjugate momenta $(p_1,\dots,p_n)$. A classical **observable** is a smooth real function $f(q,p)$.
+Let phase space be $\mathbb{R}^{2n}$ with canonical coordinates $(q_1,\dots,q_n)$ and conjugate momenta $(p_1,\dots,p_n)$. A classical **observable** is a smooth real function $f(q,p)$.
 
 **Definition.** The **Poisson bracket** of two observables is
 
@@ -78,7 +78,7 @@ $$
 
 Two features of this display must be read correctly before anything is computed from it.
 
-First, the two sides are **objects of different kinds**: the left side is an operator and the right side is a function on phase space. The arrow is therefore not an equality of elements but a statement about a **quantization map** $f\mapsto f$. Whether such a map can be chosen to make the statement exact is the question of the article, and the answer is that it cannot, except in a limiting sense.
+First, the two sides are **objects of different kinds**: the left side is an operator and the right side is a function on phase space. The arrow is therefore not an equality of elements but a statement about a **quantization map** $f\mapsto\widehat f$. Whether such a map can be chosen to make the statement exact is the question of the article, and the answer is that it cannot, except in a limiting sense.
 
 Second, the normalization is not free. The factor $1/(i\hbar)$ — with the $i$ *in the denominator*, equivalently $-i/\hbar$ — is what makes the canonical pair come out with the standard sign. This is checked in the next section.
 
@@ -165,7 +165,7 @@ which is the operator image of $\{L_i,L_j\}=\epsilon_{ijk}L_k$. The corresponden
 | $\{L_i,q_j\}=\epsilon_{ijk}q_k$ | $[L_i,q_j]=i\hbar\epsilon_{ijk}q_k$ | $\epsilon_{ijk}q_k$ |
 | $\{L_i,p_j\}=\epsilon_{ijk}p_k$ | $[L_i,p_j]=i\hbar\epsilon_{ijk}p_k$ | $\epsilon_{ijk}p_k$ |
 
-**What the resemblance here is.** Both brackets realize the same three-dimensional Lie algebra: on the classical side the Poisson algebra of the $L_i$, and on the quantum side the commutator algebra of the $L_i$, are both $\mathrm{SU}(2)$, with the same structure constants $\epsilon_{ijk}$ after the factor $1/(i\hbar)$ is extracted. This is a genuine and exact resemblance, and it is the reason the correspondence was ever plausible. It is not, however, a general isomorphism: the pair $\{L_i,L_j\}$ works because the observables are quadratic in the canonical variables, and the next sections show that the correspondence is exact whenever either argument is at most quadratic in the canonical variables.
+**What the resemblance here is.** Both brackets realize the same three-dimensional Lie algebra: on the classical side the Poisson algebra of the $L_i$, and on the quantum side the commutator algebra of the $L_i$, are both $\mathfrak{su}(2)$, with the same structure constants $\epsilon_{ijk}$ after the factor $1/(i\hbar)$ is extracted. This is a genuine and exact resemblance, and it is the reason the correspondence was ever plausible. It is not, however, a general isomorphism: the pair $\{L_i,L_j\}$ works because the observables are quadratic in the canonical variables, and the next sections show that the correspondence is exact whenever either argument is at most quadratic in the canonical variables.
 
 ## Where the Resemblance Holds
 
@@ -187,11 +187,11 @@ Everything that goes wrong is already contained in one question: does the corres
 
 **The obstruction.** Suppose a quantization map $\widehat{\phantom{f}}$ satisfied $\widehat{fg}=\widehat f\,\widehat g$ for all observables. Since classical multiplication is commutative, $\widehat{fg}=\widehat{gf}$, hence $\widehat f\,\widehat g=\widehat g\,\widehat f$ for all $f,g$. In particular $[q,p]=0$. But the correspondence requires $[q,p]=i\hbar\widehat{\{q,p\}}=i\hbar\neq0$. Therefore no product-preserving map can implement the correspondence: **the homomorphism property and the bracket correspondence are mutually exclusive.** The failure is not a defect of a particular quantization scheme; it is forced by the commutativity of the classical algebra.
 
-**A concrete instance.** The classical observable $xp$ is real, so its quantum image must be Hermitian. The symmetric (Weyl) image is
+**A concrete instance.** The classical observable $qp$ is real, so its quantum image must be Hermitian. The symmetric (Weyl) image is
 $$
-\widehat{qp} = \tfrac12\left(\vec q\,p+pq\right) = \vec q\,p - \tfrac{i\hbar}{2},
+\widehat{qp} = \tfrac12\left(q p+pq\right) = q p - \tfrac{i\hbar}{2},
 $$
-using $[q,p]=i\hbar$, i.e. $pq=\vec q\,p-i\hbar$. But the product of the images is $\widehat q\,\widehat p=\vec q\,p$. Hence
+using $[q,p]=i\hbar$, i.e. $pq=q p-i\hbar$. But the product of the images is $\widehat q\,\widehat p=q p$. Hence
 $$
 \widehat q\,\widehat p-\widehat{qp} = \tfrac{i\hbar}{2}\neq0.
 $$
@@ -211,9 +211,9 @@ $$
 $$
 and the operator bracket is
 $$
-\frac{1}{i\hbar}[q^2,p^2] = 2\left(\vec q\,p+pq\right).
+\frac{1}{i\hbar}[q^2,p^2] = 2\left(q p+pq\right).
 $$
-The right side is the Weyl image of $4qp$, since $\widehat{4qp}=4\cdot\tfrac12(\vec q\,p+pq)$. It is *not* $4\vec q\,p$: the naive product differs by $-2i\hbar$. The correspondence is repaired only by the symmetrization, and the symmetrization is precisely the acknowledgement that the map is not a homomorphism.
+The right side is the Weyl image of $4qp$, since $\widehat{4qp}=4\cdot\tfrac12(q p+pq)$. It is *not* $4q p$: the naive product exceeds the Weyl image by $2i\hbar$. The correspondence is repaired only by the symmetrization, and the symmetrization is precisely the acknowledgement that the map is not a homomorphism.
 
 ## Where It Breaks: Deformation and the Order-$\hbar^2$ Term
 
@@ -245,7 +245,7 @@ The difference is the pure number $-\tfrac{3}{2}\hbar^2$. In operator language i
 
 The operator computation closes the loop. For the Weyl-quantized operators,
 $$
-\frac{1}{i\hbar}[q^3,p^3] = 9q^2p^2 - 18i\hbar\,\vec q\,p - 6\hbar^2,
+\frac{1}{i\hbar}[q^3,p^3] = 9q^2p^2 - 18i\hbar\,q p - 6\hbar^2,
 $$
 and the Weyl symbol of the right side is $9q^2p^2-\tfrac{3}{2}\hbar^2$, which is the Moyal bracket above. So the operator bracket, its symbol, and the star-product bracket agree with each other and disagree with the Poisson bracket by an order-$\hbar^2$ constant.
 
@@ -290,29 +290,29 @@ The companion articles express quantum physics in the biquaternion algebra $\mat
 $$
 \tilde H = h_t\,e_t + i\,\vec h, \qquad h_t\in\mathbb{R}, \quad \vec h=(h_x,h_y,h_z)\in\mathbb{R}^3,
 $$
-of the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. For two such elements $\tilde Q_1=Q_{1t}e_t+i\vec Q_1$ and $\tilde Q_2=Q_{2t}e_t+i\vec Q_2$, their **commutator** is
+of the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. For two such elements $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$, their **commutator** is
 $$
-[\tilde Q_1,\tilde Q_2] = -2\,(\vec Q_1\times\vec Q_2),
+[\tilde H_1,\tilde H_2] = -2\,(\vec h_1\times\vec h_2),
 $$
-a pure real quaternion lying in $\mathbb{M}_-\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $h_te_t$, $k_te_t$ are central and drop out. This bracket is a statement of the algebra alone: **it contains no $\hbar$.** The quaternion product rule $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.
+a pure real quaternion lying in $\mathbb{M}_-\cap\mathbb{H}_\mathbb{B}=\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The scalar parts $h_{1t}e_t$ and $h_{2t}e_t$ are central and drop out. This bracket is a statement of the algebra alone: **it contains no $\hbar$.** The quaternion product rule $\vec e_j \vec e_k=\epsilon_{jkl}\vec e_l$ for $j\neq k$ fixes it, and $\mathbb{B}\cong M_2(\mathbb{C})$ is a fixed finite-dimensional algebra in which no deformation parameter appears.
 
 **The angular-momentum resemblance, made exact.** The spin observables are the Hermitian elements
 $$
 \tilde S_k = \frac{\hbar}{2}\,i\,\vec e_k \in \mathbb{M}_+ \quad(\text{spin-}\tfrac12),
 $$
-whose matrix images under $\vec e_k\mapsto-i\sigma_k$ are $S_k=(\hbar/2)\sigma_k$. Direct computation from $[\tilde Q_1,\tilde Q_2]=-2(\vec Q_1\times\vec Q_2)$ gives
+whose matrix images under $\vec e_k\mapsto-i\sigma_k$ are $S_k=(\hbar/2)\sigma_k$. Direct computation from the commutator of two Hermitian elements gives
 $$
 [\tilde S_i,\tilde S_j] = i\hbar\,\epsilon_{ijk}\,\tilde S_k,
 \qquad\text{so}\qquad
 \frac{1}{i\hbar}[\tilde S_i,\tilde S_j] = \epsilon_{ijk}\,\tilde S_k,
 $$
-which is term for term the operator image of the classical bracket $\{L_i,L_j\}=\epsilon_{ijk}L_k$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde Q_1,\tilde Q_2]=-2(\vec Q_1\times\vec Q_2)$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and the sign is fixed by the orientation of the cross product.
+which is term for term the operator image of the classical bracket $\{L_i,L_j\}=\epsilon_{ijk}L_k$. The parallel is exact here: after the factor $1/(i\hbar)$ is extracted, the spin bracket and the classical bracket have the same structure constants $\epsilon_{ijk}$. The $\hbar$-free algebraic bracket $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$ is their common source — the quaternion cross product is the algebraic expression of the same $\mathrm{SU}(2)$ structure — and $\hbar$ enters only as the scale that converts the dimensionless algebraic direction $i\vec e_k$ into a physical spin. In this realization the normalization factor $1/(i\hbar)$ of the correspondence is not a numerical accident to be checked; it is the unit conversion implied by the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and the sign is fixed by the orientation of the cross product.
 
 **Where the framework breaks the correspondence.** The canonical pair cannot be realized this way. The relation
 $$
-[\tilde Q_1,\tilde Q_2] = i\hbar\,e_t
+[\tilde H_1,\tilde H_2] = i\hbar\,e_t
 $$
-has **no solution** with $\tilde Q_1,\tilde Q_2\in\mathbb{M}_+$: the commutator of two Hermitian elements of $\mathbb{B}$ is a pure real quaternion and has no scalar part, whereas $i\hbar e_t$ is purely scalar. Equivalently, the trace of the left side vanishes while $\mathrm{Tr}(i\hbar e_t)=2i\hbar\neq0$. The obstruction is not special to the biquaternion notation: it is the familiar statement that the Heisenberg algebra has no finite-dimensional representation, and the finite-dimensional matrix algebra $M_2(\mathbb{C})$ is exactly the setting in which no such representation exists. The framework therefore carries the **compact $\mathrm{SU}(2)$ sector** of the correspondence — the angular-momentum bracket, with no $\hbar$ in the algebra and no deformation — and not the **Heisenberg sector**, in which the correspondence has a parameter to expand in. Of the two independent checks that opened the article, one lives inside $\mathbb{B}$ and one does not.
+has **no solution** with $\tilde H_1,\tilde H_2\in\mathbb{M}_+$: the commutator of two Hermitian elements of $\mathbb{B}$ is a pure real quaternion and has no scalar part, whereas $i\hbar e_t$ is purely scalar. Equivalently, the trace of the left side vanishes while $\mathrm{Tr}(i\hbar e_t)=2i\hbar\neq0$. The obstruction is not special to the biquaternion notation: it is the familiar statement that the Heisenberg algebra has no finite-dimensional representation, and the finite-dimensional matrix algebra $M_2(\mathbb{C})$ is exactly the setting in which no such representation exists. The framework therefore carries the **compact $\mathrm{SU}(2)$ sector** of the correspondence — the angular-momentum bracket, with no $\hbar$ in the algebra and no deformation — and not the **Heisenberg sector**, in which the correspondence has a parameter to expand in. Of the two independent checks that opened the article, one lives inside $\mathbb{B}$ and one does not.
 
 **What this does and does not show.** It shows that the resemblance between the Poisson bracket and the commutator is not a story that must be told about infinite-dimensional operator algebras from the start: a finite-dimensional algebra already realizes it exactly on the compact, quadratic sector, with the $\hbar$ supplied by the physical identification. It does not show that the framework realizes the correspondence in general, and it cannot: the deformation that replaces the isomorphism is a statement about a family of products indexed by $\hbar$, and a single fixed finite-dimensional algebra is not such a family. The order-$\hbar^2$ terms of the previous sections have no home in $\mathbb{B}$; they belong to the canonical sector that $\mathbb{B}$ excludes. Reading the correspondence into the biquaternion framework is therefore legitimate for the angular-momentum algebra and unsupported for anything beyond it.
 
@@ -330,7 +330,7 @@ $$
 $$
 The leading failure of the bracket correspondence is therefore at order $\hbar^2$ — for $f=q^3$, $g=p^3$, the classical bracket $9q^2p^2$ becomes $9q^2p^2-\tfrac32\hbar^2$ — and that residual is not small at any point of phase space; it is a constant. The $\hbar\to0$ limit is formal, dimensionful, and singular as an algebra statement: the Poisson algebra is the leading term of a deformation, not the $\hbar=0$ fibre of an isomorphism, and recovering the quantum algebra from it requires choosing an ordering.
 
-In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde Q_1,\tilde Q_2]=-2(\vec Q_1\times\vec Q_2)$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde Q_1,\tilde Q_2]=i\hbar e_t$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
+In the biquaternion framework, the observables are the Hermitian elements of $\mathbb{M}_+$ and the commutator is the $\hbar$-free algebraic bracket $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$. The framework realizes the angular-momentum correspondence exactly, with $\hbar$ entering through the identification $\tilde S_k=(\hbar/2)i\vec e_k$, and it cannot realize the canonical one, because the relation $[\tilde H_1,\tilde H_2]=i\hbar e_t$ has no solution in $\mathbb{M}_+$. The resemblance is real on the compact sector and absent on the sector that carries the deformation.
 
 ## Summary of Notation
 
@@ -352,16 +352,16 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian (observables) and anti-Hermitian (generators) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\tilde H=h_te_t+i\vec h$ | Hermitian observable |
-| $[\tilde Q_1,\tilde Q_2]=-2(\vec Q_1\times\vec Q_2)$ | Biquaternion commutator ($\hbar$-free) |
+| $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$ | Biquaternion commutator ($\hbar$-free) |
 | $\tilde S_k=(\hbar/2)i\vec e_k$ | Spin-$\tfrac12$ observables |
 | $\mathrm{Tr}(\tilde Q\tilde H)=2\,\mathrm{Sc}(\tilde Q\tilde H)$ | Trace formula |
 
 ## Further Reading
 
-- *Angular Momentum and Spin in Biquaternionic Form* (`articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md`), for the commutator $[\tilde Q_1,\tilde Q_2]=-2(\vec Q_1\times\vec Q_2)$ and the spin relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ used in the framework section.
+- *Angular Momentum and Spin in Biquaternionic Form* (`articles_physics/angular-momentum-and-spin-in-biquaternionic-form.md`), for the commutator $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$ and the spin relations $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ used in the framework section.
 - *Quantum Physics in Biquaternionic Form* (`articles_physics/quantum-physics-in-biquaternionic-form.md`), for the observables in $\mathbb{M}_+$, the trace formula, and the dynamics that supply the quantum side of the correspondence.
 - *Spin-1/2 Quantum Physics in Biquaternionic Form* (`articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.md`), for the identification of $\mathbb{M}_+$ with the qubit observables and the isomorphism $\vec e_k\mapsto-i\sigma_k$ used throughout the framework section.
-- *The Harmonic Oscillator in Biquaternionic Form* (`articles_physics/the-harmonic-oscillator-in-biquaternionic-form.md`), for the proof that $[\tilde Q_1,\tilde Q_2]=i\hbar e_t$ has no solution in $\mathbb{M}_+$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.
+- *The Harmonic Oscillator in Biquaternionic Form* (`articles_physics/the-harmonic-oscillator-in-biquaternionic-form.md`), for the proof that $[\tilde H_1,\tilde H_2]=i\hbar e_t$ has no solution in $\mathbb{M}_+$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the algebra-level meaning of "derivation" and for the inner derivations $\mathrm{ad}_a=[a,\cdot]$, the biquaternion instance of the commutator-as-derivation used in the article.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the role of $\mathbb{M}_+$ as the operator space and the reversible/irreversible dichotomy.
 - *Quantum Physics: Foundations and Structure* (`articles_physics/quantum-physics-foundations-and-structure.md`), for the postulational account of observables, commutators, and the classical limit against which the correspondence is stated.

@@ -10,7 +10,7 @@ $$
 \vec q' = (x',y',z') \in \mathbb{R}^{3},
 $$
 
-a **real** scalar part and three **imaginary** vector parts. This article reads the restriction to that
+a **real** scalar part and three **imaginary** vector components. This article reads the restriction to that
 sector of the one product by which informational operations compose — the **general plain bilinear
 product** $(\mathrm{GPA})$, written $\tilde Q_1\tilde Q_2$, the multiplication of the algebra itself — and asks
 what its scalar part measures there. It is the informational companion of *The Bilinear Product on the Material Sector*; the product on the whole algebra is *The Products, Their Forms and Their Norms*,
@@ -31,7 +31,7 @@ order-independent half always, and material in its order-dependent half; the **s
 **either** sector is informational, so $\mathbb{M}_+$ is the sector that receives the squares. The
 nonzero idempotents of the algebra lie in $\mathbb{M}_+$ alone, and they lie **on the zero-divisor cone**
 — so on this side of the algebra the cone is not a mass shell but the **purity boundary of the state
-space**, the set of the pure states.
+space**, whose trace-one slice is the set of the pure states.
 
 **Placement and boundaries.** This article is the informational-sector companion of *The Products, Their Forms and Their Norms*, in the biquaternion-algebra group, and the second of the two sector companions, the first being *The Bilinear Product on the Material Sector*. Here the same product is read on $\mathbb{M}_+$ alone: the sector sign on the
 informational side, the sector structure of an informational composite, the square as a map into the
@@ -85,7 +85,7 @@ without cone; the second is the **interval**, the general quaternionic bilinear 
 zero set is the zero-divisor cone. The two differ by twice the coefficient square of the vector part,
 
 $$
-\langle\tilde Q,\tilde Q\rangle_{\natural} - 2\,\vec Q\!\cdot\!\vec Q,
+\langle\tilde Q,\tilde Q\rangle_{\natural} - \langle\tilde Q,\tilde Q\rangle = 2\,\vec Q\!\cdot\!\vec Q,
 \qquad \vec Q\!\cdot\!\vec Q = Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$
 
@@ -119,8 +119,8 @@ $\{\tilde Q_1,\tilde Q_2\}=0$, so that the informational half vanishes. A generi
 operations composes to an element with one part in each sector: the informational part is the
 order-independent half $\tfrac12\{\tilde Q_1,\tilde Q_2\}$, and the order dependence is carried by the
 material half $\tfrac12[\tilde Q_1,\tilde Q_2]$, which changes sign when the two operations are exchanged.
-The rule is the same as on $\mathbb{M}_-$: for two elements of **one** sector the anticommutator stays in
-that sector and the commutator leaves it, and it is only the sign form that differs.
+The rule is the same as on $\mathbb{M}_-$ in one respect and opposite in another: for two elements of **one** sector one of the two halves stays in
+that sector and the other leaves it; on $\mathbb{M}_+$ the anticommutator stays and the commutator leaves, while on $\mathbb{M}_-$ it is the reverse.
 
 **Remark (verified).** For $100$ random pairs of Hermitian elements the anticommutator is fixed by the
 dagger and the commutator anti-fixed, to machine precision, and the two halves sum to the composite; the
@@ -266,7 +266,7 @@ precision, and $\mathrm{Tr}(\tilde{Ϛ}^{2})$ equals $\frac12(1+\lvert\vec r\rver
 two sides of the algebra**: on $\mathbb{M}_-$ it is the **light cone**, the wall of the massless and the
 boundary of the reversible four-vectors, and on $\mathbb{M}_+$ it is the **purity boundary**, the locus
 of the pure states and the boundary of the invertible states of the state space. The object is one and
-the readings are two, because the same norm is the interval on one side and the purity on the other. A
+the readings are two, because the same norm is the interval on one side and measures purity on the other. A
 pure state is the informational analogue of a lightlike displacement: both are elements of vanishing
 norm, both are non-invertible, and neither propagates a proper time of its own.
 
@@ -428,7 +428,7 @@ the algebra lie in $\mathbb{M}_+$ alone, they form the Bloch sphere of the pure 
 the zero-divisor cone; on the unit-trace slice the interval is $\frac14(1-\lvert\vec r\rvert^{2})$ and
 the sector sign $\frac14(1+\lvert\vec r\rvert^{2})$, so on this side of the algebra the cone is the
 **purity boundary of the state space**: pure states are the zero divisors, mixed states the interior
-units, and the purity is the difference of the two metrics. The reversibility of the general plain bilinear product is
+units, and the purity is read by the difference of the two metrics. The reversibility of the general plain bilinear product is
 carried by the norm $\langle\tilde Q\rangle_{\natural}$ and not by $\langle\cdot,\cdot\rangle$. The distinctions are labelled throughout: what is proved is the
 algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 

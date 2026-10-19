@@ -14,7 +14,7 @@ a multiple of the identity, because a scalar potential couples to the scalar slo
 
 The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the trace pairing. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
 
 ## The One-Dimensional Biquaternion Schrödinger Equation
 
@@ -229,7 +229,7 @@ $$
 T = \left[1 + \frac{V_0^2\,\sin^2(k_2 a)}{4E\,(E-V_0)}\right]^{-1},
 $$
 
-which oscillates between one and the minimum value $[1+V_0^2/4E(E-V_0)]^{-1}$ reached at $k_2a = (n+\tfrac12)\pi$. These are the Ramsauer–Townsend resonances: the barrier becomes transparent at the energies for which the well supports an integer number of half wavelengths, and it is most reflective for the half-integer values. The transmission never vanishes for $E>V_0$; at $E\to V_0^+$ the expression tends to the removable value $[1+mV_0a^2/2\hbar^2]^{-1}$, the same limit that the below-barrier formula approaches from the other side and that the matching computation reproduces numerically.
+which oscillates between one and the minimum value $[1+V_0^2/4E(E-V_0)]^{-1}$ reached at $k_2a = (n+\tfrac12)\pi$. These are the Ramsauer–Townsend resonances: the barrier becomes transparent at the energies for which it spans an integer number of half wavelengths, and it is most reflective for the half-integer values. The transmission never vanishes for $E>V_0$; at $E\to V_0^+$ the expression tends to the removable value $[1+mV_0a^2/2\hbar^2]^{-1}$, the same limit that the below-barrier formula approaches from the other side and that the matching computation reproduces numerically.
 
 For a thick barrier, $\exp(\kappa a)\gg1$, the exact formula reduces to the exponential law
 

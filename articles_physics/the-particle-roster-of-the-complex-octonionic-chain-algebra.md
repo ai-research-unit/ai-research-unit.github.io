@@ -84,7 +84,7 @@ $$
 \underbrace{1(0)+3(\tfrac13)+3(\tfrac23)+1(1)}_{S^u} \ \oplus\ \underbrace{1(0)+3(-\tfrac13)+3(-\tfrac23)+1(-1)}_{S^{u,c}} ,
 $$
 
-and this is one generation: the neutrino, the three up-type and three down-type colour states and their conjugates, the electron and the positron, together with the two neutral states. The identification of the second ideal's spectrum with the negated spectrum of the first is the literature's bookkeeping rather than a computation reproduced in the corpus, and the mathematics article that establishes the first ideal records exactly this bookkeeping of the conjugate half as not reproduced. It is the first of two places in the construction where an interpretation is doing work.
+and this is one generation: the two neutral states, the three up-type and three down-type colour states and their conjugates, and the electron and the positron. The identification of the second ideal's spectrum with the negated spectrum of the first is the literature's bookkeeping rather than a computation reproduced in the corpus, and the mathematics article that establishes the first ideal records exactly this bookkeeping of the conjugate half as not reproduced. It is the first of two places in the construction where an interpretation is doing work.
 
 ## The Colour Triples and Their Conjugation
 

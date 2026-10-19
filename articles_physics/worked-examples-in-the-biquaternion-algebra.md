@@ -36,8 +36,8 @@ The remarkable real subspaces are the fixed and anti-fixed spaces of the three c
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ (centre) | $\tilde{Q}^{\natural}=\tilde{Q}$ | $(2+i)e_t$ |
 | $\mathrm{Vect}(\mathbb{B})$ (vector) | $\tilde{Q}^{\natural}=-\tilde{Q}$ | $(1-i)\vec e_x+3\vec e_y+i\vec e_z$ |
-| $\mathbb{H}_{\mathbb{B}}$ (quaternion) | $\tilde{Q}^{*}=\tilde{Q}$ | $2e_t+\vec e_x+3\vec e_y$ |
-| $i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion) | $\tilde{Q}^{*}=-\tilde{Q}$ | $ie_t-i\vec e_x+i\vec e_z$ |
+| $\mathbb{H}_{\mathbb{B}}$ (quaternion) | $\bar{\tilde{Q}}=\tilde{Q}$ | $2e_t+\vec e_x+3\vec e_y$ |
+| $i\mathbb{H}_{\mathbb{B}}$ (anti-quaternion) | $\bar{\tilde{Q}}=-\tilde{Q}$ | $ie_t-i\vec e_x+i\vec e_z$ |
 | $\mathbb{M}_+$ (Hermitian) | $\tilde{Q}^{*}=\tilde{Q}$ | $2e_t-i\vec e_x+i\vec e_z$ |
 | $\mathbb{M}_-$ (anti-Hermitian) | $\tilde{Q}^{\flat}=\tilde{Q}$ | $ie_t+\vec e_x+3\vec e_y$ |
 

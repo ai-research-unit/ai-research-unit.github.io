@@ -54,7 +54,7 @@ $$
 z \mapsto i z = -ct + i\,ct' ,
 $$
 
-which is the quarter turn of the complex time plane: the informational time becomes the material coordinate, and the material time becomes minus the informational one.
+which is the quarter turn of the complex time plane: the informational time becomes the imaginary part and the material time the negative real part.
 
 Two properties of the map fix what a clock built on it can be. The first is the order. The square of the generator is $-e_t$, the antipodal map of the plane and not the identity, and the fourth power is $e_t$; the orbit of a central coordinate under the generator is therefore the four-element cycle
 

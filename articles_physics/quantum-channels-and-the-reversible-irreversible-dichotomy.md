@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Quantum Physics in Biquaternionic Form* developed the qubit in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$: states and observables are elements of the Hermitian subspace $\mathbb{M}_+$; reversible evolution is rotor conjugation $\tilde{Ϛ} \mapsto \tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ by a unitary biquaternion; measurement is the sandwich operation $\tilde{Ϛ} \mapsto \tilde{P}\tilde{Ϛ}\tilde{P}$. It listed the dynamics of *open* systems — dissipation, decoherence, and the Lindblad equation — among its open questions.
+The companion article *Quantum Physics in Biquaternionic Form* developed the qubit in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$: states and observables are elements of the Hermitian subspace $\mathbb{M}_+$; reversible evolution is rotor conjugation $\tilde{Ϛ} \mapsto \tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ by a unitary biquaternion; measurement is the sandwich operation $\tilde{Ϛ} \mapsto \tilde\Pi\tilde{Ϛ}\tilde\Pi$. It listed the dynamics of *open* systems — dissipation, decoherence, and the Lindblad equation — among its open questions.
 
 This article takes up that question. Its subject is the **general state map** on $\mathbb{M}_+$: the most general process carrying a state of the informational sector to a state of the informational sector — in quantum information theory, a **quantum channel** or **quantum operation**. We develop the requirements that define it — linearity, complete positivity, and trace preservation — in the biquaternion language, and then examine the **reversible/irreversible dichotomy** they produce.
 
@@ -58,7 +58,7 @@ $$
 \mathrm{Tr}\bigl(\Phi(\tilde{Ϛ})\,\tilde{H}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\,\Phi^{*}(\tilde{H})\bigr) \qquad \text{for all } \tilde{Ϛ}, \tilde{H}.
 $$
 
-Trace preservation of $\Phi$ is equivalent to **unitality** of the dual, $\Phi^{*}(e_t) = e_t$: setting $\tilde{H} = e_t$ gives $\mathrm{Tr}(\Phi(\tilde{Ϛ})) = \mathrm{Tr}(\tilde{Ϛ}\,\Phi^{*}(e_t))$, which equals $\mathrm{Tr}(\tilde{Ϛ})$ for every $\tilde{Ϛ}$ precisely when $\Phi^{*}(e_t) = e_t$. The duality is mediated throughout by the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ that gives the Born rule.
+Trace preservation of $\Phi$ is equivalent to **unitality** of the dual, $\Phi^{*}(e_t) = e_t$: setting $\tilde{H} = e_t$ gives $\mathrm{Tr}(\Phi(\tilde{Ϛ})) = \mathrm{Tr}(\tilde{Ϛ}\,\Phi^{*}(e_t))$, which equals $\mathrm{Tr}(\tilde{Ϛ})$ for every $\tilde{Ϛ}$ precisely when $\Phi^{*}(e_t) = e_t$. The duality is mediated throughout by the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ that gives the Born rule.
 
 ### The Kraus Representation
 
@@ -68,7 +68,7 @@ $$
 \Phi(\tilde{Q}) = \sum_l \tilde{K}_l\,\tilde{Q}\,\tilde{K}_l^{*} ,
 $$
 
-and it is trace preserving if and only if $\sum_l \tilde{K}_l^{*} \tilde{K}_l = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*} \tilde{H}\tilde{K}_l$, and the normalization is exactly $\Phi^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(\Phi) = \sum_{jk} \tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$, and complete positivity is the condition $J(\Phi) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
+and it is trace preserving if and only if $\sum_l \tilde{K}_l^{*} \tilde{K}_l = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*} \tilde{H}\tilde{K}_l$, and the normalization is exactly $\Phi^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(\Phi) = \sum_{jk} \tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$, written on a basis $\{\tilde E_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(\Phi) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
 
 The companion article already introduced this form for generalized measurements. The point here is that it describes *every* physical process, not only measurement.
 
@@ -143,7 +143,7 @@ for an isometry $\tilde{V}$ into the system tensor an environment, with $\mathrm
 
 Geometrically, a qubit channel is an affine map of the Bloch ball into itself, $\vec r \mapsto M\vec r + \vec t$. The unitary channels are the rotations $M \in SO(3)$, $\vec t = 0$. Two canonical types are distinguished by whether the origin is fixed:
 
-- **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\Delta_p(\tilde{Ϛ}) = (1-p)\tilde{Ϛ} + p\,e_t/2$, with Bloch map $\vec r \mapsto (1-p)\vec r$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,\vec e_x,\ \sqrt{\tfrac{p}{4}}\,\vec e_y,\ \sqrt{\tfrac{p}{4}}\,\vec e_z\}$, whose normalization uses $\vec e_k^{*} \vec e_k = e_t$.
+- **Unital channels** have $\vec t = 0$ and fix the maximally mixed state, contracting the ball toward the centre. The **depolarizing channel** $\Delta_p(\tilde{Ϛ}) = (1-p)\tilde{Ϛ} + p\,e_t/2$, with Bloch map $\vec r \mapsto (1-p)\vec r$, is completely positive and trace preserving for $0 \leq p \leq 1$; in the biquaternion algebra it has Kraus operators $\{\sqrt{1-\tfrac{3p}{4}}\,e_t,\ \sqrt{\tfrac{p}{4}}\,i\vec e_x,\ \sqrt{\tfrac{p}{4}}\,i\vec e_y,\ \sqrt{\tfrac{p}{4}}\,i\vec e_z\}$, whose normalization uses $(i\vec e_k)^{*}(i\vec e_k) = e_t$.
 - **Non-unital channels** have $\vec t \neq 0$ and move the maximally mixed state off centre. The **amplitude-damping channel** is the standard example, acting on the Bloch vector as $(r_1, r_2, r_3) \mapsto (\sqrt{1-\gamma}\,r_1,\ \sqrt{1-\gamma}\,r_2,\ \gamma + (1-\gamma)r_3)$, $0 \leq \gamma \leq 1$, contractive for $\gamma > 0$ and the identity only at $\gamma = 0$.
 
 Dephasing, treated next, is unital: it contracts the ball toward an *axis* rather than its centre.
@@ -177,7 +177,7 @@ It is completely positive and trace preserving with the three Kraus operators $\
 
 ### The Bloch Vector Formula
 
-Put $\alpha = i\vec u$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \alpha)$ with $\alpha^\dagger = \alpha$ and $\alpha^2 = e_t$. A direct expansion gives
+Put $\alpha = i\vec u$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \alpha)$ with $\alpha^{*} = \alpha$ and $\alpha^2 = e_t$. A direct expansion gives
 
 $$
 \tilde\Pi_1\,\tilde{Q}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{Q}\,\tilde\Pi_2 = \tfrac{1}{2}\left(\tilde{Q} + \alpha\,\tilde{Q}\,\alpha\right),
@@ -218,7 +218,7 @@ $$
 |\vec r'|^2 = (1-p)^2\,r_\perp^2 + r_\parallel^2 \leq |\vec r|^2 ,
 $$
 
-with equality only if $p = 0$, or the state is already on the axis, or $r_\perp = 0$. The purity $\mathrm{Tr}(\tilde{Ϛ}'^2) = \tfrac{1}{2}(1 + |\vec r'|^2)$ therefore strictly decreases for any off-axis state when $0 < p < 1$, and the von Neumann entropy
+with equality only if $p = 0$ or $r_\perp = 0$. The purity $\mathrm{Tr}(\tilde{Ϛ}'^2) = \tfrac{1}{2}(1 + |\vec r'|^2)$ therefore strictly decreases for any off-axis state when $0 < p < 1$, and the von Neumann entropy
 
 $$
 S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-,
@@ -234,7 +234,7 @@ strictly increases, since $S$ is a decreasing function of $|\vec r|$. A pure sta
 
 Collecting the results, the dichotomy has the following exact algebraic form.
 
-- **States and observables live in $\mathbb{M}_+$**, the Hermitian subspace, and are paired by $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$, the Born rule.
+- **States and observables live in $\mathbb{M}_+$**, the Hermitian subspace, and are paired by $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$, the Born rule.
 - **Reversible processes are the inner automorphisms** $\tilde{Ϛ} \mapsto \tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ by matrix-unitary biquaternions $\tilde{U} \in \mathrm{U}(2)$. They are exactly the channels of Kraus rank one, and they preserve purity. Their one-parameter subgroups have generators $-i\tilde{H}/\hbar$ lying in the complementary subspace $\mathbb{M}_-$: the states live in $\mathbb{M}_+$, but their reversible motion is generated from $\mathbb{M}_-$.
 - **Irreversible processes are the remaining channels**: completely positive, trace-preserving maps of Kraus rank at least two. Their Kraus operators are arbitrary elements of $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, and their generators contain, besides a derivation by an $\mathbb{M}_-$ element, completely positive dissipators that are not derivations.
 
@@ -244,11 +244,11 @@ The dichotomy is therefore **not** a dichotomy between the two subspaces. It is 
 
 Under the interpretive hypothesis of the companion article, that $\mathbb{M}_+$ is the arena of an informational sector, this article is a theory of the **operations** of that sector. The states of $\mathbb{M}_+$ are informational configurations; a channel transforms them; the reversible channels are the deterministic, information-preserving transformations, and the irreversible channels are those in which information is lost to an environment the sector does not describe. Dephasing is the canonical such loss: it is decoherence, the destruction of phase relations, expressed as a map on $\mathbb{M}_+$.
 
-In this interpretation, reversibility is the regime in which the informational sector is closed and its evolution is generated by the material Hamiltonian; irreversibility is the regime in which the sector is open and its states are entangled with degrees of freedom outside the description, with Stinespring dilation making the discarded environment precise. Nothing here requires the material sector $\mathbb{M}_-$ to be "accessed" by the channel: the generator of the reversible part of the motion is an $\mathbb{M}_-$ element, but irreversibility itself is a property of the map on $\mathbb{M}_+$. As elsewhere in this series, the interpretive interpretation is a hypothesis and not a result; the channel formalism above is standard quantum information theory, and whether the Hermitian subspace is a distinct physical sector is the open question identified in *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
+In this interpretation, reversibility is the regime in which the informational sector is closed and its evolution is generated by the material Hamiltonian; irreversibility is the regime in which the sector is open and its states are entangled with degrees of freedom outside the description, with Stinespring dilation making the discarded environment precise. Nothing here requires the material sector $\mathbb{M}_-$ to be "accessed" by the channel: the generator of the reversible part of the motion is an $\mathbb{M}_-$ element, but irreversibility itself is a property of the map on $\mathbb{M}_+$. As elsewhere in this series, the interpretive reading is a hypothesis and not a result; the channel formalism above is standard quantum information theory, and whether the Hermitian subspace is a distinct physical sector is the open question identified in *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 
 ### What the Reformulation Does and Does Not Claim
 
-The framework **does** provide a natural algebraic home for the standard theory of quantum operations. Complete positivity is a property of maps on $\mathbb{B} \cong M_2(\mathbb{C})$; trace preservation is the statement that the dual fixes $e_t$; the Kraus operators are elements of $\mathbb{B}$; and the reversible/irreversible split is the split between Kraus rank one and higher rank, equivalently between inner automorphisms and general completely positive maps. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ makes the state/observable duality and the Schrödinger/Heisenberg duality of channels the same operation.
+The framework **does** provide a natural algebraic home for the standard theory of quantum operations. Complete positivity is a property of maps on $\mathbb{B} \cong M_2(\mathbb{C})$; trace preservation is the statement that the dual fixes $e_t$; the Kraus operators are elements of $\mathbb{B}$; and the reversible/irreversible split is the split between Kraus rank one and higher rank, equivalently between inner automorphisms and general completely positive maps. The trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ makes the state/observable duality and the Schrödinger/Heisenberg duality of channels the same operation.
 
 The framework **does not** claim to explain why a given physical process is irreversible, to derive the environment a channel traces over, or to resolve the measurement problem. The reformulation changes the vocabulary of the dichotomy, not its physics; the selection problem — why one outcome, or one channel, rather than another — is untouched.
 
@@ -299,7 +299,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State of the informational sector |
 | $\tilde{H} = h_t e_t + i\vec h$ | Observable / Hamiltonian |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotents (pure states) |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$ | Trace-preservation condition |
 | $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*}\tilde{H}\tilde{K}_l$ | Dual (Heisenberg-picture) map |

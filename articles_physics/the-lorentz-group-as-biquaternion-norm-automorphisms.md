@@ -7,7 +7,7 @@ The group that acts on the material sector of the biquaternion framework has so 
 The point of the automorphism interpretation is that the biquaternion norm is not an extra structure laid on the algebra. It is the algebra's own multiplicative quadratic form,
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\overline{\tilde{Q}} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^2,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^2,
 $$
 
 and it satisfies
@@ -36,7 +36,7 @@ The biquaternion norm is the quadratic map
 $$
 N:\ \mathbb{B}\longrightarrow\mathbb{C},
 \qquad
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\overline{\tilde{Q}} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
 whose polarization is the symmetric bilinear form
@@ -62,10 +62,10 @@ Two properties make $\langle\cdot\rangle_{\natural}$ the algebra's own form rath
 
 $$
 \langle\tilde{Q}\tilde Q_1\rangle_{\natural}
-= \tilde{Q}\tilde Q_1\,\overline{\tilde{Q}\tilde Q_1}
-= \tilde{Q}\tilde Q_1\,\overline{\tilde Q_1}\,\overline{\tilde{Q}}
-= \tilde{Q}\,\langle\tilde Q_1\rangle_{\natural}\,\overline{\tilde{Q}}
-= \langle\tilde Q_1\rangle_{\natural}\,\tilde{Q}\overline{\tilde{Q}}
+= \tilde{Q}\tilde Q_1\,(\tilde{Q}\tilde Q_1)^{\natural}
+= \tilde{Q}\tilde Q_1\,\tilde Q_1^{\natural}\,\tilde{Q}^{\natural}
+= \tilde{Q}\,\langle\tilde Q_1\rangle_{\natural}\,\tilde{Q}^{\natural}
+= \langle\tilde Q_1\rangle_{\natural}\,\tilde{Q}\tilde{Q}^{\natural}
 = \langle\tilde{Q}\rangle_{\natural}\,\langle\tilde Q_1\rangle_{\natural},
 $$
 
@@ -219,7 +219,7 @@ The identity component has an explicit algebraic form. A **Lorentz rotor** is a 
 $$
 \tilde U_{\mathrm L}\in\mathbb{B},
 \qquad
-\tilde U_{\mathrm L}\overline{\tilde U_{\mathrm L}} = e_t ,
+\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t ,
 $$
 
 and it acts by **conjugation**,
@@ -233,7 +233,7 @@ Three properties, each a one-line verification, are the content of the identific
 **It preserves the slice.** If $\tilde{Q}^{*} = -\tilde{Q}$ then
 
 $$
-\left(\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\right)^\dagger
+\left(\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\right)^{*}
 = \tilde U_{\mathrm L}\tilde{Q}^{*}\tilde U_{\mathrm L}^{*}
 = -\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*},
 $$
@@ -409,7 +409,7 @@ $$
 so the tangent space at the identity is
 
 $$
-\mathrm{SL}(2,\mathbb{C}) = \{\tilde{Q}\in\mathbb{B} : \mathrm{Sc}(\tilde{Q}) = 0\},
+\mathfrak{sl}(2,\mathbb{C}) = \{\tilde{Q}\in\mathbb{B} : \mathrm{Sc}(\tilde{Q}) = 0\},
 $$
 
 the six-**real**-dimensional space spanned by the three real units and the three imaginary units,
@@ -428,7 +428,7 @@ $$
 [\mathcal{K}_\mu,\mathcal{K}_\nu] = -2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda .
 $$
 
-The first two say that the rotations close and that the boosts transform as a vector under them; the third, with its minus sign, is the algebraic statement that two boosts do not close into a boost but into a rotation plus a boost. This is the infinitesimal form of the Thomas–Wigner rotation, and the sign is the one that makes the boost directions a vector and the rotation directions an axial vector.
+The first two say that the rotations close and that the boosts transform as a vector under them; the third, with its minus sign, is the algebraic statement that two boosts do not close into a boost but into a rotation. This is the infinitesimal form of the Thomas–Wigner rotation, and the sign is the one that makes the boost directions a vector and the rotation directions an axial vector.
 
 
 **The complexification and the two factors.** Complexifying the real Lie algebra and forming
@@ -455,7 +455,7 @@ $$
 (\mathrm{i} i)^2 = \mathrm{i}^2 i^2 = +e_t .
 $$
 
-This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_\mu,\mathcal{N}^{+}_\nu]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[\vec e_\mu,\vec e_\nu] = 2\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, so the product is $4\varepsilon_{\mu\nu\lambda}\left(1+\mathrm{i} i\right)\vec e_\lambda/16 = \varepsilon_{\mu\nu\lambda}\mathcal{N}^{+}_\lambda$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting $\mathrm{SU}(2)$ algebras. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_\mu = i\vec e_\mu$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.
+This is what makes each combination close on itself with the same structure constants, and what makes the two commute: $\left(1 + \mathrm{i} i\right)\left(1 - \mathrm{i} i\right) = 1 - (\mathrm{i} i)^2 = 0$. For $[\mathcal{N}^{+}_\mu,\mathcal{N}^{+}_\nu]$ the central factor contributes $(1+\mathrm{i} i)^2 = 2(1+\mathrm{i} i)$ and the quaternion commutator contributes $[\vec e_\mu,\vec e_\nu] = 2\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, so the product is $4\varepsilon_{\mu\nu\lambda}\left(1+\mathrm{i} i\right)\vec e_\lambda/16 = \varepsilon_{\mu\nu\lambda}\mathcal{N}^{+}_\lambda$, as displayed. The combinations are the ones that diagonalize the adjoint action of the complexified boost generator. This is the Lie-algebra shadow of the group isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$ of the complex section: the two factors are the two commuting copies of the complexified rotation algebra. The care needed here is that $\mathrm{i}$ is the complexification unit and not the algebra's scalar imaginary; the latter already appears in $\mathcal{K}_\mu = i\vec e_\mu$, and conflating the two would be a notational error. The distinction is the same one that separates the real form $\mathrm{SO}(1,3)$ from its complexification.
 
 ## What the Algebra Supplies and What Is Standard
 
@@ -522,7 +522,7 @@ SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \langle\tilde U_{\mathrm L}\rangle_{\natural}=1,
 $$
 
-the map being two-to-one with kernel $\{\pm e_t\}$. Infinitesimally, the algebra is $\mathrm{SL}(2,\mathbb{C}) = \{X : \mathrm{Sc}(\tilde{Q})=0\}$, spanned by the rotation generators $\mathcal{J}_\mu = \vec e_\mu$ and the boost generators $\mathcal{K}_\mu = i\vec e_\mu$, with
+the map being two-to-one with kernel $\{\pm e_t\}$. Infinitesimally, the algebra is $\mathfrak{sl}(2,\mathbb{C}) = \{X : \mathrm{Sc}(X)=0\}$, spanned by the rotation generators $\mathcal{J}_\mu = \vec e_\mu$ and the boost generators $\mathcal{K}_\mu = i\vec e_\mu$, with
 
 $$
 [\mathcal{J}_\mu,\mathcal{J}_\nu] = 2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda,
@@ -576,7 +576,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\tilde U_{\mathrm L}$, $\langle\tilde U_{\mathrm L}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ | Rotor conjugation; the automorphism of the slice |
 | $\pi:SL(2,\mathbb{C})\to SO^+(1,3)$, $\ker\pi=\{\pm e_t\}$ | Two-to-one covering homomorphism |
-| $\mathrm{SL}(2,\mathbb{C}) = \{X:\mathrm{Sc}(\tilde{Q})=0\}$ | Lie algebra; $\mathcal{J}_\mu=\vec e_\mu$ (rotations), $\mathcal{K}_\mu=i\vec e_\mu$ (boosts) |
+| $\mathfrak{sl}(2,\mathbb{C}) = \{X:\mathrm{Sc}(X)=0\}$ | Lie algebra; $\mathcal{J}_\mu=\vec e_\mu$ (rotations), $\mathcal{K}_\mu=i\vec e_\mu$ (boosts) |
 | $[\mathcal{K}_\mu,\mathcal{K}_\nu]=-2\varepsilon_{\mu\nu\lambda}\mathcal{J}_\lambda$ | Boosts do not close; infinitesimal Wigner rotation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

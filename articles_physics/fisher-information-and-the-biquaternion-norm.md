@@ -49,7 +49,7 @@ $$
 and its biquaternion norm is
 
 $$
-N\!\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right)
+\langle\tilde{Ϛ}_1-\tilde{Ϛ}_2\rangle_{\natural}
 = \sum_k \left(\frac{i\left(r_k-s_k\right)}{2}\right)^2 e_t
 = -\frac{1}{4}\left|\vec r-\vec s\right|^2 e_t .
 $$
@@ -67,7 +67,7 @@ $$
 so that the Euclidean distance and the biquaternion norm of the difference carry the same information,
 
 $$
-\left|\vec r-\vec s\right|^2 = 2\,\mathrm{Tr}\!\left(\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right)^2\right) = -4\,\mathrm{Sc}\,N\!\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right).
+\left|\vec r-\vec s\right|^2 = 2\,\mathrm{Tr}\!\left(\left(\tilde{Ϛ}_1-\tilde{Ϛ}_2\right)^2\right) = -4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_1-\tilde{Ϛ}_2\rangle_{\natural}.
 $$
 
 Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the trace pairing is positive definite on $\mathbb{M}_+$ (signature $(4,0)$), while the biquaternion norm restricted to the traceless elements $\tilde{Ϛ}_1-\tilde{Ϛ}_2 = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the trace pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
@@ -189,7 +189,7 @@ $$
 
 which is the general classical Fisher information of a binary measurement on a qubit state. Two specialisations are worth recording. If the path is radial and the measurement is along the state, so that $\vec u = \vec u_r$, the result reduces to $F = \left(dr/d\theta\right)^{2}/(1-r^2)$, whose metric coefficient is the rank-one result above. If the measurement axis is orthogonal to the state and to its tangent, the information vanishes: the outcome distribution is uniform, and no parameter can be read from it.
 
-The measurement family also makes the divergence at the boundary transparent. As $\vec u\cdot\vec r\to\pm1$ the outcome distribution becomes deterministic, and the information diverges whenever the parameter keeps moving the outcome probabilities, $\partial/\partial\theta\,(\vec u\cdot\vec r)\neq0$; a state at the boundary of the ball is a pure state, a zero divisor, and the corresponding classical distribution has one outcome of probability one. A deterministic distribution distinguishes a parameter by its vanishing probability of the other outcome, and that is a signal of unbounded precision per sample. The qualification is not idle. A path that arrives at the boundary tangentially in the direction of the measurement axis, so that $\partial/\partial\theta\,(\vec u\cdot\vec r)\to0$ at the same rate as $1-(\vec u\cdot\vec r)^2\to0$, keeps the information finite there: on the interior path $\vec r(\theta) = (1-\theta^2)(\cos\theta\,\vec e_x + \sin\theta\,\vec e_y)$ read along $\vec u = \vec e_x$ one has $\vec u\cdot\vec r = (1-\theta^2)\cos\theta$, and the information tends to $3$ as $\theta\to0$ even though the state tends to a pure state.
+The measurement family also makes the divergence at the boundary transparent. As $\vec u\cdot\vec r\to\pm1$ the outcome distribution becomes deterministic, and the information diverges whenever the parameter keeps moving the outcome probabilities, $\partial/\partial\theta\,(\vec u\cdot\vec r)\neq0$; a state at the boundary of the ball is a pure state, a zero divisor, and the corresponding classical distribution has one outcome of probability one. A deterministic distribution distinguishes a parameter by its vanishing probability of the other outcome, and that is a signal of unbounded precision per sample. The qualification is not idle. A path that arrives at the boundary tangentially to the sphere, at the point where the measurement axis meets it, so that $\partial/\partial\theta\,(\vec u\cdot\vec r)\to0$ at the same rate as $1-(\vec u\cdot\vec r)^2\to0$, keeps the information finite there: on the interior path $\vec r(\theta) = (1-\theta^2)(\cos\theta\,\vec e_x + \sin\theta\,\vec e_y)$ read along $\vec u = \vec e_x$ one has $\vec u\cdot\vec r = (1-\theta^2)\cos\theta$, and the information tends to $3$ as $\theta\to0$ even though the state tends to a pure state.
 
 ## The Reciprocity and Its Meaning
 

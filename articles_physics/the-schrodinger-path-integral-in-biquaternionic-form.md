@@ -10,7 +10,7 @@ The biquaternion content of the Schrödinger path integral is therefore a statem
 
 The article is organised as follows. The next section derives the transition kernel from the evolution operator, computes the short-time kernel, and takes the Trotter limit to the sum over paths. The third and fourth sections evaluate the free and oscillator kernels exactly and verify their composition. The fifth shows how the kernel reproduces the biquaternion Schrödinger equation in the infinitesimal-time limit. The sixth obtains the semiclassical kernel and its van Vleck determinant. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $e_j^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)]e_t$, central. The coordinate $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the argument of the field.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, central $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{M}_\pm$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$; and the Hamiltonian of a scalar particle is $H=[-\frac{\hbar^2}{2m}\nabla^2+V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)]e_t$, central. The coordinate $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the argument of the field.
 
 ## From the State-Vector Equation to a Sum over Paths
 
@@ -91,7 +91,7 @@ K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,
 + O(\varepsilon^2).
 $$
 
-The short-time kernel is central. Its phase is $(i/\hbar)$ times the short-time Lagrangian action $L\varepsilon = \frac{m|\vec\Delta|^2}{2\varepsilon^2}\varepsilon - V\varepsilon$, and its prefactor is built from the central $i$, the central real numbers $m,\hbar,\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector in space and not an algebra element; the module factor does not appear in the kernel at all.
+The short-time kernel is central. Its phase is $(i/\hbar)$ times the short-time Lagrangian action $L\varepsilon = \frac{m|\vec\Delta|^2}{2\varepsilon^2}\varepsilon - V\varepsilon$, and its prefactor is built from the central $i$, the central real numbers $m,\hbar,\varepsilon$, and $e_t$. The only non-central object in the construction is the displacement $\vec\Delta$, which is a real vector of configuration space rather than an element of the state module; the module factor does not appear in the kernel at all.
 
 ### The Trotter product and the measure
 
@@ -341,7 +341,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $e_j^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_j^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the phase and the kernel |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |

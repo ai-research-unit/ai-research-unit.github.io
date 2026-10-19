@@ -23,7 +23,7 @@ This is the set of elements that commute with every element of the algebra; phys
 
 It carries **both temporal directions and no spatial one**. The real direction, $e_t$, carries the informational time $ct'$; the imaginary direction, $ie_t$, carries the material time $ict$. The single complex coordinate $z = ct' + ict$ is the complex time: the two times of the framework on one complex axis.
 
-Its physics is the physics of a number. A quantity that can take a definite value at the same time as every other is a central quantity, and the sector is exactly that: the complex time, the energy as a global scalar, and the global phase. The Hermitian element $h_t e_t$ generates the phase $\exp(-i h_t t/\hbar)e_t$, which acts on every object of the algebra in the same way, which no measurement can detect by interference, and which is nevertheless indispensable to the dynamics. This is the c-number sector, the classical part of the algebra.
+Its physics is the physics of a number. A quantity that can take a definite value at the same time as every other is a central quantity, and the sector is exactly that: the complex time, the energy as a global scalar, and the global phase. The Hermitian element $h_t e_t$ generates the phase $\exp(-i h_t t/\hbar)e_t$; it acts on every object of the algebra in the same way, no measurement can detect it by interference, and it is nevertheless indispensable to the dynamics. This is the c-number sector, the classical part of the algebra.
 
 **Its area pairing.** The two temporal directions $e_t$ and $ie_t$ form one **canonical pair**, and the complex time sector is the sector of one degree of freedom. The four forms of the algebra carry, besides their real parts, an alternating companion — the pairing whose value on two elements is an area — and that companion is non-degenerate exactly on the two sectors of the complex time and of the complex space (*Remarkable Subspaces and the Four Forms*). Here it is of rank $2$, and its one non-zero entry pairs the informational time $ct'$ with the material time $ict$; on the material time alone, or on the informational time alone, it vanishes. The complex axis is therefore not only two directions written on one line: it is one canonical pair, and the area pairing is what the line carries besides the two coordinates. This is a different object from the global phase just named, and the two must not be conflated: the global phase is a number, and the area pairing is what makes the two times conjugate.
 
@@ -44,10 +44,10 @@ This is the set of elements with no coefficient carrying the central imaginary: 
 It carries the **informational time with the material space**,
 
 $$
-\tilde{Q} = (ct')\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z = ct'\,e_t + x \vec e_x + y \vec e_y + z \vec e_z .
+\tilde{Q} = ct'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z .
 $$
 
-Its physics is the Euclidean four-dimensional geometry. Because no coefficient carries the $i$, the $ict$ writing is unavailable inside the sector: the temporal coefficient is real, the four-dimensional form is positive definite of signature $(4,0)$, there is no null direction and no light cone, and no direction is singled out as time. This is exactly what the Wick rotation produces, and it is why the sector is called real. The unit elements are the rotation rotors, and their action is the rotation of the material space, with the two-to-one cover of the rotation group.
+Its physics is the Euclidean four-dimensional geometry. Because no coefficient carries the $i$, the $ict$ writing is unavailable inside the sector: the temporal coefficient is real, the biquaternion norm is positive definite of signature $(4,0)$, there is no null direction and no light cone, and no direction is singled out as time. This is exactly what the Wick rotation produces, and it is why the sector is called real. The unit elements are the rotation rotors, and their action is the rotation of the material space, with the two-to-one cover of the rotation group.
 
 **No area pairing.** The alternating companion of the four forms is **zero** on the real sector. The reason is that the companion is read by multiplying one element by the central imaginary, and the multiplication by $i$ carries the sector out of itself: it sends $ct'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $i(ct'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, an element of the imaginary sector. The sector holds one member of each conjugate pair and never both — the informational time, whose partner is the material time, and the material space, whose partners are the informational directions — so there is no pair of directions inside the sector for the companion to join, and it vanishes identically. On the sector the four forms are real, each is recovered from its own diagonal, and the only pairing left is the real symmetric one of the diagonal.
 
@@ -119,7 +119,7 @@ The informational time stands on the real direction $e_t$, the material time on 
 The complex space sector takes both spatial writings and neither temporal one,
 
 $$
-\tilde{Q} = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = (x \vec e_x + y \vec e_y + z \vec e_z) + i(x' \vec e_x + y' \vec e_y + z' \vec e_z) .
+\tilde{Q} = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) .
 $$
 
 The material space stands on the real directions, the informational space on the imaginary ones, and the three complex coordinates $x + ix'$, $y + iy'$, $z + iz'$ are the complex space. The sector is the complex space sector precisely because both of its blocks are spaces, and multiplication by $i$ on it is the duality rotation of the complex three-vector.
@@ -129,7 +129,7 @@ The material space stands on the real directions, the informational space on the
 The real sector takes the informational writing of time with the material writing of space,
 
 $$
-\tilde{Q} = (ct')\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z = ct'\,e_t + x \vec e_x + y \vec e_y + z \vec e_z .
+\tilde{Q} = ct'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z .
 $$
 
 Both parts appear with real coefficients, and the four-vector it carries is the Euclidean four-vector of the Wick-rotated interpretation. The material time $ict$ is not available here: the $ict$ writing needs the central imaginary, and the sector is defined by the absence of it.
@@ -185,7 +185,7 @@ Read as a **superstructure**, the real and imaginary sectors carry a $\mathbb{Z}
 
 Read as **phase space**, the complex space sector is the framework's $T^*\mathbb{R}^3$: its three complex coordinates are the three configuration–momentum pairs, one to each spatial direction, and the area pairing is the symplectic form, whose primitive $\int\vec p\cdot d\vec q$ is the action (*The Symplectic Form and the Biquaternion Norm Cone*). The two sides of each pair are the real spatial direction, which carries the configuration, and its imaginary partner $i\vec e_k$, which carries the momentum; the identification of the two is the algebra's **fixed** complex structure $i$ and not a metric, so the framework's tangent–cotangent isomorphism is rigid, the same at every point and for every pair, and is a structure rather than a dynamical Legendre transform (*Why Complexify Spacetime?*). Boundary: this is the kinematic phase space; the dynamics requires the Hamiltonian, which the algebra supplies only as an acting element.
 
-Read as **energy and time**, the complex time sector carries the framework's one temporal degree of freedom and its energy. The central scalar $h_t e_t$ generating the phase $\exp(-ih_tt/\hbar)e_t$ is the energy, and the material time $ict$ is the clock it is conjugate to in the Hamiltonian sense — the phase being the action $\exp(iS/\hbar)$ — so the sector is one energy–time pair, and the interpretation is the temporal twin of the phase-space interpretation above. The two times are separately one pair, the one the area pairing conjugates, and the two pairings must not be conflated: the area pairing conjugates the informational time with the material time, while the energy–time conjugacy pairs a central scalar with the clock (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). Boundary: the algebra supplies the pair and not the Hamiltonian, and the clock article's statement that the exchange supplies no rate is untouched; the conjugate named here is the generator of the central phase, a $c$-number, and not an operator-valued observable.
+Read as **energy and time**, the complex time sector carries the framework's one temporal degree of freedom and its energy. The central scalar $h_t e_t$ generating the phase $\exp(-ih_tt/\hbar)e_t$ is the energy, and the material time $ict$ is the clock it is conjugate to in the Hamiltonian sense — the phase being the action $\exp(iS/\hbar)$ — so the sector is one energy–time pair, and the interpretation is the temporal twin of the phase-space interpretation above. The two times are together one pair, the one the area pairing conjugates, and the two pairings must not be conflated: the area pairing conjugates the informational time with the material time, while the energy–time conjugacy pairs a central scalar with the clock (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). Boundary: the algebra supplies the pair and not the Hamiltonian, and the clock article's statement that the exchange supplies no rate is untouched; the conjugate named here is the generator of the central phase, a $c$-number, and not an operator-valued observable.
 
 Read as a **classical value**, the central scalar of the sector is the framework's candidate for a background field value: it is the one number the whole algebra shares, its phase is a gauge choice and not an observable, and it is what the complex time, the energy and the global phase have in common (*The Centre of the Biquaternion Algebra as the Classical Sector*). Because the algebra has no non-trivial central idempotent, such a value can only be a scalar expectation and not a projector, so the interpretation gives the shape of a scalar background and not the electroweak one, which the framework does not build (*The Higgs Mechanism in Biquaternionic Form*). Boundary: the centre is minimal and admits no spontaneous structure, so the interpretation names a $c$-number value and not a symmetry-breaking order parameter.
 
@@ -208,9 +208,9 @@ Read as pairings, the first two of the four carry an **area pairing** and the la
 | $\mathbb{H}_{\mathbb{B}}$ | Real sector: $\mathrm{span}_\mathbb{R}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, real dimension $4$, no complex dimension; informational time with material space |
 | $i\mathbb{H}_{\mathbb{B}}$ | Imaginary sector: $\mathrm{span}_\mathbb{R}\{ie_t, i\vec e_x, i\vec e_y, i\vec e_z\}$, real dimension $4$, no complex dimension; material time with informational space |
 | $z = q_t + iq'_t = ct' + ict$ | The complex time of the complex time sector |
-| $\natural$ | Quaternion conjugation; fixed sector the complex time, anti-fixed the complex space |
-| bar | Complex conjugation; fixed sector the real, anti-fixed the imaginary |
-| $i\,\mathbb{H}_{\mathbb{B}} = i\mathbb{H}_{\mathbb{B}}$ | The scalar imaginary exchanges the real and the imaginary sector (the Wick rotation) |
+| ${}^{\natural}$ | Quaternion conjugation; fixed sector the complex time, anti-fixed the complex space |
+| $\bar{\cdot}$ | Complex conjugation; fixed sector the real, anti-fixed the imaginary |
+| $i:\mathbb{H}_{\mathbb{B}}\leftrightarrow i\mathbb{H}_{\mathbb{B}}$ | The scalar imaginary exchanges the real and the imaginary sector (the Wick rotation) |
 | $q_t = ct'$, $q'_t = ct$ | Informational time $ct'$ and material time $ict$ |
 | $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material space |
 | $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | Informational space |

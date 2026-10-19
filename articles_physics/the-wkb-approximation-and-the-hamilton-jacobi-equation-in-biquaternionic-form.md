@@ -103,7 +103,7 @@ $$
 \langle \nabla S\rangle_{\natural} = |\nabla S|^2 ,
 $$
 
-the central element $\nabla S\,\overline{\nabla S}=|\nabla S|^2\,e_t$. The Hamilton–Jacobi equation is therefore the statement
+the central element $\nabla S\,\nabla S^{\natural}=|\nabla S|^2\,e_t$. The Hamilton–Jacobi equation is therefore the statement
 
 $$
 \frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V ,
@@ -235,7 +235,7 @@ $$
 T\ \approx\ \exp\!\left(-\frac{2}{\hbar}\int_{x_1}^{x_2}\sqrt{2m(V(x)-E)}\;dx\right),
 $$
 
-whose exponent is the imaginary part of the action across the barrier. The brackets of the piecewise-constant barrier of the scattering article are the special case in which $\kappa$ is constant and the exponent is $2\kappa a$. For a parabolic barrier $V=V_0-\tfrac12m\omega^2x^2$ the exponent evaluates to $\pi(V_0-E)/\hbar\omega$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, $m=\hbar=1$ gave $\int\sqrt{2m(V-E)}\,dx = 1.4499658$ against the closed value $\pi(V_0-E)/\omega = 1.4499658$, agreeing to $10^{-9}$. The exact transmission of the parabolic barrier is Kemble's formula $T=(1+\exp(-2\pi(E-V_0)/\hbar\omega))^{-1}$, whose exponent is the same; the WKB result is the leading exponential, and the ratio of the two, $T_{\mathrm{WKB}}/T_{\mathrm{exact}} = 1+\exp(-2\pi(V_0-E)/\hbar\omega)$, tends to one for a deep barrier.
+whose exponent is the imaginary part of the action across the barrier. The piecewise-constant barrier of the scattering article is the special case in which $\kappa$ is constant and the exponent is $2\kappa a$. For a parabolic barrier $V=V_0-\tfrac12m\omega^2x^2$ the exponent evaluates to $\pi(V_0-E)/\hbar\omega$; a direct quadrature at $V_0=1$, $\omega=1.3$, $E=0.4$, $m=\hbar=1$ gave $\int\sqrt{2m(V-E)}\,dx = 1.4499658$ against the closed value $\pi(V_0-E)/\omega = 1.4499658$, agreeing to $10^{-9}$. The exact transmission of the parabolic barrier is Kemble's formula $T=(1+\exp(-2\pi(E-V_0)/\hbar\omega))^{-1}$, whose exponent is the same; the WKB result is the leading exponential, and the ratio of the two, $T_{\mathrm{WKB}}/T_{\mathrm{exact}} = 1+\exp(-2\pi(V_0-E)/\hbar\omega)$, tends to one for a deep barrier.
 
 ## The Quantum Potential
 
@@ -324,7 +324,7 @@ The whole semiclassical expansion lives in the **centre** of the algebra: the ph
 | $\tilde p=-i\hbar\nabla$ | Momentum operator, Hermitian |
 | $\tilde p\psi=[\nabla S-i\hbar\nabla\ln A]\psi$ | Action of the momentum on the WKB state |
 | $\nabla S=\sum_\mu(\partial S/\partial Q_\mu)\vec e_\mu$ | Phase gradient; real quaternion, $\in\mathbb{H}_{\mathbb{B}}$ |
-| $\langle \nabla S\rangle_{\natural}=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\overline{\nabla S}=\lvert\nabla S\rvert^2e_t$ |
+| $\langle \nabla S\rangle_{\natural}=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\nabla S^{\natural}=\lvert\nabla S\rvert^2e_t$ |
 | $\frac{1}{2m}\langle \nabla S\rangle_{\natural}=E-V$ | Hamilton–Jacobi equation as a biquaternion norm |
 | $\vec p=\nabla S$, $d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt=\vec p/m$, $d\vec p/dt=-\nabla V$ | Characteristics; classical trajectories |
 | $\nabla\cdot(A^2\nabla S)=0$ | Transport equation |

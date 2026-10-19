@@ -477,7 +477,7 @@ h_t \ \text{fixed},
 R \in SO(3).
 $$
 
-That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\phi/2)e_t + i\sinh(\phi/2)\vec u$ has unit norm and is far from unitary, while $\exp(i\theta)e_t$ is unitary with $N = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
+That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde U = \cosh(\phi/2)e_t + i\sinh(\phi/2)\vec u$ has unit norm and is far from unitary, while $\exp(i\theta)e_t$ is unitary with $\langle\tilde U\rangle_{\natural} = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
 
 The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,\exp(i\alpha)\tilde U_{\mathrm b}\tilde{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde U_{\mathrm b}$ and a unit real quaternion rotor $\tilde{q}$ (*The Polar Element Representation in Subspaces*, *The Twisted Spinor Operator Representation of Biquaternions*). The two classes above are exactly the two ways of keeping two of those four factors:
 

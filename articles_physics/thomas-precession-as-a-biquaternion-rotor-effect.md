@@ -16,7 +16,7 @@ The purpose of this article is to exhibit the Thomas precession as what it algeb
 
 The first step is that the transformation that carries the laboratory to the instantaneous rest frame of a particle is a **unit-norm biquaternion** $\tilde U_{\vec v}$, and for a pure boost it is Hermitian and lies in the informational sector $\mathbb{M}_+$. A single boost therefore contains no rotation: it is a boost, and a boost is not a rotation.
 
-The second step is that the composition of two boosts is **not** a boost. The product $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}$ of two boost rotors, each a Lorentz rotor, is a unit-norm biquaternion, so it admits the **polar decomposition** $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}=\tilde U_{\mathrm b}\tilde{u}$ into a pure boost $\tilde U_{\mathrm b}$ and a rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, and the rotation factor is present whenever the two boost directions are not collinear. The rotation is the **Thomas–Wigner rotation**, its exact angle is a rational function of the two rapidities and the angle between the directions, and it is the algebraic expression of the fact that the boosts do not form a subgroup.
+The second step is that the composition of two boosts is **not** a boost. The product $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}$ of two boost rotors, each a Lorentz rotor, is a unit-norm biquaternion, so it admits the **polar decomposition** $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}=\tilde U_{\mathrm b}\tilde{u}$ into a pure boost $\tilde U_{\mathrm b}$ and a rotation $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, and the rotation factor is present whenever the two boost directions are not collinear. The rotation is the **Thomas–Wigner rotation**, its exact angle is determined by the two rapidities and the angle between the directions, and it is the algebraic expression of the fact that the boosts do not form a subgroup.
 
 The third step is to **take the continuous limit**. The rest frames at two laboratory times $t$ and $t+dt$ are related by the interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$, whose rotation factor is the Thomas–Wigner rotation of the interval. Expanding the exact product to first order in $dt$ gives $\vec\omega_T$, with the axis $\vec u_{\vec a\times\vec v}$ and the coefficient $\gamma^{2}/(\gamma+1)$; the "Thomas half" is the value of that coefficient at $\gamma=1$. The whole of the Thomas precession is thus the linearization of a quaternion product.
 
@@ -246,7 +246,7 @@ $$
 \Delta\theta_T=-(\gamma-1)\,\Omega\,T=-2\pi(\gamma-1),
 $$
 
-so a full turn of the orbit advances the rest frame by $-2\pi(\gamma-1)$ radians, i.e. by $-(\gamma-1)$ of a full turn. In the non-relativistic limit $\gamma-1\approx v^{2}/2c^{2}$, and the precession is $-v^{2}/2c^{2}$ of the orbital rate: **half the orbital rate, opposite in sense**. This is the kinematic content of the Thomas half, now in its exact circular form.
+so a full turn of the orbit advances the rest frame by $-2\pi(\gamma-1)$ radians, i.e. by $-(\gamma-1)$ of a full turn. In the non-relativistic limit $\gamma-1\approx v^{2}/2c^{2}$, and the precession is $-v^{2}/2c^{2}$ of the orbital rate: **half of the orbital rate times $v^{2}/c^{2}$, opposite in sense**. This is the kinematic content of the Thomas half, now in its exact circular form.
 
 ## The Spin of a Relativistic Particle
 
@@ -331,7 +331,7 @@ $$
 \vec\omega_T\approx\frac{1}{2c^{2}}\,\vec a\times\vec v\quad(v\ll c),
 $$
 
-along $\vec a\times\vec v$, with only the transverse acceleration contributing. The precession is realised by the half-angle rotor $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ acting by conjugation on the rest-frame triad, with the same double-cover half-angle that acts one-sidedly on the spinor. For uniform circular motion the frame is retrograde, $\vec\omega_T=-(\gamma-1)\vec\Omega$, turning through $-2\pi(\gamma-1)$ per orbit, i.e. half the orbital rate opposite in sense in the non-relativistic limit. The kinematic precession is the origin of the factor $\tfrac12$ in the spin–orbit coupling, and it is the free-field piece of the general spin equation of motion treated in the companion article on the Bargmann–Michel–Telegdi equation.
+along $\vec a\times\vec v$, with only the transverse acceleration contributing. The precession is realised by the half-angle rotor $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ acting by conjugation on the rest-frame triad, with the same double-cover half-angle that acts one-sidedly on the spinor. For uniform circular motion the frame is retrograde, $\vec\omega_T=-(\gamma-1)\vec\Omega$, turning through $-2\pi(\gamma-1)$ per orbit; in the non-relativistic limit this is half of the orbital rate times $v^{2}/c^{2}$, opposite in sense. The kinematic precession is the origin of the factor $\tfrac12$ in the spin–orbit coupling, and it is the free-field piece of the general spin equation of motion treated in the companion article on the Bargmann–Michel–Telegdi equation.
 
 ## Summary of Notation
 

@@ -32,7 +32,7 @@ For a medium at rest, $v^\mu=(1,0,0,0)$ and $v_tv_t=1$, so
 $$
 g^{\mathrm{J}}=\mathrm{diag}\!\left(-\frac{1}{n^2},\,1,\,1,\,1\right).
 $$
-Its null cone is
+In units $c_0=1$, its null cone is
 $$
 -\frac{dt^2}{n^2}+dx^2+dy^2+dz^2=0
 \;\Longleftrightarrow\;
@@ -54,7 +54,7 @@ $$
 \boxed{\;n=\frac{c_0}{c}=\frac{1}{c}\;}\qquad(c_0=1),\qquad c=\frac{1}{n}.
 $$
 
-The reason is structural and not a coincidence. Gordon's conformal factor in the static case is $1/n^2=\epsilon\mu$ in vacuum units, and the framework's coefficient in the $dt^2$ slot is $c^2=1/(\epsilon\mu)$; the two expressions are reciprocals of the same product $\epsilon\mu$, so they coincide once $n$ is identified with $1/c$. The framework's algebra supplies the sign of the coefficient — the minus is $(i)^2$ — and the medium supplies its magnitude, which is exactly the division of labour that *The Local Complex Structure and the Speed of Light* states for the scale $c$.
+The reason is structural and not a coincidence. Gordon's conformal factor in the static case is $1/n^2=1/(\epsilon\mu)$ in vacuum units, and the framework's coefficient in the $dt^2$ slot is $c^2=1/(\epsilon\mu)$; the two expressions are the same, so they coincide once $n$ is identified with $1/c$. The framework's algebra supplies the sign of the coefficient — the minus is $(i)^2$ — and the medium supplies its magnitude, which is exactly the division of labour that *The Local Complex Structure and the Speed of Light* states for the scale $c$.
 
 ### The null cone
 

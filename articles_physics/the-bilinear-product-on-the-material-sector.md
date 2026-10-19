@@ -18,7 +18,7 @@ $\mathbb{M}_-$ alone.
 The answer is one sentence: the scalar part
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2) = Q_{10}Q_{2t} - \vec Q_1\!\cdot\!\vec Q_2
+\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2) = Q_{1t}Q_{2t} - \vec Q_1\!\cdot\!\vec Q_2
 $$
 
 is **negative** on a material **element**, $\langle\tilde Q,\tilde Q\rangle<0$, and **positive** on an
@@ -76,7 +76,7 @@ $$
 $$
 
 of signature $(-,+,+,+)$ on $\mathbb{M}_-$; its zero set is the light cone, its level set
-$N=-m^{2}c^{2}$ is the mass shell, and both are owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The
+$\langle\tilde R\rangle_\natural=-m^{2}c^{2}$ is the mass shell, and both are owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*. The
 interval is the **general quaternionic bilinear form**, the scalar part of the second of the four general products, and it
 is quoted here only to be kept apart from $\langle\tilde Q_1,\tilde Q_2\rangle$. Two forms of opposite type sit on the same sector, and the
 rest of the article is about the one that does not carry the interval.
@@ -121,12 +121,12 @@ material operations the anticommutator is the informational half and the commuta
 The form $\langle\tilde Q_1,\tilde Q_2\rangle$ is negative on a material **element** and positive on an informational one, that is at the
 two equal arguments, and that is the fact this article is built on. On the material basis
 $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ the diagonal entries are
-$B(ie_t,ie_t)=-1$ and $B(\vec e_k,\vec e_k)=-1$ with all cross terms zero, so
+$\langle ie_t,ie_t\rangle=-1$ and $\langle\vec e_k,\vec e_k\rangle=-1$ with all cross terms zero, so
 
 $$
-B\big|_{\mathbb{M}_-}=-\mathrm{I}_4,\ \text{signature }(0,4);
+\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_-}=-\mathrm{I}_4,\ \text{signature }(0,4);
 \qquad
-B\big|_{\mathbb{M}_+}=+\mathrm{I}_4,\ \text{signature }(4,0);
+\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_+}=+\mathrm{I}_4,\ \text{signature }(4,0);
 $$
 
 the two sectors are the two definite half-spaces of one form, with opposite signs. Written out on the
@@ -150,7 +150,7 @@ computation that stays inside one sector; on a pair the form returns a varying r
 sign of its algebraic norm that marks the sector, with no metric content at all.
 
 **Proposed interpretation, labelled as such.** Under the composition the four material directions are
-**indistinguishable by sign**: $B(ie_t,ie_t)=B(\vec e_k,\vec e_k)=-1$, all four negative definite, so $\langle\tilde Q_1,\tilde Q_2\rangle$ alone
+**indistinguishable by sign**: $\langle ie_t,ie_t\rangle=\langle\vec e_k,\vec e_k\rangle=-1$, all four negative definite, so $\langle\tilde Q_1,\tilde Q_2\rangle$ alone
 does not separate time from space. What separates them is **commutation**: $ie_t$ is central and the
 three $\vec e_k$ are not, so **in the material sector time is the central direction and space is the vector
 directions**. The Lorentzian sign of the interval is carried by the quaternion conjugation $\natural$ instead, which
@@ -188,8 +188,8 @@ $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, and the n
 the cone, the origin lying in the cone and being the one element that is neither a unit nor a zero
 divisor. On the material sector the norm is the interval, $\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+x^{2}+y^{2}+z^{2}$,
 so the cone cuts the sector in the **light cone** and the group of units cuts it in the **off-light-cone
-four-vectors**. The mass shell is the level set $N=-m^{2}c^{2}$: for $m\neq0$ a mass shell lies inside
-the group, and the boundary of the group is the massless shell $N=0$. The inverse of a material unit is
+four-vectors**. The mass shell is the level set $\langle\tilde R\rangle_\natural=-m^{2}c^{2}$: for $m\neq0$ a mass shell lies inside
+the group, and the boundary of the group is the massless shell $\langle\tilde R\rangle_\natural=0$. The inverse of a material unit is
 material, since $\tilde Q^{\natural}$ is anti-Hermitian with $\tilde Q$ and $\langle\tilde Q\rangle_{\natural}$ is then a real
 scalar; but the product of two material units is material only when the two anticommute, by §*The Product
 of Two Material Operations*, so the reversibility survives the composition while the sector need not. On
@@ -198,15 +198,15 @@ wall there is the cone $a_0^{2}=\lvert\vec p\rvert^{2}$; the Hermitian form $+\m
 cone, and the form $\langle\tilde Q_1,\tilde Q_2\rangle$ has no cone on either sector.
 
 **Example (a lightlike and an off-cone material element).** The lightlike material element $ie_t+\vec e_x$,
-with $N=-1+1=0$, is a zero divisor: it squares to $-2e_t+2i\vec e_x$ and the partner $ie_t-\vec e_x$ annihilates it,
+with $\langle ie_t+\vec e_x\rangle_\natural=-1+1=0$, is a zero divisor: it squares to $-2e_t+2i\vec e_x$ and the partner $ie_t-\vec e_x$ annihilates it,
 $(ie_t+\vec e_x)(ie_t-\vec e_x)=(ie_t)^{2}-\vec e_x^{2}=-e_t+e_t=0$. The off-cone element $ie_t+2\vec e_x$, spacelike with
-$N=-1+4=3$, is a unit, and its inverse is $(ie_t-2\vec e_x)/3$.
+$\langle ie_t+2\vec e_x\rangle_\natural=-1+4=3$, is a unit, and its inverse is $(ie_t-2\vec e_x)/3$.
 
 **Proposed interpretation, labelled as such.** Read as the composition of material operations,
 *invertible* reads **reversible**: the inverse $\tilde Q^{-1}$ is the operation that undoes $\tilde Q$,
 the group of units is the set of the reversible operations, and the cone is the wall of the reversible
 region. A four-vector on the light cone is an operation that cannot be undone, a mass-shell four-vector
-$N=-m^{2}c^{2}$ with $m\neq0$ is a reversible one, and the massless shell is the boundary between them:
+$\langle\tilde R\rangle_\natural=-m^{2}c^{2}$ with $m\neq0$ is a reversible one, and the massless shell is the boundary between them:
 **the cone is at once the locus of lightlike propagation and the wall between the reversible and the
 irreversible**. The sector statement and the algebraic statement are the same sentence, read in two
 vocabularies.
@@ -227,14 +227,14 @@ conservation, and the interval of a composite is the product of the intervals an
 **Proposed interpretation, labelled as such.** The centre reaches the cone at the origin alone: on the
 central line the character is $\langle Ae_t\rangle_{\natural}=A^{2}$, whose vanishing set there is $A=0$, so **no central element
 is lightlike and the phase never sits on the wall**; only the vector directions reach it. The reversal is
-two-valued on the phase, the loop around the cone being a generator of $\pi_x(\mathbb{B}^{\times})\cong\mathbb{Z}$ while the central circle is twice a generator (*The Biquaternion Unit Group as a Topological
+two-valued on the phase, the loop around the cone being a generator of $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$ while the central circle is twice a generator (*The Biquaternion Unit Group as a Topological
 Group*): the same two-to-one that the spinor carries, read here as the doubling of the phase under the
 reversal. What is proved is the generator and the doubling; the identification with the two-valuedness of
 the material reversal is an interpretation.
 
 **Remark (the sector sign is not the reversibility).** The criterion is the norm and the interval, and not
 the algebraic norm of the plain product: $\langle\tilde Q_1,\tilde Q_2\rangle$ is not multiplicative and decides no invertibility, the
-element $e_t+\vec e_x$ being a unit with $B=0$ and the element $e_t+i\vec e_x$ a zero divisor with $B=2$
+element $e_t+\vec e_x$ being a unit with $\langle e_t+\vec e_x,e_t+\vec e_x\rangle=0$ and the element $e_t+i\vec e_x$ a zero divisor with $\langle e_t+i\vec e_x,e_t+i\vec e_x\rangle=2$
 (*The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*). The form
 $\langle\tilde Q_1,\tilde Q_2\rangle$ carries the sector sign of §*The Scalar Part Is the Sector Sign*; the reversibility is carried by the
 interval, and the two must not be exchanged.
@@ -309,7 +309,7 @@ causal structure. The metric is the interval, of signature $(-,+,+,+)$ on $\math
 level data of the general quaternionic bilinear form, owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*; the
 worked case shows the two forms giving different numbers on the same element.
 - **$\langle\tilde Q_1,\tilde Q_2\rangle$ is not the reversibility.** The criterion of invertibility is the norm $\langle\cdot\rangle_{\natural}$ and not the scalar form
-$\langle\tilde Q_1,\tilde Q_2\rangle$: the element $e_t+\vec e_x$ is a unit with $B=0$ and the element $e_t+i\vec e_x$ is a zero divisor with $B=2$.
+$\langle\tilde Q_1,\tilde Q_2\rangle$: the element $e_t+\vec e_x$ is a unit with $\langle e_t+\vec e_x,e_t+\vec e_x\rangle=0$ and the element $e_t+i\vec e_x$ is a zero divisor with $\langle e_t+i\vec e_x,e_t+i\vec e_x\rangle=2$.
 - **The material sector is not closed under the product.** A composite of two material elements is
 material exactly when the two anticommute, and informational exactly when they commute; the sector is not
 an algebra.
@@ -331,7 +331,7 @@ material sector the algebraic norm $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc
 is the interval, its vanishing set is the light cone and its non-vanishing set the off-light-cone
 four-vectors, the inverse of a material unit is material, and the product of two material units is a unit;
 and the norm restricts to a homomorphism $\mathbb{B}^{\times}\to\mathbb{C}^{\times}$, so the mass shell
-$N=-m^{2}c^{2}$, $m\neq0$, lies inside the group of units and the massless shell is its boundary.
+$\langle\tilde R\rangle_\natural=-m^{2}c^{2}$, $m\neq0$, lies inside the group of units and the massless shell is its boundary.
 
 **Interpretations.** That $\langle\tilde Q_1,\tilde Q_2\rangle$ carries the **sector sign** and the interval carries the metric; that the
 material geometry belongs to this block and to its quaternionic companion and not to the sesqualgebra;
@@ -360,7 +360,7 @@ for the central phase, which is the exchange's business and not the vector part'
 The material sector $\mathbb{M}_-$ carries the four-vectors, an event being
 $\tilde R=ict\,e_t+x \vec e_x+y \vec e_y+z \vec e_z$, and this article reads on it the general plain bilinear product $\tilde Q_1\tilde Q_2$
 whose full theory on the whole algebra is *The Products, Their Forms and Their Norms*. Its scalar
-part $B=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$, the quaternion scalar product of the two elements, is
+part $\langle\tilde Q_1,\tilde Q_2\rangle=Q_{1t}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$, the quaternion scalar product of the two elements, is
 negative definite on $\mathbb{M}_-$ with signature $(0,4)$ and positive definite on $\mathbb{M}_+$ with
 signature $(4,0)$: opposite definite signs on the two sectors, so $\langle\tilde Q_1,\tilde Q_2\rangle$ carries the **sector sign**. Being
 definite, $\langle\tilde Q_1,\tilde Q_2\rangle$ has no light cone at all and cannot be the metric; the metric is the interval, the general
@@ -370,7 +370,7 @@ informational part being the anticommutator and its order dependence the commuta
 the general plain bilinear product is carried by the norm $\langle\cdot\rangle_{\natural}$ and not by $\langle\tilde Q_1,\tilde Q_2\rangle$: the invertible elements are the elements
 of non-vanishing norm, forming the group $\mathbb{B}^{\times}$ with the inverse
 $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ and bounded by the zero-divisor cone, so on the material sector the
-light cone is the wall of the reversible operations and the mass shell $N=-m^{2}c^{2}$ lies inside the
+light cone is the wall of the reversible operations and the mass shell $\langle\tilde R\rangle_\natural=-m^{2}c^{2}$ lies inside the
 group. The material sector contains no nonzero idempotent, so the reference projection of a field comes
 from $\mathbb{M}_+$ — a state and not a material background, which is the framework's interpretation of
 the decomposition. The distinctions are labelled throughout: what is proved is the algebra restricted to
@@ -388,12 +388,12 @@ $\mathbb{M}_-$, what is proposed is the naming.
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | A material event; imaginary time, real space |
 | $\tilde Q_1\tilde Q_2$ | General plain bilinear product; associative, unital, non-commutative |
-| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{10}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
-| $B\big|_{\mathbb{M}_-}=-\mathrm{I}_4$, $B\big|_{\mathbb{M}_+}=+\mathrm{I}_4$ | The sector sign carried by $\langle\tilde Q_1,\tilde Q_2\rangle$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-\vec Q_1\!\cdot\!\vec Q_2$ | General plain bilinear form; Gram $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ |
+| $\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_-}=-\mathrm{I}_4$, $\langle\cdot,\cdot\rangle\big|_{\mathbb{M}_+}=+\mathrm{I}_4$ | The sector sign carried by $\langle\tilde Q_1,\tilde Q_2\rangle$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | General quaternionic bilinear form; the interval; $(3,1)$ on $\mathbb{M}_-$ |
 | $\tfrac12(\tilde Q_1\tilde Q_2\pm\tilde Q_2\tilde Q_1)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
 | $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}$ | Algebraic norm of the general plain bilinear product; the interval at equal arguments; multiplicative |
-| $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone; the light cone on $\mathbb{M}_-$ |
+| $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$, $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | Group of units of the general plain bilinear product; zero-divisor cone; the light cone on $\mathbb{M}_-$ |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ | Inverse in the general plain bilinear product |
 | $\tilde\Pi^{2}=\tilde\Pi$ | A projection; none nonzero in $\mathbb{M}_-$ |
 | $(n,m)$ | Signature as (number of $+$, number of $-$) diagonal entries |

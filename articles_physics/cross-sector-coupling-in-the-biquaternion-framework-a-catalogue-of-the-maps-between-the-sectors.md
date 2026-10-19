@@ -28,7 +28,7 @@ Catalogue of Algebraic Obstructions*.
 The division that makes the question sharp is this: the conjugations of the algebra never cross the
 split, while three operations of a different kind always do. The conjugations are sector-preserving
 because the two sectors are *defined* as their fixed spaces, so a map that crossed the split would have
-to be something other than a conjugation; the square, multiplication by $i$ and the state-preparation
+to be something other than a conjugation; the norm square, multiplication by $i$ and the state-preparation
 map are exactly such operations. The split also carries a superselection interpretation, whose content is that
 no *observable* operation crosses it — a statement about observables and not about maps, and one that
 must be held apart from the positive entries of the catalogue.
@@ -57,25 +57,25 @@ the operations it does not cover.
 
 ## The Maps from Material to Informational
 
-### The Square
+### The Norm Square
 
-The square of a material element is its interval, and the interval is a real scalar.
+The norm square of a material element is its interval, and the interval is a real scalar.
 
-**Identity (the square is the interval).** For every $\tilde{Q}$,
+**Identity (the norm square is the interval).** For every $\tilde{Q}$,
 
 $$
 \tilde{Q}^{\natural}\tilde{Q} = \langle\tilde{Q}\rangle_{\natural}\,e_t,
 $$
 
-with $\langle\tilde{R}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{R}\in\mathbb{M}_-$, written $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$
+with $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{R}\in\mathbb{M}_-$, written $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$
 with real $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the value $\langle\tilde{R}\rangle_{\natural} = -c^{2}t^{2}+x^2+y^2+z^2$ is **real**, and the
 scalar line $\mathbb{R}e_t$ lies in $\mathbb{M}_+$.
 
-**Interpretation.** Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
+**Interpretation.** The norm square is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
 and it is the minimal instance of a cross-sector coupling supplied by the product itself. It is
 deliberately weak: it is a map and not an evolution, and the product of *two* material elements is not in
 general informational: unless their spatial parts are parallel, it carries a rotation part in $\mathbb{M}_-$ and a boost part in $\mathbb{M}_+$, so it
-lies in neither sector. The square is the coupling; the product is not. The identity is owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the grid-level pointer by *The Four General Products and Their Physical Readings*. The exception is exact: for $\tilde{R}_1=i a_1e_t+\vec v_1$ and $\tilde{R}_2=i a_2e_t+\vec v_2$,
+lies in neither sector. The norm square is the coupling; the product is not. The identity is owned by *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the grid-level pointer by *The Four General Products and Their Physical Readings*. The exception is exact: for $\tilde{R}_1=i a_1e_t+\vec v_1$ and $\tilde{R}_2=i a_2e_t+\vec v_2$,
 $$
 \tilde{R}_1\tilde{R}_2=\bigl(-a_1a_2-(\vec v_1,\vec v_2)\bigr)+i\bigl(a_1\vec v_2+a_2\vec v_1\bigr)+\vec v_1\times\vec v_2,
 $$
@@ -145,17 +145,17 @@ framework is the one *Biquaternion Rotations and Lorentz Transformations* develo
 
 A coupling can also be a scalar read from one element of each sector.
 
-**Proposition (the off-sector scalar part).** For $\tilde{P}\in\mathbb{M}_-$ and $\tilde{H}\in\mathbb{M}_+$,
+**Proposition (the off-sector scalar part).** For $\tilde{R}\in\mathbb{M}_-$ and $\tilde{H}\in\mathbb{M}_+$,
 the scalar part of the plain product is purely imaginary,
 
 $$
-\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\vec h\bigr) \quad \text{for }
-\tilde{P} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \quad \tilde{H} = h_te_t+i\vec h,
+\mathrm{Sc}(\tilde{R}\tilde{H}) = i\bigl(ct\,h_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\vec h\bigr) \quad \text{for }
+\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \quad \tilde{H} = h_te_t+i\vec h,
 $$
 
-with both factors real.
+with $t$, $x$, $y$, $z$, $h_t$ and $\vec h$ real.
 
-**Why.** The scalar part of the product is $ict\,h_t-(\vec P,i\vec h)$, and the two terms are
+**Why.** The scalar part of the product is $ict\,h_t-(\vec R,i\vec h)$, and the two terms are
 $ict\cdot h_t$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot i\vec h$, each carrying one factor of $i$.
 
 **Interpretation.** The pairing reads a material operation against an informational state and returns a phase,
@@ -194,7 +194,7 @@ is exact, and it does not conflict with the positive entries above, for the reas
 article gives. The algebra is central simple, so it has no central-projection superselection structure of
 the standard kind, and what survives is a superselection structure of a **real form**, carried by the
 real structure $\flat = -{}^{*}$ rather than by the centre. The positive entries of this catalogue are
-maps and pairings and not observables: the square is a map, $i$ is central multiplication, the
+maps and pairings and not observables: the norm square is a map, $i$ is central multiplication, the
 preparation map is a dictionary, and the off-sector scalar is a pairing. None of them is an observable
 that an expectation value could use to prepare or detect a coherence between the sectors.
 
@@ -207,11 +207,11 @@ Biquaternionic Form*.
 
 | operation | type | source $\to$ target | owner | boundary |
 |---|---|---|---|---|
-| square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$ | *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* | a map, not an evolution; the product of two is not in general informational |
-| preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$ | *The Bloch Ball as the Trace-One Slice of the Future Light Cone* | a dictionary, no dynamics; state only on the trace-one slice of the future cone |
+| norm square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$ | *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* | a map, not an evolution; the product of two is not in general informational |
+| preparation $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$ | *The Bloch Ball as the Trace-One Slice of the Future Light Cone* | a dictionary, no dynamics; state only on the trace-one slice of the future cone |
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
 | rotor action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
-| off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The Bilinear Product on the Material Sector* | a pairing, produces no element |
+| off-sector scalar $\mathrm{Sc}(\tilde{R}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The Bilinear Product on the Material Sector* | a pairing, produces no element |
 | imaginary part of $\langle\cdot\rangle_{\natural}$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Norm and Invertibility in the General Quaternionic Algebra* | an interpretation of one element's own cross terms |
 | Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Thermal Formalism in Biquaternionic Form* | a continuation, not a new coupling |
 | Landauer exchange | process | material $\to$ informational | *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* | thermodynamic face; arrow from the acting monoid |
@@ -223,7 +223,7 @@ The article's own interpretation is the **two-axis picture** of the split: the s
 involution ${}^{*}$, which the conjugations respect and which a small set of non-conjugation operations
 cross. Read one way, the picture says that the split is rigid — nothing built from the conjugations, and
 no observable, moves between the sectors. Read the other way, it says that the split is crossed in
-exactly the places where the physics needs a bridge: the square takes a process to a probability
+exactly the places where the physics needs a bridge: the norm square takes a process to a probability
 argument, $i$ takes a time to the other time, the rotor takes a frame to a frame, and the off-sector
 scalar reads a state against an operation. The rigidity and the crossings are not in tension; they are the
 two halves of one statement.
@@ -233,7 +233,7 @@ action, a pairing — and no two entries are the same bridge. Boundary: the inte
 each bridge and supplies no dynamics; the grid-level comparison is *The Four General Products and Their Physical Readings*.
 - **Boundary interpretation.** The superselection entry is the statement that the bridges are not observables.
 Read with the positive entries, it says that a coupling can be algebraic and unobservable at once: the
-square exists and no measurement uses it to prepare a coherence between the sectors. Boundary: the
+norm square exists and no measurement uses it to prepare a coherence between the sectors. Boundary: the
 interpretation is the superselection article's, restated here only to mark the edge of the catalogue.
 
 ## Summary
@@ -241,13 +241,13 @@ interpretation is the superselection article's, restated here only to mark the e
 The algebra's two sectors $\mathbb{M}_-$ and $\mathbb{M}_+$ are the eigenspaces of Hermitian
 conjugation, and the conjugations $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$, $\flat$ preserve each sector,
 because a sector is defined as a fixed space. The couplings are the operations that are not
-conjugations, and they are few. The square carries a material element to its real interval, a scalar in
+conjugations, and they are few. The norm square carries a material element to its real interval, a scalar in
 $\mathbb{M}_+$, and is the minimal cross-sector map the product supplies. The preparation map
-$\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ carries a four-vector to a state on the trace-one slice. Central
+$\tilde{H} = -\tfrac{i}{2}\tilde{R}$ carries a four-vector to a state on the trace-one slice. Central
 multiplication by $i$ exchanges the sectors and reverses the norm, reading one time against the other. A
 unit-norm Hermitian rotor acts on the material sector by the sandwich and preserves it, so the
 informational sector supplies the frame changes of the material one. The off-sector scalar part
-$\mathrm{Sc}(\tilde{P}\tilde{H})$ is purely imaginary and pairs an operation with a state; the imaginary
+$\mathrm{Sc}(\tilde{R}\tilde{H})$ is purely imaginary and pairs an operation with a state; the imaginary
 part of the norm is the same cross-term phenomenon. The Matsubara continuation and the Landauer exchange
 are the thermal interpretations of the same split, and the arrow that orders them is the split of the acting
 monoid. Against all of this stands one exact negative statement: the split is a superselection structure
@@ -266,9 +266,9 @@ each of its instances owned by an article that proves it.
 | $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ real |
 | $\tilde{H} = h_te_t+i\vec h$ | Informational element, $h_t$ and $\vec h$ real |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$ | Biquaternion norm; equal to the interval on $\mathbb{M}_-$ |
-| $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$ |
+| $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ | The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$ |
 | $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ | The rotor action, $\tilde{U}\in\mathbb{M}_+$ of unit norm |
-| $\mathrm{Sc}(\tilde{P}\tilde{H})$ | Off-sector scalar pairing, purely imaginary |
+| $\mathrm{Sc}(\tilde{R}\tilde{H})$ | Off-sector scalar pairing, purely imaginary |
 
 ## Further Reading
 
@@ -277,7 +277,7 @@ material sector, its four-vectors and the interval.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, companion article, for the
 informational sector, the trace pairing and the state space.
 - *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$*, companion article, for the
-square map and its real-scalar image.
+norm-square map and its real-scalar image.
 - *The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, companion
 article, for the negative statement and its real-form interpretation.
 - *The Four General Products and Their Physical Readings*,

@@ -61,7 +61,7 @@ $$
 
 This is the fundamental doublet, and it is the Dirac equation's content. The same construction at the next interlocking place gives the doublet $\tau^{1,\frac12}\oplus\tau^{\frac12,1}$, and so on up the chain; there are infinitely many spin doublets, each a pair of states $\pm\frac12$ on the spin-$\frac12$ line and its dual.
 
-The **spin triplet** is built within $\mathcal{H}_S^3\otimes\mathcal{H}_\infty$, and its fundamental member is
+The **spin triplet** is built within $\mathcal{H}_S^3\otimes\mathcal{H}_\infty$, and its fundamental members are
 
 $$
 \tau^{1,0}\ (\text{spin }1),\qquad \tau^{\frac12,\frac12}\ (\text{spin }0),\qquad \tau^{0,1}\ (\text{spin }-1),
@@ -74,7 +74,7 @@ $$
 \qquad s=0,\tfrac12,1,\tfrac32,\dots,
 $$
 
-whose $2s+1$ states are the spin projections $-s,-s+1,\dots,s$, distributed over the spin lines of the interlocking diagram. The multiplets are fermionic for $s$ half-integer and bosonic for $s$ integer, and every multiplet has an antiparticle multiplet reached by the dual lines. The spaces $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$ are **nonseparable** — the infinite-dimensional factor is the reason — and this is recorded as a property of the construction, not as a defect.
+whose $2s+1$ states are the spin projections $-s,-s+1,\dots,s$, distributed over the spin lines of the interlocking diagram. The multiplets are fermionic for $s$ half-integer and bosonic for $s$ integer, and every multiplet has an antiparticle multiplet reached by the dual lines. The spaces $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$ are **infinite-dimensional** — the factor $\mathcal{H}_\infty$ is the reason — and this is recorded as a property of the construction, not as a defect.
 
 ## Charge Multiplets
 
@@ -108,7 +108,7 @@ $$
 
 the entries being the Lorentz representation $\tau^{l\bar l}$ that fixes the spin $s=|l-\bar l|$, the symmetric representation space $\mathrm{Sym}^{(k,r)}$ of degree $(k+1)(r+1)=(2l+1)(2\bar l+1)$, the Clifford algebra $\mathrm{Cl}_{n,m}$ associated with the representation, its spin space $S_{(n+m)/2}$, and the $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group of the discrete operations of the companion CPT article. The **main object** defining a vector is the representation $\tau^{l\bar l}$; the Clifford algebra, the spin space and the discrete group belong to the spinor structure and are attached to it.
 
-The charge takes the three values $\{-1,0,\bar0\}$: the values $\pm1$ are the charged particles, carried by the complex representations; the value $0$ is the neutral particle with a distinct antiparticle, carried by the real representations of quaternionic division ring; and the value $\bar0$ is the **truly neutral** particle, carried by the real representations of real division ring. This trichotomy is the subject of the companion *Charge Conjugation and the Division Ring*, and the present section takes it as the labelling of the charge factor. A supermultiplet is then a set of vectors of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ sharing a Lorentz representation and a Clifford algebra and differing in the charge projection.
+The charge takes the three values $\{-1,0,\bar0\}$: the values $\pm1$ are the charged particles, carried by the complex representations; the value $0$ is the neutral particle with a distinct antiparticle, carried by the real representations of the quaternionic division ring; and the value $\bar0$ is the **truly neutral** particle, carried by the real representations of the real division ring. This trichotomy is the subject of the companion *Charge Conjugation and the Division Ring*, and the present section takes it as the labelling of the charge factor. A supermultiplet is then a set of vectors of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ sharing a Lorentz representation and a Clifford algebra and differing in the charge projection.
 
 ## Superselection Rules
 
@@ -136,13 +136,13 @@ The framework's relation to all this is precise, and it is a relation of **one**
 
 The charge factor $\mathcal{H}_Q$ is a different matter. The internal symmetry groups act there by central extension, and the companion *The Gauge Group Ceiling* establishes that the biquaternion algebra's own compact structure reaches $\mathrm{SU}(2)$ and stops: the $\mathrm{SU}(3)$ of the charge triplet's further generalisation is not an algebra of $\mathbb{B}$. The spin–charge space is therefore something the framework can **state** and lay out, but not something it **contains**; the charge factor is added from outside, and its $\mathrm{SU}(3)$ structure is transcribed.
 
-The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is where the mass-shell orbit lives, and it is the factor that makes the spaces nonseparable. The corpus's fields are functions on spacetime, which is to say sections of a bundle whose fibre is a finite-dimensional module; the programme's $\mathcal{H}_\infty$ is a different object, and the correspondence between the two is not constructed here. This is the honest limit of the identification.
+The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is where the mass-shell orbit lives, and it is the factor that makes the spaces infinite-dimensional. The corpus's fields are functions on spacetime, which is to say sections of a bundle whose fibre is a finite-dimensional module; the programme's $\mathcal{H}_\infty$ is a different object, and the correspondence between the two is not constructed here. This is the honest limit of the identification.
 
 ## What the Framework Establishes, Transcribes, and Does Not
 
 **Established, and recomputed.**
 
-- The spin multiplet is $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$ and the charge multiplet is $\mathcal{H}_Q^m\otimes\mathcal{H}_\infty$; the spin triplet's fundamental member is $\tau^{1,0}\oplus\tau^{1/2,1/2}\oplus\tau^{0,1}$, with spins $+1,0,-1$, and the spin doublet's is $\tau^{1/2,0}\oplus\tau^{0,1/2}$, with spins $\pm\frac12$. These are the tensor-product decompositions and are checkable in the corpus's representation ring.
+- The spin multiplet is $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$ and the charge multiplet is $\mathcal{H}_Q^m\otimes\mathcal{H}_\infty$; the spin triplet's fundamental members are $\tau^{1,0}$, $\tau^{1/2,1/2}$ and $\tau^{0,1}$, with spins $+1,0,-1$, and the spin doublet's is $\tau^{1/2,0}\oplus\tau^{0,1/2}$, with spins $\pm\frac12$. These are the tensor-product decompositions and are checkable in the corpus's representation ring.
 - The degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals $(2l+1)(2\bar l+1)$ for $\tau^{l\bar l}$ with $k=2l$, $r=2\bar l$, so the vector label's two entries carry the same number.
 - A symmetry of rays is unitary or antiunitary, and the two possibilities exist exactly over $\mathbb{C}$; this is Wigner's theorem and the field-automorphism argument, both standard.
 

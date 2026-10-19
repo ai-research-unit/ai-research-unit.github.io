@@ -46,7 +46,7 @@ $$
 v=\frac{\hbar k}{m},
 $$
 
-the ratio of the Coulomb energy at the de Broglie wavelength to the kinetic energy, equivalently the ratio of the Coulomb energy scale to the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,\hbar,k$; it is not an algebra-valued object, and it enters every phase below as a scalar.
+the Coulomb energy at the de Broglie wavelength measured in units of the kinetic energy. It is the single dimensionless number that controls the whole problem: $\eta\to0$ is the high-energy or weak-coupling limit, in which the Born approximation becomes accurate, and $|\eta|\gg1$ is the semiclassical or strong-coupling regime. For like charges $\eta>0$ and the potential is repulsive; for opposite charges $\eta<0$ and it is attractive. In the biquaternion interpretation $\eta$ is a central real scalar built from the central quantities $m,\alpha,\hbar,k$; it is not an algebra-valued object, and it enters every phase below as a scalar.
 
 ## Partial-Wave Decomposition
 
@@ -174,7 +174,7 @@ $$
 =\frac{(Z_1Z_2e^2)^2}{16E^2\sin^4(\theta/2)},
 $$
 
-which is **Rutherford's formula**. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\eta^2$. The formula is the non-relativistic limit of the classical Rutherford scattering, and quantum physics reproduces it because the Coulomb potential is the unique potential for which the partial-wave sum and the classical orbit give the same answer.
+which is **Rutherford's formula**. For like charges the cross section is positive everywhere and finite away from the forward direction; for opposite charges the formula is unchanged, since the sign of $\alpha$ disappears in $\eta^2$. The formula is the non-relativistic limit of classical Rutherford scattering, and the quantum cross section coincides with it for the Coulomb potential.
 
 The classical route to the same formula is worth recording because it is available here in the elementary form. For a Coulomb potential the orbit is a Kepler hyperbola, and the impact parameter is related to the scattering angle by
 
@@ -247,7 +247,7 @@ The biquaternion framework has nothing to add to this argument except the observ
 
 The phase $\exp(-i\eta\ln\sin^2(\theta/2))$ and the phase $2\sigma_0$ are both energy dependent, through $\eta=\alpha/\hbar v$ and through $\sigma_0(\eta)$. They do not affect the cross section, but they do affect the wave function and any interference with a second amplitude. This is the practical signature of the long-range potential: the Coulomb amplitude's phase cannot be gauged away by a constant, because the logarithm makes it angle dependent and the parameter $\eta$ makes it energy dependent.
 
-In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta/2))$ and $\exp(2i\sigma_0)$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase $\exp(iS/\hbar)$ and the path-integral phase $\exp(iS/\hbar)$. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm rotors.
+In the biquaternion interpretation these are central phases: $\exp(-i\eta\ln\sin^2(\theta/2))$ and $\exp(2i\sigma_0)$ are elements of the centre's unit circle $\mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}}$, of the same kind as the free phase and the path-integral phase. They multiply the amplitude without touching the module. The framework's unitary-versus-rotor distinction applies: these are unitary central phases, not unit-norm rotors.
 
 ### The scattering length and the infrared analogy
 
@@ -297,7 +297,7 @@ $$
 f_C(\theta)=-\frac{\eta}{2k\sin^2(\theta/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right],
 $$
 
-whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\hbar^2\lvert\vec k'-\vec k\rvert^2$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.
+whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^2\lvert\vec k'-\vec k\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.
 
 The biquaternion content is centrality: the potential couples only to the scalar slot, the amplitude is a central complex scalar, the Coulomb phase and the logarithmic phase are central unitary elements, and the momentum transfer is a real quaternion. The bound states of the same potential are the subject of the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*. The framework supplies the algebraic location of the amplitude and the phases and the continuity between the bound and continuum problems; it does not supply the Coulomb wave functions, the closed-form sum, or Rutherford's formula, and it adds no prediction distinguishing the reformulation from scalar Coulomb scattering.
 

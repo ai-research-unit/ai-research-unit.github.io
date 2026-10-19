@@ -392,7 +392,7 @@ $$
 \tilde Q_1^{2}=0\quad(\tilde Q_1\neq0)\ \Longleftrightarrow\ \tilde Q_1\ \text{pure and isotropic}.
 $$
 
-*Pure* means the scalar part vanishes, $\mathrm{Sc}(\tilde Q_1)=Q_{1,0}=0$. *Isotropic* means the vector part
+*Pure* means the scalar part vanishes, $\mathrm{Sc}(\tilde Q_1)=Q_{1t}=0$. *Isotropic* means the vector part
 has vanishing square, $\sum_{k}Q_{1k}^{2}=0$. The two conditions together are the criterion
 $\det\mathsf{M}_2(\tilde Q_1)=0$ with $\mathrm{Tr}\,\mathsf{M}_2(\tilde Q_1)=0$, which for a $2\times2$ matrix
 is exactly nilpotence, and the recomputation below confirms both directions on random elements and on the
@@ -573,7 +573,7 @@ $$
 
 so the cone is the **absorbing set** of the composition. *The Four Forms, the Four Algebraic Norms and the Change of Scalars* states it as "composition cannot generate mass": a composite with a lightlike factor
 is lightlike. The same article gives the family picture that goes with it. The mass shells
-$\{N=-m^{2}c^{2}\}$ interpolate between the null cone at $m=0$ and the timelike interior, the product
+$\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$ interpolate between the null cone at $m=0$ and the timelike interior, the product
 multiplies the labels, and a lightlike label is therefore absorbing for the whole family. This is a
 statement the present article's account of propagation does not contain: it uses the multiplicativity to
 freeze the vanishing under a rotor, not to say that the product cannot leave the cone.

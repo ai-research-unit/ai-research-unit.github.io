@@ -52,7 +52,7 @@ $$
 \boxed{\;\Delta\theta_k=-\frac{\partial}{\partial I_k}\oint\mathcal A_\mu(R)\,dR^\mu\;}
 $$
 
-where $\mathcal A_\mu$ is the **Berry connection** of the quantum system obtained by quantising the same classical problem, and $\gamma=\oint\mathcal A_\mu dR^\mu$ is the Berry phase. Hannay's angle is thus the derivative of the Berry phase with respect to the action. This is the precise sense in which the classical geometric phase is the classical counterpart of the quantum one: the quantum phase is the action-integral of the classical angle.
+where $\mathcal A_\mu$ is the **Berry connection** of the quantum system obtained by quantising the same classical problem, and $\gamma=\oint\mathcal A_\mu dR^\mu$ is the Berry phase. Hannay's angle is thus the derivative of the Berry phase with respect to the action. This is the precise sense in which the classical geometric phase is the classical counterpart of the quantum one: the classical angle is the action-derivative of the quantum phase.
 
 The wording is worth making precise. The configuration space is that of the parameters $R$; the Berry connection is a one-form on it, and its integral around the cycle is the phase. The derivative with respect to the action produces the classical angle. For a system with several angles, the derivative is with respect to the corresponding action, and the Hannay angle of each angle is the corresponding component of the gradient.
 
@@ -99,7 +99,7 @@ $$
 d\tilde S/dt=\vec\omega\times\vec S ,
 $$
 
-the rigid rotation of the spin about the axis $\vec\omega$ at frequency $|\vec\omega|$. This is the rotor flow: for $H=2\vec G\cdot\vec S$ with $\vec G$ the generator, the flow is $\tilde S\mapsto \exp(t\vec G)\tilde S \exp(-t\vec G)$, and the angular velocity of the spin is $\vec\omega$.
+the rigid rotation of the spin about the axis $\vec\omega$ at frequency $|\vec\omega|$. This is the rotor flow: for $H=2\vec G\cdot\vec S$ with $\vec G$ the generator, the flow is $\tilde S\mapsto \exp(t\vec G)\tilde S \exp(-t\vec G)$, and the angular velocity of the spin is $2\vec G$.
 
 ### The Slow Parameter and the Rotor
 
@@ -169,7 +169,7 @@ is the pullback of the connection, and the Hannay angle is the integral of its c
 
 ### The Sign and the Orientation
 
-The sign of the Hannay angle is fixed by two independent conventions, and both must be stated. The first is the orientation of the loop: reversing the sense of the cycle reverses the sign of the enclosed area and of the angle. The second is the reference for the "dynamical" advance: the angle variable's natural advance over a closed cycle of parameters includes a full turn $2\pi$, so an angle that is computed as a remainder can differ from the solid angle by $2\pi$. This is why the uniformly precessing spin gives the remainder $-2\pi\cos\theta_0$ in the rotating frame and the solid angle $\Omega=2\pi(1-\cos\theta_0)$ once the frame's own $2\pi$ is restored. The physically meaningful statement is that the angle is the holonomy, defined modulo $2\pi$, and that its representative in $[0,2\pi)$ is the solid angle.
+The sign of the Hannay angle is fixed by two independent conventions, and both must be stated. The first is the orientation of the loop: reversing the sense of the cycle reverses the sign of the enclosed area and of the angle. The second is the reference for the "dynamical" advance: the angle variable's natural advance over a closed cycle of parameters includes a full turn $2\pi$, so an angle that is computed as a remainder can differ from the solid angle by $2\pi$. This is why the uniformly precessing spin gives the remainder $-2\pi\cos\theta_0$ in the rotating frame and the solid angle $\Omega=2\pi(1-\cos\theta_0)$ once the frame's own $2\pi$ is restored. The physically meaningful statement is that the angle is the holonomy, defined modulo $2\pi$, and that its representative modulo $2\pi$ is the solid angle modulo $2\pi$.
 
 ### Any Loop: Stokes and the Constant Curvature
 
@@ -207,7 +207,7 @@ $$
 \pmod{2\pi},
 $$
 
-and the signed turn read in the co-rotating frame is $-2\pi\cos\alpha=-2\pi\sin\lambda$. The two differ by a full turn and describe the same rotation of the swing plane: at $\lambda=45^\circ$ they are $106^\circ$ and $254^\circ$, which differ by exactly $360^\circ$. The pendulum therefore supplies the standard textbook value $2\pi\sin\lambda$ of the precession and the solid-angle form $\Omega_{\mathrm{F}}$ of the holonomy at once, the two being equal as rotations; the sign and the mod-$2\pi$ freedom are the ones already fixed in "The Sign and the Orientation" above.
+and the signed turn read in the co-rotating frame is $-2\pi\cos\alpha=-2\pi\sin\lambda$. The two differ by a full turn and describe the same rotation of the swing plane: at $\lambda=45^\circ$ they are $106^\circ$ and $-254^\circ$, which differ by exactly $360^\circ$. The pendulum therefore supplies the standard textbook value $2\pi\sin\lambda$ of the precession and the solid-angle form $\Omega_{\mathrm{F}}$ of the holonomy at once, the two being equal as rotations; the sign and the mod-$2\pi$ freedom are the ones already fixed in "The Sign and the Orientation" above.
 
 ## The Spin Example and the Double Cover
 
@@ -282,7 +282,7 @@ The one place where the quantum counterpart enters the discussion is the formula
 
 Hannay's angle is the classical geometric phase of an adiabatically cycled system, and in the biquaternion algebra it is the holonomy of the rotor that carries a fixed axis to the slowly varying direction.
 
-- Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\Delta\theta_k=-\partial/\partial R_k\,\oint\mathcal A_\mu dR^\mu$, the action-derivative of the Berry phase.
+- Action-angle variables $(\theta,I)$ with slowly cycled parameters $R$ have an adiabatic invariant $I$ and an angle $\theta$ that acquires, after a closed cycle, the Hannay angle $\Delta\theta_k=-\partial/\partial I_k\,\oint\mathcal A_\mu dR^\mu$, the action-derivative of the Berry phase.
 - The classical spin is a point of the coadjoint orbit $\langle\tilde S\rangle_{\natural}=S^2$, with $H=\vec\omega\cdot\vec S$ generating the rotor flow $d\vec S/dt=\vec\omega\times\vec S$.
 - The direction $\vec u_x=\tilde u\vec e_z\tilde u^{\natural}$ defines a rotor field; the geodesic (shortest) rotor is $\tilde u_g=\cos\frac{\theta_0}{2}+\sin\frac{\theta_0}{2}\vec u_y$ with $\vec u_y$ in the plane perpendicular to $\vec e_z$, and its body-frame twist about the direction is $\omega_b^{\parallel}=-(1-\cos\theta_0)d\phi/dt$, so that the Hannay angle is $-\oint\omega_b^{\parallel}dt=\Omega$.
 - Integrating the twist around a cycle of solid angle $\Omega$ gives Hannay's angle $\Delta\theta_{\mathrm{Hannay}}=\Omega$, the holonomy of the connection $\mathcal A=(1-\cos\theta)d\phi$ with curvature $\sin\theta\,d\theta\wedge d\phi$.
@@ -299,7 +299,7 @@ The phase is classical: it is the holonomy of a transport on the space of direct
 | $(\theta_k,I_k)$ | Action-angle variables |
 | $R$ | Slowly cycled parameters |
 | $\omega_k=\partial H_0/\partial I_k$ | Instantaneous frequencies |
-| $\Delta\theta_k=-\partial/\partial R_k\,\oint\mathcal A_\mu dR^\mu$ | Hannay's angle |
+| $\Delta\theta_k=-\partial/\partial I_k\,\oint\mathcal A_\mu dR^\mu$ | Hannay's angle |
 | $\mathcal A_\mu$ | Berry connection of the quantised problem |
 | $\gamma=\oint\mathcal A_\mu dR^\mu$ | Berry phase (quantum counterpart) |
 | $\tilde S\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, $\langle\tilde S\rangle_{\natural}=S^2$ | Classical spin on its coadjoint orbit |

@@ -31,7 +31,7 @@ Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_
 
 ### The Expansion in Spherical Harmonics
 
-Let a bounded source radiate at a single frequency. Outside the source the field satisfies the source-free equations, and the scalar potentials that generate it are expanded in spherical harmonics with radial functions that solve Bessel's equation. The angular dependence of the field is therefore the direct sum
+Let a bounded source radiate at a single frequency. Outside the source the field satisfies the source-free equations, and the scalar potentials that generate it are expanded in spherical harmonics with radial functions that solve the spherical Bessel equation. The angular dependence of the field is therefore the direct sum
 
 $$
 L^2(S^2) = \bigoplus_{l=0}^{\infty} D^{(l)} ,
@@ -45,7 +45,7 @@ $$
 \mathcal{Q}_{lm} = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\,r'^{\,l}\,Y_l^{m*}(\vec u_x')\,d^3x' ,
 $$
 
-the electric moments, together with the magnetic moments built from the current. The potential of the source at a field point outside it is a sum of two radial behaviours for each $l$: the irregular solution, which is the near-zone multipole field of the source, and the outgoing spherical wave, which is its radiation. The angular order $l$ is common to both; the multipole order is a property of the angular map, and the near-to-far transition is a property of the radial function. This is the standard multipole expansion and is transcribed rather than re-derived.
+where $\vec u_x'$ is the unit vector from the origin to the source point; these are the electric moments, together with the magnetic moments built from the current. The potential of the source at a field point outside it is a sum of two radial behaviours for each $l$: the irregular solution, which is the near-zone multipole field of the source, and the outgoing spherical wave, which is its radiation. The angular order $l$ is common to both; the multipole order is a property of the angular map, and the near-to-far transition is a property of the radial function. This is the standard multipole expansion and is transcribed rather than re-derived.
 
 For radiation the cleanest bookkeeping is through the **radiation vector** of the electromagnetic series,
 
@@ -165,7 +165,7 @@ $$
 \tilde{F}^{*} = i\sqrt{\epsilon}\,\vec N^* ,
 $$
 
-so that the self-dual half is the field strength itself and the anti-self-dual half is obtained from it by the dagger. The identity uses $\tilde{F}^{*} = -\tilde{F}^* = i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H$ together with $\sqrt{\mu}\,\vec H = \sqrt{\epsilon}\,c\,\vec B$, so it holds for the real field; on the **complexified** field space the two halves are the independent projections of $F$ and the dagger is no longer the operation that produces the second from the first. For a real field, $\vec N^* = \overline{\vec N}$: the two chiralities are complex conjugates and carry the same six real components, so either alone encodes the whole field. On the complexified field space they are independent, and it is there that the decomposition is a genuine splitting; on the real field space it is the statement that the field is encoded by a single complex vector, its Riemann–Silberstein vector.
+so that the self-dual half is the field strength itself and the anti-self-dual half is obtained from it by the dagger. The identity uses $\tilde{F}^{*} = i\sqrt{\epsilon}\,\vec E+\sqrt{\mu}\,\vec H$ together with $\sqrt{\mu}\,\vec H = \sqrt{\epsilon}\,c\,\vec B$, so it holds for the real field; on the **complexified** field space the two halves are the independent projections of $F$ and the dagger is no longer the operation that produces the second from the first. For a real field, $\vec N^* = \overline{\vec N}$: the two chiralities are complex conjugates and carry the same six real components, so either alone encodes the whole field. On the complexified field space they are independent, and it is there that the decomposition is a genuine splitting; on the real field space it is the statement that the field is encoded by a single complex vector, its Riemann–Silberstein vector.
 
 ### The Relation of the Two Decompositions
 
@@ -360,7 +360,7 @@ The pattern of the lowest orders is the pattern for all of them.
 - At each order $l\ge1$ there is an electric multiplet $E_l$ and a magnetic multiplet $M_l$, each of complex dimension $2l+1$, of opposite parity.
 - The electric and magnetic multipole types are the parity-even and parity-odd combinations of the two helicity amplitudes; a boost rotates the two types into one another and preserves the helicities. Their covariant packaging is the covariant multipole tensor, and the self-dual field strength is the corresponding covariant object on the field side. The order $l$ itself is a rest-frame label, not a Lorentz invariant.
 - In a static or stationary setting the electric multipole field is purely Hermitian and the magnetic multipole field purely anti-Hermitian, so the two types are the two sectors $\mathbb{M}_\pm$; in radiation each type has both parts.
-- In the long-wavelength expansion the electric multiplet $E_{l+1}$ is paired with the magnetic multiplet $M_l$ at order $k^l$, and both radiate with power $\propto\omega^{2l+2}$.
+- In the long-wavelength expansion the electric multiplet $E_{l+1}$ is paired with the magnetic multiplet $M_l$ at order $k^l$; a multiplet of order $l$ radiates with power $\propto\omega^{2l+2}$.
 - For radiation the field is null, $\langle\tilde{F}\rangle_{\natural} = 0$, and a definite-helicity multipole lies entirely in one chiral half; the helicity is the eigenvalue of $\star$.
 
 The tower grows without bound in the function space, while the value algebra stays four-dimensional, and the two decompositions of the value — Hermitian and self-dual — act on each order of the tower in the way described: the first separates the two fields, the second separates the two helicities.
@@ -381,7 +381,7 @@ and is rotation-covariant but not boost-covariant. It coincides with the electri
 
 Under a boost, $\tilde{F}' = \tilde{U}^{\natural}\tilde{F}\tilde{U}$, the two chiralities transform independently, $\vec N' = \Lambda\vec N$ with $\Lambda\in SO(3,\mathbb{C})$, $\Lambda^{\mathsf{T}}\Lambda = I_3$, $\det\Lambda = 1$, and $\vec N^{*\prime} = \Lambda^{*}\vec N^*$, while the Hermitian halves mix: the electric and magnetic multipole types rotate into one another, with the dipole illustration $\vec m = \tfrac{1}{2}\vec p\times\vec v$ and the quadrupole analogue, because a boost does not preserve parity. The covariant pairing combines $E_l$ and $M_l$ into the covariant multipole tensor of rank $l$; the long-wavelength pairing in the radiation vector is $E_{l+1}\leftrightarrow M_l$ at order $k^l$. The order $l$ is not a Lorentz invariant: it is a rest-frame label, since a boost transforms the argument of the field as well as its value. A radiation field is null, $\langle\tilde{F}\rangle_{\natural} = 0$.
 
-The multipole series and the two decompositions act on different spaces. The decompositions split the value algebra — into its two real sectors and its two chiral halves — and they are the covariant statements; the order $l$ labels the angular decomposition in a fixed frame, and only the rotation subgroup preserves it. A boost mixes the electric and magnetic types, because it mixes the fields and does not preserve parity, and it also changes the angular decomposition, because it transforms the argument of the field. The multipole order is a rest-frame label, and the covariant packaging of the moments is the covariant multipole tensor.
+The multipole series and the two decompositions act on different spaces. The decompositions split the value algebra — into its two real sectors and its two chiral halves — and they are covariant in their own categories; the order $l$ labels the angular decomposition in a fixed frame, and only the rotation subgroup preserves it. A boost mixes the electric and magnetic types, because it mixes the fields and does not preserve parity, and it also changes the angular decomposition, because it transforms the argument of the field. The multipole order is a rest-frame label, and the covariant packaging of the moments is the covariant multipole tensor.
 
 ## Summary of Notation
 

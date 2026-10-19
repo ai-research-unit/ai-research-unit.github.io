@@ -115,7 +115,7 @@ $$
 J \propto \mathrm{Im}\,\det\big[M_uM_u^\dagger,\,M_dM_d^\dagger\big] ,
 $$
 
-the commutator of the two mass-matrix products, up to normalisation by the mass differences. **CP violation for three generations is exactly the noncommutativity of the two mass matrices.**
+the commutator of the two mass-matrix products, up to normalisation by the mass differences. **CP violation for three generations is the noncommutativity of the two mass-matrix products, measured by the Jarlskog invariant.**
 
 **The values, recomputed.** With the standard values, the invariant and the matrix were computed from the unitary parametrisation:
 
@@ -183,7 +183,7 @@ exactly half the Jarlskog invariant: $|J|/2 = 1.541866\times10^{-5}$, and the co
 
 **The rescaled triangle.** Dividing the relation by $|V_{cd}V_{cb}^{*}|$ brings the triangle to the standard $(\bar\rho,\bar\eta)$ form with vertices $(0,0)$, $(1,0)$, $(\bar\rho,\bar\eta)$ and angles $\alpha,\beta,\gamma$; in those rescaled coordinates the area is $\bar\eta/2$, and the two area statements are related by the side lengths. The framework's content is the closure: the sides are products of entries of a **unitary** matrix on the flavour factor, and unitarity is exactly the framework's requirement that the flavour rotation preserve the norm on $\mathcal{F}$. The closure of the triangle is the statement that $V$ is a point of $\mathrm{U}(N_g)$, and the nonzero area is the statement that the point is not real.
 
-**The number of triangles and the number of phases.** For $N_g$ generations there are $\tfrac12N_g(N_g-1)$ independent triangles from the column (or row) orthogonality relations, and for $N_g=3$ there are three; all six (rows and columns) collapse to the same area $|J|/2$. The number of triangles exceeds the number of CP-violating phases by one for $N_g=3$ (three triangles, one phase), and the equality of their areas is a nontrivial consistency condition of the unitary structure. The framework supplies the unitary structure and the counting; the equality is a theorem of the group.
+**The number of triangles and the number of phases.** For $N_g$ generations there are $\tfrac12N_g(N_g-1)$ independent triangles from the column (or row) orthogonality relations, and for $N_g=3$ there are three; all six (rows and columns) collapse to the same area $|J|/2$. The number of triangles exceeds the number of CP-violating phases by two for $N_g=3$ (three triangles, one phase), and the equality of their areas is a nontrivial consistency condition of the unitary structure. The framework supplies the unitary structure and the counting; the equality is a theorem of the group.
 
 ## CP Violation in the Lepton Sector
 

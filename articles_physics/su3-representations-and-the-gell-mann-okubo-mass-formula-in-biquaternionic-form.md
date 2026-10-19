@@ -10,7 +10,7 @@ The article is organised as follows. A section gives the representations as trac
 
 **Conventions.** The Okubo basis and the degree formula are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§4–6) and from Okubo's *Lecture Notes in Physics* **94**; the mass relations are the standard Gell-Mann–Okubo relations and are checked against the Particle Data Group values. The companion *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form* supplies the space on which these representations act, and *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form* supplies the mass $m_0$ of a supermultiplet.
 
-- Companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form*, for the space $\mathcal{H}_S\otimes\mathcal{H}_Ϙ\otimes\mathcal{H}_\infty$ on which these representations act.
+- Companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form*, for the space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ on which these representations act.
 - Companion article *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*, for the mass $m_0$ of the supermultiplet and the representation degrees on the spin lines.
 - Companion articles *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *The Gluon: An Octet Outside the Biquaternion Algebra*, for why $\mathrm{SU}(3)$ is external.
 - Corpus article *The Pion and the Chiral Lagrangian in Biquaternionic Form*, for the octet's scalar sector and the Gell-Mann–Oakes–Renner relation, a different mass formula.

@@ -26,7 +26,7 @@ $$
 \vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda ,
 $$
 
-the standard Hamilton rule. The quaternion conjugate and the complex conjugate are $\bar Q = Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$ and $Q^* = Q_t^*e_t+\dots+Q_z^*\vec e_z$, and the norm is $\langle Q\rangle_{\natural}=\bar QQ=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Conventions in the Biquaternion Universe*, and the two conjugate pairs $\bar\cdot$ and $\bar{\cdot}$ with their fixed subspaces are fixed in *The Realification and the Effect of the Change of Scalars*.
+the standard Hamilton rule. The complex conjugate and the quaternion conjugate are $\bar Q = \bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$ and $Q^{\natural} = Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, and the norm is $\langle Q\rangle_{\natural}=Q Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Conventions in the Biquaternion Universe*, and the two conjugations $\bar\cdot$ and ${}^{\natural}$ with their fixed subspaces are fixed in *The Realification and the Effect of the Change of Scalars*.
 
 ### Maxwell's equations and the biquaternionic form
 

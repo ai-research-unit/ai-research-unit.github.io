@@ -539,7 +539,7 @@ since the left-hand side is $\mathrm{Tr}\big((\tilde U^{*}\tilde U)\tilde{H}_2(\
 The **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and with it the interval on $\mathbb{M}_-$, is invariant under the whole rotor group, by multiplicativity of the biquaternion norm together with $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \overline{\langle\tilde U_{\mathrm L}\rangle_{\natural}} = 1$:
 
 $$
-N\!\left(\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\right) = \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}, \qquad \tilde U_{\mathrm L} \in SL(2,\mathbb{C}).
+\langle\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}, \qquad \tilde U_{\mathrm L} \in SL(2,\mathbb{C}).
 $$
 
 This form does **not**, however, separate the two groups, and the point is worth stating: since $|\langle\tilde{U}\rangle_{\natural}| = |\det\tilde{U}| = 1$ for a unitary element, the unitary group preserves the biquaternion norm as well. In general $\langle\tilde Q\rangle_{\natural}$ is invariant under conjugation by every element $\tilde U$ with $|\langle\tilde U\rangle_{\natural}| = 1$, of which the unitary elements and the unit-norm rotors are the two cases that occur here. The Lorentzian form is thus common to the quantum and the relativistic transformations. What separates the two full groups is the **Euclidean** trace pairing: $\mathrm{U}(2)$ preserves it, while a non-unitary Lorentz element does not. The automorphism property points the same way: it holds for the unitary elements and fails for the non-unitary Lorentz elements. Neither group contains the other, and their common subgroup is the rotation group $SU(2)$.
@@ -552,7 +552,7 @@ $$
 \tilde U_{\mathrm L} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde U_{\mathrm L}\rangle_{\natural} = \cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2} = 1 .
 $$
 
-It lies on the **norm-one hyperboloid** of $\mathbb{M}_+$, whereas the states lie on the trace-one slice of the future light cone, with $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2) \geq 0$ and pure states at $N = 0$. Boost conjugation preserves Hermiticity, positivity (a congruence preserves the inertia), and the biquaternion norm, but it preserves neither the trace nor the trace pairing. On the maximally mixed state, for instance,
+It lies on the **norm-one hyperboloid** of $\mathbb{M}_+$, whereas the states lie on the trace-one slice of the future light cone, with $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2) \geq 0$ and pure states at $\langle\tilde{Ϛ}\rangle_{\natural} = 0$. Boost conjugation preserves Hermiticity, positivity (a congruence preserves the inertia), and the biquaternion norm, but it preserves neither the trace nor the trace pairing. On the maximally mixed state, for instance,
 
 $$
 \tilde U_{\mathrm L}\,\tfrac{1}{2}e_t\,\tilde U_{\mathrm L}^{*} = \tfrac{1}{2}\left(\cosh\psi\,e_t + i\sinh\psi\,\vec u_{\mathrm b}\right),

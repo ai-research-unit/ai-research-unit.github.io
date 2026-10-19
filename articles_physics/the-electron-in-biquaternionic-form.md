@@ -43,7 +43,7 @@ The electron field carries the electron's data in the following objects.
 | Mass | the coefficient $m_e$ of the linear, chirality-off-diagonal mass pair |
 | Charge | the coupling $ϙ=-e$ inserted in the gradient (see below) |
 | Spin state | an idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)\in\mathbb{M}_+$ |
-| Spin observables | Hermitian elements $\tilde{H} = i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$ |
+| Spin observables | Hermitian elements $\tilde{H} = i h_k\vec e_k\in\mathbb{M}_+$ |
 | Conserved current | $\tilde{J} = ic\,j^0 e_t + \vec j\in\mathbb{M}_-$ |
 | Chiral halves | the left- and right-handed Weyl spinors of the spinor module |
 
@@ -111,7 +111,7 @@ The electron's spin is where the framework is strongest and where the distinctio
 
 **Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible module, of complex dimension two, and group of unit-norm biquaternions $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field placed in that module transforms in the spinor representation $(\tfrac12,0)$: its spin is $\tfrac{1}{2}$, and a rotation by $2\pi$ acts as $-e_t$ on the spinor module while acting as $+e_t$ on the four-vectors of $\mathbb{M}_-$. The twofold, double-valued character of electron spin is therefore a representation-theoretic consequence of where the field lives, not an independent postulate. The spin rotations are the unit-norm biquaternions with real vector part, forming $SU(2)$.
 
-**Derived: the state and observable structure.** On the dictionary used in the companion articles, the electron's spin state along a unit direction $\vec u$ is represented by the idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k \vec e_k$ and $\tilde{P} = \tfrac{1}{2}(e_t + i n_\nu \vec e_\nu)$ one has $2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = n_\nu h_\nu$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_z)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_x)\big) = 0$, the correct values for the spin along $z$ and $x$.
+**Derived: the state and observable structure.** On the dictionary used in the companion articles, the electron's spin state along a unit direction $\vec u$ is represented by the idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i h_k\vec e_k\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k \vec e_k$ and $\tilde\Pi(\vec n) = \tfrac{1}{2}(e_t + i n_\nu \vec e_\nu)$ one has $2\,\mathrm{Sc}(\tilde\Pi\tilde{H}) = n_\nu h_\nu$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_z)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_x)\big) = 0$, the correct values for the spin along $z$ and $x$.
 
 **Inserted: the magnitude.** The spin operator is $S_k = \tfrac{\hbar}{2}\sigma_k$, corresponding to $\tfrac{\hbar}{2}i\vec e_k$. The factor $\hbar/2$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\hbar$ is physics inserted from outside.
 
@@ -200,7 +200,7 @@ Two structural points and two cautions.
 | Feature of the electron | Status in the framework | Where it comes from |
 |---|---|---|
 | Spin-$\tfrac{1}{2}$ representation content | Derived | $\mathbb{B}\cong M_2(\mathbb{C})$, unique irreducible module; $SL(2,\mathbb{C})$ double cover |
-| Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
+| Spin states, observables, expectation values | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 | Spin magnitude $\hbar/2$ | Represented | normalisation of $S_k = \tfrac{\hbar}{2}\sigma_k$ |
 | Tree-level $g=2$, $\vec\mu_e = -(e/m_e)\vec S$ | Derived (conditional) | $1/2m$ coefficient from the mass term plus minimal coupling |
 | Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j^\mu = \bar{\psi}\gamma^\mu\psi$, $\partial_\mu j^\mu = 0$ |
@@ -237,10 +237,10 @@ The electron is not an element of either sector: state-like and field-strength-l
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
-| $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Spin-state idempotent in $\mathbb{M}_+$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula (expectation values) |
 | $\tilde{J} = ic\,j^0 e_t + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
 | $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$ |
 | $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ | Four-wavevector; $\langle\tilde P/\hbar\rangle_{\natural} = -m^2c^2/\hbar^2$ |

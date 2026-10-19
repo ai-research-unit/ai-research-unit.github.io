@@ -218,7 +218,7 @@ $$
 \langle\psi,\psi\rangle_*=\tfrac12\bigl(|\psi_1|^2+|\psi_2|^2\bigr),
 $$
 
-a sum of squared moduli over the two amplitudes. The factor $\tfrac12$ is the corpus normalisation $\mathrm{Tr}(e_t)=2$ and not a defect; the content is the positivity, and it is what makes the amplitude bilinear in the state. The reason the state space of the framework reads as $\mathbb{C}^2$ with its standard inner product is therefore algebraic: the two amplitudes are the coefficients of the two basis spinors, and the metric on them is the restriction of the plain sesquilinear form, which is positive definite and diagonal on the ideal's own basis.
+a sum of squared moduli over the two amplitudes. The factor $\tfrac12$ is the corpus normalisation $\mathrm{Tr}(e_t)=2$ and not a defect; the content is positivity, and it is what makes the norm a sum of squared moduli. The reason the state space of the framework reads as $\mathbb{C}^2$ with its standard inner product is therefore algebraic: the two amplitudes are the coefficients of the two basis spinors, and the metric on them is the restriction of the plain sesquilinear form, which is positive definite and diagonal on the ideal's own basis.
 
 ## What the Split Explains
 
@@ -246,7 +246,7 @@ The corpus reads the insertion of the star into the second slot as **quantisatio
 
 ### Spin Lives on the Module, the Ray Lives on the Hilbert Space
 
-The double cover acts on the **module**: the action $\psi\mapsto\tilde U_{\mathrm L}\psi$ is faithful, $-e_t$ acts as $-\mathrm{id}$, and this is why the framework carries spin-$\tfrac12$ and not only a vector representation. The **Hilbert** structure does not see the sign: $\psi$ and $-\psi$ define the same functional on every state, hence the same ray and the same probabilities. The two facts are the two structures. The spin is a module datum, because it is a property of how the algebra acts; the ray is a Hilbert datum, because it is an equivalence class for the phase, and the phase is invisible to the form. This is the algebraic form of the standard statement that a spinor state is a ray in a two-dimensional complex space and a spin-$\tfrac12$ object at once.
+The double cover acts on the **module**: the action $\psi\mapsto\tilde U_{\mathrm L}\psi$ is faithful, $-e_t$ acts as $-\mathrm{id}$, and this is why the framework carries spin-$\tfrac12$ and not only a vector representation. The **Hilbert** structure does not see the sign: $\psi$ and $-\psi$ define the same ray and the same probabilities. The two facts are the two structures. The spin is a module datum, because it is a property of how the algebra acts; the ray is a Hilbert datum, because it is an equivalence class for the phase, and the phase is invisible to the form. This is the algebraic form of the standard statement that a spinor state is a ray in a two-dimensional complex space and a spin-$\tfrac12$ object at once.
 
 ### Normalisation and the Vacuum
 

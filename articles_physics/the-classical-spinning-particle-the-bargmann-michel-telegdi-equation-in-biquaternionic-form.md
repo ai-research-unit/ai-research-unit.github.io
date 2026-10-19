@@ -42,7 +42,7 @@ $$
 \mathrm{F}(\tilde{V}):=-\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
 $$
 
-is the **field action**, the element of $\mathbb{M}_-$ whose four-vector components are the contraction $F^{\mu\nu}V_\nu$, and $\langle A,B\rangle=\mathrm{Sc}(A\bar{B})$ is the invariant pairing on the material sector.
+is the **field action**, the element of $\mathbb{M}_-$ whose four-vector components are the contraction $F^{\mu\nu}V_\nu$, and $\langle A,B\rangle=\mathrm{Sc}(A B^{\natural})$ is the invariant pairing on the material sector.
 
 Two boundaries are respected. The **spin-0 and multipole sectors** are excluded: the relativistic central-force problem belongs to `Biquaternion Relativistic Non Quantum Theory`, subcategory on effects without intrinsic magnetism, and the quadrupole and higher multipoles to the subcategory on higher multipole origins. The **quantum and informational sectors** are excluded: the spinor and Dirac treatments belong to `Biquaternion Relativistic Quantum Theory`, and the information-theoretic interpretation of the Wigner rotation to its subcategory on informational aspects. The **Thomas precession**, which is the free-field kinematic piece of the same physics, is treated in the companion article of the present subcategory and is not re-derived here.
 
@@ -139,7 +139,7 @@ $$
 because $F$ is antisymmetric. Of the scalars that can be formed, two are relevant: $S_\mu v^\mu=0$, and
 
 $$
-B:=S_\lambda F^{\lambda\nu}v_\nu=v_\lambda F^{\lambda\nu}S_\nu ,
+B:=S_\lambda F^{\lambda\nu}v_\nu=-v_\lambda F^{\lambda\nu}S_\nu ,
 $$
 
 the **invariant spin–field–velocity scalar**. A term proportional to $S^\mu$ itself is excluded because it would change the invariant $S_\mu S^\mu$, which is fixed; a term proportional to $\big(F\cdot v\big)^\mu$ times $S_\lambda v^\lambda$ vanishes by orthogonality; and the remaining contractions either reduce to $v^\mu B$ or vanish by the antisymmetry of $F$. Hence the most general covariant right-hand side linear in $F$ and $S$ that preserves the spin magnitude is
@@ -236,7 +236,7 @@ The second structure is the **invariant pairing**
 
 $$
 \big\langle\tilde{S},\mathrm{F}(\tilde{V})\big\rangle
-=\mathrm{Sc}\!\left(\tilde{S}\,\overline{\mathrm{F}(\tilde{V})}\right)
+=\mathrm{Sc}\!\left(\tilde{S}\,\mathrm{F}(\tilde{V})^{\natural}\right)
 =S_\lambda F^{\lambda\nu}v_\nu=B ,
 $$
 
@@ -302,10 +302,10 @@ $$
 The map $\tilde{Q}\mapsto (ϙ/m)F^{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F^{tk}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
 
 $$
-\frac{dX^k}{d\tau}=\frac{ϙ}{m}\big(\vec Q\times\vec B\big)_k ,
+\frac{dX^k}{d\tau}=\frac{ϙ}{m}\big(\vec X\times\vec B\big)_k ,
 $$
 
-so $S_{\rm vec}$ and $\gamma\vec v$ precess about $\vec B$ at the same proper-time rate, of magnitude $|ϙ||\vec B|/m$, and a spin whose spatial part is initially parallel to the velocity remains parallel: **the spin follows the velocity**. This is the classical statement that there is **no anomalous precession** at $g=2$: the spin's laboratory precession exactly follows the momentum's, and the kinematic (Thomas) rotation of the rest frame is already contained in the common transport. The $g=2$ identity was verified by recomputation on random fields and velocities: the spatial right-hand sides of the two equations for $S_{\rm vec}$ and $\gamma\vec v$ agree identically, so a spin initially parallel to the velocity remains parallel.
+where $\vec X$ is the spatial part of the four-vector in question. Thus $S_{\rm vec}$ and $\gamma\vec v$ precess about $\vec B$ at the same proper-time rate, of magnitude $|ϙ||\vec B|/m$, and a spin whose spatial part is initially parallel to the velocity remains parallel: **the spin follows the velocity**. This is the classical statement that there is **no anomalous precession** at $g=2$: the spin's laboratory precession exactly follows the momentum's, and the kinematic (Thomas) rotation of the rest frame is already contained in the common transport. The $g=2$ identity was verified by recomputation on random fields and velocities: the spatial right-hand sides of the two equations for $S_{\rm vec}$ and $\gamma\vec v$ agree identically, so a spin initially parallel to the velocity remains parallel.
 
 For $g\neq2$ the second term is non-zero and produces a precession of the spin **relative to** the four-velocity. Subtracting the $g=2$ transport from the full equation,
 

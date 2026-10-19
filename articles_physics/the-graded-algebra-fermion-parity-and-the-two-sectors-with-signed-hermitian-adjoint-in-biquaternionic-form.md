@@ -31,7 +31,7 @@ $$
 \text{odd}\cdot\text{odd}=\text{even},
 $$
 
-that is, the parity of a product is the sum of the parities. The generators $\gamma^\mu$ are odd; the bivectors $\gamma^\mu\gamma^\nu$ and the volume element are even; the square $(\gamma^\mu)^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic, a product of an even number is bosonic.
+that is, the parity of a product is the sum of the parities. The generators $\gamma^\mu$ are odd; the bivectors $\gamma^\mu\gamma^\nu$ and the volume element are even; the square $(\gamma^\mu)^2=\pm1$ is a scalar and hence even. The **physical interpretation** is the whole of the grading in one sentence: a product of an odd number of fermionic objects is fermionic; a product of an even number is bosonic.
 
 **Remark.** The identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$ is therefore not merely "$\mathbb{B}$ is a Clifford algebra"; it says *which* slot of the ambient graded algebra the biquaternion algebra is. The whole physics series computes in the bosonic sector, and this is why the parity sign of the next but one section is invisible in it.
 
@@ -42,12 +42,12 @@ The Hermitian dagger of the algebra is the adjoint of the spinor form, and the f
 **Proposition (the dagger preserves the parity and is an anti-involution).** The dagger is $\mathbb{C}$-antilinear, involutive and an anti-automorphism,
 
 $$
-(xy)^{*}=y^{*}x^{*},\qquad (x^{*})^{\dagger}=x,
+(xy)^{*}=y^{*}x^{*},\qquad (x^{*})^{*}=x,
 $$
 
-and it preserves the degree modulo two, $(\mathrm{Cl}^k)^{\dagger}\subseteq\mathrm{Cl}^k$, so $\lvert x^{*}\rvert=\lvert x\rvert$ on homogeneous elements.
+and it preserves the degree modulo two, $(\mathrm{Cl}^k)^{*}\subseteq\mathrm{Cl}^k$, so $\lvert x^{*}\rvert=\lvert x\rvert$ on homogeneous elements.
 
-*Proof.* The coefficient conjugation is a $\mathbb{C}$-antilinear automorphism that acts on the coefficients and not on the degree; the quaternion conjugation of the algebra is the reversion of the even slot, which reverses the order of the factors, so on a product $\tilde{Q}_1\tilde{Q}_2$ one has $(\tilde{Q}_1\tilde{Q}_2)^{*}=\tilde{Q}_2^{*}\tilde{Q}_1^{*}$; a product of $k$ generators is sent to a product of $k$ generators. For the odd slot this is the definition used in *The Reflection Read in the Hermitian Pairing* below.
+*Proof.* The coefficient conjugation is a $\mathbb{C}$-antilinear automorphism that acts on the coefficients and not on the degree; the quaternion conjugation of the algebra is the reversion of the even slot, which reverses the order of the factors, so on a product $\tilde{H}_1\tilde{H}_2$ one has $(\tilde{H}_1\tilde{H}_2)^{*}=\tilde{H}_2^{*}\tilde{H}_1^{*}$; a product of $k$ generators is sent to a product of $k$ generators. For the odd slot this is the definition used in *The Reflection Read in the Hermitian Pairing* below.
 
 **The two sectors of the corpus, in the language of the dagger.** The fixed and anti-fixed loci of the dagger are the two remarkable subspaces,
 
@@ -71,10 +71,10 @@ $$
 **Remark (the norm factor of the sandwich).** The Hermitian sandwich multiplies the norm by the modulus squared of the parameter,
 
 $$
-N\bigl(x\,y\,x^{*}\bigr)=\lvert \langle x\rangle_{\natural}\rvert^{2}\,\langle y\rangle_{\natural},
+\langle x\,y\,x^{*}\rangle_{\natural}=\lvert \langle x\rangle_{\natural}\rvert^{2}\,\langle y\rangle_{\natural},
 $$
 
-so the operator is a similarity of the spinor form of ratio $\lvert \langle x\rangle_{\natural}\rvert^{2}$ and an isometry exactly on the unit slice $\lvert N\rvert=1$. The signed **inner** conjugation of the companion article, $\alpha(x)\,y\,x^{-1}$, preserves the norm exactly, its ratio being $1$; the two interpretations therefore differ on the norm by the scalar $\lvert \langle x\rangle_{\natural}\rvert^{2}$, and they differ only by a phase of the parameter on the unit slice. That scalar is the whole difference between the two interpretations of the parity below.
+so the operator is a similarity of the spinor form of ratio $\lvert \langle x\rangle_{\natural}\rvert^{2}$ and an isometry exactly on the unit slice $\lvert\langle x\rangle_{\natural}\rvert=1$. The signed **inner** conjugation of the companion article, $\alpha(x)\,y\,x^{-1}$, preserves the norm exactly, its ratio being $1$; the two interpretations therefore differ on the norm by the scalar $\lvert \langle x\rangle_{\natural}\rvert^{2}$, and they differ only by a phase of the parameter on the unit slice. That scalar is the whole difference between the two interpretations of the parity below.
 
 ## The Twist Is the Conjugation by the Pseudoscalar
 
@@ -116,7 +116,7 @@ $$
 
 so for homogeneous parameters the composite is the **ordinary** Hermitian sandwich exactly when the parities agree, and in particular it is ordinary whenever both factors are odd.
 
-*Proof.* The dagger is an anti-automorphism and the twist an automorphism: $\Theta^{\alpha}_{xz}(y)=\alpha(x)\alpha(z)\,y\,z^{\dagger}x^{*}=\Theta^{\alpha}_x(\Theta^{\alpha}_z(y))$. Substituting the parity-sign identity for the three parameters and using $\varepsilon_x\varepsilon_z=\varepsilon_{xz}$ gives the second form.
+*Proof.* The dagger is an anti-automorphism and the twist an automorphism: $\Theta^{\alpha}_{xz}(y)=\alpha(x)\alpha(z)\,y\,z^{*}x^{*}=\Theta^{\alpha}_x(\Theta^{\alpha}_z(y))$. Substituting the parity-sign identity for the three parameters and using $\varepsilon_x\varepsilon_z=\varepsilon_{xz}$ gives the second form.
 
 | $x$ | $z$ | $xz$ | composite |
 |---|---|---|---|
@@ -148,7 +148,7 @@ $$
 \langle s,t\gamma\rangle=0 ,
 $$
 
-verified for all four generators and on even samples: the form on the fermionic sector is the form on the algebra up to the scalar $-q(\gamma)$, and the two slots are orthogonal for the form, as the parity preservation of the dagger requires. One warning belongs here, because it is easy to get wrong: the corresponding *elementwise* identity $(s\gamma)^{*}(t\gamma)=-q(\gamma)s^{*}t$ is **false** in general — a generator need not commute with an even element of the algebra, and the contraction terms spoil it — so the odd slot carries a Hermitian form and not a copy of the algebra's product. The fermionic sector is not a second algebra but a single module generator with the algebra's own Hermitian form.
+verified for all four generators and on even samples: the form on the fermionic sector is the form on the algebra up to the scalar $-q(\gamma)$, with $q$ the quadratic form of the Clifford algebra, and the two slots are orthogonal for the form, as the parity preservation of the dagger requires. One warning belongs here, because it is easy to get wrong: the corresponding *elementwise* identity $(s\gamma)^{*}(t\gamma)=-q(\gamma)s^{*}t$ is **false** in general — a generator need not commute with an even element of the algebra, and the contraction terms spoil it — so the odd slot carries a Hermitian form and not a copy of the algebra's product. The fermionic sector is not a second algebra but a single module generator with the algebra's own Hermitian form.
 
 **Remark (why the two copies are not independent).** The two slots are isomorphic as modules over the even part but are not two subalgebras, and the multiplication between them is the graded multiplication. Two independent copies would have no rule for the product of two odd elements; the rule odd $\times$ odd $=$ even is exactly what is lost, and with it the reflection, the parity and the twist.
 
@@ -158,15 +158,15 @@ The odd slot is where the parity sign is visible, and the simplest odd elements 
 
 **Definition (the dagger on the envelope).** On the ambient algebra the dagger is the map of the same formula as in the algebra, $x^{*}=\sigma(\alpha(x^{r}))$, the coefficient conjugation of the composite of the reversion and the grade involution. It restricts to the algebra's Hermitian conjugation on $\mathbb{B}$ and satisfies $\gamma^{\mu{}^{*}}=-\gamma^{\mu}$, so that the odd slot is where it differs from the reversion: on the vectors the two differ by the sign, and the corpus's relation $\mathrm{rev}={}^{*}\circ\sigma$ is exactly this statement.
 
-**Proposition (the vector identity).** Let $a,v$ be vectors of the Minkowski space of the envelope, $a^2=q(a)$ and $av+va=2B(a,v)$, and let $\rho_a(v)=v-2B(a,v)a/q(a)$ be the reflection. Then
+**Proposition (the vector identity).** Let $a,v$ be vectors of the Minkowski space of the envelope, with $q$ the quadratic form, $B$ its polar form, $a^2=q(a)$ and $av+va=2B(a,v)$, and let $\rho_a(v)=v-2B(a,v)a/q(a)$ be the reflection. Then
 
 $$
 \Theta^{\alpha}_a(v)=-q(a)\,\rho_a(v).
 $$
 
-*Proof.* The derivation is the one of the maths article: $\Theta^{\alpha}_a(v)=\alpha(a)\,v\,a^{\dagger}=(-a)\,v\,(-a)=a\,v\,a=2B(a,v)\,a-a^{2}v=2B(a,v)a-q(a)v=-q(a)\rho_a(v)$, using $\alpha(a)=-a$ on the odd slot, $a^{\dagger}=-a$ on the vectors, and $a^{2}=q(a)$.
+*Proof.* The derivation is the one of the maths article: $\Theta^{\alpha}_a(v)=\alpha(a)\,v\,a^{*}=(-a)\,v\,(-a)=a\,v\,a=2B(a,v)\,a-a^{2}v=2B(a,v)a-q(a)v=-q(a)\rho_a(v)$, using $\alpha(a)=-a$ on the odd slot, $a^{*}=-a$ on the vectors, and $a^{2}=q(a)$.
 
-**Corollary (which reflection each member realises).** The generators of square $-1$ — the spatial ones, $(\gamma^{k})^{2}=-1$ — satisfy $\Theta^{\alpha}_{\gamma^{k}}=\rho_{\gamma^{k}}$ exactly, while the timelike generator satisfies $\Theta^{\alpha}_{\gamma^{0}}=-\rho_{\gamma^{0}}$. The **unsigned** member does the opposite: $\Theta_{\gamma^{0}}=\rho_{\gamma^{0}}$ and $\Theta_{\gamma^{k}}=-\rho_{\gamma^{k}}$. So the reflection in a spatial hyperplane is carried by the signed Hermitian sandwich and the time reflection by the unsigned one, and the parity sign exchanged the two; this is the Hermitian form of the parity word of the next article, where two odd steps compose to a rotation.
+**Corollary (which reflection each member realises).** The generators of square $-1$ — the spatial ones, $(\gamma^{k})^{2}=-1$ — satisfy $\Theta^{\alpha}_{\gamma^{k}}=\rho_{\gamma^{k}}$ exactly, while the timelike generator satisfies $\Theta^{\alpha}_{\gamma^{0}}=-\rho_{\gamma^{0}}$. The **unsigned** member does the opposite: $\Theta_{\gamma^{0}}=\rho_{\gamma^{0}}$ and $\Theta_{\gamma^{k}}=-\rho_{\gamma^{k}}$. So the reflection in a spatial hyperplane is carried by the signed Hermitian sandwich and the time reflection by the unsigned one, and the parity sign exchanges the two; this is the Hermitian form of the parity word of the next article, where two odd steps compose to a rotation.
 
 **Remark (the same statement on the algebra).** The algebra has a Euclidean Clifford structure of its own, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, with vectors the Hermitian elements $i\vec e_k$ of the informational sector; there the vector identity reads $\Theta_{i\vec e_k}=-q(i\vec e_k)\rho_{i\vec e_k}=-\rho_{i\vec e_k}$ with $q(i\vec e_k)=+1$, so on the algebra the sandwich by a Hermitian unit vector is minus the reflection, and the sign is the one carried by the signature of the form and not by the grading. The two signs — the parity sign of $\Theta^{\alpha}$ and the signature sign of the reflection — are the two signs a reader must not conflate, and this is where they part.
 
@@ -184,7 +184,7 @@ Several distinct $\mathbb{Z}/2$'s coexist in the framework, and the parity of th
 
 The third row is the Hermitian structure of the algebra and not a grading, and the counterexample is the one already used above: $(i\vec e_x)(i\vec e_y)=-\vec e_z$ sends the product of two elements of $\mathbb{M}_+$ into $\mathbb{M}_-$. The dagger is even in the sense of the first row — it preserves the Clifford parity — and that is why the Hermitian form is the orthogonal sum of the forms on the two Clifford sectors, while the sector splitting of its own eigenvalues is a different $\mathbb{Z}/2$ that the multiplication does not respect.
 
-**What the grading does not supply.** The parity of a many-mode field is a product over the modes, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}i\vec e_z^{(\text{mode})}$, and the product over modes is not an element of $\mathbb{B}$: the parity of the field is external to the algebra. For one mode, $(-1)^F=i\vec e_z$ is an element of the algebra and is even, as the grading requires of a parity operator: the operator that measures the fermion parity is itself bosonic. In the Hermitian interpretation the same element is Hermitian, $(-1)^F=i\vec e_z\in\mathbb{M}_+$: the parity operator of one mode lies in the informational sector, and it is the same element that the Hilbert structure of the corpus singles out.
+**What the grading does not supply.** The parity of a many-mode field is a product over the modes, $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}i\vec e_z^{(\text{mode})}$, with $\Gamma$ the Fock-space representation of the parity element, and the product over modes is not an element of $\mathbb{B}$: the parity of the field is external to the algebra. For one mode, $(-1)^F=i\vec e_z$ is an element of the algebra and is even, as the grading requires of a parity operator: the operator that measures the fermion parity is itself bosonic. In the Hermitian interpretation the same element is Hermitian, $(-1)^F=i\vec e_z\in\mathbb{M}_+$: the parity operator of one mode lies in the informational sector, and it is the same element that the Hilbert structure of the corpus singles out.
 
 ## Worked Cases
 
@@ -193,18 +193,18 @@ The third row is the Hermitian structure of the algebra and not a grading, and t
 The Hermitian conjugation of the basis elements is the table of *Biquaternion Versors and the Orthogonal Group*, restated here because the whole article is the interpretation of it:
 
 $$
-e_t^{\dagger}=e_t,\qquad \vec e_k^{*}=-\vec e_k,\qquad i^{*}=-i,\qquad (i\vec e_k)^{*}=i\vec e_k .
+e_t^{*}=e_t,\qquad \vec e_k^{*}=-\vec e_k,\qquad i^{*}=-i,\qquad (i\vec e_k)^{*}=i\vec e_k .
 $$
 
 The quaternion units are anti-Hermitian, the complex unit is anti-Hermitian, the boosts $i\vec e_k$ are Hermitian: $\mathbb{M}_+$ is spanned by $e_t$ and the boosts, $\mathbb{M}_-$ by $i$ and the quaternion units. The parity of the basis elements — all even, since they are elements of the algebra — is untouched by the dagger, as the evenness proposition says.
 
 ### The Unit Slice and the Two Slices of the Algebra
 
-The slice $\mathcal{U}=\{x:x^{*}x=1\}$ of the dagger is a group, and it contains more than the unit quaternions: the unit quaternions (real coefficients with $N=1$), the unit complex scalars of the centre, and the boosts $i\vec e_k$ all satisfy $x^{*}x=1$. Its Lie algebra, by the sector decomposition, is $\mathbb{M}_-$: the anti-Hermitian elements are exactly those for which $\exp$ lands in $\mathcal{U}$, and the exponential of $\mathbb{M}_-$ was checked to lie in $\mathcal{U}$ on a sample. Since the dagger is the conjugate transpose in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$, the slice is the compact unitary group, $\mathcal{U}\cong \mathrm{U}(2)$. The **inverse** slice is the other one, the group of units of the algebra, and it is non-compact: this is the difference between the adjoint interpretation and the inverse interpretation in one line — the dagger selects the compact group, the inverse the group of units, and the Lorentz group of the corpus is reached by the inverse.
+The slice $\mathcal{U}=\{x:x^{*}x=1\}$ of the dagger is a group, and it contains more than the unit quaternions: the unit quaternions (real coefficients with $\langle x\rangle_{\natural}=1$), the unit complex scalars of the centre, and the boosts $i\vec e_k$ all satisfy $x^{*}x=1$. Its Lie algebra, by the sector decomposition, is $\mathbb{M}_-$: the anti-Hermitian elements are exactly those for which $\exp$ lands in $\mathcal{U}$, and the exponential of $\mathbb{M}_-$ was checked to lie in $\mathcal{U}$ on a sample. Since the dagger is the conjugate transpose in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$, the slice is the compact unitary group, $\mathcal{U}\cong \mathrm{U}(2)$. The **inverse** slice is the other one, the group of units of the algebra, and it is non-compact: this is the difference between the adjoint interpretation and the inverse interpretation in one line — the dagger selects the compact group, the inverse the group of units, and the Lorentz group of the corpus is reached by the inverse.
 
 ### The Norm Factor on a Boost
 
-Let $x=i\vec e_x$, a boost, with $\langle x\rangle_{\natural}=-1$ and $x^{*}=x$. The dagger is not the inverse here, $x^{-1}=i\vec e_x$ as well since $x^{2}=1$ — the boost of this normalisation is its own inverse — and the sandwich multiplies the norm by $\lvert \langle x\rangle_{\natural}\rvert^{2}=1$: the boost is on the unit slice. The unit quaternion $R=\vec e_x$, by contrast, has $\langle R\rangle_{\natural}=+1$ and $R^{*}=-\vec e_x=-R=R^{-1}$: on the real-quaternion slice the dagger is the inverse, and the sandwich is the rotor conjugation. The two examples are the two rows of the corpus's dictionary, and the difference between them is exactly the coefficient conjugation $\sigma$, which is the identity on one and not on the other.
+Let $x=i\vec e_x$, a boost, with $\langle x\rangle_{\natural}=-1$ and $x^{*}=x$. The dagger is the inverse here, $x^{-1}=i\vec e_x$ as well since $x^{2}=1$ — the boost of this normalisation is its own inverse — and the sandwich multiplies the norm by $\lvert \langle x\rangle_{\natural}\rvert^{2}=1$: the boost is on the unit slice. The unit quaternion $R=\vec e_x$, by contrast, has $\langle R\rangle_{\natural}=+1$ and $R^{*}=-\vec e_x=-R=R^{-1}$: on the real-quaternion slice the dagger is the inverse, and the sandwich is the rotor conjugation. The two examples are the two rows of the corpus's dictionary, and the difference between them is exactly the coefficient conjugation $\sigma$, which is the identity on one and not on the other.
 
 ### Two Fermionic Steps Compose to a Bosonic One
 

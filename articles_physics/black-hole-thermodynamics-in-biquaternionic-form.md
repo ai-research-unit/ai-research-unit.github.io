@@ -387,7 +387,7 @@ $$
 
 Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, $V=(\partial M/\partial P)_S=4\pi r_+^3/3$, so the volume in the extended first law is the same quantity. The flat relation is the $\Lambda\to0$ limit, where the correction vanishes.
 
-**A caveat.** The **thermodynamic volume** $V$ and the exact form of the corrected relation are subtle beyond the static case: for general rotating and charged AdS black holes the volume is not simply the geometric volume of the horizon, and its definition and properties are a matter of continuing work. The relation displayed above is the standard extended-thermodynamics form, verified here for Schwarzschild–AdS; a claim of the corrected Smarr relation for a general AdS black hole would need its own check. The point for this article is the structural one: **the flat Smarr relation is exact, and if it is claimed beyond the asymptotically flat case it acquires the $-2PV$ correction, because the scaling homogeneisation that produced it is broken by the dimensionful $\Lambda$.**
+**A caveat.** The **thermodynamic volume** $V$ and the exact form of the corrected relation are subtle beyond the static case: for general rotating and charged AdS black holes the volume is not simply the geometric volume of the horizon, and its definition and properties are a matter of continuing work. The relation displayed above is the standard extended-thermodynamics form, verified here for Schwarzschild–AdS; a claim of the corrected Smarr relation for a general AdS black hole would need its own check. The point for this article is the structural one: **the flat Smarr relation is exact, and if it is claimed beyond the asymptotically flat case it acquires the $-2PV$ correction, because the scaling homogenisation that produced it is broken by the dimensionful $\Lambda$.**
 
 ## What Is Established, What Is Interpretation, and the Gaps
 
@@ -461,7 +461,7 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula |
+| $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$ | Trace formula |
 | $M$ | Mass (total energy in Planck units) |
 | $J$, $Ϙ$ | Angular momentum, electric charge |
 | $a=J/M$ | Kerr rotation parameter |

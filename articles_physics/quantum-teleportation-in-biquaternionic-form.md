@@ -19,7 +19,7 @@ The protocol is therefore a controlled collision between two kinds of object tha
 
 The article is organised as follows. The next section fixes the three-qubit arena and says which algebra each object of the protocol lives in. The section after that fixes the resource and the measurement. The following section proves the teleportation identity, first as a vector identity and then as the projected operator identity that gives the probabilities and Bob's state. The next section reads off the four corrections and records them in terms of the stabiliser observables. Two shorter sections treat no-signalling and the channel-theoretic interpretation of the protocol. The article closes with what the reformulation does and does not claim, and with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$ and the cyclic relations $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and with $i$ the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The Hermitian subspace is $\mathbb{M}_+$ with real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; a single-qubit **state** is a Hermitian, positive, trace-one element of $\mathbb{M}_+$. The $n$-qubit arena is the tensor square $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, with trace $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, where $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$, and with the partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$ of the companion article on entangled subsystems. The four **Bell idempotents** of $\mathbb{B}\otimes\mathbb{B}$ are $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\epsilon_1 \vec e_x\otimes \vec e_x+\epsilon_2 \vec e_y\otimes \vec e_y+\epsilon_3 \vec e_z\otimes \vec e_z)$ with $\epsilon_1\epsilon_2\epsilon_3=+1$, in the labelling of the companion article on the Bell basis; the **stabiliser involutions** are $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$, with $S_k\tilde\Pi_\epsilon=-\epsilon_k\tilde\Pi_\epsilon$. The **gates** are the unitary elements $\tilde{U}\tilde{U}^{*}=e_t$ of $\mathbb{B}$, with Pauli representatives $\vec U_x=i\vec e_x$, $\vec U_y=i\vec e_y$, $\vec U_z=i\vec e_z$ and Hadamard $\tilde{H}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$. The single-factor trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$ and the cyclic relations $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, and with $i$ the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The Hermitian subspace is $\mathbb{M}_+$ with real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; a single-qubit **state** is a Hermitian, positive, trace-one element of $\mathbb{M}_+$. The $n$-qubit arena is the tensor power $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$, with trace $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, where $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_k)=0$, and with the partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$ of the companion article on entangled subsystems. The four **Bell idempotents** of $\mathbb{B}\otimes\mathbb{B}$ are $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\epsilon_1 \vec e_x\otimes \vec e_x+\epsilon_2 \vec e_y\otimes \vec e_y+\epsilon_3 \vec e_z\otimes \vec e_z)$ with $\epsilon_1\epsilon_2\epsilon_3=+1$, in the labelling of the companion article on the Bell basis; the **stabiliser involutions** are $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$, with $S_k\tilde\Pi_\epsilon=-\epsilon_k\tilde\Pi_\epsilon$. The **gates** are the unitary elements $\tilde{U}\tilde{U}^{*}=e_t$ of $\mathbb{B}$, with Pauli representatives $\vec U_x=i\vec e_x$, $\vec U_y=i\vec e_y$, $\vec U_z=i\vec e_z$ and Hadamard $\tilde{H}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$. The single-factor trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ is inherited unchanged.
 
 ## The Three-Qubit Arena and the Objects of the Protocol
 
@@ -59,7 +59,7 @@ It is worth stating explicitly which algebra each object belongs to, because the
 | $\tilde U_\epsilon$ | $\mathbb{B}$ | Unitary (Hermitian Pauli); a gate |
 | the classical record | — | two bits, not an element of any of the above |
 
-Two distinctions in the table do the work of the whole article. First, the resource $\tilde\Pi_{\Phi^+}$ and the idempotents of the measurement $\tilde\Pi_\epsilon\otimes e_t$ are **idempotent** and **not unitary**: $\tilde\Pi_\epsilon^\dagger \tilde\Pi_\epsilon=\tilde\Pi_\epsilon\neq e_t\otimes e_t$ on the pair (and $\tilde\Pi_\epsilon^{(12)}\neq e_t\otimes e_t\otimes e_t$ on three factors). They are the objects that resolve a measurement, and they are trace-one, not unimodular. Second, the corrections $\tilde U_\epsilon$ are **unitary** and **not idempotent** (except for the identity): they are gates, and their conjugation action is reversible. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a matrix algebra, not a division algebra; it contains idempotents and zero divisors, and an element of $\mathbb{B}\otimes\mathbb{B}$ is not a state of a single qubit. The protocol is written below so that each line says which of these types is being used.
+Two distinctions in the table do the work of the whole article. First, the resource $\tilde\Pi_{\Phi^+}$ and the idempotents of the measurement $\tilde\Pi_\epsilon\otimes e_t$ are **idempotent** and **not unitary**: $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\neq e_t\otimes e_t$ on the pair (and $\tilde\Pi_\epsilon^{(12)}\neq e_t\otimes e_t\otimes e_t$ on three factors). They are the objects that resolve a measurement, and they are trace-one, not unimodular. Second, the corrections $\tilde U_\epsilon$ are **unitary** and **not idempotent** (except for the identity): they are gates, and their conjugation action is reversible. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a matrix algebra, not a division algebra; it contains idempotents and zero divisors, and an element of $\mathbb{B}\otimes\mathbb{B}$ is not a state of a single qubit. The protocol is written below so that each line says which of these types is being used.
 
 ## The Resource and the Bell Measurement
 
@@ -70,7 +70,7 @@ $$
 \qquad \epsilon=(-1,+1,-1),
 $$
 
-an element of $\mathbb{M}_+\otimes\mathbb{M}_+$ with $\tilde\Pi_{\Phi^+}^2=\tilde\Pi_{\Phi^+}$, $\tilde\Pi_{\Phi^+}^\dagger=\tilde\Pi_{\Phi^+}$ and $\mathrm{Tr}(\tilde\Pi_{\Phi^+})=1$. Its defining property for the protocol is that both its partial traces are maximally mixed, $\mathrm{Tr}_1(\tilde\Pi_{\Phi^+})=\mathrm{Tr}_2(\tilde\Pi_{\Phi^+})=\tfrac12 e_t$: neither party, holding one half, has any local information about the pair. This is the same idempotent that the companion article on the Bell basis singles out as a member of the Bell idempotent basis, and the same one that the companion article on gates and circuits produces from $|00\rangle$ by a Hadamard and a CNOT.
+an element of $\mathbb{M}_+\otimes\mathbb{M}_+$ with $\tilde\Pi_{\Phi^+}^2=\tilde\Pi_{\Phi^+}$, $\tilde\Pi_{\Phi^+}^{*}=\tilde\Pi_{\Phi^+}$ and $\mathrm{Tr}(\tilde\Pi_{\Phi^+})=1$. Its defining property for the protocol is that both its partial traces are maximally mixed, $\mathrm{Tr}_1(\tilde\Pi_{\Phi^+})=\mathrm{Tr}_2(\tilde\Pi_{\Phi^+})=\tfrac12 e_t$: neither party, holding one half, has any local information about the pair. This is the same idempotent that the companion article on the Bell basis singles out as a member of the Bell idempotent basis, and the same one that the companion article on gates and circuits produces from $|00\rangle$ by a Hadamard and a CNOT.
 
 **The measurement.** Alice measures the pair $(1,2)$ in the Bell basis, that is, she measures the four projectors
 
@@ -83,7 +83,7 @@ where $\tilde\Pi_\epsilon$ is the Bell idempotent on factors $(1,2)$ and $e_t$ a
 
 $$
 \left(\tilde\Pi_\epsilon^{(12)}\right)^2=\tilde\Pi_\epsilon^{(12)},\qquad
-\left(\tilde\Pi_\epsilon^{(12)}\right)^\dagger=\tilde\Pi_\epsilon^{(12)},\qquad
+\left(\tilde\Pi_\epsilon^{(12)}\right)^{*}=\tilde\Pi_\epsilon^{(12)},\qquad
 \tilde\Pi_\epsilon^{(12)}\tilde\Pi_{\epsilon'}^{(12)}=\delta_{\epsilon\epsilon'}\tilde\Pi_\epsilon^{(12)},\qquad
 \sum_\epsilon \tilde\Pi_\epsilon^{(12)}=e_t\otimes e_t\otimes e_t .
 $$
@@ -163,7 +163,7 @@ $$
 \left(\tilde{U}_\epsilon\,\tilde{Ϛ}_\psi\,\tilde{U}_{\epsilon'}^{*}\right)^{(3)},
 $$
 
-where $\tilde{U}_{\Phi^+}=e_t$, $\tilde{U}_{\Phi^-}=i\vec e_z$, $\tilde{U}_{\Psi^+}=i\vec e_x$, $\tilde{U}_{\Psi^-}=i\vec e_y$, and the $\Omega_{\epsilon\epsilon'}$ span the one-dimensional Peirce components $\tilde\Pi_\epsilon(\mathbb{B}\otimes\mathbb{B})\tilde\Pi_{\epsilon'}$ of the Bell idempotent basis, with $\Omega_{\epsilon\epsilon}=\tilde\Pi_\epsilon$. The identity is stated for a pure $\tilde{Ϛ}_\psi$; a general mixed state follows by linearity in $\tilde{Ϛ}_\psi$, since both sides are linear and every state is a convex combination of pure ones.
+where $\tilde{U}_{\Phi^+}=e_t$, $\tilde{U}_{\Phi^-}=i\vec e_z$, $\tilde{U}_{\Psi^+}=i\vec e_x$, $\tilde{U}_{\Psi^-}=i\vec e_y$, and $\Omega_{\epsilon\epsilon'}$ denotes the matrix unit spanning the one-dimensional Peirce component $\tilde\Pi_\epsilon(\mathbb{B}\otimes\mathbb{B})\tilde\Pi_{\epsilon'}$ of the Bell idempotent basis, with $\Omega_{\epsilon\epsilon}=\tilde\Pi_\epsilon$. The identity is stated for a pure $\tilde{Ϛ}_\psi$; a general mixed state follows by linearity in $\tilde{Ϛ}_\psi$, since both sides are linear and every state is a convex combination of pure ones.
 
 Now project onto the outcome $\epsilon_0$. Because the $\tilde\Pi_\epsilon$ are orthogonal idempotents, $\tilde\Pi_{\epsilon_0}\Omega_{\epsilon\epsilon'}\tilde\Pi_{\epsilon_0}=\delta_{\epsilon_0\epsilon}\,\delta_{\epsilon_0\epsilon'}\tilde\Pi_{\epsilon_0}$, and the double sum collapses to a single term. This is the teleportation identity.
 
@@ -244,7 +244,7 @@ $$
 \end{aligned}
 $$
 
-so each of the four rotations was used, and the average is
+so the four terms cancel, and the average is
 
 $$
 \tfrac14\sum_\epsilon \tilde U_\epsilon\,\tilde{Ϛ}_\psi\,\tilde U_\epsilon^{*}=\tfrac12 e_t .
@@ -362,7 +362,7 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 | $p_\epsilon=\tfrac14$ | Outcome probability |
 | $\tilde U_\epsilon\tilde{Ϛ}_\psi\tilde U_\epsilon^{*}$ | Bob's conditional state |
 | $\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\tfrac12 e_t$ | Maximally mixed partial trace |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
+| $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

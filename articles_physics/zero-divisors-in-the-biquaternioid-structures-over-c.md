@@ -9,8 +9,8 @@ product cannot invert, and the physical question is what that set means in each 
 
 A **zero divisor** of a product is a nonzero element $\tilde Q$ that annihilates some nonzero element: there
 is a nonzero $\tilde Q_1$ with $\tilde Q\cdot\tilde Q_1=0$ (a left zero divisor), or with
-$\tilde Q_1\cdot\tilde Q=0$ (a right zero divisor). An element is a zero divisor exactly when it has no inverse
-in the product. Physically, a zero divisor is an operation that sends a nonzero object to zero: it is not
+$\tilde Q_1\cdot\tilde Q=0$ (a right zero divisor). In a finite-dimensional associative algebra with a two-sided unit, an element is a zero divisor exactly when it has
+no inverse in the product. Physically, a zero divisor is an operation that sends a nonzero object to zero: it is not
 invertible, nothing can undo it, and it marks a direction in which composition degenerates.
 
 The mathematics companion proves one theorem about the twelve structures, and the theorem is the spine of
@@ -27,7 +27,7 @@ are not compositional operations at all, because every nonzero element fails to 
 The article reads the theorem structure by structure. It first fixes what a zero divisor is as an operation,
 then reads the cone in the algebra and in spacetime, then tabulates the twelve sets with their physical
 readings, then separates the common core from the enlarged and the total sets. The other five articles of
-the section take up the objects that the zero-divisor set organises: *Annihilators in the Biquaternioid Structures over $\mathbb{C}$* the annihilator planes, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* the roots of $0$, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* the general
+the section take up the objects that the zero-divisor set organises: *Annihilators in the Biquaternioid Structures over $\mathbb{C}$* the annihilator planes, *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$* the roots of $0$, *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* the general
 radicand, *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$* the non-pure family, and *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$* the square-zero class. A closing part, §*The Zero-Divisor Set Beyond the Twelve*, gathers six
 properties of the set that name no product.
 
@@ -158,7 +158,7 @@ once the locus of lightlike propagation and the boundary between the reversible 
 processes. *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* and *Zero Divisors as a Physical Locus in
 Biquaternionic Form* own the reading.
 
-The units are the elements off the cone, and they form the group $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$ with $\pi_x\cong\mathbb{Z}$ (*The Biquaternion Unit Group as a Topological Group*); the cone is the complement of that group, so the reversible operations are exactly the off-cone ones and the light cone is the wall of the reversible region.
+The units are the elements off the cone, and they form the group $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$ with $\pi_1\cong\mathbb{Z}$ (*The Biquaternion Unit Group as a Topological Group*); the cone is the complement of that group, so the reversible operations are exactly the off-cone ones and the light cone is the wall of the reversible region.
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra — probability
 
@@ -360,7 +360,7 @@ says so.
 | the material cone is the light cone $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|=c|t|$ | *The Light Cone as the Biquaternion Zero-Divisor Cone* | cited |
 | the rank drop of the sesquilinear square is the mass label | *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* | cited |
 | the cone is the information barrier, the home of the erasure's target and the rank-one mass boundary | *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*; *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*; *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* | interpretation |
-| the complement of the cone is the invertible region; a spacelike element is a unit | *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*; *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum*; recomputed that a random spacelike element has $N>0$ and an inverse | verified |
+| the complement of the cone is the invertible region; a spacelike element is a unit | *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*; *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum*; recomputed that a random spacelike element has $\langle\tilde Q\rangle_{\natural}>0$ and an inverse | verified |
 | the horizon is a null surface of the same cone | *Black Hole Thermodynamics in Biquaternionic Form* | cited |
 | the cone is pointwise; a curved background replaces it by a field of local cones | *Curved Spacetime and the Biquaternion Framework* | cited |
 | the null cone is a cone over its directions; the projectivisation is the celestial sphere, and the complex cone's is the Segre quadric | *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase* | cited |
@@ -376,9 +376,9 @@ The theorem above is the zero-divisor set read through the twelve products. Six 
 
 **The zero-divisor set is the boundary of the state cone, and the boundary is the image of the cone.** The map $\tilde Q\mapsto\tilde Q^{*}\tilde Q$ sends the units into the interior of the Hermitian cone $P$, $P^{\circ}=\{\tilde Q^{*}\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}$, and the sector part of the zero-divisor locus is the isotropic cone of $\mathbb{M}_+$ (*Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*). On $\mathbb{M}_+$ the Krein cone is the full light cone of the interval and its future nappe is the Hermitian cone $P$ (*Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra*). The reading is that the edge of the state space is the image of the zero-divisor set under the positivity map: a state on the edge is a zero divisor at trace one, and the invertible region is exactly the interior. The measurement formalism's positivity and the algebra's degeneracy are two faces of one boundary.
 
-**The zero-divisor set has a topology, and the cone is the complement of the unit group.** The units are the elements off the cone, forming $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$ with $\pi_x\cong\mathbb{Z}$ and $\pi_y=0$, while the cone — the zero-divisor set together with the apex — is contractible with the apex as its only singular point and link an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_y\cong\mathbb{Z}$ (*The Biquaternion Unit Group as a Topological Group*, *The Topology of the Zero-Divisor Cone*); the real slice, the material light cone, has real dimension three and link $S^{2}\sqcup S^{2}$ (*Biquaternion Lorentzian and Conformal Geometry*). The reading is that the degeneracy is not a thin set but a six-real-dimensional manifold, and that the invertible and the degenerate regions are complementary, distinguished by the vanishing of one homotopy group. The norm decides at once whether an operation can be undone and which side of the boundary it lies on.
+**The zero-divisor set has a topology, and the cone is the complement of the unit group.** The units are the elements off the cone, forming $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$ with $\pi_1\cong\mathbb{Z}$ and $\pi_2=0$, while the cone — the zero-divisor set together with the apex — is contractible with the apex as its only singular point and link an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_2\cong\mathbb{Z}$ (*The Biquaternion Unit Group as a Topological Group*, *The Topology of the Zero-Divisor Cone*); the real slice, the material light cone, has real dimension three and link $S^{2}\sqcup S^{2}$ (*Biquaternion Lorentzian and Conformal Geometry*). The reading is that the degeneracy is not a thin set but a six-real-dimensional manifold, and that the invertible and the degenerate regions are complementary, distinguished by the vanishing of one homotopy group. The norm decides at once whether an operation can be undone and which side of the boundary it lies on.
 
-**The quadratic criterion is a feature of the complex signature, not of zero divisors in general.** In the split-biquaternion algebra the zero-divisor criterion is linear in the idempotent basis, $\tilde Q_{+}=0$ or $\tilde Q_{-}=0$, and the zero-divisor set is the union of two four-dimensional linear subspaces meeting at the origin, rather than a quadric cone (*Split-Biquaternion Zero Divisors*); the split-quaternion algebra behaves in the same way, its zero-divisor set being the null cone of an indefinite norm (*Split-Quaternion Zero Divisors*). The reading is a caution: the physical statement that degeneracy is concentrated on the light cone of a quadratic form is a property of the complexified, biquaternion signature. A split world has a degeneracy of a different shape, linear rather than quadratic, and the equation $N=0$ that the corpus reads as the light cone is not available there in the same form.
+**The quadratic criterion is a feature of the complex signature, not of zero divisors in general.** In the split-biquaternion algebra the zero-divisor criterion is linear in the idempotent basis, $\tilde Q_{+}=0$ or $\tilde Q_{-}=0$, and the zero-divisor set is the union of two four-dimensional linear subspaces meeting at the origin, rather than a quadric cone (*Split-Biquaternion Zero Divisors*); the split-quaternion algebra behaves in the same way, its zero-divisor set being the null cone of an indefinite norm (*Split-Quaternion Zero Divisors*). The reading is a caution: the physical statement that degeneracy is concentrated on the light cone of a quadratic form is a property of the complexified, biquaternion signature. A split world has a degeneracy of a different shape, linear rather than quadratic, and the equation $\langle\tilde Q\rangle_{\natural}=0$ that the corpus reads as the light cone is not available there in the same form.
 
 **The pure family is the nilpotent cone.** The nilpotents of the algebra are exactly the pure zero divisors, the elements with $Q_t=0$ and $\langle\tilde Q\rangle_{\natural}=0$, and they form the nilpotent cone of real dimension four; the isotropic elements of the symmetrised products are the zero divisors of the parent plain algebra (*List of Zero Divisors and Nilpotents*, *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*). The reading separates the two halves of the cone: the pure half is the nilpotent lightlike displacement, whose square vanishes, and the non-pure half is the multiples of the idempotents, whose square stabilises. The first is the lightlike translation, the second the measurement, and the zero-divisor set holds both.
 
@@ -410,8 +410,8 @@ rank, from two to one, and the rank is read as a mass label in *Mass, Rank and t
 Dagger*. *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale* marks which of the four readings
 is the mass, and the cone owns that one cleanly and the rank only as a value. The cone is exactly the rank-one locus,
 so "on the cone" and "one polarisation" are the same statement; the norm reads the same set as the level
-set $N=0$, and a level set is a value and not a count. The cone is therefore not the mass itself. It is
-the boundary at which the count of polarisations falls, and the shells $N=-m^2c^2$ around it are what the
+set $\langle\tilde Q\rangle_{\natural}=0$, and a level set is a value and not a count. The cone is therefore not the mass itself. It is
+the boundary at which the count of polarisations falls, and the shells $\langle\tilde Q\rangle_{\natural}=-m^2c^2$ around it are what the
 norm labels.
 
 **The state family and its irreversibility.** The non-pure family of the cone is the family of multiples of
@@ -464,7 +464,7 @@ rather than one object.
 equivalence: $\tilde Q$ is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$. On the material sector this
 partitions the four-vectors exactly as physics does. The **null** four-vectors are the zero divisors, and
 the **timelike** and **spacelike** ones are units. The partition has a consequence the word "zero divisor"
-invites one to miss: a spacelike four-vector — a superluminal or tachyonic displacement, with $N>0$ — is
+invites one to miss: a spacelike four-vector — a superluminal or tachyonic displacement, with $\langle\tilde Q\rangle_{\natural}>0$ — is
 **invertible**, so it is not a zero divisor at all. The corpus's superluminal solutions of the free Maxwell
 equation are read in *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* with
 the caution that the superluminality is a pattern speed of a localised packet and not a signalling speed;
@@ -668,7 +668,7 @@ can collapse, and for the parameter zero the idempotents lie on the Julia set of
 square is the one whose vanishing set is the cone, the largest nontrivial one, while the Born square vanishes only at the origin; the
 positivity map $\tilde Q\mapsto\tilde Q^{*}\tilde Q$ sends the units into the interior of the Hermitian cone
 and the cone onto its boundary; the cone is a contractible six-real-dimensional manifold whose link is an
-$S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_y\cong\mathbb{Z}$, complementary to the unit group
+$S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_2\cong\mathbb{Z}$, complementary to the unit group
 $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$; the quadratic criterion is a feature of the complex signature,
 since the split siblings have a linear criterion and a set of two planes; and the pure half of the cone is
 the nilpotent cone of real dimension four. The zero-divisor set is therefore at once the light cone, the
@@ -677,7 +677,7 @@ edge of the state space, the critical set of the square and the complement of th
 ## Summary of Notation
 
 - $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$.
-- $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm; $\mathcal{C}=\{N=0\}$ the cone, $\mathcal{C}\setminus\{0\}$ the punctured cone.
+- $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm; $\mathcal{C}=\{\langle\tilde Q\rangle_{\natural}=0\}$ the cone, $\mathcal{C}\setminus\{0\}$ the punctured cone.
 - ${}^{\natural}$ natural conjugation; $\bar{\cdot}$ coefficient conjugation; ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; $\tilde Q^{\flat}=-\tilde Q^{*}$; $\mathrm{Tr}=2\,\mathrm{Sc}$.
 - pure means $Q_t=0$; non-pure means $Q_t\neq0$; a nilpotent is a nonzero element with $\tilde\Upsilon^{2}=0$; an idempotent satisfies $\tilde\Pi^{2}=\tilde\Pi$.
 - The twelve structures: GPA, GPS, GQA, GQS the four general products; SPA, SPS, SQA, SQS the symmetric parts; APA, APS, AQA, AQS the antisymmetric parts.

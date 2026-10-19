@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion articles develop a formulation of quantum physics in which states and observables are elements of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the trace pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
+The companion articles develop a formulation of quantum physics in which states and observables are elements of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the trace pairing $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
 
 The claim to be established is that the informational unit of the framework — the **qubit** — is the **defining module** of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the unique simple left module $S$ on which $\mathbb{B}$ acts faithfully. A complex two-dimensional space is not chosen and then equipped with operators; it is the object the algebra is a matrix algebra *of*. The state vectors are elements of $S$; the rank-one projectors on $S$ correspond exactly to the idempotents of $\mathbb{M}_+$ that have trace one; and the inner product that quantum physics requires is the algebra's own trace pairing, restricted to the module.
 
@@ -192,13 +192,13 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 .
 $$
 
-On $\mathbb{M}_+$, writing $\tilde{Q} = q_te_t + i\vec q$ with real $q_t,\vec q$, it evaluates to
+On $\mathbb{M}_+$, writing $\tilde{H} = h_te_t + i\vec h$ with real $h_t,\vec h$, it evaluates to
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \bigl(q_t^2 - |\vec q|^2\bigr)e_t ,
+\langle\tilde{H}\rangle_{\natural} = \bigl(h_t^2 - |\vec h|^2\bigr)e_t ,
 $$
 
-which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $q_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde{Q}\rangle_{\natural} = \det M(\tilde{Q})\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $q_t$ selects the future cone. For a state
+which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $h_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde{H}\rangle_{\natural} = \det M(\tilde{H})\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $h_t$ selects the future cone. For a state
 
 $$
 \langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t .
@@ -227,7 +227,7 @@ the three pairs of outcome probabilities determine $\vec r$ and hence the state.
 **What it supplies.**
 
 - **The carrier is forced, not chosen.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple left module $S=\mathbb{C}^2$, so the elementary informational unit is two-dimensional over $\mathbb{C}$ and is read off the algebra.
-- **The inner product is native.** The Hilbert-space inner product on $S$ is the trace pairing of the algebra, $\langle u|v\rangle = \mathrm{Tr}(|u\rangle\langle v|)$; it is not an independent axiom.
+- **The inner product is native.** The Hilbert-space inner product on $S$ is the trace pairing of the algebra, $\langle u|v\rangle = \mathrm{Tr}(|v\rangle\langle u|)$; it is not an independent axiom.
 - **The pure states are the module's rays.** The rank-one idempotents of $\mathbb{M}_+$ correspond bijectively to the rays of $S$, and their matrix images are the rank-one Hermitian projectors.
 - **The Born rule is a module pairing.** $\mathrm{Tr}(\tilde\Pi\tilde{H}) = \langle u|H|u\rangle$; the algebra's trace formula and the module expectation value are the same operation.
 - **The state geometry is the biquaternion norm's cone slice.** The Bloch ball is the trace-one positive slice of $\mathbb{M}_+$, its boundary is the zero-divisor cone of the biquaternion norm, and the rays are its extreme points.

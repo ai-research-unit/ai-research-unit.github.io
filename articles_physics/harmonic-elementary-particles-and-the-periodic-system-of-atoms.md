@@ -104,7 +104,7 @@ which is the whole basis of the later particle classification. Both were verifie
 The programme divides its generating potentials into two classes. Taking the potential to be a **scalar**, $\tilde{\Psi} = \psi_{nm}$, gives what the paper calls a **pulsar**,
 
 $$
-\tilde J_{\mathrm{eg},nm^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{\mathrm{eg},nm}^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = \left(\omega - \nabla\right)\circ\,\psi_{nm}
 = \omega\,\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) - \mathrm{grad}\,\psi_{nm}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 $$
@@ -112,7 +112,7 @@ $$
 because for a scalar potential the pure-vector gradient acts as the ordinary gradient. Taking the potential to be a **vector** directed along a coordinate axis, $\tilde{\Psi} = \psi_{nm}\vec e_\mu$, gives a **spinor**,
 
 $$
-\tilde J_{\mathrm{eg},nm^{\,j}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
+\tilde J_{\mathrm{eg},nm}^{\,j}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = \left(\omega - \nabla\right)\circ\left(\psi_{nm}\vec e_\mu\right)
 = \mathrm{div}\!\left(\psi_{nm}\vec e_\mu\right) + \omega\,\psi_{nm}\vec e_\mu - \mathrm{rot}\!\left(\psi_{nm}\vec e_\mu\right),
 $$
@@ -368,8 +368,8 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\tilde{\Psi}$ | Helmholtz potential, $\Delta\tilde{\Psi} + \omega^2\tilde{\Psi} = 0$ |
 | $\psi_{nm} = j_n(\omega r)P_n^m(\cos\theta)\exp(im\lambda)$ | Regular spherical Helmholtz solutions |
 | $j_n$ | Spherical Bessel function of order $n$ |
-| $\tilde J_{\mathrm{eg},nm^{\,0} = (\omega-\nabla)\circ\,\psi_{nm}$ | Pulsar (scalar potential) |
-| $\tilde J_{\mathrm{eg},nm^{\,j} = (\omega-\nabla)\circ(\psi_{nm}\vec e_\mu)$ | Spinor (vector potential) |
+| $\tilde J_{\mathrm{eg},nm}^{\,0} = (\omega-\nabla)\circ\,\psi_{nm}$ | Pulsar (scalar potential) |
+| $\tilde J_{\mathrm{eg},nm}^{\,j} = (\omega-\nabla)\circ(\psi_{nm}\vec e_\mu)$ | Spinor (vector potential) |
 | $\vec u_x = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$ | Radial unit vector |
 | $r_{,k} = x_k/r$ | Direction cosines; $\sum_k r_{,k}^2 = 1$ |
 | $\tilde{\Sigma} = \tfrac12\tilde J_{\mathrm{eg}}\circ\tilde J_{\mathrm{eg}}^{*}$ | Energy–momentum biquaternion |

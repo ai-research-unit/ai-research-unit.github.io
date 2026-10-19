@@ -36,7 +36,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ## Physical Interpretation
 
-- **The Jacobi failure is the algebraic origin of the boost obstruction.** The non-compact generators do not close on a Lie algebra, and the gap is the mixed term $P_0\vec Q-Q_t\vec P$: the failure of this band and the framework's superselection statement are two statements of one fact, the boosts being informational generators and the informational generators not forming an algebra.
+- **The Jacobi failure is the algebraic origin of the boost obstruction.** The non-compact generators do not close on a Lie algebra, and the gap is the mixed term $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$: the failure of this band and the framework's superselection statement are two statements of one fact, the boosts being informational generators and the informational generators not forming an algebra.
 - **The mixed term reads as the boost and the missing Lie structure as the non-compactness of the informational generators.** The commutator of two boosts is a rotation, so the material bracket closes where the informational one does not, which is the framework's interpretation of the Cartan decomposition.
 - **The invariant bilinear forms are the two surviving pairings**, one compact and one Lorentzian, which is the same dichotomy the four forms carry and the same pair that a change of the local complex structure separates.
 - **Read as generators, the operators fail.** The commutator of two multiplications is the multiplication of the value plus the deviation, so the operators generate no Lie algebra and exponentiate to no group.
@@ -57,7 +57,7 @@ The biquaternioid antisymmetric quaternionic algebra is the structure $\tilde Q_
 | $\tilde Q_1\star\tilde Q_2=-\tilde Q_2\star\tilde Q_1$ | antisymmetry |
 | the Jacobi failure | the obstruction; no Lie algebra |
 | $D(\tilde Q_2,\tilde Q_1)$ | the deviation; the defect of the bracket |
-| $P_0\vec Q-Q_t\vec P$ | the mixed term; the boost |
+| $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$ | the mixed term; the boost |
 | $[\,\mathrm{boost},\mathrm{boost}\,]=$ rotation | the Cartan decomposition read on the bracket |
 | $e_t\star\tilde Q_1=0$ | the absence of a unit |
 | $\mathbb{C}_{\mathbb{B}},\ \mathrm{Vect}(\mathbb{B})$ | the centre and the vector subspace |

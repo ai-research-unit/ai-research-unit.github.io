@@ -10,7 +10,7 @@ $$
 \star\tilde{F} = -i\,\tilde{F}.
 $$
 
-The two halves are then the two eigenspaces of that single complex structure, and each is, on restriction to the rotation group, a spin-one object. This is what the phrase "spin one from the material sector" means precisely: spin one is not an irreducible module of the algebra, it is a three-dimensional complex representation carried by the vector part of the algebra, equivalently by the antisymmetric tensors built from the four-vectors of $\mathbb{M}_-$.
+After complexification, the two halves are the two eigenspaces of the Hodge dual, and each is, on restriction to the rotation group, a spin-one object. This is what the phrase "spin one from the material sector" means precisely: spin one is not an irreducible module of the algebra, it is a three-dimensional complex representation carried by the vector part of the algebra, equivalently by the antisymmetric tensors built from the four-vectors of $\mathbb{M}_-$.
 
 The article is organised as follows. The first section recalls why integer spin requires a representation that the spinor module does not provide: the four-vector representation of the Lorentz group is $(\tfrac12,\tfrac12)$, which on restriction to rotations contains spin one and spin zero, while the antisymmetric tensor representation is $(1,0)\oplus(0,1)$, which is pure spin one. The second identifies the carrier inside the algebra: the six-dimensional real vector part $\mathrm{Vect}(\mathbb{B})$, which is at once the real field-strength space and the Lorentz Lie algebra. The third defines the Hodge dual on it and proves the identity above, which is linear in the field and therefore holds for a superposition of fields and not only for a single Fourier mode. The fourth constructs the projectors and the split, the fifth reads off the spin content of each half, and the sixth connects the split to duality rotations and to the two helicities of the massless field. A closing section states where the split sits in the algebra's module category and where it does not, which is the boundary that the final article of this subcategory draws in general.
 
@@ -170,7 +170,7 @@ the field-strength biquaternion and its coefficient conjugate are
 
 $$
 \tilde{F} = i\sqrt{\epsilon}\,\vec N, \qquad
-\tilde{F}^* = -i\sqrt{\epsilon}\,\vec N^*,
+\bar{\tilde{F}} = -i\sqrt{\epsilon}\,\vec N^*,
 $$
 
 and the dual acts on the two coordinates with opposite signs, being $+i$ on $\vec N^*$ where it is $-i$ on $\vec N$:
@@ -180,7 +180,7 @@ $$
 \vec N^*(\star F) = +i\,\vec N^*(F) .
 $$
 
-Because the dual anticommutes with coefficient conjugation, $\star(\tilde{F}^*) = -(\star\tilde{F})^*$, the two relations are statements about the two coordinates and not about $\tilde{F}$ and $\tilde{F}^*$ separately. The pair $(\vec N,\vec N^*)$ is a real form of the pair of halves, and for a real field the two are complex conjugates of one another, so that $\tilde{F}$ together with its coefficient conjugate already carries all six real components of $(\vec E,\vec B)$.
+Because the dual commutes with coefficient conjugation, $\star(\bar{\tilde{F}}) = \overline{\star\tilde{F}}$, the two relations are statements about the two coordinates and not about $\tilde{F}$ and $\bar{\tilde{F}}$ separately. The pair $(\vec N,\vec N^*)$ is a real form of the pair of halves, and for a real field the two are complex conjugates of one another, so that $\tilde{F}$ together with its coefficient conjugate already carries all six real components of $(\vec E,\vec B)$.
 
 ### The split of a general two-form
 
@@ -286,7 +286,7 @@ $$
 \star\tilde{F} = -i\,\tilde{F},
 $$
 
-that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec N$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec N$ carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec N^* = \vec E-ic\vec B$ carried by $\tilde{F}^*$, on which $\star = +i$.
+that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec N = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec N$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec N$ carries the self-dual coordinate $\vec N = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec N^* = \vec E-ic\vec B$ carried by $\bar{\tilde{F}}$, on which $\star = +i$.
 
 The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{Sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{Sym}^2(\bar{S})\cong(0,1)$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\vec E+ic\vec B$ carries helicity $+1$ and $\vec E-ic\vec B$ helicity $-1$. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
 

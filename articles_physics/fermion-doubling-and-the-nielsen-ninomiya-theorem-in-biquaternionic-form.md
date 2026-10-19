@@ -40,13 +40,13 @@ $$
 S(p) = \frac{m - i\,a^{-1}\sum_\mu\gamma_\mu\sin(p^\mu a)}{m^2 + a^{-2}\sum_\mu\sin^2(p^\mu a)}.
 $$
 
-The denominator vanishes when $\sin(p^\mu a) = 0$ for every $\mu$ and $\sum_\mu\sin^2(p^\mu a) = -m^2a^2$, that is, at the points
+The kinetic denominator vanishes at $m=0$ when $\sin(p^\mu a) = 0$ for every $\mu$, that is, at the points
 
 $$
-ap^\mu = (am,0,0,0) + \pi_A^\mu,
+ap^\mu = \pi_A^\mu,
 $$
 
-where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. There is the expected pole near the origin, and there are **fifteen additional poles** at the corners of the Brillouin zone. Each is a distinct fermion species. The mechanism is the $\sin(p^\mu a)$ symbol: unlike the bosonic case, where the symbol is built from $\sin(p^\mu a/2)$ and has a single zero per period, $\sin(p^\mu a)$ has two zeros over $p^\mu\in[-\pi/a,\pi/a]$.
+where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. There is the expected pole near the origin, and there are **fifteen additional poles** at the corners of the Brillouin zone. For $m\ne0$ the mass shifts the poles off the real zone, but the same sixteen species appear in the dispersion relation below. Each is a distinct fermion species. The mechanism is the $\sin(p^\mu a)$ symbol: unlike the bosonic case, where the symbol is built from $\sin(p^\mu a/2)$ and has a single zero per period, $\sin(p^\mu a)$ has two zeros over $p^\mu\in[-\pi/a,\pi/a]$.
 
 The doubling also shows in the dispersion relation: inverting the Wick rotation at the pole gives
 
@@ -54,7 +54,7 @@ $$
 \sinh\omega(\vec p) = \sqrt{m^2 + \sum_{j=1}^3\sin^2 p_j},
 $$
 
-whose zeros are the local minima about which the species live — eight from the three spatial directions, and the remaining eight from the Euclidean temporal direction, which is recovered not by a naive $p_4 = \pm i\omega$ but by the full contour integration. The free continuum massless propagator is proportional to $\gamma_\mu p^\mu$, an **odd** function of $p$; a propagator that is local, continuous and periodic must therefore cross zero again, which is the corner pole. Scalar bosons escape because their symbol is even about the origin.
+whose minima sit at the zeros of the spatial sine — eight from the three spatial directions, and the remaining eight from the Euclidean temporal direction, which is recovered not by a naive $p_4 = \pm i\omega$ but by the full contour integration. The free continuum massless inverse propagator is proportional to $\gamma_\mu p^\mu$, an **odd** function of $p$; an inverse propagator that is local, continuous and periodic must therefore cross zero again, which is the corner pole. Scalar bosons escape because their symbol is even about the origin.
 
 ### The taste-exchange symmetry
 

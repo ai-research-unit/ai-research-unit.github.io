@@ -7,7 +7,7 @@ Noether's theorem connects two things a physical theory supplies separately: its
 The two ends of the theorem are both already in the read list. *Relativistic Mechanics in Biquaternionic Form* gives the free-particle action
 
 $$
-S = -mc\int\sqrt{-\,d\tilde{R}\,\overline{d\tilde{R}}},
+S = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}},
 $$
 
 whose integrand is built from the biquaternion norm of the displacement biquaternion, and it gives the conservation of the four-current in the framework form $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$. This article joins the two ends: it derives the current from the symmetry of the action, for the two kinds of symmetry the framework contains.
@@ -36,11 +36,11 @@ lies in $\mathbb{M}_-$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tild
 **The particle.** The free relativistic particle of rest mass $m$ has the action
 
 $$
-S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,\overline{d\tilde{R}}},
+S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}},
 \qquad d\tilde{R} = ic\,dt\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{M}_- .
 $$
 
-Because $d\tilde{R}\,\overline{d\tilde{R}} = -c^2dt^2 +dx^2+dy^2+dz^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt/\gamma$, and the Lagrangian in the coordinate time $t$ is
+Because $d\tilde{R}\,d\tilde{R}^{\natural} = -c^2dt^2 +dx^2+dy^2+dz^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt/\gamma$, and the Lagrangian in the coordinate time $t$ is
 
 $$
 L(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma},
@@ -321,7 +321,7 @@ The field translation current is the canonical energy–momentum, $\partial/\par
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_\mu\,\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian |
-| $S = -mc\int\sqrt{-d\tilde{R}\,\overline{d\tilde{R}}}$ | Free-particle action |
+| $S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$ | Free-particle action |
 | $L = -mc^2\sqrt{1-\vec v^2/c^2}$ | Free-particle Lagrangian |
 | $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, in $\mathbb{M}_-$ |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\tilde{V}\tilde{V}^{\natural} = -c^2$ |

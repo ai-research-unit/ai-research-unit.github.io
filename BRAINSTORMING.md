@@ -7405,3 +7405,172 @@ One application is a use of a polar form the corpus does not otherwise have. The
 
 
 
+
+
+
+
+
+
+
+════════════════════════════════════════════════════════════════════
+  LORENTZ GROUP AS A SUBMANIFOLD OF THE BIQUATERNION ALGEBRA
+════════════════════════════════════════════════════════════════════
+
+1. THE ALGEBRA
+──────────────
+Let  B = C ⊗_R H  be the biquaternion algebra (Hamilton's quaternions
+with complex coefficients).  A general element is
+
+      q = a + b i + c j + d k ,        a,b,c,d ∈ C ,
+
+equivalently  q = q_0 + q_1 i + q_2 j + q_3 k  with q_μ ∈ C.
+As a real algebra,
+
+      B  ≅  M_2(C) ,           dim_R B = 8 ,   dim_C B = 4 ,
+
+the isomorphism being (one standard choice)
+
+      q  ↦  M(q) = ( a+ib    c+id )
+                   ( -c+id   a-ib )  .
+
+2. TWO INVOLUTIONS
+──────────────────
+Quaternion conjugation:   q̄ = a - b i - c j - d k
+Complex  conjugation:     q^c = ā + b̄ i + c̄ j + d̄ k
+Combined ("Hermitian"):   q*  = (q̄)^c = ā - b̄ i - c̄ j - d̄ k
+
+These satisfy  (pq)* = q* p*  and  q** = q.
+
+3. THE NORM
+───────────
+      N(q) := q q̄ = a² + b² + c² + d²  ∈ C .
+
+Under the isomorphism above,  N(q) = det M(q) .  Note N is COMPLEX-
+valued: B has zero divisors and the "norm" cone  N(q)=0  is a
+codimension-2 (real) quadric.  In particular N(q)=1 is a holomorphic
+(complex) condition.
+
+4. HERMITIAN BIQUATERNIONS ≅ MINKOWSKI SPACE
+────────────────────────────────────────────
+Define   B_h = { q ∈ B : q* = q }  (Hermitian biquaternions).
+The reality condition q* = q is 4 real equations on 8 real variables,
+so
+
+      B_h  is a 4-real-dimensional REAL LINEAR SUBSPACE of B ,
+      B_h  ≅  M^{1,3}   via
+      X = x⁰ + i x¹ i + i x² j + i x³ k ,   x^μ ∈ R .
+
+On B_h the norm is real and indefinite:
+
+      N(X) = (x⁰)² - (x¹)² - (x²)² - (x³)² = η_{μν} x^μ x^ν .
+
+So Minkowski space sits inside B as a 4-dim real linear subspace.
+
+5. THE LORENTZ GROUP AS A SUBMANIFOLD OF B
+───────────────────────────────────────────
+Consider the level set
+
+      U := { q ∈ B : N(q) = 1 } .
+
+Since N(q) = det M(q) is holomorphic, U is a complex hypersurface in
+B ≅ C⁴ :
+      dim_C U = 3 ,      dim_R U = 6 .
+
+Under B ≅ M_2(C):
+      U  ≅  { M ∈ M_2(C) : det M = 1 }  =  SL(2,C) .
+
+Hence
+
+      SL(2,C)  is a 6-real-dimensional (3-complex-dimensional)
+      COMPLEX SUBMANIFOLD of B, defined by the single holomorphic
+      equation N(q) = 1.
+
+It is NOT a linear subspace of B: N(q)=1 is a quadric, so U is
+curved.  (It is, however, a complex hypersurface, hence "half" of
+B in the complex sense.)
+
+6. THE ACTION ON MINKOWSKI SPACE
+────────────────────────────────
+For q ∈ SL(2,C) ⊂ B and X ∈ B_h , define
+
+      X  ↦  q X q* .
+
+Because (q X q*)* = q X* q* = q X q* , the result stays in B_h .
+And because  N(q X q*) = N(q) N(X) N(q)* = N(X) , the Minkowski
+quadratic form is preserved.  Therefore the map
+
+      ρ(q) : X ↦ q X q*
+
+is a Lorentz transformation of B_h ≅ M^{1,3}.  This gives a group
+homomorphism
+
+      ρ : SL(2,C) ⟶ O(1,3) ,
+
+with image the PROPER ORTHOCHRONOUS Lorentz group and kernel
+
+      ker ρ = { +1 , -1 } .
+
+Hence
+      SO⁺(1,3)  ≅  SL(2,C) / {±1}  ≅  U / {±1} .
+
+Both SL(2,C) and SO⁺(1,3) are 6-real-dimensional; the two-to-one
+covering SL(2,C) → SO⁺(1,3) is the spinorial double cover.
+
+7. SUMMARY: SUBMANIFOLD, NOT SUBSPACE
+─────────────────────────────────────
+The picture inside the 8-real-dimensional algebra B is:
+
+   ┌───────────────────────────────────────────────────────────┐
+   │  B = C ⊗ H                     dim_R = 8   (real vector)  │
+   │                                                           │
+   │   B_h  (Hermitian)             dim_R = 4   LINEAR SUBSP.  │
+   │        ≅ Minkowski space M^{1,3}                          │
+   │                                                           │
+   │   U = { N(q) = 1 }             dim_R = 6   QUADRIC        │
+   │        ≅ SL(2,C)                (complex codim. 1)        │
+   │                                                           │
+   │   U / {±1}                     dim_R = 6                  │
+   │        ≅ SO⁺(1,3)  (Lorentz group)                        │
+   └───────────────────────────────────────────────────────────┘
+
+So:
+
+ • Minkowski space = a 4-dim REAL LINEAR subspace of B (B_h).
+ • The Lorentz group = a 6-dim REAL (indeed 3-complex-dim)
+   CONSTRAINED SUBMANIFOLD of B, cut out by the quadratic
+   condition N(q) = 1, then quotiented by ±1.
+ • The Lorentz group therefore fits inside B as a submanifold,
+   even though it cannot fit inside the 4-dim Minkowski space.
+ • But it is NOT a linear subspace of B: it is a quadric hypersurface,
+   so the embedding is nonlinear (holomorphic-quadratic).
+
+8. LIE-ALGEBRAIC REMARK
+───────────────────────
+At the level of Lie algebras the situation is linear.  The Lorentz
+Lie algebra is
+
+      so(1,3)  ≅  sl(2,C)  =  { M ∈ M_2(C) : tr M = 0 } ,
+
+which is a 6-real-dimensional REAL LINEAR SUBSPACE of
+M_2(C) ≅ B.  So:
+
+      Lie group  SO⁺(1,3)  ⊂ B   :  curved 6-dim submanifold
+      Lie algebra so(1,3)  ⊂ B   :  flat   6-dim linear subspace
+
+The "extra" 2 real dimensions of B over SL(2,C) correspond to the
+trace direction (or equivalently to the norm's imaginary part), which
+the constraint N(q)=1 removes — but only nonlinearly.
+
+9. CONTRAST WITH MINKOWSKI SPACE
+────────────────────────────────
+      dim M^{1,3} = 4   <   6 = dim SO⁺(1,3)
+      dim B       = 8   ≥   6 = dim SO⁺(1,3)
+
+This dimension count is the precise sense in which "biquaternion
+space is big enough to contain the Lorentz group, while Minkowski
+space is not."  The embedding is via the unit-norm quadric N(q)=1,
+modulo the central ±1, and it is a nonlinear (holomorphic-quadratic)
+embedding of a 6-real-dimensional complex submanifold into the
+8-real-dimensional biquaternion algebra.
+════════════════════════════════════════════════════════════════════
+

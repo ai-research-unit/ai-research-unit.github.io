@@ -104,10 +104,10 @@ The temperature is the conversion factor between the two ledgers: it converts en
 
 ### The Sector Exchange
 
-The two sectors' quadratic forms are exchanged by the imaginary unit. Since $i$ is central and the quaternion conjugation fixes it, $\overline{i\tilde{Q}} = i\tilde{Q}^{\natural}$, and therefore
+The two sectors' quadratic forms are exchanged by the imaginary unit. Since $i$ is central and the quaternion conjugation fixes it, $(i\tilde{Q})^{\natural} = i\tilde{Q}^{\natural}$, and therefore
 
 $$
-\langle i\tilde{Q}\rangle_{\natural} = (i\tilde{Q})\,\overline{(i\tilde{Q})}
+\langle i\tilde{Q}\rangle_{\natural} = (i\tilde{Q})\,(i\tilde{Q})^{\natural}
 = (i\tilde{Q})(i\tilde{Q}^{\natural})
 = i^2\,\tilde{Q}\tilde{Q}^{\natural}
 = -\langle\tilde{Q}\rangle_{\natural} .

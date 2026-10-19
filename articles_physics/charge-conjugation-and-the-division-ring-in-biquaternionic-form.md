@@ -50,7 +50,7 @@ the sign being that of $\Pi\bar{\Pi}$ — the product of $\Pi$ with its own conj
 
 ## The Division-Ring Trichotomy
 
-The classification is a theorem of the Clifford-algebra literature and is transcribed here. Let $\mathbb{C}_n$ be a complex Clifford algebra with $n$ even, and let $\mathrm{Cl}_{n,m}\subset\mathbb{C}_n$, $n=p+q$, be a real subalgebra. Its **division ring** $K$ — the ring of scalars of its irreducible module — is $\mathbb{R}$ when $p-q\equiv 0,2 \pmod 8$ and $\mathbb{H}$ when $p-q\equiv 4,6\pmod 8$; the remaining classes give a sum of two such rings. The form of the charge-conjugation matrix $\Pi$ follows the division ring:
+The classification is a theorem of the Clifford-algebra literature and is transcribed here. Let $\mathbb{C}_n$ be a complex Clifford algebra with $n$ even, and let $\mathrm{Cl}_{p,q}\subset\mathbb{C}_n$, $n=p+q$, be a real subalgebra. Its **division ring** $K$ — the ring of scalars of its irreducible module — is $\mathbb{R}$ when $p-q\equiv 0,2 \pmod 8$ and $\mathbb{H}$ when $p-q\equiv 4,6\pmod 8$; the remaining classes give a sum of two such rings. The form of the charge-conjugation matrix $\Pi$ follows the division ring:
 
 | division ring $K$ | $p-q\bmod 8$ | matrix $\Pi$ | map $C$ |
 |---|---|---|---|

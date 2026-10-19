@@ -35,7 +35,7 @@ and compute $\Phi^{\mathrm{deph}}_p(\tilde{Ϛ})$ for the general state $\tilde{�
 $$
 \alpha^2 = (i\vec u_x)^2 = i^2\vec u_x^2 = (-1)(-e_t) = e_t,
 \qquad
-\alpha^\dagger = (i\vec u_x)^{*} = -i\,\vec u_x^\dagger = -i(-\vec u_x) = \alpha,
+\alpha^{*} = (i\vec u_x)^{*} = -i\,\vec u_x^{*} = -i(-\vec u_x) = \alpha,
 $$
 so $\alpha^2 = e_t$ and $\alpha$ is Hermitian, as the idempotent structure requires. Trace preservation is immediate: because $\tilde\Pi_{1,2}$ are Hermitian idempotents, $\tilde{K}_1^{*}\tilde{K}_1 = p\,\tilde\Pi_1$ and $\tilde{K}_2^{*}\tilde{K}_2 = p\,\tilde\Pi_2$, whence
 $$
@@ -225,7 +225,7 @@ For the maximally mixed input ($\vec r = 0$) the purity rises from $\tfrac{1}{2}
 **Solution.** Composing,
 $$
 \Phi_2\!\left(\Phi_1(\tilde{Q})\right)
-= \sum_l B_l\left(\sum_m A_m\tilde{Q}A_m^\dagger\right)B_l^\dagger
+= \sum_l B_l\left(\sum_m A_m\tilde{Q}A_m^{*}\right)B_l^{*}
 = \sum_{l,m}\left(B_l A_m\right)\tilde{Q}\left(B_l A_m\right)^\dagger ,
 $$
 so $\{B_l A_m\}$ is a Kraus set for the composite, and it is trace preserving whenever both factors are. The Kraus rank of the composite is the dimension of the span of the products $B_l A_m$, which cannot exceed the product of the dimensions of the individual spans; hence $\mathrm{rank}(\Phi_2\circ\Phi_1) \leq \mathrm{rank}(\Phi_1)\,\mathrm{rank}(\Phi_2)$. For a qubit the composite has rank at most $4$, since its Choi matrix is $4\times4$.
@@ -266,7 +266,7 @@ so
 $$
 |\vec r'|^2 = (1-p)^2\,r_\perp^2 + r_\parallel^2 \leq r_\perp^2 + r_\parallel^2 = |\vec r|^2 ,
 $$
-with equality if and only if $p=0$ or $r_\perp = 0$ (the state already lies on the dephasing axis). The **purity**,
+with equality if and only if $p=0$, or $r_\perp = 0$ (the state already lies on the dephasing axis). The **purity**,
 $$
 \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}\left(1 + |\vec r|^2\right),
 $$

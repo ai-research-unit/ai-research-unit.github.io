@@ -4,7 +4,7 @@
 
 Quantum information is fragile: a quantum state cannot be copied (no-cloning), and a small interaction with the environment decoheres it. Quantum error correction is the discovery that information can nevertheless be protected, by encoding a small logical system into a larger physical one in such a way that the effect of a local error can be detected and reversed without disturbing the encoded state. The **stabilizer formalism** is the algebraic structure that organizes the codes: a code is specified by an abelian group of commuting Pauli operators, and the code space is the common $+1$ eigenspace of that group.
 
-This article develops the stabilizer formalism in the biquaternion framework. The Pauli operators are the Hermitian involutionized imaginary units
+This article develops the stabilizer formalism in the biquaternion framework. The Pauli operators are the Hermitian involutions built from the imaginary units
 
 $$
 X = i\vec e_x, \qquad Y = i\vec e_y, \qquad Z = i\vec e_z \ \ \longleftrightarrow\ \ \sigma_1,\ \sigma_2,\ \sigma_3 ,
@@ -94,7 +94,7 @@ where $c = (c_{ab})$ is a Hermitian matrix of numbers, independent of the encode
 
 ### Why it is necessary
 
-Suppose the code can correct the errors $\{\tilde{E}_a\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde{E}_a\tilde{Ϛ}\tilde{E}_a^{*}) = p_a\tilde{Ϛ}$ for every encoded $\tilde{Ϛ} = \tilde\Pi\tilde{Ϛ}\tilde\Pi$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: for two errors and two encoded states, the recovery must reproduce $\tilde{Ϛ}$ from both $\tilde{E}_a\tilde{Ϛ}\tilde{E}_b^{*}$ and $\tilde{E}_b\tilde{Ϛ}\tilde{E}_a^{*}$, and the only way the recovery can act identically on the whole code space is if the operators $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ are all proportional on the code space, i.e. multiples of $\tilde\Pi$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.
+Suppose the code can correct the errors $\{\tilde{E}_a\}$, so that there is a recovery map $\mathcal{R}$ with $\mathcal{R}(\tilde{E}_a\tilde{Ϛ}\tilde{E}_a^{*}) = p_a\tilde{Ϛ}$ for every encoded $\tilde{Ϛ} = \tilde\Pi\tilde{Ϛ}\tilde\Pi$ and some probability $p_a>0$. Linearity of the recovery forces the relation $c_{ab}$: the recovery must act identically on the images of the code under the different errors, and the only way it can do so on the whole code space is if the operators $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ are all proportional to $\tilde\Pi$. Equivalently: if two different errors had distinguishable effects on the code space, no single recovery could undo both.
 
 ### Why it is sufficient
 
@@ -178,13 +178,7 @@ The following were verified by explicit computation with the $32\times32$ matric
 - **Commutativity and independence.** All four generators commute pairwise, so $S$ is abelian; the group has order $16$ and the idempotent has trace $2$.
 - **Idempotency.** $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $\mathrm{Tr}(\tilde\Pi) = 2$, so the code space is two-dimensional.
 - **Knill–Laflamme for every single-qubit error.** The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the sandwich $\tilde\Pi\tilde{E}_a^{*}\tilde{E}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects **an arbitrary single-qubit error**.
-- **Perfection.** The fifteen nontrivial single-qubit errors have fifteen distinct nonzero syndromes,
-
-$$
-(i,X)\mapsto\text{syndrome},\qquad (i,Y),\ (i,Z) \ \text{all distinct in } \{0,1\}^4\setminus\{0\},
-$$
-
-so the syndrome measurement identifies the error uniquely. This is the sense in which the code is **perfect**: the $32$-dimensional space decomposes exactly into the code space and the fifteen orthogonal error subspaces, with no room to spare. The counting is $1 + 15 = 16 = 2^{5-1}$, the size of the syndrome space.
+- **Perfection.** The fifteen errors $X_i,Y_i,Z_i$ ($i=1,\dots,5$) have fifteen distinct nonzero syndromes in $\{0,1\}^4\setminus\{0\}$, so the syndrome measurement identifies the error uniquely. This is the sense in which the code is **perfect**: the $32$-dimensional space decomposes exactly into the code space and the fifteen orthogonal error subspaces, with no room to spare. The counting is $1 + 15 = 16 = 2^{5-1}$, the size of the syndrome space.
 
 ### The code as an idempotent
 
@@ -227,7 +221,7 @@ and the other $|S|-1$ idempotents $\tilde\Pi_\chi$ have the syndrome subspaces a
 
 ## Open Questions
 
-**1. The stabilizer group and the biquaternion norm.** The code is the image of an idempotent of $\mathbb{M}_+^{\otimes n}$. The biquaternion norm of a tensor product factors, $\langle\tilde U\otimes\tilde Q\rangle_{\natural} = \langle\tilde U\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and the stabilizer elements are involutions with $\langle\tilde U\rangle_{\natural} = e_t$. Does the biquaternion norm give a criterion for the existence of codes, or a measure of the "distance" of a code, in the algebra?
+**1. The stabilizer group and the biquaternion norm.** The code is the image of an idempotent of $\mathbb{M}_+^{\otimes n}$. The biquaternion norm of a tensor product factors, $\langle\tilde U\otimes\tilde Q\rangle_{\natural} = \langle\tilde U\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and the stabilizer elements are involutions with $\langle\tilde U\rangle_{\natural} = \pm e_t$, the sign being $(-1)$ to the number of nonidentity factors. Does the biquaternion norm give a criterion for the existence of codes, or a measure of the "distance" of a code, in the algebra?
 
 **2. Codes and the two sectors.** The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; error correction lives in $\mathbb{M}_+$. Is there an algebraic role for the material sector in the channel that produces the errors, given that the material sector is the classical one?
 

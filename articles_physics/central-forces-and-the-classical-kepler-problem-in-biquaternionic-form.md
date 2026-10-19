@@ -152,7 +152,7 @@ $$
 \vec A = \vec p\times\vec L - m\kappa\,\vec u_r .
 $$
 
-It is a real vector with the dimensions of angular momentum, it is orthogonal to $\vec L$,
+It is a real vector with the dimensions of angular momentum times momentum, it is orthogonal to $\vec L$,
 
 $$
 \vec A\cdot\vec L = 0 ,
@@ -175,7 +175,7 @@ The cancellation uses the inverse-square form of the force and fails for a gener
 
 ### Direction and Magnitude
 
-The vector $\vec A$ points along the apsidal line. At perihelion the velocity is perpendicular to the radius and $\vec p\times\vec L = pL\,\vec {u_r}_{\min}$ with $\vec {u_r}_{\min}$ the direction of closest approach, while the second term is $-m\kappa\vec {u_r}_{\min}$; the two are parallel there, and $\vec A$ lies along the perihelion direction. Its magnitude follows from the identity
+The vector $\vec A$ points along the apsidal line. At perihelion the velocity is perpendicular to the radius and $\vec p\times\vec L = pL\,\vec u_{r,\min}$ with $\vec u_{r,\min}$ the direction of closest approach, while the second term is $-m\kappa\vec u_{r,\min}$; the two are parallel there, and $\vec A$ lies along the perihelion direction. Its magnitude follows from the identity
 
 $$
 |\vec A|^2 = m^2\kappa^2 + 2mEL^2 ,
@@ -187,7 +187,7 @@ $$
 |\vec A| = m\kappa\,e ,
 $$
 
-so the (dimensionless) eccentricity is the magnitude of a conserved vector. The magnitudes of the two conserved vectors fix the shape of a bound orbit: $L = |\vec L|$ fixes the size through $p = L^2/(m\kappa)$ and $|\vec A| = m\kappa e$ fixes the eccentricity, while the energy follows from the pair through $e^2 = 1 + 2EL^2/(m\kappa^2)$. Numerically, for the orbit above with $m = \kappa = 1$, $E = -0.595$, $L = 0.9$, the conserved vector has $|\vec A| = 0.19$ and $e = 0.19$, and the numerical integration of the orbit gives $\vec A = (-0.19, 0)$, constant along the orbit to better than $10^{-9}$, which is the accuracy of the integration.
+so the (dimensionless) eccentricity is the magnitude of a conserved vector in units of $m\kappa$. The magnitudes of the two conserved vectors fix the shape of a bound orbit: $L = |\vec L|$ fixes the size through $p = L^2/(m\kappa)$ and $|\vec A| = m\kappa e$ fixes the eccentricity, while the energy follows from the pair through $e^2 = 1 + 2EL^2/(m\kappa^2)$. Numerically, for the orbit above with $m = \kappa = 1$, $E = -0.595$, $L = 0.9$, the conserved vector has $|\vec A| = 0.19$ and $e = 0.19$, and the numerical integration of the orbit gives $\vec A = (-0.19, 0)$, constant along the orbit to better than $10^{-9}$, which is the accuracy of the integration.
 
 ### The Hodograph
 
@@ -197,7 +197,7 @@ $$
 \vec p\times\vec L = \vec A + m\kappa\,\vec u_r .
 $$
 
-Since $\vec p$ lies in the orbital plane and is perpendicular to $\vec L$, the vector $\vec p\times\vec L$ is obtained from $\vec p$ by a fixed rotation and a scaling by $L$. The equation therefore says that $\vec p$ is a fixed vector plus a vector whose magnitude is constant and whose direction is $\vec u_r$. Hence **the momentum vector traces a circle** as the particle moves: the hodograph of the Kepler motion is a circle of radius $m\kappa/L$ centred at the vector $(L\times\vec A)/L$, which is $\vec A/L$ turned through a right angle about $\vec L$, so that the centre lies at distance $m\kappa e/L$ from the origin in the direction perpendicular to $\vec A$. Numerically, for the orbit above, the momentum points lie on a circle of radius $1.111111 = m\kappa/L$ centred at $(0, -0.211111)$, with a radial spread of $2\times10^{-9}$ over five thousand sampled points. The hodograph circle is the momentum-space image of the conic, and its radius is independent of the eccentricity: it depends on $L$ alone.
+Since $\vec p$ lies in the orbital plane and is perpendicular to $\vec L$, the vector $\vec p\times\vec L$ is obtained from $\vec p$ by a fixed rotation and a scaling by $L$. The equation therefore says that $\vec p$ is a fixed vector plus a vector whose magnitude is constant and whose direction is $\vec u_r$. Hence **the momentum vector traces a circle** as the particle moves: the hodograph of the Kepler motion is a circle of radius $m\kappa/L$ centred at the vector $(L\times\vec A)/L^2$, which is $\vec A/L$ turned through a right angle about $\vec L$, so that the centre lies at distance $m\kappa e/L$ from the origin in the direction perpendicular to $\vec A$. Numerically, for the orbit above, the momentum points lie on a circle of radius $1.111111 = m\kappa/L$ centred at $(0, -0.211111)$, with a radial spread of $2\times10^{-9}$ over five thousand sampled points. The hodograph circle is the momentum-space image of the conic, and its radius is independent of the eccentricity: it depends on $L$ alone.
 
 ## Closed Orbits and Bertrand's Theorem
 
@@ -213,7 +213,7 @@ The two exceptional potentials are also the two whose bound spectra are degenera
 
 The Kepler problem uses the algebra in three places, and they are precise.
 
-**The force is a central material vector.** The force is $-\kappa\vec u_r/r^2$, a real element of the three-space; it commutes with the position, and the commuting is the criterion for angular momentum conservation. The inverse-square radial dependence is a scalar function of the invariant length $r = \sqrt{\langle \vec r\rangle_{\natural}}$, and the potential $-\kappa/re_t$ is a central scalar.
+**The force is a central material vector.** The force is $-\kappa\vec u_r/r^2$, a real element of the three-space; it commutes with the position, and the commuting is the criterion for angular momentum conservation. The inverse-square radial dependence is a scalar function of the invariant length $r = \sqrt{\langle \vec r\rangle_{\natural}}$, and the potential $(-\kappa/r)e_t$ is a central scalar.
 
 **The angular momentum is a product.** The vector part of the quaternion product $\vec r\vec p$ is $\vec L$, and the conservation law is the vanishing of the commutator $[\vec r,\vec F]$. The algebra's product supplies the cross product and the dot product in one operation.
 

@@ -17,7 +17,7 @@ $$
 \qquad (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = xe_1 + ye_2 + ze_3, \quad (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = x'\vec e_x + y'\vec e_y + z'\vec e_z,
 $$
 
-with the eight real parameters $q'_0 = c\,t$, $(q_x, q_y, q_z) = (x, y, z)$, $q_t = c\,t'$, $(q'_1, q'_2, q'_3) = (x', y', z')$, and with $c$ the speed of light in the medium.
+with the eight real parameters $q'_t = c\,t$, $(q_x, q_y, q_z) = (x, y, z)$, $q_t = c\,t'$, $(q'_x, q'_y, q'_z) = (x', y', z')$, and with $c$ the speed of light in the medium.
 
 ## The Coefficient Space
 
@@ -61,23 +61,23 @@ $$
 Q^t = c t' + i c t, \qquad Q^x = x + i x', \qquad Q^y = y + i y', \qquad Q^z = z + i z'.
 $$
 
-Every complex coefficient therefore carries **one material coordinate and one informational coordinate**: the scalar coefficient carries the two times, and each vector coefficient carries one spatial coordinate of each sector. Read by real and imaginary part, the quadruple $(q^t, q^x, q^y, q^z) = (ct', x, y, z)$ is the informational time together with the material space, and the quadruple $({q'}^0, {q'}^1, {q'}^2, {q'}^3) = (ct, x', y', z')$ is the material time together with the informational space. This is the same mixed ownership that the prime convention records, and it is why the scalar component of a physical four-vector is the one that carries the time.
+Every complex coefficient therefore carries **one material coordinate and one informational coordinate**: the scalar coefficient carries the two times, and each vector coefficient carries one spatial coordinate of each sector. Read by real and imaginary part, the quadruple $(q^t, q^x, q^y, q^z) = (ct', x, y, z)$ is the informational time together with the material space, and the quadruple $({q'}^t, {q'}^x, {q'}^y, {q'}^z) = (ct, x', y', z')$ is the material time together with the informational space. This is the same mixed ownership that the prime convention records, and it is why the scalar component of a physical four-vector is the one that carries the time.
 
-**The material four-vector.** An element of the material sector has a purely imaginary scalar coefficient and real vector coefficients. Writing its real time parameter as $q'_0$ and its real spatial parameters as $q_x, q_y, q_z$, the element and its four-vector are
-
-$$
-\tilde{Q} = iq'_0e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in \mathbb{M}_-, \qquad (Q^t, Q^x, Q^y, Q^z) = (iq'_0, q_x, q_y, q_z).
-$$
-
-The four-vectors of relativistic physics are of exactly this shape: the four-position has $q'_0 = ct$ and $(q_x, q_y, q_z) = (x,y,z)$, so its scalar coefficient is $ict = iq'_0$ and its four-vector is $(ict, x, y, z)$, while the four-momentum has $q'_0 = E/c$ and $(q_x, q_y, q_z) = \vec p$.
-
-**The informational four-vector.** An element of the informational sector has a real scalar coefficient and purely imaginary vector coefficients. Writing its real parameters as $q_t$ and $q'_1, q'_2, q'_3$, the element and its four-vector are
+**The material four-vector.** An element of the material sector has a purely imaginary scalar coefficient and real vector coefficients. Writing its real time parameter as $q'_t$ and its real spatial parameters as $q_x, q_y, q_z$, the element and its four-vector are
 
 $$
-\tilde{Q} = q_te_t + iq'_1\vec e_x + iq'_2\vec e_y + iq'_3\vec e_z \in \mathbb{M}_+, \qquad (Q^t, Q^x, Q^y, Q^z) = (q_t, iq'_1, iq'_2, iq'_3).
+\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in \mathbb{M}_-, \qquad (Q^t, Q^x, Q^y, Q^z) = (iq'_t, q_x, q_y, q_z).
 $$
 
-The informational coordinate is the case $q_t = ct'$ and $(q'_1, q'_2, q'_3) = (x', y', z')$, so its four-vector is $(ct', ix', iy', iz')$.
+The four-vectors of relativistic physics are of exactly this shape: the four-position has $q'_t = ct$ and $(q_x, q_y, q_z) = (x,y,z)$, so its scalar coefficient is $ict = iq'_t$ and its four-vector is $(ict, x, y, z)$, while the four-momentum has $q'_t = E/c$ and $(q_x, q_y, q_z) = \vec p$.
+
+**The informational four-vector.** An element of the informational sector has a real scalar coefficient and purely imaginary vector coefficients. Writing its real parameters as $q_t$ and $q'_x, q'_y, q'_z$, the element and its four-vector are
+
+$$
+\tilde{Q} = q_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z \in \mathbb{M}_+, \qquad (Q^t, Q^x, Q^y, Q^z) = (q_t, iq'_x, iq'_y, iq'_z).
+$$
+
+The informational coordinate is the case $q_t = ct'$ and $(q'_x, q'_y, q'_z) = (x', y', z')$, so its four-vector is $(ct', ix', iy', iz')$.
 
 ## The Column and the Dual Row
 
@@ -110,16 +110,16 @@ The product of two biquaternions is computed from the basis and separates into a
 **Proposition (the product in components).** Let $\tilde{Q}$ and $\tilde{Q}_1$ be biquaternions with four-vectors $Q^\mu$ and $R^\mu$. Then the four-vector of the product has components
 
 $$
-(\tilde{Q}\tilde{Q}_1)^0 = Q^t R^0 - \sum_{k\in\{x,y,z\}} Q^k R^k,
+(\tilde{Q}\tilde{Q}_1)^t = Q^t R^t - \sum_{k\in\{x,y,z\}} Q^k R^k,
 $$
 
 $$
-(\tilde{Q}\tilde{Q}_1)^i = Q^t R^i + R^0 Q^i + \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q^j R^k, \qquad i = 1, 2, 3,
+(\tilde{Q}\tilde{Q}_1)^i = Q^t R^i + R^t Q^i + \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q^j R^k, \qquad i \in \{x, y, z\},
 $$
 
-where $\epsilon^{ijk}$ is the Levi-Civita symbol on the indices $1, 2, 3$.
+where $\epsilon^{ijk}$ is the Levi-Civita symbol on the labels $x, y, z$, read in that cyclic order.
 
-**Proof.** Expand the product in the basis, using $e_t e_\mu = e_\mu$ and $e_k^2 = -e_t$. The scalar component collects the terms in which both factors contribute the scalar unit or both contribute the same quaternion unit, $Q^tR^0 e_t + \sum_k Q^kR^k e_k^2 = \big( Q^tR^0 - \sum_k Q^kR^k \big)e_t$, and the terms with two different quaternion units contribute no scalar component. The coefficient of $e_i$ collects $Q^tR^i e_i$ and $Q^iR^0 e_i$ from the mixed scalar–vector pairs, together with the products $Q^jR^k e_je_k$ over the ordered pairs with $\{j,k\} = \{1,2,3\}\setminus\{i\}$. For those, $e_je_k = \epsilon^{ijk}e_i$, the basis being oriented so that $\vec e_x \vec e_y = \vec e_z$, $\vec e_y \vec e_z = \vec e_x$ and $\vec e_z \vec e_x = \vec e_y$; the sum over $j,k$ therefore runs over both orderings and gives the displayed Levi-Civita term.
+**Proof.** Expand the product in the basis, using $e_t e_\mu = e_\mu$ and $e_k^2 = -e_t$. The scalar component collects the terms in which both factors contribute the scalar unit or both contribute the same quaternion unit, $Q^tR^t e_t + \sum_k Q^kR^k e_k^2 = \big( Q^tR^t - \sum_k Q^kR^k \big)e_t$, and the terms with two different quaternion units contribute no scalar component. The coefficient of $e_i$ collects $Q^tR^i e_i$ and $Q^iR^t e_i$ from the mixed scalar–vector pairs, together with the products $Q^jR^k e_je_k$ over the ordered pairs with $\{j,k\} = \{x,y,z\}\setminus\{i\}$. For those, $e_je_k = \epsilon^{ijk}e_i$, the basis being oriented so that $\vec e_x \vec e_y = \vec e_z$, $\vec e_y \vec e_z = \vec e_x$ and $\vec e_z \vec e_x = \vec e_y$; the sum over $j,k$ therefore runs over both orderings and gives the displayed Levi-Civita term.
 
 **Corollary (the commutator).** The commutator of two biquaternions is twice the cross product of their vector components,
 
@@ -127,7 +127,7 @@ $$
 \tilde{Q}\tilde{Q}_1 - \tilde{Q}_1\tilde{Q} = 2 \sum_{i\in\{x,y,z\}} \Big( \sum_{j,k\in\{x,y,z\}} \epsilon^{ijk} Q^j R^k \Big) e_i .
 $$
 
-The scalar component and the symmetric part $Q^tR^i + R^0Q^i$ of each vector component are unchanged by exchanging the factors; the Levi-Civita term is the only part that changes sign, and it is therefore the only trace of non-commutativity visible in this realization. In particular the commutator always has zero scalar component, so it lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$ — the derived subspace of the algebra, which is the complex space sector — and it vanishes exactly when the vector parts of the two factors are linearly dependent over $\mathbb{C}$.
+The scalar component and the symmetric part $Q^tR^i + R^tQ^i$ of each vector component are unchanged by exchanging the factors; the Levi-Civita term is the only part that changes sign, and it is therefore the only trace of non-commutativity visible in this realization. In particular the commutator always has zero scalar component, so it lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$ — the derived subspace of the algebra, which is the complex space sector — and it vanishes exactly when the vector parts of the two factors are linearly dependent over $\mathbb{C}$.
 
 **Example.** For $\tilde{Q} = e_t + \vec e_x$ and $\tilde{Q}_1 = e_t + \vec e_y$ the four-vectors are $Q^\mu = (1,1,0,0)$ and $R^\mu = (1,0,1,0)$. The product formula gives $(\tilde{Q}\tilde{Q}_1)^\mu = (1,1,1,1)$, that is, $\tilde{Q}\tilde{Q}_1 = e_t + \vec e_x + \vec e_y + \vec e_z$, while the reversed product gives $(\tilde{Q}_1\tilde{Q})^\mu = (1,1,1,-1)$, since the only nonzero Levi-Civita term changes sign. The two products differ by $2\vec e_z$, which is twice the cross product of the vector parts.
 
@@ -142,7 +142,7 @@ The product formula is the row-by-row interpretation of the multiplication table
 | $\vec e_y$ | $\vec e_y$ | $-\vec e_z$ | $-e_t$ | $\vec e_x$ |
 | $\vec e_z$ | $\vec e_z$ | $\vec e_y$ | $-\vec e_x$ | $-e_t$ |
 
-The first row and the first column reproduce the basis, since $e_t$ is the identity. In the remaining $3 \times 3$ block the table is skew off the diagonal, $e_je_k = -e_ke_j$ for distinct $j,k$, while its diagonal entries are $-e_t$. The scalar component of a product is read from the diagonal of the table, which is why it carries $Q^tR^0 - \sum_k Q^kR^k$, and the vector components are read from the off-diagonal entries, which is why they carry both the symmetric scalar–vector part and the antisymmetric Levi-Civita term. The same table read as a map on the coefficient space is the regular matrix of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
+The first row and the first column reproduce the basis, since $e_t$ is the identity. In the remaining $3 \times 3$ block the table is skew off the diagonal, $e_je_k = -e_ke_j$ for distinct $j,k$, while its diagonal entries are $-e_t$. The scalar component of a product is read from the diagonal of the table, which is why it carries $Q^tR^t - \sum_k Q^kR^k$, and the vector components are read from the off-diagonal entries, which is why they carry both the symmetric scalar–vector part and the antisymmetric Levi-Civita term. The same table read as a map on the coefficient space is the regular matrix of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## The Conjugations in Coordinates
 
@@ -155,7 +155,7 @@ $$
 $$
 
 $$
-(\tilde{Q}^{*})^\mu = \big( (Q^t)^{*}, (Q^x)^{*}, (Q^y)^{*}, (Q^z)^{*} \big),
+(\bar{\tilde{Q}})^\mu = \big( (Q^t)^{*}, (Q^x)^{*}, (Q^y)^{*}, (Q^z)^{*} \big),
 $$
 
 $$
@@ -175,7 +175,7 @@ $$
 the four conjugations have four-vectors
 
 $$
-\tilde{Q}^{\natural} \leftrightarrow (2+i, \, -1+i, \, -3, \, -i), \qquad \tilde{Q}^{*} \leftrightarrow (2-i, \, 1+i, \, 3, \, -i),
+\tilde{Q}^{\natural} \leftrightarrow (2+i, \, -1+i, \, -3, \, -i), \qquad \bar{\tilde{Q}} \leftrightarrow (2-i, \, 1+i, \, 3, \, -i),
 $$
 
 $$
@@ -193,7 +193,7 @@ Each involution cuts out a fixed subspace and an anti-fixed subspace, and the th
 Each of the remarkable subspaces is displayed below as a chain of three quadruples: in the complex coefficients $Q^t, Q^x, Q^y, Q^z$; in the real parameters $q_\mu, q'_\mu$ of the split $Q_\mu = q_\mu + iq'_\mu$; and in the physical coordinates. The dictionary from the real parameters to the physical names is one and the same for all six,
 
 $$
-q_t = ct', \quad q'_0 = ct, \quad q_x = x, \quad q_y = y, \quad q_z = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
+q_t = ct', \quad q'_t = ct, \quad q_x = x, \quad q_y = y, \quad q_z = z, \quad q'_x = x', \quad q'_y = y', \quad q'_z = z' ,
 $$
 
 the unprimed slot carrying the informational time $ct'$ and the material space $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the primed slot the material time $ct$ and the informational space $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z$.
@@ -205,7 +205,7 @@ $$
 $$
 
 $$
-\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\}, \qquad i\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^{*} = -\tilde{Q}\},
+\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\}, \qquad i\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = -\tilde{Q}\},
 $$
 
 $$
@@ -238,17 +238,17 @@ The first separates the scalar component from the three vector components, the s
 Two-dimensional and purely temporal, without a single spatial coordinate. The scalar coefficient is an arbitrary complex number carrying the two times, and the quadruple is $(Q_t, 0, 0, 0)$:
 
 $$
-\tilde{Q} = Q_te_t \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ 0,\ 0,\ 0) = (q_t + iq'_0,\ 0,\ 0,\ 0) = (ct' + ict,\ 0,\ 0,\ 0),
+\tilde{Q} = Q_te_t \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ 0,\ 0,\ 0) = (q_t + iq'_t,\ 0,\ 0,\ 0) = (ct' + ict,\ 0,\ 0,\ 0),
 $$
 
-with $Q_t = q_t + iq'_0$, $q_t = ct'$ and $q'_0 = ct$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = Q_t^2 = c^2(t')^2 - c^2t^2 + 2i\,c^2t't$. It is the fixed space of quaternion conjugation, so quaternion conjugation acts on it as the identity — the axis of $\mathbb{B}$.
+with $Q_t = q_t + iq'_t$, $q_t = ct'$ and $q'_t = ct$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = Q_t^2 = c^2(t')^2 - c^2t^2 + 2i\,c^2t't$. It is the fixed space of quaternion conjugation, so quaternion conjugation acts on it as the identity — the axis of $\mathbb{B}$.
 
 ### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
 Six-real-dimensional and purely spatial, the only one of the remarkable subspaces that is not four- or two-dimensional. The scalar coefficient vanishes and each of the three vector coefficients is one material spatial coordinate together with one informational coordinate:
 
 $$
-\tilde{Q} = Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (0,\ Q_x,\ Q_y,\ Q_z) = (0,\ q_x + iq'_1,\ q_y + iq'_2,\ q_z + iq'_3) = (0,\ x + ix',\ y + iy',\ z + iz'),
+\tilde{Q} = Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (0,\ Q_x,\ Q_y,\ Q_z) = (0,\ q_x + iq'_x,\ q_y + iq'_y,\ q_z + iq'_z) = (0,\ x + ix',\ y + iy',\ z + iz'),
 $$
 
 where $Q_k = q_k + iq'_k$ with $q_k = x_k$ and $q'_k = x'_k$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = (x+ix')^2 + (y+iy')^2 + (z+iz')^2$. It is the anti-fixed space of quaternion conjugation and the spatial counterpart of the centre: the centre has the two times in one complex number, the vector subspace the two spaces in three.
@@ -268,27 +268,27 @@ with $Q_\mu = q_\mu$ real, $q_t = ct'$ and $q_k = x_k$, and the biquaternion nor
 The anti-fixed space of complex conjugation: all four coefficients purely imaginary, so the quadruple takes the other assignment of the two times and the two spaces,
 
 $$
-\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (iq'_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ict,\ ix',\ iy',\ iz'),
+\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (iq'_t,\ iq'_x,\ iq'_y,\ iq'_z) = (ict,\ ix',\ iy',\ iz'),
 $$
 
-with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = -\big( c^2t^2 +x'^2+y'^2+z'^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.
+with $Q_\mu = iq'_\mu$, $q'_t = ct$ and $q'_k = x'_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = -\big( c^2t^2 +x'^2+y'^2+z'^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.
 
 ### The Material Subspace $\mathbb{M}_-$
 
 The anti-fixed space of Hermitian conjugation: a purely imaginary scalar coefficient and three real vector coefficients, three real components and one imaginary one,
 
 $$
-\tilde{R} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (iq'_0,\ q_x,\ q_y,\ q_z) = (ict,\ x,\ y,\ z),
+\tilde{R} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (iq'_t,\ q_x,\ q_y,\ q_z) = (ict,\ x,\ y,\ z),
 $$
 
-with $Q_t = iq'_0$, $Q_k = q_k$, $q'_0 = ct$ and $q_k = x_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.
+with $Q_t = iq'_t$, $Q_k = q_k$, $q'_t = ct$ and $q_k = x_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.
 
 ### The Informational Subspace $\mathbb{M}_+$
 
 The fixed space of Hermitian conjugation: a real scalar coefficient and three purely imaginary vector coefficients,
 
 $$
-\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (q_t,\ iq'_1,\ iq'_2,\ iq'_3) = (ct',\ ix',\ iy',\ iz'),
+\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu \longleftrightarrow (Q^t, Q^x, Q^y, Q^z) = (Q_t,\ Q_x,\ Q_y,\ Q_z) = (q_t,\ iq'_x,\ iq'_y,\ iq'_z) = (ct',\ ix',\ iy',\ iz'),
 $$
 
 with $Q_t = q_t$, $Q_k = iq'_k$, $q_t = ct'$ and $q'_k = x'_k$, and the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = c^2(t')^2 -(x'^2+y'^2+z'^2)$, the transpose of the material condition, of signature $(1,3)$. The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_- = \mathbb{M}_+$, since $i\,(ict, x, y, z) = (-ct, ix, iy, iz)$ has the informational shape.
@@ -376,13 +376,13 @@ The biquaternion norm of the four-velocity is **constant**, $-c^2$, on every tim
 **The four-momentum.**
 
 $$
-\tilde{P} = i\frac{E}{c}e_t + \vec p, \qquad \langle\tilde{P}\rangle_{\natural} = -\frac{E^2}{c^2} + \vec p^y .
+\tilde{P} = i\frac{E}{c}e_t + \vec p, \qquad \langle\tilde{P}\rangle_{\natural} = -\frac{E^2}{c^2} + \vec p^2 .
 $$
 
-For an on-shell particle the dispersion relation $E^2 = c^2\vec p^y + m^2c^4$ gives
+For an on-shell particle the dispersion relation $E^2 = c^2\vec p^2 + m^2c^4$ gives
 
 $$
-\langle\tilde{P}\rangle_{\natural} = -\Big( \frac{E^2}{c^2} - \vec p^y \Big) = -m^2c^2 ,
+\langle\tilde{P}\rangle_{\natural} = -\Big( \frac{E^2}{c^2} - \vec p^2 \Big) = -m^2c^2 ,
 $$
 
 so the mass-shell condition is the statement that the four-momentum lies on the sphere of radius $mc$ in the biquaternion norm, and the mass is read off the biquaternion norm of the four-momentum. The dispersion relation itself, in biquaternionic form, is the subject of the wave-mechanics articles.
@@ -425,9 +425,9 @@ The four complex coordinates are read as a **spacetime event carrying an interna
 
 ## Summary
 
-The four-vector representation reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^t, Q^x, Q^y, Q^z)$, with $Q^t = Q_t$ the scalar component and $(Q^x, Q^y, Q^z) = (Q_x, Q_y, Q_z)$ the vector components. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, of complex dimension four and real dimension eight, and it supplies the space on which the regular operator of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* is written. Physically, each complex coefficient carries one material and one informational coordinate: $Q^t = ct' + ict$ and $Q^k = x_k + ix'_k$, so that the material four-vector is the quadruple $(ict, x, y, z)$ with a purely imaginary scalar entry, that is $Q^t = iq'_0$ with $q'_0 = ct$.
+The four-vector representation reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^t, Q^x, Q^y, Q^z)$, with $Q^t = Q_t$ the scalar component and $(Q^x, Q^y, Q^z) = (Q_x, Q_y, Q_z)$ the vector components. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, of complex dimension four and real dimension eight, and it supplies the space on which the regular operator of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* is written. Physically, each complex coefficient carries one material and one informational coordinate: $Q^t = ct' + ict$ and $Q^k = x_k + ix'_k$, so that the material four-vector is the quadruple $(ict, x, y, z)$ with a purely imaginary scalar entry, that is $Q^t = iq'_t$ with $q'_t = ct$.
 
-The product in components has scalar part $Q^tR^0 - \sum_k Q^kR^k$ and vector part $Q^tR^i + R^0Q^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ act by negating the vector components, conjugating every component, and doing both, and the remarkable subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_t$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 +x^2+y^2+z^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.
+The product in components has scalar part $Q^tR^t - \sum_k Q^kR^k$ and vector part $Q^tR^i + R^tQ^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ act by negating the vector components, conjugating every component, and doing both, and the remarkable subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_t$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 +x^2+y^2+z^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.
 
 The four-vectors of relativistic physics are the material elements: the four-position with biquaternion norm the interval, the four-velocity with biquaternion norm the constant $-c^2$, the four-momentum with biquaternion norm $-m^2c^2$ on the mass shell, the four-current and four-potential with their respective biquaternion norms, and the gradient, whose biquaternion norm is the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$. The index on $Q^\mu$ is never raised or lowered, because the coefficient space carries no metric of its own; the $ict$ convention carries the metric in the coefficient, and the explicit metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 form used when a contraction is written out.
 
@@ -443,16 +443,16 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $Q^\mu = q^\mu + i{q'}^\mu$ | Real and imaginary parts of each component |
 | $Q$, $Q^{\mathsf{T}}$ | The column and the dual row of the four-vector |
 | $\mathsf{M}_4^{L}(\tilde{Q})$, $\mathsf{M}_4^{R}(\tilde{Q})$ | Matrices of left and right multiplication, constructed in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$ |
-| $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |
-| $\tilde{Q}^{\natural}, \tilde{Q}^{*}, \tilde{Q}^{*}, \tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
+| $\epsilon^{ijk}$ | Levi-Civita symbol on the labels $x, y, z$, read in that cyclic order |
+| $\tilde{Q}^{\natural}, \bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | The remarkable subspaces; coordinate conditions in the table above |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | The biquaternion norm, the diagonal of the general quaternionic bilinear form and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | The inverse in coordinates |
 | $c$, $c_0$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and its vacuum value |
 | $ict$, $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | The material coordinate; the four-position is $(ict, x, y, z)$ |
 | $ct'$, $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = i x'\vec e_x + iy'\vec e_y + iz'\vec e_z$ | The informational coordinate |
-| $q'_0, q_x, q_y, q_z$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$; $q'_0 = ct$, $(q_x,q_y,q_z) = (x,y,z)$ for the four-position |
-| $q_t, q'_1, q'_2, q'_3$ | Real parameters of an informational four-vector, $\tilde{Q} = q_te_t + iq'_1\vec e_x + iq'_2\vec e_y + iq'_3\vec e_z$; $q_t = ct'$, $(q'_1,q'_2,q'_3) = (x',y',z')$ |
+| $q'_t, q_x, q_y, q_z$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$; $q'_t = ct$, $(q_x,q_y,q_z) = (x,y,z)$ for the four-position |
+| $q_t, q'_x, q'_y, q'_z$ | Real parameters of an informational four-vector, $\tilde{Q} = q_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z$; $q_t = ct'$, $(q'_x,q'_y,q'_z) = (x',y',z')$ |
 | $\tilde{V}$, $\tilde{P}$, $\tilde{J}$, $\tilde{A}$ | Four-velocity, four-momentum, four-current, four-potential; $\langle\tilde{V}\rangle_{\natural} = -c^2$, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ on shell |
 | $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$ | Biquaternionic gradient; $\langle\tilde{\nabla}\rangle_{\natural} = \Box$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |

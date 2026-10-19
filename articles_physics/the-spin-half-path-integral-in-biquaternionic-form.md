@@ -195,11 +195,11 @@ $$
 \zeta = \frac{\psi_2}{\psi_1},
 $$
 
-which is precisely the stereographic coordinate of the Majorana construction. The coherent-state integral is the projection of the spinor integral onto $\mathbb{CP}^1$: the spinor carries three real parameters (two for the direction, one phase), the constraint $\bar\psi\psi=1$ removes one, and the overall phase is the coordinate along the fibres of the double cover. The coherent-state integral forgets the phase, and the Wess–Zumino term is what remains of it in the action. This is the precise sense in which the double cover is visible in the path integral: the two formulations differ by the fibre, and the fibre integral reproduces the Wess–Zumino term.
+which is precisely the stereographic coordinate of the Majorana construction. The coherent-state integral is the projection of the spinor integral onto $\mathbb{CP}^1$: the spinor carries four real parameters, the constraint $\bar\psi\psi=1$ removes one, and the remaining three split into two for the direction and one for the overall phase, the coordinate along the fibres of the double cover. The coherent-state integral forgets the phase, and the Wess–Zumino term is what remains of it in the action. This is the precise sense in which the double cover is visible in the path integral: the two formulations differ by the fibre, and the fibre integral reproduces the Wess–Zumino term.
 
 ### The Biquaternion Reading
 
-In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the trace pairing supplying the energy $\mathrm{Tr}(\tilde\Pi\tilde{H})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\vec u_t$ into $\vec u(t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
+In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the trace pairing supplying the energy $\mathrm{Tr}(\tilde\Pi\tilde{H})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\vec u(0)$ into $\vec u(t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
 
 ## Topological Consequences
 

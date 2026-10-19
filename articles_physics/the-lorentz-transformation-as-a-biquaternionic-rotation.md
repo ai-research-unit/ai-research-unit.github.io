@@ -78,7 +78,7 @@ $$
 where
 
 $$
-\gamma = \frac{1}{\sqrt{1 - u^2/c^2}}
+\gamma = \frac{1}{\sqrt{1 - v_b^2/c^2}}
 $$
 
 is the Lorentz factor.

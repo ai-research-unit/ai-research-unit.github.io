@@ -88,7 +88,7 @@ So the KMS condition is intrinsically an imaginary-time statement. Without imagi
 The material sector $\mathbb{M}_-$ is the four-dimensional real subspace of $\mathbb{B}$ of elements of the form
 
 $$
-\tilde{Q}_- = i q'_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z, \qquad q'_t, q_x, q_y, q_z \in \mathbb{R}.
+\tilde R = i q'_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z, \qquad q'_t, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
 The first coefficient is **imaginary** ($i q'_t$), and the three remaining coefficients are **real**. In the physical identification, $q'_t = c t$ where $t$ is time, so the first coefficient is $i c t$.
@@ -136,7 +136,7 @@ This is the same condition as in the standard formulation, with the operators ta
 
 The KMS condition acquires a natural algebraic interpretation in the material sector for three reasons.
 
-**First, the imaginary time is intrinsic.** The time coordinate of $\mathbb{M}_-$ is $ict$, which is imaginary by construction. The shift $t \to t + i\beta$ moves the real parameter $t$ off the real axis in the complex time plane. The imaginary direction along which the shift occurs is spanned by the coefficient $ict$ of the material sector; the real direction of the shift is spanned by the coefficient $ct'$ of the informational sector. So the complexified time direction in which the KMS analyticity takes place is the **sum** of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
+**First, the imaginary time is intrinsic.** The time coordinate of $\mathbb{M}_-$ is $ict$, which is imaginary by construction. The shift $t \to t + i\beta$ moves the real parameter $t$ off the real axis in the complex time plane. The imaginary direction along which the shift occurs is spanned by the coefficient $ict$ of the material sector; the real part of the complexified time is spanned by the coefficient $ct'$ of the informational sector. So the complexified time direction in which the KMS analyticity takes place is the **sum** of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
 
 **Second, the complexified time direction has a natural algebraic realization.** The complexification of $\mathbb{M}_-$ as a real subspace of $\mathbb{B}$ is $\mathbb{B}$ itself:
 

@@ -39,7 +39,7 @@ independent rank-one terms the square needs.
 **The charge.** The unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$ is compact, and the
 finite-dimensional unitary representations of a compact group are labelled by discrete data. Beside the mass,
 this is the **other internal label**: the charge is the discrete label of a representation of the compact
-internal group, and it is discrete because the group is compact and for no other reason. The interpretation is
+internal group, and it is discrete because the group is compact. The interpretation is
 **label**: which irreducible representation the element transforms in. The slice lies inside the invertible
 elements, and the cone is the complement of the invertible elements, so no null element is in the slice and no element of the cone carries
 one of these labels.
@@ -170,7 +170,7 @@ left out, and the Dirac and Majorana pair is placed at the equation level, outsi
 imaginary.
 - *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, for the rank criterion, the positive cone and the
 no-ghost and no-tachyon statements.
-- *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, for the compact slice and the discrete
+- *Particle Types, Discrete Charge and Three-Particle Couplings*, for the compact slice and the discrete
 charge, and for the continuous rapidity of the non-compact directions.
 - *The Polar Element Representation of Biquaternions* and *Conformal Invariance and the Massless Limit in
 Biquaternionic Form*, for the polar scale and its dilation reading.

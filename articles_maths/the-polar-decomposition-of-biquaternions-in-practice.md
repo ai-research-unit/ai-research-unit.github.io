@@ -30,7 +30,7 @@ $$
 
 with equality exactly when the vector part of $\tilde{Q}\tilde{Q}^{*}$ vanishes, that is, when the boost is trivial: the inequality is Cauchy–Schwarz on the complex vector $(Q_t,Q_x,Q_y,Q_z)$.
 
-**Comment.** The inequality is what makes the square roots of the procedure harmless. It gives $E^{2}+\lvert N\rvert > 0$ for every element of the domain, so no denominator below can vanish; it gives $\cosh\psi = E^{2}/\lvert N\rvert \ge 1$, so the rapidity read off the element is a real number; and it gives $\lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2} = E^{4}-\lvert N\rvert^{2} \ge 0$, so the boost axis is defined. The equality case is the case of the trivial boost, and it is the only degenerate case that the two numbers can detect.
+**Comment.** The inequality is what makes the square roots of the procedure harmless. It gives $E^{2}+\lvert N\rvert > 0$ for every element of the domain, so no denominator below can vanish; it gives $\cosh\psi = E^{2}/\lvert N\rvert \ge 1$, so the rapidity read off the element is a real number; and it gives $\lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2} = E^{4}-\lvert N\rvert^{2} \ge 0$, so the boost axis is defined whenever the vector part is nonzero; the equality case is the trivial boost, where the axis is undefined, and it is the only degenerate case that the two numbers can detect.
 
 ### The Hermitian Product and Its Vector Part
 
@@ -47,7 +47,7 @@ Every bracket is purely imaginary, so each $W_k$ is real. The scalar part of the
 
 ### What the Two Invariants Fix and What They Cannot
 
-The pair $(N,E^{2})$ fixes the first three factors and the rapidity datum of the fourth. The norm $\langle\cdot\rangle_{\natural}$ gives the modulus, hence the scale $r = \lvert N\rvert^{1/2}$ and the phase $\alpha = \tfrac12\arg N$; the ratio $E^{2}/\lvert N\rvert$ gives the rapidity through $\cosh\psi = E^{2}/\lvert N\rvert$.
+The pair $(N,E^{2})$ fixes the scale, the phase and the rapidity. The norm $\langle\cdot\rangle_{\natural}$ gives the modulus, hence the scale $r = \lvert N\rvert^{1/2}$ and the phase $\alpha = \tfrac12\arg N$; the ratio $E^{2}/\lvert N\rvert$ gives the rapidity through $\cosh\psi = E^{2}/\lvert N\rvert$.
 
 The pair cannot give the two directions. Conjugating by a real unit quaternion $R$, so that $\vec Q\mapsto R\vec Q R^{-1}$ and $Q_t$ is unchanged, leaves both $\langle\cdot\rangle_{\natural}$ and $E^{2}$ unchanged, since a real rotation preserves $\sum_kQ_k^{2}$ and $\sum_k\lvert Q_k\rvert^{2}$, and carries $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})$ to $R\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})R^{-1}$, so the axis turns while the pair stands still. Over $100$ random elements and random rotations the pair was invariant to $1.1\times10^{-14}$, the vector part reproduced the rotated vector to $4.4\times10^{-15}$, and the axis itself moved by more than $0.3$ in $99$ of the $100$ draws.
 
@@ -63,24 +63,24 @@ Given $\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$:
 2. Take its principal square root: write $N = |N|\exp(i\varphi)$ with $\varphi\in(-\pi,\pi]$, and put $\rho = \sqrt{|N|}\exp(i\varphi/2)$, so that $r = \sqrt{|N|}$ and $\alpha = \varphi/2$.
 3. Put $U = \tilde{Q}/\rho$, of unit norm.
 4. Compute the Hermitian element $UU^{*}$, and write it as $\mathrm{Sc}(UU^{*}) e_t + i\mathrm{Vec}(UU^{*})$ with $\mathrm{Sc}(UU^{*})\in\mathbb{R}$, $\mathrm{Vec}(UU^{*})\in\mathbb{R}^3$; then put
-   $\tilde U_{\mathrm b} = \sqrt{\frac{1+\mathrm{Sc}(UU^{*})}{2}}\,e_t + \frac{i\mathrm{Vec}(UU^{*})}{\sqrt{2(1+\mathrm{Sc}(UU^{*}))}}$, and read the rapidity and axis off by $\cosh\psi = \mathrm{Sc}(UU^{*})$, $\vec u_{\mathrm b} = \mathrm{Vec}(UU^{*})/|\mathrm{Vec}(UU^{*})|$.
+   $\tilde U_{\mathrm b} = \sqrt{\frac{1+\mathrm{Sc}(UU^{*})}{2}}\,e_t + \frac{i\mathrm{Vec}(UU^{*})}{\sqrt{2(1+\mathrm{Sc}(UU^{*}))}}$, and read the rapidity and axis off by $\cosh\psi = \mathrm{Sc}(UU^{*})$, $\vec u_{\mathrm b} = \mathrm{Vec}(UU^{*})/|\mathrm{Vec}(UU^{*})|$; when $\mathrm{Vec}(UU^{*})=0$ the boost is $\tilde U_{\mathrm b}=e_t$ and no axis is read.
 5. Put $\tilde u_{\mathrm r} = U(\sqrt{U^{*}U})^{-1} = \tilde U_{\mathrm b}^{\natural}U$, the unitary factor of the right polar decomposition of $U$, and verify that its coefficients are real and that $\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = 1$.
 
 The factors so obtained satisfy $\tilde{Q} = r \exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ identically.
 
-**Comment on step 1.** Step 1 is a test before it is a computation. If $N = 0$ the element is a zero divisor, no factor of the word exists, and the procedure stops. The domain of the representation is the complement of the null cone, and the test is the first thing to perform.
+**Comment on step 1.** Step 1 is a test before it is a computation. If $N = 0$ the element is zero or a zero divisor, no factor of the word exists, and the procedure stops. The domain of the representation is the complement of the null cone, and the test is the first thing to perform.
 
 **Comment on step 2.** Step 2 is the only step that requires a convention, and it carries the whole of it: the branch of the square root is fixed once and for all by $\alpha\in(-\pi/2,\pi/2]$, the closed right half plane. The other root $-\rho$ has angle $\alpha\pm\pi$ and is outside the interval. Every other step is forced.
 
 **Comment on step 3.** Step 3 is a division by a complex number, that is, a multiplication by its inverse, and it costs nothing: $1/\rho = \exp(-i\alpha)/r$. Its only role is to put the element on the unit-norm sphere, so that the remaining content of the decomposition is the split of a unit element into a boost and a rotor.
 
-**Comment on step 4.** Step 4 is the only step that is not rational in the coordinates: it needs the positive square root of the Hermitian element $UU^{*}$, and the closed form above is that square root written in the algebra. The element $UU^{*}$ is Hermitian and positive definite, of unit norm, hence $\mathrm{Sc}(UU^{*})^{2}-\lvert\mathrm{Vec}(UU^{*})\rvert^{2} = 1$ and $\mathrm{Sc}(UU^{*})\ge1$, and the two square roots of $UU^{*}$ are $\pm\tilde U_{\mathrm b}$; the positive one is taken. The rapidity and the axis are read off the two data of $UU^{*}$: $\cosh\psi = \mathrm{Sc}(UU^{*})$ and $\vec u_{\mathrm b} = \mathrm{Vec}(UU^{*})/\lvert\mathrm{Vec}(UU^{*})\rvert$.
+**Comment on step 4.** Step 4 is the only step that is not rational in the coordinates: it needs the positive square root of the Hermitian element $UU^{*}$, and the closed form above is that square root written in the algebra. The element $UU^{*}$ is Hermitian and positive definite, of unit norm, hence $\mathrm{Sc}(UU^{*})^{2}-\lvert\mathrm{Vec}(UU^{*})\rvert^{2} = 1$ and $\mathrm{Sc}(UU^{*})\ge1$, and the two Hermitian square roots of $UU^{*}$ are $\pm\tilde U_{\mathrm b}$; the positive one is taken. The rapidity and the axis are read off the two data of $UU^{*}$: $\cosh\psi = \mathrm{Sc}(UU^{*})$ and, when $\mathrm{Vec}(UU^{*})\neq0$, $\vec u_{\mathrm b} = \mathrm{Vec}(UU^{*})/\lvert\mathrm{Vec}(UU^{*})\rvert$; when the vector part vanishes the boost is $e_t$ and the axis is undefined.
 
-**Comment on step 5.** Step 5 is a subtraction in disguise, and it needs no square root. The rotor is what is left of the unit element after the Hermitian positive part is divided out, and it is real because the division cancels the Hermitian part exactly: $U = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$, and the real quaternion $\tilde u_{\mathrm r}$ has as many real numbers as $\tilde U_{\mathrm b}$ has imaginary ones.
+**Comment on step 5.** Step 5 is a subtraction in disguise, and it needs no square root. The rotor is what is left of the unit element after the Hermitian positive part is divided out, and it is real because the division cancels the Hermitian part exactly: $U = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$, and the rotor has as many real parameters as the boost has imaginary coefficients.
 
 ### What to Do First
 
-The procedure opens with a test and not with a computation: form the biquaternion norm $\langle\cdot\rangle_{\natural}$. If $N = 0$ the element is a zero divisor, no factor of the word exists, and the whole of the above is empty; the domain of the representation is the complement of the null cone, which is the first thing to establish. If $N\neq0$ the order is forced and has no freedom left: the modulus $\rho$ comes first, because it is the only step that needs the branch choice; the normalised element $U$ comes second, because every later step divides by $\rho$ or by a function of it; the Hermitian element $UU^{*}$ comes third, because the boost is its root; and the rotor comes last, as the unitary factor of the right polar decomposition of $U$. No step can be moved, and no step needs a second convention.
+The procedure opens with a test and not with a computation: form the biquaternion norm $\langle\cdot\rangle_{\natural}$. If $N = 0$ the element is zero or a zero divisor, no factor of the word exists, and the whole of the above is empty; the domain of the representation is the complement of the null cone, which is the first thing to establish. If $N\neq0$ the order is forced and has no freedom left: the modulus $\rho$ comes first, because it is the only step that needs the branch choice; the normalised element $U$ comes second, because every later step divides by $\rho$ or by a function of it; the Hermitian element $UU^{*}$ comes third, because the boost is its root; and the rotor comes last, as the unitary factor of the right polar decomposition of $U$. No step can be moved, and no step needs a second convention.
 
 ### Each Factor in a Sentence
 
@@ -106,7 +106,7 @@ The five steps are formulas, and each factor is a closed expression in the four 
 | boost, scalar part | $\cosh\dfrac{\psi}{2} = \sqrt{\dfrac{E^{2}+\lvert N\rvert}{2\,\lvert N\rvert}}$ |
 | boost, vector part | $\sinh\dfrac{\psi}{2}\,\vec u_{\mathrm b} = \dfrac{\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})}{\sqrt{2\,\lvert N\rvert\,(E^{2}+\lvert N\rvert)}}$ |
 | rapidity | $\cosh\psi = \dfrac{E^{2}}{\lvert N\rvert}$, and the speed $\tanh\dfrac{\psi}{2} = \sqrt{\dfrac{E^{2}-\lvert N\rvert}{E^{2}+\lvert N\rvert}}$ |
-| rotor | $\tilde u_{\mathrm r,\mu} = \sqrt{\dfrac{2}{E^{2}+\lvert N\rvert}}\;\operatorname{Re}\!\bigl(Q_\mu\,\exp(-i\alpha)\bigr)$, $\mu = 0,1,2,3$ |
+| rotor | $\tilde u_{\mathrm r,\mu} = \sqrt{\dfrac{2}{E^{2}+\lvert N\rvert}}\;\operatorname{Re}\!\bigl(Q_\mu\,\exp(-i\alpha)\bigr)$, $\mu\in\{t,x,y,z\}$ |
 
 The vector part of the boost is read off the Hermitian product $\tilde{Q}\tilde{Q}^{*}$, which is the quantity $r^{2}UU^{*}$ of step 4,
 
@@ -116,7 +116,7 @@ $$
 \lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2} = E^{4}-\lvert N\rvert^{2} .
 $$
 
-The rapidity datum $\mathrm{Sc}(UU^{*})$ of §*The Closed Form, the Rapidity and the Axis* of the companion article is the ratio $\mathrm{Sc}(UU^{*}) = E^{2}/\lvert N\rvert$, and the boost datum $\mathrm{Vec}(UU^{*})$ of that section is $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})/\lvert N\rvert$.
+The rapidity datum $\mathrm{Sc}(UU^{*})$ of §*The Closed Form* under §*The Boost* of the companion article is the ratio $\mathrm{Sc}(UU^{*}) = E^{2}/\lvert N\rvert$, and the boost datum $\mathrm{Vec}(UU^{*})$ of that section is $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})/\lvert N\rvert$.
 
 **Comment.** The table is the algorithm in one glance: two rows are read off $\langle\cdot\rangle_{\natural}$ alone, the two boost rows are read off $E^{2}$ against $\lvert N\rvert$ and off $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})$, and the last row is the projection of the coordinates on the phase direction. Every entry is a closed expression, so no iteration, no search and no series occurs anywhere in the procedure except in the one square root of $\rho$ that step 2 fixes by convention.
 

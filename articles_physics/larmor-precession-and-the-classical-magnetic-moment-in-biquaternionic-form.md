@@ -49,13 +49,13 @@ This is the same slot that carries the three real spatial directions $x\,\vec e_
 For a pure real quaternion $\vec a$ and a pure real quaternion $\vec b$, the quaternion product splits into a scalar and a vector part,
 
 $$
-\vec a\,\vec b = -\,\vec a\cdot\vec b + \vec a\times\vec b,
+\vec a\,\vec b = -\,\vec a\cdot\vec b\,e_t + \vec a\times\vec b,
 $$
 
 with the scalar part the negative of the dot product and the vector part the cross product. Applied to the moment and the induction, this one identity contains the whole of the classical magnetic coupling:
 
 $$
-\vec\mu\,\vec B = -\,\vec\mu\cdot\vec B + \vec\mu\times\vec B.
+\vec\mu\,\vec B = -\,\vec\mu\cdot\vec B\,e_t + \vec\mu\times\vec B.
 $$
 
 
@@ -337,7 +337,7 @@ The two treatments agree because they are the same rotor. The classical moment o
 The magnetic moment of a current distribution is an axial vector, and in the biquaternion framework it is a pure real quaternion $\vec\mu = \mu_k \vec e_k$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the same slot that carries the magnetic induction $\vec B = B_k \vec e_k$. The two bilinears of the magnetic coupling are the scalar and vector parts of the single quaternion product,
 
 $$
-\vec\mu\,\vec B = -\,\vec\mu\cdot\vec B + \vec\mu\times\vec B,
+\vec\mu\,\vec B = -\,\vec\mu\cdot\vec B\,e_t + \vec\mu\times\vec B,
 $$
 
 so that the energy is $E = \mathrm{Sc}(\vec\mu\vec B) = -\vec\mu\cdot\vec B$ and the torque is $\vec\tau = \mathrm{Vect}(\vec\mu\vec B) = \vec\mu\times\vec B$.

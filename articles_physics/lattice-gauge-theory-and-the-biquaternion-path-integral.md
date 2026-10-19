@@ -63,7 +63,7 @@ $$
 \qquad
 \phi(n)\longmapsto \tilde U(n)\phi(n)
 $$
-for a matter field in the fundamental representation. This is the lattice form of the transformation law of the companion article: it is the adjoint law at a point, promoted to a law relating neighbouring sites, and the inhomogeneous term of the continuum transformation is replaced by the difference of the group elements on the two ends of the link. The action will be built from products of links around closed loops, and each loop is gauge invariant because the $\tilde U(n)$ and $\tilde U(n)^{-1}$ at every site cancel.
+for a matter field in the fundamental representation. This is the lattice form of the transformation law of the companion article: it is the adjoint law at a point, promoted to a law relating neighbouring sites, and the inhomogeneous term of the continuum transformation is replaced by the difference of the group elements on the two ends of the link. The action will be built from products of links around closed loops, and the trace of each loop is gauge invariant because the $\tilde U(n)$ and $\tilde U(n)^{-1}$ at every site cancel under the trace.
 
 ### The Discrete Covariant Derivative
 
@@ -77,11 +77,11 @@ which transforms as $\tilde U(n)\big(D_\mu\phi\big)(n)$ at the site $n$, exactly
 
 ### The Plaquette
 
-The elementary gauge-invariant object on the lattice is the **plaquette**, the product of links around the boundary of an elementary square in the $\mu\nu$ plane,
+The elementary gauge-covariant object on the lattice is the **plaquette**, the product of links around the boundary of an elementary square in the $\mu\nu$ plane,
 $$
 \tilde U_{\mu\nu}(n)=\tilde U_\mu(n)\,\tilde U_\nu(n+\vec u_\mu)\,\tilde U_\mu(n+\vec u_\nu)^{-1}\,\tilde U_\nu(n)^{-1}.
 $$
-It is a unit quaternion, it is gauge invariant, and it is the lattice representative of the curvature. Expanding the links at small $a$ and collecting the leading term,
+It is a unit quaternion, its trace is gauge invariant, and it is the lattice representative of the curvature. Expanding the links at small $a$ and collecting the leading term,
 $$
 \tilde U_{\mu\nu}(n)=\exp\!\big(ia^2\kappa\,F_{\mu\nu}(n)+O(a^3)\big),
 $$
@@ -97,7 +97,7 @@ N=2,
 \qquad
 \mathrm{Tr}\,\tilde U_{\mu\nu}=2\,\mathrm{Re}\,(\tilde U_{\mu\nu})_0 ,
 $$
-with $\beta$ the lattice coupling. It is gauge invariant because each plaquette is; it is real and bounded below because the trace lies in $[-2,2]$; and its small-$a$ limit is the Yang–Mills action. To fix $\beta$ one expands the trace. Using $\tilde U_{\mu\nu}=\exp(ia^2\kappa F_{\mu\nu}+\ldots)$ and the vanishing of the matrix trace of the curvature,
+with $\beta$ the lattice coupling. It is gauge invariant because the trace of each plaquette is; it is real and bounded below because the trace lies in $[-2,2]$; and its small-$a$ limit is the Yang–Mills action. To fix $\beta$ one expands the trace. Using $\tilde U_{\mu\nu}=\exp(ia^2\kappa F_{\mu\nu}+\ldots)$ and the vanishing of the matrix trace of the curvature,
 $$
 \frac{1}{N}\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}
 =1-\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(F_{\mu\nu}F^{\mu\nu}\right)+O(a^6),

@@ -125,7 +125,7 @@ $$
 i\,\bar\sigma^{\mu}\partial_\mu\,\psi_L \;=\; m\,\epsilon\,\psi_L^{*}.
 $$
 
-The mass term is exactly the conjugation $\mathcal{C}$ written in two-component language: $\epsilon\,\psi_L^{*}$ is the right-handed conjugate that the four-component $\psi^{c}$ produces in its upper half, and the equation pairs the field with that conjugate rather than with an independent right-handed field. The matrix $\epsilon$ is the antisymmetric form that defines the symplectic pairing of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, and it is the same object as the off-diagonal block of $K$; the two-component form is therefore not a different equation but the same equation in the defining representation.
+The mass term is exactly the conjugation $\mathcal{C}$ written in two-component language: $\epsilon\,\psi_L^{*}$ is the right-handed conjugate that the four-component $\psi^{c}$ produces in its lower half, and the equation pairs the field with that conjugate rather than with an independent right-handed field. The matrix $\epsilon$ is the antisymmetric form that defines the symplectic pairing of *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, and it is the same object as the off-diagonal block of $K$; the two-component form is therefore not a different equation but the same equation in the defining representation.
 
 **The two Weyl operators are the two square roots of the d'Alembertian.** Set
 

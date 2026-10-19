@@ -42,7 +42,7 @@ $i$ is central with $i^{2}=-1$. The conjugations are ${}^{\natural}$, $\bar{\cdo
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The **central square** is
 $C(\tilde P)e_t=\tilde P^{\natural}\tilde P$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$, and the **cone** is
 $\mathcal{C}=\{C=0\}$. An element is
-**pure** when $P_0=0$; the material coordinate is $\tilde P=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The four square-zero
+**pure** when $P_t=0$; the material coordinate is $\tilde R=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The four square-zero
 sets of the four general products are written $Z_1$ (plain), $Z_2$ (natural), $Z_3$ (plain sesquilinear)
 and $Z_4$ (quaternionic sesquilinear). The twelve structures are cited by their three-letter names.
 
@@ -143,7 +143,7 @@ The mathematics companion computes the four square-zero sets of the four general
 
 | product | the square-zero set | real dimension | physical interpretation |
 |---|---|---|---|
-| GPA | the pure isotropic cone $\{P_0=0,(\vec P,\vec P)=0\}$ | $4$ | the pure null displacements, the lightlike directions of the composition |
+| GPA | the pure isotropic cone $\{P_t=0,(\vec P,\vec P)=0\}$ | $4$ | the pure null displacements, the lightlike directions of the composition |
 | GPS | the origin alone | $0$ | the probability band has no nonzero square-zero element |
 | GQA | the whole cone $\mathcal{C}$ | $6$ | every lightlike element is self-annihilating in the interval band |
 | GQS | the subfamily $\overline{\tilde P}\tilde P=0$, containing $e_t+i\vec e_x$ | $4$ | a proper part of the lightlike family of the gauge band |
@@ -184,7 +184,7 @@ twelve in one place.
 ### $\mathrm{GPA}$, the general plain algebra — composition
 
 The product is the plain product and its square is the plain square. The root set of $0$ is the pure
-isotropic cone $\{P_0=0,\ (\vec P,\vec P)=0\}$, of real dimension four, one component of the
+isotropic cone $\{P_t=0,\ (\vec P,\vec P)=0\}$, of real dimension four, one component of the
 zero-divisor cone: the lightlike displacements that are their own annihilating partner. It is a proper
 subfamily of the cone, because a non-pure cone element is a multiple of an idempotent and not square-zero.
 The reading is *The Cone and the Massless Particles in the Biquaternioid Structures over
@@ -679,7 +679,7 @@ element theory of the algebra.
 ## Summary of Notation
 
 - $\tilde\Upsilon$ a square-zero element, $\tilde\Upsilon\star\tilde\Upsilon=0$; a nilpotent of index two.
-- $C(\tilde Q)e_t=\tilde Q^{\natural}\tilde Q$ the central square; the cone $\mathcal{C}=\{C=0\}$.
+- $C(\tilde P)e_t=\tilde P^{\natural}\tilde P$ the central square; the cone $\mathcal{C}=\{C=0\}$.
 - $Z_1,Z_2,Z_3,Z_4$ the square-zero sets of the plain, natural, general plain sesquilinear and general quaternionic sesquilinear products.
 - $A_\star(\tilde P)$, $B_\star(\tilde P)$ the left and right annihilators; self-annihilation is $\tilde P\in A_\star(\tilde P)$.
 - ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde R=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; $\langle\tilde R\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$.

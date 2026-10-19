@@ -10,7 +10,7 @@ The result is a division of labour between the two forms, and it is worth statin
 - The **biquaternion norm** fixes the *metric*. It vanishes identically on the pure states, so it cannot itself be a metric there; what it gives is the line element at second order, and the result is
 
 $$
-ds^2_{\mathrm{FS}} \;=\; -\,N\!\left(\delta\tilde\Pi\right)\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\vec{u}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
+ds^2_{\mathrm{FS}} \;=\; -\,\langle\delta\tilde\Pi\rangle_{\natural}\Big|_{\text{tangential}} \;=\; \tfrac14\,\bigl|d\vec{u}\bigr|^2 \;=\; \tfrac14\left(d\theta^2+\sin^2\theta\,d\varphi^2\right),
 $$
 
 the Fubini–Study line element of $\mathbb{P}^1(\mathbb{C})$, equal to one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the spinorial factor: it is the square of the ratio between the angle on the ray space and the angle on the Bloch sphere, that ratio being the half-angle $\tfrac12$ of the double cover $SU(2)\to SO(3)$.
@@ -29,7 +29,7 @@ $$
 \qquad
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$, and the trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_te_t+i\vec h$,
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$, and the trace formula is $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_te_t+i\vec h$,
 $$
 \langle\tilde{H}\rangle_{\natural}=\bigl(h_t^2-|\vec h|^2\bigr)e_t .
 $$
@@ -46,23 +46,23 @@ $$
 
 Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.
 
-**The trace pairing.** For a second Hermitian element $\tilde Q=Q_t\,e_t+i\vec Q$,
+**The trace pairing.** For two Hermitian elements $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$,
 $$
-\mathrm{Tr}(\tilde{H}\tilde{Q})=2\bigl(h_tQ_t+\vec h\cdot\vec Q\bigr)
+\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=2\bigl(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\bigr)
 $$
 is positive definite, of signature $(4,0)$; it is the Euclidean pairing on $\mathbb{R}^4$ up to the normalization $\mathrm{Tr}(e_t)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
 
 **The biquaternion norm and its polarization.**
 $$
-\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=\tilde{H}\tilde{H}^{\natural}=\bigl(h_t^2-|\vec h|^2\bigr)e_t,
+\langle\tilde{H}_1\rangle_{\natural} = \langle\tilde{H}_1,\tilde{H}_1\rangle_{\natural}=\tilde{H}_1\tilde{H}_1^{\natural}=\bigl(h_{1t}^2-|\vec h_1|^2\bigr)e_t,
 \qquad
-\langle\tilde{H},\tilde{Q}\rangle=\tfrac12\bigl(\tilde{H}\tilde{Q}^{\natural}+\tilde{Q}\tilde{H}^{\natural}\bigr)=\bigl(h_tQ_t-\vec h\cdot\vec Q\bigr)e_t,
+\langle\tilde{H}_1,\tilde{H}_2\rangle_{\natural}=\tfrac12\bigl(\tilde{H}_1\tilde{H}_2^{\natural}+\tilde{H}_2\tilde{H}_1^{\natural}\bigr)=\bigl(h_{1t}h_{2t}-\vec h_1\cdot\vec h_2\bigr)e_t,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 
 The two forms are the two ingredients of the geometry. The trace pairing is positive definite and therefore measures *overlap*; the biquaternion norm is indefinite, vanishes on the pure states, and therefore cannot measure *length* on them directly. The point of the article is that the biquaternion norm nevertheless determines the length, through its second variation on the null boundary. That is a standard feature of a quadratic form at a null direction — the first variation vanishes, and the second variation carries the geometry — and here it is the whole content of the Fubini–Study metric.
 
-The reader should also keep in mind what these forms are *not*. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}\,e_t=\det M(\tilde{Q})\,e_t$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}\tilde{Q})=\mathrm{Tr}(M(\tilde{H})M(\tilde{Q}))$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.
+The reader should also keep in mind what these forms are *not*. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}\,e_t=\det M(\tilde{Q})\,e_t$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=\mathrm{Tr}(M(\tilde{H}_1)M(\tilde{H}_2))$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.
 
 ## Pure States and the Projective Line
 
@@ -162,7 +162,7 @@ $$
 $$
 The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,d\varphi^2$, so the Fubini–Study metric of the pure states is one quarter of the round metric of the sphere on which the states are drawn. Equivalently, the pure-state manifold is a round sphere of radius $\tfrac12$ with the Fubini–Study normalization, and its total area is $\pi$.
 
-The sign convention in $-N$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde\Pi\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_t$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
+The sign convention in $-\langle\delta\tilde\Pi\rangle_{\natural}$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde\Pi\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_t$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde\Pi\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
 
 ### The spinor computation
 
@@ -225,7 +225,7 @@ $$
 \qquad\text{so}\qquad
 J_{\vec{u}}(v)=\tfrac12\,[\vec{u},v].
 $$
-The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables, $[\tilde{H},\tilde{Q}]=-2(\vec h\times\vec Q)$, restricted to the boundary.
+The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables $\tilde H_1$ and $\tilde H_2$, $[\tilde H_1,\tilde H_2]=-2(\vec h_1\times\vec h_2)$, restricted to the boundary.
 
 **The Kähler compatibility.** The metric $g(\delta_1,\delta_2)=\tfrac14\,\delta_1\vec{u}\cdot\delta_2\vec{u}$ is invariant under $J$, because $J$ is a rotation:
 $$

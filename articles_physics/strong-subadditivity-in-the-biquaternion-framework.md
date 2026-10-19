@@ -6,7 +6,7 @@
 $$
 S(\rho_{ABC})+S(\rho_B)\ \le\ S(\rho_{AB})+S(\rho_{BC}),
 $$
-and it says that the entropy of a composite is subadditive in a way that survives the overlap of the two pairs. It is stronger than the ordinary subadditivity $S(\rho_{AB})\le S(\rho_A)+S(\rho_B)$, and it is the one inequality from which the monotonicity of relative entropy under every physical process follows — or, in the direction that is usually used, from which it follows. It was proved by Lieb and Ruskai in 1973, and it remains the sharpest general statement of its kind: no inequality stronger than strong subadditivity holds for all tripartite states.
+and it says that the entropy of a composite is subadditive in a way that survives the overlap of the two pairs. It is stronger than the ordinary subadditivity $S(\rho_{AB})\le S(\rho_A)+S(\rho_B)$, and it is equivalent to the monotonicity of relative entropy under every physical process: each follows from the other. It was proved by Lieb and Ruskai in 1973, and it remains the sharpest general statement of its kind: no inequality stronger than strong subadditivity holds for all tripartite states.
 
 This article asks what strong subadditivity is in the biquaternion framework. The answer has the same three-part shape as the companion article on relative entropy.
 
@@ -18,7 +18,7 @@ This article asks what strong subadditivity is in the biquaternion framework. Th
 
 The article proceeds as follows. The inequality and its equivalent forms are recalled. The tensor-product setting in the biquaternion algebra is fixed, with the partial trace written explicitly. The inequality is derived from monotonicity of relative entropy. The three examples are computed. The equality condition is stated as the quantum Markov property. The field-theoretic setting is recalled, and the article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_t)=2$. The relative entropy and its monotonicity are those of *Relative Entropy and the Biquaternion Framework*. The single-mode states and the vacuum idempotent are those of *The GNS Construction in the Biquaternion Framework* and *The Biquaternion Vacuum as a Minimal Idempotent*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, with $\mathrm{Tr}(e_t)=2$. The relative entropy and its monotonicity are those of *Relative Entropy and the Biquaternion Framework*. The single-mode states and the vacuum idempotent are those of *The GNS Construction in the Biquaternion Framework* and *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ## The Inequality
 
@@ -306,7 +306,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; many-mode algebra |
 | $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimes A_n^{(1)})=\prod_i\mathrm{Tr}(\tilde Q_i)$ | Product trace; $\mathrm{Tr}(e_t^{\otimes n})=2^n$ |
 | $\rho_{AB},\rho_{BC},\rho_B$ | Reduced states (partial traces) |

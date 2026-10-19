@@ -197,7 +197,7 @@ $$
 \tilde P=iH\,e_t+P^{\mathrm{fop}}_k\,\vec e_k\in\mathcal{A}\otimes\mathbb{M}_- ,
 $$
 
-whose square is the operator mass shell $\tilde P\bar{\tilde P}=-P^{\mathrm{fop}\mu}P^{\mathrm{fop}}_\mu e_t$, the operator counterpart of the classical condition $\tilde P\tilde P^{\natural}=-m^2$. The charge is different in kind: $Ϙ^{\mathrm{fop}}$ is a Hermitian scalar, hence central,
+whose square is the operator mass shell $\tilde P\tilde P^{\natural}=-P^{\mathrm{fop}\mu}P^{\mathrm{fop}}_\mu e_t$, the operator counterpart of the classical condition $\tilde P\tilde P^{\natural}=-m^2$. The charge is different in kind: $Ϙ^{\mathrm{fop}}$ is a Hermitian scalar, hence central,
 
 $$
 Ϙ^{\mathrm{fop}}=Ϙ^{\mathrm{fop}*}=Ϙ^{\mathrm{fop}\dagger}\in\mathcal{A}\otimes\mathbb{C}_{\mathbb{B}},

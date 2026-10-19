@@ -18,7 +18,7 @@ This article asks what the area law is in the biquaternion framework. The framew
 
 The article proceeds as follows. The area law is stated in its field-theoretic form, with the gapped and gapless cases distinguished and the coefficient discussed. The locality mechanism is explained as a bond-cutting bound, with the finite-depth circuit and matrix-product-state versions. The discrete area law is then realized and verified in the biquaternion chain, with the dimer state and a table of region entropies. The field statement, its holographic and black-hole cases, are recalled. The article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_t)=2$; on the tensor power the trace is the product trace. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, the entanglement entropy and replica moments those of *Entanglement Entropy and the Replica Trick in Biquaternionic Form*, and the one-particle module that of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, with $\mathrm{Tr}(e_t)=2$; on the tensor power the trace is the product trace. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, the entanglement entropy and replica moments those of *Entanglement Entropy and the Replica Trick in Biquaternionic Form*, and the one-particle module that of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
 
 ## The Area Law
 
@@ -124,7 +124,7 @@ S_A\ \le\ \log\mathrm{rank}\,\rho_A\ \le\ |\partial A|\log2,
 $$
 which is the discrete area law. The boundary appears and the volume does not because only the boundary bonds enter the rank bound. With a module of dimension $\chi$ the same argument gives $S_A\le|\partial A|\log\chi$, and the bound is attained when the boundary ancillas are maximally mixed and uncorrelated and each of them belongs to a bond the region cuts — the situation the dimer state realizes wherever its boundary bonds are the dimers it cuts. The framework's contribution to the area law is this rank argument: the entropy per boundary bond is bounded by the logarithm of the dimension of the module that carries the bond.
 
-A state of the same four sites drawn at random would have $S_A\simeq\min(|A|,4-|A|)$ bits at leading order — a volume law: for $A=\{1,2\}$ that is $2\log2$, where the dimer state gives $0$. The dimer state and the random state are the two extremes, and the gap between them is what the area law asserts about local ground states.
+A state of the same four sites drawn at random would have $S_A\simeq\min(|A|,4-|A|)\log2$ nats at leading order — a volume law: for $A=\{1,2\}$ that is $2\log2$, where the dimer state gives $0$. The dimer state and the random state are the two extremes, and the gap between them is what the area law asserts about local ground states.
 
 ### The Replica Moments of the Dimer State
 
@@ -218,7 +218,7 @@ What the framework cannot supply is the geometry: the metric, the dimension, the
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes N}\cong M_{2^N}(\mathbb{C})$ | Chain of $N$ modes |
 | $A,\bar A,\partial A$ | Region, complement, and boundary bonds |
 | $\rho_A=\mathrm{Tr}_{\bar A}\,\rho$ | Reduced state of the region |

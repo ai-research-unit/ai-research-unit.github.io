@@ -2,12 +2,12 @@
 
 ## Introduction
 
-Quantum thermodynamics is the thermodynamics of systems whose state is a density operator: equilibrium is the Gibbs state, and the thermodynamic quantities — internal energy, entropy, free energy, heat capacity — are functionals of that state. This article asks what the biquaternion framework adds to that account, and it keeps the answer modest: the framework supplies a **interpretation** of the standard objects, not a new law.
+Quantum thermodynamics is the thermodynamics of systems whose state is a density operator: equilibrium is the Gibbs state, and the thermodynamic quantities — internal energy, entropy, free energy, heat capacity — are functionals of that state. This article asks what the biquaternion framework adds to that account, and it keeps the answer modest: the framework supplies an **interpretation** of the standard objects, not a new law.
 
 The interpretation rests on one formula, inherited from the companion articles:
 
 $$
-\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H).
+\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2).
 $$
 
 The trace is **twice the scalar part**. This is not a convenience of notation: in the biquaternion algebra the trace *is* the scalar extraction, so the partition function and every thermal average are computed by taking the scalar part of a product and doubling it. The present article uses this formula as the computational spine throughout, in place of a generic matrix trace.
@@ -16,7 +16,7 @@ Two structural facts follow and are developed below. First, the Gibbs state of a
 
 The article proceeds as follows. The Gibbs state is defined and its existence condition — the convergence of $Z$ — is treated as part of the content rather than as a technicality. The thermodynamic quantities are then written as functionals of the state and computed through the trace formula. The Gibbs state is characterised variationally, as the minimiser of the free-energy functional, and the Legendre structure relating $\log Z$, the entropy, and the free energy is set out with its signs checked against the thermodynamic identities. The low- and high-temperature limits are computed, the KMS condition is identified as the operator-algebraic characterisation of the same state, and the closing section separates what the framework adds from what it does not.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$. The four fixed-point subspaces are the complex subspace $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (the complex scalars, the centre of $\mathbb{B}$), the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part; the informational sector), and the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part; the material sector, whose time coordinate is $ict$). A Hermitian element is written $\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$; a state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. Units are $\hbar=1$ and $k_B=1$, so $\beta=1/T$ and the entropy is measured in units of $k_B$; restoring $k_B$ multiplies the entropy and the heat capacity by $k_B$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$. The four fixed-point subspaces are the complex subspace $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (the complex scalars, the centre of $\mathbb{B}$), the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part; the informational sector), and the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part; the material sector, whose time coordinate is $ict$). A Hermitian element is written $\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$; a state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$. The trace formula is $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$. Units are $\hbar=1$ and $k_B=1$, so $\beta=1/T$ and the entropy is measured in units of $k_B$; restoring $k_B$ multiplies the entropy and the heat capacity by $k_B$.
 
 ## The Gibbs State and the Convergence of $Z$
 
@@ -46,7 +46,7 @@ $$
 \qquad \vec u_h=\frac{\vec h}{|\vec h|},
 $$
 
-an element of $\mathbb{M}_+$. Applying the trace formula with $\tilde P=e_t$ gives
+an element of $\mathbb{M}_+$. Applying the trace formula with $\tilde H_1=e_t$ and $\tilde H_2=\exp(-\beta\tilde H)$ gives
 
 $$
 Z=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h|),
@@ -244,7 +244,7 @@ lies in $\mathbb{M}_+$ — it is Hermitian by construction. The last equality us
 
 ## What the Framework Adds, and What It Does Not
 
-The framework adds a **interpretation** with three components.
+The framework adds an **interpretation** with three components.
 
 First, the computational spine is algebraic: the trace is twice the scalar part, so the partition function, every thermal average, the entropy, and the heat capacity are obtained by extracting a scalar from a product of $\mathbb{M}_+$ elements. The variance form of the heat capacity, $C=k_B\beta^2[2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^2)-(2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H))^2]$, shows the interpretation at work.
 
@@ -256,7 +256,7 @@ The framework does **not** produce a new thermodynamic law. The Gibbs state, the
 
 ## Summary
 
-Quantum thermodynamics in biquaternionic form is the thermodynamics of the Gibbs state $\tilde{Ϛ}_\beta=\exp(-\beta\tilde H)/Z$, read through the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The trace is the scalar extraction, so the partition function is $Z=2\,\mathrm{Sc}(\exp(-\beta\tilde H))=2\exp(-\beta h_t)\cosh(\beta|\vec h|)$ for a qubit, and every thermal average is twice a scalar part.
+Quantum thermodynamics in biquaternionic form is the thermodynamics of the Gibbs state $\tilde{Ϛ}_\beta=\exp(-\beta\tilde H)/Z$, read through the trace formula $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$. The trace is the scalar extraction, so the partition function is $Z=2\,\mathrm{Sc}(\exp(-\beta\tilde H))=2\exp(-\beta h_t)\cosh(\beta|\vec h|)$ for a qubit, and every thermal average is twice a scalar part.
 
 The Gibbs state exists only when $Z$ converges: always for a finite-level system, and in the half-plane $\mathrm{Re}\,\beta>0$ for a spectrum unbounded above. The infinite-temperature boundary $\beta\to0$ is where the condition matters, and it separates the qubit ($Z\to2$) from the oscillator ($Z\to\infty$).
 
@@ -279,7 +279,7 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): real scalar, imaginary vector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\tilde H=h_te_t+i\vec h$ | Hermitian Hamiltonian (observable) |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (computational spine) |
+| $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$ | Trace formula (computational spine) |
 | $Z=\mathrm{Tr}(\exp(-\beta\tilde H))$ | Partition function |
 | $\tilde{Ϛ}_\beta=\exp(-\beta\tilde H)/Z=\tfrac12(e_t+i\vec r)$ | Gibbs state |
 | $\vec r=-\tanh(\beta|\vec h|)\vec u_h$ | Bloch vector of the Gibbs state |

@@ -14,7 +14,7 @@ $$
 $$
 the electric and magnetic fields $\vec E$ and $\vec H$, the magnetic induction $\vec B=\mu\vec H$, the medium speed $c=1/\sqrt{\epsilon\mu}$, the Riemann–Silberstein vector $\vec N=\vec E+ic\vec B$, the invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the energy density $W$ and Poynting vector $\vec S$. **Nothing in this list is redefined here.** The article fixes the conventions specific to a medium — the two medium parameters, the impedance, the dispersive data, and the boundary data — in enough detail that the later exercise on plane-wave propagation in a medium is a direct application of the objects fixed below.
 
-The remaining conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $e_k^2=-e_t$, and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the scalar subspace is $\mathbb{C}_{\mathbb{B}}$. The biquaternionic gradient and its quaternion conjugate are
+The remaining conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, and scalar imaginary $i$ commuting with the quaternion units. The two complementary four-dimensional real subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector) and $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the scalar subspace is $\mathbb{C}_{\mathbb{B}}$. The biquaternionic gradient and its quaternion conjugate are
 $$
 \tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z,
 \qquad
@@ -66,13 +66,13 @@ The biquaternionic gradient is
 $$
 \tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z,
 \qquad
-\partial/\partial Q_t=\frac{\partial}{\partial(ict)}=-\frac{i}{c}\,\partial/\partial Q_t,
+\partial/\partial Q_t=\frac{\partial}{\partial(ict)}=-\frac{i}{c}\,\partial/\partial t,
 $$
 and its quaternion conjugate negates the vector part. Multiplying them, the cross terms cancel and
 $$
 \Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}
 =\partial^2/\partial Q_t^2+\Delta
-=\Delta-\frac{1}{c^2}\,\partial^2/\partial Q_t^2,
+=\Delta-\frac{1}{c^2}\,\partial^2/\partial t^2,
 $$
 the d'Alembertian of a medium with speed $c$. This is the same operator identity as in the vacuum, with $c$ in place of $c_0$.
 
@@ -164,7 +164,7 @@ $$
 \tilde{\nabla}\tilde{F}
 =-\mathrm{div}\,\vec F+\partial/\partial Q_t\,\vec F+\mathrm{rot}\,\vec F,
 $$
-the scalar part being $-\mathrm{div}\,\vec F$ and the vector part $\partial/\partial Q_t\,\vec F+\mathrm{rot}\,\vec F$. Substituting $\vec F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and $\partial/\partial Q_t=-(i/c)\partial/\partial Q_t$, and separating the real and imaginary parts, the scalar equation gives
+the scalar part being $-\mathrm{div}\,\vec F$ and the vector part $\partial/\partial Q_t\,\vec F+\mathrm{rot}\,\vec F$. Substituting $\vec F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and $\partial/\partial Q_t=-(i/c)\partial/\partial t$, and separating the real and imaginary parts, the scalar equation gives
 $$
 \mathrm{div}\,\vec E=\frac{\rho}{\epsilon},
 \qquad
@@ -219,7 +219,7 @@ All of this is standard, and it is what fixes the meaning of a "plane wave in a 
 
 The biquaternionic interpretation is that each Fourier component carries its own local complex structure. The algebra $\mathbb{B}$ is the same at every frequency; what changes is the scale that maps physical time to the imaginary coordinate. For a monochromatic wave the scalar component of the gradient acts as
 $$
-\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial Q_t\;\longrightarrow\;-\frac{\omega}{c(\omega)},
+\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t\;\longrightarrow\;-\frac{\omega}{c(\omega)},
 $$
 so the imaginary time axis is scaled differently at each frequency. The local complex structure is thus **spectral** as well as spatial: it is indexed by the frequency at which the medium is probed.
 
@@ -863,7 +863,7 @@ The third case is realized by the non-commutative vacuum of *Maxwell's Theory on
 
 Electromagnetism in a material medium is developed here as the general case, with the vacuum as its limit. The constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ supply the two parameters of a homogeneous medium, which may be taken as the speed $c=1/\sqrt{\epsilon\mu}$ and the impedance $Z=\sqrt{\mu/\epsilon}$, or equivalently as $\epsilon=1/(cZ)$ and $\mu=Z/c$.
 
-The medium enters the biquaternionic structure in two places and nowhere else. First, through $c$ in the gradient, $\partial/\partial Q_t=-(i/c)\partial/\partial Q_t$, so that the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local scale $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical spacetime is not. Second, through the normalisations $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength and the corresponding $1/\sqrt{\epsilon},\sqrt{\mu}$ of the source biquaternion
+The medium enters the biquaternionic structure in two places and nowhere else. First, through $c$ in the gradient, $\partial/\partial Q_t=-(i/c)\partial/\partial t$, so that the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local scale $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical spacetime is not. Second, through the normalisations $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength and the corresponding $1/\sqrt{\epsilon},\sqrt{\mu}$ of the source biquaternion
 $$
 \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,
 $$
@@ -913,12 +913,12 @@ The equation that the reduction produces has a solution theory of its own, and i
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $e_k^2=-e_t$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{C}_{\mathbb{B}},\mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\Delta-c^{-2}\partial^2/\partial Q_t^2$ | d'Alembertian in the medium |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\Delta-c^{-2}\partial^2/\partial t^2$ | d'Alembertian in the medium |
 | $\epsilon,\mu$ | Permittivity and permeability of the medium |
 | $\epsilon_0,\mu_0$ | Vacuum permittivity and permeability |
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Constitutive relations |

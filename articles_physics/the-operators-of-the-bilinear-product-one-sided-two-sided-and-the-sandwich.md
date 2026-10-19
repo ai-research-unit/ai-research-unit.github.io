@@ -218,7 +218,7 @@ of the antisymmetric band, and its operators are read in the antisymmetric block
 **Theorem (the one-sided automorphisms of the form).** The left multiplication $L_{\tilde Q_7}$ preserves the plain form,
 
 $$
-B\bigl(L_{\tilde Q_7}\tilde Q_3,L_{\tilde Q_7}\tilde Q_4\bigr)=\langle\tilde Q_3,\tilde Q_4\rangle\qquad\text{for all }\tilde Q_3,\tilde Q_4,
+\langle L_{\tilde Q_7}\tilde Q_3,L_{\tilde Q_7}\tilde Q_4\rangle=\langle\tilde Q_3,\tilde Q_4\rangle\qquad\text{for all }\tilde Q_3,\tilde Q_4,
 $$
 
 if and only if $\tilde Q_7=\pm e_t$, that is $L_{\tilde Q_7}=\pm\mathrm{id}$; the same criterion holds on the right.
@@ -226,8 +226,8 @@ if and only if $\tilde Q_7=\pm e_t$, that is $L_{\tilde Q_7}=\pm\mathrm{id}$; th
 *Proof.* Using the swap and the symmetry of the form,
 
 $$
-B\bigl(L_{\tilde Q_7}\tilde Q_3,L_{\tilde Q_7}\tilde Q_4\bigr)=\mathrm{Sc}\bigl(\tilde Q_7\tilde Q_3\tilde Q_7\tilde Q_4\bigr)
-=B\bigl(\tilde Q_3,\tilde Q_7\tilde Q_4\tilde Q_7\bigr),
+\langle L_{\tilde Q_7}\tilde Q_3,L_{\tilde Q_7}\tilde Q_4\rangle=\mathrm{Sc}\bigl(\tilde Q_7\tilde Q_3\tilde Q_7\tilde Q_4\bigr)
+=\langle\tilde Q_3,\tilde Q_7\tilde Q_4\tilde Q_7\rangle,
 $$
 
 so preservation is $\tilde Q_7\tilde Q_4\tilde Q_7=\tilde Q_4$ for all $\tilde Q_4$. At

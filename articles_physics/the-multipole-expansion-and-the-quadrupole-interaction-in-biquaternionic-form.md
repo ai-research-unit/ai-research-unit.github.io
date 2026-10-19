@@ -99,7 +99,7 @@ $$
 \Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j .
 $$
 
-The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $\mathcal{Q}_{ij}$ would contribute $\vec u_i\vec u_i = 1$ and hence a monopole-like $1/r$ tail, which is already accounted for by $ϙ$; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r'^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.
+The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $\mathcal{Q}_{ij}$ would contribute $\vec u_i\vec u_i = 1$ and hence a spherically symmetric $1/r^3$ term, which is not a pure $l=2$ object; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r'^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.
 
 ### The Tower and Its Ordering
 

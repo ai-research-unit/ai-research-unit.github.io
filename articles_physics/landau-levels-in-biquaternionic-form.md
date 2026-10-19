@@ -4,7 +4,7 @@
 
 A charged particle in a uniform magnetic field has a discrete energy spectrum — the Landau levels — even though it is free in the field direction. The problem is the simplest exactly solvable system in which the Hamiltonian depends on a gauge potential, and it is the non-relativistic cornerstone of the quantum Hall effect. This article solves it in the biquaternion framework and reads the result algebraically.
 
-The biquaternion content is a single, decisive fact: the **magnetic field enters the Hamiltonian as a central commutator**. The mechanical momentum $\tilde\pi=p-\frac{ϙ}{c}\vec A$ is Hermitian in $\mathbb{M}_+$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,
+The biquaternion content is a single, decisive fact: the **magnetic field enters the Hamiltonian as a central commutator**. The mechanical momentum $\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$ is Hermitian in $\mathbb{M}_+$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,
 
 $$
 [\tilde\pi_x,\tilde\pi_y]=\frac{i\hbar ϙ}{c}B_z\,e_t ,
@@ -157,7 +157,7 @@ $$
 is conserved, and it is central. The transverse problem has two independent oscillator structures: the **cyclotron** ladder, built from $\tilde\pi_x$ and $\tilde\pi_y$, which raises the energy by $\hbar\omega_c$, and the **guiding-centre** ladder, built from the centre-of-orbit coordinates
 
 $$
-R_k=x_k+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{klm}\,\pi^{\mathrm{fop}}_l\,\vec u_{B,m} ,
+R_k=x_k+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{klm}\,\tilde\pi_l\,\vec u_{B,m} ,
 \qquad
 \omega_c^{\mathrm{s}}=\frac{ϙB}{mc} ,
 $$
@@ -199,7 +199,7 @@ For orientation, a laboratory field of $1$ T gives, in SI units where $\omega_c=
 
 ### Counting the states
 
-The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing
+The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing
 
 $$
 N_\phi=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0},
@@ -257,7 +257,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 
 ## Summary
 
-The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2m}\sum_k\tilde\pi_k^2\,e_t$ with $\tilde\pi_k=p_k-\frac{ϙ}{c}A_k$, and the field strength is the central commutator
+The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2m}\sum_k\tilde\pi_k^2$ with $\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$, and the field strength is the central commutator
 
 $$
 [\tilde\pi_k,\tilde\pi_l]=\frac{i\hbar ϙ}{c}\varepsilon_{klm}B_m\,e_t ,
@@ -265,7 +265,7 @@ $$
 [\tilde\pi_x,\tilde\pi_y]=\frac{i\hbar ϙB}{c}\,e_t ,
 $$
 
-verified numerically to a relative error below $5\times10^{-11}$. In the Landau gauge $\vec A=(0,Bx,0)$ the problem reduces to a harmonic oscillator of frequency $\omega_c=|ϙ|B/mc$ displaced by $x_0=\ell_B^2k$, with magnetic length $\ell_B=\sqrt{\hbar c/|ϙ|B}$, giving the Landau spectrum
+verified numerically to a relative error below $5\times10^{-11}$. In the Landau gauge $\vec A=(0,Bx,0)$ the problem reduces to a harmonic oscillator of frequency $\omega_c=|ϙ|B/mc$ displaced by $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$, with magnetic length $\ell_B=\sqrt{\hbar c/|ϙ|B}$, giving the Landau spectrum
 
 $$
 E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m}
@@ -286,7 +286,7 @@ Each level is degenerate with multiplicity $N_\phi=AB/\Phi_0$, the number of flu
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of $\vec B$ and $\vec A$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
-| $\tilde\pi_k=p_k-\frac{ϙ}{c}A_k$ | Mechanical momentum; central Hermitian |
+| $\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$ | Mechanical momentum; central Hermitian |
 | $[\tilde\pi_k,\tilde\pi_l]=\frac{i\hbar ϙ}{c}\varepsilon_{klm}B_me_t$ | Central field-strength commutator |
 | $\omega_c=\lvert ϙ\rvert B/mc$ | Cyclotron frequency |
 | $\ell_B=\sqrt{\hbar c/\lvert ϙ\rvert B}$ | Magnetic length |

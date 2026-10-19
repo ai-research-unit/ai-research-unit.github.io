@@ -16,7 +16,7 @@ The article is organised around four questions, and it keeps the affirmative ans
 - **Do the framework's invariants supply the density?** Section *Do the Framework's Invariants Supply the Density?* checks this against $I_1$ and $I_2$, the two invariants of the field-strength article. The answer is yes in the abelian case — the imaginary part of the biquaternion norm *is* the Pontryagin density — and no in the non-abelian case, where the density needs a matrix trace that the framework's rank-two biquaternion norm does not supply. The second is stated as a gap.
 - **The concrete solution and the soliton gap.** Section *The BPST Instanton and Its Equation of Motion* exhibits the standard $SU(2)$ instanton inside the framework's $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ and checks by substitution that it solves the equation of motion. Section *Solitons: What Stability Requires* shows that the framework's only topological charge has no finite-energy configuration to occupy it, so the framework has no soliton of its own; the reasons are stated rather than smoothed over.
 
-**Conventions.** We use those of the companion articles throughout, unchanged. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The abelian field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and its invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$. The non-abelian connection and curvature of the parent are $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, with $\kappa=ϙ/\hbar$ and the biquaternion representative $\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; where a matrix trace on the gauge factor is meant it is written $\mathrm{Tr}$ and distinguished from it, as the non-abelian article does. Because the two parents use $F_{\mu\nu}$ for the abelian field components and for the non-abelian components, the same symbol is used here with the context made explicit in each section; the biquaternion objects are $\tilde{F}$ in the abelian case and $\mathcal{F}$ in the non-abelian case. Throughout, $\partial/\partial Q_t=\partial/\partial Q_t$ and $\partial/\partial Q_k=\partial/\partial x_k$.
+**Conventions.** We use those of the companion articles throughout, unchanged. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$, and $i$ is the scalar imaginary, $i^2=-1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb R}\{e_t,ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The abelian field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and its invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$. The non-abelian connection and curvature of the parent are $\mathcal{A}_\mu=\mathcal{A}_\mu^a \vec e_a\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, with $\kappa=ϙ/\hbar$ and the biquaternion representative $\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; where a matrix trace on the gauge factor is meant it is written $\mathrm{Tr}$ and distinguished from it, as the non-abelian article does. Because the two parents use $F_{\mu\nu}$ for the abelian field components and for the non-abelian components, the same symbol is used here with the context made explicit in each section; the biquaternion objects are $\tilde{F}$ in the abelian case and $\mathcal{F}$ in the non-abelian case. Throughout, $\partial/\partial Q_t=\partial/\partial(ict)=-i\partial/\partial t$ and $\partial/\partial Q_k=\partial/\partial x_k$.
 
 ## Two Signatures, Two Kinds of Localised Solution
 
@@ -29,12 +29,12 @@ $$
 = + \partial^2/\partial Q_t^2+\nabla^2,
 $$
 
-where $\partial/\partial Q_t=\partial/\partial(ict)$, so that $\partial^2/\partial Q_t^2= + \partial^2/\partial Q_t^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{M}_-$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
+where $\partial/\partial Q_t=\partial/\partial(ict)$, so that $\partial^2/\partial Q_t^2=-\partial^2/\partial t^2$. The operator $\Box$ is hyperbolic, its characteristic cone is the zero-divisor cone of $\mathbb{M}_-$, and the Lorentzian field equations of the framework live here. This is the setting for **solitons**.
 
-The **Wick rotation** is the substitution $t\mapsto-i\tau$, under which the material coordinate $\tilde{Q}_-=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ becomes the real-quaternion element
+The **Wick rotation** is the substitution $t\mapsto-i\tau$, under which the material coordinate $\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ becomes the real-quaternion element
 
 $$
-\tilde{Q}_{\mathbb H}=c\tau\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{H}_{\mathbb{B}},
+\tilde R_{\mathbb H}=c\tau\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{H}_{\mathbb{B}},
 $$
 
 and the gradient becomes the **Euclidean gradient**
@@ -95,7 +95,7 @@ $$
 = \frac{1}{2}\,\mathrm{Tr}\!\left(F_{\mu\nu}\star F^{\mu\nu}\right),
 $$
 
-using the definition of the star. The trace here is the **matrix trace** on the $\mathrm{SU}(2)$ factor, the one the parent article uses for the gauge-invariant density $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$; it is *not* the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs a Hermitian state with a Hermitian observable, not two gauge-algebra elements. The integer character of $Ϙ$ is the statement that $\pi_z(SU(2))=\mathbb Z$: a finite-action gauge field on $\mathbb R^4$ is classified at infinity by a map from the three-sphere to the gauge group, and the density's integral is the degree of that map. The same invariant is the one the Skyrme model uses: the baryon number of *The Skyrme Model and the Topological Baryon in Biquaternionic Form* is the degree of a map into the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$, so the instanton winding and the baryon winding are the same $\pi_z$ of the same group, read on two different fields. The density is a total derivative, as the next section shows, so $Ϙ$ is unchanged by any continuous deformation of the connection that keeps the boundary data fixed; this is the content of the next section.
+using the definition of the star. The trace here is the **matrix trace** on the $\mathrm{SU}(2)$ factor, the one the parent article uses for the gauge-invariant density $-\tfrac12\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$; it is *not* the informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs a Hermitian state with a Hermitian observable, not two gauge-algebra elements. The integer character of $Ϙ$ is the statement that $\pi_3(SU(2))=\mathbb Z$: a finite-action gauge field on $\mathbb R^4$ is classified at infinity by a map from the three-sphere to the gauge group, and the density's integral is the degree of that map. The same invariant is the one the Skyrme model uses: the baryon number of *The Skyrme Model and the Topological Baryon in Biquaternionic Form* is the degree of a map into the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$, so the instanton winding and the baryon winding are the same $\pi_3$ of the same group, read on two different fields. The density is a total derivative, as the next section shows, so $Ϙ$ is unchanged by any continuous deformation of the connection that keeps the boundary data fixed; this is the content of the next section.
 
 In the abelian case the same object collapses to the framework's second invariant. With the field-strength biquaternion $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ and its components, the density is
 
@@ -248,7 +248,7 @@ A final remark on the primitive. The abelian primitive $J_{\mathrm{CS}}^\mu=\eps
 
 The existence half of the self-duality story is an explicit solution. The standard one is the Belavin–Polyakov–Schwartz–Tyupkin instanton, and it sits inside the non-abelian factor of the framework.
 
-Work on the Euclidean slice with the $\mathrm{SU}(2)$ basis $T_a=\tfrac12 e_a$, $a=1,2,3$, so that
+Work on the Euclidean slice with the $\mathrm{SU}(2)$ basis $T_a=\tfrac12 \vec e_a$, $a=1,2,3$, so that
 
 $$
 [T_a,T_b]=\epsilon_{abc}T_c,
@@ -256,7 +256,7 @@ $$
 \mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab},
 $$
 
-the second following from $e_a=-i\sigma_a$ and $\mathrm{Tr}(\sigma_a\sigma_b)=2\delta_{ab}$. Write the connection and curvature as
+the second following from $\vec e_a=-i\sigma_a$ and $\mathrm{Tr}(\sigma_a\sigma_b)=2\delta_{ab}$. Write the connection and curvature as
 
 $$
 \mathcal{A}_\mu=\mathcal{A}_\mu^a T_a,
@@ -312,7 +312,7 @@ $$
 Ϙ_m\;\propto\;\oint_{S^2}\vec B\cdot d\vec A,
 $$
 
-is an integer because it is the degree of a map $S^2\to S^2$ (or $S^2\to \mathrm{U}(1)$), so $\pi_y(S^2)=\mathbb Z$; a configuration with $Ϙ_m=1$ cannot be deformed into one with $Ϙ_m=0$, and in that sense it is topologically obstructed from decaying. A kink in one spatial dimension has the same structure, with $Ϙ=\phi(+\infty)-\phi(-\infty)$ fixed by the boundary values. A topological sector alone, however, only forbids decay to the vacuum; it does not by itself give *finite energy*, and a charge-carrying configuration can still have infinite energy because of a singular core. This is exactly the situation of the framework's singular point configuration, and it is the reason the second argument matters.
+is an integer because it is the degree of a map $S^2\to S^2$ (or $S^2\to \mathrm{U}(1)$), so $\pi_2(S^2)=\mathbb Z$; a configuration with $Ϙ_m=1$ cannot be deformed into one with $Ϙ_m=0$, and in that sense it is topologically obstructed from decaying. A kink in one spatial dimension has the same structure, with $Ϙ=\phi(+\infty)-\phi(-\infty)$ fixed by the boundary values. A topological sector alone, however, only forbids decay to the vacuum; it does not by itself give *finite energy*, and a charge-carrying configuration can still have infinite energy because of a singular core. This is exactly the situation of the framework's singular point configuration, and it is the reason the second argument matters.
 
 **Bogomolny bound.** A bound $E\ge|Ϙ|$ with equality for a first-order equation both proves stability — the configuration is at the bottom of its sector — and identifies the first-order equation that the minimiser satisfies. The mechanism is the same completing of the square used for the instanton, transposed to the energy. The cleanest illustration is the one-dimensional kink of the $\phi^4$ model,
 
@@ -376,9 +376,9 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $F_{\mu\nu}$ | Field-strength components (abelian in the Maxwell sections, non-abelian in the gauge sections) |
 | $I_1=\vec E^2-c^2\vec B^2,\ I_2=\vec E\cdot\vec B$ | The two field-strength invariants |
 | $\langle\tilde{F}\rangle_{\natural}=\tilde{F}\tilde{F}^{\natural}=-\epsilon(I_1+2icI_2)$ | The biquaternion norm |
-| $\mathcal{A}_\mu=\mathcal{A}_\mu^a e_a$ | Non-abelian connection, $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mathcal{A}_\mu=\mathcal{A}_\mu^a \vec e_a$ | Non-abelian connection, $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathcal{F}=\tfrac12\sum F_{\mu\nu}\bar{e}_\mu e_\nu$ | Biquaternion representative of the non-abelian curvature |
-| $T_a=\tfrac12 e_a$ | $\mathrm{SU}(2)$ generators, $[T_a,T_b]=\epsilon_{abc}T_c$ |
+| $T_a=\tfrac12 \vec e_a$ | $\mathrm{SU}(2)$ generators, $[T_a,T_b]=\epsilon_{abc}T_c$ |
 | $D_\mu$ | Gauge-covariant derivative |
 | $\mathrm{Tr}$ | Matrix trace on the gauge factor |
 | $\mathrm{Sc},\ \mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part and the inherited trace formula |
@@ -396,7 +396,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 - *Non-Abelian Gauge Fields in Biquaternionic Form* — the connection, curvature, gauge transformation and invariant density used throughout the non-abelian sections.
 - *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the covariant derivative $D_\mu$ and the gauge connection.
 - *The Field-Strength Biquaternion and Its Invariants* — the abelian field strength, the invariants $I_1,I_2$ and the biquaternion norm $\langle\tilde{F}\rangle_{\natural}$.
-- *The Skyrme Model and the Topological Baryon in Biquaternionic Form* — the same $\pi_z$ read as the baryon winding on the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$.
+- *The Skyrme Model and the Topological Baryon in Biquaternionic Form* — the same $\pi_3$ read as the baryon winding on the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong S^3$.
 - *Interpretation of the Wick Rotation in the Biquaternion Universe* — the identification $\mathbb{M}_-\leftrightarrow\mathbb{H}_{\mathbb{B}}$ and the Euclidean slice.
 - *The Euclidean Topology of the Biquaternion Algebra*, *The Biquaternion Unit Group as a Topological Group* and *The Null Quadric and Its Projective Geometry* — the contractibility of $\mathbb{B}$, the unit group and the null cone.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the field equation and the Riemann–Silberstein structure of the abelian sector.

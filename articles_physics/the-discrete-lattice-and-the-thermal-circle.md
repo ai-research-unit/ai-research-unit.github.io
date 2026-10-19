@@ -29,7 +29,7 @@ $\omega_n=2\pi n/\beta$.
 
 The principle is a single sentence and it covers both disciplines.
 
-> **Every discreteness in the corpus is the Pontryagin dual of a compactness.**
+> **Every discreteness in the corpus comes from a compactness.**
 
 A discrete abelian group is the character group of a compact abelian group, and conversely. The corpus's
 discrete data all sit on compact groups, and the discrete datum is the labelling of a representation of that
@@ -62,7 +62,7 @@ central rotation. The thermal theory is usually reached by the Wick rotation $t\
 that same direction as real; the direction itself is the material sector's, and the temperature
 compactifies it rather than rotating it. So the circle whose dual is the Matsubara lattice is the
 central phase compactified, and the discrete thermal spectrum and the discrete charge label are two
-characters of one compact phase. That is the unification the article's title names: **the lattice and the
+dual readings of one compact phase. That is the unification the article's title names: **the lattice and the
 circle are dual interpretations of the compact central phase, one in the temperature and one in the charge.**
 
 **Two objects.** The comparison also shows where the disciplines differ, and the difference is exact. The

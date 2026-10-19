@@ -35,7 +35,7 @@ $$
 \tilde{Q} = \underbrace{(ict)\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z}_{\in\,\mathbb{M}_-} \;+\; \underbrace{(ct')\,e_t + i(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z)}_{\in\,\mathbb{M}_+},
 $$
 
-with the eight real parameters $q'_t = c\,t$, $(q_x, q_y, q_z)$ the space components of the material part, $q_t = c\,t'$, $(q'_x, q'_y, q'_z)$ the space components of the informational part, and with $c$ the speed of light in the medium.
+with the eight real parameters $q_t = c\,t$, $(q_x, q_y, q_z)$ the space components of the material part, $q'_t = c\,t'$, $(q'_x, q'_y, q'_z)$ the space components of the informational part, and with $c$ the speed of light in the medium.
 
 ## The Operator in Components
 

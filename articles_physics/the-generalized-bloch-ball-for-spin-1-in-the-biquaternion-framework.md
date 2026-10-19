@@ -227,7 +227,7 @@ $$
 \rho_{\mathrm{coh}}(\vec u)=\tfrac{1}{2}\left(M^2+M\right),
 $$
 
-which is verified to be the projector onto the rotated highest-weight state for every direction; the three eigenvalues of $M$ are $+1,0,-1$ along the $\vec u$ axis, and the numbers $\tfrac12(m^2+m)$, namely $1,0,0$, are the spectral projectors that select $m=+1$.
+which is verified to be the projector onto the rotated highest-weight state for every direction; the three eigenvalues of $M$ along the $\vec u$ axis are $+1,0,-1$, and the eigenvalues of $\rho_{\mathrm{coh}}$ are $\tfrac12(m^2+m)$, namely $1,0,0$, so that the projector selects $m=+1$.
 
 The coherent states have three equivalent descriptions, and the equivalence is the content of this subsection:
 
@@ -289,7 +289,7 @@ The article established the following.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_+$ | Hermitian subspace; positive cone $=$ future cone of $N$ |
+| $\mathbb{M}_+$ | Hermitian subspace; positive cone $=$ future cone of the biquaternion norm |
 | $\langle\tilde H\rangle_{\natural}=h_t^2-\lvert\vec h\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |

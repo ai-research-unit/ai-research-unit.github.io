@@ -93,7 +93,7 @@ The null cone of the biquaternion norm is the zero-divisor cone, and on the mate
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm; $N=0$ is the null cone |
+| $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm; $\langle\tilde{Q}\rangle_{\natural}=0$ is the null cone |
 | $\mathbb{M}_-$ | the material sector, $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
 | $\mathcal{C} \cong S^2$ | the celestial sphere, the null directions up to scale |
 | $\mathbb{P}^1\times\mathbb{P}^1$ | the Segre quadric, the projective complex null cone, the two chiral spheres |

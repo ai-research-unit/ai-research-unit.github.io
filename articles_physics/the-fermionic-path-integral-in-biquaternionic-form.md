@@ -14,7 +14,7 @@ This article applies those findings to the spin-$\tfrac12$ field, where the hist
 
 The boundary with the neighbouring subjects is sharp and is stated where it occurs: the systematic evaluation of the functional determinant, the transformation of the measure under field redefinitions, and the anomalies that follow from it are not treated here.
 
-**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_k^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); biquaternion norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the $i\epsilon$ sits along the $ict$ axis of $\mathbb{M}_-$. **Grassmann conventions.** To each mode belong odd generators $\theta,\theta^*$ with $\theta^2=\theta^{*2}=0$, $\theta\theta^*=-\theta^*\theta$, and Berezin integration is normalized by $\int d\theta^*d\theta\,\theta\theta^*=1$; consequences are $\int d\theta^*d\theta\,\exp(-\theta^*\theta)=1$ and $\int d\theta^*d\theta\,\exp(-\theta^*M\theta)=M$.
+**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_k^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); biquaternion norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the $i\epsilon$ sits along the $ict$ axis of $\mathbb{M}_-$. **Grassmann conventions.** To each mode belong odd generators $\theta,\theta^*$ with $\theta^2=\theta^{*2}=0$, $\theta\theta^*=-\theta^*\theta$, and Berezin integration is normalized by $\int d\theta^*d\theta\,\theta\theta^*=1$; consequences are $\int d\theta^*d\theta\,\exp(-\theta^*\theta)=1$ and $\int d\theta^*d\theta\,\exp(-\theta^*M\theta)=M$.
 
 ## The Action in Biquaternion Form
 
@@ -70,7 +70,7 @@ Three consequences of oddness are worth isolating, because they are the whole di
 
 **The Wick expansion terminates.** A Grassmann algebra element of degree $n$ has a top form, and products beyond the top degree vanish. For a finite number of modes the exponential truncates at the top degree, so every Gaussian below is an exact polynomial identity, not an asymptotic expansion. This is why the finite-mode checks are exact rather than approximate.
 
-**Superselection is algebraic.** The Grassmann algebra splits into even and odd parts, and Berezin integration of an odd element vanishes: $\int d\theta\,1=0$. An integral of a monomial therefore vanishes unless the monomial has exactly the top degree, and the parity of that degree is fixed by the number of generators. This is the path-integral form of fermion-parity superselection: an amplitude between states of different parity receives a vanishing integral, and the two parity sectors of the boundary data never mix.
+**Superselection is algebraic.** The Grassmann algebra splits into even and odd parts, and Berezin integration of a non-top element vanishes: $\int d\theta\,1=0$. An integral of a monomial therefore vanishes unless the monomial has exactly the top degree, and the parity of that degree is fixed by the number of generators. This is the path-integral form of fermion-parity superselection: an amplitude between states of different parity receives a vanishing integral, and the two parity sectors of the boundary data never mix.
 
 ## The Gaussian Integral and the Determinant
 
@@ -133,7 +133,7 @@ where $S_F$ is the propagator amplitude of the companion article in configuratio
 
 ### The Biquaternion Form of the Kernel
 
-Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^y$, the momentum-space kernel is
+Writing the wave biquaternion $\tilde P=iE\,e_t+\vec p$, so that $\tilde P\tilde P^{\natural}=-p^2$, the momentum-space kernel is
 
 $$
 S_F(p)=-\frac{i(\not p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
@@ -204,7 +204,7 @@ whose logarithm is the free energy of the fermion gas. The identity is the stand
 
 ## Parity Sectors, the Phase and the Sign Problem
 
-The measure carries the parity, and the two fermion-parity sectors appear as a **relative sign**, not as two integrands. An integral of an odd element vanishes, so the integrand of a Gaussian — the even element $\exp(-\bar\psi M\psi)$ — has no odd part to remove; what distinguishes the sectors is the *boundary condition* in imaginary time. The two basic traces are
+The measure carries the parity, and the two fermion-parity sectors appear as a **relative sign**, not as two integrands. In the paired measure, an integral of an odd element vanishes, so the integrand of a Gaussian — the even element $\exp(-\bar\psi M\psi)$ — has no odd part to remove; what distinguishes the sectors is the *boundary condition* in imaginary time. The two basic traces are
 
 $$
 \mathrm{Tr}\,\exp(-\beta H^{\mathrm{fop}})

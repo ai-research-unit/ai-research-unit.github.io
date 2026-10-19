@@ -39,7 +39,7 @@ the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\le
 
 The article proceeds as follows. A section defines the determinant of a module operator and the fundamental determinant of an algebra element. A section proves the regular-representation identity and verifies it. A section connects the determinant to the Gaussian integral and the one-loop action. A section treats regularization, and a section the fermionic determinant and its phase. A section treats the conformal variation, and a section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; the isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$; the real bilinear form is $\langle\tilde{Q},\tilde Q_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Q_1)$, positive on $\mathbb{M}_+$ and negative on $\mathbb{M}_-$; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $K_{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the wave biquaternion is $\tilde P=iEe_t+\vec p$ with $\tilde P\tilde P^{\natural}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, as *Conventions in the Biquaternion Universe* fixes.
+**Conventions.** We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; the isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$; the real bilinear form is $\langle\tilde{Q},\tilde Q_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Q_1)$, the positive-definite Hilbert–Schmidt form on the algebra; the sector signature belongs to the biquaternion norm; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $K_{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the wave biquaternion is $\tilde P=iEe_t+\vec p$ with $\tilde P\tilde P^{\natural}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, as *Conventions in the Biquaternion Universe* fixes.
 
 ## The Determinant of a Module Operator
 
@@ -84,6 +84,7 @@ $$
 
 **Proof.** Under the isomorphism $\mathsf{M}_2$, left multiplication becomes left multiplication by the matrix $P=\mathsf{M}_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $P\otimes I_2$ in the basis $E_{ij}$ of matrix units; its determinant is $(\det P)^2$. Right multiplication becomes right multiplication by $P$, which is $I_2\otimes P^T$ in the same basis, with the same determinant $(\det P)^2$. By the previous proposition $\det P=\langle\tilde Q\rangle_{\natural}$, so both determinants equal $\langle\tilde Q\rangle_{\natural}^2$.
 
+For $\tilde Q=(0.7+0.2i)\,e_t+(0.3-0.5i)\,\vec e_x+(-0.2+0.4i)\,\vec e_y+(0.1+0.6i)\,\vec e_z$,
 $$
 \det\mathsf{M}_2(\tilde Q) = -0.180000-0.060000\,i = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big),
 $$
@@ -102,7 +103,7 @@ The determinant's function in the formalism is to normalize the Gaussian integra
 **The Gaussian.** For a quadratic action $S[\tilde\Phi]=\tfrac12\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle$ the functional-integral article gives
 $$
 \int\mathcal{D}\tilde\Phi\;\exp(-\frac12\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle)
-= \big(\detK_{\mathrm{kin}}\big)^{-1/2},
+= \big(\det K_{\mathrm{kin}}\big)^{-1/2},
 $$
 the determinant taken on the module. The factor $-\tfrac12$ is the inverse square root appropriate to a real field (one self-conjugate under the pairing); the determinant is taken over the module's components per mode, so the module's dimension enters as the size of the determinant. The power to which the determinant is raised is a convention of real-versus-complex counting and is fixed with the reality of the field; the algebra fixes the module on which the determinant is taken, not the power.
 
@@ -164,7 +165,7 @@ $$
 \qquad
 K(t) = \mathrm{Tr}\,\exp(-tS^{(2)}),
 $$
-and the small-$t$ expansion $K(t)\sim(4\pi t)^{-d/2}\sum_n a_n t^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that the trace anomaly of article 11 uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
+and the small-$t$ expansion $K(t)\sim(4\pi t)^{-d/2}\sum_n a_n t^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that *The Trace Anomaly in Biquaternionic Form* uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
 
 **A remark on scheme dependence.** Different regularizations (zeta function, proper time with a cutoff, dimensional regularization) differ by local counterterms, and the *ratios* of determinants of operators of the same type are scheme-independent. In the framework, a scheme-independent statement is one that compares two determinants taken on the same module; this is the same caveat that attends any statement about the biquaternion norm's normalization.
 
@@ -196,7 +197,7 @@ $$
 $$
 a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta$ dependence: the $\theta$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
 
-**Index and anomaly.** The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*; the phase's topology is the $\theta$ vacuum of article 12. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.
+**Index and anomaly.** The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*; the phase's topology is the $\theta$ vacuum of *The Theta Vacuum in Biquaternionic Form*. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.
 
 ## The Conformal Variation of the Determinant
 
@@ -208,7 +209,7 @@ $$
 \qquad
 \big\langle T^\mu_{\ \mu}\big\rangle = -\frac{1}{\sqrt{g}}\,g_{\mu\nu}\frac{\delta\,\Gamma_1}{\delta g_{\mu\nu}} ,
 $$
-the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the **trace anomaly**, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$, and in the biquaternion framework that coefficient carries the module's dimension and the sector structure. The computation and the interpretation of the anomaly are article 11; this article records the determinant-side origin.
+the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the **trace anomaly**, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$, and in the biquaternion framework that coefficient carries the module's dimension and the sector structure. The computation and the interpretation of the anomaly are in *The Trace Anomaly in Biquaternionic Form*; this article records the determinant-side origin.
 
 ## What Is Established and What Is Interpretation
 
@@ -239,7 +240,7 @@ $$
 $$
 Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$, $\det\mathsf{M}_2(\tilde Q)=-0.180000-0.060000i$ and $\det L_{\tilde Q}=\det R_{\tilde Q}=0.0288000+0.0216000i=(\det\mathsf{M}_2(\tilde Q))^2$, with $\mathsf{M}_2(\tilde Q)$'s eigenvalues multiplying correctly.
 
-For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (article 11) and the phase's topology is the $\theta$ vacuum (article 12). None of the regularization is the algebra's; the operator on which it acts is.
+For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (*The Trace Anomaly in Biquaternionic Form*) and the phase's topology is the $\theta$ vacuum (*The Theta Vacuum in Biquaternionic Form*). None of the regularization is the algebra's; the operator on which it acts is.
 
 ## Summary of Notation
 
@@ -255,7 +256,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\delta\tilde\Phi$ | Fluctuation about the classical field, $\tilde\Phi_{\mathrm{cl}}+\delta\tilde\Phi$ |
 | $\det S^{(2)}$, $\mathrm{Tr}\log S^{(2)}$ | Functional determinant; one-loop action |
 | $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
-| $(\detK_{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
+| $(\det K_{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $K(t)=\mathrm{Tr}\,\exp(-tS^{(2)})$, $K\sim(4\pi t)^{-d/2}\sum a_n t^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |

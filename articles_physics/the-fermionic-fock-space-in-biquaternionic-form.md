@@ -54,7 +54,7 @@ $$
 
 complex-valued, $\mathbb{C}$-antilinear in the first argument and positive definite. This is the Hilbert-space form of the Fock construction, and it is the one that makes the fermionic Fock space a Hilbert space. It is *not* the algebra's biquaternion norm.
 
-**The biquaternion norm.** On $\mathbb{B}$, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, general plain bilinear and scalar-valued; it is isotropic on the zero divisors, and on the real sectors it has signature $(3,1)$ on the material sector $\mathbb{M}_-$ and the mirror signature $(1,3)$ on the informational sector $\mathbb{M}_+$, as the conventions article fixes. Its restriction to the ideal $\mathbb{B}\tilde\Pi_+$ vanishes identically: the left ideal is totally isotropic for $\langle\cdot\rangle_{\natural}$, which was checked to machine precision on random elements of the ideal. The biquaternion norm therefore does *not* descend to a form on the one-particle space. What $S$ carries instead is the antisymmetric form $\varepsilon$ and the mixed pairing with the dual, and those are the invariant bilinears; the biquaternion norm's role is on $\mathbb{B}$ itself.
+**The biquaternion norm.** On $\mathbb{B}$, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, a general bilinear, scalar-valued form; it is isotropic on the zero divisors, and on the real sectors it has signature $(3,1)$ on the material sector $\mathbb{M}_-$ and the mirror signature $(1,3)$ on the informational sector $\mathbb{M}_+$, as the conventions article fixes. Its restriction to the ideal $\mathbb{B}\tilde\Pi_+$ vanishes identically: the left ideal is totally isotropic for $\langle\cdot\rangle_{\natural}$, which was checked to machine precision on random elements of the ideal. The biquaternion norm therefore does *not* descend to a form on the one-particle space. What $S$ carries instead is the antisymmetric form $\varepsilon$ and the mixed pairing with the dual, and those are the invariant bilinears; the biquaternion norm's role is on $\mathbb{B}$ itself.
 
 A one-particle state is therefore an element of the ideal, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element of $\mathbb{B}\tilde\Pi_+$. The two are related by the Hermitian form for probabilities and by the antisymmetric and mixed pairings for the Lorentz-invariant bilinears. The classical plane-wave spinor $w^{(r)}(\vec p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the creation operators of the field act on the one-particle space $S_{\vec p}\cong S$ for each momentum.
 
@@ -98,7 +98,7 @@ $$
 |\!\uparrow\downarrow\rangle=|\!\uparrow\rangle\wedge|\!\downarrow\rangle ,
 $$
 
-and this is the Fock space of the two spin states of one momentum — two modes in the parent's counting, whose single-mode space is two-dimensional. The vacuum is the unit of the exterior algebra; the one-particle states are $S$ itself; the two-particle state is the top power.
+and this is the Fock space of the two spin states of one momentum — two modes in the parent's counting, whose one-particle space is two-dimensional. The vacuum is the unit of the exterior algebra; the one-particle states are $S$ itself; the two-particle state is the top power.
 
 **The wedge and the Koszul sign.** The product is the wedge, and it is graded-commutative:
 
@@ -180,11 +180,11 @@ Three consequences are worth stating.
 
 **The $2\pi$ sign and the grading agree.** The covering element $-e_t$ acts on $\Lambda^nS$ as $(-1)^n$ times the identity, so the nontrivial element of the double cover is precisely the degree parity on the Fock space. Because the one-particle space is odd, the action of $-e_t$ on it is $-\mathrm{id}$; on the vacuum and on the pair it is $+\mathrm{id}$. A $2\pi$ rotation therefore acts as the fermionic parity $(-1)^{N^{\mathrm{fop}}}$ on the state space: the spinors carry the sign $-1$, while the even subspace and every bilinear are returned to themselves, so the sign is invisible in observables and only the $4\pi$ rotation returns a spinor to itself. This is the state-space content of the spin–statistics pairing of the companion article.
 
-**The field's Fock space is a tensor product.** For the field, the one-particle space is $\bigoplus_{\vec p,r}S_{\vec p,r}$, and the functor gives
+**The field's Fock space is a tensor product.** For the field, the one-particle space is $\bigoplus_{\vec p}S_{\vec p}$, and the functor gives
 
 $$
-\mathcal{F}_{\text{field}}=\Lambda\!\left(\bigoplus_{\vec p,r}S_{\vec p,r}\right)
-=\bigotimes_{\vec p,r}\Lambda S_{\vec p,r},
+\mathcal{F}_{\text{field}}=\Lambda\!\left(\bigoplus_{\vec p}S_{\vec p}\right)
+=\bigotimes_{\vec p}\Lambda S_{\vec p},
 $$
 
 with each tensor factor four-dimensional and the vacuum the empty wedge. Occupation numbers are $0$ and $1$ mode by mode; the grading is the parity of the total occupation; and the Lorentz content is the tensor tower generated by the two singlet powers and the doublet power at each momentum.
@@ -195,7 +195,7 @@ $$
 \mathrm{Cl}(2N)\;\cong\;M_{2^N}(\mathbb{C})\;\cong\;\mathcal{A}_N ,
 $$
 
-where $\mathcal{A}_N$ is the algebra generated by $\langle\cdot\rangle_{\natural}$ fermionic modes, and it was checked by explicit rank computation: the algebra generated by $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ has dimension $4=2^{2}$, and that generated by $a_1^{\mathrm{fop}},a_2^{\mathrm{fop}},a_1^{\mathrm{fop}\dagger},a_2^{\mathrm{fop}\dagger}$ has dimension $16=2^{4}$. The spin–statistics companion's Clifford realization of the Dirac algebra is the spinor-module side of this identity: the $\gamma^\mu$ are nothing but odd operators on the fermionic Fock space, and the even Clifford algebra is $\mathbb{B}$ itself. The identity is recorded here as the algebraic fact that the state space carries; its physical exploitation belongs to the articles that map fermions onto other descriptions.
+where $\mathcal{A}_N$ is the algebra generated by $N$ fermionic modes, and it was checked by explicit rank computation: the algebra generated by $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ has dimension $4=2^{2}$, and that generated by $a_1^{\mathrm{fop}},a_2^{\mathrm{fop}},a_1^{\mathrm{fop}\dagger},a_2^{\mathrm{fop}\dagger}$ has dimension $16=2^{4}$. The spin–statistics companion's Clifford realization of the Dirac algebra is the spinor-module side of this identity: the $\gamma^\mu$ are nothing but odd operators on the fermionic Fock space, and the even Clifford algebra is $\mathbb{B}$ itself. The identity is recorded here as the algebraic fact that the state space carries; its physical exploitation belongs to the articles that map fermions onto other descriptions.
 
 ## The Functor $\Gamma$, the Grading and the Parity
 
@@ -206,14 +206,14 @@ The exterior-power construction is a functor from the one-particle category to t
 **The parity of the negation.** The one-particle space carries the representation of the double cover; the scalar $-1$ acts on $S$ as $-\mathrm{id}$. On $\Lambda^nS$ it acts as $(-1)^n$, hence on the whole Fock space as the operator
 
 $$
-\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}(I-2\vec u)=\prod_{\text{modes}}i \vec e_z^{(\text{mode})} ,
+\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}(I-2N_{\mathrm{mode}})=\prod_{\text{modes}}i \vec e_z^{(\text{mode})} ,
 $$
 
 where the last equality uses the one-mode identity $(-1)^F=i\vec e_z$ of the parents. The operator identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed on the four-dimensional space $\Lambda S$: $\Gamma(-I)$ built as $\mathrm{diag}(1,-1,-1,1)$ from its action on degree $0,1,2$ equals the product of the single-mode parities exactly, with eigenvalue list $\{+1,+1,-1,-1\}$ in both constructions.
 
 **The parity and the field.** The field operator, being a sum of one-mode operators, is odd under $\Gamma(-I)$; a bilinear is even. The observable algebra of the field is therefore the even part of the Fock space's operator algebra, and the state space splits into an even and an odd sector that never mix under observables. This is the state-space statement of the field's $\mathbb{Z}/2$ grading.
 
-**The sign convention.** With $\vec u=a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}$ one has $(-1)^{\vec u}=i \vec e_z$ for one mode; with the $\mathbb{M}_+$ generator $\tilde S_3=\tfrac{\hbar}{2}i\vec e_z$ this reads $(-1)^F=2\tilde S_3/\hbar$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode; for the field, the product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
+**The sign convention.** With $N_{\mathrm{mode}}=a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}$ one has $(-1)^{N_{\mathrm{mode}}}=i \vec e_z$ for one mode; with the $\mathbb{M}_+$ generator $\tilde S_3=\tfrac{\hbar}{2}i\vec e_z$ this reads $(-1)^F=2\tilde S_3/\hbar$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode; for the field, the product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
 
 ## The Inner Product, States and the Trace Pairing
 
@@ -297,7 +297,7 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 | $S_i=\tfrac12a_s^{\mathrm{fop}\dagger}(\sigma_i)_{ss'}a_{s'}^{\mathrm{fop}}$ | Spin operators on $\Lambda S$ |
 | $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ | Degree parity; $2\pi$ rotation on the Fock space |
 | $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$ (one mode) | Parity as an element of $\mathbb{M}_+$ |
-| $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $\langle\cdot\rangle_{\natural}$ fermionic modes |
+| $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $N$ fermionic modes |
 | $\tilde\Pi^2=\tilde\Pi=\tilde\Pi^{*}$, $\mathrm{Tr}\tilde\Pi=1$ | Pure state as a Hermitian idempotent in $\mathbb{M}_+$ |
 | $\langle H^{\mathrm{fop}}\rangle=\mathrm{Tr}(\tilde\Pi H^{\mathrm{fop}})=2\,\mathrm{Sc}(\tilde\Pi H^{\mathrm{fop}})$ | Born rule as the trace pairing |
 

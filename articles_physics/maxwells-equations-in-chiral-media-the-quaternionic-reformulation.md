@@ -386,14 +386,14 @@ the same pair as the homogeneous problem $(20)$. The slowly changing chiral medi
 **The device for variable coefficients.** The paper solves the variable-coefficient equation $(D_3+\alpha(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))u=0$, with $\alpha$ a scalar function, by a **zero-divisor** device. Let $\varphi$ be a solution of the eikonal equation $(\nabla\varphi)^2=\alpha^2$, and put $\eta=\exp(\varphi)$. Then
 
 $$
-D_3+\alpha=\eta\bigl(D_3+Q_+\bigr)\eta^{-1},
+D_3+\alpha=\eta\bigl(D_3+\tilde Q_+\bigr)\eta^{-1},
 \qquad
-Q_\pm=\alpha\pm\nabla\varphi,
+\tilde Q_\pm=\alpha\pm\nabla\varphi,
 \qquad
-Q_+Q_-=0,
+\tilde Q_+\tilde Q_-=0,
 $$
 
-the last being the zero-divisor identity $\alpha^2-(\nabla\varphi)^2=0$ read in the algebra. Because $Q_+$ is a zero divisor, the shifted operator admits a factorisation, and solutions are built from $\eta$ and functions in the kernel of $D_3$. For a **stratified** medium, $\alpha=\alpha(x_1)$ depending on one coordinate only, the two solutions of the eikonal equation are $\varphi=\pm i\Theta$ with $\Theta'=\alpha$, and the corresponding solutions of $(D_3+\alpha(x_1))u=0$ are
+the last being the zero-divisor identity $\alpha^2-(\nabla\varphi)^2=0$ read in the algebra. Because $\tilde Q_+$ is a zero divisor, the shifted operator admits a factorisation, and solutions are built from $\eta$ and functions in the kernel of $D_3$. For a **stratified** medium, $\alpha=\alpha(x_1)$ depending on one coordinate only, the two solutions of the eikonal equation are $\varphi=\pm i\Theta$ with $\Theta'=\alpha$, and the corresponding solutions of $(D_3+\alpha(x_1))u=0$ are
 
 $$
 u_x(x)=\exp(\,i\Theta(x_1))\Bigl[H_1(x_2,x_3)(1-i\vec e_x)A_1+H_2(x_2,x_3)\vec e_y(1+i\vec e_x)A_2\Bigr],
@@ -405,7 +405,7 @@ u_y(x)=\exp(-i\Theta(x_1))\Bigl[G_1(x_2,x_3)(1+i\vec e_x)B_1+G_2(x_2,x_3)\vec e_
 \tag{44}
 $$
 
-where $H_1,H_2,G_1,G_2$ are analytic functions of the complex variable $z=x_3+\vec e_xx_2$ — that is, their parts satisfy the Cauchy–Riemann conditions $\partial/\partial Q_yh_0+\partial/\partial Q_zh_1=0$, $\partial/\partial Q_zh_0-\partial/\partial Q_yh_1=0$ — and $A_i,B_i$ are arbitrary constant biquaternions. The exponential $\exp(i\Theta)$ carries the phase accumulated along the stratification, and the analytic functions carry the transverse structure. Feeding them into the reconstruction $(14)$ gives explicit solutions of the chiral system for a stratified chiral medium; the case of general slowly changing $\epsilon,\mu,\beta$ is approximated by this one. The shift carried by each exponential is fixed below.
+where $H_1,H_2,G_1,G_2$ are analytic functions of the complex variable $z=x_3+\vec e_xx_2$ — that is, for a representative $h=h_0\,e_t+h_1\,\vec e_x$, the parts satisfy the Cauchy–Riemann conditions $\partial/\partial Q_yh_0+\partial/\partial Q_zh_1=0$, $\partial/\partial Q_zh_0-\partial/\partial Q_yh_1=0$ — and $A_i,B_i$ are arbitrary constant biquaternions. The exponential $\exp(i\Theta)$ carries the phase accumulated along the stratification, and the analytic functions carry the transverse structure. Feeding them into the reconstruction $(14)$ gives explicit solutions of the chiral system for a stratified chiral medium; the case of general slowly changing $\epsilon,\mu,\beta$ is approximated by this one. The shift carried by each exponential is fixed below.
 
 **A sign bookkeeping point.** Proposition 14 records that $(43,44)$ solve $(D_3+\alpha(x_1))u=0$ with $\Theta$ an antiderivative of $\alpha$. The source then states the reduced system as $(32)$ and gives the solutions of it as $(46,47)$, with $\Theta_1,\Theta_2$ antiderivatives of $\alpha_1,\alpha_2$ respectively (equation $(45)$; the field formula following Proposition 15 uses the exponent $\exp(\,i\int\alpha_2)$). Recomputation on the printed forms shows that the two statements are related by one global sign: the printed $(46,47)$ with $\Theta_2'=\alpha_2$, $\Theta_1'=\alpha_1$ satisfy $(D_3+\alpha_2)\Phi=0$ and $(D_3-\alpha_1)\Psi=0$, whereas $(32)$ reads $(D_3-\alpha_2)\Phi=0$ and $(D_3+\alpha_1)\Psi=0$. The two agree if $\Theta_1,\Theta_2$ are read as antiderivatives of $-\alpha_1,-\alpha_2$, equivalently if the signs of the two exponentials are exchanged. The verified assignment, valid for a constant or a variable $\alpha(x_1)$, is the one recorded here: the exponential $\exp(\,i\Theta)$ on the first term accompanies the operator $D_3+\alpha$ whose shift is the derivative of $\Theta$. The pairing rule behind that assignment is the pair of eigenvalue identities
 
@@ -485,7 +485,7 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | $y_j^\pm,\ a_j,b_j\in\mathbb B$ | Source points on $\Gamma^\pm$ and the biquaternionic coefficients of the collocation trial functions |
 | $\vec f,\ \mathrm{Sc}$ | Prescribed tangential boundary field $\vec{\mathcal E}\times\vec u$; scalar part of a biquaternion |
 | $Z_{\mathrm s}$ | Surface impedance of the impedance boundary condition; written $\xi$ in the survey |
-| $\varphi$, $Q_\pm=\alpha\pm\nabla\varphi$ | Eikonal function and the zero divisors, $Q_+Q_-=0$ |
+| $\varphi$, $\tilde Q_\pm=\alpha\pm\nabla\varphi$ | Eikonal function and the zero divisors, $\tilde Q_+\tilde Q_-=0$ |
 | $z=x_3+\vec e_xx_2$ | Transverse complex variable for the stratified solutions |
 
 ## Further Reading

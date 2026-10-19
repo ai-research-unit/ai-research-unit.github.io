@@ -9,7 +9,7 @@ Two facts from the algebra organize the whole account, and they are worth statin
 **The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm
 
 $$
-\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\overline{\tilde{R}} = (ic\,dt)^2 +dx^2+dy^2+dz^2 = -c^2dt^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = (ic\,dt)^2 +dx^2+dy^2+dz^2 = -c^2dt^2 +dx^2+dy^2+dz^2 .
 $$
 
 The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, *is* the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$; both levels are fixed by the companion article *Conventions in the Biquaternion Universe*, and no metric is introduced here beyond them.
@@ -37,7 +37,7 @@ $$
 whose biquaternion norm is
 
 $$
-\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\overline{\tilde{R}} = -c^2dt^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = -c^2dt^2 +dx^2+dy^2+dz^2 .
 $$
 
 Off the null set, $\langle d\tilde{R}\rangle_{\natural}$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the **proper time** is defined by
@@ -78,7 +78,7 @@ $$
 It lies in $\mathbb{M}_-$ because both terms do: $ic\,e_t$ is the imaginary scalar direction of the material sector and $\vec v$ is a real vector. Its biquaternion norm is the defining normalization of the parameter:
 
 $$
-\langle\tilde{V}\rangle_{\natural} = \tilde{V}\,\overline{\tilde{V}}
+\langle\tilde{V}\rangle_{\natural} = \tilde{V}\,\tilde{V}^{\natural}
 = \gamma^2\left[(ic)^2 + \vec v^2\right]
 = \gamma^2\left(-c^2 + \vec v^2\right)
 = -c^2\gamma^2\left(1 - \frac{\vec v^2}{c^2}\right) = -c^2 .
@@ -135,7 +135,7 @@ $$
 so that the energy is the imaginary scalar part multiplied by $-ic$ — equivalently, the physical energy is $E = -ic\,\mathrm{Sc}(\tilde{P})$ — and the momentum is the real vector part. The four-momentum lies in $\mathbb{M}_-$. Its biquaternion norm is the **mass-shell relation**:
 
 $$
-\boxed{\; \langle\tilde{P}\rangle_{\natural} = \tilde{P}\,\overline{\tilde{P}} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \;}
+\boxed{\; \langle\tilde{P}\rangle_{\natural} = \tilde{P}\,\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2 \;}
 \qquad\Longleftrightarrow\qquad
 E^2 = \vec p^2c^2 + m^2c^4 .
 $$
@@ -168,7 +168,7 @@ $$
 \qquad
 \tilde U_{\mathrm L}\in\mathbb{B},
 \qquad
-\tilde U_{\mathrm L}\overline{\tilde U_{\mathrm L}} = e_t,
+\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t,
 $$
 
 with $\tilde U_{\mathrm L}$ the Lorentz rotor, a unit-norm biquaternion. Since the action is linear and preserves $\langle\cdot\rangle_{\natural}$, it maps a four-velocity to a four-velocity, and it maps the mass shell to itself; it is the framework's implementation of a change of inertial frame. For a **pure boost** the rotor is Hermitian and lives in $\mathbb{M}_+$,
@@ -176,7 +176,7 @@ with $\tilde U_{\mathrm L}$ the Lorentz rotor, a unit-norm biquaternion. Since t
 $$
 \tilde U_{\mathrm L}(\psi,\vec u) = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
 \qquad
-\tilde U_{\mathrm L}^{\natural} = \tilde U_{\mathrm L}^{*} ,
+\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L} ,
 $$
 
 with $\psi$ the rapidity and $\vec u$ the boost direction. The convention for which rotor carries which frame is fixed by the companion article *The Lorentz Transformation as a Biquaternionic Rotation*, whose rotor for a particle of four-velocity $\tilde{V}$ is $\tilde U_{\mathrm L} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity. With that rotor, the transformation $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$ carries the four-velocity $\gamma(ic\,e_t+\vec v)$ of a particle moving with velocity $\vec v = c\tanh\psi\,\vec u$ to the rest four-velocity $ic\,e_t$.
@@ -206,7 +206,7 @@ For **non-collinear** boosts the rotors do not commute, and their product is not
 The action of a free relativistic particle is the invariant length of its worldline, measured in units of $mc$:
 
 $$
-S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\overline{\tilde{R}}}
+S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
 = -mc\int\sqrt{-\langle d\tilde{R}\rangle_{\natural}}
 = -mc^2\int\frac{dt}{\gamma} .
 $$
@@ -342,7 +342,7 @@ $$
 satisfies the mass-shell relation $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\psi$, with $v = c\tanh\psi$ and $\gamma = \cosh\psi$, makes the four-velocity $\tilde{V} = ic\cosh\psi\,e_t + c\sinh\psi\,\vec u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length
 
 $$
-S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\overline{\tilde{R}}}
+S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
 = -mc^2\int\frac{dt}{\gamma},
 \qquad
 L(\vec v) = -\frac{mc^2}{\gamma},

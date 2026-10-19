@@ -113,7 +113,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle=\operatorname{Sc}(\tilde Q_1\tilde Q_2)
 $$
 
-is degenerate on the carrier, $B_S=\operatorname{diag}(\tfrac12,0)$ on $(\tilde\Pi_+,\vec\Upsilon_y)$, with radical $\mathbb{C}\vec\Upsilon_y$. The same degeneracy makes the module split non-orthogonal. The two nilpotents are not $\langle\tilde Q_1,\tilde Q_2\rangle$-orthogonal to each other:
+Write $B(u,v)=\langle u,v\rangle$ for this form and $B_S$ for its Gram matrix on the carrier. It is degenerate on the carrier, $B_S=\operatorname{diag}(\tfrac12,0)$ on $(\tilde\Pi_+,\vec\Upsilon_y)$, with radical $\mathbb{C}\vec\Upsilon_y$. The same degeneracy makes the module split non-orthogonal. The two nilpotents are not $\langle\tilde Q_1,\tilde Q_2\rangle$-orthogonal to each other:
 
 $$
 \langle\vec\Upsilon_y,\vec\Upsilon_x\rangle=\operatorname{Sc}(\vec\Upsilon_y\vec\Upsilon_x)=\operatorname{Sc}(\tilde\Pi_-)=\tfrac12,

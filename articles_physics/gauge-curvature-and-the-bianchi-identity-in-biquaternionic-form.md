@@ -17,15 +17,15 @@ The division between what is established and what is interpretation is kept expl
 
 **Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The abelian potential and field strength are $\tilde{A} = i\phi/c\,e_t + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$. The gauge algebra of this article is the vector part of the material sector,
 $$
-\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-, \qquad [e_a,e_b] = 2\,\varepsilon_{abc}\,e_c,
+\mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-, \qquad [\vec e_a,\vec e_b] = 2\,\varepsilon_{abc}\,\vec e_c,
 $$
-with normalised generators $T_a = \tfrac12 e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = ϙ/\hbar$, the indices are $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = \partial/\partial Q_t = -i\partial/\partial t$, so that $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.
+with normalised generators $T_a = \tfrac12 \vec e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = ϙ/\hbar$, the indices are $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = -i\partial/\partial t$, so that $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.
 
 ## The Covariant Derivative and the Curvature It Defines
 
 Let the connection be a one-form with values in the compact factor of the material sector,
 $$
-\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,e_a \in \mathrm{SU}(2), \qquad
+\mathcal{A}_\mu(\tilde{Q}) = \mathcal{A}_\mu^{a}(\tilde{Q})\,\vec e_a \in \mathrm{SU}(2), \qquad
 \mathcal{A} = \sum_{\mu\in\{t,x,y,z\}}\mathcal{A}_\mu\,e_\mu ,
 $$
 with real coefficient functions, and let the covariant derivative act on a matter field by left multiplication,
@@ -78,7 +78,7 @@ a single algebra commutator, and one can compute it in closed form. For
 $$
 \mathcal{A}_1 = \vec e_x+\vec e_y, \qquad \mathcal{A}_2 = \vec e_y+\vec e_z, \qquad \mathcal{A}_3 = \vec e_z+\vec e_x,
 $$
-the rule $[e_a,e_b]=2\varepsilon_{abc}e_c$ gives
+the rule $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$ gives
 $$
 F_{12} = i\left([\vec e_x,\vec e_y]+[\vec e_x,\vec e_z]+[\vec e_y,\vec e_z]\right)
 = i\left(2\vec e_z - 2\vec e_y + 2\vec e_x\right) = 2i\left(\vec e_x - \vec e_y + \vec e_z\right),
@@ -217,7 +217,7 @@ The two Jacobi identities are not the same statement. The operator identity is a
 
 ## Explicit Verification on a Non-Abelian Connection
 
-Everything above was checked by explicit substitution on $\mathrm{SU}(2)$ with the non-commuting generators $\vec e_x,\vec e_y,\vec e_z$ and the rule $[e_a,e_b]=2\varepsilon_{abc}e_c$, on connections with generic real polynomial coefficients in all four components. The following were confirmed.
+Everything above was checked by explicit substitution on $\mathrm{SU}(2)$ with the non-commuting generators $\vec e_x,\vec e_y,\vec e_z$ and the rule $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$, on connections with generic real polynomial coefficients in all four components. The following were confirmed.
 
 - **The reduction.** $[D_\mu,D_\nu]\Psi = i\kappa F_{\mu\nu}\Psi$ for all six independent index pairs, and the commutator is zeroth order, $[D_\mu,D_\nu](f\Psi) = f[D_\mu,D_\nu]\Psi$.
 - **The Bianchi identity.** The cyclic sum vanishes identically for all $64$ ordered triples, with individual terms of order unity, so the vanishing is a genuine cancellation and not a sum of zeros.
@@ -312,14 +312,14 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $[e_a,e_b]=2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
+| $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$ | Commutator on the vector part of $\mathbb{M}_-$ |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Gauge algebra inside $\mathbb{M}_-$ |
-| $T_a=\tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
+| $T_a=\tfrac12 \vec e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$ |
-| $\mathcal{A}_\mu = \mathcal{A}_\mu^a e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
+| $\mathcal{A}_\mu = \mathcal{A}_\mu^a \vec e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa = ϙ/\hbar$ | Coupling |
 | $D_\mu = \partial/\partial Q_\mu + i\kappa\mathcal{A}_\mu$ | Covariant derivative on matter (one-sided, left) |
-| $\partial/\partial Q_t = \partial/\partial Q_t = -i\partial/\partial t$ | $ict$ time derivative |
+| $\partial/\partial Q_t = -i\partial/\partial t$ | $ict$ time derivative |
 | $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Curvature components, antisymmetric |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as the commutator of covariant derivatives |
 | $F'_{\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ | Adjoint transformation of the curvature |

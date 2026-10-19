@@ -29,7 +29,7 @@ $$
 
 so that $|\langle\mathcal T u,\mathcal T v\rangle|=|\langle u,v\rangle|$ and the map is a symmetry of the ray space. Every antiunitary map is of the form $\mathcal T=UK$ with $U$ unitary and $K$ a fixed antilinear involution; the pair $(U,K)$ is not unique, but the *sign* of $\mathcal T^2$ is a property of $\mathcal T$ alone.
 
-**The algebra's antilinear structure.** The companion article tabulates three antilinear involutions, ${}^{*}$, $\flat$ and $^*$, with fixed spaces of real dimensions $4$, $4$ and $4$ — the two-real-dimensional fixed space belongs to quaternion conjugation, which is linear; the two sectors are the fixed spaces of $\flat$ ($\mathbb{M}_-$) and ${}^{*}$ ($\mathbb{M}_+$), and $\flat$ acts on them as $+$ and $-$. Antilinearity is therefore not an add-on to the framework; it is present three times over, and the sectors are among its fixed spaces.
+**The algebra's antilinear structure.** The companion article tabulates three antilinear involutions, $\bar{\cdot}$, $\flat$ and ${}^{*}$, with fixed spaces of real dimensions $4$, $4$ and $4$; the two sectors are the fixed spaces of $\flat$ ($\mathbb{M}_-$) and ${}^{*}$ ($\mathbb{M}_+$), and $\flat$ acts on them as $+$ and $-$. Antilinearity is therefore not an add-on to the framework; it is present three times over, and the sectors are among its fixed spaces.
 
 **The discipline.** Antiunitarity on the algebra and antiunitarity on the module are different statements, exactly as the mass article insists for the two real structures. A map like $\flat$ is an involution of $\mathbb{B}$; a time-reversal operator is a map of the module. The construction below uses both and does not identify them: the *algebra* supplies the rotation element $U$ and the conjugation the module carries, and the *product* is the module's $\mathcal T$. The one place where the algebra becomes indispensable is the sign, because $U^2$ is an element of $\mathbb{B}$ and its value can be read off there.
 
@@ -184,7 +184,7 @@ The value of $\mathcal T^2$ is not a detail of the operator; it selects the symm
 
 The three rows are the three ways a complex Hilbert space can be given a real structure: none, a real structure (a conjugation $K$ with $K^2=1$), and a quaternionic structure (an antiunitary $J$ with $J^2=-1$). Only the last enforces a degeneracy, and the reason is the one the proof exhibits: $J^2=-1$ is what makes the partner orthogonal to its source, whereas a real structure's partner is not orthogonal to it in general and no degeneracy follows. The opposite-sign verification above is the second row of the table realized: a real symmetric matrix has no enforced degeneracy.
 
-The biquaternion interpretation is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_k$ square to $-e_t$ and supply candidate $J$'s; its involutions $^*$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
+The biquaternion interpretation is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_k$ square to $-e_t$ and supply candidate $J$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
 
 ## What Breaks the Symmetry
 
@@ -271,7 +271,7 @@ The same antiunitary $J$ with $J^2=-e_t$ is a quaternionic structure, and the co
 | $\{v,\mathcal Tv\}$ | Kramers doublet (degenerate, orthogonal pair) |
 | $\langle\mathcal Tv,v\rangle=0$, $H(\mathcal Tv)=E(\mathcal Tv)$ | Proof identities (recomputed, error $0$) |
 | $H_{\text{field}}=-\vec\mu\cdot\vec B$ | $\mathcal T$-odd perturbation; lifts the degeneracy |
-| $\tilde Q^*,\tilde Q^{*},\tilde Q^\flat=-\tilde Q^{*}$ | The algebra's three antilinear involutions (companion) |
+| $\bar{\tilde Q}$, $\tilde Q^{*}$, $\tilde Q^\flat=-\tilde Q^{*}$ | The algebra's three antilinear involutions (companion) |
 | $\flat=+$ on $\mathbb{M}_-$, $- $ on $\mathbb{M}_+$ | Sector action of the algebra's real structure |
 | $J^2=-e_t$, $J=UK$ | Quaternionic structure of the state space |
 | $\dim_\mathbb{C}\{M:[\mathcal T,M]=0\}=2$ | Quaternionic line; commutant computed by rank |

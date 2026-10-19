@@ -27,7 +27,7 @@ $$
 A(q) = \begin{pmatrix} q_t + iq_1 & q_y + iq_3 \\ q_y^* + (iq_3)^* & q_t - (iq_1)^* \end{pmatrix},
 $$
 
-in its equation (8), where $^*$ is complex conjugation of the coefficient. The second row is written in the source in unsimplified form; in the notation of the first row its entries are $\overline{(q_y + iq_3)}$ and $q_t + iq_1^*$. The source then evaluates $A$ on four elements and finds the identity and the three Pauli matrices:
+in its equation (8), where $q_1 := q_x$ and $q_3 := q_z$ are the source's coefficient labels and $^*$ is complex conjugation of the coefficient. The second row is written in the source in unsimplified form; in the notation of the first row its entries are $\overline{(q_y + iq_3)}$ and $q_t + iq_1^*$. The source then evaluates $A$ on four elements and finds the identity and the three Pauli matrices:
 
 | $q$ | $A(q)$ | Pauli matrix |
 |---|---|---|
@@ -141,13 +141,13 @@ the component along the axis being invariant and the two transverse components r
 
 ## The Raising and Lowering Operators
 
-The source defines $S_+ = \tfrac12(S_x + iS_y)$ and $S_- = \tfrac12(S_x - iS_y)$ and finds the two quaternion elements
+The source defines $S_+ = S_x + iS_y$ and $S_- = S_x - iS_y$ and, in units $\hbar=1$, finds the two quaternion elements
 
 $$
 \tfrac12\left(\vec e_y - i\vec e_z\right) = S_+, \qquad \tfrac12\left(-\vec e_y - i\vec e_z\right) = S_-,
 $$
 
-which were recomputed. The raising and lowering behaviour is correct: $S_+q_- = q_+$, $S_+q_+ = 0$, $S_-q_- = 0$ and $S_-q_+ = q_-$, all verified. Two remarks belong to the notation. The first is that the source's statement that the two operators are obtained from one another by complex quaternionic conjugation holds up to a sign: the identity $S_- = -\overline{S_+^*}$ was verified and the signless form $S_- = +\overline{S_+^*}$ fails, so the claim is true in prose only if the sign is supplied. The second is an overload: the symbols $q_+$ and $q_-$ denote the two **states** in the source's (12)–(13) and the two **operators** in its (18)–(19), and these are different elements — the states are $\sqrt2$ times an idempotent and a nilpotent, the operators are real vectors. The coincidence is not accidental, since the operator $S_+$ is the source's $q_+$ times $\tfrac{\hbar}{2}$ and the state $q_-$ is $\sqrt2$ times the operator $S_-$, but a reader who carries a symbol across the two uses will be carrying the wrong element.
+which were recomputed. The raising and lowering behaviour is correct: $S_+q_- = q_+$, $S_+q_+ = 0$, $S_-q_- = 0$ and $S_-q_+ = q_-$, all verified. Two remarks belong to the notation. The first is that the source's statement that the two operators are obtained from one another by complex quaternionic conjugation holds up to a sign: the identity $S_- = -\overline{S_+^*}$ was verified and the signless form $S_- = +\overline{S_+^*}$ fails, so the claim is true in prose only if the sign is supplied. The second is an overload: the symbols $q_+$ and $q_-$ denote the two **states** in the source's (12)–(13) and the two **operators** in its (18)–(19), and these are different elements — the states are $\sqrt2$ times an idempotent and a nilpotent, the operators are real vectors. The coincidence is not accidental, since the state $q_-$ is $\sqrt2$ times the operator $S_-$, but a reader who carries a symbol across the two uses will be carrying the wrong element.
 
 ## The Spinor Functions
 
@@ -256,7 +256,7 @@ The source proposes a $2\times2$ complex matrix $A(q)$ for a complex quaternion 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(j\neq k)$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu) = \sigma_\mu$ | The corpus's isomorphism with $M_2(\mathbb{C})$ |
 | $\sigma_x, \sigma_y, \sigma_z$ | Pauli matrices, the source's labels: $\sigma_x \leftrightarrow -i\vec e_z$, $\sigma_y\leftrightarrow -i\vec e_y$, $\sigma_z\leftrightarrow -i\vec e_x$ |
@@ -271,8 +271,8 @@ The source proposes a $2\times2$ complex matrix $A(q)$ for a complex quaternion 
 | $\tilde\Pi_1 = \tfrac12(e_t - i\vec e_x)$ | Idempotent of $\mathbb{M}_+$, $q_+ = \sqrt2\,\tilde\Pi_1$ |
 | $\tilde\Pi_2' = \tfrac12(-\vec e_y - i\vec e_z)$ | Nilpotent, $q_- = \sqrt2\,\tilde\Pi_2'$, $\left(\tilde\Pi_2'\right)^2 = 0$ |
 | $D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i(q_p\cdot n)\sin\frac{\varphi}{2}$ | The source's rotation operator; unit-norm biquaternion |
-| $S_\pm = \tfrac12(S_x \pm iS_y)$ | The source's ladder operators; $S_- = -\overline{S_+^*}$ |
-| $y_l^{l\pm\frac12}$, $C_1, C_2$ | Angular spinor harmonic and its two coefficient radicals |
+| $S_\pm = S_x \pm iS_y$ | The source's ladder operators; $S_- = -\overline{S_+^*}$ |
+| $Y_l^{l\pm\frac12}$, $C_1, C_2$ | Angular spinor harmonic and its two coefficient radicals |
 | $\sqrt2\,q_+ = e_t - i\vec e_x$, $\sqrt2\,q_- = -\vec e_y - i\vec e_z$ | The two basis elements in which the radial pair $(F,G)$ is borne |
 | $F(r), G(r)$ | Radial functions; closed forms recorded, not verified |
 | $k$, $za_0$, $a_0$, $\rho = Cr$, $s$ | Dirac–Coulomb quantum number, Coulomb coupling, its constant, radial variable and exponent |

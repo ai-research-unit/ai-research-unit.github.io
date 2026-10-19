@@ -25,7 +25,7 @@ A rotation by angle $\theta$ about the unit axis $\vec u_{\mathrm r}$ is impleme
 Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\vec u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family
 
 $$
-R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{-1}(t) = \bar{R}(t) ,
+R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{-1}(t) = R^{\natural}(t) ,
 $$
 
 so that after a time $t$ the frame has turned by the angle $\Omega t$ about $\vec u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{-1}$; a vector with fixed inertial components has rotating-frame components
@@ -84,7 +84,7 @@ $$
 \vec\Omega = \Omega\cos\lambda\,\vec u_y + \Omega\sin\lambda\,\vec u_z
 $$
 
-in these axes: the component along the local vertical is $\Omega\sin\lambda$, and the component along north is $\Omega\cos\lambda$. Only the vertical component enters the precession to leading order. The horizontal component, and the centrifugal term that accompanies it, are of the same order in $\Omega$ as the Coriolis term that does the work; their effect on the precession rate is computed below and is of relative order $(\Omega\sin\lambda/\omega_0)^2$.
+in these axes: the component along the local vertical is $\Omega\sin\lambda$, and the component along north is $\Omega\cos\lambda$. Only the vertical component enters the precession to leading order. The horizontal component, and the centrifugal term that accompanies it, are of second order in $\Omega$; their effect on the precession rate is computed below and is of relative order $(\Omega\sin\lambda/\omega_0)^2$.
 
 ### Small Oscillations
 
@@ -140,7 +140,7 @@ the Foucault angle.
 
 ### The Size of the Neglected Centrifugal Term
 
-The retained equations omit the centrifugal force, which is of the same order in $\Omega$ as the Coriolis force that produces the precession. Its size is worth fixing, because the rate $\Omega\sin\lambda$ is often quoted without qualification and the neglected term is not merely a renormalization of the local vertical. In the local axes the horizontal projection of the centrifugal acceleration is
+The retained equations omit the centrifugal force, which is of second order in $\Omega$ while the Coriolis force is of first order. Its size is worth fixing, because the rate $\Omega\sin\lambda$ is often quoted without qualification and the neglected term is not merely a renormalization of the local vertical. In the local axes the horizontal projection of the centrifugal acceleration is
 
 $$
 -\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = \Omega^2x\,\vec u_x + \Omega^2\sin^2\lambda\,y\,\vec u_y ,

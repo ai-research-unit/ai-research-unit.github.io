@@ -55,7 +55,7 @@ $$
 \lvert a^{*}\rvert=\lvert a\rvert ,
 $$
 
-so it is an anti-automorphism of the graded algebra and it preserves the grading; it is $\mathbb{C}$-antilinear in each factor.
+so it is an anti-automorphism of the graded algebra and it preserves the grading; it is $\mathbb{C}$-antilinear.
 
 *Proof.* The reversion reverses the order of the factors, the grade involution acts on the degree and not on the order, and the coefficient conjugation is a $\mathbb{C}$-antilinear automorphism acting on the coefficients only; the composite therefore reverses the order and preserves the degree, so it is an anti-automorphism, involutive and even. On the algebra this is the Hermitian conjugation $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ of the corpus.
 
@@ -129,7 +129,7 @@ Two constructions in the series adjoin the missing odd sector, and in the Hermit
 
 **The Grassmann envelope.** The odd generators can be made to carry anticommuting coefficients by tensoring with a Grassmann algebra, the construction of *Grassmann Coherent States in Biquaternionic Form*; *BRST Symmetry in Biquaternionic Form* uses the same envelope for the ghosts and records as an **open question** whether a biquaternionic envelope can be found that is natural rather than imported. In the Hermitian interpretation the question acquires a second clause: the envelope must carry an involution compatible with the dagger of the algebra, since a Berezin integral and a Hilbert structure must be defined on the same object. The Grassmann algebra does carry one — the coefficient conjugation extended to the odd coefficients — and that is the envelope the physics uses; what is open is its naturality, not its existence.
 
-**One fermionic mode, natively.** The one piece of the odd sector that the algebra does host is a single fermionic mode: the creation and annihilation operators of one mode are elements of the algebra, the parity is the element $(-1)^F=ie_3$ of the informational sector, and the algebra's own graded structure therefore carries the finite one-mode case without any extension. The parity operator is Hermitian, $(-1)^F\in\mathbb{M}_+$, as a parity operator of a unitary theory must be; the parity of a field, $\prod_{\text{modes}}ie_3^{(\text{mode})}$, is not an element of the algebra.
+**One fermionic mode, natively.** The one piece of fermionic structure that the algebra does host is a single fermionic mode: the creation and annihilation operators of one mode are elements of the algebra, the parity is the element $(-1)^F=i\vec e_z$ of the informational sector, and the algebra's own graded structure therefore carries the finite one-mode case without any extension. The parity operator is Hermitian, $(-1)^F\in\mathbb{M}_+$, as a parity operator of a unitary theory must be; the parity of a field, $\prod_{\text{modes}}i\vec e_z^{(\text{mode})}$, is not an element of the algebra.
 
 **Remark (the count of what is adjoined).** One odd generator, and its products with the even elements, exhaust the odd slot: the extension is not "one more algebra" but one more generator, and the rule odd $\times$ odd $=$ even that it brings with it.
 
@@ -180,7 +180,7 @@ A **supercharge** is an odd element; it is paired with its **adjoint**, $\{\math
 | $\{\mathcal{Q},\mathcal{Q}^{*}\}=2H$ | Supercharge paired with its adjoint; Hermitian and even |
 | $\mathcal{Q}=s\gamma$, $\mathcal{Q}^{*}=-\gamma s^{*}$, $\mathcal{Q}\mathcal{Q}^{*}=-q(\gamma)ss^{*}$ | The supercharge in the module $\mathrm{Cl}^1=\mathbb{B}\gamma$ |
 | $\langle s\gamma,t\gamma\rangle=-q(\gamma)\langle s,t\rangle$, $\langle s,t\gamma\rangle=0$ | The Hermitian form on the odd slot ($\langle s,t\rangle=\mathrm{Sc}(s^{*}t)$) |
-| $(-1)^F=ie_3\in\mathbb{M}_+$ | The one fermionic mode the algebra hosts natively |
+| $(-1)^F=i\vec e_z\in\mathbb{M}_+$ | The one fermionic mode the algebra hosts natively |
 
 ## Further Reading
 

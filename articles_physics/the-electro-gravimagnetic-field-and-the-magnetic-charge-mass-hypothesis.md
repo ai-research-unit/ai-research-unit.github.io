@@ -110,7 +110,7 @@ In the absence of other fields the force vanishes, and the interaction equation 
 $$
 D^-\tilde J_{\mathrm{eg}} = (\partial_\tau - i\nabla)\,\tilde J_{\mathrm{eg}} = 0,
 \qquad
-\tilde J_{\mathrm{eg}} = i\rho + \vec J,
+\tilde J_{\mathrm{eg}} = i\rho + \vec J .
 $$
 The subscript marks the programme's own charge–current; it is not the corpus four-current $\tilde J$.
 

@@ -57,15 +57,15 @@ $$
 with the algebra acting as
 
 $$
-\tilde Q_3\cdot(\psi\otimes f) = (\tilde Q_3\cdot\psi)\otimes f ,
-\qquad \tilde Q_3\in\mathbb{B},\ \psi\in\Delta,\ f\in\mathcal{F} ,
+\tilde Q\cdot(\psi\otimes f) = (\tilde Q\cdot\psi)\otimes f ,
+\qquad \tilde Q\in\mathbb{B},\ \psi\in\Delta,\ f\in\mathcal{F} ,
 $$
 
 i.e. $\mathbb{B}$ acts on the module factor and **trivially** on the multiplicity factor. Equivalently the same structure is the direct sum of $N_g$ copies of $\Delta$, and the two descriptions are unitarily equivalent. The generation index is a label on a factor on which the algebra does nothing.
 
 **The flavour space and its algebra.** The operators that distinguish generations act on $\mathcal{F}$ alone, i.e. as $I_{\Delta}\otimes M$ with $M\in\mathrm{End}(\mathcal{F})=M_{N_g}(\mathbb{C})$. The framework's mass matrices, Yukawa couplings, and mixing matrices are of this form: they are flavour operators tensored with the identity on the module, and their framework content is carried by the module factor. The companion article on the CKM matrix treats the quark mixing matrix as exactly such an operator, and the seesaw article treats the lepton mass matrices the same way. In the language of representations, the full algebra of the $N_g$-generation system is $\mathbb{B}\otimes M_{N_g}(\mathbb{C})$ acting on $\Delta\otimes\mathbb{C}^{N_g}$, and the generation number is the dimension of the second factor.
 
-**The commutant.** The generation index is exactly the dimension of the **commutant** of the algebra's action: the operators commuting with every $\tilde Q_3\otimes I$ are the $I\otimes M$ with $M\in M_{N_g}(\mathbb{C})$, and the multiplicity of the module in $N_g$ copies of itself is $N_g$. This is the representation-theoretic home of the generation number. It is a standard fact of semisimple algebras, and it says precisely that $N_g$ is a multiplicity and not a structural constant: any multiplicity is allowed, and the module's own properties are silent about it. The framework's contribution is to make the multiplicity factor explicit and to identify the flavour matrices as its operators.
+**The commutant.** The generation index is exactly the dimension of the **commutant** of the algebra's action: the operators commuting with every $\tilde Q\otimes I$ are the $I\otimes M$ with $M\in M_{N_g}(\mathbb{C})$, and the multiplicity of the module in $N_g$ copies of itself is $N_g$. This is the representation-theoretic home of the generation number. It is a standard fact of semisimple algebras, and it says precisely that $N_g$ is a multiplicity and not a structural constant: any multiplicity is allowed, and the module's own properties are silent about it. The framework's contribution is to make the multiplicity factor explicit and to identify the flavour matrices as its operators.
 
 **Why the count is preserved by the framework's symmetries.** The framework's symmetries — the Lorentz group on the module, the gauge structure of the material sector, and the central phases — all act trivially on $\mathcal{F}$, so they commute with the generation index and cannot change it. Conversely, nothing in the framework's dynamics mixes the multiplicity factor with the module factor; a generation-changing interaction would require an operator that is not of the product form, and the framework supplies none. The number of generations is therefore a superselection-like label in the framework's present structure, in the same sense as in the Standard Model.
 
@@ -109,12 +109,12 @@ $$
 
 A single copy of the centre therefore survives: the algebra's central phase acts on every generation in the same way, and there is no central phase that distinguishes one generation from another. A generation-dependent phase would have to live in $I_\Delta\otimes M_{N_g}(\mathbb{C})$, i.e. in a broken flavour symmetry, not in the centre. This is the algebraic statement of the neutrality of the framework's central structure with respect to generations, and it is the reason the companion article on the CKM matrix must put the CP-violating phase in the flavour factor rather than in the centre.
 
-**The trace.** The framework's trace formula applies to the enlarged space by factorisation. For $\tilde{P}\otimes M$ and $\tilde{H}\otimes N$,
+**The trace.** The framework's trace formula applies to the enlarged space by factorisation. For $\tilde{Q}_1\otimes M$ and $\tilde{Q}_2\otimes N$,
 
 $$
-\mathrm{Tr}\big((\tilde{P}\otimes M)(\tilde{H}\otimes N)\big)
-= \mathrm{Tr}(\tilde{P}\tilde{H})\,\mathrm{tr}(XY)
-= 2\,\mathrm{Sc}(\tilde{P}\tilde{H})\,\mathrm{tr}(XY) ,
+\mathrm{Tr}\big((\tilde{Q}_1\otimes M)(\tilde{Q}_2\otimes N)\big)
+= \mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)\,\mathrm{tr}(MN)
+= 2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)\,\mathrm{tr}(MN) ,
 $$
 
 so the single-generation trace is multiplied by the flavour trace $\mathrm{tr}(MN)$. The factorisation is exact and shows again that the generation number enters every trace only as a multiplicative factor through the flavour trace: setting $M=N=I_{N_g}$ multiplies the single-generation trace by $N_g$. Nothing in the trace distinguishes one generation from another unless a flavour operator does, which is the precise sense in which the spectrum is $N_g$ identical copies.
@@ -205,7 +205,7 @@ and the number of phases vanishes for $N_g=1$ and $N_g=2$ and is one for $N_g=3$
 
 **The structural lesson.** A generation number is an integer attached to a compactness or a nontrivial topology. The biquaternion algebra is a finite-dimensional algebra of $2\times2$ complex matrices; it is topologically trivial as an algebra and its modules are finite-dimensional and free. The framework's own three-dimensional structures — the spatial directions, the $\mathrm{SU}(2)$ generators — are of a different kind, and the framework's instanton sector has an index, but a background-dependent one. The comparison makes the negative result structural rather than technical: to derive the generation number, one needs structure the framework does not have.
 
-**The octonionic chain-algebra construction.** One construction outside the framework's algebra produces a three, not from the biquaternion multiplicity factor but from the self-action of an octonionic Clifford algebra. In the complex octonionic chain algebra $\overleftarrow{\mathbb C\otimes\mathbb O}\cong\mathrm{Cl}(6)$, the idempotent $\nu=\tfrac12(1+ie_7)$ multiplies the eight $\mathrm{su}(3)$ generators into a second copy of $\mathrm{su}(3)$, and the chain algebra acting on itself splits into colour singlets and colour multiplets; the source of the construction reads the six resulting three-dimensional multiplets as three generations, one triplet–antitriplet pair each, with the singlets carrying the leptons. The corpus has recomputed this construction and reproduces its generator algebra and its multiplet properties exactly, but not the bookkeeping of its conjugate half. The point for the present article is that this three is a **interpretation of a decomposition of a larger carrier**, not a derivation inside $\mathbb B$. It does not touch the statement that the biquaternion algebra carries $N_g$ as an unconstrained multiplicity, and it counts three-dimensional colour multiplets rather than flavour copies; the pairing of six multiplets into three generations is an interpretation of the decomposition, not a condition the algebra imposes. It is recorded here as one of the two nearby constructions that suggest a three, and it is explicitly outside the framework's algebra.
+**The octonionic chain-algebra construction.** One construction outside the framework's algebra produces a three, not from the biquaternion multiplicity factor but from the self-action of an octonionic Clifford algebra. In the complex octonionic chain algebra $\overleftarrow{\mathbb C\otimes\mathbb O}\cong\mathrm{Cl}(6)$, the idempotent $\nu=\tfrac12(1+ie_7)$ multiplies the eight $\mathrm{su}(3)$ generators into a second copy of $\mathrm{su}(3)$, and the chain algebra acting on itself splits into colour singlets and colour multiplets; the source of the construction reads the six resulting three-dimensional multiplets as three generations, one triplet–antitriplet pair each, with the singlets carrying the leptons. The corpus has recomputed this construction and reproduces its generator algebra and its multiplet properties exactly, but not the bookkeeping of its conjugate half. The point for the present article is that this three is an **interpretation of a decomposition of a larger carrier**, not a derivation inside $\mathbb B$. It does not touch the statement that the biquaternion algebra carries $N_g$ as an unconstrained multiplicity, and it counts three-dimensional colour multiplets rather than flavour copies; the pairing of six multiplets into three generations is an interpretation of the decomposition, not a condition the algebra imposes. It is recorded here as one of the two nearby constructions that suggest a three, and it is explicitly outside the framework's algebra.
 
 **The exceptional constructions, and why they are a nearer miss.** The other family outside the framework in which a three appears is the exceptional one, and it is worth separating from the chain-algebra case because the three it offers is of a different kind. In the trinification scheme the unified group $E_6$ contains $SU(3)\times SU(3)\times SU(3)$ with the branching $\mathbf{27}=(\mathbf 3,\bar{\mathbf 3},\mathbf 1)\oplus(\mathbf 1,\mathbf 3,\bar{\mathbf 3})\oplus(\bar{\mathbf 3},\mathbf 1,\mathbf 3)$, so that the three factors are three gauge groups of colour rank, one of which may be taken to be colour; here the three is a three of gauge factors and is not a generation number at all. The complexified exceptional group $\mathrm{E}_6\cong\mathbb{C}\otimes\mathrm{F}_4$ has the maximal subgroups $\tilde H_1=[\mathrm{SU}(3)]^3/\mathbb{Z}_3$ and $\tilde H_2=\mathrm{Spin}(10)$, whose intersection
 $$
@@ -276,7 +276,7 @@ The constraints that do touch the number are inherited from the Standard Model: 
 | $\Delta=S\oplus\bar{S}$ | Dirac module, $\dim_{\mathbb{C}}=4$ |
 | $\mathcal{F}=\mathbb{C}^{N_g}$ | Generation (multiplicity) space |
 | $\Delta\otimes\mathcal{F}$ | $N_g$-generation fermion space |
-| $\tilde Q_3\cdot(\psi\otimes f)=(\tilde Q_3\psi)\otimes f$ | Algebra acts trivially on $\mathcal{F}$ |
+| $\tilde Q\cdot(\psi\otimes f)=(\tilde Q\psi)\otimes f$ | Algebra acts trivially on $\mathcal{F}$ |
 | $I_\Delta\otimes M$, $M\in M_{N_g}(\mathbb{C})$ | Flavour operators (masses, mixing) |
 | $N_g$ | Number of generations; the multiplicity of $\Delta$ |
 | $\sum Y=0,\ \sum Y^3=0,\ \sum YT_3^2=0$ | Anomaly conditions, each generation-independent |

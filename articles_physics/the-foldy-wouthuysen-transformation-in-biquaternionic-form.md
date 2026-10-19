@@ -22,7 +22,7 @@ H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA^0,
 \qquad \vec\pi = \vec p - ϙ\vec A,
 $$
 
-where $\vec p = -i\hbar\vec\nabla$ and we have used $\gamma^0\gamma^0 = I_4$. In the Dirac representation the matrices are
+where $\vec p = -i\hbar\vec\nabla$, $A^0$ is the electrostatic potential, and we have used $\gamma^0\gamma^0 = I_4$. In the Dirac representation the matrices are
 
 $$
 \beta = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2\end{pmatrix},
@@ -108,7 +108,7 @@ Two features of the iteration are worth keeping in view. First, the transformati
 
 ### The Generator in the Biquaternion Basis
 
-The identification of $O$ as the frame-odd part can be written directly in the algebra. With the isomorphism $\mathsf{M}_4$ of the dictionary article, $\mathsf{M}_4(e_t) = I_4$, $\mathsf{M}_4(e_k) = -i\sigma^k$ in the relevant $2\times2$ blocks, the even generators are $\alpha^k$, and the frame is $\beta = \gamma^0$, which is not in $\mathsf{M}_4(\mathbb{B})$. The kinetic operator is
+The identification of $O$ as the frame-odd part can be written directly in the algebra. With the isomorphism $\mathsf{M}_4$ of the dictionary article, $\mathsf{M}_4(e_t) = I_4$, $\mathsf{M}_4(\vec e_k) = -i\sigma^k$ in the relevant $2\times2$ blocks, the even generators are $\alpha^k$, and the frame is $\beta = \gamma^0$, which is not in $\mathsf{M}_4(\mathbb{B})$. The kinetic operator is
 
 $$
 O = c\,\boldsymbol\alpha\cdot\vec\pi = c\,\alpha^k\pi_k,
@@ -184,7 +184,7 @@ $$
 
 contains no oscillatory term: to leading order it is the classical drift $\vec pc^2/E$, so the rapid trembling of the ordinary position operator $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is entirely contained in the difference $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Q$. In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the FW position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the transformed position operator.
 
-The correction $-\frac{i\hbar\beta\boldsymbol\alpha}{2mc}$ is itself worth reading in the algebra. It is an odd, spinorial displacement: it is proportional to the same matrix $\beta\boldsymbol\alpha$ that generates the transformation, it anticommutes with $\beta$, and it is suppressed by one power of $1/c$ relative to the ordinary position. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the block-diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec Q$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and a configuration-space position on the module.
+The correction $-\frac{i\hbar\beta\boldsymbol\alpha}{2mc}$ is itself worth reading in the algebra. It is an odd, spinorial displacement: it is proportional to the same matrix $\beta\boldsymbol\alpha$ that generates the transformation, it anticommutes with $\beta$, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the block-diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec Q$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and a configuration-space position on the module.
 
 ## The Biquaternion Reading
 
@@ -208,7 +208,7 @@ H_{\mathrm{Pauli}} = \frac{\vec\pi^2}{2m} + ϙA^0 - \frac{ϙ\hbar}{2m}\boldsymbo
 + \frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0),
 $$
 
-whose corrections are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $\frac{1}{4m^2c^2}$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\vec\pi^4/(8m^3c^2)$, which is displayed in the free-particle expansion above; the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework, and they are quoted here as the standard content of the transformation. The Darwin term is written in its equivalent forms $\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0) = -\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E$ for the electrostatic case $\vec E = -\nabla A^0$, where the identity $\nabla\cdot\vec E = -\nabla^2A^0$ holds. The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, none couples the large and small blocks — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
+whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $\frac{1}{4m^2c^2}$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\vec\pi^4/(8m^3c^2)$, which is displayed in the free-particle expansion above; the companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework, and they are quoted here as the standard content of the transformation. The Darwin term is written in its equivalent forms $\frac{\hbar^2}{8m^2c^2}\nabla^2(ϙA^0) = -\frac{ϙ\hbar^2}{8m^2c^2}\nabla\cdot\vec E$ for the electrostatic case $\vec E = -\nabla A^0$, where the identity $\nabla\cdot\vec E = -\nabla^2A^0$ holds. The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, none couples the large and small blocks — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
 
 The lower block is the same Hamiltonian with the sign of the mass reversed, i.e. the negative-energy (antiparticle) sector, and the two blocks are exactly degenerate at this order. The splitting between them, $2mc^2$, is the mass gap that the transformation has made manifest. This is the sense in which the FW transformation "separates particles from antiparticles": not by projecting them apart, which the fields do not allow, but by diagonalising the Hamiltonian so that the gap is explicit and the mixing is small.
 

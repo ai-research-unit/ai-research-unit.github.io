@@ -16,7 +16,7 @@ This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B
 4. **Resonance is the vanishing of the longitudinal component.** At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto i\vec e_x$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.
 5. **The transition probability is a trace pairing**, $P_\downarrow(t) = \mathrm{Tr}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}(t))$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the trace formula.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the two-level Hamiltonian.
@@ -191,7 +191,7 @@ The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_1(\vec u_z)
 
 ## The Bloch Picture
 
-The state at any time can be written $\tilde{Ϛ}(t) = \tfrac12(e_t + i\vec r(t))$, with $\vec r(t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
+The state at any time can be written $\tilde{Ϛ}(t) = \tfrac12(e_t + i\vec r(t))$, with $\vec r(t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde H_1,\tilde H_2] = -2(\vec h_1\times\vec h_2)$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
 
 $$
 d\vec r/dt = \vec\omega_{\mathrm{eff}}\times\vec r,
@@ -247,7 +247,7 @@ $$
 = -\frac{\hbar}{2}\Big[(\omega_0-\omega)i\vec e_z + \omega_1 i\vec e_x\Big].
 $$
 
-The effective Hamiltonian is a spin observable along the unit vector $\vec u_R = (\omega_1 \vec e_x + \Delta \vec e_z)/\Omega$, with $\Delta = \omega_0-\omega$ the detuning and $\Omega = \sqrt{\omega_1^2+\Delta^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_R = -\tfrac{\hbar\omega_1}{2}i\vec e_x$ purely transverse, and then the spin precesses about the equator.
+The effective Hamiltonian is a spin observable along the unit vector $\vec u_R = (\omega_1 \vec e_x + \Delta \vec e_z)/\Omega$, with $\Delta = \omega_0-\omega$ the detuning and $\Omega = \sqrt{\omega_1^2+\Delta^2}$ the generalized Rabi frequency equal to its spectral gap. Resonance $\omega = \omega_0$ makes $\tilde{H}_R = -\tfrac{\hbar\omega_1}{2}i\vec e_x$ purely transverse, and then the spin precesses about the transverse axis.
 
 The transition probability is the trace pairing $P_\downarrow(t) = \mathrm{Tr}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}(t))$, and it equals the Rabi formula
 
@@ -262,11 +262,11 @@ which reduces to $\sin^2(\omega_1t/2)$ on resonance. The $\pi$-pulse $t = \pi/\o
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $e_k^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_+$ | Hermitian (informational) subspace; home of all Hamiltonians here |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of the frame rotor |
-| $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ | Spin observable along $\vec{u_k}$ |
+| $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin observable along $\vec e_k$ |
 | $\vec B(t) = B_0\vec u_z+B_1(\cos\omega t\,\vec u_x-\sin\omega t\,\vec u_y)$ | Static field plus corotating drive |
 | $\omega_0 = \gamma B_0$ | Larmor frequency |
 | $\omega_1 = \gamma B_1$ | Rabi frequency |

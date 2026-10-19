@@ -15,7 +15,7 @@ $$
 | 3 | $\exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)$ | boost | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi \ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ |
 | 4 | $\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta \in [0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ |
 
-The scale is the only factor that is not an exponential. Each exponent is a real parameter times a **root** of $-e_t$, $0$ or $+e_t$, and the character of the exponential is fixed by the square of its root: $-e_t$ trigonometric, $+e_t$ hyperbolic, $0$ parabolic, the series truncating to the unit plus the exponent. The phase and the rotor therefore stand on a root of $-e_t$, the boost on a root of $+e_t$, and the scale is the degenerate hyperbolic factor, whose root is $e_t$. The parabolic case carries no factor of this representation but is not empty in $\mathbb{B}$: the element $\vec e_x+i\vec e_y$ has square zero, so its exponential is $e_t+(\vec e_x+i\vec e_y)$, of norm one and neither a rotor nor a boost. The rule is Lemma 1 of Sangwine & Hitzer.
+The scale is the only factor written without an exponential in the word. Each exponent is a real parameter times a **root** of $-e_t$, $0$ or $+e_t$, and the character of the exponential is fixed by the square of its root: $-e_t$ trigonometric, $+e_t$ hyperbolic, $0$ parabolic, the series truncating to the unit plus the exponent. The phase and the rotor therefore stand on a root of $-e_t$, the boost on a root of $+e_t$, and the scale is the degenerate hyperbolic factor, whose root is $e_t$. The parabolic case carries no factor of this representation but is not empty in $\mathbb{B}$: the element $\vec e_x+i\vec e_y$ has square zero, so its exponential is $e_t+(\vec e_x+i\vec e_y)$, of norm one and neither a rotor nor a boost. The rule is Lemma 1 of Sangwine & Hitzer.
 
 The two axes are directions in space, each a unit real pure quaternion,
 
@@ -85,7 +85,7 @@ Being central, the phase commutes with the other three factors and may be moved 
 
 ### The Two Sectors
 
-The phase is zero on the two halves of the algebra and extremal on the scalar imaginary, whose word, $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$, exhibits it at $\alpha = \pi/2$. In the physical reading the vanishing of $\alpha$ selects the spacelike sector and its extremal value the timelike one.
+The phase is zero on the quaternion half and $\pi/2$ on the anti-quaternion half, whose word, $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$, exhibits the extremal value. In the physical reading the vanishing of $\alpha$ selects the spacelike sector and its extremal value the timelike one.
 
 ### The Conjugations and the Degenerate Cases
 
@@ -193,11 +193,11 @@ $$
 \exp\left(\log \tilde U_{\mathrm b} + \log\tilde u_{\mathrm r}\right) \neq \tilde U_{\mathrm b}\tilde u_{\mathrm r} .
 $$
 
-The rapidity of a product is therefore not the sum of the rapidities, nor the rotation angle the sum of the rotation angles, while the modulus is exactly multiplicative, $r = r_1r_2$ and $\alpha = \alpha_1+\alpha_2$. The word becomes order-free exactly when one non-central factor is trivial or the two axes coincide; in the last case the element is a single boost-rotation about the common axis, which is why two boosts along one line have no residual rotation.
+The rapidity of a product is therefore not the sum of the rapidities, nor the rotation angle the sum of the rotation angles, while the scale is multiplicative, $r = r_1r_2$, and the phase is additive modulo $\pi$, $\alpha\equiv\alpha_1+\alpha_2 \pmod{\pi}$, the sign being absorbed by the rotor when the sum leaves the branch. The word becomes order-free exactly when one of the two non-central factors is central or the two axes are parallel; in the last case the element is a single boost-rotation about the common axis, which is why two boosts along one line have no residual rotation.
 
 ### The Conjugations
 
-Under the conjugations the quaternion and the coefficientwise conjugation replace the boost by its inverse, the boost of the same rapidity about the reflected axis, and the Hermitian conjugation fixes it, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$. The boost is trivial exactly when $\psi = 0$, that is, when $UU^{*} = e_t$, equivalently when the unit-norm part $U$ is unitary; this holds on the centre and on the real quaternions.
+Under the conjugations the quaternion and the coefficientwise conjugation replace the boost by its inverse, the boost of the same rapidity about the reflected axis, and the Hermitian conjugation fixes it, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$. The boost is trivial exactly when $\psi = 0$, that is, when $UU^{*} = e_t$, equivalently when the unit-norm part $U$ is unitary; this holds on the complex lines through a real quaternion, in particular on the centre, the quaternion subspace and the anti-quaternion subspace.
 
 ## The Rotor
 

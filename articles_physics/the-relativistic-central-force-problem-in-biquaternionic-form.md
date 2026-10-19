@@ -24,7 +24,7 @@ The article is deliberately parallel to its non-relativistic counterparts. *Cent
 
 The companion article *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre* supplies the field-theoretic origin of the potential treated here: the static field of a central scalar source is the $1/r$ potential, and a test particle in it is the problem of this article.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Position, momentum, force and angular momentum are real vectors in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; the energy, the potential and the rest mass are central scalars, real multiples of $e_t$. For two real vectors,
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Position, momentum, force and angular momentum are real vectors in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; the energy, the potential and the rest mass are central scalars, real multiples of $e_t$. For two real vectors,
 $$
 \vec a\vec b=-\vec a\cdot\vec b\,e_t+\vec a\times\vec b, \qquad [\vec a,\vec b]=2\,\vec a\times\vec b,
 $$
@@ -126,7 +126,7 @@ $$
 so that
 
 $$
-\frac{d}{d\theta}(E-V)^2=2(E-V)\left(-\frac{dV}{dr}\right)\left(-\frac{du/d\theta}{u^2}\right)=\frac{2(E-V)F(1/u)\,du/d\theta}{u^2}.
+\frac{d}{d\theta}(E-V)^2=2(E-V)\left(-\frac{dV}{dr}\right)\left(-\frac{du/d\theta}{u^2}\right)=-\frac{2(E-V)F(1/u)\,du/d\theta}{u^2}.
 $$
 
 Differentiating the right-hand side of (1) gives $c^2L^2\left(2\frac{du}{d\theta}\frac{d^2u}{d\theta^2}+2u\frac{du}{d\theta}\right)$. Equating and dividing by $2\,du/d\theta$ — the case $du/d\theta=0$ is the circular orbit, treated separately below — yields the **relativistic Binet equation**
@@ -292,7 +292,7 @@ which is one sixth of the general-relativistic perihelion advance $6\pi GM/(c^2a
 
 The non-relativistic inverse-square problem conserves, besides $\vec L$, the Runge–Lenz vector $\vec A=\vec p\times\vec L-m\kappa\vec u_r$, whose conservation is equivalent to the closure of the orbit and whose symmetry algebra is $\mathrm{SO}(4)$ for bound orbits. The relativistic problem is the test case for what survives.
 
-The orbit remains a conic **in the rotating frame** $\varphi=\omega\theta$, so the shape of the orbit is preserved and the only relativistic effect on it is the uniform rotation of the apsidal line. Equivalently, the relativistic problem retains the same number of constants of motion as any planar central-force problem — the energy, the angular momentum and the orientation of the orbit — but the orientation is no longer fixed: the periapsis direction advances by $\Delta$ per revolution.
+The orbit remains a conic **in the rotating frame** $\varphi=\omega\theta$, so the shape of the orbit is preserved and the only relativistic effect on it is the uniform rotation of the apsidal line. Equivalently, the relativistic problem conserves the energy and the angular momentum as any planar central-force problem does, and the shape of the orbit is fixed by them; only the orientation is no longer fixed: the periapsis direction advances by $\Delta$ per revolution.
 
 A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\vec A_{\text{rel}}=\vec p\times\vec L-\alpha\,\vec u_r$ with constant $\alpha$, the time derivative contains a term $\vec F\times\vec L=\kappa L\,\vec u_\varphi/r^2$ from the force and a term $\alpha\,d\vec u_r/dt=\alpha L\,\vec u_\varphi/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
 

@@ -51,7 +51,7 @@ The interpretation of this result is contested, and the article does not settle 
 
 ## The Biquaternionic Setting
 
-The notation is that of the parent and its read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, scalar imaginary $i$, and biquaternionic gradient
+The notation is that of the parent and its read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, scalar imaginary $i$, and biquaternionic gradient
 
 $$
 \tilde\nabla = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z.
@@ -73,7 +73,7 @@ $$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^{*},
 $$
 
-with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde P\tilde{Q}/\hbar)$ with wave biquaternion $\tilde P/\hbar = e_tk_0 + \vec k$ and the single mass-shell condition
+with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde P\tilde{Q}/\hbar)$ with wave biquaternion $\tilde P/\hbar = e_tk_0 + \vec k$, where $k_0=iE/(\hbar c)$, and the single mass-shell condition
 
 $$
 \tilde P\tilde P^{\natural}=-m^2c^2.
@@ -117,7 +117,7 @@ $$
 \qquad f_Z = \frac{\omega_Z}{2\pi} = 2.47118\times10^{20}\ \text{Hz},
 $$
 
-which is the standard value. On a relativistic case chosen independently, $\gamma = 2$ so $E = 2mc^2$, the formula gives $2E/\hbar = 4m_ec^2/\hbar = 3.10538\times10^{21}\ \text{rad s}^{-1}$ — twice the rest value, as the formula requires and as the rest case alone would not reveal. The oscillation amplitude is $\hbar/(2mc)$, which for the electron is $193.1$ fm, half the reduced Compton wavelength $386.2$ fm. Both the frequency and the amplitude are the standard ones; the biquaternion notation reproduces them without alteration.
+which is the standard value. On a relativistic case chosen independently, with Lorentz factor $2$ so $E = 2mc^2$, the formula gives $2E/\hbar = 4m_ec^2/\hbar = 3.10538\times10^{21}\ \text{rad s}^{-1}$ — twice the rest value, as the formula requires and as the rest case alone would not reveal. The oscillation amplitude is $\hbar/(2mc)$, which for the electron is $193.1$ fm, half the reduced Compton wavelength $386.2$ fm. Both the frequency and the amplitude are the standard ones; the biquaternion notation reproduces them without alteration.
 
 It should be said clearly that this derivation uses $\beta$ and $\boldsymbol{\alpha}$ and therefore does **not** stay inside $\mathbb{B}$. That will matter in the test that follows.
 
@@ -204,11 +204,11 @@ The structural claim that motivated the article fails. The positive- and negativ
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
-| $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient (Dirac operator) |
+| $\tilde\nabla = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde P\tilde P^{\natural} = -m^2c^2$ | Biquaternionic mass-shell condition |
 | $\psi^{(r)}, \chi^{(r)}$ | Positive- and negative-frequency spinors |
