@@ -9,32 +9,34 @@ $$
 = r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-| # | factor | name | exponent | root | range | real dimension |
-|---|---|---|---|---|---|---|
-| 1 | $r$ | scale | — | — | $r \in \mathbb{R}$, $r>0$ | $1$ |
-| 2 | $\exp(i\alpha)$ | central phase | $i\alpha$ | $i$ | $\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$ | $1$ |
-| 3 | $\tilde U_{\mathrm b} = \exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)$ | boost | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi \ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ |
-| 4 | $\tilde u_{\mathrm r} = \exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta \in [0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ |
+| # | factor | name | exponent | root | range | real dimension | action | stable subspaces |
+|---|---|---|---|---|---|---|---|---|
+| 1 | $r$ | scale | — | — | $r \in \mathbb{R}$, $r>0$ | $1$ | $\tilde Q\mapsto r^{2}\tilde Q$ | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ |
+| 2 | $\exp(i\alpha)$ | central phase | $i\alpha$ | $i$ | $\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$ | $1$ | $\tilde Q\mapsto \exp(i\alpha)\tilde Q$ | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ |
+| 3 | $\tilde U_{\mathrm b} = \exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)$ | boost | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi \ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | $\tilde Q\mapsto \tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}$ | $\mathbb{M}_+$, $\mathbb{M}_-$ |
+| 4 | $\tilde u_{\mathrm r} = \exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta \in [0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ | $\tilde Q\mapsto \tilde u_{\mathrm r}\tilde Q\tilde u_{\mathrm r}^{-1}$ | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ |
+
+The action column records the operation by which the factor acts on the algebra. For the scale, the boost and the rotor this is the sandwich by the factor in view, that is the dilation $\tilde Q\mapsto r^{2}\tilde Q$, the congruence $\tilde Q\mapsto\tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}$ and the conjugation $\tilde Q\mapsto\tilde u_{\mathrm r}\tilde Q\tilde u_{\mathrm r}^{-1}$. The phase is central and its sandwich is the identity, so its row records multiplication by the scalar, the only action under which it is not in the kernel; this is the one row that departs from the sandwich convention of *The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces*, where the phase would list every subspace because it acts trivially. The scale preserves $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. The phase preserves $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$ and no other: on a real form the factor $\exp(i\alpha)$ turns a real part into an imaginary one. The boost preserves $\mathbb{M}_+$ and $\mathbb{M}_-$ and no other. The rotor preserves $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$: conjugation by a real unit quaternion is an automorphism of $\mathbb{B}$ commuting with the three conjugations, so it carries each of the six into itself. Parameters are generic; at the identity value of a parameter the factor is $e_t$ and preserves every subspace. Two-sided multiplication by the rotor, $\tilde Q\mapsto\tilde u_{\mathrm r}\tilde Q\tilde u_{\mathrm r}$, is a different action and is not used: under it the rotor preserves only $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, while under conjugation it preserves all six.
 
 This is the polar word of *The Polar Element Representation of Biquaternions*. It is recalled in full because the pairing below regroups exactly these four factors. The scale $r$ is a positive real and the phase $\exp(i\alpha)$ is central, with $\alpha$ real. The last two factors are the **boost** $\tilde U_{\mathrm b}$ and the **rotor** $\tilde u_{\mathrm r}$, with axes $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ the unit real pure quaternions of the axis sphere $\mathcal{A}$ of the reference article, $\psi\ge0$ the rapidity and $\theta\in[0,2\pi]$ the rotation angle. The boost is Hermitian positive and of unit norm, and the rotor is a unit real quaternion, hence also of unit norm. The four factors are unique. They can be grouped in pairs in exactly three ways, and the three pairings of the series regroup the same four factors. What differs is where the brackets fall, and what each bracketed pair is then recognised to be.
 
-**The Hamilton root pairing** is the grouping that multiplies the scale into the phase and the boost into the rotor. The two central factors multiply into the complex modulus $R = r\exp(i\alpha)$; the two unit factors multiply into the non-central factor $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the Lorentz transformation of the word. On the domain of the pairing that product is a single exponential $\exp(\vec\Xi\Theta)$ of a **root** of $-e_t$. Write $\tilde Q = Q_te_t+\vec Q$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The axis $\vec\Xi$ is the root proportional to $\vec Q$, normalised by $\vec\Xi^2 = -e_t$, and $\Theta$ is the complex angle of the exponential, fixed by $\cos\Theta = Q_t/R$ and $\sin\Theta = B/R$, where $B^2 = (\vec Q,\vec Q) = Q_x^2+Q_y^2+Q_z^2$.
+**The Hamilton root pairing** is the grouping that multiplies the scale into the phase and the boost into the rotor. The two central factors multiply into the complex modulus $\Rho = r\exp(i\alpha)$; the two unit factors multiply into the non-central factor $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the Lorentz transformation of the word. On the domain of the pairing that product is a single exponential $\exp(\vec\Xi\Theta)$ of a **root** of $-e_t$. Write $\tilde Q = Q_te_t+\vec Q$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The axis $\vec\Xi$ is the root proportional to $\vec Q$, normalised by $\vec\Xi^2 = -e_t$, and $\Theta$ is the complex angle of the exponential, fixed by $\cos\Theta = Q_t/\Rho$ and $\sin\Theta = B/\Rho$, where $B^2 = (\vec Q,\vec Q) = Q_x^2+Q_y^2+Q_z^2$.
 
 $$
-\tilde{Q} = R\,\exp(\vec\Xi\Theta), \qquad R = r\,\exp(i\alpha), \qquad \exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} .
+\tilde{Q} = \Rho\,\exp(\vec\Xi\Theta), \qquad \Rho = r\,\exp(i\alpha), \qquad \exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} .
 $$
 
 This is the **Hamilton representation** of the biquaternion literature. The name records the root: $\vec\Xi$ is a root of $-e_t$, and the same root, read on the set of the roots of one, is what ties the pairing to the classification of those roots.
 
-The pairing is **partial**, in the precise sense of *The Quaternion Pairing of the Polar Element Representation of Biquaternions*: its modulus $R$ is a composite object, the product of the scale and the phase, and the representation is available only where that object can be constructed from the parts of the element, which requires the vector part to be non-null. There are two partial pairings: this one, and the quaternion pairing, in which the scale is grouped with the rotor; the third grouping, in which the scale is grouped with the boost and the phase with the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions*.
+The pairing is **partial**, in the precise sense of *The Quaternion Pairing of the Polar Element Representation of Biquaternions*: its modulus $\Rho$ is a composite object, the product of the scale and the phase, and the representation is available only where that object can be constructed from the parts of the element, which requires the vector part to be non-null. There are two partial pairings: this one, and the quaternion pairing, in which the scale is grouped with the rotor; the third grouping, in which the scale is grouped with the boost and the phase with the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions*.
 
 **The approach.** The article has two halves, and they are one subject: the axis of the first half is a root of $-1$, and the second half is the same four-factor word read at the elements where it closes, the roots of one. The first half develops the Hamilton representation: the pairing, the statement, the domain, the exponential of the element, the correlated non-uniqueness of its three parameters, and the behaviour of its data under the three conjugations. The second half develops the roots of one in the two exponential forms, the four-factor word at a root and the single exponential of the halving idempotent, and the bridge between them. Read on the **exponents** of the two non-central factors rather than on the factors, the word gives the non-central roots as a hyperbolic family generated by a Hermitian element and by a fixed quarter turn, and the same reading answers the question of the commutation of the two factors, on which the two exponents either do or do not add to the complex angle of a single exponential.
 
 The article takes the construction of the four factors from *The Polar Element Representation of Biquaternions* and does not re-derive it. No physics is invoked.
 
-**The result, in one sentence.** On the complement of the null cone and of the quadric cone $(\vec Q,\vec Q) = 0$, the element factors as $R\exp(\vec\Xi\Theta)$, with $R$ the complex modulus, $\vec\Xi = \vec Q/B$ the root of $-1$ parallel to the vector part and $\Theta$ the complex angle of the single exponential, which is $\frac{\theta}{2}+\epsilon i\frac{\psi}{2}$ on aligned words and does not reduce to that scalar in general; the roots of one, $\tilde\Xi^2 = e_t$, are the elements at which the same four-factor word closes, and they carry a second exponential form, a single exponential of the halving idempotent, whose exponent is recovered from the four-factor word by the product of its last two factors. The two exponents of the non-central factors, $i\frac{\psi}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$, are one Hermitian element and one real pure element, and they do not commute in general; the two factors are a single exponential with a complex angle on the whole domain, and the exponent is the sum of the two exponents exactly when the two axes are parallel or one of the two factors is central.
+**The result, in one sentence.** On the complement of the null cone and of the quadric cone $(\vec Q,\vec Q) = 0$, the element factors as $\Rho\exp(\vec\Xi\Theta)$, with $\Rho$ the complex modulus, $\vec\Xi = \vec Q/B$ the root of $-1$ parallel to the vector part and $\Theta$ the complex angle of the single exponential, which is $\frac{\theta}{2}+\epsilon i\frac{\psi}{2}$ on aligned words and does not reduce to that scalar in general; the roots of one, $\tilde\Xi^2 = e_t$, are the elements at which the same four-factor word closes, and they carry a second exponential form, a single exponential of the halving idempotent, whose exponent is recovered from the four-factor word by the product of its last two factors. The two exponents of the non-central factors, $i\frac{\psi}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$, are one Hermitian element and one real pure element, and they do not commute in general; the two factors are a single exponential with a complex angle on the whole domain, and the exponent is the sum of the two exponents exactly when the two axes are parallel or one of the two factors is central.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu = Q_te_t+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and its real and imaginary quaternion parts are $Q_r,Q_i\in\mathbb{H}$ under $\tilde{Q} = Q_r+iQ_i$. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, the two operations commuting. The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, a complex number in general, and the domain of the polar representation is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, $\mathcal{A}$ and the subspaces $\mathbb{M}_\pm$, $\mathbb{H}_{\mathbb{B}}$, $\mathrm{Sp}(1)$ are those of *The Polar Element Representation of Biquaternions*. Two different glyphs are in play and must not be confused: the **Hamilton axis** $\vec\Xi$, a root of $-1$, and a **root of one** $\tilde\Xi$, with $\tilde\Xi^2 = e_t$. The Hamilton modulus is $R$, its argument $\Theta$; the halving idempotent of a root is $\tilde\Pi_-$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu = Q_te_t+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and its real and imaginary quaternion parts are $\tilde q_r,\tilde q_i\in\mathbb{H}$ under $\tilde{Q} = \tilde q_r+i\tilde q_i$. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, the two operations commuting. The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, a complex number in general, and the domain of the polar representation is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, $\mathcal{A}$ and the subspaces $\mathbb{M}_\pm$, $\mathbb{H}_{\mathbb{B}}$, $\mathrm{Sp}(1)$ are those of *The Polar Element Representation of Biquaternions*. Two different glyphs are in play and must not be confused: the **Hamilton axis** $\vec\Xi$, a root of $-1$, and a **root of one** $\tilde\Xi$, with $\tilde\Xi^2 = e_t$. The Hamilton modulus is $\Rho$ and the complex angle is $\Theta$; the halving idempotent of a root is $\tilde\Pi_-$.
 
 ## The Hamilton Representation
 
@@ -43,10 +45,10 @@ The article takes the construction of the four factors from *The Polar Element R
 The Hamilton representation is the pairing of the scale with the phase against the boost with the rotor:
 
 $$
-\tilde{Q} = R\,\exp(\vec\Xi\Theta), \qquad R = r\,\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} .
+\tilde{Q} = \Rho\,\exp(\vec\Xi\Theta), \qquad \Rho = r\,\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} .
 $$
 
-The modulus is the complex scalar $\rho$ of the polar representation, and the exponential is the whole rotor part, boost and rotation together. The identification of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with a single exponential is the content of the construction of *The Polar Element Representation of Biquaternions*, and it is the reason the Hamilton representation is the closest of the three to the quaternion polar representation: when all four coefficients are real, $\tilde U_{\mathrm b} = e_t$, $\tilde u_{\mathrm r}$ is the unit quaternion, and the representation reduces to $q = r\exp(\mu\tfrac{\theta}{2})$ term by term.
+The modulus is the complex scalar $\Rho$ of the polar representation, and the exponential is the whole rotor part, boost and rotation together. The identification of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with a single exponential is the content of the construction of *The Polar Element Representation of Biquaternions*, and it is the reason the Hamilton representation is the closest of the three to the quaternion polar representation: when all four coefficients are real, $\tilde U_{\mathrm b} = e_t$, $\tilde u_{\mathrm r}$ is the unit quaternion, and the representation reduces to $\tilde Q = r\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ term by term.
 
 Both factors of the exponential are themselves exponentials of a single element, so the Hamilton factor is the single exponential of a **product of two exponentials**. The boost is
 
@@ -65,20 +67,20 @@ with $\vec u_{\mathrm r}$ a unit vector and $\theta$ the rotation angle. Each ex
 **Remark (the second factor is the Lorentz transformation).** The second factor of the Hamilton pairing,
 
 $$
-\tilde U_{\mathrm L} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec\Xi\Theta) = \frac{\tilde{Q}}{R} , \qquad \tilde U_{\mathrm L}\,\tilde U_{\mathrm L}^{\natural} = e_t ,
+\tilde U_{\mathrm L} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec\Xi\Theta) = \frac{\tilde{Q}}{\Rho} , \qquad \tilde U_{\mathrm L}\,\tilde U_{\mathrm L}^{\natural} = e_t ,
 $$
 
-is the whole non-central part of the polar word, factors $3$ and $4$ multiplied, and not the boost alone. It is a boost of rapidity $\psi$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost is the Hermitian case $\tilde u_{\mathrm r} = e_t$. In the physical reading $\tilde U_{\mathrm L}$ is the **Lorentz transformation**, and the modulus $R$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the dagger sandwich of the physics articles is this factor, written $\tilde U$ there.
+is the whole non-central part of the polar word, factors $3$ and $4$ multiplied, and not the boost alone. It is a boost of rapidity $\psi$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta$ about $\vec u_{\mathrm r}$; the boost is the Hermitian case $\tilde u_{\mathrm r} = e_t$. In the physical reading $\tilde U_{\mathrm L}$ is the **Lorentz transformation**, and the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the dagger sandwich of the physics articles is this factor, written $\tilde U$ there.
 
 ### The Statement
 
 The representation is stated as follows. Write $\tilde{Q} = Q_te_t+\vec Q$ with vector part $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, suppose $(\vec Q,\vec Q) = Q_x^2+Q_y^2+Q_z^2 \neq 0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, and put
 
 $$
-R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \vec\Xi = \frac{\vec Q}{B}, \qquad B = \sqrt{(\vec Q,\vec Q)}, \qquad \cos\Theta = \frac{Q_t}{R}, \qquad \sin\Theta = \frac{B}{R} .
+\Rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \vec\Xi = \frac{\vec Q}{B}, \qquad B = \sqrt{(\vec Q,\vec Q)}, \qquad \cos\Theta = \frac{Q_t}{\Rho}, \qquad \sin\Theta = \frac{B}{\Rho} .
 $$
 
-Then $\tilde{Q} = R(\cos\Theta+\vec\Xi\sin\Theta)$, and $\vec\Xi$ is a root of $-1$: $\vec\Xi^2 = \vec Q^2/B^2 = -\left(\vec Q,\vec Q\right)e_t/B^2 = -e_t$, since the square of a pure biquaternion is $-\left(\vec Q,\vec Q\right)e_t$. The angle $\Theta$ is complex and the modulus $R$ is complex, and the constraint $\cos^2\Theta+\sin^2\Theta = 1$ is the identity $Q_t^2+(\vec Q,\vec Q) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
+Then $\tilde{Q} = \Rho(\cos\Theta+\vec\Xi\sin\Theta)$, and $\vec\Xi$ is a root of $-1$: $\vec\Xi^2 = \vec Q^2/B^2 = -\left(\vec Q,\vec Q\right)e_t/B^2 = -e_t$, since the square of a pure biquaternion is $-\left(\vec Q,\vec Q\right)e_t$. The angle $\Theta$ is complex and the modulus $\Rho$ is complex, and the constraint $\cos^2\Theta+\sin^2\Theta = 1$ is the identity $Q_t^2+(\vec Q,\vec Q) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
 
 **The axis.** The axis $\vec\Xi$ is a root of $-1$, and the normalisation $\vec\Xi^2 = -e_t$ is what the definition $B = \sqrt{(\vec Q,\vec Q)}$ provides. It is not an arbitrary root but the one parallel to the vector part of the element, and that parallelism is what makes the representation canonical. When the vector part is null the normalisation fails, $B = 0$, and with it the axis; that is the domain restriction below.
 
@@ -90,33 +92,33 @@ $$
 \left\{\tilde{Q} : \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0 \ \text{ and } \ (\vec Q,\vec Q)\neq0\right\},
 $$
 
-which is the complement of the union of the null cone and the quadric cone $(\vec Q,\vec Q) = 0$. The second condition is not implied by the first and is not weaker: the element $1+\vec e_x+i\vec e_y$ has $N = 1$ and $(\vec Q,\vec Q) = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. Within its domain the representation is unique once the branch of $R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ is fixed; the literature states the uniqueness as up to the correlated replacement $(R,\Theta)\mapsto(-R,\Theta+\pi)$, which the branch choice of the polar representation removes.
+which is the complement of the union of the null cone and the quadric cone $(\vec Q,\vec Q) = 0$. The second condition is not implied by the first and is not weaker: the element $1+\vec e_x+i\vec e_y$ has $N = 1$ and $(\vec Q,\vec Q) = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. Within its domain the representation is unique once the branch of $\Rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ is fixed; the literature states the uniqueness as up to the correlated replacement $(\Rho,\Theta)\mapsto(-\Rho,\Theta+\pi)$, which the branch choice of the polar representation removes.
 
 ### The Exponential of the Element
 
-The representation $\tilde{Q} = R\exp(\vec\Xi\Theta)$ is a statement about $\tilde{Q}$ itself, and it must not be read as a statement about its exponential. Write $\vec Q = B\vec\Xi$ and $\tilde{Q} = Q_te_t + B\vec\Xi$. Since $Q_te_t$ is central,
+The representation $\tilde{Q} = \Rho\exp(\vec\Xi\Theta)$ is a statement about $\tilde{Q}$ itself, and it must not be read as a statement about its exponential. Write $\vec Q = B\vec\Xi$ and $\tilde{Q} = Q_te_t + B\vec\Xi$. Since $Q_te_t$ is central,
 
 $$
 \exp(\tilde{Q}) = \exp(Q_t)\exp(B\vec\Xi) = \exp(Q_t)\bigl(\cos B\,e_t + \sin B\,\vec\Xi\bigr),
 $$
 
-using $\vec\Xi^2 = -e_t$ as above. The right-hand side is the Hamilton representation of the element $\exp(\tilde{Q})$, with modulus $\exp(Q_t)$ and angle $B$; it is not the Hamilton representation of $\tilde{Q}$, whose modulus and angle are $R$ and $\Theta$. The two Hamilton data therefore agree only in the special case
+using $\vec\Xi^2 = -e_t$ as above. The right-hand side is the Hamilton representation of the element $\exp(\tilde{Q})$, with modulus $\exp(Q_t)$ and angle $B$; it is not the Hamilton representation of $\tilde{Q}$, whose modulus and angle are $\Rho$ and $\Theta$. The two Hamilton data therefore agree only in the special case
 
 $$
-R = \exp(Q_t) \ \text{ and }\ \Theta = B, \qquad\text{that is,}\qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \exp(2Q_t) \ \text{ and the angle } \Theta \text{ equals } B ,
+\Rho = \exp(Q_t) \ \text{ and }\ \Theta = B, \qquad\text{that is,}\qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \exp(2Q_t) \ \text{ and the angle } \Theta \text{ equals } B ,
 $$
 
-by the identity $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_t^2 + B^2$. In general the inverse relation is the one that holds: the logarithm of $\tilde{Q}$ reads off its own modulus and angle, $\log\tilde{Q} = \log R\,e_t + \Theta\,\vec\Xi$ (*Biquaternion Elementary Functions*, §*The Logarithm*), so it is the logarithm, not the exponential, that recovers $(R,\Theta)$ from the element. The distinction matters whenever an element and its exponential are both in play, as for the exponential map of $\mathbb{B}^\times$ in *Biquaternion Lie Group and Exponential Structure*.
+by the identity $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_t^2 + B^2$. In general the inverse relation is the one that holds: the logarithm of $\tilde{Q}$ reads off its own modulus and angle, $\log\tilde{Q} = \log \Rho\,e_t + \Theta\,\vec\Xi$ (*Biquaternion Elementary Functions*, §*The Logarithm*), so it is the logarithm, not the exponential, that recovers $(\Rho,\Theta)$ from the element. The distinction matters whenever an element and its exponential are both in play, as for the exponential map of $\mathbb{B}^\times$ in *Biquaternion Lie Group and Exponential Structure*.
 
 ### Non-Uniqueness of the Parameters
 
 The three parameters of the Hamilton representation are not determined independently; the representation is unique only up to three correlated replacements.
 
 1. **The axis is defined up to sign.** The relation $\vec Q = B\vec\Xi$ determines $\vec\Xi$ only together with the sign of $B = \sqrt{(\vec Q,\vec Q)}$, since $B$ is a square root; replacing $B$ by $-B$ replaces $\vec\Xi$ by $-\vec\Xi$ and leaves both $\vec\Xi^2 = -e_t$ and $\vec Q$ unchanged.
-2. **The angle is defined up to sign, correlated with the axis.** Replacing $(\vec\Xi,\Theta)$ by $(-\vec\Xi,-\Theta)$ leaves $\tilde{Q} = R(\cos\Theta + \vec\Xi\sin\Theta)$ fixed, because the two changes cancel in the term $\vec\Xi\sin\Theta$.
-3. **The modulus is defined up to sign, correlated with a shift of the angle.** Replacing $(R,\Theta)$ by $(-R,\Theta+\pi)$ gives the same element, since $\cos(\Theta+\pi) = -\cos\Theta$ and $\sin(\Theta+\pi) = -\sin\Theta$.
+2. **The angle is defined up to sign, correlated with the axis.** Replacing $(\vec\Xi,\Theta)$ by $(-\vec\Xi,-\Theta)$ leaves $\tilde{Q} = \Rho(\cos\Theta + \vec\Xi\sin\Theta)$ fixed, because the two changes cancel in the term $\vec\Xi\sin\Theta$.
+3. **The modulus is defined up to sign, correlated with a shift of the angle.** Replacing $(\Rho,\Theta)$ by $(-\Rho,\Theta+\pi)$ gives the same element, since $\cos(\Theta+\pi) = -\cos\Theta$ and $\sin(\Theta+\pi) = -\sin\Theta$.
 
-Fixing the branches removes the first and the third: the four-factor representation fixes the modulus as $R = \rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ with $r>0$, and a choice of the square root $B$ fixes the axis; then $\vec\Xi$ and $\Theta$ are determined up to the period of the angle. What remains is the ambiguity of $\Theta$ modulo $2\pi$, which is precisely the multivaluedness of the logarithm: the branches of $\log\tilde{Q}$ differ by the kernel of the exponential, and the power functions inherit the ambiguity. This is why the logarithm and the powers are many-valued on $\mathbb{B}^\times$ while the exponential is single-valued.
+Fixing the branches removes the first and the third: the four-factor representation fixes the modulus as $\Rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ with $r>0$, and a choice of the square root $B$ fixes the axis; then $\vec\Xi$ and $\Theta$ are determined up to the period of the angle. What remains is the ambiguity of $\Theta$ modulo $2\pi$, which is precisely the multivaluedness of the logarithm: the branches of $\log\tilde{Q}$ differ by the kernel of the exponential, and the power functions inherit the ambiguity. This is why the logarithm and the powers are many-valued on $\mathbb{B}^\times$ while the exponential is single-valued.
 
 ## Behaviour Under the Three Conjugations
 
@@ -124,19 +126,19 @@ The algebra has three nontrivial conjugations: quaternion conjugation ${}^{\natu
 
 ### The Hamilton Data
 
-In $\tilde{Q} = R\exp(\vec\Xi\Theta)$ the modulus $R$ and the angle $\Theta$ are complex scalars and therefore central, while the axis $\vec\Xi$ is pure, so that $\vec\Xi^{\natural} = -\vec\Xi$. Quaternion conjugation fixes the centre and reverses a pure element, complex conjugation is an automorphism and conjugates the coefficients of the axis as it conjugates the rest, and Hermitian conjugation does both. The axis of a conjugated element is again a root of $-1$, and it is read off the conjugate: complex conjugation carries $\vec\Xi$ to $\bar{\vec\Xi}$, quaternion conjugation to $-\vec\Xi$, and Hermitian conjugation to $-\bar{\vec\Xi}$:
+In $\tilde{Q} = \Rho\exp(\vec\Xi\Theta)$ the modulus $\Rho$ and the angle $\Theta$ are complex scalars and therefore central, while the axis $\vec\Xi$ is pure, so that $\vec\Xi^{\natural} = -\vec\Xi$. Quaternion conjugation fixes the centre and reverses a pure element, complex conjugation is an automorphism and conjugates the coefficients of the axis as it conjugates the rest, and Hermitian conjugation does both. The axis of a conjugated element is again a root of $-1$, and it is read off the conjugate: complex conjugation carries $\vec\Xi$ to $\bar{\vec\Xi}$, quaternion conjugation to $-\vec\Xi$, and Hermitian conjugation to $-\bar{\vec\Xi}$:
 
 $$
-(\tilde{Q})^{\natural} = R\exp(-\vec\Xi\Theta), \qquad \bar{\tilde{Q}} = \bar{R}\exp(\bar{\vec\Xi}\,\bar{\Theta}), \qquad \tilde{Q}^{*} = \bar{R}\exp(-\bar{\vec\Xi}\,\bar{\Theta}) .
+(\tilde{Q})^{\natural} = \Rho\exp(-\vec\Xi\Theta), \qquad \bar{\tilde{Q}} = \bar{\Rho}\exp(\bar{\vec\Xi}\,\bar{\Theta}), \qquad \tilde{Q}^{*} = \bar{\Rho}\exp(-\bar{\vec\Xi}\,\bar{\Theta}) .
 $$
 
-| conjugation | $R$ | $\vec\Xi$ | $\Theta$ | result |
+| conjugation | $\Rho$ | $\vec\Xi$ | $\Theta$ | result |
 |---|---|---|---|---|
-| quaternion ${}^{\natural}$ | $R$ | $-\vec\Xi$ | $\Theta$ | $R\exp(-\vec\Xi\Theta)$ |
-| complex $\bar{\cdot}$ | $\bar{R}$ | $\bar{\vec\Xi}$ | $\bar{\Theta}$ | $\bar{R}\exp(\bar{\vec\Xi}\bar{\Theta})$ |
-| Hermitian ${}^{*}$ | $\bar{R}$ | $-\bar{\vec\Xi}$ | $\bar{\Theta}$ | $\bar{R}\exp(-\bar{\vec\Xi}\bar{\Theta})$ |
+| quaternion ${}^{\natural}$ | $\Rho$ | $-\vec\Xi$ | $\Theta$ | $\Rho\exp(-\vec\Xi\Theta)$ |
+| complex $\bar{\cdot}$ | $\bar{\Rho}$ | $\bar{\vec\Xi}$ | $\bar{\Theta}$ | $\bar{\Rho}\exp(\bar{\vec\Xi}\bar{\Theta})$ |
+| Hermitian ${}^{*}$ | $\bar{\Rho}$ | $-\bar{\vec\Xi}$ | $\bar{\Theta}$ | $\bar{\Rho}\exp(-\bar{\vec\Xi}\bar{\Theta})$ |
 
-The consistency of the second row is a consequence of $\langle\bar{\tilde{Q}},\bar{\tilde{Q}}\rangle_{\natural} = \overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, hence $R(\bar{\tilde{Q}}) = \overline{R(\tilde{Q})}$: the modulus conjugates, the angle conjugates, and the axis conjugates coefficientwise. Quaternion conjugation is the operation that reverses the axis, complex conjugation the one that reverses nothing, and Hermitian conjugation the one that does both.
+The consistency of the second row is a consequence of $\langle\bar{\tilde{Q}},\bar{\tilde{Q}}\rangle_{\natural} = \overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, hence $\Rho(\bar{\tilde{Q}}) = \overline{\Rho(\tilde{Q})}$: the modulus conjugates, the angle conjugates, and the axis conjugates coefficientwise. Quaternion conjugation is the operation that reverses the axis, complex conjugation the one that reverses nothing, and Hermitian conjugation the one that does both.
 
 ## The Roots of One in the Two Exponential Forms
 
@@ -282,7 +284,7 @@ $$
 
 whose leading term is half the bracket. On 100 random pairs with the rapidity and the rotation angle both between $0.02$ and $0.12$ the relative deviation $\lvert\Theta\vec\Xi-(\mathcal H+\mathcal R)\rvert/\lvert\Theta\vec\Xi\rvert$, in the Euclidean norm of the coefficients, is at most $3.9\times10^{-2}$, falls to $1.0\times10^{-3}$ when the term $\frac{1}{2}[\mathcal H,\mathcal R]$ is added, and to $2.1\times10^{-5}$ when the two cubic terms are added.
 
-**The single exponential does not need the alignment.** The product $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ has norm one and is the element $\tilde Q$ stripped of its central modulus $R$, and dividing by the central $R$ leaves the Hamilton axis and the complex angle unchanged, both being read from the ratio of the parts of the element. The product is therefore a single exponential with a complex number inside on the whole domain,
+**The single exponential does not need the alignment.** The product $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ has norm one and is the element $\tilde Q$ stripped of its central modulus $\Rho$, and dividing by the central $\Rho$ leaves the Hamilton axis and the complex angle unchanged, both being read from the ratio of the parts of the element. The product is therefore a single exponential with a complex number inside on the whole domain,
 
 $$
 \tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\vec\Xi\Theta) ,
@@ -400,13 +402,13 @@ $$
 r = 2.320595787, \quad \alpha = 0.190253189, \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y, \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
 $$
 
-*The Hamilton regrouping.* The vector part is $\vec Q = \vec e_x+2\vec e_y$, so $(\vec Q,\vec Q) = 5$ and $B = \sqrt{5} = 2.236067978$; the axis is $\vec\Xi = (\vec e_x+2\vec e_y)/\sqrt{5} = 0.447213595\,\vec e_x+0.894427191\,\vec e_y$, which satisfies $\vec\Xi^2 = -e_t$. The modulus is $R = \rho = 2.278723854+0.438842117i$, and the complex angle is fixed by
+*The Hamilton regrouping.* The vector part is $\vec Q = \vec e_x+2\vec e_y$, so $(\vec Q,\vec Q) = 5$ and $B = \sqrt{5} = 2.236067978$; the axis is $\vec\Xi = (\vec e_x+2\vec e_y)/\sqrt{5} = 0.447213595\,\vec e_x+0.894427191\,\vec e_y$, which satisfies $\vec\Xi^2 = -e_t$. The modulus is $\Rho = 2.278723854+0.438842117i$, and the complex angle is fixed by
 
 $$
-\cos\Theta = \frac{Q_t}{R} = 0.504639332+0.341657461i, \qquad \sin\Theta = \frac{\sqrt{5}}{R} = 0.946188580-0.182219271i ,
+\cos\Theta = \frac{Q_t}{\Rho} = 0.504639332+0.341657461i, \qquad \sin\Theta = \frac{\sqrt{5}}{\Rho} = 0.946188580-0.182219271i ,
 $$
 
-so that $\tilde{Q} = R(\cos\Theta+\vec\Xi\sin\Theta)$; the identity $\exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ then holds term by term, both sides being $\tilde{Q}/R$, and with it the equality of the Hamilton representation with the first pairing of the four factors.
+so that $\tilde{Q} = \Rho(\cos\Theta+\vec\Xi\sin\Theta)$; the identity $\exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ then holds term by term, both sides being $\tilde{Q}/\Rho$, and with it the equality of the Hamilton representation with the first pairing of the four factors.
 
 *The two exponents.* The polar data also give the two exponents of the word,
 
@@ -470,7 +472,7 @@ so that $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cos\Theta\,e_t+\sin\Theta\,
 
 ## Summary
 
-The Hamilton representation writes a biquaternion of its domain as $R\exp(\vec\Xi\Theta)$, the complex modulus $R = r\exp(i\alpha)$ times the exponential of the root $\vec\Xi = \vec Q/B$ of $-1$ that is parallel to the vector part. Its domain is the complement of the union of the null cone and the quadric cone $(\vec Q,\vec Q) = 0$, on which the axis has no normalisation; the four-factor grouping $\tilde{Q} = (r\exp(i\alpha))(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ exists on the larger domain of the polar representation, and it is the construction of the modulus and the angle from the parts of the element, not the grouping, that fails. The three parameters $R$, $\vec\Xi$ and $\Theta$ are fixed only up to the correlated replacements of the axis, of the angle and of the modulus; the branches of the polar representation remove the first and the third, and the residue is the multivaluedness of the logarithm.
+The Hamilton representation writes a biquaternion of its domain as $\Rho\exp(\vec\Xi\Theta)$, the complex modulus $\Rho = r\exp(i\alpha)$ times the exponential of the root $\vec\Xi = \vec Q/B$ of $-1$ that is parallel to the vector part. Its domain is the complement of the union of the null cone and the quadric cone $(\vec Q,\vec Q) = 0$, on which the axis has no normalisation; the four-factor grouping $\tilde{Q} = (r\exp(i\alpha))(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ exists on the larger domain of the polar representation, and it is the construction of the modulus and the angle from the parts of the element, not the grouping, that fails. The three parameters $\Rho$, $\vec\Xi$ and $\Theta$ are fixed only up to the correlated replacements of the axis, of the angle and of the modulus; the branches of the polar representation remove the first and the third, and the residue is the multivaluedness of the logarithm.
 
 Under the three conjugations the Hamilton data transform by the table above: quaternion conjugation fixes the modulus and the angle and reverses the axis, complex conjugation conjugates the modulus, the axis and the angle and reverses nothing, and Hermitian conjugation conjugates the modulus and the angle and both conjugates and reverses the axis.
 
@@ -482,14 +484,14 @@ The word has two exponents, the Hermitian $\mathcal H = i\frac{\psi}{2}\vec u_{\
 
 | symbol | meaning |
 |---|---|
-| $\tilde{Q} = R\exp(\vec\Xi\Theta)$ | the Hamilton representation, the root pairing |
-| $R = r\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | the Hamilton modulus, the complex modulus of the polar representation |
+| $\tilde{Q} = \Rho\exp(\vec\Xi\Theta)$ | the Hamilton representation, the root pairing |
+| $\Rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | the Hamilton modulus, the complex modulus of the polar representation |
 | $\vec\Xi = \vec Q/B$ | the Hamilton axis, the root of $-1$ parallel to the vector part |
 | $\Theta$ | the complex angle of the single exponential; it is $\frac{\theta}{2}+\epsilon i\frac{\psi}{2}$ on aligned words and does not separate in general |
 | $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part of $\tilde{Q}$ |
 | $(\vec Q,\vec Q) = Q_x^2+Q_y^2+Q_z^2$ | the general plain bilinear square of the vector part |
 | $B = \sqrt{(\vec Q,\vec Q)}$ | the length of the vector part, in the branch that fixes the axis |
-| $Q_r$, $Q_i$ | the real and imaginary quaternion parts of $\tilde{Q}$ |
+| $\tilde q_r$, $\tilde q_i$ | the real and imaginary quaternion parts of $\tilde{Q}$ |
 | $Q_\mu = q_\mu+iq'_\mu$ | the four complex coefficients of $\tilde{Q}$, split into their real and imaginary parts |
 | $\Xi_\mu = \xi_\mu+i\xi'_\mu$ | the four complex coefficients of a root of one $\tilde\Xi$ |
 | $\exp(\tilde{Q})$ | the exponential; its Hamilton data $\exp(Q_t)$ and $B$ are generally not those of $\tilde{Q}$ |
@@ -509,7 +511,7 @@ The word has two exponents, the Hermitian $\mathcal H = i\frac{\psi}{2}\vec u_{\
 
 ## Further Reading
 
-- *The Polar Element Representation of Biquaternions* (`articles_maths/the-polar-element-representation-of-biquaternions.md`), for the four factors, the modulus $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, the domain, and the degenerate cases against which the roots of the second half are read; *The Polar Decomposition of Biquaternions in Practice* (`articles_maths/the-polar-decomposition-of-biquaternions-in-practice.md`), for the procedure in the coordinates of the element, the five steps, the factors and the exponents with their positions; and §*The Exponent of Each Factor* and §*The Two Cautions of the Exponential Reading* of the first article, for the exponents $i\frac{\psi}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$ of the two non-central factors, for the failing sum rule and for the single exponential of their product, of which §*The Two Factors and the Single Exponential* above is the sharpened form.
+- *The Polar Element Representation of Biquaternions* (`articles_maths/the-polar-element-representation-of-biquaternions.md`), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, the domain, and the degenerate cases against which the roots of the second half are read; §*The Procedure in Practice* of that article, for the procedure in the coordinates of the element, the five steps, the factors and the exponents with their positions; and §*The Order of the Boost and the Rotor* of that article, for the exponents $i\frac{\psi}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$ of the two non-central factors and for the failing sum rule; §*The Two Factors and the Single Exponential* above is the sharpened form, where the product is nevertheless a single exponential with a complex angle.
 - *The Quaternion Pairing of the Polar Element Representation of Biquaternions* (`articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.md`), for the quaternion grouping, the other partial pairing, and the comparison of the two domains.
 - *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions* (`articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.md`), for the third grouping, $\tilde{Q} = HU$, which is not partial and has the full domain.
 - *Quaternion Polar Element Representation* (`articles_maths/quaternion-polar-element-representation.md`), for the quaternion polar form that the Hamilton representation generalises on the real quaternions.

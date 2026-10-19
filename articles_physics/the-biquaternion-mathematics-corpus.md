@@ -48,7 +48,6 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 #### Biquaternions Polar Element Representation
 
 - [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html)
-- [The Polar Decomposition of Biquaternions in Practice](../articles_maths/the-polar-decomposition-of-biquaternions-in-practice.html)
 - [The Quaternion Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.html)
 - [The Hamilton Root Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.html)
 - [The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html)
