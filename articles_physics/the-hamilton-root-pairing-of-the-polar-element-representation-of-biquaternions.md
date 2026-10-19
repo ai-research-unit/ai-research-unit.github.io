@@ -93,7 +93,7 @@ $$
 \rho(\cos\Theta+\vec\Xi\sin\Theta)=Q_t+\vec Q.
 $$
 
-The two equations for $\Theta$ determine it up to the correlated sign of $B$ and $\Theta$, which is the branch ambiguity of the square root. $\square$
+The two equations for $\Theta$ determine it up to the correlated sign of $B$ and $\Theta$, which is the branch ambiguity of the square root.
 
 The form is the biquaternion analogue of the quaternion axis-angle representation. In the quaternion algebra, a unit quaternion is $\tilde q=\cos(\theta/2)+\mu\sin(\theta/2)$ with $\mu$ a real unit pure quaternion. The Hamilton form replaces the real angle by a complex angle, the real axis by a complex axis, and the unit modulus by the complex modulus $\rho$. When the element is a real quaternion, the complex data collapse to the real data and the form is the quaternion axis-angle form.
 

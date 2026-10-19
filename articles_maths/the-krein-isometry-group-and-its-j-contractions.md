@@ -38,15 +38,15 @@ where $S^{1}e_t$ is the circle of central phases.
 
 **Proof.** $L_{\tilde{Q}_1}^{\dagger}L_{\tilde{Q}_1}=R_{\bar{\tilde{Q}_1}}L_{\tilde{Q}_1}$ is the operator $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\bar{\tilde{Q}_1}$, which is the identity exactly when $\tilde{Q}_1\bar{\tilde{Q}_1}=e_t$ and $\tilde{Q}_1$ is central, that is $\tilde{Q}_1\in S^{1}e_t$; the right case is symmetric. For the sandwich, $\Theta_{\tilde{Q}_1}^{\dagger}\Theta_{\tilde{Q}_1}=\Theta_{\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}e_t}=|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|^{2}\mathrm{id}$.
 
-**Corollary (the algebraic subgroup).** The central phases and the sandwiches of norm one generate the compact subgroup
+**Corollary (the compact algebraic subgroup).** The central phases and the unitary sandwiches generate the compact subgroup
 
 $$
 \mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3),
 $$
 
-of real dimension $4$: the phases are the scalar isometries and the norm-one sandwiches are the inner automorphisms $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\tilde{Q}_1^{\dagger}$ of the algebra, which depend only on the class of $\tilde{Q}_1$ in $\mathrm{U}(2)/\mathrm{U}(1)=PU(2)\cong SO(3)$. The two families commute, and their only common element is the identity. This subgroup is far from the whole group, whose dimension is $16$.
+of real dimension $4$: the phases are the scalar isometries and the unitary sandwiches are the inner automorphisms $\tilde{Q}_2\mapsto\tilde{Q}_1\tilde{Q}_2\tilde{Q}_1^{\dagger}$ of the algebra, which depend only on the class of $\tilde{Q}_1$ in $\mathrm{U}(2)/\mathrm{U}(1)=PU(2)\cong SO(3)$. The two families commute, and their only common element is the identity. This subgroup is far from the whole group, whose dimension is $16$.
 
-**Proof.** The kernel of the map $\tilde{Q}_1\mapsto\Theta_{\tilde{Q}_1}$ is the centre of the algebra, so its image over the norm-one elements is $\mathrm{U}(2)$ modulo its centre, which is $PU(2)\cong SO(3)$. The phases are central in the operator algebra, hence commute with the sandwiches; and $\Theta_{\tilde{Q}_1}$ is scalar only for $\tilde{Q}_1$ a scalar of modulus one, in which case $\Theta_{\tilde{Q}_1}=\mathrm{id}$.
+**Proof.** On the unitary group the kernel of the map $\tilde{Q}_1\mapsto\Theta_{\tilde{Q}_1}$ is the central circle $\mathrm{U}(1)$, so its image is $\mathrm{U}(2)$ modulo its centre, which is $PU(2)\cong SO(3)$. The phases are central in the operator algebra, hence commute with the sandwiches; and $\Theta_{\tilde{Q}_1}$ is scalar only for $\tilde{Q}_1$ a scalar of modulus one, in which case $\Theta_{\tilde{Q}_1}=\mathrm{id}$.
 
 ## The Spectrum of a Krein Isometry
 
@@ -60,7 +60,7 @@ with the same multiplicity; the eigenvalues on the unit circle are paired by con
 
 **Proof.** $T^{*}=JT^{-1}J$ makes $T^{*}$ similar to $T^{-1}$, so the characteristic polynomials of $T^{*}$ and of $T^{-1}$ agree, and $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$ while $\mathrm{spec}(T^{-1})=\{\lambda^{-1}\}$. The boost of the next section has the eigenvalues $\exp(\pm t)$.
 
-**Example.** The diagonal phases $L_{ce_t}$ with $c\in S^{1}$ have the single eigenvalue $c$ of multiplicity four, on the circle; the norm-one sandwiches have the eigenvalues $\lambda_i\bar\lambda_j$ of the conjugating unitary matrix, on the circle as well; the boosts leave the circle.
+**Example.** The diagonal phases $L_{ce_t}$ with $c\in S^{1}$ have the single eigenvalue $c$ of multiplicity four, on the circle; the unitary sandwiches have the eigenvalues $\lambda_i\bar\lambda_j$ of the conjugating unitary matrix, on the circle as well; the boosts leave the circle.
 
 ## The Boosts
 
@@ -118,7 +118,7 @@ so the boosts are the elements of the group whose spectrum is real and off the u
 
 ## Summary
 
-The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{\mathsf T*}ET=E\}$ is $\mathrm{U}(1,3)$: real dimension $16$, non-compact, centre the scalar phases $\mathrm{U}(1)$, maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$. A Krein isometry is characterised by $T^{*}JT=J$, equivalently $T^{-1}=T^{\dagger}$. Inside the algebra's families the Krein isometries are the central phases $L_{\tilde{Q}_1}$, $\tilde{Q}_1\in S^{1}e_t$, and the norm-one sandwiches $\Theta_{\tilde{Q}_1}$, $|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|=1$; together they form the compact subgroup $\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)$ of dimension $4$, the sandwiches acting as the inner automorphisms of the algebra. The spectrum of a Krein isometry is invariant under $\lambda\mapsto1/\bar\lambda$ and is not confined to the unit circle: the boosts $T_{t}$ have $\exp(\pm t),1,1$ and are the one-parameter subgroups realising the Lorentz boosts of the Minkowski slices. The group acts transitively on the isotropic lines, on the positive lines and on the maximal isotropic subspaces. Finally the $J$-contractions, defined by the $J$-positivity of their defect, are invariant under conjugation by the group; their model is the projection onto the vector subspace, whose defect is the projection onto the centre, while a scalar multiplication is a contraction only when it is an isometry.
+The Krein isometry group $U_{J}(\mathbb{B})=\{T:T^{\mathsf T*}ET=E\}$ is $\mathrm{U}(1,3)$: real dimension $16$, non-compact, centre the scalar phases $\mathrm{U}(1)$, maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$. A Krein isometry is characterised by $T^{*}JT=J$, equivalently $T^{-1}=T^{\dagger}$. Inside the algebra's families the Krein isometries are the central phases $L_{\tilde{Q}_1}$, $\tilde{Q}_1\in S^{1}e_t$, and the unitary sandwiches $\Theta_{\tilde{Q}_1}$, $\tilde{Q}_1\in\mathrm{U}(2)$; together they form the compact subgroup $\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)$ of dimension $4$, the sandwiches acting as the inner automorphisms of the algebra. The sandwiches with $|\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{\natural}|=1$ are isometries too, but they are not inner automorphisms and they form the non-compact group $\mathrm{PSL}(2,\mathbb{C})\cong SO^{+}(1,3)$. The spectrum of a Krein isometry is invariant under $\lambda\mapsto1/\bar\lambda$ and is not confined to the unit circle: the boosts $T_{t}$ have $\exp(\pm t),1,1$ and are the one-parameter subgroups realising the Lorentz boosts of the Minkowski slices. The group acts transitively on the isotropic lines, on the positive lines and on the maximal isotropic subspaces. Finally the $J$-contractions, defined by the $J$-positivity of their defect, are invariant under conjugation by the group; their model is the projection onto the vector subspace, whose defect is the projection onto the centre, while a scalar multiplication is a contraction only when it is an isometry.
 
 ## Summary of Notation
 

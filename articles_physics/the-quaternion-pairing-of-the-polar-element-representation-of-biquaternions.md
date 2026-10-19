@@ -137,7 +137,7 @@ $$
 =\tilde q_r+i\tilde q_i.
 $$
 
-The inverse of $\cos\tilde\Psi$ exists exactly when the norm does not vanish, which is the hypothesis. $\square$
+The inverse of $\cos\tilde\Psi$ exists exactly when the norm does not vanish, which is the hypothesis.
 
 The theorem is a construction from the parts. The next section shows that its modulus is the polar factor $r\tilde q_{\mathrm r}$.
 
