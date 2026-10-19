@@ -55,19 +55,19 @@ and the zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$. The 
 
 **The apex is no operation.** The origin is the only element that is neither a unit nor a zero divisor. It is the zero map, which neither preserves information nor loses it: it has no inverse, and it is excluded from the zero-divisor set by the convention that both factors of a zero product are nonzero. The apex is the one point of the wall that is not a wall.
 
-| object | algebraic condition | operation | reading |
+| object | algebraic condition | operation | interpretation |
 | --- | --- | --- | --- |
 | a unit | $N\neq0$ | a bijection | reversible |
 | a zero divisor | $N=0$, $\tilde Q\neq0$ | rank one | forgets a direction |
 | the origin | $\tilde Q=0$ | the zero map | no operation |
 
-**The boundary of the reading.** A zero divisor is not "irreversible in time"; it is non-invertible as a linear map. The algebra has no arrow and no dynamics, and the physical arrow requires a process and a law. The reading identifies the algebraic status of the map, not a thermodynamic direction.
+**The boundary of the interpretation.** A zero divisor is not "irreversible in time"; it is non-invertible as a linear map. The algebra has no arrow and no dynamics, and the physical arrow requires a process and a law. The interpretation identifies the algebraic status of the map, not a thermodynamic direction.
 
 ### The Wall of the State Space
 
-**The same cone bounds the pure states.** The zero-divisor cone has a second physical reading on the informational sector $\mathbb{M}_{+}$. There the trace-one slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $N(\tilde\varpi)=0$ at the boundary. The cone is thus the wall of reversibility on $\mathbb{M}_{-}$ and the boundary of the pure states on $\mathbb{M}_{+}$, one algebraic set read on the two sectors.
+**The same cone bounds the pure states.** The zero-divisor cone has a second physical interpretation on the informational sector $\mathbb{M}_{+}$. There the trace-one slice of the positive cone is the Bloch ball, its boundary is the set of pure states, and every pure state is a zero divisor: the pure-state idempotents satisfy $N(\tilde\Pi)=0$ on the Bloch sphere. The cone is thus the wall of reversibility on $\mathbb{M}_{-}$, and on $\mathbb{M}_{+}$ it meets the positive cone in the cone over the pure states; its intersection with the trace-one slice is the Bloch sphere.
 
-**The boundary of the reading.** The two readings are of one set and not of one physical object. On $\mathbb{M}_{-}$ the cone is the light cone; on $\mathbb{M}_{+}$ it is the boundary of the state space. The identification requires the cut by the sector, and the algebra alone does not say which reading applies.
+**The boundary of the interpretation.** The two interpretations are of one set and not of one physical object. On $\mathbb{M}_{-}$ the cone is the light cone; on $\mathbb{M}_{+}$ its trace-one slice is the boundary of the state space. The identification requires the cut by the sector, and the algebra alone does not say which interpretation applies.
 
 ### Divisibility
 
@@ -79,7 +79,7 @@ $$
 $$
 and the apex is the element that divides only $0$ and is divided by everything. **The order structure is the divisibility preorder.** The units are its top equivalence class and the cone is the class of the divisors of nothing.
 
-**The boundary of the reading.** Divisibility is a preorder, not a total order, and it carries no cost. A physical resource theory would need a monotone and a composition law; the algebra supplies the preorder only.
+**The boundary of the interpretation.** Divisibility is a preorder, not a total order, and it carries no cost. A physical resource theory would need a monotone and a composition law; the algebra supplies the preorder only.
 
 ## The Shape of the Reversible Region
 
@@ -117,11 +117,11 @@ $$
 \qquad
 \pi_3(\mathbb{B}^{\times})\cong\mathbb{Z},
 $$
-with universal cover $(\mathbb{B}^{\times})^{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$.
+with $(\mathbb{B}^{\times})^{\mathrm{cov}}\simeq\mathbb{R}\times S^{3}$.
 
-**The topology is carried by the compact form.** Every unit can be deformed to a unitary one, and every norm-one unit to a unit quaternion. The qualitative features of the group — its connectedness, its loops, its third homotopy — are therefore the features of $\mathrm{U}(2)$ and $S^{3}$; the non-compact directions are a contractible thickening. Read physically, the reversible region has the topology of its compact core, and the boosts and dilations add no new loops or components.
+**The topology is carried by the compact form.** Every unit can be deformed to a unitary one, and every norm-one unit to a unit quaternion. The qualitative features of the group — its connectedness, its loops, its third homotopy — are therefore the features of $\mathrm{U}(2)$ and $S^{3}$; the non-compact directions are a contractible thickening. Interpreted physically, the reversible region has the topology of its compact core, and the boosts and dilations add no new loops or components.
 
-**The boundary of the reading.** The retraction is a deformation, not a physical relaxation. The path supplied by the polar decomposition is a mathematical homotopy and is not a sequence of physical operations.
+**The boundary of the interpretation.** The retraction is a deformation, not a physical relaxation. The path supplied by the polar decomposition is a mathematical homotopy and is not a sequence of physical operations.
 
 ### The Norm-One Slice
 
@@ -131,15 +131,15 @@ $$
 $$
 the proper orthochronous Lorentz group. A norm-one unit is therefore a **spin frame**: a frame of the material sector together with the sign that the spinor carries. The centre supplies the complex scale and the phase, and the norm-one slice supplies the shape.
 
-**The boundary of the reading.** The frame is an algebraic frame, not a laboratory. The identification of $\mathbb{B}^{\times}_{1}$ with the spin frame bundle is the statement that the group acts simply transitively on frames up to sign; it does not fix a reference frame, and it does not supply a metric beyond the norm.
+**The boundary of the interpretation.** The frame is an algebraic frame, not a laboratory. The identification of $\mathbb{B}^{\times}_{1}$ with the spin frame bundle is the statement that the group acts simply transitively on frames up to sign; it does not fix a reference frame, and it does not supply a metric beyond the norm.
 
 ### The Two Loops
 
-**The fundamental group is the winding around the wall.** The complement of a complex cone of codimension two in $\mathbb{C}^{4}$ has fundamental group $\mathbb{Z}$, and the generator is a loop that links the cone. In the matrix picture the generator is a loop along which the determinant winds once. The central phase circle $Ae_t$ with $|A|=1$ has determinant $A^{2}$ and is therefore twice the generator, not the generator itself. Read physically, the one topological charge of the reversible region is the winding around the wall of non-invertibility; the overall phase is a double winding of it.
+**The fundamental group is the winding around the wall.** The complement of a complex cone of codimension two in $\mathbb{C}^{4}$ has fundamental group $\mathbb{Z}$, and the generator is a loop that links the cone. In the matrix picture the generator is a loop along which the determinant winds once. The central phase circle $Ae_t$ with $|A|=1$ has determinant $A^{2}$ and is therefore twice the generator, not the generator itself. Interpreted physically, the one topological charge of the reversible region is the winding around the wall of non-invertibility; the overall phase is a double winding of it.
 
-**The universal cover unwraps the phase.** The universal cover $\mathbb{R}\times S^{3}$ replaces the loop direction by a real line. The phase circle is the image of that line under the double covering. A clock read on the cover has no intrinsic period, while a clock read on the group is periodic. The third homotopy group, $\pi_3(\mathbb{B}^{\times})\cong\mathbb{Z}$, is generated by the unit quaternions and is the winding of the compact factor.
+**The universal cover unwraps the phase.** The universal cover, which is homotopy equivalent to $\mathbb{R}\times S^{3}$, replaces the loop direction by a real line. The phase circle is the image of that line under the universal covering. A clock read on the cover has no intrinsic period, while a clock read on the group is periodic. The third homotopy group, $\pi_3(\mathbb{B}^{\times})\cong\mathbb{Z}$, is generated by the unit quaternions and is the winding of the compact factor.
 
-**The boundary of the reading.** The winding is a property of the group, not a quantisation of a physical charge. The algebra does not say that the phase is compact in nature, nor that the winding is observed; it supplies the homotopy class, and a gauge theory or a field configuration would have to supply the rest.
+**The boundary of the interpretation.** The winding is a property of the group, not a quantisation of a physical charge. The algebra does not say that the phase is compact in nature, nor that the winding is observed; it supplies the homotopy class, and a gauge theory or a field configuration would have to supply the rest.
 
 ## The Cone and Its Link
 
@@ -163,25 +163,21 @@ $$
 $$
 It is not $S^{5}$, so the apex is a genuine singularity of the cone.
 
-**The wall has no topology of its own.** The cone is contractible, so its only topological invariant is the link. Read physically, the radial extent of the light cone carries no topology; the directions carry it. The cone is a wall without holes, and the holes live in its link.
+**The wall has no topology of its own.** The cone is contractible, so its only topological invariant is the link. Interpreted physically, the radial extent of the light cone carries no topology; the directions carry it. The cone is a wall without holes, and the holes live in its link.
 
-**The boundary of the reading.** The statement is about the full complex cone in the eight-dimensional real algebra. The light cone of the material sector is a real three-dimensional cone inside $\mathbb{M}_{-}$; it is also contractible, but its link is the ordinary $S^{2}$ of null directions, not the five-manifold $L$.
+**The boundary of the interpretation.** The statement is about the full complex cone in the eight-dimensional real algebra. The light cone of the material sector is a real three-dimensional cone inside $\mathbb{M}_{-}$; it is also contractible, but its link is the ordinary $S^{2}$ of null directions, not the five-manifold $L$.
 
 ### The Link as Null Directions
 
-The link is the space of complex null directions at fixed scale. A nonzero null element factors through a pair of spinors,
-$$
-(Z_0,Z_1,Z_2,Z_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta),
-$$
-with $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. The link is therefore the quotient of $S^{3}\times S^{3}$ by the diagonal $S^{1}$, an $S^{1}$-bundle over $S^{2}\times S^{2}$: two projective spinors and a relative phase.
+The link is the space of complex null directions at fixed scale. A nonzero null element is a rank-one matrix, $\mathsf{M}_2(\tilde Q)=u v^{\mathsf T}$ with $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$, the pair being determined up to $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$. The link is therefore the quotient of $S^{3}\times S^{3}$ by the circle acting as $(u,v)\mapsto(\lambda u,\lambda^{-1}v)$, an $S^{1}$-bundle over $S^{2}\times S^{2}$: two projective spinors and a relative phase.
 
-**The link is the space of complex null directions.** Read physically, a complex null four-vector is a pair of chiral spinors together with a relative phase; the two $S^{2}$ factors are the two celestial spheres and the $S^{1}$ fibre is the little-group phase. On the real material sector the null four-vector is Hermitian of rank one, the two spinors are conjugate, and the pair collapses to one projective spinor: the link becomes the $S^{2}$ of null directions, with the phase as the fibre of $S^{3}\to S^{2}$.
+**The link is the space of complex null directions.** Interpreted physically, a complex null four-vector is a pair of chiral spinors together with a relative phase; the two $S^{2}$ factors are the two celestial spheres and the $S^{1}$ fibre is the little-group phase. On the real material sector the null four-vector is Hermitian of rank one, the two spinors are conjugate, and the pair collapses to one projective spinor: the link becomes the $S^{2}$ of null directions, with the phase as the fibre of $S^{3}\to S^{2}$.
 
-**The boundary of the reading.** The five-manifold $L$ is the complexified object. The physical null cone of $\mathbb{M}_{-}$ has the two-sphere link, and the two-sphere pair of $L$ is the complexification, not two physical directions.
+**The boundary of the interpretation.** The five-manifold $L$ is the complexified object. The physical null cone of $\mathbb{M}_{-}$ has the two-sphere link, and the two-sphere pair of $L$ is the complexification, not two physical directions.
 
 ### The Singular Apex
 
-**The apex is not a direction.** The link of a manifold point is a sphere; the link of the apex is not, so the apex is not a manifold point. Read physically, the zero four-vector is not a direction and not a state: the tip of the light cone is the one point with no celestial sphere. The singularity is topological; it is not a curvature singularity and it carries no metric.
+**The apex is not a direction.** The link of a manifold point is a sphere; the link of the apex is not, so the apex is not a manifold point. Interpreted physically, the zero four-vector is not a direction and not a state: the tip of the light cone is the one point with no celestial sphere. The singularity is topological; it is not a curvature singularity and it carries no metric.
 
 ## The Orders
 
@@ -209,11 +205,13 @@ $$
 $$
 the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit-group index is three, although the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=S^{3}$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^{4}$; its symmetry group is the Weyl group $F_4$ of order $1152$, containing $B_4$ of order $384$, and both are strictly larger than the unit group. The twenty-four units give twelve distinct rotations $\rho_v(\tilde Q_1)=-v\tilde Q_1v^{-1}$ of the real slice, with $2T/\{\pm e_t\}\cong A_4$. The five families of finite subgroups are the five simply laced Dynkin types, the McKay correspondence.
 
-**The order is the discrete skeleton.** An order is a lattice subring of the real sector: a discrete set of sites closed under addition and multiplication, the algebraic form of a lattice. Its unit group is the set of lattice operations that are reversible inside the lattice. Read physically, the order is the discrete skeleton of the material sector, and the finite unit group is its discrete symmetry.
+**The order is the discrete skeleton.** An order is a lattice subring of the real sector: a discrete set of sites closed under addition and multiplication, the algebraic form of a lattice. Its unit group is the set of lattice operations that are reversible inside the lattice. The quaternion units are the rotations by $\pi$ of the lattice, and the binary groups are their lifts; read against the continuous groups, the orders are what survives when the frame is restricted to integral elements. Interpreted physically, the order is the discrete skeleton of the material sector, and the finite unit group is its discrete symmetry. Read on a lattice, the orders are the arithmetic counterpart of a lattice gauge theory and of a quantum simulation of the framework; the real slice is the Euclidean lattice and its imaginary translate the thermal direction, so the arithmetic of the orders is also the arithmetic of the thermal circle. The algebra supplies the arithmetic, not the gauge field or the temperature.
 
-**The finite unit group has no phase.** A finite subgroup of $S^{3}$ is discrete and lies in the real slice; it carries no continuous phase. The phase of the framework comes from the centre $\mathbb{C}^{\times}e_t$, not from the units. Read physically, a finite symmetry has no clock, and a continuous phase is a central, not a discrete, object.
+**The finite unit group has no phase.** A finite subgroup of $S^{3}$ is discrete and lies in the real slice; it carries no continuous phase. The phase of the framework comes from the centre $\mathbb{C}^{\times}e_t$, not from the units. Interpreted physically, a finite symmetry has no clock, and a continuous phase is a central, not a discrete, object.
 
-**The figure is larger than the group.** The $24$-cell has $1152$ symmetries, while the unit group acting on it has $24$ elements and gives twelve rotations. Read physically, the symmetry of the lattice is not the unit group; the figure can have more symmetries than the operations the units supply. The distinction is the one between a crystal's point group and the rotations of its lattice.
+**The Hurwitz units are the tetrahedral half of the Clifford lift.** The binary octahedral group $2O$ of order $48$ is the lift to the unit sphere of the one-qubit Clifford group, whose projective image is the octahedral rotation group of order $24$; the Hurwitz group $2T$ of order $24$ is its index-two tetrahedral half. Interpreted physically, the $24$-cell is not the Clifford group: it is the even half of it, and the identification of the Hurwitz units with the single-qubit Clifford group is wrong by the index two.
+
+**The figure is larger than the group.** The $24$-cell has $1152$ symmetries, while the unit group acting on it has $24$ elements and gives twelve rotations. Interpreted physically, the symmetry of the lattice is not the unit group; the figure can have more symmetries than the operations the units supply. The distinction is the one between a crystal's point group and the rotations of its lattice.
 
 **The complex order sees the light cone.** The integral biquaternions $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal{L}'$ have an infinite unit group. A pure null element with Gaussian-integer coefficients, for instance
 $$
@@ -229,27 +227,27 @@ N(e_t+P)=1,
 \qquad
 n\in\mathbb{Z}.
 $$
-Read physically, the real orders have finite unit groups because the real sector is definite and has no null direction; the complex order contains the null direction and its unit group is infinite. The finite unit groups are the symmetries of the massive, non-null sector; the infinite family is the algebraic trace of the light cone.
+Interpreted physically, the real orders have finite unit groups because the real sector is definite and has no null direction; the complex order contains the null direction and its unit group is infinite. The finite unit groups are the symmetries of the massive, non-null sector; the infinite family is the algebraic trace of the light cone.
 
-**The McKay classification is the ADE classification.** Through the McKay correspondence the finite subgroups of $S^{3}$ are the simply laced Dynkin types $A^{(1)}$, $D^{(1)}$, $E_6^{(1)}$, $E_7^{(1)}$, $E_8^{(1)}$, and the Kleinian singularities $\mathbb{C}^{2}/\Gamma$ are their orbifolds. Read physically, the discrete symmetries of the framework are classified by the simply laced simple Lie algebras rather than by a list of groups. The reading is a classification; it exhibits no orbifold of the algebra and no action of the finite groups on the fields.
+**The McKay classification is the ADE classification.** Through the McKay correspondence the finite subgroups of $S^{3}$ are the simply laced Dynkin types $A^{(1)}$, $D^{(1)}$, $E_6^{(1)}$, $E_7^{(1)}$, $E_8^{(1)}$, and the Kleinian singularities $\mathbb{C}^{2}/\Gamma$ are their orbifolds. Interpreted physically, the discrete symmetries of the framework are classified by the simply laced simple Lie algebras rather than by a list of groups. The interpretation is a classification; it exhibits no orbifold of the algebra and no action of the finite groups on the fields.
 
-**The boundary of the order readings.** The orders are arithmetic. They supply no lattice spacing, no dynamics and no spectrum; a physical lattice would require a scale and an action, and the algebra supplies neither. The identification of the infinite unit family with a translation is an algebraic analogy: $e_t+kP$ is a unit of the complex order and is not an element of the material sector, so it is not a spacetime translation.
+**The boundary of the order interpretations.** The orders are arithmetic. They supply no lattice spacing, no dynamics and no spectrum; a physical lattice would require a scale and an action, and the algebra supplies neither. The identification of the infinite unit family with a translation is an algebraic analogy: $e_t+kP$ is a unit of the complex order and is not an element of the material sector, so it is not a spacetime translation.
 
 ## The Boundary
 
-The topology of the unit group is not the dynamics of a physical system. The group is open, connected and homotopy equivalent to $S^{1}\times S^{3}$; the cone is closed, contractible and of codimension two; the orders are discrete subrings of the real slice. Each statement is a statement about the algebra, and each physical reading requires a sector, a scale and a law.
+The topology of the unit group is not the dynamics of a physical system. The group is open, connected and homotopy equivalent to $S^{1}\times S^{3}$; the cone is closed, contractible and of codimension two; the orders are discrete subrings of the real slice. Each statement is a statement about the algebra, and each physical interpretation requires a sector, a scale and a law.
 
-The group and the cone are one partition read twice. The group is the reversible region and the cone is its wall; the same cone is the boundary of the pure states on the informational sector. The two readings are not unified by the algebra, and the article does not claim that they are. The cone is a light cone only after the material sector is cut out; it is a state boundary only after the trace-one slice is taken.
+The group and the cone are one partition read twice. The group is the reversible region and the cone is its wall; on the informational sector the cone meets the positive cone in the cone over the pure states. The two interpretations are not unified by the algebra, and the article does not claim that they are. The cone is a light cone only after the material sector is cut out; it is a state boundary only after the trace-one slice is taken.
 
 The orders are arithmetic, not dynamics. The finite unit groups are discrete symmetries, but the algebra does not say which of them a physical configuration realises, and the lattice spacing is external. The infinite unit group of the integral biquaternions is the algebraic trace of the null direction, not a derivation of a translation.
 
 ## Summary
 
-The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{N\neq0\}$ and its zero-divisor cone $\mathcal{C}=\{N=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. The cone is also the boundary of the pure states on the informational sector. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.
+The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{N\neq0\}$ and its zero-divisor cone $\mathcal{C}=\{N=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.
 
-The group is open, dense, connected and of real dimension eight, with $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ and $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; the polar decomposition retracts it onto $\mathrm{U}(2)$, and $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$ and universal cover $\mathbb{R}\times S^{3}$. The norm-one slice modulo the central sign is the frame space $SO^{+}(1,3)$. The cone is contractible, smooth off its apex, and its link is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_1=0$ and $\pi_2\cong\mathbb{Z}$; the apex is a genuine singularity.
+The group is open, dense, connected and of real dimension eight, with $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ and $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; the polar decomposition retracts it onto $\mathrm{U}(2)$, and $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$ and universal cover homotopy equivalent to $\mathbb{R}\times S^{3}$. The norm-one slice modulo the central sign is the frame space $SO^{+}(1,3)$. The cone is contractible, smooth off its apex, and its link is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_1=0$ and $\pi_2\cong\mathbb{Z}$; the apex is a genuine singularity.
 
-The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2T$, the finite subgroups of $S^{3}$, the $24$-cell, the McKay correspondence and the infinite unit group of the integral biquaternions. They are the discrete skeleton of the real sector. The algebra supplies the structures; the physical readings are reversible operations, a wall of reversibility, a state boundary, a frame space and a discrete symmetry, each with its boundary.
+The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2T$, the finite subgroups of $S^{3}$, the $24$-cell, the McKay correspondence and the infinite unit group of the integral biquaternions. They are the discrete skeleton of the real sector. The algebra supplies the structures; the physical interpretations are reversible operations, a wall of reversibility, a state boundary, a frame space and a discrete symmetry, each with its boundary.
 
 ## Summary of Notation
 
@@ -275,5 +273,5 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction and the homotopy groups.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the link and the contractibility.
 - [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the lattices and the finite unit groups.
-- *Biquaternion Orders and Finite Groups of Units*, the physics companion, for the readings of the discrete skeleton.
+- *Biquaternion Orders and Finite Groups of Units*, the physics companion, for the interpretations of the discrete skeleton.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-cell.
