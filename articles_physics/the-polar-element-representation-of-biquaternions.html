@@ -254,7 +254,7 @@ $$</p>
 <p>and §<em>The Boost</em> below constructs the positive-definite square root and fixes which of the two square roots the representation selects.</p>
 <p><strong>The order of the word.</strong> The word $\exp(i\alpha)B\tilde q$ is the ordered product of its factors, and the order is the physical order of the operations, because $\exp(-i\psi\vec u_{\mathrm b})$ and $\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ do not commute. §<em>The Order of the Factors</em> measures the failure; here it fixes the reading, which is the transfer of the $ict$, then the boost, then the rotation.</p>
 <h2 id="the-scale">The Scale</h2>
-<p><strong>The scale is the square root of the determinant.</strong> In the $2\times2$ matrix representation the biquaternion norm is the determinant,</p>
+<p><strong>The scale is the square root of the modulus of the determinant.</strong> In the $2\times2$ matrix representation the biquaternion norm is the determinant,</p>
 <p>$$
 \det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 ,
 $$</p>
@@ -266,7 +266,7 @@ $$</p>
 <p>$$
 r = \left|\det\mathsf{M}_2(\tilde{Q})\right|^{1/2} , \qquad \alpha = \tfrac12\arg\det\mathsf{M}_2(\tilde{Q}) ,
 $$</p>
-<p>and the scale in particular is the modulus of the determinant. Every statement about the scale is therefore a statement about the determinant of the matrix representative, and the failure of the representation at $\langle\tilde{Q}\rangle_{\natural} = 0$ is the failure of the matrix representative to be invertible. In the four-vector interpretation, $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone: the polar representation of a biquaternion is available exactly on the nonzero elements off the light cone.</p>
+<p>and the scale in particular is the square root of the modulus of the determinant. Every statement about the scale is therefore a statement about the determinant of the matrix representative, and the failure of the representation at $\langle\tilde{Q}\rangle_{\natural} = 0$ is the failure of the matrix representative to be invertible. In the four-vector interpretation, $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone: the polar representation of a biquaternion is available exactly on the nonzero elements off the light cone.</p>
 <p><strong>The condition, and why it is mild.</strong> The representation of $\tilde{Q}$ exists if and only if $\tilde{Q}$ lies outside the light cone,</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural}\neq0 ,
@@ -315,9 +315,9 @@ $$</p>
 <p>$$
 \tilde U_{\mathrm L}\,\tilde{Q}\,\tilde U_{\mathrm L}^{*} = ic\tau\,e_t ,
 \qquad\text{hence}\qquad
-\tilde{Q} = \tilde U_{\mathrm L}^{*}\left(ic\tau e_t\right)\tilde U_{\mathrm L} = ic\tau\,\tilde U_{\mathrm L}^{*2} = ic\tau\,(\tilde U_{\mathrm L}^{\natural})^2 ,
+\tilde{Q} = \tilde U_{\mathrm L}^{\natural}\left(ic\tau e_t\right)\tilde U_{\mathrm L}^{\natural} = ic\tau\,\tilde U_{\mathrm L}^{\natural 2} = ic\tau\,B ,
 $$</p>
-<p>where the last step uses the Hermitian character of a pure boost rotor, $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}^{\natural}$. The comparison with the representation of the same four-position,</p>
+<p>where the last step uses $\tilde U_{\mathrm L}^{*}=\tilde U_{\mathrm L}$ and $\tilde U_{\mathrm L}^{-1}=\tilde U_{\mathrm L}^{\natural}$ for a pure boost rotor. The comparison with the representation of the same four-position,</p>
 <p>$$
 \tilde{Q} = c\tau\,\exp(i\pi/2)\,B ,
 $$</p>
@@ -389,9 +389,9 @@ $$</p>
 $$</p>
 <p>that is, $\tilde U_{\mathrm L} = 1.060660172\,e_t + 0.353553391\,i\vec e_x$. Its biquaternion norm is $\langle\tilde U_{\mathrm L}\rangle_{\natural} = \cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2} = 1$, so the modulus is $\rho = 1$, the scale is $r = 1$, the phase is $\alpha = 0$, and the representation returns</p>
 <p>$$
-\tilde U_{\mathrm L} = 1\cdot \exp(i\cdot0)\cdot B\cdot\tilde q , \qquad B = \tilde U_{\mathrm L} , \qquad \tilde q = e_t ,
+\tilde U_{\mathrm L} = 1\cdot \exp(i\cdot0)\cdot \tilde H\cdot\tilde q , \qquad \tilde H = \tilde U_{\mathrm L} , \qquad \tilde q = e_t ,
 $$</p>
-<p>with $B = \tilde U_{\mathrm L}$, since a Hermitian positive-definite element is its own positive-definite factor and the rotor is then $\tilde q = \bar{B}\tilde U_{\mathrm L} = \langle\tilde U_{\mathrm L}\rangle_{\natural}e_t = e_t$. The example is the one the maths companion article uses, and it is the reason the physics corpus works with two factors instead of four: on the Lorentz group the first two are trivial.</p>
+<p>with polar Hermitian factor $\tilde H = \tilde U_{\mathrm L}$ (not the four-vector boost factor $B=\exp(-i\psi\vec u_{\mathrm b})$ of §<em>The Boost</em>), since a Hermitian positive-definite element is its own positive-definite factor, and the rotor is then $\tilde q=e_t$. The example is the one the maths companion article uses, and it is the reason the physics corpus works with two factors instead of four: on the Lorentz group the first two are trivial.</p>
 <h3 id="a-four-position-and-its-proper-time">A Four-Position and Its Proper Time</h3>
 <p>Take $\tilde{R} = i\,e_t + 0.6\,\vec e_x$, the four-position of a particle at $ct = 1$ moving at $0.6c$ along $\vec e_x$. Then</p>
 <p>$$
@@ -407,7 +407,7 @@ $$</p>
 <p>$$
 B = 1.072349609\,e_t - 0.173166789\,i\vec e_x - 0.346333577\,i\vec e_y ,
 $$</p>
-<p>of rapidity $0.756273220$ about the axis $-(1,2,0)/\sqrt5$, and the rotor is</p>
+<p>of rapidity $0.378136610$ about the axis $(1,2,0)/\sqrt5$, and the rotor is</p>
 <p>$$
 \tilde q = 0.470592172\,e_t + 0.394599292\,\vec e_x + 0.789198585\,\vec e_y ,
 $$</p>

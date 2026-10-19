@@ -79,7 +79,7 @@ $$</p>
 <p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$, with $Q_\mu\in\mathbb{C}$.</p>
 <p>Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}}$, the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the reversal is $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$.</p>
 <p>The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the representation is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.</p>
-<p>The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\rho = r\exp(i\alpha)$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of <em>Introduction to the Remarkable Subspaces</em>, and the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of <em>Comparison of the Remarkable Subspaces</em>.</p>
+<p>The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\exp(i\alpha)$, $\psi$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of <em>Introduction to the Remarkable Subspaces</em>, and the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of <em>Comparison of the Remarkable Subspaces</em>.</p>
 <p>No physics is invoked; the physical reading is cited where it clarifies the algebra.</p>
 <h2 id="the-four-exponents-of-the-word">The Four Exponents of the Word</h2>
 <p>Each of the four factors is the exponential of a single element of the algebra, which is the reading of <em>The Polar Element Representation of Biquaternions</em>, whose four factors are each the exponential of a single element of the algebra:</p>
@@ -414,12 +414,12 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
-<td>$\lvert\vec\rho\rvert^{2}-\tau^{2}$, real indefinite</td>
+<td>$\lvert\vec\Rho\rvert^{2}-\tau^{2}$, real indefinite</td>
 <td>$0$ or $\pi/2$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The coordinates of the last two rows are those of the sectors: an element of the Hermitian subspace is $\sigma e_t+i\vec w$ with $\sigma = \operatorname{Re}Q_t$ and $\vec w = w_x\vec e_x+w_y\vec e_y+w_z\vec e_z$ real, and an element of the anti-Hermitian subspace is $i\tau e_t+\vec\rho$ with $\tau = \operatorname{Im}Q_t$ and $\vec\rho$ real. The two bars denote the Euclidean norm of the vector, $\lvert\vec w\rvert^{2} = w_x^{2}+w_y^{2}+w_z^{2}$ and likewise for $\vec\rho$; on the vector subspace the same notation reads $(\vec Q,\vec Q) = Q_x^{2}+Q_y^{2}+Q_z^{2}$ with complex components, the complex Euclidean square.</p>
+<p>The coordinates of the last two rows are those of the sectors: an element of the Hermitian subspace is $\sigma e_t+i\vec w$ with $\sigma = \operatorname{Re}Q_t$ and $\vec w = w_x\vec e_x+w_y\vec e_y+w_z\vec e_z$ real, and an element of the anti-Hermitian subspace is $i\tau e_t+\vec\Rho$ with $\tau = \operatorname{Im}Q_t$ and $\vec\Rho$ real. The two bars denote the Euclidean norm of the vector, $\lvert\vec w\rvert^{2} = w_x^{2}+w_y^{2}+w_z^{2}$ and likewise for $\vec\Rho$; on the vector subspace the same notation reads $(\vec Q,\vec Q) = Q_x^{2}+Q_y^{2}+Q_z^{2}$ with complex components, the complex Euclidean square.</p>
 <p><strong>The phase is a free coordinate on exactly the two subspaces whose norm is complex</strong>, the centre and the vector subspace, in the sense that it takes every value in the branch interval as the element varies; on a given element it is fixed by the norm, and it is $0$ or $\pi/2$ wherever the norm is real and nonzero, in particular on the real and imaginary lines. It is frozen on the two halves, at $0$ and at $\pi/2$, and it is a two-valued label on the two sectors, where the norm is real indefinite. The norm is complex on exactly the two subspaces that are not real forms of the algebra, which is the same pair.</p>
 <p>The two non-central factors behave as follows.</p>
 <div class="table-scroll"><table>
@@ -515,21 +515,21 @@ $$</p>
 <p>The rotor set is a <strong>group</strong>: the product of two unit real quaternions is a unit real quaternion. The phase set is a group as well, and the scale set is a group under multiplication; these three are the groups the word carries.</p>
 <p>The boost set is <strong>not</strong> a group: the product of two Hermitian positive elements is not Hermitian in general, so the product of two boosts does not stay in the boost set. The product of two boosts is a boost times a rotor,</p>
 <p>$$
-\tilde U_{\mathrm b}(a,\hat a)\,\tilde U_{\mathrm b}(b,\hat b) = \tilde U_{\mathrm b}(\psi,\vec u_{\mathrm b})\,\tilde u_{\mathrm r}(\theta,\vec u_{\mathrm r}) ,
+\tilde U_{\mathrm b}(a,\vec u_1)\,\tilde U_{\mathrm b}(b,\vec u_2) = \tilde U_{\mathrm b}(\psi,\vec u_{\mathrm b})\,\tilde u_{\mathrm r}(\theta,\vec u_{\mathrm r}) ,
 $$</p>
-<p>and the parameters are the classical ones. Writing $\phi$ for the angle between the two axes $\hat a,\hat b$, the rapidity of the product is fixed by</p>
+<p>and the parameters are the classical ones. The rapidity of the product is fixed by the axes through their scalar and vector products,</p>
 <p>$$
-\cosh\psi = \cosh a\cosh b+\sinh a\sinh b\cos\phi ,
+\cosh\psi = \cosh a\cosh b+\sinh a\sinh b\,(\vec u_1\cdot\vec u_2) ,
 $$</p>
 <p>and the residual rotor by</p>
 <p>$$
-\tan\frac{\theta}{2} = \frac{\sinh\frac{a}{2}\sinh\frac{b}{2}\sin\phi}{\cosh\frac{a}{2}\cosh\frac{b}{2}+\sinh\frac{a}{2}\sinh\frac{b}{2}\cos\phi} .
+\tan\frac{\theta}{2} = \frac{\sinh\frac{a}{2}\sinh\frac{b}{2}\,\lvert\vec u_1\times\vec u_2\rvert}{\cosh\frac{a}{2}\cosh\frac{b}{2}+\sinh\frac{a}{2}\sinh\frac{b}{2}\,(\vec u_1\cdot\vec u_2)} .
 $$</p>
 <p>Both identities were verified in double precision over $300$ random pairs, the first to $9.8\times10^{-13}$ and the second to $2.8\times10^{-13}$. The residual rotor is the Thomas-Wigner rotation of the physics articles, <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>; the algebra records it as the statement that the boost set is a symmetric space and not a group, and the word records it as the escape into the rotor factor.</p>
 <p>The two axes are two directions of the vector subspace, $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$, and the question whether they commute is the question whether the word may be reordered. With both factors nontrivial, they commute exactly when they are parallel, and then the word is a single boost-rotation about the common axis; if one factor is central, the word is already order-free. The bracket is developed in <em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em>, §<em>The Two Exponents of the Word</em>.</p>
 <h2 id="the-vector-subspace-is-rigid">The Vector Subspace Is Rigid</h2>
 <p>The vector subspace is the one subspace on which the polar data of every element is fixed in shape. The block table gives the reason: the vector subspace is the sum $B_1\oplus B_2$ of the two blocks that carry the two non-central exponents, and nothing else. The two central coordinates vanish, and their vanishing is a condition on the two non-central factors.</p>
-<p><strong>Proposition (the half-turn rotor of a pure vector).</strong> Let $\vec Q$ be an element of the vector subspace with $N(\vec Q)\neq0$, and let $\vec Q = \rho\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its polar word. Then the rotor is a half turn, $\theta = \pi$; either the boost is trivial, $\psi=0$, or its axis is orthogonal to the rotor axis.</p>
+<p><strong>Proposition (the half-turn rotor of a pure vector).</strong> Let $\vec Q$ be an element of the vector subspace with $N(\vec Q)\neq0$, and let $\vec Q = \Rho\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its polar word. Then the rotor is a half turn, $\theta = \pi$; either the boost is trivial, $\psi=0$, or its axis is orthogonal to the rotor axis.</p>
 <p><strong>Proof.</strong> Write the two non-central factors in their closed forms,</p>
 <p>$$
 \tilde U_{\mathrm b} = \cosh\tfrac{\psi}{2}\,e_t+i\sinh\tfrac{\psi}{2}\,\vec u_{\mathrm b} , \qquad \tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec u_{\mathrm r} ,
@@ -542,14 +542,14 @@ $$</p>
 <p>$$
 \operatorname{Sc}\bigl(\vec u_{\mathrm b}\vec u_{\mathrm r}\bigr) = -\,(\vec u_{\mathrm b},\vec u_{\mathrm r}) .
 $$</p>
-<p>The element $\vec Q$ is pure, so $\operatorname{Sc}(\vec Q) = 0$, and the modulus $\rho$ is central, so $\operatorname{Sc}(\tilde U_{\mathrm b}\tilde u_{\mathrm r}) = 0$ as well. The right-hand side is the sum of a real number and a purely imaginary one, so both vanish:</p>
+<p>The element $\vec Q$ is pure, so $\operatorname{Sc}(\vec Q) = 0$, and the modulus $\Rho$ is central, so $\operatorname{Sc}(\tilde U_{\mathrm b}\tilde u_{\mathrm r}) = 0$ as well. The right-hand side is the sum of a real number and a purely imaginary one, so both vanish:</p>
 <p>$$
 \cosh\tfrac{\psi}{2}\cos\tfrac{\theta}{2} = 0 , \qquad \sinh\tfrac{\psi}{2}\sin\tfrac{\theta}{2}\,(\vec u_{\mathrm b},\vec u_{\mathrm r}) = 0 .
 $$</p>
 <p>The first gives $\cos\tfrac{\theta}{2} = 0$, that is $\theta = \pi$, since $\theta\in[0,2\pi]$ and the other factor is positive. The second, with $\sin\tfrac{\theta}{2} = 1$, gives either $\psi = 0$ or $(\vec u_{\mathrm b},\vec u_{\mathrm r}) = 0$: the boost is trivial or the two axes are orthogonal.</p>
-<p><strong>Corollary (the normalised piece of a pure vector is a root of $-1$).</strong> With the notation of the proposition, the unit-norm part $\vec Q/\rho$ satisfies</p>
+<p><strong>Corollary (the normalised piece of a pure vector is a root of $-1$).</strong> With the notation of the proposition, the unit-norm part $\vec Q/\Rho$ satisfies</p>
 <p>$$
-\left(\frac{\vec Q}{\rho}\right)^{\natural} = -\frac{\vec Q}{\rho} , \qquad \left(\frac{\vec Q}{\rho}\right)^{2} = -e_t ,
+\left(\frac{\vec Q}{\Rho}\right)^{\natural} = -\frac{\vec Q}{\Rho} , \qquad \left(\frac{\vec Q}{\Rho}\right)^{2} = -e_t ,
 $$</p>
 <p>so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified over $1000$ random complex vectors, the natural conjugate to machine precision and the square to $3.6\times10^{-15}$, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $4.4\times10^{-16}$, and the dot product of the two axes vanished to $2.6\times10^{-15}$ whenever the boost was nontrivial.</p>
 <p><strong>Converse.</strong> The argument reverses. If the rotor of the word of an element is a half turn and either the boost is trivial or its axis is orthogonal to the rotor axis, then the scalar part of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ vanishes, so the element with that word and any central modulus is pure. The vector subspace is therefore exactly the set of elements whose word has a half-turn rotor, with the boost trivial or its axis orthogonal to the rotor axis.</p>
@@ -598,7 +598,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
-<td>the cone $\lvert\vec\rho\rvert^{2} = \tau^{2}$</td>
+<td>the cone $\lvert\vec\Rho\rvert^{2} = \tau^{2}$</td>
 <td>$3$</td>
 <td>fails on the cone</td>
 </tr>
@@ -670,16 +670,16 @@ $$</p>
 \tilde{Q}^{*} = r\,\exp(-i\alpha)\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b} ,
 $$</p>
 <p>verified to $1.1\times10^{-14}$ over $300$ elements: the scale is unchanged, the phase is reversed, and the two non-central factors appear in the reversed order, with the boost on the right. Read in the standard order, its boost is $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ — the same rapidity about the rotor-rotated axis — and its rotor is $\tilde u_{\mathrm r}^{-1}$, verified to $1.7\times10^{-14}$ and $3.6\times10^{-15}$.</p>
-<p>The reversal is the Hermitian conjugate followed by the central sign, $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$, and the central sign is a factor of the word: multiplying a unit-norm element by $-e_t$ leaves the scale, the phase and the boost in place, since $(-e_t)$ commutes and the Hermitian positive factor of $-X$ is that of $X$, and it negates the rotor. So the reversal has the same scale, the same phase and the same boost as the Hermitian conjugate, and its rotor is $-\tilde u_{\mathrm r}^{-1}$, verified to $3.6\times10^{-15}$: the same rotation read on the other sheet of the double cover, which is why the two words are the same only up to the sign of the rotor.</p>
+<p>The reversal is the Hermitian conjugate followed by the central sign, $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$, and the central sign is a factor of the word: multiplying a unit-norm element by $-e_t$ leaves the scale, the phase and the boost in place, since $(-e_t)$ commutes and the Hermitian positive factor of $-\tilde Q$ is that of $\tilde Q$, and it negates the rotor. So the reversal has the same scale, the same phase and the same boost as the Hermitian conjugate, and its rotor is $-\tilde u_{\mathrm r}^{-1}$, verified to $3.6\times10^{-15}$: the same rotation read on the other sheet of the double cover, which is why the two words are the same only up to the sign of the rotor.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>The centre.</strong> For $\tilde{Q} = 1.2-0.5i$, the norm is $1.19-1.2i$, the modulus is $\rho = 1.2-0.5i$, so $r = 1.3$ and $\alpha = -0.394791120$, and the two non-central factors are $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_t$. The argument of $Q_t$ lies in the branch interval, so the rotor is $+e_t$ and not $-e_t$. The reconstruction error is $1.1\times10^{-16}$.</p>
-<p><strong>The quaternion subspace.</strong> For $h = 0.7+1.1\vec e_x-0.4\vec e_y+0.9\vec e_z$ the norm is the positive real $2.67$, so $\alpha = 0$, the boost is $e_t$, and the rotor is the normalised element,</p>
+<p><strong>The centre.</strong> For $\tilde{Q} = 1.2-0.5i$, the norm is $1.19-1.2i$, the modulus is $\Rho = 1.2-0.5i$, so $r = 1.3$ and $\alpha = -0.394791120$, and the two non-central factors are $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_t$. The argument of $Q_t$ lies in the branch interval, so the rotor is $+e_t$ and not $-e_t$. The reconstruction error is $1.1\times10^{-16}$.</p>
+<p><strong>The quaternion subspace.</strong> For $\tilde q = 0.7+1.1\vec e_x-0.4\vec e_y+0.9\vec e_z$ the norm is the positive real $2.67$, so $\alpha = 0$, the boost is $e_t$, and the rotor is the normalised element,</p>
 <p>$$
 \tilde u_{\mathrm r} = 0.428393043\,e_t+0.673189067\,\vec e_x-0.244796025\,\vec e_y+0.550791055\,\vec e_z ,
 $$</p>
 <p>of angle $\theta = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.609556915)$, with $r = 1.634013464$.</p>
 <p><strong>The anti-quaternion subspace.</strong> The same element multiplied by $i$ has norm $-2.67$, so $\alpha = \pi/2$, the boost is again $e_t$, and the rotor is the same unit real quaternion; only the phase has moved, by the quarter turn.</p>
-<p><strong>The real vector block.</strong> For $\vec\rho = 0.6\vec e_x-0.8\vec e_z$ the norm is $+1$, so $r = 1$, $\alpha = 0$, the boost is $e_t$, and the rotor is the direction $\vec\rho$ itself, of angle $\pi$ about the axis $(0.6,0,-0.8)$: the half turn of the proposition, with a trivial boost. The same direction multiplied by $i$ has norm $-1$, hence $\alpha = \pi/2$, the same boost and the same rotor.</p>
+<p><strong>The real vector block.</strong> For $\vec\Rho = 0.6\vec e_x-0.8\vec e_z$ the norm is $+1$, so $r = 1$, $\alpha = 0$, the boost is $e_t$, and the rotor is the direction $\vec\Rho$ itself, of angle $\pi$ about the axis $(0.6,0,-0.8)$: the half turn of the proposition, with a trivial boost. The same direction multiplied by $i$ has norm $-1$, hence $\alpha = \pi/2$, the same boost and the same rotor.</p>
 <p><strong>A generic complex vector.</strong> For $\vec Q = (0.9+0.4i)\vec e_x+(0.2-0.7i)\vec e_y+0.5\vec e_z$ the norm is complex, $0.45+0.44i$, and the phase is free: $r = 0.793325128$, $\alpha = 0.387081341$. The boost has rapidity $\psi = 1.681781019$ about the axis $(0.428682140,0.244961223,-0.869612340)$, the rotor has angle $\theta = \pi$ about the axis $(0.902525976,-0.072463835,0.424494823)$, and the two axes are orthogonal, their dot product being $1.6\times10^{-16}$. The reconstruction error is $1.2\times10^{-16}$.</p>
 <p><strong>A definite Hermitian element.</strong> For $\tilde U_{\mathrm b} = \cosh0.9\,e_t+i\sinh0.9\,\vec u$ with $\vec u = (1,1,1)/\sqrt3$, of norm one, the half-rapidity is the $0.9$ of the element and the rapidity is $1.8$; the polar data are $r = 1$, $\alpha = 0$, the boost equal to the element and the rotor $e_t$: the element is its own boost, which is the row $N>0$ of the Hermitian subspace. The negated element has the same boost and the rotor $-e_t$.</p>
 <p><strong>The product of two boosts.</strong> For the boost of rapidity $0.7$ about $\vec e_x$ and the boost of rapidity $0.5$ about $\vec e_y$, the product has norm one, so $r = 1$ and $\alpha = 0$, and its polar data are a boost of rapidity $0.882520256$ about the axis $(0.854013219,0.520251306,0)$ and a rotor of angle $0.164398032$ about $-\vec e_z$. The rapidity satisfies $\cosh\psi = \cosh0.7\cosh0.5$ to $9.8\times10^{-13}$, the two axes being orthogonal, and the rotor angle satisfies $\tan\tfrac{\theta}{2} = \sinh0.35\sinh0.25/(\cosh0.35\cosh0.25)$ to $2.8\times10^{-13}$.</p>
@@ -706,7 +706,7 @@ $$</p>
 <td>scale, central phase, Hermitian positive boost, unit real quaternion rotor</td>
 </tr>
 <tr>
-<td>$\rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$</td>
+<td>$\Rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$</td>
 <td>the complex modulus, $N$ the biquaternion norm</td>
 </tr>
 <tr>
@@ -754,8 +754,8 @@ $$</p>
 <td>the scalar and the real vector of an element $\sigma e_t+i\vec w$ of the Hermitian subspace</td>
 </tr>
 <tr>
-<td>$\tau$, $\vec\rho$</td>
-<td>the scalar and the real vector of an element $i\tau e_t+\vec\rho$ of the anti-Hermitian subspace</td>
+<td>$\tau$, $\vec\Rho$</td>
+<td>the scalar and the real vector of an element $i\tau e_t+\vec\Rho$ of the anti-Hermitian subspace</td>
 </tr>
 <tr>
 <td>$\mathrm{Sp}(1)$</td>
@@ -772,10 +772,6 @@ $$</p>
 <tr>
 <td>$\theta$, $\vec u_{\mathrm r}$</td>
 <td>rotation angle and unit axis of the rotor</td>
-</tr>
-<tr>
-<td>$\phi$</td>
-<td>the angle between the two axes of a pair of boosts</td>
 </tr>
 <tr>
 <td>${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$, ${}^{\flat}$</td>

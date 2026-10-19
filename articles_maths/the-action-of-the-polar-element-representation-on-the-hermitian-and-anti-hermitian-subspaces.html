@@ -79,7 +79,7 @@ $$</p>
 <p>$$
 \tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 $$</p>
-<p>with $r>0$, $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, a Hermitian positive unit-norm boost $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$, and a unit real quaternion rotor $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$. The scale and the phase are central. The unitary factor of the Cartan pairing is $U=\exp(i\alpha)\tilde u_{\mathrm r}$, and its sandwich is $\Theta_U=\Theta_{\tilde u_{\mathrm r}}$, because the phase is central. The norm-one factor is $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; it is not unitary unless the boost is trivial. The two norm-one factors are written with the glyph of the identity, $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$, and never with the generic glyph $\tilde Q$. The <strong>norm-one group</strong> is $\mathbb{B}^{\times}_1=\{\tilde U:\langle\tilde U\rangle_{\natural}=1\}$, isomorphic to $SL(2,\mathbb{C})$. The <strong>unitary group</strong> is $\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$, isomorphic to $\mathrm{U}(2)$. The two groups are different: the boost is norm-one but not unitary, the phase is unitary but has norm $e^{2i\alpha}$, and only the rotor is both. This distinction is used throughout.</p>
+<p>with $r>0$, $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, a Hermitian positive unit-norm boost $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$, and a unit real quaternion rotor $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$. The scale and the phase are central. The unitary factor of the Cartan pairing is $\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$, and its sandwich is $\Theta_{\tilde U}=\Theta_{\tilde u_{\mathrm r}}$, because the phase is central. The norm-one factor is $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; it is not unitary unless the boost is trivial. The two norm-one factors are written with the glyph of the identity, $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$, and never with the generic glyph $\tilde Q$. The <strong>norm-one group</strong> is $\mathbb{B}^{\times}_1=\{\tilde U:\langle\tilde U\rangle_{\natural}=1\}$, isomorphic to $SL(2,\mathbb{C})$. The <strong>unitary group</strong> is $\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$, isomorphic to $\mathrm{U}(2)$. The two groups are different: the boost is norm-one but not unitary, the phase is unitary but has norm $\exp(2i\alpha)$, and only the rotor is both. This distinction is used throughout.</p>
 <p><strong>The physical interpretation</strong> is recorded where it clarifies the algebra, and is labelled as such. The mathematics does not depend on it.</p>
 <h2 id="the-action-on-the-anti-hermitian-subspace-math52">The Action on the Anti-Hermitian Subspace $\mathbb{M}_-$</h2>
 <h3 id="the-sector-and-its-form">The Sector and Its Form</h3>
@@ -144,11 +144,11 @@ $$</p>
 $$</p>
 <p>It is unitary as well as norm-one, $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{-1}$, so its sandwich is an algebra automorphism. On $\mathbb{M}_-$ it fixes the time direction $ie_t$ and rotates the vector part,</p>
 <p>$$
-\Theta_{\tilde u_{\mathrm r}}(i a+\vec b)=i a+R(\theta,\vec u_{\mathrm r})\,\vec b,
+\Theta_{\tilde u_{\mathrm r}}(i a+\vec b)=i a+\mathsf R(\theta,\vec u_{\mathrm r})\,\vec b,
 $$</p>
-<p>where $R$ is the spatial rotation of angle $\theta$ about $\vec u_{\mathrm r}$, with the Rodrigues matrix</p>
+<p>where $\mathsf R$ is the spatial rotation of angle $\theta$ about $\vec u_{\mathrm r}$, with the Rodrigues matrix</p>
 <p>$$
-R(\theta,\vec u_{\mathrm r})=I_3+\sin\theta\,[\vec u_{\mathrm r}]_\times+(1-\cos\theta)\,[\vec u_{\mathrm r}]_\times^2,
+\mathsf R(\theta,\vec u_{\mathrm r})=I_3+\sin\theta\,[\vec u_{\mathrm r}]_\times+(1-\cos\theta)\,[\vec u_{\mathrm r}]_\times^2,
 $$</p>
 <p>and $[\vec u_{\mathrm r}]_\times$ the cross-product matrix. The element carries the half-angle $\theta/2$; the action rotates by the full angle $\theta$.</p>
 <h3 id="the-general-norm-one-element">The General Norm-One Element</h3>
@@ -162,11 +162,11 @@ $$</p>
 $$</p>
 <p>so the rotation acts first and the boost second. The order is part of the polar data and is not interchangeable: the boost and the rotor do not commute. In the coordinates $(a,\vec b)$ the action is</p>
 <p>$$
-\Lambda_-(\psi,\theta)=B_-(\psi,\vec u_{\mathrm b})\operatorname{diag}(1,R(\theta,\vec u_{\mathrm r})),
+\Lambda_-(\psi,\theta)=B_-(\psi,\vec u_{\mathrm b})\operatorname{diag}(1,\mathsf R(\theta,\vec u_{\mathrm r})),
 $$</p>
-<p>with $\operatorname{diag}(1,R)$ the block-diagonal matrix that fixes $a$ and applies $R$ to $\vec b$. The matrix $\Lambda_-$ lies in $SO^+(1,3)$.</p>
+<p>with $\operatorname{diag}(1,\mathsf R)$ the block-diagonal matrix that fixes $a$ and applies $\mathsf R$ to $\vec b$. The matrix $\Lambda_-$ lies in $SO^+(1,3)$.</p>
 <h3 id="the-conformal-factor">The Conformal Factor</h3>
-<p>For a general element $\tilde Q=\rho\tilde U_{\mathrm L}$ the action is</p>
+<p>For a general element $\tilde Q=\Rho\tilde U_{\mathrm L}$ the action is</p>
 <p>$$
 \Theta_{\tilde Q}=r^2\,\Lambda_-,
 $$</p>
@@ -190,7 +190,7 @@ $$</p>
 <p>$$
 A\longmapsto \mathsf M_2(\tilde U)\,A\,\mathsf M_2(\tilde U)^{\dagger},
 $$</p>
-<p>so the spinor transforms linearly, $\xi\mapsto\mathsf M_2(\tilde U)\xi$. The ratio $z=\xi_1/\xi_0$ is a point of $\mathbb{C}P^1$, and the action on it is the Möbius action of $SL(2,\mathbb{C})$. In the lift through $\mathsf M_2(\tilde Q)$ the spinor is multiplied by $\rho=r\exp(i\alpha)$; the phase part is pure gauge, and the scale changes only the norm of $\xi$. Neither changes $z$. The celestial sphere therefore sees only the norm-one factor $\tilde U_{\mathrm L}$, through $PSL(2,\mathbb{C})\cong SO^+(1,3)$. This is the projective form of the statement that the phase is in the kernel and the scale is a dilation.</p>
+<p>so the spinor transforms linearly, $\xi\mapsto\mathsf M_2(\tilde U)\xi$. The ratio $z=\xi_1/\xi_0$ is a point of $\mathbb{C}P^1$, and the action on it is the Möbius action of $SL(2,\mathbb{C})$. In the lift through $\mathsf M_2(\tilde Q)$ the spinor is multiplied by $\Rho=r\exp(i\alpha)$; the phase part is pure gauge, and the scale changes only the norm of $\xi$. Neither changes $z$. The celestial sphere therefore sees only the norm-one factor $\tilde U_{\mathrm L}$, through $PSL(2,\mathbb{C})\cong SO^+(1,3)$. This is the projective form of the statement that the phase is in the kernel and the scale is a dilation.</p>
 <h2 id="the-action-on-the-hermitian-subspace-math153">The Action on the Hermitian Subspace $\mathbb{M}_+$</h2>
 <h3 id="the-sector-and-its-form_1">The Sector and Its Form</h3>
 <p>An element of $\mathbb{M}_+$ has a real scalar part and an imaginary vector part,</p>
@@ -225,9 +225,9 @@ $$</p>
 <p>because $\lvert\det\mathsf M_2(\tilde Q)\rvert=\lvert\langle\tilde Q\rangle_{\natural}\rvert=r^2$. The null cone and the causal type are preserved. The action is an isometry of the bilinear form exactly when $r=1$; in that case its $4\times4$ matrix lies in $SO^+(1,3)$.</p>
 <p>The congruence is by a positive matrix for the boost or the scale, and by a unitary matrix for the phase or the rotor. The two cases have different invariants; the boost and the rotor are treated in the next two subsections.</p>
 <h3 id="the-boost_1">The Boost</h3>
-<p>The boost $\tilde U_{\mathrm b}$ is Hermitian positive, so its matrix $S=\mathsf M_2(\tilde U_{\mathrm b})$ is Hermitian positive definite. Its action on $\mathbb{M}_+$ is the congruence</p>
+<p>The boost $\tilde U_{\mathrm b}$ is Hermitian positive, so its matrix $\mathsf U_{\mathrm b}=\mathsf M_2(\tilde U_{\mathrm b})$ is Hermitian positive definite. Its action on $\mathbb{M}_+$ is the congruence</p>
 <p>$$
-\tilde Q_+\longmapsto S\,\tilde Q_+\,S.
+\tilde Q_+\longmapsto \mathsf U_{\mathrm b}\,\tilde Q_+\,\mathsf U_{\mathrm b}.
 $$</p>
 <p>The same decomposition along and transverse to the axis as in $\mathbb{M}_-$ gives</p>
 <p>$$
@@ -254,19 +254,19 @@ $$</p>
 $$</p>
 <p>which differs from $2a$ whenever $b_\parallel\neq0$. In the full word the rotor acts first and rotates the vector part, the boost then uses the rotated parallel component, and the scale multiplies the result by $r^2$. What the boost preserves is the inertia, hence the sign of the determinant and the causal type. In particular, on the timelike cone $a^2>\lvert\vec b\rvert^2$ it preserves the sign of $a$, so it preserves the time orientation. The trace is not an invariant of the action.</p>
 <h3 id="the-rotor_1">The Rotor</h3>
-<p>The rotor is unitary, so its matrix $U_{\mathrm r}=\mathsf M_2(\tilde u_{\mathrm r})$ is unitary. Its action is the unitary conjugation</p>
+<p>The rotor is unitary, so its matrix $\mathsf U_{\mathrm r}=\mathsf M_2(\tilde u_{\mathrm r})$ is unitary. Its action is the unitary conjugation</p>
 <p>$$
-\mathsf M_2(\tilde Q_+)\longmapsto U_{\mathrm r}\,\mathsf M_2(\tilde Q_+)\,U_{\mathrm r}^{\dagger}.
+\mathsf M_2(\tilde Q_+)\longmapsto \mathsf U_{\mathrm r}\,\mathsf M_2(\tilde Q_+)\,\mathsf U_{\mathrm r}^{\dagger}.
 $$</p>
 <p>Unitary conjugation preserves the trace and the eigenvalues, and therefore preserves the determinant and the inertia. On the coordinates it fixes $a$ and rotates the vector part,</p>
 <p>$$
-\Theta_{\tilde u_{\mathrm r}}(a+i\vec b)=a+i\,R(\theta,\vec u_{\mathrm r})\,\vec b,
+\Theta_{\tilde u_{\mathrm r}}(a+i\vec b)=a+i\,\mathsf R(\theta,\vec u_{\mathrm r})\,\vec b,
 $$</p>
-<p>with the same rotation matrix $R$ as in $\mathbb{M}_-$. The rotor is the only factor that is both norm-one and unitary, and its action is the nontrivial automorphism of the algebra. It is the compact part of the Lorentz transformation.</p>
+<p>with the same rotation matrix $\mathsf R$ as in $\mathbb{M}_-$. The rotor is the only factor that is both norm-one and unitary, and its action is the nontrivial automorphism of the algebra. It is the compact part of the Lorentz transformation.</p>
 <h3 id="the-general-norm-one-element_1">The General Norm-One Element</h3>
 <p>The general norm-one element $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ acts by</p>
 <p>$$
-\Lambda_+(\psi,\theta)=B_+(\psi,\vec u_{\mathrm b})\operatorname{diag}(1,R(\theta,\vec u_{\mathrm r})),
+\Lambda_+(\psi,\theta)=B_+(\psi,\vec u_{\mathrm b})\operatorname{diag}(1,\mathsf R(\theta,\vec u_{\mathrm r})),
 $$</p>
 <p>and the general element by $\Theta_{\tilde Q}=r^2\Lambda_+$. $\Lambda_+$ lies in $SO^+(1,3)$; the matrix of the general action is $r^2\Lambda_+$, with determinant $r^8$. The rotation acts first and the boost second, as on $\mathbb{M}_-$.</p>
 <h3 id="the-cone-the-rank-and-the-causal-type">The Cone, the Rank, and the Causal Type</h3>
@@ -304,7 +304,7 @@ $$</p>
 <p>$$
 \Lambda_-=D\,\Lambda_+\,D.
 $$</p>
-<p>The rotor matrix is the same $R$ in both sectors, the scale is the same $r^2$ in both, and the phase acts as the identity in both. The difference between the two actions is therefore entirely in the boost: in the coordinates carried by the sectors, the matrix of the same boost on $\mathbb{M}_+$ is the inverse of its matrix on $\mathbb{M}_-$. The opposite signs of the cross terms are the visible sign of this inverse relation.</p>
+<p>The rotor matrix is the same $\mathsf R$ in both sectors, the scale is the same $r^2$ in both, and the phase acts as the identity in both. The difference between the two actions is therefore entirely in the boost: in the coordinates carried by the sectors, the matrix of the same boost on $\mathbb{M}_+$ is the inverse of its matrix on $\mathbb{M}_-$. The opposite signs of the cross terms are the visible sign of this inverse relation.</p>
 <p>The relation $B_-=B_+^{-1}$ is a statement about matrices in the two coordinate systems, not a statement that the physical boost is inverted. The coordinates $(a,\vec b)$ are read in the two sectors with different meanings: $a$ is the time coordinate on $\mathbb{M}_-$ and the scalar coordinate on $\mathbb{M}_+$. The element $\tilde U_{\mathrm b}$ is the same, and the Lorentz transformation it induces on each sector is the same up to the coordinate reflection $D$.</p>
 <h3 id="the-common-cone-and-the-sign-of-the-form">The Common Cone and the Sign of the Form</h3>
 <p>The two null cones are the same set of coordinates,</p>
@@ -321,13 +321,13 @@ $$</p>
 \Theta_{\tilde Q}=r^2\,\Theta_{\tilde U_{\mathrm b}}\circ\Theta_{\tilde u_{\mathrm r}},
 $$</p>
 <p>an inner automorphism by the rotor, a positive congruence by the boost, and a dilation by $r^2$, in that order. The phase is in the kernel. The boost is the non-compact, symmetric-space factor; the rotor is the compact, automorphism factor; the scale is the dilation; the phase is the gauge. On $\mathbb{M}_-$ the Lorentz factor is read as a proper orthochronous Lorentz transformation; on $\mathbb{M}_+$ it is read as the congruence on Hermitian matrices. The two readings are intertwined by $i$, which is an anti-isometry. This is the polar element representation acting on the two subspaces.</p>
-<p>The differential at the identity separates the two kinds of factor. For a rotor direction $X=\tfrac12\vec u_{\mathrm r}$, real and pure, the one-parameter action is</p>
+<p>The differential at the identity separates the two kinds of factor. For a rotor direction $\mathcal R=\tfrac12\vec u_{\mathrm r}$, real and pure, the one-parameter action is</p>
 <p>$$
-\Theta_{\exp(\epsilon X)}(\tilde Q_1)=\tilde Q_1+\epsilon\,[X,\tilde Q_1]+O(\epsilon^2),
+\Theta_{\exp(\epsilon\mathcal R)}(\tilde Q_1)=\tilde Q_1+\epsilon\,[\mathcal R,\tilde Q_1]+O(\epsilon^2),
 $$</p>
-<p>a commutator. For a boost direction $H=\tfrac{i}{2}\vec u_{\mathrm b}$, imaginary and pure, it is</p>
+<p>a commutator. For a boost direction $\mathcal H=\tfrac{i}{2}\vec u_{\mathrm b}$, imaginary and pure, it is</p>
 <p>$$
-\Theta_{\exp(\epsilon H)}(\tilde Q_1)=\tilde Q_1+\epsilon\,\{H,\tilde Q_1\}+O(\epsilon^2),
+\Theta_{\exp(\epsilon\mathcal H)}(\tilde Q_1)=\tilde Q_1+\epsilon\,\{\mathcal H,\tilde Q_1\}+O(\epsilon^2),
 $$</p>
 <p>an anticommutator. The central phase direction $ie_t$ gives zero. The commutator and the anticommutator both preserve $\mathbb{M}_\pm$, and they are the two summands of the Cartan decomposition of $\mathfrak{sl}(2,\mathbb{C})=\mathfrak{su}(2)\oplus\mathfrak{p}$. The action therefore reproduces, at the infinitesimal level, the Cartan decomposition that the Cartan pairing records at the level of the element.</p>
 <h2 id="summary">Summary</h2>
@@ -378,12 +378,12 @@ $$</p>
 <td>the norm-one Lorentz element</td>
 </tr>
 <tr>
-<td>$U=\exp(i\alpha)\tilde u_{\mathrm r}$</td>
+<td>$\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$</td>
 <td>the unitary factor of the Cartan pairing</td>
 </tr>
 <tr>
-<td>$\rho=r\exp(i\alpha)$</td>
-<td>the complex modulus, $\tilde Q=\rho\tilde U_{\mathrm L}$</td>
+<td>$\Rho=r\exp(i\alpha)$</td>
+<td>the complex modulus, $\tilde Q=\Rho\tilde U_{\mathrm L}$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}^{\times}_1$</td>
@@ -414,11 +414,11 @@ $$</p>
 <td>the coordinate reflection, $B_-=DB_+D=B_+^{-1}$</td>
 </tr>
 <tr>
-<td>$R(\theta,\vec u_{\mathrm r})$</td>
+<td>$\mathsf R(\theta,\vec u_{\mathrm r})$</td>
 <td>the spatial rotation matrix of the rotor</td>
 </tr>
 <tr>
-<td>$\Lambda_\pm=B_\pm\operatorname{diag}(1,R)$</td>
+<td>$\Lambda_\pm=B_\pm\operatorname{diag}(1,\mathsf R)$</td>
 <td>the $4\times4$ matrices of the norm-one action</td>
 </tr>
 <tr>
@@ -434,7 +434,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>The Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-polar-element-representation-of-biquaternions.md</code>), for the four factors, the modulus, the exponential trichotomy and the domain.</li>
-<li><em>The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), for the Hermitian positive and unitary factors, the equation $\tilde Q\tilde Q^{*}=H^2$, and the Cartan decomposition of the exponents.</li>
+<li><em>The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), for the Hermitian positive and unitary factors, the equation $\tilde Q\tilde Q^{*}=\tilde H^2$, and the Cartan decomposition of the exponents.</li>
 <li><em>The Quaternion Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.md</code>) and <em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), for the two partial pairings of the four factors.</li>
 <li><em>Hermitian and Skew-Hermitian Elements</em> (<code>articles_maths/hermitian-and-skew-hermitian-elements.md</code>), for the involutive split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and the two sectors.</li>
 <li><em>The Unitary Group of the Biquaternion Algebra</em> (<code>articles_maths/the-unitary-group-of-the-biquaternion-algebra.md</code>), for $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ and its relation to the norm-one group.</li>

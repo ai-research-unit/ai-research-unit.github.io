@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions"><strong>The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Cartan Hermitian pairing is the split of a biquaternion into a <strong>positive Hermitian factor</strong> and a <strong>unitary factor</strong>,</p>
+<p>$$
+\tilde Q=\tilde H\,\tilde U,
+\qquad
+\tilde H=\sqrt{\tilde Q\tilde Q^{*}},
+\qquad
+\tilde U=\tilde H^{-1}\tilde Q,
+$$</p>
+<p>with $\tilde H$ Hermitian positive definite and $\tilde U$ unitary. In the polar word,</p>
+<p>$$
+\tilde H=r\,\tilde U_{\mathrm b},
+\qquad
+\tilde U=\exp(i\alpha)\,\tilde u_{\mathrm r}.
+$$</p>
+<p>The Hermitian factor carries the scale and the boost; the unitary factor carries the phase and the rotor. The pairing is the matrix polar decomposition of $\mathrm{GL}(2,\mathbb{C})$, read in the algebra. It is the decomposition that separates the <strong>stretch</strong> of a linear map from its <strong>turn</strong>.</p>
+<p>The article defines the two factors, identifies the pairing with the Cartan decomposition of the Lorentz group, gives the physical reading, records the domain and the boundary at the null cone, and works the three reference instances: a general element, a four-position and a pure Lorentz rotor.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central $i$. An element is $\tilde Q=Q_te_t+\vec Q$, with complex coefficients. The Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$, the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, and the polar word is</p>
+<p>$$
+\tilde Q=r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r},
+\qquad
+\rho=r\exp(i\alpha)=\sqrt{\langle\tilde Q\rangle_{\natural}},
+$$</p>
+<p>with $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$ Hermitian positive of unit norm and $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ a unit real quaternion. The matrix model is $\mathsf M_2$, with $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$ and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.</p>
+<p>The physics articles write $B=\tilde U_{\mathrm b}$ and $\tilde q=\tilde u_{\mathrm r}$; the present article uses the mathematics glyphs.</p>
+<h2 id="the-hermitian-factor">The Hermitian Factor</h2>
+<p>The Hermitian factor is</p>
+<p>$$
+\tilde H=\sqrt{\tilde Q\tilde Q^{*}}.
+$$</p>
+<p>The product $\tilde Q\tilde Q^{*}$ is Hermitian and positive semidefinite:</p>
+<p>$$
+(\tilde Q\tilde Q^{*})^{*}=\tilde Q\tilde Q^{*},
+\qquad
+\mathsf M_2(\tilde Q\tilde Q^{*})=\mathsf M_2(\tilde Q)\mathsf M_2(\tilde Q)^{\dagger}\succeq0.
+$$</p>
+<p>When the norm does not vanish, the matrix is invertible, so the product is positive definite and has a unique positive definite square root. That root is $\tilde H$.</p>
+<p>In the polar word, $\tilde Q\tilde Q^{*}=r^{2}\tilde U_{\mathrm b}^{2}$, because $\tilde U_{\mathrm b}$ is Hermitian and $\tilde u_{\mathrm r}$ is unitary. Hence</p>
+<p>$$
+\tilde H=r\tilde U_{\mathrm b}.
+$$</p>
+<p>The Hermitian factor is the scale times the boost. It is positive definite, of determinant $r^{2}$, and its eigenvalues are $r\exp(\pm\psi/2)$.</p>
+<p><strong>The trace and the Hilbert–Schmidt norm.</strong> The trace of $\tilde H$ is</p>
+<p>$$
+\operatorname{tr}\tilde H=2r\cosh\frac{\psi}{2},
+$$</p>
+<p>and the Hilbert–Schmidt square is</p>
+<p>$$
+\operatorname{tr}(\tilde H^{2})=\operatorname{tr}(\tilde Q\tilde Q^{*})=2r^{2}\cosh\psi.
+$$</p>
+<p>The two are not the same function of the boost: the trace weights the two singular values additively, the Hilbert–Schmidt square weights their squares. The determinant is their product, $r^{2}$.</p>
+<p><strong>The singular values.</strong> The eigenvalues of $\tilde H$ are the singular values of $\mathsf M_2(\tilde Q)$,</p>
+<p>$$
+\sigma_{\pm}=r\exp(\pm\psi/2).
+$$</p>
+<p>The scale is their geometric mean, $r=\sqrt{\sigma_+\sigma_-}$; the boost is their ratio, $e^{\psi}=\sigma_+/\sigma_-$. The Hermitian factor is therefore the singular-value factor of the matrix, and the unitary factor is the orthogonal factor.</p>
+<h2 id="the-unitary-factor">The Unitary Factor</h2>
+<p>The unitary factor is</p>
+<p>$$
+\tilde U=\tilde H^{-1}\tilde Q.
+$$</p>
+<p>It is unitary:</p>
+<p>$$
+\tilde U\tilde U^{*}
+=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}
+=\tilde H^{-1}\tilde H^{2}\tilde H^{-1}
+=e_t.
+$$</p>
+<p>In the polar word,</p>
+<p>$$
+\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}.
+$$</p>
+<p>The unitary factor is the phase times the rotor. Its determinant is $\exp(2i\alpha)$, of modulus one; its eigenvalues are $\exp(i(\alpha\pm\theta/2))$. It is the compact factor of the decomposition.</p>
+<p><strong>The two factors commute?</strong> In general they do not. The Hermitian factor is a boost and the unitary factor is a phase times a rotor; the boost and the rotor do not commute. The product $\tilde H\tilde U$ is therefore ordered: the Hermitian factor acts first on the left, and the unitary factor on the right. The matrix polar decomposition is ordered in the same way, $A=HU$.</p>
+<p><strong>The inverse order.</strong> The product $\tilde U\tilde H$ is a different element unless the two factors commute. The two orders are related by conjugation,</p>
+<p>$$
+\tilde U\tilde H=\tilde H\,(\tilde H^{-1}\tilde U\tilde H),
+$$</p>
+<p>and the conjugated unitary factor is the unitary factor in the frame rotated by the Hermitian one. The polar decomposition is unique in the order $HU$; the other order is a different reading of the same factors.</p>
+<h2 id="the-cartan-involution-and-the-decomposition">The Cartan Involution and the Decomposition</h2>
+<p>The Cartan involution of $\mathrm{GL}(2,\mathbb{C})$ is</p>
+<p>$$
+\theta(g)=(g^{\dagger})^{-1}.
+$$</p>
+<p>Its fixed group is the unitary group $\mathrm{U}(2)$, and its $-1$ eigenspace is the positive Hermitian cone. The Cartan decomposition writes every invertible $g$ as</p>
+<p>$$
+g=h\,u,
+\qquad
+h=\sqrt{gg^{\dagger}},
+\qquad
+u=h^{-1}g,
+$$</p>
+<p>with $h$ positive Hermitian and $u$ unitary. The decomposition is global: every invertible matrix has it, uniquely.</p>
+<p>In the algebra, the same statement is</p>
+<p>$$
+\tilde Q=\tilde H\tilde U,
+\qquad
+\tilde H=\sqrt{\tilde Q\tilde Q^{*}},
+\qquad
+\tilde U=\tilde H^{-1}\tilde Q.
+$$</p>
+<p>The involution acts on the factors as</p>
+<p>$$
+\theta(\tilde H)=\tilde H^{-1},
+\qquad
+\theta(\tilde U)=\tilde U.
+$$</p>
+<p>The Hermitian factor is inverted and the unitary factor is fixed. The decomposition is the eigenspace decomposition of the involution at the group level: the positive cone is the $-1$ eigenspace, the unitary group is the fixed group.</p>
+<p><strong>The relation to the polar word.</strong> The polar word has four factors; the Cartan pairing groups them two by two:</p>
+<p>$$
+\tilde H=r\tilde U_{\mathrm b},
+\qquad
+\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}.
+$$</p>
+<p>The scale and the boost are the Hermitian factor; the phase and the rotor are the unitary factor. The pairing is therefore the split between the <strong>non-compact</strong> and the <strong>compact</strong> data of the element, with the central phase on the compact side.</p>
+<p>On the Lorentz group, $r=1$ and $\alpha=0$, so $\tilde H=\tilde U_{\mathrm b}$ and $\tilde U=\tilde u_{\mathrm r}$. The Cartan pairing is then the Cartan decomposition of $SL(2,\mathbb{C})$,</p>
+<p>$$
+\tilde U_L=\tilde U_{\mathrm b}\tilde u_{\mathrm r},
+$$</p>
+<p>with $\tilde U_{\mathrm b}$ positive definite. The positivity is exactly the condition that removes the sign ambiguity of the decomposition.</p>
+<h2 id="the-physical-reading">The Physical Reading</h2>
+<p>The Cartan pairing is the <strong>amplitude-phase</strong> reading of the element.</p>
+<ul>
+<li><strong>The Hermitian factor is the amplitude.</strong> It is positive, it carries the scale and the boost, and its eigenvalues are the singular values. In a quantum reading, it is the positive factor of a matrix acting on a state: the part that changes norms, not phases.</li>
+<li><strong>The unitary factor is the phase.</strong> It is unitary, it carries the central phase and the rotor, and its eigenvalues are phases. In a quantum reading, it is the part that preserves the inner product: the gauge phase and the spin rotation.</li>
+<li><strong>The determinant is the product.</strong> $\det\tilde H=r^{2}$ and $\det\tilde U=\exp(2i\alpha)$, so $\det\tilde Q=r^{2}\exp(2i\alpha)$. The scale is the modulus of the determinant, the phase is half its argument, and the boost and rotor are the anisotropy and the turn of the two factors.</li>
+</ul>
+<p>In the relativistic reading, the Hermitian factor is the boost times the dilation, and the unitary factor is the rotation times the phase. The boost is the non-compact part, the rotation is the compact part, and the phase is the central part. The Cartan pairing is the group-level statement of the same split that the polar word makes factor by factor.</p>
+<p>The reading is a dictionary. The mathematics is the matrix polar decomposition; the physics is the identification of the factors with the amplitude, the phase, the boost and the spin.</p>
+<h2 id="the-domain-and-the-null-cone">The Domain and the Null Cone</h2>
+<p>The Cartan pairing exists exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. At the null cone,</p>
+<p>$$
+\tilde Q\tilde Q^{*}
+$$</p>
+<p>is positive semidefinite of rank one, with a zero eigenvalue. The positive square root exists but is not positive definite, and the inverse $\tilde H^{-1}$ does not exist. The unitary factor is undefined.</p>
+<p>The failure is the same failure as the polar word. On the material sector, the null cone is the light cone; on the informational sector, it is the cone of rank-one Hermitian matrices. The Hermitian factor is the density matrix of a pure state on that cone, and the unitary factor is the phase that the pure state does not have. The polar decomposition of an invertible matrix stops at the boundary.</p>
+<p>At the boundary, the two factors can be separated in a limiting sense: $\tilde H$ tends to the rank-one positive matrix and $\tilde U$ tends to a unitary matrix defined only on the range. The limit is not unique, which is the algebraic form of the absence of a rest frame for a null vector.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<h3 id="a-general-element">A General Element</h3>
+<p>Take</p>
+<p>$$
+\tilde Q=(1+i)e_t+\vec e_x+2\vec e_y.
+$$</p>
+<p>The norm is $5+2i$, so $\rho=2.320595787\exp(0.190253189i)$, $r=2.320595787$ and $\alpha=0.190253189$. The Hermitian product is</p>
+<p>$$
+\tilde Q\tilde Q^{*}=7e_t-2i\vec e_x-4i\vec e_y,
+$$</p>
+<p>whose positive square root is</p>
+<p>$$
+\tilde H=2.488489985\,e_t-0.401850120\,i\vec e_x-0.803700241\,i\vec e_y.
+$$</p>
+<p>The unitary factor is</p>
+<p>$$
+\tilde U=0.462100989+0.088992519i\,e_t+0.387479295+0.074621694i\,\vec e_x+0.774958590+0.149243388i\,\vec e_y,
+$$</p>
+<p>written with the scalar and vector parts separated. The product is $\tilde H\tilde U=\tilde Q$, and $\tilde U\tilde U^{*}=e_t$. The determinant of $\tilde H$ is $5.385164807=r^{2}$; its trace is $4.976979969=2r\cosh(\psi/2)$; its Hilbert–Schmidt square is $14=2r^{2}\cosh\psi$. The reconstruction holds to $7.1\times10^{-15}$.</p>
+<h3 id="a-four-position">A Four-Position</h3>
+<p>Take $\tilde X=i e_t+0.6\vec e_x$. The norm is $-0.64$, so $r=0.8$ and $\alpha=\pi/2$. The Hermitian product is</p>
+<p>$$
+\tilde X\tilde X^{*}=0.64e_t-1.2i\vec e_x,
+$$</p>
+<p>and its positive square root is</p>
+<p>$$
+\tilde H=1.0e_t-0.6i\vec e_x.
+$$</p>
+<p>The unitary factor is $\tilde U=i$. Hence</p>
+<p>$$
+\tilde X=\tilde H\tilde U=(1.0-0.6i\vec e_x)i=i+0.6\vec e_x.
+$$</p>
+<p>The Hermitian factor is the four-velocity times the scale, and the unitary factor is the $ict$ phase. The determinant of $\tilde H$ is $0.64$, the interval; the phase is the argument of the determinant.</p>
+<h3 id="a-pure-lorentz-rotor">A Pure Lorentz Rotor</h3>
+<p>Take $\tilde Q=\tilde U_L=\cosh(\psi/2)e_t+i\sinh(\psi/2)\vec e_x$ with $\psi=0.693147181$. The norm is one, so $r=1$ and $\alpha=0$. The Hermitian factor is $\tilde H=\tilde Q$, and the unitary factor is $\tilde U=e_t$. The Cartan pairing returns the boost alone. If the rotor is present,</p>
+<p>$$
+\tilde Q=\tilde U_{\mathrm b}\tilde u_{\mathrm r},
+\qquad
+\tilde H=\tilde U_{\mathrm b},
+\qquad
+\tilde U=\tilde u_{\mathrm r},
+$$</p>
+<p>and the pairing separates the boost from the rotation.</p>
+<h3 id="a-null-element">A Null Element</h3>
+<p>Take $\tilde Q=i e_t+\vec e_x$. The norm is zero. The product $\tilde Q\tilde Q^{*}$ is rank one, with a zero eigenvalue; $\tilde H$ is not invertible, and $\tilde U$ is undefined. The element is a zero divisor and a lightlike four-vector. The Cartan pairing fails at the same point as the polar word.</p>
+<h2 id="the-cartan-pairing-and-the-other-pairings">The Cartan Pairing and the Other Pairings</h2>
+<p>The Cartan pairing is the only one of the three pairings that is the matrix polar decomposition without a partial construction.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pairing</th>
+<th>factors</th>
+<th>condition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>quaternion</td>
+<td>$\tilde q=r\tilde u_{\mathrm r}$ and $\exp(i\tilde\Psi)$</td>
+<td>$\tilde q_r\neq0$ and $N\neq0$</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>$\rho$ and $\cos\Theta+\vec\Xi\sin\Theta$</td>
+<td>$\vec Q\cdot\vec Q\neq0$ and $N\neq0$</td>
+</tr>
+<tr>
+<td>Cartan</td>
+<td>$\tilde H=r\tilde U_{\mathrm b}$ and $\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$</td>
+<td>$N\neq0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Cartan pairing needs only the norm. The quaternion pairing needs the real part; the Hamilton pairing needs the vector square. The three pairings are three readings of one word, and the Cartan pairing is the one that is defined on the whole complement of the null cone.</p>
+<p>The Cartan pairing is also the one that is most directly the matrix polar decomposition. The Hermitian factor is the positive square root of $AA^{\dagger}$, and the unitary factor is $H^{-1}A$. The quaternion and Hamilton pairings are coordinate constructions in the algebra; the Cartan pairing is the geometric decomposition of the linear map.</p>
+<h2 id="summary">Summary</h2>
+<p>The Cartan Hermitian pairing writes a biquaternion as a positive Hermitian factor times a unitary factor, $\tilde Q=\tilde H\tilde U$, with $\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$ and $\tilde U=\tilde H^{-1}\tilde Q$. In the polar word, $\tilde H=r\tilde U_{\mathrm b}$ and $\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$: the Hermitian factor carries the scale and the boost, the unitary factor carries the phase and the rotor. The pairing is the matrix polar decomposition of $\mathrm{GL}(2,\mathbb{C})$ and the Cartan decomposition of $SL(2,\mathbb{C})$ on the unit-norm slice. It exists exactly off the null cone; at the cone the Hermitian factor becomes rank one and the unitary factor is undefined. The determinant gives the scale and the phase, the singular values give the scale and the boost, and the eigenvalues of the unitary factor give the phase and the rotation.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde H=\sqrt{\tilde Q\tilde Q^{*}}$</td>
+<td>the positive Hermitian factor</td>
+</tr>
+<tr>
+<td>$\tilde U=\tilde H^{-1}\tilde Q$</td>
+<td>the unitary factor</td>
+</tr>
+<tr>
+<td>$\tilde H=r\tilde U_{\mathrm b}$</td>
+<td>the Hermitian factor in the polar word</td>
+</tr>
+<tr>
+<td>$\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$</td>
+<td>the unitary factor in the polar word</td>
+</tr>
+<tr>
+<td>$\sigma_\pm=r\exp(\pm\psi/2)$</td>
+<td>the singular values</td>
+</tr>
+<tr>
+<td>$r,\alpha,\psi,\theta$</td>
+<td>the scale, phase, rapidity and rotation angle</td>
+</tr>
+<tr>
+<td>$\theta(g)=(g^{\dagger})^{-1}$</td>
+<td>the Cartan involution</td>
+</tr>
+<tr>
+<td>$B,\tilde q$</td>
+<td>the physics glyphs for the boost and the rotor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Polar Element Representation of Biquaternions</em> (<code>articles_physics/the-polar-element-representation-of-biquaternions.md</code>), the polar word and its four factors.</li>
+<li><em>The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), the mathematics reference.</li>
+<li><em>The Quaternion Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_physics/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), the real-quaternion reading.</li>
+<li><em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_physics/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), the axis-angle reading.</li>
+<li><em>The Polar Decomposition of Biquaternions in Practice</em> (<code>articles_physics/the-polar-decomposition-of-biquaternions-in-practice.md</code>), the algorithm.</li>
+<li><em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> (<code>articles_physics/the-2x2-matrix-element-representation-m2c-of-biquaternions.md</code>), the matrix polar decomposition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
