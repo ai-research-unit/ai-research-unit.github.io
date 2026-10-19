@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Polar Representation and Its Three Pairings — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-polar-representation-and-its-three-pairings"><strong>The Polar Representation and Its Three Pairings</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Every biquaternion off the null cone is the ordered product of four factors: a positive scale, a central phase, a Hermitian boost and a real quaternion rotor,</p>
+<p>$$
+\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr).
+$$</p>
+<p>The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the algebra. The word is a change of coordinates on the complement of the zero-divisor cone, not a dynamical decomposition: it says what an element is at one instant and not how it evolves.</p>
+<p>The article reads the word and its three two-factor regroupings. The <strong>quaternion pairing</strong> puts the scale and the rotor on one side and the phase and the boost on the other; the <strong>Hamilton root pairing</strong> puts the scale and the phase on one side and the boost and the rotor on the other; the <strong>Cartan Hermitian pairing</strong> puts the scale and the boost on one side and the phase and the rotor on the other. The three are the three ways of splitting four ordered factors into two groups, and each has a physical reading: a real-quaternion modulus, a complex axis-angle, and an amplitude times a unitary.</p>
+<p>The mathematics is owned by <em>The Polar Element Representation of Biquaternions</em>, <em>The Polar Decomposition of Biquaternions in Practice</em>, <em>The Quaternion Pairing</em>, <em>The Hamilton Root Pairing</em>, <em>The Cartan Hermitian Pairing</em> and <em>The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces</em>. The physics is the reading given below, with its boundaries stated at the end.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The four factors, their ranges, their dimensions and their stable subspaces</td>
+<td><a href="../articles_maths/the-polar-element-representation-of-biquaternions.html">The Polar Element Representation of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The theorem, the uniqueness and the domain off the null cone</td>
+<td><a href="../articles_maths/the-polar-element-representation-of-biquaternions.html">The Polar Element Representation of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The five-step procedure, the two invariants and the worked examples</td>
+<td><a href="../articles_maths/the-polar-element-representation-of-biquaternions.html">The Polar Element Representation of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The quaternion pairing and its domain</td>
+<td><a href="../articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.html">The Quaternion Pairing of the Polar Element Representation of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The Hamilton root pairing and its domain</td>
+<td><a href="../articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.html">The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The Cartan Hermitian pairing and the matrix polar decomposition</td>
+<td><a href="../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The action of the four factors on the two sectors</td>
+<td><a href="../articles_maths/the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html">The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces</a></td>
+</tr>
+<tr>
+<td>The six remarkable subspaces and the factor that preserves each</td>
+<td><a href="../articles_maths/the-polar-element-representation-and-remarkable-subspaces.html">The Polar Element Representation and Remarkable Subspaces</a></td>
+</tr>
+<tr>
+<td>The two one-sided operators under the polar word</td>
+<td><a href="../articles_maths/one-sided-operator-under-the-polar-representation.html">One-Sided Operator Under the Polar Representation</a></td>
+</tr>
+<tr>
+<td>The two-sided operator and its kernel</td>
+<td><a href="../articles_maths/two-sided-operator-under-the-polar-representation.html">Two-Sided Operator Under the Polar Representation</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-four-factors">The Four Factors</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Factor</th>
+<th>Name</th>
+<th>Exponent</th>
+<th>Root</th>
+<th>Range</th>
+<th>Real dimension</th>
+<th>Action on the algebra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$r$</td>
+<td>scale</td>
+<td>—</td>
+<td>—</td>
+<td>$r>0$</td>
+<td>$1$</td>
+<td>dilation by $r^2$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\exp(i\alpha)$</td>
+<td>central phase</td>
+<td>$i\alpha$</td>
+<td>$i$</td>
+<td>$\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$</td>
+<td>$1$</td>
+<td>multiplication by the scalar</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$</td>
+<td>boost</td>
+<td>$i\tfrac{\psi}{2}\vec u_{\mathrm b}$</td>
+<td>$i\vec u_{\mathrm b}$</td>
+<td>$\psi\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$</td>
+<td>$3$</td>
+<td>congruence $X\mapsto \tilde U_{\mathrm b}X\tilde U_{\mathrm b}^{*}$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$</td>
+<td>rotor</td>
+<td>$\tfrac{\theta}{2}\vec u_{\mathrm r}$</td>
+<td>$\vec u_{\mathrm r}$</td>
+<td>$\theta\in[0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$</td>
+<td>$3$</td>
+<td>conjugation $X\mapsto \tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The axis sphere $\mathcal{A}$ is the set of unit real pure quaternions, the roots of $-e_t$. The phase is the only factor whose sandwich is the identity; its action on the algebra is the scalar multiplication recorded in the table, and that is the one row that departs from the sandwich convention.</p>
+<p>The scale and the phase are central, the boost is Hermitian positive and non-compact, and the rotor is compact and real. The order of the factors is forced by the construction: the scale and the phase commute with everything, the boost stands on the left of the rotor, and the rotor is what remains after the Hermitian part is divided out. The word is unique once the branch of the square root is fixed.</p>
+<h2 id="reading-the-eight-numbers">Reading the Eight Numbers</h2>
+<p>The word returns the physical description of an element in eight real numbers:</p>
+<ul>
+<li>the <strong>scale</strong> $r$, the modulus of the biquaternion norm;</li>
+<li>the <strong>phase</strong> $\alpha$, half the argument of the norm, in the interval $(-\pi/2,\pi/2]$;</li>
+<li>the <strong>rapidity</strong> $\psi$ and the two angles of the <strong>boost axis</strong> $\vec u_{\mathrm b}$;</li>
+<li>the <strong>rotation angle</strong> $\theta$ and the two angles of the <strong>rotor axis</strong> $\vec u_{\mathrm r}$.</li>
+</ul>
+<p>The first two are the central data, the next three the non-compact data, the last three the compact data. The scale and the phase are fixed by the norm $N$: $r=|N|^{1/2}$ and $\alpha=\tfrac12\arg N$. The rapidity is fixed by the ratio of the two invariants,</p>
+<p>$$
+\cosh\psi=\frac{E^2}{|N|}, \qquad E^2=\sum_\mu|Q_\mu|^2,
+$$</p>
+<p>and the two axes are fixed by the phases of the four complex coordinates. The pair $(N,E^2)$ fixes the scale, the phase and the rapidity and cannot fix the two directions: a real rotation of the vector part leaves both invariants unchanged and turns the axes.</p>
+<p>The count is the same statement. Four complex coordinates carry eight real numbers. The scale, the phase and the rapidity account for three; the two boost-axis angles, the two rotor-axis angles and the rotation angle account for the remaining five. The word is a coordinate system on the eight-dimensional algebra, not a constraint on it.</p>
+<h2 id="the-domain">The Domain</h2>
+<p>The word exists if and only if $N\neq0$, that is, if and only if the element is outside the zero-divisor cone. On the cone the product of the four factors has norm of modulus $r^2>0$, so no factorisation exists. The condition is one complex equation, hence two real equations, and the cone has real codimension two: the domain is the complement of a six-real-dimensional cone in the eight-real-dimensional algebra.</p>
+<p>The failure is physical. A lightlike four-vector has no rest frame, so the scale degenerates and there is no boost split: there is no frame in which its spatial part vanishes and no rapidity that carries it to that frame. The algorithm stops on the cone for the same reason a boost parametrisation stops at the speed of light.</p>
+<p>The branch $\alpha\in(-\pi/2,\pi/2]$ is the only convention of the word. The other square root $-\Rho$ has angle $\alpha\pm\pi$, outside the interval. Every other step is forced: the normalised element, the Hermitian square root and the rotor are determined by the element and the branch.</p>
+<h2 id="the-three-pairings">The Three Pairings</h2>
+<p>The four-factor word is the reference. The three pairings are its three bracketings into two factors, and the table records which pair of factors each one groups together.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Pairing</th>
+<th>First factor</th>
+<th>Second factor</th>
+<th>What it separates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four-factor word</td>
+<td>—</td>
+<td>—</td>
+<td>the unpaired reference</td>
+</tr>
+<tr>
+<td>Quaternion</td>
+<td>$\tilde q=r\tilde u_{\mathrm r}$</td>
+<td>$\exp(i\tilde\Psi)$</td>
+<td>scale and rotor / phase and boost</td>
+</tr>
+<tr>
+<td>Hamilton root</td>
+<td>$\Rho=r\exp(i\alpha)$</td>
+<td>$\exp(\vec\Xi\Theta)$</td>
+<td>scale and phase / boost and rotor</td>
+</tr>
+<tr>
+<td>Cartan Hermitian</td>
+<td>$\tilde H=r\tilde U_{\mathrm b}$</td>
+<td>$\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$</td>
+<td>scale and boost / phase and rotor</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-quaternion-pairing">The Quaternion Pairing</h3>
+<p>The quaternion pairing writes the element as a <strong>real quaternion modulus</strong> times the exponential of a <strong>real quaternion angle</strong>:</p>
+<p>$$
+\tilde Q=\tilde q\,\exp(i\tilde\Psi), \qquad
+\tilde q=r\,\tilde u_{\mathrm r}, \qquad
+\exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+$$</p>
+<p>The exponent is a real quaternion with scalar part $\alpha$ and pure part $\tfrac{\psi}{2}\vec u_{\mathrm b}'$, where $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ is the boost axis rotated by the rotor. The modulus is an ordinary quaternion in its polar form: a positive scale and a unit rotor.</p>
+<p>In the electromagnetic reading, $\tilde Q=\tilde E+i\tilde B$ with $\tilde E,\tilde B$ real quaternions. The ratio $\tilde P=\tilde E^{-1}\tilde B$ is the duality quotient, the quaternion that carries the electric part to the magnetic part; the angle $\tilde\Psi$ is the quaternion angle of the field, with scalar part the duality phase and pure part half the boost. The modulus $\tilde q=\tilde E(\cos\tilde\Psi)^{-1}$ is the normalised electric part. The construction needs $\tilde E\neq0$: a purely magnetic field has no electric part to normalise. The factorisation of the word still exists on a purely imaginary element, but the construction from the parts does not.</p>
+<h3 id="the-hamilton-root-pairing">The Hamilton Root Pairing</h3>
+<p>The Hamilton pairing writes the element as a modulus times a complex cosine plus a complex unit axis times the complex sine:</p>
+<p>$$
+\tilde Q=\Rho\bigl(\cos\Theta+\vec\Xi\sin\Theta\bigr), \qquad
+\Rho=\sqrt N, \qquad
+\vec\Xi=\frac{\vec Q}{B}, \qquad
+B=\sqrt{(\vec Q,\vec Q)}, \qquad
+\cos\Theta=\frac{Q_t}{\Rho}, \qquad
+\sin\Theta=\frac{B}{\Rho}.
+$$</p>
+<p>The modulus carries the scale and the phase; the axis and the angle carry the boost and the rotor. The complex axis $\vec\Xi$ is the direction of the transformation, and the complex angle $\Theta$ is its magnitude: on aligned axes the real part of the angle is half the rotation and the imaginary part is half the boost, while in general the two parts do not separate. A general Lorentz element is a point of the complexified rotation group, and the Hamilton form is its axis-angle coordinate.</p>
+<p>The domain is smaller than the polar domain: it requires $N\neq0$ and $(\vec Q,\vec Q)\neq0$. The second condition is not implied by the first. The element $e_t+\vec e_x+i\vec e_y$ has $N=1$ and $(\vec Q,\vec Q)=1+i^2=0$, so it is invertible and has no Hamilton representation. The axis is normalised by the vector part, and a null vector part gives no axis.</p>
+<h3 id="the-cartan-hermitian-pairing">The Cartan Hermitian Pairing</h3>
+<p>The Cartan pairing writes the element as a <strong>Hermitian positive factor</strong> times a <strong>unitary factor</strong>:</p>
+<p>$$
+\tilde Q=\tilde H\tilde U, \qquad
+\tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\mathrm b}, \qquad
+\tilde U=\tilde H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}.
+$$</p>
+<p>The first factor is Hermitian positive; the second is unitary. The pairing is the matrix polar decomposition of $\mathrm{GL}(2,\mathbb{C})$ read in the algebra: the Hermitian factor is the amplitude, the part that changes norms and not phases; the unitary factor is the phase, the part that preserves the inner product. The determinant is the product,</p>
+<p>$$
+\det\tilde H=r^2, \qquad \det\tilde U=\exp(2i\alpha), \qquad \det\tilde Q=r^2\exp(2i\alpha),
+$$</p>
+<p>so the scale is the modulus of the determinant, the phase is half its argument, and the boost and rotor are the anisotropy and the turn of the two factors.</p>
+<p>The factorisation solves one equation, $\tilde Q\tilde Q^{*}=\tilde H^2$, and the second factor follows by division. It needs no construction external to the algebra, and its domain is the whole complement of the cone.</p>
+<h3 id="the-three-pairings-compared">The Three Pairings Compared</h3>
+<p>The three pairings are not three decompositions; they are three readings of the same ordered word. The quaternion pairing isolates the real quaternion structure, the Hamilton pairing isolates the complex axis-angle, and the Cartan pairing isolates the amplitude–phase split. Each has a physical reading and a domain of its own.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Pairing</th>
+<th>The factor that answers it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What is the real quaternion modulus and its angle?</td>
+<td>quaternion</td>
+<td>$\tilde q=r\tilde u_{\mathrm r}$, $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$</td>
+</tr>
+<tr>
+<td>What is the axis and the complex angle?</td>
+<td>Hamilton</td>
+<td>$\vec\Xi$, $\Theta$</td>
+</tr>
+<tr>
+<td>What is the amplitude and the phase?</td>
+<td>Cartan</td>
+<td>$\tilde H=r\tilde U_{\mathrm b}$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Cartan pairing has the widest construction domain, the whole complement of the cone, and the cleanest matrix interpretation; the quaternion pairing has the most direct electromagnetic reading; the Hamilton pairing has the most direct Lorentz-group reading. None is more fundamental than the others, and none adds information to the four-factor word.</p>
+<h2 id="the-action-on-the-sectors-and-the-subspaces">The Action on the Sectors and the Subspaces</h2>
+<p>The four factors act by four different operations, and the table records which subspace each one preserves.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Operation</th>
+<th>Stable subspaces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scale $r$</td>
+<td>dilation by $r^2$</td>
+<td>all six</td>
+</tr>
+<tr>
+<td>phase $\exp(i\alpha)$</td>
+<td>multiplication by the scalar</td>
+<td>centre, vector space</td>
+</tr>
+<tr>
+<td>boost $\tilde U_{\mathrm b}$</td>
+<td>congruence</td>
+<td>centre, $\mathbb{M}_+$, $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>rotor $\tilde u_{\mathrm r}$</td>
+<td>conjugation</td>
+<td>all six</td>
+</tr>
+</tbody>
+</table></div>
+<p>The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector space $\mathrm{Vect}(\mathbb{B})$, the real quaternion space $\mathbb{H}_{\mathbb{B}}$, the imaginary quaternion space $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_\pm$. The scale and the rotor preserve all six; the phase preserves only the centre and the vector space; the boost preserves the centre and the two sectors. Apart from the centre, no subspace is preserved by all four factors, and that is why no single subspace characterises the word.</p>
+<p>On the material sector the boost reads</p>
+<p>$$
+a'=a\cosh\psi-b_\parallel\sinh\psi, \qquad
+b_\parallel'=b_\parallel\cosh\psi-a\sinh\psi,
+$$</p>
+<p>with $\psi$ the rapidity of the factor in view, $a$ the scalar coordinate and $b_\parallel$ the component of the vector part along the boost axis; on the informational sector the two cross terms carry the opposite sign. The difference is the sector sign. The same congruence reads as the Lorentz action on matter and as a positive congruence on the state space.</p>
+<p>The phase at $\alpha=\pi/2$ is multiplication by $i$, which exchanges the two sectors and reverses the norm. It is the Wick rotation, the passage from real to imaginary time, and it is not a symmetry of the material sector. The rotor at $\theta=2\pi$ is $-e_t$, the sign that a spinor picks up after a rotation by $2\pi$; the phase branch does not reach $\pi$.</p>
+<h2 id="the-boost-factor-is-not-the-acting-rotor">The Boost Factor Is Not the Acting Rotor</h2>
+<p>The word's boost factor is $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$. Its congruence is the Lorentz boost of rapidity $\psi$. The factor that the corpus uses as the physical frame rotor is the inverse square root,</p>
+<p>$$
+\tilde U_{\mathrm L}=\tilde U_{\mathrm b}^{-1/2},
+$$</p>
+<p>whose congruence is the boost of half the rapidity. The word stores the boost twice: the factor's exponent carries $\psi/2$, and the congruence deposits $\psi$. Taking $\tilde U_{\mathrm b}$ for the acting rotor doubles the rapidity.</p>
+<p>The same doubling appears in the velocity. For a four-velocity of speed $v$ and $\beta=v/c$, the word gives</p>
+<p>$$
+\cosh\psi=\frac{1+\beta^2}{1-\beta^2}=\cosh(2\eta), \qquad \beta=\tanh\eta,
+$$</p>
+<p>so the word's rapidity is twice the rapidity $\eta$ of the frame. The physical rotor has rapidity $\eta$; the word has $2\eta$. This is the most common factor-of-two error in the corpus, and it is a bookkeeping error, not a physical one: both numbers describe the same boost, one stored and one acted.</p>
+<p>The factor-of-two has a second face. A one-sided multiplication by a real scale $r$ dilates by $r$, while the sandwich dilates by $r^2$. The one-sided action is half the dilation of a frame change. The same one-slot versus two-slot bookkeeping is at work in the boost.</p>
+<h2 id="a-four-vector-is-bilinear-a-spinor-is-linear">A Four-Vector Is Bilinear, a Spinor Is Linear</h2>
+<p>The polar element acts on a four-vector and on a spinor by two different laws. A four-vector transforms by the congruence</p>
+<p>$$
+X\longmapsto \tilde U X\tilde U^{*},
+$$</p>
+<p>which is bilinear in the spinor when $X=\psi\psi^{*}$; a null four-vector is of that form. A spinor is a module element and transforms by the left multiplication</p>
+<p>$$
+\psi\longmapsto \tilde U\psi.
+$$</p>
+<p>The first law is quadratic in the spinor, the second linear. The sandwich is the four-vector column of the representation theory and the left multiplication is the spinor column. The polar action on the two sectors is the four-vector action; the action on the spinor module is the left multiplication, and it is the one that carries the double cover and the sign of the spinor.</p>
+<p>The distinction is the reason the same rotor acts differently on the two objects. A rotation through $2\pi$ gives $-\tilde U$ on the spinor and $+\mathrm{id}$ on the four-vector, because the congruence by $-\tilde U$ is the congruence by $\tilde U$. The sign is visible only in the linear action.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<p>The word is the physical description of an element, and each factor has a reading.</p>
+<ul>
+<li>The <strong>scale</strong> is the invariant length: the modulus of the four-position, $c$ for the four-velocity, $mc$ for the on-shell four-momentum. It is the only factor that survives the sandwich as a scalar, and it survives squared.</li>
+<li>The <strong>phase</strong> is the timelike/spacelike label and the gauge phase. It is $\pi/2$ on the timelike cone and $0$ on the spacelike sheet; it is the central $\mathrm{U}(1)$ that the sandwich does not see.</li>
+<li>The <strong>boost</strong> is the velocity: the axis and the rapidity that carry the element to its rest frame. The word stores the rapidity as $\psi=2\eta$, and the acting rotor uses $\eta=\psi/2$.</li>
+<li>The <strong>rotor</strong> is the spin orientation: the rotation angle and axis of the spatial frame.</li>
+</ul>
+<p>The pairings read the same data under different headings. The quaternion pairing reads the electromagnetic field as a real quaternion modulus and a quaternion angle; the Hamilton pairing reads the Lorentz element as a complex axis-angle; the Cartan pairing reads the element as an amplitude times a unitary. The readings are dictionaries, not derivations: the algebra supplies the factors, and the physics supplies the names.</p>
+<p>The word is a coordinate statement, not a dynamics. It says that every element off the cone is a scale times a phase times a boost times a rotor; it does not say that a physical system moves through those factors, nor that the factors are conserved, nor that the decomposition is stable under evolution. The evolution articles own the dynamics; this article owns the description.</p>
+<h2 id="boundaries">Boundaries</h2>
+<p>The decomposition is defined off the null cone and nowhere on it. The failure is the absence of a rest frame, not a singularity of the algebra.</p>
+<p>The branch of the square root is the only convention. The interval $(-\pi/2,\pi/2]$ for the phase fixes the sign of the modulus; every other step is forced.</p>
+<p>The boost factor is not the acting rotor. The word stores the boost twice, and reading the factor as the rotor doubles the rapidity. The velocity formula $\cosh\psi=(1+\beta^2)/(1-\beta^2)$ is the check.</p>
+<p>The Hamilton pairing has a smaller domain than the polar word; the quaternion construction needs a non-vanishing real quaternion part; the Cartan pairing and the four-factor word have the widest domain. A statement proved in one pairing need not hold in another without checking the domain.</p>
+<p>The three pairings are regroupings, not new decompositions. They add no information to the four-factor word and no physics to the factors. Their value is that each makes one physical question easy to ask.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>Every biquaternion off the null cone is $r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.</li>
+<li>The scale is the modulus of the norm, the phase is half its argument, the boost is the Hermitian positive factor and the rotor is the real quaternion factor.</li>
+<li>The word exists exactly off the zero-divisor cone; on the cone a lightlike four-vector has no rest frame and no boost split.</li>
+<li>The branch $\alpha\in(-\pi/2,\pi/2]$ is the only convention of the decomposition.</li>
+<li>The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$ with $\tilde q=r\tilde u_{\mathrm r}$ and $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$; it groups scale and rotor against phase and boost.</li>
+<li>The Hamilton root pairing is $\tilde Q=\Rho(\cos\Theta+\vec\Xi\sin\Theta)$; it groups scale and phase against boost and rotor, and its domain also excludes a null vector part.</li>
+<li>The Cartan pairing is $\tilde Q=\tilde H\tilde U$ with $\tilde H=r\tilde U_{\mathrm b}$ and $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$; it groups scale and boost against phase and rotor.</li>
+<li>The three pairings are the three bracketings of the four-factor word; none adds information to it.</li>
+<li>The scale and the rotor preserve all six remarkable subspaces, the phase preserves the centre and the vector space, and the boost preserves the centre and the two sectors.</li>
+<li>On the material sector the boost reads with one sign of the cross terms; on the informational sector the sign is opposite.</li>
+<li>The word's boost factor has rapidity $\psi=2\eta$, where $\eta$ is the rapidity of the physical frame; the acting rotor is the inverse square root of the factor.</li>
+<li>A four-vector transforms by the congruence and a spinor by the left multiplication; the first is bilinear in the spinor, the second linear.</li>
+<li>The decomposition is a coordinate statement off the cone and not a dynamics.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r$</td>
+<td>the positive scale, $r=\lvert N\rvert^{1/2}$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the central phase, $\alpha=\tfrac12\arg N\in(-\pi/2,\pi/2]$</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$</td>
+<td>the Hermitian positive boost factor, the word's boost</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$</td>
+<td>the unit real quaternion rotor</td>
+</tr>
+<tr>
+<td>$\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$</td>
+<td>the boost and rotor axes, unit real pure quaternions</td>
+</tr>
+<tr>
+<td>$\psi$, $\theta$</td>
+<td>the rapidity stored in the word and the rotation angle</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>the rapidity of the physical frame, $\psi=2\eta$</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm L}=\tilde U_{\mathrm b}^{-1/2}$</td>
+<td>the physical frame rotor</td>
+</tr>
+<tr>
+<td>$N=\langle\tilde Q\rangle_{\natural}$</td>
+<td>the biquaternion norm</td>
+</tr>
+<tr>
+<td>$E^2=\sum_\mu\lvert Q_\mu\rvert^2$</td>
+<td>the Euclidean square, the Born form at equal arguments</td>
+</tr>
+<tr>
+<td>$\tilde q=r\tilde u_{\mathrm r}$</td>
+<td>the real quaternion modulus of the quaternion pairing</td>
+</tr>
+<tr>
+<td>$\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$</td>
+<td>the real quaternion angle of the quaternion pairing</td>
+</tr>
+<tr>
+<td>$\Rho=\sqrt N$, $\vec\Xi$, $\Theta$</td>
+<td>the modulus, axis and complex angle of the Hamilton pairing</td>
+</tr>
+<tr>
+<td>$\tilde H=r\tilde U_{\mathrm b}$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$</td>
+<td>the Hermitian and unitary factors of the Cartan pairing</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_\pm$</td>
+<td>the material and informational sectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/the-polar-element-representation-of-biquaternions.html">The Polar Element Representation of Biquaternions</a>, for the four factors, the theorem and the uniqueness.</li>
+<li><a href="../articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.html">The Quaternion Pairing of the Polar Element Representation of Biquaternions</a>, for the real quaternion modulus and the angle.</li>
+<li><a href="../articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.html">The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</a>, for the complex axis-angle.</li>
+<li><a href="../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html">The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</a>, for the amplitude–phase split and the matrix polar decomposition.</li>
+<li><a href="../articles_maths/the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html">The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces</a>, for the sector action and the cross-term signs.</li>
+<li><a href="../articles_maths/the-polar-element-representation-and-remarkable-subspaces.html">The Polar Element Representation and Remarkable Subspaces</a>, for the preservation table.</li>
+<li><em>The Polar Decomposition of Biquaternions in Practice</em>, for the same procedure read in the physics category.</li>
+<li><em>The Quaternion Pairing of the Polar Element Representation of Biquaternions</em>, <em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em> and <em>The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</em>, for the same pairings read in the physics category.</li>
+<li><em>The Element and Operator Representations</em>, for the pictures in which the polar factors act.</li>
+<li><em>The Operators: One-Sided, Two-Sided, Sandwich</em>, for the one-sided and two-sided operators of the word.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

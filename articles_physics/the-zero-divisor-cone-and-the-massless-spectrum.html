@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Zero-Divisor Cone and the Massless Spectrum — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-zero-divisor-cone-and-the-massless-spectrum"><strong>The Zero-Divisor Cone and the Massless Spectrum</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and its vanishing set is the <strong>zero-divisor cone</strong>. Three sets live inside and around it, and the first job of this article is to keep them apart. The <strong>roots of $0$</strong> are the origin together with the elements of square zero. The <strong>nilpotents</strong> are the nonzero elements of square zero. The <strong>cone</strong> is strictly larger: it contains the non-pure zero divisors as well, the complex multiples of the non-trivial idempotents.</p>
+<p>The physical reading is the one the corpus has built. On the material sector the norm is the Minkowski interval, so the cone cut by the sector is the <strong>light cone</strong>, and the level set $\langle\tilde R\rangle_{\natural}=-m^2c^2$ is the <strong>mass shell</strong>. The massless shell is the cone itself, and the <strong>massless spectrum</strong> is what the cone does and does not fix: the shell, the rank and the direction, but not the spin.</p>
+<p>The article owns no theorem. It states the nesting, the invertibility criterion and the factorisation, each in the mathematics or physics article that proves it, and it reads them.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The zero divisors, their two families and their relation to the idempotents</td>
+<td><a href="../articles_maths/zero-divisors-of-the-biquaternion-algebra.html">Zero Divisors of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The roots of $0$, the nilpotent cone, index two and the position among the remarkable subspaces</td>
+<td><a href="../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html">Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The norm, its multiplicativity, the inverse and the group of units</td>
+<td><a href="../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html">Norm and Invertibility in the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>The four forms, the interval and the signature on the two sectors</td>
+<td><a href="../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html">The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</a></td>
+</tr>
+<tr>
+<td>The restrictions of the forms and the norms to the material sector</td>
+<td><a href="../articles_maths/remarkable-subspaces-and-the-four-forms.html">Remarkable Subspaces and the Four Forms</a>, <a href="../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html">Remarkable Subspaces and the Four Algebraic Norms</a></td>
+</tr>
+<tr>
+<td>The cone as a topological object, its link and the punctured cone</td>
+<td><a href="../articles_maths/the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a></td>
+</tr>
+<tr>
+<td>The projective cone, the Segre quadric and the two rulings</td>
+<td><a href="../articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a></td>
+</tr>
+<tr>
+<td>The group of units as the complement of the cone</td>
+<td><a href="../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html">The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="three-sets-and-one-nesting">Three Sets and One Nesting</h2>
+<p>The square and the norm separate the three sets in one computation. For $\tilde Q=Q_te_t+\vec Q$,</p>
+<p>$$
+\tilde Q^2=\bigl(Q_t^2-(\vec Q,\vec Q)\bigr)e_t+2Q_t\vec Q,
+\qquad
+\langle\tilde Q\rangle_{\natural}=Q_t^2+(\vec Q,\vec Q),
+$$</p>
+<p>and the two equations $\tilde Q^2=0$ and $\langle\tilde Q\rangle_{\natural}=0$ are not the same equation.</p>
+<ul>
+<li><strong>The roots of $0$</strong> satisfy $\tilde Q^2=0$. The vector–scalar split gives $2Q_t\vec Q=0$ and $Q_t^2-(\vec Q,\vec Q)=0$, so a root is either a complex scalar or pure. The scalar branch returns the origin alone; the pure branch is the <strong>nilpotent cone</strong>, the pure elements with isotropic complex vector part.</li>
+<li><strong>The nilpotents</strong> are the nonzero roots of $0$. They are exactly the nonzero pure elements with $(\vec Q,\vec Q)=0$, they have index two, and each lies in its own annihilator.</li>
+<li><strong>The zero-divisor cone</strong> is the vanishing set of the norm, $\langle\tilde Q\rangle_{\natural}=0$. An element of the cone with a nonzero scalar part is a zero divisor but not a nilpotent; it is a complex multiple of a non-trivial idempotent.</li>
+</ul>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>set</th>
+<th>equation</th>
+<th>real dimension</th>
+<th>contains a physical null vector of $\mathbb{M}_-$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>roots of $0$</td>
+<td>$\tilde Q^2=0$</td>
+<td>$4$, plus the origin</td>
+<td>no</td>
+</tr>
+<tr>
+<td>nilpotent cone</td>
+<td>$\tilde Q^2=0$, $\tilde Q\neq0$</td>
+<td>$4$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>zero-divisor cone</td>
+<td>$\langle\tilde Q\rangle_{\natural}=0$</td>
+<td>$6$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>The nesting is the first physical statement, and it is a statement about which object carries which reading. The <strong>nilpotent cone</strong> is the algebraic locus of the lightlike <em>displacements</em>: a nonzero element whose composition with itself is nothing. The <strong>whole cone</strong> is the algebraic locus of the lightlike <em>directions</em>, including the ones that do not annihilate themselves. The physical light cone of the material sector is the second, not the first. A reader who identifies the two sets will misread every later statement, so the distinction is stated here once and used throughout.</p>
+<h2 id="the-cone-as-the-wall-of-invertibility">The Cone as the Wall of Invertibility</h2>
+<p>The norm is multiplicative, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and an element is invertible exactly when its norm does not vanish, with inverse</p>
+<p>$$
+\tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}}.
+$$</p>
+<p>The cone is therefore the set of the non-invertible elements off the origin, and the group of units $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ is its complement. The cone is the <strong>wall of the units</strong>.</p>
+<p>Two consequences follow, and both are physical.</p>
+<ul>
+<li><strong>The cone is closed under composition.</strong> If either factor is on the cone, the product is on the cone, because the norm of the product is the product of the norms. A lightlike element composed with anything stays lightlike. Both the timelike and the spacelike elements are units: the failure of invertibility sits on the null set alone, and a spacelike displacement is as reversible as a timelike one.</li>
+<li><strong>The units are the reversible operations.</strong> An element of the group has a two-sided inverse, so its action can be undone; an element of the cone has none, so its action cannot. The reading of the wall is the algebraic form of the statement that a lightlike propagation is not reversible. A null element has no inverse, so it cannot label a frame: a massless particle has no rest frame.</li>
+</ul>
+<p>The observables of the previous article sit on the unit side. A root of $+1$ is a unit, and its idempotents are on the cone. The observable and its states are therefore separated by the wall: the observable is reversible, the state is not. That is the same contrast as before, now located on the cone.</p>
+<p>The corpus also reads the wall as an <strong>information barrier</strong>: the boundary at which a description cannot be recovered, and the target of an erasure. That reading adds thermodynamics to the algebra and is owned by <em>Causality and the Light Cone as an Information Barrier in Biquaternionic Form</em> and <em>Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form</em>.</p>
+<p><strong>The algebraic statement is narrower.</strong> An element of the cone has no inverse in the algebra; that alone says nothing about entropy, about the arrow of time, or about the impossibility of a physical process.</p>
+<h2 id="the-cut-by-the-material-sector">The Cut by the Material Sector</h2>
+<p>A material four-vector is anti-Hermitian,</p>
+<p>$$
+\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z,
+$$</p>
+<p>and its norm is the interval</p>
+<p>$$
+\langle\tilde R\rangle_{\natural}=-c^2t^2+\lvert x\vec e_x+y\vec e_y+z\vec e_z\rvert^2,
+$$</p>
+<p>of signature $(-,+,+,+)$. The cone cut by $\mathbb{M}_-$ is the <strong>null cone</strong> $c^2t^2=\lvert\vec r\rvert^2$, and its level set</p>
+<p>$$
+\langle\tilde R\rangle_{\natural}=-m^2c^2
+$$</p>
+<p>is the <strong>mass shell</strong>. The mass is the value of the norm, up to the sign and the factor $c^2$, and the massless case is the value zero.</p>
+<p>Two facts about the cut carry the reading.</p>
+<ul>
+<li><strong>Only the massless shell is a cone.</strong> The norm is homogeneous of degree two, $\langle\lambda\tilde R\rangle_{\natural}=\lambda^2\langle\tilde R\rangle_{\natural}$, so a level set $\langle\tilde R\rangle_{\natural}=k$ is invariant under dilation only when $k=0$. The massless shell is the only shell that is a cone; a massive shell is a hyperboloid.</li>
+<li><strong>The cone is the characteristic cone of the wave operator.</strong> On the material sector the d'Alembertian has the cone as its characteristic set, which is the standard statement that signals propagate on the light cone. The algebraic cone and the characteristic cone are one object, and <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> develops the identification.</li>
+</ul>
+<p>The cone is three-real-dimensional inside the four real dimensions of the sector, and it has a single point at the origin. The interior of the future cone is the timelike region, the exterior the spacelike one, and the cone itself the lightlike boundary. The mass-shell reading uses the same norm and the same sign; only the value changes.</p>
+<p>The cone is invariant under the rotor group, so the timelike, spacelike and null separations are unions of orbits, and no change of frame carries a point off the cone. That invariance is the algebraic form of the statement that the causal structure is frame-independent.</p>
+<h2 id="the-massless-spectrum">The Massless Spectrum</h2>
+<p>The <strong>massless spectrum</strong> is the set of massless one-particle states of the framework. The cone is its common floor, and the reading is a division of labour: the cone fixes some of the data of a massless particle and leaves the rest to the representation theory.</p>
+<p><strong>What the cone fixes.</strong> A massless element has $\langle\tilde Q\rangle_{\natural}=0$; its sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is a positive element whose determinant is $\lvert\langle\tilde Q\rangle_{\natural}\rvert^2$, so it drops from rank two to rank one; and its direction is a point of the projective cone. The shell, the rank and the direction are therefore cone data. For a material null momentum the square is explicit:</p>
+<p>$$
+\tilde P\star\tilde P=4\frac{E^2}{c^2}\,\tilde\Pi(-\vec u),\qquad
+\tilde\Pi(-\vec u)=\tfrac12(e_t-i\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert},
+$$</p>
+<p>a positive multiple of the idempotent along the direction opposite to the momentum. The massless state is therefore a <strong>pure boundary state</strong>, not a null state: the same idempotent appears with an imaginary coefficient in the composition and with a positive coefficient in the probability. One momentum, two faces.</p>
+<p><strong>What the cone does not fix.</strong> The cone does not fix the spin. The massless particles the corpus has built are the photon of helicity $\pm1$, the graviton of helicity $\pm2$, the Rarita–Schwinger field of helicity $\pm\tfrac32$ and the chiral fermion of helicity $\pm\tfrac12$. All four have vanishing norm; the cone sees no difference between them. The rank is one for all four, so <strong>rank is a mass label and not a spin label</strong>: it separates the massless from the massive, and it does not separate the massless from one another.</p>
+<blockquote>
+<p><strong>The cone is the common floor of the massless spectrum, not its separator.</strong> A massless particle is a point of the cone plus a helicity, and the cone supplies the first factor only.</p>
+</blockquote>
+<p>The first factor has a name and a geometry. The directions of the cone are the <strong>celestial sphere</strong>: the punctured cone is smooth and the apex is its only singular point, so the zero four-momentum is not a direction. Over the complex numbers the projective cone is the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$ with its two rulings, the two chiral spinor families. The direction, the chirality and the phase are the subject of <em>The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</em>, and the spinor-helicity form of the same statement is <em>The Spinor-Helicity Formalism and Biquaternions</em>. This article uses the factorisation only to say why the cone leaves the spin free.</p>
+<p>The factorisation is one line. A null element of the material sector, multiplied by $-i$, is a positive rank-one Hermitian element, and a positive rank-one element is a spinor times its conjugate:</p>
+<p>$$
+\tilde P=i\,\xi\xi^{\dagger},\qquad \xi\in\mathbb{C}^2,\qquad \xi\neq0.
+$$</p>
+<p>The direction of $\tilde P$ depends on $\xi$ only through its ray, so the phase of the spinor is not a cone datum. The helicity is the weight of that phase under the little group, and the two helicities of a massless field are the two weights. The cone therefore supplies the ray and the little group supplies the weight; the <strong>value</strong> of the spin is neither. It is a datum of the Lorentz type of the field, and the gauge symmetry is what removes the lower helicities of a higher-rank carrier, as the photon, graviton and Rarita–Schwinger articles show.</p>
+<p>That division is the article's reading of the word <em>spectrum</em>. The cone is the part of the spectrum that the algebra derives; the spin and the gauge structure are the part it imports. The boundary is exact: <strong>the cone derives no spin and no particle content.</strong> It marks the massless shell and organises the directions, and every massless field of the corpus uses the same marking.</p>
+<h2 id="the-nilpotents-are-not-the-physical-null-vectors">The Nilpotents Are Not the Physical Null Vectors</h2>
+<p>The distinction of §<em>Three Sets and One Nesting</em> deserves its own section, because the two objects are easy to identify and the identification is wrong.</p>
+<p>A physical null vector $\tilde P\in\mathbb{M}_-$ has $\operatorname{Sc}\tilde P\neq0$ whenever the energy is nonzero, so it is not pure and cannot be a nilpotent. What it is, exactly, is an imaginary multiple of a Hermitian idempotent:</p>
+<p>$$
+\tilde P=2i\frac{E}{c}\,\tilde\Pi(-\vec u),\qquad \vec u=\frac{\vec p}{\lvert\vec p\rvert},
+$$</p>
+<p>with $\tilde\Pi(-\vec u)$ of square one, Hermitian, trace one and norm zero. The null momentum is therefore on the <strong>non-pure</strong> part of the cone, the part the nilpotents do not reach.</p>
+<p>The nilpotents are pure. They lie in the vector subspace and in neither sector: the informational and the material sectors contain no nilpotent at all, because a Hermitian or anti-Hermitian element of square zero is zero. A root of $0$ is an algebraic lightlike <em>displacement</em> — a direction that annihilates itself — and it is not a four-momentum. The four-momentum is the idempotent multiple above.</p>
+<p>The index is two for the nilpotents: $\tilde\Upsilon^3=0$ exactly when $\tilde\Upsilon^2=0$, and there is no higher index. That rigidity is what makes the nilpotent cone a good algebraic model of a lightlike displacement: the element carries a direction, and one composition with itself is enough to erase it. It is not a model of a lightlike four-momentum, which is not erased by its own composition.</p>
+<h2 id="physical-readings">Physical Readings</h2>
+<ul>
+<li><strong>The cone is the light cone.</strong> The interpretation is that the zero set of the norm, cut by the material sector, is the null cone of Minkowski space, and its level sets are the mass shells. Boundary: the identification needs the sector cut; on the whole algebra the cone is a complex cone and not a spacetime object.</li>
+<li><strong>The cone is the wall of invertibility.</strong> The interpretation is that the non-invertible elements are exactly the lightlike ones, so the cone is the boundary between the reversible operations and the irreversible ones. Boundary: an algebraic statement about inverses; the thermodynamic reading is separate and cited, not derived.</li>
+<li><strong>The mass is the norm.</strong> The interpretation is that the value of the norm on the material sector is $-m^2c^2$, so the mass is a level set of the norm and the massless case is the cone itself. Boundary: the value is a parameter of the element, not a prediction of a mass spectrum.</li>
+<li><strong>The massless spectrum is the cone plus a helicity.</strong> The interpretation is that every massless particle sits on the same cone, and the cone fixes the shell, the rank and the direction while the spin and the gauge structure are imported. Boundary: the cone derives no spin value and no particle content.</li>
+<li><strong>Rank is a mass label.</strong> The interpretation is that the sesquilinear square drops from rank two to rank one exactly on the cone, so the rank separates massless from massive and does not separate the massless particles. Boundary: a statement about the rank of one element, not about a counting of states.</li>
+<li><strong>The nilpotent is a lightlike displacement, the null vector is a lightlike momentum.</strong> The interpretation is that the pure nilpotent cone models the displacement that annihilates itself, while the physical null momentum is an imaginary multiple of an idempotent on the non-pure part of the cone. Boundary: the two objects are on the same cone and are not the same element.</li>
+</ul>
+<h2 id="limits">Limits</h2>
+<ul>
+<li><strong>Not every zero divisor squares to $0$.</strong> The non-pure family does not, and it is the family the physical null momenta belong to. The roots of $0$ are the pure part of the cone together with the origin.</li>
+<li><strong>The metric enters only with the sector.</strong> On the whole algebra the cone is the zero set of a complex quadratic form; the Minkowski interval appears when $\mathbb{M}_-$ is cut out. The cone is not derived from a metric.</li>
+<li><strong>No mass values and no particle spectrum.</strong> The article reads the mass shell as a level set and the massless case as the zero level. It does not predict which masses occur, and it does not derive the particle content.</li>
+<li><strong>No spin and no gauge structure.</strong> The cone fixes the shell, the rank and the direction. The helicity, the value of the spin and the removal of the lower helicities are representation and gauge data, owned by the particle articles.</li>
+<li><strong>The complex cone and the real cone are different objects.</strong> The projective geometry of $\mathbb{P}^1\times\mathbb{P}^1$ is the complexified cone; the real celestial sphere is a real slice. The article uses the complex picture only for the two chiralities and sends the reader to the article that owns it.</li>
+<li><strong>The cone is pointwise.</strong> Every statement is about one algebra at one point. In a curved background the single cone becomes a field of local cones, the metric selecting the directions and the surfaces; the algebra supplies the criterion of nullity only.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ has three nested zero sets: the roots of $0$, which are the origin and the nilpotent cone; the nilpotents, which are the nonzero pure isotropic elements of index two; and the zero-divisor cone, which is strictly larger and contains the non-pure zero divisors, the complex multiples of the non-trivial idempotents. The cone is the wall of the group of units, closed under composition and the boundary of invertibility.</p>
+<p>Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde R\rangle_{\natural}=-m^2c^2$ is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The <strong>massless spectrum</strong> is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$</td>
+<td>the biquaternion norm</td>
+</tr>
+<tr>
+<td>$\mathcal Z=\{\langle\tilde Q\rangle_{\natural}=0\}$</td>
+<td>the zero-divisor cone</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>a nilpotent, $\tilde\Upsilon^2=0$, $\tilde\Upsilon\neq0$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>the material sector, $\tilde R=ict\,e_t+\vec r$</td>
+</tr>
+<tr>
+<td>$\langle\tilde R\rangle_{\natural}=-c^2t^2+\lvert\vec r\rvert^2$</td>
+<td>the Minkowski interval</td>
+</tr>
+<tr>
+<td>$-m^2c^2$</td>
+<td>the mass-shell level of the interval</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$</td>
+<td>the group of units</td>
+</tr>
+<tr>
+<td>$\tilde P=i\,\xi\xi^{\dagger}$</td>
+<td>a null material momentum as an imaginary multiple of a rank-one projector</td>
+</tr>
+<tr>
+<td>$\mathrm{GPA}$, $\mathrm{GPS}$</td>
+<td>the plain algebra and the plain sesqualgebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/zero-divisors-of-the-biquaternion-algebra.html">Zero Divisors of the Biquaternion Algebra</a>, for the two families and their relation to the idempotents.</li>
+<li><a href="../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html">Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</a>, for the classification, the index and the remarkable subspaces.</li>
+<li><a href="../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html">Norm and Invertibility in the Biquaternion Algebra</a>, for multiplicativity, the inverse and the group of units.</li>
+<li><a href="../articles_maths/the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a> and <a href="../articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a>, for the cone as a singular object and its projective rulings.</li>
+<li><em>Square Roots of Zero and the Nilpotents: the Light Cone</em>, for the same classification read at length in the physics category.</li>
+<li><em>The Cone and the Massless Particles in the Biquaternioid Structures over $\mathbb{C}$</em>, for the cone in the two bands and the four massless particles.</li>
+<li><em>Zero Divisors in the Biquaternioid Structures over $\mathbb{C}$</em>, for the zero-divisor sets of the twelve structures and the cone as the shared object of the four general products.</li>
+<li><em>The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</em> and <em>The Spinor-Helicity Formalism and Biquaternions</em>, for the direction, the chirality and the helicity weights.</li>
+<li><em>The Null Four-Momentum: What the Cone Derives and What It Does Not</em>, for the element-level division.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
