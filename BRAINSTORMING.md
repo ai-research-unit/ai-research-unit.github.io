@@ -29,7 +29,7 @@ Exponentials for states and roots : exp(θ Ξ~ )
 reduced biquaternions
 
 
-
+The Unit Group, the Cone and the Orders (Topology), Derivatives, Fields and Transforms (Analysis), and Frames, Rotations and the Lorentz Group (Geometry)
 
 
 

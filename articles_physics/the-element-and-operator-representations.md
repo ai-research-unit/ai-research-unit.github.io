@@ -96,7 +96,7 @@ $$
 
 The trace is twice the scalar part, the determinant is the norm, and the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$. The Hermitian conjugation ${}^{*}$ becomes the conjugate transpose, so $\mathbb{M}_+$ and $\mathbb{M}_-$ become the Hermitian and anti-Hermitian matrices. The determinant is the interval on the material sector; on the informational sector its sign is the causal type, and a Hermitian matrix is a state exactly when it is positive, which requires both a positive trace and a non-negative determinant.
 
-The matrix acts on a two-component column. That column is the **spinor**, and the action is the left multiplication of the algebra on its simple module. The two columns of the matrix algebra are the two minimal left ideals, which the corpus calls the two chiralities. The spinor picture is the smallest picture that carries the state; it does not carry the four-vector.
+The matrix acts on a two-component column. That column is the **spinor**, and the action is the left multiplication of the algebra on its simple module. The two columns of the matrix algebra are the two minimal left ideals, which the corpus calls the two chiralities; this article writes **column chirality** for that column-index convention. The spinor picture is the smallest picture that carries the state; it does not carry the four-vector.
 
 ### The $4\times4$ Left Regular Element
 
@@ -113,11 +113,11 @@ $$
 \qquad A_\pm(\tilde Q)\sim\mathsf{M}_2(\tilde Q),
 $$
 
-and each block has trace $2Q_t$ and determinant $N$. The regular picture is the spinor picture taken twice. The two blocks are the two chiralities; left multiplication preserves each of them, which is why the matrix is block diagonal.
+and each block has trace $2Q_t$ and determinant $N$. The regular picture is the spinor picture taken twice. The two blocks are the two column chiralities; left multiplication preserves each of them, which is why the matrix is block diagonal.
 
 The determinant is a **volume**, not the norm. On a four-position it is $s^4$, on a four-velocity $c^4$, on an on-shell four-momentum $m^4c^4$, and on a lightlike four-vector it vanishes. The square does not change the zero set, so the light-cone statement survives the doubling, but it changes the degree: an identity that holds to the first power of $N$ in the $2\times2$ picture holds to the second power here.
 
-The right regular matrix $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix of $X\mapsto X\tilde Q$. It is not the transpose of the left one; the relation uses the sign matrix $D=\operatorname{diag}(-1,1,1,1)$, and the two matrices are genuinely different as soon as the algebra is non-commutative. The left copy preserves the two chiralities and the right copy is the only one that can move between them. This is the structural reason the mass term is a right multiplication, and it is read in the operator article.
+The right regular matrix $\mathsf{M}_4^{R}(\tilde Q)$ is the matrix of $X\mapsto X\tilde Q$. It is not the transpose of the left one; the relation uses the sign matrix $D=\operatorname{diag}(-1,1,1,1)$, and the two matrices are genuinely different as soon as the algebra is non-commutative. The left copy preserves the two column chiralities and the right copy is the only one that can move between them. This is the structural reason the mass term is a right multiplication, and it is read in the operator article.
 
 ## The Operator Representations
 
@@ -181,17 +181,17 @@ A boost mixes time and space, a rotation does not; on the cone the operator coll
 
 ## Physical Readings
 
-**The spinor and the regular picture.** The $2\times2$ picture is the spinor picture: a biquaternion acts on a two-component column. The $4\times4$ picture is that same action written on the algebra itself, and it is the spinor picture taken twice. The two blocks are the two chiralities, not two particles; the doubling is the dimension of the module, not a doubling of the physical state space.
+**The spinor and the regular picture.** The $2\times2$ picture is the spinor picture: a biquaternion acts on a two-component column. The $4\times4$ picture is that same action written on the algebra itself, and it is the spinor picture taken twice. The two blocks are the two column chiralities, not two particles; the doubling is the dimension of the module, not a doubling of the physical state space. The column chirality is not the module chirality: the two ideals are isomorphic, while the module chiral halves are $S$ and its conjugate module $\bar S$, which are inequivalent as complex modules and isomorphic only as real representations. *The Complementary Ideal and the Second State Space* states the same warning.
 
 **The double cover.** The norm-one group is $\mathrm{SL}(2,\mathbb{C})=\mathrm{Spin}(1,3)$, and it covers the proper orthochronous Lorentz group two-to-one with kernel $\{\pm \mathrm{I}_2\}$. A rotation through $2\pi$ gives $-\mathrm{I}_2$ and a rotation through $4\pi$ gives $\mathrm{I}_2$. The sign is the sign of the spinor, and it is the discrete difference between the spinor picture and the four-vector picture.
 
-**The mass coupling.** Left multiplication preserves each chirality, so a mass term that couples the two chiralities cannot be a left multiplication. It is a right multiplication by a nilpotent element, which maps one minimal left ideal onto the other and annihilates the second. In the $4\times4$ picture this is the off-diagonal block that the left regular matrix does not have; in the $2\times2$ picture it is the right action that the column picture does not show.
+**The mass coupling.** Left multiplication preserves each column chirality, so a mass term that couples the two column chiralities cannot be a left multiplication. It is a right multiplication by a nilpotent element, which maps one minimal left ideal onto the other and annihilates the second. In the $4\times4$ picture this is the off-diagonal block that the left regular matrix does not have; in the $2\times2$ picture it is the right action that the column picture does not show.
 
 **The central phase.** A central phase is a scalar matrix. It multiplies the element matrix, it multiplies the determinant by $\lambda^2$, and it disappears from the sandwich. The element picture sees the phase; the operator picture does not. This is why the polar word carries the phase and the sandwich does not.
 
 **The degree of the determinant.** The $2\times2$ determinant is $N$, the $4\times4$ determinant is $N^2$, and the operator determinant is $|N|^4$. Only the zero sets agree. A computation that reads a determinant must say which picture it is in.
 
-**The trace factor.** The trace of the $2\times2$ matrix is $2Q_t$, the trace of the regular matrix is $4Q_t$, and the trace of the operator is $4|Q_t|^2$. The factor two is the number of chiralities; the factor four is the dimension of the regular module or the number of matrix units. The factors are bookkeeping, not physics, but they are the bookkeeping in which the factor-of-two errors of the corpus live.
+**The trace factor.** The trace of the $2\times2$ matrix is $2Q_t$, the trace of the regular matrix is $4Q_t$, and the trace of the operator is $4|Q_t|^2$. The factor two is the number of column chiralities; the factor four is the dimension of the regular module or the number of matrix units. The factors are bookkeeping, not physics, but they are the bookkeeping in which the factor-of-two errors of the corpus live.
 
 ## The Correspondence Table
 
@@ -215,7 +215,7 @@ The table is a dictionary, not a definition. Each row is proved in the mathemati
 
 The article states the correspondences and no dynamics. It does not derive the Lorentz transformation, the Dirac equation or the measurement update; it supplies the dictionary in which those derivations are written.
 
-The four-vector is read off the action on the material sector, not off the doubled regular picture. The regular picture's two blocks are the two chiralities, and the four-vector is one element of the material sector, not a pair of columns.
+The four-vector is read off the action on the material sector, not off the doubled regular picture. The regular picture's two blocks are the two column chiralities, and the four-vector is one element of the material sector, not a pair of columns.
 
 The operator is quadratic in its parameter and phase-blind. It loses the central phase and nothing else: the scale, the boost axis and the rotor are recoverable from the operator up to that phase. A physical statement that needs the phase cannot be read off the operator alone; a statement about the frame can.
 
@@ -227,8 +227,8 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 - The element pictures are linear in the element; the operator pictures are quadratic, because the sandwich has two slots.
 - The four coefficients carry one material and one informational coordinate each; the scalar coefficient carries the two times.
 - The $2\times2$ matrix has trace $2Q_t$ and determinant $N$; it is the spinor picture and the smallest carrier of the state.
-- The $4\times4$ left regular matrix has determinant $N^2$ and trace $4Q_t$; it is the spinor picture taken twice, with the two blocks the two chiralities.
-- Left multiplication preserves the chiralities; right multiplication by a nilpotent moves between them, which is why the mass term is a right action.
+- The $4\times4$ left regular matrix has determinant $N^2$ and trace $4Q_t$; it is the spinor picture taken twice, with the two blocks the two column chiralities.
+- Left multiplication preserves the column chiralities; right multiplication by a nilpotent moves between them, which is why the mass term is a right action.
 - The sandwich is multiplicative in its parameter, $\operatorname{H}_{\tilde Q}\operatorname{H}_{\tilde U}=\operatorname{H}_{\tilde Q\tilde U}$, but quadratic and phase-blind; as an assignment it has kernel the central phase circle on the unit group.
 - The $2\times2$ congruence preserves rank and scales the determinant by $|N|^2$ off the cone; on the cone it collapses to a rank-one line.
 - The $4\times4$ operator has eigenvalues $\lambda_i\bar\lambda_j$, determinant $|N|^4$, trace $4|Q_t|^2$ and rank $(\operatorname{rank}\mathsf{M}_2)^2$.
@@ -250,7 +250,7 @@ The matrix pictures are representations, not the algebra's ontology. The algebra
 | $\operatorname{H}_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}$ | the sandwich, the two-sided operator |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the material and informational sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the real quaternion and imaginary quaternion subspaces |
-| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the minimal idempotents and the two chiralities |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | the minimal idempotents and the two column chiralities |
 | $\lambda_i$ | the eigenvalues of $\mathsf{M}_2(\tilde Q)$ |
 
 ## Further Reading
