@@ -34,6 +34,8 @@ $$
 Z(\mathbb{B}^\times_1) = \{\pm e_t\} \cong \mathbb{Z}/2.
 $$
 
+**Remark (the count over the two fields, and the trace).** Over $\mathbb{R}$ the norm is real and the condition $N=1$ is one real equation in the four real coordinates of $\mathbb{H}_{\mathbb{B}}$, leaving the three-dimensional sphere $S^3$. Over $\mathbb{C}$ the norm is complex and the same condition is two real equations in the eight real coordinates of $\mathbb{B}$, leaving $\mathbb{B}^\times_1$ of real dimension $6$. The complexification adds four real dimensions, and the condition removes one more real dimension than before, so the net gain is three; at the identity these are the imaginary vector directions $i\vec e_x,i\vec e_y,i\vec e_z$, the boosts, while the real vector directions are the rotations. The trace is not the constraint: it is free on the level set, and for every $t\in\mathbb{C}$ the element with $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}t&-1\\1&0\end{pmatrix}$ lies in $\mathbb{B}^\times_1$, so the trace accounts for two of the six real dimensions that remain. The two real dimensions that the condition removes are the two real components of the determinant.
+
 ## The Subgroups and the Real Forms
 
 The relevant subgroups are: $\mathbb{B}^\times$, the nonzero-norm elements (complex dimension $4$, real dimension $8$); $\mathbb{B}^\times_1$, the unit-norm elements (complex dimension $3$, real dimension $6$); the unit quaternions $S^3$ (real dimension $3$); and the centre $\mathbb{C}^\times e_t$ of nonzero scalars (complex dimension $1$, real dimension $2$).
@@ -156,7 +158,7 @@ The exponential is the correspondence between the group and the algebra. Its dif
 
 ## Summary
 
-The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:\langle\tilde q\rangle_{\natural}=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_t\}$.
+The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{\tilde q\in\mathbb{H}_{\mathbb{B}}:\langle\tilde q\rangle_{\natural}=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_t\}$. The complexification adds four real dimensions, and the norm-one condition removes two rather than one, so the net gain is three; the trace is free on the level set and the determinant is the constraint.
 
 The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the unit quaternions $S^3$ and the centre $\mathbb{C}^\times e_t$; the maximal compact subgroup of $\mathbb{B}^\times_1$ is $S^3$, and the quotient by the centre $\mathbb{B}^\times_1/\{\pm e_t\}$ is a Lie group of real dimension $6$. Over the reals these are the real forms of the group, and the correspondence with the Lie algebra attaches each subgroup to its subalgebra: $S^3$ to $\mathrm{K}$, $\mathbb{B}^\times_1$ to $\mathrm{B}_0$, and $\mathbb{C}^\times e_t$ to the centre.
 

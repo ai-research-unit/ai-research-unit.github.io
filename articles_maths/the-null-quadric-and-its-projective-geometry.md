@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\mu}$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity and its automorphism group are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the remarkable real subspaces.
+The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\mu}$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity, its automorphism group and its complement are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the remarkable real subspaces.
 
 The article is the companion of *The Isotropic Structure of the General Quaternionic Algebra*, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the remarkable subspaces — and of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which owns the form and its diagonal. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in *The Topology of the Zero-Divisor Cone*; the real forms of the form and their signatures are *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*; the Lorentzian and conformal reading of the real slices is *Biquaternion Lorentzian and Conformal Geometry*; the algebra and its fixed-point subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; and the classical groups that act are *Lie Groups*.
 
-**Scope.** The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, and the automorphism group of the complex quadric. No physics is invoked and no new result about the algebra is claimed.
+**Scope.** The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, the automorphism group of the complex quadric, and the complement of the quadric, which is the Lorentz group. No physics is invoked and no new result about the algebra is claimed.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The bilinear form is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})=\sum_\mu Q_{1,\mu} Q_{2,\mu}$; the projectivised null cone is $\mathbb{P}(\mathcal{N})\subset\mathbb{P}^3$.
 
@@ -134,7 +134,27 @@ $$
 \operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})=O_4(\mathbb{C})/\{\pm I\},
 $$
 
-acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, with the $\mathbb{Z}/2$ exchanging the rulings. Its identity component $PSO_4(\mathbb{C})$ preserves each ruling; the outer component swaps them. The Lorentz group is not this group: $SO^+(1,3)$ is the conformal group of the projective null cone $S^2$ of the Lorentzian real form, not the automorphism group of the complex quadric.
+acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, with the $\mathbb{Z}/2$ exchanging the rulings. Its identity component $PSO_4(\mathbb{C})$ preserves each ruling; the outer component swaps them. The Lorentz group is not the whole of this group: $SO^+(1,3)$ is the conformal group of the projective null cone $S^2$ of the Lorentzian real form, and it acts on $Q^2$ as the three-complex-dimensional subgroup of left multiplications, not as the full automorphism group.
+
+## The Complement of the Quadric
+
+The quadric and its complement exhaust the projective space. The condition $\langle\tilde Q\rangle_{\natural}=0$ is homogeneous of degree two, so it descends to $\mathbb{P}^3=\mathbb{P}(\mathbb{B})$, and the complement is the set of the classes of the units,
+
+$$
+\mathbb{P}^3\setminus Q^2=\{[\tilde Q]\in\mathbb{P}^3:\langle\tilde Q\rangle_{\natural}\neq0\}=\mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL(2,\mathbb{C}).
+$$
+
+Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, a class is an invertible matrix up to a nonzero scalar, and the multiplication of classes is the multiplication of matrices up to scalars. Every nonzero complex number is a square, so every class has a representative of determinant one, and
+
+$$
+PGL(2,\mathbb{C})=PSL(2,\mathbb{C})\cong SO^+(1,3).
+$$
+
+The complement is therefore, as a real Lie group, isomorphic to the proper orthochronous Lorentz group itself, not to its double cover: the quotient by the central scalars has already been taken, and the two central signs $\pm e_t$ are the same projective class. The affine level set $\{\langle\tilde Q\rangle_{\natural}=1\}\cong SL(2,\mathbb{C})$ is the double cover of the same group inside $\mathbb{B}$ (*Biquaternion Objects and Their Matrix Correspondences*).
+
+The complement is open in $\mathbb{P}^3$, of complex dimension $3$ and real dimension $6$; it is a complex submanifold, and it is not a linear subspace. It is a submanifold of the projective space, not of the affine space $\mathbb{B}$: the quotient by the scalars is what passes from the double cover to the group. The projective line through $[e_t]$ and $[\vec e_x]$ has the affine part $[e_t+t\vec e_x]$, whose norm is $1+t^2$, together with the point $[\vec e_x]$ at infinity, and it meets the quadric at the two points $t=\pm i$; a linear subspace contained in the complement would meet the quadric in none.
+
+The same group acts on the quadric. A class $[A]\in PGL(2,\mathbb{C})$ sends $[\tilde Q]$ to $[A\tilde Q]$, which preserves the determinant and hence the quadric; in the Segre coordinates $([u],[v])$ this is $([Au],[v])$, the action on the first factor only. The image is a three-complex-dimensional subgroup of $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, which has complex dimension $6$. The Lorentz group acts on the quadric, and its underlying manifold is the complement of the quadric; the two statements are different, and neither makes it the full automorphism group.
 
 ## Summary
 
@@ -144,6 +164,7 @@ acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, wit
 - The quadric sits in the **Plücker–Klein geometry** of the lines of $\mathbb{P}^3$; its rulings are two conics on the Klein quadric in $\mathbb{P}^5$.
 - The **polarity** of the form gives the tangency: at a point of the quadric the polar hyperplane is the tangent hyperplane and its intersection with the quadric is the pair of ruling lines through the point.
 - $\operatorname{Aut}(Q^2)\cong PO_4(\mathbb{C})$, its identity component preserving each ruling and the outer component swapping them; the real points of the quadric are empty, $S^2$ or $S^1\times S^1$ according to the real form of the general quaternionic bilinear form.
+- The **complement** $\mathbb{P}^3\setminus Q^2=\mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL(2,\mathbb{C})=PSL(2,\mathbb{C})\cong SO^+(1,3)$ is the Lorentz group itself; it is open, of complex dimension $3$ and real dimension $6$, a complex submanifold and not a linear subspace; the group acts on $Q^2$ by left multiplication, as a three-complex-dimensional subgroup of $\operatorname{Aut}(Q^2)$, not as the full automorphism group.
 
 ## Summary of Notation
 
@@ -159,6 +180,7 @@ acting on $\mathbb{P}^1\times\mathbb{P}^1$ by $([u],[v])\mapsto([Au],[Bv])$, wit
 | $p_{ij} = Q_{2,i}Q_{1,j}-Q_{2,j}Q_{1,i}$ | Plücker coordinates; the Klein quadric in $\mathbb{P}^5$ is their Plücker locus |
 | $[\tilde Q_1]^{\perp}$ | Polar hyperplane of $[\tilde Q_1]$; the tangent hyperplane when $[\tilde Q_1] \in Q^2$ |
 | $\operatorname{Aut}(Q^2) \cong PO_4(\mathbb{C})$ | Projective automorphisms of the quadric |
+| $\mathbb{P}^3\setminus Q^2 \cong PGL(2,\mathbb{C}) \cong SO^+(1,3)$ | Complement of the quadric, the Lorentz group as an open submanifold of $\mathbb{P}^3$ |
 
 ## Further Reading
 

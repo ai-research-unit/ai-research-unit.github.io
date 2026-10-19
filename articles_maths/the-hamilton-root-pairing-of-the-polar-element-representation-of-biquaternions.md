@@ -2,19 +2,35 @@
 
 ## Introduction
 
-**The Hamilton root pairing** of the polar element representation is the grouping of the four factors that multiplies the scale into the phase and the boost into the rotor,
+Every biquaternion of non-vanishing norm is the ordered product of a positive real scale, a central phase and two unit factors,
 
 $$
-\tilde{Q} = R\,\exp(\vec\Xi\Theta), \qquad R = r\,\exp(i\alpha), \qquad \exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} ,
+\tilde{Q} = r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+= r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-the **Hamilton representation** of the biquaternion literature. It is called the **Hamilton root pairing** here because its second factor is the exponential of a **root** of $-1$: the axis $\vec\Xi$ of the representation is a root of minus one, and the same root, read on the set of the roots of one, is what ties the pairing to the classification of those roots.
+| # | factor | name | exponent | root | range | real dimension |
+|---|---|---|---|---|---|---|
+| 1 | $r$ | scale | — | — | $r \in \mathbb{R}$, $r>0$ | $1$ |
+| 2 | $\exp(i\alpha)$ | central phase | $i\alpha$ | $i$ | $\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$ | $1$ |
+| 3 | $\tilde U_{\mathrm b} = \exp\bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)$ | boost | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi \ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ |
+| 4 | $\tilde u_{\mathrm r} = \exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta \in [0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ |
 
-The reference article of the series, *The Polar Element Representation of Biquaternions*, gives the polar word $\tilde{Q} = r\,\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, whose four factors can be grouped in pairs in exactly three ways; the present article treats the one above. The pairing is **partial**, in the precise sense of *The Quaternion Pairing of the Polar Element Representation of Biquaternions*: its modulus $R$ is a composite object, the product of the scale and the phase, and the representation is available only where that object can be constructed from the parts of the element, which requires the vector part to be non-null. The second partial grouping, in which the scale is grouped with the rotor, is the quaternion pairing of that article; the third grouping, in which the scale is grouped with the boost and the phase with the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions*.
+This is the polar word of *The Polar Element Representation of Biquaternions*. It is recalled in full because the pairing below regroups exactly these four factors. The scale $r$ is a positive real and the phase $\exp(i\alpha)$ is central, with $\alpha$ real. The last two factors are the **boost** $\tilde U_{\mathrm b}$ and the **rotor** $\tilde u_{\mathrm r}$, with axes $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ the unit real pure quaternions of the axis sphere $\mathcal{A}$ of the reference article, $\psi\ge0$ the rapidity and $\theta\in[0,2\pi]$ the rotation angle. The boost is Hermitian positive and of unit norm, and the rotor is a unit real quaternion, hence also of unit norm. The four factors are unique. They can be grouped in pairs in exactly three ways, and the three pairings of the series regroup the same four factors. What differs is where the brackets fall, and what each bracketed pair is then recognised to be.
+
+**The Hamilton root pairing** is the grouping that multiplies the scale into the phase and the boost into the rotor. The two central factors multiply into the complex modulus $R = r\exp(i\alpha)$; the two unit factors multiply into the non-central factor $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the Lorentz transformation of the word. On the domain of the pairing that product is a single exponential $\exp(\vec\Xi\Theta)$ of a **root** of $-e_t$. Write $\tilde Q = Q_te_t+\vec Q$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The axis $\vec\Xi$ is the root proportional to $\vec Q$, normalised by $\vec\Xi^2 = -e_t$, and $\Theta$ is the complex angle of the exponential, fixed by $\cos\Theta = Q_t/R$ and $\sin\Theta = B/R$, where $B^2 = (\vec Q,\vec Q) = Q_x^2+Q_y^2+Q_z^2$.
+
+$$
+\tilde{Q} = R\,\exp(\vec\Xi\Theta), \qquad R = r\,\exp(i\alpha), \qquad \exp(\vec\Xi\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} .
+$$
+
+This is the **Hamilton representation** of the biquaternion literature. The name records the root: $\vec\Xi$ is a root of $-e_t$, and the same root, read on the set of the roots of one, is what ties the pairing to the classification of those roots.
+
+The pairing is **partial**, in the precise sense of *The Quaternion Pairing of the Polar Element Representation of Biquaternions*: its modulus $R$ is a composite object, the product of the scale and the phase, and the representation is available only where that object can be constructed from the parts of the element, which requires the vector part to be non-null. There are two partial pairings: this one, and the quaternion pairing, in which the scale is grouped with the rotor; the third grouping, in which the scale is grouped with the boost and the phase with the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions*.
 
 **The approach.** The article has two halves, and they are one subject: the axis of the first half is a root of $-1$, and the second half is the same four-factor word read at the elements where it closes, the roots of one. The first half develops the Hamilton representation: the pairing, the statement, the domain, the exponential of the element, the correlated non-uniqueness of its three parameters, and the behaviour of its data under the three conjugations. The second half develops the roots of one in the two exponential forms, the four-factor word at a root and the single exponential of the halving idempotent, and the bridge between them. Read on the **exponents** of the two non-central factors rather than on the factors, the word gives the non-central roots as a hyperbolic family generated by a Hermitian element and by a fixed quarter turn, and the same reading answers the question of the commutation of the two factors, on which the two exponents either do or do not add to the complex angle of a single exponential.
 
-The article assumes the four factors and their definition from *The Polar Element Representation of Biquaternions* and does not re-derive them. No physics is invoked.
+The article takes the construction of the four factors from *The Polar Element Representation of Biquaternions* and does not re-derive it. No physics is invoked.
 
 **The result, in one sentence.** On the complement of the null cone and of the quadric cone $(\vec Q,\vec Q) = 0$, the element factors as $R\exp(\vec\Xi\Theta)$, with $R$ the complex modulus, $\vec\Xi = \vec Q/B$ the root of $-1$ parallel to the vector part and $\Theta$ the complex angle of the single exponential, which is $\frac{\theta}{2}+\epsilon i\frac{\psi}{2}$ on aligned words and does not reduce to that scalar in general; the roots of one, $\tilde\Xi^2 = e_t$, are the elements at which the same four-factor word closes, and they carry a second exponential form, a single exponential of the halving idempotent, whose exponent is recovered from the four-factor word by the product of its last two factors. The two exponents of the non-central factors, $i\frac{\psi}{2}\vec u_{\mathrm b}$ and $\frac{\theta}{2}\vec u_{\mathrm r}$, are one Hermitian element and one real pure element, and they do not commute in general; the two factors are a single exponential with a complex angle on the whole domain, and the exponent is the sum of the two exponents exactly when the two axes are parallel or one of the two factors is central.
 

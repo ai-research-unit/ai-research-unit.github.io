@@ -7410,167 +7410,370 @@ One application is a use of a polar form the corpus does not otherwise have. The
 
 
 
+════════════════════════════════════════════════════════════════════════════
+  THE LORENTZ GROUP AS THE PROJECTIVE COMPLEMENT OF THE NULL QUADRIC
+  IN THE BIQUATERNION ALGEBRA  B = C ⊗ H ≅ M₂(C)
+════════════════════════════════════════════════════════════════════════════
+
+NOTATION
+────────
+   B   = C ⊗_R H                 biquaternion algebra, ≅ M₂(C)
+   N   = det : B → C             norm / determinant
+   P³  = P(B)                    complex projective 3-space
+   Q²  = { [M] ∈ P³ : det M = 0 }  projectivised null cone (a quadric)
+   π   : B\{0} → P³              projectivisation
+
+────────────────────────────────────────────────────────────────────────────
+§0.  THE KEY LEMMA:  C IS QUADRATICALLY CLOSED
+────────────────────────────────────────────────────────────────────────────
+   Lemma.  For every z ∈ C× there exists λ ∈ C× with λ² = z.
+   Proof.  C is algebraically closed, so X² − z has a root λ; λ ≠ 0 since
+           z ≠ 0.                                                       ∎
+
+   This single fact of field theory is what makes the projective picture
+   work over C and fail over R.  It will be used in §2.
+
+────────────────────────────────────────────────────────────────────────────
+§1.  THE NULL QUADRIC
+────────────────────────────────────────────────────────────────────────────
+   Set  Q² := { [M] ∈ P³ : det M = 0 }.  Since det is homogeneous of
+   degree 2, this is a well-defined hypersurface in P³.
+
+   Claim.  Q² ≅ P¹ × P¹  (Segre quadric).
+
+   Proof.  A rank-≤1 nonzero matrix has the form M = u vᵀ with
+           u, v ∈ C²\{0}.  The class [M] determines [u] ∈ P¹ and [v] ∈ P¹,
+           and conversely ([u],[v]) determines [uvᵀ].  This gives a
+           well-defined bijection Q² ≅ P¹ × P¹.                    ∎
+
+   Consequences:
+       dim_C Q² = 2 ,        dim_R Q² = 4 ,
+       Q² is a divisor (codim 1) in P³ ,
+       Q² is smooth (it is the image of the Segre embedding).
+
+────────────────────────────────────────────────────────────────────────────
+§2.  THE COMPLEMENT IS  PGL(2,C)
+────────────────────────────────────────────────────────────────────────────
+   By definition,
+       P³ \ Q² = { [M] ∈ P³ : det M ≠ 0 }
+               = { classes of invertible 2×2 matrices }
+               = PGL(2,C).
+   Thus the complement is precisely the projective general linear group.
+
+────────────────────────────────────────────────────────────────────────────
+§3.  PGL(2,C) ≅ PSL(2,C)   (uses §0)
+────────────────────────────────────────────────────────────────────────────
+   Consider the natural map
+       φ : SL(2,C) ⟶ PGL(2,C),   A ↦ [A].
+
+   (a) φ is SURJECTIVE.
+       Let [M] ∈ PGL(2,C) and d := det M ≠ 0.  By §0 pick λ ∈ C× with
+       λ² = d.  Then det(λ⁻¹ M) = λ⁻² d = 1, so A := λ⁻¹ M ∈ SL(2,C)
+       and [A] = [M].                                                ∎
+
+   (b) ker φ = { ±I }.
+       A = μI ∈ SL(2,C) ⇔ μ² = 1 ⇔ μ = ±1 (in C).                   ∎
+
+   By the first isomorphism theorem,
+       PGL(2,C) ≅ SL(2,C) / {±I} = PSL(2,C).
+
+   Remark.  Over R this fails: λ² = d has a real solution only for d > 0,
+   so PGL(2,R) ⊋ PSL(2,R).  Over C the square-root lemma makes them equal.
+
+────────────────────────────────────────────────────────────────────────────
+§4.  PSL(2,C) ≅ SO⁺(1,3)
+────────────────────────────────────────────────────────────────────────────
+   Standard spinorial isomorphism: SL(2,C) acts on Hermitian 2×2 matrices
+   H = { X ∈ M₂(C) : X* = X } ≅ M^{1,3} by X ↦ A X A*, preserving
+   det X = η_{μν} x^μ x^ν.  This gives
+       SL(2,C) → SO⁺(1,3),   kernel {±I},
+   hence
+       PSL(2,C) ≅ SO⁺(1,3)
+   — the PROPER ORTHOCHRONOUS Lorentz group.
+
+   Combining §2, §3, §4:
+
+       ┌───────────────────────────────────────────────────────────┐
+       │   P³ \ Q²  ≅  PGL(2,C)  ≅  PSL(2,C)  ≅  SO⁺(1,3)         │
+       └───────────────────────────────────────────────────────────┘
+
+   This is the Lorentz group ITSELF (not a cover), realised as an open
+   subset of P³.
+
+────────────────────────────────────────────────────────────────────────────
+§5.  DIMENSION, TOPOLOGY, AND MANIFOLD STRUCTURE
+────────────────────────────────────────────────────────────────────────────
+   P³ is a smooth complex 3-manifold.  Q² is a closed complex surface.
+   Hence its complement is Zariski-open (in particular open in the
+   classical topology), dense, and of the same dimension as P³:
+
+       dim_C (P³ \ Q²) = 3 ,        dim_R (P³ \ Q²) = 6 .
+
+   These match
+       dim_C PSL(2,C) = 3 ,         dim_R SO⁺(1,3) = 6 .
+
+   The complement is:
+     • a submanifold of P³          — yes;
+     • a linear subspace            — NO  (it is the complement of a
+                                           quadric, not of a hyperplane);
+     • affine                       — yes (complement of an ample
+                                           divisor in P³ is affine);
+     • an algebraic group           — yes, PGL(2,C) is a linear algebraic
+                                           group acting on P³.
+
+────────────────────────────────────────────────────────────────────────────
+§6.  AFFINE vs PROJECTIVE:  THE DOUBLE COVER
+────────────────────────────────────────────────────────────────────────────
+   Two related realisations of the same group, differing by ±I:
+
+   (A) Affine level set inside B:
+           U := { q ∈ B : N(q) = 1 } ≅ SL(2,C).
+       This is a 3-complex-dimensional quadric hypersurface in B ≅ C⁴.
+       It is the DOUBLE COVER of SO⁺(1,3): the central −I ∈ SL(2,C) is
+       a distinct point of U.
+
+   (B) Projective complement inside P³:
+           P³ \ Q² ≅ PGL(2,C) ≅ PSL(2,C) ≅ SO⁺(1,3).
+       Projectivisation quotients by C×; in particular λ = −1 identifies
+       M with −M, so the ±I ambiguity is removed.  This locus carries the
+       Lorentz group itself.
+
+   Diagram (all maps are the evident ones):
+           U = {N = 1} ≅ SL(2,C)      (double cover, affine)
+                 │
+                 │  quotient by C×  (identifies ±I)
+                 ▼
+           P³ \ Q² ≅ PSL(2,C) ≅ SO⁺(1,3)   (group itself, projective)
+
+────────────────────────────────────────────────────────────────────────────
+§7.  ACTION ON Q²  AND  Aut(Q²)
+────────────────────────────────────────────────────────────────────────────
+   PSL(2,C) acts on Q² by LEFT multiplication on matrix representatives:
+       [M]  ↦  [A M],     A ∈ SL(2,C),  [A] ∈ PSL(2,C).
+   Since left multiplication preserves rank, it preserves Q².  This gives
+   an injective homomorphism
+       PSL(2,C)  ↪  Aut(Q²).
+
+   But Aut(Q²) is strictly larger.  Using Q² ≅ P¹ × P¹:
+
+       Aut(Q²)  ≅  ( PGL(2,C) × PGL(2,C) ) ⋊ Z/2 ,
+       dim_C Aut(Q²) = 3 + 3 = 6 ,        dim_R Aut(Q²) = 12 .
+
+   The two PGL₂ factors correspond to the two rulings of Q², i.e. to
+   left and right multiplication on rank-1 matrices M = u vᵀ:
+       left  mult. A :  [u vᵀ] ↦ [ (Au) vᵀ ]   (acts on [u])
+       right mult. B :  [u vᵀ] ↦ [ u (Bv)ᵀ ]   (acts on [v])
+   and Z/2 is transpose (which swaps the two factors).
+
+   Therefore:
+       PSL(2,C) ≅ SO⁺(1,3)  embeds as ONE PGL₂ factor, of
+       complex dimension 3, inside the 6-complex-dimensional
+       Aut(Q²) = PGL₂ × PGL₂ (⋊ Z/2).
+
+   ⚠  The Lorentz group is a 3-complex-dimensional SUBGROUP of the
+      6-complex-dimensional Aut(Q²).  It is a symmetry group of the
+      quadric, but NOT its full automorphism group.
+
+────────────────────────────────────────────────────────────────────────────
+§8.  SUMMARY TABLE
+────────────────────────────────────────────────────────────────────────────
+   Object in P³                                   Group              dim_C   dim_R
+   ─────────────────────────────────────────────────────────────────────────────
+   Q² = {det = 0}  (null quadric)                 —                  2       4
+       Aut(Q²) ≅ (PGL₂×PGL₂)⋊Z/2                  Aut(Q²)            6       12
+       left-mult. copy inside Aut(Q²)             PSL(2,C)≅SO⁺(1,3)  3       6
+   P³ \ Q² = {det ≠ 0}  (open complement)         PGL(2,C)≅PSL(2,C)  3       6
+
+   Affine (inside B, not P³):
+       {N = 1} ≅ SL(2,C)                          SL(2,C)            3       6
+           = double cover of SO⁺(1,3)
+
+────────────────────────────────────────────────────────────────────────────
+§9.  WHY THE PROJECTIVE PICTURE IS THE RIGHT ONE
+────────────────────────────────────────────────────────────────────────────
+   • The Lorentz group is 6-real-dimensional; Minkowski space M^{1,3} is
+     only 4-real-dimensional, so the group cannot sit inside it linearly.
+   • The biquaternion algebra B is 8-real-dimensional and contains the
+     group, but only as a curved (quadric) locus, and only up to ±I.
+   • Projectivising B → P³ replaces the affine quadric N = 1 by the
+     projective divisor Q², and the complement of a divisor is open,
+     dense, and of the same dimension as the ambient space.  The C×-
+     quotient kills the spinorial ±I.  The result is exactly SO⁺(1,3).
+   • The square-root lemma (§0) is the precise algebraic reason the
+     projective complement is the group itself rather than a cover: it
+     is what makes PGL = PSL over C.
+
+   In one sentence:
+       The proper orthochronous Lorentz group is the open 6-real-
+       dimensional submanifold P³(C) \ Q², i.e. the locus of classes of
+       invertible 2×2 complex matrices, and it sits inside Aut(Q²) as
+       a 3-complex-dimensional subgroup via left multiplication — not
+       as the full automorphism group of the null quadric.
+════════════════════════════════════════════════════════════════════════════
 
 
-════════════════════════════════════════════════════════════════════
-  LORENTZ GROUP AS A SUBMANIFOLD OF THE BIQUATERNION ALGEBRA
-════════════════════════════════════════════════════════════════════
 
-1. THE ALGEBRA
-──────────────
-Let  B = C ⊗_R H  be the biquaternion algebra (Hamilton's quaternions
-with complex coefficients).  A general element is
 
-      q = a + b i + c j + d k ,        a,b,c,d ∈ C ,
 
-equivalently  q = q_0 + q_1 i + q_2 j + q_3 k  with q_μ ∈ C.
-As a real algebra,
 
-      B  ≅  M_2(C) ,           dim_R B = 8 ,   dim_C B = 4 ,
 
-the isomorphism being (one standard choice)
+# Why the qubit state space admits rotations only, and what a boost does instead
 
-      q  ↦  M(q) = ( a+ib    c+id )
-                   ( -c+id   a-ib )  .
+## 1. Setup
 
-2. TWO INVOLUTIONS
-──────────────────
-Quaternion conjugation:   q̄ = a - b i - c j - d k
-Complex  conjugation:     q^c = ā + b̄ i + c̄ j + d̄ k
-Combined ("Hermitian"):   q*  = (q̄)^c = ā - b̄ i - c̄ j - d̄ k
+Let B = C ⊗_R H be the biquaternion algebra, with quaternion basis
+e_t = 1, e_x, e_y, e_z,  e_k^2 = -e_t,  and i the central scalar imaginary.
 
-These satisfy  (pq)* = q* p*  and  q** = q.
+The Hermitian subspace is
+    M^+ = { H~ = h_t e_t + i h  :  h_t ∈ R,  h = h_x e_x + h_y e_y + h_z e_z }.
+It is a real 4-dimensional space. The trace is
+    Tr(H~) = 2 Sc(H~) = 2 h_t .
+The biquaternion norm is
+    N(H~) = H~ H~^♯ = (h_t^2 - |h|^2) e_t ,
+of signature (1,3). The trace pairing is
+    Tr(H~_1 H~_2) = 2 ( h_{1t} h_{2t} + h_1 · h_2 ) ,
+of signature (4,0).
 
-3. THE NORM
-───────────
-      N(q) := q q̄ = a² + b² + c² + d²  ∈ C .
+A qubit state is
+    ρ~ = (1/2)( e_t + i r ),   r ∈ R^3 ,  |r| ≤ 1 ,
+equivalently: ρ~ ∈ M^+, Tr(ρ~) = 1, N(ρ~) ≥ 0 (with h_t = 1/2 > 0).
+The state space is the trace-one slice of the future cone:
+    S = { H~ ∈ M^+ : Sc(H~) = 1/2 } ∩ { N(H~) ≥ 0 } .
 
-Under the isomorphism above,  N(q) = det M(q) .  Note N is COMPLEX-
-valued: B has zero divisors and the "norm" cone  N(q)=0  is a
-codimension-2 (real) quadric.  In particular N(q)=1 is a holomorphic
-(complex) condition.
+## 2. The conjugation action
 
-4. HERMITIAN BIQUATERNIONS ≅ MINKOWSKI SPACE
-────────────────────────────────────────────
-Define   B_h = { q ∈ B : q* = q }  (Hermitian biquaternions).
-The reality condition q* = q is 4 real equations on 8 real variables,
-so
+For invertible U~ ∈ B define
+    Φ_U~(Q~) = U~ Q~ U~^* ,   Q~ ∈ B .
+This is a real-linear map. It preserves M^+ (because U~ Q~ U~^* is Hermitian
+whenever Q~ is), and it is a congruence, hence preserves inertia.
 
-      B_h  is a 4-real-dimensional REAL LINEAR SUBSPACE of B ,
-      B_h  ≅  M^{1,3}   via
-      X = x⁰ + i x¹ i + i x² j + i x³ k ,   x^μ ∈ R .
+Two distinguished subgroups of the invertible elements act by this formula:
 
-On B_h the norm is real and indefinite:
+  (a) Unit-norm rotors:  U~ U~^♯ = e_t .   This is SL(2,C), the double cover
+      of the proper orthochronous Lorentz group. It contains boosts.
 
-      N(X) = (x⁰)² - (x¹)² - (x²)² - (x³)² = η_{μν} x^μ x^ν .
+  (b) Unitary elements:  U~ U~^* = e_t .   This is U(2). It contains no
+      non-trivial boosts.
 
-So Minkowski space sits inside B as a 4-dim real linear subspace.
+The two conditions are genuinely different: U(2) ⊄ SL(2,C) and
+SL(2,C) ⊄ U(2); their intersection is SU(2), the unit real quaternions,
+whose conjugation action is rotation.
 
-5. THE LORENTZ GROUP AS A SUBMANIFOLD OF B
-───────────────────────────────────────────
-Consider the level set
+## 3. Lemma: trace preservation on M^+ forces unitarity
 
-      U := { q ∈ B : N(q) = 1 } .
+Let ρ~ ∈ M^+ with Tr(ρ~) = 1. Then
+    Tr( Φ_U~(ρ~) ) = Tr( U~ ρ~ U~^* ) = 2 Sc( U~ ρ~ U~^* )
+                   = 2 Sc( ρ~ U~^* U~ )        (cyclicity of Sc)
+                   = Tr( ρ~ U~^* U~ ) .
+Write U~^* U~ = λ e_t + i w with λ ∈ R and w ∈ R^3 (traceless part).
+Then
+    Tr( ρ~ U~^* U~ ) = λ Tr(ρ~) + 2 (r · w) = λ + 2 r · w .
+For this to equal 1 for every state, i.e. for every r with |r| ≤ 1,
+we need w = 0 and λ = 1. Hence
+    U~^* U~ = e_t ,
+which is exactly unitarity.
 
-Since N(q) = det M(q) is holomorphic, U is a complex hypersurface in
-B ≅ C⁴ :
-      dim_C U = 3 ,      dim_R U = 6 .
+So: Φ_U~ maps the trace-one slice S to itself if and only if U~ is unitary.
+The largest subgroup of the invertible elements acting on S is U(2).
 
-Under B ≅ M_2(C):
-      U  ≅  { M ∈ M_2(C) : det M = 1 }  =  SL(2,C) .
+Equivalently, Φ_U~ is an algebra automorphism,
+    Φ_U~(Q~_1 Q~_2) = (U~ Q~_1 U~^*)(U~ Q~_2 U~^*) ,
+if and only if U~^* U~ = e_t. Trace preservation and the automorphism
+property are the same condition, read twice.
 
-Hence
+## 4. A boost rotor fails the test
 
-      SL(2,C)  is a 6-real-dimensional (3-complex-dimensional)
-      COMPLEX SUBMANIFOLD of B, defined by the single holomorphic
-      equation N(q) = 1.
+A boost of rapidity ξ along the unit vector b is the Hermitian element
+    U~_L = cosh(ξ/2) e_t + i sinh(ξ/2) b ,   |b| = 1 .
+It satisfies
+    N(U~_L) = cosh^2(ξ/2) - sinh^2(ξ/2) = 1 ,
+so U~_L U~_L^♯ = e_t: it is a unit-norm rotor, i.e. an element of SL(2,C).
+Since b is a pure real quaternion and i b ∈ M^+, it is also Hermitian:
+    U~_L^* = U~_L .
+Therefore
+    U~_L^* U~_L = U~_L^2
+                = cosh ξ e_t + i sinh ξ b ,
+using b^2 = -e_t and (i sinh(ξ/2) b)^2 = + sinh^2(ξ/2) e_t.
+For ξ ≠ 0 this is not e_t, so U~_L is not unitary.
 
-It is NOT a linear subspace of B: N(q)=1 is a quadric, so U is
-curved.  (It is, however, a complex hypersurface, hence "half" of
-B in the complex sense.)
+Consequently, on the maximally mixed state,
+    Φ_{U~_L}( (1/2) e_t ) = (1/2)( cosh ξ e_t + i sinh ξ b ) ,
+whose trace is cosh ξ ≠ 1. The boost moves the state off the trace-one slice.
 
-6. THE ACTION ON MINKOWSKI SPACE
-────────────────────────────────
-For q ∈ SL(2,C) ⊂ B and X ∈ B_h , define
+## 5. What the boost does preserve
 
-      X  ↦  q X q* .
+Although U~_L does not preserve the trace, it does preserve:
 
-Because (q X q*)* = q X* q* = q X q* , the result stays in B_h .
-And because  N(q X q*) = N(q) N(X) N(q)* = N(X) , the Minkowski
-quadratic form is preserved.  Therefore the map
+  - Hermiticity:  U~_L Q~ U~_L^* is Hermitian for Hermitian Q~ (congruence).
+  - Positivity:   inertia is preserved by any congruence with invertible U~
+                  (Sylvester's law of inertia), so the future cone maps
+                  into the future cone.
+  - The biquaternion norm:  N(U~_L Q~ U~_L^*) = N(U~_L) N(Q~) N(U~_L^*) = N(Q~),
+                  since N(U~_L) = 1 and N(U~_L^*) = 1.
 
-      ρ(q) : X ↦ q X q*
+So SL(2,C) acts on the cone of M^+, not on its trace-one slice.
+The slice is the state space; the cone is not.
 
-is a Lorentz transformation of B_h ≅ M^{1,3}.  This gives a group
-homomorphism
+## 6. Renormalization (a nonlinear map, not a channel)
 
-      ρ : SL(2,C) ⟶ O(1,3) ,
+If one insists on recovering a state after a boost, one may divide by the
+new trace:
+    ρ~  ↦  U~_L ρ~ U~_L^* / Tr( U~_L ρ~ U~_L^* ) .
+This is a nonlinear map on S. It is not a quantum channel (not completely
+positive and trace preserving in the usual sense), and it is not the action
+of a unitary on the state space. It is simply the statement that a
+finite-dimensional Lorentz transformation of a density matrix is not
+trace preserving; the physical state is recovered by renormalizing.
 
-with image the PROPER ORTHOCHRONOUS Lorentz group and kernel
+## 7. Where the boost does enter the quantum formalism: Wigner rotation
 
-      ker ρ = { +1 , -1 } .
+The product of two non-collinear boosts is not Hermitian, and its polar
+decomposition is
+    U~_{L,2} U~_{L,1} = W~ U~_L ,   W~ ∈ SU(2) ,
+with U~_L positive-definite Hermitian of unit norm. The unitary factor W~
+is the Thomas–Wigner rotation. So composing relativistic transformations
+produces a genuine unitary element of U(2), hence a genuine quantum
+operation on the qubit. The boost enters the quantum formalism indirectly,
+through the rotation it generates on composition.
 
-Hence
-      SO⁺(1,3)  ≅  SL(2,C) / {±1}  ≅  U / {±1} .
+## 8. Interpretation
 
-Both SL(2,C) and SO⁺(1,3) are 6-real-dimensional; the two-to-one
-covering SL(2,C) → SO⁺(1,3) is the spinorial double cover.
+The statement "the qubit carries rotations and no boost" is not an
+assumption imported from quantum theory. It is the statement that the
+trace — the normalization of a state — is not a Lorentz invariant. The
+Lorentz group acts on the cone of M^+ (positivity, norm), while the group
+that acts on the trace-one slice (the state space) is U(2). The two groups
+share SU(2), which is why rotations appear in both pictures with the same
+rotor.
 
-7. SUMMARY: SUBMANIFOLD, NOT SUBSPACE
-─────────────────────────────────────
-The picture inside the 8-real-dimensional algebra B is:
+This is a statement about the finite-dimensional qubit model, which is the
+non-relativistic restriction. In full relativistic quantum mechanics and
+quantum field theory, the physical Hilbert space is infinite-dimensional
+and the Lorentz group is represented by unitary operators there. The
+finite-dimensional boost rotor U~_L of this note is not the physical boost
+operator; it is the SL(2,C) element acting on the material sector M^- and,
+by congruence, on the cone of M^+. The absence of boosts from the qubit
+state space is a feature of the model, not a prohibition on relativistic
+boosts in quantum theory.
 
-   ┌───────────────────────────────────────────────────────────┐
-   │  B = C ⊗ H                     dim_R = 8   (real vector)  │
-   │                                                           │
-   │   B_h  (Hermitian)             dim_R = 4   LINEAR SUBSP.  │
-   │        ≅ Minkowski space M^{1,3}                          │
-   │                                                           │
-   │   U = { N(q) = 1 }             dim_R = 6   QUADRIC        │
-   │        ≅ SL(2,C)                (complex codim. 1)        │
-   │                                                           │
-   │   U / {±1}                     dim_R = 6                  │
-   │        ≅ SO⁺(1,3)  (Lorentz group)                        │
-   └───────────────────────────────────────────────────────────┘
+## 9. Summary table
 
-So:
+    Actor condition        Group        Acts on              Preserves
+    -----------------------------------------------------------------------
+    U~ U~^♯ = e_t          SL(2,C)      cone of M^+ and M^-  N, inertia
+    U~ U~^* = e_t          U(2)         trace-one slice S    Tr, N, inertia
+    both                   SU(2)        S by rotations       Tr, N, inertia
 
- • Minkowski space = a 4-dim REAL LINEAR subspace of B (B_h).
- • The Lorentz group = a 6-dim REAL (indeed 3-complex-dim)
-   CONSTRAINED SUBMANIFOLD of B, cut out by the quadratic
-   condition N(q) = 1, then quotiented by ±1.
- • The Lorentz group therefore fits inside B as a submanifold,
-   even though it cannot fit inside the 4-dim Minkowski space.
- • But it is NOT a linear subspace of B: it is a quadric hypersurface,
-   so the embedding is nonlinear (holomorphic-quadratic).
+    Non-unitary boost      SL(2,C)      cone only            N, inertia (not Tr)
 
-8. LIE-ALGEBRAIC REMARK
-───────────────────────
-At the level of Lie algebras the situation is linear.  The Lorentz
-Lie algebra is
+The trace-one slice is invariant under U(2) and only under U(2). Boosts
+are symmetries of the cone, generators of Wigner rotations on composition,
+and — in the full theory — unitary operators on the physical Hilbert space,
+but they are not operations on the finite-dimensional Bloch ball.
 
-      so(1,3)  ≅  sl(2,C)  =  { M ∈ M_2(C) : tr M = 0 } ,
 
-which is a 6-real-dimensional REAL LINEAR SUBSPACE of
-M_2(C) ≅ B.  So:
 
-      Lie group  SO⁺(1,3)  ⊂ B   :  curved 6-dim submanifold
-      Lie algebra so(1,3)  ⊂ B   :  flat   6-dim linear subspace
 
-The "extra" 2 real dimensions of B over SL(2,C) correspond to the
-trace direction (or equivalently to the norm's imaginary part), which
-the constraint N(q)=1 removes — but only nonlinearly.
 
-9. CONTRAST WITH MINKOWSKI SPACE
-────────────────────────────────
-      dim M^{1,3} = 4   <   6 = dim SO⁺(1,3)
-      dim B       = 8   ≥   6 = dim SO⁺(1,3)
 
-This dimension count is the precise sense in which "biquaternion
-space is big enough to contain the Lorentz group, while Minkowski
-space is not."  The embedding is via the unit-norm quadric N(q)=1,
-modulo the central ±1, and it is a nonlinear (holomorphic-quadratic)
-embedding of a 6-real-dimensional complex submanifold into the
-8-real-dimensional biquaternion algebra.
-════════════════════════════════════════════════════════════════════
 
