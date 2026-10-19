@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frames, Rotations and the Lorentz Group — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="frames-rotations-and-the-lorentz-group"><strong>Frames, Rotations and the Lorentz Group</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A frame is a choice of axes, and a motion is a change of frame. The biquaternion algebra supplies both: the norm fixes the form, the unit-norm slice is the space of spin frames, and the sandwich by a unit is the change of frame. The Lorentz group is not a subset of the algebra; it is the quotient of the norm-one group by the central sign, and the algebra carries the double cover.</p>
+<p>The article reads the group that carries the motions, the sandwich that acts, the rotations, the boosts, the orbits and the reflections. Its thesis is that a frame is a unit up to sign, that a change of frame is the dagger sandwich, that the interval is the invariant, that a rotation is an algebra automorphism and that a boost is a motion which is not one. It proves nothing; the theorems are in the mathematics articles of the source table.</p>
+<p><strong>Placement and boundaries.</strong> The article is the Geometry block of the category. It reads the isometries of the biquaternion norm, the double covers, the sandwich action, the orbits and the reflection formula, all of which are <em>Biquaternion Rotations and Lorentz Transformations</em>; the automorphism group is <em>Biquaternion Automorphisms and Derivations</em>; the group of units and the norm-one slice are <em>The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</em> and <em>The Biquaternion Unit Group as a Topological Group</em>; the compact real form and the quotient $SO(3)$ are <em>The Unitary Group of the Biquaternion Algebra</em>. The physical companion is <em>Biquaternion Rotations and Lorentz Transformations</em>, and the material sector is <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>. The dynamics is not read here.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The double covers, the rotor, the dagger sandwich, its kernel, its scaling and its action on the remarkable subspaces</td>
+<td><a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a></td>
+</tr>
+<tr>
+<td>The orbits, the rank invariant, the mass shell and the light cone</td>
+<td><a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a></td>
+</tr>
+<tr>
+<td>The reflection formula and the Cartan–Dieudonné theorem</td>
+<td><a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a></td>
+</tr>
+<tr>
+<td>The algebra automorphisms and the real automorphism group</td>
+<td><a href="../articles_maths/biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a></td>
+</tr>
+<tr>
+<td>The group of units and the norm-one slice</td>
+<td><a href="../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html">The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</a></td>
+</tr>
+<tr>
+<td>The topology of the unit group and its maximal compact subgroup</td>
+<td><a href="../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html">The Biquaternion Unit Group as a Topological Group</a></td>
+</tr>
+<tr>
+<td>The unitary group and the quotient $U(\mathbb{B})/U(1)\cong SO(3)$</td>
+<td><a href="../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-group-that-carries-the-motions">The Group that Carries the Motions</h2>
+<h3 id="the-double-covers">The Double Covers</h3>
+<p>The norm-one group is
+$$
+\mathbb{B}^{\times}_{1}=\{\tilde U:\langle\tilde U\rangle_{\natural}=1\}\cong SL_2(\mathbb{C}),
+$$
+of real dimension six. Its centre is $\{\pm e_t\}$, and the quotient is the proper orthochronous Lorentz group,
+$$
+\mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3).
+$$
+The group is simply connected, so it is the universal cover,
+$$
+\mathbb{B}^{\times}_{1}\cong \mathrm{Spin}(1,3).
+$$
+The compact part is the unit quaternions,
+$$
+Sp(1)=S^{3}\cong SU(2),
+\qquad
+Sp(1)/\{\pm e_t\}\cong SO(3),
+$$
+the double cover of the spatial rotations. The full unit group $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ has real dimension eight; the norm-one slice has dimension six; the quaternion layer $\mathbb{H}_{\mathbb{B}}$ has real dimension four.</p>
+<p><strong>The Lorentz group is a quotient, not a subgroup.</strong> A Lorentz transformation has six real parameters, and the quaternion layer has only four real dimensions; there is no smooth embedding of $SO^{+}(1,3)$ into $\mathbb{H}_{\mathbb{B}}$. The group manifold does not fit in the layer, while its action on the four-dimensional material sector does. The algebra contains the double cover $\mathbb{B}^{\times}_{1}$, and the Lorentz group is the quotient by the central sign. The group itself sits in the projective space, where the classes of the units form the complement of the null quadric and are $PGL_2(\mathbb{C})\cong SO^{+}(1,3)$.</p>
+<p><strong>The algebra carries the spin frame.</strong> A frame of the material sector is a norm-one unit up to sign, and the double cover is the spin frame. The sign is the spinor sign: a frame and its negative are the same frame, while a spinor and its negative are not the same spinor. Read physically, the Lorentz group is the group of frames, and the norm-one group is its spin cover; the algebra carries the cover, not the quotient.</p>
+<p><strong>The boundary of the reading.</strong> The frame is an algebraic frame, not a laboratory. The identification uses the action on $\mathbb{M}_{-}$ and the norm; it does not fix a reference frame and it does not supply a metric beyond the norm. The projective description is a description of the group, not of a physical space of states.</p>
+<h3 id="the-automorphism-group">The Automorphism Group</h3>
+<p>The $\mathbb{C}$-linear automorphisms of the algebra are the inner ones,
+$$
+\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})\cong \mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})\cong SO(3,\mathbb{C}),
+$$
+of real dimension six; as a real group this is $SO^{+}(1,3)$. The full real automorphism group has two components,
+$$
+\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})\cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B})\rtimes \mathbb{Z}/2,
+$$
+the second component consisting of the conjugate-linear automorphisms.</p>
+<p><strong>The automorphism group is the same abstract group with a different action.</strong> The Lorentz group appears twice: as the quotient of the norm-one group, acting on the material sector by the dagger sandwich, and as the automorphism group of the algebra, acting by inner automorphisms. The two actions agree on the unitary slice, where the inverse and the Hermitian conjugate coincide; they differ on a boost. Read physically, the same group can be a change of frame and a symmetry of the algebraic structure, and the two readings are not the same map.</p>
+<p><strong>The boundary of the reading.</strong> The identification of $PGL_2(\mathbb{C})$ with $SO^{+}(1,3)$ is an isomorphism of real Lie groups, not of complex groups; the complex group is $SO(3,\mathbb{C})$. A physical Lorentz transformation is the action on $\mathbb{M}_{-}$, not the inner automorphism, and the article does not identify the two.</p>
+<h2 id="the-sandwich-and-the-change-of-frame">The Sandwich and the Change of Frame</h2>
+<h3 id="the-action">The Action</h3>
+<p>For a unit $\tilde Q$, the <strong>dagger sandwich</strong> is
+$$
+\mathrm{H}_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},
+\qquad
+\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\,\tilde Q_3\,\tilde Q^{*}.
+$$
+It is a homomorphism of the unit group into $GL(\mathbb{B})$,
+$$
+\mathrm{H}_{\tilde Q\tilde Q_1}=\mathrm{H}_{\tilde Q}\circ\mathrm{H}_{\tilde Q_1},
+\qquad
+\mathrm{H}_{A\tilde Q}=|A|^{2}\mathrm{H}_{\tilde Q},
+$$
+it preserves the two sectors $\mathbb{M}_{\pm}$, and it scales the norm by
+$$
+N\bigl(\mathrm{H}_{\tilde Q}(\tilde Q_3)\bigr)=|N(\tilde Q)|^{2}N(\tilde Q_3).
+$$
+On the whole algebra its kernel is the central circle $\mathrm{U}(1)e_t$; on the norm-one slice it is $\{\pm e_t\}$, which is the double cover. On the norm-one slice it is an isometry and its image is $SO^{+}(1,3)$; on the whole unit group the image is a seven-dimensional similarity group.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>group</th>
+<th>kernel</th>
+<th>image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{H}_{\tilde Q}$, general unit</td>
+<td>$\mathbb{B}^{\times}$</td>
+<td>$\mathrm{U}(1)e_t$</td>
+<td>similarities of real dimension seven</td>
+</tr>
+<tr>
+<td>$\mathrm{H}_{\tilde U}$, norm-one unit</td>
+<td>$\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$</td>
+<td>$\{\pm e_t\}$</td>
+<td>$SO^{+}(1,3)$</td>
+</tr>
+<tr>
+<td>$\mathrm{H}_{\tilde u}$, rotation rotor</td>
+<td>$Sp(1)\cong SU(2)$</td>
+<td>$\{\pm e_t\}$</td>
+<td>$SO(3)$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-readings">The Readings</h3>
+<p><strong>A change of frame is the sandwich.</strong> A four-vector is acted on by an element, not by a matrix, and the action is the sandwich. The acting element is the rotor; the norm-one condition makes the action an isometry, and the central sign makes it a double cover. Read physically, a change of frame is a conjugation by a unit, and the unit is the frame.</p>
+<p><strong>The interval is the frame-independent object.</strong> On the norm-one slice the sandwich preserves $N$, and off the slice it multiplies $N$ by the positive factor $|N(\tilde Q)|^{2}$. The sign and the vanishing of the norm are therefore unchanged by every unit, and the causal class of a four-vector is frame-independent. Read physically, the interval is objective and the scale is a similarity, not a change of causal type.</p>
+<p><strong>The two sectors are preserved.</strong> The sandwich preserves $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ for every unit, because the sectors are the eigenspaces of the dagger. Read physically, a change of frame acts on the four-vectors and on the Hermitian forms in the same way; the state side and the material side are both covariant.</p>
+<p><strong>The central phase is not a frame.</strong> The kernel of the sandwich on the whole algebra is the central circle, so an overall phase acts trivially. Read physically, a global phase is a redundancy of the action, not a change of frame; two units that differ by a phase give the same transformation of the algebra.</p>
+<p><strong>The boundary of the readings.</strong> The sandwich preserves $\mathbb{M}_{+}$, but a boost does not preserve its trace-one slice: the trace-one Bloch ball is not invariant under the full Lorentz group. The finite-dimensional Hermitian sector is the space of Hermitian forms, not the relativistic state space; making the state space itself relativistic is open work. The algebra supplies the covariant action on the forms, not a unitary representation of the Lorentz group on a finite-dimensional state space.</p>
+<h2 id="rotations">Rotations</h2>
+<h3 id="the-rotor">The Rotor</h3>
+<p>A rotation about the unit real direction $\vec u$ through the angle $\theta$ is the rotor
+$$
+\tilde u=\exp\!\left(\frac{\theta}{2}\vec u\right)
+=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u,
+$$
+a real unit quaternion. Its sandwich is
+$$
+\mathrm{H}_{\tilde u}(\tilde Q_3)=\tilde u\,\tilde Q_3\,\tilde u^{*}
+=\tilde u\,\tilde Q_3\,\tilde u^{-1},
+$$
+an algebra automorphism. On the spatial part of a four-vector it is the rotation through $\theta$, and the angle in the element is half the angle of the rotation. A full turn of the rotor, $\tilde u\mapsto-\tilde u$, is the identity rotation, so
+$$
+Sp(1)\longrightarrow SO(3)
+$$
+is two-to-one.</p>
+<p><strong>A rotation is an algebra automorphism.</strong> The rotor is unitary, so the inverse and the Hermitian conjugate coincide, and the sandwich preserves the product as well as the interval. Read physically, a rotation is a symmetry of the algebra and not only of the form: it can be applied to any element, and it preserves the centre, the vector subspace, the quaternion halves and the two sectors. The rotation is the only kind of frame change with this property.</p>
+<p><strong>The half-angle is the spinor.</strong> The rotation acts once through the left factor and once through the right, so the angle in the rotor is half the angle of the motion. Read physically, the halved angle is the spinor: a rotation by $2\pi$ is $-e_t$ on the rotor, and the sign is the double cover. The sign is invisible on a four-vector and visible on a spinor.</p>
+<p><strong>The rotation acts on the complexified vector space.</strong> Because the central imaginary $i$ commutes with the rotor, the real vector part $\vec e_k$ and the imaginary vector part $i\vec e_k$ rotate by the same angle. Read physically, the six-dimensional complex vector subspace carries one complex-linear rotation, not two independent ones; the imaginary half is not a separate spatial space.</p>
+<p><strong>The boundary of the readings.</strong> The algebra supplies the rotor and the double cover; it does not supply the spin-statistics theorem, the quantisation of the angle, or a dynamics. The identification of the sign with a physical spinor phase is a reading of the representation, not a derivation of the spin of a particle.</p>
+<h2 id="boosts">Boosts</h2>
+<h3 id="the-boost-rotor">The Boost Rotor</h3>
+<p>A boost along the unit real direction $\vec u$ of rapidity $\psi$ is the rotor
+$$
+\tilde U=\exp\!\left(\frac{\psi}{2}i\vec u\right)
+=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u,
+\qquad
+\tanh\psi=\frac{v}{c}.
+$$
+It is Hermitian, $\tilde U^{*}=\tilde U$, of norm one, and it is not unitary: $\tilde U^{*}\tilde U=\tilde U^{2}\neq e_t$ unless $\psi=0$. Its sandwich is
+$$
+\mathrm{H}_{\tilde U}(\tilde Q_3)=\tilde U\,\tilde Q_3\,\tilde U,
+$$
+the element on both sides rather than an element and its inverse.</p>
+<p>The boost moves the time axis. On the algebra unit,
+$$
+\mathrm{H}_{\tilde U}(e_t)=\tilde U^{2}=\cosh\psi\,e_t+i\sinh\psi\,\vec u,
+$$
+which is Hermitian and lies in $\mathbb{M}_{+}$; on the time axis,
+$$
+\mathrm{H}_{\tilde U}(ie_t)=i\tilde U^{2}=i\cosh\psi\,e_t-\sinh\psi\,\vec u,
+$$
+which is a four-vector with a spatial part. The centre is not preserved, the vector subspace is not preserved, and the product is not preserved:
+$$
+\mathrm{H}_{\tilde U}(\tilde Q_1\tilde Q_2)\neq
+\mathrm{H}_{\tilde U}(\tilde Q_1)\mathrm{H}_{\tilde U}(\tilde Q_2)
+$$
+for $\psi\neq0$, because the missing factor is $\tilde U^{*}\tilde U=\tilde U^{2}$. The defect is first order in the rapidity, while the time dilation is second order.</p>
+<p><strong>A boost is a change to a moving frame.</strong> The rotor stores half the rapidity, and the sandwich carries the four-position of a world line to its rest frame; the rapidity is additive for collinear boosts. Read physically, the boost is the change of inertial frame, and the rotor is the element that performs it.</p>
+<p><strong>A boost is a motion, not an automorphism.</strong> The boost preserves the interval and the two sectors, but it does not preserve the product, the centre or the vector subspace. Read physically, a boost is a motion of the form which is not a symmetry of the algebraic structure; a rotation is both, and a boost is only the former. The time axis and the spatial axis are mixed, and the mixing is exactly the failure of multiplicativity.</p>
+<p><strong>The time axis is frame-dependent.</strong> The image of $ie_t$ is a four-vector with a spatial part $\sinh\psi$, and the image of $e_t$ leaves the centre for $\mathbb{M}_{+}$. Read physically, the rest frame's time axis is not invariant; a boost carries it to the four-velocity of the moving frame, and the simultaneity plane tilts. The interval is what survives; the product of two events is not a frame-independent object.</p>
+<p><strong>Two boosts are not a boost.</strong> The product of two non-collinear boost rotors is a rotor whose polar decomposition has a rotation factor, the Wigner rotation. Read physically, two successive non-collinear boosts are a boost followed by a rotation, and the rotation is the Thomas precession. The set of boosts is not a subgroup; the group is generated by the boosts and the rotations together.</p>
+<p><strong>The boundary of the readings.</strong> The boost is global and constant; the article does not read acceleration, gravity or a local frame field. The failure of multiplicativity is not a physical arrow of time, and the Wigner rotation is a property of the composition of the motions, not a derivation of a dynamical effect.</p>
+<h2 id="the-orbits">The Orbits</h2>
+<h3 id="the-classification">The Classification</h3>
+<p>The sandwich preserves the rank of the matrix image and, on the norm-one slice, the norm itself. On the material sector the sign and the vanishing of the norm give the causal classes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>norm $N$</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timelike</td>
+<td>$N<0$</td>
+<td>a world line of a massive particle</td>
+</tr>
+<tr>
+<td>null</td>
+<td>$N=0$, $\tilde Q\neq0$</td>
+<td>a point of the light cone; a zero divisor of rank one</td>
+</tr>
+<tr>
+<td>spacelike</td>
+<td>$N>0$</td>
+<td>a separation outside the cone</td>
+</tr>
+<tr>
+<td>zero</td>
+<td>$\tilde Q=0$</td>
+<td>the origin</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rank is always preserved: rank two is a unit, rank one is a nonzero zero divisor, rank zero is the origin.</p>
+<h3 id="the-readings_1">The Readings</h3>
+<p><strong>The mass shell is an orbit.</strong> The future timelike elements of a fixed norm form a single orbit of the proper orthochronous group, and the past elements form a second orbit. The orbit of the rest four-velocity $imc\,e_t$ is the future mass shell of mass $m$, with $N=-m^{2}c^{2}$. Read physically, a particle of mass $m$ is a point on the orbit, and a change of frame moves it along the orbit; the mass is the invariant of the orbit, not a label attached to a representative.</p>
+<p><strong>The light cone is an orbit, and a null vector has no rest frame.</strong> The nonzero future null elements form a single orbit, and the past null elements a second. A null element is a zero divisor of rank one, and no rotor carries it to the rest four-velocity, because the rest four-velocity is timelike. Read physically, a massless particle has no rest frame; the light cone is one orbit of directions, and the absence of a rest frame is the absence of a timelike representative.</p>
+<p><strong>A frame is a point on the orbit.</strong> The orbit is the physical object and the representative is a choice of frame. Read physically, no frame is preferred; the interval, the mass and the causal class are the invariants, and the group acts transitively on the frames of a given orbit.</p>
+<p><strong>The spacelike orbit is not a particle.</strong> The spacelike elements of a fixed norm form one orbit, but no causal world line represents it. Read physically, a spacelike separation is a relation between events, not a state of a particle.</p>
+<p><strong>The boundary of the readings.</strong> The algebra supplies the orbit and the invariant; it does not supply the mass spectrum, the coupling or the dynamics. The mass $m$ is an input, and the orbit is the set of frames of a particle of that mass. The future and past sheets are separate under the proper orthochronous group, and the article does not identify them.</p>
+<h2 id="reflections-and-the-two-chiralities">Reflections and the Two Chiralities</h2>
+<h3 id="the-reflection-formula">The Reflection Formula</h3>
+<p>For $v$ with $\langle v\rangle_{\natural}=1$, the <strong>reflection</strong> in the hyperplane $v^{\perp}$ is
+$$
+\rho_v(\tilde Q_3)=-v\,\tilde Q_3\,v^{-1}
+=-v\,\tilde Q_3\,v^{\natural}.
+$$
+On the vector subspace $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ and on its real form $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, the multiplication is Clifford and orthogonality coincides with anticommutation:
+$$
+v\tilde Q_3+\tilde Q_3v=-2\langle v,\tilde Q_3\rangle e_t.
+$$
+There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1$; it is an involution. On the quaternion and Hermitian subspaces a norm-one element acts by conjugation as a rotation rather than as a reflection, and on the whole algebra $\rho_v$ has determinant $+1$. The Cartan–Dieudonné theorem gives every isometry of the three-dimensional vector subspace as a product of at most three reflections $\rho_v$.</p>
+<p><strong>A reflection is an odd isometry.</strong> The reflection reverses one direction and fixes the hyperplane orthogonal to it; it is an isometry of the form and an orientation-reversing map of the vector subspace. Read physically, it is a mirror: a parity in one direction, not a rotation.</p>
+<p><strong>Parity is outside the connected group.</strong> The unit group is connected, and a reflection is not a sandwich by a unit: the formula carries the minus sign, and the group it generates is the Pin group, not a subgroup of $\mathbb{B}^{\times}$. Read physically, parity is a discrete symmetry not connected to the identity, and it is not a continuous motion. The Lorentz reflections are not of the shape $\rho_v$ and live in the Clifford layer, not in the algebra.</p>
+<p><strong>Chirality is not an element of the algebra.</strong> The two half-integral representations of the Lorentz group are conjugate, and the connected unit group does not exchange them; the exchange is an outer symmetry of the representation theory. Read physically, chirality is a property of the representation, not an element of the algebra; the algebra's reflections act on the vector subspace, not on the spinor chirality.</p>
+<p><strong>Every isometry of the vector space is a product of mirrors.</strong> Cartan–Dieudonné writes every isometry of the three-dimensional vector subspace as at most three reflections. Read physically, every orthogonal transformation of the spatial vector space is a product of mirrors; the statement is about the vector subspace, not about the full Lorentz group.</p>
+<p><strong>The boundary of the readings.</strong> The algebra's reflections are reflections of the vector subspace, not of spacetime; the spacetime parity and the chirality exchange are not elements of $\mathbb{B}$. The article does not supply a parity operator, a Dirac mass term or a chirality projection; it supplies the reflection formula and the representation statement on which those readings rest.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p>The geometry of the algebra is the geometry of the norm and of its isometries. The unit group is eight-dimensional, the norm-one slice six-dimensional and the Lorentz group its six-dimensional quotient; the algebra carries the double cover, not the group. The sandwich is the action; the interval is the invariant; the product is preserved by a rotation and not by a boost. The orbits are the mass shells and the light cones; the reflections are odd and live outside the connected group.</p>
+<p>The article does not derive the Lorentz group from the algebra: it reads the group that the norm already defines, and it reads the action that the dagger already supplies. It does not derive a dynamics, a field equation, a mass spectrum or a coupling. It does not supply a preferred frame; the frame is a choice, and the interval is what is left when the choice is made. It does not read acceleration, gravity or a local frame field. The finite-dimensional Hermitian sector is not the relativistic state space, and a boost carries the trace-one Bloch ball off its slice; that is a boundary of the reading, not a defect of the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>The norm-one group $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group, and its compact part $Sp(1)\cong SU(2)$ is the double cover of the spatial rotations. The Lorentz group is the quotient by the central sign, not a subgroup of the quaternion layer; the algebra carries the spin frame. The dagger sandwich $\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$ is the change of frame: it preserves the two sectors, scales the norm by $|N(\tilde Q)|^{2}$, has kernel $\mathrm{U}(1)e_t$ on the algebra and $\{\pm e_t\}$ on the norm-one slice, and acts as $SO^{+}(1,3)$ there. The interval is the frame-independent object, and the central phase is not a frame.</p>
+<p>A rotation is a unitary rotor, an algebra automorphism, with the angle halved in the element and the double cover $Sp(1)\to SO(3)$. A boost is a Hermitian norm-one rotor, not unitary, and not an automorphism: it preserves the interval and the sectors but not the product, the centre or the vector subspace. Two non-collinear boosts compose to a boost and a Wigner rotation. The orbits are the future and past mass shells and the future and past light cones; a null vector is a zero divisor and has no rest frame. The reflections $\rho_v$ are odd isometries of the vector subspace, generated by the Pin group and not by the unit group; parity and chirality exchange are outside the connected Lorentz group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$</td>
+<td>norm-one group; double cover of $SO^{+}(1,3)$</td>
+</tr>
+<tr>
+<td>$Sp(1)=S^{3}\cong SU(2)$</td>
+<td>unit quaternions; double cover of $SO(3)$</td>
+</tr>
+<tr>
+<td>$\mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\tilde Q_3\tilde Q^{*}$</td>
+<td>dagger sandwich; the change of frame</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)e_t$</td>
+<td>kernel of the sandwich on the algebra</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$</td>
+<td>biquaternion norm; the interval on $\mathbb{M}_{-}$</td>
+</tr>
+<tr>
+<td>$\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$</td>
+<td>rotation rotor</td>
+</tr>
+<tr>
+<td>$\tilde U=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$</td>
+<td>boost rotor; Hermitian and norm-one</td>
+</tr>
+<tr>
+<td>$\rho_v(\tilde Q_3)=-v\tilde Q_3v^{-1}$</td>
+<td>reflection in $v^{\perp}$</td>
+</tr>
+<tr>
+<td>$imc\,e_t$</td>
+<td>rest four-velocity; $N=-m^{2}c^{2}$</td>
+</tr>
+<tr>
+<td>$SO^{+}(1,3)$</td>
+<td>proper orthochronous Lorentz group; the frame group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the double covers, the sandwich, the orbits and the reflections.</li>
+<li><a href="../articles_maths/biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the automorphism group and its real form.</li>
+<li><a href="../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html">The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone</a>, for the unit group and the norm-one slice.</li>
+<li><a href="../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html">The Biquaternion Unit Group as a Topological Group</a>, for the topology of the group.</li>
+<li><a href="../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for the compact real form and the quotient $U(\mathbb{B})/U(1)\cong SO(3)$.</li>
+<li><em>Biquaternion Rotations and Lorentz Transformations</em>, the physics companion, for the frame readings.</li>
+<li><em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>, for the four-vector dictionary.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

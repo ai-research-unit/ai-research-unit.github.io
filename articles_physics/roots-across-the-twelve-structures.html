@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roots Across the Twelve Structures — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="roots-across-the-twelve-structures"><strong>Roots Across the Twelve Structures</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A root of a central value in one of the twelve structures is an element whose square in that product is the value, $\tilde\Xi\star\tilde\Xi=\lambda e_t$. The root problem asks which elements realise a given value. It is the inverse of the square map, and the square map is the band's way of producing a number from an operation: the plain square produces a polar scale and a direction, the central square produces the interval, the Hermitian square produces a probability weight, and the fourth square produces the indefinite gauge value.</p>
+<p>The twelve structures answer the root problem in four existence classes, and the answers are the physical content of the bands. This article reads the values $-1$, $0$ and $+1$, then a general central value, then the comparison across the twelve. It owns no theorem. The mathematics is <em>Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>, with the named values in the two companion mathematics articles; the physical interpretations are gathered from the three physics companions <em>Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$</em>, <em>Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$</em> and <em>Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$</em>.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The root equation, the four general products and the existence classes</td>
+<td><a href="../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternioid-c-space.html">Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</a></td>
+</tr>
+<tr>
+<td>The roots of $+1$ and the idempotents</td>
+<td><a href="../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html">Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</a></td>
+</tr>
+<tr>
+<td>The roots of $0$ and the nilpotents</td>
+<td><a href="../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html">Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</a></td>
+</tr>
+<tr>
+<td>The twelve products and their squares</td>
+<td><a href="../articles_maths/the-12-products-of-the-biquaternioid-complex-space.html">The 12 Products of the Biquaternioid $\mathbb{C}$ Space</a></td>
+</tr>
+<tr>
+<td>The twelve structures and their products</td>
+<td><a href="../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html">The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</a></td>
+</tr>
+<tr>
+<td>The four general products and the change of scalars</td>
+<td><a href="../articles_maths/the-four-general-products-of-the-biquaternioid-c-space.html">The Four General Products of the Biquaternioid $\mathbb{C}$ Space</a></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-root-equation-and-the-two-squares">The Root Equation and the Two Squares</h2>
+<h3 id="the-equation">The Equation</h3>
+<p>The equation is $\tilde\Xi\star\tilde\Xi=\lambda e_t$, with $\lambda$ a complex number and $\star$ one of the twelve products. The <strong>root set</strong> of $\lambda$ is its solution set. The value $0$ is special: its root set is a cone, because the equation fixes a direction and no magnitude, while a nonzero value fixes a magnitude and its root set is a level set. In the four general products and the two symmetric bilinear structures, a root of a nonzero central value is a unit and a nonzero root of $0$ is a zero divisor. The two symmetric sesquilinear structures are the exception: a root of a nonzero value there can lie on the cone, so the partition is not universal. That partition, with its exception, is the root-problem form of the wall of invertibility.</p>
+<p>The root set depends on the <strong>square</strong> of the band and not on its zero-divisor set. This is the sharpest contrast in the block. The four general products share one zero-divisor set, the cone, because all four read the same norm; their root sets are four different sets, because the square of a product is not the norm of a product. Degeneracy is common across the bands, while factorisation is band-specific.</p>
+<h3 id="the-two-squares-that-group-the-twelve">The Two Squares that Group the Twelve</h3>
+<p>Two squares do most of the grouping. The <strong>plain square</strong> $\tilde\Xi^{2}$ is the square of the plain product and of its symmetrisation, and its root sets are the pair $\pm\sqrt\lambda\,e_t$ together with a pure quadric. The <strong>central square</strong> $\tilde\Xi^{\natural}\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t$ is the square of the quaternionic product and of its symmetrisation, and its root set is the level set of the interval, a quadric in the four complex coordinates.</p>
+<p>The sesquilinear bands have two squares of their own. The <strong>Hermitian square</strong> $\tilde\Xi\tilde\Xi^{*}$ is positive semidefinite and rank-bearing, and its root set is a family of amplitudes of fixed Born weight. The <strong>fourth square</strong> $\tilde\Xi^{\natural}\tilde\Xi^{*}$ is the indefinite gauge value, and its root set is a family of slopes. The symmetric quaternionic sesqualgebra is the exception: its square is the Hermitian part of the fourth square,
+$$
+\tfrac12\bigl(\tilde\Xi^{\natural}\tilde\Xi^{*}+\tilde\Xi^{*}\tilde\Xi^{\natural}\bigr),
+$$
+a real element whose root sets are those of a symmetrised coupling and not the slope family of the fourth square. The four antisymmetric structures have no square of their own beyond the zero or pure value: an antisymmetrisation kills the scalar part, so a bracket cannot realise a nonzero central value at all.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the square</th>
+<th>the structures</th>
+<th>the type of the root set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi^{2}$</td>
+<td>$\mathrm{GPA}$, $\mathrm{SPA}$</td>
+<td>the pair $\pm\sqrt\lambda\,e_t$ and the pure quadric $(\vec\Xi,\vec\Xi)=-\lambda$</td>
+</tr>
+<tr>
+<td>$\tilde\Xi\tilde\Xi^{*}$</td>
+<td>$\mathrm{GPS}$, $\mathrm{SPS}$</td>
+<td>a family of amplitudes of fixed Born weight</td>
+</tr>
+<tr>
+<td>$\langle\tilde\Xi\rangle_{\natural}e_t$</td>
+<td>$\mathrm{GQA}$, $\mathrm{SQA}$</td>
+<td>the level set of the interval, a quadric</td>
+</tr>
+<tr>
+<td>$\tilde\Xi^{\natural}\tilde\Xi^{*}$</td>
+<td>$\mathrm{GQS}$</td>
+<td>a family of slopes, with a central circle at positive values</td>
+</tr>
+<tr>
+<td>$\tfrac12(\tilde\Xi^{\natural}\tilde\Xi^{*}+\tilde\Xi^{*}\tilde\Xi^{\natural})$</td>
+<td>$\mathrm{SQS}$</td>
+<td>the pure sphere at negative values and the family $\mathcal{R}_\lambda$</td>
+</tr>
+<tr>
+<td>$0$ or a pure element</td>
+<td>$\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$</td>
+<td>the value $0$ alone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-three-named-values">The Three Named Values</h2>
+<h3 id="the-value-math50-and-the-idempotents">The Value $+1$ and the Idempotents</h3>
+<p>A root of $+1$ is an <strong>involution</strong>: a parity, a reality condition, a discrete symmetry, or, in the probability band, a unitary transformation of the state space. The plain and natural products produce the involutions of the module; the probability band's involution is the unitary group $\mathrm{U}(2)$; the symmetrisation replaces unitarity by normalisation, the root being a normalised amplitude without its phase; and a bracket produces no involution at all. The compactness of $\mathrm{U}(2)$ is what makes the internal labels discrete. The $S$-matrix of a single mode is matrix-unitary, $\tilde S\tilde S^{*}=e_t$, which is the $\mathrm{U}(2)$ root-of-$+1$ condition and not the unit-norm Lorentz condition.</p>
+<p>An <strong>idempotent</strong> is an element equal to its own square. In the plain product the two equations are one equation read through the halving map,</p>
+<p>$$
+\tilde\Pi=\tfrac12(e_t+\tilde\Xi),
+\qquad
+\tilde\Xi=2\tilde\Pi-e_t,
+$$</p>
+<p>which is a bijection between the roots of $+1$ and the idempotents. An idempotent is a projection, and a projection is a determinate state: measuring twice gives the same result as measuring once. The idempotent sets are the state sets of the bands. The plain product carries the largest family, one state per root of one; the Hermitian idempotents are the pure states of the probability band, on the boundary of the positive cone; the gauge family is the only nontrivial family of idempotents that are units. In the plain and Hermitian families the complementation $\tilde\Pi\mapsto e_t-\tilde\Pi$ pairs a state with its orthogonal complement, and the pair is a complete two-outcome measurement. The brackets and the interval band carry no nontrivial state: an infinitesimal transformation has no determinate state, and a state is not an interval.</p>
+<h3 id="the-value-math61-and-the-nilpotents">The Value $0$ and the Nilpotents</h3>
+<p>A nonzero root of $0$ is a <strong>nilpotent of index two</strong>, written $\tilde\Upsilon$: a square-zero element. It kills itself, so it is an element of its own annihilator, and physically it is an infinitesimal object of which two successive applications give nothing. The lightlike displacement is the pure member. The photon's null momentum is a zero divisor of the same cone but not a nilpotent: its square is not zero, and the massless carrier is the null direction together with its polarisation.</p>
+<p>The root set of $0$ is a cone in every one of the twelve structures. The plain composition band has the pure isotropic cone, the interval band has the whole cone, the probability band has the origin alone, the gauge band has a proper subfamily of the cone, and the two alternating brackets have the whole space. The two antisymmetric sesquilinear brackets have sets that are not contained in the cone: the $\mathrm{APS}$ set is the centrality of the Hermitian square, which meets the cone only at the origin, and the $\mathrm{AQS}$ set is the vanishing of the coefficientwise imaginary part, which meets the cone. The symmetric structures repeat the sets of their parents. The constant is the value $0$; the variation is what each band can do with it. The value $0$ carries the direction of the photon, and the pure root of $0$ is the lightlike displacement: a point of the celestial sphere together with a phase, the phase being the little-group $\mathrm{U}(1)$.</p>
+<p>Nilpotency is Pauli exclusion. The one-mode fermionic ladder is a pair of nilpotents $a,a^{\dagger}$ with $a^{2}=(a^{\dagger})^{2}=0$ and $\{a,a^{\dagger}\}=e_t$, whose product is the vacuum idempotent. The same equation governs the odd nilpotents: the BRST charge, whose cohomology $\ker\mathcal{Q}/\mathrm{im}\,\mathcal{Q}$ is the physical state space, and the supercharge, which is its square root, $\mathcal{Q}^{2}=H$, and is nilpotent only on the massless shell. Both live in an associative or graded-associative product; a bracket that fails the Jacobi identity supplies no such differential.</p>
+<h3 id="the-value-math76-and-the-complex-structure">The Value $-1$ and the Complex Structure</h3>
+<p>A root of $-1$ is a <strong>local complex structure</strong>: a phase, a clock, a half-turn, the Kramers sign. It is deduced from a root of $+1$ by multiplication by the central imaginary in the six bilinear structures, and the mechanism is not universal. The two definite sesquilinear structures and the four brackets have no root of $-1$; the two indefinite sesquilinear structures have one, and in $\mathrm{SQS}$ the witness $\tfrac{1}{\sqrt2}(\vec e_x+i\vec e_y)$ lies on the cone. The roots of $-1$ build nothing in this article. The states, the families and the projections rest on the roots of $+1$, and the physical interpretations of $-1$ belong to the articles on the phase and the clock.</p>
+<h2 id="the-twelve-at-a-general-value">The Twelve at a General Value</h2>
+<h3 id="the-existence-classes">The Existence Classes</h3>
+<p>For a general complex value $\lambda$ the twelve structures fall into four classes. The four <strong>bilateral</strong> structures $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{SPA}$ and $\mathrm{SQA}$ have a root of every $\lambda$. The two <strong>indefinite sesquilinear</strong> structures $\mathrm{GQS}$ and $\mathrm{SQS}$ have a root of every real $\lambda$ and of no non-real one. The two <strong>definite sesquilinear</strong> structures $\mathrm{GPS}$ and $\mathrm{SPS}$ have a root of every real $\lambda\geq0$ and of no other value; they are the only structures that admit a positive real value and refuse its negative. The four <strong>antisymmetric</strong> structures have a root of $\lambda=0$ alone.</p>
+<p>The classes are physical. The bilateral structures read every value, phase and amplitude together: the composition and causality bands can produce any complex value. The probability band admits only non-negative values, because a probability weight is non-negative, and it has the origin alone at $0$, because no nonzero amplitude squares to nothing. The gauge band produces the Krein interval, which is real by construction, so a complex value is never one of its shells. The brackets produce a pure or vanishing object, so only $0$ is readable.</p>
+<h3 id="the-root-sets-one-by-one">The Root Sets One by One</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the structure</th>
+<th>$\lambda\notin\mathbb{R}$</th>
+<th>$\lambda<0$</th>
+<th>$\lambda=0$</th>
+<th>$\lambda>0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>$\pm\sqrt\lambda\,e_t$ and $(\vec\Xi,\vec\Xi)=-\lambda$</td>
+<td>the same pair and quadric</td>
+<td>the origin and the pure null cone</td>
+<td>the same pair and quadric</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$</td>
+<td>none</td>
+<td>none</td>
+<td>the origin alone</td>
+<td>the family $\exp(i\theta)w$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>the quadric $C=\lambda$</td>
+<td>the same quadric</td>
+<td>the cone $C=0$</td>
+<td>the same quadric</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>none</td>
+<td>the slopes $\lvert t\rvert<1$</td>
+<td>the slopes $\lvert t\rvert=1$</td>
+<td>the slopes $\lvert t\rvert>1$ and the central circle</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>as $\mathrm{GPA}$</td>
+<td>as $\mathrm{GPA}$</td>
+<td>as $\mathrm{GPA}$</td>
+<td>as $\mathrm{GPA}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPS}$</td>
+<td>none</td>
+<td>none</td>
+<td>the origin alone</td>
+<td>the quadric $H=\lambda$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>as $\mathrm{GQA}$</td>
+<td>as $\mathrm{GQA}$</td>
+<td>as $\mathrm{GQA}$</td>
+<td>as $\mathrm{GQA}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>none</td>
+<td>the pure sphere and $\mathcal{R}_\lambda$</td>
+<td>the gauge cone $\alpha(e_t+i\vec u)$</td>
+<td>$\mathcal{R}_\lambda$ with $\lvert\alpha\rvert^{2}\geq\lambda$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>none</td>
+<td>none</td>
+<td>the whole space</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathrm{APS}$</td>
+<td>none</td>
+<td>none</td>
+<td>the square-zero cone</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$</td>
+<td>none</td>
+<td>none</td>
+<td>the whole space</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>none</td>
+<td>none</td>
+<td>the cone of the diagonal</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p>The plain structures have the richest sets: two central roots and a pure quadric of real dimension four. The probability band has a family of real dimension four at a positive value and the origin alone at zero. The natural and symmetric-quaternionic structures have a quadric of real dimension six at a value, which is the mass shell. The gauge band has a family of real dimension four at each real value, with the slope separating the causal classes. The symmetric probability structure has a sphere of real dimension seven at a positive value, because the symmetrisation forgets the vector part of the square and the equation loses its rigidity. The four antisymmetric rows are empty except at $0$.</p>
+<h2 id="the-scaling-and-the-sign">The Scaling and the Sign</h2>
+<p>A shell of a given sign is generated from the unit shell by scaling. The interval is quadratic in the scale, so the mass shell is the unit shell scaled by $mc$, and the cone is the scale-free limit of the family. The magnitude of the value sets the size of the shell and its sign sets the causal class: negative for the timelike shell of a massive particle, zero for the cone, positive for the spacelike or tachyonic shell. For the interval structures the root of a nonzero value is a unit whatever the sign, so a tachyon is invertible and only the value zero has non-invertible roots; the two symmetric sesquilinear structures are again the exception.</p>
+<p>The sign is also why the retired single-field mass equation fails. Its solutions lie on the spacelike shell, while a physical mass term must place them on the timelike one, and the conjugation rather than a number is what makes the choice. The value is a modulus and a phase: on the material sector the phase is the causal class, the polar modulus is real for a spacelike element and imaginary for a timelike one, and the representation exists exactly off the cone.</p>
+<p>A complex value has no causal class. The unstable state is a complex central pole whose real part is the energy and whose imaginary part is half the width, so a decaying state has a lifetime instead of a shell. Only the plain band realises such a value as a pole, by the scalar process $\sqrt\lambda\,e_t$; the interval bands read a real interval, so a complex pole is never one of their shells. The value's phase doubles in an interference: the Zitterbewegung frequency is twice the value's scale.</p>
+<h2 id="the-comparison-table">The Comparison Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the structure</th>
+<th>the square</th>
+<th>a root of $+1$</th>
+<th>a root of $0$</th>
+<th>the existence class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GPA}$</td>
+<td>$\tilde\Xi^{2}$</td>
+<td>$\pm e_t$ and the pure quadric $(\vec\Xi,\vec\Xi)=-1$</td>
+<td>the pure null cone and $0$</td>
+<td>every $\lambda$</td>
+</tr>
+<tr>
+<td>$\mathrm{GPS}$</td>
+<td>$\tilde\Xi\tilde\Xi^{*}$</td>
+<td>the family $\tilde\Xi\tilde\Xi^{*}=e_t$</td>
+<td>$0$ alone</td>
+<td>every real $\lambda\geq0$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\langle\tilde\Xi\rangle_{\natural}e_t$</td>
+<td>the quadric $C=1$</td>
+<td>the cone $C=0$</td>
+<td>every $\lambda$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQS}$</td>
+<td>$\tilde\Xi^{\natural}\tilde\Xi^{*}$</td>
+<td>the slopes $\lvert t\rvert>1$ and the central circle</td>
+<td>the slopes $\lvert t\rvert=1$</td>
+<td>every real $\lambda$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPA}$</td>
+<td>$\tilde\Xi^{2}$</td>
+<td>as $\mathrm{GPA}$</td>
+<td>as $\mathrm{GPA}$</td>
+<td>every $\lambda$</td>
+</tr>
+<tr>
+<td>$\mathrm{SPS}$</td>
+<td>$\langle\tilde\Xi\rangle_{*}e_t$</td>
+<td>the quadric $H=1$</td>
+<td>$0$ alone</td>
+<td>every real $\lambda\geq0$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$\langle\tilde\Xi\rangle_{\natural}e_t$</td>
+<td>the quadric $C=1$</td>
+<td>the cone $C=0$</td>
+<td>every $\lambda$</td>
+</tr>
+<tr>
+<td>$\mathrm{SQS}$</td>
+<td>the Hermitian part of the fourth square</td>
+<td>the family $\mathcal{R}_{+1}$</td>
+<td>the gauge cone $\alpha(e_t+i\vec u)$</td>
+<td>every real $\lambda$</td>
+</tr>
+<tr>
+<td>$\mathrm{APA}$</td>
+<td>$0$</td>
+<td>none</td>
+<td>the whole space</td>
+<td>$\lambda=0$ alone</td>
+</tr>
+<tr>
+<td>$\mathrm{APS}$</td>
+<td>a pure element</td>
+<td>none</td>
+<td>the square-zero cone</td>
+<td>$\lambda=0$ alone</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$</td>
+<td>$0$</td>
+<td>none</td>
+<td>the whole space</td>
+<td>$\lambda=0$ alone</td>
+</tr>
+<tr>
+<td>$\mathrm{AQS}$</td>
+<td>a pure element</td>
+<td>none</td>
+<td>the cone of the diagonal</td>
+<td>$\lambda=0$ alone</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two coincidences stand out. A bilinear parent and its symmetric part have the same root sets, because they have the same square: $\mathrm{SPA}$ reads as $\mathrm{GPA}$, and $\mathrm{SQA}$ as $\mathrm{GQA}$. The two sesquilinear parents and their symmetrisations do not: $\mathrm{GPS}$ reads a positive value as a coset of the unitary group, while $\mathrm{SPS}$ reads it as a sphere, because the symmetrisation forgets the vector part. The four antisymmetric rows have no root of a nonzero value, and that emptiness is the algebraic statement that a bracket cannot realise a scalar value.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p>A root is an algebraic solution, not a particle. The equation $\tilde\Xi\star\tilde\Xi=\lambda e_t$ names the elements that realise a value; it does not name a state, a mass or a lifetime. The mass shell, the Born weight and the causal class are readings of the root sets, and each reading has to be supplied by the band and by the physical identification.</p>
+<p>In the plain band the root of $0$ is not the light cone. It is the pure null cone together with the origin, while the light cone is the cut of the whole zero-divisor cone by the material sector. A zero divisor need not square to zero, and the gap between the two sets is the family of states. In the general products and the two symmetric bilinear structures the root of a nonzero value is a unit, and the root set of a value is not unique: in the plain product the two central roots are the two signs of the square root, and in the interval band the two sheets of the mass shell are the future and past branches. The framework derives no mass spectrum and no coupling; the value is an input, and the algebra supplies the carrier and the shape of the shell.</p>
+<p>The boundary of the root problem is also its use. The radicand $0$ is the branch point. In the plain band the two central roots merge at the origin; in the interval band the mass shell collapses onto the null cone. The on-shell element is a zero divisor and loses invertibility, and the conformal symmetry is restored exactly where the splitting is lost. The root can live on a module rather than in the algebra: the Klein–Gordon operator has no first-order scalar root, and the physical root is spinor-valued, with the mass as the off-diagonal entry that mixes the two chiral halves. The root can live on a curved background, and then the value it realises is not a constant: the square of the Dirac operator is the Lichnerowicz operator, and the radicand carries the curvature.</p>
+<h2 id="summary">Summary</h2>
+<p>The root problem asks which elements square to a central value in each of the twelve products. Two squares group the structures: the plain square and the central interval square, with the Hermitian, fourth and symmetrised-fourth squares as the sesquilinear analogues and the zero or pure square for the brackets. The value $+1$ gives the involutions and, through the halving map, the idempotents and the states. The value $0$ gives the nilpotents and the massless element. The value $-1$ gives the local complex structures, and it is not universal. A general value separates the twelve into four existence classes: every value for the four bilateral structures, every real value for the two indefinite sesquilinear structures, every non-negative real value for the two definite sesquilinear structures, and $0$ alone for the four antisymmetric structures. For real values on the material sector, the sign of the value is the causal class of its roots, the magnitude is the size of the shell, and the scaling is quadratic. The roots are algebraic solutions, and their physical interpretations are the mass shell, the Born weight, the causal class and the gauge value.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lambda e_t$, $\lambda\in\mathbb{C}$</td>
+<td>the central value whose roots are sought</td>
+</tr>
+<tr>
+<td>$\tilde\Xi\star\tilde\Xi$</td>
+<td>the square in the product $\star$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi$</td>
+<td>an idempotent, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>a nilpotent, $\tilde\Upsilon\star\tilde\Upsilon=0$</td>
+</tr>
+<tr>
+<td>$C(\tilde\Xi)$</td>
+<td>the quaternionic algebraic norm $\langle\tilde\Xi\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>$H(\tilde\Xi)$</td>
+<td>the Hermitian algebraic norm $\langle\tilde\Xi\rangle_{*}$</td>
+</tr>
+<tr>
+<td>$\mathcal{R}_\lambda$</td>
+<td>the slope family of the general quaternionic sesquilinear structure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternioid-c-space.html">Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</a>, for the existence classes and the root sets.</li>
+<li><a href="../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html">Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</a>, for the halving map.</li>
+<li><a href="../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternioid-c-space.html">Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</a>, for the nilpotent cone.</li>
+<li><em>Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$</em>, <em>Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$</em> and <em>Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$</em>, the three physics companions.</li>
+<li><em>Zero Divisors Across the Twelve Structures</em> and <em>Annihilators Across the Twelve Structures</em>, the two companions of this block.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
