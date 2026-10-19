@@ -72,13 +72,13 @@
 <p>A second trap is a factor of two. The bookkeeping of polarisations in the covariant quantisation of the Maxwell field is notoriously easy to get wrong, and the framework has something precise to say about it: the indefinite metric of the covariant treatment is the biquaternion norm of the material sector $\mathbb{M}_-$, and the sum of its signs fixes the effective number of polarisations. The article is explicit about which modes are counted.</p>
 <p>The division between what is established and what is interpretation is stated here and kept throughout.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{M}_+$, and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H)$ gives vacuum expectation values for one fermionic mode. The zero-point energy of the free Maxwell field is a <strong>central scalar</strong> — a multiple of $e_t$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
+<li><strong>Established, and recomputed below.</strong> The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{M}_+$, and the trace formula $\mathrm{Tr}(\tilde\Pi_+\tilde H)=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$ gives vacuum expectation values for one fermionic mode once $\tilde\Pi_+$ is defined below. The zero-point energy of the free Maxwell field is a <strong>central scalar</strong> — a multiple of $e_t$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
 $$
 \frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720\,a^{3}},\qquad
 \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}},
 $$
 with the force <strong>attractive</strong>. The factor of two between the electromagnetic result and the Dirichlet-scalar result is fixed by the two physical transverse polarisations, whose sum reproduces the biquaternion norm of $\mathbb{M}_-$.</li>
-<li><strong>Interpretation.</strong> Interpretation the vacuum energy as the trace part, or scalar part, of the field Hamiltonian, and reading the framework's local complex structure as a possible home for boundaries, are interpretations of algebraic facts. The first is precise and is developed below; the second is a suggestion, flagged as such.</li>
+<li><strong>Interpretation.</strong> Interpreting the vacuum energy as the trace part, or scalar part, of the field Hamiltonian, and reading the framework's local complex structure as a possible home for boundaries, are interpretations of algebraic facts. The first is precise and is developed below; the second is a suggestion, flagged as such.</li>
 <li><strong>Gaps, left visible.</strong> There is no bosonic ladder in $\mathbb{B}$, so the photon's Fock vacuum is a standard construction on an imported module rather than an object of the algebra. The perfectly conducting plates and their boundary conditions have no native description in the framework. The algebra does not select a regularisation. And the framework reproduces the standard Casimir result rather than modifying it, so it supplies no empirical discriminator here.</li>
 </ul>
 <p>The article is organised as follows. The next section fixes the vacuum state in the framework. The section after that treats the zero-point energy and its central-scalar character. The following section sets up the parallel-plate configuration and exhibits the divergent mode sum. Two sections then regularise it by two independent routes. A section accounts for the polarisations and the factor of two. A section states the force, its sign, and its verification. A section separates what the framework supplies from what it imports, a short section treats boundaries and the local complex structure as an open direction, and the article closes with open questions.</p>
@@ -87,7 +87,7 @@ $$
 \mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},\qquad
 \mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H)$, normalised so that $\mathrm{Tr}(e_t)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the potential and field strength are $\tilde A=i\phi/c\,e_t+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.</p>
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, normalised so that $\mathrm{Tr}(e_t)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the potential and field strength are $\tilde A=i\phi/c\,e_t+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.</p>
 <h2 id="the-vacuum-state-in-the-framework">The Vacuum State in the Framework</h2>
 <p>The Fock space of a field is the direct sum of the symmetric or antisymmetric tensor powers of the one-particle space, and the <strong>vacuum</strong> $|0\rangle$ spans its degree-zero term:
 $$
@@ -300,7 +300,7 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <tr>
 <td>Vacuum expectation values (one mode)</td>
 <td>Native</td>
-<td>$\langle\tilde H\rangle_t=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$</td>
+<td>$\langle\tilde H\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$</td>
 </tr>
 <tr>
 <td>Fermion parity of the vacuum</td>
@@ -414,7 +414,7 @@ $$
 </tr>
 <tr>
 <td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
-<td>Quaternion basis, $\vec e_\mu^2=-e_t$</td>
+<td>Quaternion basis, $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -429,7 +429,7 @@ $$
 <td>Centre of the algebra; home of the zero-point scalar</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H)$</td>
+<td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
 <td>Trace formula; $\mathrm{Tr}(e_t)=2$</td>
 </tr>
 <tr>

@@ -114,7 +114,7 @@ $$</p>
 <h2 id="equal-time-anticommutation-relations">Equal-Time Anticommutation Relations</h2>
 <p>Quantization promotes the classical field and its momentum to operators $\psi^{\mathrm{fop}}$, $\pi^{\mathrm{fop}}$ and imposes equal-time brackets. For the Dirac field the brackets are <strong>anticommutators</strong>:</p>
 <p>$$
-\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),$$</p>
+\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$$</p>
 <p>$$
 \{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),\psi^{\mathrm{fop}}_b(\vec y,t)\}=0,\qquad
 \{{\psi^{\mathrm{fop}}_a}^\dagger(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=0$$</p>
@@ -154,9 +154,9 @@ $$</p>
 +b^{\mathrm{fop}}_s(\vec k)\,v^{(s){}^{*}}(\vec k)\,\exp(-ik\cdot y)\Big],
 $$</p>
 <p>together define the operator-valued field. The <strong>annihilation</strong> operators $a^{\mathrm{fop}}_r(\vec p)$ multiply the positive-frequency solutions, and the <strong>creation</strong> operators $b^{\mathrm{fop}\dagger}_r(\vec p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.</p>
-<p>Two structural remarks belong here. First, $\psi^{\mathrm{fop}}$ is <strong>not Hermitian</strong>, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})/\hbar\right)$; the two branches are the two roots of the single biquaternion mass-shell condition</p>
+<p>Two structural remarks belong here. First, $\psi^{\mathrm{fop}}$ is <strong>not Hermitian</strong>, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar\right)$; the two branches are the two roots of the single biquaternion mass-shell condition</p>
 <p>$$
-\tilde P\tilde P^{\natural}=-m^2c^2,
+\tilde P\tilde P^{\natural}=-m^2c^2\,e_t,
 $$</p>
 <p>and the polarization equation is the algebraic form of the momentum-space equation. Promoting the coefficients to operators is thus a transcription of the standard mode expansion onto the parent article's biquaternion plane waves; it is not, by itself, a derivation of the expansion from the algebra.</p>
 <h2 id="anticommutators-of-the-mode-operators">Anticommutators of the Mode Operators</h2>
@@ -209,7 +209,7 @@ $$</p>
 <p>$$
 \big(a^{\mathrm{fop}\dagger}_r(\vec p)\big)^2=0,\qquad \big(b^{\mathrm{fop}\dagger}_r(\vec p)\big)^2=0,
 $$</p>
-<p>which is the Pauli exclusion principle as an algebraic identity: the square of a creation operator vanishes because $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}}_s(\vec k)\}=0$. This is the sharpest sense in which the statistics is carried by the mode algebra. The construction of the biquaternion Fock space as an object in its own right — rather than as the exterior algebra of the spinor-module solution space — is the subject of a planned companion article; here we need only the mode algebra.</p>
+<p>which is the Pauli exclusion principle as an algebraic identity: the square of a creation operator vanishes because $\{a^{\mathrm{fop}\dagger}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=0$. This is the sharpest sense in which the statistics is carried by the mode algebra. The construction of the biquaternion Fock space as an object in its own right — rather than as the exterior algebra of the spinor-module solution space — is the subject of a planned companion article; here we need only the mode algebra.</p>
 <h2 id="the-hamiltonian-and-the-normal-ordering-constant">The Hamiltonian and the Normal-Ordering Constant</h2>
 <p>The conserved energy of the free Dirac field is</p>
 <p>$$
@@ -251,7 +251,7 @@ $$</p>
 <p>so that particles and antiparticles carry opposite charge, as they must. All three expressions are the standard ones; their derivation uses only the parent article's spinor relations.</p>
 <p>The status of $E_0$ deserves one cautionary sentence. Its divergence is an ultraviolet feature of the free field, removed by the conventional normal-ordering prescription, and nothing in the biquaternion structure as used here changes that. Whether the biquaternion framework offers a distinguished or geometrically meaningful regularization of the vacuum energy is an open question, and we do not claim one.</p>
 <h2 id="spin-and-statistics">Spin and Statistics</h2>
-<p>The anticommutation relations are not a convention; they are selected. The three reasons given in Section 3 — boundedness of the energy, microcausality, and positivity of the norm — are all consequences of one structural fact: the one-particle states of the field transform in the <strong>spinor representation</strong> of the Lorentz group, and the biquaternion algebra realizes that representation on its module. For a field of half-integer spin the representation is double-valued: a rotation by $2\pi$ in the vector representation corresponds to a rotation by $2\pi$ in the spinor representation, and only a rotation by $4\pi$ returns the spinor to itself. It is this two-valuedness, together with the requirement that the local observables be built from bilinears, that forces the anticommutator: the commutator of two spinor fields fails to vanish at spacelike separation, while the anticommutator does.</p>
+<p>The anticommutation relations are not a convention; they are selected. The three reasons given in Section 3 — boundedness of the energy, microcausality, and positivity of the norm — are all consequences of one structural fact: the one-particle states of the field transform in the <strong>spinor representation</strong> of the Lorentz group, and the biquaternion algebra realizes that representation on its module. For a field of half-integer spin the representation is double-valued: a rotation by $2\pi$ is the identity in the vector representation but minus the identity in the spinor representation, and only a rotation by $4\pi$ returns the spinor to itself. It is this two-valuedness, together with the requirement that the local observables be built from bilinears, that forces the anticommutator: the commutator of two spinor fields fails to vanish at spacelike separation, while the anticommutator does.</p>
 <p>Equivalently, the operator algebra generated by the modes is <strong>$\mathbb{Z}/2$-graded</strong> by fermion parity. Define</p>
 <p>$$
 (-1)^F\,a^{\mathrm{fop}}_r(\vec p)\,(-1)^F=-a^{\mathrm{fop}}_r(\vec p),\qquad
@@ -323,7 +323,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion Dirac field is quantized by promoting its spinor-module representative to an operator-valued field. The classical theory has Lagrangian $\mathcal{L}=\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ and conjugate momentum $\pi=i\psi^\dagger$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators,</p>
 <p>$$
-\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=\delta_{ab}\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),$$</p>
+\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=\delta_{ab}\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$$</p>
 <p>with all other equal-time anticommutators vanishing; anticommutation rather than commutation is forced by the boundedness of the energy, by microcausality, and by positivity of the norm, all three being consequences of the spinor character of the field.</p>
 <p>The field expands in the plane-wave solutions established by the parent article,</p>
 <p>$$
@@ -374,27 +374,84 @@ $$</p>
 <td>$\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$</td>
 <td>Anti-Hermitian conjugate (the algebra's real structure; not the mass term)</td>
 </tr>
+<tr>
+<td>$\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\gamma^0$</td>
+<td>Dirac spinor (spinor module) and its adjoint</td>
+</tr>
+<tr>
+<td>$\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$</td>
+<td>Gamma matrices and chirality operator</td>
+</tr>
+<tr>
+<td>$g=\mathrm{diag}(+1,-1,-1,-1)$</td>
+<td>Clifford metric of the $\gamma^\mu$; $g=-\eta$</td>
+</tr>
+<tr>
+<td>$\eta=\mathrm{diag}(-1,+1,+1,+1)$</td>
+<td>Spacetime metric of the $ict$ gradient</td>
+</tr>
+<tr>
+<td>$\mathcal{L}=\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$</td>
+<td>Dirac Lagrangian density</td>
+</tr>
+<tr>
+<td>$\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$</td>
+<td>Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class</td>
+</tr>
+<tr>
+<td>$w^{(r)}(\vec p),v^{(r)}(\vec p)$</td>
+<td>Parent article's positive- and negative-frequency spinors</td>
+</tr>
+<tr>
+<td>$\bar w w=2m$, $w^\dagger w=2E_{\vec p}$</td>
+<td>Covariant and Hermitian normalizations</td>
+</tr>
+<tr>
+<td>$p^\mu=(E_{\vec p},\vec p)$, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$</td>
+<td>Four-momentum and Feynman slash</td>
+</tr>
+<tr>
+<td>$\tilde P\tilde P^{\natural}=-m^2c^2\,e_t$</td>
+<td>Biquaternionic mass-shell condition</td>
+</tr>
+<tr>
+<td>$\psi^{\mathrm{fop}}$, $a^{\mathrm{fop}}_r(\vec p)$, $b^{\mathrm{fop}}_r(\vec p)$</td>
+<td>Quantized field; particle and antiparticle annihilation operators</td>
+</tr>
+<tr>
+<td>$\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$</td>
+<td>Mode anticommutator</td>
+</tr>
+<tr>
+<td>$H$, $:\!H\!:$</td>
+<td>Hamiltonian and its normal-ordered form</td>
+</tr>
+<tr>
+<td>$E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$</td>
+<td>Normal-ordering constant (vacuum energy)</td>
+</tr>
+<tr>
+<td>$(-1)^F$</td>
+<td>Fermion-parity grading</td>
+</tr>
+<tr>
+<td>$\beta=\hbar/(k_BT)$, $\omega_\beta$, $\alpha_t$</td>
+<td>Inverse temperature, thermal state, Heisenberg evolution</td>
+</tr>
+<tr>
+<td>$F_{A B}(t+i\beta)=F_{B A}(-t)$</td>
+<td>KMS condition</td>
+</tr>
+<tr>
+<td>$K=-\log\rho$</td>
+<td>Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$)</td>
+</tr>
+<tr>
+<td>$\omega_\nu=(2n+1)\pi/\beta$</td>
+<td>Fermionic Matsubara frequencies</td>
+</tr>
 </tbody>
 </table></div>
-<p>| $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\gamma^0$ | Dirac spinor (spinor module) and its adjoint |
-| $\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\gamma^\mu$; $g=-\eta$ |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict$ gradient |
-| $\mathcal{L}=\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ | Dirac Lagrangian density |
-| $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
-| $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
-| $\bar w w=2m$, $w^\dagger w=2E_{\vec p}$ | Covariant and Hermitian normalizations |
-| $p^\mu=(E_{\vec p},\vec p)$, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and Feynman slash |
-| $\tilde P\tilde P^{\natural}=-m^2c^2$ | Biquaternionic mass-shell condition |
-| $\psi^{\mathrm{fop}}$, $a^{\mathrm{fop}}_r(\vec p)$, $b^{\mathrm{fop}}_r(\vec p)$ | Quantized field; particle and antiparticle annihilation operators |
-| $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$ | Mode anticommutator |
-| $H$, $:\!H\!:$ | Hamiltonian and its normal-ordered form |
-| $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant (vacuum energy) |
-| $(-1)^F$ | Fermion-parity grading |
-| $\beta=\hbar/(k_BT)$, $\omega_\beta$, $\alpha_t$ | Inverse temperature, thermal state, Heisenberg evolution |
-| $F_{A B}(t+i\beta)=F_{B A}(-t)$ | KMS condition |
-| $K=-\log\rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
-| $\omega_\nu=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>P. A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the original Dirac equation and the prediction of the antiparticle.</li>

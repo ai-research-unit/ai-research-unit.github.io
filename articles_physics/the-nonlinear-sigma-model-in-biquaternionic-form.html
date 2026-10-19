@@ -73,10 +73,10 @@
 <ul>
 <li><strong>Established, and recomputed below.</strong> The group-valued field $\tilde U(\tilde{Q}_1)$ of the framework, taken in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}$ or in the central phase, satisfies the <strong>Maurer–Cartan equation</strong>: the form $j_\mu = \tilde U^{-1}\partial/\partial Q_{1,\mu}\,\tilde U$ is flat,
 $$
-\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_\nu j_\mu + \left[j_\mu,j_\nu\right] = 0 ,
+\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_{1,\nu} j_\mu + \left[j_\mu,j_\nu\right] = 0 ,
 $$
 which was verified numerically to the finite-difference error. The two-derivative Lagrangian $\mathcal{L}_2 = -\frac{f^2}{2}\mathrm{Sc}(\overline{\partial/\partial Q_{1,\mu}\,\tilde U}\partial/\partial Q_{1,\mu}\,\tilde U)$ is invariant under the global <strong>left–right action</strong> $\tilde U\mapsto g_L\tilde U g_R^{-1}$ with $g_{L,R}$ constant unit quaternions — verified exactly — and reduces at quadratic order to the canonical kinetic term $\frac12[(\partial/\partial t\pi^a)^2-(\nabla\pi^a)^2]$ of the Goldstone fields. The target is the group manifold $\mathbb{S}^3$ in the non-abelian case and $\mathbb{S}^1$ in the abelian case.</li>
-<li><strong>Interpretation.</strong> Interpretation the unit real quaternion as the framework's nonlinear sigma-model field, and the biquaternion norm as the invariant metric on the group, is the interpretive step that identifies the framework's target manifold. The Goldstone correspondence — the nonlinear field as the exponential of the broken generators — is the standard coset construction, imported.</li>
+<li><strong>Interpretation.</strong> Interpreting the unit real quaternion as the framework's nonlinear sigma-model field, and the biquaternion norm as the invariant metric on the group, is the interpretive step that identifies the framework's target manifold. The Goldstone correspondence — the nonlinear field as the exponential of the broken generators — is the standard coset construction, imported.</li>
 <li>
 <p><strong>Gap, left visible.</strong> The framework's group-valued field realises a <strong>global</strong> $SU(2)_L\times SU(2)_R$ symmetry of the principal chiral model. It does not supply the axial–vector decomposition of currents tied to chirality, nor the Wess–Zumino–Witten term, nor the anomaly: those belong to the spinor sector and to the general gauge apparatus. The nonlinear sigma model on the framework's target is therefore complete as a geometric construction and incomplete as a chiral one.</p>
 </li>
@@ -197,7 +197,7 @@ $$</p>
 <p>so that $j^R_\mu$ is a singlet of $SU(2)_L$ and transforms in the adjoint of $SU(2)_R$, and conversely for $j^L_\mu$. The two commuting Noether currents are therefore the two adjoint currents of the chiral group $SU(2)_L\times SU(2)_R$, and their diagonal sum is the vector current of the unbroken $SU(2)_V$.</p>
 <p><strong>Flatness.</strong> The Maurer–Cartan form is flat: it satisfies the zero-curvature equation</p>
 <p>$$
-\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_\nu j_\mu + \left[j_\mu, j_\nu\right] = 0 ,
+\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_{1,\nu} j_\mu + \left[j_\mu, j_\nu\right] = 0 ,
 $$</p>
 <p>for either current. The identity is algebraic, not dynamical: it is the statement that the components of $\tilde U^{-1}\partial/\partial Q_{1,\mu}\,\tilde U$ are a pure gauge connection, so the field strength of the connection vanishes, and the dynamics of the group-valued field is that of a connection constrained to be pure gauge. The equation of motion of the principal chiral model is the conservation of the flat current,
 $$
@@ -266,7 +266,7 @@ $$</p>
 $$</p>
 <p>with the invariant metric $ds^2 = \frac12\mathrm{Sc}(\overline{\tilde U^{-1}d\tilde U}\tilde U^{-1}d\tilde U)$ the same object. It is invariant under the global left–right action $\tilde U\mapsto g_L\tilde U g_R^{-1}$, whose diagonal is the unbroken subgroup and whose axial directions are the broken ones, and the Maurer–Cartan form $j^R_\mu = \tilde U^{-1}\partial/\partial Q_{1,\mu}\,\tilde U$ is flat,</p>
 <p>$$
-\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_\nu j_\mu + \left[j_\mu,j_\nu\right] = 0 .
+\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_{1,\nu} j_\mu + \left[j_\mu,j_\nu\right] = 0 .
 $$</p>
 <p>The left–right invariance was verified exactly and the flatness to the finite-difference error (maximum residual $2.8\times10^{-8}$ at step $10^{-4}$, falling quadratically with the step); the abelian current conservation was verified on a superposition of two plane waves with $\omega = |k|$, both the on-shell condition and the divergence vanishing at machine precision.</p>
 <p>The framework's contribution to the construction is the target manifold, the invariant metric as the biquaternion norm, and the interpretation of the group element as a rotor; the coset construction, the derivative expansion, the power counting, the $O(N)$ counting and the two-dimensional asymptotic freedom are standard and imported. What the framework does not supply is the axial current tied to chirality and the Wess–Zumino–Witten term, both of which belong to the spinor and anomaly sectors; the sigma model on the framework's target is geometrically complete and anomalous-complete only as far as the framework's field content reaches.</p>
@@ -332,7 +332,7 @@ $$</p>
 <td>Maurer–Cartan currents</td>
 </tr>
 <tr>
-<td>$\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_\nu j_\mu + [j_\mu,j_\nu] = 0$</td>
+<td>$\partial/\partial Q_{1,\mu} j_\nu - \partial/\partial Q_{1,\nu} j_\mu + [j_\mu,j_\nu] = 0$</td>
 <td>Flatness (zero curvature) of the group-valued field</td>
 </tr>
 <tr>

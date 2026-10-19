@@ -115,9 +115,9 @@ $$</p>
 <p>Two independent copies have an overlap that factorizes:</p>
 <p>$$
 \bigl\langle \psi\otimes\psi \,\big|\, \phi\otimes\phi \bigr\rangle
-= \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle^2 .
+= \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle = \langle\psi|\phi\rangle^2 .
 $$</p>
-<p>Equating the two evaluations gives $\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the <strong>trace pairing of the idempotents</strong>, which is the modulus squared of the inner product,</p>
+<p>Equating the two evaluations gives $\langle\psi|\phi\rangle=\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the <strong>trace pairing of the idempotents</strong>, which is the modulus squared of the inner product,</p>
 <p>$$
 \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
 = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)\Bigr)^{2}
@@ -188,7 +188,7 @@ F = \langle\psi|\tilde{Ϛ}_{\text{out}}|\psi\rangle = \mathrm{Tr}\bigl(\tilde\Pi
 $$</p>
 <p>the same pairing that gives the Born rule. The no-cloning obstruction and its approximate version are therefore both statements about this pairing: perfect cloning would require the pairing of input and clone to attain its maximum $1$ for every input, while the optimal cloner attains $5/6$ uniformly.</p>
 <h2 id="no-cloning-and-no-signalling">No-Cloning and No-Signalling</h2>
-<p>There is a physical argument for the obstruction that complements the algebraic one and explains why the theorem must hold if relativity does. Suppose a universal cloner existed. Given one copy of a state drawn from a set of non-orthogonal alternatives, one could produce many copies and then measure a different observable on each copy; with enough copies the state could be identified with arbitrarily small error. Cloning would thus convert a single copy into a statistical sample, making non-orthogonal states distinguishable. But distinguishability of non-orthogonal states, combined with shared entanglement, gives faster-than-light signalling: Alice, sharing an entangled pair with Bob, could choose which of two non-orthogonal ensembles to prepare on her half, and Bob could then determine her choice from his half alone. The algebraic obstruction of this article is therefore not an accident of the framework; it is a necessary feature of any theory whose joint distributions on spacelike-separated systems are consistent, which is exactly the content of the companion articles on the correlation function and the CHSH inequality. In the framework's terms: the trace pairing of the algebra is a <strong>relational</strong> quantity between two subsystems, and no local operation on one subsystem alone may convert it into information about which state the other holds.</p>
+<p>There is a physical argument for the obstruction that complements the algebraic one and explains why the theorem must hold if relativity does. Suppose a universal cloner existed. Given one copy of a state drawn from a set of non-orthogonal alternatives, one could produce many copies and then measure a different observable on each copy; with enough copies the state could be identified with arbitrarily small error. Cloning would thus convert a single copy into a statistical sample, making non-orthogonal states distinguishable. But distinguishability of non-orthogonal states, combined with shared entanglement, would give faster-than-light signalling: Alice, sharing an entangled pair with Bob, could choose which of two non-orthogonal ensembles to prepare on her half, and Bob could then determine her choice from his half alone. The algebraic obstruction of this article is therefore not an accident of the framework; it is a necessary feature of any theory whose joint distributions on spacelike-separated systems are consistent, which is exactly the content of the companion articles on the correlation function and the CHSH inequality. In the framework's terms: the trace pairing of the algebra is a <strong>relational</strong> quantity between two subsystems, and no local operation on one subsystem alone may convert it into information about which state the other holds.</p>
 <h2 id="related-no-go-theorems">Related No-Go Theorems</h2>
 <p>The obstruction has companions, all of which are statements about the affine structure of the state space and the trace pairing.</p>
 <p><strong>No-deleting.</strong> Given two copies of an unknown state there is no process that deletes one and leaves the other, unless the two are orthogonal. The proof is the mirror of the cloning proof: a deleting unitary would satisfy $\tilde{U}(|\psi\rangle|\psi\rangle)=|\psi\rangle|0\rangle$ for all $|\psi\rangle$, and the overlap of two outputs is $\langle\psi|\phi\rangle$ while the overlap of two inputs is $\langle\psi|\phi\rangle^2$.</p>
@@ -271,7 +271,7 @@ $$</p>
 <td>Cloning requirement</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(P_\psi P_\phi) = (\mathrm{Tr}(P_\psi P_\phi))^2$</td>
+<td>$\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = (\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)))^2$</td>
 <td>Algebraic obstruction</td>
 </tr>
 <tr>

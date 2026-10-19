@@ -78,7 +78,7 @@
 <p>$$
 \tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (ct')\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
 $$</p>
-<p>All four coefficients are <strong>real</strong>. The quadratic form</p>
+<p>Here $t'$ is the Euclidean time coordinate. All four coefficients are <strong>real</strong>. The quadratic form</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2
 $$</p>
@@ -126,7 +126,7 @@ $$</p>
 \mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (ict, x, y, z) \;\longmapsto\; (c\tau, x, y, z),
 $$</p>
 <p>obtained by relabeling the imaginary coefficient $ict$ as a real coefficient $c\tau$. The transformation is real-linear, but it is not an isometry: the quadratic form changes sign in the time–time component. The signature changes from $(3, 1)$ to $(4, 0)$.</p>
-<h2 id="the-trick-as-a-transfer-from-math61-to-math62">The Trick as a Transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$</h2>
+<h2 id="the-trick-as-a-transfer-from-math62-to-math63">The Trick as a Transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$</h2>
 <p>The standard Wick rotation is used to convert oscillatory integrals into convergent ones. The Lorentzian path integral</p>
 <p>$$
 Z = \int \mathcal{D}\phi\; \exp(iS[\phi]/\hbar)
@@ -146,7 +146,7 @@ $$</p>
 $$</p>
 <p>The oscillating phase $\exp(iS)$ becomes the decaying exponential $\exp(-S_E)$, where $S_E$ is the action of the transferred field. This is the standard trick, expressed in the biquaternion framework as a transfer between two subspaces of $\mathbb{B}$.</p>
 <p>So the Wick rotation is a <strong>trick</strong> in the strict sense: it is a change of variable that is useful for some problems and not for others, and it does not correspond to a physical transformation. Its biquaternion content is that the material sector $\mathbb{M}_-$ and the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ are two four-dimensional subspaces of the same algebra, related by relabeling the imaginary first coefficient as a real one.</p>
-<h2 id="why-the-transfer-works-the-properties-of-math82">Why the Transfer Works: the Properties of $\mathbb{H}_{\mathbb{B}}$</h2>
+<h2 id="why-the-transfer-works-the-properties-of-math83">Why the Transfer Works: the Properties of $\mathbb{H}_{\mathbb{B}}$</h2>
 <p>The reason the transfer is useful is that $\mathbb{H}_{\mathbb{B}}$ is better behaved than $\mathbb{M}_-$ in every relevant respect.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -189,13 +189,13 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The quaternion subspace is elliptic, has no zero divisors, is a division algebra, and admits a compact symmetry group. The material sector is hyperbolic, has a light cone of zero divisors, is not a division algebra, and has a non-compact symmetry group. The elliptic character of $\mathbb{H}_{\mathbb{B}}$ is what makes the transferred problem tractable: the elliptic Laplacian has a well-behaved fundamental solution, a Cauchy integral formula with a positive-definite kernel, a maximum principle, and a mean-value property, all of which are properties of elliptic operators and not of hyperbolic ones.</p>
+<p>The quaternion subspace is elliptic, has no zero divisors, is a division algebra, and admits a compact symmetry group. The material sector is hyperbolic, has a light cone of zero divisors, is not a division algebra, and has a non-compact symmetry group. The elliptic character of $\mathbb{H}_{\mathbb{B}}$ is what makes the transferred problem tractable: the elliptic Laplacian has a well-behaved fundamental solution, a Cauchy integral formula, a maximum principle, and a mean-value property, all of which are properties of elliptic operators and not of hyperbolic ones.</p>
 <p>The transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ therefore replaces a problem in a hyperbolic setting (with an indefinite quadratic form) by a problem in an elliptic setting (with a positive-definite quadratic form). The elliptic problem is easier: it has fewer pathologies, it has more structure, and its solutions behave better at infinity.</p>
 <h2 id="why-the-transfer-sometimes-fails">Why the Transfer Sometimes Fails</h2>
 <p>The same transfer also destroys part of the structure of the original problem. The Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering of events, the phase $\exp(iS/\hbar)$ with its specific oscillation — is not preserved by the transfer to $\mathbb{H}_{\mathbb{B}}$. The signs are changed: the quadratic form becomes positive-definite, the hyperbolic operator becomes elliptic, the light cone disappears (there are no zero divisors on $\mathbb{H}_{\mathbb{B}}$).</p>
 <p>When the physics of the problem depends on this Lorentzian structure, the transfer is fatal. The transferred problem is then not equivalent to the original one; it is a different problem, with a different physical content. This is the reason the Wick rotation sometimes fails: not because the calculation is technically difficult, but because the transfer changes the physics.</p>
 <p>The two facts — that the transfer is useful (because $\mathbb{H}_{\mathbb{B}}$ is better behaved) and that the transfer changes the physics (because the Lorentzian structure is lost) — are two sides of the same coin. The subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved precisely because it has given up the Lorentzian structure. So the usefulness of the trick and the possibility of its failure are the same fact, seen from two sides.</p>
-<h2 id="a-prediction-which-applications-transfer-which-resist">A Prediction: Which Applications Transfer, Which Resist</h2>
+<h2 id="a-classification-which-applications-transfer-which-resist">A Classification: Which Applications Transfer, Which Resist</h2>
 <p>The interpretation above suggests a classification of the applications of the Wick rotation by whether the physics of the problem depends on the Lorentzian structure or not.</p>
 <p><strong>Applications that are essentially insensitive to the Lorentzian structure</strong> (and therefore transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$):</p>
 <ul>
@@ -215,7 +215,7 @@ $$</p>
 <li>Any process in which the causal ordering of events matters.</li>
 </ul>
 <p>The split is not exact; some applications lie between the two lists. But the general pattern is as follows: whenever a problem is genuinely about <strong>correlations and equilibrium</strong>, the transfer to $\mathbb{H}_{\mathbb{B}}$ is harmless; whenever a problem is genuinely about <strong>causality and dynamics</strong>, the transfer destroys what the problem was about.</p>
-<p>The split is observed in practice. The successful uses of the Wick rotation (lattice computations of equilibrium quantities, finite-temperature partition functions, instanton calculus) are all in the first list. The persistent difficulties (sign problem, real-time dynamics, quantum gravity) are all in the second list. The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ predicts this pattern.</p>
+<p>The split is observed in practice. The successful uses of the Wick rotation (lattice computations of equilibrium quantities, finite-temperature partition functions, instanton calculus) are all in the first list. The persistent difficulties (sign problem, real-time dynamics, quantum gravity) are all in the second list. The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ accounts for this pattern.</p>
 <h2 id="status-of-the-reading">Status of the Reading</h2>
 <p>The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ is an <strong>interpretation</strong>, not an established result. What is established is the following.</p>
 <ul>
@@ -237,7 +237,7 @@ $$</p>
 <p>In the biquaternion framework, the standard Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $ict$ as a real coefficient $c\tau$ and leaving the spatial coefficients $x, y, z$ unchanged. Both subspaces are four-dimensional real subspaces of the same biquaternion algebra $\mathbb{B}$, and the identification between them is real-linear.</p>
 <p>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than the material sector $\mathbb{M}_-$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic d'Alembertian, and a compact symmetry group. The Wick rotation is useful because the transferred problem on $\mathbb{H}_{\mathbb{B}}$ is easier than the original problem on $\mathbb{M}_-$.</p>
 <p>The same transfer destroys the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase. When the physics of a problem depends on this structure, the transfer is fatal, and the Wick rotation fails. The usefulness of the trick and the possibility of its failure are the same fact.</p>
-<p>The interpretation predicts a split of applications into those that transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.</p>
+<p>The interpretation organizes the applications into a split between those that transfer harmlessly to $\mathbb{H}_{\mathbb{B}}$ (equilibrium, correlation, statistical) and those that resist (real-time dynamics, causal propagation, massless particles, the sign problem, quantum gravity). The split is observed in practice.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

@@ -102,12 +102,12 @@ and the companion article observes that "the physically correct solution is the 
 <p>Second, the defining equation does not determine the kernel. Both the retarded kernel (supported on the future cone) and the advanced kernel (supported on the past cone) satisfy $\Box G = -\delta^{(4)}$, and they differ by a solution of the homogeneous wave equation. What selects the retarded one is a <em>boundary condition</em> — no incoming radiation from the past — not an algebraic property of $\Box$. The exercise states the condition, exhibits the advanced kernel that the equation alone admits, and shows which contour prescription implements which choice.</p>
 <p>Two points of discipline are kept in view. Every displayed formula is applied to a case other than the one that suggested it: the kernel is applied to a generic smooth function of the retarded time and to an off-centre and a static source, not only to the on-origin case from which it is guessed; and the retarded potentials are checked against the Coulomb and Biot–Savart solutions, which are independent of the construction. The parent is treated as a source of assertions until the computation has been done.</p>
 <h2 id="problem-1-the-wave-operator-and-the-defining-equation">Problem 1: The Wave Operator and the Defining Equation</h2>
-<p><strong>Statement.</strong> (a) Show that with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the wave operator $\Delta + \partial^2/\partial Q_t^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde R')\tilde J(\tilde R')\,d^3y\,dt'$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.</p>
+<p><strong>Statement.</strong> (a) Show that with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ the d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the wave operator $\Delta - \frac{1}{c^2}\partial^2/\partial t^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde R')\tilde J(\tilde R')\,d^3y\,dt'$ solves the potential equation $\Box\tilde{A} = -\mu\tilde J$.</p>
 <p><strong>Solution.</strong> (a) Since $\partial/\partial Q_t = \frac{1}{ic}\partial/\partial t = -\frac{i}{c}\partial/\partial t$,
 $$
-\partial^2/\partial Q_t^2 = \left(-\frac{i}{c}\partial/\partial t\right)^2 = + \partial^2/\partial Q_t^2,
+\partial^2/\partial Q_t^2 = \left(-\frac{i}{c}\partial/\partial t\right)^2 = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2},
 \qquad\text{so}\qquad
-\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2 .
+\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial t^2} .
 $$
 The temporal term is negative and the spatial terms positive: $\Box$ is <em>hyperbolic</em>, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t))$, the operator has symbol
 $$
@@ -328,7 +328,7 @@ the Biot–Savart law (the sign is the standard one, with $\vec u_R$ pointing fr
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2$, has the retarded Green's function
+<p>The wave operator of the biquaternionic formulation, $\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$, has the retarded Green's function
 $$
 G_{\mathrm{ret}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right),
 \qquad
@@ -382,7 +382,7 @@ with all sources at the retarded time $t - R/c$; the retarded solution is automa
 <td>Temporal component of the gradient</td>
 </tr>
 <tr>
-<td>$\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2$</td>
+<td>$\Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c^2}\frac{\partial^2}{\partial t^2}$</td>
 <td>Wave operator (d'Alembertian)</td>
 </tr>
 <tr>

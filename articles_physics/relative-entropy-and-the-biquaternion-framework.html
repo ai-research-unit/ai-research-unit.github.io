@@ -78,14 +78,14 @@ and every information-theoretic inequality of consequence — monotonicity, the 
 <p><strong>The quantity is standard.</strong> The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the GNS companion article, the elements $\tilde{Ϛ}\in\mathbb{M}_+$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.</p>
 </li>
 <li>
-<p><strong>The quantity is exactly computable.</strong> Because $\mathbb{B}$ is four-real-dimensional, both the state and its logarithm are elements of the algebra, and the trace is the identically real pairing $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.</p>
+<p><strong>The quantity is exactly computable.</strong> Because $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, both the state and its logarithm are elements of the algebra, and the trace is the scalar pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.</p>
 </li>
 <li>
 <p><strong>The quantity has a framework-specific boundary.</strong> The logarithm of a state is an element of $\mathbb{B}$ exactly when the state is faithful, that is, in the interior of the Bloch ball; on the pure boundary the state is a zero divisor and $\log\tilde{Ϛ}$ does not exist as an algebra element. The relative entropy nevertheless extends continuously to the boundary, and it diverges there only in the one standard way, when the support of the first state is not contained in the support of the second. The zero-divisor cone is the locus on which the algebra's own logarithm fails and the imported logarithm is required.</p>
 </li>
 </ol>
 <p>The article proceeds as follows. Relative entropy is recalled with the properties that make it basic. The states of $\mathbb{B}$ and their logarithms are fixed. The closed form is derived. Positivity, asymmetry and monotonicity are read off in the Bloch geometry. Araki's relative modular operator is identified, because it is the object the modular companions generalize. The field-theoretic setting, in which relative entropy is the right quantity precisely where entanglement entropy is not, is recalled. The article closes with the established/interpretation/open split.</p>
-<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Hermitian conjugation is ${}^{*}$, and the trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_t)=2$. A state is $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\ge0$ and $\mathrm{Tr}(\tilde{Ϛ})=1$; the GNS data are those of <em>The GNS Construction in the Biquaternion Framework</em>.</p>
+<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Hermitian conjugation is ${}^{*}$, and the trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$. A state is $\tilde{Ϛ}\in\mathbb{M}_+$ with $\tilde{Ϛ}\ge0$ and $\mathrm{Tr}(\tilde{Ϛ})=1$; the GNS data are those of <em>The GNS Construction in the Biquaternion Framework</em>.</p>
 <h2 id="relative-entropy-the-standard-quantity">Relative Entropy: The Standard Quantity</h2>
 <h3 id="definition">Definition</h3>
 <p>Let $\rho$ and $\sigma$ be density matrices on a finite-dimensional Hilbert space, with $\rho$ a state and $\sigma$ positive of trace one. The <strong>relative entropy</strong> (Umegaki, 1962) is
@@ -117,7 +117,7 @@ with conditional relative entropies defined recursively.</li>
 <h3 id="why-relative-entropy-rather-than-von-neumann-entropy">Why Relative Entropy Rather Than Von Neumann Entropy</h3>
 <p>The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\dim)$ is the special case in which the second argument is the maximally mixed state; it is not monotone and is defined only for states with $\mathrm{supp}\,\rho$ of finite-dimensional type. Relative entropy is the more basic object, and in quantum field theory it is the only one of the two that is well defined for the local algebras: the local algebras are type III factors, which carry no trace and no density matrix, while the relative entropy of two states on a von Neumann algebra is defined by the Araki formula recalled below. This is the reason the informational interpretation of quantum field theory is written in the language of relative entropy, and it is the reason this article opens the subcategory.</p>
 <h2 id="the-states-of-the-biquaternion-algebra">The States of the Biquaternion Algebra</h2>
-<h3 id="density-matrices-in-math49">Density Matrices in $\mathbb{M}_+$</h3>
+<h3 id="density-matrices-in-math50">Density Matrices in $\mathbb{M}_+$</h3>
 <p>By the GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}\tilde Q_2)$ with $\tilde{Ϛ}\in\mathbb{M}_+$ positive and of trace one. Writing
 $$
 \tilde{Ϛ}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
@@ -300,7 +300,7 @@ verified against the explicit matrix computation on generic superpositions and n
 <td>Informational (Hermitian) and material (anti-Hermitian) subspaces</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
+<td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
 <td>Trace pairing; $\mathrm{Tr}(e_t)=2$</td>
 </tr>
 <tr>

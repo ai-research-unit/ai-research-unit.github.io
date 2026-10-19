@@ -68,7 +68,7 @@
         <h1 id="landau-levels-in-biquaternionic-form"><strong>Landau Levels in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A charged particle in a uniform magnetic field has a discrete energy spectrum — the Landau levels — even though it is free in the field direction. The problem is the simplest exactly solvable system in which the Hamiltonian depends on a gauge potential, and it is the non-relativistic cornerstone of the quantum Hall effect. This article solves it in the biquaternion framework and reads the result algebraically.</p>
-<p>The biquaternion content is a single, decisive fact: the <strong>magnetic field enters the Hamiltonian as a central commutator</strong>. The mechanical momentum $\tilde\pi=p-\frac{ϙ}{c}\vec A$ is Hermitian in $\mathbb{M}_+$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,</p>
+<p>The biquaternion content is a single, decisive fact: the <strong>magnetic field enters the Hamiltonian as a central commutator</strong>. The mechanical momentum $\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$ is Hermitian in $\mathbb{M}_+$ and central, and its two transverse components do not commute. Their commutator is a pure imaginary multiple of $e_t$,</p>
 <p>$$
 [\tilde\pi_x,\tilde\pi_y]=\frac{i\hbar ϙ}{c}B_z\,e_t ,
 $$</p>
@@ -170,7 +170,7 @@ L_z=(\vec r\times p)_z
 $$</p>
 <p>is conserved, and it is central. The transverse problem has two independent oscillator structures: the <strong>cyclotron</strong> ladder, built from $\tilde\pi_x$ and $\tilde\pi_y$, which raises the energy by $\hbar\omega_c$, and the <strong>guiding-centre</strong> ladder, built from the centre-of-orbit coordinates</p>
 <p>$$
-R_k=x_k+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{klm}\,\pi^{\mathrm{fop}}_l\,\vec u_{B,m} ,
+R_k=x_k+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{klm}\,\tilde\pi_l\,\vec u_{B,m} ,
 \qquad
 \omega_c^{\mathrm{s}}=\frac{ϙB}{mc} ,
 $$</p>
@@ -196,7 +196,7 @@ $$</p>
 <p>For orientation, a laboratory field of $1$ T gives, in SI units where $\omega_c=|ϙ|B/m$ and $\ell_B=\sqrt{\hbar/|ϙ|B}$ (no factor of $c$), a magnetic length of $25.66$ nm, a cyclotron frequency of $1.759\times10^{11}$ rad s$^{-1}$, and a cyclotron quantum $\hbar\omega_c=0.116$ meV, with flux quantum $\Phi_0=h/|ϙ|=4.136\times10^{-15}$ Wb. The three scales are all central real scalars; their values are quoted for the electron charge and mass and were recomputed from the defining formulas.</p>
 <h2 id="degeneracy-and-the-flux-quantum">Degeneracy and the Flux Quantum</h2>
 <h3 id="counting-the-states">Counting the states</h3>
-<p>The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing</p>
+<p>The degeneracy of each Landau level is the number of allowed values of the conserved transverse momentum $k$. In a rectangular sample of sides $L_x,L_y$ with periodic boundary conditions in $y$, the momentum is quantised as $k=2\pi j/L_y$, and the centre $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$ must lie inside the sample, $0\le x_0\le L_x$. The number of such $j$ is therefore the integer bracketing</p>
 <p>$$
 N_\phi=\frac{L_xL_y}{2\pi\ell_B^2}=\frac{A\,|ϙ|B}{2\pi\hbar c}=\frac{A\,B}{\Phi_0},
 \qquad
@@ -235,13 +235,13 @@ $$</p>
 <p><strong>3. What happens at the zero divisor cone?</strong> The mechanical momenta are central Hermitian operators, and their eigenvalues are real; the null cone of $\mathbb{M}_-$ is not reached. Whether a limiting field or a critical point brings the algebra closer to the cone is open.</p>
 <p><strong>4. Empirical content.</strong> Nothing in the Landau-level reformulation distinguishes it from scalar Landau-level quantum physics.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2m}\sum_k\tilde\pi_k^2\,e_t$ with $\tilde\pi_k=p_k-\frac{ϙ}{c}A_k$, and the field strength is the central commutator</p>
+<p>The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2m}\sum_k\tilde\pi_k^2$ with $\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$, and the field strength is the central commutator</p>
 <p>$$
 [\tilde\pi_k,\tilde\pi_l]=\frac{i\hbar ϙ}{c}\varepsilon_{klm}B_m\,e_t ,
 \qquad
 [\tilde\pi_x,\tilde\pi_y]=\frac{i\hbar ϙB}{c}\,e_t ,
 $$</p>
-<p>verified numerically to a relative error below $5\times10^{-11}$. In the Landau gauge $\vec A=(0,Bx,0)$ the problem reduces to a harmonic oscillator of frequency $\omega_c=|ϙ|B/mc$ displaced by $x_0=\ell_B^2k$, with magnetic length $\ell_B=\sqrt{\hbar c/|ϙ|B}$, giving the Landau spectrum</p>
+<p>verified numerically to a relative error below $5\times10^{-11}$. In the Landau gauge $\vec A=(0,Bx,0)$ the problem reduces to a harmonic oscillator of frequency $\omega_c=|ϙ|B/mc$ displaced by $x_0=\ell_B^2k\,\mathrm{sgn}(ϙ)$, with magnetic length $\ell_B=\sqrt{\hbar c/|ϙ|B}$, giving the Landau spectrum</p>
 <p>$$
 E_{n,k_z}=\hbar\omega_c\left(n+\tfrac12\right)+\frac{\hbar^2k_z^2}{2m}
 $$</p>
@@ -285,7 +285,7 @@ $$</p>
 <td>State module</td>
 </tr>
 <tr>
-<td>$\tilde\pi_k=p_k-\frac{ϙ}{c}A_k$</td>
+<td>$\tilde\pi_k=(p_k-\frac{ϙ}{c}A_k)e_t$</td>
 <td>Mechanical momentum; central Hermitian</td>
 </tr>
 <tr>

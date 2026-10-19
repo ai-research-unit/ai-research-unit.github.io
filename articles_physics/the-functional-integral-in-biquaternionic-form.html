@@ -78,7 +78,7 @@ and its derivatives generate the correlation functions of the theory. The two in
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
-which is positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$ — the signature split — and for a field $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and a central kinetic operator $K_{\mathrm{kin}}=\Box-m^2$ the quadratic action is
+which is the positive-definite Hilbert–Schmidt form on the algebra; the signature split belongs to the biquaternion norm $\langle\cdot\rangle_{\natural}$, not to this pairing. For a field $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and a central kinetic operator $K_{\mathrm{kin}}=\Box-m^2$ the quadratic action is
 $$
 S[\tilde\Phi] = \int d^4x\; \Big\langle \tilde\Phi, K_{\mathrm{kin}}\tilde\Phi\Big\rangle,
 \qquad
@@ -112,7 +112,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
 $$
-the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ are the real-quaternion subspace and the centre. The isomorphism is $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Sc}$ the real part of the $e_t$ coefficient, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material coordinate is $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the mass shell in momentum space is $\tilde P\tilde P^{\natural}=-m^2$ for $\tilde P=iEe_t+\vec p$. These are the conventions of <em>Conventions in the Biquaternion Universe</em>, <em>The Feynman Propagator in Biquaternionic Form</em>, and <em>The S-Matrix in Biquaternionic Form</em>.</p>
+the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ are the real-quaternion subspace and the centre. The isomorphism is $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ with $\mathrm{Sc}$ the $e_t$ coefficient, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material coordinate is $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the mass shell in momentum space is $\tilde P\tilde P^{\natural}=-m^2$ for $\tilde P=iEe_t+\vec p$. These are the conventions of <em>Conventions in the Biquaternion Universe</em>, <em>The Feynman Propagator in Biquaternionic Form</em>, and <em>The S-Matrix in Biquaternionic Form</em>.</p>
 <h2 id="the-functional-integral-and-the-path-integral">The Functional Integral and the Path Integral</h2>
 <p>The distinction is worth making precisely, because the two share a notation and not a meaning.</p>
 <p>The <strong>path integral</strong> of <em>The Path Integral in Biquaternionic Form</em> has for its integration variable a map $x:t\mapsto x(t)$ from an interval to space, and its measure $\mathcal{D}x(t)$ is a limit of finite-dimensional measures on the $N-1$ intermediate positions. The number of integration variables is finite at every stage, and the result is a kernel $K(x_f,t_f;x_i,t_i)$ — a function of two points.</p>
@@ -124,18 +124,18 @@ the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\
 $$
 \tilde\Phi : \mathbb{R}^{3,1}\longrightarrow \mathbb{B},
 \qquad
-\tilde\Phi(x) = \sum_{\mu\in\{t,x,y,z\}}\Phi_\mu(x)\,e_\mu,
+\tilde\Phi(x) = \Phi_t(x)\,e_t + \Phi_x(x)\,\vec e_x + \Phi_y(x)\,\vec e_y + \Phi_z(x)\,\vec e_z,
 $$
 with complex coefficients $\Phi_\mu(x)$. The field decomposes along the sectors,
 $$
 \tilde\Phi = \tilde\Phi_- + \tilde\Phi_+ ,
 \qquad
-\tilde\Phi_\pm = \tfrac12\big(\tilde\Phi \pm \tilde\Phi^{\flat}\big)\in \mathbb{M}_\pm ,
+\tilde\Phi_\pm = \tfrac12\big(\tilde\Phi \mp \tilde\Phi^{\flat}\big)\in \mathbb{M}_\pm ,
 $$
 where $\flat=-{}^{*}$ is the anti-Hermitian conjugation; this is the field-level use of the sector split that <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em> and <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> establish.</p>
 <p><strong>The action must be a scalar, and the algebra supplies the extraction.</strong> A biquaternion is not a number, so a Lagrangian built from $\tilde\Phi$ is not automatically an action. The framework's scalar extraction is the trace, whose $e_t$ coefficient,
 $$
-\mathrm{Sc}(\tilde{Q}) = \tfrac12 \mathrm{Tr}(\tilde{Q}) = X_0 ,
+\mathrm{Sc}(\tilde{Q}) = \tfrac12 \mathrm{Tr}(\tilde Q) ,
 $$
 is the <em>scalar part</em> of $\tilde{Q}$; it is a complex number in general, and the physical action is its real part, equivalently the real bilinear form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a quadratic theory the natural action is
 $$
@@ -180,14 +180,14 @@ the zero-source integral is $Z_0=(2\pi)^{3/2}(\det K)^{-1/2}=8.9165$ and, for $J
 <p><strong>The cross term vanishes.</strong> Write $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and expand the real form:
 $$
 \Big\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\Big\rangle
-= \mathrm{Re}\,\mathrm{Tr}\Big(K_{\mathrm{kin}}\big(\tilde\Phi_-^{*}\tilde\Phi_- + \tilde\Phi_+^{*}\tilde\Phi_+ + \tilde\Phi_-^{*}\tilde\Phi_+ + \tilde\Phi_+^{*}\tilde\Phi_-\big)\Big),
+= \mathrm{Re}\,\mathrm{Tr}\Big(\tilde\Phi_-^{*}K_{\mathrm{kin}}\tilde\Phi_- + \tilde\Phi_+^{*}K_{\mathrm{kin}}\tilde\Phi_+ + \tilde\Phi_-^{*}K_{\mathrm{kin}}\tilde\Phi_+ + \tilde\Phi_+^{*}K_{\mathrm{kin}}\tilde\Phi_-\Big),
 $$
 using the centrality of $K_{\mathrm{kin}}$. The first two terms are the sector norms; the last two are cross terms. For the cross terms one has the identity
 $$
-\mathrm{Re}\,\mathrm{Tr}\big(\tilde\Phi_-^{*}\tilde\Phi_+\big) = 0 = \mathrm{Re}\,\mathrm{Tr}\big(\tilde\Phi_+^{*}\tilde\Phi_-\big)
+\mathrm{Re}\,\mathrm{Tr}\big(\tilde\Phi_-^{*}K_{\mathrm{kin}}\tilde\Phi_+\big) = 0 = \mathrm{Re}\,\mathrm{Tr}\big(\tilde\Phi_+^{*}K_{\mathrm{kin}}\tilde\Phi_-\big)
 \qquad\text{for all } \tilde\Phi_\pm\in\mathbb{M}_\pm .
 $$</p>
-<p><strong>Proof.</strong> It suffices to check the statement on the sector bases, since the real form is bilinear. For $\tilde\Phi_- = \sum_\mu a_\mu b^-_\mu$ with $b^-_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\tilde\Phi_+ = \sum_\nu c_\nu b^+_\nu$ with $b^+_\nu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, each elementary term is $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} b^+_\nu)$. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
+<p><strong>Proof.</strong> It suffices to check the statement on the sector bases, since the real form is bilinear. For $\tilde\Phi_- = \sum_\mu a_\mu b^-_\mu$ with $b^-_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\tilde\Phi_+ = \sum_\nu c_\nu b^+_\nu$ with $b^+_\nu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, each elementary term is $\mathrm{Re}\,\mathrm{Tr}(b_\mu^{-}{}^{*} K_{\mathrm{kin}} b^+_\nu)$. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
 <p><strong>Consequence: factorisation.</strong> With the source split as $\tilde J=\tilde J_-+\tilde J_+$, the free functional integral is
 $$
 Z_0[\tilde J] = \int\mathcal{D}\tilde\Phi_-\,\exp(-\frac12\langle\tilde\Phi_-,K_{\mathrm{kin}}\tilde\Phi_-\rangle+\langle\tilde J_-,\tilde\Phi_-\rangle)
@@ -198,11 +198,11 @@ $$
 Each factor is a Gaussian integral on one sector's four-real-dimensional space, of the form evaluated above. The free quadratic form is therefore <strong>block diagonal</strong>, and the free integral factorizes into a Gaussian on each sector; the sectors are coupled only through an interaction $S_{\mathrm{int}}$ that is not sector-diagonal. A central kinetic operator cannot couple them; a chirality-off-diagonal Dirac mass can, because it is a right multiplication and so is not central.</p>
 <p><strong>A check of the determinant structure.</strong> For a block-diagonal $K_{\mathrm{kin}}=\mathrm{diag}(K_-,K_+)$ the determinant factorizes,
 $$
-\detK_{\mathrm{kin}} = \det K_-\,\det K_+ ,
+\det K_{\mathrm{kin}} = \det K_-\,\det K_+ ,
 $$
 so the Gaussian prefactor of $Z_0$ is the product of the sector prefactors and the factorisation is consistent at the level of the determinant. This was checked on an explicit block-diagonal Hermitian matrix, and it is the algebraic reason the free quadratic form splits into two block-diagonal parts.</p>
 <h2 id="the-free-scalar-field">The Free Scalar Field</h2>
-<p>The cleanest explicit case is the free scalar field, which the brief's scalar example supplies.</p>
+<p>The cleanest explicit case is the free scalar field, which the scalar example below supplies.</p>
 <p><strong>The Euclidean action.</strong> After the Wick rotation of the next section, the free action of a real scalar of mass $m$ is
 $$
 S_E[\phi] = \int d^4x_E\;\tfrac12\Big(\partial_\mu\phi\,\partial_\mu\phi + m^2\phi^2\Big)
@@ -211,7 +211,7 @@ $$
 with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\partial^2/\partial Q_t^2+\Delta$; the wave biquaternion $\tilde P=iEe_t+\vec p$ has biquaternion norm $\tilde P\tilde P^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P\tilde P^{\natural}+m^2$.</p>
 <p><strong>The Gaussian result.</strong> The free generating functional is
 $$
-Z_0[J] = \exp\left(\frac12\int\frac{d^4k_E}{(2\pi)^4}\,\frac{\tilde J(-k)\tilde J(k)}{k_E^2+m^2}\right),
+Z_0[J] = \exp\left(\frac12\int\frac{d^4k_E}{(2\pi)^4}\,\frac{J(-k)J(k)}{k_E^2+m^2}\right),
 $$
 and the two-point function is the propagator
 $$
@@ -220,7 +220,7 @@ $$
 D_F(x-y) \quad\text{(Lorentzian)},
 $$
 the Feynman propagator of <em>The Feynman Propagator in Biquaternionic Form</em>, whose algebra content is the wave biquaternion and the $ict$ axis of the $i\epsilon$ deformation. The functional integral thus reproduces the propagator from the quadratic action, and the algebra's role is confined to naming the kinetic operator's central scalar and the axis of the continuation.</p>
-<p><strong>The determinant.</strong> The prefactor of $Z_0$ is $(\detK_{\mathrm{kin}})^{-1/2}$ with the determinant taken on the module, and since the module has two complex dimensions the free determinant is $\prod_k(\tilde P\tilde P^{\natural}+m^2)^2$ and the prefactor is the product over modes of $(\tilde P\tilde P^{\natural}+m^2)^{-1}$ — the module's dimension and the $-\tfrac12$ power together giving one inverse power per mode, the convention that <em>The Functional Determinant in Biquaternionic Form</em> fixes and that its one-loop free energy $\Gamma_1=\sum_{\text{modes}}\log(\tilde P\tilde P^{\natural}+m^2)$ records. This determinant is divergent and requires regularization; its computation, its regularization dependence, and its relation to the trace anomaly are the subjects of <em>The Functional Determinant in Biquaternionic Form</em> and <em>The Trace Anomaly in Biquaternionic Form</em>. This article records the reduction and does not compute the determinant.</p>
+<p><strong>The determinant.</strong> The prefactor of $Z_0$ is $(\det K_{\mathrm{kin}})^{-1/2}$ with the determinant taken on the module, and since the module has two complex dimensions the free determinant is $\prod_k(\tilde P\tilde P^{\natural}+m^2)^2$ and the prefactor is the product over modes of $(\tilde P\tilde P^{\natural}+m^2)^{-1}$ — the module's dimension and the $-\tfrac12$ power together giving one inverse power per mode, the convention that <em>The Functional Determinant in Biquaternionic Form</em> fixes and that its one-loop free energy $\Gamma_1=\sum_{\text{modes}}\log(\tilde P\tilde P^{\natural}+m^2)$ records. This determinant is divergent and requires regularization; its computation, its regularization dependence, and its relation to the trace anomaly are the subjects of <em>The Functional Determinant in Biquaternionic Form</em> and <em>The Trace Anomaly in Biquaternionic Form</em>. This article records the reduction and does not compute the determinant.</p>
 <p><strong>A remark on the biquaternion field.</strong> A genuinely biquaternion-valued scalar has four complex coefficients, equivalently eight real components, and the sector split assigns four real components to each sector; the factorisation above is the statement that the free quadratic form is block diagonal with respect to that split. The two sectors are <strong>not</strong> independent fields in the sense of being separately adjustable: they are related by multiplication by the central $i$, $\mathbb{M}_-=i\mathbb{M}_+$, so the sector split is a decomposition of one field into its graded parts and not a doubling of the field content. The counting is a component count fixed by the algebra, and it is <em>not</em> a claim that the biquaternion scalar is a multiplicity of complex scalars; the sector interpretation is the one of <em>The Partition Function in Biquaternionic Form</em> and <em>The Harmonic Oscillator in Biquaternionic Form</em>.</p>
 <h2 id="the-euclidean-rotation">The Euclidean Rotation</h2>
 <p>The convergence of the Gaussian functional integral is best seen after the Wick rotation, and the framework's account of the rotation is the reason the Euclidean integral is well defined.</p>
@@ -248,14 +248,14 @@ that is, when taking the causal complement twice returns the region. A region is
 <p><strong>The functional integral on a causally complete region.</strong> Let the field $\tilde\Phi$ be restricted to a causally complete region $O$, with the field values on $\partial O$ held fixed as boundary data. Because $O''=O$, the boundary data propagate to a definite interior configuration, and the functional integral on $O$ is an <strong>amplitude functional of the boundary values</strong>, the object named in the first section of this article. Splitting $O$ into two causally complete subregions sharing a common boundary, and multiplying their amplitude functionals and integrating over the shared boundary values, reproduces the amplitude of $O$: this is the composition law of the generalized transformation function, and it is at once the statement that the boundary data determine the interior and the quantum analogue of the action principle.</p>
 <p><strong>Why the restriction is made.</strong> Restricting everything to a finite causally complete region is what gives the functional integral its mathematically precise and physically rigorous form, for three reasons. The number of degrees of freedom in a bounded region is controlled, so the regulator has a natural home; the amplitude depends only on data on a compact boundary; and the assignment of observables to regions — the net of local algebras of algebraic quantum field theory — can be stated, with <strong>isotony</strong> (a smaller region's algebra sits inside a larger one's) and <strong>Einstein causality</strong> (observables in spacelike-separated regions commute). The unbounded integral over all spacetime is the limit in which the region is enlarged to the whole manifold, and it is the limit that requires the regulator and the renormalisation of the next section.</p>
 <p><strong>The interpretation in the algebra.</strong> The causal structure is the framework's own, because the cones are the null cones of the material-sector metric: the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the conventions fixes which events are spacelike- and timelike-separated, exactly as <em>Causality and the Light Cone as an Information Barrier in Biquaternionic Form</em> and the mathematical article <em>Pseudo-Riemannian and Lorentzian Geometry</em> set out, with the causal order, its partial-order properties, and the causal complement. The algebra therefore supplies the <strong>metric that defines the cones</strong> and, with it, the causal relation on which $O''=O$ is built; and it supplies <strong>microcausality</strong>, the statement that the field commutator vanishes outside the light cone, which the canonical-quantization and spin–statistics articles record and which is the operator form of Einstein causality. The framework's one fully worked causally complete region is the <strong>wedge</strong>, whose modular Hamiltonian $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ and Bisognano–Wichmann identification the modular articles and the quantum-gravity agenda exhibit; the double light cone is the bounded instance and is not worked out.</p>
-<p>What the algebra does <strong>not</strong> supply is the rest: the construction of the region in the continuum, the restriction of the measure to it, the regulator, and the net of local algebras as an operator-algebraic structure. The perturbation is a restriction on the <strong>region</strong> and not on the algebra — the same statement the boundary-value functional made — and it leaves the algebra's standing gaps, the measure and the space of configurations, exactly where they were. In this the localisation is the field-theoretic case of the path-integral article's time slicing: the region defines where the integral is taken, and the algebra's contribution is the metric of the cones and the microcausality of the observables, not the integral itself.</p>
+<p>What the algebra does <strong>not</strong> supply is the rest: the construction of the region in the continuum, the restriction of the measure to it, the regulator, and the net of local algebras as an operator-algebraic structure. The restriction is on the <strong>region</strong> and not on the algebra — the same statement the boundary-value functional made — and it leaves the algebra's standing gaps, the measure and the space of configurations, exactly where they were. In this the localisation is the field-theoretic case of the path-integral article's time slicing: the region defines where the integral is taken, and the algebra's contribution is the metric of the cones and the microcausality of the observables, not the integral itself.</p>
 <h2 id="the-measure-and-the-gap">The Measure and the Gap</h2>
 <p>The functional integral requires an integration measure, and the measure is the algebra's largest gap.</p>
 <p><strong>What the measure is.</strong> In the regulated theory the measure is a product over lattice sites or over modes,
 $$
-\mathcal{D}\tilde\Phi = \prod_{x}\prod_{\mu=0}^{3}d\Phi_\mu(x)
+\mathcal{D}\tilde\Phi = \prod_{x}\prod_{\mu\in\{t,x,y,z\}}d\Phi_\mu(x)
 \quad\text{or}\quad
-\mathcal{D}\tilde\Phi = \prod_{k}\prod_{\mu=0}^{3}d\Phi_\mu(k),
+\mathcal{D}\tilde\Phi = \prod_{k}\prod_{\mu\in\{t,x,y,z\}}d\Phi_\mu(k),
 $$
 a product of Lebesgue measures on the coefficients, one per biquaternion component. The algebra fixes the <em>number</em> of components — four complex coefficients, two per sector — and the fact that the measure is the volume form of the module; it does nothing else.</p>
 <p><strong>The gap.</strong> The algebra does not supply: the space of field configurations (infinite-dimensional, and outside the finite-dimensional algebra); the action functional beyond its quadratic part; the choice of regulator; and the definition of the continuum measure. These are the analytic data of the theory, and they are transcribed from the standard treatment. The path-integral article's gap for the space of paths is the same gap in one fewer dimension. What the algebra <em>does</em> supply is the scalar extraction that turns a biquaternion Lagrangian into an action, the two-sector structure that factorizes the free theory, the central character of the kinetic operator, and the identification of the Euclidean rotation with a sector relabeling.</p>
@@ -268,19 +268,19 @@ with the spinor structure carried by the module and the mass term linear and chi
 <p><strong>Established (algebra).</strong>
 - The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde\Phi^{\natural}K_{\mathrm{kin}}\tilde\Phi)$; the trace pairing is the scalar extraction.
 - For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde\Phi^{\natural}_-\tilde\Phi_+)$ vanish identically over the sector bases, so the free quadratic form is block diagonal and the free functional integral factorizes, $Z_0=Z_-\cdot Z_+$.
-- The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}\exp(\frac12\langle J,K^{-1}J\rangle)$ on the module; checked in finite dimension with explicit Hermitian matrices.
+- The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}\exp(\frac12\langle J,K^{-1}J\rangle)$ on the module, with $N$ the real dimension of the module; checked in finite dimension with explicit Hermitian matrices.
 - The Wick rotation is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ and turns $\exp(iS)$ into $\exp(-S_E)$.
 - The $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ fixes the null cones and the causal relation on which the causally complete regions are built, and microcausality — the vanishing of the field commutator outside the light cone — is the operator form of Einstein causality; the wedge with $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ is the one fully worked causally complete region.</p>
 <p><strong>Standard, and transcribed.</strong>
 - The definition of the functional integral, the measure, the lattice or mode regularization, the perturbative expansion, the Grassmann integral and its determinant, and the free scalar propagator.
 - The localisation to a causally complete region, the condition $O''=O$, the double light cone and the wedge as instances, and the net of local algebras with isotony and Einstein causality.</p>
 <p><strong>Interpretation.</strong>
-- Reading the sector factorization as a framework-specific statement, and the Wick rotation as a relabeling within the algebra rather than a rotation in spacetime, follows the path-integral and Wick-rotation articles; the mathematical contents are checkable and were checked.</p>
+- Reading the sector factorization as a framework-specific statement, and the Wick rotation as a relabeling within the algebra rather than a rotation in spacetime, follow the path-integral and Wick-rotation articles; the mathematical contents are checkable and were checked.</p>
 <p><strong>Open.</strong>
 - Whether the sector factorization has consequences for anomaly or theta-vacuum structure — where a non-central operator is essential — is taken up in <em>The Trace Anomaly in Biquaternionic Form</em> and <em>The Theta Vacuum in Biquaternionic Form</em>.
 - The determinant is not computed here; its computation and regularization are the subject of <em>The Functional Determinant in Biquaternionic Form</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and a central kinetic operator $K_{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$,
+<p>The functional integral over a biquaternion field reduces, in its free part, to a block-diagonal quadratic form and hence to a Gaussian integral on each sector's four-real-dimensional space, and its algebra content is the scalar extraction that makes the exponent a number. For a field $\tilde\Phi=\tilde\Phi_-+\tilde\Phi_+$ and a central kinetic operator $K_{\mathrm{kin}}=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$,
 $$
 S[\tilde\Phi]=\int d^4x\;\Big\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\Big\rangle,
 \qquad
@@ -324,7 +324,7 @@ The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.916
 <td>Biquaternion field and its sector parts</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(\tilde{Q})=\tfrac12\mathrm{Tr}(\tilde{Q})=X_0$ (complex scalar part)</td>
+<td>$\mathrm{Sc}(\tilde{Q})=\tfrac12\mathrm{Tr}(\tilde{Q})$ (complex scalar part)</td>
 <td>Scalar extraction; the trace converts a biquaternion into a number</td>
 </tr>
 <tr>
@@ -352,7 +352,7 @@ The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.916
 <td>Functional integral with source</td>
 </tr>
 <tr>
-<td>$Z_0=(\detK_{\mathrm{kin}})^{-1/2}\exp(\frac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle)$</td>
+<td>$Z_0=(\det K_{\mathrm{kin}})^{-1/2}\exp(\frac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle)$</td>
 <td>Gaussian result; $\prod_k(\tilde P\tilde P^{\natural}+m^2)^{-1}$ per mode for the free central operator</td>
 </tr>
 <tr>

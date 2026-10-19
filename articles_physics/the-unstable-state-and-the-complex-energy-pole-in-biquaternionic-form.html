@@ -67,7 +67,7 @@
       <div class="article-body">
         <h1 id="the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form"><strong>The Unstable State and the Complex Energy Pole in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>An <strong>unstable state</strong> is a state that is not an eigenstate of the Hamiltonian that governs it. A system prepared in it does not remain in it, and the probability of finding the system still in the initial state falls away from one. That probability is the <strong>survival probability</strong>, and the rate of its fall is the <strong>decay rate</strong>. The unstable state is one of the few objects in quantum theory whose natural description is not a real number: it is described by a <strong>complex energy</strong> whose imaginary part is half the width of the state, the width being the inverse lifetime.</p>
+<p>An <strong>unstable state</strong> is a state that is not an eigenstate of the Hamiltonian that governs it. A system prepared in it does not remain in it, and the probability of finding the system still in the initial state falls away from one. That probability is the <strong>survival probability</strong>, and the rate of its fall is the <strong>decay rate</strong>. The unstable state is one of the few objects in quantum theory whose natural description is not a real number: it is described by a <strong>complex energy</strong> whose imaginary part is half the width of the state.</p>
 <p>This article treats the unstable state in the biquaternion framework of this series. It answers two questions.</p>
 <ul>
 <li><strong>How does a lifetime arise?</strong> A state decays when the Hamiltonian couples it to a continuum of other states. The coupling displaces the pole of the resolvent off the real energy axis. The displacement is the <strong>self-energy</strong>; its real part is the <strong>level shift</strong> and its imaginary part is half the <strong>width</strong>, which fixes the lifetime by $\tau=\hbar/\Gamma$. The displaced pole lives on the second sheet of the energy plane, reached by continuing the self-energy across the cut that the continuum opens.</li>
@@ -128,7 +128,7 @@ G(z)^{\dagger} = G(\bar z),
 $$</p>
 <p>which is the matrix form of the reflective symmetry of the resolvent in the real axis. The conventions for the four prescriptions that select the physical branch of $G$ at the real axis — retarded, advanced, Feynman and anti-Feynman — are those of <em>The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</em> and <em>The Feynman Propagator in Biquaternionic Form</em>; this article uses the retarded branch, that is, the boundary value from above, $z=E+i0^{+}$.</p>
 <h3 id="the-self-energy">The self-energy</h3>
-<p>Split the Hamiltonian into a solvable part and a coupling, $\tilde H=\tilde H_0+\tilde V$, and let $\tilde\Pi_0$ project on the state of interest with $\tilde H_0\tilde\Pi_0=E_0\tilde\Pi_0$. Write $Q=e_t-\tilde\Pi_0$ for the complementary projection and $Q\tilde HQ$ for the coupling restricted to it. The scalar Green's function of the distinguished state is the <strong>reduced resolvent</strong></p>
+<p>Split the Hamiltonian into a solvable part and a coupling, $\tilde H=\tilde H_0+\tilde V$, and let $\tilde\Pi_0$ project on the state of interest with $\tilde H_0\tilde\Pi_0=E_0\tilde\Pi_0$. Write $\tilde\Pi_\perp=e_t-\tilde\Pi_0$ for the complementary projection and $\tilde\Pi_\perp\tilde H\tilde\Pi_\perp$ for the Hamiltonian restricted to it. The scalar Green's function of the distinguished state is the <strong>reduced resolvent</strong></p>
 <p>$$
 G_{00}(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\,\tilde\Pi_0\bigr),
 $$</p>
@@ -137,9 +137,9 @@ $$</p>
 G_{00}(z) = \frac{1}{z-E_0-\Sigma(z)},
 \qquad
 \Sigma(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde V\tilde\Pi_0\bigr)
-+ \mathrm{Tr}\Bigl(\tilde\Pi_0\tilde V\,Q\frac{1}{z-Q\tilde HQ}Q\,\tilde V\tilde\Pi_0\Bigr).
++ \mathrm{Tr}\Bigl(\tilde\Pi_0\tilde V\,\tilde\Pi_\perp\frac{1}{z-\tilde\Pi_\perp\tilde H\tilde\Pi_\perp}\tilde\Pi_\perp\,\tilde V\tilde\Pi_0\Bigr).
 $$</p>
-<p>The quantity $\Sigma(z)$ is the <strong>self-energy</strong>. It is a scalar function of the central variable $z$ — a complex number of the centre — and it collects the entire effect of the coupling on the distinguished state. To second order in $\tilde V$, with $\lvert 0\rangle$ the state and $\lvert n\rangle$ a complete set spanning $Q$, it is</p>
+<p>The quantity $\Sigma(z)$ is the <strong>self-energy</strong>. It is a scalar function of the central variable $z$ — a complex number of the centre — and it collects the entire effect of the coupling on the distinguished state. To second order in $\tilde V$, with $\lvert 0\rangle$ the state and $\lvert n\rangle$ a complete set spanning the complement, it is</p>
 <p>$$
 \Sigma(z) = \langle 0\lvert\tilde V\rvert 0\rangle
 + \sum_{n\neq0}\frac{\lvert\langle 0\lvert\tilde V\rvert n\rangle\rvert^{2}}{z-E_n}

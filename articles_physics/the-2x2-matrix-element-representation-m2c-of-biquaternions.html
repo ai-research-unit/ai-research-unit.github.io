@@ -155,12 +155,12 @@ $$</p>
 <p>where $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ is the trace of the product of the matrices, $\mathrm{Tr}(\mathsf{M}_2(\tilde{Q}_1)\mathsf{M}_2(\tilde{Q}_2))$. This follows from $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_t$, the $\mathbb{C}$-linearity of $\mathsf{M}_2$ and the multiplicativity of the trace; the pairs drawn from $\mathbb{M}_+$ are the case in which the pairing is real. It is the form in which the operator articles use the identity, and in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde\Pi\tilde{Ϛ})$.</p>
 <p>**The determinant is the biquaternion norm. Expanding,</p>
 <p>$$
-\det(\tilde{Q}) = (Q_t - iQ_3)(Q_t + iQ_3) - (-iQ_1 - Q_y)(-iQ_1 + Q_y)
-= (Q_t^2 + Q_z^2) - \big[(-iQ_1)^2 - Q_y^2\big] = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \langle\tilde{Q}\rangle_{\natural}.
+\det(\tilde{Q}) = (Q_t - iQ_z)(Q_t + iQ_z) - (-iQ_x - Q_y)(-iQ_x + Q_y)
+= (Q_t^2 + Q_z^2) - \big[(-iQ_x)^2 - Q_y^2\big] = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = \langle\tilde{Q}\rangle_{\natural}.
 $$</p>
 <p>This is the central fact of the representation. The biquaternion norm, defined algebraically as $\tilde{Q}\tilde{Q}^{\natural}$, is the determinant of the corresponding matrix — not merely similar to it, but equal to it. Three consequences follow at once.</p>
 <p>**Invertibility. A biquaternion is invertible exactly when its biquaternion norm is nonzero, because a matrix is invertible exactly when its determinant is. The algebraic inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ is the matrix inverse, since for a $2\times 2$ matrix the adjugate is $\det(M)\,M^{-1}$.</p>
-<p>**Multiplicativity. $\langle\tilde{Q}\tilde Q_3\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\langle\tilde Q_3\rangle_{\natural}$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.</p>
+<p>**Multiplicativity. $\langle\tilde{Q}_1\tilde Q_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$ holds because the determinant is multiplicative. The algebraic proof of this identity is a computation in eight real components; in the matrix form it is one line, and this is the clearest illustration of what the representation buys.</p>
 <p>**Zero divisors. The zero divisors of $\mathbb{B}$ are the singular matrices. The null cone $\langle\tilde{Q}\rangle_{\natural} = 0$ is the determinant-zero locus. Since $\mathbb{B}$ is not a division algebra, this locus is nonempty, and its elements are exactly the matrices of rank at most one.</p>
 <h2 id="the-rank-one-elements-and-the-outer-product">The Rank-One Elements and the Outer Product</h2>
 <p>The determinant is the norm, so the zero divisors are the nonzero singular matrices; the matrix form also says what such a matrix is.</p>
@@ -208,14 +208,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>$\tilde{Q}^* = \tilde{Q}$</td>
+<td>$\bar{\tilde Q} = \tilde{Q}$</td>
 <td>$\mathsf{M}_2(e_t),\ \mathsf{M}_2(\vec e_x),\ \mathsf{M}_2(\vec e_y),\ \mathsf{M}_2(\vec e_z)$</td>
 <td>$Q_\mu = q_\mu$</td>
 <td>$\begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix}$</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$</td>
-<td>$\tilde{Q}^* = -\tilde{Q}$</td>
+<td>$\bar{\tilde Q} = -\tilde{Q}$</td>
 <td>$i\mathsf{M}_2(e_t),\ i\mathsf{M}_2(\vec e_x),\ i\mathsf{M}_2(\vec e_y),\ i\mathsf{M}_2(\vec e_z)$</td>
 <td>$Q_\mu = iq'_\mu$</td>
 <td>$i$ times the quaternion matrices</td>
@@ -257,11 +257,11 @@ $$</p>
 <h3 id="the-vector-subspace-math185">The Vector Subspace $\mathrm{Vect}(\mathbb{B})$</h3>
 <p>The complement of the centre subspace: the elements with no scalar part, those with $\mathrm{Sc}(\tilde{Q}) = 0$, carried onto the <strong>traceless</strong> matrices,</p>
 <p>$$
-\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} -iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & iQ_3 \end{pmatrix}
+\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} -iQ_z & -iQ_x - Q_y \\ -iQ_x + Q_y & iQ_z \end{pmatrix}
 = \begin{pmatrix} -i(q_z + iq'_z) & -i(q_x + iq'_x) - (q_y + iq'_y) \\ -i(q_x + iq'_x) + (q_y + iq'_y) & i(q_z + iq'_z) \end{pmatrix}
 = \begin{pmatrix} -i(z + iz') & -i(x + ix') - (y + iy') \\ -i(x + ix') + (y + iy') & i(z + iz') \end{pmatrix}, \qquad \mathrm{Tr}\,\mathsf{M}_2 = 0 .
 $$</p>
-<p>Its image is exactly $\mathrm{SL}(2,\mathbb{C})$, the traceless complex matrices, so the third split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the relations article reads here as the trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\mathsf{M}_2(e_t) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part. It is the <strong>anti-fixed space</strong> of quaternion conjugation, the elements with $\tilde{Q}^{\natural} = -\tilde{Q}$, whose fixed space is the centre subspace above; equivalently it is the kernel of the scalar part. It is the only one of the remarkable subspaces that is six-dimensional, being three-dimensional over $\mathbb{C}$. Under the commutator it is closed, $[\mathrm{SL}_2,\mathrm{SL}_2] \subseteq \mathrm{SL}_2$, and indeed it is the derived subspace $[\mathbb{B},\mathbb{B}]$; under multiplication it is not — the product of two traceless matrices need not be traceless, since $\mathrm{Tr}(M^2) = -2\det M$. Its six real parameters are the two spatial blocks together,</p>
+<p>Its image is exactly the traceless complex matrices, the Lie algebra $\mathfrak{sl}(2,\mathbb{C})$, so the third split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the relations article reads here as the trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\mathsf{M}_2(e_t) \oplus \mathfrak{sl}(2,\mathbb{C})$: scalar part against traceless part. It is the <strong>anti-fixed space</strong> of quaternion conjugation, the elements with $\tilde{Q}^{\natural} = -\tilde{Q}$, whose fixed space is the centre subspace above; equivalently it is the kernel of the scalar part. It is the only one of the remarkable subspaces that is six-dimensional, being three-dimensional over $\mathbb{C}$. Under the commutator it is closed, $[\mathfrak{sl}_2,\mathfrak{sl}_2] \subseteq \mathfrak{sl}_2$, and indeed it is the derived subspace $[\mathbb{B},\mathbb{B}]$; under multiplication it is not — the product of two traceless matrices need not be traceless, since $\mathrm{Tr}(M^2) = -2\det M$. Its six real parameters are the two spatial blocks together,</p>
 <p>$$
 \tilde{Q} = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z + q'_x(i\vec e_x) + q'_y(i\vec e_y) + q'_z(i\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) ,
 $$</p>
@@ -273,28 +273,28 @@ $$</p>
 $$</p>
 <p>with no factor of $i$ anywhere — this is the image of the algebra's own basis, and the one subspace whose matrix basis is the assignment $\mathsf{M}_2(e_\mu)$ read off just as it stands. Writing its general element as $q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, the same three-step chain applies, with the complex coefficients and the real parameters the same four numbers,</p>
 <p>$$
-\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix}
-= \begin{pmatrix} q_t - iq_3 & -iq_1 - q_y \\ -iq_1 + q_y & q_t + iq_3 \end{pmatrix}
+\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_z & -iQ_x - Q_y \\ -iQ_x + Q_y & Q_t + iQ_z \end{pmatrix}
+= \begin{pmatrix} q_t - iq_z & -iq_x - q_y \\ -iq_x + q_y & q_t + iq_z \end{pmatrix}
 = \begin{pmatrix} ct' - iz & -ix - y \\ -ix + y & ct' + iz \end{pmatrix},
 $$</p>
 <p>with $q_t = ct'$ and $q_k = x_k$. Naming the two complex entries,</p>
 <p>$$
-\mathsf{M}_2(q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z) = \begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix}, \qquad z = q_t - iq_3, \quad w = -iq_1 - q_y ,
+\mathsf{M}_2(q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z) = \begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix}, \qquad z = q_t - iq_z, \quad w = -iq_x - q_y ,
 $$</p>
-<p>where the entry $z$ is this one complex number, the combination $q_t - iq_3$ of the two physical parameters on the diagonal. The letter is doing double duty: in the chain above, the $z$ inside the combination is the spatial coordinate $q_z = z$ of the four-vector article, while in this display the whole entry is named $z$, and the combination $q_t - iq_3$ is what says which is meant.</p>
+<p>where the entry $z$ is this one complex number, the combination $q_t - iq_z$ of the two physical parameters on the diagonal. The letter is doing double duty: the spatial coordinate is $z$, while the whole diagonal entry is also named $z$; the subscript in $q_z$ is what says which is meant.</p>
 <p>That is the matrix statement of $M = \epsilon\overline{M}\epsilon^{-1}$. The trace is $2q_t$, twice the scalar part, and the determinant is</p>
 <p>$$
 \det = |z|^2 + |w|^2 = q_t^2 + q_x^2 + q_y^2 + q_z^2 ,
 $$</p>
 <p>a sum of squares, which vanishes only at the zero element. This is a four-<strong>real</strong>-dimensional set, not the four-dimensional complex space of all matrices with $z, w \in \mathbb{C}$, and on it the determinant is <strong>definite</strong> — which is the matrix reason $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not. Removing the complex coefficients from the algebra makes the biquaternion norm positive definite, and that is all that separates the two cases.</p>
-<h3 id="the-antiquaternion-subspace-math226">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-antiquaternion-subspace-math225">The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$</h3>
 <p>The anti-fixed space of complex conjugation: the elements with all four $q'_\mu$ real, carried from the basis $\{ie_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ onto $i$ times the four basis images,</p>
 <p>$$
 \big\{\, i\mathsf{M}_2(e_t),\ i\mathsf{M}_2(\vec e_x),\ i\mathsf{M}_2(\vec e_y),\ i\mathsf{M}_2(\vec e_z) \,\big\}.
 $$</p>
 <p>Since $\mathsf{M}_2$ is $\mathbb{C}$-linear and $i\mathbb{H}_{\mathbb{B}} = i\,\mathbb{H}_{\mathbb{B}}$, its image is simply $i$ times the image of the quaternion subspace, $\mathsf{M}_2(iq'_\mu e_\mu) = i\,\mathsf{M}_2(q'_\mu e_\mu)$, and the chain is the quaternion one under the factor $i$,</p>
 <p>$$
-\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix}
+\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_z & -iQ_x - Q_y \\ -iQ_x + Q_y & Q_t + iQ_z \end{pmatrix}
 = i\begin{pmatrix} q'_t - iq'_z & -iq'_x - q'_y \\ -iq'_x + q'_y & q'_t + iq'_z \end{pmatrix}
 = i\begin{pmatrix} ct - iz' & -ix' - y' \\ -ix' + y' & ct + iz' \end{pmatrix},
 $$</p>
@@ -304,7 +304,7 @@ $$</p>
 $$</p>
 <p>with the same double duty of the letter $z'$, resolved there too by the combination $q'_t - iq'_z$.</p>
 <p>The determinant changes sign with the factor, $\det = -((q'_t)^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2)$, <strong>negative definite</strong> — the exact mirror of the definite form on $\mathbb{H}_{\mathbb{B}}$. Together the two images exhaust $M_2(\mathbb{C})$, so the real-and-imaginary split of the algebra is, in matrix language, the split of $M_2(\mathbb{C})$ into the quaternion matrices and $i$ times them.</p>
-<h3 id="the-informational-subspace-math248">The Informational Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-informational-subspace-math247">The Informational Subspace $\mathbb{M}_+$</h3>
 <p>The Hermitian subspace, the fixed space of ${}^{*}$: the elements with $q_t, q'_x, q'_y, q'_z$ real, carried from the basis $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$ onto the four matrices</p>
 <p>$$
 \big\{\, \mathsf{M}_2(e_t),\ i\mathsf{M}_2(\vec e_x),\ i\mathsf{M}_2(\vec e_y),\ i\mathsf{M}_2(\vec e_z) \,\big\}
@@ -317,7 +317,7 @@ $$</p>
 <p>the three non-identity members being the Hermitian basis matrices that the remark of <em>The Representation</em> names the Pauli matrices.</p>
 <p>Writing the general element of the subspace as $\tilde{Q} = q_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z = (ct')\,e_t + (ix')\,\vec e_x + (iy')\,\vec e_y + (iz')\,\vec e_z$, with $q_t = ct'$ and $q'_k = x'_k$ real, the same three-step chain gives</p>
 <p>$$
-\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix}
+\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_z & -iQ_x - Q_y \\ -iQ_x + Q_y & Q_t + iQ_z \end{pmatrix}
 = \begin{pmatrix} q_t + q'_z & q'_x - iq'_y \\ q'_x + iq'_y & q_t - q'_z \end{pmatrix}
 = \begin{pmatrix} ct' + z' & x' - iy' \\ x' + iy' & ct' - z' \end{pmatrix},
 $$</p>
@@ -326,7 +326,7 @@ $$</p>
 \det \mathsf{M}_2(\tilde{Q}) = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 ,
 $$</p>
 <p>the mirror interval of signature $(1,3)$, read on the informational coordinate $(ct')\,e_t + i\,x'\,\vec e_x + i\,y'\,\vec e_y + i\,z'\,\vec e_z$, that is $q_t = ct'$, $q'_x = x'$, $q'_y = y'$, $q'_z = z'$.</p>
-<h3 id="the-material-subspace-math267">The Material Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-material-subspace-math266">The Material Subspace $\mathbb{M}_-$</h3>
 <p>The anti-Hermitian subspace, the fixed space of $\flat$: the elements with $q'_t, q_x, q_y, q_z$ real, carried from the basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$ onto the four matrices</p>
 <p>$$
 \big\{\, i\mathsf{M}_2(e_t),\ \mathsf{M}_2(\vec e_x),\ \mathsf{M}_2(\vec e_y),\ \mathsf{M}_2(\vec e_z) \,\big\}
@@ -338,10 +338,10 @@ i\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix},\
 $$</p>
 <p>Writing the general element as $\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$, with $q'_t = ct$ and $q_k = x_k$ real, the chain from the complex coefficients to the real parameters to the physical coordinates is</p>
 <p>$$
-\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix}
-= \begin{pmatrix} iq'_t - iq_3 & -iq_1 - q_y \\ -iq_1 + q_y & iq'_t + iq_3 \end{pmatrix}
+\mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_z & -iQ_x - Q_y \\ -iQ_x + Q_y & Q_t + iQ_z \end{pmatrix}
+= \begin{pmatrix} iq'_t - iq_z & -iq_x - q_y \\ -iq_x + q_y & iq'_t + iq_z \end{pmatrix}
 = \begin{pmatrix} ict - iz & -ix - y \\ -ix + y & ict + iz \end{pmatrix}
-= i\begin{pmatrix} q'_t - q_z & -q_x + iq_2 \\ -q_x - iq_2 & q'_t + q_z \end{pmatrix},
+= i\begin{pmatrix} q'_t - q_z & -q_x + iq_y \\ -q_x - iq_y & q'_t + q_z \end{pmatrix},
 $$</p>
 <p>which is $i$ times a Hermitian matrix: the scalar part is carried by $i$, and the vector signs are reversed. Its trace is $2iq'_t$, purely imaginary, and its determinant is</p>
 <p>$$
@@ -389,7 +389,7 @@ $$</p>
 </tr>
 <tr>
 <td>Complex conjugation</td>
-<td>$Q_\mu \mapsto Q_\mu^{*}$</td>
+<td>$\bar{\tilde Q} = \bar{Q}_t e_t + \bar{Q}_x\vec e_x + \bar{Q}_y\vec e_y + \bar{Q}_z\vec e_z$</td>
 <td>$\epsilon\,\overline{M}\,\epsilon^{-1}$</td>
 </tr>
 <tr>
@@ -415,9 +415,9 @@ $$</p>
 \quad\text{for}\quad M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}.
 $$</p>
 <p>Quaternion conjugation is therefore the classical adjoint, and the identity $\tilde{Q}\tilde{Q}^{\natural} = \langle\tilde{Q}\rangle_{\natural}e_t$ is the matrix identity $M\,\mathrm{adj}(M) = \det(M)\,\mathsf{M}_2(e_t)$. The other two are the operations a physicist expects: ${}^{*}$ is the conjugate transpose, so its fixed points are the Hermitian matrices, and $\flat = -{}^{*}$ has the anti-Hermitian matrices as its fixed points. The real structure $\flat$, which the corpus uses for the $\mathbb{M}_\pm$ split and for Majorana-type pairings, is the negative conjugate transpose.</p>
-<p>**Complex conjugation is the one that does not act entrywise. It is sometimes said that $\tilde{Q}^*$ conjugates the entries of the matrix. That is not true, and the reason is structural: the representation is built with the same $i$ that conjugates the coefficients, so the two operations compete. Conjugating the entries of $\mathsf{M}_2(\tilde{Q})$ sends $\mathsf{M}_2(\vec e_x) \mapsto -\mathsf{M}_2(\vec e_x)$ and $\mathsf{M}_2(\vec e_z) \mapsto -\mathsf{M}_2(\vec e_z)$ — the images of $\vec e_x$ and $\vec e_z$ to their negatives — while the image of $\vec e_y$ is left alone; the entrywise operation is therefore not $\mathsf{M}_2(\tilde{Q}^*)$, and it is not the image of any involution of the algebra. The correct correspondence is the one in the table,</p>
+<p>**Complex conjugation is the one that does not act entrywise. It is sometimes said that $\bar{\tilde Q}$ conjugates the entries of the matrix. That is not true, and the reason is structural: the representation is built with the same $i$ that conjugates the coefficients, so the two operations compete. Conjugating the entries of $\mathsf{M}_2(\tilde{Q})$ sends $\mathsf{M}_2(\vec e_x) \mapsto -\mathsf{M}_2(\vec e_x)$ and $\mathsf{M}_2(\vec e_z) \mapsto -\mathsf{M}_2(\vec e_z)$ — the images of $\vec e_x$ and $\vec e_z$ to their negatives — while the image of $\vec e_y$ is left alone; the entrywise operation is therefore not $\mathsf{M}_2(\bar{\tilde Q})$, and it is not the image of any involution of the algebra. The correct correspondence is the one in the table,</p>
 <p>$$
-\mathsf{M}_2(\tilde{Q}^*) = \epsilon\,\overline{\mathsf{M}_2(\tilde{Q})}\,\epsilon^{-1}, \qquad \epsilon = \mathsf{M}_2(-\vec e_y),
+\mathsf{M}_2(\bar{\tilde{Q}}) = \epsilon\,\overline{\mathsf{M}_2(\tilde{Q})}\,\epsilon^{-1}, \qquad \epsilon = \mathsf{M}_2(-\vec e_y),
 $$</p>
 <p>In this representation the safe rule is: use $\bar{\phantom{Q}}$, $\bar{\cdot}$, ${}^{*}$ and $\flat$ through the four formulas above, and never conjugate the matrix entries on their own.</p>
 <h2 id="spin-qubits-and-the-bloch-vector">Spin, Qubits and the Bloch Vector</h2>
@@ -457,13 +457,13 @@ $$</p>
 $$</p>
 <p>and the boost rotors are the Hermitian unit-norm elements, which map to the Hermitian $\mathrm{SL}(2,\mathbb{C})$ matrices. The two cases are distinguished in the matrix form by Hermiticity, exactly as they are distinguished in the algebra by the split $\mathbb{M}_+ \oplus \mathbb{M}_-$.</p>
 <p>The advantage of the matrix form here is not computational but structural: writing a general unit-norm element as a rotation times a boost is the polar decomposition of its $\mathrm{SL}(2,\mathbb{C})$ matrix into a unitary factor and a positive Hermitian one, and the double cover $SU(2) \to SO(3)$ is the statement that $\pm M$ give the same rotation. In the algebra the double cover has to be argued from the biquaternion norm; in the matrix form it is visible, because $-\mathsf{M}_2(e_t)$ is a unit-norm element acting trivially on the material subspace.</p>
-<p>The identification is structural, and it is not the cheaper route to the numbers. Sangwine &amp; Hitzer note that $\mathsf{M}_2(\tilde{Q})$ carries a four-fold redundancy — the $4\times4$ complex representation of a biquaternion is one of a special form, not an arbitrary complex matrix, and a general numerical polar decomposition of an arbitrary matrix need not preserve that form accurately over a series of computational steps — so the biquaternion algorithm needs less memory and fewer operations. Their algorithm also obtains the hyperbolic factor by dividing out the trigonometric factor, which is cheaper than forming the square root $\sqrt{\tilde{Q}\tilde{Q}^{*}}$ used above to exhibit the identity and the Hermiticity: the square root is the proof that the factor exists, and the division is how it is computed.</p>
+<p>The identification is structural, and it is not the cheaper route to the numbers. Sangwine &amp; Hitzer note that the $4\times4$ complex representation of a biquaternion is one of a special form, not an arbitrary complex matrix, and that a general numerical polar decomposition of an arbitrary matrix need not preserve that form accurately over a series of computational steps, so the biquaternion algorithm needs less memory and fewer operations. Their algorithm also obtains the hyperbolic factor by dividing out the trigonometric factor, which is cheaper than forming the square root $\sqrt{\tilde{Q}\tilde{Q}^{*}}$ used above to exhibit the identity and the Hermiticity: the square root is the proof that the factor exists, and the division is how it is computed.</p>
 <h2 id="what-the-matrix-form-makes-visible">What the Matrix Form Makes Visible</h2>
 <p>The representation is a change of coordinates, and its value is what the new coordinates make obvious. Collected: the scalar part is a trace; the biquaternion norm is a determinant; invertibility is nonzero determinant; the informational and material subspaces are the Hermitian and anti-Hermitian matrices; the observables are the Hermitian matrices generated by the images of the Hermitian units; the pure states are rank-one idempotents on the null cone; the unit-norm group is $\mathrm{SL}(2,\mathbb{C})$; and the zero divisors are the rank-one matrices. Each of these is a theorem in the algebra and an inspection in the matrix form.</p>
 <p>The limitation is equally clear. The matrix form is a representation of the <strong>complexified</strong> algebra: it uses $i$ in its entries, so it identifies $\mathbb{B}$ with $M_2(\mathbb{C})$ and does not, by itself, display the real structure that distinguishes the material subspace from the informational one. That structure — the choice of $\flat$, and the physical statement that $\mathbb{M}_-$ is the subspace where mass lives — is a choice of real form, and it is visible in the algebra and in the Hermitian/anti-Hermitian split, but not in the identification $\mathbb{B} \cong M_2(\mathbb{C})$ alone. The matrix form is the computational face of the algebra, not the whole of it.</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <p>The isomorphism reads as the dictionary of the framework: the trace is the scalar part and the determinant the biquaternion norm, so the interval and the mass are the trace and the determinant of one $2\times2$ complex matrix. Read on the states, the Hermitian matrices are the observables and the determinant is the positivity test, so the same two matrix invariants carry the framework's metric and its state condition. Read on the conjugations, the matrix image of a conjugation is a matrix conjugation, which is why the four forms can be computed in the smallest representation that carries them.</p>
-<p>The determinant is read as a <strong>volume</strong>: $\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$ is the biquaternion norm, so the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$, read as the <strong>volume-preserving</strong> group, and a general element is a four-volume element its determinant measures. The Lorentz group is therefore the volume-preserving group of the representation, which is the matrix form of the statement that a Lorentz transformation preserves the interval.</p>
+<p>The determinant is read as a <strong>volume</strong>: $\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$ is the biquaternion norm, so the unit-norm slice is $\mathrm{SL}(2,\mathbb{C})$, read as the <strong>volume-preserving</strong> group, and a general element is a four-volume element whose determinant measures it. The Lorentz group is therefore the volume-preserving group of the representation, which is the matrix form of the statement that a Lorentz transformation preserves the interval.</p>
 <p>Read as a <strong>phase fibre</strong>, the unit spinors of the representation are the three-sphere over the Bloch sphere, and the $\mathrm{U}(1)$ that fixes a state's ray is the central phase, so the phase of the framework is a fibre over the state space and its holonomy is the geometric phase. Boundary: the bundle, the invariant and the phase are owned by <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em> and by <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em>; the interpretation records the smallest matrix image of the fibre and adds no topology.</p>
 <p>The trace factor is the count of the two chiralities. The factor $\mathrm{Tr}(e_t)=2$ of the trace convention is the count of the two minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$, that is, of the two matrix columns $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, and therefore of the two chiralities, so every pairing of the series carries the two-slot structure as a factor of two. Boundary: the factor is a property of the isomorphism $\mathsf{M}_2$, and the count is of ideals and not of particles.</p>
 <h2 id="summary">Summary</h2>
@@ -471,7 +471,7 @@ $$</p>
 <ul>
 <li>The signs are forced: $\vec e_\mu^2 = -e_t$ requires the factor $i$, and $\vec e_x \vec e_y = +\vec e_z$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.</li>
 <li>The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_t$, and the determinant <strong>is</strong> the biquaternion norm, $\det(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ all follow.</li>
-<li>The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_te_t \mapsto Q_t\mathsf{M}_2(e_t)$, the only one of the remarkable subspaces of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_t - iq_3$, $w = -iq_1 - q_y$, determinant $q_t^2 + q_x^2 + q_y^2 + q_z^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_t)^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_te_t + iq'_\mu\vec e_\mu$ mapped to a Hermitian matrix, $\det = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 = c^2(t')^2 -(x'^2+y'^2+z'^2)$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_te_t + q_\mu\vec e_\mu$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2 = -c^2t^2 +x^2+y^2+z^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.</li>
+<li>The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_te_t \mapsto Q_t\mathsf{M}_2(e_t)$, the only one of the remarkable subspaces of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \mapsto \mathfrak{sl}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_t - iq_z$, $w = -iq_x - q_y$, determinant $q_t^2 + q_x^2 + q_y^2 + q_z^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_t)^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_te_t + iq'_\mu\vec e_\mu$ mapped to a Hermitian matrix, $\det = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 = c^2(t')^2 -(x'^2+y'^2+z'^2)$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_te_t + q_\mu\vec e_\mu$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2 = -c^2t^2 +x^2+y^2+z^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.</li>
 <li>The minimal left ideals are the matrix <strong>columns</strong>: $\tilde\Pi_\pm = \tfrac12(e_t \pm i\vec e_z)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\vec\Upsilon_x = \tfrac12(i\vec e_x - \vec e_y) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.</li>
 <li>Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \mathsf{M}_2(-\vec e_y)$. Hermitian conjugation is the conjugate transpose and $\flat = -{}^{*}$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.</li>
 <li>The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k \mapsto \tfrac{\hbar}{2}\mathsf{M}_2(i\vec e_k)$; the pure states are the rank-one idempotents $\tilde\Pi_{1,2}(\vec u)$ and are the null elements $\langle\tilde\Pi\rangle_{\natural} = 0$; the density matrix $\rho = \tfrac12\big(\mathsf{M}_2(e_t) + r_k\mathsf{M}_2(i\vec e_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(i\vec e_k)\big)$ on the Bloch ball.</li>
@@ -507,7 +507,7 @@ $$</p>
 <td>Images of the Hermitian units: the three Hermitian basis matrices of the remark in <em>The Representation</em>, with $\mathsf{M}_2(i\vec e_\mu)^2 = \mathsf{M}_2(e_t)$</td>
 </tr>
 <tr>
-<td>$\tilde{Q} \mapsto \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3\end{pmatrix}$</td>
+<td>$\tilde{Q} \mapsto \begin{pmatrix} Q_t - iQ_z & -iQ_x - Q_y \\ -iQ_x + Q_y & Q_t + iQ_z\end{pmatrix}$</td>
 <td>Image of a general biquaternion</td>
 </tr>
 <tr>
@@ -527,7 +527,7 @@ $$</p>
 <td>Quaternion conjugation is the adjugate</td>
 </tr>
 <tr>
-<td>$\tilde{Q}^* \mapsto \epsilon\overline{M}\epsilon^{-1}$</td>
+<td>$\bar{\tilde Q} \mapsto \epsilon\overline{M}\epsilon^{-1}$</td>
 <td>Complex conjugation, dressed by $\epsilon$</td>
 </tr>
 <tr>
@@ -548,11 +548,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>The vector subspace, the complement of the centre subspace: $Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \mapsto \begin{pmatrix} -iQ_3 & -iQ_1-Q_y \\ -iQ_1+Q_y & iQ_3\end{pmatrix}$, the traceless matrices $\mathrm{SL}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$</td>
+<td>The vector subspace, the complement of the centre subspace: $Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \mapsto \begin{pmatrix} -iQ_z & -iQ_x-Q_y \\ -iQ_x+Q_y & iQ_z\end{pmatrix}$, the traceless matrices $\mathfrak{sl}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>The real-quaternion subspace: $q_te_t + \cdots + q_z\vec e_z \mapsto \begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z = q_t - iq_3$, $w = -iq_1 - q_y$, determinant $q_t^2 + q_x^2 + q_y^2 + q_z^2$</td>
+<td>The real-quaternion subspace: $q_te_t + \cdots + q_z\vec e_z \mapsto \begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z = q_t - iq_z$, $w = -iq_x - q_y$, determinant $q_t^2 + q_x^2 + q_y^2 + q_z^2$</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$</td>

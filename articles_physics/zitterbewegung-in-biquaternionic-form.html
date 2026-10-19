@@ -97,7 +97,7 @@ $$</p>
 <p>At rest, $H = \beta mc^2$ and the oscillating term has frequency $2mc^2/\hbar$ and amplitude of order $\hbar/(2mc)$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-iEt/\hbar)$ and a negative-frequency component $\exp(+iEt/\hbar)$ beat at $2E/\hbar$, and the trembling term is exactly that beat.</p>
 <p>The interpretation of this result is contested, and the article does not settle it. Three positions are in the literature. First, the trembling is an artefact of forcing a single-particle interpretation on a theory whose solutions include both signs of energy: the Foldy–Wouthuysen mean position, the observable position for a positive-energy particle, has no trembling at leading order, so the oscillation is removed rather than seen. Second, the effect is not entirely empty: the same elimination of the small component that produces the mean position leaves the <strong>Darwin term</strong> at the next order in $1/c$, and the Darwin term and the Zitterbewegung are two faces of the same admixture of the negative-energy component — the exercise on the non-relativistic limit derives that term, and the derivation is not repeated here. Third, in quantum field theory the position operator of a single particle is not fundamental, the free-field Zitterbewegung is not directly observable, and the effect is reinterpreted (in some treatments absorbed, in others associated with virtual pair creation and annihilation). None of these interpretations denies the algebra above; they disagree about what it describes.</p>
 <h2 id="the-biquaternionic-setting">The Biquaternionic Setting</h2>
-<p>The notation is that of the parent and its read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, scalar imaginary $i$, and biquaternionic gradient</p>
+<p>The notation is that of the parent and its read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, scalar imaginary $i$, and biquaternionic gradient</p>
 <p>$$
 \tilde\nabla = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z.
 $$</p>
@@ -112,7 +112,7 @@ $$</p>
 <p>$$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^{*},
 $$</p>
-<p>with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde P\tilde{Q}/\hbar)$ with wave biquaternion $\tilde P/\hbar = e_tk_0 + \vec k$ and the single mass-shell condition</p>
+<p>with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde P\tilde{Q}/\hbar)$ with wave biquaternion $\tilde P/\hbar = e_tk_0 + \vec k$, where $k_0=iE/(\hbar c)$, and the single mass-shell condition</p>
 <p>$$
 \tilde P\tilde P^{\natural}=-m^2c^2.
 $$</p>
@@ -140,7 +140,7 @@ $$</p>
 \omega_Z^{\text{rest}} = \frac{2m_ec^2}{\hbar} = 1.55269\times10^{21}\ \text{rad s}^{-1},
 \qquad f_Z = \frac{\omega_Z}{2\pi} = 2.47118\times10^{20}\ \text{Hz},
 $$</p>
-<p>which is the standard value. On a relativistic case chosen independently, $\gamma = 2$ so $E = 2mc^2$, the formula gives $2E/\hbar = 4m_ec^2/\hbar = 3.10538\times10^{21}\ \text{rad s}^{-1}$ — twice the rest value, as the formula requires and as the rest case alone would not reveal. The oscillation amplitude is $\hbar/(2mc)$, which for the electron is $193.1$ fm, half the reduced Compton wavelength $386.2$ fm. Both the frequency and the amplitude are the standard ones; the biquaternion notation reproduces them without alteration.</p>
+<p>which is the standard value. On a relativistic case chosen independently, with Lorentz factor $2$ so $E = 2mc^2$, the formula gives $2E/\hbar = 4m_ec^2/\hbar = 3.10538\times10^{21}\ \text{rad s}^{-1}$ — twice the rest value, as the formula requires and as the rest case alone would not reveal. The oscillation amplitude is $\hbar/(2mc)$, which for the electron is $193.1$ fm, half the reduced Compton wavelength $386.2$ fm. Both the frequency and the amplitude are the standard ones; the biquaternion notation reproduces them without alteration.</p>
 <p>It should be said clearly that this derivation uses $\beta$ and $\boldsymbol{\alpha}$ and therefore does <strong>not</strong> stay inside $\mathbb{B}$. That will matter in the test that follows.</p>
 <h2 id="the-complexification-and-the-rest-energy-phase">The Complexification and the Rest-Energy Phase</h2>
 <p>There is a genuinely algebraic statement available, and it is the strongest positive result of the article. It has two parts.</p>
@@ -233,7 +233,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\mu^2 = -e_t$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -248,7 +248,7 @@ $$</p>
 <td>Real quaternion subspace</td>
 </tr>
 <tr>
-<td>$\tilde\nabla = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$</td>
+<td>$\tilde\nabla = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$</td>
 <td>Biquaternionic gradient (Dirac operator)</td>
 </tr>
 <tr>

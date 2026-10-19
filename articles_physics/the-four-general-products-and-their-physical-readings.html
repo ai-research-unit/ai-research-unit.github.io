@@ -125,11 +125,13 @@ entries of the mathematics menu, and it is the map of the four physics blocks th
 <p><strong>Conventions.</strong> Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
 $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$, central imaginary $i$, and
 $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The conjugations are
-$\bar{\cdot}$, ${\natural}$, ${}^{*}=\bar{\cdot}\circ{\natural}$ and $\flat=-{}^{*}$; the scalar part is
+$\bar{\cdot}$, ${\natural}$, ${}^{*}=\bar{\cdot}\circ{\natural}$; the scalar part is
 $\mathrm{Sc}(\tilde Q)=Q_t$. The <strong>informational sector</strong> $\mathbb{M}_+$ is the Hermitian subspace, the
 fixed space of ${}^{*}$ (real $Q_t$, imaginary $Q_k$), and the <strong>material sector</strong> $\mathbb{M}_-$ is the
-anti-Hermitian subspace, the fixed space of $\flat$ (imaginary $Q_t$, real $Q_k$); each is a real
-subspace of dimension four. A form is called <strong>definite on a sector</strong> when it is definite as a real form
+anti-Hermitian subspace $\{\tilde Q^{*}=-\tilde Q\}$ (imaginary $Q_t$, real $Q_k$); each is a real
+subspace of dimension four. For the four scalar forms write $B=\langle\tilde Q_1,\tilde Q_2\rangle$,
+$H=\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, $N=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ and
+$K=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. A form is called <strong>definite on a sector</strong> when it is definite as a real form
 on $\mathbb{M}_-$ and on $\mathbb{M}_+$; this is weaker than definiteness on the whole real space, and
 the two interpretations are distinguished wherever they differ below.</p>
 <h2 id="the-four-general-products-in-coordinates">The Four General Products in Coordinates</h2>
@@ -141,7 +143,7 @@ leaves a coordinate as it stands or reverses its sign, conjugating the coefficie
 <p>$$
 \tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z,\qquad \tilde Q^{*}=\overline{Q_t}e_t-\overline{Q_x}\vec e_x-\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z .
 $$</p>
-<p>With $\varepsilon=(1,-1,-1,-1)$ and the sums over $\mu,\nu=0,\dots,3$, the four general products multiply the
+<p>With $\varepsilon=(1,-1,-1,-1)$ and the sums over $\mu,\nu\in\{t,x,y,z\}$, the four general products multiply the
 coordinates of the two factors on the basis of the units, the first factor read plain or through
 ${}^{\natural}$ and the second plain or through ${}^{*}$, the two choices independent:</p>
 <p>$$
@@ -154,10 +156,10 @@ $$</p>
 are</p>
 <p>$$
 \begin{aligned}
-\langle\tilde Q_1,\tilde Q_2\rangle&=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}=Q_{10}Q_{2t}-Q_{11}Q_{2x}-Q_{12}Q_{2y}-Q_{13}Q_{2z},\\
-\langle\tilde Q_1,\tilde Q_2\rangle_{*}&=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\textstyle\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{10}\overline{Q_{2t}}+Q_{11}\overline{Q_{2x}}+Q_{12}\overline{Q_{2y}}+Q_{13}\overline{Q_{2z}},\\
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}&=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\textstyle\sum_\mu Q_{1\mu} Q_{2\mu}=Q_{10}Q_{2t}+Q_{11}Q_{2x}+Q_{12}Q_{2y}+Q_{13}Q_{2z},\\
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}&=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{10}\overline{Q_{2t}}-Q_{11}\overline{Q_{2x}}-Q_{12}\overline{Q_{2y}}-Q_{13}\overline{Q_{2z}}.
+\langle\tilde Q_1,\tilde Q_2\rangle&=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}=Q_{1t}Q_{2t}-Q_{1x}Q_{2x}-Q_{1y}Q_{2y}-Q_{1z}Q_{2z},\\
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}&=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\textstyle\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{1t}\overline{Q_{2t}}+Q_{1x}\overline{Q_{2x}}+Q_{1y}\overline{Q_{2y}}+Q_{1z}\overline{Q_{2z}},\\
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}&=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=\textstyle\sum_\mu Q_{1\mu} Q_{2\mu}=Q_{1t}Q_{2t}+Q_{1x}Q_{2x}+Q_{1y}Q_{2y}+Q_{1z}Q_{2z},\\
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}&=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=\textstyle\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}=Q_{1t}\overline{Q_{2t}}-Q_{1x}\overline{Q_{2x}}-Q_{1y}\overline{Q_{2y}}-Q_{1z}\overline{Q_{2z}}.
 \end{aligned}
 $$</p>
 <p>The four scalar forms carry the brackets $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ of <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>. The four general products are the four interpretations of §<em>The Four Readings</em> — composition, probability, causality
@@ -650,8 +652,7 @@ restrictions are</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (verified).</strong>
-with the algebraic norm signs of the table. The identities hold to machine precision, and the realified
+<p><strong>Remark (verified).</strong> The identities hold with the algebraic norm signs of the table, to machine precision, and the realified
 algebraic norms of $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ are $(-1,-1,-1,-1)$, $(1,1,1,1)$, $(-1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_-$
 and $(1,1,1,1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_+$, reproducing the inertias
 $(0,4)$, $(4,0)$, $(3,1)$, $(1,3)$ on $\mathbb{M}_-$ and $(4,0)$, $(4,0)$, $(1,3)$, $(1,3)$ on
@@ -678,8 +679,7 @@ the two signatures $(3,1)$ against $(1,3)$ and $(0,4)$ against $(4,0)$; the two 
 probability and the indefinite gauge metric, which is why a probability carries no sign of the sector
 while a metric carries it. The exchange is the framework's Wick rotation
 (<em>Other Remarkable Subspaces</em>), and this is its statement at the level of the forms.</p>
-<p><strong>Remark (verified).</strong>
-elements, not only on the sectors, and hold identically; on a sector they reduce to the row relations
+<p><strong>Remark (verified).</strong> The identities hold on elements, not only on the sectors, and they hold identically; on a sector they reduce to the row relations
 $H=\pm B$ and $K=\pm N$ above.</p>
 <p><strong>The exchange-invariant square.</strong> A quantity built from a <strong>tensor square</strong> of a bilinear form,
 $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}\langle\tilde{Q}_3,\tilde{Q}_4\rangle_{\natural}$, is built from two factors that the exchange
@@ -760,7 +760,7 @@ $H=-B$ on $\mathbb{M}_-$ does not make the general plain bilinear product a pair
 <li><strong>Dial principle.</strong> The rule that the first slot's natural conjugation decides between the definite form of the state side and the indefinite form of the transformation side is read as the <strong>dial principle</strong> of the framework: one dial separates the state side from the transformation side of the whole grid, and the two metrics of a single element are its two outcomes. The name is given here so that the principle can be cited as a single rule; the boundary is that the principle is a statement about the forms and not a derivation of the two jobs. The dial is a <strong>reflection</strong> — it negates the three vector coordinates and fixes the scalar direction, so it is a change of frame in the strict sense — and it is the algebraic sibling, and not the equal, of the framework's <strong>Wick rotation</strong>, which is multiplication by the central imaginary and a quarter-turn exchange of the two sectors (<em>Other Remarkable Subspaces</em>, <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em>). The dial is an involution and the Wick rotation has order four; the rotation is central and therefore commutes with the multiplication, while the dial is an anti-automorphism that reverses the order of a product and acts on one argument of it. Only the dial is a slot of a product, and it is that slot — and not the rotation — that the grid's metric is made of.</li>
 </ul>
 <h2 id="the-four-readings">The Four Readings</h2>
-<p>The table collects the four jobs. It is the framework's interpretation of the grid, and its last column is a
+<p>The table collects the four jobs. It is the framework's interpretation of the grid, and its last column is an
 interpretation and not a theorem.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -869,10 +869,10 @@ geometric phase of the cone, which is the grid-level form of the corpus's phase 
 </ul>
 <h3 id="the-causality-row">The Causality Row</h3>
 <ul>
-<li><strong>The scale potential $\log|N|$.</strong> $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative, so $\log|N|$ is <strong>additive</strong> over the
+<li><strong>The scale potential $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$.</strong> $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative, so $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ is <strong>additive</strong> over the
 composition — a potential on the material sector. The interpretation is read on the <strong>scale</strong> and not on the
-rapidity: a boost rotor is Hermitian with $N=1$ at every rapidity, so $\log|N|$ vanishes on the boosts,
-while the rapidity is the <strong>angle</strong> of the polar form. Read physically, $\log|N|$ is a causal <strong>dilation</strong>
+rapidity: a boost rotor is Hermitian with $\langle\tilde U\rangle_{\natural}=1$ at every rapidity, so $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ vanishes on the boosts,
+while the rapidity is the <strong>angle</strong> of the polar form. Read physically, $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ is a causal <strong>dilation</strong>
 potential and the rapidity is its angular companion.</li>
 <li><strong>The scalar coupling is the kinematic overlap.</strong> On two material four-vectors the quaternionic pairing
 $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ is the <strong>Minkowski inner product</strong> of the two, in the material signature: on the
@@ -993,7 +993,7 @@ composition. Together they leave it a structure with a symmetry and a pairing bu
 composition or the positivity that counts states, and that is the precise sense in which it is the
 <strong>gauge side</strong> of the frame rather than the state side. This interpretation is an interpretation of what remains after
 the three negative results, and it is labelled as such.</p>
-<p><strong>Where the failures come from.</strong> The fourth product fails associativity <em>and</em> fails the Jacobi identity: the associator does not vanish and the cyclic sum of the antisymmetric half does not vanish. Neither failure is the work of the <em>first</em> slot alone, and the pairing must not be blamed for both. Inserting a nontrivial involution into <em>either</em> slot spoils composition and closure: the plain sesquilinear product, which conjugates the second slot only, already fails associativity on $256$ of the $512$ basis triples, and its antisymmetric part already fails the Jacobi identity on $252$. What the first-slot conjugation adds is different and sharper — the <strong>metric</strong> (the sign vector $\varepsilon$ and the indefinite signature), the loss of the unit, and the loss of the Jordan triple identity — the three the mathematics attributes to the first slot, and exactly the two no-go results (no unit, no Jordan triple) that the first slot contributes to the bounds of the corner. The non-associativity and the non-closure are shared with the sibling interpretations and are not the first slot's signature.</p>
+<p><strong>Where the failures come from.</strong> The fourth product fails associativity <em>and</em> fails the Jacobi identity: the associator does not vanish and the cyclic sum of the antisymmetric half does not vanish. Neither failure is the work of the <em>first</em> slot alone, and the pairing must not be blamed for both. Inserting a nontrivial involution into <em>either</em> slot spoils composition and closure: the plain sesquilinear product, which conjugates the second slot only, already fails associativity on $256$ of the $512$ basis triples, and its antisymmetric part already fails the Jacobi identity on $252$. What the first-slot conjugation adds is different and sharper — the <strong>metric</strong> (the sign vector $\varepsilon$ and the indefinite signature), the loss of the unit, and the loss of the Jordan triple identity — the three things the mathematics attributes to the first slot, among them the two no-go results (no unit, no Jordan triple) that the first slot contributes to the bounds of the corner. The non-associativity and the non-closure are shared with the sibling interpretations and are not the first slot's signature.</p>
 <p><strong>Why the frame's fourth product is gauge and not a graded structure.</strong> A gauge structure at the product
 level carries a pairing and a bracket; a BRST or superalgebraic structure carries, in addition, a
 $\mathbb{Z}_2$ grading and a graded bracket with a sign rule. The fourth product supplies the first and not
@@ -1070,8 +1070,7 @@ four general products already defined in <em>The Four General Products of the Bi
 about them. The two slots decide the properties tabulated in §<em>What the Two Slots Decide</em>: bilinearity,
 the left identity and the monoid of the left multiplications by the second slot; definiteness on each
 sector and the right identity by the first slot; the coefficient $\varepsilon$ by the two slots
-together; and associativity by both. $e_t$ is a left identity if and only if the second slot is trivial
-and two-sidedly unital. The scalar forms are $B=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$,
+together; and associativity by both. $e_t$ is a left identity if and only if the second slot is trivial, and a two-sided identity if and only if both slots are trivial. The scalar forms are $B=\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$,
 $H=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, $N=\sum_\mu Q_{1\mu} Q_{2\mu}$ and
 $K=\sum_\mu\varepsilon_\mu Q_{1\mu}\overline{Q_{2\mu}}$, so that $\varepsilon$ survives exactly when the two
 slots agree and the bar appears with the second slot. The quaternionic product is the only one of the

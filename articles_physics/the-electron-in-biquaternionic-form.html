@@ -118,7 +118,7 @@ $$</p>
 </tr>
 <tr>
 <td>Spin observables</td>
-<td>Hermitian elements $\tilde{H} = i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$</td>
+<td>Hermitian elements $\tilde{H} = i h_k\vec e_k\in\mathbb{M}_+$</td>
 </tr>
 <tr>
 <td>Conserved current</td>
@@ -167,7 +167,7 @@ $$</p>
 <h2 id="spin-derived-as-a-representation-normalised-by-hand">Spin: Derived as a Representation, Normalised by Hand</h2>
 <p>The electron's spin is where the framework is strongest and where the distinction between derived and inserted is sharpest.</p>
 <p><strong>Derived: the representation.</strong> The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible module, of complex dimension two, and group of unit-norm biquaternions $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field placed in that module transforms in the spinor representation $(\tfrac12,0)$: its spin is $\tfrac{1}{2}$, and a rotation by $2\pi$ acts as $-e_t$ on the spinor module while acting as $+e_t$ on the four-vectors of $\mathbb{M}_-$. The twofold, double-valued character of electron spin is therefore a representation-theoretic consequence of where the field lives, not an independent postulate. The spin rotations are the unit-norm biquaternions with real vector part, forming $SU(2)$.</p>
-<p><strong>Derived: the state and observable structure.</strong> On the dictionary used in the companion articles, the electron's spin state along a unit direction $\vec u$ is represented by the idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k \vec e_k$ and $\tilde{P} = \tfrac{1}{2}(e_t + i n_\nu \vec e_\nu)$ one has $2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = n_\nu h_\nu$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_z)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_x)\big) = 0$, the correct values for the spin along $z$ and $x$.</p>
+<p><strong>Derived: the state and observable structure.</strong> On the dictionary used in the companion articles, the electron's spin state along a unit direction $\vec u$ is represented by the idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i h_k\vec e_k\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k \vec e_k$ and $\tilde\Pi(\vec n) = \tfrac{1}{2}(e_t + i n_\nu \vec e_\nu)$ one has $2\,\mathrm{Sc}(\tilde\Pi\tilde{H}) = n_\nu h_\nu$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_z)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_x)\big) = 0$, the correct values for the spin along $z$ and $x$.</p>
 <p><strong>Inserted: the magnitude.</strong> The spin operator is $S_k = \tfrac{\hbar}{2}\sigma_k$, corresponding to $\tfrac{\hbar}{2}i\vec e_k$. The factor $\hbar/2$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\hbar$ is physics inserted from outside.</p>
 <h2 id="the-dirac-description-of-the-electron">The Dirac Description of the Electron</h2>
 <p>The electron's relativistic dynamics is the biquaternion Dirac equation and its spinor-module transcription, the standard Dirac equation</p>
@@ -233,7 +233,7 @@ $$</p>
 <td>$\mathbb{B}\cong M_2(\mathbb{C})$, unique irreducible module; $SL(2,\mathbb{C})$ double cover</td>
 </tr>
 <tr>
-<td>Spin states, observables, Born rule</td>
+<td>Spin states, observables, expectation values</td>
 <td>Derived</td>
 <td>idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
 </tr>
@@ -345,7 +345,7 @@ $$</p>
 <td>Real quaternion subspace</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$</td>
+<td>$\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\partial/\partial Q_k$</td>
 <td>Biquaternionic gradient (Dirac operator)</td>
 </tr>
 <tr>
@@ -358,7 +358,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
-<td>Trace formula (Born rule)</td>
+<td>Trace formula (expectation values)</td>
 </tr>
 <tr>
 <td>$\tilde{J} = ic\,j^0 e_t + \vec j$</td>

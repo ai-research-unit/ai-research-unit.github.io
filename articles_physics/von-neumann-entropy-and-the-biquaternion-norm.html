@@ -128,7 +128,7 @@ $$</p>
 <p>a scalar element of the centre. Three interpretations of this single identity organize the rest of the article:</p>
 <ul>
 <li>$\langle\tilde{Ϛ}\rangle_{\natural}\geq0$ is positivity, with equality exactly on the pure states; the biquaternion norm's zero set is the boundary of the Bloch ball, the zero-divisor cone of $\mathbb{M}_+$.</li>
-<li>Comparing with the deviation from idempotency, $\tilde{Ϛ}^2-\tilde{Ϛ} = -\langle\tilde{Ϛ}\rangle_{\natural}e_t$: <strong>the mixedness of a state is minus its biquaternion norm</strong>. There is no other mixedness parameter.</li>
+<li>Comparing with the deviation from idempotency, $\tilde{Ϛ}^2-\tilde{Ϛ} = -\langle\tilde{Ϛ}\rangle_{\natural}e_t$: <strong>the deviation from idempotency is minus the biquaternion norm</strong>. There is no other mixedness parameter.</li>
 <li>The purity is an affine function of the biquaternion norm, $\mathrm{Tr}(\tilde{Ϛ}^2) = 1 - 2\langle\tilde{Ϛ}\rangle_{\natural}$.</li>
 </ul>
 <p>The biquaternion norm therefore measures the failure of a state to be a zero divisor of the algebra, and it does so with one number. On the trace-one slice it takes its minimum $0$ on the pure states and its maximum $\tfrac14$ at the maximally mixed state.</p>
@@ -155,7 +155,7 @@ S(\tilde{Ϛ}) = H\!\left(\langle\tilde{Ϛ}\rangle_{\natural}\right),
 \qquad
 H(N) = h\!\left(\frac{1+\sqrt{1-4N}}{2}\right).
 $$</p>
-<p>The function $H$ is defined on the interval $N\in[0,\tfrac14]$ that the biquaternion norm takes on the state space. At the pure-state end $N=0$ it gives $H(0) = h(1) = 0$; at the maximally mixed end $N=\tfrac14$ it gives $H(\tfrac14) = h(\tfrac12) = \log 2$. On the interior it is smooth and strictly increasing, because $h$ is increasing on $[\tfrac12,1]$ and $\sqrt{1-4N}$ is decreasing. Its derivative,</p>
+<p>The function $H$ is defined on the interval $N\in[0,\tfrac14]$ that the biquaternion norm takes on the state space. At the pure-state end $N=0$ it gives $H(0) = h(1) = 0$; at the maximally mixed end $N=\tfrac14$ it gives $H(\tfrac14) = h(\tfrac12) = \log 2$. On the interior it is smooth and strictly increasing, because $h$ is decreasing on $[\tfrac12,1]$ and $\sqrt{1-4N}$ is decreasing. Its derivative,</p>
 <p>$$
 \frac{dS}{dN} = -\frac{1}{\sqrt{1-4N}}\log\!\left(\frac{1-\sqrt{1-4N}}{1+\sqrt{1-4N}}\right) > 0 .
 $$</p>
@@ -242,7 +242,7 @@ $$</p>
 S(\tilde{Ϛ}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}\rangle_{\natural}}}{2}\right) = -\mathrm{Tr}\bigl(\tilde{Ϛ}\log\tilde{Ϛ}\bigr),
 $$</p>
 <p>with $S=0$ exactly on the pure states (the zero divisors of the biquaternion norm) and $S=\log2$ exactly at the maximally mixed state (the maximum of the biquaternion norm on the slice). Entropy is monotone in the biquaternion norm, concave, and invariant under the unitary inner automorphisms that preserve the biquaternion norm.</p>
-<p>The description is the standard qubit entropy, and it predicts nothing new. What it makes precise is which invariant the entropy measures: not the trace pairing of the Born rule, but the biquaternion norm whose cone is the state space, and, on that cone slice, the distance of the state from the zero-divisor boundary.</p>
+<p>The description is the standard qubit entropy, and it predicts nothing new. What it makes precise is which invariant the entropy measures: not the trace pairing of the Born rule, but the biquaternion norm whose cone is the state space, and, on that cone slice, the departure of the state from the zero-divisor boundary.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

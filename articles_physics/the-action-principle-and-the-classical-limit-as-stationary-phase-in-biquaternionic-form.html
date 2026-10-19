@@ -74,7 +74,7 @@
 <li><strong>The action is central-valued.</strong> For a real-quaternion configuration the Lagrangian is central, so the action is a complex scalar and its phase is unambiguous. There is no ordering question in the exponent, and the stationary-phase construction applies directly.</li>
 <li><strong>The rotor action and its geodesic principle.</strong> For a rotor-valued configuration — a path in the group of unit real quaternions — the action built from the biquaternion norm of the velocity is the energy of a geodesic on the group, and the classical path is a one-parameter subgroup. This is the first place where the algebra's noncommutativity produces the classical equations rather than merely expressing them, and it is the bridge to the rigid-body article.</li>
 </ol>
-<p>The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $e_k^2=-e_t$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial L/\partial\left(d\tilde q/dt\right)$, the phase-space biquaternion is $\tilde Q_3=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde q_3^{\natural}\tilde q_4)=\sum_\mu q_{3\mu} q_{4\mu}$. The rotor is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, and it acts by conjugation $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$.</p>
+<p>The conventions are those of the read list, unchanged from the preceding article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$; $i$ is central with $i^2=-1$; $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The configuration is a real quaternion $\tilde q$, its conjugate momentum is $\tilde p=\partial L/\partial\left(d\tilde q/dt\right)$, the phase-space biquaternion is $\tilde Q_3=\tilde q+i\tilde p$, and the scalar pairing is $\mathrm{Sc}(\tilde q_3^{\natural}\tilde q_4)=\sum_\mu q_{3\mu} q_{4\mu}$. The rotor is $\tilde u\in\mathbb{H}_{\mathbb{B}}$ with $\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=\tilde u\tilde u^{\natural}=e_t$, and it acts by conjugation $\tilde{Q}\mapsto\tilde u\tilde{Q}\tilde u^{*}$.</p>
 <p>The companion articles used below are:
 - Companion article <em>Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</em>, for the action, the Euler–Lagrange equation, the Legendre transform, and the phase-space biquaternion.
 - Companion article <em>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</em>, for the rotor conjugation and the flow on the coadjoint orbit.
@@ -89,10 +89,11 @@ $$</p>
 <p>Because $L$ takes values in the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the value of $S$ is a complex scalar and its phase $\exp(iS/\hbar)$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.</p>
 <h3 id="the-domain-of-the-principle-discrete-and-continuous">The Domain of the Principle: Discrete and Continuous</h3>
 <p>The statement is written for a finite list of coordinates, and this article uses it that way throughout. Nothing in it requires a finite list. A deformable body, or a field, has infinitely many degrees of freedom: its state is a function of position and time rather than a finite tuple $q(t)$, and the Lagrangian is replaced by a <strong>density</strong> $\mathcal{L}$, the action becoming $S=\int\mathcal{L}\,d^3x\,dt$. The stationarity statement is unchanged, and its Euler–Lagrange equations are field equations rather than ordinary differential equations. In the biquaternion formulation the configuration is then an algebra-valued field $\tilde q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t)$ and the action a spacetime integral of a central-valued density, which is the form the companion articles <em>The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form</em> and <em>Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</em> use.</p>
-<p>$$
-S=\tfrac12\iint\left(\rho\,\partial/\partial t u^2-\mathcal{T}\partial/\partial Q_x u^2\right)dx\,dt,\qquad c^2=\mathcal{T}/\rho ,
+<p>For a string of density $\rho$ and tension $\mathcal{T}$ with displacement $u(x,t)$, the action is
+$$
+S=\tfrac12\iint\left[\rho\left(\partial u/\partial t\right)^2-\mathcal{T}\left(\partial u/\partial x\right)^2\right]dx\,dt,\qquad c^2=\mathcal{T}/\rho ,
 $$</p>
-<p>the first variation is $2\times10^{-10}$ at a solution of the wave equation $\partial^2/\partial t^2 u=c^2\partial^2/\partial Q_x^2 u$ and $-1.67$ at a neighbouring non-solution: stationarity selects exactly the field equation. The Hamiltonian side of the same field action — the conjugate momentum field, the Hamiltonian density as the energy density, the bracket on functionals and the continuity equation for the energy flux — is developed in the companion article <em>Hamiltonian Field Theory in Biquaternionic Form</em>, which extends the Legendre transform, the bracket and the conservation law of the preceding article from a finite list of coordinates to a density.</p>
+<p>the first variation is $2\times10^{-10}$ at a solution of the wave equation $\partial^2 u/\partial t^2=c^2\,\partial^2 u/\partial x^2$ and $-1.67$ at a neighbouring non-solution: stationarity selects exactly the field equation. The Hamiltonian side of the same field action — the conjugate momentum field, the Hamiltonian density as the energy density, the bracket on functionals and the continuity equation for the energy flux — is developed in the companion article <em>Hamiltonian Field Theory in Biquaternionic Form</em>, which extends the Legendre transform, the bracket and the conservation law of the preceding article from a finite list of coordinates to a density.</p>
 <p>The statement is also independent of the coordinates in which it is written, which is what allows the coordinates to be generalized away altogether. Newton's law is recovered from a variational statement, in coordinates in which it is not obvious; the form of the statement, not the coordinates, is what carries the physics.</p>
 <h3 id="when-the-loads-are-not-conservative">When the Loads Are Not Conservative</h3>
 <p>The principle as written assumes the applied forces derive from a potential, and that assumption can fail. When the external loads are <strong>non-conservative</strong> — a damping force is the standard example — the variation of the action does not vanish on the physical motion, and the principle must be <strong>extended</strong> by adding the virtual work of those loads; it reduces to the plain form when the loads do derive from a potential. The added term is not idle — for the undamped solution the same extended expression is $+0.611$.</p>
@@ -130,8 +131,8 @@ $$</p>
 <h3 id="the-first-variation-and-the-boundary-term">The First Variation and the Boundary Term</h3>
 <p>The first variation of $S$, with the gradient notation of the preceding article, is</p>
 <p>$$
-\delta S=\int_{t_1}^{t_2}\mathrm{Sc}\!\left[\overline{\left(\partial L/\partial\tilde q-\frac{d}{dt}\partial L/\partial\left(d\tilde q/dt\right)\right)}\;\delta\tilde q\right]dt
-+\left[\mathrm{Sc}\!\left(\overline{\partial L/\partial\left(d\tilde q/dt\right)}\;\delta\tilde q\right)\right]_{t_1}^{t_2}.
+\delta S=\int_{t_1}^{t_2}\mathrm{Sc}\!\left[\left(\partial L/\partial\tilde q-\frac{d}{dt}\partial L/\partial\left(d\tilde q/dt\right)\right)^{\natural}\,\delta\tilde q\right]dt
++\left[\mathrm{Sc}\!\left((\partial L/\partial\left(d\tilde q/dt\right))^{\natural}\,\delta\tilde q\right)\right]_{t_1}^{t_2}.
 $$</p>
 <p>The bulk term vanishes for an arbitrary variation if and only if the <strong>Euler–Lagrange equation</strong> holds,</p>
 <p>$$
@@ -139,19 +140,19 @@ $$</p>
 $$</p>
 <p>which is the four real equations of the preceding article. The boundary term is the part that does not vanish when the endpoints are free. Writing $\tilde p=\partial L/\partial\left(d\tilde q/dt\right)$, it is</p>
 <p>$$
-\delta S_{\text{bdry}}=\left[\mathrm{Sc}\!\left(\bar{\tilde p}\;\delta\tilde q\right)\right]_{t_1}^{t_2}
+\delta S_{\text{bdry}}=\left[\mathrm{Sc}\!\left(\tilde p^{\natural}\,\delta\tilde q\right)\right]_{t_1}^{t_2}
 =\mathrm{Sc}(\tilde p^{\natural}_2\,d\tilde q_2)-\mathrm{Sc}(\tilde p^{\natural}_1\,d\tilde q_1).
 $$</p>
 <p>The quantity $\theta=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ is the <strong>symplectic potential</strong> in biquaternion form, and the boundary term says that the on-shell action is a <strong>generating function</strong> of the canonical transformation between the initial and final phase-space points: $dS=\theta_2-\theta_1$. The exterior derivative of this potential is the symplectic form up to the standard sign convention of the symplectic potential — explicitly, $d\theta=d\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)=d\vec p\wedge d\vec q=-\omega$ for the canonical form $\omega=\sum_k dq_k\wedge dp_k$ — and the symplectic form, with its conventions fixed, is the subject of the next article; here it is enough to record that the boundary term of the action variation already contains it.</p>
 <h3 id="the-phase-space-action">The Phase-Space Action</h3>
 <p>The same statement in phase-space variables uses the action</p>
 <p>$$
-S_{\mathrm{ps}}[\tilde q,\tilde p]=\int_{t_1}^{t_2}\left[\mathrm{Sc}\!\left(\tilde p^{\natural}\,d\tilde q/dt\right)-\langle\tilde q,\tilde p\rangle_{*}\right]dt .
+S_{\mathrm{ps}}[\tilde q,\tilde p]=\int_{t_1}^{t_2}\left[\mathrm{Sc}\!\left(\tilde p^{\natural}\,d\tilde q/dt\right)-H(\tilde q,\tilde p)\right]dt .
 $$</p>
 <p>Varying $\tilde q$ and $\tilde p$ independently and integrating by parts,</p>
 <p>$$
-\delta S_{\mathrm{ps}}=\int\mathrm{Sc}\!\left[\overline{\left(d\tilde q/dt-\partial H/\partial\tilde p\right)}\;\delta\tilde p\right]dt
-+\int\mathrm{Sc}\!\left[\overline{\left(-d\tilde p/dt-\partial H/\partial\tilde q\right)}\;\delta\tilde q\right]dt
+\delta S_{\mathrm{ps}}=\int\mathrm{Sc}\!\left[\left(d\tilde q/dt-\partial H/\partial\tilde p\right)^{\natural}\,\delta\tilde p\right]dt
++\int\mathrm{Sc}\!\left[\left(-d\tilde p/dt-\partial H/\partial\tilde q\right)^{\natural}\,\delta\tilde q\right]dt
 +\left[\mathrm{Sc}(\tilde p^{\natural}\,\delta\tilde q)\right]_{t_1}^{t_2}.
 $$</p>
 <p>Stationarity for arbitrary $\delta\tilde q,\delta\tilde p$ gives <strong>Hamilton's equations</strong></p>
@@ -192,7 +193,7 @@ $$</p>
 $$</p>
 <p>and $\mathcal{J}$ is the <strong>Jacobi operator</strong> of the problem. For a Lagrangian quadratic in the velocities, $L=\tfrac12 m \langle\,d\tilde q/dt\rangle_{\natural}-V(\tilde q)$, the Jacobi operator is</p>
 <p>$$
-\mathcal{J}\delta\tilde q=-m\,\delta\,d^2\tilde q/dt^2-\frac{d^2V}{d\tilde q^2}(\tilde q)\,\delta\tilde q ,
+\mathcal{J}\delta\tilde q=-m\,d^2(\delta\tilde q)/dt^2-\frac{d^2V}{d\tilde q^2}(\tilde q)\,\delta\tilde q ,
 $$</p>
 <p>and the vanishing of the second variation on a nontrivial field, $\mathcal{J}\,\xi=0$, is the <strong>Jacobi equation</strong> for the deviation field $\xi(t)$,</p>
 <p>$$
@@ -216,16 +217,16 @@ $$</p>
 <h3 id="the-rotor-action">The Rotor Action</h3>
 <p>The genuinely noncommutative case is a rotor-valued configuration. Let $\tilde u(t)$ be a path in the group of unit real quaternions, $\langle\tilde u\rangle_{\natural}=e_t$, and take the free action</p>
 <p>$$
-S_{\mathrm{rot}}[\tilde u]=\frac{\lambda}{2}\int \mathrm{Sc}\!\left(d\tilde u/dt\,\overline{d\tilde u/dt}\right)dt
+S_{\mathrm{rot}}[\tilde u]=\frac{\lambda}{2}\int \mathrm{Sc}\!\left(d\tilde u/dt\,(d\tilde u/dt)^{\natural}\right)dt
 =\frac{\lambda}{2}\int \langle\,d\tilde u/dt\rangle_{\natural}\,dt ,
 $$</p>
 <p>the rotational kinetic energy of a body with a single principal moment $\lambda$. Varying $\tilde u$ subject to the constraint $\langle\tilde u\rangle_{\natural}=e_t$ means varying within the group; writing $\delta\tilde u=\tilde u\,\delta\vec\theta$ with $\delta\vec\theta$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\tilde u^{\natural}\delta\tilde u)=0$ forces $\delta\vec\theta$ to have zero scalar part), the first variation of the action becomes</p>
 <p>$$
-\delta S_{\mathrm{rot}}=\lambda\int\mathrm{Sc}\!\left(d\tilde u/dt\,\overline{\delta\,d\tilde u/dt}\right)dt
-=-\lambda\int\mathrm{Sc}\!\left(d^2\tilde u/dt^2\,\overline{\delta\tilde u}\right)dt
+\delta S_{\mathrm{rot}}=\lambda\int\mathrm{Sc}\!\left(d\tilde u/dt\,(\delta\,d\tilde u/dt)^{\natural}\right)dt
+=-\lambda\int\mathrm{Sc}\!\left(d^2\tilde u/dt^2\,(\delta\tilde u)^{\natural}\right)dt
 =\lambda\int\mathrm{Sc}\!\left(\tilde u^{\natural}\,d^2\tilde u/dt^2\;\delta\vec\theta\right)dt ,
 $$</p>
-<p>using $\delta\tilde u=\tilde u\,\delta\vec\theta$, $\overline{\delta\tilde u}=-\delta\vec\theta\,\tilde u^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\vec\theta$ gives</p>
+<p>using $\delta\tilde u=\tilde u\,\delta\vec\theta$, $(\delta\tilde u)^{\natural}=-\delta\vec\theta\,\tilde u^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\vec\theta$ gives</p>
 <p>$$
 \mathrm{Ve}\!\left(\tilde u^{\natural}\,d^2\tilde u/dt^2\right)=0 ,
 $$</p>
@@ -260,7 +261,7 @@ $$</p>
 <li>Therefore the classical trajectory, defined as the solution of $\delta S=0$, is the trajectory that survives the cancellation, and the classical theory is the critical-point theory of the sum.</li>
 <li>The parameter $\hbar$ sets the scale of the phase; the classical limit is the limit of large phase.</li>
 </ul>
-<p>Nothing in the paraphrase requires a Hilbert space, a state, or an operator. The algebra $\mathbb{B}$ is real and classical throughout; the configuration is a real quaternion; the action is a central-valued functional. The oscillatory sum is a device for stating the classical limit, and the biquaternion formulation is a classical formulation. Quantisation — the reverse construction, in which an operator algebra is built from the classical brackets — belongs to the sibling category and is not used here.</p>
+<p>Nothing in the paraphrase requires a Hilbert space, a state, or an operator. The formulation is real and classical throughout; the configuration is a real quaternion; the action is a central-valued functional. The oscillatory sum is a device for stating the classical limit, and the biquaternion formulation is a classical formulation. Quantisation — the reverse construction, in which an operator algebra is built from the classical brackets — belongs to the sibling category and is not used here.</p>
 <h3 id="the-fluctuation-factor-and-the-classical-hessian">The Fluctuation Factor and the Classical Hessian</h3>
 <p>The prefactor $A[\tilde q_c]$ of the stationary-phase evaluation is built from the second variation of the previous section. In the biquaternion setting the fluctuation operator is the Jacobi operator $\mathcal{J}$, and its regularized determinant is the biquaternion form of the van Vleck factor. The zeros of the determinant are the conjugate points; the Maslov phase jumps there. This is the classical Morse theory of the action, expressed with the biquaternion-norm kinetic term.</p>
 <p>For the free particle the calculation is explicit. The Jacobi operator is $\mathcal{J}=-m\,d^2/dt^2$ with Dirichlet boundary conditions on the interval $[0,T]$. Its eigenfunctions are $\sin(n\pi t/T)$ with eigenvalues $\lambda_n=m n^2\pi^2/T^2$, $n=1,2,\dots$, and the zeta-regularized determinant is computed from the spectral zeta function</p>
@@ -279,7 +280,7 @@ $$</p>
 $$</p>
 <p>per real component. The determinant is therefore <strong>linear</strong> in $T$, and the fluctuation factor — its inverse square root — falls as $T^{-1/2}$ per real component. That is the standard free-particle van Vleck factor: the free propagator's prefactor in one dimension is $\sqrt{m/(2\pi i\hbar T)}\propto T^{-1/2}$. The free path has no conjugate points, and there is no Maslov phase. The computation is the standard one; the biquaternion formulation contributes the observation that the second variation is the Hessian of the biquaternion norm, so the classical stability problem and the biquaternion-norm geometry are the same problem.</p>
 <h3 id="rotor-paths-and-the-geometric-phase-of-the-sum">Rotor Paths and the Geometric Phase of the Sum</h3>
-<p>The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde u(t)=\tilde u(0)\exp(+\tfrac12\vec\omega_bt)$, and about each of them the fluctuation operator is again built from the biquaternion norm. The group of unit quaternions is compact and not simply connected, $\pi_x(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $\exp(iS[\tilde u_c]/\hbar)$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its <strong>holonomy</strong>: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article <em>Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</em>; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.</p>
+<p>The rotor action of the preceding section adds a feature that a scalar configuration cannot show. Its critical points are the one-parameter subgroups $\tilde u(t)=\tilde u(0)\exp(+\tfrac12\vec\omega_bt)$, and about each of them the fluctuation operator is again built from the biquaternion norm. The group of unit quaternions is compact and not simply connected, $\pi_1(SU(2))=\mathbb{Z}_2$, so the critical paths joining a given pair of endpoints are not unique — the geodesics of a bi-invariant metric on a group occur in several families — and they fall into the two homotopy classes. The stationary-phase sum over rotor paths therefore carries the relative phases $\exp(iS[\tilde u_c]/\hbar)$ of these critical paths. The transport of a rotor along a path is a parallel transport for a connection on the group, and the failure of the transport to be path-independent is its <strong>holonomy</strong>: the extra group element picked up around a closed loop. That holonomy, and the Hannay angle that an adiabatic classical system accumulates because of it, is the subject of the companion article <em>Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form</em>; it is a classical geometric phase, and the rotor action is the classical object whose stationary-phase sum carries it.</p>
 <h2 id="the-hamiltonjacobi-equation-and-the-classical-phase">The Hamilton–Jacobi Equation and the Classical Phase</h2>
 <p>The action of a classical trajectory, regarded as a function of its endpoint, is Hamilton's <strong>principal function</strong> $W(\tilde q,t)$. Differentiating the relation $dW=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)-E\,dt$ with the definition $\tilde p=\partial W/\partial\tilde q$ gives the <strong>Hamilton–Jacobi equation</strong></p>
 <p>$$

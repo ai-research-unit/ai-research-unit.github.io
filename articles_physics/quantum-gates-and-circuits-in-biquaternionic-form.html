@@ -81,7 +81,7 @@ $$</p>
 <p>First, the mathematics below is <strong>standard quantum information theory</strong> transcribed into biquaternion notation. Nothing here depends on the physical hypothesis that $\mathbb{M}_+$ is a distinct sector of the world. The reformulation is structural: it says where the objects of quantum computation live in the algebra and which algebraic operation each circuit ingredient is.</p>
 <p>Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions are conjugations by the acting element, but the condition on that element is different. The material-sector Lorentz rotor, written $\tilde U_{\mathrm L}$, satisfies the <strong>unit-norm</strong> condition $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ and generates $SL(2,\mathbb{C})$; a gate satisfies the <strong>matrix-unitarity</strong> condition $\tilde{U}\tilde{U}^{*} = e_t$ and generates $\mathrm{U}(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}^2 \neq e_t$: it is a perfectly good rotor on $\mathbb{M}_-$ but <strong>not</strong> a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.</p>
 <p>The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), $\mathbb{M}_+$ (Hermitian), and $\mathbb{M}_-$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$ is the Born rule. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), $\mathbb{M}_+$ (Hermitian), and $\mathbb{M}_-$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$ is the Born rule. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,</p>
 <p>$$
 e_t \mapsto I_2, \qquad \vec e_x \mapsto -i\sigma_1, \qquad \vec e_y \mapsto -i\sigma_2, \qquad \vec e_z \mapsto -i\sigma_3, \qquad i \mapsto i I_2 ,
 $$</p>
@@ -161,7 +161,7 @@ $$</p>
 <p>Under the isomorphism, the unit real quaternions are exactly the image of $SU(2) \subset M_2(\mathbb{C})$, since $\det \tilde u_{\mathrm r} = \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1$. The phase $\exp(i\phi)$ lies in the centre $\mathbb{C}_{\mathbb{B}}$, and $i\mathbb{M}_+ = \mathbb{M}_-$ for the anti-Hermitian generators.</p>
 <p>The phase is <strong>not observable in the action</strong>. Conjugation by a central element is trivial:</p>
 <p>$$
-(\exp(i\phi)\tilde u_{\mathrm r})\,\tilde{Ϛ}\,(\exp(i\phi)\tilde u_{\mathrm r})^\dagger
+(\exp(i\phi)\tilde u_{\mathrm r})\,\tilde{Ϛ}\,(\exp(i\phi)\tilde u_{\mathrm r})^{*}
 = \exp(i\phi)\tilde u_{\mathrm r}\,\tilde{Ϛ}\,\tilde u_{\mathrm r}^{*} \exp(-i\phi)
 = \tilde u_{\mathrm r}\,\tilde{Ϛ}\,\tilde u_{\mathrm r}^{*} .
 $$</p>
@@ -186,7 +186,7 @@ $$</p>
 <p>$$
 \tilde{U} = \pm\, i\vec u_{\mathrm r}, \qquad \vec u_{\mathrm r} \text{ a unit pure real quaternion},
 $$</p>
-<p>since $(i\vec u_{\mathrm r})^{*} = -i\vec u_{\mathrm r}^\dagger = i\vec u_{\mathrm r}$ and $(i\vec u_{\mathrm r})^2 = -\vec u_{\mathrm r}^2 = e_t$. They lie in $\mathbb{M}_+$, and as rotations they are the <strong>$\pi$-rotations</strong> of the Bloch sphere: conjugation by $i\vec u_{\mathrm r}$ sends $\vec r\mapsto 2(\vec u_{\mathrm r}\cdot\vec r)\vec u_{\mathrm r} - \vec r$. The Pauli gates and the Hadamard gate below are of this type; the phase and $T$ gates are not.</p>
+<p>since $(i\vec u_{\mathrm r})^{*} = -i\vec u_{\mathrm r}^{*} = i\vec u_{\mathrm r}$ and $(i\vec u_{\mathrm r})^2 = -\vec u_{\mathrm r}^2 = e_t$. They lie in $\mathbb{M}_+$, and as rotations they are the <strong>$\pi$-rotations</strong> of the Bloch sphere: conjugation by $i\vec u_{\mathrm r}$ sends $\vec r\mapsto 2(\vec u_{\mathrm r}\cdot\vec r)\vec u_{\mathrm r} - \vec r$. The Pauli gates and the Hadamard gate below are of this type; the phase and $T$ gates are not.</p>
 <p>A caution about representatives. A gate is a coset $\tilde{U}\cdot \mathrm{U}(1)$; the representative can be chosen Hermitian only when the gate is an involution. Membership of the representative in $\mathbb{M}_+$ or in $\mathbb{H}_{\mathbb{B}}$ is therefore a property of the chosen representative, not an invariant of the gate. The one representative-independent statement is the factorisation $\tilde{U} = \exp(i\phi)\tilde u_{\mathrm r}$: <strong>every gate is a central phase times a rotation, and no gate is anything else.</strong></p>
 <h2 id="the-standard-single-qubit-gate-set">The Standard Single-Qubit Gate Set</h2>
 <p>Under the isomorphism $\vec e_k \mapsto -i\sigma_k$, the image of $i \vec e_k$ is $\sigma_k$. The standard gate set therefore reads as follows. In each row the second column is a biquaternion representative; a representative differing by a central phase gives the same gate.</p>
@@ -244,7 +244,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The matrix column is the image under $\mathbb{B}\cong M_2(\mathbb{C})$. For $S$ and $T$ the displayed matrices are $\operatorname{diag}(\exp(-i\pi/4),\exp(i\pi/4))$ and $\operatorname{diag}(\exp(-i\pi/8),\exp(i\pi/8))$, which are the standard $S$ and $T$ up to the central phases $\exp(i\pi/4)$ and $\exp(i\pi/8)$; equivalently, $S$ and $T$ are represented exactly by the unit real quaternions shown. This is the representative-dependence noted above.</p>
+<p>The matrix column is the image under $\mathbb{B}\cong M_2(\mathbb{C})$. For $S$ and $T$ the displayed matrices are $\operatorname{diag}(\exp(-i\pi/4),\exp(i\pi/4))$ and $\operatorname{diag}(\exp(-i\pi/8),\exp(i\pi/8))$, which are the standard $S$ and $T$ up to the central phases $\exp(i\pi/4)$ and $\exp(i\pi/8)$; the biquaternion representatives shown are exact, and their matrix images differ from the standard matrices by those phases. This is the representative-dependence noted above.</p>
 <h3 id="the-pauli-gates">The Pauli Gates</h3>
 <p>The three Pauli gates are the Hermitian unitaries along the coordinate axes:</p>
 <p>$$
@@ -273,7 +273,7 @@ $$</p>
 $$</p>
 <p>The first two are exact identities among elements of $\mathbb{B}$; the third carries a sign, and since $-e_t$ is central, $\tilde{H}\vec U_y\tilde{H} = -\vec U_y$ and $\vec U_y$ define the <strong>same gate</strong>. This is a small but representative point: an algebraic identity of representatives need not be an identity of gates, and the discrepancy is always a central phase.</p>
 <p><strong>A different complex Hadamard matrix.</strong> A second object shares the name but not the setting. In <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em>, the cyclic conjugation of the biquaternion wave function, read on the Cartesian components $(f_x, f_y, f_z, f_t)$, is a $4\times4$ matrix with entries in $\{\pm1, \pm i\}$ and $H_4H_4^\dagger = 4I$. Its entries have modulus one, so $H_4/2$ is unitary on a four-dimensional complex space; it is a transvection on that space, not an element of the two-dimensional gate group treated here. The two Hadamards therefore share the modulus-one property and the name, and nothing else: $\tilde{H}$ above is a qubit gate, the printed $H_4$ is a change of coordinates of the Dirac equation.</p>
-<h3 id="the-phase-and-math186-gates">The Phase and $T$ Gates</h3>
+<h3 id="the-phase-and-math185-gates">The Phase and $T$ Gates</h3>
 <p>The phase gate is the rotation by $\pi/2$ about $\vec e_z$:</p>
 <p>$$
 \tilde{S} = \frac{1}{\sqrt{2}}\left(e_t + \vec e_z\right) = \tilde u_{e,3}\!\left(\frac{\pi}{2}\right),
@@ -325,7 +325,7 @@ $$</p>
 <p>i.e. the set of gates that permute the Pauli group under conjugation, up to sign. The elementary gates $H$ and $S$ both lie in it, and in fact generate it; this is the biquaternion form of the standard statement that $H$ and $S$ generate the single-qubit Clifford group. Modulo the phase, the conjugation action of the Clifford group on the Bloch sphere is the rotation symmetry group of the octahedron, of order $24$; a direct enumeration of the group generated by the two rotation matrices $R(\tilde{H})$ and $R(\tilde{S})$ returns exactly $24$ distinct rotations. In the algebra, the octahedral symmetry is the symmetry of the Pauli axes $\{\pm i \vec e_x,\pm i \vec e_y,\pm i \vec e_z\}$ that the Clifford gates permute.</p>
 <p>The <strong>$T$ gate is not Clifford</strong>. Its conjugation of $\vec U_x$ produces a rotation by $\pi/4$ about $\vec e_z$, which does not return the Pauli axes to themselves. The standard statement that $\{H,T\}$ generates a dense subgroup of the gate group — the basis of the Solovay–Kitaev universality of single-qubit computation — is inherited unchanged by the reformulation; it is a statement about the group generated by a Hadamard involution and a rotation of order eight, and the biquaternion representatives are $i(\vec e_x+\vec e_z)/\sqrt{2}$ and $\cos(\pi/8)e_t+\sin(\pi/8)\vec e_z$. This article does not re-derive universality; it records where the generators live.</p>
 <h2 id="multi-qubit-gates-and-the-tensor-arena">Multi-Qubit Gates and the Tensor Arena</h2>
-<h3 id="the-math252-qubit-algebra">The $n$-Qubit Algebra</h3>
+<h3 id="the-math251-qubit-algebra">The $n$-Qubit Algebra</h3>
 <p>For $n$ qubits the arena is the tensor product</p>
 <p>$$
 \mathbb{B}^{\otimes n} \;\cong\; M_{2^n}(\mathbb{C}),
@@ -389,7 +389,7 @@ $$</p>
 \qquad
 \tilde{Q}_{12} = (I_2\otimes \tilde{H})\,\mathrm{CZ}\,(I_2\otimes \tilde{H}).
 $$</p>
-<p>The first is the three-CNOT decomposition of the swap. The second is the conjugation of the CZ into the CNOT by a Hadamard on the target; equivalently, the same identity with the roles of CNOT and CZ exchanged on the other side. Each identity is a statement about the product of unitary elements of $\mathbb{B}\otimes\mathbb{B}$: the circuits are equal because the algebra products are equal.</p>
+<p>The first is the three-CNOT decomposition of the swap. The second is the conjugation of the CZ into the CNOT by a Hadamard on the target; equivalently, conjugating the CNOT by the same Hadamard returns the CZ. Each identity is a statement about the product of unitary elements of $\mathbb{B}\otimes\mathbb{B}$: the circuits are equal because the algebra products are equal.</p>
 <h2 id="a-simple-circuit-preparing-a-bell-state">A Simple Circuit: Preparing a Bell State</h2>
 <p>The composition law is best seen in a circuit that produces something the algebra names. Consider two qubits prepared in the pure state</p>
 <p>$$

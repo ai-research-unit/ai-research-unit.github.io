@@ -150,7 +150,7 @@ $$
 [M_{\mu\nu},\mathcal{K}_\rho]=\eta_{\nu\rho}\mathcal{K}_\mu-\eta_{\mu\rho}\mathcal{K}_\nu,
 $$
 together with the standard Lorentz brackets for $[M_{\mu\nu},M_{\rho\sigma}]$.</p>
-<p><strong>Where the generators live.</strong> The remarkable subspaces Lorentz generators $J_k=\vec e_k$ and $K_k=i\vec e_k$ are elements of $\mathbb{B}$, and the companion article builds the whole finite-dimensional Lorentz representation theory from them. The other nine generators above are differential operators on the coordinates, not elements of $\mathbb{B}$. This split — six inside the algebra, nine outside — is the theme of the sections that follow; the dilation is a partial exception, expressible by a non-unit biquaternion, and the translations and special conformal transformations are the genuinely external part.</p>
+<p><strong>Where the generators live.</strong> The Lorentz generators $J_k=\vec e_k$ and $K_k=i\vec e_k$ are elements of $\mathbb{B}$, and the companion article builds the whole finite-dimensional Lorentz representation theory from them. The other nine generators above are differential operators on the coordinates, not elements of $\mathbb{B}$. This split — six inside the algebra, nine outside — is the theme of the sections that follow; the dilation is a partial exception, expressible by a non-unit biquaternion, and the translations and special conformal transformations are the genuinely external part.</p>
 <h3 id="how-the-group-entered-physics">How the Group Entered Physics</h3>
 <p>The fifteen-parameter group did not enter physics as the conformal group. In 1909–10 <strong>Harry Bateman</strong> and <strong>Ebenezer Cunningham</strong>, following Sophus Lie's work of 1871 on the relation between sphere transformations with an imaginary radius coordinate and four-dimensional conformal transformations, showed that setting the fourth coordinate to $ict$ turns Lie's sphere transformations into conformal transformations of spacetime, and that the quadratic form <em>and Maxwell's equations</em> are covariant under them, irrespective of a scale $\lambda$; Bateman called them <strong>spherical wave transformations</strong>. The covariance is not universal, and that is the physical content of the split above: the conformal group is the symmetry of the electrodynamic laws, whereas the Lorentz and Poincaré groups are the symmetries of all the laws of nature in inertial frames. In the parametrisation of those authors the difference is a scale, and fixing $\lambda = 1$ leaves the <strong>ten-parameter Poincaré group</strong> as the subgroup of the fifteen-parameter conformal group. (The historical literature sometimes writes "Lorentz group" where the ten-parameter subgroup is meant; the parameter count makes it the Poincaré group.) The conformal group of the plane is, in the same circle of ideas, isomorphic to the Lorentz group.</p>
 <h2 id="the-null-cone-conformal-structure-the-algebra-already-has">The Null Cone: Conformal Structure the Algebra Already Has</h2>
@@ -169,12 +169,12 @@ $$
 since $\langle\tilde{U}\rangle_{\natural}=e_t$ and the biquaternion norm is central. These are the isometries: the conformal transformations that leave $\langle\cdot\rangle_{\natural}$ unchanged rather than scaling it. The dilations and the special conformal transformations do not.</p>
 </li>
 <li>
-<p><strong>Dilation.</strong> The dilation $\tilde{Q}\mapsto\lambda\tilde{Q}$ scales the form, $N\mapsto\lambda^2N$. It preserves the zero set and changes the scale, which is exactly the conformal condition with constant factor.</p>
+<p><strong>Dilation.</strong> The dilation $\tilde{Q}\mapsto\lambda\tilde{Q}$ scales the form, $\langle\tilde{Q}\rangle_{\natural}\mapsto\lambda^2\langle\tilde{Q}\rangle_{\natural}$. It preserves the zero set and changes the scale, which is exactly the conformal condition with constant factor.</p>
 </li>
 <li>
-<p><strong>Translation.</strong> A shift does not preserve $\langle\cdot\rangle_{\natural}$ pointwise, but it preserves the interval between two points,
+<p><strong>Translation.</strong> A shift does not preserve $\langle\cdot\rangle_{\natural}$ pointwise, but a shift by $\tilde Q_3$ preserves the interval between two points,
 $$
-N\bigl((\tilde{Q}+\tilde Q_3)-(\tilde{Q}_1+\tilde Q_3)\bigr)=\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural},
+\langle(\tilde Q_1+\tilde Q_3)-(\tilde Q_2+\tilde Q_3)\rangle_{\natural}=\langle\tilde Q_1-\tilde Q_2\rangle_{\natural},
 $$
 so it maps null displacements to null displacements. This is the parent article's observation that the interval survives translation.</p>
 </li>
@@ -208,7 +208,7 @@ I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1},
 $$
 because $\langle\tilde{Q}^{\natural}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ (the biquaternion norm is central, so $\tilde{Q}^{\natural}\tilde{Q}=\tilde{Q}\tilde{Q}^{\natural}$) and therefore $(\tilde{Q}^{\natural})^{-1}=\overline{\tilde{Q}^{\natural}}/\langle\tilde{Q}^{\natural}\rangle_{\natural}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$. Two properties follow and were verified: $I^2=\mathrm{id}$ where defined, and
 $$
-N\bigl(I(\tilde{Q})\bigr)=\frac{1}{\langle\tilde{Q}\rangle_{\natural}},
+\langle I(\tilde{Q})\rangle_{\natural}=\frac{1}{\langle\tilde{Q}\rangle_{\natural}},
 $$
 so $I$ maps the null cone to itself and is a conformal map with the reciprocal scale factor. Unlike the Lorentz, dilation and translation parts, the inversion is not built from the algebra's multiplication and addition alone: it uses the inverse, that is, division by the biquaternion norm.</p>
 <p>There is a small but real distinction to record. The algebra's own inverse is
@@ -270,7 +270,7 @@ reduce to a conformal map of vectors. For Minkowski space the entries live in $\
 <p><strong>Twistors.</strong> A third realization uses the same vector space as the algebra but a different structure. The double cover $SU(2,2)$ of the conformal group acts linearly on twistor space $T=S\oplus\bar{S}\cong\mathbb{C}^4$. As complex vector spaces, $T$ and $\mathbb{B}$ are both $\mathbb{C}^4$; but the form that $SU(2,2)$ preserves is a <strong>Hermitian</strong> form of signature $(2,2)$, whereas the biquaternion norm $\langle\cdot\rangle_{\natural}$ is a complex <strong>symmetric bilinear</strong> form. The spaces agree; the forms do not. This is the precise sense in which the conformal group, when it acts on the same four-dimensional vector space, enters as the <strong>unitary</strong> group of a form and not as the <strong>unit</strong> group of a norm — a different kind of group from the one the framework uses. The companion article on twistors develops this in full, with the incidence relation and the Klein correspondence; the point here is only that the twistor realization does not place the conformal group inside $\mathbb{B}$, it places it on $\mathbb{B}$ read as a new module with a new form.</p>
 <h2 id="summary">Summary</h2>
 <p>The conformal group of Minkowski space is the fifteen-parameter group $SO(2,4)$, double-covered by $SU(2,2)$, generated by the six Lorentz generators $M_{\mu\nu}$, the four translations $P_\mu$, the single dilation $D$, and the four special conformal generators $\mathcal{K}_\mu$. Its brackets were recomputed here on explicit test functions: $[D,P_\mu]=-P_\mu$, $[D,\mathcal{K}_\mu]=\mathcal{K}_\mu$, $[P_\mu,\mathcal{K}_\nu]=2(\eta_{\mu\nu}D-M_{\mu\nu})$, with the translations and special conformal generators abelian and the Lorentz part the companion article's.</p>
-<p>The biquaternion algebra carries the conformal <strong>structure</strong> but not the conformal <strong>group</strong>. What it carries: the null cone, which is the zero-divisor cone $\{N=0\}$, is the invariant object of the conformal group, and every generator preserves it; the inversion is algebraic, $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$, with $I^2=\mathrm{id}$ and $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$; the dilation is the signed inner conjugation by the non-unit element $\sqrt{\lambda}e_t$; and the special conformal transformation is the composition $I\circ T_{\tilde Q_3}\circ I$, with the explicit form
+<p>The biquaternion algebra carries the conformal <strong>structure</strong> but not the conformal <strong>group</strong>. What it carries: the null cone, which is the zero-divisor cone $\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}=0\}$, is the invariant object of the conformal group, and every generator preserves it; the inversion is algebraic, $I(\tilde{Q})=(\tilde{Q}^{\natural})^{-1}=\tilde{Q}/\langle\tilde{Q}\rangle_{\natural}$, with $I^2=\mathrm{id}$ and $\langle I(\tilde{Q})\rangle_{\natural}=1/\langle\tilde{Q}\rangle_{\natural}$; the dilation is the signed inner conjugation by the non-unit element $\sqrt{\lambda}e_t$; and the special conformal transformation is the composition $I\circ T_{\tilde Q_3}\circ I$, with the explicit form
 $$
 \tilde{Q}'=\frac{\tilde{Q}+\tilde Q_3\,\langle\tilde{Q}\rangle_{\natural}}{1+2\langle\tilde{Q},\tilde Q_3\rangle+\langle\tilde Q_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}},
 $$
@@ -322,7 +322,7 @@ which reproduces $x'^\mu=(x^\mu+a^\mu x^2)/(1+2a\cdot x+a^2x^2)$.</p>
 <td>Rotor conjugation (four-vector action)</td>
 </tr>
 <tr>
-<td>$SL(2,\mathbb{C})\cong\{N=e_t\}$</td>
+<td>$SL(2,\mathbb{C})\cong\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}=e_t\}$</td>
 <td>Unit-norm biquaternions, Lorentz double cover, real dimension $6$</td>
 </tr>
 <tr>

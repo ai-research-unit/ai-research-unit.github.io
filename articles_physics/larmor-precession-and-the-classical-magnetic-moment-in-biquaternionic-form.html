@@ -96,11 +96,11 @@ $$</p>
 <p>This is the same slot that carries the three real spatial directions $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ of the material coordinate $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and it is the slot in which the magnetic field appears in the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$. The moment and the induction are therefore elements of the <em>same</em> real subspace, and their bilinears can be formed with the ordinary quaternion product.</p>
 <p>For a pure real quaternion $\vec a$ and a pure real quaternion $\vec b$, the quaternion product splits into a scalar and a vector part,</p>
 <p>$$
-\vec a\,\vec b = -\,\vec a\cdot\vec b + \vec a\times\vec b,
+\vec a\,\vec b = -\,\vec a\cdot\vec b\,e_t + \vec a\times\vec b,
 $$</p>
 <p>with the scalar part the negative of the dot product and the vector part the cross product. Applied to the moment and the induction, this one identity contains the whole of the classical magnetic coupling:</p>
 <p>$$
-\vec\mu\,\vec B = -\,\vec\mu\cdot\vec B + \vec\mu\times\vec B.
+\vec\mu\,\vec B = -\,\vec\mu\cdot\vec B\,e_t + \vec\mu\times\vec B.
 $$</p>
 <h3 id="the-moment-of-a-rigid-rotor">The Moment of a Rigid Rotor</h3>
 <p>The classical moment of a body in rigid rotation is the case that fixes the gyromagnetic ratio. If the body rotates with angular velocity $\vec\omega$ and carries charge density $\rho_c$, the local current is $\vec j = \rho_c\,\vec\omega\times\vec r$, and the moment is</p>
@@ -278,7 +278,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The magnetic moment of a current distribution is an axial vector, and in the biquaternion framework it is a pure real quaternion $\vec\mu = \mu_k \vec e_k$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the same slot that carries the magnetic induction $\vec B = B_k \vec e_k$. The two bilinears of the magnetic coupling are the scalar and vector parts of the single quaternion product,</p>
 <p>$$
-\vec\mu\,\vec B = -\,\vec\mu\cdot\vec B + \vec\mu\times\vec B,
+\vec\mu\,\vec B = -\,\vec\mu\cdot\vec B\,e_t + \vec\mu\times\vec B,
 $$</p>
 <p>so that the energy is $E = \mathrm{Sc}(\vec\mu\vec B) = -\vec\mu\cdot\vec B$ and the torque is $\vec\tau = \mathrm{Vect}(\vec\mu\vec B) = \vec\mu\times\vec B$.</p>
 <p>The torque equation for a moment tied to an angular momentum by $\vec\mu = \gamma\vec S$ is the <strong>Larmor equation</strong></p>

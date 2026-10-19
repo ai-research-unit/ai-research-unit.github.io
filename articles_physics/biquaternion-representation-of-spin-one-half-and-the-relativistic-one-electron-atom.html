@@ -85,7 +85,7 @@
 <p>$$
 A(q) = \begin{pmatrix} q_t + iq_1 & q_y + iq_3 \\ q_y^* + (iq_3)^* & q_t - (iq_1)^* \end{pmatrix},
 $$</p>
-<p>in its equation (8), where $^*$ is complex conjugation of the coefficient. The second row is written in the source in unsimplified form; in the notation of the first row its entries are $\overline{(q_y + iq_3)}$ and $q_t + iq_1^*$. The source then evaluates $A$ on four elements and finds the identity and the three Pauli matrices:</p>
+<p>in its equation (8), where $q_1 := q_x$ and $q_3 := q_z$ are the source's coefficient labels and $^*$ is complex conjugation of the coefficient. The second row is written in the source in unsimplified form; in the notation of the first row its entries are $\overline{(q_y + iq_3)}$ and $q_t + iq_1^*$. The source then evaluates $A$ on four elements and finds the identity and the three Pauli matrices:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -129,7 +129,7 @@ $$</p>
 \ker A = \mathrm{span}_\mathbb{R}\left\{-ie_t + \vec e_x,\ -i\vec e_y + \vec e_z,\ \vec e_y + i\vec e_z\right\}.
 $$</p>
 <p>The last generator spans, over $\mathbb{C}$, the whole complex line through $-\vec e_y - i\vec e_z$, and this is not an accidental coincidence: <strong>the source's own spin-down state lies in that line</strong>. Its state $q_- = (-\vec e_y - i\vec e_z)/\sqrt2$ is a complex multiple of the third generator, and $A(q_-) = 0$ on a hundred random complex multiples. So $A$ does not merely fail to preserve products; it annihilates one of the two states the source uses, and with it every other element of the down-state line. What the source's table exhibits is an assignment that agrees with a representation on four chosen elements, not a representation.</p>
-<h3 id="the-kravchenkoshapiro-matrix-and-the-corpuss-math94">The Kravchenko–Shapiro matrix, and the corpus's $\mathsf{M}_2$</h3>
+<h3 id="the-kravchenkoshapiro-matrix-and-the-corpuss-math96">The Kravchenko–Shapiro matrix, and the corpus's $\mathsf{M}_2$</h3>
 <p>The source attributes the matrix to Kravchenko and Shapiro. The matrix of that name is the assignment of</p>
 <p>$$
 \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}, \qquad z = q_t + iq_1, \quad w = q_y + iq_3 ,
@@ -227,11 +227,11 @@ D^\dagger S_xD = S_x, \qquad D^\dagger S_yD = \cos\varphi\,S_y + \sin\varphi\,S_
 $$</p>
 <p>the component along the axis being invariant and the two transverse components rotating into one another in the standard sense, and the two remaining axes give the two remaining rotations of the same pattern. The source collects all three into the single formula (17), $D^\dagger(n_i,\varphi)S_jD(n_i,\varphi) = \tfrac{\hbar}{2}\left(q_j\cos\varphi + q_k\sin\varphi\right)$. The source does not state which pair belongs to which axis, so as printed the formula is under-determined: the reader must take the pairing from the computation, and the invariant component $j = i$ is not covered by the pattern at all.</p>
 <h2 id="the-raising-and-lowering-operators">The Raising and Lowering Operators</h2>
-<p>The source defines $S_+ = \tfrac12(S_x + iS_y)$ and $S_- = \tfrac12(S_x - iS_y)$ and finds the two quaternion elements</p>
+<p>The source defines $S_+ = S_x + iS_y$ and $S_- = S_x - iS_y$ and, in units $\hbar=1$, finds the two quaternion elements</p>
 <p>$$
 \tfrac12\left(\vec e_y - i\vec e_z\right) = S_+, \qquad \tfrac12\left(-\vec e_y - i\vec e_z\right) = S_-,
 $$</p>
-<p>which were recomputed. The raising and lowering behaviour is correct: $S_+q_- = q_+$, $S_+q_+ = 0$, $S_-q_- = 0$ and $S_-q_+ = q_-$, all verified. Two remarks belong to the notation. The first is that the source's statement that the two operators are obtained from one another by complex quaternionic conjugation holds up to a sign: the identity $S_- = -\overline{S_+^*}$ was verified and the signless form $S_- = +\overline{S_+^*}$ fails, so the claim is true in prose only if the sign is supplied. The second is an overload: the symbols $q_+$ and $q_-$ denote the two <strong>states</strong> in the source's (12)–(13) and the two <strong>operators</strong> in its (18)–(19), and these are different elements — the states are $\sqrt2$ times an idempotent and a nilpotent, the operators are real vectors. The coincidence is not accidental, since the operator $S_+$ is the source's $q_+$ times $\tfrac{\hbar}{2}$ and the state $q_-$ is $\sqrt2$ times the operator $S_-$, but a reader who carries a symbol across the two uses will be carrying the wrong element.</p>
+<p>which were recomputed. The raising and lowering behaviour is correct: $S_+q_- = q_+$, $S_+q_+ = 0$, $S_-q_- = 0$ and $S_-q_+ = q_-$, all verified. Two remarks belong to the notation. The first is that the source's statement that the two operators are obtained from one another by complex quaternionic conjugation holds up to a sign: the identity $S_- = -\overline{S_+^*}$ was verified and the signless form $S_- = +\overline{S_+^*}$ fails, so the claim is true in prose only if the sign is supplied. The second is an overload: the symbols $q_+$ and $q_-$ denote the two <strong>states</strong> in the source's (12)–(13) and the two <strong>operators</strong> in its (18)–(19), and these are different elements — the states are $\sqrt2$ times an idempotent and a nilpotent, the operators are real vectors. The coincidence is not accidental, since the state $q_-$ is $\sqrt2$ times the operator $S_-$, but a reader who carries a symbol across the two uses will be carrying the wrong element.</p>
 <h2 id="the-spinor-functions">The Spinor Functions</h2>
 <p>The source's equation (20) encodes the two-component spinor harmonic — written there with the two radicals $C_1 = \sqrt{l\pm m_j+\tfrac12}$ and $C_2 = \sqrt{l\mp m_j+\tfrac12}$, and without the normalising factor $1/\sqrt{2l+1}$ that the standard harmonic carries, so that the source's $C$'s are the radicals as printed — as the single quaternion</p>
 <p>$$
@@ -339,7 +339,7 @@ $$</p>
 </tr>
 <tr>
 <td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
-<td>Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(j\neq k)$</td>
+<td>Quaternion basis, $\vec e_\mu^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -398,11 +398,11 @@ $$</p>
 <td>The source's rotation operator; unit-norm biquaternion</td>
 </tr>
 <tr>
-<td>$S_\pm = \tfrac12(S_x \pm iS_y)$</td>
+<td>$S_\pm = S_x \pm iS_y$</td>
 <td>The source's ladder operators; $S_- = -\overline{S_+^*}$</td>
 </tr>
 <tr>
-<td>$y_l^{l\pm\frac12}$, $C_1, C_2$</td>
+<td>$Y_l^{l\pm\frac12}$, $C_1, C_2$</td>
 <td>Angular spinor harmonic and its two coefficient radicals</td>
 </tr>
 <tr>

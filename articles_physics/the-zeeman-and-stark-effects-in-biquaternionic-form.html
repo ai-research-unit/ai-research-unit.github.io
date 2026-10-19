@@ -88,7 +88,7 @@
 \tilde{H}_Z = -\gamma\,\vec B\cdot\tilde S = -\gamma B\,\tilde{S}(\vec u)
 = -\frac{\hbar\omega_L}{2}\,i\vec u,
 \qquad
-\tilde{S}(\vec u) = \vec u_k\tilde{S}_k = \frac{\hbar}{2}\,i\vec u,
+\tilde{S}(\vec u) = u_k\tilde{S}_k = \frac{\hbar}{2}\,i\vec u,
 $$</p>
 <p>where $\vec u = \vec B/B$ and</p>
 <p>$$
@@ -100,7 +100,7 @@ $$</p>
 <p>$$
 \tilde{H}_Z = -\frac{\hbar\omega_L}{2}\,\tilde\Pi_1(\vec u) + \frac{\hbar\omega_L}{2}\,\tilde\Pi_2(\vec u),
 $$</p>
-<p>because $\vec u_k\tilde{S}_k\tilde\Pi_{1,2}(\vec u) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{H}_Z\propto\vec u_k\tilde{S}_k$. The two eigenvalues are</p>
+<p>because $u_k\tilde{S}_k\tilde\Pi_{1,2}(\vec u) = \pm\tfrac{\hbar}{2}\tilde\Pi_{1,2}(\vec u)$ and $\tilde{H}_Z\propto u_k\tilde{S}_k$. The two eigenvalues are</p>
 <p>$$
 E_\pm = \pm\frac{\hbar\omega_L}{2},
 $$</p>
@@ -115,7 +115,7 @@ $$</p>
 <p>$$
 \tilde{H}_Z = \frac{\mu_B}{\hbar}\,B_i\, g_{ij}\tilde{S}_j,
 $$</p>
-<p>where $g_{ij}$ is the <strong>g-tensor</strong>, a real $3\times3$ matrix whose isotropic value is the g-factor $g_e$ of the preceding paragraph. This is still a Hermitian element of $\mathbb{M}_+$, of the form $i\vec h\cdot\mathbf{e}$ with</p>
+<p>where $g_{ij}$ is the <strong>g-tensor</strong>, a real $3\times3$ matrix whose isotropic value is the g-factor $g_e$ of the preceding paragraph. This is still a Hermitian element of $\mathbb{M}_+$, of the form $i h_j\vec e_j$ with</p>
 <p>$$
 h_j = \frac{\mu_B}{2}\,g_{ij}B_i,
 $$</p>
@@ -123,7 +123,7 @@ $$</p>
 <h3 id="level-crossings-and-the-field-axis">Level Crossings and the Field Axis</h3>
 <p>Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting is proportional to $B$, a spin-1/2 in a field has a single crossing at $B = 0$, where the two idempotents become degenerate and any axis is an eigenbasis. The Zeeman spectrum contains no accidental degeneracy and no level repulsion; the field cannot mix the two states because the coupling is diagonal in the basis it defines. This is in sharp contrast to the Stark case below, where the coupling is off-diagonal and produces an avoided crossing. The reason is algebraic: the Zeeman coupling is proportional to the same element $i\vec u$ whose idempotents it diagonalises, so it is a function of the observable being measured.</p>
 <h3 id="the-selection-rule-as-a-commutator">The Selection Rule as a Commutator</h3>
-<p>A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$ of the companion article <em>Quantum Physics in Biquaternionic Form</em>,</p>
+<p>A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde H_1,\tilde H_2] = -2(\vec h_1\times\vec h_2)$ of the companion article <em>Quantum Physics in Biquaternionic Form</em>,</p>
 <p>$$
 \left[\tilde{H}_Z,\,dE\,i\vec e_x\right] = -2\left(-\frac{\hbar\omega_L}{2}\vec u\right)\times(dE\,\vec u_x)
 = \hbar\omega_L\,dE\,(\vec u\times\vec u_x),
@@ -182,7 +182,7 @@ E_0^{(2)} = \sum_{m\neq 0}\frac{|\langle m|V|0\rangle|^2}{E_0-E_m}
 = -E_i E_j \sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0},
 $$</p>
 <p>which defines the polarizability tensor $\alpha_{ij} = 2\sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0}$ through $\Delta E_0 = -\tfrac12\alpha_{ij}E_iE_j$. The two-level formula $\alpha = 2d^2/\hbar\omega_0$ is the single-term version with one intermediate state. In the algebra the sum is over the spectral resolutions of the intermediate states, and the structure of the expression is the standard one: the coupling enters twice, once in the matrix element and once in the energy denominator, and the overall sign is negative because the ground state is pushed down by the admixture of the excited states.</p>
-<p>For the hydrogen ground state the sum gives the standard result $\alpha\mathfrak{a}_{\mathrm{H}} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha\mathfrak{a}_{\mathrm{H}} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>.</p>
+<p>For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm H} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha_{\mathrm H} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>.</p>
 <h3 id="the-avoided-crossing">The Avoided Crossing</h3>
 <p>The two-level Stark Hamiltonian is the standard avoided-crossing problem. As the field is swept, the levels repel rather than cross; in the absence of the coupling they would cross at zero detuning, and the coupling $Ed$ opens a gap $2|Ed|$ at that point. In the algebra the repulsion is the statement that the two eigenvalues of a traceless Hermitian element are $\pm|\vec h|$, and $|\vec h| = \sqrt{(Ed)^2 + (\hbar\omega_0/2)^2}$ never vanishes when both components are present. The situation is exactly the effective Hamiltonian of the Rabi problem with the roles of detuning and drive exchanged: there the longitudinal component was $(\omega_0-\omega)$ and the transverse was $\omega_1$; here the longitudinal component is the detuning divided by two and the transverse component is the dipole coupling. The two problems are the same algebraic object, read in different physical variables.</p>
 <h2 id="the-two-couplings-compared">The Two Couplings Compared</h2>
@@ -354,7 +354,7 @@ $$</p>
 <td>Quadratic Stark shift</td>
 </tr>
 <tr>
-<td>$[\tilde{Q}_1,\tilde{Q}_2] = -2(\vec Q_1\times\vec Q_2)$</td>
+<td>$[\tilde H_1,\tilde H_2] = -2(\vec h_1\times\vec h_2)$</td>
 <td>Commutator of two Hermitian elements</td>
 </tr>
 </tbody>
