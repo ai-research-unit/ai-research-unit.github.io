@@ -68,7 +68,7 @@
         <h1 id="the-zero-divisor-cone-and-the-massless-spectrum"><strong>The Zero-Divisor Cone and the Massless Spectrum</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and its vanishing set is the <strong>zero-divisor cone</strong>. Three sets live inside and around it, and the first job of this article is to keep them apart. The <strong>roots of $0$</strong> are the origin together with the elements of square zero. The <strong>nilpotents</strong> are the nonzero elements of square zero. The <strong>cone</strong> is strictly larger: it contains the non-pure zero divisors as well, the complex multiples of the non-trivial idempotents.</p>
-<p>The physical reading is the one the corpus has built. On the material sector the norm is the Minkowski interval, so the cone cut by the sector is the <strong>light cone</strong>, and the level set $\langle\tilde R\rangle_{\natural}=-m^2c^2$ is the <strong>mass shell</strong>. The massless shell is the cone itself, and the <strong>massless spectrum</strong> is what the cone does and does not fix: the shell, the rank and the direction, but not the spin.</p>
+<p>The physical reading is the one the corpus has built. On the material sector the norm is the Minkowski interval, so the cone cut by the sector is the <strong>light cone</strong>, and the level set of the four-momentum norm, $\langle\tilde P\rangle_{\natural}=-m^2c^2$, is the <strong>mass shell</strong>. The massless shell is the cone itself, and the <strong>massless spectrum</strong> is what the cone does and does not fix: the shell, the rank and the direction, but not the spin.</p>
 <p>The article owns no theorem. It states the nesting, the invertibility criterion and the factorisation, each in the mathematics or physics article that proves it, and it reads them.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
@@ -180,17 +180,24 @@ $$</p>
 <p>$$
 \langle\tilde R\rangle_{\natural}=-c^2{t'}^2+\lvert x\vec e_x+y\vec e_y+z\vec e_z\rvert^2,
 $$</p>
-<p>of signature $(-,+,+,+)$. The cone cut by $\mathbb{M}_-$ is the <strong>null cone</strong> $c^2{t'}^2=\lvert\vec r\rvert^2$, and its level set</p>
+<p>of signature $(-,+,+,+)$. The cone cut by $\mathbb{M}_-$ is the <strong>null cone</strong> $c^2{t'}^2=\lvert\vec r\rvert^2$.</p>
+<p>The mass shell is a level set of the norm of the <strong>four-momentum</strong>, not of the position. With</p>
 <p>$$
-\langle\tilde R\rangle_{\natural}=-m^2c^2
+\tilde P=i\frac{E}{c}\,e_t+\vec p,
+\qquad
+\langle\tilde P\rangle_{\natural}=-\frac{E^2}{c^2}+\lvert\vec p\rvert^2,
 $$</p>
-<p>is the <strong>mass shell</strong>. The mass is the value of the norm, up to the sign and the factor $c^2$, and the massless case is the value zero.</p>
+<p>the level set</p>
+<p>$$
+\langle\tilde P\rangle_{\natural}=-m^2c^2
+$$</p>
+<p>is the <strong>mass shell</strong>, $E^2/c^2-\lvert\vec p\rvert^2=m^2c^2$. The mass is the value of the momentum norm, up to the sign and the factor $c^2$, and the massless case is the value zero. The level sets of the position norm are the hyperboloids of constant interval; for a timelike displacement, $c^2{t'}^2-\lvert\vec r\rvert^2=c^2\tau^2$. They are not mass shells.</p>
 <p>Two facts about the cut carry the reading.</p>
 <ul>
-<li><strong>Only the massless shell is a cone.</strong> The norm is homogeneous of degree two, $\langle\lambda\tilde R\rangle_{\natural}=\lambda^2\langle\tilde R\rangle_{\natural}$, so a level set $\langle\tilde R\rangle_{\natural}=k$ is invariant under dilation only when $k=0$. The massless shell is the only shell that is a cone; a massive shell is a hyperboloid.</li>
+<li><strong>Only the massless shell is a cone.</strong> The norm is homogeneous of degree two, $\langle\lambda\tilde P\rangle_{\natural}=\lambda^2\langle\tilde P\rangle_{\natural}$, so a level set $\langle\tilde P\rangle_{\natural}=k$ is invariant under dilation only when $k=0$. The massless shell is the only shell that is a cone; a massive shell is a hyperboloid.</li>
 <li><strong>The cone is the characteristic cone of the wave operator.</strong> On the material sector the d'Alembertian has the cone as its characteristic set, which is the standard statement that signals propagate on the light cone. The algebraic cone and the characteristic cone are one object, and <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> develops the identification.</li>
 </ul>
-<p>The cone is three-real-dimensional inside the four real dimensions of the sector, and it has a single point at the origin. The interior of the future cone is the timelike region, the exterior the spacelike one, and the cone itself the lightlike boundary. The mass-shell reading uses the same norm and the same sign; only the value changes.</p>
+<p>The cone is three-real-dimensional inside the four real dimensions of the sector, and it has a single point at the origin. The interior of the future cone is the timelike region, the exterior the spacelike one, and the cone itself the lightlike boundary. The mass-shell reading uses the same norm and the same sign; the vector is the four-momentum and the value is $-m^2c^2$.</p>
 <p>The cone is invariant under the rotor group, so the timelike, spacelike and null separations are unions of orbits, and no change of frame carries a point off the cone. That invariance is the algebraic form of the statement that the causal structure is frame-independent.</p>
 <h2 id="the-massless-spectrum">The Massless Spectrum</h2>
 <p>The <strong>massless spectrum</strong> is the set of massless one-particle states of the framework. The cone is its common floor, and the reading is a division of labour: the cone fixes some of the data of a massless particle and leaves the rest to the representation theory.</p>
@@ -222,9 +229,9 @@ $$</p>
 <p>The index is two for the nilpotents: $\tilde\Upsilon^3=0$ exactly when $\tilde\Upsilon^2=0$, and there is no higher index. That rigidity is what makes the nilpotent cone a good algebraic model of a lightlike displacement: the element carries a direction, and one composition with itself is enough to erase it. It is not a model of a lightlike four-momentum, which is not erased by its own composition.</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <ul>
-<li><strong>The cone is the light cone.</strong> The interpretation is that the zero set of the norm, cut by the material sector, is the null cone of Minkowski space, and its level sets are the mass shells. Boundary: the identification needs the sector cut; on the whole algebra the cone is a complex cone and not a spacetime object.</li>
+<li><strong>The cone is the light cone.</strong> The interpretation is that the zero set of the norm, cut by the material sector, is the null cone of Minkowski space. The mass shells are the level sets of the four-momentum norm, not of the position norm. Boundary: the identification needs the sector cut; on the whole algebra the cone is a complex cone and not a spacetime object.</li>
 <li><strong>The cone is the wall of invertibility.</strong> The interpretation is that the non-invertible elements are exactly the lightlike ones, so the cone is the boundary between the reversible operations and the irreversible ones. Boundary: an algebraic statement about inverses; the thermodynamic reading is separate and cited, not derived.</li>
-<li><strong>The mass is the norm.</strong> The interpretation is that the value of the norm on the material sector is $-m^2c^2$, so the mass is a level set of the norm and the massless case is the cone itself. Boundary: the value is a parameter of the element, not a prediction of a mass spectrum.</li>
+<li><strong>The mass is the norm.</strong> The interpretation is that the value of the norm of the material four-momentum is $-m^2c^2$, so the mass is a level set of the norm and the massless case is the cone itself. Boundary: the value is a parameter of the element, not a prediction of a mass spectrum.</li>
 <li><strong>The massless spectrum is the cone plus a helicity.</strong> The interpretation is that every massless particle sits on the same cone, and the cone fixes the shell, the rank and the direction while the spin and the gauge structure are imported. Boundary: the cone derives no spin value and no particle content.</li>
 <li><strong>Rank is a mass label.</strong> The interpretation is that the sesquilinear square drops from rank two to rank one exactly on the cone, so the rank separates massless from massive and does not separate the massless particles. Boundary: a statement about the rank of one element, not about a counting of states.</li>
 <li><strong>The nilpotent is a lightlike displacement, the null vector is a lightlike momentum.</strong> The interpretation is that the pure nilpotent cone models the displacement that annihilates itself, while the physical null momentum is an imaginary multiple of an idempotent on the non-pure part of the cone. Boundary: the two objects are on the same cone and are not the same element.</li>
@@ -240,7 +247,7 @@ $$</p>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ has three nested zero sets: the roots of $0$, which are the origin and the nilpotent cone; the nilpotents, which are the nonzero pure isotropic elements of index two; and the zero-divisor cone, which is strictly larger and contains the non-pure zero divisors, the complex multiples of the non-trivial idempotents. The cone is the wall of the group of units, closed under composition and the boundary of invertibility.</p>
-<p>Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde R\rangle_{\natural}=-m^2c^2$ is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The <strong>massless spectrum</strong> is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object.</p>
+<p>Cut by the material sector, the cone is the Minkowski null cone, and the level set $\langle\tilde P\rangle_{\natural}=-m^2c^2$ of the four-momentum norm is the mass shell. Only the massless shell is a cone, because the norm is homogeneous. The <strong>massless spectrum</strong> is the cone plus a helicity: the cone fixes the shell, the rank and the direction, and it does not fix the spin. The photon, the graviton, the Rarita–Schwinger field and the chiral fermion all sit on the same cone; rank is a mass label and not a spin label. A null momentum is an imaginary multiple of a Hermitian idempotent, while a nilpotent is a pure lightlike displacement; the two are on the same cone and are not the same object.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -272,15 +279,15 @@ $$</p>
 </tr>
 <tr>
 <td>$-m^2c^2$</td>
-<td>the mass-shell level of the interval</td>
+<td>the mass-shell level of the four-momentum norm</td>
 </tr>
 <tr>
 <td>$\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$</td>
 <td>the group of units</td>
 </tr>
 <tr>
-<td>$\tilde P=i\,\xi\xi^{\dagger}$</td>
-<td>a null material momentum as an imaginary multiple of a rank-one projector</td>
+<td>$\tilde P=i\frac{E}{c}\,e_t+\vec p$; $\tilde P=i\,\xi\xi^{\dagger}$ on the cone</td>
+<td>the material four-momentum; a null momentum is an imaginary multiple of a rank-one projector</td>
 </tr>
 <tr>
 <td>$\mathrm{GPA}$, $\mathrm{GPS}$</td>

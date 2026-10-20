@@ -314,7 +314,7 @@ $$</p>
 <p>The exponential form is the polar form with $r=1$, $\alpha=0$: the pure quaternion $\vec q$ carries the three rotation parameters and $i\vec v$ the three boosts, $3+3=6$ real dimensions, the dimension of the group. In the exponential form the half-angles are visible, $\exp(\vec q/2)$ and $\exp(i\vec v/2)$, and this is why the sandwich doubles them in the general case above and why this case is the untwisted one: with $\rho=1$ the modulus is $r=1$ and both the scale and the phase have disappeared. The rotation example also shows the double cover directly: $\theta\to\theta+2\pi$ sends $\tilde U_{\mathrm L}\to-\tilde U_{\mathrm L}$, the same element of the group with opposite sign, which is the effect seen in neutron interferometry.</p>
 <p><strong>The module.</strong> The action $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$ is the spinor representation proper. It is irreducible, because $\mathbb{B}$ is simple; it is faithful, because $\mathsf{M}_2(-e_t)=-I_2$, so the operator distinguishes $\tilde U_{\mathrm L}$ from $-\tilde U_{\mathrm L}$ and the representation does not descend to the quotient $\mathbb{B}^{\times}_1/\{\pm e_t\}$; and it is non-unitary, because every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so $\rho(i\vec e_k)=i\rho(\vec e_k)$ is Hermitian while skew-adjointness would force it to vanish, killing the boosts and the whole algebra. On the module the obstruction is the identity</p>
 <p>$$
-\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^{2}=\cosh\psi+i\sinh\psi\,\vec u_{\mathrm b}\neq e_t ,
+\tilde B^{*}\tilde B=\tilde B^{2}=\cosh\psi+i\sinh\psi\,\vec u_{\mathrm b}\neq e_t ,
 $$</p>
 <p>which is the "sub-case $r=1$" of the double-dilatation statement. Physically it is the absence of an invariant probability on a finite-component object: a boost scales the two components of the spinor in opposite senses, one up and one down, and there is no finite-dimensional unitary representation of the group other than the trivial one. That is why the unitary representations are the infinite-dimensional fields.</p>
 <p><strong>The two chiralities are the untwisted two-dimensional representations.</strong> The conjugate module $\bar{S}$ carries the other handedness, and the two are inequivalent: with the two chiral Casimirs $\Omega_{\pm}=\sum_k(N_k^{\pm})^2$ built from $N_k^{\pm}=\tfrac12(\vec e_k\pm i\vec e_k)$, one finds $C_+\mapsto0$, $C_-\mapsto-3I_2$ on $S$ and the reverse on $\bar{S}$, so $S=(\tfrac12,0)\ncong(0,\tfrac12)=\bar{S}$. Neither is a minimal left ideal, since both ideals carry $S$, and neither is obtained by right multiplication, since $S^{*}\cong S$; the handedness requires the real structure, the operation that also produces the antiparticle.</p>
@@ -391,13 +391,13 @@ $$</p>
 <h2 id="the-trace-and-the-two-actors">The Trace and the Two Actors</h2>
 <p>The norm-one row and the unitary row are the two the framework uses most, and what separates them is not the group each generates but the invariant each keeps. Both keep the interval, because both have scale one: the sandwich multiplies the biquaternion norm by $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2} = r^{4}$, so it is an isometry exactly when $r = 1$, the central phase cancelling on the two sides. They differ in the trace.</p>
 <p><strong>The unitary actor keeps the trace.</strong> Let $\tilde{Q} = \lambda\tilde q$ with $\lvert\lambda\rvert = 1$. Then $\mathsf{M}_2(\tilde{Q})$ is unitary and the sandwich fixes the unit, $\mathrm{H}_{\tilde{Q}}(e_t) = \tilde{Q}\tilde{Q}^{*} = e_t$. It is multiplicative, since $\mathsf{M}_2(\tilde{Q}\tilde Q_1\tilde{S}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde{S})$ with the two outer factors regrouping, so it is an algebra automorphism, and it is the inner one $\tilde Q_1\mapsto\tilde{Q}\tilde Q_1\tilde{Q}^{-1}$ with $\tilde{Q}^{-1} = \tilde{Q}^{*}$. An inner automorphism preserves the trace, $\mathrm{Tr}(\mathrm{H}_{\tilde{Q}}(\tilde Q_1)) = \mathrm{Tr}(\tilde Q_1)$, so the operator carries every trace-one hyperplane into itself; on the informational sector it is the operator that permutes the states among themselves.</p>
-<p><strong>The norm-one actor does not.</strong> Let $\tilde U_{\mathrm b}$ be a nontrivial pure boost. On the identity the sandwich returns the square of the element,</p>
+<p><strong>The norm-one actor does not.</strong> Let $\tilde B$ be a nontrivial pure boost. On the identity the sandwich returns the square of the element,</p>
 <p>$$
-\mathrm{H}_{\tilde U_{\mathrm b}}(e_t) = \tilde U_{\mathrm b}\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}^{2} = \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b} , \qquad \mathrm{Tr}\left(\mathrm{H}_{\tilde U_{\mathrm b}}(e_t)\right) = 2\cosh\psi ,
+\mathrm{H}_{\tilde B}(e_t) = \tilde B\tilde B^{*} = \tilde B^{2} = \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b} , \qquad \mathrm{Tr}\left(\mathrm{H}_{\tilde B}(e_t)\right) = 2\cosh\psi ,
 $$</p>
 <p>which is $2$ only when the boost is absent, and on a Hermitian element $\tilde{H} = h_te_t + i\vec h$ it returns a boosted time,</p>
 <p>$$
-\mathrm{Tr}\left(\mathrm{H}_{\tilde U_{\mathrm b}}(\tilde{H})\right) = 2\left(h_t\cosh\psi + \left(\vec u_{\mathrm b}\cdot\vec h\right)\sinh\psi\right) .
+\mathrm{Tr}\left(\mathrm{H}_{\tilde B}(\tilde{H})\right) = 2\left(h_t\cosh\psi + \left(\vec u_{\mathrm b}\cdot\vec h\right)\sinh\psi\right) .
 $$</p>
 <p>The trace of the sandwich is therefore a time coordinate, and a boost cannot leave it alone: the trace-one hyperplane of the informational sector is carried off itself, which is the trace-side interpretation of the absence of an invariant probability recorded above.</p>
 <p><strong>The polar word says which factor is responsible.</strong> With $\tilde U_{\mathrm L} = B\tilde q$ the sandwich is</p>
@@ -541,7 +541,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{H}_{\tilde{Q}}(e_t)=\tilde{Q}\tilde{Q}^{*}$</td>
-<td>Image of the unit: $e_t$ for a unitary, $\tilde U_{\mathrm L}^{2}$ for a norm-one rotor</td>
+<td>Image of the unit: $e_t$ for a unitary, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*}$ for a norm-one rotor</td>
 </tr>
 <tr>
 <td>$\operatorname{Tr}\left(\mathrm{H}_{\tilde{Q}}(\tilde Q_1)\right)$</td>
