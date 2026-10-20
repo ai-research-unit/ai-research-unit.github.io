@@ -189,9 +189,9 @@ The state space of the qubit is the Bloch ball, and the obvious guess for the ac
 $$
 \tilde{Ϛ} \ \longmapsto\ \tilde U_{\mathrm L}\tilde{Ϛ}\tilde U_{\mathrm L}^{*} .
 $$
-This has the right formal properties — it preserves Hermiticity and the inertia of the matrix, hence positivity — but it is not a transformation of states. It does not preserve the trace: for the maximally mixed state,
+This has the right formal properties — it preserves Hermiticity and the inertia of the matrix, hence positivity — but it is not a transformation of states. It does not preserve the trace: for a boost $\tilde U_{\mathrm b}$ and the maximally mixed state,
 $$
-\tilde U_{\mathrm L}\,\tfrac12 e_t\,\tilde U_{\mathrm L}^{*} = \tfrac12\tilde U_{\mathrm L}^2 ,
+\tilde U_{\mathrm b}\,\tfrac12 e_t\,\tilde U_{\mathrm b}^{*} = \tfrac12\tilde U_{\mathrm b}^2 ,
 \qquad
 \mathrm{Tr}\bigl(\tilde U_{\mathrm b}\tfrac12 e_t\tilde U_{\mathrm b}^{*}\bigr) = \cosh\psi \neq 1 ,
 $$

@@ -170,7 +170,7 @@ The phase at $\alpha=\pi/2$ is multiplication by $i$, which exchanges the two se
 
 ## The Boost Factor Is Not the Acting Rotor
 
-The word's boost factor is $\tilde B=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$. Its congruence is the Lorentz boost of rapidity $\psi$. The factor that the corpus uses as the physical frame rotor is the inverse square root,
+The word's boost factor is $\tilde B=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$. Its congruence is the Lorentz boost of rapidity $\psi$; the axis $\vec u_{\mathrm b}$ is the axis of the word's boost, and for a pure-boost word ($\tilde u_{\mathrm r}=e_t$) the four-velocity is along $-\vec u_{\mathrm b}$. The factor that the corpus uses as the physical frame rotor is the inverse square root,
 
 $$
 \tilde U_{\mathrm b}=\tilde B^{-1/2},

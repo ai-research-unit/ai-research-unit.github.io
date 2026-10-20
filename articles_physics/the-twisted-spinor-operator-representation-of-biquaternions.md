@@ -190,7 +190,7 @@ The exponential form is the polar form with $r=1$, $\alpha=0$: the pure quaterni
 **The module.** The action $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$ is the spinor representation proper. It is irreducible, because $\mathbb{B}$ is simple; it is faithful, because $\mathsf{M}_2(-e_t)=-I_2$, so the operator distinguishes $\tilde U_{\mathrm L}$ from $-\tilde U_{\mathrm L}$ and the representation does not descend to the quotient $\mathbb{B}^{\times}_1/\{\pm e_t\}$; and it is non-unitary, because every finite-dimensional representation of $SL(2,\mathbb{C})$ is complex-linear, so $\rho(i\vec e_k)=i\rho(\vec e_k)$ is Hermitian while skew-adjointness would force it to vanish, killing the boosts and the whole algebra. On the module the obstruction is the identity
 
 $$
-\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^{2}=\cosh\psi+i\sinh\psi\,\vec u_{\mathrm b}\neq e_t ,
+\tilde B^{*}\tilde B=\tilde B^{2}=\cosh\psi+i\sinh\psi\,\vec u_{\mathrm b}\neq e_t ,
 $$
 
 which is the "sub-case $r=1$" of the double-dilatation statement. Physically it is the absence of an invariant probability on a finite-component object: a boost scales the two components of the spinor in opposite senses, one up and one down, and there is no finite-dimensional unitary representation of the group other than the trivial one. That is why the unitary representations are the infinite-dimensional fields.
@@ -223,16 +223,16 @@ The norm-one row and the unitary row are the two the framework uses most, and wh
 
 **The unitary actor keeps the trace.** Let $\tilde{Q} = \lambda\tilde q$ with $\lvert\lambda\rvert = 1$. Then $\mathsf{M}_2(\tilde{Q})$ is unitary and the sandwich fixes the unit, $\mathrm{H}_{\tilde{Q}}(e_t) = \tilde{Q}\tilde{Q}^{*} = e_t$. It is multiplicative, since $\mathsf{M}_2(\tilde{Q}\tilde Q_1\tilde{S}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde{S})$ with the two outer factors regrouping, so it is an algebra automorphism, and it is the inner one $\tilde Q_1\mapsto\tilde{Q}\tilde Q_1\tilde{Q}^{-1}$ with $\tilde{Q}^{-1} = \tilde{Q}^{*}$. An inner automorphism preserves the trace, $\mathrm{Tr}(\mathrm{H}_{\tilde{Q}}(\tilde Q_1)) = \mathrm{Tr}(\tilde Q_1)$, so the operator carries every trace-one hyperplane into itself; on the informational sector it is the operator that permutes the states among themselves.
 
-**The norm-one actor does not.** Let $\tilde U_{\mathrm b}$ be a nontrivial pure boost. On the identity the sandwich returns the square of the element,
+**The norm-one actor does not.** Let $\tilde B$ be a nontrivial pure boost. On the identity the sandwich returns the square of the element,
 
 $$
-\mathrm{H}_{\tilde U_{\mathrm b}}(e_t) = \tilde U_{\mathrm b}\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}^{2} = \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b} , \qquad \mathrm{Tr}\left(\mathrm{H}_{\tilde U_{\mathrm b}}(e_t)\right) = 2\cosh\psi ,
+\mathrm{H}_{\tilde B}(e_t) = \tilde B\tilde B^{*} = \tilde B^{2} = \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b} , \qquad \mathrm{Tr}\left(\mathrm{H}_{\tilde B}(e_t)\right) = 2\cosh\psi ,
 $$
 
 which is $2$ only when the boost is absent, and on a Hermitian element $\tilde{H} = h_te_t + i\vec h$ it returns a boosted time,
 
 $$
-\mathrm{Tr}\left(\mathrm{H}_{\tilde U_{\mathrm b}}(\tilde{H})\right) = 2\left(h_t\cosh\psi + \left(\vec u_{\mathrm b}\cdot\vec h\right)\sinh\psi\right) .
+\mathrm{Tr}\left(\mathrm{H}_{\tilde B}(\tilde{H})\right) = 2\left(h_t\cosh\psi + \left(\vec u_{\mathrm b}\cdot\vec h\right)\sinh\psi\right) .
 $$
 
 The trace of the sandwich is therefore a time coordinate, and a boost cannot leave it alone: the trace-one hyperplane of the informational sector is carried off itself, which is the trace-side interpretation of the absence of an invariant probability recorded above.
@@ -335,7 +335,7 @@ The twisted labels are $(j,j_2)_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a
 | $(j,j_2)_{(a,b)}$ | Twisted label; exists when $a-b\equiv 2j+2j_2\pmod 2$ |
 | $H_{\tilde{Q}}(\tilde Q_1)=\tilde{Q}\tilde Q_1\tilde{Q}^{*}$ | Hermitian sandwich, the operator on the material sector |
 | $H_{\tilde{Q}}(\tilde Q_1)=r^{2}\tilde U_{\mathrm L}\tilde Q_1\tilde U_{\mathrm L}^{*}$ | Factorization: dilatation times Lorentz |
-| $\mathrm{H}_{\tilde{Q}}(e_t)=\tilde{Q}\tilde{Q}^{*}$ | Image of the unit: $e_t$ for a unitary, $\tilde U_{\mathrm L}^{2}$ for a norm-one rotor |
+| $\mathrm{H}_{\tilde{Q}}(e_t)=\tilde{Q}\tilde{Q}^{*}$ | Image of the unit: $e_t$ for a unitary, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*}$ for a norm-one rotor |
 | $\operatorname{Tr}\left(\mathrm{H}_{\tilde{Q}}(\tilde Q_1)\right)$ | Trace of the sandwich; preserved exactly for the unitary $\tilde{Q}$, and moved by the boost factor alone |
 | $\langle H_{\tilde{Q}}(\tilde Q_1)\rangle_{\natural}=\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{2}\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=r^{4}\langle\tilde Q_1\rangle_{\natural}$ | Interval dilated by the square of the scale |
 | $\mathrm{diag}(\exp(\psi/2),\exp(-\psi/2))\mapsto\mathrm{diag}(\exp(\psi),\exp(-\psi))$ | The doubled rapidity on the boost axis |

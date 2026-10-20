@@ -313,7 +313,7 @@ $$
 \quad
 \vec B_{\perp,2} = \gamma\left(\vec B_\perp - \frac{1}{c^2}\vec v_b\times\vec E_\perp\right)
 $$
-to machine precision. Across six random boosts and random test fields, the similarity $\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ matched the standard formulas to $4\times10^{-16}$, while $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$ and its variants did not. The similarity preserves purity of the vector, $\mathrm{Sc}(\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}) = \mathrm{Sc}(\tilde{F}) = 0$, as it must.
+to machine precision. Across six random boosts and random test fields, the similarity $\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$ matched the standard formulas to $4\times10^{-16}$, while $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$ and its variants did not. The similarity preserves purity of the vector, $\mathrm{Sc}(\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}) = \mathrm{Sc}(\tilde{F}) = 0$, as it must.
 
 **Solution (c).** Boosting the rest-frame Coulomb field of the charge to the lab frame with the similarity above reproduces the velocity field of Problem 3. In the rest frame the field at the corresponding event is $\vec E_2 = \frac{ϙ}{4\pi\epsilon}\vec R_2/R_2^3$ with $\vec R_2$ the boosted separation, and transforming back gives
 $$
@@ -353,7 +353,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 **2. The present-position fallacy.** Compute the field of a uniformly moving charge using the *present* position $x_q(t')\,\vec e_x+y_q(t')\,\vec e_y+z_q(t')\,\vec e_z$ in place of the retarded position, and show that the result differs from $\vec E_v$. Identify which of the two falloff laws fails and by how much. This makes quantitative why the field point and the source point must be distinguished.
 
-**3. The transformation law from the algebra.** Derive $\tilde{F}_2 = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ directly from the biquaternion representation of the field strength as a rank-two object, rather than by comparison with the standard boost formulas. The Lorentz-transformation article's open question on higher-rank tensors is the parent of this problem.
+**3. The transformation law from the algebra.** Derive $\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$ directly from the biquaternion representation of the field strength as a rank-two object, rather than by comparison with the standard boost formulas. The Lorentz-transformation article's open question on higher-rank tensors is the parent of this problem.
 
 **4. The caustic and the superluminal case.** Determine the locus $\kappa = 0$ for a specified accelerated worldline, show that the retarded-time equation has a double root there, and describe what a point charge's field does as it is approached. Then ask what, if anything, the biquaternionic form can say about a putative superluminal source.
 
@@ -371,7 +371,7 @@ $$
 $$
 with $\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$, $dD_{0}/dt'_r = -c\left(\vec u_R\cdot\vec\beta-\beta^2\right)$, and $g = \mu ϙ/4\pi$.
 
-The velocity field falls as $1/R^2$, is of electric type, and is not null: $I_{1,v} = \left(\frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{\kappa^2R^2}\right)^2>0$, $I_{2,v}=0$, $\langle\tilde{F}_v\rangle_{\natural}\ne0$. The acceleration field falls as $1/R$, is transverse and null, and is a zero divisor: $\vec u_R\cdot\vec E_a = 0$, $I_{1,a}=I_{2,a}=0$, $\tilde{F}_a^2 = 0$. The two falloffs were verified by holding the retarded configuration fixed and scaling the observation distance, and the far-zone dominance of $\vec E_a$ follows from the one-power difference: the ratio $|\vec E_v|/|\vec E_a|$ falls off as $1/R$. The retarded denominator $\kappa$ and the charge sign were checked on two independent cases, uniform motion (where $\vec E = \vec E_v$) and motion with acceleration (where both parts contribute); $\kappa$ can be less than or greater than $1$ and is not a $\gamma$-factor. Finally, the field is not a four-vector: under a boost it transforms by the similarity $\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$, not by the rotor conjugation $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$, and the velocity field is recovered as the boost of the Coulomb field by that law.
+The velocity field falls as $1/R^2$, is of electric type, and is not null: $I_{1,v} = \left(\frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{\kappa^2R^2}\right)^2>0$, $I_{2,v}=0$, $\langle\tilde{F}_v\rangle_{\natural}\ne0$. The acceleration field falls as $1/R$, is transverse and null, and is a zero divisor: $\vec u_R\cdot\vec E_a = 0$, $I_{1,a}=I_{2,a}=0$, $\tilde{F}_a^2 = 0$. The two falloffs were verified by holding the retarded configuration fixed and scaling the observation distance, and the far-zone dominance of $\vec E_a$ follows from the one-power difference: the ratio $|\vec E_v|/|\vec E_a|$ falls off as $1/R$. The retarded denominator $\kappa$ and the charge sign were checked on two independent cases, uniform motion (where $\vec E = \vec E_v$) and motion with acceleration (where both parts contribute); $\kappa$ can be less than or greater than $1$ and is not a $\gamma$-factor. Finally, the field is not a four-vector: under a boost it transforms by the similarity $\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$, not by the rotor conjugation $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$, and the velocity field is recovered as the boost of the Coulomb field by that law.
 
 The exercise confirms the parent's field formulas on accelerated worldlines and on two independent sign conventions, and it records rather than closes four gaps: the parent's differentiation is asserted in outline and completed here; the field transformation law is stated here because the parent's remark is law-silent and the naive rotor conjugation fails; the subluminal restriction on $\kappa$ is unstated in the parent; and the component expansion of the biquaternion brackets is left as the first further problem.
 
@@ -407,7 +407,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$ | Boost rotor; carries lab to the frame moving with $+\vec v_b$ |
-| $\tilde{F}_2 = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ | Boost transformation of the field (similarity, not conjugation) |
+| $\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$ | Boost transformation of the field (similarity, not conjugation) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
