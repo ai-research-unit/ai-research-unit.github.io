@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Matrix Images: Mixedness, Rapidity and the Phase Fibre — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-matrix-images-mixedness-rapidity-and-the-phase-fibre"><strong>The Matrix Images: Mixedness, Rapidity and the Phase Fibre</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A matrix representation is usually read as a computing device: it turns the multiplication of the algebra into the multiplication of arrays. Three physical interpretations become visible only there. The determinant of the matrix image of a state is its <strong>mixedness</strong>. The spectrum of the matrix image of the sandwich is the <strong>doubled rapidity</strong> of the frame change. The unit spinors of the module are a <strong>circle bundle</strong> over the Bloch sphere, and the fibre is the phase that the state loses. A fourth reading is a distinction rather than a number: the $2\times2$ image carries the data an element acts on, and the $4\times4$ image carries the element acting on the algebra itself.</p>
+<p>The article states these four readings and their boundaries. The representations and their theorems are <em>The Element and Operator Representations</em> and the four representation articles it cites; this article owns no matrix identity. It reads invariants the matrices already carry, and it keeps apart the two things a matrix can be: a number and a map.</p>
+<p><strong>Placement.</strong> The article belongs to the Algebra block, after <em>The Element and Operator Representations</em>, whose correspondence table it reads through four further invariants. It is not a fifth representation. The $2\times2$ element image, the $4\times4$ regular image and the sandwich operator are cited, not re-derived.</p>
+<h2 id="the-results-it-uses">The Results It Uses</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The element image $\mathsf{M}_2(\tilde Q)$, its determinant $N$ and its trace $2Q_t$</td>
+<td><a href="../articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.html">Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The regular image $\mathsf{M}_4^{L}(\tilde Q)$, $\det=N^{2}$, $\operatorname{Tr}=4Q_t$, and the block splitting $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$</td>
+<td><a href="../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html">Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The sandwich operator, its matrix $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$, its spectrum $\lambda_i\bar\lambda_j$, its determinant $\lvert N\rvert^{4}$ and its trace $4\lvert Q_t\rvert^{2}$</td>
+<td><a href="../articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.html">The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint</a>, <a href="../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html">Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</a></td>
+</tr>
+<tr>
+<td>The named objects and their matrix correspondences</td>
+<td><a href="../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html">Biquaternion Objects and Their Matrix Correspondences</a></td>
+</tr>
+<tr>
+<td>The positive cone and the pure states as rank-one idempotents</td>
+<td><a href="../articles_maths/jordan-algebras-and-the-positive-cone.html">Jordan Algebras and the Positive Cone</a></td>
+</tr>
+<tr>
+<td>The principal bundle, the connection, the curvature and the holonomy</td>
+<td><a href="../articles_maths/fibre-bundles-connections-and-curvature.html">Fibre Bundles, Connections and Curvature</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>The physical sources are <em>The Element and Operator Representations</em> for the correspondence table, <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em> for the state geometry, <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em> for the quaternion presentation of the bundle, and <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em> for the half-solid-angle rule.</p>
+<h2 id="two-images-of-one-element">Two Images of One Element</h2>
+<h3 id="the-element-image-and-the-map-image">The Element Image and the Map Image</h3>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four, and it is isomorphic to $M_2(\mathbb{C})$. Two matrix images follow from that isomorphism and from the regular representation:</p>
+<p>$$
+\mathsf{M}_2(\tilde Q)\in M_2(\mathbb{C}),
+\qquad
+\mathsf{M}_4^{L}(\tilde Q)\in M_4(\mathbb{C}).
+$$</p>
+<p>The first is the matrix of the element as it acts on the <strong>spinor module</strong> $S\cong\mathbb{C}^2$. The second is the matrix of the element as it acts on the <strong>algebra</strong>, taken as a module over itself, in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$.</p>
+<p>The two are the same object seen through two kinds of data. $\mathsf{M}_2(\tilde Q)$ is the matrix of an element acting on <em>the data an object acts on</em>; $\mathsf{M}_4^{L}(\tilde Q)$ is the matrix of an element acting on <em>the objects themselves</em>. The corpus names the two pictures <strong>element-data</strong> and <strong>map-data</strong>. The reading is an interpretation, and its content is the doubling: the regular module is $S\oplus S$, split by the two minimal left ideals, which are the two column chiralities. In the column-adapted basis the regular image is block diagonal with two equal blocks,</p>
+<p>$$
+\mathsf{M}_4^{L}\;\cong\;\mathsf{M}_2\oplus\mathsf{M}_2 .
+$$</p>
+<p>That is the dictionary between the two kinds of data. The map-data image is the element-data image taken twice, one copy per chirality.</p>
+<p><strong>The bookkeeping of the doubling.</strong> The doubling is visible in every invariant. The trace doubles, from $2Q_t$ to $4Q_t$; the determinant squares, from $N$ to $N^2$; and the sandwich, which is the product of the two regular images, has determinant $\lvert N\rvert^{4}$ and trace $4\lvert Q_t\rvert^{2}$. None of these factors is a physical quantity. They are the dimension of the module over which the trace is taken and the number of copies the regular module contains. The one invariant that does not move is the vanishing set: $\det\mathsf{M}_2(\tilde Q)=0$, $\det\mathsf{M}_4^{L}(\tilde Q)=0$ and $\det\operatorname{H}_{\tilde Q}=0$ exactly on the zero-divisor cone.</p>
+<p><strong>The boundary.</strong> The two pictures are one representation taken twice, not two theories. The names describe what the matrix acts on, and they do not assert two physical descriptions. A result proved in one picture must be translated before it is read in the other, and the determinant degree is where the translation is most often skipped.</p>
+<p>The sandwich is a third matrix, $\operatorname{H}_{\tilde Q}=\mathsf{M}_4^{L}(\tilde Q)\mathsf{M}_4^{R}(\tilde Q^{*})$, quadratic in the parameter and a congruence rather than a similarity. Its spectrum is the subject of the rapidity reading below.</p>
+<h2 id="the-determinant-of-a-state-is-its-mixedness">The Determinant of a State Is Its Mixedness</h2>
+<h3 id="the-trace-one-slice">The Trace-One Slice</h3>
+<p>A state of the informational sector is an element</p>
+<p>$$
+\tilde{Ϛ}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad \vec r=(r_x,r_y,r_z)\in\mathbb{R}^3,
+$$</p>
+<p>with $\lvert\vec r\rvert\le1$. It is Hermitian, of trace one, and positive exactly on the closed ball. Its matrix image is the density matrix</p>
+<p>$$
+\mathsf{M}_2(\tilde{Ϛ})=\tfrac12\bigl(\mathrm{I}_2+r_k\,\mathsf{M}_2(i\vec e_k)\bigr),
+$$</p>
+<p>the standard Bloch form, with the three matrices $\mathsf{M}_2(i\vec e_k)$ Hermitian, traceless and of square $\mathrm{I}_2$.</p>
+<p>The determinant of this matrix is</p>
+<p>$$
+\det\mathsf{M}_2(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr).
+$$</p>
+<p>It is the biquaternion norm $N(\tilde{Ϛ})$ of the state, and it is real and non-negative on the ball. The two eigenvalues of the matrix are $\tfrac12(1\pm\lvert\vec r\rvert)$, so the determinant is their product, the two-dimensional volume the two eigen-directions span. On the Bloch ball it is the radial gap to the pure boundary: it vanishes on the sphere and is maximal at the centre.</p>
+<h3 id="the-three-numbers">The Three Numbers</h3>
+<p>Three quantities read off the same determinant:</p>
+<p>$$
+\operatorname{Tr}(\tilde{Ϛ}^{2})=1-2\det\mathsf{M}_2(\tilde{Ϛ}),
+\qquad
+S_L=1-\operatorname{Tr}(\tilde{Ϛ}^{2})=2\det\mathsf{M}_2(\tilde{Ϛ}).
+$$</p>
+<p>The first is the <strong>purity</strong>; the second is the <strong>linear entropy</strong>. At the centre, $\vec r=0$, the determinant is $\tfrac14$, the purity is $\tfrac12$ and the linear entropy is $\tfrac12$, its maximum on the ball. On the sphere the determinant vanishes, the purity is one and the linear entropy is zero.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>position in the ball</th>
+<th>$\det\mathsf{M}_2(\tilde{Ϛ})$</th>
+<th>purity</th>
+<th>linear entropy</th>
+<th>state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre, $\lvert\vec r\rvert=0$</td>
+<td>$\tfrac14$</td>
+<td>$\tfrac12$</td>
+<td>$\tfrac12$</td>
+<td>maximally mixed</td>
+</tr>
+<tr>
+<td>interior, $0<\lvert\vec r\rvert<1$</td>
+<td>$\tfrac14(1-r^{2})$</td>
+<td>$\tfrac12(1+r^{2})$</td>
+<td>$\tfrac12(1-r^{2})$</td>
+<td>mixed</td>
+</tr>
+<tr>
+<td>boundary, $\lvert\vec r\rvert=1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>pure</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The matrix volume.</strong> The determinant is not a probability and not an entropy; it is the product of the two eigenvalues of the state matrix. The purity and the linear entropy are affine functions of it, which is why the determinant is the one matrix invariant from which both are read. The von Neumann entropy is not such a function: it is $-\sum\lambda_\pm\log\lambda_\pm$, a nonlinear function of the same pair, and it is not a polynomial in the determinant.</p>
+<h3 id="purity-is-the-zero-divisor">Purity Is the Zero Divisor</h3>
+<p>The vanishing of the determinant is the vanishing of the norm, and the norm is the invertibility criterion. Hence:</p>
+<ul>
+<li>inside the ball the state is a <strong>unit</strong>, invertible as an element and as a map;</li>
+<li>on the sphere the state is a <strong>zero divisor</strong>, of rank one, and its matrix image is the rank-one projector onto a ray.</li>
+</ul>
+<p>The pure states are therefore exactly the states on the wall of the algebra. This is the matrix form of the statement of <em>The Unit Group, the Cone and the Orders</em>: the cone meets the positive cone in the cone over the pure states, and its trace-one slice is the Bloch sphere. The determinant is a measure of the distance to that wall, vanishing on it and maximal at the centre.</p>
+<p><strong>The boundary.</strong> The identity $\operatorname{Tr}(\tilde{Ϛ}^{2})=1-2\det$ holds in the trace-one normalisation and for a positive element. For a general element of $\mathbb{B}$ the determinant is the complex norm, and it is not a mixedness; the reading requires the state conditions, not the matrix alone. The linear entropy is one monotone among many, and the determinant supplies no entropy argument beyond it.</p>
+<h2 id="the-spectrum-is-the-doubled-rapidity">The Spectrum Is the Doubled Rapidity</h2>
+<h3 id="the-eigenvalues-of-the-element">The Eigenvalues of the Element</h3>
+<p>The element matrix satisfies its characteristic equation</p>
+<p>$$
+\lambda^{2}-2Q_t\,\lambda+N=0,
+$$</p>
+<p>so its two eigenvalues are</p>
+<p>$$
+\lambda_\pm=Q_t\pm\sqrt{Q_t^{2}-N}
+=Q_t\pm\sqrt{-\bigl(Q_x^{2}+Q_y^{2}+Q_z^{2}\bigr)} .
+$$</p>
+<p>The sandwich has the four eigenvalues $\lambda_i\bar\lambda_j$, so the nontrivial pair of the operator is the <strong>square</strong> of the pair of the element. The element stores half of the frame change; the congruence stores the whole of it.</p>
+<h3 id="the-boost">The Boost</h3>
+<p>Take the boost rotor of rapidity $\eta$ along $\vec e_z$,</p>
+<p>$$
+\tilde B_\eta=\cosh\tfrac{\eta}{2}\,e_t+\sinh\tfrac{\eta}{2}\,i\vec e_z .
+$$</p>
+<p>Its norm is one, and its matrix is diagonal in the eigenbasis of $\mathsf{M}_2(i\vec e_z)$:</p>
+<p>$$
+\mathsf{M}_2(\tilde B_\eta)=\operatorname{diag}\bigl(e^{\eta/2},e^{-\eta/2}\bigr).
+$$</p>
+<p>The sandwich therefore has the eigenvalues</p>
+<p>$$
+e^{\eta},\;1,\;1,\;e^{-\eta}.
+$$</p>
+<p>The two middle eigenvalues are the transverse directions, which the boost fixes. The longitudinal pair is squared: the element carries $e^{\pm\eta/2}$ and the congruence carries $e^{\pm\eta}$. The corpus's worked rotor $\tilde Q=\tfrac53e_t+\tfrac43i\vec e_z$ has matrix $\operatorname{diag}(3,\tfrac13)$ and operator eigenvalues $9,1,1,\tfrac19$. In the convention of this article its frame rapidity is $\eta=2\ln3$, while the operand stores $\eta/2=\ln3$; the source names the stored value the rapidity and the four-vector value twice that.</p>
+<p><strong>The reading.</strong> The rapidity is the logarithm of the eigenvalue ratio. The element matrix stores <strong>half</strong> the rapidity, because it acts on the spinor, and the spinor is the half-spin representation of the Lorentz group. The congruence acts on the Hermitian matrix, which is the four-vector, and stores the full rapidity. The factor two is the same factor that makes a rotation through $2\pi$ return the spinor with a minus sign and the vector to itself.</p>
+<h3 id="the-rotation-and-the-double-cover">The Rotation, and the Double Cover</h3>
+<p>Take the rotation rotor of angle $\theta$ about $\vec e_z$,</p>
+<p>$$
+\tilde R_\theta=\cos\tfrac{\theta}{2}\,e_t+\sin\tfrac{\theta}{2}\,\vec e_z .
+$$</p>
+<p>Its matrix has the eigenvalues $e^{\pm i\theta/2}$, and the sandwich has $e^{\pm i\theta}$ beside the two transverse eigenvalues $1$. At $\theta=2\pi$ the element eigenvalues are $e^{\pm i\pi}=-1$, while the operator eigenvalues are $e^{\pm2\pi i}=1$. The spectrum is the double cover: the spinor returns with a sign, the four-vector returns unchanged. The logarithm of the modulus of the eigenvalue is half the rapidity, its argument the half-angle, and the congruence doubles both.</p>
+<h3 id="where-the-reading-stops">Where the Reading Stops</h3>
+<p>The eigenvalue reading requires the element matrix to be diagonalisable. Off the cone it is, except on a set of measure zero. On the cone $N=0$, the characteristic equation is $\lambda(\lambda-2Q_t)=0$, and the eigenvalues are $0$ and $2Q_t$: they collide at zero only on the trace-zero part of the cone, where the matrix is nilpotent. There the four operator eigenvalues vanish while its rank is one, the operator is not diagonalisable, and no rapidity is defined. The four eigenvalues vanish because the rank has dropped to one, not because a pair of nonzero eigenvalues has met.</p>
+<p>A general Lorentz element need not be either a pure boost or a pure rotation, and its eigenvalues are then neither real and reciprocal nor conjugate of unit modulus. The pair (rapidity, angle) is not read off a single eigenvalue; the polar decomposition is what separates the two factors. The "doubled rapidity" is a reading of the pure cases and of the polar factors, not a formula for a general element.</p>
+<h2 id="the-unit-spinors-are-a-phase-fibre">The Unit Spinors Are a Phase Fibre</h2>
+<h3 id="the-hopf-map">The Hopf Map</h3>
+<p>The spinor module is $S\cong\mathbb{C}^2$. Its unit vectors form the three-sphere</p>
+<p>$$
+S^{3}=\bigl\{\varsigma\in\mathbb{C}^{2}:\lVert\varsigma\rVert=1\bigr\}.
+$$</p>
+<p>The map</p>
+<p>$$
+\pi(\varsigma)=\varsigma\varsigma^{\dagger}
+$$</p>
+<p>sends a unit spinor to a rank-one Hermitian matrix of trace one, which is a pure state of the informational sector. In the algebra it is the idempotent $\tfrac12(e_t+i\vec u)$ with $\vec u$ the Bloch vector of $\varsigma$. The map is surjective onto the Bloch sphere $S^{2}$, and its fibre over a state is the set of spinors that differ by a phase:</p>
+<p>$$
+\bigl\{e^{i\alpha}\varsigma:\alpha\in\mathbb{R}\bigr\}.
+$$</p>
+<p>That phase is the <strong>central phase</strong>: the element $e^{i\alpha}e_t$ acts on the spinor as the scalar matrix $e^{i\alpha}\mathrm{I}_2$. The bundle</p>
+<p>$$
+\mathrm{U}(1)\hookrightarrow S^{3}\longrightarrow S^{2}
+$$</p>
+<p>is the Hopf bundle, of first Chern number one. The state carries the axis and no phase; the phase is the fibre.</p>
+<h3 id="the-two-circles">The Two Circles</h3>
+<p>The corpus's Hopf article writes the same geometry on the unit real quaternions, where the map is $\tilde U\mapsto\tilde U\vec e_z\bar{\tilde U}$ and the fibre is the <strong>stabiliser</strong> of the axis, the circle of rotations about $\vec e_z$. That circle and the central phase circle are different subgroups of $\mathrm{U}(2)$: the stabiliser is the diagonal torus $\{\operatorname{diag}(e^{i\alpha},e^{-i\alpha})\}$, the central phase is the scalar circle $\{\operatorname{diag}(e^{i\alpha},e^{i\alpha})\}$, and they meet only in $\{\pm\mathrm{I}_2\}$.</p>
+<p>The two descriptions are two presentations of the Hopf bundle, and they must not be identified fibre by fibre. In the spinor-ray description the fibre is the overall phase; in the quaternion-conjugation description the fibre is the stabiliser, and the central imaginary $i$ is the coefficient of the abelian connection. Both statements are correct, and neither is the other. The distinction matters as soon as a phase is called a gauge transformation: the overall phase moves no state, while the stabiliser is a rotation about the axis, trivial on that state and non-trivial on the others.</p>
+<h3 id="the-holonomy">The Holonomy</h3>
+<p>The natural connection on the Hopf bundle has curvature $-\tfrac12$ times the area form of the sphere. Its holonomy over a loop is therefore</p>
+<p>$$
+\gamma=-\tfrac12\,\Omega,
+$$</p>
+<p>minus one half of the enclosed solid angle. This is the Pancharatnam phase, and the Berry phase of a spin in a slowly varying field is the same holonomy. The factor $\tfrac12$ is the factor of the double cover again: a rotation of the vector by $\theta$ is a phase of $\theta/2$ on the spinor.</p>
+<p><strong>The boundary.</strong> The bundle, its Chern number, the connection and the phase are owned by <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em> and <em>Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</em>. The article records the matrix image of the fibre and adds no topology. The unit spinor is not a unit-norm biquaternion: the unit spinors form $S^{3}$, the unit-norm biquaternions form $SL(2,\mathbb{C})$, of real dimension six, and the unit real quaternions, read as spinors, are the common three-sphere.</p>
+<h2 id="what-the-three-readings-share">What the Three Readings Share</h2>
+<p>A $2\times2$ matrix has two scalar invariants, its determinant and its trace, and the three readings divide them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>matrix</th>
+<th>determinant</th>
+<th>eigenvalue pair</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2(\tilde{Ϛ})$</td>
+<td>$\tfrac14(1-r^{2})$</td>
+<td>$\tfrac12(1\pm r)$</td>
+<td>mixedness; the purity is affine in the determinant</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde B_\eta)$</td>
+<td>$1$</td>
+<td>$e^{\pm\eta/2}$</td>
+<td>half the rapidity</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2(\tilde R_\theta)$</td>
+<td>$1$</td>
+<td>$e^{\pm i\theta/2}$</td>
+<td>half the angle</td>
+</tr>
+<tr>
+<td>$\varsigma\varsigma^{\dagger}$</td>
+<td>$0$</td>
+<td>$1,0$</td>
+<td>a pure state; the fibre over it is the phase</td>
+</tr>
+</tbody>
+</table></div>
+<p>The determinant is a <strong>scale</strong>, the eigenvalue ratio a <strong>shape</strong>, and the phase the one datum the map to the ray forgets. The three are independent. A state matrix has a determinant and a real eigenvalue ratio; the ratio is a population ratio and not a rapidity, because the state is Hermitian and is not a Lorentz frame element. A boost matrix has a rapidity and determinant one, because it is a unit. A unit spinor has a phase and a pure-state image of determinant zero, because the map to the ray is rank one.</p>
+<p>Read together, the three readings say what a matrix image can carry: a norm, a frame and a volume. It cannot carry the phase of the element, which the sandwich loses and the state ray forgets, and it cannot carry a dynamics.</p>
+<h2 id="limits">Limits</h2>
+<p>The article reads invariants. It derives no equation of motion, no Lorentz action and no measurement update.</p>
+<p>The mixedness reading requires a trace-one positive element. For a general element the determinant is the complex norm, and it is not a mixedness; the purity formula is a statement about the Bloch ball and not about $\mathbb{B}$.</p>
+<p>The rapidity reading requires a diagonalisable element matrix and a pure boost or rotation. On the cone one eigenvalue vanishes; on its trace-zero part the two collide at zero and the reading stops. For a general Lorentz element no single rapidity exists.</p>
+<p>The phase-fibre reading is the Hopf bundle, not a gauge field. The connection, its curvature and its Chern number are cited; no gauge dynamics and no charge quantisation are derived.</p>
+<p>The element-data and map-data distinction is an interpretation of the doubling $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$, not an identification of two theories.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The $2\times2$ image is the element acting on the spinor data; the $4\times4$ regular image is the element acting on the algebra, and it is the $2\times2$ image taken twice, $\mathsf{M}_4\cong\mathsf{M}_2\oplus\mathsf{M}_2$.</li>
+<li>The trace doubles, $2Q_t$ to $4Q_t$; the determinant squares, $N$ to $N^2$; the sandwich determinant is $\lvert N\rvert^{4}$. Only the vanishing set is common to the three.</li>
+<li>The determinant of a trace-one state is $\tfrac14(1-\lvert\vec r\rvert^{2})$, the product of its two eigenvalues; the purity is $1-2\det$ and the linear entropy is $2\det$.</li>
+<li>The determinant vanishes exactly on the pure states, so the pure states are the zero divisors of the state slice and the mixed states are its units.</li>
+<li>For a pure boost or rotation, the element matrix stores half the rapidity or half the angle; the sandwich stores the full one, because the congruence acts on the four-vector and the element on the spinor.</li>
+<li>The spectrum is the double cover: a rotation through $2\pi$ gives $-1$ on the element and $1$ on the congruence.</li>
+<li>The unit spinors form $S^{3}$ over the Bloch sphere $S^{2}$ with fibre the central phase; the bundle is the Hopf bundle and its holonomy is minus one half the solid angle.</li>
+<li>The Hopf fibre of the spinor-ray description is the central phase; the Hopf fibre of the quaternion-conjugation description is the stabiliser torus. The two circles meet only in $\{\pm\mathrm{I}_2\}$.</li>
+<li>The determinant is a scale, the eigenvalue ratio a shape, and the phase what the ray forgets. No invariant of a single matrix supplies a dynamics.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf{M}_2(\tilde Q)$</td>
+<td>the element image in $M_2(\mathbb{C})$; $\det=N$, $\operatorname{Tr}=2Q_t$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_4^{L}(\tilde Q)$</td>
+<td>the left regular image in $M_4(\mathbb{C})$; $\det=N^{2}$, $\operatorname{Tr}=4Q_t$</td>
+</tr>
+<tr>
+<td>$\operatorname{H}_{\tilde Q}$</td>
+<td>the sandwich operator; $\det=\lvert N\rvert^{4}$, $\operatorname{Tr}=4\lvert Q_t\rvert^{2}$</td>
+</tr>
+<tr>
+<td>$\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$</td>
+<td>a trace-one state of the Bloch ball</td>
+</tr>
+<tr>
+<td>$\det\mathsf{M}_2(\tilde{Ϛ})$</td>
+<td>the mixedness, $\tfrac14(1-\lvert\vec r\rvert^{2})$</td>
+</tr>
+<tr>
+<td>$S_L=2\det\mathsf{M}_2(\tilde{Ϛ})$</td>
+<td>the linear entropy</td>
+</tr>
+<tr>
+<td>$\tilde B_\eta$</td>
+<td>the boost rotor of rapidity $\eta$, of eigenvalues $e^{\pm\eta/2}$</td>
+</tr>
+<tr>
+<td>$\tilde R_\theta$</td>
+<td>the rotation rotor of angle $\theta$, of eigenvalues $e^{\pm i\theta/2}$</td>
+</tr>
+<tr>
+<td>$\varsigma$</td>
+<td>a unit spinor of $S\cong\mathbb{C}^{2}$</td>
+</tr>
+<tr>
+<td>$\pi(\varsigma)=\varsigma\varsigma^{\dagger}$</td>
+<td>the Hopf map to the Bloch sphere</td>
+</tr>
+<tr>
+<td>$\gamma=-\tfrac12\Omega$</td>
+<td>the Pancharatnam phase, the holonomy of the Hopf connection</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-element-and-operator-representations.html">The Element and Operator Representations</a>, for the correspondence table this article extends.</li>
+<li><a href="the-2x2-matrix-operator-representation-m2c-of-biquaternions.html">The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions</a>, for the congruence, its rank and its determinant.</li>
+<li><a href="the-4x4-matrix-operator-representation-of-biquaternions.html">The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions</a>, for the spectrum $\lambda_i\bar\lambda_j$ and the boost example.</li>
+<li><a href="the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html">The Bloch Ball as the Trace-One Slice of the Future Light Cone</a>, for the ball, its centre and its boundary.</li>
+<li><a href="the-informational-sector-states-observables-and-probability.html">The Informational Sector: States, Observables and Probability</a>, for the state conditions and the Born pairing.</li>
+<li><a href="the-zero-divisor-cone-and-the-massless-spectrum.html">The Zero-Divisor Cone and the Massless Spectrum</a>, for the cone as the boundary of the state space.</li>
+<li><a href="the-unit-group-the-cone-and-the-orders.html">The Unit Group, the Cone and the Orders</a>, for the partition into units and zero divisors.</li>
+<li><a href="the-hopf-fibration-and-the-biquaternion-gauge-bundle.html">The Hopf Fibration and the Biquaternion Gauge Bundle</a>, for the bundle, its fibre and its Chern number.</li>
+<li><a href="pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html">Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form</a>, for the half-solid-angle rule.</li>
+<li><a href="exercise-the-bloch-ball-and-the-geometry-of-mixed-states.html">Exercise: The Bloch Ball and the Geometry of Mixed States</a>, for the determinant, purity and linear entropy.</li>
+<li><a href="../articles_maths/biquaternion-objects-and-their-matrix-correspondences.html">Biquaternion Objects and Their Matrix Correspondences</a>, for the objects and their images.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
