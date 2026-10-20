@@ -20,7 +20,7 @@ The article is organized as follows. The field, its constraint, and the conseque
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless gauge field whose gauge structure the massless Rarita–Schwinger case generalizes.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the fermionic quantization of half-integer-spin fields.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_i \vec e_j=-\delta_{ij}e_t+\varepsilon_{ijk}\vec e_k$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The vector part of the material sector is $V=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, on which the adjoint action of the rotation algebra acts as the spin-one representation. The spinor carrier is the left ideal of the Dirac article, with the Clifford algebra $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ defined by $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, so that $(\gamma^0)^2=+I_4$ and $(\gamma^k)^2=-I_4$; the $ict$ coordinate metric remains $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and $g=-\eta$. The vector-spinor is $\psi_\mu$, with $\mu$ the material vector index and the spinor index suppressed; the $\gamma$-trace is $\gamma^\mu\psi_\mu$. The mass is $m$, natural units are used, and the metric-dependent contractions follow the Clifford convention $g$ while the coordinate contraction of the field with $dx^\mu$ follows the $ict$ convention $\eta$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_i \vec e_j=-\delta_{ij}e_t+\varepsilon_{ijk}\vec e_k$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The vector part of the material sector is $V=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, on which the adjoint action of the rotation algebra acts as the spin-one representation. The spinor carrier is the left ideal of the Dirac article, with the Clifford algebra $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$ defined by $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, so that $(\gamma^0)^2=+I_4$ and $(\gamma^k)^2=-I_4$; the $ict'$ coordinate metric remains $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and $g=-\eta$. The vector-spinor is $\psi_\mu$, with $\mu$ the material vector index and the spinor index suppressed; the $\gamma$-trace is $\gamma^\mu\psi_\mu$. The mass is $m$, natural units are used, and the metric-dependent contractions follow the Clifford convention $g$ while the coordinate contraction of the field with $dx^\mu$ follows the $ict'$ convention $\eta$.
 
 ## The Field, Its Constraint, and Transversality
 
@@ -136,7 +136,7 @@ with $\chi_a$ the second-class constraints. The effect of the Dirac bracket is t
 The quantized field is fermionic: the equal-time anticommutator of the field and its momentum is the projection of the naive anticommutator onto the constraint surface,
 
 $$
-\{\psi_\mu(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\,\pi^\nu(t,\vec y)\}
+\{\psi_\mu(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\,\pi^\nu(t',\vec y)\}
 = i\,P_\mu{}^\nu\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y) ,
 $$
 
@@ -276,7 +276,7 @@ In the biquaternion framework the field is the tensor product of the material ve
 | $\Pi_{\mu\nu}$ | Transverse $\gamma$-traceless (Rarita–Schwinger) projector; rank $8$, and $4$ on positive-energy solutions |
 | $\sum_r \xi_{\mu,r}\bar\xi_{\nu,r}=-(\not p+m)\Pi_{\mu\nu}$ | Completeness relation, carried by the transverse projector |
 | $G_{\mu\nu}(p)$ | Propagator; inverse of the quadratic form on the traceless subspace |
-| $g=\mathrm{diag}(+1,-1,-1,-1)$, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ | Clifford metric (level 3); the $ict$ metric is $\eta=-g$ |
+| $g=\mathrm{diag}(+1,-1,-1,-1)$, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ | Clifford metric (level 3); the $ict'$ metric is $\eta=-g$ |
 
 ## Further Reading
 

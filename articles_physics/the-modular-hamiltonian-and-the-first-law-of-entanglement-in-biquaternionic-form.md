@@ -32,7 +32,7 @@ Let $\sigma$ be a faithful state of a von Neumann algebra $M$, with modular oper
 $$
 K_\sigma=-\log\Delta_\sigma,
 $$
-a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_t(\tilde Q_1)=\exp(-itK_\sigma)\tilde Q_1 \exp(itK_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $\sigma\,\cdot\,\sigma^{-1}$ and $\sigma$ a density matrix,
+a self-adjoint (generally unbounded) operator affiliated with $M$, so that the modular flow of the preceding article is formally $\sigma_{t'}(\tilde Q_1)=\exp(-it'K_\sigma)\tilde Q_1 \exp(it'K_\sigma)$. In finite dimension, with $\Delta_\sigma$ acting as $\sigma\,\cdot\,\sigma^{-1}$ and $\sigma$ a density matrix,
 $$
 K_\sigma=-\log\sigma,
 $$
@@ -40,7 +40,7 @@ a Hermitian element of the algebra, so that $\sigma=\exp(-K_\sigma)$ and $\mathr
 
 - **It is the state's logarithm.** $\sigma$ and $K_\sigma$ carry the same information; the entropy is $S(\sigma)=\mathrm{Tr}(\sigma K_\sigma)=\langle K_\sigma\rangle_\sigma$, the state's modular energy.
 - **It is defined by the state.** Different states have different modular Hamiltonians, and the difference of two modular Hamiltonians is the logarithm of the relative modular operator of the relative-entropy companion article.
-- **It generates the modular flow.** The commutation relation $\frac{d}{dt}\sigma_t(\tilde Q_1)|_{t=0}=-i[K_\sigma,\tilde Q_1]$ of the thermal-time companion article makes $K_\sigma$ the generator of the state's own time.
+- **It generates the modular flow.** The commutation relation $\frac{d}{dt'}\sigma_{t'}(\tilde Q_1)|_{t'=0}=-i[K_\sigma,\tilde Q_1]$ of the thermal-time companion article makes $K_\sigma$ the generator of the state's own time.
 
 ### The Modular Hamiltonian of a Biquaternion State
 

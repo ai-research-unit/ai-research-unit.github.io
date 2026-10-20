@@ -53,7 +53,7 @@ The two-point function is the **Feynman propagator**, and the product over pairs
 
 **The fermionic sign.** For fermionic fields the time-ordered product carries a graded sign: the product is defined with a minus sign for every transposition of two fermionic factors needed to bring them into time order, and the contraction of two fermionic fields may equivalently be read off from the ordinary product plus the anticommutator. For Grassmann-valued or operator-valued fermions the definition is
 $$
-T\big\{\psi^{\mathrm{fop}}_i\psi^{\mathrm{fop}}_j\big\} = \Theta(t_i-t_j)\,\psi^{\mathrm{fop}}_i\psi^{\mathrm{fop}}_j - \Theta(t_j-t_i)\,\psi^{\mathrm{fop}}_j\psi^{\mathrm{fop}}_i ,
+T\big\{\psi^{\mathrm{fop}}_i\psi^{\mathrm{fop}}_j\big\} = \Theta(t'_i-t'_j)\,\psi^{\mathrm{fop}}_i\psi^{\mathrm{fop}}_j - \Theta(t'_j-t'_i)\,\psi^{\mathrm{fop}}_j\psi^{\mathrm{fop}}_i ,
 $$
 with the minus sign present for fermions and absent for bosons. The relative sign between the possible complete pairings of a $2m$-point function is the **parity of the permutation** that realizes the pairing, which is why the fermionic Wick theorem is the bosonic one multiplied by the signature of the pairing:
 $$
@@ -199,7 +199,7 @@ For the field the contraction is the **Feynman propagator**, and this is the poi
 $$
 \big(i\gamma^\mu\partial/\partial Q_\mu - m\big) S_F(x-y) = \delta^{(4)}(x-y),
 $$
-and the biquaternion content of $S_F$ is the same as that of the scalar $D_F$: its four-momentum-space form is a function of the wave biquaternion $\tilde P = iEe_t+\vec p$, and its pole sits on the mass shell $\tilde P\tilde P^{\natural} = -m^2$, in the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The propagator article's finding carries over verbatim: the algebra names the wave biquaternion and the axis of the $i\epsilon$ deformation — the $ict$ direction of $\mathbb{M}_-$ — but it does not choose the orientation of the deformation, which is the choice of Feynman contour. The Wick theorem uses the propagator; it does not produce it.
+and the biquaternion content of $S_F$ is the same as that of the scalar $D_F$: its four-momentum-space form is a function of the wave biquaternion $\tilde P = iEe_t+\vec p$, and its pole sits on the mass shell $\tilde P\tilde P^{\natural} = -m^2$, in the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The propagator article's finding carries over verbatim: the algebra names the wave biquaternion and the axis of the $i\epsilon$ deformation — the $ict'$ direction of $\mathbb{M}_-$ — but it does not choose the orientation of the deformation, which is the choice of Feynman contour. The Wick theorem uses the propagator; it does not produce it.
 
 Within the one-mode truncation, the contraction is a **central scalar** times $e_t$: $\langle\vec\Upsilon_x\vec\Upsilon_y\rangle_t = 1$ is an element of $\mathbb{C}_{\mathbb{B}}$. This is the algebraic shadow of the field statement that a contraction is a $c$-number, and it is why the contracted products in the table are scalars. The mode algebra's contractions are the entries of a positive semidefinite matrix — the covariance of the state — and the alternating structure of the one-mode contractions is the $\mathbb{Z}_2$-graded version of the bosonic Gaussian form.
 

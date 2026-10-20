@@ -42,23 +42,23 @@ $$
 \gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu = 2g^{\mu\nu}I_4, \qquad g = \mathrm{diag}(+1,-1,-1,-1).
 $$
 
-The index $0$ is the timelike direction of the $ict$ gradient; with the mostly-minus generators it is the three spacelike indices $k = 1,2,3$ that carry the negative Clifford square. Thus
+The index $0$ is the timelike direction of the $ict'$ gradient; with the mostly-minus generators it is the three spacelike indices $k = 1,2,3$ that carry the negative Clifford square. Thus
 
 $$
 (\gamma^0)^2 = +I_4, \qquad (\gamma^k)^2 = -I_4, \qquad k = 1,2,3.
 $$
 
-This is the standard **mostly-minus** convention, and it is the one the corpus uses throughout: the generators are the usual ones, the name is correct in the standard counting, and the square of a Clifford vector agrees with the biquaternion norm of the biquaternion the vector represents instead of differing by a sign. The $\mathbb{M}_-$ interval is a *separate* object — it belongs to the $ict$ gradient and not to the generators — and reads $ds^2 = -c^2\,dt^2 +dx^2+dy^2+dz^2$, i.e.
+This is the standard **mostly-minus** convention, and it is the one the corpus uses throughout: the generators are the usual ones, the name is correct in the standard counting, and the square of a Clifford vector agrees with the biquaternion norm of the biquaternion the vector represents instead of differing by a sign. The $\mathbb{M}_-$ interval is a *separate* object — it belongs to the $ict'$ gradient and not to the generators — and reads $ds^2 = -c^2\,d{t'}^2 +dx^2+dy^2+dz^2$, i.e.
 
 $$
-\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\circ\overline{d\tilde{Q}} = (ic\,dt)^2 +dx^2+dy^2+dz^2 = -c^2\,dt^2 +dx^2+dy^2+dz^2 ,
+\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\circ\overline{d\tilde{Q}} = (ic\,dt')^2 +dx^2+dy^2+dz^2 = -c^2\,d{t'}^2 +dx^2+dy^2+dz^2 ,
 $$
 
-with the minus arising from $i^2 = -1$ and not from the generators' metric. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$, and it is the level-2 object of the companion *Conventions in the Biquaternion Universe*; $g$ is the level-3 metric of the generators.
+with the minus arising from $i^2 = -1$ and not from the generators' metric. The $ict'$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$, and it is the level-2 object of the companion *Conventions in the Biquaternion Universe*; $g$ is the level-3 metric of the generators.
 
 The four generators, with the metric above, span a real Clifford algebra of dimension $16$, denoted $\mathrm{Cl}_{1,3}(\mathbb{R})$. In the standard mathematical convention $\mathrm{Cl}_{n,m}$ carries $n$ generators squaring to $+1$ and $m$ squaring to $-1$, so the label $(1,3)$ records one generator squaring to $+1$ and three to $-1$; the name is the standard one, $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$, and no relabelling warning is needed.
 
-**A convention note, checked against the parent article.** The parent *The Dirac Equation in Biquaternionic Form* declares the Clifford metric as $g^{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$, so $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$; its **explicit** matrices, the Dirac representation $\gamma^0 = \mathrm{diag}(I_2,-I_2)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & \sigma^k\\ -\sigma^k & 0\end{smallmatrix}\bigr)$ and the block construction $\gamma^0 = \bigl(\begin{smallmatrix}0 & e_t\\ e_t & 0\end{smallmatrix}\bigr)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & i\vec e_k\\ -i\vec e_k & 0\end{smallmatrix}\bigr)$, satisfy exactly that anticommutation, and the explicit matrices used in this article, displayed below, are identical to the parent's block construction. The $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ belongs to the gradient and not to the generators; the even subalgebra is the same for either sign of $g$ (verified below), so no dictionary entry depends on which sign is chosen.
+**A convention note, checked against the parent article.** The parent *The Dirac Equation in Biquaternionic Form* declares the Clifford metric as $g^{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$, so $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$; its **explicit** matrices, the Dirac representation $\gamma^0 = \mathrm{diag}(I_2,-I_2)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & \sigma^k\\ -\sigma^k & 0\end{smallmatrix}\bigr)$ and the block construction $\gamma^0 = \bigl(\begin{smallmatrix}0 & e_t\\ e_t & 0\end{smallmatrix}\bigr)$, $\gamma^k = \bigl(\begin{smallmatrix}0 & i\vec e_k\\ -i\vec e_k & 0\end{smallmatrix}\bigr)$, satisfy exactly that anticommutation, and the explicit matrices used in this article, displayed below, are identical to the parent's block construction. The $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ belongs to the gradient and not to the generators; the even subalgebra is the same for either sign of $g$ (verified below), so no dictionary entry depends on which sign is chosen.
 
 ### The two real Clifford algebras and their matrix algebras
 
@@ -476,10 +476,10 @@ $$
 verified with general real coefficients on each sector. For the material four-vectors this is the Minkowski interval. Writing $\tilde{V} = i v_0 e_t + v_1\vec e_x + v_2\vec e_y + v_3\vec e_z \in \mathbb{M}_-$,
 
 $$
-\langle\tilde{V}\rangle_{\natural} = \tilde{V}\tilde{V}^{\natural} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 +x^2+y^2+z^2,
+\langle\tilde{V}\rangle_{\natural} = \tilde{V}\tilde{V}^{\natural} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2{t'}^2 +x^2+y^2+z^2,
 $$
 
-which is the invariant interval of the companion articles. So the interval is the Clifford biquaternion norm constructed with the reversal, and the minus sign in the time direction is the $ict$ metric sign $\eta^{00} = -1$ — the sign of $-g$, not of the generators' metric.
+which is the invariant interval of the companion articles. So the interval is the Clifford biquaternion norm constructed with the reversal, and the minus sign in the time direction is the $ict'$ metric sign $\eta^{00} = -1$ — the sign of $-g$, not of the generators' metric.
 
 ### The matrix representation and the trace
 
@@ -558,7 +558,7 @@ which is the image of $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box$, since re
 The gamma-matrix Dirac operator is the **odd** element
 
 $$
-\not\partial = \gamma^\mu\partial/\partial Q_\mu, \qquad \not\partial^2 = \bigl(-(1/c^2)\partial^2/\partial t^2 + \Delta\bigr)I_4 = \Box\,I_4,
+\not\partial = \gamma^\mu\partial/\partial Q_\mu, \qquad \not\partial^2 = \bigl(-(1/c^2)\partial^2/\partial {t'}^2 + \Delta\bigr)I_4 = \Box\,I_4,
 $$
 
 where the second identity is the ordinary Clifford relation, verified symbolically on the symbols. So the algebra contains **two** square roots of $\Box$: the odd Dirac operator $\not\partial$ and the even gradient $\mathsf{M}_4(\tilde{\nabla})$, which are square roots in different graded pieces, the odd one with the general plain bilinear product and the even one with the reversal. They are not the same operator, and the dictionary does not identify them; what relates them is the frame of the previous section, through which every odd element is written as a fixed odd element times an even one. The statement in the parent article that $\tilde{\nabla}$ "plays the role of the Dirac operator" is therefore a statement about the role — both are square roots of the wave operator and both express first-order relativistic equations — and not an identification of the two operators.
@@ -571,7 +571,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 
 **The two signs of the metric are distinct but share the even part.** The algebra of this article's metric is $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$ in the standard counting, while the opposite-sign algebra $\mathrm{Cl}_{3,1}$ — three generators squaring to $+1$, one to $-1$ — is $\mathrm{Cl}_{3,1} \cong M_4(\mathbb{R})$; the two are non-isomorphic over $\mathbb{R}$. They nevertheless share the even subalgebra, $\mathrm{Cl}_{1,3}^{+} \cong \mathrm{Cl}_{3,1}^{+} \cong M_2(\mathbb{C}) \cong \mathbb{B}$, so the dictionary of even elements is the same for either sign of $g$; the sign changes only the character of the odd part and the reality of $\gamma_5$.
 
-**The metric convention is stated once and held.** The Clifford metric is $g = \mathrm{diag}(+1,-1,-1,-1)$ — the standard **mostly-minus** convention — so $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$, and the algebra is $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$ in the standard counting with no relabelling needed. The $ict$ metric is the separate object $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$, and it belongs to the gradient, not to the generators. The parent article's explicit matrices already use this metric and agree with those used here; the opposite-sign matrices are $i$ times them, and the even dictionary is unaffected.
+**The metric convention is stated once and held.** The Clifford metric is $g = \mathrm{diag}(+1,-1,-1,-1)$ — the standard **mostly-minus** convention — so $(\gamma^0)^2 = +I_4$ and $(\gamma^k)^2 = -I_4$, and the algebra is $\mathrm{Cl}_{1,3} \cong M_2(\mathbb{H})$ in the standard counting with no relabelling needed. The $ict'$ metric is the separate object $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$, and it belongs to the gradient, not to the generators. The parent article's explicit matrices already use this metric and agree with those used here; the opposite-sign matrices are $i$ times them, and the even dictionary is unaffected.
 
 **The dictionary of even basis elements is:** $e_t \leftrightarrow I_4$, $\vec e_k \leftrightarrow$ spacelike bivectors, $i \leftrightarrow -\omega$, and $i\vec e_k \leftrightarrow$ timelike bivectors, **all with positive signs**. The single minus sits on $i$ itself and is the sign the correspondence leaves free.
 
@@ -595,7 +595,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators (this article) |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict$ metric, belonging to the gradient |
+| $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict'$ metric, belonging to the gradient |
 | $\gamma^\mu$ | Gamma matrices, $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -I_4$ |
 | $\mathsf{M}_4$ | Isomorphism $\mathbb{B} \to \mathrm{Cl}_{1,3}^{+}$ |

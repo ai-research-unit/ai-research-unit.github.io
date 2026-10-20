@@ -4,7 +4,7 @@
 
 The **renormalization group** (RG) is the statement that the parameters of a quantum field theory are not constants but functions of the scale at which the theory is probed. Integrating out a shell of field modes between two momentum scales changes the effective action; the change is a flow in the space of couplings; and the zeros of that flow — the fixed points — organize the theory's behaviour at long and short distances. This article asks what, if anything, the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ adds to that structure.
 
-The question is a fair one to ask of this framework, because the three read-list articles on which the RG rests have each already been written, and each has already located the algebra's contribution narrowly. *The Path Integral in Biquaternionic Form* found that the measure and the space of paths lie outside $\mathbb{B}$, while the central scalar imaginary supplies the phase and the Wick rotation supplies the Euclidean weight. *The Feynman Propagator in Biquaternionic Form* found that the algebra names the axis of the $i\epsilon$ deformation — the $ict$ direction of the material sector $\mathbb{M}_-$ — but does not choose its orientation. *The Partition Function in Biquaternionic Form* found that the trace is a scalar extraction, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and that the imaginary-time circle lies along the $\mathbb{M}_-$ time axis. The RG asks for the next thing: the dependence of all of this on a scale.
+The question is a fair one to ask of this framework, because the three read-list articles on which the RG rests have each already been written, and each has already located the algebra's contribution narrowly. *The Path Integral in Biquaternionic Form* found that the measure and the space of paths lie outside $\mathbb{B}$, while the central scalar imaginary supplies the phase and the Wick rotation supplies the Euclidean weight. *The Feynman Propagator in Biquaternionic Form* found that the algebra names the axis of the $i\epsilon$ deformation — the $ict'$ direction of the material sector $\mathbb{M}_-$ — but does not choose its orientation. *The Partition Function in Biquaternionic Form* found that the trace is a scalar extraction, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and that the imaginary-time circle lies along the $\mathbb{M}_-$ time axis. The RG asks for the next thing: the dependence of all of this on a scale.
 
 The finding is stated at the outset, and it has the same shape as the parents'.
 
@@ -27,8 +27,8 @@ The **effective action** $\Gamma[\phi]$ is the generating functional of one-part
 The exact statement of that dependence is the **Wetterich equation**,
 
 $$
-\partial/\partial t \Gamma_k[\phi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\phi] + R_k\Big)^{-1}\,\partial/\partial t R_k\right],
-\qquad t = \log\frac{k}{\Lambda},
+\partial/\partial t' \Gamma_k[\phi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_k^{(2)}[\phi] + R_k\Big)^{-1}\,\partial/\partial t' R_k\right],
+\qquad t' = \log\frac{k}{\Lambda},
 $$
 
 where $\Gamma_k^{(2)}$ is the second functional derivative of $\Gamma_k$ with respect to $\phi$, $R_k$ is a **regulator** that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.
@@ -125,7 +125,7 @@ $$
 
 whose coupling $\lambda$ is marginal in $d = 4$ and whose beta function is the textbook one. The point of redoing it here is to show the shell integration explicitly, since a beta function stated without it is exactly the failure mode this subject invites.
 
-Split the field into slow and fast modes, $\phi = \phi_< + \phi_>$, where $\phi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\phi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\lambda)$ from $(\lambda/4!)\phi^4$, the one-loop 1PI four-point function in the $s$, $t$, and $u$ channels is
+Split the field into slow and fast modes, $\phi = \phi_< + \phi_>$, where $\phi_>$ carries only momenta in the shell $\Lambda/b < |k| < \Lambda$. Integrating out $\phi_>$ at one loop gives the correction to the four-point function from the bubble diagram: with two vertices $-(\lambda)$ from $(\lambda/4!)\phi^4$, the one-loop 1PI four-point function in the $s$, $t'$, and $u$ channels is
 
 $$
 \Gamma^{(4)}_{\text{1-loop}}(p) = \frac{1}{2}\cdot 3\,(-\lambda)^2\, I_>(p),
@@ -288,7 +288,7 @@ This is the framework-specific question, and it deserves a direct answer rather 
 
 **The tension with gauge invariance.** The sharp biquaternion-norm cutoff is the regulator the algebra most naturally hosts, and it is the one that is sector-blind. It is also the one that breaks gauge invariance. The regulator that preserves gauge invariance, dimensional regularisation, is not a four-dimensional biquaternion object: it continues $d = 4 - \epsilon$, and there is no $\epsilon$-deformed biquaternion algebra in the corpus. The two desirable properties — living in the algebra's central structure and preserving gauge invariance — are therefore met by two different regulators, and no single regulator supplied by the framework meets both. A third possibility, a Pauli–Villars regulator, is gauge invariant and lives in field space, but it too is external to the algebra and introduces auxiliary fields whose sector assignment is again a choice. The honest statement is that the framework's regulator is **sector-blind but not sector-distinguishing, and its algebraically natural choice conflicts with gauge invariance**; a genuinely biquaternionic, gauge-invariant regulator is an open problem, not a result.
 
-There is one further framework-specific remark worth recording as a question rather than a claim. The framework makes the complex structure local: $c = 1/\sqrt{\epsilon\mu_{\mathrm m}}$ varies with the medium, and the $ict$ direction varies with it. The RG scale $\mu$ is also a local structure in the sense of being a function of the probe. Whether the medium-dependent local complex structure and the RG scale are related — whether a renormalization of $c$ or of the local complex structure is even meaningful — is not addressed by any read-list article, and enters the open questions below. The suggestion is recorded as a question because that is what it is.
+There is one further framework-specific remark worth recording as a question rather than a claim. The framework makes the complex structure local: $c = 1/\sqrt{\epsilon\mu_{\mathrm m}}$ varies with the medium, and the $ict'$ direction varies with it. The RG scale $\mu$ is also a local structure in the sense of being a function of the probe. Whether the medium-dependent local complex structure and the RG scale are related — whether a renormalization of $c$ or of the local complex structure is even meaningful — is not addressed by any read-list article, and enters the open questions below. The suggestion is recorded as a question because that is what it is.
 
 ## What the Algebra Adds and What It Does Not
 
@@ -371,7 +371,7 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $\mu$ | Renormalization scale |
 | $\Gamma_k[\phi]$, $\Gamma_k^{(2)}$ | Wilsonian effective action and its second functional derivative |
 | $R_k$ | Regulator function |
-| $\partial/\partial t\,\Gamma_k = \tfrac12\mathrm{Tr}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial t R_k]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
+| $\partial/\partial t'\,\Gamma_k = \tfrac12\mathrm{Tr}[(\Gamma_k^{(2)}+R_k)^{-1}\partial/\partial t' R_k]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Biquaternion trace (fiber trace), distinct from the functional trace |
 | $\beta_i = \mu\,dg_i/d\mu$ | Beta function |
 | $g^*$ | Fixed point, $\beta(g^*) = 0$ |

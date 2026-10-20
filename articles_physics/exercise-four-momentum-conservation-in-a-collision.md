@@ -8,7 +8,7 @@ This is one of the exercises in the relativity series. It is a set of worked pro
 $$
 \langle \tilde Q_1, \tilde Q_2\rangle = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{\natural}\right),
 $$
-which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
+which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
 $$
 \tilde{P} = m\tilde{V} = i\frac{E}{c}\,e_t + \vec p,
 \qquad \langle\tilde{P}\rangle_{\natural} = -m^2c^2,
@@ -50,7 +50,7 @@ $$
 \mathrm{Vect}\!\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right) = 0
 \iff \sum_a \vec p_a = \sum_f \vec p_f .
 $$
-These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{M}_-$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $ict$ convention is what puts them there.
+These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{M}_-$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $ict'$ convention is what puts them there.
 
 **Remark on counting.** A reader may ask whether a single biquaternion equation can carry four real conditions. It can, because $\mathbb{B}$ is a four-dimensional *complex* algebra while the difference lies in the four-dimensional *real* subspace $\mathbb{M}_-$: the equation $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}=0$ is one $\mathbb{M}_-$-valued equation, and since $\mathbb{M}_-$ has real dimension four ($\mathbb{B}$ itself has complex dimension four, i.e. real dimension eight), it is exactly four real equations. No information is lost, and none is smuggled in.
 
@@ -90,7 +90,7 @@ $$
 $$
 so the single equation holds and, by Solution (a), so do the energy and momentum laws. The residual $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}$ vanishes identically here; in Problem 5 the same collision is checked numerically, with the second frame (the COM frame) added explicitly, so that the law is confirmed on the case that did not suggest it.
 
-**A trap in the parent's four-force.** The parent defines the four-force by the *proper*-time derivative, $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$. Since $d\tau_a = dt/\gamma_a$, the sum of two of the parent's four-forces is $\tilde{K}_{\mathrm{f},1}+\tilde{K}_{\mathrm{f},2} = \gamma_1\,d\tilde{P}_1/dt + \gamma_2\,d\tilde{P}_2/dt$, which equals $d(\tilde{P}_1+\tilde{P}_2)/dt$ only when $\gamma_1 = \gamma_2$. The conservation law is the vanishing of the *coordinate*-time derivative of the *total* four-momentum, and the parent's symbol $\tilde{K}_{\mathrm{f}}$ cannot be carried over to a multi-body system without the $\gamma$ factors. This is a real gap in the parent for the present purpose, and it is recorded as such in the closing section.
+**A trap in the parent's four-force.** The parent defines the four-force by the *proper*-time derivative, $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$. Since $d\tau_a = dt'/\gamma_a$, the sum of two of the parent's four-forces is $\tilde{K}_{\mathrm{f},1}+\tilde{K}_{\mathrm{f},2} = \gamma_1\,d\tilde{P}_1/dt' + \gamma_2\,d\tilde{P}_2/dt'$, which equals $d(\tilde{P}_1+\tilde{P}_2)/dt'$ only when $\gamma_1 = \gamma_2$. The conservation law is the vanishing of the *coordinate*-time derivative of the *total* four-momentum, and the parent's symbol $\tilde{K}_{\mathrm{f}}$ cannot be carried over to a multi-body system without the $\gamma$ factors. This is a real gap in the parent for the present purpose, and it is recorded as such in the closing section.
 
 ## Problem 2: The Invariant Mass and the Mandelstam Invariants
 
@@ -340,7 +340,7 @@ as the sum rule requires.
 $$
 \tilde{P}_a = i\left(m_ac + \frac{1}{2}\frac{m_av_a^2}{c}\right)e_t + m_a\vec v_a + O(v^3/c^3).
 $$
-The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $ict$ convention packing them into one element of $\mathbb{M}_-$.
+The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $ict'$ convention packing them into one element of $\mathbb{M}_-$.
 
 **Solution (b).** In the fixed-target expression $s = (m_1^2+m_2^2)c^4 + 2E_1m_2c^2$, writing $E_1 = m_1c^2+K_1$ gives $s = (m_1+m_2)^2c^4 + 2K_1m_2c^2$. At the production threshold $s = (M_{\rm out})^2c^4$, so
 $$

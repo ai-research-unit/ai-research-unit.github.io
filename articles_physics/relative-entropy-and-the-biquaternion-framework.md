@@ -183,8 +183,8 @@ S(\omega\|\varphi)=\big\langle\Omega_\omega,\log\Delta_{\omega,\varphi}\,\Omega_
 $$
 It agrees with Umegaki's $S(\rho\|\sigma)$ when $M$ is a finite-dimensional matrix algebra and the two states are given by density matrices, and it is defined for the type III algebras of local quantum field theory, where no density matrix exists. The relative modular operator satisfies the **relative modular condition**, a two-point KMS-type boundary relation for the function
 $$
-(t,\tilde Q_2,\tilde Q_1)\longmapsto
-\omega\big(\tilde Q_2\,\sigma_t^{\varphi,\omega}(\tilde Q_1)\big),
+(t',\tilde Q_2,\tilde Q_1)\longmapsto
+\omega\big(\tilde Q_2\,\sigma_{t'}^{\varphi,\omega}(\tilde Q_1)\big),
 $$
 where $\sigma^{(\varphi,\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $K_\omega=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
 
@@ -235,7 +235,7 @@ None of these facts is derived here; they are standard quantum field theory, and
 
 **2. The boundary value.** The relative entropy extends continuously to the pure boundary only when the second state is faithful. Is there a framework interpretation of the divergent case, in which the supports fail to nest, in terms of the zero-divisor cone? The divergent case is the one in which the second state is pure and differs from the first: a pure $\tilde{Ϛ}_2$ has one-dimensional support, which contains the support of $\tilde{Ϛ}_1$ only when $\tilde{Ϛ}_1=\tilde{Ϛ}_2$, and the antipodal pair $\vec r=-\vec s$ on the sphere is its extreme instance.
 
-**3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_\omega^{it}\tilde{Ϛ}_\varphi^{-it}$. Whether that flow has an $\mathbb{M}_+$-valued generator in the framework, as the modular flow does, is not worked out here.
+**3. The cocycle.** The Connes cocycle flow, which governs the relative modular operator, has a finite-dimensional realization as the flow that multiplies by $\tilde{Ϛ}_\omega^{it'}\tilde{Ϛ}_\varphi^{-it'}$. Whether that flow has an $\mathbb{M}_+$-valued generator in the framework, as the modular flow does, is not worked out here.
 
 **4. The relation to the first law.** The expansion of the relative entropy near coincidence, which is the quantum Fisher information, is the quadratic form whose vanishing controls the first law of entanglement. Whether the framework's closed form makes that law exact, rather than asymptotic, is the subject of the companion article on the modular Hamiltonian.
 

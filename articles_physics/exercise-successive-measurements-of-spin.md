@@ -215,7 +215,7 @@ The first factor is the Born rule for the initial measurement; the second factor
 | Physical process | Single measurement | Time evolution | Successive measurements |
 | Structural object | Idempotent + idempotent | Idempotent + unitary | Sequence of idempotents |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas |
-| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ |
+| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t')$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ |
 
 These exercises illustrate three fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), and **sequential measurement** (Exercise: Successive Measurements of Spin). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$.
 

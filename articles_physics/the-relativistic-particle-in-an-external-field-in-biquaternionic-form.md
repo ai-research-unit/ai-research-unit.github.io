@@ -15,7 +15,7 @@ Two limitations are stated at the outset, because they bound what is claimed.
 
 The article is organized as follows. The next section recalls the free four-momentum. The section after that states the minimal-coupling prescription and derives the canonical momentum from the action. The following section separates the canonical and kinetic momenta. The next section derives the equation of motion. Two sections check it on a purely electric field and on a purely magnetic field. A short section records the proper-time restriction, and another fixes the boost convention. A section separates what the algebra supplies from what it only transcribes, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The four-position is $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity is $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\gamma = 1/\sqrt{1-\vec v^2/c^2}$, and the four-momentum is $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$; all live in $\mathbb{M}_-$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and the invariant pairing on $\mathbb{M}_-$ is $\langle\tilde Q_3,\tilde Q_4\rangle = \mathrm{Sc}(\tilde Q_3\tilde Q_4^{\natural}) = -Q_{30}Q_{40} + \vec Q_3\cdot\vec Q_4$ for $\tilde Q_3 = iQ_{30}e_t + \vec Q_3$, $\tilde Q_4 = iQ_{40}e_t + \vec Q_4$. The four-potential is $\tilde{A} = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ and the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, with four-current $\tilde J = ic\rho\,e_t + \vec J$, source $\sqrt{\mu}\,\tilde{J} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, and Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$. The field tensor is $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$ in the $ict$ convention. Following the article *The Lorentz Force in Biquaternion Form*, the symbol $\tilde{F}$ is reserved for the field strength and the **four-force is written $\tilde{K}_{\mathrm{f}}$**, so that $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ and $\tilde{K}_{\mathrm{f}}\in\mathbb{M}_-$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; $\vec B = \mu\vec H$ is the magnetic induction. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The four-position is $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity is $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\gamma = 1/\sqrt{1-\vec v^2/c^2}$, and the four-momentum is $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$; all live in $\mathbb{M}_-$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and the invariant pairing on $\mathbb{M}_-$ is $\langle\tilde Q_3,\tilde Q_4\rangle = \mathrm{Sc}(\tilde Q_3\tilde Q_4^{\natural}) = -Q_{30}Q_{40} + \vec Q_3\cdot\vec Q_4$ for $\tilde Q_3 = iQ_{30}e_t + \vec Q_3$, $\tilde Q_4 = iQ_{40}e_t + \vec Q_4$. The four-potential is $\tilde{A} = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ and the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, with four-current $\tilde J = ic\rho\,e_t + \vec J$, source $\sqrt{\mu}\,\tilde{J} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, and Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$. The field tensor is $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$ in the $ict'$ convention. Following the article *The Lorentz Force in Biquaternion Form*, the symbol $\tilde{F}$ is reserved for the field strength and the **four-force is written $\tilde{K}_{\mathrm{f}}$**, so that $\tilde{K}_{\mathrm{f}} = d\tilde{P}/d\tau$ and $\tilde{K}_{\mathrm{f}}\in\mathbb{M}_-$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; $\vec B = \mu\vec H$ is the magnetic induction. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
 
 ## The Free Particle
 
@@ -154,20 +154,20 @@ $$
 p_{\mathrm{can},y} = p_y + ϙB_0 x = \text{const}, \qquad p_{\mathrm{can},z} = p_z = \text{const}.
 $$
 
-The kinetic momentum, by contrast, is not conserved: it rotates in the plane perpendicular to $\vec B$, since the equation of motion $d\vec p/dt = ϙ\,\vec v\times\vec B$ with $\vec v = \vec pc^2/E$ is circular motion. The conserved quantities are the canonical components, the gauge-dependent ones; the kinetic momentum is the gauge-invariant one, and it is the one that turns. Both statements were checked numerically (see the companion), and they are not in tension: a gauge-dependent quantity may be conserved while a gauge-invariant quantity is not.
+The kinetic momentum, by contrast, is not conserved: it rotates in the plane perpendicular to $\vec B$, since the equation of motion $d\vec p/dt' = ϙ\,\vec v\times\vec B$ with $\vec v = \vec pc^2/E$ is circular motion. The conserved quantities are the canonical components, the gauge-dependent ones; the kinetic momentum is the gauge-invariant one, and it is the one that turns. Both statements were checked numerically (see the companion), and they are not in tension: a gauge-dependent quantity may be conserved while a gauge-invariant quantity is not.
 
 **What the distinction is not.** It is not a statement that the canonical momentum is unphysical. The canonical momentum is the generator of translations of the field and the variable of the Hamiltonian; its conservation is what makes the problem integrable in the Landau gauge. The point is only that it is *not* the momentum that appears in the velocity, $\vec v = \vec p_{\mathrm{kin}}c^2/E_{\mathrm{kin}}$, and *not* the momentum that obeys the free mass-shell relation.
 
 ## The Equation of Motion
 
-The equation of motion follows from the action by the Euler–Lagrange equations, and it is the Lorentz force. Written in components $\tilde{R} = \sum_\mu Q_\mu e_\mu$ (with $Q_t = ict$), $\tilde{A} = \sum_\nu A_\nu e_\nu$, the Lagrangian is
+The equation of motion follows from the action by the Euler–Lagrange equations, and it is the Lorentz force. Written in components $\tilde{R} = \sum_\mu Q_\mu e_\mu$ (with $Q_t = ict'$), $\tilde{A} = \sum_\nu A_\nu e_\nu$, the Lagrangian is
 
 $$
 L = -mc\sqrt{-\sum_\mu \left(dQ_{\mu}/d\tau\right)^{2}} \;+\; ϙ\sum_\nu A_\nu(\tilde{R})\,dQ_{\nu}/d\tau,
 \qquad dX_\mu/d\tau = dQ_\mu/d\tau,
 $$
 
-because $\mathrm{Sc}(\tilde{A}\overline{d\tilde R/d\tau}) = \sum_\nu A_\nu\,dQ_{\nu}/d\tau$ in the $ict$ convention. The conjugate momentum is the element $\tilde P_{\mathrm{can}} = \sum_\mu P_{\mathrm{can},\mu}e_\mu$, with $P_{\mathrm{can},\mu} = \partial L/\partial\left(dQ_{\mu}/d\tau\right)$ and, using the on-shell normalization $\sqrt{-\sum_\mu\left(dQ_{\mu}/d\tau\right)^{2}} = c$, $P_{\mathrm{can},0} = m\,dQ_{0}/d\tau + ϙA_0 = iE_{\mathrm{can}}/c$ and $P_{\mathrm{can},k} = m\,dQ_{k}/d\tau + ϙA_k = p_{\mathrm{can},k}$. Differentiating $P_{\mathrm{can},\mu}$ along the worldline and using the Euler–Lagrange equation $\frac{d}{d\tau}P_{\mathrm{can},\mu} = \partial L/\partial Q_\mu$,
+because $\mathrm{Sc}(\tilde{A}\overline{d\tilde R/d\tau}) = \sum_\nu A_\nu\,dQ_{\nu}/d\tau$ in the $ict'$ convention. The conjugate momentum is the element $\tilde P_{\mathrm{can}} = \sum_\mu P_{\mathrm{can},\mu}e_\mu$, with $P_{\mathrm{can},\mu} = \partial L/\partial\left(dQ_{\mu}/d\tau\right)$ and, using the on-shell normalization $\sqrt{-\sum_\mu\left(dQ_{\mu}/d\tau\right)^{2}} = c$, $P_{\mathrm{can},0} = m\,dQ_{0}/d\tau + ϙA_0 = iE_{\mathrm{can}}/c$ and $P_{\mathrm{can},k} = m\,dQ_{k}/d\tau + ϙA_k = p_{\mathrm{can},k}$. Differentiating $P_{\mathrm{can},\mu}$ along the worldline and using the Euler–Lagrange equation $\frac{d}{d\tau}P_{\mathrm{can},\mu} = \partial L/\partial Q_\mu$,
 
 $$
 \frac{d}{d\tau}\left(mdQ_{\mu}/d\tau + ϙA_\mu\right) = ϙ\sum_\nu \frac{\partial A_\nu}{\partial Q_\mu}dQ_{\nu}/d\tau,
@@ -220,22 +220,22 @@ The first independent check is a purely electric field. This case is *not* the o
 Take $\vec B = 0$ and a static, uniform electric field $\vec E = E_0\vec u_x$, described by the potential $\phi = -E_0 x$, $\vec A = 0$, so that $\tilde{A} = -(iE_0/c)\,x\,e_t$. In this gauge the vector potential vanishes, so the canonical and kinetic momenta coincide in all three spatial components, $p_{\mathrm{can},k} = p_k$, and differ only in the time component: $E_{\mathrm{can}} = E + ϙ\phi$. The contraction $\tilde{K}_{\mathrm{f}} = ϙF^{\mu\nu}U_\nu$ gives
 
 $$
-\frac{d\vec p}{dt} = ϙ\vec E = ϙE_0\,\vec u_x,
+\frac{d\vec p}{dt'} = ϙ\vec E = ϙE_0\,\vec u_x,
 \qquad
-\frac{dE}{dt} = ϙ\,\vec E\cdot\vec v = ϙE_0\,v_x .
+\frac{dE}{dt'} = ϙ\,\vec E\cdot\vec v = ϙE_0\,v_x .
 $$
 
-The first equation is exact and undamped by $\gamma$: the kinetic three-momentum grows linearly in laboratory time, $p_x = ϙE_0 t$ for a particle released from rest at $t=0$, and the energy follows from the mass shell,
+The first equation is exact and undamped by $\gamma$: the kinetic three-momentum grows linearly in laboratory time, $p_x = ϙE_0 t'$ for a particle released from rest at $t'=0$, and the energy follows from the mass shell,
 
 $$
-E(t) = \sqrt{\left(ϙE_0t\right)^2c^2 + m^2c^4},
+E(t') = \sqrt{\left(ϙE_0t'\right)^2c^2 + m^2c^4},
 \qquad
-v_x(t) = \frac{p_xc^2}{E} = \frac{ϙE_0tc^2}{\sqrt{\left(ϙE_0t\right)^2c^2 + m^2c^4}},
+v_x(t') = \frac{p_xc^2}{E} = \frac{ϙE_0t'c^2}{\sqrt{\left(ϙE_0t'\right)^2c^2 + m^2c^4}},
 $$
 
-so the worldline is hyperbolic and $v_x\to c$ as $t\to\infty$ without reaching it. The energy is not constant — an electric field does work — and its rate of change is the second equation above. The numerical solution of $d\vec p/dt = ϙ\vec E$ with $\vec v = \vec pc^2/E$ reproduced $p_x = ϙE_0t$ to the integration accuracy and the mass-shell energy exactly.
+so the worldline is hyperbolic and $v_x\to c$ as $t'\to\infty$ without reaching it. The energy is not constant — an electric field does work — and its rate of change is the second equation above. The numerical solution of $d\vec p/dt' = ϙ\vec E$ with $\vec v = \vec pc^2/E$ reproduced $p_x = ϙE_0t'$ to the integration accuracy and the mass-shell energy exactly.
 
-Two remarks. The relation $d\vec p/dt = ϙ\vec E$ holds for the **kinetic** momentum; had one differentiated the canonical momentum $\vec p_{\mathrm{can}} = \vec p + ϙ\vec A$ instead, the vanishing of $\vec A$ in this gauge would hide the distinction, and a time-dependent $\vec A$ with $\vec B=0$ (a pure gauge field, or a field with $\vec E = -\partial/\partial t\vec A$) would show it: then $\vec p_{\mathrm{can}}$ and $\vec p$ differ by $ϙ\vec A$, and the force equation is the one for $\vec p$, not for $\vec p_{\mathrm{can}}$. This is the electric-field face of the canonical/kinetic distinction.
+Two remarks. The relation $d\vec p/dt' = ϙ\vec E$ holds for the **kinetic** momentum; had one differentiated the canonical momentum $\vec p_{\mathrm{can}} = \vec p + ϙ\vec A$ instead, the vanishing of $\vec A$ in this gauge would hide the distinction, and a time-dependent $\vec A$ with $\vec B=0$ (a pure gauge field, or a field with $\vec E = -\partial/\partial t'\vec A$) would show it: then $\vec p_{\mathrm{can}}$ and $\vec p$ differ by $ϙ\vec A$, and the force equation is the one for $\vec p$, not for $\vec p_{\mathrm{can}}$. This is the electric-field face of the canonical/kinetic distinction.
 
 ## Case II: A Purely Magnetic Field
 
@@ -244,9 +244,9 @@ The second independent check is a purely magnetic field. This is the case in whi
 Take $\vec E = 0$ and a static, uniform magnetic induction $\vec B = B_0\vec u_z$. The contraction gives
 
 $$
-\frac{d\vec p}{dt} = ϙ\,\vec v\times\vec B,
+\frac{d\vec p}{dt'} = ϙ\,\vec v\times\vec B,
 \qquad
-\frac{dE}{dt} = ϙ\,\vec E\cdot\vec v = 0 .
+\frac{dE}{dt'} = ϙ\,\vec E\cdot\vec v = 0 .
 $$
 
 The energy is constant, hence $\gamma$ and $|\vec p|$ are constant, and the motion in the plane perpendicular to $\vec B$ is circular with the relativistic cyclotron frequency
@@ -257,9 +257,9 @@ $$
 
 The field does no work: a pure magnetic field changes the direction of the kinetic momentum but not its magnitude or the energy. Both statements follow from the contraction alone, without solving the equations.
 
-The canonical momentum behaves differently, as the preceding section anticipated. In the Landau gauge $\vec A = B_0x\,\vec u_y$, the components $p_{\mathrm{can},y} = p_y + ϙB_0x$ and $p_{\mathrm{can},z} = p_z$ are conserved, while the kinetic momentum $\vec p$ rotates: at any instant its components change, and only its magnitude is fixed. A numerical integration of $d\vec p/dt = ϙ\vec v\times\vec B$ with $\vec v = \vec pc^2/E$ kept $E$ and $|\vec p|$ fixed to the integration accuracy, held $p_{\mathrm{can},y}$ and $p_{\mathrm{can},z}$ constant to machine precision, and produced the circular motion whose period is $2\pi/\omega_c$. This is the sharpest display of the article's main distinction: the conserved quantities are the gauge-dependent canonical components; the gauge-invariant kinetic momentum is not conserved.
+The canonical momentum behaves differently, as the preceding section anticipated. In the Landau gauge $\vec A = B_0x\,\vec u_y$, the components $p_{\mathrm{can},y} = p_y + ϙB_0x$ and $p_{\mathrm{can},z} = p_z$ are conserved, while the kinetic momentum $\vec p$ rotates: at any instant its components change, and only its magnitude is fixed. A numerical integration of $d\vec p/dt' = ϙ\vec v\times\vec B$ with $\vec v = \vec pc^2/E$ kept $E$ and $|\vec p|$ fixed to the integration accuracy, held $p_{\mathrm{can},y}$ and $p_{\mathrm{can},z}$ constant to machine precision, and produced the circular motion whose period is $2\pi/\omega_c$. This is the sharpest display of the article's main distinction: the conserved quantities are the gauge-dependent canonical components; the gauge-invariant kinetic momentum is not conserved.
 
-**The two checks are independent.** The electric case tests the scalar-potential (time-component) part of the coupling, where the field does work; the magnetic case tests the vector-potential (space-component) part, where it does not. A formula fitted to one would not pass the other — the electric case would accept $d\vec p/dt = ϙ\vec E + (\text{anything antisymmetric in }\vec v,\vec B)$ only if the magnetic term vanished for $\vec B=0$, and the magnetic case would accept a wrong coefficient of the electric term only if $\vec E=0$. The general derivation and the two cases agreeing on the *same* $\tilde{K}_{\mathrm{f}} = ϙF^{\mu\nu}U_\nu$ is the content of the verification.
+**The two checks are independent.** The electric case tests the scalar-potential (time-component) part of the coupling, where the field does work; the magnetic case tests the vector-potential (space-component) part, where it does not. A formula fitted to one would not pass the other — the electric case would accept $d\vec p/dt' = ϙ\vec E + (\text{anything antisymmetric in }\vec v,\vec B)$ only if the magnetic term vanished for $\vec B=0$, and the magnetic case would accept a wrong coefficient of the electric term only if $\vec E=0$. The general derivation and the two cases agreeing on the *same* $\tilde{K}_{\mathrm{f}} = ϙF^{\mu\nu}U_\nu$ is the content of the verification.
 
 ## The Proper-Time Restriction, Stated Explicitly
 
@@ -268,8 +268,8 @@ The equation of motion derived above is $\tilde{K}_{\mathrm{f}} = d\tilde{P}_{\m
 For two particles with different Lorentz factors $\gamma_1\neq\gamma_2$,
 
 $$
-\tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = \gamma_1\frac{d\tilde{P}_1}{dt} + \gamma_2\frac{d\tilde{P}_2}{dt}
-\;\neq\; \frac{d}{dt}\left(\tilde{P}_1 + \tilde{P}_2\right),
+\tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = \gamma_1\frac{d\tilde{P}_1}{dt'} + \gamma_2\frac{d\tilde{P}_2}{dt'}
+\;\neq\; \frac{d}{dt'}\left(\tilde{P}_1 + \tilde{P}_2\right),
 $$
 
 so the sum of four-forces is **not** the coordinate-time derivative of the total four-momentum, and $\tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = 0$ is not a conservation law. The collision exercise *Four-Momentum Conservation in a Collision* reports exactly this: the four-force symbol of the mechanics article cannot be carried to a multi-body system without the $\gamma$ factors, and the conservation law is a statement about the total four-momentum, not about the sum of proper-time derivatives. This article is the complementary case — **one** particle, whose four-force is correctly $\tilde{K}_{\mathrm{f}} = d\tilde{P}_{\mathrm{kin}}/d\tau$ — and it makes no conservation claim. The two articles do not disagree: the proper-time derivative is right for one worldline and insufficient for a sum of worldlines, and that is the whole of the matter.
@@ -345,7 +345,7 @@ $$
 = -\,ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 $$
 
-with $\tilde{K}_{\mathrm{f}} = i\frac{\gamma ϙ}{c}(\vec E\cdot\vec v)e_t + \gamma ϙ(\vec E+\vec v\times\vec B)$ in components. It preserves the rest mass, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}_{\mathrm{kin}} + \tilde{P}_{\mathrm{kin}}\tilde{K}_{\mathrm{f}}^{\natural} = 0$, and it is a proper-time equation about a single worldline. Two independent cases were checked — a purely electric field, where $d\vec p/dt = ϙ\vec E$ and the field does work, and a purely magnetic field, where $d\vec p/dt = ϙ\vec v\times\vec B$, the energy is constant, and the motion is circular at $\omega_c = ϙB_0/(\gamma m)$ — together with the general contraction at random fields. The two cases test the time-like and space-like parts of the coupling separately, so agreement on both is not agreement on the general case.
+with $\tilde{K}_{\mathrm{f}} = i\frac{\gamma ϙ}{c}(\vec E\cdot\vec v)e_t + \gamma ϙ(\vec E+\vec v\times\vec B)$ in components. It preserves the rest mass, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural}_{\mathrm{kin}} + \tilde{P}_{\mathrm{kin}}\tilde{K}_{\mathrm{f}}^{\natural} = 0$, and it is a proper-time equation about a single worldline. Two independent cases were checked — a purely electric field, where $d\vec p/dt' = ϙ\vec E$ and the field does work, and a purely magnetic field, where $d\vec p/dt' = ϙ\vec v\times\vec B$, the energy is constant, and the motion is circular at $\omega_c = ϙB_0/(\gamma m)$ — together with the general contraction at random fields. The two cases test the time-like and space-like parts of the coupling separately, so agreement on both is not agreement on the general case.
 
 The algebra supplies the common home $\mathbb{M}_-$ of the four-vectors, the biquaternion-norm mass shell that doubles as the Hamiltonian, the conjugate momentum of the action, and the reassembly of the contraction into the four-force; it does not supply the minimal-coupling principle itself, the sign conventions, or the geometric interpretation, which are carried in or interpreted. The proper-time form is correct for this single-particle problem and is explicitly not a many-body conservation law, and the boost rotor is fixed by the convention that its $+\vec v$ branch carries the laboratory to the moving frame.
 
@@ -360,7 +360,7 @@ The algebra supplies the common home $\mathbb{M}_-$ of the four-vectors, the biq
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar subspace (centre) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde Q_3,\tilde Q_4\rangle = \mathrm{Sc}(\tilde Q_3\tilde Q_4^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
-| $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position |
+| $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Kinetic four-momentum, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ |
 | $\tilde{A} = i\phi/c\,e_t + \vec A$ | Four-potential (material-sector connection) |

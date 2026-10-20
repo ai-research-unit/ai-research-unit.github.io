@@ -254,7 +254,7 @@ The negative result above concerns **colour** confinement, and it stands: the or
 
 ### The Linear Bag Model
 
-Let $q$ be a time-harmonic Dirac bispinor, $\Phi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(i\omega t)$, obeying the massive Dirac equation
+Let $q$ be a time-harmonic Dirac bispinor, $\Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = q(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(i\omega t')$, obeying the massive Dirac equation
 
 $$
 \left(i\omega\gamma_0 - \sum_{k=1}^{3}\gamma_k\partial/\partial Q_k + im\right)q = 0

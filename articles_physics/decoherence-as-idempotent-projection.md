@@ -122,13 +122,13 @@ $$
 
 Only the identity ($p=0$) and **full dephasing** ($p=1$) are idempotent. Every intermediate strength is not. This is the precise sense in which the title's phrase has to be qualified. Dephasing once is not the same as dephasing twice unless the dephasing is complete; dephasing twice is dephasing harder, with effective strength $2p - p^2 > p$. The operation is a **contraction** toward the pointer axis, and a contraction is not a projection.
 
-The same conclusion in continuous time: if the coherence decays exponentially, $1 - p(t) = \exp(-\Gamma t)$ with rate $\Gamma$, then the channels form a one-parameter semigroup,
+The same conclusion in continuous time: if the coherence decays exponentially, $1 - p(t') = \exp(-\Gamma t')$ with rate $\Gamma$, then the channels form a one-parameter semigroup,
 
 $$
-\Phi^{\mathrm{deph}}_{p(t_1)} \circ \Phi^{\mathrm{deph}}_{p(t_2)} = \Phi^{\mathrm{deph}}_{p(t_1 + t_2)},
+\Phi^{\mathrm{deph}}_{p(t'_1)} \circ \Phi^{\mathrm{deph}}_{p(t'_2)} = \Phi^{\mathrm{deph}}_{p(t'_1 + t'_2)},
 $$
 
-and the semigroup is idempotent only at the two ends, $t = 0$ and $t = \infty$. Physical decoherence always sits somewhere in between.
+and the semigroup is idempotent only at the two ends, $t' = 0$ and $t' = \infty$. Physical decoherence always sits somewhere in between.
 
 ### The Fully Dephased Limit
 
@@ -153,22 +153,22 @@ the classical mixture of the two pointer outcomes. Full dephasing is a non-selec
 The trajectory picture is now immediate from the Bloch formula. Take a pure state with Bloch vector $\vec r_0$, $|\vec r_0| = 1$, and write $r_\parallel = \vec u\cdot\vec r_0$, $\vec r_\perp = \vec r_0 - r_\parallel\vec u$. Under repeated or continuous dephasing along $\vec u$,
 
 $$
-\vec r(t) = r_\parallel\,\vec u + \exp(-\Gamma t)\,\vec r_\perp .
+\vec r(t') = r_\parallel\,\vec u + \exp(-\Gamma t')\,\vec r_\perp .
 $$
 
 The path is a straight line, perpendicular to the pointer axis, from the surface point $\vec r_0$ to the axial point $r_\parallel \vec u$. It begins on the Bloch sphere and enters the ball immediately. The squared radius,
 
 $$
-|\vec r(t)|^2 = r_\parallel^2 + \exp(-2\Gamma t)\,r_\perp^2,
+|\vec r(t')|^2 = r_\parallel^2 + \exp(-2\Gamma t')\,r_\perp^2,
 $$
 
 decreases monotonically to $r_\parallel^2$, so by the purity formula the purity $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1 + |\vec r|^2)$ decreases monotonically from $1$ toward $\tfrac12(1 + r_\parallel^2)$. Correspondingly the state's deviation from idempotency,
 
 $$
-\mathrm{Sc}\left(\tilde{Ϛ}(t)^2 - \tilde{Ϛ}(t)\right) = \tfrac14\left(|\vec r(t)|^2 - 1\right),
+\mathrm{Sc}\left(\tilde{Ϛ}(t')^2 - \tilde{Ϛ}(t')\right) = \tfrac14\left(|\vec r(t')|^2 - 1\right),
 $$
 
-descends from $0$ to $\tfrac14(r_\parallel^2 - 1) \leq 0$. The spectrum $\lambda_\pm = \tfrac12(1 \pm |\vec r(t)|)$ widens from the pure pair $(1,0)$, and the von Neumann entropy
+descends from $0$ to $\tfrac14(r_\parallel^2 - 1) \leq 0$. The spectrum $\lambda_\pm = \tfrac12(1 \pm |\vec r(t')|)$ widens from the pure pair $(1,0)$, and the von Neumann entropy
 
 $$
 S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-,
@@ -176,7 +176,7 @@ $$
 
 which is a decreasing function of $|\vec r|$, increases strictly for any state with $r_\perp \neq 0$.
 
-Two features of this trajectory matter for the projection question. First, the state leaves the sphere unless $r_\perp = 0$, i.e., unless it was already in the pointer basis. A generic pure state becomes mixed, and the idempotent it started as is deformed into a non-idempotent element; the only idempotents that survive full dephasing are the two pointer states $\tilde\Pi_{1,2}(\vec u)$, at $r_\parallel = \pm1$. Second, the trajectory has a limit but the limit is reached only asymptotically: for every finite $t$ with $0 < \exp(-\Gamma t) < 1$, the transverse component is nonzero and the state is not in the image of the fully dephasing map. The "projection" onto the pointer axis is the $t \to \infty$ endpoint of a contraction, not an operation performed at any finite time.
+Two features of this trajectory matter for the projection question. First, the state leaves the sphere unless $r_\perp = 0$, i.e., unless it was already in the pointer basis. A generic pure state becomes mixed, and the idempotent it started as is deformed into a non-idempotent element; the only idempotents that survive full dephasing are the two pointer states $\tilde\Pi_{1,2}(\vec u)$, at $r_\parallel = \pm1$. Second, the trajectory has a limit but the limit is reached only asymptotically: for every finite $t'$ with $0 < \exp(-\Gamma t') < 1$, the transverse component is nonzero and the state is not in the image of the fully dephasing map. The "projection" onto the pointer axis is the $t' \to \infty$ endpoint of a contraction, not an operation performed at any finite time.
 
 At full strength $p=1$, and only then, the contraction is total: the transverse component is annihilated, the image is the pointer diameter, and the map fixes its image pointwise. That is the precise sense in which the end product of complete decoherence is a projection of the Bloch ball onto a diameter. For $0 < p < 1$, the map is an *affine contraction toward that diameter*: its image is a squashed ellipsoid, strictly larger than the diameter, and its fixed-point set is the diameter itself.
 

@@ -48,7 +48,7 @@ $$
 
 Two observations about where the objects live belong here, because later sections use them.
 
-- **The relative phase is central.** $\delta = \varphi_1 - \varphi_2$ is a real number, and $i\,\delta \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_-$ lies along the $ict$ direction, the same axis on which the path-integral article locates the phase exponent and the Feynman-propagator article locates $i\epsilon$. The argument of the complex number $\exp(i\delta)$ is supplied by the central imaginary; a non-central root would supply a different kind of argument, and the section on the phase root examines what that changes.
+- **The relative phase is central.** $\delta = \varphi_1 - \varphi_2$ is a real number, and $i\,\delta \in \mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_-$ lies along the $ict'$ direction, the same axis on which the path-integral article locates the phase exponent and the Feynman-propagator article locates $i\epsilon$. The argument of the complex number $\exp(i\delta)$ is supplied by the central imaginary; a non-central root would supply a different kind of argument, and the section on the phase root examines what that changes.
 - **The scalar amplitude carries no spin.** $K$ is a complex scalar times $e_t$; it is not an element of $\mathbb{M}_+$ and not a spinor. For a spin-independent beam this is the whole amplitude, and the pattern it produces is a statement about the centre $\mathbb{C}_{\mathbb{B}}$. When the two routes can be distinguished by spin, the amplitude is a spinor and the cross term acquires a spin overlap; that is the subject of the later section on spinor-valued routes.
 
 ## The Fringe Pattern
@@ -250,7 +250,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 **What the biquaternion notation provides.**
 
 - A **canonical complex structure.** The $i$ of the phase and of the relative phase is the central scalar imaginary, fixed by the algebra rather than chosen; the amplitude is a complex scalar, and the relative phase is the argument of the off-diagonal element of $\tilde{Ϛ}$.
-- A **home for the amplitude.** Each route amplitude is a central element of $\mathbb{C}_{\mathbb{B}}$, and the exponent $iS_j/\hbar$ lies in the material sector $\mathbb{M}_-$ along $ict$, as the path-integral article establishes.
+- A **home for the amplitude.** Each route amplitude is a central element of $\mathbb{C}_{\mathbb{B}}$, and the exponent $iS_j/\hbar$ lies in the material sector $\mathbb{M}_-$ along $ict'$, as the path-integral article establishes.
 - A **state geometry for the which-path degree of freedom.** The which-path state is an element $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ of $\mathbb{M}_+$; visibility and predictability are its equatorial and polar components; and the duality bound $V^2 + P^2 \le 1$ is exactly the trace-one-slice-of-the-cone condition of the Bloch-ball article, with equality on the zero-divisor cone.
 - **Measurement and dephasing as algebraic operations.** The projective sandwich and the dephasing channel are the same operations the framework uses elsewhere; the double slit is an application, not a new mechanism.
 - **The sector chain, restated.** A material-sector quantity (the action along a route in $\mathbb{M}_-$) is converted, through the central complex structure, into a central phase, and the state it produces, $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$, lies in the informational sector $\mathbb{M}_+$.
@@ -289,7 +289,7 @@ $$
 I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta, \qquad \delta = \frac{S_1 - S_2}{\hbar}.
 $$
 
-A common phase shift is unobservable, so only the relative phase $\delta$ — a central element whose exponent lies in $\mathbb{M}_-$ along $ict$ — is read off. The standard geometry (nodes where $d\sin\theta = (m+\tfrac12)\lambda$, spacing $\lambda D/d$) is unchanged and is an input, not an output, of the algebra.
+A common phase shift is unobservable, so only the relative phase $\delta$ — a central element whose exponent lies in $\mathbb{M}_-$ along $ict'$ — is read off. The standard geometry (nodes where $d\sin\theta = (m+\tfrac12)\lambda$, spacing $\lambda D/d$) is unchanged and is an input, not an output, of the algebra.
 
 The which-path degree of freedom is a qubit with state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r) \in \mathbb{M}_+$. Its equatorial component is the coherence, and its length is the fringe **visibility** $V = |\vec r_\perp| = 2|\rho_{12}|$; its polar component is the path **predictability** $P = |r_\parallel| = |\rho_{11}-\rho_{22}|$. They satisfy
 

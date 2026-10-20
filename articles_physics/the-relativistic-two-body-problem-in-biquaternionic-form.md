@@ -75,7 +75,7 @@ $$
 \langle \tilde{P}_1, \tilde{P}_2\rangle = -\frac{E_1E_2}{c^2} + \vec p_1\cdot\vec p_2,
 $$
 
-which is the Minkowski inner product of the two four-momenta in the $ict$ convention, with real time components $E_a/c$. In particular, for the four-velocities,
+which is the Minkowski inner product of the two four-momenta in the $ict'$ convention, with real time components $E_a/c$. In particular, for the four-velocities,
 
 $$
 \frac{\langle \tilde{V}_1, \tilde{V}_2\rangle}{c^2} = -\gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right).
@@ -151,10 +151,10 @@ For a system of two bodies that interact only with each other, the total four-mo
 $$
 \tilde{P}_1 + \tilde{P}_2 = \text{constant}
 \qquad\Longleftrightarrow\qquad
-\frac{d}{dt}\left(\tilde{P}_1 + \tilde{P}_2\right) = 0,
+\frac{d}{dt'}\left(\tilde{P}_1 + \tilde{P}_2\right) = 0,
 $$
 
-where $t$ is the time coordinate of a fixed inertial frame. Introducing the coordinate-time four-forces $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/dt$, this reads
+where $t'$ is the time coordinate of a fixed inertial frame. Introducing the coordinate-time four-forces $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/dt'$, this reads
 
 $$
 \tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = 0.
@@ -163,12 +163,12 @@ $$
 Because the decomposition into scalar (time) and vector (space) parts is by real-linear projections, the single biquaternion equation is equivalent to the separate conservation of total energy and total three-momentum in the chosen frame:
 
 $$
-\frac{d}{dt}(E_1+E_2) = 0,
+\frac{d}{dt'}(E_1+E_2) = 0,
 \qquad
-\frac{d}{dt}(\vec p_1+\vec p_2) = 0.
+\frac{d}{dt'}(\vec p_1+\vec p_2) = 0.
 $$
 
-Two comments are in order. First, the conservation law is **Lorentz covariant**: if $\tilde{P}_1 + \tilde{P}_2$ is constant in one inertial frame, then applying the same rotor conjugation to both sides, $\tilde U_{\mathrm L}\tilde{P}_1\tilde U_{\mathrm L}^{*} + \tilde U_{\mathrm L}\tilde{P}_2\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}(\tilde{P}_1+\tilde{P}_2)\tilde U_{\mathrm L}^{*}$, shows that it is constant in every inertial frame. The statement of conservation is a statement about an element of $\mathbb{M}_-$, and the element transforms as a whole. Second, the four-forces above are differentiated with respect to a **common** coordinate time. Differentiating instead with respect to each body's proper time introduces the factors $\gamma_a$, since $d\tau_a = dt/\gamma_a$; the common coordinate time is the natural choice for a two-body conservation law.
+Two comments are in order. First, the conservation law is **Lorentz covariant**: if $\tilde{P}_1 + \tilde{P}_2$ is constant in one inertial frame, then applying the same rotor conjugation to both sides, $\tilde U_{\mathrm L}\tilde{P}_1\tilde U_{\mathrm L}^{*} + \tilde U_{\mathrm L}\tilde{P}_2\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}(\tilde{P}_1+\tilde{P}_2)\tilde U_{\mathrm L}^{*}$, shows that it is constant in every inertial frame. The statement of conservation is a statement about an element of $\mathbb{M}_-$, and the element transforms as a whole. Second, the four-forces above are differentiated with respect to a **common** coordinate time. Differentiating instead with respect to each body's proper time introduces the factors $\gamma_a$, since $d\tau_a = dt'/\gamma_a$; the common coordinate time is the natural choice for a two-body conservation law.
 
 When the two bodies are not isolated but are subject to external four-forces, the individual four-momenta change and the sum is no longer conserved. The external-field case is the subject of the companion article on the relativistic particle in an external field; here the sum is conserved and is the natural constant of the motion.
 
@@ -442,7 +442,7 @@ the light daughter carrying the larger share. The conservation law $\tilde{P}_A 
 Everything above is kinematic. The first systematic dynamics of two interacting relativistic spin-$\tfrac12$ particles is the **Breit equation** (Breit 1929), also called the **Dirac–Coulomb–Breit equation**. For $N$ particles it reads
 
 $$
-i\hbar\frac{\partial\Psi}{\partial t} = \left(\sum_i H_{\mathrm D}(i) + \sum_{i>j}\frac{ϙ_iϙ_j}{r_{ij}} + \sum_{i>j}B_{ij}\right)\Psi ,
+i\hbar\frac{\partial\Psi}{\partial t'} = \left(\sum_i H_{\mathrm D}(i) + \sum_{i>j}\frac{ϙ_iϙ_j}{r_{ij}} + \sum_{i>j}B_{ij}\right)\Psi ,
 $$
 
 where $H_{\mathrm D}(i)$ is the one-particle Dirac Hamiltonian of particle $i$, the Coulomb term is instantaneous, and the **Breit operator**

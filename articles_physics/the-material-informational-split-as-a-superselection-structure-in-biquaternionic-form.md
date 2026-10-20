@@ -254,7 +254,7 @@ with even part $\mathbb{M}_-^{0}$ and odd part $\mathbb{M}_+^{0}$.
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the interpretation in one place.
 
-**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
 Each observable is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the Hermitian representative is its reading operator.
 

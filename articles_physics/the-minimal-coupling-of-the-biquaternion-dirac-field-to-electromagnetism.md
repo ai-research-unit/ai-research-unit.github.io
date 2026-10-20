@@ -111,7 +111,7 @@ D = \sum_{\mu\in\{t,x,y,z\}} e_\mu\left(\partial/\partial Q_\mu + \frac{iϙ}{\hb
 D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
-with $\partial/\partial Q_t = -(i/c)\,\partial/\partial t$ and $\partial/\partial Q_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $D_\mu = \partial/\partial Q_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the Dirac equation's solutions and the non-relativistic limit.
+with $\partial/\partial Q_t = -(i/c)\,\partial/\partial t'$ and $\partial/\partial Q_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $D_\mu = \partial/\partial Q_\mu + iϙA_\mu$, the convention used for the minimal substitution in the companion article on the Dirac equation's solutions and the non-relativistic limit.
 
 **The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ in $\mathbb{M}_-$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{iϙ}{\hbar}\tilde{A}$ in $D$ is Hermitian. This is inherited, not rederived.
 
@@ -221,7 +221,7 @@ $$
 
 and it is **anti-Hermitian**, $\tilde J_{\Psi}^{*} = -\tilde J_{\Psi}$, hence an element of the material sector $\mathbb{M}_-$ — the same sector as the four-current $ic\rho\,e_t + \vec J$ of the Maxwell article. Its scalar part is $i\,\mathrm{Sc}(\tilde{\Psi}\tilde{\Psi}^{*}) = i\,\|\tilde{\Psi}\|_E^2$, a positive imaginary number, matching the $ic\rho$ form of a positive density. It is, by these tests, a plausible current.
 
-**It is not conserved.** The divergence of $\tilde J_{\Psi}$ in the $ict$ convention is the scalar part of $\tilde{\nabla}^{\natural}\tilde J_{\Psi}$,
+**It is not conserved.** The divergence of $\tilde J_{\Psi}$ in the $ict'$ convention is the scalar part of $\tilde{\nabla}^{\natural}\tilde J_{\Psi}$,
 
 $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde J_{\Psi}\right) = \partial/\partial Q_t\,J_0 + \mathrm{div}\,\vec J,
@@ -250,7 +250,7 @@ $$
 = \mu_0\left(\vec A_g\cdot\vec J_D - \varphi_g\,\rho_D\right),
 $$
 
-where $\vec E_g = -\nabla\varphi_g - \partial/\partial t\,\vec A_g$ and $\vec B_g = \nabla\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination; the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included.
+where $\vec E_g = -\nabla\varphi_g - \partial/\partial t'\,\vec A_g$ and $\vec B_g = \nabla\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination; the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included.
 
 **What the identity says.** The left-hand side is a mixed invariant. It is the cross-contraction $\tfrac12 F^{g}_{\mu\nu}F_{D}^{\mu\nu}$ of the two field strengths, the two-field analogue of the corpus's $I_1 = \vec E^2 - c^2\vec B^2$, which contracts one field strength with itself. The right-hand side is the pairing of the boson potential with the matter source. The identity therefore says that once two fields are coupled, their mixed invariant is not free: it is fixed by the source, and fixed by a source built linearly from the potential and the four-current. It is a constraint on the source, not an independent field equation, and it is the shape of answer that Open Question 4 asks for. The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \varphi\rho - \vec A\cdot\vec J$ and is written covariantly as $\frac{1}{2\mu_0}F^{\mu\nu}F_{\mu\nu} = A^\sigma J_\sigma$; the mixed form above is the general one.
 
@@ -259,7 +259,7 @@ where $\vec E_g = -\nabla\varphi_g - \partial/\partial t\,\vec A_g$ and $\vec B_
 
 $$
 \vec B_g\cdot\vec B_D - \frac{1}{c^2}\vec E_g\cdot\vec E_D - \mu_0\left(\vec A_g\cdot\vec J_D - \varphi_g\rho_D\right)
-= \frac{\hbar}{qc}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\varphi_g}{c^2}\,r_5 - \frac{\hbar}{qc}\,\partial/\partial t r_8 ,
+= \frac{\hbar}{qc}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\varphi_g}{c^2}\,r_5 - \frac{\hbar}{qc}\,\partial/\partial t' r_8 ,
 $$
 
 so that the identity holds exactly on the solution set of the four equations and not for arbitrary fields.
@@ -309,7 +309,7 @@ It is worth separating the two, because they are easily conflated.
 
 4. **The sourced system.** How does the Dirac current feed the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$, and does the coupled system close on the algebra or require the spinor module? The integrability condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ must be recovered from the current. The external identity of the section on the mixed invariant supplies the shape of an answer — the source contraction is fixed by the two field strengths — but it is stated for the source's own field strengths, not for $\tilde{\Psi}$, so it does not by itself close the corpus's system.
 
-5. **The shared generator.** The internal phase $\exp(iϙ\Gamma/\hbar)$ and the complex time coordinate $ict$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
+5. **The shared generator.** The internal phase $\exp(iϙ\Gamma/\hbar)$ and the complex time coordinate $ict'$ both use the single element $i$ of $\mathbb{B}$. Is this identification content-bearing, or vacuous because the phase is central? (The gauge principle article's open question.)
 
 6. **The non-abelian extension.** When the connection becomes $\mathbb{B}$-valued, the field must be placed in a representation of the gauge group and the left/right question becomes sharp. The planned companions on the covariant derivative, non-abelian fields, and Yang–Mills must settle it.
 
@@ -357,7 +357,7 @@ One external result is recorded on the source side, and it is not a development 
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase; $\Gamma$ real scalar |
 | $ϙ$ | Charge (coupling constant), not fixed by the algebra |
 | $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ | Covariant derivative (left action) |
-| $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = -(i/c)\,\partial/\partial t$ |
+| $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = -(i/c)\,\partial/\partial t'$ |
 | $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Minimally coupled Dirac equation |
 | $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ | Interaction term |
 | $\exp(2iϙ\Gamma/\hbar)$ | Phase that an antilinear (Majorana-type) mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |

@@ -34,10 +34,10 @@ $$
 \tilde Q=i q'_t\,e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z,
 $$
 
-with $q'_t,q_x,q_y,q_z\in\mathbb{R}$. On the physical dictionary $q'_t=c t$ and $(q_x,q_y,q_z)=(x,y,z)$, so the general element is
+with $q'_t,q_x,q_y,q_z\in\mathbb{R}$. On the physical dictionary $q'_t=c t'$ and $(q_x,q_y,q_z)=(x,y,z)$, so the general element is
 
 $$
-\tilde Q=i c t\,e_t+x\vec e_x+y\vec e_y+z\vec e_z.
+\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z.
 $$
 
 The basis is $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the imaginary scalar block $A_2=\mathbb{R}(ie_t)$ and the real vector block $B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$.
@@ -55,7 +55,7 @@ with $\vec q=(q_x,q_y,q_z)$ and $\vec r=(r_x,r_y,r_z)$. The time direction is ce
 The quaternionic norm on the sector is
 
 $$
-N(\tilde Q)=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2t^2+x^2+y^2+z^2.
+N(\tilde Q)=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2{t'}^2+x^2+y^2+z^2.
 $$
 
 It is real and of signature $(3,1)$: three positive spatial directions and one negative temporal one. The inverse formula is
@@ -64,7 +64,7 @@ $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)},
 $$
 
-so an element is invertible exactly when its norm is non-zero. The **unit group** is the complement of the norm-zero set. On the zero set the element is a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_t^2/c^2$, whose principal symbol vanishes exactly on the null directions.
+so an element is invertible exactly when its norm is non-zero. The **unit group** is the complement of the norm-zero set. On the zero set the element is a **zero divisor**: it has no inverse, and there exists a non-zero element annihilated by it. The zero set is the **light cone**, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_{t'}^2/c^2$, whose principal symbol vanishes exactly on the null directions.
 
 ### The Four Forms
 
@@ -114,20 +114,20 @@ and a general Lorentz transformation is a general unit-norm biquaternion. The se
 
 ### The Sector Is Spacetime
 
-The element $i c t\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ is a spacetime event. Its norm is the squared interval,
+The element $i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ is a spacetime event. Its norm is the squared interval,
 
 $$
-N(\tilde Q)=-c^2t^2+x^2+y^2+z^2=s^2,
+N(\tilde Q)=-c^2{t'}^2+x^2+y^2+z^2=s^2,
 $$
 
 with the sign convention that a timelike interval is negative, a null interval is zero and a spacelike interval is positive. The interval is the norm itself, not the square of a separate norm, and the three cases are the three regions of the cone.
 
-The temporal coordinate enters as $i c t$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c t$ real in place of $i c t$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.
+The temporal coordinate enters as $i c t'$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c t'$ real in place of $i c t'$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.
 
 For a timelike worldline the proper time is
 
 $$
-d\tau=\frac{1}{c}\sqrt{-N(d\tilde Q)}=\sqrt{dt^2-\frac{dx^2+dy^2+dz^2}{c^2}},
+d\tau=\frac{1}{c}\sqrt{-N(d\tilde Q)}=\sqrt{d{t'}^2-\frac{dx^2+dy^2+dz^2}{c^2}},
 $$
 
 and it is the parameter along the worldline. For a null worldline the proper time vanishes, and the worldline is a light ray. The causal structure is the sign of the norm; the future and past cones are its two sheets.
@@ -150,7 +150,7 @@ The sector carries the standard four-vectors of relativistic physics. The table 
 
 | Four-vector | Element | Components | Norm |
 | --- | --- | --- | --- |
-| four-position | $\tilde R=i c t\,e_t+\vec x$ | $(ct,x,y,z)$ | $s^2=-c^2t^2+\lvert\vec x\rvert^2$ |
+| four-position | $\tilde R=i c t'\,e_t+\vec x$ | $(ct',x,y,z)$ | $s^2=-c^2{t'}^2+\lvert\vec x\rvert^2$ |
 | four-velocity | $\tilde V=i\gamma c\,e_t+\gamma\vec v$ | $(\gamma c,\gamma\vec v)$ | $-c^2$ |
 | four-momentum | $\tilde P=i\frac{E}{c}\,e_t+\vec p$ | $(E/c,\vec p)$ | $-m^2c^2$ |
 | four-wavevector | $\tilde K=i\frac{\omega}{c}\,e_t+\vec k$ | $(\omega/c,\vec k)$ | $0$ for light |
@@ -222,7 +222,7 @@ The action preserves the norm when the acting element has unit norm, and then it
 
 ## Examples
 
-**A four-position.** Take $c=1$, $t=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $N(\tilde Q)=-1+9=8$, a spacelike interval.
+**A four-position.** Take $c=1$, $t'=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $N(\tilde Q)=-1+9=8$, a spacelike interval.
 
 **A light ray.** Take $\tilde Q=i e_t+\vec e_x$. Then $N(\tilde Q)=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.
 
@@ -232,7 +232,7 @@ $$
 \tilde Q_2=\tilde U\tilde Q\tilde U^{*}=i c\tau\cosh\psi\,e_t-c\tau\sinh\psi\,\vec e_x,
 $$
 
-the standard boost $t_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $N(\tilde Q_2)=-c^2\tau^2$ is unchanged.
+the standard boost $t'_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $N(\tilde Q_2)=-c^2\tau^2$ is unchanged.
 
 **A mass shell.** For $\tilde P=i(E/c)e_t+\vec p$, the norm is $N(\tilde P)=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.
 
@@ -244,7 +244,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 
 ## Summary
 
-- The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c t\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$.
+- The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$.
 - Its norm is the Minkowski interval, of signature $(3,1)$, and its zero set is the light cone.
 - The light cone is the zero-divisor cone; on it the elements have no inverse, and it is the characteristic cone of the wave operator.
 - The unit group is the complement of the cone; the inverse is $\tilde Q^{\natural}/N(\tilde Q)$.
@@ -260,7 +260,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{M}_-$ | the anti-Hermitian subspace, the material sector |
-| $\tilde Q=i q'_t e_t+\vec q$ | a material element, with $q'_t=c t$ |
+| $\tilde Q=i q'_t e_t+\vec q$ | a material element, with $q'_t=c t'$ |
 | $\tilde Q^{\flat}=-{}^{*}\tilde Q$ | the reversal, whose fixed space is $\mathbb{M}_-$ |
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | the inverse, defined off the cone |

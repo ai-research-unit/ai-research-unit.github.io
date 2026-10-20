@@ -14,7 +14,7 @@ The plan is the diagonalisation and then its consequences. The next section fixe
 
 ## The Time-Harmonic System in a Homogeneous Medium
 
-The convention is $\exp(-i\omega t)$, so that $\partial/\partial t\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single **complex conductivity**
+The convention is $\exp(-i\omega t')$, so that $\partial/\partial t'\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single **complex conductivity**
 
 $$
 \sigma:=\sigma_*-i\omega\epsilon ,
@@ -246,12 +246,12 @@ so that the general solution of the Helmholtz system is the sum of two **rotated
 The time-dependent version of the same decomposition is stated in the book and makes the shape of $(16)$ clear:
 
 $$
-\ker\Bigl(\frac{1}{c^2}\partial^2/\partial t^2-\Delta\Bigr)
-=\ker\Bigl(\frac{1}{c}\partial/\partial t+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial t-iD_3\Bigr),
+\ker\Bigl(\frac{1}{c^2}\partial^2/\partial {t'}^2-\Delta\Bigr)
+=\ker\Bigl(\frac{1}{c}\partial/\partial t'+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial t'-iD_3\Bigr),
 \tag{17}
 $$
 
-with the biquaternionic Maxwell operator $(1/c)\partial/\partial t+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.
+with the biquaternionic Maxwell operator $(1/c)\partial/\partial t'+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.
 
 ## The Maxwell–Cauchy Kernel and the Integral Operators
 

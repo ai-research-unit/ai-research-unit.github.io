@@ -33,7 +33,7 @@ $$
 Applying $\tilde{\nabla}^{\natural}$ to both sides and using $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$ gives the wave equation
 
 $$
-\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2}.
+\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial {t'}^2}.
 $$
 
 This is a **linear, constant-coefficient, hyperbolic** equation. Two structural features follow.
@@ -50,7 +50,7 @@ i.e., $\nu_4 = \pm c_0\|\nu\|$. The characteristic surfaces are the light cones.
 
 ### The Propagation of Smoothness
 
-In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But **smooth initial data remains smooth for all time**. If the initial field $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, 0)$ is $C^\infty$, then so is $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t)$ for every $t > 0$.
+In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But **smooth initial data remains smooth for all time**. If the initial field $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, 0)$ is $C^\infty$, then so is $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t')$ for every $t' > 0$.
 
 The reason is that the solution operator is a Fourier multiplier: in the frequency domain, the solution is obtained by multiplying the initial data by a bounded function. The multiplier does not create new singularities; it only propagates the existing ones.
 
@@ -78,7 +78,7 @@ $$
 
 where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.
 
-The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $ict$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then
+The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $ict'$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then
 
 $$
 \partial/\partial Q_\mu \tilde{F} = \{\partial/\partial Q_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
@@ -134,7 +134,7 @@ $$
 \{n_0 + i\vec u\}\circ[B]_F = 0 .
 $$
 
-The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
+The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict'$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
 
 $$
 [b] + i(\vec u,[\vec B]) = 0 ,
@@ -233,13 +233,13 @@ where $I = |\vec E|^2$ is the intensity and $n_2$ is the nonlinear refractive in
 For a plane wave propagating in a Kerr medium, the wave equation for the envelope is approximately
 
 $$
-\partial/\partial t \tilde{F} + c(I)\,\partial/\partial Q_x \tilde{F} = 0,
+\partial/\partial t' \tilde{F} + c(I)\,\partial/\partial Q_x \tilde{F} = 0,
 $$
 
-where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\phi$ satisfying $\partial/\partial t\phi + c(\phi)\partial/\partial Q_x\phi = 0$, the equation can be written in conservation form
+where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\phi$ satisfying $\partial/\partial t'\phi + c(\phi)\partial/\partial Q_x\phi = 0$, the equation can be written in conservation form
 
 $$
-\partial/\partial t\phi + \partial/\partial Q_x f(\phi) = 0, \qquad \frac{df}{d\phi}(\phi) = c(\phi),
+\partial/\partial t'\phi + \partial/\partial Q_x f(\phi) = 0, \qquad \frac{df}{d\phi}(\phi) = c(\phi),
 $$
 
 where $f$ is a primitive of $c$. For the biquaternion-valued field, the same structure applies, with $f$ defined as the primitive of $c$ along the direction of propagation.
@@ -283,13 +283,13 @@ Magnetohydrodynamics is the setting in which the fluid and electromagnetic descr
 For a conducting fluid of velocity $\vec v$ and magnetic diffusivity $\eta$, the magnetic field obeys
 
 $$
-\partial/\partial t\vec B = \nabla\times(\vec v\times\vec B) + \eta\,\nabla^2\vec B,
+\partial/\partial t'\vec B = \nabla\times(\vec v\times\vec B) + \eta\,\nabla^2\vec B,
 $$
 
 while the vorticity of the same flow, $\vec\omega = \nabla\times\vec v$, obeys the Helmholtz equation
 
 $$
-\partial/\partial t\vec\omega = \nabla\times(\vec v\times\vec\omega) + \nu\,\nabla^2\vec\omega
+\partial/\partial t'\vec\omega = \nabla\times(\vec v\times\vec\omega) + \nu\,\nabla^2\vec\omega
 $$
 
 with the kinematic viscosity $\nu$. The two equations have the same form, in the same velocity field, with the magnetic field in the place of the vorticity and the magnetic diffusivity in the place of the kinematic viscosity. The vector identity behind both, valid for divergence-free fields, is
@@ -301,7 +301,7 @@ $$
 so that each is of the advection–diffusion type
 
 $$
-\partial/\partial t\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\nabla^2\vec Q,
+\partial/\partial t'\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\nabla^2\vec Q,
 $$
 
 with the diffusivity $\kappa = \eta$ for the field and $\kappa = \nu$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\nu = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
@@ -406,7 +406,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu \vec e_\mu \partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian |
-| $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $ict$ convention; the spatial case is the pure $\vec u$ |
+| $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $ict'$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\tilde J_{\mathrm{eg}} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |
 | $\rho = \rho_E/\sqrt{\epsilon} - i\rho_H/\sqrt{\mu}$ | Combined complex charge density |

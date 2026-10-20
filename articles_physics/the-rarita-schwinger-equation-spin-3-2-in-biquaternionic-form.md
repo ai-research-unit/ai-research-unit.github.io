@@ -178,7 +178,7 @@ up to the index-position conventions that translate $\gamma^\mu$ into the basis,
 
 ### Setting up
 
-Take the field at rest and of positive frequency, so that each component is proportional to $\exp(-imt/\hbar)$ in natural units, and the derivative is $\partial/\partial Q_t\to -im$. The Dirac operator becomes
+Take the field at rest and of positive frequency, so that each component is proportional to $\exp(-imt'/\hbar)$ in natural units, and the derivative is $\partial/\partial Q_t\to -im$. The Dirac operator becomes
 
 $$
 i\not\partial - m \;\longrightarrow\; i\gamma^0(-im) - m = m\left(\gamma^0 - I_4\right),

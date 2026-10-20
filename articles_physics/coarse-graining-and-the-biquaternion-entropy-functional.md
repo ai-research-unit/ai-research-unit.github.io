@@ -309,25 +309,25 @@ $$
 
 with equality only at $p=0$, or for states already on the axis. The entropy therefore increases monotonically with $p$ from $\mathcal{S}(\tilde{Ϛ})$ to $h(|\vec u\cdot\vec r|)$, and it is maximised over the axis by the choice $\vec u \perp \vec r$, which discards the state entirely and returns $\log 2$.
 
-In continuous time, with the transverse component decaying as $\exp(-\Gamma t)$ and the axial component fixed, the Bloch radius is
+In continuous time, with the transverse component decaying as $\exp(-\Gamma t')$ and the axial component fixed, the Bloch radius is
 
 $$
-r(t) = \sqrt{r_\parallel^2 + r_\perp(t)^2}, \qquad r_\perp(t) = \exp(-\Gamma t)r_\perp(0),
+r(t') = \sqrt{r_\parallel^2 + r_\perp(t')^2}, \qquad r_\perp(t') = \exp(-\Gamma t')r_\perp(0),
 $$
 
-where $r_\parallel = \vec u\cdot\vec r(0)$ is the fixed axial component and $r_\perp(t)$ is the **instantaneous** transverse component, and the entropy production rate is
+where $r_\parallel = \vec u\cdot\vec r(0)$ is the fixed axial component and $r_\perp(t')$ is the **instantaneous** transverse component, and the entropy production rate is
 
 $$
-\frac{d}{dt}\mathcal{S}\!\left(\tilde{Ϛ}(t)\right)
-= -\left(dr/dt\right)(t)\,\mathrm{artanh}\,r(t)
-= \Gamma\,\frac{r_\perp(t)^2}{r(t)}\,\mathrm{artanh}\,r(t) \;\ge\; 0 ,
+\frac{d}{dt'}\mathcal{S}\!\left(\tilde{Ϛ}(t')\right)
+= -\left(dr/dt'\right)(t')\,\mathrm{artanh}\,r(t')
+= \Gamma\,\frac{r_\perp(t')^2}{r(t')}\,\mathrm{artanh}\,r(t') \;\ge\; 0 ,
 $$
 
-using $\frac{dh}{dr}(r) = -\mathrm{artanh}\,r$ and $\left(dr/dt\right)(t) = -\Gamma r_\perp(t)^2/r(t)$. The rate is supported by the instantaneous transverse component, since it is $r_\perp(t)$ that carries the contraction; the initial component alone would overstate the rate at every $t > 0$.
+using $\frac{dh}{dr}(r) = -\mathrm{artanh}\,r$ and $\left(dr/dt'\right)(t') = -\Gamma r_\perp(t')^2/r(t')$. The rate is supported by the instantaneous transverse component, since it is $r_\perp(t')$ that carries the contraction; the initial component alone would overstate the rate at every $t' > 0$.
 
-The distinction matters as soon as the state has an axial part. Take $\vec r = (0.3, 0.4, 0.5)$ with $\vec u = \vec e_z$ and $\Gamma = 0.7$, so that $r_\parallel = 0.5$ and $r_\perp(0) = 0.5$: at $t = 1$ the finite-difference derivative is $0.0487233141$ and $\Gamma r_\perp(t)^2\,\mathrm{artanh}\,r(t)/r(t) = 0.0487233141$, whereas the same expression with $r_\perp(0)$ in place of $r_\perp(t)$ gives $0.1975827817$. On the state of the earlier checks, $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ with $\vec u = \vec e_z$, the axial part vanishes, $r_\perp(t) = r(t)$, and at $t = 0$ the rate is $\Gamma\,r\,\mathrm{artanh}\,r = 0.4362576681$; that case cannot separate the two interpretations, which is why the state with $r_\parallel \neq 0$ is the decisive check.
+The distinction matters as soon as the state has an axial part. Take $\vec r = (0.3, 0.4, 0.5)$ with $\vec u = \vec e_z$ and $\Gamma = 0.7$, so that $r_\parallel = 0.5$ and $r_\perp(0) = 0.5$: at $t' = 1$ the finite-difference derivative is $0.0487233141$ and $\Gamma r_\perp(t')^2\,\mathrm{artanh}\,r(t')/r(t') = 0.0487233141$, whereas the same expression with $r_\perp(0)$ in place of $r_\perp(t')$ gives $0.1975827817$. On the state of the earlier checks, $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ with $\vec u = \vec e_z$, the axial part vanishes, $r_\perp(t') = r(t')$, and at $t' = 0$ the rate is $\Gamma\,r\,\mathrm{artanh}\,r = 0.4362576681$; that case cannot separate the two interpretations, which is why the state with $r_\parallel \neq 0$ is the decisive check.
 
-The rate is positive and it vanishes when the transverse component vanishes. It also vanishes at the maximally mixed state, since there $r_\perp(t) \le r(t) \to 0$ and $\mathrm{artanh}\,r(t) \to 0$ together. It **diverges on the boundary sphere off the pointer axis**, where $\mathrm{artanh}\,r$ blows up while the transverse component stays positive: a state that is nearly pure and nearly orthogonal to the pointer axis has the most information left to lose, and it loses that information fastest. The extremum of the rate over the ball is therefore at purity, not at maximal mixing: the rate is zero at the maximally mixed state and grows without bound as the pure sphere is approached away from the axis, so it is unbounded above over the ball and has no finite maximum.
+The rate is positive and it vanishes when the transverse component vanishes. It also vanishes at the maximally mixed state, since there $r_\perp(t') \le r(t') \to 0$ and $\mathrm{artanh}\,r(t') \to 0$ together. It **diverges on the boundary sphere off the pointer axis**, where $\mathrm{artanh}\,r$ blows up while the transverse component stays positive: a state that is nearly pure and nearly orthogonal to the pointer axis has the most information left to lose, and it loses that information fastest. The extremum of the rate over the ball is therefore at purity, not at maximal mixing: the rate is zero at the maximally mixed state and grows without bound as the pure sphere is approached away from the axis, so it is unbounded above over the ball and has no finite maximum.
 
 ## Fine and Coarse: Liouville and the Second Law
 
@@ -336,26 +336,26 @@ The distinction between the two values of the functional is now exact, and it is
 **Reversible flow preserves the fine-grained entropy.** A reversible evolution of the sector is a matrix-unitary rotor conjugation,
 
 $$
-\tilde{Ϛ}(t) = \tilde{U}(t)\,\tilde{Ϛ}(0)\,\tilde{U}(t)^{*}, \qquad \tilde{U}(t)\tilde{U}(t)^{*} = e_t .
+\tilde{Ϛ}(t') = \tilde{U}(t')\,\tilde{Ϛ}(0)\,\tilde{U}(t')^{*}, \qquad \tilde{U}(t')\tilde{U}(t')^{*} = e_t .
 $$
 
-Such a map is an automorphism of the algebra; it rotates the Bloch vector without changing its length, $|\vec r(t)| = |\vec r(0)|$. Consequently
+Such a map is an automorphism of the algebra; it rotates the Bloch vector without changing its length, $|\vec r(t')| = |\vec r(0)|$. Consequently
 
 $$
-\mathcal{S}\!\left(\tilde{Ϛ}(t)\right) = \mathcal{S}\!\left(\tilde{Ϛ}(0)\right),
+\mathcal{S}\!\left(\tilde{Ϛ}(t')\right) = \mathcal{S}\!\left(\tilde{Ϛ}(0)\right),
 $$
 
 and the biquaternion norm is likewise invariant. This is the biquaternion form of **Liouville's theorem**: the fine-grained description carries a constant amount of information, and the reversible flow merely permutes it. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the generator-level correspondence between the rotor and the Hamiltonian flow; the conservation of the biquaternion norm is the invariant that the correspondence preserves.
 
-**Coarse-graining produces the increase.** If a fixed coarse-graining $\Phi$ is applied to the state of a reversible flow $\tilde{Ϛ}(t) = \tilde{U}(t)\tilde{Ϛ}(0)\tilde{U}(t)^{*}$, the entropy of the coarse description,
+**Coarse-graining produces the increase.** If a fixed coarse-graining $\Phi$ is applied to the state of a reversible flow $\tilde{Ϛ}(t') = \tilde{U}(t')\tilde{Ϛ}(0)\tilde{U}(t')^{*}$, the entropy of the coarse description,
 
 $$
-\mathcal{S}_{\rm cg}(t) = \mathcal{S}\!\left(\Phi(\tilde{Ϛ}(t))\right) \ge \mathcal{S}\!\left(\tilde{Ϛ}(t)\right) = \mathcal{S}\!\left(\tilde{Ϛ}(0)\right),
+\mathcal{S}_{\rm cg}(t') = \mathcal{S}\!\left(\Phi(\tilde{Ϛ}(t'))\right) \ge \mathcal{S}\!\left(\tilde{Ϛ}(t')\right) = \mathcal{S}\!\left(\tilde{Ϛ}(0)\right),
 $$
 
-is at least the fine-grained value at every instant, but it need not grow with $t$: the rotor can carry the transverse component onto the pointer axis and back, and the coarse-grained entropy then oscillates with no trend. A single application of $\Phi$ raises the entropy once and then leaves it fixed, since $\Phi$ is idempotent. Neither a reversible flow nor a fixed coarse-graining produces a *monotone* increase on its own; what produces one is a **one-parameter family of contractions** applied along the flow. The dephasing semigroup is the canonical example — it is the curve $\Phi_{p(t)}$ from the identity at $t=0$ towards the pointer coarse-graining as $t\to\infty$ — and for it the entropy of the evolving state rises monotonically. Both the flow and the contraction are needed for the inequality to bite, and the second law of the sector is a statement about the pair. This is exactly the classical structure of the Gibbs and Boltzmann entropies, now written with the algebra's own instruments.
+is at least the fine-grained value at every instant, but it need not grow with $t'$: the rotor can carry the transverse component onto the pointer axis and back, and the coarse-grained entropy then oscillates with no trend. A single application of $\Phi$ raises the entropy once and then leaves it fixed, since $\Phi$ is idempotent. Neither a reversible flow nor a fixed coarse-graining produces a *monotone* increase on its own; what produces one is a **one-parameter family of contractions** applied along the flow. The dephasing semigroup is the canonical example — it is the curve $\Phi_{p(t')}$ from the identity at $t'=0$ towards the pointer coarse-graining as $t'\to\infty$ — and for it the entropy of the evolving state rises monotonically. Both the flow and the contraction are needed for the inequality to bite, and the second law of the sector is a statement about the pair. This is exactly the classical structure of the Gibbs and Boltzmann entropies, now written with the algebra's own instruments.
 
-The dephasing rate makes the statement quantitative: the fine-grained value $\mathcal{S}(\tilde{Ϛ}(0))$ is the conserved reference, the evolving state's entropy increases at rate $\Gamma\,(r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$, and the total production over an infinite time is $h(|\vec u\cdot\vec r(0)|) - h(|\vec r(0)|)$, the entropy of the retained classical bit less the entropy of the state.
+The dephasing rate makes the statement quantitative: the fine-grained value $\mathcal{S}(\tilde{Ϛ}(0))$ is the conserved reference, the evolving state's entropy increases at rate $\Gamma\,(r_\perp(t')^2/r(t'))\,\mathrm{artanh}\,r(t')$, and the total production over an infinite time is $h(|\vec u\cdot\vec r(0)|) - h(|\vec r(0)|)$, the entropy of the retained classical bit less the entropy of the state.
 
 ## Preparations, Partitions, and the Least Coarse Description
 
@@ -442,10 +442,10 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $\vec r\mapsto(\vec u\cdot\vec r)\vec u$ | Action of the pointer coarse-graining |
 | $\mathcal{S}_{\rm cg}[\tilde{Ϛ};\Phi] = \mathcal{S}(\Phi(\tilde{Ϛ}))$ | Coarse-grained entropy |
 | $\mathcal{S}_{\rm cg} = h(|\vec u\cdot\vec r|)$ | Coarse-grained entropy, pointer basis |
-| $r_\parallel = \vec u\cdot\vec r$, $r_\perp(t) = \exp(-\Gamma t)r_\perp(0)$, $r(t)^2 = r_\parallel^2 + r_\perp(t)^2$ | Axial and instantaneous transverse components of the dephasing flow |
+| $r_\parallel = \vec u\cdot\vec r$, $r_\perp(t') = \exp(-\Gamma t')r_\perp(0)$, $r(t')^2 = r_\parallel^2 + r_\perp(t')^2$ | Axial and instantaneous transverse components of the dephasing flow |
 | $\vec r\mapsto(1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ | Dephasing at strength $p\in[0,1]$ |
-| $d\mathcal{S}/dt = \Gamma (r_\perp(t)^2/r(t))\,\mathrm{artanh}\,r(t)$ | Entropy production rate of continuous dephasing (instantaneous $r_\perp$) |
-| $\tilde{U}(t)$, $\tilde{U}\tilde{U}^{*} = e_t$ | Matrix-unitary rotor (reversible flow) |
+| $d\mathcal{S}/dt' = \Gamma (r_\perp(t')^2/r(t'))\,\mathrm{artanh}\,r(t')$ | Entropy production rate of continuous dephasing (instantaneous $r_\perp$) |
+| $\tilde{U}(t')$, $\tilde{U}\tilde{U}^{*} = e_t$ | Matrix-unitary rotor (reversible flow) |
 | $H(w) = -\sum_a w_a\log w_a$ | Preparation entropy |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

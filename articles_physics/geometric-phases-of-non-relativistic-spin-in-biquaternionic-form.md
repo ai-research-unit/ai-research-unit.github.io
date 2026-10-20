@@ -30,21 +30,21 @@ The companion articles supply the pieces:
 A state that evolves under a time-independent Hamiltonian $\tilde{H}$ acquires the phase
 
 $$
-\psi(t) = \exp(-\frac{i}{\hbar}\tilde{H}t)\,\psi(0),
+\psi(t') = \exp(-\frac{i}{\hbar}\tilde{H}t')\,\psi(0),
 \qquad\text{so}\qquad
 \psi(T) = \exp(-\frac{i}{\hbar}E\,T)\,\psi(0)
 $$
 
-for an eigenstate of energy $E$. The phase $-\frac{1}{\hbar}\int_0^T E\,dt$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde{H}\rangle$, and the same statement holds with $\int_0^T\langle\tilde{H}\rangle\,dt/\hbar$.
+for an eigenstate of energy $E$. The phase $-\frac{1}{\hbar}\int_0^T E\,dt'$ is the **dynamical phase**; it is proportional to the duration, so a longer journey accumulates more of it. For a general state the energy in the exponent is the expectation $\langle\tilde{H}\rangle$, and the same statement holds with $\int_0^T\langle\tilde{H}\rangle\,dt'/\hbar$.
 
 The dynamical phase is not what this article is about. It is removed by a standard subtraction, and the residue is the geometric part. The subtraction is meaningful because the two parts respond differently to a change of the speed of the journey at fixed geometry: the dynamical phase scales with the duration and the geometric phase does not.
 
 ### The Aharonov–Anandan Phase
 
-Let $|\psi(t)\rangle$ be a normalized solution of the Schrödinger equation that is **cyclic**, $|\psi(T)\rangle = \exp(i\phi_{\mathrm{tot}})|\psi(0)\rangle$ for some real $\phi_{\mathrm{tot}}$. Define
+Let $|\psi(t')\rangle$ be a normalized solution of the Schrödinger equation that is **cyclic**, $|\psi(T)\rangle = \exp(i\phi_{\mathrm{tot}})|\psi(0)\rangle$ for some real $\phi_{\mathrm{tot}}$. Define
 
 $$
-\gamma_{AA} = \phi_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\psi(t)|\tilde{H}(t)|\psi(t)\rangle\,dt .
+\gamma_{AA} = \phi_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\psi(t')|\tilde{H}(t')|\psi(t')\rangle\,dt' .
 $$
 
 This is the **Aharonov–Anandan phase**. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the plain form, read as the trace pairing:
@@ -96,13 +96,13 @@ $$
 \qquad \omega_L = \gamma B > 0,
 $$
 
-in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a state initially along $+\vec u_x$ precesses as $\vec r(t) = (\cos\omega_L t, -\sin\omega_L t, 0)$. Prepare the spin along
+in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a state initially along $+\vec u_x$ precesses as $\vec r(t') = (\cos\omega_L t', -\sin\omega_L t', 0)$. Prepare the spin along
 
 $$
 \vec u_y = \left(\sin\theta_0,\,0,\,\cos\theta_0\right),
 $$
 
-so that its Bloch vector makes an angle $\theta_0$ with the field axis. Under the evolution $\tilde{U}(t) = \exp(-\tfrac{\omega_L t}{2}\vec e_z)$ the Bloch vector precesses on the cone of half-angle $\theta_0$ about $\vec u_z$, and at the period
+so that its Bloch vector makes an angle $\theta_0$ with the field axis. Under the evolution $\tilde{U}(t') = \exp(-\tfrac{\omega_L t'}{2}\vec e_z)$ the Bloch vector precesses on the cone of half-angle $\theta_0$ about $\vec u_z$, and at the period
 
 $$
 T = \frac{2\pi}{\omega_L}
@@ -119,7 +119,7 @@ $$
 so the total phase is $\phi_{\mathrm{tot}} = \pi$ and $\psi(T) = -\psi(0)$. The dynamical integral is elementary because $\langle\sigma_3\rangle = \cos\theta_0$ is conserved by the precession:
 
 $$
-\frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt
+\frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'
 = -\frac{\omega_L}{2}\cos\theta_0\,T = -\pi\cos\theta_0 .
 $$
 
@@ -170,7 +170,7 @@ $$
 \tilde{u} = \exp(-\frac{1}{2}\Phi\,\vec u_x) = \cos\frac{\Phi}{2}\,e_t - \sin\frac{\Phi}{2}\,\vec u_x,
 $$
 
-for some axis $\vec u_x$, where $\Phi$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar}\int\langle\tilde{H}\rangle dt)$. The two faces are:
+for some axis $\vec u_x$, where $\Phi$ is the angle through which the Bloch vector is turned and $\exp(i\alpha)$ carries the dynamical part $\exp(-\frac{i}{\hbar}\int\langle\tilde{H}\rangle dt')$. The two faces are:
 
 - the **rotor** $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, which rotates the Bloch vector and is observable through the orientation of the state;
 - the **central phase** $\exp(i\alpha)\in\mathbb{C}_{\mathbb{B}}$, which multiplies the spinor and is observable only through interference with another amplitude.
@@ -194,13 +194,13 @@ and it is gauge-covariant: a rephasing $\psi_a\mapsto \exp(i\alpha_a)\psi_a$ shi
 The adiabatic limit is the slow end of a one-parameter family. Consider a field whose direction rotates about $\vec u_z$ at angular frequency $\omega$ in the Larmor sense of the corpus,
 
 $$
-\vec u_x(t) = \left(\sin\theta_0\cos\omega t,\,-\sin\theta_0\sin\omega t,\,\cos\theta_0\right),
+\vec u_x(t') = \left(\sin\theta_0\cos\omega t',\,-\sin\theta_0\sin\omega t',\,\cos\theta_0\right),
 $$
 
-with Hamiltonian $\tilde{H}(t) = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t)$ and $u_x(t)_k\tilde S_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$, gives the static effective Hamiltonian
+with Hamiltonian $\tilde{H}(t') = -\tfrac{\hbar\omega_L}{2}i\,\vec u_x(t')$ and $u_x(t')_k\tilde S_k$ the instantaneous spin along the field. Transforming to the frame that corotates with the field, $\tilde u_{\mathrm r}(t') = \exp(-\tfrac{\omega t'}{2}\vec e_z)$, gives the static effective Hamiltonian
 
 $$
-\tilde{H}_R = \tilde u_{\mathrm r}^{*}\tilde{H}\tilde u_{\mathrm r} - i\hbar\,\tilde u_{\mathrm r}^{*}\partial/\partial t\tilde u_{\mathrm r}
+\tilde{H}_R = \tilde u_{\mathrm r}^{*}\tilde{H}\tilde u_{\mathrm r} - i\hbar\,\tilde u_{\mathrm r}^{*}\partial/\partial t'\tilde u_{\mathrm r}
 = -\frac{\hbar}{2}\Big[\left(\omega_L\cos\theta_0-\omega\right)i\vec e_z + \omega_L\sin\theta_0\,i\vec e_x\Big],
 $$
 
@@ -258,7 +258,7 @@ $$
 
 one half the oriented solid angle of the curve, negative for the orientation given by the right-hand rule. For a latitude circle at polar angle $\theta_0$ the unsigned solid angle is $\Omega = 2\pi(1-\cos\theta_0)$.
 
-The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \phi_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt$, with all quantities expressed through the plain form, read as the trace pairing. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
+The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \phi_{\mathrm{tot}} + \frac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle\,dt'$, with all quantities expressed through the plain form, read as the trace pairing. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
 
 $$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\Omega}{2},
@@ -284,14 +284,14 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\omega_L = \gamma B$ | Larmor frequency |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Pure-state idempotent; carries no phase |
 | $\psi$ | Spinor; carries the geometric phase |
-| $\gamma_{AA} = \phi_{\mathrm{tot}} + \tfrac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle dt$ | Aharonov–Anandan geometric phase |
+| $\gamma_{AA} = \phi_{\mathrm{tot}} + \tfrac{1}{\hbar}\int_0^T\langle\tilde{H}\rangle dt'$ | Aharonov–Anandan geometric phase |
 | $\mathcal{A} = i\langle n|d|n\rangle$ | Berry connection (cited from the Berry article) |
 | $\gamma_{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}(\mathcal{C})$ | Solid-angle formula for spin-1/2 |
 | $\Omega = 2\pi(1-\cos\theta_0)$ | Unsigned solid angle of a latitude cap |
 | $\theta_0$ | Half-angle of the precession cone / polar angle of the loop |
 | $\tilde{u}(2\pi) = -e_t$ | One-period rotor; spinor double-valuedness |
 | $\tilde{u} = \exp(-\frac{1}{2}\Phi\vec u_x)$ | Holonomy rotor; $\Phi$ the turn of the Bloch vector |
-| $\tilde u_{\mathrm r}(t) = \exp(-\tfrac{\omega t}{2}\vec e_z)$ | Rotating-frame rotor for the driven field |
+| $\tilde u_{\mathrm r}(t') = \exp(-\tfrac{\omega t'}{2}\vec e_z)$ | Rotating-frame rotor for the driven field |
 | $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ | Effective spin field in the rotating frame |
 | $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$ | Generalized (Floquet) frequency |
 | $\arg\langle\psi_1|\psi_2\rangle = \arg\mathrm{Tr}(\psi_1^\dagger\psi_2)$ | Pancharatnam connection |

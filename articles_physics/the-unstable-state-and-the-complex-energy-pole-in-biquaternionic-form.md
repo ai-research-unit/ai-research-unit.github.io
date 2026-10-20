@@ -17,7 +17,7 @@ $$
 \tilde H = h_t\,e_t + i\,\vec h, \qquad h_t\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t)=\tilde U(t)\tilde{Ϛ}(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t')=\exp(-i\tilde Ht'/\hbar)$ with the state evolving by conjugation, $\tilde{Ϛ}(t')=\tilde U(t')\tilde{Ϛ}(0)\tilde U(t')^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -25,29 +25,29 @@ The convention for the resolvent follows *The Resolvent Operator*, which writes 
 
 ### The survival amplitude and the survival probability
 
-Let $\tilde\Pi_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t=0$, and let $\tilde{Ϛ}(t)=\tilde U(t)\tilde\Pi_0\tilde U(t)^{*}$ be its evolution. The probability that the system is found in the initial state at time $t$ is the pairing of the evolved state with the initial idempotent,
+Let $\tilde\Pi_0\in\mathbb{M}_+$ be the idempotent of the state prepared at $t'=0$, and let $\tilde{Ϛ}(t')=\tilde U(t')\tilde\Pi_0\tilde U(t')^{*}$ be its evolution. The probability that the system is found in the initial state at time $t'$ is the pairing of the evolved state with the initial idempotent,
 
 $$
-P(t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde{Ϛ}(t)\bigr)
-= \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t)\,\tilde\Pi_0\,\tilde U(t)^{*}\bigr).
+P(t') = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde{Ϛ}(t')\bigr)
+= \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t')\,\tilde\Pi_0\,\tilde U(t')^{*}\bigr).
 $$
 
-Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde U\tilde\Pi_0 = A(t)\,\tilde\Pi_0$ with
+Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde U\tilde\Pi_0 = A(t')\,\tilde\Pi_0$ with
 
 $$
-A(t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\tilde Ht/\hbar)\bigr),
+A(t') = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde U(t')\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\tilde Ht'/\hbar)\bigr),
 $$
 
 and the survival probability is the squared modulus of the **survival amplitude**,
 
 $$
-P(t) = \lvert A(t)\rvert^{2}.
+P(t') = \lvert A(t')\rvert^{2}.
 $$
 
 Unitarity bounds it,
 
 $$
-0\le P(t)\le 1, \qquad P(0)=1,
+0\le P(t')\le 1, \qquad P(0)=1,
 $$
 
 which is the norm-preservation theorem of *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem* read on a single state. The survival amplitude is thus the scalar reduction of the evolution operator, and it is a complex number at every time; the unstable state is the case in which its modulus falls away from one.
@@ -63,15 +63,15 @@ $$
 one has
 
 $$
-P(t) = 1 - \frac{(\Delta\tilde H)^{2}}{\hbar^{2}}\,t^{2} + O(t^{4}).
+P(t') = 1 - \frac{(\Delta\tilde H)^{2}}{\hbar^{2}}\,{t'}^{2} + O({t'}^{4}).
 $$
 
-The odd powers are absent: at order $t$ the two linear terms of $A(t)$ and its conjugate combine into the quadratic term of the modulus, and the cubic term of $A(t)$ is purely imaginary and does not reach the modulus at order $t^{3}$. The variance is non-negative, so the survival probability leaves one from below, quadratically. This is the analytic content of the quantum Zeno effect, and it is a constraint that no pure exponential can meet: a function $\exp(-\gamma t)$ has a linear slope $-\gamma$ at the origin, whereas the exact survival probability has vanishing slope there.
+The odd powers are absent: at order $t'$ the two linear terms of $A(t')$ and its conjugate combine into the quadratic term of the modulus, and the cubic term of $A(t')$ is purely imaginary and does not reach the modulus at order ${t'}^{3}$. The variance is non-negative, so the survival probability leaves one from below, quadratically. This is the analytic content of the quantum Zeno effect, and it is a constraint that no pure exponential can meet: a function $\exp(-\gamma t')$ has a linear slope $-\gamma$ at the origin, whereas the exact survival probability has vanishing slope there.
 
 The consequences are worth stating together.
 
-- **The exact law is quadratic at the origin.** For every state with $(\Delta\tilde H)^2>0$ the decay must begin as $1-O(t^2)$.
-- **The exponential is an intermediate-time approximation.** A decay law of the form $\exp(-\Gamma t/\hbar)$ can hold only for times long compared with the inverse spectral width of the continuum and short compared with the onset of the long-time deviations, and it is the approximation, not the exact law.
+- **The exact law is quadratic at the origin.** For every state with $(\Delta\tilde H)^2>0$ the decay must begin as $1-O({t'}^2)$.
+- **The exponential is an intermediate-time approximation.** A decay law of the form $\exp(-\Gamma t'/\hbar)$ can hold only for times long compared with the inverse spectral width of the continuum and short compared with the onset of the long-time deviations, and it is the approximation, not the exact law.
 - **The two statements do not conflict.** The measured exponential of an unstable state is a fit over an intermediate window; the quadratic start and the power-law tail are outside that window.
 
 ## The Resolvent, the Self-Energy, and the Pole
@@ -214,7 +214,7 @@ and the whole analytic structure of the model is the logarithm: a cut on the ban
 
 **Transcribed from the external literature.** The model itself, its solubility, the log shape of the band self-energy, the Golden Rule width $\Gamma=2\pi\lvert V_0\rvert^{2}\rho$, the level shift, the placement of the resonance on the second sheet, and the intermediate-time exponential are standard results of scattering theory and are cited as such in the reading at the end of the article.
 
-**Recomputed here.** The rules this article states were checked by direct recomputation on the explicit complex arithmetic of the module image. The short-time law was confirmed in two ways: from the moments of the Hamiltonian in the state, whose values $\langle\tilde H^n\rangle$ for $n=1,2,3,4$ are $-0.021836735$, $0.622340816$, $0.446589449$, $0.727840803$, giving the variance $(\Delta\tilde H)^{2}=0.621863973344$ and the exact fourth-order coefficient $0.160731108310$; and by an explicit evolution, whose ratio of $P(t)-[1-(\Delta\tilde H)^{2}t^{2}]$ to $t^{4}$ is $0.160690$, $0.160724$ and $0.160729$ at $t=0.05$, $0.02$ and $0.01$, converging to the coefficient. The survival probability does not exceed one on $t\in[0,20]$. The conjugation property $G(\bar z)=G(z)^{\dagger}$ was confirmed to $3\times10^{-15}$ over random Hermitian matrices and central complex $z$. The block identity $G_{\mathrm{c}}=(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ was confirmed against the direct inverse of a $5\times5$ Hermitian block matrix to $2\times10^{-16}$ on a $2+3$ splitting. In the band model the boundary value was confirmed at $\mathrm{Im}\,\Sigma(E_0+i0^{+})=-\Gamma/2$ and the discontinuity at $\Sigma(E_0+i0^{+})-\Sigma(E_0-i0^{+})=-i\Gamma$ to nine digits; a random search of four thousand points found no complex zero of the first-sheet equation $z-E_0-\Sigma(z)=0$; and the second-sheet zero was located at $z_\star$ with $\lvert\mathrm{Im}\,z_\star\rvert/(\Gamma/2) = 1.0008$, $1.0050$ and $1.0204$ for $g=0.02,0.05,0.10$, the departure from one being $2g^{2}$ to three digits ($2.002$, $2.010$, $2.040$ divided by $g^{2}$ at the same three couplings).
+**Recomputed here.** The rules this article states were checked by direct recomputation on the explicit complex arithmetic of the module image. The short-time law was confirmed in two ways: from the moments of the Hamiltonian in the state, whose values $\langle\tilde H^n\rangle$ for $n=1,2,3,4$ are $-0.021836735$, $0.622340816$, $0.446589449$, $0.727840803$, giving the variance $(\Delta\tilde H)^{2}=0.621863973344$ and the exact fourth-order coefficient $0.160731108310$; and by an explicit evolution, whose ratio of $P(t')-[1-(\Delta\tilde H)^{2}{t'}^{2}]$ to ${t'}^{4}$ is $0.160690$, $0.160724$ and $0.160729$ at $t'=0.05$, $0.02$ and $0.01$, converging to the coefficient. The survival probability does not exceed one on $t'\in[0,20]$. The conjugation property $G(\bar z)=G(z)^{\dagger}$ was confirmed to $3\times10^{-15}$ over random Hermitian matrices and central complex $z$. The block identity $G_{\mathrm{c}}=(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ was confirmed against the direct inverse of a $5\times5$ Hermitian block matrix to $2\times10^{-16}$ on a $2+3$ splitting. In the band model the boundary value was confirmed at $\mathrm{Im}\,\Sigma(E_0+i0^{+})=-\Gamma/2$ and the discontinuity at $\Sigma(E_0+i0^{+})-\Sigma(E_0-i0^{+})=-i\Gamma$ to nine digits; a random search of four thousand points found no complex zero of the first-sheet equation $z-E_0-\Sigma(z)=0$; and the second-sheet zero was located at $z_\star$ with $\lvert\mathrm{Im}\,z_\star\rvert/(\Gamma/2) = 1.0008$, $1.0050$ and $1.0204$ for $g=0.02,0.05,0.10$, the departure from one being $2g^{2}$ to three digits ($2.002$, $2.010$, $2.040$ divided by $g^{2}$ at the same three couplings).
 
 **The corpus's own.** The reading of the pole as a central complex number; the identification of the second sheet as the home of the unstable state, with the conjugate partner on the mirror sheet rather than on the first; the reduction of a coupling between the two slots to an effective central self-energy; the boundary condition's choice of sheet; and the separation of the level shift from the width as the Hermitian and anti-Hermitian aspects of one scalar.
 
@@ -223,9 +223,9 @@ and the whole analytic structure of the model is the logarithm: a cut on the ban
 The pole fixes the intermediate-time survival amplitude. Since the pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$,
 
 $$
-A(t)\simeq \exp(-iz_\star t/\hbar) = \exp(-i(E_0+\Delta)t/\hbar)\,\exp(-\Gamma t/(2\hbar)),
+A(t')\simeq \exp(-iz_\star t'/\hbar) = \exp(-i(E_0+\Delta)t'/\hbar)\,\exp(-\Gamma t'/(2\hbar)),
 \qquad
-P(t)\simeq \exp(-\Gamma t/\hbar),
+P(t')\simeq \exp(-\Gamma t'/\hbar),
 $$
 
 and the lifetime is
@@ -236,7 +236,7 @@ $$
 
 The approximation has a definite domain, and outside it the pole does not describe the decay.
 
-- **Very short times.** The exact law is $1-O(t^{2})$, and the exponential has a linear term. The pole sum cannot be correct at the origin; the full survival probability must be used there. For the model of this article the crossover is at times of order $\hbar/B$, the inverse bandwidth.
+- **Very short times.** The exact law is $1-O({t'}^{2})$, and the exponential has a linear term. The pole sum cannot be correct at the origin; the full survival probability must be used there. For the model of this article the crossover is at times of order $\hbar/B$, the inverse bandwidth.
 - **Very long times.** The long-time survival probability is governed by the threshold of the continuum and falls more slowly than exponentially, with a power law set by the density of states at the band edge. The pole captures the intermediate window only.
 - **The residue.** The residue of $G_{00}$ at $z_\star$ is the squared overlap of the decaying state with the initial state, the quantity that in field theory is called the wave-function renormalization at the resonance, and it is less than one when the state is spread over the continuum. This is the same residue that *The LSZ Reduction Formula in Biquaternionic Form* reads as wave-function renormalization.
 
@@ -268,7 +268,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 ## Summary
 
-The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(t)=\mathrm{Tr}(\tilde\Pi_0\tilde U(t))$, and its survival probability is $P(t)=\lvert A(t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(t)=1-(\Delta\tilde H)^{2}t^{2}/\hbar^{2}+O(t^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
+The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde U(t'))$, and its survival probability is $P(t')=\lvert A(t')\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(t')=1-(\Delta\tilde H)^{2}{t'}^{2}/\hbar^{2}+O({t'}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
 
 The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\Delta(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\Delta$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\Delta-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
 
@@ -276,7 +276,7 @@ The pole is a **complex number of the centre**. Hermiticity gives $G(\bar z)=G(z
 
 A coupling between the two slots of the module is eliminated by the block identity of *The Resolvent Operator*: relative to an orthogonal splitting $S=S_1\oplus S_2$ the Green's function of the first slot is $(z-H_{\mathrm{c}}-\Sigma_{\mathrm{nc}})^{-1}$ with $\Sigma_{\mathrm{nc}}(z)=V(z-H_{\mathrm{nc}})^{-1}V^{*}$. When the eliminated slot is discrete the addition is a real level shift; when it carries a continuum the addition is complex and the effective central potential is absorptive. This is the framework's form of the optical potential, and it explains why an effective potential must be allowed to be complex.
 
-The soluble case is the discrete state coupled to a continuum with no continuum–continuum coupling, whose reduced equation is one scalar equation with the band logarithm $\rho\ln((z+B)/(z-B))$ as its continuum term. The model, the width, the second-sheet placement and the intermediate-time exponential are transcribed from the external literature; the rules of this article were recomputed on the module image, and the checks are listed in the ledger above. The decay law $P(t)\simeq \exp(-\Gamma t/\hbar)$ holds over an intermediate window bounded below by the inverse bandwidth, where the exact quadratic start governs, and above by the continuum threshold, where a power law replaces it.
+The soluble case is the discrete state coupled to a continuum with no continuum–continuum coupling, whose reduced equation is one scalar equation with the band logarithm $\rho\ln((z+B)/(z-B))$ as its continuum term. The model, the width, the second-sheet placement and the intermediate-time exponential are transcribed from the external literature; the rules of this article were recomputed on the module image, and the checks are listed in the ledger above. The decay law $P(t')\simeq \exp(-\Gamma t'/\hbar)$ holds over an intermediate window bounded below by the inverse bandwidth, where the exact quadratic start governs, and above by the continuum threshold, where a power law replaces it.
 
 What the algebra adds is that the pole is central, that a non-central coupling reaches the lifetime only through an effective central self-energy, and that the conjugate symmetry and the choice of sheet are the two halves of one statement. What it does not add is a scale, a prediction, or a specific particle's lifetime; the coupling is always an input, and the framework's agreement with the standard treatment here is exact wherever the standard treatment applies.
 
@@ -288,8 +288,8 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde H=h_te_t+i\vec h$ | Hamiltonian, Hermitian, $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$ |
 | $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
-| $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ | Unitary evolution, $\tilde U\tilde U^{*}=e_t$ |
-| $A(t)=\mathrm{Tr}(\tilde\Pi_0\tilde U(t))$ | Survival amplitude; $P(t)=\lvert A(t)\rvert^{2}$ |
+| $\tilde U(t')=\exp(-i\tilde Ht'/\hbar)$ | Unitary evolution, $\tilde U\tilde U^{*}=e_t$ |
+| $A(t')=\mathrm{Tr}(\tilde\Pi_0\tilde U(t'))$ | Survival amplitude; $P(t')=\lvert A(t')\rvert^{2}$ |
 | $(\Delta\tilde H)^{2}$ | Variance of $\tilde H$ in the initial state |
 | $G(z)=(z-\tilde H)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |
 | $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$ | Reduced resolvent of the distinguished state |

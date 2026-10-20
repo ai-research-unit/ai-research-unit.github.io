@@ -21,7 +21,7 @@ $$
 \tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$
 
-with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$.
+with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, and the $ict'$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$.
 
 ## Integer Spin and the Representation It Needs
 
@@ -60,7 +60,7 @@ a complex vector space of dimension three, equivalently a real vector space of d
 - the space of real antisymmetric tensors, that is, of bivectors and of field strengths, through the identification of a complex three-vector with the pair $(\vec E,\vec B)$; and
 - the Lorentz Lie algebra $\mathrm{SO}(1,3)$ of rotations and boosts, with the commutator bracket.
 
-That the two are the same six-dimensional real space is not a coincidence of dimension: both are the antisymmetric square of the four-vector space, and in the $ict$ convention the four-vector space is the material sector. The material sector $\mathbb{M}_-$ is the four-dimensional real subspace spanned by $ie_t, \vec e_x, \vec e_y, \vec e_z$; its antisymmetric square is the six-dimensional space spanned by the products of distinct basis elements, which is exactly the real vector part of $\mathbb{B}$.
+That the two are the same six-dimensional real space is not a coincidence of dimension: both are the antisymmetric square of the four-vector space, and in the $ict'$ convention the four-vector space is the material sector. The material sector $\mathbb{M}_-$ is the four-dimensional real subspace spanned by $ie_t, \vec e_x, \vec e_y, \vec e_z$; its antisymmetric square is the six-dimensional space spanned by the products of distinct basis elements, which is exactly the real vector part of $\mathbb{B}$.
 
 ### The field strength as a vector of the algebra
 

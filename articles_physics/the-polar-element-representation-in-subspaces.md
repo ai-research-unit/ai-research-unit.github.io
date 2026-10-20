@@ -403,7 +403,7 @@ All three rows have the same scale, and the pattern of the two branches is compl
 Let $\tilde{Q}\in\mathbb{M}_-$, written in the physics coordinates as
 
 $$
-\tilde{Q} = i\,a\,e_t + \vec q , \qquad a = ct\in\mathbb{R}, \quad \vec q\in\mathbb{R}^3, \quad s = |\vec q| , \qquad \langle\tilde{Q}\rangle_{\natural} = s^2 - a^2 \in\mathbb{R} .
+\tilde{Q} = i\,a\,e_t + \vec q , \qquad a = ct'\in\mathbb{R}, \quad \vec q\in\mathbb{R}^3, \quad s = |\vec q| , \qquad \langle\tilde{Q}\rangle_{\natural} = s^2 - a^2 \in\mathbb{R} .
 $$
 
 The sector is the anti-fixed space of Hermitian conjugation, of real dimension four; its biquaternion norm is the real indefinite form $s^2-a^2$, vanishing on the light cone $s = |a|$, and the representation is defined off that cone. In the matrix picture it is $i$ times the Hermitian class, $\mathsf{M}_2(\tilde{Q}) = i\left(aI - v_k\sigma_k\right)$. The biquaternion norm is real, so the phase takes one of the two values compatible with a real biquaternion norm, and the element is anti-Hermitian, $\tilde{Q}^{*} = -\tilde{Q}$. That single condition fixes the shape of the representation.
@@ -422,7 +422,7 @@ $$
 \alpha = 0 \ \text{with}\ \tilde q\ \text{a pure unit vector} , \qquad \text{or} \qquad \alpha = \frac{\pi}{2}\ \text{with}\ \tilde q = \pm e_t ,
 $$
 
-and no third possibility exists. Since $N = r^2\exp(2i\alpha)$, the first branch is the **spacelike** case $s > |a|$ and the second is the **timelike** case $|a| > s$. On the material sector the phase is thus a two-valued label of the causal character of the four-vector, and it is exactly the $ict$ interpretation of the companion article: a timelike four-vector has interval $N < 0$, its square root is imaginary, and the phase is the angle $\pi/2$ that makes the time component imaginary.
+and no third possibility exists. Since $N = r^2\exp(2i\alpha)$, the first branch is the **spacelike** case $s > |a|$ and the second is the **timelike** case $|a| > s$. On the material sector the phase is thus a two-valued label of the causal character of the four-vector, and it is exactly the $ict'$ interpretation of the companion article: a timelike four-vector has interval $N < 0$, its square root is imaginary, and the phase is the angle $\pi/2$ that makes the time component imaginary.
 
 ### The Boost Factor
 
@@ -432,13 +432,13 @@ $$
 B = \frac{1}{r}\left(M\,e_t - i\,\operatorname{sign}(a)\,m\,\vec u_q\right) , \qquad M = \max(|a|,s), \quad m = \min(|a|,s) , \qquad \vec u_q = \frac{\vec q}{s} ,
 $$
 
-which is a boost rotor $B = \cosh\varphi\,e_t - i\operatorname{sign}(a)\sinh\varphi\,\vec u_q$ of rapidity $2\varphi$ with $\tanh\varphi = m/M$. Squaring it uses $Mm = |a|s$ and gives $B^2 = \left((a^2+s^2)e_t - 2ia\vec q\right)/r^2 = \tilde{Q}\tilde{Q}^{*}/r^2$, so the closed form is verified by squaring. In the timelike case with $a = ct > 0$ it is the four-velocity identity of the companion article,
+which is a boost rotor $B = \cosh\varphi\,e_t - i\operatorname{sign}(a)\sinh\varphi\,\vec u_q$ of rapidity $2\varphi$ with $\tanh\varphi = m/M$. Squaring it uses $Mm = |a|s$ and gives $B^2 = \left((a^2+s^2)e_t - 2ia\vec q\right)/r^2 = \tilde{Q}\tilde{Q}^{*}/r^2$, so the closed form is verified by squaring. In the timelike case with $a = ct' > 0$ it is the four-velocity identity of the companion article,
 
 $$
-B = \frac{ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c\tau} = \gamma\left(e_t - i\frac{\vec q}{c}\right) = -\frac{i}{c}\tilde{V} , \qquad \gamma = \frac{ct}{c\tau} = \frac{1}{\sqrt{1-\beta^2}} ,
+B = \frac{ct'\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c\tau} = \gamma\left(e_t - i\frac{\vec q}{c}\right) = -\frac{i}{c}\tilde{V} , \qquad \gamma = \frac{ct'}{c\tau} = \frac{1}{\sqrt{1-\beta^2}} ,
 $$
 
-with $\beta = s/(ct)$; the scale is the proper length $r = c\tau = ct\sqrt{1-\beta^2}$ and the rotor is the central sign.
+with $\beta = s/(ct')$; the scale is the proper length $r = c\tau = ct'\sqrt{1-\beta^2}$ and the rotor is the central sign.
 
 ### The Two Branches of the Material Sector
 
@@ -460,7 +460,7 @@ On the **spacelike** branch the rotor is the pure unit vector $\vec u_q$, a poin
 | $\tilde{Q} = ie_t+0.6\,\vec e_x$ | $-0.64$ | $0.8$ | $1.570796327$ | $1.25\,e_t - 0.75\,i\vec e_x$ | $e_t$ |
 | $\tilde{Q} = 0.5\,ie_t+\vec e_x$ | $0.75$ | $0.866025404$ | $0$ | $1.154700538\,e_t - 0.577350269\,i\vec e_x$ | $\vec e_x$ |
 
-The first row is the four-position of the companion article at $ct = 1$ and $0.6c$: $r = 0.8 = c\tau$, $\alpha = \pi/2$, $B = \gamma(e_t-i\beta)$ with $\gamma = 1.25$ and $\beta = 0.6$, and the rotor is $e_t$. The second row is spacelike: $r = \sqrt{3}/2 = 0.866025404$, the phase vanishes, the rotor is the direction $\vec e_x$, and the boost is a boost about the axis $-\vec e_x$ of rapidity $2\operatorname{arctanh}(0.5) = 1.098612289$.
+The first row is the four-position of the companion article at $ct' = 1$ and $0.6c$: $r = 0.8 = c\tau$, $\alpha = \pi/2$, $B = \gamma(e_t-i\beta)$ with $\gamma = 1.25$ and $\beta = 0.6$, and the rotor is $e_t$. The second row is spacelike: $r = \sqrt{3}/2 = 0.866025404$, the phase vanishes, the rotor is the direction $\vec e_x$, and the boost is a boost about the axis $-\vec e_x$ of rapidity $2\operatorname{arctanh}(0.5) = 1.098612289$.
 
 ## The Biquaternion Norm Decides the Phase
 
@@ -519,7 +519,7 @@ are the intersections of the remarkable subspaces, and each block lies in three 
 | block | subspaces containing it | element | $r$ | $\alpha$ | $B$ | $\tilde q$ |
 |---|---|---|---|---|---|---|
 | $T_{\mathrm{i}}$ | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | $t\,e_t$ | $|t|$ | $0$ | $e_t$ | $\operatorname{sign}(t)e_t$ |
-| $T_{\mathrm{m}}$ | $\mathbb{C}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ | $it\,e_t$ | $|t|$ | $\pi/2$ | $e_t$ | $\operatorname{sign}(t)e_t$ |
+| $T_{\mathrm{m}}$ | $\mathbb{C}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ | $it'\,e_t$ | $|t'|$ | $\pi/2$ | $e_t$ | $\operatorname{sign}(t')e_t$ |
 | $X_{\mathrm{m}}$ | $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$ | $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$ | $0$ | $e_t$ | $\vec u_x$ |
 | $X_{\mathrm{i}}$ | $\mathrm{Vect}(\mathbb{B})$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ | $i\vec q'$ | $|\vec q'|$ | $\pi/2$ | $e_t$ | $\vec u_{q'}$ |
 
@@ -555,7 +555,7 @@ The restrictions together exhaust the ways in which the four factors can depend 
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\operatorname{Sc}(\tilde{Q}) = 0$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | real quaternion subspace, antiquaternion subspace |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | informational and material sectors |
-| $\tilde{Q} = iae_t+\vec q$, $s = |\vec q|$ | element of the material sector; $a = ct$ for a four-position |
+| $\tilde{Q} = iae_t+\vec q$, $s = |\vec q|$ | element of the material sector; $a = ct'$ for a four-position |
 | $\tilde{Q} = ae_t+i\vec q'$, $s = |\vec q'|$ | element of the informational sector |
 | $\tilde{Q} = \vec q+i\vec q'$ | element of the vector subspace |
 | $\varphi$ | the half-rapidity of $B$: $B = \cosh\varphi\,e_t + i\sinh\varphi\,\vec u_{\mathrm b}$, rapidity $2\varphi$ |

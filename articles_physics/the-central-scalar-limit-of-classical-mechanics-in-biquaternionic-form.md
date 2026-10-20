@@ -20,7 +20,7 @@ The treatment is classical and non-quantum throughout. The companion articles *T
 
 ### Where the World Is Placed
 
-The full worldline is the material-sector curve $\tilde{R}(t) = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z$. In the non-relativistic limit the scalar direction $ie_t$ is inert — the Galilean shear of the first article leaves it fixed — so the configuration space of the non-relativistic particle is the direct sum
+The full worldline is the material-sector curve $\tilde{R}(t') = ic\,t'\,e_t + x(t')\,\vec e_x+y(t')\,\vec e_y+z(t')\,\vec e_z$. In the non-relativistic limit the scalar direction $ie_t$ is inert — the Galilean shear of the first article leaves it fixed — so the configuration space of the non-relativistic particle is the direct sum
 
 $$
 ie_t\mathbb{R} \;\oplus\; \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \;\subset\; \mathbb{M}_- ,
@@ -28,13 +28,13 @@ $$
 
 that is, one scalar direction for time and three real vector directions for space. This is the algebra's realization of $\mathbb{R} \times \mathbb{R}^3$, and it is the setting of every classical problem in this subcategory.
 
-The scalar direction is the imaginary $ie_t$, so the time coordinate appears as the imaginary scalar $ic\,t$; the spatial directions are the real $\vec e_\mu$, so the position is a real pure quaternion. The velocity, acceleration, momentum and force are then all real pure quaternions,
+The scalar direction is the imaginary $ie_t$, so the time coordinate appears as the imaginary scalar $ic\,t'$; the spatial directions are the real $\vec e_\mu$, so the position is a real pure quaternion. The velocity, acceleration, momentum and force are then all real pure quaternions,
 
 $$
-\vec v = d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt, \qquad \vec a = d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt^2, \qquad \vec p = m\vec v, \qquad \vec F = m\vec a ,
+\vec v = d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt', \qquad \vec a = d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/d{t'}^2, \qquad \vec p = m\vec v, \qquad \vec F = m\vec a ,
 $$
 
-each obtained from the others by differentiation with respect to the scalar parameter $t$ or by multiplication by the central scalar $m$. The three directions are rotated among themselves by the unit real quaternions, and the rotation is the adjoint action $R(\cdot)R^{-1}$ of the companion article *The Reflection and the Rotation in Biquaternionic Form*.
+each obtained from the others by differentiation with respect to the scalar parameter $t'$ or by multiplication by the central scalar $m$. The three directions are rotated among themselves by the unit real quaternions, and the rotation is the adjoint action $R(\cdot)R^{-1}$ of the companion article *The Reflection and the Rotation in Biquaternionic Form*.
 
 ### Scalars Are Central
 
@@ -62,9 +62,9 @@ which is the biquaternion norm of the velocity, up to the mass. The sign is the 
 
 The conditions of the introduction can be stated as a restriction on the algebra elements a problem is allowed to use. A classical central-force problem in the limit is specified by:
 
-- a real vector $\vec r(t) \in \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{M}_-$ for the position;
-- a real vector $\vec p(t)$ for the momentum, equal to $md\vec r/dt$;
-- a real vector $\vec F = d\vec p/dt$ for the force;
+- a real vector $\vec r(t') \in \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\} \subset \mathbb{M}_-$ for the position;
+- a real vector $\vec p(t')$ for the momentum, equal to $md\vec r/dt'$;
+- a real vector $\vec F = d\vec p/dt'$ for the force;
 - a **central scalar** potential $\tilde{\Phi} = V(|\vec r|)e_t \in \mathbb{M}_+$, depending on the position only through the rotation-invariant length $|\vec r| = \sqrt{\langle \vec r\rangle_{\natural}}$;
 - a central scalar energy $\tilde{E} = E e_t$.
 
@@ -133,25 +133,25 @@ so the angular momentum is the **vector part of the quaternion product** of posi
 The conservation of angular momentum for a central force follows from the commutator form with no vector identity beyond the product rule. Indeed,
 
 $$
-d\vec L/dt = \tfrac12\frac{d}{dt}[\vec r, \vec p] = \tfrac12\left([d\vec r/dt, \vec p] + [\vec r, d\vec p/dt]\right) = \tfrac12\left(m[d\vec r/dt, d\vec r/dt] + [\vec r, \vec F]\right) = \tfrac12[\vec r, \vec F] ,
+d\vec L/dt' = \tfrac12\frac{d}{dt'}[\vec r, \vec p] = \tfrac12\left([d\vec r/dt', \vec p] + [\vec r, d\vec p/dt']\right) = \tfrac12\left(m[d\vec r/dt', d\vec r/dt'] + [\vec r, \vec F]\right) = \tfrac12[\vec r, \vec F] ,
 $$
 
-because $[d\vec r/dt, d\vec r/dt] = 0$ and $d\vec p/dt = \vec F$. Hence
+because $[d\vec r/dt', d\vec r/dt'] = 0$ and $d\vec p/dt' = \vec F$. Hence
 
 $$
-d\vec L/dt = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0 ,
+d\vec L/dt' = 0 \;\Longleftrightarrow\; [\vec r, \vec F] = 0 ,
 $$
 
-which is precisely the criterion for a central force. **The conservation of angular momentum and the centrality of the force are the same algebraic condition**, and the derivation is a two-line computation in the algebra rather than a vector identity about torque. The torque $\vec\tau = \vec r\times\vec F$ is $\tfrac12[\vec r, \vec F]$, so the result is the standard $d\vec L/dt = \vec\tau$ written as a commutator.
+which is precisely the criterion for a central force. **The conservation of angular momentum and the centrality of the force are the same algebraic condition**, and the derivation is a two-line computation in the algebra rather than a vector identity about torque. The torque $\vec\tau = \vec r\times\vec F$ is $\tfrac12[\vec r, \vec F]$, so the result is the standard $d\vec L/dt' = \vec\tau$ written as a commutator.
 
 ### Planar Motion and the Areal Law
 
 Since $\vec L$ is a constant real vector, the motion lies in the plane through the origin perpendicular to $\vec L$: contracting the definition with $\vec r$ gives $\vec r\cdot\vec L = \vec r\cdot(\vec r\times\vec p) = 0$, so the position is always orthogonal to the fixed direction $\vec L$. The motion is therefore planar for every central force, and the two-dimensional problem is the general one.
 
-In that plane, with polar coordinates $(r, \theta)$, the angular momentum is $L = mr^2d\theta/dt$. The **areal velocity** is
+In that plane, with polar coordinates $(r, \theta)$, the angular momentum is $L = mr^2d\theta/dt'$. The **areal velocity** is
 
 $$
-\frac{dA}{dt} = \frac{1}{2}r^2d\theta/dt = \frac{L}{2m},
+\frac{dA}{dt'} = \frac{1}{2}r^2d\theta/dt' = \frac{L}{2m},
 $$
 
 a constant; this is the law Kepler stated for the planets, and the argument shows that it holds for every central force, not only the inverse-square one. Its algebraic content is that $L = \tfrac12[\vec r,\vec p]$ is constant.
@@ -163,7 +163,7 @@ a constant; this is the law Kepler stated for the planets, and the argument show
 With the motion planar and $L$ constant, the kinetic energy separates into radial and angular parts,
 
 $$
-T = \frac{1}{2}m\left(\left(dr/dt\right)^{2} + r^2\left(d\theta/dt\right)^{2}\right) = \frac{1}{2}m\left(dr/dt\right)^{2} + \frac{L^2}{2mr^2},
+T = \frac{1}{2}m\left(\left(dr/dt'\right)^{2} + r^2\left(d\theta/dt'\right)^{2}\right) = \frac{1}{2}m\left(dr/dt'\right)^{2} + \frac{L^2}{2mr^2},
 $$
 
 and the energy becomes a one-dimensional problem for the radius with the **effective potential**
@@ -175,26 +175,26 @@ $$
 The energy is conserved,
 
 $$
-E = \frac{1}{2}m\left(dr/dt\right)^{2} + V_{\text{eff}}(r) = \text{const},
+E = \frac{1}{2}m\left(dr/dt'\right)^{2} + V_{\text{eff}}(r) = \text{const},
 $$
 
 and the radial equation is
 
 $$
-md^2r/dt^2 = -\frac{dV_{\text{eff}}}{dr}(r) = -\frac{dV}{dr}(r) + \frac{L^2}{mr^3} .
+md^2r/d{t'}^2 = -\frac{dV_{\text{eff}}}{dr}(r) = -\frac{dV}{dr}(r) + \frac{L^2}{mr^3} .
 $$
 
 The reduction is the standard one; its role here is to display the scalar character of the central-scalar limit. After the reduction, the entire problem is a one-dimensional scalar problem in the central scalars $E$ and $L$ and the radial variable $r$. The vector directions have been exhausted by the conserved angular momentum, and the only surviving dynamical variable is a scalar.
 
 ### Binet's Equation
 
-The orbit $r(\theta)$ is obtained from the radial equation by the substitution $u = 1/r$. With $h = L/m$ the areal law gives $d\theta/dt = hu^2$, and differentiating $u$ with respect to $\theta$ rather than to $t$ converts the radial equation into **Binet's equation** for a general central force:
+The orbit $r(\theta)$ is obtained from the radial equation by the substitution $u = 1/r$. With $h = L/m$ the areal law gives $d\theta/dt' = hu^2$, and differentiating $u$ with respect to $\theta$ rather than to $t'$ converts the radial equation into **Binet's equation** for a general central force:
 
 $$
 \frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2},
 $$
 
-where $F(r)$ is the radial component of the force, positive outward. The derivation is the standard one: from $dr/dt = -h\,du/d\theta$ and $d^2r/dt^2 = -h^2u^2\,d^2u/d\theta^2$ (with $u=1/r$), substituting into $md^2r/dt^2 = F(r) + L^2/(mr^3)$ and using $L^2/(mr^3) = mh^2u^3$ gives the equation above. The equation is scalar, it is second order, and its two integration constants are the eccentricity-like amplitude and the orientation of the orbit. Every central-force orbit in the limit is a solution of this one equation.
+where $F(r)$ is the radial component of the force, positive outward. The derivation is the standard one: from $dr/dt' = -h\,du/d\theta$ and $d^2r/d{t'}^2 = -h^2u^2\,d^2u/d\theta^2$ (with $u=1/r$), substituting into $md^2r/d{t'}^2 = F(r) + L^2/(mr^3)$ and using $L^2/(mr^3) = mh^2u^3$ gives the equation above. The equation is scalar, it is second order, and its two integration constants are the eccentricity-like amplitude and the orientation of the orbit. Every central-force orbit in the limit is a solution of this one equation.
 
 For the linear force $F(r) = -m\omega^2r$, Binet's equation becomes $\frac{d^2u}{d\theta^2} + u = \omega^2/(h^2u^3)$, which is nonlinear in $u$; its orbits are nevertheless closed ellipses, centred on the force centre rather than focused on it, and they are more cleanly seen in the phase plane of the second article than through Binet's equation. For the inverse-square force $F(r) = -\kappa/r^2$ the equation becomes linear,
 
@@ -257,12 +257,12 @@ $$
 and the conservation law is a two-line computation,
 
 $$
-d\vec L/dt = \tfrac12[\vec r,\vec F] = 0 \;\Longleftrightarrow\; \vec F\text{ central}.
+d\vec L/dt' = \tfrac12[\vec r,\vec F] = 0 \;\Longleftrightarrow\; \vec F\text{ central}.
 $$
 
 The conservation of angular momentum is therefore identical with the centrality of the force, and both are statements that the position and the force commute as quaternions.
 
-A central force gives planar motion, the areal law $dA/dt = L/(2m)$, the reduction to the radial problem with effective potential $V_{\text{eff}} = V(r) + L^2/(2mr^2)$, and Binet's equation
+A central force gives planar motion, the areal law $dA/dt' = L/(2m)$, the reduction to the radial problem with effective potential $V_{\text{eff}} = V(r) + L^2/(2mr^2)$, and Binet's equation
 
 $$
 \frac{d^2u}{d\theta^2} + u = -\frac{F(1/u)}{mh^2u^2}, \qquad u = \frac{1}{r}, \quad h = \frac{L}{m},
@@ -289,7 +289,7 @@ The rotations are the unit real quaternions acting by $\vec a \mapsto R\vec aR^{
 | $\vec a\vec b = -\vec a\cdot\vec b\,e_t + \vec a\times\vec b$ | Quaternion product of two real vectors |
 | $[\vec a,\vec b] = 2\,\vec a\times\vec b$ | Commutator of two real vectors |
 | $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$ | Angular momentum; vector part of $\vec r\vec p$ |
-| $d\vec L/dt = \tfrac12[\vec r,\vec F]$ | Torque; vanishes iff the force is central |
+| $d\vec L/dt' = \tfrac12[\vec r,\vec F]$ | Torque; vanishes iff the force is central |
 | $r, \theta$; $h = L/m$ | Polar coordinates; areal constant |
 | $V_{\text{eff}} = V(r) + L^2/(2mr^2)$ | Effective potential |
 | $u = 1/r$ | Binet variable |

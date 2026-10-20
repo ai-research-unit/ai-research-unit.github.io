@@ -28,7 +28,7 @@ S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu} ,
 {F^{\mathrm{dual}}}^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$
 
-with all indices summed in the $ict$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the informational trace formula.
+with all indices summed in the $ict'$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the informational trace formula.
 
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the invariant $I_2=\vec E\cdot\vec B$.
 - Companion article *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*, for the theta vacuum and its periodicity.
@@ -72,7 +72,7 @@ S_\theta^{\text{ab}}=\frac{\theta}{32\pi^2}\int d^4x\,\frac{4i}{c}I_2
 =\frac{i\theta}{8\pi^2 c}\int d^4x\,I_2 .
 $$
 
-The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $ict$ convention attaches to the pseudoscalar. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.
+The theta term is thus the integral of the framework's own parity-odd invariant, with the factor $i$ that the $ict'$ convention attaches to the pseudoscalar. This is the genuine affirmative content of the article: in the abelian sector the CP-odd term is not an object the framework lacks; it is $I_2$, already present in *The Field-Strength Biquaternion and Its Invariants*.
 
 **Parity.** The transformation $I_2\to-I_2$ under parity, established with the other invariant properties of the field strength, is what makes the theta term a source of CP violation. A term linear in a parity-odd density, with a real coefficient $\theta$, is not invariant under parity unless $\theta$ takes the special values $0$ or $\pi$ (mod $2\pi$); the theory therefore violates $P$ and $T$, and by CPT, $CP$, for generic $\theta$. The statement is purely algebraic in the abelian sector: the framework has one parity-even and one parity-odd derivative-free invariant, and the theta term is the integral of the odd one.
 

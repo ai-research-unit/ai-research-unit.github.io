@@ -292,7 +292,7 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 | $\bar w_2\gamma^\mu w=\bar w_2[(p+p_2)^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ | Gordon decomposition (verified $3.0\times10^{-15}$) |
 | $k=p_2-p$ | Momentum transfer |
 | $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ | Clifford metric (level 3) |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | $ict$ metric (level 2) |
+| $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | $ict'$ metric (level 2) |
 | $\gamma^\mu\gamma_\mu=4$, $\gamma^\mu\gamma^\alpha\gamma_\mu=-2\gamma^\alpha$ | Contraction identities (residual $0$) |
 | $\mathrm{tr}(\gamma^\mu\gamma^\nu)=4g^{\mu\nu}$ | Trace identity (residual $0$) |
 | $\mathsf{M}_4(\vec e_\mu)=\gamma^\mu\gamma^\rho$, $\mathsf{M}_4(i\vec e_\mu)=\gamma^0\gamma^\mu$, $\mathsf{M}_4(i)=-\omega$ | Dictionary (verified) |

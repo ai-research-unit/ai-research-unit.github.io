@@ -161,11 +161,11 @@ the second relation being the analytic continuation of the first to $s=0$. In th
 
 **Heat-kernel evaluation.** The zeta function is evaluated from the heat kernel of the previous article,
 $$
-\zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dt\;t^{s-1}\,K(t),
+\zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dt'\;{t'}^{s-1}\,K(t'),
 \qquad
-K(t) = \mathrm{Tr}\,\exp(-tS^{(2)}),
+K(t') = \mathrm{Tr}\,\exp(-t'S^{(2)}),
 $$
-and the small-$t$ expansion $K(t)\sim(4\pi t)^{-d/2}\sum_n a_n t^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that *The Trace Anomaly in Biquaternionic Form* uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
+and the small-$t'$ expansion $K(t')\sim(4\pi t')^{-d/2}\sum_n a_n {t'}^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that *The Trace Anomaly in Biquaternionic Form* uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
 
 **A remark on scheme dependence.** Different regularizations (zeta function, proper time with a cutoff, dimensional regularization) differ by local counterterms, and the *ratios* of determinants of operators of the same type are scheme-independent. In the framework, a scheme-independent statement is one that compares two determinants taken on the same module; this is the same caveat that attends any statement about the biquaternion norm's normalization.
 
@@ -191,9 +191,9 @@ whose blocks act between the two minimal left ideals. The mass occupies the diag
 $$
 \det\mathcal{D} = \big|\det\mathcal{D}\big|\,\exp(\,i\phi_{\mathcal{D}}),
 $$
-with the phase $\phi_{\mathcal{D}}$ the object of interest. For a family of operators $\mathcal{D}(t)$ interpolating between two Hermitian endpoints the phase is the **eta invariant** of the family,
+with the phase $\phi_{\mathcal{D}}$ the object of interest. For a family of operators $\mathcal{D}(t')$ interpolating between two Hermitian endpoints the phase is the **eta invariant** of the family,
 $$
-\phi_{\mathcal{D}(t)} = \frac{\pi}{2}\,\eta\big(\mathcal{D}(t)\big) + \text{const},
+\phi_{\mathcal{D}(t')} = \frac{\pi}{2}\,\eta\big(\mathcal{D}(t')\big) + \text{const},
 $$
 a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta$ dependence: the $\theta$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
 
@@ -258,7 +258,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $\det(\kappa e_t)|_{\text{module}}=\kappa^2$ | Central operator's module determinant |
 | $(\det K_{\mathrm{kin}})^{-1/2}$ | Gaussian normalization |
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
-| $K(t)=\mathrm{Tr}\,\exp(-tS^{(2)})$, $K\sim(4\pi t)^{-d/2}\sum a_n t^n$ | Heat kernel; Seeley–DeWitt coefficients |
+| $K(t')=\mathrm{Tr}\,\exp(-t'S^{(2)})$, $K\sim(4\pi t')^{-d/2}\sum a_n {t'}^n$ | Heat kernel; Seeley–DeWitt coefficients |
 | $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
 | $\mathcal{D}=i\partial\!\!\!/-m$ | Fermionic fluctuation operator |
 | $\det\mathcal{D}=|\det\mathcal{D}|\exp(i\phi_{\mathcal{D}})$ | Complex (chiral) fermion determinant |

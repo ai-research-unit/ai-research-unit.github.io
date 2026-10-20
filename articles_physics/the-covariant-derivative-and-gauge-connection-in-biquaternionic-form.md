@@ -45,7 +45,7 @@ D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}
   =: \sum_{\mu\in\{t,x,y,z\}} e_\mu\, D_\mu,
 $$
 
-where $\partial/\partial Q_t = \partial/\partial(ict)$ and $\partial/\partial Q_k = \partial/\partial x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,
+where $\partial/\partial Q_t = \partial/\partial(ict')$ and $\partial/\partial Q_k = \partial/\partial x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,
 
 $$
 D\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi},
@@ -165,7 +165,7 @@ because $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma\, e_t$ is a 
 **A single point can always be made connection-free.** Given any connection $\tilde{A}$ and any point $\tilde{Q}_0$, choose the real, affine gauge function
 
 $$
-\Gamma(\tilde{Q}) = -a\,t + A_1(\tilde{Q}_0)\,x + A_2(\tilde{Q}_0)\,y + A_3(\tilde{Q}_0)\,z,
+\Gamma(\tilde{Q}) = -a\,t' + A_1(\tilde{Q}_0)\,x + A_2(\tilde{Q}_0)\,y + A_3(\tilde{Q}_0)\,z,
 \qquad a = -ic\,A_0(\tilde{Q}_0) = \phi(\tilde{Q}_0) \in \mathbb{R},
 $$
 
@@ -176,10 +176,10 @@ so that $\partial/\partial Q_\mu\,\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and 
 **The connection one-form is a real quaternion.** One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives
 
 $$
-\tilde{A}_\mu\,dx^\mu = A_0\,d(ict) + A_k\,dx^k = -\phi\,dt + \vec A\cdot d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+\tilde{A}_\mu\,dx^\mu = A_0\,d(ict') + A_k\,dx^k = -\phi\,dt' + \vec A\cdot d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$
 
-which is real: $A_0$ is imaginary and $d(ict)$ is imaginary, so their product is real, while $A_k$ and $dx^k$ are separately real. In the algebra this says $\tilde{A}_\mu\,dx^\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\tilde{A}_\mu\,dx^\mu \mapsto \tilde{A}_\mu\,dx^\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
+which is real: $A_0$ is imaginary and $d(ict')$ is imaginary, so their product is real, while $A_k$ and $dx^k$ are separately real. In the algebra this says $\tilde{A}_\mu\,dx^\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\tilde{A}_\mu\,dx^\mu \mapsto \tilde{A}_\mu\,dx^\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
 
 ## The Curvature as the Commutator of Covariant Derivatives
 
@@ -283,7 +283,7 @@ A second external source goes further and puts the two objects into one. J. Fred
 
 4. **Dynamical content of the covariant square.** The curvature term $\frac{iϙ}{\hbar}\tilde{F}$ in $\bar D D$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a Pauli-type coupling — or is it a rewriting of the commutator identity with no independent consequence?
 
-5. **The one-form and the holonomy.** The connection one-form $\tilde{A}_\mu\,dx^\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $ict$ convention in disguise? No answer is offered here.
+5. **The one-form and the holonomy.** The connection one-form $\tilde{A}_\mu\,dx^\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $ict'$ convention in disguise? No answer is offered here.
 
 6. **Gauge fixing.** The canonical-quantization article establishes that the framework cannot fix the gauge. The present article does not supply a selection principle either; the gauge orbit of the connection is exactly as large as the local phases allow.
 
@@ -332,7 +332,7 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 | $ϙ$ | Coupling constant (charge), not fixed by the algebra |
 | $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A} = \sum_\mu e_\mu D_\mu$ | Covariant derivative |
-| $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = \partial/\partial(ict)$ |
+| $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = \partial/\partial(ict')$ |
 | $\bar D = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$ | Quaternion conjugate of $D$ |
 | $\tilde{A}^{\natural} = A_0e_t - A_\mu\vec e_\mu$ | Quaternion conjugate of the connection |
 | $[D_\mu, f] = \partial/\partial Q_\mu f$ | Derivation property |

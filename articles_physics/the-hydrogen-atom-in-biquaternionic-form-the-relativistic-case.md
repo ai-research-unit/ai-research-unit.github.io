@@ -41,10 +41,10 @@ which enters the spectrum as a parameter.
 
 ### The module transcription
 
-The framework's states are spinors in the minimal left ideal $\mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$, and a position-space treatment extends this to a spinor field $\psi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,
+The framework's states are spinors in the minimal left ideal $\mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$, and a position-space treatment extends this to a spinor field $\psi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,
 
 $$
-i\hbar\,\partial/\partial t\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot p + \beta mc^2 + V(r)\,\Bigr]\psi,
+i\hbar\,\partial/\partial t'\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot p + \beta mc^2 + V(r)\,\Bigr]\psi,
 \qquad \boldsymbol\alpha^k = \gamma^0\gamma^k, \quad \beta = \gamma^0,
 $$
 
@@ -221,7 +221,7 @@ $$
 
 which vanishes only at $m = 0$, while the vector current is conserved for the massive field; this was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
 
-The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $p \to p - ϙ\vec A$ and $i\hbar\partial/\partial t \to i\hbar\partial/\partial t - ϙ\phi$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
+The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $p \to p - ϙ\vec A$ and $i\hbar\partial/\partial t' \to i\hbar\partial/\partial t' - ϙ\phi$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
 
 ## The Finite Basis and the Balance of the Two Components
 
@@ -232,9 +232,9 @@ The transcription above is written for continuous fields, and a numerical realiz
 In the Dirac basis the four-component spinor $\psi$ of the preceding section splits into an **upper** (large) and a **lower** (small) component, as in the companion exercise on the non-relativistic limit; the two components are written $\psi_{\mathrm{large}}$ and $\psi_{\mathrm{small}}$, coupled by
 
 $$
-i\hbar\,\partial/\partial t\psi_{\mathrm{large}} = c\,\boldsymbol\sigma\cdot\vec\pi\,\psi_{\mathrm{small}}+V\psi_{\mathrm{large}},
+i\hbar\,\partial/\partial t'\psi_{\mathrm{large}} = c\,\boldsymbol\sigma\cdot\vec\pi\,\psi_{\mathrm{small}}+V\psi_{\mathrm{large}},
 \qquad
-i\hbar\,\partial/\partial t\psi_{\mathrm{small}} = c\,\boldsymbol\sigma\cdot\vec\pi\,\psi_{\mathrm{large}}-2mc^2\psi_{\mathrm{small}}+V\psi_{\mathrm{small}} ,
+i\hbar\,\partial/\partial t'\psi_{\mathrm{small}} = c\,\boldsymbol\sigma\cdot\vec\pi\,\psi_{\mathrm{large}}-2mc^2\psi_{\mathrm{small}}+V\psi_{\mathrm{small}} ,
 $$
 
 with $V(r) = ϙ\phi = -\kappa/r$ and the kinetic momentum $\vec\pi = p-ϙ\vec A$. The Coulomb problem has $\vec A = 0$, so that $\vec\pi = p$ there. A finite basis chooses an expansion for each of the two components — functions $\{f_\mu\}$ for the large component, and a set of its own for the small — and the two choices are independent unless a further condition is imposed.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The framework has no external time parameter. The material time is the imaginary coefficient $ict$ of an element of the anti-Hermitian sector $\mathbb{M}_-$, the informational time is the real coefficient $ct'$ of an element of the Hermitian sector $\mathbb{M}_+$, and multiplication by the central imaginary $i$ exchanges the two sectors. The exchange is therefore an operation of the algebra on the two times, and the question of this article is what that operation is worth as a **clock**.
+The framework has no external time parameter. The material time is the imaginary coefficient $ict'$ of an element of the anti-Hermitian sector $\mathbb{M}_-$, the informational time is the real coefficient $ct$ of an element of the Hermitian sector $\mathbb{M}_+$, and multiplication by the central imaginary $i$ exchanges the two sectors. The exchange is therefore an operation of the algebra on the two times, and the question of this article is what that operation is worth as a **clock**.
 
 The answer, in one sentence: the exchange supplies the reference of a clock and its period, and it supplies neither the arrow nor the rate. The three interpretations that follow from that sentence are these. The two times are the real and the imaginary parts of one central coordinate, so the material time is not defined against anything outside the algebra but against the phase of the informational sector — each sector is the other's clock. The exchange is a quarter turn of the plane of that coordinate, so a tick is a quarter turn and the period of the clock is a full central rotation. And the exchange is invertible and of order four, so the algebra offers both senses of the rotation and no rule that selects one; the direction of the tick remains a choice of slice, which is the framework's problem of time.
 
@@ -21,15 +21,15 @@ $$
 the anti-Hermitian material sector and the Hermitian informational sector. In coordinates,
 
 $$
-\tilde{Q}_- = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-, \qquad \tilde{Q}_+ = ct'\,e_t + i\bigl(x'\vec e_x + y'\vec e_y + z'\vec e_z\bigr) \in \mathbb{M}_+,
+\tilde{Q}_- = ict'\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-, \qquad \tilde{Q}_+ = ct\,e_t + i\bigl(x'\vec e_x + y'\vec e_y + z'\vec e_z\bigr) \in \mathbb{M}_+,
 $$
 
-with $t, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t', x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and the interpretation of the coefficients is the $ict$ dictionary of *Conventions in the Biquaternion Universe*.
+with $t', x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t, x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, and the interpretation of the coefficients is the $ict'$ dictionary of *Conventions in the Biquaternion Universe*.
 
 The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and it is the complex time sector of *The Biquaternion Space, the Group of Involutions and the Six Subspaces*. The two times are its two real coordinates: writing
 
 $$
-z = ct' + i\,ct,
+z = ct + i\,ct',
 $$
 
 the centre is the complex plane of the coordinate $z$, the informational time is the real part of $z$ and the material time is $i$ times its imaginary part. This is the sense in which the framework has no external parameter: both times are coordinates of elements, and there is no slot outside the algebra for a parametric time to occupy. The plane is also the plane in which the global phase acts: the one-parameter group of the centre is $\exp(i\theta)e_t$, and its action on $z$ is the rotation of the plane.
@@ -45,13 +45,13 @@ $$
 so $i\tilde{Q}_- \in \mathbb{M}_+$, and the same computation run backwards sends $\mathbb{M}_+$ to $\mathbb{M}_-$. In coordinates the exchange is
 
 $$
-i\bigl(ict\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) = -ct\,e_t + i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{M}_+, \qquad i\bigl(ct'\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\bigr) = ict'\,e_t - (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) \in \mathbb{M}_- .
+i\bigl(ict'\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) = -ct'\,e_t + i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{M}_+, \qquad i\bigl(ct\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\bigr) = ict\,e_t - (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) \in \mathbb{M}_- .
 $$
 
-Read on the coefficients, the material element $(t, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is carried to the informational element $(t' = -t,\ (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and the informational element $(t', x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ is carried to the material element $(t = t',\ (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
+Read on the coefficients, the material element $(t', x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is carried to the informational element $(t = -t',\ (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and the informational element $(t, x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ is carried to the material element $(t' = t,\ (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
 
 $$
-z \mapsto i z = -ct + i\,ct' ,
+z \mapsto i z = -ct' + i\,ct ,
 $$
 
 which is the quarter turn of the complex time plane: the informational time becomes the imaginary part and the material time the negative real part.
@@ -68,10 +68,10 @@ The second is invertibility: the generator is a rotation, so both senses are ava
 
 A clock assigns a coordinate to an event by a repeatable motion. The framework's clock is the central coordinate itself, and its interpretation is a phase.
 
-**The hand.** The hand of the clock is the complex number $z = ct' + i\,ct$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,
+**The hand.** The hand of the clock is the complex number $z = ct + i\,ct'$ of the centre. Its magnitude and its phase are the two data the central plane carries, and its phase $\theta = \arg z$ is the interpretation: the material time and the informational time are the two projections of the hand,
 
 $$
-ct' = \lvert z\rvert\cos\theta, \qquad ct = \lvert z\rvert\sin\theta .
+ct = \lvert z\rvert\cos\theta, \qquad ct' = \lvert z\rvert\sin\theta .
 $$
 
 The one-parameter group $\exp(i\theta)e_t$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(iS/\hbar)$ of the action articles is the same central phase read on a dynamics.
@@ -84,7 +84,7 @@ $$
 
 and the period is the full rotation $2\pi$, made of four quarter turns. The four-element cycle is the whole of the clock's internal structure, and it is exact: no approximation enters, because the orbit is the orbit of a central element under a group of order four.
 
-**Why each sector is the other's clock.** The two sector times are the two projections of one hand. The material time $ict$ is the component of the hand along the direction the informational time does not use, and conversely. A sector taken alone therefore has no time coordinate that is not an interpretation of the other sector's plane: the material time is defined by the angle between the hand and the informational axis, and the informational time by the angle between the hand and the material axis. This is the precise sense of the title. It is not a figure of speech: the two times are the same number read as a real and as an imaginary coefficient, and the exchange is the rotation that moves one interpretation into the other.
+**Why each sector is the other's clock.** The two sector times are the two projections of one hand. The material time $ict'$ is the component of the hand along the direction the informational time does not use, and conversely. A sector taken alone therefore has no time coordinate that is not an interpretation of the other sector's plane: the material time is defined by the angle between the hand and the informational axis, and the informational time by the angle between the hand and the material axis. This is the precise sense of the title. It is not a figure of speech: the two times are the same number read as a real and as an imaginary coefficient, and the exchange is the rotation that moves one interpretation into the other.
 
 ## What a Clock Needs
 
@@ -118,12 +118,12 @@ The two entries that are supplied are what makes the interpretation relational, 
 - It is **not a dynamics**. No evolution equation is read off the exchange, and no rate of change of a state follows from it. The exchange is a relation between two descriptions of one element, and a dynamics is a separate object, which is the constraint analysis the framework names as missing.
 - It is **not an arrow**. The generator is invertible and of order four, so both orientations are present and neither is selected; the direction of the tick is a choice of slice, and the problem of time is not solved here but restated in the temporal interpretation.
 - It is **not a rate or a duration**. The period of the clock is the central rotation, an angle without a second; a physical duration requires a process to compare with it, and no such comparison is made here.
-- It does **not identify the exchange with the analytic continuation**. The Wick rotation as the continuation $t\mapsto-i\tau$ is a relabeling of one coordinate that holds the space real; the exchange is a rotation of the element that carries the space imaginary, and the two agree on the time axis and in the sign they flip and nowhere else, as *Conventions in the Biquaternion Universe* states. The clock interpretation uses the rotation and not the continuation.
+- It does **not identify the exchange with the analytic continuation**. The Wick rotation as the continuation $t'\mapsto-i\tau$ is a relabeling of one coordinate that holds the space real; the exchange is a rotation of the element that carries the space imaginary, and the two agree on the time axis and in the sign they flip and nowhere else, as *Conventions in the Biquaternion Universe* states. The clock interpretation uses the rotation and not the continuation.
 - It does **not claim an empirical consequence**. It reorganizes the exchange, the phase and the two times under one interpretation; it adds no prediction and no coupling, and it does not turn the phase into a measurable duration.
 
 ## Summary
 
-The central imaginary generates a quarter turn of the complex time plane, $z = ct' + i\,ct \mapsto iz = -ct + i\,ct'$, and the two sector times are the two projections of the hand that this rotation moves. A material time and an informational time are therefore never read in isolation: each is read against the axis of the other sector, and that is the sense in which each sector is the other's clock. The clock's structure is the four-element orbit of the generator — no tick, the exchange, the antipodal map, the inverse exchange — with the period $2\pi$ of the central rotation, and it is exact, global, and central.
+The central imaginary generates a quarter turn of the complex time plane, $z = ct + i\,ct' \mapsto iz = -ct' + i\,ct$, and the two sector times are the two projections of the hand that this rotation moves. A material time and an informational time are therefore never read in isolation: each is read against the axis of the other sector, and that is the sense in which each sector is the other's clock. The clock's structure is the four-element orbit of the generator — no tick, the exchange, the antipodal map, the inverse exchange — with the period $2\pi$ of the central rotation, and it is exact, global, and central.
 
 The accounting of a clock is partial, and the two missing entries are the ones the framework is explicit about. The exchange supplies the reference and the period, and it supplies neither the arrow, the generator being invertible of order four, nor the rate, the phase being dimensionless. The relational content is thus real and the dynamical content is absent: the framework has an internal relational time in the kinematic sense, with the orientation of the tick and the duration of the tick still to be supplied, and the first of the two is the problem of time in its kinematic form.
 
@@ -137,14 +137,14 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 | $\mathbb{M}_-, \mathbb{M}_+$ | the material (anti-Hermitian) and informational (Hermitian) sectors |
 | $i$ | the central imaginary, $i\,e_t$; the generator of the exchange |
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | the centre, the complex time plane |
-| $z = ct' + i\,ct$ | the clock hand; the central coordinate of an element |
-| $ct'$, $ict$ | the informational and the material time, the two projections of the hand |
+| $z = ct + i\,ct'$ | the clock hand; the central coordinate of an element |
+| $ct$, $ict'$ | the informational and the material time, the two projections of the hand |
 | $\exp(i\theta)e_t$ | the one-parameter group of the centre, the motion of the hand |
 | $i\mathbb{M}_\pm = \mathbb{M}_\mp$ | the sector exchange, the quarter turn, the tick |
 
 ## Further Reading
 
-- *Conventions in the Biquaternion Universe* — the basis, the conjugations, the remarkable subspaces, the $ict$ dictionary, the four forms, and the exchange read on the metric.
+- *Conventions in the Biquaternion Universe* — the basis, the conjugations, the remarkable subspaces, the $ict'$ dictionary, the four forms, and the exchange read on the metric.
 - *Conventions in the Biquaternion Universe* — the one generator, its restrictions, the complex time plane, the order four of the rotation, and the statement that the algebra offers no rule that selects a slice.
 - *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* — the two sectors the exchange relates, and the coefficient dictionaries used above.
 - *The Biquaternion Space, the Group of Involutions and the Six Subspaces* — the complex time sector, the complex space sector, the real and imaginary sectors, and the exchange of the real and imaginary sectors as the Wick rotation.

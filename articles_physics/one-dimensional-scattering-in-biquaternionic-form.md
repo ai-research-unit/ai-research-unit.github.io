@@ -146,7 +146,7 @@ $$
 S^{*} S = I_2,
 $$
 
-as one verifies by expanding the two components of the column $(A,D)$ and using the identity above: the diagonal entries give $|t|^2 + |r_2|^2 = 1$ and $|r|^2+|t_2|^2 = 1$, the off-diagonal ones give $t^*r_2 + r^*t_2 = 0$. For incidence from the left, $D=0$ and the identity reduces to
+as one verifies by expanding the two components of the column $(A,D)$ and using the identity above: the diagonal entries give $|t|^2 + |r_2|^2 = 1$ and $|r|^2+|t_2|^2 = 1$, the off-diagonal ones give ${t}^*r_2 + r^*t_2 = 0$. For incidence from the left, $D=0$ and the identity reduces to
 
 $$
 |r|^2 + |t|^2 = R + T = 1 .

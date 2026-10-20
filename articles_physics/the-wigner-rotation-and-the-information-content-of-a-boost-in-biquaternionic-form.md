@@ -209,7 +209,7 @@ This is the **holonomy** of the boost connection. Its defining property is that 
 
 For a particle that is accelerated along a curved worldline, the velocity traces a path in velocity space, and the holonomy accumulated over the path is a continuous rotation of the spin. The rate form of the same statement is **Thomas precession**, and it is the standard physical face of the holonomy:
 $$
-d\vec\Omega_{\mathrm{T}}/dt = -\frac{\gamma-1}{v^2}\,\vec v\times\,d\vec v/dt ,
+d\vec\Omega_{\mathrm{T}}/dt' = -\frac{\gamma-1}{v^2}\,\vec v\times\,d\vec v/dt' ,
 $$
 a precession of the rest-frame spin at a rate proportional to the acceleration and to $\gamma-1$. The biquaternion expression of the same rate is the commutator of the infinitesimal boosts of the path, and the accumulated rotation is the product of the trip. The companion exercise treats the precession directly; here it is recorded as the infinitesimal form of the closed-loop statement above.
 
@@ -260,7 +260,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $\tan\alpha = \sinh\psi\sinh\chi/(\cosh\psi+\cosh\chi)$ | Exact angle at $\theta = \pi/2$ |
 | $h\!\left(\frac{1+\cos\alpha}{2}\right)$ | Spin entropy imprinted on a transverse spin |
 | $\tilde{P} = \tilde U_{\vec v_2}\tilde U_{\mathrm L,y}(b)\tilde U_{\mathrm L,x}(a)$ | Holonomy of a closed velocity loop |
-| $d\vec\Omega_{\mathrm{T}}/dt = -\frac{\gamma-1}{v^2}\vec v\times\,d\vec v/dt$ | Thomas precession rate |
+| $d\vec\Omega_{\mathrm{T}}/dt' = -\frac{\gamma-1}{v^2}\vec v\times\,d\vec v/dt'$ | Thomas precession rate |
 
 ## Further Reading
 

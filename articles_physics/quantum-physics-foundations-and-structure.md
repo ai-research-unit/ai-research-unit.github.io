@@ -28,16 +28,16 @@ $$
 
 The possible results of a measurement of $A$ are the eigenvalues of $A$.
 
-**Postulate 3 (Dynamics).** The evolution of a closed quantum system in time is unitary. If the state at time $t_0$ is $\rho(t_0)$, the state at time $t$ is
+**Postulate 3 (Dynamics).** The evolution of a closed quantum system in time is unitary. If the state at time $t'_0$ is $\rho(t'_0)$, the state at time $t'$ is
 
 $$
-\rho(t) = U(t, t_0)\, \rho(t_0)\, U(t, t_0)^\dagger,
+\rho(t') = U(t', t'_0)\, \rho(t'_0)\, U(t', t'_0)^\dagger,
 $$
 
-where $U(t, t_0)$ is the unitary evolution operator satisfying
+where $U(t', t'_0)$ is the unitary evolution operator satisfying
 
 $$
-i\hbar\, \frac{d}{dt} U(t, t_0) = H\, U(t, t_0), \qquad U(t_0, t_0) = I,
+i\hbar\, \frac{d}{dt'} U(t', t'_0) = H\, U(t', t'_0), \qquad U(t'_0, t'_0) = I,
 $$
 
 with $H$ the Hamiltonian of the system.
@@ -254,40 +254,40 @@ i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.
 
 ### The Schrödinger Picture
 
-In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\psi(t)\rangle$, the evolution is governed by the **Schrödinger equation**:
+In the **Schrödinger picture**, the state of the system evolves in time, and the observables are fixed. For a pure state $|\psi(t')\rangle$, the evolution is governed by the **Schrödinger equation**:
 
 $$
-i\hbar\, \frac{\partial}{\partial t}|\psi(t)\rangle = H\, |\psi(t)\rangle,
+i\hbar\, \frac{\partial}{\partial t'}|\psi(t')\rangle = H\, |\psi(t')\rangle,
 $$
 
 where $H$ is the Hamiltonian. The solution is
 
 $$
-|\psi(t)\rangle = U(t, t_0)\, |\psi(t_0)\rangle,
+|\psi(t')\rangle = U(t', t'_0)\, |\psi(t'_0)\rangle,
 $$
 
-with $U(t, t_0) = \exp\left(-\tfrac{i}{\hbar}H(t - t_0)\right)$ for a time-independent Hamiltonian.
+with $U(t', t'_0) = \exp\left(-\tfrac{i}{\hbar}H(t' - t'_0)\right)$ for a time-independent Hamiltonian.
 
-For a density matrix $\rho(t)$, the evolution is given by the **von Neumann equation**:
+For a density matrix $\rho(t')$, the evolution is given by the **von Neumann equation**:
 
 $$
-i\hbar\, \frac{\partial}{\partial t}\rho(t) = [H, \rho(t)],
+i\hbar\, \frac{\partial}{\partial t'}\rho(t') = [H, \rho(t')],
 $$
 
-whose solution is $\rho(t) = U(t, t_0)\rho(t_0)U(t, t_0)^\dagger$.
+whose solution is $\rho(t') = U(t', t'_0)\rho(t'_0)U(t', t'_0)^\dagger$.
 
 ### The Heisenberg Picture
 
 In the **Heisenberg picture**, the state is fixed, and the observables evolve in time:
 
 $$
-A_H(t) = U(t, t_0)^\dagger\, A\, U(t, t_0).
+A_H(t') = U(t', t'_0)^\dagger\, A\, U(t', t'_0).
 $$
 
 The evolution equation is the **Heisenberg equation**:
 
 $$
-i\hbar\, \frac{d}{dt} A_H(t) = [A_H(t), H].
+i\hbar\, \frac{d}{dt'} A_H(t') = [A_H(t'), H].
 $$
 
 The two pictures are related by a unitary transformation and give the same predictions for physical quantities.
@@ -455,7 +455,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $a$, $P_a$ | Eigenvalue (measurement outcome) and its orthogonal projector |
 | $p(a) = \mathrm{Tr}(P_a \rho)$ | Born probability of outcome $a$ |
 | $\langle A\rangle_\rho = \mathrm{Tr}(A\rho)$ | Expectation value of $A$ in state $\rho$ |
-| $U(t,t_0)$ | Unitary evolution operator, $U(t_0,t_0) = I$ |
+| $U(t',t'_0)$ | Unitary evolution operator, $U(t'_0,t'_0) = I$ |
 | $H$ | Hamiltonian |
 | $\hbar$ | Reduced Planck constant |
 | $\lvert\psi\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |

@@ -375,21 +375,21 @@ The ball has so far been described entirely inside $\mathbb{M}_+$, by its own co
 
 ### The Dictionary Between the Ball and the Cone
 
-Multiplication by $-\tfrac{i}{2}$ is a real-linear bijection carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$. For a material four-vector $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it gives the Hermitian element
+Multiplication by $-\tfrac{i}{2}$ is a real-linear bijection carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$. For a material four-vector $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it gives the Hermitian element
 
 $$
-\tilde{H} \;=\; -\tfrac{i}{2}\,\tilde{R} \;=\; \tfrac{1}{2}\bigl(ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \;=\; h_t\,e_t + i\vec h,
+\tilde{H} \;=\; -\tfrac{i}{2}\,\tilde{R} \;=\; \tfrac{1}{2}\bigl(ct'\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \;=\; h_t\,e_t + i\vec h,
 $$
 
-with $h_t = \tfrac{1}{2}ct$ and $\vec h = -\tfrac{1}{2}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and
+with $h_t = \tfrac{1}{2}ct'$ and $\vec h = -\tfrac{1}{2}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and
 
 $$
-\mathrm{Tr}(\tilde{H}) \;=\; 2\,\mathrm{Sc}(\tilde{H}) \;=\; ct,
+\mathrm{Tr}(\tilde{H}) \;=\; 2\,\mathrm{Sc}(\tilde{H}) \;=\; ct',
 \qquad
 \langle\tilde{H}\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}.
 $$
 
-Each of the two relations is exact. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the trace-one slice of the future cone, at $ct = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with Bloch vector $\vec r = 2\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; there the relations specialize to
+Each of the two relations is exact. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the trace-one slice of the future cone, at $ct' = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with Bloch vector $\vec r = 2\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; there the relations specialize to
 
 $$
 \tilde{Ϛ} \geq 0
@@ -398,35 +398,35 @@ $$
 \;\Longleftrightarrow\;
 \langle\tilde{R}\rangle_{\natural} \leq 0
 \;\Longleftrightarrow\;
-ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
+ct' \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
 $$
 
 so **positivity of a state is the causal condition of the four-vector it mirrors**. The boundary $|\vec r| = 1$ is $\langle\tilde{R}\rangle_{\natural} = 0$, so the pure states of the ball are the lightlike four-vectors of the slice and the mixed states are the timelike ones. The correspondence is summarized in the following table.
 
 | Material object in $\mathbb{M}_-$ | Informational object in $\mathbb{M}_+$ |
 |---|---|
-| four-vector $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Hermitian element $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ |
-| interval $\langle\tilde{R}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ | norm $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ |
-| future cone, $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$ | positive cone, $\tilde{H} \geq 0$ |
+| four-vector $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Hermitian element $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ |
+| interval $\langle\tilde{R}\rangle_{\natural} = -c^2{t'}^2 +x^2+y^2+z^2$ | norm $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ |
+| future cone, $ct' \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$ | positive cone, $\tilde{H} \geq 0$ |
 | null cone, $\langle\tilde{R}\rangle_{\natural} = 0$ | null cone, $\langle\tilde{H}\rangle_{\natural} = 0$; the pure states at trace one |
 | interior of the timelike cone | positive definite elements; the interior of the ball at trace one |
-| trace-one slice, $ct = 1$ | trace-one hyperplane, $\mathrm{Sc} = \tfrac{1}{2}$ |
+| trace-one slice, $ct' = 1$ | trace-one hyperplane, $\mathrm{Sc} = \tfrac{1}{2}$ |
 | spatial part $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Bloch vector $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
 | unit-norm rotor, $\langle\tilde U\rangle_{\natural} = 1$ | unitary element, $\tilde{U}\tilde{U}^{*} = e_t$ |
 
-<!-- PHYSICAL READING — one cone, not two cones in correspondence. On the trace-one slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $ct$ to $h_t = ct/2$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/2$, so $h_t - |\vec h| = (ct - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $ct = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
+<!-- PHYSICAL READING — one cone, not two cones in correspondence. On the trace-one slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $ct'$ to $h_t = ct'/2$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/2$, so $h_t - |\vec h| = (ct' - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $ct' = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
 
-<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde{R} = ict\,e_t$ at $ct = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural}$ and $\langle\tilde{R}\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde{R}\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$, is exact. -->
+<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde{R} = ict'\,e_t$ at $ct' = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2\langle\tilde{Ϛ}\rangle_{\natural}$ and $\langle\tilde{R}\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde{R}\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{Ϛ}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$, is exact. -->
 
 ### The Whole Timelike Cone, Not Only the Slice
 
-The trace-one restriction is not essential to the correspondence, and saying so locates the normalization correctly. Off trace one, $-\tfrac{i}{2}$ carries the whole future timelike cone of $\mathbb{M}_-$ onto the positive definite elements of $\mathbb{M}_+$, of every trace (its apex, the origin, going to $0$), and the past timelike cone onto the negative definite elements. Writing the image as $\tilde{H} = h_t e_t + i\vec h$, with $h_t = ct/2$ and $\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/2$, its eigenvalues are
+The trace-one restriction is not essential to the correspondence, and saying so locates the normalization correctly. Off trace one, $-\tfrac{i}{2}$ carries the whole future timelike cone of $\mathbb{M}_-$ onto the positive definite elements of $\mathbb{M}_+$, of every trace (its apex, the origin, going to $0$), and the past timelike cone onto the negative definite elements. Writing the image as $\tilde{H} = h_t e_t + i\vec h$, with $h_t = ct'/2$ and $\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/2$, its eigenvalues are
 
 $$
-\lambda_\pm \;=\; h_t \pm |\vec h| \;=\; \tfrac{1}{2}\bigl(ct \pm |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\bigr),
+\lambda_\pm \;=\; h_t \pm |\vec h| \;=\; \tfrac{1}{2}\bigl(ct' \pm |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\bigr),
 $$
 
-both non-negative for $ct > 0$ and both non-positive for $ct < 0$. The sign of the trace is the sign of $ct$, so it is the **trace sign and not the sign of the norm** that separates the two sheets: $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ is positive on both timelike cones, and the quadratic form alone cannot tell them apart.
+both non-negative for $ct' > 0$ and both non-positive for $ct' < 0$. The sign of the trace is the sign of $ct'$, so it is the **trace sign and not the sign of the norm** that separates the two sheets: $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ is positive on both timelike cones, and the quadratic form alone cannot tell them apart.
 
 
 The maximally mixed state is the image the map singles out. It is $\tilde{Ϛ} = \tfrac{1}{2}e_t$, the centre of the ball, and its mirror on the trace-one slice is $\tilde{R} = i\,e_t$: timelike, of the largest interval in magnitude on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
@@ -553,7 +553,7 @@ The main structural points are these. The state space of a qubit is not postulat
 
 Several points are left open in this picture. The base of the logarithm in the entropy is a convention, natural logarithms giving nats and base-two logarithms giving bits; the geometry does not prefer one. The normalization of the transition probability is likewise a convention, since some authors take the unsquared expression as the fidelity and others its square; the closed form above is stated for the squared normalization, which is the one that reduces to the pure-state transition probability. The extension of the slice picture to $n$ qubits requires the tensor product and the corresponding higher-dimensional cones, and the identification of the correct positivity domain there is a separate problem. Finally, this article has used only the future cone; the past cone, and the negative-trace elements of $\mathbb{M}_+$, have no state interpretation here, and whether they acquire one in a wider interpretation of the algebra is an open question.
 
-The mirror interpretation adds the material face of the same object. Under the map $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ the ball is the trace-one slice of the timelike cone of the material sector, with the trace sign selecting the future sheet; positivity of a state is the causal condition $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, purity is nullness, and the maximally mixed state is the rest four-velocity of the material interpretation. The same action formula $\tilde{U}\tilde{Q}\tilde{U}^{*}$ serves both faces, the actor being a unit-norm rotor, hence a general Lorentz transformation, in one case and a unitary element, hence a rotation, in the other. What the two sectors are not is isomorphic: the product rule within a sector reverses the order, so a product of two material elements need not be material, while the commutator always is. The identity of the two faces is therefore an identity of quadratic spaces, not of algebras.
+The mirror interpretation adds the material face of the same object. Under the map $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ the ball is the trace-one slice of the timelike cone of the material sector, with the trace sign selecting the future sheet; positivity of a state is the causal condition $ct' \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, purity is nullness, and the maximally mixed state is the rest four-velocity of the material interpretation. The same action formula $\tilde{U}\tilde{Q}\tilde{U}^{*}$ serves both faces, the actor being a unit-norm rotor, hence a general Lorentz transformation, in one case and a unitary element, hence a rotation, in the other. What the two sectors are not is isomorphic: the product rule within a sector reverses the order, so a product of two material elements need not be material, while the commutator always is. The identity of the two faces is therefore an identity of quadratic spaces, not of algebras.
 
 ## Summary
 
@@ -569,7 +569,7 @@ The pure states are the boundary of the ball. Equivalently, they are the idempot
 
 Purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{Ϛ}^2) = 2\langle\tilde{Ϛ}\rangle_{\natural}$, twice the biquaternion norm. The von Neumann entropy depends only on $|\vec r|$, vanishing on the boundary and maximal, equal to $\log 2$, at the centre. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the trace on $\mathbb{M}_+$, without additional postulates.
 
-The ball has a mirror interpretation in the material sector. The map $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ carries $\mathbb{M}_-$ onto $\mathbb{M}_+$, sends the material four-vector $ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\tfrac{1}{2}(ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, and satisfies $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$. The image is a state exactly at $ct = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The map turns the positivity of the state into the causal condition $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, which on the trace-one slice is $\lvert\vec r\rvert\le1$: the ball is the trace-one slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the trace sign, not the sign of the norm, selects the state sheet — which is why the past cone has no state interpretation here. Both interpretations use the one action $\Gamma_{\tilde{U}}(\tilde{Q}) = \tilde{U}\tilde{Q}\tilde{U}^{*}$, with a unit-norm rotor as actor on the material side and a unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the trace and the trace-one slice is the state space. What the map is not is an algebra isomorphism: $i$ is not multiplicative, so $(i\tilde{Q}_1)(i\tilde{Q}_2) = -\tilde{Q}_1\tilde{Q}_2 \neq i(\tilde{Q}_1\tilde{Q}_2)$; within a sector the product reverses the order, $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{M}_-$. The two sectors are anti-isometric real quadratic spaces with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not isomorphic algebras.
+The ball has a mirror interpretation in the material sector. The map $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ carries $\mathbb{M}_-$ onto $\mathbb{M}_+$, sends the material four-vector $ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\tfrac{1}{2}(ct'\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, and satisfies $\mathrm{Tr}(\tilde{H}) = ct'$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$. The image is a state exactly at $ct' = 1$ with $\lvert\vec r\rvert \le 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The map turns the positivity of the state into the causal condition $ct' \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, which on the trace-one slice is $\lvert\vec r\rvert\le1$: the ball is the trace-one slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the trace sign, not the sign of the norm, selects the state sheet — which is why the past cone has no state interpretation here. Both interpretations use the one action $\Gamma_{\tilde{U}}(\tilde{Q}) = \tilde{U}\tilde{Q}\tilde{U}^{*}$, with a unit-norm rotor as actor on the material side and a unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the trace and the trace-one slice is the state space. What the map is not is an algebra isomorphism: $i$ is not multiplicative, so $(i\tilde{Q}_1)(i\tilde{Q}_2) = -\tilde{Q}_1\tilde{Q}_2 \neq i(\tilde{Q}_1\tilde{Q}_2)$; within a sector the product reverses the order, $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{M}_-$. The two sectors are anti-isometric real quadratic spaces with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not isomorphic algebras.
 
 ## Summary of Notation
 
@@ -596,7 +596,7 @@ The ball has a mirror interpretation in the material sector. The map $\tilde{H} 
 | $H^\pm = SU(1,1)/\mathrm{U}(1)$, $H^{sl}$ | Time-like two-sheeted and space-like one-sheeted hyperboloids of $\mathbb{R}^{1,2}$ |
 | $[u|v] = u^{\dagger}\sigma_3 v$ | Indefinite $SU(1,1)$-invariant pairing on the spinor module |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{R}$ | Mirror map carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$ |
-| $\mathrm{Tr}(\tilde{H}) = ct$, $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ | Trace and norm under the mirror map |
+| $\mathrm{Tr}(\tilde{H}) = ct'$, $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{R}\rangle_{\natural}$ | Trace and norm under the mirror map |
 | $(\tilde{Q}_1\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}_1$ | Product rule within a sector; $[\mathbb{M}_\pm,\mathbb{M}_\pm] \subseteq \mathbb{M}_-$ |
 | $\tilde{Q} = r \exp(i\alpha)\tilde U_{\mathrm b}\tilde{q}$ | Polar word: scale, central phase, boost factor, rotor |
 | $\tilde U_{\mathrm b}$, $\tilde{q}$ | Boost factor, in $\mathbb{M}_+$ positive definite; rotor, in $Sp(1)$ |

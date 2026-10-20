@@ -261,15 +261,15 @@ G=-\hbar^{-1}\vec e_z\,i\vec e_x=-\hbar^{-1}i\,\vec e_z \vec e_x=-\hbar^{-1}i\,\
 $$
 Now $i\vec e_y$ is Hermitian, since $(i\vec e_y)^{*}=i\vec e_y$, so $G$ is Hermitian rather than anti-Hermitian, and the one-parameter group it generates is the hyperbolic element
 $$
-\exp(Gt)=\cosh(\hbar^{-1}t)\,e_t-\sinh(\hbar^{-1}t)\,i\vec e_y ,
+\exp(Gt')=\cosh(\hbar^{-1}t')\,e_t-\sinh(\hbar^{-1}t')\,i\vec e_y ,
 $$
 which is not unitary: because $G^2=\hbar^{-2}e_t$, the hyperbolic functions replace the trigonometric ones, and
 $$
-\exp(Gt)^\dagger\exp(Gt)=\cosh(2\hbar^{-1}t)\,e_t-\sinh(2\hbar^{-1}t)\,i\vec e_y ,
+\exp(Gt')^\dagger\exp(Gt')=\cosh(2\hbar^{-1}t')\,e_t-\sinh(2\hbar^{-1}t')\,i\vec e_y ,
 \qquad
-\mathrm{Tr}\bigl(\exp(Gt)^\dagger\exp(Gt)\bigr)=2\cosh(2\hbar^{-1}t),
+\mathrm{Tr}\bigl(\exp(Gt')^\dagger\exp(Gt')\bigr)=2\cosh(2\hbar^{-1}t'),
 $$
-which grows without bound, so the Hermitian norm of a state is not preserved. Its biquaternion norm, by contrast, is $\langle \exp Gt\rangle_{\natural}=\bigl(\cosh^2\hbar^{-1}t-\sinh^2\hbar^{-1}t\bigr)e_t=e_t$, so this non-unitary element has $|\langle\exp Gt\rangle_{\natural}|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $J=\vec e_z$ with the Hermitian element $i\vec e_x$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
+which grows without bound, so the Hermitian norm of a state is not preserved. Its biquaternion norm, by contrast, is $\langle \exp Gt'\rangle_{\natural}=\bigl(\cosh^2\hbar^{-1}t'-\sinh^2\hbar^{-1}t'\bigr)e_t=e_t$, so this non-unitary element has $|\langle\exp Gt'\rangle_{\natural}|=1$ and is exactly the kind of element Theorem 2 allows. The failure is exactly the non-commutation of $J=\vec e_z$ with the Hermitian element $i\vec e_x$; it is the non-centrality of the unit that breaks the norm. The computation is the flow version, developed next.
 
 **Example 4: an accidental invariance.** If one tests norm preservation only on a single fixed element, non-unitary elements can appear to preserve it. With $\tilde{Q}=\tilde\Pi(\vec u)$ and $\tilde{U}$ a rotation element of $G_N$ that happens to fix $\vec u$, the Hermitian norm of that particular $\tilde{Q}$ can be unchanged even though $\Gamma_{\tilde{U}}$ is not unitary. The quantifier "for all $\tilde{Q}$" in Theorem 1 is therefore essential, and the numerical checks of this article were run on random superpositions precisely to avoid this accident.
 
@@ -279,19 +279,19 @@ The norm-preservation theorem of the preceding sections is algebraic: it is abou
 
 **The state-vector equation.** In the state module $\mathbb{B}\tilde\Pi_1$, the equation is
 $$
-i\hbar\,\partial/\partial t\psi=J\tilde{H}\psi ,
+i\hbar\,\partial/\partial t'\psi=J\tilde{H}\psi ,
 \qquad
 J^2=-e_t,\quad \tilde{H}\in\mathbb{M}_+,
 $$
 with $J$ a root of $-e_t$ and $\tilde{H}$ Hermitian. The solution, for constant $\tilde{H}$, is
 $$
-\psi(t)=\exp\bigl(Gt\bigr)\psi(0),
+\psi(t')=\exp\bigl(Gt'\bigr)\psi(0),
 \qquad
 G=-\hbar^{-1}J\tilde{H}.
 $$
-The norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved for all $t$ and all $\psi(0)$ exactly when $G$ is anti-Hermitian,
+The norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved for all $t'$ and all $\psi(0)$ exactly when $G$ is anti-Hermitian,
 $$
-\frac{d}{dt}\mathrm{Tr}\bigl(\psi^\dagger\psi\bigr)
+\frac{d}{dt'}\mathrm{Tr}\bigl(\psi^\dagger\psi\bigr)
 =\mathrm{Tr}\bigl(\psi^\dagger(G^{*}+G)\psi\bigr)
 =0\ \ \text{for all }\psi
 \iff G^{*}=-G .
@@ -305,7 +305,7 @@ G^{*}=-\hbar^{-1}\tilde{H}J^\dagger,
 \qquad
 -G=+\hbar^{-1}J\tilde{H},
 $$
-so the hypothesis reads $-\tilde{H}J^\dagger=J\tilde{H}$ for every Hermitian $\tilde{H}$. Evaluating it at $\tilde{H}=e_t$ gives $J^\dagger=-J$, so a root of $-e_t$ that generates a norm-preserving flow is necessarily anti-Hermitian; with that, and only with that, the condition becomes $\tilde{H}J=J\tilde{H}$. This must hold for every Hermitian $\tilde{H}$. The Hermitian elements span $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, whose real span together with $i$ spans all of $\mathbb{B}$; since $J$ commutes with $e_t$ and with every $i\vec e_k$, it commutes with every element of $\mathbb{B}$, i.e. $J$ is central. The centre is $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, and its elements are $\lambda e_t$ with $\lambda\in\mathbb{C}$; the condition $J^2=-e_t$ gives $\lambda^2=-1$, hence $\lambda=\pm i$. Conversely, for $J=\pm i$ the generator $G=\mp\hbar^{-1}i\tilde{H}$ is anti-Hermitian because $\tilde{H}$ Hermitian implies $i\tilde{H}$ anti-Hermitian, and the exponential $\exp(Gt)$ is unitary.
+so the hypothesis reads $-\tilde{H}J^\dagger=J\tilde{H}$ for every Hermitian $\tilde{H}$. Evaluating it at $\tilde{H}=e_t$ gives $J^\dagger=-J$, so a root of $-e_t$ that generates a norm-preserving flow is necessarily anti-Hermitian; with that, and only with that, the condition becomes $\tilde{H}J=J\tilde{H}$. This must hold for every Hermitian $\tilde{H}$. The Hermitian elements span $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, whose real span together with $i$ spans all of $\mathbb{B}$; since $J$ commutes with $e_t$ and with every $i\vec e_k$, it commutes with every element of $\mathbb{B}$, i.e. $J$ is central. The centre is $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, and its elements are $\lambda e_t$ with $\lambda\in\mathbb{C}$; the condition $J^2=-e_t$ gives $\lambda^2=-1$, hence $\lambda=\pm i$. Conversely, for $J=\pm i$ the generator $G=\mp\hbar^{-1}i\tilde{H}$ is anti-Hermitian because $\tilde{H}$ Hermitian implies $i\tilde{H}$ anti-Hermitian, and the exponential $\exp(Gt')$ is unitary.
 
 **Where the centrality is used.** The hypothesis "for every Hermitian $\tilde{H}$" is what forces $J$ into the centre, and it is not a technical convenience. Physically, a dynamics must be norm-preserving for the whole class of Hamiltonians the theory admits, not merely for one particular $\tilde{H}$; the theory admits every Hermitian element as a possible generator. Mathematically, one non-central root is enough to violate the norm, and Example 3 exhibits the violation: with $J=\vec e_z$ and $\tilde{H}=i\vec e_x$, the generator is Hermitian rather than anti-Hermitian, so the exponential is not unitary.
 

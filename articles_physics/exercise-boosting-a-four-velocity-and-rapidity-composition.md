@@ -281,7 +281,7 @@ $$
 \tilde{R}(\tau) = ic\,\tau\cosh\chi(\tau)\,e_t + c\,\tau\sinh\chi(\tau)\,\vec u_y,
 \qquad \chi = \chi(\tau),
 $$
-so that $t = \tau\cosh\chi$ and the displacement along $\vec u_y$ is $x_1 = c\tau\sinh\chi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dt$.
+so that $t' = \tau\cosh\chi$ and the displacement along $\vec u_y$ is $x_1 = c\tau\sinh\chi$. Define the coordinate velocity by $\beta = (1/c)\,dx_1/dt'$.
 
 **(a)** Show that
 $$
@@ -292,7 +292,7 @@ $$
 
 **(c)** Show the interval identity
 $$
-c^2dt^2 - dx_1^2 = c^2d\tau_b^2\left(1 - (\tau\frac{d\chi}{d\tau})^2\right),
+c^2d{t'}^2 - dx_1^2 = c^2d\tau_b^2\left(1 - (\tau\frac{d\chi}{d\tau})^2\right),
 $$
 and read off when the worldline is timelike.
 
@@ -302,7 +302,7 @@ and read off when the worldline is timelike.
 $$
 \frac{dx_1}{d\tau} = c\left(\sinh\chi + \tau\frac{d\chi}{d\tau}\cosh\chi\right),
 \qquad
-\frac{dt}{d\tau} = \cosh\chi + \tau\frac{d\chi}{d\tau}\sinh\chi .
+\frac{dt'}{d\tau} = \cosh\chi + \tau\frac{d\chi}{d\tau}\sinh\chi .
 $$
 Both carry the same factor $\tau\frac{d\chi}{d\tau}$ that a fixed rapidity would not have; their ratio is the stated expression. This is not the composition law (4), because the rotor here is a *different* rotor at every $\tau$: the second term is the rate at which the frame turns, not the rapidity of a second frame.
 

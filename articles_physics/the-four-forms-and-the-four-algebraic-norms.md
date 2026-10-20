@@ -83,7 +83,7 @@ and it is the reduced norm of the algebra, the determinant of the $2\times2$ rep
 
 ## The Forms on the Two Sectors
 
-The physical dictionary places the material element $\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ in the anti-Hermitian sector $\mathbb{M}_-$ and the informational element in the Hermitian sector $\mathbb{M}_+$. The restrictions of the four forms are the algebra's own statement of which form belongs to which sector.
+The physical dictionary places the material element $\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ in the anti-Hermitian sector $\mathbb{M}_-$ and the informational element in the Hermitian sector $\mathbb{M}_+$. The restrictions of the four forms are the algebra's own statement of which form belongs to which sector.
 
 | Form | Signature on $\mathbb{M}_-$, material | Signature on $\mathbb{M}_+$, informational |
 | --- | --- | --- |
@@ -120,7 +120,7 @@ The collapse to two pairs holds on every remarkable subspace, but the pairing is
 
 ### The Sector Sign
 
-The plain bilinear form is definite with opposite signs on the two sectors: negative on the material side, positive on the informational side. It is the one symmetric form that is definite with opposite signs and so tells them apart. On the material sector it is the negative Euclidean square, $\langle\tilde R,\tilde R\rangle=-c^{2}t^{2}-x^{2}-y^{2}-z^{2}$, and it has no cone there. Its null set on the algebra is the complex cone of real dimension six, which is not the light cone, and it cuts across the invertible and the non-invertible elements alike.
+The plain bilinear form is definite with opposite signs on the two sectors: negative on the material side, positive on the informational side. It is the one symmetric form that is definite with opposite signs and so tells them apart. On the material sector it is the negative Euclidean square, $\langle\tilde R,\tilde R\rangle=-c^{2}{t'}^{2}-x^{2}-y^{2}-z^{2}$, and it has no cone there. Its null set on the algebra is the complex cone of real dimension six, which is not the light cone, and it cuts across the invertible and the non-invertible elements alike.
 
 The sector sign is read as a **flag** and not as a metric. It says which half an element belongs to and measures neither. The element $e_t+\vec e_x$ is a unit with $\langle e_t+\vec e_x,e_t+\vec e_x\rangle=0$, and $e_t+i\vec e_x$ is a zero divisor with $\langle e_t+i\vec e_x,e_t+i\vec e_x\rangle=2$; the form decides no inverse, and its null set is not the wall of invertibility. The metric of the material sector is the interval, and the interval is the next reading but one.
 
@@ -130,7 +130,7 @@ The sector sign is read as a **flag** and not as a metric. It says which half an
 
 The Hermitian form is positive definite of signature $(8,0)$ on the real algebra, and it is the only one of the four that is definite on every subspace. Its square root is the unique topological norm, and it is the form a probability is built from. It is the **Born pairing** of a state and an observable, the form preserved by the unitary evolution, and the form whose isometry group is $\mathrm{U}(4)$.
 
-It is blind to the sector: positive on the material and on the informational side alike. That blindness is the precise content of the corpus's rule that the material sector is invisible in the sesquilinear layer. On the material sector the Born form is the Euclidean square, $c^{2}t^{2}+x^{2}+y^{2}+z^{2}$, and it is minus the sector sign; the sign of the sector lives in the bilinear layer, and the sesquilinear layer does not carry it.
+It is blind to the sector: positive on the material and on the informational side alike. That blindness is the precise content of the corpus's rule that the material sector is invisible in the sesquilinear layer. On the material sector the Born form is the Euclidean square, $c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2}$, and it is minus the sector sign; the sign of the sector lives in the bilinear layer, and the sesquilinear layer does not carry it.
 
 The form supplies the weight, not the state. The pure states are the minimal Hermitian idempotents of the algebra, $\tfrac12(e_t+i\vec u)$ with $\vec u$ a real unit vector, and the Born weight is the pairing of a state with an observable. The state carries the axis $\vec u$ and no phase; the phase belongs to the spinor, not to the form.
 
@@ -141,7 +141,7 @@ The form supplies the weight, not the state. The pure states are the minimal Her
 The quaternionic bilinear form is the **interval**. On the material sector it is the Minkowski metric of signature $(3,1)$,
 
 $$
-\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+x^{2}+y^{2}+z^{2},
+\langle\tilde R\rangle_{\natural}=-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2},
 $$
 
 its zero set is the light cone, and its level sets are the mass shells, $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$. On the informational sector the same form has signature $(1,3)$: the inertia is reversed by the sector, and the interval and the informational metric are one form.

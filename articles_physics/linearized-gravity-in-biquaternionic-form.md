@@ -37,10 +37,10 @@ $$
 \varepsilon_0 = i\,e_t, \qquad \varepsilon_1 = \vec e_x, \qquad \varepsilon_2 = \vec e_y, \qquad \varepsilon_3 = \vec e_z,
 $$
 
-which is the basis used in the parent article; its Gram matrix is $\eta_{\mu\nu} = \langle \varepsilon_\mu, \varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1, 1, 1, 1)$. This is the metric of the material sector, and it is the flat background of the linearized theory. Second, the coordinates in which the components $h_{\mu\nu}$ are written are the **real** components of the frame, $x^\mu = (ct, x, y, z)$, so that a four-vector is $\tilde{Q} = X^\mu\varepsilon_\mu$ and $X^0 = ct$. The framework's imaginary time is related to the same coordinate by $ict = i\,x^0$, so
+which is the basis used in the parent article; its Gram matrix is $\eta_{\mu\nu} = \langle \varepsilon_\mu, \varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1, 1, 1, 1)$. This is the metric of the material sector, and it is the flat background of the linearized theory. Second, the coordinates in which the components $h_{\mu\nu}$ are written are the **real** components of the frame, $x^\mu = (ct', x, y, z)$, so that a four-vector is $\tilde{Q} = X^\mu\varepsilon_\mu$ and $X^0 = ct'$. The framework's imaginary time is related to the same coordinate by $ict' = i\,x^0$, so
 
 $$
-\partial/\partial Q_t = -i\,\partial/\partial x^0, \qquad \partial/\partial x^0 = \frac{\partial}{\partial(ct)},
+\partial/\partial Q_t = -i\,\partial/\partial x^0, \qquad \partial/\partial x^0 = \frac{\partial}{\partial(ct')},
 $$
 
 and therefore
@@ -129,7 +129,7 @@ $$
 h_{\mu\nu} = A_{\mu\nu}\cos(k_\lambda x^\lambda), \qquad k^\mu k_\mu = 0,
 $$
 
-with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $k^\mu A_{\mu\nu} = 0$ and $\eta^{\mu\nu}A_{\mu\nu} = 0$. For propagation in the $+z$ direction, $k^\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x^\mu = (ct, x, y, z)$, so that the phase is $\omega(z/c - t)$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $R_{\mu\nu} = 0$, while $R_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
+with a constant symmetric amplitude $A_{\mu\nu}$. The harmonic condition and the residual gauge freedom can be used to put it in **transverse-traceless** form, in which $k^\mu A_{\mu\nu} = 0$ and $\eta^{\mu\nu}A_{\mu\nu} = 0$. For propagation in the $+z$ direction, $k^\mu = (\omega/c)(1,0,0,1)$ in the coordinates $x^\mu = (ct', x, y, z)$, so that the phase is $\omega(z/c - t')$, and the two independent amplitudes are the **plus** polarization, $A_{11} = -A_{22} \ne 0$, and the **cross** polarization, $A_{12} = A_{21} \ne 0$, all other components zero. For such a wave $R_{\mu\nu} = 0$, while $R_{\mu\nu\rho\sigma} \ne 0$: the curvature is nonzero even though the Ricci tensor vanishes, which is what distinguishes a gravitational wave from a gauge artifact. The two polarizations are the physical, propagating degrees of freedom of the linear theory.
 
 This is the theory that the framework's frame route will now be asked to contain.
 
@@ -341,7 +341,7 @@ The same structure appears in the electromagnetic analogue: without the Lorenz c
 The plane-wave case is the sharpest check that the transcription is faithful, and it is where the gauge-invariant and gauge-dependent parts separate cleanly. Take a transverse-traceless perturbation propagating in the $z$ direction,
 
 $$
-h_{11} = -h_{22} = A\cos\!\left(\omega\left(\tfrac{z}{c} - t\right)\right), \qquad h_{00} = h_{33} = h_{0\mu} = h_{3\mu} = 0,
+h_{11} = -h_{22} = A\cos\!\left(\omega\left(\tfrac{z}{c} - t'\right)\right), \qquad h_{00} = h_{33} = h_{0\mu} = h_{3\mu} = 0,
 $$
 
 with the other off-diagonal components zero. The wave vector is null, $k^\mu k_\mu = 0$, and the amplitude is transverse, $k^\mu A_{\mu\nu} = 0$, and traceless, $\eta^{\mu\nu}A_{\mu\nu} = 0$. A direct computation gives
@@ -406,7 +406,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $\varepsilon_\mu = (ie_t, \vec e_x, \vec e_y, \vec e_z)$ | Material basis of $\mathbb{M}_-$ |
 | $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ | Flat metric of the material sector |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
-| $x^\mu = (ct,x,y,z)$, $\partial/\partial x^\mu$ | Real coordinates and their derivatives; $ict = i x^0$ |
+| $x^\mu = (ct',x,y,z)$, $\partial/\partial x^\mu$ | Real coordinates and their derivatives; $ict' = i x^0$ |
 | $\partial/\partial Q_t = -i\partial/\partial x^0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x^0$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \eta^{\mu\nu}\partial^2/\partial x^\mu\partial x^\nu$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $g_{\mu\nu} = \eta_{\mu\nu} + h_{\mu\nu}$ | Linearized metric |

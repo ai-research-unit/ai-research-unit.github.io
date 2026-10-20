@@ -21,7 +21,7 @@ The article is organised as follows. The next section derives the functional int
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the central scalar action and the current.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-wavevector and the biquaternion norm.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_t$ with $\phi$ complex, written in real components as $\phi=(\phi_1+i\phi_2)/\sqrt2$, so that $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$ and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization of the companion articles on the quantized field and on symmetry breaking — and the mass parameter is $\mu=mc/\hbar$. Natural units $\hbar=c=1$ are used in the analytical parts. The metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; physical components are written $x=(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_t$ with $\phi$ complex, written in real components as $\phi=(\phi_1+i\phi_2)/\sqrt2$, so that $\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})=\frac12(\phi_1^2+\phi_2^2)$ and the kinetic term is $\frac12[(\partial\phi_1)^2+(\partial\phi_2)^2]$ — the component normalization of the companion articles on the quantized field and on symmetry breaking — and the mass parameter is $\mu=mc/\hbar$. Natural units $\hbar=c=1$ are used in the analytical parts. The metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; physical components are written $x=(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$.
 
 ## From the Operator Formalism to the Functional Integral
 
@@ -38,12 +38,12 @@ $$
 with real eigenvalues for the real field and complex eigenvalues for the complex one. The transition amplitude factors into short-time pieces, and inserting the field basis between them gives, for a real field,
 
 $$
-\langle\phi_f,t_f|\phi_i,t_i\rangle
-=\int_{\phi(t_i)=\phi_i}^{\phi(t_f)=\phi_f}\mathcal{D}\phi\;
-\exp\left(\frac{i}{\hbar}\int_{t_i}^{t_f}\!dt\,L[\phi,\partial\phi/\partial t]\right),
+\langle\phi_f,t'_f|\phi_i,t'_i\rangle
+=\int_{\phi(t'_i)=\phi_i}^{\phi(t'_f)=\phi_f}\mathcal{D}\phi\;
+\exp\left(\frac{i}{\hbar}\int_{t'_i}^{t'_f}\!dt'\,L[\phi,\partial\phi/\partial t']\right),
 $$
 
-with $L=\int d^3x\,\mathcal{L}$; the phase-space form is obtained by inserting also the momentum completeness relation, and integrating out the momentum returns the Lagrangian form above. The boundary values $\phi_i,\phi_f$ are held fixed, and the measure is the formal product of Lebesgue measures at each time slice, $\mathcal{D}\phi=\prod_t d\phi(t)$, made meaningful by a lattice regulator as in the finite-dimensional Gaussian below.
+with $L=\int d^3x\,\mathcal{L}$; the phase-space form is obtained by inserting also the momentum completeness relation, and integrating out the momentum returns the Lagrangian form above. The boundary values $\phi_i,\phi_f$ are held fixed, and the measure is the formal product of Lebesgue measures at each time slice, $\mathcal{D}\phi=\prod_t d\phi(t')$, made meaningful by a lattice regulator as in the finite-dimensional Gaussian below.
 
 In the framework's notation the field is central-valued and the weight is a central phase,
 
@@ -85,18 +85,18 @@ $$
 and using $\langle\pi|H|\phi\rangle=\langle\pi|\phi\rangle H(\phi,\pi)$, the kernel becomes
 
 $$
-\langle\phi_f,t_f|\phi_i,t_i\rangle
+\langle\phi_f,t'_f|\phi_i,t'_i\rangle
 =\int\mathcal{D}\phi\,\mathcal{D}\pi\;
-\exp\left(\frac{i}{\hbar}\int_{t_i}^{t_f}\!dt\int d^3x\,
-\big[\pi\,\partial\phi/\partial t+\pi^\dagger\left(\partial\phi/\partial t\right)^{\dagger}-\mathcal{H}(\phi,\pi)\big]\right),
+\exp\left(\frac{i}{\hbar}\int_{t'_i}^{t'_f}\!dt'\int d^3x\,
+\big[\pi\,\partial\phi/\partial t'+\pi^\dagger\left(\partial\phi/\partial t'\right)^{\dagger}-\mathcal{H}(\phi,\pi)\big]\right),
 $$
 
-the **phase-space** or Hamiltonian form of the functional integral. The momentum is now an independent integration variable, and because the field is complex both kinetic terms appear, with the corresponding boundary terms fixed at the endpoints. Because the Hamiltonian is quadratic in $\pi$, the momentum integral is a Gaussian and can be performed explicitly; it reproduces the Lagrangian form, since with the Hamiltonian $\mathcal{H}=c^{2}\pi\pi^{\dagger}+|\nabla\phi|^{2}+\mu^{2}|\phi|^{2}$ the saddle value of $\pi\partial\phi/\partial t+\pi^{\dagger}\left(\partial\phi/\partial t\right)^{\dagger}-\mathcal{H}$ is $2c^{-2}|\partial\phi/\partial t|^{2}-c^{-2}|\partial\phi/\partial t|^{2}-|\nabla\phi|^{2}-\mu^{2}|\phi|^{2}=\mathcal{L}$. The saddle point of the momentum integral is
+the **phase-space** or Hamiltonian form of the functional integral. The momentum is now an independent integration variable, and because the field is complex both kinetic terms appear, with the corresponding boundary terms fixed at the endpoints. Because the Hamiltonian is quadratic in $\pi$, the momentum integral is a Gaussian and can be performed explicitly; it reproduces the Lagrangian form, since with the Hamiltonian $\mathcal{H}=c^{2}\pi\pi^{\dagger}+|\nabla\phi|^{2}+\mu^{2}|\phi|^{2}$ the saddle value of $\pi\partial\phi/\partial t'+\pi^{\dagger}\left(\partial\phi/\partial t'\right)^{\dagger}-\mathcal{H}$ is $2c^{-2}|\partial\phi/\partial t'|^{2}-c^{-2}|\partial\phi/\partial t'|^{2}-|\nabla\phi|^{2}-\mu^{2}|\phi|^{2}=\mathcal{L}$. The saddle point of the momentum integral is
 
 $$
-\frac{\partial\mathcal{H}}{\partial\pi}=\partial\phi/\partial t
+\frac{\partial\mathcal{H}}{\partial\pi}=\partial\phi/\partial t'
 \qquad\Longleftrightarrow\qquad
-\pi=\frac{1}{c^2}\left(\partial\phi/\partial t\right)^{\,*},
+\pi=\frac{1}{c^2}\left(\partial\phi/\partial t'\right)^{\,*},
 $$
 
 which is the conjugate momentum of the companion canonical quantization. The regularity of the Legendre transform — no constraint, no gauge redundancy — is what makes the passage between the two forms exact and uncontroversial in the scalar sector; in the Dirac and Maxwell cases the same passage requires the introduction of ghosts and constraints, and the framework supplies no principle that would avoid them.
@@ -180,7 +180,7 @@ $$
 =i\hbar\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),
 $$
 
-which is the equal-time commutator imposed in the companion quantization. The commutator is thus not extra input: it is the statement $\delta\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\delta\phi(\vec y)=\delta^{(3)}$ in the functional representation. The conjugate momentum is the derivative of the action, $\pi=\delta S/\delta(\partial\phi/\partial t)$ on shell, matching the classical Legendre transform.
+which is the equal-time commutator imposed in the companion quantization. The commutator is thus not extra input: it is the statement $\delta\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\delta\phi(\vec y)=\delta^{(3)}$ in the functional representation. The conjugate momentum is the derivative of the action, $\pi=\delta S/\delta(\partial\phi/\partial t')$ on shell, matching the classical Legendre transform.
 
 **The mode expansion and the correlators.** The Gaussian integration produces the Wightman and Feynman functions of the companion field article, and the standard free-field Wick expansion recovers the mode algebra from them. The Hamiltonian and the charge are the generators of the time and phase translations, and their matrix elements are reproduced by the functional integral with the appropriate insertions. The equivalence is the standard one and is not re-derived; what the framework changes is the notation.
 
@@ -190,7 +190,7 @@ which is the equal-time commutator imposed in the companion quantization. The co
 
 ## The Euclidean Formulation and the Lattice Determinant
 
-The functional integral is made convergent by continuing to imaginary time. Writing $t=-i\tau$, so that the material coordinate's time component becomes the real coefficient $c\tau$ and the phase becomes a decaying weight, the action continues to the **Euclidean action**
+The functional integral is made convergent by continuing to imaginary time. Writing $t'=-i\tau$, so that the material coordinate's time component becomes the real coefficient $c\tau$ and the phase becomes a decaying weight, the action continues to the **Euclidean action**
 
 $$
 S_E[\tilde{\Phi}]=\int d^4x_E\left[(\partial/\partial\tau\,\phi^*)(\partial/\partial\tau\,\phi)
@@ -204,7 +204,7 @@ $$
 Z_E=\int\mathcal{D}\tilde{\Phi}\;\exp(-S_E[\tilde{\Phi}]/\hbar),
 $$
 
-a sum of positive weights. The step from the material coordinate $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ to its Euclidean form is the replacement of the imaginary time coefficient by a real one, i.e. the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the framework's interpretation of the Wick rotation, and it is the reason the Euclidean Gaussian converges. The action is central, the weight is positive and central, and the configuration space is unchanged.
+a sum of positive weights. The step from the material coordinate $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ to its Euclidean form is the replacement of the imaginary time coefficient by a real one, i.e. the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the framework's interpretation of the Wick rotation, and it is the reason the Euclidean Gaussian converges. The action is central, the weight is positive and central, and the configuration space is unchanged.
 
 **The lattice regulator.** Discretizing the Euclidean direction on a lattice of spacing $h$, the quadratic form of one degree of freedom is a tridiagonal matrix with diagonal $a=2/h^2+\mu^2$ and off-diagonal $b=-1/h^2$, and its determinant obeys the recursion
 
@@ -272,7 +272,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 **The quadratic form is the biquaternion norm.** The momentum-space symbol of the Gaussian's operator is $-(\langle\tilde P\rangle_{\natural}+\mu^2)$ with $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$, and it vanishes on the mass shell, the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three interpretations of one algebraic object, and the framework's convention for $\Box$ makes them mutually consistent.
 
-**The phase is central, and the Wick rotation is a sector relabelling.** The phase $\exp(iS/\hbar)$ is a central unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
+**The phase is central, and the Wick rotation is a sector relabelling.** The phase $\exp(iS/\hbar)$ is a central unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
 
 **The algebra supplies nothing beyond the centre.** There is no bosonic ladder in $\mathbb{B}$, as the companion Fock-space article's trace argument shows, so the mode expansion, the Fock space and the perturbative expansion that the path integral organises are all constructed on an imported module. The functional integral's algebraic content is exhausted by the centrality of the field and the biquaternion-norm geometry of the quadratic form.
 
@@ -306,7 +306,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $i$ | Central scalar imaginary |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
 | $\tilde{\Phi}=\phi\,e_t$, $\tilde J=J\,e_t$, $\phi=(\phi_1+i\phi_2)/\sqrt2$ | Scalar field and central source; real components |
-| $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
+| $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu \vec e_\mu\,\partial/\partial Q_\mu$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian |
 | $S[\tilde{\Phi}]$ | Central scalar action |
 | $Z[\tilde J]=\int\mathcal{D}\tilde{\Phi}\,\exp(\,iS+i\int[\mathrm{Sc}(\tilde J^{*}\tilde{\Phi})+\mathrm{Sc}(\tilde{\Phi}^{*}\tilde J)])$ | Generating functional |

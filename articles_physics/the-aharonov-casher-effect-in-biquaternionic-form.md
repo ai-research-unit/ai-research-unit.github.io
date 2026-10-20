@@ -29,7 +29,7 @@ The companion articles supply the pieces:
 
 ### A Magnetic Dipole in an Electric Field
 
-A magnetic dipole $\vec\mu$ at rest in a magnetic field $\vec B$ has Zeeman energy $-\vec\mu\cdot\vec B$ and, if the field is constant and the dipole state is an eigenstate, its state carries the exponent phase $-\frac{1}{\hbar}\int E\,dt = +\frac{1}{\hbar}\int\vec\mu\cdot\vec B\,dt$. For a dipole **moving** through an electric field, the relevant field is the one in its own rest frame. To first order in $v/c$ the rest-frame magnetic field is
+A magnetic dipole $\vec\mu$ at rest in a magnetic field $\vec B$ has Zeeman energy $-\vec\mu\cdot\vec B$ and, if the field is constant and the dipole state is an eigenstate, its state carries the exponent phase $-\frac{1}{\hbar}\int E\,dt' = +\frac{1}{\hbar}\int\vec\mu\cdot\vec B\,dt'$. For a dipole **moving** through an electric field, the relevant field is the one in its own rest frame. To first order in $v/c$ the rest-frame magnetic field is
 
 $$
 \vec B_2 = \vec B - \frac{1}{c^2}\,\vec v\times\vec E,
@@ -52,11 +52,11 @@ $$
 the phase accumulated along the path is
 
 $$
-\Delta\phi = \frac{1}{\hbar}\int L_{AC}\,dt
+\Delta\phi = \frac{1}{\hbar}\int L_{AC}\,dt'
 = \frac{1}{\hbar c^2}\int_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r,
 $$
 
-using $\vec v\,dt = d\vec r$. For a closed path $\mathcal{C}$ this is the AC phase quoted above — the standard result of Aharonov and Casher, with the same sign convention that gives the Aharonov–Bohm phase $+\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$. It is independent of the duration of the journey and of the speed profile, which is what makes it geometric; reversing the direction of travel reverses the sign of $\phi_{AC}$, as a geometric phase must.
+using $\vec v\,dt' = d\vec r$. For a closed path $\mathcal{C}$ this is the AC phase quoted above — the standard result of Aharonov and Casher, with the same sign convention that gives the Aharonov–Bohm phase $+\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$. It is independent of the duration of the journey and of the speed profile, which is what makes it geometric; reversing the direction of travel reverses the sign of $\phi_{AC}$, as a geometric phase must.
 
 ### The Phase as a Holonomy
 

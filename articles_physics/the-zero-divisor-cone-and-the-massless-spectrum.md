@@ -71,16 +71,16 @@ The corpus also reads the wall as an **information barrier**: the boundary at wh
 A material four-vector is anti-Hermitian,
 
 $$
-\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z,
+\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z,
 $$
 
 and its norm is the interval
 
 $$
-\langle\tilde R\rangle_{\natural}=-c^2t^2+\lvert x\vec e_x+y\vec e_y+z\vec e_z\rvert^2,
+\langle\tilde R\rangle_{\natural}=-c^2{t'}^2+\lvert x\vec e_x+y\vec e_y+z\vec e_z\rvert^2,
 $$
 
-of signature $(-,+,+,+)$. The cone cut by $\mathbb{M}_-$ is the **null cone** $c^2t^2=\lvert\vec r\rvert^2$, and its level set
+of signature $(-,+,+,+)$. The cone cut by $\mathbb{M}_-$ is the **null cone** $c^2{t'}^2=\lvert\vec r\rvert^2$, and its level set
 
 $$
 \langle\tilde R\rangle_{\natural}=-m^2c^2
@@ -173,8 +173,8 @@ Cut by the material sector, the cone is the Minkowski null cone, and the level s
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $\mathcal Z=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone |
 | $\tilde\Upsilon$ | a nilpotent, $\tilde\Upsilon^2=0$, $\tilde\Upsilon\neq0$ |
-| $\mathbb{M}_-$ | the material sector, $\tilde R=ict\,e_t+\vec r$ |
-| $\langle\tilde R\rangle_{\natural}=-c^2t^2+\lvert\vec r\rvert^2$ | the Minkowski interval |
+| $\mathbb{M}_-$ | the material sector, $\tilde R=ict'\,e_t+\vec r$ |
+| $\langle\tilde R\rangle_{\natural}=-c^2{t'}^2+\lvert\vec r\rvert^2$ | the Minkowski interval |
 | $-m^2c^2$ | the mass-shell level of the interval |
 | $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units |
 | $\tilde P=i\,\xi\xi^{\dagger}$ | a null material momentum as an imaginary multiple of a rank-one projector |

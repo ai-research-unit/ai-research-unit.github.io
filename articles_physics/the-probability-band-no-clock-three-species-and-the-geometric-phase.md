@@ -97,19 +97,19 @@ so $ie_t$ is a root of $-e_t$, the exponential $e^{i\theta}$ has an algebraic ge
 
 The probability band owns the same centre but reads it as a modulus: it has the clock's values and not the clock's generator.
 
-**The clock is imported as a material element.** A reversible family of the band is a family of unitaries $U(t)=e^{iHt}$ with $H$ Hermitian. The family lies in the band, since $U(t)U(t)^{*}=e_t$, but its generator is $iH$, which is anti-Hermitian, that is, material. The band contains the clock's action and not the clock's element: time is the parameter of a family whose generator is material.
+**The clock is imported as a material element.** A reversible family of the band is a family of unitaries $U(t')=e^{iHt'}$ with $H$ Hermitian. The family lies in the band, since $U(t')U(t')^{*}=e_t$, but its generator is $iH$, which is anti-Hermitian, that is, material. The band contains the clock's action and not the clock's element: time is the parameter of a family whose generator is material.
 
 ### The Interval Is a Clock and the Square a Ruler
 
 The probability band's square is a **ruler**: the Hermitian norm is definite, it measures a length and it supplies the Born weight. The neighbouring quaternionic form is a **clock**: the interval is indefinite, it separates timelike from spacelike, and its zero set is the light cone. One element carries both because the grid carries both metrics. On the material sector the two read
 
 $$
-\langle\tilde R\rangle_{*}=c^{2}t^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde R\rangle_{*}=c^{2}{t'}^{2}+\lvert\vec x\rvert^{2},
 \qquad
-\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde R\rangle_{\natural}=-c^{2}{t'}^{2}+\lvert\vec x\rvert^{2},
 $$
 
-so the ruler and the clock differ by twice the squared time, $\langle\tilde R\rangle_{*}-\langle\tilde R\rangle_{\natural}=2c^{2}t^{2}$.
+so the ruler and the clock differ by twice the squared time, $\langle\tilde R\rangle_{*}-\langle\tilde R\rangle_{\natural}=2c^{2}{t'}^{2}$.
 
 The reading is the instrument pair: the interval tells which events can be causally connected and how much proper time a worldline carries; the Hermitian square tells how long a vector is and, on the state slice, supplies the Born weight. The same algebra carries both because the four general products put the two forms on the same eight real coordinates. The pair is the transversal form of the no-clock theorem: the band has no clock element, but it has the ruler, and the clock is the interval of the neighbouring band.
 
@@ -123,7 +123,7 @@ The neighbour that carries the interval makes the split the probability band can
 
 *Proof.* By the injectivity of the parameter map, $L_{\tilde Q^{\natural}}=L_{\tilde Q}$ is $\tilde Q^{\natural}=\tilde Q$, which is centrality; and $L_{\tilde Q^{\natural}}=-L_{\tilde Q}$ is $\tilde Q^{\natural}=-\tilde Q$, which is purity.
 
-The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $ict$ and $ct'$; the pure part $\mathbb{C}\otimes\mathbb{R}^{3}$ is the six-real-dimensional space, carrying the three material and the three informational directions. The bracket of two pure elements is pure, because the scalar part of a commutator vanishes, so it touches no central coordinate.
+The centre $\mathbb{C}e_t$ is the two-real-dimensional time plane, carrying $ict'$ and $ct$; the pure part $\mathbb{C}\otimes\mathbb{R}^{3}$ is the six-real-dimensional space, carrying the three material and the three informational directions. The bracket of two pure elements is pure, because the scalar part of a commutator vanishes, so it touches no central coordinate.
 
 **The interpretation.** The causality band's operator layer splits the interval into a central time plane and a pure spatial part: the self-adjoint parameter is time, the skew-adjoint parameter is space, and the bracket lives in the space. The probability band has no such split because its square is a modulus.
 
@@ -341,7 +341,7 @@ The square is not the only map that crosses. The fourth power crosses, and every
 Write a material four-vector in the physical coordinates,
 
 $$
-\tilde Q=ict\,e_t+\vec x,
+\tilde Q=ict'\,e_t+\vec x,
 \qquad
 \vec x=x\vec e_x+y\vec e_y+z\vec e_z .
 $$
@@ -349,34 +349,34 @@ $$
 Its square and its negative are
 
 $$
-\tilde Q^{2}=-\bigl(c^{2}t^{2}+\lvert\vec x\rvert^{2}\bigr)e_t+2ict\,\vec x,
+\tilde Q^{2}=-\bigl(c^{2}{t'}^{2}+\lvert\vec x\rvert^{2}\bigr)e_t+2ict'\,\vec x,
 \qquad
--\tilde Q^{2}=\bigl(c^{2}t^{2}+\lvert\vec x\rvert^{2}\bigr)e_t-2ict\,\vec x .
+-\tilde Q^{2}=\bigl(c^{2}{t'}^{2}+\lvert\vec x\rvert^{2}\bigr)e_t-2ict'\,\vec x .
 $$
 
 The scalar part of $-\tilde Q^{2}$ is the Hermitian norm,
 
 $$
-\mathrm{Sc}\bigl(-\tilde Q^{2}\bigr)=c^{2}t^{2}+\lvert\vec x\rvert^{2}
+\mathrm{Sc}\bigl(-\tilde Q^{2}\bigr)=c^{2}{t'}^{2}+\lvert\vec x\rvert^{2}
 =\langle\tilde Q\rangle_{*},
 $$
 
 the Euclidean weight of the four-vector. The vector part is
 
 $$
-\mathrm{Vect}\bigl(-\tilde Q^{2}\bigr)=-2ict\,\vec x=-2Q_t\vec Q,
+\mathrm{Vect}\bigl(-\tilde Q^{2}\bigr)=-2ict'\,\vec x=-2Q_t\vec Q,
 $$
 
 the phase vector of the material element. The interval is not the square: it is the quaternionic norm,
 
 $$
-\langle\tilde Q\rangle_{\natural}=-c^{2}t^{2}+\lvert\vec x\rvert^{2},
+\langle\tilde Q\rangle_{\natural}=-c^{2}{t'}^{2}+\lvert\vec x\rvert^{2},
 $$
 
 and the gap between the two metrics on the material side is
 
 $$
-\langle\tilde Q\rangle_{*}-\langle\tilde Q\rangle_{\natural}=2c^{2}t^{2}.
+\langle\tilde Q\rangle_{*}-\langle\tilde Q\rangle_{\natural}=2c^{2}{t'}^{2}.
 $$
 
 The square gives the weight and the axis; the norm gives the interval.

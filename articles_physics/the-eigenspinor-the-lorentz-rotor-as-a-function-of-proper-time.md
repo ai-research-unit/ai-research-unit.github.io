@@ -20,7 +20,7 @@ with $\vec\Omega_{\mathrm{LT}}$ the spacetime rotation rate, and the Lorentz for
 
 Three things are worth separating at the outset, and the article keeps them apart.
 
-- **What is standard and what is a translation.** The eigenspinor is standard relativistic mechanics in a geometric-algebra dress; Baylis, Hestenes and their school use it, and this article transcribes rather than re-derives. What the transcription adds is the $ict$ convention of this series and the dictionary to the companion articles.
+- **What is standard and what is a translation.** The eigenspinor is standard relativistic mechanics in a geometric-algebra dress; Baylis, Hestenes and their school use it, and this article transcribes rather than re-derives. What the transcription adds is the $ict'$ convention of this series and the dictionary to the companion articles.
 - **What the algebra supplies.** The linearity of the evolution equation, the closure of the rotor under the flow, the one-sided spinor law, and the fact that the force is the anti-Hermitian projection of the rate times the momentum are algebraic identities, and they are checked below.
 - **Where the earlier articles stop.** *The Lorentz Force in Biquaternion Form* records that the force is **not** a clean product of $\tilde{F}$ with $\tilde{V}$, and names the obstruction. The eigenspinor does not remove that obstruction; it offers a different, *differential* route to the same force. The two routes agree, and the agreement is checked.
 
@@ -193,7 +193,7 @@ Both factors are rotors: $\vec\Omega_{\mathrm{LT}}$ is a pure vector, so $\exp(\
 
 **Supplied by the algebra.** The linear evolution equation, the closure of the flow under a scalar-part-free rate, the one-sided spinor law, the identity $d\tilde{P}/d\tau = P_{\mathbb{M}_-}(\vec\Omega_{\mathrm{LT}}\tilde{P})$, the norm conservation, and the closed form in a uniform field are all algebraic, and each was checked above.
 
-**Transcribed.** The eigenspinor is not this series' invention. Baylis uses it throughout *Electrodynamics: A Modern Geometric Approach* and in the paravector lecture that is the source of this article; Hestenes uses the same object as the "rotor part" of the Dirac spinor in spacetime algebra. What the series adds is the $ict$ convention, the dictionary to the companion articles, and the checks.
+**Transcribed.** The eigenspinor is not this series' invention. Baylis uses it throughout *Electrodynamics: A Modern Geometric Approach* and in the paravector lecture that is the source of this article; Hestenes uses the same object as the "rotor part" of the Dirac spinor in spacetime algebra. What the series adds is the $ict'$ convention, the dictionary to the companion articles, and the checks.
 
 **Where the earlier articles stop, and what changes.** *The Lorentz Force in Biquaternion Form* shows that $\tilde{K}_{\mathrm{f}}$ is **not** $\mathrm{Re}(\tilde{F}\tilde{V})$ or any single product of $\tilde{F}$ with $\tilde{V}$, and locates the obstruction in the two duality halves of the field. The eigenspinor does not contradict that finding and does not remove the obstruction. It gives the force a clean *linear* source instead: the rate $\vec\Omega_{\mathrm{LT}}$ and the rotor $\tilde U$. Whether the series should present the eigenspinor as the primary formulation of the relativistic particle, with the product formula as a derived corollary, is a matter of taste and is left open below; the two statements are consistent.
 
@@ -259,7 +259,7 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 
 ## Further Reading
 
-- W. E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the eigenspinor, the evolution equation $d\Lambda/d\tau = \frac12\Omega\Lambda$ (the source's $\Omega$ is this article's $\vec\Omega_{\mathrm{LT}}$), the identity $dp/d\tau = \langle\Omega p\rangle_<$, the closed form in a uniform field and the identification $\Omega = eF/m$. This article is the series' transcription of that source into the $ict$ convention.
+- W. E. Baylis, *Geometry of Paravector Space, with Applications to Relativistic Physics* (University of Windsor lecture, 2003), for the eigenspinor, the evolution equation $d\Lambda/d\tau = \frac12\Omega\Lambda$ (the source's $\Omega$ is this article's $\vec\Omega_{\mathrm{LT}}$), the identity $dp/d\tau = \langle\Omega p\rangle_<$, the closed form in a uniform field and the identification $\Omega = eF/m$. This article is the series' transcription of that source into the $ict'$ convention.
 - W. E. Baylis, *Electrodynamics: A Modern Geometric Approach* (Birkhäuser, 1999), for the same formalism developed at book length, with the complex-quaternion algebra, the paravector space and the Hermitian subspaces.
 - W. E. Baylis, "Relativity in introductory physics," *Canadian Journal of Physics* **82** (2004) 853, for the companion lecture.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the rotor-times-density interpretation of the Dirac spinor, of which the classical eigenspinor is the orbital part.

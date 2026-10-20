@@ -37,10 +37,10 @@ lies in $\mathbb{M}_-$ and satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tild
 
 $$
 S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}},
-\qquad d\tilde{R} = ic\,dt\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{M}_- .
+\qquad d\tilde{R} = ic\,dt'\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{M}_- .
 $$
 
-Because $d\tilde{R}\,d\tilde{R}^{\natural} = -c^2dt^2 +dx^2+dy^2+dz^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt/\gamma$, and the Lagrangian in the coordinate time $t$ is
+Because $d\tilde{R}\,d\tilde{R}^{\natural} = -c^2d{t'}^2 +dx^2+dy^2+dz^2 = -c^2d\tau^2$ with $\tau$ the proper time, the action is $S = -mc^2\int dt'/\gamma$, and the Lagrangian in the coordinate time $t'$ is
 
 $$
 L(\vec v) = -mc^2\sqrt{1-\vec v^2/c^2} = -\frac{mc^2}{\gamma},
@@ -99,7 +99,7 @@ $$
 \qquad (\tilde{\Phi} = \phi\,e_t).
 $$
 
-**The current lies in the material sector.** The temporal component in the $ict$ basis is $J^0 = i(\phi^*\partial/\partial Q_t\,\phi - \phi\,\partial/\partial Q_t\,\phi^*)$, and since $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$, it equals $\frac{1}{c}(\phi^*\partial/\partial t\phi - \phi\,\partial/\partial t\phi^*) = \frac{2i}{c}\,\mathrm{Im}(\phi^*\partial/\partial t\phi)$, which is **purely imaginary**; the spatial components $J^k = i(\phi^*\partial/\partial Q_k\,\phi - \phi\,\partial/\partial Q_k\,\phi^*)$ are real. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J^0 = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$.
+**The current lies in the material sector.** The temporal component in the $ict'$ basis is $J^0 = i(\phi^*\partial/\partial Q_t\,\phi - \phi\,\partial/\partial Q_t\,\phi^*)$, and since $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, it equals $\frac{1}{c}(\phi^*\partial/\partial t'\phi - \phi\,\partial/\partial t'\phi^*) = \frac{2i}{c}\,\mathrm{Im}(\phi^*\partial/\partial t'\phi)$, which is **purely imaginary**; the spatial components $J^k = i(\phi^*\partial/\partial Q_k\,\phi - \phi\,\partial/\partial Q_k\,\phi^*)$ are real. Hence $\tilde{J}\in\mathbb{M}_-$, with imaginary scalar part and real vector part, exactly as the four-current of relativistic mechanics. Writing $J^0 = ic\rho$ recovers the parent's convention $\tilde{J} = ic\rho\,e_t + \vec j$.
 
 **Conservation.** Forming the scalar part of $\tilde{\nabla}^{\natural}\tilde{J}$,
 
@@ -107,7 +107,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = \sum_\mu\partial/\partial Q_\mu\,J_\mu = \langle\tilde\nabla,\tilde J\rangle_{\natural} ,
 $$
 
-the last equality because in the $ict$ basis the time component is $i$ times its physical value, so $\partial/\partial Q_t$ of the $ict$ component equals $\partial/\partial(ct)$ of the corresponding real physical component. Using the definitions and $\Box = \partial^2/\partial Q_t^2 + \Delta$,
+the last equality because in the $ict'$ basis the time component is $i$ times its physical value, so $\partial/\partial Q_t$ of the $ict'$ component equals $\partial/\partial(ct')$ of the corresponding real physical component. Using the definitions and $\Box = \partial^2/\partial Q_t^2 + \Delta$,
 
 $$
 \boxed{\ \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = i\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}(\Box\tilde{\Phi}) - (\Box\tilde{\Phi}^{*})\tilde{\Phi}\right]\ }
@@ -119,19 +119,19 @@ $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = 0 \quad\text{on shell},
 $$
 
-which is the continuity equation $\partial/\partial t\rho + \mathrm{div}\,\vec j = 0$.
+which is the continuity equation $\partial/\partial t'\rho + \mathrm{div}\,\vec j = 0$.
 
 **On what case was this checked?** A single plane wave is a trap: for $\tilde{\Phi} = \tilde{\Phi}_0\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}))$ the current is *constant*, so its divergence vanishes whether or not the field is on shell, and the plane wave that suggests the formula cannot test it. The conservation was therefore checked on three other cases:
 
 - **a superposition of on-shell plane waves.** With $c = \hbar = m = 1$ and the momenta $(|\vec k|,\omega) = (0,1)$, $(\tfrac34,\tfrac54)$, $(\tfrac{5}{12},\tfrac{13}{12})$ all satisfying $\omega^2 = \vec k^2 + 1$, and amplitudes $1, \tfrac12, \tfrac13$, the current has non-constant cross terms, and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ simplifies to **exactly zero**;
-- **a standing wave**, $\tilde{\Phi} = \sin(kx)\cos(\omega t) + i\sin(kx)\sin(\omega t)$ with $\omega^2 = c^2k^2 + m^2c^4/\hbar^2$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ is **exactly zero**;
+- **a standing wave**, $\tilde{\Phi} = \sin(kx)\cos(\omega t') + i\sin(kx)\sin(\omega t')$ with $\omega^2 = c^2k^2 + m^2c^4/\hbar^2$: this is on shell and is **not** a plane wave, and again $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ is **exactly zero**;
 - **an off-shell field.** A two-mode field with one mode off shell gives a divergence proportional to the field equation, explicitly nonzero. The identity above was also confirmed symbolically on a generic three-mode field, off shell: the difference $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) - i\,\mathrm{Sc}[\tilde{\Phi}^{*}\Box\tilde{\Phi} - (\Box\tilde{\Phi}^{*})\tilde{\Phi}]$ reduces to zero identically.
 
 The last case is the honest statement of the theorem: the current is conserved **whenever** the field equation holds; off shell it need not be, and its divergence *is* the field equation.
 
-**Relation to the current already in the corpus.** *The Klein–Gordon Equation in Biquaternionic Form* posits the current with $\rho = \frac{i\hbar}{2mc^2}(\tilde{\Phi}^*\partial/\partial t\tilde{\Phi} - \tilde{\Phi}\partial/\partial t\tilde{\Phi}^*)$ and $\vec j = -\frac{i\hbar}{2m}(\tilde{\Phi}^*\nabla\tilde{\Phi} - \tilde{\Phi}\nabla\tilde{\Phi}^*)$. Comparing component by component, that current equals $-\frac{\hbar}{2m}\tilde{J}$: the Noether derivation reproduces the current the parent states, and fixes the normalization only up to the constant $-\hbar/2m$ that a current may always be multiplied by. What the derivation adds is **why** that combination is the conserved one, and that it is forced by the phase symmetry rather than chosen.
+**Relation to the current already in the corpus.** *The Klein–Gordon Equation in Biquaternionic Form* posits the current with $\rho = \frac{i\hbar}{2mc^2}(\tilde{\Phi}^*\partial/\partial t'\tilde{\Phi} - \tilde{\Phi}\partial/\partial t'\tilde{\Phi}^*)$ and $\vec j = -\frac{i\hbar}{2m}(\tilde{\Phi}^*\nabla\tilde{\Phi} - \tilde{\Phi}\nabla\tilde{\Phi}^*)$. Comparing component by component, that current equals $-\frac{\hbar}{2m}\tilde{J}$: the Noether derivation reproduces the current the parent states, and fixes the normalization only up to the constant $-\hbar/2m$ that a current may always be multiplied by. What the derivation adds is **why** that combination is the conserved one, and that it is forced by the phase symmetry rather than chosen.
 
-**Relation to the Maxwell source.** In the Maxwell article the source conservation is $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ with $\tilde J = ic\rho\,e_t + \vec J$. Expanding, $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = \sqrt{\mu}\,(\partial/\partial t\rho + \mathrm{div}\,\vec J)$, so the Maxwell integrability condition is the same continuity equation as the conservation of $\tilde{J}$ above. The electric four-current of the material sector is the Noether current of the central phase; the gauge freedom localized in *The Gauge Principle in Biquaternionic Form* is the localization of the symmetry that produces it.
+**Relation to the Maxwell source.** In the Maxwell article the source conservation is $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = 0$ with $\tilde J = ic\rho\,e_t + \vec J$. Expanding, $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J}) = \sqrt{\mu}\,(\partial/\partial t'\rho + \mathrm{div}\,\vec J)$, so the Maxwell integrability condition is the same continuity equation as the conservation of $\tilde{J}$ above. The electric four-current of the material sector is the Noether current of the central phase; the gauge freedom localized in *The Gauge Principle in Biquaternionic Form* is the localization of the symmetry that produces it.
 
 **The mass, and where the symmetry stops.** The phase symmetry derived here holds for the massive Klein–Gordon field, and — with the parent's mass term now written in its linear, chirality-off-diagonal form $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ — it holds for the massive Dirac field as well. A central phase passes through the linear mass term, so the current above is the conserved current of both fields, and $\langle\tilde\nabla,\tilde J\rangle_{\natural} = 0$ on shell for each. What the mass term breaks is the **axial** symmetry, not the phase: the associated divergence identity is
 
@@ -150,7 +150,7 @@ $$
 \qquad \tilde{R}_0\in\mathbb{M}_-\ \text{constant},
 $$
 
-is a symmetry of the action. The Noether charges are the momentum conjugate to $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and the energy conjugate to $t$; computing the first from the Lagrangian,
+is a symmetry of the action. The Noether charges are the momentum conjugate to $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and the energy conjugate to $t'$; computing the first from the Lagrangian,
 
 $$
 \vec p = \frac{\partial L}{\partial\vec v} = \gamma m\vec v,
@@ -172,29 +172,29 @@ The mass-shell relation $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ follows. Trans
 $$
 \tilde{P}_{\mathrm{tot}} = \sum_a \tilde{P}_a,
 \qquad
-\frac{d\tilde{P}_{\mathrm{tot}}}{dt} = 0,
+\frac{d\tilde{P}_{\mathrm{tot}}}{dt'} = 0,
 $$
 
-a vanishing **coordinate**-time derivative. The parent defines the four-force by the **proper**-time derivative of a single body, $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$, and since $d\tau_a = dt/\gamma_a$,
+a vanishing **coordinate**-time derivative. The parent defines the four-force by the **proper**-time derivative of a single body, $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$, and since $d\tau_a = dt'/\gamma_a$,
 
 $$
-\frac{d\tilde{P}_a}{dt} = \frac{1}{\gamma_a}\tilde{K}_{\mathrm{f},a},
+\frac{d\tilde{P}_a}{dt'} = \frac{1}{\gamma_a}\tilde{K}_{\mathrm{f},a},
 \qquad\text{so}\qquad
-\sum_a \tilde{K}_{\mathrm{f},a} = \sum_a \gamma_a\frac{d\tilde{P}_a}{dt},
+\sum_a \tilde{K}_{\mathrm{f},a} = \sum_a \gamma_a\frac{d\tilde{P}_a}{dt'},
 $$
 
-which equals $d\tilde{P}_{\mathrm{tot}}/dt$ only when all the $\gamma_a$ are equal. The parent's symbol $\tilde{K}_{\mathrm{f}}$ is a per-body proper-time rate and cannot be summed across bodies. The conservation law in terms of the parent's four-forces is therefore
+which equals $d\tilde{P}_{\mathrm{tot}}/dt'$ only when all the $\gamma_a$ are equal. The parent's symbol $\tilde{K}_{\mathrm{f}}$ is a per-body proper-time rate and cannot be summed across bodies. The conservation law in terms of the parent's four-forces is therefore
 
 $$
-\sum_a \frac{1}{\gamma_a}\tilde{K}_{\mathrm{f},a} = \frac{d\tilde{P}_{\mathrm{tot}}}{dt} = 0,
+\sum_a \frac{1}{\gamma_a}\tilde{K}_{\mathrm{f},a} = \frac{d\tilde{P}_{\mathrm{tot}}}{dt'} = 0,
 $$
 
 or, in the integrated form that avoids the derivative altogether, $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$ for a collision. The exercise reports this defect; the corrected statement above is the one to use.
 
-**A numerical witness.** Two bodies connected by a translation-invariant interaction exchange momentum, so $d\tilde{P}_2/dt = -d\tilde{P}_1/dt = i\,e_t + \vec e_x$ at some instant, and their Lorentz factors differ, $\gamma_1 = 5/3$, $\gamma_2 = 5/4$. Then $d\tilde{P}_{\mathrm{tot}}/dt = 0$, but
+**A numerical witness.** Two bodies connected by a translation-invariant interaction exchange momentum, so $d\tilde{P}_2/dt' = -d\tilde{P}_1/dt' = i\,e_t + \vec e_x$ at some instant, and their Lorentz factors differ, $\gamma_1 = 5/3$, $\gamma_2 = 5/4$. Then $d\tilde{P}_{\mathrm{tot}}/dt' = 0$, but
 
 $$
-\tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = (\gamma_1 - \gamma_2)\frac{d\tilde{P}_1}{dt} = -\frac{5}{12}\left(i\,e_t + \vec e_x\right) \neq 0 .
+\tilde{K}_{\mathrm{f},1} + \tilde{K}_{\mathrm{f},2} = (\gamma_1 - \gamma_2)\frac{d\tilde{P}_1}{dt'} = -\frac{5}{12}\left(i\,e_t + \vec e_x\right) \neq 0 .
 $$
 
 The naive sum of the parent's four-forces is not zero even though the total four-momentum is conserved. For the collision of *Exercise: Four-Momentum Conservation in a Collision* ($E_1 = 3mc^2$, equal masses, $\theta^* = 90^\circ$), the total four-momenta $\tilde{P}_{\mathrm{in}}$ and $\tilde{P}_{\mathrm{out}}$ were recomputed and agree component by component in the laboratory.
@@ -226,7 +226,7 @@ $$
 and translation invariance of $\mathcal{L}$ gives $\partial/\partial Q_\mu T^\mu{}_\nu = 0$ on shell. Its time–time component is the energy density,
 
 $$
-T^0{}_0 = |\partial/\partial(ct)\phi|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 > 0,
+T^0{}_0 = |\partial/\partial(ct')\phi|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2 > 0,
 $$
 
 positive, in contrast with the charge density, whose sign is not fixed. This was checked by symbolic recomputation on the on-shell superposition of three plane waves: all four divergences $\partial/\partial Q_\mu T^\mu{}_\nu$ simplify to zero, and $T^0{}_0$ is exactly the expression above.
@@ -235,7 +235,7 @@ positive, in contrast with the charge density, whose sign is not fixed. This was
 
 **The Maxwell case in the corpus form.** For the electromagnetic field the corpus's object is $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*} = W\,e_t + \frac{i}{c}\vec S\in\mathbb{M}_+$, with $W$ the energy density and $\vec S = \vec E\times\vec H$ the Poynting vector, and the conservation law is $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$ with $\tilde{P}$ the power–force density; the source-free case is $\tilde{\nabla}\tilde{W} = 0$. Its scalar part is the Poynting theorem, and the sign structure is the one the energy–momentum exercise verifies: the Hermitian form passes the test, while the real form $W + \frac{1}{c}\vec S$ does not, by a factor $i$ on the Poynting part. Read as a Noether statement, $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$ says that the translation current of the Maxwell field is conserved up to the work done on the charges — the source is present, so the field alone is not closed.
 
-**A caution on the $ict$ convention.** The energy density is not $\mathcal{L}$ and is not obtained from $\mathcal{L}$ by a flat sum: in the $ict$ convention the time direction carries the sign that the metric would carry, and mixing the two conventions produces the wrong sign on the time derivative. The canonical tensor above is written with the physical index positions, where $T^0{}_0$ is manifestly positive; the biquaternion packaging must be read through the same convention. This is the same caution the energy–momentum exercise records for the trace.
+**A caution on the $ict'$ convention.** The energy density is not $\mathcal{L}$ and is not obtained from $\mathcal{L}$ by a flat sum: in the $ict'$ convention the time direction carries the sign that the metric would carry, and mixing the two conventions produces the wrong sign on the time derivative. The canonical tensor above is written with the physical index positions, where $T^0{}_0$ is manifestly positive; the biquaternion packaging must be read through the same convention. This is the same caution the energy–momentum exercise records for the trace.
 
 ## Lorentz Invariance and the Angular-Momentum Bivector
 
@@ -305,9 +305,9 @@ $$
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v,
 $$
 
-as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\mathrm{tot}}/dt = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{K}_{\mathrm{f},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_0))$, with $\mathrm{Sc}(\tilde P\tilde{R}_0) = -\frac{\omega R_{0t}}{c} - \vec k\cdot\vec R_0$.
+as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\mathrm{tot}}/dt' = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{K}_{\mathrm{f},a}/\gamma_a = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P} = \sum_{\mathrm{out}}\tilde{P}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(i\,\mathrm{Sc}(\tilde P\tilde{R}_0))$, with $\mathrm{Sc}(\tilde P\tilde{R}_0) = -\frac{\omega R_{0t}}{c} - \vec k\cdot\vec R_0$.
 
-The field translation current is the canonical energy–momentum, $\partial/\partial Q_\mu T^\mu{}_\nu = 0$ on shell with positive energy density $T^0{}_0 = |\partial/\partial(ct)\phi|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ with $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$ is its time row. Lorentz invariance gives the angular-momentum bivector $\vec{L} = \tfrac12\sum L^{\mu\nu}\bar{e}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
+The field translation current is the canonical energy–momentum, $\partial/\partial Q_\mu T^\mu{}_\nu = 0$ on shell with positive energy density $T^0{}_0 = |\partial/\partial(ct')\phi|^2 + |\nabla\phi|^2 + \frac{m^2c^2}{\hbar^2}|\phi|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W} = \tfrac12\tilde{F}\tilde{F}^{*}$ with $\tilde{\nabla}\tilde{W} = -\tilde{\mathcal F}$ is its time row. Lorentz invariance gives the angular-momentum bivector $\vec{L} = \tfrac12\sum L^{\mu\nu}\bar{e}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
 ## Summary of Notation
 
@@ -323,7 +323,7 @@ The field translation current is the canonical energy–momentum, $\partial/\par
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian |
 | $S = -mc\int\sqrt{-d\tilde{R}\,d\tilde{R}^{\natural}}$ | Free-particle action |
 | $L = -mc^2\sqrt{1-\vec v^2/c^2}$ | Free-particle Lagrangian |
-| $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, in $\mathbb{M}_-$ |
+| $\tilde{R} = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position, in $\mathbb{M}_-$ |
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\tilde{V}\tilde{V}^{\natural} = -c^2$ |
 | $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation |
 | $\tilde{K}_{\mathrm{f},a} = d\tilde{P}_a/d\tau_a$ | Four-force (proper-time derivative; not summable) |

@@ -22,7 +22,7 @@ First, and most important, **"non-commutative" here does not mean the non-commut
 
 Second, the deformation is of the **Moyal** type — an algebra deformation, $\theta^{\mu\nu}$ a fixed background. It is not the **C-space** programme of Clifford-valued coordinates, which deforms the arena differently; the corpus holds that programme separately and the two must be compared, not merged. The mathematical side of the Moyal deformation is the star product of *Deformation Quantization*, and the classical limit that the corpus's *Similitudes between the Poisson Bracket and the Quantum Commutator* develops is the undeformed limit here.
 
-Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it$, the corpus writes $\tilde R = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
+Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it'$, the corpus writes $\tilde R = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
 
 ## The Non-Commutative Arena
 
@@ -95,7 +95,7 @@ The two forms are the same quantity: the $\theta$-part of the four-index express
 The field equations follow from $\mathcal L$ by the Lagrange–Euler equation. Cast in the form used in matter, they are the familiar pair
 
 $$
-\frac{\partial}{\partial t}\vec D - \mathrm{rot}\,\vec H = -\vec J,
+\frac{\partial}{\partial t'}\vec D - \mathrm{rot}\,\vec H = -\vec J,
 \qquad
 \mathrm{div}\,\vec D = \rho,
 $$
@@ -103,7 +103,7 @@ $$
 together with the source-free pair
 
 $$
-\frac{\partial}{\partial t}\vec B + \mathrm{rot}\,\vec E = 0,
+\frac{\partial}{\partial t'}\vec B + \mathrm{rot}\,\vec E = 0,
 \qquad
 \mathrm{div}\,\vec B = 0 .
 $$
@@ -131,11 +131,11 @@ The corpus's media article develops the **linear** case in full: for a homogeneo
 The source's second-order equations are obtained by eliminating D and H. Applying the curl to the first sourced equation, substituting rot E from the source-free pair, and using the constitutive relations, gives
 
 $$
-\Delta\vec B - \frac{\partial^2}{\partial t^2}\vec B + \Delta\vec h - \mathrm{grad}\,\mathrm{div}\,\vec h + \frac{\partial}{\partial t}\mathrm{rot}\,\vec d = -\mathrm{rot}\,\vec J,
+\Delta\vec B - \frac{\partial^2}{\partial {t'}^2}\vec B + \Delta\vec h - \mathrm{grad}\,\mathrm{div}\,\vec h + \frac{\partial}{\partial t'}\mathrm{rot}\,\vec d = -\mathrm{rot}\,\vec J,
 $$
 
 $$
-\Delta\vec E - \frac{\partial^2}{\partial t^2}\vec E - \frac{\partial^2}{\partial t^2}\vec d + \mathrm{grad}\,\mathrm{div}\,\vec d + \frac{\partial}{\partial t}\mathrm{rot}\,\vec h = \frac{\partial}{\partial t}\vec J + \mathrm{grad}\,\rho .
+\Delta\vec E - \frac{\partial^2}{\partial {t'}^2}\vec E - \frac{\partial^2}{\partial {t'}^2}\vec d + \mathrm{grad}\,\mathrm{div}\,\vec d + \frac{\partial}{\partial t'}\mathrm{rot}\,\vec h = \frac{\partial}{\partial t'}\vec J + \mathrm{grad}\,\rho .
 $$
 
 The time derivative in front of the two rotation terms belongs there: it is what makes the deformed terms cancel for a plane wave, and it is easily lost in the two-column layout of the source. At $\vec\theta=0$ these are the ordinary wave equations. At $\vec\theta\ne0$ they are **non-linear**, because $\vec d$ and $\vec h$ are quadratic in the fields.
@@ -185,7 +185,7 @@ The structural interpretation is worth stating as the paper's sharpest contribut
 Multiplying the sourced equations by $\vec E$ and the source-free ones by $\vec H$ and adding gives the Poynting theorem in its deformed form,
 
 $$
-\frac{\partial\mathcal E}{\partial t} = -(\vec J\cdot\vec E) - \mathrm{div}\,\vec P,
+\frac{\partial\mathcal E}{\partial t'} = -(\vec J\cdot\vec E) - \mathrm{div}\,\vec P,
 \qquad
 \vec P = \vec E\times\vec H,
 $$
@@ -245,7 +245,7 @@ proportional to the two invariants contracted with the background, and therefore
 ### The energy density as an integrability condition
 
 The relation behind the Poynting theorem above,
-$\vec E\cdot\partial/\partial t\vec D + \vec H\cdot\partial/\partial t\vec B = \partial/\partial t\mathcal E$, is not a
+$\vec E\cdot\partial/\partial t'\vec D + \vec H\cdot\partial/\partial t'\vec B = \partial/\partial t'\mathcal E$, is not a
 convenience: it is the **integrability condition** for an energy density to exist at all, and it holds because
 $\vec D$ and $\vec H$ are the field-derivatives of a Lagrangian. This is a statement about variational
 non-linear media generally rather than about non-commutativity — the energy density is defined precisely when
@@ -340,7 +340,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $\theta^{\mu\nu}$ | Constant antisymmetric deformation tensor, dimension $(\text{length})^2$ |
 | $\Lambda_{NC}$, $\epsilon^{\mu\nu}$ | Non-commutativity scale and dimensionless shape tensor, $\theta^{\mu\nu}=\epsilon^{\mu\nu}/\Lambda_{NC}^2$ |
 | $\theta_i$ | Three-vector of the deformation, $\theta_i=\tfrac12\epsilon_{ijk}\theta_{jk}$, $\theta_{i4}=0$ |
-| $[x^\mu,x^\nu]=i\theta^{\mu\nu}$ | The defining commutator; the corpus's "$ict$" convention is kept for time |
+| $[x^\mu,x^\nu]=i\theta^{\mu\nu}$ | The defining commutator; the corpus's "$ict'$" convention is kept for time |
 | $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\theta^{\mu\nu}\partial_\mu\,\partial/\partial x_2^\nu)$ |
 | $[A_\mu,A_\nu]_M$ | Moyal bracket $A_\mu\star A_\nu - A_\nu\star A_\mu$ |
 | $F_{\mu\nu}$, $\tilde F_{\mu\nu}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ijk}F_{jk}$ |

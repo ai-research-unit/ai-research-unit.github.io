@@ -2,15 +2,15 @@
 
 ## Introduction
 
-For a pure state $|\psi(t)\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum physics is
+For a pure state $|\psi(t')\rangle$ and a Hamiltonian $H$, the Schrödinger equation of standard quantum physics is
 
 $$
-i\hbar\,\partial/\partial t|\psi(t)\rangle = H\,|\psi(t)\rangle,
+i\hbar\,\partial/\partial t'|\psi(t')\rangle = H\,|\psi(t')\rangle,
 $$
 
-and for a density matrix $\rho$ the same dynamics reads $i\hbar\,\partial/\partial t\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
+and for a density matrix $\rho$ the same dynamics reads $i\hbar\,\partial/\partial t'\rho = [H,\rho]$. Both statements have biquaternion forms, and it matters which of the two one has in hand.
 
-The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the unitary biquaternion $\tilde{U}(t)$ obeying $i\hbar\,d\tilde{U}/dt = \tilde{H}\tilde{U}$ and the state equation $i\hbar\,d\tilde{Ϛ}/dt = [\tilde{H},\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t\psi = \tilde{H}\psi$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
+The companion article *Quantum Physics in Biquaternionic Form* treats the second form: it exhibits the unitary biquaternion $\tilde{U}(t')$ obeying $i\hbar\,d\tilde{U}/dt' = \tilde{H}\tilde{U}$ and the state equation $i\hbar\,d\tilde{Ϛ}/dt' = [\tilde{H},\tilde{Ϛ}]$ for $\tilde{Ϛ} \in \mathbb{M}_+$. It does **not** write the state-vector equation $i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi$, nor examine its symbol $i$. That is a difference of object rather than an oversight: the "states" of the framework are the elements of $\mathbb{M}_+$, i.e. density-matrix-like objects, whereas a wave function is something else. This article supplies the state-vector form and settles what its $i$ denotes.
 
 The question is not decorative. In and around the algebra $\mathbb{B}$ there are three distinct things commonly written with a symbol that squares to $-1$ or plays the role of $i$:
 
@@ -99,18 +99,18 @@ is the state module; in the matrix picture it is the space of matrices with only
 
 ### Why the wave function is not a generic element of $\mathbb{M}_+$
 
-The temptation is to let the "state" $\tilde{Ϛ} \in \mathbb{M}_+$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{M}_+$-valued solution — it does — but that $\mathbb{M}_+$ is not stable under the action of the observables. $\mathbb{M}_+$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{M}_-$), so for $\psi \in \mathbb{M}_+$ the product $\tilde{H}\psi$ need not lie in $\mathbb{M}_+$, and the equation $i\hbar\,\partial/\partial t\psi = \tilde{H}\psi$ does not define a flow on $\mathbb{M}_+$.
+The temptation is to let the "state" $\tilde{Ϛ} \in \mathbb{M}_+$ of the companion article also serve as the wave function. The obstacle is not that the equation admits no $\mathbb{M}_+$-valued solution — it does — but that $\mathbb{M}_+$ is not stable under the action of the observables. $\mathbb{M}_+$ is neither a subalgebra nor a left ideal of $\mathbb{B}$ (for example $(i\vec e_x)(i\vec e_y) = -\vec e_z \in \mathbb{M}_-$), so for $\psi \in \mathbb{M}_+$ the product $\tilde{H}\psi$ need not lie in $\mathbb{M}_+$, and the equation $i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi$ does not define a flow on $\mathbb{M}_+$.
 
-That solutions can exist is expected, because both sides can meet in $\mathbb{M}_-$: for $\psi \in \mathbb{M}_+$ the derivative $\partial/\partial t\psi$ lies in the real vector space $\mathbb{M}_+$, so $i\hbar\,\partial/\partial t\psi \in \mathbb{M}_-$ at every instant, and $\tilde{H}\psi$ need not be Hermitian. Take $\tilde{H} = i\,\vec e_x$ and
-
-$$
-\psi(t) = i\left(\cos\theta\,\vec e_y + \sin\theta\,\vec e_z\right), \qquad \theta = \frac{t}{\hbar}.
-$$
-
-Then $\psi^\dagger = \psi$, so $\psi$ is Hermitian at every $t$, and
+That solutions can exist is expected, because both sides can meet in $\mathbb{M}_-$: for $\psi \in \mathbb{M}_+$ the derivative $\partial/\partial t'\psi$ lies in the real vector space $\mathbb{M}_+$, so $i\hbar\,\partial/\partial t'\psi \in \mathbb{M}_-$ at every instant, and $\tilde{H}\psi$ need not be Hermitian. Take $\tilde{H} = i\,\vec e_x$ and
 
 $$
-i\hbar\,\partial/\partial t\psi = \sin\theta\,\vec e_y - \cos\theta\,\vec e_z = (i\,\vec e_x)\,\psi,
+\psi(t') = i\left(\cos\theta\,\vec e_y + \sin\theta\,\vec e_z\right), \qquad \theta = \frac{t'}{\hbar}.
+$$
+
+Then $\psi^\dagger = \psi$, so $\psi$ is Hermitian at every $t'$, and
+
+$$
+i\hbar\,\partial/\partial t'\psi = \sin\theta\,\vec e_y - \cos\theta\,\vec e_z = (i\,\vec e_x)\,\psi,
 $$
 
 so the equation holds. The Hermitian-valued unknown is not inconsistent.
@@ -130,11 +130,11 @@ which is Hermitian, positive, and trace one — an element of the Bloch ball, he
 With these objects separated, the equation reads
 
 $$
-i\hbar\,\partial/\partial t\psi(t) = \tilde{H}\,\psi(t),
+i\hbar\,\partial/\partial t'\psi(t') = \tilde{H}\,\psi(t'),
 \qquad
 \tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+,
 \qquad
-\psi(t) \in \mathbb{B}\tilde\Pi,
+\psi(t') \in \mathbb{B}\tilde\Pi,
 $$
 
 where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{H}i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde\Pi$ is a left ideal, $\tilde{H}\psi \in \mathbb{B}\tilde\Pi$, so the equation is consistent within the module.
@@ -142,31 +142,31 @@ where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{
 **Solution.** Since $-i\tilde{H} = -ih_te_t + \vec h$ and the scalar and vector parts commute,
 
 $$
-\tilde{U}(t) = \exp\!\left(-i\tilde{H}t/\hbar\right)
-= \exp(-ih_tt/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_h\right),
+\tilde{U}(t') = \exp\!\left(-i\tilde{H}t'/\hbar\right)
+= \exp(-ih_tt'/\hbar)\left(\cos\theta\,e_t + \sin\theta\,\vec u_h\right),
 \qquad
-\theta = \frac{|\vec h|t}{\hbar},
+\theta = \frac{|\vec h|t'}{\hbar},
 $$
 
-and $\psi(t) = \tilde{U}(t)\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_h$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t) = \tilde{U}\psi(0)$,
+and $\psi(t') = \tilde{U}(t')\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*} = e_t$: the central phase cancels and $R = \cos\theta\,e_t + \sin\theta\,\vec u_h$ is a unit real quaternion, $R R^{*} = e_t$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t') = \tilde{U}\psi(0)$,
 
 $$
-\mathrm{Tr}\!\left(\psi(t)^\dagger\psi(t)\right)
+\mathrm{Tr}\!\left(\psi(t')^\dagger\psi(t')\right)
 = \mathrm{Tr}\!\left(\psi(0)^\dagger \tilde{U}^{*}\tilde{U}\,\psi(0)\right)
 = \mathrm{Tr}\!\left(\psi(0)^\dagger\psi(0)\right).
 $$
 
-Differentiating the solution gives $i\hbar\,\partial/\partial t\psi = i\hbar(-i\tilde{H}/\hbar)\psi = \tilde{H}\psi$, so it is the required solution.
+Differentiating the solution gives $i\hbar\,\partial/\partial t'\psi = i\hbar(-i\tilde{H}/\hbar)\psi = \tilde{H}\psi$, so it is the required solution.
 
-**Case checked.** For $\tilde{H} = i\,\vec e_x$ one has $h_t = 0$, $\vec h = \vec e_x$, and $\tilde{U}(t) = \cos(t/\hbar)e_t + \sin(t/\hbar)\vec e_x$. Then $\tilde{U}(t)$ is unitary, and $\tilde{H}\tilde{U} = i \vec e_x(\cos(t/\hbar)e_t + \sin(t/\hbar)\vec e_x) = i\cos(t/\hbar)\vec e_x - i\sin(t/\hbar)e_t$ equals $i\hbar\,d\tilde{U}/dt = i(-\sin(t/\hbar)e_t + \cos(t/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
+**Case checked.** For $\tilde{H} = i\,\vec e_x$ one has $h_t = 0$, $\vec h = \vec e_x$, and $\tilde{U}(t') = \cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x$. Then $\tilde{U}(t')$ is unitary, and $\tilde{H}\tilde{U} = i \vec e_x(\cos(t'/\hbar)e_t + \sin(t'/\hbar)\vec e_x) = i\cos(t'/\hbar)\vec e_x - i\sin(t'/\hbar)e_t$ equals $i\hbar\,d\tilde{U}/dt' = i(-\sin(t'/\hbar)e_t + \cos(t'/\hbar)\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
-**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \psi\psi^\dagger$ and using $\partial/\partial t\psi = -i\tilde{H}\psi/\hbar$, $\partial/\partial t\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
+**Consistency with the density matrix.** The companion article's equation for $\tilde{Ϛ} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{Ϛ} = \psi\psi^\dagger$ and using $\partial/\partial t'\psi = -i\tilde{H}\psi/\hbar$, $\partial/\partial t'\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
 
 $$
-\partial/\partial t\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
+\partial/\partial t'\tilde{Ϛ} = -\frac{i}{\hbar}\tilde{H}\tilde{Ϛ} + \frac{i}{\hbar}\tilde{Ϛ}\tilde{H}
 = -\frac{i}{\hbar}[\tilde{H},\tilde{Ϛ}],
 \qquad\text{i.e.}\qquad
-i\hbar\,\partial/\partial t\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}],
+i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}],
 $$
 
 which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,
@@ -182,12 +182,12 @@ For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\v
 It is worth making precise why the obvious alternatives to $i$ fail. Suppose a root $J$ with $J^2 = -1$ is used in place of $i$:
 
 $$
-\hbar\,J\,\partial/\partial t\psi = \tilde{H}\psi
+\hbar\,J\,\partial/\partial t'\psi = \tilde{H}\psi
 \qquad\Longrightarrow\qquad
-\partial/\partial t\psi = -\frac{1}{\hbar}J\tilde{H}\,\psi,
+\partial/\partial t'\psi = -\frac{1}{\hbar}J\tilde{H}\,\psi,
 $$
 
-so the generator of the flow is $-\hbar^{-1}J\tilde{H}$. The flow preserves the Hermitian form, i.e. $\exp(-\hbar^{-1}tJ\tilde{H})$ is unitary, exactly when $-\hbar^{-1}J\tilde{H}$ is anti-Hermitian, which is the condition
+so the generator of the flow is $-\hbar^{-1}J\tilde{H}$. The flow preserves the Hermitian form, i.e. $\exp(-\hbar^{-1}t'J\tilde{H})$ is unitary, exactly when $-\hbar^{-1}J\tilde{H}$ is anti-Hermitian, which is the condition
 
 $$
 (J\tilde{H})^{*} = -J\tilde{H}
@@ -204,7 +204,7 @@ $$
 J\tilde{H} = \vec e_z\,(i \vec e_x) = i\,\vec e_z \vec e_x = i\,\vec e_y,
 $$
 
-using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}J\tilde{H} = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}tJ\tilde{H})$ is not unitary. Explicitly, at $t = \pi\hbar/2$,
+using $\vec e_z \vec e_x = \vec e_y$. Since $i\,\vec e_y$ is Hermitian, $(i\vec e_y)^{*} = i\vec e_y$, the generator $-\hbar^{-1}J\tilde{H} = -\hbar^{-1}i\,\vec e_y$ is Hermitian, not anti-Hermitian, and $\exp(-\hbar^{-1}t'J\tilde{H})$ is not unitary. Explicitly, at $t' = \pi\hbar/2$,
 
 $$
 \tilde{U}^{*}\tilde{U} = \exp\!\left(-i\pi \vec e_y\right)
@@ -222,7 +222,7 @@ There is a second defect in the non-central choice: because $\vec e_z \vec e_x =
 The equation can be rearranged into a statement that lives entirely in one sector at a time. Dividing by $i\hbar$,
 
 $$
-\partial/\partial t\psi = -\frac{i}{\hbar}\tilde{H}\psi,
+\partial/\partial t'\psi = -\frac{i}{\hbar}\tilde{H}\psi,
 \qquad
 -\frac{i}{\hbar}\tilde{H} = \frac{\vec h - i h_t e_t}{\hbar} \in \mathbb{M}_-.
 $$
@@ -238,13 +238,13 @@ $$
 \left([\tilde{H},\tilde{Ϛ}]\right)^\dagger = \tilde{Ϛ}\tilde{H} - \tilde{H}\tilde{Ϛ} = -[\tilde{H},\tilde{Ϛ}],
 $$
 
-so $[\tilde{H},\tilde{Ϛ}] \in \mathbb{M}_-$; and since $\tilde{Ϛ} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial t\tilde{Ϛ}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
+so $[\tilde{H},\tilde{Ϛ}] \in \mathbb{M}_-$; and since $\tilde{Ϛ} \in \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$, the term $i\hbar\,\partial/\partial t'\tilde{Ϛ}$ is also in $\mathbb{M}_-$. The von Neumann equation is thus an identity in a single sector, while its solution returns to the complementary one.
 
 A structural caution belongs here. The wave function $\psi$ itself is an element of the state module $\mathbb{B}\tilde\Pi$, not of either sector; it carries no $\mathbb{M}_\pm$ label. The decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ classifies Hermitian observables and anti-Hermitian generators, not state vectors. What returns to $\mathbb{M}_+$ is the bilinear object $\tilde{Ϛ} = \psi\psi^\dagger$, not $\psi$. Reading the sector labels onto the wave function is the same error as conflating the wave function with the density matrix.
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 
-**The relabelling.** Under $\mathbb{B} \cong M_2(\mathbb{C})$ with $\vec e_\mu \mapsto -i\sigma_\mu$, a spinor in $\mathbb{B}\tilde\Pi$ is a column vector in $\mathbb{C}^2$, the scalar imaginary is the standard imaginary unit, $\tilde{U}(t)$ is a standard element of $\mathrm{U}(2)$, and the equation is literally the two-component Schrödinger equation. Nothing is added for a single qubit beyond vocabulary: the biquaternion equation predicts exactly what the standard one predicts.
+**The relabelling.** Under $\mathbb{B} \cong M_2(\mathbb{C})$ with $\vec e_\mu \mapsto -i\sigma_\mu$, a spinor in $\mathbb{B}\tilde\Pi$ is a column vector in $\mathbb{C}^2$, the scalar imaginary is the standard imaginary unit, $\tilde{U}(t')$ is a standard element of $\mathrm{U}(2)$, and the equation is literally the two-component Schrödinger equation. Nothing is added for a single qubit beyond vocabulary: the biquaternion equation predicts exactly what the standard one predicts.
 
 **What is structural.** Three features are genuinely rearranged rather than merely renamed.
 
@@ -258,7 +258,7 @@ A structural caution belongs here. The wave function $\psi$ itself is an element
 
 ## Open Questions
 
-**1. The local complex structure.** The series makes the complex structure local: it is set by the medium through $c = 1/\sqrt{\epsilon\mu}$ and reduces to $ic_0t$ in vacuum. The scalar imaginary $i$ is a global central element of $\mathbb{B}$, and a central element cannot vary from point to point. Does the $i$ of the Schrödinger equation remain global, or does a local complex structure enter the state module? The relation between the two is unresolved.
+**1. The local complex structure.** The series makes the complex structure local: it is set by the medium through $c = 1/\sqrt{\epsilon\mu}$ and reduces to $ic_0t'$ in vacuum. The scalar imaginary $i$ is a global central element of $\mathbb{B}$, and a central element cannot vary from point to point. Does the $i$ of the Schrödinger equation remain global, or does a local complex structure enter the state module? The relation between the two is unresolved.
 
 **2. Many qubits.** The extension to $n$ qubits is via $\mathbb{B}^{\otimes n} \cong M_{2^n}(\mathbb{C})$. The companion article leaves the tensor product over $\mathbb{C}$ as an open question. If it is taken over $\mathbb{C}$, the scalar imaginary remains available as the complex structure; if not, the question of the imaginary unit returns in a new form.
 
@@ -273,12 +273,12 @@ A structural caution belongs here. The wave function $\psi$ itself is an element
 The Schrödinger equation in biquaternionic form is
 
 $$
-i\hbar\,\partial/\partial t\psi = \tilde{H}\psi,
+i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi,
 $$
 
 with $\tilde{H} = h_te_t + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
-The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.
+The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}]$.
 
 Using a non-central root $J$ in place of $i$ fails generically: the generator $-\hbar^{-1}J\tilde{H}$ need not be anti-Hermitian, so the flow is not unitary and the norm is not preserved (explicitly for $J = \vec e_z$, $\tilde{H} = i\vec e_x$). The scalar imaginary is the only choice, up to sign, that works for every Hermitian Hamiltonian.
 
@@ -292,14 +292,14 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, central, $i^2 = -e_t$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$; the centre |
-| $\mathbb{M}_+$ | Hermitian subspace (observables): $i\hbar\,\partial/\partial t\psi = \tilde{H}\psi$ has $\tilde{H} \in \mathbb{M}_+$ |
+| $\mathbb{M}_+$ | Hermitian subspace (observables): $i\hbar\,\partial/\partial t'\psi = \tilde{H}\psi$ has $\tilde{H} \in \mathbb{M}_+$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators): the generator is $-i\tilde{H}/\hbar \in \mathbb{M}_-$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
 | $\tilde{H} = h_te_t + i\vec h$ | Hermitian element (Hamiltonian) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Idempotent (pure state); $\vec u$ the state axis |
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\psi$ |
 | $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | Density matrix associated to a spinor |
-| $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Unitary evolution, $\psi(t) = \tilde{U}(t)\psi(0)$ |
+| $\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar)$ | Unitary evolution, $\psi(t') = \tilde{U}(t')\psi(0)$ |
 | $\mathrm{Tr}(\tilde\Pi_1(\vec u)\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}) = h_t + \vec u\cdot\vec h$ | Trace formula / Born rule |
 | $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$ | Quaternion multiplication |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

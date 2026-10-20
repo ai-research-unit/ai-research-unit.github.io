@@ -377,7 +377,7 @@ H = \tfrac{1}{2}\left(u\,v^{\dagger} + v\,u^{\dagger}\right) \;\in\; \mathbb{M}_
 V = iH \;\in\; \mathbb{M}_-,
 $$
 
-which is Hermitian for every pair and reduces to the outer product $u\,u^{\dagger}$ when $v = u$. The four-vector associated with the spinor pair is thus $iH$, which replaces the outer product $i\,uv^{\dagger}$ and agrees with it when the pair is (anti)parallel (up to the conventions of the $ict$ description). The map $S\otimes\bar{S}\to\mathbb{B}$, $u\otimes v^{\dagger}\mapsto uv^{\dagger}$, is an isomorphism of $SL(2,\mathbb{C})$-representations onto the algebra, while the four-vector representation is the real form of it carried by the Hermitian slice, and it realizes the vector representation as the tensor product of the two chiral halves,
+which is Hermitian for every pair and reduces to the outer product $u\,u^{\dagger}$ when $v = u$. The four-vector associated with the spinor pair is thus $iH$, which replaces the outer product $i\,uv^{\dagger}$ and agrees with it when the pair is (anti)parallel (up to the conventions of the $ict'$ description). The map $S\otimes\bar{S}\to\mathbb{B}$, $u\otimes v^{\dagger}\mapsto uv^{\dagger}$, is an isomorphism of $SL(2,\mathbb{C})$-representations onto the algebra, while the four-vector representation is the real form of it carried by the Hermitian slice, and it realizes the vector representation as the tensor product of the two chiral halves,
 
 $$
 \left(\tfrac{1}{2},\tfrac{1}{2}\right) = \left(\tfrac{1}{2},0\right)\otimes\left(0,\tfrac{1}{2}\right).

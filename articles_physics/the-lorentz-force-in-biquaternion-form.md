@@ -55,9 +55,9 @@ $$
 \tilde{K}_{\mathrm{f}} = i\,\frac{\gamma P_{\text{mech}}}{c}\,e_t + \gamma\,\vec f.
 $$
 
-This is the biquaternion transcription of the Minkowski force $K^\mu = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $ict$ convention, so the coefficient of $e_t$ is the $ict$ time component $K^0$.
+This is the biquaternion transcription of the Minkowski force $K^\mu = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $ict'$ convention, so the coefficient of $e_t$ is the $ict'$ time component $K^0$.
 
-**Origin in the field tensor.** The component form is the contraction $K^\mu = ϙ\,F^{\mu\nu}v_\nu$. In the $ict$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = v^\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
+**Origin in the field tensor.** The component form is the contraction $K^\mu = ϙ\,F^{\mu\nu}v_\nu$. In the $ict'$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = v^\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
 
 $$
 F^{\mu\nu} =
@@ -444,7 +444,7 @@ $$
 \frac{dP^\mu}{d\tau} = \frac{ϙ}{m}\,F^{\mu}{}_{\nu}P^\nu,
 $$
 
-so the proper-time motion is a superposition of exponentials whose rates are $(ϙ/m)$ times the eigenvalues of the field matrix $F^{\mu}{}_{\nu}$. In the $ict$ convention those eigenvalues are determined by the two invariants: the characteristic polynomial is
+so the proper-time motion is a superposition of exponentials whose rates are $(ϙ/m)$ times the eigenvalues of the field matrix $F^{\mu}{}_{\nu}$. In the $ict'$ convention those eigenvalues are determined by the two invariants: the characteristic polynomial is
 
 $$
 \det\!\left(\lambda\,\mathbb{1} - F\right)

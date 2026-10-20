@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Every result in the read-list articles is a statement about one fixed algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, evaluated at one point. The biquaternion norm, the rotor group, the rotor conjugation, the light cone as the zero-divisor set, the decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ — all of them are pointwise and flat. The wave equations written with them presuppose a global coordinate system $(ict,\,x,\,y,\,z)$ carrying a distinguished imaginary time.
+Every result in the read-list articles is a statement about one fixed algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, evaluated at one point. The biquaternion norm, the rotor group, the rotor conjugation, the light cone as the zero-divisor set, the decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ — all of them are pointwise and flat. The wave equations written with them presuppose a global coordinate system $(ict',\,x,\,y,\,z)$ carrying a distinguished imaginary time.
 
 This article is about what happens when the spacetime in which those equations are written is curved. It is not a report of a finished construction. Its subject is a boundary: what the flat machinery extends to, what a curved metric can be made to do inside the algebra, and where the programme stops.
 
@@ -52,7 +52,7 @@ requires four global coordinates, and requires in addition that the time directi
 
 **4. A global symmetry group.** The rotor group is the group of units of a fixed algebra. It is a global object. A curved manifold has no global group of that kind acting on it; what it has is a pointwise copy of the group at each point, if the frame is chosen.
 
-The framework is not silent about these limitations. *Introduction to the Biquaternion Universe* lists the extension to curved spacetime as an open question; *Why Complexify Spacetime?* observes that the $ict$ convention "is tied to the existence of a global inertial frame"; and *Electromagnetism in Media — The Local Complex Structure at Work* states the position precisely: the algebra is "fixed while its embedding in physical spacetime is not." That last clause is the one this article takes seriously, because an embedding that varies from point to point is exactly where curvature would have to live.
+The framework is not silent about these limitations. *Introduction to the Biquaternion Universe* lists the extension to curved spacetime as an open question; *Why Complexify Spacetime?* observes that the $ict'$ convention "is tied to the existence of a global inertial frame"; and *Electromagnetism in Media — The Local Complex Structure at Work* states the position precisely: the algebra is "fixed while its embedding in physical spacetime is not." That last clause is the one this article takes seriously, because an embedding that varies from point to point is exactly where curvature would have to live.
 
 ## Curvature Cannot Be Carried by the Algebra
 
@@ -60,7 +60,7 @@ An algebra has no points, so it cannot have a curvature. The statement is worth 
 
 Two forms of that map are available, and they are the two routes examined below:
 
-- a **scale** on the imaginary time axis, $ict \mapsto i\,c(x)\,t$, which is the framework's own local complex structure; and
+- a **scale** on the imaginary time axis, $ict' \mapsto i\,c(x)\,t'$, which is the framework's own local complex structure; and
 - a **frame**, $dx^\mu \mapsto \tilde{E}_\mu(x)\,dx^\mu$, which is the tetrad of the standard spinor formulation of general relativity.
 
 They are different devices, and it is a mistake to treat them as the same one. The first makes a piece of the embedding's scale local while leaving the frame rigid; the second makes the frame local while leaving every scale to the frame itself. The first is the framework's proposal and yields too little to be general relativity; the second yields everything kinematically and is no longer specifically biquaternionic.
@@ -71,37 +71,37 @@ Finally, a piece of representation-theoretic bookkeeping locates where the work 
 
 ## Route One: The Local Scale Factor
 
-The framework's own route to a local structure is the local complex structure. Its content is stated in *Introduction to the Biquaternion Universe* and developed in *Electromagnetism in Media — The Local Complex Structure at Work*. In a medium with permittivity $\epsilon$ and permeability $\mu$, the speed of light is $c = 1/\sqrt{\epsilon\mu}$, a property of the medium at each point. The material time coordinate is $ict$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the factor $c$; the imaginary unit $i$ is fixed by the algebra and only the real scale attached to the imaginary axis is local. In the gradient, this means
+The framework's own route to a local structure is the local complex structure. Its content is stated in *Introduction to the Biquaternion Universe* and developed in *Electromagnetism in Media — The Local Complex Structure at Work*. In a medium with permittivity $\epsilon$ and permeability $\mu$, the speed of light is $c = 1/\sqrt{\epsilon\mu}$, a property of the medium at each point. The material time coordinate is $ict'$, so the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the factor $c$; the imaginary unit $i$ is fixed by the algebra and only the real scale attached to the imaginary axis is local. In the gradient, this means
 
 $$
-\partial/\partial Q_t = -\frac{i}{c}\,\partial/\partial t .
+\partial/\partial Q_t = -\frac{i}{c}\,\partial/\partial t' .
 $$
 
-The framework's phrasing is that the complex structure is local "in the same spirit as the metric in general relativity", and that the $ict$ convention of Minkowski space is the vacuum limit $c \to c_0$ of a more general local structure.
+The framework's phrasing is that the complex structure is local "in the same spirit as the metric in general relativity", and that the $ict'$ convention of Minkowski space is the vacuum limit $c \to c_0$ of a more general local structure.
 
 It is at this point that a genuine ambiguity appears, and it should be stated before anything is computed from it.
 
 ### The Two Readings
 
-**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with the local $c$. Then $c$ is a function of position and
+**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with the local $c$. Then $c$ is a function of position and
 
 $$
-d(ict) = ic\,dt + i\,t\,dc,
+d(ict') = ic\,dt' + i\,t'\,dc,
 $$
 
-so the displacement biquaternion is $d\tilde{R} = i(c\,dt + t\,dc)e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = \langle d\tilde{R}\rangle_{\natural}$,
+so the displacement biquaternion is $d\tilde{R} = i(c\,dt' + t'\,dc)e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = \langle d\tilde{R}\rangle_{\natural}$,
 
 $$
-ds^2 = -c^2\,dt^2 - 2ct\,dt\,dc - t^2 (dc)^2 +dx^2+dy^2+dz^2
-= -c^2\,dt^2 - 2ct\,\partial/\partial Q_i c\,dt\,dx^i - t^2\,\partial/\partial Q_i c\,\partial/\partial Q_j c\,dx^i dx^j +dx^2+dy^2+dz^2 .
+ds^2 = -c^2\,d{t'}^2 - 2ct'\,dt'\,dc - {t'}^2 (dc)^2 +dx^2+dy^2+dz^2
+= -c^2\,d{t'}^2 - 2ct'\,\partial/\partial Q_i c\,dt'\,dx^i - {t'}^2\,\partial/\partial Q_i c\,\partial/\partial Q_j c\,dx^i dx^j +dx^2+dy^2+dz^2 .
 $$
 
-The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(t,x,y,z)$ — but it is **flat**. The map $(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \mapsto i\,c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(x^2+y^2+z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
+The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(t',x,y,z)$ — but it is **flat**. The map $(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \mapsto i\,c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(x^2+y^2+z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
 
-**Reading B, the derivative rule.** Take instead the framework's actual usage, in which $c$ enters through the operator $\partial/\partial Q_t = -(i/c)\partial/\partial t$ and the four-position is written with a single complex coordinate $ict$ rather than with a position-dependent coefficient. Equivalently, hold $c$ fixed in the differential: $d(ict) = ic\,dt$. Then
+**Reading B, the derivative rule.** Take instead the framework's actual usage, in which $c$ enters through the operator $\partial/\partial Q_t = -(i/c)\partial/\partial t'$ and the four-position is written with a single complex coordinate $ict'$ rather than with a position-dependent coefficient. Equivalently, hold $c$ fixed in the differential: $d(ict') = ic\,dt'$. Then
 
 $$
-ds^2 = -c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)^2\,dt^2 +dx^2+dy^2+dz^2,
+ds^2 = -c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)^2\,d{t'}^2 +dx^2+dy^2+dz^2,
 \qquad
 g_{\mu\nu} = \mathrm{diag}\left(-c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)^2,\ 1,\ 1,\ 1\right),
 $$
@@ -128,7 +128,7 @@ which is $+\tfrac{2}{3}$ at $x = \pi/2$ and vanishes at $x = 0$ and $x = \pi$.
 
 The class is narrow in a way that is easy to state: one free function of the spatial coordinates (or of time as well), no shift vector, and a flat three-metric on the spatial slices, $g_{ij} = \delta_{ij}$. It is the diagonal, spatially rigid sub-case of the frame route of the next section.
 
-Its decisive limitation is the following. Within this class, **Ricci-flatness forces flatness.** The condition $R_{ij} = 0$ requires $\partial^2/\partial Q_i\partial Q_j u = 0$ for every pair of spatial indices, so $u = \vec a(t)\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + b(t)$ is affine in the spatial coordinates; then $R_{00} = u\,\Delta u$ vanishes automatically, so this is the whole Ricci-flat family. And every member of that family is flat: for $u = \vec a(t)\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + b(t)$ with arbitrary functions $\vec a(t)$ and $b(t)$, the Riemann tensor vanishes identically, as direct symbolic computation of the general case confirms. The family is the algebra's way of writing a uniformly accelerated (Rindler-type) frame, and it is a reparametrisation of Minkowski space.
+Its decisive limitation is the following. Within this class, **Ricci-flatness forces flatness.** The condition $R_{ij} = 0$ requires $\partial^2/\partial Q_i\partial Q_j u = 0$ for every pair of spatial indices, so $u = \vec a(t')\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + b(t')$ is affine in the spatial coordinates; then $R_{00} = u\,\Delta u$ vanishes automatically, so this is the whole Ricci-flat family. And every member of that family is flat: for $u = \vec a(t')\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) + b(t')$ with arbitrary functions $\vec a(t')$ and $b(t')$, the Riemann tensor vanishes identically, as direct symbolic computation of the general case confirms. The family is the algebra's way of writing a uniformly accelerated (Rindler-type) frame, and it is a reparametrisation of Minkowski space.
 
 The consequence is worth stating plainly, in the restricted sense in which it holds. A metric that the local-scale route can write down at all cannot be a non-flat Ricci-flat spacetime. It therefore cannot carry a vacuum gravitational field with Weyl curvature, and so it cannot carry a vacuum gravitational wave or a vacuum black-hole exterior. This is a statement about a metric class, not a theorem about the biquaternion programme — but it is enough to show that the local scale factor of the imaginary time axis is not the route by which general relativity will enter the framework.
 
@@ -141,7 +141,7 @@ c=c_0 f(r),\qquad f(r)=\exp(-r_s/(2r)),\qquad r_s=\frac{2GM}{c_0^2},
 $$
 
 $$
-ds^2=-f(r)^2 c_0^2\,dt^2+\frac{dr^2+r^2\,d\Omega^2}{f(r)^2}.
+ds^2=-f(r)^2 c_0^2\,d{t'}^2+\frac{dr^2+r^2\,d\Omega^2}{f(r)^2}.
 $$
 
 The profile agrees with the local-scale route's $c^2=c_0^2(1-r_s/r)$ to first order in $r_s/r$; the inverse squaring of the spatial part is a separate posit, and it is what removes the no-go above. Truncated at first order, $f^2=1-r_s/r$, this metric **is** the Schwarzschild exterior and is exactly Ricci-flat — direct computation gives $R_{\mu\nu}=0$ — and the classical tests the paper then computes are those of that truncated metric. At the profile the author actually derives, $f^2=\exp(-r_s/r)$, the same computation returns a non-vanishing Ricci tensor, with $R_{11}=-r_s^2/(2r^4)$ in the corpus's curvature convention and a Ricci scalar of order $r_s^3/r^5$, both vanishing as $r\to\infty$. The metric the model itself supplies is therefore **not** a vacuum solution of Einstein's equations, and the Schwarzschild metric is its first-order truncation, differing from it at order $(r_s/r)^2$. The instance matters twice over. It shows that the wider class does contain non-flat Ricci-flat members, which answers the question the class raises; and it shows that the member is selected by the frame field and by the fitted profile, both inserted to match Newton's law, not by the algebra. (The programme's one prediction not shared with general relativity is a screening of the static field, sized in *The Empirical Status of the Biquaternion Framework*.)
@@ -463,7 +463,7 @@ Read further, the local complex structure is an **emergent metric** in the sense
 
 The read-list machinery is flat and pointwise: one fixed algebra, one fixed biquaternion norm with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
 
-The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde{R} = i\,c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial/\partial Q_t = -(i/c)\partial/\partial t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = u\Delta u$, $R_{0i} = 0$, $R_{ij} = -\partial^2/\partial Q_i\partial Q_j u / u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
+The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde{R} = i\,c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial/\partial Q_t = -(i/c)\partial/\partial t'$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = u\Delta u$, $R_{0i} = 0$, $R_{ij} = -\partial^2/\partial Q_i\partial Q_j u / u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
 
 Within the second interpretation's class — one function, no shift, flat spatial slices — Ricci-flatness forces $u$ to be affine in the spatial coordinates, and every such metric is flat. The class therefore contains no non-flat vacuum geometry: no Weyl curvature, no gravitational waves, no black-hole exteriors. The local scale factor is not the route to general relativity. Nor is it the same object as the metric: $c$ is the Maxwell speed of a medium, and the standard effective metric of a dielectric is a metric for light, not for free fall.
 
@@ -488,7 +488,7 @@ What is missing is not a technical detail but the theory. Nothing determines the
 | $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
-| $ict$ | Local imaginary time coordinate, material sector |
+| $ict'$ | Local imaginary time coordinate, material sector |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Biquaternionic gradient (needs a global chart) |
 | $\tilde{E}_\mu(x) \in \mathbb{M}_-$ | Frame field (tetrad): $d\tilde{R} = \tilde{E}_\mu dx^\mu$ |
 | $g_{\mu\nu} = \langle \tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | Metric carried by the frame field |

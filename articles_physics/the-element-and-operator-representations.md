@@ -46,15 +46,15 @@ The count of the parameters is the same in every picture: four complex coefficie
 The four-vector picture is the one that carries the dictionary. The four complex coefficients are not four independent physical coordinates: each coefficient holds one material and one informational coordinate. In the conventions of the corpus,
 
 $$
-Q^t = c t' + i c t, \qquad Q^x = x + i x', \qquad Q^y = y + i y', \qquad Q^z = z + i z'.
+Q^t = c t + i c t', \qquad Q^x = x + i x', \qquad Q^y = y + i y', \qquad Q^z = z + i z'.
 $$
 
 The real part of the scalar coefficient is the informational time and the imaginary part is the material time; each vector coefficient carries one material and one informational spatial coordinate.
 
 | Sector | Condition on the coefficients | Four-vector | Physical object |
 | --- | --- | --- | --- |
-| Material $\mathbb{M}_-$ | $Q_t$ purely imaginary, $Q_k$ real | $(i c t, x, y, z)$ | four-position, four-momentum, four-velocity |
-| Informational $\mathbb{M}_+$ | $Q_t$ real, $Q_k$ purely imaginary | $(c t', i x', i y', i z')$ | state, observable, field strength |
+| Material $\mathbb{M}_-$ | $Q_t$ purely imaginary, $Q_k$ real | $(i c t', x, y, z)$ | four-position, four-momentum, four-velocity |
+| Informational $\mathbb{M}_+$ | $Q_t$ real, $Q_k$ purely imaginary | $(c t, i x', i y', i z')$ | state, observable, field strength |
 | Real quaternion $\mathbb{H}_{\mathbb{B}}$ | all four coefficients real | $(q_t, q_x, q_y, q_z)$ | rotor, scale, ordinary quaternion |
 
 The split is a reading and not a theorem of the algebra. What the algebra supplies is the Hermitian conjugation ${}^{*}$, whose fixed and anti-fixed subspaces are the two sectors; the identification of the anti-fixed subspace with the material four-vectors and of the fixed one with the informational objects is the physical hypothesis of the framework. The dictionary is consistent because the norm restricts to the Minkowski interval on $\mathbb{M}_-$ and to its negative on $\mathbb{M}_+$.

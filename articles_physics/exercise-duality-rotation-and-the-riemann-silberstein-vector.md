@@ -62,7 +62,7 @@ $$
 = (\cos\theta - i\sin\theta)\left(\vec E + ic\vec B\right)
 = \exp(-i\theta)\,\vec N .
 $$
-The phase is the scalar imaginary $i$ of the algebra, the same $i$ that appears in $ict$; it is central, so it commutes with the quaternion units.
+The phase is the scalar imaginary $i$ of the algebra, the same $i$ that appears in $ict'$; it is central, so it commutes with the quaternion units.
 
 **Solution (c).** The field-strength biquaternion is $\tilde F = i\sqrt{\epsilon}\vec N$, so part (b) gives immediately
 $$
@@ -162,23 +162,23 @@ Directly, $I_{1,\mathrm D} = \vec E_{\mathrm D}^2 - \vec B_{\mathrm D}^2 = \frac
 
 *Null plane wave.* Take a plane wave in the medium,
 $$
-\vec E = E_0\cos(kz-\omega t)\,\vec u_x,
+\vec E = E_0\cos(kz-\omega t')\,\vec u_x,
 \qquad
-\vec B = \frac{E_0}{c}\cos(kz-\omega t)\,\vec u_y,
+\vec B = \frac{E_0}{c}\cos(kz-\omega t')\,\vec u_y,
 \qquad
 k = \frac{\omega}{c}.
 $$
 It has $I_1 = \vec E^2 - c^2\vec B^2 = 0$ and $I_2 = \vec E\cdot\vec B = 0$, so $\langle\tilde F\rangle_{\natural}=0$: it is a null field, and the pair $(I_1,2cI_2)$ is the zero pair, which any rotation fixes. The Riemann–Silberstein vector is
 $$
-\vec N = E_0\cos(kz-\omega t)\left(\vec u_x + i\vec u_y\right),
+\vec N = E_0\cos(kz-\omega t')\left(\vec u_x + i\vec u_y\right),
 $$
 and duality gives
 $$
 \vec N_{\mathrm D} = \exp(-i\theta)\vec N,
 \qquad
-\vec E_{\mathrm D} = E_0\cos(kz-\omega t)\left(\cos\theta\,\vec u_x + \sin\theta\,\vec u_y\right),
+\vec E_{\mathrm D} = E_0\cos(kz-\omega t')\left(\cos\theta\,\vec u_x + \sin\theta\,\vec u_y\right),
 \qquad
-\vec B_{\mathrm D} = \frac{E_0}{c}\cos(kz-\omega t)\left(\cos\theta\,\vec u_y - \sin\theta\,\vec u_x\right).
+\vec B_{\mathrm D} = \frac{E_0}{c}\cos(kz-\omega t')\left(\cos\theta\,\vec u_y - \sin\theta\,\vec u_x\right).
 $$
 The wave remains a null plane wave with the same $W$ and the same $\vec S = cW\vec u_z$; the duality rotation simply rotates the direction of linear polarization. This is the second case that was not used to suggest the general invariant formula, and it agrees with it.
 
@@ -188,9 +188,9 @@ The wave remains a null plane wave with the same $W$ and the same $\vec S = cW\v
 
 **Solution (a).** The source-free Maxwell equations in a homogeneous medium are
 $$
-\mathrm{rot}\,\vec E = -\partial/\partial t\vec B,
+\mathrm{rot}\,\vec E = -\partial/\partial t'\vec B,
 \qquad
-\mathrm{rot}\,\vec B = c^{-2}\,\partial/\partial t\vec E,
+\mathrm{rot}\,\vec B = c^{-2}\,\partial/\partial t'\vec E,
 \qquad
 \mathrm{div}\,\vec E = 0,
 \qquad
@@ -199,17 +199,17 @@ $$
 Substituting the duality transformation and using $c^2 = 1/(\epsilon\mu)$,
 $$
 \mathrm{rot}\,\vec E_{\mathrm D} = \mathrm{rot}\,\vec E\cos\theta + c\,\mathrm{rot}\,\vec B\sin\theta
-= -\partial/\partial t\vec B\cos\theta + c\left(c^{-2}\partial/\partial t\vec E\right)\sin\theta
-= -\partial/\partial t\left(\vec B\cos\theta - \frac{1}{c}\vec E\sin\theta\right)
-= -\partial/\partial t\vec B_{\mathrm D},
+= -\partial/\partial t'\vec B\cos\theta + c\left(c^{-2}\partial/\partial t'\vec E\right)\sin\theta
+= -\partial/\partial t'\left(\vec B\cos\theta - \frac{1}{c}\vec E\sin\theta\right)
+= -\partial/\partial t'\vec B_{\mathrm D},
 $$
 and similarly
 $$
 \mathrm{rot}\,\vec B_{\mathrm D} = \mathrm{rot}\,\vec B\cos\theta - \frac{1}{c}\mathrm{rot}\,\vec E\sin\theta
-= c^{-2}\partial/\partial t\vec E\cos\theta + \frac{1}{c}\partial/\partial t\vec B\sin\theta
-= c^{-2}\partial/\partial t\vec E_{\mathrm D} .
+= c^{-2}\partial/\partial t'\vec E\cos\theta + \frac{1}{c}\partial/\partial t'\vec B\sin\theta
+= c^{-2}\partial/\partial t'\vec E_{\mathrm D} .
 $$
-The divergence equations are preserved because the rotation is orthogonal and $\mathrm{div}$ is linear. So duality is a one-parameter symmetry of the source-free system. (It is also a symmetry of the Riemann–Silberstein equation $i\partial/\partial t\vec N = c\,\mathrm{rot}\,\vec N$ and of $\mathrm{div}\,\vec N = 0$, since the phase is constant.)
+The divergence equations are preserved because the rotation is orthogonal and $\mathrm{div}$ is linear. So duality is a one-parameter symmetry of the source-free system. (It is also a symmetry of the Riemann–Silberstein equation $i\partial/\partial t'\vec N = c\,\mathrm{rot}\,\vec N$ and of $\mathrm{div}\,\vec N = 0$, since the phase is constant.)
 
 **One normalization point**, because it is easy to misread this as a vacuum-only statement. The rotation above carries the factor $c$ of the medium in the second term, which is the same as rescaling the magnetic field by the medium impedance, $c\vec B = Z\vec H$ with $Z = \sqrt{\mu/\epsilon}$. If instead one uses the *vacuum* normalization $\vec E\mapsto\vec E\cos\theta + \vec H\sin\theta$, with no factor $Z$, the computation above fails unless $Z = 1$, that is, unless the medium is **impedance matched**, $\epsilon = \mu$ in the units used. Both halves were checked by recomputation on random plane waves of a homogeneous medium ($\epsilon,\mu$ logarithmically uniform over three decades, arbitrary propagation direction and polarization, arbitrary angle): the impedance-rescaled rotation preserves all four equations ($3.6\times10^{-15}$), the unrescaled one does not ($1.7\times10^{1}$) and is exact again at $\epsilon = \mu$ ($3.6\times10^{-15}$). The rescaling is therefore part of the statement of the symmetry and not a free choice of units. It is also why $\vec E\leftrightarrow\vec H$ with $\epsilon\leftrightarrow\mu$ is the medium's *exact* substitution symmetry below: that discrete operation restores $Z$, whereas the continuous rotation must carry it from the outset.
 
@@ -340,7 +340,7 @@ The boost is therefore reproduced by $\tilde U^{-1}\tilde F\tilde U$, while the 
 
 4. **Duality and the invariant classification.** Show that duality preserves the type of the field (null, electric, magnetic, generic) determined by $(I_1,I_2)$ in the parent's classification, and compute the orbit of the generic magnitudes $(E_0,B_0)$ under the doubled-angle rotation. Identify the duality angle that maps a purely electric field to a purely magnetic one, and the angle that leaves a given non-null field's type but reverses the sign of $I_1$.
 
-5. **The complexified field.** Extend the duality rotation to a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb C$, and show that $\exp(-i\theta)$ remains a symmetry of the complexified equation $\tilde\nabla\tilde F = 0$. Determine how the two independent complex structures — the $i$ of duality and the $i$ of the $ict$ gradient — are related in the complexified setting.
+5. **The complexified field.** Extend the duality rotation to a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb C$, and show that $\exp(-i\theta)$ remains a symmetry of the complexified equation $\tilde\nabla\tilde F = 0$. Determine how the two independent complex structures — the $i$ of duality and the $i$ of the $ict'$ gradient — are related in the complexified setting.
 
 6. **Duality and a deformed arena.** Everything above is a symmetry of Maxwell's equations in a linear *medium*, that is, in a commutative arena with a linear constitutive relation. Show that the rotation is not a symmetry when the coordinates cease to commute. The companion article *Maxwell's Theory on Non-Commutative Spaces and Quaternions* records exactly this for a fixed antisymmetric background $\vec\theta$: the potentials keep their form, but the dual transformation is broken by the $\vec\theta$-terms, and the breaking vanishes when $\vec\theta\to0$. Since the rotation is linear in the fields and the deformed equations are not, two questions follow. Is broken duality a *diagnostic* of the non-linearity, and could a non-linear theory retain the symmetry? The corpus's answer matters because it currently uses duality as a test of the arena and not of the dynamics.
 

@@ -14,13 +14,13 @@ is a **central scalar** element of the algebra: the d'Alembertian $\Box=\tilde{\
 
 The article is organized as follows. The operator, its convention and its defining equation are stated first, together with the momentum-space amplitude and the sign conventions. The poles and the four standard prescriptions are then identified. The retarded Green's function is derived in position space from its Fourier representation: the frequency contour is done exactly, the angular integral is reduced by a hyperbolic rotation to a Bessel function, and the closed form is exhibited and checked against the homogeneous equation. The light-cone Jacobian that converts the invariant kernel into the retarded-time kernel is exhibited, and the massless limit is compared with the retarded kernel of the electromagnetism exercise. The advanced kernel, the boundary condition that selects the retarded one, and the Pauli–Jordan function are then treated, with microcausality verified. The Feynman propagator, its contour, its time-ordered interpretation and its Euclidean form are given. A closing section states the biquaternion interpretation of the whole construction, and open questions are recorded.
 
-Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$; central $i$; $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$; $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$; and the series d'Alembertian
+Throughout, the series conventions are used: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}\vec e_l$; central $i$; $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$; $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$; and the series d'Alembertian
 
 $$
 \Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2 .
 $$
 
-The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quantity that multiplies the field in the c-explicit equation; for the analytic parts the article uses natural units $\hbar=c=1$, as the companion article *The Feynman Propagator in Biquaternionic Form* does, and states the restoration of $c$ where a kernel is quoted. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$. No Clifford metric is used anywhere in this article, and no gamma matrix appears.
+The mass parameter is $\mu=mc/\hbar$, so that $\mu^2=m^2c^2/\hbar^2$ is the quantity that multiplies the field in the c-explicit equation; for the analytic parts the article uses natural units $\hbar=c=1$, as the companion article *The Feynman Propagator in Biquaternionic Form* does, and states the restoration of $c$ where a kernel is quoted. The signature conventions are level 1 and level 2 only: the biquaternion norm on $\mathbb{C}$ and the $ict'$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$. No Clifford metric is used anywhere in this article, and no gamma matrix appears.
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the equation, its mass term, and the central scalar d'Alembertian.
 - Companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
@@ -46,12 +46,12 @@ and because both $\Box$ and the mass term are central and scalar, the equation i
 $$
 \tilde P=i\frac{\omega}{c}e_t+\vec k\in\mathbb{M}_-,
 \qquad
-\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,
+\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,
 \qquad
-\mathrm{Sc}(\tilde P\tilde{R}^{\natural})=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t,
+\mathrm{Sc}(\tilde P\tilde{R}^{\natural})=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t',
 $$
 
-the operator has the symbol obtained from $\partial/\partial t\,\to-i\omega$, so that $\partial/\partial Q_t\,\to-\omega/c$, together with $\partial/\partial Q_k\,\to ik_k$:
+the operator has the symbol obtained from $\partial/\partial t'\,\to-i\omega$, so that $\partial/\partial Q_t\,\to-\omega/c$, together with $\partial/\partial Q_k\,\to ik_k$:
 
 $$
 \Box\;\longmapsto\;\frac{\omega^2}{c^2}-\vec k^2,
@@ -74,16 +74,16 @@ A Green's function of the Klein–Gordon operator is a distributional inverse. T
 $$
 \boxed{\;\left(\Box-\mu^2\right)G(\tilde{R})=-\delta^{(4)}(\tilde{R}),
 \qquad
-\delta^{(4)}(\tilde{R})=\delta(t)\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\;}
+\delta^{(4)}(\tilde{R})=\delta(t')\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\;}
 $$
 
-with the physical measure $d^3y\,dt_2$ over the source point $\tilde R_2$ for the convolution, exactly as the companion exercise *The Retarded Potentials and the Green's Function* fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-\mu^2)G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $\mu=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(t-R/c)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.
+with the physical measure $d^3y\,dt'_2$ over the source point $\tilde R_2$ for the convolution, exactly as the companion exercise *The Retarded Potentials and the Green's Function* fixes it for the massless operator. The sign is not physical: reversing it, $(\Box-\mu^2)G=+\delta^{(4)}$, is compensated by a minus in the convolution, and an overall constant factor in $G$ never changes the pole structure or the support. It is fixed here so that at $\mu=0$ the retarded kernel is the exercise's $G_{\mathrm{ret}}=\frac{1}{4\pi R}\delta(t'-R/c)$ with no extra sign, and so that the mass term enters with the same sign as in the equation.
 
-A second convention is fixed at the same time: the whole article works with the operator $\Box-\mu^2$ and never with $-\Box+\mu^2$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$, the defining equation becomes
+A second convention is fixed at the same time: the whole article works with the operator $\Box-\mu^2$ and never with $-\Box+\mu^2$, so that the momentum-space amplitude carries no compensating minus. With the measure $d^4p=d^3p\,d\omega$ and the phase $\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$, the defining equation becomes
 
 $$
-\int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-\mu^2\right)G(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))
-=-\int\frac{d^4p}{(2\pi)^4}\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)),
+\int\frac{d^4p}{(2\pi)^4}\left(\omega^2-\vec p^2-\mu^2\right)G(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))
+=-\int\frac{d^4p}{(2\pi)^4}\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')),
 $$
 
 so the amplitude is
@@ -120,25 +120,25 @@ The displacement was checked explicitly. Writing $\delta=\epsilon/(2\Omega_{\vec
 
 ### The contour integral
 
-The frequency integral is elementary and is used repeatedly. For the retarded displacement $\omega\to\omega+i\epsilon$, the poles lie in the lower half-plane. For $t>0$ the exponential $\exp(-i\omega t)$ forces the contour to close below, and the two residues combine into
+The frequency integral is elementary and is used repeatedly. For the retarded displacement $\omega\to\omega+i\epsilon$, the poles lie in the lower half-plane. For $t'>0$ the exponential $\exp(-i\omega t')$ forces the contour to close below, and the two residues combine into
 
 $$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\omega t)}{\vec p^2+\mu^2-(\omega+i\epsilon)^2}
-=\theta(t)\,\frac{\sin(\Omega_{\vec p}t)}{\Omega_{\vec p}},
+\frac{\exp(-i\omega t')}{\vec p^2+\mu^2-(\omega+i\epsilon)^2}
+=\theta(t')\,\frac{\sin(\Omega_{\vec p}t')}{\Omega_{\vec p}},
 \qquad
 \Omega_{\vec p}=\sqrt{\vec p^2+\mu^2},
 $$
 
-while for $t<0$ the contour closes above and the integral vanishes. The result is the statement that the retarded kernel has support only in the future. For the advanced displacement the same computation with $t\to-t$ gives $-\theta(-t)\sin(\Omega_{\vec p}t)/\Omega_{\vec p}$, supported only in the past. For the Feynman displacement the two poles sit on opposite sides, both contribute at $t>0$ and at $t<0$, and the result is the symmetric combination
+while for $t'<0$ the contour closes above and the integral vanishes. The result is the statement that the retarded kernel has support only in the future. For the advanced displacement the same computation with $t'\to-t'$ gives $-\theta(-t')\sin(\Omega_{\vec p}t')/\Omega_{\vec p}$, supported only in the past. For the Feynman displacement the two poles sit on opposite sides, both contribute at $t'>0$ and at $t'<0$, and the result is the symmetric combination
 
 $$
 \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\,
-\frac{\exp(-i\omega t)}{\vec p^2+\mu^2-\omega^2-i\epsilon}
-=\frac{i}{2\Omega_{\vec p}}\,\exp(-i\Omega_{\vec p}|t|),
+\frac{\exp(-i\omega t')}{\vec p^2+\mu^2-\omega^2-i\epsilon}
+=\frac{i}{2\Omega_{\vec p}}\,\exp(-i\Omega_{\vec p}|t'|),
 $$
 
-which is the frequency-space form of the time-ordered two-point function: the two poles are displaced to opposite sides, both contribute, and the result is even in $t$ and built from the positive-frequency phase $\exp(-i\Omega_{\vec p}|t|)$. The three results were confirmed by evaluating the contour sums directly.
+which is the frequency-space form of the time-ordered two-point function: the two poles are displaced to opposite sides, both contribute, and the result is even in $t'$ and built from the positive-frequency phase $\exp(-i\Omega_{\vec p}|t'|)$. The three results were confirmed by evaluating the contour sums directly.
 
 ## The Retarded Green's Function in Position Space
 
@@ -147,15 +147,15 @@ which is the frequency-space form of the time-ordered two-point function: the tw
 Assembling the frequency integral with the spatial measure gives the retarded kernel in position space,
 
 $$
-G_R(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
-=\theta(t)\int\frac{d^3p}{(2\pi)^3}\,
-\frac{\sin(\Omega_{\vec p}t)}{\Omega_{\vec p}}\,\exp(i\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
+G_R(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+=\theta(t')\int\frac{d^3p}{(2\pi)^3}\,
+\frac{\sin(\Omega_{\vec p}t')}{\Omega_{\vec p}}\,\exp(i\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
 $$
 
 a **superposition of on-shell plane waves** with the relativistic phase velocity; this is the representation in which every claim below is checked. For a source $J(\tilde R_2)$ the convolution
 
 $$
-\tilde{\Phi}(\tilde{R})=\int G_R(\tilde{R}-\tilde R_2)\,J(\tilde R_2)\,d^3y\,dt_2
+\tilde{\Phi}(\tilde{R})=\int G_R(\tilde{R}-\tilde R_2)\,J(\tilde R_2)\,d^3y\,dt'_2
 $$
 
 then solves $(\Box-\mu^2)\tilde{\Phi}=-J$, by the same translation-invariance argument as in the massless exercise.
@@ -172,9 +172,9 @@ $$
 the retarded kernel becomes the single radial integral
 
 $$
-G_R(t,r)
-=\theta(t)\,\frac{1}{2\pi^2 r}\int_0^\infty dp\,
-p\,\frac{\sin(\Omega_p t)}{\Omega_p}\,\sin(pr),
+G_R(t',r)
+=\theta(t')\,\frac{1}{2\pi^2 r}\int_0^\infty dp\,
+p\,\frac{\sin(\Omega_p t')}{\Omega_p}\,\sin(pr),
 \qquad
 \Omega_p=\sqrt{p^2+\mu^2}.
 $$
@@ -186,18 +186,18 @@ $$
 \qquad
 pr=\mu r\sinh u,
 \qquad
-\Omega_p t=\mu t\cosh u .
+\Omega_p t'=\mu t'\cosh u .
 $$
 
 The radial integral is therefore a Laplace-type Bessel integral. Since $\sin(\mu r\sinh u)\sinh u=-\frac{1}{\mu}\frac{d}{dr}\cos(\mu r\sinh u)$,
 
 $$
-G_R(t,r)
-=-\theta(t)\,\frac{1}{2\pi^2 r}\,\frac{d}{dr}\int_0^\infty du\,
-\sin(\mu t\cosh u)\cos(\mu r\sinh u).
+G_R(t',r)
+=-\theta(t')\,\frac{1}{2\pi^2 r}\,\frac{d}{dr}\int_0^\infty du\,
+\sin(\mu t'\cosh u)\cos(\mu r\sinh u).
 $$
 
-The remaining integral is evaluated by a hyperbolic rotation. With $a=\mu t$, $b=\mu r$ and $a>b>0$ (the future cone), set $a=R\cosh\gamma$, $b=R\sinh\gamma$ with $R=\sqrt{a^2-b^2}$. Then $a\cosh u\pm b\sinh u=R\cosh(u\pm\gamma)$, so the product-to-sum identity turns the integrand into a sum of two shifted copies of $\sin(R\cosh v)$, and the two shifts combine into the convergent representation of the Bessel function:
+The remaining integral is evaluated by a hyperbolic rotation. With $a=\mu t'$, $b=\mu r$ and $a>b>0$ (the future cone), set $a=R\cosh\gamma$, $b=R\sinh\gamma$ with $R=\sqrt{a^2-b^2}$. Then $a\cosh u\pm b\sinh u=R\cosh(u\pm\gamma)$, so the product-to-sum identity turns the integrand into a sum of two shifted copies of $\sin(R\cosh v)$, and the two shifts combine into the convergent representation of the Bessel function:
 
 $$
 \int_0^\infty du\,\sin(a\cosh u)\cos(b\sinh u)
@@ -213,17 +213,17 @@ This is the standard integral representation $J_0(z)=\frac{2}{\pi}\int_0^\infty\
 Differentiating the Bessel integral with respect to $r$ and using $\frac{dJ_0}{dz}(z)=-J_1(z)$ gives
 
 $$
-\frac{d}{dr}J_0\!\left(\mu\sqrt{t^2-r^2}\right)
-=\frac{\mu r}{\sqrt{t^2-r^2}}\,J_1\!\left(\mu\sqrt{t^2-r^2}\right),
+\frac{d}{dr}J_0\!\left(\mu\sqrt{{t'}^2-r^2}\right)
+=\frac{\mu r}{\sqrt{{t'}^2-r^2}}\,J_1\!\left(\mu\sqrt{{t'}^2-r^2}\right),
 $$
 
-so that, writing $-x^2=t^2-r^2$ for the squared invariant (positive inside the future cone),
+so that, writing $-x^2={t'}^2-r^2$ for the squared invariant (positive inside the future cone),
 
 $$
-G_R^{\,\mathrm{reg}}(t,r)
-=-\theta(t)\,\frac{\mu}{4\pi\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right),
+G_R^{\,\mathrm{reg}}(t',r)
+=-\theta(t')\,\frac{\mu}{4\pi\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right),
 \qquad
--x^2=t^2-r^2>0 .
+-x^2={t'}^2-r^2>0 .
 $$
 
 This is the **volume term**: it is the contribution from the interior of the cone. On the cone itself the kernel acquires a delta function, and the complete retarded Green's function is
@@ -231,34 +231,34 @@ This is the **volume term**: it is the contribution from the interior of the con
 $$
 \boxed{\;
 G_R(\tilde{R})
-=\frac{\theta(t)}{2\pi}\left[\delta(x^2)
+=\frac{\theta(t')}{2\pi}\left[\delta(x^2)
 -\frac{\mu}{2\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right]\;},
 \qquad
-x^2=-t^2+\vec r^2,
+x^2=-{t'}^2+\vec r^2,
 $$
 
-in natural units, with the Bessel term restricted to the interior of the cone by $\theta(-x^2)$. The delta term is the massless kernel, and the Bessel term is the massive correction; the correction does not vanish on the cone but tends there to the finite value $-\mu^2/(8\pi)\,\theta(t)$, since $J_1(z)\sim z/2$ as $z\to0$ makes $\mu J_1(\mu\sqrt{-x^2})/(2\sqrt{-x^2})\to\mu^2/4$. The kernel's only singular part is therefore the delta on the cone, and the volume term is bounded on it.
+in natural units, with the Bessel term restricted to the interior of the cone by $\theta(-x^2)$. The delta term is the massless kernel, and the Bessel term is the massive correction; the correction does not vanish on the cone but tends there to the finite value $-\mu^2/(8\pi)\,\theta(t')$, since $J_1(z)\sim z/2$ as $z\to0$ makes $\mu J_1(\mu\sqrt{-x^2})/(2\sqrt{-x^2})\to\mu^2/4$. The kernel's only singular part is therefore the delta on the cone, and the volume term is bounded on it.
 
 Three checks were carried out on this closed form.
 
-1. **Massless limit.** As $\mu\to0$ the Bessel term vanishes and only $\frac{\theta(t)}{2\pi}\delta(x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(t-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(t-R/c)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $\mu=10^{-3}$.
-2. **The homogeneous equation.** Inside the cone the Bessel form must satisfy $(\Box-\mu^2)G_R^{\mathrm{reg}}=0$, because the only source is at the origin. Evaluating the radial d'Alembertian $-\partial^2/\partial t^2+\partial^2/\partial r^2+\frac{2}{r}\partial/\partial r-\mu^2$ by finite differences at six random interior points with $t\in[2.5,4]$, $r/t\in[0.2,0.85]$ and $\mu\in[0.4,1.5]$, the greatest residual was $1.1\times 10^{-9}$, against an amplitude of order $10^{-2}$.
+1. **Massless limit.** As $\mu\to0$ the Bessel term vanishes and only $\frac{\theta(t')}{2\pi}\delta(x^2)$ remains. Converting the invariant delta to a radial delta by the light-cone Jacobian below gives $\frac{1}{4\pi r}\delta(t'-r)$, which is exactly the retarded kernel $\frac{1}{4\pi R}\delta(t'-R/c)$ of the electromagnetism exercise at $c=1$. The limit was verified numerically for $\mu=10^{-3}$.
+2. **The homogeneous equation.** Inside the cone the Bessel form must satisfy $(\Box-\mu^2)G_R^{\mathrm{reg}}=0$, because the only source is at the origin. Evaluating the radial d'Alembertian $-\partial^2/\partial {t'}^2+\partial^2/\partial r^2+\frac{2}{r}\partial/\partial r-\mu^2$ by finite differences at six random interior points with $t'\in[2.5,4]$, $r/t'\in[0.2,0.85]$ and $\mu\in[0.4,1.5]$, the greatest residual was $1.1\times 10^{-9}$, against an amplitude of order $10^{-2}$.
 3. **The Bessel function.** The series evaluation of $J_1$ reproduces the reference values $J_1(1)=0.4400505857$ and $J_1(2)=0.5767248078$ to ten digits, so the Bessel factor in the kernel is not a source of error.
 
 ### The light-cone Jacobian
 
-The delta term is concentrated on the cone, and the two ways of writing it are related by a Jacobian. On the future cone $t>0$ the invariant $x^2=-t^2+r^2$ vanishes at the single positive root $r=t$, where
+The delta term is concentrated on the cone, and the two ways of writing it are related by a Jacobian. On the future cone $t'>0$ the invariant $x^2=-{t'}^2+r^2$ vanishes at the single positive root $r=t'$, where
 
 $$
-\left|\frac{\partial x^2}{\partial r}\right|_{r=t}=2r\Big|_{r=t}=2t,
+\left|\frac{\partial x^2}{\partial r}\right|_{r=t'}=2r\Big|_{r=t'}=2t',
 \qquad\text{so}\qquad
-\delta(x^2)=\frac{1}{2t}\,\delta(r-t)=\frac{1}{2r}\,\delta(t-r),
+\delta(x^2)=\frac{1}{2t'}\,\delta(r-t')=\frac{1}{2r}\,\delta(t'-r),
 $$
 
 and therefore
 
 $$
-\frac{1}{2\pi}\delta(x^2)=\frac{1}{4\pi r}\delta(t-r).
+\frac{1}{2\pi}\delta(x^2)=\frac{1}{4\pi r}\delta(t'-r).
 $$
 
 The coefficient was checked numerically to twelve digits, and it is the c-explicit exercise's Jacobian with $c=1$. This is the step at which a derivation of the retarded kernel most often goes wrong: dropping the factor $2r$ gives a kernel whose coefficient has the wrong power of $r$, and the kernel then fails to reduce to the Newton kernel in the static limit. The invariant form and the radial form are used interchangeably below.
@@ -268,20 +268,20 @@ The coefficient was checked numerically to twelve digits, and it is the c-explic
 The advanced displacement reverses both pole shifts and produces the mirror kernel
 
 $$
-G_A(\tilde{R})=G_R(-\tilde{R}\text{ in time})=G_R(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
-=\frac{\theta(-t)}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
+G_A(\tilde{R})=G_R(-\tilde{R}\text{ in time})=G_R(-t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+=\frac{\theta(-t')}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
 $$
 
 supported on the past cone. The advanced kernel solves the same defining equation, $(\Box-\mu^2)G_A=-\delta^{(4)}$, as $G_R$ does; the two differ by a solution of the homogeneous Klein–Gordon equation,
 
 $$
 G_R-G_A
-=\frac{\mathrm{sgn}(t)}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
+=\frac{\mathrm{sgn}(t')}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
 $$
 
 which is supported on the closed cone and is not zero. The defining equation alone therefore does **not** select a kernel, and the selection is a boundary condition: the retarded kernel is chosen by the requirement of no incoming radiation from the past. This is the same statement the massless exercise makes for the wave operator, and it is a physical input rather than an algebraic consequence.
 
-It is worth stating the two kernels' structure in the algebra. Both are complex scalars times $e_t$, and their difference is too; the boundary condition selects between them by a $t$-dependent step, which is a central scalar function. Nothing in the selection involves the module, and nothing in it involves the vector part of the algebra: the causal structure of the spin-$0$ theory is a statement about the scalar $\mathbb{C}_{\mathbb{B}}$, encoded in the biquaternion norm through the cone.
+It is worth stating the two kernels' structure in the algebra. Both are complex scalars times $e_t$, and their difference is too; the boundary condition selects between them by a $t'$-dependent step, which is a central scalar function. Nothing in the selection involves the module, and nothing in it involves the vector part of the algebra: the causal structure of the spin-$0$ theory is a statement about the scalar $\mathbb{C}_{\mathbb{B}}$, encoded in the biquaternion norm through the cone.
 
 ## Microcausality and the Pauli–Jordan Function
 
@@ -291,7 +291,7 @@ The difference of the two kernels is the framework's causal kernel. Define the *
 
 $$
 G_C(\tilde{R})=G_R(\tilde{R})-G_A(\tilde{R})
-=\frac{\mathrm{sgn}(t)}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
+=\frac{\mathrm{sgn}(t')}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
 $$
 
 and normalize the field so that the field commutator, of which $G_C$ is the kernel, reads
@@ -305,16 +305,16 @@ The overall constant in this normalization is a convention — the relation carr
 
 ### Microcausality
 
-Microcausality is the statement that the commutator vanishes for spacelike separation. Let $\tilde{R}$ be **spacelike**, so that $x^2=-t^2+\vec r^2>0$. Then two things happen at once in the closed form: $\delta(x^2)=0$ because $x^2\ne0$, and $\theta(-x^2)=0$ because $-x^2<0$. Hence
+Microcausality is the statement that the commutator vanishes for spacelike separation. Let $\tilde{R}$ be **spacelike**, so that $x^2=-{t'}^2+\vec r^2>0$. Then two things happen at once in the closed form: $\delta(x^2)=0$ because $x^2\ne0$, and $\theta(-x^2)=0$ because $-x^2<0$. Hence
 
 $$
 G_C(\tilde{R})=0
 \qquad\text{for}\qquad x^2>0,
 $$
 
-and the field operators commute at spacelike separation. For **timelike** $\tilde{R}$ (inside either cone) the kernel is nonzero: $\theta(-x^2)=1$ and the Bessel term contributes, so $G_C$ does not vanish and the commutator carries the causal signal. The two behaviors were checked numerically on the closed form: at the spacelike point $(t,r)=(1,2)$ with $\mu=1.1$ the kernel is exactly zero, and at the timelike point $(t,r)=(2,1)$ it is $-0.0294$, nonzero and of the expected magnitude.
+and the field operators commute at spacelike separation. For **timelike** $\tilde{R}$ (inside either cone) the kernel is nonzero: $\theta(-x^2)=1$ and the Bessel term contributes, so $G_C$ does not vanish and the commutator carries the causal signal. The two behaviors were checked numerically on the closed form: at the spacelike point $(t',r)=(1,2)$ with $\mu=1.1$ the kernel is exactly zero, and at the timelike point $(t',r)=(2,1)$ it is $-0.0294$, nonzero and of the expected magnitude.
 
-The support statement can be read without the Bessel function. The commutator function is a difference of two kernels whose pole displacements place them, respectively, on the future and past cones; the singularities of the two contributions in the $t$-plane cancel for spacelike separations, and what remains is supported on the closed cone. This is the standard causal structure of a scalar field, and it is reproduced here directly from the closed form rather than asserted.
+The support statement can be read without the Bessel function. The commutator function is a difference of two kernels whose pole displacements place them, respectively, on the future and past cones; the singularities of the two contributions in the $t'$-plane cancel for spacelike separations, and what remains is supported on the closed cone. This is the standard causal structure of a scalar field, and it is reproduced here directly from the closed form rather than asserted.
 
 ### What the algebra contributes
 
@@ -330,18 +330,18 @@ $$
 G_F(\omega,\vec p)=\frac{1}{\vec p^2+\mu^2-\omega^2-i\epsilon}
 =\frac{-1}{p^2-\mu^2+i\epsilon},
 \qquad
-G_F(\tilde{R})=\int\frac{d^4p}{(2\pi)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)) .
+G_F(\tilde{R})=\int\frac{d^4p}{(2\pi)^4}\,G_F(\omega,\vec p)\,\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')) .
 $$
 
 Its frequency integral was given above; its position-space content is the time-ordered correlation function,
 
 $$
 G_F(\tilde{R})
-=\theta(t)\,\langle0|\tilde{\Phi}(\tilde{R})\tilde{\Phi}^{*}(0)|0\rangle
-+\theta(-t)\,\langle0|\tilde{\Phi}^{*}(0)\tilde{\Phi}(\tilde{R})|0\rangle,
+=\theta(t')\,\langle0|\tilde{\Phi}(\tilde{R})\tilde{\Phi}^{*}(0)|0\rangle
++\theta(-t')\,\langle0|\tilde{\Phi}^{*}(0)\tilde{\Phi}(\tilde{R})|0\rangle,
 $$
 
-which is the standard interpretation of the asymmetric prescription: the two boundary values are the positive- and negative-frequency Wightman functions, and the $t$-ordering puts them in the order that makes the amplitude a causal Green's function. The two-point function of the biquaternion field is therefore
+which is the standard interpretation of the asymmetric prescription: the two boundary values are the positive- and negative-frequency Wightman functions, and the $t'$-ordering puts them in the order that makes the amplitude a causal Green's function. The two-point function of the biquaternion field is therefore
 
 $$
 \langle0|\,T\,\tilde{\Phi}(\tilde{R})\,\tilde{\Phi}^{*}(\tilde R_2)\,|0\rangle
@@ -374,7 +374,7 @@ with $K_1$ the modified Bessel function of the second kind. It decays exponentia
 The Feynman propagator is the inverse of the Klein–Gordon operator in the distributional sense, $(\Box-\mu^2)G_F=-\delta^{(4)}$, and the inverse relation between the two reads
 
 $$
-\int d^3y\,dt_2\;G_F(\tilde{R}-\tilde R_2)\,\left[-\bigl(\Box_{\tilde R_2}-\mu^2\bigr)\right]\delta^{(4)}(\tilde R_2-\tilde Q_3)
+\int d^3y\,dt'_2\;G_F(\tilde{R}-\tilde R_2)\,\left[-\bigl(\Box_{\tilde R_2}-\mu^2\bigr)\right]\delta^{(4)}(\tilde R_2-\tilde Q_3)
 =\delta^{(4)}(\tilde{R}-\tilde Q_3),
 $$
 
@@ -388,7 +388,7 @@ Three facts summarize what the framework does and does not contribute to the Kle
 
 **The singular loci are the biquaternion norm's geometry.** The light cone is the zero-divisor cone $\langle\tilde{R}\rangle_{\natural}=0$ of the material sector; the mass shell is the level set $\langle\tilde P\rangle_{\natural}=-\mu^2$. The Fourier kernel's poles, the support of the retarded kernel, the vanishing of the commutator, and the exponential range of the Euclidean kernel are all faces of one algebraic object, the biquaternion norm of $\mathbb{B}$ read on $\mathbb{M}_-$. This is genuinely the algebra's contribution: the framework does not postulate the light cone, it identifies it as the zero set of the biquaternion norm, and the propagation of a spin-$0$ field follows.
 
-**The causal boundary condition is physical, not algebraic.** The defining equation admits both the retarded and the advanced kernel, and the algebra is indifferent between them; the retarded choice is the no-incoming-radiation condition, a physical input. The framework locates the choice in the direction of the $i\epsilon$ displacement along the imaginary-scalar axis $ict$, exactly as the companion article on the Feynman propagator argues; it does not derive the choice.
+**The causal boundary condition is physical, not algebraic.** The defining equation admits both the retarded and the advanced kernel, and the algebra is indifferent between them; the retarded choice is the no-incoming-radiation condition, a physical input. The framework locates the choice in the direction of the $i\epsilon$ displacement along the imaginary-scalar axis $ict'$, exactly as the companion article on the Feynman propagator argues; it does not derive the choice.
 
 The derivation of the retarded kernel given above is a transcription of the standard scalar field theory into the framework's notation, with the biquaternion-norm identifications supplying the interpretation. The genuinely biquaternionic content lies in the identification of the cone and the shell with the biquaternion norm, and in the proof that nothing else of the algebra enters.
 
@@ -410,16 +410,16 @@ The derivation of the retarded kernel given above is a transcription of the stan
 
 The Klein–Gordon operator $(\Box-\mu^2)$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-\mu^2)G=-\delta^{(4)}$, matching the electromagnetism exercise at $\mu=0$, the momentum-space amplitude is $G=-(p^2-\mu^2)^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2+\mu^2}$.
 
-The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\theta(t)\sin(\Omega_{\vec p}t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=\mu\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(\mu\sqrt{t^2-r^2})$; and differentiation gives the closed form
+The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\theta(t')\sin(\Omega_{\vec p}t')/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=\mu\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(\mu\sqrt{{t'}^2-r^2})$; and differentiation gives the closed form
 
 $$
 G_R(\tilde{R})
-=\frac{\theta(t)}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
+=\frac{\theta(t')}{2\pi}\left[\delta(x^2)-\frac{\mu}{2\sqrt{-x^2}}\,J_1\!\left(\mu\sqrt{-x^2}\right)\theta(-x^2)\right],
 \qquad
-x^2=-t^2+\vec r^2,
+x^2=-{t'}^2+\vec r^2,
 $$
 
-in natural units. The delta term is the massless retarded kernel, whose invariant form converts to $\frac{1}{4\pi r}\delta(t-r)$ by the light-cone Jacobian $\delta(x^2)=\frac{1}{2r}\delta(t-r)$; the Bessel term is the massive volume contribution, verified to satisfy the homogeneous Klein–Gordon equation inside the cone and to vanish as $\mu\to0$. The advanced kernel is the time reverse, and the defining equation does not select between them: the retarded kernel is fixed by the no-incoming-radiation boundary condition, which is physical.
+in natural units. The delta term is the massless retarded kernel, whose invariant form converts to $\frac{1}{4\pi r}\delta(t'-r)$ by the light-cone Jacobian $\delta(x^2)=\frac{1}{2r}\delta(t'-r)$; the Bessel term is the massive volume contribution, verified to satisfy the homogeneous Klein–Gordon equation inside the cone and to vanish as $\mu\to0$. The advanced kernel is the time reverse, and the defining equation does not select between them: the retarded kernel is fixed by the no-incoming-radiation boundary condition, which is physical.
 
 The Pauli–Jordan function $G_C=G_R-G_A$ is supported on the closed cone and vanishes for spacelike separations, which is microcausality; the commutator is $[\tilde{\Phi},\tilde{\Phi}^{*}]=G_C e_t$ in the normalization used here, and it is nonzero inside the cone. The Feynman propagator is the opposite-pole displacement, equal to the time-ordered two-point function $\langle0|T\tilde{\Phi}(x)\tilde{\Phi}^{*}(y)|0\rangle=G_F(x-y)e_t$; its spacelike tail is the Euclidean Yukawa kernel $\frac{\mu}{4\pi^2\sqrt{\rho_E^2}}K_1(\mu\sqrt{\rho_E^2})$, of range the Compton wavelength, and its inverse in momentum space is the quadratic form of the action used in the companion path-integral article.
 
@@ -434,7 +434,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the scalar field's value space |
-| $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate, $\in\mathbb{M}_-$ |
+| $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate, $\in\mathbb{M}_-$ |
 | $\tilde P=i\omega/c\,e_t+\vec k$ | Material four-wavevector, $\in\mathbb{M}_-$ |
 | $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form; real, positive definite |
@@ -447,12 +447,12 @@ The algebra's contribution is the identification of the singular loci with the b
 | $G_R,G_A$ | Retarded and advanced Green's functions |
 | $G_C=G_R-G_A$ | Pauli–Jordan (commutator) function |
 | $G_F$ | Feynman propagator, time-ordered two-point function |
-| $x^2=-t^2+\vec r^2$ | Invariant separation, natural units |
+| $x^2=-{t'}^2+\vec r^2$ | Invariant separation, natural units |
 | $\langle\tilde{R}\rangle_{\natural}=0$ | Zero-divisor (light) cone of $\mathbb{M}_-$ |
 | $\langle\tilde P\rangle_{\natural}=-\mu^2$ | Mass shell |
 | $J_1,K_1$ | Bessel and modified Bessel functions |
-| $\theta(t),\mathrm{sgn}(t)$ | Heaviside step and sign functions |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric (level 2) |
+| $\theta(t'),\mathrm{sgn}(t')$ | Heaviside step and sign functions |
+| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$-coordinate metric (level 2) |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading

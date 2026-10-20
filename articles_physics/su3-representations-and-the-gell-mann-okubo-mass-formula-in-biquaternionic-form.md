@@ -239,7 +239,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 ## Open Questions
 
-1. **Does the hypercharge direction have a biquaternion image?** The corpus has a preferred direction, the $ict$ axis of the material sector, and a central phase. Is the hypercharge splitting's distinguished direction one of these, or is the correspondence spurious? The gauge-ceiling article implies the latter unless a larger algebra is used.
+1. **Does the hypercharge direction have a biquaternion image?** The corpus has a preferred direction, the $ict'$ axis of the material sector, and a central phase. Is the hypercharge splitting's distinguished direction one of these, or is the correspondence spurious? The gauge-ceiling article implies the latter unless a larger algebra is used.
 
 2. **$m_0$ and the mass formula.** The identification of $m_0$ with the spin–mass formula's $m^{(s)}$ is a choice. Does the equality hold for the meson octets as well as the baryon octet, and does the companion mass formula's error (a few percent) propagate into the average?
 

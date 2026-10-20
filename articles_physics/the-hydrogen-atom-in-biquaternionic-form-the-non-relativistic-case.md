@@ -89,7 +89,7 @@ and it lies along the time-like direction $ie_t$ of the material sector, as the 
 The framework's states are spinors in a minimal left ideal $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$. A position-space treatment requires a spinor **field**,
 
 $$
-\psi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{B}\tilde\Pi \cong \mathbb{C}^2,
+\psi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\in\mathbb{B}\tilde\Pi \cong \mathbb{C}^2,
 $$
 
 a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the **argument** of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.
@@ -153,7 +153,7 @@ $$
 \qquad \chi_{m_s}\in\mathbb{B}\tilde\Pi ,
 $$
 
-with $\chi_{m_s}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\hbar\,\partial/\partial t\psi=H\psi$ and using the spherical decomposition of the Laplacian,
+with $\chi_{m_s}$ a constant spinor. Substituting into the biquaternion Schrödinger equation $i\hbar\,\partial/\partial t'\psi=H\psi$ and using the spherical decomposition of the Laplacian,
 
 $$
 -\hbar^2\nabla^2 = \frac{L^2}{r^2} - \frac{\hbar^2}{r^2}\partial/\partial r\,\bigl(r^2\partial/\partial r\,\bigr),

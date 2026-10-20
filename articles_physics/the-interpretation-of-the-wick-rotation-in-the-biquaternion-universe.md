@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The **Wick rotation** is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of the analytic continuation $t \to -i\tau$ of the time coordinate to imaginary values, and it converts the oscillating phase of the Feynman path integral into a decaying exponential. The procedure is usually presented as a **trick**: it is justified by analytic continuation of the integrand in the complex time plane, it works for a large class of physically relevant problems, and it fails for others, without a general theorem that settles when it works and when it does not.
+The **Wick rotation** is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of the analytic continuation $t' \to -i\tau$ of the time coordinate to imaginary values, and it converts the oscillating phase of the Feynman path integral into a decaying exponential. The procedure is usually presented as a **trick**: it is justified by analytic continuation of the integrand in the complex time plane, it works for a large class of physically relevant problems, and it fails for others, without a general theorem that settles when it works and when it does not.
 
-This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $ict$ convention, sends the imaginary time coefficient $ict$ to the real value $c\tau$, while leaving the spatial coordinates $x, y, z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, whose four coefficients are all real. So the Wick rotation is an **identification** of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $ict$ as a real one.
+This article proposes a structural interpretation of the Wick rotation, in terms of the biquaternion algebra. The main observation is the following: the Wick rotation, in the $ict'$ convention, sends the imaginary time coefficient $ict'$ to the real value $c\tau$, while leaving the spatial coordinates $x, y, z$ unchanged. The result is a point of the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, whose four coefficients are all real. So the Wick rotation is an **identification** of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $ict'$ as a real one.
 
 This interpretation explains, in a single structural fact, why the trick is useful and why it sometimes fails. The subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than $\mathbb{M}_-$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic differential operator, and a compact symmetry group. When the physics of a problem depends on the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase — the transfer to $\mathbb{H}_{\mathbb{B}}$ destroys this structure, and the trick fails. When the physics is insensitive to the Lorentzian structure — equilibrium, correlation, statistical weight — the transfer is harmless and the resulting problem on $\mathbb{H}_{\mathbb{B}}$ is easier.
 
@@ -19,10 +19,10 @@ The biquaternion algebra $\mathbb{B}$ is cut into remarkable real subspaces: the
 **The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.** An element has the form
 
 $$
-\tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (ct')\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
+\tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (ct)\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
-Here $t'$ is the Euclidean time coordinate. All four coefficients are **real**. The quadratic form
+Here $t$ is the Euclidean time coordinate. All four coefficients are **real**. The quadratic form
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2
@@ -65,21 +65,21 @@ The three subspaces are distinct, and each has its own algebraic and analytic ch
 In relativistic field theory, a point of the material sector is written
 
 $$
-\tilde{Q}_- = i c t\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z \in \mathbb{M}_-,
+\tilde{Q}_- = i c t'\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z \in \mathbb{M}_-,
 $$
 
-where $t$ is the time coordinate, $x, y, z$ are the spatial coordinates, and the four coefficients are $ict, x, y, z$ respectively.
+where $t'$ is the time coordinate, $x, y, z$ are the spatial coordinates, and the four coefficients are $ict', x, y, z$ respectively.
 
 The **standard Wick rotation** is the substitution
 
 $$
-t \;\longmapsto\; -i\tau, \qquad \tau \in \mathbb{R},
+t' \;\longmapsto\; -i\tau, \qquad \tau \in \mathbb{R},
 $$
 
 in the time coordinate. Under this substitution, the first coefficient of $\tilde{Q}_-$ changes as
 
 $$
-i c t \;\longmapsto\; i c\,(-i\tau) = c\tau,
+i c t' \;\longmapsto\; i c\,(-i\tau) = c\tau,
 $$
 
 while the spatial coefficients $x, y, z$ are unchanged. The rotated point is
@@ -93,10 +93,10 @@ with **all four coefficients real**. In the notation of the quaternion subspace 
 So the standard Wick rotation is the identification
 
 $$
-\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (ict, x, y, z) \;\longmapsto\; (c\tau, x, y, z),
+\mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (ict', x, y, z) \;\longmapsto\; (c\tau, x, y, z),
 $$
 
-obtained by relabeling the imaginary coefficient $ict$ as a real coefficient $c\tau$. The transformation is real-linear, but it is not an isometry: the quadratic form changes sign in the time–time component. The signature changes from $(3, 1)$ to $(4, 0)$.
+obtained by relabeling the imaginary coefficient $ict'$ as a real coefficient $c\tau$. The transformation is real-linear, but it is not an isometry: the quadratic form changes sign in the time–time component. The signature changes from $(3, 1)$ to $(4, 0)$.
 
 ## The Trick as a Transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$
 
@@ -112,12 +112,12 @@ $$
 Z_E = \int \mathcal{D}\phi\; \exp(-S_E[\phi]/\hbar),
 $$
 
-with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial t^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.
+with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
-In the biquaternion interpretation, the operation is the following. The Lorentzian field $\phi$ on $\mathbb{M}_-$ is transferred to a field $\phi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
+In the biquaternion interpretation, the operation is the following. The Lorentzian field $\phi$ on $\mathbb{M}_-$ is transferred to a field $\phi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict' \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
 
 $$
-\Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \Delta,
+\Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2} + \Delta,
 $$
 
 becomes the elliptic d'Alembertian on $\mathbb{H}_{\mathbb{B}}$,
@@ -137,7 +137,7 @@ The reason the transfer is useful is that $\mathbb{H}_{\mathbb{B}}$ is better be
 | Property | $\mathbb{H}_{\mathbb{B}}$ | $\mathbb{M}_-$ |
 |---|---|---|
 | Signature of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
-| d'Alembertian | $\partial_\tau^2/c^2 + \Delta$ (elliptic) | $-c^{-2}\,\partial^2/\partial t^2 + \Delta$ (hyperbolic) |
+| d'Alembertian | $\partial_\tau^2/c^2 + \Delta$ (elliptic) | $-c^{-2}\,\partial^2/\partial {t'}^2 + \Delta$ (hyperbolic) |
 | Zero divisors | None | Light cone |
 | Division algebra | Yes | No |
 | Symmetry group | $SO(4)$, compact | $SO(3, 1)$, non-compact |
@@ -186,7 +186,7 @@ The interpretation of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\m
 
 - The biquaternion algebra contains four natural four-dimensional real subspaces: $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, and $\mathbb{M}_-$. Three of them — $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ — are involved in the Wick rotation.
 - The three subspaces have distinct signatures: $(4, 0)$, $(1, 3)$, $(3, 1)$.
-- The standard Wick rotation acts on a point of $\mathbb{M}_-$ by relabeling the imaginary coefficient $ict$ as a real coefficient $c\tau$, leaving the spatial coefficients unchanged.
+- The standard Wick rotation acts on a point of $\mathbb{M}_-$ by relabeling the imaginary coefficient $ict'$ as a real coefficient $c\tau$, leaving the spatial coefficients unchanged.
 - The resulting point lies in $\mathbb{H}_{\mathbb{B}}$.
 
 What is an **interpretation** is the following.
@@ -200,9 +200,9 @@ The interpretation is consistent with the known behavior of the Wick rotation. I
 
 ## Summary
 
-The standard Wick rotation is the analytic continuation $t \to -i\tau$ of the time coordinate, which converts the Lorentzian structure of spacetime into a Euclidean one and turns the oscillating phase of the Feynman path integral into a decaying exponential. It is usually presented as a trick.
+The standard Wick rotation is the analytic continuation $t' \to -i\tau$ of the time coordinate, which converts the Lorentzian structure of spacetime into a Euclidean one and turns the oscillating phase of the Feynman path integral into a decaying exponential. It is usually presented as a trick.
 
-In the biquaternion framework, the standard Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $ict$ as a real coefficient $c\tau$ and leaving the spatial coefficients $x, y, z$ unchanged. Both subspaces are four-dimensional real subspaces of the same biquaternion algebra $\mathbb{B}$, and the identification between them is real-linear.
+In the biquaternion framework, the standard Wick rotation is the identification of the material sector $\mathbb{M}_-$ with the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, obtained by relabeling the imaginary coefficient $ict'$ as a real coefficient $c\tau$ and leaving the spatial coefficients $x, y, z$ unchanged. Both subspaces are four-dimensional real subspaces of the same biquaternion algebra $\mathbb{B}$, and the identification between them is real-linear.
 
 The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than the material sector $\mathbb{M}_-$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic d'Alembertian, and a compact symmetry group. The Wick rotation is useful because the transferred problem on $\mathbb{H}_{\mathbb{B}}$ is easier than the original problem on $\mathbb{M}_-$.
 
@@ -220,14 +220,14 @@ The interpretation organizes the applications into a split between those that tr
 | $\mathbb{M}_+$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
 | $\mathbb{M}_-$ | Material sector: signature $(3, 1)$, hyperbolic |
 | $q_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{H}_{\mathbb{B}}$, on $e_t, \vec e_x, \vec e_y, \vec e_z$; the rotated point has $q_t = c\tau$ |
-| $(ct')\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$ | The same element in physical coordinates; $q_t = ct'$ and $(q_x,q_y,q_z) = (x,y,z)$ |
-| $q'_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{M}_-$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$; the material point has $q'_t = ct$ |
-| $q_t, q'_x, q'_y, q'_z$ | Real parameters on $\mathbb{M}_+$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$; $q_t = ct'$ |
+| $(ct)\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$ | The same element in physical coordinates; $q_t = ct$ and $(q_x,q_y,q_z) = (x,y,z)$ |
+| $q'_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{M}_-$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$; the material point has $q'_t = ct'$ |
+| $q_t, q'_x, q'_y, q'_z$ | Real parameters on $\mathbb{M}_+$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$; $q_t = ct$ |
 | $c$ | Speed of light in the medium |
-| $t$ | Time coordinate on $\mathbb{M}_-$ |
+| $t'$ | Time coordinate on $\mathbb{M}_-$ |
 | $\tau$ | Euclidean coordinate on $\mathbb{H}_{\mathbb{B}}$ |
-| $ict$ | Imaginary time coefficient on $\mathbb{M}_-$ |
-| $t \to -i\tau$ | Standard Wick rotation |
+| $ict'$ | Imaginary time coefficient on $\mathbb{M}_-$ |
+| $t' \to -i\tau$ | Standard Wick rotation |
 | $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ | The transfer as an identification of subspaces |
 
 ## Further Reading

@@ -41,11 +41,11 @@ With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tild
 Two properties of the split are used throughout.
 
 - **It is a real subspace, not a complex one.** The sector $\mathbb{M}_+$ is closed under real linear combinations but not under multiplication by $i$: the element $i\vec e_x$ is Hermitian, and $i(i\vec e_x)=-\vec e_x$ is anti-Hermitian. Multiplication by $i$ exchanges the sectors, and no nontrivial complex subspace lies inside one of them.
-- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde R_k=ict_k+\vec v_k$ with real $t_k$ and real $\vec v_k$,
+- **It is not an ideal decomposition.** The product of two material elements need not be material. For $\tilde R_k=ict'_k+\vec v_k$ with real $t'_k$ and real $\vec v_k$,
 
 $$
-\tilde R_1\tilde R_2=\bigl(-c^2t_1t_2-(\vec v_1,\vec v_2)\bigr)
-+i\bigl(ct_1\vec v_2+ct_2\vec v_1\bigr)+\vec v_1\times\vec v_2 .
+\tilde R_1\tilde R_2=\bigl(-c^2t'_1t'_2-(\vec v_1,\vec v_2)\bigr)
++i\bigl(ct'_1\vec v_2+ct'_2\vec v_1\bigr)+\vec v_1\times\vec v_2 .
 $$
 
 The first two terms are Hermitian and the last is anti-Hermitian, so the product has a Hermitian part and an anti-Hermitian part; it lies in a sector only when one of them vanishes, and in general it lies in neither. The split is a decomposition of the space, not of the algebra.
@@ -91,10 +91,10 @@ $$
 \langle\tilde Q\rangle_{\natural}=\sum_{\mu}Q_\mu^{2}.
 $$
 
-For a material element $\tilde R=ict+x\vec e_x+y\vec e_y+z\vec e_z$ the value is
+For a material element $\tilde R=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ the value is
 
 $$
-\langle\tilde R\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2,
+\langle\tilde R\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2,
 $$
 
 which is real and therefore lies in the informational sector. The norm square
@@ -109,7 +109,7 @@ is a map $\mathbb{M}_-\to\mathbb{M}_+$ with image the real scalar line $\mathbb{
 
 **Boundary.** The map is not an evolution, and the bare product of two material elements does not share its property: unless the spatial parts are parallel, the product carries both a Hermitian part and a material rotation part. The norm square is the coupling; the product is not. The same formula applied to an informational element returns $h_t^2-\lvert\vec h\rvert^2$, which is the determinant of the matrix of the state and not a probability. The map lands in the informational sector because its value is a scalar, not because every value is a weight.
 
-**Remark (preparation).** The same map run backwards prepares a state. For a material element $\tilde R$, the element $\tilde H=-\tfrac{i}{2}\tilde R$ is Hermitian, with $\operatorname{Tr}\tilde H=ct$ and $\langle\tilde H\rangle_{\natural}=-\tfrac14\langle\tilde R\rangle_{\natural}$. On the trace-one slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.
+**Remark (preparation).** The same map run backwards prepares a state. For a material element $\tilde R$, the element $\tilde H=-\tfrac{i}{2}\tilde R$ is Hermitian, with $\operatorname{Tr}\tilde H=ct'$ and $\langle\tilde H\rangle_{\natural}=-\tfrac14\langle\tilde R\rangle_{\natural}$. On the trace-one slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.
 
 ### A Bijection: the Central Imaginary
 
@@ -154,16 +154,16 @@ The rotation's sandwich preserves both sectors, as every congruence does; what i
 
 ### A Pairing: the Off-Sector Scalar
 
-For $\tilde R=ict+\vec v\in\mathbb{M}_-$ and $\tilde H=h_te_t+i\vec h\in\mathbb{M}_+$, with real $t$, $\vec v$, $h_t$ and $\vec h$, the scalar part of the plain product is
+For $\tilde R=ict'+\vec v\in\mathbb{M}_-$ and $\tilde H=h_te_t+i\vec h\in\mathbb{M}_+$, with real $t'$, $\vec v$, $h_t$ and $\vec h$, the scalar part of the plain product is
 
 $$
 \operatorname{Sc}(\tilde R\tilde H)
-=i\bigl(ct\,h_t-(\vec v,\vec h)\bigr).
+=i\bigl(ct'\,h_t-(\vec v,\vec h)\bigr).
 $$
 
 It is purely imaginary, and it is a pairing $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$: it reads one element of each sector and returns a phase.
 
-**Interpretation.** The pairing is the Minkowski pairing of the material four-vector $(ct,\vec v)$ with the informational four-vector $(h_t,\vec h)$, multiplied by $i$: the time components pair with the time component, the spatial components with the spatial components, and the indefiniteness of the interval is the relative sign. The result is a phase, not a probability. The norm reads the same two pairs with the opposite spatial sign: its cross term is $2i(ct\,h_t+\vec v\cdot\vec h)$. The product squares the units and the norm squares the coefficients, and the sign of the spatial term is the difference.
+**Interpretation.** The pairing is the Minkowski pairing of the material four-vector $(ct',\vec v)$ with the informational four-vector $(h_t,\vec h)$, multiplied by $i$: the time components pair with the time component, the spatial components with the spatial components, and the indefiniteness of the interval is the relative sign. The result is a phase, not a probability. The norm reads the same two pairs with the opposite spatial sign: its cross term is $2i(ct'\,h_t+\vec v\cdot\vec h)$. The product squares the units and the norm squares the coefficients, and the sign of the spatial term is the difference.
 
 **Boundary.** A pairing is not a product: it produces no element of either sector and does not compose. It is an interpretation of two objects, not an operation that turns one into the other. The pairing also depends on the product. The plain product and the product with the adjoint in the second slot give the Minkowski pairing; the product with the adjoint in the first slot gives its negative; the quaternionic product gives the Euclidean pairing, with the spatial sign reversed. The article uses the plain product and does not compare the four.
 
@@ -224,7 +224,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 | $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ | The material ($-$) and informational ($+$) sectors |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat=-{}^{*}$ | Quaternion conjugation, coefficient conjugation and the real structure |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | The biquaternion norm |
-| $\tilde R=ict+x\vec e_x+y\vec e_y+z\vec e_z$ | A material element |
+| $\tilde R=ict'+x\vec e_x+y\vec e_y+z\vec e_z$ | A material element |
 | $\tilde H=h_te_t+i\vec h$ | An informational element |
 | $\operatorname{Sc}$ | The scalar part of a biquaternion |
 

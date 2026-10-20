@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A quantum system whose Hamiltonian is varied slowly around a closed loop in a parameter space need not return to its original state: beside the **dynamical phase** $-\frac{1}{\hbar}\int E_n\,dt$, which grows with the duration of the journey, an eigenstate can acquire a **geometric phase** that depends only on the loop. This is the **Berry phase**. Its two defining features are that it is a functional of the path rather than of the speed, and that for a closed path it is defined only modulo $2\pi$.
+A quantum system whose Hamiltonian is varied slowly around a closed loop in a parameter space need not return to its original state: beside the **dynamical phase** $-\frac{1}{\hbar}\int E_n\,dt'$, which grows with the duration of the journey, an eigenstate can acquire a **geometric phase** that depends only on the loop. This is the **Berry phase**. Its two defining features are that it is a functional of the path rather than of the speed, and that for a closed path it is defined only modulo $2\pi$.
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $\mathrm{U}(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
@@ -29,18 +29,18 @@ $$
 is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:
 
 $$
-|\psi(t)\rangle = \exp(i\gamma_n(t))\,\exp(-\frac{i}{\hbar}\int_0^t E_n(R(t_2))dt_2)\,|n(R(t))\rangle .
+|\psi(t')\rangle = \exp(i\gamma_n(t'))\,\exp(-\frac{i}{\hbar}\int_0^{t'} E_n(R(t'_2))dt'_2)\,|n(R(t'))\rangle .
 $$
 
-Substituting into the Schrödinger equation $i\hbar\,\partial/\partial t|\psi\rangle = \tilde{H}|\psi\rangle$, the dynamical factor cancels, and what remains is
+Substituting into the Schrödinger equation $i\hbar\,\partial/\partial t'|\psi\rangle = \tilde{H}|\psi\rangle$, the dynamical factor cancels, and what remains is
 
 $$
-d\gamma_{n}/dt = i\,\langle n(R(t))|\frac{d}{dt}|n(R(t))\rangle ,
+d\gamma_{n}/dt' = i\,\langle n(R(t'))|\frac{d}{dt'}|n(R(t'))\rangle ,
 \qquad\text{so}\qquad
 \gamma_n = i\int_{\mathcal{C}}\langle n|\nabla_R n\rangle\cdot dR .
 $$
 
-The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(t)$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{1}{\hbar}\int E_n\,dt$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
+The right-hand side is a line integral of a one-form on parameter space; it does not refer to the rate at which the path is traversed. Replacing $R(t')$ by a reparametrization of the same curve leaves $\gamma_n$ unchanged, while the dynamical phase $-\frac{1}{\hbar}\int E_n\,dt'$ scales with the duration. This is the precise sense in which the second phase is **geometric** and the first is not; the speed-independence is checked explicitly on the example below.
 
 The eigenstate is defined only up to a phase, so the integrand is not a gauge-invariant object by itself. Writing $|n\rangle \mapsto \exp(i\alpha(R))|n\rangle$ for a real function $\alpha$ whose phase factor $\exp(i\alpha)$ is single-valued, the phase acquired around a **closed** loop shifts by
 
@@ -221,11 +221,11 @@ It is worth recording that the curvature is a **local** object while the connect
 Take a spin-1/2 in a magnetic field whose direction rotates at a fixed polar angle, so that in the biquaternion framework
 
 $$
-\tilde{H}(t) = \tfrac12\,i\,\vec R(t) , \qquad
-\vec R(t) = R\bigl(\sin\theta_0\cos\omega t,\ \sin\theta_0\sin\omega t,\ \cos\theta_0\bigr) ,
+\tilde{H}(t') = \tfrac12\,i\,\vec R(t') , \qquad
+\vec R(t') = R\bigl(\sin\theta_0\cos\omega t',\ \sin\theta_0\sin\omega t',\ \cos\theta_0\bigr) ,
 $$
 
-with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\omega \ll R$. The parameter $\phi = \omega t$ runs from $0$ to $2\pi$.
+with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\omega \ll R$. The parameter $\phi = \omega t'$ runs from $0$ to $2\pi$.
 
 The spin-up spinor is $\psi_+$ of the previous section with $\theta = \theta_0$. Its connection is computed by direct application of the definition, and the result is
 
@@ -280,7 +280,7 @@ The two routes agree, and they agree for **every** $\theta_0$, not merely at the
 
 The equator, $\theta_0 = \pi/2$, is the case $\gamma_+ = -\pi$; the half-angle form $-\Omega/2$ is the standard spin-1/2 result, with the sign convention that the spin-up branch is the one followed.
 
-**Speed independence.** Replacing the uniform rotation $\phi = \omega t$ by a non-uniform $\phi(t) = 2\pi(t/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_\phi\,d\phi$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\Omega/2$ generally. The dynamical phase over the same period is $-\frac{1}{\hbar}\int_0^T \frac{R}{2}\,dt = -\frac{RT}{2\hbar}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
+**Speed independence.** Replacing the uniform rotation $\phi = \omega t'$ by a non-uniform $\phi(t') = 2\pi(t'/T)^3$ with the same endpoints changes nothing in either route: the line integral is $\int_0^{2\pi}\mathcal{A}_\phi\,d\phi$ once the substitution is made, and the numerical value is again $-\pi$ at the equator and $-\Omega/2$ generally. The dynamical phase over the same period is $-\frac{1}{\hbar}\int_0^T \frac{R}{2}\,dt' = -\frac{RT}{2\hbar}$, which scales with $T$; the geometric phase does not. The contrast is the definition of the word "geometric".
 
 **The $2\pi$ ambiguity, exhibited.** The spin-down branch makes the patch structure visible. In the gauge adapted to the north pole the spin-down connection is
 
@@ -398,7 +398,7 @@ What the framework does supply, beyond the rewriting, is a set of structural pla
 - **One pairing for the Born rule and the connection.** Both $\mathrm{Tr}(\tilde\Pi\tilde{H})$ and $\mathcal{A}_\mu$ are built from the plain form of the state module, read as the trace pairing; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.
 - **The structure group is already in the algebra.** The $\mathrm{U}(1)$ of the Berry phase is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.
 - **The connection requires the spinor, not the density matrix.** The lemma $\mathrm{Tr}(\tilde\Pi\partial_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.
-- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\psi|d\psi\rangle$ is the central scalar imaginary that also appears in $ict$, in the gauge phase $\exp(iϙ\Gamma/\hbar)$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
+- **The same scalar imaginary.** The $i$ in $\mathcal{A} = i\langle\psi|d\psi\rangle$ is the central scalar imaginary that also appears in $ict'$, in the gauge phase $\exp(iϙ\Gamma/\hbar)$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.
 
 **What is only transcribed.** The adiabatic theorem, the Berry phase formula, the Stokes relation, and the Chern-number quantisation are standard results carried into the algebra. The framework supplies the $\hbar$ from outside, as the corpus notes: until the single-valuedness of a phase is imposed, the algebra is a classical complexified structure. The integer $C = \pm 1$ is a fact about the degree of a map of $S^2$, not a fact about $\mathbb{B}$. For a single qubit this article reports a reformulation and no new physics.
 

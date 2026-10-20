@@ -10,13 +10,13 @@ The construction is the hyperbolic geometry of the velocity hyperboloid, in the 
 
 The findings are stated in advance.
 
-1. **Velocity space is a hyperboloid of curvature $-1/c^2$.** The four-velocity runs over the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in $\mathbb{M}_-$ with the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$; in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\,\vec u+i\cosh(\rho/c)\,e_t)$ the radial coordinate $\rho$ is the geodesic distance from rest and the rapidity is $\psi = \rho/c$.
+1. **Velocity space is a hyperboloid of curvature $-1/c^2$.** The four-velocity runs over the quadric $\langle\tilde{V}\rangle_{\natural} = -c^2$ in $\mathbb{M}_-$ with the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$; in Weierstrass coordinates $\tilde{V} = c(\sinh(\rho/c)\,\vec u+i\cosh(\rho/c)\,e_t)$ the radial coordinate $\rho$ is the geodesic distance from rest and the rapidity is $\psi = \rho/c$.
 2. **The metric is the Beltrami–Klein metric** in the velocity coordinates, $ds^2 = c^2[(c^2-\vec v^2)|d\vec v|^2+(\vec v\cdot d\vec v)^2]/(c^2-\vec v^2)^2$, and the distance between two velocities is the relative rapidity: $\cosh(d/c) = \gamma_1\gamma_2(1-\vec v_1\cdot\vec v_2/c^2)$.
 3. **The addition of velocities is hyperbolic trigonometry.** The relative-velocity formula is the hyperbolic law of cosines in velocity space, and the composition law of two boosts is its spherical counterpart, the two being exchanged by $c\mapsto ic$ — the Sommerfeld spherical representation.
 4. **The Wigner rotation is the curvature of the boost connection.** Its angle is the hyperbolic area of the geodesic triangle whose sides are the three rapidities of the loop; the Euclidean area $\tfrac12 ab$ is the leading term, and the correction is $-\tfrac{1}{24}ab(a^2+b^2)$.
 5. **The light cone is the boundary at infinity.** It is at infinite geodesic distance from every velocity while the velocity itself is bounded by $c$: the rapidity is unbounded where the velocity is bounded, and that is the geometric statement that no finite number of boosts reaches $c$.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, central scalar $i$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$. The material coordinate is $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$, so that $\langle d\tilde{R}\rangle_{\natural} = -c^2dt^2+dx^2+dy^2+dz^2$. The four-velocity is
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, central scalar $i$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$. The material coordinate is $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$, so that $\langle d\tilde{R}\rangle_{\natural} = -c^2d{t'}^2+dx^2+dy^2+dz^2$. The four-velocity is
 $$
 \tilde{V} = \gamma(ic\,e_t+\vec v),\qquad \langle\tilde{V}\rangle_{\natural} = -c^2,\qquad \gamma = \Bigl(1-\frac{\vec v^2}{c^2}\Bigr)^{-1/2},
 $$
@@ -46,11 +46,11 @@ $$
 $$
 that is
 $$
-c^2t^2-(x^2+y^2+z^2) = c^2 ,
+c^2{t'}^2-(x^2+y^2+z^2) = c^2 ,
 $$
 the **future sheet** of the hyperboloid of unit timelike vectors. Its vertex is the rest point $\tilde{V}_0 = ic\,e_t$.
 
-The restriction of the ambient form to this quadric is Riemannian, and this is worth one line because the sign depends on the convention. In the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the one negative direction is the time axis, and at a point $X$ of the sheet that direction is represented by the position vector $X$ itself — which is normal to the quadric and not tangent to it. The restriction of $\eta$ to $X^\perp$ is therefore positive definite, with no sign to repair. This is the mirror of the convention of the maths article *Hyperbolic Geometry*, where the form carries the opposite overall sign and the metric on the hyperboloid is the negative of the restricted form; the two descriptions are the two signs of the same metric, and no physical statement depends on the choice.
+The restriction of the ambient form to this quadric is Riemannian, and this is worth one line because the sign depends on the convention. In the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the one negative direction is the time axis, and at a point $X$ of the sheet that direction is represented by the position vector $X$ itself — which is normal to the quadric and not tangent to it. The restriction of $\eta$ to $X^\perp$ is therefore positive definite, with no sign to repair. This is the mirror of the convention of the maths article *Hyperbolic Geometry*, where the form carries the opposite overall sign and the metric on the hyperboloid is the negative of the restricted form; the two descriptions are the two signs of the same metric, and no physical statement depends on the choice.
 
 ### Weierstrass coordinates and the rapidity as distance
 
@@ -88,7 +88,7 @@ so a small ball is Euclidean with a positive fourth-order correction; for the sp
 
 ### The metric in the velocity coordinates
 
-The sheet is usually described not by $(\rho,\vec u)$ but by the velocity $\vec v$ itself, which is the Beltrami–Klein coordinate of the model — the central projection of the sheet onto the plane $t = \mathrm{const}$, in which the geodesics are straight chords and the ball $|\vec v|<c$ is the whole of velocity space. Substituting $\vec v = c\tanh(\rho/c)\vec u$ into the metric gives
+The sheet is usually described not by $(\rho,\vec u)$ but by the velocity $\vec v$ itself, which is the Beltrami–Klein coordinate of the model — the central projection of the sheet onto the plane $t' = \mathrm{const}$, in which the geodesics are straight chords and the ball $|\vec v|<c$ is the whole of velocity space. Substituting $\vec v = c\tanh(\rho/c)\vec u$ into the metric gives
 $$
 ds^2 = c^2\;\frac{(c^2-\vec v^2)\,|d\vec v|^2+(\vec v\cdot d\vec v)^2}{(c^2-\vec v^2)^2} .
 $$
@@ -190,7 +190,7 @@ The drift is the angle defect: the recorded values agree with $\tfrac12-(a^2+b^2
 
 For a particle whose velocity traces a path in velocity space — an accelerated particle — the holonomy accumulated along the path is a continuous rotation of the rest-frame spin, and its rate is Thomas precession,
 $$
-d\vec\Omega_{\mathrm{T}}/dt = -\frac{\gamma-1}{v^2}\,\vec v\times\,d\vec v/dt ,
+d\vec\Omega_{\mathrm{T}}/dt' = -\frac{\gamma-1}{v^2}\,\vec v\times\,d\vec v/dt' ,
 $$
 the infinitesimal form of the statement that the area swept out per unit time is the rotation accumulated per unit time. The rate form is derived in the companion article on the Wigner rotation; the present article supplies what the rate does not: the exact finite statement, and the identification of the accumulated angle with an area rather than with a Euclidean product of rapidities. In dimensions other than three the same structure is the statement that the symmetric space $SL(2,\mathbb{C})/SU(2)$ has rank one, so its curvature is a single number and every loop's holonomy is a single angle.
 

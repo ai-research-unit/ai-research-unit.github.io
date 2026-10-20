@@ -110,7 +110,7 @@ The cone also carries the state-space metric. The biquaternion norm vanishes on 
 
 ## Limits
 
-The cone is not yet the light cone. It is a complex cone of real dimension six, while the physical light cone is its cut by the material sector $\mathbb{M}_{-}$, where the element is $\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ and the norm is $-c^{2}t^{2}+x^{2}+y^{2}+z^{2}$. The metric enters only when the sector is cut out.
+The cone is not yet the light cone. It is a complex cone of real dimension six, while the physical light cone is its cut by the material sector $\mathbb{M}_{-}$, where the element is $\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ and the norm is $-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2}$. The metric enters only when the sector is cut out.
 
 The cone is pointwise. Every statement above is a statement about one fixed algebra at one point; in a curved background the single cone becomes a field of local cones, and the metric, now a field, selects the directions and the surfaces. A black-hole horizon is a null surface and shares the algebra's notion of nullity, but it is not a piece of the cone: the cone is a fibrewise set of null directions, the horizon a hypersurface selected by one solution and its metric. The cone supplies the criterion, the metric supplies the surface.
 

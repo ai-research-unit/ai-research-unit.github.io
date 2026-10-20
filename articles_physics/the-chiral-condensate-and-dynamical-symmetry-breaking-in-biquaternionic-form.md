@@ -27,7 +27,7 @@ $$
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=\mathrm{diag}(-I_2,I_2)$ and the spacetime metric of the $ict$ gradient $\eta=-g$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$ and $i\mapsto\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, so that $\gamma_5=i\omega$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
+with $\gamma_5=\mathrm{diag}(-I_2,I_2)$ and the spacetime metric of the $ict'$ gradient $\eta=-g$. The Clifford isomorphism identifies $\mathbb{B}$ with $\mathrm{Cl}_{1,3}^{+}$ by $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$ and $i\mapsto\omega=\gamma^0\gamma^1\gamma^2\gamma^3$, so that $\gamma_5=i\omega$. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the gap-equation section.
 
 The framework results used here are those of the companion articles:
 

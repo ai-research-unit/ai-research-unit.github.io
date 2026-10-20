@@ -20,7 +20,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
 $$
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The non-abelian sector is built on the compact factor
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z$, with conjugate $\tilde{\nabla}^{\natural}$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The non-abelian sector is built on the compact factor
 $$
 \mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_- ,
 \qquad
@@ -246,7 +246,7 @@ In the framework's terms the ambiguity is a statement about the adjoint action, 
 
 **Imported, and left visible.** The Faddeev–Popov trick itself and the insertion of unity; the representation of a determinant by a fermionic Gaussian integral; the gauge-fixing condition and the gauge parameter; the Nakanishi–Lautrup field; the Slavnov–Taylor identities and the standard renormalization of the coupling; the one-loop beta coefficient; the Gribov ambiguity and Singer's obstruction; and the non-perturbative construction of confinement. The algebra supplies the carrier and the structure constants; the analytic apparatus of the path integral is standard.
 
-**Not supplied.** The gauge group is fixed to the compact factor the algebra contains, so the construction is the $SU(2)$ theory (with the abelian factor available separately); the hypercharge, the chiral matter representation and the colour octet are outside it. No gauge-fixing principle is native to the algebra, and the choice of $\xi$ remains external. The reality class of the connection is inherited unchanged from the companion articles, where no single Hermitian-conjugation eigenspace survives the transformation law: the inhomogeneous term $\frac{i}{\kappa}(\partial/\partial Q_\mu \tilde U)\tilde U^{-1}$ is anti-Hermitian in the spatial directions and Hermitian in the $ict$ direction, so that a uniform assignment of all four components to $\mathbb{M}_-$ is preserved in the space directions and obstructed in the time direction, and the only consistent assignment is the mixed one, $\mathcal{A}_0$ in $\mathbb{M}_-$ and $\mathcal{A}_k$ in $\mathbb{M}_+$. Nothing in the path integral or the Faddeev–Popov procedure relieves that obstruction. As everywhere in the series, no empirical content is added.
+**Not supplied.** The gauge group is fixed to the compact factor the algebra contains, so the construction is the $SU(2)$ theory (with the abelian factor available separately); the hypercharge, the chiral matter representation and the colour octet are outside it. No gauge-fixing principle is native to the algebra, and the choice of $\xi$ remains external. The reality class of the connection is inherited unchanged from the companion articles, where no single Hermitian-conjugation eigenspace survives the transformation law: the inhomogeneous term $\frac{i}{\kappa}(\partial/\partial Q_\mu \tilde U)\tilde U^{-1}$ is anti-Hermitian in the spatial directions and Hermitian in the $ict'$ direction, so that a uniform assignment of all four components to $\mathbb{M}_-$ is preserved in the space directions and obstructed in the time direction, and the only consistent assignment is the mixed one, $\mathcal{A}_0$ in $\mathbb{M}_-$ and $\mathcal{A}_k$ in $\mathbb{M}_+$. Nothing in the path integral or the Faddeev–Popov procedure relieves that obstruction. As everywhere in the series, no empirical content is added.
 
 ## Summary
 
@@ -282,7 +282,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of the algebra; abelian factor |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | Biquaternionic gradient, conjugate, d'Alembertian |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
+| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric (level 2) |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$ | Compact gauge algebra |
 | $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
 | $f^{abc}=2\varepsilon^{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $\vec e_a$ ($f^{abc}=\varepsilon^{abc}$ in the normalized basis $T_a=\tfrac12\vec e_a$) |

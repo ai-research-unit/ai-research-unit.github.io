@@ -37,10 +37,10 @@ $$
 \tilde Q=q_t\,e_t+i q'_x\vec e_x+i q'_y\vec e_y+i q'_z\vec e_z,
 $$
 
-with $q_t,q'_x,q'_y,q'_z\in\mathbb{R}$. On the physical dictionary $q_t=c t'$ and $(q'_x,q'_y,q'_z)=(x',y',z')$, so the general element is
+with $q_t,q'_x,q'_y,q'_z\in\mathbb{R}$. On the physical dictionary $q_t=c t$ and $(q'_x,q'_y,q'_z)=(x',y',z')$, so the general element is
 
 $$
-\tilde Q=c t'\,e_t+i\bigl(x'\vec e_x+y'\vec e_y+z'\vec e_z\bigr).
+\tilde Q=c t\,e_t+i\bigl(x'\vec e_x+y'\vec e_y+z'\vec e_z\bigr).
 $$
 
 The basis is $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the real scalar block $A_1=\mathbb{R}e_t$ and the imaginary vector block $B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$. The temporal direction carries a real coordinate and the three spatial directions carry imaginary ones, the reverse of the material sector; the placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.
@@ -74,7 +74,7 @@ They are the **pure states** of the sector, and they are the biquaternion analog
 The quaternionic norm on the sector is
 
 $$
-N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2=c^2{t'}^2-{x'}^2-{y'}^2-{z'}^2,
+N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2=c^2{t}^2-{x'}^2-{y'}^2-{z'}^2,
 $$
 
 of signature $(1,3)$: one positive temporal direction and three negative spatial ones. It is indefinite, and it is not the positive form that a density matrix would suggest.
@@ -393,11 +393,11 @@ The open questions are concrete.
 
 ## Limits
 
-The article establishes the algebra of the sector and its interpretation as a two-state system. It does not establish that the sector is a distinct sector of the physical world, and it does not supply a dynamics, a coupling or an empirical prediction. The Born rule is derived as a property of the pairing, not as a frequency. The Bloch ball is the state space of the frame, not a relativistic state space. The identification of the projection with a physical measurement is the interpretive step, and the collapse is not derived. The sector's time is the real coordinate $c t'$, not the material time $i c t$.
+The article establishes the algebra of the sector and its interpretation as a two-state system. It does not establish that the sector is a distinct sector of the physical world, and it does not supply a dynamics, a coupling or an empirical prediction. The Born rule is derived as a property of the pairing, not as a frequency. The Bloch ball is the state space of the frame, not a relativistic state space. The identification of the projection with a physical measurement is the interpretive step, and the collapse is not derived. The sector's time is the real coordinate $c t$, not the material time $i c t'$.
 
 ## Summary
 
-- The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde Q=c t'\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$.
+- The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde Q=c t\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$.
 - Its norm is indefinite of signature $(1,3)$; positivity is a condition on the eigenvalues, not on the norm.
 - The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are the halvings of the roots of $+1$ and are zero divisors.
 - The state slice (trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
@@ -414,7 +414,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{M}_+$ | the Hermitian subspace, the informational sector |
-| $\tilde Q=c t' e_t+i\vec q'$ | an informational element |
+| $\tilde Q=c t e_t+i\vec q'$ | an informational element |
 | $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | the pure-state idempotents |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a state, normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$; the Bloch vector $\vec r$ |
 | $\tilde H=h_te_t+i\vec h$ | an observable, with eigenvalues $h_t\pm\lvert\vec h\rvert$ |

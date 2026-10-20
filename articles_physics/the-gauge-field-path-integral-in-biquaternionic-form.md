@@ -56,7 +56,7 @@ $$
 \tilde{A} = iA_0e_t+\sum_{k=1}^{3}A_k\vec e_k ,
 $$
 
-with $A_0$ and $A_k$ the real component fields in the $ict$ convention. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_t\partial/\partial Q_t\,\Gamma+\sum_k\vec e_k\,\partial/\partial Q_k\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
+with $A_0$ and $A_k$ the real component fields in the $ict'$ convention. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_t\partial/\partial Q_t\,\Gamma+\sum_k\vec e_k\,\partial/\partial Q_k\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
 
 ## Gauge Fixing: The Faddeev–Popov Construction
 

@@ -91,7 +91,7 @@ The left-hand side is $\tilde\nabla\tilde F$; the right-hand side is the mass te
 
 ### Why the equation is the right one
 
-The transcription is not a guess. It is fixed by two requirements: the equation must reproduce the standard Proca system, and it must do so in the series' $ict$ convention without a change of metric. The check is carried out below by solving the equation for plane waves and reading off the dispersion relation. The result is the physical massive shell and the Lorenz condition, and the two together are the standard content of the Proca system. Any other relative sign between the two sides would give a dispersion relation with the wrong sign of $m^2$, that is, a spacelike or tachyonic shell, and the check excludes it.
+The transcription is not a guess. It is fixed by two requirements: the equation must reproduce the standard Proca system, and it must do so in the series' $ict'$ convention without a change of metric. The check is carried out below by solving the equation for plane waves and reading off the dispersion relation. The result is the physical massive shell and the Lorenz condition, and the two together are the standard content of the Proca system. Any other relative sign between the two sides would give a dispersion relation with the wrong sign of $m^2$, that is, a spacelike or tachyonic shell, and the check excludes it.
 
 ### The failure of gauge invariance, explicitly
 
@@ -181,7 +181,7 @@ $$
 \tilde P = i\frac{\omega}{c}\,e_t + \vec k,
 $$
 
-where $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde P\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde P^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as
+where $\mathrm{Sc}(\tilde P\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t'$ and $\tilde{A}_0$ is a constant biquaternion of the material sector, so that $A_t$ is purely imaginary and $\vec a$ is real. Differentiation gives $\tilde{\nabla}\tilde{A} = i\tilde P\tilde{A}$ and $\tilde{\nabla}^{\natural}\tilde{A} = i\tilde P^{\natural}\tilde{A}$, and the Klein–Gordon operator acts as
 
 $$
 \Box\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})) = \left(\frac{\omega^2}{c^2} - \vec k^2\right)\exp(\,i\,\mathrm{Sc}(\tilde P\tilde{Q}^{\natural})),

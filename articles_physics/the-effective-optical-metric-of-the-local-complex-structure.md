@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The local complex structure of the framework identifies the temporal direction with the imaginary scalar generator, $t\mapsto i\,c\,t\,e_t$, with $c$ the local speed of light in the medium. It induces at each point the quadratic form
+The local complex structure of the framework identifies the temporal direction with the imaginary scalar generator, $t'\mapsto i\,c\,t'\,e_t$, with $c$ the local speed of light in the medium. It induces at each point the quadratic form
 $$
-\langle d\tilde{Q}\rangle_{\natural}=(ic\,dt)^2+dx^2+dy^2+dz^2=-c^2\,dt^2+dx^2+dy^2+dz^2,
+\langle d\tilde{Q}\rangle_{\natural}=(ic\,dt')^2+dx^2+dy^2+dz^2=-c^2\,d{t'}^2+dx^2+dy^2+dz^2,
 $$
 of signature $(3,1)$, so the framework reads a Lorentzian metric off the algebra rather than postulating it. The structure leaves one number free, the scale $c=1/\sqrt{\epsilon\mu}$; the null cone of the form has aperture $c$; and the wave operator $\Box=\Delta+ \partial^2/\partial Q_t^2$ has characteristic speed $c$ (*The Local Complex Structure and the Speed of Light*).
 
@@ -12,7 +12,7 @@ That construction is announced as a **metric**, and the word invites a specific 
 
 This article takes up that separate question. The result is short and sharp: **in a static medium the framework's local metric is exactly the optical metric**, to machine precision and with no extra assumption, and the two independent boundaries — motion and anisotropy — show exactly where the framework's single scalar $c$ runs out. A third boundary is more interesting than either: when $\epsilon\mu$ changes sign the framework's metric changes signature, and that change is the Wick rotation of the local structure.
 
-Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central $i$. The material sector is $\mathbb{M}_-$ with $\tilde{R}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and norm $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is $\eta=\mathrm{diag}(-c^2,1,1,1)$ in the coordinate basis $(\partial/\partial t,\partial/\partial Q_x,\partial/\partial Q_y,\partial/\partial Q_z)$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central $i$. The material sector is $\mathbb{M}_-$ with $\tilde{R}=ic\,t'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and norm $\langle\tilde{R}\rangle_{\natural}=\tilde{R}\tilde{R}^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is $\eta=\mathrm{diag}(-c^2,1,1,1)$ in the coordinate basis $(\partial/\partial t',\partial/\partial Q_x,\partial/\partial Q_y,\partial/\partial Q_z)$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
 
 ## The Optical Metric of a Medium
 
@@ -34,9 +34,9 @@ g^{\mathrm{J}}=\mathrm{diag}\!\left(-\frac{1}{n^2},\,1,\,1,\,1\right).
 $$
 In units $c_0=1$, its null cone is
 $$
--\frac{dt^2}{n^2}+dx^2+dy^2+dz^2=0
+-\frac{d{t'}^2}{n^2}+dx^2+dy^2+dz^2=0
 \;\Longleftrightarrow\;
-\left|\frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt}\right|=\frac{1}{n}=c ,
+\left|\frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt'}\right|=\frac{1}{n}=c ,
 $$
 so the coordinate speed of light in the medium is $1/n$: the optical metric reproduces the medium's light speed by construction. This is the standard object, and nothing about it is in question.
 
@@ -54,7 +54,7 @@ $$
 \boxed{\;n=\frac{c_0}{c}=\frac{1}{c}\;}\qquad(c_0=1),\qquad c=\frac{1}{n}.
 $$
 
-The reason is structural and not a coincidence. Gordon's conformal factor in the static case is $1/n^2=1/(\epsilon\mu)$ in vacuum units, and the framework's coefficient in the $dt^2$ slot is $c^2=1/(\epsilon\mu)$; the two expressions are the same, so they coincide once $n$ is identified with $1/c$. The framework's algebra supplies the sign of the coefficient — the minus is $(i)^2$ — and the medium supplies its magnitude, which is exactly the division of labour that *The Local Complex Structure and the Speed of Light* states for the scale $c$.
+The reason is structural and not a coincidence. Gordon's conformal factor in the static case is $1/n^2=1/(\epsilon\mu)$ in vacuum units, and the framework's coefficient in the $d{t'}^2$ slot is $c^2=1/(\epsilon\mu)$; the two expressions are the same, so they coincide once $n$ is identified with $1/c$. The framework's algebra supplies the sign of the coefficient — the minus is $(i)^2$ — and the medium supplies its magnitude, which is exactly the division of labour that *The Local Complex Structure and the Speed of Light* states for the scale $c$.
 
 ### The null cone
 
@@ -91,7 +91,7 @@ In an ideal plasma with $\epsilon(\omega)=\epsilon_0(1-\omega_p^2/\omega^2)$ the
 
 The interpretive content is exact. With $c$ purely imaginary, $c=i\lvert c\rvert$, the temporal coordinate of the material sector becomes
 $$
-ict=i\,(i\lvert c\rvert)\,t=-\lvert c\rvert\,t ,
+ict'=i\,(i\lvert c\rvert)\,t'=-\lvert c\rvert\,t' ,
 $$
 **real**. The imaginary time direction has turned into a real one, which is precisely what the Wick rotation does: the framework's Euclidean continuation is the transfer from $\mathbb{M}_-$ to the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (*Interpretation of the Wick Rotation in the Biquaternion Universe*), and the same transfer occurs here when the medium's $\epsilon\mu$ changes sign. The corpus notes the boundary for a complex $c$ near an absorption line — the rescaling becomes a complex rotation and the scale can no longer be read as the aperture of a real null cone (*The Local Complex Structure and the Speed of Light*). The dielectric-to-plasma crossing is the clean lossless case of that boundary: it is the slice on which $c$ is exactly imaginary, and it is the local structure's Wick rotation.
 
@@ -99,7 +99,7 @@ $$
 
 **What it adds.** The identification of the framework's local metric with Gordon's optical metric, exact in the static case; the interpretation of the null cone of the algebra as the optical-metric cone; and the three boundaries, of which the signature change is the substantive one, since it connects the medium's dielectric sign to the framework's own Euclidean continuation.
 
-**What it does not add.** No new prediction: the optical metric is standard, and the framework's contribution is a repackaging of it in which the conformal factor is the algebra's own scale. In particular the interpretation does not deliver gravity. For a **constant** medium the metric $\eta=\mathrm{diag}(-c^2,1,1,1)$ is the flat Minkowski form in the rescaled time coordinate $x^0=ct$, so it carries no curvature; and for a varying one the framework's class of metrics is the class with flat spatial slices, which admits no non-flat vacuum geometry — no Weyl curvature, no gravitational waves, no black-hole exteriors (*Curved Spacetime and the Biquaternion Framework*). The optical metric is a *causal* structure, not a gravitational one, and this article claims no more.
+**What it does not add.** No new prediction: the optical metric is standard, and the framework's contribution is a repackaging of it in which the conformal factor is the algebra's own scale. In particular the interpretation does not deliver gravity. For a **constant** medium the metric $\eta=\mathrm{diag}(-c^2,1,1,1)$ is the flat Minkowski form in the rescaled time coordinate $x^0=ct'$, so it carries no curvature; and for a varying one the framework's class of metrics is the class with flat spatial slices, which admits no non-flat vacuum geometry — no Weyl curvature, no gravitational waves, no black-hole exteriors (*Curved Spacetime and the Biquaternion Framework*). The optical metric is a *causal* structure, not a gravitational one, and this article claims no more.
 
 ## Physical Readings
 
@@ -122,7 +122,7 @@ The interpretation adds no prediction and no gravity. It is a repackaging of Gor
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$ | Material sector, $\tilde{R}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
+| $\mathbb{M}_-$ | Material sector, $\tilde{R}=ic\,t'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; null cone $N=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium and vacuum speeds |
 | $n=c_0/c$ | Refractive index |

@@ -213,10 +213,10 @@ The connection is real, as it must be for a phase; it is the connection whose pa
 
 ### The Criterion and the Transport
 
-The in-phase criterion is itself a rule of transport. If the state at $t+dt$ is to be in phase with the state at $t$, then the overlap $\langle J(t)|J(t+dt)\rangle$ must be real and positive, that is
+The in-phase criterion is itself a rule of transport. If the state at $t'+dt'$ is to be in phase with the state at $t'$, then the overlap $\langle J(t')|J(t'+dt')\rangle$ must be real and positive, that is
 
 $$
-\mathrm{Im}\,\langle J|dJ/dt\rangle=0
+\mathrm{Im}\,\langle J|dJ/dt'\rangle=0
 $$
 
 along the transport. A family of states satisfying this condition is **horizontal** for the connection: it is the family obtained by Pancharatnam transport, and the prescription is the optical analogue of parallel transport. The connection $\mathcal A=i\langle J|dJ\rangle$ is the one-form whose integral gives the residual phase when the states are compared in a fixed gauge rather than along the horizontal transport.

@@ -41,7 +41,7 @@ The two-body problem reduces to this one-body form by separating the centre-of-m
 With the motion planar and $L = |\vec L|$ constant, the energy is
 
 $$
-E = \frac{1}{2}m\left(dr/dt\right)^{2} + V_{\text{eff}}(r), \qquad V_{\text{eff}}(r) = -\frac{\kappa}{r} + \frac{L^2}{2mr^2} .
+E = \frac{1}{2}m\left(dr/dt'\right)^{2} + V_{\text{eff}}(r), \qquad V_{\text{eff}}(r) = -\frac{\kappa}{r} + \frac{L^2}{2mr^2} .
 $$
 
 The effective potential has a single minimum at the circular orbit radius
@@ -124,7 +124,7 @@ The result is the classical counterpart of the quantum spectrum: the energy of a
 
 **First law.** The orbit is an ellipse with the force centre at one focus. The result is the conic solution above with $0 < e < 1$, and its foci lie on the major axis at distance $ae$ on either side of the centre of the ellipse; one of them is the origin of coordinates, because the polar angle is measured from the force centre.
 
-**Second law.** The radius vector sweeps equal areas in equal times. This is the areal law of the central-scalar limit, $dA/dt = L/(2m) = \text{const}$, and it holds for every central force. Its Keplerian content is the constancy of $L$, and therefore of the orbital plane and of the angular momentum.
+**Second law.** The radius vector sweeps equal areas in equal times. This is the areal law of the central-scalar limit, $dA/dt' = L/(2m) = \text{const}$, and it holds for every central force. Its Keplerian content is the constancy of $L$, and therefore of the orbital plane and of the angular momentum.
 
 **Third law.** The square of the period is proportional to the cube of the semi-major axis. The area of the ellipse is $\pi ab$ with
 
@@ -158,17 +158,17 @@ $$
 \vec A\cdot\vec L = 0 ,
 $$
 
-because $\vec p\times\vec L$ is perpendicular to $\vec L$ and $\vec u_r$ is perpendicular to $\vec L$, and it is conserved for the inverse-square force. The conservation is a three-line computation. Since $d\vec L/dt = 0$ and $d\vec p/dt = -\kappa\vec u_r/r^2$,
+because $\vec p\times\vec L$ is perpendicular to $\vec L$ and $\vec u_r$ is perpendicular to $\vec L$, and it is conserved for the inverse-square force. The conservation is a three-line computation. Since $d\vec L/dt' = 0$ and $d\vec p/dt' = -\kappa\vec u_r/r^2$,
 
 $$
-\frac{d}{dt}\left(\vec p\times\vec L\right) = d\vec p/dt\times\vec L = -\frac{\kappa}{r^2}\,\vec u_r\times\vec L
-= m\kappa\left(\frac{\vec v}{r} - \frac{dr/dt}{r^2}\vec r\right) = m\kappa\,\frac{d\vec u_r}{dt} ,
+\frac{d}{dt'}\left(\vec p\times\vec L\right) = d\vec p/dt'\times\vec L = -\frac{\kappa}{r^2}\,\vec u_r\times\vec L
+= m\kappa\left(\frac{\vec v}{r} - \frac{dr/dt'}{r^2}\vec r\right) = m\kappa\,\frac{d\vec u_r}{dt'} ,
 $$
 
-where the vector triple product was expanded with $\vec u_r\times(\vec r\times\vec v) = dr/dt\,\vec r - r\vec v$ using $\vec u_r\cdot\vec v = dr/dt$. The second term of $\vec A$ differentiates to the same quantity, so the two cancel and
+where the vector triple product was expanded with $\vec u_r\times(\vec r\times\vec v) = dr/dt'\,\vec r - r\vec v$ using $\vec u_r\cdot\vec v = dr/dt'$. The second term of $\vec A$ differentiates to the same quantity, so the two cancel and
 
 $$
-\frac{d\vec A}{dt} = 0 .
+\frac{d\vec A}{dt'} = 0 .
 $$
 
 The cancellation uses the inverse-square form of the force and fails for a general central force: the Runge–Lenz vector is the extra conserved quantity that makes the Kepler problem maximally superintegrable.
@@ -243,7 +243,7 @@ $$
 
 so that the orbit is an ellipse, parabola or hyperbola according to whether $E$ is negative, zero or positive. The semi-major axis is $a = -\kappa/(2E)$ and the semi-minor axis $b = \sqrt{L^2a/(m\kappa)}$.
 
-Kepler's three laws follow: the ellipse with the force centre at a focus; the areal law $dA/dt = L/(2m)$, which holds for every central force; and the harmonic law
+Kepler's three laws follow: the ellipse with the force centre at a focus; the areal law $dA/dt' = L/(2m)$, which holds for every central force; and the harmonic law
 
 $$
 T = 2\pi\sqrt{\frac{ma^3}{\kappa}} ,

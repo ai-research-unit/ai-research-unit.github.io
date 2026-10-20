@@ -16,7 +16,7 @@ Two structural facts follow and are developed below. First, the Gibbs state of a
 
 The article proceeds as follows. The Gibbs state is defined and its existence condition — the convergence of $Z$ — is treated as part of the content rather than as a technicality. The thermodynamic quantities are then written as functionals of the state and computed through the trace formula. The Gibbs state is characterised variationally, as the minimiser of the free-energy functional, and the Legendre structure relating $\log Z$, the entropy, and the free energy is set out with its signs checked against the thermodynamic identities. The low- and high-temperature limits are computed, the KMS condition is identified as the operator-algebraic characterisation of the same state, and the closing section separates what the framework adds from what it does not.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$. The four fixed-point subspaces are the complex subspace $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (the complex scalars, the centre of $\mathbb{B}$), the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part; the informational sector), and the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part; the material sector, whose time coordinate is $ict$). A Hermitian element is written $\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$; a state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$. The trace formula is $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$. Units are $\hbar=1$ and $k_B=1$, so $\beta=1/T$ and the entropy is measured in units of $k_B$; restoring $k_B$ multiplies the entropy and the heat capacity by $k_B$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$. The four fixed-point subspaces are the complex subspace $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (the complex scalars, the centre of $\mathbb{B}$), the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part; the informational sector), and the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part; the material sector, whose time coordinate is $ict'$). A Hermitian element is written $\tilde H=h_te_t+i\vec h$ with $h_t\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$; a state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$. The trace formula is $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$. Units are $\hbar=1$ and $k_B=1$, so $\beta=1/T$ and the entropy is measured in units of $k_B$; restoring $k_B$ multiplies the entropy and the heat capacity by $k_B$.
 
 ## The Gibbs State and the Convergence of $Z$
 
@@ -228,13 +228,13 @@ The high-temperature limit is exactly where the convergence condition of the sec
 
 The Gibbs state is one description of thermal equilibrium; the KMS condition is another, and the companion article on the KMS condition shows that they describe the same state, not two facts that happen to agree.
 
-In the framework, with operators $\tilde Q_2,\tilde Q_1\in\mathbb{B}$ and thermal state $\omega_\beta$, the correlation function $F_{\tilde Q_2\tilde Q_1}(t)=\omega_\beta(\tilde Q_2\,\alpha_t(\tilde Q_1))$ extends analytically to the strip $0<\mathrm{Im}\,t<\beta$ and satisfies the boundary relation
+In the framework, with operators $\tilde Q_2,\tilde Q_1\in\mathbb{B}$ and thermal state $\omega_\beta$, the correlation function $F_{\tilde Q_2\tilde Q_1}(t')=\omega_\beta(\tilde Q_2\,\alpha_{t'}(\tilde Q_1))$ extends analytically to the strip $0<\mathrm{Im}\,t'<\beta$ and satisfies the boundary relation
 
 $$
-F_{\tilde Q_2\tilde Q_1}(t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-t).
+F_{\tilde Q_2\tilde Q_1}(t'+i\beta)=F_{\tilde Q_1\tilde Q_2}(-t').
 $$
 
-By the Haag–Hugenholtz–Winnink theorem this relation characterises the thermal state at inverse temperature $\beta$, and the Gibbs state satisfies it; the two are the same state. The framework's contribution is the location of the objects. The analytic continuation is a shift in the complexified time plane whose imaginary direction is the time coordinate $ict$ of $\mathbb{M}_-$ and whose real direction is the time coordinate of $\mathbb{M}_+$, as the KMS article states, and the **modular Hamiltonian**
+By the Haag–Hugenholtz–Winnink theorem this relation characterises the thermal state at inverse temperature $\beta$, and the Gibbs state satisfies it; the two are the same state. The framework's contribution is the location of the objects. The analytic continuation is a shift in the complexified time plane whose imaginary direction is the time coordinate $ict'$ of $\mathbb{M}_-$ and whose real direction is the time coordinate of $\mathbb{M}_+$, as the KMS article states, and the **modular Hamiltonian**
 
 $$
 K=-\log\tilde{Ϛ}_\beta=\beta\tilde H+(\log Z)\,e_t=\beta\big(\tilde H-F e_t\big)
@@ -262,7 +262,7 @@ The Gibbs state exists only when $Z$ converges: always for a finite-level system
 
 The thermodynamic functionals of the state are the internal energy $E=\mathrm{Tr}(\tilde{Ϛ}\tilde H)$, the entropy $S=-\mathrm{Tr}(\tilde{Ϛ}\log\tilde{Ϛ})$, the free energy $F=E-S/\beta$, and the heat capacity $C=\partial E/\partial T$. For a qubit they are $E=h_t-|\vec h|\tanh x$, $S=\log2+\log\cosh x-x\tanh x$, $F=h_t-(\log2+\log\cosh x)/\beta$, and $C=x^2\mathrm{sech}^2x$ with $x=\beta|\vec h|$, the Schottky form with maximum $0.439229$ at $x=1.199679$.
 
-The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}]=\mathrm{Tr}(\tilde{Ϛ}\tilde H)-\beta^{-1}S[\tilde{Ϛ}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_t-|\vec h|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}=\tfrac12e_t$, $E=h_t$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde Q_2\tilde Q_1}(t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $K=-\log\tilde{Ϛ}=\beta(\tilde H-Fe_t)$ lies in $\mathbb{M}_+$.
+The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}]=\mathrm{Tr}(\tilde{Ϛ}\tilde H)-\beta^{-1}S[\tilde{Ϛ}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_t-|\vec h|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}=\tfrac12e_t$, $E=h_t$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde Q_2\tilde Q_1}(t'+i\beta)=F_{\tilde Q_1\tilde Q_2}(-t')$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $K=-\log\tilde{Ϛ}=\beta(\tilde H-Fe_t)$ lies in $\mathbb{M}_+$.
 
 The framework reproduces standard thermodynamics and claims no new law. Its addition is the interpretation: the potentials are scalar parts of $\mathbb{M}_+$ elements, the state is a path in the Bloch ball, and the temperature is a displacement along the imaginary-time axis of $\mathbb{M}_-$.
 
@@ -290,7 +290,7 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 | $C=\partial E/\partial T=k_B\beta^2\mathrm{Var}(\tilde H)=x^2\mathrm{sech}^2x$ | Heat capacity (Schottky form) |
 | $A(\beta)=\log Z$, $S=A+\beta E$, $F=E-TS$ | Legendre structure |
 | $K=-\log\tilde{Ϛ}_\beta=\beta(\tilde H-Fe_t)$ | Modular Hamiltonian (in $\mathbb{M}_+$) |
-| $F_{\tilde Q_2\tilde Q_1}(t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-t)$ | KMS boundary relation |
+| $F_{\tilde Q_2\tilde Q_1}(t'+i\beta)=F_{\tilde Q_1\tilde Q_2}(-t')$ | KMS boundary relation |
 | $\beta=1/T$ ($\hbar=k_B=1$) | Inverse temperature |
 
 ## Further Reading

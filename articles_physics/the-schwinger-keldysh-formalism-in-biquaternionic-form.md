@@ -28,7 +28,7 @@ whose thermal factor is a **central scalar**, so it multiplies every entry of th
 
 The article proceeds as follows. A section fixes the contour and the doubled fields. A section separates the branch doubling from the algebra's doubling. A section gives the Keldysh rotation and the matrix of Green's functions, with the verification. A section treats the equilibrium relations and the fluctuation–dissipation theorem, a section the relation to Matsubara and the thermal states of the companion articles, and a section the non-equilibrium case. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The Matsubara Thermal Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the material coordinate; $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(\exp(\beta\omega)-1)$. The branch index is written $a,b\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
+**Conventions.** We use those of the companion articles, in particular *The Matsubara Thermal Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the material coordinate; $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(\exp(\beta\omega)-1)$. The branch index is written $a,b\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
 
 ## The Closed-Time-Path Contour and the Doubled Fields
 
@@ -36,9 +36,9 @@ The formalism begins with a contour and produces a doubling; the doubling is wha
 
 **The contour.** The **closed-time path** $\mathcal{C}$ runs along the real time axis from $-\infty$ to $+\infty$ and then back from $+\infty$ to $-\infty$, with a possible excursion into the imaginary direction. Writing the two legs as $\mathcal{C}_+$ and $\mathcal{C}_-$, the field is defined on each leg separately:
 $$
-\tilde\Phi_+(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde\Phi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t\in\mathcal{C}_+},
+\tilde\Phi_+(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde\Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t'\in\mathcal{C}_+},
 \qquad
-\tilde\Phi_-(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde\Phi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t\in\mathcal{C}_-}.
+\tilde\Phi_-(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \equiv \tilde\Phi(t',x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\big|_{t'\in\mathcal{C}_-}.
 $$
 The generating functional is
 $$
@@ -140,7 +140,7 @@ the **fluctuation–dissipation relation**. With the model retarded and advanced
 
 **Centrality and the framework.** The thermal factor $\coth(\beta\omega/2)$ is a central scalar, so the fluctuation–dissipation relation multiplies every component of the module structure identically: the relation is diagonal in the module and in the sector index. Consequently, for a scalar biquaternion field the equilibrium CTP structure factorizes into the two sectors, and each sector carries the same thermal factor; for a spinor field the factor is still central but the difference $G^R-G^A$ is a matrix, and the relation is a matrix proportionality rather than a scalar one.
 
-**Where the thermal factor comes from.** It comes from the state, not the algebra: the KMS condition at inverse temperature $\beta$ — the analyticity of $G$ in the strip $0<\mathrm{Im}\,t<\beta$ and the boundary relation $G(t+i\beta)=G(-t)$ — is what forces the coefficient to be $\coth(\beta\omega/2)$. The framework houses the strip as the complexified material direction; the value of $\beta$ is an input, exactly as in the Matsubara article.
+**Where the thermal factor comes from.** It comes from the state, not the algebra: the KMS condition at inverse temperature $\beta$ — the analyticity of $G$ in the strip $0<\mathrm{Im}\,t'<\beta$ and the boundary relation $G(t'+i\beta)=G(-t')$ — is what forces the coefficient to be $\coth(\beta\omega/2)$. The framework houses the strip as the complexified material direction; the value of $\beta$ is an input, exactly as in the Matsubara article.
 
 ## Relation to Matsubara and to the Thermal States
 

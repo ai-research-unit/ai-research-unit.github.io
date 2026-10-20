@@ -75,30 +75,30 @@ $$
 satisfying $\{\gamma^{\mu},\gamma^{\nu}\} = 2g^{\mu\nu}I_4$ with $g = \operatorname{diag}(+1,-1,-1,-1)$. The Dirac equation is $i\gamma^{\mu}\partial/\partial Q_\mu\,\Psi = m\Psi$. Inserting $\Psi = (\psi_L,\psi_R)^{T}$ and the block form of the gammas gives, after collecting the two blocks,
 
 $$
-i\left(\partial/\partial t + \boldsymbol{\sigma}\cdot\nabla\right)\psi_R = m\,\psi_L, \qquad
-i\left(\partial/\partial t - \boldsymbol{\sigma}\cdot\nabla\right)\psi_L = m\,\psi_R.
+i\left(\partial/\partial t' + \boldsymbol{\sigma}\cdot\nabla\right)\psi_R = m\,\psi_L, \qquad
+i\left(\partial/\partial t' - \boldsymbol{\sigma}\cdot\nabla\right)\psi_L = m\,\psi_R.
 $$
 
 **The massless case.** Setting $m=0$, the two equations decouple:
 
 $$
-\left(\partial/\partial t + \boldsymbol{\sigma}\cdot\nabla\right)\psi_R = 0, \qquad
-\left(\partial/\partial t - \boldsymbol{\sigma}\cdot\nabla\right)\psi_L = 0.
+\left(\partial/\partial t' + \boldsymbol{\sigma}\cdot\nabla\right)\psi_R = 0, \qquad
+\left(\partial/\partial t' - \boldsymbol{\sigma}\cdot\nabla\right)\psi_L = 0.
 $$
 
 Each is a two-component **Weyl equation**, one per chiral half: $\psi_L\in S$ obeys the $\bar{\sigma}$-equation and $\psi_R\in\bar{S}$ the $\sigma$-equation, and the two propagate independently. The massless Dirac field is thus two independent Weyl fields.
 
-**The massive case.** Eliminating $\psi_R$: apply $i(\partial/\partial t+\boldsymbol{\sigma}\cdot\nabla)$ to the second equation and use the first,
+**The massive case.** Eliminating $\psi_R$: apply $i(\partial/\partial t'+\boldsymbol{\sigma}\cdot\nabla)$ to the second equation and use the first,
 
 $$
-i\left(\partial/\partial t+\boldsymbol{\sigma}\cdot\nabla\right)i\left(\partial/\partial t-\boldsymbol{\sigma}\cdot\nabla\right)\psi_L
-= i\left(\partial/\partial t+\boldsymbol{\sigma}\cdot\nabla\right)m\psi_R = m^2\psi_L .
+i\left(\partial/\partial t'+\boldsymbol{\sigma}\cdot\nabla\right)i\left(\partial/\partial t'-\boldsymbol{\sigma}\cdot\nabla\right)\psi_L
+= i\left(\partial/\partial t'+\boldsymbol{\sigma}\cdot\nabla\right)m\psi_R = m^2\psi_L .
 $$
 
-Using $(\boldsymbol{\sigma}\cdot\nabla)^2 = \nabla^2$ and $i^2=-1$, the left side is $\left(\nabla^2-\partial^2/\partial t^2\right)\psi_L = \Box\psi_L$ for the **series d'Alembertian**,
+Using $(\boldsymbol{\sigma}\cdot\nabla)^2 = \nabla^2$ and $i^2=-1$, the left side is $\left(\nabla^2-\partial^2/\partial {t'}^2\right)\psi_L = \Box\psi_L$ for the **series d'Alembertian**,
 
 $$
-\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta = -\partial^2/\partial t^2 + \nabla^2 ,
+\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta = -\partial^2/\partial {t'}^2 + \nabla^2 ,
 $$
 
 so
@@ -107,7 +107,7 @@ $$
 \left(\Box - m^2\right)\psi_L = 0,
 $$
 
-and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: when $m=0$ the coupling disappears, and each half separately obeys the massless wave equation; for $m\neq0$ it obeys the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\psi = 0$ in physical units — the series equation. (The operator is the series one: this article writes the Weyl algebra in real time $x^0 = ct$ and the standard metric $(+,-,-,-)$, in which $\partial^2/\partial Q_t^2 = -\partial^2/\partial t^2$, and nothing else changes.)
+and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: when $m=0$ the coupling disappears, and each half separately obeys the massless wave equation; for $m\neq0$ it obeys the Klein–Gordon equation $(\Box - m^2c^2/\hbar^2)\psi = 0$ in physical units — the series equation. (The operator is the series one: this article writes the Weyl algebra in real time $x^0 = ct'$ and the standard metric $(+,-,-,-)$, in which $\partial^2/\partial Q_t^2 = -\partial^2/\partial {t'}^2$, and nothing else changes.)
 
 **Mass shell.** For a plane wave $\Psi\propto \exp(-ik_0x^0+i\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, the Klein–Gordon equation gives $k_0^2 = \vec k^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_t + \vec p\in\mathbb{M}_-$ and $k = p/\hbar$,
 

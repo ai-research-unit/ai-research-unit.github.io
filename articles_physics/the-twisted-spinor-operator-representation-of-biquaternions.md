@@ -154,10 +154,10 @@ $$
 \mathsf{M}_2(B)\,X\,\mathsf{M}_2(B)=\mathrm{diag}\bigl(\exp(\psi),\exp(-\psi)\bigr)X ,
 $$
 
-so the exponent deposited by the operator is doubled by the sandwich. On a four-vector $X=t\,e_t+z\,\vec e_z$ of the material sector this reads on the $(t,z)$ plane as
+so the exponent deposited by the operator is doubled by the sandwich. On a four-vector $X=t'\,e_t+z\,\vec e_z$ of the material sector this reads on the $(t',z)$ plane as
 
 $$
-t_2=t\cosh\psi+z\sinh\psi, \qquad z_2=t\sinh\psi+z\cosh\psi ,
+t'_2=t'\cosh\psi+z\sinh\psi, \qquad z_2=t'\sinh\psi+z\cosh\psi ,
 $$
 
 the standard boost with rapidity $\psi$, produced by the rotor that stores $\psi/2$. The exponent that the operator stores is doubled, and the same holds for the rotation angle: the **double rotation** and the **double dilatation** are the two faces of the single statement that the sandwich uses each non-central factor twice, and the central factors once or not at all.

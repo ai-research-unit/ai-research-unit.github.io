@@ -49,10 +49,10 @@ the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zer
 **Solution (b).** Fix the plane-wave convention $\propto \exp(i\Phi)$ with
 $$
 \Phi = \mathrm{Sc}\!\left(\tilde P\tilde{R}^{\natural}\right)
-= \left(\frac{i\omega}{c}\right)(ic\,t) + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
-= \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t ,
+= \left(\frac{i\omega}{c}\right)(ic\,t') + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+= \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t' ,
 \qquad
-\tilde{R} = ic\,t\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) .
+\tilde{R} = ic\,t'\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) .
 $$
 Let $\tilde U$ be any unit-norm biquaternion and let $\tilde P_2 = \tilde U\tilde P\tilde U^{*}$, $\tilde R_2 = \tilde U\tilde{R}\tilde U^{*}$. Then
 $$
@@ -314,7 +314,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde P = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde P\tilde{R}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde P = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde P\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde P\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde P\tilde{R}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'$ is invariant under rotor conjugation.
 
 2. **Frequency invariant.** An observer of four-velocity $\tilde{V}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde P\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 
@@ -340,7 +340,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position |
+| $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position |
 | $\tilde P = i\omega/c\,e_t + \vec k$ | Four-wavevector, $\langle\tilde P\rangle_{\natural} = 0$ for light |
 | $\tilde{V} = \gamma_b(ic\,e_t + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |

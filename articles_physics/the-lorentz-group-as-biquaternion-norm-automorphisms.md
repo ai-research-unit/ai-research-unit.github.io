@@ -27,7 +27,7 @@ Four statements organize the article. The first three are the levels at which th
 
 **Boundaries.** This is a group-theoretic and geometric article. The spinor module, its one-sided action, and the representation theory of the group belong to the sibling category on relativistic quantum theory and to the companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; they are not developed here. The topology of the cover, and the composition law of boosts in detail, belong to the companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*. The structure and the finite-dimensional representations of the group as such are treated in *The Lorentz Group in Biquaternionic Form — Structure and Representations*; this article's subject is the characterization of the group by the form.
 
-**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$.
+**Conventions.** We use those of the read list unchanged. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central scalar imaginary $i$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian: imaginary scalar, real vector — the material sector), $\mathbb{M}_+$ (Hermitian: real scalar, imaginary vector — the informational sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions) and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat = -{}^{*}$ (anti-Hermitian). The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu$, $\mathsf{M}_2(i) = iI_2$. The material coordinate is $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$.
 
 ## The Biquaternion Norm as a Quadratic Form
 
@@ -175,7 +175,7 @@ $$
 \eta = \mathrm{diag}(-1,+1,+1,+1),
 $$
 
-the level-2 Minkowski form of the series. Identifying $x_0 = ct$, it is the interval. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
+the level-2 Minkowski form of the series. Identifying $x_0 = ct'$, it is the interval. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
 | Slice | General element | $\langle\cdot\rangle_{\natural}$ | Signature |
 |---|---|---|---|
@@ -507,7 +507,7 @@ $$
 realized by $\tilde{Q}\mapsto A\tilde{Q}B^{-1}$ with $\det A=\det B=1$. The algebra's real structure selects the anti-Hermitian slice $\mathbb{M}_-$, on which the form restricts to
 
 $$
-\langle ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2,
+\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2,
 \qquad
 \eta = \mathrm{diag}(-1,+1,+1,+1),
 $$

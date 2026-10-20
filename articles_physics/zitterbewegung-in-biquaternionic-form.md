@@ -21,7 +21,7 @@ $$
 or, in natural units $\hbar = c = 1$, $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$. Multiplying by $\gamma^0$ and separating the time derivative puts it in Hamiltonian form,
 
 $$
-i\,\partial/\partial t\,\psi = H\psi, \qquad H = c\,\boldsymbol{\alpha}\cdot p + \beta mc^2,
+i\,\partial/\partial t'\,\psi = H\psi, \qquad H = c\,\boldsymbol{\alpha}\cdot p + \beta mc^2,
 $$
 
 where $\beta = \gamma^0$ and $\boldsymbol{\alpha}^k = \gamma^0\gamma^k$; we restore $\hbar$ and $c$ when a physical statement is made. The matrices satisfy
@@ -35,17 +35,17 @@ so the velocity operator $c\boldsymbol{\alpha}$ has eigenvalues $\pm c$ and the 
 The oscillation follows from the Heisenberg equation. Because $\{\alpha^k,H\} = 2cp_k$ as an operator identity, the velocity in the Heisenberg picture has the exact form (natural units)
 
 $$
-\alpha^k(t) \;=\; \frac{cp_k}{H} \;+\; \exp(iH t)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\exp(-iH t),
+\alpha^k(t') \;=\; \frac{cp_k}{H} \;+\; \exp(iH t')\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'),
 \qquad H = c\,\boldsymbol{\alpha}\cdot p + \beta mc^2,
 $$
 
-in which the first term is the constant drift velocity and the second is the *trembling* term. Its phase evolves as $\exp(\pm 2iEt)$ on the two energy branches, so the angular frequency is $2E/\hbar$, and integrating once gives the position
+in which the first term is the constant drift velocity and the second is the *trembling* term. Its phase evolves as $\exp(\pm 2iEt')$ on the two energy branches, so the angular frequency is $2E/\hbar$, and integrating once gives the position
 
 $$
-x^k(t) = x^k(0) + \frac{c^2p_k}{H}\,t \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH t/\hbar)-1\Big)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big).
+x^k(t') = x^k(0) + \frac{c^2p_k}{H}\,t' \;-\; \frac{i\hbar c}{2H}\Big(\exp(2iH t'/\hbar)-1\Big)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big).
 $$
 
-At rest, $H = \beta mc^2$ and the oscillating term has frequency $2mc^2/\hbar$ and amplitude of order $\hbar/(2mc)$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-iEt/\hbar)$ and a negative-frequency component $\exp(+iEt/\hbar)$ beat at $2E/\hbar$, and the trembling term is exactly that beat.
+At rest, $H = \beta mc^2$ and the oscillating term has frequency $2mc^2/\hbar$ and amplitude of order $\hbar/(2mc)$, half the reduced Compton wavelength. The interference interpretation is immediate: a positive-frequency component $\exp(-iEt'/\hbar)$ and a negative-frequency component $\exp(+iEt'/\hbar)$ beat at $2E/\hbar$, and the trembling term is exactly that beat.
 
 The interpretation of this result is contested, and the article does not settle it. Three positions are in the literature. First, the trembling is an artefact of forcing a single-particle interpretation on a theory whose solutions include both signs of energy: the Foldy–Wouthuysen mean position, the observable position for a positive-energy particle, has no trembling at leading order, so the oscillation is removed rather than seen. Second, the effect is not entirely empty: the same elimination of the small component that produces the mean position leaves the **Darwin term** at the next order in $1/c$, and the Darwin term and the Zitterbewegung are two faces of the same admixture of the negative-energy component — the exercise on the non-relativistic limit derives that term, and the derivation is not repeated here. Third, in quantum field theory the position operator of a single particle is not fundamental, the free-field Zitterbewegung is not directly observable, and the effect is reinterpreted (in some treatments absorbed, in others associated with virtual pair creation and annihilation). None of these interpretations denies the algebra above; they disagree about what it describes.
 
@@ -79,7 +79,7 @@ $$
 \tilde P\tilde P^{\natural}=-m^2c^2.
 $$
 
-The two roots of that condition — positive and negative frequency — are the two branches $\psi^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and $\chi^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$. The spin sums, normalizations, and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
+The two roots of that condition — positive and negative frequency — are the two branches $\psi^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and $\chi^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$. The spin sums, normalizations, and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
 
 One fact about the field decomposition will be needed throughout. For $\tilde\Psi = \tilde\Psi_+ + \tilde\Psi_-$ with $\tilde\Psi_\pm \in \mathbb{M}_\pm$, Hermitian conjugation acts as $\tilde\Psi_\pm^{*} = \pm\tilde\Psi_\pm$, so
 
@@ -103,12 +103,12 @@ satisfying $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(
 The operator identity for the Heisenberg velocity is the exact statement
 
 $$
-\alpha^k(t) = \frac{cp_k}{H} + \exp(iH t/\hbar)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\exp(-iH t/\hbar),
+\alpha^k(t') = \frac{cp_k}{H} + \exp(iH t'/\hbar)\Big(\alpha^k(0) - \frac{cp_k}{H}\Big)\exp(-iH t'/\hbar),
 $$
 
-in which $cp_k/H$ denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is a matrix. Because $H$ anticommutes with $\alpha^k - cp_k/H$, the oscillating factor evolves on each energy eigenspace as $\exp(\pm 2iEt/\hbar)$.
+in which $cp_k/H$ denotes the operator $cp_kH^{-1} = cp_kH/E^2$ — not a multiple of the identity, since $H$ is a matrix. Because $H$ anticommutes with $\alpha^k - cp_k/H$, the oscillating factor evolves on each energy eigenspace as $\exp(\pm 2iEt'/\hbar)$.
 
-The identity was checked by direct matrix computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $t = 0.017, 0.05, 0.23$ in units of $\hbar/(mc^2)$. The left side $\exp(iHt/\hbar)\alpha^k \exp(-iHt/\hbar)$ and the right side above agreed to a maximum absolute entry of $1.2\times10^{-16}$ over all three components and all times. The rest case is then a consequence, $E = mc^2$, not an input.
+The identity was checked by direct matrix computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $t' = 0.017, 0.05, 0.23$ in units of $\hbar/(mc^2)$. The left side $\exp(iHt'/\hbar)\alpha^k \exp(-iHt'/\hbar)$ and the right side above agreed to a maximum absolute entry of $1.2\times10^{-16}$ over all three components and all times. The rest case is then a consequence, $E = mc^2$, not an input.
 
 The frequency is $2E/\hbar$ on general grounds and $2mc^2/\hbar$ at rest. The numbers for the electron, $m_ec^2 = 0.510998950$ MeV and $\hbar = 6.582119569\times10^{-22}$ MeV s, are
 
@@ -130,7 +130,7 @@ There is a genuinely algebraic statement available, and it is the strongest posi
 **The rest-energy phase rotates the sectors into one another.** Factoring out the rest energy writes the free phase as
 
 $$
-\exp(-imc^2t/\hbar) = \cos\!\Big(\frac{mc^2t}{\hbar}\Big)e_t \;-\; \sin\!\Big(\frac{mc^2t}{\hbar}\Big)(ie_t),
+\exp(-imc^2t'/\hbar) = \cos\!\Big(\frac{mc^2t'}{\hbar}\Big)e_t \;-\; \sin\!\Big(\frac{mc^2t'}{\hbar}\Big)(ie_t),
 $$
 
 and the two terms lie in different sectors: $e_t \in \mathbb{M}_+$ and $ie_t \in \mathbb{M}_-$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is therefore a **rotation between the sectors**, at angular frequency $mc^2/\hbar$: it takes the $\mathbb{M}_+$ direction $e_t$ toward the $\mathbb{M}_-$ direction $ie_t$ and back. This is the sense in which the complexification rotates one sector into the other; the rotation is the central phase, whose frequency the mass fixes through the mass shell.
@@ -138,7 +138,7 @@ and the two terms lie in different sectors: $e_t \in \mathbb{M}_+$ and $ie_t \in
 The Zitterbewegung frequency is exactly twice this rate. That is not a coincidence of arithmetic but an algebraic relation: the oscillating factor of the velocity identity is
 
 $$
-\exp(2iH t/\hbar) = \big(\exp(iH t/\hbar)\big)^2,
+\exp(2iH t'/\hbar) = \big(\exp(iH t'/\hbar)\big)^2,
 $$
 
 the **square of the free-evolution phase**, whose rest-frame value is the sector rotation above. So the trembling is not the sector rotation itself; it is the second harmonic of it. The factor of two is the statement that the beat of two branches of opposite frequency is twice the frequency of either branch, and it is the same factor by which the rest-energy phase and the Zitterbewegung frequency differ.
@@ -193,9 +193,9 @@ The Zitterbewegung is usually introduced as a property of the electron, and a co
 
 ## Summary
 
-The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha^k(t) = cp_k/H + \exp(iHt/\hbar)(\alpha^k(0)-cp_k/H)\exp(-iHt/\hbar)$, checked by matrix computation at momentum $|\vec p| = 0.374\,mc$ and three times, with maximum error $1.2\times10^{-16}$; the oscillating term has frequency $2E/\hbar$, equal to $2mc^2/\hbar$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\hbar/(2mc) = 193.1$ fm were confirmed.
+The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha^k(t') = cp_k/H + \exp(iHt'/\hbar)(\alpha^k(0)-cp_k/H)\exp(-iHt'/\hbar)$, checked by matrix computation at momentum $|\vec p| = 0.374\,mc$ and three times, with maximum error $1.2\times10^{-16}$; the oscillating term has frequency $2E/\hbar$, equal to $2mc^2/\hbar$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\hbar/(2mc) = 193.1$ fm were confirmed.
 
-The genuinely algebraic content is that the mass is the linear coupling between the two chiralities (the algebra's two central ideals), that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-imc^2t/\hbar) = \cos(mc^2t/\hbar)e_t - \sin(mc^2t/\hbar)(ie_t)$ rotates the two sectors into one another at $mc^2/\hbar$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
+The genuinely algebraic content is that the mass is the linear coupling between the two chiralities (the algebra's two central ideals), that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-imc^2t'/\hbar) = \cos(mc^2t'/\hbar)e_t - \sin(mc^2t'/\hbar)(ie_t)$ rotates the two sectors into one another at $mc^2/\hbar$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
 The structural claim that motivated the article fails. The positive- and negative-energy components are **not** the $\mathbb{M}_+$ and $\mathbb{M}_-$ sectors. The energy-sign projector is built from $\beta = \gamma^0$, an odd Clifford element with no representative in $\mathbb{B} \cong \mathrm{Cl}^+_{1,3}$, while the sector projectors are built from Hermitian conjugation; the two are splits of different objects (module versus algebra); and on the dictionary the series supplies, both energy branches correspond to $\mathbb{M}_+$ objects while the current lives in $\mathbb{M}_-$. The relation between the trembling and the complexification is therefore one of phase and scale — the trembling is the second harmonic of the sector rotation — and not the identity the strong form of the claim requires.
 

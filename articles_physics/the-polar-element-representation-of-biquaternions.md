@@ -26,7 +26,7 @@ The dictionary is as follows, and each line is established in the section on its
 | factor | physics interpretation |
 |---|---|
 | $r$ | the scale: the square root of the absolute value of the determinant, equal to the proper length of a four-vector |
-| $\exp(i\alpha)$ | the central phase: the $\mathrm{U}(1)$ of the framework, which realises the $ict$ of the material sector as the angle $\pi/2$ |
+| $\exp(i\alpha)$ | the central phase: the $\mathrm{U}(1)$ of the framework, which realises the $ict'$ of the material sector as the angle $\pi/2$ |
 | $B$ | the boost factor of the four-vector, the **square** of the Lorentz boost rotor $\tilde U_{\mathrm L}^{\natural} = \exp\bigl(-i\tfrac{\psi}{2}\vec u_{\mathrm b}\bigr)$, in the positive-definite normalisation |
 | $\tilde q$ | the spatial rotation, the subgroup $\mathrm{Sp}(1) = SU(2)$, and the Thomas–Wigner rotation when two boosts are composed |
 
@@ -45,7 +45,7 @@ The conventions are those of *Conventions in the Biquaternion Universe* as used 
 - **The biquaternion norm.** $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$.
 - **The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.** The fixed space of complex conjugation, the home of the rotations, whose unit sphere is $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H}_{\mathbb{B}} : \tilde q\tilde q^{\natural} = 1\}$, the group of unit real quaternions, meeting the informational sector in $\mathbb{R}e_t$ and the material sector in the pure-vector space.
 - **The informational sector $\mathbb{M}_+$.** The Hermitian subspace, the home of the boosts.
-- **The material sector $\mathbb{M}_-$.** The anti-fixed space of quaternion conjugation, with $Q_t = iq'_t$ and $Q_k = q_k$ real, the home of the four-vectors, with the interval $\langle\tilde Q\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2$.
+- **The material sector $\mathbb{M}_-$.** The anti-fixed space of quaternion conjugation, with $Q_t = iq'_t$ and $Q_k = q_k$ real, the home of the four-vectors, with the interval $\langle\tilde Q\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2$.
 
 An element is **unitary** when it preserves the form, $\tilde{Q}\tilde{Q}^{*}=e_t$, and the unitary elements form the group $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$; the condition is narrower than norm one, the norm-one group being $\mathbb{B}^{\times}_1=\{\langle\tilde Q\rangle_{\natural}=e_t\}\cong SL(2,\mathbb{C})$ (*Conventions in the Biquaternion Universe*, §*The Unitary Convention*), and the rotor of a Lorentz transformation is the norm-one unitary element.
 
@@ -64,13 +64,13 @@ and the four sections that follow read the four factors off the element one at a
 | # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis | determinant | physics |
 |---|---|---|---|---|---|---|---|---|---|---|
 | 1 | $r$ | scale | $1$ | $r$ | hyperbolic | $r$ | $\ln r \in \mathbb{R}$, $r > 0$ | $\mathbb{R}e_t$, the real line | $\lvert\det\mathsf{M}_2\rvert^{1/2}$ | length: $c\tau$, $c$, $mc$ |
-| 2 | $\exp(i\alpha)$ | central phase | $1$ | $\exp(i\alpha)$ | trigonometric | $\cos\alpha\,e_t + i\sin\alpha$ | $\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$ | $i\mathbb{R}\subset\mathbb{C}_{\mathbb{B}}$ | $\tfrac12\arg\det\mathsf{M}_2$ | the $ict$ and the sector; $\pi/2$ timelike, $0$ spacelike |
+| 2 | $\exp(i\alpha)$ | central phase | $1$ | $\exp(i\alpha)$ | trigonometric | $\cos\alpha\,e_t + i\sin\alpha$ | $\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$ | $i\mathbb{R}\subset\mathbb{C}_{\mathbb{B}}$ | $\tfrac12\arg\det\mathsf{M}_2$ | the $ict'$ and the sector; $\pi/2$ timelike, $0$ spacelike |
 | 3 | $B$ | boost factor | $3$ | $\exp(-i\psi\vec u_{\mathrm b})$ | hyperbolic | $\cosh\psi\,e_t - i\sinh\psi\,\vec u_{\mathrm b}$ | rapidity $\psi \in \mathbb{R}$, $\psi \ge 0$ | $\mathbb{M}_+$, traceless; $\vec u_{\mathrm b} \in \mathcal{A}$ | $1$ | the Lorentz boost, $B = (\tilde U_{\mathrm L}^{\natural})^2 = -(i/c)\tilde{V}$ |
 | 4 | $\tilde q$ | rotor | $3$ | $\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ | trigonometric | $\cos\tfrac{\theta}{2}\,e_t + \sin\tfrac{\theta}{2}\,\vec u_{\mathrm r}$ | rotation angle $\theta \in [0,2\pi]$ | $\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B})$; $\vec u_{\mathrm r} \in \mathcal{A}$ | $1$ | the spatial rotation; the Thomas–Wigner rotation |
 
 The determinant column shows what each factor contributes to the determinant of the element: the first two give the determinant, the last two have determinant one and contribute nothing to it. That is the precise sense in which the scale and the phase are the modulus and the boost and the rotor are the normalised transformation.
 
-**The trichotomy of the exponent.** Each of the three exponents is a parameter times a root of $-e_t$, $0$ or $+e_t$, and the character of its exponential is the square of that root. For an element $\nu$ and a real $t$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^nt^n/n!$ collapses according to the square of $\nu$:
+**The trichotomy of the exponent.** Each of the three exponents is a parameter times a root of $-e_t$, $0$ or $+e_t$, and the character of its exponential is the square of that root. For an element $\nu$ and a real $t$, the series $\exp(\nu t)=\sum_{n\ge0}\nu^n{t}^n/n!$ collapses according to the square of $\nu$:
 
 - the trigonometric case $\nu^2 = -e_t$ gives $\cos t\,e_t + \nu\sin t$;
 - the parabolic case $\nu^2 = 0$ gives the truncation $e_t + \nu t$;
@@ -93,7 +93,7 @@ $$
 
 and §*The Boost* below constructs the positive-definite square root and fixes which of the two square roots the representation selects.
 
-**The order of the word.** The word $\exp(i\alpha)B\tilde q$ is the ordered product of its factors, and the order is the physical order of the operations, because $\exp(-i\psi\vec u_{\mathrm b})$ and $\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ do not commute. §*The Order of the Factors* measures the failure; here it fixes the reading, which is the transfer of the $ict$, then the boost, then the rotation.
+**The order of the word.** The word $\exp(i\alpha)B\tilde q$ is the ordered product of its factors, and the order is the physical order of the operations, because $\exp(-i\psi\vec u_{\mathrm b})$ and $\exp\bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\bigr)$ do not commute. §*The Order of the Factors* measures the failure; here it fixes the reading, which is the transfer of the $ict'$, then the boost, then the rotation.
 
 ## The Scale
 
@@ -123,26 +123,26 @@ $$
 \langle\tilde{Q}\rangle_{\natural}\neq0 ,
 $$
 
-and the excluded elements are exactly the zero divisors, of which the null four-vector of the worked examples below is the physics instance. The condition is one complex equation, hence two real equations, $\mathrm{Re}\,\langle\tilde Q\rangle_{\natural} = 0$ and $\mathrm{Im}\,\langle\tilde Q\rangle_{\natural} = 0$, so the light cone has real codimension two in the algebra: with $\dim_{\mathbb{R}}\mathbb{B} = 8$ the cone has real dimension $6$, while the group of units and the algebra itself both have real dimension $8$. Removing the cone therefore leaves an eight-dimensional domain, the same dimension as the algebra, and every failure of the representation is the failure of invertibility on that cone. The count is that of the algebra, where the four coefficients are complex; restricted to the four-dimensional slice of physical four-vectors, whose first coefficient is $ict$ and whose last three are real, the same equation is the familiar light cone of codimension one in that slice, of real dimension three.
+and the excluded elements are exactly the zero divisors, of which the null four-vector of the worked examples below is the physics instance. The condition is one complex equation, hence two real equations, $\mathrm{Re}\,\langle\tilde Q\rangle_{\natural} = 0$ and $\mathrm{Im}\,\langle\tilde Q\rangle_{\natural} = 0$, so the light cone has real codimension two in the algebra: with $\dim_{\mathbb{R}}\mathbb{B} = 8$ the cone has real dimension $6$, while the group of units and the algebra itself both have real dimension $8$. Removing the cone therefore leaves an eight-dimensional domain, the same dimension as the algebra, and every failure of the representation is the failure of invertibility on that cone. The count is that of the algebra, where the four coefficients are complex; restricted to the four-dimensional slice of physical four-vectors, whose first coefficient is $ict'$ and whose last three are real, the same equation is the familiar light cone of codimension one in that slice, of real dimension three.
 
 ### The Scale Is the Proper Length
 
-Take a four-position on a world line of velocity $\vec v = \beta c\,\vec u_{\mathrm b}$, with time component $ct$. In the material sector it is
+Take a four-position on a world line of velocity $\vec v = \beta c\,\vec u_{\mathrm b}$, with time component $ct'$. In the material sector it is
 
 $$
-\tilde{Q} = i\,ct\,e_t + \beta c t\,\vec u_{\mathrm b} ,
+\tilde{Q} = i\,ct'\,e_t + \beta c t'\,\vec u_{\mathrm b} ,
 $$
 
 and its biquaternion norm is the interval
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + \beta^2c^2t^2 = -c^2t^2\left(1-\beta^2\right) ,
+\langle\tilde{Q}\rangle_{\natural} = -c^2{t'}^2 + \beta^2c^2{t'}^2 = -c^2{t'}^2\left(1-\beta^2\right) ,
 $$
 
-a **negative** real for a timelike displacement. The principal square root of a negative real is positive imaginary, so the modulus is $\rho = i\,ct\sqrt{1-\beta^2}$, and its modulus gives the scale
+a **negative** real for a timelike displacement. The principal square root of a negative real is positive imaginary, so the modulus is $\rho = i\,ct'\sqrt{1-\beta^2}$, and its modulus gives the scale
 
 $$
-r = c t\sqrt{1-\beta^2} = c\tau ,
+r = c t'\sqrt{1-\beta^2} = c\tau ,
 $$
 
 where $\tau$ is the proper time: the scale is $c$ times the proper time. For a spacelike displacement, whose interval is positive, the modulus is real and the scale is the ordinary length $\sqrt{\langle\tilde Q\rangle_{\natural}}$.
@@ -165,7 +165,7 @@ For a general element of the algebra, and not only for a Lorentz rotor, the modu
 
 ## The Central Phase
 
-**The phase of a four-vector is the $ict$.** On the world-line element of §*The Scale* the modulus is $i\,ct\sqrt{1-\beta^2}$, a positive imaginary number, so apart from the scale the phase is
+**The phase of a four-vector is the $ict'$.** On the world-line element of §*The Scale* the modulus is $i\,ct'\sqrt{1-\beta^2}$, a positive imaginary number, so apart from the scale the phase is
 
 $$
 \alpha = \frac{\pi}{2} ,
@@ -225,7 +225,7 @@ which is the corpus's own relation $\tilde U_{\mathrm L}^2 = -\frac{i}{c}\tilde{
 
 ### Numerical Verification
 
-With $ct = 1$ and the velocity $\vec v$ in units of $c$:
+With $ct' = 1$ and the velocity $\vec v$ in units of $c$:
 
 | $\vec v/c$ | interval $\langle\cdot\rangle_{\natural}$ | $r$ | $\alpha$ | $B$ | $\tilde U_{\mathrm L}^{\natural}$ |
 |---|---|---|---|---|---|
@@ -233,7 +233,7 @@ With $ct = 1$ and the velocity $\vec v$ in units of $c$:
 | $(0.6,0.4,0)$ | $-0.48$ | $0.692820323$ | $\pi/2$ | $1.443375673 - 0.866025404\,i\vec e_x - 0.577350269\,i\vec e_y$ | $1.105299885 - 0.391760379\,i\vec e_x - 0.261173586\,i\vec e_y$ |
 | $(0.3,-0.5,0.6)$ | $-0.30$ | $0.547722558$ | $\pi/2$ | $1.825741858 - 0.547722558\,i\vec e_x + 0.912870929\,i\vec e_y - 1.095445115\,i\vec e_z$ | $1.188642473 - 0.230398362\,i\vec e_x + 0.383997270\,i\vec e_y - 0.460796724\,i\vec e_z$ |
 
-In each row $B = (\tilde U_{\mathrm L}^{\natural})^2$ to $3.3\times10^{-16}$, the scale equals $ct\sqrt{1-\beta^2}$, the phase is $\pi/2$, and the rotor $\tilde q$ is the identity to $7\times10^{-16}$. The rotor in the last column is $\tilde U_{\mathrm L}^{\natural}$, the conjugate of the corpus's boost rotor $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ with $\tanh\psi = \beta$ and $\vec u_{\mathrm b} = \vec v/|\vec v|$; it is the rotor of the inverse boost, of rapidity $-\psi$, so the sign of its vector part is opposite to the sign of $\vec v$. The first row of the table in exponents is the frame of velocity $0.6c$ along $\vec e_x$, of rapidity $\psi = \operatorname{atanh}0.6 = 0.693147181$,
+In each row $B = (\tilde U_{\mathrm L}^{\natural})^2$ to $3.3\times10^{-16}$, the scale equals $ct'\sqrt{1-\beta^2}$, the phase is $\pi/2$, and the rotor $\tilde q$ is the identity to $7\times10^{-16}$. The rotor in the last column is $\tilde U_{\mathrm L}^{\natural}$, the conjugate of the corpus's boost rotor $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ with $\tanh\psi = \beta$ and $\vec u_{\mathrm b} = \vec v/|\vec v|$; it is the rotor of the inverse boost, of rapidity $-\psi$, so the sign of its vector part is opposite to the sign of $\vec v$. The first row of the table in exponents is the frame of velocity $0.6c$ along $\vec e_x$, of rapidity $\psi = \operatorname{atanh}0.6 = 0.693147181$,
 
 $$
 \exp(-i\psi \vec e_x) = \cosh\psi - i\sinh\psi\,\vec e_x = 1.25 - 0.75\,i\vec e_x = B , \qquad \exp\Bigl(i\frac{\psi}{2}\vec e_x\Bigr) = 1.060660172 + 0.353553391\,i\vec e_x = \tilde U_{\mathrm L} .
@@ -269,7 +269,7 @@ with polar Hermitian factor $\tilde H = \tilde U_{\mathrm L}$ (not the four-vect
 
 ### A Four-Position and Its Proper Time
 
-Take $\tilde{R} = i\,e_t + 0.6\,\vec e_x$, the four-position of a particle at $ct = 1$ moving at $0.6c$ along $\vec e_x$. Then
+Take $\tilde{R} = i\,e_t + 0.6\,\vec e_x$, the four-position of a particle at $ct' = 1$ moving at $0.6c$ along $\vec e_x$. Then
 
 $$
 \langle\tilde{Q}\rangle_{\natural} = -1+0.36 = -0.64 , \qquad r = 0.8 = c\tau , \qquad \alpha = \frac{\pi}{2} ,
@@ -306,7 +306,7 @@ Take $\tilde{Q} = i\,e_t + \vec e_x$, a displacement on the light cone, since $\
 
 ## The Order of the Factors
 
-**The order of the four factors is physical, because $B$ does not commute.** In the physics interpretation the word $\exp(i\alpha)B\tilde q$ is the order of the operations: the transfer of $ict$, then the boost, then the rotation. The boost factor and the rotor do not commute with one another, so a boost followed by a rotation is not the same displacement as that rotation followed by that boost. With $B$ the boost of $\beta = 0.6$ along $\vec u_x$ and $\tilde q$ a rotation of $0.5$ rad about $\vec u_z$,
+**The order of the four factors is physical, because $B$ does not commute.** In the physics interpretation the word $\exp(i\alpha)B\tilde q$ is the order of the operations: the transfer of $ict'$, then the boost, then the rotation. The boost factor and the rotor do not commute with one another, so a boost followed by a rotation is not the same displacement as that rotation followed by that boost. With $B$ the boost of $\beta = 0.6$ along $\vec u_x$ and $\tilde q$ a rotation of $0.5$ rad about $\vec u_z$,
 
 $$
 \left\|B\tilde q - \tilde qB\right\| = 0.339005 ,
@@ -329,7 +329,7 @@ and the two polar representations of the two products have the same unit modulus
 
 Reversing the order exchanges the two components of the boost and mirrors the residual rotation through the plane of the two boosts. Both products are boosts up to a rotation, which is the non-closure of the boosts stated in the representation: the rapidity of a product of boosts is not the sum of the rapidities, and the difference is carried by the rotor.
 
-The central phase is the one factor that may be moved. It is central, so $\exp(i\alpha)$ commutes with $B$ and with $\tilde q$, and the $ict$ transfer can be performed before or after the boost and the rotation alike; that freedom is what makes the phase the internal symmetry factor of the representation. Reading the four factors as "the $ict$, then the boost, then the rotation" is an interpretation of one word, not a licence to reorder it.
+The central phase is the one factor that may be moved. It is central, so $\exp(i\alpha)$ commutes with $B$ and with $\tilde q$, and the $ict'$ transfer can be performed before or after the boost and the rotation alike; that freedom is what makes the phase the internal symmetry factor of the representation. Reading the four factors as "the $ict'$, then the boost, then the rotation" is an interpretation of one word, not a licence to reorder it.
 
 **The published word is the same element, with the boost referred to the rotated axis.** Sangwine & Hitzer prove the polar factorisation in the reversed word, angle first,
 
@@ -375,7 +375,7 @@ The rotor is the Thomas–Wigner rotation when two boosts are composed, and it i
 | $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$, $\vec u_{\mathrm b} = \vec v/|\vec v|$ | the physics boost rotor; for a four-position $B = (\tilde U_{\mathrm L}^{\natural})^2 = -(i/c)\tilde{V}$ |
 | $\tilde{V} = \gamma(ic\,e_t+\vec v)$ | the four-velocity |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors; four-vectors live in $\mathbb{M}_-$ |
-| $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | a four-position, interval $\langle\tilde Q\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2$ |
+| $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | a four-position, interval $\langle\tilde Q\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2$ |
 
 ## Further Reading
 

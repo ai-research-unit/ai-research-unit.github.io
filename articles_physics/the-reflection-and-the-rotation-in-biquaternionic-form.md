@@ -105,7 +105,7 @@ $$
 N \text{ on } (ie_t, \vec e_x, \vec e_y, \vec e_z) = \mathrm{diag}(-1,+1,+1,+1) = \eta = -g .
 $$
 
-The Clifford metric of the generators is not an independent convention laid on top of the algebra. **It is the biquaternion norm of the Hermitian sector**, and the $ict$ metric of the material sector is its negative, the biquaternion norm of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: level $2$ carries $\eta = \mathrm{diag}(-1,+1,+1,+1)$, the form of the material coordinates; level $3$ carries $g = \mathrm{diag}(+1,-1,-1,-1)$, the form of the objects the generators represent, which are Hermitian. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.
+The Clifford metric of the generators is not an independent convention laid on top of the algebra. **It is the biquaternion norm of the Hermitian sector**, and the $ict'$ metric of the material sector is its negative, the biquaternion norm of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: level $2$ carries $\eta = \mathrm{diag}(-1,+1,+1,+1)$, the form of the material coordinates; level $3$ carries $g = \mathrm{diag}(+1,-1,-1,-1)$, the form of the objects the generators represent, which are Hermitian. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.
 
 The same fact appears in the vector square. For $w = x_te_t + ix_x\vec e_x + ix_y\vec e_y + ix_z\vec e_z \in \mathbb{M}_+$,
 
@@ -342,7 +342,7 @@ The claims of this article, in order.
 | $\mathrm{Cl}_{1,3}$, $\mathrm{Cl}_{1,3}^{\pm}$ | Clifford algebra and its even/odd parts |
 | $\mathsf{M}_4$ | Isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$, $\mathsf{M}_4(e_t) = I_4$, $\mathsf{M}_4(i) = -\omega$ |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict$ metric of the material coordinates |
+| $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict'$ metric of the material coordinates |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -I_4$ |
 | $\gamma_5 = i_{\mathrm{Cl}}\omega$ | Chirality operator, $\gamma_5^2 = I_4$ |
 | $\tilde\Pi_{L,R} = \tfrac12(1\pm\gamma_5)$ | Chirality projectors, rank $2$ |

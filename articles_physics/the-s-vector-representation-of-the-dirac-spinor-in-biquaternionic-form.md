@@ -14,7 +14,7 @@ $$
 g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1),
 $$
 
-which is the corpus's **generator metric**, the same object the gamma matrices obey; the source writes $\eta_{\mu\nu}$ for it. It is *not* the $ict$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = V^\mu g_{\mu\nu}W^\nu$.
+which is the corpus's **generator metric**, the same object the gamma matrices obey; the source writes $\eta_{\mu\nu}$ for it. It is *not* the $ict'$ metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of $\mathbb{M}_-$, which belongs to the gradient. Dot products are $V\cdot W = V^\mu g_{\mu\nu}W^\nu$.
 
 ## The Trinomial Unit Basis
 
@@ -92,7 +92,7 @@ The two coefficients $B^\mu$ and $N^\mu$ are **real four-vectors**, and the reco
 Two four-index tensors are read off the gamma matrices:
 
 $$
-t^{\mu\nu\lambda\rho} = \tfrac14\,\mathrm{tr}\bigl(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho\bigr)
+{t'}^{\mu\nu\lambda\rho} = \tfrac14\,\mathrm{tr}\bigl(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho\bigr)
 = g^{\mu\nu}g^{\lambda\rho} + g^{\mu\rho}g^{\nu\lambda} - g^{\mu\lambda}g^{\nu\rho},
 $$
 
@@ -104,9 +104,9 @@ $$
 The first is symmetric under the interchange of its two index pairs; the second is the totally antisymmetric symbol. From them and the neutral vectors come the structure constants
 
 $$
-c^{\mu\nu\lambda} = \bigl(t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho}\bigr)k_\rho,
+c^{\mu\nu\lambda} = \bigl({t'}^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho}\bigr)k_\rho,
 \qquad
-\check c^{\mu\nu\lambda} = \bigl(t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho}\bigr)j_\rho .
+\check c^{\mu\nu\lambda} = \bigl({t'}^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho}\bigr)j_\rho .
 $$
 
 The two differ only in which neutral vector contracts the four-index symbol; $c$ is built on the timelike $k$, $\check c$ on the spacelike $j$.
@@ -211,7 +211,7 @@ invariant. This is the *ding*: the fourth-dimensional analogue of Cartan's trial
 
 $$
 C = A_\mu\,\bar\Psi\gamma^\mu\Psi
-= A_\mu\, t^{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon^{\nu\mu\lambda}B_\nu N_\lambda
+= A_\mu\, {t'}^{\nu\mu\lambda}\bigl(B_\nu B_\lambda + N_\nu N_\lambda\bigr) + 2A_\mu\,\varepsilon^{\nu\mu\lambda}B_\nu N_\lambda
 $$
 
 completes the dictionary of the three quadratic forms and the one cubic form that, together, define the algebra.
@@ -366,7 +366,7 @@ These questions are open.
 
 ## Summary
 
-A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = B^\mu g_{\mu\nu}i\gamma^\nu v$ and $\Phi_2 = N^\mu g_{\mu\nu}i\gamma^\nu u$ with real $B^\mu, N^\mu$. The combined object $G^\mu = B^\mu + iN^\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k^\mu$, a spacelike unit vector $j^\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ built from the gamma traces $t$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\vec u_{\mu}$, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
+A Dirac spinor in four-dimensional Minkowski space decomposes into two semi-spinors, and each semi-spinor is a **real four-vector**: $\Phi_1 = B^\mu g_{\mu\nu}i\gamma^\nu v$ and $\Phi_2 = N^\mu g_{\mu\nu}i\gamma^\nu u$ with real $B^\mu, N^\mu$. The combined object $G^\mu = B^\mu + iN^\mu$ is an **s-vector**, and the map $\Psi \leftrightarrow G$ is a linear equivalence. It rests on a trinomial unit basis — a timelike unit vector $k^\mu$, a spacelike unit vector $j^\mu$, and two unit semi-spinors $u, v$ — the neutral elements of Chevalley. The composition law $c^{\mu\nu\lambda} = ({t'}^{\mu\nu\lambda\rho} - i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ built from the gamma traces $t'$ and $\varepsilon$ is associative, has $k$ as its unit, and satisfies the normed condition $(G\cdot G)(H\cdot H) = (G\otimes H)\cdot(G\otimes H)$; its matrix realisation is exactly the biquaternion algebra, $e_\mu = i\vec u_{\mu}$, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$. The Dirac bilinears become $G$-$G^*$ bilinears with the structure constants $c$ and $\check c$, and the order-three map $A\mapsto B\mapsto N\mapsto A$ permutes the vector and the two semi-spinors while leaving the trilinear form invariant — the *ding* construction, the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions.
 
 The Dirac Lagrangian becomes bosonic: a quadratic kinetic term in $G$ with the $\check c$ structure constants, and a mass term $m(G^*G^* + GG)$ that couples $G$ to $G^*$ — the chirality-off-diagonal mass in another guise. The massive equation becomes the self-dual pair $G^{\mu\nu} = \tfrac{i}{2}\varepsilon^{\mu\nu\lambda\rho}G_{\lambda\rho}$, $\partial_\mu G^\mu - imj_\mu G^{*\mu} = 0$, with the two-form $H^{\mu\nu} = G^*_\lambda\check c^{\lambda\mu\nu}$ anti-self-dual. The $\mathrm{U}(1)$ transformation of the spinor becomes the chiral-type transformation $G \mapsto (\cos\alpha + ic_5\sin\alpha)G$ with $(c_5)^2 = 1$, so the De Moivre theorem holds; the chiral transformation of the spinor becomes an ordinary $\mathrm{U}(1)$ transformation of $G$. The dual map $B \mapsto N$, $N \mapsto -B$, $m \mapsto -m$ leaves the theory invariant.
 
@@ -377,16 +377,16 @@ What the construction supplies is a dictionary; what it does not supply is covar
 | Symbol | Meaning |
 |---|---|
 | $\mu, \nu, \lambda, \rho$ | Ordinary Minkowski four-vector indices, $0,1,2,3$ |
-| $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$ | Generator metric of the gamma matrices (the source's $\eta$); not the $ict$ metric |
+| $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$ | Generator metric of the gamma matrices (the source's $\eta$); not the $ict'$ metric |
 | $V\cdot W = V^\mu g_{\mu\nu}W^\nu$ | Minkowski dot product |
 | $k^\mu, j^\mu$ | Timelike and spacelike unit neutral vectors, $k\cdot k = -j\cdot j = 1$, $k\cdot j = 0$ |
 | $u, v$ | Unit semi-spinors, $\bar u u = 1$, $\bar v v = -1$, $\bar u v = 0$ |
 | $r = u+iv$, $l = u-iv$ | Pure spinors, $\bar r l = \bar l r = 2$ |
 | $k_\pm^\mu = \tfrac12(k^\mu\pm j^\mu)$ | Null vectors formed from the neutral pair |
-| $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Symmetric gamma trace |
+| ${t'}^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Symmetric gamma trace |
 | $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Totally antisymmetric symbol, $\varepsilon^{0123}=1$ |
-| $c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho}-i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ | Structure constants built on $k$ |
-| $\check c^{\mu\nu\lambda} = (t^{\mu\nu\lambda\rho}-i\varepsilon^{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on $j$ |
+| $c^{\mu\nu\lambda} = ({t'}^{\mu\nu\lambda\rho}-i\varepsilon^{\mu\nu\lambda\rho})k_\rho$ | Structure constants built on $k$ |
+| $\check c^{\mu\nu\lambda} = ({t'}^{\mu\nu\lambda\rho}-i\varepsilon^{\mu\nu\lambda\rho})j_\rho$ | Structure constants built on $j$ |
 | $c_5^{\mu\nu} = -g^{\mu\mu}\check c^{\mu\nu\lambda}k_\lambda$ | The algebra's "gamma five"; $(c_5)^2 = 1$ |
 | $(G\otimes H)^\lambda = G_\mu c^{\mu\lambda\nu}H_\nu$ | Composition law |
 | $B^\mu, N^\mu$ | Real four-vectors of the two semi-spinors |

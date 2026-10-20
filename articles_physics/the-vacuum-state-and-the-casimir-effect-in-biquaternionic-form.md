@@ -26,7 +26,7 @@ $$
 \mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},\qquad
 \mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, normalised so that $\mathrm{Tr}(e_t)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the potential and field strength are $\tilde A=i\phi/c\,e_t+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, normalised so that $\mathrm{Tr}(e_t)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the potential and field strength are $\tilde A=i\phi/c\,e_t+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict'$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.
 
 ## The Vacuum State in the Framework
 
@@ -95,7 +95,7 @@ E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi)^{3}}\,E_{\vec p},
 $$
 also quartically divergent, as that article records. The sign difference (positive for bosons, negative for the two fermion branches) is the standard one and is not removed by the framework.
 
-**The zero-point energy is a central scalar.** In the framework the zero-point coefficient multiplies the identity $e_t$: it is a real number, hence an element of the **centre** $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde{Ϛ}\mapsto\tilde U\tilde{Ϛ}\tilde U^{*}$ with $\tilde U=\exp(-i\tilde Ht/\hbar)$, contributes only a phase that cancels. This is exactly the statement of *The Harmonic Oscillator in Biquaternionic Form*: the trace part $h_t$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.
+**The zero-point energy is a central scalar.** In the framework the zero-point coefficient multiplies the identity $e_t$: it is a real number, hence an element of the **centre** $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde{Ϛ}\mapsto\tilde U\tilde{Ϛ}\tilde U^{*}$ with $\tilde U=\exp(-i\tilde Ht'/\hbar)$, contributes only a phase that cancels. This is exactly the statement of *The Harmonic Oscillator in Biquaternionic Form*: the trace part $h_t$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.
 
 This gives the framework's interpretation of the vacuum energy, and it is the reason the Casimir effect is the right place to look for it. A **constant** central scalar is unobservable; but if the constant depends on an external parameter — here the plate separation $a$ — its gradient is a force. The Casimir force is precisely the gradient of a central scalar, and it is observable for that reason. The algebra does not make the zero-point energy observable; it makes the *variation* of a central scalar observable, and that is all the Casimir effect requires.
 
@@ -177,32 +177,32 @@ The second route uses the heat kernel rather than the mode sum directly, and it 
 
 **The heat kernel.** For the Dirichlet-type problem the heat kernel per unit area is
 $$
-K(t)=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
-\exp(-t(\vec k_\perp^{2}+(\pi n/a)^{2}))
-=\frac{1}{4\pi t}\sum_{n=1}^{\infty}\exp(-(\pi n/a)^{2}t),
+K(t')=\sum_{n=1}^{\infty}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}\,
+\exp(-t'(\vec k_\perp^{2}+(\pi n/a)^{2}))
+=\frac{1}{4\pi t'}\sum_{n=1}^{\infty}\exp(-(\pi n/a)^{2}t'),
 $$
 and the free-space heat kernel, which is its $a\to\infty$ limit, is
 $$
-K_\infty(t)=\frac{1}{4\pi t}\cdot\frac{a}{2\sqrt{\pi t}}=\frac{a}{8\pi^{3/2}t^{3/2}} .
+K_\infty(t')=\frac{1}{4\pi t'}\cdot\frac{a}{2\sqrt{\pi t'}}=\frac{a}{8\pi^{3/2}{t'}^{3/2}} .
 $$
 The **Jacobi modular relation** for the theta function,
 $$
 \sum_{n=-\infty}^{\infty}\exp(-\alpha n^{2})=\sqrt{\frac{\pi}{\alpha}}\sum_{m=-\infty}^{\infty}\exp(-\pi^{2}m^{2}/\alpha),
 $$
-with $\alpha=\pi^{2}t/a^{2}$, gives the exact difference
+with $\alpha=\pi^{2}t'/a^{2}$, gives the exact difference
 $$
-K(t)-K_\infty(t)=-\frac{1}{8\pi t}
-+\frac{a}{4\pi^{3/2}t^{3/2}}\sum_{m=1}^{\infty}\exp(-a^{2}m^{2}/t).
+K(t')-K_\infty(t')=-\frac{1}{8\pi t'}
++\frac{a}{4\pi^{3/2}{t'}^{3/2}}\sum_{m=1}^{\infty}\exp(-a^{2}m^{2}/t').
 $$
-The first term is $a$-independent: it is a constant energy, contributes nothing to the force, and is the vestige of the surface divergence. The second term is the **Casimir part**: it is exponentially small as $t\to0$, so its zeta integral converges without any subtraction, and it vanishes as $a\to\infty$, which is what a Casimir energy must do. Its appearance from a modular transformation is the precise sense in which the finite part comes from the "winding" of the free modes around the compact direction of size $a$, not from the divergent mode count.
+The first term is $a$-independent: it is a constant energy, contributes nothing to the force, and is the vestige of the surface divergence. The second term is the **Casimir part**: it is exponentially small as $t'\to0$, so its zeta integral converges without any subtraction, and it vanishes as $a\to\infty$, which is what a Casimir energy must do. Its appearance from a modular transformation is the precise sense in which the finite part comes from the "winding" of the free modes around the compact direction of size $a$, not from the divergent mode count.
 
 **The value.** The Casimir energy per unit area is
 $$
-\frac{E_{\mathrm{cas}}}{A}=\frac{\hbar c}{2}\,\frac{1}{\Gamma(-1/2)}\int_{0}^{\infty}t^{-3/2}\big[K(t)-K_\infty(t)\big]_{\mathrm{cas}}dt,
+\frac{E_{\mathrm{cas}}}{A}=\frac{\hbar c}{2}\,\frac{1}{\Gamma(-1/2)}\int_{0}^{\infty}{t'}^{-3/2}\big[K(t')-K_\infty(t')\big]_{\mathrm{cas}}dt',
 $$
-and with the Casimir part of the exact heat-kernel difference the $t$-integral is elementary,
+and with the Casimir part of the exact heat-kernel difference the $t'$-integral is elementary,
 $$
-\int_{0}^{\infty}t^{-3}\,\exp(-a^{2}m^{2}/t)\,dt=\frac{1}{a^{4}m^{4}} .
+\int_{0}^{\infty}{t'}^{-3}\,\exp(-a^{2}m^{2}/t')\,dt'=\frac{1}{a^{4}m^{4}} .
 $$
 Therefore
 $$
@@ -211,7 +211,7 @@ $$
 =-\frac{\hbar c}{16\pi^{2}a^{3}}\cdot\frac{\pi^{4}}{90}
 =-\frac{\pi^{2}\hbar c}{1440\,a^{3}},
 $$
-in agreement with the Dirichlet-scalar result. The agreement of two routes that use different special values ($\zeta(-3)$ versus $\zeta(4)$) and different manipulations (analytic continuation of a divergent sum versus a modular identity on a convergent difference) is the verification the subject requires. The modular route also makes the location of the divergence explicit: it is the $a$-independent term $-(8\pi t)^{-1}$, which is removed by the physical subtraction and carries no force.
+in agreement with the Dirichlet-scalar result. The agreement of two routes that use different special values ($\zeta(-3)$ versus $\zeta(4)$) and different manipulations (analytic continuation of a divergent sum versus a modular identity on a convergent difference) is the verification the subject requires. The modular route also makes the location of the divergence explicit: it is the $a$-independent term $-(8\pi t')^{-1}$, which is removed by the physical subtraction and carries no force.
 
 **A different case, checked.** The same machinery on the one-dimensional problem — a massless scalar between two Dirichlet points — gives
 $$
@@ -349,7 +349,7 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 | $\Lambda$ | Momentum cutoff (bare divergence) |
 | $\zeta_3(s)$ | Spectral zeta function of the Dirichlet-type problem |
 | $\zeta(s)$ | Riemann zeta; $\zeta(-3)=1/120$, $\zeta(-1)=-1/12$, $\zeta(4)=\pi^4/90$ |
-| $K(t)$, $K_\infty(t)$ | Heat kernel of the bounded and free problems |
+| $K(t')$, $K_\infty(t')$ | Heat kernel of the bounded and free problems |
 | $E_{\mathrm{EM}}/A=-\pi^2\hbar c/(720a^3)$ | Electromagnetic Casimir energy per unit area (attractive) |
 | $F_{\mathrm{EM}}/A=-\pi^2\hbar c/(240a^4)$ | Electromagnetic Casimir force per unit area (attractive) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

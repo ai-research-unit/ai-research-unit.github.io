@@ -10,7 +10,7 @@ The reformulation is a diagonalisation. Two complex quaternionic combinations of
 
 **A word on the word.** In this series *chiral* usually names a property of a fermion: the inequivalence of the left- and right-handed components of a spinor, the subject of *Chiral Fermions in the Biquaternion Framework*. Here it names a property of a material medium — an electric–magnetic cross-response. The two senses are unrelated, and the word is disambiguated here once and not again.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and scalar imaginary $i$ commuting with the units. The fields are **time-harmonic**, taken in the $\exp(-i\omega t)$ convention, so that $\partial/\partial t\to-i\omega$ and the four Maxwell equations become algebraic in $\omega$. In this article the only differential operator that appears is the **spatial Moisil–Theodoresco operator**
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and scalar imaginary $i$ commuting with the units. The fields are **time-harmonic**, taken in the $\exp(-i\omega t')$ convention, so that $\partial/\partial t'\to-i\omega$ and the four Maxwell equations become algebraic in $\omega$. In this article the only differential operator that appears is the **spatial Moisil–Theodoresco operator**
 
 $$
 D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z,

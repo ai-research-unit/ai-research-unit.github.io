@@ -72,7 +72,7 @@ so $\flat$ acts as $-1$ on the $\mathbb{M}_+$ part and $+1$ on the $\mathbb{M}_-
 **It sets the rate at which the two sectors rotate into one another.** Factoring the rest energy out of a free plane wave gives
 
 $$
-\exp(-imc^2t/\hbar) = \cos\!\Big(\frac{mc^2t}{\hbar}\Big)e_t - \sin\!\Big(\frac{mc^2t}{\hbar}\Big)(ie_t),
+\exp(-imc^2t'/\hbar) = \cos\!\Big(\frac{mc^2t'}{\hbar}\Big)e_t - \sin\!\Big(\frac{mc^2t'}{\hbar}\Big)(ie_t),
 $$
 
 with $e_t\in\mathbb{M}_+$ and $ie_t\in\mathbb{M}_-$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is central, and because $i\mathbb{M}_\pm = \mathbb{M}_\mp$ it is a rotation between the sectors at angular frequency $mc^2/\hbar$: it takes the $\mathbb{M}_+$ direction $e_t$ toward the $\mathbb{M}_-$ direction $ie_t$ and back. The mass sets this scale — the frequency is $mc^2/\hbar$ — through the mass shell. This is the sense in which the electron's mass, in the framework, *is* the rate of the rotation between the material and informational subspaces.
@@ -123,9 +123,9 @@ $$
 (i\hbar\gamma^\mu\partial_\mu - m_ec)\psi = 0
 $$
 
-in the notation of the companion solutions article. Its plane-wave solutions come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency $v^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label; together they span a four-dimensional complex amplitude space, which is the four components of the Dirac spinor. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
+in the notation of the companion solutions article. Its plane-wave solutions come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label; together they span a four-dimensional complex amplitude space, which is the four components of the Dirac spinor. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
 
-**A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $ict$ convention,
+**A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $ict'$ convention,
 
 $$
 \tilde P/\hbar = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
@@ -222,7 +222,7 @@ Two gaps are structural and cannot be closed by better notation: the mass value 
 
 ## Summary
 
-The electron is the biquaternion Dirac field, satisfying the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$, and its spinor-module transcription, the standard Dirac equation. Its mass appears as the coefficient of that off-diagonal chirality coupling; the algebra's real structure $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ acts on the two sectors with opposite signs, and the rest-energy phase $\exp(-im_ec^2t/\hbar) = \cos(m_ec^2t/\hbar)e_t - \sin(m_ec^2t/\hbar)(ie_t)$ rotates the two sectors into one another at $m_ec^2/\hbar$. Its charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current is then derived and lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
+The electron is the biquaternion Dirac field, satisfying the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$, and its spinor-module transcription, the standard Dirac equation. Its mass appears as the coefficient of that off-diagonal chirality coupling; the algebra's real structure $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ acts on the two sectors with opposite signs, and the rest-energy phase $\exp(-im_ec^2t'/\hbar) = \cos(m_ec^2t'/\hbar)e_t - \sin(m_ec^2t'/\hbar)(ie_t)$ rotates the two sectors into one another at $m_ec^2/\hbar$. Its charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current is then derived and lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
 
 The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible module of $\mathbb{B}\cong M_2(\mathbb{C})$, and the spin state and observable structure from the idempotents of $\mathbb{M}_+$ with the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the magnitude $\hbar/2$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small component, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = e\hbar/2m_e = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2m_ec^2/\hbar = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\hbar/(2m_ec) = 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a signature of either sector. It contains the two-chirality structure and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
 

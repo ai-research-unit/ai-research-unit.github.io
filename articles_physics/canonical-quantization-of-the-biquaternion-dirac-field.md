@@ -19,7 +19,7 @@ We therefore make no claim that the extension is canonical in the biquaternion f
 
 The article is organized as follows. The next section fixes the classical field and its conjugate momentum, and identifies the constraint that forces the canonical structure to be imposed rather than assumed. The following section states the equal-time anticommutation relations and the reasons they, rather than commutators, are the consistent choice. The next section carries out the expansion in the parent article's plane-wave solutions. The section after that derives the anticommutators of the mode operators and builds the Fock space. The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which is the subject of a planned companion article. A section relates the result to the KMS thermal-state framework. The article closes with an explicit accounting of what is standard and what is open.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The Clifford metric of the gamma matrices is $g=\mathrm{diag}(+1,-1,-1,-1)$, through $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the spacetime metric of the $ict$ gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$; the relative sign is the convention the companion article flags. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution and quantization sections we work in natural units $\hbar=c=1$, as the parent solution article does, restoring $\hbar$ and $c$ only where they carry meaning, namely in the mass-shell relation and in the thermal frequency.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The Clifford metric of the gamma matrices is $g=\mathrm{diag}(+1,-1,-1,-1)$, through $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the spacetime metric of the $ict'$ gradient is $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$; the relative sign is the convention the companion article flags. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution and quantization sections we work in natural units $\hbar=c=1$, as the parent solution article does, restoring $\hbar$ and $c$ only where they carry meaning, namely in the mass-shell relation and in the thermal frequency.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -59,7 +59,7 @@ $$
 
 The step is worth displaying, because it is the origin of the entire fermionic structure. The only term in $\mathcal{L}$ containing the time derivative is $\bar{\psi}\,i\gamma^0\partial/\partial Q_t\,\psi$. Since $\bar{\psi}\gamma^0=\psi^\dagger$ and $(\gamma^0)^2=I_4$, that term is $i\,\psi^\dagger\partial/\partial Q_t\,\psi$. Differentiating with respect to $\partial/\partial Q_t\,\psi_a$ therefore returns $i\psi^\dagger_a$, i.e. $\pi=i\psi^\dagger$.
 
-The result is not $\partial\psi/\partial t$, and this is the essential difference from a scalar field. The Dirac equation is first order in time, so the momentum is algebraically tied to the field by
+The result is not $\partial\psi/\partial t'$, and this is the essential difference from a scalar field. The Dirac equation is first order in time, so the momentum is algebraically tied to the field by
 
 $$
 \chi=\pi-i\psi^\dagger\approx 0 .
@@ -76,16 +76,16 @@ Written on the spinor module, the Lagrangian and the canonical momentum are the 
 Quantization promotes the classical field and its momentum to operators $\psi^{\mathrm{fop}}$, $\pi^{\mathrm{fop}}$ and imposes equal-time brackets. For the Dirac field the brackets are **anticommutators**:
 
 $$
-\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$$
+\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t')\}=\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$$
 
 $$
-\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),\psi^{\mathrm{fop}}_b(\vec y,t)\}=0,\qquad
-\{{\psi^{\mathrm{fop}}_a}^\dagger(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=0$$
+\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\psi^{\mathrm{fop}}_b(\vec y,t')\}=0,\qquad
+\{{\psi^{\mathrm{fop}}_a}^\dagger(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t')\}=0$$
 
 where $a,b$ are spinor indices. In terms of the conjugate momentum $\pi^{\mathrm{fop}}=i\psi^{\mathrm{fop}\dagger}$, the first relation reads
 
 $$
-\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),\pi^{\mathrm{fop}}_b(\vec y,t)\}=i\,\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),
+\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),\pi^{\mathrm{fop}}_b(\vec y,t')\}=i\,\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y),
 $$
 
 which is the fermionic analogue of the canonical relation $[\phi^{\mathrm{fop}},\pi^{\mathrm{fop}}]=i\delta^{(3)}$ of a scalar field. These are the standard canonical relations, and they are imposed rather than derived.
@@ -105,7 +105,7 @@ The three reasons are aspects of one theorem. We note only that they all point t
 The classical equation is linear, so its general solution is a superposition of the plane waves constructed in the parent article. Those solutions come in two branches: the positive-frequency branch spanned by the spinors $w^{(r)}(\vec p)\exp(-ip\cdot x)$ and the negative-frequency branch spanned by $v^{(r)}(\vec p)\exp(+ip\cdot x)$, with $r=1,2$,
 
 $$
-E_{\vec p}=+\sqrt{\vec p^2+m^2},\qquad p\cdot x=E_{\vec p}t-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+E_{\vec p}=+\sqrt{\vec p^2+m^2},\qquad p\cdot x=E_{\vec p}t'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$
 
 and with the covariant normalizations and spin sums established there:
@@ -170,10 +170,10 @@ These are the standard anticommutation relations of the free Dirac field, in the
 
 ### Consistency with the Equal-Time Relations
 
-It is worth verifying that these relations reproduce $\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=\delta_{ab}\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, because the verification exposes a point of care about the relative phases of the two branches. Inserting the expansions and using the mode algebra gives, at equal times,
+It is worth verifying that these relations reproduce $\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t')\}=\delta_{ab}\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, because the verification exposes a point of care about the relative phases of the two branches. Inserting the expansions and using the mode algebra gives, at equal times,
 
 $$
-\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}
+\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t')\}
 =\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}
 \Big[\sum_r w^{(r)}_a w^{(r){}^{*}}_b\,\exp(+i\vec p\cdot\vec\Delta)
 +\sum_r v^{(r)}_a v^{(r){}^{*}}_b\,\exp(-i\vec p\cdot\vec\Delta)\Big],$$
@@ -298,13 +298,13 @@ This article deliberately stops here. The full **spin–statistics theorem** —
 The KMS article characterizes thermal equilibrium by an analytic property of correlation functions. For operators $A,B$ in the algebra and a state $\omega_\beta$ at inverse temperature $\beta=\hbar/(k_BT)$, the thermal correlation function is
 
 $$
-F_{A B}(t)=\omega_\beta\big(A\,\alpha_t(B)\big),
+F_{A B}(t')=\omega_\beta\big(A\,\alpha_{t'}(B)\big),
 $$
 
-with $\alpha_t$ the Heisenberg evolution; the KMS condition states that $F_{A B}(t)$ extends analytically to the strip $0<\mathrm{Im}(t)<\beta$ and satisfies
+with $\alpha_{t'}$ the Heisenberg evolution; the KMS condition states that $F_{A B}(t')$ extends analytically to the strip $0<\mathrm{Im}(t')<\beta$ and satisfies
 
 $$
-F_{A B}(t+i\beta)=F_{B A}(-t)
+F_{A B}(t'+i\beta)=F_{B A}(-t')
 $$
 
 on its boundary. The KMS article observes that this boundary relation is the same for bosons and fermions, that the statistics enters instead through the algebra of the operators, and that a fermionic interpretation requires a $\mathbb{Z}/2$ grading together with the rule that fermionic operators anticommute — a rule the biquaternion algebra does not automatically supply.
@@ -315,14 +315,14 @@ $$
 \omega_\beta(\,\cdot\,)=\frac{1}{Z}\,\mathrm{Tr}\big(\exp(-\beta(H-\mu Ϙ^{\mathrm{fop}}))\,\cdot\,\big)
 $$
 
-on the Fock space, with $H$ and $Ϙ^{\mathrm{fop}}$ the normal-ordered operators above, $Z$ the partition function, and $\mu$ the chemical potential. The point of contact with the KMS article is sharp and elementary. Take a single mode of energy $E$ and normalize it so that $\{a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\}=e_t$. In the Heisenberg picture $\alpha_t(a^{\mathrm{fop}})=\exp(-iEt)a^{\mathrm{fop}}$ and $\alpha_t(a^{\mathrm{fop}\dagger})=\exp(+iEt)a^{\mathrm{fop}\dagger}$, so
+on the Fock space, with $H$ and $Ϙ^{\mathrm{fop}}$ the normal-ordered operators above, $Z$ the partition function, and $\mu$ the chemical potential. The point of contact with the KMS article is sharp and elementary. Take a single mode of energy $E$ and normalize it so that $\{a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}\}=e_t$. In the Heisenberg picture $\alpha_{t'}(a^{\mathrm{fop}})=\exp(-iEt')a^{\mathrm{fop}}$ and $\alpha_{t'}(a^{\mathrm{fop}\dagger})=\exp(+iEt')a^{\mathrm{fop}\dagger}$, so
 
 $$
-F_{a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}}(t)=\exp(+iEt)\,\omega_\beta(a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}),\qquad
-F_{a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}}(-t)=\exp(+iEt)\,\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}).
+F_{a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}}(t')=\exp(+iEt')\,\omega_\beta(a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}),\qquad
+F_{a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}}(-t')=\exp(+iEt')\,\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}).
 $$
 
-The KMS condition $F_{a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}}(t+i\beta)=F_{a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}}(-t)$ then gives $\exp(-\beta E)\,\omega_\beta(a^{\mathrm{fop}}a^{\mathrm{fop}\dagger})=\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}})$. Writing $n=\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}})$ and using the anticommutator in the form $a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}=e_t-a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ yields $1-n=\exp(\beta E)n$, i.e.
+The KMS condition $F_{a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}}(t'+i\beta)=F_{a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}}(-t')$ then gives $\exp(-\beta E)\,\omega_\beta(a^{\mathrm{fop}}a^{\mathrm{fop}\dagger})=\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}})$. Writing $n=\omega_\beta(a^{\mathrm{fop}\dagger}a^{\mathrm{fop}})$ and using the anticommutator in the form $a^{\mathrm{fop}}a^{\mathrm{fop}\dagger}=e_t-a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ yields $1-n=\exp(\beta E)n$, i.e.
 
 $$
 n=\frac{1}{\exp(\beta E)+1},
@@ -376,7 +376,7 @@ The extension attempted here is therefore **not canonical** in the framework: th
 The biquaternion Dirac field is quantized by promoting its spinor-module representative to an operator-valued field. The classical theory has Lagrangian $\mathcal{L}=\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ and conjugate momentum $\pi=i\psi^\dagger$; the momentum is algebraically tied to the field by a second-class constraint, so the canonical structure is imposed rather than assumed. The equal-time relations are anticommutators,
 
 $$
-\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t)\}=\delta_{ab}\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$$
+\{\psi^{\mathrm{fop}}_a(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t'),{\psi^{\mathrm{fop}}_b}^\dagger(\vec y,t')\}=\delta_{ab}\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$$
 
 with all other equal-time anticommutators vanishing; anticommutation rather than commutation is forced by the boundedness of the energy, by microcausality, and by positivity of the norm, all three being consequences of the spinor character of the field.
 
@@ -408,7 +408,7 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\gamma^0$ | Dirac spinor (spinor module) and its adjoint |
 | $\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\gamma^\mu$; $g=-\eta$ |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict$ gradient |
+| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\mathcal{L}=\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ | Dirac Lagrangian density |
 | $\pi=\partial\mathcal{L}/\partial(\partial/\partial Q_t\,\psi)=i\psi^\dagger$ | Conjugate momentum; $\pi-i\psi^\dagger\approx0$ is second class |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency spinors |
@@ -420,8 +420,8 @@ The extension is a transcription of standard canonical quantization onto the par
 | $H$, $:\!H\!:$ | Hamiltonian and its normal-ordered form |
 | $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant (vacuum energy) |
 | $(-1)^F$ | Fermion-parity grading |
-| $\beta=\hbar/(k_BT)$, $\omega_\beta$, $\alpha_t$ | Inverse temperature, thermal state, Heisenberg evolution |
-| $F_{A B}(t+i\beta)=F_{B A}(-t)$ | KMS condition |
+| $\beta=\hbar/(k_BT)$, $\omega_\beta$, $\alpha_{t'}$ | Inverse temperature, thermal state, Heisenberg evolution |
+| $F_{A B}(t'+i\beta)=F_{B A}(-t')$ | KMS condition |
 | $K=-\log\rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
 | $\omega_\nu=(2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |
 

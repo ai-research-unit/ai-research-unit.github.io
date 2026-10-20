@@ -24,7 +24,7 @@ The natural pair of directions is supplied by the basis $\mathcal{E}_\mu$ of $\m
 
 ## Problem 1: The Four-Component Object, and the Failure of the Real Form
 
-**Statement.** (a) Recompute the Hermitian form $\tilde F\tilde F^{*}$ in terms of the energy density $W$ and the Poynting vector $\vec S$. (b) Compare it with the real form $\tilde W = W + \frac{1}{c}\vec S$ and locate the difference. (c) For the real form, compute the scalar part of $\tilde\nabla\tilde W$ for general fields and check whether the equation $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ expands to the Poynting theorem $\partial/\partial t W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. (d) Identify the four-component object whose scalar divergence does give the energy law.
+**Statement.** (a) Recompute the Hermitian form $\tilde F\tilde F^{*}$ in terms of the energy density $W$ and the Poynting vector $\vec S$. (b) Compare it with the real form $\tilde W = W + \frac{1}{c}\vec S$ and locate the difference. (c) For the real form, compute the scalar part of $\tilde\nabla\tilde W$ for general fields and check whether the equation $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ expands to the Poynting theorem $\partial/\partial t' W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$. (d) Identify the four-component object whose scalar divergence does give the energy law.
 
 **Solution (a).** With $\vec F = \tilde F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ a pure vector, the quaternion conjugate is $\tilde F^{\natural} = -\vec F$ and the Hermitian conjugate is
 $$
@@ -64,27 +64,27 @@ Only one of them can be the object whose biquaternionic gradient is the power–
 
 **Solution (c).** Write $\tilde W = We_t + \frac{1}{c}\vec S$, with $W$ and $\vec S$ real, and apply the biquaternionic gradient $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$. The scalar part receives one contribution from the scalar part and one from the vector part:
 $$
-\mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = \partial/\partial Q_t\,W - \frac{1}{c}\,\partial/\partial Q_\mu\,S_\mu = -\frac{i}{c}\,\partial/\partial tW - \frac{1}{c}\,\mathrm{div}\,\vec S,
+\mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = \partial/\partial Q_t\,W - \frac{1}{c}\,\partial/\partial Q_\mu\,S_\mu = -\frac{i}{c}\,\partial/\partial t'W - \frac{1}{c}\,\mathrm{div}\,\vec S,
 $$
-where we used $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$, the vanishing of the scalar part of $\vec e_\mu\,\partial/\partial Q_\mu(We_t)$ and of $e_t\partial/\partial Q_t(\frac{1}{c}\vec S)$, and $\mathrm{Sc}(\vec e_\mu \vec e_\nu) = -\delta_{\mu\nu}$. So
+where we used $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t'$, the vanishing of the scalar part of $\vec e_\mu\,\partial/\partial Q_\mu(We_t)$ and of $e_t\partial/\partial Q_t(\frac{1}{c}\vec S)$, and $\mathrm{Sc}(\vec e_\mu \vec e_\nu) = -\delta_{\mu\nu}$. So
 $$
-\mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = -\frac{i}{c}\,\partial/\partial tW - \frac{1}{c}\,\mathrm{div}\,\vec S.
+\mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = -\frac{i}{c}\,\partial/\partial t'W - \frac{1}{c}\,\mathrm{div}\,\vec S.
 $$
 The claim to be tested is that this expands to the Poynting theorem, whose statement is real,
 $$
-\partial/\partial tW + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0 \quad\Longleftrightarrow\quad -\frac{1}{c}\left(\partial/\partial tW + \mathrm{div}\,\vec S\right) = \frac{1}{c}\,\vec J\cdot\vec E.
+\partial/\partial t'W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0 \quad\Longleftrightarrow\quad -\frac{1}{c}\left(\partial/\partial t'W + \mathrm{div}\,\vec S\right) = \frac{1}{c}\,\vec J\cdot\vec E.
 $$
-The two differ: the time-derivative term in $\mathrm{Sc}(\tilde\nabla\tilde W)$ carries a factor $i$ that the divergence term does not. The scalar part is not a multiple of $\partial/\partial tW + \mathrm{div}\,\vec S$, and no choice of the source $\tilde{\mathcal F}$ repairs the mismatch, since $\tilde{\mathcal F}$'s scalar part is a single quantity. The claimed expansion is not what the equation gives.
+The two differ: the time-derivative term in $\mathrm{Sc}(\tilde\nabla\tilde W)$ carries a factor $i$ that the divergence term does not. The scalar part is not a multiple of $\partial/\partial t'W + \mathrm{div}\,\vec S$, and no choice of the source $\tilde{\mathcal F}$ repairs the mismatch, since $\tilde{\mathcal F}$'s scalar part is a single quantity. The claimed expansion is not what the equation gives.
 
 **Witness: a free plane wave.** Take a plane wave in a medium,
 $$
-\vec E = E_0\cos(kz - \omega t)\,\vec u_x, \qquad \vec H = \frac{E_0}{\mu c}\cos(kz - \omega t)\,\vec u_y, \qquad k = \frac{\omega}{c},
+\vec E = E_0\cos(kz - \omega t')\,\vec u_x, \qquad \vec H = \frac{E_0}{\mu c}\cos(kz - \omega t')\,\vec u_y, \qquad k = \frac{\omega}{c},
 $$
-which satisfies $\mathrm{rot}\,\vec E = -\partial/\partial t\vec B$ and $\mathrm{rot}\,\vec H = \partial/\partial t\vec D$ with no sources. Then $W = \epsilon E_0^2\cos^2(kz-\omega t)$, $\vec S = \vec E\times\vec H = cW\,\vec u_z$, and $\mathrm{div}\,\vec S = c\,\partial/\partial Q_z\,W = -\partial/\partial tW$, so the Poynting theorem $\partial/\partial tW + \mathrm{div}\,\vec S = 0$ holds. The scalar expression of the real form is
+which satisfies $\mathrm{rot}\,\vec E = -\partial/\partial t'\vec B$ and $\mathrm{rot}\,\vec H = \partial/\partial t'\vec D$ with no sources. Then $W = \epsilon E_0^2\cos^2(kz-\omega t')$, $\vec S = \vec E\times\vec H = cW\,\vec u_z$, and $\mathrm{div}\,\vec S = c\,\partial/\partial Q_z\,W = -\partial/\partial t'W$, so the Poynting theorem $\partial/\partial t'W + \mathrm{div}\,\vec S = 0$ holds. The scalar expression of the real form is
 $$
-\mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = -\frac{i}{c}\partial/\partial tW - \frac{1}{c}\partial/\partial Q_z\,S_z = -\frac{i}{c}\partial/\partial tW - \partial/\partial Q_z\,W = \frac{1-i}{c}\,\partial/\partial tW,
+\mathrm{Sc}\!\left(\tilde\nabla\tilde W\right) = -\frac{i}{c}\partial/\partial t'W - \frac{1}{c}\partial/\partial Q_z\,S_z = -\frac{i}{c}\partial/\partial t'W - \partial/\partial Q_z\,W = \frac{1-i}{c}\,\partial/\partial t'W,
 $$
-using $\partial/\partial Q_z\,S_z = c\,\partial/\partial Q_z\,W = -\partial/\partial tW$. This is nonzero whenever $\cos(kz-\omega t)\sin(kz-\omega t)\neq 0$. A conservation law that fails on a free plane wave is not a conservation law for the field. **For the real form, the equation $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ does not expand to the Poynting theorem; the real form is not the biquaternionic energy–momentum.** The failure is a factor $i$ on the Poynting part, together with the fact — shown in Problem 2 — that a four-component object cannot carry the spatial stress at all.
+using $\partial/\partial Q_z\,S_z = c\,\partial/\partial Q_z\,W = -\partial/\partial t'W$. This is nonzero whenever $\cos(kz-\omega t')\sin(kz-\omega t')\neq 0$. A conservation law that fails on a free plane wave is not a conservation law for the field. **For the real form, the equation $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ does not expand to the Poynting theorem; the real form is not the biquaternionic energy–momentum.** The failure is a factor $i$ on the Poynting part, together with the fact — shown in Problem 2 — that a four-component object cannot carry the spatial stress at all.
 
 **Solution (d).** The object whose scalar divergence does give the energy law is the Hermitian form itself, halved:
 $$
@@ -92,9 +92,9 @@ $$
 $$
 For it,
 $$
-\mathrm{Sc}\!\left(\tilde\nabla\tilde W_{\mathrm{corr}}\right) = -\frac{i}{c}\partial/\partial tW - \frac{i}{c}\,\mathrm{div}\,\vec S = -\frac{i}{c}\left(\partial/\partial tW + \mathrm{div}\,\vec S\right) = \frac{i}{c}\,\vec J\cdot\vec E,
+\mathrm{Sc}\!\left(\tilde\nabla\tilde W_{\mathrm{corr}}\right) = -\frac{i}{c}\partial/\partial t'W - \frac{i}{c}\,\mathrm{div}\,\vec S = -\frac{i}{c}\left(\partial/\partial t'W + \mathrm{div}\,\vec S\right) = \frac{i}{c}\,\vec J\cdot\vec E,
 $$
-using the Poynting theorem for the last equality. The factor $i$ is now uniform, as it must be in the $ict$ convention for a temporal component, and the real statement $\partial/\partial tW + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$ is recovered. So the four-component object whose scalar divergence gives the energy law is the Hermitian form $\tilde W_{\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^{*}$, which is the object the parents state, and the real form differs from it by $\vec S\to i\vec S$. Even so, $\tilde W_{\mathrm{corr}}$ has only four components and therefore carries only the energy density and the energy flux; the stress is not in it. That is the subject of the next problem.
+using the Poynting theorem for the last equality. The factor $i$ is now uniform, as it must be in the $ict'$ convention for a temporal component, and the real statement $\partial/\partial t'W + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0$ is recovered. So the four-component object whose scalar divergence gives the energy law is the Hermitian form $\tilde W_{\mathrm{corr}} = \frac{1}{2}\tilde F\tilde F^{*}$, which is the object the parents state, and the real form differs from it by $\vec S\to i\vec S$. Even so, $\tilde W_{\mathrm{corr}}$ has only four components and therefore carries only the energy density and the energy flux; the stress is not in it. That is the subject of the next problem.
 
 ## Problem 2: The Tensor as a Bigeneral quaternionic Bilinear
 
@@ -114,7 +114,7 @@ $$
 = 0 ,
 $$
 
-in the coordinates of the framework, $Q_t=ict$ and $Q_k=q_k$, so that $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$. The divergence is taken with the **plain** derivative $\partial/\partial Q_\mu$; contracting instead with the conjugated gradient $\tilde\nabla^{\natural}$ is a different combination and does not vanish, whereas the conjugation is the right operation for the framework's four-vector currents.
+in the coordinates of the framework, $Q_t=ict'$ and $Q_k=q_k$, so that $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$. The divergence is taken with the **plain** derivative $\partial/\partial Q_\mu$; contracting instead with the conjugated gradient $\tilde\nabla^{\natural}$ is a different combination and does not vanish, whereas the conjugation is the right operation for the framework's four-vector currents.
 
 Show that $T^0{}_0 = -W$, $T^0{}_\nu = \frac{1}{c}S_\nu$, $T^\nu{}_0 = -\frac{1}{c}S_\nu$, and $T^\nu{}_\mu = -\sigma_{\nu\mu}$, where
 $$
@@ -183,7 +183,7 @@ T^\mu{}_\mu = -W - (-W) = 0.
 $$
 The tensor is traceless. With the contracted components the same statement reads $\eta_{\mu\nu}T^{\mu\nu} = -T^{tt} + T^{\mu\mu} = -W + (-\sigma_{\mu\mu}) = -W + W = 0$. Tracelessness holds in the medium as well as in vacuum, because $W$ and the trace part of the stress are in the fixed ratio forced by the isotropic subtraction. It is the algebraic expression of the classical fact that the electromagnetic energy–momentum tensor is traceless, which is what makes source-free Maxwell theory conformally invariant at the classical level.
 
-**A caution on the trace in the $ict$ convention.** The trace is $\eta_{\mu\nu}T^{\mu\nu} = -T^{tt} + T^{\mu\mu}$, not the flat sum $T^{tt} + T^{\mu\mu}$. In the $ict$ convention all four components are written with the same index position and the metric factor is carried by the $i$ in the time component, so the two conventions differ by the sign of the time term; here $T^{tt} = W$ and $T^{\mu\mu} = -\sigma_{\mu\mu} = W$, so the flat sum would be $2W$, not zero. The cancellation above uses the Minkowski pairing, which is the one under which the tensor takes its standard form.
+**A caution on the trace in the $ict'$ convention.** The trace is $\eta_{\mu\nu}T^{\mu\nu} = -T^{tt} + T^{\mu\mu}$, not the flat sum $T^{tt} + T^{\mu\mu}$. In the $ict'$ convention all four components are written with the same index position and the metric factor is carried by the $i$ in the time component, so the two conventions differ by the sign of the time term; here $T^{tt} = W$ and $T^{\mu\mu} = -\sigma_{\mu\mu} = W$, so the flat sum would be $2W$, not zero. The cancellation above uses the Minkowski pairing, which is the one under which the tensor takes its standard form.
 
 ## Problem 4: The Conservation Law
 
@@ -197,19 +197,19 @@ f^\nu = \left(\frac{1}{c}\vec E\cdot\vec J,\; \rho\vec E + \vec J\times\vec B\ri
 $$
 In particular, for a source-free field, $\partial_\mu T^{\mu\nu} = 0$.
 
-**Solution (energy component).** The time coordinate of the framework is $Q_t=ict$, so the derivative is $\partial/\partial Q_\mu$ with $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$ and $\partial/\partial Q_k=\partial/\partial q_k$. The temporal component of the four-vector $T^\mu{}_t$ carries the reciprocal factor $i$, $T^{t}{}_{t}=\frac{i}{c}W$, against the spatial ones $T^{k}{}_{t}=\frac{1}{c}S_k$, so the two factors of $i$ multiply to $+1$ and
+**Solution (energy component).** The time coordinate of the framework is $Q_t=ict'$, so the derivative is $\partial/\partial Q_\mu$ with $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$ and $\partial/\partial Q_k=\partial/\partial q_k$. The temporal component of the four-vector $T^\mu{}_t$ carries the reciprocal factor $i$, $T^{t}{}_{t}=\frac{i}{c}W$, against the spatial ones $T^{k}{}_{t}=\frac{1}{c}S_k$, so the two factors of $i$ multiply to $+1$ and
 $$
-\partial_\mu T^{\mu t} = \frac{\partial}{\partial Q_t}\,\frac{i}{c}W + \frac{\partial}{\partial Q_k}\,\frac{1}{c}S_k = \frac{1}{c}\left(\frac{\partial}{\partial t}W + \mathrm{div}\,\vec S\right) = -\frac{1}{c}\,\vec E\cdot\vec J,
+\partial_\mu T^{\mu t} = \frac{\partial}{\partial Q_t}\,\frac{i}{c}W + \frac{\partial}{\partial Q_k}\,\frac{1}{c}S_k = \frac{1}{c}\left(\frac{\partial}{\partial t'}W + \mathrm{div}\,\vec S\right) = -\frac{1}{c}\,\vec E\cdot\vec J,
 $$
-where the Poynting theorem $\partial/\partial tW + \mathrm{div}\,\vec S = -\vec E\cdot\vec J$ was used in the last step. The energy component of the divergence is the negative of the work done by the field on the charges: the field loses energy at the rate $\vec E\cdot\vec J$.
+where the Poynting theorem $\partial/\partial t'W + \mathrm{div}\,\vec S = -\vec E\cdot\vec J$ was used in the last step. The energy component of the divergence is the negative of the work done by the field on the charges: the field loses energy at the rate $\vec E\cdot\vec J$.
 
 **Solution (momentum component).** With the components $T^{t}{}_{k}=\frac{i}{c}S_k$ against $T^{j}{}_{k}=-\sigma_{jk}$,
 $$
-\partial_\mu T^{\mu k} = \frac{\partial}{\partial Q_t}\,\frac{i}{c}S_k - \frac{\partial}{\partial q_j}\,\sigma_{jk} = \frac{1}{c^2}\,\partial/\partial tS_k - \partial/\partial q_j\,\sigma_{jk},
+\partial_\mu T^{\mu k} = \frac{\partial}{\partial Q_t}\,\frac{i}{c}S_k - \frac{\partial}{\partial q_j}\,\sigma_{jk} = \frac{1}{c^2}\,\partial/\partial t'S_k - \partial/\partial q_j\,\sigma_{jk},
 $$
 again the two factors of $i$ multiplying to $-1$. The standard momentum-balance identity for the Maxwell stress, obtained from the Ampère–Maxwell and Faraday laws together with the Gauss laws,
 $$
-\frac{1}{c^2}\,\partial/\partial t\vec S - \nabla\cdot\boldsymbol{\sigma} = -\left(\rho\,\vec E + \vec J\times\vec B\right),
+\frac{1}{c^2}\,\partial/\partial t'\vec S - \nabla\cdot\boldsymbol{\sigma} = -\left(\rho\,\vec E + \vec J\times\vec B\right),
 $$
 gives $\partial_\mu T^{\mu k} = -f_k$. The four statements combine into $\partial_\mu T^{\mu\nu} = -f^\nu$.
 
@@ -217,7 +217,7 @@ Both component equations were checked by direct symbolic recomputation from the 
 
 **Source-free field.** When $\rho = 0$ and $\vec J = 0$, the divergence vanishes, $\partial_\mu T^{\mu\nu} = 0$: energy and momentum are conserved. This is the standard statement, now with the tensor built from $\tilde F$ rather than quoted from the tensor calculus.
 
-**The $ict$ bookkeeping, stated once.** The time coordinate is $Q_t=ict$ and never $ct$, so the time slot of the gradient is $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$. Every temporal index in the algebra then carries a factor $i$ that this time derivative cancels, which is why the component equations above come out with the ordinary real four-force density $f^\nu=\left(\frac{1}{c}\vec E\cdot\vec J,\ \rho\vec E+\vec J\times\vec B\right)$. The divergence is the **plain** one, $\partial_\mu T^{\mu\nu}$; the **natural** contraction with the conjugated gradient $\tilde\nabla^{\natural}$, the component sum, is the divergence of the framework's four-vector currents, and for this rank-two tensor it is a different combination that does not vanish.
+**The $ict'$ bookkeeping, stated once.** The time coordinate is $Q_t=ict'$ and never $ct'$, so the time slot of the gradient is $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$. Every temporal index in the algebra then carries a factor $i$ that this time derivative cancels, which is why the component equations above come out with the ordinary real four-force density $f^\nu=\left(\frac{1}{c}\vec E\cdot\vec J,\ \rho\vec E+\vec J\times\vec B\right)$. The divergence is the **plain** one, $\partial_\mu T^{\mu\nu}$; the **natural** contraction with the conjugated gradient $\tilde\nabla^{\natural}$, the component sum, is the divergence of the framework's four-vector currents, and for this rank-two tensor it is a different combination that does not vanish.
 
 **Remark (the same balance in a matrix formulation).** The tensor of this problem has an independent life in the $4 \times 4$ complex matrix formulation of Maxwell's equations, where the single matrix
 
@@ -227,30 +227,30 @@ F = \begin{pmatrix} 0 & \vec E^{\mathsf T} \\ \vec E & -[\vec B]_\times \end{pma
 F^* = \begin{pmatrix} 0 & -\vec B^{\mathsf T} \\ -\vec B & -[\vec E]_\times \end{pmatrix},
 $$
 
-with $[\vec q]_\times$ the matrix of $\vec v\mapsto\vec q\times\vec v$, is real, traceless, and entry by entry the same components as above with the indices placed mixed: the corner entry is $\frac12(\vec E^2+\vec B^2) = W$, the first row and column carry the Poynting vector with opposite signs, $T_F^{tk} = -S_\mu$ and $T_F^{kt} = S_\mu$, and the spatial block is the Maxwell stress $\sigma_{\nu\mu} = E_\nuE_\mu + B_\nuB_\mu - W\delta_{\nu\mu}$. That the two off-diagonal blocks differ in sign is not an error: the matrix is a mixed tensor $T^\mu{}_\nu$, so it is not symmetric, and the asymmetry is precisely the information about which index is up. Multiplying by the operator column $(-\partial/\partial t,\nabla)^{\mathsf T}$ gives the balance of this problem, $-\partial/\partial Q_\mu T^{\mu\nu}$ equalling the four-force density, and the derivation has two steps: the Leibniz rule turns the divergence of the product into the divergences of the two factors, and the algebraic identity
+with $[\vec q]_\times$ the matrix of $\vec v\mapsto\vec q\times\vec v$, is real, traceless, and entry by entry the same components as above with the indices placed mixed: the corner entry is $\frac12(\vec E^2+\vec B^2) = W$, the first row and column carry the Poynting vector with opposite signs, $T_F^{tk} = -S_\mu$ and $T_F^{kt} = S_\mu$, and the spatial block is the Maxwell stress $\sigma_{\nu\mu} = E_\nuE_\mu + B_\nuB_\mu - W\delta_{\nu\mu}$. That the two off-diagonal blocks differ in sign is not an error: the matrix is a mixed tensor $T^\mu{}_\nu$, so it is not symmetric, and the asymmetry is precisely the information about which index is up. Multiplying by the operator column $(-\partial/\partial t',\nabla)^{\mathsf T}$ gives the balance of this problem, $-\partial/\partial Q_\mu T^{\mu\nu}$ equalling the four-force density, and the derivation has two steps: the Leibniz rule turns the divergence of the product into the divergences of the two factors, and the algebraic identity
 
 $$
 cF(\vec A)\,\overline{cF(\vec C)} = \overline{cF(\vec C)}\,cF(\vec A) \qquad \text{for all vectors } \vec A, \vec C,
 $$
 
-which holds because $F = \frac12(cF + \overline{cF})$, lets the two terms of the product be re-ordered into a common form. The source's proof needs one more fact with these, that the differential $d(cF)$ again has the same form as $cF$, and then the two terms are each the field matrix applied to $(\rho,\vec J)$ — one by the equation $cF(-\partial/\partial t,\nabla)^{\mathsf T} = (\rho,\vec J)^{\mathsf T}$, the other by its complex conjugate, which is again equivalent to the whole Maxwell system because $\rho$ and $\vec J$ are real — so that their mean is $F(\rho,\vec J)^{\mathsf T}$ by the last fact, $F$ being the real part of $cF$. In this form the divergence of the tensor and the single matrix equation of the field are not two results but two interpretations of one computation. Every statement in this remark was recomputed: the identification of the matrix with $W$, $\vec S$ and $\sigma$ over $100$ random fields to $9 \times 10^{-16}$, its reality and tracelessness, the divergence identity to $1.2 \times 10^{-11}$, the finite-difference floor of the test, and the commutation exactly. The tensor is not the surprise of this route, since it is the same tensor; the surprise is the reason the divergence works, which is the commutation above, and in that formulation it is traced to the left and right regular representations of the biquaternion algebra — the same pair of representations the corpus meets as the double centralizer of *The Element and Operator Representations*. So the balance of this problem can be obtained in three ways at least: from the tensor calculus as here, from the norm of the field biquaternion as in the companion articles, and from the trace of a product of matrices as in the formulation cited below.
+which holds because $F = \frac12(cF + \overline{cF})$, lets the two terms of the product be re-ordered into a common form. The source's proof needs one more fact with these, that the differential $d(cF)$ again has the same form as $cF$, and then the two terms are each the field matrix applied to $(\rho,\vec J)$ — one by the equation $cF(-\partial/\partial t',\nabla)^{\mathsf T} = (\rho,\vec J)^{\mathsf T}$, the other by its complex conjugate, which is again equivalent to the whole Maxwell system because $\rho$ and $\vec J$ are real — so that their mean is $F(\rho,\vec J)^{\mathsf T}$ by the last fact, $F$ being the real part of $cF$. In this form the divergence of the tensor and the single matrix equation of the field are not two results but two interpretations of one computation. Every statement in this remark was recomputed: the identification of the matrix with $W$, $\vec S$ and $\sigma$ over $100$ random fields to $9 \times 10^{-16}$, its reality and tracelessness, the divergence identity to $1.2 \times 10^{-11}$, the finite-difference floor of the test, and the commutation exactly. The tensor is not the surprise of this route, since it is the same tensor; the surprise is the reason the divergence works, which is the commutation above, and in that formulation it is traced to the left and right regular representations of the biquaternion algebra — the same pair of representations the corpus meets as the double centralizer of *The Element and Operator Representations*. So the balance of this problem can be obtained in three ways at least: from the tensor calculus as here, from the norm of the field biquaternion as in the companion articles, and from the trace of a product of matrices as in the formulation cited below.
 
 ## Problem 5: The Free Plane Wave — a Null Field
 
 **Statement.** For the plane wave of Problem 1, compute $T^{\mu\nu}$ explicitly and show that it is rank one, $T^{\mu\nu}\propto k^\mu k^\nu$ with $k$ the wave four-vector; verify tracelessness and conservation on this case.
 
-**Solution.** The wave four-vector of a wave propagating in the $+z$ direction at the medium speed is $k^\mu = \left(\frac{\omega}{c}, 0, 0, k\right)$ with $k = \frac{\omega}{c}$. For this wave $W = \epsilon E_0^2\cos^2(kz-\omega t)$, $S_z = cW$, and the Maxwell stress has the components
+**Solution.** The wave four-vector of a wave propagating in the $+z$ direction at the medium speed is $k^\mu = \left(\frac{\omega}{c}, 0, 0, k\right)$ with $k = \frac{\omega}{c}$. For this wave $W = \epsilon E_0^2\cos^2(kz-\omega t')$, $S_z = cW$, and the Maxwell stress has the components
 $$
 \sigma_{33} = \epsilon E_3^2 + \mu H_3^2 - W = -W, \qquad \sigma_{11} = \epsilon E_1^2 + \mu H_1^2 - W = \epsilon E_0^2\cos^2 - W = 0,
 $$
 $$
 \sigma_{22} = \mu\frac{E_0^2}{\mu^2c^2}\cos^2 - W = \epsilon E_0^2\cos^2 - W = 0, \qquad \sigma_{12} = \sigma_{13} = \sigma_{23} = 0,
 $$
-where $W = \epsilon E_0^2\cos^2(kz-\omega t)$ for this wave and $1/(\mu c^2) = \epsilon$. Hence only $T^{tt} = W$, $T^{tz} = T^{zt} = \frac{1}{c}S_z = W$, and $T^{zz} = -\sigma_{33} = W$ survive:
+where $W = \epsilon E_0^2\cos^2(kz-\omega t')$ for this wave and $1/(\mu c^2) = \epsilon$. Hence only $T^{tt} = W$, $T^{tz} = T^{zt} = \frac{1}{c}S_z = W$, and $T^{zz} = -\sigma_{33} = W$ survive:
 $$
 T^{\mu\nu} = W\begin{pmatrix} 1 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 0 & 0 & 1 \end{pmatrix} = \frac{W}{(\omega/c)^2}\,k^\mu k^\nu .
 $$
-The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $\eta_{\mu\nu}T^{\mu\nu} = -T^{tt} + T^{zz} = -W + W = 0$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\partial/\partial Q_\mu T^{\mu\nu} \propto (\partial/\partial Q_\mu W)k^\mu k^\nu$ with $\partial/\partial Q_\mu W\,k^\mu = k\left(\frac{1}{c}\partial/\partial tW + \partial/\partial Q_z\,W\right) = 0$, using $\partial/\partial Q_z\,W = -\frac{1}{c}\partial/\partial tW$. The direct computation confirms $\partial/\partial Q_\mu T^{\mu\nu} = 0$ and $T^\mu{}_\mu = 0$ identically in $z$ and $t$.
+The tensor is manifestly rank one: it has one nonzero eigenvalue $2W$, along the null direction $k$, and it annihilates every vector orthogonal to $k$. The trace vanishes, $\eta_{\mu\nu}T^{\mu\nu} = -T^{tt} + T^{zz} = -W + W = 0$, consistent with Problem 3. The divergence vanishes because the wave vector is null and $W$ depends on the phase alone: $\partial/\partial Q_\mu T^{\mu\nu} \propto (\partial/\partial Q_\mu W)k^\mu k^\nu$ with $\partial/\partial Q_\mu W\,k^\mu = k\left(\frac{1}{c}\partial/\partial t'W + \partial/\partial Q_z\,W\right) = 0$, using $\partial/\partial Q_z\,W = -\frac{1}{c}\partial/\partial t'W$. The direct computation confirms $\partial/\partial Q_\mu T^{\mu\nu} = 0$ and $T^\mu{}_\mu = 0$ identically in $z$ and $t'$.
 
 The rank-one character is the energy–momentum expression of the vanishing biquaternion norm. A null field, $\langle\tilde F\rangle_{\natural} = 0$, is a zero divisor of $\mathbb{B}$, and its energy–momentum tensor is built from a single null direction. The plane wave is the model case; the general null field behaves the same way pointwise, which is the content of the first further problem below.
 
@@ -276,7 +276,7 @@ reproduces the component table of Problem 2 up to the medium factors, and identi
 
 **6. The complexified field.** Repeat the construction for a fully complexified $\tilde F$, with coefficients unrestricted in $\mathbb{C}$ rather than confined to the physical combination $i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$. Which of the statements — tracelessness, symmetry, conservation — survive, and what is the trace in the complexified case? (The parent notes that the projection onto $\mathbb{M}_-$ reproduces the electromagnetic field; the question is what the extra components do to $T$.)
 
-**7. The radiated flux and the self-interaction force.** For a field with sources, apply Gauss's theorem to $\partial_\mu T^{\mu\nu} = -f^\nu$ to show that the flux of energy–momentum through a closed 3-surface, $\left(dP/dt\right)(\Sigma) = \int_{{}^{3}\Sigma} T(d{}^{3}\Sigma)$, equals minus the four-volume integral of the force density, $\left(dP/dt\right)(\Sigma) = -\mathcal{Q}(\Omega)$. The step is formal for point charges, because $T$ is quadratic in the field and the product of the singular field with itself is undefined for distributions. Gsponer carries the calculation out in a Colombeau algebra of nonlinear generalized functions, obtains $\left(dP/dt\right)(\Sigma) = -\mathcal{Q}$ rigorously for an arbitrarily moving relativistic point charge, and derives the Lorentz–Dirac equation from it; the statement and its consequences are recorded in *Radiation from Accelerated Charges in Biquaternionic Form*.
+**7. The radiated flux and the self-interaction force.** For a field with sources, apply Gauss's theorem to $\partial_\mu T^{\mu\nu} = -f^\nu$ to show that the flux of energy–momentum through a closed 3-surface, $\left(dP/dt'\right)(\Sigma) = \int_{{}^{3}\Sigma} T(d{}^{3}\Sigma)$, equals minus the four-volume integral of the force density, $\left(dP/dt'\right)(\Sigma) = -\mathcal{Q}(\Omega)$. The step is formal for point charges, because $T$ is quadratic in the field and the product of the singular field with itself is undefined for distributions. Gsponer carries the calculation out in a Colombeau algebra of nonlinear generalized functions, obtains $\left(dP/dt'\right)(\Sigma) = -\mathcal{Q}$ rigorously for an arbitrarily moving relativistic point charge, and derives the Lorentz–Dirac equation from it; the statement and its consequences are recorded in *Radiation from Accelerated Charges in Biquaternionic Form*.
 
 8. **The tensor on a deformed arena — tracelessness, symmetry and conservation are properties of the arena.** Every statement above, and in particular tracelessness (Problem 3) and the conservation law (Problem 4), is a property of a Lorentz-invariant, commutative arena carrying a linear field theory. The companion article *Maxwell's Theory on Non-Commutative Spaces and Quaternions* constructs the same tensor on an arena whose coordinates do not commute, and all three properties change. (i) The trace is **not** zero: for the canonical tensor
 $$
@@ -304,7 +304,7 @@ with $W = \frac{1}{2}(\epsilon\vec E^2 + \mu\vec H^2)$ the energy density, $\vec
 
 The tensor is traceless, $T^\mu{}_\mu = -W - \sigma_{\mu\mu} = 0$, and it is conserved: $\partial_\mu T^{\mu t} = -\frac{1}{c}\vec E\cdot\vec J$ and $\partial_\mu T^{\mu k} = -(\rho\vec E + \vec J\times\vec B)_k$, equivalently $\partial_\mu T^{\mu\nu} = -f^\nu$ with the four-force density. For a source-free field the divergence vanishes; for the free plane wave the tensor has rank one, $T^{\mu\nu}\propto k^\mu k^\nu$.
 
-The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial Q_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial tW$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{M}_+$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
+The exercise also settles the form of the four-component *biquaternionic energy–momentum*. The real form $\tilde W = W + \frac{1}{c}\vec S$ and its claimed conservation law $\tilde\nabla\tilde W = -\tilde{\mathcal F}$ do not survive recomputation: the time-derivative term acquires a factor $i$ from $\partial/\partial Q_t$ that the divergence term does not carry, and the equation fails already on a free plane wave, where it gives $\frac{1-i}{c}\partial/\partial t'W$ instead of zero. The consistent four-component object is the Hermitian form the parents state, $\frac{1}{2}\tilde F\tilde F^{*} = W + \frac{i}{c}\vec S \in \mathbb{M}_+$, whose scalar divergence gives the energy law; but no four-component object can carry the spatial stress, which is the rank-two tensor built above.
 
 ## Summary of Notation
 

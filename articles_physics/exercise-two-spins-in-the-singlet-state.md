@@ -230,7 +230,7 @@ the natural pairing between the joint state and the joint measurement operator. 
 | Physical process | Single measurement | Time evolution | Successive measurements | Entangled measurement |
 | Structural object | Idempotent + idempotent | Idempotent + unitary | Sequence of idempotents | Idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula |
-| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_a\cdot\vec u_b)$ |
+| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t')$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_a\cdot\vec u_b)$ |
 
 These exercises illustrate four fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), **sequential measurement** (Exercise: Successive Measurements of Spin), and **entangled measurement** (Exercise: Two Spins in the Singlet State). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$ (and, in Exercise: Two Spins in the Singlet State, their tensor products).
 

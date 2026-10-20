@@ -188,7 +188,7 @@ $$
 
 The map is a circle bundle away from the origin: the fiber over a nonzero $x$ is a circle, and $\varsigma$ and $-\varsigma$ are two points of it. The sign pair is the discrete part of the ambiguity; the circle is the gauge freedom of the KS constraint, not a second physical position. The map is a square root of the position in the sense that the three position coordinates are quadratic in the four KS coordinates, while the radius is the algebra's norm of $\varsigma$.
 
-**Boundary.** The transformation, the pseudo-time $dt=r\,ds$, the reduction to the four-dimensional oscillator and the Mehler kernel are standard and imported. The algebra supplies the interpretation: the Coulomb potential is a central scalar, the radius is the norm, and the singularity is the inverse norm. It does not cure the analytic failure of the time-sliced kernel. The sign pair is not two physical positions either: it is one discrete ambiguity inside a circle of representatives, and the circle is the constraint's gauge freedom.
+**Boundary.** The transformation, the pseudo-time $dt'=r\,ds$, the reduction to the four-dimensional oscillator and the Mehler kernel are standard and imported. The algebra supplies the interpretation: the Coulomb potential is a central scalar, the radius is the norm, and the singularity is the inverse norm. It does not cure the analytic failure of the time-sliced kernel. The sign pair is not two physical positions either: it is one discrete ambiguity inside a circle of representatives, and the circle is the constraint's gauge freedom.
 
 ## The Roots Are Frames
 

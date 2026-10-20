@@ -27,7 +27,7 @@ D_-\tilde J_{\mathrm{eg}} = 0,
 \qquad
 D_- = \partial/\partial\tau - i\nabla,
 \qquad
-\tau = ct,
+\tau = ct',
 $$
 
 with the paper's pure-vector $\nabla$. Its scalar part is the conservation law $\partial/\partial\tau\,\rho + \mathrm{div}\,\vec J = 0$ and its vector part the first-order inertia equation for the current; both are in the companion article, and nothing here changes them.
@@ -134,8 +134,7 @@ $$
 \tilde J_{\mathrm{eg},00^{\,0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = \omega\left(j_0(\omega r) + j_1(\omega r)\,\vec u_x\right),
 \qquad
-\vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},
-$$
+\vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},}$$
 
 so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part directed **radially**, $\omega j_1(\omega r)\vec u_x$. This closed form was verified numerically by evaluating the operator $(\omega - \nabla)$ on $j_0(\omega r)$ by central differences and comparing with the right-hand side at random points, with the residual at the finite-difference floor; the identity $d j_0(\omega r)/d(\omega r) = -j_1$ is exact between the two closed forms.
 
@@ -193,16 +192,14 @@ $$
 = -\,\omega\,j_1(\omega r)\,r_{,1}
 + \omega\left(j_0(\omega r)\,\vec e_x + j_1(\omega r)\left(r_{,3}\vec e_y - r_{,2}\vec e_z\right)\right),
 \qquad
-r_{,k} = \frac{x_k}{r},
-$$
+r_{,k} = \frac{x_k}{r},}$$
 
 so the scalar part carries the factor $j_1$ and vanishes at the origin while the vector part carries $j_0$ and does not. For a general orientation $\hat e$ the derived form is
 
 $$
 \tilde J_{\mathrm{eg},00^{\,\hat e}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
 = -\,\omega\,j_1(\omega r)\left(\hat e, \vec u_x\right)
-+ \omega\left(j_0(\omega r)\,\hat e - j_1(\omega r)\left[\hat e, \vec u_x\right]\right),
-$$
++ \omega\left(j_0(\omega r)\,\hat e - j_1(\omega r)\left[\hat e, \vec u_x\right]\right),}$$
 
 and the paper's stated general form, its equation (4.4), carries the opposite sign on the commutator term. The source contradicts itself here: its equation (4.1) for the axis-directed case writes the term out explicitly as $\omega j_1(\omega r)(r_{,3}\vec e_y - r_{,2}\vec e_z)$, which is $-\omega j_1[\hat e, \vec u_x]$, while its general form would give $+\omega j_1[\hat e, \vec u_x]$. The sign printed here is the derived one, and it is the one the source's own components use.
 
@@ -356,7 +353,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $\vec j_E, \vec j_H$ | Electric and gravimagnetic current densities |
 | $\rho = -\rho_E/\sqrt{\epsilon} + i\rho_H/\sqrt{\mu}$ | 2019 source's charge convention (negative of the corpus's) |
 | $\vec J = -\sqrt{\mu}\,\vec j_E + i\sqrt{\epsilon}\,\vec j_H$ | 2019 source's current convention |
-| $\tau = ct$ | Scaled time; $\omega$ is a frequency in units of $1/\mathrm{length}$ |
+| $\tau = ct'$ | Scaled time; $\omega$ is a frequency in units of $1/\mathrm{length}$ |
 | $\nabla = \vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Pure-vector gradient, acting by left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$; hence the factorisation below |
 | $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$ | Helmholtz factorisation of the monochromatic operator |

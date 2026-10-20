@@ -4,7 +4,7 @@
 
 This is one of the worked exercises on the biquaternion Dirac equation. It exists to test its parent article, *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, which supplies the field, the two natural spinor bases, the plane-wave solution structure, the covariant normalisations, the spin sums, and the biquaternionic mass-shell condition.
 
-We assume the parent article throughout and do not re-derive the equation. We take over from it: the spinor-module form of the equation, $(i\gamma^\mu\partial_\mu-m)\psi=0$; the two bases, **chiral** and **Dirac**; the plane-wave branches $\psi=w(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and $\psi=v(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ with $E=+\sqrt{\vec p^2+m^2}$; the momentum-space equations $(\not p-m)w=0$ and $(\not p+m)v=0$; the wave biquaternion and the mass-shell condition. The value of an exercise of this kind lies in the worked solutions, so each problem is carried to a definite answer.
+We assume the parent article throughout and do not re-derive the equation. We take over from it: the spinor-module form of the equation, $(i\gamma^\mu\partial_\mu-m)\psi=0$; the two bases, **chiral** and **Dirac**; the plane-wave branches $\psi=w(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and $\psi=v(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ with $E=+\sqrt{\vec p^2+m^2}$; the momentum-space equations $(\not p-m)w=0$ and $(\not p+m)v=0$; the wave biquaternion and the mass-shell condition. The value of an exercise of this kind lies in the worked solutions, so each problem is carried to a definite answer.
 
 The six problems are: **(1)** write out $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ explicitly at rest and at general momentum; **(2)** verify the covariant normalisations $\bar w w=2m$, $\bar v v=-2m$ and the orthogonality $\bar w v=0$; **(3)** verify the spin sums; **(4)** take the massless limit and exhibit the helicity–chirality locking; **(5)** verify the gamma-matrix algebra in the two representations and determine how the Lorentz generators change basis; **(6)** verify the biquaternionic mass-shell condition.
 
@@ -14,7 +14,7 @@ $$
 g=\mathrm{diag}(+1,-1,-1,-1),\qquad \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,
 $$
 
-so that with the four-momentum $p^\mu=(E,\vec p)$ and $p_\mu=(E,-\vec p)$, the slash is $\not p=\gamma^\mu p_\mu=\gamma^0E-\boldsymbol\gamma\cdot\vec p$. This $g$ is **not** the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ carried by the $ict$ gradient; the two are negatives, $g=-\eta$, and they yield the same $\Box$. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution sections we use natural units $\hbar=c=1$, restoring $\hbar$ and $c$ in Problem 6. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r){}^{*}}\xi^{(s)}=\delta^{rs}$ and the same for $\eta^{(r)}$, and $\chi_\pm$ are the helicity eigenspinors $\boldsymbol\sigma\cdot\vec u_p\,\chi_\pm=\pm\chi_\pm$.
+so that with the four-momentum $p^\mu=(E,\vec p)$ and $p_\mu=(E,-\vec p)$, the slash is $\not p=\gamma^\mu p_\mu=\gamma^0E-\boldsymbol\gamma\cdot\vec p$. This $g$ is **not** the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ carried by the $ict'$ gradient; the two are negatives, $g=-\eta$, and they yield the same $\Box$. The Dirac adjoint is $\bar\psi=\psi^\dagger\gamma^0$. In the solution sections we use natural units $\hbar=c=1$, restoring $\hbar$ and $c$ in Problem 6. The two-spinors are $\xi^{(1)}=(1,0)^T$, $\xi^{(2)}=(0,1)^T$, with $\xi^{(r){}^{*}}\xi^{(s)}=\delta^{rs}$ and the same for $\eta^{(r)}$, and $\chi_\pm$ are the helicity eigenspinors $\boldsymbol\sigma\cdot\vec u_p\,\chi_\pm=\pm\chi_\pm$.
 
 ## Problem 1: The spinors at rest and at general momentum
 
@@ -224,7 +224,7 @@ $$
 \boldsymbol\sigma\cdot\vec u_p\,\psi_R=+\psi_R,\qquad \boldsymbol\sigma\cdot\vec u_p\,\psi_L=-\psi_L,
 $$
 
-which is the helicity–chirality locking again. Restoring $c$ and $\hbar$ and passing to the time-dependent form gives the parent's Weyl equations $i\hbar\,\partial/\partial t\psi_R=c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_R$ and $i\hbar\,\partial/\partial t\psi_L=-c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_L$, where $p$ is the momentum operator (the parent writes the unit direction $\vec u_p$ in the plane-wave formulas; in the operator equations the momentum is $p=-i\hbar\nabla$). Each Weyl equation has a two-dimensional solution space, and the Dirac equation is recovered as the pair.
+which is the helicity–chirality locking again. Restoring $c$ and $\hbar$ and passing to the time-dependent form gives the parent's Weyl equations $i\hbar\,\partial/\partial t'\psi_R=c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_R$ and $i\hbar\,\partial/\partial t'\psi_L=-c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_L$, where $p$ is the momentum operator (the parent writes the unit direction $\vec u_p$ in the plane-wave formulas; in the operator equations the momentum is $p=-i\hbar\nabla$). Each Weyl equation has a two-dimensional solution space, and the Dirac equation is recovered as the pair.
 
 ## Problem 5: The gamma-matrix algebra and the change of basis
 
@@ -339,7 +339,7 @@ Two items needed in this exercise are not displayed in the parent article: the c
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators; $g=-\eta$ |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict$ gradient |
+| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Feynman slash of $p^\mu=(E,\vec p)$ |
 | $\bar\psi=\psi^\dagger\gamma^0$ | Dirac adjoint |
 | $w^{(r)}(\vec p),\,v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (Dirac basis) |

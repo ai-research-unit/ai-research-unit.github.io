@@ -161,7 +161,7 @@ A quantity whose expectation value is the same in every state and whose uncertai
 
 **2. Central elements are conserved under every dynamics.** For any Hermitian generator $\tilde{H}\in\mathbb{M}_+$, the Heisenberg evolution of a central element is trivial,
 $$
-\frac{d}{dt}\tilde Q_3=\frac{1}{i\hbar}\bigl[\tilde{H},\tilde Q_3\bigr]=0 ,
+\frac{d}{dt'}\tilde Q_3=\frac{1}{i\hbar}\bigl[\tilde{H},\tilde Q_3\bigr]=0 ,
 $$
 because the commutator vanishes identically. A central element is therefore a constant of the motion for **every** Hamiltonian, which is the algebraic counterpart of a classical conserved parameter: it does not evolve, cannot be prepared, and carries no dynamical information. The comparison with the Poisson bracket is standard: the commutator is the quantum bracket and $(1/i\hbar)[\cdot,\cdot]$ reduces to the Poisson bracket in the classical limit; a quantity whose bracket with everything vanishes has identically zero Poisson bracket and is a classical constant.
 

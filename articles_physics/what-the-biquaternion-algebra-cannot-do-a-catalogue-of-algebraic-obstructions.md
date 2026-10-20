@@ -202,7 +202,7 @@ and under the matrix model $M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C})\con
 
 ### O14. The norm-preserving unit is forced into the centre
 
-**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\hbar\,\partial/\partial t\psi=J\tilde{H}\psi$ preserves the Hermitian norm for every Hermitian $\tilde{H}$ only if $J=\pm i$.
+**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\hbar\,\partial/\partial t'\psi=J\tilde{H}\psi$ preserves the Hermitian norm for every Hermitian $\tilde{H}$ only if $J=\pm i$.
 
 **Proof.** The generator is $-\hbar^{-1}J\tilde{H}$, so its Hermitian conjugate is $-\hbar^{-1}\tilde{H}J^\dagger$; anti-Hermiticity of the generator for all Hermitian $\tilde{H}$ therefore reads $-\tilde{H}J^\dagger=J\tilde{H}$ for all Hermitian $\tilde{H}$, which at $\tilde{H}=e_t$ forces $J^\dagger=-J$ (so a general root of $-e_t$, which need not be anti-Hermitian, is excluded) and then requires $\tilde{H}J=J\tilde{H}$ for all Hermitian $\tilde{H}$, hence $J$ central. The central roots of $-e_t$ are $\pm i$. The non-central root $J=\vec e_z$ with $\tilde{H}=i\vec e_x$ gives the generator $-\hbar^{-1}i\vec e_y$, which is Hermitian and generates a non-unitary flow.
 
@@ -265,7 +265,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** There is no element or operation of $\mathbb{B}$ that represents the time derivative or selects a Hamiltonian. The dynamics must be supplied from outside.
 
-**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial/\partial t\psi=J\tilde{H}\psi$ therefore introduces both $\partial/\partial t$ and $\tilde{H}$ as external data.
+**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial/\partial t'\psi=J\tilde{H}\psi$ therefore introduces both $\partial/\partial t'$ and $\tilde{H}$ as external data.
 
 **Consequence.** The framework derives no arrow of time and no equation of motion from its algebra; the dynamical law is a posit, and so is the identification of the central parameters that accompany it.
 

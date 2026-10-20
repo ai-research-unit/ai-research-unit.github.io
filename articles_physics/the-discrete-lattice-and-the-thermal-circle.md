@@ -21,7 +21,7 @@ Charge and Three-Particle Couplings*.
 
 **Conventions.** $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$ is the unitary slice,
 $Sp(1)\cong SU(2)$ its real-quaternion part; the thermal circle is the compact imaginary-time direction of
-circumference $\beta$ in the coordinate $t$, with $\beta=\hbar/(k_BT)$ the inverse temperature as throughout
+circumference $\beta$ in the coordinate $t'$, with $\beta=\hbar/(k_BT)$ the inverse temperature as throughout
 the corpus (its length in the material sector's units is $c\beta$), and the Matsubara frequencies are
 $\omega_n=2\pi n/\beta$.
 
@@ -56,9 +56,9 @@ The principle sharpens when the two disciplines are set side by side, because th
 compact object and **two different** ones at once.
 
 **One object.** The thermal circle is the central phase at finite temperature. The imaginary
-direction is the material sector's own $ict$, not one produced by a rotation, and it is the central phase:
+direction is the material sector's own $ict'$, not one produced by a rotation, and it is the central phase:
 the KMS condition is the statement of periodicity in that phase, and the modular flow it generates is the
-central rotation. The thermal theory is usually reached by the Wick rotation $t\mapsto-i\tau$, which reads
+central rotation. The thermal theory is usually reached by the Wick rotation $t'\mapsto-i\tau$, which reads
 that same direction as real; the direction itself is the material sector's, and the temperature
 compactifies it rather than rotating it. So the circle whose dual is the Matsubara lattice is the
 central phase compactified, and the discrete thermal spectrum and the discrete charge label are two
@@ -120,7 +120,7 @@ named as a gap and not proposed as a formula.
 | $U\cong \mathrm{U}(2)$ | the compact unitary slice, whose irreducible labels are the internal quantum numbers |
 | $\omega_n=2\pi n/\beta$ | the Matsubara frequencies, the dual lattice of the thermal circle |
 | $Sp(1)\cong SU(2)$ | the compact real unit sphere, in which the orders and their finite unit groups sit |
-| $\beta=\hbar/(k_BT)$ | the circumference of the thermal circle, in the coordinate $t$ |
+| $\beta=\hbar/(k_BT)$ | the circumference of the thermal circle, in the coordinate $t'$ |
 
 ## Further Reading
 

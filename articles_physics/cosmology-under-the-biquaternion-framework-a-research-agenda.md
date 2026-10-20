@@ -14,7 +14,7 @@ The evidence base is the framework's established articles, in the order of the r
 | **Obstacle with a known route** | The object does not exist, but the computation that would produce it is identifiable |
 | **Obstacle with no route yet** | No mechanism has been proposed; naming an object is not a route to it |
 
-**Conventions.** The notation of the read-list articles is inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with every $\vec e_k$. The material and informational sectors are the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$. Real coordinates are $x^\mu = (ct,x,y,z)$; a four-vector of $\mathbb{M}_-$ is $\tilde{Q} = X^\mu\varepsilon_\mu$; the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The frame field is $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$. Standard cosmology's $a(t)$, $k$, $H$, $\rho$, $p$, $w$, and $\Lambda$ are **not** framework objects; they are written where the standard constructions are named as targets, and the framework supplies none of them. Nothing inherited is renamed or rederived.
+**Conventions.** The notation of the read-list articles is inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and scalar imaginary $i$ commuting with every $\vec e_k$. The material and informational sectors are the anti-Hermitian and Hermitian subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$. Real coordinates are $x^\mu = (ct',x,y,z)$; a four-vector of $\mathbb{M}_-$ is $\tilde{Q} = X^\mu\varepsilon_\mu$; the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The frame field is $\tilde{E}_\mu \in \mathbb{M}_-$ with $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$. Standard cosmology's $a(t')$, $k$, $H$, $\rho$, $p$, $w$, and $\Lambda$ are **not** framework objects; they are written where the standard constructions are named as targets, and the framework supplies none of them. Nothing inherited is renamed or rederived.
 
 ## The Constructions Cosmology Would Require
 
@@ -23,17 +23,17 @@ Cosmology is a specific application of gravity, and it is worth stating the appl
 **The FLRW line element and its two functions.** A homogeneous and isotropic universe is described by the Friedmann–Lemaître–Robertson–Walker line element
 
 $$
-ds^2 = -c^2\,dt^2 + a(t)^2\left[\frac{dr^2}{1-kr^2} + r^2\,d\Omega^2\right],
+ds^2 = -c^2\,d{t'}^2 + a(t')^2\left[\frac{dr^2}{1-kr^2} + r^2\,d\Omega^2\right],
 $$
 
-with a function and a parameter: the **scale factor** $a(t)$, which carries the expansion, and the **spatial-curvature parameter** $k \in \{-1,0,+1\}$, which selects the open, flat, or closed spatial geometry. This is standard cosmology, not framework content. It is the metric the framework's carrier would have to be able to write.
+with a function and a parameter: the **scale factor** $a(t')$, which carries the expansion, and the **spatial-curvature parameter** $k \in \{-1,0,+1\}$, which selects the open, flat, or closed spatial geometry. This is standard cosmology, not framework content. It is the metric the framework's carrier would have to be able to write.
 
 **The Friedmann equations, and what closes them.** Evaluating the Einstein equations on that metric gives
 
 $$
-H^2 \equiv \left(\frac{da/dt}{a}\right)^2 = \frac{8\pi G}{3c^2}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
+H^2 \equiv \left(\frac{da/dt'}{a}\right)^2 = \frac{8\pi G}{3c^2}\rho - \frac{kc^2}{a^2} + \frac{\Lambda c^2}{3},
 \qquad
-\frac{d^2a/dt^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3},
+\frac{d^2a/d{t'}^2}{a} = -\frac{4\pi G}{3c^2}\left(\rho + 3p\right) + \frac{\Lambda c^2}{3},
 $$
 
 where $\rho$ and $p$ are the energy density and pressure of the cosmic source. These are the Einstein equations on a homogeneous and isotropic ansatz; they inherit whatever status the Einstein equations have in the framework, no more and no less. Two of the three functions $a$, $\rho$, $p$ are fixed by them, and the system is **closed by an equation of state**, usually $p = w\rho$, together with the conservation law $\nabla_\mu T^{\mu\nu} = 0$. The source is the perfect-fluid stress–energy tensor
@@ -56,10 +56,10 @@ $$
 g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural},
 $$
 
-and any Lorentzian metric is representable locally, because a $g$-orthonormal frame can be mapped into $\mathbb{M}_-$ by a pointwise linear isometry of quadratic spaces of the same signature. An FLRW metric is a Lorentzian metric, so it is representable. The representation is explicit for the flat-slice case. With a lapse $N(t)$ and scale $a(t)$,
+and any Lorentzian metric is representable locally, because a $g$-orthonormal frame can be mapped into $\mathbb{M}_-$ by a pointwise linear isometry of quadratic spaces of the same signature. An FLRW metric is a Lorentzian metric, so it is representable. The representation is explicit for the flat-slice case. With a lapse $N(t')$ and scale $a(t')$,
 
 $$
-\tilde{E}_0 = i\,N(t)\,e_t, \qquad \tilde{E}_i = a(t)\,\sigma_i(x),
+\tilde{E}_0 = i\,N(t')\,e_t, \qquad \tilde{E}_i = a(t')\,\sigma_i(x),
 $$
 
 where $\sigma_i$ spans $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$, one has $g_{\mu\nu} = \mathrm{diag}(-N^2, a^2\gamma_{ij})$. For the flat spatial slice $\gamma_{ij} = \delta_{ij}$ and the choice $\tilde{E}_0 = ie_t$, $\tilde{E}_i = a\,\vec e_i$, the Gram matrix is exactly
@@ -72,7 +72,7 @@ recomputed here from the inherited bilinear form. This is the FLRW metric with $
 
 Three qualifications belong to the statement, and they are the whole of its content.
 
-- **Carrying is not deriving.** The scale factor $a(t)$ is a function the frame is *given*; the algebra produces no value for it, no equation for it, and no reason to prefer the FLRW form over any other metric. Every Lorentzian metric is representable, so the construction excludes nothing and selects nothing.
+- **Carrying is not deriving.** The scale factor $a(t')$ is a function the frame is *given*; the algebra produces no value for it, no equation for it, and no reason to prefer the FLRW form over any other metric. Every Lorentzian metric is representable, so the construction excludes nothing and selects nothing.
 - **The scale factor is not computed.** The verified identity $\langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural} = \mathrm{diag}(-1,a^2,a^2,a^2)$ is a consistency check on the carrier. It is a statement about the algebra's bilinear form, not a cosmological prediction.
 - **The curved spatial slice is a separate step.** For $k \neq 0$ the spatial metric $a^2\gamma_{ij}$ is not flat, and the frame $\sigma_i$ with $\langle\sigma_i,\sigma_j\rangle_{\natural} = \gamma_{ij}$ must be built pointwise by a linear isometry from the constant-curvature tangent space into $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$. This is a finite-dimensional linear-algebra construction at each point, and it is the first item of the next section.
 
@@ -94,7 +94,7 @@ $$
 
 a class with one free function, no shift, and **flat spatial slices** $g_{ij} = \delta_{ij}$. Two consequences were recomputed here.
 
-- **A time-dependent local $c$ produces no expansion.** For $c_{\mathrm{loc}} = c_{\mathrm{loc}}(t)$, the metric $g = \mathrm{diag}(-c_{\mathrm{loc}}(t)^2,1,1,1)$ is **flat**: the substitution $d\tau = c_{\mathrm{loc}}(t)\,dt$ turns it into $-d\tau^2 +dx^2+dy^2+dz^2$, and a direct computation for $c_{\mathrm{loc}} = 2 + \sin t$ gives an identically vanishing Riemann tensor. A "local scale on the imaginary time axis" is a reparametrisation of time; it cannot produce a scale factor or a Hubble rate, because the spatial metric is untouched.
+- **A time-dependent local $c$ produces no expansion.** For $c_{\mathrm{loc}} = c_{\mathrm{loc}}(t')$, the metric $g = \mathrm{diag}(-c_{\mathrm{loc}}(t')^2,1,1,1)$ is **flat**: the substitution $d\tau = c_{\mathrm{loc}}(t')\,dt'$ turns it into $-d\tau^2 +dx^2+dy^2+dz^2$, and a direct computation for $c_{\mathrm{loc}} = 2 + \sin t'$ gives an identically vanishing Riemann tensor. A "local scale on the imaginary time axis" is a reparametrisation of time; it cannot produce a scale factor or a Hubble rate, because the spatial metric is untouched.
 - **A spatially varying local $c$ produces curvature, but not an FLRW metric.** For $c_{\mathrm{loc}} = c_{\mathrm{loc}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ the class is genuinely curved — recomputed here on the independent case $c_{\mathrm{loc}} = 2 + \cos y$, where the Riemann tensor is nonzero, a statement independent of the Riemann sign convention, and the parent's closed forms read $R_{00} = c_{\mathrm{loc}}\,\Delta c_{\mathrm{loc}}$, $R_{ij} = -\partial^2/\partial Q_i\partial Q_j c_{\mathrm{loc}}/c_{\mathrm{loc}}$, $R = -2\,\Delta c_{\mathrm{loc}}/c_{\mathrm{loc}}$ in the corpus's curvature convention, the convention of *Curvature and Geodesics* and of the linearized-gravity and gravitational-wave articles — but the spatial slices remain flat, $g_{ij} = \delta_{ij}$, so no member is FLRW with a non-constant scale factor or non-zero spatial curvature. Within the class, Ricci-flatness forces $c_{\mathrm{loc}}$ to be affine in the spatial coordinates and the metric to be flat (the parent's result). The opposite Riemann signature convention reverses every sign quoted here and nothing else; the convention is fixed once in the companion.
 
 The conclusion is a negative but an exact one: **the framework's own locality device cannot produce the FLRW line element.** If a cosmological metric enters the framework, it enters by the frame route, which abandons the local complex structure as the carrier of curvature.
@@ -192,7 +192,7 @@ It is important to state what this is: **a speculation with no derivation.** It 
 Two tempting statements would be failures of this article if it made them, and they are named so that they are not made.
 
 - **"The extra sector is dark energy" (or dark matter).** This is the framework's most tempting cosmological overclaim, and it has no derivation of any kind behind it. There is no coupling, no source term, no equation of state, and no value; there is not even a constructed stress–energy tensor for an $\mathbb{M}_+$-valued field. The framework's own articles state that the informational sector has no dynamics beyond the operator algebra and no specified coupling. Asserting an identification with dark energy or dark matter without a derivation would be precisely the "fabricated premise" the QCD agenda warns against, in its cosmological form. What is true, and all that is true, is that the framework has a second sector whose cosmological role is unspecified.
-- **"The framework predicts a scale factor or a Hubble rate."** It does not. The carrier writes $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied $a(t)$; that is an identity about the bilinear form, not a prediction. No equation for $a(t)$ exists, and no framework quantity fixes $H$ or any of its observable consequences. Everything the article writes about $a$, $k$, $\rho$, $p$, and $\Lambda$ is standard cosmology used as a target, marked as such.
+- **"The framework predicts a scale factor or a Hubble rate."** It does not. The carrier writes $\mathrm{diag}(-1,a^2,a^2,a^2)$ for an arbitrary supplied $a(t')$; that is an identity about the bilinear form, not a prediction. No equation for $a(t')$ exists, and no framework quantity fixes $H$ or any of its observable consequences. Everything the article writes about $a$, $k$, $\rho$, $p$, and $\Lambda$ is standard cosmology used as a target, marked as such.
 
 The gravitational agenda's no-upgrade rule applies here in the cosmological form: a carried metric must not be read as a derived solution, and a transcribed Friedmann equation must not be read as a framework result.
 
@@ -246,8 +246,8 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | inherited |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace formula, a **fibre** trace over $\mathbb{C}^2$ | inherited |
 | $\tilde{E}_\mu \in \mathbb{M}_-$, $g_{\mu\nu} = \langle\tilde{E}_\mu,\tilde{E}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
-| $a(t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
-| $H = \left(da/dt\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
+| $a(t')$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
+| $H = \left(da/dt'\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |
 | $\sum_{\mu\nu}T_{\mu\nu}\varepsilon_\mu\bar{\varepsilon}_\nu=(\eta^{\mu\nu}T_{\mu\nu})e_t$ | the bilinear collapses a rank-two tensor to its trace | recomputed here from an inherited identity |
 | $Z = 2\exp(-\beta h_t)\cosh(\beta|\vec h|)$ | qubit partition function; entropy bounded by $\log 2$ | inherited from the partition-function article |
 | $c_{\mathrm{loc}} = c = 1/\sqrt{\epsilon\mu}$ | local scale of the imaginary time axis, Reading B of the local-scale route | inherited |

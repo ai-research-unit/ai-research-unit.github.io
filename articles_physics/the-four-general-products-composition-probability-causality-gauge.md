@@ -88,7 +88,7 @@ Read physically, a job has a **magnitude** and an **order**. The magnitude is th
 
 ## The Four Forms and the Four Jobs
 
-The four forms are read on the material sector $\mathbb{M}_-$, the anti-Hermitian subspace, where the physical dictionary places the spacetime element $\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$. Their signatures there, and on the informational sector $\mathbb{M}_+$, are the algebra's own statement of which form is which; the last column is the reading that attaches a job to each.
+The four forms are read on the material sector $\mathbb{M}_-$, the anti-Hermitian subspace, where the physical dictionary places the spacetime element $\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$. Their signatures there, and on the informational sector $\mathbb{M}_+$, are the algebra's own statement of which form is which; the last column is the reading that attaches a job to each.
 
 | Product | Slots | Form | Signature on $\mathbb{M}_-$ | Signature on $\mathbb{M}_+$ | Job |
 | --- | --- | --- | --- | --- | --- |
@@ -132,7 +132,7 @@ $$
 and on the material sector the central value is the Minkowski interval,
 
 $$
-\langle\tilde R\rangle_{\natural}=-c^{2}t^{2}+x^{2}+y^{2}+z^{2},
+\langle\tilde R\rangle_{\natural}=-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2},
 $$
 
 of signature $(3,1)$. The zero set is the zero-divisor cone; its cut by $\mathbb{M}_-$ is the light cone; and the level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$ is the mass shell.
@@ -243,7 +243,7 @@ The physical identification of the material sector with spacetime and of the inf
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the sector sign, the Born form, the interval and the Krein form |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | the quaternionic algebraic norm, the interval on $\mathbb{M}_-$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the anti-Hermitian (material) and Hermitian (informational) sectors |
-| $\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ | the material coordinate |
+| $\tilde R=ict'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ | the material coordinate |
 | $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{AQS}$ | the symmetric plain sesquilinear, symmetric quaternionic bilinear, antisymmetric plain bilinear and antisymmetric quaternionic sesquilinear products |
 
 ## Further Reading

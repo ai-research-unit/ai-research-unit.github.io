@@ -17,7 +17,7 @@ $$
 The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma^\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial Q_\mu - iqA_\mu/\hbar$ of the parent article — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\gamma^0$, and set $\alpha^k = \gamma^0\gamma^k$, $\beta = \gamma^0$. The result is
 
 $$
-i\hbar\partial/\partial t\psi = H\psi, \qquad
+i\hbar\partial/\partial t'\psi = H\psi, \qquad
 H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA^0,
 \qquad \vec\pi = \vec p - ϙ\vec A,
 $$
@@ -53,7 +53,7 @@ It is important to say at once which grading this is. The split into even and od
 Let $U = \exp(iS)$ with $S$ Hermitian so that $U$ is unitary. The transformed Hamiltonian is
 
 $$
-H_2 = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger ,
+H_2 = UHU^\dagger - i\hbar U\partial/\partial t' U^\dagger ,
 $$
 
 where the second term vanishes for a time-independent $S$. Since $H = \beta mc^2 + O + \mathcal{E}$, the idea is to choose $S$ so that the large term $i[S,\beta mc^2] = -O$ cancels the odd part at leading order, leaving an even remainder of order $1/c^2$.
@@ -179,7 +179,7 @@ $$
 where the leading term uses $[S_1,x_k] = -\frac{i}{2mc}\beta[\alpha_j\pi_j,x_k] = -\frac{\hbar}{2mc}\beta\alpha_k$ for the free case, so the correction is of the order of the reduced Compton wavelength $\hbar/(mc)$, and the next correction is of order $1/m^2$. The operator $\vec Q$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
-d\vec Q/dt = \frac{i}{\hbar}[H_2,\vec Q],
+d\vec Q/dt' = \frac{i}{\hbar}[H_2,\vec Q],
 $$
 
 contains no oscillatory term: to leading order it is the classical drift $\vec pc^2/E$, so the rapid trembling of the ordinary position operator $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is entirely contained in the difference $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Q$. In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the FW position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the transformed position operator.
@@ -259,7 +259,7 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $\mathcal{E}$ | Even (frame-commuting) part |
 | $U = \exp(iS)$ | Foldy–Wouthuysen unitary |
 | $S_1 = -\frac{i}{2mc^2}\beta O$ | Leading FW generator |
-| $H_2 = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger$ | Transformed Hamiltonian |
+| $H_2 = UHU^\dagger - i\hbar U\partial/\partial t' U^\dagger$ | Transformed Hamiltonian |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
 | $\vec Q = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \frac{i\hbar\beta\boldsymbol\alpha}{2mc}+\cdots$ | Mean (Foldy–Wouthuysen) position |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair (chirality grading) |

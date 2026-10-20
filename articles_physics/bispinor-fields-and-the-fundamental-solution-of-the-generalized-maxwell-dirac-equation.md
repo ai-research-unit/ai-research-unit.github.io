@@ -8,11 +8,11 @@ This article closes that gap. It takes the same programme's later journal paper 
 
 Four boundaries are respected. (i) The corpus's own Dirac equation, its square, its reduction to Klein–Gordon and its spinor module belong to *The Dirac Equation in Biquaternionic Form*, *Klein–Gordon from the Dirac Square in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; this article adds the external programme's solution theory and says where it differs. (ii) The corpus's Klein–Gordon propagator and the corpus's massive scalar kernel are the subject of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*; this article uses that kernel only as the contrast that makes the programme's result visible. (iii) The identification of $B$ with a Maxwell field is a claim about the interpretation of $B$, not about the operator, and is not reopened. (iv) Nothing here is a derivation of quantum physics or a comparison with measured particle data; the equation is chosen by the programme, and the corpus records what the chosen equation implies.
 
-Two conventions are load-bearing. The source's **two bigradients** are $\nabla^\pm = \partial/\partial\tau \pm i\nabla$, with $\nabla$ the pure-vector gradient acting by left quaternion multiplication and $\tau = ct$. They are the corpus's gradient pair times $i$,
+Two conventions are load-bearing. The source's **two bigradients** are $\nabla^\pm = \partial/\partial\tau \pm i\nabla$, with $\nabla$ the pure-vector gradient acting by left quaternion multiplication and $\tau = ct'$. They are the corpus's gradient pair times $i$,
 
 $$
 \nabla^+ = i\tilde{\nabla}, \qquad \nabla^- = i\tilde{\nabla}^{\natural},
-\qquad \partial/\partial\tau = -\frac{i}{c}\partial/\partial t ,
+\qquad \partial/\partial\tau = -\frac{i}{c}\partial/\partial t' ,
 $$
 
 which was checked exactly. The source's **wave operator** is therefore minus the corpus's d'Alembertian,
@@ -296,7 +296,7 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 
 | Symbol | Meaning |
 |---|---|
-| $\nabla^\pm = \partial/\partial\tau \pm i\nabla$, $\tau = ct$ | The source's two bigradients; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\tilde{\nabla}^{\natural}$ |
+| $\nabla^\pm = \partial/\partial\tau \pm i\nabla$, $\tau = ct'$ | The source's two bigradients; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\tilde{\nabla}^{\natural}$ |
 | $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta = -\Box$ | The source's wave operator, minus the corpus's d'Alembertian |
 | $\bigl(\nabla^\pm + m\bigr)B = F$ | The source's first-order equation; the corpus's generalized Maxwell–Dirac equation with $\kappa = -im$ |
 | $\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau = (\partial/\partial\tau+m)^2-\Delta = \exp(-m\tau)\Box_{\text{s}}\exp(m\tau)$ | The KGFSh operator and its conjugation form |

@@ -8,7 +8,7 @@ Two features of the framework shape the principle. First, an action must be a **
 
 The scope is relativistic. The non-relativistic action belongs to the non-relativistic theory; the classical relativistic particle, its light cone, and the Lorentz group as biquaternion-norm automorphisms belong to the non-quantum relativistic theory; and the spin-specific equations belong to the spin articles. What is established here is the common functional apparatus: the free-particle action and its coupling, the real field Lagrangian, the biquaternionic Euler–Lagrange equation, and the symmetry statements. The conserved current and the stress–energy tensor that follow from the symmetries are developed in the companion article on Noether's theorem, which this article supplies the action for.
 
-- Companion article *Relativistic Mechanics in Biquaternionic Form*, for the four-position, four-velocity, four-momentum, mass shell, and the free-particle action in the $ict$ convention.
+- Companion article *Relativistic Mechanics in Biquaternionic Form*, for the four-position, four-velocity, four-momentum, mass shell, and the free-particle action in the $ict'$ convention.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved current and the stress–energy tensor read off the Lagrangians fixed here.
 - Companion article *Conventions in the Biquaternion Universe*, for the biquaternion norm, the four conjugations, the mass term, and the Lagrangian sign convention.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the second-order field equation that the scalar Lagrangian varies to.
@@ -78,9 +78,9 @@ The action of a free relativistic particle is the proper time along its worldlin
 $$
 S = -mc\int\sqrt{-\,d\tilde{R}\,\overline{d\tilde{R}}} = -mc\int\sqrt{-\,\langle d\tilde{R}\rangle_{\natural}} ,
 $$
-with $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the four-position biquaternion. With $d\tilde{R} = (ic\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt)\,dt$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
+with $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the four-position biquaternion. With $d\tilde{R} = (ic\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt')\,dt'$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
 $$
-S = -mc^2\int\frac{dt}{\gamma} = \int L\,dt , \qquad
+S = -mc^2\int\frac{dt'}{\gamma} = \int L\,dt' , \qquad
 L = -mc^2\sqrt{1 - \frac{\vec v^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}} ,
 $$
 as the companion *Relativistic Mechanics in Biquaternionic Form* records. The reduction from the invariant to the standard Lagrangian was checked at three velocities, the two expressions agreeing to six decimal places in each case. The integrand is built from the biquaternion norm of the displacement, which is what makes the action a Lorentz scalar: a rotor acts on $d\tilde{R}$ and its conjugate in the same way, and $\langle d\tilde{R}\rangle_{\natural}$ is invariant.
@@ -122,7 +122,7 @@ whose biquaternion form is the scalar of the reverse product, $S_{\mathrm{int}} 
 $$
 m\,\frac{du^\mu}{d\tau} = ϙ\,F^{\mu\nu}v_\nu ,
 \qquad\text{that is, in components,}\qquad
-\frac{d\vec p}{dt} = ϙ\bigl(\vec E + \vec v\times\vec B\bigr) ,
+\frac{d\vec p}{dt'} = ϙ\bigl(\vec E + \vec v\times\vec B\bigr) ,
 $$
 with $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ the field tensor. The component form is standard and is transcribed rather than re-derived. The **index-free biquaternion product** expression of the same force is a different matter: the companion *Relativistic Mechanics in Biquaternionic Form* records that the four-force is a material-sector element built from the field strength and the four-velocity, but that its explicit form as a product in $\mathbb{B}$ involves the representation theory of the algebra in the even subalgebra and is left open. This article respects that boundary: the action route gives the component equation, and the biquaternion product form is not asserted here.
 
@@ -151,7 +151,7 @@ $$
 \mathcal{L} = -\,(\partial/\partial Q_t\,\phi^*)(\partial/\partial Q_t\,\phi) - \sum_k(\partial/\partial Q_k\,\phi^*)(\partial/\partial Q_k\,\phi) - \mu^2\,\phi^*\phi ,
 \qquad \mu = \frac{mc}{\hbar} ,
 $$
-which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $ict$ convention gives it. Its Euler–Lagrange equation is
+which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $ict'$ convention gives it. Its Euler–Lagrange equation is
 $$
 \left(\Box - \mu^2\right)\tilde{\Phi} = 0 ,
 \qquad \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta ,
@@ -192,7 +192,7 @@ The centrality of the mass is the structural point to carry forward. The compani
 
 ### The dispersion relation
 
-On a plane-wave field $\tilde{\Phi} = \tilde{\Phi}_0\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
+On a plane-wave field $\tilde{\Phi} = \tilde{\Phi}_0\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
 $$
 \Box \to \frac{\omega^2}{c^2} - \vec k^2 = \mu^2 ,
 \qquad
@@ -239,7 +239,7 @@ $$
 T^\mu{}_\nu = -(\partial^\mu\phi^*)\partial_\nu\phi - (\partial^\mu\phi)\partial_\nu\phi^* - \delta^\mu{}_\nu\,\mathcal{L} ,
 \qquad \partial_\mu T^\mu{}_\nu = 0 \ \text{on shell},
 $$
-whose time–time component is the energy density. The companion article records the caution that in the $ict$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
+whose time–time component is the energy density. The companion article records the caution that in the $ict'$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
 
 **Lorentz transformations.** The actions are invariant under the rotor action $\tilde{R}\mapsto\tilde U\tilde{R}\tilde U^{*}$ because each is built from the biquaternion norm, which the rotor preserves; the conserved quantities are the six angular momenta. The verification and the consequences are the subject of the next section.
 
@@ -295,7 +295,7 @@ The relativistic action of the framework is a real scalar functional, $S = \int\
 
 The particle action is
 $$
-S = -mc\int\sqrt{-\,\langle d\tilde{R}\rangle_{\natural}} = -mc^2\int\frac{dt}{\gamma} ,
+S = -mc\int\sqrt{-\,\langle d\tilde{R}\rangle_{\natural}} = -mc^2\int\frac{dt'}{\gamma} ,
 \qquad L = -mc^2\sqrt{1-\vec v^2/c^2} ,
 $$
 whose four-velocity obeys $\langle\tilde{V}\rangle_{\natural} = \langle\tilde{V},\tilde{V}\rangle_{\natural} = -c^2$ and whose canonical momentum obeys the mass shell $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$; the reduction to the standard Lagrangian was checked at three velocities, the worldline stationarity by a discrete functional derivative, and the mass shell to machine precision. Coupling to an external potential gives the Lorentz force in component form, $m\,du^\mu/d\tau = ϙF^{\mu\nu}v_\nu$; the index-free biquaternion product form of that force remains the open question flagged by the companion article on relativistic mechanics.

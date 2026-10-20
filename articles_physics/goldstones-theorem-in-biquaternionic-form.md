@@ -157,7 +157,7 @@ $$
 f=\sqrt2\,v ,
 $$
 
-so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3x\,d\theta/dt$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
+so the current is the derivative of the Goldstone field times the **decay constant** $f$. The charge is the spatial integral, $Ϙ=-f\int d^3x\,d\theta/dt'$ to leading order, and it is conserved because the current is. The matrix element that defines $f$ is the standard one,
 
 $$
 \langle0|\tilde J(0)|\theta(p)\rangle=i f\,p^\mu ,
@@ -168,11 +168,11 @@ which is the statement that the current interpolates the Goldstone boson with st
 The framework's contribution to these expressions is only that the current lies in the material sector, $\tilde J\in\mathbb{M}_-$, as the companion Noether article records, and that both the order parameter and the Goldstone field are central-valued. The normalization of $f$ depends on the normalization of the order parameter and is fixed once the potential's normalization is fixed; the physical statement is that $f$ is nonzero whenever the symmetry is broken, $f\propto\langle\phi^{\mathrm{fop}}\rangle$, and that it vanishes continuously as the order parameter is turned off. The decay constant is thus the order parameter in the units fixed by the kinetic term, and the Goldstone boson's couplings are all proportional to derivatives divided by $f$.
 
 $$
--(\phi_1d\phi_{2}/dt-\phi_2d\phi_{1}/dt)=-fd\theta/dt-\big(h\,d\theta/dt-\theta\,dh/dt\big),
+-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')=-fd\theta/dt'-\big(h\,d\theta/dt'-\theta\,dh/dt'\big),
 \qquad
 f=\sqrt2\,v,
 $$
-so the leading term is $-fd\theta/dt$ and the remainder is the two-field term $-(hd\theta/dt-\theta\,dh/dt)$, which vanishes identically when the radial field is at its vacuum value $h\equiv0$. This was checked on a superposition of fluctuating modes — $h(t)$ and $\theta(t)$ each a sum of two harmonics, $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ — where the exact current $J^0=-(\phi_1d\phi_{2}/dt-\phi_2d\phi_{1}/dt)$ agreed with $-fd\theta/dt-(hd\theta/dt-\theta\,dh/dt)$ to machine precision at every sample time. The kinetic identity $\mathcal{L}_{\mathrm{kin}}=\frac12[(\partial h)^2+(\partial\theta)^2]$ is exact because the shift is constant, and it held to $5.6\times10^{-11}$, the finite-difference error.
+so the leading term is $-fd\theta/dt'$ and the remainder is the two-field term $-(hd\theta/dt'-\theta\,dh/dt')$, which vanishes identically when the radial field is at its vacuum value $h\equiv0$. This was checked on a superposition of fluctuating modes — $h(t')$ and $\theta(t')$ each a sum of two harmonics, $\phi_1=\sqrt2v+h$, $\phi_2=\theta$ — where the exact current $J^0=-(\phi_1d\phi_{2}/dt'-\phi_2d\phi_{1}/dt')$ agreed with $-fd\theta/dt'-(hd\theta/dt'-\theta\,dh/dt')$ to machine precision at every sample time. The kinetic identity $\mathcal{L}_{\mathrm{kin}}=\frac12[(\partial h)^2+(\partial\theta)^2]$ is exact because the shift is constant, and it held to $5.6\times10^{-11}$, the finite-difference error.
 
 ## The Theorem and Its Proof
 

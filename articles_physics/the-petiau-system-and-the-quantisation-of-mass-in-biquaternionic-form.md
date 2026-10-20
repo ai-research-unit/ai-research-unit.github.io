@@ -123,7 +123,7 @@ The nonlinearity is not a technicality. In a linear theory the solutions form a 
 
 ### From Trigonometric to Elliptic
 
-The free solutions of the linear wave equation are single-periodic: $\sin(kz)$ and $\cos(kz)$, with one period. Petiau's closed system has solutions that are **double-periodic** — the **Petiau waves** — built from the elliptic functions. Instead of linear combinations of $\sin z$ and $\cos z$ the solutions are superpositions of the Jacobi elliptic functions $\mathrm{sn}(z,k)$, $\mathrm{cn}(z,k)$, $\mathrm{dn}(z,k)$, whose periods are governed by the **modulus** $k\in[0,1]$. The proper mass $\mu$ enters the argument, so that a typical wave reads $\mathrm{sn}\bigl(\mu(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),\,k\bigr)$.
+The free solutions of the linear wave equation are single-periodic: $\sin(kz)$ and $\cos(kz)$, with one period. Petiau's closed system has solutions that are **double-periodic** — the **Petiau waves** — built from the elliptic functions. Instead of linear combinations of $\sin z$ and $\cos z$ the solutions are superpositions of the Jacobi elliptic functions $\mathrm{sn}(z,k)$, $\mathrm{cn}(z,k)$, $\mathrm{dn}(z,k)$, whose periods are governed by the **modulus** $k\in[0,1]$. The proper mass $\mu$ enters the argument, so that a typical wave reads $\mathrm{sn}\bigl(\mu(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),\,k\bigr)$.
 
 A linear wave has one scale, its frequency, and the amplitude is free. A Petiau wave has two independent periods and a fixed amplitude, and this is the structural difference that the elliptic functions encode.
 

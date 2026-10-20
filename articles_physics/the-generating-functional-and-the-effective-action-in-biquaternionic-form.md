@@ -41,7 +41,7 @@ The article proceeds as follows. The next section defines the connected function
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
-is the positive-definite Hilbert–Schmidt form on the algebra; the sector signature belongs to the biquaternion norm. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle$ with $K_{\mathrm{kin}}=\Box-m^2$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the plain form and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
+is the positive-definite Hilbert–Schmidt form on the algebra; the sector signature belongs to the biquaternion norm. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle$ with $K_{\mathrm{kin}}=\Box-m^2$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the plain form and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
 
 ## The Connected Generating Functional
 

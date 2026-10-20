@@ -39,7 +39,7 @@ with $\gamma = (1-\vec v^2/c^2)^{-1/2}$, $E=\gamma mc^2$ the relativistic energy
 
 ### The norm is the shell
 
-Because the biquaternion norm of a four-vector of the material sector is $\langle\tilde{R}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ for $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm of the four-momentum is
+Because the biquaternion norm of a four-vector of the material sector is $\langle\tilde{R}\rangle_{\natural} = -c^2{t'}^2 +x^2+y^2+z^2$ for $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm of the four-momentum is
 
 $$
 \langle\tilde{P}\rangle_{\natural} \;=\; -\frac{E^2}{c^2} + \vec p^2 \;=\; -m^2c^2,
@@ -210,7 +210,7 @@ The cone does not derive masslessness. The mass enters as a single free real sca
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Material (anti-Hermitian) sector |
 | $\mathbb{M}_+ = \mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | Informational (Hermitian) sector |
-| $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate; $\langle\tilde{R}\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2$ |
+| $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate; $\langle\tilde{R}\rangle_{\natural}=-c^2{t'}^2+x^2+y^2+z^2$ |
 | $\langle\tilde{R}\rangle_{\natural}=0$ | The light cone; the material part of the zero-divisor set $\mathcal{Z}$ |
 | $\tilde{P}=m\tilde{V}=i\frac{E}{c}e_t+\vec p$ | Four-momentum, in $\mathbb{M}_-$; $E=\gamma mc^2$, $\vec p=\gamma m\vec v$ |
 | $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, in $\mathbb{M}_-$; $\langle\tilde{V}\rangle_{\natural}=-c^2$ |

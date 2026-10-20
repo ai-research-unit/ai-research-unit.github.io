@@ -189,7 +189,7 @@ The same decomposition underlies the companion article on the classical origin o
 
 ## The Massless Generalisation
 
-The covariant form above needs $m \neq 0$, because both terms carry $1/m$. A decomposition that survives the massless limit uses the energy in place of the mass. Assume a time-harmonic solution $\psi(\vec r, t) = \psi(\vec r)\exp(-iEt)$ with $E = \sqrt{|\vec k|^2 + m^2}$, and use the Dirac equation once more. For the spatial current one finds
+The covariant form above needs $m \neq 0$, because both terms carry $1/m$. A decomposition that survives the massless limit uses the energy in place of the mass. Assume a time-harmonic solution $\psi(\vec r, t') = \psi(\vec r)\exp(-iEt')$ with $E = \sqrt{|\vec k|^2 + m^2}$, and use the Dirac equation once more. For the spatial current one finds
 
 $$
 \vec j \equiv e\,\bar\psi\boldsymbol\gamma\psi

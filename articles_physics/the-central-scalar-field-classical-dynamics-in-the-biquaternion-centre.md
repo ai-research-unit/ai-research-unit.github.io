@@ -21,7 +21,7 @@ has the Euler–Lagrange equation $(\Box-\mu^2)\tilde{\Phi}=-g\rho\,e_t$, where 
 
 The article closes by identifying why a central scalar field carries no intrinsic magnetism, and by separating what the algebra supplies from what it imports.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta=-c^{-2}\,\partial^2/\partial t^2+\Delta$, the series convention of the companion article *Conventions in the Biquaternion Universe*. The mass parameter is $\mu=mc/\hbar$, the inverse Compton wavelength, exactly as in the companion articles *The Klein–Gordon Equation in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*; classically only the length $\mu^{-1}$ matters and $\hbar$ enters only through the identification of $\mu$ with a mass. The four-position is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The source density is $\rho$, the source strength $Ϙ$, and the couplings are $g$ for the field and $g_{\mathrm t}$ for the test source. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$ (anti-Hermitian). The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta=-c^{-2}\,\partial^2/\partial {t'}^2+\Delta$, the series convention of the companion article *Conventions in the Biquaternion Universe*. The mass parameter is $\mu=mc/\hbar$, the inverse Compton wavelength, exactly as in the companion articles *The Klein–Gordon Equation in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*; classically only the length $\mu^{-1}$ matters and $\hbar$ enters only through the identification of $\mu$ with a mass. The four-position is $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The source density is $\rho$, the source strength $Ϙ$, and the couplings are $g$ for the field and $g_{\mathrm t}$ for the test source. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value.
 
 ## The Centre as the Scalar's Value Space
 
@@ -69,7 +69,7 @@ The classical action of a real central scalar field coupled to a prescribed sour
 $$
 S=\int\mathcal{L}\,d^4x, \qquad
 \mathcal{L}=-\tfrac12\sum_\mu\partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\mu\,\phi-\tfrac12\mu^2\phi^2+g\rho\,\phi,
-\qquad d^4x=c\,dt\,dx\,dy\,dz .
+\qquad d^4x=c\,dt'\,dx\,dy\,dz .
 $$
 
 The first two terms are the standard kinetic and mass terms of a relativistic scalar field, with the sign that makes the energy positive; the third is the source coupling, whose sign convention is fixed below by the requirement that like sources attract. The action is a real central scalar, and the field is a single real function, so the variation is elementary.
@@ -107,10 +107,10 @@ the biquaternionic Klein–Gordon equation of the companion article, here read a
 In the absence of sources, write a plane wave
 
 $$
-\tilde{\Phi}(x)=\tilde{\Phi}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t)), \qquad \tilde{\Phi}_0\in\mathbb{C},
+\tilde{\Phi}(x)=\tilde{\Phi}_0\,\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t')), \qquad \tilde{\Phi}_0\in\mathbb{C},
 $$
 
-with the central phase $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial t^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
+with the central phase $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))$ understood as multiplication by a central element. Because $\Box=-c^{-2}\,\partial^2/\partial {t'}^2+\Delta$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
 
 $$
 \omega^2=c^2k^2+c^2\mu^2=c^2k^2+\frac{m^2c^4}{\hbar^2} .
@@ -159,17 +159,17 @@ Two properties of the solution matter for what follows. It is **static** and **s
 
 ### The Field of a Moving Source
 
-It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G_{\text{ret}}(x)={\delta(t_2-t+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|/c)}/(4\pi|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(t)\,\vec e_x+y_s(t)\,\vec e_y+z_s(t)\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
+It is worth recording the moving case, both for completeness and because the absence of a magnetic counterpart is the subject of a later section. The retarded Green's function of the massless wave operator is $G_{\text{ret}}(x)={\delta(t'_2-t'+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|/c)}/(4\pi|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|)$, and for a point source moving on a worldline $x_s(t')\,\vec e_x+y_s(t')\,\vec e_y+z_s(t')\,\vec e_z$ the field is the scalar Liénard–Wiechert potential
 
 $$
-\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t)=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_t ,
+\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')=\frac{gQ}{4\pi}\,\frac{1}{R\left(1-\vec\beta\cdot\vec u\right)}\,e_t ,
 \qquad
-R=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t_r)|,\quad
+R=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t'_r)|,\quad
 \vec\beta=\frac{\vec v_s}{c},\quad
-\vec u=\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t_r)}{R},
+\vec u=\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_s\,\vec e_x+y_s\,\vec e_y+z_s\,\vec e_z)(t'_r)}{R},
 $$
 
-evaluated at the retarded time $t_r=t-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
+evaluated at the retarded time $t'_r=t'-R/c$. The formula is the scalar counterpart of the electromagnetic Liénard–Wiechert potential: the retarded denominator is the same, but there is **one** potential function and no vector potential, so there is no field strength tensor, no electric–magnetic decomposition, and no magnetic field. A moving scalar source produces only a scalar potential, and this is the field-theoretic face of the subcategory's subject.
 
 ## The Field Energy and the Stress–Energy
 
@@ -178,7 +178,7 @@ evaluated at the retarded time $t_r=t-R/c$. The formula is the scalar counterpar
 The stress–energy tensor of the central scalar field is that of a real scalar field, computed in the companion article *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*. Its energy density is
 
 $$
-T^{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t\right)^{2}+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0 ,
+T^{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2>0 ,
 $$
 
 positive for every field configuration, and its conservation is the statement $\partial/\partial Q_\mu T^{\mu\nu}=0$ on shell. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a **static** field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T^{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.
@@ -379,8 +379,8 @@ The complex field carries the algebra's central phase $\tilde{\Phi}\mapsto \exp(
 | $G_\mu=\exp(-\mu r)/(4\pi r)$ | Screened Green's function; $(\Delta-\mu^2)G_\mu=-\delta^{(3)}$ |
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{\Phi}=gQ\exp(-\mu r)/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $\mu=0$ |
-| $\vec\beta$, $R$, $t_r$ | Source velocity over $c$, retarded distance, retarded time |
-| $T^{tt}=\tfrac12\left(\partial\phi/\partial t\right)^{2}/c^2+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2$ | Energy density, positive |
+| $\vec\beta$, $R$, $t'_r$ | Source velocity over $c$, retarded distance, retarded time |
+| $T^{tt}=\tfrac12\left(\partial\phi/\partial t'\right)^{2}/c^2+\tfrac12(\nabla\phi)^2+\tfrac12\mu^2\phi^2$ | Energy density, positive |
 | $A=gQ/(4\pi)$; $E_{\text{field}}=2\pi A^2/a$ | Field amplitude; massless field energy outside radius $a$ |
 | $E(r)=-\kappa \exp(-\mu r)/r$, $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)$ | Central interaction energy; $\kappa>0$ attractive |
 | $\vec F=-\nabla E=g_{\mathrm t}\,\nabla\phi=g_{\mathrm t}\,(d\phi/dr)\,\vec u_r$ | Central force on the test source (inward) |

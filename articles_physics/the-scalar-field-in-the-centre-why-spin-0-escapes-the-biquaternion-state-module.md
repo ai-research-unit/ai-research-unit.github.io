@@ -263,14 +263,14 @@ The plane-wave solutions exhibit the same point. Writing the four-wavevector in 
 $$
 \tilde P/\hbar=i\frac{\omega}{c}e_t+\vec k\in\mathbb{M}_-,
 \qquad
-\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-,
+\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-,
 $$
 
-the phase is the scalar part $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$, a real central element, and the positive-frequency solution is
+the phase is the scalar part $\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar=\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'$, a real central element, and the positive-frequency solution is
 
 $$
 \tilde{\Phi}=\phi_0\,\exp(\,i\,\mathrm{Sc}(\tilde P\tilde R^{\natural})/\hbar)\,e_t
-=\phi_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))\,e_t .
+=\phi_0\,\exp(\,i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t'))\,e_t .
 $$
 
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector fixed to a negative constant,
@@ -365,7 +365,7 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\psi$ | Spinor, an element of the state module |
 | $J_\mu=\tfrac{i}{2}\vec e_\mu$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_t$ on the module |
 | $SL(2,\mathbb{C})=\{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_t\}$ | Unit-norm biquaternions; Lorentz group |
-| $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
+| $\tilde{R}=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
 | $\tilde P/\hbar=i\omega/c\,e_t+\vec k$ | Four-wavevector, $\in\mathbb{M}_-$ |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_\mu \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient |

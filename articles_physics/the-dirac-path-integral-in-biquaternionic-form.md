@@ -69,7 +69,7 @@ G_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}dx^{\mu}/d\tau \,dx_{\mu}/d\tau - m^2c^2/\hbar^2\right),
 $$
 
-up to the standard normalisation of the measure and the einbein gauge choice. The tangent is contracted with the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ — the $ict$-coordinate metric of the conventions article, read here on the real-time components $(x^0,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — so that for a straight worldline $dx^{\mu}/d\tau \,dx_{\mu}/d\tau = -(x-x_2)^2/T^2$ and the phase reduces to $\exp\left(-i\left[\frac{(x-x_2)^2}{4T}+\mu^2T\right]\right)$, with $(x-x_2)^2 = (x^0-x_2^0)^2-|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^2$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then the operator $(i\not\partial + mc/\hbar)$ applied to $G_F$, with the appropriate $i$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent $d\tilde{Q}/d\tau$ is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
+up to the standard normalisation of the measure and the einbein gauge choice. The tangent is contracted with the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ — the $ict'$-coordinate metric of the conventions article, read here on the real-time components $(x^0,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — so that for a straight worldline $dx^{\mu}/d\tau \,dx_{\mu}/d\tau = -(x-x_2)^2/T^2$ and the phase reduces to $\exp\left(-i\left[\frac{(x-x_2)^2}{4T}+\mu^2T\right]\right)$, with $(x-x_2)^2 = (x^0-x_2^0)^2-|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^2$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then the operator $(i\not\partial + mc/\hbar)$ applied to $G_F$, with the appropriate $i$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent $d\tilde{Q}/d\tau$ is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
 
 The deficiency of this representation is that the spin is nowhere to be seen until the differential operator is applied at the end. The second resolution supplies the spin directly.
 
@@ -174,14 +174,14 @@ The biquaternion interpretation is then immediate. In 1+1 dimensions the biquate
 
 ### The Recurrence and Its Limit
 
-The discrete structure can be written as a pair of coupled recurrences and taken to the continuum, and doing so exhibits the mass pair explicitly. Let $R(x,t)$ and $L(x,t)$ be the amplitudes to arrive at the lattice point $(x,t)$ having last moved in the $+x$ and $-x$ directions respectively, with the lattice spacing and time step both equal to $\epsilon$ (units $c = 1$). A step carries the particle one cell in its direction of motion, and a corner contributes the weight $i\epsilon m/\hbar$; the recurrences are therefore
+The discrete structure can be written as a pair of coupled recurrences and taken to the continuum, and doing so exhibits the mass pair explicitly. Let $R(x,t')$ and $L(x,t')$ be the amplitudes to arrive at the lattice point $(x,t')$ having last moved in the $+x$ and $-x$ directions respectively, with the lattice spacing and time step both equal to $\epsilon$ (units $c = 1$). A step carries the particle one cell in its direction of motion, and a corner contributes the weight $i\epsilon m/\hbar$; the recurrences are therefore
 
 $$
-R(x,t+\epsilon) = R(x-\epsilon,t) + \frac{i\epsilon m}{\hbar}\,L(x-\epsilon,t),
+R(x,t'+\epsilon) = R(x-\epsilon,t') + \frac{i\epsilon m}{\hbar}\,L(x-\epsilon,t'),
 $$
 
 $$
-L(x,t+\epsilon) = L(x+\epsilon,t) + \frac{i\epsilon m}{\hbar}\,R(x+\epsilon,t),
+L(x,t'+\epsilon) = L(x+\epsilon,t') + \frac{i\epsilon m}{\hbar}\,R(x+\epsilon,t'),
 $$
 
 where the first term on each right-hand side is the straight continuation and the second is the corner. Two features are visible by inspection. The **free propagation is diagonal**: the term that carries $R$ to $R$ and $L$ to $L$ involves no mixing, and each direction propagates independently. The **mass is off-diagonal**: the corner terms couple $R$ to $L$ and $L$ to $R$ with the weight $i\epsilon m/\hbar$, i.e. with an explicit factor of the mass and an explicit factor of $i$.

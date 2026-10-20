@@ -46,7 +46,7 @@ Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scal
 
 The source's second and third sections are the corpus's electromagnetic material seen from the scattering side, and they are recalled here because the scattering problem is posed for Maxwell's equations and only then transported to the algebra.
 
-In an isotropic medium obeying Ohm's law, para- or diamagnetic, Maxwell's equations with the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ read, in the time-harmonic regime $\vec E(x,t)=\mathrm{Re}(\vec E(x)\exp(-i\omega t))$ and likewise for $\vec H$,
+In an isotropic medium obeying Ohm's law, para- or diamagnetic, Maxwell's equations with the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ read, in the time-harmonic regime $\vec E(x,t')=\mathrm{Re}(\vec E(x)\exp(-i\omega t'))$ and likewise for $\vec H$,
 
 $$
 \operatorname{curl}\vec E=i\omega\mu\vec H, \qquad
@@ -98,11 +98,11 @@ Maxwell's equations reduce to second-order equations, and the reduction is a fac
 The four-dimensional identity is
 
 $$
-\frac{1}{c^2}\frac{\partial^2}{\partial t^2} - \Delta
-= \left(\frac{1}{c}\frac{\partial}{\partial t} + iD_3\right)\left(\frac{1}{c}\frac{\partial}{\partial t} - iD_3\right),
+\frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2} - \Delta
+= \left(\frac{1}{c}\frac{\partial}{\partial t'} + iD_3\right)\left(\frac{1}{c}\frac{\partial}{\partial t'} - iD_3\right),
 $$
 
-the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta + \partial^2/\partial Q_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $c^{-2}\partial^2/\partial t^2+\Delta+2ic^{-1}\partial/\partial tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega t)$ so that $\partial/\partial t$ acts as $i\omega$, the factorisation is
+the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta + \partial^2/\partial Q_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $c^{-2}\partial^2/\partial {t'}^2+\Delta+2ic^{-1}\partial/\partial t'D_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega t')$ so that $\partial/\partial t'$ acts as $i\omega$, the factorisation is
 
 $$
 -\Delta - \frac{\omega^2}{c^2} = (D_3+k)(D_3-k), \qquad k=\frac{\omega}{c},

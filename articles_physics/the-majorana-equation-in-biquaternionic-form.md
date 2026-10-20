@@ -262,7 +262,7 @@ The Majorana equation is the relativistic wave equation of a spin-$\tfrac12$ fie
 | $\epsilon=i\sigma_2$ | Symplectic form; $\epsilon^{T}=-\epsilon$, $\epsilon^{2}=-I_2$ |
 | $D_L=i\bar\sigma^{\mu}\partial_\mu-m\epsilon(\,\cdot\,)^{*}$ | Two-component Majorana operator |
 | $W_L=i\bar\sigma^{\mu}\partial_\mu$, $W_R=i\sigma^{\mu}\partial_\mu$ | Weyl operators; $W_RW_L=\Box$ |
-| $\Box=\Delta-\partial^2/\partial t^2$ | d'Alembertian, series convention |
+| $\Box=\Delta-\partial^2/\partial {t'}^2$ | d'Alembertian, series convention |
 
 ## Further Reading
 

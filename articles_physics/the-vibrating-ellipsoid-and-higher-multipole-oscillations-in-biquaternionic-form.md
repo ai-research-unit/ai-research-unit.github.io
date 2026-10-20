@@ -6,7 +6,7 @@ An isolated body of finite size that is not perfectly spherical has a shape with
 
 This article develops the mechanics of the vibrating and rotating ellipsoid in the biquaternion framework, and follows the multipole tower it generates. The treatment is **non-relativistic** and classical: the body is described by its shape and orientation, the mode amplitudes obey ordinary harmonic-oscillator equations, and the fields it produces are read in the long-wavelength limit. The relativistic quadrupole is a separate subject.
 
-The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t)$ enter the algebra as the central elements $a_{lm}e_t$. The **orientation** of the body is a rotor $\tilde U(t)\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde U\vec w\tilde U^{\natural}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
+The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t')$ enter the algebra as the central elements $a_{lm}e_t$. The **orientation** of the body is a rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde U\vec w\tilde U^{\natural}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
 
 The biquaternion conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
@@ -50,13 +50,13 @@ so the rotors form a group, and the map is two-to-one: $\tilde U(\theta + 2\pi,\
 
 ### Angular Velocity
 
-Let the axis be fixed and the angle vary, $\theta = \theta(t)$, and write $\vec\omega = d\theta/dt\,\vec u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity
+Let the axis be fixed and the angle vary, $\theta = \theta(t')$, and write $\vec\omega = d\theta/dt'\,\vec u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity
 
 $$
-d\tilde U/dt = \tfrac12\,\tilde U\,\vec\omega .
+d\tilde U/dt' = \tfrac12\,\tilde U\,\vec\omega .
 $$
 
-This has been verified numerically: for $\theta(t)$ increasing at rate $\omega$ about $\vec e_z$, the central difference $(\tilde U(t+\delta)-\tilde U(t-\delta))/(2\delta)$ equals $\frac12\tilde U\vec\omega$ to $10^{-8}$ at a step $\delta = 10^{-4}$, the residual falling with $\delta^2$ as a central difference must. For a general rotation the axis may itself move, and the identity is then the body-frame version of the angular-velocity relation; the vector $\vec\omega$ lies in the vector part, as the angular velocity of a rigid body must.
+This has been verified numerically: for $\theta(t')$ increasing at rate $\omega$ about $\vec e_z$, the central difference $(\tilde U(t'+\delta)-\tilde U(t'-\delta))/(2\delta)$ equals $\frac12\tilde U\vec\omega$ to $10^{-8}$ at a step $\delta = 10^{-4}$, the residual falling with $\delta^2$ as a central difference must. For a general rotation the axis may itself move, and the identity is then the body-frame version of the angular-velocity relation; the vector $\vec\omega$ lies in the vector part, as the angular velocity of a rigid body must.
 
 ### Rotation of a Rank-Two Tensor
 
@@ -78,18 +78,18 @@ The equivalence of the two expressions has been verified explicitly: for random 
 
 ### The Shape as a Function on the Sphere
 
-Let the body be a deformable ellipsoid of equilibrium radius $R_0$, and let its surface be described in spherical coordinates by a radial function $r(\theta,\phi,t)$. For small deformations about the sphere,
+Let the body be a deformable ellipsoid of equilibrium radius $R_0$, and let its surface be described in spherical coordinates by a radial function $r(\theta,\phi,t')$. For small deformations about the sphere,
 
 $$
-r(\theta,\phi,t) = R_0\left[1 + \sum_{l=0}^{\infty}\sum_{m=-l}^{l} a_{lm}(t)\,Y_l^{m}(\theta,\phi)\right],
+r(\theta,\phi,t') = R_0\left[1 + \sum_{l=0}^{\infty}\sum_{m=-l}^{l} a_{lm}(t')\,Y_l^{m}(\theta,\phi)\right],
 $$
 
 where the $Y_l^m$ are the spherical harmonics. The term $l = 0$ is a uniform dilation, the terms $l = 1$ are translations of the body, and the terms $l \geq 2$ are genuine shape deformations. The lowest genuine deformation, $l = 2$, is the one that makes the sphere an ellipsoid: it is a **quadrupole** deformation, and it is the mode that the rest of this article follows.
 
-Because the $Y_l^m$ are orthonormal on the sphere, the coefficients $a_{lm}(t)$ are the projections
+Because the $Y_l^m$ are orthonormal on the sphere, the coefficients $a_{lm}(t')$ are the projections
 
 $$
-a_{lm}(t) = \frac{1}{R_0}\int \left(r(\theta,\phi,t) - R_0\right)Y_l^{m*}(\theta,\phi)\,d\Omega ,
+a_{lm}(t') = \frac{1}{R_0}\int \left(r(\theta,\phi,t') - R_0\right)Y_l^{m*}(\theta,\phi)\,d\Omega ,
 $$
 
 for $l\geq1$. They are ordinary scalar functions of time — real if real spherical harmonics are used, and for complex harmonics satisfying $a_{l,-m} = (-1)^m a_{lm}^{*}$, which is the statement that the shape function is real. The subtraction of the equilibrium radius removes the $l = 0$ term, so that the integral measures the deformation about the sphere rather than the radius itself; equivalently, it is the coefficient of $Y_l^m$ in the expansion of the scaled deformation $(r-R_0)/R_0$. There are $2l+1$ amplitudes for each order, and the number grows with $l$: this is the shape version of the multipole tower.
@@ -99,10 +99,10 @@ for $l\geq1$. They are ordinary scalar functions of time — real if real spheri
 For small amplitudes each mode decouples, and each amplitude obeys a harmonic-oscillator equation,
 
 $$
-\left(d^2a_{lm}/dt^2\right)(t) + \omega_l^2\,a_{lm}(t) = 0 ,
+\left(d^2a_{lm}/d{t'}^2\right)(t') + \omega_l^2\,a_{lm}(t') = 0 ,
 $$
 
-with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(t) = A_{lm}\cos(\omega_l t + \varphi_{lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
+with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(t') = A_{lm}\cos(\omega_l t' + \varphi_{lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
 
 The classic and exactly solvable case is **Rayleigh's vibrating liquid drop**, for which the restoring force is surface tension. The frequency of the $l$-th mode is the standard result
 
@@ -158,10 +158,10 @@ on the principal axes, with $\epsilon_{ij}$ the traceless symmetric strain. The 
 
 ### A Vibrating Mode Is an Oscillating Moment
 
-Combining the two results, a single quadrupole mode $a_2(t) = A\cos\omega_2 t$ produces a strain $\epsilon_{ij}(t)\propto a_2(t)$ and hence a quadrupole moment
+Combining the two results, a single quadrupole mode $a_2(t') = A\cos\omega_2 t'$ produces a strain $\epsilon_{ij}(t')\propto a_2(t')$ and hence a quadrupole moment
 
 $$
-\Theta_{ij}(t) = \mathcal{Q}^{(0)}_{ij}\cos\omega_2 t ,
+\Theta_{ij}(t') = \mathcal{Q}^{(0)}_{ij}\cos\omega_2 t' ,
 $$
 
 oscillating at the **mode frequency** $\omega_2$. The body's quadrupole moment is thus a harmonic oscillator. A general vibration is a superposition of modes $l = 2, 3, \dots$, and its multipole moments oscillate at the corresponding mode frequencies — the tower of oscillation frequencies is the same tower as the multipole series.
@@ -183,24 +183,24 @@ verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishi
 A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,
 
 $$
-\mathcal{Q}^{(lab)}_{ij}(t) = R_{ik}(t)\,R_{jl}(t)\,\mathcal{Q}^{(b)}_{kl},
+\mathcal{Q}^{(lab)}_{ij}(t') = R_{ik}(t')\,R_{jl}(t')\,\mathcal{Q}^{(b)}_{kl},
 \qquad
-\tilde U(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,\vec e_z .
+\tilde U(t') = \cos\frac{\Omega t'}{2} + \sin\frac{\Omega t'}{2}\,\vec e_z .
 $$
 
 ### The $2\Omega$ Frequency
 
-Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = R_3(\Omega t)$ and $\mathcal{Q}^{(lab)} = R\mathcal{Q}^{(b)}R^{\mathsf{T}}$,
+Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = R_3(\Omega t')$ and $\mathcal{Q}^{(lab)} = R\mathcal{Q}^{(b)}R^{\mathsf{T}}$,
 
 $$
 \begin{aligned}
-\mathcal{Q}^{(lab)}_{xx}(t) &= \lambda_1\cos^2(\Omega t) + \lambda_2\sin^2(\Omega t)
-= \frac{\lambda_1+\lambda_2}{2} + \frac{\lambda_1-\lambda_2}{2}\cos 2\Omega t ,\\
-\mathcal{Q}^{(lab)}_{yy}(t) &= \lambda_1\sin^2(\Omega t) + \lambda_2\cos^2(\Omega t)
-= \frac{\lambda_1+\lambda_2}{2} - \frac{\lambda_1-\lambda_2}{2}\cos 2\Omega t ,\\
-\mathcal{Q}^{(lab)}_{xy}(t) &= (\lambda_1-\lambda_2)\sin(\Omega t)\cos(\Omega t)
-= \frac{\lambda_1-\lambda_2}{2}\sin 2\Omega t ,\\
-\mathcal{Q}^{(lab)}_{zz}(t) &= \lambda_3 , \qquad \mathcal{Q}^{(lab)}_{xz} = \mathcal{Q}^{(lab)}_{yz} = 0 .
+\mathcal{Q}^{(lab)}_{xx}(t') &= \lambda_1\cos^2(\Omega t') + \lambda_2\sin^2(\Omega t')
+= \frac{\lambda_1+\lambda_2}{2} + \frac{\lambda_1-\lambda_2}{2}\cos 2\Omega t' ,\\
+\mathcal{Q}^{(lab)}_{yy}(t') &= \lambda_1\sin^2(\Omega t') + \lambda_2\cos^2(\Omega t')
+= \frac{\lambda_1+\lambda_2}{2} - \frac{\lambda_1-\lambda_2}{2}\cos 2\Omega t' ,\\
+\mathcal{Q}^{(lab)}_{xy}(t') &= (\lambda_1-\lambda_2)\sin(\Omega t')\cos(\Omega t')
+= \frac{\lambda_1-\lambda_2}{2}\sin 2\Omega t' ,\\
+\mathcal{Q}^{(lab)}_{zz}(t') &= \lambda_3 , \qquad \mathcal{Q}^{(lab)}_{xz} = \mathcal{Q}^{(lab)}_{yz} = 0 .
 \end{aligned}
 $$
 
@@ -210,7 +210,7 @@ $$
 \omega_{quad} = 2\Omega ,
 $$
 
-not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(im_2\Omega t)$. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.
+not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(im_2\Omega t')$. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.
 
 ### The Axisymmetric Case
 
@@ -228,15 +228,15 @@ so that a rigidly rotating deformed body emits a tower of harmonics up to $l\Ome
 
 Two structural comments belong here, because they are where the framework's bookkeeping becomes visible.
 
-**The mode amplitudes are scalars.** The vibrating body's shape is a scalar function on the sphere, and its normal-mode amplitudes $a_{lm}(t)$ are central elements of the algebra, $a_{lm}(t)e_t\in\mathbb{C}_{\mathbb{B}}$. The tower of modes $l = 2, 3, \dots$ is a tower of *functions*, one for each irreducible representation $D^{(l)}$ of the rotation group, and the algebra contains only $D^{(0)}$ and $D^{(1)}$ as elements. The tower is carried by the function space, exactly as in the static expansion.
+**The mode amplitudes are scalars.** The vibrating body's shape is a scalar function on the sphere, and its normal-mode amplitudes $a_{lm}(t')$ are central elements of the algebra, $a_{lm}(t')e_t\in\mathbb{C}_{\mathbb{B}}$. The tower of modes $l = 2, 3, \dots$ is a tower of *functions*, one for each irreducible representation $D^{(l)}$ of the rotation group, and the algebra contains only $D^{(0)}$ and $D^{(1)}$ as elements. The tower is carried by the function space, exactly as in the static expansion.
 
-**The algebra supplies the rotor.** The orientation of the body is a single rotor $\tilde U(t)\in\mathbb{H}_{\mathbb{B}}$, and the passage from body-frame to lab-frame moments is the rotor conjugation of the bilinear form. The rotor is an algebra element, and it is the same element for every $l$: one rotation acts on the whole tower of tensors at once, because they are all representations of the one rotation group. The algebra does not need to contain the tower in order to act on it.
+**The algebra supplies the rotor.** The orientation of the body is a single rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, and the passage from body-frame to lab-frame moments is the rotor conjugation of the bilinear form. The rotor is an algebra element, and it is the same element for every $l$: one rotation acts on the whole tower of tensors at once, because they are all representations of the one rotation group. The algebra does not need to contain the tower in order to act on it.
 
 ## The Velocity Field and the Mode Energy
 
 ### The Velocity Field Is a Vector Element
 
-The motion of the medium is described by a velocity field $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t)$, and in the algebra it is a pure real vector element,
+The motion of the medium is described by a velocity field $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$, and in the algebra it is a pure real vector element,
 
 $$
 \vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
@@ -255,33 +255,33 @@ obtained from $\vec\nabla\vec v = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial/
 
 ### The Energy of a Mode
 
-For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\left(da_{l}/dt\right)^{2}$. Writing $E = \frac12 M_l\left(da_{l}/dt\right)^{2} + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,
+For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\left(da_{l}/dt'\right)^{2}$. Writing $E = \frac12 M_l\left(da_{l}/dt'\right)^{2} + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,
 
 $$
-E = \sum_{l=2}^{\infty}\sum_{m=-l}^{l}\tfrac12\left(M_l\,\left(da_{lm}/dt\right)^{2} + K_l\,a_{lm}^2\right),
+E = \sum_{l=2}^{\infty}\sum_{m=-l}^{l}\tfrac12\left(M_l\,\left(da_{lm}/dt'\right)^{2} + K_l\,a_{lm}^2\right),
 $$
 
 the $l = 0$ and $l = 1$ terms being omitted for a body that conserves volume and does not translate. The number of oscillators at order $l$ is $2l+1$: the energy sum runs over the same infinite tower as the multipole series, one harmonic oscillator for each independent multipole component.
 
 ### The Locus of the Tower
 
-It is worth stating exactly where the tower sits in the framework, because this is the point that the rotating and vibrating body makes concrete. The tower of mode amplitudes $a_{lm}(t)$ is a set of functions labelled by the irreducible representations $D^{(l)}$ of the rotation group, and the space they span is the space of functions on the sphere — infinite-dimensional. The algebraic objects that appear are the rotor $\tilde U(t)$ and the vector fields $\vec v$ of the medium, both of which are elements of the finite-dimensional algebra. The rotor acts on the tower because every $D^{(l)}$ is a representation of the same rotation group; the vector fields are the $D^{(1)}$ representation, the one non-trivial representation the algebra contains. Nothing in the algebra grows with $l$. This is the structural situation that the final article of the sequence examines in general terms.
+It is worth stating exactly where the tower sits in the framework, because this is the point that the rotating and vibrating body makes concrete. The tower of mode amplitudes $a_{lm}(t')$ is a set of functions labelled by the irreducible representations $D^{(l)}$ of the rotation group, and the space they span is the space of functions on the sphere — infinite-dimensional. The algebraic objects that appear are the rotor $\tilde U(t')$ and the vector fields $\vec v$ of the medium, both of which are elements of the finite-dimensional algebra. The rotor acts on the tower because every $D^{(l)}$ is a representation of the same rotation group; the vector fields are the $D^{(1)}$ representation, the one non-trivial representation the algebra contains. Nothing in the algebra grows with $l$. This is the structural situation that the final article of the sequence examines in general terms.
 
 ## The Oscillating Moments as Sources
 
 ### Time-Dependent Multipole Fields
 
-The moments $\Theta_{ij}(t)$, $\Theta_{ijk}(t), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.
+The moments $\Theta_{ij}(t')$, $\Theta_{ijk}(t'), \dots$ are the sources of a time-dependent field. In the non-relativistic, long-wavelength limit — the wavelength large compared with the body, so that the source may be treated as a single oscillating moment — the field far from the source is the retarded multipole field, and its leading $l$-pole contribution falls off as $r^{-(l+1)}$ with an oscillatory factor at the source frequency. This is the standard multipole radiation of classical field theory, and it is imported here rather than re-derived.
 
 ### Power Scaling
 
-The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/dt^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega t$ this gives $d^3Q/dt^3\propto\omega^3$ and
+The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/d{t'}^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega t'$ this gives $d^3Q/d{t'}^3\propto\omega^3$ and
 
 $$
 P \;\propto\; \omega^6 .
 $$
 
-This has been verified by direct numerical differentiation at a step $\delta = 10^{-3}$: the amplitude of the third time derivative of $A\cos\omega t$ equals $A\omega^3$ to five digits at $\omega = 1, 2, 3$, so its square scales as $\omega^6$. The rapid power law is why the lowest available multipole dominates: for a rotating triaxial body, whose lowest oscillating moment is the quadrupole at $2\Omega$, the radiated power grows as $(2\Omega)^6$. The result is standard and is quoted for the quadrupole; the corresponding formulas for the higher multipoles carry the same structure with a faster power of $\omega$, and they are not needed here.
+This has been verified by direct numerical differentiation at a step $\delta = 10^{-3}$: the amplitude of the third time derivative of $A\cos\omega t'$ equals $A\omega^3$ to five digits at $\omega = 1, 2, 3$, so its square scales as $\omega^6$. The rapid power law is why the lowest available multipole dominates: for a rotating triaxial body, whose lowest oscillating moment is the quadrupole at $2\Omega$, the radiated power grows as $(2\Omega)^6$. The result is standard and is quoted for the quadrupole; the corresponding formulas for the higher multipoles carry the same structure with a faster power of $\omega$, and they are not needed here.
 
 ### The Biquaternion Reading
 
@@ -293,7 +293,7 @@ A vibrating or rotating ellipsoid is a source of oscillating multipoles. Its sha
 
 The quadrupole moment of a homogeneous ellipsoid is $\Theta_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ with cyclic permutations, traceless; for a small trace-free strain it is linear, $\Theta_{ij} = \frac{6MR_0^2}{5}\epsilon_{ij}$. A vibrating ellipsoid therefore has a quadrupole moment oscillating at the mode frequency $\omega_2$. A triaxial ellipsoid rotating at $\Omega$ has a lab-frame quadrupole oscillating at $2\Omega$, because the body-frame moment carries azimuthal components $m_2 = \pm 2$; an axisymmetric body has a static moment and does not oscillate. In general, a rigidly rotating body with an $l$-pole deformation produces harmonics up to $l\Omega$.
 
-In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(t)e_t\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde U(t)\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $\mathcal{Q}^{(lab)}(\vec v,\vec w) = \mathcal{Q}^{(b)}(\tilde U^{\natural}\vec v\tilde U, \tilde U^{\natural}\vec w\tilde U)$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
+In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(t')e_t\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde U(t')\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $\mathcal{Q}^{(lab)}(\vec v,\vec w) = \mathcal{Q}^{(b)}(\tilde U^{\natural}\vec v\tilde U, \tilde U^{\natural}\vec w\tilde U)$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
 
 ## Summary of Notation
 
@@ -309,12 +309,12 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\tilde U = \cos(\theta/2) + \sin(\theta/2)\vec u$ | Rotation rotor, a real unit quaternion |
 | $\vec w_2 = \tilde U\vec w\tilde U^{\natural}$ | Rotor action on a vector |
 | $R(\theta,\vec u)$ | Rotation matrix in $SO(3)$, the image of $\tilde U$ (distinct from the radius $R_0$) |
-| $\vec\omega = d\theta/dt\,\vec u$ | Angular velocity (body-frame vector) |
-| $d\tilde U/dt = \tfrac12\tilde U\vec\omega$ | Rotor kinematic identity |
+| $\vec\omega = d\theta/dt'\,\vec u$ | Angular velocity (body-frame vector) |
+| $d\tilde U/dt' = \tfrac12\tilde U\vec\omega$ | Rotor kinematic identity |
 | $Y_l^m$ | Spherical harmonics |
-| $r(\theta,\phi,t) = R_0[1+\sum a_{lm}Y_l^m]$ | Shape function of the deformed body |
-| $a_{lm}(t)$ | Normal-mode amplitude (a scalar) |
-| $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t)$ | Velocity field |
+| $r(\theta,\phi,t') = R_0[1+\sum a_{lm}Y_l^m]$ | Shape function of the deformed body |
+| $a_{lm}(t')$ | Normal-mode amplitude (a scalar) |
+| $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t')$ | Velocity field |
 | $\rho_m$, $\sigma$, $M$ | Mass density, surface tension, total mass |
 | $M_l, K_l$ | Mode inertia and restoring coefficients, $\omega_l^2 = K_l/M_l$ |
 | $\omega_l$ | Frequency of the $l$-th mode |

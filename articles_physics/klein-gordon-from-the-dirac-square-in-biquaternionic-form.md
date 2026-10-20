@@ -20,7 +20,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2,
 $$
 
-with $\partial^2/\partial Q_t^2 = -c^{-2}\,\partial^2/\partial t^2$. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
+with $\partial^2/\partial Q_t^2 = -c^{-2}\,\partial^2/\partial {t'}^2$. The mass parameter of the operator pair is measured in inverse-length units; restoring $\hbar$ and $c$, it is the inverse reduced Compton wavelength
 
 $$
 \mu = \frac{mc}{\hbar},
@@ -50,7 +50,7 @@ $$
 = g^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu .
 $$
 
-The series identifies this second-order operator with the d'Alembertian of the $ict$ gradient, $\Box = \partial^2/\partial Q_t^2 + \Delta$, through the level-2 metric $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$: $g^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu = -\eta^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu = -\Box$, so that
+The series identifies this second-order operator with the d'Alembertian of the $ict'$ gradient, $\Box = \partial^2/\partial Q_t^2 + \Delta$, through the level-2 metric $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$: $g^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu = -\eta^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu = -\Box$, so that
 
 $$
 (i\not\partial)^2 = -\not\partial^2 = \Box .
@@ -205,14 +205,14 @@ The square is now applied to the plane waves of the series. Write the four-wavev
 $$
 \tilde P = i\frac{\omega}{c}e_t + \vec k\in\mathbb{M}_-,
 \qquad
-\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-,
+\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-,
 \qquad \vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
 $$
 
-and take the phase $\mathrm{Sc}(\tilde P\tilde{R}^{\natural}) = -\omega t + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
+and take the phase $\mathrm{Sc}(\tilde P\tilde{R}^{\natural}) = -\omega t' + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar part of the product with the conjugate four-position. The exponent $i\,\mathrm{Sc}(\tilde P\tilde{R}^{\natural})$ is a purely imaginary central element, so the exponential is central and differentiates as an ordinary exponential. On a plane wave,
 
 $$
-\partial/\partial t \longmapsto -i\omega, \qquad \partial/\partial x_j\longmapsto ik_j, \qquad \partial/\partial Q_t \longmapsto -\frac{\omega}{c},
+\partial/\partial t' \longmapsto -i\omega, \qquad \partial/\partial x_j\longmapsto ik_j, \qquad \partial/\partial Q_t \longmapsto -\frac{\omega}{c},
 $$
 
 and therefore
@@ -239,7 +239,7 @@ $$
 
 which is $E^2 = \vec p^2c^2 + m^2c^4$ under $E = \hbar\omega$, $\vec p = \hbar\vec k$ and $\mu = mc/\hbar$. The sign is the series sign and is consistent with the Klein–Gordon article: the operator $\Box - \mu^2$ vanishes on the same shell on which the biquaternion norm equals $-\mu^2$.
 
-The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $\exp(\mp i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$. A **spinor-valued** field obeying the same second-order equation has one such pair for each of its four components, hence an eight-dimensional complex solution space at fixed $\vec p$, since $(\Box - \mu^2)$ acts on components without mixing them. The first-order Dirac equation selects a **four**-dimensional subspace of it: the two positive-frequency spinors $w^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the two negative-frequency spinors $v^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $r = 1,2$. Every one of the four is annihilated by $\Box - \mu^2$ — this was checked componentwise on a superposition of two plane waves — but the converse fails: a general second-order solution is a sum of **eight** independent modes with arbitrary coefficients, and the four linear relations $(\not\partial - m)\psi = 0$ cut that space down to the four-dimensional first-order solution space. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
+The kernel of the square is larger than the kernel of the pair, and the difference is the information the square discards. For a fixed three-momentum $\vec p$, a **scalar** field obeying the Klein–Gordon equation has a two-dimensional complex solution space, spanned by the positive- and negative-frequency modes $\exp(\mp i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$. A **spinor-valued** field obeying the same second-order equation has one such pair for each of its four components, hence an eight-dimensional complex solution space at fixed $\vec p$, since $(\Box - \mu^2)$ acts on components without mixing them. The first-order Dirac equation selects a **four**-dimensional subspace of it: the two positive-frequency spinors $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the two negative-frequency spinors $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $r = 1,2$. Every one of the four is annihilated by $\Box - \mu^2$ — this was checked componentwise on a superposition of two plane waves — but the converse fails: a general second-order solution is a sum of **eight** independent modes with arbitrary coefficients, and the four linear relations $(\not\partial - m)\psi = 0$ cut that space down to the four-dimensional first-order solution space. The square therefore has a kernel twice as large as the pair's; it is a necessary condition, not a sufficient one.
 
 The same count can be read off the algebra. The square is the diagonal operator $(\Box - \mu^2)$ acting on the two chiral blocks, and it annihilates each block independently; the first-order pair is the off-diagonal operator that locks the two blocks together through the mass. The square forgets the lock, and the lost information is exactly the four linear relations that the lock imposes.
 
@@ -267,7 +267,7 @@ The transfer from the first-order pair to the second-order equation can now be a
 
 There is a final structural remark. The passage from the pair to the square is the passage from a **graded** object to its diagonal. The first-order pair is off-diagonal in the chirality grading — the mass maps $L$ to $R$ and back — while the square is diagonal, $(\Box - m^2)$ acting on each chirality separately. The grading is what the square erases, and it is the same grading that the supersymmetric structure of the first-order operator exploits, which the companion article on supersymmetric quantum physics develops. The Klein–Gordon equation is the bosonic shadow of the fermionic square root; it is the diagonal of a matrix whose off-diagonal entries are the Dirac operator and its conjugate.
 
-The identities below were checked by direct computation on explicit $4\times4$ matrices in the Dirac representation. The anticommutator $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ held to $0$; the identity $(\gamma^\mu k_\mu)^2 = g^{\mu\nu}k_\mu k_\nu I_4$ held to $2\times10^{-15}$ over random four-momenta; the spinors $w^{(r)},v^{(r)}$ satisfied $(\not p - m)w = 0$ and $(\not p + m)v = 0$ to $10^{-15}$; and the superposition $a\,w^{(1)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))) + b\,w^{(2)}(\vec k)\exp(-i(E_2t-\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $a,b$ complex, was annihilated by $i\not\partial - m$ to $2\times10^{-15}$ and satisfied $(\Box - m^2)\psi = 0$ to $3\times10^{-15}$. The identity tested was the operator identity, on a superposition of two distinct momenta, not on a single plane wave.
+The identities below were checked by direct computation on explicit $4\times4$ matrices in the Dirac representation. The anticommutator $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ held to $0$; the identity $(\gamma^\mu k_\mu)^2 = g^{\mu\nu}k_\mu k_\nu I_4$ held to $2\times10^{-15}$ over random four-momenta; the spinors $w^{(r)},v^{(r)}$ satisfied $(\not p - m)w = 0$ and $(\not p + m)v = 0$ to $10^{-15}$; and the superposition $a\,w^{(1)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))) + b\,w^{(2)}(\vec k)\exp(-i(E_2t'-\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $a,b$ complex, was annihilated by $i\not\partial - m$ to $2\times10^{-15}$ and satisfied $(\Box - m^2)\psi = 0$ to $3\times10^{-15}$. The identity tested was the operator identity, on a superposition of two distinct momenta, not on a single plane wave.
 
 ## Summary
 
@@ -288,7 +288,7 @@ The square carries the mass shell $\tilde P\tilde P^{\natural} = -\mu^2$, hence 
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_{k=x,y,z}\vec e_k\,\partial/\partial Q_k$ | Biquaternionic gradient (the Dirac operator) |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, series convention |
-| $\tilde P = i\omega/c\,e_t + \vec k$, $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-wavevector and four-position |
+| $\tilde P = i\omega/c\,e_t + \vec k$, $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-wavevector and four-position |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde P\tilde P^{\natural} = -m^2c^2/\hbar^2$ | Mass-shell condition |
 | $\mu = mc/\hbar$ | Mass parameter of the operator pair (inverse reduced Compton wavelength) |

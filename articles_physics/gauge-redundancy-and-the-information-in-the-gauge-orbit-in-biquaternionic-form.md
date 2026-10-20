@@ -64,7 +64,7 @@ These two facts are the whole geometry of the orbit: it is a flat affine space m
 
 ### The Orbit in Fourier Space
 
-The local structure is read off mode by mode. Let a single Fourier mode of the connection carry wavevector $k = (k_0,k_1,k_2,k_3)$ on the $ict$ coordinates, so that a gradient acts as left multiplication by $iK$ with
+The local structure is read off mode by mode. Let a single Fourier mode of the connection carry wavevector $k = (k_0,k_1,k_2,k_3)$ on the $ict'$ coordinates, so that a gradient acts as left multiplication by $iK$ with
 
 $$
 K = \sum_{\mu\in\{t,x,y,z\}}k_\mu e_\mu .
@@ -132,7 +132,7 @@ $$
 
 so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the coordinate along the fibre.
 
-Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = ict$ and no restriction on the mode wavevectors. The vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity
+Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = ict'$ and no restriction on the mode wavevectors. The vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity
 
 $$
 \tilde{F} = \frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu ,

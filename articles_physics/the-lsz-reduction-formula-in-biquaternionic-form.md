@@ -32,7 +32,7 @@ and for a central scalar operator on the biquaternion module the residue is the 
 
 The article proceeds as follows. The next section states the LSZ formula and sketches its derivation from asymptotic fields. A section identifies the amputation with the inverse mass-shell operator. A section fixes the external wavefunctions as biquaternion plane waves. A section treats the wave-function renormalization as a residue, verified numerically. A section treats the scalar and spinor cases separately, and a section the one-mode truncation and the module gap. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The S-Matrix in Biquaternionic Form* and *The Feynman Propagator in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The wave biquaternion is $\tilde P=iEe_t+\vec p$ with **quaternion** conjugate $\tilde P^{\natural}=iEe_t-\vec p$ and $\tilde P\tilde P^{\natural}=(-E^2+\vec p^2)e_t=-p^2e_t$, where $p^2=E^2-\vec p^2$; the mass shell is $\tilde P\tilde P^{\natural}=-m^2c^2$ (in the dynamical expressions we set $\hbar=c=1$). On the spinor module the Dirac operator is $\not p-m$ with $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, and $\eta=-g$. The mode algebra is $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$, with all other anticommutators zero; the matrix isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the trace is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$, the $2\times2$ reading of the plain form.
+**Conventions.** We use those of the companion articles, in particular *The S-Matrix in Biquaternionic Form* and *The Feynman Propagator in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict'$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The wave biquaternion is $\tilde P=iEe_t+\vec p$ with **quaternion** conjugate $\tilde P^{\natural}=iEe_t-\vec p$ and $\tilde P\tilde P^{\natural}=(-E^2+\vec p^2)e_t=-p^2e_t$, where $p^2=E^2-\vec p^2$; the mass shell is $\tilde P\tilde P^{\natural}=-m^2c^2$ (in the dynamical expressions we set $\hbar=c=1$). On the spinor module the Dirac operator is $\not p-m$ with $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, and $\eta=-g$. The mode algebra is $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$, with all other anticommutators zero; the matrix isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the trace is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$, the $2\times2$ reading of the plain form.
 
 ## The LSZ Formula
 
@@ -40,7 +40,7 @@ The reduction is a statement about the asymptotic behaviour of correlation funct
 
 **Asymptotic fields.** A renormalized field $\tilde\Phi$ is supposed to approach, at early and late times, a free field of the same mass,
 $$
-\tilde\Phi(x) \;\xrightarrow{\ t\to\pm\infty\ }\; \sqrt{Z}\,\tilde\Phi_{\mathrm{in/out}}(x) ,
+\tilde\Phi(x) \;\xrightarrow{\ t'\to\pm\infty\ }\; \sqrt{Z}\,\tilde\Phi_{\mathrm{in/out}}(x) ,
 $$
 where $\tilde\Phi_{\mathrm{in/out}}$ is a free field and $Z$ is the wave-function renormalization. The adiabatic switching of the interaction makes the approach weak, and the reduction formula is the statement that the S-matrix element can be written entirely in terms of the interpolating field's correlation functions.
 
@@ -101,7 +101,7 @@ The external legs carry the framework's plane waves, and this is where the reduc
 $$
 \tilde\Phi_{\tilde P}(\tilde{R}) = \tilde Q_{\mathrm{amp}}\,\exp(\,i\,\mathrm{Sc}(\tilde P^{\natural}\tilde{R})) ,
 \qquad
-\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
+\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
 $$
 with $\tilde Q_{\mathrm{amp}}$ a constant biquaternion amplitude, a bound element of $\mathbb{B}$ whose majuscule marks its complex scalar part. The wave satisfies $(\Box-m^2)\tilde\Phi_{\tilde P}=0$ for $\tilde P\tilde P^{\natural}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde P\tilde P^{\natural}+m^2)=-\mathcal{M}(\tilde P)$. The phase is the central scalar $\mathrm{Sc}(\tilde P^{\natural}\tilde{R})=p\cdot x$, so the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.
 
@@ -257,7 +257,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\mathcal{M}(\tilde P)=\tilde P\tilde P^{\natural}+m^2=m^2-p^2$ | Mass-shell operator (vanishing defines the shell) |
 | $\mathcal{M}(\tilde P)=0\iff E_{\vec p}^2=\vec p^2+m^2$ | Mass shell |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, series convention |
-| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
+| $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric (level 2) |
 | $D_F(\tilde P)=1/(\mathcal{M}(\tilde P)-i\epsilon)=-1/(p^2-m^2+i\epsilon)$ | Feynman propagator (momentum space) |
 | $p^2-m^2=-\mathcal{M}(\tilde P)$ | Symbol of the wave operator $(\Box-m^2)$; amputation uses $\mathcal{M}$ |
 | $Z=\lim_{p^2\to m^2}(m^2-p^2)D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
