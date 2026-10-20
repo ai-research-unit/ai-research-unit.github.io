@@ -219,7 +219,7 @@ The pairings read the same data under different headings. The quaternion pairing
 
 The word is a coordinate statement, not a dynamics. It says that every element off the cone is a scale times a phase times a boost times a rotor; it does not say that a physical system moves through those factors, nor that the factors are conserved, nor that the decomposition is stable under evolution. The evolution articles own the dynamics; this article owns the description.
 
-## Boundaries
+## Limits
 
 The decomposition is defined off the null cone and nowhere on it. The failure is the absence of a rest frame, not a singularity of the algebra.
 

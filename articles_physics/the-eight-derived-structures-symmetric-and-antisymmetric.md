@@ -229,7 +229,35 @@ The four symmetric structures carry the four forms, one each, and the four antis
 
 Read by column, the table gives the three divisions of the twelve: the family (four parents, four symmetric parts, four antisymmetric parts), the value (the whole space, the centre, the vector subspace, or no remarkable subspace) and the law (only the plain pair carries a classical algebra). Read by row, it gives the one exact coincidence: a parent and its symmetric part share the form. The unit is shared only for the plain pair, because the symmetrisation of a sesquilinear product replaces the unit by a conjugation. The antisymmetric part shares neither. That coincidence is why the symmetric half is the half that measures: the form is the scalar part, and the scalar part is the only thing a state can be paired with.
 
-## The Boundary
+### The Other Triple of Axes
+
+The table above sorts the twelve by family, value and law. The comparison article *The Twelve Structures Compared: Product, Law and Form* sorts the same twelve by **product**, **law** and **form**. The two are not rival classifications; they are two projections of one twelve-element set, and each answers a different question.
+
+The **product** axis carries the four jobs and their two halves: the general product is the operation, the symmetric part the quantity, the antisymmetric part the order or the phase. The **law** axis carries the two classical nonassociative structures, the Jordan product $\mathrm{SPA}$ and the Lie product $\mathrm{APA}$, together with the six failures. The **form** axis divides the definite plain forms, which carry the sector sign and the Born weight, from the indefinite quaternionic forms, which carry the interval and the Krein metric.
+
+| this article's axes | the comparison's axes |
+| --- | --- |
+| family: parent, symmetric, antisymmetric | product: the four jobs and their halves |
+| value: whole space, centre, vector subspace, none | law: Jordan, Lie, the six failures |
+| law: associative, Jordan, Lie, failure | form: definite $B,H$ on each sector against indefinite $N,K$ |
+
+The shift of axis is the content. Read by family, the twelve answer *what kind of structure is this*; read by product, *which job does it serve*; read by law, *is it classical*; read by form, *does it measure or carry a metric*. The same structure can be a failure on one axis and a metric on another, and neither reading is wrong.
+
+### The Four Columns of Three
+
+Read by product, the twelve fall into four columns of three. Each column is one job, and within it the general product is the operation, the symmetric part the quantity, and the antisymmetric part the order or the phase:
+
+| | composition | probability | causality | gauge |
+| --- | --- | --- | --- | --- |
+| operation | the product of a boost rotor and a rotation rotor | the Born pairing of a state and an observable | the quaternionic product of two four-vectors | the Krein pairing of two internal frames |
+| quantity (symmetric) | the signed Euclidean overlap | the expectation value | the Minkowski inner product, whose diagonal is the interval | the indefinite calibration, i.e. the Krein form |
+| order or phase (antisymmetric) | the rotation axis | the interference | the boost obstruction, the bracket that fails | the polarisation direction |
+
+The table is the product axis of the comparison, not a new classification. Its four columns are the four jobs; its three rows are the operation, the measurable half and the ordered half. The two classical structures sit in the composition column as the two halves that close: $\mathrm{SPA}$ in the quantity row, where the Jordan product is the observables' product, and $\mathrm{APA}$ in the order row, where the Lie bracket is the rotation. No other cell is a classical algebra, and that scarcity is the table's point: the twelve are not twelve equivalent structures, but four jobs each with a quantity half and an order half, of which only the two halves of the composition column are classical.
+
+**The boundary.** The four-column table is a reading of the same twelve products, not a theorem that the columns are independent or that the assignment of jobs is forced. The operation, quantity and order entries are the framework's names; the products and the identities are the algebra's.
+
+## Limits
 
 The algebra proves the split, the eight products, the two identities and the six witnesses. It does not prove that the eight words are the only interpretations of the eight structures. The words *commutativity*, *positivity*, *coupling*, *metric*, *rotation*, *phase*, *obstruction* and *polarisation* are the framework's naming of a proved structure, and each naming is a claim about which physical job the structure can carry, not a theorem of the algebra.
 
@@ -239,7 +267,7 @@ The general plain algebra is owned by *The Four General Products: Composition, P
 
 ## Summary
 
-The four general products split into eight derived structures, and the split is a split of each product into an order-free half and an order-sensitive half. The symmetric half keeps the value of the parent and carries the four forms; the antisymmetric half keeps the direction and carries the zero form. Of the eight, only $\mathrm{SPA}$ is a Jordan product and only $\mathrm{APA}$ is a Lie product, because only the plain parent is associative. The other six fail the identity of their kind, with the witnesses $\vec e_x$ for the three Jordan failures and the triples $(e_t,\vec e_x,\vec e_y)$ and $(\vec e_x,\vec e_x,i\vec e_y)$ for the three Jacobi failures. The parent is reconstructed from its two parts by addition, and the reconstruction is exact as a decomposition of the product, not as a direct sum of algebras. The twelve structures compared give three divisions: the family, the values and the law.
+The four general products split into eight derived structures, and the split is a split of each product into an order-free half and an order-sensitive half. The symmetric half keeps the value of the parent and carries the four forms; the antisymmetric half keeps the direction and carries the zero form. Of the eight, only $\mathrm{SPA}$ is a Jordan product and only $\mathrm{APA}$ is a Lie product, because only the plain parent is associative. The other six fail the identity of their kind, with the witnesses $\vec e_x$ for the three Jordan failures and the triples $(e_t,\vec e_x,\vec e_y)$ and $(\vec e_x,\vec e_x,i\vec e_y)$ for the three Jacobi failures. The parent is reconstructed from its two parts by addition, and the reconstruction is exact as a decomposition of the product, not as a direct sum of algebras. The twelve structures compared give three divisions: the family, the values and the law. Read on the other triple of axes, the same twelve fall into four columns of three, one column for each job, with the operation, the quantity and the order or phase in the three rows.
 
 ## Summary of Notation
 

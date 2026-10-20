@@ -126,7 +126,7 @@ A complex value has no causal class. The unstable state is a complex central pol
 
 Two coincidences stand out. A bilinear parent and its symmetric part have the same root sets, because they have the same square: $\mathrm{SPA}$ reads as $\mathrm{GPA}$, and $\mathrm{SQA}$ as $\mathrm{GQA}$. The two sesquilinear parents and their symmetrisations do not: $\mathrm{GPS}$ reads a positive value as a coset of the unitary group, while $\mathrm{SPS}$ reads it as a sphere, because the symmetrisation forgets the vector part. The four antisymmetric rows have no root of a nonzero value, and that emptiness is the algebraic statement that a bracket cannot realise a scalar value.
 
-## The Boundary
+## Limits
 
 A root is an algebraic solution, not a particle. The equation $\tilde\Xi\star\tilde\Xi=\lambda e_t$ names the elements that realise a value; it does not name a state, a mass or a lifetime. The mass shell, the Born weight and the causal class are readings of the root sets, and each reading has to be supplied by the band and by the physical identification.
 

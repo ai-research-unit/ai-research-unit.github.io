@@ -146,7 +146,7 @@ $$
 
 its zero set is the light cone, and its level sets are the mass shells, $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$. On the informational sector the same form has signature $(1,3)$: the inertia is reversed by the sector, and the interval and the informational metric are one form.
 
-The interval is **multiplicative**, and that is what makes it a causal structure rather than a quadratic decoration. The causal type of a composite is the product of the causal types. The null set $\{\langle\tilde Q\rangle_{\natural}=0\}$ is closed under multiplication, and so are the units and the zero divisors; on the material sector this null set is the light cone. The product of two material elements is material exactly when they anticommute, so the light cone is not closed under composition within the sector; the closure is a statement about the algebra and not about the sector. For units, the logarithm $\log\lvert\langle\tilde Q\rangle_{\natural}\rvert$ is additive over the composition and is read as a dilation potential; the rapidity is the length of the pure part of the polar angle, not the potential. An element is invertible exactly off the zero-divisor cone, so the cone is the wall of the reversible region and the unit group is the off-cone part.
+The interval is **multiplicative**, and that is what makes it a causal structure rather than a quadratic decoration: the causal type of a composite is the product of the causal types. Its null set is closed under multiplication, as are the units and the zero divisors; the cut of the null set by the material sector is the light cone. The sector is not closed under the product, because two anti-Hermitian elements compose to an anti-Hermitian element only when they anticommute, so the closure belongs to the algebra and not to the sector. On the unit group the logarithm of the modulus is additive and reads as a dilation potential; the rapidity is the length of the pure part of the polar angle, not that potential. Invertibility is exactly the complement of the cone, which is therefore the wall of the reversible region.
 
 The interval is the algebraic norm that carries the word **mass**. Its level set is the mass shell, its zero set the light cone, and its sign is the causal character of the displacement. The other three algebraic norms do not carry the mass: the definite one carries the probability, the sector sign carries the flag, and the Krein norm carries the constraint.
 
@@ -160,7 +160,7 @@ The reading is a **constraint**, not a state. A gauge calibration fixes a redund
 
 On the material sector the Krein form is minus the interval; on the informational sector it is the interval. The two are one form read with a sign, and on the informational side they are the same form. This is the algebraic reason the interval and the gauge form are easy to conflate, and the reason the sign of the sector must be named whenever the two are compared.
 
-**The boundary.** The Krein column states the form alone. The indefinite structure — the Krein space, its fundamental symmetry, its signatures and its topology — is read in *The Krein Form and Its Physical Interpretation* and is the subject of the planned entry *The Krein Form and the Indefinite Structure*. The form does not derive a gauge group, a coupling or a field content, and its zero set is not the zero-divisor cone: $\mathcal{K}$ and $\mathcal{N}$ are different cones, of real dimensions seven and six.
+**The boundary.** The Krein column states the form alone. The indefinite structure — the Krein space, its fundamental symmetry, its signatures and its topology — is read in *The Krein Form and the Indefinite Structure*. The form does not derive a gauge group, a coupling or a field content, and its zero set is not the zero-divisor cone: $\mathcal{K}$ and $\mathcal{N}$ are different cones, of real dimensions seven and six.
 
 ## The Change of Scalars
 
@@ -207,7 +207,7 @@ Two senses of *norm* must be kept apart. The **algebraic norm** is a map into th
 
 On the sectors the four forms coincide in pairs, and the coincidence is a statement about the forms. It does not make the four products agree, and it does not make the Krein form a probability or the sector sign an interval. The identities are read with both arguments on the sector; for a general element the four forms are four.
 
-The article states no dynamics, no mass value, no spectrum and no gauge group. The Krein column states the form alone, and its indefinite structure is read in *The Krein Form and Its Physical Interpretation* and in the planned entry *The Krein Form and the Indefinite Structure*. The mass shell is a level set, not a derived spectrum; the charge is a label of a compact group, not a derived coupling; the interval is a metric, not an equation of motion.
+The article states no dynamics, no mass value, no spectrum and no gauge group. The Krein column states the form alone, and its indefinite structure is read in *The Krein Form and the Indefinite Structure*. The mass shell is a level set, not a derived spectrum; the charge is a label of a compact group, not a derived coupling; the interval is a metric, not an equation of motion.
 
 ## Summary
 
@@ -250,4 +250,4 @@ The article states no dynamics, no mass value, no spectrum and no gauge group. T
 - *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale*, for the four readings of one element.
 - *The Bilinear Product on the Material Sector* and *The Bilinear Product on the Informational Sector*, for the two sectors read one at a time.
 - *The Krein Form and Its Physical Interpretation*, for the indefinite structure and the fundamental symmetry read in the physics category.
-- *The Krein Form and the Indefinite Structure* (planned), for the corresponding entry of this category.
+- [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the corresponding entry of this category.

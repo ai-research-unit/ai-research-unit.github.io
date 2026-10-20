@@ -136,6 +136,14 @@ The speed of light is local. In a material medium $c=1/\sqrt{\epsilon\mu}$ varie
 
 **The boundary.** The article does not derive a dynamics. The interval is a kinematic invariant, the cone is a set, and the identification of the sector with the spacetime of a physical theory is the corpus's interpretation. The anti-Hermitian convention is a convention; the Hermitian convention gives the same geometry with the opposite sign.
 
+### The Sign of the Interval Is Data of the Embedding
+
+The interval is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, so the sign of a product is the product of the signs of its factors. In the convention of this article a timelike element has $N<0$, so the product of two timelike elements is spacelike; a timelike and a spacelike element multiply to a timelike one; and a null factor makes the product null. The central generator reverses the norm, $N(i\tilde Q)=-N(\tilde Q)$, so the multiplication by $i$ that exchanges the sectors also flips the sign of the interval.
+
+The interval is therefore the form that a change of **local complex structure** moves. On a fixed real slice the algebra fixes the form; which element is timelike, null or spacelike is then a statement about the slice, not about the complex algebra alone. The mass is read off the modulus of the norm — the level set $N=-m^2c^2$ is the mass shell — and the sector fixes the sign convention; the choice of slice is the third piece of the reading.
+
+**The boundary.** The embedding here is the choice of real slice and of local complex structure, not an embedding of a curved manifold. No dynamical metric, no Einstein equation and no back-reaction are derived. The sign of the norm at a point is not an observable by itself; only the ratios and the level sets are.
+
 ### The Seven Four-Vectors
 
 The sector carries the standard four-vectors of relativistic physics. The table gives the element, its components and its invariant.
@@ -244,6 +252,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 - The seven four-vectors of relativistic physics are the elements of the sector, with the imaginary scalar part as the time component.
 - The Lorentz group acts by rotor conjugation, with a boost rotor Hermitian, a rotation rotor a real quaternion, and a general rotor a unit-norm biquaternion.
 - The commutator is twice the cross product of the spatial parts, with the time direction central; the sector is a Lie algebra for the spatial rotations.
+- The sign of the interval is the product of the signs of the factors, and it is data of the embedding: a change of local complex structure moves it, while the mass is read off the modulus of the norm.
 - The sector is the acted-upon side of the action of the informational sector, and it owns no non-trivial idempotent.
 
 ## Summary of Notation

@@ -3,6 +3,7 @@ The goal is not to focus only on "usual things" , the goal of the project is to 
 
 
 
+
 The zero divisor of a structure is a nonzero element that kills a nonzero partner, and the operator criterion reads it as the singularity of the multiplication operator.
 
 
@@ -19,10 +20,13 @@ so there are stable projections we cannot measure, and observables we can mesure
 
 
 
-Quantum physics is the quest for the idempotents (pure states) of an algebraic space.
-​
+
+
 
 Exponentials for states and roots : exp(θ Ξ~ )
+
+
+
 
 
 

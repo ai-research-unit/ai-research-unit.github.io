@@ -81,6 +81,26 @@ and the apex is the element that divides only $0$ and is divided by everything. 
 
 **The boundary of the interpretation.** Divisibility is a preorder, not a total order, and it carries no cost. A physical resource theory would need a monotone and a composition law; the algebra supplies the preorder only.
 
+### The Monoid of Processes
+
+The partition is a partition of elements. Read on the maps they generate, it is a partition of processes. Left multiplication by $\tilde Q$ is a $\mathbb{C}$-linear map $L_{\tilde Q}$ of the algebra, and the assignment is injective. The maps compose by
+
+$$
+L_{\tilde A}\circ L_{\tilde B}=L_{\tilde A\tilde B},
+$$
+
+so the left multiplications form a **monoid** under composition, with identity $L_{e_t}$. The monoid is the element monoid seen through the regular representation, and it carries the same partition: its units are exactly the off-cone elements, and its non-units are the zero divisors together with zero.
+
+A unit is a **reversible process**: the map is a bijection, and it can be run backwards. A zero divisor is a **process that forgets**: its map has a nonzero kernel, the annihilator, and the kernel is the direction it loses. The cone is the boundary between the two.
+
+**The shape of a resource theory.** Read as a resource theory, the split is between free and costly operations: the units are the free, reversible operations, and the non-units are the operations that consume a resource. The states carry the invariants the algebra supplies, the norm and the entropy functional, and the monoid is the setting for Landauer-type accounting. The reading is the shape and not the theory. The algebra supplies a preorder and a composition, not a complete set of monotones, and no resource theory in the strict sense is constructed. The physical content is in *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* and *Coarse-Graining and the Biquaternion Entropy Functional*.
+
+**The cone as a horizon.** The cone has three readings at once: its cut by the material sector is the light cone, its cut by the informational sector is the boundary of the state space, and in the whole algebra it is the locus of the non-invertible acting maps. Read as one object, it is where a process loses information: a map on the cone has a kernel, and what enters the kernel does not leave. The horizon reading is the identification of the three loci, and it is an interpretation. The algebra supplies the common set, not the thermodynamics; the area law, the temperature and the second law belong to *Black Hole Thermodynamics in Biquaternionic Form* and to the KMS articles. The cone is a horizon in the sense of a boundary at which the map stops being reversible, not in the sense of a metric horizon with a temperature.
+
+**Which composition is physical.** The monoid composes by $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, so a sequence of two processes is a product. The product is associative, and associativity is order-blind: it says that the bracketing of three factors does not matter, not that the order of the two factors does. The two orders are the two products $\tilde A\tilde B$ and $\tilde B\tilde A$, and the algebra supplies both. The order-sensitive object is their commutator $[\tilde A,\tilde B]$, the antisymmetric half of the product. **Which of the three is the physical composition is open.** The algebra supplies all three and selects none.
+
+**The boundary.** The open question is not a defect of the algebra. It is the statement that a composition law is not a dynamics: a physical theory must say which product is the composition of its processes, and that choice is an input.
+
 ## The Shape of the Reversible Region
 
 ### The Group and Its Matrix Model
@@ -233,11 +253,11 @@ Interpreted physically, the real orders have finite unit groups because the real
 
 **The boundary of the order interpretations.** The orders are arithmetic. They supply no lattice spacing, no dynamics and no spectrum; a physical lattice would require a scale and an action, and the algebra supplies neither. The identification of the infinite unit family with a translation is an algebraic analogy: $e_t+kP$ is a unit of the complex order and is not an element of the material sector, so it is not a spacetime translation.
 
-## The Boundary
+## Limits
 
 The topology of the unit group is not the dynamics of a physical system. The group is open, connected and homotopy equivalent to $S^{1}\times S^{3}$; the cone is closed, contractible and of codimension two; the orders are discrete subrings of the real slice. Each statement is a statement about the algebra, and each physical interpretation requires a sector, a scale and a law.
 
-The group and the cone are one partition read twice. The group is the reversible region and the cone is its wall; on the informational sector the cone meets the positive cone in the cone over the pure states. The two interpretations are not unified by the algebra, and the article does not claim that they are. The cone is a light cone only after the material sector is cut out; it is a state boundary only after the trace-one slice is taken.
+The group and the cone are one partition read twice. The group is the reversible region and the cone is its wall; on the informational sector the cone meets the positive cone in the cone over the pure states. The two interpretations are not unified by the algebra, and the article does not claim that they are. The cone is a light cone only after the material sector is cut out; it is a state boundary only after the trace-one slice is taken. Read on the acting maps, the same partition is a monoid of processes: the units are the reversible maps, the zero divisors are the maps with a kernel, and the cone is where a process loses information. Which of the product, its reverse and the bracket is the physical composition is open.
 
 The orders are arithmetic, not dynamics. The finite unit groups are discrete symmetries, but the algebra does not say which of them a physical configuration realises, and the lattice spacing is external. The infinite unit group of the integral biquaternions is the algebraic trace of the null direction, not a derivation of a translation.
 
@@ -247,7 +267,7 @@ The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{N
 
 The group is open, dense, connected and of real dimension eight, with $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ and $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; the polar decomposition retracts it onto $\mathrm{U}(2)$, and $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$ and universal cover homotopy equivalent to $\mathbb{R}\times S^{3}$. The norm-one slice modulo the central sign is the frame space $SO^{+}(1,3)$. The cone is contractible, smooth off its apex, and its link is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_1=0$ and $\pi_2\cong\mathbb{Z}$; the apex is a genuine singularity.
 
-The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2T$, the finite subgroups of $S^{3}$, the $24$-cell, the McKay correspondence and the infinite unit group of the integral biquaternions. They are the discrete skeleton of the real sector. The algebra supplies the structures; the physical interpretations are reversible operations, a wall of reversibility, a state boundary, a frame space and a discrete symmetry, each with its boundary.
+The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2T$, the finite subgroups of $S^{3}$, the $24$-cell, the McKay correspondence and the infinite unit group of the integral biquaternions. They are the discrete skeleton of the real sector. The algebra supplies the structures; the physical interpretations are reversible operations, a wall of reversibility, a state boundary, a monoid of processes, a frame space and a discrete symmetry, each with its boundary.
 
 ## Summary of Notation
 

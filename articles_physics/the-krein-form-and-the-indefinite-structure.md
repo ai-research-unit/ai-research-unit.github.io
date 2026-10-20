@@ -233,7 +233,7 @@ The Krein cone is a cone of indefinite positivity and not a state space. It is n
 
 **The isometry group is the gauge group of the form, not the Lorentz group.** $\mathrm{U}(1,3)$ is the group that preserves the indefinite pairing of frames. The Lorentz group is the subgroup that preserves the material real slice. The gauge reading is a name for the invariance of the form; it is not a derivation of a gauge field.
 
-## Boundaries
+## Limits
 
 The article states the indefinite structure and no dynamics. It does not derive a gauge field, a connection, a curvature or a field strength; it does not claim that the physical gauge group is $\mathrm{U}(1,3)$; and it does not claim that the hyperbolic geometry is a model of physical space.
 

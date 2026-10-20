@@ -196,7 +196,32 @@ Each of the four maps preserves every remarkable subspace, so the involutions ac
 
 The orbit is the set of descriptions that the discrete operations produce from one element. Size one is the real line: the classical scale, on which no discrete operation acts. Size two is an element of the centre, of $\mathbb{H}_{\mathbb{B}}$ or of $\mathbb{M}_+$: one operation is invisible on it, so two of the four descriptions coincide. For a central element $z$ the pair is $z$ and $\bar z$. Size four is the generic element, and a generic material element is in this class: the four descriptions are distinct.
 
-**The boundary.** The size of the orbit is not the size of a multiplet, and it carries no statistics. The assignment of parity, time reversal and charge conjugation to three of the four sign patterns is a separate labelling, made in the articles that own the discrete symmetries; it is not a consequence of the group structure. The operation called charge conjugation is the twisted map $\bar A=\Pi A^{*}\Pi^{-1}$, not the reversal $\flat$, and the reversal carries the shape of the pairing rather than the operation. The group structure alone does not assign the physical names.
+**The boundary.** The size of the orbit is not the size of a multiplet, and it carries no statistics. The assignment of parity, time reversal and charge conjugation to three of the four sign patterns is a separate labelling, and it is not a consequence of the group structure. The next section states it.
+
+### The Klein Four Carries the Discrete Labels
+
+The four involutions act on the four coordinate blocks, and each block is a joint eigenspace of the group: every involution acts on it by a sign. The four sign patterns that arise are the four characters of the Klein four. The blocks are ordered $A_1,A_2,B_1,B_2$: the informational time, the material time, the material space and the informational space.
+
+| map | sign pattern $(A_1,A_2,B_1,B_2)$ | fixed space |
+| --- | --- | --- |
+| $1$ | $(+,+,+,+)$ | $\mathbb{B}$ |
+| $\bar{\cdot}$ | $(+,-,+,-)$ | $\mathbb{H}_{\mathbb{B}}$ |
+| ${}^{\natural}$ | $(+,+,-,-)$ | $\mathbb{C}_{\mathbb{B}}$ |
+| ${}^{*}$ | $(+,-,-,+)$ | $\mathbb{M}_+$ |
+| $\flat=-{}^{*}$ | $(-,+,+,-)$ | $\mathbb{M}_-$ |
+
+The first four rows are the group; the fifth is the fourth non-trivial sign pattern, the negative of ${}^{*}$, and it is not a group element. The labels are read on those four non-trivial sign patterns:
+
+- **Parity $P$ is ${}^{\natural}$.** It fixes both times and negates both spaces. On the material four-vector $ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it keeps the time and reverses the space. It is $\mathbb{C}$-linear, which is the algebraic form of the unitarity of parity.
+- **Time reversal $T$ is $\bar{\cdot}$.** On the material sector it negates the material time $A_2$ and fixes the material space $B_1$. It is antilinear, which is the algebraic form of the anti-unitarity of time reversal.
+- **The full reflection $PT$ is ${}^{*}$.** It negates the material time and the material space, so it sends $x^{\mu}\mapsto-x^{\mu}$.
+- **Charge conjugation is $\flat=-{}^{*}$.** It fixes the material sector and negates the informational one. It is a sign pattern and not a group element, which is the algebraic statement that $C$ does not join $\{1,P,T,PT\}$ as an independent factor but is the sign that turns $PT$ into its negative.
+
+**Three corrections belong with the table.** First, $\flat$ is the fourth non-trivial **sign pattern**, not a fourth conjugation: it differs from ${}^{*}$ by the central sign, and the group has four elements and not five. Second, $\flat$ carries the **shape** of the charge-conjugation pairing; the operation called charge conjugation is the twisted map $\bar A=\Pi A^{*}\Pi^{-1}$, whose module real structure is $\bar{\cdot}$, and the four levels of the name are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. Third, parity exchanges the two conjugate spinor modules $S$ and $\bar S$, so the character label and the chirality action are not independent.
+
+**The second dictionary.** The Clifford-algebra literature attaches the names to the same maps in the transpose order: with the generators $i\vec e_k$, the grade involution is $\bar{\cdot}$, the reversion is ${}^{*}$ and the Clifford conjugation is ${}^{\natural}$, so that dictionary reads $P=\bar{\cdot}$, $T={}^{*}$ and $PT={}^{\natural}$. Both dictionaries are labelled and neither is proved. The table is the fact; the naming is the interpretation, and the interpretation above is the one whose parity fixes time and negates space.
+
+**The boundary.** The assignment is a labelled speculation, not a theorem. It is offered because it makes the four characters carry four physical names and because the linearity of each map matches the linearity of the symmetry it names. It does not derive the discrete symmetries, their conservation or their violation.
 
 ### The Central Imaginary Is One Generator with Four Names
 
@@ -229,7 +254,7 @@ Two subspaces meet in the blocks they share, and each shared block is one physic
 
 The table lists one row for each of the four blocks; every other intersection is zero. The pattern is the dictionary's grammar. A shared vector block has dimension three: two descriptions agree on a space. A shared scalar block has dimension one: they agree on a time. An empty intersection means the two descriptions are complementary, and the decomposition they form is a decomposition of the whole algebra. The three decompositions are the three complementary pairs, and their sums are all of $\mathbb{B}$.
 
-**The boundary.** An intersection is a subspace of elements, not a set of physical objects. A shared time is one direction, not one clock reading; the two sectors carry different coordinates on it, $c t'$ and $i c t$.
+**The boundary.** An intersection is a subspace of elements, not a set of physical objects. A shared time is one direction, not one clock reading; the two sectors carry different coordinates on the central time plane, $c t'$ and $i c t$.
 
 ### The Area Pairing Marks the Complex Sectors
 
@@ -241,9 +266,17 @@ The physical reading is a division of labour. The area pairing is the **symplect
 
 **The boundary.** The vanishing statement concerns the **scalar-valued** alternating part of the form. The **vector-valued** antisymmetric half of the product is not zero on a physical sector; on the informational sector it is the coherence, and it has its own article. A sector without an area pairing is not a sector without an antisymmetric structure. The area pairing is a property of the restriction of a form; it does not add a dynamics.
 
+### The Relations Table Is an Index
+
+The intersection table says which two subspaces share a block. Read as an index, it answers a prior question: **where can a proposed interpretation be posed at all?** A composition needs a subspace on which the product closes; an observable needs a subspace on which the Hermitian form is real; a state needs a subspace on which positivity makes sense; a gauge generator needs a subspace on which the bracket closes. The table does not supply those structures; it says which subspace carries which.
+
+The three decompositions say which objects a change of frame acts on and which it keeps. Read together with the table, they give the grammar of the category: before asking what an object means, ask which subspace it lives in and which operation preserves that subspace. That is why the relations article is the reference table of the category, and why an interpretation that names a subspace without naming the operation that keeps it has not yet been posed.
+
+**The boundary.** The index is a statement of where a question is well posed, not an answer to it. A subspace that carries a product does not thereby carry a dynamics, and a subspace that carries a form does not thereby carry a measurement.
+
 ## Limits
 
-The article interprets the linear structure, the involutions and the real forms. It does not interpret the product, the cone, the topology or the analysis of the algebra; each belongs to another article of the category. The physical names are the coordinate dictionary of the corpus. The conventions article records which of them are forced and which are chosen, and the choice of the anti-Hermitian half as the material sector is a convention that the whole series inherits. The physical realisation of the informational sector is a hypothesis, stated and bounded in its own article.
+The article interprets the linear structure, the involutions and the real forms. It does not interpret the product, the cone, the topology or the analysis of the algebra; each belongs to another article of the category. The physical names are the coordinate dictionary of the corpus. The conventions article records which of them are forced and which are chosen, and the choice of the anti-Hermitian half as the material sector is a convention that the whole series inherits. The physical realisation of the informational sector is a hypothesis, stated and bounded in its own article. The discrete labels are a labelled speculation and add no theorem.
 
 ## Summary
 
@@ -254,6 +287,8 @@ The article interprets the linear structure, the involutions and the real forms.
 - The Lorentzian signature follows from the placement of $i$, not from an axiom.
 - The three decompositions are the three pairings of the four blocks, and there is no fourth.
 - The three involutions, with the identity, form a Klein four-group; they preserve every subspace and have orbits of size one, two or four.
+- The four sign patterns on the coordinate blocks are its four characters; parity, time reversal and $PT$ are three of them, and $\flat=-{}^{*}$ is the fourth non-trivial pattern, the shape of charge conjugation and not a group element.
+- The intersection table is an index of where an interpretation can be posed: the subspace names the object and the operation that preserves it names the question.
 - Multiplication by $i$ is one map with four names: global phase, duality rotation, Wick rotation and sector exchange.
 - The area pairing is non-degenerate exactly on the two complex sectors, of rank $2$ and rank $6$, and vanishes on the four others.
 

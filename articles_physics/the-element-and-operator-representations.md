@@ -211,7 +211,7 @@ A boost mixes time and space, a rotation does not; on the cone the operator coll
 
 The table is a dictionary, not a definition. Each row is proved in the mathematics article named in the first table; the physical reading of each row is owned by the sector articles, the state articles and the operator articles. The table's use is to prevent a result proved in one picture from being read in another without translation.
 
-## Boundaries
+## Limits
 
 The article states the correspondences and no dynamics. It does not derive the Lorentz transformation, the Dirac equation or the measurement update; it supplies the dictionary in which those derivations are written.
 

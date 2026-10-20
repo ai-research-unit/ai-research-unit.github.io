@@ -85,7 +85,7 @@ The kernel can also be structural rather than a constraint. The Bianchi identity
 
 The kernel can shrink or change. An anomaly is a current that is no longer in the kernel of the divergence at one loop, and its cancellation is a condition that keeps the kernel large enough. A Bogoliubov transformation with $v\neq0$ changes the annihilator itself, so the vacuum of one mode expansion is not annihilated by the operators of another, which is the algebraic shape of the Unruh and Hawking effects. The kernel is also band-dependent: for the native pairing the module complement and the Hilbert complement coincide, while the general plain algebra and sesqualgebra record the case in which they differ.
 
-## The Boundary
+## Limits
 
 An annihilator is a set of the algebra, not yet a measurement. The equation $\tilde Q\star\tilde Q_1=0$ is linear in the partner, and its solution set is a subspace; the identification of that subspace with the kernel of a physical process is a reading, and the process has to be named. The same plane can be a chiral kernel, a gauge kernel, a centraliser, a zero-mode space or a GNS null space, and the algebra alone does not decide which.
 

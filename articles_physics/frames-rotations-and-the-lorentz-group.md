@@ -236,7 +236,7 @@ There $\rho_v$ fixes $v^{\perp}$ pointwise, negates $v$, and has determinant $-1
 
 **The boundary of the interpretations.** The algebra's reflections are reflections of the vector subspace, not of spacetime; the spacetime parity and the chirality exchange are not elements of $\mathbb{B}$. The article does not supply a parity operator, a Dirac mass term or a chirality projection; it supplies the reflection formula and the representation statement on which those interpretations rest.
 
-## The Boundary
+## Limits
 
 The geometry of the algebra is the geometry of the norm and of its isometries. The unit group is eight-dimensional, the norm-one slice six-dimensional and the Lorentz group its six-dimensional quotient; the algebra carries the double cover, not the group. The sandwich is the action; the interval is the invariant; the product is preserved by a rotation and not by a boost. The orbits are the mass shells and the light cones; the reflections are odd and live outside the connected group.
 

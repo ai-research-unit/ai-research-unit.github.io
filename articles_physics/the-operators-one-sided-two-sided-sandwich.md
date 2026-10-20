@@ -90,7 +90,7 @@ $$
 
 The adjoint **swaps the sides and does not conjugate the parameter**. This is the property that separates it from the three other adjoints of the corpus: the Hermitian dagger keeps the side and conjugates the parameter, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$; the quaternionic adjoint keeps the side and conjugates by ${}^{\natural}$; and the signed Hermitian adjoint reverses the side and conjugates by the coefficientwise conjugation.
 
-The type criteria follow from the swap. A left multiplication is self-adjoint exactly when $R_{\tilde Q}=L_{\tilde Q}$, that is exactly when $\tilde Q$ is central. A nonzero one-sided operator is never skew-adjoint: $L_{\tilde Q}=-R_{\tilde Q}$ forces $\tilde Q=0$ by evaluating at $e_t$. A two-sided operator $L_{\tilde A}R_{\tilde B}$ is self-adjoint exactly when the two parameters are proportional over $\mathbb{C}$, and it is never skew-adjoint unless it is zero.
+The type criteria follow from the swap. A left multiplication is self-adjoint exactly when $R_{\tilde Q}=L_{\tilde Q}$, that is exactly when $\tilde Q$ is central. A nonzero one-sided operator is never skew-adjoint: $L_{\tilde Q}=-R_{\tilde Q}$ forces $\tilde Q=0$ by evaluating at $e_t$. A nonzero two-sided operator $L_{\tilde A}R_{\tilde B}$ is self-adjoint exactly when the two parameters are proportional over $\mathbb{C}$, and it is never skew-adjoint unless it is zero.
 
 The physical reading is the absence of orientation in the measuring pairing. The plain form pairs two displacements and returns a number; it does not know which factor is on the left. The orientation of a process is in the antisymmetric part $XY-YX$, the commutator, and not in the form. The form therefore measures the symmetric data and leaves the orientation to the commutator.
 
@@ -106,7 +106,7 @@ L_{\tilde A}R_{\tilde B}=\mathrm{id}
 \iff (\tilde A,\tilde B)=(\lambda e_t,\lambda^{-1}e_t),\quad \lambda\in\mathbb{C}^{\times}.
 $$
 
-More generally,
+For invertible parameters, more generally,
 
 $$
 L_{\tilde A}R_{\tilde B}=L_{\tilde C}R_{\tilde D}
@@ -143,6 +143,26 @@ so $\operatorname{H}_{\tilde Q}$ is self-adjoint iff $\tilde Q^{*}=\lambda\tilde
 
 On the null cone the sandwich survives as a rank-one map. Its image is the line spanned by $\tilde Q\tilde Q^{*}$, a Hermitian element whose normalisation is a minimal idempotent. If $Q_t=0$ the sandwich is nilpotent; if $Q_t\neq0$ it is a scaled projection. The two cases are the two faces of the cone: the absence of energy and the presence of a null momentum.
 
+### The Sandwich, the Inner Automorphism and the Scale
+
+The sandwich is an inner automorphism exactly on the **unitary slice**. When $\tilde Q\tilde Q^{*}=e_t$, the inverse is $\tilde Q^{*}$, and
+
+$$
+\operatorname{H}_{\tilde Q}(X)=\tilde Q X\tilde Q^{*}=\tilde Q X\tilde Q^{-1}
+$$
+
+is the inner automorphism $\operatorname{Ad}_{\tilde Q}$: it preserves the product, not only the interval. The Lorentz parameters are not this slice in general. They satisfy $\tilde Q\tilde Q^{\natural}=e_t$, and for a boost $\tilde Q^{*}=\tilde Q$ while $\tilde Q^{-1}=\tilde Q^{\natural}$, so the sandwich is a **congruence**, not a similarity. The two maps agree on the rotations, where the parameter is a real unit quaternion and $\tilde Q^{*}=\tilde Q^{\natural}=\tilde Q^{-1}$; they differ on the boosts, where $\tilde Q$ is Hermitian, $\tilde Q^{*}=\tilde Q$ and $\tilde Q^{-1}=\tilde Q^{\natural}$. The sandwich is then the congruence that acts on the four-vectors: the parameter $\exp(u i\vec e_z)$ produces the boost of rapidity $2u$.
+
+Off the unit-norm slice the sandwich is a congruence with a scale. The norm is multiplicative and the star conjugates it,
+
+$$
+N\bigl(\operatorname{H}_{\tilde Q}(X)\bigr)=N(\tilde Q)\,N(X)\,N(\tilde Q^{*})=|N(\tilde Q)|^{2}N(X).
+$$
+
+The scale is the squared modulus of the norm. On a four-momentum the norm is $-m^{2}c^{2}$, so the scale is $m^{4}c^{4}$; the mass is the modulus of the norm, not the scale. The phrase *the inner automorphism scaled by the norm* is exact on the unitary slice, where the scale is one and the map preserves the product. On the Lorentz slice the norm is one as well, but the map is a congruence: it preserves the interval and not the product.
+
+**The boundary.** The identification fails where $\tilde Q^{*}\neq\tilde Q^{-1}$. A Lorentz parameter satisfies the norm-one condition; a boost is not unitary, and it is the counterexample. The sandwich is always a congruence; it is a similarity only on the unitary slice.
+
 ## The Central Phase and the State Space
 
 A central phase acts as a scalar matrix on the element and as the identity on the sandwich:
@@ -172,6 +192,23 @@ $$
 so the right multiplication by $\vec\Upsilon_1$ maps the first column onto the second and annihilates the second. It is the off-diagonal block that the left regular matrix does not have.
 
 The physical reading is the mass coupling. The mass term of the biquaternionic Dirac equation is chirality-off-diagonal: it couples the left and right spinors. A left multiplication cannot do that; a right multiplication by the nilpotent can. The mass term is therefore a right action, and the algebraic reason is the block structure of the regular representation. The nilpotent is not a small parameter: it is exact, and its square is zero, so two mass couplings in the same direction vanish. The corpus reads the pair $\vec\Upsilon_1,\vec\Upsilon_2$ as the truncated ladder elements, with $\vec\Upsilon_1\vec\Upsilon_2=\tilde\Pi_+$ and $\vec\Upsilon_2\vec\Upsilon_1=\tilde\Pi_-$.
+
+### The Missing Rows of the Dictionary
+
+The worked examples cover the central dilation, the vector rotation by $\pi$ and the boost. Four further rows complete the dictionary; each is a reading of the same sandwich, not a new operator.
+
+| acting element | the sandwich | the reading |
+| --- | --- | --- |
+| $i\tilde Q_2$ with $\tilde Q_2$ real | the same sandwich as $\tilde Q_2$, with the same scale | the rotor with its phase frozen |
+| Hermitian of norm $-1$, e.g. $i\vec u$ with $\lvert\vec u\rvert=1$ | the rotation by $\pi$ about $\vec u$; the general case adds the polar boost | a boost composed with a $\pi$-rotation |
+| material $\tilde R$ | the same family as $\mathbb{M}_+$, through $i\tilde R$ | the four-vector action |
+| unit-norm slice | an isometry; it moves the ledger and leaves the phase alone | the frame change |
+
+The first row is exact because $i$ is central: $(i\tilde Q_2)^{*}=-i\tilde Q_2^{*}$, so the two factors $i$ cancel in the sandwich. The second row is the negative-norm Hermitian case: $\tilde Q=i\vec u$ has $N=-1$ and $\tilde Q^{2}=e_t$, so the sandwich is $i\vec u\,X\,i\vec u=-\vec u X\vec u=\vec u X\vec u^{-1}$, the rotation by $\pi$ about $\vec u$. The corpus reads the general negative-norm element as a boost composed with that rotation. The third row is the identity $\operatorname{H}_{i\tilde R}=\operatorname{H}_{\tilde R}$ for material $\tilde R$, because $(i\tilde R)^{*}=i\tilde R$; the material four-vector and its Hermitian representative $i\tilde R$ produce the same sandwich. The fourth row is the unit-norm slice: it is the isometry group, and it preserves the sector and the interval.
+
+The last two rows are why the temporal exchange and the material transformation theory are separate. Multiplication by the central $i$ exchanges the sectors and reverses the norm; a unit-norm sandwich preserves the sector and the norm. The central phase is invisible to the sandwich: the sandwich carries the modulus and not the argument. The two operations belong to different columns of the dictionary, and neither is a dynamics.
+
+**The boundary.** The rows are readings of one sandwich, not four new operators. The negative-norm row uses the Hermitian representative; a general negative-norm element is read through the polar decomposition. The phase-frozen row is exact for an imaginary quaternion, where the central phase is a global factor.
 
 ## The Monoid of Acting Maps
 
@@ -238,7 +275,7 @@ and the sandwich is the scaled projection $\operatorname{H}_{\tilde Q}^2=4\opera
 
 **A boost.** For $\tilde Q=\tfrac53e_t+\tfrac43 i\vec e_z$, of norm one, the sandwich has eigenvalues $9,1,1,\tfrac19$, determinant one and trace $\tfrac{100}{9}$. The parameter is Hermitian, so the sandwich is self-adjoint for the Hermitian form, and it is a Lorentz boost and not an observable. The example is the shortest warning that the algebraic type criterion and the physical classification are not the same statement.
 
-## Boundaries
+## Limits
 
 The article states the operator calculus of the general plain product and declares the other rows. It does not re-prove the composition laws, which belong to *The Monoid of Acting Maps*, and it does not re-read the sandwich on the remarkable subspaces, which belongs to *The Sandwich Action in Subspaces*.
 
@@ -261,6 +298,8 @@ The twelve structures are not one calculus. Only the general plain bilinear row 
 - The plain form measures the symmetric data; the orientation of a process is in the commutator.
 - A two-sided operator is a pair defined up to a common central factor; the identity is the pair $(\lambda e_t,\lambda^{-1}e_t)$.
 - The sandwich preserves the two sectors, is a congruence, and is self-adjoint for the Hermitian form exactly when a central-phase multiple of its parameter lies in $\mathbb{M}_+$ or $\mathbb{M}_-$ ($\tilde Q^{*}=\lambda\tilde Q$, $|\lambda|=1$).
+- The sandwich is an inner automorphism on the unitary slice; on the Lorentz slice it is a congruence, and off the unit-norm slice it scales the interval by $|N|^{2}$.
+- The dictionary has four further rows: the imaginary quaternion (phase frozen), the negative-norm element (boost with a $\pi$-rotation), the material sector (through $i\tilde R$), and the unit-norm slice (frame change).
 - On the null cone the sandwich collapses to a rank-one line; the nilpotent and the scaled projection are its two faces.
 - The central phase is invisible to the sandwich and visible to the norm; the scale is seen squared, not once.
 - Right multiplication by the nilpotent $\vec\Upsilon_x$ moves between the two chiralities; this is why the mass term is a right action.

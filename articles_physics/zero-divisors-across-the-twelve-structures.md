@@ -108,7 +108,7 @@ The cone is a **cone over its own directions**. On the material sector those dir
 
 The cone also carries the state-space metric. The biquaternion norm vanishes on the pure states, and the Fubini–Study metric is its second variation at a null direction. The cone is where the algebra's quadratic form stops measuring length at first order and measures it at second order, so the geometry of the state space is read off the cone rather than blocked by it. In the velocity space the lightlike elements are the ideal points of a hyperbolic geometry, and the unboundedness of rapidity is the geometric form of their non-invertibility.
 
-## The Boundary
+## Limits
 
 The cone is not yet the light cone. It is a complex cone of real dimension six, while the physical light cone is its cut by the material sector $\mathbb{M}_{-}$, where the element is $\tilde R=ict\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ and the norm is $-c^{2}t^{2}+x^{2}+y^{2}+z^{2}$. The metric enters only when the sector is cut out.
 

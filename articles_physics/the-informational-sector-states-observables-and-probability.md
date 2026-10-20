@@ -399,7 +399,7 @@ The article establishes the algebra of the sector and its interpretation as a tw
 
 - The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde Q=c t'\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$.
 - Its norm is indefinite of signature $(1,3)$; positivity is a condition on the eigenvalues, not on the norm.
-- The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are roots of $+1$ and zero divisors.
+- The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are the halvings of the roots of $+1$ and are zero divisors.
 - The trace-one slice is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
 - The Bloch ball is the trace-one slice of the future light cone of the norm; probability and causality share their boundary.
 - The spectral decomposition writes every observable as two eigenvalues times two orthogonal idempotents.
