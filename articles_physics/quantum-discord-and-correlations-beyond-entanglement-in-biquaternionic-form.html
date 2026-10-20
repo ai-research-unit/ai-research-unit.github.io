@@ -83,7 +83,7 @@ $$</p>
 \tilde{Ϛ}_{AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_\epsilon ,
 \qquad p_\epsilon\geq0, \quad \sum_\epsilon p_\epsilon = 1,
 $$</p>
-<p>are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ with $\tilde H_j = -\vec e_j\otimes\vec e_j \in \mathbb{M}_+^{\otimes 2}$. These are the readings of the plain form that pair the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.</p>
+<p>are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j^{*})$ with $\tilde H_j = -\vec e_j\otimes\vec e_j \in \mathbb{M}_+^{\otimes 2}$. These are the readings of the plain form that pair the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.</p>
 <h2 id="bipartite-states-and-their-mutual-information">Bipartite States and Their Mutual Information</h2>
 <h3 id="states-in-math12">States in $\mathbb{M}_+^{\otimes2}$</h3>
 <p>A two-qubit state is an element $\tilde{Ϛ}_{AB}\in\mathbb{M}_+^{\otimes2}$ with $\tilde{Ϛ}_{AB}\geq0$ and $\mathrm{Tr}(\tilde{Ϛ}_{AB}) = 1$, where the trace is the tensor trace $\mathrm{Tr} = \mathrm{Tr}_A\otimes\mathrm{Tr}_B$. The <strong>partial traces</strong> are defined by</p>
@@ -135,7 +135,7 @@ $$</p>
 \qquad
  e_t\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
 $$</p>
-<p>with outcomes of probability $p_\pm = \mathrm{Tr}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{AB}]$ and conditional states of $A$</p>
+<p>with outcomes of probability $p_\pm = 2\,\mathrm{Sc}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{AB}] = \operatorname{Tr}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{AB}]$, the trace being the final reading at normalisation and conditional states of $A$</p>
 <p>$$
 \tilde{Ϛ}_{A|\pm} = \frac{\mathrm{Tr}_B\bigl[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{AB}(e_t\otimes\tilde{\Pi}_{1,2})\bigr]}{p_\pm}.
 $$</p>
@@ -240,15 +240,15 @@ $$</p>
 <h2 id="discord-without-entanglement">Discord Without Entanglement</h2>
 <p>The example of the previous section is the point of the article, and it deserves to be stated in the framework's terms:</p>
 <blockquote>
-<p>In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive elements normalised by $\langle\tilde{Ϛ},e_t\otimes e_t\rangle=\tfrac14$ (trace one in the $4\times4$ image) that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.</p>
+<p>In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive elements normalised by $\langle\tilde{Ϛ},e_t\otimes e_t\rangle_{*}=\tfrac14$ (trace one in the $4\times4$ image) that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.</p>
 </blockquote>
-<p>The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ are the plain-form readings that pair the state with the three tensor-product observables $\tilde H_j = -\vec e_j\otimes\vec e_j$. The criterion is a property of the triple of plain-form readings; separability, entanglement, and discord of the family are all read off those three numbers.</p>
+<p>The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j^{*})$ are the plain-form readings that pair the state with the three tensor-product observables $\tilde H_j = -\vec e_j\otimes\vec e_j$. The criterion is a property of the triple of plain-form readings; separability, entanglement, and discord of the family are all read off those three numbers.</p>
 <p>The physical meaning is that entanglement is one kind of quantum correlation and discord is a broader one. A separable state can still be <strong>quantumly correlated</strong> in the sense that no measurement on one subsystem leaves the other in a state that, averaged over outcomes, accounts for the total mutual information. In the framework this is visible directly: the total correlation $I(A:B)$ is fixed by the spectrum of $\tilde{Ϛ}_{AB}$, i.e. by the three readings of the plain form $c_j$; the classical correlation $J(A|B)$ is fixed by the conditional states after a coordinate measurement; and the difference, the discord, is what no local measurement can reach.</p>
 <h2 id="what-the-framework-adds-and-what-it-does-not">What the Framework Adds and What It Does Not</h2>
 <p><strong>What it does.</strong></p>
 <ul>
 <li>It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the plain form, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.</li>
-<li>It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three readings of the plain form $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ with $\tilde H_j = -\vec e_j\otimes\vec e_j$.</li>
+<li>It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three readings of the plain form $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j^{*})$ with $\tilde H_j = -\vec e_j\otimes\vec e_j$.</li>
 <li>It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit biquaternion-norm statement.</li>
 <li>It exhibits a separable state with positive discord and verifies the separability criterion and the discord numerically.</li>
 </ul>
@@ -332,7 +332,7 @@ $$</p>
 <td>Quantum discord</td>
 </tr>
 <tr>
-<td>$c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$</td>
+<td>$c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j^{*})$</td>
 <td>Correlation coefficients</td>
 </tr>
 <tr>

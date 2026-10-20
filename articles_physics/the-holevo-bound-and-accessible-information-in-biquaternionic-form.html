@@ -68,7 +68,7 @@
         <h1 id="the-holevo-bound-and-accessible-information-in-biquaternionic-form"><strong>The Holevo Bound and Accessible Information in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A quantum source produces a state drawn from an ensemble. The receiver may perform any measurement the algebra admits, and from the outcome tries to recover the index of the state that was sent. How much of the source's classical information can be extracted in this way is the <strong>accessible information</strong> of the ensemble, and its universal upper bound is the <strong>Holevo bound</strong>. This article develops both in the biquaternion language of the informational sector.</p>
-<p>The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive elements $\tilde{Ϛ}_x$ normalised by $\langle\tilde{Ϛ}_x,e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_y$ summing to the identity, the <strong>POVM</strong> developed in the companion article on the positive cone. The outcome probabilities are the normalised plain form, read as the trace pairing,</p>
+<p>The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive elements $\tilde{Ϛ}_x$ normalised by $\langle\tilde{Ϛ}_x,e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_y$ summing to the identity, the <strong>POVM</strong> developed in the companion article on the positive cone. The outcome probabilities are the normalised Hermitian form, read through the trace,</p>
 <p>$$
 p(y|x) = \mathrm{Tr}\bigl(\tilde{Ϛ}_x\tilde{E}_y\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_x\tilde{E}_y\bigr),
 $$</p>
@@ -105,8 +105,8 @@ $$</p>
 <p>$$
 \tilde{E}_y \geq 0, \qquad \sum_y \tilde{E}_y = e_t ,
 $$</p>
-<p>each of which is an <strong>effect</strong>, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{Ϛ}_x$ is the normalised plain form, read as the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y_2} = \delta_{yy_2}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.</p>
-<p>For every measurement, the outcome distribution is $p_y = \sum_x p_x p(y|x) = \mathrm{Tr}(\tilde{Ϛ}^{\natural}\tilde{E}_y)$, so the average state determines the marginal statistics. This is the reason the average state, and not the individual members, controls the first-order behaviour of the ensemble.</p>
+<p>each of which is an <strong>effect</strong>, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{Ϛ}_x$ is the normalised Hermitian form, $p(y|x)=\langle\tilde{Ϛ}_x,\tilde E_y\rangle_{*}/\langle\tilde{Ϛ}_x,e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_x\tilde E_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_x)$; on $\mathbb{M}_+$ this is the plain scalar $\mathrm{Sc}(\tilde{Ϛ}_x\tilde E_y)/\mathrm{Sc}(\tilde{Ϛ}_x)$, and in the $2\times2$ image, with $\operatorname{Tr}(\tilde{Ϛ}_x)=1$, it is $p(y|x)=\operatorname{Tr}(\tilde{Ϛ}_x\tilde E_y)$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative. Positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \operatorname{Tr}(\tilde{Ϛ}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y_2} = \delta_{yy_2}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.</p>
+<p>For every measurement, the outcome distribution is $p_y = \sum_x p_x p(y|x) = \langle\tilde{Ϛ}^{\natural},\tilde E_y\rangle_{*}/\langle\tilde{Ϛ}^{\natural},e_t\rangle_{*}=\operatorname{Tr}(\tilde{Ϛ}^{\natural}\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}^{\natural}\tilde{E}_y)$, the trace being the final reading at normalisation, so the average state determines the marginal statistics. This is the reason the average state, and not the individual members, controls the first-order behaviour of the ensemble.</p>
 <h3 id="the-accessible-information">The accessible information</h3>
 <p>Treat the ensemble index $X$ and the outcome $Y$ as classical random variables, with joint distribution $p(x,y) = p_x\,p(y|x)$. The <strong>accessible information</strong> is the mutual information maximized over all measurements,</p>
 <p>$$
@@ -134,7 +134,7 @@ $$</p>
 <h3 id="the-entropy-of-the-classical-quantum-state">The entropy of the classical-quantum state</h3>
 <p>The Holevo quantity is the quantum mutual information of a state that records the source index classically. Introduce an orthonormal register $\{|x\rangle\}$ and form</p>
 <p>$$
-\rho_{XQ} = \sum_x p_x\,|x\rangle\langle x| \otimes \tilde{Ϛ}_x .
+\rho_{XQ} = \sum_x p_x\,|x\rangle_{*}\langle x| \otimes \tilde{Ϛ}_x .
 $$</p>
 <p>This is a <strong>classical-quantum state</strong>: block diagonal in the register, with the quantum states on the diagonal. Its entropies are</p>
 <p>$$
@@ -277,7 +277,7 @@ $$</p>
 <p><strong>4. Continuity and the infinite ensemble.</strong> The bounds and the saturation arguments assume a finite ensemble. The extension to continuous ensembles, and the algebraic meaning of the measure on $\mathbb{M}_+$, is open.</p>
 <p><strong>5. Empirical content.</strong> The Holevo form in the framework is the standard bound transcribed; it predicts nothing new.</p>
 <h2 id="summary">Summary</h2>
-<p>An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the normalised plain form, read as the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is</p>
+<p>An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the normalised Hermitian form, read through the trace $p(y|x) = \operatorname{Tr}(\tilde{Ϛ}_x\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is</p>
 <p>$$
 \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x),
 $$</p>
@@ -320,7 +320,7 @@ $$</p>
 <td>POVM (effects)</td>
 </tr>
 <tr>
-<td>$p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y) = 2\,\mathrm{Sc}(\tilde{Ϛ}_x\tilde{E}_y)$</td>
+<td>$p(y|x) = \operatorname{Tr}(\tilde{Ϛ}_x\tilde{E}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}_x\tilde{E}_y) = 2\,\mathrm{Sc}(\tilde{Ϛ}_x\tilde{E}_y^{*})$</td>
 <td>Outcome probability (Born rule)</td>
 </tr>
 <tr>
@@ -348,7 +348,7 @@ $$</p>
 <td>Holevo quantity as a biquaternion-norm function</td>
 </tr>
 <tr>
-<td>$\rho_{XQ} = \sum_x p_x|x\rangle\langle x|\otimes\tilde{Ϛ}_x$</td>
+<td>$\rho_{XQ} = \sum_x p_x|x\rangle_{*}\langle x|\otimes\tilde{Ϛ}_x$</td>
 <td>Classical-quantum state, $I(X:Q)=\chi$</td>
 </tr>
 <tr>
@@ -356,7 +356,7 @@ $$</p>
 <td>Holevo bound and qubit ceiling</td>
 </tr>
 <tr>
-<td>$c = |\langle\psi_0|\psi_1\rangle|$</td>
+<td>$c = |\langle\psi_0|\psi_1\rangle_{*}|$</td>
 <td>Overlap of two pure states</td>
 </tr>
 <tr>
@@ -374,7 +374,7 @@ $$</p>
 <li>C. A. Fuchs, "Distinguishability and accessible information in quantum theory," Ph.D. thesis, University of New Mexico (1996), for the accessible information of two pure states and the role of the square-root measurement.</li>
 <li>A. Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for POVMs and the operational meaning of the outcome probabilities.</li>
 <li>T. M. Cover and J. A. Thomas, <em>Elements of Information Theory</em> (Wiley, 2006), for the classical mutual information and the Shannon entropy.</li>
-<li>The companion articles of this series: <em>Quantum Physics in Biquaternionic Form</em>, <em>The Born Rule from the Plain Form — Derivation and Comparison</em>, <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and <em>Entangled Subsystems in the Biquaternion Framework</em>.</li>
+<li>The companion articles of this series: <em>Quantum Physics in Biquaternionic Form</em>, <em>The Born Rule from the Hermitian Form — Derivation and Comparison</em>, <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and <em>Entangled Subsystems in the Biquaternion Framework</em>.</li>
 </ul>
       </div>
     </main>

@@ -132,14 +132,15 @@ $$</p>
 $$</p>
 <p>with $\vec u_x = \sin\theta_1\, \vec e_x + \cos\theta_1\, \vec e_z$ and $\vec u_y = \sin\theta_2\, \vec e_x + \cos\theta_2\, \vec e_z$ as unit pure real quaternions.</p>
 <h3 id="step-3-the-joint-probability_1">Step 3: The joint probability</h3>
-<p>The joint probability of the two measurements both yielding spin-up is the product of the two trace formulas:</p>
+<p>The joint probability of the two measurements both yielding spin-up is the product of the two normalised Hermitian forms, each with its trace reading taken last:</p>
 <p>$$
-p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) \cdot \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right).
+p(+,+) = \frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\vec u_y},\tilde\Pi_{\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\vec u_x},e_t\rangle_{*}}.
 $$</p>
 <p><strong>First factor.</strong> From Exercise: Measuring Spin Along an Arbitrary Direction, the first factor is</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) = 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) = \cos^2(\theta_1/2).
+\frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) = \cos^2(\theta_1/2),
 $$</p>
+<p>whose trace reading is $\operatorname{Tr}(\tilde\Pi_{\vec u_x}\circ\tilde\Pi_z)=2\,\mathrm{Sc}(\tilde\Pi_{\vec u_x}\circ\tilde\Pi_z)$.</p>
 <p><strong>Second factor.</strong> Computing the product $\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}$,</p>
 <p>$$
 \tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x} = \tfrac{1}{4}\left(e_t + i\vec u_y\right)\left(e_t + i\vec u_x\right) = \tfrac{1}{4}\left[e_t + i\vec u_x + i\vec u_y - \vec u_y \vec u_x\right].
@@ -150,11 +151,13 @@ $$</p>
 $$</p>
 <p>The scalar part (coefficient of $e_t$) is $\tfrac{1}{4}(1 + \vec u_y \cdot \vec u_x)$; the other terms $i\vec u_x$, $i\vec u_y$, and $\vec u_y \times \vec u_x$ are vector terms with vanishing coefficient of $e_t$. Therefore</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right).
+2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right),
+
+whose trace reading is $\operatorname{Tr}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})=2\,\mathrm{Sc}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})$.
 $$</p>
 <p>Since both $\vec u_x$ and $\vec u_y$ lie in the $xz$-plane, the scalar product is $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, and the second factor is</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
+2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
 $$</p>
 <h3 id="step-4-the-result_1">Step 4: The result</h3>
 <p>Multiplying the two factors,</p>
@@ -185,11 +188,11 @@ $$</p>
 <p>Measuring $z$ first leaves the state unchanged (it is already spin-up along $z$), and then measuring $x$ gives $+$ with probability $1/2$.</p>
 <p>These agree with the physical expectation: a measurement along a direction $\vec u$ destroys the previous information about the spin along any non-parallel direction, and the information about parallel directions is preserved.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
-<p><strong>1. The trace formula applies to successive measurements.</strong> The joint probability of two successive measurements is a <strong>product of two trace formulas</strong>:</p>
+<p><strong>1. The normalised Hermitian form applies to successive measurements.</strong> The joint probability of two successive measurements is a <strong>product of two normalised Hermitian forms</strong>, each read through the trace last:</p>
 <p>$$
-p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) \cdot \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right).
+p(+,+) = \frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\vec u_y},\tilde\Pi_{\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\vec u_x},e_t\rangle_{*}}.
 $$</p>
-<p>The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same plain form on $\mathbb{M}_+$, read as the trace pairing.</p>
+<p>The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same Hermitian form on $\mathbb{M}_+$, whose trace reading is the final step at normalisation.</p>
 <p><strong>2. Measurement is a projection onto an idempotent.</strong> After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a <strong>change of the idempotent</strong>: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.</p>
 <p><strong>3. The overlap of two idempotents is their scalar product.</strong> The trace $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \vec u_y \cdot \vec u_x)$, which depends only on the angle between the directions $\vec u_x$ and $\vec u_y$. This is the biquaternion expression of the transition probability between two spin states.</p>
 <p><strong>4. The geometry enters through the algebra.</strong> The angle between the measurement directions enters through the scalar product $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\vec u_y \vec u_x$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.</p>
@@ -236,7 +239,7 @@ $$</p>
 <p>We have solved a third exercise in quantum physics — the joint probability of two successive spin measurements along different directions — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.</p>
 <p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotents $\tilde\Pi_z, \tilde\Pi_{\vec u_x}, \tilde\Pi_{\vec u_y}$ and the product of the two trace formulas $\mathrm{Tr}(\tilde\Pi_{\vec u_x}\circ \tilde\Pi_z)\mathrm{Tr}(\tilde\Pi_{\vec u_y}\circ \tilde\Pi_{\vec u_x})$, giving the same result.</p>
-<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their normalised plain form, read as the trace pairing, and the joint probability is the product of the trace formulas.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their normalised Hermitian form, read through the trace, and the joint probability is the product of the trace formulas.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

@@ -67,10 +67,10 @@
       <div class="article-body">
         <h1 id="the-relativistic-qubit-in-biquaternionic-form"><strong>The Relativistic Qubit in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The elementary carrier of information in this framework is the qubit, and the qubit is not postulated: it is the defining module of the algebra. An algebra isomorphic to $M_2(\mathbb{C})$ has exactly one simple left module, the column space $S = \mathbb{C}^2$, and the rank-one projectors on $S$ correspond exactly to the trace-one idempotents of the Hermitian sector $\mathbb{M}_+$. The state vectors are elements of $S$, the states in the statistical sense are positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), and the two are related by the rank-one correspondence. What turns this qubit into a <strong>relativistic</strong> qubit is not a new carrier; it is the action on the carrier. The algebra's unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group, and they act on $S$ by left multiplication. The qubit's symmetry group is therefore the Lorentz group, not the unitary group, and the consequences of that fact are the subject of this article.</p>
+<p>The elementary carrier of information in this framework is the qubit, and the qubit is not postulated: it is the defining module of the algebra. An algebra isomorphic to $M_2(\mathbb{C})$ has exactly one simple left module, the column space $S = \mathbb{C}^2$, and the rank-one projectors on $S$ correspond exactly to the trace-one idempotents of the Hermitian sector $\mathbb{M}_+$. The state vectors are elements of $S$, the states in the statistical sense are positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and the two are related by the rank-one correspondence. What turns this qubit into a <strong>relativistic</strong> qubit is not a new carrier; it is the action on the carrier. The algebra's unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group, and they act on $S$ by left multiplication. The qubit's symmetry group is therefore the Lorentz group, not the unitary group, and the consequences of that fact are the subject of this article.</p>
 <p>Three features distinguish the relativistic qubit from the non-relativistic one, and the article is organised around them. First, the left action of $SL(2,\mathbb{C})$ on $S$ is <strong>not unitary</strong>: it preserves the algebra's biquaternion norm but not the Hilbert-space norm of a spinor, so the state space of the qubit is invariant only under the compact subgroup $SU(2)$. Second, the pure states — the rays of $S$ — are the <strong>celestial sphere</strong>: the ratio of the two spinor components is a complex coordinate on $\mathbb{CP}^1$, the Lorentz group acts on it by Möbius transformations, and each ray determines a <strong>future null four-vector</strong> in the material sector $\mathbb{M}_-$, so that the pure informational states have a light-like geometric image. Third, the physically meaningful spin transformation at definite momentum is not the module action at all but the <strong>little-group Wigner rotation</strong>, a unitary element of $SU(2)$ that acts on the rest-frame qubit by a Bloch-sphere rotation; the non-unitary module action and the unitary physical rotation are two different objects, and keeping them apart is the main technical point of the article.</p>
 <p>The article proceeds as follows. The carrier and its states are recalled. The Lorentz action on the carrier is set out, and its non-unitarity is derived. The pure states are identified with the celestial sphere, and the null-vector map is constructed and shown to intertwine the spinor action with the four-vector action. The mixed states and the little group are treated next, with the little group derived as the stabilizer of the four-velocity and the Wigner rotation defined algebraically. The two sectors are then read on the qubit's observables and generators, and the article closes with a summary.</p>
-<p>The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, central scalar $i$ with $i^2 = -1$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation ${}^{*}$, and biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The matrix model is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $e_t\mapsto I_2$, $\vec e_k\mapsto -i\sigma_k$, $i\mapsto iI_2$. The spinor module is $S = \mathbb{C}^2$ with the left action $\rho_S(\tilde{Q})|u\rangle = \mathsf{M}_2(\tilde{Q})|u\rangle$. The Hermitian sector is $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$.</p>
+<p>The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, central scalar $i$ with $i^2 = -1$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian conjugation ${}^{*}$, and biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The matrix model is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $e_t\mapsto I_2$, $\vec e_k\mapsto -i\sigma_k$, $i\mapsto iI_2$. The spinor module is $S = \mathbb{C}^2$ with the left action $\rho_S(\tilde{Q})|u\rangle_{*} = \mathsf{M}_2(\tilde{Q})|u\rangle$. The Hermitian sector is $\mathbb{M}_+$ and the anti-Hermitian sector $\mathbb{M}_-$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, for the defining module, its irreducibility, and the state correspondence.
 - Companion article <em>Quantum Physics in Biquaternionic Form</em>, for the Hermitian sector, the idempotents, the Bloch ball, and the conjugation action.
@@ -84,9 +84,9 @@ $$
 S = \mathbb{C}^2, \qquad \rho_S(\tilde{Q})\,|u\rangle = \mathsf{M}_2(\tilde{Q})\,|u\rangle .
 $$
 It is the unique simple left $\mathbb{B}$-module up to isomorphism; it is complex two-dimensional; and every non-zero spinor is cyclic, so $S$ has no non-trivial submodules. The algebra's left regular module is two copies of it, $\mathbb{B}\cong S\oplus S$, which is the algebraic origin of the two-component spinor structure.</p>
-<p>Two objects must be kept apart throughout. A <strong>state vector</strong> is an element $|u\rangle\in S$; a <strong>state</strong> in the statistical sense is a positive element $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), i.e. an operator on $S$. The correspondence between them is the rank-one map
+<p>Two objects must be kept apart throughout. A <strong>state vector</strong> is an element $|u\rangle\in S$; a <strong>state</strong> in the statistical sense is a positive element $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), i.e. an operator on $S$. The correspondence between them is the rank-one map
 $$
-|u\rangle \ \longleftrightarrow\ \tilde\Pi(u) = \frac{|u\rangle\langle u|}{\langle u|u\rangle} = \mathsf{M}_2^{-1}\!\left(\frac{|u\rangle\langle u|}{\langle u|u\rangle}\right)\in\mathbb{M}_+ ,
+|u\rangle_{*} \ \longleftrightarrow\ \tilde\Pi(u) = \frac{|u\rangle\langle u|}{\langle u|u\rangle} = \mathsf{M}_2^{-1}\!\left(\frac{|u\rangle\langle u|}{\langle u|u\rangle}\right)\in\mathbb{M}_+ ,
 $$
 and it is the ordinary relation between a ket and a density operator. A general state is
 $$
@@ -96,15 +96,15 @@ so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are it
 $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1,
 $$
-and for a Hermitian observable $\tilde H = h_t e_t + i\vec h$ the Born pairing is $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = h_t + \vec r\cdot\vec h$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.</p>
+and for a Hermitian observable $\tilde H = h_t e_t + i\vec h$ the Born pairing is $\langle\tilde{Ϛ},\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*})/\mathrm{Sc}(\tilde{Ϛ}) = h_t + \vec r\cdot\vec h$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\tilde{H}^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)/\operatorname{Tr}(\tilde{Ϛ})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real, and non-negative when $\tilde H\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.</p>
 <h3 id="why-the-carrier-is-forced">Why the carrier is forced</h3>
 <p>The statement is exact and is worth one paragraph, because it is what makes the relativistic qubit a question about the algebra rather than about a choice. The algebra is simple and central, so by the classification of modules over a full matrix algebra it has exactly one irreducible representation, and that representation is on the column space $S$. There is no second two-dimensional carrier, no one-dimensional carrier, and no three-dimensional one. The qubit is therefore the elementary carrier the algebra has, and any relativistic structure the framework can carry must be an action on this carrier rather than a replacement for it. The remainder of the article is the study of that action.</p>
 <h2 id="the-lorentz-action-on-the-carrier">The Lorentz Action on the Carrier</h2>
 <h3 id="the-two-actions-of-the-unit-norm-group">The two actions of the unit-norm group</h3>
-<p>A unit-norm biquaternion is a Lorentz rotor. The general Lorentz rotor is $\tilde U_{\mathrm L}$; its two elementary forms are the boost and the rotation,
+<p>A unit-norm biquaternion is a Lorentz rotor. The general Lorentz rotor is $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; its two factors are the boost and the rotation,
 $$
-\tilde U_{\mathrm L} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \quad(\text{boost}), \qquad
-\tilde u = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_{\mathrm r} \quad(\text{rotation}),
+\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b} \quad(\text{boost}), \qquad
+\tilde u_{\mathrm r} = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_{\mathrm r} \quad(\text{rotation}),
 $$
 and the unit-norm condition is $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$, hence $\tilde U_{\mathrm L}^{-1} = \tilde U_{\mathrm L}^{\natural}$, so the unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. The same element acts on the two sectors by different formulas:</p>
 <p><strong>On the module</strong>, by left multiplication,
@@ -136,9 +136,9 @@ which is the unitarity condition. Among the unit-norm elements, $\tilde U_{\math
 $$
 \text{the spinor norm is preserved by } SU(2) \text{ and by no other subgroup of } SL(2,\mathbb{C}).
 $$
-A boost fails the condition maximally: for $\tilde U_{\mathrm L}$ Hermitian one has $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L} = \tilde U_{\mathrm L}^2 = e_t + i\sinh\psi\,\vec u_{\mathrm b}$, so
+A boost fails the condition maximally: for $\tilde U_{\mathrm b}$ Hermitian one has $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b} = \tilde U_{\mathrm b}^2 = e_t + i\sinh\psi\,\vec u_{\mathrm b}$, so
 $$
-\langle\tilde U_{\mathrm L}u|\tilde U_{\mathrm L}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\vec u_{\mathrm b}|u\rangle \neq \langle u|u\rangle .
+\langle\tilde U_{\mathrm b}u|\tilde U_{\mathrm b}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\vec u_{\mathrm b}|u\rangle \neq \langle u|u\rangle .
 $$
 The norm is scaled by a positive factor rather than rotated, so the ray is preserved but the normalization is not.</p>
 <p>The state space is the boundary of the Bloch ball, and this computation says that a boost does not preserve it: only the compact subgroup $SU(2)$ acts on the pure states as a symmetry. The Lorentz group acts on the carrier, but the carrier's Hilbert-space geometry is not Lorentz invariant. That is the first relativistic feature of the qubit, and it is the origin of the distinction between the module action and the physical spin transformation drawn below.</p>
@@ -178,7 +178,7 @@ $$
 Two elementary facts identify $\tilde{\mathcal L}$ as a future null four-vector.</p>
 <p><strong>It is null.</strong> The determinant of a rank-one matrix vanishes, and under the matrix model the determinant is the biquaternion norm, so
 $$
-N\bigl(\tilde\Pi(u)\bigr) = \det\mathsf{M}_2\bigl(\tilde\Pi(u)\bigr) = \det\bigl(|u\rangle\langle u|\bigr) = 0 ,
+N\bigl(\tilde\Pi(u)\bigr) = \det\mathsf{M}_2\bigl(\tilde\Pi(u)\bigr) = \det\bigl(|u\rangle_{*}\langle u|\bigr) = 0 ,
 \qquad
 N\bigl(\tilde{\mathcal L}(u)\bigr) = i^2 N\bigl(\tilde\Pi(u)\bigr) = 0 .
 $$</p>
@@ -194,15 +194,15 @@ The map takes a pure state of the informational sector to the unit-length future
 <p><strong>It is equivariant.</strong> The map intertwines the spinor action with the four-vector action,
 $$
 \tilde{\mathcal L}\bigl(\tilde U_{\mathrm L}u\bigr)
-= i\,\mathsf{M}_2^{-1}\!\bigl(\mathsf{M}_2(\tilde U_{\mathrm L})|u\rangle\langle u|\mathsf{M}_2(\tilde U_{\mathrm L})^\dagger\bigr)
+= i\,\mathsf{M}_2^{-1}\!\bigl(\mathsf{M}_2(\tilde U_{\mathrm L})|u\rangle_{*}\langle u|\mathsf{M}_2(\tilde U_{\mathrm L})^\dagger\bigr)
 = \tilde U_{\mathrm L}\,\tilde{\mathcal L}(u)\,\tilde U_{\mathrm L}^{*} ,
 $$
 which is the statement that the diagram of the two actions commutes: the informational ray and its material null direction are carried by the same Lorentz transformation. The verification is the associativity of the matrix product together with $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \mathsf{M}_2(\tilde U_{\mathrm L})^\dagger$.</p>
 <h3 id="the-material-image-of-an-informational-state">The material image of an informational state</h3>
 <p>The null-vector map gives the relativistic qubit a geometric face and is the precise sense in which the two sectors of the structural companion are linked at the level of a single state. A pure spinor state <em>is</em> a light direction; the material sector receives an image of the informational state, and the image transforms covariantly. The correspondence is the biquaternion form of the standard spinor–helicity construction, in which a two-component Weyl spinor is the square root of a null momentum, and the celestial sphere of the pure states is the sphere of null directions. It is worth noting what the map is not: it is defined for pure states, it takes the ray and not the spinor (the two spinors $\pm|u\rangle$ give the same $\tilde{\mathcal L}$), and it carries no information about the normalization, which the boost changes. For mixed states there is no analogous map, because the element $i\tilde{Ϛ}$ of $\mathbb{M}_-$ is not null except on the boundary, and the natural invariant of a mixed state is $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)\geq0$, which measures the distance from the pure boundary rather than a direction.</p>
-<p><strong>A worked instance.</strong> Take the spin-up state along $z$, $|u\rangle = (1,0)^{\mathsf T}$, and boost along $x$ with rapidity $\psi = 0.6$. The spinor becomes
+<p><strong>A worked instance.</strong> Take the spin-up state along $z$, $|u\rangle_{*} = (1,0)^{\mathsf T}$, and boost along $x$ with rapidity $\psi = 0.6$. The spinor becomes
 $$
-\tilde U_{\mathrm L}|u\rangle = \bigl(\cosh 0.3,\ \sinh 0.3\bigr)^{\mathsf T} = \bigl(1.04534,\ 0.30452\bigr)^{\mathsf T},
+\tilde U_{\mathrm b}|u\rangle = \bigl(\cosh 0.3,\ \sinh 0.3\bigr)^{\mathsf T} = \bigl(1.04534,\ 0.30452\bigr)^{\mathsf T},
 $$
 whose norm is $1.34986 = \exp(0.3)$, not $1$: the boost has scaled the spinor, as the non-unitarity computation predicts. The ray, however, has moved, and the Bloch vector of the normalized state is
 $$
@@ -224,7 +224,7 @@ This has the right formal properties — it preserves Hermiticity and the inerti
 $$
 \tilde U_{\mathrm L}\,\tfrac12 e_t\,\tilde U_{\mathrm L}^{*} = \tfrac12\tilde U_{\mathrm L}^2 ,
 \qquad
-\mathrm{Tr}\bigl(\tilde U_{\mathrm L}\tfrac12 e_t\tilde U_{\mathrm L}^{*}\bigr) = \cosh\psi \neq 1 ,
+\mathrm{Tr}\bigl(\tilde U_{\mathrm b}\tfrac12 e_t\tilde U_{\mathrm b}^{*}\bigr) = \cosh\psi \neq 1 ,
 $$
 and after normalizing, the centre of the Bloch ball is carried to the point
 $$
@@ -281,7 +281,7 @@ which preserves the trace, the Hermiticity, the positivity, and — because it i
 $$
 \tilde{S}_k = \frac{\hbar}{2}\,i \vec e_k , \qquad [\tilde{S}_j,\tilde{S}_k] = i\hbar\,\epsilon_{jkl}\tilde{S}_l ,
 $$
-and the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. The four-momentum is the material element $\tilde{P} = m\tilde{V}\in\mathbb{M}_-$, with $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$; it is not an observable but the frame datum that labels which little-group qubit is in question.</p>
+and the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})$. The four-momentum is the material element $\tilde{P} = m\tilde{V}\in\mathbb{M}_-$, with $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$; it is not an observable but the frame datum that labels which little-group qubit is in question.</p>
 <p><strong>Generators.</strong> The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements, the pure vectors
 $$
 \tfrac12 \vec e_k\in\mathbb{M}_-^{0},
@@ -292,10 +292,10 @@ $$
 $$
 and $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$: the commutator of two boosts is a rotation. The relativistic qubit's <em>observables</em> are the Hermitian elements of $\mathbb{M}_+$ and its <em>frame generators</em> are the Hermitian traceless elements of the same sector, while its <em>rotations</em> — the compact operations and the material generators — lie in $\mathbb{M}_-$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.</p>
 <h2 id="summary">Summary</h2>
-<p>The relativistic qubit is the defining module $S$ of $\mathbb{B}$ with the left action of the unit-norm group $SL(2,\mathbb{C})$, together with the little-group structure that the action induces at fixed four-velocity. Its state vectors are the spinors, its states are the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), and its pure states are the rays, i.e. the points of $\mathbb{CP}^1$, on which the Lorentz group acts by Möbius transformations with $PSL(2,\mathbb{C})\cong SO^+(1,3)$.</p>
+<p>The relativistic qubit is the defining module $S$ of $\mathbb{B}$ with the left action of the unit-norm group $SL(2,\mathbb{C})$, together with the little-group structure that the action induces at fixed four-velocity. Its state vectors are the spinors, its states are the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and its pure states are the rays, i.e. the points of $\mathbb{CP}^1$, on which the Lorentz group acts by Möbius transformations with $PSL(2,\mathbb{C})\cong SO^+(1,3)$.</p>
 <p>The left action is not unitary. The spinor norm is preserved if and only if $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L} = e_t$, which selects $SU(2)$ inside $SL(2,\mathbb{C})$; a boost scales the norm and leaves the ray transformed by a Möbius map. Each pure state determines a future null four-vector
 $$
-\tilde{\mathcal L}(u) = i\,\mathsf{M}_2^{-1}\bigl(|u\rangle\langle u|\bigr) = \tfrac{i}{2}e_t - \tfrac12\vec r, \qquad \langle\tilde{\mathcal L}\rangle_{\natural} = 0, \qquad \tilde{\mathcal L}(\tilde U_{\mathrm L}u) = \tilde U_{\mathrm L}\tilde{\mathcal L}(u)\tilde U_{\mathrm L}^{*} ,
+\tilde{\mathcal L}(u) = i\,\mathsf{M}_2^{-1}\bigl(|u\rangle_{*}\langle u|\bigr) = \tfrac{i}{2}e_t - \tfrac12\vec r, \qquad \langle\tilde{\mathcal L}\rangle_{\natural} = 0, \qquad \tilde{\mathcal L}(\tilde U_{\mathrm L}u) = \tilde U_{\mathrm L}\tilde{\mathcal L}(u)\tilde U_{\mathrm L}^{*} ,
 $$
 so the informational ray and its material null direction are carried by the same Lorentz transformation; the pure-state Bloch sphere is the celestial sphere, with the spatial direction of the null vector opposite the Bloch direction. The map exists for pure states only.</p>
 <p>The physical spin state at definite four-velocity transforms not by the non-unitary congruence but by the little-group <strong>Wigner rotation</strong>

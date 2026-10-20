@@ -67,7 +67,7 @@
       <div class="article-body">
         <h1 id="quantum-gates-and-circuits-in-biquaternionic-form"><strong>Quantum Gates and Circuits in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A quantum gate is a reversible operation on a quantum state. In the biquaternion framework the state of a qubit is an element of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, namely a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) with Bloch vector $\vec r$.</p>
+<p>A quantum gate is a reversible operation on a quantum state. In the biquaternion framework the state of a qubit is an element of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, namely a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) with Bloch vector $\vec r$.</p>
 <p>$$
 \tilde{Ϛ} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3,
 $$</p>
@@ -81,7 +81,7 @@ $$</p>
 <p>First, the mathematics below is <strong>standard quantum information theory</strong> transcribed into biquaternion notation. Nothing here depends on the physical hypothesis that $\mathbb{M}_+$ is a distinct sector of the world. The reformulation is structural: it says where the objects of quantum computation live in the algebra and which algebraic operation each circuit ingredient is.</p>
 <p>Second, the word "rotor conjugation" is used for the gate action, and it must be distinguished sharply from the Lorentz rotor of the material sector. Both actions are conjugations by the acting element, but the condition on that element is different. The material-sector Lorentz rotor, written $\tilde U_{\mathrm L}$, satisfies the <strong>unit-norm</strong> condition $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ and generates $SL(2,\mathbb{C})$; a gate satisfies the <strong>matrix-unitarity</strong> condition $\tilde{U}\tilde{U}^{*} = e_t$ and generates $\mathrm{U}(2)$. A Lorentz boost is Hermitian and therefore satisfies $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}^2 \neq e_t$: it is a perfectly good rotor on $\mathbb{M}_-$ but <strong>not</strong> a gate on $\mathbb{M}_+$, because it does not preserve the trace. The two groups sit in the same algebra, and keeping them apart is the main technical discipline of this article.</p>
 <p>The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), $\mathbb{M}_+$ (Hermitian), and $\mathbb{M}_-$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$ is the Born rule. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), $\mathbb{M}_+$ (Hermitian), and $\mathbb{M}_-$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$ is the Born rule; the star is inert on $\mathbb{M}_+$ and the unstarred trace is real, and non-negative when $\tilde H\ge0$. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,</p>
 <p>$$
 e_t \mapsto I_2, \qquad \vec e_x \mapsto -i\sigma_1, \qquad \vec e_y \mapsto -i\sigma_2, \qquad \vec e_z \mapsto -i\sigma_3, \qquad i \mapsto i I_2 ,
 $$</p>
@@ -108,11 +108,11 @@ $$</p>
 <p>The condition $\tilde{U}\tilde{U}^{*} = e_t$ must not be confused with the unit-norm condition $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$ that defines the Lorentz rotors $SL(2,\mathbb{C})$. The two conditions pick out two different subgroups of the same algebra, and only the first is a group of gates.</p>
 <p>The distinction is visible in a single example. A <strong>boost biquaternion</strong></p>
 <p>$$
-\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
+\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
 $$</p>
-<p>is Hermitian, $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$, and has unit norm, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$. Hence $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}^2 \neq e_t$, and conjugation by $\tilde U_{\mathrm L}$ does not preserve the trace:</p>
+<p>is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and has unit norm, $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = e_t$. Hence $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}^2 \neq e_t$, and conjugation by $\tilde U_{\mathrm b}$ does not preserve the trace:</p>
 <p>$$
-\mathrm{Tr}\!\left(\tilde U_{\mathrm L}\tilde{Ϛ}\tilde U_{\mathrm L}^{*}\right) \neq \mathrm{Tr}(\tilde{Ϛ}) \quad \text{in general}.
+\mathrm{Tr}\!\left(\tilde U_{\mathrm b}\tilde{Ϛ}\tilde U_{\mathrm b}^{*}\right) \neq \mathrm{Tr}(\tilde{Ϛ}) \quad \text{in general}.
 $$</p>
 <p>A boost is a rotor on the material sector $\mathbb{M}_-$ and <strong>not</strong> a gate on the informational sector $\mathbb{M}_+$. The distinction is not a technicality: it is the algebraic expression of the fact that the Lorentz group and the gate group are different groups inside one algebra, related to the two complementary subspaces.</p>
 <p>The two actions are collected here for contrast.</p>
@@ -273,7 +273,7 @@ $$</p>
 $$</p>
 <p>The first two are exact identities among elements of $\mathbb{B}$; the third carries a sign, and since $-e_t$ is central, $\tilde{H}\vec U_y\tilde{H} = -\vec U_y$ and $\vec U_y$ define the <strong>same gate</strong>. This is a small but representative point: an algebraic identity of representatives need not be an identity of gates, and the discrepancy is always a central phase.</p>
 <p><strong>A different complex Hadamard matrix.</strong> A second object shares the name but not the setting. In <em>The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation</em>, the cyclic conjugation of the biquaternion wave function, read on the Cartesian components $(f_x, f_y, f_z, f_t)$, is a $4\times4$ matrix with entries in $\{\pm1, \pm i\}$ and $H_4H_4^\dagger = 4I$. Its entries have modulus one, so $H_4/2$ is unitary on a four-dimensional complex space; it is a transvection on that space, not an element of the two-dimensional gate group treated here. The two Hadamards therefore share the modulus-one property and the name, and nothing else: $\tilde{H}$ above is a qubit gate, the printed $H_4$ is a change of coordinates of the Dirac equation.</p>
-<h3 id="the-phase-and-math188-gates">The Phase and $T$ Gates</h3>
+<h3 id="the-phase-and-math190-gates">The Phase and $T$ Gates</h3>
 <p>The phase gate is the rotation by $\pi/2$ about $\vec e_z$:</p>
 <p>$$
 \tilde{S} = \frac{1}{\sqrt{2}}\left(e_t + \vec e_z\right) = \tilde u_{e,3}\!\left(\frac{\pi}{2}\right),
@@ -325,7 +325,7 @@ $$</p>
 <p>i.e. the set of gates that permute the Pauli group under conjugation, up to sign. The elementary gates $H$ and $S$ both lie in it, and in fact generate it; this is the biquaternion form of the standard statement that $H$ and $S$ generate the single-qubit Clifford group. Modulo the phase, the conjugation action of the Clifford group on the Bloch sphere is the rotation symmetry group of the octahedron, of order $24$; a direct enumeration of the group generated by the two rotation matrices $R(\tilde{H})$ and $R(\tilde{S})$ returns exactly $24$ distinct rotations. In the algebra, the octahedral symmetry is the symmetry of the Pauli axes $\{\pm i \vec e_x,\pm i \vec e_y,\pm i \vec e_z\}$ that the Clifford gates permute.</p>
 <p>The <strong>$T$ gate is not Clifford</strong>. Its conjugation of $\vec U_x$ produces a rotation by $\pi/4$ about $\vec e_z$, which does not return the Pauli axes to themselves. The standard statement that $\{H,T\}$ generates a dense subgroup of the gate group — the basis of the Solovay–Kitaev universality of single-qubit computation — is inherited unchanged by the reformulation; it is a statement about the group generated by a Hadamard involution and a rotation of order eight, and the biquaternion representatives are $i(\vec e_x+\vec e_z)/\sqrt{2}$ and $\cos(\pi/8)e_t+\sin(\pi/8)\vec e_z$. This article does not re-derive universality; it records where the generators live.</p>
 <h2 id="multi-qubit-gates-and-the-tensor-arena">Multi-Qubit Gates and the Tensor Arena</h2>
-<h3 id="the-math254-qubit-algebra">The $n$-Qubit Algebra</h3>
+<h3 id="the-math256-qubit-algebra">The $n$-Qubit Algebra</h3>
 <p>For $n$ qubits the arena is the tensor product</p>
 <p>$$
 \mathbb{B}^{\otimes n} \;\cong\; M_{2^n}(\mathbb{C}),
@@ -369,7 +369,7 @@ $$</p>
 <tr>
 <td>$\mathrm{CZ}$</td>
 <td>$\tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_z)$</td>
-<td>$\lvert 0\rangle\langle 0\rvert\otimes I_2 + \lvert 1\rangle\langle 1\rvert\otimes\sigma_3$</td>
+<td>$\lvert 0\rangle_{*}\langle 0\rvert\otimes I_2 + \lvert 1\rangle\langle 1\rvert\otimes\sigma_3$</td>
 </tr>
 <tr>
 <td>$\mathrm{SWAP}$</td>
@@ -395,7 +395,7 @@ $$</p>
 <p>$$
 \tilde{Ϛ}_0 = \tilde\Pi_1(\vec u_z)\otimes\tilde\Pi_1(\vec u_z) ,
 $$</p>
-<p>the biquaternion idempotent corresponding to $|00\rangle$. Apply the Hadamard to the first qubit and then the CNOT with the first qubit as control. As a circuit, the operation is the product</p>
+<p>the biquaternion idempotent corresponding to $|00\rangle_{*}$. Apply the Hadamard to the first qubit and then the CNOT with the first qubit as control. As a circuit, the operation is the product</p>
 <p>$$
 \tilde{W} = \tilde{Q}_{\vec U_x}(\tilde{H}\otimes e_t), \qquad \tilde{Q}_{\vec U_x} = \tilde\Pi_1(\vec u_z)\otimes e_t + \tilde\Pi_2(\vec u_z)\otimes (i \vec e_x),
 $$</p>
@@ -545,8 +545,8 @@ $$</p>
 <td>Rotor conjugation (gate action)</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$</td>
-<td>Trace formula (Born rule)</td>
+<td>$\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$</td>
+<td>Trace reading at normalisation (Born rule)</td>
 </tr>
 <tr>
 <td>$\vec U_x=i\vec e_x,\ \vec U_y=i\vec e_y,\ \vec U_z=i\vec e_z$</td>

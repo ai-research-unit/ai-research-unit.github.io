@@ -77,7 +77,7 @@
 </ul>
 <p>One further finding is reported as a <strong>limit on what the double slit demonstrates</strong>. For a beam whose two routes carry the same spin state, the <em>spin-summed</em> two-path intensity is unchanged when the central root $i$ of the phase is replaced by a fixed non-central root $\vec{u}$; the difference between the two choices appears only under spin analysis, or when the two routes carry different spin states. The spin-summed double-slit pattern therefore does not by itself witness the centrality of the phase; the framework's grounds for the central root lie in the state-vector equation and in the complex structure of the state module, not in this pattern. The computation is in the section on the phase root below, and it is stated against the pull to claim more for the experiment than it shows.</p>
 <p>The article is organized as follows. The next section writes the two-route amplitude and its interference. The section after that treats the fringe pattern and its standard geometry. The following section identifies the which-path qubit and its Bloch ball. The next proves the visibility–predictability bound and reads it as the cone condition. A section treats which-path detection and dephasing. A section examines the choice of phase root. A section treats spinor-valued routes and spin-dependent fringes. The article closes with what the algebra supplies, what it does not, and the open questions.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ and its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$. A Hermitian element is written $\tilde{H} = h_t e_t + i\vec h$, an idempotent is $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ with $\vec{u}$ a unit pure real quaternion, and a state is $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ with $|\vec r|\le 1$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The normalised plain form, read as the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$, is inherited unchanged, as is the statement that multiplication by $i$ exchanges the sectors, $i\,\mathbb{M}_\pm = \mathbb{M}_\mp$.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ and its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$. A Hermitian element is written $\tilde{H} = h_t e_t + i\vec h$, an idempotent is $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$ with $\vec{u}$ a unit pure real quaternion, and a state is $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ with $|\vec r|\le 1$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. The normalised Hermitian form, read as the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$, is inherited unchanged, as is the statement that multiplication by $i$ exchanges the sectors, $i\,\mathbb{M}_\pm = \mathbb{M}_\mp$.</p>
 <h2 id="the-two-path-amplitude">The Two-Path Amplitude</h2>
 <p>Let $K_j(X)$ be the amplitude for the particle to arrive at the screen point $X$ through slit $j$, $j = 1, 2$. Each is a sum over paths through that slit, and by the path-integral article the single-path phase is a <strong>central</strong> unitary element of $\mathbb{C}_{\mathbb{B}}$ whose exponent lies in $\mathbb{M}_-$:</p>
 <p>$$
@@ -176,7 +176,7 @@ $$</p>
 <p>Half-filled fringes and a mixed which-path state are the same fact, and it is a fact about the biquaternion norm. This is the framework's translation of the standard two-path duality $V^2 + P^2 \le 1$; the algebra does not change the number, it identifies the bound with the cone condition that the framework already uses for purity.</p>
 <h2 id="which-path-detection-and-the-loss-of-interference">Which-Path Detection and the Loss of Interference</h2>
 <p>The framework describes the destruction of the fringes by the same algebraic operations it uses for any measurement.</p>
-<p><strong>Selective detection.</strong> A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde\Pi_{1,2}(\vec{u})$ — has the Born probabilities $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2} \tilde{Ϛ}) = \tfrac12(1 \pm r_\parallel)$ and post-measurement states $\tilde{Ϛ}_2 = \tilde\Pi_{1,2}(\vec{u})$. The equatorial component is annihilated: $\vec r_2 = \pm\vec{u}$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.</p>
+<p><strong>Selective detection.</strong> A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde\Pi_{1,2}(\vec{u})$ — has the Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})=\tfrac12(1 \pm r_\parallel)$, with the trace reading at normalisation and post-measurement states $\tilde{Ϛ}_2 = \tilde\Pi_{1,2}(\vec{u})$. The equatorial component is annihilated: $\vec r_2 = \pm\vec{u}$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.</p>
 <p><strong>Non-selective detection.</strong> If the which-path record is not read, the operation is the dephasing channel along $\vec{u}$ of <em>Decoherence as Idempotent Projection</em>. At full strength ($p = 1$),</p>
 <p>$$
 \tilde{Ϛ} \;\longmapsto\; p_+\,\tilde\Pi_1(\vec{u}) + p_-\,\tilde\Pi_2(\vec{u}),
@@ -222,7 +222,7 @@ I = \mathrm{Tr}(\psi^\dagger\psi) = \mathrm{Tr}(\psi_1^\dagger\psi_1) + \mathrm{
 $$</p>
 <p>which was checked on random spinor pairs to machine precision. Write $\psi_j = a_j \exp(i\varphi_j)s_j$ with $s_j$ normalised spinors. Then $\mathrm{Tr}(\psi_j^\dagger\psi_j) = a_j^2$ and the cross term is</p>
 <p>$$
-2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2) = 2a_1a_2\,\bigl|\langle s_1, s_2\rangle\bigr|\,\cos\!\bigl(\delta - \arg\langle s_1,s_2\rangle\bigr),
+2\,\mathrm{Re}\,\mathrm{Tr}(\psi_1^\dagger\psi_2) = 2a_1a_2\,\bigl|\langle s_1, s_2\rangle_{*}\bigr|\,\cos\!\bigl(\delta - \arg\langle s_1,s_2\rangle\bigr),
 $$</p>
 <p>where $\langle s_1,s_2\rangle := \mathrm{Tr}(s_1^\dagger s_2)$ is the module inner product, of modulus at most one. The visibility is therefore</p>
 <p>$$
@@ -292,7 +292,7 @@ V^2 + P^2 = |\vec r|^2 = 1 - 4\,\mathrm{Sc}\bigl(\langle\tilde{Ϛ}\rangle_{\natu
 $$</p>
 <p>with equality if and only if $\tilde{Ϛ}$ is pure — that is, if and only if the which-path state lies on the zero-divisor cone of $\mathbb{M}_+$. Partial fringe contrast and an interior (mixed) which-path state are the same fact. The normalised intensity is the equatorial component, $I/(|A_1|^2+|A_2|^2) = 1 + r_1$.</p>
 <p>A which-path measurement, whether selective (projective) or non-selective (full dephasing along the path axis), annihilates the equatorial component and the fringes; partial dephasing scales the visibility by $1-p$. The preferred direction and the realised outcome are not supplied by the algebra.</p>
-<p>The <strong>spin-summed</strong> two-slit intensity is <strong>root-independent</strong> for a beam with a common spin state: replacing the central $i$ by a fixed non-central root leaves it unchanged. Read without spin analysis, the double slit therefore does not witness the centrality of the phase; that centrality is required by the complex structure of the state module and by the unitarity of the state-vector equation, not by this pattern. The difference between the roots reappears under spin analysis in a basis not aligned with $\vec{u}$, and the total intensity differs when the two routes carry different spinors — when it acquires a spin overlap $\langle s_1,s_2\rangle$ that reduces the visibility (the spin-dependent double slit). The scalar case is the parallel-spinor case.</p>
+<p>The <strong>spin-summed</strong> two-slit intensity is <strong>root-independent</strong> for a beam with a common spin state: replacing the central $i$ by a fixed non-central root leaves it unchanged. Read without spin analysis, the double slit therefore does not witness the centrality of the phase; that centrality is required by the complex structure of the state module and by the unitarity of the state-vector equation, not by this pattern. The difference between the roots reappears under spin analysis in a basis not aligned with $\vec{u}$, and the total intensity differs when the two routes carry different spinors — when it acquires a spin overlap $\langle s_1,s_2\rangle_{*}$ that reduces the visibility (the spin-dependent double slit). The scalar case is the parallel-spinor case.</p>
 <p>The algebra supplies the phase's imaginary unit, the sector of its exponent, a state geometry for the which-path qubit, and algebraic accounts of measurement and dephasing. It does not supply the action, the measure, the space of paths, the preferred direction, or the selection of an outcome; and it makes no prediction here that standard quantum physics does not.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -384,7 +384,7 @@ $$</p>
 <td>Normalised spinor; the phase of the amplitude</td>
 </tr>
 <tr>
-<td>$\langle s_1,s_2\rangle = \mathrm{Tr}(s_1^\dagger s_2)$</td>
+<td>$\langle s_1,s_2\rangle_{*} = \mathrm{Tr}(s_1^\dagger s_2)$</td>
 <td>Module inner product; spin overlap</td>
 </tr>
 <tr>
@@ -392,8 +392,8 @@ $$</p>
 <td>Non-central phase; a spin rotation</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$</td>
-<td>Trace formula (Born rule)</td>
+<td>$\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$</td>
+<td>Trace reading at normalisation (Born rule)</td>
 </tr>
 <tr>
 <td>$i\,\mathbb{M}_\pm = \mathbb{M}_\mp$</td>
@@ -420,7 +420,7 @@ $$</p>
 <li><em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em> — the state space as a slice of the biquaternion-norm cone.</li>
 <li><em>Decoherence as Idempotent Projection</em> — the dephasing channel and the destruction of coherence.</li>
 <li><em>The Measurement Problem in Algebraic Form</em> — the mixture versus the realised outcome.</li>
-<li><em>The Born Rule from the Plain Form — Derivation and Comparison</em> — the trace formula and its comparison with the standard postulate.</li>
+<li><em>The Born Rule from the Hermitian Form — Derivation and Comparison</em> — the trace formula and its comparison with the standard postulate.</li>
 <li><em>Angular Momentum and Spin in Biquaternionic Form</em> — the spin degree of freedom used in the spinor-valued routes.</li>
 <li><em>The Feynman Propagator in Biquaternionic Form</em> — the $i\epsilon$ direction shared with the phase exponent.</li>
 <li><em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> — the transfer $\mathbb{M}_- \to \mathbb{H}_{\mathbb{B}}$ that turns the phase into a decaying weight.</li>

@@ -212,9 +212,9 @@ $$</p>
 <p>and the anticommutation relations force each occupation number to be $0$ or $1$, so the algebra is finite-dimensional for finitely many modes. One fermionic mode therefore needs a two-dimensional space, spanned by $|0\rangle$ and $|1\rangle$, and the two-dimensional space is available inside $\mathbb{B}=M_2(\mathbb{C})$: the occupied state is the rank-one idempotent $\tfrac12(e_t-i\vec e_z)$ and the vacuum is its complement, both in the informational sector, as the companion Fock-space and informational articles record. The fermionic ladder is thus an object of the algebra; the bosonic one is not. The dimension count displays the difference in one line: one fermionic mode is exactly two-dimensional and the count terminates, $\dim\bigwedge\mathbb{C}^1=2$; one bosonic mode is infinite-dimensional and every truncation is an approximation, the smallest one whose dimension exceeds that of the algebra being $n_{\max}=4$ with $\binom{5}{4}=5$. Bosonic capacity grows without bound in $n_{\max}$; fermionic capacity is bounded by $2^d$ and terminates at full occupancy.</p>
 <p>The consequence for the title of the article is plain. The scalar Fock space is the symmetric algebra of a module; it is not a subspace, a subalgebra, or an ideal of $\mathbb{B}$. The only sense in which there is a biquaternionic Fock space is the sense in which the construction begins from a module over the algebra and is written in the algebra's notation; for the scalar field the module is the centre's, and the algebra contributes no ladder to it.</p>
 <h2 id="the-informational-sector-and-the-trace-formula">The Informational Sector and the Trace Formula</h2>
-<p>The framework's Born rule is the normalised plain form over the informational sector, read as the trace: for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the image), the expectation of a Hermitian observable $\tilde H\in\mathbb{M}_+$ is</p>
+<p>The framework's Born rule is the normalised Hermitian form over the informational sector, read as the trace: for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the expectation of a Hermitian observable $\tilde H\in\mathbb{M}_+$ is</p>
 <p>$$
-\langle\tilde H\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde H).
+\langle\tilde H\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde H).
 $$</p>
 <p>For a single <strong>fermionic</strong> mode this formula applies directly to the Fock number operator, which is the idempotent $\tfrac12(e_t-i\vec e_z)$; its expectation is the occupation probability, and the vacuum and occupied idempotents are the two pure states. For the <strong>scalar</strong> field the formula applies only to finite-dimensional truncations, because the full number operator acts on an infinite-dimensional space and is not an element of $\mathbb{B}$. On the $n$-level truncation of one mode, the number operator is the diagonal matrix $\mathrm{diag}(0,1,\dots,n)$ represented in the Fock basis, and the trace formula returns the mean occupation of the truncated state. Explicitly, a truncated state is a density matrix $\rho=\sum_{k,l}\rho_{kl}|k\rangle\langle l|$ with $\rho\ge0$ and $\mathrm{tr}\,\rho=1$, and</p>
 <p>$$
@@ -310,8 +310,8 @@ $$</p>
 <td>Fermionic vacuum and occupied idempotents (contrast case)</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$</td>
-<td>Trace formula (Born rule), for finite truncations</td>
+<td>$\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$</td>
+<td>Trace reading at normalisation (Born rule), for finite truncations</td>
 </tr>
 <tr>
 <td>$D(\alpha)=\exp(\alpha a^{\mathrm{fop}\dagger}-\alpha^*a^{\mathrm{fop}})$, $\vert\alpha\rangle$</td>

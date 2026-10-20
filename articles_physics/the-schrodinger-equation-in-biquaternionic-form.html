@@ -209,7 +209,7 @@ i\hbar\,\partial/\partial t'\tilde{Ϛ} = [\tilde{H},\tilde{Ϛ}],
 $$</p>
 <p>which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ and $\tilde\Pi_1(\vec u) = \tfrac12(e_t + i\vec u)$,</p>
 <p>$$
-p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u)\,\tilde{Ϛ}\right) = \tfrac12\left(1 + \vec u\cdot\vec r\right).
+p_+ = \frac{\langle\tilde\Pi_1(\vec u),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})} = \tfrac12\left(1 + \vec u\cdot\vec r\right).
 $$</p>
 <p>For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\vec r = \vec e_z$, and $p_+ = \tfrac12(1 + \vec u\cdot \vec e_z)$, the standard result.</p>
 <h2 id="why-the-scalar-imaginary-and-not-a-quaternion-unit">Why the Scalar Imaginary, and Not a Quaternion Unit</h2>
@@ -345,8 +345,8 @@ $$</p>
 <td>Unitary evolution, $\psi(t') = \tilde{U}(t')\psi(0)$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde\Pi_1(\vec u)\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}) = h_t + \vec u\cdot\vec h$</td>
-<td>Trace formula / Born rule</td>
+<td>$2\,\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde{H}^{*}) = h_t + \vec u\cdot\vec h = \operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde{H}^{*})$</td>
+<td>Trace reading last / Born rule</td>
 </tr>
 <tr>
 <td>$\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, $\mu \neq \nu$</td>

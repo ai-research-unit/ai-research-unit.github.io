@@ -88,7 +88,7 @@ $$
 \qquad
 \mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\} = \mathrm{span}_{\mathbb{R}}\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\},
 $$
-with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The isomorphism is $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, the <strong>biquaternion norm</strong> is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace is $\mathrm{Tr}(\tilde H_1\tilde H_2) = 2\,\mathrm{Sc}(\tilde H_1\tilde H_2) = 2\langle\tilde H_1,\tilde H_2\rangle$, the $2\times2$ reading of the plain form, so that $\mathrm{Tr}(e_t)=2$. The single-mode ladder is $\vec\Upsilon_x = \tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y = \tfrac12(i\vec e_x+\vec e_y)$, as established by <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>.</p>
+with $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The isomorphism is $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, the <strong>biquaternion norm</strong> is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and the trace is $\mathrm{Tr}(\tilde H_1\tilde H_2) = 2\,\mathrm{Sc}(\tilde H_1\tilde H_2) = 2\langle\tilde H_1,\tilde H_2\rangle_{*}$, the $2\times2$ reading of the plain form, so that $\mathrm{Tr}(e_t)=2$. The single-mode ladder is $\vec\Upsilon_x = \tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y = \tfrac12(i\vec e_x+\vec e_y)$, as established by <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em>.</p>
 <h2 id="the-vacuum-as-a-state">The Vacuum as a State</h2>
 <p>In the standard formulation the vacuum is characterized in two equivalent ways, and it is worth keeping both in view because the biquaternion interpretation uses one and not the other.</p>
 <p><strong>As a vector.</strong> The one-particle space $\mathcal{H}_1$ generates the Fock space
@@ -135,7 +135,7 @@ The corner $\tilde\Pi\mathbb{B}\tilde\Pi$ is one-complex-dimensional exactly whe
 $$
 \omega_{\tilde\Pi}(\tilde Q_3) \;=\; \mathrm{Tr}\big(\tilde\Pi\tilde Q_3\big),
 $$
-which on an <strong>observable</strong> $\tilde H\in\mathbb{M}_+$ takes the real value $2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$. A pure state is exactly what a vacuum is. A rank-two state with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_t$, and a general element of the Bloch ball is neither.</p>
+which on an <strong>observable</strong> $\tilde H\in\mathbb{M}_+$ takes the real value $2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde H\rangle_{*}$. A pure state is exactly what a vacuum is. A rank-two state with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_t$, and a general element of the Bloch ball is neither.</p>
 <h2 id="the-one-mode-vacuum">The One-Mode Vacuum</h2>
 <p>For a single fermionic mode the algebra contains the whole ladder. With
 $$
@@ -230,7 +230,7 @@ a two-complex-dimensional space, because the map $\tilde Q\mapsto\tilde Q \tilde
 <p>the one-mode vacuum idempotent determines the one-particle (spinor) module as the minimal left ideal it generates.</p>
 </blockquote>
 <p>This is the mechanism by which the vacuum situates the field in the framework: the algebra alone has no distinguished module, and the choice of vacuum idempotent selects one. Conversely the module fixes the idempotent only up to the equivalence $\tilde\Pi\mapsto \tilde U\tilde\Pi\tilde U^{-1}$ by units of the algebra, which is the statement that the module is unique while the vacuum is not.</p>
-<p>The same construction, run in the reverse direction, is the GNS reconstruction. The state $\omega_{\tilde\Pi}(\tilde Q_3) = \mathrm{Tr}(\tilde\Pi\tilde Q_3)$ has a GNS Hilbert space obtained from $\mathbb{B}$ by quotienting out the elements of zero $\omega_{\tilde\Pi}$-norm; for a <strong>pure</strong> state that quotient is exactly the minimal left ideal, of complex dimension two, and the GNS representation is irreducible. For a mixed state the quotient is larger and the representation is reducible. The vacuum's minimality is thus the algebraic reason its GNS representation is irreducible, and the GNS construction itself is the subject of the companion article <em>The GNS Construction in the Biquaternion Framework</em>.</p>
+<p>The same construction, run in the reverse direction, is the GNS reconstruction. The state $\omega_{\tilde\Pi}(\tilde Q_3) = \mathrm{Tr}(\tilde\Pi\tilde Q_3^{*})$ has a GNS Hilbert space obtained from $\mathbb{B}$ by quotienting out the elements of zero $\omega_{\tilde\Pi}$-norm; for a <strong>pure</strong> state that quotient is exactly the minimal left ideal, of complex dimension two, and the GNS representation is irreducible. For a mixed state the quotient is larger and the representation is reducible. The vacuum's minimality is thus the algebraic reason its GNS representation is irreducible, and the GNS construction itself is the subject of the companion article <em>The GNS Construction in the Biquaternion Framework</em>.</p>
 <h2 id="the-vacuum-manifold">The Vacuum Manifold</h2>
 <p>The construction used $\vec e_z$ only through the unit vector it defines. Replacing $\vec e_z$ by $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ with $u_x^2+u_y^2+u_z^2=1$ gives
 $$
@@ -280,7 +280,7 @@ by the cyclicity of the trace, while $\mathrm{Tr}(e_t)=2$. Hence no pair of alge
 <h2 id="summary">Summary</h2>
 <p>For a single fermionic mode the vacuum of the biquaternion framework is a concrete algebra element: the Hermitian, idempotent, unit-trace, <strong>minimal</strong> idempotent
 $$
-|0\rangle\langle 0| = \tilde\Pi_+ = \tfrac12\big(e_t+i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}1&0\\0&0\end{pmatrix},
+|0\rangle_{*}\langle 0| = \tilde\Pi_+ = \tfrac12\big(e_t+i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}1&0\\0&0\end{pmatrix},
 \qquad
 \tilde\Pi_- = \tfrac12\big(e_t-i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}0&0\\0&1\end{pmatrix},
 $$
@@ -321,8 +321,8 @@ with $\tilde\Pi_++\tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_-=0$, and $(-1)^F = 
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2) = 2\langle\tilde H_1,\tilde H_2\rangle$, $\mathrm{Tr}(e_t)=2$</td>
-<td>Trace reading of the plain form</td>
+<td>$\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\langle\tilde H_1,\tilde H_2\rangle_{*} = 2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$, $\mathrm{Tr}(e_t)=2$</td>
+<td>Trace reading of the Hermitian form</td>
 </tr>
 <tr>
 <td>$\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$</td>
@@ -357,7 +357,7 @@ with $\tilde\Pi_++\tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_-=0$, and $(-1)^F = 
 <td>Vacuum manifold</td>
 </tr>
 <tr>
-<td>$\omega_{\tilde\Pi}(\tilde Q_3)=\mathrm{Tr}(\tilde\Pi\tilde Q_3)$</td>
+<td>$\omega_{\tilde\Pi}(\tilde Q_3)=\mathrm{Tr}(\tilde\Pi\tilde Q_3^{*})$</td>
 <td>Pure state defined by a minimal idempotent</td>
 </tr>
 <tr>

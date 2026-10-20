@@ -155,7 +155,7 @@ $$</p>
 <h3 id="the-bell-measurement">The Bell measurement</h3>
 <p>Bob, holding both qubits, measures the commuting stabilizers $S_1$ and $S_3$. Since $\{S_1,S_3\}$ is a complete set of commuting observables with the four Bell idempotents as its joint eigenbasis, the measurement has four outcomes $\epsilon$ with probabilities</p>
 <p>$$
-p_\epsilon = \mathrm{Tr}\bigl(\tilde{Ϛ}\,\tilde\Pi_\epsilon\bigr),
+p_\epsilon = \frac{\langle\tilde{Ϛ},\tilde\Pi_\epsilon\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde\Pi_\epsilon^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde\Pi_\epsilon)}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon)}{\operatorname{Tr}(\tilde{Ϛ})},
 $$</p>
 <p>where $\tilde{Ϛ}$ is the received state. If Alice applied $\vec e_k$, then $\tilde{Ϛ} = \tilde\Pi_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and</p>
 <p>$$
@@ -285,8 +285,8 @@ $$</p>
 <td>Orthogonality of codewords</td>
 </tr>
 <tr>
-<td>$p_\epsilon = \mathrm{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon)$</td>
-<td>Decoding probabilities (Born rule)</td>
+<td>$p_\epsilon = \langle\tilde{Ϛ},\tilde\Pi_\epsilon\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = \operatorname{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon)$</td>
+<td>Decoding probabilities (Born rule; trace at normalisation)</td>
 </tr>
 <tr>
 <td>$1$ bit</td>

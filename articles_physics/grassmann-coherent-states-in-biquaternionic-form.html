@@ -200,15 +200,15 @@ $$</p>
 \qquad
 \mathrm{Tr}\,\tilde{Ϛ}_\theta=1 ,
 $$</p>
-<p>where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle\langle\theta|$ is a rank-one projector, but it is not a pure state of the <em>algebra</em> unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the normalised plain form, read as the trace pairing</p>
+<p>where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle_{*}\langle\theta|$ is a rank-one projector, but it is not a pure state of the <em>algebra</em> unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the normalised Hermitian form, read through the trace</p>
 <p>$$
-\langle O\rangle_\theta=\mathrm{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O) .
+\langle O\rangle_\theta=\mathrm{Tr}(\tilde{Ϛ}_\theta O^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O) .
 $$</p>
 <p>This is the coherent-state content of the sector assignment used throughout: the field and the generators are in $\mathbb{M}_-$, the states and the observables in $\mathbb{M}_+$, and the Grassmann label rides outside the algebra entirely.</p>
 <p><strong>Parity.</strong> The extended algebra is $\mathbb{Z}/2$-graded, and the parity operator is the degree,
 $(-1)^{N}$. Acting on the coherent state,</p>
 <p>$$
-(-1)^{N}|\theta\rangle=(1-\theta a^{\mathrm{fop}\dagger})|0\rangle=|-\theta\rangle ,
+(-1)^{N}|\theta\rangle_{*}=(1-\theta a^{\mathrm{fop}\dagger})|0\rangle=|-\theta\rangle ,
 $$</p>
 <p>so the parity is the reflection of the label, in agreement with the trace formula's need for $\langle-\theta|$. For one mode $(-1)^{N}=i\vec e_z$ as the parents record; the reflection is therefore both an algebra element and a relabelling of the coherent states.</p>
 <p><strong>Bilinear pairings.</strong> The bilinear $\langle\theta|O|\eta\rangle$ is a function of a pair of odd labels and is the natural object to appear in the invariant pairings. Since the biquaternion norm on $\mathbb{B}$ is the general bilinear $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ and vanishes on the one-particle ideal, while the Hermitian form is positive definite, the two roles separate as in the Fock-space article: the Berezin-integral pairing is the Hermitian one, and the Lorentz-invariant bilinears of the module are the antisymmetric form $\varepsilon$ and the mixed pairing with the dual.</p>
@@ -229,7 +229,7 @@ $$</p>
 <p><strong>The algebra's own.</strong></p>
 <ul>
 <li><em>The Grassmann algebra as the minimal odd extension of $\mathbb{B}$</em>, with even part $\mathbb{B}$ preserved. This is the constructive content of that open item: the odd generator that the grading needs is supplied by the labels, and it does not disturb the even algebra.</li>
-<li><em>The sector reading of the coherent states</em>: the density matrix is an even element of $\mathbb{M}_+$ even though the label is odd, and the expectation is the plain form, read as the trace pairing $2\,\mathrm{Sc}$.</li>
+<li><em>The sector reading of the coherent states</em>: the density matrix is an even element of $\mathbb{M}_+$ even though the label is odd, and the expectation is the Hermitian form, read through the trace $2\,\mathrm{Sc}$.</li>
 <li><em>The parity as the label reflection</em> $|\theta\rangle\mapsto|-\theta\rangle$, which is the same element $(-1)^F=i\vec e_z$ that the parents identify for one mode.</li>
 </ul>
 <p><strong>Open.</strong></p>
@@ -251,7 +251,7 @@ $$</p>
 $$</p>
 <p>and the trace formula is $\mathrm{Tr}\,O=\int d\theta^*d\theta\,\exp(-\theta^*\theta)\langle-\theta|O|\theta\rangle$, all in the stated Berezin convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the identity, $\sigma_z$ and $\sigma_x$ were recomputed in it and return $2,0,0$.</p>
 <p>In the analytic representation the Fock space becomes polynomials of degree at most one in the odd variable, with $a^{\mathrm{fop}}=\partial/\partial\theta^*$, $a^{\mathrm{fop}\dagger}=\theta^*\times$, the anticommutator $\{\partial/\partial\theta^*,\theta^*\}=\mathrm{id}$ verified on the general polynomial, and the inner product given by the Berezin integral with $\exp(-\theta^*\theta)$.</p>
-<p>The biquaternion interpretation is that the label is odd while the density matrix $\rho_\theta=|\theta\rangle\langle\theta|$ is even, hence an element of $\mathbb{M}_+$, with trace one and expectations given by $\mathrm{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$; the parity is the label reflection $|\theta\rangle\mapsto|-\theta\rangle$; and the field's grading is carried by the extension rather than by $\mathbb{B}$ itself. At finite temperature the coherent-state trace formula gives $\mathrm{Tr}\,\exp(-\beta H)=1+\exp(-\beta\varepsilon)$ for one mode and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, the antiperiodicity verified to nine decimal places.</p>
+<p>The biquaternion interpretation is that the label is odd while the density matrix $\rho_\theta=|\theta\rangle\langle\theta|$ is even, hence an element of $\mathbb{M}_+$, with trace one and, for Hermitian $O$, expectations given by $\operatorname{Tr}(\tilde{Ϛ}_\theta O^{*})=\operatorname{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$, the star being inert and the unstarred trace real; the parity is the label reflection $|\theta\rangle_{*}\mapsto|-\theta\rangle$; and the field's grading is carried by the extension rather than by $\mathbb{B}$ itself. At finite temperature the coherent-state trace formula gives $\mathrm{Tr}\,\exp(-\beta H)=1+\exp(-\beta\varepsilon)$ for one mode and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, the antiperiodicity verified to nine decimal places.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -319,10 +319,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle O\rangle_\theta=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$</td>
-<td>Expectation as the trace reading of the plain form</td>
+<td>Expectation as the trace reading of the Hermitian form</td>
 </tr>
 <tr>
-<td>$(-1)^{N}|\theta\rangle=|-\theta\rangle$</td>
+<td>$(-1)^{N}|\theta\rangle_{*}=|-\theta\rangle$</td>
 <td>Parity as the label reflection</td>
 </tr>
 <tr>

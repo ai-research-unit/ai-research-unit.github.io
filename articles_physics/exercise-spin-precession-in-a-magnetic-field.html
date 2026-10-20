@@ -147,15 +147,17 @@ $$</p>
 \tilde{Ϛ}(t') = \tfrac{1}{2}\left(e_t + i\cos(\omega_L t')\,\vec e_x - i\sin(\omega_L t')\,\vec e_y\right).
 $$</p>
 <h3 id="step-4-the-expectation-value_1">Step 4: The expectation value</h3>
-<p>The expectation value of the spin along $x$ is given by the trace formula</p>
+<p>The expectation value of the spin along $x$ is given by the normalised Hermitian form</p>
 <p>$$
-\langle\tilde{S}_x\rangle(t') = \mathrm{Tr}\!\left(\tilde{Ϛ}(t')\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(t')\,\tilde{S}_x\right),
+\langle\tilde{S}_x\rangle(t') = \frac{\langle\tilde{Ϛ}(t'),\tilde{S}_x\rangle_{*}}{\langle\tilde{Ϛ}(t'),e_t\rangle_{*}}
+= \frac{\mathrm{Sc}\bigl(\tilde{Ϛ}(t')\,\tilde{S}_x^{*}\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}(t')\bigr)}
+= 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(t')\,\tilde{S}_x\right),
 $$</p>
-<p>with $\tilde{S}_x = \frac{\hbar}{2}\,i \vec e_x$. Computing the product</p>
+<p>whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}(t')\tilde{S}_x)=2\,\mathrm{Sc}(\tilde{Ϛ}(t')\tilde{S}_x)$, with $\tilde{S}_x = \frac{\hbar}{2}\,i \vec e_x$. Computing the product</p>
 <p>$$
 \tilde{Ϛ}(t')\,\tilde{S}_x = \frac{\hbar}{4}\left(i \vec e_x + \cos(\omega_L t')\,e_t - \sin(\omega_L t')\,\vec e_z\right),
 $$</p>
-<p>the scalar part is $\frac{\hbar}{4}\cos(\omega_L t')$. Applying the trace formula,</p>
+<p>the scalar part is $\frac{\hbar}{4}\cos(\omega_L t')$. Applying the Hermitian form, with the trace reading last,</p>
 <p>$$
 \langle\tilde{S}_x\rangle(t') = \frac{\hbar}{2}\cos(\omega_L t').
 $$</p>
@@ -177,11 +179,11 @@ $$</p>
 \vec r(t') = \cos(\omega_L t')\,\vec e_x - \sin(\omega_L t')\,\vec e_y.
 $$</p>
 <p>This is a <strong>unit vector rotating</strong> in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.</p>
-<p><strong>5. The expectation value is a trace formula.</strong> As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is</p>
+<p><strong>5. The expectation value is the normalised Hermitian form, read through the trace last.</strong> As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is</p>
 <p>$$
-\langle\tilde{S}_x\rangle(t') = \mathrm{Tr}\!\left(\tilde{Ϛ}(t')\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(t')\,\tilde{S}_x\right),
+\langle\tilde{S}_x\rangle(t') = \frac{\langle\tilde{Ϛ}(t'),\tilde{S}_x\rangle_{*}}{\langle\tilde{Ϛ}(t'),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(t')\,\tilde{S}_x\right),
 $$</p>
-<p>the same trace formula that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same plain form on $\mathbb{M}_+$.</p>
+<p>whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}(t')\tilde{S}_x)$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{M}_+$.</p>
 <p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t') = \exp(-i\tilde{H}t'/\hbar)$ corresponds exactly to the standard matrix evolution $T(t') = \exp(-iHt'/\hbar)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
 <h2 id="comparison-with-exercise-measuring-spin-along-an-arbitrary-direction">Comparison with Exercise: Measuring Spin Along an Arbitrary Direction</h2>
 <div class="table-scroll"><table>
@@ -205,7 +207,7 @@ $$</p>
 </tr>
 <tr>
 <td>Rule used</td>
-<td>Trace formula (Born rule)</td>
+<td>Trace reading at normalisation (Born rule)</td>
 <td>Trace formula (expectation value)</td>
 </tr>
 <tr>
@@ -220,7 +222,7 @@ $$</p>
 <p>We have solved a second exercise in quantum physics — the Larmor precession of a spin in a magnetic field — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle S_x\rangle(t') = \frac{\hbar}{2}\cos(\omega_L t')$.</p>
 <p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t')$, the evolved state $\tilde{Ϛ}(t')$, and the trace formula, giving the same result.</p>
-<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised plain form, read as the trace pairing.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
