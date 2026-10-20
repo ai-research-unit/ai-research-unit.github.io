@@ -81,10 +81,10 @@ $$</p>
 <p>$$
 p_r=\frac{\partial S}{\partial \xi_r}, \qquad P_r=-\frac{\partial S}{\partial \eta_r},
 $$</p>
-<p>with $S=S(\xi,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a <strong>transformation function</strong> $\langle \xi'|\eta'\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(iS/\hbar)$.</p>
-<p>The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle \xi'|\eta'\rangle=\exp(iU/\hbar)$. For any function expressed as a well-ordered sum of products $f(\xi)g(\eta)$ — every $\xi$ to the left of every $\eta$ — the mixed matrix element is multiplicative,</p>
+<p>with $S=S(\xi,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a <strong>transformation function</strong> $\langle \xi_f|\eta_f\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(iS/\hbar)$.</p>
+<p>The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle \xi_f|\eta_f\rangle=\exp(iU/\hbar)$. For any function expressed as a well-ordered sum of products $f(\xi)g(\eta)$ — every $\xi$ to the left of every $\eta$ — the mixed matrix element is multiplicative,</p>
 <p>$$
-\langle \xi'|f(\xi)g(\eta)|\eta'\rangle=f(\xi')g(\eta')\,\langle \xi'|\eta'\rangle ,
+\langle \xi_f|f(\xi)g(\eta)|\eta_f\rangle=f(\xi_f)g(\eta_f)\,\langle \xi_f|\eta_f\rangle ,
 $$</p>
 <p>because $f(\xi)$ is diagonal in the $\xi$-representation, $g(\eta)$ is diagonal in the $\eta$-representation, and the two diagonalisations meet only in the transformation function. Applying this to the momentum gives $p_r=\partial U/\partial \xi_r$ and $P_r=-\partial U/\partial \eta_r$ as equations between operators, <strong>provided the derivatives are well-ordered</strong>. The qualification is not removable: the only differentiation available on the dynamical variables is the Poisson bracket, and it is the step at which the quantum theory fails to reproduce the classical Lagrangian equations directly. The operator form of the relations, with that caveat, had been proved by Jordan by another method and is recovered in the paper as a by-product of the transformation function.</p>
 <p>The result for the phase follows when the two sets are the configurations at two times. The generator of the transformation between the configurations at $T$ and at $t$ is the action over the interval, so $\langle x_t|x_T\rangle$ corresponds to $\exp(iS/\hbar)$, and for $T$ infinitesimally before $t$ to $\exp(iL\,dt/\hbar)$. The phase of the path integral is the action because the action generates the canonical transformation between the endpoints — not because it is an invariant that happens to be available. The field-theoretic counterpart of the transformation function, which is a functional of the field values on a boundary rather than a function of two configurations, is named in the companion article <em>The Functional Integral in Biquaternionic Form</em>. What that counterpart and this section fix between them is the <strong>content</strong> of the phase; what the algebra fixes is the imaginary unit that multiplies it, which is the question the rest of this article addresses.</p>
@@ -96,8 +96,8 @@ K(x_f,t_f;x_i,t_i)
 $$</p>
 <p>with the single-step kernel</p>
 <p>$$
-K_\varepsilon(x',x)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{1/2}
-\exp\Big[\frac{i}{\hbar}\Big(\frac{m(x'-x)^2}{2\varepsilon}-\varepsilon\,V(x)\Big)\Big]+O(\varepsilon^2).
+K_\varepsilon(x_{\mathrm f},x)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{1/2}
+\exp\Big[\frac{i}{\hbar}\Big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon\,V(x)\Big)\Big]+O(\varepsilon^2).
 $$</p>
 <p>Two structural properties follow directly from this definition and are the ones the biquaternion interpretation has to respect.</p>
 <p><strong>Composition.</strong> The kernel is a semigroup in time:
@@ -358,8 +358,8 @@ one factor of the square root of the metric determinant per spatial slice. This 
 <td>Generator of the phase; exchanges the sectors, $i\mathbb{M}_\pm=\mathbb{M}_\mp$</td>
 </tr>
 <tr>
-<td>$K_\varepsilon(x',x)$</td>
-<td>Single-step kernel; phase $=\frac{i}{\hbar}\big(\frac{m(x'-x)^2}{2\varepsilon}-\varepsilon V\big)$</td>
+<td>$K_\varepsilon(x_{\mathrm f},x)$</td>
+<td>Single-step kernel; phase $=\frac{i}{\hbar}\big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon V\big)$</td>
 </tr>
 <tr>
 <td>$K_0$</td>

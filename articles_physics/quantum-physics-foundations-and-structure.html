@@ -101,7 +101,7 @@ p(a) = \mathrm{Tr}(P_a \rho),
 $$</p>
 <p>and the post-measurement state, conditioned on outcome $a$, is</p>
 <p>$$
-\rho' = \frac{P_a \rho P_a}{\mathrm{Tr}(P_a \rho)}.
+\rho_2 = \frac{P_a \rho P_a}{\mathrm{Tr}(P_a \rho)}.
 $$</p>
 <p>These four postulates are the foundation of the theory. Everything else — the uncertainty principle, the no-cloning theorem, entanglement, decoherence — is a consequence of them or an application of them.</p>
 <h2 id="states">States</h2>
@@ -216,7 +216,7 @@ $$</p>
 <p>where $a^{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $a^{\mathrm{fop}}$ and the Bloch vector $\vec r$.</p>
 <p>After the measurement with outcome $+$, the state collapses to the pure state</p>
 <p>$$
-\rho' = \frac{1}{2}\left(I + a^{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
+\rho_2 = \frac{1}{2}\left(I + a^{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
 $$</p>
 <p>i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.</p>
 <h2 id="dynamics">Dynamics</h2>
@@ -250,7 +250,7 @@ $$</p>
 <p>Reversibility is one of the structural features of quantum physics that distinguishes unitary evolution from measurement. The measurement process, described by the projection $P_a$, is not reversible (the information about the parts of the state that are projected out is lost). This distinction between reversible evolution and irreversible measurement is one of the deepest features of the theory.</p>
 <h2 id="measurement">Measurement</h2>
 <h3 id="projective-measurements">Projective Measurements</h3>
-<p>A <strong>projective measurement</strong> of an observable $A = \sum_a a P_a$ is the ideal measurement described in Postulate 4. The outcomes are the eigenvalues of $A$, with probabilities $p(a) = \mathrm{Tr}(P_a \rho)$, and the post-measurement state is the projection $\rho' = P_a \rho P_a / p(a)$.</p>
+<p>A <strong>projective measurement</strong> of an observable $A = \sum_a a P_a$ is the ideal measurement described in Postulate 4. The outcomes are the eigenvalues of $A$, with probabilities $p(a) = \mathrm{Tr}(P_a \rho)$, and the post-measurement state is the projection $\rho_2 = P_a \rho P_a / p(a)$.</p>
 <p>Projective measurements are the ideal limit of realistic measurements. In practice, measurements are often weaker or incomplete, and their description requires the more general framework of <strong>positive operator-valued measures (POVMs)</strong>.</p>
 <h3 id="povms">POVMs</h3>
 <p>A <strong>positive operator-valued measure (POVM)</strong> is a set of positive operators $\{E_i\}$ on $\mathcal{H}$ that sum to the identity:</p>

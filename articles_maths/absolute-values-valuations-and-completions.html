@@ -207,12 +207,12 @@ $$</p>
 <p><strong>Proof.</strong> The assertions about the valuation ring, maximal ideal, residue field and value group follow from the corresponding facts for $\mathbb{Z}_{(p)}$ and the persistence of the residue field under completion (part (c) of the completion theorem); the expansion is the $p$-adic analogue of decimal expansion for fractions.</p>
 <p><strong>Theorem (Hensel's lemma).</strong> Let $F$ be complete with respect to a non-Archimedean absolute value, let $\mathcal{O}$ be its valuation ring, and let $f \in \mathcal{O}[x]$. If there is $a \in \mathcal{O}$ with</p>
 <p>$$
-\lvert f(a) \rvert < \lvert f'(a) \rvert^2,
+\lvert f(a) \rvert < \lvert \frac{df}{dx}(a) \rvert^2,
 $$</p>
-<p>then there is a unique $b \in \mathcal{O}$ with $f(b) = 0$ and $\lvert b - a \rvert < \lvert f'(a) \rvert$.</p>
-<p><strong>Proof sketch.</strong> The Newton iteration $a_{n+1} = a_n - f(a_n)/f'(a_n)$ is defined by the hypothesis and is Cauchy for the non-Archimedean absolute value, with $\lvert a_{n+1} - a_n \rvert$ decreasing quadratically; completeness gives a limit $b$, and continuity of $f$ gives $f(b) = 0$. Uniqueness is by the ultrametric estimate on $f(b) - f(b')$.</p>
+<p>then there is a unique $b \in \mathcal{O}$ with $f(b) = 0$ and $\lvert b - a \rvert < \lvert \frac{df}{dx}(a) \rvert$.</p>
+<p><strong>Proof sketch.</strong> The Newton iteration $a_{n+1} = a_n - f(a_n)/\frac{df}{dx}(a_n)$ is defined by the hypothesis and is Cauchy for the non-Archimedean absolute value, with $\lvert a_{n+1} - a_n \rvert$ decreasing quadratically; completeness gives a limit $b$, and continuity of $f$ gives $f(b) = 0$. Uniqueness is by the ultrametric estimate on $f(b) - f(b')$.</p>
 <p><strong>Corollary (roots of units).</strong> Let $p$ be odd and let $u \in \mathbb{Z}_p^\times$. Then $u$ is a square in $\mathbb{Z}_p$ if and only if its image in $\mathbb{F}_p^\times$ is a square.</p>
-<p><strong>Proof.</strong> Apply Hensel's lemma to $f(x) = x^2 - u$ at a lift $a$ of a square root of the image of $u$ in $\mathbb{F}_p$: since the image is a nonzero square, $f'(a) = 2a$ has absolute value $1$, while $\lvert f(a) \rvert \leq 1/p < 1 = \lvert f'(a) \rvert^2$, so the hypothesis of Hensel's lemma holds.</p>
+<p><strong>Proof.</strong> Apply Hensel's lemma to $f(x) = x^2 - u$ at a lift $a$ of a square root of the image of $u$ in $\mathbb{F}_p$: since the image is a nonzero square, $\frac{df}{dx}(a) = 2a$ has absolute value $1$, while $\lvert f(a) \rvert \leq 1/p < 1 = \lvert \frac{df}{dx}(a) \rvert^2$, so the hypothesis of Hensel's lemma holds.</p>
 <p><strong>Theorem (algebraic closure of $\mathbb{Q}_p$).</strong> The algebraic closure $\overline{\mathbb{Q}_p}$ is not complete; its completion $\mathbb{C}_p$ is algebraically closed and complete, and $\mathbb{C}_p$ is the smallest algebraically closed and complete extension of $\mathbb{Q}_p$.</p>
 <p><strong>Proof sketch.</strong> The valuation of $\mathbb{Q}_p$ extends uniquely to $\overline{\mathbb{Q}_p}$; the value group of the algebraic closure is $\mathbb{Q}$ and its residue field is $\overline{\mathbb{F}_p}$, and by part (c) above both are unchanged when the completion is taken, so $\mathbb{C}_p$ has value group $\mathbb{Q}$ and residue field $\overline{\mathbb{F}_p}$. Krasner's lemma shows that the completion of an algebraic closure of a complete non-Archimedean field is algebraically closed.</p>
 <h3 id="completions-and-the-number-systems">Completions and the Number Systems</h3>
@@ -337,7 +337,7 @@ $$</p>
 <td>Induced metric</td>
 </tr>
 <tr>
-<td>$f'(x)$</td>
+<td>$\frac{df}{dx}$</td>
 <td>Formal derivative, in Hensel's lemma</td>
 </tr>
 </tbody>

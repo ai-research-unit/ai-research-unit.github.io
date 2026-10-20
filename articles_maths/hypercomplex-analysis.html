@@ -71,34 +71,34 @@
 <p>The point of departure is that the naive generalisation fails. Over a commutative field $\mathbb{K}$ the differentiable functions of a $\mathbb{K}$-variable are the holomorphic functions, and there are many of them. Over a non-commutative algebra, requiring the differential to be linear over the algebra forces the function to be affine; the class is far too small to support a theory. The remedy, standard in the subject, is to fix a first-order operator built from the algebra and to study the functions that operator annihilates. This is the general method, and every particular hypercomplex theory is an instance of it.</p>
 <p>Throughout, $A$ is a finite-dimensional unital associative algebra over $\mathbb{R}$, of dimension $m$, with a fixed basis $e_t = 1, e_1, \dots, e_{m-1}$. The underlying real vector space is identified with $\mathbb{R}^m$ and carries the Euclidean topology, which by <em>Topological Algebras and Banach Algebras</em> is the unique topology making $A$ a topological algebra. Thus $A$ is a real Banach algebra, open subsets of $A$ are open subsets of $\mathbb{R}^m$, and differentiability is Fréchet differentiability. The theory is over $\mathbb{R}$; the complex case is the case $A = \mathbb{C}$.</p>
 <h2 id="the-failure-of-algebra-differentiability">The Failure of Algebra-Differentiability</h2>
-<p><strong>Definition.</strong> Let $\Omega \subseteq A$ be open and let $f : \Omega \to A$. Then $f$ is <strong>left $A$-differentiable</strong> at $x \in \Omega$ if there exists $f'(x) \in A$ with</p>
+<p><strong>Definition.</strong> Let $\Omega \subseteq A$ be open and let $f : \Omega \to A$. Then $f$ is <strong>left $A$-differentiable</strong> at $x \in \Omega$ if there exists $\frac{df}{dx} \in A$ with</p>
 <p>$$
-f(x + h) = f(x) + f'(x)\,h + o(\|h\|) \qquad (h \to 0),
+f(x + h) = f(x) + \frac{df}{dx}\,h + o(\|h\|) \qquad (h \to 0),
 $$</p>
-<p>and <strong>right $A$-differentiable</strong> at $x$ if the same holds with $h\,f'(x)$ in place of $f'(x)h$. The function is left (respectively right) $A$-differentiable on $\Omega$ if it is so at every point.</p>
+<p>and <strong>right $A$-differentiable</strong> at $x$ if the same holds with $h\,\frac{df}{dx}$ in place of $\frac{df}{dx}h$. The function is left (respectively right) $A$-differentiable on $\Omega$ if it is so at every point.</p>
 <p>For a commutative $A$ the two notions agree, and for $A = \mathbb{C}$ they are the usual complex differentiability; the class of such functions is the class of holomorphic functions, which is as large as complex analysis requires. In the non-commutative case the class collapses.</p>
 <p><strong>Theorem (rigidity over $\mathbb{H}$).</strong> Let $\Omega \subseteq \mathbb{H}$ be a domain. A $C^1$ function $f : \Omega \to \mathbb{H}$ that is left $\mathbb{H}$-differentiable at every point of $\Omega$ is of the form</p>
 <p>$$
 f(x) = ax + b, \qquad a, b \in \mathbb{H}.
 $$</p>
-<p><em>Proof.</em> Writing the differential as left multiplication by $f'(x)$ and comparing with the Fréchet derivative of $f$ expressed in the four real coordinates, one obtains the quaternionic Cauchy–Riemann equations; these force every second partial derivative of every component to vanish. Hence each component is affine in the coordinates, and the multiplicative constraint then forces the matrix of the linear part to be left multiplication by a quaternion and the constant part to be an arbitrary quaternion.</p>
+<p><em>Proof.</em> Writing the differential as left multiplication by $\frac{df}{dx}$ and comparing with the Fréchet derivative of $f$ expressed in the four real coordinates, one obtains the quaternionic Cauchy–Riemann equations; these force every second partial derivative of every component to vanish. Hence each component is affine in the coordinates, and the multiplicative constraint then forces the matrix of the linear part to be left multiplication by a quaternion and the constant part to be an arbitrary quaternion.</p>
 <p><strong>Corollary.</strong> Over $\mathbb{H}$ the requirement that the differential be left multiplication by an element of $A$ is too strong: the only such functions on a domain are the affine ones. The same collapse occurs over each real algebra for which the rigidity theorem holds. A theory rich enough to be useful must therefore weaken the differentiability requirement, and the weakening adopted in the subject is to require the vanishing of a fixed first-order operator.</p>
 <p><strong>Remark (the ambiguity of the difference quotient).</strong> The definition above is the difference-quotient definition written without a quotient. Classically one writes</p>
 <p>$$
-f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h},
+\frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h},
 $$</p>
 <p>and this expression requires $h$ to be invertible in order to be formed at all. In a finite-dimensional real algebra the invertible elements form an open set, but that set is not all of $A\setminus\{0\}$ unless $A$ is a division algebra: for the split complex numbers the zero divisors are the real multiples of $1 \pm j$, for the dual numbers they are the multiples of $\varepsilon$. The limit is therefore taken over a set of directions with a hole in it, and the value of the limit may depend on the side from which the invertible elements are approached; this is the origin of the distinction between left and right $A$-differentiability, and it is why the difference quotient is not the right primitive notion over a general algebra.</p>
 <p><strong>Remark (over-determination).</strong> The condition that the differential be a multiplication is a strong linear constraint, and it is worth counting. The Fréchet derivative $df(x)$ is an arbitrary $\mathbb{R}$-linear map $A \to A$, and these form a space of dimension $m^2$; the left multiplications by elements of $A$ form the subspace $L_A$ of dimension $m$, isomorphic to $A$ itself. Requiring $df(x) \in L_A$ therefore imposes $m^2 - m$ independent linear conditions on the $m^2$ entries of the differential at each point. For $m = 2$ the two conditions are the Cauchy–Riemann equations, and the resulting class of functions is large; for $m = 4$ over $\mathbb{H}$ the twelve conditions admit only the affine solutions. The count $m^2 - m$ is thus the quantitative expression of the over-determination of the difference-quotient derivative, and it shows that the failure is a matter of the algebra and not merely of the dimension: a commutative algebra of large dimension, such as $\mathbb{C} \times \mathbb{C}$, still admits a rich class of $A$-differentiable functions, because its multiplications are simultaneously diagonalisable.</p>
 <h2 id="holomorphy-in-a-commutative-subalgebra">Holomorphy in a Commutative Subalgebra</h2>
 <p>The first of the two notions that survive over an algebra is a restriction of the classical one: one chooses a commutative subalgebra and asks for differentiability there.</p>
-<p><strong>Definition.</strong> Let $C \subseteq A$ be a commutative subalgebra containing $1_A$, and let $\Omega \subseteq C$ be relatively open. A function $f : \Omega \to A$ is <strong>$C$-holomorphic</strong> on $\Omega$ if it is $C$-differentiable there, that is, if for each $x \in \Omega$ there is $f'(x) \in A$ with</p>
+<p><strong>Definition.</strong> Let $C \subseteq A$ be a commutative subalgebra containing $1_A$, and let $\Omega \subseteq C$ be relatively open. A function $f : \Omega \to A$ is <strong>$C$-holomorphic</strong> on $\Omega$ if it is $C$-differentiable there, that is, if for each $x \in \Omega$ there is $\frac{df}{dx} \in A$ with</p>
 <p>$$
-f(x + h) = f(x) + f'(x)\,h + o(\|h\|) \qquad (h \in C, \ h \to 0).
+f(x + h) = f(x) + \frac{df}{dx}\,h + o(\|h\|) \qquad (h \in C, \ h \to 0).
 $$</p>
 <p>Since $C$ is commutative, no distinction between the left and the right version arises inside $C$; the values of $f$ still lie in the possibly non-commutative algebra $A$, and it is only the variable that is restricted.</p>
 <p><strong>Proposition (power series).</strong> Let $f(x) = \sum_{n \geq 0} a_n (x - b)^n$ with $a_n \in A$, convergent on a $C$-ball $B_C(b, r) = \{x \in C : \|x - b\| < r\}$. Then $f$ is $C$-holomorphic on that ball, with</p>
 <p>$$
-f'(x) = \sum_{n \geq 1} n\,a_n (x - b)^{n-1}.
+\frac{df}{dx} = \sum_{n \geq 1} n\,a_n (x - b)^{n-1}.
 $$</p>
 <p><em>Proof.</em> Since $C$ is commutative, $(b + h)^n - b^n = n b^{n-1}h + O(\|h\|^2)$ for $h \in C$, by the binomial theorem, and the terms of order $\geq 2$ contribute $O(\|h\|^2)$ in the norm by submultiplicativity. Uniform convergence on closed subballs of the differentiated series gives termwise differentiation, so the displayed series is the derivative.</p>
 <p><strong>Example ($A = \mathbb{H}$, $C = \mathbb{R}[u] \cong \mathbb{C}$).</strong> Let $u \in \mathbb{H}$ satisfy $u^2 = -1$, so that $C = \mathbb{R}[u]$ is isomorphic to $\mathbb{C}$; for instance $C = \mathbb{R}[\vec e_x]$. Then the $C$-holomorphic functions with values in $\mathbb{H}$ are exactly the holomorphic functions of the complex variable $x \in C$ with coefficients in $\mathbb{H}$, they satisfy the Cauchy–Riemann equations in the two coordinates of $C$, they obey the classical Cauchy theorem for $\mathbb{H}$-valued integrals along curves in $C$, and they form a class as large as the holomorphic functions with values in $\mathbb{H} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{B} \cong M_2(\mathbb{C})$ (<em>Biquaternion Algebra ($\mathbb{B}$)</em>). This is the sense in which complex analysis survives verbatim inside a non-commutative algebra.</p>
@@ -192,7 +192,7 @@ $$</p>
 <p>$$
 f(x_t + jx_1) = \exp(-(x_t - jx_1)^2) = \exp(-(x_t^2+x_1^2))\bigl(\cosh(2x_tx_1) + j\sinh(2x_tx_1)\bigr)
 $$</p>
-<p>is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{D}'$, a regular function has the form $f = u(x_1) + \varepsilon v(x_t, x_1)$ with $\partial/\partial Q_t v = -u'$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.</p>
+<p>is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{D}'$, a regular function has the form $f = u(x_1) + \varepsilon v(x_t, x_1)$ with $\partial/\partial Q_t v = -\frac{du}{dx_1}$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.</p>
 <h2 id="consequences-of-ellipticity">Consequences of Ellipticity</h2>
 <p>Assume from here on that $(A,D)$ is an elliptic hypercomplex system, so that $D\bar D = \bar D D = \Delta$, and that $\Omega \subseteq A$ is a domain, that is, open and connected.</p>
 <p><strong>Theorem (regular implies harmonic).</strong> If $f$ is left regular of class $C^2$ on $\Omega$, then each component of $f$ is harmonic:</p>
@@ -284,7 +284,7 @@ $$</p>
 <td>$\mathbb{D}'$</td>
 <td>2</td>
 <td>$\partial/\partial Q_t + \varepsilon\partial/\partial Q_x$</td>
-<td>$u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial Q_t v = -u'$</td>
+<td>$u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial Q_t v = -\frac{du}{dx_1}$</td>
 <td>ellipticity, maximum principle, Liouville</td>
 </tr>
 <tr>
@@ -378,7 +378,7 @@ $$</p>
 </tr>
 <tr>
 <td>$A$-differentiability</td>
-<td>$f(x+h) = f(x) + f'(x)h + o(\|h\|)$, too rigid for non-commutative $A$</td>
+<td>$f(x+h) = f(x) + \frac{df}{dx}h + o(\|h\|)$, too rigid for non-commutative $A$</td>
 </tr>
 <tr>
 <td>$C$-holomorphy</td>

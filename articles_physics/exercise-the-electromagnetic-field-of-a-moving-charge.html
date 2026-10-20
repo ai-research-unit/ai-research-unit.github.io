@@ -331,21 +331,21 @@ $$
 whose velocity is $-\vec v_b$. Equivalently, the rotor carries the lab to the frame with velocity $+\vec v_b$; a particle at rest in the lab appears, in that frame, to move with $-\vec v_b$. This was checked numerically: for $\vec v_b = 0.6c\,\vec u_z$ the conjugated rest four-velocity has velocity exactly $-0.6c\,\vec u_z$. We use this convention consistently; the conjugate $\tilde U_{\mathrm b}^{\natural} = \tilde U_{\mathrm b}^{-1}$ generates the inverse (moving-to-lab) transformation.</p>
 <p><strong>Solution (b).</strong> The field strength is a rank-two object, not an element of $\mathbb{M}_-$; the four-vector rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ is defined for four-vectors, and it does <em>not</em> give the correct field transformation. The correct law for a pure boost is the similarity
 $$
-\tilde{F}' = \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b}
+\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b}
 = \tilde U_{\mathrm b}^{-1}\tilde{F}\,\tilde U_{\mathrm b} ,
 $$
-which is the biquaternion form of the standard boost of the electromagnetic field. To see the difference concretely, take the test field $\vec E = (0.3,-0.7,0.4)$, $\vec B = (0.5,0.2,-0.6)$ and a boost with $\vec v_b = 0.6c\,\vec u_z$. The standard boost gives $\vec E' = (0.225,-0.5,0.4)$, $\vec B' = (0.1,0.025,-0.6)$, and the similarity reproduces exactly that. The naive conjugation $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$ instead gives $\vec E = (0.3,-0.7,0.5)$ with a magnetic error of $0.4$, so it is not a transformation law for the field at all. More generally, the similarity reproduces the standard relations
+which is the biquaternion form of the standard boost of the electromagnetic field. To see the difference concretely, take the test field $\vec E = (0.3,-0.7,0.4)$, $\vec B = (0.5,0.2,-0.6)$ and a boost with $\vec v_b = 0.6c\,\vec u_z$. The standard boost gives $\vec E_2 = (0.225,-0.5,0.4)$, $\vec B_2 = (0.1,0.025,-0.6)$, and the similarity reproduces exactly that. The naive conjugation $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$ instead gives $\vec E = (0.3,-0.7,0.5)$ with a magnetic error of $0.4$, so it is not a transformation law for the field at all. More generally, the similarity reproduces the standard relations
 $$
-\vec E_\parallel' = \vec E_\parallel,
+\vec E_{\parallel,2} = \vec E_\parallel,
 \quad
-\vec E_\perp' = \gamma\left(\vec E_\perp + \vec v_b\times\vec B_\perp\right),
+\vec E_{\perp,2} = \gamma\left(\vec E_\perp + \vec v_b\times\vec B_\perp\right),
 \quad
-\vec B_\parallel' = \vec B_\parallel,
+\vec B_{\parallel,2} = \vec B_\parallel,
 \quad
-\vec B_\perp' = \gamma\left(\vec B_\perp - \frac{1}{c^2}\vec v_b\times\vec E_\perp\right)
+\vec B_{\perp,2} = \gamma\left(\vec B_\perp - \frac{1}{c^2}\vec v_b\times\vec E_\perp\right)
 $$
 to machine precision. Across six random boosts and random test fields, the similarity $\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ matched the standard formulas to $4\times10^{-16}$, while $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$ and its variants did not. The similarity preserves purity of the vector, $\mathrm{Sc}(\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}) = \mathrm{Sc}(\tilde{F}) = 0$, as it must.</p>
-<p><strong>Solution (c).</strong> Boosting the rest-frame Coulomb field of the charge to the lab frame with the similarity above reproduces the velocity field of Problem 3. In the rest frame the field at the corresponding event is $\vec E' = \frac{ϙ}{4\pi\epsilon}\vec R'/R'^3$ with $\vec R'$ the boosted separation, and transforming back gives
+<p><strong>Solution (c).</strong> Boosting the rest-frame Coulomb field of the charge to the lab frame with the similarity above reproduces the velocity field of Problem 3. In the rest frame the field at the corresponding event is $\vec E_2 = \frac{ϙ}{4\pi\epsilon}\vec R_2/R_2^3$ with $\vec R_2$ the boosted separation, and transforming back gives
 $$
 \vec E_v = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\left(\vec u_R-\vec\beta\right)}{\kappa^3 R^2}
 $$
@@ -370,7 +370,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 <h2 id="further-problems">Further Problems</h2>
 <p><strong>1. Expand the brackets by hand.</strong> The two biquaternion brackets of Problem 2 were verified here by finite differences and by matching to the component formulas, but the component expansion of $\tilde{F}_v$ and $\tilde{F}_a$ was not carried out symbolically in the article. Do it: expand $\tilde{\mathcal L}_{\mathrm{ret}}\tilde{V}/\gamma$, $\tilde{\mathcal L}_{\mathrm{ret}}d\vec\beta/dt_r$ (the scalar $-2$ aside), and $\left(\vec u_R-\vec\beta\right)\tilde{V}/\gamma$ into scalar and vector parts, and show that the vector part of $gD^{-2}\tilde{F}_v$ is $i\sqrt{\epsilon}\vec E_v-\sqrt{\mu}\vec H_v$. This is the one purely mechanical step left as an exercise. It is where the $\kappa^3$ and the factor $1-\beta^2$ are seen to emerge.</p>
 <p><strong>2. The present-position fallacy.</strong> Compute the field of a uniformly moving charge using the <em>present</em> position $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z$ in place of the retarded position, and show that the result differs from $\vec E_v$. Identify which of the two falloff laws fails and by how much. This makes quantitative why the field point and the source point must be distinguished.</p>
-<p><strong>3. The transformation law from the algebra.</strong> Derive $\tilde{F}' = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ directly from the biquaternion representation of the field strength as a rank-two object, rather than by comparison with the standard boost formulas. The Lorentz-transformation article's open question on higher-rank tensors is the parent of this problem.</p>
+<p><strong>3. The transformation law from the algebra.</strong> Derive $\tilde{F}_2 = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ directly from the biquaternion representation of the field strength as a rank-two object, rather than by comparison with the standard boost formulas. The Lorentz-transformation article's open question on higher-rank tensors is the parent of this problem.</p>
 <p><strong>4. The caustic and the superluminal case.</strong> Determine the locus $\kappa = 0$ for a specified accelerated worldline, show that the retarded-time equation has a double root there, and describe what a point charge's field does as it is approached. Then ask what, if anything, the biquaternionic form can say about a putative superluminal source.</p>
 <p><strong>5. Radiation reaction and the far zone.</strong> Starting from the far-zone field $\vec E\to\vec E_a$, evaluate the Poynting flux through a large sphere and recover the relativistic Larmor power of the parent as the biquaternion norm of the four-acceleration. State whether any step requires the velocity field to be neglected or only requires it to be subleading.</p>
 <p><strong>6. The sibling case.</strong> Specialise every result to $d\vec v/dt_r = 0$ and reconstruct the Heaviside ellipsoid field of <em>Exercise: The Electromagnetic Field of a Uniformly Moving Charge</em>, including the equivalence with the boosted Coulomb field of Problem 5. Compare the two routes for economy and for the transparency of the sign conventions.</p>
@@ -506,7 +506,7 @@ with $\tilde{\mathcal L}_{\mathrm{ret}} = \tilde{\mathcal L}(\vec u_R) = i\tilde
 <td>Boost rotor; carries lab to the frame moving with $+\vec v_b$</td>
 </tr>
 <tr>
-<td>$\tilde{F}' = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$</td>
+<td>$\tilde{F}_2 = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$</td>
 <td>Boost transformation of the field (similarity, not conjugation)</td>
 </tr>
 <tr>

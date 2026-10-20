@@ -103,9 +103,9 @@ $$</p>
 <h3 id="analytic-functions-with-values-in-a-banach-space">Analytic Functions with Values in a Banach Space</h3>
 <p><strong>Definition.</strong> Let $A$ be a Banach space and $\Omega \subseteq \mathbb{C}$ open. A function $f:\Omega \to A$ is <strong>analytic</strong> if for every $z \in \Omega$ the limit</p>
 <p>$$
-f'(z)=\lim_{h \to 0}\frac{f(z+h)-f(z)}{h}
+\frac{df}{dz}=\lim_{h \to 0}\frac{f(z+h)-f(z)}{h}
 $$</p>
-<p>exists in the norm of $A$. Equivalently, $f$ is analytic if it is weakly analytic, that is, if $z \mapsto \varphi(f(z))$ is analytic for every $\varphi \in A^*$; the two notions agree because Cauchy's integral formula for a scalar analytic function may be applied to the bounded functional $\varphi$, and then utilised with a norming functional to recover the norm estimate for $f'$.</p>
+<p>exists in the norm of $A$. Equivalently, $f$ is analytic if it is weakly analytic, that is, if $z \mapsto \varphi(f(z))$ is analytic for every $\varphi \in A^*$; the two notions agree because Cauchy's integral formula for a scalar analytic function may be applied to the bounded functional $\varphi$, and then utilised with a norming functional to recover the norm estimate for $\frac{df}{dz}$.</p>
 <p><strong>Theorem (maximum modulus).</strong> If $f$ is analytic on $\Omega$ and continuous on $\overline \Omega$ with $\Omega$ bounded, then $\|f\|$ attains its maximum on the boundary $\partial \Omega$; more precisely $\sup_\Omega\|f\|\le\sup_{\partial \Omega}\|f\|$.</p>
 <p><em>Proof.</em> Apply the scalar maximum modulus principle to $z\mapsto\varphi(f(z))$ for each $\varphi \in A^*$ with $\|\varphi\|\le1$; this gives $\|\varphi(f(z))\|\le\sup_{\partial \Omega}\|\varphi(f)\|$, and taking the supremum over such $\varphi$ and using $\|a\|=\sup_{\|\varphi\|\le1}|\varphi(a)|$, which is a corollary of Hahn–Banach in <em>Normed and Banach Spaces</em>, gives the result.</p>
 <p><strong>Lemma (three-lines).</strong> Let $S=\{z:0<\operatorname{Re}z<1\}$ and let $f$ be bounded and continuous on $\overline S$ and analytic on $S$. Suppose $\|f(it)\| \le M_0$ and $\|f(1+it)\| \le M_1$ for all real $t$. Then $\|f(\theta)\| \le M_0^{1-\theta}M_1^{\theta}$ for $0<\theta<1$.</p>

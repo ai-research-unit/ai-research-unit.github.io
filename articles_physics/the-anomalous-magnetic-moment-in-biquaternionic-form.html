@@ -86,11 +86,11 @@ $$</p>
 <p>$$
 S_F(p)=\frac{i(\not p+m)}{p^2-m^2+i\epsilon}=-\frac{i(\not p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
 $$</p>
-<p>The trace pairing is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.</p>
+<p>The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.</p>
 <h2 id="the-vertex-function-and-the-form-factors">The Vertex Function and the Form Factors</h2>
-<p><strong>The vertex.</strong> The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma^\mu(p',p)$, where $p$ and $p'$ are the incoming and outgoing fermion momenta and $k=p'-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\not pu=mu$, $\bar w'\not p'=m\bar w'$, and the discrete symmetries reduce $\Gamma^\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:</p>
+<p><strong>The vertex.</strong> The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma^\mu(p_2,p)$, where $p$ and $p_2$ are the incoming and outgoing fermion momenta and $k=p_2-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\not pu=mu$, $\bar w_2\not p_2=m\bar w_2$, and the discrete symmetries reduce $\Gamma^\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:</p>
 <p>$$
-\Gamma^\mu(p',p)=\gamma^\mu F_1(k^2)+\frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2(k^2) ,
+\Gamma^\mu(p_2,p)=\gamma^\mu F_1(k^2)+\frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2(k^2) ,
 \qquad
 \sigma^{\mu\nu}=\frac{i}{2}\big[\gamma^\mu,\gamma^\nu\big] .
 $$</p>
@@ -109,10 +109,10 @@ $$</p>
 <p>is therefore the exact algebraic place where the two structures separate: the symmetric part is the metric (one number per pair of indices), the antisymmetric part is the bivector. The magnetic form factor is the coefficient of the antisymmetric part.</p>
 <p><strong>The Gordon decomposition.</strong> The separation is not merely formal; on shell it is an identity, the Gordon decomposition, which expresses the single-generator vertex as the sum of a convection term and the magnetic term:</p>
 <p>$$
-\bar w(p')\gamma^\mu w(p)
-=\bar w(p')\left[\frac{(p+p')^\mu}{2m}+\frac{i\sigma^{\mu\nu}k_\nu}{2m}\right]w(p) .
+\bar w(p_2)\gamma^\mu w(p)
+=\bar w(p_2)\left[\frac{(p+p_2)^\mu}{2m}+\frac{i\sigma^{\mu\nu}k_\nu}{2m}\right]w(p) .
 $$</p>
-<p>The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $w=(\not p+m)\omega$ for random $\omega$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar w'\gamma^\mu w=\bar w'(\not p'\gamma^\mu+\gamma^\mu\not p)w$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction <em>to the coefficient of the second term</em>; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $k^2=0$.</p>
+<p>The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $w=(\not p+m)\omega$ for random $\omega$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar w_2\gamma^\mu w=\bar w_2(\not p_2\gamma^\mu+\gamma^\mu\not p)w$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction <em>to the coefficient of the second term</em>; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $k^2=0$.</p>
 <h2 id="the-biquaternion-transcription">The Biquaternion Transcription</h2>
 <p>The biquaternion algebra enters the vertex through the dictionary, and it names the two structures in its own terms.</p>
 <p><strong>The generators and the bivectors.</strong> The dictionary identifies the even Clifford elements with the algebra:</p>
@@ -268,15 +268,15 @@ $$</p>
 </tr>
 <tr>
 <td>Gordon identity</td>
-<td>$\bar w'\gamma^\mu w=\bar w'[(p+p')^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$</td>
+<td>$\bar w_2\gamma^\mu w=\bar w_2[(p+p_2)^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$</td>
 </tr>
 <tr>
 <td>Parent identity</td>
-<td>$2m\bar w'\gamma^\mu w=\bar w'(\not p'\gamma^\mu+\gamma^\mu\not p)w$: max deviation $4.4\times10^{-15}$</td>
+<td>$2m\bar w_2\gamma^\mu w=\bar w_2(\not p_2\gamma^\mu+\gamma^\mu\not p)w$: max deviation $4.4\times10^{-15}$</td>
 </tr>
 <tr>
 <td>On-shell conditions</td>
-<td>$(\not p-m)w=0$, $\bar w'(\not p'-m)=0$: residuals $2.2\times10^{-16}$, $1.1\times10^{-15}$</td>
+<td>$(\not p-m)w=0$, $\bar w_2(\not p_2-m)=0$: residuals $2.2\times10^{-16}$, $1.1\times10^{-15}$</td>
 </tr>
 <tr>
 <td>$k^2=0$ integral</td>
@@ -296,7 +296,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The on-shell spinors were built as $w=(\not p+m)\omega$ for random $\omega$, which produces positive-energy solutions automatically; the momenta were $p,p'$ on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.</p>
+<p>The on-shell spinors were built as $w=(\not p+m)\omega$ for random $\omega$, which produces positive-energy solutions automatically; the momenta were $p,p_2$ on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.</p>
 <h2 id="what-is-standard-and-what-the-algebras">What Is Standard and What the Algebra's</h2>
 <p><strong>Standard, transcribed.</strong> The vertex decomposition into $F_1$ and $F_2$; the tree-level $g=2$; the Gordon decomposition; the one-loop diagram and its Feynman-parameter representation; the Ward-identity cancellation of the divergence; the value $a=\alpha/2\pi$; the higher-order coefficients; the comparison with the measured electron anomaly; the Clifford trace and contraction identities; the explicit $\gamma$ matrices and their anticommutators.</p>
 <p><strong>The algebra's own.</strong></p>
@@ -340,7 +340,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\Gamma^\mu(p',p)$</td>
+<td>$\Gamma^\mu(p_2,p)$</td>
 <td>Electromagnetic vertex; $-ie\Gamma^\mu$ is the amplitude</td>
 </tr>
 <tr>
@@ -360,11 +360,11 @@ $$</p>
 <td>Symmetric/antisymmetric generator split</td>
 </tr>
 <tr>
-<td>$\bar w'\gamma^\mu w=\bar w'[(p+p')^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$</td>
+<td>$\bar w_2\gamma^\mu w=\bar w_2[(p+p_2)^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$</td>
 <td>Gordon decomposition (verified $3.0\times10^{-15}$)</td>
 </tr>
 <tr>
-<td>$k=p'-p$</td>
+<td>$k=p_2-p$</td>
 <td>Momentum transfer</td>
 </tr>
 <tr>

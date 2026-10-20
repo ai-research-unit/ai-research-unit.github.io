@@ -112,11 +112,11 @@ and both numerator and denominator vanish at $n=1$. L'Hôpital's rule gives
 $$
 \lim_{n\to1}S_n
 =\frac{\frac{d}{dn}\log Z_n\big|_{n=1}}{\frac{d}{dn}(1-n)\big|_{n=1}}
-=-\frac{Z_1'}{1}
+=-\frac{\left.\frac{dZ_n}{dn}\right|_{n=1}}{1}
 =-\sum_i\lambda_i\log\lambda_i
 =-\mathrm{Tr}\big(\rho_A\log\rho_A\big)=S_A,
 $$
-using $Z_1'=\sum_i\lambda_i\log\lambda_i$. Hence
+using $\left.\frac{dZ_n}{dn}\right|_{n=1}=\sum_i\lambda_i\log\lambda_i$. Hence
 $$
 S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n\Big|_{n=1}.
 $$
@@ -157,12 +157,12 @@ Z_n=\mathrm{Tr}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\mathsf{C}_n\Big].
 $$
 This is the finite-dimensional image of the $n$-sheeted cover: the sheets are the replicas, the branch locus is the $A$ factor, and the cyclic joining of the sheets is the cyclic permutation. The state is the $n$-fold product, so the expectation is a product-state matrix element, which is why the computation is elementary.</p>
 <h3 id="the-swap-operator-and-the-purity">The Swap Operator and the Purity</h3>
-<p>The case $n=2$ is the one used most, and it exhibits the mechanism. The shift is the <strong>swap</strong> $\mathbb F_{AA'}$ on the two copies of $A$, and
+<p>The case $n=2$ is the one used most, and it exhibits the mechanism. The shift is the <strong>swap</strong> $\mathbb F_{AA_{\mathrm r}}$ on the two copies of $A$, and
 $$
 Z_2=\mathrm{Tr}\big(\rho_A^2\big)
-=\mathrm{Tr}\Big[\big(\rho_{AB}\otimes\rho_{A'B'}\big)\,\mathbb F_{AA'}\Big],
+=\mathrm{Tr}\Big[\big(\rho_{AB}\otimes\rho_{A_{\mathrm r}B_{\mathrm r}}\big)\,\mathbb F_{AA_{\mathrm r}}\Big],
 $$
-where the primed factors are the second replica. The identity was checked on the two-qubit state of the next section: with $\rho_{AB}=|\psi_\theta\rangle\langle\psi_\theta|$ and $\theta=0.4$, both sides equal $0.7427001194$, agreeing with $\cos^4\theta+\sin^4\theta$ to twelve digits. The purity is thus a swap expectation, and the Rényi entropy of order two is $S_2=-\log Z_2$.</p>
+where the factors carrying the replica subscript are the second replica. The identity was checked on the two-qubit state of the next section: with $\rho_{AB}=|\psi_\theta\rangle\langle\psi_\theta|$ and $\theta=0.4$, both sides equal $0.7427001194$, agreeing with $\cos^4\theta+\sin^4\theta$ to twelve digits. The purity is thus a swap expectation, and the Rényi entropy of order two is $S_2=-\log Z_2$.</p>
 <h2 id="the-schmidt-decomposition-and-the-entanglement-spectrum">The Schmidt Decomposition and the Entanglement Spectrum</h2>
 <p>For a <strong>pure</strong> bipartite state the reduced spectra of the two sides coincide, and the reason is the Schmidt decomposition. Every $|\Psi\rangle\in\mathcal H_A\otimes\mathcal H_B$ can be written
 $$
@@ -316,7 +316,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
-<td>Trace pairing; $\mathrm{Tr}(e_t)=2$</td>
+<td>Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$</td>
 </tr>
 <tr>
 <td>$\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$</td>
@@ -347,7 +347,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 <td>Cyclic shift of the $n$ replicas</td>
 </tr>
 <tr>
-<td>$\mathbb F_{AA'}$</td>
+<td>$\mathbb F_{AA_{\mathrm r}}$</td>
 <td>Swap operator; $n=2$ replica shift</td>
 </tr>
 <tr>
@@ -378,7 +378,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 <li>Companion article <em>Relative Entropy and the Biquaternion Framework</em>, for the entropy closed form of a biquaternion state.</li>
 <li>Companion article <em>The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form</em>, for the modular Hamiltonian of a reduced state.</li>
 <li>Companion article <em>The Area Law of Entanglement Entropy in Biquaternionic Form</em>, for what the replica moments give in the field.</li>
-<li>Companion article <em>The Informational Sector: States, Observables and Probability</em>, for the state space and the trace pairing.</li>
+<li>Companion article <em>The Informational Sector: States, Observables and Probability</em>, for the state space and the plain form.</li>
 </ul>
       </div>
     </main>

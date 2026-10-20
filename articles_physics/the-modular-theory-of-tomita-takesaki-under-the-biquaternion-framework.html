@@ -77,7 +77,7 @@ S = J\,\Delta^{1/2},
 $$
 with $\Delta=S^*S\geq 0$ self-adjoint and $J$ anti-unitary. The theory then delivers the structural facts
 $$
-J M J = M', \qquad \Delta^{it}M\Delta^{-it}=M, \qquad \sigma_t(A):=\Delta^{it}A\Delta^{-it},
+J M J = M_{\mathrm c}, \qquad \Delta^{it}M\Delta^{-it}=M, \qquad \sigma_t(A):=\Delta^{it}A\Delta^{-it},
 $$
 so that $J$ identifies $M$ with its commutant and $t\mapsto\sigma_t$ is a one-parameter group of automorphisms of $M$, the <strong>modular automorphism group</strong> of the pair $(M,\Omega)$.</p>
 <p>This article is the companion of <em>The KMS Condition and the Biquaternion Framework</em>. That article stated the KMS condition and located the modular Hamiltonian $K=-\log\rho$ in the informational sector $\mathbb{M}_+$. It used, but did not construct, the operator $S$ whose polar decomposition produces the modular flow. The present article constructs $S$ explicitly in the finite-dimensional biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, takes its polar decomposition in closed form, and verifies the resulting identities by recomputation. The KMS condition is the parent's subject and is not restated here; the one thing imported from it is the result that the modular flow is the flow for which the thermal state satisfies the KMS boundary relation.</p>
@@ -132,9 +132,9 @@ $$
 $$
 so $t\mapsto\sigma_t$ is a one-parameter group: the <strong>modular automorphism group</strong> of $(M,\Omega)$. The remaining structural identity,
 $$
-J M J = M',
+J M J = M_{\mathrm c},
 $$
-says that the modular conjugation identifies the algebra with its commutant. The content of the theory is that $S$ — hence $\Delta$ and $J$ — is constructed from the pair $(M,\Omega)$, and that from the state it recovers both a canonical flow and a canonical anti-isomorphism $M\cong M'$.</p>
+says that the modular conjugation identifies the algebra with its commutant. The content of the theory is that $S$ — hence $\Delta$ and $J$ — is constructed from the pair $(M,\Omega)$, and that from the state it recovers both a canonical flow and a canonical anti-isomorphism $M\cong M_{\mathrm c}$.</p>
 <h3 id="anti-linearity-and-the-conjugation-of-the-scalar-imaginary">Anti-Linearity and the Conjugation of the Scalar Imaginary</h3>
 <p>The defining anti-linearity of $S_0$ is inherited by $S$ and, through $S=J\Delta^{1/2}$, by $J$, which is anti-unitary:
 $$
@@ -222,7 +222,7 @@ $$
 \sigma_t(\tilde{Q}_3)=\exp(-it\tilde{K}_{\mathrm{mod}})\tilde{Q}_3\,\exp(it\tilde{K}_{\mathrm{mod}}), \qquad \frac{d}{dt}\sigma_t(\tilde{Q}_3)\Big|_{t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3].
 $$</p>
 <h3 id="the-identities-verified">The Identities, Verified</h3>
-<p>The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.</p>
+<p>The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M_{\mathrm c}$ — with $M_{\mathrm c}$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.</p>
 <h3 id="an-explicit-case">An Explicit Case</h3>
 <p>Take the faithful state with Bloch vector
 $$
@@ -303,7 +303,7 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 <h2 id="what-is-established-and-what-is-a-gap">What Is Established and What Is a Gap</h2>
 <p><strong>Established (theorem).</strong></p>
 <ul>
-<li>The Tomita–Takesaki construction: $S$, $\Delta$, $J$, the identities $S^2=1$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $JMJ=M'$, and the modular group $\sigma_t$.</li>
+<li>The Tomita–Takesaki construction: $S$, $\Delta$, $J$, the identities $S^2=1$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $JMJ=M_{\mathrm c}$, and the modular group $\sigma_t$.</li>
 <li>The equivalence, in a GNS representation, of "cyclic and separating" with "faithful".</li>
 <li>The Takesaki–Winnink theorem: the modular flow is the KMS flow, normalized to $\beta=1$, which is the link to the parent article.</li>
 <li>Connes' classification of factors by the kernel of $\delta$, and the inner/outer behavior of the modular flow.</li>
@@ -312,7 +312,7 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 <ul>
 <li>$M=\mathbb{B}$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.</li>
 <li>$\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}$, $J(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_t(\tilde{Q}_3)=\tilde{Ϛ}^{it}\tilde{Q}_3\tilde{Ϛ}^{-it}$.</li>
-<li>$J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M'$.</li>
+<li>$J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.</li>
 <li>$\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}_{\mathrm{mod}}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.</li>
 <li>$\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}^{it}\in\mathbb{B}$.</li>
 </ul>
@@ -328,7 +328,7 @@ assigning to $t$ the class of the modular automorphism in the outer automorphism
 <li>No empirical consequence is derived.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.</p>
+<p>The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M_{\mathrm c}$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.</p>
 <p>In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$
 S_0:\tilde{Q}_3\mapsto\tilde{Q}_3^{*},

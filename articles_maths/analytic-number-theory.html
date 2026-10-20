@@ -86,7 +86,7 @@ and the corresponding Euler products converge absolutely and locally uniformly i
 <p><strong>Proof.</strong> The second and third identities are the multiplicative convolutions $\mu * 1 = \varepsilon$ and $\varphi * 1 = \mathrm{id}$, expanded as Dirichlet series; the first is obtained by taking the logarithmic derivative of the Euler product, term by term.</p>
 <p><strong>Theorem (Abel summation).</strong> Let $a_n$ be a sequence and $A(x) = \sum_{n\leq x}a_n$. For a continuously differentiable $f$ on $[1,x]$,
 $$
-\sum_{n\leq x}a_nf(n) = A(x)f(x) - \int_1^x A(t)f'(t)\,dt .
+\sum_{n\leq x}a_nf(n) = A(x)f(x) - \int_1^x A(t)\frac{df}{dt}\,dt .
 $$
 <strong>Proof.</strong> Integration by parts on the Stieltjes integral $\int_{1^-}^x f(t)\,dA(t)$, or summation by parts.</p>
 <p><strong>Theorem (Mertens).</strong> As $x\to\infty$,

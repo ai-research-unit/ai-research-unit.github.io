@@ -72,11 +72,11 @@
 <p>This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{M}_+$ (Hermitian, the informational sector), $\mathbb{M}_-$ (anti-Hermitian, the material sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the centre); the Hermitian observable $\tilde{H} = h_t e_t + i\vec h$; the idempotent $\tilde\Pi_{1,2}(\vec{u}) = \tfrac12(e_t \pm i\vec{u})$; the spinor $\psi$ in a minimal left ideal $\mathbb{B}\tilde\Pi$ of the state module; and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.</p>
 <p>The article's findings are stated here in advance, so that the reader can hold them against the text.</p>
 <ol>
-<li><strong>The Berry connection is not visible in the state of $\mathbb{M}_+$.</strong> The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_h)$, but $\mathrm{Tr}(\tilde\Pi\,\partial_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the <strong>spinor</strong> $\psi$ of the state module, and its definition uses the same trace pairing that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.</li>
+<li><strong>The Berry connection is not visible in the state of $\mathbb{M}_+$.</strong> The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\vec u_h)$, but $\mathrm{Tr}(\tilde\Pi\,\partial_\mu\tilde\Pi) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the <strong>spinor</strong> $\psi$ of the state module, and its definition uses the same plain form, read as the trace pairing, that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.</li>
 <li><strong>The connection is a $\mathrm{U}(1)$ gauge connection on parameter space</strong>, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same $\mathrm{U}(1)$ that <em>The Gauge Principle in Biquaternionic Form</em> attaches to the algebra.</li>
 <li><strong>The two routes agree</strong> on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\Omega/2$, where $\Omega$ is the solid angle subtended by the loop, for every loop in a one-parameter family.</li>
 <li><strong>The curvature is quantised only on a closed surface.</strong> The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.</li>
-<li><strong>The Berry connection is not the framework's spacetime connection.</strong> It is literally the standard Berry connection, rewritten through the trace pairing. Its relation to the abelian connection $\tilde{A}$ of the gauge-principle article is an <strong>analogy</strong>: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.</li>
+<li><strong>The Berry connection is not the framework's spacetime connection.</strong> It is literally the standard Berry connection, rewritten through the plain form, read as the trace pairing. Its relation to the abelian connection $\tilde{A}$ of the gauge-principle article is an <strong>analogy</strong>: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.</li>
 </ol>
 <p><strong>Which case.</strong> Throughout the article the level is <strong>non-degenerate</strong> and the Berry phase is <strong>abelian</strong> (a $\mathrm{U}(1)$ number). For the two-level Hamiltonian the gap is $\Delta = 2|\vec h|$, and it is required to stay bounded away from zero along the path; at $\vec h = 0$ the two levels become degenerate, the gap closes, and the adiabatic theorem fails. The non-abelian (degenerate-level) case is not available in a single-qubit framework; the section <em>Degenerate Levels and the Abelian Case</em> states exactly why, and leaves it as a gap.</p>
 <h2 id="the-adiabatic-setting-and-the-two-phases">The Adiabatic Setting and the Two Phases</h2>
@@ -86,7 +86,7 @@
 $$</p>
 <p>is bounded below by a positive constant along the traversed path, and if the path is traversed slowly enough compared with that gap, then a system started in $|n(R(0))\rangle$ remains in the instantaneous eigenstate up to a phase:</p>
 <p>$$
-|\psi(t)\rangle = \exp(i\gamma_n(t))\,\exp(-\frac{i}{\hbar}\int_0^t E_n(R(t'))dt')\,|n(R(t))\rangle .
+|\psi(t)\rangle = \exp(i\gamma_n(t))\,\exp(-\frac{i}{\hbar}\int_0^t E_n(R(t_2))dt_2)\,|n(R(t))\rangle .
 $$</p>
 <p>Substituting into the Schrödinger equation $i\hbar\,\partial/\partial t|\psi\rangle = \tilde{H}|\psi\rangle$, the dynamical factor cancels, and what remains is</p>
 <p>$$
@@ -145,7 +145,7 @@ $$</p>
 $$</p>
 <p>which is the parent article's $\tilde{Ϛ} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$. The density matrix forgets the phase of $\psi_+$; the lemma says precisely that this forgotten phase is what the Berry connection measures. So the Berry phase is a property of the <strong>state module</strong> of the framework, not of the Bloch ball.</p>
 <h2 id="the-berry-connection-in-biquaternion-form">The Berry Connection in Biquaternion Form</h2>
-<p>With the spinor in hand, the connection is defined by the trace pairing of the framework. For a normalized spinor $\psi(R) \in \mathbb{B}\tilde\Pi$ depending smoothly on the parameters,</p>
+<p>With the spinor in hand, the connection is defined by the plain form of the framework, read as the trace pairing. For a normalized spinor $\psi(R) \in \mathbb{B}\tilde\Pi$ depending smoothly on the parameters,</p>
 <p>$$
 \boxed{\;
 \mathcal{A}_\mu(R) \;=\; i\;\frac{\mathrm{Tr}\!\left(\psi^\dagger\,\partial_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)}
@@ -158,20 +158,20 @@ $$</p>
 \mathrm{Tr}\!\left(\partial_\mu\psi^\dagger\,\psi\right) + \mathrm{Tr}\!\left(\psi^\dagger\partial_\mu\psi\right) = 0 .
 $$</p>
 <p>The first term is the conjugate of the second (complex conjugation in $\mathbb{C}_{\mathbb{B}}$ reverses the order under the trace), so $\mathrm{Tr}(\psi^\dagger\partial_\mu\psi)$ is purely imaginary and $i$ times it is real. The connection is therefore a <strong>real one-form</strong> on parameter space. It is not an element of $\mathbb{M}_-$ and not a biquaternion: it is a real number attached to each direction in parameter space.</p>
-<p><strong>Gauge transformation.</strong> Let $\alpha(R)$ be a real function and let $\psi \mapsto \psi' = \exp(i\alpha)\psi$. Because $\exp(i\alpha)$ is central and unitary, it multiplies $\psi$ from the left without ordering ambiguity, and</p>
+<p><strong>Gauge transformation.</strong> Let $\alpha(R)$ be a real function and let $\psi \mapsto \psi_2 = \exp(i\alpha)\psi$. Because $\exp(i\alpha)$ is central and unitary, it multiplies $\psi$ from the left without ordering ambiguity, and</p>
 <p>$$
 \begin{aligned}
-\mathrm{Tr}\!\left(\psi'^\dagger\partial_\mu\psi'\right)
+\mathrm{Tr}\!\left(\psi_2^\dagger\partial_\mu\psi_2\right)
 &= \mathrm{Tr}\!\left(\exp(-i\alpha)\psi^\dagger\left(i\,\partial_\mu\alpha\,\exp(i\alpha)\psi + \exp(i\alpha)\partial_\mu\psi\right)\right) \\
 &= i\,\partial_\mu\alpha\;\mathrm{Tr}\!\left(\psi^\dagger\psi\right) + \mathrm{Tr}\!\left(\psi^\dagger\partial_\mu\psi\right).
 \end{aligned}
 $$</p>
 <p>Dividing by the norm and multiplying by $i$ gives</p>
 <p>$$
-\boxed{\;\mathcal{A}'_\mu = \mathcal{A}_\mu - \partial_\mu\alpha\;}
-\qquad\text{for}\qquad \psi' = \exp(i\alpha)\psi .
+\boxed{\;\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial_\mu\alpha\;}
+\qquad\text{for}\qquad \psi_2 = \exp(i\alpha)\psi .
 $$</p>
-<p>This is the transformation law of an <strong>abelian gauge connection</strong>. It is the same law as the electromagnetic gauge transformation $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ of <em>The Gauge Principle in Biquaternionic Form</em>, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.</p>
+<p>This is the transformation law of an <strong>abelian gauge connection</strong>. It is the same law as the electromagnetic gauge transformation $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$ of <em>The Gauge Principle in Biquaternionic Form</em>, and the same law as the electromagnetic Berry connection of the standard theory. The rest of this section makes the analogy precise and states its limits.</p>
 <h3 id="why-the-analogy-is-structural-and-not-decorative">Why the Analogy Is Structural and Not Decorative</h3>
 <p>The gauge-principle article derives its abelian connection from a precise algebraic object: the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ of the algebra, whose unitary part is $\mathrm{U}(1) = \{\exp(i\theta)\}$. The phase $\lambda = \exp(iϙ\Gamma/\hbar)$ it localizes is a <strong>central unitary element</strong>. The rephasing $\exp(i\alpha)$ of the eigenstate is also a central unitary element, of the same group. The two constructions therefore select the same structure group inside the same algebra,</p>
 <p>$$
@@ -209,8 +209,8 @@ $$</p>
 </tr>
 <tr>
 <td>Transformation</td>
-<td>$\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$</td>
-<td>$\mathcal{A}' = \mathcal{A} - d\alpha$</td>
+<td>$\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$</td>
+<td>$\mathcal{A}_2 = \mathcal{A} - d\alpha$</td>
 </tr>
 <tr>
 <td>Curvature</td>
@@ -236,7 +236,7 @@ $$</p>
 $$</p>
 <p>It is invariant under the rephasing, because the added term is a gradient:</p>
 <p>$$
-\mathcal{F}'_{\mu\nu} = \mathcal{F}_{\mu\nu} - \left(\partial_\mu\partial_\nu\alpha - \partial_\nu\partial_\mu\alpha\right) = \mathcal{F}_{\mu\nu} .
+\mathcal{F}_{2,\mu\nu} = \mathcal{F}_{\mu\nu} - \left(\partial_\mu\partial_\nu\alpha - \partial_\nu\partial_\mu\alpha\right) = \mathcal{F}_{\mu\nu} .
 $$</p>
 <p>This is the same abelian curvature $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ that appears in the gauge-principle article as the field strength of the connection, now on parameter space rather than on spacetime. For a three-dimensional parameter space, as here, the curvature is naturally a vector via the Hodge dual, $\mathcal{F}_k = \tfrac12\epsilon_{kij}\mathcal{F}_{ij}$.</p>
 <p><strong>The two routes to the phase.</strong> For a closed loop $\mathcal{C} = \partial\mathcal{S}$ bounding a surface $\mathcal{S}$ on which the connection is smooth, Stokes' theorem gives</p>
@@ -388,7 +388,7 @@ $$</p>
 <p>What the framework does supply, beyond the rewriting, is a set of structural placements.</p>
 <ul>
 <li><strong>The parameter space is the state space.</strong> For the two-level Hamiltonian the effective parameter space is the Bloch sphere $S^2$, which is the manifold of idempotents $\tilde\Pi_1(\vec{u})$ of $\mathbb{M}_+$ — the pure states of the informational sector. The Berry connection is thus a connection on a bundle over the space of pure states, and the Chern number is a property of that space's topology. This is a genuine placement: the framework names both the state space and the parameter space as the same canonical object.</li>
-<li><strong>One pairing for the Born rule and the connection.</strong> Both $\mathrm{Tr}(\tilde\Pi\tilde{H})$ and $\mathcal{A}_\mu$ are built from the trace pairing of the state module; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.</li>
+<li><strong>One pairing for the Born rule and the connection.</strong> Both $\mathrm{Tr}(\tilde\Pi\tilde{H})$ and $\mathcal{A}_\mu$ are built from the plain form of the state module, read as the trace pairing; the framework makes it visible that the Born rule and the Berry connection are two interpretations of one bilinear form.</li>
 <li><strong>The structure group is already in the algebra.</strong> The $\mathrm{U}(1)$ of the Berry phase is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same group, in the same algebra, that the gauge-principle article attaches to electromagnetism. The framework does not have to be supplied with a phase group; it has one.</li>
 <li><strong>The connection requires the spinor, not the density matrix.</strong> The lemma $\mathrm{Tr}(\tilde\Pi\partial_\mu\tilde\Pi) = 0$ is the cleanest form of the statement that the geometric phase is a property of the state vector's phase, not of the Bloch-ball point. The framework forces the distinction between the spinor and the idempotent that the algebraic formulation otherwise leaves implicit.</li>
 <li><strong>The same scalar imaginary.</strong> The $i$ in $\mathcal{A} = i\langle\psi|d\psi\rangle$ is the central scalar imaginary that also appears in $ict$, in the gauge phase $\exp(iϙ\Gamma/\hbar)$, and as the complex structure of the state module. The gauge-principle article flagged the shared generator as possibly vacuous because the phase is central; the Berry connection adds a third appearance without resolving the question. It is recorded as an observation, not a result.</li>
@@ -420,18 +420,18 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The Berry phase is the geometric phase acquired by an adiabatic eigenstate around a closed loop in parameter space. It is computed by two equivalent routes, the line integral of the <strong>Berry connection</strong> and the surface integral of the <strong>Berry curvature</strong>, and it is defined modulo $2\pi$ because a rephasing of the eigenstate is a gauge transformation.</p>
-<p>In the biquaternion framework the instantaneous eigenstate of $\tilde{H} = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is <strong>blind</strong> to the connection: $\mathrm{Tr}(\tilde\Pi\partial_\mu\tilde\Pi) = 0$ identically. The connection is carried by the <strong>spinor</strong> $\psi$ of the minimal left ideal $\mathbb{B}\tilde\Pi$, and is defined by the trace pairing of the state module,</p>
+<p>In the biquaternion framework the instantaneous eigenstate of $\tilde{H} = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\vec u_R)$, but the idempotent is <strong>blind</strong> to the connection: $\mathrm{Tr}(\tilde\Pi\partial_\mu\tilde\Pi) = 0$ identically. The connection is carried by the <strong>spinor</strong> $\psi$ of the minimal left ideal $\mathbb{B}\tilde\Pi$, and is defined by the plain form of the state module, read as the trace pairing,</p>
 <p>$$
 \mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\psi^\dagger\partial_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)} ,
 \qquad
-\mathcal{A}'_\mu = \mathcal{A}_\mu - \partial_\mu\alpha
-\quad\text{for}\quad \psi' = \exp(i\alpha)\psi ,
+\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial_\mu\alpha
+\quad\text{for}\quad \psi_2 = \exp(i\alpha)\psi ,
 \qquad
 \mathcal{F}_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu .
 $$</p>
-<p>The structure group is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact <strong>analogy of gauge type</strong>, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.</p>
+<p>The structure group is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, the same $\mathrm{U}(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact <strong>analogy of gauge type</strong>, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.</p>
 <p>On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\phi$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\phi$, and both routes give $\gamma_+ = -\Omega/2$ for every $\theta_0$, where $\Omega = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a <strong>closed</strong> surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\vec R = 0$ where the gap closes and the connection is singular. That point is a parameter-space degeneracy, and the flux it carries is quantised.</p>
-<p>The level is non-degenerate throughout, so the phase is abelian; the non-abelian (degenerate-level) case is unavailable in a single-qubit framework, where degeneracy and gap closing coincide, and it is left as a gap together with the many-qubit tensor product. For a single qubit the article is a reformulation; its structural content is that the parameter space is the Bloch sphere of $\mathbb{M}_+$, that the connection and the Born rule come from one trace pairing, that the connection requires the spinor rather than the density matrix, and that the $\mathrm{U}(1)$ of the phase is the centre of the algebra rather than an imported group.</p>
+<p>The level is non-degenerate throughout, so the phase is abelian; the non-abelian (degenerate-level) case is unavailable in a single-qubit framework, where degeneracy and gap closing coincide, and it is left as a gap together with the many-qubit tensor product. For a single qubit the article is a reformulation; its structural content is that the parameter space is the Bloch sphere of $\mathbb{M}_+$, that the connection and the Born rule come from one plain form, read as the trace pairing, that the connection requires the spinor rather than the density matrix, and that the $\mathrm{U}(1)$ of the phase is the centre of the algebra rather than an imported group.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -506,7 +506,7 @@ $$</p>
 <td>Berry connection, $i\,\mathrm{Tr}(\psi^\dagger\partial_\mu\psi)/\mathrm{Tr}(\psi^\dagger\psi)$</td>
 </tr>
 <tr>
-<td>$\mathcal{A}'_\mu = \mathcal{A}_\mu - \partial_\mu\alpha$</td>
+<td>$\mathcal{A}_{2,\mu} = \mathcal{A}_\mu - \partial_\mu\alpha$</td>
 <td>Gauge transformation of the Berry connection</td>
 </tr>
 <tr>
@@ -542,7 +542,7 @@ $$</p>
 <td>The three cross-sections: continuous eigenvalue branch, continuous $k$-plane selection, nowhere-zero eigenvector field</td>
 </tr>
 <tr>
-<td>$\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$</td>
+<td>$\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$</td>
 <td>Gauge-principle connection and its transformation (for contrast)</td>
 </tr>
 </tbody>

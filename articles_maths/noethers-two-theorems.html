@@ -71,9 +71,9 @@
 <p>The two kinds of symmetry look alike on the page, and that is the source of the error the second theorem corrects. A rigid rotation and a rotation by an angle that varies from point to point are written with the same symbol, and the local one can be misread as an infinite family of rigid ones, each with its own conserved charge. It is not. The local symmetry is a smaller amount of information about the <em>solutions</em>, not a larger amount: it says that the equations are degenerate, and degeneracy is a constraint on the system rather than a supply of integrals.</p>
 <p>The terminology is Hermann Weyl's, and it is easy to reverse. A symmetry of the <strong>first kind</strong> is rigid: its parameters are constants. A symmetry of the <strong>second kind</strong> is local: its parameters are functions of the coordinates. Weyl introduced the names in 1918, in the paper on gravitation and electricity, in the same year as Noether's paper, and they have survived with frequent inversion — a local transformation is often met under the name "of the first kind", which is exactly backwards. The naming is fixed below.</p>
 <p>Two consequences of the second theorem organise every field theory that carries a local symmetry. First, the field equations are subject to identities, so the number of independent equations is smaller than the number of equations, and a gauge condition must be added before the initial-value problem is well posed. Second, the identity constrains the source: when the equations are sourced, the divergence of the identity forces the source to be conserved, and the conservation of the charge is then an <strong>integrability condition</strong> on the equations rather than an independent law.</p>
-<p>The article is confined to a Lagrangian field theory with finitely many fields on flat spacetime, which is the setting in which the two theorems are used in this series. It first fixes the fundamental variation identity from which both theorems follow, then derives the first theorem and its current, then proves the second theorem and reads what it says, then works the two standard examples — the Maxwell field, whose local symmetry is a pure one of the second kind, and a Stueckelberg-type field, whose local symmetry contains a rigid subgroup — then counts the conservation laws against the identities, and closes with the relation to the Hamiltonian form and with the naming.</p>
+<p>The article is confined to a Lagrangian field theory with finitely many fields on a flat space, which is the setting in which the two theorems are used in this series. It first fixes the fundamental variation identity from which both theorems follow, then derives the first theorem and its current, then proves the second theorem and reads what it says, then works the two standard examples — the Maxwell field, whose local symmetry is a pure one of the second kind, and a Stueckelberg-type field, whose local symmetry contains a rigid subgroup — then counts the conservation laws against the identities, and closes with the relation to the Hamiltonian form and with the naming.</p>
 <h2 id="the-setting-and-the-fundamental-identity">The Setting and the Fundamental Identity</h2>
-<p><strong>Definition.</strong> The fields are $u^1,\dots,u^N$, functions of the coordinates $x^0,\dots,x^{m-1}$ of flat spacetime with coordinates written $x^\mu$ and partial derivatives written $\partial/\partial x^\mu$. The <strong>Lagrangian density</strong> is a function $L(x,u,\partial u)$ of the coordinates, the fields and their first derivatives, and the <strong>action</strong> is the functional</p>
+<p><strong>Definition.</strong> The fields are $u^1,\dots,u^N$, functions of the coordinates $x^0,\dots,x^{m-1}$ of a flat space of dimension $m$, with coordinates written $x^\mu$ and partial derivatives written $\partial/\partial x^\mu$. The <strong>Lagrangian density</strong> is a function $L(x,u,\partial u)$ of the coordinates, the fields and their first derivatives, and the <strong>action</strong> is the functional</p>
 <p>$$
 S[u] = \int_\Omega L\bigl(x,u(x),\partial u(x)\bigr)\,d^mx .
 $$</p>
@@ -121,7 +121,7 @@ $$</p>
 \alpha\,\partial/\partial x^\mu F^\mu = \alpha\,E_i\xi^i + \alpha\,\partial/\partial x^\mu\,\bigl(L^\mu_i\xi^i\bigr),
 $$</p>
 <p>and cancelling the common factor $\alpha$ gives $E_i\xi^i = \partial/\partial x^\mu(F^\mu - L^\mu_i\xi^i) = -\partial/\partial x^\mu j^\mu$.</p>
-<p><strong>The conserved charge.</strong> If the current falls off fast enough at spatial infinity, the <strong>Noether charge</strong></p>
+<p><strong>The conserved charge.</strong> If the current falls off fast enough at infinity, the <strong>Noether charge</strong></p>
 <p>$$
 Ϙ = \int j^0\,d^{m-1}x
 $$</p>
@@ -133,7 +133,7 @@ j^\mu = L^\mu_i\,\xi^\nu\partial/\partial x^\nu u^i - \xi^\mu L = \xi^\nu\,T^\mu
 \qquad
 T^\mu{}_\nu = L^\mu_i\,\partial/\partial x^\nu u^i - \delta^\mu_\nu\,L .
 $$</p>
-<p>The four conserved quantities are the components of the four-momentum, and $T^\mu{}_\nu$ is the <strong>canonical energy–momentum tensor</strong>. It is conserved on shell, $\partial/\partial x^\mu T^\mu{}_\nu=0$, and it need not be symmetric; the symmetric tensor of the field-theoretic account is an improvement of it by a superpotential, which alters neither the conservation law nor the total charge.</p>
+<p>The four conserved quantities are the components of the canonical four-vector, and $T^\mu{}_\nu$ is the <strong>canonical tensor</strong>. It is conserved on shell, $\partial/\partial x^\mu T^\mu{}_\nu=0$, and it need not be symmetric; the symmetric tensor of the field-theoretic account is an improvement of it by a superpotential, which alters neither the conservation law nor the total charge.</p>
 <p><strong>Lorentz invariance and angular momentum.</strong> For the Lorentz group the parameter is instead the constant antisymmetric pair $\omega_{\mu\nu}$, the fields transform by their Lorentz action plus the coordinate change, and the six conserved quantities are the components of the angular-momentum tensor. The counting is the only point needed here: the group has $k=6$ parameters and the first theorem returns $6$ conservation laws.</p>
 <p><strong>An internal symmetry and the electric-type current.</strong> Let the density be invariant under the constant phase rotation of a complex field, $\delta\phi = i\alpha\phi$, $\delta\phi^* = -i\alpha\phi^*$. For the massless complex scalar with</p>
 <p>$$
@@ -164,7 +164,7 @@ $$</p>
 <p>$$
 b^i\,E_i - \partial/\partial x^\mu\,\bigl(a^{i\mu}E_i\bigr) \equiv 0 .
 $$</p>
-<p><em>Proof.</em> Integrate the left side of the fundamental identity against the symmetry variation over all of spacetime, with the functions $\varepsilon^\alpha$ of compact support so that all boundary terms vanish. Since $\delta L$ is a divergence, the integral of $\delta L$ vanishes, and the fundamental identity gives</p>
+<p><em>Proof.</em> Integrate the left side of the fundamental identity against the symmetry variation over the whole space, with the functions $\varepsilon^\alpha$ of compact support so that all boundary terms vanish. Since $\delta L$ is a divergence, the integral of $\delta L$ vanishes, and the fundamental identity gives</p>
 <p>$$
 0 = \int E_i\,\delta u^i\,d^mx
 = \int\Bigl[b^i_\alpha E_i\,\varepsilon^\alpha + a^{i\mu}_\alpha E_i\,\partial/\partial x^\mu\,\varepsilon^\alpha\Bigr]d^mx ,
@@ -201,7 +201,7 @@ $$</p>
 \partial^2/\partial x^\nu\partial x^\mu F^{\mu\nu} \equiv 0 ,
 $$</p>
 <p>which is the antisymmetry of $F^{\mu\nu}$ contracted with the symmetric pair $\partial^2/\partial x^\nu\partial x^\mu$.</p>
-<p><strong>What the identity does.</strong> The four equations $E^\nu=0$ are subject to one identity, so only three are independent. In the $3+1$ split the time component $\nu=0$ is Gauss's law, an equation with no time derivative, and the spatial components are the evolution equations; the identity is what ties the time derivative of the constraint to the divergence of the evolution equations, so that the constraint, once imposed, is preserved. Counting the degrees of freedom, four equations less one identity less one gauge freedom leaves two, the two polarizations of the free field, which is the count the corpus's <em>Canonical Quantization of the Biquaternion Maxwell Field</em> reproduces from the constraint algebra.</p>
+<p><strong>What the identity does.</strong> The four equations $E^\nu=0$ are subject to one identity, so only three are independent. In the $3+1$ split the component $\nu=0$ is the constraint, an equation with no derivative in $x^0$, and the remaining components are the evolution equations; the identity is what ties the derivative of the constraint to the divergence of the evolution equations, so that the constraint, once imposed, is preserved. Counting the degrees of freedom, four equations less one identity less one gauge freedom leaves two, the two polarizations of the free field, which is the count the corpus's <em>Canonical Quantization of the Biquaternion Maxwell Field</em> reproduces from the constraint algebra.</p>
 <p><strong>The source is forced to be conserved.</strong> Sourcing the equation, $E^\nu = j^\nu$, and taking the divergence, gives</p>
 <p>$$
 \partial/\partial x^\nu j^\nu = \partial/\partial x^\nu E^\nu \equiv 0 .

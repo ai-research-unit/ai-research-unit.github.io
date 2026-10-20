@@ -100,11 +100,11 @@ $$</p>
 $$</p>
 <p>The Lagrangian is <strong>not unique</strong>, and the extent of the ambiguity is a boundary term. For any smooth $F(q,t)$, the Lagrangians $L$ and</p>
 <p>$$
-L'=L+\frac{d}{dt}F(q,t)
+L_2=L+\frac{d}{dt}F(q,t)
 $$</p>
 <p>have the same Euler–Lagrange equations. The added term enters both terms of the Euler–Lagrange operator as the same expression, $d/dt(\partial F/\partial q_i)$: once as $\partial/\partial q_i\,(dF/dt)$, and once as $d/dt\big(\partial/\partial\left(dq_{i}/dt\right)\,(dF/dt)\big)=d/dt(\partial F/\partial q_i)$, since the mixed partials of $F$ commute. The two contributions cancel. The action is ambiguous in the corresponding way,</p>
 <p>$$
-S'=S+F\big(q(t_2),t_2\big)-F\big(q(t_1),t_1\big) ,
+S_2=S+F\big(q(t_2),t_2\big)-F\big(q(t_1),t_1\big) ,
 $$</p>
 <p>the difference being an endpoint term, which a variation with fixed endpoints cannot see. What the formalism determines is therefore the <strong>equations of motion</strong>, not the Lagrangian, and the ambiguity is exactly a boundary term: the same structure the companion article <em>The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form</em> meets from the other side, where the boundary term of $\delta S$ is the symplectic potential. The Hamiltonian carries the analogous freedom — a generating function of the coordinates, momenta and time shifts it by a partial time derivative — and that is the freedom a canonical transformation exploits.</p>
 <p>The <strong>conjugate momenta</strong> are $p_i=\partial L/\partial \left(dq_{i}/dt\right)$. In the Hamiltonian description the coordinates, velocities and momenta are <strong>mutually independent</strong> variables: the relation $p_i=\partial L/\partial\left(dq_{i}/dt\right)$ is used once, to eliminate the velocities in favour of the momenta, and does not thereafter act as a constraint among the phase-space variables. So $H(q,p)$ is differentiated with respect to $p_i$ at fixed $q$, with $dq/dt$ already eliminated; holding $dq/dt$ fixed while varying $p_i$ would describe a different object. This is what makes the passage a change of variables rather than a definition, and it is why the phase-space element $\tilde Q_3=\tilde q+i\tilde p$ constructed below is a coordinate. When the Hessian matrix $\partial^2L/\partial\left(dq_{i}/dt\right)\partial\left(dq_{j}/dt\right)$ is non-singular, the map $(q,dq/dt)\mapsto(q,p)$ is invertible, and the <strong>Legendre transform</strong></p>
@@ -410,7 +410,7 @@ $$</p>
 <td>Lagrangian</td>
 </tr>
 <tr>
-<td>$F(\tilde q,t)$, $L'=L+dF/dt$</td>
+<td>$F(\tilde q,t)$, $L_2=L+dF/dt$</td>
 <td>Arbitrary function and the total-derivative ambiguity of the Lagrangian</td>
 </tr>
 <tr>

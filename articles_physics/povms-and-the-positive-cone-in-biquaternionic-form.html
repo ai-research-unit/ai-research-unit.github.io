@@ -73,8 +73,8 @@
 \tilde{E}\geq0 \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2 - |\vec a|^2 \geq 0 \ \text{ and }\ a_t\geq0
 \quad\Longleftrightarrow\quad a_t\geq|\vec a| ,
 $$</p>
-<p>so the cone of the algebra is the future light cone of the biquaternion norm. An <strong>effect</strong> is an element of the operator interval $0\leq\tilde{E}\leq e_t$, which in coefficients reads $|\vec a|\leq\min(a_t,1-a_t)$; a <strong>POVM</strong> is a resolution of the identity by effects, $\sum_y\tilde{E}_y = e_t$; and the Born rule for the measurement is the trace pairing $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$. The projective measurements are the special case in which the effects are idempotents, and they are the extreme elements of the set of effects; the general measurement is a convex decomposition of the identity into non-extreme effects, and it is strictly more powerful.</p>
-<p>The cone is self-dual with respect to the trace pairing, which is the algebraic reason the pairing serves both as the Born rule and as the duality that makes the measurement formalism work. The article derives this, characterizes the effects, exhibits the general POVM, and works two examples: the <strong>trine</strong> POVM, which distinguishes three equatorial states better than any projective measurement, and unambiguous discrimination, which two non-orthogonal states admit with a POVM and not with a projective measurement. The general measurement's realization as a projective measurement on a larger system — Naimark's dilation — is stated in the framework's language, and its status as an extension of the algebra is noted.</p>
+<p>so the cone of the algebra is the future light cone of the biquaternion norm. An <strong>effect</strong> is an element of the operator interval $0\leq\tilde{E}\leq e_t$, which in coefficients reads $|\vec a|\leq\min(a_t,1-a_t)$; a <strong>POVM</strong> is a resolution of the identity by effects, $\sum_y\tilde{E}_y = e_t$; and the Born weight for the measurement is the normalised plain form $\langle\tilde{Ϛ},\tilde{E}_y\rangle/\langle\tilde{Ϛ},e_t\rangle$, read as $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$ in the $2\times2$ image. The projective measurements are the special case in which the effects are idempotents, and they are the extreme elements of the set of effects; the general measurement is a convex decomposition of the identity into non-extreme effects, and it is strictly more powerful.</p>
+<p>The cone is self-dual with respect to the plain form (the trace pairing in the $2\times2$ image), which is the algebraic reason the pairing serves both as the Born rule and as the duality that makes the measurement formalism work. The article derives this, characterizes the effects, exhibits the general POVM, and works two examples: the <strong>trine</strong> POVM, which distinguishes three equatorial states better than any projective measurement, and unambiguous discrimination, which two non-orthogonal states admit with a POVM and not with a projective measurement. The general measurement's realization as a projective measurement on a larger system — Naimark's dilation — is stated in the framework's language, and its status as an extension of the algebra is noted.</p>
 <h2 id="the-positive-cone">The Positive Cone</h2>
 <h3 id="positivity-as-the-biquaternion-norm">Positivity as the biquaternion norm</h3>
 <p>Let $\tilde{H} = h_te_t + i\vec h$ be a general Hermitian element, with $h_t\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$. Its matrix image is $h_tI_2 + \vec h\cdot\boldsymbol{\sigma}$, whose eigenvalues are $h_t\pm|\vec h|$. Hence</p>
@@ -91,20 +91,20 @@ C_+ = \bigl\{h_te_t + i\vec h\in\mathbb{M}_+ : h_t \geq |\vec h|\bigr\} .
 $$</p>
 <p>This is the <strong>positive cone</strong> of the algebra. Its boundary $h_t = |\vec h|$ is the set of positive elements of rank one — the rank-one Hermitian idempotents and their non-negative multiples — which are the zero divisors of the biquaternion norm. Its interior $h_t>|\vec h|$ is the set of positive definite elements.</p>
 <h3 id="the-cone-is-self-dual">The cone is self-dual</h3>
-<p>The trace pairing on $\mathbb{M}_+$ is</p>
+<p>The plain form on $\mathbb{M}_+$ is</p>
 <p>$$
-\mathrm{Tr}(\tilde{H}\tilde{E}) = 2\,\mathrm{Sc}(\tilde{H}\tilde{E}) = 2\bigl(h_ta_t + \vec h\cdot\vec a\bigr),
+\langle\tilde{H},\tilde{E}\rangle = \mathrm{Sc}(\tilde{H}\tilde{E}) = h_ta_t + \vec h\cdot\vec a,
 $$</p>
-<p>where $\tilde{E} = a_te_t + i\vec a$. Direct computation of the pairing on the Hermitian basis gives</p>
+<p>where $\tilde{E} = a_te_t + i\vec a$; its $2\times2$ reading is the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2\langle\tilde{H},\tilde{E}\rangle$. Direct computation of the plain form on the Hermitian basis gives</p>
 <p>$$
-\mathrm{Tr}(e_te_t) = 2, \qquad \mathrm{Tr}(e_t\,i\vec e_k) = 0, \qquad \mathrm{Tr}(ie_j\,i\vec e_k) = 2\delta_{jk},
+\langle e_t,e_t\rangle = 1, \qquad \langle e_t,i\vec e_k\rangle = 0, \qquad \langle i\vec e_j,i\vec e_k\rangle = \delta_{jk},
 $$</p>
-<p>so the trace pairing is the positive definite Euclidean form of signature $(4,0)$ in the coefficients, up to the factor two. The <strong>dual cone</strong> is</p>
+<p>so the plain form is the positive definite Euclidean form of signature $(4,0)$ in the coefficients. The <strong>dual cone</strong> is</p>
 <p>$$
 C_+^{*} = \bigl\{\tilde{H} : \mathrm{Tr}(\tilde{H}\tilde{E})\geq0 \ \text{ for all } \tilde{E}\in C_+\bigr\},
 $$</p>
-<p>and it coincides with $C_+$. To see this, if $h_t\geq|\vec h|$ then $h_ta_t+\vec h\cdot\vec a\geq h_ta_t-|\vec h|\,|\vec a|\geq0$ for every $a_t\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_t<|\vec h|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_h$ and $a_t = \lambda$; then $h_ta_t+\vec h\cdot\vec a = \lambda(h_t-|\vec h|)<0$ for $\lambda>0$, so $\tilde{H}\notin C_+^{*}$. Hence $C_+^{*}=C_+$: <strong>the positive cone is self-dual with respect to the trace pairing.</strong></p>
-<p>The self-duality is what makes the trace pairing the natural pairing of measurement theory. The same pairing that gives the Born rule, $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, expresses the duality between states and effects, and it makes the cone its own dual. There is no second pairing needed to define the allowed measurements.</p>
+<p>and it coincides with $C_+$. To see this, if $h_t\geq|\vec h|$ then $h_ta_t+\vec h\cdot\vec a\geq h_ta_t-|\vec h|\,|\vec a|\geq0$ for every $a_t\geq|\vec a|$, so $C_+^{*}\supseteq C_+$. Conversely, if $h_t<|\vec h|$, take $\tilde{E}$ on the boundary with $\vec a = -\lambda\,\vec u_h$ and $a_t = \lambda$; then $h_ta_t+\vec h\cdot\vec a = \lambda(h_t-|\vec h|)<0$ for $\lambda>0$, so $\tilde{H}\notin C_+^{*}$. Hence $C_+^{*}=C_+$: <strong>the positive cone is self-dual with respect to the plain form.</strong></p>
+<p>The self-duality is what makes the plain form the natural pairing of measurement theory. The same pairing that gives the Born rule, $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, expresses the duality between states and effects, and it makes the cone its own dual. There is no second pairing needed to define the allowed measurements.</p>
 <h3 id="extremal-rays-and-the-pure-states">Extremal rays and the pure states</h3>
 <p>The extreme rays of $C_+$ are the rays through the rank-one Hermitian idempotents $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{Ϛ}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.</p>
 <h2 id="effects">Effects</h2>
@@ -133,7 +133,7 @@ $$</p>
 <p>$$
 p = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{E}) \in [0,1],
 $$</p>
-<p>because $\tilde{Ϛ}\geq0$, $\tilde{E}\geq0$ make the trace non-negative, and $\tilde{E}\leq e_t$ gives $p\leq\mathrm{Tr}(\tilde{Ϛ}) = 1$. This is the Born rule in its general form; the projective case is $\tilde{E} = \tilde\Pi$, and then $p = \mathrm{Tr}(\tilde{Ϛ}\tilde\Pi)$ is the usual probability of an eigenspace. No additional postulate is required for the general measurement: functions of effects are obtained by the same trace pairing that gives the projective Born rule.</p>
+<p>because $\tilde{Ϛ}\geq0$, $\tilde{E}\geq0$ make the trace non-negative, and $\tilde{E}\leq e_t$ gives $p\leq\mathrm{Tr}(\tilde{Ϛ}) = 1$. This is the Born rule in its general form; the projective case is $\tilde{E} = \tilde\Pi$, and then $p = \mathrm{Tr}(\tilde{Ϛ}\tilde\Pi)$ is the usual probability of an eigenspace. No additional postulate is required for the general measurement: functions of effects are obtained by the same plain form, read as the trace pairing, that gives the projective Born rule.</p>
 <h2 id="povms">POVMs</h2>
 <h3 id="definition-and-statistics">Definition and statistics</h3>
 <p>A <strong>positive operator-valued measure</strong> is a finite or countable family of effects resolving the identity:</p>
@@ -144,7 +144,7 @@ $$</p>
 <p>$$
 \sum_y p_y = \mathrm{Tr}\!\left(\tilde{Ϛ}\sum_y\tilde{E}_y\right) = \mathrm{Tr}(\tilde{Ϛ}) = 1 .
 $$</p>
-<p>A <strong>projection-valued measure</strong> is the special case in which every $\tilde{E}_y$ is idempotent; then the effects are orthogonal, $\tilde{E}_y\tilde{E}_{y'} = \delta_{yy'}\tilde{E}_y$, and the POVM is a projective measurement. Every PVM is a POVM; the converse fails.</p>
+<p>A <strong>projection-valued measure</strong> is the special case in which every $\tilde{E}_y$ is idempotent; then the effects are orthogonal, $\tilde{E}_y\tilde{E}_{y_2} = \delta_{yy_2}\tilde{E}_y$, and the POVM is a projective measurement. Every PVM is a POVM; the converse fails.</p>
 <h3 id="the-post-measurement-state">The post-measurement state</h3>
 <p>A general measurement is specified not only by the outcome probabilities but by the state left behind. If the effect is written in a Kraus form</p>
 <p>$$
@@ -177,7 +177,7 @@ P_{\mathrm{succ}} = \frac{1}{3}\sum_{k=1}^{3}\mathrm{Tr}(\tilde{Ϛ}_k\tilde{E}_k
 = \frac{1}{3}\sum_{k=1}^{3}\mathrm{Tr}\!\left(\tilde{Ϛ}_k\,\tfrac23\tilde{Ϛ}_k\right)
 = \frac{1}{3}\sum_{k=1}^{3}\frac{2}{3} = \frac{2}{3},
 $$</p>
-<p>since $\tilde{Ϛ}_k^2 = \tilde{Ϛ}_k$ and $\mathrm{Tr}(\tilde{Ϛ}_k) = 1$. A projective measurement of a qubit has only two outcomes and cannot separate three symmetric states as well; the trine POVM is the standard example of a genuinely non-projective measurement, and it is expressed here purely in terms of the idempotents and the trace pairing of the algebra.</p>
+<p>since $\tilde{Ϛ}_k^2 = \tilde{Ϛ}_k$ and $\mathrm{Tr}(\tilde{Ϛ}_k) = 1$. A projective measurement of a qubit has only two outcomes and cannot separate three symmetric states as well; the trine POVM is the standard example of a genuinely non-projective measurement, and it is expressed here purely in terms of the idempotents and the plain form of the algebra.</p>
 <h3 id="unambiguous-discrimination">Unambiguous discrimination</h3>
 <p>Let two non-orthogonal pure states have overlap $c = |\langle\psi_0|\psi_1\rangle|\in(0,1)$. A <strong>projective</strong> measurement of a qubit has two outcomes, each of which responds to both states, so neither outcome can certify which state was prepared. A POVM with three effects can:</p>
 <p>$$
@@ -197,7 +197,7 @@ $$</p>
 <li><strong>States</strong> are the trace-one elements of the cone $C_+$; the cone is the future light cone of the biquaternion norm.</li>
 <li><strong>Effects</strong> are the elements of the operator interval $[0,e_t]$, i.e. the cone intersected with its reflection through $\tfrac12 e_t$; in coefficients, $|\vec a|\leq\min(a_t,1-a_t)$.</li>
 <li><strong>POVMs</strong> are resolutions of the identity by effects; <strong>PVMs</strong> are the resolutions by idempotents, i.e. by extreme effects.</li>
-<li><strong>Probabilities</strong> are the trace pairing $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the pairing is the one under which the cone is self-dual.</li>
+<li><strong>Probabilities</strong> are the normalised plain form, read as the trace pairing $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the pairing is the one under which the cone is self-dual.</li>
 <li><strong>Post-measurement states</strong> are the Kraus images $\tilde{K}_y\tilde{Ϛ}\tilde{K}_y^{*}$, normalized.</li>
 </ul>
 <p>The general measurement is a convex decomposition of the identity into effects that are not extreme. The idempotents remain the extreme effects, and the projective measurement remains the extreme case; what the general measurement adds is the ability to have more outcomes than the dimension of the module, which is exactly what is needed for tasks such as state discrimination with more than two candidate states.</p>
@@ -205,7 +205,7 @@ $$</p>
 <p><strong>What it does.</strong></p>
 <ul>
 <li>It identifies the positive cone of $\mathbb{M}_+$ with the future light cone of the biquaternion norm and derives the effect condition $|\vec a|\leq\min(a_t,1-a_t)$.</li>
-<li>It shows that the cone is self-dual with respect to the trace pairing, so that one pairing serves both the Born rule and the state-effect duality.</li>
+<li>It shows that the cone is self-dual with respect to the plain form, so that one pairing serves both the Born rule and the state-effect duality.</li>
 <li>It identifies the idempotents as the extreme effects and the projective measurements as the extreme resolutions, with the general POVM as a convex decomposition.</li>
 <li>It expresses the general measurement, its Kraus form, and its post-measurement state entirely in terms of elements of $\mathbb{B}$.</li>
 </ul>
@@ -219,7 +219,7 @@ $$</p>
 <h2 id="open-questions">Open Questions</h2>
 <p><strong>1. The effect body in higher dimensions.</strong> The characterization $|\vec a|\leq\min(a_t,1-a_t)$ is special to $M_2(\mathbb{C})$. For $\mathbb{B}\otimes\mathbb{B}$ and its effects, what is the analogous coefficient condition, and does the biquaternion norm of the tensor product define the cone?</p>
 <p><strong>2. Instruments and information.</strong> A general instrument produces a post-measurement state that depends on the outcome, and the information it leaves in the system is quantified by the disturbance it causes. Is there an algebraic characterization of the instruments that are "minimally disturbing" for a given POVM, in terms of the two sectors $\mathbb{M}_\pm$?</p>
-<p><strong>3. The self-duality and the two pairings.</strong> The cone is self-dual under the trace pairing; the biquaternion norm defines the cone but is a different, indefinite pairing. Is there an algebraic relation between the two pairings — a form of Lorentzian duality — that explains why the cone is the biquaternion norm's cone and the measurement pairing is the trace pairing?</p>
+<p><strong>3. The self-duality and the two pairings.</strong> The cone is self-dual under the plain form; the biquaternion norm defines the cone but is a different, indefinite pairing. Is there an algebraic relation between the two pairings — a form of Lorentzian duality — that explains why the cone is the biquaternion norm's cone and the measurement pairing is the normalised plain form, read as the trace pairing?</p>
 <p><strong>4. Continuous POVMs.</strong> The article treats finite POVMs. Position and momentum measurements require continuous families of effects; their biquaternion form, and the status of the biquaternion norm for unbounded effects, is open.</p>
 <p><strong>5. Empirical content.</strong> The POVM formalism in biquaternion form reproduces the standard one and predicts nothing new.</p>
 <h2 id="summary">Summary</h2>
@@ -227,7 +227,7 @@ $$</p>
 <p>$$
 \tilde{E} = a_te_t+i\vec a\geq0 \quad\Longleftrightarrow\quad a_t\geq|\vec a| \quad\Longleftrightarrow\quad \langle\tilde{E}\rangle_{\natural} = a_t^2-|\vec a|^2\geq0,\ a_t\geq0,
 $$</p>
-<p>and the cone is self-dual with respect to the trace pairing, $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_ta_t+\vec h\cdot\vec a)$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_t$, characterized by $|\vec a|\leq\min(a_t,1-a_t)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_t$; the outcome probabilities are the trace pairing $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the trace pairing on the effect body.</p>
+<p>and the cone is self-dual with respect to the plain form, $\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_ta_t+\vec h\cdot\vec a)$. An effect is an element of the operator interval $0\leq\tilde{E}\leq e_t$, characterized by $|\vec a|\leq\min(a_t,1-a_t)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_y\}$ with $\tilde{E}_y\geq0$ and $\sum_y\tilde{E}_y = e_t$; the outcome probabilities are the normalised plain form, read as the trace pairing $p_y = \mathrm{Tr}(\tilde{Ϛ}\tilde{E}_y)$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the normalised plain form on the effect body, read as the trace pairing.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -263,11 +263,11 @@ $$</p>
 </tr>
 <tr>
 <td>$C_+^{*} = C_+$</td>
-<td>Self-duality under the trace pairing</td>
+<td>Self-duality under the plain form</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde{H}\tilde{E}) = 2(h_ta_t+\vec h\cdot\vec a)$</td>
-<td>Trace pairing</td>
+<td>Trace reading of the plain form</td>
 </tr>
 <tr>
 <td>$0\le\tilde{E}\le e_t$</td>
@@ -320,7 +320,7 @@ $$</p>
 <li>C. W. Helstrom, <em>Quantum Detection and Estimation Theory</em> (Academic Press, 1976), for state discrimination and the role of non-projective measurements.</li>
 <li>I. D. Ivanovic, "How to differentiate between non-orthogonal states," <em>Physics Letters A</em> <strong>123</strong> (1987) 257–259; D. Dieks, "Overlap and distinguishability of quantum states," <em>Physics Letters A</em> <strong>126</strong> (1988) 303–306; A. Peres, "How to differentiate between non-orthogonal states," <em>Physics Letters A</em> <strong>128</strong> (1988) 19, for unambiguous discrimination.</li>
 <li>I. Bengtsson and K. Życzkowski, <em>Geometry of Quantum States</em> (Cambridge, 2006), for the geometry of the state cone, the effect body, and self-duality.</li>
-<li>The companion articles of this series: <em>Quantum Physics in Biquaternionic Form</em>, <em>The Born Rule as a Trace Formula — Derivation and Comparison</em>, <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and <em>Decoherence as Idempotent Projection</em>.</li>
+<li>The companion articles of this series: <em>Quantum Physics in Biquaternionic Form</em>, <em>The Born Rule from the Plain Form — Derivation and Comparison</em>, <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and <em>Decoherence as Idempotent Projection</em>.</li>
 </ul>
       </div>
     </main>

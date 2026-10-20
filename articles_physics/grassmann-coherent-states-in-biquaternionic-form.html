@@ -110,9 +110,9 @@ $$</p>
 <p>so that every element of $\mathbb{B}$ remains even and no relation inside $\mathbb{B}$ is altered. That is the sense in which the coherent-state construction is an <em>extension</em> of the biquaternion framework and not a replacement for it: nothing in $\mathbb{B}$ is changed, and the odd generator is adjoined where it is needed — in the labels.</p>
 <p><strong>The graded tensor product.</strong> The product on $\mathbb{B}\otimes\mathcal{G}$ is the graded (Koszul) one,</p>
 <p>$$
-(\tilde Q\otimes g)(\tilde Q'\otimes g')=(-1)^{|g|\,|\tilde Q'|}\,(\tilde Q\tilde Q')\otimes(gg') ,
+(\tilde Q\otimes g)(\tilde Q_2\otimes g_2)=(-1)^{|g|\,|\tilde Q_2|}\,(\tilde Q\tilde Q_2)\otimes(gg_2) ,
 $$</p>
-<p>with $|\tilde Q|=0$ for all $\tilde Q\in\mathbb{B}$. Because every $\tilde Q$ is even, the rule reduces to $(\tilde Q\otimes g)(\tilde Q'\otimes g')=(\tilde Q\tilde Q')\otimes(gg')$: the algebra is central, the Grassmann factor multiplies by the graded rule, and $\theta$ commutes with every biquaternion. This is the reason the coherent-state labels are "Grassmann-valued biquaternions" only in the weak sense that each coefficient of the algebra may be a Grassmann number; the crucial point is that the labels anticommute with each other while commuting with the algebra.</p>
+<p>with $|\tilde Q|=0$ for all $\tilde Q\in\mathbb{B}$. Because every $\tilde Q$ is even, the rule reduces to $(\tilde Q\otimes g)(\tilde Q_2\otimes g_2)=(\tilde Q\tilde Q_2)\otimes(gg_2)$: the algebra is central, the Grassmann factor multiplies by the graded rule, and $\theta$ commutes with every biquaternion. This is the reason the coherent-state labels are "Grassmann-valued biquaternions" only in the weak sense that each coefficient of the algebra may be a Grassmann number; the crucial point is that the labels anticommute with each other while commuting with the algebra.</p>
 <h2 id="the-coherent-states">The Coherent States</h2>
 <p>For one fermionic mode with $a^{\mathrm{fop}}|0\rangle=0$, $|1\rangle=a^{\mathrm{fop}\dagger}|0\rangle$, define for odd $\theta$</p>
 <p>$$
@@ -200,7 +200,7 @@ $$</p>
 \qquad
 \mathrm{Tr}\,\tilde{Ϛ}_\theta=1 ,
 $$</p>
-<p>where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle\langle\theta|$ is a rank-one projector, but it is not a pure state of the <em>algebra</em> unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the trace pairing</p>
+<p>where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle\langle\theta|$ is a rank-one projector, but it is not a pure state of the <em>algebra</em> unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the normalised plain form, read as the trace pairing</p>
 <p>$$
 \langle O\rangle_\theta=\mathrm{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O) .
 $$</p>
@@ -229,7 +229,7 @@ $$</p>
 <p><strong>The algebra's own.</strong></p>
 <ul>
 <li><em>The Grassmann algebra as the minimal odd extension of $\mathbb{B}$</em>, with even part $\mathbb{B}$ preserved. This is the constructive content of that open item: the odd generator that the grading needs is supplied by the labels, and it does not disturb the even algebra.</li>
-<li><em>The sector reading of the coherent states</em>: the density matrix is an even element of $\mathbb{M}_+$ even though the label is odd, and the expectation is the trace pairing $2\,\mathrm{Sc}$.</li>
+<li><em>The sector reading of the coherent states</em>: the density matrix is an even element of $\mathbb{M}_+$ even though the label is odd, and the expectation is the plain form, read as the trace pairing $2\,\mathrm{Sc}$.</li>
 <li><em>The parity as the label reflection</em> $|\theta\rangle\mapsto|-\theta\rangle$, which is the same element $(-1)^F=i\vec e_z$ that the parents identify for one mode.</li>
 </ul>
 <p><strong>Open.</strong></p>
@@ -319,7 +319,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle O\rangle_\theta=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$</td>
-<td>Expectation as the trace pairing</td>
+<td>Expectation as the trace reading of the plain form</td>
 </tr>
 <tr>
 <td>$(-1)^{N}|\theta\rangle=|-\theta\rangle$</td>

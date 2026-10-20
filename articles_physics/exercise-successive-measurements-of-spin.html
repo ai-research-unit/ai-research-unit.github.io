@@ -189,7 +189,7 @@ $$</p>
 <p>$$
 p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) \cdot \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right).
 $$</p>
-<p>The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same trace pairing on $\mathbb{M}_+$.</p>
+<p>The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same plain form on $\mathbb{M}_+$, read as the trace pairing.</p>
 <p><strong>2. Measurement is a projection onto an idempotent.</strong> After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a <strong>change of the idempotent</strong>: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.</p>
 <p><strong>3. The overlap of two idempotents is their scalar product.</strong> The trace $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \vec u_y \cdot \vec u_x)$, which depends only on the angle between the directions $\vec u_x$ and $\vec u_y$. This is the biquaternion expression of the transition probability between two spin states.</p>
 <p><strong>4. The geometry enters through the algebra.</strong> The angle between the measurement directions enters through the scalar product $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\vec u_y \vec u_x$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.</p>
@@ -236,7 +236,7 @@ $$</p>
 <p>We have solved a third exercise in quantum physics — the joint probability of two successive spin measurements along different directions — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.</p>
 <p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotents $\tilde\Pi_z, \tilde\Pi_{\vec u_x}, \tilde\Pi_{\vec u_y}$ and the product of the two trace formulas $\mathrm{Tr}(\tilde\Pi_{\vec u_x}\circ \tilde\Pi_z)\mathrm{Tr}(\tilde\Pi_{\vec u_y}\circ \tilde\Pi_{\vec u_x})$, giving the same result.</p>
-<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their trace pairing, and the joint probability is the product of the trace formulas.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their normalised plain form, read as the trace pairing, and the joint probability is the product of the trace formulas.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

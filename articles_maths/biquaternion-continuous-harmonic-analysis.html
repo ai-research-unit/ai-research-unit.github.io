@@ -281,11 +281,11 @@ $$</p>
 <p>$$
 \mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
 $$</p>
-<p>The multiplier is a scalar (times $e_t$), and it vanishes on the <strong>light cone</strong></p>
+<p>The multiplier is a scalar (times $e_t$), and it vanishes on the <strong>null cone</strong></p>
 <p>$$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$</p>
-<p>So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supported on the light cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.</p>
+<p>So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supported on the null cone. This is the biquaternion analogue of the statement that the Fourier transform of a harmonic function is supported on the zero set of the symbol.</p>
 <h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
 <p>The square of the gradient $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta) + 2\sum_k \vec e_k \partial^2/(\partial Q_t\,\partial Q_k)$ is a biquaternion-valued operator. Under the transform, it becomes multiplication by</p>
 <p>$$
@@ -423,7 +423,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The continuous biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi \rho \omega t)$, where $\rho$ is a root of $-1$ in $\mathbb{B}$. The choice of root determines the nature of the transform: the scalar imaginary gives the ordinary complex transform, the unit pure real quaternions give the quaternion transform, and the non-trivial roots give genuinely biquaternionic transforms.</p>
 <p>The transform is invertible on functions of non-vanishing norm, and it satisfies the Riemann–Lebesgue lemma, the inversion theorem, and the Plancherel theorem for the roots with $\rho^{*} = -\rho$. It factorizes into four complex Fourier transforms, which is the computational and structural content of the theory.</p>
-<p>The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the light cone, and the convective derivative becomes a biquaternion-valued multiplier depending on the velocity.</p>
+<p>The convolution theorem holds, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators of the analysis article: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian becomes a scalar multiplier vanishing on the null cone, and the convective derivative becomes a biquaternion-valued multiplier depending on the velocity.</p>
 <p>The vanishing-norm issue is a genuinely biquaternionic feature: functions that take zero-divisor values on a set of positive measure are not necessarily recoverable from their transform, and the precise invertibility condition is not known.</p>
 <p>A two-unit kernel is recorded beside the one-unit kernel, one unit per variable. Its closed form carries the product of the two roots in its fourth term, it reduces to the one-unit kernel when the two roots coincide, it is invertible for every pair of roots, and its conjugate is the kernel with the two units exchanged. The transform of a finite positive measure has a quadratic form which is the integral of the biquaternion norm of a trigonometric sum: non-negative for real coefficients and a real root, which is the classical positive definiteness of a measure transform, and false for $\mathbb{B}$ at a single term with $A = i$, because $\langle i\rangle_{\natural} = -1$. The Euclidean pairing restores positivity and is not the norm of the algebra.</p>
 <p>The continuous transform is the limit of the discrete transform as the sampling interval tends to zero, and it is related to the discrete transform by the Poisson summation formula and the sampling theorem.</p>

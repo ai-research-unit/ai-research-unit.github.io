@@ -233,10 +233,10 @@ $$</p>
 </table></div>
 <p><em>Idempotency.</em> The square of $\tilde\Pi_\epsilon$ is</p>
 <p>$$
-\tilde\Pi_\epsilon^2 = \frac{1}{16}\sum_{m,m'\in\{t,x,y,z\}}\epsilon_m\epsilon_{m'}\,(e_m e_{m'})\otimes(e_m e_{m'}),
+\tilde\Pi_\epsilon^2 = \frac{1}{16}\sum_{m,m_2\in\{t,x,y,z\}}\epsilon_m\epsilon_{m_2}\,(e_m e_{m_2})\otimes(e_m e_{m_2}),
 $$</p>
-<p>with $\epsilon_t \equiv 1$. We group the sixteen pairs $(m,m')$ into three classes.</p>
-<p><strong>Diagonal pairs $m = m'$.</strong> For $m = 0$, $e_t e_t = e_t$; for $m = 1, 2, 3$, $e_m e_m = -e_t$. In all four cases the tensor product $(e_m e_m)\otimes(e_m e_m)$ equals $e_t\otimes e_t$, with coefficient $\epsilon_m^2 = 1$. Contribution: $4\,e_t\otimes e_t$.</p>
+<p>with $\epsilon_t \equiv 1$. We group the sixteen pairs $(m,m_2)$ into three classes.</p>
+<p><strong>Diagonal pairs $m = m_2$.</strong> For $m = 0$, $e_t e_t = e_t$; for $m = 1, 2, 3$, $e_m e_m = -e_t$. In all four cases the tensor product $(e_m e_m)\otimes(e_m e_m)$ equals $e_t\otimes e_t$, with coefficient $\epsilon_m^2 = 1$. Contribution: $4\,e_t\otimes e_t$.</p>
 <p><strong>Off-diagonal pairs involving $e_t$.</strong> The pairs $(t,j)$ and $(j,t)$ with $j \in \{x,y,z\}$ both give $\vec e_j\otimes \vec e_j$, with coefficient $\epsilon_j$. Contribution: $2\epsilon_j\,\vec e_j\otimes \vec e_j$ for each $j$.</p>
 <p><strong>Off-diagonal pairs among $\{x,y,z\}$.</strong> For $j \neq k$ in $\{x,y,z\}$, let $l$ be the remaining index. Then $\vec e_j \vec e_k = \epsilon_{jkl}\vec e_l$ and $\vec e_k \vec e_j = -\epsilon_{jkl}\vec e_l$, and the two tensor products are both $\vec e_l\otimes \vec e_l$. The coefficients $\epsilon_j\epsilon_k$ and $\epsilon_k\epsilon_j$ are equal. Contribution: $2\epsilon_j\epsilon_k\,\vec e_l\otimes \vec e_l$.</p>
 <p>Collecting, the coefficient of $\vec e_l\otimes \vec e_l$ in $16\,\tilde\Pi_\epsilon^2$ is $2\epsilon_l + 2\epsilon_j\epsilon_k$, where $\{j,k,l\} = \{x,y,z\}$. Since</p>
@@ -373,7 +373,7 @@ $$</p>
 \tilde\Pi_\epsilon = \frac{1}{4}\left(e_t\otimes e_t + \epsilon_1\,\vec e_x\otimes \vec e_x + \epsilon_2\,\vec e_y\otimes \vec e_y + \epsilon_3\,\vec e_z\otimes \vec e_z\right),
 $$</p>
 <p>with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is the algebraic characterization of the Bell basis: four idempotents, differing only by the sign pattern of the three vector-vector terms.</p>
-<p><strong>2. The correlation function is a bilinear pairing.</strong> The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{ab})$ is the tensor-product trace pairing between the state idempotent and the observable $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$. The trace pairing is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).</p>
+<p><strong>2. The correlation function is a bilinear pairing.</strong> The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{ab})$ is the tensor-product plain form between the state idempotent and the observable, read as the trace pairing $\tilde{H}_{ab} = (i\vec u_x)\otimes(i\vec u_y)$. The normalised plain form, read as the trace pairing, is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).</p>
 <p><strong>3. The sign pattern encodes the correlation matrix.</strong> In the standard formulation, the correlation matrix $T$ is computed by expanding the Bell projector in the Pauli-string basis and reading off the coefficients. In the biquaternion formulation, the same coefficients appear directly as the signs $\epsilon_j$ in the idempotent. The matrix $T$ is $-\mathrm{diag}(\epsilon_1,\epsilon_2,\epsilon_3)$.</p>
 <p><strong>4. The singlet is the isotropic case.</strong> Among the four Bell states, only the singlet has all signs equal, giving $T = -I$ and the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$. The other three break rotational symmetry; their correlation matrices have one sign pattern of the form $(+,-,+)$ up to permutation, and their correlations depend on the direction of the measurements. The four sign patterns with $\epsilon_1\epsilon_2\epsilon_3 = +1$ correspond exactly to the four Bell states, and no other patterns are possible because the idempotency condition enforces the product to be $+1$.</p>
 <p><strong>5. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the Bell idempotent $\tilde\Pi_\epsilon$ corresponds exactly to the rank-one projector $|\Psi_\epsilon\rangle\langle\Psi_\epsilon|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check, and it illustrates the structural claim of the companion articles: <strong>the kinematics of two-qubit entanglement is contained in the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}$, with the Born rule given by the tensor-product trace, and the four Bell states are the four idempotents with sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$.</strong></p>
@@ -425,7 +425,7 @@ $$</p>
 <td>Product of trace formulas</td>
 <td>Tensor-product trace formula</td>
 <td>Partial trace + trace formula</td>
-<td>Tensor-product trace pairing</td>
+<td>Tensor-product trace reading of the plain form</td>
 </tr>
 <tr>
 <td>Result</td>
@@ -441,8 +441,8 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>We have solved a sixth exercise in quantum physics — the spin correlation function of the four Bell states — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through the four Bell projectors, their expansions in the Pauli-string basis, and the trace-orthogonality of the Pauli strings, giving the four diagonal correlation matrices $T = \mathrm{diag}(\pm 1, \pm 1, \pm 1)$ and the correlation functions $E = \vec u_x^T T\vec u_y$.</p>
-<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the four Bell idempotents $\tilde\Pi_\epsilon$ in $\mathbb{B}\otimes\mathbb{B}$, the correlation observable $(i\vec u_x)\otimes(i\vec u_y)$, and the tensor-product trace pairing, giving the general formula $E = -\sum_j \epsilon_j a_j b_j$ for the sign pattern $\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$.</p>
-<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the Bell basis: the four Bell states are the four idempotents with the sign pattern $\epsilon_1\epsilon_2\epsilon_3 = +1$; the correlation function is the tensor-product trace pairing between the state idempotent and the correlation observable; and the singlet is the unique Bell state with the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$.</p>
+<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the four Bell idempotents $\tilde\Pi_\epsilon$ in $\mathbb{B}\otimes\mathbb{B}$, the correlation observable $(i\vec u_x)\otimes(i\vec u_y)$, and the tensor-product plain form, read as the trace pairing, giving the general formula $E = -\sum_j \epsilon_j a_j b_j$ for the sign pattern $\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the Bell basis: the four Bell states are the four idempotents with the sign pattern $\epsilon_1\epsilon_2\epsilon_3 = +1$; the correlation function is the tensor-product plain form between the state idempotent and the correlation observable, read as the trace pairing; and the singlet is the unique Bell state with the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$.</p>
 <p>The correlation function is the object measured in Bell-inequality experiments, and the four correlation matrices exhibited here are the full content of the two-qubit spin correlations in the Bell basis.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

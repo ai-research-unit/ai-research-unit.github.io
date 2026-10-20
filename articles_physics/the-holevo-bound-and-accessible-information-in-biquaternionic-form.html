@@ -68,7 +68,7 @@
         <h1 id="the-holevo-bound-and-accessible-information-in-biquaternionic-form"><strong>The Holevo Bound and Accessible Information in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>A quantum source produces a state drawn from an ensemble. The receiver may perform any measurement the algebra admits, and from the outcome tries to recover the index of the state that was sent. How much of the source's classical information can be extracted in this way is the <strong>accessible information</strong> of the ensemble, and its universal upper bound is the <strong>Holevo bound</strong>. This article develops both in the biquaternion language of the informational sector.</p>
-<p>The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive trace-one elements $\tilde{Ϛ}_x$ with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_y$ summing to the identity, the <strong>POVM</strong> developed in the companion article on the positive cone. The outcome probabilities are the trace pairing</p>
+<p>The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive elements $\tilde{Ϛ}_x$ normalised by $\langle\tilde{Ϛ}_x,e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_y$ summing to the identity, the <strong>POVM</strong> developed in the companion article on the positive cone. The outcome probabilities are the normalised plain form, read as the trace pairing,</p>
 <p>$$
 p(y|x) = \mathrm{Tr}\bigl(\tilde{Ϛ}_x\tilde{E}_y\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_x\tilde{E}_y\bigr),
 $$</p>
@@ -81,7 +81,7 @@ $$</p>
 <p>and the Holevo bound is $I_{\mathrm{acc}}\leq\chi$.</p>
 <p>The biquaternion interpretation locates the ingredients algebraically. The average state is an element of $\mathbb{M}_+$; for a qubit its entropy is a function of its biquaternion norm, $S(\tilde{Ϛ}^{\natural}) = H(\langle\tilde{Ϛ}^{\natural}\rangle_{\natural})$, where $H(N)=h\!\left(\tfrac{1+\sqrt{1-4N}}{2}\right)$, so the Holevo quantity of a pure-state ensemble is a single norm function. The measurement is a completely positive trace-preserving map carrying the state to a commutative subalgebra; the accessible information is what survives that map. The content of the Holevo bound is then the data-processing inequality: a measurement cannot increase the classical information available about the source. The framework reproduces the bound and exposes which algebraic invariant it is about; it does not change the number it gives.</p>
 <p>The article proceeds as follows. Ensembles and POVMs are set up on $\mathbb{M}_+$, and the accessible information is defined. The Holevo quantity is introduced and its basic properties are derived, including the qubit form in terms of the biquaternion norm. The Holevo bound is stated and its proof is sketched through the data-processing inequality, with the biquaternion interpretation of each step. Worked examples follow: orthogonal states, where the bound is saturated, and two non-orthogonal pure states, where it is not. A closing section separates what is algebraic from what is standard information theory.</p>
-<h2 id="ensembles-and-measurements-in-math10">Ensembles and Measurements in $\mathbb{M}_+$</h2>
+<h2 id="ensembles-and-measurements-in-math12">Ensembles and Measurements in $\mathbb{M}_+$</h2>
 <h3 id="ensembles">Ensembles</h3>
 <p>An <strong>ensemble</strong> is a finite family of states with weights:</p>
 <p>$$
@@ -105,7 +105,7 @@ $$</p>
 <p>$$
 \tilde{E}_y \geq 0, \qquad \sum_y \tilde{E}_y = e_t ,
 $$</p>
-<p>each of which is an <strong>effect</strong>, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{Ϛ}_x$ is the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y'} = \delta_{yy'}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.</p>
+<p>each of which is an <strong>effect</strong>, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{Ϛ}_x$ is the normalised plain form, read as the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y_2} = \delta_{yy_2}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.</p>
 <p>For every measurement, the outcome distribution is $p_y = \sum_x p_x p(y|x) = \mathrm{Tr}(\tilde{Ϛ}^{\natural}\tilde{E}_y)$, so the average state determines the marginal statistics. This is the reason the average state, and not the individual members, controls the first-order behaviour of the ensemble.</p>
 <h3 id="the-accessible-information">The accessible information</h3>
 <p>Treat the ensemble index $X$ and the outcome $Y$ as classical random variables, with joint distribution $p(x,y) = p_x\,p(y|x)$. The <strong>accessible information</strong> is the mutual information maximized over all measurements,</p>
@@ -277,7 +277,7 @@ $$</p>
 <p><strong>4. Continuity and the infinite ensemble.</strong> The bounds and the saturation arguments assume a finite ensemble. The extension to continuous ensembles, and the algebraic meaning of the measure on $\mathbb{M}_+$, is open.</p>
 <p><strong>5. Empirical content.</strong> The Holevo form in the framework is the standard bound transcribed; it predicts nothing new.</p>
 <h2 id="summary">Summary</h2>
-<p>An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is</p>
+<p>An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the normalised plain form, read as the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is</p>
 <p>$$
 \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x),
 $$</p>
@@ -374,7 +374,7 @@ $$</p>
 <li>C. A. Fuchs, "Distinguishability and accessible information in quantum theory," Ph.D. thesis, University of New Mexico (1996), for the accessible information of two pure states and the role of the square-root measurement.</li>
 <li>A. Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for POVMs and the operational meaning of the outcome probabilities.</li>
 <li>T. M. Cover and J. A. Thomas, <em>Elements of Information Theory</em> (Wiley, 2006), for the classical mutual information and the Shannon entropy.</li>
-<li>The companion articles of this series: <em>Quantum Physics in Biquaternionic Form</em>, <em>The Born Rule as a Trace Formula — Derivation and Comparison</em>, <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and <em>Entangled Subsystems in the Biquaternion Framework</em>.</li>
+<li>The companion articles of this series: <em>Quantum Physics in Biquaternionic Form</em>, <em>The Born Rule from the Plain Form — Derivation and Comparison</em>, <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, and <em>Entangled Subsystems in the Biquaternion Framework</em>.</li>
 </ul>
       </div>
     </main>

@@ -201,29 +201,29 @@ $$</p>
 <h3 id="the-derivative">The Derivative</h3>
 <p>Let $f : (a, b) \to \mathbb{R}$ and $c_0 \in (a, b)$. The <strong>derivative</strong> of $f$ at $c_0$ is</p>
 <p>$$
-f'(c_0) = \lim_{h \to 0} \frac{f(c_0 + h) - f(c_0)}{h},
+\frac{df}{dx}(c_0) = \lim_{h \to 0} \frac{f(c_0 + h) - f(c_0)}{h},
 $$</p>
 <p>provided the limit exists. If it does, $f$ is <strong>differentiable</strong> at $c_0$.</p>
 <p><strong>Theorem.</strong> Differentiable implies continuous. The converse fails: $|a|$ is continuous at $0$ but not differentiable there.</p>
 <h3 id="rules-of-differentiation">Rules of Differentiation</h3>
-<p><strong>Linearity.</strong> $(af + bg)' = a f' + b g'$.</p>
-<p><strong>Product rule.</strong> $(fg)' = f' g + f g'$.</p>
-<p><strong>Quotient rule.</strong> $(f/g)' = (f' g - f g')/g^2$ where $g \neq 0$.</p>
-<p><strong>Chain rule.</strong> $(f \circ g)'(a) = f'(g(a)) g'(a)$.</p>
-<p><strong>Inverse function rule.</strong> If $f$ is differentiable at $c_0$ with $f'(c_0) \neq 0$ and $f^{-1}$ is defined near $f(c_0)$, then</p>
+<p><strong>Linearity.</strong> $\\frac{d}{dx}(af + bg) = a \frac{df}{dx} + b \frac{dg}{dx}$.</p>
+<p><strong>Product rule.</strong> $\\frac{d}{dx}(fg) = \frac{df}{dx} g + f \frac{dg}{dx}$.</p>
+<p><strong>Quotient rule.</strong> $\\frac{d}{dx}(f/g) = (\frac{df}{dx} g - f \frac{dg}{dx})/g^2$ where $g \neq 0$.</p>
+<p><strong>Chain rule.</strong> $\\frac{d}{dx}(f \circ g)(a) = \frac{df}{dx}(g(a)) \frac{dg}{dx}(a)$.</p>
+<p><strong>Inverse function rule.</strong> If $f$ is differentiable at $c_0$ with $\frac{df}{dx}(c_0) \neq 0$ and $f^{-1}$ is defined near $f(c_0)$, then</p>
 <p>$$
-(f^{-1})'(f(c_0)) = \frac{1}{f'(c_0)}.
+\\frac{d}{dx}(f^{-1})(f(c_0)) = \frac{1}{\frac{df}{dx}(c_0)}.
 $$</p>
 <h3 id="the-mean-value-theorem">The Mean Value Theorem</h3>
-<p><strong>Theorem (Rolle).</strong> If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c \in (a, b)$ with $f'(c) = 0$.</p>
+<p><strong>Theorem (Rolle).</strong> If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c \in (a, b)$ with $\frac{df}{dx}(c) = 0$.</p>
 <p><strong>Proof.</strong> If $f$ is constant, any $c$ works. Otherwise, $f$ attains a maximum or minimum in $(a, b)$ by the EVT, and at an interior extremum the derivative vanishes.</p>
 <p><strong>Theorem (Mean Value Theorem).</strong> If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ with</p>
 <p>$$
-f'(c) = \frac{f(b) - f(a)}{b - a}.
+\frac{df}{dx}(c) = \frac{f(b) - f(a)}{b - a}.
 $$</p>
 <p><strong>Proof.</strong> Apply Rolle to $g(c) = f(c) - \frac{f(b) - f(a)}{b - a}(c - a)$.</p>
-<p><strong>Corollary.</strong> If $f' = 0$ on an interval, $f$ is constant there.</p>
-<p><strong>Corollary.</strong> If $f' > 0$ on an interval, $f$ is strictly increasing there.</p>
+<p><strong>Corollary.</strong> If $\frac{df}{dx} = 0$ on an interval, $f$ is constant there.</p>
+<p><strong>Corollary.</strong> If $\frac{df}{dx} > 0$ on an interval, $f$ is strictly increasing there.</p>
 <h3 id="taylors-theorem">Taylor's Theorem</h3>
 <p><strong>Theorem (Taylor).</strong> If $f$ is $n$ times differentiable on an interval containing $a$ and $b$, with $f^{(n)}$ continuous on the interval between them, then</p>
 <p>$$
@@ -272,11 +272,11 @@ $$</p>
 <p><strong>Absolute value.</strong> $\left| \int_a^b f \right| \leq \int_a^b |f|$.</p>
 <p><strong>Integration by parts.</strong> If $f, g$ are differentiable with continuous derivatives, then</p>
 <p>$$
-\int_a^b f g' = [f g]_a^b - \int_a^b f' g.
+\int_a^b f \frac{dg}{dx} = [f g]_a^b - \int_a^b \frac{df}{dx} g.
 $$</p>
 <p><strong>Substitution.</strong> If $\phi$ is continuously differentiable and $f$ is continuous, then</p>
 <p>$$
-\int_{\phi(a)}^{\phi(b)} f(u) \, du = \int_a^b f(\phi(c)) \phi'(c) \, dc.
+\int_{\phi(a)}^{\phi(b)} f(u) \, du = \int_a^b f(\phi(c)) \frac{d\phi}{dx}(c) \, dc.
 $$</p>
 <h3 id="improper-integrals">Improper Integrals</h3>
 <p>If $f$ is defined on $[a, \infty)$ and Riemann integrable on every $[a, R]$, the <strong>improper integral</strong> is</p>
@@ -305,7 +305,7 @@ $$</p>
 <p>$$
 \int_a^b f = \lim_{n \to \infty} \int_a^b f_n.
 $$</p>
-<p><strong>Theorem.</strong> If $(f_n)$ is a sequence of differentiable functions with $f_n \to f$ pointwise and $f_n' \to g$ uniformly, then $f$ is differentiable and $f' = g$.</p>
+<p><strong>Theorem.</strong> If $(f_n)$ is a sequence of differentiable functions with $f_n \to f$ pointwise and $f_n' \to g$ uniformly, then $f$ is differentiable and $\frac{df}{dx} = g$.</p>
 <h3 id="series-of-functions">Series of Functions</h3>
 <p>A series of functions $\sum f_n$ <strong>converges uniformly</strong> if the sequence of partial sums does.</p>
 <p><strong>Weierstrass M-test.</strong> If $|f_n(a)| \leq M_n$ for all $a \in D$ and $\sum M_n$ converges, then $\sum f_n$ converges uniformly and absolutely on $D$.</p>
@@ -355,7 +355,7 @@ $$</p>
 <p><strong>Theorem.</strong> If $f$ is continuous and $g$ is of bounded variation, the integral exists.</p>
 <p><strong>Theorem.</strong> If $g$ is continuously differentiable, then</p>
 <p>$$
-\int_a^b f \, dg = \int_a^b f g' \, dc.
+\int_a^b f \, dg = \int_a^b f \frac{dg}{dx} \, dc.
 $$</p>
 <p><strong>Theorem (Integration by parts).</strong> If $f$ is integrable with respect to $g$, then $g$ is integrable with respect to $f$ and</p>
 <p>$$
@@ -363,7 +363,7 @@ $$</p>
 $$</p>
 <h2 id="summary">Summary</h2>
 <p>Real analysis is the study of limits, continuity, differentiation and integration on the real line, and it is the base case on which the analysis of every other system of the corpus is modelled. The line carries the distance $d(a, b) = \lvert a - b\rvert$, and with it the convergent sequences, the convergent series, the limits of functions, the continuous functions and the open sets on which the subject is built.</p>
-<p>Differentiation and integration are the two central constructions. The derivative $f'(c_0) = \lim_{h \to 0}(f(c_0 + h) - f(c_0))/h$ is the limit of the difference quotient, and the Riemann integral is defined through the upper and lower sums over the partitions of an interval, with the Riemann–Stieltjes integral generalising the construction by admitting a second function as integrator. The basic properties of both, and the theorems that relate them, are recorded.</p>
+<p>Differentiation and integration are the two central constructions. The derivative $\frac{df}{dx}(c_0) = \lim_{h \to 0}(f(c_0 + h) - f(c_0))/h$ is the limit of the difference quotient, and the Riemann integral is defined through the upper and lower sums over the partitions of an interval, with the Riemann–Stieltjes integral generalising the construction by admitting a second function as integrator. The basic properties of both, and the theorems that relate them, are recorded.</p>
 <p>The article also passes from sequences of numbers to sequences of functions, where pointwise and uniform convergence are distinguished, and it develops power series with their radius of convergence. The Riemann–Stieltjes integral closes the treatment.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -407,7 +407,7 @@ $$</p>
 <td>Limit of a function</td>
 </tr>
 <tr>
-<td>$f'(b)$</td>
+<td>$\frac{df}{dx}(b)$</td>
 <td>Derivative</td>
 </tr>
 <tr>

@@ -191,11 +191,11 @@ $$</p>
 <h3 id="the-phase-only-difference-from-the-born-amplitude">The phase-only difference from the Born amplitude</h3>
 <p>The first Born amplitude for the same potential is (next section)</p>
 <p>$$
-f_B(\theta)=-\frac{2m\alpha}{\hbar^2 \lvert\vec k'-\vec k\rvert^2}
+f_B(\theta)=-\frac{2m\alpha}{\hbar^2 \lvert\vec k_2-\vec k\rvert^2}
 =-\frac{m\alpha}{2\hbar^2k^2\sin^2(\theta/2)}
 =-\frac{\eta}{2k\sin^2(\theta/2)},
 \qquad
-\lvert\vec k'-\vec k\rvert=2k\sin(\theta/2),
+\lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2),
 $$</p>
 <p>whose modulus is exactly the modulus of $f_C$. The two amplitudes therefore differ by a <strong>pure phase</strong>:</p>
 <p>$$
@@ -206,20 +206,20 @@ $$</p>
 <h3 id="the-first-born-amplitude">The first Born amplitude</h3>
 <p>The first Born amplitude is the Fourier transform of the potential at the momentum transfer,</p>
 <p>$$
-f_B(\theta)=-\frac{2m}{\hbar^2}\frac{1}{4\pi}\int d^3r\;\exp(-i(\vec k'-\vec k)\cdot\vec r)\,V(r),
+f_B(\theta)=-\frac{2m}{\hbar^2}\frac{1}{4\pi}\int d^3r\;\exp(-i(\vec k_2-\vec k)\cdot\vec r)\,V(r),
 \qquad
-\lvert\vec k'-\vec k\rvert=2k\sin(\theta/2),
+\lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2),
 $$</p>
-<p>where $\lvert\vec k'-\vec k\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,</p>
+<p>where $\lvert\vec k_2-\vec k\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,</p>
 <p>$$
-\int d^3r\;\frac{\exp(-i(\vec k'-\vec k)\cdot\vec r)}{r}=\frac{4\pi}{\lvert\vec k'-\vec k\rvert^2},
+\int d^3r\;\frac{\exp(-i(\vec k_2-\vec k)\cdot\vec r)}{r}=\frac{4\pi}{\lvert\vec k_2-\vec k\rvert^2},
 $$</p>
 <p>so</p>
 <p>$$
-f_B(\theta)=-\frac{2m}{\hbar^2}\,\frac{\alpha}{\lvert\vec k'-\vec k\rvert^2}
-=-\frac{2m\alpha}{\hbar^2 \lvert\vec k'-\vec k\rvert^2},
+f_B(\theta)=-\frac{2m}{\hbar^2}\,\frac{\alpha}{\lvert\vec k_2-\vec k\rvert^2}
+=-\frac{2m\alpha}{\hbar^2 \lvert\vec k_2-\vec k\rvert^2},
 $$</p>
-<p>and squaring with $\lvert\vec k'-\vec k\rvert^2=4k^2\sin^2(\theta/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.</p>
+<p>and squaring with $\lvert\vec k_2-\vec k\rvert^2=4k^2\sin^2(\theta/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.</p>
 <h3 id="why-the-first-born-amplitude-is-already-exact-in-modulus">Why the first Born amplitude is already exact in modulus</h3>
 <p>The first Born amplitude is the leading term of the Born series in powers of the potential. That its modulus is already exact for the Coulomb potential is a consequence of the structure of the Coulomb problem: the exact amplitude's only deviation from the Born amplitude is a phase, and a phase does not change the cross section. The reason is that the Coulomb potential is scale-free — it has no length parameter, only the coupling — so the ratio of the exact amplitude to the Born amplitude must be a function of the dimensionless combination $\eta$ and the angle alone, and the partial-wave sum shows that function to be the pure phase above. For any potential with a length scale, such as a screened Coulomb potential, the first Born amplitude is only approximate, and the cross section is corrected by terms in the Born series.</p>
 <p>The biquaternion framework has nothing to add to this argument except the observation that it is an argument about scalars: the amplitude is central, the phase is central, and the scale-free property of the $1/r$ potential is a property of the central potential, not of the module. The spin-0 state module plays no role.</p>
@@ -260,7 +260,7 @@ $$</p>
 <p>$$
 f_C(\theta)=-\frac{\eta}{2k\sin^2(\theta/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right],
 $$</p>
-<p>whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^2\lvert\vec k'-\vec k\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.</p>
+<p>whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^2\lvert\vec k_2-\vec k\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.</p>
 <p>The biquaternion content is centrality: the potential couples only to the scalar slot, the amplitude is a central complex scalar, the Coulomb phase and the logarithmic phase are central unitary elements, and the momentum transfer is a real quaternion. The bound states of the same potential are the subject of the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>. The framework supplies the algebraic location of the amplitude and the phases and the continuity between the bound and continuum problems; it does not supply the Coulomb wave functions, the closed-form sum, or Rutherford's formula, and it adds no prediction distinguishing the reformulation from scalar Coulomb scattering.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -340,11 +340,11 @@ $$</p>
 <td>Closed-form Coulomb amplitude</td>
 </tr>
 <tr>
-<td>$\lvert\vec k'-\vec k\rvert=2k\sin(\theta/2)$</td>
+<td>$\lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2)$</td>
 <td>Momentum transfer</td>
 </tr>
 <tr>
-<td>$f_B=-\frac{2m\alpha}{\hbar^2\lvert\vec k'-\vec k\rvert^2}$</td>
+<td>$f_B=-\frac{2m\alpha}{\hbar^2\lvert\vec k_2-\vec k\rvert^2}$</td>
 <td>First Born amplitude</td>
 </tr>
 <tr>

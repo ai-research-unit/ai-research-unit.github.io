@@ -392,9 +392,9 @@ $$</p>
 <h2 id="the-transformation-of-the-force-under-boosts">The Transformation of the Force under Boosts</h2>
 <p>Because the four-force is a four-vector, it transforms under the Lorentz group by the same <strong>rotor conjugation</strong> as every other element of $\mathbb{M}_-$:</p>
 <p>$$
-\tilde{K}_{\mathrm{f}}' = \tilde U\,\tilde{K}_{\mathrm{f}}\,\tilde U^{*},
+\tilde{K}_{\mathrm{f},2} = \tilde U\,\tilde{K}_{\mathrm{f}}\,\tilde U^{*},
 $$</p>
-<p>where $\tilde U$ is the unit-norm biquaternion of the boost, and $\tilde{K}_{\mathrm{f}}' = d\tilde{P}'/d\tau$ is the force measured in the boosted frame (the proper time is invariant). This is the statement that the force transforms in the <strong>vector representation</strong> of the Lorentz group.</p>
+<p>where $\tilde U$ is the unit-norm biquaternion of the boost, and $\tilde{K}_{\mathrm{f},2} = d\tilde{P}_2/d\tau$ is the force measured in the boosted frame (the proper time is invariant). This is the statement that the force transforms in the <strong>vector representation</strong> of the Lorentz group.</p>
 <p>For a pure boost with velocity $\vec v_b$ — a frame boost, distinct from the particle velocity $\vec v$ — the boost biquaternion is</p>
 <p>$$
 \tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
@@ -405,29 +405,29 @@ $$</p>
 $$</p>
 <p>an element of $\mathbb{M}_+$ (Hermitian, unit norm). The rotor conjugation then reproduces the standard component transformation</p>
 <p>$$
-K'^0 = \gamma_b\left(K^0 - i\,\frac{\vec v_b\cdot\vec K}{c}\right),
+K_2^0 = \gamma_b\left(K^0 - i\,\frac{\vec v_b\cdot\vec K}{c}\right),
 $$</p>
 <p>$$
-\vec K' = \vec K + \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec K\right)\vec v_b - \gamma_b\,\frac{K^0}{c}\,\vec v_b.
+\vec K_2 = \vec K + \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec K\right)\vec v_b - \gamma_b\,\frac{K^0}{c}\,\vec v_b.
 $$</p>
-<p>Written in the biquaternion variables, with $\tilde{K}_{\mathrm{f}} = K^0e_t + \vec K$ and $\tilde{K}_{\mathrm{f}}' = K'^0e_t + \vec K'$, these are exactly the components of $\tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).</p>
+<p>Written in the biquaternion variables, with $\tilde{K}_{\mathrm{f}} = K^0e_t + \vec K$ and $\tilde{K}_{\mathrm{f},2} = K_2^0e_t + \vec K_2$, these are exactly the components of $\tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).</p>
 <p><strong>How the field transforms.</strong> The field strength is <em>not</em> a four-vector, and it does not transform like one. Under the same boost it transforms in the rank-two (bivector) representation,</p>
 <p>$$
-\tilde{F}' = \tilde U^{\natural}\,\tilde{F}\,\tilde U,
+\tilde{F}_2 = \tilde U^{\natural}\,\tilde{F}\,\tilde U,
 $$</p>
 <p>with $\tilde U^{\natural}$ the quaternion conjugate of the rotor (equivalently $\tilde U^{-1}$ for a unit-norm rotor). This reproduces the standard field transformation</p>
 <p>$$
-\vec E' = \gamma_b\left(\vec E + \vec v_b\times\vec B\right) - \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec E\right)\vec v_b,
+\vec E_2 = \gamma_b\left(\vec E + \vec v_b\times\vec B\right) - \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec E\right)\vec v_b,
 $$</p>
 <p>$$
-\vec B' = \gamma_b\left(\vec B - \frac{1}{c^2}\,\vec v_b\times\vec E\right) - \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec B\right)\vec v_b,
+\vec B_2 = \gamma_b\left(\vec B - \frac{1}{c^2}\,\vec v_b\times\vec E\right) - \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec B\right)\vec v_b,
 $$</p>
 <p>and it is this bivector rule — not the vector rule — that leaves the field invariants $I_1$ and $I_2$ unchanged. The distinction between the vector and bivector transformation laws is the algebraic expression of the fact that four-vectors live in $\mathbb{M}_-$ while the field strength does not.</p>
-<p><strong>Covariance of the product formula.</strong> The product formula is manifestly covariant under pure boosts, in the following precise sense. Apply the vector rule to the four-velocity, $\tilde{V}' = \tilde U\tilde{V}\tilde U^{*}$, and the bivector rule to the field, $\tilde{F}' = \tilde U^{\natural}\tilde{F}\tilde U$. Then the right-hand side of the product formula transforms into the right-hand side computed with the primed fields, and equals $\tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$:</p>
+<p><strong>Covariance of the product formula.</strong> The product formula is manifestly covariant under pure boosts, in the following precise sense. Apply the vector rule to the four-velocity, $\tilde{V}_2 = \tilde U\tilde{V}\tilde U^{*}$, and the bivector rule to the field, $\tilde{F}_2 = \tilde U^{\natural}\tilde{F}\tilde U$. Then the right-hand side of the product formula transforms into the right-hand side computed with the transformed fields, and equals $\tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$:</p>
 <p>$$
--ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}'\tilde{F}'\right)
+-ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}_2\tilde{F}_2\right)
 = \tilde U\left[-ϙ\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)\right]\tilde U^{*}
-= \tilde{K}_{\mathrm{f}}'.
+= \tilde{K}_{\mathrm{f},2}.
 $$</p>
 <p>In this sense the product formula is not merely a frame-dependent identity but a covariant statement: transforming the ingredients and transforming the result give the same answer.</p>
 <h2 id="the-powerforce-density-biquaternion-and-its-four-term-split">The Power–Force Density Biquaternion and Its Four-Term Split</h2>
@@ -442,19 +442,19 @@ $$</p>
 $$</p>
 <p>where $\rho_E = \mathrm{div}\,\vec D$ and $\rho_H = -\mathrm{div}\,\vec B$ are the electric and magnetic charge densities, $\vec j_E$ and $\vec j_H$ the corresponding currents, $\vec D = \epsilon\vec E$, and $\vec B = \mu\vec H$. Let a second field have field strength</p>
 <p>$$
-\tilde F' = i\sqrt{\epsilon}\,\vec E' - \sqrt{\mu}\,\vec H',
+\tilde F_2 = i\sqrt{\epsilon}\,\vec E_2 - \sqrt{\mu}\,\vec H_2,
 $$</p>
 <p>the field strength of <em>The Magnetic-Charge–Mass Hypothesis</em>, in that article's sign convention. The programme's <strong>power–force biquaternion</strong> is the product</p>
 <p>$$
-\tilde{\mathcal F} = i\,\tilde J_{\mathrm{eg}}\circ\tilde F' .
+\tilde{\mathcal F} = i\,\tilde J_{\mathrm{eg}}\circ\tilde F_2 .
 $$</p>
 <p>Its scalar and vector parts were recomputed here and are</p>
 <p>$$
 \mathrm{Sc}\big(\tilde{\mathcal F}\big)
-= \frac{1}{c}\left(\vec E'\cdot\vec j_E + \vec H'\cdot\vec j_H\right)
-+ i\left(\vec B'\cdot\vec j_E - \vec D'\cdot\vec j_H\right),
+= \frac{1}{c}\left(\vec E_2\cdot\vec j_E + \vec H_2\cdot\vec j_H\right)
++ i\left(\vec B_2\cdot\vec j_E - \vec D_2\cdot\vec j_H\right),
 \qquad
-\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,\rho\,\tilde F' - i\,\big[\tilde F',\vec J\big],
+\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,\rho\,\tilde F_2 - i\,\big[\tilde F_2,\vec J\big],
 $$</p>
 <p>where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_k F_kG_k$. The scalar part is a <strong>power density</strong>: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.</p>
 <p>The vector part is the <strong>force density</strong>, and its relation to the two halves named below carries a factor of $i$:</p>
@@ -462,18 +462,18 @@ $$</p>
 \mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\left(\vec F_H + i\,\vec F_E\right),
 \qquad
 \vec F_H + i\,\vec F_E = i\,\mathrm{Vect}\big(\tilde{\mathcal F}\big)
-= -\,i\rho\,\tilde F' - \vec J\times\tilde F' ,
+= -\,i\rho\,\tilde F_2 - \vec J\times\tilde F_2 ,
 $$</p>
 <p>so that $\vec F_E = \mathrm{Re}\,\mathrm{Vect}(\tilde{\mathcal F})$ and $\vec F_H = -\mathrm{Im}\,\mathrm{Vect}(\tilde{\mathcal F})$. Expanding with the definitions above gives the four terms of the first half with their coefficients,</p>
 <p>$$
-\vec F_H = \rho_E\,\vec E' + \rho_H\,\vec H' + \vec j_E\times\vec B' - \vec j_H\times\vec D' .
+\vec F_H = \rho_E\,\vec E_2 + \rho_H\,\vec H_2 + \vec j_E\times\vec B_2 - \vec j_H\times\vec D_2 .
 $$</p>
 <p>The four terms are a <strong>Coulomb</strong> term from the electric charge density, a <strong>gravitational</strong> term from the mass (magnetic-charge) density, a <strong>Lorentz</strong> term from the electric current crossed with the magnetic induction, and a fourth term built from the electric displacement and the mass current, which the author names the <strong>electromass force</strong>. The second half, the force that changes the electric currents, is</p>
 <p>$$
-\vec F_E = c\,\rho_E\,\vec B' - c\,\rho_H\,\vec D' + \frac{1}{c}\,\vec E'\times\vec j_E + \frac{1}{c}\,\vec H'\times\vec j_H .
+\vec F_E = c\,\rho_E\,\vec B_2 - c\,\rho_H\,\vec D_2 + \frac{1}{c}\,\vec E_2\times\vec j_E + \frac{1}{c}\,\vec H_2\times\vec j_H .
 $$</p>
 <p>The density $\tilde{\mathcal F}$ is not the per-particle $\tilde{K}_{\mathrm{f}}$ and the two must not be identified: $\tilde{K}_{\mathrm{f}}$ is the four-force on one charge, $\tilde{\mathcal F}$ is a force per unit volume on a continuous distribution, and only the latter carries the power–force pairing in one element.</p>
-<p><strong>Status.</strong> The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The coefficients were previously withheld here because the source's own expansions of the two halves did not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\vec F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\vec D'$ where the derivation gives $-c\,\rho_H\vec D'$, a factor of the dimensionless speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde J_{\mathrm{eg}}\circ\tilde F' = -\tilde J_{\mathrm{eg}}'\circ\tilde F$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em> for the provenance.</p>
+<p><strong>Status.</strong> The object, the split and the coefficients above are algebra, and all were verified numerically: the scalar part against its component form, and both halves of the force against the direct expansion, with residuals at machine precision. The coefficients were previously withheld here because the source's own expansions of the two halves did not close against the vector part as it stands; the reconciliation is the factor of $i$ displayed above, which the source suppresses. Reading $\vec F_H$ as the real part of the vector part rather than as $-\mathrm{Im}$ of it produces the apparent mismatch; with the factor placed correctly the source's two expansions close term by term. One exception remains: the source prints $-\rho_H\vec D_2$ where the derivation gives $-c\,\rho_H\vec D_2$, a factor of the dimensionless speed of light in that single term, and the derived form is the one carried above. The coefficient-level expansion is hypothesis-dependent through the magnetic-charge–mass identification, so the individual terms remain the programme's rather than the corpus's; what the corpus certifies is that they are what the programme's own product yields. The programme's third-law relation, $\tilde J_{\mathrm{eg}}\circ\tilde F_2 = -\tilde J_{\mathrm{eg},2}\circ\tilde F$, is the statement that the two power densities are equal, and the author compares it to Betti's reciprocity identity; that comparison, and the hypothesis, are the programme's, not the corpus's. See <em>The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</em> for the provenance.</p>
 <h2 id="the-lamb-vector-reading-of-the-force-law">The Lamb-Vector Reading of the Force Law</h2>
 <p>The force law of this article is a relativistic fact: $\vec f = ϙ(\vec E+\vec v\times\vec B)$ is what the field does to a charge, and the derivation above takes that law as given. A second interpretation of its <em>form</em> comes from fluid mechanics, and it belongs next to the first, because the corpus's magnetic-field material explains magnetism as a relativistic effect of the electric field, while the hydrodynamic correspondence offers an independent interpretation in which magnetism is vorticity.</p>
 <p>The bridge is the <strong>Lamb vector</strong> $\vec\ell = \vec\omega\times\vec v_b$ of a fluid of velocity $\vec v_b$ and vorticity $\vec\omega = \nabla\times\vec v_b$, introduced in <em>Maxwell's Equations in the Biquaternionic Formulation</em>. It is bilinear in a velocity and a curl, and it is the pairing of a flow with its own rotation. The magnetic term of the Lorentz force density, $\vec j\times\vec B$, is bilinear in a current and a curl, and the electric term $\rho_E\vec E$ pairs a charge density with the irrotational part of the field. Under the dictionary</p>
@@ -497,8 +497,8 @@ $$</p>
 = -\,\frac{ϙ\sqrt{\mu}}{2}\left(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V}\right).\;}
 $$</p>
 <p>Equivalently, $\tilde{K}_{\mathrm{f}} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}\tilde{F} + \tilde{F}^{*}\tilde{V})$, since $\sqrt{\mu} = 1/(c\sqrt{\epsilon})$; and since $\tilde{F}^{*} = -\bar{\tilde F}$, the formula may be written $-\frac{ϙ\sqrt{\mu}}{2}(\tilde{V}\tilde{F} - \bar{\tilde F}\tilde{V})$. The conjugate field is essential: it carries the anti-self-dual half of the field tensor, and the electric and magnetic contributions can be separated only by combining the two halves. This resolves the open question recorded in the relativistic-mechanics article, and fixes the force notation: the four-force is written $\tilde{K}_{\mathrm{f}}$, while $\tilde{F}$ is reserved for the field strength.</p>
-<p>The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}_{\mathrm{f}}' = \tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$, while the field transforms in the bivector representation, $\tilde{F}' = \tilde U^{\natural}\tilde{F}\tilde U$, and the product formula is covariant under the pair.</p>
-<p>At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = i\tilde J_{\mathrm{eg}}\circ\tilde F'$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}_{\mathrm{f}}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.</p>
+<p>The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}_{\mathrm{f}}\tilde{P}^{\natural} + \tilde{P}\tilde{K}_{\mathrm{f}}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{K}_{\mathrm{f}}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}_{\mathrm{f},2} = \tilde U\tilde{K}_{\mathrm{f}}\tilde U^{*}$, while the field transforms in the bivector representation, $\tilde{F}_2 = \tilde U^{\natural}\tilde{F}\tilde U$, and the product formula is covariant under the pair.</p>
+<p>At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = i\tilde J_{\mathrm{eg}}\circ\tilde F_2$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}_{\mathrm{f}}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -601,7 +601,7 @@ $$</p>
 <td>Charge–current biquaternion of a field</td>
 </tr>
 <tr>
-<td>$\tilde{\mathcal F} = i\tilde J_{\mathrm{eg}}\circ\tilde F'$</td>
+<td>$\tilde{\mathcal F} = i\tilde J_{\mathrm{eg}}\circ\tilde F_2$</td>
 <td>Power–force density biquaternion (per unit volume; not $\tilde{K}_{\mathrm{f}}$)</td>
 </tr>
 <tr>

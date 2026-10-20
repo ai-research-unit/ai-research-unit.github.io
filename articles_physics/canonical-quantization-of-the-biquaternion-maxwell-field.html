@@ -98,7 +98,7 @@ where $R_0$ and $\vec R$ are the scalar and vector parts of $-\sqrt{\mu}\,\tilde
 <h2 id="gauge-freedom-and-the-two-formulations">Gauge Freedom and the Two Formulations</h2>
 <p>The potential is not unique. Two potentials give the same field strength when they differ by</p>
 <p>$$
-\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma,
+\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma,
 $$</p>
 <p>with $\Gamma$ an arbitrary scalar function. The scalar part</p>
 <p>$$
@@ -106,9 +106,9 @@ S=\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right)
 $$</p>
 <p>is the gauge degree of freedom of the companion article: it transforms as</p>
 <p>$$
-S'=S-\Box\Gamma,
+S_2=S-\Box\Gamma,
 $$</p>
-<p>and the field strength is invariant, $\tilde{F}'=\tilde{F}$. The companion article states plainly that $S$ "is a gauge artifact" and that the <strong>Lorenz gauge</strong> $S=0$ is "a choice of gauge, not a physical condition". In that gauge the potential obeys the second-order equation</p>
+<p>and the field strength is invariant, $\tilde{F}_2=\tilde{F}$. The companion article states plainly that $S$ "is a gauge artifact" and that the <strong>Lorenz gauge</strong> $S=0$ is "a choice of gauge, not a physical condition". In that gauge the potential obeys the second-order equation</p>
 <p>$$
 \Box\tilde{A}=-\mu\tilde J,\qquad \tilde J=ic\rho\,e_t+\vec J.
 $$</p>
@@ -171,8 +171,8 @@ A_\mu(x)=\int\!\frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
 $$</p>
 <p>with $\omega_k=|\vec k|$ for the massless field and with polarization vectors normalized as $\eta_{\mu\nu}\epsilon^{(r)\mu}\epsilon^{(s)\nu}=\zeta_r\delta_{rs}$, where $(\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1)$. The mode operators carry the corresponding commutators,</p>
 <p>$$
-\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k')\big]
-=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k'),
+\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
+=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
 $$</p>
 <p>with all other commutators vanishing. The signs are not optional: the timelike mode has $\zeta_0=-1$, so the one-particle state $a^{\mathrm{fop}\dagger}_0|0\rangle$ has <strong>negative norm</strong>, $\langle0|a^{\mathrm{fop}}_0a^{\mathrm{fop}\dagger}_0|0\rangle=-1$. The longitudinal mode has positive norm, as do the two transverse modes.</p>
 <p>The negative-norm states are removed by a <strong>subsidiary condition</strong>. The Lorenz gauge condition $S=0$ is imposed on the positive-frequency part of the field,</p>
@@ -204,7 +204,7 @@ $$</p>
 <h2 id="comparison-with-the-scalar-field">Comparison with the Scalar Field</h2>
 <p>The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\phi$ of mass $m$ has conjugate momentum $\pi=\partial\phi/\partial t$, the canonical commutator $[\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, and a mode expansion with <strong>one</strong> polarization,</p>
 <p>$$
-\big[a^{\mathrm{fop}}(\vec k),a^{\mathrm{fop}\dagger}(\vec k')\big]=(2\pi)^3\delta^{(3)}(\vec k-\vec k'),
+\big[a^{\mathrm{fop}}(\vec k),a^{\mathrm{fop}\dagger}(\vec k_2)\big]=(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
 $$</p>
 <p>with dispersion $\omega_k=\sqrt{\vec k^2+m^2}$. Its Fock space has positive-definite norm, there is no constraint, and no gauge condition has to be imposed: the Legendre transform is regular. The massless scalar field has one mode. The photon has <strong>two</strong> physical transverse modes and reaches them only after the two unphysical modes — the timelike and the longitudinal — have been removed by a subsidiary condition. The photon is not a scalar particle with an extra label; the reduction from four components to two is performed by the gauge structure, and that structure is what the algebra does not fix. If the gauge field is given a mass, as in the Proca theory, the gauge freedom is absent, the constraint structure changes, and a third (longitudinal) polarization becomes physical — which shows that the two-polarization count is a consequence of the gauge symmetry, not of the number of field components.</p>
 <h2 id="comparison-with-the-dirac-case">Comparison with the Dirac Case</h2>
@@ -229,7 +229,7 @@ $$</p>
 <li><strong>Empirical content.</strong> Whether any of this yields a prediction distinguishing it from standard quantum electrodynamics is the unanswered framework-level question.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The biquaternion Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ is first order, and its natural variable $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is gauge invariant; its real and imaginary parts separate the homogeneous and the inhomogeneous Maxwell equations. But $\tilde{F}$ has no canonical partner, and no local Lagrangian in four dimensions produces the field equation by varying $\tilde{F}$ alone. Canonical quantization must therefore return to the potential $\tilde{A}$, and with it the gauge freedom $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, whose field is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ with $S'=S-\Box\Gamma$.</p>
+<p>The biquaternion Maxwell equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ is first order, and its natural variable $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is gauge invariant; its real and imaginary parts separate the homogeneous and the inhomogeneous Maxwell equations. But $\tilde{F}$ has no canonical partner, and no local Lagrangian in four dimensions produces the field equation by varying $\tilde{F}$ alone. Canonical quantization must therefore return to the potential $\tilde{A}$, and with it the gauge freedom $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, whose field is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ with $S_2=S-\Box\Gamma$.</p>
 <p>The Legendre transform is singular. The conjugate momenta are $\pi^\mu=-F^{t\mu}$, so $\pi^0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are <strong>first class</strong> and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$.</p>
 <p>Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_s]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$, $\zeta=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\psi\rangle=0$ leaves the zero-norm combination $a^{\mathrm{fop}\dagger}_0-a^{\mathrm{fop}\dagger}_3$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^\lambda\epsilon_j^\lambda=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.</p>
 <p>The extension is a transcription of standard canonical quantization into the framework's notation, not a derivation of the quantized structure from $\mathbb{B}$. Unlike the Dirac case it requires no new grading, but unlike the Dirac case the natural variable is not the canonical one, and the gauge must be fixed from outside the algebra. The framework cannot quantize the Maxwell field automatically.</p>
@@ -292,10 +292,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\Gamma$</td>
-<td>Gauge function, $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$</td>
+<td>Gauge function, $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$</td>
 </tr>
 <tr>
-<td>$S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S'=S-\Box\Gamma$</td>
+<td>$S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S_2=S-\Box\Gamma$</td>
 <td>Gauge degree of freedom; Lorenz gauge $S=0$</td>
 </tr>
 <tr>
@@ -323,7 +323,7 @@ $$</p>
 <td>Quantized potential, polarization vectors, mode operators</td>
 </tr>
 <tr>
-<td>$[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k')]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$</td>
+<td>$[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$</td>
 <td>Mode commutator, $\zeta=(-1,+1,+1,+1)$</td>
 </tr>
 <tr>
@@ -336,7 +336,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
-<td>Trace pairing of the informational sector</td>
+<td>Trace reading of the plain form on the informational sector</td>
 </tr>
 </tbody>
 </table></div>

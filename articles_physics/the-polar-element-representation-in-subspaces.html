@@ -599,7 +599,7 @@ $$</p>
 <h3 id="the-boost-factor">The Boost Factor</h3>
 <p>The boost factor is</p>
 <p>$$
-B = \frac{1}{r}\left(M\,e_t + i\,\operatorname{sign}(a)\,m\,\vec u_q'\right) , \qquad M = \max(|a|,s), \quad m = \min(|a|,s) , \qquad \vec u_q' = \frac{\vec q'}{s} ,
+B = \frac{1}{r}\left(M\,e_t + i\,\operatorname{sign}(a)\,m\,\vec u_{q'}\right) , \qquad M = \max(|a|,s), \quad m = \min(|a|,s) , \qquad \vec u_{q'} = \frac{\vec q'}{s} ,
 $$</p>
 <p>which squares to $\left((a^2+s^2)e_t + 2ia\vec q'\right)/r^2 = \tilde{Q}\tilde{Q}^{*}/r^2$ because $\tilde{Q}\tilde{Q}^{*} = (a^2+s^2)e_t + 2ia\vec q'$; the sign in front of the vector part is opposite to that of the material sector, and the two formulas are consistent under the map $\tilde{Q}\mapsto i\tilde{Q}$ from $\mathbb{M}_+$ to $\mathbb{M}_-$, which sends the pair $(a,\vec q')$ to $(a,-\vec q')$ and therefore flips the vector part: the material formula with $\vec q = -\vec q'$ returns the informational formula.</p>
 <h3 id="worked-examples_4">Worked Examples</h3>
@@ -641,7 +641,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>All three rows have the same scale, and the pattern of the two branches is complete. The first and second rows are the definite branch: the same boost factor in magnitude, the same phase $0$, and rotors of opposite sign, which is the sign of $a$ absorbed by the fourth factor. The first and third rows have the same boost factor and the same scale and differ in the phase and in the rotor, the definite branch against the indefinite one, and it is the third row that exhibits the direction $\vec u_q' = \vec e_x$. The third and fourth factors are therefore never both continuous here: either the rotor is the discrete sign $\pm e_t$ and the boost is a general boost of axis $\vec u_q'$ and rapidity $\operatorname{arctanh}(s/|a|)$, or the rotor is the direction $\vec u_q'$ itself and the boost is reduced to a rapidity about that same direction.</p>
+<p>All three rows have the same scale, and the pattern of the two branches is complete. The first and second rows are the definite branch: the same boost factor in magnitude, the same phase $0$, and rotors of opposite sign, which is the sign of $a$ absorbed by the fourth factor. The first and third rows have the same boost factor and the same scale and differ in the phase and in the rotor, the definite branch against the indefinite one, and it is the third row that exhibits the direction $\vec u_{q'} = \vec e_x$. The third and fourth factors are therefore never both continuous here: either the rotor is the discrete sign $\pm e_t$ and the boost is a general boost of axis $\vec u_{q'}$ and rapidity $\operatorname{arctanh}(s/|a|)$, or the rotor is the direction $\vec u_{q'}$ itself and the boost is reduced to a rapidity about that same direction.</p>
 <h2 id="the-material-sector-math482-the-boost-of-a-four-vector">The Material Sector $\mathbb{M}_-$: the Boost of a Four-Vector</h2>
 <h3 id="the-element-and-its-biquaternion-norm_5">The Element and Its Biquaternion Norm</h3>
 <p>Let $\tilde{Q}\in\mathbb{M}_-$, written in the physics coordinates as</p>
@@ -973,11 +973,11 @@ $$</p>
 <td>$|\vec q'|$</td>
 <td>$\pi/2$</td>
 <td>$e_t$</td>
-<td>$\vec u_q'$</td>
+<td>$\vec u_{q'}$</td>
 </tr>
 </tbody>
 </table></div>
-<p>Every entry satisfies the restrictions of each subspace that contains it. On $T_{\mathrm{i}}$ the centre gives $\tilde q = \pm e_t$, the quaternion subspace gives $\tilde q = \tilde{Q}/|\tilde{Q}| = \pm e_t$, and the informational sector with $s = 0$ gives $m = 0$, hence $B = e_t$ and $\tilde q = \operatorname{sign}(a)e_t$; the three interpretations are the same. On $X_{\mathrm{m}}$ the vector subspace interpretation has $\vec q' = 0$, which is the degenerate case $\vec q\times\vec q' = 0$, hence $B = e_t$; the quaternion interpretation gives the rotor $\vec u_x$; and the material-sector interpretation with $a = 0$ gives the spacelike rotor $\vec u_q = \vec u_x$ with the trivial boost $B = e_t$; the three interpretations are the same. On $X_{\mathrm{i}}$ the vector, antiquaternion and informational interpretations agree the same way, with the phase $\pi/2$ and the rotor $\vec u_q'$ in all three. The blocks are therefore the elements on which all the applicable simplifications hold at once, and the table is a consistency check of the six sections above rather than a new computation.</p>
+<p>Every entry satisfies the restrictions of each subspace that contains it. On $T_{\mathrm{i}}$ the centre gives $\tilde q = \pm e_t$, the quaternion subspace gives $\tilde q = \tilde{Q}/|\tilde{Q}| = \pm e_t$, and the informational sector with $s = 0$ gives $m = 0$, hence $B = e_t$ and $\tilde q = \operatorname{sign}(a)e_t$; the three interpretations are the same. On $X_{\mathrm{m}}$ the vector subspace interpretation has $\vec q' = 0$, which is the degenerate case $\vec q\times\vec q' = 0$, hence $B = e_t$; the quaternion interpretation gives the rotor $\vec u_x$; and the material-sector interpretation with $a = 0$ gives the spacelike rotor $\vec u_q = \vec u_x$ with the trivial boost $B = e_t$; the three interpretations are the same. On $X_{\mathrm{i}}$ the vector, antiquaternion and informational interpretations agree the same way, with the phase $\pi/2$ and the rotor $\vec u_{q'}$ in all three. The blocks are therefore the elements on which all the applicable simplifications hold at once, and the table is a consistency check of the six sections above rather than a new computation.</p>
 <h2 id="physical-readings">Physical Readings</h2>
 <p>The two criteria read as the framework's tests of positivity and of Hermiticity: the scalar factor is $e_t$ exactly when a product is a positive scalar, and the normalised element is Hermitian exactly when the central direction is $\pm e_t$. Read on the states, the criteria are the boundary between an element that can carry a state and one that cannot, which is the same boundary the indefinite metric meets; read on the clock, the two exceptional directions are the two orientations of the central axis, which is what the exchange rotates by a quarter turn at a time.</p>
 <h2 id="summary">Summary</h2>

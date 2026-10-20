@@ -93,7 +93,7 @@ $$</p>
 <h3 id="the-star-product">The star product</h3>
 <p>Field operators are split into plane waves and recombined; the product of two operators becomes the <strong>Moyal product</strong> of the corresponding functions,</p>
 <p>$$
-A(x)\star B(x) = \exp\!\left(\frac{i}{2}\theta^{\mu\nu}\partial_\mu\partial'_\nu\right) A(x)B(x')\Big|_{x=x'},
+A(x)\star B(x) = \exp\!\left(\frac{i}{2}\theta^{\mu\nu}\partial_\mu\,\partial/\partial x_2^\nu\right) A(x)B(x_2)\Big|_{x_2=x},
 $$</p>
 <p>the Weyl–Moyal correspondence. The star product is associative. Two facts about it matter here. First, the <strong>quadratic (kinetic) terms of an action are unchanged</strong> by the deformation, because the $\theta$-correction is a total derivative at second order; the propagators are therefore identical to the commutative ones, and, as the source puts it, the deformed theory has the same degrees of freedom as the commutative one, related to it by the Seiberg–Witten map. Second, the deformation first shows itself at <strong>cubic and higher order in the fields</strong> — which is why the free Maxwell action stays quadratic but its field equations do not stay linear.</p>
 <p>At first order in $\theta$ the Seiberg–Witten expansion gives</p>
@@ -175,9 +175,9 @@ $$</p>
 $$</p>
 <p>equivalently under $\vec N\mapsto \exp(-i\alpha)\vec N$ with $\vec N = \vec E + ic\vec B$, and that this is a symmetry of the <strong>polarisation space</strong>, rotating the polarisation axes about the wave vector. In four-dimensional notation the transformation is</p>
 <p>$$
-F'_{\mu\nu} = F_{\mu\nu}\cos\alpha - \tilde F_{\mu\nu}\sin\alpha,
+F_{2,\mu\nu} = F_{\mu\nu}\cos\alpha - \tilde F_{\mu\nu}\sin\alpha,
 \qquad
-\tilde F'_{\mu\nu} = \tilde F_{\mu\nu}\cos\alpha + F_{\mu\nu}\sin\alpha,
+\tilde F_{2,\mu\nu} = \tilde F_{\mu\nu}\cos\alpha + F_{\mu\nu}\sin\alpha,
 $$</p>
 <p>with $\tilde F$ the dual tensor.</p>
 <p>On the deformed arena this fails. The deformation enters the Lagrangian only as the two scalars $\vec\theta\cdot\vec B$ and $\vec\theta\cdot\vec E$ multiplying the two invariants, and under the rotation those two scalars <strong>do not stay put</strong>: they rotate into each other, $\vec\theta\cdot\vec B\mapsto(\vec\theta\cdot\vec B)\cos\alpha-(\vec\theta\cdot\vec E)\sin\alpha$ and similarly for $\vec\theta\cdot\vec E$, while $I_1=\vec E^2-\vec B^2$ and $I_2=\vec E\cdot\vec B$ are invariant. The $\vec\theta$-terms of the Lagrangian are therefore not invariant, and neither are the field equations that follow from them. Setting $\vec\theta=0$ restores duality exactly, as the source notes. The violation is not small in principle — it is a misalignment of an angle — only the <em>magnitude</em> of the effects it produces is $\theta$-suppressed (verified on random fields and rotation angles for the companion <code>.context</code>: the $\vec\theta$-part of the Lagrangian changes by a quantity of order the field magnitude for every angle that is not a multiple of $\pi/2$).</p>
@@ -262,7 +262,7 @@ $$</p>
 \vec v = \vec E + i\vec B,
 $$</p>
 <p>which shows the non-linearity in one line: the correction is quadratic in the Riemann–Silberstein vector $\vec v$ and its conjugate. The spin-tensor is defined through the potential by $F = -\nabla A$ with $A = A_\mu\tau^\mu$, which reproduces $F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu$. The source notes that Eq. (45) "is equivalent to the quaternion form as the quaternion algebra can be realized through the Pauli matrices", and that at $\theta^{\mu\nu}=0$ it becomes the quaternion form of the standard Maxwell equations that the corpus records in <em>Maxwell's Equations in the Biquaternionic Formulation</em>. This is the sense in which the paper is about quaternions: the algebra gives the compact form and nothing else.</p>
-<p>The transformation properties close the section. Under $X' = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla' = L^+\nabla L$, $F' = L^{-1}FL$, $J' = L^+JL$, and the Lorentz <strong>invariants</strong> of the transformations are the <strong>determinants</strong> of the matrices. The $\vec\theta$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The appendix realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $e_k=i\tau_k$, with $e_4^2=1$ and $e_k^2=-1$, and records the biquaternion Lorentz transformation $x' = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's <em>The Lorentz Transformation as a Biquaternionic Rotation</em> derives from the same algebra.</p>
+<p>The transformation properties close the section. Under $X_{\mathrm L} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm L} = L^+\nabla L$, $F_{\mathrm L} = L^{-1}FL$, $J_{\mathrm L} = L^+JL$, and the Lorentz <strong>invariants</strong> of the transformations are the <strong>determinants</strong> of the matrices. The $\vec\theta$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The appendix realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $e_k=i\tau_k$, with $e_4^2=1$ and $e_k^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm L} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's <em>The Lorentz Transformation as a Biquaternionic Rotation</em> derives from the same algebra.</p>
 <h2 id="status-contrasts-and-boundaries">Status, Contrasts, and Boundaries</h2>
 <p>What is reportable, and with what confidence:</p>
 <ul>
@@ -316,7 +316,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\star$</td>
-<td>Moyal star product, $\exp(\tfrac{i}{2}\theta^{\mu\nu}\partial_\mu\partial'_\nu)$</td>
+<td>Moyal star product, $\exp(\tfrac{i}{2}\theta^{\mu\nu}\partial_\mu\,\partial/\partial x_2^\nu)$</td>
 </tr>
 <tr>
 <td>$[A_\mu,A_\nu]_M$</td>

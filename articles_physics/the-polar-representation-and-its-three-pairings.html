@@ -248,7 +248,7 @@ $$</p>
 \tilde q=r\,\tilde u_{\mathrm r}, \qquad
 \exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$</p>
-<p>The exponent is a real quaternion with scalar part $\alpha$ and pure part $\tfrac{\psi}{2}\vec u_{\mathrm b}'$, where $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ is the boost axis rotated by the rotor. The modulus is an ordinary quaternion in its polar form: a positive scale and a unit rotor.</p>
+<p>The exponent is a real quaternion with scalar part $\alpha$ and pure part $\tfrac{\psi}{2}\vec u_{\mathrm b,2}$, where $\vec u_{\mathrm b,2}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ is the boost axis rotated by the rotor. The modulus is an ordinary quaternion in its polar form: a positive scale and a unit rotor.</p>
 <p>In the electromagnetic reading, $\tilde Q=\tilde E+i\tilde B$ with $\tilde E,\tilde B$ real quaternions. The ratio $\tilde P=\tilde E^{-1}\tilde B$ is the duality quotient, the quaternion that carries the electric part to the magnetic part; the angle $\tilde\Psi$ is the quaternion angle of the field, with scalar part the duality phase and pure part half the boost. The modulus $\tilde q=\tilde E(\cos\tilde\Psi)^{-1}$ is the normalised electric part. The construction needs $\tilde E\neq0$: a purely magnetic field has no electric part to normalise. The factorisation of the word still exists on a purely imaginary element, but the construction from the parts does not.</p>
 <h3 id="the-hamilton-root-pairing">The Hamilton Root Pairing</h3>
 <p>The Hamilton pairing writes the element as a modulus times a complex cosine plus a complex unit axis times the complex sine:</p>
@@ -289,7 +289,7 @@ $$</p>
 <tr>
 <td>What is the real quaternion modulus and its angle?</td>
 <td>quaternion</td>
-<td>$\tilde q=r\tilde u_{\mathrm r}$, $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$</td>
+<td>$\tilde q=r\tilde u_{\mathrm r}$, $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$</td>
 </tr>
 <tr>
 <td>What is the axis and the complex angle?</td>
@@ -340,8 +340,8 @@ $$</p>
 <p>The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector space $\mathrm{Vect}(\mathbb{B})$, the real quaternion space $\mathbb{H}_{\mathbb{B}}$, the imaginary quaternion space $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_\pm$. The scale and the rotor preserve all six; the phase preserves only the centre and the vector space; the boost preserves the centre and the two sectors. Apart from the centre, no subspace is preserved by all four factors, and that is why no single subspace characterises the word.</p>
 <p>On the material sector the boost reads</p>
 <p>$$
-a'=a\cosh\psi-b_\parallel\sinh\psi, \qquad
-b_\parallel'=b_\parallel\cosh\psi-a\sinh\psi,
+a_2=a\cosh\psi-b_\parallel\sinh\psi, \qquad
+b_{\parallel,2}=b_\parallel\cosh\psi-a\sinh\psi,
 $$</p>
 <p>with $\psi$ the rapidity of the factor in view, $a$ the scalar coordinate and $b_\parallel$ the component of the vector part along the boost axis; on the informational sector the two cross terms carry the opposite sign. The difference is the sector sign. The same congruence reads as the Lorentz action on matter and as a positive congruence on the state space.</p>
 <p>The phase at $\alpha=\pi/2$ is multiplication by $i$, which exchanges the two sectors and reverses the norm. It is the Wick rotation, the passage from real to imaginary time, and it is not a symmetry of the material sector. The rotor at $\theta=2\pi$ is $-e_t$, the sign that a spinor picks up after a rotation by $2\pi$; the phase branch does not reach $\pi$.</p>
@@ -390,7 +390,7 @@ $$</p>
 <li>The scale is the modulus of the norm, the phase is half its argument, the boost is the Hermitian positive factor and the rotor is the real quaternion factor.</li>
 <li>The word exists exactly off the zero-divisor cone; on the cone a lightlike four-vector has no rest frame and no boost split.</li>
 <li>The branch $\alpha\in(-\pi/2,\pi/2]$ is the only convention of the decomposition.</li>
-<li>The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$ with $\tilde q=r\tilde u_{\mathrm r}$ and $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$; it groups scale and rotor against phase and boost.</li>
+<li>The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$ with $\tilde q=r\tilde u_{\mathrm r}$ and $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$; it groups scale and rotor against phase and boost.</li>
 <li>The Hamilton root pairing is $\tilde Q=\Rho(\cos\Theta+\vec\Xi\sin\Theta)$; it groups scale and phase against boost and rotor, and its domain also excludes a null vector part.</li>
 <li>The Cartan pairing is $\tilde Q=\tilde H\tilde U$ with $\tilde H=r\tilde U_{\mathrm b}$ and $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$; it groups scale and boost against phase and rotor.</li>
 <li>The three pairings are the three bracketings of the four-factor word; none adds information to it.</li>
@@ -454,7 +454,7 @@ $$</p>
 <td>the real quaternion modulus of the quaternion pairing</td>
 </tr>
 <tr>
-<td>$\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$</td>
+<td>$\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$</td>
 <td>the real quaternion angle of the quaternion pairing</td>
 </tr>
 <tr>

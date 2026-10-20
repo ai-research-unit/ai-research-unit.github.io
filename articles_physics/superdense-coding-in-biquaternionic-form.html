@@ -77,7 +77,7 @@
 \tilde\Pi_\epsilon = \tfrac{1}{4}\bigl(e_t\otimes e_t + \epsilon_1\,\vec e_x\otimes \vec e_x + \epsilon_2\,\vec e_y\otimes \vec e_y + \epsilon_3\,\vec e_z\otimes \vec e_z\bigr),
 \qquad \epsilon_j = \pm1, \quad \epsilon_1\epsilon_2\epsilon_3 = +1 ,
 $$</p>
-<p>which satisfy $\tilde\Pi_\epsilon \tilde\Pi_{\epsilon'} = \delta_{\epsilon\epsilon'}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon = e_t\otimes e_t$. They are the joint spectral idempotents of the commuting stabilizers</p>
+<p>which satisfy $\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}} = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon = e_t\otimes e_t$. They are the joint spectral idempotents of the commuting stabilizers</p>
 <p>$$
 S_1 = -\vec e_x\otimes \vec e_x, \qquad S_3 = -\vec e_z\otimes \vec e_z,
 \qquad
@@ -192,7 +192,7 @@ $$</p>
 <h2 id="explicit-verification">Explicit Verification</h2>
 <p>All the algebraic claims above were verified by direct computation in the tensor-product algebra.</p>
 <p><strong>The four encoded states.</strong> Starting from the Bell idempotent $\tilde\Pi_{\Phi^+}$ and conjugating by $e_t\otimes e_t$, $\vec e_x\otimes e_t$, $\vec e_y\otimes e_t$, $\vec e_z\otimes e_t$, the four resulting states were computed as $4\times4$ matrices and identified by their overlaps with the four Bell states. The results are exactly the table above: $e_t\to|\Phi^+\rangle$, $\vec e_x\to|\Psi^+\rangle$, $\vec e_y\to|\Psi^-\rangle$, $\vec e_z\to|\Phi^-\rangle$, each with overlap one and zero overlap with the other three.</p>
-<p><strong>Orthogonality.</strong> The pairwise overlaps of the four encoded states were computed and found to be $\delta_{\epsilon\epsilon'}$: the codewords are orthogonal, and the Bell measurement distinguishes them with probability one.</p>
+<p><strong>Orthogonality.</strong> The pairwise overlaps of the four encoded states were computed and found to be $\delta_{\epsilon,\epsilon_{\mathrm{alt}}}$: the codewords are orthogonal, and the Bell measurement distinguishes them with probability one.</p>
 <p><strong>The spectrum and the marginal.</strong> Each encoded state has the spectrum of an idempotent, $(1,0,0,0)$, and partial trace $\tfrac12 e_t$ on both factors, confirming that the encoding preserves purity and maximal entanglement and that no local measurement can read the message.</p>
 <p><strong>The capacity arithmetic.</strong> The encoding set has four elements, so the message is $\log_2 4 = 2$ bits, while a single qubit without entanglement is bounded by $\log_2 2 = 1$ bit; the doubling is the algebraic statement that the four codewords are orthogonal vectors in a four-dimensional module rather than in a two-dimensional one.</p>
 <h2 id="duality-with-teleportation">Duality with Teleportation</h2>
@@ -234,7 +234,7 @@ $$</p>
 <p>$$
 e_t \to \tilde\Pi_{\Phi^+}, \quad \vec e_x \to \tilde\Pi_{\Psi^+}, \quad \vec e_y \to \tilde\Pi_{\Psi^-}, \quad \vec e_z \to \tilde\Pi_{\Phi^-} ;
 $$</p>
-<p>and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, whose joint eigenbasis is the Bell basis. The four codewords are mutually orthogonal, $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon'}) = \delta_{\epsilon\epsilon'}$, so the measurement identifies the message with certainty, and the encoding set has four elements, giving $\log_2 4 = 2$ bits. Without the shared entanglement a qubit carries at most $\log_2 2 = 1$ bit (the Holevo bound); the pair doubles the capacity, the entanglement-assisted capacity of the noiseless qubit channel being $2$ bits, and the resource is consumed in the process. The protocol is the algebraic statement that the encoding group acts regularly on the Bell idempotent basis; it is the dual of quantum teleportation.</p>
+<p>and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, whose joint eigenbasis is the Bell basis. The four codewords are mutually orthogonal, $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$, so the measurement identifies the message with certainty, and the encoding set has four elements, giving $\log_2 4 = 2$ bits. Without the shared entanglement a qubit carries at most $\log_2 2 = 1$ bit (the Holevo bound); the pair doubles the capacity, the entanglement-assisted capacity of the noiseless qubit channel being $2$ bits, and the resource is consumed in the process. The protocol is the algebraic statement that the encoding group acts regularly on the Bell idempotent basis; it is the dual of quantum teleportation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -266,7 +266,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\epsilon = (\epsilon_1,\epsilon_2,\epsilon_3)$, $\epsilon_1\epsilon_2\epsilon_3=+1$</td>
-<td>Bell sign pattern</td>
+<td>Bell sign pattern; $\epsilon_{\mathrm{alt}}$ denotes a second one</td>
 </tr>
 <tr>
 <td>$S_1 = -\vec e_x\otimes \vec e_x$, $S_3 = -\vec e_z\otimes \vec e_z$</td>
@@ -281,7 +281,7 @@ $$</p>
 <td>Local encoding operation</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon'}) = \delta_{\epsilon\epsilon'}$</td>
+<td>$\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$</td>
 <td>Orthogonality of codewords</td>
 </tr>
 <tr>

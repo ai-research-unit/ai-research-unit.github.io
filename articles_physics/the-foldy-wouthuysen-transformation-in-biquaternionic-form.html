@@ -101,7 +101,7 @@ $$</p>
 <h2 id="the-transformation-and-its-generator">The Transformation and Its Generator</h2>
 <p>Let $U = \exp(iS)$ with $S$ Hermitian so that $U$ is unitary. The transformed Hamiltonian is</p>
 <p>$$
-H' = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger ,
+H_2 = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger ,
 $$</p>
 <p>where the second term vanishes for a time-independent $S$. Since $H = \beta mc^2 + O + \mathcal{E}$, the idea is to choose $S$ so that the large term $i[S,\beta mc^2] = -O$ cancels the odd part at leading order, leaving an even remainder of order $1/c^2$.</p>
 <p>Expanding $UHU^\dagger = H + i[S,H] + \frac{i^2}{2!}[S,[S,H]] + \cdots$, the condition $i[S,\beta mc^2] = -O$ is satisfied by</p>
@@ -114,11 +114,11 @@ i[S,O] = \frac{1}{2mc^2}[\beta O,O] = \frac{1}{mc^2}\beta O^2,
 $$</p>
 <p>because $[\beta O,O] = 2\beta O^2$ when $O$ is odd. Collecting, and using the full exponential rather than the first-order truncation, the transformed Hamiltonian through order $1/c^2$ is</p>
 <p>$$
-H' = \beta mc^2 + \mathcal{E} + \frac{\beta O^2}{2mc^2} + \cdots,
+H_2 = \beta mc^2 + \mathcal{E} + \frac{\beta O^2}{2mc^2} + \cdots,
 $$</p>
-<p>with the residual odd terms of order $O^3/(m^2c^4)$ removed by a second transformation $S_2 = -\frac{i}{2mc^2}\beta O'$, where $O'$ denotes the residual odd part after the first step. For the free particle $O = c\,\boldsymbol\alpha\cdot\vec p$ and $O^2 = c^2\vec p^2$, so $O^2/(2mc^2) = \vec p^2/(2m)$ and</p>
+<p>with the residual odd terms of order $O^3/(m^2c^4)$ removed by a second transformation $S_2 = -\frac{i}{2mc^2}\beta O_2$, where $O_2$ denotes the residual odd part after the first step. For the free particle $O = c\,\boldsymbol\alpha\cdot\vec p$ and $O^2 = c^2\vec p^2$, so $O^2/(2mc^2) = \vec p^2/(2m)$ and</p>
 <p>$$
-H' = \beta\left(mc^2 + \frac{\vec p^2}{2m} - \frac{\vec p^4}{8m^3c^2} + \cdots\right),
+H_2 = \beta\left(mc^2 + \frac{\vec p^2}{2m} - \frac{\vec p^4}{8m^3c^2} + \cdots\right),
 $$</p>
 <p>whose first two terms are the free-particle Schrödinger Hamiltonian in the upper block and its negative in the lower block, and whose $\vec p^4$ term is the first relativistic correction to the kinetic energy. The expansion is in powers of $(\vec p/mc)^2$, i.e. in $v^2/c^2$; the residual odd terms are smaller by two powers of $v/c$.</p>
 <p>The generator has a transparent physical meaning in the algebra. The operator $\beta O = \beta c\,\boldsymbol\alpha\cdot\vec\pi$ is the piece of the Hamiltonian that flips the large and small components; the generator $S_1$ is proportional to it, so the FW transformation is the rotation whose angle measures how much large/small mixing the kinetic term produces. For a slowly moving particle the angle is small and the transformation is close to the identity; in the ultra-relativistic regime the expansion breaks down, which is the signal that the non-relativistic separation is no longer meaningful.</p>
@@ -185,7 +185,7 @@ $$</p>
 $$</p>
 <p>where the leading term uses $[S_1,x_k] = -\frac{i}{2mc}\beta[\alpha_j\pi_j,x_k] = -\frac{\hbar}{2mc}\beta\alpha_k$ for the free case, so the correction is of the order of the reduced Compton wavelength $\hbar/(mc)$, and the next correction is of order $1/m^2$. The operator $\vec Q$ is the <strong>mean position</strong> (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,</p>
 <p>$$
-d\vec Q/dt = \frac{i}{\hbar}[H',\vec Q],
+d\vec Q/dt = \frac{i}{\hbar}[H_2,\vec Q],
 $$</p>
 <p>contains no oscillatory term: to leading order it is the classical drift $\vec pc^2/E$, so the rapid trembling of the ordinary position operator $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is entirely contained in the difference $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Q$. In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the FW position is the coordinate that is blind to it. The companion article <em>Zitterbewegung in Biquaternionic Form</em> records the same conclusion from the side of the oscillation; here it appears as a property of the transformed position operator.</p>
 <p>The correction $-\frac{i\hbar\beta\boldsymbol\alpha}{2mc}$ is itself worth reading in the algebra. It is an odd, spinorial displacement: it is proportional to the same matrix $\beta\boldsymbol\alpha$ that generates the transformation, it anticommutes with $\beta$, and it is the first term in the expansion of the mean position in powers of $1/m$. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the block-diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec Q$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and a configuration-space position on the module.</p>
@@ -218,7 +218,7 @@ $$</p>
 <p>$$
 S_1 = -\frac{i}{2mc^2}\beta O = -\frac{i}{2mc}\beta\,\boldsymbol\alpha\cdot\vec\pi,
 $$</p>
-<p>and the transformed Hamiltonian through order $v^2/c^2$ is $H' = \beta mc^2 + \mathcal{E} + \beta O^2/(2mc^2)$; in the free case $\mathcal{E} = 0$ this is the Schrödinger Hamiltonian in the upper block and its negative in the lower block. For the free particle the transformation is exact:</p>
+<p>and the transformed Hamiltonian through order $v^2/c^2$ is $H_2 = \beta mc^2 + \mathcal{E} + \beta O^2/(2mc^2)$; in the free case $\mathcal{E} = 0$ this is the Schrödinger Hamiltonian in the upper block and its negative in the lower block. For the free particle the transformation is exact:</p>
 <p>$$
 U = \cos\frac{\theta}{2} + \beta\,\boldsymbol\alpha\cdot\vec u_p\,\sin\frac{\theta}{2},
 \qquad
@@ -278,7 +278,7 @@ $$</p>
 <td>Leading FW generator</td>
 </tr>
 <tr>
-<td>$H' = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger$</td>
+<td>$H_2 = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger$</td>
 <td>Transformed Hamiltonian</td>
 </tr>
 <tr>

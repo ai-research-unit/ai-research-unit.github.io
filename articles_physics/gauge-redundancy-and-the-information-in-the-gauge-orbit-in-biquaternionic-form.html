@@ -69,7 +69,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The gauge principle in biquaternionic form localizes the central phase of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ and finds that the price of locality is a connection. Under a gauge function $\Gamma$ the connection transforms as</p>
 <p>$$
-\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma,
+\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma,
 $$</p>
 <p>and the field strength $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is unchanged. Two potentials related by such a shift are not two physical configurations; they are two descriptions of one. The set of descriptions of a single configuration,</p>
 <p>$$
@@ -88,7 +88,7 @@ $$</p>
 <p>$$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta = \Delta + \partial^2/\partial Q_t^2 ,
 $$</p>
-<p>the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ is inherited unchanged.</p>
+<p>the series convention. The connection is $\tilde{A} = \sum_{\mu\in\{t,x,y,z\}}A_\mu e_\mu = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = ϙ/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the <strong>speed of light in the medium</strong> and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$, is inherited unchanged.</p>
 <h2 id="the-gauge-orbit-as-a-torsor">The Gauge Orbit as a Torsor</h2>
 <p>The set $\mathcal{O}(\tilde{A})$ is the image of the map</p>
 <p>$$
@@ -116,24 +116,24 @@ $$</p>
 <h3 id="the-orbit-and-the-covariant-derivative">The Orbit and the Covariant Derivative</h3>
 <p>The reason two members of an orbit are two descriptions rather than two configurations is the transformation law of the covariant derivative. For a matter field $\tilde{\Psi}$ carrying the central charge, the minimal prescription of the companion article is $D = \tilde{\nabla} + i\kappa\tilde{A}$, and under the gauge function $\Gamma$ both the connection and the field shift together,</p>
 <p>$$
-\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma,
+\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma,
 \qquad
-\tilde{\Psi}' = \lambda\tilde{\Psi},
+\tilde{\Psi}_2 = \lambda\tilde{\Psi},
 \qquad
 \lambda = \exp(i ϙ\Gamma/\hbar).
 $$</p>
 <p>The three shifts are arranged so that the derivative of the transformed field in the transformed background is the transform of the derivative:</p>
 <p>$$
-D'\tilde{\Psi}' = \left(\tilde{\nabla} + i\kappa\tilde{A} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{\Psi}
+D_2\tilde{\Psi}_2 = \left(\tilde{\nabla} + i\kappa\tilde{A} - i\kappa\tilde{\nabla}\Gamma\right)\lambda\tilde{\Psi}
 = \lambda\left(\tilde{\nabla} + i\kappa\tilde{A}\right)\tilde{\Psi}
 = \lambda\,D\tilde{\Psi},
 $$</p>
 <p>the middle step using that $\lambda$ is central, so that $\tilde{\nabla}(\lambda\tilde{\Psi}) = (\tilde{\nabla}\lambda)\tilde{\Psi} + \lambda\tilde{\nabla}\tilde{\Psi}$ and $(\tilde{\nabla}\lambda) = i\kappa(\tilde{\nabla}\Gamma)\lambda$ cancels the shift of the connection. Equivalently, at the level of operators,</p>
 <p>$$
-D' = \lambda\,D\,\lambda^{-1}.
+D_2 = \lambda\,D\,\lambda^{-1}.
 $$</p>
-<p>This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{\Psi})$ and the pair $(\tilde{A}',\tilde{\Psi}')$ are related by the local unitary $\lambda$, and every quantity built from $D$ and $\tilde{\Psi}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.</p>
-<p>Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D' = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism $\iota_\lambda$ of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{\Psi})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.</p>
+<p>This is the algebraic content of the redundancy: the pair $(\tilde{A},\tilde{\Psi})$ and the pair $(\tilde{A}_2,\tilde{\Psi}_2)$ are related by the local unitary $\lambda$, and every quantity built from $D$ and $\tilde{\Psi}$ in a gauge-covariant way is therefore unchanged. The operator identity is what makes the invariance of the relative entropy, established below, a statement about the biquaternion algebra rather than an imported fact about gauge theory.</p>
+<p>Two remarks fix the scope. The transformation is an automorphism of the field algebra only when $\lambda$ is central, which is the abelian case the framework's own gauge group supplies; for a non-abelian group $D_2 = \lambda D\lambda^{-1}$ holds with $\lambda$ a matrix-valued group element and $\lambda^{-1}$ on the right, which is the adjoint law of the non-abelian companion. And because the framework's $\lambda$ is central, conjugation by it fixes every element of $\mathbb{B}$: the inner automorphism $\iota_\lambda$ of the algebra is the identity, and the transformation acts on the pair $(\tilde{A},\tilde{\Psi})$ as the common central scalar $\lambda$ rather than as a non-trivial re-labelling of the algebra's elements. That is why the abelian orbit is not merely equivalent to a trivial action on the informational sector but literally the trivial action, as the next section shows.</p>
 <h2 id="the-orbit-is-the-fibre-of-the-curvature-map">The Orbit Is the Fibre of the Curvature Map</h2>
 <p>The curvature does not depend on which member of the orbit is used. Write the field strength as the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$,</p>
 <p>$$
@@ -141,7 +141,7 @@ $$</p>
 $$</p>
 <p>the identification inherited from the gauge principle and the covariant-derivative articles. Under a gauge transformation,</p>
 <p>$$
-\tilde{F}' = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A} - \tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma\right)
+\tilde{F}_2 = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A} - \tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma\right)
 = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) - \mathrm{Vect}\!\left(\Box\Gamma\,e_t\right)
 = \tilde{F},
 $$</p>
@@ -150,7 +150,7 @@ $$</p>
 <p>$$
 S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial/\partial Q_t\,A_0 + \mathrm{div}\,\vec A,
 \qquad
-S' = S - \Box\Gamma ,
+S_2 = S - \Box\Gamma ,
 $$</p>
 <p>so $S$ is pure gauge: its value can be changed at will along the orbit, and the Lorenz condition $S = 0$ is a choice of representative, not a physical statement. The two statements — $\tilde{F}$ invariant, $S$ pure gauge — are the two halves of a single fact: the orbit is the fibre, the curvature is the base, and the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the coordinate along the fibre.</p>
 <p>Both statements were checked on a superposition of three plane-wave modes with generic wavevectors and generic biquaternion amplitudes, using the formal coordinates $x_\mu$ with $x_0 = ict$ and no restriction on the mode wavevectors. The vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ was unchanged by a gauge transformation to within $5\times10^{-16}$, and the scalar part shifted by exactly $-\Box\Gamma$, to within $9\times10^{-16}$. The identity</p>
@@ -158,7 +158,7 @@ $$</p>
 \tilde{F} = \frac{1}{2}\sum_{\mu,\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu ,
 \qquad F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu ,
 $$</p>
-<p>was checked against the direct evaluation of $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ on a generic connection and wavevector, agreeing to $5\times10^{-16}$. A connection on the orbit through zero, $\tilde{A} = -\tilde{\nabla}\Gamma$, is flat in the same sense: its vector part came out zero to $2\times10^{-16}$, while its scalar part equalled $-\Box\Gamma$ to $2\times10^{-16}$, which is the shift that carries the member of the orbit with $S = 0$ to this one. For $\tilde{A} = +\tilde{\nabla}\Gamma$ the scalar part is $+\Box\Gamma$; the sign is carried by the direction of the shift, and the orbit's definition $\tilde{A}' = \tilde{A}-\tilde{\nabla}\Gamma$ fixes it.</p>
+<p>was checked against the direct evaluation of $\mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ on a generic connection and wavevector, agreeing to $5\times10^{-16}$. A connection on the orbit through zero, $\tilde{A} = -\tilde{\nabla}\Gamma$, is flat in the same sense: its vector part came out zero to $2\times10^{-16}$, while its scalar part equalled $-\Box\Gamma$ to $2\times10^{-16}$, which is the shift that carries the member of the orbit with $S = 0$ to this one. For $\tilde{A} = +\tilde{\nabla}\Gamma$ the scalar part is $+\Box\Gamma$; the sign is carried by the direction of the shift, and the orbit's definition $\tilde{A}_2 = \tilde{A}-\tilde{\nabla}\Gamma$ fixes it.</p>
 <h3 id="local-triviality-and-the-degree-of-freedom-count">Local Triviality and the Degree-of-Freedom Count</h3>
 <p>Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_\mu$ be the components of $\tilde{A}(\tilde{Q}_0)$, with $A_0$ imaginary and $\vec A$ real. Define</p>
 <p>$$
@@ -180,14 +180,14 @@ $$</p>
 <p>The two parts are the reason the title's phrase needs care. If "the information in the gauge orbit" means the state information that the orbit's many labels purport to describe, the answer is zero. If it means the structural information that the existence of the orbit encodes, the answer is the gauge group and the holonomy, and it is entirely in the orbit's global shape.</p>
 <h2 id="information-theoretic-invariance-of-the-orbit">Information-Theoretic Invariance of the Orbit</h2>
 <p>The claim that the orbit carries no state information can be made exact with the relative entropy, the basic monotone quantity of the informational sector.</p>
-<p>Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}$, and let $\omega'$ be the corresponding state in the gauge-transformed background $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,</p>
+<p>Let $\omega$ be a state of the charged field algebra in a background connection $\tilde{A}$, and let $\omega_2$ be the corresponding state in the gauge-transformed background $\tilde{A}_2 = \tilde{A} - \tilde{\nabla}\Gamma$. Gauge covariance states that the two are related by the automorphism implemented by the local central phase,</p>
 <p>$$
 \lambda(\tilde{Q}) = \exp(iϙ\Gamma(\tilde{Q})/\hbar), \qquad
-\omega' = \omega \circ \mathrm{Ad}_{\lambda^{-1}} .
+\omega_2 = \omega \circ \mathrm{Ad}_{\lambda^{-1}} .
 $$</p>
-<p>Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a unitary of the algebra, and the GNS representations of $\omega$ and $\omega'$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:</p>
+<p>Because $\lambda$ is central and of unit phase, the automorphism is inner and implemented by a unitary of the algebra, and the GNS representations of $\omega$ and $\omega_2$ are unitarily equivalent. For any two backgrounds $\tilde{A}$ and $\tilde{Q}_1$ and their gauge transforms, the relative entropies therefore agree:</p>
 <p>$$
-S(\tilde{Ϛ}_{\tilde{A}'}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1'}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1}) .
+S(\tilde{Ϛ}_{\tilde{A}_2}\,\|\,\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\,\|\,\tilde{Ϛ}_{\tilde{Q}_1}) .
 $$</p>
 <p>This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde U\rho \tilde U^\dagger\|\tilde U\sigma \tilde U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.</p>
 <p>Three consequences of the invariance spell out the redundancy.</p>
@@ -300,7 +300,7 @@ $$</p>
 <p>The gauge orbit of a biquaternionic connection is the set $\mathcal{O}(\tilde{A}) = \{\tilde{A} - \tilde{\nabla}\Gamma\}$ of descriptions of one physical configuration. It is a torsor for the group of real gauge functions modulo constants: the gradient map has kernel the constants, so the gauge group acts freely and transitively, and there is no preferred representative. It is the fibre of the curvature map, because $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is orbit-invariant while the gauge scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $-\Box\Gamma$ and is pure gauge. The rank of the pure-gauge map is one per Fourier mode, which yields the standard degree-of-freedom count $4\to3\to2$.</p>
 <p>Information-theoretically the orbit is a <strong>redundancy</strong>, not a loss. A gauge transformation is implemented by the central phase $\lambda = \exp(iϙ\Gamma/\hbar)$, which is unitary, so gauge-related backgrounds define unitarily equivalent states and the relative entropy is constant along the orbit,</p>
 <p>$$
-S(\tilde{Ϛ}_{\tilde{A}'}\|\tilde{Ϛ}_{\tilde{Q}_1'}) = S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{Ϛ}_{\tilde{Q}_1}).
+S(\tilde{Ϛ}_{\tilde{A}_2}\|\tilde{Ϛ}_{\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\tilde{A}}\|\tilde{Ϛ}_{\tilde{Q}_1}).
 $$</p>
 <p>For the framework's abelian group the statement is stronger still: because the phase is central and Hermitian, it acts on a state of $\mathbb{M}_+$ by $\tilde{Ϛ}\mapsto|\lambda|^2\tilde{Ϛ} = \tilde{Ϛ}$. The informational sector is not merely unable to distinguish the orbit; it is unchanged by it, and no observable is conjugate to the central phase.</p>
 <p>The orbit's only non-empty content is global. A connection can be gauged to zero at any point, and on a neighbourhood precisely when its curvature vanishes; the obstruction to doing so on a loop is the holonomy, whose trace is the Wilson loop. The information in the gauge orbit is therefore its monodromy — the fibre-bundle structure that the local triviality leaves behind — and not any state information. Redundancy, loss and relocation are three different operations, and the orbit realizes the first: the fibre is quotiented away and a representative recovers the configuration, which is what distinguishes it from the confinement of the companion article and from the relocation of the Higgs mechanism.</p>
@@ -375,7 +375,7 @@ $$</p>
 </tr>
 <tr>
 <td>$S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = \partial/\partial Q_t\,A_0 + \mathrm{div}\,\vec A$</td>
-<td>Gauge scalar, pure gauge: $S' = S - \Box\Gamma$</td>
+<td>Gauge scalar, pure gauge: $S_2 = S - \Box\Gamma$</td>
 </tr>
 <tr>
 <td>$\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$</td>
@@ -403,7 +403,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)=2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$</td>
-<td>Trace pairing; $\mathrm{Tr}(e_t) = 2$</td>
+<td>Trace reading of the plain form; $\mathrm{Tr}(e_t) = 2$</td>
 </tr>
 <tr>
 <td>$c = 1/\sqrt{\epsilon\mu}$, $c_0$</td>

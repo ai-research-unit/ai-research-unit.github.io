@@ -89,7 +89,7 @@ $$</p>
 $$</p>
 <p>Because $\tilde U$ is a real quaternion, its Hermitian conjugate is its quaternion conjugate, $\tilde U^{*} = \tilde U^{\natural}$. The rotor acts on a vector by conjugation,</p>
 <p>$$
-\vec w \;\longmapsto\; \vec w' = \tilde U\,\vec w\,\tilde U^{\natural} .
+\vec w \;\longmapsto\; \vec w_2 = \tilde U\,\vec w\,\tilde U^{\natural} .
 $$</p>
 <p>The composition law is</p>
 <p>$$
@@ -141,7 +141,7 @@ $$</p>
 <h3 id="the-exact-moment">The Exact Moment</h3>
 <p>The quadrupole tensor of a mass distribution is, by the convention of the preceding article,</p>
 <p>$$
-\Theta_{ij} = \int \rho_m(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\left(3x_i'x_j' - r'^{\,2}\delta_{ij}\right)d^3x' ,
+\Theta_{ij} = \int \rho_m(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\left(3x_{i,2}x_{j,2} - r_2^{\,2}\delta_{ij}\right)d^3x_2 ,
 $$</p>
 <p>symmetric and traceless. For a uniform ellipsoid of mass $M$ and semi-axes $a, b, c$ aligned with the axes, the principal second moments are $\int x^2\,dV = Ma^2/5$ and its cyclic relatives. The value follows from the substitution to the unit ball. Setting $x = a u_x$, $y = b u_y$, $z = c u_z$, the volume element is $dV = abc\,du_1\,du_2\,du_3$ and the unit ball is $u_x^2+u_y^2+u_z^2\leq 1$, so</p>
 <p>$$
@@ -155,7 +155,7 @@ $$</p>
 <p>$$
 \Theta_{xx} = 3\cdot\frac{Ma^2}{5} - \frac{M(a^2+b^2+c^2)}{5} = \frac{M}{5}\left(2a^2 - b^2 - c^2\right),
 $$</p>
-<p>with $\Theta_{yy}$ and $\Theta_{zz}$ by cyclic permutation, and $\Theta_{ij} = 0$ for $i \neq j$. The trace vanishes identically, $\Theta_{xx}+\Theta_{yy}+\Theta_{zz} = 0$. The result has been verified by deterministic quadrature rather than by sampling: a tensor Gauss–Legendre rule of $48^3$ nodes in the spherical coordinates of the unit ball — the radial and polar integrands are polynomials and the azimuthal one a trigonometric polynomial of degree one, so the rule is exact to roundoff — reproduces each $\int x_i'^{\,2}dV$ and hence $\Theta_{xx}$ at four axis triples, including a strongly triaxial one, with relative error below $10^{-13}$.</p>
+<p>with $\Theta_{yy}$ and $\Theta_{zz}$ by cyclic permutation, and $\Theta_{ij} = 0$ for $i \neq j$. The trace vanishes identically, $\Theta_{xx}+\Theta_{yy}+\Theta_{zz} = 0$. The result has been verified by deterministic quadrature rather than by sampling: a tensor Gauss–Legendre rule of $48^3$ nodes in the spherical coordinates of the unit ball — the radial and polar integrands are polynomials and the azimuthal one a trigonometric polynomial of degree one, so the rule is exact to roundoff — reproduces each $\int x_{i,2}^{\,2}dV$ and hence $\Theta_{xx}$ at four axis triples, including a strongly triaxial one, with relative error below $10^{-13}$.</p>
 <h3 id="the-linearised-moment">The Linearised Moment</h3>
 <p>For a small deformation about the sphere, $a_i = R_0(1+\epsilon_i)$ with trace-free $\epsilon_i$, expanding to first order gives</p>
 <p>$$
@@ -169,7 +169,7 @@ $$</p>
 $$</p>
 <p>oscillating at the <strong>mode frequency</strong> $\omega_2$. The body's quadrupole moment is thus a harmonic oscillator. A general vibration is a superposition of modes $l = 2, 3, \dots$, and its multipole moments oscillate at the corresponding mode frequencies — the tower of oscillation frequencies is the same tower as the multipole series.</p>
 <h3 id="the-two-dipole-picture">The Two-Dipole Picture</h3>
-<p>The quadrupole can be decomposed into two equal and opposite dipoles, and this makes its relation to the algebra transparent. The decomposition is a statement about the geometric kernel $3x_ix_j - r'^2\delta_{ij}$ alone and is independent of the nature of the source; writing $ϙ_p$ for the strength of a pole — a symbol reserved here to keep it distinct from the monopole moment $ϙ$ of the preceding article — take a dipole of moment $\vec p = ϙ_p\vec d$ centred at $+\vec a/2$, namely $+ϙ_p$ at $+\vec a/2 + \vec d/2$ and $-ϙ_p$ at $+\vec a/2 - \vec d/2$, together with its opposite $-\vec p$ centred at $-\vec a/2$, namely $-ϙ_p$ at $-\vec a/2 + \vec d/2$ and $+ϙ_p$ at $-\vec a/2 - \vec d/2$. The monopole and the dipole of the four poles cancel, and the quadrupole moment is</p>
+<p>The quadrupole can be decomposed into two equal and opposite dipoles, and this makes its relation to the algebra transparent. The decomposition is a statement about the geometric kernel $3x_ix_j - r^2\delta_{ij}$ alone and is independent of the nature of the source; writing $ϙ_p$ for the strength of a pole — a symbol reserved here to keep it distinct from the monopole moment $ϙ$ of the preceding article — take a dipole of moment $\vec p = ϙ_p\vec d$ centred at $+\vec a/2$, namely $+ϙ_p$ at $+\vec a/2 + \vec d/2$ and $-ϙ_p$ at $+\vec a/2 - \vec d/2$, together with its opposite $-\vec p$ centred at $-\vec a/2$, namely $-ϙ_p$ at $-\vec a/2 + \vec d/2$ and $+ϙ_p$ at $-\vec a/2 - \vec d/2$. The monopole and the dipole of the four poles cancel, and the quadrupole moment is</p>
 <p>$$
 \Theta_{ij} = ϙ_p\left(3d_ia_j + 3d_ja_i - 2(\vec d\cdot\vec a)\,\delta_{ij}\right),
 $$</p>
@@ -199,13 +199,13 @@ $$</p>
 <p>$$
 \omega_{quad} = 2\Omega ,
 $$</p>
-<p>not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m' = 0$ and $m' = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m'$ appears in the lab frame with the time dependence $\exp(im'\Omega t)$. The $m' = \pm 2$ components therefore carry $2\Omega$, and the $m' = 0$ component is time-independent.</p>
+<p>not at the rotation frequency itself. The reason is visible in the angular decomposition: the body-frame quadrupole $\mathcal{Q}^{(b)}$ has azimuthal components $m_2 = 0$ and $m_2 = \pm 2$ about the rotation axis, and a body-frame component of azimuthal index $m_2$ appears in the lab frame with the time dependence $\exp(im_2\Omega t)$. The $m_2 = \pm 2$ components therefore carry $2\Omega$, and the $m_2 = 0$ component is time-independent.</p>
 <h3 id="the-axisymmetric-case">The Axisymmetric Case</h3>
-<p>If the body is axisymmetric about the rotation axis, $\lambda_1 = \lambda_2$, the $m' = \pm 2$ components vanish and $\mathcal{Q}^{(lab)}_{xx}$ is constant. An axisymmetric body rotating about its symmetry axis has a <strong>static</strong> quadrupole moment: it does not oscillate, and it is not a source of an oscillating quadrupole field. This is the standard statement that a rotating spheroid does not radiate in the quadrupole channel, and it is the reason the quadrupole oscillation requires a genuinely triaxial deformation.</p>
+<p>If the body is axisymmetric about the rotation axis, $\lambda_1 = \lambda_2$, the $m_2 = \pm 2$ components vanish and $\mathcal{Q}^{(lab)}_{xx}$ is constant. An axisymmetric body rotating about its symmetry axis has a <strong>static</strong> quadrupole moment: it does not oscillate, and it is not a source of an oscillating quadrupole field. This is the standard statement that a rotating spheroid does not radiate in the quadrupole channel, and it is the reason the quadrupole oscillation requires a genuinely triaxial deformation.</p>
 <h2 id="higher-multipoles-the-oscillating-tower">Higher Multipoles: The Oscillating Tower</h2>
-<p>The $2\Omega$ result is the first member of a tower. An $l$-pole deformation of a rotating body has body-frame azimuthal components of index $m' = -l, \dots, +l$, and each appears in the lab frame at frequency $m'\Omega$. The lab-frame moment of order $l$ therefore oscillates with the frequencies</p>
+<p>The $2\Omega$ result is the first member of a tower. An $l$-pole deformation of a rotating body has body-frame azimuthal components of index $m_2 = -l, \dots, +l$, and each appears in the lab frame at frequency $m_2\Omega$. The lab-frame moment of order $l$ therefore oscillates with the frequencies</p>
 <p>$$
-|m'|\,\Omega, \qquad m' = 0, 1, \dots, l ,
+|m_2|\,\Omega, \qquad m_2 = 0, 1, \dots, l ,
 $$</p>
 <p>so that a rigidly rotating deformed body emits a tower of harmonics up to $l\Omega$. The quadrupole contributes $2\Omega$; a triaxial octupole deformation contributes $3\Omega$; the hexadecapole $4\Omega$; and so on. The general statement is that the rotation converts a spatial deformation of order $l$ into a temporal oscillation of the same order.</p>
 <p>Two structural comments belong here, because they are where the framework's bookkeeping becomes visible.</p>
@@ -245,7 +245,7 @@ $$</p>
 <p>In the framework the source is a time-dependent moment, a tensor; the field it produces is a biquaternion-valued function; and the relation between them is the retarded solution of the field equation, as in the electromagnetic articles. The non-relativistic limit used here keeps only the near-zone structure of the source and the leading long-wavelength field. A fully relativistic treatment of the retarded quadrupole — with the field-strength decomposition and the relativistic transformation of the moments — belongs to the relativistic series and is not attempted here.</p>
 <h2 id="summary">Summary</h2>
 <p>A vibrating or rotating ellipsoid is a source of oscillating multipoles. Its shape is a scalar function on the sphere, expanded in spherical harmonics, and each order $l$ is a normal mode with a frequency $\omega_l$ independent of the azimuthal index $m$; for Rayleigh's liquid drop, $\omega_l^2 = (\sigma/\rho_m R_0^3)\,l(l-1)(l+2)$, so the quadrupole mode has $\omega_2^2 = 8\sigma/(\rho_m R_0^3)$.</p>
-<p>The quadrupole moment of a homogeneous ellipsoid is $\Theta_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ with cyclic permutations, traceless; for a small trace-free strain it is linear, $\Theta_{ij} = \frac{6MR_0^2}{5}\epsilon_{ij}$. A vibrating ellipsoid therefore has a quadrupole moment oscillating at the mode frequency $\omega_2$. A triaxial ellipsoid rotating at $\Omega$ has a lab-frame quadrupole oscillating at $2\Omega$, because the body-frame moment carries azimuthal components $m' = \pm 2$; an axisymmetric body has a static moment and does not oscillate. In general, a rigidly rotating body with an $l$-pole deformation produces harmonics up to $l\Omega$.</p>
+<p>The quadrupole moment of a homogeneous ellipsoid is $\Theta_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ with cyclic permutations, traceless; for a small trace-free strain it is linear, $\Theta_{ij} = \frac{6MR_0^2}{5}\epsilon_{ij}$. A vibrating ellipsoid therefore has a quadrupole moment oscillating at the mode frequency $\omega_2$. A triaxial ellipsoid rotating at $\Omega$ has a lab-frame quadrupole oscillating at $2\Omega$, because the body-frame moment carries azimuthal components $m_2 = \pm 2$; an axisymmetric body has a static moment and does not oscillate. In general, a rigidly rotating body with an $l$-pole deformation produces harmonics up to $l\Omega$.</p>
 <p>In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(t)e_t\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde U(t)\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $\mathcal{Q}^{(lab)}(\vec v,\vec w) = \mathcal{Q}^{(b)}(\tilde U^{\natural}\vec v\tilde U, \tilde U^{\natural}\vec w\tilde U)$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -289,7 +289,7 @@ $$</p>
 <td>Rotation rotor, a real unit quaternion</td>
 </tr>
 <tr>
-<td>$\vec w' = \tilde U\vec w\tilde U^{\natural}$</td>
+<td>$\vec w_2 = \tilde U\vec w\tilde U^{\natural}$</td>
 <td>Rotor action on a vector</td>
 </tr>
 <tr>

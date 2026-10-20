@@ -67,13 +67,13 @@
       <div class="article-body">
         <h1 id="exercise-the-bloch-ball-and-the-geometry-of-mixed-states"><strong>Exercise: The Bloch Ball and the Geometry of Mixed States</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article is a <strong>worked exercise</strong> on the geometry of the qubit state space. It is a set of six problems on one theme, and it applies the state-space results established in the companion article <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>. The reader is assumed to have read that article; the exercise exists precisely to test it, so nothing is carried over except what that article establishes.</p>
+<p>This article is a <strong>worked exercise</strong> on the geometry of the qubit state space. It is a set of six problems on one theme, and it applies the state-space results established in the companion article <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>. The reader is assumed to have read that article; the exercise exists precisely to test it, so nothing is carried over except what that article establishes.</p>
 <p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}}$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.</p>
 <p><strong>Assumed results.</strong> From the parent article we take, without rederivation, the following. A state is an element</p>
 <p>$$
 \tilde{Ϛ} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r = r_1 \vec e_x + r_2 \vec e_y + r_3 \vec e_z \in \mathbb{R}^3,
 $$</p>
-<p>with $\vec r$ the <strong>Bloch vector</strong>; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is</p>
+<p>with $\vec r$ the <strong>Bloch vector</strong>; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace reading of the plain form on the slice is</p>
 <p>$$
 \mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr), \qquad \tilde{Ϛ}_1 = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr),\ \tilde{Ϛ}_2 = \tfrac{1}{2}\bigl(e_t + i\vec s\bigr),
 $$</p>
@@ -115,7 +115,7 @@ $$</p>
 <p>$$
 \tilde{Ϛ} = \tfrac12\bigl(e_t + i\textstyle\sum_\mu r_\mu \vec e_\mu\bigr) \;\longmapsto\; \tfrac12\Bigl(I + \sum_\mu r_\mu \sigma_\mu\Bigr) = \tfrac12\bigl(I + \vec r\cdot\boldsymbol{\sigma}\bigr),
 $$</p>
-<p>the standard Bloch parametrisation of a qubit density matrix. The components are the Pauli expectations: using the trace pairing with the observable $i \vec e_\mu \mapsto \sigma_\mu$,</p>
+<p>the standard Bloch parametrisation of a qubit density matrix. The components are the Pauli expectations: using the normalised plain form with the observable $i \vec e_\mu \mapsto \sigma_\mu$,</p>
 <p>$$
 r_\mu = \mathrm{Tr}\bigl(\tilde{Ϛ}\,(i \vec e_\mu)\bigr) = \langle \sigma_\mu\rangle_{\tilde{Ϛ}},
 $$</p>
@@ -245,7 +245,7 @@ $$</p>
 <h2 id="problem-6-identical-and-orthogonal-states">Problem 6: Identical and Orthogonal States</h2>
 <p><strong>Problem.</strong> (a) Determine when two states are identical. (b) Determine when two states have orthogonal support, i.e. when $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = 0$. (c) Specialize to pure states and express the result in terms of the angle. (d) Show that the Uhlmann transition probability vanishes under the same condition.</p>
 <p><strong>Solution.</strong> (a) Two states are identical exactly when their Bloch vectors are equal: from $\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r-\vec s)$ we have $\tilde{Ϛ}_1 = \tilde{Ϛ}_2$ iff $\vec r = \vec s$. In that case the Hilbert–Schmidt and trace distances vanish, the transition probability is $1$, and all radius-dependent quantities (purity, entropies) coincide. Conversely, equal purity does <strong>not</strong> imply identical states: by Problem 2 all states of a given radius share the same purity and entropy, and they are rotated into one another by $\mathrm{U}(2)$.</p>
-<p>(b) The trace pairing on the slice is $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ}_1,\tilde{Ϛ}_2$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus</p>
+<p>(b) The trace reading of the plain form on the slice is $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ}_1,\tilde{Ϛ}_2$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus</p>
 <p>$$
 \mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = 0
 \quad\Longleftrightarrow\quad \vec r\cdot\vec s = -1 .
@@ -255,7 +255,7 @@ $$</p>
 |\vec r| = |\vec s| = 1, \qquad \vec s = -\vec r.
 $$</p>
 <p>So two qubit states have orthogonal supports <strong>if and only if</strong> they are the two complementary pure states along a common axis.</p>
-<p>(c) For pure states $\vec r = \vec u$, $\vec s = \vec u_\nu$, the transition probability is the trace pairing,</p>
+<p>(c) For pure states $\vec r = \vec u$, $\vec s = \vec u_\nu$, the transition probability is the normalised plain form, read as the trace pairing,</p>
 <p>$$
 \mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)\bigr)
 = \tfrac12\bigl(1 + \vec u\cdot\vec u_\nu\bigr) = \cos^2\frac{\theta}{2},
@@ -342,7 +342,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1+\vec r\cdot\vec s)$</td>
-<td>Trace pairing</td>
+<td>Trace reading of the plain form</td>
 </tr>
 <tr>
 <td>$D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2| = \tfrac12|\vec r-\vec s|$</td>
@@ -361,7 +361,7 @@ $$</p>
 <li>Asher Peres, <em>Quantum Theory: Concepts and Methods</em> (Kluwer, 1995), for the operational meaning of distinguishability and the trace distance.</li>
 <li>Richard Jozsa, "Fidelity for mixed quantum states," <em>Journal of Modern Optics</em> <strong>41</strong> (1994) 2315–2323, for the closed-form Uhlmann transition probability of a qubit.</li>
 <li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the spin-1/2 formalism and the Bloch vector.</li>
-<li>The companion article of this series: <em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>, whose state-space results are applied throughout.</li>
+<li>The companion article of this series: <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, whose state-space results are applied throughout.</li>
 </ul>
       </div>
     </main>
