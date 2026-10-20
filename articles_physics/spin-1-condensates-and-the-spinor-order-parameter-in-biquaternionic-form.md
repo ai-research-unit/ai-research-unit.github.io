@@ -167,7 +167,7 @@ $$
 
 where $\tilde\Pi(\vec u)$ is the fundamental idempotent of the informational sector along $\vec u$ and $\vec\zeta_{\vec u}$ is the spin-one coherent state whose magnetic order points along $\vec u$. The magnetic order parameter of the condensate is thus read off from the axis along which the two fundamental idempotents coincide, and the ferromagnetic phase is the phase in which the two constituent fundamental spins are *parallel*.
 
-This gives the algebraic form of the ferromagnetic order: the order parameter is the axis of a single fundamental idempotent, doubled. The spin-one coherent state has $\lvert\langle\vec F\rangle\rvert=1$ — verified explicitly on rotated coherent states — and the two-parameter family of directions, together with the phase, makes the ferromagnetic order-parameter manifold.
+This gives the algebraic form of the ferromagnetic order: the order parameter is the axis of a single fundamental idempotent, doubled. The spin-one coherent state has $\lvert\langle\vec F\rangle_{*}\rvert=1$ — verified explicitly on rotated coherent states — and the two-parameter family of directions, together with the phase, makes the ferromagnetic order-parameter manifold.
 
 ### Polar states from antipodal idempotents
 

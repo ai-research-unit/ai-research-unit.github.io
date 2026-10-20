@@ -63,7 +63,7 @@ The two columns have a second reading, in which they are the two levels of one m
 
 $$
 \tilde\Pi_+=|0\rangle\langle0|,\qquad
-\tilde\Pi_-=|1\rangle\langle1|,\qquad
+\tilde\Pi_-=|1\rangle_{*}\langle1|,\qquad
 \vec\Upsilon_x=|0\rangle\langle1|,\qquad
 \vec\Upsilon_y=|1\rangle\langle0|,
 $$
@@ -122,7 +122,7 @@ The word *complement* names three subspaces in this algebra, and only two of the
 | --- | --- | --- | --- |
 | module complement | the other Peirce summand | $\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$ | $2$ |
 | Hilbert complement | $S^{\perp}$ for the positive definite form $\langle\cdot,\cdot\rangle_{*}$ | $\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$ | $2$ |
-| $\langle\cdot,\cdot\rangle$-orthogonal complement | $S^{\perp_B}$ for the algebra's own form | $\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ | $2$ |
+| $\langle\cdot,\cdot\rangle_{*}$-orthogonal complement | $S^{\perp_B}$ for the algebra's own form | $\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\}$ | $2$ |
 
 The **module complement** is the second ideal. The **Hilbert complement** is the orthogonal complement for the sesquilinear form of the second slot, $S^{\perp}=\{v:\langle u,v\rangle_{*}=0\ \forall u\in S\}$, and it is computed on the matrix units: the four units are mutually orthogonal of norm $\tfrac12$, so the orthogonal complement of the first column is the second column. The coincidence is exact, and it is the algebraic core of the doubling:
 
@@ -134,7 +134,7 @@ a direct sum of left modules and an orthogonal direct sum of Hilbert spaces at o
 
 The coincidence is not automatic. **It holds because $\tilde\Pi_+$ is Hermitian.** The Peirce complement of a Hermitian idempotent is Hermitian, so $\tilde\Pi_-$ is Hermitian, and the two columns are orthogonal for the positive definite form. For a general idempotent $\tilde\Pi=\tfrac12(e_t+\tilde\Xi)$, whose root $\tilde\Xi$ need not be Hermitian, the two summands are still complementary left modules, but the Hilbert complement need not coincide with the module complement: the cross pairing $\langle\tilde\Pi,e_t-\tilde\Pi\rangle_{*}$ can be nonzero. The identification of the two complements is therefore a property of the **vacuum pair**, not of the algebra's decomposition alone.
 
-The **algebra's-own-form complement** is a third subspace. Because the symmetric form $\langle\tilde Q_1,\tilde Q_2\rangle=\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is degenerate on the carrier, with $B_S=\operatorname{diag}(\tfrac12,0)$ and radical $\mathbb{C}\vec\Upsilon_y$, the orthogonal complement of $S$ is
+The **algebra's-own-form complement** is a third subspace. Because the symmetric form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is degenerate on the carrier, with $B_S=\operatorname{diag}(\tfrac12,0)$ and radical $\mathbb{C}\vec\Upsilon_y$, the orthogonal complement of $S$ is
 
 $$
 S^{\perp_B}=\mathbb{C}\{\vec\Upsilon_y,\tilde\Pi_-\},

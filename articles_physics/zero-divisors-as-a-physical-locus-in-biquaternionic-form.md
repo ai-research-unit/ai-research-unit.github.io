@@ -273,7 +273,7 @@ The locus is kinematically inert: $\langle\tilde U_{\mathrm L}\tilde Q\rangle_{\
 | $\tilde P=i\frac{E}{c}e_t+\vec p$ | Momentum biquaternion |
 | $\langle\tilde P\rangle_{\natural}=p^2-\frac{p^4}{4m^2c^2}$ | Non-relativistic on-shell biquaternion norm; null at $p=2mc$ |
 | $\tilde\Pi=\tfrac12(e_t+i\vec u)$, $\langle\tilde\Pi\rangle_{\natural}=0$ | Idempotent generating the state module; a zero divisor |
-| $\sum_\mu\lvert Q_\mu\rvert^2$ | Hermitian form (positive definite); the probability form, distinct from $\langle\cdot\rangle_{\natural}$ |
+| $\sum_\mu\lvert Q_\mu\rvert^2$ | Hermitian form (positive definite), equal to the plain form on the sector; the probability pairing, distinct from $\langle\cdot\rangle_{\natural}$ |
 | $\psi=q\tilde Q$, $\langle \psi\rangle_{\natural}=0$ | Null solution of the free equation for a nilpotent $\tilde Q$ |
 | $E=V(x)$ | Turning surface; $p(x)=0$ |
 | $\Delta_{\mathrm{vV}}$ | Van Vleck determinant; singular at caustics |

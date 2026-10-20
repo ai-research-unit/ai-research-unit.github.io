@@ -10,7 +10,7 @@ The consequence is a **structural identification**:
 
 > The biquaternion algebra $\mathbb{B}$ contains the complete algebraic structure of a spin-1/2 quantum-mechanical system.
 
-This is not an analogy. It is an identity of algebras. Every rank-one idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state idempotent. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The normalised plain form $\langle\tilde\Pi,\tilde H\rangle/\langle\tilde\Pi,e_t\rangle = 2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$ is the Born rule for spin-1/2; in the $2\times2$ image it reads the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H)$. The unitary biquaternions of $SU(2)$ are the spin rotation operators.
+This is not an analogy. It is an identity of algebras. Every rank-one idempotent of $\mathbb{M}_+$ is a spin-1/2 pure-state idempotent. Every Hermitian element of $\mathbb{M}_+$ is a spin observable. The normalised Hermitian form $\langle\tilde\Pi,\tilde H\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde H\rangle_{*}$ is the Born rule for spin-1/2; in the $2\times2$ image it reads the trace formula $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$, the star being inert and the unstarred trace real, and non-negative when $\tilde H\ge0$. The unitary biquaternions of $SU(2)$ are the spin rotation operators.
 
 This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
 
@@ -168,7 +168,7 @@ where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real 
 
 1. **Hermitian:** $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{M}_+$.
 2. **Idempotent:** $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.
-3. **Normalised:** $\langle\tilde\Pi_{1,2},e_t\rangle = \tfrac12\langle e_t\rangle$ (the trace reads this as $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$).
+3. **Normalised:** $\langle\tilde\Pi_{1,2},e_t\rangle_{*} = \tfrac12\langle e_t\rangle$ (the trace reads this as $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$).
 4. **Rank one:** in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
 
 **Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{\Xi} i)$ with $\tilde{\Xi}$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\tilde{\Xi} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent and normalisation properties are direct computations (article 3).
@@ -183,19 +183,19 @@ This is exactly the spin projector $|\pm\vec u\rangle\langle\pm\vec u|$ onto the
 
 So **every spin-1/2 pure state corresponds to exactly one idempotent of $\mathbb{M}_+$**, and vice versa.
 
-## The Plain Form as the Born Rule
+## The Hermitian Form as the Born Rule
 
-The expectation value of an observable in a state is given by the normalised plain form.
+The expectation value of an observable in a state is given by the normalised Hermitian form.
 
 **Statement.** For an idempotent $\tilde\Pi \in \mathbb{M}_+$ (a pure state) and a Hermitian element $\tilde{H} \in \mathbb{M}_+$ (an observable), the quantity
 
 $$
-\langle \tilde{H} \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde{H}\rangle}{\langle\tilde\Pi,e_t\rangle} = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H})
+\langle \tilde{H} \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde{H}\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})
 $$
 
-is **real** and is the **Born-rule expectation value** of $\tilde{H}$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H})$.
+is **real** and is the **Born-rule expectation value** of $\tilde{H}$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$.
 
-**Proof.** Under the isomorphism, $\tilde\Pi$ maps to the projector $|\psi\rangle\langle\psi|$ and $\tilde{H}$ maps to the Hermitian matrix $H$. The plain form $\mathrm{Sc}(\tilde\Pi\tilde{H})$ maps to $\tfrac12\mathrm{Tr}(|\psi\rangle\langle\psi| H) = \tfrac12\langle\psi|H|\psi\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle=\tfrac12$ gives $\langle\psi|H|\psi\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde{H})$ is the same quantity, and the trace formula is its $2\times2$ reading.
+**Proof.** Under the isomorphism, $\tilde\Pi$ maps to the projector $|\psi\rangle\langle\psi|$ and $\tilde{H}$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$ maps to $\tfrac12\mathrm{Tr}(|\psi\rangle\langle\psi| H) = \tfrac12\langle\psi|H|\psi\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\psi|H|\psi\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$ is the same quantity, and the trace formula is its $2\times2$ reading.
 
 ### Example
 
@@ -205,10 +205,10 @@ $$
 \tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_x) = \tfrac{1}{2}(i\vec e_x + \vec e_z i \cdot i \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_z \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_y).
 $$
 
-Dividing by $\langle\tilde\Pi_+,e_t\rangle=\tfrac12$, i.e. taking twice the scalar part:
+Dividing by $\langle\tilde\Pi_+,e_t\rangle_{*}=\tfrac12$, i.e. taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_+ \tilde{H}) = 2 \cdot 0 = 0,
+2\,\mathrm{Sc}(\tilde\Pi_+ \tilde{H}^{*}) = 2 \cdot 0 = 0,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle = 0$.
@@ -219,15 +219,15 @@ $$
 \tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_z) = \tfrac{1}{2}(i\vec e_z + \vec e_z i \cdot i\vec e_z) = \tfrac{1}{2}(i\vec e_z - \vec e_z \vec e_z) = \tfrac{1}{2}(i\vec e_z + e_t).
 $$
 
-Dividing by $\langle\tilde\Pi_+,e_t\rangle=\tfrac12$, i.e. taking twice the scalar part:
+Dividing by $\langle\tilde\Pi_+,e_t\rangle_{*}=\tfrac12$, i.e. taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_+ \tilde{H}) = 2 \cdot \tfrac{1}{2} = 1,
+2\,\mathrm{Sc}(\tilde\Pi_+ \tilde{H}^{*}) = 2 \cdot \tfrac{1}{2} = 1,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\hbar/2$, which is absorbed in the normalization).
 
-So the normalised plain form reproduces the standard spin-1/2 expectation values; its $2\times2$ reading is the trace formula.
+So the normalised Hermitian form reproduces the standard spin-1/2 expectation values; its $2\times2$ reading is the trace formula.
 
 ## The State Space and the Spinor
 
@@ -344,7 +344,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 2. **The pure states.** The idempotents of $\mathbb{M}_+$ are the rank-1 idempotents, i.e., the pure states of a spin-1/2 system.
 
-3. **The Born rule.** The normalised plain form $\langle\tilde\Pi,\tilde{H}\rangle/\langle\tilde\Pi,e_t\rangle$ is the Born-rule expectation; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H})$.
+3. **The Born rule.** The normalised Hermitian form $\langle\tilde\Pi,\tilde{H}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born-rule expectation; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$.
 
 4. **The spin rotation group.** The $SU(2)$ subgroup of unit-norm biquaternions acts as the spin rotation group.
 
@@ -394,7 +394,7 @@ These questions are open.
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 idempotents, i.e., the pure spin states. The normalised plain form $\langle\tilde\Pi,\tilde{H}\rangle/\langle\tilde\Pi,e_t\rangle$ is the Born rule; its $2\times2$ reading is the trace formula $\mathrm{Tr}(\tilde\Pi\tilde{H}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H})$.
+The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 idempotents, i.e., the pure spin states. The normalised Hermitian form $\langle\tilde\Pi,\tilde{H}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born rule; its $2\times2$ reading is the trace formula $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$.
 
 The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part. The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.
 
@@ -414,7 +414,7 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ | Idempotent (pure spin state) |
 | $\tilde{H} = h_t e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
-| $\langle\tilde\Pi,\tilde{H}\rangle/\langle\tilde\Pi,e_t\rangle = 2\mathrm{Sc}(\tilde\Pi\tilde{H})$ | Born-rule expectation value; trace image $\mathrm{Tr}(\tilde\Pi\tilde{H})$ |
+| $\langle\tilde\Pi,\tilde{H}\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi\tilde{H}^{*})$ | Born-rule expectation value; trace image $\mathrm{Tr}(\tilde\Pi\tilde{H}^{*})$ |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternionic Dirac equation (linear chiral pair) |

@@ -305,7 +305,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | Slavnov–Taylor identities | Quantum content of gauge invariance in the non-abelian theory |
 | Gribov copies, Gribov horizon | Multiple solutions of the gauge condition; zeros of $M$ |
 | $b_0=\tfrac{11}{3}C_2(G)$ | One-loop coefficient; $C_2(G)=2$ for $SU(2)$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Informational trace formula, distinct from the matrix trace |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 
 ## Further Reading
 

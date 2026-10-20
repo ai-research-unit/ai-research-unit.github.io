@@ -135,7 +135,7 @@ The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of t
 
 Take the pure two-qubit state
 $$
-|\psi_\theta\rangle=\cos\theta\,|00\rangle+\sin\theta\,|11\rangle,
+|\psi_\theta\rangle_{*}=\cos\theta\,|00\rangle+\sin\theta\,|11\rangle,
 \qquad
 \rho_{AB}=|\psi_\theta\rangle\langle\psi_\theta|.
 $$

@@ -142,7 +142,7 @@ The map is linear, completely positive, trace-preserving and idempotent, but it 
 The map is **rank two**: it has a Kraus representation with two operators. In the pointer basis they are
 
 $$
-K_1 = |0\rangle\langle 0|, \qquad K_2 = |0\rangle\langle 1| ,
+K_1 = |0\rangle_{*}\langle 0|, \qquad K_2 = |0\rangle\langle 1| ,
 $$
 
 where $K_1$ is $\tilde\Pi_1(\vec u)$ itself and $K_2$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}$. The minimal Kraus rank of the reset channel is two.
@@ -299,7 +299,7 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | $Q_{\min} = k_BT\log 2$ | Landauer cost of erasing one bit |
 | $Q \ge k_BT\,\mathcal{S}(\tilde{Ϛ})$ | Landauer bound for a general state |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

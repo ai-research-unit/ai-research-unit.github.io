@@ -324,7 +324,7 @@ The article commits throughout to the agenda's central discipline: no section as
 | $\gamma_5$, $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$ | Chirality operator and projectors |
 | $\bar\Psi\Psi$, $Ϙ=ϙ_LP_L+ϙ_RP_R$ | Chirality-odd mass bilinear; chiral charge operator; selection rule $ϙ_L=ϙ_R$ |
 | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\ \tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{*}$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited informational trace formula |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | **Standard-model notation, not framework objects** | |
 | $SU(3)_c$, $SU(2)_L$, $\mathrm{U}(1)_Y$ | Colour, weak-isospin and hypercharge groups — no route yet |

@@ -215,7 +215,7 @@ This is the trace formula of the framework, and it is derived, not assumed.
 **The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$ in $\mathbb{M}_+$,
 
 $$
-\mathrm{Tr}(\tilde H_1\tilde H_2)=2\bigl(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\bigr),
+\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\bigl(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\bigr),
 $$
 
 which is real and positive definite; for $\tilde R_1=i r_{1t}e_t+\vec r_1$ and $\tilde R_2=i r_{2t}e_t+\vec r_2$ in $\mathbb{M}_-$,
@@ -235,7 +235,7 @@ is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr
 **The expectation-value form.** For a state $\tilde{Ϛ}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H=h_te_t+i\vec h$, the trace formula gives
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde H)=h_t+\mu\cdot\vec h,
+\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=h_t+\mu\cdot\vec h,
 $$
 
 the Born-rule expectation value. This is an application of the derived trace, not a new posit.

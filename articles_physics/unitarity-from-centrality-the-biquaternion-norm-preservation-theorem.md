@@ -49,7 +49,7 @@ $$
 \|\tilde{Q}\|_{\dagger}^2
 =2\bigl(|x_t|^2+|x_x|^2+|x_y|^2+|x_z|^2\bigr)>0\quad(\tilde{Q}\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Q}_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability $\mathrm{Tr}(\tilde{Q}_1\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ of two states is the boundary case of this norm.
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Q}_1\rangle_{*}=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Q}_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability is written with the Hermitian form, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Q}_1\tilde{H}^{*})$, and the trace pairing $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)$ of two states is the boundary case of this norm.
 
 **The biquaternion norm.** The second object is
 $$
@@ -137,7 +137,7 @@ $$
 $$
 The preserved value is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})=1$, so $\langle\varphi|\tilde Q_4\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde Q_4\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde Q_4=e_t$.
 
-The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1)$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.
+The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1^{*})$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.
 
 ### Part 2: the biquaternion norm
 
@@ -353,7 +353,7 @@ The centrality theme is carried by the defect $\tilde Q_4=\tilde{U}^{*}\tilde{U}
 | $\mathbb{C}_{\mathbb{B}}=Z(\mathbb{B})=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, centre-valued |
-| $\langle\tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Hermitian (Hilbert–Schmidt) pairing |
+| $\langle\tilde{Q},\tilde{Q}_1\rangle_{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Hermitian (Hilbert–Schmidt) pairing |
 | $\Gamma_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{*}$ | Conjugation action |
 | $\tilde Q_4=\tilde{U}^{*}\tilde{U}$ | Defect of the action |
 | $\mathrm{U}(2)=\{\tilde{U}:\tilde{U}^{*}\tilde{U}=e_t\}$ | Unitary group; preserves the Hermitian norm |

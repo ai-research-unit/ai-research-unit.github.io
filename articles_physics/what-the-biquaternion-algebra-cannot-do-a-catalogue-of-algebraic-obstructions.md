@@ -359,7 +359,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 Two clarifications prevent the catalogue from being read as a refutation of the framework.
 
-**It does not say that the algebra's positive results are withdrawn.** The state space as the trace-one slice of the future cone, the transition probability as the normalised plain form, read as the trace pairing, the Fubini–Study metric as the second variation of the biquaternion norm, the Kähler structure, the unitarity theorem and the identification of the centre as the classical sector all stand; they are the content of the preceding articles of the subcategory. The obstructions concern what those structures cannot additionally be asked to do, and every one of them is stated with its remedy.
+**It does not say that the algebra's positive results are withdrawn.** The state space as the trace-one slice of the future cone, the transition probability as the normalised Hermitian form, read through the trace, the Fubini–Study metric as the second variation of the biquaternion norm, the Kähler structure, the unitarity theorem and the identification of the centre as the classical sector all stand; they are the content of the preceding articles of the subcategory. The obstructions concern what those structures cannot additionally be asked to do, and every one of them is stated with its remedy.
 
 **Most of the obstructions are shared with ordinary complex quantum physics, and only some are peculiar to the biquaternion setting.** The distinction matters for any assessment of the framework, and it is worth tabulating.
 
@@ -399,7 +399,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\mathbb{B}^{\times}=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$ |
-| $\langle\tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Hermitian form |
+| $\langle\tilde{Q},\tilde{Q}_1\rangle_{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$ | Hermitian form |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state, null under $\langle\cdot\rangle_{\natural}$ |
 | $\mathbb{A}_{\vec u}$ | Maximal commutative subalgebra |
 | $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |

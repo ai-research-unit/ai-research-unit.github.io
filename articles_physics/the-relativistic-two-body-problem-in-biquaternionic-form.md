@@ -334,15 +334,15 @@ $$
 
 which is the total kinetic energy of the daughters in the parent rest frame, split in the ratio $(E_1^*-m_1c^2)/(E_2^*-m_2c^2) = m_2/m_1$ in the non-relativistic limit derived below.
 
-If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the rotor conjugation $\tilde{P}_a = \tilde U_{\mathrm L}\tilde{P}_a^*\tilde U_{\mathrm L}^{*}$, where $\tilde U_{\mathrm L}$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section:
+If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the rotor conjugation $\tilde{P}_a = \tilde U_{\mathrm b}\tilde{P}_a^*\tilde U_{\mathrm b}^{*}$, where $\tilde U_{\mathrm b}$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde U_{\rm CM}$ of the preceding section:
 
 $$
-\tilde U_{\mathrm L} = \tilde U^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\vec u_V,
+\tilde U_{\mathrm b} = \tilde U^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\vec u_V,
 \qquad
 \tanh\Psi = \frac{V}{c},
 $$
 
-the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$, so $\tilde U_{\mathrm L}\tilde{P}_a^*\tilde U_{\mathrm L}^{*}$ and $\tilde U_{\mathrm L}^{*}\tilde{P}_a^*\tilde U_{\mathrm L}$ are the same expression. Note also that the quaternion conjugate is *not* the Hermitian conjugate here, since $\tilde U^{\natural}_{\rm CM} \neq \tilde U_{\rm CM}^{*}$ for a pure boost.
+the sign of the vector part being opposite to that of the lab-to-rest rotor. The direction resides in that sign alone, and cannot be reversed by transposing the conjugation: a pure boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, so $\tilde U_{\mathrm b}\tilde{P}_a^*\tilde U_{\mathrm b}^{*}$ and $\tilde U_{\mathrm b}^{*}\tilde{P}_a^*\tilde U_{\mathrm b}$ are the same expression. Note also that the quaternion conjugate is *not* the Hermitian conjugate here, since $\tilde U^{\natural}_{\rm CM} \neq \tilde U_{\rm CM}^{*}$ for a pure boost.
 
 In components this is the standard Lorentz transformation of a four-momentum,
 

@@ -260,7 +260,7 @@ The trace form has one practical consequence worth stating. Because the reduced 
 
 ## What Is Algebraic and What Is Imported
 
-**Algebraic.** The adjoint action as a derivation; the invariance of the scalar part and the rotation of the vector part; the identification of $ie_k$ as a rank-$1$ tensor operator with spherical components proportional to $\tilde S_\pm$; the decomposition $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$; the ceiling that a single factor carries only ranks $0$ and $1$; and the trace form $\mathrm{Tr}(\tilde\Pi\tilde H)=2\mathrm{Sc}(\tilde\Pi\tilde H)$.
+**Algebraic.** The adjoint action as a derivation; the invariance of the scalar part and the rotation of the vector part; the identification of $ie_k$ as a rank-$1$ tensor operator with spherical components proportional to $\tilde S_\pm$; the decomposition $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$; the ceiling that a single factor carries only ranks $0$ and $1$; and the trace form $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\mathrm{Sc}(\tilde\Pi\tilde H^{*})$.
 
 **Imported.** The definition of an irreducible tensor operator and its equivalence to the rotation law; the Wigner–Eckart theorem and its proof; the selection rules; the reduced-matrix-element technology; the vector-model corollary; and the Clebsch–Gordan coefficients used to build rank-$2$ operators. These are standard results of the representation theory of the rotation group and are cited as such.
 
@@ -277,10 +277,10 @@ The article established the following.
 - **Tensor operators.** An irreducible tensor operator of rank $k$ is a family $T^{(k)}_\mu$, $\mu=-k,\dots,k$, with $[\tilde J_3,T^{(k)}_\mu]=\hbar \mu\,T^{(k)}_\mu$ and $[\tilde J_\pm,T^{(k)}_\mu]=\hbar\sqrt{(k\mp \mu)(k\pm \mu+1)}T^{(k)}_{\mu\pm1}$; a vector operator is the case $k=1$, with spherical components $T^{(1)}_0=T_3$, $T^{(1)}_{\pm1}=\mp\tfrac{1}{\sqrt2}(T_1\pm iT_2)$.
 - **The algebra's own tensor operator.** The adjoint action $x\mapsto[\tilde S_i,x]$ is a derivation; on the imaginary units $[\tilde S_i,ie_k]=i\hbar\epsilon_{ikl}(ie_l)$, so $\tilde V_k=ie_k$ is a rank-$1$ tensor operator with $(\tilde V)^{(1)}_{\pm1}=\mp\tfrac{\sqrt2}{\hbar}\tilde S_\pm$. A Hermitian element splits as $\tilde H=h_te_t+iv_ke_k$, a rank-$0$ plus a rank-$1$ piece, and $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$ under the adjoint action.
 - **The ceiling.** A single factor of $\mathbb{B}$ carries only tensor operators of ranks $0$ and $1$; rank $k\ge2$ requires a product of $k$ vector operators, hence a tensor power of the algebra.
-- **The theorem.** $\langle j_2m_2|T^{(k)}_\mu|jm\rangle=\langle j,m;k,\mu|j_2,m_2\rangle\langle j_2\|T^{(k)}\|j\rangle$, with selection rules $m_2=m+\mu$ and $|j-k|\le j_2\le j+k$; for $k=0$ it reduces to Schur's lemma for the trivial representation.
+- **The theorem.** $\langle j_2m_2|T^{(k)}_\mu|jm\rangle_{*}=\langle j,m;k,\mu|j_2,m_2\rangle\langle j_2\|T^{(k)}\|j\rangle$, with selection rules $m_2=m+\mu$ and $|j-k|\le j_2\le j+k$; for $k=0$ it reduces to Schur's lemma for the trivial representation.
 - **Verification.** For the one-particle spin as a vector operator under the total spin, the ratios of matrix elements to Clebsch–Gordan coefficients are $+1/\sqrt2$, $-\sqrt3/2$ and $+1/2$ for $(j_2,j)=(1,1),(0,1),(1,0)$ in units $\hbar=1$, independent of $(m,\mu,m_2)$ in each case; for the total spin on the triplet the reduced matrix element is $\sqrt2\hbar$. For the algebra's own vector operator $ie_k$ acting on the adjoint multiplet $W$, $\mathrm{ad}_{ie_k}=\tfrac{2}{\hbar}\tilde J^{(\mathrm{adj})}_k$ and the reduced matrix element is $2\sqrt2$ (units $\hbar=1$).
 - **Examples.** Within a multiplet a vector operator is proportional to $\tilde J$, with the constant fixed by the ratio of reduced matrix elements; coupling two vector operators by the $1\otimes1\to2$ coefficients produces a rank-$2$ tensor operator, whose $\mu=0$ member for the spin is the quadrupole $\tfrac{1}{\sqrt6}(3\tilde S_3^2-\tilde S^2)$, with coherent-state expectation $\tfrac{1}{\sqrt6}P_2(\cos\theta)$.
-- **Trace form.** The Born rule $\mathrm{Tr}(\tilde\Pi\tilde H)=2\mathrm{Sc}(\tilde\Pi\tilde H)$ extracts the reduced matrix elements as traces once a normalisation is chosen, but leaves the Clebsch–Gordan coefficients on the imported side.
+- **Trace form.** The Born rule $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\mathrm{Sc}(\tilde\Pi\tilde H^{*})$ extracts the reduced matrix elements as traces once a normalisation is chosen, but leaves the Clebsch–Gordan coefficients on the imported side.
 
 ## Summary of Notation
 
@@ -298,7 +298,7 @@ The article established the following.
 | $\langle j_2m_2|T^{(k)}_\mu|jm\rangle$ | Matrix element |
 | $\langle j_2\|T^{(k)}\|j\rangle$ | Reduced matrix element |
 | $\langle j,m;k,\mu|j_2,m_2\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley) |
-| $\mathrm{Tr}(\tilde\Pi\tilde H)=2\mathrm{Sc}(\tilde\Pi\tilde H)$ | Trace formula (Born rule) |
+| $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\mathrm{Sc}(\tilde\Pi\tilde H^{*})$ | Trace reading at normalisation (Born rule) |
 
 ## Further Reading
 

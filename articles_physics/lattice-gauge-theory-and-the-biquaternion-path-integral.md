@@ -291,7 +291,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $\tfrac12\langle\mathrm{Tr}\tilde U_\Box\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric (level 2) |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Informational trace formula, distinct from the matrix trace |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 
 ## Further Reading
 

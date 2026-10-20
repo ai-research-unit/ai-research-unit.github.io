@@ -57,7 +57,7 @@ which is the norm-preservation theorem of *Unitarity from Centrality: The Biquat
 The expansion of the exponential to second order gives the exact start of the survival probability. Writing the variance of the Hamiltonian in the initial state,
 
 $$
-(\Delta\tilde H)^{2} = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde H^{2}\bigr) - \Bigl(\mathrm{Tr}\bigl(\tilde\Pi_0\tilde H\bigr)\Bigr)^{2} \ge 0,
+(\Delta\tilde H)^{2} = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde H^{2}\bigr) - \Bigl(\mathrm{Tr}\bigl(\tilde\Pi_0\tilde H^{*}\bigr)\Bigr)^{2} \ge 0,
 $$
 
 one has

@@ -58,7 +58,7 @@ The boundary is not decoration. The zero-divisor cone is the light cone on the m
 
 The category is not a dictionary of one-to-one correspondences. The algebra is one object and the physics reads it at several levels, so a single theorem can carry more than one interpretation.
 
-The norm is the clearest case. $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is the interval on the material sector: for $\tilde Q=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it is $-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2}$. The same form read on a four-position is a squared length; read on a four-momentum, it is $-m^{2}c^{2}$, and the level set $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ inside the material sector is the mass shell. Its zero set is the zero-divisor cone, the light cone of the material sector. The Hermitian form is the Born pairing up to the factor two. On the state $\tilde{Ϛ}$ and a Hermitian observable $\tilde H$, $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=\mathrm{Sc}(\tilde{Ϛ}\tilde H)$, and $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ is the probability weight, normalised by $\mathrm{Tr}\,\tilde{Ϛ}=1$. Four interpretations, four questions, one algebra.
+The norm is the clearest case. $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ is the interval on the material sector: for $\tilde Q=ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it is $-c^{2}{t'}^{2}+x^{2}+y^{2}+z^{2}$. The same form read on a four-position is a squared length; read on a four-momentum, it is $-m^{2}c^{2}$, and the level set $\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}$ inside the material sector is the mass shell. Its zero set is the zero-divisor cone, the light cone of the material sector. The Hermitian form is the Born pairing up to the factor two. On the state $\tilde{Ϛ}$ and a Hermitian observable $\tilde H$, $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$, and $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ is the probability weight, normalised by $\mathrm{Tr}\,\tilde{Ϛ}=1$. Four interpretations, four questions, one algebra.
 
 The idempotents are a second case. A minimal Hermitian idempotent is a pure state, a rank-one projector and a choice of vacuum, depending on which structure is interpreted. The three interpretations agree on the element and disagree on the physics, which is why each is labelled.
 
@@ -267,7 +267,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the quaternionic norm, the form that carries the interval |
 | $\tilde Q^{*}$ | the Hermitian conjugation, the anti-automorphism of the plain product |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the material and the informational sectors, the anti-Hermitian and the Hermitian halves |
-| $\tilde{Ϛ}$ | the state element, Hermitian and normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) |
+| $\tilde{Ϛ}$ | the state element, Hermitian and normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) |
 | $\tilde\Pi$ | an idempotent; a rank-one Hermitian idempotent is a pure state |
 | $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, the change of frame on the unit-norm slice |
 

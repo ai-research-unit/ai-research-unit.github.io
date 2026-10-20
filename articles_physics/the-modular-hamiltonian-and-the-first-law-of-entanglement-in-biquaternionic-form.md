@@ -16,7 +16,7 @@ This article asks what the modular Hamiltonian and the first law of entanglement
 $$
 \delta S=\delta\langle K_0\rangle-S(\tilde{Ϛ}\|\tilde{Ϛ}_0),
 $$
-where $\delta S=S(\tilde{Ϛ})-S(\tilde{Ϛ}_0)$ and $\delta\langle K_0\rangle=\mathrm{Tr}((\tilde{Ϛ}-\tilde{Ϛ}_0)K_0)$. The deficit is exactly the relative entropy, which vanishes quadratically to leading order in the perturbation and is non-negative. The first law $\delta S=\delta\langle K_0\rangle$ is therefore exact to first order, and the framework's closed-form relative entropy makes the correction term explicit at every order.
+where $\delta S=S(\tilde{Ϛ})-S(\tilde{Ϛ}_0)$ and $\delta\langle K_0\rangle=\mathrm{Tr}((\tilde{Ϛ}-\tilde{Ϛ}_0)K_0^{*})$. The deficit is exactly the relative entropy, which vanishes quadratically to leading order in the perturbation and is non-negative. The first law $\delta S=\delta\langle K_0\rangle$ is therefore exact to first order, and the framework's closed-form relative entropy makes the correction term explicit at every order.
 
 3. **The relation is verified on a perturbation.** Taking the reference state $\vec r_0=(0.3,-0.2,0.4)$ and the displacement $\vec v=(0.12,0.18,-0.07)$, at $s=0.05$ the two sides of the law differ by the relative entropy $-7.314\times10^{-5}$, and at $s=0.3$ by $-2.619\times10^{-3}$; the identity $\delta S-\delta\langle K_0\rangle=-S(\tilde{Ϛ}\|\tilde{Ϛ}_0)$ holds to machine precision at both steps, the discrepancy being below $2\times10^{-15}$.
 
@@ -67,7 +67,7 @@ S(\tilde{Ϛ}_0)=\langle K_0\rangle_{\tilde{Ϛ}_0}
 $$
 which is the entropy of the state, as the first property requires. The derivation is the product formula of the biquaternion algebra: the scalar part of $(\tfrac12e_t+i\tfrac{\vec r}{2}\cdot\mathbf e)(c_0e_t+i\vec c\cdot\mathbf e)$ is $\tfrac12c_0-\vec A\cdot\vec C$ with $\vec A=i\tfrac{\vec r}{2}$, $\vec C=i\vec c$, and $\vec A\cdot\vec C=-\tfrac12\vec r\cdot\vec c$, which gives the two terms above.
 
-Note that $\langle K_0\rangle_{\tilde{Ϛ}}$ is **linear** in the state $\tilde{Ϛ}$: it is $\mathrm{Tr}(\tilde{Ϛ} K_0)$, the plain form of $\tilde{Ϛ}$ with the fixed element, read as the trace pairing $K_0$. This linearity is the algebraic reason the first law is exact to first order, and it is stated again below.
+Note that $\langle K_0\rangle_{\tilde{Ϛ}}$ is **linear** in the state $\tilde{Ϛ}$: it is $\mathrm{Tr}(\tilde{Ϛ} K_0^{*})$, the plain form of $\tilde{Ϛ}$ with the fixed element, read as the trace pairing $K_0$. This linearity is the algebraic reason the first law is exact to first order, and it is stated again below.
 
 ## The First Law of Entanglement
 
@@ -176,7 +176,7 @@ holds exactly, so the state is the thermal state of its own entanglement Hamilto
 
 The framework's terms make the mechanism transparent, and it is worth stating because it is the reason the law is universal.
 
-**The modular energy is linear in the state.** The quantity $\delta\langle K_0\rangle=\mathrm{Tr}(\delta\rho\,K_0)$ is the plain form of the perturbation with a fixed algebra element, read as the trace pairing. It has no quadratic or higher terms. All nonlinearity in the relation therefore resides in $\delta S$, and the identity $\delta S=\delta\langle K_0\rangle-S(\rho\|\rho_0)$ says that $\delta S$ departs from the linear form by exactly the relative entropy.
+**The modular energy is linear in the state.** The quantity $\delta\langle K_0\rangle=\mathrm{Tr}(\delta\rho\,K_0)$ is the Hermitian form of the perturbation with a fixed algebra element, read through the trace. It has no quadratic or higher terms. All nonlinearity in the relation therefore resides in $\delta S$, and the identity $\delta S=\delta\langle K_0\rangle-S(\rho\|\rho_0)$ says that $\delta S$ departs from the linear form by exactly the relative entropy.
 
 **The relative entropy has no linear term.** As the relative-entropy companion article records, the second-order term of $S(\rho\|\rho_0)$ near $\rho=\rho_0$ is the Kubo–Mori–Bogoliubov metric of the reference state. There is no linear term, by the positivity and the stationarity of the relative entropy at coincidence. The first law is the statement of that vanishing, and the framework's closed form exhibits it: the boxed relative entropy is quadratic in $\delta\vec r$ near $\vec r=\vec r_0$.
 
@@ -253,9 +253,9 @@ The mechanism is that the modular energy is linear in the state while the relati
 | $K_\sigma=-\log\Delta_\sigma$ | Modular Hamiltonian |
 | $K_0=-\log\tilde{Ϛ}_0$ | Modular Hamiltonian of a biquaternion state $\in\mathbb{M}_+$ |
 | $r_0=|\vec r_0|$, $b=\mathrm{artanh}(r_0)$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$ | Reference-state data |
-| $\langle K_0\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ} K_0)$ | Modular energy of $\tilde{Ϛ}$ |
+| $\langle K_0\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ} K_0^{*})$ | Modular energy of $\tilde{Ϛ}$ |
 | $\delta S=S(\tilde{Ϛ})-S(\tilde{Ϛ}_0)$ | Entropy change |
-| $\delta\langle K_0\rangle=\mathrm{Tr}((\tilde{Ϛ}-\tilde{Ϛ}_0)K_0)$ | Modular-energy change |
+| $\delta\langle K_0\rangle=\mathrm{Tr}((\tilde{Ϛ}-\tilde{Ϛ}_0)K_0^{*})$ | Modular-energy change |
 | $\delta S=\delta\langle K_0\rangle-S(\tilde{Ϛ}\|\tilde{Ϛ}_0)$ | Exact identity; first law to first order |
 | $K_A=-\log\tilde{Ϛ}_A$ | Entanglement Hamiltonian of the subsystem $A$ |
 

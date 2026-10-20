@@ -610,7 +610,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $S = \mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |
 | $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_k \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient |
 | $\not\partial = \gamma^\mu\partial/\partial Q_\mu$ | Gamma-matrix Dirac operator |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula (unchanged) |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form (unchanged) |
 
 ## Further Reading
 

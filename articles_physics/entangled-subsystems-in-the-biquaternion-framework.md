@@ -63,10 +63,10 @@ This is the maximally mixed state of a qubit, at the centre of the Bloch ball. I
 The spin correlation function, computed in full in *Exercise: The Correlation Function of the Bell States*, is
 
 $$
-E(\vec u_a, \vec u_b) = \mathrm{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ\bigl((i\vec u_a)\otimes(i\vec u_b)\bigr)\right) = -\vec u_a\cdot\vec u_b.
+E(\vec u_a, \vec u_b) = \frac{\langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}}{\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*}} = \frac{\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b))\right)}{\mathrm{Sc}(\tilde\Pi_{\mathrm{singlet}})} = \frac{\operatorname{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b))\right)}{\operatorname{Tr}(\tilde\Pi_{\mathrm{singlet}})} = -\vec u_a\cdot\vec u_b.
 $$
 
-Here $\circ$ denotes the product in $\mathbb{B}\otimes\mathbb{B}$. This is the tensor-product plain form between the state idempotent and the correlation observable, read as the trace pairing. It is the same algebraic operation — the plain form, read as the trace pairing — that gives the Born rule for a single qubit. The correlation function is not a separate postulate; it is the natural pairing between two elements of the tensor-product algebra.
+Here $\circ$ denotes the product in $\mathbb{B}\otimes\mathbb{B}$. This is the tensor-product Hermitian form between the state idempotent and the correlation observable, whose trace reading is the last step at normalisation. It is the same algebraic operation — the Hermitian form, with the trace read last — that gives the Born rule for a single qubit. The correlation function is not a separate postulate; it is the natural pairing between two elements of the tensor-product algebra.
 
 ### Steering as a conditional idempotent
 
@@ -124,7 +124,7 @@ Whether this structural interpretation satisfies a local realist depends on what
 
 Bell's theorem says that no local hidden-variable model can reproduce the quantum correlations of the singlet. The framework reproduces the standard correlation function $E(\vec u_a, \vec u_b) = -\vec u_a\cdot\vec u_b$ and the standard Tsirelson bound $2\sqrt{2}$ for the CHSH combination. Bell's theorem is untouched.
 
-What the framework changes is the *location* of the non-classicality. In the Hilbert-space formalism, the Born rule is a postulate, and the violation of Bell's inequality is a fact about joint probabilities that follows from that postulate. In the biquaternion framework, the Born rule is the normalised plain form on $\mathbb{M}_+$, read as the trace pairing, and the correlation function is a bilinear pairing between a state idempotent and a tensor-product observable. The non-classicality is then a fact about the *pairing rule* of the algebra, not about an independent probabilistic postulate.
+What the framework changes is the *location* of the non-classicality. In the Hilbert-space formalism, the Born rule is a postulate, and the violation of Bell's inequality is a fact about joint probabilities that follows from that postulate. In the biquaternion framework, the Born rule is the normalised Hermitian form on $\mathbb{M}_+$, read as the trace pairing, and the correlation function is a bilinear pairing between a state idempotent and a tensor-product observable. The non-classicality is then a fact about the *pairing rule* of the algebra, not about an independent probabilistic postulate.
 
 This is a clarification of where the quantum character sits, not a resolution of the tension. Bell's theorem stands: the algebra is not a local hidden-variable model, and its correlations cannot be simulated by any local classical model.
 
@@ -178,7 +178,7 @@ Collecting the observations above, the biquaternion framework makes the followin
 
 **1. The singlet is one algebraic object.** The entangled state is not a pair of systems whose correlation must be explained; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product structure from the start.
 
-**2. The correlation function is a bilinear pairing.** The correlation $E(\vec u_a, \vec u_b)$ is the tensor-product plain form between the state idempotent and the correlation observable, read as the trace pairing. It is the same algebraic operation that gives the Born rule for a single qubit. There is no additional probabilistic postulate.
+**2. The correlation function is a bilinear pairing.** The correlation $E(\vec u_a, \vec u_b)$ is the tensor-product Hermitian form between the state idempotent and the correlation observable, read as the trace pairing. It is the same algebraic operation that gives the Born rule for a single qubit. There is no additional probabilistic postulate.
 
 **3. The reduced state's mixedness is the algebraic trace of entanglement.** The partial trace of the singlet produces $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
 
@@ -232,7 +232,7 @@ It reformulates:
 
 - The singlet as one element of the tensor-product algebra, with correlations built into the tensor-product structure.
 - The division rule that a mereological interpretation of the split may impose, and the reason it selects a proper subset rather than the whole of the continuum of maximally entangled states.
-- The correlation function as a bilinear pairing, the same plain form, read as the trace pairing, that gives the Born rule.
+- The correlation function as a bilinear pairing, the same Hermitian form, read through the trace, that gives the Born rule.
 - The reduced state's mixedness as the algebraic residue of the entanglement of the joint state.
 - Steering as a factorization of the joint idempotent under a local projector.
 - No-signaling as the cyclicity of the partial trace.
@@ -264,7 +264,7 @@ The honest position is this. The framework makes certain structural features of 
 | $\tilde\Pi(\pm\vec u_a) = \tfrac{1}{2}(e_t \pm i\vec u_a)$ | Single-qubit idempotents along $\vec u_a$ |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\tilde{Ϛ}_1 = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$ | Reduced state of particle 1 |
-| $E(\vec u_a, \vec u_b) = \mathrm{Tr}(\tilde\Pi_{\mathrm{singlet}}\circ((i\vec u_a)\otimes(i\vec u_b)))$ | Correlation function |
+| $E(\vec u_a, \vec u_b) = \langle\tilde\Pi_{\mathrm{singlet}},(i\vec u_a)\otimes(i\vec u_b)\rangle_{*}/\langle\tilde\Pi_{\mathrm{singlet}},e_t\otimes e_t\rangle_{*} = \operatorname{Tr}(\cdots)$ | Correlation function (trace at normalisation) |
 | $\tilde{U}\tilde{U}^{*} = e_t$ | Unitary element (reversible evolution) |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent element (irreversible projection) |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Tensor-product trace |

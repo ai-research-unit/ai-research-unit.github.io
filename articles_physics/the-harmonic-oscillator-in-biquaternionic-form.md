@@ -123,7 +123,7 @@ The part that is, is the two-level truncation. Restrict the mode to the span of 
 $$
 \vec\Upsilon_x=|0\rangle\langle1|=\tfrac12(i\vec e_x-\vec e_y),\qquad
 \vec\Upsilon_y=|1\rangle\langle0|=\tfrac12(i\vec e_x+\vec e_y),\qquad
-\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=|1\rangle\langle1|=\tfrac12(e_t-i\vec e_z).
+\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=|1\rangle_{*}\langle1|=\tfrac12(e_t-i\vec e_z).
 $$
 
 These are the ladder operators and the lower-state idempotent of the parent articles: the truncation is exactly the two-state system, as expected from $\mathbb{B}\cong M_2(\mathbb{C})$.
@@ -196,7 +196,7 @@ Two cautions belong with this result. First, the boost acts on $\mathbb{M}_-$, t
 
 The exercise settles the two-sector claim and separates what the algebra adds from what it merely restates.
 
-**Familiar, rewritten.** The oscillator's ladder, quadratures, number operator, and energy are the standard ones. The finite-dimensional part that lives in $\mathbb{B}$ is the two-level truncation, which is the two-state system of the parent articles; its dynamics is the standard unitary precession, its Born rule is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H)$ for a state $\tilde\Pi$, and its canonical commutator fails by boundary terms as it does in any finite truncation. None of this is new.
+**Familiar, rewritten.** The oscillator's ladder, quadratures, number operator, and energy are the standard ones. The finite-dimensional part that lives in $\mathbb{B}$ is the two-level truncation, which is the two-state system of the parent articles; its dynamics is the standard unitary precession, its Born rule is $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*})$ for a state $\tilde\Pi$, and its canonical commutator fails by boundary terms as it does in any finite truncation. None of this is new.
 
 **Structurally new or newly visible.**
 

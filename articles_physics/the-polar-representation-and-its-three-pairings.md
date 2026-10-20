@@ -5,7 +5,7 @@
 Every biquaternion off the null cone is the ordered product of four factors: a positive scale, a central phase, a Hermitian boost and a real quaternion rotor,
 
 $$
-\tilde Q=r\,\exp(i\alpha)\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+\tilde Q=r\,\exp(i\alpha)\,\tilde B\,\tilde u_{\mathrm r}
 =r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta}{2}\vec u_{\mathrm r}\Bigr).
 $$
 
@@ -36,7 +36,7 @@ The mathematics is owned by *The Polar Element Representation of Biquaternions*,
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | $r$ | scale | — | — | $r>0$ | $1$ | dilation by $r^2$ |
 | 2 | $\exp(i\alpha)$ | central phase | $i\alpha$ | $i$ | $\alpha\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | $1$ | multiplication by the scalar |
-| 3 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$ | boost | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | congruence $X\mapsto \tilde U_{\mathrm b}X\tilde U_{\mathrm b}^{*}$ |
+| 3 | $\tilde B=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$ | boost | $i\tfrac{\psi}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $\psi\ge0$, $\vec u_{\mathrm b}\in\mathcal{A}$ | $3$ | congruence $X\mapsto \tilde BX\tilde B^{*}$ |
 | 4 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | rotor | $\tfrac{\theta}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $\theta\in[0,2\pi]$, $\vec u_{\mathrm r}\in\mathcal{A}$ | $3$ | conjugation $X\mapsto \tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{-1}$ |
 
 The axis sphere $\mathcal{A}$ is the set of unit real pure quaternions, the roots of $-e_t$. The phase is the only factor whose sandwich is the identity; its action on the algebra is the scalar multiplication recorded in the table, and that is the one row that departs from the sandwich convention.
@@ -79,7 +79,7 @@ The four-factor word is the reference. The three pairings are its three bracketi
 | Four-factor word | — | — | the unpaired reference |
 | Quaternion | $\tilde q=r\tilde u_{\mathrm r}$ | $\exp(i\tilde\Psi)$ | scale and rotor / phase and boost |
 | Hamilton root | $\Rho=r\exp(i\alpha)$ | $\exp(\vec\Xi\Theta)$ | scale and phase / boost and rotor |
-| Cartan Hermitian | $\tilde H=r\tilde U_{\mathrm b}$ | $\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$ | scale and boost / phase and rotor |
+| Cartan Hermitian | $\tilde H=r\tilde B$ | $\tilde U=\exp(i\alpha)\tilde u_{\mathrm r}$ | scale and boost / phase and rotor |
 
 ### The Quaternion Pairing
 
@@ -88,12 +88,12 @@ The quaternion pairing writes the element as a **real quaternion modulus** times
 $$
 \tilde Q=\tilde q\,\exp(i\tilde\Psi), \qquad
 \tilde q=r\,\tilde u_{\mathrm r}, \qquad
-\exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde B\tilde u_{\mathrm r}.
 $$
 
 The exponent is a real quaternion with scalar part $\alpha$ and pure part $\tfrac{\psi}{2}\vec u_{\mathrm b,2}$, where $\vec u_{\mathrm b,2}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ is the boost axis rotated by the rotor. The modulus is an ordinary quaternion in its polar form: a positive scale and a unit rotor.
 
-In the electromagnetic reading, $\tilde Q=\tilde E+i\tilde B$ with $\tilde E,\tilde B$ real quaternions. The ratio $\tilde P=\tilde E^{-1}\tilde B$ is the duality quotient, the quaternion that carries the electric part to the magnetic part; the angle $\tilde\Psi$ is the quaternion angle of the field, with scalar part the duality phase and pure part half the boost. The modulus $\tilde q=\tilde E(\cos\tilde\Psi)^{-1}$ is the normalised electric part. The construction needs $\tilde E\neq0$: a purely magnetic field has no electric part to normalise. The factorisation of the word still exists on a purely imaginary element, but the construction from the parts does not.
+In the electromagnetic reading, $\tilde Q=\tilde E+i\tilde B_{\mathrm m}$ with $\tilde E,\tilde B_{\mathrm m}$ real quaternions. The ratio $\tilde P=\tilde E^{-1}\tilde B_{\mathrm m}$ is the duality quotient, the quaternion that carries the electric part to the magnetic part; the angle $\tilde\Psi$ is the quaternion angle of the field, with scalar part the duality phase and pure part half the boost. The modulus $\tilde q=\tilde E(\cos\tilde\Psi)^{-1}$ is the normalised electric part. The construction needs $\tilde E\neq0$: a purely magnetic field has no electric part to normalise. The factorisation of the word still exists on a purely imaginary element, but the construction from the parts does not.
 
 ### The Hamilton Root Pairing
 
@@ -118,7 +118,7 @@ The Cartan pairing writes the element as a **Hermitian positive factor** times a
 
 $$
 \tilde Q=\tilde H\tilde U, \qquad
-\tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\mathrm b}, \qquad
+\tilde H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde B, \qquad
 \tilde U=\tilde H^{-1}\tilde Q=\exp(i\alpha)\tilde u_{\mathrm r}.
 $$
 
@@ -140,7 +140,7 @@ The three pairings are not three decompositions; they are three readings of the 
 | --- | --- | --- |
 | What is the real quaternion modulus and its angle? | quaternion | $\tilde q=r\tilde u_{\mathrm r}$, $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$ |
 | What is the axis and the complex angle? | Hamilton | $\vec\Xi$, $\Theta$ |
-| What is the amplitude and the phase? | Cartan | $\tilde H=r\tilde U_{\mathrm b}$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$ |
+| What is the amplitude and the phase? | Cartan | $\tilde H=r\tilde B$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$ |
 
 The Cartan pairing has the widest construction domain, the whole complement of the cone, and the cleanest matrix interpretation; the quaternion pairing has the most direct electromagnetic reading; the Hamilton pairing has the most direct Lorentz-group reading. None is more fundamental than the others, and none adds information to the four-factor word.
 
@@ -152,7 +152,7 @@ The four factors act by four different operations, and the table records which s
 | --- | --- | --- |
 | scale $r$ | dilation by $r^2$ | all six |
 | phase $\exp(i\alpha)$ | multiplication by the scalar | centre, vector space |
-| boost $\tilde U_{\mathrm b}$ | congruence | centre, $\mathbb{M}_+$, $\mathbb{M}_-$ |
+| boost $\tilde B$ | congruence | centre, $\mathbb{M}_+$, $\mathbb{M}_-$ |
 | rotor $\tilde u_{\mathrm r}$ | conjugation | all six |
 
 The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector space $\mathrm{Vect}(\mathbb{B})$, the real quaternion space $\mathbb{H}_{\mathbb{B}}$, the imaginary quaternion space $i\mathbb{H}_{\mathbb{B}}$, and the two sectors $\mathbb{M}_\pm$. The scale and the rotor preserve all six; the phase preserves only the centre and the vector space; the boost preserves the centre and the two sectors. Apart from the centre, no subspace is preserved by all four factors, and that is why no single subspace characterises the word.
@@ -170,13 +170,13 @@ The phase at $\alpha=\pi/2$ is multiplication by $i$, which exchanges the two se
 
 ## The Boost Factor Is Not the Acting Rotor
 
-The word's boost factor is $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$. Its congruence is the Lorentz boost of rapidity $\psi$. The factor that the corpus uses as the physical frame rotor is the inverse square root,
+The word's boost factor is $\tilde B=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$. Its congruence is the Lorentz boost of rapidity $\psi$. The factor that the corpus uses as the physical frame rotor is the inverse square root,
 
 $$
-\tilde U_{\mathrm L}=\tilde U_{\mathrm b}^{-1/2},
+\tilde U_{\mathrm b}=\tilde B^{-1/2},
 $$
 
-whose congruence is the boost of half the rapidity. The word stores the boost twice: the factor's exponent carries $\psi/2$, and the congruence deposits $\psi$. Taking $\tilde U_{\mathrm b}$ for the acting rotor doubles the rapidity.
+whose congruence is the boost of half the rapidity. The word stores the boost twice: the factor's exponent carries $\psi/2$, and the congruence deposits $\psi$. Taking $\tilde B$ for the acting rotor doubles the rapidity.
 
 The same doubling appears in the velocity. For a four-velocity of speed $v$ and $\beta=v/c$, the word gives
 
@@ -233,13 +233,13 @@ The three pairings are regroupings, not new decompositions. They add no informat
 
 ## Summary
 
-- Every biquaternion off the null cone is $r\exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
+- Every biquaternion off the null cone is $r\exp(i\alpha)\tilde B\tilde u_{\mathrm r}$, with $1+1+3+3=8$ real parameters.
 - The scale is the modulus of the norm, the phase is half its argument, the boost is the Hermitian positive factor and the rotor is the real quaternion factor.
 - The word exists exactly off the zero-divisor cone; on the cone a lightlike four-vector has no rest frame and no boost split.
 - The branch $\alpha\in(-\pi/2,\pi/2]$ is the only convention of the decomposition.
 - The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$ with $\tilde q=r\tilde u_{\mathrm r}$ and $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$; it groups scale and rotor against phase and boost.
 - The Hamilton root pairing is $\tilde Q=\Rho(\cos\Theta+\vec\Xi\sin\Theta)$; it groups scale and phase against boost and rotor, and its domain also excludes a null vector part.
-- The Cartan pairing is $\tilde Q=\tilde H\tilde U$ with $\tilde H=r\tilde U_{\mathrm b}$ and $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$; it groups scale and boost against phase and rotor.
+- The Cartan pairing is $\tilde Q=\tilde H\tilde U$ with $\tilde H=r\tilde B$ and $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$; it groups scale and boost against phase and rotor.
 - The three pairings are the three bracketings of the four-factor word; none adds information to it.
 - The scale and the rotor preserve all six remarkable subspaces, the phase preserves the centre and the vector space, and the boost preserves the centre and the two sectors.
 - On the material sector the boost reads with one sign of the cross terms; on the informational sector the sign is opposite.
@@ -253,18 +253,18 @@ The three pairings are regroupings, not new decompositions. They add no informat
 | --- | --- |
 | $r$ | the positive scale, $r=\lvert N\rvert^{1/2}$ |
 | $\alpha$ | the central phase, $\alpha=\tfrac12\arg N\in(-\pi/2,\pi/2]$ |
-| $\tilde U_{\mathrm b}=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$ | the Hermitian positive boost factor, the word's boost |
+| $\tilde B=\exp(i\tfrac{\psi}{2}\vec u_{\mathrm b})$ | the Hermitian positive boost factor, the word's boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ | the boost and rotor axes, unit real pure quaternions |
 | $\psi$, $\theta$ | the rapidity stored in the word and the rotation angle |
 | $\eta$ | the rapidity of the physical frame, $\psi=2\eta$ |
-| $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}^{-1/2}$ | the physical frame rotor |
+| $\tilde U_{\mathrm b}=\tilde B^{-1/2}$ | the physical frame rotor |
 | $N=\langle\tilde Q\rangle_{\natural}$ | the biquaternion norm |
 | $E^2=\sum_\mu\lvert Q_\mu\rvert^2$ | the Euclidean square, the Born form at equal arguments |
 | $\tilde q=r\tilde u_{\mathrm r}$ | the real quaternion modulus of the quaternion pairing |
 | $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$ | the real quaternion angle of the quaternion pairing |
 | $\Rho=\sqrt N$, $\vec\Xi$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
-| $\tilde H=r\tilde U_{\mathrm b}$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and unitary factors of the Cartan pairing |
+| $\tilde H=r\tilde B$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and unitary factors of the Cartan pairing |
 | $\mathbb{M}_\pm$ | the material and informational sectors |
 
 ## Further Reading

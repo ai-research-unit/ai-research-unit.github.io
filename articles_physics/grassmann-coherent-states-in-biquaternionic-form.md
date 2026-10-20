@@ -196,10 +196,10 @@ $$
 \mathrm{Tr}\,\tilde{Ϛ}_\theta=1 ,
 $$
 
-where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle\langle\theta|$ is a rank-one projector, but it is not a pure state of the *algebra* unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the normalised plain form, read as the trace pairing
+where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle_{*}\langle\theta|$ is a rank-one projector, but it is not a pure state of the *algebra* unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the normalised Hermitian form, read through the trace
 
 $$
-\langle O\rangle_\theta=\mathrm{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O) .
+\langle O\rangle_\theta=\mathrm{Tr}(\tilde{Ϛ}_\theta O^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O) .
 $$
 
 This is the coherent-state content of the sector assignment used throughout: the field and the generators are in $\mathbb{M}_-$, the states and the observables in $\mathbb{M}_+$, and the Grassmann label rides outside the algebra entirely.
@@ -208,7 +208,7 @@ This is the coherent-state content of the sector assignment used throughout: the
 $(-1)^{N}$. Acting on the coherent state,
 
 $$
-(-1)^{N}|\theta\rangle=(1-\theta a^{\mathrm{fop}\dagger})|0\rangle=|-\theta\rangle ,
+(-1)^{N}|\theta\rangle_{*}=(1-\theta a^{\mathrm{fop}\dagger})|0\rangle=|-\theta\rangle ,
 $$
 
 so the parity is the reflection of the label, in agreement with the trace formula's need for $\langle-\theta|$. For one mode $(-1)^{N}=i\vec e_z$ as the parents record; the reflection is therefore both an algebra element and a relabelling of the coherent states.
@@ -241,7 +241,7 @@ which is the statement that the Matsubara frequencies of a fermion are the half-
 **The algebra's own.**
 
 - *The Grassmann algebra as the minimal odd extension of $\mathbb{B}$*, with even part $\mathbb{B}$ preserved. This is the constructive content of that open item: the odd generator that the grading needs is supplied by the labels, and it does not disturb the even algebra.
-- *The sector reading of the coherent states*: the density matrix is an even element of $\mathbb{M}_+$ even though the label is odd, and the expectation is the plain form, read as the trace pairing $2\,\mathrm{Sc}$.
+- *The sector reading of the coherent states*: the density matrix is an even element of $\mathbb{M}_+$ even though the label is odd, and the expectation is the Hermitian form, read through the trace $2\,\mathrm{Sc}$.
 - *The parity as the label reflection* $|\theta\rangle\mapsto|-\theta\rangle$, which is the same element $(-1)^F=i\vec e_z$ that the parents identify for one mode.
 
 **Open.**
@@ -268,7 +268,7 @@ and the trace formula is $\mathrm{Tr}\,O=\int d\theta^*d\theta\,\exp(-\theta^*\t
 
 In the analytic representation the Fock space becomes polynomials of degree at most one in the odd variable, with $a^{\mathrm{fop}}=\partial/\partial\theta^*$, $a^{\mathrm{fop}\dagger}=\theta^*\times$, the anticommutator $\{\partial/\partial\theta^*,\theta^*\}=\mathrm{id}$ verified on the general polynomial, and the inner product given by the Berezin integral with $\exp(-\theta^*\theta)$.
 
-The biquaternion interpretation is that the label is odd while the density matrix $\rho_\theta=|\theta\rangle\langle\theta|$ is even, hence an element of $\mathbb{M}_+$, with trace one and expectations given by $\mathrm{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$; the parity is the label reflection $|\theta\rangle\mapsto|-\theta\rangle$; and the field's grading is carried by the extension rather than by $\mathbb{B}$ itself. At finite temperature the coherent-state trace formula gives $\mathrm{Tr}\,\exp(-\beta H)=1+\exp(-\beta\varepsilon)$ for one mode and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, the antiperiodicity verified to nine decimal places.
+The biquaternion interpretation is that the label is odd while the density matrix $\rho_\theta=|\theta\rangle\langle\theta|$ is even, hence an element of $\mathbb{M}_+$, with trace one and, for Hermitian $O$, expectations given by $\operatorname{Tr}(\tilde{Ϛ}_\theta O^{*})=\operatorname{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$, the star being inert and the unstarred trace real; the parity is the label reflection $|\theta\rangle_{*}\mapsto|-\theta\rangle$; and the field's grading is carried by the extension rather than by $\mathbb{B}$ itself. At finite temperature the coherent-state trace formula gives $\mathrm{Tr}\,\exp(-\beta H)=1+\exp(-\beta\varepsilon)$ for one mode and the antiperiodic Matsubara frequencies $\omega_n=(2n+1)\pi/\beta$, the antiperiodicity verified to nine decimal places.
 
 ## Summary of Notation
 
@@ -288,8 +288,8 @@ The biquaternion interpretation is that the label is odd while the density matri
 | $\{\partial/\partial\theta^*,\theta^*\}=\mathrm{id}$ | Canonical anticommutator in the representation |
 | $\langle\theta|O|\theta\rangle$ | Normal symbol (Grassmann valued) |
 | $\rho_\theta=|\theta\rangle\langle\theta|\in\mathbb{M}_+$ | State as an even algebra element |
-| $\langle O\rangle_\theta=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$ | Expectation as the trace reading of the plain form |
-| $(-1)^{N}|\theta\rangle=|-\theta\rangle$ | Parity as the label reflection |
+| $\langle O\rangle_\theta=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$ | Expectation as the trace reading of the Hermitian form |
+| $(-1)^{N}|\theta\rangle_{*}=|-\theta\rangle$ | Parity as the label reflection |
 | $\psi(\tau+\beta)=-\psi(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic Matsubara boundary condition |
 
 ## Further Reading

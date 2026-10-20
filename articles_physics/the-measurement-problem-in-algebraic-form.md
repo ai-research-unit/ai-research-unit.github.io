@@ -12,7 +12,7 @@ The residue is stated below as the algebraic form of the problem. The companion 
 
 The article proceeds as follows: the problem in standard terms; the algebraic vocabulary of acting elements; the problem stated in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the restatement changes, and what it does not.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{M}_+$ is the Hermitian subspace of states and observables, $\mathbb{M}_-$ the anti-Hermitian subspace of generators, and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the central scalar imaginary. The plain form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\langle e_t\rangle=1$; the traces are its matrix-representation reading, with $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)=2\langle\tilde Q,e_t\rangle$ and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{M}_+$ is the Hermitian subspace of states and observables, $\mathbb{M}_-$ the anti-Hermitian subspace of generators, and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the central scalar imaginary. The plain form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\langle e_t\rangle=1$; the traces are its matrix-representation reading, with $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)=2\langle\tilde Q,e_t\rangle$ and the trace formula $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$.
 
 ## The Problem in Standard Terms
 
@@ -46,13 +46,13 @@ $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right), \qquad \vec u \text{ a unit pure real quaternion},
 $$
 
-with $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, $\langle\tilde\Pi_{1,2},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), $\tilde\Pi_1 + \tilde\Pi_2 = e_t$, and $\tilde\Pi_1\tilde\Pi_2 = 0$. The Born rule is the normalised plain form $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle$; in the $2\times2$ image it is the trace formula
+with $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), $\tilde\Pi_1 + \tilde\Pi_2 = e_t$, and $\tilde\Pi_1\tilde\Pi_2 = 0$. The Born rule is the normalised Hermitian form $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$; in the $2\times2$ image it is the trace formula
 
 $$
-p_\pm = \mathrm{Tr}\!\left(\tilde\Pi_{1,2}(\vec u_h)\,\tilde{Ϛ}\right) = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right),
+p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_h),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ}^{*})}{\operatorname{Tr}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})} = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right),
 $$
 
-where $\vec u_h = \vec h/|\vec h|$ is the measurement direction.
+where $\vec u_h = \vec h/|\vec h|$ is the measurement direction. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$.
 
 ### One Operation Form, Two Kinds of Element
 
@@ -71,12 +71,12 @@ $$
 \Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}) = \tilde\Pi_{1,2}\,\tilde{Ϛ}\,\tilde\Pi_{1,2} = p_\pm \tilde\Pi_{1,2},
 $$
 
-using $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle = \tfrac12 p_\pm$. As a linear map on the four-dimensional real space $\mathbb{M}_+$, this has rank one: its image is the single ray spanned by $\tilde\Pi_{1,2}$. It does not preserve the biquaternion norm unless $\tilde\Pi_{1,2} = e_t$, and it is not invertible.
+using $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*} = \tfrac12 p_\pm$. As a linear map on the four-dimensional real space $\mathbb{M}_+$, this has rank one: its image is the single ray spanned by $\tilde\Pi_{1,2}$. It does not preserve the biquaternion norm unless $\tilde\Pi_{1,2} = e_t$, and it is not invertible.
 
 The measurement update of *Quantum Physics in Biquaternionic Form* is the normalized version of the idempotent case,
 
 $$
-\tilde{Ϛ} \;\longmapsto\; \frac{\tilde\Pi_{1,2}\,\tilde{Ϛ}\,\tilde\Pi_{1,2}}{2\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle} = \tilde\Pi_{1,2} ,
+\tilde{Ϛ} \;\longmapsto\; \frac{\tilde\Pi_{1,2}\,\tilde{Ϛ}\,\tilde\Pi_{1,2}}{2\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}} = \tilde\Pi_{1,2} ,
 $$
 
 and the reversible evolution is the unitary case. So the reversible/irreversible dichotomy, which the standard formalism states as a distinction between two postulated dynamics, is here a distinction between two classes of element of one algebra, acting through one operation form.
@@ -85,7 +85,7 @@ This restatement is exact. It is also only a restatement: membership in one clas
 
 ## The Problem in Algebraic Form
 
-Fix a state $\tilde{Ϛ} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_t e_t + i\vec h$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle$. The framework places three algebraic objects at our disposal:
+Fix a state $\tilde{Ϛ} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_t e_t + i\vec h$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$ and Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$. The framework places three algebraic objects at our disposal:
 
 1. **The reversible evolution** $\Gamma_{\tilde{U}}(\tilde{Ϛ}) = \tilde{U}\tilde{Ϛ}\tilde{U}^{*}$, with $\tilde{U}\tilde{U}^{*} = e_t$.
 2. **The two conditional outcomes** $\Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}) = p_\pm \tilde\Pi_{1,2}$; normalized, the post-measurement state is $\tilde\Pi_{1,2}$ itself, produced on the branch labelled $\pm$.
@@ -125,7 +125,7 @@ $$
 \vec r \;\longmapsto\; (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u .
 $$
 
-Two properties of its fully dephased limit ($p = 1$) matter here. In the measurement setting the pointer axis is the eigendirection of the measured observable, $\vec u = \vec u_h$, so that the pointer idempotents $\tilde\Pi_{1,2}(\vec u)$ coincide with the spectral idempotents $\tilde\Pi_{1,2}$ of $\tilde{H}$ and $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})$ are the Born probabilities.
+Two properties of its fully dephased limit ($p = 1$) matter here. In the measurement setting the pointer axis is the eigendirection of the measured observable, $\vec u = \vec u_h$, so that the pointer idempotents $\tilde\Pi_{1,2}(\vec u)$ coincide with the spectral idempotents $\tilde\Pi_{1,2}$ of $\tilde{H}$ and $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})$ are the Born probabilities.
 
 **First, the fully dephased element is unique given the statistics and the absence of coherence.** At $p = 1$ the channel is
 
@@ -147,7 +147,7 @@ $$
 \Phi^{\mathrm{deph}}_1(\tilde{Ϛ}) = p_+\,\Lambda_+(\tilde{Ϛ}) + p_-\,\Lambda_-(\tilde{Ϛ}) ,
 $$
 
-since $\Lambda_\pm(\tilde{Ϛ}) = \tilde\Pi_{1,2}$ and $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})$. The fully dephased element is exactly the convex average of the two possible outcomes with their Born weights. Two differences between $\Lambda_\pm$ and $\Phi^{\mathrm{deph}}_1$ are decisive for the problem:
+since $\Lambda_\pm(\tilde{Ϛ}) = \tilde\Pi_{1,2}$ and $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, read through the trace only at normalisation. The fully dephased element is exactly the convex average of the two possible outcomes with their Born weights. Two differences between $\Lambda_\pm$ and $\Phi^{\mathrm{deph}}_1$ are decisive for the problem:
 
 - **The selection channels do not preserve the Born statistics.** $\Lambda_+$ sends every state to $\tilde\Pi_1$, so it assigns probability $1$ to the outcome $+$ regardless of $\tilde{Ϛ}$, whereas the Born probability is $p_+$. A selection channel is a legitimate operation, but it is not a statistics-preserving description of the ensemble.
 - **The dephasing channel is a conditional expectation; the selection channels are not.** $\Phi^{\mathrm{deph}}_1$ is the trace-preserving conditional expectation onto the commutative pointer subalgebra $A = \mathbb{C}\tilde\Pi_1(\vec u) \oplus \mathbb{C}\tilde\Pi_2(\vec u)$, hence an orthogonal projection with respect to the plain form. The reset channels $\Lambda_\pm$ are idempotent but fail the module property $\Lambda(\tilde{Q}_3\tilde{Q}\tilde{Q}_1) = \tilde{Q}_3\,\Lambda(\tilde{Q})\,\tilde{Q}_1$ for $\tilde{Q}_3, \tilde{Q}_1 \in A$; for example $\Lambda_+(\tilde{Ϛ}\,\tilde\Pi_2) = p_-\,\tilde\Pi_1$ while $\Lambda_+(\tilde{Ϛ})\,\tilde\Pi_2 = 0$. So "idempotent channel" does not by itself identify the statistics-preserving operation, and the two operations that the problem contrasts — the average and the selection — are both present in the algebra as channels, with different properties.
@@ -190,7 +190,7 @@ The changes are changes in statement, not in physics, and they are worth setting
 
 4. **States and observables in one space make the provenance-blindness of the state explicit.** A state is an element of $\mathbb{M}_+$, and distinct preparations with the same Bloch vector give the same element. The framework thus makes it a statement about one subspace that no element distinguishes a proper from an improper mixture; the record that would distinguish them is not in $\tilde{Ϛ}$. This is inherited from *Quantum Physics in Biquaternionic Form* and *The Informational Sector: States, Observables and Probability*, and it is a particularly direct statement of why the "and/or" problem is not a defect of bookkeeping.
 
-5. **The form of the Born rule is algebraic.** The probabilities $p_\pm$ are the normalised plain form $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle$, read as $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})$ in the $2\times2$ image. As the companion article *The Born Rule from the Plain Form — Derivation and Comparison* argues, this derives the **form** of the rule and the objects it relates, not its empirical content: the identification of the pairing with observed frequency is not an algebraic consequence.
+5. **The form of the Born rule is algebraic.** The probabilities $p_\pm$ are the normalised Hermitian form $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})$ in the $2\times2$ image. As the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* argues, this derives the **form** of the rule and the objects it relates, not its empirical content: the identification of the pairing with observed frequency is not an algebraic consequence.
 
 ## What the Reformulation Does Not Change
 
@@ -208,7 +208,7 @@ The honest summary is a division of labour. The algebraic form makes the *struct
 
 ## Summary
 
-The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$, with the acting element either unitary ($\tilde{U}\tilde{U}^{*} = e_t$, reversible evolution) or Hermitian idempotent ($\tilde\Pi^2 = \tilde\Pi = \tilde\Pi^{*}$, the projective sandwich). The Born rule is the normalised plain form $\langle\tilde\Pi,\tilde H\rangle/\langle\tilde{Ϛ},e_t\rangle$, read as the trace $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.
+The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$, with the acting element either unitary ($\tilde{U}\tilde{U}^{*} = e_t$, reversible evolution) or Hermitian idempotent ($\tilde\Pi^2 = \tilde\Pi = \tilde\Pi^{*}$, the projective sandwich). The Born rule is the normalised Hermitian form $\langle\tilde\Pi,\tilde H\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}$, read as the trace $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.
 
 Decoherence, in the framework's worked dephasing model, is the channel $\Phi^{\mathrm{deph}}_p$ of *Decoherence as Idempotent Projection*. At full strength it is the trace-preserving conditional expectation onto the pointer subalgebra, and it is the unique coherence-free assignment that reproduces the Born statistics: its output is the mixture $\tilde{Ϛ}_d = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$, which, for a state $\tilde{Ϛ}$, is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The mixture is an interior point of the pointer diameter; the outcomes are its endpoints. Decoherence supplies the statistics and the segment, not the endpoint and not the index.
 
@@ -227,8 +227,8 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
 | $\tilde{H} = h_te_t + i\vec h$ | Hermitian observable |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, projective outcome) |
-| $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$ | Trace formula (Born rule) |
-| $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ})$ | Outcome probabilities |
+| $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$ | Trace reading at normalisation (Born rule) |
+| $p_\pm = \langle\tilde\Pi_{1,2}(\vec u_h),\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ}^{*})=\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{Ϛ})$ | Outcome probabilities (trace at normalisation) |
 | $\vec u_h = \vec h/\|\vec h\|$, $\vec u$ | Measurement and pointer directions |
 | $\Gamma_{\tilde{Q}_3}(\tilde{Q}) = \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$ | Conjugation; unitary evolution ($\tilde{Q}_3 = \tilde{U}$) or projective sandwich ($\tilde{Q}_3 = \tilde\Pi_{1,2}$) |
 | $\tilde{U}\tilde{U}^{*} = e_t$ | Unitary element (reversible evolution) |
@@ -252,4 +252,4 @@ What the reformulation changes is the form of the statement: two dynamics become
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for measurement as a completely positive map with classical outcomes, and for conditional expectations.
 - D. Petz, *Quantum Information Theory and Quantum Statistics* (Springer, 2008), for trace-preserving conditional expectations and the fixed-point structure of completely positive maps.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Kraus representation, the dephasing channel, and the reset channel.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule from the Plain Form — Derivation and Comparison*, *Decoherence as Idempotent Projection*, *The Quantum–Classical Divide in the Biquaternion Framework*, and *Entangled Subsystems in the Biquaternion Framework*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule from the Hermitian Form — Derivation and Comparison*, *Decoherence as Idempotent Projection*, *The Quantum–Classical Divide in the Biquaternion Framework*, and *Entangled Subsystems in the Biquaternion Framework*.

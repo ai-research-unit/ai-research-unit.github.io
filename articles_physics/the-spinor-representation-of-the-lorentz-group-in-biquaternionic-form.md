@@ -41,14 +41,14 @@ $$
 
 so $\rho(K_k)$ is Hermitian; skew-adjointness then forces $\rho(K_k)=0$. The boost generators and their brackets generate the whole Lie algebra, so $\rho=0$. Hence the only finite-dimensional unitary representation of $SL(2,\mathbb{C})$ is the trivial one, and the spinor representation is non-unitary.
 
-The obstruction is visible concretely on $S$. The standard Hermitian form $h(\psi,\phi)=\psi^{\dagger}\phi$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\mathrm L}=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$, because
+The obstruction is visible concretely on $S$. The standard Hermitian form $h(\psi,\phi)=\psi^{\dagger}\phi$ is invariant under the rotation subgroup $SU(2)$ but not under a boost $\tilde U_{\mathrm b}=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\vec u$, because
 
 $$
-h(\tilde U_{\mathrm L}\psi,\tilde U_{\mathrm L}\phi)=\psi^{\dagger}\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}\,\phi,
-\qquad \tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}=\tilde U_{\mathrm L}^{2}=\cosh\psi+i\sinh\psi\,\vec u\neq e_t .
+h(\tilde U_{\mathrm b}\psi,\tilde U_{\mathrm b}\phi)=\psi^{\dagger}\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}\,\phi,
+\qquad \tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^{2}=\cosh\psi+i\sinh\psi\,\vec u\neq e_t .
 $$
 
-For example, on a boost along $\vec e_z$ the operator $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L}$ is $\mathrm{diag}(\exp(\psi),\exp(-\psi))$, which differs from the identity for every $\psi\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$, which is symplectic rather than Hermitian.
+For example, on a boost along $\vec e_z$ the operator $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}$ is $\mathrm{diag}(\exp(\psi),\exp(-\psi))$, which differs from the identity for every $\psi\neq0$. The invariant bilinear form on $S$ is instead the antisymmetric $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$, which is symplectic rather than Hermitian.
 
 ## The Two Fundamental Representations Are the Two Chiralities
 

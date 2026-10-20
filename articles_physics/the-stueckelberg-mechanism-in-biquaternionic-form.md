@@ -278,7 +278,7 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $m_h^2=2\beta v^2$ | Radial-mode mass |
 | $\varphi=\rho \exp(i\vartheta)$, $\vartheta=-(\mu/v)\,\chi$ | Polar form; $\chi$ the Stueckelberg field |
 | $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$ | $ict'$ metric (level 2) |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Informational trace formula, distinct from the matrix trace |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 
 ## Further Reading
 

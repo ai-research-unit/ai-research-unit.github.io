@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion articles use the Lorentz rotor as a **fixed** transformation. *The Lorentz Transformation as a Biquaternionic Rotation* builds the boost biquaternion $\tilde U_{\mathrm L}$ — the unit-norm biquaternion that implements the Lorentz transformation — once, from the four-velocity, and applies the same rotor conjugation to every four-vector of the problem. *The Spinor Module in Biquaternionic Form and Its Lorentz Action* treats the module on which rotors act one-sidedly. In both, the rotor is a constant of the motion, an object that labels a frame rather than one that evolves.
+The companion articles use the Lorentz rotor as a **fixed** transformation. *The Lorentz Transformation as a Biquaternionic Rotation* builds the boost biquaternion $\tilde U_{\mathrm b}$ — the unit-norm biquaternion that implements the Lorentz transformation — once, from the four-velocity, and applies the same rotor conjugation to every four-vector of the problem. *The Spinor Module in Biquaternionic Form and Its Lorentz Action* treats the module on which rotors act one-sidedly. In both, the rotor is a constant of the motion, an object that labels a frame rather than one that evolves.
 
 This article gives the rotor a **proper-time dependence**. For each event $\tau$ on the worldline of a particle there is a rotor $\tilde U(\tau)$ that carries the particle's rest frame to the laboratory, in the sense
 

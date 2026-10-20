@@ -12,13 +12,16 @@ $$
 \tilde{Ϛ} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r = r_1 \vec e_x + r_2 \vec e_y + r_3 \vec e_z \in \mathbb{R}^3,
 $$
 
-with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace reading of the plain form on the slice is
+with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The Hermitian form on the slice is
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr), \qquad \tilde{Ϛ}_1 = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr),\ \tilde{Ϛ}_2 = \tfrac{1}{2}\bigl(e_t + i\vec s\bigr),
+\langle\tilde{Ϛ}_1,\tilde{Ϛ}_2\rangle_{*} = \mathrm{Sc}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*}) = \tfrac14\bigl(1 + \vec r\cdot\vec s\bigr),
+\qquad \tilde{Ϛ}_1 = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr),\ \tilde{Ϛ}_2 = \tfrac{1}{2}\bigl(e_t + i\vec s\bigr),
 $$
 
-the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2) = \tfrac{1}{2}|\vec r-\vec s|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $|\vec u| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\vec r = 0$.
+whose trace reading, at normalisation, is $\operatorname{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*}) = 2\langle\tilde{Ϛ}_1,\tilde{Ϛ}_2\rangle_{*} = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr)$. Both states are Hermitian and positive, so the star is inert and the unstarred trace $\operatorname{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2)$ is real and non-negative.
+
+The squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{Ϛ}_1-\tilde{Ϛ}_2)^2) = \tfrac{1}{2}|\vec r-\vec s|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $|\vec u| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\vec r = 0$.
 
 **What is to be shown.** Six problems: (1) the parametrisation of a mixed state by its Bloch vector; (2) purity, linear entropy, and von Neumann entropy for explicit states; (3) the geometry of convex combinations; (4) the metric and distinguishability structure; (5) the centre and the boundary; (6) when two Bloch vectors give identical or orthogonal states. Each is solved in full, and numerical values are given where they aid the check.
 
@@ -74,7 +77,7 @@ $$
 \tilde{Ϛ} = \tfrac12\bigl(e_t + i\textstyle\sum_\mu r_\mu \vec e_\mu\bigr) \;\longmapsto\; \tfrac12\Bigl(I + \sum_\mu r_\mu \sigma_\mu\Bigr) = \tfrac12\bigl(I + \vec r\cdot\boldsymbol{\sigma}\bigr),
 $$
 
-the standard Bloch parametrisation of a qubit density matrix. The components are the Pauli expectations: using the normalised plain form with the observable $i \vec e_\mu \mapsto \sigma_\mu$,
+the standard Bloch parametrisation of a qubit density matrix. The components are the Pauli expectations: using the normalised Hermitian form with the observable $i \vec e_\mu \mapsto \sigma_\mu$,
 
 $$
 r_\mu = \mathrm{Tr}\bigl(\tilde{Ϛ}\,(i \vec e_\mu)\bigr) = \langle \sigma_\mu\rangle_{\tilde{Ϛ}},
@@ -222,7 +225,7 @@ $$
 D\bigl(\tilde\Pi(\vec u), \tilde\Pi(\vec u_\nu)\bigr) = \sin\frac{\theta}{2}.
 $$
 
-Together with the transition probability $\mathrm{Tr}(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)) = \cos^2(\theta/2)$ this gives the clean pair
+Together with the transition probability $\mathrm{Tr}(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)^{*}) = \cos^2(\theta/2)$ this gives the clean pair
 
 $$
 D^2 + \mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)\bigr) = 1 \qquad \text{for pure states,}
@@ -272,14 +275,15 @@ A boundary state is an **extreme point** of the ball. Suppose $\tilde{P} = \lamb
 
 ## Problem 6: Identical and Orthogonal States
 
-**Problem.** (a) Determine when two states are identical. (b) Determine when two states have orthogonal support, i.e. when $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = 0$. (c) Specialize to pure states and express the result in terms of the angle. (d) Show that the Uhlmann transition probability vanishes under the same condition.
+**Problem.** (a) Determine when two states are identical. (b) Determine when two states have orthogonal support, i.e. when $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*}) = 0$. (c) Specialize to pure states and express the result in terms of the angle. (d) Show that the Uhlmann transition probability vanishes under the same condition.
 
 **Solution.** (a) Two states are identical exactly when their Bloch vectors are equal: from $\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r-\vec s)$ we have $\tilde{Ϛ}_1 = \tilde{Ϛ}_2$ iff $\vec r = \vec s$. In that case the Hilbert–Schmidt and trace distances vanish, the transition probability is $1$, and all radius-dependent quantities (purity, entropies) coincide. Conversely, equal purity does **not** imply identical states: by Problem 2 all states of a given radius share the same purity and entropy, and they are rotated into one another by $\mathrm{U}(2)$.
 
-(b) The trace reading of the plain form on the slice is $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ}_1,\tilde{Ϛ}_2$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus
+(b) The Hermitian form on the slice is $\langle\tilde{Ϛ}_1,\tilde{Ϛ}_2\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*})=\tfrac14(1 + \vec r\cdot\vec s)$, with trace reading at normalisation $\operatorname{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*}) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ}_1,\tilde{Ϛ}_2$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = 0
+\langle\tilde{Ϛ}_1,\tilde{Ϛ}_2\rangle_{*}=0
+\quad\Longleftrightarrow\quad \operatorname{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*})=0
 \quad\Longleftrightarrow\quad \vec r\cdot\vec s = -1 .
 $$
 
@@ -291,14 +295,16 @@ $$
 
 So two qubit states have orthogonal supports **if and only if** they are the two complementary pure states along a common axis.
 
-(c) For pure states $\vec r = \vec u$, $\vec s = \vec u_\nu$, the transition probability is the normalised plain form, read as the trace pairing,
+(c) For pure states $\vec r = \vec u$, $\vec s = \vec u_\nu$, the transition probability is the normalised Hermitian form, whose trace reading at normalisation is
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)\bigr)
+\frac{\langle\tilde\Pi(\vec u),\tilde\Pi(\vec u_\nu)\rangle_{*}}{\langle\tilde\Pi(\vec u_\nu),e_t\rangle_{*}}
+= \frac{\mathrm{Sc}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)\bigr)}{\mathrm{Sc}\bigl(\tilde\Pi(\vec u_\nu)\bigr)}
+= \frac{\operatorname{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)\bigr)}{\operatorname{Tr}\bigl(\tilde\Pi(\vec u_\nu)\bigr)}
 = \tfrac12\bigl(1 + \vec u\cdot\vec u_\nu\bigr) = \cos^2\frac{\theta}{2},
 $$
 
-where $\theta$ is the angle between the Bloch directions. It equals $1$ for $\theta = 0$ (identical states) and $0$ for $\theta = \pi$ (orthogonal states, $\vec u_\nu = -\vec u$). Equivalently, $\vec u\cdot\vec u_\nu = -1$, the same condition as in (b). As a concrete check, take $\vec u = \vec e_z$, $\vec u_\nu = -\vec e_z$: then $\tilde\Pi_1(\vec e_z)\tilde\Pi_2(\vec e_z) = 0$ and $\mathrm{Tr}(\tilde\Pi_1(\vec e_z)\tilde\Pi_2(\vec e_z)) = \tfrac12(1 - 1) = 0$, while $\tilde\Pi_1 + \tilde\Pi_2 = e_t$.
+where $\theta$ is the angle between the Bloch directions. It equals $1$ for $\theta = 0$ (identical states) and $0$ for $\theta = \pi$ (orthogonal states, $\vec u_\nu = -\vec u$). Equivalently, $\vec u\cdot\vec u_\nu = -1$, the same condition as in (b). As a concrete check, take $\vec u = \vec e_z$, $\vec u_\nu = -\vec e_z$: then $\tilde\Pi_1(\vec e_z)\tilde\Pi_2(\vec e_z) = 0$ and $\mathrm{Tr}(\tilde\Pi_1(\vec e_z)\tilde\Pi_2(\vec e_z)^{*}) = \tfrac12(1 - 1) = 0$, while $\tilde\Pi_1 + \tilde\Pi_2 = e_t$.
 
 (d) For general states the relevant overlap is the Uhlmann transition probability,
 
@@ -307,7 +313,7 @@ T(\tilde{Ϛ}_1,\tilde{Ϛ}_2)
 = \tfrac12\Bigl(1 + \vec r\cdot\vec s + \sqrt{\bigl(1-|\vec r|^2\bigr)\bigl(1-|\vec s|^2\bigr)}\Bigr),
 $$
 
-which for mixed states differs from the Hilbert–Schmidt pairing $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2)$. Setting $T = 0$ gives
+which for mixed states differs from the Hilbert–Schmidt pairing $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*})$. Setting $T = 0$ gives
 
 $$
 \vec r\cdot\vec s = -1 - \sqrt{\bigl(1-|\vec r|^2\bigr)\bigl(1-|\vec s|^2\bigr)} \leq -1 .
@@ -348,7 +354,7 @@ We have worked six problems on the geometry of the qubit state space, using only
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+|\vec r|^2)$ | Purity |
 | $S_{\mathrm{lin}} = 1-\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1-|\vec r|^2)$ | Linear entropy |
 | $S(\tilde{Ϛ}) = -\sum_\pm\lambda_\pm\log\lambda_\pm$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ |
-| $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1+\vec r\cdot\vec s)$ | Trace reading of the plain form |
+| $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2^{*}) = \tfrac12(1+\vec r\cdot\vec s)$ | Trace reading of the Hermitian form |
 | $D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2| = \tfrac12|\vec r-\vec s|$ | Trace distance |
 | $T(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12(1+\vec r\cdot\vec s+\sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$ | Uhlmann transition probability |
 

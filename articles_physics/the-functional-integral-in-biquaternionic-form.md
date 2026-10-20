@@ -10,7 +10,7 @@ and its derivatives generate the correlation functions of the theory. The two in
 
 The contributions divide cleanly, and the division is the content of the article.
 
-- **Established, and recomputed below.** The **action** of a biquaternion field is a *real central scalar*, extracted from the plain form, read as the trace pairing. The framework's real bilinear form is
+- **Established, and recomputed below.** The **action** of a biquaternion field is a *real central scalar*, extracted from the Hermitian form, read through the trace. The framework's real bilinear form is
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
@@ -83,7 +83,7 @@ where $\flat=-{}^{*}$ is the anti-Hermitian conjugation; this is the field-level
 $$
 \mathrm{Sc}(\tilde{Q}) = \tfrac12 \mathrm{Tr}(\tilde Q) ,
 $$
-is the *scalar part* of $\tilde{Q}$; it is a complex number in general, and the physical action is its real part, equivalently the real bilinear form $\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a quadratic theory the natural action is
+is the *scalar part* of $\tilde{Q}$; it is a complex number in general, and the physical action is its real part, equivalently the real bilinear form $\langle\tilde{Q},\tilde{Q}_1\rangle_{*}=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a quadratic theory the natural action is
 $$
 S[\tilde\Phi] = \int d^4x\;\Big\langle \tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\Big\rangle
 + S_{\mathrm{int}}[\tilde\Phi],
@@ -247,7 +247,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 ## What Is Established and What Is Interpretation
 
 **Established (algebra).**
-- The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde\Phi^{\natural}K_{\mathrm{kin}}\tilde\Phi)$; the plain form, read as the trace pairing, is the scalar extraction.
+- The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde\Phi^{\natural}K_{\mathrm{kin}}\tilde\Phi)$; the Hermitian form, read through the trace, is the scalar extraction.
 - For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde\Phi^{\natural}_-\tilde\Phi_+)$ vanish identically over the sector bases, so the free quadratic form is block diagonal and the free functional integral factorizes, $Z_0=Z_-\cdot Z_+$.
 - The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}\exp(\frac12\langle J,K^{-1}J\rangle)$ on the module, with $N$ the real dimension of the module; checked in finite dimension with explicit Hermitian matrices.
 - The Wick rotation is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ and turns $\exp(iS)$ into $\exp(-S_E)$.

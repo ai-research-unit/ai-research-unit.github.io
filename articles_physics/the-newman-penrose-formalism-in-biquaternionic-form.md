@@ -104,7 +104,7 @@ The two real null directions are the two primitive idempotents, and the complex 
 The inner products (1) now follow from (4) and the trace formula $\langle \tilde Q_1,\tilde Q_2\rangle_{\natural} = \mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$. Because $\bar{\tilde\Pi}_2 = \tilde\Pi_1$ and $\tilde\Pi_1^2=\tilde\Pi_1$,
 
 $$
-\langle l,n\rangle = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Pi_1\,\bar{\tilde\Pi}_2) = -2\,\mathrm{Sc}(\tilde\Pi_1^2) = -1 ,
+\langle l,n\rangle_{*} = (\sqrt2\,i)^2\,\mathrm{Sc}(\tilde\Pi_1\,\bar{\tilde\Pi}_2) = -2\,\mathrm{Sc}(\tilde\Pi_1^2) = -1 ,
 $$
 
 and because $\bar{\vec\Upsilon_2} = -\vec\Upsilon_2$ and $\vec\Upsilon_1\vec\Upsilon_2 = \tilde\Pi_1$ in the matrix-unit relations,

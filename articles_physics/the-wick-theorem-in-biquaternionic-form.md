@@ -182,7 +182,7 @@ The complete table of the four-point function is the following, in which each en
 
 | $\langle\,\cdot\,\rangle_t$ | direct | pairing sum |
 |---|---|---|
-| $\langle \vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_x\vec\Upsilon_y\rangle$ | $1$ | $1\cdot 1 = 1$ |
+| $\langle \vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_x\vec\Upsilon_y\rangle_{*}$ | $1$ | $1\cdot 1 = 1$ |
 | $\langle \vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_y\vec\Upsilon_x\rangle$ | $0$ | $1\cdot 0 = 0$ |
 | $\langle \vec\Upsilon_y\vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_x\rangle$ | $0$ | $0\cdot 0 = 0$ |
 | $\langle \vec\Upsilon_x\vec\Upsilon_x\vec\Upsilon_y\vec\Upsilon_y\rangle$ | $0$ | $1\cdot 1 - 1\cdot 1 = 0$ |

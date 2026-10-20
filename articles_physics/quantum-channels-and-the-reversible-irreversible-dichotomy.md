@@ -16,17 +16,17 @@ The conventions are those of the companion articles: the quaternion basis $e_t =
 
 ## The State Space and the Plain Form
 
-A state of the informational sector is an element $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ of $\mathbb{M}_+$ with $\vec r \in \mathbb{R}^3$, positive if and only if $|\vec r| \leq 1$. The states form the Bloch ball, whose boundary is the set of pure states; these are exactly the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, with $\vec u$ a unit pure real quaternion. Every state is normalised by the plain form, $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$; the trace reads this as $\mathrm{Tr}(\tilde{Ϛ}) = 2\,\mathrm{Sc}(\tilde{Ϛ}) = 1$.
+A state of the informational sector is an element $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ of $\mathbb{M}_+$ with $\vec r \in \mathbb{R}^3$, positive if and only if $|\vec r| \leq 1$. The states form the Bloch ball, whose boundary is the set of pure states; these are exactly the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, with $\vec u$ a unit pure real quaternion. Every state is normalised by the Hermitian form, $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$; the trace reads this as $\mathrm{Tr}(\tilde{Ϛ}) = 2\,\mathrm{Sc}(\tilde{Ϛ}) = 1$.
 
-An observable is a general Hermitian element $\tilde{H} = h_t e_t + i\vec h$, and the **plain form**
+An observable is a general Hermitian element $\tilde{H} = h_t e_t + i\vec h$, and the **Hermitian form**
 
 $$
-\langle\tilde{Ϛ},\tilde{H}\rangle = \mathrm{Sc}(\tilde{Ϛ}\tilde{H}) = \tfrac12(h_t + \vec r\cdot\vec h)
+\langle\tilde{Ϛ},\tilde{H}\rangle_{*} = \mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*}) = \tfrac12(h_t + \vec r\cdot\vec h)
 $$
 
-is the Born pairing. A state is normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$, so the Born weight is $h_t + \vec r\cdot\vec h$; in the $2\times2$ image the same statement reads $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{H}) = h_t + \vec r\cdot\vec h$. The plain form is a symmetric, positive-definite bilinear form, the Euclidean pairing $\langle\tilde{H},\tilde{Q}\rangle = h_tQ_t + \vec h\cdot\vec Q$ (in the image, $\mathrm{Tr}(\tilde{H}\tilde{Q}) = 2\langle\tilde{H},\tilde{Q}\rangle$). It plays a second, equally central role here: it is the operation that pairs a *state map* with its dual, and therefore the operation that makes the Heisenberg picture of a channel possible.
+is the Born pairing. A state is normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, so the Born weight is $h_t + \vec r\cdot\vec h$; in the $2\times2$ image the same statement reads $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde{H}^{*}) = h_t + \vec r\cdot\vec h$. On $\mathbb{M}_+$ this form is the symmetric, positive-definite bilinear form, the Euclidean pairing $\langle\tilde{H},\tilde{Q}\rangle_{*} = h_tQ_t + \vec h\cdot\vec Q$ (in the image, $\mathrm{Tr}(\tilde{H}\tilde{Q}) = 2\langle\tilde{H},\tilde{Q}\rangle$). It plays a second, equally central role here: it is the operation that pairs a *state map* with its dual, and therefore the operation that makes the Heisenberg picture of a channel possible.
 
-Two structural facts will be used repeatedly. First, $\mathbb{B}$ is the complexification of the real subspace $\mathbb{M}_+$, with the central scalar $i$ as the complex structure: $i\,\mathbb{M}_+ = \mathbb{M}_-$ and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, so every element decomposes uniquely into a Hermitian and an anti-Hermitian part. Second, positivity is the biquaternion-norm condition $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t \geq 0$; the state space is the state slice of the future light cone of the biquaternion norm, normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$.
+Two structural facts will be used repeatedly. First, $\mathbb{B}$ is the complexification of the real subspace $\mathbb{M}_+$, with the central scalar $i$ as the complex structure: $i\,\mathbb{M}_+ = \mathbb{M}_-$ and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, so every element decomposes uniquely into a Hermitian and an anti-Hermitian part. Second, positivity is the biquaternion-norm condition $\langle\tilde{Ϛ}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t \geq 0$; the state space is the state slice of the future light cone of the biquaternion norm, normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$.
 
 ## State Maps on $\mathbb{M}_+$
 
@@ -52,13 +52,13 @@ The standard illustration is the **transpose** $\tilde{Q} \mapsto \tilde{Q}^{\ma
 
 ### Normalisation Preservation and the Dual Map
 
-Because a state map must send normalised elements to normalised elements, we require $\langle\Phi(\tilde{Ϛ}),e_t\rangle = \langle\tilde{Ϛ},e_t\rangle$ for all states, equivalently $\langle\Phi(\tilde{Q}),e_t\rangle = \langle\tilde{Q},e_t\rangle$ for all $\tilde{Q} \in \mathbb{B}$; in the $2\times2$ image this is **trace preservation**, $\mathrm{Tr}(\Phi(\tilde{Ϛ})) = \mathrm{Tr}(\tilde{Ϛ})$. The plain form defines a **dual map** on observables, the Heisenberg-picture representative of $\Phi$, by
+Because a state map must send normalised elements to normalised elements, we require $\langle\Phi(\tilde{Ϛ}),e_t\rangle_{*} = \langle\tilde{Ϛ},e_t\rangle_{*}$ for all states, equivalently $\langle\Phi(\tilde{Q}),e_t\rangle_{*} = \langle\tilde{Q},e_t\rangle$ for all $\tilde{Q} \in \mathbb{B}$; in the $2\times2$ image this is **trace preservation**, $\mathrm{Tr}(\Phi(\tilde{Ϛ})) = \mathrm{Tr}(\tilde{Ϛ})$. The plain form defines a **dual map** on observables, the Heisenberg-picture representative of $\Phi$, by
 
 $$
-\langle\Phi(\tilde{Ϛ}),\tilde{H}\rangle = \langle\tilde{Ϛ},\Phi^{*}(\tilde{H})\rangle \qquad \text{for all } \tilde{Ϛ}, \tilde{H}.
+\langle\Phi(\tilde{Ϛ}),\tilde{H}\rangle_{*} = \langle\tilde{Ϛ},\Phi^{*}(\tilde{H})\rangle_{*} \qquad \text{for all } \tilde{Ϛ}, \tilde{H}.
 $$
 
-Normalisation preservation of $\Phi$ is equivalent to **unitality** of the dual, $\Phi^{*}(e_t) = e_t$: setting $\tilde{H} = e_t$ gives $\langle\Phi(\tilde{Ϛ}),e_t\rangle = \langle\tilde{Ϛ},\Phi^{*}(e_t)\rangle$, which equals $\langle\tilde{Ϛ},e_t\rangle$ for every $\tilde{Ϛ}$ precisely when $\Phi^{*}(e_t) = e_t$. The duality is mediated throughout by the plain form that gives the Born rule; the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ is its $2\times2$ reading.
+Normalisation preservation of $\Phi$ is equivalent to **unitality** of the dual, $\Phi^{*}(e_t) = e_t$: setting $\tilde{H} = e_t$ gives $\langle\Phi(\tilde{Ϛ}),e_t\rangle_{*} = \langle\tilde{Ϛ},\Phi^{*}(e_t)\rangle_{*}$, which equals $\langle\tilde{Ϛ},e_t\rangle_{*}$ for every $\tilde{Ϛ}$ precisely when $\Phi^{*}(e_t) = e_t$. The duality is mediated throughout by the plain form that gives the Born rule; the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$ is its $2\times2$ reading.
 
 ### The Kraus Representation
 
@@ -207,10 +207,10 @@ At $p = 0$ the channel is the identity, a reversible unitary evolution. At $p = 
 $$
 p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 = \Phi^{\mathrm{deph}}_1(\tilde{Ϛ}),
 \qquad
-p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}) = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r\right),
+p_\pm = \frac{\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})}{\operatorname{Tr}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})} = \tfrac{1}{2}\left(1 \pm \vec u\cdot\vec r\right),
 $$
 
-as a direct computation confirms. The three-Kraus form shows that $\Phi^{\mathrm{deph}}_p$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
+as a direct computation confirms. The star in the trace is inert on $\mathbb{M}_+$, and the unstarred trace is real and non-negative, so $p_\pm\in[0,1]$. The three-Kraus form shows that $\Phi^{\mathrm{deph}}_p$ is a convex mixture, with weight $p$, of this measurement channel and the identity; since the identity is reversible and full dephasing is not, the channel set is convex with its reversible elements among its extreme points.
 
 Write $r_\parallel = \vec u\cdot\vec r$ and $r_\perp^2 = |\vec r|^2 - r_\parallel^2$. Under dephasing,
 
@@ -234,7 +234,7 @@ strictly increases, since $S$ is a decreasing function of $|\vec r|$. A pure sta
 
 Collecting the results, the dichotomy has the following exact algebraic form.
 
-- **States and observables live in $\mathbb{M}_+$**, the Hermitian subspace, and are paired by $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$, the Born rule.
+- **States and observables live in $\mathbb{M}_+$**, the Hermitian subspace, and are paired by the Hermitian form $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$, the Born rule; its $2\times2$ reading, at normalisation, is $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$.
 - **Reversible processes are the inner automorphisms** $\tilde{Ϛ} \mapsto \tilde{U}\tilde{Ϛ}\tilde{U}^{*}$ by matrix-unitary biquaternions $\tilde{U} \in \mathrm{U}(2)$. They are exactly the channels of Kraus rank one, and they preserve purity. Their one-parameter subgroups have generators $-i\tilde{H}/\hbar$ lying in the complementary subspace $\mathbb{M}_-$: the states live in $\mathbb{M}_+$, but their reversible motion is generated from $\mathbb{M}_-$.
 - **Irreversible processes are the remaining channels**: completely positive, trace-preserving maps of Kraus rank at least two. Their Kraus operators are arbitrary elements of $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, and their generators contain, besides a derivation by an $\mathbb{M}_-$ element, completely positive dissipators that are not derivations.
 
@@ -248,7 +248,7 @@ In this interpretation, reversibility is the regime in which the informational s
 
 ### What the Reformulation Does and Does Not Claim
 
-The framework **does** provide a natural algebraic home for the standard theory of quantum operations. Complete positivity is a property of maps on $\mathbb{B} \cong M_2(\mathbb{C})$; trace preservation is the statement that the dual fixes $e_t$; the Kraus operators are elements of $\mathbb{B}$; and the reversible/irreversible split is the split between Kraus rank one and higher rank, equivalently between inner automorphisms and general completely positive maps. The plain form $\langle\tilde{Ϛ},\tilde H\rangle=\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ makes the state/observable duality and the Schrödinger/Heisenberg duality of channels the same operation; in the $2\times2$ image the same identity reads $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$.
+The framework **does** provide a natural algebraic home for the standard theory of quantum operations. Complete positivity is a property of maps on $\mathbb{B} \cong M_2(\mathbb{C})$; trace preservation is the statement that the dual fixes $e_t$; the Kraus operators are elements of $\mathbb{B}$; and the reversible/irreversible split is the split between Kraus rank one and higher rank, equivalently between inner automorphisms and general completely positive maps. The plain form $\langle\tilde{Ϛ},\tilde H\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})$ makes the state/observable duality and the Schrödinger/Heisenberg duality of channels the same operation; in the $2\times2$ image the same identity reads $\mathrm{Tr}(\tilde{Ϛ}\tilde H^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$.
 
 The framework **does not** claim to explain why a given physical process is irreversible, to derive the environment a channel traces over, or to resolve the measurement problem. The reformulation changes the vocabulary of the dichotomy, not its physics; the selection problem — why one outcome, or one channel, rather than another — is untouched.
 
@@ -299,7 +299,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State of the informational sector |
 | $\tilde{H} = h_t e_t + i\vec h$ | Observable / Hamiltonian |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotents (pure states) |
-| $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ | Trace formula (Born rule) |
+| $\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*}) = 2\langle\tilde{Ϛ},\tilde{H}\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $\Phi(\tilde{Ϛ}) = \sum_l \tilde{K}_l\tilde{Ϛ}\tilde{K}_l^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$ | Trace-preservation condition |
 | $\Phi^{*}(\tilde{H}) = \sum_l \tilde{K}_l^{*}\tilde{H}\tilde{K}_l$ | Dual (Heisenberg-picture) map |

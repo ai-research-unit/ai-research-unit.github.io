@@ -161,8 +161,8 @@ Two subfamilies are worth separating, because the series uses them differently:
 
 | subfamily | condition | biquaternion form | character |
 |---|---|---|---|
-| spatial rotations | $\tilde U_{\mathrm L}$ real quaternion | $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{jk}$ | group $SU(2)$ |
-| pure boosts | $\tilde U_{\mathrm L}$ Hermitian, $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$ | $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ | symmetric submanifold, not a group |
+| spatial rotations | $\tilde u_{\mathrm r}$ real quaternion | $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{jk}$ | group $SU(2)$ |
+| pure boosts | $\tilde U_{\mathrm b}$ Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$ | $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ | symmetric submanifold, not a group |
 
 The boosts do not close under multiplication — the product of two non-collinear boosts is a boost plus a Thomas–Wigner rotation — so they form a submanifold of $SL(2,\mathbb{C})$ rather than a subgroup. The two families are exponentials of the two sector algebras: the boosts of elements of $\mathbb{M}_+$, namely the timelike bivectors $i\vec u$, and the spatial rotations of elements of $\mathbb{H}_{\mathbb{B}}$, namely the spacelike bivectors $\vec u_{jk}$.
 

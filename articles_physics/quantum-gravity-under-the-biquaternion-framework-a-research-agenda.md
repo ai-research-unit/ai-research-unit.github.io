@@ -231,7 +231,7 @@ The ledger's three columns are the deliverable. **Established:** the kinematical
 | $\mathbb{H}_{\mathbb{B}},\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
 | $\varepsilon_0=ie_t,\ \varepsilon_k=\vec e_k$ | Material basis; $\eta_{\mu\nu}=\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}=\mathrm{diag}(-1,1,1,1)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
-| $\mathrm{Tr}(\tilde Q\tilde H)=2\,\mathrm{Sc}(\tilde Q\tilde H)$ | Trace formula; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q\tilde H)=2\,\mathrm{Sc}(\tilde Q\tilde H)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, $\Box=\tilde\nabla\tilde\nabla^{\natural}$ | Biquaternionic gradient and d'Alembertian |
 | $\tilde E_\mu\in\mathbb{M}_-$ | Frame field; $g_{\mu\nu}=\langle\tilde E_\mu,\tilde E_\nu\rangle_{\natural}$ |
 | $J_k=\vec e_k$, $K_k=i\vec e_k$ | Rotation and boost generators; $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}=\mathrm{span}_\mathbb{R}\{\vec e_k,i\vec e_k\}$ |

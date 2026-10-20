@@ -115,7 +115,7 @@ $$
 \lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec r|\bigr).
 $$
 
-The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their traces are one, and the plain form gives $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
+The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their traces are one, and the plain form gives $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
 
 ### Entropy as a function of the biquaternion norm
 
@@ -243,7 +243,7 @@ None of this is available in the same form for a general $d$-level system, where
 
 **2. The many-qubit case.** For $n$ qubits the state space is the positive cone slice of $\mathbb{M}_+^{\otimes n}$, and the biquaternion norm is replaced by a family of invariants. Which algebraic data determine the entropy there, and does the biquaternion norm of the tensor product play the role the single norm plays here?
 
-**3. Entropy and the trace pairing.** Entropy is a function of the biquaternion norm; the Born rule is a function of the plain form, read as the trace pairing. Is there an algebraic relation between the two pairings that makes this division of labour inevitable, or is it an accident of the qubit?
+**3. Entropy and the trace pairing.** Entropy is a function of the biquaternion norm; the Born rule is a function of the Hermitian form, whose trace reading is taken last, at normalisation. Is there an algebraic relation between the two pairings that makes this division of labour inevitable, or is it an accident of the qubit?
 
 **4. Relative entropy.** The quantum relative entropy $S(\rho\|\sigma)$ measures distinguishability and underlies the Holevo bound. Its biquaternion form, and whether it admits a biquaternion-norm expression in the qubit case, is the natural continuation of this article.
 
@@ -266,7 +266,7 @@ $$
 
 with $S=0$ exactly on the pure states (the zero divisors of the biquaternion norm) and $S=\log2$ exactly at the maximally mixed state (the maximum of the biquaternion norm on the slice). Entropy is monotone in the biquaternion norm, concave, and invariant under the unitary inner automorphisms that preserve the biquaternion norm.
 
-The description is the standard qubit entropy, and it predicts nothing new. What it makes precise is which invariant the entropy measures: not the plain form of the Born rule, read as the trace pairing, but the biquaternion norm whose cone is the state space, and, on that cone slice, the departure of the state from the zero-divisor boundary.
+The description is the standard qubit entropy, and it predicts nothing new. What it makes precise is which invariant the entropy measures: not the Hermitian form of the Born rule, read as the trace pairing, but the biquaternion norm whose cone is the state space, and, on that cone slice, the departure of the state from the zero-divisor boundary.
 
 ## Summary of Notation
 
@@ -301,4 +301,4 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 - I. Bengtsson and K. Życzkowski, *Geometry of Quantum States* (Cambridge, 2006), for the state space as a cone slice and for the geometric meaning of positivity and purity.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the axiomatic characterization of entropy and the relative entropy.
 - T. M. Cover and J. A. Thomas, *Elements of Information Theory* (Wiley, 2006), for the Shannon function $h$ and the source-coding interpretation of the entropy.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule from the Plain Form — Derivation and Comparison*, *The Bloch Ball as the Normalised Slice of the Future Light Cone*, *The Informational Sector: States, Observables and Probability*, and *Decoherence as Idempotent Projection*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule from the Hermitian Form — Derivation and Comparison*, *The Bloch Ball as the Normalised Slice of the Future Light Cone*, *The Informational Sector: States, Observables and Probability*, and *Decoherence as Idempotent Projection*.

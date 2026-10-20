@@ -109,7 +109,7 @@ If position and momentum enter the framework, they enter as a transform and not 
 
 A finite carrier does carry a commutation relation with a phase in place of the scalar, and it is important to say what that relation is and is not.
 
-**The pair.** On $\mathbb{C}^N$ let $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$ with $\omega=\exp(2\pi i/N)$ and let $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ be the cyclic shift. Then
+**The pair.** On $\mathbb{C}^N$ let $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$ with $\omega=\exp(2\pi i/N)$ and let $Z|k\rangle_{*}=|k+1\ \mathrm{mod}\ N\rangle$ be the cyclic shift. Then
 $$
 XZ=\omega\,ZX,\qquad [X,Z]=(\omega-1)\,ZX .
 $$

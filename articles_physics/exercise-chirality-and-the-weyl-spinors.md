@@ -7,7 +7,7 @@ This is one of the articles in the Dirac exercise series accompanying the biquat
 The following are assumed, with the notation of the parent article.
 
 - The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$, scalar imaginary $i$, and the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ (Hermitian). The subspaces are $\mathbb{M}_-$ (material), $\mathbb{M}_+$ (informational), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathbb{C}e_t$ (the centre).
-- The matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde{u}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{u})$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$.
+- The matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde u_{\mathrm r}) = \mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde u_{\mathrm r})$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, and $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$.
 - The **spinor module** $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying $\psi\mapsto\mathsf{M}_2(\tilde{Q})\psi$. Its ideal realization is $S\cong\mathbb{B}\tilde\Pi_+$, with $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$, the two idempotents associated with the root of $+1$ $i\vec e_z$, $(i\vec e_z)^2 = e_t$; $\tilde\Pi_+\tilde\Pi_- = \tilde\Pi_-\tilde\Pi_+ = 0$, $\tilde\Pi_++\tilde\Pi_- = e_t$, and basis $\{\tilde\Pi_+,\,y\}$, $y = \vec e_y\tilde\Pi_+ = \tfrac12(i\vec e_x+\vec e_y)$.
 - The **two chiral halves**: the left-handed Weyl module $V_1 = (\tfrac12,0)$, carried by $S$ with action $\psi\mapsto g\psi$, $g = \mathsf{M}_2(\tilde U_{\mathrm L})$ with $\tilde U_{\mathrm L}$ the unit-norm biquaternion that implements the Lorentz transformation; and the right-handed module $\bar{S} = (0,\tfrac12)$, carried by $\mathbb{C}^2$ with action $\chi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\chi$. Their direct sum is the **Dirac module** $\Delta = S\oplus\bar{S}$, $\dim_{\mathbb{C}}\Delta = 4$.
 - The group $SL(2,\mathbb{C}) = \{\tilde U_{\mathrm L} : \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t\}$ of **unit-norm biquaternions**, and the double cover $\pi:SL(2,\mathbb{C})\to SO^{+}(1,3)$, $\pi(\tilde U_{\mathrm L}):\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ on $\mathbb{M}_-$.
@@ -124,15 +124,15 @@ i.e. $E^2 = \vec p^2c^2 + m^2c^4$.
 Recall the two distinguished unit-norm biquaternions and their images under $\mathsf{M}_2$:
 
 $$
-\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
+\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}
 \;\longmapsto\;
-\mathsf{M}_2(\tilde U_{\mathrm L}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma},
+\mathsf{M}_2(\tilde U_{\mathrm b}) = \cosh\frac{\psi}{2}\,I_2 + \sinh\frac{\psi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma},
 $$
 
 $$
-\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r}
+\tilde u_{\mathrm r} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{\mathrm r}
 \;\longmapsto\;
-\mathsf{M}_2(\tilde{u}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma}.
+\mathsf{M}_2(\tilde u_{\mathrm r}) = \cos\frac{\theta}{2}\,I_2 - i\sin\frac{\theta}{2}\,\vec u_{\mathrm r}\cdot\boldsymbol{\sigma}.
 $$
 
 For $\vec u_{\mathrm b} = \vec u_{\mathrm r} = \vec u_z$ these are diagonal:
@@ -142,12 +142,12 @@ g_{\text{boost}} = \operatorname{diag}\!\left(\exp(\psi/2), \exp(-\psi/2)\right)
 g_{\text{rot}} = \operatorname{diag}\!\left(\exp(-i\theta/2), \exp(i\theta/2)\right).
 $$
 
-The left-handed spinor transforms by $\psi_L\mapsto g\psi_L$, the right-handed one by $\psi_R\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\psi_R$.
+The left-handed spinor transforms by $\psi_L\mapsto g\psi_L$, the right-handed one by $\psi_R\mapsto\mathsf{M}_2(\tilde U_{\mathrm L}^{*})\psi_R$, with $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ the rotor of the transformation ($\tilde u_{\mathrm r}=e_t$ for the boost above).
 
-**Boost.** A boost rotor has a real scalar part and an imaginary vector part, so conjugating its coefficients negates the vector part: $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$. Hence
+**Boost.** A boost rotor has a real scalar part and an imaginary vector part, so conjugating its coefficients negates the vector part: $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}^{\natural} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$. Hence
 
 $$
-\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \cosh\frac{\psi}{2}\,I_2 - \sinh\frac{\psi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma}
+\mathsf{M}_2(\tilde U_{\mathrm b}^{*}) = \cosh\frac{\psi}{2}\,I_2 - \sinh\frac{\psi}{2}\,\vec u_{\mathrm b}\cdot\boldsymbol{\sigma}
 = \operatorname{diag}\!\left(\exp(-\psi/2), \exp(\psi/2)\right) = g_{\text{boost}}^{-1}.
 $$
 
@@ -160,10 +160,10 @@ $$
 
 The component that is stretched in the left-handed spinor is contracted in the right-handed one. This opposition of the two halves under boosts is the representation-theoretic content of the labels "left" and "right".
 
-**Rotation.** A rotation rotor is a real quaternion, so $\tilde{u}^{*} = \tilde{u}$ and
+**Rotation.** A rotation rotor is a real quaternion, so $\tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}$ and
 
 $$
-\mathsf{M}_2(\tilde{u}^{*}) = \mathsf{M}_2(\tilde{u}) = g_{\text{rot}} = \operatorname{diag}\!\left(\exp(-i\theta/2), \exp(i\theta/2)\right).
+\mathsf{M}_2(\tilde u_{\mathrm r}^{*}) = \mathsf{M}_2(\tilde u_{\mathrm r}) = g_{\text{rot}} = \operatorname{diag}\!\left(\exp(-i\theta/2), \exp(i\theta/2)\right).
 $$
 
 Both halves transform by the **same** matrix. This is consistent with $S$ and $\bar{S}$ being non-isomorphic complex $SL(2,\mathbb{C})$-modules: they are isomorphic as $SU(2)$-modules, because the defining representation of $SU(2)$ is self-conjugate (quaternionic). The modules separate only under boosts.
@@ -260,26 +260,26 @@ with components $(q_t,q_x,q_y,q_z) = (\tfrac12,0,0,-\tfrac12)$ in the basis $\{i
 Take a rotation about $\vec u_{\mathrm r} = \vec u_z$ by angle $\theta$,
 
 $$
-\tilde{u}(\theta) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_z,
+\tilde u_{\mathrm r}(\theta) = \cos\frac{\theta}{2}\,e_t + \sin\frac{\theta}{2}\,\vec u_z,
 \qquad
-\mathsf{M}_2(\tilde{u}(\theta)) = \operatorname{diag}\!\left(\exp(-i\theta/2), \exp(i\theta/2)\right).
+\mathsf{M}_2(\tilde u_{\mathrm r}(\theta)) = \operatorname{diag}\!\left(\exp(-i\theta/2), \exp(i\theta/2)\right).
 $$
 
 **On the spinor.** At $\theta = 2\pi$,
 
 $$
-\mathsf{M}_2(\tilde{u}(2\pi)) = \operatorname{diag}\!\left(\exp(-i\pi), \exp(i\pi)\right) = \operatorname{diag}(-1,-1) = -I_2 ,
+\mathsf{M}_2(\tilde u_{\mathrm r}(2\pi)) = \operatorname{diag}\!\left(\exp(-i\pi), \exp(i\pi)\right) = \operatorname{diag}(-1,-1) = -I_2 ,
 $$
 
 so every spinor is sent to its negative: $\psi\mapsto-\psi$, which is not the identity. At $\theta = 4\pi$,
 
 $$
-\mathsf{M}_2(\tilde{u}(4\pi)) = \operatorname{diag}\!\left(\exp(-2\pi i), \exp(2\pi i)\right) = I_2 ,
+\mathsf{M}_2(\tilde u_{\mathrm r}(4\pi)) = \operatorname{diag}\!\left(\exp(-2\pi i), \exp(2\pi i)\right) = I_2 ,
 $$
 
 so the spinor returns to itself.
 
-**On the four-vector.** The corresponding four-vector action is rotor conjugation by $\tilde{u}(\theta)$. At $\theta = 2\pi$ the rotor is $\tilde{u}(2\pi) = \cos\pi\,e_t = -e_t$, and
+**On the four-vector.** The corresponding four-vector action is rotor conjugation by $\tilde u_{\mathrm r}(\theta)$. At $\theta = 2\pi$ the rotor is $\tilde u_{\mathrm r}(2\pi) = \cos\pi\,e_t = -e_t$, and
 
 $$
 (-e_t)\,\tilde{Q}\,(-e_t)^{*} = (-e_t)\,\tilde{Q}\,(-e_t) = e_t\,\tilde{Q}\,e_t = \tilde{Q},
@@ -300,7 +300,7 @@ $$
 SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 $$
 
-and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\vec u_{\mathrm r} = \vec u_z$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde{u}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.
+and $SL(2,\mathbb{C})$ is the double cover. Numerically, for $\vec u_{\mathrm r} = \vec u_z$ and $\theta = 2\pi$, the residual of $\mathsf{M}_2(\tilde u_{\mathrm r}(2\pi))+I_2$ is $<10^{-15}$, and that of the four-vector conjugation against the identity is $<10^{-12}$.
 
 ## Problem 7: The Spinor Action and Rotor Conjugation
 
@@ -378,8 +378,8 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma
 | $\gamma_5 = \operatorname{diag}(-I_2,I_2)$ | Chirality operator on $\Delta$ |
 | $P_L = \tfrac12(I_4-\gamma_5),\; P_R = \tfrac12(I_4+\gamma_5)$ | Chiral projectors |
 | $\psi_L\in S$, $\psi_R\in\bar{S}$ | Left- and right-handed Weyl spinors |
-| $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
-| $\tilde{u} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
+| $\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor ($\mathbb{M}_+$) |
+| $\tilde u_{\mathrm r} = \cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor ($\mathbb{H}_{\mathbb{B}}$) |
 | $g = \mathsf{M}_2(\tilde U_{\mathrm L})$ | Defining (left-handed) action matrix |
 | $\mathsf{M}_2(\tilde U_{\mathrm L}^{*}) = \epsilon^{-1}\bar{g}\epsilon$ | Right-handed action matrix |
 | $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ | Invariant symplectic pairing on $S$ |

@@ -117,7 +117,7 @@ $$
 
 where $\tilde J_{(a)}^2=\sum_k(\tilde J_k^{(a)})^2$. The last term is the **coupling term**; it is the only term that is not a sum of one-factor operators.
 
-The coupled states $|j,m\rangle$ are by definition the simultaneous eigenvectors of $\tilde J^2$ and $\tilde J_3$ in the tensor-product space. The product states $|j_1,m_1\rangle|j_2,m_2\rangle$ are eigenvectors of $\tilde J_3$ with eigenvalue $(m_1+m_2)\hbar$, but not of $\tilde J^2$ unless $j_1=0$ or $j_2=0$; the coupling term mixes them. The change from the product basis, in which $\tilde J_3^{(1)}$ and $\tilde J_3^{(2)}$ are diagonal, to the coupled basis, in which $\tilde J^2$ and $\tilde J_3$ are diagonal, is the Clebsch–Gordan transformation.
+The coupled states $|j,m\rangle_{*}$ are by definition the simultaneous eigenvectors of $\tilde J^2$ and $\tilde J_3$ in the tensor-product space. The product states $|j_1,m_1\rangle|j_2,m_2\rangle$ are eigenvectors of $\tilde J_3$ with eigenvalue $(m_1+m_2)\hbar$, but not of $\tilde J^2$ unless $j_1=0$ or $j_2=0$; the coupling term mixes them. The change from the product basis, in which $\tilde J_3^{(1)}$ and $\tilde J_3^{(2)}$ are diagonal, to the coupled basis, in which $\tilde J^2$ and $\tilde J_3$ are diagonal, is the Clebsch–Gordan transformation.
 
 For the spin factors the two-factor space is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself. Its trace is the product of the factor traces,
 

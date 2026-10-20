@@ -107,7 +107,7 @@ Hence the image of $\tilde\Pi_{\Phi^+}$ is again a rank-one idempotent, i.e. aga
 Bob, holding both qubits, measures the commuting stabilizers $S_1$ and $S_3$. Since $\{S_1,S_3\}$ is a complete set of commuting observables with the four Bell idempotents as its joint eigenbasis, the measurement has four outcomes $\epsilon$ with probabilities
 
 $$
-p_\epsilon = \mathrm{Tr}\bigl(\tilde{Ϛ}\,\tilde\Pi_\epsilon\bigr),
+p_\epsilon = \frac{\langle\tilde{Ϛ},\tilde\Pi_\epsilon\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde\Pi_\epsilon^{*})}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\mathrm{Sc}(\tilde{Ϛ}\tilde\Pi_\epsilon)}{\mathrm{Sc}(\tilde{Ϛ})} = \frac{\operatorname{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon)}{\operatorname{Tr}(\tilde{Ϛ})},
 $$
 
 where $\tilde{Ϛ}$ is the received state. If Alice applied $\vec e_k$, then $\tilde{Ϛ} = \tilde\Pi_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and
@@ -241,7 +241,7 @@ and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\
 | $S_1\tilde\Pi_\epsilon = -\epsilon_1\tilde\Pi_\epsilon$, $S_3\tilde\Pi_\epsilon=-\epsilon_3\tilde\Pi_\epsilon$ | Joint eigenvalues |
 | $(\vec e_k\otimes e_t)\tilde{Ϛ}(\vec e_k\otimes e_t)^{*}$ | Local encoding operation |
 | $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$ | Orthogonality of codewords |
-| $p_\epsilon = \mathrm{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon)$ | Decoding probabilities (Born rule) |
+| $p_\epsilon = \langle\tilde{Ϛ},\tilde\Pi_\epsilon\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = \operatorname{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon^{*})=\operatorname{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon)$ | Decoding probabilities (Born rule; trace at normalisation) |
 | $1$ bit | Holevo bound for one qubit without entanglement |
 | $2$ bits | Entanglement-assisted capacity (superdense coding) |
 

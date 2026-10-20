@@ -4,7 +4,7 @@
 
 The no-cloning theorem states that an unknown quantum state cannot be copied: there is no physical process that takes one copy of an arbitrary state and produces two, each identical to the original. The theorem is the reason quantum information is not merely classical information carried by quantum systems, and it is the origin of quantum key distribution, of the security of quantum money, and of the impossibility of amplifying a quantum signal by copying it.
 
-The theorem is usually proved by an inner-product argument: a cloning transformation that worked for all states would have to be unitary, unitarity preserves inner products, but the inner product of two cloned outputs is the square of the input inner product, and a number equals its own square only when it is zero or one. This article presents the theorem in the biquaternion framework and isolates the operational meaning of "inner product" there. In the algebra the inner product of two rays is carried by the **normalised plain form of their idempotents**, read as the trace pairing,
+The theorem is usually proved by an inner-product argument: a cloning transformation that worked for all states would have to be unitary, unitarity preserves inner products, but the inner product of two cloned outputs is the square of the input inner product, and a number equals its own square only when it is zero or one. This article presents the theorem in the biquaternion framework and isolates the operational meaning of "inner product" there. In the algebra the inner product of two rays is carried by the **normalised Hermitian form of their idempotents**, read as the trace pairing,
 
 $$
 \bigl|\langle\psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) \in [0,1],
@@ -80,7 +80,7 @@ $$
 = \langle\psi|\phi\rangle\,\langle\psi|\phi\rangle = \langle\psi|\phi\rangle^2 .
 $$
 
-Equating the two evaluations gives $\langle\psi|\phi\rangle=\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the **normalised plain form of the idempotents**, read as the trace pairing — the modulus squared of the inner product —
+Equating the two evaluations gives $\langle\psi|\phi\rangle=\langle\psi|\phi\rangle^2$, so $\langle\psi|\phi\rangle\in\{0,1\}$. In terms of the **normalised Hermitian form of the idempotents**, read as the trace pairing — the modulus squared of the inner product —
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr)
@@ -97,7 +97,7 @@ The conclusion is the no-cloning theorem in the framework's terms:
 
 > A deterministic, universal cloning process exists for a set of pure states if and only if the states are pairwise orthogonal. For any two non-orthogonal rays of the defining module, no unitary $\tilde{U}$ on $\mathbb{B}\otimes\mathbb{B}$ maps $|\psi\rangle\otimes|0\rangle$ to $|\psi\rangle\otimes|\psi\rangle$ for both.
 
-The normalised plain form, read as the trace pairing, is the algebra's measure of distinguishability: it is $1$ for coincident rays, $0$ for orthogonal rays, and strictly between for all others. Cloning would require it to be idempotent under squaring, and on the interval $[0,1]$ only the endpoints satisfy $x=x^2$. The obstruction is thus a statement about the range of the normalised plain form: **a state space whose distinguishability takes intermediate values cannot be cloned.** The maximally mixed state and the pure states are the endpoints of the pairing's range; it is precisely the interior of the range that forbids cloning.
+The normalised Hermitian form, read through the trace, is the algebra's measure of distinguishability: it is $1$ for coincident rays, $0$ for orthogonal rays, and strictly between for all others. Cloning would require it to be idempotent under squaring, and on the interval $[0,1]$ only the endpoints satisfy $x=x^2$. The obstruction is thus a statement about the range of the normalised Hermitian form: **a state space whose distinguishability takes intermediate values cannot be cloned.** The maximally mixed state and the pure states are the endpoints of the pairing's range; it is precisely the interior of the range that forbids cloning.
 
 ### A concrete pair
 
@@ -110,7 +110,7 @@ $$
 \bigl|\langle\psi|\phi\rangle\bigr|^2 = \tfrac12 .
 $$
 
-The normalised plain form, read as the trace pairing, is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = \tfrac12$, strictly inside $(0,1)$. A cloning unitary would have to send both $|\psi\rangle|0\rangle\mapsto|\psi\rangle|\psi\rangle$ and $|\phi\rangle|0\rangle\mapsto|\phi\rangle|\phi\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
+The normalised Hermitian form, read through the trace, is $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = \tfrac12$, strictly inside $(0,1)$. A cloning unitary would have to send both $|\psi\rangle|0\rangle\mapsto|\psi\rangle|\psi\rangle$ and $|\phi\rangle|0\rangle\mapsto|\phi\rangle|\phi\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
 
 ### Cloning versus copying
 
@@ -173,11 +173,11 @@ gives $\langle\psi|\tilde{Ϛ}_{\text{out},1}|\psi\rangle = 5/6$ for every $\thet
 
 ### Comparison with measurement and preparation
 
-A classical strategy is to measure the input and prepare two copies of the best guess of the state. For a qubit the optimal single-shot estimate of a uniformly random pure state has fidelity $2/3$, so this strategy achieves $F = 2/3 = 0.6667$, strictly below $5/6$. The quantum cloner's advantage is real and comes from producing clones that are correlated with the input more strongly than any measurement allows. The numbers $5/6$ and $2/3$ are standard; the framework transcribes the cloner into its tensor-product notation, and the reduction of the fidelity to the normalised plain form, read as the trace pairing, is the only translation involved.
+A classical strategy is to measure the input and prepare two copies of the best guess of the state. For a qubit the optimal single-shot estimate of a uniformly random pure state has fidelity $2/3$, so this strategy achieves $F = 2/3 = 0.6667$, strictly below $5/6$. The quantum cloner's advantage is real and comes from producing clones that are correlated with the input more strongly than any measurement allows. The numbers $5/6$ and $2/3$ are standard; the framework transcribes the cloner into its tensor-product notation, and the reduction of the fidelity to the normalised Hermitian form, read through the trace, is the only translation involved.
 
-### The fidelity as the normalised plain form, read as the trace pairing
+### The fidelity as the normalised Hermitian form, read through the trace
 
-The fidelity is the normalised plain form, read as the trace pairing: for a pure target state $\tilde\Pi(\psi)$ and an output state $\tilde{Ϛ}_{\text{out}}$,
+The fidelity is the normalised Hermitian form, read through the trace: for a pure target state $\tilde\Pi(\psi)$ and an output state $\tilde{Ϛ}_{\text{out}}$,
 
 $$
 F = \langle\psi|\tilde{Ϛ}_{\text{out}}|\psi\rangle = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\,\tilde{Ϛ}_{\text{out}}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}}\bigr),
@@ -199,16 +199,16 @@ The obstruction has companions, all of which are statements about the affine str
 
 **No-cloning of non-orthogonal states in a known basis.** Even if the family is finite and known, non-orthogonality prevents perfect cloning; the optimal fidelity for cloning a pair of states with overlap $c$ is less than one and depends on $c$. Perfect cloning is recovered only in the orthogonal limit.
 
-In the framework's terms, all three are the statement that the normalised plain form cannot be rescaled to its endpoints by an affine map of the cone: physical processes move states within the cone along affine images, and the pairing's interior values are precisely those that cannot be mapped to $0$ or $1$ for an unknown state.
+In the framework's terms, all three are the statement that the normalised Hermitian form cannot be rescaled to its endpoints by an affine map of the cone: physical processes move states within the cone along affine images, and the pairing's interior values are precisely those that cannot be mapped to $0$ or $1$ for an unknown state.
 
 ## What the Framework Adds and What It Does Not
 
 **What it does.**
 
-- It expresses the distinguishability of two rays as the normalised plain form of their idempotents, read as the trace pairing, and shows that it lies in $[0,1]$, with the endpoints corresponding to orthogonal and coincident states.
-- It gives the algebraic obstruction as the requirement $\mathrm{Tr}(\tilde\Pi_\psi\tilde\Pi_\phi) = (\mathrm{Tr}(\tilde\Pi_\psi\tilde\Pi_\phi))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
+- It expresses the distinguishability of two rays as the normalised Hermitian form of their idempotents, read as the trace pairing, and shows that it lies in $[0,1]$, with the endpoints corresponding to orthogonal and coincident states.
+- It gives the algebraic obstruction as the requirement $\mathrm{Tr}(\tilde\Pi_\psi\tilde\Pi_\phi^{*}) = (\mathrm{Tr}(\tilde\Pi_\psi\tilde\Pi_\phi^{*}))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
 - It identifies the deeper obstruction as linearity: physical evolution is affine on the cone slice of $\mathbb{M}_+$, while the cloning target is quadratic.
-- It expresses the fidelity of approximate cloning as the normalised plain form, read as the trace pairing, and transcribes the optimal cloner into the tensor-product algebra, verifying the value $5/6$.
+- It expresses the fidelity of approximate cloning as the normalised Hermitian form, read through the trace, and transcribes the optimal cloner into the tensor-product algebra, verifying the value $5/6$.
 
 **What it does not.**
 
@@ -219,7 +219,7 @@ In the framework's terms, all three are the statement that the normalised plain 
 
 ## Open Questions
 
-**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the normalised plain form. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{Q}_3\tilde{Q}_1\rangle_{\natural} = \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural}$, play the role that the squared inner product plays in the unitary argument?
+**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the normalised Hermitian form. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{Q}_3\tilde{Q}_1\rangle_{\natural} = \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural}$, play the role that the squared inner product plays in the unitary argument?
 
 **2. Cloning and the two sectors.** The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; the obstruction is stated entirely in $\mathbb{M}_+$. Does the material sector constrain the class of admissible cloning machines, or is it inert here?
 
@@ -231,7 +231,7 @@ In the framework's terms, all three are the statement that the normalised plain 
 
 ## Summary
 
-The no-cloning theorem states that no physical process copies an unknown quantum state. In the biquaternion framework the distinguishability of two rays is the normalised plain form of their idempotents, read as the trace pairing,
+The no-cloning theorem states that no physical process copies an unknown quantum state. In the biquaternion framework the distinguishability of two rays is the normalised Hermitian form of their idempotents, read as the trace pairing,
 
 $$
 \bigl|\langle\psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr) \in [0,1],
@@ -247,7 +247,7 @@ $$
 
 Perfect universal cloning is therefore possible exactly for pairwise orthogonal families, where the states are classical alternatives; for any two non-orthogonal rays of the defining module it is impossible. Equivalently, the cloning target $\tilde{Ϛ}\mapsto\tilde{Ϛ}\otimes\tilde{Ϛ}$ is quadratic while every physical evolution is affine on the cone slice of $\mathbb{M}_+$, and the mismatch is the obstruction.
 
-Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised plain form, read as the trace pairing $\mathrm{Tr}(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
+Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}}^{*})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
 
 ## Summary of Notation
 
@@ -257,12 +257,12 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $\mathbb{M}_+$ | Hermitian subspace (states) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
 | $\tilde\Pi(\psi)$ | Rank-one idempotent of a pure state |
-| $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = |\langle\psi|\phi\rangle|^2$ | Trace reading of the plain form (distinguishability) |
+| $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = |\langle\psi|\phi\rangle|^2$ | Trace reading of the Hermitian form (distinguishability) |
 | $\tilde{U}$ | Cloning unitary, $\tilde{U}\tilde{U}^{*} = e_t\otimes e_t$ |
 | $\Phi$ | Cloning channel, completely positive trace preserving |
 | $\Phi(\tilde{Ϛ}\otimes\tilde{Ϛ}_0) = \tilde{Ϛ}\otimes\tilde{Ϛ}$ | Cloning requirement |
-| $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = (\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)))^2$ | Algebraic obstruction |
-| $F = \mathrm{Tr}(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}})$ | Cloning fidelity |
+| $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}) = (\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)^{*}))^2$ | Algebraic obstruction |
+| $F = \mathrm{Tr}(\tilde\Pi(\psi)\tilde{Ϛ}_{\text{out}}^{*})$ | Cloning fidelity |
 | $F = 5/6$ | Bužek–Hillery optimal universal fidelity |
 | $F = 2/3$ | Measurement-and-preparation fidelity |
 | $|\psi(\theta,\varphi)\rangle$ | Test superposition family |
@@ -279,4 +279,4 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 - A. K. Pati and S. L. Braunstein, "Impossibility of deleting an unknown quantum state," *Nature* **404** (2000) 164–165, for no-deleting.
 - H. Barnum, C. M. Caves, C. A. Fuchs, R. Jozsa, and B. Schumacher, "Noncommuting mixed states cannot be broadcast," *Physical Review Letters* **76** (1996) 2818–2821, for no-broadcasting.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the inner-product proof and the operational setting.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule from the Plain Form — Derivation and Comparison*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and *Entangled Subsystems in the Biquaternion Framework*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule from the Hermitian Form — Derivation and Comparison*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and *Entangled Subsystems in the Biquaternion Framework*.

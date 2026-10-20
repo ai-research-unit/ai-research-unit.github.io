@@ -252,7 +252,7 @@ $$
 H_{ab} = (i\vec a_1)\otimes(i\vec b_1),
 $$
 
-and the correlation is the tensor-product plain form, read as the trace pairing $E(\vec a_1,\vec b_1)=\mathrm{Tr}(\tilde\Pi_\epsilon\, H_{ab})$.
+and the correlation is the tensor-product Hermitian form, read as the trace pairing $E(\vec a_1,\vec b_1)=\mathrm{Tr}(\tilde\Pi_\epsilon\, H_{ab}^{*})$.
 
 Assembling the four settings, the **CHSH element** is
 
@@ -402,7 +402,7 @@ so that $S=1-(-1)+1+1=4$; its single-party outcomes are unbiased, so it cannot t
 
 **3. The four Bell states are a single local-unitary orbit, and they all saturate the bound.** The orbit statement is a result of the Bell-basis parent article; the invariance of the CHSH maximum under local unitaries transfers the singlet's value $2\sqrt{2}$ to its three companions. The explicit non-singlet configurations of Step 4 use the measurement plane spanned by the two equal-sign entries of $\epsilon$.
 
-**4. The Born rule applied twice gives the joint statistics.** The joint probabilities $p(\pm,\pm\mid\vec a_1,\vec b_1)$ are readings of the plain form, with products of two idempotents, and the correlator is their signed sum. This is the pattern the companion article on the quantum–classical divide cites.
+**4. The Born rule applied twice gives the joint statistics.** The joint probabilities $p(\pm,\pm\mid\vec a_1,\vec b_1)$ are readings of the Hermitian form, with products of two idempotents, and the correlator is their signed sum. This is the pattern the companion article on the quantum–classical divide cites.
 
 **5. The framework reproduces, and does not explain, the bound.** The derivation is the standard operator-norm argument in a different notation. The framework supplies a clean home for the statement — the square of one element of $\mathbb{M}_+\otimes\mathbb{M}_+$ — but not a new reason for the value. Where the framework's own norm is used, it yields only the trivial bound $4$; the sharp value comes from the spectral norm of the matrix representation.
 

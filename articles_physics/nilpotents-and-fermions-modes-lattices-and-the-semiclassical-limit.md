@@ -118,7 +118,7 @@ The algebraic content is therefore one sentence: nilpotency is a one-site fact, 
 A fermionic coherent state is written with a Grassmann label $\theta$,
 
 $$
-|\theta\rangle=|0\rangle+\theta|1\rangle,
+|\theta\rangle_{*}=|0\rangle+\theta|1\rangle,
 \qquad
 \theta^2=0 .
 $$

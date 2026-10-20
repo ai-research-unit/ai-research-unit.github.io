@@ -219,7 +219,7 @@ an antilinear involution with $\epsilon=+1$, whereas four-dimensional Euclidean 
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, the candidate $\mathcal{A}$ |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | Spinor module, the candidate $\mathcal{H}$ |
 | $\mathcal{D}=\tilde\nabla+m$ | Biquaternion Dirac operator, the candidate $D$ |
-| $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ | Inner product induced by the trace reading of the plain form |
+| $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ | Inner product induced by the trace reading of the Hermitian form |
 | $J$ | Real structure of a spectral triple; antilinear |
 | $\epsilon,\epsilon_2,\epsilon_3$ | Signs $J^2=\epsilon$, $JD=\epsilon_2DJ$, $J\chi=\epsilon_3\chi J$ |
 | $\chi$ | Chirality operator of the triple |

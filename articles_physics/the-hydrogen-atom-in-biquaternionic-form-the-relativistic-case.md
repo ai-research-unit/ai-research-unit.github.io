@@ -381,7 +381,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $E_{nj}$, $\delta_j$ | Exact Sommerfeld–Dirac energy and its $j$-dependent shift |
 | $\Delta E_{\text{fs}} = -\frac{mc^2(\mathfrak{Z}\alpha)^4}{2n^3}\bigl(\frac{1}{j+1/2}-\frac{3}{4n}\bigr)$ | Fine-structure shift |
 | $\mathbb{B}\tilde\Pi(\vec e_z) \cong \mathbb{C}^2$ | Spinor module carrying the field $\psi$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2) = 2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula (expectation values) |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2) = 2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading at normalisation (expectation values) |
 | $D = \tilde\nabla+\frac{iϙ}{\hbar}\tilde A$ | Covariant derivative (minimal-coupling article) |
 | $\psi_{\mathrm{large}}$, $\psi_{\mathrm{small}}$ | Large (upper) and small (lower) components of the four-component spinor $\psi$ (companion Pauli exercise; not the chiral pair) |
 | $\{f_\mu\}$ | Large-component functions of the finite basis; the small-component functions are their image under the balancing operator |

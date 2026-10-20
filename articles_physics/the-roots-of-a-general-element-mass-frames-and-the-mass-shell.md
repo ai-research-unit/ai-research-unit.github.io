@@ -151,7 +151,7 @@ and the vanishing norm forces a zero eigenvalue. The example $\tilde E=\vec e_x+
 The massless biquaternion equation carries the axial symmetry $\tilde\Psi\mapsto\exp(i\alpha\gamma_5)\tilde\Psi$. A mass term breaks it: the vector phase passes through the mass, the axial phase does not, and the axial current obeys a divergence proportional to the mass, which vanishes at $m=0$; the axial anomaly is a separate quantum effect. A nonzero vacuum expectation of the fermion bilinear,
 
 $$
-\langle\bar\Psi\Psi\rangle\neq0,
+\langle\bar\Psi\Psi\rangle_{*}\neq0,
 $$
 
 is the order parameter of the breaking. The mass term and the condensate multiply the same bilinear, so the dynamically generated coefficient is

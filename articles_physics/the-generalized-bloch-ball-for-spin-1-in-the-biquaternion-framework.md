@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive elements of the Hermitian subspace $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), and that set is the intersection of the hyperplane $\{\mathrm{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* establishes this as an exact statement: with
+For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive elements of the Hermitian subspace $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and that set is the intersection of the hyperplane $\{\mathrm{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* establishes this as an exact statement: with
 
 $$
 \tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
@@ -150,7 +150,7 @@ F_2=\tfrac{1}{\sqrt2}\left(\lambda_2+\lambda_7\right),\qquad
 F_3=\tfrac{1}{2}\lambda_3+\tfrac{\sqrt3}{2}\lambda_8 ,
 $$
 
-so that the spin vector $\vec s=\langle\vec F\rangle$ involves the Bloch components
+so that the spin vector $\vec s=\langle\vec F\rangle_{*}$ involves the Bloch components
 
 $$
 s_1=\sqrt{\tfrac{2}{3}}\left(b_1+b_6\right),\qquad

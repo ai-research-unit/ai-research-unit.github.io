@@ -11,7 +11,7 @@ The article establishes:
 1. **The collective spin.** The operators $\tilde{J}_\alpha = \sum_{i=1}^N\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{M}_+$ on the $N$-spin space; the symmetric states are the Dicke states, and the collective coherent state is the highest-weight state of a rotor.
 2. **The Tavis–Cummings Hamiltonian and its collective coupling.** In the rotating-wave approximation the interaction is $g(a^\dagger \tilde{J}_- + a\tilde{J}_+)$, and in the single-excitation sector the collective coupling is $\hbar g\sqrt{N}$, giving the collective Rabi splitting $2\hbar g\sqrt{N}$. Both statements are verified below.
 3. **Spin squeezing.** The Wineland parameter $\xi_R^2 = N(\Delta J_\perp)^2/|\langle\vec J\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde{J}_3^2$ drives $\xi_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\xi^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
-4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are readings of the plain form, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
+4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are readings of the Hermitian form, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
 
 The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
@@ -197,10 +197,12 @@ The **two-axis countertwisting** Hamiltonian $\frac{\chi}{\hbar}(\tilde{J}_+^2 +
 
 ### Collective Observables in $\mathbb{M}_+$
 
-Each $\tilde{J}_\alpha$ is a sum of the Hermitian elements $\tilde{S}_\alpha^{(i)}=\tfrac{\hbar}{2}i\vec e_\alpha^{(i)}$ and is Hermitian; the mean spin is the normalised plain form, read as the trace pairing
+Each $\tilde{J}_\alpha$ is a sum of the Hermitian elements $\tilde{S}_\alpha^{(i)}=\tfrac{\hbar}{2}i\vec e_\alpha^{(i)}$ and is Hermitian; the mean spin is the normalised Hermitian form, whose trace reading at normalisation is
 
 $$
-\langle \tilde{J}_\alpha\rangle = \mathrm{Tr}\!\left(\tilde{Ϛ}\,\tilde{J}_\alpha\right),
+\langle \tilde{J}_\alpha\rangle = \frac{\langle\tilde{Ϛ},\tilde J_\alpha\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+= \frac{\mathrm{Sc}(\tilde{Ϛ}\,\tilde{J}_\alpha^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
+= \frac{\operatorname{Tr}(\tilde{Ϛ}\,\tilde{J}_\alpha)}{\operatorname{Tr}(\tilde{Ϛ})},
 \qquad
 \tilde{Ϛ} = \text{the collective state},
 $$
@@ -266,7 +268,7 @@ $$
 
 equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{H}_{OAT} = \frac{\chi}{\hbar}\tilde{J}_3^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\xi_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\xi_R^2 = 1$ at $\chi t' = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\xi^2\propto N^{-1}$.
 
-In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(\tilde{Ϛ}\tilde{J}_\alpha)$ and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{H}_{\mathbb{B}}$, while the twisting generator $\tilde{J}_3^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde{J}_- + a\tilde{J}_+)$ is an $\mathbb{M}_+$ coupling whose single-excitation gap is the collective Rabi splitting.
+In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(\tilde{Ϛ}\tilde{J}_\alpha^{*})=\mathrm{Tr}(\tilde{Ϛ}\tilde{J}_\alpha)$, the star being inert and the unstarred trace real, and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{H}_{\mathbb{B}}$, while the twisting generator $\tilde{J}_3^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde{J}_- + a\tilde{J}_+)$ is an $\mathbb{M}_+$ coupling whose single-excitation gap is the collective Rabi splitting.
 
 ## Summary of Notation
 

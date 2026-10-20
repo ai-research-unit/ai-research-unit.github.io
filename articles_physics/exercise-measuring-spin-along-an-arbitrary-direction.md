@@ -104,10 +104,10 @@ $$
 
 ### Step 4: The probability
 
-The probability of finding the particle spin-up along $\vec u_x$, given that it was prepared spin-up along $z$, is given by the **trace formula**:
+The probability of finding the particle spin-up along $\vec u_x$, given that it was prepared spin-up along $z$, is given by the **normalised Hermitian form**, with the trace as its final reading at normalisation:
 
 $$
-p_+ = \mathrm{Tr}\!\left(\tilde\Pi_n \circ \tilde\Pi_z\right) = 2\,\mathrm{Sc}\!\left(\tilde\Pi_n \circ \tilde\Pi_z\right),
+p_+ = \frac{\langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z^{*})}{\mathrm{Sc}(\tilde\Pi_z)} = \frac{\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z)}{\mathrm{Sc}(\tilde\Pi_z)} = \frac{\operatorname{Tr}(\tilde\Pi_n\circ\tilde\Pi_z)}{\operatorname{Tr}(\tilde\Pi_z)} = 2\,\mathrm{Sc}\!\left(\tilde\Pi_n \circ \tilde\Pi_z\right),
 $$
 
 where $\circ$ is the biquaternion product.
@@ -132,7 +132,7 @@ $$
 
 The scalar part (coefficient of $e_t$) is $\tfrac{1}{4}\left(1 + \cos\theta\right)$; the other terms $i \vec e_z$, $i\vec u_x$, and $\sin\theta\, \vec e_y$ are vector terms with vanishing coefficient of $e_t$.
 
-Applying the trace formula:
+Applying the trace reading at normalisation:
 
 $$
 p_+ = 2 \cdot \tfrac{1}{4}\left(1 + \cos\theta\right) = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}.
@@ -152,11 +152,11 @@ These agree with the physical expectation.
 
 **1. States and observables are elements of the same subspace.** The state $\tilde\Pi_z$ and the outcome idempotent $\tilde\Pi_n$ are both idempotents of $\mathbb{M}_+$. The entire calculation involves only the algebra of the biquaternion units and the extraction of the scalar part.
 
-**2. The Born rule is the normalised plain form, computed as the trace formula.** The probability is $p_+ = \mathrm{Tr}(\tilde\Pi_n \circ \tilde\Pi_z) = 2\,\mathrm{Sc}(\tilde\Pi_n \circ \tilde\Pi_z)$. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the plain form. It is the same formula as $p_+ = \mathrm{Tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.
+**2. The Born rule is the normalised Hermitian form.** The probability is $p_+ = \langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*} = \mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z^{*})/\mathrm{Sc}(\tilde\Pi_z)$; on $\mathbb{M}_+$ the star is inert, so this is $\mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z)/\mathrm{Sc}(\tilde\Pi_z)$, and in the $2\times2$ image, with $\operatorname{Tr}(\tilde\Pi_z)=1$, it reads $p_+ = \operatorname{Tr}(\tilde\Pi_n\tilde\Pi_z^{*})=\operatorname{Tr}(\tilde\Pi_n\tilde\Pi_z) = 2\,\mathrm{Sc}(\tilde\Pi_n\tilde\Pi_z^{*})$, the star being inert and the unstarred trace real and non-negative. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the Hermitian form. It is the same formula as $p_+ = \mathrm{Tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.
 
-**3. No complex vectors are needed.** In the standard solution, the calculation involves complex column vectors and their inner product. In the biquaternion solution, it involves only the algebra of $\mathbb{B}$: products of quaternion units, extraction of the scalar part, application of the trace formula. The complex structure is absorbed into the scalar imaginary $i$ of the algebra.
+**3. No complex vectors are needed.** In the standard solution, the calculation involves complex column vectors and their inner product. In the biquaternion solution, it involves only the algebra of $\mathbb{B}$: products of quaternion units, extraction of the scalar part, and the trace reading at normalisation. The complex structure is absorbed into the scalar imaginary $i$ of the algebra.
 
-**4. The geometry enters through the algebra.** The angle $\theta$ enters through the unit vector $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ that parametrizes the measurement direction. The result depends on $\theta$ only through the scalar product $\vec u_x\cdot \vec e_z = \cos\theta$, which appears in the trace formula through the product $\vec u_x\,\vec e_z$. The geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.
+**4. The geometry enters through the algebra.** The angle $\theta$ enters through the unit vector $\vec u_x = \sin\theta\, \vec e_x + \cos\theta\, \vec e_z$ that parametrizes the measurement direction. The result depends on $\theta$ only through the scalar product $\vec u_x\cdot \vec e_z = \cos\theta$, which appears in the Hermitian form through the product $\vec u_x\,\vec e_z$. The geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.
 
 **5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the idempotent $\tilde\Pi(\vec u_x) = \tfrac{1}{2}(e_t + i\vec u_x)$ corresponds exactly to the rank-one projector $\tfrac{1}{2}(I + \vec u_x\cdot\boldsymbol{\sigma})$. But seeing the same result emerge from the algebra is a useful sanity check on the biquaternion framework.
 
@@ -172,11 +172,13 @@ $$
 
 ### Biquaternion formulation
 
-The observable is $\tilde{H} = \tfrac{\hbar}{2} i\vec u_x$ and the state is $\tilde\Pi_z = \tfrac{1}{2}(e_t + i \vec e_z)$. The expectation value is given by the trace formula:
+The observable is $\tilde{H} = \tfrac{\hbar}{2} i\vec u_x$ and the state is $\tilde\Pi_z = \tfrac{1}{2}(e_t + i \vec e_z)$. The expectation value is given by the normalised Hermitian form, with the trace reading last:
 
 $$
-\langle \tilde{H}\rangle_{\tilde\Pi_z} = \mathrm{Tr}(\tilde\Pi_z \circ \tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_z \circ \tilde{H}).
+\langle \tilde{H}\rangle_{\tilde\Pi_z} = \frac{\langle\tilde\Pi_z,\tilde H\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi_z \circ \tilde{H}).
 $$
+
+whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_z\circ\tilde{H}^{*})=\operatorname{Tr}(\tilde\Pi_z\circ\tilde{H})=2\,\mathrm{Sc}(\tilde\Pi_z\circ\tilde{H})$, the star being inert and the unstarred trace real.
 
 Computing the product:
 
@@ -208,9 +210,9 @@ Both formulations give the same result.
 
 We have solved a simple exercise in quantum physics — the probability of measuring spin-up along an arbitrary direction, given a spin-up state along $z$ — in two parallel presentations.
 
-In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, and the Born rule in the form $p_+ = |\langle +n | +z\rangle|^2$, giving $p_+ = \cos^2(\theta/2) = (1 + \cos\theta)/2$.
+In the **standard formulation**, the solution proceeds through ket vectors, Pauli matrices, and the Born rule in the form $p_+ = |\langle +n | +z\rangle_{*}|^2$, giving $p_+ = \cos^2(\theta/2) = (1 + \cos\theta)/2$.
 
-In the **biquaternion formulation**, the solution proceeds through the idempotents of $\mathbb{M}_+$ and the trace formula $p_+ = \mathrm{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the idempotents of $\mathbb{M}_+$ and the normalised Hermitian form $p_+=\langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_n\circ\tilde\Pi_z^{*})/\mathrm{Sc}(\tilde\Pi_z)$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the qubit: states and observables are elements of the same subspace, the Born rule is the natural pairing given by the trace, and the geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.
 
@@ -227,7 +229,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\tilde\Pi(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Pure-state idempotent |
 | $\tilde{H} = h_t e_t + i\vec h$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace of an element of $\mathbb{M}_+$ |
-| $p_+ = \mathrm{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$ | Born rule in biquaternion form |
+| $p_+ = \langle\tilde\Pi_n,\tilde\Pi_z\rangle_{*}/\langle\tilde\Pi_z,e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z^{*})=\operatorname{Tr}(\tilde\Pi_n \circ \tilde\Pi_z)$ | Born rule in biquaternion form (trace at normalisation) |
 
 ## Further Reading
 

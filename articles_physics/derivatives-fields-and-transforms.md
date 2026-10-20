@@ -44,26 +44,26 @@ $$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$. The coefficients are real derivatives, so the coefficientwise conjugation leaves the gradient unchanged, and the Hermitian conjugation acts as the quaternion conjugation: $\tilde\nabla^{*}=\tilde\nabla^{\natural}$. The spatial part is written $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$, with divergence, gradient and curl.
+with $\varepsilon=(1,-1,-1,-1)$. The coefficients are invariant under the conjugations — the marks act on the units at fixed coordinate, not on the derivative symbol — so the coefficientwise conjugation leaves the gradient unchanged, and the Hermitian conjugation acts as the quaternion conjugation: $\tilde\nabla^{*}=\tilde\nabla^{\natural}$. The spatial part is written $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$, with divergence, gradient and curl.
 
 ### The Four Products
 
-The four general products are the four settings of one rule: the plain product, the quaternionic bilinear product, the plain sesquilinear product and the quaternionic sesquilinear product. In the category they carry the names composition, causality, probability and gauge; on the gradient they are four ways of differentiating a field. With $\tilde Q=Q_te_t+\vec Q$,
+The four general products are the four settings of one rule: the plain product, the quaternionic bilinear product, the plain sesquilinear product and the quaternionic sesquilinear product. In the category they carry the names composition, causality, probability and gauge; on the gradient they are four ways of differentiating the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$.
 
 $$
-\tilde\nabla\tilde Q=\left(\frac{\partial}{\partial Q_t}Q_t-\nabla\cdot\vec Q\right)e_t+\frac{\partial}{\partial Q_t}\vec Q+\nabla Q_t+\nabla\times\vec Q,
-$$
-
-$$
-\tilde\nabla^{\natural}\tilde Q=\left(\frac{\partial}{\partial Q_t}Q_t+\nabla\cdot\vec Q\right)e_t+\frac{\partial}{\partial Q_t}\vec Q-\nabla Q_t-\nabla\times\vec Q,
+\tilde\nabla\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}+\nabla Q_{\mathrm{f}t}+\nabla\times\vec Q_{\mathrm f},
 $$
 
 $$
-\tilde\nabla\tilde Q^{*}=\left(\frac{\partial}{\partial Q_t}\bar Q_t+\nabla\cdot\overline{\vec Q}\right)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q}+\nabla\bar Q_t-\nabla\times\overline{\vec Q},
+\tilde\nabla^{\natural}\tilde Q_{\mathrm f}=\Bigl(\frac{\partial}{\partial Q_t}Q_{\mathrm{f}t}+\nabla\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_{\mathrm f}-\nabla Q_{\mathrm{f}t}-\nabla\times\vec Q_{\mathrm f},
 $$
 
 $$
-\tilde\nabla^{\natural}\tilde Q^{*}=\left(\frac{\partial}{\partial Q_t}\bar Q_t-\nabla\cdot\overline{\vec Q}\right)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q}-\nabla\bar Q_t+\nabla\times\overline{\vec Q}.
+\tilde\nabla\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_{\mathrm f}}+\nabla\bar Q_{\mathrm{f}t}-\nabla\times\overline{\vec Q_{\mathrm f}},
+$$
+
+$$
+\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec Q_{\mathrm f}}-\nabla\bar Q_{\mathrm{f}t}+\nabla\times\overline{\vec Q_{\mathrm f}}.
 $$
 
 The plain product holds the divergence, the gradient and the curl in one element. The quaternionic product flips the signs of the spatial terms of the plain product. The two sesquilinear products apply the same two products to the conjugated field.
@@ -74,10 +74,10 @@ The scalar part of each product read in two arguments is a form:
 
 | Form | Scalar part |
 | --- | --- |
-| plain bilinear | $\langle\tilde\nabla,\tilde Q\rangle=\dfrac{\partial}{\partial Q_t}Q_t-\nabla\cdot\vec Q$ |
-| quaternionic bilinear | $\langle\tilde\nabla,\tilde Q\rangle_{\natural}=\dfrac{\partial}{\partial Q_t}Q_t+\nabla\cdot\vec Q$ |
-| plain sesquilinear (Hermitian) | $\langle\tilde\nabla,\tilde Q\rangle_{*}=\dfrac{\partial}{\partial Q_t}\bar Q_t+\nabla\cdot\overline{\vec Q}$ |
-| quaternionic sesquilinear (Krein) | $\langle\tilde\nabla,\tilde Q\rangle_{\natural*}=\dfrac{\partial}{\partial Q_t}\bar Q_t-\nabla\cdot\overline{\vec Q}$ |
+| plain bilinear | $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle=\dfrac{\partial}{\partial Q_t}Q_{\mathrm{f}t}-\nabla\cdot\vec Q_{\mathrm f}$ |
+| quaternionic bilinear | $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}=\dfrac{\partial}{\partial Q_t}Q_{\mathrm{f}t}+\nabla\cdot\vec Q_{\mathrm f}$ |
+| plain sesquilinear (Hermitian) | $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{*}=\dfrac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}+\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
+| quaternionic sesquilinear (Krein) | $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural*}=\dfrac{\partial}{\partial Q_t}\bar Q_{\mathrm{f}t}-\nabla\cdot\overline{\vec Q_{\mathrm f}}$ |
 
 At the two equal arguments the four forms give two operators:
 

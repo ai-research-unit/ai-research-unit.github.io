@@ -329,7 +329,7 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $\tilde{Q}_{3,\mu\nu} = \tfrac12\sum_{\rho\sigma}R_{\mu\nu\rho\sigma}\bar{\varepsilon}^\rho\varepsilon^\sigma$ | Curvature as a bivector-valued two-form |
 | $\Theta_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3x$ | Traceless (reduced) quadrupole moment |
 | $h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}d^2\Theta_{ij}^{\mathrm{TT}}/d{t'}^2$, $P = \tfrac{G}{5c^5}\langle\,d^3\Theta_{ij}/d{t'}^3 d^3\Theta_{ij}/d{t'}^3\rangle$ | Quadrupole amplitude and power |
-| $\mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2)$ | Trace reading of the plain form on the informational sector |
+| $\mathrm{Tr}(\tilde H_1\tilde H_2^{*})=2\,\mathrm{Sc}(\tilde H_1\tilde H_2^{*})$ | Trace reading of the Hermitian form on the informational sector |
 
 ## Further Reading
 

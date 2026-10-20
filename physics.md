@@ -160,7 +160,7 @@
 <a href="articles_physics/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a>
 <!-- the state as an element of $\mathbb{M}_+$; state and observable in one space; convexity, extremality and superposition; the pure state as an idempotent and a zero divisor; what the element does not carry; ontological readings and what the algebra decides. -->
 
-<a href="articles_physics/the-born-rule-as-a-trace-formula-derivation-and-comparison.html">The Born Rule from the Plain Form — Derivation and Comparison</a>
+<a href="articles_physics/the-born-rule-as-a-trace-formula-derivation-and-comparison.html">The Born Rule from the Hermitian Form — Derivation and Comparison</a>
 <!-- the trace pairing on $\mathbb{M}_+$; idempotents as projectors; the derivation of the Born probability; general measurements, effects and POVMs; comparison with the Hilbert-space statement; the non-uniqueness of the trace; what is derivation and what is restatement. -->
 
 <a href="articles_physics/unitarity-from-centrality-the-biquaternion-norm-preservation-theorem.html">Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem</a>

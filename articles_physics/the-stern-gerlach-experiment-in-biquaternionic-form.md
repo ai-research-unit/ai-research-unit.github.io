@@ -10,11 +10,11 @@ The findings are stated here in advance, so that the reader can hold them agains
 
 1. **The field coupling is a Hermitian element of $\mathbb{M}_+$.** The magnetic Hamiltonian $\tilde{H} = -\gamma B_z\,\tilde{S}_3$ is an element of the Hermitian subspace, as are the force operator and the observable whose measurement the apparatus performs. The field does not couple to the material sector directly; it couples to the informational sector, and the material sector carries only the resulting centre-of-mass motion.
 2. **The two beams are the two idempotents of $\tilde{S}_3$.** The spin part of the apparatus performs the spectral decomposition $\tilde{S}_3 = \tfrac{\hbar}{2}\tilde\Pi_1(\vec u_z) - \tfrac{\hbar}{2}\tilde\Pi_2(\vec u_z)$, and the two outgoing beams are the two idempotents, correlated with the two spatial directions of deflection. The force eigenvalues are the eigenvalues of $\tilde{S}_3$, which is the algebraic content of space quantisation.
-3. **The beam intensities are the Born pair.** For an incident state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, the two intensities are $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}) = \tfrac12(1\pm r_3)$; the trace is the $2\times2$ reading of the normalised plain form.
+3. **The beam intensities are the Born pair.** For an incident state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, the two intensities are $\langle\tilde\Pi_{1,2},\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})=\tfrac12(1\pm r_3)$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}^{*})/\operatorname{Tr}(\tilde{Ϛ})=\operatorname{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ})/\operatorname{Tr}(\tilde{Ϛ})$, the star being inert on $\mathbb{M}_+$ and the unstarred trace real and non-negative.
 4. **The measurement destroys the transverse coherence.** The Stern–Gerlach apparatus entangles the spin with the centre-of-mass coordinate; tracing the position out leaves the spin state with its off-diagonal (transverse) Bloch components erased, $\vec r = (0,0,r_3)$. The coherence that survives is exactly the component along the field, and the lost components are the ones the apparatus cannot read.
 5. **A rotated apparatus gives the $\cos^2(\theta/2)$ law**, and the rotation that carries one analyser direction into another is a rotor in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ acting by conjugation.
 
-The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$, the observables are $\tilde{H} = h_t e_t + i\vec h \in \mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for a unit pure real quaternion $\vec u$, and the trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$ with $\mathrm{Tr}(e_t) = 2$.
+The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{M}_+$ and $\mathbb{M}_-$, the observables are $\tilde{H} = h_t e_t + i\vec h \in \mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for a unit pure real quaternion $\vec u$, and the trace formula is $\mathrm{Tr}(\tilde\Pi\tilde H^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde H\rangle_{*}$ with $\mathrm{Tr}(e_t) = 2$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators, the idempotents and the Born rule.
@@ -126,16 +126,19 @@ and the same computation with $\vec e_z \to -\vec e_z$ gives $\tilde{S}_3\tilde\
 
 ### The General State and Its Resolution
 
-An incident beam is in general not in an eigenstate of $\tilde{S}_3$. Its spin state is a Hermitian, positive element of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image),
+An incident beam is in general not in an eigenstate of $\tilde{S}_3$. Its spin state is a Hermitian, positive element of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image),
 
 $$
 \tilde{Ϛ} = \tfrac12\left(e_t + i\vec r\right), \qquad \vec r\in\mathbb{R}^3, \quad |\vec r|\leq 1,
 $$
 
-with $\vec r$ the Bloch vector. The probabilities of the two outcomes are the normalised plain form, read as the trace pairing,
+with $\vec r$ the Bloch vector. The probabilities of the two outcomes are the normalised Hermitian form, whose trace reading at normalisation is,
 
 $$
-p_\pm = \mathrm{Tr}\!\left(\tilde\Pi_{1,2}(\vec u_z)\,\tilde{Ϛ}\right)
+p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_z),\tilde{Ϛ}\rangle_{*}}{\langle\tilde{Ϛ},e_t\rangle_{*}}
+= \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ}^{*})}{\mathrm{Sc}(\tilde{Ϛ})}
+= \frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ})}{\mathrm{Sc}(\tilde{Ϛ})}
+= \frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ})}{\operatorname{Tr}(\tilde{Ϛ})}
 = \tfrac12\left(1 \pm r_3\right),
 $$
 
@@ -192,7 +195,7 @@ $$
 \tilde{Ϛ}_2 = \frac{\tilde\Pi_1(\vec u_z)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u_z)}{\mathrm{Tr}\!\left(\tilde\Pi_1(\vec u_z)\tilde{Ϛ}\right)} = \tilde\Pi_1(\vec u_z),
 $$
 
-where the last equality uses $\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 = p_+\tilde\Pi_1$ for a rank-one idempotent, with $p_+ = \mathrm{Tr}(\tilde\Pi_1\tilde{Ϛ})$. The post-measurement state is the idempotent itself. The Stern–Gerlach apparatus is therefore a physical realisation of the projective measurement rule of the informational sector: a Hermitian observable is resolved into its idempotents, and each outcome prepares the corresponding idempotent.
+where the last equality uses $\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 = p_+\tilde\Pi_1$ for a rank-one idempotent, with $p_+ = \langle\tilde\Pi_1,\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}^{*})/\mathrm{Sc}(\tilde{Ϛ})$, read through the trace only at normalisation. The post-measurement state is the idempotent itself. The Stern–Gerlach apparatus is therefore a physical realisation of the projective measurement rule of the informational sector: a Hermitian observable is resolved into its idempotents, and each outcome prepares the corresponding idempotent.
 
 ## Sequential Stern–Gerlach and the Rotation of the Analyser
 
@@ -231,7 +234,9 @@ and correspondingly $\tilde u\tilde\Pi_1(\vec u_z)\tilde u^{*} = \tilde\Pi_1(\ve
 An atom prepared spin-up along $z$ and passed through an analyser at angle $\theta$ is found spin-up along $\vec u$ with probability
 
 $$
-p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u)\,\tilde\Pi_1(\vec u_z)\right)
+p_+ = \frac{\langle\tilde\Pi_1(\vec u),\tilde\Pi_1(\vec u_z)\rangle_{*}}{\langle\tilde\Pi_1(\vec u_z),e_t\rangle_{*}}
+= \frac{\mathrm{Sc}(\tilde\Pi_1(\vec u)\tilde\Pi_1(\vec u_z))}{\mathrm{Sc}(\tilde\Pi_1(\vec u_z))}
+= \frac{\operatorname{Tr}(\tilde\Pi_1(\vec u)\tilde\Pi_1(\vec u_z))}{\operatorname{Tr}(\tilde\Pi_1(\vec u_z))}
 = 2\,\mathrm{Sc}\!\left(\tilde\Pi_1(\vec u)\,\tilde\Pi_1(\vec u_z)\right).
 $$
 
@@ -269,7 +274,7 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 **What the biquaternion notation provides.**
 
-- **A single home for the field coupling and the measurement.** The Hamiltonian, the force operator, and the observable that the apparatus reads are all elements of the same subspace $\mathbb{M}_+$; the states are the idempotents of that subspace; and the outcome probabilities are the normalised plain form, read as the trace pairing. The experiment does not require an object outside the algebra, except for the centre-of-mass coordinate that carries the deflection and the mass $m$ that enters the deflection formula.
+- **A single home for the field coupling and the measurement.** The Hamiltonian, the force operator, and the observable that the apparatus reads are all elements of the same subspace $\mathbb{M}_+$; the states are the idempotents of that subspace; and the outcome probabilities are the normalised Hermitian form, read through the trace. The experiment does not require an object outside the algebra, except for the centre-of-mass coordinate that carries the deflection and the mass $m$ that enters the deflection formula.
 - **Space quantisation as a spectral decomposition.** The finite number of beams is the finite number of terms in the spectral decomposition of the observable, and the deflection of each beam is the corresponding eigenvalue. In the algebra this is a statement about the rank-one idempotents of $\mathbb{M}_+$, which are automatically complete and orthogonal.
 - **Decoherence as a partial trace with orthogonal labels.** The loss of the transverse Bloch components is the vanishing of the cross terms between two orthogonal spatial wavepackets. The algebra makes it visible that what is destroyed is exactly the coherence term $\tfrac12 i(r_1\vec e_x+r_2\vec e_y)$, and that the surviving component is the one along the field.
 - **The rotation of the apparatus is a rotor.** The analyser direction is the axis $\vec u$ of the idempotent, and the passage from one axis to another is conjugation by a unit real quaternion. The analyser's parameter space is the Bloch sphere, the same sphere on which the states live.
@@ -319,8 +324,8 @@ A rotated analyser measures $\tilde{S}(\vec u) = \tfrac{\hbar}{2}i\vec u$ for $\
 | $\tilde{F}_3 = \gamma (dB/dz)\tilde{S}_3$ | Stern–Gerlach force operator |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure-state idempotent |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | General (mixed) spin state; $\vec r$ the Bloch vector |
-| $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ}) = \tfrac12(1\pm r_3)$ | Beam intensities (Born rule) |
-| $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$ | Trace formula |
+| $p_\pm = \langle\tilde\Pi_{1,2}(\vec u_z),\tilde{Ϛ}\rangle_{*}/\langle\tilde{Ϛ},e_t\rangle_{*} = \operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ}^{*})=\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ}) = \tfrac12(1\pm r_3)$ | Beam intensities (Born rule, trace at normalisation) |
+| $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde H\rangle_{*}$ | Trace formula |
 | $\vec u = \sin\theta\,\vec e_x + \cos\theta\,\vec e_z$ | Rotated analyser direction |
 | $\tilde u(\theta) = \exp(\tfrac{\theta}{2}\vec e_y)$ | Rotor carrying $\vec u_z$ to $\vec u$ |
 | $\Delta z_\pm = \pm\hbar\gamma (dB/dz)L^2/(4mv^2)$ | Deflections of the two beams |

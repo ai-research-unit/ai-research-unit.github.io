@@ -72,7 +72,7 @@ $$
 \qquad
 \bar\psi\psi = \mathrm{Sc}\big(\tilde\Psi^{\natural}\tilde\Psi\big),
 $$
-where the plain form, read as the trace pairing, extracts the central scalar. The correspondence is therefore a map
+where the Hermitian form, read through the trace, extracts the central scalar. The correspondence is therefore a map
 $$
 \text{module bilinear}\;\longrightarrow\;\text{central field} ,
 $$

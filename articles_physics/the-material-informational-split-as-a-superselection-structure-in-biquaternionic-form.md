@@ -18,7 +18,7 @@ The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otim
 
 The companion articles supply the pieces:
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vector content, the interval, and the anti-Hermitian sector.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the normalised plain form, the Hermitian sector, and the Born rule.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the normalised Hermitian form, the Hermitian sector, and the Born rule.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the state space, the idempotents, and the conjugation action.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module and its irreducibility.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Lie algebra, the Cartan decomposition, and the Wigner rotation.
@@ -201,13 +201,13 @@ It therefore fixes every ray of the state space. No state, and no expectation va
 $$
 \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_+\bigr) + \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_-\bigr),
 $$
-and the two terms have definite reality types. Because $\tilde{Ϛ}$ and $\tilde{Q}_+$ are Hermitian, $\tilde{Ϛ}\tilde{Q}_+$ has a real scalar part, so $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_+)\in\mathbb{R}$. Because $\tilde{Ϛ}$ is Hermitian and $\tilde{Q}_-$ is anti-Hermitian, $\tilde{Ϛ}\tilde{Q}_-$ is anti-Hermitian, so its scalar part is purely imaginary and $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_-)\in i\mathbb{R}$. The observable real part of the pairing therefore involves the informational component alone:
+and the two terms have definite reality types. Because $\tilde{Ϛ}$ and $\tilde{Q}_+$ are Hermitian, $\tilde{Ϛ}\tilde{Q}_+$ has a real scalar part, so $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_+^{*})\in\mathbb{R}$. Because $\tilde{Ϛ}$ is Hermitian and $\tilde{Q}_-$ is anti-Hermitian, $\tilde{Ϛ}\tilde{Q}_-$ is anti-Hermitian, so its scalar part is purely imaginary and $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_-^{*})\in i\mathbb{R}$. The observable real part of the pairing therefore involves the informational component alone:
 $$
 \mathrm{Re}\,\mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\,\mathrm{Re}_{\mathbb{B}}\,\tilde{Q}\bigr) = \mathrm{Tr}\bigl(\tilde{Ϛ}\tilde{Q}_+\bigr).
 $$
 The material component contributes only to the imaginary part, which no Hermitian observable reads out. The material component is invisible to every expectation value, exactly as a superselection charge is invisible to every observable that commutes with it. This is a statement about the pairing and not about the physical importance of the material sector: the material sector enters the theory through invariants — the interval $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the four-velocity norm, the mass shell — and not through expectation values.
 
-The material element is read through the factor $i$, not through the untwisted pairing: $\mathrm{Tr}(\tilde{Ϛ}\,iA)=i\,\mathrm{Tr}(\tilde{Ϛ} A)$ is real. The material component is therefore invisible to the untwisted pairing $\mathrm{Tr}(\tilde{Ϛ}\,\cdot\,)$ and visible through $i$; the superselection statement is about the untwisted pairing and is unchanged.
+The material element is read through the factor $i$, not through the untwisted pairing: $\mathrm{Tr}(\tilde{Ϛ}\,(iA)^{*})=i\,\mathrm{Tr}(\tilde{Ϛ} A^{*})$ is real. The material component is therefore invisible to the untwisted pairing $\mathrm{Tr}(\tilde{Ϛ}\,\cdot\,)$ and visible through $i$; the superselection statement is about the untwisted pairing and is unchanged.
 
 **Summary of the test.** Against the two conditions of a superselection structure: the operations preserve the sectors (verified by the conjugation identity), and the relative phase is unobservable (verified by the centre acting as a scalar on rays and by the reality type of the pairing). Against the standard algebraic realisation: there is no central projection, and the module is irreducible, so the sectors are not the summands of a central decomposition. The split therefore satisfies the operational conditions of a superselection structure while violating its standard realisation, and the charge that carries it is the antilinear real structure $\flat$.
 
@@ -254,7 +254,7 @@ with even part $\mathbb{M}_-^{0}$ and odd part $\mathbb{M}_+^{0}$.
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the interpretation in one place.
 
-**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^{*})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
 Each observable is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the Hermitian representative is its reading operator.
 
@@ -267,7 +267,7 @@ Each observable is the representative $iA$ of a **material element** $A\in\mathb
 
 ## Summary
 
-The decomposition $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ into anti-Hermitian and Hermitian elements is the eigenspace decomposition of the real structure $\flat = -{}^{*}$, and it satisfies the two operational conditions of a superselection structure. The operations of the framework are the congruences $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, and every one of them preserves both sectors, since $(\tilde U\tilde{Q}\tilde U^{*})^{*} = \tilde U\tilde{Q}^{*}\tilde U^{*}$. The relative phase between the two components is generated by the central scalar $i$, which exchanges the sectors and acts on every irreducible module as the scalar $\exp(i\theta)$, hence fixes every ray; operationally, the informational component supplies the real part of the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q})$ and the material component only its imaginary part, which no Hermitian observable reads.
+The decomposition $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$ into anti-Hermitian and Hermitian elements is the eigenspace decomposition of the real structure $\flat = -{}^{*}$, and it satisfies the two operational conditions of a superselection structure. The operations of the framework are the congruences $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, and every one of them preserves both sectors, since $(\tilde U\tilde{Q}\tilde U^{*})^{*} = \tilde U\tilde{Q}^{*}\tilde U^{*}$. The relative phase between the two components is generated by the central scalar $i$, which exchanges the sectors and acts on every irreducible module as the scalar $\exp(i\theta)$, hence fixes every ray; operationally, the informational component supplies the real part of the Born pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}^{*})$ and the material component only its imaginary part, which no Hermitian observable reads.
 
 The split does not satisfy the standard algebraic realisation of a superselection structure. The centre is $Z(\mathbb{B}) = \mathbb{C}e_t$, its only central idempotents are $0$ and $e_t$, and $\mathbb{B}$ is central simple; the defining module is the unique simple module and is irreducible. There is consequently no central-projection decomposition into non-interfering branches, and the framework has no intrinsic superselection sectors of the standard kind. The centre itself is graded by the split, into the informational real scalar $e_t$ and the material imaginary scalar $ie_t$; the latter is the algebra's only non-trivial central charge, and because it acts as a scalar on the module it labels nothing.
 
@@ -302,7 +302,7 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{M}_+^{0}$ | Informational traceless part, non-compact boosts |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
-| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
+| $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 

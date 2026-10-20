@@ -88,7 +88,7 @@ $$
 \phi_{AC} = \left\langle \frac{\gamma}{2c^2}\oint\left(\vec E\times i\mathbf e\right)\cdot d\vec r\right\rangle,
 $$
 
-evaluated in the state, i.e. through the plain form, read as the trace pairing, $\mathrm{Tr}(\tilde{Ϛ}\,\mathcal{A}_{AC})$. For a spin eigenstate along a fixed axis the expectation is $\pm$ the corresponding scalar integral; for a superposition the two components accumulate opposite phases, and the holonomy is a full rotor rather than a central phase.
+evaluated in the state through the Hermitian form $\langle\tilde{Ϛ},\mathcal{A}_{AC}\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}\mathcal{A}_{AC}^{*})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}\,\mathcal{A}_{AC}^{*})$. The star is inert on $\mathbb{M}_+$ and the unstarred trace is real; it is non-negative only when $\mathcal{A}_{AC}\ge0$. For a spin eigenstate along a fixed axis the expectation is $\pm$ the corresponding scalar integral; for a superposition the two components accumulate opposite phases, and the holonomy is a full rotor rather than a central phase.
 
 ### The Adiabatic Limit and the Solid Angle
 
@@ -286,7 +286,7 @@ $$
 = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r
 $$
 
-for a spin-1/2 of magnetic moment $\vec\mu = \gamma\vec S$, with the phase given by the plain form of the state, read as the trace pairing. In the adiabatic limit it reduces to the solid-angle phase $-\tfrac12\Omega_{\mathrm{sgn}}$ of non-relativistic spin.
+for a spin-1/2 of magnetic moment $\vec\mu = \gamma\vec S$, with the phase given by the Hermitian form of the state, read through the trace. In the adiabatic limit it reduces to the solid-angle phase $-\tfrac12\Omega_{\mathrm{sgn}}$ of non-relativistic spin.
 
 The AC effect is the electric dual of the Aharonov–Bohm effect and the magnetic-field dual of the He–McKellar–Wilkens effect: charge is dual to flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. For a dipole encircling a line charge of density $\lambda$, the phase is $\phi_{AC} = -\lambda\mu_z/(\epsilon_0\hbar c^2)$ for counterclockwise traversal, independent of radius and speed. For a neutron over $0.1\,\mathrm{m}$ in a field of $10^{7}\,\mathrm{V/m}$ the magnitude of the phase is $\approx 1.0\times10^{-3}\,\mathrm{rad}$; for an electron it is $\approx 0.98\,\mathrm{rad}$. The phase has been measured by neutron, atom and electron interferometry, and the framework reproduces the standard result without modification.
 

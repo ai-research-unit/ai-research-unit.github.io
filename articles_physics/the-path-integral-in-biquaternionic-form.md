@@ -122,7 +122,7 @@ a complex number times the identity. It is not a general biquaternion.
 
 3. **The overall phase cancels in the state.** With $\psi\mapsto \exp(iS/\hbar)\psi$ and $\tilde{Ϛ}=\psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)\in\mathbb{M}_+$, centrality gives
 $$\tilde{Ϛ}\;\longmapsto\;\frac{\exp(iS/\hbar)\psi\,\psi^\dagger \exp(-iS/\hbar)}{\mathrm{Tr}(\psi^\dagger\psi)}=\tilde{Ϛ},$$
-so the global phase of a single path is unobservable, and the Born probabilities $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$ are unchanged. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
+so the global phase of a single path is unobservable, and the Born probabilities $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$ are unchanged, the star being inert and the unstarred trace real, and non-negative when $\tilde H\ge0$. Only **relative** phases — differences of actions between paths — are observable, which is exactly what the interference formula of the previous section says.
 
 ### The sector chain
 
@@ -374,7 +374,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $[p,[p,g]]=-\hbar^2\frac{d^2g}{dx^2}$ | Operator-ordering ambiguity; proportional to the curvature |
 | $\prod_x\sqrt{g(x)}$ | Curved-space measure factor; one volume element per slice |
 | $\tilde{Ϛ}=\psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | State from a spinor; global phase cancels |
-| $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde{H}\rangle$ | Trace formula (Born rule) |
+| $\operatorname{Tr}(\tilde\Pi\tilde H^{*})=\operatorname{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H^{*}) = 2\langle\tilde\Pi,\tilde{H}\rangle_{*}$ | Trace reading at normalisation (Born rule) |
 | $t'\mapsto-i\tau$ | Wick rotation |
 | $S=iS_E$ | Action under the Wick rotation |
 | $\exp(iS/\hbar)=\exp(-S_E/\hbar)$ | Oscillatory phase becomes decaying weight |

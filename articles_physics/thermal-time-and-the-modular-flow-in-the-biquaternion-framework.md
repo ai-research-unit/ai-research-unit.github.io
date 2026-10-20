@@ -210,7 +210,7 @@ The biquaternion framework reaches this case through the one-particle module and
 
 **3. The thermal-time covariance.** The hypothesis is often stated as the statement that the flow is covariant under the algebra's symmetries. Which symmetries of $\mathbb{B}$ — the inner automorphisms, the sector exchange $i$, the conjugations — act on the set of thermal times, and what is the orbit structure?
 
-**4. The generator's observable status.** The modular Hamiltonian is an algebra element in the framework and a formal object in the field. Is there a framework measurement whose statistic is the modular energy $\mathrm{Tr}(\tilde{Ϛ}\tilde{K}_{\mathrm{mod}})$ beyond the relative entropy computed in the companion article?
+**4. The generator's observable status.** The modular Hamiltonian is an algebra element in the framework and a formal object in the field. Is there a framework measurement whose statistic is the modular energy $\mathrm{Tr}(\tilde{Ϛ}\tilde{K}_{\mathrm{mod}}^{*})$ beyond the relative entropy computed in the companion article?
 
 **5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum theory is derived.
 

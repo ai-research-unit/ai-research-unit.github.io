@@ -304,7 +304,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 | $\lambda\to t'\lambda,\ \bar\lambda\to {t'}^{-1}\bar\lambda$ | Little-group scaling, $t'\in\mathbb{C}^\times$; $|t'|=1$ real |
 | $h$ | Helicity, the little-group weight; $d_\lambda=-2h$ |
 | $\tilde H=-i\tilde P\in\mathbb{M}_+$ | Hermitian four-vector, $\mathsf{M}_2(\tilde H)=p_{\alpha\bar\beta}$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ | Trace formula (Born rule), inherited |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) = 2\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ | Trace formula (Born rule), inherited |
 | $\mathcal A_n^{\mathrm{MHV}}\propto\langle ij\rangle^4/\prod_k\langle k,k+1\rangle$ | Parke–Taylor kinematic factor |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_1,\tilde{Q}_1\rangle_{*}=\sum_\mu\lvert Q_{1\mu}\rvert^{2}$ |

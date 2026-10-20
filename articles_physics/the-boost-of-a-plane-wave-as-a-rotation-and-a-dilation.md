@@ -12,19 +12,19 @@ $$
 \langle\tilde P\rangle_{\natural} = 0 ,
 $$
 
-which is the four-wavevector $\tilde P = \frac{i\omega}{c}e_t + \vec k$ of the plane-wave exercise written with $\vec k = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with Lorentz rotor $\tilde U_{\mathrm L} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
+which is the four-wavevector $\tilde P = \frac{i\omega}{c}e_t + \vec k$ of the plane-wave exercise written with $\vec k = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with Lorentz rotor $\tilde U_{\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
 
 $$
 \boxed{\;
-\tilde P_2 \;=\; \tilde U_{\mathrm L}\,\tilde P\,\tilde U_{\mathrm L}^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde P\,\tilde{u}^{\natural},
+\tilde P_2 \;=\; \tilde U_{\mathrm b}\,\tilde P\,\tilde U_{\mathrm b}^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde P\,\tilde{u}^{\natural},
 \qquad
-\tilde{F}_2 \;=\; \tilde U_{\mathrm L}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm L} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
+\tilde{F}_2 \;=\; \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
 \;}
 $$
 
 Since $\tilde{u}$ is a real quaternion, $\tilde{u}^{\natural} = \tilde{u}^{-1}$ and the action $\tilde{u}\,\cdot\,\tilde{u}^{\natural}$ is a **rotation of physical space**; the scalar $\exp(d)$ is a dilation. A boost of a wave, then, is not a mixture of three effects but a similarity of Euclidean three-space, the same one acting on the wave element and on the field.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ central with $i^2 = -1$. A **real vector** is $\vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z$ with the $v_k$ real; the arrow denotes a pure element, so a unit vector is written $\vec u_k$ with $\vec u_k\vec u_k = -e_t$. The scalar imaginary multiplies likewise, so $i\vec u_k$ is imaginary-vector. The material sector $\mathbb{M}_-$ carries the four-vectors, the Hermitian sector $\mathbb{M}_+$ carries the boost rotors, and $i\mathbb{M}_+ = \mathbb{M}_-$. The field is taken in vacuum, $c = c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\vec v$ is reserved for particle and frame velocities.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ central with $i^2 = -1$. A **real vector** is $\vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z$ with the $v_k$ real; the arrow denotes a pure element, so a unit vector is written $\vec u_k$ with $\vec u_k\vec u_k = -e_t$. The scalar imaginary multiplies likewise, so $i\vec u_k$ is imaginary-vector. The material sector $\mathbb{M}_-$ carries the four-vectors, the Hermitian sector $\mathbb{M}_+$ carries the boost rotors, and $i\mathbb{M}_+ = \mathbb{M}_-$. The field is taken in vacuum, $c = c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$ (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\vec v$ is reserved for particle and frame velocities.
 
 ## The Null Wave Element and the Pacwoman Property
 
@@ -68,18 +68,18 @@ is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^{*} = \tilde
 
 ## The Boost of the Null Wave Element
 
-Let $\tilde U_{\mathrm L} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ be the boost rotor, so that $\tilde U_{\mathrm L}$ is Hermitian ($\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$), $\tilde U_{\mathrm L}^{\natural} = \tilde U_{\mathrm L}^{-1} = \cosh\frac{w}{2} - i\sinh\frac{w}{2}\vec u$, and $\langle\tilde U_{\mathrm L}\rangle_{\natural} = e_t$ (*The Lorentz Transformation as a Biquaternionic Rotation*). The pacwoman lemma turns the product of the rotor with the null element into a product of a *dilation–rotation factor* with the same null element.
+Let $\tilde U_{\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ be the boost rotor, so that $\tilde U_{\mathrm b}$ is Hermitian ($\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$), $\tilde U_{\mathrm b}^{\natural} = \tilde U_{\mathrm b}^{-1} = \cosh\frac{w}{2} - i\sinh\frac{w}{2}\vec u$, and $\langle\tilde U_{\mathrm b}\rangle_{\natural} = e_t$ (*The Lorentz Transformation as a Biquaternionic Rotation*). The pacwoman lemma turns the product of the rotor with the null element into a product of a *dilation–rotation factor* with the same null element.
 
 **Proposition (the factorisation).** For every unit real $\vec u$ and $\vec u_k$,
 
 $$
-\tilde U_{\mathrm L}\left(i + \vec u_k\right) \;=\; \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_k\right)\left(i + \vec u_k\right).
+\tilde U_{\mathrm b}\left(i + \vec u_k\right) \;=\; \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_k\right)\left(i + \vec u_k\right).
 $$
 
 **Proof.** Expand the left side,
 
 $$
-\tilde U_{\mathrm L}\left(i + \vec u_k\right)
+\tilde U_{\mathrm b}\left(i + \vec u_k\right)
 = \cosh\frac{w}{2}\left(i + \vec u_k\right) + i\sinh\frac{w}{2}\,\vec u\left(i + \vec u_k\right).
 $$
 
@@ -94,7 +94,7 @@ $$
 so that the two terms carry a common factor $i+\vec u_k$:
 
 $$
-\tilde U_{\mathrm L}\left(i + \vec u_k\right)
+\tilde U_{\mathrm b}\left(i + \vec u_k\right)
 = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\,\vec u\vec u_k\right)\left(i + \vec u_k\right).
 $$
 
@@ -149,7 +149,7 @@ $$
 
 where $\vec u_e$ is the unit vector in the plane of $\vec u$ and $\vec u_k$, perpendicular to $\vec u_k$ and pointing from $\vec u_k$ toward $\vec u$ — the component of $\vec u$ transverse to $\vec u_k$, normalized; in particular $\vec u = \cos\alpha\,\vec u_k + \sin\alpha\,\vec u_e$. In the transverse case $\vec u\cdot\vec u_k = 0$ this reduces to the source's $\tilde{u}\vec u_k\tilde{u}^{\natural} = \vec u_k\cos\theta - \vec u\sin\theta$, and it is the general form above, not the transverse special case, that the rotation of a non-transverse ray requires.
 
-The sign is the one fixed by the series' boost rotor; it records that the parameter $\vec u$ of $\tilde U_{\mathrm L}$ points opposite to the velocity, so that $\vec u_k$ moves *away* from $\vec u$ and hence *toward* the velocity as $\theta$ grows. Because $\tilde{u}$ commutes with $i$, it acts on the null element $\tilde P$ and on the field $\tilde{F}$ through the same sandwich, and since $\tilde{u}^{\natural} = \tilde{u}^{-1}$ the factor $\exp(d)$ is the sole change of scale. The frequency and the field amplitude therefore scale by the same number $\exp(d)$, so the intensity, quadratic in the field, scales by $\exp(2d)$ — the classical content of the statement that a boost stretches the wave train while rescaling it.
+The sign is the one fixed by the series' boost rotor; it records that the parameter $\vec u$ of $\tilde U_{\mathrm b}$ points opposite to the velocity, so that $\vec u_k$ moves *away* from $\vec u$ and hence *toward* the velocity as $\theta$ grows. Because $\tilde{u}$ commutes with $i$, it acts on the null element $\tilde P$ and on the field $\tilde{F}$ through the same sandwich, and since $\tilde{u}^{\natural} = \tilde{u}^{-1}$ the factor $\exp(d)$ is the sole change of scale. The frequency and the field amplitude therefore scale by the same number $\exp(d)$, so the intensity, quadratic in the field, scales by $\exp(2d)$ — the classical content of the statement that a boost stretches the wave train while rescaling it.
 
 **The transverse case.** When the wave propagates perpendicular to the boost, $\vec u\cdot\vec u_k = 0$, so $\cos\alpha = 0$ and the formulas simplify to the ones the source exhibits:
 
@@ -167,12 +167,12 @@ The first is the **transverse Doppler** factor: a wave crossing the boost perpen
 
 ## The Field Transforms the Same Way
 
-The field strength of a source-free plane wave is a null pure vector, and it is tied to the wave element by the annihilation condition $\tilde P\tilde{F} = 0$ of the plane-wave exercise. Under the boost it transforms in the bivector representation, $\tilde{F}\mapsto\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$, not in the four-vector representation (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5, where the four-vector candidate is shown to fail on a boost). The theorem of the section above applies to it with the same rotation and the same dilation.
+The field strength of a source-free plane wave is a null pure vector, and it is tied to the wave element by the annihilation condition $\tilde P\tilde{F} = 0$ of the plane-wave exercise. Under the boost it transforms in the bivector representation, $\tilde{F}\mapsto\tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b}$, not in the four-vector representation (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5, where the four-vector candidate is shown to fail on a boost). The theorem of the section above applies to it with the same rotation and the same dilation.
 
 **Proposition.** With $\tilde{u}$ and $\exp(d)$ as above, the null field strength of the same wave satisfies
 
 $$
-\tilde U_{\mathrm L}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm L} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
+\tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
 $$
 
 The verification is direct: writing the wave amplitude as $\tilde{F}_0 = i\sqrt{\epsilon_0}\,\vec E_0 - \sqrt{\mu_0}\,\vec H_0$ with $\vec E_0\perp\vec u_k$ and $\vec H_0 = Z_0^{-1}\vec u_k\times\vec E_0$, the identity holds for both polarisations of the wave and hence, the map being linear in $\tilde{F}$, for every null field of that wave. The same computation gives the field of the boosted wave in the frame in which the wave element is the one computed above.
@@ -196,7 +196,7 @@ A second caution is the medium. The identity is an identity of the vacuum algebr
 A boost of an electromagnetic plane wave is a rotation of physical space composed with a dilation, and the rotation and the dilation are the same for the wave element and for the field. The whole result rests on the **pacwoman property** of the null element, $\vec u_k(i+\vec u_k) = i(i+\vec u_k) = (i+\vec u_k)\vec u_k$, which factors the boost rotor against the null element,
 
 $$
-\tilde U_{\mathrm L}\left(i+\vec u_k\right) = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u\vec u_k\right)\left(i+\vec u_k\right),
+\tilde U_{\mathrm b}\left(i+\vec u_k\right) = \left(\cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u\vec u_k\right)\left(i+\vec u_k\right),
 $$
 
 leaving a real quaternion $\tilde{D} = \cosh\frac{w}{2} + \sinh\frac{w}{2}\vec u\vec u_k$, a scalar plus a real vector, which is $\exp(d/2)\tilde{u}$ with
@@ -212,9 +212,9 @@ $$
 where $\alpha$ is the angle between $\vec u$ and $\vec u_k$ and $\vec u_b$ the unit vector along $\vec u\times\vec u_k$. Then
 
 $$
-\tilde P_2 = \tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*} = \exp(d)\tilde{u}\tilde P\tilde{u}^{\natural},
+\tilde P_2 = \tilde U_{\mathrm b}\tilde P\tilde U_{\mathrm b}^{*} = \exp(d)\tilde{u}\tilde P\tilde{u}^{\natural},
 \qquad
-\tilde{F}_2 = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L} = \exp(d)\tilde{u}\tilde{F}\tilde{u}^{\natural} .
+\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\tilde{F}\tilde U_{\mathrm b} = \exp(d)\tilde{u}\tilde{F}\tilde{u}^{\natural} .
 $$
 
 Transversely the dilation is $\gamma$ — the transverse Doppler factor — and $\tan\frac{\theta}{2} = \tanh\frac{w}{2}$; parallel to the boost there is no rotation and the dilation is $\exp(\mp w)$. The reduction is possible only because the wave is null, and the field statement is a vacuum statement.
@@ -229,7 +229,7 @@ Transversely the dilation is $\gamma$ — the transverse Doppler factor — and 
 | $\vec k = k\vec u_k = \frac{\omega}{c}\vec u_k$ | Wavevector, $k = \omega/c$, $\vec u_k$ its unit direction |
 | $\tilde P = \frac{\omega}{c}(i+\vec u_k)$ | Wave biquaternion (four-wavevector), null, $\langle\tilde P\rangle_{\natural} = 0$ |
 | $\tilde{F}$ | Field-strength biquaternion, pure vector, null for a plane wave, $\tilde P\tilde{F}=0$ |
-| $\tilde U_{\mathrm L} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ | Boost rotor, Hermitian, unit norm; $w$ rapidity, $\vec u$ boost direction |
+| $\tilde U_{\mathrm b} = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ | Boost rotor, Hermitian, unit norm; $w$ rapidity, $\vec u$ boost direction |
 | $\tilde{u} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_b$ | Spatial rotation rotor, unit real quaternion |
 | $\vec u_b$ | Unit real vector along $\vec u\times\vec u_k$ |
 | $\exp(d)$ | Dilation factor, $= \cosh w - \cos\alpha\sinh w$ (Doppler factor) |

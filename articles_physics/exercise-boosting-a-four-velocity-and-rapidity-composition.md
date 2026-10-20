@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It applies the apparatus of two companion articles: *The Lorentz Transformation as a Biquaternionic Rotation*, which defines the boost biquaternion, the rotor conjugation, and the square-root relation between the rotor and the four-velocity; and *Relativistic Mechanics in Biquaternionic Form*, which fixes the four-velocity and the four-momentum in $\mathbb{M}_-$. Those two articles are the parents of this exercise: every result below is obtained from the tools already defined there, and no new formalism is introduced. The sequence is: boost a general four-velocity (Problem 1); compose two collinear boosts and recover rapidity addition and velocity addition (Problem 2); compose two non-collinear boosts and extract the Thomas–Wigner rotation (Problem 3); and examine the parent's square-root relation between the four-velocity and the boost rotor, whose direction the parent does not state (Problem 4). A set of further problems is left to the reader.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ where $\tilde U_{\mathrm L}$ is the Lorentz rotor satisfying $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ belongs to the shared notation; no object of the informational sector arises below, so it is recorded but not used. The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$ and $\gamma = (1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$, and the boost biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ where $\tilde U_{\mathrm L}$ is the Lorentz rotor satisfying $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$. The pure boost is written $\tilde U_{\mathrm b}$ and the rotation factor $\tilde u_{\mathrm r}$, with $\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ belongs to the shared notation; no object of the informational sector arises below, so it is recorded but not used. The four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$ and $\gamma = (1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_t + \vec p$, and the boost biquaternion
 $$
 \tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2} + i\sinh\frac{\psi_b}{2}\vec u_x,
 \qquad
@@ -12,7 +12,7 @@ $$
 $$
 which is Hermitian ($\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$), lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is a particle velocity, and $\vec u_x, \vec u_y$ are unit frame or boost directions. The components of a biquaternion are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
-**What is to be shown.** Problem 1 computes $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ for arbitrary $\vec v_b,\vec v$ and shows that it is again a four-velocity of $\mathbb{M}_-$ with the standard components. Problem 2 composes two collinear boost rotors and derives rapidity addition and the velocity-addition formula. Problem 3 composes two non-collinear boosts, shows that the product is no longer a pure boost, and extracts the boost part, the total rapidity, and the Thomas–Wigner angle. Problem 4 verifies the parent's relation $\tilde U_{\mathrm L} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, determines the direction of the transformation it generates, and identifies what the four-velocity does and does not determine. The problems are solved in full; the reader is asked in the final section to extend them.
+**What is to be shown.** Problem 1 computes $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ for arbitrary $\vec v_b,\vec v$ and shows that it is again a four-velocity of $\mathbb{M}_-$ with the standard components. Problem 2 composes two collinear boost rotors and derives rapidity addition and the velocity-addition formula. Problem 3 composes two non-collinear boosts, shows that the product is no longer a pure boost, and extracts the boost part, the total rapidity, and the Thomas–Wigner angle. Problem 4 verifies the parent's relation $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, determines the direction of the transformation it generates, and identifies what the four-velocity does and does not determine. The problems are solved in full; the reader is asked in the final section to extend them.
 
 ## Problem 1: The Boost of a General Four-Velocity
 
@@ -32,10 +32,10 @@ $$
 $$
 The first product expands as
 $$
-\tilde U_{\mathrm L}\tilde{V} = ic\gamma\,\tilde U_{\mathrm L} + \gamma\,\tilde U_{\mathrm L}\vec v
+\tilde U_{\mathrm b}\tilde{V} = ic\gamma\,\tilde U_{\mathrm b} + \gamma\,\tilde U_{\mathrm b}\vec v
 = ic\gamma a - c\gamma b\,J + \gamma\left(a\vec v_\parallel + a\vec v_\perp - i b v_\parallel + i b\,J\times\vec v_\perp\right).
 $$
-Multiplying once more on the right by $\tilde U_{\mathrm L} = a + ibJ$ and collecting the scalar and vector parts gives
+Multiplying once more on the right by $\tilde U_{\mathrm b} = a + ibJ$ and collecting the scalar and vector parts gives
 $$
 \tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}
 = ic\,\gamma_b\gamma\left(1 - \frac{\vec v_b\cdot\vec v}{c^2}\right)e_t
@@ -75,9 +75,9 @@ The norm is preserved: $\langle\tilde{V}_2\rangle_{\natural} = -1$ in units $c=1
 
 ## Problem 2: Collinear Boosts and Rapidity Addition
 
-**Statement.** Let $\tilde U_{\mathrm L,1} = \cosh\frac{\psi_1}{2} + i\sinh\frac{\psi_1}{2}\vec u_y$ and $\tilde U_{\mathrm L,2} = \cosh\frac{\psi_2}{2} + i\sinh\frac{\psi_2}{2}\vec u_y$ be two boost rotors along the same direction $\vec u_y$.
+**Statement.** Let $\tilde U_{\mathrm b,1} = \cosh\frac{\psi_1}{2} + i\sinh\frac{\psi_1}{2}\vec u_y$ and $\tilde U_{\mathrm b,2} = \cosh\frac{\psi_2}{2} + i\sinh\frac{\psi_2}{2}\vec u_y$ be two boost rotors along the same direction $\vec u_y$.
 
-**(a)** Show that $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ is itself a pure boost along $\vec u_y$, of rapidity $\psi_1+\psi_2$.
+**(a)** Show that $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is itself a pure boost along $\vec u_y$, of rapidity $\psi_1+\psi_2$.
 
 **(b)** Deduce the velocity-addition formula $w = \dfrac{v_{b_1}+v_{b_2}}{1+v_{b_1}v_{b_2}/c^2}$.
 
@@ -89,10 +89,10 @@ $$
 $$
 so the two boosts in the same direction multiply hyperbolically:
 $$
-\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}
+\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}
 = \left(c_1c_2 + s_1s_2\right) + i\left(c_1s_2 + s_1c_2\right)J
 = \cosh\frac{\psi_1+\psi_2}{2} + i\sinh\frac{\psi_1+\psi_2}{2}\vec u_y
-= \tilde U_{\mathrm L}(\psi_1+\psi_2).
+= \tilde U_{\mathrm b}(\psi_1+\psi_2).
 \tag{3}
 $$
 The cross terms combine by the addition formulas for $\cosh$ and $\sinh$. The product is Hermitian, lies in $\mathbb{M}_+$, and has unit norm, so it is a pure boost along $\vec u_y$: **boosts in a common direction form a one-parameter subgroup**, and their rapidities add.
@@ -105,15 +105,15 @@ w = c\,\frac{\tanh\psi_1 + \tanh\psi_2}{1 + \tanh\psi_1\tanh\psi_2}
 $$
 For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, which is $\tanh(\operatorname{atanh}0.5 + \operatorname{atanh}0.6)$ to machine precision.
 
-**(c)** There is no contradiction with Problem 1. Equation (3) is the composition of two *coordinate changes*: the rotor $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ carries the lab to the frame moving with $w$. Equation (2) of Problem 1 is the action of a *single* coordinate change on a four-velocity: it subtracts the frame rapidity. The two statements are the multiplication and the action of the same group, and in the collinear case the action's rapidity shift is the group's rapidity sum with a sign, $v_2 = c\tanh(\psi_v-\psi_b)$.
+**(c)** There is no contradiction with Problem 1. Equation (3) is the composition of two *coordinate changes*: the rotor $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ carries the lab to the frame moving with $w$. Equation (2) of Problem 1 is the action of a *single* coordinate change on a four-velocity: it subtracts the frame rapidity. The two statements are the multiplication and the action of the same group, and in the collinear case the action's rapidity shift is the group's rapidity sum with a sign, $v_2 = c\tanh(\psi_v-\psi_b)$.
 
 ## Problem 3: Non-Collinear Boosts and the Thomas–Wigner Rotation
 
-**Statement.** Let $\tilde U_{\mathrm L,1}$ have rapidity $\psi_1$ along $\vec u_y$ and $\tilde U_{\mathrm L,2}$ rapidity $\psi_2$ along $\vec u_z$, with $\vec u_y\cdot\vec u_z = \cos\phi$ and $0<\phi<\pi$.
+**Statement.** Let $\tilde U_{\mathrm b,1}$ have rapidity $\psi_1$ along $\vec u_y$ and $\tilde U_{\mathrm b,2}$ rapidity $\psi_2$ along $\vec u_z$, with $\vec u_y\cdot\vec u_z = \cos\phi$ and $0<\phi<\pi$.
 
-**(a)** Compute the product $P = \tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ and show that it is Hermitian if and only if $\phi\in\{0,\pi\}$; for $0<\phi<\pi$ it is not a pure boost.
+**(a)** Compute the product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ and show that it is Hermitian if and only if $\phi\in\{0,\pi\}$; for $0<\phi<\pi$ it is not a pure boost.
 
-**(b)** Show that $P$ admits the decomposition $P = \tilde{H}\tilde u$ with $\tilde{H}$ a pure boost of unit norm and $\tilde u$ a spatial rotation. Derive the total rapidity $\Psi$, the Wigner angle $\theta_W$, and the rotation axis.
+**(b)** Show that $P$ admits the decomposition $P = \tilde{H}\tilde u_{\mathrm r}$ with $\tilde{H}$ a pure boost of unit norm and $\tilde u_{\mathrm r}$ a spatial rotation. Derive the total rapidity $\Psi$, the Wigner angle $\theta_W$, and the rotation axis.
 
 **(c)** Verify the special case of equal orthogonal rapidities, and compute a numerical instance.
 
@@ -123,7 +123,7 @@ $$
 $$
 Hence
 $$
-P = \tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}
+P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}
 = \underbrace{\left(c_1c_2 + s_1s_2\cos\phi\right)}_{a}
 + \underbrace{s_1s_2\,\vec u_y\times\vec u_z}_{\vec q}
 + i\underbrace{\left(c_2s_1\vec u_y + c_1s_2\vec u_z\right)}_{\vec w},
@@ -159,23 +159,23 @@ $$
 $$
 The residual element
 $$
-\tilde u = \tilde{H}^{-1}P = \tilde{H}^{\natural}P
+\tilde u_{\mathrm r} = \tilde{H}^{-1}P = \tilde{H}^{\natural}P
 = \left(\cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\vec u_4\right)\left(a + \vec q + i\vec w\right)
 $$
-is the unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde u\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde u\tilde u^{\natural} = e_t$ with $\tilde u$ a unit real quaternion). Its scalar part is
+is the unitary factor of the polar decomposition of $P$ (equivalently $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde{H}\rangle_{\natural}^{-1}\langle P\rangle_{\natural} = 1$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t$ with $\tilde u_{\mathrm r}$ a unit real quaternion). Its scalar part is
 $$
-\mathrm{Sc}(\tilde u) = a\cosh\frac{\Psi}{2} - \sinh\frac{\Psi}{2}\left(\vec u_4\cdot\vec w\right),
+\mathrm{Sc}(\tilde u_{\mathrm r}) = a\cosh\frac{\Psi}{2} - \sinh\frac{\Psi}{2}\left(\vec u_4\cdot\vec w\right),
 $$
 where the minus sign comes from the $-\vec A\cdot\vec B$ term of the quaternion product, and the term involving $\vec q$ vanishes because $\vec u_4\perp\vec q$. Now $\vec u_4\cdot\vec w = \vec T\cdot\vec w/\sinh\Psi = 2a|\vec w|^2/\sinh\Psi$, so
 $$
-\mathrm{Sc}(\tilde u) = a\cosh\frac{\Psi}{2} - \frac{a|\vec w|^2}{\cosh\frac{\Psi}{2}}
+\mathrm{Sc}(\tilde u_{\mathrm r}) = a\cosh\frac{\Psi}{2} - \frac{a|\vec w|^2}{\cosh\frac{\Psi}{2}}
 = \frac{a\left(\cosh^2\frac{\Psi}{2} - |\vec w|^2\right)}{\cosh\frac{\Psi}{2}} .
 $$
 From (6) and $\Sigma$ one has $\cosh^2\frac{\Psi}{2} = \frac{1+\Sigma}{2} = a^2 + |\vec q|^2 = 1 + |\vec w|^2$, so $\cosh^2\frac{\Psi}{2} - |\vec w|^2 = 1$ and
 $$
-\mathrm{Sc}(\tilde u) = \frac{a}{\cosh\frac{\Psi}{2}}.
+\mathrm{Sc}(\tilde u_{\mathrm r}) = \frac{a}{\cosh\frac{\Psi}{2}}.
 $$
-Because $\tilde u$ is a unit real quaternion — a spatial rotation rotor — it has the form $\tilde u = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ its axis. Comparing scalar parts identifies the **Thomas–Wigner angle** $\theta_W$:
+Because $\tilde u_{\mathrm r}$ is a unit real quaternion — a spatial rotation rotor — it has the form $\tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}$ its axis. Comparing scalar parts identifies the **Thomas–Wigner angle** $\theta_W$:
 $$
 \cos\frac{\theta_W}{2} = \frac{a}{\cosh\frac{\Psi}{2}}
 = \frac{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2} + \sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}{\cosh\frac{\Psi}{2}},
@@ -194,14 +194,14 @@ $$
 $$
 which we verified numerically in several non-coplanar configurations; it is the direction of the antisymmetric, real-vector part $\vec q$ of $P$ in (5). With this, the decomposition is
 $$
-\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1} = \tilde{H}\tilde u,
+\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = \tilde{H}\tilde u_{\mathrm r},
 \qquad
 \tilde{H} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\vec u_4,
 \qquad
-\tilde u = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\vec v_{b_2}\times\vec v_{b_3}}.
+\tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\vec v_{b_2}\times\vec v_{b_3}}.
 \tag{12}
 $$
-The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u\tilde H_2$ with $\tilde H_2 = \tilde u^{-1}\tilde{H}\tilde u$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\Psi$ but a different axis; only $\Psi$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
+The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u_{\mathrm r}\tilde H_2$ with $\tilde H_2 = \tilde u_{\mathrm r}^{-1}\tilde{H}\tilde u_{\mathrm r}$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\Psi$ but a different axis; only $\Psi$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
 
 **(c)** For equal orthogonal rapidities, $\psi_1 = \psi_2 = \psi$ and $\phi = \pi/2$, so $\cosh\Psi = \cosh^2\psi$ and $a = \cosh^2\frac{\psi}{2}$. Then $\cos\frac{\theta_W}{2} = \cosh^2\frac{\psi}{2}\big/\cosh\frac{\Psi}{2}$, and (10) collapses to
 $$
@@ -212,28 +212,28 @@ This is exact; it was checked numerically for $\psi = 0.5, 1, 1.5, 2, 3$ to $10^
 
 **Numerical instance.** Take $\psi_1 = \psi_2 = \operatorname{atanh}0.6 = 0.6931472$ along $\vec u_y = \vec u_{e,1}$ and $\vec u_z = \vec u_{e,2}$, so that each boost has speed $0.6c$. Then (5) gives, in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,
 $$
-P = \tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1} = 1.125 + 0.375\,i\,\vec e_x + 0.375\,i\,\vec e_y + 0.125\,\vec e_z,
+P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1} = 1.125 + 0.375\,i\,\vec e_x + 0.375\,i\,\vec e_y + 0.125\,\vec e_z,
 $$
 which is not Hermitian: the real $\vec e_z$ term $s_1s_2 = 0.125$ is the antisymmetric part. From (8), $\Psi = 1.0163481$ and the composed frame has speed $c\tanh\Psi = 0.7683749c$; the velocity-addition formula (2) applied twice gives the same speed. The Wigner angle (9)–(10) is $\theta_W = 12.68038^{\circ} = 0.2213144$ rad, with
 $$
-\tilde u = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{e,3} = 0.9938837 + 0.1104315\,\vec u_{e,3} .
+\tilde u_{\mathrm r} = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{e,3} = 0.9938837 + 0.1104315\,\vec u_{e,3} .
 $$
-The frame reached by $P$ has, in the lab, the four-velocity $ic\,P^{-1}(P^{-1})^{*} = 1.5625i\,e_t + 0.9375\,\vec e_x + 0.75\,\vec e_y$, i.e. velocity $(0.6, 0.48, 0)c$: magnitude $0.7683749c$ and direction $38.66^{\circ}$ from $\vec u_{e,1}$. The boost part $\tilde{H}$ has axis $\vec u_4 = (0.6246950, 0.7808688, 0)$ at $51.34^{\circ}$, which is the velocity direction rotated by the Wigner angle, $\vec u_4 = \tilde u\vec u_5\tilde u^{-1}$. The two orderings do not agree: $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}$ is a different rotor, with the opposite sense of Wigner rotation, so the two boost directions do not merely "add".
+The frame reached by $P$ has, in the lab, the four-velocity $ic\,P^{-1}(P^{-1})^{*} = 1.5625i\,e_t + 0.9375\,\vec e_x + 0.75\,\vec e_y$, i.e. velocity $(0.6, 0.48, 0)c$: magnitude $0.7683749c$ and direction $38.66^{\circ}$ from $\vec u_{e,1}$. The boost part $\tilde{H}$ has axis $\vec u_4 = (0.6246950, 0.7808688, 0)$ at $51.34^{\circ}$, which is the velocity direction rotated by the Wigner angle, $\vec u_4 = \tilde u_{\mathrm r}\vec u_5\tilde u_{\mathrm r}^{-1}$. The two orderings do not agree: $\tilde U_{\mathrm b,1}\tilde U_{\mathrm b,2}$ is a different rotor, with the opposite sense of Wigner rotation, so the two boost directions do not merely "add".
 
 ## Problem 4: The Parent's Square-Root Relation and the Direction of the Boost
 
 **Statement.** The companion article *The Lorentz Transformation as a Biquaternionic Rotation* states that the boost biquaternion associated with a four-velocity $\tilde{V} = \gamma(ic\,e_t+\vec v)$ is
 $$
-\tilde U_{\mathrm L} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}},
+\tilde U_{\mathrm b} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}},
 \tag{14}
 $$
-with the square root branch selected by $\mathrm{Sc}(\tilde U_{\mathrm L})>0$.
+with the square root branch selected by $\mathrm{Sc}(\tilde U_{\mathrm b})>0$.
 
 **(a)** Verify (14) and the branch, and identify the rotor explicitly.
 
-**(b)** Show that $\tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} = ic\,e_t$: the rotor (14) carries the lab to the particle's rest frame.
+**(b)** Show that $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t$: the rotor (14) carries the lab to the particle's rest frame.
 
-**(c)** Show that the rotor that carries the rest four-velocity $ic\,e_t$ to $\tilde{V}$ is $\tilde U_{\mathrm L}^{\natural}$, not $\tilde U_{\mathrm L}$, and give the sign error that follows from using $\tilde U_{\mathrm L}$ in that direction.
+**(c)** Show that the rotor that carries the rest four-velocity $ic\,e_t$ to $\tilde{V}$ is $\tilde U_{\mathrm b}^{\natural}$, not $\tilde U_{\mathrm b}$, and give the sign error that follows from using $\tilde U_{\mathrm b}$ in that direction.
 
 **(d)** State precisely what the four-velocity and the relation (14) determine.
 
@@ -249,30 +249,30 @@ $$
 $$
 where the exponential is hyperbolic because $(i\vec u_6)^2 = i^2\vec u_6^2 = (-1)(-1) = +e_t$. Its positive Hermitian square root is
 $$
-\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_6,
+\tilde U_{\mathrm b} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_6,
 $$
-which is precisely the boost biquaternion of *The Lorentz Transformation as a Biquaternionic Rotation* with $\vec u_x = \vec u_6$ and rapidity $\psi = \operatorname{atanh}(v/c)$. It is Hermitian and of unit norm. The element $-\tfrac{i}{c}\tilde{V}^{\natural}$ has eigenvalues $\exp(\pm\psi)>0$ in the matrix representation, so its two square roots are $\pm\tilde U_{\mathrm L}$; the choice $\mathrm{Sc}>0$ selects $+\tilde U_{\mathrm L}$. Note that the quaternion conjugate $\tilde U_{\mathrm L}^{\natural}$, the boost of rapidity $-\psi$, is **not** a square root of $-\tfrac{i}{c}\tilde{V}^{\natural}$: it squares to $\cosh\psi - i\sinh\psi\vec u_6$. The two square roots differ by the kernel element $-1$ of $SL(2,\mathbb{C})\to SO^+(1,3)$ and generate the same Lorentz transformation; the conjugate is a different transformation.
+which is precisely the boost biquaternion of *The Lorentz Transformation as a Biquaternionic Rotation* with $\vec u_x = \vec u_6$ and rapidity $\psi = \operatorname{atanh}(v/c)$. It is Hermitian and of unit norm. The element $-\tfrac{i}{c}\tilde{V}^{\natural}$ has eigenvalues $\exp(\pm\psi)>0$ in the matrix representation, so its two square roots are $\pm\tilde U_{\mathrm b}$; the choice $\mathrm{Sc}>0$ selects $+\tilde U_{\mathrm b}$. Note that the quaternion conjugate $\tilde U_{\mathrm b}^{\natural}$, the boost of rapidity $-\psi$, is **not** a square root of $-\tfrac{i}{c}\tilde{V}^{\natural}$: it squares to $\cosh\psi - i\sinh\psi\vec u_6$. The two square roots differ by the kernel element $-1$ of $SL(2,\mathbb{C})\to SO^+(1,3)$ and generate the same Lorentz transformation; the conjugate is a different transformation.
 
-**(b)** Since $\tilde U_{\mathrm L}$ is Hermitian, $\tilde U_{\mathrm L}^{*} = \tilde U_{\mathrm L}$, and $P\,\tilde{V}\,P^\dagger$ for the pure boost reduces to a computation already made in Problem 1 with $\vec v_b = \vec v$ and $\psi_b = \psi_v$; by part (d) there, the rapidities subtract, $\psi_v-\psi_v = 0$, giving
+**(b)** Since $\tilde U_{\mathrm b}$ is Hermitian, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$, and $P\,\tilde{V}\,P^\dagger$ for the pure boost reduces to a computation already made in Problem 1 with $\vec v_b = \vec v$ and $\psi_b = \psi_v$; by part (d) there, the rapidities subtract, $\psi_v-\psi_v = 0$, giving
 $$
-\tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} = ic\,e_t .
+\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t .
 $$
-Equivalently, directly: $\tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} = ic\gamma\tilde U_{\mathrm L}^2 + \gamma v\,\tilde U_{\mathrm L}\vec u_6\tilde U_{\mathrm L}$, and since $\tilde U_{\mathrm L}$ commutes with $\vec u_6$, $\tilde U_{\mathrm L}\vec u_6\tilde U_{\mathrm L} = \vec u_6\tilde U_{\mathrm L}^2 = \cosh\psi\,\vec u_6 - i\sinh\psi$. Hence the vector part is $\gamma v\cosh\psi - c\gamma\sinh\psi = c\gamma\sinh\psi - c\gamma\sinh\psi = 0$ and the scalar part is $ic\gamma(\cosh\psi - \tanh\psi\sinh\psi) = ic$. So (14) is the rotor of the transformation *lab $\to$ rest*.
+Equivalently, directly: $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\gamma\tilde U_{\mathrm b}^2 + \gamma v\,\tilde U_{\mathrm b}\vec u_6\tilde U_{\mathrm b}$, and since $\tilde U_{\mathrm b}$ commutes with $\vec u_6$, $\tilde U_{\mathrm b}\vec u_6\tilde U_{\mathrm b} = \vec u_6\tilde U_{\mathrm b}^2 = \cosh\psi\,\vec u_6 - i\sinh\psi$. Hence the vector part is $\gamma v\cosh\psi - c\gamma\sinh\psi = c\gamma\sinh\psi - c\gamma\sinh\psi = 0$ and the scalar part is $ic\gamma(\cosh\psi - \tanh\psi\sinh\psi) = ic$. So (14) is the rotor of the transformation *lab $\to$ rest*.
 
-**(c)** Conjugating the rest four-velocity by $\tilde U_{\mathrm L}$ instead gives
+**(c)** Conjugating the rest four-velocity by $\tilde U_{\mathrm b}$ instead gives
 $$
-\tilde U_{\mathrm L}(ic\,e_t)\tilde U_{\mathrm L}^{*} = ic\,\tilde U_{\mathrm L}^2
+\tilde U_{\mathrm b}(ic\,e_t)\tilde U_{\mathrm b}^{*} = ic\,\tilde U_{\mathrm b}^2
 = ic\left(\cosh\psi + i\sinh\psi\,\vec u_6\right)
 = ic\cosh\psi\,e_t - c\sinh\psi\,\vec u_6,
 $$
 whose induced velocity is $-c\tanh\psi\,\vec u_6 = -\vec v$. Thus the rotor built from $\tilde{V}$ carries the lab to the rest frame and, applied in the opposite direction, produces the *negative* of the particle's velocity. The rotor that carries the rest frame to $\tilde{V}$ is the inverse, i.e. the quaternion conjugate:
 $$
-\tilde U_{\mathrm L}^{\natural}\,(ic\,e_t)\,\overline{\tilde U_{\mathrm L}} = ic\,(\tilde U_{\mathrm L}^{\natural})^2 = ic\cosh\psi\,e_t + c\sinh\psi\,\vec u_6,
+\tilde U_{\mathrm b}^{\natural}\,(ic\,e_t)\,\overline{\tilde U_{\mathrm b}} = ic\,(\tilde U_{\mathrm b}^{\natural})^2 = ic\cosh\psi\,e_t + c\sinh\psi\,\vec u_6,
 \qquad \text{velocity} = +\vec v.
 $$
-The sign is therefore fixed entirely by whether one uses $\tilde{V}^{\natural}$ (as the parent does) or $\tilde{V}$ in (14): the conjugate in the formula is what makes (14) the lab-to-rest rotor. The parent writes the formula but does not state the direction; a reader who reads "the boost biquaternion associated with $\tilde{V}$" as the rotor that *produces* $\tilde{V}$ will use $\tilde U_{\mathrm L}$ where $\tilde U_{\mathrm L}^{\natural}$ is required and obtain $-\vec v$ instead of $+\vec v$. This is a genuine gap in the parent's statement, although the formula itself is correct and its displayed verification (the four-potential transformation with $\vec v_b$ the boost velocity) is in the consistent direction.
+The sign is therefore fixed entirely by whether one uses $\tilde{V}^{\natural}$ (as the parent does) or $\tilde{V}$ in (14): the conjugate in the formula is what makes (14) the lab-to-rest rotor. The parent writes the formula but does not state the direction; a reader who reads "the boost biquaternion associated with $\tilde{V}$" as the rotor that *produces* $\tilde{V}$ will use $\tilde U_{\mathrm b}$ where $\tilde U_{\mathrm b}^{\natural}$ is required and obtain $-\vec v$ instead of $+\vec v$. This is a genuine gap in the parent's statement, although the formula itself is correct and its displayed verification (the four-potential transformation with $\vec v_b$ the boost velocity) is in the consistent direction.
 
-**(d)** What relation (14) determines is the **Hermitian** (pure-boost) rotor. Given $\tilde{V}$, equation (14) has exactly the two solutions $\pm\tilde U_{\mathrm L}$, and the branch $\mathrm{Sc}>0$ selects one; both generate the same Lorentz transformation. The quaternion conjugate $\tilde U_{\mathrm L}^{\natural}$ is not a solution (it is the inverse transformation). More generally, if $P$ is any unit-norm rotor with $P\tilde{V}P^\dagger = ic\,e_t$, then $\tilde U_{\mathrm L}P$ is another for every spatial rotation $\tilde u\in SU(2)$, since $\tilde u(ic\,e_t)\tilde u^{*} = ic\,\tilde u\tilde u^\dagger = ic\,e_t$. The four-velocity therefore determines the rotor only up to left multiplication by a rotation — equivalently, it determines the boost and leaves the orientation of the rest frame free. Among this family, (14) picks the unique Hermitian representative with positive scalar part (the other Hermitian member, $-\tilde U_{\mathrm L}$, generates the same transformation). This is why the Thomas–Wigner rotation of Problem 3 is invisible in a single four-velocity but reappears in the composition of two of them: the four-velocity carries a boost, not a rotation.
+**(d)** What relation (14) determines is the **Hermitian** (pure-boost) rotor. Given $\tilde{V}$, equation (14) has exactly the two solutions $\pm\tilde U_{\mathrm b}$, and the branch $\mathrm{Sc}>0$ selects one; both generate the same Lorentz transformation. The quaternion conjugate $\tilde U_{\mathrm b}^{\natural}$ is not a solution (it is the inverse transformation). More generally, if $P$ is any unit-norm rotor with $P\tilde{V}P^\dagger = ic\,e_t$, then $\tilde U_{\mathrm b}P$ is another for every spatial rotation $\tilde u_{\mathrm r}\in SU(2)$, since $\tilde u_{\mathrm r}(ic\,e_t)\tilde u_{\mathrm r}^{*} = ic\,\tilde u_{\mathrm r}\tilde u_{\mathrm r}^\dagger = ic\,e_t$. The four-velocity therefore determines the rotor only up to left multiplication by a rotation — equivalently, it determines the boost and leaves the orientation of the rest frame free. Among this family, (14) picks the unique Hermitian representative with positive scalar part (the other Hermitian member, $-\tilde U_{\mathrm b}$, generates the same transformation). This is why the Thomas–Wigner rotation of Problem 3 is invisible in a single four-velocity but reappears in the composition of two of them: the four-velocity carries a boost, not a rotation.
 
 ## Problem 5: A Varying Rapidity, and the Boundary of Problem 2
 
@@ -332,15 +332,15 @@ The following are left to the reader; they extend the same tools and use the sam
 
 1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{V}$ and Problem 1, show that $\tilde U_{\vec v_b}\tilde{P}\tilde U_{\vec v_b}^{*} = iE_2/c\,e_t + \vec p_2$ with $E_2 = \gamma_b(E-\vec v_b\cdot\vec p)$ and $\vec p_2 = \vec p + (\gamma_b-1)\frac{\vec v_b\cdot\vec p}{v_b^2}\vec v_b - \gamma_b\frac{E}{c^2}\vec v_b$. Verify the mass shell $\tilde P_2{\tilde P_2^{\natural}} = -m^2c^2$ and recover the aberration of light by setting $m=0$.
 
-2. **Antiparallel boosts.** For $\vec u_z = -\vec u_y$, show that $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ is a pure boost of rapidity $|\psi_1-\psi_2|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |v_{b_1}-v_{b_2}|/(1-v_{b_1}v_{b_2}/c^2)$ and compare with Problem 1(d).
+2. **Antiparallel boosts.** For $\vec u_z = -\vec u_y$, show that $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is a pure boost of rapidity $|\psi_1-\psi_2|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |v_{b_1}-v_{b_2}|/(1-v_{b_1}v_{b_2}/c^2)$ and compare with Problem 1(d).
 
-3. **The two orderings.** Show that $\tilde U_{\mathrm L,1}\tilde U_{\mathrm L,2}$ and $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ are related by conjugation with a unit quaternion, and determine the relative rotation. For equal projected rapidities show that the relative rotation is by $2\theta_W$ about $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$.
+3. **The two orderings.** Show that $\tilde U_{\mathrm b,1}\tilde U_{\mathrm b,2}$ and $\tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ are related by conjugation with a unit quaternion, and determine the relative rotation. For equal projected rapidities show that the relative rotation is by $2\theta_W$ about $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$.
 
 4. **The non-relativistic limit.** Expand (8) and (10) for $v_{b_i}/c\ll 1$. Show that the composed velocity tends to $\vec v_{b_1}+\vec v_{b_2}$ and that $\theta_W = O(v_{b_1}v_{b_2}/c^2)$, giving the leading correction to Galilean velocity addition. Identify which term in (5) is responsible for the Wigner rotation in this limit.
 
 5. **Boost in a medium.** Redo Problems 1–3 with the local speed of light $c = 1/\sqrt{\epsilon\mu}$ in place of $c_0$, treating $c$ as a fixed local constant. Which of the results (1)–(12) change, and which are invariant? Discuss the sense in which the rotor becomes a field when $\epsilon$ and $\mu$ vary from point to point.
 
-6. **A single four-velocity cannot see a rotation.** For a general unit-norm $P = \tilde{H}\tilde u$ show that the four-velocity of the frame reached from rest is $ic\,P^{-1}(P^{-1})^{*} = ic\,\tilde u^{-1}(\tilde{H}^{\natural})^2\tilde u$, and that $\tilde{H}$ alone (a boost) gives a different four-velocity unless $\tilde u$ commutes with $(\tilde{H}^{\natural})^2$. Reconcile this with Problem 4(d).
+6. **A single four-velocity cannot see a rotation.** For a general unit-norm $P = \tilde{H}\tilde u_{\mathrm r}$ show that the four-velocity of the frame reached from rest is $ic\,P^{-1}(P^{-1})^{*} = ic\,\tilde u_{\mathrm r}^{-1}(\tilde{H}^{\natural})^2\tilde u_{\mathrm r}$, and that $\tilde{H}$ alone (a boost) gives a different four-velocity unless $\tilde u_{\mathrm r}$ commutes with $(\tilde{H}^{\natural})^2$. Reconcile this with Problem 4(d).
 
 ## Summary
 
@@ -350,9 +350,9 @@ We have applied the boost biquaternion and the rotor conjugation to four-velocit
 
 2. **Collinear composition.** Two boosts along one direction multiply to a pure boost of summed rapidity, (3), giving rapidity addition and the velocity-addition formula $w = (v_{b_1}+v_{b_2})/(1+v_{b_1}v_{b_2}/c^2)$.
 
-3. **Non-collinear composition.** The product $P = \tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}$, about the axis $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\psi}{2}$ exactly. The numerical instance $\psi_1=\psi_2=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
+3. **Non-collinear composition.** The product $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ is Hermitian only for parallel or antiparallel directions; otherwise it is a boost times a rotation, with total rapidity (8) and Thomas–Wigner angle (9)–(10), $\tan\frac{\theta_W}{2} = \frac{\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\sin\phi}{\cosh\frac{\psi_1}{2}\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\sinh\frac{\psi_2}{2}\cos\phi}$, about the axis $\vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ (11). For equal orthogonal rapidities $\tan\frac{\theta_W}{2} = \tanh^2\frac{\psi}{2}$ exactly. The numerical instance $\psi_1=\psi_2=\operatorname{atanh}0.6$, orthogonal, has composed speed $0.7683749c$ and Wigner angle $12.68038^{\circ}$.
 
-4. **The parent's square-root relation.** $\tilde U_{\mathrm L} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_6$ is correct, with the branch $\mathrm{Sc}>0$; it is the **lab-to-rest** rotor, since $\tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} = ic\,e_t$ and $\tilde U_{\mathrm L}(ic\,e_t)\tilde U_{\mathrm L}^{*}$ has velocity $-\vec v$. The rest-to-lab rotor is the conjugate $\tilde U_{\mathrm L}^{\natural}$. The four-velocity determines the rotor only up to a rotation of the rest frame; (14) selects the Hermitian representative.
+4. **The parent's square-root relation.** $\tilde U_{\mathrm b} = \sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_6$ is correct, with the branch $\mathrm{Sc}>0$; it is the **lab-to-rest** rotor, since $\tilde U_{\mathrm b}\tilde{V}\tilde U_{\mathrm b}^{*} = ic\,e_t$ and $\tilde U_{\mathrm b}(ic\,e_t)\tilde U_{\mathrm b}^{*}$ has velocity $-\vec v$. The rest-to-lab rotor is the conjugate $\tilde U_{\mathrm b}^{\natural}$. The four-velocity determines the rotor only up to a rotation of the rest frame; (14) selects the Hermitian representative.
 
 5. **A varying rapidity.** When the boost parameter is a function $\chi(\tau)$ of a scalar trajectory parameter, the coordinate velocity (Problem 5) is $\beta = (\tanh\chi + \tau\frac{d\chi}{d\tau})/(1 + \tau\frac{d\chi}{d\tau}\tanh\chi)$, the same rational form as the addition law with $\tau\frac{d\chi}{d\tau}$ replacing a second rapidity, and the worldline is timelike exactly while $|\tau\frac{d\chi}{d\tau}| < 1$. For $\chi = \alpha\tau$ the velocity reaches $1$ at $\alpha\tau = 1$ and peaks at $\beta = 1.02049$ at $\alpha\tau = \sqrt{2}$. This is not a counterexample to Problem 2: it composes a *varying* rotor, not two fixed rapidities, and past $|\tau\frac{d\chi}{d\tau}| = 1$ the worldline is no longer timelike.
 
@@ -377,9 +377,9 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 | $\psi_v$, $\psi_1$, $\psi_2$ | Rapidities |
 | $\vec v_b$, $\vec {u_y}_i$ | Boost velocity, boost directions |
 | $\phi$ | Angle between $\vec u_y$ and $\vec u_z$ |
-| $P = \tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ | Product of two boost rotors |
+| $P = \tilde U_{\mathrm b,2}\tilde U_{\mathrm b,1}$ | Product of two boost rotors |
 | $a$, $\vec q$, $\vec w$ | Real scalar, real vector, real vector in $P = a+\vec q+i\vec w$ |
-| $\tilde{H}$, $\tilde u$ | Boost part and rotation part of $P = \tilde{H}\tilde u$ |
+| $\tilde{H}$, $\tilde u_{\mathrm r}$ | Boost part and rotation part of $P = \tilde{H}\tilde u_{\mathrm r}$ |
 | $\Psi$ | Total rapidity, $\cosh\Psi = \cosh\psi_1\cosh\psi_2+\sinh\psi_1\sinh\psi_2\cos\phi$ |
 | $\theta_W$ | Thomas–Wigner angle |
 | $\vec u_4$ | Axis of the boost part $\tilde{H}$ |

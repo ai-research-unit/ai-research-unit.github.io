@@ -26,7 +26,7 @@ $$
 \qquad p_\epsilon\geq0, \quad \sum_\epsilon p_\epsilon = 1,
 $$
 
-are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ with $\tilde H_j = -\vec e_j\otimes\vec e_j \in \mathbb{M}_+^{\otimes 2}$. These are the readings of the plain form that pair the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.
+are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j^{*})$ with $\tilde H_j = -\vec e_j\otimes\vec e_j \in \mathbb{M}_+^{\otimes 2}$. These are the readings of the plain form that pair the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.
 
 ## Bipartite States and Their Mutual Information
 
@@ -105,7 +105,7 @@ $$
  e_t\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
 $$
 
-with outcomes of probability $p_\pm = \mathrm{Tr}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{AB}]$ and conditional states of $A$
+with outcomes of probability $p_\pm = 2\,\mathrm{Sc}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{AB}] = \operatorname{Tr}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{AB}]$, the trace being the final reading at normalisation and conditional states of $A$
 
 $$
 \tilde{Ϛ}_{A|\pm} = \frac{\mathrm{Tr}_B\bigl[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{AB}(e_t\otimes\tilde{\Pi}_{1,2})\bigr]}{p_\pm}.
@@ -202,9 +202,9 @@ The state is separable because $0.4+0.35+0.2 = 0.95\leq1$, yet the discord is po
 
 The example of the previous section is the point of the article, and it deserves to be stated in the framework's terms:
 
-> In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive elements normalised by $\langle\tilde{Ϛ},e_t\otimes e_t\rangle=\tfrac14$ (trace one in the $4\times4$ image) that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.
+> In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive elements normalised by $\langle\tilde{Ϛ},e_t\otimes e_t\rangle_{*}=\tfrac14$ (trace one in the $4\times4$ image) that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.
 
-The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ are the plain-form readings that pair the state with the three tensor-product observables $\tilde H_j = -\vec e_j\otimes\vec e_j$. The criterion is a property of the triple of plain-form readings; separability, entanglement, and discord of the family are all read off those three numbers.
+The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j^{*})$ are the plain-form readings that pair the state with the three tensor-product observables $\tilde H_j = -\vec e_j\otimes\vec e_j$. The criterion is a property of the triple of plain-form readings; separability, entanglement, and discord of the family are all read off those three numbers.
 
 The physical meaning is that entanglement is one kind of quantum correlation and discord is a broader one. A separable state can still be **quantumly correlated** in the sense that no measurement on one subsystem leaves the other in a state that, averaged over outcomes, accounts for the total mutual information. In the framework this is visible directly: the total correlation $I(A:B)$ is fixed by the spectrum of $\tilde{Ϛ}_{AB}$, i.e. by the three readings of the plain form $c_j$; the classical correlation $J(A|B)$ is fixed by the conditional states after a coordinate measurement; and the difference, the discord, is what no local measurement can reach.
 
@@ -213,7 +213,7 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 **What it does.**
 
 - It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the plain form, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.
-- It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three readings of the plain form $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ with $\tilde H_j = -\vec e_j\otimes\vec e_j$.
+- It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three readings of the plain form $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j^{*})$ with $\tilde H_j = -\vec e_j\otimes\vec e_j$.
 - It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit biquaternion-norm statement.
 - It exhibits a separable state with positive discord and verifies the separability criterion and the discord numerically.
 
@@ -273,7 +273,7 @@ with marginals $\tilde{Ϛ}_A = \tilde{Ϛ}_B = \tfrac12 e_t$ and entropy a functi
 | $\tilde{\Pi}_{1,2} = \tfrac12(e_t\pm i\vec u)$ | Projective measurement on $B$ |
 | $J(A|B) = S(\tilde{Ϛ}_A)-S(A|\{\tilde{\Pi}\})$ | Classical mutual information |
 | $D(A|B) = I(A:B)-\max J(A|B)$ | Quantum discord |
-| $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ | Correlation coefficients |
+| $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j^{*})$ | Correlation coefficients |
 | $\tilde H_j = -\vec e_j\otimes\vec e_j$ | Tensor-product observables |
 | $\tilde{Ϛ}_{AB} = \tfrac14(e_t\otimes e_t+\sum_j c_j(i\vec e_j)\otimes(i\vec e_j))$ | Bell-diagonal state |
 | $\sum_j|c_j|\leq1$ | Separability criterion (Bell-diagonal) |
