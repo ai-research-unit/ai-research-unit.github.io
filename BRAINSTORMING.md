@@ -7626,6 +7626,32 @@ NOTATION
 
 
 
+
+
+
+
+are you 100 % sure the articles can be written with no product is involved here ?   ### Algebra
+  The Complex Numbers (ℂ)
+  Galois Theory of ℂ/ℝ
+  Worked Examples in the Complex Algebra
+
+#### The Complex Numbers as Linear Spaces
+  1. The Complex Numbers as a Vector Space over ℝ
+  2. Complex Subspaces
+  3. Decompositions and Comparison of the Remarkable Subspaces of the Complex Numbers
+  4. The Matrix Element Representations of the Complex Numbers
+AND I M VERY SUSPICIOUS I think we should start with R2 we should not talk about complex in these first articles, because we are on R2 we should only talk about complex numbers here : ##### GPA
+
+
+
+
+
+
+
+
+
+
+
 # Why the qubit state space admits rotations only, and what a boost does instead
 
 ## 1. Setup
