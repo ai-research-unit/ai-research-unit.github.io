@@ -123,9 +123,9 @@ $$</p>
 <p>$$
 \tilde Q=q_t\,e_t+i q'_x\vec e_x+i q'_y\vec e_y+i q'_z\vec e_z,
 $$</p>
-<p>with $q_t,q'_x,q'_y,q'_z\in\mathbb{R}$. On the physical dictionary $q_t=c t'$ and $(q'_x,q'_y,q'_z)=(x',y',z')$, so the general element is</p>
+<p>with $q_t,q'_x,q'_y,q'_z\in\mathbb{R}$. On the physical dictionary $q_t=c t$ and $(q'_x,q'_y,q'_z)=(x',y',z')$, so the general element is</p>
 <p>$$
-\tilde Q=c t'\,e_t+i\bigl(x'\vec e_x+y'\vec e_y+z'\vec e_z\bigr).
+\tilde Q=c t\,e_t+i\bigl(x'\vec e_x+y'\vec e_y+z'\vec e_z\bigr).
 $$</p>
 <p>The basis is $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the real scalar block $A_1=\mathbb{R}e_t$ and the imaginary vector block $B_2=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$. The temporal direction carries a real coordinate and the three spatial directions carry imaginary ones, the reverse of the material sector; the placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.</p>
 <p>The sector is not a subalgebra: the product of two Hermitian elements is Hermitian exactly when they commute, and the commutator of two of them lies in $\mathbb{M}_-$. The sector is a <strong>special Jordan algebra</strong> under the symmetrised product $\tfrac12\{\tilde Q_1,\tilde Q_2\}$, and it is not a Lie algebra.</p>
@@ -146,7 +146,7 @@ $$</p>
 <h3 id="the-norm-the-spectrum-and-the-positive-cone">The Norm, the Spectrum and the Positive Cone</h3>
 <p>The quaternionic norm on the sector is</p>
 <p>$$
-N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2=c^2{t'}^2-{x'}^2-{y'}^2-{z'}^2,
+N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2=c^2{t}^2-{x'}^2-{y'}^2-{z'}^2,
 $$</p>
 <p>of signature $(1,3)$: one positive temporal direction and three negative spatial ones. It is indefinite, and it is not the positive form that a density matrix would suggest.</p>
 <p>Every Hermitian element has a closed-form spectrum. Write $\tilde H=h_t e_t+i\vec h$ with $h_t$ and $\vec h$ real, and let $\vec u_h=\vec h/\lvert\vec h\rvert$ for $\vec h\neq0$. Then</p>
@@ -520,10 +520,10 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="limits">Limits</h2>
-<p>The article establishes the algebra of the sector and its interpretation as a two-state system. It does not establish that the sector is a distinct sector of the physical world, and it does not supply a dynamics, a coupling or an empirical prediction. The Born rule is derived as a property of the pairing, not as a frequency. The Bloch ball is the state space of the frame, not a relativistic state space. The identification of the projection with a physical measurement is the interpretive step, and the collapse is not derived. The sector's time is the real coordinate $c t'$, not the material time $i c t$.</p>
+<p>The article establishes the algebra of the sector and its interpretation as a two-state system. It does not establish that the sector is a distinct sector of the physical world, and it does not supply a dynamics, a coupling or an empirical prediction. The Born rule is derived as a property of the pairing, not as a frequency. The Bloch ball is the state space of the frame, not a relativistic state space. The identification of the projection with a physical measurement is the interpretive step, and the collapse is not derived. The sector's time is the real coordinate $c t$, not the material time $i c t'$.</p>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde Q=c t'\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$.</li>
+<li>The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde Q=c t\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$.</li>
 <li>Its norm is indefinite of signature $(1,3)$; positivity is a condition on the eigenvalues, not on the norm.</li>
 <li>The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are the halvings of the roots of $+1$ and are zero divisors.</li>
 <li>The state slice (trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.</li>
@@ -549,7 +549,7 @@ $$</p>
 <td>the Hermitian subspace, the informational sector</td>
 </tr>
 <tr>
-<td>$\tilde Q=c t' e_t+i\vec q'$</td>
+<td>$\tilde Q=c t e_t+i\vec q'$</td>
 <td>an informational element</td>
 </tr>
 <tr>

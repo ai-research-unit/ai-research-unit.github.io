@@ -69,9 +69,9 @@
 <h2 id="introduction">Introduction</h2>
 <p>The relativistic particle is the simplest physical object the biquaternion framework has to describe: a single point mass with no structure, moving on a worldline. Everything about it is kinematic. It has a position, a four-velocity, a four-momentum and a mass-shell relation; it has no spin, no internal coordinates, and no field of its own. This makes it the natural first object of the non-quantum theory, and it is the object against which every later construction is calibrated.</p>
 <p>Two facts from the algebra organize the whole account, and they are worth stating at the outset.</p>
-<p><strong>The interval is the biquaternion norm.</strong> The material coordinate is the anti-Hermitian biquaternion $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm</p>
+<p><strong>The interval is the biquaternion norm.</strong> The material coordinate is the anti-Hermitian biquaternion $\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm</p>
 <p>$$
-\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = (ic\,dt)^2 +dx^2+dy^2+dz^2 = -c^2dt^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = (ic\,dt')^2 +dx^2+dy^2+dz^2 = -c^2d{t'}^2 +dx^2+dy^2+dz^2 .
 $$</p>
 <p>The algebra therefore does not carry a metric that has to be attached to spacetime from outside; its own biquaternion norm, restricted to the real four-dimensional subspace $\mathbb{M}_-$, <em>is</em> the Minkowski form. This is the level-1 identity form $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{B}$, whose restriction to the real material slice is the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$; both levels are fixed by the companion article <em>Conventions in the Biquaternion Universe</em>, and no metric is introduced here beyond them.</p>
 <p><strong>The three causal types are the three signs of the biquaternion norm.</strong> A displacement is timelike, null or spacelike according to whether $\langle\cdot\rangle_{\natural}$ is negative, zero or positive. The particle of this article is the timelike case: its tangent stays strictly inside the null cone, and the biquaternion norm of its tangent is a fixed negative constant. The null case, and the cone that separates the two, is the subject of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>.</p>
@@ -80,22 +80,22 @@ $$</p>
 <h2 id="the-worldline-and-the-biquaternion-norm">The Worldline and the Biquaternion Norm</h2>
 <p>A relativistic particle is described by a curve in the material sector,</p>
 <p>$$
-\tilde{R}(\lambda) : \lambda \longmapsto \tilde{R}(\lambda) = ic\,t(\lambda)\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)(\lambda) \in \mathbb{M}_- ,
+\tilde{R}(\lambda) : \lambda \longmapsto \tilde{R}(\lambda) = ic\,t'(\lambda)\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)(\lambda) \in \mathbb{M}_- ,
 $$</p>
 <p>with $\lambda$ an arbitrary parameter. The physical content of the curve is not the arbitrary parametrization but the displacement one-form</p>
 <p>$$
-d\tilde{R} = ic\,dt\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+d\tilde{R} = ic\,dt'\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$</p>
 <p>whose biquaternion norm is</p>
 <p>$$
-\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = -c^2dt^2 +dx^2+dy^2+dz^2 .
+\langle d\tilde{R}\rangle_{\natural} = d\tilde{R}\,d\tilde{R}^{\natural} = -c^2d{t'}^2 +dx^2+dy^2+dz^2 .
 $$</p>
 <p>Off the null set, $\langle d\tilde{R}\rangle_{\natural}$ has the sign of $-d\tau^2$ for a real number $d\tau$, and the <strong>proper time</strong> is defined by</p>
 <p>$$
-\boxed{\; c^2\,d\tau^2 = -\,\langle d\tilde{R}\rangle_{\natural} = c^2dt^2 -(dx^2+dy^2+dz^2) \;}
+\boxed{\; c^2\,d\tau^2 = -\,\langle d\tilde{R}\rangle_{\natural} = c^2d{t'}^2 -(dx^2+dy^2+dz^2) \;}
 \qquad\Longrightarrow\qquad
-d\tau = dt\sqrt{1 - \frac{\vec v^2}{c^2}},
-\qquad \vec v = \frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt} .
+d\tau = dt'\sqrt{1 - \frac{\vec v^2}{c^2}},
+\qquad \vec v = \frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt'} .
 $$</p>
 <p>The definition is real precisely when the worldline is timelike, $\langle d\tilde{R}\rangle_{\natural} < 0$, and it is the condition that fixes which curves describe a particle of nonzero rest mass. The three cases are the three signs of the biquaternion norm:</p>
 <p>$$
@@ -111,10 +111,10 @@ $$</p>
 <p>The <strong>four-velocity</strong> is the tangent with respect to proper time,</p>
 <p>$$
 \tilde{V} = \frac{d\tilde{R}}{d\tau}
-= \frac{dt}{d\tau}\left(ic\,e_t + \frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt}\right)
+= \frac{dt'}{d\tau}\left(ic\,e_t + \frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt'}\right)
 = \gamma\left(ic\,e_t + \vec v\right),
 \qquad
-\gamma = \frac{dt}{d\tau} = \frac{1}{\sqrt{1-\vec v^2/c^2}} .
+\gamma = \frac{dt'}{d\tau} = \frac{1}{\sqrt{1-\vec v^2/c^2}} .
 $$</p>
 <p>It lies in $\mathbb{M}_-$ because both terms do: $ic\,e_t$ is the imaginary scalar direction of the material sector and $\vec v$ is a real vector. Its biquaternion norm is the defining normalization of the parameter:</p>
 <p>$$
@@ -170,7 +170,7 @@ $$</p>
 \langle\tilde{P}\rangle_{\natural} = -m^2c^2 < 0
 \qquad (m > 0),
 $$</p>
-<p>and the invariant $\langle\tilde{P}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $ict$ convention.</p>
+<p>and the invariant $\langle\tilde{P}\rangle_{\natural}$ is what the Lorentz group preserves, so the classification of a particle as massive is frame-independent. The relation between the two energy equations is worth recording: in the rest frame $\vec p = 0$ and $E = mc^2$, so the imaginary scalar part of the four-momentum at rest is $i mc$, which is the rest energy in the $ict'$ convention.</p>
 <p>Two limits fix the picture. As $m\to 0$ with $\vec p$ held fixed the mass shell collapses onto the null cone $\langle\tilde{P}\rangle_{\natural} = 0$, and the particle becomes the zero divisor of the companion article <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>. As $v\ll c$ the energy separates into the rest energy and the kinetic term,</p>
 <p>$$
 E = \gamma mc^2 = mc^2 + \tfrac12 m\vec v^2 + O(\vec v^4/c^2),
@@ -211,7 +211,7 @@ $$</p>
 <p>$$
 S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
 = -mc\int\sqrt{-\langle d\tilde{R}\rangle_{\natural}}
-= -mc^2\int\frac{dt}{\gamma} .
+= -mc^2\int\frac{dt'}{\gamma} .
 $$</p>
 <p>The sign is fixed by the requirement that a free particle move forward in time with positive energy, and the square root is real on a causal worldline by the definition of the proper time. In terms of the coordinate velocity the Lagrangian is</p>
 <p>$$
@@ -225,7 +225,7 @@ $$</p>
 $$</p>
 <p>so the free Lagrangian's canonical momentum is the physical momentum. Its Legendre transform is the free energy $E = \vec p\cdot\vec v - L = \gamma mc^2$, and the equation of motion is the vanishing of the Euler–Lagrange derivative,</p>
 <p>$$
-\frac{d}{dt}\frac{\partial L}{\partial\vec v} - \left(\frac{\partial L}{\partial x}\vec e_x+\frac{\partial L}{\partial y}\vec e_y+\frac{\partial L}{\partial z}\vec e_z\right) = \frac{d\vec p}{dt} = 0 ,
+\frac{d}{dt'}\frac{\partial L}{\partial\vec v} - \left(\frac{\partial L}{\partial x}\vec e_x+\frac{\partial L}{\partial y}\vec e_y+\frac{\partial L}{\partial z}\vec e_z\right) = \frac{d\vec p}{dt'} = 0 ,
 $$</p>
 <p>so the free four-momentum $\tilde{P} = m\tilde{V}$ is constant. The same statement in the four-dimensional language is that the free worldline is the straight timelike line,</p>
 <p>$$
@@ -296,9 +296,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The relativistic particle is a timelike worldline in the material sector $\mathbb{M}_-$,</p>
 <p>$$
-\tilde{R}(\tau) = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,
+\tilde{R}(\tau) = ic\,t'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,
 \qquad
-d\tau^2 = -\frac{1}{c^2}\langle d\tilde{R}\rangle_{\natural} = dt^2 - \frac{dx^2+dy^2+dz^2}{c^2},
+d\tau^2 = -\frac{1}{c^2}\langle d\tilde{R}\rangle_{\natural} = d{t'}^2 - \frac{dx^2+dy^2+dz^2}{c^2},
 $$</p>
 <p>along which the four-velocity</p>
 <p>$$
@@ -317,7 +317,7 @@ $$</p>
 <p>satisfies the mass-shell relation $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$, equivalently $E^2 = \vec p^2c^2 + m^2c^4$. The rapidity $\psi$, with $v = c\tanh\psi$ and $\gamma = \cosh\psi$, makes the four-velocity $\tilde{V} = ic\cosh\psi\,e_t + c\sinh\psi\,\vec u$ and makes collinear velocity addition the sum of rapidities. The free action is the invariant length</p>
 <p>$$
 S[\tilde{R}] = -mc\int\sqrt{-\,d\tilde{R}\,d\tilde{R}^{\natural}}
-= -mc^2\int\frac{dt}{\gamma},
+= -mc^2\int\frac{dt'}{\gamma},
 \qquad
 L(\vec v) = -\frac{mc^2}{\gamma},
 $$</p>
@@ -357,7 +357,7 @@ $$</p>
 <td>Biquaternion norm (level 1: identity on $\mathbb{C}$)</td>
 </tr>
 <tr>
-<td>$\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
+<td>$\tilde{R} = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
 <td>Four-position, in $\mathbb{M}_-$</td>
 </tr>
 <tr>

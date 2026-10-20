@@ -74,30 +74,30 @@
 <li>The <strong>four-velocity biquaternion</strong> $\tilde{V}$, which describes the state of motion.</li>
 <li>The <strong>rotor conjugation</strong> $\tilde{Q}_2 = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$, which implements the transformation on four-vectors.</li>
 </ol>
-<p>The article is organized as follows. First the $ict$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.</p>
+<p>The article is organized as follows. First the $ict'$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.</p>
 <p>The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v_b$ (or $\vec v$) is reserved for particle and frame velocities.</p>
-<h2 id="the-math18-convention-and-the-euclidean-metric">The $ict$ Convention and the Euclidean Metric</h2>
-<p>The foundation of the biquaternion formulation of the Lorentz transformation is the $ict$ convention. The Minkowski interval is written</p>
+<h2 id="the-math18-convention-and-the-euclidean-metric">The $ict'$ Convention and the Euclidean Metric</h2>
+<p>The foundation of the biquaternion formulation of the Lorentz transformation is the $ict'$ convention. The Minkowski interval is written</p>
 <p>$$
-ds^2 = -c^2\,dt^2 + dx^2 + dy^2 + dz^2.
+ds^2 = -c^2\,d{t'}^2 + dx^2 + dy^2 + dz^2.
 $$</p>
-<p>With the substitution $x^0 = ict$, the interval becomes</p>
+<p>With the substitution $x^0 = ict'$, the interval becomes</p>
 <p>$$
-ds^2 = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2.
+ds^2 = (ic\,dt')^2 + dx^2 + dy^2 + dz^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2.
 $$</p>
 <p>This is the <strong>Euclidean</strong> quadratic form in the four real variables $(x^0, x^1, x^2, x^3)$. The Lorentzian signature has been absorbed into the <strong>complex structure</strong> of the time coordinate.</p>
-<p>The group that preserves this form on $\mathbb{R}^4$ is the rotation group $SO(4)$. When the coordinates are complex — as they are when $x^0 = ict$ with $t$ real — the group becomes $SO(4, \mathbb{C})$, the group of complex rotations preserving the <strong>general plain bilinear form</strong></p>
+<p>The group that preserves this form on $\mathbb{R}^4$ is the rotation group $SO(4)$. When the coordinates are complex — as they are when $x^0 = ict'$ with $t'$ real — the group becomes $SO(4, \mathbb{C})$, the group of complex rotations preserving the <strong>general plain bilinear form</strong></p>
 <p>$$
 (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2.
 $$</p>
-<p>The Lorentz group $SO(1,3)$ is the subgroup of $SO(4,\mathbb{C})$ that preserves the <strong>real slice</strong> $x^0 = ict$ (i.e., the slice on which $x^0$ is purely imaginary and $x^1, x^2, x^3$ are real). So:</p>
+<p>The Lorentz group $SO(1,3)$ is the subgroup of $SO(4,\mathbb{C})$ that preserves the <strong>real slice</strong> $x^0 = ict'$ (i.e., the slice on which $x^0$ is purely imaginary and $x^1, x^2, x^3$ are real). So:</p>
 <p><strong>The Lorentz group is a real slice of the complex rotation group $SO(4, \mathbb{C})$.</strong></p>
 <p>This is the precise sense in which the Lorentz transformation is a rotation: it is a rotation in the complexified four-dimensional space, restricted to the real slice on which the time coordinate is imaginary.</p>
 <h3 id="the-subtlety-of-working-over-math36">The Subtlety of Working Over $\mathbb{C}$</h3>
 <p>The statement "the Lorentz transformation is a rotation" requires care, because we are working over the complex numbers. The key points:</p>
 <p><strong>1. The rotation angle is imaginary.</strong> A boost is a rotation by an <strong>imaginary angle</strong> in a plane that mixes the time direction with a spatial direction. To see this, consider the spatial rotation rotor in the plane $(x^0, x^1)$ by angle $\theta$: it is $\cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u_{01}$, where $\vec u_{01}$ is the unit bivector for the $(x^0, x^1)$ plane. Substituting $\theta = i\psi$ (imaginary angle) gives $\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{01}$, which is the <strong>boost</strong> rotor in the $(x^0, x^1)$ plane. The boost is therefore a rotation by an imaginary angle, and the parameter $\psi$ (the rapidity) is the "imaginary angle" of the rotation.</p>
 <p><strong>2. The bilinear form is complex.</strong> The quantity preserved by the rotation is the general plain bilinear form $(x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$, which is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).</p>
-<p><strong>3. The Euclidean form is only apparent.</strong> The Euclidean appearance of the metric $ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$ is a consequence of using the imaginary coordinate $x^0 = ict$. On the real slice, the metric is still Lorentzian, because the coordinate $x^0$ is constrained to be imaginary. The "Euclidean" character is a formal device that trades the Lorentzian signature for a complex structure.</p>
+<p><strong>3. The Euclidean form is only apparent.</strong> The Euclidean appearance of the metric $ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$ is a consequence of using the imaginary coordinate $x^0 = ict'$. On the real slice, the metric is still Lorentzian, because the coordinate $x^0$ is constrained to be imaginary. The "Euclidean" character is a formal device that trades the Lorentzian signature for a complex structure.</p>
 <p>The biquaternion algebra $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ is the natural home of these complex rotations: it contains the rotor biquaternions that generate them, and its complex structure encodes the imaginary rotation angles.</p>
 <h2 id="the-boost-biquaternion">The Boost Biquaternion</h2>
 <p>The Lorentz boost is generated by the <strong>boost biquaternion</strong></p>
@@ -285,7 +285,7 @@ $$</p>
 \qquad
 \mathcal{E}^{0} = e_t,\quad \mathcal{E}^{k} = -\vec e_k,
 $$</p>
-<p>the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict$, the pair $(q^0, q^k) = (ict, x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm L}$, the components transform as</p>
+<p>the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict'$, the pair $(q^0, q^k) = (ict', x_k)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm L}$, the components transform as</p>
 <p>$$
 q_2^{\mu} = \sum_{\nu} L^{\mu}{}_{\nu}\, q^{\nu},
 \qquad
@@ -348,11 +348,11 @@ $$</p>
 <h2 id="the-complex-nature-of-the-rotation">The Complex Nature of the Rotation</h2>
 <p>We are now in a position to discuss the subtleties of working over the complex numbers.</p>
 <h3 id="real-vs-complex-rotations">Real vs. Complex Rotations</h3>
-<p>The Lorentz transformation is a <strong>real</strong> transformation of the real coordinates $(t, x, y, z)$. But in the $ict$ convention, the time coordinate is $ict$, which is <strong>imaginary</strong> in the real slice. So the transformation that acts on $(ict, x, y, z)$ is a <strong>complex</strong> rotation, even though the original transformation on $(t, x, y, z)$ is real.</p>
+<p>The Lorentz transformation is a <strong>real</strong> transformation of the real coordinates $(t', x, y, z)$. But in the $ict'$ convention, the time coordinate is $ict'$, which is <strong>imaginary</strong> in the real slice. So the transformation that acts on $(ict', x, y, z)$ is a <strong>complex</strong> rotation, even though the original transformation on $(t', x, y, z)$ is real.</p>
 <p>The complex nature of the rotation appears in the following places:</p>
 <ol>
 <li>
-<p><strong>The rotation angle is imaginary.</strong> A boost is a rotation by an imaginary angle $i\psi$ in the plane spanned by the time direction and the boost direction. In real Euclidean geometry, a rotation by an imaginary angle is not a rotation at all — it is a <strong>hyperbolic rotation</strong>. The Lorentz boost is precisely this: a hyperbolic rotation in the $(ict, x)$ plane.</p>
+<p><strong>The rotation angle is imaginary.</strong> A boost is a rotation by an imaginary angle $i\psi$ in the plane spanned by the time direction and the boost direction. In real Euclidean geometry, a rotation by an imaginary angle is not a rotation at all — it is a <strong>hyperbolic rotation</strong>. The Lorentz boost is precisely this: a hyperbolic rotation in the $(ict', x)$ plane.</p>
 </li>
 <li>
 <p><strong>The rotor has an imaginary vector part.</strong> The boost biquaternion $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ has a purely imaginary vector part. In contrast, a spatial rotation rotor has a real vector part.</p>
@@ -362,12 +362,12 @@ $$</p>
 </li>
 </ol>
 <h3 id="the-euclidean-form-is-only-apparent">The Euclidean Form Is Only Apparent</h3>
-<p>The Euclidean form $ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$ with $x^0 = ict$ appears to be a genuine Euclidean metric on $\mathbb{R}^4$. But it is not: the coordinate $x^0$ is constrained to be imaginary (since $t$ is real and $x^0 = ict$). So the "real slice" on which the Lorentz transformations act is not all of $\mathbb{R}^4$ but the subspace $\{(ict, x, y, z) : t, x, y, z \in \mathbb{R}\}$, which is a <strong>complex subspace</strong> of $\mathbb{C}^4$.</p>
+<p>The Euclidean form $ds^2 = (x^0)^2 + (x^1)^2 + (x^2)^2 + (x^3)^2$ with $x^0 = ict'$ appears to be a genuine Euclidean metric on $\mathbb{R}^4$. But it is not: the coordinate $x^0$ is constrained to be imaginary (since $t'$ is real and $x^0 = ict'$). So the "real slice" on which the Lorentz transformations act is not all of $\mathbb{R}^4$ but the subspace $\{(ict', x, y, z) : t', x, y, z \in \mathbb{R}\}$, which is a <strong>complex subspace</strong> of $\mathbb{C}^4$.</p>
 <p>The Lorentz group $SO(1,3)$ acts on this slice as the subgroup of $SO(4, \mathbb{C})$ that preserves the slice. So the statement "the Lorentz transformation is a rotation in 4-dimensional Euclidean space" is correct, but the space in question is $\mathbb{C}^4$ with a general plain bilinear form, not $\mathbb{R}^4$ with a real Euclidean form.</p>
 <h2 id="the-local-complex-structure">The Local Complex Structure</h2>
 <p>The boost biquaternion $\tilde U_{\mathrm L}$ uses the speed of light $c$ through the rapidity $\psi$: $\tanh\psi = v_b/c$. In a material medium with permittivity $\epsilon$ and permeability $\mu$, the local speed of light is $c = 1/\sqrt{\epsilon\mu}$, which may differ from the vacuum speed $c_0$.</p>
 <p>This means that the rapidity and the boost biquaternion are <strong>local</strong> quantities: they depend on the local electromagnetic properties of the medium. In vacuum, $c = c_0$ and the rapidity is a fixed function of the velocity. In a medium, $c$ varies from point to point, and the boost biquaternion varies accordingly.</p>
-<p>This is consistent with the program of the companion articles on the $ict$ convention and on complexified spacetime: the complex structure is <strong>local</strong>, determined by the local electromagnetic properties of the medium. The boost biquaternion inherits this locality, and it becomes a <strong>field</strong> in the same sense as the electromagnetic field.</p>
+<p>This is consistent with the program of the companion articles on the $ict'$ convention and on complexified spacetime: the complex structure is <strong>local</strong>, determined by the local electromagnetic properties of the medium. The boost biquaternion inherits this locality, and it becomes a <strong>field</strong> in the same sense as the electromagnetic field.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
 <li>
@@ -402,7 +402,7 @@ $$</p>
 \tilde U_{\mathrm L} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}},
 $$</p>
 <p>the square root being multivalued by sign, with the physical branch selected by $\mathrm{Sc}(\tilde U_{\mathrm L}) > 0$.</p>
-<p>The rotation is <strong>complex</strong> in the sense that the rotation angle (the rapidity) is imaginary in the $ict$ convention. The Euclidean character of the metric is only apparent: the real slice on which the Lorentz transformations act is a complex subspace of $\mathbb{C}^4$, not a real Euclidean space. The Lorentz group $SO(1,3)$ is the subgroup of the complex rotation group $SO(4,\mathbb{C})$ that preserves this slice.</p>
+<p>The rotation is <strong>complex</strong> in the sense that the rotation angle (the rapidity) is imaginary in the $ict'$ convention. The Euclidean character of the metric is only apparent: the real slice on which the Lorentz transformations act is a complex subspace of $\mathbb{C}^4$, not a real Euclidean space. The Lorentz group $SO(1,3)$ is the subgroup of the complex rotation group $SO(4,\mathbb{C})$ that preserves this slice.</p>
 <p>The <strong>same rotor conjugation applies to all four-vectors</strong> in the anti-Hermitian subspace $\mathbb{M}_-$: the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current. The unit-norm biquaternions form the group $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$.</p>
 <p>The transformation itself is fixed by experiment, not by the algebra: aberration, the Fizeau drag and the Michelson–Morley null result select the group $SO^+(1,3)$, and the biquaternion form is a faithful reformulation of that group, so it reproduces those experiments by construction rather than by prediction.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -483,7 +483,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Hermann Minkowski, "Space and Time" (1908), reprinted in <em>The Principle of Relativity</em> (Dover), for the four-dimensional formulation of special relativity.</li>
-<li>Albert Einstein, <em>The Meaning of Relativity</em> (Princeton, 1922), for the $ict$ formulation.</li>
+<li>Albert Einstein, <em>The Meaning of Relativity</em> (Princeton, 1922), for the $ict'$ formulation.</li>
 <li>P. A. M. Dirac, "The quantum theory of the electron," <em>Proceedings of the Royal Society A</em> <strong>117</strong> (1928) 610–624, for the spinor representation of the Lorentz group.</li>
 <li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em>, Vol. 1 (Cambridge, 1984), for the spinor formulation.</li>
 <li>David Hestenes, <em>Space-Time Algebra</em> (Gordon and Breach, 1966), for the geometric algebra formulation of the Lorentz transformation.</li>

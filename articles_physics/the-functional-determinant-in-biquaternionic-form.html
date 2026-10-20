@@ -198,11 +198,11 @@ $$
 the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\lambda$ the definition gives $\zeta(s)=\lambda^{-s}$ and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\lambda$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.</p>
 <p><strong>Heat-kernel evaluation.</strong> The zeta function is evaluated from the heat kernel of the previous article,
 $$
-\zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dt\;t^{s-1}\,K(t),
+\zeta_{S^{(2)}}(s) = \frac{1}{\Gamma(s)}\int_0^\infty dt'\;{t'}^{s-1}\,K(t'),
 \qquad
-K(t) = \mathrm{Tr}\,\exp(-tS^{(2)}),
+K(t') = \mathrm{Tr}\,\exp(-t'S^{(2)}),
 $$
-and the small-$t$ expansion $K(t)\sim(4\pi t)^{-d/2}\sum_n a_n t^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that <em>The Trace Anomaly in Biquaternionic Form</em> uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.</p>
+and the small-$t'$ expansion $K(t')\sim(4\pi t')^{-d/2}\sum_n a_n {t'}^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that <em>The Trace Anomaly in Biquaternionic Form</em> uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.</p>
 <p><strong>A remark on scheme dependence.</strong> Different regularizations (zeta function, proper time with a cutoff, dimensional regularization) differ by local counterterms, and the <em>ratios</em> of determinants of operators of the same type are scheme-independent. In the framework, a scheme-independent statement is one that compares two determinants taken on the same module; this is the same caveat that attends any statement about the biquaternion norm's normalization.</p>
 <h2 id="the-fermionic-determinant-and-its-phase">The Fermionic Determinant and Its Phase</h2>
 <p>The determinant of a fermionic fluctuation operator is the place where the framework's non-central mass term has its clearest consequence.</p>
@@ -222,9 +222,9 @@ whose blocks act between the two minimal left ideals. The mass occupies the diag
 $$
 \det\mathcal{D} = \big|\det\mathcal{D}\big|\,\exp(\,i\phi_{\mathcal{D}}),
 $$
-with the phase $\phi_{\mathcal{D}}$ the object of interest. For a family of operators $\mathcal{D}(t)$ interpolating between two Hermitian endpoints the phase is the <strong>eta invariant</strong> of the family,
+with the phase $\phi_{\mathcal{D}}$ the object of interest. For a family of operators $\mathcal{D}(t')$ interpolating between two Hermitian endpoints the phase is the <strong>eta invariant</strong> of the family,
 $$
-\phi_{\mathcal{D}(t)} = \frac{\pi}{2}\,\eta\big(\mathcal{D}(t)\big) + \text{const},
+\phi_{\mathcal{D}(t')} = \frac{\pi}{2}\,\eta\big(\mathcal{D}(t')\big) + \text{const},
 $$
 a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta$ dependence: the $\theta$ vacuum of <em>The Theta Vacuum in Biquaternionic Form</em> arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.</p>
 <p><strong>Index and anomaly.</strong> The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the trace anomaly of <em>The Trace Anomaly in Biquaternionic Form</em>; the phase's topology is the $\theta$ vacuum of <em>The Theta Vacuum in Biquaternionic Form</em>. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.</p>
@@ -318,7 +318,7 @@ Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$,
 <td>Zeta-function regularization</td>
 </tr>
 <tr>
-<td>$K(t)=\mathrm{Tr}\,\exp(-tS^{(2)})$, $K\sim(4\pi t)^{-d/2}\sum a_n t^n$</td>
+<td>$K(t')=\mathrm{Tr}\,\exp(-t'S^{(2)})$, $K\sim(4\pi t')^{-d/2}\sum a_n {t'}^n$</td>
 <td>Heat kernel; Seeley–DeWitt coefficients</td>
 </tr>
 <tr>

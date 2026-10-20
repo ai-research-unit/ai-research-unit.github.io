@@ -88,7 +88,7 @@ $$</p>
 $$</p>
 <p>Applying $\tilde{\nabla}^{\natural}$ to both sides and using $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$ gives the wave equation</p>
 <p>$$
-\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2}.
+\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial {t'}^2}.
 $$</p>
 <p>This is a <strong>linear, constant-coefficient, hyperbolic</strong> equation. Two structural features follow.</p>
 <p><strong>Feature 1: The equation is linear.</strong> If $\tilde{F}_1$ and $\tilde{F}_2$ are solutions, then any linear combination $\alpha\tilde{F}_1 + \beta\tilde{F}_2$ is also a solution. There is no mechanism for the solution to steepen or to form a discontinuity spontaneously.</p>
@@ -98,7 +98,7 @@ $$</p>
 $$</p>
 <p>i.e., $\nu_4 = \pm c_0\|\nu\|$. The characteristic surfaces are the light cones. The Cauchy problem with data on a non-characteristic surface is well-posed, and the solution propagates along the characteristics at the speed $c_0$.</p>
 <h3 id="the-propagation-of-smoothness">The Propagation of Smoothness</h3>
-<p>In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But <strong>smooth initial data remains smooth for all time</strong>. If the initial field $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, 0)$ is $C^\infty$, then so is $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t)$ for every $t > 0$.</p>
+<p>In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But <strong>smooth initial data remains smooth for all time</strong>. If the initial field $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, 0)$ is $C^\infty$, then so is $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t')$ for every $t' > 0$.</p>
 <p>The reason is that the solution operator is a Fourier multiplier: in the frequency domain, the solution is obtained by multiplying the initial data by a bounded function. The multiplier does not create new singularities; it only propagates the existing ones.</p>
 <p>This is the precise sense in which linear vacuum Maxwell has no shock electromagnetic waves: the nonlinearity that would drive shock formation is simply absent.</p>
 <h3 id="the-characteristic-surfaces-are-not-shocks">The Characteristic Surfaces Are Not Shocks</h3>
@@ -113,7 +113,7 @@ $$</p>
 [\tilde{F}]_S = \tilde{F}^+ - \tilde{F}^-,
 $$</p>
 <p>where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.</p>
-<p>The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $ict$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then</p>
+<p>The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $ict'$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then</p>
 <p>$$
 \partial/\partial Q_\mu \tilde{F} = \{\partial/\partial Q_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
 $$</p>
@@ -148,7 +148,7 @@ $$</p>
 <p>$$
 \{n_0 + i\vec u\}\circ[B]_F = 0 .
 $$</p>
-<p>The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,</p>
+<p>The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict'$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,</p>
 <p>$$
 [b] + i(\vec u,[\vec B]) = 0 ,
 \qquad
@@ -217,11 +217,11 @@ $$</p>
 <h3 id="steepening-and-shock-formation">Steepening and Shock Formation</h3>
 <p>For a plane wave propagating in a Kerr medium, the wave equation for the envelope is approximately</p>
 <p>$$
-\partial/\partial t \tilde{F} + c(I)\,\partial/\partial Q_x \tilde{F} = 0,
+\partial/\partial t' \tilde{F} + c(I)\,\partial/\partial Q_x \tilde{F} = 0,
 $$</p>
-<p>where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a <strong>transport equation</strong> of the nonlinear steepening type. For a scalar field $\phi$ satisfying $\partial/\partial t\phi + c(\phi)\partial/\partial Q_x\phi = 0$, the equation can be written in conservation form</p>
+<p>where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a <strong>transport equation</strong> of the nonlinear steepening type. For a scalar field $\phi$ satisfying $\partial/\partial t'\phi + c(\phi)\partial/\partial Q_x\phi = 0$, the equation can be written in conservation form</p>
 <p>$$
-\partial/\partial t\phi + \partial/\partial Q_x f(\phi) = 0, \qquad \frac{df}{d\phi}(\phi) = c(\phi),
+\partial/\partial t'\phi + \partial/\partial Q_x f(\phi) = 0, \qquad \frac{df}{d\phi}(\phi) = c(\phi),
 $$</p>
 <p>where $f$ is a primitive of $c$. For the biquaternion-valued field, the same structure applies, with $f$ defined as the primitive of $c$ along the direction of propagation.</p>
 <p>By the method of characteristics, the wave profile steepens and forms a <strong>caustic</strong> (the point where the characteristics cross) in finite time. Beyond the caustic, the field becomes multivalued, and the <strong>weak solution</strong> (the physical solution) develops a discontinuity. This is a shock.</p>
@@ -250,11 +250,11 @@ $$</p>
 <p>Magnetohydrodynamics is the setting in which the fluid and electromagnetic descriptions genuinely coincide rather than merely resemble each other, and it is the plainest checkable instance of the fluid–electromagnetism correspondence. Its centre is the <strong>induction equation</strong>.</p>
 <p>For a conducting fluid of velocity $\vec v$ and magnetic diffusivity $\eta$, the magnetic field obeys</p>
 <p>$$
-\partial/\partial t\vec B = \nabla\times(\vec v\times\vec B) + \eta\,\nabla^2\vec B,
+\partial/\partial t'\vec B = \nabla\times(\vec v\times\vec B) + \eta\,\nabla^2\vec B,
 $$</p>
 <p>while the vorticity of the same flow, $\vec\omega = \nabla\times\vec v$, obeys the Helmholtz equation</p>
 <p>$$
-\partial/\partial t\vec\omega = \nabla\times(\vec v\times\vec\omega) + \nu\,\nabla^2\vec\omega
+\partial/\partial t'\vec\omega = \nabla\times(\vec v\times\vec\omega) + \nu\,\nabla^2\vec\omega
 $$</p>
 <p>with the kinematic viscosity $\nu$. The two equations have the same form, in the same velocity field, with the magnetic field in the place of the vorticity and the magnetic diffusivity in the place of the kinematic viscosity. The vector identity behind both, valid for divergence-free fields, is</p>
 <p>$$
@@ -262,7 +262,7 @@ $$</p>
 $$</p>
 <p>so that each is of the advection–diffusion type</p>
 <p>$$
-\partial/\partial t\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\nabla^2\vec Q,
+\partial/\partial t'\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\nabla^2\vec Q,
 $$</p>
 <p>with the diffusivity $\kappa = \eta$ for the field and $\kappa = \nu$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\nu = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.</p>
 <p><strong>Where the correspondence stops.</strong> It is a statement about two equations for one three-dimensional vector field, and it does not extend to either theory as a whole. There is no magnetic charge density, so there is no magnetic counterpart of the electric charge density, which is what empties the analogy's magnetic-Gauss sector; a fluid has no displacement current, so the constitutive relations are not the same objects; the dissipative terms have different microscopic origins; and the fluid equations are Galilean invariant while Maxwell's equations are Lorentz invariant. The correspondence is between the incompressible fluid limit and the <em>magnetic</em> Galilean limit of the electromagnetic equations (the regime of the quasi-stationary approximation), both of which are Galilean; <em>Maxwell's Equations in the Biquaternionic Formulation</em> states these limits from the electromagnetic side, and the source paper discusses changes of reference frame within the analogy. The source also offers an interpretation of electric charge in hydrodynamic terms, which is presented as part of the analogy rather than as an established identification, and the corpus records it as such.</p>
@@ -361,7 +361,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde U_{\mathrm n}$</td>
-<td>Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $ict$ convention; the spatial case is the pure $\vec u$</td>
+<td>Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $ict'$ convention; the spatial case is the pure $\vec u$</td>
 </tr>
 <tr>
 <td>$[\tilde{F}]_S$</td>

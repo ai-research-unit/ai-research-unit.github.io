@@ -89,13 +89,13 @@ $$</p>
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2+\Delta .
 $$</p>
 <p>The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em>. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, all as fixed in the companion article <em>Maxwell's Equations in the Biquaternionic Formulation</em>. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.</p>
-<p><strong>A sign warning.</strong> As in the companion exercise <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em>, the mixed component $T^0{}_0$ carries a sign in the $ict$ convention: for the electromagnetic field $T^0{}_0=-W$, while the physical energy density is $T^{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.</p>
+<p><strong>A sign warning.</strong> As in the companion exercise <em>Exercise: The Electromagnetic Energy–Momentum Tensor</em>, the mixed component $T^0{}_0$ carries a sign in the $ict'$ convention: for the electromagnetic field $T^0{}_0=-W$, while the physical energy density is $T^{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.</p>
 <h2 id="the-field-action-in-biquaternion-form">The Field Action in Biquaternion Form</h2>
 <p>The action of a field theory is a functional of the field and its first derivatives,</p>
 <p>$$
 S = \int \mathcal{L}(\psi,\partial/\partial Q_\mu\,\psi)\,d^4x ,
 \qquad
-d^4x = c\,dt\,dx\,dy\,dz ,
+d^4x = c\,dt'\,dx\,dy\,dz ,
 $$</p>
 <p>and the field equation is its stationarity condition. For each field component $\psi_a$ the <strong>Euler–Lagrange equation</strong> is</p>
 <p>$$
@@ -120,8 +120,8 @@ $$</p>
 $$</p>
 <p>the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\phi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the corpus's level-2 signature, the kinetic term of $\mathcal{L}_\phi$ written in coordinates is</p>
 <p>$$
-\mathcal{L}_\phi = -\tfrac12\left(-\frac{1}{c^2}\left(\partial\phi/\partial t\right)^{2}+(\nabla\phi)^2\right)-\tfrac12\mu^2\phi^2
-= \frac{1}{2c^2}\left(\partial\phi/\partial t\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2 ,
+\mathcal{L}_\phi = -\tfrac12\left(-\frac{1}{c^2}\left(\partial\phi/\partial t'\right)^{2}+(\nabla\phi)^2\right)-\tfrac12\mu^2\phi^2
+= \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2 ,
 $$</p>
 <p>and it is this sign that makes the energy density of the next section positive. A complex scalar field, equivalently two real scalar fields, carries the doubling that the Klein–Gordon article records.</p>
 <h3 id="the-electromagnetic-action">The Electromagnetic Action</h3>
@@ -165,17 +165,17 @@ $$</p>
 <p>$$
 T_{\mu\nu} = \partial/\partial Q_\mu\,\phi\,\partial/\partial Q_\nu\,\phi + \eta_{\mu\nu}\mathcal{L}_\phi ,
 $$</p>
-<p>the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ and $x^0=ct$,</p>
+<p>the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ and $x^0=ct'$,</p>
 <p>$$
-T^{tt} = T_{tt} = \frac{1}{2c^2}\left(\partial\phi/\partial t\right)^{2} + \frac12(\nabla\phi)^2 + \frac12\mu^2\phi^2 > 0 ,
+T^{tt} = T_{tt} = \frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2} + \frac12(\nabla\phi)^2 + \frac12\mu^2\phi^2 > 0 ,
 $$</p>
 <p>$$
-T^{tk} = T^{kt} = -\frac{1}{c}\,\partial\phi/\partial t\,\partial/\partial Q_k\,\phi ,
+T^{tk} = T^{kt} = -\frac{1}{c}\,\partial\phi/\partial t'\,\partial/\partial Q_k\,\phi ,
 \qquad
 T^{jk} = T_{jk} = \partial/\partial Q_j\,\phi\,\partial/\partial Q_k\,\phi
-+ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\phi/\partial t\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2\right) .
++ \delta_{jk}\left(\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}-\frac12(\nabla\phi)^2-\frac12\mu^2\phi^2\right) .
 $$</p>
-<p>For a right-moving massless wave, $\phi=f(x-ct)$, these reduce to $T^{tt}=T^{xx}=(\partial\phi/\partial x)^2$ and $T^{tx}=T^{tt}$, the null-field pattern of a single traveling wave.</p>
+<p>For a right-moving massless wave, $\phi=f(x-ct')$, these reduce to $T^{tt}=T^{xx}=(\partial\phi/\partial x)^2$ and $T^{tx}=T^{tt}$, the null-field pattern of a single traveling wave.</p>
 <p>The energy density is manifestly positive: it is the sum of three squares, one for the kinetic term, one for the gradient, and one for the mass. The conservation law</p>
 <p>$$
 \partial^\mu T_{\mu\nu} = 0
@@ -188,7 +188,7 @@ $$</p>
 <p>is time-independent, which follows by integrating the conservation law over a spatial volume and using the vanishing of the flux at infinity.</p>
 <p>As a check, consider the superposition</p>
 <p>$$
-\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \cos\!\left(k_1x-\omega_1t\right) + 0.6\cos\!\left(k_2y-\omega_2t\right),
+\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \cos\!\left(k_1x-\omega_1t'\right) + 0.6\cos\!\left(k_2y-\omega_2t'\right),
 \qquad
 \vec k_1 = (1.1,0,0),
 \quad
@@ -196,7 +196,7 @@ $$</p>
 \quad
 \mu = 1.3,
 $$</p>
-<p>with $\omega_i^2 = \vec k_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\partial^\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t=0.7$, $(x,y,z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T^{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.</p>
+<p>with $\omega_i^2 = \vec k_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\partial^\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t'=0.7$, $(x,y,z)=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T^{tt}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.</p>
 <h2 id="the-electromagnetic-stressenergy-as-a-bigeneral-quaternionic-bilinear">The Electromagnetic Stress–Energy as a Bigeneral quaternionic Bilinear</h2>
 <p>For the electromagnetic field the improved stress–energy tensor has a closed algebraic form in the biquaternion algebra. With the material basis $\mathcal{E}_\mu\in\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$,</p>
 <p>$$
@@ -242,7 +242,7 @@ T^{\mu}{}_\nu = \tfrac12\,\mathrm{Sc}\!\left(\tilde F\,\mathcal E_\mu\,\tilde F^
 \qquad
 T^{\mu\nu} = \eta^{\nu\beta}T^{\mu}{}_\beta ,
 $$</p>
-<p>the definition being exact over the field algebra up to the factors the $ict$ basis elements carry. In the coordinates of the framework, $Q_t=ict$ and $Q_k=q_k$, so $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$, and the divergence is</p>
+<p>the definition being exact over the field algebra up to the factors the $ict'$ basis elements carry. In the coordinates of the framework, $Q_t=ict'$ and $Q_k=q_k$, so $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t'$, and the divergence is</p>
 <p>$$
 \partial_\mu T^{\mu\nu}
 = \sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}\,T^{\mu\nu} ,
@@ -276,7 +276,7 @@ $$</p>
 $$</p>
 <p>The component $\nu=0$ of this statement is the <strong>Poynting theorem</strong>,</p>
 <p>$$
-\partial/\partial t W + \nabla\cdot\vec S + \vec E\cdot\vec J = 0 ,
+\partial/\partial t' W + \nabla\cdot\vec S + \vec E\cdot\vec J = 0 ,
 $$</p>
 <p>the $\nu=k$ components are the momentum-balance equations that underlie radiation pressure, and the biquaternionic form of the whole statement is the single equation</p>
 <p>$$
@@ -331,7 +331,7 @@ $$</p>
 <p>has the equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$, with $\tilde J=ic\rho\,e_t+\vec J$. The translation Noether current is the canonical tensor $T^\mu{}_\nu=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_\mu\,\psi_a)}\partial/\partial Q_\nu\,\psi_a-\delta^\mu_\nu\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T^{tt}>0$.</p>
 <p>The scalar stress–energy is $T_{\mu\nu}=\partial/\partial Q_\mu\,\phi\partial/\partial Q_\nu\,\phi+\eta_{\mu\nu}\mathcal{L}_\phi$, with</p>
 <p>$$
-T_{tt}=T^{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2>0,
+T_{tt}=T^{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2>0,
 \qquad
 \partial^\mu T_{\mu\nu}=0 \ \text{on shell},
 $$</p>
@@ -377,7 +377,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\eta=\mathrm{diag}(-1,+1,+1,+1)$</td>
-<td>Level-2 $ict$-coordinate metric</td>
+<td>Level-2 $ict'$-coordinate metric</td>
 </tr>
 <tr>
 <td>$S=\int\mathcal{L}\,d^4x$</td>
@@ -432,7 +432,7 @@ $$</p>
 <td>Tracelessness (Minkowski pairing)</td>
 </tr>
 <tr>
-<td>$\partial_{Q_\mu}T^{\mu\nu}=-f^\nu$, $T^{\mu}{}_\nu=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict$ coordinates $Q_t=ict$</td>
+<td>$\partial_{Q_\mu}T^{\mu\nu}=-f^\nu$, $T^{\mu}{}_\nu=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $ict'$ coordinates $Q_t=ict'$</td>
 <td>Conservation with source per direction; Lorentz four-force</td>
 </tr>
 <tr>
@@ -440,7 +440,7 @@ $$</p>
 <td>Scalar stress–energy</td>
 </tr>
 <tr>
-<td>$T_{tt}=T^{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$</td>
+<td>$T_{tt}=T^{tt}=\frac{1}{2c^2}\left(\partial\phi/\partial t'\right)^{2}+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$</td>
 <td>Scalar energy density, positive</td>
 </tr>
 <tr>

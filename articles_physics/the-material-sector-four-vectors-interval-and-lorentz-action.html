@@ -118,9 +118,9 @@ $$</p>
 <p>$$
 \tilde Q=i q'_t\,e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z,
 $$</p>
-<p>with $q'_t,q_x,q_y,q_z\in\mathbb{R}$. On the physical dictionary $q'_t=c t$ and $(q_x,q_y,q_z)=(x,y,z)$, so the general element is</p>
+<p>with $q'_t,q_x,q_y,q_z\in\mathbb{R}$. On the physical dictionary $q'_t=c t'$ and $(q_x,q_y,q_z)=(x,y,z)$, so the general element is</p>
 <p>$$
-\tilde Q=i c t\,e_t+x\vec e_x+y\vec e_y+z\vec e_z.
+\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z.
 $$</p>
 <p>The basis is $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, of real dimension four. The sector is the sum of two blocks, the imaginary scalar block $A_2=\mathbb{R}(ie_t)$ and the real vector block $B_1=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$.</p>
 <p>The sector is <strong>not a subalgebra</strong>. The product of two anti-Hermitian elements is Hermitian, because ${}^{*}$ is an anti-automorphism: $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}=(-\tilde Q_2)(-\tilde Q_1)=\tilde Q_2\tilde Q_1$. The square of an element is therefore in $\mathbb{M}_+$, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The commutator nevertheless stays in $\mathbb{M}_-$, so the sector is closed under the bracket; the anticommutator goes to $\mathbb{M}_+$. In coordinates,</p>
@@ -131,13 +131,13 @@ $$</p>
 <h3 id="the-norm-the-units-and-the-cone">The Norm, the Units and the Cone</h3>
 <p>The quaternionic norm on the sector is</p>
 <p>$$
-N(\tilde Q)=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2t^2+x^2+y^2+z^2.
+N(\tilde Q)=\tilde Q\tilde Q^{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2=-c^2{t'}^2+x^2+y^2+z^2.
 $$</p>
 <p>It is real and of signature $(3,1)$: three positive spatial directions and one negative temporal one. The inverse formula is</p>
 <p>$$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)},
 $$</p>
-<p>so an element is invertible exactly when its norm is non-zero. The <strong>unit group</strong> is the complement of the norm-zero set. On the zero set the element is a <strong>zero divisor</strong>: it has no inverse, and there exists a non-zero element annihilated by it. The zero set is the <strong>light cone</strong>, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_t^2/c^2$, whose principal symbol vanishes exactly on the null directions.</p>
+<p>so an element is invertible exactly when its norm is non-zero. The <strong>unit group</strong> is the complement of the norm-zero set. On the zero set the element is a <strong>zero divisor</strong>: it has no inverse, and there exists a non-zero element annihilated by it. The zero set is the <strong>light cone</strong>, and it is also the characteristic cone of the wave operator $\Box=\Delta-\partial_{t'}^2/c^2$, whose principal symbol vanishes exactly on the null directions.</p>
 <h3 id="the-four-forms">The Four Forms</h3>
 <p>The four forms of the algebra are all real on $\mathbb{M}_-$. Writing $\tilde Q_1=i q'_t e_t+\vec q$ and $\tilde Q_2=i r'_t e_t+\vec r$, they read</p>
 <p>$$
@@ -169,15 +169,15 @@ $$</p>
 <p>and a general Lorentz transformation is a general unit-norm biquaternion. The sector is a <strong>representation space</strong> of the Lorentz group, and the rotor acts on it from outside: a boost rotor lies in $\mathbb{M}_+$, a rotation rotor in $\mathbb{H}_{\mathbb{B}}$, and only a general rotor uses the whole algebra.</p>
 <h2 id="interpretations">Interpretations</h2>
 <h3 id="the-sector-is-spacetime">The Sector Is Spacetime</h3>
-<p>The element $i c t\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ is a spacetime event. Its norm is the squared interval,</p>
+<p>The element $i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$ is a spacetime event. Its norm is the squared interval,</p>
 <p>$$
-N(\tilde Q)=-c^2t^2+x^2+y^2+z^2=s^2,
+N(\tilde Q)=-c^2{t'}^2+x^2+y^2+z^2=s^2,
 $$</p>
 <p>with the sign convention that a timelike interval is negative, a null interval is zero and a spacelike interval is positive. The interval is the norm itself, not the square of a separate norm, and the three cases are the three regions of the cone.</p>
-<p>The temporal coordinate enters as $i c t$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c t$ real in place of $i c t$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.</p>
+<p>The temporal coordinate enters as $i c t'$. The factor $i$ is what makes the time direction count with the opposite sign: $i^2=-1$, so the time term is negative while the three space terms are positive. With $c t'$ real in place of $i c t'$ the sector would carry a Euclidean four-coordinate space and no causal cone. The Lorentzian signature is therefore a consequence of the placement of the central imaginary, not an added axiom.</p>
 <p>For a timelike worldline the proper time is</p>
 <p>$$
-d\tau=\frac{1}{c}\sqrt{-N(d\tilde Q)}=\sqrt{dt^2-\frac{dx^2+dy^2+dz^2}{c^2}},
+d\tau=\frac{1}{c}\sqrt{-N(d\tilde Q)}=\sqrt{d{t'}^2-\frac{dx^2+dy^2+dz^2}{c^2}},
 $$</p>
 <p>and it is the parameter along the worldline. For a null worldline the proper time vanishes, and the worldline is a light ray. The causal structure is the sign of the norm; the future and past cones are its two sheets.</p>
 <p>The speed of light is local. In a material medium $c=1/\sqrt{\epsilon\mu}$ varies from point to point, so the cone, and with it the dictionary, varies; the vacuum value $c_0$ is the limiting case. The sector is a kinematic space: it carries the events, the intervals and the transformations, not the field equations.</p>
@@ -200,9 +200,9 @@ $$</p>
 <tbody>
 <tr>
 <td>four-position</td>
-<td>$\tilde R=i c t\,e_t+\vec x$</td>
-<td>$(ct,x,y,z)$</td>
-<td>$s^2=-c^2t^2+\lvert\vec x\rvert^2$</td>
+<td>$\tilde R=i c t'\,e_t+\vec x$</td>
+<td>$(ct',x,y,z)$</td>
+<td>$s^2=-c^2{t'}^2+\lvert\vec x\rvert^2$</td>
 </tr>
 <tr>
 <td>four-velocity</td>
@@ -275,20 +275,20 @@ $$</p>
 <p>The action preserves the norm when the acting element has unit norm, and then it is the Lorentz action, a change of frame. When the acting element is an idempotent, the action is a projection, and it is a measurement; but the idempotent lies in $\mathbb{M}_+$, not in $\mathbb{M}_-$. The material sector itself owns no non-trivial idempotent: if $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi^{*}=-\tilde\Pi$, then applying the star to the first relation gives $-\tilde\Pi=\tilde\Pi^2=\tilde\Pi$, so $\tilde\Pi=0$. The measurement projection therefore runs through the informational sector, and the material sector supplies the object, not the outcome.</p>
 <p><strong>The boundary.</strong> The action is established algebra. The interpretation of $\mathbb{M}_+$ as a distinct physical sector is the hypothesis stated in the informational article. The material sector is the acted-upon side of the action whether or not that hypothesis is realised.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>A four-position.</strong> Take $c=1$, $t=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $N(\tilde Q)=-1+9=8$, a spacelike interval.</p>
+<p><strong>A four-position.</strong> Take $c=1$, $t'=1$, $x=3$, $y=z=0$. Then $\tilde Q=i e_t+3\vec e_x$ and $N(\tilde Q)=-1+9=8$, a spacelike interval.</p>
 <p><strong>A light ray.</strong> Take $\tilde Q=i e_t+\vec e_x$. Then $N(\tilde Q)=-1+1=0$: the element is null and a zero divisor. The ray travels along $x$ at the speed of light.</p>
 <p><strong>A boost of a rest position.</strong> Let $\tilde U=\cosh(\psi/2)+i\sinh(\psi/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then</p>
 <p>$$
 \tilde Q_2=\tilde U\tilde Q\tilde U^{*}=i c\tau\cosh\psi\,e_t-c\tau\sinh\psi\,\vec e_x,
 $$</p>
-<p>the standard boost $t_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $N(\tilde Q_2)=-c^2\tau^2$ is unchanged.</p>
+<p>the standard boost $t'_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $N(\tilde Q_2)=-c^2\tau^2$ is unchanged.</p>
 <p><strong>A mass shell.</strong> For $\tilde P=i(E/c)e_t+\vec p$, the norm is $N(\tilde P)=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.</p>
 <p><strong>A four-velocity.</strong> For $\tilde V=i\gamma c\,e_t+\gamma\vec v$, the norm is $N(\tilde V)=-\gamma^2c^2+\gamma^2v^2=-c^2$, independent of the speed. The four-velocity is the tangent to the worldline, and its norm is the same for every inertial observer.</p>
 <h2 id="limits">Limits</h2>
 <p>The article interprets the kinematics of the sector: the events, the four-vectors, the interval, the cone and the Lorentz action. It does not derive a dynamics, a field equation or a quantization. The speed of light is local, the anti-Hermitian convention is a convention, and the identification of the sector with the spacetime of a physical theory is the corpus's interpretation. The Lorentz group is assumed as the transformation group of the sector, not derived from the algebra. The four-vectors are identified with elements of the algebra; the identification is the interpretive step.</p>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c t\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$.</li>
+<li>The material sector is the anti-Hermitian subspace $\mathbb{M}_-$, with an imaginary time and a real space, $\tilde Q=i c t'\,e_t+x\vec e_x+y\vec e_y+z\vec e_z$.</li>
 <li>Its norm is the Minkowski interval, of signature $(3,1)$, and its zero set is the light cone.</li>
 <li>The light cone is the zero-divisor cone; on it the elements have no inverse, and it is the characteristic cone of the wave operator.</li>
 <li>The unit group is the complement of the cone; the inverse is $\tilde Q^{\natural}/N(\tilde Q)$.</li>
@@ -314,7 +314,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde Q=i q'_t e_t+\vec q$</td>
-<td>a material element, with $q'_t=c t$</td>
+<td>a material element, with $q'_t=c t'$</td>
 </tr>
 <tr>
 <td>$\tilde Q^{\flat}=-{}^{*}\tilde Q$</td>

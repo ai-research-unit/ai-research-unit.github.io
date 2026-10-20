@@ -88,7 +88,7 @@ $$</p>
 <p>$$
 \vec q_{a,1} \odot \vec q_{a,2} = \vec q_{a,1} \cdot \vec q_{a,2} + i\,\vec q_{a,1} \times \vec q_{a,2} \quad \longleftrightarrow \quad (\boldsymbol{\sigma}\cdot\vec q_{a,1})(\boldsymbol{\sigma}\cdot\vec q_{a,2}) = (\vec q_{a,1}\cdot\vec q_{a,2})I + i\,\boldsymbol{\sigma}\cdot(\vec q_{a,1}\times\vec q_{a,2}),
 $$</p>
-<p>and it differs from the corpus's Hamilton product in the sign of <strong>both</strong> the dot and the cross term. This is checked in <em>What Is Verified and What Is Not</em>. It is also why the author's spin 4-gradient $D_s = (\partial/\partial t, \boldsymbol{\sigma}\cdot\nabla)$ coincides with half his 4-gradient $D$ (his equation (39)): a Pauli-type product is what the Pauli matrices satisfy.</p>
+<p>and it differs from the corpus's Hamilton product in the sign of <strong>both</strong> the dot and the cross term. This is checked in <em>What Is Verified and What Is Not</em>. It is also why the author's spin 4-gradient $D_s = (\partial/\partial t', \boldsymbol{\sigma}\cdot\nabla)$ coincides with half his 4-gradient $D$ (his equation (39)): a Pauli-type product is what the Pauli matrices satisfy.</p>
 <p><strong>The three conjugate signs.</strong> Complex conjugation is $\mathcal{B}^* = (s^*, \vec q_a^*)$, vector conjugation is $\bar{\mathcal{B}} = (s, -\vec q_a)$ — the corpus's quaternion conjugate — and the double conjugate is $(s^*, -\vec q_a^*)$, which is the corpus's Hermitian adjoint. The <strong>square modulus</strong> is the corpus's norm,</p>
 <p>$$
 |\mathcal{B}|^2 = \mathcal{B}\bar{\mathcal{B}} = s^2 - \vec q_a^2 \in \mathbb{C}.
@@ -120,12 +120,12 @@ $$</p>
 $$</p>
 <p>which splits into a <strong>transverse</strong> part $\vec q_a = \alpha\vec q + \beta\vec q^*$ lying in the plane $\Pi$ spanned by $\vec A$ and $\vec B$, and a <strong>longitudinal</strong> part $\mathcal{P} = \xi N + \eta\bar{N}$ whose vector part is along $\vec u$. On space-time the coordinates are the light-cone coordinates</p>
 <p>$$
-\alpha = x - iy, \qquad \beta = x + iy, \qquad \xi = t + z, \qquad \eta = t - z,
+\alpha = x - iy, \qquad \beta = x + iy, \qquad \xi = t' + z, \qquad \eta = t' - z,
 \tag{5}
 $$</p>
 <p>whence the derivatives</p>
 <p>$$
-\partial/\partial\alpha = \tfrac12(\partial/\partial Q_x + i\partial/\partial Q_y), \qquad \partial/\partial\beta = \tfrac12(\partial/\partial Q_x - i\partial/\partial Q_y), \qquad \partial/\partial\xi = \tfrac12(\partial/\partial t + \partial/\partial Q_z), \qquad \partial/\partial\eta = \tfrac12(\partial/\partial t - \partial/\partial Q_z).
+\partial/\partial\alpha = \tfrac12(\partial/\partial Q_x + i\partial/\partial Q_y), \qquad \partial/\partial\beta = \tfrac12(\partial/\partial Q_x - i\partial/\partial Q_y), \qquad \partial/\partial\xi = \tfrac12(\partial/\partial t' + \partial/\partial Q_z), \qquad \partial/\partial\eta = \tfrac12(\partial/\partial t' - \partial/\partial Q_z).
 \tag{6}
 $$</p>
 <p>Two remarks fix the relation to the corpus. The coordinates (5) are the corpus's <strong>null coordinates</strong> on the light cone, so the isotropic basis is the light-cone basis used as a <em>computational basis for the Dirac problem</em> — a choice the corpus does not make, although it uses null bases and the null quadric elsewhere (in particular in <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>, where the corpus notes that "$\mathbb{B}$ is the complexified quaternion algebra and its null cone is the obstacle"). And the decomposition (4) is a <strong>Peirce-type decomposition</strong> into two commuting idempotents $N$ and $\bar{N}$ with $N + \bar{N} = 1$ and $N\bar{N} = 0$; the corpus's <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em> records the same split, but in the corpus's own basis $\{e_t, \vec e_x\}$ rather than in the light-cone basis.</p>
@@ -296,8 +296,8 @@ $$</p>
 <h3 id="weyl-spinors-and-the-biquaternion-wave-function">Weyl Spinors and the Biquaternion Wave Function</h3>
 <p>The paper starts from the Weyl form of the Dirac equation,</p>
 <p>$$
-\partial/\partial t\psi_L = -(\boldsymbol{\sigma}\cdot\nabla)\psi_L - im\,\psi_R, \qquad
-\partial/\partial t\psi_R = +(\boldsymbol{\sigma}\cdot\nabla)\psi_R - im\,\psi_L,
+\partial/\partial t'\psi_L = -(\boldsymbol{\sigma}\cdot\nabla)\psi_L - im\,\psi_R, \qquad
+\partial/\partial t'\psi_R = +(\boldsymbol{\sigma}\cdot\nabla)\psi_R - im\,\psi_L,
 \tag{14}
 $$</p>
 <p>with $\psi_L = (u, v)_L^{\mathsf T}$ and $\psi_R = (u_2, v_2)_R^{\mathsf T}$, and rewrites it in the isotropic derivatives (6) as</p>
@@ -331,7 +331,7 @@ D = 2(\vec q\,\partial/\partial\beta + \vec q^*\,\partial/\partial\alpha + N\,\p
 \bar{D} = 2(-\vec q\,\partial/\partial\beta - \vec q^*\,\partial/\partial\alpha + N\,\partial/\partial\eta + \bar{N}\,\partial/\partial\eta).
 \tag{19}
 $$</p>
-<p>The author notes the inversion that looks like a slip and is not: the derivative $\partial/\partial\alpha$ stands on $\vec q^*$ and $\partial/\partial\beta$ on $\vec q$, which is the transpose of the coordinate pairing. The reason is that $D$ must reproduce $\partial/\partial t$ and $\nabla$, and the $\alpha, \beta$ slots are exchanged by the vector conjugation. The factor $2$ is the price of the $\tfrac12$ normalisations in (2). The author also notes that his spin 4-gradient $D_s = (\partial/\partial t, \boldsymbol{\sigma}\cdot\nabla)$ coincides with $\tfrac12 D$, which is the expression of the Pauli-product remark of the first section. The identity (19) was not verified beyond the consistency of the factors; it is quoted as the paper's statement.</p>
+<p>The author notes the inversion that looks like a slip and is not: the derivative $\partial/\partial\alpha$ stands on $\vec q^*$ and $\partial/\partial\beta$ on $\vec q$, which is the transpose of the coordinate pairing. The reason is that $D$ must reproduce $\partial/\partial t'$ and $\nabla$, and the $\alpha, \beta$ slots are exchanged by the vector conjugation. The factor $2$ is the price of the $\tfrac12$ normalisations in (2). The author also notes that his spin 4-gradient $D_s = (\partial/\partial t', \boldsymbol{\sigma}\cdot\nabla)$ coincides with $\tfrac12 D$, which is the expression of the Pauli-product remark of the first section. The identity (19) was not verified beyond the consistency of the factors; it is quoted as the paper's statement.</p>
 <h3 id="the-single-string-representation">The Single-String Representation</h3>
 <p>The result the paper is built to reach is the <strong>cyclic representation</strong>,</p>
 <p>$$
@@ -380,10 +380,10 @@ K \mapsto K_2 = L^* \odot K \odot L = T^* \otimes K \otimes T,
 $$</p>
 <p>and the 4-coordinate $Z$ transforms the same way; (26) is quoted as printed and was not recomputed. The Lorentz invariant built from $K$ and $Z$ is the phase</p>
 <p>$$
-\Phi = \epsilon t - \vec k\cdot\vec r = \tfrac12\bigl(-k_\beta\alpha - k_\alpha\beta + k_\eta\xi + k_\xi\eta\bigr),
+\Phi = \epsilon t' - \vec k\cdot\vec r = \tfrac12\bigl(-k_\beta\alpha - k_\alpha\beta + k_\eta\xi + k_\xi\eta\bigr),
 \tag{27}
 $$</p>
-<p>whose right-hand side was verified to reduce to $\epsilon t - k_x x - k_y y - k_z z$ identically in the isotropic coordinates of (5). (The extraction garbles the last term; the correct partner of $k_\eta\xi$ is $k_\xi\eta$.)</p>
+<p>whose right-hand side was verified to reduce to $\epsilon t' - k_x x - k_y y - k_z z$ identically in the isotropic coordinates of (5). (The extraction garbles the last term; the correct partner of $k_\eta\xi$ is $k_\xi\eta$.)</p>
 <h3 id="plane-waves-and-the-dispersion-relation">Plane Waves and the Dispersion Relation</h3>
 <p>The paper's simplest solution of the cyclic representation is the plane wave</p>
 <p>$$
@@ -401,7 +401,7 @@ $$</p>
 \epsilon^2 - \vec k^2 = k_\xi k_\eta - k_\alpha k_\beta = m^2 .
 \tag{30}
 $$</p>
-<p>The printed amplitude relations of the source are garbled in the extraction; (29) is their clean form, and it reproduces the one readable relation, $a_\xi = (m a_\beta - k_\eta a_\alpha)/k_\alpha$. The normalisation of the phase relative to (27) — the source's phase carries a factor $\tfrac12$ that the amplitude relations do not — is not settled by the extraction. At rest, $\vec k = 0$ and $k_\xi = k_\eta = m$, and the wave becomes $F = A_0 \exp(imt) + B_0 \exp(-imt)$ with constant coefficients, the author's starting point for the spin states below.</p>
+<p>The printed amplitude relations of the source are garbled in the extraction; (29) is their clean form, and it reproduces the one readable relation, $a_\xi = (m a_\beta - k_\eta a_\alpha)/k_\alpha$. The normalisation of the phase relative to (27) — the source's phase carries a factor $\tfrac12$ that the amplitude relations do not — is not settled by the extraction. At rest, $\vec k = 0$ and $k_\xi = k_\eta = m$, and the wave becomes $F = A_0 \exp(imt') + B_0 \exp(-imt')$ with constant coefficients, the author's starting point for the spin states below.</p>
 <h3 id="the-spin-operators-and-the-spin-states">The Spin Operators and the Spin States</h3>
 <p>The spin treatment is the paper's most concrete physical addition, and it rests on a <strong>third matrix correspondence</strong>, this one for the diagonal product. Writing the two chiral Weyl states as $2\times2$ matrices rather than columns,</p>
 <p>$$
@@ -532,7 +532,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\alpha, \beta, \xi, \eta$</td>
-<td>Isotropic coordinates: $\alpha = x-iy$, $\beta = x+iy$, $\xi = t+z$, $\eta = t-z$</td>
+<td>Isotropic coordinates: $\alpha = x-iy$, $\beta = x+iy$, $\xi = t'+z$, $\eta = t'-z$</td>
 </tr>
 <tr>
 <td>$\mathcal{B}^+, \mathcal{B}^-$</td>
@@ -583,7 +583,7 @@ $$</p>
 <td>Energy-momentum in isotropic coordinates; $k_\xi k_\eta - k_\alpha k_\beta = \epsilon^2 - \vec k^2$</td>
 </tr>
 <tr>
-<td>$\Phi = \epsilon t - \vec k\cdot\vec r$</td>
+<td>$\Phi = \epsilon t' - \vec k\cdot\vec r$</td>
 <td>Lorentz-invariant phase of the plane wave</td>
 </tr>
 <tr>
@@ -603,12 +603,12 @@ $$</p>
 <td>Spin eigenstates along $j = x, y, z$</td>
 </tr>
 <tr>
-<td>$D = (\partial/\partial t, \nabla),\ \bar{D}$</td>
+<td>$D = (\partial/\partial t', \nabla),\ \bar{D}$</td>
 <td>4-gradient and its vector conjugate, in the paper's real-time convention</td>
 </tr>
 <tr>
 <td>$D_s = \tfrac12 D$</td>
-<td>Spin 4-gradient, $D_s = (\partial/\partial t, \boldsymbol{\sigma}\cdot\nabla)$</td>
+<td>Spin 4-gradient, $D_s = (\partial/\partial t', \boldsymbol{\sigma}\cdot\nabla)$</td>
 </tr>
 <tr>
 <td>$H_4$</td>

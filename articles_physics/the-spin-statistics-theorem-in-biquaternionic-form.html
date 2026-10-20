@@ -75,7 +75,7 @@
 <li><strong>Transcribed, not derived.</strong> The force of the theorem — that among the four pairings of spin class with bracket only two survive — is imported from relativistic quantum field theory. What the biquaternion presentation adds is that the two surviving pairings are the two <em>inequivalent structures the algebra actually carries</em>: the double-valued module for half-integer spin and the single-valued vector/adjoint representation for integer spin, together with the trace identity that decides which bracket the finite algebra can host.</li>
 <li><strong>Gap, left visible.</strong> The article does not <em>derive</em> spin–statistics from the biquaternion algebra. The one-mode coincidence is exact but finite-dimensional, and it does not lift to the field. This gap is stated in the sections where it arises and collected in the open questions.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_i \vec e_j=\epsilon_{ijk}\vec e_k$ for $i\ne j$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ is the complex scalar subspace, the centre of the algebra. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, so that $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ is inherited unchanged. In the field-theoretic sections we work in natural units $\hbar=c=1$ and use the gamma-matrix convention of the parents, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\bar\psi=\psi^\dagger\gamma^0$, and $\not p=\gamma^0 E_{\vec p}-\boldsymbol\gamma\cdot\vec p$; the relative sign of this Clifford metric with the $ict$ gradient of the Maxwell articles is the convention the parents flag, and is not used here.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_i \vec e_j=\epsilon_{ijk}\vec e_k$ for $i\ne j$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ is the complex scalar subspace, the centre of the algebra. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, so that $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ is inherited unchanged. In the field-theoretic sections we work in natural units $\hbar=c=1$ and use the gamma-matrix convention of the parents, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\bar\psi=\psi^\dagger\gamma^0$, and $\not p=\gamma^0 E_{\vec p}-\boldsymbol\gamma\cdot\vec p$; the relative sign of this Clifford metric with the $ict'$ gradient of the Maxwell articles is the convention the parents flag, and is not used here.</p>
 <h2 id="the-theorem-and-its-ingredients">The Theorem and Its Ingredients</h2>
 <p>The theorem has three independent inputs, and it is useful to record which of them the biquaternion framework supplies.</p>
 <ol>
@@ -200,7 +200,7 @@ $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta
 $$</p>
 <p>The map $\vec p\mapsto-\vec p$ sends $\theta\mapsto-\theta$ and $\boldsymbol\gamma\cdot\vec p\mapsto-\boldsymbol\gamma\cdot\vec p$. The first term is even and the second and third are odd, so the odd terms vanish under symmetric integration and</p>
 <p>$$
-\{\psi^{\mathrm{fop}}_a(x,t),{\psi^{\mathrm{fop}}_b}^\dagger(y,t)\}=\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y).$$</p>
+\{\psi^{\mathrm{fop}}_a(x,t'),{\psi^{\mathrm{fop}}_b}^\dagger(y,t')\}=\delta_{ab}\,\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y).$$</p>
 <p>The spinorial part is the term $2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p$ — the part that carries the spin structure through $\boldsymbol\gamma\cdot\vec p$. It is odd in $\vec p$ despite carrying the same $\cos\theta$ phase as the scalar term, and it cancels. Reading the two terms as "same phase, therefore same fate" is exactly the error the parity check is there to catch: the phase is even, but the spin factor $\boldsymbol\gamma\cdot\vec p$ is odd, and the product is odd. Division by $2E_{\vec p}$ leaves the even part $\cos\theta\,I_4$, which integrates to $\delta^{(3)}(\vec\Delta)$, and the anticommutator is local.</p>
 <p><strong>The commutator (Bose choice for the same field).</strong> Replacing the plus between the branches by a minus, the same spin sums give</p>
 <p>$$
@@ -211,13 +211,13 @@ $$</p>
 $$</p>
 <p>Here the even part is the last two terms — $2iE_{\vec p}\sin\theta\,I_4$ is odd — and it does <strong>not</strong> vanish:</p>
 <p>$$
-[\psi^{\mathrm{fop}}_a(x,t),{\psi^{\mathrm{fop}}_b}^\dagger(y,t)]
+[\psi^{\mathrm{fop}}_a(x,t'),{\psi^{\mathrm{fop}}_b}^\dagger(y,t')]
 =\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{2E_{\vec p}}
 \Big[2m\cos\theta\,\gamma^0+2i\sin\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p\Big]_{ab},
 $$</p>
 <p>after the odd term is dropped. This remaining integral evaluates to</p>
 <p>$$
-[\psi^{\mathrm{fop}}(x,t),\psi^{\mathrm{fop}\dagger}(y,t)]
+[\psi^{\mathrm{fop}}(x,t'),\psi^{\mathrm{fop}\dagger}(y,t')]
 =\gamma^0\big(m-i\boldsymbol\gamma\cdot\nabla_{\vec\Delta}\big)F(\vec\Delta),
 \qquad
 F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),

@@ -142,19 +142,19 @@ $$</p>
 <h3 id="rays-trajectories-and-the-eikonal">Rays, trajectories, and the eikonal</h3>
 <p>The Hamilton–Jacobi equation is solved by the method of characteristics, and the characteristics are the classical trajectories. Writing $\vec p = \nabla S$ for the classical momentum, the equation reads $|\vec p|^2/2m+V=E$, and its characteristic system is</p>
 <p>$$
-d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt = \frac{\vec p}{m},
+d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt' = \frac{\vec p}{m},
 \qquad
-\,d\vec p/dt = -\nabla V .
+\,d\vec p/dt' = -\nabla V .
 $$</p>
-<p>The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dt = \vec p\cdot\,d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.</p>
+<p>The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $dS/dt' = \vec p\cdot\,d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt' = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.</p>
 <h3 id="the-free-and-separable-cases">The free and separable cases</h3>
 <p>For the free particle the Hamilton–Jacobi equation has the complete integral</p>
 <p>$$
-S(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t) = \vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - E t,
+S(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t') = \vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - E t',
 \qquad
 E = \frac{|\vec p|^2}{2m},
 $$</p>
-<p>whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-Et)/\hbar)$ is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys</p>
+<p>whose phase gradient is the constant vector $\vec p$, and whose wave function $A\exp(i(\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-Et')/\hbar)$ is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys</p>
 <p>$$
 \frac{1}{2m}\left(\frac{dS_k}{dx_k}\right)^2 + V_k(x_k) = E_k,
 \qquad
@@ -269,7 +269,7 @@ $$</p>
 <p>$$
 \frac{1}{2m}\langle \nabla S\rangle_{\natural} = E - V :
 $$</p>
-<p>the kinetic energy is the biquaternion norm of the phase gradient. Its characteristics are the classical trajectories, with $d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt=\vec p/m$ and $d\vec p/dt=-\nabla V$, and the wave fronts are the surfaces of constant phase. The transport equation gives the WKB amplitude $A=C/\sqrt{|p|}$ and, in three dimensions, the van Vleck determinant $\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}$ — the same object that the companion path-integral article obtains from the Gaussian fluctuation determinant.</p>
+<p>the kinetic energy is the biquaternion norm of the phase gradient. Its characteristics are the classical trajectories, with $d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt'=\vec p/m$ and $d\vec p/dt'=-\nabla V$, and the wave fronts are the surfaces of constant phase. The transport equation gives the WKB amplitude $A=C/\sqrt{|p|}$ and, in three dimensions, the van Vleck determinant $\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}$ — the same object that the companion path-integral article obtains from the Gaussian fluctuation determinant.</p>
 <p>The Bohr–Sommerfeld condition $\oint p\,dx = 2\pi\hbar(n+\tfrac12)$, with the Maslov offsets from the Airy connection formulas, was verified to be exact for the harmonic oscillator and the Morse potential (relative errors below $5\times10^{-9}$ and $2\times10^{-9}$ respectively) and to be approximate for the anharmonic well $\tfrac12x^2+0.1x^4$, where it underestimates the exact levels by $4.6\%$, $0.88\%$, $0.37\%$, and $0.21\%$ for $n=0,\dots,3$ (exact values from finite-difference diagonalisation). The WKB tunnelling exponent $-\frac{2}{\hbar}\int\sqrt{2m(V-E)}\,dx$ matches the closed parabolic-barrier value $\pi(V_0-E)/\hbar\omega$ to $10^{-9}$ and reproduces the leading exponential of Kemble's exact formula.</p>
 <p>The whole semiclassical expansion lives in the <strong>centre</strong> of the algebra: the phase is a central unitary element, the amplitude and the quantum potential are central real scalars, the Maslov phases are operations on the central $i$, and the module factor is a constant. The framework supplies the biquaternion-norm interpretation of the Hamilton–Jacobi equation, the sector location of the phase and the amplitude, and the identity of the transport amplitude with the path-integral fluctuation determinant; it does not supply a uniform approximation at caustics, the branch of the complex action, or any prediction distinguishing the reformulation from scalar WKB.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -334,7 +334,7 @@ $$</p>
 <td>Hamilton–Jacobi equation as a biquaternion norm</td>
 </tr>
 <tr>
-<td>$\vec p=\nabla S$, $d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt=\vec p/m$, $d\vec p/dt=-\nabla V$</td>
+<td>$\vec p=\nabla S$, $d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt'=\vec p/m$, $d\vec p/dt'=-\nabla V$</td>
 <td>Characteristics; classical trajectories</td>
 </tr>
 <tr>

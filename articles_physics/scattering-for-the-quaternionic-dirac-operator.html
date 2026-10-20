@@ -92,7 +92,7 @@ $$</p>
 <p>Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scalar functions $u$ with $\lVert u\rVert_s = \lVert(1+\lvert x\rvert^2)^{s/2}u\rVert_{L^2(\mathbb{R}^3)}$ finite; for $\alpha\ge0$, $H^\alpha$ is the Sobolev space of scalar $u$ whose Fourier transform $\hat u$ satisfies $\lVert(1+\lvert\xi\rvert^{2})^{\alpha/2}\hat u\rVert_{L^2}<\infty$, and $H^{\alpha,s}$ the corresponding weighted space. A biquaternion-valued function belongs to $C(G)$, $L^p(G)$, $H^1(G)$ and so on when each complex component does. These are the spaces in which the compactness and the bounds below are stated, and they are the source's.</p>
 <h2 id="maxwells-equations-as-a-dirac-type-system">Maxwell's Equations as a Dirac-Type System</h2>
 <p>The source's second and third sections are the corpus's electromagnetic material seen from the scattering side, and they are recalled here because the scattering problem is posed for Maxwell's equations and only then transported to the algebra.</p>
-<p>In an isotropic medium obeying Ohm's law, para- or diamagnetic, Maxwell's equations with the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ read, in the time-harmonic regime $\vec E(x,t)=\mathrm{Re}(\vec E(x)\exp(-i\omega t))$ and likewise for $\vec H$,</p>
+<p>In an isotropic medium obeying Ohm's law, para- or diamagnetic, Maxwell's equations with the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ read, in the time-harmonic regime $\vec E(x,t')=\mathrm{Re}(\vec E(x)\exp(-i\omega t'))$ and likewise for $\vec H$,</p>
 <p>$$
 \operatorname{curl}\vec E=i\omega\mu\vec H, \qquad
 \operatorname{curl}\vec H=-i\omega\epsilon\vec E, \qquad
@@ -126,10 +126,10 @@ $$</p>
 <p>Maxwell's equations reduce to second-order equations, and the reduction is a factorisation by first-order Dirac operators. This is why a scattering theory for the Dirac-type operator is a scattering theory for waves.</p>
 <p>The four-dimensional identity is</p>
 <p>$$
-\frac{1}{c^2}\frac{\partial^2}{\partial t^2} - \Delta
-= \left(\frac{1}{c}\frac{\partial}{\partial t} + iD_3\right)\left(\frac{1}{c}\frac{\partial}{\partial t} - iD_3\right),
+\frac{1}{c^2}\frac{\partial^2}{\partial {t'}^2} - \Delta
+= \left(\frac{1}{c}\frac{\partial}{\partial t'} + iD_3\right)\left(\frac{1}{c}\frac{\partial}{\partial t'} - iD_3\right),
 $$</p>
-<p>the wave operator in the source's sign; the corpus's d'Alembertian is its <strong>negative</strong>, $\Box = \Delta + \partial^2/\partial Q_t^2$ in <em>Biquaternion Analysis</em>, and the two conventions are not to be mixed. <strong>The source prints this identity with the same factor twice</strong>, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $c^{-2}\partial^2/\partial t^2+\Delta+2ic^{-1}\partial/\partial tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega t)$ so that $\partial/\partial t$ acts as $i\omega$, the factorisation is</p>
+<p>the wave operator in the source's sign; the corpus's d'Alembertian is its <strong>negative</strong>, $\Box = \Delta + \partial^2/\partial Q_t^2$ in <em>Biquaternion Analysis</em>, and the two conventions are not to be mixed. <strong>The source prints this identity with the same factor twice</strong>, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $c^{-2}\partial^2/\partial {t'}^2+\Delta+2ic^{-1}\partial/\partial t'D_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\omega t')$ so that $\partial/\partial t'$ acts as $i\omega$, the factorisation is</p>
 <p>$$
 -\Delta - \frac{\omega^2}{c^2} = (D_3+k)(D_3-k), \qquad k=\frac{\omega}{c},
 $$</p>

@@ -101,7 +101,7 @@ D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}
   = \sum_{\mu\in\{t,x,y,z\}} e_\mu\left(\partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\right)
   =: \sum_{\mu\in\{t,x,y,z\}} e_\mu\, D_\mu,
 $$</p>
-<p>where $\partial/\partial Q_t = \partial/\partial(ict)$ and $\partial/\partial Q_k = \partial/\partial x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,</p>
+<p>where $\partial/\partial Q_t = \partial/\partial(ict')$ and $\partial/\partial Q_k = \partial/\partial x_k$. Its action on a biquaternion-valued field $\tilde{\Psi}(\tilde{Q})$ is left multiplication by that operator,</p>
 <p>$$
 D\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi},
 \qquad
@@ -206,16 +206,16 @@ $$</p>
 <p>because $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma\, e_t$ is a pure scalar and has no vector part. A connection that is a gradient carries no curvature. This was checked for complex as well as real $\Gamma$.</p>
 <p><strong>A single point can always be made connection-free.</strong> Given any connection $\tilde{A}$ and any point $\tilde{Q}_0$, choose the real, affine gauge function</p>
 <p>$$
-\Gamma(\tilde{Q}) = -a\,t + A_1(\tilde{Q}_0)\,x + A_2(\tilde{Q}_0)\,y + A_3(\tilde{Q}_0)\,z,
+\Gamma(\tilde{Q}) = -a\,t' + A_1(\tilde{Q}_0)\,x + A_2(\tilde{Q}_0)\,y + A_3(\tilde{Q}_0)\,z,
 \qquad a = -ic\,A_0(\tilde{Q}_0) = \phi(\tilde{Q}_0) \in \mathbb{R},
 $$</p>
 <p>so that $\partial/\partial Q_\mu\,\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and hence $\tilde{A}_2(\tilde{Q}_0) = 0$. The connection therefore has no gauge-invariant value at a point; whatever invariant content it has must be built from derivatives.</p>
 <p><strong>The curvature is the obstruction to doing this on a neighbourhood.</strong> A connection with $\tilde{F} = 0$ satisfies $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu = 0$, and the Poincaré lemma applied to the one-form $\tilde{A}_\mu\,dx^\mu$ then supplies a local $\Gamma$ with $\tilde{A} = \tilde{\nabla}\Gamma$. The converse direction of this last statement is the Poincaré lemma; it is <em>invoked</em> here, not recomputed. The conclusion is that $\tilde{F}$ measures exactly what cannot be removed by a gauge transformation.</p>
 <p><strong>The connection one-form is a real quaternion.</strong> One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives</p>
 <p>$$
-\tilde{A}_\mu\,dx^\mu = A_0\,d(ict) + A_k\,dx^k = -\phi\,dt + \vec A\cdot d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+\tilde{A}_\mu\,dx^\mu = A_0\,d(ict') + A_k\,dx^k = -\phi\,dt' + \vec A\cdot d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 $$</p>
-<p>which is real: $A_0$ is imaginary and $d(ict)$ is imaginary, so their product is real, while $A_k$ and $dx^k$ are separately real. In the algebra this says $\tilde{A}_\mu\,dx^\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\tilde{A}_\mu\,dx^\mu \mapsto \tilde{A}_\mu\,dx^\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a <strong>holonomy</strong> is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.</p>
+<p>which is real: $A_0$ is imaginary and $d(ict')$ is imaginary, so their product is real, while $A_k$ and $dx^k$ are separately real. In the algebra this says $\tilde{A}_\mu\,dx^\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\tilde{A}_\mu\,dx^\mu \mapsto \tilde{A}_\mu\,dx^\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a <strong>holonomy</strong> is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.</p>
 <h2 id="the-curvature-as-the-commutator-of-covariant-derivatives">The Curvature as the Commutator of Covariant Derivatives</h2>
 <p>The curvature is the part of the covariant derivative that survives antisymmetrization. In the abelian case the connection coefficients commute, and the general commutator formula collapses to the curl:</p>
 <p>$$
@@ -292,7 +292,7 @@ The field satisfies a covariant wave equation with a curvature term. The structu
 <p><strong>Dynamical content of the covariant square.</strong> The curvature term $\frac{iϙ}{\hbar}\tilde{F}$ in $\bar D D$ is structurally the biquaternion analogue of the curvature term in the square of a Dirac operator. Does it carry observable content — a Pauli-type coupling — or is it a rewriting of the commutator identity with no independent consequence?</p>
 </li>
 <li>
-<p><strong>The one-form and the holonomy.</strong> The connection one-form $\tilde{A}_\mu\,dx^\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $ict$ convention in disguise? No answer is offered here.</p>
+<p><strong>The one-form and the holonomy.</strong> The connection one-form $\tilde{A}_\mu\,dx^\mu$ is a real quaternion, the loop integral is gauge invariant, and the curvature measures its infinitesimal holonomy. Is the real-quaternion character content-bearing, or is it the $ict'$ convention in disguise? No answer is offered here.</p>
 </li>
 <li>
 <p><strong>Gauge fixing.</strong> The canonical-quantization article establishes that the framework cannot fix the gauge. The present article does not supply a selection principle either; the gauge orbit of the connection is exactly as large as the local phases allow.</p>
@@ -388,7 +388,7 @@ $$</p>
 </tr>
 <tr>
 <td>$D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$</td>
-<td>Components; $\partial/\partial Q_t = \partial/\partial(ict)$</td>
+<td>Components; $\partial/\partial Q_t = \partial/\partial(ict')$</td>
 </tr>
 <tr>
 <td>$\bar D = \tilde{\nabla}^{\natural} + \frac{iϙ}{\hbar}\tilde{A}^{\natural}$</td>

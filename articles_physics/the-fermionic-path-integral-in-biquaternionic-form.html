@@ -67,24 +67,24 @@
       <div class="article-body">
         <h1 id="the-fermionic-path-integral-in-biquaternionic-form"><strong>The Fermionic Path Integral in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The companion article <em>The Path Integral in Biquaternionic Form</em> settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $\exp(iS/\hbar)$ is a <em>central</em> unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $ict$ direction of the material sector $\mathbb{M}_-$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article <em>The Feynman Propagator in Biquaternionic Form</em> adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> adds that $t\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.</p>
+<p>The companion article <em>The Path Integral in Biquaternionic Form</em> settles what the biquaternion algebra can and cannot contribute to a path integral: the phase factor $\exp(iS/\hbar)$ is a <em>central</em> unitary element, because the central scalar imaginary is the algebra's unique complex structure up to sign; the exponent lies along the $ict'$ direction of the material sector $\mathbb{M}_-$; and the measure, the action and the space of paths are not supplied by the algebra, because $\mathbb{B}$ is finite-dimensional and the space of histories is not. The companion article <em>The Feynman Propagator in Biquaternionic Form</em> adds where the $i\epsilon$ lives and that the algebra names its axis without choosing its orientation. The companion article <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em> adds that $t'\to-i\tau$ is the relabeling of the imaginary-time coefficient as a real one, turning the material sector into the quaternion subspace.</p>
 <p>This article applies those findings to the spin-$\tfrac12$ field, where the histories are <strong>anticommuting</strong>. The fermionic path integral differs from the bosonic one in exactly one structural place — the integration variables are odd, so the integral is Berezin's rather than Lebesgue's — and that one difference propagates into every formula. The article establishes:</p>
 <ul>
-<li><strong>The action and its sector.</strong> The biquaternion Dirac action as a bilinear, the phase $iS$ as an element of $\mathbb{M}_-$ along the $ict$ axis, and the action as an even (bosonic) functional of the fermionic field.</li>
+<li><strong>The action and its sector.</strong> The biquaternion Dirac action as a bilinear, the phase $iS$ as an element of $\mathbb{M}_-$ along the $ict'$ axis, and the action as an even (bosonic) functional of the fermionic field.</li>
 <li><strong>The Berezin measure.</strong> Fermionic histories are Grassmann-valued biquaternion fields; the measure is the Berezin measure of the coefficient algebra, and in the finite-mode reduction it is $\prod_k d\bar\psi_kd\psi_k$ with the convention fixed once.</li>
 <li><strong>The Gaussian integral and the determinant.</strong> Completing the square in the Grassmann algebra gives the free generating functional, the two-point function as the inverse kernel, and the determinant of the Dirac operator; the finite-mode statements were recomputed exactly.</li>
 <li><strong>The Pfaffian and the real structure.</strong> For a field whose quadratic form is antisymmetric — the Majorana case, which the algebra's real structure $\flat$ suggests — the integral is a Pfaffian, with $\mathrm{Pf}^2=\det$ and a sign that carries physical content.</li>
 <li><strong>The Euclidean integral and the parity sectors.</strong> Wick rotation and the antiperiodic (Matsubara) boundary conditions, the decomposition of the measure into the two fermion-parity sectors, and the phase of the determinant.</li>
 </ul>
 <p>The boundary with the neighbouring subjects is sharp and is stated where it occurs: the systematic evaluation of the functional determinant, the transformation of the measure under field redefinitions, and the anomalies that follow from it are not treated here.</p>
-<p><strong>Conventions.</strong> From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_k^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); biquaternion norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the $i\epsilon$ sits along the $ict$ axis of $\mathbb{M}_-$. <strong>Grassmann conventions.</strong> To each mode belong odd generators $\theta,\theta^*$ with $\theta^2=\theta^{*2}=0$, $\theta\theta^*=-\theta^*\theta$, and Berezin integration is normalized by $\int d\theta^*d\theta\,\theta\theta^*=1$; consequences are $\int d\theta^*d\theta\,\exp(-\theta^*\theta)=1$ and $\int d\theta^*d\theta\,\exp(-\theta^*M\theta)=M$.</p>
+<p><strong>Conventions.</strong> From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_k^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); biquaternion norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the $i\epsilon$ sits along the $ict'$ axis of $\mathbb{M}_-$. <strong>Grassmann conventions.</strong> To each mode belong odd generators $\theta,\theta^*$ with $\theta^2=\theta^{*2}=0$, $\theta\theta^*=-\theta^*\theta$, and Berezin integration is normalized by $\int d\theta^*d\theta\,\theta\theta^*=1$; consequences are $\int d\theta^*d\theta\,\exp(-\theta^*\theta)=1$ and $\int d\theta^*d\theta\,\exp(-\theta^*M\theta)=M$.</p>
 <h2 id="the-action-in-biquaternion-form">The Action in Biquaternion Form</h2>
 <p>The classical field theory is defined by the parent article's Lagrangian density,</p>
 <p>$$
 \mathcal{L}=\bar\psi\,(i\gamma^\mu\partial/\partial Q_\mu-m)\,\psi ,
 $$</p>
 <p>a real Lorentz scalar whose variation returns $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, with conjugate momentum $\pi=i\psi^\dagger$. For the path integral this is the object whose integral is the phase.</p>
-<p><strong>The biquaternion transcription, and what it does not fix.</strong> On the module the kinetic operator is $i\gamma^\mu\partial/\partial Q_\mu$, and the dictionary companion identifies the Clifford vector with the Hermitian biquaternion through $x_\mu\gamma^\mu=\gamma^0\Phi(w)$, $w\in\mathbb{M}_+$, so that the $ict$ gradient of the series is the biquaternion transcription of $i\gamma^\mu\partial/\partial Q_\mu$:</p>
+<p><strong>The biquaternion transcription, and what it does not fix.</strong> On the module the kinetic operator is $i\gamma^\mu\partial/\partial Q_\mu$, and the dictionary companion identifies the Clifford vector with the Hermitian biquaternion through $x_\mu\gamma^\mu=\gamma^0\Phi(w)$, $w\in\mathbb{M}_+$, so that the $ict'$ gradient of the series is the biquaternion transcription of $i\gamma^\mu\partial/\partial Q_\mu$:</p>
 <p>$$
 i\gamma^\mu\partial/\partial Q_\mu\;\longleftrightarrow\;\tilde{\nabla}=e_t\,\partial/\partial Q_t+e_k\,\partial/\partial Q_k ,
 \qquad
@@ -154,7 +154,7 @@ $$</p>
 <p>$$
 S_F(p)=-\frac{i(\not p+m)}{\tilde P\tilde P^{\natural}+m^2-i\epsilon},
 $$</p>
-<p>the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict$ axis of the material sector:</p>
+<p>the propagator companion's amplitude. The determinant is therefore the determinant of an operator whose inverse has the deformed mass-shell denominator, and the deformation lies along the $ict'$ axis of the material sector:</p>
 <p>$$
 \det\big(i\not\partial-m\big)\;\longleftrightarrow\;\exp\Big[\int\frac{d^4p}{(2\pi)^4}\,\ln\big(\tilde P\tilde P^{\natural}+m^2-i\epsilon\big)\Big],
 $$</p>
@@ -175,7 +175,7 @@ $$</p>
 <p>Second, the algebra's own statement is the <em>existence</em> of the antisymmetric pairing, not its sign. The real structure $\flat$ supplies a pairing; the measure normalizes it; the orientation is a convention. This is the same three-way division the propagator companion records for the $i\epsilon$, and the algebra's contribution is again the middle term.</p>
 <p><strong>The biquaternion form.</strong> Writing the antisymmetric pairing as the trace of $\tilde\Psi\wedge\tilde\Psi$ against the invariant antisymmetric form $\varepsilon=i\sigma_2$ of the two-dimensional module, the Pfaffian is the Berezin integral of the pairing, and its square is the determinant of the same kernel whose inverse is $S_F$. The Majorana quantization is therefore the statement that the pairing is available; the Dirac quantization is the statement that it is not used, the two chiralities being independent.</p>
 <h2 id="the-euclidean-integral-and-the-boundary-conditions">The Euclidean Integral and the Boundary Conditions</h2>
-<p><strong>Wick rotation.</strong> With $t\to-i\tau$ the $ict$ direction of $\mathbb M_-$ becomes the real quaternion direction, as the Wick-rotation companion establishes, and the oscillatory weight becomes a decaying one:</p>
+<p><strong>Wick rotation.</strong> With $t'\to-i\tau$ the $ict'$ direction of $\mathbb M_-$ becomes the real quaternion direction, as the Wick-rotation companion establishes, and the oscillatory weight becomes a decaying one:</p>
 <p>$$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
 \qquad
@@ -209,7 +209,7 @@ $$</p>
 <p><strong>Standard, transcribed.</strong> The Grassmann (Berezin) formulation of the fermionic integral; the Gaussian and its determinant; the two-point function as the inverse kernel; the generating functional with Grassmann sources; the Pfaffian for an antisymmetric form and $\mathrm{Pf}^2=\det$; the Wick rotation and the antiperiodic finite-temperature determinant; the parity decomposition and the phase (sign) problem. All of it is standard, and all of it is written in the parents' conventions.</p>
 <p><strong>The algebra's own.</strong></p>
 <ul>
-<li><em>The sector and centrality statements.</em> The phase $iS$ is central and lies in $\mathbb{M}_-$ along the $ict$ axis; the action is even; the sources are odd and live in the Grassmann extension. These are the generalities companion's findings applied to the fermionic case, and they are the only place where the algebra's structure enters.</li>
+<li><em>The sector and centrality statements.</em> The phase $iS$ is central and lies in $\mathbb{M}_-$ along the $ict'$ axis; the action is even; the sources are odd and live in the Grassmann extension. These are the generalities companion's findings applied to the fermionic case, and they are the only place where the algebra's structure enters.</li>
 <li><em>The real structure as the source of the antisymmetric pairing.</em> That the algebra offers a field-to-its-own-conjugate pairing at all is the content of $\flat=-{}^{*}$; that the resulting integral is a Pfaffian is the consequence.</li>
 <li><em>The Biquaternion form of the kernel</em> — the deformed mass-shell denominator inherited from the propagator companion.</li>
 </ul>
@@ -228,7 +228,7 @@ $$</p>
 <li>Companion article <em>The KMS Condition and the Biquaternion Framework</em>, for the antiperiodic boundary condition and the Matsubara structure that the fermionic measure carries.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The phase is central and lies in $\mathbb{M}_-$ along the $ict$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.</p>
+<p>The fermionic path integral of the biquaternion spin-$\tfrac12$ field is the Berezin integral over Grassmann-valued biquaternion histories of the phase $\exp(iS)$, with the biquaternion Dirac action as the bilinear $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ and the sources odd. The phase is central and lies in $\mathbb{M}_-$ along the $ict'$ axis; the action is even, so the parity sectors do not mix and an odd integral vanishes.</p>
 <p>The Gaussian is the determinant, verified exactly for a general complex $2\times2$ matrix in the convention $\int d\theta^*d\theta\,\theta\theta^*=1$; the two-point function is the inverse kernel in the stated index order, $\langle\psi_a\bar\psi_b\rangle=(M^{-1})_{ab}$, verified to nine decimals; the generating functional is $Z[\eta,\bar\eta]=\det M\exp[\bar\eta M^{-1}\eta]$; and for the field the kernel is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde P\tilde P^{\natural}+m^2-i\epsilon)$.</p>
 <p>For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\psi\,\exp(-\frac12\psi A\psi)=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ offers the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\psi(\tau+\beta)=-\psi(\tau)$, verified to nine decimals and equivalent to $\omega_n=(2n+1)\pi/\beta$.</p>
 <p>The algebra contributes the centrality of the phase, the sector location of the deformation, and the existence of the pairing. It does not supply the measure, the evaluation of the determinant, or the phase, and the article says so.</p>
@@ -251,7 +251,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\exp(iS)$</td>
-<td>Path-integral phase; central, in $\mathbb{C}_{\mathbb{B}}$, exponent along $ict$</td>
+<td>Path-integral phase; central, in $\mathbb{C}_{\mathbb{B}}$, exponent along $ict'$</td>
 </tr>
 <tr>
 <td>$\eta,\bar\eta$</td>
@@ -295,7 +295,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\exp(iS)\to \exp(-S_{\mathrm{E}})$</td>
-<td>Wick rotation ($ict$ direction becomes real)</td>
+<td>Wick rotation ($ict'$ direction becomes real)</td>
 </tr>
 <tr>
 <td>$\psi(\tau+\beta)=-\psi(\tau)$, $\omega_n=(2n+1)\pi/\beta$</td>

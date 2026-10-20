@@ -78,7 +78,7 @@ $$</p>
 <p>Three conventions must be fixed at the start, so that nothing is carried across by mistake.</p>
 <p>First, and most important, <strong>"non-commutative" here does not mean the non-commutativity of the quaternion algebra.</strong> The corpus's readers meet that every day; it is not the subject. Here the <strong>coordinates</strong> fail to commute, and the deformation acts on the algebra of functions on spacetime, through the star product. The quaternion algebra enters only as a <strong>compact notation</strong> for the resulting equations — the source realises it by Pauli matrices — and the source says so: the spin-tensor form is "equivalently the quaternion form as the quaternion algebra can be realized through the Pauli matrices." Nothing about the result follows from quaternions; the quaternion form is bookkeeping, and the corpus records it as such.</p>
 <p>Second, the deformation is of the <strong>Moyal</strong> type — an algebra deformation, $\theta^{\mu\nu}$ a fixed background. It is not the <strong>C-space</strong> programme of Clifford-valued coordinates, which deforms the arena differently; the corpus holds that programme separately and the two must be compared, not merged. The mathematical side of the Moyal deformation is the star product of <em>Deformation Quantization</em>, and the classical limit that the corpus's <em>Similitudes between the Poisson Bracket and the Quantum Commutator</em> develops is the undeformed limit here.</p>
-<p>Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it$, the corpus writes $\tilde R = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.</p>
+<p>Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it'$, the corpus writes $\tilde R = ict'\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.</p>
 <h2 id="the-non-commutative-arena">The Non-Commutative Arena</h2>
 <h3 id="the-commutator-the-bound-and-the-deformation">The commutator, the bound, and the deformation</h3>
 <p>The coordinates obey $[x^\mu,x^\nu]=i\theta^{\mu\nu}$ with $\theta^{\mu\nu}$ constant and antisymmetric, of dimension $(\text{length})^2$. Momentum commutes with itself and with position in the ordinary way, $[x^\mu,p^\nu]=i\hbar\delta^{\mu\nu}$, and the source parametrises the deformation by a scale,</p>
@@ -124,13 +124,13 @@ $$</p>
 <h3 id="the-constitutive-relations">The constitutive relations</h3>
 <p>The field equations follow from $\mathcal L$ by the Lagrange–Euler equation. Cast in the form used in matter, they are the familiar pair</p>
 <p>$$
-\frac{\partial}{\partial t}\vec D - \mathrm{rot}\,\vec H = -\vec J,
+\frac{\partial}{\partial t'}\vec D - \mathrm{rot}\,\vec H = -\vec J,
 \qquad
 \mathrm{div}\,\vec D = \rho,
 $$</p>
 <p>together with the source-free pair</p>
 <p>$$
-\frac{\partial}{\partial t}\vec B + \mathrm{rot}\,\vec E = 0,
+\frac{\partial}{\partial t'}\vec B + \mathrm{rot}\,\vec E = 0,
 \qquad
 \mathrm{div}\,\vec B = 0 .
 $$</p>
@@ -150,10 +150,10 @@ $$</p>
 <h2 id="plane-waves-survive-the-non-linearity">Plane Waves Survive the Non-Linearity</h2>
 <p>The source's second-order equations are obtained by eliminating D and H. Applying the curl to the first sourced equation, substituting rot E from the source-free pair, and using the constitutive relations, gives</p>
 <p>$$
-\Delta\vec B - \frac{\partial^2}{\partial t^2}\vec B + \Delta\vec h - \mathrm{grad}\,\mathrm{div}\,\vec h + \frac{\partial}{\partial t}\mathrm{rot}\,\vec d = -\mathrm{rot}\,\vec J,
+\Delta\vec B - \frac{\partial^2}{\partial {t'}^2}\vec B + \Delta\vec h - \mathrm{grad}\,\mathrm{div}\,\vec h + \frac{\partial}{\partial t'}\mathrm{rot}\,\vec d = -\mathrm{rot}\,\vec J,
 $$</p>
 <p>$$
-\Delta\vec E - \frac{\partial^2}{\partial t^2}\vec E - \frac{\partial^2}{\partial t^2}\vec d + \mathrm{grad}\,\mathrm{div}\,\vec d + \frac{\partial}{\partial t}\mathrm{rot}\,\vec h = \frac{\partial}{\partial t}\vec J + \mathrm{grad}\,\rho .
+\Delta\vec E - \frac{\partial^2}{\partial {t'}^2}\vec E - \frac{\partial^2}{\partial {t'}^2}\vec d + \mathrm{grad}\,\mathrm{div}\,\vec d + \frac{\partial}{\partial t'}\mathrm{rot}\,\vec h = \frac{\partial}{\partial t'}\vec J + \mathrm{grad}\,\rho .
 $$</p>
 <p>The time derivative in front of the two rotation terms belongs there: it is what makes the deformed terms cancel for a plane wave, and it is easily lost in the two-column layout of the source. At $\vec\theta=0$ these are the ordinary wave equations. At $\vec\theta\ne0$ they are <strong>non-linear</strong>, because $\vec d$ and $\vec h$ are quadratic in the fields.</p>
 <p>The striking result is that the <strong>plane electromagnetic wave is still a solution</strong>. With the usual ansatz</p>
@@ -186,7 +186,7 @@ $$</p>
 <h3 id="the-densities-and-the-conservation-law">The densities and the conservation law</h3>
 <p>Multiplying the sourced equations by $\vec E$ and the source-free ones by $\vec H$ and adding gives the Poynting theorem in its deformed form,</p>
 <p>$$
-\frac{\partial\mathcal E}{\partial t} = -(\vec J\cdot\vec E) - \mathrm{div}\,\vec P,
+\frac{\partial\mathcal E}{\partial t'} = -(\vec J\cdot\vec E) - \mathrm{div}\,\vec P,
 \qquad
 \vec P = \vec E\times\vec H,
 $$</p>
@@ -225,7 +225,7 @@ $$</p>
 <p>proportional to the two invariants contracted with the background, and therefore vanishing at $\vec\theta=0$ and on null fields. So the antisymmetric part of the canonical tensor is present in <strong>both</strong> its spatial and its mixed components, and the spacetime asymmetry of the deformed arena appears as a non-symmetric stress tensor. The corpus records the fact and not an interpretation: whether the antisymmetric part can be absorbed by a Belinfante-type improvement on this arena is not shown by the source and is left open.</p>
 <h3 id="the-energy-density-as-an-integrability-condition">The energy density as an integrability condition</h3>
 <p>The relation behind the Poynting theorem above,
-$\vec E\cdot\partial/\partial t\vec D + \vec H\cdot\partial/\partial t\vec B = \partial/\partial t\mathcal E$, is not a
+$\vec E\cdot\partial/\partial t'\vec D + \vec H\cdot\partial/\partial t'\vec B = \partial/\partial t'\mathcal E$, is not a
 convenience: it is the <strong>integrability condition</strong> for an energy density to exist at all, and it holds because
 $\vec D$ and $\vec H$ are the field-derivatives of a Lagrangian. This is a statement about variational
 non-linear media generally rather than about non-commutativity — the energy density is defined precisely when
@@ -312,7 +312,7 @@ $$</p>
 </tr>
 <tr>
 <td>$[x^\mu,x^\nu]=i\theta^{\mu\nu}$</td>
-<td>The defining commutator; the corpus's "$ict$" convention is kept for time</td>
+<td>The defining commutator; the corpus's "$ict'$" convention is kept for time</td>
 </tr>
 <tr>
 <td>$\star$</td>

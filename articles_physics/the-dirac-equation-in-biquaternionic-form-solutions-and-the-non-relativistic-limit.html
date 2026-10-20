@@ -89,7 +89,7 @@ $$</p>
 \gamma_5 = i\,\gamma^0\gamma^1\gamma^2\gamma^3 = \begin{pmatrix} -I_2 & 0 \\ 0 & I_2 \end{pmatrix}, \qquad \gamma_5^2 = I_4,
 $$</p>
 <p>is diagonal, so the upper two-component block is left-handed and the lower is right-handed. We also use the <strong>Dirac representation</strong>, obtained by a unitary change of basis, in which $\gamma^0 = \mathrm{diag}(I_2,-I_2)$ and $\gamma^k = \begin{pmatrix} 0 & \sigma_k \\ -\sigma_k & 0 \end{pmatrix}$; the non-relativistic limit is simplest there. In the sections that construct the solutions we use natural units $\hbar = c = 1$; the dimensionally explicit forms are given where they carry physical meaning, namely in the mass-shell relation and in the Pauli equation.</p>
-<p>The two metric symbols used in this article must not be interchanged. The Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ belongs to the generators, through the anticommutator; the spacetime metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of the companion articles belongs to the $ict$ gradient, through $\Box$. They are the negatives of one another, and that relative sign is exactly the freedom the companion article flags as convention. The reconciliation is that the massless equation squares to</p>
+<p>The two metric symbols used in this article must not be interchanged. The Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ belongs to the generators, through the anticommutator; the spacetime metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ of the companion articles belongs to the $ict'$ gradient, through $\Box$. They are the negatives of one another, and that relative sign is exactly the freedom the companion article flags as convention. The reconciliation is that the massless equation squares to</p>
 <p>$$
 -\gamma^\mu\gamma^\nu\,\partial^2/\partial Q_\mu\partial Q_\nu
 = -g^{\mu\nu}\partial^2/\partial Q_\mu\partial Q_\nu
@@ -121,7 +121,7 @@ $$</p>
 <h3 id="positive-frequency-branch">Positive-frequency branch</h3>
 <p>Take the positive-frequency plane wave</p>
 <p>$$
-\psi(x) = w(\vec p)\, \exp(-i(Et - \vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))), \qquad E = +\sqrt{\vec p^2 + m^2},
+\psi(x) = w(\vec p)\, \exp(-i(Et' - \vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))), \qquad E = +\sqrt{\vec p^2 + m^2},
 $$</p>
 <p>where $w(\vec p)$ is a four-component constant spinor. Substituting into $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$ gives the momentum-space Dirac equation</p>
 <p>$$
@@ -150,7 +150,7 @@ $$</p>
 <h3 id="negative-frequency-branch">Negative-frequency branch</h3>
 <p>The negative-frequency plane waves are</p>
 <p>$$
-\psi(x) = v(\vec p)\, \exp(+i(Et - \vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))), \qquad E = +\sqrt{\vec p^2 + m^2}.
+\psi(x) = v(\vec p)\, \exp(+i(Et' - \vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))), \qquad E = +\sqrt{\vec p^2 + m^2}.
 $$</p>
 <p>Substituting gives the momentum-space equation</p>
 <p>$$
@@ -282,26 +282,26 @@ $$</p>
 <h3 id="removing-the-rest-energy">Removing the rest energy</h3>
 <p>The non-relativistic limit is most transparent in the Dirac basis, where $\beta = \gamma^0 = \mathrm{diag}(I_2,-I_2)$ and the spinor splits into an upper ("large") and a lower ("small") two-component part. Coupling to the electromagnetic four-potential $A^\mu = (\Phi,\vec A)$ is by the minimal coupling $D_\mu = \partial/\partial Q_\mu + iqA_\mu$ for a field of charge $ϙ$ (so $A_\mu = (\Phi,-\vec A)$), which is equivalent to</p>
 <p>$$
-p \;\longrightarrow\; p - ϙ\vec A, \qquad i\partial/\partial t \;\longrightarrow\; i\partial/\partial t - ϙ\Phi
+p \;\longrightarrow\; p - ϙ\vec A, \qquad i\partial/\partial t' \;\longrightarrow\; i\partial/\partial t' - ϙ\Phi
 $$</p>
-<p>in natural units. The Dirac equation becomes $i\partial/\partial t\psi = H^{\mathrm{fop}}\psi$ with</p>
+<p>in natural units. The Dirac equation becomes $i\partial/\partial t'\psi = H^{\mathrm{fop}}\psi$ with</p>
 <p>$$
 H^{\mathrm{fop}} = \boldsymbol{\alpha}\cdot(p - ϙ\vec A) + \beta m + ϙ\Phi, \qquad
 \boldsymbol{\alpha}^k = \gamma^0\gamma^k = \begin{pmatrix} 0 & \sigma_k \\ \sigma_k & 0 \end{pmatrix}.
 $$</p>
 <p>The rest energy dominates the dynamics, so we factor it out by writing</p>
 <p>$$
-\psi = \exp(-imt)\begin{pmatrix} \phi \\ \chi \end{pmatrix}.
+\psi = \exp(-imt')\begin{pmatrix} \phi \\ \chi \end{pmatrix}.
 $$</p>
 <p>Substituting and cancelling the common phase gives the two coupled equations</p>
 <p>$$
-i\,\partial/\partial t\phi = \boldsymbol{\sigma}\cdot\vec\pi\,\chi + ϙ\Phi\,\phi,
+i\,\partial/\partial t'\phi = \boldsymbol{\sigma}\cdot\vec\pi\,\chi + ϙ\Phi\,\phi,
 \qquad
-i\,\partial/\partial t\chi = \boldsymbol{\sigma}\cdot\vec\pi\,\phi - 2m\,\chi + ϙ\Phi\,\chi,
+i\,\partial/\partial t'\chi = \boldsymbol{\sigma}\cdot\vec\pi\,\phi - 2m\,\chi + ϙ\Phi\,\chi,
 $$</p>
 <p>where $\vec\pi = p - ϙ\vec A$ is the kinetic momentum. The small component is the one multiplied by the large rest energy $2m$.</p>
 <h3 id="eliminating-the-small-component">Eliminating the small component</h3>
-<p>If the fields and the kinetic energy are small compared with $mc^2$ and vary slowly, the term $2m\chi$ dominates the right-hand side of the second equation, and $\partial/\partial t\chi$ is negligible by comparison:</p>
+<p>If the fields and the kinetic energy are small compared with $mc^2$ and vary slowly, the term $2m\chi$ dominates the right-hand side of the second equation, and $\partial/\partial t'\chi$ is negligible by comparison:</p>
 <p>$$
 0 \approx \boldsymbol{\sigma}\cdot\vec\pi\,\phi - 2m\,\chi
 \quad\Longrightarrow\quad
@@ -309,7 +309,7 @@ $$</p>
 $$</p>
 <p>This is the algebraic statement that the small component is generated from the large one by the velocity operator $\boldsymbol{\sigma}\cdot\vec\pi/2m$. Substituting into the first equation eliminates $\chi$ entirely and leaves an equation for the two-component spinor $\phi$:</p>
 <p>$$
-i\,\partial/\partial t\phi = \left[ \frac{(\boldsymbol{\sigma}\cdot\vec\pi)^2}{2m} + ϙ\Phi \right]\phi.
+i\,\partial/\partial t'\phi = \left[ \frac{(\boldsymbol{\sigma}\cdot\vec\pi)^2}{2m} + ϙ\Phi \right]\phi.
 $$</p>
 <h3 id="the-pauli-equation">The Pauli equation</h3>
 <p>It remains to evaluate the square of the Pauli operator. The standard identity $(\boldsymbol{\sigma}\cdot\vec a)(\boldsymbol{\sigma}\cdot\vec b) = \vec a\cdot\vec b + i\boldsymbol{\sigma}\cdot(\vec a\times\vec b)$ gives</p>
@@ -326,11 +326,11 @@ $$</p>
 $$</p>
 <p>and the two-component equation in natural units reads</p>
 <p>$$
-i\,\partial/\partial t\phi = \left[ \frac{\vec\pi^2}{2m} + ϙ\Phi - \frac{ϙ}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi.
+i\,\partial/\partial t'\phi = \left[ \frac{\vec\pi^2}{2m} + ϙ\Phi - \frac{ϙ}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi.
 $$</p>
 <p>Restoring the explicit factors of $\hbar$ and writing $\vec\pi = p - ϙ\vec A$ with $p = -i\hbar\nabla$ gives the <strong>Pauli equation</strong></p>
 <p>$$
-i\hbar\,\partial/\partial t\phi = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi.
+i\hbar\,\partial/\partial t'\phi = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi.
 $$</p>
 <p>The first two terms are the ordinary non-relativistic Hamiltonian of a charged particle; the third is the spin–magnetic coupling. This is the announced reduction of the biquaternionic Dirac equation to the Pauli equation: the four-component spinor has been reduced to a two-component spinor, and the spin has become an explicit dynamical variable.</p>
 <h3 id="the-g-factor-and-the-spinmagnetic-coupling">The g-factor and the spin–magnetic coupling</h3>
@@ -361,8 +361,8 @@ $$</p>
 <h2 id="massless-case-the-weyl-equations-and-chirality">Massless case: the Weyl equations and chirality</h2>
 <p>Setting $m = 0$ decouples the two chiral components. In the chiral basis the Dirac equation becomes the pair of <strong>Weyl equations</strong></p>
 <p>$$
-i\hbar\,\partial/\partial t\psi_R = c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_R, \qquad
-i\hbar\,\partial/\partial t\psi_L = -\,c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_L,
+i\hbar\,\partial/\partial t'\psi_R = c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_R, \qquad
+i\hbar\,\partial/\partial t'\psi_L = -\,c\,\boldsymbol{\sigma}\cdot\vec u_p\,\psi_L,
 $$</p>
 <p>or, in covariant form, $\sigma^\mu\partial/\partial Q_\mu\,\psi_R = 0$ and $\bar{\sigma}^\mu\partial/\partial Q_\mu\,\psi_L = 0$ with the usual $\sigma^\mu = (I,\boldsymbol{\sigma})$, $\bar{\sigma}^\mu = (I,-\boldsymbol{\sigma})$ up to the metric convention. Each equation has a two-dimensional solution space, and each helicity is locked to a chirality: the right-handed field has positive helicity, the left-handed field negative helicity. The mass term is exactly what couples the two, and it is the only term in the equation that does so. The projectors</p>
 <p>$$
@@ -370,11 +370,11 @@ P_L = \tfrac{1}{2}(1 - \gamma_5), \qquad P_R = \tfrac{1}{2}(1 + \gamma_5)
 $$</p>
 <p>select the two components, and the biquaternion algebra contains their algebraic counterparts as the central idempotents of the complexified even Clifford algebra discussed in the companion article. The Weyl spinors are thus the $m \to 0$ limit of the solutions constructed above, and the biquaternionic Dirac operator reduces in that limit to the pair of Weyl operators.</p>
 <h2 id="summary">Summary</h2>
-<p>The biquaternionic Dirac equation, in its spinor-module form $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \not{p}+m$, $\sum_r v\bar{v} = \not{p}-m$.</p>
+<p>The biquaternionic Dirac equation, in its spinor-module form $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$, has plane-wave solutions in two branches. The positive-frequency branch is spanned by $w^{(r)}(\vec p)\exp(-i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency branch by $v^{(r)}(\vec p)\exp(+i(Et'-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2+m^2}$; both branches are the two roots of the single biquaternionic mass-shell condition $\tilde P\tilde P^{\natural}=-m^2c^2$. The spinors have an explicit two-component structure, displayed here in both the Dirac and the chiral bases. They satisfy the covariant normalizations $\bar{w}w = 2m$, $\bar{v}v = -2m$, the orthogonality $\bar{w}v = 0$, and the spin sums $\sum_r w\bar{w} = \not{p}+m$, $\sum_r v\bar{v} = \not{p}-m$.</p>
 <p>The spinor bilinears have a clean biquaternion interpretation. The conserved vector current is the four-vector $\tilde{J} = ic\,j^0e_t + \vec j$ in the material sector $\mathbb{M}_-$, while the rank-one Hermitian form built from a single two-component spinor is exactly the idempotent $\tfrac{1}{2}(e_t + i\vec u)$ of the informational sector $\mathbb{M}_+$, so a Weyl spinor is a pure state of the informational sector. The scalar and pseudoscalar bilinears are the real and imaginary parts of the chirality-flipping bilinear $\psi_L^\dagger\psi_R$.</p>
 <p>In the non-relativistic limit, factoring out the rest energy and eliminating the small component reduces the four-component equation to the Pauli equation</p>
 <p>$$
-i\hbar\,\partial/\partial t\phi = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi,
+i\hbar\,\partial/\partial t'\phi = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi,
 $$</p>
 <p>whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \mathbb{M}_+$. The coefficient produced by the elimination is exactly the one required by $\vec\mu = g\frac{ϙ}{2m}\vec S$ with $g = 2$, so the gyromagnetic factor and the spin–magnetic coupling are consequences of the biquaternionic mass term rather than separate postulates. In the massless limit the equation splits into the two Weyl equations, with chirality locked to helicity, which is the starting point for the treatment of chirality with Weyl spinors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -421,7 +421,7 @@ $$</p>
 | $\psi = (\psi_L,\psi_R)$ | Dirac spinor in the chiral basis |
 | $\gamma^\mu$, $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\gamma^\mu$; note $g = -\eta$ |
-| $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict$ gradient |
+| $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Spacetime metric of the $ict'$ gradient |
 | $\bar{\psi} = \psi^\dagger\gamma^0$ | Dirac adjoint |
 | $w^{(r)}(\vec p),\, v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors |
 | $p^\mu = (E,\vec p)$, $\not{p} = \gamma^0E - \boldsymbol{\gamma}\cdot\vec p$ | Four-momentum and Feynman slash |

@@ -95,10 +95,10 @@ $$</p>
 $$</p>
 <p>So $\mathbb{M}_-$ is imaginary scalar, real vector and $\mathbb{M}_+$ is real scalar, imaginary vector, and on the physical coordinates the same two spaces read</p>
 <p>$$
-\mathbb{M}_- = \{ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z\}, \qquad
-\mathbb{M}_+ = \{ct'\,e_t + i(x'\vec e_x + y'\vec e_y + z'\vec e_z)\},
+\mathbb{M}_- = \{ict'\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z\}, \qquad
+\mathbb{M}_+ = \{ct\,e_t + i(x'\vec e_x + y'\vec e_y + z'\vec e_z)\},
 $$</p>
-<p>with $c$ the speed of light and $t,x,y,z$ and $t',x',y',z'$ all real. The material sector is the Minkowski four-vector; the informational sector is its counterpart with the time real and the three space directions imaginary. The two coordinate quadruples are independent, which is why the algebra carries the times $ict$ and $ct'$ and the spaces $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ without identifying them.</p>
+<p>with $c$ the speed of light and $t',x,y,z$ and $t,x',y',z'$ all real. The material sector is the Minkowski four-vector; the informational sector is its counterpart with the time real and the three space directions imaginary. The two coordinate quadruples are independent, which is why the algebra carries the times $ict'$ and $ct$ and the spaces $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ without identifying them.</p>
 <p>Each sector is four-real-dimensional, they meet only at $0$, together they span the algebra, and multiplication by $i$ exchanges them:</p>
 <p>$$
 i\mathbb{M}_- = \mathbb{M}_+, \qquad i\mathbb{M}_+ = \mathbb{M}_- .
@@ -171,14 +171,14 @@ $$</p>
 <p>Five reasons, in increasing order of strength.</p>
 <ol>
 <li>
-<p><strong>It is a four-dimensional real space with a real form of the right signature.</strong> On $\mathbb{M}_-$, with $\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm reads
+<p><strong>It is a four-dimensional real space with a real form of the right signature.</strong> On $\mathbb{M}_-$, with $\tilde{R} = ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm reads
 $$
-\langle\tilde{R}\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2,
+\langle\tilde{R}\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2,
 $$
 a real form of signature $(3,1)$. Position, velocity, momentum, energy–momentum, four-current and four-potential are all elements of this one subspace, so the kinematical content of relativity — that these are one kind of object — is a statement about the algebra.</p>
 </li>
 <li>
-<p><strong>The Lorentzian signature is derived, not postulated.</strong> The norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, in which all four directions enter on an equal footing: there is no minus sign in the form itself and none is needed. A minus appears only when a real coordinate is put on a direction whose coefficient carries an $i$, which is exactly the $ict$ convention, and then it comes from $i^2 = -1$ alone. Nothing about the metric has to be assumed at the start, not even the choice of which direction is timelike. A direction is timelike because its coefficient is imaginary. That is a labelling of the coordinate, not a commitment of the form.</p>
+<p><strong>The Lorentzian signature is derived, not postulated.</strong> The norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, in which all four directions enter on an equal footing: there is no minus sign in the form itself and none is needed. A minus appears only when a real coordinate is put on a direction whose coefficient carries an $i$, which is exactly the $ict'$ convention, and then it comes from $i^2 = -1$ alone. Nothing about the metric has to be assumed at the start, not even the choice of which direction is timelike. A direction is timelike because its coefficient is imaginary. That is a labelling of the coordinate, not a commitment of the form.</p>
 </li>
 <li>
 <p><strong>The invariance group comes for free, and it is the Lorentz group.</strong> A form that multiplies always brings its own isometry group: the elements of unit norm. Those are the biquaternions with $\langle\tilde{U}\rangle_{\natural} = 1$, they form $SL(2,\mathbb{C})$, and they act on $\mathbb{M}_-$ by $\Gamma$ above. That action is the double cover of the proper orthochronous Lorentz group. Lorentz invariance is therefore not an axiom added to the algebra; it is the invariance group of the algebra's own norm. This is the strongest single reason to call $\mathbb{M}_-$ the relativistic sector, because it is the one place where the framework produces a physical symmetry group rather than naming one.</p>
@@ -254,7 +254,7 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 </tr>
 <tr>
 <td>The interval and its group</td>
-<td>$\langle ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2t^2+x^2+y^2+z^2$; <strong>the unit-norm elements are $SL(2,\mathbb{C})$ acting by $\Gamma$</strong>, the double cover of the Lorentz group</td>
+<td>$\langle ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} = -c^2{t'}^2+x^2+y^2+z^2$; <strong>the unit-norm elements are $SL(2,\mathbb{C})$ acting by $\Gamma$</strong>, the double cover of the Lorentz group</td>
 </tr>
 <tr>
 <td>The light cone</td>
@@ -352,7 +352,7 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 </tr>
 <tr>
 <td>The Matsubara thermal formalism without the Wick rotation</td>
-<td>In the equilibrium case the rotation is not merely harmless; it is <strong>unnecessary</strong>, and the corpus now does the Matsubara thermal formalism inside $\mathbb{M}_-$ with no rotation at all. The imaginary time is not introduced for convergence: it is the intrinsic imaginary direction of $\mathbb{M}_-$, the same direction that appears as $ict$; thermal equilibrium complexifies it, $t\mapsto t+is$ along the KMS strip, and the thermal circle is its compactification, $t\sim t+i\beta$. The wave biquaternion stays in the sector, $\tilde P_E=i\omega_n e_t+\vec p\in\mathbb{M}_-$, and the mass-shell denominator is the Hermitian form of that element, $\mathcal{M}_E=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=\omega_n^2+\vec p^2+m^2$, positive because $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is definite, not because a metric was rotated. The two routes agree by an identity, $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*}=\langle -\omega_n e_t+\vec p\rangle_{\natural}$, and the biquaternion norm of the material element, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, is indefinite and cannot serve: the interval and the probability are two forms of one element. The thermal correlator's positivity is then the <strong>central-root case of the Bochner theorem</strong> — the kernel $\exp(i\omega_n\tau)$ is the exponential of $\rho=i$, and the central root is degenerate, so the transform of a positive measure is positive definite there without qualification. Proved from the definitions as an identity, and an interpretation in that it says which route is the proper one; its content is that the case the rotation was thought to need is done without it, and that the positive work is done by the Hermitian form and not by the norm.</td>
+<td>In the equilibrium case the rotation is not merely harmless; it is <strong>unnecessary</strong>, and the corpus now does the Matsubara thermal formalism inside $\mathbb{M}_-$ with no rotation at all. The imaginary time is not introduced for convergence: it is the intrinsic imaginary direction of $\mathbb{M}_-$, the same direction that appears as $ict'$; thermal equilibrium complexifies it, $t'\mapsto t'+is$ along the KMS strip, and the thermal circle is its compactification, $t'\sim t'+i\beta$. The wave biquaternion stays in the sector, $\tilde P_E=i\omega_n e_t+\vec p\in\mathbb{M}_-$, and the mass-shell denominator is the Hermitian form of that element, $\mathcal{M}_E=\langle\tilde P_E,\tilde P_E\rangle_{*}+m^2=\omega_n^2+\vec p^2+m^2$, positive because $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is definite, not because a metric was rotated. The two routes agree by an identity, $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*}=\langle -\omega_n e_t+\vec p\rangle_{\natural}$, and the biquaternion norm of the material element, $\langle\tilde P_E\rangle_{\natural}=-\omega_n^2+\vec p^2$, is indefinite and cannot serve: the interval and the probability are two forms of one element. The thermal correlator's positivity is then the <strong>central-root case of the Bochner theorem</strong> — the kernel $\exp(i\omega_n\tau)$ is the exponential of $\rho=i$, and the central root is degenerate, so the transform of a positive measure is positive definite there without qualification. Proved from the definitions as an identity, and an interpretation in that it says which route is the proper one; its content is that the case the rotation was thought to need is done without it, and that the positive work is done by the Hermitian form and not by the norm.</td>
 </tr>
 <tr>
 <td>The renormalization group without the Wick rotation</td>
@@ -405,8 +405,8 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 <h2 id="common-misreadings">Common Misreadings</h2>
 <ol>
 <li><strong>The material sector is the anti-Hermitian one.</strong> The more familiar convention would take the Hermitian subspace as the physical one. Here it is the other way round, and the reason is stated above: the four-vectors must multiply, the readings must be real.</li>
-<li><strong>The prime marks the $i$, not the sector.</strong> The primed parameter is the one attached to $ie_\mu$: a rule about the coefficients and not a label of a subspace. The crossing it produces is the point. In $\mathbb{M}_-$ the $i$ sits on the scalar, so the material time is the primed scalar slot, $ict = iq'_t$; in $\mathbb{M}_+$ it sits on the vector, so the informational positions are the primed slots, $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$. That one crossing is what makes the two sectors mirror images.</li>
-<li><strong>The material time enters as an imaginary coefficient and the informational time as a real one.</strong> $ict$ against $ct'$. The minus of the metric comes from $i^2 = -1$ in $ict$ and from nowhere else.</li>
+<li><strong>The prime marks the $i$, not the sector.</strong> The primed parameter is the one attached to $ie_\mu$: a rule about the coefficients and not a label of a subspace. The crossing it produces is the point. In $\mathbb{M}_-$ the $i$ sits on the scalar, so the material time is the primed scalar slot, $ict' = iq'_t$; in $\mathbb{M}_+$ it sits on the vector, so the informational positions are the primed slots, $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$. That one crossing is what makes the two sectors mirror images.</li>
+<li><strong>The material time enters as an imaginary coefficient and the informational time as a real one.</strong> $ict'$ against $ct$. The minus of the metric comes from $i^2 = -1$ in $ict'$ and from nowhere else.</li>
 <li><strong>Two forms, two jobs, never conflated.</strong> $\langle\cdot\rangle_{\natural}$ is complex in general and real on each sector, indefinite and multiplicative — the interval. $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ is real, definite and not multiplicative — the probability. In particular $\langle\tilde{Q}\rangle_{\natural} = 0$ does not mean $\tilde{Q} = 0$.</li>
 <li><strong>The interval is the norm, not the square.</strong> $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$; the bare $\tilde{Q}^2$ is not a scalar and is not the interval.</li>
 <li><strong>Neither sector is a subalgebra.</strong> Neither is closed under the product: a product of two elements of one sector generally has components in both. That is why the rotor group and the state module live in the full algebra.</li>
@@ -461,11 +461,11 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
-<td>Material sector: imaginary scalar, real vector, $ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
+<td>Material sector: imaginary scalar, real vector, $ict'\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>Informational sector: real scalar, imaginary vector, $ct'\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$</td>
+<td>Informational sector: real scalar, imaginary vector, $ct\,e_t+i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = \sum_\mu Q_{1\mu}Q_{2\mu}$</td>
@@ -517,7 +517,7 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the po
 </tr>
 <tr>
 <td>$c$</td>
-<td>Speed of light; $ict$ is the material time coordinate</td>
+<td>Speed of light; $ict'$ is the material time coordinate</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>

@@ -82,13 +82,13 @@ $$</p>
 A = A^\dagger.
 $$</p>
 <p>The possible results of a measurement of $A$ are the eigenvalues of $A$.</p>
-<p><strong>Postulate 3 (Dynamics).</strong> The evolution of a closed quantum system in time is unitary. If the state at time $t_0$ is $\rho(t_0)$, the state at time $t$ is</p>
+<p><strong>Postulate 3 (Dynamics).</strong> The evolution of a closed quantum system in time is unitary. If the state at time $t'_0$ is $\rho(t'_0)$, the state at time $t'$ is</p>
 <p>$$
-\rho(t) = U(t, t_0)\, \rho(t_0)\, U(t, t_0)^\dagger,
+\rho(t') = U(t', t'_0)\, \rho(t'_0)\, U(t', t'_0)^\dagger,
 $$</p>
-<p>where $U(t, t_0)$ is the unitary evolution operator satisfying</p>
+<p>where $U(t', t'_0)$ is the unitary evolution operator satisfying</p>
 <p>$$
-i\hbar\, \frac{d}{dt} U(t, t_0) = H\, U(t, t_0), \qquad U(t_0, t_0) = I,
+i\hbar\, \frac{d}{dt'} U(t', t'_0) = H\, U(t', t'_0), \qquad U(t'_0, t'_0) = I,
 $$</p>
 <p>with $H$ the Hamiltonian of the system.</p>
 <p><strong>Postulate 4 (Measurement).</strong> A projective measurement of an observable $A$ has outcomes labeled by its eigenvalues. If $A$ has spectral decomposition</p>
@@ -221,28 +221,28 @@ $$</p>
 <p>i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.</p>
 <h2 id="dynamics">Dynamics</h2>
 <h3 id="the-schrodinger-picture">The Schrödinger Picture</h3>
-<p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\psi(t)\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
+<p>In the <strong>Schrödinger picture</strong>, the state of the system evolves in time, and the observables are fixed. For a pure state $|\psi(t')\rangle$, the evolution is governed by the <strong>Schrödinger equation</strong>:</p>
 <p>$$
-i\hbar\, \frac{\partial}{\partial t}|\psi(t)\rangle = H\, |\psi(t)\rangle,
+i\hbar\, \frac{\partial}{\partial t'}|\psi(t')\rangle = H\, |\psi(t')\rangle,
 $$</p>
 <p>where $H$ is the Hamiltonian. The solution is</p>
 <p>$$
-|\psi(t)\rangle = U(t, t_0)\, |\psi(t_0)\rangle,
+|\psi(t')\rangle = U(t', t'_0)\, |\psi(t'_0)\rangle,
 $$</p>
-<p>with $U(t, t_0) = \exp\left(-\tfrac{i}{\hbar}H(t - t_0)\right)$ for a time-independent Hamiltonian.</p>
-<p>For a density matrix $\rho(t)$, the evolution is given by the <strong>von Neumann equation</strong>:</p>
+<p>with $U(t', t'_0) = \exp\left(-\tfrac{i}{\hbar}H(t' - t'_0)\right)$ for a time-independent Hamiltonian.</p>
+<p>For a density matrix $\rho(t')$, the evolution is given by the <strong>von Neumann equation</strong>:</p>
 <p>$$
-i\hbar\, \frac{\partial}{\partial t}\rho(t) = [H, \rho(t)],
+i\hbar\, \frac{\partial}{\partial t'}\rho(t') = [H, \rho(t')],
 $$</p>
-<p>whose solution is $\rho(t) = U(t, t_0)\rho(t_0)U(t, t_0)^\dagger$.</p>
+<p>whose solution is $\rho(t') = U(t', t'_0)\rho(t'_0)U(t', t'_0)^\dagger$.</p>
 <h3 id="the-heisenberg-picture">The Heisenberg Picture</h3>
 <p>In the <strong>Heisenberg picture</strong>, the state is fixed, and the observables evolve in time:</p>
 <p>$$
-A_H(t) = U(t, t_0)^\dagger\, A\, U(t, t_0).
+A_H(t') = U(t', t'_0)^\dagger\, A\, U(t', t'_0).
 $$</p>
 <p>The evolution equation is the <strong>Heisenberg equation</strong>:</p>
 <p>$$
-i\hbar\, \frac{d}{dt} A_H(t) = [A_H(t), H].
+i\hbar\, \frac{d}{dt'} A_H(t') = [A_H(t'), H].
 $$</p>
 <p>The two pictures are related by a unitary transformation and give the same predictions for physical quantities.</p>
 <h3 id="unitarity-and-reversibility">Unitarity and Reversibility</h3>
@@ -374,8 +374,8 @@ $$</p>
 <td>Expectation value of $A$ in state $\rho$</td>
 </tr>
 <tr>
-<td>$U(t,t_0)$</td>
-<td>Unitary evolution operator, $U(t_0,t_0) = I$</td>
+<td>$U(t',t'_0)$</td>
+<td>Unitary evolution operator, $U(t'_0,t'_0) = I$</td>
 </tr>
 <tr>
 <td>$H$</td>
