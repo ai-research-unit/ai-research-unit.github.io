@@ -31,7 +31,7 @@ The order is the order of the readings. Each section states the algebraic result
 | The trace-one positive slice and the pure states | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
 | The connection, the curvature and the holonomy | [Fibre Bundles, Connections and Curvature](../articles_maths/fibre-bundles-connections-and-curvature.html) |
 
-The physics sources are *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$*, *The Four General Products*, *The Informational Sector*, *The Bloch Ball*, *Pancharatnam's Phase* and *The Hopf Fibration*.
+The physics sources are *The Four General Products*, *The Informational Sector*, *The Bloch Ball*, *Pancharatnam's Phase* and *The Hopf Fibration*.
 
 ## The Band and Its Neighbours
 
@@ -498,8 +498,7 @@ The three grades of coefficient reality are the complex, central and real specie
 ## Further Reading
 
 - [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the place of the band among the four products.
-- [The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$](the-biquaternioid-general-plain-sesqualgebra-gps-over-c.html), for the product, its roots and its nilpotents.
-- [The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$](the-biquaternioid-general-quaternionic-algebra-gqa-over-c.html), for the type criterion and the square map.
+- [The Eight Derived Structures: Symmetric and Antisymmetric](the-eight-derived-structures-symmetric-and-antisymmetric.html), for the GPS and GQA structures, their products, their roots and their nilpotents.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the trace-one slice.
 - [The Bloch Ball as the Trace-One Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the purity and the linear entropy.
 - [Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html), for the half-solid-angle rule.

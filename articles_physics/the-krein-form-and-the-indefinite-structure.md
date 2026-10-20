@@ -11,7 +11,7 @@ $$
 
 and at two equal arguments it is real. It has signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, it fixes no overall sign, and it cannot normalise a state. Those are not defects of the form; they are the structure it carries. Its level sets are hyperboloids rather than spheres, its positive lines form a complex hyperbolic space, and its isometry group is $\mathrm{U}(1,3)$, not the Lorentz group.
 
-The physical reading of the form itself — the gauge calibration, the sign relation to the interval on the material sector — is owned by *The Krein Form and Its Physical Interpretation*. This article is its companion on the indefinite structure: the Gram matrix, the fundamental symmetry, the isometry group, the level sets, the hyperbolic geometry and the $J$-contractions. It states the geometry and the readings, and it states where the readings stop.
+The physical reading of the form itself — the gauge calibration, the sign relation to the interval on the material sector — is the subject of this article. The article gives the Gram matrix, the fundamental symmetry, the isometry group, the level sets, the hyperbolic geometry and the $J$-contractions. It states the geometry and the readings, and it states where the readings stop.
 
 The article is a reader. The mathematics is owned by *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*, *The Krein Gram Matrix and the Restrictions of the Form*, *The Krein Isometry Group and Its $J$-Contractions*, *The Krein Level Sets and the Hyperbolic Structure*, *Indefinite Positivity and the Krein Cone* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*.
 
@@ -292,7 +292,6 @@ The isometry group is not the Lorentz group. The Lorentz group is the subgroup t
 - [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the ball and the two hyperbolic models.
 - [Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.html), for the cone and the operator cone.
 - [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html), for the null set and the doubly-null lines.
-- *The Krein Form and Its Physical Interpretation*, for the physical interpretation of the form.
 - *The Four Forms and the Four Algebraic Norms*, for the place of the Krein form among the four forms.
 - *The Operators: One-Sided, Two-Sided, Sandwich*, for the one-sided and two-sided operators of the form.
 - *The Polar Representation and Its Three Pairings*, for the factors that the isometries act on.

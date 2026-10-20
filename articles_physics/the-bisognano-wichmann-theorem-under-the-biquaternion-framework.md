@@ -294,8 +294,8 @@ The framework does **not** make the geometric boost an inner automorphism of the
 - Companion article *The Unruh Effect in Biquaternionic Form*, for the Rindler wedge, the boost rotor, the two-point function, and the Unruh temperature.
 - Companion article *The CPT Theorem in Biquaternionic Form*, for the PCT operator and the anti-unitarity that conjugates the scalar imaginary.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and its action on $\mathbb{M}_-$.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the four-vectors, and the zero-divisor cone.
-- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the trace formula, and the modular Hamiltonian's home.
+- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-vectors, and the zero-divisor cone.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the trace formula, and the modular Hamiltonian's home.
 - Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state and $K=\beta H+(\log Z)e_t$.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the field-algebra setting the wedge requires.
 - Companion article *Curved Spacetime and the Biquaternion Framework*, for the Killing-horizon analogue and the Hawking case.

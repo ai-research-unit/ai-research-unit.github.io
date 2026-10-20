@@ -6,7 +6,7 @@ The informational sector is the Hermitian subspace $\mathbb{M}_+$. It is the fix
 
 That mathematics is established algebra. What is not established is whether the sector is a distinct sector of the physical world in the sense in which the material sector is spacetime. The article states the hypothesis, develops the algebraic interpretation in full, and marks the boundary at the point where the algebra ends and the physics begins.
 
-This article is the counterpart, in this category, of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* in *Biquaternion Mathematical Physics*: the same sector, read here from the mathematics. It states each result in brief, links the mathematics article that owns it, and gives the physical interpretation with its boundary.
+This article states each result in brief, links the mathematics article that owns it, and gives the physical interpretation with its boundary.
 
 The results used are these.
 
@@ -435,7 +435,6 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html), for the matrix-unitary slice.
 - [Jordan Algebras of Sesqualgebras](../articles_maths/jordan-algebras-of-sesqualgebras.html), for the symmetrised product.
 - [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the Hilbert–Schmidt pairing and the matrix trace.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the same sector read in the physics category.
 - *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the partner sector and the action on it.
 - *The Born Rule as a Trace Formula — Derivation and Comparison*, for the derivation of the probability formula and its comparison with the postulate.
 - *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.

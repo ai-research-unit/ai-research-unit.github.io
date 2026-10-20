@@ -277,7 +277,7 @@ and the sandwich is the scaled projection $\operatorname{H}_{\tilde Q}^2=4\opera
 
 ## Limits
 
-The article states the operator calculus of the general plain product and declares the other rows. It does not re-prove the composition laws, which belong to *The Monoid of Acting Maps*, and it does not re-read the sandwich on the remarkable subspaces, which belongs to *The Sandwich Action in Subspaces*.
+The article states the operator calculus of the general plain product and declares the other rows. It does not re-prove the composition laws, which belong to *The Monoid of Acting Maps*, and it does not re-read the sandwich on the remarkable subspaces, which belongs to *The Operators: One-Sided, Two-Sided, Sandwich*.
 
 The monoid of acting maps is not a $C^{*}$-algebra. The kernel of an acting map is not a measurement. The idempotents are states only when the physical reading of the state articles is supplied; the algebra alone gives them no probability rule.
 
@@ -331,10 +331,6 @@ The twelve structures are not one calculus. Only the general plain bilinear row 
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the monoid, the enveloping algebra and the two-sided maps.
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners and the frames.
 - [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html), for the Hermitian corners and the state/observable split.
-- *The Operators of the Bilinear Product: One-Sided, Two-Sided and the Sandwich*, for the detailed operator calculus behind this article.
-- *The Sandwich Action in Subspaces*, for the action of the sandwich on the six remarkable subspaces.
-- *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*, for the monoid in full.
-- *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*, for the crossing table of the twelve structures.
-- *Ideals and the Peirce Decomposition: the Populations and the Coherences*, for the corners in full.
-- *Worked Examples in the Biquaternion Algebra*, for further computations with the operators.
+- *The Eight Derived Structures: Symmetric and Antisymmetric*, for the crossing table of the twelve structures.
+- *The Complementary Ideal and the Second State Space*, for the corners in full.
 - *The Element and Operator Representations*, for the pictures in which these operators are matrices.

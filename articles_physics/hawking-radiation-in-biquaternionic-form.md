@@ -564,7 +564,7 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 - *The Unruh Effect in Biquaternionic Form*, the sibling article: the Rindler wedge, the boost, the KMS strip, and the temperature from the surface gravity.
 - *The KMS Condition and the Biquaternion Framework*, the parent: the KMS condition, its imaginary-time strip, and the modular Hamiltonian in $\mathbb{M}_+$.
 - *Curved Spacetime and the Biquaternion Framework*, for the frame-field route to the metric and the obstruction to black-hole exteriors in the local-scale class.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the sectors and their imaginary-time interpretation.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the sectors and their imaginary-time interpretation.
 - *Introduction to the Biquaternion Universe*, for the algebra and the notation.
 - *The Klein–Gordon Equation in Biquaternionic Form*, for the material-sector wave equation whose modes are mixed.
 - *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single-mode occupation and its parity grading.

@@ -13,7 +13,7 @@ The four factors carry $1+1+3+3=8$ real parameters, the real dimension of the al
 
 The article reads the word and its three two-factor regroupings. The **quaternion pairing** puts the scale and the rotor on one side and the phase and the boost on the other; the **Hamilton root pairing** puts the scale and the phase on one side and the boost and the rotor on the other; the **Cartan Hermitian pairing** puts the scale and the boost on one side and the phase and the rotor on the other. The three are the three ways of splitting four ordered factors into two groups, and each has a physical reading: a real-quaternion modulus, a complex axis-angle, and an amplitude times a unitary.
 
-The mathematics is owned by *The Polar Element Representation of Biquaternions*, *The Polar Decomposition of Biquaternions in Practice*, *The Quaternion Pairing*, *The Hamilton Root Pairing*, *The Cartan Hermitian Pairing* and *The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces*. The physics is the reading given below, with its boundaries stated at the end.
+The mathematics is owned by *The Polar Element Representation of Biquaternions*, *The Polar Representation and Its Three Pairings*, *The Quaternion Pairing*, *The Hamilton Root Pairing*, *The Cartan Hermitian Pairing* and *The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces*. The physics is the reading given below, with its boundaries stated at the end.
 
 ## The Results It Uses
 
@@ -275,7 +275,5 @@ The three pairings are regroupings, not new decompositions. They add no informat
 - [The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html), for the amplitude–phase split and the matrix polar decomposition.
 - [The Action of the Polar Element Representation on the Hermitian and Anti-Hermitian Subspaces](../articles_maths/the-action-of-the-polar-element-representation-on-the-hermitian-and-anti-hermitian-subspaces.html), for the sector action and the cross-term signs.
 - [The Polar Element Representation and Remarkable Subspaces](../articles_maths/the-polar-element-representation-and-remarkable-subspaces.html), for the preservation table.
-- *The Polar Decomposition of Biquaternions in Practice*, for the same procedure read in the physics category.
-- *The Quaternion Pairing of the Polar Element Representation of Biquaternions*, *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions* and *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions*, for the same pairings read in the physics category.
 - *The Element and Operator Representations*, for the pictures in which the polar factors act.
 - *The Operators: One-Sided, Two-Sided, Sandwich*, for the one-sided and two-sided operators of the word.

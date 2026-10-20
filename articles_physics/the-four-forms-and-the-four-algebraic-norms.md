@@ -16,7 +16,7 @@ $$
 
 with $\varepsilon=(1,-1,-1,-1)$.
 
-The article is the counterpart, in this category, of *The Four Forms, the Four Algebraic Norms and the Change of Scalars* and of *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale*, both in *Biquaternion Mathematical Physics*. It owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the reading is given with its boundary.
+The article owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the reading is given with its boundary.
 
 ## The Results It Uses
 
@@ -246,8 +246,5 @@ The article states no dynamics, no mass value, no spectrum and no gauge group. T
 - [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html) and [Remarkable Subspaces and the Four Algebraic Norms](../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html), for the restrictions on the six subspaces.
 - [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html), for the reduced norm, the inverse and the norm-one group.
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html), for the two rules of realification and the ten-to-twelve distinction.
-- *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, for the same chain read in the physics category.
-- *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale*, for the four readings of one element.
-- *The Bilinear Product on the Material Sector* and *The Bilinear Product on the Informational Sector*, for the two sectors read one at a time.
-- *The Krein Form and Its Physical Interpretation*, for the indefinite structure and the fundamental symmetry read in the physics category.
-- [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the corresponding entry of this category.
+- [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the four products whose scalar parts these forms are.
+- [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the indefinite structure and the fundamental symmetry.

@@ -17,7 +17,7 @@ The interval $\langle\tilde{Q}_{qp}\rangle_{\natural}$ classifies each pair of e
 
 The cone is also the characteristic cone of the algebra's wave operator. The standard finite-speed-of-propagation theorem for hyperbolic operators then makes the barrier analytic as well as geometric: a signal generated in a compact region cannot reach a point outside the region's causal future, however the signal is shaped. These results are collected as eight numbered items in the Summary below.
 
-The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two interpretations share the algebra and nothing else.
+The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Informational Sector: States, Observables and Probability*; the two interpretations share the algebra and nothing else.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_t + \vec Q_1$, $\alpha \in \mathbb{R}$, $\vec Q_1 = a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ real. The biquaternion norm is $\langle\tilde{Q}_1\rangle_{\natural} = \tilde{Q}_1\tilde{Q}_1^{\natural} = \sum_\mu Q_{1,\mu}^2$, abbreviated $N(\tilde{Q}_1)$ where its sign is the point, and the material coordinate is $\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q}_1 = Q_{1t}e_t+Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z$ with complex coefficients, and on generic configurations rather than on a single null direction.
 
@@ -61,7 +61,7 @@ The interval has one of three signs, and these signs define the three causal cla
 - **null** ($\langle\tilde{Q}_{qp}\rangle_{\natural} = 0$): the events can be joined by a light signal;
 - **timelike** ($\langle\tilde{Q}_{qp}\rangle_{\natural} < 0$): the events can be joined by a signal travelling more slowly than light.
 
-The null displacements are the light cone. The companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* records the same classification, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the algebraic characterization of the null set, which the next section recalls.
+The null displacements are the light cone. The companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action* records the same classification, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the algebraic characterization of the null set, which the next section recalls.
 
 ### The Causal Order
 
@@ -368,9 +368,9 @@ There is no corresponding barrier for observers at a single event: two observers
 The conventions and the results taken over from the relativity series are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*).
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-vector, the interval and the causal classification.
-- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector and its distinct informational interpretation.
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms*).
+- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material four-vector, the interval and the causal classification.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector and its distinct informational interpretation.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the zero-divisor criterion, the idempotent form of the real cone and the dispersionless propagation locus.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the rotor conjugation and its component action.
 - Companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, for the orbit structure of the causal classes.

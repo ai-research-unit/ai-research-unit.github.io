@@ -231,11 +231,11 @@ Read by column, the table gives the three divisions of the twelve: the family (f
 
 ### The Other Triple of Axes
 
-The table above sorts the twelve by family, value and law. The comparison article *The Twelve Structures Compared: Product, Law and Form* sorts the same twelve by **product**, **law** and **form**. The two are not rival classifications; they are two projections of one twelve-element set, and each answers a different question.
+The table above sorts the twelve by family, value and law. A second reading sorts the same twelve by **product**, **law** and **form**. The two are not rival classifications; they are two projections of one twelve-element set, and each answers a different question.
 
 The **product** axis carries the four jobs and their two halves: the general product is the operation, the symmetric part the quantity, the antisymmetric part the order or the phase. The **law** axis carries the two classical nonassociative structures, the Jordan product $\mathrm{SPA}$ and the Lie product $\mathrm{APA}$, together with the six failures. The **form** axis divides the definite plain forms, which carry the sector sign and the Born weight, from the indefinite quaternionic forms, which carry the interval and the Krein metric.
 
-| this article's axes | the comparison's axes |
+| this article's axes | the second reading's axes |
 | --- | --- |
 | family: parent, symmetric, antisymmetric | product: the four jobs and their halves |
 | value: whole space, centre, vector subspace, none | law: Jordan, Lie, the six failures |
@@ -286,7 +286,6 @@ The four general products split into eight derived structures, and the split is 
 
 - [The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.html), for the twelve products, the identities and the witnesses.
 - [The Realification of the Eight Derived Structures](../articles_maths/the-realification-of-the-eight-derived-structures.html), for the real dimension, the real operators and the signatures.
-- *The Twelve Structures Compared: Product, Law and Form*, for the same comparison read by product, law and form rather than by family, value and law.
 - *The 12 Products of the Biquaternioid Complex Space*, for the multiplication tables and the coordinates of the twelve.
 - [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html), for the four forms and their Gram matrices.
 - *The Four General Products: Composition, Probability, Causality, Gauge*, for the four parents.

@@ -287,7 +287,7 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 
 **Transcribed from standard physics.** The proper-time definition, the Lorentz factor, the velocity-addition law, the Lagrangian $L = -mc^2/\gamma$, the canonical momentum, the dispersion relation and the non-relativistic expansion are standard relativistic mechanics, and the biquaternion formulation reproduces them rather than replacing them. The parameter $c$ and the mass $m$ are inputs; the algebra supplies the home of each object but not its value.
 
-**Interpretation.** The interpretation of $\mathbb{M}_-$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles *Introduction to the Biquaternion Universe* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.
+**Interpretation.** The interpretation of $\mathbb{M}_-$ as the material sector, and of a timelike worldline in it as a physical particle, is the framework's structural hypothesis, stated in the foundational articles *Introduction to the Biquaternion Universe* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*. The kinematic statements above are exact and standard; the hypothesis is what gives them their sector interpretation.
 
 ## Open Questions
 
@@ -299,12 +299,12 @@ The leading corrections cancel because the mass shell is an exact relation: the 
 
 4. **Rest mass as a norm.** The identity $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ makes the rest mass the biquaternion norm of the momentum. Does the framework constrain the possible mass spectrum in any way, or is $m$ an arbitrary parameter of the same kind as in the standard theory?
 
-5. **Coupling to the informational sector.** The particle is described entirely in $\mathbb{M}_-$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{M}_+$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and it is outside the scope of a classical kinematic account.
+5. **Coupling to the informational sector.** The particle is described entirely in $\mathbb{M}_-$. Whether there is a kinematical coupling between a worldline and the informational sector $\mathbb{M}_+$ — beyond the Lorentz action of the rotor — is not addressed here; it is the central open question of the foundational article *The Informational Sector: States, Observables and Probability*, and it is outside the scope of a classical kinematic account.
 
 The conventions of the construction are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the sector structure.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*).
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms*).
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the transformation of the four-vector.
 - Companion article *The Lorentz Force in Biquaternion Form*, for the equation of motion in an external field.
 - Companion article *The Relativistic Particle in an External Field, in Biquaternionic Form*, for the coupled particle–field system.

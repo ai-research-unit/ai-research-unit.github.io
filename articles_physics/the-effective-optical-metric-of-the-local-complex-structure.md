@@ -58,7 +58,7 @@ The reason is structural and not a coincidence. Gordon's conformal factor in the
 
 ### The null cone
 
-The null cone of the framework's form is the zero-divisor cone of the algebra at the point, with aperture $c$ (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*). The null cone of the optical metric has aperture $1/n$. The two apertures are one number, $c=1/n$: the framework's algebraic null cone **is** the optical-metric cone, and the light cone of the corpus's zero-divisor interpretation is the light cone of the medium's optical geometry. For $n=1.50$ the aperture is $0.666667$ on both sides.
+The null cone of the framework's form is the zero-divisor cone of the algebra at the point, with aperture $c$ (*The Material Sector: Four-Vectors, Interval and Lorentz Action*). The null cone of the optical metric has aperture $1/n$. The two apertures are one number, $c=1/n$: the framework's algebraic null cone **is** the optical-metric cone, and the light cone of the corpus's zero-divisor interpretation is the light cone of the medium's optical geometry. For $n=1.50$ the aperture is $0.666667$ on both sides.
 
 ## Three Boundaries
 

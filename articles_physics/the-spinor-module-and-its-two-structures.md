@@ -188,6 +188,4 @@ The same carrier carries a second structure from the plain sesquilinear product:
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html), for simplicity, the endomorphism ring and the regular module.
 - [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html), for the structural count of the basis.
 - [The Canonical Hermitian Form on the Regular Module of the Biquaternioid Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternioid-algebra.html), for the positive definite form and its Gram matrix.
-- *The Spinor Space as a Module of the Biquaternion Algebra*, for the module side read at length.
-- *The Spinor Space as a Module and as a Hilbert Space*, for the two structures read side by side.
 - *The Informational Sector: States, Observables and Probability* and *The Born Rule as a Trace Formula — Derivation and Comparison*, for the probability structure.

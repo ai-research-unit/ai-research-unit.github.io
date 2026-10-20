@@ -101,7 +101,7 @@ The observable, its two eigenvalues and its two states are one object and its tw
 
 The Born pairing completes the sentence. The probability of the outcome $+$ in the state $\tilde\Pi$ is the trace pairing $\operatorname{Tr}(\tilde\Pi\tilde\Pi_+)=2\operatorname{Sc}(\tilde\Pi\tilde\Pi_+)$, and the two probabilities sum to one because the pair is complete. The formula is the one of *The Informational Sector: States, Observables and Probability* and *The Born Rule as a Trace Formula — Derivation and Comparison*; this article only locates it in the root–idempotent pair. The probability is not derived here, and no frequency is identified with it.
 
-The boundary is again immediate. **Not every idempotent is a state.** The non-trivial roots produce a four-real-parameter family of idempotents that lie in no remarkable subspace and are not Hermitian; they are not orthogonal projections and are not states in the sense of the informational sector. The identification of idempotents with states is confined to the Hermitian ones. The mixed states, which are not idempotent at all, are the interior of the Bloch ball and belong to *The Bloch Ball as the Trace-One Slice of the Future Light Cone*. The state as an idempotent of the algebra, and the process as the multiplication, are *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*.
+The boundary is again immediate. **Not every idempotent is a state.** The non-trivial roots produce a four-real-parameter family of idempotents that lie in no remarkable subspace and are not Hermitian; they are not orthogonal projections and are not states in the sense of the informational sector. The identification of idempotents with states is confined to the Hermitian ones. The mixed states, which are not idempotent at all, are the interior of the Bloch ball and belong to *The Bloch Ball as the Trace-One Slice of the Future Light Cone*. The state as an idempotent of the algebra, and the process as the multiplication, are *The Operators: One-Sided, Two-Sided, Sandwich*.
 
 ## The Roots of Minus One
 
@@ -171,9 +171,8 @@ The Hermitian roots are read as the involutive observables, the Hermitian idempo
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the other central value and the nilpotent cone.
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for orthogonality, primitivity and the ideals an idempotent generates.
 - [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html), for the sectors, the conjugations and the trace.
-- *Square Roots of One and the Idempotents: the Hermitian Observables and the States*, for the same classification read at length in the physics category.
 - *The Informational Sector: States, Observables and Probability*, for the sector, the Bloch ball and the Born pairing.
-- *Square Roots of a General Element in the Biquaternion Algebra: the Realisation*, for the general value and the failure of the square-root formula off the cone.
+- *The Roots of a General Element: Mass, Frames and the Mass Shell*, for the general value and the failure of the square-root formula off the cone.
 - *The Local Complex Structure and the Speed of Light*, for the physical reading of the roots of $-1$.
 - *The S-Matrix in Biquaternionic Form*, for the unitary root $\tilde S\tilde S^{*}=e_t$ of a single mode.
 - *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for $R(2\pi)=-e_t$ and the double cover.

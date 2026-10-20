@@ -186,8 +186,6 @@ Cut by the material sector, the cone is the Minkowski null cone, and the level s
 - [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the classification, the index and the remarkable subspaces.
 - [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html), for multiplicativity, the inverse and the group of units.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) and [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html), for the cone as a singular object and its projective rulings.
-- *Square Roots of Zero and the Nilpotents: the Light Cone*, for the same classification read at length in the physics category.
-- *The Cone and the Massless Particles in the Biquaternioid Structures over $\mathbb{C}$*, for the cone in the two bands and the four massless particles.
-- *Zero Divisors in the Biquaternioid Structures over $\mathbb{C}$*, for the zero-divisor sets of the twelve structures and the cone as the shared object of the four general products.
+- *Zero Divisors Across the Twelve Structures*, for the zero-divisor sets of the twelve structures and the cone as the shared object of the four general products.
 - *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase* and *The Spinor-Helicity Formalism and Biquaternions*, for the direction, the chirality and the helicity weights.
 - *The Null Four-Momentum: What the Cone Derives and What It Does Not*, for the element-level division.

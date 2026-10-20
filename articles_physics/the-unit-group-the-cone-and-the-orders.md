@@ -293,5 +293,4 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction and the homotopy groups.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the link and the contractibility.
 - [Biquaternion Orders and Finite Groups of Units](../articles_maths/biquaternion-orders-and-finite-groups-of-units.html), for the lattices and the finite unit groups.
-- *Biquaternion Orders and Finite Groups of Units*, the physics companion, for the interpretations of the discrete skeleton.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-cell.

@@ -132,5 +132,5 @@ named as a gap and not proposed as a formula.
   Biquaternion Framework*, for the KMS periodicity and the modular flow.
 - *Conventions in the Biquaternion Universe*, for the central phase that
   the thermal circle realises.
-- *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, for the discrete charge from the compact
+- *The Eight Derived Structures: Symmetric and Antisymmetric*, for the discrete charge from the compact
   group.

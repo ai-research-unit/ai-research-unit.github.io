@@ -289,8 +289,8 @@ The honest position of the framework's gravity programme is therefore this. It c
 ## Further Reading
 
 - *Introduction to the Biquaternion Universe* — the algebra, its conjugations, and the two-sector decomposition.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the material sector, the four-vectors, and the four forms read on the sector.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the informational sector and the trace formula.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the material sector, the four-vectors, and the four forms read on the sector.
+- *The Informational Sector: States, Observables and Probability* — the informational sector and the trace formula.
 - *Curved Spacetime and the Biquaternion Framework* — the frame route, the local-scale route, the connection, and the boundary of the kinematics; its section *What the Restricted Class Cannot Do* carries the external varying-$c$ instance behind the metric-class item.
 - *Linearized Gravity in Biquaternionic Form* — the carrier, the counting $16 = 10 + 6$, the gauge structure, and the collapse of the single-biquaternion packaging.
 - *Gravitational Waves in Biquaternionic Form* — the harmonic gauge, the count $10 \to 6 \to 2$, the polarisations, and the quadrupole formula.

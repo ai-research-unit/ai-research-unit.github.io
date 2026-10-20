@@ -207,8 +207,8 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 
 - *Introduction to the Biquaternion Universe*, for the two sectors, the local complex structure, and the statement that $c=1/\sqrt{\epsilon\mu}$ is the local scale factor of the structure.
 - *Why Complexify Spacetime?*, for the $ict$ convention, the $SO(4,\mathbb C)$ rotation picture, and the limitations of the global convention.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the biquaternion norm of signature $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the complementary sector and the exchange $i\mathbb{M}_-=\mathbb{M}_+$ by multiplication by $i$.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the biquaternion norm of signature $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
+- *The Informational Sector: States, Observables and Probability*, for the complementary sector and the exchange $i\mathbb{M}_-=\mathbb{M}_+$ by multiplication by $i$.
 - *A Brief History of Biquaternions in Physics*, for the displacement of the $ict$ convention and its relation to the abandonment of the complex formalism.
 - *Electromagnetism in Media — The Local Complex Structure at Work*, the parent article, for the medium conventions, the local and spectral scale $c(\omega)$, and the boundaries of the structure near absorption.
 - *Maxwell's Equations in the Biquaternionic Formulation*, for the biquaternionic gradient, the d'Alembertian, and the medium form of Maxwell's equations.

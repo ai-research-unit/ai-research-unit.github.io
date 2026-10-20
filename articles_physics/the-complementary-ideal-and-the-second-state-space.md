@@ -229,8 +229,6 @@ The complement is read as the second state space. The mass coupling is the pair 
 - [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html), for the corners, the matrix units and the ideals.
 - [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html), for the simple module and the regular module.
 - [The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents](../articles_maths/the-column-ideals-of-a-matrix-ring.html), for the structural basis count.
-- *The Complementary Space of the Spinor Space in the Biquaternion Algebra*, for the same algebra read at length.
-- *The Complementary Space of the Spinor Space and Its Physical Meaning*, for the doubling, the mass and the three interpretations.
-- *The Spinor Space as a Module and as a Hilbert Space*, for the two structures of the first copy.
+- *The Spinor Module and Its Two Structures*, for the two structures of the first copy.
 - *The Biquaternion Vacuum as a Minimal Idempotent*, for the vacuum choice and the family of idempotents.
 - *The Spectral Triple of the Biquaternion Algebra* and *Bosonization in Biquaternionic Form*, for the chirality conventions of the doubling.

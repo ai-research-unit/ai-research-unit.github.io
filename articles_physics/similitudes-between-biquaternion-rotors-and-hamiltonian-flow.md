@@ -285,8 +285,8 @@ The similitude is exact on the coadjoint orbit for the linear Hamiltonians, and 
 ## Further Reading
 
 - *Introduction to the Biquaternion Universe*, for the algebra, the two sectors, and the rotor group $SL(2,\mathbb{C})$.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the four-vectors, the biquaternion norm, and the rotor conjugation on $\mathbb{M}_-$.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian subspace and the conjugation action of its elements.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vectors, the biquaternion norm, and the rotor conjugation on $\mathbb{M}_-$.
+- *The Informational Sector: States, Observables and Probability*, for the Hermitian subspace and the conjugation action of its elements.
 - *Relativistic Mechanics in Biquaternionic Form*, for the four-velocity, four-momentum, and the action principle behind the free-particle Hamiltonian.
 - *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor, the unit-norm condition, and the relation $\langle R\rangle_{\natural} = e_t$.
 - *The Poincaré Group and the Biquaternion Frame*, for the statement that translations are not rotations and that their generators are derivations, not inner derivations, of $\mathbb{B}$.

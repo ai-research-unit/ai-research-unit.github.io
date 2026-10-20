@@ -357,5 +357,5 @@ The field translation current is the canonical energy–momentum, $\partial/\par
 - *The Gauge Principle in Biquaternionic Form* — the localization of the central phase whose global current is derived here.
 - *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the connection forced by localizing the same symmetry.
 - *The Lorentz Transformation as a Biquaternionic Rotation* — the rotor whose conjugation carries the four-momentum between frames.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the two sectors that house the conserved objects.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* — the two sectors that house the conserved objects.
 - *Introduction to the Biquaternion Universe* — the algebra, its conjugations, and the local complex structure.

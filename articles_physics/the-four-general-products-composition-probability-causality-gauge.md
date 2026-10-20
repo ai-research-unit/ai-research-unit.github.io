@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ c
 
 The naming is a reading and not a theorem. The algebra proves that the four products exist, that they are the four settings of one construction, and what each of them does; it does not prove that a relativistic quantum theory needs exactly these four jobs, nor that no other assignment of the four is possible. What the naming has in its favour is that the four jobs are independent: a theory needs a rule for combining operations, a rule for assigning probabilities, a rule for deciding which events can influence which, and a rule for handling the redundancy of its description. The four forms supply one candidate for each. The article states that, and it states where the statement stops.
 
-The article is the counterpart, in this category, of *The Four General Products and Their Physical Readings* in *Biquaternion Mathematical Physics*. It owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the reading is given with its boundary.
+The article owns no new theorem. Each result is stated in a sentence, the mathematics article that proves it is linked, and the reading is given with its boundary.
 
 ## The Results It Uses
 
@@ -163,7 +163,7 @@ The indefinite form is read as a **constraint** and not as a state. A gauge cali
 
 The antisymmetric half of the gauge product is the gauge bracket, the conjugate cross product. It fails the Jacobi identity, and the failure needs a complex witness: on the real forms the bracket coincides with the antisymmetric plain bilinear product, which is a Lie bracket, so no real form can diagnose the failure. The complex structure is the carrier of the obstruction, not a convenience. The failure is structural — the low operation of a higher structure — and the strict group that remains is $\mathrm{U}(2)$. The gauge bracket is valued in the vector subspace: a pure vector, an axial direction read as a polarisation direction, with no central component and no state. The discrete charge is the label of the compact part, and it is discrete because that part is compact.
 
-**The boundary.** The Krein form is a form, not a gauge theory. No gauge group, no coupling constant and no field content is derived here; the indefinite structure — the Krein space, its fundamental symmetry and its signatures — is read in *The Krein Form and Its Physical Interpretation* and is the subject of the entry *The Krein Form and the Indefinite Structure*. The gauge bracket does not close and supplies no internal symmetry algebra; the closure that exists is the cross-product closure of the real quaternion forms, and the failure of the gauge bracket is invisible to a computation with real coefficients. The ceiling of the internal group is its own question, and the biquaternion algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$.
+**The boundary.** The Krein form is a form, not a gauge theory. No gauge group, no coupling constant and no field content is derived here; the indefinite structure — the Krein space, its fundamental symmetry and its signatures — is the subject of the entry *The Krein Form and the Indefinite Structure*. The gauge bracket does not close and supplies no internal symmetry algebra; the closure that exists is the cross-product closure of the real quaternion forms, and the failure of the gauge bracket is invisible to a computation with real coefficients. The ceiling of the internal group is its own question, and the biquaternion algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$.
 
 ### The $4\times3$ Table as a Mnemonic
 
@@ -254,8 +254,5 @@ The physical identification of the material sector with spacetime and of the inf
 - [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) and [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), for the four forms and their restrictions.
 - [The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.html) and [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html), for multiplicativity, definiteness, invertibility and the zero-divisor cone.
 - [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html), for the ten-to-twelve distinction.
-- *The Four General Products and Their Physical Readings*, for the same grid read in the physics category.
-- *The Products, Their Forms and Their Norms*, for the plain product, its form and its norm read one at a time.
 - *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the two sectors and the two jobs that live there.
-- *The Krein Form and Its Physical Interpretation*, for the indefinite structure and the fundamental symmetry read in the physics category.
 - [The Krein Form and the Indefinite Structure](the-krein-form-and-the-indefinite-structure.html), for the corresponding entry of this category.

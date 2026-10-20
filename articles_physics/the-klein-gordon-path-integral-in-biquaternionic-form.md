@@ -17,7 +17,7 @@ Throughout, the conventions are those of the companion articles: $\mathbb{B}=\ma
 - Companion article *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
 - Companion article *The Path Integral in Biquaternionic Form*, for the centrality of the phase, the material sector, and the algebra's complex structure.
 - Companion article *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the identification of the material sector with the quaternion subspace.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the four-wavevector, and the biquaternion norm.
+- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-wavevector, and the biquaternion norm.
 
 ## The Configuration Space and the Action
 

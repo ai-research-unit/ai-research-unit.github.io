@@ -325,8 +325,8 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 - *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions* — the external interpretation in which the volume element of the complex split biquaternion algebra $\mathrm{Cl}(3)$ plays the chirality-flipping role of the scalar, together with the limits of that interpretation.
 - *The Klein–Gordon Equation in Biquaternionic Form* — the free scalar equation whose gauging and vacuum this article uses.
 - *Noether's Theorem in Biquaternionic Form* — the framework's scalar Lagrangian, whose complex-field normalization is discussed in the companion notes.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
+- *The Informational Sector: States, Observables and Probability* — the Hermitian sector and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the abelian potential and field strength that the gauge field mass modifies.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the left/right matter-representation question that the non-abelian scalar inherits.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.

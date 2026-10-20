@@ -38,7 +38,7 @@ Second, the biquaternion norm is the determinant of the $2\times2$ representatio
 
 The physics of the representation is the physics of combining four objects under one multiplication, and the algebra of the representation is the matrix polar decomposition of $GL(2,\mathbb{C})$.
 
-The conventions are those of *Conventions in the Biquaternion Universe* as used by *The Four-Vector Element Representation of Biquaternions*, *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
+The conventions are those of *Conventions in the Biquaternion Universe* as used by *The Four-Vector Element Representation of Biquaternions*, *The Element and Operator Representations* and *The Element and Operator Representations*.
 
 - **The basis.** $e_t = 1$ the algebra unit and $\vec e_x,\vec e_y,\vec e_z$ the quaternion units with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, so an element is written $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with coefficients $Q_\mu \in \mathbb{C}$.
 - **The scalar imaginary.** $i$, central, with $i^2 = -1$.
@@ -380,9 +380,7 @@ The rotor is the Thomas–Wigner rotation when two boosts are composed, and it i
 ## Further Reading
 
 - *The Polar Element Representation in Subspaces* (`articles_physics/the-polar-element-representation-in-subspaces.md`), for the Hamilton, complex and Cartan representations as the three pairings of the four factors.
-- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$ and the matrix polar decomposition.
-- *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_physics/the-4x4-matrix-element-representation-of-biquaternions.md`), for the squared determinant, the trace $4Q_t$ and the two chiralities.
-- *The Four-Vector Element Representation of Biquaternions* (`articles_physics/the-four-vector-element-representation-of-biquaternions.md`), for the informational and material sectors, the interval and the real restrictions of the biquaternion norm.
+- *The Element and Operator Representations* (`articles_physics/the-element-and-operator-representations.md`), for the 2×2 and 4×4 matrix images, the determinant $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$, the two chiralities and the coefficient space.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the Cartan decomposition, the non-closure of the boosts and the Thomas–Wigner rotation.
 - *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* (`articles_physics/the-two-sheeted-cover-and-the-topology-of-boosts-in-biquaternionic-form.md`), for the $\pm e_t$ kernel and the sign normalisation of the rotor.
 - *Spin Entropy and the Lorentz Group in Biquaternionic Form* (`articles_physics/spin-entropy-and-the-lorentz-group-in-biquaternionic-form.md`), for the interpretation of the central circle and the boost parameters as information.

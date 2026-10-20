@@ -15,7 +15,7 @@ candidate interpretations. It owns no new theorem. The centre and its triviality
 Algebra as the Classical Sector*; the ceiling $\mathrm{U}(2)$ is *The Gauge Group Ceiling: Why the Biquaternion
 Algebra Reaches SU(2) but Not SU(3)*; the generator is *Conventions in the Biquaternion
 Universe*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
-carries is *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*; and the placement of the gauge row among the products is *The Heat Map
+carries is *The Eight Derived Structures: Symmetric and Antisymmetric*; and the placement of the gauge row among the products is *The Heat Map
 of the Framework: Which Physics Hangs on Which Product*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the centre is
@@ -113,7 +113,7 @@ question is being asked.
   Biquaternion Algebra as the Classical Sector*.
 - **Compactness is the discreteness of the charge.** The interpretation is that the charge carried by the central
   phase is discrete because the phase is a circle, which is the same mechanism as the compact group of the
-  gauge ceiling. Owner: *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
+  gauge ceiling. Owner: *The Eight Derived Structures: Symmetric and Antisymmetric*.
 - **Non-centrality is non-locality's algebraic price.** The interpretation is that a local gauge symmetry costs a
   non-central generator, so the framework's globality is the price it pays for having a scalar centre, and
   the enlargement is the price it would pay to escape. Owners: *The Gauge Group Ceiling* and *Grand
@@ -149,6 +149,6 @@ does not contain.
   Cartan decomposition and the enlargements that pass it.
 - *Conventions in the Biquaternion Universe*, for the central phase as
   one generator on remarkable subspaces.
-- *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, for the compact slice and the discrete
+- *The Eight Derived Structures: Symmetric and Antisymmetric*, for the compact slice and the discrete
   charge.
 - *Grand Unification and the Biquaternion Algebra Ceiling*, for the constructive interpretation of the obstruction.

@@ -359,6 +359,6 @@ The article commits throughout to the agenda's central discipline: no section as
 - David J. Gross, Jeffrey A. Harvey, Emil Martinec and Ryan Rohm, "Heterotic string theory (I). The free heterotic string", *Nuclear Physics B* 256 (1985) 253–284, for the $E_8\times E_8$ gauge group that this agenda's ledger records as the top rung of the rank ladder.
 - G. Petiau, *Il Nuovo Cimento* **40** (1965) 84–101, for the double-periodic waves of the derivatively coupled system.
 - *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* — the companion agenda whose three-way classification and settling-object discipline this article follows.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the two sectors, the four-vectors, and the trace formula on which the whole account rests.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* — the two sectors, the four-vectors, and the trace formula on which the whole account rests.
 - *Introduction to the Biquaternion Universe* — the algebra, the conjugations, and the research-program framing inherited throughout.
 

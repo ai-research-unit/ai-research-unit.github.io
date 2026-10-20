@@ -341,6 +341,6 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ whose homogeneous part is the Bianchi identity.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial/\partial Q_\mu\,\tilde{Q}+\vec\Gamma_\mu\tilde{Q}+\tilde{Q}\vec\Gamma_\mu^{*}$, distinct from the one-sided gauge connection of this article.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
+- *The Informational Sector: States, Observables and Probability* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Conventions in the Biquaternion Universe* and *Quaternion Algebra* — the multiplication rule, the conjugations, and the centre used throughout.

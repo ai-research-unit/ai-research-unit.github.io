@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is one object, and it carries more than one physical interpretation. The category *Biquaternion Mathematical Physics* starts from the physical objects — the four-vector, the state, the field, the frame of reference — and cites the mathematics that defines them. This category runs the other way. It starts from the articles of the Mathematical menu and asks what each mathematical structure can be read as, physically. The unit of an article is a mathematical result, not a physical object.
+The biquaternion algebra is one object, and it carries more than one physical interpretation. The Mathematical menu starts from the algebraic objects — the vector space, the product, the form, the involution — and proves their properties. This category runs the other way. It starts from the articles of the Mathematical menu and asks what each mathematical structure can be read as, physically. The unit of an article is a mathematical result, not a physical object.
 
 Each article of the category that interprets a result will provide a link to one or several articles of the Mathematical menu, followed by the physical interpretations of that result. The form is fixed. Such an article opens with the source table: the mathematical content it uses, each row linked to the mathematics article that owns it. It states those results in brief, with their sources. It then gives the physical interpretations, one by one, each labelled and each with its boundary. The article proves nothing: the proof is in the mathematics article, one click away.
 
@@ -46,7 +46,7 @@ A physical interpretation names a physical object, process or quantity and ident
 
 Each interpretation is labelled. Several interpretations of one result are allowed, and they are distinguished by the sector, the regime or the question they answer. The label is the reader's protection: it says which interpretation is meant at that point.
 
-An interpretation does not derive the physics from the algebra. It identifies which physical object the algebraic structure is, and it leaves the dynamics to the articles of *Biquaternion Mathematical Physics*.
+An interpretation does not derive the physics from the algebra. It identifies which physical object the algebraic structure is, and it leaves the dynamics to the other physics categories of the corpus.
 
 ### The Limits
 
@@ -66,15 +66,13 @@ The sandwich is a third. $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{
 
 A reader who wants one interpretation per theorem will not find it here. A reader who wants to know which interpretation is meant will find the label and the boundary.
 
-## The Two Reciprocal Categories
+## The Place of the Category
 
-The two categories are reciprocal indexes of one corpus.
+The Mathematical menu proves the results; this category reads them physically. The two are independent entries into one corpus.
 
-*Biquaternion Mathematical Physics* starts from a physical object and cites the mathematics it needs. Its article on the material sector cites the remarkable subspaces; its article on the cone cites the zero-divisor cone and the topology of the cone.
+A reader can enter by the mathematical result and find the physics it carries, or by a physics article of another category and find the theorem behind it. The routes meet at the same theorem.
 
-This category starts from a mathematical result and gathers the physics it can carry. An article of this category on the zero-divisor cone will link the same set to the light cone, to the purity boundary of the state space and to the support of the propagator.
-
-Neither category is a prerequisite of the other. A reader can enter by the physical object or by the mathematical result, and the two routes meet at the same theorem.
+This category is not a prerequisite of any other, and no other category is a prerequisite of it. Its article on the zero-divisor cone links the same set to the light cone, to the purity boundary of the state space and to the support of the propagator.
 
 ## The Mathematical Corpus about Biquaternions
 
@@ -252,7 +250,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 
 ## Summary
 
-- The category reads the mathematics physically, in the direction opposite to *Biquaternion Mathematical Physics*.
+- The category reads the mathematics physically.
 - Each article will link one or several articles of the Mathematical menu, state their results, then give labelled physical interpretations with their boundaries.
 - The category owns no theorem; the proof stays in the mathematics article.
 - One result may carry several interpretations, and the interpretation names the sector, the regime and the question.
@@ -275,8 +273,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 
 ## Further Reading
 
-- *The Biquaternion Mathematics Corpus*, the physics-side entry point to the same mathematics; its list is the older index of the *Biquaternions* category.
 - The Mathematical menu, *Biquaternions* category, which is the source of every link of this article.
 - *Conventions in the Biquaternion Universe*, for the notation every article of the category assumes.
 - *Introduction to the Biquaternion Universe*, for the algebra and the two sectors.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the two interpretations that every later article uses.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the two sector articles of this category.

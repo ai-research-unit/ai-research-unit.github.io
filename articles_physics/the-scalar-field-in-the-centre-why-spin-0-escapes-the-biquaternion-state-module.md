@@ -24,8 +24,8 @@ The conventions are those of the companion articles. The biquaternion algebra is
 - Companion article *The Schrödinger Equation in Biquaternionic Form*, for the state module and the central Hamiltonian.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the minimal left ideal, the two chiral halves, the Lorentz action, and the bilinear pairings.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the module-valued Dirac field and its scalar bilinears.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the four-vectors, and the biquaternion norm.
-- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the idempotents, and the trace formula.
+- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-vectors, and the biquaternion norm.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the idempotents, and the trace formula.
 
 ## The State Module and the Spin It Carries
 
@@ -45,7 +45,7 @@ $$
 \vec u=u_x\vec e_x+u_y\vec e_y+u_z\vec e_z,\quad u_x^2+u_y^2+u_z^2=1,\quad u_\mu\in\mathbb{R},
 $$
 
-are primitive, Hermitian, and of trace one. They lie in $\mathbb{M}_+$, and they are the pure states of the informational sector in the interpretation of the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*. The **minimal left ideal**
+are primitive, Hermitian, and of trace one. They lie in $\mathbb{M}_+$, and they are the pure states of the informational sector in the interpretation of the companion article *The Informational Sector: States, Observables and Probability*. The **minimal left ideal**
 
 $$
 \mathbb{B}\tilde\Pi(\vec u)=\{\tilde{Q}\tilde\Pi(\vec u) : \tilde{Q}\in\mathbb{B}\}\cong\mathbb{C}^2

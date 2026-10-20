@@ -60,7 +60,7 @@ $$
 
 Two consequences follow immediately.
 
-**A massless momentum has vanishing biquaternion norm.** For $m = 0$ the dispersion relation is $E = c|\vec p|$, the four-momentum is null, and $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$. Since $\tilde P \neq 0$ whenever $E \neq 0$, the massless momentum is a **zero divisor** of $\mathbb{B}$. This is the exact algebraic image of the statement that a massless particle travels on the light cone: the light cone of $\mathbb{M}_-$ *is* the zero-divisor cone (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*).
+**A massless momentum has vanishing biquaternion norm.** For $m = 0$ the dispersion relation is $E = c|\vec p|$, the four-momentum is null, and $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$. Since $\tilde P \neq 0$ whenever $E \neq 0$, the massless momentum is a **zero divisor** of $\mathbb{B}$. This is the exact algebraic image of the statement that a massless particle travels on the light cone: the light cone of $\mathbb{M}_-$ *is* the zero-divisor cone (*The Material Sector: Four-Vectors, Interval and Lorentz Action*).
 
 **A massive momentum is invertible.** For $m \neq 0$ one has $\langle\tilde P\rangle_{\natural} = -m^2c^2 \neq 0$, so $\tilde P$ is invertible and is *not* a zero divisor. This is the structural asymmetry between the two cases, and it will reappear in the section on the singular massless limit: the rank of $\mathsf{M}_2(\tilde P)$ is one at $m=0$ and two at $m\neq0$.
 
@@ -322,7 +322,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module $S$, the conjugate module, the symplectic form $\varepsilon$, and the Lorentz action.
 - Companion article *Exercise: Chirality and the Weyl Spinors*, for the chirality projectors, the conjugate defining representation in the $\varepsilon$ convention.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the $(m,n)$ classification containing $(\tfrac12,0)$ and $(0,\tfrac12)$.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the identification of the null cone of $\mathbb{M}_-$ with the light cone and the role of the $ict$ convention.
+- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the identification of the null cone of $\mathbb{M}_-$ with the light cone and the role of the $ict$ convention.
 - Companion article *The Photon in Biquaternionic Form*, for the realized helicity $\pm1$ of the massless vector field and its two-state spectrum.
 - Companion article *The S-Matrix in Biquaternionic Form*, for what the framework does and does not supply at the level of scattering.
 - Companion article *Twistor Theory and Biquaternions*, for the related conformal and null geometry and the distinction between the biquaternion algebra and twistor space.

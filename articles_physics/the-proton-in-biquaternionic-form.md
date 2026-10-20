@@ -282,7 +282,7 @@ What the framework does not supply is everything that makes the proton a proton.
 - *Angular Momentum and Spin in Biquaternionic Form* — the spin operators $\tilde{S}_\mu=\tfrac\hbar2 i\vec e_\mu$ and the idempotent state structure used implicitly here.
 - *The Neutrino and Majorana Fermions in Biquaternionic Form* — the real structure and the Majorana-versus-Dirac interpretation that bears on charge conservation.
 
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the two sectors, their bases and the trace formula inherited unchanged.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability* — the two sectors, their bases and the trace formula inherited unchanged.
 - *Introduction to the Biquaternion Universe* — the algebra, the conjugations and the sector split in which the whole construction is set.
 - C. Lanczos, "Die tensoranalytischen Beziehungen der Diracschen Gleichung," *Zeitschrift für Physik* **57** (1929) 447–473, 474–483, 484–493 (arXiv:physics/0508002, physics/0508012, physics/0508013), for the coupled biquaternion system whose doubling is the isospin of the section *The Isospin Partner, and Why It Is Not in This Equation*.
 - F. Gürsey, "Applications of Quaternions to Field Equations," PhD thesis, University of London, 1950, and "Relation of charge independence and baryon conservation to Pauli's transformation," *Nuovo Cimento* **7** (1958) 411–415, for the proton and neutron as the two idempotent superpositions of Lanczos's doubled system.

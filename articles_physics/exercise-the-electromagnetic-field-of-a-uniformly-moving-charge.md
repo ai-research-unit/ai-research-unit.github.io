@@ -429,8 +429,8 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles_physics/`; the standard textbook references for the Liénard–Wiechert field and its uniform-motion specialization are listed in the Further Reading sections of the parent and the theory article.
 
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, and the local complex structure.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the retarded separation sits.
-- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector, the conjugation action, and the trace formula.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the retarded separation sits.
+- *The Informational Sector: States, Observables and Probability* — the Hermitian sector, the conjugation action, and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the gradient, the field strength, the potential and source, and the retarded solution.
 - *The Field-Strength Biquaternion and Its Invariants* — the invariants $I_1,I_2$ and the null/zero-divisor characterization of radiation used in Problem 6.
 - *Radiation from Accelerated Charges in Biquaternionic Form* — the theory article: the retarded solution and the Liénard–Wiechert potential.

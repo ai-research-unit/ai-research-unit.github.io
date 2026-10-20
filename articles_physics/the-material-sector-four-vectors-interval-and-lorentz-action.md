@@ -4,7 +4,7 @@
 
 The material sector is the anti-Hermitian subspace $\mathbb{M}_-$. It is the fixed space of the reversal $\flat=-{}^{*}$, the half of the algebra in which the scalar coefficient is imaginary and the three vector coefficients are real. Its elements are the four-vectors of relativistic physics: the four-position, the four-velocity, the four-momentum, the four-wavevector, the four-potential, the four-current and the four-force. The quaternionic norm on the sector is the Minkowski interval; its zero set is the light cone; its unit group is the complement of the cone; its commutator is the Lie algebra of the spatial rotations; and the Lorentz group acts on it by rotor conjugation.
 
-This article interprets the mathematics of that subspace. It is the counterpart, in this category, of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* in *Biquaternion Mathematical Physics*: the same sector, read here from the mathematics. It states each result in brief, links the mathematics article that owns it, and gives the physical interpretation with its boundary.
+This article interprets the mathematics of that subspace. It states each result in brief, links the mathematics article that owns it, and gives the physical interpretation with its boundary.
 
 The results used are these.
 
@@ -278,6 +278,5 @@ The article interprets the kinematics of the sector: the events, the four-vector
 - [The Group of Units and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html), for the unit group.
 - [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html) and [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html), for the four forms and their restrictions.
 - [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html), for the bracket.
-- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the same sector read in the physics category.
 - *The Biquaternion Space, the Group of Involutions and the Six Subspaces*, for the place of the sector among the six subspaces.
 - *The Informational Sector: States, Observables and Probability*, for the partner sector and the action on this one.

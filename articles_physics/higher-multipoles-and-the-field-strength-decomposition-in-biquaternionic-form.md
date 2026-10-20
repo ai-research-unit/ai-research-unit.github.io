@@ -17,9 +17,9 @@ The two decompositions are independent — they are different splittings of the 
 The conventions are those of the companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the four-vectors and the material sector.
-- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector.
-- Companion article *Conventions in the Biquaternion Universe*, for the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*), the d'Alembertian, and the conventions of presentation.
+- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vectors and the material sector.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector.
+- Companion article *Conventions in the Biquaternion Universe*, for the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms*), the d'Alembertian, and the conventions of presentation.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the potential and field-strength biquaternions.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F}$, the Riemann–Silberstein vector, the self-dual decomposition, and the invariants.
 - Companion article *Radiation from Accelerated Charges in Biquaternionic Form*, for the retarded solution and the radiation field.

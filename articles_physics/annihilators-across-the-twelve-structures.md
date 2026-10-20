@@ -4,7 +4,7 @@
 
 The annihilator of an element is the set of partners that the element kills. It is the kernel of the operation "multiply by it", so it is the kernel of a process: the set of inputs the process sends to zero. A process is invertible exactly when its kernel is trivial, and the dimension of the kernel counts the independent inputs that the process merges into nothing. The twelve products of the biquaternion complex space give twelve annihilators for one element, and this article compares them and reads them physically.
 
-The article owns no theorem. The mathematics is *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the physical interpretations are gathered from *Annihilators in the Biquaternioid Structures over $\mathbb{C}$* and from the structure drafts of the category. The two companions of the block are *Zero Divisors Across the Twelve Structures* and *Roots Across the Twelve Structures*. The annihilator is the zero-divisor condition with its witnesses displayed: an element is a zero divisor exactly when its annihilator contains a nonzero element.
+The article owns no theorem. The mathematics is *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the physical interpretations are gathered from the structure drafts of the category. The two companions of the block are *Zero Divisors Across the Twelve Structures* and *Roots Across the Twelve Structures*. The annihilator is the zero-divisor condition with its witnesses displayed: an element is a zero divisor exactly when its annihilator contains a nonzero element.
 
 ## The Results It Uses
 
@@ -108,6 +108,5 @@ The annihilator of an element is the kernel of the multiplication by it. For the
 ## Further Reading
 
 - *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the twelve annihilators and the two-sided theorem.
-- *Annihilators in the Biquaternioid Structures over $\mathbb{C}$* (`articles_physics/annihilators-in-the-biquaternioid-structures-over-c.md`), the structure-by-structure companion.
 - *Zero Divisors Across the Twelve Structures* (`articles_physics/zero-divisors-across-the-twelve-structures.md`) and *Roots Across the Twelve Structures* (`articles_physics/roots-across-the-twelve-structures.md`), the two companions of this block.
 - *The Eight Derived Structures: Symmetric and Antisymmetric* (`articles_physics/the-eight-derived-structures-symmetric-and-antisymmetric.md`), for the products whose kernels are compared here.

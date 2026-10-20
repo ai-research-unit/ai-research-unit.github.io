@@ -334,7 +334,7 @@ It is worth being precise about what is *not* claimed here. The sign that a roto
 The conventions of the construction are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the rotor parametrisation.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*).
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms*).
 - Companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, for the group as an algebraic object and its Lie algebra.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the representation theory of the group and its real forms.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module on which the two-to-one sign is seen.

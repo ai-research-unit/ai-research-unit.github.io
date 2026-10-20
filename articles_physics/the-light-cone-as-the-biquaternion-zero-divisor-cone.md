@@ -149,7 +149,7 @@ $$
 
 so every future (or past) null point of the real material slice is a real multiple of an idempotent: the material cone is the non-pure family, realized over the reals. The apex $\tilde{Q} = 0$ is excluded from $\mathcal{Z}$ by the definition, since it is not a zero divisor. The real pure case would require $\langle x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rangle_{\natural} =x^2+y^2+z^2 = 0$ with $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\neq 0$ and real, which is impossible; the nilpotent family on the material cone therefore needs complex spatial components, and the real cone is entirely of the idempotent type.
 
-**The informational cone.** On $\mathbb{M}_+$ the general element is $\tilde{Q} = q_te_t + i\vec q$ with $q_t, \vec q$ real, and $\langle\tilde{Q}\rangle_{\natural} = q_t^2 - \vec q^2$. Its vanishing set is a cone with the real scalar $q_t$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its **physical interpretation** is the informational one and belongs to the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
+**The informational cone.** On $\mathbb{M}_+$ the general element is $\tilde{Q} = q_te_t + i\vec q$ with $q_t, \vec q$ real, and $\langle\tilde{Q}\rangle_{\natural} = q_t^2 - \vec q^2$. Its vanishing set is a cone with the real scalar $q_t$ as the distinguished coordinate — the future and past cones of the informational sector. It is a genuine cone of the same type, but its **physical interpretation** is the informational one and belongs to the companion article *The Informational Sector: States, Observables and Probability*; here it is recorded only to make the point that both Hermitian-type subspaces, and only those, carry the zero-divisor cone.
 
 The distribution is therefore forced by the topology of the four real slices: the two division slices $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are anisotropic, and the two slices on which $i$ appears with a relative sign — $\mathbb{M}_-$ and $\mathbb{M}_+$ — carry the cone. The physical light cone is the branch of $\mathcal{Z}$ that lies in the material sector.
 
@@ -278,8 +278,8 @@ The **physical interpretation** of this algebraic boundary is the content of the
 The conventions of the construction are those of the following companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the biquaternion norm and the causal trichotomy.
-- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*).
-- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the real quaternion slice and the four-vector representation.
+- Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the conjugations, the real subspaces and the metric (its three levels are ruled on in *The Four Forms and the Four Algebraic Norms*).
+- Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the real quaternion slice and the four-vector representation.
 - Companion article *The Relativistic Particle in Biquaternionic Form*, for the particle's four-momentum, mass shell and causal classification.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field strength on the null cone and its invariants.
 - Companion article *Exercise: The Electromagnetic Energy–Momentum Tensor*, for the null field's energy–momentum and its rank-one form.
