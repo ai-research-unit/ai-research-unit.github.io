@@ -483,7 +483,7 @@ which is the invariant interval of the companion articles. So the interval is th
 
 ### The matrix representation and the trace
 
-The biquaternion algebra is $M_2(\mathbb{C})$ as a real algebra, and the dictionary is consistent with that matrix representation: the even Clifford algebra is the same copy of $M_2(\mathbb{C})$, and each biquaternion has both a $2\times 2$ matrix and an even Clifford representative. The corpus's trace formula is stated in the $2\times 2$ representation and is inherited unchanged:
+The biquaternion algebra is $M_2(\mathbb{C})$ as a real algebra, and the dictionary is consistent with that matrix representation: the even Clifford algebra is the same copy of $M_2(\mathbb{C})$, and each biquaternion has both a $2\times 2$ matrix and an even Clifford representative. The corpus's plain form, read as the trace formula, is stated in the $2\times 2$ representation and is inherited unchanged:
 
 $$
 \mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2).

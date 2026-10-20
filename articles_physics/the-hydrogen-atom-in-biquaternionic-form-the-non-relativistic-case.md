@@ -142,7 +142,7 @@ $$
 \mathrm{Tr}\bigl(\tilde{\Pi}(\vec u)\,\tilde S_k\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{\Pi}(\vec u)\,\tilde S_k\bigr) = \frac{\hbar}{2}\vec u_k ,
 $$
 
-which is the standard spin-1/2 expectation value, written as the trace pairing of $\mathbb{M}_+$.
+which is the standard spin-1/2 expectation value, written as the plain form of $\mathbb{M}_+$, read as the trace pairing.
 
 ### The ansatz and the radial equation
 

@@ -53,7 +53,7 @@ The measurable spaces are the ones on which the integral is available, and their
 |---|---|---|
 | $H^p(\mathbb D)$, Hardy space | $\lVert f\rVert_{H^p} = \sup_{0<r<1}\left(\frac{1}{2\pi}\int_0^{2\pi}\lvert f(r\exp(i\theta))\rvert^p d\theta\right)^{1/p}$; complete | *Complex Harmonic Analysis* |
 | $A^p(\mathbb D)$, Bergman space | $\left(\frac{1}{\pi}\int_{\mathbb D}\lvert f\rvert^p dA\right)^{1/p}$; complete | *Complex Harmonic Analysis* |
-| $\mathcal B$, Bloch space | $\sup_z (1-\lvert z\rvert^2)\lvert f'(z)\rvert$; complete modulo constants | *Complex Harmonic Analysis* |
+| $\mathcal B$, Bloch space | $\sup_z (1-\lvert z\rvert^2)\lvert \frac{df}{dz}\rvert$; complete modulo constants | *Complex Harmonic Analysis* |
 | $PW_B$, Paley–Wiener space | the $L^2$ norm of the boundary function; a closed subspace of $L^2$ | *Complex Harmonic Analysis* |
 | $\mathcal S(\mathbb R^n)$, Schwartz class | the seminorms $p_{\alpha,\beta}(f) = \sup_x \lvert x^\alpha\partial^\beta f\rvert$; a Fréchet space, hence complete | *Fourier Analysis on Euclidean Spaces*; *Fréchet Spaces* |
 | $\mathcal D(\Omega) = C_c^\infty(\Omega)$ | the LF inductive limit of the $\mathcal D_K$; complete, and not normable | *Distributions and Fundamental Solutions* |

@@ -27,7 +27,7 @@ the series converging for $|x|_p < R$ and diverging for $|x|_p > R$; the value a
 
 **Proof sketch.** The radius formula and the convergence criterion are the standard properties of the $p$-adic absolute value and its non-archimedean triangle inequality $|a+b|_p \leq \max(|a|_p,|b|_p)$, under which a series converges exactly when its terms tend to $0$; the details are in *Metric, Uniform and Complete Spaces* for the metric part and in the standard literature for the $p$-adic part.
 
-**Definition (the formal derivative).** The **derivative** of a convergent power series $f(x) = \sum_na_nx^n$ is the series $f'(x) = \sum_nna_nx^{n-1}$, defined by the termwise rule; it has the same radius of convergence as $f$, and the product and composition of analytic functions are analytic with the formal rules $(fg)' = f'g+fg'$ and $(f\circ g)' = (f'\circ g)g'$. This is a formal-algebraic definition; the analytic theory of the derivative, the mean value theorems and the differential equations are Part III.
+**Definition (the formal derivative).** The **derivative** of a convergent power series $f(x) = \sum_na_nx^n$ is the series $\frac{df}{dx} = \sum_nna_nx^{n-1}$, defined by the termwise rule; it has the same radius of convergence as $f$, and the product and composition of analytic functions are analytic with the formal rules $\\frac{d}{dx}(fg) = \frac{df}{dx}g+f\frac{dg}{dx}$ and $\\frac{d}{dx}(f\circ g) = (\frac{df}{dx}\circ g)\frac{dg}{dx}$. This is a formal-algebraic definition; the analytic theory of the derivative, the mean value theorems and the differential equations are Part III.
 
 ### The Exponential and the Logarithm
 
@@ -160,7 +160,7 @@ Every compact $p$-adic Lie group embeds in some $GL_n(\mathbb{Z}_p)$ and contain
 |---|---|
 | $\mathbb{Q}_p$, $v$, $\vert\cdot\vert_p$ | $p$-adic field, valuation, absolute value |
 | $\sum a_nx^n$, radius $R$ | Convergent power series; convergence governed by $\vert a_nx^n\vert_p\to0$ |
-| $f'$ | Formal derivative of a power series (analytic derivative: Part III) |
+| $\frac{df}{dx}$ | Formal derivative of a power series (analytic derivative: Part III) |
 | $\exp$, $\log$ | Exponential and logarithm, convergent for $v > 1/(p-1)$ |
 | $H(X,Y)$ | Hausdorff series $=\log(\exp X\exp Y)$, a series of iterated commutators |
 | $p$-adic manifold, morphism | Charts into $\mathbb{Q}_p^n$, analytic transition maps |

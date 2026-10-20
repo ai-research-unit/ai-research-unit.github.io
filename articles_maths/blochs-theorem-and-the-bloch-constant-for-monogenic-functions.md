@@ -18,9 +18,9 @@ The space of monogenic functions on $B_r$ is written $\mathcal{R}^+(B_r;\mathcal
 
 Bloch's theorem, in its classical form, fixes the size of an image disk by the derivative at a point.
 
-**Theorem (Bloch; classical form).** Let $f$ be holomorphic on the unit disk with $f'(0) = 1$. Then $f$ is univalent on some open subset of the disk, and its image contains a disk of radius at least $1/12$.
+**Theorem (Bloch; classical form).** Let $f$ be holomorphic on the unit disk with $\frac{df}{dz}(0) = 1$. Then $f$ is univalent on some open subset of the disk, and its image contains a disk of radius at least $1/12$.
 
-The number $1/12$ is not best possible. The **Bloch constant** $B$ is the supremum of the radii that may be asserted in the theorem with the normalisation $f'(0) = 1$, and it satisfies
+The number $1/12$ is not best possible. The **Bloch constant** $B$ is the supremum of the radii that may be asserted in the theorem with the normalisation $\frac{df}{dz}(0) = 1$, and it satisfies
 
 $$
 \frac{1}{12} < \frac{3}{2}-\sqrt{2} \leq B,
@@ -30,7 +30,7 @@ where the middle number is $0.085786\ldots$ and is the sharper of the two elemen
 
 ### Why there is a hypercomplex analogue
 
-In one variable the derivative of a holomorphic function is again holomorphic, and the primitive of a holomorphic function is holomorphic, so the classical argument can be run on $f$ and on $f'$ indifferently. In the reduced-quaternion theory the analogous statements hold, and for a structural reason: the reduced-quaternion module is a codimension-one subspace of the quaternion algebra, so its left and right regularity coincide.
+In one variable the derivative of a holomorphic function is again holomorphic, and the primitive of a holomorphic function is holomorphic, so the classical argument can be run on $f$ and on $\frac{df}{dz}$ indifferently. In the reduced-quaternion theory the analogous statements hold, and for a structural reason: the reduced-quaternion module is a codimension-one subspace of the quaternion algebra, so its left and right regularity coincide.
 
 **Proposition (closure under the hypercomplex derivative and the primitive).** For monogenic $f$, the hypercomplex derivative $\tfrac12\bar Df$ is monogenic, and the monogenic primitive $\mathcal{P}f$ is monogenic with $\tfrac12\bar D(\mathcal{P}f) = f$.
 
@@ -72,7 +72,7 @@ $$
 \left|\mathcal{P}_r\!\left\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(0)\right\}\right| \leq \frac{2}{\sqrt3}\,\frac{|\tilde q|^2\left(4|\tilde q|^2+9r^2-11|\tilde q|r\right)}{(r-|\tilde q|)^3}\;\mathcal{M}\!\left((\tfrac12\bar D)f-(\tfrac12\bar D)f(0),\,r\right).
 $$
 
-Here $\mathcal{P}_r$ is the primitive taken on $B_r$, normalised to be orthogonal to the hyperholomorphic constants; the expression in braces is $f$ minus its linear term, the analogue of the classical $f(A)-f'(0)A$.
+Here $\mathcal{P}_r$ is the primitive taken on $B_r$, normalised to be orthogonal to the hyperholomorphic constants; the expression in braces is $f$ minus its linear term, the analogue of the classical $f(A)-\frac{df}{dz}(0)A$.
 
 ### The combined estimate
 
@@ -92,7 +92,7 @@ The estimate above is the reason the monogenic theory admits a Bloch theorem at 
 
 **Proposition (the linear term is the derivative's representative).** For monogenic $f$, the main part of $f$ of degree one is $\mathbf{X}^{0,\dagger}_1(\tilde q)\,(\tfrac12\bar D)f(0)$, and $\mathbf{X}^{0,\dagger}_1$ is the monogenic polynomial of degree one with $(\tfrac12\bar D)\mathbf{X}^{0,\dagger}_1 = 1$.
 
-The proposition is the exact analogue of the fact that the linear part of a holomorphic function is $f'(0)A$. In one variable the statement is trivial; here it is the content of the degree-one ladder and of the orthogonality of the main part to the hyperholomorphic constants, and it is what allows $f$ to be compared with its own derivative.
+The proposition is the exact analogue of the fact that the linear part of a holomorphic function is $\frac{df}{dz}(0)A$. In one variable the statement is trivial; here it is the content of the degree-one ladder and of the orthogonality of the main part to the hyperholomorphic constants, and it is what allows $f$ to be compared with its own derivative.
 
 ## The Auxiliary Function and Its Maximum
 
@@ -113,16 +113,16 @@ $$
 *Proof.* The derivative is positive at $r/30$ and negative at $r/20$,
 
 $$
-g'\!\left(\frac{r}{30}\right) > 0, \qquad g'\!\left(\frac{r}{20}\right) < 0,
+\frac{dg}{d\rho}\!\left(\frac{r}{30}\right) > 0, \qquad \frac{dg}{d\rho}\!\left(\frac{r}{20}\right) < 0,
 $$
 
 and the second derivative is
 
 $$
-g''(\rho) = -\frac{48\sqrt3\,\rho\,r^2\left(3\rho^3-7\rho^2r+5\rho r^2+9r^3\right)}{(r-\rho)^7}.
+\frac{d^2g}{d\rho^2}(\rho) = -\frac{48\sqrt3\,\rho\,r^2\left(3\rho^3-7\rho^2r+5\rho r^2+9r^3\right)}{(r-\rho)^7}.
 $$
 
-The cubic $p(\rho) = 3\rho^3-7\rho^2r+5\rho r^2+9r^3$ has two stationary points, at $\rho = r$ and $\rho = \tfrac59r$, at both of which it is positive, so it has exactly one real zero, and that zero is negative; hence $p>0$ and $g''<0$ on $(0,r)$. A strictly concave function has a single maximum, the two derivative signs place it between $r/30$ and $r/20$, and the value at $r/30$ is a lower bound for its maximum.
+The cubic $p(\rho) = 3\rho^3-7\rho^2r+5\rho r^2+9r^3$ has two stationary points, at $\rho = r$ and $\rho = \tfrac59r$, at both of which it is positive, so it has exactly one real zero, and that zero is negative; hence $p>0$ and $\frac{d^2g}{d\rho^2}<0$ on $(0,r)$. A strictly concave function has a single maximum, the two derivative signs place it between $r/30$ and $r/20$, and the value at $r/30$ is a lower bound for its maximum.
 
 The value at the evaluation point is elementary: with $r = 1$ and $\rho = 1/30$, the rational part is $1/60$ and the remainder is $8\sqrt3\cdot3887\cdot2/20511149 = 62192\sqrt3/20511149$, since $20511149 = 29^5$ and $(1-1/30)^5 = 29^5/30^5$.
 
@@ -206,7 +206,7 @@ The comparison isolates three differences between the monogenic and the conforma
 
 **The size of the constant.** The monogenic constant $0.0057074\ldots$ is about fifteen times smaller than $1/12$. The monogenic maps are not conformal, the value space is three-dimensional, and the argument stops at the Estermann normalisation, which is a two-step estimate rather than the extremal one-variable argument. The source itself records that the improvement of the radius is left open, and no claim is made here that the number is best possible.
 
-**The role of the hyperholomorphic constants.** In one variable the subtraction $f(A)-f'(0)A$ removes a term that is already of the form $A$ times a holomorphic function, and the constants of the theory are the constants. In the reduced-quaternion theory the space of hyperholomorphic constants has dimension two in every degree and the main part must be split off from it by an orthogonal projection; the $2n+3$ count of the monogenic polynomials of degree $n$ is the measure of that extra structure. The theorem is available because that projection exists.
+**The role of the hyperholomorphic constants.** In one variable the subtraction $f(A)-\frac{df}{dz}(0)A$ removes a term that is already of the form $A$ times a holomorphic function, and the constants of the theory are the constants. In the reduced-quaternion theory the space of hyperholomorphic constants has dimension two in every degree and the main part must be split off from it by an orthogonal projection; the $2n+3$ count of the monogenic polynomials of degree $n$ is the measure of that extra structure. The theorem is available because that projection exists.
 
 **Earlier hyperholomorphic Bloch constants.** A Bloch constant for hyperholomorphic functions of a quaternionic variable was obtained earlier by Rochon, and the theorem above is the three-dimensional reduced-quaternion analogue with a different function class and a different, explicit constant. The classical higher-dimensional theory of Bloch constants for holomorphic maps of the ball is that of Chen and Gauthier; the monogenic theory is not contained in it, because the monogenic maps are not holomorphic in several complex variables.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is a **worked exercise** on the geometry of the qubit state space. It is a set of six problems on one theme, and it applies the state-space results established in the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*. The reader is assumed to have read that article; the exercise exists precisely to test it, so nothing is carried over except what that article establishes.
+This article is a **worked exercise** on the geometry of the qubit state space. It is a set of six problems on one theme, and it applies the state-space results established in the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone*. The reader is assumed to have read that article; the exercise exists precisely to test it, so nothing is carried over except what that article establishes.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}}$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
 
@@ -12,7 +12,7 @@ $$
 \tilde{Ϛ} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r = r_1 \vec e_x + r_2 \vec e_y + r_3 \vec e_z \in \mathbb{R}^3,
 $$
 
-with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is
+with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{Ϛ}\tilde{Ϛ}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{Ϛ}) = 1 - \mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{Ϛ}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace reading of the plain form on the slice is
 
 $$
 \mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr), \qquad \tilde{Ϛ}_1 = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr),\ \tilde{Ϛ}_2 = \tfrac{1}{2}\bigl(e_t + i\vec s\bigr),
@@ -74,7 +74,7 @@ $$
 \tilde{Ϛ} = \tfrac12\bigl(e_t + i\textstyle\sum_\mu r_\mu \vec e_\mu\bigr) \;\longmapsto\; \tfrac12\Bigl(I + \sum_\mu r_\mu \sigma_\mu\Bigr) = \tfrac12\bigl(I + \vec r\cdot\boldsymbol{\sigma}\bigr),
 $$
 
-the standard Bloch parametrisation of a qubit density matrix. The components are the Pauli expectations: using the trace pairing with the observable $i \vec e_\mu \mapsto \sigma_\mu$,
+the standard Bloch parametrisation of a qubit density matrix. The components are the Pauli expectations: using the normalised plain form with the observable $i \vec e_\mu \mapsto \sigma_\mu$,
 
 $$
 r_\mu = \mathrm{Tr}\bigl(\tilde{Ϛ}\,(i \vec e_\mu)\bigr) = \langle \sigma_\mu\rangle_{\tilde{Ϛ}},
@@ -276,7 +276,7 @@ A boundary state is an **extreme point** of the ball. Suppose $\tilde{P} = \lamb
 
 **Solution.** (a) Two states are identical exactly when their Bloch vectors are equal: from $\tilde{Ϛ}_1 - \tilde{Ϛ}_2 = \tfrac12 i(\vec r-\vec s)$ we have $\tilde{Ϛ}_1 = \tilde{Ϛ}_2$ iff $\vec r = \vec s$. In that case the Hilbert–Schmidt and trace distances vanish, the transition probability is $1$, and all radius-dependent quantities (purity, entropies) coincide. Conversely, equal purity does **not** imply identical states: by Problem 2 all states of a given radius share the same purity and entropy, and they are rotated into one another by $\mathrm{U}(2)$.
 
-(b) The trace pairing on the slice is $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ}_1,\tilde{Ϛ}_2$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus
+(b) The trace reading of the plain form on the slice is $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{Ϛ}_1,\tilde{Ϛ}_2$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus
 
 $$
 \mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = 0
@@ -291,7 +291,7 @@ $$
 
 So two qubit states have orthogonal supports **if and only if** they are the two complementary pure states along a common axis.
 
-(c) For pure states $\vec r = \vec u$, $\vec s = \vec u_\nu$, the transition probability is the trace pairing,
+(c) For pure states $\vec r = \vec u$, $\vec s = \vec u_\nu$, the transition probability is the normalised plain form, read as the trace pairing,
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec u_\nu)\bigr)
@@ -348,7 +348,7 @@ We have worked six problems on the geometry of the qubit state space, using only
 | $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1+|\vec r|^2)$ | Purity |
 | $S_{\mathrm{lin}} = 1-\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac12(1-|\vec r|^2)$ | Linear entropy |
 | $S(\tilde{Ϛ}) = -\sum_\pm\lambda_\pm\log\lambda_\pm$ | Von Neumann entropy, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ |
-| $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1+\vec r\cdot\vec s)$ | Trace pairing |
+| $\mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac12(1+\vec r\cdot\vec s)$ | Trace reading of the plain form |
 | $D(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12\mathrm{Tr}|\tilde{Ϛ}_1-\tilde{Ϛ}_2| = \tfrac12|\vec r-\vec s|$ | Trace distance |
 | $T(\tilde{Ϛ}_1,\tilde{Ϛ}_2) = \tfrac12(1+\vec r\cdot\vec s+\sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$ | Uhlmann transition probability |
 
@@ -359,4 +359,4 @@ We have worked six problems on the geometry of the qubit state space, using only
 - Asher Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for the operational meaning of distinguishability and the trace distance.
 - Richard Jozsa, "Fidelity for mixed quantum states," *Journal of Modern Optics* **41** (1994) 2315–2323, for the closed-form Uhlmann transition probability of a qubit.
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the spin-1/2 formalism and the Bloch vector.
-- The companion article of this series: *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, whose state-space results are applied throughout.
+- The companion article of this series: *The Bloch Ball as the Normalised Slice of the Future Light Cone*, whose state-space results are applied throughout.

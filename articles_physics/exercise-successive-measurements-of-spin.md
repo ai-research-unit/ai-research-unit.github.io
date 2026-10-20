@@ -198,7 +198,7 @@ $$
 p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) \cdot \mathrm{Tr}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right).
 $$
 
-The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same trace pairing on $\mathbb{M}_+$.
+The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same plain form on $\mathbb{M}_+$, read as the trace pairing.
 
 **2. Measurement is a projection onto an idempotent.** After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a **change of the idempotent**: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.
 
@@ -227,7 +227,7 @@ In the **standard formulation**, the solution proceeds through ket vectors, proj
 
 In the **biquaternion formulation**, the solution proceeds through the idempotents $\tilde\Pi_z, \tilde\Pi_{\vec u_x}, \tilde\Pi_{\vec u_y}$ and the product of the two trace formulas $\mathrm{Tr}(\tilde\Pi_{\vec u_x}\circ \tilde\Pi_z)\mathrm{Tr}(\tilde\Pi_{\vec u_y}\circ \tilde\Pi_{\vec u_x})$, giving the same result.
 
-The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their trace pairing, and the joint probability is the product of the trace formulas.
+The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their normalised plain form, read as the trace pairing, and the joint probability is the product of the trace formulas.
 
 ## Summary of Notation
 

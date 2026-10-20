@@ -76,7 +76,7 @@ with the same multiplicity; in particular an eigenvalue on the unit circle has i
 
 **Proof.** $T$ is $J$-unitary exactly when $T^{*}ET=E$, that is $T^{*}=ET^{-1}E$; so $T^{*}$ is similar to $T^{-1}$, whence the characteristic polynomials of $T^{*}$ and $T^{-1}$ agree, and $\mathrm{spec}(T^{-1})=\{\lambda^{-1}:\lambda\in\mathrm{spec}(T)\}$ while $\mathrm{spec}(T^{*})=\overline{\mathrm{spec}(T)}$. The last clause is the hyperbolic boost of the next sections, with eigenvalues $\exp(\pm t)$.
 
-**Remark (no unit-circle confinement).** The symmetry is inversion, not confinement: the boost $T$ with $e_t\mapsto\cosh t\,e_t+\sinh t\,\vec e_x$, $\vec e_x\mapsto\sinh t\,e_t+\cosh t\,\vec e_x$ and $\vec e_y,\vec e_z$ fixed is $J$-unitary with eigenvalues $\exp(t),\exp(-t),1,1$, so a $J$-unitary operator leaves the unit circle as soon as it moves the Minkowski slice (*The Krein Isometry Group and Its $J$-Contractions*).
+**Remark (no unit-circle confinement).** The symmetry is inversion, not confinement: the boost $T$ with $e_t\mapsto\cosh t\,e_t+\sinh t\,\vec e_x$, $\vec e_x\mapsto\sinh t\,e_t+\cosh t\,\vec e_x$ and $\vec e_y,\vec e_z$ fixed is $J$-unitary with eigenvalues $\exp(t),\exp(-t),1,1$, so a $J$-unitary operator leaves the unit circle as soon as it moves the Lorentzian slice (*The Krein Isometry Group and Its $J$-Contractions*).
 
 ## The Normality of the Algebra's Operators
 

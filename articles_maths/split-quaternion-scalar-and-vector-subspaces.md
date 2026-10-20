@@ -109,7 +109,7 @@ a cone over a circle of lines, and every nonzero element of it is a nonzero nilp
 | lightlike (isotropic) | $q_x^2 = q_y^2 + q_z^2$ | $N = 0$ |
 | spacelike | $q_x^2 < q_y^2 + q_z^2$ | $N < 0$ |
 
-The lightlike class is exactly the light cone, the spacelike class is its outside, and the timelike class is its inside; the three are the orbit-types of the indefinite form, and they are the reason the geometry on $V$ is Lorentzian rather than Euclidean.
+The lightlike class is exactly the null cone, the spacelike class is its outside, and the timelike class is its inside; the three are the orbit-types of the indefinite form, and they are the reason the geometry on $V$ is Lorentzian rather than Euclidean.
 
 **The full form.** The subspaces $S$ and $V$ are $\langle\cdot,\cdot\rangle_{\natural}$-orthogonal, since $\langle q_t, \vec q\rangle_{\natural} = 0$ for $q_t \in S$ and $\vec q \in V$, and the form on $\mathbb{H}_{\mathrm{s}}$ is the orthogonal direct sum of the two restrictions; in the basis $1, \vec e_x, \vec e_y, \vec e_z$ it has signs $(+,+,-,-)$, so the full form has signature $(2,2)$. The scalar direction contributes $+1$, and among the vector directions $\vec e_x$ contributes $+1$ while $\vec e_y$ and $\vec e_z$ contribute $-1$.
 

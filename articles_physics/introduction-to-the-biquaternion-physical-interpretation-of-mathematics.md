@@ -267,7 +267,7 @@ The index is not a publication plan. It is the map of the sources, and the categ
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the quaternionic norm, the form that carries the interval |
 | $\tilde Q^{*}$ | the Hermitian conjugation, the anti-automorphism of the plain product |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the material and the informational sectors, the anti-Hermitian and the Hermitian halves |
-| $\tilde{Ϛ}$ | the state element, Hermitian of trace one |
+| $\tilde{Ϛ}$ | the state element, Hermitian and normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) |
 | $\tilde\Pi$ | an idempotent; a rank-one Hermitian idempotent is a pure state |
 | $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich, the change of frame on the unit-norm slice |
 

@@ -190,7 +190,7 @@ and the charge reduces to the radial integral
 
 $$
 B = 4\pi\int_0^\infty r^2 B^0(r)\,dr
-= -\frac{2}{\pi}\int_0^\infty \sin^2\!F\,F'\,dr
+= -\frac{2}{\pi}\int_0^\infty \sin^2\!F\,\frac{dF}{dr}\,dr
 = \frac{1}{\pi}\Big[F - \frac12\sin 2F\Big]_{F(\infty)}^{F(0)} .
 $$
 
@@ -204,7 +204,7 @@ The single skyrmion is the minimiser of the energy at $B = 1$, and its quantum s
 **The profile equation.** Substituting the hedgehog ansatz into the energy functional gives the standard Skyrme energy
 
 $$
-E = 4\pi\int_0^\infty dr\left[\frac{f_\pi^2}{2}\left(r^2F'^2 + 2\sin^2\!F\right) + \frac{1}{2e^2}\left(2F'^2\sin^2\!F + \frac{\sin^4\!F}{r^2}\right)\right],
+E = 4\pi\int_0^\infty dr\left[\frac{f_\pi^2}{2}\left(r^2\left(\frac{dF}{dr}\right)^2 + 2\sin^2\!F\right) + \frac{1}{2e^2}\left(2\left(\frac{dF}{dr}\right)^2\sin^2\!F + \frac{\sin^4\!F}{r^2}\right)\right],
 $$
 
 whose Euler–Lagrange equation is a second-order nonlinear ordinary differential equation for $F(r)$, to be solved with the boundary conditions $F(0) = \pi$, $F(\infty) = 0$. The solution decreases monotonically from $\pi$ to $0$; its energy is the skyrmion mass and is proportional to $f_\pi/e$ times a pure number determined by the numerical profile, with a lower bound linear in $|B|$. The equation, its solution and the bound are standard (Skyrme 1961, 1962; Faddeev 1976; Adkins, Nappi, and Witten 1983) and are cited rather than solved here.

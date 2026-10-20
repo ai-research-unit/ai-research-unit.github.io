@@ -15,7 +15,7 @@ The notation is the series notation: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, 
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.
-- Companion article *Quantum Physics in Biquaternionic Form*, for the two-level algebra and the trace pairing.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the two-level algebra and the plain form.
 - Companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, for the atomic levels and the electric-dipole matrix element.
 - Companion article *Exercise: Measuring Spin Along an Arbitrary Direction*, for the spin observable along an arbitrary axis.
 
@@ -196,7 +196,7 @@ $$
 \tilde{H}_S = -E\left(d_1\,i\vec e_x + d_2\,i\vec e_y\right),
 $$
 
-after choosing $\vec u_z$ along the magnetic field and noting that an electric field can have components along both transverse directions relative to it. Both are of the form $i\vec h$ with real $\vec h$; both are traceless if the permanent moments vanish; and both are elements of the informational sector, so both couple to the state through the trace pairing and the spectral decomposition of $\mathbb{M}_+$. Neither coupling requires an element of the material sector: the fields are external data that multiply Hermitian observables.
+after choosing $\vec u_z$ along the magnetic field and noting that an electric field can have components along both transverse directions relative to it. Both are of the form $i\vec h$ with real $\vec h$; both are traceless if the permanent moments vanish; and both are elements of the informational sector, so both couple to the state through the plain form, read as the trace pairing and the spectral decomposition of $\mathbb{M}_+$. Neither coupling requires an element of the material sector: the fields are external data that multiply Hermitian observables.
 
 ### Diagonal Versus Off-Diagonal
 
@@ -224,7 +224,7 @@ The signs in the two couplings follow from $V_{\mathrm{pot}} = -\vec\mu\cdot\vec
 
 **What the algebra organises.**
 
-- **A common home.** Both field couplings are Hermitian elements of $\mathbb{M}_+$, and both effects are read off by the two mechanisms of that subspace: the spectral decomposition for the eigenvalues and the trace pairing for the expectation values.
+- **A common home.** Both field couplings are Hermitian elements of $\mathbb{M}_+$, and both effects are read off by the two mechanisms of that subspace: the spectral decomposition for the eigenvalues and the normalised plain form for the expectation values.
 - **Isotropy of the Zeeman splitting as a spectral statement.** The eigenvalues $\pm|\vec h|$ of a traceless Hermitian element depend on the magnitude of the vector part only, which is why the Zeeman splitting is independent of the field direction.
 - **The diagonal/off-diagonal dichotomy.** The distinction between the linear Zeeman effect and the quadratic Stark effect is the distinction between a diagonal and an off-diagonal coupling, and in the algebra this is the distinction between a coupling proportional to $i\vec e_z$ and one proportional to $i\vec e_x$.
 - **A unified avoided crossing.** The Stark two-level problem and the Rabi effective Hamiltonian are the same traceless Hermitian element read in different variables; the framework makes the identity of the two problems explicit.

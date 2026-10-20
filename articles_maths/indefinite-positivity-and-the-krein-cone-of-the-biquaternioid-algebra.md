@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The dagger is a **positive involution** of the biquaternion algebra: $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\|\tilde{Q}\|_E^{2}>0$ off zero, and the image of the resulting cone is the Hermitian cone $P=\{\tilde{Q}^{*}\tilde{Q}\}$ of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*, the forward light cone of the interval form. The general quaternionic sesquilinear form of the algebra is indefinite, and what replaces that cone is twofold. On the **vectors** there is the set of elements of non-negative Krein square,
+The dagger is a **positive involution** of the biquaternion algebra: $\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q})=\|\tilde{Q}\|_E^{2}>0$ off zero, and the image of the resulting cone is the Hermitian cone $P=\{\tilde{Q}^{*}\tilde{Q}\}$ of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*, the forward null cone of the interval form. The general quaternionic sesquilinear form of the algebra is indefinite, and what replaces that cone is twofold. On the **vectors** there is the set of elements of non-negative Krein square,
 
 $$
 P_{K}=\{\tilde{Q}\in\mathbb{B}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\},
@@ -42,7 +42,7 @@ $$
 
 The Hermitian subspace carries two forms of signature $(1,3)$: the biquaternion norm, which equals the general quaternionic sesquilinear form there (*The Krein Gram Matrix and the Restrictions of the Form*, §*The Signature*), and the interval form of the definite theory.
 
-**Theorem.** On the Hermitian subspace the Krein cone is the full light cone of the interval form, and its future nappe is the Hermitian cone of the dagger:
+**Theorem.** On the Hermitian subspace the Krein cone is the full null cone of the interval form, and its future nappe is the Hermitian cone of the dagger:
 
 $$
 P_{K}\cap\mathbb{M}_{+}=\{\tilde{H}\in\mathbb{M}_{+}:\langle\tilde{H},\tilde{H}\rangle_{\natural}\geq0\},
@@ -114,7 +114,7 @@ is an involution whose fixed set is exactly the $J$-unitary group $U_{J}(\mathbb
 
 ## Summary
 
-The **Krein cone** of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\}$; it is a closed cone, homogeneous but neither convex nor pointed, with interior $\simeq S^{1}$ and boundary the Krein null set of dimension $7$. On the Hermitian subspace it is the full light cone of the interval form, and its future nappe is the **Hermitian cone** $P=\{\tilde{Q}^{*}\tilde{Q}\}$ of the dagger; so $P\subseteq P_{K}$ and the two are different objects. On operators, the **$J$-positive cone** $\mathcal{P}_{J}=\{T=T^{\dagger},\ \langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$ is the image of the definite positive cone under $J$, hence closed and convex; it contains $J$ itself but not the identity, and its extreme rays are the rank-one $J$-projections. The $J$-projections are the Krein-orthogonal projections onto the non-degenerate subspaces, of which the definite-orthogonal projections commuting with $J$ — in particular $\pi_{1,2}$ — are the special case; among $\pi_{1,2}$, $\pi_x$ is $J$-positive and $\pi_y$ is $J$-negative. The involution $\theta_{J}(T)=(T^{\dagger})^{-1}$ has fixed set the $J$-unitary group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$ (*The Krein Cartan Decomposition of the Operator Algebra*).
+The **Krein cone** of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\|c\|_E\geq\|v\|_E\}$; it is a closed cone, homogeneous but neither convex nor pointed, with interior $\simeq S^{1}$ and boundary the Krein null set of dimension $7$. On the Hermitian subspace it is the full null cone of the interval form, and its future nappe is the **Hermitian cone** $P=\{\tilde{Q}^{*}\tilde{Q}\}$ of the dagger; so $P\subseteq P_{K}$ and the two are different objects. On operators, the **$J$-positive cone** $\mathcal{P}_{J}=\{T=T^{\dagger},\ \langle\tilde{Q},T\tilde{Q}\rangle_{\natural*}\geq0\}=J\cdot\{S\geq0\}$ is the image of the definite positive cone under $J$, hence closed and convex; it contains $J$ itself but not the identity, and its extreme rays are the rank-one $J$-projections. The $J$-projections are the Krein-orthogonal projections onto the non-degenerate subspaces, of which the definite-orthogonal projections commuting with $J$ — in particular $\pi_{1,2}$ — are the special case; among $\pi_{1,2}$, $\pi_x$ is $J$-positive and $\pi_y$ is $J$-negative. The involution $\theta_{J}(T)=(T^{\dagger})^{-1}$ has fixed set the $J$-unitary group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$ (*The Krein Cartan Decomposition of the Operator Algebra*).
 
 ## Summary of Notation
 
@@ -123,7 +123,7 @@ The **Krein cone** of the algebra is $P_{K}=\{\tilde{Q}:\langle\tilde{Q},\tilde{
 | $P_{K}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\geq0\}=\{\lVert c\rVert_E\geq\lVert v\rVert_E\}$ | The Krein cone; closed, non-convex |
 | $P_{K}^{\circ}\simeq S^{1}$ | Interior of the Krein cone |
 | $\partial P_{K}=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$ | Krein null set; real cone of dimension $7$ |
-| $P_{K}\cap\mathbb{M}_{+}$ | Light cone of the interval form on the Hermitian subspace |
+| $P_{K}\cap\mathbb{M}_{+}$ | Null cone of the quadratic form on the Hermitian subspace |
 | $P=\{\tilde{Q}^{*}\tilde{Q}\}$ | Hermitian cone; the future nappe, $P\subseteq P_{K}$ |
 | $\mathcal{P}_{J}=J\cdot\{S\geq0\}$ | The $J$-positive cone; convex, contains $J$ |
 | $\pi_{1,2}=\tfrac12(\mathrm{id}\pm J)$ | The $J$-projections; spectral projections of $J$ |

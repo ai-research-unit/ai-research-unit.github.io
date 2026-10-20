@@ -29,7 +29,7 @@ and the corresponding Euler products converge absolutely and locally uniformly i
 
 **Theorem (Abel summation).** Let $a_n$ be a sequence and $A(x) = \sum_{n\leq x}a_n$. For a continuously differentiable $f$ on $[1,x]$,
 $$
-\sum_{n\leq x}a_nf(n) = A(x)f(x) - \int_1^x A(t)f'(t)\,dt .
+\sum_{n\leq x}a_nf(n) = A(x)f(x) - \int_1^x A(t)\frac{df}{dt}\,dt .
 $$
 **Proof.** Integration by parts on the Stieltjes integral $\int_{1^-}^x f(t)\,dA(t)$, or summation by parts.
 

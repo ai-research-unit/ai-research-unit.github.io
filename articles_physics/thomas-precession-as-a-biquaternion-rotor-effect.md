@@ -24,7 +24,7 @@ Three boundaries are respected. The **Wigner rotation as an information-theoreti
 
 The article is organized as follows. The next section fixes the boost rotor and the instantaneous rest frame. The following section develops the composition of two boosts and the exact Wigner angle. The next two sections take the continuous limit and identify the Thomas rotor. The remaining sections treat uniform circular motion, the connection to the spin of a relativistic particle, and the factor $\tfrac12$ in the spin–orbit coupling, and separate what the algebra supplies from what is standard relativistic kinematics.
 
-**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^{2}=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and the scalar imaginary is $i$, central and with $i^{2}=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector, home of the four-vectors) and $\mathbb{M}_+$ (Hermitian, the informational sector, home of the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the central scalar subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and the Hermitian conjugate is $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^{2}$, the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force is $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau\in\mathbb{M}_-$. Throughout, $\tau$ is proper time, $t$ laboratory time, $\vec v$ the particle velocity, $\vec a=d\vec v/dt$ its laboratory acceleration, $\vec u$ a unit direction, and $\psi$ a rapidity with $\tanh\psi=v/c$. The trace pairing on the informational sector is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$.
+**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^{2}=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and the scalar imaginary is $i$, central and with $i^{2}=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector, home of the four-vectors) and $\mathbb{M}_+$ (Hermitian, the informational sector, home of the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the central scalar subspace. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and the Hermitian conjugate is $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^{2}$, the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force is $\tilde{K}_{\mathrm{f}}=d\tilde{P}/d\tau\in\mathbb{M}_-$. Throughout, $\tau$ is proper time, $t$ laboratory time, $\vec v$ the particle velocity, $\vec a=d\vec v/dt$ its laboratory acceleration, $\vec u$ a unit direction, and $\psi$ a rapidity with $\tanh\psi=v/c$. The trace on the informational sector is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$.
 
 ## The Boost Rotor and the Instantaneous Rest Frame
 
@@ -41,10 +41,10 @@ $$
 which is Hermitian, $\tilde U_{\vec v_b}^{*}=\tilde U_{\vec v_b}$, lies in $\mathbb{M}_+$, and has unit norm, $\tilde U_{\vec v_b}\tilde U_{\vec v_b}^{\natural}=e_t$. It acts on a four-vector by **rotor conjugation**,
 
 $$
-\tilde{Q}'\;=\;\tilde U_{\vec v_b}\,\tilde{Q}\,\tilde U_{\vec v_b}^{*},
+\tilde Q_2\;=\;\tilde U_{\vec v_b}\,\tilde{Q}\,\tilde U_{\vec v_b}^{*},
 $$
 
-and the conjugation preserves the material sector $\mathbb{M}_-$. When the four-vector acted upon is a four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, the conjugation produces the standard parallel–perpendicular Lorentz transformation (Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity), and in the collinear case the rapidities subtract, $v'=c\tanh(\psi_v-\psi_b)$.
+and the conjugation preserves the material sector $\mathbb{M}_-$. When the four-vector acted upon is a four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, the conjugation produces the standard parallel–perpendicular Lorentz transformation (Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity), and in the collinear case the rapidities subtract, $v_2=c\tanh(\psi_v-\psi_b)$.
 
 
 The rotor associated with a four-velocity is the positive Hermitian square root
@@ -105,11 +105,11 @@ $$
 d\vec v=\vec a\,dt .
 $$
 
-Indeed, if $\tilde{Q}'=\tilde U_{\vec v}\tilde{Q}\tilde U_{\vec v}^{*}$ are the components of a four-vector in the rest frame at $t$, then the components in the rest frame at $t+dt$ are
+Indeed, if $\tilde Q_2=\tilde U_{\vec v}\tilde{Q}\tilde U_{\vec v}^{*}$ are the components of a four-vector in the rest frame at $t$, then the components in the rest frame at $t+dt$ are
 
 $$
-\tilde{Q}''=\tilde U_{\vec v+d\vec v}\tilde{Q}\tilde U_{\vec v+d\vec v}^{*}
-=\tilde U_{\mathrm{int}}\tilde{Q}'\tilde U_{\mathrm{int}}^{*},
+\tilde Q_3=\tilde U_{\vec v+d\vec v}\tilde{Q}\tilde U_{\vec v+d\vec v}^{*}
+=\tilde U_{\mathrm{int}}\tilde Q_2\tilde U_{\mathrm{int}}^{*},
 $$
 
 so $\tilde U_{\mathrm{int}}$ is the transformation between the two rest frames. It is unit-norm, and its polar decomposition
@@ -258,7 +258,7 @@ The general equation of motion that contains all of this is the **Bargmann–Mic
 
 ## The Thomas Half and the Spin–Orbit Coupling
 
-The factor $\tfrac12$ in the spin–orbit coupling of the hydrogen atom is the standard physical consequence of the Thomas precession. A naive transformation to the instantaneous rest frame of an electron moving in the electrostatic field of the nucleus yields a magnetic field $\vec B'\approx-\vec v\times\vec E/c^{2}$ in the rest frame, and the Larmor coupling of the spin to that field gives a spin–orbit term **twice** the observed value. The Thomas precession contributes the opposite half, leaving the observed coefficient. Companion article *Exercise: The Non-Relativistic Limit and the Pauli Equation*, for the spin–orbit term and the Thomas factor, records the result in exactly this form: the coefficient of the spin–orbit term carries the "Thomas factor of $\tfrac12$", and a naive Lorentz transformation to the instantaneous rest frame would give twice that value. The present article supplies the kinematics behind the factor: the leading Thomas rate is half of $\vec a\times\vec v/c^{2}$, and its exact circular form is $\vec\omega_T=-(\gamma-1)\vec\Omega$.
+The factor $\tfrac12$ in the spin–orbit coupling of the hydrogen atom is the standard physical consequence of the Thomas precession. A naive transformation to the instantaneous rest frame of an electron moving in the electrostatic field of the nucleus yields a magnetic field $\vec B_2\approx-\vec v\times\vec E/c^{2}$ in the rest frame, and the Larmor coupling of the spin to that field gives a spin–orbit term **twice** the observed value. The Thomas precession contributes the opposite half, leaving the observed coefficient. Companion article *Exercise: The Non-Relativistic Limit and the Pauli Equation*, for the spin–orbit term and the Thomas factor, records the result in exactly this form: the coefficient of the spin–orbit term carries the "Thomas factor of $\tfrac12$", and a naive Lorentz transformation to the instantaneous rest frame would give twice that value. The present article supplies the kinematics behind the factor: the leading Thomas rate is half of $\vec a\times\vec v/c^{2}$, and its exact circular form is $\vec\omega_T=-(\gamma-1)\vec\Omega$.
 
 Two further companions complete the classical picture. Companion article *The Classical Origin of g = 2 in Biquaternionic Form*, for the intrinsic gyromagnetic ratio, accounts for why that ratio is twice the convective one, which is the value at which the Larmor and Thomas contributions cancel in the spin-follows-velocity sense. Companion article *The Relativistic Particle in an External Field, in Biquaternionic Form*, for the accelerated worldline and the four-force, supplies the rest-frame sequence whose holonomy is computed here.
 
@@ -286,7 +286,7 @@ It is useful to separate the algebraic content of the derivation from the standa
 
 1. **The Wigner rotation as a holonomy.** The Wigner angle of a finite pair of boosts depends only on the two boost vectors; the accumulated angle along a worldline depends on the path. Is there a natural biquaternion expression of the path dependence, as a parallel transport on the boost manifold, that makes the Thomas precession manifestly the curvature of that manifold?
 
-2. **Higher representations.** The rotor of $\mathbb{H}_{\mathbb{B}}$ carries the vector representation of the rotation group by conjugation and the spin-$\tfrac12$ representation by one-sided multiplication. How does the Thomas rotation act on the higher $(j,j')$ carriers, which are not modules over $\mathbb{B}$, and does the correspondence between the kinematic and spinor descriptions extend?
+2. **Higher representations.** The rotor of $\mathbb{H}_{\mathbb{B}}$ carries the vector representation of the rotation group by conjugation and the spin-$\tfrac12$ representation by one-sided multiplication. How does the Thomas rotation act on the higher $(j,j_{\mathrm R})$ carriers, which are not modules over $\mathbb{B}$, and does the correspondence between the kinematic and spinor descriptions extend?
 
 3. **The sign and the two sheets.** The sign of a rotor on the $2\pi$ loop is invisible on every material vector and visible only on the spinor. Is there a classical, non-quantum object whose transport detects the sign, or is the spinor module necessary?
 

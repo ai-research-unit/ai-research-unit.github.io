@@ -289,7 +289,7 @@ i.e. $3\oplus1$: under spatial rotations the four-vector splits into a spatial v
 
 **Complete reducibility and tensor products.** Every finite-dimensional representation is a direct sum of irreducibles, and the tensor product of two irreducibles decomposes by the product of the two $\mathrm{SU}(2)$ Clebsch–Gordan rules:
 $$
-(m,n)\otimes(m',n')\;\cong\;\bigoplus_{k=0}^{2\min(m,m')}\ \bigoplus_{k'=0}^{2\min(n,n')}\bigl(m+m'-k,\,n+n'-k'\bigr),
+(m,n)\otimes(m_2,n_2)\;\cong\;\bigoplus_{k=0}^{2\min(m,m_2)}\ \bigoplus_{k_2=0}^{2\min(n,n_2)}\bigl(m+m_2-k,\,n+n_2-k_2\bigr),
 $$
 the sums running over integer steps. For instance,
 $$

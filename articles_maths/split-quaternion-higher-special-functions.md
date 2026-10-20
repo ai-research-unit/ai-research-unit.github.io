@@ -183,7 +183,7 @@ where the derivatives are taken in a commutative subalgebra, and the classical t
 
 **Theorem (Functions Arising from the Analysis).** The analysis of the system produces special functions that are not obtained by substitution from a real series:
 
-1. the kernel $E_D$ of *Split-Quaternion Integration*, the fundamental solution of the vector operator, a distribution supported on the light cone and homogeneous of degree $-2$;
+1. the kernel $E_D$ of *Split-Quaternion Integration*, the fundamental solution of the vector operator, a distribution supported on the null cone and homogeneous of degree $-2$;
 2. the Poisson kernel of the hyperbolic plane, $P(w,\zeta) = \frac{1-|w|^2}{|w-\zeta|^2}$, a function of the two variables of the disc model of *Split-Quaternions and Hyperbolic Geometry*;
 3. the Legendre functions of the hyperboloid, which are the spherical functions of the pair $\big(\mathrm{SO}^{+}(2,1), SO(2)\big)$ and arise as the eigenfunctions of the invariant Laplacian on the sheets;
 4. the characters of the norm-one group, which are the building blocks of the harmonic analysis of *Split-Quaternion Harmonic Analysis*.
@@ -196,7 +196,7 @@ where the derivatives are taken in a commutative subalgebra, and the classical t
 
 A special function given by a real power series extends to the split-quaternion algebra by substitution, converges on the ball of the rescaled radius, and on a commutative subalgebra reduces to its values at the two components of the element in the null basis; on an element with scalar square the reduction is by the even and odd parts. The Gamma function is defined by its integral on the commutative subalgebras, where it reduces to the scalar Gamma function in each null component, and by interpolation elsewhere; the Bessel functions and the hypergeometric function are defined by their real series and reduce on the subalgebras; the orthogonal polynomials extend by substitution, but their orthogonality does not, because the algebra has no definite form and no positive measure.
 
-The interpolation gives a second, general extension, computed from the two roots of the characteristic polynomial, and it agrees with the substitution extension where both are defined. The special functions that arise from the analysis are of a third kind: the fundamental-solution kernel supported on the light cone, the Poisson kernel of the hyperbolic plane, the Legendre functions of the hyperboloid and the characters of the norm-one group. Every convention used in this article is stated at the point of use, and the "matrix-argument" hypergeometric function of random matrix theory is explicitly not the one used here.
+The interpolation gives a second, general extension, computed from the two roots of the characteristic polynomial, and it agrees with the substitution extension where both are defined. The special functions that arise from the analysis are of a third kind: the fundamental-solution kernel supported on the null cone, the Poisson kernel of the hyperbolic plane, the Legendre functions of the hyperboloid and the characters of the norm-one group. Every convention used in this article is stated at the point of use, and the "matrix-argument" hypergeometric function of random matrix theory is explicitly not the one used here.
 
 ## Summary of Notation
 

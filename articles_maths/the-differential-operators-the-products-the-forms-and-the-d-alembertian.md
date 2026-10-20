@@ -33,15 +33,14 @@ Lagrangian derivative puts the function in the numerator, $\partial L/\partial u
 $L_p$ the corpus writes $\partial L/\partial u$ and $\partial L/\partial p$; the second derivative has the same shape,
 $\partial^2 L/\partial u^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a
 Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the
-operand is a compound expression rather than a single letter. The time derivative $\partial/\partial Q_t$ is the imaginary-time
-derivative: on the material sector, where $Q_t=ict$, it equals $-\frac{i}{c}\,\partial/\partial t$, and $t$ is not one of the
-coordinates, so the real-time partial derivative is written out as $\partial/\partial t$. The rule holds on every object of the corpus,
+operand is a compound expression rather than a single letter. The derivative $\partial/\partial Q_t$ is the derivative along the fourth
+coordinate: on the material sector, where $Q_t=iq'_t$, it equals $-i\,\partial/\partial q'_t$, and $q'_t$ is a real coefficient and not one of the coordinates, so the derivative with respect to it is written out as $\partial/\partial q'_t$. The rule holds on every object of the corpus,
 whether the letter names an element of the algebra, an element-valued field, a kernel or an operator.
 
 **These studies do not use the covariant index conventions: subscripts are not coordinate indices or derivatives, partial derivatives
 are written with explicit operators, and the structural information is carried by the algebra of the objects themselves.**
 
-**The derivative marks.** No derivative is written with a dot. The total derivative is written $\frac{d}{dt}$ or $\frac{d}{d\tau}$ with the parameter named; the partial derivative is written $\frac{\partial}{\partial t}$ or, inline, $\partial/\partial t$. A higher derivative is $\frac{d^2}{dt^2}$. The prime is reserved for the derivative with respect to the single argument of a function of one variable, and a second derivative is written with $\partial$, never with a repeated subscript. The scope mark of geometric calculus is an underline, not a dot. These rules are fixed in *Conventions in Mathematics*, §*The Derivative Marks*.
+**The derivative marks.** No derivative is written with a dot. The total derivative is written $\frac{d}{dt}$ or $\frac{d}{d\tau}$ with the parameter named; the partial derivative is written $\frac{\partial}{\partial t}$ or, inline, $\partial/\partial t$. A higher derivative is $\frac{d^2}{dt^2}$. The prime marks only the imaginary coordinate of a complex coefficient ($\S$*The Derivative Marks* of *Conventions in Mathematics*); it is never a derivative mark, and a second derivative is written with $\partial$, never with a repeated prime. The scope mark of geometric calculus is an underline, not a dot. These rules are fixed in *Conventions in Mathematics*, §*The Derivative Marks*.
 
 ### The Gradient
 
@@ -77,11 +76,10 @@ arguments they give two operators, the Hermitian norm coinciding with the quater
 plain bilinear norm. The four subsections below carry the four forms, and their norms are the two operators $\Box$ and
 $\partial^2/\partial Q_t^2-\Delta_Q$.
 
-**On the material sector $\mathbb{M}_-$**, where $Q_t=ict$ and $Q_k=q_k$, the time derivative reads
-$\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, and the gradient is
+**On the material sector $\mathbb{M}_-$**, where $Q_t=iq'_t$ and $Q_k=q_k$, the derivative along the fourth coordinate reads $\partial/\partial Q_t=-i\,\partial/\partial q'_t$, and the gradient is
 
 $$
-\tilde\nabla\big|_{\mathbb{M}_-}=-\frac{i}{c}\,e_t\frac{\partial}{\partial t}+\sum_k\vec e_k\frac{\partial}{\partial Q_k}.
+\tilde\nabla\big|_{\mathbb{M}_-}=-i\,e_t\frac{\partial}{\partial q'_t}+\sum_k\vec e_k\frac{\partial}{\partial Q_k}.
 $$
 
 ### The Plain Bilinear Product, Its Form and Its Norm
@@ -96,9 +94,7 @@ $$
 $$
 
 A **product** is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; for the field strength $\tilde F$ the
-equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the Maxwell equation, whose physical reading belongs to the physics corpus. **On the
-material sector** the same product is read with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, the space part being
-unchanged.
+equation $\tilde\nabla\tilde F=-\sqrt{\mu}\,\tilde J$, with $\tilde J=ic\rho\,e_t+\vec J$, is the Maxwell equation, whose physical reading belongs to the physics corpus. **On the material sector** the same product is read with $\partial/\partial Q_t=-i\,\partial/\partial q'_t$, the space part being unchanged.
 
 **The symmetric and antisymmetric parts.** Read with two arguments, the product splits as in §*The Twelve Products and Their
 Names* of *Conventions in Mathematics*. The half-sum keeps the form as its scalar part,
@@ -124,8 +120,7 @@ $$
 \langle\tilde\nabla,\tilde Q_5\rangle=\mathrm{Sc}(\tilde\nabla\tilde Q_5)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}Q_{5\mu}=\frac{\partial}{\partial Q_t}Q_{5t}-\nabla\cdot\vec Q_5 ,
 $$
 
-a scalar, the **contraction** of the derivative with the field in the sign vector $\varepsilon$. **On the material sector** it is
-$-\frac{i}{c}\frac{\partial Q_{5t}}{\partial t}-\nabla\cdot\vec Q_5$.
+a scalar, the **contraction** of the derivative with the field in the sign vector $\varepsilon$. **On the material sector** it is $-i\frac{\partial Q_{5t}}{\partial q'_t}-\nabla\cdot\vec Q_5$.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments:
 
@@ -133,8 +128,7 @@ $$
 \langle\tilde\nabla\rangle=\langle\tilde\nabla,\tilde\nabla\rangle=\mathrm{Sc}\bigl(\tilde\nabla\tilde\nabla\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q ,
 $$
 
-the cross terms cancelling. **On the material sector** it is $-c^{-2}\frac{\partial^2}{\partial t^2}-\Delta$, the negative of the
-wave operator; it is **not** the corpus's d'Alembertian.
+the cross terms cancelling. **On the material sector** it is $-\frac{\partial^2}{\partial (q'_t)^2}-\Delta$, the negative of $\frac{\partial^2}{\partial (q'_t)^2}+\Delta$; it is **not** the corpus's d'Alembertian.
 
 ### The Quaternionic Bilinear Product, Its Form and Its Norm
 
@@ -146,7 +140,7 @@ $$
 \tilde\nabla^{\natural}\tilde Q_5=\Bigl(\frac{\partial}{\partial Q_t}Q_{5t}+\nabla\cdot\vec Q_5\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec Q_5-\nabla Q_{5t}-\nabla\times\vec Q_5 .
 $$
 
-**On the material sector** the same substitution $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$ applies.
+**On the material sector** the same substitution $\partial/\partial Q_t=-i\,\partial/\partial q'_t$ applies.
 
 **The symmetric and antisymmetric parts.** The half-sum is central and is the quaternionic form itself,
 
@@ -166,9 +160,9 @@ $$
 \langle\tilde\nabla,\tilde Q_5\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde Q_5\bigr)=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}Q_{5\mu}=\frac{\partial}{\partial Q_t}Q_{5t}+\nabla\cdot\vec Q_5 ,
 $$
 
-a scalar, the **contraction** of the derivative with the field in the $ict$ metric. It differs from the plain form by the three
+a scalar, the **contraction** of the derivative with the field in the signature of the material sector. It differs from the plain form by the three
 signs of $\varepsilon$, which are **computed from the product** $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not
-assumed. **On the material sector** it is $-\frac{i}{c}\frac{\partial Q_{5t}}{\partial t}+\nabla\cdot\vec Q_5$.
+assumed. **On the material sector** it is $-i\frac{\partial Q_{5t}}{\partial q'_t}+\nabla\cdot\vec Q_5$.
 
 **The norm, and the definition of the d'Alembertian.** The norm is defined with the form, as that form at its two equal
 arguments, and the two orders of the product agree:
@@ -182,20 +176,17 @@ $$
 **This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, an operator on the whole algebra, one and
 the same before any sector is named (*The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*). The coordinates $Q_\mu$
 are those of the algebra and are complex in general; the operator is $\partial^2/\partial Q_t^2+\Delta_Q$ whatever the sector, and
-it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient, $\Box\tilde Q_5=\sum_\mu(\Box Q_{5\mu})e_\mu$. It is the
-identity above, and not the $ict$ substitution, that fixes it, and **no article of the corpus defines a second d'Alembertian**; no
+it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient, $\Box\tilde Q_5=\sum_\mu(\Box Q_{5\mu})e_\mu$. It is the identity above, and not the relation $Q_t=iq'_t$, that fixes it, and **no article of the corpus defines a second d'Alembertian**; no
 mass-term sign is left to a local convention.
 
-**The special case of the material sector.** On $\mathbb{M}_-$ the coordinates are the material ones, $Q_t=ict$ and $Q_k=q_k$,
-and the $ict$ substitution flips the sign of the time second derivative,
-$\partial^2/\partial Q_t^2=-c^{-2}\,\partial^2/\partial t^2$, so the same operator reads
+**The special case of the material sector.** On $\mathbb{M}_-$ the coordinates are $Q_t=iq'_t$ and $Q_k=q_k$, and the relation $Q_t=iq'_t$ flips the sign of the second derivative in $q'_t$, $\partial^2/\partial Q_t^2=-\partial^2/\partial (q'_t)^2$, so the same operator reads
 
 $$
-\Box\big|_{\mathbb{M}_-}=\frac{\partial^2}{\partial Q_t^2}+\Delta=\Delta-c^{-2}\,\frac{\partial^2}{\partial t^2},
+\Box\big|_{\mathbb{M}_-}=\frac{\partial^2}{\partial Q_t^2}+\Delta=\Delta-\frac{\partial^2}{\partial (q'_t)^2},
 $$
 
-a plus on the spatial part and a minus on the time part. On $\mathbb{M}_-$ this reading is the corpus convention, used by the
-majority of the articles. **The $ict$ substitution is a statement about the material sector, not about the operator**, which in
+a plus on the vector part and a minus on the fourth coordinate. On $\mathbb{M}_-$ this reading is the corpus convention, used by the
+majority of the articles. **The relation $Q_t=iq'_t$ is a statement about the material sector, not about the operator**, which in
 every case is $\partial^2/\partial Q_t^2+\Delta_Q$; its signature is not a property of the operator but of the **slice** it is
 read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. The operator is one, and every article writes it the
 same way.
@@ -237,10 +228,9 @@ $$
 \mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\bigr]=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial\Phi^{*}}{\partial Q_\mu}\frac{\partial\Phi}{\partial Q_\mu} ,
 $$
 
-in which the conjugate stands on the first factor and no absolute value is taken; the two time derivatives are imaginary on the
-material sector, so that scalar part is $-c^{-2}\lvert\partial\phi/\partial t\rvert^2+\lvert\nabla\phi\rvert^2$. Its physical
-reading is the kinetic density, and it belongs to the physics corpus. **On the material sector** the form itself is
-$-\frac{i}{c}\frac{\partial\bar Q_{5t}}{\partial t}+\nabla\cdot\overline{\vec Q_5}$.
+in which the conjugate stands on the first factor and no absolute value is taken; the two derivatives in $Q_t$ are imaginary on the
+material sector, so that scalar part is $-\lvert\partial\phi/\partial q'_t\rvert^2+\lvert\nabla\phi\rvert^2$. Its physical
+reading is the kinetic density, and it belongs to the physics corpus. **On the material sector** the form itself is $-i\frac{\partial\bar Q_{5t}}{\partial q'_t}+\nabla\cdot\overline{\vec Q_5}$.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments. By §*The Gradient*,
 $\tilde\nabla^{*}=\tilde\nabla^{\natural}$, and
@@ -253,7 +243,7 @@ so the Hermitian norm of the gradient is the d'Alembertian, the same operator as
 form is the one positive-definite form of the four**, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^2$ on the elements,
 and its square root is the topological norm $\lVert\tilde Q\rVert_E$; positivity is a property of the elements, the norm of this
 subsection being the operator $\Box$. **On the material sector** it is the same operator,
-$\Box|_{\mathbb{M}_-}=\Delta-c^{-2}\,\partial^2/\partial t^2$.
+$\Box|_{\mathbb{M}_-}=\Delta-\partial^2/\partial (q'_t)^2$.
 
 ### The Krein Product, Its Form and Its Norm
 
@@ -285,8 +275,7 @@ $$
 \langle\tilde\nabla,\tilde Q_5\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde Q_5^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}\bar Q_{5\mu}=\frac{\partial}{\partial Q_t}\bar Q_{5t}-\nabla\cdot\overline{\vec Q_5} ,
 $$
 
-a scalar, the **contraction** of the conjugate derivative with the conjugated field in the $ict$ metric. **On the material
-sector** it is $-\frac{i}{c}\frac{\partial\bar Q_{5t}}{\partial t}-\nabla\cdot\overline{\vec Q_5}$.
+a scalar, the **contraction** of the conjugate derivative with the conjugated field in the signature of the material sector. **On the material sector** it is $-i\frac{\partial\bar Q_{5t}}{\partial q'_t}-\nabla\cdot\overline{\vec Q_5}$.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments; on the gradient, since
 $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ (§*The Gradient*),
@@ -299,7 +288,7 @@ so the Krein norm of the gradient **coincides with the plain bilinear norm**. It
 and on the elements it is the form of signature $(1,3)$ whose diagonal is
 $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$: Hermitian, and negative on a nonzero element, so
 it carries no positivity. It is the form of the indefinite theory — the Krein space — and not of the contractions of these
-subsections. **On the material sector** it is $-c^{-2}\frac{\partial^2}{\partial t^2}-\Delta$.
+subsections. **On the material sector** it is $-\frac{\partial^2}{\partial (q'_t)^2}-\Delta$.
 
 **A contraction is a form, never an index.** The metric of the corpus is the sign vector $\varepsilon$ inside the product, so no
 index is raised and none is lowered. Where a text with covariant indices contracts a derivative with a field through a raised and
@@ -311,10 +300,10 @@ through a metric, the corpus writes the element $\tilde Q_5$ itself, the metric 
 
 | form | norm | operator | on the material sector |
 |---|---|---|---|
-| general plain bilinear | $\langle\tilde\nabla\rangle$ | $\dfrac{\partial^2}{\partial Q_t^2}-\Delta_Q$ | $-c^{-2}\dfrac{\partial^2}{\partial t^2}-\Delta$ |
-| general quaternionic bilinear | $\langle\tilde\nabla\rangle_{\natural}=\Box$ | $\dfrac{\partial^2}{\partial Q_t^2}+\Delta_Q$ | $\Delta-c^{-2}\dfrac{\partial^2}{\partial t^2}$ |
-| general plain sesquilinear (Hermitian) | $\langle\tilde\nabla\rangle_{*}=\Box$ | $\dfrac{\partial^2}{\partial Q_t^2}+\Delta_Q$ | $\Delta-c^{-2}\dfrac{\partial^2}{\partial t^2}$ |
-| general quaternionic sesquilinear (Krein) | $\langle\tilde\nabla\rangle_{\natural*}$ | $\dfrac{\partial^2}{\partial Q_t^2}-\Delta_Q$ | $-c^{-2}\dfrac{\partial^2}{\partial t^2}-\Delta$ |
+| general plain bilinear | $\langle\tilde\nabla\rangle$ | $\dfrac{\partial^2}{\partial Q_t^2}-\Delta_Q$ | $-\dfrac{\partial^2}{\partial (q'_t)^2}-\Delta$ |
+| general quaternionic bilinear | $\langle\tilde\nabla\rangle_{\natural}=\Box$ | $\dfrac{\partial^2}{\partial Q_t^2}+\Delta_Q$ | $\Delta-\dfrac{\partial^2}{\partial (q'_t)^2}$ |
+| general plain sesquilinear (Hermitian) | $\langle\tilde\nabla\rangle_{*}=\Box$ | $\dfrac{\partial^2}{\partial Q_t^2}+\Delta_Q$ | $\Delta-\dfrac{\partial^2}{\partial (q'_t)^2}$ |
+| general quaternionic sesquilinear (Krein) | $\langle\tilde\nabla\rangle_{\natural*}$ | $\dfrac{\partial^2}{\partial Q_t^2}-\Delta_Q$ | $-\dfrac{\partial^2}{\partial (q'_t)^2}-\Delta$ |
 
 ## Worked Examples
 
@@ -338,8 +327,8 @@ $-Q_x\vec e_y+Q_t\vec e_z$; the four forms vanish, the scalar component and the 
 
 ## Summary
 
-The corpus writes every partial derivative with $\partial$ and names its variable, never with a subscript, and reserves the prime for a
-function of one variable. Two operators carry a glyph of their own: the biquaternionic gradient
+The corpus writes every partial derivative with $\partial$ and names its variable, never with a subscript, and reserves the prime for the
+imaginary coordinate of a complex coefficient. Two operators carry a glyph of their own: the biquaternionic gradient
 $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ and its quaternion conjugate
 $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$, which is also its Hermitian conjugate, the
 coefficientwise conjugate leaving the gradient unchanged. The four general products read on the gradient give four
@@ -349,7 +338,7 @@ $\frac{\partial\bar Q_{5t}}{\partial Q_t}-\nabla\cdot\overline{\vec Q_5}$, one t
 give two norms: the d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q$, which is the quaternionic bilinear and the Hermitian
 norm of the gradient, and its partner $\partial^2/\partial Q_t^2-\Delta_Q$, which is the plain bilinear and the Krein norm. The
 d'Alembertian is one operator, scalar and fixed by the identity $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$; the
-material sector reads it as $\Delta-c^{-2}\partial^2/\partial t^2$, the signature belonging to the slice and not to the operator.
+material sector reads it as $\Delta-\partial^2/\partial (q'_t)^2$, the signature belonging to the slice and not to the operator.
 A contraction is a form and never an index, the metric being the sign vector inside the product.
 
 ## Summary of Notation

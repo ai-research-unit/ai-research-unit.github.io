@@ -259,7 +259,7 @@ Hypothesis (c) cannot be replaced by convergence in measure alone, by the exampl
 
 ### Limit and Derivative
 
-**Theorem.** Let $f_n : (a,b) \to \mathbb{R}$ be differentiable with $f_n(x_0)$ convergent for some $x_0$ and $f_n' \rightrightarrows g$ uniformly on $(a,b)$. Then $f_n$ converges uniformly to a differentiable $f$ with $f' = g$, and
+**Theorem.** Let $f_n : (a,b) \to \mathbb{R}$ be differentiable with $f_n(x_0)$ convergent for some $x_0$ and $f_n' \rightrightarrows g$ uniformly on $(a,b)$. Then $f_n$ converges uniformly to a differentiable $f$ with $\frac{df}{dx} = g$, and
 
 $$
 \frac{d}{dx} \lim_{n} f_n = \lim_n \frac{d}{dx} f_n .

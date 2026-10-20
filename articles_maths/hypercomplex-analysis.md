@@ -11,13 +11,13 @@ Throughout, $A$ is a finite-dimensional unital associative algebra over $\mathbb
 
 ## The Failure of Algebra-Differentiability
 
-**Definition.** Let $\Omega \subseteq A$ be open and let $f : \Omega \to A$. Then $f$ is **left $A$-differentiable** at $x \in \Omega$ if there exists $f'(x) \in A$ with
+**Definition.** Let $\Omega \subseteq A$ be open and let $f : \Omega \to A$. Then $f$ is **left $A$-differentiable** at $x \in \Omega$ if there exists $\frac{df}{dx} \in A$ with
 
 $$
-f(x + h) = f(x) + f'(x)\,h + o(\|h\|) \qquad (h \to 0),
+f(x + h) = f(x) + \frac{df}{dx}\,h + o(\|h\|) \qquad (h \to 0),
 $$
 
-and **right $A$-differentiable** at $x$ if the same holds with $h\,f'(x)$ in place of $f'(x)h$. The function is left (respectively right) $A$-differentiable on $\Omega$ if it is so at every point.
+and **right $A$-differentiable** at $x$ if the same holds with $h\,\frac{df}{dx}$ in place of $\frac{df}{dx}h$. The function is left (respectively right) $A$-differentiable on $\Omega$ if it is so at every point.
 
 For a commutative $A$ the two notions agree, and for $A = \mathbb{C}$ they are the usual complex differentiability; the class of such functions is the class of holomorphic functions, which is as large as complex analysis requires. In the non-commutative case the class collapses.
 
@@ -27,14 +27,14 @@ $$
 f(x) = ax + b, \qquad a, b \in \mathbb{H}.
 $$
 
-*Proof.* Writing the differential as left multiplication by $f'(x)$ and comparing with the Fréchet derivative of $f$ expressed in the four real coordinates, one obtains the quaternionic Cauchy–Riemann equations; these force every second partial derivative of every component to vanish. Hence each component is affine in the coordinates, and the multiplicative constraint then forces the matrix of the linear part to be left multiplication by a quaternion and the constant part to be an arbitrary quaternion.
+*Proof.* Writing the differential as left multiplication by $\frac{df}{dx}$ and comparing with the Fréchet derivative of $f$ expressed in the four real coordinates, one obtains the quaternionic Cauchy–Riemann equations; these force every second partial derivative of every component to vanish. Hence each component is affine in the coordinates, and the multiplicative constraint then forces the matrix of the linear part to be left multiplication by a quaternion and the constant part to be an arbitrary quaternion.
 
 **Corollary.** Over $\mathbb{H}$ the requirement that the differential be left multiplication by an element of $A$ is too strong: the only such functions on a domain are the affine ones. The same collapse occurs over each real algebra for which the rigidity theorem holds. A theory rich enough to be useful must therefore weaken the differentiability requirement, and the weakening adopted in the subject is to require the vanishing of a fixed first-order operator.
 
 **Remark (the ambiguity of the difference quotient).** The definition above is the difference-quotient definition written without a quotient. Classically one writes
 
 $$
-f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h},
+\frac{df}{dx} = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h},
 $$
 
 and this expression requires $h$ to be invertible in order to be formed at all. In a finite-dimensional real algebra the invertible elements form an open set, but that set is not all of $A\setminus\{0\}$ unless $A$ is a division algebra: for the split complex numbers the zero divisors are the real multiples of $1 \pm j$, for the dual numbers they are the multiples of $\varepsilon$. The limit is therefore taken over a set of directions with a hole in it, and the value of the limit may depend on the side from which the invertible elements are approached; this is the origin of the distinction between left and right $A$-differentiability, and it is why the difference quotient is not the right primitive notion over a general algebra.
@@ -45,10 +45,10 @@ and this expression requires $h$ to be invertible in order to be formed at all. 
 
 The first of the two notions that survive over an algebra is a restriction of the classical one: one chooses a commutative subalgebra and asks for differentiability there.
 
-**Definition.** Let $C \subseteq A$ be a commutative subalgebra containing $1_A$, and let $\Omega \subseteq C$ be relatively open. A function $f : \Omega \to A$ is **$C$-holomorphic** on $\Omega$ if it is $C$-differentiable there, that is, if for each $x \in \Omega$ there is $f'(x) \in A$ with
+**Definition.** Let $C \subseteq A$ be a commutative subalgebra containing $1_A$, and let $\Omega \subseteq C$ be relatively open. A function $f : \Omega \to A$ is **$C$-holomorphic** on $\Omega$ if it is $C$-differentiable there, that is, if for each $x \in \Omega$ there is $\frac{df}{dx} \in A$ with
 
 $$
-f(x + h) = f(x) + f'(x)\,h + o(\|h\|) \qquad (h \in C, \ h \to 0).
+f(x + h) = f(x) + \frac{df}{dx}\,h + o(\|h\|) \qquad (h \in C, \ h \to 0).
 $$
 
 Since $C$ is commutative, no distinction between the left and the right version arises inside $C$; the values of $f$ still lie in the possibly non-commutative algebra $A$, and it is only the variable that is restricted.
@@ -56,7 +56,7 @@ Since $C$ is commutative, no distinction between the left and the right version 
 **Proposition (power series).** Let $f(x) = \sum_{n \geq 0} a_n (x - b)^n$ with $a_n \in A$, convergent on a $C$-ball $B_C(b, r) = \{x \in C : \|x - b\| < r\}$. Then $f$ is $C$-holomorphic on that ball, with
 
 $$
-f'(x) = \sum_{n \geq 1} n\,a_n (x - b)^{n-1}.
+\frac{df}{dx} = \sum_{n \geq 1} n\,a_n (x - b)^{n-1}.
 $$
 
 *Proof.* Since $C$ is commutative, $(b + h)^n - b^n = n b^{n-1}h + O(\|h\|^2)$ for $h \in C$, by the binomial theorem, and the terms of order $\geq 2$ contribute $O(\|h\|^2)$ in the norm by submultiplicativity. Uniform convergence on closed subballs of the differentiated series gives termwise differentiation, so the displayed series is the derivative.
@@ -205,7 +205,7 @@ $$
 f(x_t + jx_1) = \exp(-(x_t - jx_1)^2) = \exp(-(x_t^2+x_1^2))\bigl(\cosh(2x_tx_1) + j\sinh(2x_tx_1)\bigr)
 $$
 
-is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{D}'$, a regular function has the form $f = u(x_1) + \varepsilon v(x_t, x_1)$ with $\partial/\partial Q_t v = -u'$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.
+is regular, is non-constant, and has $\|f\| \leq 1 = \|f(0)\|$, so its Euclidean norm attains its maximum at the interior point $0$. For $\mathbb{D}'$, a regular function has the form $f = u(x_1) + \varepsilon v(x_t, x_1)$ with $\partial/\partial Q_t v = -\frac{du}{dx_1}$, so the bounded non-constant function $f = 1 + \varepsilon \exp(-x_1^2)$ is regular, and $\|f\|$ attains its maximum along the line $x_1 = 0$. The mean value property fails in the same two systems.
 
 ## Consequences of Ellipticity
 
@@ -306,7 +306,7 @@ The method above takes a different shape for each algebra, and the articles of c
 | $\mathbb{R}$ | 1 | $d/dx_t$ | constants | richness |
 | $\mathbb{C}$ | 2 | $\partial/\partial Q_t + i\partial/\partial Q_x$ | holomorphic | nothing |
 | $\mathbb{D}$ | 2 | $\partial/\partial Q_t + j\partial/\partial Q_x$ | arbitrary functions of one characteristic variable | ellipticity, maximum principle, Liouville |
-| $\mathbb{D}'$ | 2 | $\partial/\partial Q_t + \varepsilon\partial/\partial Q_x$ | $u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial Q_t v = -u'$ | ellipticity, maximum principle, Liouville |
+| $\mathbb{D}'$ | 2 | $\partial/\partial Q_t + \varepsilon\partial/\partial Q_x$ | $u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial Q_t v = -\frac{du}{dx_1}$ | ellipticity, maximum principle, Liouville |
 | $\mathbb{H}$ | 4 | $\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ | monogenic | closure under products, curve Morera |
 | $\mathbb{H}_{\mathbb{D}}$ | 8 | $\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ in the four quaternionic coordinates | monogenic | closure under products, zero divisors |
 | $\mathbb{B}$ | 8 | $\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ in the four complex coordinates | monogenic | closure under products, zero divisors |
@@ -338,7 +338,7 @@ Regular functions form a real vector space, are closed under right multiplicatio
 | $E$ | Fundamental solution / Cauchy kernel of $D$ |
 | $\nu_B = \sum_\alpha \nu_\alpha B_\alpha$ | Conormal element of a boundary |
 | $\sigma \cdot D$ | Action of $\sigma \in \operatorname{Aut}_\mathbb{R}(A)$ on operators |
-| $A$-differentiability | $f(x+h) = f(x) + f'(x)h + o(\|h\|)$, too rigid for non-commutative $A$ |
+| $A$-differentiability | $f(x+h) = f(x) + \frac{df}{dx}h + o(\|h\|)$, too rigid for non-commutative $A$ |
 | $C$-holomorphy | $A$-differentiability restricted to a commutative subalgebra $C \subseteq A$ |
 | $L_A$ | Left multiplications in $\operatorname{End}_\mathbb{R}(A)$, $\dim = m$ |
 | $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ | Split complex numbers, $j^2=+1$; degenerate for $D = \partial/\partial Q_t + j\partial/\partial Q_x$ |

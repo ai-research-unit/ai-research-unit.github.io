@@ -20,10 +20,10 @@ For notation, complex numbers are written $Q = q + i q'$ with $q = \operatorname
 The **trace** of $\gamma$ is the compact set $\gamma^* = \gamma([a, b])$. The **opposite path** $-\gamma$ is defined by $(-\gamma)(t) = \gamma(a + b - t)$, the same curve traversed backwards. If $\gamma_1 : [a, b] \to \mathbb{C}$ and $\gamma_2 : [b, c] \to \mathbb{C}$ agree at $b$, their **concatenation** $\gamma_1 + \gamma_2$ is the path on $[a, c]$ that follows first $\gamma_1$ and then $\gamma_2$. The **length** of a piecewise $C^1$ path is
 
 $$
-L(\gamma) = \int_a^b |\gamma'(t)| \, dt,
+L(\gamma) = \int_a^b |\frac{d\gamma}{dt}| \, dt,
 $$
 
-finite because $\gamma'$ is piecewise continuous on a compact interval. The corresponding element of arclength is $|dQ| = |\gamma'(t)| \, dt$.
+finite because $\frac{d\gamma}{dt}$ is piecewise continuous on a compact interval. The corresponding element of arclength is $|dQ| = |\frac{d\gamma}{dt}| \, dt$.
 
 **Example.** For $Q_0 \in \mathbb{C}$ and $r > 0$ the positively oriented circle
 
@@ -31,7 +31,7 @@ $$
 \gamma(t) = Q_0 + r \exp(it), \qquad t \in [0, 2\pi],
 $$
 
-is a contour, with $\gamma'(t) = i r \exp(it)$ and $L(\gamma) = 2\pi r$.
+is a contour, with $\frac{d\gamma}{dt} = i r \exp(it)$ and $L(\gamma) = 2\pi r$.
 
 ### Construction from the Riemann Sum
 
@@ -54,22 +54,22 @@ whose existence is the content of the next theorem.
 **Theorem.** For piecewise $C^1$ $\gamma$ and continuous $f$ on $\gamma^*$ the Riemann sums converge, and
 
 $$
-\int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+\int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \frac{d\gamma}{dt} \, dt.
 $$
 
 **Proof.** On a subinterval on which $\gamma$ is $C^1$,
 
 $$
-Q_k - Q_{k-1} = \gamma(t_k) - \gamma(t_{k-1}) = \int_{t_{k-1}}^{t_k} \gamma'(t) \, dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k,
+Q_k - Q_{k-1} = \gamma(t_k) - \gamma(t_{k-1}) = \int_{t_{k-1}}^{t_k} \frac{d\gamma}{dt} \, dt = \frac{d\gamma}{dt}(\tau_k)(t_k - t_{k-1}) + \rho_k,
 $$
 
-where $|\rho_k| \le \sup_{[t_{k-1}, t_k]} |\gamma' - \gamma'(\tau_k)| \, (t_k - t_{k-1})$. Each piece of $\gamma'$ is uniformly continuous and there are finitely many pieces, so $|\rho_k| \le \varepsilon(\|\Delta\|) (t_k - t_{k-1})$ with $\varepsilon(\|\Delta\|) \to 0$ as $\|\Delta\| \to 0$. Hence
+where $|\rho_k| \le \sup_{[t_{k-1}, t_k]} |\frac{d\gamma}{dt} - \frac{d\gamma}{dt}(\tau_k)| \, (t_k - t_{k-1})$. Each piece of $\frac{d\gamma}{dt}$ is uniformly continuous and there are finitely many pieces, so $|\rho_k| \le \varepsilon(\|\Delta\|) (t_k - t_{k-1})$ with $\varepsilon(\|\Delta\|) \to 0$ as $\|\Delta\| \to 0$. Hence
 
 $$
-S = \sum_k f(\gamma(\tau_k)) \gamma'(\tau_k) (t_k - t_{k-1}) + \sum_k f(\gamma(\tau_k)) \rho_k .
+S = \sum_k f(\gamma(\tau_k)) \frac{d\gamma}{dt}(\tau_k) (t_k - t_{k-1}) + \sum_k f(\gamma(\tau_k)) \rho_k .
 $$
 
-The first sum is a Riemann sum for the continuous function $t \mapsto f(\gamma(t)) \gamma'(t)$ on $[a, b]$, so it converges to the displayed integral; the second is bounded in modulus by $\max_{\gamma^*}|f| \, \varepsilon(\|\Delta\|) (b-a) \to 0$.
+The first sum is a Riemann sum for the continuous function $t \mapsto f(\gamma(t)) \frac{d\gamma}{dt}$ on $[a, b]$, so it converges to the displayed integral; the second is bounded in modulus by $\max_{\gamma^*}|f| \, \varepsilon(\|\Delta\|) (b-a) \to 0$.
 
 ### Basic Properties
 
@@ -94,7 +94,7 @@ $$
 **Proof.** From the definition,
 
 $$
-\left| \int_a^b f(\gamma(t)) \gamma'(t) \, dt \right| \le \int_a^b |f(\gamma(t))| \, |\gamma'(t)| \, dt \le m \int_a^b |\gamma'(t)| \, dt = m L(\gamma).
+\left| \int_a^b f(\gamma(t)) \frac{d\gamma}{dt} \, dt \right| \le \int_a^b |f(\gamma(t))| \, |\frac{d\gamma}{dt}| \, dt \le m \int_a^b |\frac{d\gamma}{dt}| \, dt = m L(\gamma).
 $$
 
 **Real and imaginary parts.** Writing $f = u + iv$ and $dQ = dq + i \, dq'$ gives
@@ -115,7 +115,7 @@ $$
 \int_\gamma f(Q) \, dQ = F(Q_2) - F(Q_1).
 $$
 
-**Proof.** On each smooth piece the chain rule gives $\frac{d}{dt} F(\gamma(t)) = F'(\gamma(t)) \gamma'(t) = f(\gamma(t)) \gamma'(t)$. Integrating over the piece, applying the fundamental theorem of calculus of the real theory to the real and imaginary parts, and summing the pieces gives the stated formula.
+**Proof.** On each smooth piece the chain rule gives $\frac{d}{dt} F(\gamma(t)) = F'(\gamma(t)) \frac{d\gamma}{dt} = f(\gamma(t)) \frac{d\gamma}{dt}$. Integrating over the piece, applying the fundamental theorem of calculus of the real theory to the real and imaginary parts, and summing the pieces gives the stated formula.
 
 **Corollary.** If $f$ has a primitive on $\Omega$, its integral along every closed path in $\Omega$ vanishes.
 
@@ -152,10 +152,10 @@ $$
 is holomorphic on $\mathbb{C} \setminus \gamma^*$, since differentiating under the integral sign is legitimate there, with
 
 $$
-h'(Q) = \oint_\gamma \frac{dQ_1}{(Q_1 - Q)^2}.
+\frac{dh}{dQ} = \oint_\gamma \frac{dQ_1}{(Q_1 - Q)^2}.
 $$
 
-The integrand $(Q_1-Q)^{-2}$ has the primitive $-(Q_1-Q)^{-1}$ in the variable $Q_1$ on $\mathbb{C} \setminus \{Q\}$, so $h'(Q) = 0$ and $h$ is locally constant. Put $\Phi(Q) = \exp h(Q)$; then $\Phi'(Q) = h'(Q) \Phi(Q) = 0$, so $\Phi$ is constant, and as $|Q| \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(Q) \to 0$ and $\Phi(Q) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(Q) \in 2\pi i \mathbb{Z}$ for every $Q$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$.
+The integrand $(Q_1-Q)^{-2}$ has the primitive $-(Q_1-Q)^{-1}$ in the variable $Q_1$ on $\mathbb{C} \setminus \{Q\}$, so $\frac{dh}{dQ} = 0$ and $h$ is locally constant. Put $\Phi(Q) = \exp h(Q)$; then $\Phi'(Q) = \frac{dh}{dQ} \Phi(Q) = 0$, so $\Phi$ is constant, and as $|Q| \to \infty$ the integrand tends to $0$ uniformly on the compact set $\gamma^*$, so $h(Q) \to 0$ and $\Phi(Q) \to 1$. Therefore $\Phi \equiv 1$, that is, $h(Q) \in 2\pi i \mathbb{Z}$ for every $Q$. A continuous function with values in a discrete set is locally constant, hence constant on each connected component, and on the unbounded component the limit at infinity forces the value $0$.
 
 **Example.** For the positively oriented circle $\gamma(t) = Q_0 + r\exp(it)$ one has $\operatorname{Ind}(\gamma, Q_0) = 1$ and $\operatorname{Ind}(\gamma, Q) = 0$ for $|Q - Q_0| > r$. For the same circle traversed $m$ times the index is $m$.
 
@@ -190,7 +190,7 @@ $$
 By compactness $\bigcap_n T^{(n)} = \{Q_0\}$ for some $Q_0 \in \Omega$. Holomorphy at $Q_0$ gives the expansion
 
 $$
-f(Q) = f(Q_0) + f'(Q_0)(Q - Q_0) + (Q - Q_0)\eta(Q), \qquad \eta(Q) \to 0 \ \ (Q \to Q_0).
+f(Q) = f(Q_0) + \frac{df}{dQ}(Q_0)(Q - Q_0) + (Q - Q_0)\eta(Q), \qquad \eta(Q) \to 0 \ \ (Q \to Q_0).
 $$
 
 The constant and the linear term have primitives and therefore integrate to zero over the closed curve $\partial T^{(n)}$, so $\oint_{\partial T^{(n)}} f = \oint_{\partial T^{(n)}} (Q - Q_0)\eta(Q) \, dQ$. For $Q \in T^{(n)}$ one has $|Q - Q_0| \le \operatorname{diam} T^{(n)}$ and $|\eta(Q)| \le \varepsilon_n$ with $\varepsilon_n \to 0$, whence by the estimation property
@@ -201,7 +201,7 @@ $$
 
 Combining with $|I| \le 4^n \left| \oint_{\partial T^{(n)}} f \right|$ gives $|I| \le \varepsilon_n \operatorname{diam} T \, L(\partial T) \to 0$, so $I = 0$.
 
-**Remark.** The proof uses only that $f'$ exists, never that $f'$ is continuous. This is Goursat's contribution; the earlier formulations of the theorem assumed continuity of $f'$ and could then invoke Green's theorem. The triangle version suffices for everything that follows, because every closed polygon decomposes into finitely many triangles and every contour is a uniform limit of inscribed polygons.
+**Remark.** The proof uses only that $\frac{df}{dQ}$ exists, never that $\frac{df}{dQ}$ is continuous. This is Goursat's contribution; the earlier formulations of the theorem assumed continuity of $\frac{df}{dQ}$ and could then invoke Green's theorem. The triangle version suffices for everything that follows, because every closed polygon decomposes into finitely many triangles and every contour is a uniform limit of inscribed polygons.
 
 **Corollary.** If $f$ is holomorphic on a convex, or more generally a star-shaped, domain $\Omega$, then $\oint_{\partial T} f \, dQ = 0$ for every triangle in $\Omega$, and by the next theorem $f$ has a primitive on $\Omega$.
 
@@ -262,10 +262,10 @@ $$
 **Proof.** Fix $Q \in \Omega \setminus \gamma^*$ and define
 
 $$
-g(Q_1) = \begin{cases} \dfrac{f(Q_1) - f(Q)}{Q_1 - Q}, & Q_1 \neq Q, \\[2mm] f'(Q), & Q_1 = Q. \end{cases}
+g(Q_1) = \begin{cases} \dfrac{f(Q_1) - f(Q)}{Q_1 - Q}, & Q_1 \neq Q, \\[2mm] \frac{df}{dQ}, & Q_1 = Q. \end{cases}
 $$
 
-The function $g$ is holomorphic on $\Omega$: away from $Q$ it is a quotient of holomorphic functions with non-vanishing denominator, and at $Q$ it extends holomorphically with value $f'(Q)$, since $f(Q_1) = f(Q) + f'(Q)(Q_1 - Q) + o(|Q_1 - Q|)$. Since $g$ is holomorphic on $\Omega$ and $\gamma$ is homologous to zero in $\Omega$, the homological Cauchy theorem gives $\oint_\gamma g(Q_1) \, dQ_1 = 0$, that is,
+The function $g$ is holomorphic on $\Omega$: away from $Q$ it is a quotient of holomorphic functions with non-vanishing denominator, and at $Q$ it extends holomorphically with value $\frac{df}{dQ}$, since $f(Q_1) = f(Q) + \frac{df}{dQ}(Q_1 - Q) + o(|Q_1 - Q|)$. Since $g$ is holomorphic on $\Omega$ and $\gamma$ is homologous to zero in $\Omega$, the homological Cauchy theorem gives $\oint_\gamma g(Q_1) \, dQ_1 = 0$, that is,
 
 $$
 \oint_\gamma \frac{f(Q_1)}{Q_1 - Q} \, dQ_1 = f(Q) \oint_\gamma \frac{dQ_1}{Q_1 - Q} = f(Q) \cdot 2\pi i \operatorname{Ind}(\gamma, Q).
@@ -303,7 +303,7 @@ $$
 
 **Theorem (Liouville).** Every bounded holomorphic function $f : \mathbb{C} \to \mathbb{C}$ is constant.
 
-**Proof.** Let $|f| \le m$ on $\mathbb{C}$. Applying the Cauchy estimate for $n = 1$ about an arbitrary $Q_0$ on the circle of radius $r$ gives $|f'(Q_0)| \le M/r$ for every $r > 0$, hence $f'(Q_0) = 0$. Since $Q_0$ is arbitrary, $f' \equiv 0$ and $f$ is constant.
+**Proof.** Let $|f| \le m$ on $\mathbb{C}$. Applying the Cauchy estimate for $n = 1$ about an arbitrary $Q_0$ on the circle of radius $r$ gives $|\frac{df}{dQ}(Q_0)| \le M/r$ for every $r > 0$, hence $\frac{df}{dQ}(Q_0) = 0$. Since $Q_0$ is arbitrary, $\frac{df}{dQ} \equiv 0$ and $f$ is constant.
 
 **Corollary (fundamental theorem of algebra).** Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.
 
@@ -341,13 +341,13 @@ $$
 
 The residue is therefore computable from the integral and, conversely, is the single Laurent coefficient that the closed integral sees.
 
-**Proposition (simple pole).** If $f = g/h$ with $g, h$ holomorphic near $Q_0$, $g(Q_0) \neq 0$, $h(Q_0) = 0$ and $h'(Q_0) \neq 0$, then
+**Proposition (simple pole).** If $f = g/h$ with $g, h$ holomorphic near $Q_0$, $g(Q_0) \neq 0$, $h(Q_0) = 0$ and $\frac{dh}{dQ}(Q_0) \neq 0$, then
 
 $$
-\operatorname{Res}(f, Q_0) = \frac{g(Q_0)}{h'(Q_0)} .
+\operatorname{Res}(f, Q_0) = \frac{g(Q_0)}{\frac{dh}{dQ}(Q_0)} .
 $$
 
-**Proof.** Write $h(Q) = h'(Q_0)(Q - Q_0) + O((Q - Q_0)^2)$; then $f(Q) = \frac{g(Q_0)}{h'(Q_0)} (Q - Q_0)^{-1} + O(1)$, and the coefficient of $(Q - Q_0)^{-1}$ is the residue.
+**Proof.** Write $h(Q) = \frac{dh}{dQ}(Q_0)(Q - Q_0) + O((Q - Q_0)^2)$; then $f(Q) = \frac{g(Q_0)}{\frac{dh}{dQ}(Q_0)} (Q - Q_0)^{-1} + O(1)$, and the coefficient of $(Q - Q_0)^{-1}$ is the residue.
 
 **Proposition (pole of order $m$).** If $f$ has a pole of order $m \ge 1$ at $Q_0$, then
 
@@ -406,21 +406,21 @@ $$
 **Theorem (argument principle).** Let $f$ be meromorphic on a domain $\Omega$ with zeros $Q_1, \dots, Q_m$ of orders $\mu_1, \dots, \mu_m$ and poles $p_1, \dots, p_n$ of orders $\nu_1, \dots, \nu_n$, and let $\gamma$ be a cycle in $\Omega$ avoiding all of them and homologous to zero in $\Omega$. Then
 
 $$
-\frac{1}{2\pi i} \oint_\gamma \frac{f'(Q)}{f(Q)} \, dQ = \sum_{j=1}^{m} \mu_j \operatorname{Ind}(\gamma, Q_j) - \sum_{k=1}^{n} \nu_k \operatorname{Ind}(\gamma, p_k).
+\frac{1}{2\pi i} \oint_\gamma \frac{\frac{df}{dQ}}{f(Q)} \, dQ = \sum_{j=1}^{m} \mu_j \operatorname{Ind}(\gamma, Q_j) - \sum_{k=1}^{n} \nu_k \operatorname{Ind}(\gamma, p_k).
 $$
 
 **Proof.** Near a zero of order $\mu$ one has $f(Q) = (Q - Q_0)^\mu \phi(Q)$ with $\phi$ holomorphic and $\phi(Q_0) \neq 0$, so
 
 $$
-\frac{f'(Q)}{f(Q)} = \frac{\mu}{Q - Q_0} + \frac{\phi'(Q)}{\phi(Q)} ,
+\frac{\frac{df}{dQ}}{f(Q)} = \frac{\mu}{Q - Q_0} + \frac{\frac{d\phi}{dQ}}{\phi(Q)} ,
 $$
 
-and the second term is holomorphic at $Q_0$; hence $f'/f$ has a simple pole at $Q_0$ with residue $\mu$. Near a pole of order $\nu$, writing $f(Q) = (Q - Q_0)^{-\nu} \psi(Q)$ with $\psi(Q_0) \neq 0$ gives $f'/f = -\nu/(Q-Q_0) + \psi'/\psi$, so the residue there is $-\nu$. The residue theorem applied to $f'/f$ gives the stated sum.
+and the second term is holomorphic at $Q_0$; hence $\frac{df}{dQ}/f$ has a simple pole at $Q_0$ with residue $\mu$. Near a pole of order $\nu$, writing $f(Q) = (Q - Q_0)^{-\nu} \psi(Q)$ with $\psi(Q_0) \neq 0$ gives $\frac{df}{dQ}/f = -\nu/(Q-Q_0) + \frac{d\psi}{dQ}/\psi$, so the residue there is $-\nu$. The residue theorem applied to $\frac{df}{dQ}/f$ gives the stated sum.
 
 **Corollary.** If in addition $\gamma$ winds once about each zero and pole and about nothing else, the right-hand side is the number of zeros minus the number of poles, counted with multiplicity. Equivalently, it is the winding number of the closed curve $f \circ \gamma$ about the origin:
 
 $$
-\operatorname{Ind}(f \circ \gamma, 0) = \frac{1}{2\pi i} \oint_\gamma \frac{f'(Q)}{f(Q)} \, dQ .
+\operatorname{Ind}(f \circ \gamma, 0) = \frac{1}{2\pi i} \oint_\gamma \frac{\frac{df}{dQ}}{f(Q)} \, dQ .
 $$
 
 **Theorem (Rouché).** Let $f$ and $g$ be holomorphic on a domain $\Omega$ and let $\gamma$ be a positively oriented contour in $\Omega$ winding once about every point of its interior, with $|g(Q)| < |f(Q)|$ on $\gamma^*$. Then $f$ and $f + g$ have the same number of zeros inside $\gamma$, counted with multiplicity.
@@ -502,12 +502,12 @@ The contour integral is not a new kind of integral. It is the **Bochner integral
 Recall that for a measure space $(X, \mathcal{A}, \mu)$, a Banach space $B$ and a function $g : X \to B$, the Bochner integral $\int_X g \, d\mu \in B$ is defined as the limit of integrals of $B$-valued simple functions; a measurable $g$ is Bochner-integrable exactly when $\int_X \|g\|_B \, d\mu < \infty$. For $B = \mathbb{C}$ with the modulus, the Bochner integral exists precisely when both real and imaginary parts are Lebesgue-integrable, and it then equals the component-wise Lebesgue integral. Consequently the contour integral
 
 $$
-\int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \gamma'(t) \, dt
+\int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \frac{d\gamma}{dt} \, dt
 $$
 
-is the Bochner integral on $[a, b]$ with Lebesgue measure of the $\mathbb{C}$-valued function $t \mapsto f(\gamma(t)) \gamma'(t)$, which is integrable whenever $f$ is continuous on the compact set $\gamma^*$ and $\gamma$ is piecewise $C^1$.
+is the Bochner integral on $[a, b]$ with Lebesgue measure of the $\mathbb{C}$-valued function $t \mapsto f(\gamma(t)) \frac{d\gamma}{dt}$, which is integrable whenever $f$ is continuous on the compact set $\gamma^*$ and $\gamma$ is piecewise $C^1$.
 
-The differential point of view is more informative. The path $\gamma$ pulls the complex $1$-form $dQ$ back to the complex measure $\gamma'(t) \, dt$ on $[a, b]$, while it pulls the arclength form back to $|\gamma'(t)| \, dt$. These are different measures: the first is a **complex measure** with a phase, the second a positive one, and the estimation property is the statement $\left| \int f \, dQ \right| \le \int |f| \, |dQ|$. The contour integral is thus an integral against a complex measure carried by $\gamma^*$, and it is a continuous linear functional on $C(\gamma^*)$.
+The differential point of view is more informative. The path $\gamma$ pulls the complex $1$-form $dQ$ back to the complex measure $\frac{d\gamma}{dt} \, dt$ on $[a, b]$, while it pulls the arclength form back to $|\frac{d\gamma}{dt}| \, dt$. These are different measures: the first is a **complex measure** with a phase, the second a positive one, and the estimation property is the statement $\left| \int f \, dQ \right| \le \int |f| \, |dQ|$. The contour integral is thus an integral against a complex measure carried by $\gamma^*$, and it is a continuous linear functional on $C(\gamma^*)$.
 
 The measure-theoretic picture explains both the strength and the limitation of the theory. The **Cauchy transform** of a finite complex measure $\mu$ with compact support,
 
@@ -531,7 +531,7 @@ First, the Cauchy theorem requires no qualification here. In an algebra with zer
 
 ## Summary
 
-The complex integral of a continuous function along a piecewise $C^1$ path is constructed as a limit of Riemann sums with complex increments, and it equals $\int_a^b f(\gamma(t)) \gamma'(t) \, dt$; it is linear, additive, sign-reversing under reversal of the path, and bounded by $m L(\gamma)$. Because a primitive integrates a closed path to zero, only the coefficient $(Q - Q_0)^{-1}$ of a Laurent expansion survives a closed integration, and this produces the residue.
+The complex integral of a continuous function along a piecewise $C^1$ path is constructed as a limit of Riemann sums with complex increments, and it equals $\int_a^b f(\gamma(t)) \frac{d\gamma}{dt} \, dt$; it is linear, additive, sign-reversing under reversal of the path, and bounded by $m L(\gamma)$. Because a primitive integrates a closed path to zero, only the coefficient $(Q - Q_0)^{-1}$ of a Laurent expansion survives a closed integration, and this produces the residue.
 
 The **winding number** $\operatorname{Ind}(\gamma, Q_0) = \frac{1}{2\pi i} \oint_\gamma \frac{dQ}{Q - Q_0}$ is an integer, locally constant on the complement of the path, zero on the unbounded component, and invariant under homotopy. The **Cauchy–Goursat theorem** states that a holomorphic function integrates to zero over the boundary of a triangle, using only the existence of the derivative; it implies primitives on star-shaped domains, path independence, and Morera's converse. The homological form states that a cycle whose winding number vanishes off the domain integrates every holomorphic function to zero, and it is the working hypothesis of the theory.
 
@@ -551,8 +551,8 @@ The **residue theorem**, $\frac{1}{2\pi i} \oint_\gamma f \, dQ = \sum_k \operat
 | $\gamma : [a, b] \to \mathbb{C}$ | Path; piecewise $C^1$ unless stated |
 | $\gamma^*$ | Trace of the path |
 | $-\gamma$, $\gamma_1 + \gamma_2$ | Opposite path; concatenation |
-| $L(\gamma) = \int_a^b \lvert\gamma'(t)\rvert \, dt$ | Length of a path |
-| $\lvert dQ\rvert = \lvert\gamma'(t)\rvert \, dt$ | Arclength element |
+| $L(\gamma) = \int_a^b \lvert\frac{d\gamma}{dt}\rvert \, dt$ | Length of a path |
+| $\lvert dQ\rvert = \lvert\frac{d\gamma}{dt}\rvert \, dt$ | Arclength element |
 | $\int_\gamma f(Q) \, dQ$ | Complex integral along $\gamma$ |
 | $\oint_\gamma f(Q) \, dQ$ | Integral along a closed path |
 | $\operatorname{Ind}(\gamma, Q_0)$ | Winding number of $\gamma$ about $Q_0$ |

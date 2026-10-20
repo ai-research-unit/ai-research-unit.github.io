@@ -76,7 +76,7 @@ The identity $(l+\frac12)(\bar l+\frac12) = \frac14(2l+1)(2\bar l+1)$ then gives
 
 ## The Interlocking Chains
 
-The representations do not appear singly. Two irreducible representations $\tau^{l\bar l}$ and $\tau^{l'\bar l'}$ are called **interlocking** when $l'=l\pm\frac12$ and $\bar l'=\bar l\pm\frac12$, and the interlocking relations organise all representations into chains. The chain that carries the electron and the nucleon is the **spin-$\frac12$ line**,
+The representations do not appear singly. Two irreducible representations $\tau^{l\bar l}$ and $\tau^{l_2\bar l_2}$ are called **interlocking** when $l_2=l\pm\frac12$ and $\bar l_2=\bar l\pm\frac12$, and the interlocking relations organise all representations into chains. The chain that carries the electron and the nucleon is the **spin-$\frac12$ line**,
 
 $$
 \tau^{\frac12,0}\longrightarrow\tau^{1,\frac12}\longrightarrow\tau^{\frac32,1}\longrightarrow\tau^{2,\frac32}\longrightarrow\tau^{\frac52,2}\longrightarrow\cdots,
@@ -187,7 +187,7 @@ What is transcribed is the formula, the chains, and the assignments; what is est
 | $\Gamma^{\mu}$, $\Gamma(p)$ | Generators and the momentum matrix of the Bhabha equation |
 | $\lambda_i$, $\bar\lambda_i$ | Eigenvalues of $\Gamma^{0}$; $m_i=\mu_0\lambda_i\bar\lambda_i$ |
 | $D(p)=\det(\Gamma(p)+mE)$ | The determinant whose roots are the masses |
-| Interlocking | $l'=l\pm\frac12$, $\bar l'=\bar l\pm\frac12$ |
+| Interlocking | $l_2=l\pm\frac12$, $\bar l_2=\bar l\pm\frac12$ |
 | Spin-$\frac12$ line | $\tau^{\frac{j+1}{2},\frac j2}$, degree $(j+1)(j+2)$ |
 | $m/m_e=\deg/2$ | Ratio form, normalised to the electron |
 

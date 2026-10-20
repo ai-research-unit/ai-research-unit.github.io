@@ -43,7 +43,7 @@ $$
 Now let the parameters vary slowly and periodically: $R=R(\epsilon t)$ with $\epsilon\ll1$ and $R(T)=R(0)$ after a period $T$. For a time-independent $H_0$, $I$ is exactly conserved; for slowly varying parameters, the **adiabatic theorem for classical systems** states that $I$ is conserved to all orders in $\epsilon$, and the angle evolves as
 
 $$
-\theta_k(t)=\theta_k(0)+\int_0^t\omega_k\!\left(I,R(\epsilon t')\right)dt'+\Delta\theta_k .
+\theta_k(t)=\theta_k(0)+\int_0^t\omega_k\!\left(I,R(\epsilon\tau)\right)d\tau+\Delta\theta_k .
 $$
 
 The first two terms are dynamical: they are the phase accumulated at the instantaneous frequency. The third term is the **Hannay angle**. It is independent of the speed of the cycle to leading order, depends only on the geometric cycle of $R$, and is the classical geometric phase. Its general expression, derived by Hannay and confirmed in the examples, is

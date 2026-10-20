@@ -135,9 +135,9 @@ which is the operator form of the statement that $\Box$ is real and central. Thi
 
 ## The Defining Equation for the Green's Function
 
-A Green's function of $\Box$ is a distribution $G(\tilde{R},\tilde{R}')$ satisfying
+A Green's function of $\Box$ is a distribution $G(\tilde{R},\tilde R_2)$ satisfying
 $$
-\Box_{\tilde{R}}\,G(\tilde{R},\tilde{R}') = -\,\delta^{(4)}(\tilde{R} - \tilde{R}') ,
+\Box_{\tilde{R}}\,G(\tilde{R},\tilde R_2) = -\,\delta^{(4)}(\tilde{R} - \tilde R_2) ,
 $$
 where $\Box_{\tilde{R}}$ differentiates in the first argument and the right-hand side is the four-dimensional delta in the $ict$ coordinate. The sign is the series convention: it is the sign of the companion exercise, and with it the retarded kernel of the electromagnetic problem is $\Box\tilde{A} = -\mu\tilde J$ inverted by convolution. With this normalisation the inhomogeneous equation
 $$
@@ -145,13 +145,13 @@ $$
 $$
 is solved by
 $$
-\tilde{\Phi}(\tilde{R}) = -\int G(\tilde{R},\tilde{R}')\,\tilde{J}(\tilde{R}')\,d^4Q' ,
+\tilde{\Phi}(\tilde{R}) = -\int G(\tilde{R},\tilde R_2)\,\tilde{J}(\tilde R_2)\,d^4Q_2 ,
 $$
 because $\Box$ is central and may be moved through any algebraic factor. The minus sign and the sign of the source equation are a matched pair; changing either alone changes the sign of the field, which is the usual source of an apparent inconsistency between articles that state the convolution differently.
 
 When the kernel depends only on the difference,
 $$
-G(\tilde{R},\tilde{R}') = G(\tilde{R}-\tilde{R}') ,
+G(\tilde{R},\tilde R_2) = G(\tilde{R}-\tilde R_2) ,
 $$
 the operator is translation invariant and the convolution is a convolution. This will be the case for all the kernels below: $\Box$ has constant coefficients, so the general solution is the sum of a particular convolution and a solution of the homogeneous equation, and the choice among kernels is a choice of boundary condition, not of algebra.
 

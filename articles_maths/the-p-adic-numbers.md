@@ -94,24 +94,24 @@ shows that the partial sums differ from $-1$ by $p^N$, so the series converges t
 **Theorem (Hensel).** Let $f \in \mathbb{Z}_p[X]$ and suppose that $a \in \mathbb{Z}_p$ satisfies
 
 $$
-f(a) \equiv 0 \pmod p, \qquad f'(a) \not\equiv 0 \pmod p .
+f(a) \equiv 0 \pmod p, \qquad \frac{df}{dx}(a) \not\equiv 0 \pmod p .
 $$
 
-Then there is a unique $b \in \mathbb{Z}_p$ with $f(b) = 0$ and $b \equiv a \pmod p$. More generally, if $\lvert f(a) \rvert_p < \lvert f'(a) \rvert_p^{\,2}$ then there is a unique $b$ with $f(b) = 0$ and $\lvert b - a \rvert_p < \lvert f'(a) \rvert_p$.
+Then there is a unique $b \in \mathbb{Z}_p$ with $f(b) = 0$ and $b \equiv a \pmod p$. More generally, if $\lvert f(a) \rvert_p < \lvert \frac{df}{dx}(a) \rvert_p^{\,2}$ then there is a unique $b$ with $f(b) = 0$ and $\lvert b - a \rvert_p < \lvert \frac{df}{dx}(a) \rvert_p$.
 
 **Proof.** Define $a_0 = a$ and the Newton iteration
 
 $$
-a_{n+1} = a_n - \frac{f(a_n)}{f'(a_n)} .
+a_{n+1} = a_n - \frac{f(a_n)}{\frac{df}{dx}(a_n)} .
 $$
 
-The derivative $f'(a_n)$ is a unit of $\mathbb{Z}_p$ because $f'(a_n) \equiv f'(a) \not\equiv 0 \pmod p$, so the iteration is defined in $\mathbb{Z}_p$. Taylor expansion of $f$ at $a_n$ gives
+The derivative $\frac{df}{dx}(a_n)$ is a unit of $\mathbb{Z}_p$ because $\frac{df}{dx}(a_n) \equiv \frac{df}{dx}(a) \not\equiv 0 \pmod p$, so the iteration is defined in $\mathbb{Z}_p$. Taylor expansion of $f$ at $a_n$ gives
 
 $$
 f(a_{n+1}) = \sum_{k \geq 2} \frac{f^{(k)}(a_n)}{k!}(a_{n+1} - a_n)^k ,
 $$
 
-the coefficients $f^{(k)}(a_n)/k!$ lying in $\mathbb{Z}_p$ because the Taylor expansion $f(X+Y) = \sum_k f^{(k)}(X)Y^k/k!$ of an integer polynomial has coefficients in $\mathbb{Z}_p[X,Y]$, so that each divided derivative $\frac{1}{k!}\frac{d^k}{dX^k}$ of a polynomial in $\mathbb{Z}_p[X]$ again has coefficients in $\mathbb{Z}_p$; hence $\lvert f(a_{n+1}) \rvert_p \leq \lvert a_{n+1} - a_n \rvert_p^{\,2} = \lvert f(a_n) \rvert_p^{\,2}$, and the sequence $(a_n)$ is Cauchy because consecutive differences are bounded by $\lvert f(a_n)\rvert_p$, which tends to $0$. The limit $b$ exists by completeness, and $f(b) = 0$ by continuity. For uniqueness, write $f(X) - f(Y) = (X - Y)g(X,Y)$ where $g(X,Y) = \sum_{k \geq 1} a_k \frac{X^k - Y^k}{X - Y}$ is a polynomial with integer coefficients satisfying $g(x,y) \equiv f'(a) \pmod p$ whenever $x \equiv y \equiv a \pmod p$. If $b, b' \in \mathbb{Z}_p$ are roots with $b \equiv b' \equiv a \pmod p$, then $0 = f(b) - f(b') = (b - b')g(b,b')$, and $g(b,b')$ is a unit of $\mathbb{Z}_p$ because it is congruent to the unit $f'(a)$ modulo $p$. Since $\mathbb{Z}_p$ is an integral domain, $b = b'$.
+the coefficients $f^{(k)}(a_n)/k!$ lying in $\mathbb{Z}_p$ because the Taylor expansion $f(X+Y) = \sum_k f^{(k)}(X)Y^k/k!$ of an integer polynomial has coefficients in $\mathbb{Z}_p[X,Y]$, so that each divided derivative $\frac{1}{k!}\frac{d^k}{dX^k}$ of a polynomial in $\mathbb{Z}_p[X]$ again has coefficients in $\mathbb{Z}_p$; hence $\lvert f(a_{n+1}) \rvert_p \leq \lvert a_{n+1} - a_n \rvert_p^{\,2} = \lvert f(a_n) \rvert_p^{\,2}$, and the sequence $(a_n)$ is Cauchy because consecutive differences are bounded by $\lvert f(a_n)\rvert_p$, which tends to $0$. The limit $b$ exists by completeness, and $f(b) = 0$ by continuity. For uniqueness, write $f(X) - f(Y) = (X - Y)g(X,Y)$ where $g(X,Y) = \sum_{k \geq 1} a_k \frac{X^k - Y^k}{X - Y}$ is a polynomial with integer coefficients satisfying $g(x,y) \equiv \frac{df}{dx}(a) \pmod p$ whenever $x \equiv y \equiv a \pmod p$. If $b, b' \in \mathbb{Z}_p$ are roots with $b \equiv b' \equiv a \pmod p$, then $0 = f(b) - f(b') = (b - b')g(b,b')$, and $g(b,b')$ is a unit of $\mathbb{Z}_p$ because it is congruent to the unit $\frac{df}{dx}(a)$ modulo $p$. Since $\mathbb{Z}_p$ is an integral domain, $b = b'$.
 
 **Corollary (square roots and roots of unity).** Let $u \in \mathbb{Z}_p^\times$.
 
@@ -119,9 +119,9 @@ the coefficients $f^{(k)}(a_n)/k!$ lying in $\mathbb{Z}_p$ because the Taylor ex
 
 **(b)** $\mathbb{Z}_p^\times$ contains exactly the $(p-1)$-st roots of unity, which reduce bijectively modulo $p$ and are the **Teichmüller representatives** of $\mathbb{F}_p^\times$.
 
-**Proof.** (a) Apply Hensel to $f(X) = X^2 - u$ with $a$ a lift of a square root of $u \bmod p$; the derivative $2a$ is a unit for odd $p$, and for $p = 2$ a direct check of the unit group shows that the squares in $\mathbb{Z}_2^\times$ are exactly the units congruent to $1$ modulo $8$. (b) Apply Hensel to $f(X) = X^{p-1} - 1$ with $a$ a lift of a nonzero residue: $f'(a) = (p-1)a^{p-2}$ is a unit mod $p$, so each of the $p-1$ residues lifts uniquely to a root.
+**Proof.** (a) Apply Hensel to $f(X) = X^2 - u$ with $a$ a lift of a square root of $u \bmod p$; the derivative $2a$ is a unit for odd $p$, and for $p = 2$ a direct check of the unit group shows that the squares in $\mathbb{Z}_2^\times$ are exactly the units congruent to $1$ modulo $8$. (b) Apply Hensel to $f(X) = X^{p-1} - 1$ with $a$ a lift of a nonzero residue: $\frac{df}{dx}(a) = (p-1)a^{p-2}$ is a unit mod $p$, so each of the $p-1$ residues lifts uniquely to a root.
 
-**Example (a root of $-1$ in $\mathbb{Z}_5$).** For $p = 5$ and $f(X) = X^2 + 1$ we have $f(2) = 5 \equiv 0 \pmod 5$ and $f'(2) = 4 \not\equiv 0 \pmod 5$, so Hensel produces a unique $b \in \mathbb{Z}_5$ with $b^2 = -1$ and $b \equiv 2 \pmod 5$. The Newton iteration $a_{n+1} = a_n - (a_n^2+1)/(2a_n)$ beginning at $a_0 = 2$ gives $a_1 = 3/4$, which is congruent to $7$ modulo $25$ because $3/4 - 7 = -25/4 \in 25\mathbb{Z}_5$; indeed $7^2 + 1 = 50 = 2 \cdot 5^2$, so $a_1$ is already a root modulo $25$; the successive iterates satisfy $\lvert f(a_n)\rvert_5 \leq 5^{-2^n}$, so the sequence converges to the root at a rate doubling the number of correct $p$-adic digits at each step. The computation is the standard illustration of the quadratic convergence of the Hensel iteration, and it can be checked modulo $5^{20}$ directly.
+**Example (a root of $-1$ in $\mathbb{Z}_5$).** For $p = 5$ and $f(X) = X^2 + 1$ we have $f(2) = 5 \equiv 0 \pmod 5$ and $\frac{df}{dx}(2) = 4 \not\equiv 0 \pmod 5$, so Hensel produces a unique $b \in \mathbb{Z}_5$ with $b^2 = -1$ and $b \equiv 2 \pmod 5$. The Newton iteration $a_{n+1} = a_n - (a_n^2+1)/(2a_n)$ beginning at $a_0 = 2$ gives $a_1 = 3/4$, which is congruent to $7$ modulo $25$ because $3/4 - 7 = -25/4 \in 25\mathbb{Z}_5$; indeed $7^2 + 1 = 50 = 2 \cdot 5^2$, so $a_1$ is already a root modulo $25$; the successive iterates satisfy $\lvert f(a_n)\rvert_5 \leq 5^{-2^n}$, so the sequence converges to the root at a rate doubling the number of correct $p$-adic digits at each step. The computation is the standard illustration of the quadratic convergence of the Hensel iteration, and it can be checked modulo $5^{20}$ directly.
 
 ---
 

@@ -28,15 +28,15 @@ The findings are stated in advance.
 5. **Momentum uncertainty makes the entropy frame-dependent.** The boost's channel is unital, so the maximally mixed state is fixed, but a non-maximally-mixed state is dephased by the Wigner angle and its entropy rises; for a transverse spin the entropy is $h((1+\cos\alpha)/2)$ with $\alpha$ the Wigner angle.
 6. **The entropy labels the little-group orbit.** The quotient of the Bloch ball by $SU(2)$ is the interval of radii, and the entropy is a bijection from that interval onto $[0,1]$ bit; the Lorentz group acts on the orbit label only through the momentum, so the entropy of a sharp-momentum state is a genuine little-group invariant.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\mathsf{M}_2$. The state is $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$; the spin operators are $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$; the Wigner rotation is $\tilde{W}(\tilde U_{\mathrm L},\tilde V) = \tilde U_{\mathrm L,\tilde V'}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde V}^{-1}\in SU(2)$, with $\tilde U_{\mathrm L}$ the unit-norm biquaternion that implements the Lorentz transformation, $\tilde U_{\mathrm L,\tilde V}$ the standard boost carrying $\tilde V$ to rest, and $\tilde V'=\tilde U_{\mathrm L}\tilde V\tilde U_{\mathrm L}^{*}$.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\mathsf{M}_2$. The state is $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$; the spin operators are $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$; the Wigner rotation is $\tilde{W}(\tilde U_{\mathrm L},\tilde V) = \tilde U_{\mathrm L,\tilde V_2}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde V}^{-1}\in SU(2)$, with $\tilde U_{\mathrm L}$ the unit-norm biquaternion that implements the Lorentz transformation, $\tilde U_{\mathrm L,\tilde V}$ the standard boost carrying $\tilde V$ to rest, and $\tilde V_2=\tilde U_{\mathrm L}\tilde V\tilde U_{\mathrm L}^{*}$.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the state space, the Bloch ball, and the little group.
 - Companion article *Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form*, for the channel induced by a boost on a momentum superposition.
 - Companion article *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form*, for the Wigner angle, its momentum dependence, and its holonomy.
-- Companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.
+- Companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone*, for the geometry of the state space.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the idempotents, the Born pairing, and the conjugation action.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the trace pairing and the Hermitian sector.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form and its trace reading, and the Hermitian sector.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the little group and the Casimir invariants.
 
 ## The Spin Entropy of a State
@@ -77,7 +77,7 @@ $$
 \qquad
 \tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2},\quad \tilde\Pi_1\tilde\Pi_2 = 0,\quad \tilde\Pi_1 + \tilde\Pi_2 = e_t ,
 $$
-the Born weights of the state are the trace pairings
+the Born weights of the state are the normalised plain form, read as the trace pairings
 $$
 w_\pm = \frac{\mathrm{Tr}(\tilde{Ϛ}\tilde\Pi_{1,2})}{\mathrm{Tr}(\tilde\Pi_{1,2})} = \frac{1\pm|\vec r|}{2},
 \qquad w_+ + w_- = 1 ,
@@ -176,18 +176,18 @@ which for $v = 0.5c$ is $h((1+0.866025)/2) = h(0.933013) = 0.354578$. Only in th
 
 For an arbitrary initial Bloch vector and a dephasing about the Wigner axis $\vec u_{\mathrm r}$ with damping factor $\cos\alpha$, the channel acts on the Bloch vector by
 $$
-\vec r\ \longmapsto\ \vec r' = (\vec r\cdot\vec u_{\mathrm r})\,\vec u_{\mathrm r}
+\vec r\ \longmapsto\ \vec r_2 = (\vec r\cdot\vec u_{\mathrm r})\,\vec u_{\mathrm r}
 + \cos\alpha\bigl(\vec r - (\vec r\cdot\vec u_{\mathrm r})\vec u_{\mathrm r}\bigr),
 $$
 that is, it leaves the component along the axis untouched and shrinks the transverse component by $\cos\alpha$. Hence
 $$
-|\vec r'|^2 = (\vec r\cdot\vec u_{\mathrm r})^2 + \cos^2\alpha\bigl(|\vec r|^2 - (\vec r\cdot\vec u_{\mathrm r})^2\bigr),
+|\vec r_2|^2 = (\vec r\cdot\vec u_{\mathrm r})^2 + \cos^2\alpha\bigl(|\vec r|^2 - (\vec r\cdot\vec u_{\mathrm r})^2\bigr),
 \qquad
-S' = h\!\left(\frac{1+|\vec r'|}{2}\right),
+S_2 = h\!\left(\frac{1+|\vec r_2|}{2}\right),
 $$
 and the entropy is unchanged only for $\vec r\parallel\vec u_{\mathrm r}$ or $\alpha = 0$. Some values for the Wigner angle of a rapidity-$1$ boost at transverse momentum, $\alpha = 14.11732^\circ$ and $\cos\alpha = 0.969798$, are
 
-| $|\vec r|$ | $\angle(\vec r,\vec u_{\mathrm r})$ | $|\vec r'|$ | $S'$ |
+| $|\vec r|$ | $\angle(\vec r,\vec u_{\mathrm r})$ | $|\vec r_2|$ | $S_2$ |
 |---:|---:|---:|---:|
 | $1$ | $45^\circ$ | $0.985015$ | $0.063669$ |
 | $1$ | $90^\circ$ | $0.969798$ | $0.112969$ |

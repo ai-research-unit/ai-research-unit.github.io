@@ -209,7 +209,7 @@ $$
 $$
 and the **Hurwitz order** is
 $$
-\mathcal{L}'=\mathcal{L}\oplus\mathbb{Z}\omega,
+\mathcal{L}_{\mathrm{H}}=\mathcal{L}\oplus\mathbb{Z}\omega,
 \qquad
 \omega=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z).
 $$
@@ -221,7 +221,7 @@ The unit groups are
 $$
 \mathcal{L}^{\times}\cong Q_8,
 \qquad
-(\mathcal{L}')^{\times}\cong 2T,
+(\mathcal{L}_{\mathrm{H}})^{\times}\cong 2T,
 $$
 the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit-group index is three, although the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=S^{3}$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}^{4}$; its symmetry group is the Weyl group $F_4$ of order $1152$, containing $B_4$ of order $384$, and both are strictly larger than the unit group. The twenty-four units give twelve distinct rotations $\rho_v(\tilde Q_1)=-v\tilde Q_1v^{-1}$ of the real slice, with $2T/\{\pm e_t\}\cong A_4$. The five families of finite subgroups are the five simply laced Dynkin types, the McKay correspondence.
 
@@ -233,7 +233,7 @@ the quaternion group of order eight and the binary tetrahedral group of order tw
 
 **The figure is larger than the group.** The $24$-cell has $1152$ symmetries, while the unit group acting on it has $24$ elements and gives twelve rotations. Interpreted physically, the symmetry of the lattice is not the unit group; the figure can have more symmetries than the operations the units supply. The distinction is the one between a crystal's point group and the rotations of its lattice.
 
-**The complex order sees the light cone.** The integral biquaternions $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal{L}'$ have an infinite unit group. A pure null element with Gaussian-integer coefficients, for instance
+**The complex order sees the light cone.** The integral biquaternions $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal{L}_{\mathrm{H}}$ have an infinite unit group. A pure null element with Gaussian-integer coefficients, for instance
 $$
 P=\vec e_x+i\vec e_y,
 \qquad
@@ -279,8 +279,8 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 | $\mathbb{B}^{\times}_{1}=\{N=1\}$ | the norm-one group; the spin frame slice |
 | $\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}$ | the unitary group; maximal compact subgroup, $\cong U(2)$ |
 | $L=\mathcal{N}\cap S^{7}_{E}$ | the link of the cone; an $S^{1}$-bundle over $S^{2}\times S^{2}$ |
-| $\mathcal{L}$, $\mathcal{L}'$ | the Lipschitz and Hurwitz orders |
-| $Q_8$, $2T$ | the unit groups of $\mathcal{L}$ and $\mathcal{L}'$ |
+| $\mathcal{L}$, $\mathcal{L}_{\mathrm{H}}$ | the Lipschitz and Hurwitz orders |
+| $Q_8$, $2T$ | the unit groups of $\mathcal{L}$ and $\mathcal{L}_{\mathrm{H}}$ |
 | $24$-cell | the regular polytope with the Hurwitz units as vertices |
 | $B_4$, $F_4$ | the Weyl groups of orders $384$ and $1152$ |
 | $P=\vec e_x+i\vec e_y$ | the integral null element, $P^{2}=0$ |

@@ -64,7 +64,7 @@ $$
 
 **Proof.** The characterisation is the definition and the dimension statement is Sylvester's theorem. For the rest, let $W$ be a maximal positive definite subspace and $v\in W^{\perp}$: if $[v,v] > 0$ then $W\oplus Fv$ is an orthogonal sum of two definite subspaces and hence positive definite of dimension $n+1$, contradicting maximality, so $[v,v]\leq 0$ and $W^{\perp}$ is negative semidefinite. Conversely, since $W$ is definite the map $w'\mapsto[\cdot,w']$ is an isomorphism $W\to W^{*}$, so every $v$ has a unique decomposition $v = w + v_{\perp}$ with $w\in W$ and $v_{\perp}\perp W$; the scalar square is additive, $[v,v] = [w,w] + [v_{\perp},v_{\perp}]$, so a negative $v$ has $[v_{\perp},v_{\perp}]\leq[v,v] < 0$.
 
-**Remark (neutral vectors and the light cone).** The set of neutral vectors is the **null cone** of the form, and through every neutral vector there is a one-dimensional maximal neutral subspace; in signature $(n,m)$ the maximal neutral subspaces have dimension $\min(n,m)$. The language of the null cone is differential-geometric and is not used here; only its linear-algebraic part, the maximal neutral subspace, belongs to this article.
+**Remark (neutral vectors and the null cone).** The set of neutral vectors is the **null cone** of the form, and through every neutral vector there is a one-dimensional maximal neutral subspace; in signature $(n,m)$ the maximal neutral subspaces have dimension $\min(n,m)$. The language of the null cone is differential-geometric and is not used here; only its linear-algebraic part, the maximal neutral subspace, belongs to this article.
 
 ## The Fundamental Decomposition
 

@@ -213,7 +213,7 @@ The consequence for the title of the article is plain. The scalar Fock space is 
 
 ## The Informational Sector and the Trace Formula
 
-The framework's Born rule is a trace over the informational sector: for a state $\tilde{Ϛ}\in\mathbb{M}_+$ that is positive and of trace one, the expectation of a Hermitian observable $\tilde H\in\mathbb{M}_+$ is
+The framework's Born rule is the normalised plain form over the informational sector, read as the trace: for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the image), the expectation of a Hermitian observable $\tilde H\in\mathbb{M}_+$ is
 
 $$
 \langle\tilde H\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\,\tilde H).

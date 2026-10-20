@@ -176,7 +176,7 @@ The difference from ordinary continuity is that $\delta$ depends only on $\epsil
 Let $f : \Omega \to \mathbb{C}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The **derivative** of $f$ at $Q_0$ is
 
 $$
-f'(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
+\frac{df}{dQ}(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
 $$
 
 provided the limit exists. If it does, $f$ is **complex differentiable** at $Q_0$, or **holomorphic** at $Q_0$.
@@ -222,36 +222,36 @@ $$
 **Theorem.** $f$ is holomorphic iff $f$ is real differentiable and $\partial f / \partial \bar{Q} = 0$. In that case,
 
 $$
-f'(Q) = \frac{\partial f}{\partial Q}.
+\frac{df}{dQ} = \frac{\partial f}{\partial Q}.
 $$
 
 The condition $\partial f / \partial \bar{Q} = 0$ is the Cauchy–Riemann equations in compact form.
 
 ### Rules of Differentiation
 
-**Linearity.** $(af + bg)' = a f' + b g'$.
+**Linearity.** $\frac{d}{dQ}(af + bg) = a\frac{df}{dQ} + b\frac{dg}{dQ}$.
 
-**Product rule.** $(fg)' = f' g + f g'$.
+**Product rule.** $\frac{d}{dQ}(fg) = \frac{df}{dQ}g + f\frac{dg}{dQ}$.
 
-**Quotient rule.** $(f/g)' = (f' g - f g')/g^2$ where $g \neq 0$.
+**Quotient rule.** $\frac{d}{dQ}(f/g) = \left(\frac{df}{dQ}g - f\frac{dg}{dQ}\right)/g^2$ where $g \neq 0$.
 
-**Chain rule.** $(f \circ g)'(Q) = f'(g(Q)) g'(Q)$.
+**Chain rule.** $\frac{d}{dQ}(f \circ g)(Q) = \frac{df}{dQ}(g(Q))\,\frac{dg}{dQ}(Q)$.
 
-**Inverse function rule.** If $f$ is holomorphic at $Q_0$ with $f'(Q_0) \neq 0$ and $f^{-1}$ is defined near $f(Q_0)$, then
+**Inverse function rule.** If $f$ is holomorphic at $Q_0$ with $\frac{df}{dQ}(Q_0) \neq 0$ and $f^{-1}$ is defined near $f(Q_0)$, then
 
 $$
-(f^{-1})'(f(Q_0)) = \frac{1}{f'(Q_0)}.
+\frac{df^{-1}}{dQ}(f(Q_0)) = \left(\frac{df}{dQ}(Q_0)\right)^{-1}.
 $$
 
 ## Conformal Maps
 
 ### Definition
 
-A map $f : \Omega \to \mathbb{C}$ is **conformal** at $Q_0$ if it preserves angles between curves through $Q_0$. In particular, if $f$ is holomorphic at $Q_0$ with $f'(Q_0) \neq 0$, then $f$ is conformal at $Q_0$.
+A map $f : \Omega \to \mathbb{C}$ is **conformal** at $Q_0$ if it preserves angles between curves through $Q_0$. In particular, if $f$ is holomorphic at $Q_0$ with $\frac{df}{dQ}(Q_0) \neq 0$, then $f$ is conformal at $Q_0$.
 
-**Theorem.** If $f$ is holomorphic at $Q_0$ with $f'(Q_0) \neq 0$, then $f$ is conformal at $Q_0$, and the local behavior of $f$ near $Q_0$ is multiplication by $f'(Q_0)$, i.e., a rotation by $\arg f'(Q_0)$ and a scaling by $|f'(Q_0)|$.
+**Theorem.** If $f$ is holomorphic at $Q_0$ with $\frac{df}{dQ}(Q_0) \neq 0$, then $f$ is conformal at $Q_0$, and the local behavior of $f$ near $Q_0$ is multiplication by $\frac{df}{dQ}(Q_0)$, i.e., a rotation by $\arg \frac{df}{dQ}(Q_0)$ and a scaling by $|\frac{df}{dQ}(Q_0)|$.
 
-**Proof.** Write $f(Q) - f(Q_0) = f'(Q_0)(Q - Q_0) + o(|Q - Q_0|)$. The linear term is multiplication by $f'(Q_0)$, which is a rotation and a scaling.
+**Proof.** Write $f(Q) - f(Q_0) = \frac{df}{dQ}(Q_0)(Q - Q_0) + o(|Q - Q_0|)$. The linear term is multiplication by $\frac{df}{dQ}(Q_0)$, which is a rotation and a scaling.
 
 ### Möbius Transformations
 
@@ -261,7 +261,7 @@ $$
 f(Q) = \frac{aQ + b}{cQ + d}, \qquad ad - bc \neq 0.
 $$
 
-It is holomorphic on $\mathbb{C} \setminus \{-d/c\}$ when $c \neq 0$, and entire when $c = 0$; it is conformal wherever $f'(Q) \neq 0$. Möbius transformations map circles and lines to circles and lines, and they form a group under composition.
+It is holomorphic on $\mathbb{C} \setminus \{-d/c\}$ when $c \neq 0$, and entire when $c = 0$; it is conformal wherever $\frac{df}{dQ} \neq 0$. Möbius transformations map circles and lines to circles and lines, and they form a group under composition.
 
 ### The Riemann Mapping Theorem
 
@@ -299,7 +299,7 @@ $$
 \oint_\gamma f(Q) \, dQ = 0.
 $$
 
-**Proof.** For a triangle, subdivide repeatedly and use the fact that the integral over the small triangles is bounded by the area times the supremum of $|f'|$. For a general contour, approximate by polygons.
+**Proof.** For a triangle, subdivide repeatedly and use the fact that the integral over the small triangles is bounded by the area times the supremum of $|\frac{df}{dQ}|$. For a general contour, approximate by polygons.
 
 **Corollary.** On a simply connected domain, the integral of a holomorphic function is path-independent. The function
 
@@ -335,7 +335,7 @@ $$
 
 **Theorem (Liouville).** Every bounded entire function is constant.
 
-**Proof.** Apply the Cauchy estimates to $f'$ on a circle of radius $r$ around $Q_0$. Since $f$ is bounded by $M$, we have $|f'(Q_0)| \leq M/r$ for every $r > 0$. Let $r \to \infty$ to get $f'(Q_0) = 0$. Since $Q_0$ is arbitrary, $f' = 0$ everywhere, so $f$ is constant.
+**Proof.** Apply the Cauchy estimates to $\frac{df}{dQ}$ on a circle of radius $r$ around $Q_0$. Since $f$ is bounded by $M$, we have $|\frac{df}{dQ}(Q_0)| \leq M/r$ for every $r > 0$. Let $r \to \infty$ to get $\frac{df}{dQ}(Q_0) = 0$. Since $Q_0$ is arbitrary, $\frac{df}{dQ} = 0$ everywhere, so $f$ is constant.
 
 **Corollary (Fundamental Theorem of Algebra).** Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.
 
@@ -443,10 +443,10 @@ $$
 
 ### Computation of Residues
 
-**Simple pole.** If $f(Q) = g(Q)/h(Q)$ with $g(Q_0) \neq 0$, $h(Q_0) = 0$, and $h'(Q_0) \neq 0$, then
+**Simple pole.** If $f(Q) = g(Q)/h(Q)$ with $g(Q_0) \neq 0$, $h(Q_0) = 0$, and $\frac{dh}{dQ}(Q_0) \neq 0$, then
 
 $$
-\operatorname{Res}(f, Q_0) = \frac{g(Q_0)}{h'(Q_0)}.
+\operatorname{Res}(f, Q_0) = \frac{g(Q_0)}{\frac{dh}{dQ}(Q_0)}.
 $$
 
 **Pole of order $m$.** If $f$ has a pole of order $m$ at $Q_0$, then
@@ -488,7 +488,7 @@ where $f$ is a rational function decaying at infinity with no poles on the real 
 **Theorem (Argument Principle).** Let $f$ be meromorphic on a simply connected domain with zeros $Q_1, \dots, Q_m$ and poles $p_1, \dots, p_n$ (counted with multiplicity). Let $\gamma$ be a closed contour that winds once around each and does not pass through any. Then
 
 $$
-\frac{1}{2\pi i} \oint_\gamma \frac{f'(Q)}{f(Q)} \, dQ = \sum_{k=1}^m \operatorname{ord}(f, Q_k) - \sum_{k=1}^n \operatorname{ord}(f, p_k),
+\frac{1}{2\pi i} \oint_\gamma \frac{\frac{df}{dQ}}{f(Q)} \, dQ = \sum_{k=1}^m \operatorname{ord}(f, Q_k) - \sum_{k=1}^n \operatorname{ord}(f, p_k),
 $$
 
 where $\operatorname{ord}(f, Q_k)$ is the order of the zero and $\operatorname{ord}(f, p_k)$ is the order of the pole.
@@ -509,7 +509,7 @@ where $\operatorname{ord}(f, Q_k)$ is the order of the zero and $\operatorname{o
 
 Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\lvert Q\rvert = \sqrt{q^2 + q'^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.
 
-The derivative $f'(Q_0) = \lim_{h \to 0} (f(Q_0 + h) - f(Q_0))/h$ is the central object, and the article records how much stronger it is than its real analogue: a function that has it at every point of an open set is holomorphic, holomorphy is equivalent to the Cauchy–Riemann equations, and it forces the function to be analytic. Where the derivative is nonzero the map is conformal, preserving the angles between curves.
+The derivative $\frac{df}{dQ}(Q_0) = \lim_{h \to 0} (f(Q_0 + h) - f(Q_0))/h$ is the central object, and the article records how much stronger it is than its real analogue: a function that has it at every point of an open set is holomorphic, holomorphy is equivalent to the Cauchy–Riemann equations, and it forces the function to be analytic. Where the derivative is nonzero the map is conformal, preserving the angles between curves.
 
 Integration along paths defines the contour integral, and the theorems the derivative buys are the substance of the subject: Cauchy's theorem, the Cauchy integral formula, the Liouville theorem, and the residue theorem, which evaluates an integral by summing the local contributions of the singularities. Power series, Taylor series and Laurent series describe the local behaviour of a holomorphic function, and the Laurent expansion classifies the isolated singularities as removable, a pole, or essential. The article closes by applying the residue theorem to the evaluation of real integrals.
 
@@ -526,7 +526,7 @@ Integration along paths defines the contour integral, and the theorems the deriv
 | $\Omega, F, K$ | Open, closed, compact sets |
 | $Q_n \to L$ | Convergence of a sequence |
 | $\lim_{Q \to Q_0} f(Q)$ | Limit of a function |
-| $f'(Q)$ | Complex derivative |
+| $\frac{df}{dQ}$ | Complex derivative |
 | $\partial/\partial Q, \partial/\partial \bar{Q}$ | Wirtinger derivatives |
 | $\int_\gamma f(Q) \, dQ$ | Contour integral |
 | $f^{(n)}(Q)$ | $n$-th derivative |

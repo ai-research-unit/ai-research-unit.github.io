@@ -94,7 +94,7 @@ Objects that a reader may expect in a list of isometry and symmetry groups, and 
 | the orthogonal, unitary and symplectic groups | they are the classical groups, defined by a form rather than by a distance | *List of Classical Geometric Groups* |
 | the Möbius and conformal groups | they preserve angles and not distances; $\operatorname{Möb}(n) = O(n+1,1)/\{\pm1\}$ is catalogued separately | *List of Möbius and Conformal Groups* |
 | the isometry groups of the CAT($0$) and Gromov-hyperbolic spaces | they are metric-geometric generalisations of the symbol $\operatorname{Isom}(X)$ | *Metric Geometry*; *Hyperbolic Groups* |
-| the Lorentz and Poincaré groups | they are the symmetry groups of Minkowski space, a physical construction | *Pseudo-Riemannian and Lorentzian Geometry*; *Split-Biquaternion Rotations and the Lorentz Group* |
+| the Lorentz and Poincaré groups | they are the symmetry groups of a Lorentzian space and are treated with its geometry | *Pseudo-Riemannian and Lorentzian Geometry*; *Split-Biquaternion Rotations and the Lorentz Group* |
 
 ## Summary
 

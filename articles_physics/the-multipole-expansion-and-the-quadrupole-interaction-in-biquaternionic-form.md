@@ -33,19 +33,19 @@ The article's thesis can be stated at once. The biquaternion algebra, regarded a
 
 ### From the Coulomb Integral to the Series
 
-Let a charge distribution of density $\rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ be confined to a bounded region around the origin. Its electrostatic potential at a field point $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the Coulomb integral
+Let a charge distribution of density $\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)$ be confined to a bounded region around the origin. Its electrostatic potential at a field point $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is the Coulomb integral
 
 $$
-\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)|}\,d^3x' .
+\Phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\int \frac{\rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|}\,d^3x_2 .
 $$
 
-The kernel is expanded by the standard Legendre expansion. Writing $r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, $r' = |x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z|$, $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$, $\vec u' = (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)/r'$, and $\cos\gamma = \vec u\cdot\vec u'$, the expansion is
+The kernel is expanded by the standard Legendre expansion. Writing $r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, $r_2 = |x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z|$, $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$, $\vec u_2 = (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)/r_2$, and $\cos\gamma = \vec u\cdot\vec u_2$, the expansion is
 
 $$
-\frac{1}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)|} = \sum_{l=0}^{\infty}\frac{r_<^{\,l}}{r_>^{\,l+1}}\,P_l(\cos\gamma),
+\frac{1}{|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|} = \sum_{l=0}^{\infty}\frac{r_<^{\,l}}{r_>^{\,l+1}}\,P_l(\cos\gamma),
 $$
 
-where $r_>$ is the larger and $r_<$ the smaller of $r$ and $r'$, and $P_l$ is the Legendre polynomial of degree $l$. For a field point outside the source, $r_> = r$ and $r_< = r'$, and the series converges absolutely. This is the standard result; it is the ancestor of every multipole expansion.
+where $r_>$ is the larger and $r_<$ the smaller of $r$ and $r_2$, and $P_l$ is the Legendre polynomial of degree $l$. For a field point outside the source, $r_> = r$ and $r_< = r_2$, and the series converges absolutely. This is the standard result; it is the ancestor of every multipole expansion.
 
 ### The Spherical-Harmonic Form
 
@@ -58,7 +58,7 @@ $$
 with the **spherical multipole moments**
 
 $$
-\mathcal{Q}_{lm} = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\,r'^{\,l}\,Y_l^{m*}(\theta',\phi')\,d^3x' .
+\mathcal{Q}_{lm} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,r_2^{\,l}\,Y_l^{m*}(\theta_2,\phi_2)\,d^3x_2 .
 $$
 
 The angular integration is over the source, and the moments $\mathcal{Q}_{lm}$ depend only on the source, not on the field point. Each order $l$ contributes $2l+1$ moments, transforming among themselves under a rotation of the coordinate frame as the representation $D^{(l)}$.
@@ -70,7 +70,7 @@ The three lowest orders have their familiar names and their familiar Cartesian r
 **Monopole ($l = 0$).** The single moment is the total charge,
 
 $$
-ϙ = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\,d^3x' ,
+ϙ = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,d^3x_2 ,
 $$
 
 and the monopole potential is $\Phi_{mon} = ϙ/(4\pi\epsilon_0 r)$.
@@ -78,7 +78,7 @@ and the monopole potential is $\Phi_{mon} = ϙ/(4\pi\epsilon_0 r)$.
 **Dipole ($l = 1$).** The three moments are the components of the **dipole moment vector**
 
 $$
-\vec p = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\,(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\,d^3x',
+\vec p = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\,d^3x_2,
 $$
 
 and the dipole potential is
@@ -90,7 +90,7 @@ $$
 **Quadrupole ($l = 2$).** The five independent moments are those of the **quadrupole tensor**
 
 $$
-\mathcal{Q}_{ij} = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\left(3x_i'x_j' - r'^{\,2}\delta_{ij}\right)d^3x' ,
+\mathcal{Q}_{ij} = \int \rho(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)\left(3x_{i,2}x_{j,2} - r_2^{\,2}\delta_{ij}\right)d^3x_2 ,
 $$
 
 which is symmetric, $\mathcal{Q}_{ij} = \mathcal{Q}_{ji}$, and traceless, $\mathcal{Q}_{ii} = 0$; those two conditions reduce the nine Cartesian entries to five. The quadrupole potential is
@@ -99,7 +99,7 @@ $$
 \Phi_{quad}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\,\mathcal{Q}_{ij}\,\vec u_i\vec u_j .
 $$
 
-The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $\mathcal{Q}_{ij}$ would contribute $\vec u_i\vec u_i = 1$ and hence a spherically symmetric $1/r^3$ term, which is not a pure $l=2$ object; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r'^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.
+The tracelessness is not an extra assumption: the term proportional to $\delta_{ij}$ in $\mathcal{Q}_{ij}$ would contribute $\vec u_i\vec u_i = 1$ and hence a spherically symmetric $1/r^3$ term, which is not a pure $l=2$ object; removing the trace makes the quadrupole the pure $l = 2$ object. The relation of the Cartesian form to the spherical form is exact, and it has been checked directly: for a point charge, $\frac{1}{4\pi\epsilon_0}\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j$ reproduces the $l = 2$ Legendre term $\frac{1}{4\pi\epsilon_0}\frac{r_2^{\,2}}{r^3}P_2(\cos\gamma)$ term by term.
 
 ### The Tower and Its Ordering
 
@@ -200,7 +200,7 @@ $$
 
 a pure real quaternion with $\tilde{p}^{\natural} = -\tilde{p}$. Its representative lies in the vector part, which is exactly the $D^{(1)}$ representation, so the dipole is the first non-trivial multipole that is an **element of the algebra**. Two consequences follow.
 
-**The dipole potential.** With the unit radial quaternion $\vec u = (x_1\vec e_x + x_2\vec e_y + x_3\vec e_z)/r$, satisfying $\vec u^2 = -e_t$, the dipole potential is
+**The dipole potential.** With the unit radial quaternion $\vec u = (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/r$, satisfying $\vec u^2 = -e_t$, the dipole potential is
 
 $$
 \Phi_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\vec u\right)}{r^2},
@@ -242,19 +242,19 @@ and it agrees exactly with the $l = 2$ Legendre term of the Coulomb kernel, as n
 
 ### The Interaction Energy
 
-The interaction energy of a bounded charge distribution with an external potential $\Phi_{ext}$ is $W = \int\rho\,\Phi_{ext}\,d^3x'$. Expanding $\Phi_{ext}$ about the origin,
+The interaction energy of a bounded charge distribution with an external potential $\Phi_{ext}$ is $W = \int\rho\,\Phi_{ext}\,d^3x_2$. Expanding $\Phi_{ext}$ about the origin,
 
 $$
-\Phi_{ext}(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = \Phi(0) - x_i' E_i(0) - \tfrac12 x_i'x_j'\,\partial/\partial Q_i\,E_j(0) + \cdots ,
+\Phi_{ext}(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z) = \Phi(0) - x_{i,2} E_i(0) - \tfrac12 x_{i,2}x_{j,2}\,\partial/\partial Q_i\,E_j(0) + \cdots ,
 $$
 
 where $\vec E = -\vec\nabla\Phi$ is the external field. The quadratic term separates into a trace part and a traceless part once the second moments are written in terms of the quadrupole tensor,
 
 $$
-\int\rho\,x_i'x_j'\,d^3x' = \tfrac13\,\mathcal{Q}_{ij} + \tfrac13\,\delta_{ij}\int\rho\,r'^{\,2}d^3x' ,
+\int\rho\,x_{i,2}x_{j,2}\,d^3x_2 = \tfrac13\,\mathcal{Q}_{ij} + \tfrac13\,\delta_{ij}\int\rho\,r_2^{\,2}d^3x_2 ,
 $$
 
-and the trace part contributes $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho\,r'^{\,2}d^3x'$. For an external field whose own sources lie outside the distribution, $\nabla\cdot\vec E$ vanishes wherever the distribution sits and that term drops, leaving the standard multipole expansion of the interaction energy,
+and the trace part contributes $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho\,r_2^{\,2}d^3x_2$. For an external field whose own sources lie outside the distribution, $\nabla\cdot\vec E$ vanishes wherever the distribution sits and that term drops, leaving the standard multipole expansion of the interaction energy,
 
 $$
 W = ϙ\,\Phi(0) - \vec p\cdot\vec E(0) - \tfrac16\,\mathcal{Q}_{ij}\,\partial/\partial Q_i\,E_j(0) + \cdots .
@@ -262,7 +262,7 @@ $$
 
 Separating off the trace term is what leaves the quadrupole entering the expansion through the traceless tensor $\mathcal{Q}_{ij}$ alone, and it is the same split that the representation-theoretic contraction below uses.
 
-The identity was verified numerically on three point charges: with a quadratic external potential carrying a traceless Hessian, so that $\nabla\cdot\vec E = 0$, the direct energy $\sum_a ϙ_a\Phi_{ext}(x_a\,\vec e_x+y_a\,\vec e_y+z_a\,\vec e_z)$ and the three-term expansion agree to machine precision at every source size $a$ (residual at the roundoff floor, a relative $10^{-16}$) — an exact test, since a quadratic potential terminates the expansion at the quadrupole. The coefficient $-\tfrac16$ was then checked against a genuinely higher-order case: adding a cubic term to $\Phi_{ext}$, the residual of the three-term expansion falls off as the cube of the source size, $4.3\times10^{-3}, 1.2\times10^{-4}, 4.3\times10^{-6}, 1.2\times10^{-7}, 4.3\times10^{-9}$ at source scales $1, 0.3, 0.1, 0.03, 0.01$ — a ratio of $27$ per factor of three, the signature of a first error at the octupole. A wrong coefficient in the quadrupole term would have left a residual falling only as the square. The trace term was verified on the same charges by varying the Hessian trace: the direct energy differs from the source-free expansion by exactly $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho r'^{\,2}d^3x'$, to machine precision, at $\nabla\cdot\vec E = -0.3, +0.7, -1.5$, the difference changing sign with $\nabla\cdot\vec E$.
+The identity was verified numerically on three point charges: with a quadratic external potential carrying a traceless Hessian, so that $\nabla\cdot\vec E = 0$, the direct energy $\sum_a ϙ_a\Phi_{ext}(x_a\,\vec e_x+y_a\,\vec e_y+z_a\,\vec e_z)$ and the three-term expansion agree to machine precision at every source size $a$ (residual at the roundoff floor, a relative $10^{-16}$) — an exact test, since a quadratic potential terminates the expansion at the quadrupole. The coefficient $-\tfrac16$ was then checked against a genuinely higher-order case: adding a cubic term to $\Phi_{ext}$, the residual of the three-term expansion falls off as the cube of the source size, $4.3\times10^{-3}, 1.2\times10^{-4}, 4.3\times10^{-6}, 1.2\times10^{-7}, 4.3\times10^{-9}$ at source scales $1, 0.3, 0.1, 0.03, 0.01$ — a ratio of $27$ per factor of three, the signature of a first error at the octupole. A wrong coefficient in the quadrupole term would have left a residual falling only as the square. The trace term was verified on the same charges by varying the Hessian trace: the direct energy differs from the source-free expansion by exactly $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho r_2^{\,2}d^3x_2$, to machine precision, at $\nabla\cdot\vec E = -0.3, +0.7, -1.5$, the difference changing sign with $\nabla\cdot\vec E$.
 
 Two features of the quadrupole term deserve emphasis, because they are what the algebra will and will not see.
 

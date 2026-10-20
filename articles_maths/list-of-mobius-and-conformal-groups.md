@@ -87,7 +87,7 @@ The two Möbius groups are among the exceptional isomorphisms of low-dimensional
 | $SU(1,1) \cong SL(2,\mathbb{R})$ | the disk model of the hyperbolic plane and the upper half-plane model have conjugate isometry groups | *The Unitary and Symplectic Groups*; *Hyperbolic Geometry* |
 | $SO^+(1,3) \cong SO(3,1)^{\circ}$ | the identity component of the Lorentz group, of dimension six | *Split-Biquaternion Rotations and the Lorentz Group*, §The Groups $O(3,1)$, $SO(3,1)$ and $SO^{+}(3,1)$ |
 
-Through these isomorphisms the Möbius group of the sphere $S^2$ is the Lorentz group of four-dimensional Minkowski space, and the Möbius group of the circle is the Lorentz group of three-dimensional Minkowski space; the hyperboloid models of the hyperbolic plane and of hyperbolic three-space are the orbits of the Lorentz groups, which is the pseudo-Riemannian account of the same groups. The identifications are the low-dimensional coincidences of the classification of the simple Lie algebras, and they are the reason the same group is listed under the conformal, the hyperbolic and the orthogonal headings.
+Through these isomorphisms the Möbius group of the sphere $S^2$ is the Lorentz group of four-dimensional Lorentzian space, and the Möbius group of the circle is the Lorentz group of three-dimensional Lorentzian space; the hyperboloid models of the hyperbolic plane and of hyperbolic three-space are the orbits of the Lorentz groups, which is the pseudo-Riemannian account of the same groups. The identifications are the low-dimensional coincidences of the classification of the simple Lie algebras, and they are the reason the same group is listed under the conformal, the hyperbolic and the orthogonal headings.
 
 ## The Lie Sphere and Laguerre Groups
 
@@ -113,7 +113,7 @@ An object that a reader may expect among the Möbius and conformal groups, and d
 | $\operatorname{Conf}(\Omega)$ for a plane domain $\Omega$ | infinite-dimensional in general, so not the finite-dimensional Möbius group | *Complex Analysis*; *Conformal Geometry* |
 | the similarity group of $\mathbb{R}^n$ | the transformations multiplying the metric by a constant, a proper subgroup of $\operatorname{Möb}(n)$ | *Isometries and Orthogonal Transformations*, §Similarities; *Euclidean Geometry* |
 | the orthogonal group $O(n)$ | a group defined by a quadratic form, the isometry group of the sphere, not a conformal group | *Isometries and Orthogonal Transformations* |
-| the conformal group $O(2,4)$ of Minkowski space | the conformal group of a pseudo-Riemannian space of signature $(2,4)$, not the conformal group of the round sphere | *Topology in the Space of Biquaternions* |
+| the conformal group $O(2,4)$ of Lorentzian space | the conformal group of a pseudo-Riemannian space of signature $(2,4)$, not the conformal group of the round sphere | *Topology in the Space of Biquaternions* |
 | the general linear group $GL(2,\mathbb{C})$ | the group whose projectivisation is $PSL(2,\mathbb{C})$; not itself the Möbius group | *The General Linear Group* |
 
 ## Summary

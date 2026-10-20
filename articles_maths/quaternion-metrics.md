@@ -8,7 +8,7 @@ $$
 Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q) = \mathrm{Sc}\bigl((g\tilde q)^2\bigr).
 $$
 
-This article studies that form, which is called here a **quaternion metric**. It is an indefinite form on $\mathbb{H}$, non-degenerate, of signature $(1,3)$ for every nonzero $g$, and it is the interval form that the source of the construction proposes as a generalisation of the Minkowski interval that keeps Hamilton's multiplication rules intact, in place of the Riemannian strategy of varying them. It is not the quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and it is not a distance; the word *metric* is used in its differential-geometric sense of a quadratic form on a space of displacements, and the name records that the form is built from a quaternion.
+This article studies that form, which is called here a **quaternion metric**. It is an indefinite form on $\mathbb{H}$, non-degenerate, of signature $(1,3)$ for every nonzero $g$, and it is the interval form that the source of the construction proposes as a generalisation of the Lorentzian quadratic form that keeps Hamilton's multiplication rules intact, in place of the Riemannian strategy of varying them. It is not the quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and it is not a distance; the word *metric* is used in its differential-geometric sense of a quadratic form on a space of displacements, and the name records that the form is built from a quaternion.
 
 The article turns on one identity: $Q_g = \omega\circ L_g$, where $\omega$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$. Everything follows from it. The form is non-degenerate of signature $(1,3)$ for every nonzero $g$; all the forms of the family are isometric to one another; the family is the image of the single form $\omega$ under precomposition with the left multiplications; and the isometry group of $Q_g$ is the conjugate of the Lorentz group by $L_g$. The Gram matrix of $Q_g$ is computed in closed form and its determinant is $-\langle g\rangle_{\natural}^4$, so the non-degeneracy is visible a second time, quantitatively.
 
@@ -139,7 +139,7 @@ g_0^2-g_1^2-g_2^2-g_3^2 & -2g_0g_1 & -2g_0g_2 & -2g_0g_3 \\
 \end{pmatrix}.
 $$
 
-Its diagonal entries are $g_0^2-|\vec g|^2$ and $-g_0^2-|\vec g|^2+2g_k^2$; its off-diagonal entries are $-2g_0g_k$ against the time coordinate and $2g_jg_k$ against two space coordinates.
+Its diagonal entries are $g_0^2-|\vec g|^2$ and $-g_0^2-|\vec g|^2+2g_k^2$; its off-diagonal entries are $-2g_0g_k$ against the scalar coordinate and $2g_jg_k$ against two vector coordinates.
 
 *Proof.* One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\vec g|^2$ at $\mu=0$ and $-\mathrm{Sc}(g\vec e_kg \vec e_k)$ at $\mu=k$; expanding $g = g_0+\vec g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\vec g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_tg\vec e_k$ and $g\vec e_kg e_t$ are $g^2\vec e_k$ and $g\vec e_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(\mu,\nu)$ of distinct space indices the antisymmetry $\vec e_\mu \vec e_\nu+\vec e_\nu \vec e_\mu = 0$ makes the two products equal, and the scalar part of $g\vec e_\mu g\vec e_\nu$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and its cyclic permutations, and the vanishing of the scalar part of $\vec e_\mu \vec e_\nu$ for $\mu\neq\nu$.
 
@@ -160,7 +160,7 @@ with $I_3$ the $3\times3$ identity and $\vec g$ the column of the three vector c
 | $e_t+\vec e_k$ | the form with $s=0$ | $(1,3)$ | the two axes $e_t$ and $\vec e_k$ are null |
 | $2e_t$ | $4\,\mathrm{diag}(1,-1,-1,-1)$ | $(1,3)$ | the scale of $g$ rescales the form |
 
-For $g = e_t$ the form is $\omega$ itself, $Q_{e_t}(\tilde q) = q_t^2-q_x^2-q_y^2-q_z^2$, and the Gram matrix is $\eta$. For $g = \vec e_k$ the form is $\omega$ with the time coordinate exchanged with $q_k$: for $g=\vec e_x$ one has $Q_{\vec e_x}(\tilde q) = -q_t^2+q_x^2-q_y^2-q_z^2$. For $g = e_t+\vec e_x$ the matrix has $s=0$, and the vectors $e_t$ and $\vec e_x$ are null for the form: $Q_{e_t+\vec e_x}(e_t) = Q_{e_t+\vec e_x}(\vec e_x) = 0$.
+For $g = e_t$ the form is $\omega$ itself, $Q_{e_t}(\tilde q) = q_t^2-q_x^2-q_y^2-q_z^2$, and the Gram matrix is $\eta$. For $g = \vec e_k$ the form is $\omega$ with the scalar coordinate exchanged with $q_k$: for $g=\vec e_x$ one has $Q_{\vec e_x}(\tilde q) = -q_t^2+q_x^2-q_y^2-q_z^2$. For $g = e_t+\vec e_x$ the matrix has $s=0$, and the vectors $e_t$ and $\vec e_x$ are null for the form: $Q_{e_t+\vec e_x}(e_t) = Q_{e_t+\vec e_x}(\vec e_x) = 0$.
 
 ## Non-Degeneracy, Signature and Determinant
 
@@ -224,7 +224,7 @@ where $\mathcal{C} = \{\tilde q : q_t^2 = |\vec q|^2\}$ is the null cone of $\om
 
 *Proof.* The cone is the inverse image under the linear isomorphism $L_g$ of the cone of a non-degenerate form, so it is a cone and it is non-degenerate in the sense that its defining form is. The only zero divisor of $\mathbb{H}$ is $0$, by the invertibility of the nonzero elements in *Quaternion Norm and Invertibility*, whereas $\mathcal{C}_g$ contains a three-dimensional family of nonzero elements; the two sets are therefore different, and the null cone is a purely form-theoretic object.
 
-The cone of $\omega$ is the set on which the interval $t^2-\vec q\cdot\vec q$ vanishes, that is the set the source calls the light cone; the subfamilies on which $Q_g$ is respectively positive, zero and negative are the timelike, null and spacelike classes of the form, and they are transported by $L_g$ from those of $\omega$.
+The cone of $\omega$ is the set on which the interval $t^2-\vec q\cdot\vec q$ vanishes, that is the set the source calls the null cone; the subfamilies on which $Q_g$ is respectively positive, zero and negative are the timelike, null and spacelike classes of the form, and they are transported by $L_g$ from those of $\omega$.
 
 ## Comparison with the Norm and with the Sibling Forms
 

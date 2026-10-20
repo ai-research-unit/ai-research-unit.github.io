@@ -201,7 +201,7 @@ $$
 
 a formula involving only the data on the *sphere* of radius $ct$, which is Huygens' principle: in three dimensions a disturbance is transmitted as a sharp wave front and leaves no tail. In two dimensions the corresponding formula integrates over the *disc*, so a tail remains; the dimension is visible in the solution.
 
-*Proof.* Quoted as standard (the Kirchhoff and Poisson formulas). The sphere appears because $n=3$ is odd and the fundamental solution of the wave operator is a distribution supported on the light cone; the disc appears for the descent to $n=2$ by the method of descent, in which the data are extended independently of a third coordinate.
+*Proof.* Quoted as standard (the Kirchhoff and Poisson formulas). The sphere appears because $n=3$ is odd and the fundamental solution of the wave operator is a distribution supported on the null cone; the disc appears for the descent to $n=2$ by the method of descent, in which the data are extended independently of a third coordinate.
 
 ## Well-Posedness and Separation of Variables
 

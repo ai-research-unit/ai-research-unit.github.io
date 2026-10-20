@@ -151,9 +151,9 @@ with equality exactly for the modulated Gaussians $f(x) = c\exp(-ax^2+ibx)$; the
 
 **Proof.** Integrating the identity $\int_{\mathbb{R}}(x\lvert f\rvert^2)' = 0$, which holds because $x\lvert f\rvert^2$ vanishes at both ends, gives
 $$
-\lVert f\rVert_2^2 = -2\operatorname{Re}\int xf(x)\overline{f'(x)}\,dx \leq 2\lVert xf\rVert_2\lVert f'\rVert_2 ,
+\lVert f\rVert_2^2 = -2\operatorname{Re}\int xf(x)\overline{\frac{df}{dx}}\,dx \leq 2\lVert xf\rVert_2\lVert \frac{df}{dx}\rVert_2 ,
 $$
-and $\lVert f'\rVert_2 = 2\pi\lVert\xi\mathcal F f\rVert_2$ by Plancherel and the differentiation identity; the equality case is the equality case of Cauchy–Schwarz. For the Gaussian the two norms are computed directly and the product is $\lVert f\rVert_2^2/(4\pi)$ for every $a>0$, which has been checked by numerical quadrature for several values of $a$.
+and $\lVert \frac{df}{dx}\rVert_2 = 2\pi\lVert\xi\mathcal F f\rVert_2$ by Plancherel and the differentiation identity; the equality case is the equality case of Cauchy–Schwarz. For the Gaussian the two norms are computed directly and the product is $\lVert f\rVert_2^2/(4\pi)$ for every $a>0$, which has been checked by numerical quadrature for several values of $a$.
 
 **Theorem (Hardy; Benedicks).** If $\lvert f(x)\rvert\leq C\exp(-\pi ax^2)$ and $\lvert(\mathcal F f)(\xi)\rvert\leq C\exp(-\pi b\xi^2)$ with $ab\geq1$, then $f = 0$ unless $ab = 1$, in which case $f$ is a constant multiple of $\exp(-\pi ax^2)$. If $f\in L^2(\mathbb{R})$ is supported on a set of finite measure and $\mathcal F f$ is supported on a set of finite measure, then $f = 0$ almost everywhere.
 

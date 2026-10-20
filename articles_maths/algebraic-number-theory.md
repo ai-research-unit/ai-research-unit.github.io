@@ -23,7 +23,7 @@ $$
 and the two expressions agree. If $K = \mathbb{Q}(\alpha)$ with $f \in \mathbb{Q}[x]$ the minimal polynomial of $\alpha$, then
 
 $$
-\operatorname{disc}(1, \alpha, \ldots, \alpha^{n-1}) = (-1)^{n(n-1)/2}\operatorname{N}_{K/\mathbb{Q}}(f'(\alpha)) = \operatorname{disc}(f) .
+\operatorname{disc}(1, \alpha, \ldots, \alpha^{n-1}) = (-1)^{n(n-1)/2}\operatorname{N}_{K/\mathbb{Q}}(\frac{df}{dx}(\alpha)) = \operatorname{disc}(f) .
 $$
 
 **Proof.** The second displayed identity is the standard relation between the discriminant of a basis of powers and the discriminant of the minimal polynomial, obtained by evaluating the Vandermonde determinant; the first is the definition of the discriminant as a square of a determinant.

@@ -158,11 +158,11 @@ is nonnegative at every point of $\mathbb{R}^2$: by the inequality of arithmetic
 
 ### Counting Real Roots
 
-**Theorem (Sturm's theorem).** Let $K$ be an ordered field, $f \in K[x]$ a polynomial with no multiple roots, and let $f_0 = f, f_1 = f'$ and $f_{i+1} = -\operatorname{rem}(f_{i-1},f_i)$ be the Sturm sequence, terminating at $f_k$. Then for $a < b$ the number of roots of $f$ in the interval $[a,b]$ is the difference $V(a)-V(b)$, where $V(c)$ is the number of sign changes in the sequence $f_0(c), f_1(c), \ldots, f_k(c)$.
+**Theorem (Sturm's theorem).** Let $K$ be an ordered field, $f \in K[x]$ a polynomial with no multiple roots, and let $f_0 = f, f_1 = \frac{df}{dx}$ and $f_{i+1} = -\operatorname{rem}(f_{i-1},f_i)$ be the Sturm sequence, terminating at $f_k$. Then for $a < b$ the number of roots of $f$ in the interval $[a,b]$ is the difference $V(a)-V(b)$, where $V(c)$ is the number of sign changes in the sequence $f_0(c), f_1(c), \ldots, f_k(c)$.
 
 **Proof sketch.** The sign variations of a Sturm sequence change by exactly the number of roots crossed as the variable passes from $a$ to $b$: between consecutive roots the signs are constant, and at a root of $f$ the first two terms have opposite signs for a jump of $1$, while at a root of any other member of the sequence the variation is unchanged.
 
-**Example.** For $f = x^3-3x+1$ over $\mathbb{R}$: $f' = 3x^2-3$, and the Sturm sequence, up to positive factors, is $x^3-3x+1$, $3x^2-3$, $2x-1$, $\frac94$, the last term being a positive constant. Evaluating at $-\infty$ and $+\infty$ gives variations $3$ and $0$, so $f$ has three real roots; this agrees with the discriminant $81 > 0$ and with the fact that the Galois group is $\mathbb{Z}/3$ and the splitting field is a real field, as in *The Inverse Galois Problem*. By contrast $x^3-3x+2 = (x-1)^2(x+2)$ has a multiple root, and the Sturm sequence must be applied to $f/\gcd(f,f')$.
+**Example.** For $f = x^3-3x+1$ over $\mathbb{R}$: $\frac{df}{dx} = 3x^2-3$, and the Sturm sequence, up to positive factors, is $x^3-3x+1$, $3x^2-3$, $2x-1$, $\frac94$, the last term being a positive constant. Evaluating at $-\infty$ and $+\infty$ gives variations $3$ and $0$, so $f$ has three real roots; this agrees with the discriminant $81 > 0$ and with the fact that the Galois group is $\mathbb{Z}/3$ and the splitting field is a real field, as in *The Inverse Galois Problem*. By contrast $x^3-3x+2 = (x-1)^2(x+2)$ has a multiple root, and the Sturm sequence must be applied to $f/\gcd(f,\frac{df}{dx})$.
 
 ---
 

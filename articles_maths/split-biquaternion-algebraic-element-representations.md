@@ -58,7 +58,7 @@ $$
 Q^0 = Q_t, \qquad (Q^1, Q^2, Q^3) = (Q_x, Q_y, Q_z).
 $$
 
-The split scalar part of the split biquaternion becomes the time component of the four-vector; the split vector part becomes the spatial components. This is the most direct representation.
+The split scalar part of the split biquaternion becomes the scalar component of the four-vector; the split vector part becomes the vector components. This is the most direct representation.
 
 ### Multiplication in Four-Vector Form
 
@@ -72,11 +72,11 @@ $$
 (\tilde{Q}_1 \bullet \tilde{Q}_2)^i = Q_1^0 Q_2^i + Q_2^0 Q_1^i + \sum_{j,k=1}^{3} \epsilon^{i j k} Q_1^j Q_2^k, \qquad i = 1, 2, 3,
 $$
 
-where $\epsilon^{i j k}$ is the Levi-Civita symbol on the spatial indices $1, 2, 3$. The time component of the product is the scalar part; the spatial components are the vector part. This is the four-vector expression of the quaternion product formula.
+where $\epsilon^{i j k}$ is the Levi-Civita symbol on the vector indices $1, 2, 3$. The scalar component of the product is the scalar part; the remaining components are the vector part. This is the four-vector expression of the quaternion product formula.
 
 ### Conjugation in Four-Vector Form
 
-Quaternion conjugation negates the spatial components:
+Quaternion conjugation negates the vector components:
 
 $$
 (Q^{\natural})^\mu = (Q^0, -Q^1, -Q^2, -Q^3).
@@ -100,8 +100,8 @@ The four fixed-point subspaces have a simple characterization in the four-vector
 
 - **Split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$:** four-vectors of the form $Q^\mu = (Q^0, 0, 0, 0)$ with $Q^0 \in \mathbb{D}$.
 - **Quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$:** four-vectors with real components, $Q^\mu \in \mathbb{R}^4$.
-- **Hermitian subspace $\mathbb{M}_+$:** four-vectors of the form $Q^\mu = (q_t, j q'_x, j q'_y, j q'_z)$ with $q_t, q'_x, q'_y, q'_z \in \mathbb{R}$. Real time component, purely split-imaginary spatial components.
-- **Anti-Hermitian subspace $\mathbb{M}_-$:** four-vectors of the form $Q^\mu = (j q'_t, q_x, q_y, q_z)$ with $q'_t, q_x, q_y, q_z \in \mathbb{R}$. Purely split-imaginary time component, real spatial components.
+- **Hermitian subspace $\mathbb{M}_+$:** four-vectors of the form $Q^\mu = (q_t, j q'_x, j q'_y, j q'_z)$ with $q_t, q'_x, q'_y, q'_z \in \mathbb{R}$. Real scalar component, purely split-imaginary vector components.
+- **Anti-Hermitian subspace $\mathbb{M}_-$:** four-vectors of the form $Q^\mu = (j q'_t, q_x, q_y, q_z)$ with $q'_t, q_x, q_y, q_z \in \mathbb{R}$. Purely split-imaginary scalar component, real vector components.
 
 ### The Split-Biquaternion Norm in Four-Vector Form
 

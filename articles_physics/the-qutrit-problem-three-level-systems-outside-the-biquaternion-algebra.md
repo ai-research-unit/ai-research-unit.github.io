@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is the algebra of a two-state system. Its defining module is two-dimensional, its observables are the Hermitian elements of $\mathbb{B}$, its states are the positive trace-one elements of $\mathbb{M}_+$, and its state space is the Bloch ball, the trace-one slice of the future light cone of the biquaternion norm. Every one of these statements rests on the same number: the module has two levels.
+The biquaternion algebra is the algebra of a two-state system. Its defining module is two-dimensional, its observables are the Hermitian elements of $\mathbb{B}$, its states are the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), and its state space is the Bloch ball, the state slice of the future light cone of the biquaternion norm. Every one of these statements rests on the same number: the module has two levels.
 
 Three-level systems are the next step, and they are physically unavoidable: a spin-one atom, a qutrit, a three-level ladder, the internal states of a nitrogen-vacancy centre. The question this article addresses is whether the biquaternion algebra can describe them, and if not, exactly where the obstruction lies. The answer has two halves, and both are useful.
 

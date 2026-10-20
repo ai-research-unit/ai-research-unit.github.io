@@ -148,8 +148,8 @@ the relative entropy of the trace state from $\tilde{Ϛ}_2$, which is finite for
 $$
 S\big(\tilde\Pi(\vec u_r)\big\|\tilde{Ϛ}_2\big)
 =-\tfrac12\log\frac{1-|\vec s|^2}{4}
--\mathrm{artanh}\big(|\vec s|\big)\cos\gamma',
-\qquad \cos\gamma'=\vec u_r\cdot\vec u_s,
+-\mathrm{artanh}\big(|\vec s|\big)\cos\gamma_{rs},
+\qquad \cos\gamma_{rs}=\vec u_r\cdot\vec u_s,
 $$
 which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\vec u_r)\log\tilde{Ϛ}_2)$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
 
@@ -251,7 +251,7 @@ S(\tilde{Ϛ}_1\|\tilde{Ϛ}_2)
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
 +|\vec r|\Big(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec s|\,\cos\gamma\Big),
 $$
-verified against the explicit matrix computation on generic superpositions and non-negative throughout the Bloch ball. The quantity is asymmetric, reduces to $-\tfrac12\log(1-|\vec s|^2)$ when the first argument is the trace state, tends to $-\tfrac12\log\frac{1-|\vec s|^2}{4}-\mathrm{artanh}(|\vec s|)\cos\gamma'$ when the first state becomes pure, and has the Kubo–Mori–Bogoliubov metric as its second-order expansion near coincidence.
+verified against the explicit matrix computation on generic superpositions and non-negative throughout the Bloch ball. The quantity is asymmetric, reduces to $-\tfrac12\log(1-|\vec s|^2)$ when the first argument is the trace state, tends to $-\tfrac12\log\frac{1-|\vec s|^2}{4}-\mathrm{artanh}(|\vec s|)\cos\gamma_{rs}$ when the first state becomes pure, and has the Kubo–Mori–Bogoliubov metric as its second-order expansion near coincidence.
 
 The framework-specific feature is the boundary. The logarithm is an element of $\mathbb{B}$ exactly on the faithful states; on the pure boundary the state is a zero divisor and $\log\tilde{Ϛ}$ is not an algebra element, while the relative entropy itself remains finite and continuous. Araki's relative modular operator, whose $(\omega,\omega)$ case is the modular operator of the Tomita–Takesaki companions, is the algebra-level object of which the boxed formula is the finite-dimensional value.
 
@@ -263,7 +263,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ | State of $\mathbb{B}$; Bloch vector $\vec r$ |
 | $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of the state |

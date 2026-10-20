@@ -1,22 +1,24 @@
-# __The Bloch Ball as the Trace-One Slice of the Future Light Cone__
+# __The Bloch Ball as the Normalised Slice of the Future Light Cone__
 
 ## Introduction
 
-The companion articles established that the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries the operator algebra of a two-state quantum system. Its Hermitian elements are the observables, its positive trace-one elements are the states, and for a state $\tilde{Ϛ}$ and an observable $\tilde H$ the trace formula
+The companion articles established that the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries the operator algebra of a two-state quantum system. Its Hermitian elements are the observables, its positive elements normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$ are the states, and for a state $\tilde{Ϛ}$ and an observable $\tilde H$ the normalised plain form $\langle\tilde{Ϛ},\tilde H\rangle/\langle\tilde{Ϛ},e_t\rangle$, read as the trace formula
 
 $$
 \mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle
 $$
 
-is the Born rule. This article is about the **geometry** of that state space. Its subject is one structural fact, developed in full:
+in the $2\times2$ image, is the Born rule. This article is about the **geometry** of that state space. Its subject is one structural fact, developed in full:
 
 > The state space of a qubit — the Bloch ball — is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ in $\mathbb{M}_+$ with the future light cone of the biquaternion norm $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural}$.
 
-In the standard formalism the Bloch ball is assembled state by state: one takes the set of positive trace-one operators on a two-dimensional Hilbert space and derives the condition $|\vec r| \leq 1$ from the positivity of a $2 \times 2$ matrix. In the biquaternion framework the same object appears as a **slice of a cone by a hyperplane**. The three conditions that look independent in the matrix formalism — Hermitian, positive, trace one — become, in the algebra, membership in $\mathbb{M}_+$, a trace normalization, and a single quadratic inequality that is the causal condition of a Lorentzian form. Purity becomes a boundary condition; mixedness becomes the interior of the ball; and the zero divisors of the algebra at trace one, which elsewhere in the series describe light-like propagation, here describe the pure states.
+In the standard formalism the Bloch ball is assembled state by state: one takes the set of positive trace-one operators on a two-dimensional Hilbert space and derives the condition $|\vec r| \leq 1$ from the positivity of a $2 \times 2$ matrix. In the biquaternion framework the same object appears as a **slice of a cone by a hyperplane**. The three conditions that look independent in the matrix formalism — Hermitian, positive, trace one — become, in the algebra, membership in $\mathbb{M}_+$, a normalisation, and a single quadratic inequality that is the causal condition of a Lorentzian form. Purity becomes a boundary condition; mixedness becomes the interior of the ball; and the zero divisors of the algebra at trace one, which elsewhere in the series describe light-like propagation, here describe the pure states.
+
+**A note on the name.** The normalisation is intrinsic to the algebra: $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$, with $\langle e_t\rangle=1$. "Trace one" is the name this condition takes in the $2\times2$ matrix reading, where $\mathrm{Tr}=2\,\mathrm{Sc}$. A general biquaternion has no trace until a matrix representation is fixed; the trace of a representing matrix scales with the representation, while $\mathrm{Tr}(\tilde Q)/\mathrm{Tr}(e_t)=\mathrm{Sc}(\tilde Q)$ does not. The hyperplane is therefore $\{\mathrm{Sc}=\tfrac12\}$ in the algebra; this article calls it the **normalised hyperplane**, and records that in the $2\times2$ image it is the trace-one hyperplane, where $\mathrm{Tr}=2\,\mathrm{Sc}$.
 
 The article is organized as follows. First the Hermitian subspace, its trace, and its biquaternion norm are recalled, together with the light cone and the zero divisors. Then the trace-one hyperplane is described and coordinatized by the Bloch vector. Then the Bloch ball is obtained as the slice of the future cone by that hyperplane, and the positivity of a state is identified with its causality. Then the pure states are characterized as the boundary of the ball — idempotents, extreme rays, and zero divisors at trace one — and the mixed states as its interior. Then purity, the Bloch radius, entropy, and fidelity are expressed in these terms. The article closes with the symmetries of the slice, with the mirror interpretation that places the ball against the material sector and its light cone and separates the two actor groups that the one action admits, with what the picture shows, and with open questions.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The four fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre of $\mathbb{B}$), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), and the two complementary four-dimensional subspaces $\mathbb{M}_+$ (Hermitian) and $\mathbb{M}_-$ (anti-Hermitian), with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The four fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre of $\mathbb{B}$), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), and the two complementary four-dimensional subspaces $\mathbb{M}_+$ (Hermitian) and $\mathbb{M}_-$ (anti-Hermitian), with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The plain form is $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\langle e_t\rangle=1$; the trace is its $2\times2$ reading, $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)=2\langle\tilde Q,e_t\rangle$.
 
 ## The Hermitian Subspace and the Biquaternion Norm
 
@@ -34,7 +36,7 @@ $$
 \{e_t,\; i \vec e_x,\; i \vec e_y,\; i \vec e_z\},
 $$
 
-so that $\mathbb{M}_+$ is a four-dimensional real vector space; it is the fixed-point set of the Hermitian conjugation ${}^{*}$. Its **trace** is twice the scalar part:
+so that $\mathbb{M}_+$ is a four-dimensional real vector space; it is the fixed-point set of the Hermitian conjugation ${}^{*}$. Its **normalisation** is the scalar part, $\mathrm{Sc}(\tilde H)=h_t$; its **trace** in the $2\times2$ reading is twice that,
 
 $$
 \mathrm{Tr}(\tilde{H}) = 2 h_t .
@@ -50,13 +52,13 @@ $$
 
 a real-valued quadratic form on $\mathbb{M}_+$, of **signature $(1,3)$**: the scalar direction $e_t$ is positive, the three imaginary directions $i \vec e_x, i \vec e_y, i \vec e_z$ are negative. This is the mirror image of the signature $(3,1)$ that the same biquaternion norm carries on the anti-Hermitian subspace $\mathbb{M}_-$.
 
-The biquaternion norm is not the trace pairing. For $\tilde H_1,\tilde H_2\in\mathbb{M}_+$, the trace pairing
+The biquaternion norm is not the plain form. For $\tilde H_1,\tilde H_2\in\mathbb{M}_+$, the plain form
 
 $$
-\mathrm{Tr}(\tilde{H}_1\tilde{H}_2) = 2\bigl(h_{1t} h_{2t} + \vec h_1\cdot\vec h_2\bigr)
+\langle\tilde{H}_1,\tilde{H}_2\rangle = h_{1t} h_{2t} + \vec h_1\cdot\vec h_2
 $$
 
-is positive-definite, of signature $(4,0)$; it is the analogue of the Hilbert–Schmidt inner product. The biquaternion norm and the trace pairing are distinct quadratic structures on the same four-dimensional space, and keeping them apart is essential: positivity of a state is a condition on the biquaternion norm, while the Born rule is a condition on the trace pairing.
+is positive-definite, of signature $(4,0)$; its $2\times2$ reading is the trace pairing $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2) = 2\langle\tilde{H}_1,\tilde{H}_2\rangle$, the analogue of the Hilbert–Schmidt inner product. The biquaternion norm and the plain form are distinct quadratic structures on the same four-dimensional space, and keeping them apart is essential: positivity of a state is a condition on the biquaternion norm, while the Born weight is a condition on the normalised plain form, read as the trace pairing.
 
 ### The Light Cone and the Zero Divisors
 
@@ -90,9 +92,9 @@ The right-hand side is exactly the statement that $\tilde{H}$ lies in the closed
 
 This is why the qubit state space is a canonical object of the algebra rather than a postulated set: one starts with a quadratic form that the algebra supplies, and one reads off a cone; positivity and causality are then two names for the same condition. Note also that the positive cone is exactly the set of squares of Hermitian elements: every $\tilde{H} \geq 0$ has a Hermitian square root $\sqrt{\tilde{H}} \in \mathbb{M}_+$, and conversely $A^2 = AA^{*} \geq 0$ for Hermitian $A$.
 
-## The Trace-One Hyperplane
+## The Normalised Hyperplane
 
-The **trace-one hyperplane** is the affine hyperplane
+The **normalised hyperplane** — the trace-one hyperplane of the $2\times2$ image — is the affine hyperplane
 
 $$
 \mathcal{S} = \bigl\{\tilde{H} \in \mathbb{M}_+ : \mathrm{Sc}(\tilde{H}) = \tfrac{1}{2}\bigr\} = \bigl\{\tilde{H} \in \mathbb{M}_+ : \mathrm{Tr}(\tilde{H}) = 1\bigr\},
@@ -112,7 +114,7 @@ $$
 \tilde{Ϛ} = \tfrac{1}{2}\bigl(e_t + i\,\vec r\bigr), \qquad \vec r = (r_1, r_2, r_3) \in \mathbb{R}^3 ,
 $$
 
-where $\vec r = 2\vec h$. The map $\vec r \mapsto \tilde{Ϛ}$ is an affine isomorphism $\mathbb{R}^3 \to \mathcal{S}$, and $\vec r$ is the **Bloch vector**. In this parametrization the trace pairing on the slice reads
+where $\vec r = 2\vec h$. The map $\vec r \mapsto \tilde{Ϛ}$ is an affine isomorphism $\mathbb{R}^3 \to \mathcal{S}$, and $\vec r$ is the **Bloch vector**. In this parametrization the trace pairing (the $2\times2$ reading of the plain form) on the slice reads
 
 $$
 \mathrm{Tr}(\tilde{Ϛ}_1\tilde{Ϛ}_2) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr) \qquad \text{for } \tilde{Ϛ}_1 = \tfrac{1}{2}(e_t + i\vec r),\ \tilde{Ϛ}_2 = \tfrac{1}{2}(e_t + i\vec s),
@@ -120,7 +122,7 @@ $$
 
 so the Hilbert–Schmidt geometry of the slice is the Euclidean geometry of $\mathbb{R}^3$, up to the additive constant and the factor inherited from the trace.
 
-## The Bloch Ball as the Trace-One Slice of the Future Cone
+## The Bloch Ball as the Normalised Slice of the Future Cone
 
 ### The Slice Lemma
 
@@ -156,7 +158,7 @@ $$
 
 so the biquaternion norm is exactly the product of the two eigenvalues. Because $h_t = \tfrac{1}{2} > 0$ forces $\lambda_+ = h_t + |\vec h| > 0$, the sign of $\langle\cdot\rangle_{\natural}$ determines the sign of the remaining eigenvalue: $\langle\tilde{Ϛ}\rangle_{\natural} \geq 0$ if and only if $\tilde{Ϛ} \geq 0$. Thus, restricted to the trace-one hyperplane, the Proposition of the previous section specializes to a clean statement.
 
-**The state space.** The states of a qubit — the positive, trace-one elements of $\mathbb{M}_+$ — are exactly the elements of the trace-one hyperplane that lie in the closed future light cone:
+**The state space.** The states of a qubit — the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) — are exactly the elements of that hyperplane that lie in the closed future light cone:
 
 $$
 \tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r), \qquad |\vec r| \leq 1 .
@@ -211,13 +213,13 @@ This is the sense in which "the pure states are the zero divisors at trace one":
 
 **Extreme rays.** The positive cone is generated by its extreme rays, and these are the rank-one projections. Equivalently, the pure states are the extreme points of the Bloch ball: every state in the interior of the ball is a nontrivial convex combination of boundary points, while no boundary point is a convex combination of two other states.
 
-The transition probability between two pure states is the trace pairing,
+The transition probability between two pure states is the normalised plain form, read as the trace pairing,
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec v)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u\cdot\vec v\bigr) = \cos^2\frac{\theta}{2},
 $$
 
-where $\theta$ is the angle between $\vec u$ and $\vec v$. It equals $1$ for $\vec u = \vec v$ and $0$ for $\vec u = -\vec v$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the trace pairing is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.
+where $\theta$ is the angle between $\vec u$ and $\vec v$. It equals $1$ for $\vec u = \vec v$ and $0$ for $\vec u = -\vec v$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the plain form is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.
 
 ## Mixed States: The Interior of the Ball
 
@@ -281,7 +283,7 @@ $$
 
 which vanishes on the boundary and is maximal, equal to $\tfrac{1}{2}$, at the centre. The last equality is worth emphasis: **the biquaternion norm is, up to the factor $2$, the linear entropy on the trace-one hyperplane.** The quadratic form whose cone cuts out the state space is the same form that measures how mixed a state is. The reason mixedness has a biquaternion-norm expression is that both are governed by the same quantity $\lambda_+ \lambda_- = \langle\tilde{Ϛ}\rangle_{\natural}$.
 
-Finally, the Euclidean geometry of the slice gives the trace pairing a direct metrical meaning on states. The squared Hilbert–Schmidt distance between $\tilde{Ϛ}_1$ and $\tilde{Ϛ}_2$ is
+Finally, the Euclidean geometry of the slice gives the plain form, read as the trace pairing, a direct metrical meaning on states. The squared Hilbert–Schmidt distance between $\tilde{Ϛ}_1$ and $\tilde{Ϛ}_2$ is
 
 $$
 \mathrm{Tr}\bigl((\tilde{Ϛ}_1 - \tilde{Ϛ}_2)^2\bigr) = \tfrac{1}{2}|\vec r - \vec s|^2 ,
@@ -323,7 +325,7 @@ Because the logarithm is the spectral logarithm on the positive cone, the trace 
 
 ## Fidelity and Transition Probability
 
-For two pure states, the **transition probability** is the trace pairing computed above,
+For two pure states, the **transition probability** is the normalised plain form, read as the trace pairing, computed above,
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi(\vec u)\tilde\Pi(\vec v)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u\cdot\vec v\bigr) = \cos^2\frac{\theta}{2},
@@ -583,7 +585,7 @@ The ball has a mirror interpretation in the material sector. The map $\tilde{H} 
 | $\tilde{H} = h_t e_t + i\vec h$ | General Hermitian element |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_t$ | Trace |
 | $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_t^2 - |\vec h|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
-| $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2) = 2(h_{1t} h_{2t} + \vec h_1\cdot\vec h_2)$ | Trace pairing, signature $(4,0)$ |
+| $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2) = 2(h_{1t} h_{2t} + \vec h_1\cdot\vec h_2)$ | Trace reading of the plain form, signature $(4,0)$ |
 | $\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$ | Trace-one hyperplane |
 | $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ | State, Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state), $|\vec u| = 1$ |

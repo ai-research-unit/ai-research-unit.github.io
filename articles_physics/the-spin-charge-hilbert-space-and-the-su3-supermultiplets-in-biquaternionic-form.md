@@ -125,7 +125,7 @@ A second structural point concerns the representation of the symmetry group. A p
 Because only rays are physical, the multiplication law of symmetry operators is a **ray (projective) representation**,
 
 $$
-T_{gg'} = \omega(g,g')\,T_g\,T_{g'}, \qquad \omega(g,g')\in \mathrm{U}(1),
+T_{gh} = \omega(g,h)\,T_g\,T_h, \qquad \omega(g,h)\in \mathrm{U}(1),
 $$
 
 and when $\omega\ne1$ the ordinary theory of group representations does not apply. The remedy is the **central extension**: the group $G$ is enlarged to $E$ whose ordinary representations reproduce all the ray representations of $G$, and a symmetry group of the physical system is represented by the unitary or antiunitary maps of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ that lift the ray representation. The internal symmetry groups $\mathrm{SU}(2),\mathrm{SU}(3),\dots$ act in this way, and the supermultiplet structure of the eightfold way is the orbit structure of their action.
@@ -185,7 +185,7 @@ The framework's relation to this is a relation of one factor. The spin factor is
 | $\mathrm{Sym}^{(k,r)}$, degree $(k+1)(r+1)$ | Symmetric representation space of $\tau^{l\bar l}$, $k=2l$, $r=2\bar l$ |
 | $\mathrm{Cl}_{n,m}$, $S_{(n+m)/2}$ | Associated Clifford algebra and spin space |
 | $Ϙ=+1,0,\bar0$ | Charged, neutral, truly neutral charge states |
-| $T_{gg'}=\omega(g,g')T_gT_{g'}$ | Ray (projective) representation of the symmetry group |
+| $T_{gh}=\omega(g,h)T_gT_h$ | Ray (projective) representation of the symmetry group |
 | $E=\{(\omega,x)\}$ | Central extension whose representations lift the ray representations |
 | Coherent subspace | Maximal domain of allowed superposition under superselection |
 

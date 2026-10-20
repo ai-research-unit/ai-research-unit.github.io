@@ -15,15 +15,15 @@ The conventions are the series conventions. The Clifford generators satisfy $\{\
 The object the path integral must compute is the Feynman propagator for the spin-$\tfrac12$ field,
 
 $$
-S_F(x-x') = \int\frac{d^4p}{(2\pi)^4}\,
+S_F(x-x_2) = \int\frac{d^4p}{(2\pi)^4}\,
 \frac{i\left(\not p + mc/\hbar\right)}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
-\exp(-ip\cdot(x-x')),
+\exp(-ip\cdot(x-x_2)),
 $$
 
 the matrix-valued Green's function satisfying
 
 $$
-\left(i\not\partial - \frac{mc}{\hbar}\right)S_F(x-x') = i\,\delta^{(4)}(x-x').
+\left(i\not\partial - \frac{mc}{\hbar}\right)S_F(x-x_2) = i\,\delta^{(4)}(x-x_2).
 $$
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
@@ -31,9 +31,9 @@ This is standard relativistic quantum physics (see the Further Reading); the com
 **The propagator is the scalar kernel acted on by the first-order operator.** Write
 
 $$
-\Delta_F(x-x') = \int\frac{d^4p}{(2\pi)^4}\,
+\Delta_F(x-x_2) = \int\frac{d^4p}{(2\pi)^4}\,
 \frac{1}{p^2 - m^2c^2/\hbar^2 + i\epsilon}\,
-\exp(-ip\cdot(x-x')),
+\exp(-ip\cdot(x-x_2)),
 $$
 
 for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. Then, formally,
@@ -60,16 +60,16 @@ $$
 = \int_0^\infty dT\,\exp(\,iT\left(p^2 - m^2c^2/\hbar^2 + i\epsilon\right)),
 $$
 
-the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x'|\exp(\,iT(\Box - m^2c^2/\hbar^2))|x\rangle$, and that kernel is a sum over worldlines,
+the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(\,iT(\Box - m^2c^2/\hbar^2))|x\rangle$, and that kernel is a sum over worldlines,
 
 $$
-G_F(x,x') = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x'}\mathcal{D}x(\tau)\;
+G_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
 \exp(\,iS_0[x]),
 \qquad
 S_0[x] = \int_0^T d\tau\left(\frac{1}{4}dx^{\mu}/d\tau \,dx_{\mu}/d\tau - m^2c^2/\hbar^2\right),
 $$
 
-up to the standard normalisation of the measure and the einbein gauge choice. The tangent is contracted with the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ — the $ict$-coordinate metric of the conventions article, read here on the real-time components $(x^0,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — so that for a straight worldline $dx^{\mu}/d\tau \,dx_{\mu}/d\tau = -(x-x')^2/T^2$ and the phase reduces to $\exp\left(-i\left[\frac{(x-x')^2}{4T}+\mu^2T\right]\right)$, with $(x-x')^2 = (x^0-x'^0)^2-|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)|^2$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then the operator $(i\not\partial + mc/\hbar)$ applied to $G_F$, with the appropriate $i$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent $d\tilde{Q}/d\tau$ is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
+up to the standard normalisation of the measure and the einbein gauge choice. The tangent is contracted with the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ — the $ict$-coordinate metric of the conventions article, read here on the real-time components $(x^0,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — so that for a straight worldline $dx^{\mu}/d\tau \,dx_{\mu}/d\tau = -(x-x_2)^2/T^2$ and the phase reduces to $\exp\left(-i\left[\frac{(x-x_2)^2}{4T}+\mu^2T\right]\right)$, with $(x-x_2)^2 = (x^0-x_2^0)^2-|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^2$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then the operator $(i\not\partial + mc/\hbar)$ applied to $G_F$, with the appropriate $i$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent $d\tilde{Q}/d\tau$ is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
 
 The deficiency of this representation is that the spin is nowhere to be seen until the differential operator is applied at the end. The second resolution supplies the spin directly.
 
@@ -78,23 +78,23 @@ The deficiency of this representation is that the spin is nowhere to be seen unt
 It is worth evaluating the scalar worldline kernel in the free case, because the calculation is the whole content of the proper-time method and fixes the sense in which a first-order object is a square root. The proper-time kernel is the Fourier transform
 
 $$
-G_F(x,x') = \int_0^\infty dT\int\frac{d^4p}{(2\pi)^4}\,
-\exp(\,iT\left(p^2 - \mu^2 + i\epsilon\right))\,\exp(-ip\cdot(x-x')),
+G_F(x,x_2) = \int_0^\infty dT\int\frac{d^4p}{(2\pi)^4}\,
+\exp(\,iT\left(p^2 - \mu^2 + i\epsilon\right))\,\exp(-ip\cdot(x-x_2)),
 \qquad \mu = \frac{mc}{\hbar},
 $$
 
 where the $i\epsilon$ prescription makes the $T$-integral converge at large $T$. The $p$-integral is a Gaussian: completing the square in each of the four components gives the standard free kernel
 
 $$
-G_F(x,x') = \int_0^\infty dT\;\mathcal{N}(T)\;
-\exp\left(-i\left[\frac{(x-x')^2}{4T} + \mu^2 T\right]\right),
+G_F(x,x_2) = \int_0^\infty dT\;\mathcal{N}(T)\;
+\exp\left(-i\left[\frac{(x-x_2)^2}{4T} + \mu^2 T\right]\right),
 \qquad
-(x-x')^2 = (x^0-x'^0)^2 - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)|^2,
+(x-x_2)^2 = (x^0-x_2^0)^2 - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^2,
 $$
 
 with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$ whose precise constant depends on the measure convention and is not needed below. Three features of this expression carry the physics.
 
-- The **proper time $T$ is the Schwinger parameter**, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x')^2}{4T}$ being the kinetic term and $\mu^2T$ the mass term; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
+- The **proper time $T$ is the Schwinger parameter**, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\mu^2T$ the mass term; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
 - The **mass is a constant in the exponent**. There is no spin and no matrix structure: $G_F$ is a scalar, and it obeys $(\Box - \mu^2)G_F = i\delta^{(4)}$ up to the measure convention.
 - The **first-order structure enters only through the differential prefactor**. The Dirac propagator is obtained by applying $(i\not\partial + \mu)$ to $G_F$, which is why the spin is invisible until that operation is performed.
 
@@ -121,7 +121,7 @@ $$
 in the normalisation of the worldline literature — the one in which the spin factor below takes the quoted form — so that the Hilbert space of the odd sector is the spinor representation, of dimension $2^{[4/2]} = 4$ in four dimensions. The path integral over the odd variables, with the boundary conditions appropriate to the propagator (periodic for the fermionic trace, anti-periodic for the matrix element), is a **spin factor** $\Phi[x]$ multiplying the scalar measure:
 
 $$
-K(x,x') = \int_0^\infty dT\int\mathcal{D}x\,\Phi[x]\,\exp(\,iS_0[x]),
+K(x,x_2) = \int_0^\infty dT\int\mathcal{D}x\,\Phi[x]\,\exp(\,iS_0[x]),
 \qquad
 \Phi[x] = \int_{\text{b.c.}}\mathcal{D}\psi\,\exp(\,i\int_0^T \frac{i}{2}\psi^\mu\,d\psi_{\mu}/d\tau\,d\tau).
 $$
@@ -192,7 +192,7 @@ Taylor-expanding and taking $\epsilon \to 0$ with the lattice constraint $|dx/d\
 
 The path integral must satisfy the two defining properties of a propagator, and both are transparent in the biquaternion framework.
 
-**Composition.** The kernel obeys $\int d^4y\,K(x,y)K(y,x')=K(x,x')$, the statement that a sum over paths is a sum over intermediate points. In the worldline picture this is the semigroup property of the proper-time evolution, and it is why the kernel is built from an operator exponential. In the biquaternion algebra the composition is the multiplication of biquaternion-valued amplitudes in the module, with the central phase composing additively; the algebra's non-commutativity means that the order of the intermediate points matters, and the path-ordered spin factor is the price of that non-commutativity.
+**Composition.** The kernel obeys $\int d^4y\,K(x,y)K(y,x_2)=K(x,x_2)$, the statement that a sum over paths is a sum over intermediate points. In the worldline picture this is the semigroup property of the proper-time evolution, and it is why the kernel is built from an operator exponential. In the biquaternion algebra the composition is the multiplication of biquaternion-valued amplitudes in the module, with the central phase composing additively; the algebra's non-commutativity means that the order of the intermediate points matters, and the path-ordered spin factor is the price of that non-commutativity.
 
 **The propagator equation.** The kernel satisfies $(i\not\partial - mc/\hbar)K = i\delta^{(4)}$. In the biquaternion framework this is the statement that the propagator is the Green's function of the first-order pair. Applying the conjugate operator and using the Dirac square $(i\not\partial + \mu)(i\not\partial - \mu) = \Box - \mu^2$ gives
 
@@ -262,8 +262,8 @@ In the biquaternion framework, the odd variable is the generator of the Clifford
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector; the worldline position |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
 | $\not\partial = \gamma^\mu\partial/\partial Q_\mu$ | Slash (first-order Dirac operator) |
-| $S_F(x-x')$ | Dirac (Feynman) propagator |
-| $\Delta_F(x-x')$ | Scalar (Klein–Gordon) Feynman propagator |
+| $S_F(x-x_2)$ | Dirac (Feynman) propagator |
+| $\Delta_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator |
 | $(i\not\partial - mc/\hbar)S_F = i\delta^{(4)}$ | Propagator equation |
 | $(\not p - mc/\hbar)(\not p + mc/\hbar) = p^2 - m^2c^2/\hbar^2$ | Dirac square (momentum space) |
 | $T$ | Proper time (Schwinger parameter) |

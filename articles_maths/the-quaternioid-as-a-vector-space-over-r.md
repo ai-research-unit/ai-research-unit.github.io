@@ -29,7 +29,7 @@ because the product is built from sums and products of the coordinates. With thi
 
 **Proof.** A vanishing real combination $\sum_\mu\lambda_\mu e_\mu$ is the vanishing of the four real numbers $\lambda_\mu$, the units being the four coordinate directions; and every element is by definition a real combination of the four.
 
-Two other coordinate conventions occur in the corpus and are named here only to fix the reading: the **combinations** $e_t\pm \vec e_x$, $e_t\pm \vec e_y$, $e_t\pm \vec e_z$, used in the light-cone and root-of-minus-one computations, and the four half-integer coordinates of the Peirce decomposition. Neither changes the basis of this article. The coordinates always refer to the units $e_t,\dots,\vec e_z$ unless a change of basis is stated; the elements themselves are those of *Quaternion Algebra*.
+Two other coordinate conventions occur in the corpus and are named here only to fix the reading: the **combinations** $e_t\pm \vec e_x$, $e_t\pm \vec e_y$, $e_t\pm \vec e_z$, used in the null-cone and root-of-minus-one computations, and the four half-integer coordinates of the Peirce decomposition. Neither changes the basis of this article. The coordinates always refer to the units $e_t,\dots,\vec e_z$ unless a change of basis is stated; the elements themselves are those of *Quaternion Algebra*.
 
 ## The Real-Linear Endomorphisms
 

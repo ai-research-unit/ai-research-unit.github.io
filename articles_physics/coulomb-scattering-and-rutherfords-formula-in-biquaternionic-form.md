@@ -193,11 +193,11 @@ The classical and quantum expressions were compared numerically at $E=1,2,5$ and
 The first Born amplitude for the same potential is (next section)
 
 $$
-f_B(\theta)=-\frac{2m\alpha}{\hbar^2 \lvert\vec k'-\vec k\rvert^2}
+f_B(\theta)=-\frac{2m\alpha}{\hbar^2 \lvert\vec k_2-\vec k\rvert^2}
 =-\frac{m\alpha}{2\hbar^2k^2\sin^2(\theta/2)}
 =-\frac{\eta}{2k\sin^2(\theta/2)},
 \qquad
-\lvert\vec k'-\vec k\rvert=2k\sin(\theta/2),
+\lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2),
 $$
 
 whose modulus is exactly the modulus of $f_C$. The two amplitudes therefore differ by a **pure phase**:
@@ -215,25 +215,25 @@ This is the sharpest statement of the Coulomb problem's special character: the B
 The first Born amplitude is the Fourier transform of the potential at the momentum transfer,
 
 $$
-f_B(\theta)=-\frac{2m}{\hbar^2}\frac{1}{4\pi}\int d^3r\;\exp(-i(\vec k'-\vec k)\cdot\vec r)\,V(r),
+f_B(\theta)=-\frac{2m}{\hbar^2}\frac{1}{4\pi}\int d^3r\;\exp(-i(\vec k_2-\vec k)\cdot\vec r)\,V(r),
 \qquad
-\lvert\vec k'-\vec k\rvert=2k\sin(\theta/2),
+\lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2),
 $$
 
-where $\lvert\vec k'-\vec k\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,
+where $\lvert\vec k_2-\vec k\rvert$ is the magnitude of the momentum transfer. For the Coulomb potential the transform is the standard Coulomb kernel,
 
 $$
-\int d^3r\;\frac{\exp(-i(\vec k'-\vec k)\cdot\vec r)}{r}=\frac{4\pi}{\lvert\vec k'-\vec k\rvert^2},
+\int d^3r\;\frac{\exp(-i(\vec k_2-\vec k)\cdot\vec r)}{r}=\frac{4\pi}{\lvert\vec k_2-\vec k\rvert^2},
 $$
 
 so
 
 $$
-f_B(\theta)=-\frac{2m}{\hbar^2}\,\frac{\alpha}{\lvert\vec k'-\vec k\rvert^2}
-=-\frac{2m\alpha}{\hbar^2 \lvert\vec k'-\vec k\rvert^2},
+f_B(\theta)=-\frac{2m}{\hbar^2}\,\frac{\alpha}{\lvert\vec k_2-\vec k\rvert^2}
+=-\frac{2m\alpha}{\hbar^2 \lvert\vec k_2-\vec k\rvert^2},
 $$
 
-and squaring with $\lvert\vec k'-\vec k\rvert^2=4k^2\sin^2(\theta/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.
+and squaring with $\lvert\vec k_2-\vec k\rvert^2=4k^2\sin^2(\theta/2)$ gives Rutherford's formula again. The Fourier transform is an integral of a central scalar; in the biquaternion interpretation the amplitude it produces is central, and the momentum transfer is a real quaternion, the difference of two real wave vectors. The Born route and the partial-wave route reach the same cross section, which is the content of the equality just stated.
 
 ### Why the first Born amplitude is already exact in modulus
 
@@ -297,7 +297,7 @@ $$
 f_C(\theta)=-\frac{\eta}{2k\sin^2(\theta/2)}\exp\!\left[-i\eta\ln\sin^2\!\left(\frac{\theta}{2}\right)+2i\sigma_0\right],
 $$
 
-whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^2\lvert\vec k'-\vec k\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.
+whose modulus is Rutherford's formula $d\sigma/d\Omega=(Z_1Z_2e^2)^2/16E^2\sin^4(\theta/2)$. The first Born amplitude $f_B=-2m\alpha/\bigl(\hbar^2\lvert\vec k_2-\vec k\rvert^2\bigr)$ has the same modulus, so the exact and Born amplitudes differ by a pure phase, and the quantum and classical (impact-parameter) cross sections agree to $2\times10^{-16}$ in the numerical comparison at the sampled energies and angles.
 
 The biquaternion content is centrality: the potential couples only to the scalar slot, the amplitude is a central complex scalar, the Coulomb phase and the logarithmic phase are central unitary elements, and the momentum transfer is a real quaternion. The bound states of the same potential are the subject of the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*. The framework supplies the algebraic location of the amplitude and the phases and the continuity between the bound and continuum problems; it does not supply the Coulomb wave functions, the closed-form sum, or Rutherford's formula, and it adds no prediction distinguishing the reformulation from scalar Coulomb scattering.
 
@@ -322,8 +322,8 @@ The biquaternion content is centrality: the potential couples only to the scalar
 | $\sigma_l=\arg\Gamma(l+1+i\eta)$ | Coulomb phase |
 | $f(\theta)=-\frac{1}{2ik}\sum_l(2l+1)(\exp(2i\delta_l)-1)P_l$ | Partial-wave amplitude |
 | $f_C(\theta)$ | Closed-form Coulomb amplitude |
-| $\lvert\vec k'-\vec k\rvert=2k\sin(\theta/2)$ | Momentum transfer |
-| $f_B=-\frac{2m\alpha}{\hbar^2\lvert\vec k'-\vec k\rvert^2}$ | First Born amplitude |
+| $\lvert\vec k_2-\vec k\rvert=2k\sin(\theta/2)$ | Momentum transfer |
+| $f_B=-\frac{2m\alpha}{\hbar^2\lvert\vec k_2-\vec k\rvert^2}$ | First Born amplitude |
 | $\frac{d\sigma}{d\Omega}=\frac{\alpha^2}{16E^2\sin^4(\theta/2)}$ | Rutherford cross section |
 | $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace convention |
 

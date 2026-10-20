@@ -44,7 +44,7 @@ which is the Dirac equation with rest mass $m = \Delta/v_F^2$.
 
 ### The Dirac cone
 
-The two bands meeting linearly at a Dirac point form the upper and lower halves of a **cone**; the six zone corners give six cones, of which two, labelled $K$ and $K'$, are inequivalent and the rest are related by symmetry. The linear dispersion is the experimental signature of Dirac matter: it produces the half-integer quantum Hall sequence
+The two bands meeting linearly at a Dirac point form the upper and lower halves of a **cone**; the six zone corners give six cones, of which two, labelled $K_+$ and $K_-$, are inequivalent and the rest are related by symmetry. The linear dispersion is the experimental signature of Dirac matter: it produces the half-integer quantum Hall sequence
 
 $$
 \sigma_{xy} = \pm 4\left(N + \tfrac12\right)\frac{e^2}{h},
@@ -59,7 +59,7 @@ whose offset $\tfrac12$ is the Berry phase $\pi$ of a massless Dirac fermion win
 Graphene's low-energy spinor carries two internal two-valued labels that are easy to confuse and must be kept apart.
 
 - **Sublattice pseudospin.** The two components of the $\boldsymbol{\sigma}$ in $H = v_F\boldsymbol{\sigma}\cdot\vec p$ are the amplitudes on sublattices $A$ and $B$. It is an orbital isospin; it exists because the cell has two sites. It is not the electron's spin, and rotations of it are not physical rotations of the electron.
-- **Valley isospin.** The label $K$ versus $K'$ distinguishes the two inequivalent cones. It is a momentum-space label, protected at low energy by the large momentum separation of the valleys.
+- **Valley isospin.** The label $K_+$ versus $K_-$ distinguishes the two inequivalent cones. It is a momentum-space label, protected at low energy by the large momentum separation of the valleys.
 
 The physical electron additionally carries its genuine spin, so the full low-energy count is $2_{\mathrm{sublattice}}\times 2_{\mathrm{valley}}\times 2_{\mathrm{spin}} = 8$ complex components.
 
@@ -73,7 +73,7 @@ The arithmetic invites a comparison. A biquaternion field has eight real compone
 
 > The framework can host the sublattice (or valley) pair in a minimal ideal, and it hosts the chirality pair in the two-ideal structure. The identification of the algebra's two ideals with the two valleys, or with the two sublattices, is an **extra input** that the framework does not supply.
 
-This is the article's central caution. A construction that simply renames "left and right" as "$K$ and $K'$" is not a derivation from the framework; the valley structure is a property of the lattice, and the algebra is indifferent to which lattice sits on top of it.
+This is the article's central caution. A construction that simply renames "left and right" as "$K_+$ and $K_-$" is not a derivation from the framework; the valley structure is a property of the lattice, and the algebra is indifferent to which lattice sits on top of it.
 
 ## The Gap and the Framework's Mass
 
@@ -162,7 +162,7 @@ The biquaternion framework transcribes these equations exactly and locates two s
 | $\boldsymbol{\sigma}$ | Pauli matrices acting on sublattice pseudospin |
 | $v_F \approx 10^6$ m/s | Fermi velocity, replacing $c$ in the effective equation |
 | $\gamma_0 \approx 2.8$ eV | Nearest-neighbour hopping of graphene |
-| $K$, $K'$ | The two inequivalent zone corners (valleys) |
+| $K_+$, $K_-$ | The two inequivalent zone corners (valleys) |
 | $g_v = 2$ | Valley degeneracy |
 | $\Delta$ | Sublattice-symmetry-breaking gap parameter, mass $m=\Delta/v_F^2$ |
 | $\mathcal T$, $\mathcal T^2=-1$ | Time-reversal operator and its Kramers sign |

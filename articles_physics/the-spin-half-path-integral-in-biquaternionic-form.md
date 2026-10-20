@@ -27,7 +27,7 @@ The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin algebra and the two-state space.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the geometric phase that the Wess–Zumino term reproduces.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the trace pairing used in the coherent-state overlap.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form used in the coherent-state overlap.
 
 ## The Propagator and Its Path Integral
 
@@ -48,7 +48,7 @@ so that $|\zeta\rangle$ has Bloch vector $\vec u(\zeta)$ and its idempotent is $
 The overlap of two coherent states is
 
 $$
-\langle z'|z\rangle = \frac{1+\bar z' z}{\sqrt{(1+|z'|^2)(1+|z|^2)}},
+\langle z_2|z\rangle = \frac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}},
 $$
 
 and the resolution of the identity on the spin-1/2 Hilbert space is
@@ -199,7 +199,7 @@ which is precisely the stereographic coordinate of the Majorana construction. Th
 
 ### The Biquaternion Reading
 
-In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the trace pairing supplying the energy $\mathrm{Tr}(\tilde\Pi\tilde{H})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\vec u(0)$ into $\vec u(t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
+In the algebra the coherent state is the idempotent $\tilde\Pi_1(\vec u(z))$, so the coherent-state path integral is an integral over the sphere of idempotents, with the plain form supplying the energy, read as the trace pairing $\mathrm{Tr}(\tilde\Pi\tilde{H})$. The spinor integral is the lift to the double cover. The saddle point is a rotor in $\mathbb{H}_{\mathbb{B}}$ — the unit real quaternion that carries $\vec u(0)$ into $\vec u(t)$ — and the Wess–Zumino term is the central phase of that rotor along the path. The biquaternion algebra thus holds both integrals at once: the idempotent is the point, the spinor is the lift, and the geometric phase is the fibre.
 
 ## Topological Consequences
 
@@ -223,7 +223,7 @@ For a spin in a magnetic field with an easy-axis anisotropy the classical ground
 
 **What the algebra organises.**
 
-- **The action is algebraic data.** The energy is the trace pairing $\mathrm{Tr}(\tilde\Pi\tilde{H})$, the path is a curve of idempotents, and the Wess–Zumino term is the central phase of the rotor along the curve. The two-level path integral is the quantisation of this data.
+- **The action is algebraic data.** The energy is the plain form, read as the trace pairing, $\mathrm{Tr}(\tilde\Pi\tilde{H})$, the path is a curve of idempotents, and the Wess–Zumino term is the central phase of the rotor along the curve. The two-level path integral is the quantisation of this data.
 - **The double cover is the two formulations.** The idempotent integral and the spinor integral are the sphere and its double cover; the Wess–Zumino term is the fibre.
 - **The topological term is the curvature.** The non-exactness of the symplectic form is the non-zero Chern number of the geometric-phase analysis, and the coefficient $j = \tfrac12$ is the spin.
 - **The saddle point is a rotor.** Larmor precession is conjugation by a time-dependent unit real quaternion, the classical limit of the quantum evolution.
@@ -277,7 +277,7 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin-1/2 operator |
 | $|\zeta\rangle$ | Spin coherent state with Bloch vector $\vec u(\zeta)$ |
 | $\zeta = \tan\tfrac{\theta}{2}\exp(i\phi) = \psi_2/\psi_1$ | Stereographic coordinate |
-| $\langle z'|z\rangle = \dfrac{1+\bar z' z}{\sqrt{(1+|z'|^2)(1+|z|^2)}}$ | Coherent-state overlap |
+| $\langle z_2|z\rangle = \dfrac{1+\bar z_2 z}{\sqrt{(1+|z_2|^2)(1+|z|^2)}}$ | Coherent-state overlap |
 | $\mathbb{1} = \tfrac{2}{\pi}\int\tfrac{d^2z}{(1+|z|^2)^2}|z\rangle\langle z|$ | Resolution of identity (spin-1/2) |
 | $S_{WZ} = i\hbar\oint\langle z|\partial/\partial t|z\rangle dt = -\hbar\tfrac{\Omega}{2}$ | Wess–Zumino term |
 | $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ | Symplectic form of the sphere |

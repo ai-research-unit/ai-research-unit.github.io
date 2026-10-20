@@ -57,7 +57,7 @@ $$
 and the post-measurement state, conditioned on outcome $a$, is
 
 $$
-\rho' = \frac{P_a \rho P_a}{\mathrm{Tr}(P_a \rho)}.
+\rho_2 = \frac{P_a \rho P_a}{\mathrm{Tr}(P_a \rho)}.
 $$
 
 These four postulates are the foundation of the theory. Everything else — the uncertainty principle, the no-cloning theorem, entanglement, decoherence — is a consequence of them or an application of them.
@@ -245,7 +245,7 @@ where $a^{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome d
 After the measurement with outcome $+$, the state collapses to the pure state
 
 $$
-\rho' = \frac{1}{2}\left(I + a^{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
+\rho_2 = \frac{1}{2}\left(I + a^{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
 $$
 
 i.e., the Bloch vector becomes $a^{\mathrm{fop}}$.
@@ -302,7 +302,7 @@ Reversibility is one of the structural features of quantum physics that distingu
 
 ### Projective Measurements
 
-A **projective measurement** of an observable $A = \sum_a a P_a$ is the ideal measurement described in Postulate 4. The outcomes are the eigenvalues of $A$, with probabilities $p(a) = \mathrm{Tr}(P_a \rho)$, and the post-measurement state is the projection $\rho' = P_a \rho P_a / p(a)$.
+A **projective measurement** of an observable $A = \sum_a a P_a$ is the ideal measurement described in Postulate 4. The outcomes are the eigenvalues of $A$, with probabilities $p(a) = \mathrm{Tr}(P_a \rho)$, and the post-measurement state is the projection $\rho_2 = P_a \rho P_a / p(a)$.
 
 Projective measurements are the ideal limit of realistic measurements. In practice, measurements are often weaker or incomplete, and their description requires the more general framework of **positive operator-valued measures (POVMs)**.
 

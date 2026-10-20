@@ -153,7 +153,7 @@ The same conclusion follows from the Kadison–Schwarz inequality for the unital
 
 ### The Spectrum
 
-The canonical irreversible dynamics of the sector is dephasing along an axis $\vec u$, with transverse components decaying at rate $\Gamma$ and the axial component untouched. In the frame $(\vec u_\perp,\vec u'_\perp,\vec u)$ the Bloch action is
+The canonical irreversible dynamics of the sector is dephasing along an axis $\vec u$, with transverse components decaying at rate $\Gamma$ and the axial component untouched. In the frame $(\vec u_\perp,\vec u_{\perp,2},\vec u)$ the Bloch action is
 
 $$
 \vec r(t) = \left(\exp(-\Gamma t)r_1,\; \exp(-\Gamma t)r_2,\; r_3\right),

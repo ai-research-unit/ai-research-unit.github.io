@@ -176,7 +176,7 @@ $$
 In the continuum, with the normalisation factor $(2\pi)^{-3/2}$,
 
 $$
-\int d^3x\;\mathrm{Tr}\!\left(\psi_{\vec k}^\dagger \psi_{\vec k'}\right) = (2\pi)^3 \delta^{(3)}(\vec k - \vec k').
+\int d^3x\;\mathrm{Tr}\!\left(\psi_{\vec k}^\dagger \psi_{\vec k_2}\right) = (2\pi)^3 \delta^{(3)}(\vec k - \vec k_2).
 $$
 
 Two norms must be kept apart here. The **probability density** of a spinor field is
@@ -193,7 +193,7 @@ $$
 \langle \psi\rangle_{\natural} = \psi\psi^{\natural} = 0 .
 $$
 
-The zero divisor cone therefore carries the states, while the positive trace form carries the probabilities. This distinction is not a defect of the states; it is the algebraic statement that the algebra is not a division algebra, and it is the structural reason that probabilities are read from the trace pairing rather than from the biquaternion norm.
+The zero divisor cone therefore carries the states, while the positive trace form carries the probabilities. This distinction is not a defect of the states; it is the algebraic statement that the algebra is not a division algebra, and it is the structural reason that probabilities are read from the normalised plain form, read as the trace pairing rather than from the biquaternion norm.
 
 ## Wave Packets
 
@@ -247,7 +247,7 @@ $$
 
 For a plane wave of momentum $\hbar\vec k$ the current is $\vec J = \rho\,\hbar\vec k/m = \rho\,\vec v_g$, as it must be. For a general packet, $\vec J = \rho\,\vec v_g$ holds only where the packet is locally monochromatic, which is the usual situation for a broad packet.
 
-The current is a **material-sector** object in the following sense: it is built from the trace pairing of the spinor with its gradient, and it is a real spatial vector, hence the spatial part of an element of $\mathbb{M}_-$; the density is the trace of a Hermitian element of $\mathbb{M}_+$. The continuity equation thus pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current, exactly as the sector assignment of the framework requires.
+The current is a **material-sector** object in the following sense: it is built from the plain form of the spinor with its gradient, read as the trace pairing, and it is a real spatial vector, hence the spatial part of an element of $\mathbb{M}_-$; the density is the trace of a Hermitian element of $\mathbb{M}_+$. The continuity equation thus pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current, exactly as the sector assignment of the framework requires.
 
 ### The Gaussian packet
 
@@ -393,7 +393,7 @@ Two further structural points belong to this section.
 - **The kinetic term as a biquaternion norm.** $T = -\tilde p^2/2m = \tilde p\tilde p^{\natural}/2m$. The sign that makes the kinetic energy positive is the sign of the biquaternion norm on the Hermitian subspace, and the reality of the kinetic term is the statement that $\tilde p$ is Hermitian.
 - **A canonical complex structure.** The phase $\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ uses the central scalar imaginary, which the algebra supplies; it is not a chosen complex structure. This is the free-particle instance of the property that the path-integral phase is central and canonical.
 - **A material-sector location for the dispersion.** The wave four-vector $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$, and its biquaternion norm $\langle\tilde P/\hbar\rangle_{\natural} = k^2(1 - \hbar^2k^2/4m^2c^2)$ shows that the free non-relativistic solutions are spacelike and off the null cone — the cone that the last article of the subcategory treats as a physical locus.
-- **The probability from the trace, not from the biquaternion norm.** The positivity of $\rho = \mathrm{Tr}(\psi^\dagger\psi)$ is a property of the trace pairing on $\mathbb{M}_+$, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.
+- **The probability from the trace, not from the biquaternion norm.** The positivity of $\rho = \mathrm{Tr}(\psi^\dagger\psi)$ is a property of the plain form on $\mathbb{M}_+$, read as the trace pairing, while the biquaternion norm of the same spinor vanishes identically because the state module lies on the zero divisor cone. The two quadratic structures of the algebra play distinct roles, and the free problem exhibits both at once.
 
 **What remains open.**
 
@@ -424,7 +424,7 @@ $$
 
 and the kinetic energy is the **biquaternion norm of the momentum**. Because $H$ is central, the free dynamics is a scalar dynamics: plane waves $\psi_{\vec k} = \chi \exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ have the dispersion $\omega = \hbar k^2/2m$ for every constant module element $\chi$, the two components are exactly degenerate, the phase is central, and the module orientation is frozen for all time. The generator $-iH/\hbar$ lies in the material sector $\mathbb{M}_-$.
 
-The wave four-vector $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde P/\hbar\rangle_{\natural} = k^2(1-\hbar^2k^2/4m^2c^2)$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\psi^\dagger\psi)$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the trace pairing, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\partial/\partial Q_k\,\psi - (\partial/\partial Q_k\,\psi)^\dagger\psi)$, pairing an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
+The wave four-vector $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ has biquaternion norm $\langle\tilde P/\hbar\rangle_{\natural} = k^2(1-\hbar^2k^2/4m^2c^2)$, so the free non-relativistic solutions are spacelike and strictly off the null (zero divisor) cone. The probability density is $\rho = \mathrm{Tr}(\psi^\dagger\psi)$, positive definite, while the biquaternion norm of the same spinor vanishes identically because the state module consists of zero divisors; probabilities come from the normalised plain form, read as the trace pairing, not from $\langle\cdot\rangle_{\natural}$. The continuity equation $\partial/\partial t\,\rho + \nabla\cdot\vec J = 0$ holds with $J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\partial/\partial Q_k\,\psi - (\partial/\partial Q_k\,\psi)^\dagger\psi)$, pairing an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
 
 A Gaussian packet of initial density width $s_0$ evolves to a Gaussian of width $s(t) = s_0\sqrt{1+(\hbar t/2ms_0^2)^2}$ whose centre moves at the group velocity $\hbar k_0/m$, with spreading time $\tau = 2ms_0^2/\hbar$; the closed forms were verified against direct momentum-space quadrature to relative errors below $10^{-13}$, and the density, mean, and variance to machine precision, on a superposition rather than a single plane wave. The free kernel
 
@@ -455,7 +455,7 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\vec v_g = \partial\omega/\partial\vec k = \hbar\vec k/m$ | Group velocity; classical velocity |
 | $\tilde P/\hbar = i\omega/c\,e_t + \vec k$ | Wave four-vector in $\mathbb{M}_-$ |
 | $\langle\tilde P/\hbar\rangle_{\natural} = -\omega^2/c^2 + k^2$ | Biquaternion norm of the wave four-vector; spacelike |
-| $\rho = \mathrm{Tr}(\psi^\dagger\psi)$ | Probability density, from the trace pairing |
+| $\rho = \mathrm{Tr}(\psi^\dagger\psi)$ | Probability density, from the trace reading of the plain form |
 | $J_k = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\partial/\partial Q_k\,\psi - (\partial/\partial Q_k\,\psi)^\dagger\psi)$ | Probability current |
 | $\Phi(x,t)$ | Scalar envelope; module factor frozen |
 | $s_0$, $s(t) = s_0\sqrt{1+(\hbar t/2ms_0^2)^2}$ | Initial and time-dependent density width |

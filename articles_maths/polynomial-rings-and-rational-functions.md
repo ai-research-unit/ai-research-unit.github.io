@@ -108,11 +108,11 @@ as is checked by putting the right side over the common denominator $x(x^2+1)$: 
 
 ### Resultants and Discriminants
 
-**Definition.** For $f = a_mx^m+\cdots+a_0$ and $g = b_nx^n+\cdots+b_0$ the **resultant** $\operatorname{Res}(f,g)$ is the determinant of the $(m+n)\times(m+n)$ Sylvester matrix of the two coefficient vectors; the **discriminant** of $f$ of degree $m$ with leading coefficient $a_m$ is $\operatorname{Disc}(f) = (-1)^{m(m-1)/2}a_m^{-1}\operatorname{Res}(f,f')$.
+**Definition.** For $f = a_mx^m+\cdots+a_0$ and $g = b_nx^n+\cdots+b_0$ the **resultant** $\operatorname{Res}(f,g)$ is the determinant of the $(m+n)\times(m+n)$ Sylvester matrix of the two coefficient vectors; the **discriminant** of $f$ of degree $m$ with leading coefficient $a_m$ is $\operatorname{Disc}(f) = (-1)^{m(m-1)/2}a_m^{-1}\operatorname{Res}(f,\frac{df}{dx})$.
 
 **Theorem.** Over a field, $\operatorname{Res}(f,g) = 0$ if and only if $f$ and $g$ have a common root in an algebraic closure, and $\operatorname{Disc}(f) = 0$ if and only if $f$ has a multiple root; moreover for a monic $f$ of degree $m$ with roots $\alpha_1,\ldots,\alpha_m$ in a splitting field, $\operatorname{Disc}(f) = \prod_{i<j}(\alpha_i-\alpha_j)^2$, a square in the coefficient field, which is why the Galois group of a separable polynomial lies in the alternating group exactly when the discriminant is a square, as used in *The Inverse Galois Problem*.
 
-**Example.** For $f = x^3-3x+1$ the Sylvester determinant of $f$ and $f' = 3x^2-3$ is $-81$, and the normalisation above gives $\operatorname{Disc}(f) = (-1)^{3}\cdot(-81) = 81$, a square with root $9 \in \mathbb{Q}$; in agreement, the polynomial has three real roots and its Galois group is $\mathbb{Z}/3\mathbb{Z}$. The elimination-theoretic computation of such resultants, and Gröbner-basis methods in several variables, are *Gröbner Bases and Elimination Theory*.
+**Example.** For $f = x^3-3x+1$ the Sylvester determinant of $f$ and $\frac{df}{dx} = 3x^2-3$ is $-81$, and the normalisation above gives $\operatorname{Disc}(f) = (-1)^{3}\cdot(-81) = 81$, a square with root $9 \in \mathbb{Q}$; in agreement, the polynomial has three real roots and its Galois group is $\mathbb{Z}/3\mathbb{Z}$. The elimination-theoretic computation of such resultants, and Gröbner-basis methods in several variables, are *Gröbner Bases and Elimination Theory*.
 
 ### Polynomial Rings and Their Quotients
 
@@ -120,7 +120,7 @@ as is checked by putting the right side over the common denominator $x(x^2+1)$: 
 
 **(a)** $K[x]/(f)$ is a $K$-vector space of dimension $m$, with basis the classes of $1,x,\ldots,x^{m-1}$, and it is a field if and only if $f$ is irreducible.
 
-**(b)** If $f = f_1^{e_1}\cdots f_r^{e_r}$ with the $f_i$ irreducible, distinct and pairwise coprime, then $K[x]/(f) \cong \prod_iK[x]/(f_i^{e_i})$, a product of local rings, and $K[x]/(f)$ is a product of fields exactly when $f$ is squarefree, that is, when $\gcd(f,f') = 1$.
+**(b)** If $f = f_1^{e_1}\cdots f_r^{e_r}$ with the $f_i$ irreducible, distinct and pairwise coprime, then $K[x]/(f) \cong \prod_iK[x]/(f_i^{e_i})$, a product of local rings, and $K[x]/(f)$ is a product of fields exactly when $f$ is squarefree, that is, when $\gcd(f,\frac{df}{dx}) = 1$.
 
 **Proof.** (a) is the dimension count for the remainder representation and the standard criterion for a quotient by a maximal ideal; (b) is the Chinese remainder theorem of *Localization and the Fraction Field* and *Rings*, together with the fact that $K[x]/(f_i^{e_i})$ is local with maximal ideal $(f_i)$ and that $f$ is squarefree exactly when no $f_i^2$ divides it.
 

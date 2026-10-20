@@ -59,7 +59,7 @@ The Lagrangian density is $L=F^*\cdot\nabla F$ and the variational principle is 
 The transformation is
 
 $$
-F \longrightarrow F' = (1+\alpha)e_tF ,
+F \longrightarrow F_2 = (1+\alpha)e_tF ,
 $$
 
 with $\alpha$ an arbitrary infinitesimal function of $x$ and $t$, named in the paper *a biquaternionic gauge transformation of the first kind* and identified with $(\exp(i\alpha)F)$ to first order. Substituting into $L$ gives $\delta L = F^*\cdot(\nabla(\alpha e_tF))$, which the paper expands as

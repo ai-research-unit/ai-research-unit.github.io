@@ -19,7 +19,7 @@ $$
 \qquad \epsilon_j = \pm1, \quad \epsilon_1\epsilon_2\epsilon_3 = +1 ,
 $$
 
-which satisfy $\tilde\Pi_\epsilon \tilde\Pi_{\epsilon'} = \delta_{\epsilon\epsilon'}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon = e_t\otimes e_t$. They are the joint spectral idempotents of the commuting stabilizers
+which satisfy $\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}} = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon = e_t\otimes e_t$. They are the joint spectral idempotents of the commuting stabilizers
 
 $$
 S_1 = -\vec e_x\otimes \vec e_x, \qquad S_3 = -\vec e_z\otimes \vec e_z,
@@ -165,7 +165,7 @@ All the algebraic claims above were verified by direct computation in the tensor
 
 **The four encoded states.** Starting from the Bell idempotent $\tilde\Pi_{\Phi^+}$ and conjugating by $e_t\otimes e_t$, $\vec e_x\otimes e_t$, $\vec e_y\otimes e_t$, $\vec e_z\otimes e_t$, the four resulting states were computed as $4\times4$ matrices and identified by their overlaps with the four Bell states. The results are exactly the table above: $e_t\to|\Phi^+\rangle$, $\vec e_x\to|\Psi^+\rangle$, $\vec e_y\to|\Psi^-\rangle$, $\vec e_z\to|\Phi^-\rangle$, each with overlap one and zero overlap with the other three.
 
-**Orthogonality.** The pairwise overlaps of the four encoded states were computed and found to be $\delta_{\epsilon\epsilon'}$: the codewords are orthogonal, and the Bell measurement distinguishes them with probability one.
+**Orthogonality.** The pairwise overlaps of the four encoded states were computed and found to be $\delta_{\epsilon,\epsilon_{\mathrm{alt}}}$: the codewords are orthogonal, and the Bell measurement distinguishes them with probability one.
 
 **The spectrum and the marginal.** Each encoded state has the spectrum of an idempotent, $(1,0,0,0)$, and partial trace $\tfrac12 e_t$ on both factors, confirming that the encoding preserves purity and maximal entanglement and that no local measurement can read the message.
 
@@ -225,7 +225,7 @@ $$
 e_t \to \tilde\Pi_{\Phi^+}, \quad \vec e_x \to \tilde\Pi_{\Psi^+}, \quad \vec e_y \to \tilde\Pi_{\Psi^-}, \quad \vec e_z \to \tilde\Pi_{\Phi^-} ;
 $$
 
-and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, whose joint eigenbasis is the Bell basis. The four codewords are mutually orthogonal, $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon'}) = \delta_{\epsilon\epsilon'}$, so the measurement identifies the message with certainty, and the encoding set has four elements, giving $\log_2 4 = 2$ bits. Without the shared entanglement a qubit carries at most $\log_2 2 = 1$ bit (the Holevo bound); the pair doubles the capacity, the entanglement-assisted capacity of the noiseless qubit channel being $2$ bits, and the resource is consumed in the process. The protocol is the algebraic statement that the encoding group acts regularly on the Bell idempotent basis; it is the dual of quantum teleportation.
+and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, whose joint eigenbasis is the Bell basis. The four codewords are mutually orthogonal, $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$, so the measurement identifies the message with certainty, and the encoding set has four elements, giving $\log_2 4 = 2$ bits. Without the shared entanglement a qubit carries at most $\log_2 2 = 1$ bit (the Holevo bound); the pair doubles the capacity, the entanglement-assisted capacity of the noiseless qubit channel being $2$ bits, and the resource is consumed in the process. The protocol is the algebraic statement that the encoding group acts regularly on the Bell idempotent basis; it is the dual of quantum teleportation.
 
 ## Summary of Notation
 
@@ -236,11 +236,11 @@ and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\
 | $i$ | Central scalar imaginary |
 | $\tilde\Pi_\epsilon$ | Bell idempotents (idempotent basis) |
 | $\tilde\Pi_{\Phi^+}$ | Shared resource (maximally entangled) |
-| $\epsilon = (\epsilon_1,\epsilon_2,\epsilon_3)$, $\epsilon_1\epsilon_2\epsilon_3=+1$ | Bell sign pattern |
+| $\epsilon = (\epsilon_1,\epsilon_2,\epsilon_3)$, $\epsilon_1\epsilon_2\epsilon_3=+1$ | Bell sign pattern; $\epsilon_{\mathrm{alt}}$ denotes a second one |
 | $S_1 = -\vec e_x\otimes \vec e_x$, $S_3 = -\vec e_z\otimes \vec e_z$ | Stabilizer observables (decoding) |
 | $S_1\tilde\Pi_\epsilon = -\epsilon_1\tilde\Pi_\epsilon$, $S_3\tilde\Pi_\epsilon=-\epsilon_3\tilde\Pi_\epsilon$ | Joint eigenvalues |
 | $(\vec e_k\otimes e_t)\tilde{Ϛ}(\vec e_k\otimes e_t)^{*}$ | Local encoding operation |
-| $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon'}) = \delta_{\epsilon\epsilon'}$ | Orthogonality of codewords |
+| $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$ | Orthogonality of codewords |
 | $p_\epsilon = \mathrm{Tr}(\tilde{Ϛ}\tilde\Pi_\epsilon)$ | Decoding probabilities (Born rule) |
 | $1$ bit | Holevo bound for one qubit without entanglement |
 | $2$ bits | Entanglement-assisted capacity (superdense coding) |

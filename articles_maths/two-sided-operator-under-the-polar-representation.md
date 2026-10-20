@@ -427,7 +427,7 @@ $$
 
 (d) At $N=1$ the element lies in $SL(2,\mathbb{C})$ and the kernel of the action on $\mathbb{M}_-$ is $\{\pm e_t\}$.
 
-**Corollary (the isometry slice).** The sandwich is an isometry of the Minkowski norm on $\mathbb{M}_-$ exactly when $r=1$. For general $r$,
+**Corollary (the isometry slice).** The sandwich is an isometry of the Lorentzian norm on $\mathbb{M}_-$ exactly when $r=1$. For general $r$,
 
 $$
 L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8},

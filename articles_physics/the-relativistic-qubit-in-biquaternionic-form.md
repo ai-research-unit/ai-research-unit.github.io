@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The elementary carrier of information in this framework is the qubit, and the qubit is not postulated: it is the defining module of the algebra. An algebra isomorphic to $M_2(\mathbb{C})$ has exactly one simple left module, the column space $S = \mathbb{C}^2$, and the rank-one projectors on $S$ correspond exactly to the trace-one idempotents of the Hermitian sector $\mathbb{M}_+$. The state vectors are elements of $S$, the states in the statistical sense are positive trace-one elements of $\mathbb{M}_+$, and the two are related by the rank-one correspondence. What turns this qubit into a **relativistic** qubit is not a new carrier; it is the action on the carrier. The algebra's unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group, and they act on $S$ by left multiplication. The qubit's symmetry group is therefore the Lorentz group, not the unitary group, and the consequences of that fact are the subject of this article.
+The elementary carrier of information in this framework is the qubit, and the qubit is not postulated: it is the defining module of the algebra. An algebra isomorphic to $M_2(\mathbb{C})$ has exactly one simple left module, the column space $S = \mathbb{C}^2$, and the rank-one projectors on $S$ correspond exactly to the trace-one idempotents of the Hermitian sector $\mathbb{M}_+$. The state vectors are elements of $S$, the states in the statistical sense are positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), and the two are related by the rank-one correspondence. What turns this qubit into a **relativistic** qubit is not a new carrier; it is the action on the carrier. The algebra's unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group, and they act on $S$ by left multiplication. The qubit's symmetry group is therefore the Lorentz group, not the unitary group, and the consequences of that fact are the subject of this article.
 
 Three features distinguish the relativistic qubit from the non-relativistic one, and the article is organised around them. First, the left action of $SL(2,\mathbb{C})$ on $S$ is **not unitary**: it preserves the algebra's biquaternion norm but not the Hilbert-space norm of a spinor, so the state space of the qubit is invariant only under the compact subgroup $SU(2)$. Second, the pure states — the rays of $S$ — are the **celestial sphere**: the ratio of the two spinor components is a complex coordinate on $\mathbb{CP}^1$, the Lorentz group acts on it by Möbius transformations, and each ray determines a **future null four-vector** in the material sector $\mathbb{M}_-$, so that the pure informational states have a light-like geometric image. Third, the physically meaningful spin transformation at definite momentum is not the module action at all but the **little-group Wigner rotation**, a unitary element of $SU(2)$ that acts on the rest-frame qubit by a Bloch-sphere rotation; the non-unitary module action and the unitary physical rotation are two different objects, and keeping them apart is the main technical point of the article.
 
@@ -13,7 +13,7 @@ The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otim
 The companion articles supply the pieces:
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module, its irreducibility, and the state correspondence.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the Hermitian sector, the idempotents, the Bloch ball, and the conjugation action.
-- Companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.
+- Companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone*, for the geometry of the state space.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for four-vectors, the biquaternion norm, and the interval.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for $SL(2,\mathbb{C})$, its subgroups, and the Wigner rotation.
 
@@ -27,7 +27,7 @@ S = \mathbb{C}^2, \qquad \rho_S(\tilde{Q})\,|u\rangle = \mathsf{M}_2(\tilde{Q})\
 $$
 It is the unique simple left $\mathbb{B}$-module up to isomorphism; it is complex two-dimensional; and every non-zero spinor is cyclic, so $S$ has no non-trivial submodules. The algebra's left regular module is two copies of it, $\mathbb{B}\cong S\oplus S$, which is the algebraic origin of the two-component spinor structure.
 
-Two objects must be kept apart throughout. A **state vector** is an element $|u\rangle\in S$; a **state** in the statistical sense is a positive trace-one element $\tilde{Ϛ}\in\mathbb{M}_+$, i.e. an operator on $S$. The correspondence between them is the rank-one map
+Two objects must be kept apart throughout. A **state vector** is an element $|u\rangle\in S$; a **state** in the statistical sense is a positive element $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), i.e. an operator on $S$. The correspondence between them is the rank-one map
 $$
 |u\rangle \ \longleftrightarrow\ \tilde\Pi(u) = \frac{|u\rangle\langle u|}{\langle u|u\rangle} = \mathsf{M}_2^{-1}\!\left(\frac{|u\rangle\langle u|}{\langle u|u\rangle}\right)\in\mathbb{M}_+ ,
 $$
@@ -231,18 +231,18 @@ $$
 $$
 which for a Hermitian unit-norm rotor means $\tilde U_{\mathrm L,\tilde{V}} = \tilde U_{\mathrm L,\tilde{V}}^{\natural}$ and $\tilde U_{\mathrm L,\tilde{V}}^{-1} = \tilde U_{\mathrm L,\tilde{V}}^{\natural}$. Under a Lorentz transformation $\tilde U_{\mathrm L}$ the four-velocity goes to
 $$
-\tilde{V}' = \tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} ,
+\tilde{V}_2 = \tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} ,
 $$
 and the element
 $$
-\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}'}\,\tilde U_{\mathrm L}\,\tilde U_{\mathrm L,\tilde{V}}^{-1}
+\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}_2}\,\tilde U_{\mathrm L}\,\tilde U_{\mathrm L,\tilde{V}}^{-1}
 $$
 carries the rest frame to the rest frame:
 $$
 \tilde{W}\,(ic\,e_t)\,\tilde{W}^{*}
-= \tilde U_{\mathrm L,\tilde{V}'}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\,(ic\,e_t)\,\tilde U_{\mathrm L,\tilde{V}}^{-1{}^{*}}\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L,\tilde{V}'}^\dagger
-= \tilde U_{\mathrm L,\tilde{V}'}\,\tilde U_{\mathrm L}\,\tilde{V}\,\tilde U_{\mathrm L}^{*}\,\tilde U_{\mathrm L,\tilde{V}'}^\dagger
-= \tilde U_{\mathrm L,\tilde{V}'}\,\tilde{V}'\,\tilde U_{\mathrm L,\tilde{V}'}^\dagger
+= \tilde U_{\mathrm L,\tilde{V}_2}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\,(ic\,e_t)\,\tilde U_{\mathrm L,\tilde{V}}^{-1{}^{*}}\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L,\tilde{V}_2}^\dagger
+= \tilde U_{\mathrm L,\tilde{V}_2}\,\tilde U_{\mathrm L}\,\tilde{V}\,\tilde U_{\mathrm L}^{*}\,\tilde U_{\mathrm L,\tilde{V}_2}^\dagger
+= \tilde U_{\mathrm L,\tilde{V}_2}\,\tilde{V}_2\,\tilde U_{\mathrm L,\tilde{V}_2}^\dagger
 = ic\,e_t .
 $$
 By the stabilizer computation, $\tilde{W}$ is an element of the little group, and for a massive particle it is a unit-norm element with $\tilde{W}\tilde{W}^{*} = e_t$: a **unit real quaternion**, i.e. an element of $SU(2)$. This is the **Wigner rotation**. It is unitary, so it acts on the spin state by a genuine quantum operation,
@@ -273,7 +273,7 @@ and $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_k] = -\epsilon_{jkl}\tfrac12\vec e_l$:
 
 ## Summary
 
-The relativistic qubit is the defining module $S$ of $\mathbb{B}$ with the left action of the unit-norm group $SL(2,\mathbb{C})$, together with the little-group structure that the action induces at fixed four-velocity. Its state vectors are the spinors, its states are the positive trace-one elements of $\mathbb{M}_+$, and its pure states are the rays, i.e. the points of $\mathbb{CP}^1$, on which the Lorentz group acts by Möbius transformations with $PSL(2,\mathbb{C})\cong SO^+(1,3)$.
+The relativistic qubit is the defining module $S$ of $\mathbb{B}$ with the left action of the unit-norm group $SL(2,\mathbb{C})$, together with the little-group structure that the action induces at fixed four-velocity. Its state vectors are the spinors, its states are the positive elements of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), and its pure states are the rays, i.e. the points of $\mathbb{CP}^1$, on which the Lorentz group acts by Möbius transformations with $PSL(2,\mathbb{C})\cong SO^+(1,3)$.
 
 The left action is not unitary. The spinor norm is preserved if and only if $\tilde U_{\mathrm L}^{*}\tilde U_{\mathrm L} = e_t$, which selects $SU(2)$ inside $SL(2,\mathbb{C})$; a boost scales the norm and leaves the ray transformed by a Möbius map. Each pure state determines a future null four-vector
 $$
@@ -283,7 +283,7 @@ so the informational ray and its material null direction are carried by the same
 
 The physical spin state at definite four-velocity transforms not by the non-unitary congruence but by the little-group **Wigner rotation**
 $$
-\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}'}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\in SU(2), \qquad \tilde{V}' = \tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} ,
+\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}_2}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\in SU(2), \qquad \tilde{V}_2 = \tilde U_{\mathrm L}\tilde{V}\tilde U_{\mathrm L}^{*} ,
 $$
 which fixes the rest four-velocity, is a unit real quaternion, and acts on the Bloch ball by a rotation. The massive little group is $SU(2)$ and carries spin; the massless little group is $E(2)$ and carries helicity, so the massless qubit has one state per momentum for each helicity. The congruence by a non-unitary element is a map on the algebra that moves the maximally mixed state and scales the trace, and the physical state transformation is the unitary Wigner rotation; the two coincide only on the compact subgroup. Because $\tilde{W}$ depends on the four-velocity, the relativistic qubit is a momentum-labelled family of qubits, and a boost acts as a momentum-controlled rotation — the mechanism behind the frame-dependent entanglement of the next article.
 
@@ -305,7 +305,7 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\mathrm{Little}(\tilde{V})$ | Stabilizer of $\tilde{V}$: $\mathrm{U}(2)$ massive, $E(2)$ massless |
 | $\tilde U_{\mathrm L,\tilde{V}}$ | Standard boost carrying $\tilde{V}$ to rest |
-| $\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}'}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}$ | Wigner rotation, $\in SU(2)$ |
+| $\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}_2}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}$ | Wigner rotation, $\in SU(2)$ |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin operators |
 | $\tfrac12\vec e_k\in\mathbb{M}_-^{0}$ | Rotation generators (pure elements, material, compact) |
 | $\tfrac12 i\vec e_k\in\mathbb{M}_+^{0}$ | Boost generators (pure elements, informational) |

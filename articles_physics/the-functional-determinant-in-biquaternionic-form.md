@@ -30,7 +30,7 @@ $$
 the exponent being the module's complex dimension. The determinant on the whole algebra, which is four-complex-dimensional, would be $\kappa^4$; the framework's determinant is defined once the module is chosen, and the module is fixed by the algebra. When $S^{(2)}$ is not central — the chirality-off-diagonal Dirac mass is the example — the two chiralities mix and the determinant does not factor.
 - **Standard, and transcribed.** The zeta-function regularization
 $$
-\log\det S^{(2)} = -\zeta_{S^{(2)}}'(0),
+\log\det S^{(2)} = -\left.\frac{d\zeta_{S^{(2)}}}{ds}\right|_{s=0},
 \qquad
 \zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s},
 $$
@@ -155,7 +155,7 @@ The determinant is a divergent product, and its regularized value is defined thr
 $$
 \zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s} = \mathrm{Tr}\big(S^{(2)}\big)^{-s},
 \qquad
-\log\det S^{(2)} = -\zeta_{S^{(2)}}'(0),
+\log\det S^{(2)} = -\left.\frac{d\zeta_{S^{(2)}}}{ds}\right|_{s=0},
 $$
 the second relation being the analytic continuation of the first to $s=0$. In this scheme the determinant is finite by construction, and the regularization dependence appears as an additive constant that is fixed by renormalization. For a single mode with eigenvalue $\lambda$ the definition gives $\zeta(s)=\lambda^{-s}$ and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\lambda$, i.e. the ordinary logarithm; the scheme reduces to the ordinary determinant when the product is finite.
 

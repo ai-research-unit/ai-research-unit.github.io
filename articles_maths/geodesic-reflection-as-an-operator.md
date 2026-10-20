@@ -47,7 +47,7 @@ which fixes $a^\perp$ pointwise and sends $a$ to $-a$.
 
 **Proposition.** The map $s_a$ is an element of $O(n,1)$ and it preserves the hyperboloid and the time orientation, so it is an isometry of $\mathbb{H}^n$; it is the reflection in the totally geodesic hypersurface $\mathbb{H}^n \cap a^\perp$, it is an involution, and it is realised as an inversion in the Möbius model of the boundary.
 
-**Proof.** The form is preserved because the reflection formula is the orthogonal reflection in the hyperplane $a^\perp$ with respect to $B$, and this reflection lies in $O(n,1)$; it preserves the hyperboloid because it preserves the form and the sign of the time coordinate, and the fixed set is the geodesic hypersurface. The realisation by an inversion is the statement of the next section.
+**Proof.** The form is preserved because the reflection formula is the orthogonal reflection in the hyperplane $a^\perp$ with respect to $B$, and this reflection lies in $O(n,1)$; it preserves the hyperboloid because it preserves the form and the sign of the scalar coordinate, and the fixed set is the geodesic hypersurface. The realisation by an inversion is the statement of the next section.
 
 **Definition.** Let $p \in \mathbb{H}^n$. The **geodesic symmetry** at $p$ is the isometry $s_p$ fixing $p$ with $ds_p = -\mathrm{id}$ on the tangent space $T_p\mathbb{H}^n$; in the hyperboloid model it is the reflection in the timelike line $\mathbb{R}p$,
 

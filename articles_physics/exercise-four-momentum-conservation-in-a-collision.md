@@ -14,7 +14,7 @@ $$
 \qquad \langle\tilde{P}\rangle_{\natural} = -m^2c^2,
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v.
 $$
-The boost biquaternion $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, a Lorentz rotor, with $\tanh\psi = v_b/c$ and $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$, and the rotor conjugation $\tilde{R} \mapsto \tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$; the Poincaré pair $(\tilde U_{\mathrm L},\tilde{R}_0)$ acting by $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}+\tilde{R}_0$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged.
+The boost biquaternion $\tilde U_{\mathrm L} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$, a Lorentz rotor, with $\tanh\psi = v_b/c$ and $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t$, and the rotor conjugation $\tilde{R} \mapsto \tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}$; the Poincaré pair $(\tilde U_{\mathrm L},\tilde{R}_0)$ acting by $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}+\tilde{R}_0$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged.
 
 **What is to be shown.** The problems are: (1) the conservation law as a single biquaternion equation, its equivalence to energy and three-momentum conservation, and its frame covariance; (2) the invariant mass and the Mandelstam invariants of a $2\to2$ collision; (3) the centre-of-momentum frame and the elastic point; (4) the production threshold, in fixed-target and collider form; (5) a numerical instance checked in two frames; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions. The exercise also tests its parents: two gaps found in the course of the work are reported explicitly in the closing section rather than smoothed over.
 
@@ -62,11 +62,11 @@ which is the invariance of the total invariant mass (Problem 2). This consequenc
 
 **Solution (c).** *Lorentz rotor.* Apply the same rotor conjugation to every four-momentum, with a fixed unit-norm $\tilde U_{\mathrm L}$. The conjugation is real-linear on $\mathbb{M}_-$ and distributive over addition, so
 $$
-\tilde{P}_{\rm in}' - \tilde{P}_{\rm out}'
+\tilde{P}_{\rm in,2} - \tilde{P}_{\rm out,2}
 = \sum_a \tilde U_{\mathrm L}\tilde{P}_a\tilde U_{\mathrm L}^{*} - \sum_f \tilde U_{\mathrm L}\tilde{P}_f\tilde U_{\mathrm L}^{*}
 = \tilde U_{\mathrm L}\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right)\tilde U_{\mathrm L}^{*} .
 $$
-If the unprimed difference vanishes, the primed one vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the *element* $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{M}_-$, which transforms as a whole.
+If the difference in the first frame vanishes, the difference in the second frame, $\mathcal O_2$, vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the *element* $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{M}_-$, which transforms as a whole.
 
 *Translation.* A Poincaré translation $(\tilde U_{\mathrm L},\tilde{R}_0)$ acts on the four-position by $\tilde{R}\mapsto\tilde U_{\mathrm L}\tilde{R}\tilde U_{\mathrm L}^{*}+\tilde{R}_0$. The four-momentum of a free body is built from its four-velocity, $d\tilde{R}/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra is a Clifford algebra in two separate senses, and the spin geometry of the algebra is the geometry the second of them carries. The algebra is the even Clifford algebra $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ of Minkowski space (*Biquaternion Other Algebraic Element Representations*), and it also carries its own biquaternion norm, whose Clifford algebra $\mathrm{Cl}(\mathbb{B},N)$ has a spinor module and a chirality grading (*Norm and Invertibility in the General Quaternionic Algebra*). This article reads the spinor module of the algebra, its two chiral halves, the Clifford multiplication that defines it, and the operator that the Clifford structure puts on it.
+The biquaternion algebra is a Clifford algebra in two separate senses, and the spin geometry of the algebra is the geometry the second of them carries. The algebra is the even Clifford algebra $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ of Lorentzian space (*Biquaternion Other Algebraic Element Representations*), and it also carries its own biquaternion norm, whose Clifford algebra $\mathrm{Cl}(\mathbb{B},N)$ has a spinor module and a chirality grading (*Norm and Invertibility in the General Quaternionic Algebra*). This article reads the spinor module of the algebra, its two chiral halves, the Clifford multiplication that defines it, and the operator that the Clifford structure puts on it.
 
 The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The module itself is realised in the matrix model in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the Clifford multiplication being stated here; the analytic theory of the operator is *Fueter Theory for Biquaternions* and *Biquaternion Regular Functions* in Analysis; the rulings that the spinor lines trace are in *The Null Quadric and Its Projective Geometry*.
 
@@ -12,7 +12,7 @@ The article is a slot article: it states the geometry the Clifford structure def
 
 ## The Spinor Module and Its Two Chiral Halves
 
-As a module over the complexified Lorentz algebra, the complexification of the Minkowski slice is the tensor product of the two Weyl spinor spaces of *Spin Representations and Clifford Modules with Inner Conjugation*,
+As a module over the complexified Lorentz algebra, the complexification of the Lorentzian slice is the tensor product of the two Weyl spinor spaces of *Spin Representations and Clifford Modules with Inner Conjugation*,
 $$
 \mathbb{B}\cong\Delta^+\otimes\Delta^-,\qquad \dim_{\mathbb{C}}\Delta^\pm=2 .
 $$
@@ -70,7 +70,7 @@ whose square is the d'Alembertian, $D^2=\Box$, and whose kernel is the space of 
 
 ## Against the General Spin Geometry of Part IV
 
-The two Clifford structures of the algebra give two different spinor modules, and they must not be confused. The first attaches the spinor module to Minkowski space, using $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$: the module is the pair of Weyl spinors of the Lorentz group, and the geometry is the spin geometry of Minkowski space. The second attaches a module to the algebra itself as a quadratic space, using $\mathrm{Cl}(\mathbb{B},N)\cong\mathrm{Cl}_4(\mathbb{C})$, whose even part has the two chiral summands. Both modules are two-dimensional over $\mathbb{C}$ and both carry a Dirac operator, and the algebra is the bridge between them: it is the even Clifford algebra of one quadratic space and a quadratic space in its own right. The general construction, with the spin group, the Clifford multiplication and the Dirac operator on a manifold, is that of *Spin Geometry* and *The Dirac Operator* of Part IV, and the relation to the classification of the Clifford algebras is *Biquaternion Other Algebraic Element Representations*.
+The two Clifford structures of the algebra give two different spinor modules, and they must not be confused. The first attaches the spinor module to Lorentzian space, using $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$: the module is the pair of Weyl spinors of the Lorentz group, and the geometry is the spin geometry of Lorentzian space. The second attaches a module to the algebra itself as a quadratic space, using $\mathrm{Cl}(\mathbb{B},N)\cong\mathrm{Cl}_4(\mathbb{C})$, whose even part has the two chiral summands. Both modules are two-dimensional over $\mathbb{C}$ and both carry a Dirac operator, and the algebra is the bridge between them: it is the even Clifford algebra of one quadratic space and a quadratic space in its own right. The general construction, with the spin group, the Clifford multiplication and the Dirac operator on a manifold, is that of *Spin Geometry* and *The Dirac Operator* of Part IV, and the relation to the classification of the Clifford algebras is *Biquaternion Other Algebraic Element Representations*.
 
 ## Summary
 
@@ -78,7 +78,7 @@ The spin geometry of the biquaternion algebra rests on the identification of the
 
 The module is realised inside the algebra as a minimal left ideal, the algebra being the direct sum $\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ of the two ideals cut out by a complete pair of orthogonal idempotents; the two ideals are isomorphic, and each of them complexifies to $S_+\oplus S_-$, so neither is itself a chiral half. The Dirac operator is the constant-coefficient operator $D=\sum_\mu e_\mu\partial_\mu$ with $D^2=\Box$, defined by the Clifford multiplication alone and invariant under the motions of the form. Its analytic theory is in Analysis and the general theory in Part IV, both cited.
 
-The algebra carries two Clifford structures, and with them two spinor modules: the module of Minkowski space, from $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$, and the module of the algebra as a quadratic space, from $\mathrm{Cl}(\mathbb{B},N)$. Both are two-dimensional over $\mathbb{C}$; the algebra is the even Clifford algebra of the one quadratic space and a quadratic space in its own right, and it is the bridge between the two.
+The algebra carries two Clifford structures, and with them two spinor modules: the module of Lorentzian space, from $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$, and the module of the algebra as a quadratic space, from $\mathrm{Cl}(\mathbb{B},N)$. Both are two-dimensional over $\mathbb{C}$; the algebra is the even Clifford algebra of the one quadratic space and a quadratic space in its own right, and it is the bridge between the two.
 
 ## Summary of Notation
 
@@ -97,7 +97,7 @@ The algebra carries two Clifford structures, and with them two spinor modules: t
 | $\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$ | Minimal left ideal; the module of the spin representation |
 | $D=\sum_\mu e_\mu\partial_\mu$ | Dirac operator; $D^2=\Box$ |
 | $\mathrm{Cl}(\mathbb{B},N)\cong\mathrm{Cl}_4(\mathbb{C})$ | Clifford algebra of the biquaternion norm; even part holds the two chiralities |
-| $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ | The algebra as the even Clifford algebra of Minkowski space |
+| $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}$ | The algebra as the even Clifford algebra of Lorentzian space |
 
 ## Further Reading
 

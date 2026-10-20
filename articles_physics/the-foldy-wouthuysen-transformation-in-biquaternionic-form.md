@@ -53,7 +53,7 @@ It is important to say at once which grading this is. The split into even and od
 Let $U = \exp(iS)$ with $S$ Hermitian so that $U$ is unitary. The transformed Hamiltonian is
 
 $$
-H' = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger ,
+H_2 = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger ,
 $$
 
 where the second term vanishes for a time-independent $S$. Since $H = \beta mc^2 + O + \mathcal{E}$, the idea is to choose $S$ so that the large term $i[S,\beta mc^2] = -O$ cancels the odd part at leading order, leaving an even remainder of order $1/c^2$.
@@ -73,13 +73,13 @@ $$
 because $[\beta O,O] = 2\beta O^2$ when $O$ is odd. Collecting, and using the full exponential rather than the first-order truncation, the transformed Hamiltonian through order $1/c^2$ is
 
 $$
-H' = \beta mc^2 + \mathcal{E} + \frac{\beta O^2}{2mc^2} + \cdots,
+H_2 = \beta mc^2 + \mathcal{E} + \frac{\beta O^2}{2mc^2} + \cdots,
 $$
 
-with the residual odd terms of order $O^3/(m^2c^4)$ removed by a second transformation $S_2 = -\frac{i}{2mc^2}\beta O'$, where $O'$ denotes the residual odd part after the first step. For the free particle $O = c\,\boldsymbol\alpha\cdot\vec p$ and $O^2 = c^2\vec p^2$, so $O^2/(2mc^2) = \vec p^2/(2m)$ and
+with the residual odd terms of order $O^3/(m^2c^4)$ removed by a second transformation $S_2 = -\frac{i}{2mc^2}\beta O_2$, where $O_2$ denotes the residual odd part after the first step. For the free particle $O = c\,\boldsymbol\alpha\cdot\vec p$ and $O^2 = c^2\vec p^2$, so $O^2/(2mc^2) = \vec p^2/(2m)$ and
 
 $$
-H' = \beta\left(mc^2 + \frac{\vec p^2}{2m} - \frac{\vec p^4}{8m^3c^2} + \cdots\right),
+H_2 = \beta\left(mc^2 + \frac{\vec p^2}{2m} - \frac{\vec p^4}{8m^3c^2} + \cdots\right),
 $$
 
 whose first two terms are the free-particle Schrödinger Hamiltonian in the upper block and its negative in the lower block, and whose $\vec p^4$ term is the first relativistic correction to the kinetic energy. The expansion is in powers of $(\vec p/mc)^2$, i.e. in $v^2/c^2$; the residual odd terms are smaller by two powers of $v/c$.
@@ -179,7 +179,7 @@ $$
 where the leading term uses $[S_1,x_k] = -\frac{i}{2mc}\beta[\alpha_j\pi_j,x_k] = -\frac{\hbar}{2mc}\beta\alpha_k$ for the free case, so the correction is of the order of the reduced Compton wavelength $\hbar/(mc)$, and the next correction is of order $1/m^2$. The operator $\vec Q$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
-d\vec Q/dt = \frac{i}{\hbar}[H',\vec Q],
+d\vec Q/dt = \frac{i}{\hbar}[H_2,\vec Q],
 $$
 
 contains no oscillatory term: to leading order it is the classical drift $\vec pc^2/E$, so the rapid trembling of the ordinary position operator $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is entirely contained in the difference $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Q$. In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the FW position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the transformed position operator.
@@ -231,7 +231,7 @@ $$
 S_1 = -\frac{i}{2mc^2}\beta O = -\frac{i}{2mc}\beta\,\boldsymbol\alpha\cdot\vec\pi,
 $$
 
-and the transformed Hamiltonian through order $v^2/c^2$ is $H' = \beta mc^2 + \mathcal{E} + \beta O^2/(2mc^2)$; in the free case $\mathcal{E} = 0$ this is the Schrödinger Hamiltonian in the upper block and its negative in the lower block. For the free particle the transformation is exact:
+and the transformed Hamiltonian through order $v^2/c^2$ is $H_2 = \beta mc^2 + \mathcal{E} + \beta O^2/(2mc^2)$; in the free case $\mathcal{E} = 0$ this is the Schrödinger Hamiltonian in the upper block and its negative in the lower block. For the free particle the transformation is exact:
 
 $$
 U = \cos\frac{\theta}{2} + \beta\,\boldsymbol\alpha\cdot\vec u_p\,\sin\frac{\theta}{2},
@@ -259,7 +259,7 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $\mathcal{E}$ | Even (frame-commuting) part |
 | $U = \exp(iS)$ | Foldy–Wouthuysen unitary |
 | $S_1 = -\frac{i}{2mc^2}\beta O$ | Leading FW generator |
-| $H' = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger$ | Transformed Hamiltonian |
+| $H_2 = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger$ | Transformed Hamiltonian |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
 | $\vec Q = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \frac{i\hbar\beta\boldsymbol\alpha}{2mc}+\cdots$ | Mean (Foldy–Wouthuysen) position |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair (chirality grading) |

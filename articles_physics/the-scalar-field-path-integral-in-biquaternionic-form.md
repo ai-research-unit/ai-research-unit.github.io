@@ -30,7 +30,7 @@ The functional integral is derived from the operator formalism by inserting a co
 $$
 \phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|\phi\rangle=\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|\phi\rangle,
 \qquad
-\langle\phi'|\phi\rangle=\delta[\phi'-\phi],
+\langle\phi_{\mathrm e}|\phi\rangle=\delta[\phi_{\mathrm e}-\phi],
 \qquad
 \int\mathcal{D}\phi\,|\phi\rangle\langle\phi|=\mathbf{1},
 $$

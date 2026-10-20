@@ -26,14 +26,14 @@ $$
 S_F(p)=\frac{i(\not p+m)}{p^2-m^2+i\epsilon}=-\frac{i(\not p+m)}{\tilde{P}\tilde{P}^{\natural}+m^2-i\epsilon} .
 $$
 
-The trace pairing is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.
+The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form. Natural units $\hbar=c=1$; the fine-structure constant is $\alpha=e^2/(4\pi)$.
 
 ## The Vertex Function and the Form Factors
 
-**The vertex.** The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma^\mu(p',p)$, where $p$ and $p'$ are the incoming and outgoing fermion momenta and $k=p'-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\not pu=mu$, $\bar w'\not p'=m\bar w'$, and the discrete symmetries reduce $\Gamma^\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:
+**The vertex.** The electromagnetic vertex of the quantized Dirac field is the one-particle-irreducible three-point function, written in the standard way as $-ie\Gamma^\mu(p_2,p)$, where $p$ and $p_2$ are the incoming and outgoing fermion momenta and $k=p_2-p$ is the momentum transferred by the photon. Lorentz invariance, the on-shell conditions $\not pu=mu$, $\bar w_2\not p_2=m\bar w_2$, and the discrete symmetries reduce $\Gamma^\mu$ to two independent structures multiplied by functions of the single invariant $k^2$:
 
 $$
-\Gamma^\mu(p',p)=\gamma^\mu F_1(k^2)+\frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2(k^2) ,
+\Gamma^\mu(p_2,p)=\gamma^\mu F_1(k^2)+\frac{i\sigma^{\mu\nu}k_\nu}{2m}F_2(k^2) ,
 \qquad
 \sigma^{\mu\nu}=\frac{i}{2}\big[\gamma^\mu,\gamma^\nu\big] .
 $$
@@ -60,11 +60,11 @@ is therefore the exact algebraic place where the two structures separate: the sy
 **The Gordon decomposition.** The separation is not merely formal; on shell it is an identity, the Gordon decomposition, which expresses the single-generator vertex as the sum of a convection term and the magnetic term:
 
 $$
-\bar w(p')\gamma^\mu w(p)
-=\bar w(p')\left[\frac{(p+p')^\mu}{2m}+\frac{i\sigma^{\mu\nu}k_\nu}{2m}\right]w(p) .
+\bar w(p_2)\gamma^\mu w(p)
+=\bar w(p_2)\left[\frac{(p+p_2)^\mu}{2m}+\frac{i\sigma^{\mu\nu}k_\nu}{2m}\right]w(p) .
 $$
 
-The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $w=(\not p+m)\omega$ for random $\omega$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar w'\gamma^\mu w=\bar w'(\not p'\gamma^\mu+\gamma^\mu\not p)w$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction *to the coefficient of the second term*; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $k^2=0$.
+The first term is the convection current of a charged scalar of the same mass; the second is the magnetic term, and its coefficient at tree level is exactly the one that gives $g=2$. The identity was verified numerically in the conventions above, on a superposition of on-shell positive-energy spinors built as $w=(\not p+m)\omega$ for random $\omega$: with $m=0.7$ and two random on-shell momenta, the maximum deviation over the four values of $\mu$ was $3.0\times10^{-15}$, and the parent identity $2m\bar w_2\gamma^\mu w=\bar w_2(\not p_2\gamma^\mu+\gamma^\mu\not p)w$ was verified to $4.4\times10^{-15}$. The anomaly is the radiative correction *to the coefficient of the second term*; the first term's coefficient is protected by gauge invariance (the Ward identity) and is not renormalized at $k^2=0$.
 
 ## The Biquaternion Transcription
 
@@ -229,15 +229,15 @@ All numerics are exact matrix arithmetic in plain Python, in the representatives
 | Bivector algebra | $[S^{\mu\nu},S^{\rho\sigma}]=i(g^{\nu\rho}S^{\mu\sigma}-g^{\mu\rho}S^{\nu\sigma}-g^{\nu\sigma}S^{\mu\rho}+g^{\mu\sigma}S^{\nu\rho})$ with $S^{\mu\nu}=\tfrac{i}{4}[\gamma^\mu,\gamma^\nu]$: residual $0$ |
 | Generator Hermiticity | $(S^{\mu\rho})^\dagger=S^{\mu\rho}$, $(S^{0k})^\dagger=-S^{0k}$, and $\sigma^{12}=2S^{12}=\mathrm{diag}(\sigma^3,\sigma^3)$: residual $0$ |
 | Sectors | $\vec e_\mu$ anti-Hermitian ($\mathbb{M}_-$), $i\vec e_\mu$ Hermitian ($\mathbb{M}_+$); rotation-type generators Hermitian at the $i\vec e_\mu$ level, boost-type anti-Hermitian at the $\vec e_\mu$ level |
-| Gordon identity | $\bar w'\gamma^\mu w=\bar w'[(p+p')^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$ |
-| Parent identity | $2m\bar w'\gamma^\mu w=\bar w'(\not p'\gamma^\mu+\gamma^\mu\not p)w$: max deviation $4.4\times10^{-15}$ |
-| On-shell conditions | $(\not p-m)w=0$, $\bar w'(\not p'-m)=0$: residuals $2.2\times10^{-16}$, $1.1\times10^{-15}$ |
+| Gordon identity | $\bar w_2\gamma^\mu w=\bar w_2[(p+p_2)^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ on random on-shell spinors, $m=0.7$: max deviation $3.0\times10^{-15}$ |
+| Parent identity | $2m\bar w_2\gamma^\mu w=\bar w_2(\not p_2\gamma^\mu+\gamma^\mu\not p)w$: max deviation $4.4\times10^{-15}$ |
+| On-shell conditions | $(\not p-m)w=0$, $\bar w_2(\not p_2-m)=0$: residuals $2.2\times10^{-16}$, $1.1\times10^{-15}$ |
 | $k^2=0$ integral | $\int_0^1dz\int_0^{1-z}dy\,\frac{2z(1-z)}{(1-z)^2}=\int_0^12z\,dz=1$ |
 | Leading anomaly | $a=\alpha/2\pi=1.1614097329\times10^{-3}$ for $\alpha=1/137.035999084$ |
 | Two-loop coefficient | $A_2=197/144+\pi^2/12-(\pi^2/2)\ln2+(3/4)\zeta(3)=-0.328478965579$ |
 | Two-loop anomaly | $a_e=1.1596374278\times10^{-3}$ |
 
-The on-shell spinors were built as $w=(\not p+m)\omega$ for random $\omega$, which produces positive-energy solutions automatically; the momenta were $p,p'$ on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.
+The on-shell spinors were built as $w=(\not p+m)\omega$ for random $\omega$, which produces positive-energy solutions automatically; the momenta were $p,p_2$ on the mass shell with $m=0.7$ and random directions. Nothing here is a fit.
 
 ## What Is Standard and What the Algebra's
 
@@ -284,13 +284,13 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 
 | Symbol | Meaning |
 |---|---|
-| $\Gamma^\mu(p',p)$ | Electromagnetic vertex; $-ie\Gamma^\mu$ is the amplitude |
+| $\Gamma^\mu(p_2,p)$ | Electromagnetic vertex; $-ie\Gamma^\mu$ is the amplitude |
 | $F_1(k^2),F_2(k^2)$ | Charge and magnetic form factors |
 | $g=2(1+F_2(0))$, $a=F_2(0)=(g-2)/2$ | Gyromagnetic ratio and anomaly |
 | $\sigma^{\mu\nu}=\tfrac i2[\gamma^\mu,\gamma^\nu]$ | Bivector (magnetic) structure |
 | $\gamma^\mu\gamma^\nu=g^{\mu\nu}I_4-i\sigma^{\mu\nu}$ | Symmetric/antisymmetric generator split |
-| $\bar w'\gamma^\mu w=\bar w'[(p+p')^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ | Gordon decomposition (verified $3.0\times10^{-15}$) |
-| $k=p'-p$ | Momentum transfer |
+| $\bar w_2\gamma^\mu w=\bar w_2[(p+p_2)^\mu+i\sigma^{\mu\nu}k_\nu]w/2m$ | Gordon decomposition (verified $3.0\times10^{-15}$) |
+| $k=p_2-p$ | Momentum transfer |
 | $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, $g=\mathrm{diag}(+,-,-,-)$ | Clifford metric (level 3) |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | $ict$ metric (level 2) |
 | $\gamma^\mu\gamma_\mu=4$, $\gamma^\mu\gamma^\alpha\gamma_\mu=-2\gamma^\alpha$ | Contraction identities (residual $0$) |

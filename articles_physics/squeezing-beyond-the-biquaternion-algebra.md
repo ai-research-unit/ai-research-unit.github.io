@@ -235,7 +235,7 @@ The three boundaries can be stated compactly.
 | Module squeezing (spin squeezing) | No | Requires a non-central generator; sibling spin subcategories |
 | Contraction (degenerating the biquaternion norm) | Limiting case | The limit is a different, degenerate algebra with zero divisors |
 | q-deformation | No | No invariant quadratic form of the framework's kind |
-| Clifford enlargement | No | The module and trace pairing change dimension and structure |
+| Clifford enlargement | No | The module and trace reading of the plain form change dimension and structure |
 | Octonionic doubling | No | Non-associativity destroys the module action and the trace |
 | Field-theoretic / dissipative algebra | No | No finite trace; non-unitary evolution |
 

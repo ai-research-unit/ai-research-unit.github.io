@@ -29,7 +29,7 @@ The article is the analysis article of *Biquaternion Physical Interpretation of 
 
 ### The Derivative Conventions
 
-The corpus writes a subscript as a component or a label, never as a derivative; every partial derivative is written with $\partial$ and its variable named in full; and the prime is reserved for a function of one variable. The coordinate derivative is $\partial/\partial Q_\mu$. On the material sector, where $Q_t=ict$ and $Q_k=q_k$, the time derivative is the **imaginary-time derivative**,
+The corpus writes a subscript as a component or a label, never as a derivative; every partial derivative is written with $\partial$ and its variable named in full; and the prime is reserved for the imaginary coordinate of a complex coefficient. The coordinate derivative is $\partial/\partial Q_\mu$. On the material sector, where $Q_t=ict$ and $Q_k=q_k$, the time derivative is the **imaginary-time derivative**,
 
 $$
 \frac{\partial}{\partial Q_t}=-\frac{i}{c}\frac{\partial}{\partial t},

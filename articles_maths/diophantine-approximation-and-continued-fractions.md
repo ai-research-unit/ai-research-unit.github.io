@@ -91,7 +91,7 @@ $$
 
 for every rational $r/s$. Consequently no algebraic irrational is a Liouville number, and every Liouville number is transcendental.
 
-**Proof.** Let $f$ be the minimal polynomial of $\alpha$ over $\mathbb{Z}$, of degree $n$, and let $M$ bound $\lvert f'\rvert$ on the interval between $\alpha$ and the rational. If $r/s$ is close to $\alpha$ then $s^n f(r/s)$ is a nonzero integer, so $\lvert s^n f(r/s)\rvert \geq 1$; the mean value theorem gives $\lvert f(r/s)\rvert \leq M\lvert \alpha - r/s\rvert$, hence $\lvert \alpha - r/s\rvert \geq 1/(Ms^n)$. The last statement follows because a Liouville number has approximations beating every power $s^{-n}$, which an algebraic irrational cannot have.
+**Proof.** Let $f$ be the minimal polynomial of $\alpha$ over $\mathbb{Z}$, of degree $n$, and let $M$ bound $\lvert \frac{df}{dx}\rvert$ on the interval between $\alpha$ and the rational. If $r/s$ is close to $\alpha$ then $s^n f(r/s)$ is a nonzero integer, so $\lvert s^n f(r/s)\rvert \geq 1$; the mean value theorem gives $\lvert f(r/s)\rvert \leq M\lvert \alpha - r/s\rvert$, hence $\lvert \alpha - r/s\rvert \geq 1/(Ms^n)$. The last statement follows because a Liouville number has approximations beating every power $s^{-n}$, which an algebraic irrational cannot have.
 
 **Example.** The number $\alpha = \sum_{k\geq 1} 10^{-k!}$ is a Liouville number: the truncations $r/s$ with $s = 10^{m!}$ approximate $\alpha$ with error $O(s^{-(m+1)})$, which beats every power. Hence $\alpha$ is transcendental, and this is Liouville's original construction of a transcendental number.
 

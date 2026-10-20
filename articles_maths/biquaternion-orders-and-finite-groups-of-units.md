@@ -27,7 +27,7 @@ $$
 
 **Remark.** The orders are orders in the *real* quaternion algebra, inside the quaternion subspace of $\mathbb{B}$. The biquaternion algebra contains them and their complexification, and it is the complexification that changes the nature of the unit group, below.
 
-**Physical reading.** The two orders are the two lattices the real sector admits, and they are the two the physics of the crystalline sector uses. Their relation is the relation between the two ways of assigning half-integer coordinates to a site, and the element $\omega$ is the half-integral shift. The lattices lie in the real sector $\mathbb{H}_{\mathbb{B}}$, the slice on which the material time $ict$ vanishes.
+**Physical reading.** The two orders are the two lattices the real sector admits, and they are the two the physics of the crystalline sector uses. Their relation is the relation between the two ways of assigning half-integer coordinates to a site, and the element $\omega$ is the half-integral shift. The lattices lie in the real sector $\mathbb{H}_{\mathbb{B}}$, the slice on which the coefficient $Q_t$ vanishes.
 
 ## The Groups of Units
 
@@ -139,13 +139,13 @@ $$
 $$
 so the unit group contains an infinite cyclic subgroup generated along a nilpotent direction. Such a direction exists integrally, for instance $P=\vec e_x+i\vec e_y$, which is null and has Gaussian-integer coefficients.
 
-**Physical reading.** The real orders have finite unit groups; the complex order does not. The difference is the light cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. On the material sector, where the four-position is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the null condition is the light cone $c^2t^2=x^2+y^2+z^2$: the integral null element $P=\vec e_x+i\vec e_y$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. In physics terms the infinite unit group is the algebraic statement that the light cone is present, and the finite unit groups are the groups of the massive, non-null sector.
+**Physical reading.** The real orders have finite unit groups; the complex order does not. The difference is the null cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. The element $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ is null exactly when $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$; on the material sector, where $Q_t=iq'_t$ and the three vector coefficients are real, $Q_k=q_k$, this reads $(q'_t)^2=q_x^2+q_y^2+q_z^2$: the integral null element $P=\vec e_x+i\vec e_y$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. Algebraically the infinite unit group is present exactly when a null direction exists, and the finite unit groups are those of the definite real sector.
 
 ## Physical Interpretations
 
-The orders read as the discrete skeleton of the algebra and their finite unit groups as its discrete symmetries: the quaternion units are rotations by $\pi$ of the lattice and the binary groups are their lifts. Read against the continuous groups, the article's structures are what survives when the frame is restricted to integral elements, so the orders are the framework's arithmetic rather than its dynamics. Read on the clock, the finite unit group carries no continuous phase, which is the sharpest illustration that the phase of the framework comes from the centre and not from the units.
+The orders read as the discrete skeleton of the algebra and their finite unit groups as its discrete symmetries: the quaternion units are rotations by $\pi$ of the lattice and the binary groups are their lifts. Read against the continuous groups, the article's structures are what survives when the frame is restricted to integral elements, so the orders are the framework's arithmetic rather than its dynamics. Read against a continuous phase, the finite unit group carries none, which is the sharpest illustration that the phase of the framework comes from the centre and not from the units.
 
-Read on a lattice, the orders are the **discrete spacetime lattice** of the framework: the Lipschitz and Hurwitz lattices are the Euclidean lattice of the real sector and the nilpotent direction of the complex order is the discrete **lightlike** direction, so the arithmetic of the algebra is the arithmetic of a lattice gauge theory and of a quantum simulation of the framework (*Lattice Gauge Theory and the Biquaternion Path Integral*). Read against the thermal circle, the real sector is the Euclidean lattice and the imaginary sector the thermal/Matsubara direction, the reading of *The Matsubara Thermal Formalism in Biquaternionic Form*.
+Read on a lattice, the orders are the **discrete lattice** of the framework: the Lipschitz and Hurwitz lattices are the Euclidean lattice of the real sector and the nilpotent direction of the complex order is the discrete **null** direction, so the arithmetic of the algebra is the arithmetic of a lattice gauge theory and of a quantum simulation of the framework (*Lattice Gauge Theory and the Biquaternion Path Integral*).
 
 Read through the McKay correspondence, the discrete symmetries are the **ADE classification**: the finite unit groups are the simply laced Dynkin types $A^{(1)},D^{(1)},E^{(1)}$ and, through the correspondence, the Kleinian (du Val) surface singularities $\mathbb{C}^2/\Gamma$ and their orbifolds, so the framework's discrete skeleton is classified by the simple Lie algebras rather than by a list of groups (*The Finite Subgroups of the Unit Sphere and the McKay Correspondence*). Boundary: the reading is an identification of the groups with an existing classification; it exhibits no orbifold of the algebra and no action of the finite groups on the fields.
 
@@ -180,8 +180,8 @@ The integral biquaternions over the Gaussian integers have an infinite group of 
 | $\mathbb{Z}[i]\otimes\mathcal{L}'$ | Integral biquaternions; infinite unit group |
 | $P=\vec e_x+i\vec e_y$, $P^2=0$ | Nilpotent generator of the unipotent family |
 | $e_t+kP$, $N=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Real sector, the slice $ict=0$; home of the orders and their finite unit groups |
-| $c^2t^2=x^2+y^2+z^2$ | Light cone of the material sector; the null condition $\langle\tilde{Q}\rangle_{\natural}=0$ there |
+| $\mathbb{H}_{\mathbb{B}}$ | Real sector, the slice $Q_t=0$; home of the orders and their finite unit groups |
+| $(q'_t)^2=q_x^2+q_y^2+q_z^2$ | Null cone of the material sector; the null condition $\langle\tilde{Q}\rangle_{\natural}=0$ there |
 
 ## Further Reading
 

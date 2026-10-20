@@ -22,7 +22,7 @@ on the algebra: the framework's conjugation is an involution with the $+$ sign, 
 
 The article proceeds as follows. The next section states the definition and the axioms. A section presents the biquaternion candidate and checks the elementary properties. A section treats the real structure and the KO-dimension, with the verification of the two signs. A section identifies the spectral dimension with the heat-kernel data of the determinant and anomaly articles. A section treats the distance formula and the framework's metric-as-output. A section states the inner-fluctuation and spectral-action material as the standard neighbouring construction. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$; its minimal left ideal is $\tilde\Pi(\vec u)\mathbb{B}$ and the module is $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$; the trace pairing is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The real structure is $\flat=-{}^{*}$, an antilinear conjugation whose fixed space is the material sector. The material coordinate is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the d'Alembertian is the series $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$; the Dirac operator is $\mathcal{D}=\tilde\nabla+m$, with the real mass $m$ in the chirality-off-diagonal block. Where an explicit gamma representation is used it is the level-3 tool with $g=\mathrm{diag}(+1,-1,-1,-1)$ in Lorentzian signature and the Euclidean Hermitian generators $(\gamma^\mu)^\dagger=\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}I_4$, $(\gamma^5)^2=I_4$ in the Euclidean verification; the representation is stated in each case. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, *The Functional Determinant in Biquaternionic Form*, and *The Trace Anomaly in Biquaternionic Form*.
+**Conventions.** We use those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$; its minimal left ideal is $\tilde\Pi(\vec u)\mathbb{B}$ and the module is $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$; the trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form; the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The real structure is $\flat=-{}^{*}$, an antilinear conjugation whose fixed space is the material sector. The material coordinate is $\tilde{R}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the d'Alembertian is the series $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$; the Dirac operator is $\mathcal{D}=\tilde\nabla+m$, with the real mass $m$ in the chirality-off-diagonal block. Where an explicit gamma representation is used it is the level-3 tool with $g=\mathrm{diag}(+1,-1,-1,-1)$ in Lorentzian signature and the Euclidean Hermitian generators $(\gamma^\mu)^\dagger=\gamma^\mu$, $\{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}I_4$, $(\gamma^5)^2=I_4$ in the Euclidean verification; the representation is stated in each case. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, *The Functional Determinant in Biquaternionic Form*, and *The Trace Anomaly in Biquaternionic Form*.
 
 ## Spectral Triples and Their Axioms
 
@@ -34,11 +34,11 @@ The definition and the axioms are stated as the standard literature gives them.
 $$
 J^2=\epsilon\,I ,
 \qquad
-JD = \epsilon' DJ ,
+JD = \epsilon_2 DJ ,
 \qquad
-J\chi = \epsilon'' \chi J ,
+J\chi = \epsilon_3 \chi J ,
 \qquad
-\epsilon,\epsilon',\epsilon''\in\{\pm1\},
+\epsilon,\epsilon_2,\epsilon_3\in\{\pm1\},
 $$
 whose signs fix the **KO-dimension** of the triple modulo eight, with $\chi$ the chirality operator in even dimensions; **first order**, $[[D,a],Jb^*J^{-1}]=0$; **orientability**, the existence of a Hochschild cycle representing the volume form; and **Poincaré duality**, the non-degeneracy of the intersection form on the $K$-theory. The list is the standard one (Connes 1995, 1996; Connes and Marcolli 2008) and is cited rather than re-derived.
 
@@ -50,11 +50,11 @@ The candidate is assembled from objects the series already has.
 
 **The algebra.** $\mathcal{A}=\mathbb{B}$ acting on its module by left multiplication, or, for a field theory on a manifold, $\mathcal{A}=C^\infty(M)\otimes\mathbb{B}$ acting on sections of the associated bundle. The first is the finite case and the second is the almost-commutative case; the finite case is what the algebra alone can be checked against, and the second is what a physical model would need.
 
-**The Hilbert space.** $\mathcal{H}=$ the completion of the spinor module (or of the space of spinor fields) under the inner product induced by the trace pairing,
+**The Hilbert space.** $\mathcal{H}=$ the completion of the spinor module (or of the space of spinor fields) under the inner product induced by the plain form,
 $$
 \langle \tilde\Psi,\tilde\Phi\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde\Psi^{*}\tilde\Phi\big) = 2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde\Psi^{*}\tilde\Phi\big),
 $$
-which is the framework's real form on the module. The identification is worth recording: the triple's Hilbert space is not imported, because the framework's trace pairing already supplies an inner product on the module, and it is positive definite on the module by construction.
+which is the framework's real form on the module. The identification is worth recording: the triple's Hilbert space is not imported, because the framework's plain form already supplies an inner product on the module, and it is positive definite on the module by construction.
 
 **The operator.** $\mathcal{D}=\tilde\nabla+m$ with the linear, chirality-off-diagonal mass. Its two properties are exactly the two the definition asks for: it is self-adjoint with respect to the pairing above (the mass term being the framework's real-mass term), and its commutator with a multiplication operator is multiplication by the biquaternionic gradient of the multiplier, a zeroth-order operator and hence bounded on the smooth domain. Whether the resolvent is compact is the analytic question, and it is the same question as the finiteness of the determinant's spectrum: on a compact manifold the spectrum of $\mathcal{D}$ is discrete and its growth is linear, which is the dimension statement of the next sections.
 
@@ -175,7 +175,7 @@ where $\chi=\mathrm{diag}(1,-1)$ in the module's chiral basis. This was verified
 
 **Established (framework and algebra).**
 
-- The biquaternion candidate triple: algebra $\mathbb{B}$ (or $C^\infty(M)\otimes\mathbb{B}$), Hilbert space the completion of the spinor module under the framework's trace pairing, operator $\mathcal{D}=\tilde\nabla+m$; the Hilbert space and the operator are the series' own objects and no new structure is introduced.
+- The biquaternion candidate triple: algebra $\mathbb{B}$ (or $C^\infty(M)\otimes\mathbb{B}$), Hilbert space the completion of the spinor module under the framework's plain form, operator $\mathcal{D}=\tilde\nabla+m$; the Hilbert space and the operator are the series' own objects and no new structure is introduced.
 - The framework's real structure satisfies $\flat^2=+1$ exactly: $\flat(\tilde Q)=-\tilde Q^{*}$ gives $\flat(\flat(\tilde Q))=\tilde Q$; verified on explicit quaternion matrices, so $\epsilon=+1$.
 - Four-dimensional Euclidean spin geometry's charge conjugation has $C^2=-1$: verified on the Hermitian Euclidean generators $\gamma^k=\left(\begin{smallmatrix}0&\sigma_k\\ \sigma_k&0\end{smallmatrix}\right)$, $\gamma^4=\mathrm{diag}(I_2,-I_2)$ with $\{\gamma^\mu,\gamma^\nu\}=2\delta^{\mu\nu}I_4$, $(\gamma^5)^2=I_4$, where $C=\gamma^2\gamma^4$ gives $C^2=-I_4$ exactly and $C\gamma^5C^{-1}=\gamma^5$, with $C\gamma^\mu C^{-1}$ equal to $\pm(\gamma^\mu)^T$ — the sign depending on the index and on the representation, as it does in the standard normalisations. The framework's sign $\epsilon=+1$ and this $\epsilon=-1$ differ, and the difference requires the module's quaternionic structure (equivalently $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$) rather than the central circle: composition with a central phase leaves $\epsilon=+1$.
 - The commutator of $\mathcal{D}$ with a left multiplication is the zeroth-order left multiplication $L_{\bar e_\mu\partial_\mu a}$, hence bounded, and the right-multiplication mass contributes nothing to it; consequently the first-order condition $[[\mathcal{D},L_a],R_b]=0$ holds exactly.
@@ -219,9 +219,9 @@ an antilinear involution with $\epsilon=+1$, whereas four-dimensional Euclidean 
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, the candidate $\mathcal{A}$ |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | Spinor module, the candidate $\mathcal{H}$ |
 | $\mathcal{D}=\tilde\nabla+m$ | Biquaternion Dirac operator, the candidate $D$ |
-| $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ | Inner product induced by the trace pairing |
+| $\langle\tilde\Psi,\tilde\Phi\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde\Psi^{*}\tilde\Phi)$ | Inner product induced by the trace reading of the plain form |
 | $J$ | Real structure of a spectral triple; antilinear |
-| $\epsilon,\epsilon',\epsilon''$ | Signs $J^2=\epsilon$, $JD=\epsilon'DJ$, $J\chi=\epsilon''\chi J$ |
+| $\epsilon,\epsilon_2,\epsilon_3$ | Signs $J^2=\epsilon$, $JD=\epsilon_2DJ$, $J\chi=\epsilon_3\chi J$ |
 | $\chi$ | Chirality operator of the triple |
 | $\flat=-{}^{*}$ | The framework's real structure; $\flat^2=+1$ |
 | $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ | Quaternionic structure of the module |

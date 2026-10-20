@@ -170,7 +170,7 @@ $$
 Let $f : \Omega \to \mathbb{D}'$ with $\Omega$ open, and let $Q_0 \in \Omega$. The **derivative** of $f$ at $Q_0$ is
 
 $$
-f'(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
+\frac{df}{dQ}(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
 $$
 
 provided the limit exists. If it does, $f$ is **dual differentiable** at $Q_0$, or **holomorphic** at $Q_0$ in the dual sense.
@@ -197,15 +197,15 @@ $$
 
 For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_{q'} = 0$ and $u_q = v_{q'}$; the remaining partial $v_q$ is free and becomes the infinitesimal part of the derivative.
 
-**Corollary.** If $f$ is dual differentiable on a domain, then $u$ depends only on $q$, and $v$ is affine in $q'$ with slope $u'(q)$:
+**Corollary.** If $f$ is dual differentiable on a domain, then $u$ depends only on $q$, and $v$ is affine in $q'$ with slope $\frac{du}{dq}$:
 
 $$
-f(q + \varepsilon q') = u(q) + \left( q' u'(q) + c(q) \right) \varepsilon,
+f(q + \varepsilon q') = u(q) + \left( q' \frac{du}{dq} + c(q) \right) \varepsilon,
 $$
 
 where $u$ and $c$ are ordinary differentiable functions of one variable. So a dual differentiable function is determined by two ordinary differentiable functions of one real variable, and it is constant in the infinitesimal direction only when $u$ is constant.
 
-This is the fundamental difference from complex analysis: the dual Cauchy–Riemann equations force the real part to be independent of the infinitesimal direction and force the infinitesimal part to be affine in it with slope $u'(q)$, while the complex Cauchy–Riemann equations force the function to be harmonic. The dual differentiable functions are a restrictive class, and this is the reason dual numbers analysis is less developed than complex analysis.
+This is the fundamental difference from complex analysis: the dual Cauchy–Riemann equations force the real part to be independent of the infinitesimal direction and force the infinitesimal part to be affine in it with slope $\frac{du}{dq}$, while the complex Cauchy–Riemann equations force the function to be harmonic. The dual differentiable functions are a restrictive class, and this is the reason dual numbers analysis is less developed than complex analysis.
 
 ### The Wirtinger Derivatives
 
@@ -218,23 +218,23 @@ $$
 **Theorem.** $f = u + v\varepsilon$ is dual differentiable iff $\partial f / \partial \bar{Q} = 0$, that is, iff $u_{q'} = 0$ and $v_{q'} = u_q$. In that case,
 
 $$
-f'(Q) = \frac{\partial f}{\partial Q} = u'(q) + v_q \varepsilon.
+\frac{df}{dQ} = \frac{\partial f}{\partial Q} = \frac{du}{dq} + v_q \varepsilon.
 $$
 
 ### Rules of Differentiation
 
-**Linearity.** $(af + bg)' = a f' + b g'$.
+**Linearity.** $\\frac{d}{dQ}(af + bg) = a \frac{df}{dQ} + b \frac{dg}{dQ}$.
 
-**Product rule.** $(fg)' = f' g + f g'$.
+**Product rule.** $\\frac{d}{dQ}(fg) = \frac{df}{dQ} g + f \frac{dg}{dQ}$.
 
-**Quotient rule.** $(f/g)' = (f' g - f g')/g^2$ where $g$ is invertible.
+**Quotient rule.** $\\frac{d}{dQ}(f/g) = (\frac{df}{dQ} g - f \frac{dg}{dQ})/g^2$ where $g$ is invertible.
 
-**Chain rule.** $(f \circ g)'(Q) = f'(g(Q)) g'(Q)$.
+**Chain rule.** $\\frac{d}{dQ}(f \circ g)(Q) = \frac{df}{dQ}(g(Q)) \frac{dg}{dQ}$.
 
-**Inverse function rule.** If $f$ is dual differentiable at $Q_0$ with $f'(Q_0)$ invertible and $f^{-1}$ is defined near $f(Q_0)$, then
+**Inverse function rule.** If $f$ is dual differentiable at $Q_0$ with $\frac{df}{dQ}(Q_0)$ invertible and $f^{-1}$ is defined near $f(Q_0)$, then
 
 $$
-(f^{-1})'(f(Q_0)) = \frac{1}{f'(Q_0)}.
+\\frac{d}{dQ}(f^{-1})(f(Q_0)) = \frac{1}{\frac{df}{dQ}(Q_0)}.
 $$
 
 ## The Infinitesimal Direction
@@ -282,7 +282,7 @@ is the **infinitesimal translation** by $h$. It is a bijection of $\mathbb{D}'$ 
 Let $\gamma : [a, b] \to \mathbb{D}'$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The **contour integral** of $f$ along $\gamma$ is
 
 $$
-\int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+\int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \frac{d\gamma}{dt} \, dt.
 $$
 
 **Linearity.** $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$.
@@ -307,7 +307,7 @@ $$
 
 provided the contour does not cross the maximal ideal in a way that makes the integral diverge.
 
-**Proof.** Since $f$ is dual differentiable, it is of the form $f(q + \varepsilon q') = u(q) + (q' u'(q) + c(q))\varepsilon$. Let $\Omega$ be an antiderivative of $u$ and let $C$ be an antiderivative of $c$, and set $F(q + \varepsilon q') = \Omega(q) + (q' u(q) + C(q))\varepsilon$. Then $F$ is dual differentiable with $F' = f$: its real part is $\Omega$ with $\Omega' = u$, and the $q$-derivative of its infinitesimal part $q' u(q) + C(q)$ is $q' u'(q) + c(q)$. So $f$ has a primitive, and the integral of $f$ over a closed contour vanishes.
+**Proof.** Since $f$ is dual differentiable, it is of the form $f(q + \varepsilon q') = u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$. Let $\Omega$ be an antiderivative of $u$ and let $C$ be an antiderivative of $c$, and set $F(q + \varepsilon q') = \Omega(q) + (q' u(q) + C(q))\varepsilon$. Then $F$ is dual differentiable with $F' = f$: its real part is $\Omega$ with $\Omega' = u$, and the $q$-derivative of its infinitesimal part $q' u(q) + C(q)$ is $q' \frac{du}{dq} + c(q)$. So $f$ has a primitive, and the integral of $f$ over a closed contour vanishes.
 
 **Caution.** The theorem fails if the contour crosses the maximal ideal in a way that makes the integral diverge. The maximal ideal is the analogue of the branch cut in complex analysis, and it must be avoided.
 
@@ -315,7 +315,7 @@ provided the contour does not cross the maximal ideal in a way that makes the in
 
 There is **no** general Cauchy integral formula in dual numbers analysis. The reason is that the kernel $1/(Q_2 - Q_1)$ has a singularity on the maximal ideal, and the integral around a point depends on the path in a way that cannot be removed by a single formula.
 
-However, if the function is written in the form $f(q + \varepsilon q') = u(q) + (q' u'(q) + c(q))\varepsilon$, then the real part $u$ and the function $c$ have the ordinary real Cauchy integral formula, and the infinitesimal part is recovered from them. So the dual differentiable functions are reconstructed from their real data by the real theory.
+However, if the function is written in the form $f(q + \varepsilon q') = u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$, then the real part $u$ and the function $c$ have the ordinary real Cauchy integral formula, and the infinitesimal part is recovered from them. So the dual differentiable functions are reconstructed from their real data by the real theory.
 
 ## Power Series
 
@@ -355,7 +355,7 @@ $$
 
 valid for $\|Q - Q_0\|_E < r$.
 
-**Proof.** Since $f$ is dual differentiable, it is of the form $f(q + \varepsilon q') = u(q) + (q' u'(q) + c(q))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $q' u'(q) + c(q)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $q' u'(q) + c(q)$.
+**Proof.** Since $f$ is dual differentiable, it is of the form $f(q + \varepsilon q') = u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $q' \frac{du}{dq} + c(q)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $q' \frac{du}{dq} + c(q)$.
 
 **Corollary.** A dual differentiable function is analytic: it equals its Taylor series in a neighborhood of every point.
 
@@ -377,7 +377,7 @@ Let $f$ be dual differentiable on a punctured disk $0 < \|Q - Q_0\|_E < R$.
 
 ### Residues
 
-There is **no** general residue theory in dual numbers analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity. The dual differentiable functions are of the form $u(q) + (q' u'(q) + c(q))\varepsilon$, and the singularity structure is that of the real functions $u$ and $c$.
+There is **no** general residue theory in dual numbers analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity. The dual differentiable functions are of the form $u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$, and the singularity structure is that of the real functions $u$ and $c$.
 
 ## Comparison with Complex Analysis
 
@@ -394,7 +394,7 @@ The differences between dual numbers analysis and complex analysis are consequen
 | Liouville | yes | no |
 | Identity theorem | yes | no |
 | Conformality | yes | no |
-| Differentiable functions | rich | $u(q) + (q' u'(q) + c(q))\varepsilon$ |
+| Differentiable functions | rich | $u(q) + (q' \frac{du}{dq} + c(q))\varepsilon$ |
 
 The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The dual case is also rigid: differentiability forces the real part to be independent of the infinitesimal direction, and leaves two ordinary differentiable functions of one variable (the real part and the value of the infinitesimal part along $q' = 0$).
 
@@ -417,7 +417,7 @@ The article develops what the nilpotent structure supports: contour integrals al
 | $q' = \operatorname{Inf} Q$ | Infinitesimal part |
 | $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
 | $B(Q_0, r)$ | Open disk of radius $r$ |
-| $f'(Q)$ | Dual derivative |
+| $\frac{df}{dQ}$ | Dual derivative |
 | $\partial/\partial Q, \partial/\partial \bar{Q}$ | Dual Wirtinger derivatives |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal |
 | $\pi : \mathbb{D}' \to R$ | Augmentation map |

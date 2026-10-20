@@ -154,7 +154,7 @@ By the fundamental theorem of algebra, $\mathbb{C}$ is algebraically closed, and
 
 ## 12. Separability, Perfect Fields, and Primitive Elements
 
-A nonconstant $f \in F[x]$ is **separable** if it has no repeated roots in a splitting field, equivalently if $\gcd(f, f') = 1$. An irreducible $f$ is inseparable exactly when $f' = 0$, which in characteristic $p$ means that $f(x) = g(x^p)$. A field is **perfect** if every irreducible polynomial over it is separable.
+A nonconstant $f \in F[x]$ is **separable** if it has no repeated roots in a splitting field, equivalently if $\gcd(f, \frac{df}{dx}) = 1$. An irreducible $f$ is inseparable exactly when $\frac{df}{dx} = 0$, which in characteristic $p$ means that $f(x) = g(x^p)$. A field is **perfect** if every irreducible polynomial over it is separable.
 
 **Theorem.** A field is perfect if and only if it has characteristic $0$, or characteristic $p$ with the Frobenius map $x \mapsto x^p$ surjective.
 

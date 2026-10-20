@@ -2,7 +2,7 @@
 
 ## Introduction
 
-For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive, trace-one elements of the Hermitian subspace $\mathbb{M}_+$, and that set is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* establishes this as an exact statement: with
+For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive elements of the Hermitian subspace $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), and that set is the intersection of the hyperplane $\{\mathrm{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* establishes this as an exact statement: with
 
 $$
 \tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
@@ -26,7 +26,7 @@ $$
 \langle\tilde H\rangle_{\natural}=h_t^2-|\vec h|^2 ,
 $$
 
-of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $\langle\tilde H\rangle_{\natural}\ge0$ with $h_t\ge0$. The trace-one hyperplane is $\mathrm{Sc}(\tilde H)=\tfrac12$, and the states are the intersection of that hyperplane with the cone,
+of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $\langle\tilde H\rangle_{\natural}\ge0$ with $h_t\ge0$. The normalisation hyperplane is $\mathrm{Sc}(\tilde H)=\tfrac12$ — the trace-one hyperplane in the $2\times2$ image — and the states are the intersection of that hyperplane with the cone,
 
 $$
 \tilde{Ϛ}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec h,\qquad |\vec r|^2\le1 ,

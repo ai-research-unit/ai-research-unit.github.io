@@ -14,7 +14,7 @@ $$
 $$
 the **effective action**, whose derivatives give the one-particle-irreducible (1PI) correlation functions, and whose expansion in powers of $\hbar$ is the loop expansion. This article asks what the biquaternion algebra $\mathbb{B}$ contributes to that pair of objects.
 
-The answer is a factorization statement and a convexity statement, both inherited from the trace pairing, and both sharpened by the sector split.
+The answer is a factorization statement and a convexity statement, both inherited from the plain form, and both sharpened by the sector split.
 
 - **Established, and recomputed below.** For a free theory with central kinetic operator $K_{\mathrm{kin}}$ the connected and effective functionals are the quadratic forms
 $$
@@ -41,7 +41,7 @@ The article proceeds as follows. The next section defines the connected function
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
-is the positive-definite Hilbert–Schmidt form on the algebra; the sector signature belongs to the biquaternion norm. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle$ with $K_{\mathrm{kin}}=\Box-m^2$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the trace pairing and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
+is the positive-definite Hilbert–Schmidt form on the algebra; the sector signature belongs to the biquaternion norm. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,K_{\mathrm{kin}}\tilde\Phi\rangle$ with $K_{\mathrm{kin}}=\Box-m^2$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the plain form and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
 
 ## The Connected Generating Functional
 
@@ -134,7 +134,7 @@ $$
 $$
 evaluated on the module, with $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ the operator of the quadratic fluctuations about the classical field. In the biquaternion framework $S^{(2)}[\tilde\Phi_{\mathrm{cl}}]$ is an operator on the module and the trace is the trace pairing of the algebra, so the one-loop effective action is the logarithm of a determinant of $\mathbb{B}$-module operators. This is the object that the next article computes.
 
-**Standard, and transcribed.** The loop expansion, the identification of $\Gamma$ as the 1PI generator, and the form of $\Gamma_1$ are standard field theory (Weinberg, Peskin–Schroeder, Zinn-Justin) and are not rebuilt here. The biquaternion content is the module on which $S^{(2)}$ acts and the trace pairing used to define its logarithm.
+**Standard, and transcribed.** The loop expansion, the identification of $\Gamma$ as the 1PI generator, and the form of $\Gamma_1$ are standard field theory (Weinberg, Peskin–Schroeder, Zinn-Justin) and are not rebuilt here. The biquaternion content is the module on which $S^{(2)}$ acts and the plain form used to define its logarithm.
 
 **A structural consequence.** Because $S^{(2)}$ is obtained by differentiating the central action, it is central whenever the classical field multiplies a central vertex; for a scalar biquaternion field with central mass the fluctuation operator is central, so it does not mix sectors and $\Gamma_1$ factorizes. For a fermionic field the mass term is a right multiplication and $S^{(2)}$ is not central; $\Gamma_1$ then does mix the chiralities, and this is where the anomaly and index structure of articles 11 and 12 enters.
 
@@ -150,7 +150,7 @@ because $\log$ of a product is a sum. The Legendre transform of a sum of indepen
 $$
 \Gamma[\tilde\Phi_{\mathrm{cl}}] = \Gamma_-[\tilde\Phi_{\mathrm{cl},-}]+\Gamma_+[\tilde\Phi_{\mathrm{cl},+}] .
 $$
-At one loop the same statement holds with $\Gamma_{1,\pm}=\tfrac12\mathrm{Tr}\log S_\pm^{(2)}$, and the determinant factorizes, $\det S^{(2)}=\det S_-''\det S_+''$.
+At one loop the same statement holds with $\Gamma_{1,\pm}=\tfrac12\mathrm{Tr}\log S_\pm^{(2)}$, and the determinant factorizes, $\det S^{(2)}=\det S_-^{(2)}\det S_+^{(2)}$.
 
 **What breaks the factorization.** Any term that is not sector-diagonal. The three candidates, in order of importance, are: an interaction that couples the sectors, such as a term built from $\mathrm{Sc}(\tilde\Phi\tilde\Phi^{\natural}\tilde\Phi\tilde\Phi^{\natural})$ with a non-central contraction; a kinetic operator that is not central; and the chirality-off-diagonal Dirac mass. A central scalar theory factorizes at all loops.
 

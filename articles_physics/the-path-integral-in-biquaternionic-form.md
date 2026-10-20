@@ -24,12 +24,12 @@ $$
 p_r=\frac{\partial S}{\partial \xi_r}, \qquad P_r=-\frac{\partial S}{\partial \eta_r},
 $$
 
-with $S=S(\xi,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \xi'|\eta'\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(iS/\hbar)$.
+with $S=S(\xi,\eta)$ the generator. In the quantum theory the two sets cannot be diagonal at once, but the two representations are connected by a **transformation function** $\langle \xi_f|\eta_f\rangle$, and Dirac's observation is that this function is the quantum analogue of $\exp(iS/\hbar)$.
 
-The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle \xi'|\eta'\rangle=\exp(iU/\hbar)$. For any function expressed as a well-ordered sum of products $f(\xi)g(\eta)$ — every $\xi$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
+The mechanism is a change of basis, and it is exact in finite dimension. Write the transformation function as $\langle \xi_f|\eta_f\rangle=\exp(iU/\hbar)$. For any function expressed as a well-ordered sum of products $f(\xi)g(\eta)$ — every $\xi$ to the left of every $\eta$ — the mixed matrix element is multiplicative,
 
 $$
-\langle \xi'|f(\xi)g(\eta)|\eta'\rangle=f(\xi')g(\eta')\,\langle \xi'|\eta'\rangle ,
+\langle \xi_f|f(\xi)g(\eta)|\eta_f\rangle=f(\xi_f)g(\eta_f)\,\langle \xi_f|\eta_f\rangle ,
 $$
 
 because $f(\xi)$ is diagonal in the $\xi$-representation, $g(\eta)$ is diagonal in the $\eta$-representation, and the two diagonalisations meet only in the transformation function. Applying this to the momentum gives $p_r=\partial U/\partial \xi_r$ and $P_r=-\partial U/\partial \eta_r$ as equations between operators, **provided the derivatives are well-ordered**. The qualification is not removable: the only differentiation available on the dynamical variables is the Poisson bracket, and it is the step at which the quantum theory fails to reproduce the classical Lagrangian equations directly. The operator form of the relations, with that caveat, had been proved by Jordan by another method and is recovered in the paper as a by-product of the transformation function.
@@ -48,8 +48,8 @@ $$
 with the single-step kernel
 
 $$
-K_\varepsilon(x',x)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{1/2}
-\exp\Big[\frac{i}{\hbar}\Big(\frac{m(x'-x)^2}{2\varepsilon}-\varepsilon\,V(x)\Big)\Big]+O(\varepsilon^2).
+K_\varepsilon(x_{\mathrm f},x)=\Big(\frac{m}{2\pi i\hbar\varepsilon}\Big)^{1/2}
+\exp\Big[\frac{i}{\hbar}\Big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon\,V(x)\Big)\Big]+O(\varepsilon^2).
 $$
 
 Two structural properties follow directly from this definition and are the ones the biquaternion interpretation has to respect.
@@ -363,7 +363,7 @@ The canonical commutator is not visible in the commuting sum over paths, but its
 | $S[x]=\int L\,dt$ | Action; real scalar |
 | $\exp(iS/\hbar)$ | Path phase; central unitary element of $\mathbb{C}_{\mathbb{B}}$ |
 | $ie_t$ | Generator of the phase; exchanges the sectors, $i\mathbb{M}_\pm=\mathbb{M}_\mp$ |
-| $K_\varepsilon(x',x)$ | Single-step kernel; phase $=\frac{i}{\hbar}\big(\frac{m(x'-x)^2}{2\varepsilon}-\varepsilon V\big)$ |
+| $K_\varepsilon(x_{\mathrm f},x)$ | Single-step kernel; phase $=\frac{i}{\hbar}\big(\frac{m(x_{\mathrm f}-x)^2}{2\varepsilon}-\varepsilon V\big)$ |
 | $K_0$ | Free kernel; $K_0=\mathcal{K}_0e_t$, $\lvert\mathcal{K}_0\rvert^2=m/2\pi\hbar T$ |
 | $S_{\mathrm{cl}}$ | Classical action; stationary point of $S[x]$; phase of the free kernel |
 | $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |

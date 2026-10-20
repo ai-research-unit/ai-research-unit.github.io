@@ -115,7 +115,7 @@ Two features of $\mathcal{Z}$ are used below. First, it is the common boundary o
 The Lorentz group acts on the material sector by rotor conjugation with the Lorentz rotor $\tilde U_{\mathrm L}$,
 
 $$
-\tilde{R} \;\longmapsto\; \tilde{R}' = \tilde U_{\mathrm L}\,\tilde{R}\,\tilde U_{\mathrm L}^{*},
+\tilde{R} \;\longmapsto\; \tilde{R}_2 = \tilde U_{\mathrm L}\,\tilde{R}\,\tilde U_{\mathrm L}^{*},
 \qquad
 \tilde U_{\mathrm L} \in \mathbb{B}, \quad \tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural} = e_t,
 $$
@@ -123,7 +123,7 @@ $$
 as developed in the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. The biquaternion norm is multiplicative, $\langle\tilde{Q}_1\tilde Q_2\rangle_{\natural} = \langle\tilde{Q}_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and complex conjugation supplies $\langle\tilde U_{\mathrm L}^{*}\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural}^*$. Hence
 
 $$
-\langle\tilde{R}'\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural} \, \langle\tilde{R}\rangle_{\natural} \, \langle\tilde U_{\mathrm L}^{*}\rangle_{\natural}
+\langle\tilde{R}_2\rangle_{\natural} = \langle\tilde U_{\mathrm L}\rangle_{\natural} \, \langle\tilde{R}\rangle_{\natural} \, \langle\tilde U_{\mathrm L}^{*}\rangle_{\natural}
 = \langle\tilde U_{\mathrm L}\rangle_{\natural}\,\langle\tilde{R}\rangle_{\natural}\,\langle\tilde U_{\mathrm L}\rangle_{\natural}^*
 = \langle\tilde{R}\rangle_{\natural},
 $$
@@ -297,7 +297,7 @@ The same bound appears in the contraction of a null wavevector with an observer,
 
 ### The Boundary of the Theorem: a Constant Rapidity
 
-Every bound in this section composes **fixed** rapidities, that is, changes between inertial frames. A rotor whose rapidity varies along the trajectory is not covered: its coordinate velocity is the same tangent-addition form with the acceleration rate $\tau\chi'$ in place of a second rapidity, and the worldline ceases to be timelike when $|\tau\chi'| = 1$, so past that point it is not the worldline of a material corpuscle and no signal leaves the cone. The construction is worked as *Problem 5: A Varying Rapidity* of the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, where the formulas and their source are given. Nothing constructed in this article depends on it; the paragraph marks the theorem's domain as the inertial case.
+Every bound in this section composes **fixed** rapidities, that is, changes between inertial frames. A rotor whose rapidity varies along the trajectory is not covered: its coordinate velocity is the same tangent-addition form with the acceleration rate $\tau\,d\chi/d\tau$ in place of a second rapidity, and the worldline ceases to be timelike when $|\tau\,d\chi/d\tau| = 1$, so past that point it is not the worldline of a material corpuscle and no signal leaves the cone. The construction is worked as *Problem 5: A Varying Rapidity* of the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, where the formulas and their source are given. Nothing constructed in this article depends on it; the paragraph marks the theorem's domain as the inertial case.
 
 ## The Cone as the Characteristic Cone of the Wave Operator
 

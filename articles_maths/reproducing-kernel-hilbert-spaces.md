@@ -140,14 +140,14 @@ space is $\mathbb C^n$ with its Euclidean inner product and $k_i=e_i$. For $X=\m
 kernel the space is $\ell^2$, with $k_n=e_n$.
 
 **Example (the Sobolev space with one boundary condition).** On $X=[0,1]$ let
-$\langle f,g\rangle=\int_0^1f'(t)\overline{g'(t)}\,dt$ on the functions with $f(0)=0$ and square-integrable
+$\langle f,g\rangle=\int_0^1\frac{df}{dt}\overline{\frac{dg}{dt}}\,dt$ on the functions with $f(0)=0$ and square-integrable
 derivative. The kernel is
 $$
 K(x,y)=\min(x,y),
 $$
 and the reproducing property is exact: $\partial/\partial y\,\min(x,y)=\mathbf 1_{\{y<x\}}$ away from $y=x$, so
 $$
-\langle f,K(\cdot,x)\rangle=\int_0^1f'(y)\mathbf 1_{\{y<x\}}\,dy=f(x)-f(0)=f(x) .
+\langle f,K(\cdot,x)\rangle=\int_0^1\frac{df}{dt}(y)\mathbf 1_{\{y<x\}}\,dy=f(x)-f(0)=f(x) .
 $$
 The space $H_K$ is the completion, consisting of absolutely continuous functions vanishing at $0$ with
 square-integrable derivative. The kernel $\min(x,y)$ is positive definite on $[0,1]$, its finite matrices

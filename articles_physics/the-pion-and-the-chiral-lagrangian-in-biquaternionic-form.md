@@ -252,9 +252,9 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 **The chiral field is a rotor.** The unit real quaternion $\tilde U = \exp(\vec\pi/f_\pi)$ is the framework's rotation element, and the chiral transformation $\tilde U\mapsto g_L\tilde U g_R^{-1}$ is the composition of a left and a right rotation. The unbroken isospin is the diagonal, i.e. the conjugation by a single rotor, and the pion field is the logarithm of the rotor. This is the same geometric identification that the nonlinear-sigma-model article makes, specialised to $SU(2)$ and to the pion triplet, and it is exact as a statement about the framework's group manifold.
 
-**The trace fixes the normalisation.** The kinetic term's coefficient is fixed by $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, and the framework's trace pairing supplies it. The framework therefore contributes the normalisation in which $f_\pi$ appears, and hence the normalisation in which the GOR relation and the PCAC matrix element are written. This is the same role the trace plays in every bilinear of the series.
+**The trace fixes the normalisation.** The kinetic term's coefficient is fixed by $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$, and the framework's plain form, read as the trace pairing, supplies it. The framework therefore contributes the normalisation in which $f_\pi$ appears, and hence the normalisation in which the GOR relation and the PCAC matrix element are written. This is the same role the trace plays in every bilinear of the series.
 
-**The chiral group's axial half is not supplied.** The framework's centre is vector-like, and the algebra contains no axial generator acting on the pion triplet. The isospin $SU(2)_V$ is realised; the axial $SU(2)_A$ is not. The consequence is that the chiral Lagrangian is available to the framework as a geometric object and as a theory of the unbroken isospin current, while the axial current, the anomaly, the Wess–Zumino–Witten term and the flavour-singlet $\eta'$ mass are imported. This is the same boundary that the companion articles on chiral fermions and on the Standard Model agenda draw for the spinor sector, seen here from the pion side.
+**The chiral group's axial half is not supplied.** The framework's centre is vector-like, and the algebra contains no axial generator acting on the pion triplet. The isospin $SU(2)_V$ is realised; the axial $SU(2)_A$ is not. The consequence is that the chiral Lagrangian is available to the framework as a geometric object and as a theory of the unbroken isospin current, while the axial current, the anomaly, the Wess–Zumino–Witten term and the flavour-singlet $\eta_{\mathrm s}$ mass are imported. This is the same boundary that the companion articles on chiral fermions and on the Standard Model agenda draw for the spinor sector, seen here from the pion side.
 
 ## Open Questions
 
@@ -264,7 +264,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 3. **The axial current's origin.** Whether the framework's spinor sector, once its chirality is fixed, produces the axial current and the anomaly coefficient — and hence the Wess–Zumino–Witten level — is the question that would close the gap. It belongs to the spinor and anomaly articles.
 
-4. **The flavour-singlet and the $\eta'$.** The ninth pseudo-Goldstone boson of three-flavour chiral symmetry acquires its mass from the anomaly; whether the framework can host the three-flavour extension, which would require an $SU(3)$ flavour group beyond the unit quaternions, is not settled.
+4. **The flavour-singlet and the $\eta_{\mathrm s}$.** The ninth pseudo-Goldstone boson of three-flavour chiral symmetry acquires its mass from the anomaly; whether the framework can host the three-flavour extension, which would require an $SU(3)$ flavour group beyond the unit quaternions, is not settled.
 
 5. **The nucleon sector.** The Goldberger–Treiman relation ties $f_\pi$ to the nucleon's axial charge and pion coupling; whether the framework's spinor articles reproduce that relation with the same normalisation is the cross-check that would test the pion assignment.
 

@@ -91,7 +91,7 @@ The isotropic lines are exactly the lines $\mathbb{C}(e_t+\tilde Q_3)$ with $\|\
 
 ## Worked Examples
 
-**An isotropic element of the centre–vector type.** $\tilde{Q}=e_t+\vec e_x$: isotropic, norm $2$, in the light cone of the real quaternion slice at the boundary.
+**An isotropic element of the centre–vector type.** $\tilde{Q}=e_t+\vec e_x$: isotropic, norm $2$, in the null cone of the real quaternion slice at the boundary.
 
 **A zero divisor that is isotropic.** $\tilde{Q}=e_t+i\vec e_x$: both $\langle\cdot\rangle_{\natural}=0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$; the line it spans is a doubly null line.
 

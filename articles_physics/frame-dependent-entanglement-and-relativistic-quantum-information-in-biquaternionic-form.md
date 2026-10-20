@@ -14,7 +14,7 @@ The findings are stated in advance.
 4. **The symmetric two-branch case is a dephasing channel.** When the momentum branches are symmetric about the boost axis, the two Wigner rotations are rotations about a common axis by opposite angles, and their average is the dephasing of the spin about that axis: the Bloch component along the Wigner axis is preserved and the transverse components are damped by $\cos\alpha$, where $\alpha$ is the Wigner angle.
 5. **The $SL(2,\mathbb{C})$-invariant concurrence is a spinor concurrence.** In the spinor description, the Lorentz rotor $\tilde U_{\mathrm L}$ — the unit-norm biquaternion with $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ — acts as $\tilde U_{\mathrm L}\otimes\tilde U_{\mathrm L}$ with unit determinant on each factor and leaves the symplectic concurrence $|\psi^{\mathsf T}(\epsilon\otimes\epsilon)\psi|$ exactly invariant; the frame dependence appears only after normalization, i.e. only for configurations with momentum spread, which is the algebraic statement that the effect is kinematic rather than dynamical.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\mathsf M_2$. The two-qubit space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$. The Wigner rotation of the relativistic-qubit companion is $\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}'}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\in SU(2)$, acting on a spin state by conjugation.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\mathsf M_2$. The two-qubit space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$. The Wigner rotation of the relativistic-qubit companion is $\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}_{\mathrm{out}}}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\in SU(2)$, acting on a spin state by conjugation.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the little group, the Wigner rotation, and the distinction between the spinor action and the spin-state rotation.
@@ -60,7 +60,7 @@ vanishing on product states and equal to $1$ on the Bell states; for a mixed sta
 
 **Entanglement entropy.** For a pure joint state it is the von Neumann entropy of either reduced state, $E = S(\mathrm{Tr}_2\tilde\Pi) = -s_1^2\log s_1^2 - s_2^2\log s_2^2$, and it is a function of the single invariant $s_1^2$. For mixed joint states the partial-trace entropy is a marginal entropy and not an entanglement measure, as the companion exercise records; the concurrence is used for mixed states below.
 
-The framework inherits all three unchanged: they are computed from the trace and the tensor product, and the algebra's trace pairing is the Born pairing. The relativistic question is what the unit-norm group does to them.
+The framework inherits all three unchanged: they are computed from the trace and the tensor product, and the algebra's normalised plain form, read as the trace pairing, is the Born weight. The relativistic question is what the unit-norm group does to them.
 
 ## The Lorentz Transformation of a Two-Particle State
 
@@ -70,9 +70,9 @@ Consider two massive particles with sharp four-velocities $\tilde{V}_1,\tilde{V}
 $$
 |\Psi\rangle = |\tilde{V}_1\rangle\otimes|\tilde{V}_2\rangle\otimes|\chi\rangle , \qquad |\chi\rangle\in S\otimes S ,
 $$
-and a Lorentz transformation $\tilde U_{\mathrm L}$ maps the momentum labels to $\tilde{V}_j' = \tilde U_{\mathrm L}\tilde{V}_j\tilde U_{\mathrm L}^{*}$ and applies to the spin the Wigner rotations of the two particles,
+and a Lorentz transformation $\tilde U_{\mathrm L}$ maps the momentum labels to $\tilde{V}_{j,2} = \tilde U_{\mathrm L}\tilde{V}_j\tilde U_{\mathrm L}^{*}$ and applies to the spin the Wigner rotations of the two particles,
 $$
-|\Psi\rangle \ \longmapsto\ |\tilde{V}_1'\rangle\otimes|\tilde{V}_2'\rangle\otimes\bigl(\tilde{W}_1\otimes\tilde{W}_2\bigr)|\chi\rangle ,
+|\Psi\rangle \ \longmapsto\ |\tilde{V}_{1,2}\rangle\otimes|\tilde{V}_{2,2}\rangle\otimes\bigl(\tilde{W}_1\otimes\tilde{W}_2\bigr)|\chi\rangle ,
 \qquad
 \tilde{W}_j = \tilde{W}(\tilde U_{\mathrm L},\tilde{V}_j)\in SU(2).
 $$
@@ -110,7 +110,7 @@ $$
 $$
 where the spin state may itself be correlated with the momentum branch. The Lorentz transformation acts branch by branch,
 $$
-|\Psi\rangle \ \longmapsto\ \sum_i\sqrt{w_i}\,|\tilde{V}_{1,i}'\rangle\otimes|\tilde{V}_{2,i}'\rangle\otimes
+|\Psi\rangle \ \longmapsto\ \sum_i\sqrt{w_i}\,|\tilde{V}_{1,i,2}\rangle\otimes|\tilde{V}_{2,i,2}\rangle\otimes
 \bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)|\chi_i\rangle ,
 \qquad
 \tilde{W}_{j,i} = \tilde{W}(\tilde U_{\mathrm L},\tilde{V}_{j,i}),
@@ -139,9 +139,9 @@ Writing the Bloch vector of $\tilde{Ϛ}_A$ as $\vec r = r_\parallel\vec u_{\math
 $$
 r_\parallel \ \longmapsto\ r_\parallel, \qquad \vec r_\perp \ \longmapsto\ \cos\alpha\ \vec r_\perp ,
 $$
-so the channel is the **dephasing about the Wigner axis**: the Bloch component along $\vec u_{\mathrm r}$ survives and the transverse components are damped by $\cos\alpha$. The Bloch radius of a pure initial state becomes $r' = \sqrt{\cos^2\alpha\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec r$ and $\vec u_{\mathrm r}$; for $\vec r\perp\vec u_{\mathrm r}$ it is exactly $\cos\alpha$, and for $\vec r\parallel\vec u_{\mathrm r}$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
+so the channel is the **dephasing about the Wigner axis**: the Bloch component along $\vec u_{\mathrm r}$ survives and the transverse components are damped by $\cos\alpha$. The Bloch radius of a pure initial state becomes $r_{\mathrm{red}} = \sqrt{\cos^2\alpha\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec r$ and $\vec u_{\mathrm r}$; for $\vec r\perp\vec u_{\mathrm r}$ it is exactly $\cos\alpha$, and for $\vec r\parallel\vec u_{\mathrm r}$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
 $$
-S(\tilde{Ϛ}_A') = h\!\left(\frac{1+r'}{2}\right), \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
+S(\tilde{Ϛ}_{A,2}) = h\!\left(\frac{1+r_{\mathrm{red}}}{2}\right), \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
 $$
 which for a purely transverse initial Bloch vector is $h((1+\cos\alpha)/2)$, and which is the entropy of the spin–momentum correlation the boost has created.
 
@@ -240,7 +240,7 @@ with the coefficient $1/2$ confirmed by a numerical limit in which both rapiditi
 
 The framework's contribution to this subject is a structural one, and it can be stated in three points. First, the two objects whose mismatch produces the frame dependence have a single algebraic locus. The Wigner rotation is the compact, material rotation generated by the non-compact, informational boosts: it is the little-group element $\tilde{W}\in SU(2)\subset\mathbb{B}$ extracted from a product of unit-norm biquaternions, and the momentum dependence of $\tilde{W}$ is the momentum dependence of a rotor, i.e. of an element of the same algebra that carries the spin. There is no second structure to be introduced: the boost and the spin rotation are elements of one algebra, and their composition is algebra multiplication.
 
-Second, the entanglement measures are pairings. The correlation function, the concurrence, and the reduced state are all computed from the tensor-product trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$ and the partial trace, and the relativistic action is a congruence on the factors. Read this way, the frame dependence of entanglement is a statement about which pairings the congruence preserves: the full pairing is preserved, the reduced pairing is not, and the difference is exactly the information the boost moves from the spin factor into the spin–momentum correlation.
+Second, the entanglement measures are pairings. The correlation function, the concurrence, and the reduced state are all computed from the tensor-product plain form, read as the trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$ and the partial trace, and the relativistic action is a congruence on the factors. Read this way, the frame dependence of entanglement is a statement about which pairings the congruence preserves: the full pairing is preserved, the reduced pairing is not, and the difference is exactly the information the boost moves from the spin factor into the spin–momentum correlation.
 
 Third, the invariant is a spinor bilinear form. The symplectic concurrence that survives the boost is the algebraic invariant of the spinor representation, and its non-invariance after normalization is the algebraic trace of the wave-packet character of the state. This is a genuinely biquaternionic statement, because it is the multiplication of spinors by biquaternions that produces both the invariant and its normalization; the framework makes the split between them explicit in a way that the operator formalism states only through the transformation of a density matrix.
 
@@ -252,7 +252,7 @@ For a momentum superposition, the boost acts branch by branch and is a momentum-
 $$
 \tilde{Ϛ}\ \longmapsto\ \sum_i w_i\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)\,\tilde{Ϛ}\,\bigl(\tilde{W}_{1,i}\otimes\tilde{W}_{2,i}\bigr)^\dagger .
 $$
-The channel is unitary exactly when the Wigner rotation is branch-independent, and otherwise it changes the entanglement. In the symmetric two-branch case it is the dephasing about the Wigner axis, with the parallel Bloch component preserved and the transverse components damped by $\cos\alpha$; the single-particle entropy produced is $h((1+r')/2)$, and the concurrence of a maximally entangled pair decreases monotonically with the boost rapidity, equalling $\cos\alpha$ for the symmetric configuration. For a state with $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, $A$ in a symmetric two-branch superposition with $\theta = 0.8$ and speed $0.5c$, and $B$ at sharp momentum along the boost axis, the concurrence falls from $1$ at $\psi = 0$ to $0.98127650$ at $\psi = 1$ and $0.92765115$ at $\psi = 2.5$, with the von Neumann entropy of the two-qubit spin state rising from $0$ to $0.076532$ and $0.224468$.
+The channel is unitary exactly when the Wigner rotation is branch-independent, and otherwise it changes the entanglement. In the symmetric two-branch case it is the dephasing about the Wigner axis, with the parallel Bloch component preserved and the transverse components damped by $\cos\alpha$; the single-particle entropy produced is $h((1+r_{\mathrm{red}})/2)$, and the concurrence of a maximally entangled pair decreases monotonically with the boost rapidity, equalling $\cos\alpha$ for the symmetric configuration. For a state with $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, $A$ in a symmetric two-branch superposition with $\theta = 0.8$ and speed $0.5c$, and $B$ at sharp momentum along the boost axis, the concurrence falls from $1$ at $\psi = 0$ to $0.98127650$ at $\psi = 1$ and $0.92765115$ at $\psi = 2.5$, with the von Neumann entropy of the two-qubit spin state rising from $0$ to $0.076532$ and $0.224468$.
 
 The invariant behind the computation is the spinor symplectic concurrence $\mathcal{C}(\psi) = |\psi^{\mathsf T}(\epsilon\otimes\epsilon)\psi|$, which is exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant because $\tilde U_{\mathrm L}^{\mathsf T}\epsilon\tilde U_{\mathrm L} = \det(\tilde U_{\mathrm L})\epsilon = \epsilon$. The frame dependence appears only in the normalized ratio, because a boost preserves the bilinear pairing but not the spinor norm; a sharp momentum has a single branch and the effect cancels. The entanglement of the full state, momentum included, is frame-independent, and no local operation changes the marginal statistics of the other particle; what is frame-dependent is the partial description that discards the momentum, and what produces it is the momentum dependence of the little-group rotor.
 
@@ -267,7 +267,7 @@ The invariant behind the computation is the spinor symplectic concurrence $\math
 | $C(|\Psi\rangle) = \|\langle\Psi|\tilde{\Psi}|\Psi^{*}\rangle\|$ | Concurrence, $\tilde{\Psi}=(i\sigma_2)\otimes(i\sigma_2)$ |
 | $E = S(\mathrm{Tr}_2\tilde\Pi)$ | Entanglement entropy of a pure state |
 | $\tilde{V}_j$ | Four-velocity of particle $j$, $\langle\tilde{V}_j\rangle_{\natural} = -c^2$ |
-| $\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}'}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\in SU(2)$ | Wigner rotation |
+| $\tilde{W}(\tilde U_{\mathrm L},\tilde{V}) = \tilde U_{\mathrm L,\tilde{V}_{\mathrm{out}}}\tilde U_{\mathrm L}\tilde U_{\mathrm L,\tilde{V}}^{-1}\in SU(2)$ | Wigner rotation, $\tilde V_{\mathrm{out}}=\tilde U_{\mathrm L}\tilde V\tilde U_{\mathrm L}^{*}$ |
 | $\tilde{W}_{j,i}$ | Wigner rotation of particle $j$ in momentum branch $i$ |
 | $w_i$ | Momentum-branch probabilities, $\sum_iw_i = 1$ |
 | $\alpha$ | Wigner angle of a branch |

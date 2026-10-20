@@ -16,7 +16,7 @@ The order is the order of the readings. Each section states the algebraic result
 
 **Placement.** The article belongs to the Algebra block, after *The Krein Form and the Indefinite Structure*, because it closes the state side of the block. It is not a fifth product: the product is *The Four General Products: Composition, Probability, Causality, Gauge*, and this article reads the band that article names probability.
 
-**Boundaries.** No dynamics is supplied. The Born rule is the trace formula and is not derived here. The three species are grades of a reality condition, and the identification of a grade with a particle type is a hypothesis. The square is the minimal crossing of the sectors, not the only map that crosses them. The geometric phase is cited from its owners. The purity gap is a reading on the trace-one positive slice.
+**Boundaries.** No dynamics is supplied. The Born rule is the normalised plain form, read as the trace formula, and is not derived here. The three species are grades of a reality condition, and the identification of a grade with a particle type is a hypothesis. The square is the minimal crossing of the sectors, not the only map that crosses them. The geometric phase is cited from its owners. The purity gap is a reading on the positive slice $\mathrm{Sc}=\tfrac12$ (trace one in the $2\times2$ image).
 
 ## The Results It Uses
 
@@ -385,7 +385,7 @@ The square gives the weight and the axis; the norm gives the interval.
 
 ### The Arrow Reading
 
-A material element is a process, or the generator of one; its square is a Hermitian element, an observable; the pairing of that observable with a state gives the weight. The square is the algebraic step that crosses from the process side to the observable side, and the Born rule is the trace pairing that reads the weight. The square names the shape of the step; the trace formula supplies the probability.
+A material element is a process, or the generator of one; its square is a Hermitian element, an observable; the pairing of that observable with a state gives the weight. The square is the algebraic step that crosses from the process side to the observable side, and the Born rule is the normalised plain form, read as the trace pairing that reads the weight. The square names the shape of the step; the normalised plain form, read as the trace formula, supplies the probability.
 
 The sign is the sector. On the material sector the plain square is negative semidefinite, because $\tilde Q^{2}=-\tilde Q\tilde Q^{*}$; the positive weight is the negative of the square, equivalently the Hermitian square $\tilde Q\tilde Q^{*}$. The arrow is the crossing, and the sign is the direction from which the weight is read.
 
@@ -500,7 +500,7 @@ The three grades of coefficient reality are the complex, central and real specie
 - [The Four General Products: Composition, Probability, Causality, Gauge](the-four-general-products-composition-probability-causality-gauge.html), for the place of the band among the four products.
 - [The Eight Derived Structures: Symmetric and Antisymmetric](the-eight-derived-structures-symmetric-and-antisymmetric.html), for the GPS and GQA structures, their products, their roots and their nilpotents.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state space and the trace-one slice.
-- [The Bloch Ball as the Trace-One Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the purity and the linear entropy.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the purity and the linear entropy.
 - [Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form](pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.html), for the half-solid-angle rule.
 - [The Hopf Fibration and the Biquaternion Gauge Bundle](the-hopf-fibration-and-the-biquaternion-gauge-bundle.html), for the phase fibre.
 - [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the monoid of acting maps and the cone as the wall of reversibility.

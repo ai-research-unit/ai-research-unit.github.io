@@ -127,7 +127,7 @@ This is a structural difference from the quaternion case and it is worth naming:
 
 **Proof.** The components of $O(2,1)$ are described in *Isometries and Orthogonal Transformations*; the isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ is the double cover of the preceding section, and the statement about the images and kernels is the theorem on the adjoint representation and its corollary.
 
-**Remark (Signature $(2,1)$, not $(3,1)$).** The form restricted to the vector subspace has signature $(2,1)$ by (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*), and the group acting on the vector subspace is therefore the three-dimensional Lorentz group $\mathrm{SO}^{+}(2,1)$. The group $\mathrm{SO}^{+}(3,1)$ is the Lorentz group of four-dimensional Minkowski space and does not occur here; the split-quaternion system carries three-dimensional Lorentzian geometry and the hyperbolic plane, not four-dimensional geometry and hyperbolic three-space.
+**Remark (Signature $(2,1)$, not $(3,1)$).** The form restricted to the vector subspace has signature $(2,1)$ by (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*), and the group acting on the vector subspace is therefore the three-dimensional Lorentz group $\mathrm{SO}^{+}(2,1)$. The group $\mathrm{SO}^{+}(3,1)$ is the Lorentz group of four-dimensional Lorentzian space and does not occur here; the split-quaternion system carries three-dimensional Lorentzian geometry and the hyperbolic plane, not four-dimensional geometry and hyperbolic three-space.
 
 ## Elliptic and Hyperbolic One-Parameter Subgroups
 

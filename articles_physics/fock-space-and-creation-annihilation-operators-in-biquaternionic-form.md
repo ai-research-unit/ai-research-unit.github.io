@@ -89,8 +89,8 @@ and Pauli exclusion is the algebraic identity $(a^{\mathrm{fop}\dagger}_r(\vec p
 **Bosonic (Maxwell).** The potential expands in four polarizations with
 
 $$
-\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k')\big]
-=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k'),
+\big[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k_2)\big]
+=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k_2),
 \qquad
 (\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1),
 $$
@@ -107,7 +107,7 @@ None of the operators in this section is new. They are displayed together for on
 
 ## The Number Operator and the Born Rule
 
-For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{M}_+$ is Hermitian; $N=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ is Hermitian; and for a state $\tilde{Ϛ}\in\mathbb{M}_+$ that is positive and of trace one, the trace formula gives
+For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{M}_+$ is Hermitian; $N=a^{\mathrm{fop}\dagger}a^{\mathrm{fop}}$ is Hermitian; and for a positive state $\tilde{Ϛ}\in\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the image), the normalised plain form, read as the trace formula, gives
 
 $$
 \langle N\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,N)=2\,\mathrm{Sc}(\tilde{Ϛ}\,N).

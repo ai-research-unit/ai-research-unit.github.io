@@ -6,11 +6,11 @@ A massless relativistic field has a larger symmetry than a massive one. The Poin
 
 Three things are established. First, the **transformation law**. The massless scalar field of the framework transforms with conformal weight $\Delta = 1$,
 $$
-\tilde{\Phi}(\tilde{Q}) \longmapsto \Omega(\tilde{Q})^{\Delta}\,\tilde{\Phi}\bigl(\tilde{Q}'\bigr) ,
+\tilde{\Phi}(\tilde{Q}) \longmapsto \Omega(\tilde{Q})^{\Delta}\,\tilde{\Phi}\bigl(\tilde{Q}_2\bigr) ,
 $$
-where $\Omega$ is the conformal factor and $\tilde{Q}'$ is the image point; with this weight the massless equation $\Box\tilde{\Phi} = 0$ is carried into itself. The weight is not free: the identity
+where $\Omega$ is the conformal factor and $\tilde{Q}_2$ is the image point; with this weight the massless equation $\Box\tilde{\Phi} = 0$ is carried into itself. The weight is not free: the identity
 $$
-\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}'\bigr)\Bigr] = \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}'}\phi\bigr)\bigl(\tilde{Q}'\bigr)
+\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}_2\bigr)\Bigr] = \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}_2}\phi\bigr)\bigl(\tilde{Q}_2\bigr)
 $$
 holds at $\Delta = 1$ and fails at every other weight, and it was verified on a superposition of two smooth test fields to a relative accuracy of $10^{-16}$ at the correct weight, with a residual of order unity at the wrong one. Second, the **massless limit**. The mass enters the equation as the single scale in $\Box - \mu^2$, and the limit $\mu\to0$ is the limit in which the conformal weight exists; algebraically it is the limit in which the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell momentum dropping from rank four to rank two. Third, the **breaking**. Improving the stress–energy tensor makes its trace proportional to the mass term, $\Theta^\mu{}_\mu \propto \mu^2\tilde{\Phi}^2$ on shell, the coefficient depending only on the normalisation of the kinetic term — so the trace is the local measure of the conformal symmetry's failure, and it vanishes exactly in the massless limit.
 
@@ -70,13 +70,13 @@ with $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the level-two $ict$ metric of the conve
 
 ### Conformal weight
 
-A conformal transformation is a coordinate change $\tilde{Q}\mapsto\tilde{Q}'$ with
+A conformal transformation is a coordinate change $\tilde{Q}\mapsto\tilde{Q}_2$ with
 $$
-d\tilde{Q}'\,\overline{d\tilde{Q}'} = \Omega(\tilde{Q})^{2}\,d\tilde{Q}\,\overline{d\tilde{Q}} ,
+d\tilde{Q}_2\,\overline{d\tilde{Q}_2} = \Omega(\tilde{Q})^{2}\,d\tilde{Q}\,\overline{d\tilde{Q}} ,
 $$
-so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}' = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, whose interval is scaled by $1/N^2$, has $\Omega = 1/N$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
+so that the interval is scaled pointwise by the square of the conformal factor. The sign of the exponent is the whole of the convention and it is fixed once and for all here: **$\Omega$ is the factor whose square multiplies the interval**, so that the inversion $\tilde{Q}_2 = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, whose interval is scaled by $1/N^2$, has $\Omega = 1/N$, and the special conformal factor below reduces to it. Everything in the rest of the article — the operator law, the involution identity $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q})$, and the special conformal factor — uses this one $\Omega$, and the box-operator law is verified in it. A field of **conformal weight** $\Delta$ transforms by the rule
 $$
-\phi'(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}'\bigr) ,
+\phi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}_2\bigr) ,
 $$
 and the transformation is a symmetry of the equation $(\Box - \mu^2)\phi = 0$ if the equation is carried into itself. The weight is a property of the equation together with the dimension: in four dimensions the massless scalar has $\Delta = 1$, which is the value forced by the requirement that the box operator's transformation law be consistent. The massive equation has no consistent weight, because under a conformal transformation the kinetic term acquires the factor $\Omega^{\Delta+2}$ while the mass term acquires only $\Omega^{\Delta}$ — but the mass *coefficient* is a constant and does not transform, so the two terms scale differently and no choice of $\Delta$ preserves both. This is the algebraic statement of the symmetry breaking, and it is what the rest of the article quantifies.
 
@@ -84,7 +84,7 @@ and the transformation is a symmetry of the equation $(\Box - \mu^2)\phi = 0$ if
 
 ### The dilation
 
-The dilation is $\tilde{Q}\mapsto\tilde{Q}' = \lambda\tilde{Q}$, whose interval is scaled by $\lambda^2$ and which therefore has the constant conformal factor $\Omega = \lambda$; read in the inverse direction, $\Omega = \lambda^{-1}$. For the rescaled field
+The dilation is $\tilde{Q}\mapsto\tilde{Q}_2 = \lambda\tilde{Q}$, whose interval is scaled by $\lambda^2$ and which therefore has the constant conformal factor $\Omega = \lambda$; read in the inverse direction, $\Omega = \lambda^{-1}$. For the rescaled field
 $$
 \phi_\lambda(\tilde{Q}) = \lambda^{-\Delta}\,\phi(\lambda^{-1}\tilde{Q})
 $$
@@ -96,10 +96,10 @@ so $\phi_\lambda$ solves $\Box\phi_\lambda = 0$ whenever $\phi$ does, for **ever
 
 ### The inversion and the conformal Laplacian
 
-For the inversion $\tilde{Q}' = I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, the conformal factor is $\Omega(\tilde{Q}) = 1/\langle\tilde{Q}\rangle_{\natural}$, and the transformation law of the box operator is
+For the inversion $\tilde{Q}_2 = I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, the conformal factor is $\Omega(\tilde{Q}) = 1/\langle\tilde{Q}\rangle_{\natural}$, and the transformation law of the box operator is
 $$
-\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}'\bigr)\Bigr]
-= \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}'}\phi\bigr)\bigl(\tilde{Q}'\bigr)
+\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\Delta}\,\phi\bigl(\tilde{Q}_2\bigr)\Bigr]
+= \Omega(\tilde{Q})^{\Delta+2}\,\bigl(\Box_{\tilde{Q}_2}\phi\bigr)\bigl(\tilde{Q}_2\bigr)
 \qquad\text{at } \Delta = 1 ,
 $$
 with a residual proportional to $(\Delta-1)$ at other weights. The identity is the sharp statement of the massless scalar's conformal invariance, and it was verified on a superposition of two Gaussians in the four $ict$ coordinates: at $\Delta = 1$ the two sides agree to a relative accuracy of $10^{-16}$ on six random points away from the origin, while at $\Delta = 1/2$ the residual is of order unity. The two ends of the identity are the two ways of reading it: as an operator statement, it says $\Box$ is carried by the inversion into $\Omega^2\Box$; as a solution statement, it says the field $\Omega^{\Delta}\phi\circ I$ solves the massless equation whenever $\phi$ does.
@@ -119,11 +119,11 @@ $$
 $$
 the reversal on the parameter compensating the parity that the framework's inversion $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ carries. In finite form the map and its conformal factor are
 $$
-\tilde{Q}' = \frac{\tilde{Q} + \tilde{Q}_3\,\langle\tilde{Q}\rangle_{\natural}}{1 + 2\,\mathrm{Sc}\bigl(\tilde{Q}_3^{\natural}\tilde{Q}\bigr) + \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}} ,
+\tilde{Q}_2 = \frac{\tilde{Q} + \tilde{Q}_3\,\langle\tilde{Q}\rangle_{\natural}}{1 + 2\,\mathrm{Sc}\bigl(\tilde{Q}_3^{\natural}\tilde{Q}\bigr) + \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}} ,
 \qquad
 \Omega(\tilde{Q}) = \frac{1}{1 + 2\,\mathrm{Sc}\bigl(\tilde{Q}_3^{\natural}\tilde{Q}\bigr) + \langle\tilde{Q}_3\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}} ,
 $$
-so that the conformal factor is the reciprocal of the finite map's denominator; this is the companion's fractional form with the standard parameter $\tilde{Q}_3$, reproducing $x'^\mu = (x^\mu + a^\mu x^2)/(1 + 2a\cdot x + a^2x^2)$. The pair was verified by measuring $\Omega^2 = \langle d\tilde{Q}'\rangle_{\natural}/\langle d\tilde{Q}\rangle_{\natural}$ on finite differences in the four coordinate directions, agreement holding to the discretisation error in every direction and for the unbarred translation failing by a factor that varies from point to point. For $\tilde{Q}_3\to0$ the map is the identity and $\Omega\to1$; for $\tilde{Q}_3\to\infty$ it degenerates to the constant $I(\tilde{Q}_3^{\natural}) = \tilde{Q}_3/\langle\tilde{Q}_3\rangle_{\natural}$, while $\Omega$ tends to a constant multiple of the inversion's $1/\langle\tilde{Q}\rangle_{\natural}$. Because the inversion carries the box operator with weight $\Delta=1$ and the translation is a symmetry of the massless equation, the special conformal transformation is a symmetry as well, and the four $\mathcal{K}_\mu$ are conserved. The companion derives the fractional form and the conformal factor and shows that the generator is
+so that the conformal factor is the reciprocal of the finite map's denominator; this is the companion's fractional form with the standard parameter $\tilde{Q}_3$, reproducing $x_2^\mu = (x^\mu + a^\mu x^2)/(1 + 2a\cdot x + a^2x^2)$. The pair was verified by measuring $\Omega^2 = \langle d\tilde{Q}_2\rangle_{\natural}/\langle d\tilde{Q}\rangle_{\natural}$ on finite differences in the four coordinate directions, agreement holding to the discretisation error in every direction and for the unbarred translation failing by a factor that varies from point to point. For $\tilde{Q}_3\to0$ the map is the identity and $\Omega\to1$; for $\tilde{Q}_3\to\infty$ it degenerates to the constant $I(\tilde{Q}_3^{\natural}) = \tilde{Q}_3/\langle\tilde{Q}_3\rangle_{\natural}$, while $\Omega$ tends to a constant multiple of the inversion's $1/\langle\tilde{Q}\rangle_{\natural}$. Because the inversion carries the box operator with weight $\Delta=1$ and the translation is a symmetry of the massless equation, the special conformal transformation is a symmetry as well, and the four $\mathcal{K}_\mu$ are conserved. The companion derives the fractional form and the conformal factor and shows that the generator is
 $$
 \mathcal{K}_\mu = 2x_\mu x^\nu\partial/\partial Q_\nu - x^2\partial/\partial Q_\mu ,
 $$
@@ -251,7 +251,7 @@ The two routes are distinguished by their fields, and the distinction is checkab
 
 The spin-half field completes the pattern, and its conformal weight is the other standard value. In four dimensions the massless Dirac equation is conformally invariant with weight $\Delta = 3/2$,
 $$
-\tilde{\Psi}'(\tilde{Q}) = \Omega(\tilde{Q})^{3/2}\,\tilde{\Psi}\bigl(\tilde{Q}'\bigr) ,
+\tilde{\Psi}_2(\tilde{Q}) = \Omega(\tilde{Q})^{3/2}\,\tilde{\Psi}\bigl(\tilde{Q}_2\bigr) ,
 $$
 the exponent being the standard one for a spinor in four dimensions, fixed by the conformal covariance of the first-order operator: the standard identity is
 $$
@@ -288,7 +288,7 @@ The massless relativistic field of the framework has the conformal symmetry: the
 
 The massless scalar field transforms with weight $\Delta = 1$,
 $$
-\phi'(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\phi\bigl(\tilde{Q}'\bigr) ,
+\phi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\Delta}\phi\bigl(\tilde{Q}_2\bigr) ,
 \qquad
 \Box_{\tilde{Q}}\Bigl[\Omega^{\Delta}\phi\circ I\Bigr] = \Omega^{\Delta+2}\bigl(\Box\phi\bigr)\circ I \ \text{ at } \Delta = 1 ,
 $$
@@ -307,7 +307,7 @@ The improved stress tensor has trace $\Theta^\mu{}_\mu = 2\mu^2\phi^2$ on shell 
 | $\mathcal{K}_\mu = 2x_\mu x^\nu\partial/\partial Q_\nu - x^2\partial/\partial Q_\mu$ | Special conformal generator (series symbol; not the boost $K_k$) |
 | $\Omega(\tilde{Q})$ | Conformal factor; interval scaled by $\Omega^{2}$; $\Omega = 1/N$ for the inversion |
 | $\Delta$ | Conformal weight of the field; $\Delta = 1$ for the massless scalar in $d=4$ |
-| $\phi'(\tilde{Q}) = \Omega^{\Delta}\phi(\tilde{Q}')$ | Conformal transformation law |
+| $\phi_2(\tilde{Q}) = \Omega^{\Delta}\phi(\tilde{Q}_2)$ | Conformal transformation law |
 | $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Conformal inversion; $\langle I(\tilde{Q})\rangle_{\natural} = 1/\langle\tilde{Q}\rangle_{\natural}$ |
 | $\Box[\Omega^{\Delta}\phi\circ I] = \Omega^{\Delta+2}(\Box\phi)\circ I$ | Conformal covariance of the box operator at $\Delta=1$ |
 | $\Box[1/\langle\tilde{Q}\rangle_{\natural}] = 0$ | Harmonicity of the inversion image of the constant |

@@ -103,7 +103,7 @@ Z(\mathbb{B})=\bigcap_{\tilde{Q}\in\mathbb{B}}\ker\bigl(\mathrm{ad}_{\tilde{Q}}\
 $$
 and since the derivations are the infinitesimal symmetries, this is the infinitesimal form of characterization 2. The Lie algebra of the unitary group here is $\mathrm{U}(2)=\mathbb{M}_-$ (the anti-Hermitian subspace), and the centre is the one-dimensional subspace of $\mathrm{U}(2)$ on which the adjoint representation is trivial, $\mathrm{Z}(\mathrm{U}(2))=\mathbb{R}\,ie_t$.
 
-**4. Factorization of the trace pairing.** An element $\tilde{Q}$ is central if and only if its Hilbert–Schmidt correlations factorize,
+**4. Factorization of the plain form.** An element $\tilde{Q}$ is central if and only if its Hilbert–Schmidt correlations factorize,
 $$
 \tilde{Q}\in Z(\mathbb{B})
 \iff
@@ -221,15 +221,15 @@ The identification of the centre with the classical sector is exact, and its exa
 
 Four further roles of the centre place it inside the framework's standard machinery.
 
-**1. Commutant and bicommutant.** For a subset $\mathbb{S}\subseteq\mathbb{B}$ write $\mathbb{S}'=\{\tilde{Q}_1:[\tilde{Q}_1,\tilde{Q}_2]=0\ \forall\tilde{Q}_2\in\mathbb{S}\}$ for its commutant. The centre is the commutant of the largest possible set,
+**1. Commutant and bicommutant.** For a subset $\mathbb{S}\subseteq\mathbb{B}$ write $\mathbb{S}_{\mathrm c}=\{\tilde{Q}_1:[\tilde{Q}_1,\tilde{Q}_2]=0\ \forall\tilde{Q}_2\in\mathbb{S}\}$ for its commutant. The centre is the commutant of the largest possible set,
 $$
-Z(\mathbb{B})=\mathbb{B}',
+Z(\mathbb{B})=\mathbb{B}_{\mathrm c},
 $$
 and dually the commutant of the centre is the whole algebra,
 $$
-Z(\mathbb{B})'=\mathbb{B},
+Z(\mathbb{B})_{\mathrm c}=\mathbb{B},
 $$
-because every element commutes with the scalars. The two statements together identify the centre as the fixed point of the commutant operation: it is the subalgebra whose commutant is as large as possible, and it is itself the commutant of the algebra. For a maximal commutative subalgebra $\mathbb{A}$ one has $\mathbb{A}'=\mathbb{A}$, so the MASAs are exactly the self-commuting subalgebras, and the centre is their common part. This is the von Neumann bicommutant picture restricted to the finite-dimensional matrix algebra; there is no topological content to add.
+because every element commutes with the scalars. The two statements together identify the centre as the fixed point of the commutant operation: it is the subalgebra whose commutant is as large as possible, and it is itself the commutant of the algebra. For a maximal commutative subalgebra $\mathbb{A}$ one has $\mathbb{A}_{\mathrm c}=\mathbb{A}$, so the MASAs are exactly the self-commuting subalgebras, and the centre is their common part. This is the von Neumann bicommutant picture restricted to the finite-dimensional matrix algebra; there is no topological content to add.
 
 **2. Trivial action on the projective state space.** A central element acts on the state module by scalar multiplication, $\tilde Q_3\psi=(\lambda e_t)\psi=\lambda\psi$. On a ray $[\psi]$ this is invisible, since $[\lambda\psi]=[\psi]$ for $\lambda\neq0$. The centre is therefore the **kernel of the action of $\mathbb{B}^\times$ on the projective state space**: its unitary part $\mathrm{U}(1)=\{\lambda e_t:|\lambda|=1\}$ acts trivially on rays, and conversely an element that fixes every ray is a scalar and hence central, so the Hopf fibration $S^3\to S^2$ is precisely the quotient by the central unitary action. The unobservability of the global phase is thus the statement that the centre acts trivially at the level of rays, and the same fact upgrades to mixed states because a central conjugation is a scalar multiple of the identity,
 $$
@@ -294,7 +294,7 @@ The centre of the biquaternion algebra is
 $$
 Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C},
 $$
-the two-real-dimensional subalgebra of complex multiples of the unit; its Hermitian part is the one-real-dimensional line $\mathbb{R}e_t$. It is characterized equivalently as the commuting part of the algebra, the fix-point set of the adjoint action of the unitary group, the common kernel of the inner derivations, the locus where the trace pairing factorizes, and the preimage of the scalar matrices in the matrix model. These characterizations agree, which is what makes the centre canonical rather than conventional, and it is in this sense that it is **the** classical sector.
+the two-real-dimensional subalgebra of complex multiples of the unit; its Hermitian part is the one-real-dimensional line $\mathbb{R}e_t$. It is characterized equivalently as the commuting part of the algebra, the fix-point set of the adjoint action of the unitary group, the common kernel of the inner derivations, the locus where the plain form factorizes, and the preimage of the scalar matrices in the matrix model. These characterizations agree, which is what makes the centre canonical rather than conventional, and it is in this sense that it is **the** classical sector.
 
 As a classical sector it has four exact properties: central observables have state-independent expectation values and zero variance, so they are parameters rather than observables; they commute with every generator, so they are frozen under every dynamics; they are the home of the framework's $c$-number data, including the central mass coefficient $m e_t$; and as a commutative $C^{*}$-algebra the centre is $C(\{\ast\})$, the algebra of a one-point space, a single classical degree of freedom. The framework's genuine classical bits live in the maximal commutative subalgebras, which are isomorphic to $\mathbb{C}^2$ and are context-dependent: their common intersection is the centre, and no one of them is singled out by the algebra.
 

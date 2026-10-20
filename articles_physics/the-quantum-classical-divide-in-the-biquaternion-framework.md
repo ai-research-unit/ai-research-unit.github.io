@@ -22,7 +22,7 @@ The criterion of Korolkova, Sánchez-Soto, and Leuchs can be stated concisely.
 
 Consider a bipartite non-separable state $\tilde{Ϛ}$ on the tensor product $\mathcal{H}_A \otimes \mathcal{H}_B$, with partitions $A$ and $B$ chosen in some physically meaningful way. The question is whether the non-separability of $\tilde{Ϛ}$ is quantum or classical in nature. The criterion does not look at $\tilde{Ϛ}$. It looks at the operations performed on the two partitions.
 
-**Quantum entanglement.** Both partitions support **projective measurements**. A measurement is performed on partition $A$ and a measurement is performed on partition $B$. The two outcomes are correlated statistically, and the correlation function requires an ensemble of runs to be measured. The prototypical example is the singlet state with spin measurements on the two particles: two idempotents, one on each factor, joint statistics from the trace pairing.
+**Quantum entanglement.** Both partitions support **projective measurements**. A measurement is performed on partition $A$ and a measurement is performed on partition $B$. The two outcomes are correlated statistically, and the correlation function requires an ensemble of runs to be measured. The prototypical example is the singlet state with spin measurements on the two particles: two idempotents, one on each factor, joint statistics from the plain form, read as the trace pairing.
 
 **Classical non-separability.** Only one partition supports a projective measurement. The other partition supports a **unitary filtering, sorting, or basis-choice operation**. The correlation between the filter setting and the single measurement outcome is *deterministic* — the filter setting predetermines the outcome on the other partition, without any statistical distribution. The prototypical example is a vector light beam with transverse spatial mode correlated with polarization: the spatial-mode selection is a unitary operation (a spatial light modulator, a mode sorter), and the polarization measurement outcome is fixed by the spatial-mode choice.
 
@@ -38,7 +38,7 @@ Korolkova, Sánchez-Soto, and Leuchs emphasize five consequences:
 
 4. **Wave phenomena are not the criterion.** The wave equation, superposition, interference and diffraction are shared by the classical and the quantum descriptions of light, and the analogy between them has been pushed a long way: classical non-separability has been used to simulate Bell-inequality violations and a number of quantum information protocols. None of it relocates the boundary. The paper's reason is stated in its conclusion. Quantum physics is first and foremost about the interaction between a system and a measurement apparatus, not about the wave properties of the system taken by itself.
 
-5. **Enhanced metrology is not the criterion.** A classically non-separable beam that correlates its transverse spatial mode with its polarization has been used to demonstrate enhancement in a number of metrology tasks. The temptation is to read the enhancement as a quantum signature, and it is the temptation this series is most exposed to, because the informational sector is built on the Born-rule trace pairing and the very statistics that metrology exploits. The paper blocks it: the advantage comes from the increased parameter space and from a form of classical parallelism, not from a quantum resource. A measurement advantage is a fact about a protocol; by itself it does not relocate the boundary.
+5. **Enhanced metrology is not the criterion.** A classically non-separable beam that correlates its transverse spatial mode with its polarization has been used to demonstrate enhancement in a number of metrology tasks. The temptation is to read the enhancement as a quantum signature, and it is the temptation this series is most exposed to, because the informational sector is built on the Born-rule plain form, read as the trace pairing, and the very statistics that metrology exploits. The paper blocks it: the advantage comes from the increased parameter space and from a form of classical parallelism, not from a quantum resource. A measurement advantage is a fact about a protocol; by itself it does not relocate the boundary.
 
 The criterion is offered in this general form, not as a rule about optics alone. The paper places classical non-separability inside the wider class of classical wave emulations of quantum features — a class that includes, explicitly, the optical platforms used for analogue-gravity experiments — and proposes the operational test as the discriminator for all of them. The shape of the argument is the one this series already uses elsewhere: a structure that resembles a phenomenon is not the phenomenon. The algebra is structurally sufficient for relativity and for the qubit without thereby being nature's (*A Brief History of Biquaternions in Physics*, on the gap between containing a structure and having used it).
 
@@ -75,7 +75,7 @@ $$
 p(i,j) = \mathrm{Tr}\!\left(\bigl(\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)}\bigr)\circ \tilde{Ϛ}\right),
 $$
 
-where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the trace pairing of the state with a **product of two idempotents**. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product trace pairing of the state with the joint idempotent. The result is a **statistical correlation** between the two outcomes.
+where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the normalised plain form of the state with a **product of two idempotents**, read as the trace pairing. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product plain form of the state with the joint idempotent, read as the trace pairing. The result is a **statistical correlation** between the two outcomes.
 
 **Classical non-separability: one idempotent, one unitary.** A bipartite state $\tilde{Ϛ}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
@@ -107,7 +107,7 @@ The paper's Figure 1 partitions non-separable states into nested subsets accordi
 
 ### Subset I: Two objects
 
-Two distinct excitations, one in each partition. The joint state is a non-separable element of $\mathbb{M}_+^{(A)} \otimes \mathbb{M}_+^{(B)}$, and each factor carries its own excitation structure. Both idempotents $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are physically meaningful, and the joint probability is the tensor-product trace pairing.
+Two distinct excitations, one in each partition. The joint state is a non-separable element of $\mathbb{M}_+^{(A)} \otimes \mathbb{M}_+^{(B)}$, and each factor carries its own excitation structure. Both idempotents $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are physically meaningful, and the joint probability is the tensor-product plain form, read as the trace pairing.
 
 The prototypical examples are the two-particle singlet and the two-photon polarization singlet. In the framework, the singlet is the idempotent
 
@@ -115,7 +115,7 @@ $$
 \tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right),
 $$
 
-and the joint probability is the trace pairing with $\tilde\Pi_A(\vec a)\otimes \tilde\Pi_B(\vec b)$, where $\vec a$ and $\vec b$ are unit vectors along the two measured directions. This is the case treated in *Exercise: Entanglement Entropy and the Partial Trace*.
+and the joint probability is the normalised plain form, read as the normalised plain form with $\tilde\Pi_A(\vec a)\otimes \tilde\Pi_B(\vec b)$, read as the trace pairing, where $\vec a$ and $\vec b$ are unit vectors along the two measured directions. This is the case treated in *Exercise: Entanglement Entropy and the Partial Trace*.
 
 ### Subset IIa: Single excitation split by a beam splitter
 
@@ -149,7 +149,7 @@ The paper's distinction between "mode functions" and "excitations" is thus given
 
 The operational criterion, as Korolkova, Sánchez-Soto, and Leuchs present it, is a criterion about *operations*: count the idempotents. It does not require any commitment to the *role* of the state in the algebra. The framework suggests a refinement, which the paper's criterion does not require, and which is the place where the framework goes beyond the operational criterion.
 
-**Quantum entanglement lives in a fundamental element.** In the quantum case, the non-separable joint state $\tilde{Ϛ}$ is a *fundamental* element of $\mathbb{M}_+^{(A)}\otimes \mathbb{M}_+^{(B)}$. It is the state. It is what measurements act on, and there is no deeper description of the joint system that the state is derived from. The two idempotents act directly on the state, and the joint probability is the trace pairing.
+**Quantum entanglement lives in a fundamental element.** In the quantum case, the non-separable joint state $\tilde{Ϛ}$ is a *fundamental* element of $\mathbb{M}_+^{(A)}\otimes \mathbb{M}_+^{(B)}$. It is the state. It is what measurements act on, and there is no deeper description of the joint system that the state is derived from. The two idempotents act directly on the state, and the joint probability is the normalised plain form, read as the trace pairing.
 
 **Classical non-separability lives in a derived element.** In the classical case, the non-separable object — say, the coherence matrix $W_{ij}$ of a vector light beam — is a *derived* element of $\mathbb{M}_+^{\otimes 2}$ (after the appropriate reduction to a 2×2 problem). It is obtained as a second-order correlation of a classical field configuration:
 

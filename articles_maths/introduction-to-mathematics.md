@@ -382,7 +382,7 @@ The rule is not that mathematical concepts with a physical origin are forbidden.
 
 The clearest case is the **Lorentz group**. The Lorentz group is the group of linear transformations preserving a quadratic form of signature $(3,1)$. That is a complete definition in pure algebra, and the group is treated as such: its structure, its subgroups, its one-parameter subgroups and its relation to the split-biquaternions are ordinary mathematics. What the corpus does not write is *spacetime*, *the speed of light*, *an observer*, *a clock* or *a measurement*.
 
-The same discipline applies to vocabulary that carries a physical flavour more strongly than its mathematical content. Where a mathematical synonym exists it is preferred: a **hyperbolic rotation** rather than a *boost*, the **null cone of a quadratic form** rather than a *light cone*, and **signature** rather than any metrical vocabulary from relativity. A reader coming from physics will recognise these objects; the corpus describes them as the algebra and the geometry that they are.
+The same discipline applies to vocabulary that carries a physical flavour more strongly than its mathematical content. Where a mathematical synonym exists it is preferred: a **hyperbolic rotation** rather than a *boost*, the **null cone of a quadratic form** rather than a *null cone*, and **signature** rather than any metrical vocabulary from relativity. A reader coming from physics will recognise these objects; the corpus describes them as the algebra and the geometry that they are.
 
 Where a physical interpretation exists and is worth stating, it belongs to the physics corpus. The mathematical article says so with a forward reference and stops.
 

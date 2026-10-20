@@ -144,7 +144,7 @@ $$
 so that
 
 $$
-S_k(x_k) = \pm\int^{x_k}\sqrt{2m\left(E_k - V_k(x_k')\right)}\;dx_k' .
+S_k(x_k) = \pm\int^{x_k}\sqrt{2m\left(E_k - V_k(\xi)\right)}\;d\xi .
 $$
 
 The signs are the two directions of motion, and the biquaternion-norm interpretation applies to each term: the square of the phase derivative is the biquaternion norm of the one-dimensional momentum. The turning points $E_k = V_k$ are where the radicand vanishes and the two branches meet.

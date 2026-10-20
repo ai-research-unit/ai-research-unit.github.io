@@ -20,7 +20,7 @@ The article develops five things.
 - **The exterior algebra.** Occupation-number states, the wedge product, the Koszul sign, and the reason the Kleinian sign appears in the state space rather than in the operators.
 - **The Lorentz content.** $\Lambda S$ is the reducible representation $\Gamma(\rho)$; its decomposition into irreducibles is computed and contains exactly one $\tfrac12$, one vacuum, and one singlet. The $2\pi$ rotation acts as $(-1)^\text{degree}$, tying the state-space grading to the parity of the number operator.
 - **The functor $\Gamma$ and the grading.** $\Gamma(-I)=(-1)^F$ is derived and recomputed. The Fock space is $\mathbb{Z}/2$-graded, and the grading is the one the observable algebra commutes with.
-- **The sector content.** States are $\mathbb{M}_+$ elements through their density matrices; the Born rule is the trace pairing; and the field's Fock space is the tensor product over modes, whose grading is the field's fermionic parity.
+- **The sector content.** States are $\mathbb{M}_+$ elements through their density matrices; the Born rule is the normalised plain form, read as the trace pairing; and the field's Fock space is the tensor product over modes, whose grading is the field's fermionic parity.
 
 The division between transcribed standard material and the algebra's own statements is marked throughout.
 
@@ -163,7 +163,7 @@ $$
 The eigenvalues were recomputed by building the spin operators
 
 $$
-S_i=\tfrac12\sum_{ss'}a_s^{\mathrm{fop}\dagger}(\sigma_i)_{ss'}a_{s'}^{\mathrm{fop}}
+S_i=\tfrac12\sum_{s,s_2}a_s^{\mathrm{fop}\dagger}(\sigma_i)_{s,s_2}a_{s_2}^{\mathrm{fop}}
 $$
 
 on the four-dimensional space $\Lambda S$ and diagonalising $\vec J^2=\sum_iS_i^2$: the spectrum is $\{0,0,\tfrac34,\tfrac34\}$, with $N^{\mathrm{fop}}$ eigenvalues $\{0,1,1,2\}$ and $J_z$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
@@ -229,7 +229,7 @@ $$
 \mathrm{Tr}\,\tilde\Pi=1 ,
 $$
 
-and hence an element of $\mathbb{M}_+$ once the four-real-dimensional space of one-mode density matrices is identified with the algebra's Hermitian sector through the dictionary. The Born rule is the trace pairing of the framework,
+and hence an element of $\mathbb{M}_+$ once the four-real-dimensional space of one-mode density matrices is identified with the algebra's Hermitian sector through the dictionary. The Born rule is the normalised plain form of the framework, read as the trace pairing,
 
 $$
 \langle H^{\mathrm{fop}}\rangle=\mathrm{Tr}(\tilde\Pi H^{\mathrm{fop}})=2\,\mathrm{Sc}(\tilde\Pi H^{\mathrm{fop}}) ,
@@ -249,7 +249,7 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$, which for
 
 - *The one-particle space as a minimal left ideal* $S=\mathbb{B}\tilde\Pi_+$, with the two structures on it: the Hermitian form for probabilities and the antisymmetric form for invariants, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it. The distinction is a framework convention and is kept explicit.
 - *The one-mode identification of the state space with the algebra's own spin structure*: $\Lambda S$ is four-dimensional and its grading is the degree parity, so for a single ladder the Fock space, the spin tower and the parity $(-1)^F=i\vec e_z$ are all statements about $\mathbb{B}$, while over the two spin states of one momentum the state space is $\Lambda S$ itself.
-- *The sector assignment of states and observables*, both in $\mathbb{M}_+$, with the trace pairing as the Born rule.
+- *The sector assignment of states and observables*, both in $\mathbb{M}_+$, with the normalised plain form, read as the trace pairing, as the Born rule.
 
 **Open.**
 
@@ -259,9 +259,9 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$, which for
 
 ## Companion Articles
 
-- Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder, the vacuum idempotent and the trace pairing extended here to the many-mode state space.
+- Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the one-mode ladder, the vacuum idempotent and the plain form extended here to the many-mode state space.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the fermionic bracket and the external grading that force the antisymmetric state space.
-- Companion article *The KMS Condition and the Biquaternion Framework*, for the thermal state and the passage of the finite trace pairing to the field's Fock space.
+- Companion article *The KMS Condition and the Biquaternion Framework*, for the thermal state and the passage of the finite plain form to the field's Fock space.
 
 ## Summary
 
@@ -277,7 +277,7 @@ $$
 
 with $\vec J^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N^{\mathrm{fop}}}$, and the identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed in both constructions. For one mode the parity is the algebra element $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$; for the field it is the product over modes and external to $\mathbb{B}$.
 
-The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). States are Hermitian idempotents of $\mathbb{M}_+$, the observables are even, and the Born rule is the trace pairing $\mathrm{Tr}(\tilde\Pi H^{\mathrm{fop}})=2\,\mathrm{Sc}(\tilde\Pi H^{\mathrm{fop}})$, checked to machine precision.
+The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). States are Hermitian idempotents of $\mathbb{M}_+$, the observables are even, and the Born rule is the normalised plain form, read as the trace pairing $\mathrm{Tr}(\tilde\Pi H^{\mathrm{fop}})=2\,\mathrm{Sc}(\tilde\Pi H^{\mathrm{fop}})$, checked to machine precision.
 
 ## Summary of Notation
 
@@ -294,12 +294,12 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 | $N^{\mathrm{fop}}$, $a^{\mathrm{fop}},a^{\mathrm{fop}\dagger}$ | Number operator; one-mode ladder |
 | $\Gamma(\rho)=\bigoplus_n\Lambda^n\rho$ | Exterior-power (Fock) functor |
 | $\Lambda S=\mathbb{C}\oplus S\oplus\mathbb{C}$ | Lorentz content of the two spin states of one momentum: $0\oplus\tfrac12\oplus0$ |
-| $S_i=\tfrac12a_s^{\mathrm{fop}\dagger}(\sigma_i)_{ss'}a_{s'}^{\mathrm{fop}}$ | Spin operators on $\Lambda S$ |
+| $S_i=\tfrac12a_s^{\mathrm{fop}\dagger}(\sigma_i)_{s,s_2}a_{s_2}^{\mathrm{fop}}$ | Spin operators on $\Lambda S$ |
 | $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ | Degree parity; $2\pi$ rotation on the Fock space |
 | $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$ (one mode) | Parity as an element of $\mathbb{M}_+$ |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $N$ fermionic modes |
 | $\tilde\Pi^2=\tilde\Pi=\tilde\Pi^{*}$, $\mathrm{Tr}\tilde\Pi=1$ | Pure state as a Hermitian idempotent in $\mathbb{M}_+$ |
-| $\langle H^{\mathrm{fop}}\rangle=\mathrm{Tr}(\tilde\Pi H^{\mathrm{fop}})=2\,\mathrm{Sc}(\tilde\Pi H^{\mathrm{fop}})$ | Born rule as the trace pairing |
+| $\langle H^{\mathrm{fop}}\rangle=\mathrm{Tr}(\tilde\Pi H^{\mathrm{fop}})=2\,\mathrm{Sc}(\tilde\Pi H^{\mathrm{fop}})$ | Born rule as the trace reading of the plain form |
 
 ## Further Reading
 

@@ -12,7 +12,7 @@ $$
 
 a multiple of the identity, because a scalar potential couples to the scalar slot. The external field therefore does not act on the state module at all: it cannot rotate, mix, or relatively phase the two components of a state-module element. The scattering matrix factorises as $S \otimes I_2$ on the space of channels tensored with the module; every reflection and transmission amplitude is a scalar function of the energy; and there is **no spin-flip channel**, not because a spin-flip amplitude happens to be small, but because the operator that would produce it is not present. This is the scattering counterpart of the frozen module factor of the free-particle article, and it is what makes the subcategory's fields spin-0 scalars.
 
-The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the trace pairing. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
+The article is organised as follows. The next section writes the equation, reduces it to a scalar problem, and derives the flux from the plain form, read as the trace pairing. The third section sets up the scattering problem, defines the amplitudes and the $S$-matrix, and proves flux conservation. The fourth solves the four standard potentials exactly. The fifth introduces the transfer matrix and its composition law. The sixth gives the biquaternion interpretation of the $S$-matrix, of the absent spin-flip channel, and of the bound states. The seventh states what the algebra adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_j^2=-e_t$, and central scalar imaginary $i$; $\mathbb{M}_+$ is the Hermitian and $\mathbb{M}_-$ the anti-Hermitian subspace; $\mathbb{C}_{\mathbb{B}}$ is the centre; the state module is $\mathbb{B}\tilde\Pi\cong \mathbb{C}^2$ with the isomorphism $\mathsf{M}_2$ sending $e_t\mapsto I_2$ and $\vec e_k\mapsto -i\sigma_k$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The coordinate $x$ is the argument of the field, not an algebraic observable.
 
@@ -83,7 +83,7 @@ $$
 J = \frac{\hbar k}{m}\left(|A|^2 - |B|^2\right).
 $$
 
-The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the trace pairing of $\psi^\dagger$ with $\frac{d\psi}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
+The cancellation of the oscillatory terms is the algebraic content of the statement that $J$ is divergence-free for a stationary state; in the biquaternion form it is the statement that the plain form of $\psi^\dagger$ with $\frac{d\psi}{dx}$ has an imaginary part that is a total derivative, hence constant for a stationary solution. The current is a real spatial number, the spatial part of an element of $\mathbb{M}_-$; the density $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$ is the trace of an element of $\mathbb{M}_+$. As in the free case, the continuity equation pairs an $\mathbb{M}_+$ density with an $\mathbb{M}_-$ current.
 
 ## The Scattering Problem
 
@@ -104,11 +104,11 @@ The four coefficients are related linearly by the **scattering matrix** $S(k)$, 
 $$
 \begin{pmatrix} C \\ B \end{pmatrix}
 =
-\begin{pmatrix} t & r' \\ r & t' \end{pmatrix}
+\begin{pmatrix} t & r_2 \\ r & t_2 \end{pmatrix}
 \begin{pmatrix} A \\ D \end{pmatrix}.
 $$
 
-Here $t$ and $t'$ are the transmission amplitudes for incidence from the left and from the right, and $r$ and $r'$ the corresponding reflection amplitudes. The physically measured quantities for a wave incident from the left ($D=0$, $A=1$) are
+Here $t$ and $t_2$ are the transmission amplitudes for incidence from the left and from the right, and $r$ and $r_2$ the corresponding reflection amplitudes. The physically measured quantities for a wave incident from the left ($D=0$, $A=1$) are
 
 $$
 t = \frac{C}{A}\Big|_{D=0},
@@ -146,7 +146,7 @@ $$
 S^{*} S = I_2,
 $$
 
-as one verifies by expanding the two components of the column $(A,D)$ and using the identity above: the diagonal entries give $|t|^2 + |r'|^2 = 1$ and $|r|^2+|t'|^2 = 1$, the off-diagonal ones give $t^*r' + r^*t' = 0$. For incidence from the left, $D=0$ and the identity reduces to
+as one verifies by expanding the two components of the column $(A,D)$ and using the identity above: the diagonal entries give $|t|^2 + |r_2|^2 = 1$ and $|r|^2+|t_2|^2 = 1$, the off-diagonal ones give $t^*r_2 + r^*t_2 = 0$. For incidence from the left, $D=0$ and the identity reduces to
 
 $$
 |r|^2 + |t|^2 = R + T = 1 .
@@ -158,7 +158,7 @@ Unitarity of $S$ is thus the algebraic form of flux conservation. In the framewo
 
 ### The step
 
-Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\phi$ and $\phi'$ at the origin, with the ansatz $\phi = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\phi = t\exp(ik_2x)$ on the right, gives
+Let $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with $E>V_0$. The wave vectors are $k_1 = \sqrt{2mE}/\hbar$ and $k_2 = \sqrt{2m(E-V_0)}/\hbar$. Continuity of $\phi$ and $\partial\phi/\partial x$ at the origin, with the ansatz $\phi = \exp(ik_1x)+r\exp(-ik_1x)$ on the left and $\phi = t\exp(ik_2x)$ on the right, gives
 
 $$
 1 + r = t,
@@ -300,7 +300,7 @@ $$
 =
 \frac{1}{2}
 \begin{pmatrix} 1 + k_2/k_1 & 1 - k_2/k_1 \\[2pt] 1 - k_2/k_1 & 1 + k_2/k_1 \end{pmatrix}
-\begin{pmatrix} A' \\ B' \end{pmatrix},
+\begin{pmatrix} A_2 \\ B_2 \end{pmatrix},
 $$
 
 so that the coefficients on the far side are obtained by multiplying by the inverse of this step matrix. Across a region of length $a$ with wave vector $q$, the free propagation matrix is
@@ -315,7 +315,7 @@ A potential built from $n$ piecewise-constant regions therefore has a **transfer
 
 The value of the transfer matrix is that a composite potential is a matrix product: the transfer matrix of a sequence of regions is the ordered product of the step matrices (inverted, as above) and the propagation matrices, taken from left to right. This is why a potential built from many weak barriers can be solved by multiplying two-by-two matrices rather than by matching many boundary conditions at once.
 
-A single delta potential is a convenient worked element. Its transfer matrix in the local frame of the delta, relating the coefficients $\phi=A\exp(ikx)+B\exp(-ikx)$ on the two sides by $\begin{pmatrix}A\\B\end{pmatrix} = M_\delta\begin{pmatrix}A'\\B'\end{pmatrix}$, is obtained from the continuity and jump conditions and is
+A single delta potential is a convenient worked element. Its transfer matrix in the local frame of the delta, relating the coefficients $\phi=A\exp(ikx)+B\exp(-ikx)$ on the two sides by $\begin{pmatrix}A\\B\end{pmatrix} = M_\delta\begin{pmatrix}A_2\\B_2\end{pmatrix}$, is obtained from the continuity and jump conditions and is
 
 $$
 M_\delta(\beta) =
@@ -327,7 +327,7 @@ M_\delta(\beta) =
 \beta = \frac{m\lambda}{\hbar^2 k},
 $$
 
-as one verifies by eliminating $B'$ with the outgoing condition $B'=0$ and recovering $t = (1+i\beta)^{-1}$ and $r = -i\beta/(1+i\beta)$. With that convention the matrix has unit determinant, reflecting the flux preservation of the transfer relation, and its product with a propagation matrix carries the phase accumulated between two scatterers. The composition law also shows how resonances arise: a single barrier has a monotonically rising $T$, whereas two barriers separated by a well have a transmission with sharp peaks at the energies for which the round-trip phase is a multiple of $2\pi$. The algebra of the product, not any new input, produces the resonance structure.
+as one verifies by eliminating $B_2$ with the outgoing condition $B_2=0$ and recovering $t = (1+i\beta)^{-1}$ and $r = -i\beta/(1+i\beta)$. With that convention the matrix has unit determinant, reflecting the flux preservation of the transfer relation, and its product with a propagation matrix carries the phase accumulated between two scatterers. The composition law also shows how resonances arise: a single barrier has a monotonically rising $T$, whereas two barriers separated by a well have a transmission with sharp peaks at the energies for which the round-trip phase is a multiple of $2\pi$. The algebra of the product, not any new input, produces the resonance structure.
 
 ## The Biquaternion Reading of Scattering
 
@@ -345,7 +345,7 @@ $$
 [\tilde S,\tilde U] = 0,
 $$
 
-and the scattering is invariant under the module's transformations. The amplitudes $r,r',t,t'$ are scalar functions of $k$; the reflection and transmission phases are central; the Wigner time delay
+and the scattering is invariant under the module's transformations. The amplitudes $r,r_2,t,t_2$ are scalar functions of $k$; the reflection and transmission phases are central; the Wigner time delay
 
 $$
 \tau_W = \hbar\,\frac{d}{dE}\arg t(E)
@@ -398,7 +398,7 @@ so the phase runs from $\pi/2$ at threshold to zero at infinite energy, a change
 **What the biquaternion notation provides.**
 
 - **Centrality of the potential coupling, made manifest.** The potential multiplies $e_t$, so the Hamiltonian is central and the $S$-matrix factorises as $S\otimes I_2$. The absence of spin-flip and spin-dependent amplitudes is read off the algebra rather than assumed from rotational invariance.
-- **A flux from the trace pairing.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
+- **A flux from the plain form.** The one-dimensional current is $\frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$, the reduction of the general current, and flux conservation is the unitarity $S^{*} S = I_2$. Density and current carry the two sectors of the algebra, as everywhere in the subcategory.
 - **One notion of unit resolved.** The $S$-matrix is unitary, $\tilde S\tilde S^{*} = e_t$, and is not a unit-norm rotor $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$. The same distinction appears for the free evolution operator and the path-integral phase; scattering is the third place where it must be kept apart.
 - **A clean statement of what a scalar potential can do.** The potential can shape the envelope without touching the module; the framework exhibits the module as a spectator of every problem with a central Hamiltonian.
 
@@ -446,7 +446,7 @@ The biquaternion content is that the potential couples only to the scalar slot, 
 | $J = \frac{\hbar}{2mi}\mathrm{Tr}(\psi^\dagger\frac{d\psi}{dx} - \left(\frac{d\psi}{dx}\right)^\dagger\psi)$ | One-dimensional current |
 | $J = \frac{\hbar k}{m}(|A|^2-|B|^2)$ | Current for a two-exponential superposition |
 | $\rho = \mathrm{Tr}(\psi^\dagger\psi) = |\phi|^2$ | Density |
-| $S = \begin{pmatrix} t & r' \\ r & t'\end{pmatrix}$ | Scattering matrix; unitary, $S^{*} S = I_2$ |
+| $S = \begin{pmatrix} t & r_2 \\ r & t_2\end{pmatrix}$ | Scattering matrix; unitary, $S^{*} S = I_2$ |
 | $R = |r|^2$, $T = |t|^2$ | Flux reflection and transmission |
 | $\beta = m\lambda/\hbar^2 k$ | Dimensionless delta-potential coupling |
 | $E_b = -m\lambda^2/2\hbar^2$ | Bound state of the attractive delta |

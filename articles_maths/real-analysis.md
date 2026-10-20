@@ -236,7 +236,7 @@ The difference from ordinary continuity is that $\delta$ depends only on $\epsil
 Let $f : (a, b) \to \mathbb{R}$ and $c_0 \in (a, b)$. The **derivative** of $f$ at $c_0$ is
 
 $$
-f'(c_0) = \lim_{h \to 0} \frac{f(c_0 + h) - f(c_0)}{h},
+\frac{df}{dx}(c_0) = \lim_{h \to 0} \frac{f(c_0 + h) - f(c_0)}{h},
 $$
 
 provided the limit exists. If it does, $f$ is **differentiable** at $c_0$.
@@ -245,37 +245,37 @@ provided the limit exists. If it does, $f$ is **differentiable** at $c_0$.
 
 ### Rules of Differentiation
 
-**Linearity.** $(af + bg)' = a f' + b g'$.
+**Linearity.** $\\frac{d}{dx}(af + bg) = a \frac{df}{dx} + b \frac{dg}{dx}$.
 
-**Product rule.** $(fg)' = f' g + f g'$.
+**Product rule.** $\\frac{d}{dx}(fg) = \frac{df}{dx} g + f \frac{dg}{dx}$.
 
-**Quotient rule.** $(f/g)' = (f' g - f g')/g^2$ where $g \neq 0$.
+**Quotient rule.** $\\frac{d}{dx}(f/g) = (\frac{df}{dx} g - f \frac{dg}{dx})/g^2$ where $g \neq 0$.
 
-**Chain rule.** $(f \circ g)'(a) = f'(g(a)) g'(a)$.
+**Chain rule.** $\\frac{d}{dx}(f \circ g)(a) = \frac{df}{dx}(g(a)) \frac{dg}{dx}(a)$.
 
-**Inverse function rule.** If $f$ is differentiable at $c_0$ with $f'(c_0) \neq 0$ and $f^{-1}$ is defined near $f(c_0)$, then
+**Inverse function rule.** If $f$ is differentiable at $c_0$ with $\frac{df}{dx}(c_0) \neq 0$ and $f^{-1}$ is defined near $f(c_0)$, then
 
 $$
-(f^{-1})'(f(c_0)) = \frac{1}{f'(c_0)}.
+\\frac{d}{dx}(f^{-1})(f(c_0)) = \frac{1}{\frac{df}{dx}(c_0)}.
 $$
 
 ### The Mean Value Theorem
 
-**Theorem (Rolle).** If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c \in (a, b)$ with $f'(c) = 0$.
+**Theorem (Rolle).** If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c \in (a, b)$ with $\frac{df}{dx}(c) = 0$.
 
 **Proof.** If $f$ is constant, any $c$ works. Otherwise, $f$ attains a maximum or minimum in $(a, b)$ by the EVT, and at an interior extremum the derivative vanishes.
 
 **Theorem (Mean Value Theorem).** If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ with
 
 $$
-f'(c) = \frac{f(b) - f(a)}{b - a}.
+\frac{df}{dx}(c) = \frac{f(b) - f(a)}{b - a}.
 $$
 
 **Proof.** Apply Rolle to $g(c) = f(c) - \frac{f(b) - f(a)}{b - a}(c - a)$.
 
-**Corollary.** If $f' = 0$ on an interval, $f$ is constant there.
+**Corollary.** If $\frac{df}{dx} = 0$ on an interval, $f$ is constant there.
 
-**Corollary.** If $f' > 0$ on an interval, $f$ is strictly increasing there.
+**Corollary.** If $\frac{df}{dx} > 0$ on an interval, $f$ is strictly increasing there.
 
 ### Taylor's Theorem
 
@@ -356,13 +356,13 @@ $$
 **Integration by parts.** If $f, g$ are differentiable with continuous derivatives, then
 
 $$
-\int_a^b f g' = [f g]_a^b - \int_a^b f' g.
+\int_a^b f \frac{dg}{dx} = [f g]_a^b - \int_a^b \frac{df}{dx} g.
 $$
 
 **Substitution.** If $\phi$ is continuously differentiable and $f$ is continuous, then
 
 $$
-\int_{\phi(a)}^{\phi(b)} f(u) \, du = \int_a^b f(\phi(c)) \phi'(c) \, dc.
+\int_{\phi(a)}^{\phi(b)} f(u) \, du = \int_a^b f(\phi(c)) \frac{d\phi}{dx}(c) \, dc.
 $$
 
 ### Improper Integrals
@@ -411,7 +411,7 @@ $$
 \int_a^b f = \lim_{n \to \infty} \int_a^b f_n.
 $$
 
-**Theorem.** If $(f_n)$ is a sequence of differentiable functions with $f_n \to f$ pointwise and $f_n' \to g$ uniformly, then $f$ is differentiable and $f' = g$.
+**Theorem.** If $(f_n)$ is a sequence of differentiable functions with $f_n \to f$ pointwise and $f_n' \to g$ uniformly, then $f$ is differentiable and $\frac{df}{dx} = g$.
 
 ### Series of Functions
 
@@ -496,7 +496,7 @@ $$
 **Theorem.** If $g$ is continuously differentiable, then
 
 $$
-\int_a^b f \, dg = \int_a^b f g' \, dc.
+\int_a^b f \, dg = \int_a^b f \frac{dg}{dx} \, dc.
 $$
 
 **Theorem (Integration by parts).** If $f$ is integrable with respect to $g$, then $g$ is integrable with respect to $f$ and
@@ -509,7 +509,7 @@ $$
 
 Real analysis is the study of limits, continuity, differentiation and integration on the real line, and it is the base case on which the analysis of every other system of the corpus is modelled. The line carries the distance $d(a, b) = \lvert a - b\rvert$, and with it the convergent sequences, the convergent series, the limits of functions, the continuous functions and the open sets on which the subject is built.
 
-Differentiation and integration are the two central constructions. The derivative $f'(c_0) = \lim_{h \to 0}(f(c_0 + h) - f(c_0))/h$ is the limit of the difference quotient, and the Riemann integral is defined through the upper and lower sums over the partitions of an interval, with the Riemann–Stieltjes integral generalising the construction by admitting a second function as integrator. The basic properties of both, and the theorems that relate them, are recorded.
+Differentiation and integration are the two central constructions. The derivative $\frac{df}{dx}(c_0) = \lim_{h \to 0}(f(c_0 + h) - f(c_0))/h$ is the limit of the difference quotient, and the Riemann integral is defined through the upper and lower sums over the partitions of an interval, with the Riemann–Stieltjes integral generalising the construction by admitting a second function as integrator. The basic properties of both, and the theorems that relate them, are recorded.
 
 The article also passes from sequences of numbers to sequences of functions, where pointwise and uniform convergence are distinguished, and it develops power series with their radius of convergence. The Riemann–Stieltjes integral closes the treatment.
 
@@ -525,7 +525,7 @@ The article also passes from sequences of numbers to sequences of functions, whe
 | $\limsup a_n, \liminf a_n$ | Limit superior, limit inferior |
 | $\sum a_n$ | Series |
 | $\lim_{b \to a} f(b)$ | Limit of a function |
-| $f'(b)$ | Derivative |
+| $\frac{df}{dx}(b)$ | Derivative |
 | $\int_a^b f$ | Riemann integral |
 | $\int_a^b f \, dg$ | Riemann–Stieltjes integral |
 | $f_n \to f$ uniformly | Uniform convergence |

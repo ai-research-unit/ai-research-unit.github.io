@@ -81,7 +81,7 @@ The subgroups and the real forms of the algebra are *Biquaternion Lie Group and 
 
 **Two spheres, and only one of them is a group.** The Euclidean sphere $\|\tilde{Q}\|_E=1$ of the topological norm is a genuine sphere $S^7$ but is not a group, since that norm is not multiplicative and the sphere contains zero divisors (*The Euclidean Topology of the Biquaternion Algebra*, §*The Euclidean Unit Sphere*). The sphere that carries a group structure is $S^3$, the compact subgroup of the determinant-one group, and it is not the Euclidean one.
 
-**The units on the remarkable subspaces.** The units inside a remarkable subspace are the elements of that subspace that lie off the singular cone, so the non-zero-divisors of the subspace are its units together with the origin. On the **centre** they are the nonzero scalars $\mathbb{C}^\times e_t$; on the **quaternion** and **anti-quaternion** subspaces they are all the nonzero elements; on the **vector** subspace they are the complement of the complex cone $\sum_kQ_k^2=0$, of real codimension two; and on the two **real forms** they are the complement of the light cone, of real codimension one in the subspace. The distribution of the units over the remarkable subspaces is *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, and is not repeated here.
+**The units on the remarkable subspaces.** The units inside a remarkable subspace are the elements of that subspace that lie off the singular cone, so the non-zero-divisors of the subspace are its units together with the origin. On the **centre** they are the nonzero scalars $\mathbb{C}^\times e_t$; on the **quaternion** and **anti-quaternion** subspaces they are all the nonzero elements; on the **vector** subspace they are the complement of the complex cone $\sum_kQ_k^2=0$, of real codimension two; and on the two **real forms** they are the complement of the null cone, of real codimension one in the subspace. The distribution of the units over the remarkable subspaces is *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, and is not repeated here.
 
 ## The Topology of the Group
 
@@ -130,7 +130,7 @@ of degree one; the class of the central circle $Ae_t$ with $|A|=1$ is twice a ge
 
 **A non-central unit.** For $\tilde{Q}=e_t+\vec e_x$ the determinant is $2$, so the element is a unit; it is not central, and its inverse is $(e_t-\vec e_x)/2$, as $(e_t+\vec e_x)(e_t-\vec e_x)=2e_t$ shows.
 
-**A unit on a real form.** For $\tilde{Q}=e_t+2i\vec e_x$ the determinant is $1-4=-3\neq0$, so the element is a unit of the Hermitian subspace; it is spacelike, and the units of $\mathbb{M}_+$ are the complement of the light cone.
+**A unit on a real form.** For $\tilde{Q}=e_t+2i\vec e_x$ the determinant is $1-4=-3\neq0$, so the element is a unit of the Hermitian subspace; it is spacelike, and the units of $\mathbb{M}_+$ are the complement of the null cone.
 
 **A non-unit.** For $\tilde{Q}=\vec e_x+i\vec e_y$ one has $\tilde{Q}^{2}=(\vec e_x+i\vec e_y)^{2}=0$, so the element is a zero divisor, lies on the singular cone and is not a unit; it is therefore an element of none of the three groups above.
 

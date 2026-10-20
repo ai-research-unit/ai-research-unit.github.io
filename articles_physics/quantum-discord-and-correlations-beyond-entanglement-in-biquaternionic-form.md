@@ -26,7 +26,7 @@ $$
 \qquad p_\epsilon\geq0, \quad \sum_\epsilon p_\epsilon = 1,
 $$
 
-are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ with $\tilde H_j = -\vec e_j\otimes\vec e_j \in \mathbb{M}_+^{\otimes 2}$. These are the trace pairings of the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.
+are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ with $\tilde H_j = -\vec e_j\otimes\vec e_j \in \mathbb{M}_+^{\otimes 2}$. These are the readings of the plain form that pair the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.
 
 ## Bipartite States and Their Mutual Information
 
@@ -52,7 +52,7 @@ non-negative by subadditivity of the entropy. It is symmetric in $A$ and $B$ and
 
 ### The Bell-diagonal family
 
-The four Bell idempotents $\tilde\Pi_\epsilon$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra, with $\tilde\Pi_\epsilon P_{\epsilon'} = \delta_{\epsilon\epsilon'}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon = e_t\otimes e_t$. The **Bell-diagonal states** are the convex combinations
+The four Bell idempotents $\tilde\Pi_\epsilon$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra, with $\tilde\Pi_\epsilon P_{\epsilon_{\mathrm o}} = \delta_{\epsilon\epsilon_{\mathrm o}}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon = e_t\otimes e_t$. The **Bell-diagonal states** are the convex combinations
 
 $$
 \tilde{Ϛ}_{AB} = \sum_\epsilon p_\epsilon\,\tilde\Pi_\epsilon ,
@@ -91,7 +91,7 @@ S(\tilde{Ϛ}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilo
 I(A:B) = 2 - S(\tilde{Ϛ}_{AB}) .
 $$
 
-For Bell-diagonal states the quantum mutual information is thus a function of the three trace pairings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the biquaternion norm.
+For Bell-diagonal states the quantum mutual information is thus a function of the three plain-form readings $c_j$ alone — the two-qubit analogue of the statement, for a single qubit, that the entropy is a function of the biquaternion norm.
 
 ## Classical Mutual Information and Discord
 
@@ -202,18 +202,18 @@ The state is separable because $0.4+0.35+0.2 = 0.95\leq1$, yet the discord is po
 
 The example of the previous section is the point of the article, and it deserves to be stated in the framework's terms:
 
-> In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive trace-one elements that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.
+> In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive elements normalised by $\langle\tilde{Ϛ},e_t\otimes e_t\rangle=\tfrac14$ (trace one in the $4\times4$ image) that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.
 
-The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ are the trace pairings with the three tensor-product observables $\tilde H_j = -\vec e_j\otimes\vec e_j$. The criterion is a property of the triple of trace pairings; separability, entanglement, and discord of the family are all read off those three numbers.
+The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ are the plain-form readings that pair the state with the three tensor-product observables $\tilde H_j = -\vec e_j\otimes\vec e_j$. The criterion is a property of the triple of plain-form readings; separability, entanglement, and discord of the family are all read off those three numbers.
 
-The physical meaning is that entanglement is one kind of quantum correlation and discord is a broader one. A separable state can still be **quantumly correlated** in the sense that no measurement on one subsystem leaves the other in a state that, averaged over outcomes, accounts for the total mutual information. In the framework this is visible directly: the total correlation $I(A:B)$ is fixed by the spectrum of $\tilde{Ϛ}_{AB}$, i.e. by the three trace pairings $c_j$; the classical correlation $J(A|B)$ is fixed by the conditional states after a coordinate measurement; and the difference, the discord, is what no local measurement can reach.
+The physical meaning is that entanglement is one kind of quantum correlation and discord is a broader one. A separable state can still be **quantumly correlated** in the sense that no measurement on one subsystem leaves the other in a state that, averaged over outcomes, accounts for the total mutual information. In the framework this is visible directly: the total correlation $I(A:B)$ is fixed by the spectrum of $\tilde{Ϛ}_{AB}$, i.e. by the three readings of the plain form $c_j$; the classical correlation $J(A|B)$ is fixed by the conditional states after a coordinate measurement; and the difference, the discord, is what no local measurement can reach.
 
 ## What the Framework Adds and What It Does Not
 
 **What it does.**
 
-- It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the trace pairing, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.
-- It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three trace pairings $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ with $\tilde H_j = -\vec e_j\otimes\vec e_j$.
+- It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the plain form, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.
+- It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three readings of the plain form $c_j = \mathrm{Tr}(\tilde{Ϛ}_{AB}\tilde H_j)$ with $\tilde H_j = -\vec e_j\otimes\vec e_j$.
 - It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit biquaternion-norm statement.
 - It exhibits a separable state with positive discord and verifies the separability criterion and the discord numerically.
 
@@ -222,12 +222,12 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 - It does not compute the discord for general two-qubit states. The Bell-diagonal restriction is what makes the computation tractable and the trace-pairing parametrization exact.
 - It does not prove the Luo result that the optimal measurement for Bell-diagonal states is along a coordinate axis; that is cited as standard, and the computed values use it.
 - It does not resolve the interpretation of discord, nor does it claim that discord is a resource in every operational sense; the operational interpretations are cited, not derived.
-- It does not extend the biquaternion-norm interpretation to the two-qubit case generally: the biquaternion norm of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three trace pairings.
+- It does not extend the biquaternion-norm interpretation to the two-qubit case generally: the biquaternion norm of a two-qubit state is not a single number, and only the Bell-diagonal family is controlled by three readings of the plain form.
 - It does not predict anything beyond standard quantum information theory; the discord values are the standard ones.
 
 ## Open Questions
 
-**1. Discord and the two-qubit biquaternion norm.** For a single qubit the entropy is a function of the biquaternion norm. For a two-qubit Bell-diagonal state the entropy is a function of the three trace pairings $c_j$. Is there an algebraic object — a generalized biquaternion norm on $\mathbb{M}_+^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?
+**1. Discord and the two-qubit biquaternion norm.** For a single qubit the entropy is a function of the biquaternion norm. For a two-qubit Bell-diagonal state the entropy is a function of the three plain-form readings $c_j$. Is there an algebraic object — a generalized biquaternion norm on $\mathbb{M}_+^{\otimes2}$ — whose invariant theory reproduces the triple $(c_1,c_2,c_3)$ and hence the discord?
 
 **2. The geometry of the Bell-diagonal tetrahedron.** The Bell-diagonal states form a tetrahedron inscribed in the two-qubit state space, and the separable subset is the octahedron $\sum_j|c_j|\leq1$. What is the corresponding geometry in the cone of $\mathbb{M}_+^{\otimes2}$, and where does the discord vanish on it?
 
@@ -249,7 +249,7 @@ I(A:B) = S(\tilde{Ϛ}_A)+S(\tilde{Ϛ}_B)-S(\tilde{Ϛ}_{AB}),
 J(A|B)_{\vec u} = S(\tilde{Ϛ}_A) - S\bigl(A\,|\,\{\tilde{\Pi}\}\bigr).
 $$
 
-In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{Ϛ}_{AB} = \sum_\epsilon p_\epsilon \tilde\Pi_\epsilon$ are parametrized by the three trace pairings
+In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{Ϛ}_{AB} = \sum_\epsilon p_\epsilon \tilde\Pi_\epsilon$ are parametrized by the three readings of the plain form
 
 $$
 c_j = \mathrm{Tr}\bigl(\tilde{Ϛ}_{AB}\,\tilde H_j\bigr), \qquad \tilde H_j = -\vec e_j\otimes\vec e_j ,
@@ -257,7 +257,7 @@ c_j = \mathrm{Tr}\bigl(\tilde{Ϛ}_{AB}\,\tilde H_j\bigr), \qquad \tilde H_j = -\
 \tilde{Ϛ}_{AB} = \tfrac14\bigl(e_t\otimes e_t + {\textstyle\sum_j} c_j\,(i\vec e_j)\otimes(i\vec e_j)\bigr),
 $$
 
-with marginals $\tilde{Ϛ}_A = \tilde{Ϛ}_B = \tfrac12 e_t$ and entropy a function of the triple alone. The family is separable if and only if $\sum_j|c_j|\leq1$. The article exhibits a separable state, $(c_1,c_2,c_3) = (0.4,0.35,0.2)$ with $\sum_j|c_j| = 0.95$, whose discord is $0.2308$ bits; a separable state with zero discord, $(0.3,0,0)$; and an entangled state with a *smaller* discord, $(0.6,0.5,0.4)$ with $0.1397$ bits. Discord is therefore a genuinely broader correlation measure than entanglement: the algebra contains separable elements whose correlations no local measurement can fully account for, and the trace pairings with the three observables $-\vec e_j\otimes\vec e_j$ control the whole Bell-diagonal family.
+with marginals $\tilde{Ϛ}_A = \tilde{Ϛ}_B = \tfrac12 e_t$ and entropy a function of the triple alone. The family is separable if and only if $\sum_j|c_j|\leq1$. The article exhibits a separable state, $(c_1,c_2,c_3) = (0.4,0.35,0.2)$ with $\sum_j|c_j| = 0.95$, whose discord is $0.2308$ bits; a separable state with zero discord, $(0.3,0,0)$; and an entangled state with a *smaller* discord, $(0.6,0.5,0.4)$ with $0.1397$ bits. Discord is therefore a genuinely broader correlation measure than entanglement: the algebra contains separable elements whose correlations no local measurement can fully account for, and the readings of the plain form with the three observables $-\vec e_j\otimes\vec e_j$ control the whole Bell-diagonal family.
 
 ## Summary of Notation
 

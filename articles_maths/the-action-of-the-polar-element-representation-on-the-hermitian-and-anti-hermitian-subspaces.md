@@ -36,7 +36,7 @@ $$
 \mathbb{M}_-\ni\tilde Q_-=i a\,e_t+\vec b,\qquad a\in\mathbb{R},\qquad \vec b=b_x\vec e_x+b_y\vec e_y+b_z\vec e_z,\quad b_k\in\mathbb{R}.
 $$
 
-Its norm is the Minkowski quadratic form
+Its norm is the Lorentzian quadratic form
 
 $$
 \langle\tilde Q_-\rangle_{\natural}=-a^2+\lvert\vec b\rvert^2,
@@ -104,7 +104,7 @@ B_-(\psi,\vec u_{\mathrm b})=
 \end{pmatrix}.
 $$
 
-The off-diagonal signs are negative. The matrix satisfies $B_-^{T}G_-B_-=G_-$, with $G_-=\operatorname{diag}(-1,1,1,1)$, and $\det B_-=1$. It is the standard Lorentz boost in the passive convention, with the time coordinate $a$ and the spatial coordinates $\vec b$.
+The off-diagonal signs are negative. The matrix satisfies $B_-^{T}G_-B_-=G_-$, with $G_-=\operatorname{diag}(-1,1,1,1)$, and $\det B_-=1$. It is the standard Lorentz boost in the passive convention, with the scalar coordinate $a$ and the vector coordinates $\vec b$.
 
 ### The Rotor
 
@@ -166,7 +166,7 @@ $$
 CO^+(1,3)=\mathbb{R}_{>0}\cdot SO^+(1,3),
 $$
 
-the linear conformal group, of real dimension seven. This is not the full conformal group of Minkowski space: the translations and the special conformal transformations are not sandwiches by an element.
+the linear conformal group, of real dimension seven. This is not the full conformal group of Lorentzian space: the translations and the special conformal transformations are not sandwiches by an element.
 
 ### The Null Cone and the Celestial Sphere
 
@@ -320,7 +320,7 @@ $$
 \mathcal N_+=\{\tilde Q_+\in\mathbb{M}_+:a^2=\lvert\vec b\rvert^2\}.
 $$
 
-On the future part $a=\lvert\vec b\rvert>0$ the matrix $\mathsf M_2(\tilde Q_+)=aI_2+\vec b\cdot\boldsymbol\sigma$ is positive semidefinite of rank one. It is the same rank-one condition as on $\mathbb{M}_-$, read through the two matrix images $i(aI_2-\vec b\cdot\boldsymbol\sigma)$ and $aI_2+\vec b\cdot\boldsymbol\sigma$. The congruence preserves rank and positivity, so it preserves the cone and its positive part. The future rank-one cone is the set of pure states of the informational reading; the future light cone is the set of null four-vectors of the material reading. They are the same algebraic cone, seen through the two sectors.
+On the future part $a=\lvert\vec b\rvert>0$ the matrix $\mathsf M_2(\tilde Q_+)=aI_2+\vec b\cdot\boldsymbol\sigma$ is positive semidefinite of rank one. It is the same rank-one condition as on $\mathbb{M}_-$, read through the two matrix images $i(aI_2-\vec b\cdot\boldsymbol\sigma)$ and $aI_2+\vec b\cdot\boldsymbol\sigma$. The congruence preserves rank and positivity, so it preserves the cone and its positive part. The future rank-one cone is the set of pure states of the informational reading; the future null cone is the set of null four-vectors of the material reading. They are the same algebraic cone, seen through the two sectors.
 
 The causal type is the sign pattern of the eigenvalues $a\pm\lvert\vec b\rvert$: both positive for $a>\lvert\vec b\rvert$, both negative for $a<-\lvert\vec b\rvert$, of opposite signs for $\lvert a\rvert<\lvert\vec b\rvert$, and one zero on the cone. The congruence preserves this pattern. The eigenvalues themselves are not simply scaled by the action; the invariant statement is the inertia, not the spectrum.
 
@@ -371,7 +371,7 @@ $$
 
 The rotor matrix is the same $\mathsf R$ in both sectors, the scale is the same $r^2$ in both, and the phase acts as the identity in both. The difference between the two actions is therefore entirely in the boost: in the coordinates carried by the sectors, the matrix of the same boost on $\mathbb{M}_+$ is the inverse of its matrix on $\mathbb{M}_-$. The opposite signs of the cross terms are the visible sign of this inverse relation.
 
-The relation $B_-=B_+^{-1}$ is a statement about matrices in the two coordinate systems, not a statement that the physical boost is inverted. The coordinates $(a,\vec b)$ are read in the two sectors with different meanings: $a$ is the time coordinate on $\mathbb{M}_-$ and the scalar coordinate on $\mathbb{M}_+$. The element $\tilde U_{\mathrm b}$ is the same, and the Lorentz transformation it induces on each sector is the same up to the coordinate reflection $D$.
+The relation $B_-=B_+^{-1}$ is a statement about matrices in the two coordinate systems, not a statement that the hyperbolic rotation is inverted. The coordinates $(a,\vec b)$ are read in the two sectors with different signs: $a$ is the coefficient of $e_t$ in both, and it enters the form with opposite signs in the two sectors. The element $\tilde U_{\mathrm b}$ is the same, and the Lorentz transformation it induces on each sector is the same up to the coordinate reflection $D$.
 
 ### The Common Cone and the Sign of the Form
 
@@ -452,7 +452,7 @@ The sandwich $\Theta_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ pres
 - *Hermitian and Skew-Hermitian Elements* (`articles_maths/hermitian-and-skew-hermitian-elements.md`), for the involutive split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and the two sectors.
 - *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ and its relation to the norm-one group.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$ and the physical boost and rotation.
-- *The Material Sector: Four-Vectors, Interval and Lorentz Action* (`articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.md`), for the four-vector reading, the interval and the light cone.
+- *The Material Sector: Four-Vectors, Interval and Lorentz Action* (`articles_physics/the-material-sector-four-vectors-interval-and-lorentz-action.md`), for the four-vector reading, the interval and the null cone.
 - *The Informational Sector: States, Observables and Probability* (`articles_physics/the-informational-sector-states-observables-and-probability.md`), for the Hermitian observables, the trace and the positive cone.
 - *The Polar Element Representation and Remarkable Subspaces* (`articles_maths/the-polar-element-representation-and-remarkable-subspaces.md`), for the four exponents read against the six remarkable subspaces.
 - S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* (2020), DOI 10.1007/s00006-020-1048-y, for the polar decomposition of a complexified quaternion.

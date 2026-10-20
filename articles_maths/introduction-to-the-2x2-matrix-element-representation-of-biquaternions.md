@@ -95,7 +95,7 @@ $$
 
 The factor $i$ is thus all that separates the algebra's own matrices from the ones a physicist writes down, and the form $\sigma_k = \mathsf{M}_2(i\vec e_k)$ states the same relation through the algebra: it is the **Hermitian** quaternion units $i\vec e_k$ whose images are the Hermitian Pauli matrices.
 
-**Remark (other realizations from the light-cone basis).** A second family of $2\times2$ models comes from the **isotropic (light-cone) basis** used in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*. Writing a biquaternion in the null coordinates there, two of that article's four general products become ordinary matrix products under two maps, the **outer** product under $M=\left(\begin{smallmatrix}\xi&\alpha\\\beta&\eta\end{smallmatrix}\right)$ and the **diagonal** product under $F\leftrightarrow\left(\begin{smallmatrix}f_\alpha&-f_\beta\\-f_\xi&f_\eta\end{smallmatrix}\right)$; the source's claimed third, the **inner** product, is false, an exhaustive search finding no realization of it. The two maps differ from $\mathsf{M}_2$ by the change of basis between the isotropic basis and the corpus's basis, and they are named here only to place $\mathsf{M}_2$ among the others.
+**Remark (other realizations from the null-cone basis).** A second family of $2\times2$ models comes from the **isotropic (null-cone) basis** used in *The Chiral Algebra of Biquaternions and the Cyclic Representation of the Dirac Equation*. Writing a biquaternion in the null coordinates there, two of that article's four general products become ordinary matrix products under two maps, the **outer** product under $M=\left(\begin{smallmatrix}\xi&\alpha\\\beta&\eta\end{smallmatrix}\right)$ and the **diagonal** product under $F\leftrightarrow\left(\begin{smallmatrix}f_\alpha&-f_\beta\\-f_\xi&f_\eta\end{smallmatrix}\right)$; the source's claimed third, the **inner** product, is false, an exhaustive search finding no realization of it. The two maps differ from $\mathsf{M}_2$ by the change of basis between the isotropic basis and the corpus's basis, and they are named here only to place $\mathsf{M}_2$ among the others.
 
 ## Why the Signs Are Forced
 
@@ -226,13 +226,7 @@ with the subspace's own parametrisation substituted for the coefficients:
 
 The four basis images $\mathsf{M}_2(e_\mu)$ are the ones displayed in *The Representation*; no Pauli matrix is needed to write any of the matrices down. Each subspace is then taken in its turn below: the centre subspace, the vector subspace, the quaternion subspace, the antiquaternion subspace, the informational subspace and the material subspace. The vector subspace is the only one of the remarkable subspaces that is not four- or two-dimensional. The conventions article calls $\mathbb{M}_+$ and $\mathbb{M}_-$ the informational and material *sectors*; here, with all six on the same footing, they are called subspaces like the other four.
 
-Each subspace is displayed as a three-step chain: the matrix in the complex coefficients $Q_\mu$, the same matrix with that subspace's real parameters substituted, and the same matrix in the physical coordinates, under the one dictionary
-
-$$
-q_t = ct', \quad q'_t = ct, \quad q_x = x, \quad q_y = y, \quad q_z = z, \quad q'_x = x', \quad q'_y = y', \quad q'_z = z' ,
-$$
-
-the unprimed slot carrying the informational time $ct'$ and the material space $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the primed slot the material time $ct$ and the informational space $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z$.
+Each subspace is displayed as a two-step chain: the matrix in the complex coefficients $Q_\mu$, and the same matrix with that subspace's real parameters substituted, $Q_\mu = q_\mu + iq'_\mu$.
 
 ### The Centre Subspace $\mathbb{C}_{\mathbb{B}}$
 
@@ -240,17 +234,16 @@ The centre subspace, the fixed space of quaternion conjugation ${}^{\natural}$: 
 
 $$
 \mathsf{M}_2(\tilde{Q}) = Q_t\,\mathsf{M}_2(e_t) = \begin{pmatrix} Q_t & 0 \\ 0 & Q_t \end{pmatrix}
-= \begin{pmatrix} q_t + iq'_t & 0 \\ 0 & q_t + iq'_t \end{pmatrix}
-= \begin{pmatrix} ct' + ict & 0 \\ 0 & ct' + ict \end{pmatrix},
+= \begin{pmatrix} q_t + iq'_t & 0 \\ 0 & q_t + iq'_t \end{pmatrix},
 $$
 
-the scalar matrix reached from the complex coefficient through its two real parameters to the two physical times. The one subspace with no vector part: $Q_te_t$ is Hermitian exactly when $Q_t$ is real and anti-Hermitian exactly when $Q_t$ is purely imaginary. Its two complex coefficients reduce to the two real parameters $q_t = ct'$ and $q'_t = ct$, so its physical reading is the two temporal directions together,
+the scalar matrix written through its two real parameters. The one subspace with no vector part: $Q_te_t$ is Hermitian exactly when $Q_t$ is real and anti-Hermitian exactly when $Q_t$ is purely imaginary. Its two complex coefficients reduce to the two real parameters $q_t$ and $q'_t$, so its reading is the two central directions together,
 
 $$
-\tilde{Q} = q_te_t + q'_t(ie_t) = ct'\,e_t + ict\,e_t ,
+\tilde{Q} = q_te_t + q'_t(ie_t) ,
 $$
 
-the informational time and the material time. It is the only one of the remarkable subspaces of real dimension two, and the only commutative one; the vector subspace and the four four-dimensional ones are the rest.
+the informational scalar and the material scalar. It is the only one of the remarkable subspaces of real dimension two, and the only commutative one; the vector subspace and the four four-dimensional ones are the rest.
 
 ### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
@@ -258,17 +251,16 @@ The complement of the centre subspace: the elements with no scalar part, those w
 
 $$
 \mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} -iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & iQ_3 \end{pmatrix}
-= \begin{pmatrix} -i(q_z + iq'_z) & -i(q_x + iq'_x) - (q_y + iq'_y) \\ -i(q_x + iq'_x) + (q_y + iq'_y) & i(q_z + iq'_z) \end{pmatrix}
-= \begin{pmatrix} -i(z + iz') & -i(x + ix') - (y + iy') \\ -i(x + ix') + (y + iy') & i(z + iz') \end{pmatrix}, \qquad \mathrm{Tr}\,\mathsf{M}_2 = 0 .
+= \begin{pmatrix} -i(q_z + iq'_z) & -i(q_x + iq'_x) - (q_y + iq'_y) \\ -i(q_x + iq'_x) + (q_y + iq'_y) & i(q_z + iq'_z) \end{pmatrix}, \qquad \mathrm{Tr}\,\mathsf{M}_2 = 0 .
 $$
 
 Its image is exactly $\mathrm{SL}(2,\mathbb{C})$, the traceless complex matrices, so the third split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the relations article reads here as the trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\mathsf{M}_2(e_t) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part. It is the **anti-fixed space** of quaternion conjugation, the elements with $\tilde{Q}^{\natural} = -\tilde{Q}$, whose fixed space is the centre subspace above; equivalently it is the kernel of the scalar part. It is the only one of the remarkable subspaces that is six-dimensional, being three-dimensional over $\mathbb{C}$. Under the commutator it is closed, $[\mathrm{SL}_2,\mathrm{SL}_2] \subseteq \mathrm{SL}_2$, and indeed it is the derived subspace $[\mathbb{B},\mathbb{B}]$; under multiplication it is not — the product of two traceless matrices need not be traceless, since $\mathrm{Tr}(M^2) = -2\det M$. Its six real parameters are the two spatial blocks together,
 
 $$
-\tilde{Q} = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z + q'_x(i\vec e_x) + q'_y(i\vec e_y) + q'_z(i\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) ,
+\tilde{Q} = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z + q'_x(i\vec e_x) + q'_y(i\vec e_y) + q'_z(i\vec e_z) ,
 $$
 
-so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the spatial counterpart of the centre subspace's two temporal blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the biquaternion norm with the scalar term dropped, $\det = Q_x^2 + Q_y^2 + Q_z^2$.
+so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the vector counterpart of the centre subspace's two scalar blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the biquaternion norm with the scalar term dropped, $\det = Q_x^2 + Q_y^2 + Q_z^2$.
 
 ### The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
 
@@ -278,21 +270,20 @@ $$
 \big\{\, \mathsf{M}_2(e_t),\ \mathsf{M}_2(\vec e_x),\ \mathsf{M}_2(\vec e_y),\ \mathsf{M}_2(\vec e_z) \,\big\},
 $$
 
-with no factor of $i$ anywhere — this is the image of the algebra's own basis, and the one subspace whose matrix basis is the assignment $\mathsf{M}_2(e_\mu)$ read off just as it stands. Writing its general element as $q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, the same three-step chain applies, with the complex coefficients and the real parameters the same four numbers,
+with no factor of $i$ anywhere — this is the image of the algebra's own basis, and the one subspace whose matrix basis is the assignment $\mathsf{M}_2(e_\mu)$ read off just as it stands. Writing its general element as $q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, the same two-step chain applies, with the complex coefficients and the real parameters the same four numbers,
 
 $$
 \mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix}
-= \begin{pmatrix} q_t - iq_3 & -iq_1 - q_y \\ -iq_1 + q_y & q_t + iq_3 \end{pmatrix}
-= \begin{pmatrix} ct' - iz & -ix - y \\ -ix + y & ct' + iz \end{pmatrix},
+= \begin{pmatrix} q_t - iq_3 & -iq_1 - q_y \\ -iq_1 + q_y & q_t + iq_3 \end{pmatrix},
 $$
 
-with $q_t = ct'$ and $q_k = x_k$. Naming the two complex entries,
+with all four $q_\mu$ real. Naming the two complex entries,
 
 $$
 \mathsf{M}_2(q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z) = \begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix}, \qquad z = q_t - iq_3, \quad w = -iq_1 - q_y ,
 $$
 
-where the entry $z$ is this one complex number, the combination $q_t - iq_3$ of the two physical parameters on the diagonal. The letter is doing double duty: in the chain above, the $z$ inside the combination is the spatial coordinate $q_z = z$ of the four-vector article, while in this display the whole entry is named $z$, and the combination $q_t - iq_3$ is what says which is meant.
+where the entry $z$ is this one complex number, the combination $q_t - iq_3$ of two real parameters on the diagonal, $q_3$ being the third vector coefficient.
 
 That is the matrix statement of $M = \epsilon\overline{M}\epsilon^{-1}$. The trace is $2q_t$, twice the scalar part, and the determinant is
 
@@ -314,17 +305,16 @@ Since $\mathsf{M}_2$ is $\mathbb{C}$-linear and $i\mathbb{H}_{\mathbb{B}} = i\,\
 
 $$
 \mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix}
-= i\begin{pmatrix} q'_t - iq'_z & -iq'_x - q'_y \\ -iq'_x + q'_y & q'_t + iq'_z \end{pmatrix}
-= i\begin{pmatrix} ct - iz' & -ix' - y' \\ -ix' + y' & ct + iz' \end{pmatrix},
+= i\begin{pmatrix} q'_t - iq'_z & -iq'_x - q'_y \\ -iq'_x + q'_y & q'_t + iq'_z \end{pmatrix},
 $$
 
-with $q'_t = ct$ and $q'_k = x'_k$. Naming the two complex entries as in the quaternion case,
+with the four $q'_\mu$ real. Naming the two complex entries as in the quaternion case,
 
 $$
 \mathsf{M}_2(iq'_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z) = \begin{pmatrix} iz' & iw' \\ -i\bar{w}' & i\bar{z}' \end{pmatrix}, \qquad z' = q'_t - iq'_z, \quad w' = -iq'_x - q'_y ,
 $$
 
-with the same double duty of the letter $z'$, resolved there too by the combination $q'_t - iq'_z$.
+where the entry $z'$ is the combination $q'_t - iq'_z$ of two real parameters.
 
 The determinant changes sign with the factor, $\det = -((q'_t)^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2)$, **negative definite** — the exact mirror of the definite form on $\mathbb{H}_{\mathbb{B}}$. Together the two images exhaust $M_2(\mathbb{C})$, so the real-and-imaginary split of the algebra is, in matrix language, the split of $M_2(\mathbb{C})$ into the quaternion matrices and $i$ times them.
 
@@ -343,12 +333,11 @@ $$
 
 the three non-identity members being the Hermitian basis matrices that the remark of *The Representation* names the Pauli matrices.
 
-Writing the general element of the subspace as $\tilde{Q} = q_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z = (ct')\,e_t + (ix')\,\vec e_x + (iy')\,\vec e_y + (iz')\,\vec e_z$, with $q_t = ct'$ and $q'_k = x'_k$ real, the same three-step chain gives
+Writing the general element of the subspace as $\tilde{Q} = q_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z$, with $q_t$ and the $q'_k$ real, the same two-step chain gives
 
 $$
 \mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix}
-= \begin{pmatrix} q_t + q'_z & q'_x - iq'_y \\ q'_x + iq'_y & q_t - q'_z \end{pmatrix}
-= \begin{pmatrix} ct' + z' & x' - iy' \\ x' + iy' & ct' - z' \end{pmatrix},
+= \begin{pmatrix} q_t + q'_z & q'_x - iq'_y \\ q'_x + iq'_y & q_t - q'_z \end{pmatrix},
 $$
 
 the general Hermitian $2 \times 2$ matrix — the general observable of a two-state system — with scalar part half the trace, $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2q_t$, real, against the purely imaginary $2iq'_t$ of the material subspace. Its determinant is
@@ -357,7 +346,7 @@ $$
 \det \mathsf{M}_2(\tilde{Q}) = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 ,
 $$
 
-the mirror interval of signature $(1,3)$, read on the informational coordinate $(ct')\,e_t + i\,x'\,\vec e_x + i\,y'\,\vec e_y + i\,z'\,\vec e_z$, that is $q_t = ct'$, $q'_x = x'$, $q'_y = y'$, $q'_z = z'$.
+the mirror interval of signature $(1,3)$, read on the informational element $q_te_t + i(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z)$.
 
 ### The Material Subspace $\mathbb{M}_-$
 
@@ -372,12 +361,11 @@ i\begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix},\
 \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix} \,\right\}.
 $$
 
-Writing the general element as $\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z = ic\,t\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$, with $q'_t = ct$ and $q_k = x_k$ real, the chain from the complex coefficients to the real parameters to the physical coordinates is
+Writing the general element as $\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, with $q'_t$ and the $q_k$ real, the chain from the complex coefficients to the real parameters is
 
 $$
 \mathsf{M}_2(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix}
 = \begin{pmatrix} iq'_t - iq_3 & -iq_1 - q_y \\ -iq_1 + q_y & iq'_t + iq_3 \end{pmatrix}
-= \begin{pmatrix} ict - iz & -ix - y \\ -ix + y & ict + iz \end{pmatrix}
 = i\begin{pmatrix} q'_t - q_z & -q_x + iq_2 \\ -q_x - iq_2 & q'_t + q_z \end{pmatrix},
 $$
 
@@ -387,7 +375,7 @@ $$
 \det \mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2 ,
 $$
 
-the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, read on the material four-position of the companion article, $\tilde{Q} = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$, that is $q'_t = ct$, $q_x = x$, $q_y = y$, $q_z = z$, giving $-(ct)^2 +x^2+y^2+z^2$. This is the most economical place to see why the material subspace is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.
+the quadratic form of signature $(3,1)$: the form of the material sector, read on $\tilde{Q} = iq'_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, giving $-(q'_t)^2 + q_x^2 + q_y^2 + q_z^2$. This is the most economical place to see why the material subspace is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.
 
 ### How They Fit Together
 
@@ -568,7 +556,7 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 
 - The signs are forced: $\vec e_k^2 = -e_t$ requires the factor $i$, and $\vec e_x\vec e_y = +\vec e_z$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.
 - The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_t$, and the determinant **is** the biquaternion norm, $\det(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ all follow.
-- The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_te_t \mapsto Q_t\mathsf{M}_2(e_t)$, the only one of the remarkable subspaces of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_t - iq_3$, $w = -iq_1 - q_y$, determinant $q_t^2 + q_x^2 + q_y^2 + q_z^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_t)^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_te_t + iq'_k\vec e_k$ mapped to a Hermitian matrix, $\det = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 = c^2(t')^2 -(x'^2+y'^2+z'^2)$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_te_t + q_k\vec e_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2 = -c^2t^2 +x^2+y^2+z^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
+- The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_te_t \mapsto Q_t\mathsf{M}_2(e_t)$, the only one of the remarkable subspaces of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_t - iq_3$, $w = -iq_1 - q_y$, determinant $q_t^2 + q_x^2 + q_y^2 + q_z^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_t)^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_te_t + iq'_k\vec e_k$ mapped to a Hermitian matrix, $\det = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 = c^2(t')^2 -(x'^2+y'^2+z'^2)$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_te_t + q_k\vec e_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2$, the interval of signature $(3,1)$). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
 - The minimal left ideals are the matrix **columns**: $\tilde\Pi_\pm = \tfrac12(e_t \pm i\vec e_z)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\vec\Upsilon_x = \tfrac12(i\vec e_x - \vec e_y) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
 - Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \mathsf{M}_2(-\vec e_y)$. Hermitian conjugation is the conjugate transpose and $\flat = -{}^{*}$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.
 - The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k \mapsto \tfrac{\hbar}{2}\mathsf{M}_2(i\vec e_k)$; the pure states are the rank-one Hermitian idempotents $\tilde\Pi_{1,2}(\vec u)$ and are the null elements $\langle\tilde\Pi\rangle_{\natural} = 0$; the density matrix $\rho = \tfrac12\big(\mathsf{M}_2(e_t) + r_k\mathsf{M}_2(i\vec e_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(i\vec e_k)\big)$ on the Bloch ball.
@@ -595,12 +583,12 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 | $\epsilon = \mathsf{M}_2(-\vec e_y)$ | The antisymmetric form dressing bar and star |
 | $\tilde{Q}^{*} \mapsto M^\dagger$ | Hermitian conjugation is the conjugate transpose |
 | $\tilde{Q}^\flat \mapsto -M^\dagger$ | Anti-Hermitian conjugation; the real structure |
-| $\mathbb{C}_{\mathbb{B}}$ | The centre subspace: $Q_te_t \mapsto Q_t\mathsf{M}_2(e_t)$, the scalar matrices; parameters $q_t, q'_t$ with $q_t = ct'$ and $q'_t = ct$ |
+| $\mathbb{C}_{\mathbb{B}}$ | The centre subspace: $Q_te_t \mapsto Q_t\mathsf{M}_2(e_t)$, the scalar matrices; parameters $q_t, q'_t$ |
 | $\mathrm{Vect}(\mathbb{B})$ | The vector subspace, the complement of the centre subspace: $Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z \mapsto \begin{pmatrix} -iQ_3 & -iQ_1-Q_y \\ -iQ_1+Q_y & iQ_3\end{pmatrix}$, the traceless matrices $\mathrm{SL}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion subspace: $q_te_t + \cdots + q_z\vec e_z \mapsto \begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z = q_t - iq_3$, $w = -iq_1 - q_y$, determinant $q_t^2 + q_x^2 + q_y^2 + q_z^2$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | The antiquaternion subspace, the anti-fixed space of complex conjugation: $i$ times the real-quaternion image, $\begin{pmatrix} iz & iw \\ -i\bar{w} & i\bar{z}\end{pmatrix}$, determinant **negative** definite. With $\mathbb{H}_{\mathbb{B}}$ it gives $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split crossing the $\mathbb{M}_\pm$ split |
-| $\mathbb{M}_+$ | The informational subspace, the Hermitian one: $q_te_t + iq'_k\vec e_k = (ct')\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$, mapped to a Hermitian matrix, $\det = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 = c^2(t')^2 -(x'^2+y'^2+z'^2)$; parameters $q_t, q'_x, q'_y, q'_z$, with $q_t = ct'$ |
-| $\mathbb{M}_-$ | The material subspace, the anti-Hermitian one: $iq'_te_t + q_k\vec e_k = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, mapped to $i$ times a Hermitian matrix, $\det = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2 = -c^2t^2 +x^2+y^2+z^2$; parameters $q'_t, q_x, q_y, q_z$, with $q'_t = ct$ |
+| $\mathbb{M}_+$ | The informational subspace, the Hermitian one: $q_te_t + iq'_k\vec e_k$, mapped to a Hermitian matrix, $\det = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2$; parameters $q_t, q'_x, q'_y, q'_z$ |
+| $\mathbb{M}_-$ | The material subspace, the anti-Hermitian one: $iq'_te_t + q_k\vec e_k$, mapped to $i$ times a Hermitian matrix, $\det = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2$; parameters $q'_t, q_x, q_y, q_z$ |
 | $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ | The trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\mathsf{M}_2(e_t) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part |
 | $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Every element is a Hermitian part plus an anti-Hermitian part; $\mathbb{M}_- = i\mathbb{M}_+$ |
 | $\tilde\Pi_\pm = \tfrac12(e_t \pm i\vec e_z) = \tilde\Pi_{1,2}(\vec u_z)$ | Idempotents generating the two minimal left ideals; $\mathsf{M}_2(\tilde\Pi_\pm) = E_{11}, E_{22}$ |

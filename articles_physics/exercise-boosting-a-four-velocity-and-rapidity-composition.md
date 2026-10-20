@@ -16,15 +16,15 @@ which is Hermitian ($\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$), lies in $\
 
 ## Problem 1: The Boost of a General Four-Velocity
 
-**Statement.** Let $\tilde{V} = \gamma(ic\,e_t + \vec v)$ be the four-velocity of a particle, and let $\tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2} + i\sinh\frac{\psi_b}{2}\vec u_x$, with $\tanh\psi_b = v_b/c$, be a boost biquaternion. Compute $\tilde{V}' = \tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ and show that:
+**Statement.** Let $\tilde{V} = \gamma(ic\,e_t + \vec v)$ be the four-velocity of a particle, and let $\tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2} + i\sinh\frac{\psi_b}{2}\vec u_x$, with $\tanh\psi_b = v_b/c$, be a boost biquaternion. Compute $\tilde{V}_2 = \tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}^{*}$ and show that:
 
-**(a)** $\tilde{V}'$ lies in $\mathbb{M}_-$ and has $\langle\tilde{V}'\rangle_{\natural} = -c^2$;
+**(a)** $\tilde{V}_2$ lies in $\mathbb{M}_-$ and has $\langle\tilde{V}_2\rangle_{\natural} = -c^2$;
 
-**(b)** its scalar part is $ic\,\gamma'$ with $\gamma' = \gamma_b\gamma\left(1 - \vec v_b\cdot\vec v/c^2\right)$, where $\gamma_b = (1-v_b^2/c^2)^{-1/2}$;
+**(b)** its scalar part is $ic\,\gamma_2$ with $\gamma_2 = \gamma_b\gamma\left(1 - \vec v_b\cdot\vec v/c^2\right)$, where $\gamma_b = (1-v_b^2/c^2)^{-1/2}$;
 
 **(c)** its vector part is $\gamma\left[\vec v + (\gamma_b-1)\dfrac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b - \gamma_b\vec v_b\right]$, so that the induced velocity is the standard parallel–perpendicular transformation;
 
-**(d)** in the collinear case $\vec v\parallel\vec v_b$ the induced velocity is $v' = (v-v_b)/(1-v_b v/c^2)$, i.e. the rapidities subtract.
+**(d)** in the collinear case $\vec v\parallel\vec v_b$ the induced velocity is $v_2 = (v-v_b)/(1-v_b v/c^2)$, i.e. the rapidities subtract.
 
 **Solution.** Because a pure-boost rotor is Hermitian, $\tilde U_{\vec v_b}^{*} = \tilde U_{\vec v_b}$, and the transformation is the two-sided product $\tilde U_{\vec v_b}\tilde{V}\tilde U_{\vec v_b}$. Write $a = \cosh\frac{\psi_b}{2}$, $b = \sinh\frac{\psi_b}{2}$, and $J = \vec u_x$, a real unit pure quaternion with $J^2 = -e_t$. Split the velocity into parts parallel and perpendicular to $J$,
 $$
@@ -44,17 +44,17 @@ $$
 $$
 The identity $\sinh\psi_b = \gamma_b v_b/c$ and the expansion of the parallel component have been used. The result is the biquaternion form of the standard Lorentz transformation of a four-velocity from the lab to the frame moving with velocity $\vec v_b$.
 
-**(a)** In (1) the scalar coefficient is purely imaginary and the vector coefficient is real, so $\tilde{V}'\in\mathbb{M}_-$. Its biquaternion norm is preserved because $\langle\cdot\rangle_{\natural}$ is multiplicative and $\langle\tilde U_{\vec v_b}\rangle_{\natural} = 1$:
+**(a)** In (1) the scalar coefficient is purely imaginary and the vector coefficient is real, so $\tilde{V}_2\in\mathbb{M}_-$. Its biquaternion norm is preserved because $\langle\cdot\rangle_{\natural}$ is multiplicative and $\langle\tilde U_{\vec v_b}\rangle_{\natural} = 1$:
 $$
-\langle\tilde{V}'\rangle_{\natural} = \langle\tilde U_{\vec v_b}\rangle_{\natural}\,\langle\tilde{V}\rangle_{\natural}\,\langle\tilde U_{\vec v_b}\rangle_{\natural}^{*} = 1\cdot(-c^2)\cdot 1 = -c^2 .
+\langle\tilde{V}_2\rangle_{\natural} = \langle\tilde U_{\vec v_b}\rangle_{\natural}\,\langle\tilde{V}\rangle_{\natural}\,\langle\tilde U_{\vec v_b}\rangle_{\natural}^{*} = 1\cdot(-c^2)\cdot 1 = -c^2 .
 $$
 The transformation therefore maps four-velocities to four-velocities; this is the algebraic content of Lorentz covariance in $\mathbb{M}_-$.
 
-**(b)** Reading off the scalar coefficient of (1), $\gamma' = \gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$. This is positive for $v_b,v<c$, since $\vec v_b\cdot\vec v\le v_b v < c^2$. It is the standard transformation of energy, $E'/c = \gamma_b(E/c - \vec v_b\cdot\vec p/c)$, written for the four-velocity.
+**(b)** Reading off the scalar coefficient of (1), $\gamma_2 = \gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$. This is positive for $v_b,v<c$, since $\vec v_b\cdot\vec v\le v_b v < c^2$. It is the standard transformation of energy, $E_2/c = \gamma_b(E/c - \vec v_b\cdot\vec p/c)$, written for the four-velocity.
 
-**(c)** The induced velocity is the vector coefficient divided by $\gamma'$,
+**(c)** The induced velocity is the vector coefficient divided by $\gamma_2$,
 $$
-\vec v' = \frac{\vec v + (\gamma_b-1)\dfrac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b - \gamma_b\vec v_b}{\gamma_b\left(1 - \vec v_b\cdot\vec v/c^2\right)}
+\vec v_2 = \frac{\vec v + (\gamma_b-1)\dfrac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b - \gamma_b\vec v_b}{\gamma_b\left(1 - \vec v_b\cdot\vec v/c^2\right)}
 = \frac{\vec v_\parallel - \vec v_b}{1 - \vec v_b\cdot\vec v/c^2} + \frac{\vec v_\perp}{\gamma_b\left(1 - \vec v_b\cdot\vec v/c^2\right)},
 \tag{2}
 $$
@@ -62,16 +62,16 @@ which is the standard transformation. The second equality uses $\vec v_\parallel
 
 **(d)** If $\vec v = v\vec u_x$ then $\vec v_\perp = 0$ and (2) reduces to
 $$
-v' = \frac{v-v_b}{1-v_b v/c^2},
+v_2 = \frac{v-v_b}{1-v_b v/c^2},
 $$
-so that in rapidities $v' = c\tanh(\psi_v - \psi_b)$: **a boost subtracts its rapidity from the rapidity of the four-velocity it acts on.** This is the statement that the transformation (1) is the lab-to-moving-frame map, and it fixes the direction convention used throughout: the rotor $\tilde U_{\vec v_b}$ carries the lab to the frame moving with $+\vec v_b$, so the particle's speed is reduced by $v_b$.
+so that in rapidities $v_2 = c\tanh(\psi_v - \psi_b)$: **a boost subtracts its rapidity from the rapidity of the four-velocity it acts on.** This is the statement that the transformation (1) is the lab-to-moving-frame map, and it fixes the direction convention used throughout: the rotor $\tilde U_{\vec v_b}$ carries the lab to the frame moving with $+\vec v_b$, so the particle's speed is reduced by $v_b$.
 
 **Numerical instance.** Take $\vec v = 0.6c\,\vec e_x$ and $\vec v_b = 0.5c\,\vec e_y$, orthogonal. Then $\gamma = 1.25$, $\gamma_b = 1.1547005$, $\vec v_b\cdot\vec v = 0$, and from (1)
 $$
-\gamma' = \gamma_b\gamma = 1.4433757, \qquad
-\vec v' = \begin{pmatrix} 0.5196152 \\ -0.5 \\ 0\end{pmatrix}c, \qquad |\vec v'| = 0.7211103\,c .
+\gamma_2 = \gamma_b\gamma = 1.4433757, \qquad
+\vec v_2 = \begin{pmatrix} 0.5196152 \\ -0.5 \\ 0\end{pmatrix}c, \qquad |\vec v_2| = 0.7211103\,c .
 $$
-The norm is preserved: $\langle\tilde{V}'\rangle_{\natural} = -1$ in units $c=1$. The transverse component is contracted by $1/\gamma_b$ (from $0.6c$ to $0.5196c$) and the boost direction acquires the recoil $-v_b$; this is (2) term by term.
+The norm is preserved: $\langle\tilde{V}_2\rangle_{\natural} = -1$ in units $c=1$. The transverse component is contracted by $1/\gamma_b$ (from $0.6c$ to $0.5196c$) and the boost direction acquires the recoil $-v_b$; this is (2) term by term.
 
 ## Problem 2: Collinear Boosts and Rapidity Addition
 
@@ -105,7 +105,7 @@ w = c\,\frac{\tanh\psi_1 + \tanh\psi_2}{1 + \tanh\psi_1\tanh\psi_2}
 $$
 For $v_{b_1} = 0.5c$, $v_{b_2} = 0.6c$ this gives $w = 1.1c/1.3 = 0.8461538c$, which is $\tanh(\operatorname{atanh}0.5 + \operatorname{atanh}0.6)$ to machine precision.
 
-**(c)** There is no contradiction with Problem 1. Equation (3) is the composition of two *coordinate changes*: the rotor $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ carries the lab to the frame moving with $w$. Equation (2) of Problem 1 is the action of a *single* coordinate change on a four-velocity: it subtracts the frame rapidity. The two statements are the multiplication and the action of the same group, and in the collinear case the action's rapidity shift is the group's rapidity sum with a sign, $v' = c\tanh(\psi_v-\psi_b)$.
+**(c)** There is no contradiction with Problem 1. Equation (3) is the composition of two *coordinate changes*: the rotor $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ carries the lab to the frame moving with $w$. Equation (2) of Problem 1 is the action of a *single* coordinate change on a four-velocity: it subtracts the frame rapidity. The two statements are the multiplication and the action of the same group, and in the collinear case the action's rapidity shift is the group's rapidity sum with a sign, $v_2 = c\tanh(\psi_v-\psi_b)$.
 
 ## Problem 3: Non-Collinear Boosts and the Thomas–Wigner Rotation
 
@@ -201,7 +201,7 @@ $$
 \tilde u = \cos\frac{\theta_W}{2} + \sin\frac{\theta_W}{2}\vec u_{\vec v_{b_2}\times\vec v_{b_3}}.
 \tag{12}
 $$
-The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u\tilde{H}'$ with $\tilde{H}' = \tilde u^{-1}\tilde{H}\tilde u$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\Psi$ but a different axis; only $\Psi$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
+The rotation is intrinsic, but the split of $P$ into boost and rotation is only canonical in the right-polar sense (12). The alternative left-polar form $P = \tilde u\tilde H_2$ with $\tilde H_2 = \tilde u^{-1}\tilde{H}\tilde u$ is an equally valid boost-times-rotation decomposition, with a boost of the same rapidity $\Psi$ but a different axis; only $\Psi$ and $\theta_W$ are convention-independent. This is the sense in which the parent's statement that a non-collinear product is "a boost plus a spatial rotation" is complete only after the ordering is fixed.
 
 **(c)** For equal orthogonal rapidities, $\psi_1 = \psi_2 = \psi$ and $\phi = \pi/2$, so $\cosh\Psi = \cosh^2\psi$ and $a = \cosh^2\frac{\psi}{2}$. Then $\cos\frac{\theta_W}{2} = \cosh^2\frac{\psi}{2}\big/\cosh\frac{\Psi}{2}$, and (10) collapses to
 $$
@@ -330,7 +330,7 @@ At $\alpha\tau = 1$ this is exactly $1$. For $\alpha\tau > 1$ it exceeds $1$, re
 
 The following are left to the reader; they extend the same tools and use the same notation.
 
-1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{V}$ and Problem 1, show that $\tilde U_{\vec v_b}\tilde{P}\tilde U_{\vec v_b}^{*} = iE'/c\,e_t + \vec p'$ with $E' = \gamma_b(E-\vec v_b\cdot\vec p)$ and $\vec p' = \vec p + (\gamma_b-1)\frac{\vec v_b\cdot\vec p}{v_b^2}\vec v_b - \gamma_b\frac{E}{c^2}\vec v_b$. Verify the mass shell $\tilde{P}'{\tilde{P}^{\natural}}' = -m^2c^2$ and recover the aberration of light by setting $m=0$.
+1. **Boosting a four-momentum.** Starting from $\tilde{P} = m\tilde{V}$ and Problem 1, show that $\tilde U_{\vec v_b}\tilde{P}\tilde U_{\vec v_b}^{*} = iE_2/c\,e_t + \vec p_2$ with $E_2 = \gamma_b(E-\vec v_b\cdot\vec p)$ and $\vec p_2 = \vec p + (\gamma_b-1)\frac{\vec v_b\cdot\vec p}{v_b^2}\vec v_b - \gamma_b\frac{E}{c^2}\vec v_b$. Verify the mass shell $\tilde P_2{\tilde P_2^{\natural}} = -m^2c^2$ and recover the aberration of light by setting $m=0$.
 
 2. **Antiparallel boosts.** For $\vec u_z = -\vec u_y$, show that $\tilde U_{\mathrm L,2}\tilde U_{\mathrm L,1}$ is a pure boost of rapidity $|\psi_1-\psi_2|$ (with the sign determined by which rapidity is larger) and that the Wigner angle (10) vanishes. Deduce the subtraction formula $w = |v_{b_1}-v_{b_2}|/(1-v_{b_1}v_{b_2}/c^2)$ and compare with Problem 1(d).
 
@@ -346,7 +346,7 @@ The following are left to the reader; they extend the same tools and use the sam
 
 We have applied the boost biquaternion and the rotor conjugation to four-velocities and to the composition of boosts.
 
-1. **Boosting a four-velocity.** For $\tilde{V} = \gamma(ic\,e_t+\vec v)$ and $\tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u_x$, the rotor conjugation gives (1): a four-velocity in $\mathbb{M}_-$ with $N = -c^2$, scalar part $ic\gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$, and vector part $\gamma[\vec v+(\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b-\gamma_b\vec v_b]$. The induced velocity is the standard parallel–perpendicular transformation (2); in the collinear case it is the rapidity subtraction $v' = (v-v_b)/(1-v_b v/c^2)$.
+1. **Boosting a four-velocity.** For $\tilde{V} = \gamma(ic\,e_t+\vec v)$ and $\tilde U_{\vec v_b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u_x$, the rotor conjugation gives (1): a four-velocity in $\mathbb{M}_-$ with $N = -c^2$, scalar part $ic\gamma_b\gamma(1-\vec v_b\cdot\vec v/c^2)$, and vector part $\gamma[\vec v+(\gamma_b-1)\frac{\vec v_b\cdot\vec v}{v_b^2}\vec v_b-\gamma_b\vec v_b]$. The induced velocity is the standard parallel–perpendicular transformation (2); in the collinear case it is the rapidity subtraction $v_2 = (v-v_b)/(1-v_b v/c^2)$.
 
 2. **Collinear composition.** Two boosts along one direction multiply to a pure boost of summed rapidity, (3), giving rapidity addition and the velocity-addition formula $w = (v_{b_1}+v_{b_2})/(1+v_{b_1}v_{b_2}/c^2)$.
 

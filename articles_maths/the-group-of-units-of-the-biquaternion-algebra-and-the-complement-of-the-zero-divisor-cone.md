@@ -210,7 +210,7 @@ $$
 $$
 
 of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$; it is not multiplicative, its vanishing
-set is a complex cone of real dimension six, and it is neither the light cone nor the zero-divisor
+set is a complex cone of real dimension six, and it is neither the null cone nor the zero-divisor
 cone (*Norm and Invertibility in the General Quaternionic Algebra*). The two cones are different objects,
 and the difference is the boundary of the group.
 
@@ -312,7 +312,7 @@ here in the form the boundary takes.
 norm vanishes at the origin alone, so the punctured cone is empty there and the only non-unit is the
 origin; **the boundary of the group is empty in those subspaces and non-empty exactly in the vector
 subspace and the two sectors.** On the vector subspace the cone is the complex cone
-$\sum_kQ_k^{2}=0$, of real codimension two in the subspace; on the two sectors it is the light cone,
+$\sum_kQ_k^{2}=0$, of real codimension two in the subspace; on the two sectors it is the null cone,
 of real codimension one, the slice the physics articles read as the causal boundary. The dimension
 of the cone drops from six to four on the vector subspace and to three on the sectors, and the group
 is the complement at every stage.
@@ -430,7 +430,7 @@ homomorphism $\mathbb{B}^\times\to\mathbb{C}^\times$ with kernel the norm-one gr
 open, dense and connected, of real dimension eight, of the homotopy type $S^{1}\times S^{3}$ with
 $\pi_x\cong\mathbb{Z}$, with the cone of real codimension two as its boundary; on the centre and the
 two quaternionic subspaces the cone is empty and the group is everything but the origin, while on
-the vector subspace and the two sectors the boundary is the complex cone and the light cone. Across
+the vector subspace and the two sectors the boundary is the complex cone and the null cone. Across
 the twelve structures the complement of the cone is one set and one group: the set is shared by the
 four general products, whose inverse equations are solved by $(\tilde Q_1^{-1})^{\natural}$, $(\tilde
 Q_1^{-1})^{*}$ and $(\tilde Q_1^{-1})^{\natural*}$ for the off-cone elements, and the group structure

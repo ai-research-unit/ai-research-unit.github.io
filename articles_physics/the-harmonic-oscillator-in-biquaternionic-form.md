@@ -183,7 +183,7 @@ Both $\tilde{Q}_{\mathrm{osc},1}$ and $\tilde{Q}_{\mathrm{osc},2}$ are Hermitian
 The generator content is sharper still. A squeeze, $\tilde{Q}_1\mapsto\tilde{Q}_1\cosh r-\tilde{Q}_2\sinh r$, $\tilde{Q}_2\mapsto\tilde{Q}_2\cosh r-\tilde{Q}_1\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde{Q}_1\pm\tilde{Q}_2$ by $\exp(\mp r)$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde U_{\mathrm b}=\cosh(\psi/2)\,e_t+i\sinh(\psi/2)\vec e_x$ lies in $\mathbb{M}_+$ and acts on $\tilde R=ict\,e_t+x\,\vec e_x\in\mathbb{M}_-$ by rotor conjugation $\tilde R\mapsto\tilde U_{\mathrm b}\tilde R\tilde U_{\mathrm b}^{*}$; computing the result gives
 
 $$
-ct'=\cosh\psi\,ct-\sinh\psi\,x,\qquad x'=\cosh\psi\,x-\sinh\psi\,ct,
+ct_2=\cosh\psi\,ct-\sinh\psi\,x,\qquad x_2=\cosh\psi\,x-\sinh\psi\,ct,
 $$
 
 so the null combinations scale as $ct\pm x\mapsto \exp(\mp\psi)(ct\pm x)$. Identifying the oscillator's phase plane with the $(ct,x)$ plane of $\mathbb{M}_-$ by $\tilde Q_1\pm\tilde Q_2\leftrightarrow ct\pm x$ makes the squeeze a boost, term for term.

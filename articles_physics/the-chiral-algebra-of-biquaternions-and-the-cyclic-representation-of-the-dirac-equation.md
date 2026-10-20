@@ -105,7 +105,7 @@ Grouping the terms of (4) the other way gives the **signed** biquaternions: a *p
 The signed biquaternions are **projectors** for the crossing product of the next section: a positive projector on the left of any biquaternion returns a positive signed biquaternion, a negative projector returns a negative one, and the action on the right side reverses the sign. In coordinates, with $\mathcal{P}^+ = \beta\vec q^* + \eta\bar{N}$ and $\mathcal{P}^- = \alpha\vec q + \xi N$,
 
 $$
-\mathcal{P}^+ \rightsquigarrow \mathcal{B} = \mathcal{B}^{'+}, \qquad \mathcal{P}^- \rightsquigarrow \mathcal{B} = \mathcal{B}^{'-}, \qquad \mathcal{B} \rightsquigarrow \mathcal{P}^+ = \mathcal{B}^{''-}, \qquad \mathcal{B} \rightsquigarrow \mathcal{P}^- = \mathcal{B}^{''+},
+\mathcal{P}^+ \rightsquigarrow \mathcal{B} = \mathcal{B}^{+}_{L}, \qquad \mathcal{P}^- \rightsquigarrow \mathcal{B} = \mathcal{B}^{-}_{L}, \qquad \mathcal{B} \rightsquigarrow \mathcal{P}^+ = \mathcal{B}^{-}_{R}, \qquad \mathcal{B} \rightsquigarrow \mathcal{P}^- = \mathcal{B}^{+}_{R},
 \tag{7}
 $$
 
@@ -247,13 +247,13 @@ $$
 \tag{14}
 $$
 
-with $\psi_L = (u, v)_L^{\mathsf T}$ and $\psi_R = (u', v')_R^{\mathsf T}$, and rewrites it in the isotropic derivatives (6) as
+with $\psi_L = (u, v)_L^{\mathsf T}$ and $\psi_R = (u_2, v_2)_R^{\mathsf T}$, and rewrites it in the isotropic derivatives (6) as
 
 $$
-\partial/\partial\xi u + \partial/\partial\beta v = -im\,u', \qquad
-\partial/\partial\eta v + \partial/\partial\alpha u = -im\,v', \qquad
-\partial/\partial\eta u' - \partial/\partial\beta v' = -im\,u, \qquad
-\partial/\partial\xi v' - \partial/\partial\alpha u' = -im\,v.
+\partial/\partial\xi u + \partial/\partial\beta v = -im\,u_2, \qquad
+\partial/\partial\eta v + \partial/\partial\alpha u = -im\,v_2, \qquad
+\partial/\partial\eta u_2 - \partial/\partial\beta v_2 = -im\,u, \qquad
+\partial/\partial\xi v_2 - \partial/\partial\alpha u_2 = -im\,v.
 \tag{15}
 $$
 
@@ -274,7 +274,7 @@ $$
 The correspondence with the Weyl components is
 
 $$
-u = f_\alpha, \qquad v = -f_\xi, \qquad u' = -f_\beta, \qquad v' = f_\eta,
+u = f_\alpha, \qquad v = -f_\xi, \qquad u_2 = -f_\beta, \qquad v_2 = f_\eta,
 \tag{18}
 $$
 
@@ -331,7 +331,7 @@ The paper treats one special Lorentz transformation, the boost of velocity $V = 
 
 $$
 \psi_L = \begin{pmatrix} u \\ v \end{pmatrix} \mapsto \begin{pmatrix} \exp(-\theta) u \\ \exp(\theta) v \end{pmatrix}, \qquad
-\psi_R = \begin{pmatrix} u' \\ v' \end{pmatrix} \mapsto \begin{pmatrix} \exp(\theta) u' \\ \exp(-\theta) v' \end{pmatrix},
+\psi_R = \begin{pmatrix} u_2 \\ v_2 \end{pmatrix} \mapsto \begin{pmatrix} \exp(\theta) u_2 \\ \exp(-\theta) v_2 \end{pmatrix},
 \tag{23}
 $$
 
@@ -345,7 +345,7 @@ $$
 The author's rule for moving such an operator from one side of a product to the other is $\mathcal{B} \odot L = \breve{L} \otimes \mathcal{B}$ for every $\mathcal{B}$, and he writes the boost as
 
 $$
-F \mapsto F' = F \odot L = \breve{L} \otimes F, \qquad F \mapsto F' = P^+ \odot L + \breve{L} \otimes P^- .
+F \mapsto F_2 = F \odot L = \breve{L} \otimes F, \qquad F \mapsto F_2 = P^+ \odot L + \breve{L} \otimes P^- .
 \tag{25}
 $$
 
@@ -354,7 +354,7 @@ Two remarks. First, **the right-multiplication by $L$ is a genuine boost, and it
 The energy-momentum biquaternion $K = k_\alpha\vec q + k_\beta\vec q^* + k_\xi N + k_\eta\bar{N}$ transforms **two-sidedly**, unlike the one-sided wave function,
 
 $$
-K \mapsto K' = L^* \odot K \odot L = T^* \otimes K \otimes T,
+K \mapsto K_2 = L^* \odot K \odot L = T^* \otimes K \otimes T,
 \tag{26}
 $$
 
@@ -399,8 +399,8 @@ The spin treatment is the paper's most concrete physical addition, and it rests 
 
 $$
 \psi_L = \begin{pmatrix} u & 0 \\ v & 0 \end{pmatrix}, \qquad
-\psi_R = \begin{pmatrix} 0 & u' \\ 0 & v' \end{pmatrix}, \qquad
-\psi = \psi_L + \psi_R = \begin{pmatrix} u & u' \\ v & v' \end{pmatrix},
+\psi_R = \begin{pmatrix} 0 & u_2 \\ 0 & v_2 \end{pmatrix}, \qquad
+\psi = \psi_L + \psi_R = \begin{pmatrix} u & u_2 \\ v & v_2 \end{pmatrix},
 \tag{31}
 $$
 
@@ -475,7 +475,7 @@ i & -1 & -i & -i \\
 \end{pmatrix},
 $$
 
-and it satisfies both Hadamard properties: every entry has modulus $1$, and $H_4H_4^\dagger = 4I$, both recomputed here. It is **not** quite the matrix of the four-cycle (12) in the Cartesian components, and the difference is worth recording because it is invisible in the Hadamard property. Reading the four-cycle through the coordinates (5), it acts on the Cartesian components as $(f_x',f_y',f_z',f_t') = \tfrac12 D\,(f_x,f_y,f_z,f_t)$ with
+and it satisfies both Hadamard properties: every entry has modulus $1$, and $H_4H_4^\dagger = 4I$, both recomputed here. It is **not** quite the matrix of the four-cycle (12) in the Cartesian components, and the difference is worth recording because it is invisible in the Hadamard property. Reading the four-cycle through the coordinates (5), it acts on the Cartesian components as $(f_{x,2},f_{y,2},f_{z,2},f_{t,2}) = \tfrac12 D\,(f_x,f_y,f_z,f_t)$ with
 
 $$
 \tfrac12 D = \frac12\begin{pmatrix}
@@ -486,7 +486,7 @@ $$
 \end{pmatrix},
 $$
 
-which is $H_4$ with the **second row negated**, and the overall factor $\tfrac12$ absent from the printed matrix. The sign of that row is the one obtained from $f_y' = \tfrac{i}{2}(\alpha' - \beta')$; the inverse of $f_y = (\alpha-\beta)/(2i)$ gives $\tfrac{i}{2}(\beta' - \alpha')$ instead. So the printed $H_4$ is the four-cycle composed with a reversal of the $y$ orientation. Since negating a whole row preserves both Hadamard properties, the author's mathematical claim — that the cyclic conjugation *is* a complex Hadamard transvection on the Cartesian components — holds whichever orientation is meant, and the discrepancy is a sign convention of the coordinate transformation rather than an error in the Hadamard statement. Whether the Hadamard structure "indicates the informational aspect of the Dirac equation" is a separate question, and it is the author's interpretation; the corpus records the Hadamard gate in the quantum-gates article in the standard real-valued setting, and nothing in the present article bears on that.
+which is $H_4$ with the **second row negated**, and the overall factor $\tfrac12$ absent from the printed matrix. The sign of that row is the one obtained from $f_{y,2} = \tfrac{i}{2}(\alpha_2 - \beta_2)$; the inverse of $f_y = (\alpha-\beta)/(2i)$ gives $\tfrac{i}{2}(\beta_2 - \alpha_2)$ instead. So the printed $H_4$ is the four-cycle composed with a reversal of the $y$ orientation. Since negating a whole row preserves both Hadamard properties, the author's mathematical claim — that the cyclic conjugation *is* a complex Hadamard transvection on the Cartesian components — holds whichever orientation is meant, and the discrepancy is a sign convention of the coordinate transformation rather than an error in the Hadamard statement. Whether the Hadamard structure "indicates the informational aspect of the Dirac equation" is a separate question, and it is the author's interpretation; the corpus records the Hadamard gate in the quantum-gates article in the standard real-valued setting, and nothing in the present article bears on that.
 
 ### The Lorentz Analogue, the Rotation Transformation and the Superluminal Variant
 
@@ -535,7 +535,7 @@ The source builds a purpose-made **chiral algebra** of biquaternions and writes 
 | $\overset{⤺}{\phantom{x}}$ | Cyclic conjugation (the four-cycle) |
 | $F = \vec qf_\alpha + \vec q^*f_\beta + Nf_\xi + \bar{N}f_\eta$ | Biquaternion wave function |
 | $F^+ , F^-$ | Positive and negative signed parts; $\psi_R$ and $\psi_L$ |
-| $u, v, u', v'$ | Weyl spinor components; $u = f_\alpha$, $v = -f_\xi$, $u' = -f_\beta$, $v' = f_\eta$ |
+| $u, v, u_2, v_2$ | Weyl spinor components; $u = f_\alpha$, $v = -f_\xi$, $u_2 = -f_\beta$, $v_2 = f_\eta$ |
 | $\boldsymbol{\sigma}$ | Pauli matrices, $\boldsymbol{\sigma} = (\sigma_x, \sigma_y, \sigma_z)$ |
 | $M = \left(\begin{smallmatrix}\xi & \alpha\\ \beta & \eta\end{smallmatrix}\right)$ | Matrix of $\mathcal{B}$; the outer product becomes the ordinary matrix product |
 | $\psi = \left(\begin{smallmatrix} f_\alpha & -f_\beta\\ -f_\xi & f_\eta\end{smallmatrix}\right)$ | Matrix of $F$; the diagonal product becomes the ordinary matrix product |

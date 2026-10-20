@@ -316,7 +316,7 @@ It is the natural setting for the study of holomorphic functions with controlled
 The **Bloch space** $\mathcal{B}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
-\|f\|_{\mathcal{B}} = |f(0)| + \sup_{Q \in D} (1 - |Q|^2) |f'(Q)| < \infty.
+\|f\|_{\mathcal{B}} = |f(0)| + \sup_{Q \in D} (1 - |Q|^2) |\frac{df}{dQ}| < \infty.
 $$
 
 It is a Banach space, and it is the natural setting for the study of holomorphic functions with bounded mean oscillation of the derivative.

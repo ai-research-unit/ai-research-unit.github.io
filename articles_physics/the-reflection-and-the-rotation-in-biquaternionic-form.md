@@ -74,7 +74,7 @@ $$
 x_\mu\gamma^\mu = \gamma^0\,\mathsf{M}_4(w), \qquad w \in \mathbb{M}_+ ,
 $$
 
-with all coefficients positive; every trivector is $\gamma^0\mathsf{M}_4(w')$ with $w'\in\mathbb{M}_-$. The correspondence is coefficient by coefficient:
+with all coefficients positive; every trivector is $\gamma^0\mathsf{M}_4(w_2)$ with $w_2\in\mathbb{M}_-$. The correspondence is coefficient by coefficient:
 
 | Clifford element | biquaternion | sector |
 |---|---|---|
@@ -352,7 +352,7 @@ The claims of this article, in order.
 | $\mathsf{M}_4(\tilde{Q}^{*}) = \gamma^0\mathrm{rev}(\mathsf{M}_4(\tilde{Q}))\gamma^0$ | Hermitian conjugation |
 | $\gamma^0\mathsf{M}_4(\tilde{Q})\gamma^0 = \mathsf{M}_4(\tilde{Q}^*)$ | Conjugation by the frame is complex conjugation |
 | $\tilde U_{\mathrm L}$, $\langle\tilde U_{\mathrm L}\rangle_{\natural} = 1$ | Rotor, unit-norm biquaternion; $SL(2,\mathbb{C})$ |
-| $\tilde{Q}' = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
+| $\tilde{Q}_2 = \tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ | Rotor conjugation on $\mathbb{M}_-$ |
 | $\mathbb{M}_+$ | Hermitian sector; $\mathsf{M}_4(\mathbb{M}_+)$ = identity + timelike bivectors (boosts) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion sector; $\mathsf{M}_4(\mathbb{H}_{\mathbb{B}})$ = identity + spacelike bivectors (spatial rotations) |
 | $\det M$ | Two-reflection criterion: $\det M = 0$ iff $\tilde U_{\mathrm L}$ fixes a plane |

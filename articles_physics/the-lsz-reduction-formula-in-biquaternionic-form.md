@@ -32,7 +32,7 @@ and for a central scalar operator on the biquaternion module the residue is the 
 
 The article proceeds as follows. The next section states the LSZ formula and sketches its derivation from asymptotic fields. A section identifies the amputation with the inverse mass-shell operator. A section fixes the external wavefunctions as biquaternion plane waves. A section treats the wave-function renormalization as a residue, verified numerically. A section treats the scalar and spinor cases separately, and a section the one-mode truncation and the module gap. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The S-Matrix in Biquaternionic Form* and *The Feynman Propagator in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The wave biquaternion is $\tilde P=iEe_t+\vec p$ with **quaternion** conjugate $\tilde P^{\natural}=iEe_t-\vec p$ and $\tilde P\tilde P^{\natural}=(-E^2+\vec p^2)e_t=-p^2e_t$, where $p^2=E^2-\vec p^2$; the mass shell is $\tilde P\tilde P^{\natural}=-m^2c^2$ (in the dynamical expressions we set $\hbar=c=1$). On the spinor module the Dirac operator is $\not p-m$ with $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, and $\eta=-g$. The mode algebra is $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$, with all other anticommutators zero; the matrix isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the trace pairing is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$.
+**Conventions.** We use those of the companion articles, in particular *The S-Matrix in Biquaternionic Form* and *The Feynman Propagator in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The wave biquaternion is $\tilde P=iEe_t+\vec p$ with **quaternion** conjugate $\tilde P^{\natural}=iEe_t-\vec p$ and $\tilde P\tilde P^{\natural}=(-E^2+\vec p^2)e_t=-p^2e_t$, where $p^2=E^2-\vec p^2$; the mass shell is $\tilde P\tilde P^{\natural}=-m^2c^2$ (in the dynamical expressions we set $\hbar=c=1$). On the spinor module the Dirac operator is $\not p-m$ with $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, and $\eta=-g$. The mode algebra is $\{a^{\mathrm{fop}}_r(\vec p),a^{\mathrm{fop}\dagger}_s(\vec k)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec k)$, with all other anticommutators zero; the matrix isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the trace is $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$, the $2\times2$ reading of the plain form.
 
 ## The LSZ Formula
 
@@ -44,13 +44,13 @@ $$
 $$
 where $\tilde\Phi_{\mathrm{in/out}}$ is a free field and $Z$ is the wave-function renormalization. The adiabatic switching of the interaction makes the approach weak, and the reduction formula is the statement that the S-matrix element can be written entirely in terms of the interpolating field's correlation functions.
 
-**The formula.** For $n$ incoming particles of momenta $p_1,\dots,p_n$ and $m$ outgoing of momenta $p'_1,\dots,p'_m$,
+**The formula.** For $n$ incoming particles of momenta $p_1,\dots,p_n$ and $m$ outgoing of momenta $p_{1,2},\dots,p_{m,2}$,
 $$
-\langle \vec p'_1\cdots\vec p'_m|S|\vec p_1\cdots\vec p_n\rangle
-= \Big[\prod_{j=1}^{m}\int d^4x'_j\,\exp(ip'_j\cdot x'_j)\Big]
+\langle \vec p_{1,2}\cdots\vec p_{m,2}|S|\vec p_1\cdots\vec p_n\rangle
+= \Big[\prod_{j=1}^{m}\int d^4x_{j,2}\,\exp(ip_{j,2}\cdot x_{j,2})\Big]
 \Big[\prod_{i=1}^{n}\int d^4x_i\,\exp(-ip_i\cdot x_i)\Big]
 \Big[\prod_{\text{all legs}}\big(\Box-m^2\big)\Big]
-\big\langle 0\big|T\,\tilde\Phi(x'_1)\cdots\tilde\Phi(x_1)\cdots\big|0\big\rangle ,
+\big\langle 0\big|T\,\tilde\Phi(x_{1,2})\cdots\tilde\Phi(x_1)\cdots\big|0\big\rangle ,
 $$
 up to the factors of $\sqrt Z$ and the normalization of the asymptotic states. Each external leg is Fourier-transformed with its plane-wave phase and acted on by the wave operator, and the result is evaluated with all external momenta **on the mass shell**; off-shell the amplitude is defined by the un-amputated correlation function, and the two agree at the pole.
 
@@ -109,7 +109,7 @@ with $\tilde Q_{\mathrm{amp}}$ a constant biquaternion amplitude, a bound elemen
 
 **Momentum conservation.** The integrals over the leg positions produce the momentum-conserving delta function
 $$
-(2\pi)^4\delta^{(4)}\Big(\sum p_i-\sum p'_j\Big),
+(2\pi)^4\delta^{(4)}\Big(\sum p_i-\sum p_{j,2}\Big),
 $$
 which is unaffected by the algebra; it is a property of the Fourier transform. In the biquaternion form the conserved quantity is the central scalar four-momentum, i.e. the $e_t$-coefficient pairing of $\tilde P$ with its conjugate, which is the same as the standard four-momentum.
 

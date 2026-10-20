@@ -22,7 +22,7 @@ $$
 e_t \mapsto I_2, \qquad \vec e_\mu \mapsto -i\sigma_\mu, \qquad i \mapsto i I_2,
 $$
 
-so that $i \vec e_\mu \leftrightarrow \sigma_\mu$. The gamma matrices are the explicit block matrices built from the biquaternion units, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its matrices are the $\gamma'^\mu = i\gamma^\mu$ of the paragraph below,
+so that $i \vec e_\mu \leftrightarrow \sigma_\mu$. The gamma matrices are the explicit block matrices built from the biquaternion units, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its matrices are the $\gamma_{\mathrm{alt}}^\mu = i\gamma^\mu$ of the paragraph below,
 
 $$
 \gamma^0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}, \qquad
@@ -46,7 +46,7 @@ $$
 = \Box,
 $$
 
-so the same $\Box$ results whichever way the sign is assigned. With the Clifford metric fixed at $g$, the slash of a four-momentum $p^\mu = (E,\vec p)$ is $\not{p} = \gamma^\mu p_\mu = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p$, since $p_\mu = (E,-\vec p)$ in this signature. A reader who prefers instead to attach $\eta$ to the generators must set $\gamma'^\mu = i\gamma^\mu$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\gamma'^\mu\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
+so the same $\Box$ results whichever way the sign is assigned. With the Clifford metric fixed at $g$, the slash of a four-momentum $p^\mu = (E,\vec p)$ is $\not{p} = \gamma^\mu p_\mu = \gamma^0 E - \boldsymbol{\gamma}\cdot\vec p$, since $p_\mu = (E,-\vec p)$ in this signature. A reader who prefers instead to attach $\eta$ to the generators must set $\gamma_{\mathrm{alt}}^\mu = i\gamma^\mu$, which flips the Clifford metric to $\eta$ and rewrites the equation as $(\gamma_{\mathrm{alt}}^\mu\partial/\partial Q_\mu - m)\psi = 0$; the physics is unchanged, only the placement of the signs differs.
 
 ## The Dirac field and its two bases
 
@@ -290,10 +290,10 @@ which is exactly the idempotent $\tilde\Pi_1(\vec u)$ of the informational secto
 The vector bilinear admits the standard Gordon decomposition,
 
 $$
-\bar{w}(p')\gamma^\mu w(p) = \bar{w}(p')\left[ \frac{(p+p')^\mu}{2m} + \frac{i\sigma^{\mu\nu}(p'-p)_\nu}{2m} \right] w(p),
+\bar{w}(p_2)\gamma^\mu w(p) = \bar{w}(p_2)\left[ \frac{(p+p_2)^\mu}{2m} + \frac{i\sigma^{\mu\nu}(p_2-p)_\nu}{2m} \right] w(p),
 $$
 
-which splits the current into a **convection** part, proportional to $(p+p')^\mu$, and a **spin** part, proportional to the momentum transfer $(p'-p)_\nu$ and to the tensor bilinear. The convection term is the orbital current of a charged particle; the spin term is the source of the magnetic coupling, and its coefficient $1/2m$ is what fixes the gyromagnetic factor at the tree level, as the next section shows. (The sign of the spin term depends on the convention chosen for $\sigma^{\mu\nu}$ and for the metric; the identity is standard in the convention stated.)
+which splits the current into a **convection** part, proportional to $(p+p_2)^\mu$, and a **spin** part, proportional to the momentum transfer $(p_2-p)_\nu$ and to the tensor bilinear. The convection term is the orbital current of a charged particle; the spin term is the source of the magnetic coupling, and its coefficient $1/2m$ is what fixes the gyromagnetic factor at the tree level, as the next section shows. (The sign of the spin term depends on the convention chosen for $\sigma^{\mu\nu}$ and for the metric; the identity is standard in the convention stated.)
 
 ## The non-relativistic limit
 

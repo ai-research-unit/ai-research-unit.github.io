@@ -160,8 +160,8 @@ $$
 which is the standard massive Euclidean propagator. The free two-point function of the path integral is therefore the Euclidean kernel
 
 $$
-\langle\tilde{\Phi}(\tilde{Q}_E)\tilde{\Phi}^{*}(\tilde R'_E)\rangle
-=G_E(\tilde{Q}_E-\tilde R'_E)\,e_t,
+\langle\tilde{\Phi}(\tilde{Q}_E)\tilde{\Phi}^{*}(\tilde R_{E,2})\rangle
+=G_E(\tilde{Q}_E-\tilde R_{E,2})\,e_t,
 $$
 
 a central scalar times $e_t$, whose closed Yukawa form is given in the companion article on the propagator. The identity of the Gaussian two-point function with the inverse of the quadratic form, verified exactly on the lattice, is the path-integral proof that the free propagator is the Green's function of the Klein–Gordon operator: the two constructions agree by construction once the quadratic form is identified with the operator.

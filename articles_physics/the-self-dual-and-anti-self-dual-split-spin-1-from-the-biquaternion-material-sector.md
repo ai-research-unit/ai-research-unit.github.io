@@ -25,7 +25,7 @@ with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction
 
 ## Integer Spin and the Representation It Needs
 
-The finite-dimensional irreducible representations of the Lorentz group are labelled by a pair $(j,j')$ of half-integers, with complex dimension $(2j+1)(2j'+1)$, and the restriction to the rotation subgroup is by the Clebsch–Gordan rule $j\otimes j'$. Two entries of the list are relevant before any field equation is written.
+The finite-dimensional irreducible representations of the Lorentz group are labelled by a pair $(j,j_2)$ of half-integers, with complex dimension $(2j+1)(2j_2+1)$, and the restriction to the rotation subgroup is by the Clebsch–Gordan rule $j\otimes j_2$. Two entries of the list are relevant before any field equation is written.
 
 The **four-vector representation** is $(\tfrac12,\tfrac12)$, of complex dimension four. Its restriction to the rotation subgroup is
 
@@ -201,7 +201,7 @@ The split is Lorentz covariant, and the reason is short. The Lorentz action on t
 
 ### Restriction to rotations
 
-The rotation subgroup $SU(2)\subset SL(2,\mathbb{C})$ acts on the Lorentz representations by the restriction of the pair $(j,j')$ to the diagonal, and the two halves behave as
+The rotation subgroup $SU(2)\subset SL(2,\mathbb{C})$ acts on the Lorentz representations by the restriction of the pair $(j,j_2)$ to the diagonal, and the two halves behave as
 
 $$
 (1,0)\big|_{SU(2)} = 1, \qquad (0,1)\big|_{SU(2)} = 1,
@@ -317,7 +317,7 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 - Alexandre Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs", *Journal de Physique et le Radium* 7 (1936) 347–353, for the original massive vector field equation and the third polarization it carries.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the self-dual and anti-self-dual decomposition of the field tensor and the two three-dimensional complex representations of the Lorentz group.
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001, for the complex-vector description of the field and its duality structure.
-- Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the $(j,j')$ classification of the finite-dimensional Lorentz representations and the reduction of the four-vector representation.
+- Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the $(j,j_2)$ classification of the finite-dimensional Lorentz representations and the reduction of the four-vector representation.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for the transformation of the fields, the field invariants, and the relation between duality and the circular polarizations.
 - Lev Landau and Evgeny Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), for the invariant classification of the electromagnetic field and the reality of the self-dual combination for a real field.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for bivectors, the Lie algebra of the Lorentz group, and the biquaternion realization of the even Clifford algebra.

@@ -70,7 +70,7 @@ a boost times a rotation. This is the Cartan form of the physics articles, the o
 
 ### The Domain
 
-The word exists if and only if $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, that is, if and only if $\tilde{Q}$ is outside the null cone, equivalently invertible (*Norm and Invertibility in the General Quaternionic Algebra*). On the cone, and away from $\tilde{Q} = 0$, the element is a zero divisor and no factorisation exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$. The condition is one complex equation, hence two real equations, so the cone has real codimension two: $\dim_{\mathbb{R}}\{N = 0\} = 6$ in the eight-dimensional algebra, and deleting it leaves a domain of full dimension. The cone is the algebra's light cone (*The Zero Divisors of the Biquaternion Algebra*).
+The word exists if and only if $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, that is, if and only if $\tilde{Q}$ is outside the null cone, equivalently invertible (*Norm and Invertibility in the General Quaternionic Algebra*). On the cone, and away from $\tilde{Q} = 0$, the element is a zero divisor and no factorisation exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$. The condition is one complex equation, hence two real equations, so the cone has real codimension two: $\dim_{\mathbb{R}}\{N = 0\} = 6$ in the eight-dimensional algebra, and deleting it leaves a domain of full dimension. The cone is the algebra's null cone (*The Zero Divisors of the Biquaternion Algebra*).
 
 ## The Central Phase
 

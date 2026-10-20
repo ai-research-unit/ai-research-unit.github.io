@@ -174,7 +174,7 @@ The degeneracy of the harmonic analysis on the null cone is therefore read in th
 | convolution theorem | holds | holds | holds |
 | algebra-kernel transform | quaternionic Fourier transform, invertible symbol | algebra-kernel transform, symbol degenerate on the null cone | hyperbolic transform, degenerate on the isotropic lines |
 | symbol $\xi$ | invertible for every $\xi \neq 0$ | invertible iff $\langle \xi\rangle_{\natural} \neq 0$ | invertible iff $\langle \xi\rangle_{\natural} \neq 0$ |
-| transformed fundamental solution | singular at the origin | singular on the light cone | singular on the two isotropic lines |
+| transformed fundamental solution | singular at the origin | singular on the null cone | singular on the two isotropic lines |
 
 The quaternion column is the content of *Quaternion Harmonic Analysis* and the split-complex column that of *Split-Complex Harmonic Analysis*. The decisive difference is that the quaternion norm vanishes only at the origin, so its symbol is invertible at every nonzero frequency and the quaternionic transform has no vanishing-determinant problem; in the split case the split-quaternion norm vanishes on a cone, of real dimension two in $V$, and the transformed fundamental solution is supported there. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.
 

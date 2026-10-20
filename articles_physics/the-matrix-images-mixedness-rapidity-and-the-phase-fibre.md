@@ -19,7 +19,7 @@ The article states these four readings and their boundaries. The representations
 | The positive cone and the pure states as rank-one idempotents | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
 | The principal bundle, the connection, the curvature and the holonomy | [Fibre Bundles, Connections and Curvature](../articles_maths/fibre-bundles-connections-and-curvature.html) |
 
-The physical sources are *The Element and Operator Representations* for the correspondence table, *The Bloch Ball as the Trace-One Slice of the Future Light Cone* for the state geometry, *The Hopf Fibration and the Biquaternion Gauge Bundle* for the quaternion presentation of the bundle, and *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form* for the half-solid-angle rule.
+The physical sources are *The Element and Operator Representations* for the correspondence table, *The Bloch Ball as the Normalised Slice of the Future Light Cone* for the state geometry, *The Hopf Fibration and the Biquaternion Gauge Bundle* for the quaternion presentation of the bundle, and *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form* for the half-solid-angle rule.
 
 ## Two Images of One Element
 
@@ -271,7 +271,7 @@ The element-data and map-data distinction is an interpretation of the doubling $
 ## Further Reading
 
 - [The Element and Operator Representations](the-element-and-operator-representations.html), for the correspondence table this article extends.
-- [The Bloch Ball as the Trace-One Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the ball, its centre and its boundary.
+- [The Bloch Ball as the Normalised Slice of the Future Light Cone](the-bloch-ball-as-the-trace-one-slice-of-the-future-light-cone.html), for the ball, its centre and its boundary.
 - [The Informational Sector: States, Observables and Probability](the-informational-sector-states-observables-and-probability.html), for the state conditions and the Born pairing.
 - [The Zero-Divisor Cone and the Massless Spectrum](the-zero-divisor-cone-and-the-massless-spectrum.html), for the cone as the boundary of the state space.
 - [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the partition into units and zero divisors.

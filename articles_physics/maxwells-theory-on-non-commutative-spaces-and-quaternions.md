@@ -47,7 +47,7 @@ the field theories on the arena are **non-local** — the same shift that remove
 Field operators are split into plane waves and recombined; the product of two operators becomes the **Moyal product** of the corresponding functions,
 
 $$
-A(x)\star B(x) = \exp\!\left(\frac{i}{2}\theta^{\mu\nu}\partial_\mu\partial'_\nu\right) A(x)B(x')\Big|_{x=x'},
+A(x)\star B(x) = \exp\!\left(\frac{i}{2}\theta^{\mu\nu}\partial_\mu\,\partial/\partial x_2^\nu\right) A(x)B(x_2)\Big|_{x_2=x},
 $$
 
 the Weyl–Moyal correspondence. The star product is associative. Two facts about it matter here. First, the **quadratic (kinetic) terms of an action are unchanged** by the deformation, because the $\theta$-correction is a total derivative at second order; the propagators are therefore identical to the commutative ones, and, as the source puts it, the deformed theory has the same degrees of freedom as the commutative one, related to it by the Seiberg–Witten map. Second, the deformation first shows itself at **cubic and higher order in the fields** — which is why the free Maxwell action stays quadratic but its field equations do not stay linear.
@@ -167,9 +167,9 @@ $$
 equivalently under $\vec N\mapsto \exp(-i\alpha)\vec N$ with $\vec N = \vec E + ic\vec B$, and that this is a symmetry of the **polarisation space**, rotating the polarisation axes about the wave vector. In four-dimensional notation the transformation is
 
 $$
-F'_{\mu\nu} = F_{\mu\nu}\cos\alpha - \tilde F_{\mu\nu}\sin\alpha,
+F_{2,\mu\nu} = F_{\mu\nu}\cos\alpha - \tilde F_{\mu\nu}\sin\alpha,
 \qquad
-\tilde F'_{\mu\nu} = \tilde F_{\mu\nu}\cos\alpha + F_{\mu\nu}\sin\alpha,
+\tilde F_{2,\mu\nu} = \tilde F_{\mu\nu}\cos\alpha + F_{\mu\nu}\sin\alpha,
 $$
 
 with $\tilde F$ the dual tensor.
@@ -299,7 +299,7 @@ $$
 
 which shows the non-linearity in one line: the correction is quadratic in the Riemann–Silberstein vector $\vec v$ and its conjugate. The spin-tensor is defined through the potential by $F = -\nabla A$ with $A = A_\mu\tau^\mu$, which reproduces $F_{\mu\nu}=\partial_\mu A_\nu - \partial_\nu A_\mu$. The source notes that Eq. (45) "is equivalent to the quaternion form as the quaternion algebra can be realized through the Pauli matrices", and that at $\theta^{\mu\nu}=0$ it becomes the quaternion form of the standard Maxwell equations that the corpus records in *Maxwell's Equations in the Biquaternionic Formulation*. This is the sense in which the paper is about quaternions: the algebra gives the compact form and nothing else.
 
-The transformation properties close the section. Under $X' = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla' = L^+\nabla L$, $F' = L^{-1}FL$, $J' = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\theta$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The appendix realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $e_k=i\tau_k$, with $e_4^2=1$ and $e_k^2=-1$, and records the biquaternion Lorentz transformation $x' = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
+The transformation properties close the section. Under $X_{\mathrm L} = L^+XL$ with $L\in SL(2,\mathbb C)$, the matrices transform as $\nabla_{\mathrm L} = L^+\nabla L$, $F_{\mathrm L} = L^{-1}FL$, $J_{\mathrm L} = L^+JL$, and the Lorentz **invariants** of the transformations are the **determinants** of the matrices. The $\vec\theta$-terms in the equation violate this Lorentz symmetry, which is the same statement as before, seen in the matrix form. The appendix realises the quaternion algebra on the Pauli matrices, $e_4=\tau_0$, $e_k=i\tau_k$, with $e_4^2=1$ and $e_k^2=-1$, and records the biquaternion Lorentz transformation $x_{\mathrm L} = LxL^*$ with $L\bar L=1$, the six-parameter $SO(3,1)$ action the corpus's *The Lorentz Transformation as a Biquaternionic Rotation* derives from the same algebra.
 
 ## Status, Contrasts, and Boundaries
 
@@ -341,7 +341,7 @@ Kruglov's *Maxwell's Theory on Non-Commutative Spaces and Quaternions* re-derive
 | $\Lambda_{NC}$, $\epsilon^{\mu\nu}$ | Non-commutativity scale and dimensionless shape tensor, $\theta^{\mu\nu}=\epsilon^{\mu\nu}/\Lambda_{NC}^2$ |
 | $\theta_i$ | Three-vector of the deformation, $\theta_i=\tfrac12\epsilon_{ijk}\theta_{jk}$, $\theta_{i4}=0$ |
 | $[x^\mu,x^\nu]=i\theta^{\mu\nu}$ | The defining commutator; the corpus's "$ict$" convention is kept for time |
-| $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\theta^{\mu\nu}\partial_\mu\partial'_\nu)$ |
+| $\star$ | Moyal star product, $\exp(\tfrac{i}{2}\theta^{\mu\nu}\partial_\mu\,\partial/\partial x_2^\nu)$ |
 | $[A_\mu,A_\nu]_M$ | Moyal bracket $A_\mu\star A_\nu - A_\nu\star A_\mu$ |
 | $F_{\mu\nu}$, $\tilde F_{\mu\nu}$ | Field strength and its dual; $E_i=iF_{i4}$, $B_i=\epsilon_{ijk}F_{jk}$ |
 | $\vec D,\vec H$ | Displacement and magnetic fields; $\vec D=\vec E+\vec d$, $\vec H=\vec B+\vec h$ |

@@ -169,7 +169,7 @@ The quaternionic norm is one complex quadratic form, and the four four-dimension
 | $\mathbb{H}_{\mathbb{B}}$ | $A_1\oplus B_1$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | Euclidean |
 | $i\mathbb{H}_{\mathbb{B}}$ | $A_2\oplus B_2$ | $-\bigl((q'_t)^2+(q'_x)^2+(q'_y)^2+(q'_z)^2\bigr)$ | $(0,4)$ | anti-Euclidean |
 | $\mathbb{M}_-$ | $A_2\oplus B_1$ | $-c^2t^2+x^2+y^2+z^2$ | $(3,1)$ | Lorentzian |
-| $\mathbb{M}_+$ | $A_1\oplus B_2$ | $c^2t'^2-x'^2-y'^2-z'^2$ | $(1,3)$ | anti-Lorentzian |
+| $\mathbb{M}_+$ | $A_1\oplus B_2$ | $c^2{t'}^2-{x'}^2-{y'}^2-{z'}^2$ | $(1,3)$ | anti-Lorentzian |
 
 The two definite slices are the two coefficient halves; the two indefinite slices are the two physical sectors. The Lorentzian signature of the material sector is not an independent axiom: it is what the norm becomes on the slice that carries the $i$ in the time slot, and the sign of the time direction is the sign of $i^2$. The light cone is the zero set of that form, and the causal structure is the sign of the form.
 

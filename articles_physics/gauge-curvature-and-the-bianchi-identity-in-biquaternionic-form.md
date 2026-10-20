@@ -19,7 +19,7 @@ The division between what is established and what is interpretation is kept expl
 $$
 \mathrm{SU}(2) = \mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\} \subset \mathbb{M}_-, \qquad [\vec e_a,\vec e_b] = 2\,\varepsilon_{abc}\,\vec e_c,
 $$
-with normalised generators $T_a = \tfrac12 \vec e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = ϙ/\hbar$, the indices are $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = -i\partial/\partial t$, so that $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.
+with normalised generators $T_a = \tfrac12 \vec e_a$ obeying $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The coupling is $\kappa = ϙ/\hbar$, the indices are $\mu,\nu,\lambda \in \{t,x,y,z\}$ with $\partial/\partial Q_t = -i\partial/\partial t$, so that $\partial/\partial Q_\mu = \partial/\partial x_\mu$ raises and lowers no index and the sum $\sum_\mu$ is the Lorentz-invariant contraction. The plain form, read as the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged; the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ is a different pairing and is not it. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed of light.
 
 ## The Covariant Derivative and the Curvature It Defines
 
@@ -37,7 +37,7 @@ $$
 This is the formal statement of the connection, before any reality condition is imposed; the obstruction to a single Hermitian-conjugation eigenspace across all four components, a property of the $ict$ derivative and not of the gauge algebra, is inherited unchanged from the companion and is carried as open question 3 below.
 This is the one-sided, non-abelian connection of the companion article; its transformation law under a local $\tilde U(\tilde{Q}) \in SU(2)$ is
 $$
-\mathcal{A}'_\mu = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1},
+\mathcal{A}_{\mathrm g,\mu} = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1},
 $$
 and the curvature is defined, as in the abelian case, by the commutator of covariant derivatives.
 
@@ -85,9 +85,9 @@ F_{12} = i\left([\vec e_x,\vec e_y]+[\vec e_x,\vec e_z]+[\vec e_y,\vec e_z]\righ
 $$
 a genuinely non-abelian curvature, nonzero and non-central. The reduction to a single commutator is exact here; for a position-dependent connection it is not, and the honest statement is the operator-level one: **the operator commutator is multiplication by the single element $i\kappa F_{\mu\nu}$**, while the element $F_{\mu\nu}$ is the sum of a curl and a commutator. This is carried into the open questions as a scope limitation, not hidden.
 
-**The curvature is not gauge invariant.** Under $\mathcal{A}_\mu \mapsto \mathcal{A}'_\mu$ with the transformation law above, direct computation gives the adjoint law
+**The curvature is not gauge invariant.** Under $\mathcal{A}_\mu \mapsto \mathcal{A}_{\mathrm g,\mu}$ with the transformation law above, direct computation gives the adjoint law
 $$
-F'_{\mu\nu} = \tilde U\,F_{\mu\nu}\,\tilde U^{-1},
+F_{\mathrm g,\mu\nu} = \tilde U\,F_{\mu\nu}\,\tilde U^{-1},
 $$
 which was verified both for an infinitesimal local $\tilde U = e_t + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\mu\nu})$ is invariant — here it vanishes identically, since $\mathrm{SL}(2,\mathbb{C})$ elements are traceless — but the component is not: it is rotated by the group, and only gauge-invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational trace formula.
 
@@ -288,7 +288,7 @@ $$
 F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu] \in \mathrm{SU}(2)\oplus i\,\mathrm{SU}(2) = \mathrm{SL}(2,\mathbb{C}),
 $$
 
-and the commutator is zeroth order: it is multiplication by the single algebra element $i\kappa F_{\mu\nu}$. That localisation of an operator commutator onto the finite-dimensional algebra is the content of the reduction, and it was verified exactly on generic non-commuting connections for all index pairs. The curvature is antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, and transforms in the adjoint representation, $F'_{\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$.
+and the commutator is zeroth order: it is multiplication by the single algebra element $i\kappa F_{\mu\nu}$. That localisation of an operator commutator onto the finite-dimensional algebra is the content of the reduction, and it was verified exactly on generic non-commuting connections for all index pairs. The curvature is antisymmetric, $F_{\mu\nu}=-F_{\nu\mu}$, and transforms in the adjoint representation, $F_{\mathrm g,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$.
 
 Because the curvature is adjoint-valued, its covariant derivative is the two-sided commutator $D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$, not the one-sided left multiplication used on a matter field; collapsing the two-sided action to a one-sided one destroys the Bianchi identity. This distinction is separate from, and not to be confused with, the two-sided gravitational connection of the curved-spacetime article.
 
@@ -322,7 +322,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\partial/\partial Q_t = -i\partial/\partial t$ | $ict$ time derivative |
 | $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Curvature components, antisymmetric |
 | $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$ | Curvature as the commutator of covariant derivatives |
-| $F'_{\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ | Adjoint transformation of the curvature |
+| $F_{\mathrm g,\mu\nu} = \tilde UF_{\mu\nu}\tilde U^{-1}$ | Adjoint transformation of the curvature |
 | $D_\lambda \tilde{Q} = \partial/\partial Q_\lambda \tilde{Q} + i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$ | Adjoint covariant derivative, $[D_\lambda,\tilde{Q}]=D_\lambda \tilde{Q}$ |
 | $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu}=0$ | Bianchi identity (cyclic order as shown) |
 | $\varepsilon^{\lambda\mu\nu\rho}D_\lambda F_{\mu\nu}=0$ | Contracted form of the Bianchi identity |

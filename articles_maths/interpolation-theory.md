@@ -66,10 +66,10 @@ The inequality is the elementary half of the theory and shows that the interpola
 **Definition.** Let $A$ be a Banach space and $\Omega \subseteq \mathbb{C}$ open. A function $f:\Omega \to A$ is **analytic** if for every $z \in \Omega$ the limit
 
 $$
-f'(z)=\lim_{h \to 0}\frac{f(z+h)-f(z)}{h}
+\frac{df}{dz}=\lim_{h \to 0}\frac{f(z+h)-f(z)}{h}
 $$
 
-exists in the norm of $A$. Equivalently, $f$ is analytic if it is weakly analytic, that is, if $z \mapsto \varphi(f(z))$ is analytic for every $\varphi \in A^*$; the two notions agree because Cauchy's integral formula for a scalar analytic function may be applied to the bounded functional $\varphi$, and then utilised with a norming functional to recover the norm estimate for $f'$.
+exists in the norm of $A$. Equivalently, $f$ is analytic if it is weakly analytic, that is, if $z \mapsto \varphi(f(z))$ is analytic for every $\varphi \in A^*$; the two notions agree because Cauchy's integral formula for a scalar analytic function may be applied to the bounded functional $\varphi$, and then utilised with a norming functional to recover the norm estimate for $\frac{df}{dz}$.
 
 **Theorem (maximum modulus).** If $f$ is analytic on $\Omega$ and continuous on $\overline \Omega$ with $\Omega$ bounded, then $\|f\|$ attains its maximum on the boundary $\partial \Omega$; more precisely $\sup_\Omega\|f\|\le\sup_{\partial \Omega}\|f\|$.
 

@@ -195,18 +195,18 @@ The same Newton iteration that inverts a series lifts a root of a polynomial mod
 **Theorem (Hensel's lemma).** Let $A$ be a commutative $R$-algebra that is complete for the $I$-adic filtration, let $f(t) \in A[t]$ be a polynomial, and let $a_0 \in A$ satisfy
 
 $$
-f(a_0) \in I, \qquad f'(a_0) \in A^{\times} .
+f(a_0) \in I, \qquad \frac{df}{dx}(a_0) \in A^{\times} .
 $$
 
 Then there is a unique $a \in A$ with $f(a) = 0$ and $a \equiv a_0 \bmod I$.
 
-*Proof.* Set $a_{n+1} = a_n - f(a_n) f'(a_n)^{-1}$, the Newton step. We show by induction that $f(a_n) \in I^{2^n}$ and $a_{n+1} \equiv a_n \bmod I^{2^n}$, so that the $a_n$ are coherent modulo every $I^k$ and define an element $a$ with $f(a) = 0$, because evaluation of $f$ respects the filtration. For the induction, write $a_n = a_{n-1} + h$ with $h \in I^{2^{n-1}}$; Taylor expansion of the polynomial $f$ at $a_{n-1}$ gives
+*Proof.* Set $a_{n+1} = a_n - f(a_n) \left(\frac{df}{dx}(a_n)\right)^{-1}$, the Newton step. We show by induction that $f(a_n) \in I^{2^n}$ and $a_{n+1} \equiv a_n \bmod I^{2^n}$, so that the $a_n$ are coherent modulo every $I^k$ and define an element $a$ with $f(a) = 0$, because evaluation of $f$ respects the filtration. For the induction, write $a_n = a_{n-1} + h$ with $h \in I^{2^{n-1}}$; Taylor expansion of the polynomial $f$ at $a_{n-1}$ gives
 
 $$
-f(a_n) = f(a_{n-1}) + h f'(a_{n-1}) + h^2 r
+f(a_n) = f(a_{n-1}) + h \frac{df}{dx}(a_{n-1}) + h^2 r
 $$
 
-for some $r \in A$; now $f'(a_{n-1}) \equiv f'(a_0) \bmod I$ because $a_{n-1}\equiv a_0 \bmod I$, so $f'(a_{n-1})$ is a unit, and the choice of $h = -f(a_{n-1})f'(a_{n-1})^{-1}$ makes $f(a_n) = h^2 r \in I^{2^n}$. Uniqueness: if $f(a) = f(a') = 0$ with $a \equiv a' \equiv a_0 \bmod I$, then $0 = f(a) - f(a') = (a - a')(f'(a_0) + m)$ with $m \in I$, and $f'(a_0) + m$ is a unit, so $a = a'$.
+for some $r \in A$; now $\frac{df}{dx}(a_{n-1}) \equiv \frac{df}{dx}(a_0) \bmod I$ because $a_{n-1}\equiv a_0 \bmod I$, so $\frac{df}{dx}(a_{n-1})$ is a unit, and the choice of $h = -f(a_{n-1})\left(\frac{df}{dx}(a_{n-1})\right)^{-1}$ makes $f(a_n) = h^2 r \in I^{2^n}$. Uniqueness: if $f(a) = f(a') = 0$ with $a \equiv a' \equiv a_0 \bmod I$, then $0 = f(a) - f(a') = (a - a')(\frac{df}{dx}(a_0) + m)$ with $m \in I$, and $\frac{df}{dx}(a_0) + m$ is a unit, so $a = a'$.
 
 **Example.** In $R[[x]]$ the series $y = \sqrt{1 + x}$ is produced by Hensel's lemma applied to $f(t) = t^2 - (1+x)$ at $a_0 = 1$: the derivative $2t$ is a unit at $t = 1$ when $2$ is invertible, and the root is the binomial series $y = \sum_{k\geq0}\binom{1/2}{k}x^k = 1 + \tfrac12 x - \tfrac18 x^2 + \tfrac{1}{16}x^3 - \cdots$. Over the $p$-adic integers $\mathbb{Z}_p$ with $p$ odd, applied to $f(t) = t^2 - u$ at a unit $a_0$ with $a_0^2 \equiv u \pmod{p}$, the derivative $2a_0$ is a unit and the lemma lifts the square root modulo $p$ to a square root in $\mathbb{Z}_p$; this is the classical instance of Hensel's lemma.
 
@@ -269,7 +269,7 @@ where completion takes the inverse limit of the quotient algebras $A/I^k$. The f
 | $\Phi(G) = L(x - N(G))$ | Newton-step operator, $L = J^{-1}$ |
 | $\mathrm{M}/\mathrm{M}^2$ | Cotangent space at the origin |
 | $C_m = \frac{1}{m+1}\binom{2m}{m}$ | Catalan number, coefficients of the inverse of $x + x^2$ |
-| $a_{n+1} = a_n - f(a_n)f'(a_n)^{-1}$ | Newton step in Hensel's lemma |
+| $a_{n+1} = a_n - f(a_n)\left(\frac{df}{dx}(a_n)\right)^{-1}$ | Newton step in Hensel's lemma |
 
 ## Further Reading
 

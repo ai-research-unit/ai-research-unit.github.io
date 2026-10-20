@@ -83,7 +83,7 @@ a circle's worth of lines; in particular $\mathbb{R}(\vec e_x + \vec e_y)$, $\ma
 
 **Proof.** A nonzero element $\tilde q$ is isotropic exactly when $\langle\tilde q\rangle_{\natural} = 0$, so the isotropic lines are the points of the projective null quadric of the non-degenerate form $\langle\cdot\rangle_{\natural}$ of signature $(2,2)$. A non-degenerate quadric of signature $(2,2)$ in $\mathbb{P}^3$ is doubly ruled. The explicit ruling is proved in *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
-The isotropic lines are also visible in the vector subspace: the isotropic lines lying in $V$ are the lines of the three-dimensional light cone $q_x^2 = q_y^2 + q_z^2$. Isotropic lines not lying in $V$ have a nonzero scalar part; an example is $\mathbb{R}(1 + \vec e_y)$, since $\langle 1+\vec e_y\rangle_{\natural} = 1 - 1 = 0$, and another is $\mathbb{R}(1 + \vec e_z)$.
+The isotropic lines are also visible in the vector subspace: the isotropic lines lying in $V$ are the lines of the three-dimensional null cone $q_x^2 = q_y^2 + q_z^2$. Isotropic lines not lying in $V$ have a nonzero scalar part; an example is $\mathbb{R}(1 + \vec e_y)$, since $\langle 1+\vec e_y\rangle_{\natural} = 1 - 1 = 0$, and another is $\mathbb{R}(1 + \vec e_z)$.
 
 ## The Invertibility Criterion
 
@@ -210,7 +210,7 @@ So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{s}} \tilde\pi
 | Subspace | Dimension | Split-Quaternion norm | Zero divisors |
 |---|---|---|---|
 | $S = \mathbb{R}\cdot 1$ | $1$ | $q_t^2 \geq 0$ | none except $0$ |
-| $V$ | $3$ | $q_x^2 - q_y^2 - q_z^2$, signature $(2,1)$ | the light cone $q_x^2 = q_y^2 + q_z^2$ |
+| $V$ | $3$ | $q_x^2 - q_y^2 - q_z^2$, signature $(2,1)$ | the null cone $q_x^2 = q_y^2 + q_z^2$ |
 | $\mathbb{D}_2$ | $2$ | $q_t^2 - q_y^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_y) \setminus \{0\}$ |
 | $\mathbb{D}_3$ | $2$ | $q_t^2 - q_z^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_z) \setminus \{0\}$ |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
@@ -229,11 +229,11 @@ The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\ma
 
 ## Summary
 
-The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$ and multiplicative. The form is isotropic; its isotropic vectors satisfy $q_t^2 + q_x^2 = q_y^2 + q_z^2$, its isotropic lines are the points of a doubly ruled projective null quadric, and on the vector subspace the isotropic lines are the lines of the light cone $q_x^2 = q_y^2 + q_z^2$.
+The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$ and multiplicative. The form is isotropic; its isotropic vectors satisfy $q_t^2 + q_x^2 = q_y^2 + q_z^2$, its isotropic lines are the points of a doubly ruled projective null quadric, and on the vector subspace the isotropic lines are the lines of the null cone $q_x^2 = q_y^2 + q_z^2$.
 
 A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of units is $\{N \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{N = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The units form the two connected components $\{N > 0\}$ and $\{N < 0\}$.
 
-The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the light cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
+The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ are totally isotropic. In the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
 
 ## Summary of Notation
 

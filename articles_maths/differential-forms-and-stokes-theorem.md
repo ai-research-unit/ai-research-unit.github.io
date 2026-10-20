@@ -214,7 +214,7 @@ The remaining boundary integral is exactly $\int_{\partial M}\omega$ with the in
 **Theorem (fundamental theorem of calculus).** For $M = [a, b]$ with the standard orientation and a function $f$,
 
 $$
-\int_a^b f'(x)\, dx = f(b) - f(a),
+\int_a^b \frac{df}{dx}\, dx = f(b) - f(a),
 $$
 
 which is Stokes' theorem for the $0$-form $f$ and the oriented boundary $\{b\} - \{a\}$.

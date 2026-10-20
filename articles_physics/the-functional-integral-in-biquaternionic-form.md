@@ -10,7 +10,7 @@ and its derivatives generate the correlation functions of the theory. The two in
 
 The contributions divide cleanly, and the division is the content of the article.
 
-- **Established, and recomputed below.** The **action** of a biquaternion field is a *real central scalar*, extracted from the trace pairing. The framework's real bilinear form is
+- **Established, and recomputed below.** The **action** of a biquaternion field is a *real central scalar*, extracted from the plain form, read as the trace pairing. The framework's real bilinear form is
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
@@ -20,7 +20,7 @@ S[\tilde\Phi] = \int d^4x\; \Big\langle \tilde\Phi, K_{\mathrm{kin}}\tilde\Phi\B
 \qquad
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta .
 $$
-The trace pairing is what makes the exponent a number and not a biquaternion. Because $K_{\mathrm{kin}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
+The plain form, read as the trace pairing, is what makes the exponent a number and not a biquaternion. Because $K_{\mathrm{kin}}$ is central it preserves each sector, and the sectors are **orthogonal** under the real form,
 $$
 \big\langle \tilde\Phi_-,\tilde\Phi_+\big\rangle = 0
 \qquad\text{for all } \tilde\Phi_\pm\in\mathbb{M}_\pm ,
@@ -30,7 +30,7 @@ $$
 Z_0[\tilde J] = Z_-[J_-]\,Z_+[J_+] ,
 $$
 each factor being a Gaussian integral on the sector's module.
-- **Established (algebra).** The Gaussian functional integral is evaluated exactly by the algebra's trace pairing and the determinant of $K$ on the module:
+- **Established (algebra).** The Gaussian functional integral is evaluated exactly by the algebra's plain form, read as the trace pairing, and the determinant of $K$ on the module:
 $$
 \int \mathcal{D}\tilde\Phi\; \exp(-\frac12\langle \tilde\Phi, K\tilde\Phi\rangle + \langle \tilde J,\tilde\Phi\rangle)
 = \big(\det K\big)^{-1/2}\, \exp(\frac12\langle \tilde J, K^{-1}\tilde J\rangle),
@@ -92,7 +92,7 @@ K_{\mathrm{kin}} = \Box - m^2 ,
 $$
 where $K_{\mathrm{kin}}$ is built from the central d'Alembertian and a central mass, and $S_{\mathrm{int}}$ collects interactions. Three properties of this action are the algebra's.
 
-1. **It is a scalar, obtained by the trace.** The integrand is the real part of a trace, hence a number, and the integral is a number. The trace pairing is exactly the operation that converts the algebra-valued field into an action. This is the field-theoretic counterpart of the propagator article's trace formula.
+1. **It is a scalar, obtained by the trace.** The integrand is the real part of a trace, hence a number, and the integral is a number. The plain form, read as the trace pairing, is exactly the operation that converts the algebra-valued field into an action. This is the field-theoretic counterpart of the propagator article's trace formula.
 2. **It is invariant under the biquaternion-norm isometries.** The quadratic term with $K_{\mathrm{kin}}$ central is unchanged by left multiplication $\tilde\Phi\mapsto\tilde U\tilde\Phi$ and right multiplication $\tilde\Phi\mapsto\tilde\Phi\tilde V$ by unit real quaternions, $\langle\tilde U\rangle_{\natural} = \langle\tilde U,\tilde U\rangle_{\natural}=\langle\tilde V\rangle_{\natural}=e_t$, since $\tilde U^{*}\tilde U=\tilde V\tilde V^{*}=e_t$. The free biquaternion field therefore carries an $SU(2)\times SU(2)$ global symmetry at the level of the quadratic action. Which part of it survives interactions is a question about $S_{\mathrm{int}}$, not about the quadratic term.
 3. **It is sector-blind when $K_{\mathrm{kin}}$ is central.** A central $K_{\mathrm{kin}}$ commutes with the projections onto $\mathbb{M}_\pm$, so it does not mix the sectors. The consequences are computed in the next two sections.
 
@@ -210,17 +210,17 @@ For the free theory $S_E\ge 0$ on the configurations that dominate, so the Gauss
 
 The functional integral above is written over the whole of spacetime, and Dirac's boundary-value functional is written over a region with boundary. Both are made more precise by restricting the region to one that is **causally complete**, and the restriction is the field-theoretic counterpart of the localisation that the standard treatment of the path integral records.
 
-**Causal completeness.** In a Lorentzian manifold the **causal complement** $O'$ of a region $O$ is the set of points that are spacelike to every point of $O$, and $O$ is **causally complete** — causally closed — when
+**Causal completeness.** In a Lorentzian manifold the **causal complement** $O_{\mathrm c}$ of a region $O$ is the set of points that are spacelike to every point of $O$, and $O$ is **causally complete** — causally closed — when
 $$
-O''=O ,
+O_{\mathrm{cc}}=O ,
 $$
 that is, when taking the causal complement twice returns the region. A region is causally complete when it contains every point that can be influenced by, or can influence, its interior through causal curves; equivalently, when the boundary data on $\partial O$ determine the field throughout the region. The standard example is the **double light cone** — the intersection of the future cone of one point with the past cone of another, a bounded causal diamond, the set of points at time separation less than the light-travel distance between the two tips. The **wedge** of the modular articles is the other standard example, unbounded. Both are causally complete; a single light cone is not, and a spacelike slice is not.
 
-**The functional integral on a causally complete region.** Let the field $\tilde\Phi$ be restricted to a causally complete region $O$, with the field values on $\partial O$ held fixed as boundary data. Because $O''=O$, the boundary data propagate to a definite interior configuration, and the functional integral on $O$ is an **amplitude functional of the boundary values**, the object named in the first section of this article. Splitting $O$ into two causally complete subregions sharing a common boundary, and multiplying their amplitude functionals and integrating over the shared boundary values, reproduces the amplitude of $O$: this is the composition law of the generalized transformation function, and it is at once the statement that the boundary data determine the interior and the quantum analogue of the action principle.
+**The functional integral on a causally complete region.** Let the field $\tilde\Phi$ be restricted to a causally complete region $O$, with the field values on $\partial O$ held fixed as boundary data. Because $O_{\mathrm{cc}}=O$, the boundary data propagate to a definite interior configuration, and the functional integral on $O$ is an **amplitude functional of the boundary values**, the object named in the first section of this article. Splitting $O$ into two causally complete subregions sharing a common boundary, and multiplying their amplitude functionals and integrating over the shared boundary values, reproduces the amplitude of $O$: this is the composition law of the generalized transformation function, and it is at once the statement that the boundary data determine the interior and the quantum analogue of the action principle.
 
 **Why the restriction is made.** Restricting everything to a finite causally complete region is what gives the functional integral its mathematically precise and physically rigorous form, for three reasons. The number of degrees of freedom in a bounded region is controlled, so the regulator has a natural home; the amplitude depends only on data on a compact boundary; and the assignment of observables to regions — the net of local algebras of algebraic quantum field theory — can be stated, with **isotony** (a smaller region's algebra sits inside a larger one's) and **Einstein causality** (observables in spacelike-separated regions commute). The unbounded integral over all spacetime is the limit in which the region is enlarged to the whole manifold, and it is the limit that requires the regulator and the renormalisation of the next section.
 
-**The interpretation in the algebra.** The causal structure is the framework's own, because the cones are the null cones of the material-sector metric: the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the conventions fixes which events are spacelike- and timelike-separated, exactly as *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and the mathematical article *Pseudo-Riemannian and Lorentzian Geometry* set out, with the causal order, its partial-order properties, and the causal complement. The algebra therefore supplies the **metric that defines the cones** and, with it, the causal relation on which $O''=O$ is built; and it supplies **microcausality**, the statement that the field commutator vanishes outside the light cone, which the canonical-quantization and spin–statistics articles record and which is the operator form of Einstein causality. The framework's one fully worked causally complete region is the **wedge**, whose modular Hamiltonian $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ and Bisognano–Wichmann identification the modular articles and the quantum-gravity agenda exhibit; the double light cone is the bounded instance and is not worked out.
+**The interpretation in the algebra.** The causal structure is the framework's own, because the cones are the null cones of the material-sector metric: the $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ of the conventions fixes which events are spacelike- and timelike-separated, exactly as *Causality and the Light Cone as an Information Barrier in Biquaternionic Form* and the mathematical article *Pseudo-Riemannian and Lorentzian Geometry* set out, with the causal order, its partial-order properties, and the causal complement. The algebra therefore supplies the **metric that defines the cones** and, with it, the causal relation on which $O_{\mathrm{cc}}=O$ is built; and it supplies **microcausality**, the statement that the field commutator vanishes outside the light cone, which the canonical-quantization and spin–statistics articles record and which is the operator form of Einstein causality. The framework's one fully worked causally complete region is the **wedge**, whose modular Hamiltonian $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ and Bisognano–Wichmann identification the modular articles and the quantum-gravity agenda exhibit; the double light cone is the bounded instance and is not worked out.
 
 What the algebra does **not** supply is the rest: the construction of the region in the continuum, the restriction of the measure to it, the regulator, and the net of local algebras as an operator-algebraic structure. The restriction is on the **region** and not on the algebra — the same statement the boundary-value functional made — and it leaves the algebra's standing gaps, the measure and the space of configurations, exactly where they were. In this the localisation is the field-theoretic case of the path-integral article's time slicing: the region defines where the integral is taken, and the algebra's contribution is the metric of the cones and the microcausality of the observables, not the integral itself.
 
@@ -247,7 +247,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 ## What Is Established and What Is Interpretation
 
 **Established (algebra).**
-- The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde\Phi^{\natural}K_{\mathrm{kin}}\tilde\Phi)$; the trace pairing is the scalar extraction.
+- The quadratic action of a biquaternion field is the central scalar $\int\mathrm{Sc}(\tilde\Phi^{\natural}K_{\mathrm{kin}}\tilde\Phi)$; the plain form, read as the trace pairing, is the scalar extraction.
 - For a central kinetic operator the cross terms $\mathrm{Sc}(\tilde\Phi^{\natural}_-\tilde\Phi_+)$ vanish identically over the sector bases, so the free quadratic form is block diagonal and the free functional integral factorizes, $Z_0=Z_-\cdot Z_+$.
 - The Gaussian functional integral is $(2\pi)^{N/2}(\det K)^{-1/2}\exp(\frac12\langle J,K^{-1}J\rangle)$ on the module, with $N$ the real dimension of the module; checked in finite dimension with explicit Hermitian matrices.
 - The Wick rotation is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ and turns $\exp(iS)$ into $\exp(-S_E)$.
@@ -255,7 +255,7 @@ with the spinor structure carried by the module and the mass term linear and chi
 
 **Standard, and transcribed.**
 - The definition of the functional integral, the measure, the lattice or mode regularization, the perturbative expansion, the Grassmann integral and its determinant, and the free scalar propagator.
-- The localisation to a causally complete region, the condition $O''=O$, the double light cone and the wedge as instances, and the net of local algebras with isotony and Einstein causality.
+- The localisation to a causally complete region, the condition $O_{\mathrm{cc}}=O$, the double light cone and the wedge as instances, and the net of local algebras with isotony and Einstein causality.
 
 **Interpretation.**
 - Reading the sector factorization as a framework-specific statement, and the Wick rotation as a relabeling within the algebra rather than a rotation in spacetime, follow the path-integral and Wick-rotation articles; the mathematical contents are checkable and were checked.
@@ -280,7 +280,7 @@ Z_\pm[J_\pm]=\big(\det K_{\mathrm{kin},\pm}\big)^{-1/2}\exp(\frac12\langle J_\pm
 $$
 The Gaussian formula was verified in finite dimension ($\det K=3.12$, $Z_0=8.9165$, $Z[J]=23.964$, and $W[J]-W[0]=J^2/(2a)$ in one dimension), and the determinant factorizes for a block-diagonal $K_{\mathrm{kin}}$.
 
-The **measure**, the **space of field configurations**, and the **interaction** are outside the algebra and are transcribed; the space of fields is infinite-dimensional, and $\mathbb{B}$ is finite-dimensional. Restricting the integral to a **causally complete region** — the double light cone, or the wedge — makes the boundary-value functional precise and is where the net of local algebras and Einstein causality live; the algebra supplies the cone metric, which fixes the causal relation $O''=O$, and the microcausality of the observables, while the region, its measure, and the net are transcribed, with the wedge and $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ the one worked instance. The Wick rotation, in the framework's interpretation, is the identification of the material sector $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is what turns the oscillatory weight into the decaying Euclidean one and makes the Gaussian integral converge. The determinant that the Gaussian integral leaves behind is the subject of the next article.
+The **measure**, the **space of field configurations**, and the **interaction** are outside the algebra and are transcribed; the space of fields is infinite-dimensional, and $\mathbb{B}$ is finite-dimensional. Restricting the integral to a **causally complete region** — the double light cone, or the wedge — makes the boundary-value functional precise and is where the net of local algebras and Einstein causality live; the algebra supplies the cone metric, which fixes the causal relation $O_{\mathrm{cc}}=O$, and the microcausality of the observables, while the region, its measure, and the net are transcribed, with the wedge and $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ the one worked instance. The Wick rotation, in the framework's interpretation, is the identification of the material sector $\mathbb{M}_-$ with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and it is what turns the oscillatory weight into the decaying Euclidean one and makes the Gaussian integral converge. The determinant that the Gaussian integral leaves behind is the subject of the next article.
 
 ## Summary of Notation
 
@@ -301,7 +301,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $Z_0=(\det K_{\mathrm{kin}})^{-1/2}\exp(\frac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle)$ | Gaussian result; $\prod_k(\tilde P\tilde P^{\natural}+m^2)^{-1}$ per mode for the free central operator |
 | $W[\tilde J]=\log Z[\tilde J]$, $W-W_0=\tfrac12\langle\tilde J,K_{\mathrm{kin}}^{-1}\tilde J\rangle$ | Free energy |
 | $t\mapsto-i\tau$, $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$ | Wick rotation; $\exp(iS)\to \exp(-S_E)$ |
-| $O$, $O'$, $O''=O$ | Region, causal complement, causal completeness (localisation) |
+| $O$, $O_{\mathrm c}$, $O_{\mathrm{cc}}=O$ | Region, causal complement, causal completeness (localisation) |
 | $\tilde{K}_{\mathrm{mod},W}=2\pi G_1$ | Wedge modular Hamiltonian (the worked causally complete region) |
 | $\det(i\partial\!\!\!/\,-m)$ | Fermionic Gaussian result (Grassmann integral) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
@@ -320,7 +320,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 - J. W. Negele and H. Orland, *Quantum Many-Particle Systems* (Addison-Wesley, 1988), for the Grassmann functional integral and the determinant of the Dirac operator.
 - L. S. Schulman, *Techniques and Applications of Path Integration* (Wiley, 1981), for the finite-dimensional limits that define both integrals.
 - R. Haag, *Local Quantum Physics: Fields, Particles, Algebras* (Springer, 1996), for the net of local algebras, isotony, Einstein causality, and the localisation to causally complete regions.
-- R. F. Streater and A. S. Wightman, *PCT, Spin and Statistics, and All That* (Benjamin, 1964), for the axioms of local quantum field theory and the causal structure on which the region $O''=O$ is built.
+- R. F. Streater and A. S. Wightman, *PCT, Spin and Statistics, and All That* (Benjamin, 1964), for the axioms of local quantum field theory and the causal structure on which the region $O_{\mathrm{cc}}=O$ is built.
 - G. W. Gibbons, S. W. Hawking, and M. J. Perry, "Path integrals and the indefiniteness of the gravitational action," *Nuclear Physics B* **138** (1978) 141–150, for the convergence of the Euclidean functional integral.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the module structure on which the biquaternion field's Gaussian integral is taken.
 - Companion articles: *The Path Integral in Biquaternionic Form*, for the phase, the central imaginary, and the gap for the space of paths; *Interpretation of the Wick Rotation in the Biquaternion Universe*, for the rotation as a sector identification; *The Generating Functional and the Effective Action in Biquaternionic Form*, for $W[\tilde J]$ and $\Gamma[\tilde\Phi]$; *The Functional Determinant in Biquaternionic Form*, for the determinant left by the Gaussian integral; *The Partition Function in Biquaternionic Form*, for the Euclidean trace and the imaginary-time circle; *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, for the sector split used in the factorization.

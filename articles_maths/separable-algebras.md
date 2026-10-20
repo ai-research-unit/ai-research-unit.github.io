@@ -23,11 +23,11 @@ for the **enveloping algebra** of $A$, and $\mu : A^{\mathrm{e}} \to A$ for the 
 
 **Definition.** Let $L/F$ be an algebraic field extension. An element $\alpha \in L$ is **separable** over $F$ if its minimal polynomial $f_\alpha \in F[x]$ has distinct roots in a splitting field, equivalently if $f_\alpha$ and its formal derivative $f_\alpha'$ have no common root, equivalently if $\gcd(f_\alpha, f_\alpha') = 1$ in $F[x]$. The extension $L/F$ is **separable** if every element of $L$ is separable over $F$.
 
-The criterion is intrinsic and uses no form theory: $f$ has a repeated root exactly when $\gcd(f,f') \neq 1$, and the gcd is computed in $F[x]$ by the Euclidean algorithm.
+The criterion is intrinsic and uses no form theory: $f$ has a repeated root exactly when $\gcd(f,\frac{df}{dx}) \neq 1$, and the gcd is computed in $F[x]$ by the Euclidean algorithm.
 
 **Proposition.** Every algebraic extension of a field of characteristic $0$ is separable. Every algebraic extension of a finite field is separable. A field $F$ every algebraic extension of which is separable is called **perfect**, so fields of characteristic $0$ and finite fields are perfect.
 
-*Proof.* If $f \in F[x]$ is irreducible of degree $n$ and $f' \neq 0$ has degree $n-1$, then $f \nmid f'$, so $\gcd(f,f') = 1$ and $f$ has distinct roots. Over a field of characteristic $0$ every irreducible $f$ has $f' \neq 0$. Over a finite field $F = \mathbb{F}_q$, an irreducible $f$ of degree $n$ divides $x^{q^n} - x$, whose derivative is $-1$, so $f$ is coprime to its derivative; hence $f$ is separable.
+*Proof.* If $f \in F[x]$ is irreducible of degree $n$ and $\frac{df}{dx} \neq 0$ has degree $n-1$, then $f \nmid \frac{df}{dx}$, so $\gcd(f,\frac{df}{dx}) = 1$ and $f$ has distinct roots. Over a field of characteristic $0$ every irreducible $f$ has $\frac{df}{dx} \neq 0$. Over a finite field $F = \mathbb{F}_q$, an irreducible $f$ of degree $n$ divides $x^{q^n} - x$, whose derivative is $-1$, so $f$ is coprime to its derivative; hence $f$ is separable.
 
 **Example (a non-separable extension).** Let $F = \mathbb{F}_p(t)$ be the field of rational functions in one variable over $\mathbb{F}_p$ and let $L = F(t^{1/p})$. Then $t^{1/p} \notin F$ and its minimal polynomial is $x^p - t$, whose derivative $px^{p-1}$ is zero; so $x^p - t = (x - t^{1/p})^p$ has a single root of multiplicity $p$, and $L/F$ is not separable. This is the standard example: non-separability is a phenomenon of imperfect fields in positive characteristic.
 
@@ -120,10 +120,10 @@ holds; equivalently $A$ is a projective left $A^{\mathrm{e}}$-module.
 **Example (polynomial quotients and the resultant criterion).** Let $f \in R[x]$ be monic of degree $n$ and let $A = R[x]/(f)$. Then $A$ is a free $R$-module of rank $n$ and
 
 $$
-A \ \text{is separable over } R \iff (f, f') = R[x] \iff \operatorname{Res}(f, f') \in R^\times ,
+A \ \text{is separable over } R \iff (f, \frac{df}{dx}) = R[x] \iff \operatorname{Res}(f, \frac{df}{dx}) \in R^\times ,
 $$
 
-where $\operatorname{Res}$ is the resultant, the determinant of the Sylvester matrix of $f$ and $f'$. The first equivalence is the classical Jacobian criterion for a polynomial quotient and the second holds because the resultant generates the ideal of $R$ cut out by $(f,f')$. For $R = \mathbb{Z}$ and $f = x^2+1$ the resultant is $\operatorname{Res}(x^2+1,2x) = 4$, so $\mathbb{Z}[x]/(x^2+1) = \mathbb{Z}[i]$ is separable over $\mathbb{Z}[\tfrac12]$ but not over $\mathbb{Z}$; over $\mathbb{F}_2$ the polynomial becomes $(x+1)^2$ and the algebra acquires nilpotents, which is the failure of separability made visible.
+where $\operatorname{Res}$ is the resultant, the determinant of the Sylvester matrix of $f$ and $\frac{df}{dx}$. The first equivalence is the classical Jacobian criterion for a polynomial quotient and the second holds because the resultant generates the ideal of $R$ cut out by $(f,\frac{df}{dx})$. For $R = \mathbb{Z}$ and $f = x^2+1$ the resultant is $\operatorname{Res}(x^2+1,2x) = 4$, so $\mathbb{Z}[x]/(x^2+1) = \mathbb{Z}[i]$ is separable over $\mathbb{Z}[\tfrac12]$ but not over $\mathbb{Z}$; over $\mathbb{F}_2$ the polynomial becomes $(x+1)^2$ and the algebra acquires nilpotents, which is the failure of separability made visible.
 
 **Example (group algebras and Maschke).** For a finite group $G$ and a field $F$, the group algebra $F[G]$ is separable over $F$ if and only if $\operatorname{char} F$ does not divide $\lvert G\rvert$. The separability idempotent is
 
@@ -191,7 +191,7 @@ is an isomorphism of $S$-algebras. Equivalently, $S$ is a $G$-Galois algebra ove
 
 ## Summary
 
-A finite algebraic field extension $L/F$ is **separable** when every element has a minimal polynomial with distinct roots, equivalently when $L$ has $[L:F]$ distinct embeddings into an algebraic closure; fields of characteristic $0$ and finite fields are perfect, and $\mathbb{F}_p(t^{1/p})/\mathbb{F}_p(t)$ is the standard non-separable extension. A finite-dimensional $F$-algebra $A$ is **separable** when $A \otimes_F L$ is semisimple for every field extension $L$; equivalently $A \cong \prod_i M_{n_i}(D_i)$ with each division algebra $D_i$ having separable centre, so over a perfect field separability is exactly semisimplicity, and every central simple algebra is separable. The characterisation that works over a ring is the splitting of the multiplication map: $A$ is separable over $R$ when $\mu : A^{\mathrm{e}} = A \otimes_R A^{\mathrm{opp}} \to A$ splits as an $A^{\mathrm{e}}$-module map, equivalently when $A$ is projective over $A^{\mathrm{e}}$, equivalently when the **separability idempotent** $e = \sum_i x_i\otimes y_i$ with $\mu(e)=1$ and $ae=ea$ exists. Separability is preserved by base change; $M_n(R)$ and $R\times R$ are separable; $R[x]/(f)$ is separable for monic $f$ exactly when $(f,f') = R[x]$, that is, when the resultant $\operatorname{Res}(f,f')$ is a unit; and $F[G]$ is separable exactly when $\lvert G\rvert$ is invertible in $F$, the algebra form of Maschke's theorem.
+A finite algebraic field extension $L/F$ is **separable** when every element has a minimal polynomial with distinct roots, equivalently when $L$ has $[L:F]$ distinct embeddings into an algebraic closure; fields of characteristic $0$ and finite fields are perfect, and $\mathbb{F}_p(t^{1/p})/\mathbb{F}_p(t)$ is the standard non-separable extension. A finite-dimensional $F$-algebra $A$ is **separable** when $A \otimes_F L$ is semisimple for every field extension $L$; equivalently $A \cong \prod_i M_{n_i}(D_i)$ with each division algebra $D_i$ having separable centre, so over a perfect field separability is exactly semisimplicity, and every central simple algebra is separable. The characterisation that works over a ring is the splitting of the multiplication map: $A$ is separable over $R$ when $\mu : A^{\mathrm{e}} = A \otimes_R A^{\mathrm{opp}} \to A$ splits as an $A^{\mathrm{e}}$-module map, equivalently when $A$ is projective over $A^{\mathrm{e}}$, equivalently when the **separability idempotent** $e = \sum_i x_i\otimes y_i$ with $\mu(e)=1$ and $ae=ea$ exists. Separability is preserved by base change; $M_n(R)$ and $R\times R$ are separable; $R[x]/(f)$ is separable for monic $f$ exactly when $(f,\frac{df}{dx}) = R[x]$, that is, when the resultant $\operatorname{Res}(f,\frac{df}{dx})$ is a unit; and $F[G]$ is separable exactly when $\lvert G\rvert$ is invertible in $F$, the algebra form of Maschke's theorem.
 
 An **Azumaya algebra** is a central separable algebra over a commutative ring; over a field these are exactly the central simple algebras, and the Azumaya algebras up to similarity form the Brauer group $\operatorname{Br}(R)$ of the ring, which reduces to the Brauer group of the field when $R$ is a field. The commutative separable algebras are the **étale algebras**, the algebras that are locally Galois; they include $\mathbb{Z}\times\mathbb{Z}$ and $\mathbb{Z}[\tfrac12][x]/(x^2+1)$, while $\mathbb{Z}[i]$ is not étale over $\mathbb{Z}$. The sheaf-theoretic comparison of the Azumaya and the cohomological Brauer groups, and the étale topology that names them, belong to a later Part.
 
@@ -205,8 +205,8 @@ An **Azumaya algebra** is a central separable algebra over a commutative ring; o
 | $A^{\mathrm{e}} = A \otimes_R A^{\mathrm{opp}}$ | enveloping algebra; $A$-bimodules are $A^{\mathrm{e}}$-modules |
 | $\mu : A^{\mathrm{e}} \to A$ | multiplication map, $\mu(a\otimes b) = ab$ |
 | $e = \sum_i x_i \otimes y_i$ | separability idempotent, $\mu(e)=1$, $ae=ea$ |
-| $f_\alpha$, $f'$ | minimal polynomial and formal derivative |
-| $\operatorname{Res}(f,f')$ | resultant, $\det$ of the Sylvester matrix |
+| $f_\alpha$, $\frac{df}{dx}$ | minimal polynomial and formal derivative |
+| $\operatorname{Res}(f,\frac{df}{dx})$ | resultant, $\det$ of the Sylvester matrix |
 | $M_n(R)$, $E_{ij}$ | matrix algebra and matrix units |
 | $A \sim B$ | similarity of Azumaya algebras |
 | $\operatorname{Br}(R)$ | Brauer group of a commutative ring (Azumaya classes) |

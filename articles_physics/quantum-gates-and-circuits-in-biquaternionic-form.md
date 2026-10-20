@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A quantum gate is a reversible operation on a quantum state. In the biquaternion framework the state of a qubit is an element of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, namely a positive trace-one element
+A quantum gate is a reversible operation on a quantum state. In the biquaternion framework the state of a qubit is an element of the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, namely a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) with Bloch vector $\vec r$.
 
 $$
 \tilde{Ϛ} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3,
@@ -457,7 +457,7 @@ The channel set is convex, with the gates among its extreme points; the companio
 
 **It does provide:**
 
-- A single algebraic home for the objects of quantum computation: states are positive trace-one elements of $\mathbb{M}_+^{\otimes n}$, gates are unitary elements of $\mathbb{B}^{\otimes n}$, and a circuit is their product.
+- A single algebraic home for the objects of quantum computation: states are positive elements of $\mathbb{M}_+^{\otimes n}$ with $\mathrm{Sc}=2^{-n}$ (trace one in the $2^n\times2^n$ image), gates are unitary elements of $\mathbb{B}^{\otimes n}$, and a circuit is their product.
 - The action of a gate as rotor conjugation, and reversibility as the property $\tilde{U}\tilde{U}^{*} = e_t$ that makes the acting element unitary.
 - The standard gate set in explicit biquaternion form: the Pauli and Hadamard gates as Hermitian unitaries in $\mathbb{M}_+$, and the phase and $T$ gates as rotations in $\mathbb{H}_{\mathbb{B}}$, with the global phase sitting in $\mathbb{C}_{\mathbb{B}}$ and acting trivially.
 - The controlled gate as an algebraic construction from complementary idempotents and a target gate, and the interpretation of the controlled gate as the coherent use of an idempotent, in contrast with the measure-and-forget channel.

@@ -5,7 +5,7 @@
 A scalar field is, in standard relativistic physics, the simplest possible kind of field: a single component at each event, transforming in the **trivial representation** of the Lorentz group,
 
 $$
-\phi'(x') = \phi(x),
+\phi_{\mathrm{L}}(x_2) = \phi(x),
 $$
 
 with no internal index, no axis, and no orientation. Every other field carries structure that a Lorentz transformation can act on: the four-vector carries its spacetime index, the Dirac field carries its spinor index, and the field strength carries two. The scalar carries none, and that is what "spin $0$" means.
@@ -103,10 +103,10 @@ There is a second way to see the same content, and it is the one that makes the 
 $$
 \tilde{u}\,\tilde\Pi(\vec u)\,\tilde{u}^{*}
 =\tfrac{1}{2}\left(e_t+i\,\tilde{u}\vec u\tilde{u}^{*}\right)
-=\tilde\Pi(\vec u'),
+=\tilde\Pi(\vec u_2),
 $$
 
-where $\vec u'=\tilde{u}\vec u\tilde{u}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\vec u$ leave $\tilde\Pi$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $\mathrm{U}(1)$ subgroup of rotations about $\vec u$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(\vec e_z)=\tfrac{1}{2}(e_t+i\vec e_z)$ to $\tilde\Pi(\vec u')$ with $\vec u'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $\vec e_z$ fixes $\tilde\Pi(\vec e_z)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
+where $\vec u_2=\tilde{u}\vec u\tilde{u}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\vec u$ leave $\tilde\Pi$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $\mathrm{U}(1)$ subgroup of rotations about $\vec u$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(\vec e_z)=\tfrac{1}{2}(e_t+i\vec e_z)$ to $\tilde\Pi(\vec u_2)$ with $\vec u_2=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $\vec e_z$ fixes $\tilde\Pi(\vec e_z)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
 
 A scalar field is exactly the opposite. It has no axis, and no rotation may move it. The remainder of the article makes that requirement precise inside the algebra and identifies the unique subspace that satisfies it.
 
@@ -179,7 +179,7 @@ The state module is not an exception within a richer family of modules; it is, u
 
 If one insists on locating the scalar inside the algebra rather than inside a module, the centralizer computation settles where. Under the rotation subgroup the algebra decomposes as spin $0$ (the centre) plus spin $1$ (the traceless part); under the conjugation action there is no nonzero element invariant under the full Lorentz group, since the conjugation action on $\mathbb{B}$ is the irreducible complexified four-vector representation. The only rotationally invariant elements are central. A scalar field, being invariant under rotations, must therefore take its values in $\mathbb{C}_{\mathbb{B}}$, and there is nothing else it could take them in.
 
-It is worth stating plainly how the scalar relates to the rotor-conjugation action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, which is the four-vector representation; under rotations it splits into the time component (spin $0$) and the spatial vector (spin $1$). The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}'(x')=\tilde{\Phi}(x)$, with no algebraic factor acting on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the centre is the value space in which that absence is natural.
+It is worth stating plainly how the scalar relates to the rotor-conjugation action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, which is the four-vector representation; under rotations it splits into the time component (spin $0$) and the spatial vector (spin $1$). The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}_{\mathrm{L}}(x_2)=\tilde{\Phi}(x)$, with no algebraic factor acting on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the centre is the value space in which that absence is natural.
 
 ### The Trivial Representation Lives in the Tensor Square
 
@@ -337,7 +337,7 @@ The distinction between the two routes is the distinction the title names. A fie
 
 4. **The relation to the informational interpretation.** The centre is the intersection of the scalar field's value space with neither sector as a whole, but with one real direction in each. This suggests that the material/informational dichotomy, at least for the scalar, is a real/complex pair rather than a state/operator pair. Whether the informational interpretation of $\mathbb{M}_+$ survives the scalar case intact, or must be restricted to the non-scalar sectors, is a question for the informational articles.
 
-5. **Composite scalars and the trace formula.** The bilinear route uses the trace pairing $\mathrm{Tr}(\psi\chi^{*})=2\,\mathrm{Sc}(\psi\chi^{*})$. The symplectic pairing $\varepsilon$ and the mixed pairing $b$ supply the Lorentz-scalar channels, while the Hermitian pairing $\psi\chi^{*}$ supplies the four-vector channel; whether every scalar-valued functional of the module reduces to these two is not settled here.
+5. **Composite scalars and the trace formula.** The bilinear route uses the plain form $\mathrm{Sc}(\psi\chi^{*})$, read as the trace pairing $\mathrm{Tr}(\psi\chi^{*})=2\,\mathrm{Sc}(\psi\chi^{*})$. The symplectic pairing $\varepsilon$ and the mixed pairing $b$ supply the Lorentz-scalar channels, while the Hermitian pairing $\psi\chi^{*}$ supplies the four-vector channel; whether every scalar-valued functional of the module reduces to these two is not settled here.
 
 6. **Why the algebra admits only spin $0$ and one-half.** The module carries spin $\tfrac{1}{2}$ and the algebra under rotations carries spin $0$ and $1$; there is no simple module of higher spin. The general question — which spins the biquaternion algebra admits as elementary representations — is the subject of a separate article in the series and is not answered here.
 

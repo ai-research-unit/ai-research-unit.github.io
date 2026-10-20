@@ -177,15 +177,15 @@ The arithmetic statement that behaves like an intermediate value theorem is Hens
 
 ### Rolle and the Mean Value Theorem
 
-**Proposition.** The mean value theorem and Rolle's theorem fail over a non-Archimedean field. Over $\mathbb{Q}_p$ the polynomial $f(x) = x^p - x$ satisfies $f(0) = f(1) = 0$, while $f'(x) = px^{p-1} - 1$ has constant absolute value $1$ at every $x \in \mathbb{Z}_p$ and in particular has no zero in $\mathbb{Z}_p$.
+**Proposition.** The mean value theorem and Rolle's theorem fail over a non-Archimedean field. Over $\mathbb{Q}_p$ the polynomial $f(x) = x^p - x$ satisfies $f(0) = f(1) = 0$, while $\frac{df}{dx} = px^{p-1} - 1$ has constant absolute value $1$ at every $x \in \mathbb{Z}_p$ and in particular has no zero in $\mathbb{Z}_p$.
 
-**Proof.** $f(0) = f(1) = 0$ is immediate from Fermat's little theorem read modulo $p$. Every $x \in \mathbb{Z}_p$ satisfies $\lvert px^{p-1} \rvert \leq \lvert p \rvert < 1$, so $\lvert f'(x) \rvert = 1$ by the equality case of the ultrametric inequality, and $f'$ never vanishes. Rolle's theorem would require a critical point strictly between $0$ and $1$, but there is no order and the equation $f'(x) = 0$ has no solution.
+**Proof.** $f(0) = f(1) = 0$ is immediate from Fermat's little theorem read modulo $p$. Every $x \in \mathbb{Z}_p$ satisfies $\lvert px^{p-1} \rvert \leq \lvert p \rvert < 1$, so $\lvert \frac{df}{dx} \rvert = 1$ by the equality case of the ultrametric inequality, and $\frac{df}{dx}$ never vanishes. Rolle's theorem would require a critical point strictly between $0$ and $1$, but there is no order and the equation $\frac{df}{dx} = 0$ has no solution.
 
 The failure is not a defect of the statements but of the order: the mean value theorem is proved with the order of $\mathbb{R}$ through the extreme value theorem, and no order is available here.
 
 ### Zero Derivative Without Constancy
 
-**Theorem (standard).** Over a non-Archimedean field of characteristic $0$, there exists a differentiable function $f : \mathbb{Z}_p \to \mathbb{Q}_p$ with $f'(x) = 0$ for every $x \in \mathbb{Z}_p$ and $f$ not constant.
+**Theorem (standard).** Over a non-Archimedean field of characteristic $0$, there exists a differentiable function $f : \mathbb{Z}_p \to \mathbb{Q}_p$ with $\frac{df}{dx} = 0$ for every $x \in \mathbb{Z}_p$ and $f$ not constant.
 
 **Proof sketch (standard, after Schikhof).** Write $\mathbb{Z}_p$ as a disjoint union of the $p^n$ balls of radius $p^{-n}$ and define $f$ by recursion on $n$: on each ball of radius $p^{-n}$ choose a value that is congruent to the value already chosen on the containing ball of radius $p^{-(n-1)}$ modulo $p^n$, but nonconstant; the values are chosen so that the difference quotients between distinct points of a ball of radius $p^{-n}$ lie in $p^{n}\mathcal{O}$, which makes the derivative zero everywhere, while the values at $0$ and $1$ differ by a unit. The construction uses the clopen decomposition of $\mathbb{Z}_p$ and the completeness of $\mathbb{Q}_p$.
 
@@ -210,7 +210,7 @@ The following table collects the contrasts. It is a statement about the two theo
 | Connectedness | intervals are connected | every ball is open and closed |
 | Intermediate value | yes for continuous functions | vacuous; Hensel's lemma instead |
 | Mean value theorem | yes | fails |
-| $f' = 0 \Rightarrow f$ constant | yes | fails (standard example) |
+| $\frac{df}{dx} = 0 \Rightarrow f$ constant | yes | fails (standard example) |
 | $C^\infty \Rightarrow$ analytic | no, a smooth bump is not analytic | no, and a smooth function may have Taylor series of radius $0$ |
 | Zeros of an analytic function | isolated in the domain | isolated, and finitely many on a compact disc |
 | Maximum modulus | needs holomorphy | from the ultrametric inequality |

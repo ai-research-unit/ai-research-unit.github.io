@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ supplies the state space, the biquaternion norm, the trace pairing, the unitarity group and the centre that the preceding articles of this subcategory have put to work. It is equally important to record what it does **not** supply. This article is a catalogue of the algebraic obstructions: statements of the form "there is no element, subalgebra, or operation of $\mathbb{B}$ with such-and-such a property", each proved from the algebra's structure, each with its consequence for the framework and its minimal remedy.
+The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ supplies the state space, the biquaternion norm, the plain form, the unitarity group and the centre that the preceding articles of this subcategory have put to work. It is equally important to record what it does **not** supply. This article is a catalogue of the algebraic obstructions: statements of the form "there is no element, subalgebra, or operation of $\mathbb{B}$ with such-and-such a property", each proved from the algebra's structure, each with its consequence for the framework and its minimal remedy.
 
 The catalogue is not a list of defects of the framework. It is the map of the boundary at which the algebra's own resources end and something else must take over — an extended module, an imported statistical metric, an explicitly chosen basis, or a physical posit. A structural theory is only as honest as its account of its own limits, and the companion article *Fundamental and Derived Elements in the Biquaternion Framework* already distinguishes the algebra's fundamental content from what is derived. The present catalogue makes that distinction exhaustive for the structural questions.
 
@@ -70,7 +70,7 @@ so the solutions are exactly $0$ and $e_t$. The corresponding two-sided ideals $
 
 **Consequence.** The global phase and the overall scale of the state carry no information in this framework. The relevant symmetry group on states is the projective group $PGL(2,\mathbb{C})$, or $SO(3)$ on the Bloch sphere after restriction to unitaries, and the centre is not represented.
 
-**Remedy.** None is needed, and none is possible: the unobservability of the global phase is a physical requirement, not a defect, and the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* uses exactly this fact when it identifies states with rays. The obstruction is recorded to make precise *why* the phase is unobservable: it is central.
+**Remedy.** None is needed, and none is possible: the unobservability of the global phase is a physical requirement, not a defect, and the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* uses exactly this fact when it identifies states with rays. The obstruction is recorded to make precise *why* the phase is unobservable: it is central.
 
 ### O4. The algebra cannot determine its own parameters
 
@@ -208,7 +208,7 @@ and under the matrix model $M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C})\con
 
 **Consequence.** The framework cannot realise a genuinely "biquaternionic" quantum physics whose evolution preserves the norm for the full class of Hermitian generators: that demand collapses the scalar field to the centre $\mathbb{C}$, and the algebra acts as a matrix algebra over that field. A non-central unit is not excluded outright, but its reach is exactly its commutant: $J=\vec e_x$ gives $-\hbar^{-1}\vec e_x\tilde{H}$, which is anti-Hermitian for precisely those Hermitian $\tilde{H}$ commuting with $\vec e_x$, and Hermitian — hence norm-violating — for $\tilde{H}=i\vec e_y$, say. The alternative units $\vec e_x,\vec e_y,\vec e_z$, and more generally the unit pure quaternions, are roots of $-e_t$ and are available as algebraic structures, but not as units of a norm-preserving dynamics; the elements $i\vec e_k$ are not roots of $-e_t$ at all, since $(i\vec e_k)^2=+e_t$.
 
-**Remedy.** Either give up norm preservation — which departs from quantum physics — or restrict the class of generators to those commuting with the chosen $J$ — which singles out a subtheory. The framework's own choice is the third: accept that the scalar field is $\mathbb{C}$, and read $\mathbb{B}$ as an algebra of operators over it, which is what makes the state space, the trace pairing and the unitarity group work.
+**Remedy.** Either give up norm preservation — which departs from quantum physics — or restrict the class of generators to those commuting with the chosen $J$ — which singles out a subtheory. The framework's own choice is the third: accept that the scalar field is $\mathbb{C}$, and read $\mathbb{B}$ as an algebra of operators over it, which is what makes the state space, the plain form and the unitarity group work.
 
 ## IV. Obstructions of the Sector Structure
 
@@ -297,7 +297,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** No maximal commutative subalgebra is invariant under a generic unitary evolution. Consequently no pointer basis is preserved by the dynamics.
 
-**Proof.** Conjugation by a unitary element implements a rotation of the Bloch sphere; a generic rotation maps a given axis $\vec u$ to a different axis, and hence maps $\mathbb{A}_{\vec u}$ to $\mathbb{A}_{\vec u'}$ with $\mathbb{A}_{\vec u'}\neq\mathbb{A}_{\vec u}$ by O1. A subalgebra is invariant under a one-parameter unitary group only if its axis is fixed by the corresponding rotation, i.e. only if the axis is an eigenvector of the Hermitian generator, a non-generic condition.
+**Proof.** Conjugation by a unitary element implements a rotation of the Bloch sphere; a generic rotation maps a given axis $\vec u$ to a different axis, and hence maps $\mathbb{A}_{\vec u}$ to $\mathbb{A}_{\vec u_2}$ with $\mathbb{A}_{\vec u_2}\neq\mathbb{A}_{\vec u}$ by O1. A subalgebra is invariant under a one-parameter unitary group only if its axis is fixed by the corresponding rotation, i.e. only if the axis is an eigenvector of the Hermitian generator, a non-generic condition.
 
 **Consequence.** Classicality in this framework cannot be a permanent algebraic property of a subsystem; it must be emergent, contextual, or maintained by a mechanism external to the closed unitary evolution.
 
@@ -359,7 +359,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 Two clarifications prevent the catalogue from being read as a refutation of the framework.
 
-**It does not say that the algebra's positive results are withdrawn.** The state space as the trace-one slice of the future cone, the transition probability as a trace pairing, the Fubini–Study metric as the second variation of the biquaternion norm, the Kähler structure, the unitarity theorem and the identification of the centre as the classical sector all stand; they are the content of the preceding articles of the subcategory. The obstructions concern what those structures cannot additionally be asked to do, and every one of them is stated with its remedy.
+**It does not say that the algebra's positive results are withdrawn.** The state space as the trace-one slice of the future cone, the transition probability as the normalised plain form, read as the trace pairing, the Fubini–Study metric as the second variation of the biquaternion norm, the Kähler structure, the unitarity theorem and the identification of the centre as the classical sector all stand; they are the content of the preceding articles of the subcategory. The obstructions concern what those structures cannot additionally be asked to do, and every one of them is stated with its remedy.
 
 **Most of the obstructions are shared with ordinary complex quantum physics, and only some are peculiar to the biquaternion setting.** The distinction matters for any assessment of the framework, and it is worth tabulating.
 

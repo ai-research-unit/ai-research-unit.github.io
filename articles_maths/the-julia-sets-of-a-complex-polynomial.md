@@ -26,11 +26,11 @@ extended to $\hat{\mathbb{C}}$ by $f(\infty) = \infty$. The **iterates** are $f^
 
 ### Periodic Points and Their Multipliers
 
-**Definition.** A point $z$ is **periodic** of period $p \geq 1$ if $f^p(z) = z$ and $p$ is the least such integer; it is **fixed** if $p = 1$. The **multiplier** of the cycle is $\lambda = (f^p)'(z)$. The cycle is **attracting** if $|\lambda| < 1$, **superattracting** if $\lambda = 0$, **repelling** if $|\lambda| > 1$, and **indifferent** if $|\lambda| = 1$, the indifferent case being **rationally indifferent** when $\lambda$ is a root of unity and **irrationally indifferent** otherwise. A point is **preperiodic** if some iterate of it is periodic.
+**Definition.** A point $z$ is **periodic** of period $p \geq 1$ if $f^p(z) = z$ and $p$ is the least such integer; it is **fixed** if $p = 1$. The **multiplier** of the cycle is $\lambda = \\frac{d}{dz}(f^p)(z)$. The cycle is **attracting** if $|\lambda| < 1$, **superattracting** if $\lambda = 0$, **repelling** if $|\lambda| > 1$, and **indifferent** if $|\lambda| = 1$, the indifferent case being **rationally indifferent** when $\lambda$ is a root of unity and **irrationally indifferent** otherwise. A point is **preperiodic** if some iterate of it is periodic.
 
-**Proposition.** The multiplier is the same at every point of the cycle, and it is independent of the point chosen on the cycle; the chain rule gives $(f^p)'(z) = \prod_{k=0}^{p-1} f'(f^k(z))$, a product invariant under cyclic permutation.
+**Proposition.** The multiplier is the same at every point of the cycle, and it is independent of the point chosen on the cycle; the chain rule gives $\\frac{d}{dz}(f^p)(z) = \prod_{k=0}^{p-1} \frac{df}{dz}(f^k(z))$, a product invariant under cyclic permutation.
 
-**Definition.** A **critical point** of $f$ is a point at which $f'$ vanishes; the finite critical points are the $d-1$ roots of $f'$ counted with multiplicity, and $\infty$ is a critical point of multiplicity $d-1$. The **critical orbit** is the orbit of the critical points, and $f$ is **post-critically finite** if every critical orbit is finite.
+**Definition.** A **critical point** of $f$ is a point at which $\frac{df}{dz}$ vanishes; the finite critical points are the $d-1$ roots of $\frac{df}{dz}$ counted with multiplicity, and $\infty$ is a critical point of multiplicity $d-1$. The **critical orbit** is the orbit of the critical points, and $f$ is **post-critically finite** if every critical orbit is finite.
 
 **Example.** For the quadratic family $f_c(z) = z^2 + c$ the only finite critical point is $0$, the critical orbit is $0 \mapsto c \mapsto c^2+c \mapsto \cdots$, and $f_c$ is post-critically finite exactly when this orbit is finite; $c = 0$ and $c = -2$ are the first examples, and $c = i$ gives the finite orbit $0 \mapsto i \mapsto -1+i \mapsto -i \mapsto -1+i$, of preperiod $1$ and period $2$.
 
@@ -114,9 +114,9 @@ a compact subset of $\mathbb{C}$; the **basin of infinity** is $A(\infty) = \hat
 
 ## Self-Similarity and Coding
 
-**Theorem (the inverse branches).** Let $z$ be a point of $J(f)$ at which $(f^n)'(z) \neq 0$ for all $n$. Then for every neighbourhood $V$ of $z$ and every sufficiently large $n$ there is a branch $g_n$ of $f^{-n}$ defined on a disk about $f^n(z)$ with $g_n(f^n(z)) = z$; the branches are contractions by the factor $|(f^n)'(z)|^{-1}$, and the Julia set is the attractor of the resulting system of inverse branches on the repelling side.
+**Theorem (the inverse branches).** Let $z$ be a point of $J(f)$ at which $\\frac{d}{dz}(f^n)(z) \neq 0$ for all $n$. Then for every neighbourhood $V$ of $z$ and every sufficiently large $n$ there is a branch $g_n$ of $f^{-n}$ defined on a disk about $f^n(z)$ with $g_n(f^n(z)) = z$; the branches are contractions by the factor $|\\frac{d}{dz}(f^n)(z)|^{-1}$, and the Julia set is the attractor of the resulting system of inverse branches on the repelling side.
 
-**Proof sketch.** The inverse function theorem gives a local branch of $f^{-n}$ near $f^n(z)$, and its derivative at $f^n(z)$ is $1/(f^n)'(z)$; since $|(f^n)'(z)|$ grows exponentially along the repelling directions, the branch contracts. The branch maps a neighbourhood of $f^n(z)$ into a neighbourhood of $z$, and the union of the branches over $n$ generates $J$, by the density of the backward orbit stated above.
+**Proof sketch.** The inverse function theorem gives a local branch of $f^{-n}$ near $f^n(z)$, and its derivative at $f^n(z)$ is $1/\\frac{d}{dz}(f^n)(z)$; since $|\\frac{d}{dz}(f^n)(z)|$ grows exponentially along the repelling directions, the branch contracts. The branch maps a neighbourhood of $f^n(z)$ into a neighbourhood of $z$, and the union of the branches over $n$ generates $J$, by the density of the backward orbit stated above.
 
 **Remark (the sense of self-similarity).** The Julia set is **invariant**, $J = f^{-1}(J)$, and it is covered by the $d^n$ preimages of any of its neighbourhoods; exact self-similarity, in the sense of the iterated function systems of *Fractal Geometry* with finitely many contracting similarities, holds only in the special cases of $z \mapsto z^d$, whose Julia set is the unit circle with $d$ rotational symmetries, and of the Chebyshev and Lattès examples constructed from a group action. For a general polynomial the self-similarity is **conformal**: the inverse branches are conformal contractions whose ratios vary, and it is the invariant measure, not a finite system of similitudes, that records the balance of the pieces. The iterated function systems proper are the subject of *Iterated Function Systems in the Complex Plane*, and the general self-similar construction is the subject of *Fractal Geometry*.
 
@@ -132,21 +132,21 @@ for every continuous $\varphi$ and every $z$ outside the exceptional set, the su
 
 **Proof sketch.** The displayed average over the $d^n$ preimages converges weakly to a probability measure, by the Banach–Alaoglu theorem and the choice of a limit point of the sequence of averaged counting measures; the averaging identity makes the limit $f$-invariant and independent of $z$, and its entropy is $\log d$, the topological entropy of $f$. The identification of the maximal entropy measure with the equilibrium measure is the theory of *Ergodic Theory* and *The Geometry of the Julia Sets*. The computation of the entropy and the Lyapunov exponent as averages is the thermodynamic formalism, cited there.
 
-**Theorem (the measure of full dimension).** If $J(f)$ is a hyperbolic Julia set in the sense below, then there is an $f$-invariant ergodic measure $\mu_s$ of Hausdorff dimension exactly $\dim_H J(f)$: it is the equilibrium state of the potential $-s\log|f'|$ at the value $s$ solving the pressure equation of *The Hausdorff Dimension of the Julia Sets*, and it satisfies the dimension formula
+**Theorem (the measure of full dimension).** If $J(f)$ is a hyperbolic Julia set in the sense below, then there is an $f$-invariant ergodic measure $\mu_s$ of Hausdorff dimension exactly $\dim_H J(f)$: it is the equilibrium state of the potential $-s\log|\frac{df}{dz}|$ at the value $s$ solving the pressure equation of *The Hausdorff Dimension of the Julia Sets*, and it satisfies the dimension formula
 
 $$
-\dim_H J(f) = \frac{h_{\mu_s}}{\chi_{\mu_s}}, \qquad \chi_{\mu_s} = \int \log|f'| \, d\mu_s ,
+\dim_H J(f) = \frac{h_{\mu_s}}{\chi_{\mu_s}}, \qquad \chi_{\mu_s} = \int \log|\frac{df}{dz}| \, d\mu_s ,
 $$
 
 of Ledrappier and Young, where $h$ is the measure-theoretic entropy. For a polynomial the measure of maximal entropy has dimension $\log d / \chi_{\mu} < \dim_H J(f)$ whenever the Julia set is not a rectifiable curve, and the two coincide only in the exceptional cases such as $J(f) = \hat{\mathbb{C}}$ of a rational map.
 
-**Proof sketch.** The equilibrium state of $-s\log|f'|$ exists by the Ruelle–Perron–Frobenius theorem, because the map is expanding on the Julia set; the Bowen equation $P(-s\log|f'|) = 0$ has a unique root, its equilibrium state has dimension $s$ by the Shannon–McMillan–Breiman theorem applied to the potential, and the root equals the Hausdorff dimension by the Bowen formula of *The Hausdorff Dimension of the Julia Sets*. The theorem is the measure-theoretic part of the dimension theory, and it is stated here only for completeness; the thermodynamic formalism is Part III's.
+**Proof sketch.** The equilibrium state of $-s\log|\frac{df}{dz}|$ exists by the Ruelle–Perron–Frobenius theorem, because the map is expanding on the Julia set; the Bowen equation $P(-s\log|\frac{df}{dz}|) = 0$ has a unique root, its equilibrium state has dimension $s$ by the Shannon–McMillan–Breiman theorem applied to the potential, and the root equals the Hausdorff dimension by the Bowen formula of *The Hausdorff Dimension of the Julia Sets*. The theorem is the measure-theoretic part of the dimension theory, and it is stated here only for completeness; the thermodynamic formalism is Part III's.
 
 ## The Hyperbolic and the Parabolic Cases
 
 **Definition.** A polynomial $f$ is **hyperbolic** if every critical point lies in the basin of an attracting (or superattracting) cycle; it is **parabolic** if it has a rationally indifferent periodic point, so that a cycle of multiplier a root of unity attracts some critical orbit; and it is **subhyperbolic** if every critical orbit either converges to an attracting cycle or is eventually repelled, with no critical orbit in the Julia set.
 
-**Theorem (the expanding characterisation).** A polynomial is hyperbolic if and only if its Julia set is **expanding**: there are constants $C > 0$ and $\rho > 1$ with $|(f^n)'(z)| \geq C\rho^n$ for every $z \in J(f)$ and every $n \geq 1$. Equivalently, a hyperbolic Julia set contains no critical point and the critical orbits stay a positive distance from it.
+**Theorem (the expanding characterisation).** A polynomial is hyperbolic if and only if its Julia set is **expanding**: there are constants $C > 0$ and $\rho > 1$ with $|\\frac{d}{dz}(f^n)(z)| \geq C\rho^n$ for every $z \in J(f)$ and every $n \geq 1$. Equivalently, a hyperbolic Julia set contains no critical point and the critical orbits stay a positive distance from it.
 
 **Proof sketch.** If the Julia set is expanding then the iterates of a neighbourhood of it are controlled and the critical orbits cannot accumulate on $J$, so they fall into attracting basins, which is hyperbolicity; conversely hyperbolicity makes the critical orbits avoid $J$ and the expanding inequality follows from the compactness of $J$ and the absence of critical points on it. The statement is the Koebe-distortion argument of the doubling theory of *The Geometry of the Julia Sets*.
 
@@ -160,7 +160,7 @@ of modulus $4\sqrt2 = 5.656854\ldots > 1$, so the critical point lands on a **re
 
 A complex polynomial of degree $d \geq 2$ is a holomorphic self-map of the Riemann sphere with a superattracting fixed point at $\infty$. Its iterates partition the sphere into the Fatou set, where the family of iterates is normal, and the Julia set, its complement; both are completely invariant, $J(f) = J(f^n)$, and $J(f)$ is nonempty, closed and infinite. The Julia set is the closure of the repelling periodic points, it is contained in the closure of the backward orbit of every non-exceptional point, and it is the common boundary of all the Fatou components and of the filled Julia set. The filled Julia set is compact, and it is connected exactly when every critical point lies in it; for the quadratic family this is the criterion that the parameter lies in the Mandelbrot set.
 
-The Julia set is invariant under the inverse branches of $f$, which are conformal contractions on the repelling side; exact self-similarity holds only in the circle and Chebyshev cases, and the general self-similarity is conformal, recorded by the invariant measure. There is a unique $f$-invariant probability measure of maximal entropy $\log d$, supported on the Julia set; for a hyperbolic Julia set there is an ergodic invariant measure of Hausdorff dimension exactly $\dim_H J(f)$, the equilibrium state of $-s\log|f'|$ at the Bowen value, and the dimension formula expresses it as entropy over Lyapunov exponent.
+The Julia set is invariant under the inverse branches of $f$, which are conformal contractions on the repelling side; exact self-similarity holds only in the circle and Chebyshev cases, and the general self-similarity is conformal, recorded by the invariant measure. There is a unique $f$-invariant probability measure of maximal entropy $\log d$, supported on the Julia set; for a hyperbolic Julia set there is an ergodic invariant measure of Hausdorff dimension exactly $\dim_H J(f)$, the equilibrium state of $-s\log|\frac{df}{dz}|$ at the Bowen value, and the dimension formula expresses it as entropy over Lyapunov exponent.
 
 The dynamics is hyperbolic when every critical point lies in an attracting basin, and then the Julia set is expanding; it is parabolic when a rationally indifferent cycle attracts a critical orbit, the parameter $c = 1/4$ of the quadratic family being the model case. The general theory of the Fatou and Julia sets of a rational map, the classification of the components, the local connectivity and the geometric measure theory belong to *The Geometry of the Julia Sets* of Part IV; the escape criterion and the Green's function are the subject of *The Escape Radius and the Green's Function*, and the dimension is the subject of *The Hausdorff Dimension of the Julia Sets*.
 
@@ -173,11 +173,11 @@ The dynamics is hyperbolic when every critical point lies in an attracting basin
 | $F(f)$, $J(f)$ | Fatou set, Julia set; $J(f) = \hat{\mathbb{C}} \setminus F(f)$ |
 | $K(f)$ | Filled Julia set, the points with bounded orbit |
 | $A(\infty)$ | Basin of infinity, $\hat{\mathbb{C}} \setminus K(f)$ |
-| $\lambda = (f^p)'(z)$ | Multiplier of a $p$-periodic cycle |
+| $\lambda = \\frac{d}{dz}(f^p)(z)$ | Multiplier of a $p$-periodic cycle |
 | attracting, repelling, indifferent | $|\lambda| < 1$, $|\lambda| > 1$, $|\lambda| = 1$ |
 | $\mu$ | Brolin measure, $f$-invariant of maximal entropy $\log d$ |
-| $\mu_s$, $s = \dim_H J(f)$ | Equilibrium state of $-s\log|f'|$, measure of full dimension |
-| $\chi = \int \log|f'| \, d\mu$ | Lyapunov exponent |
+| $\mu_s$, $s = \dim_H J(f)$ | Equilibrium state of $-s\log|\frac{df}{dz}|$, measure of full dimension |
+| $\chi = \int \log|\frac{df}{dz}| \, d\mu$ | Lyapunov exponent |
 | hyperbolic, parabolic, subhyperbolic | Critical orbits in attracting basins; a rationally indifferent cycle; critical orbits off $J$ |
 | $f_c(z) = z^2 + c$ | The quadratic family of *The Mandelbrot Set and the Quadratic Family* |
 

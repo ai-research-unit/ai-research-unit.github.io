@@ -64,9 +64,9 @@ $$
 the position matrix element is the momentum integral
 
 $$
-K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 = \int\frac{d^3p}{(2\pi\hbar)^3}\,
-\exp(\,i\vec p\cdot(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))/\hbar)\,
+\exp(\,i\vec p\cdot(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))/\hbar)\,
 \exp(-i\varepsilon p^2/2m\hbar)\,
 \exp(-i\varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\hbar)\,e_t
 + O(\varepsilon^2),
@@ -79,15 +79,15 @@ $$
 = \left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{3/2}
 \exp\left(\frac{im|\vec\Delta|^2}{2\hbar\varepsilon}\right),
 \qquad
-\vec\Delta = x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) ,
+\vec\Delta = x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) ,
 $$
 
 so that
 
 $$
-K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 = \left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{3/2}
-\exp\left[\frac{i}{\hbar}\left(\frac{m|x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon} - \varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\right]e_t
+\exp\left[\frac{i}{\hbar}\left(\frac{m|x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon} - \varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\right]e_t
 + O(\varepsilon^2).
 $$
 
@@ -112,7 +112,7 @@ K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\
 \exp\left[\frac{i}{\hbar}\sum_{k=0}^{N-1}\left(\frac{m|x_{k+1}\,\vec e_x+y_{k+1}\,\vec e_y+z_{k+1}\,\vec e_z-(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)\right)\right]e_t,
 $$
 
-with $\varepsilon=t/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^t L\,dt'$ and the multiple integral becomes the formal path integral
+with $\varepsilon=t/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^t L\,d\tau$ and the multiple integral becomes the formal path integral
 
 $$
 K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,0)
@@ -318,9 +318,9 @@ The van Vleck form fails at the caustics, where the van Vleck determinant vanish
 The Schrödinger path integral in the biquaternion framework is derived from the central evolution operator $\tilde U(t)=\exp(-iHt/\hbar)$ with $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$. The position kernel is $K\,e_t$, a complex scalar times the identity, and the state is propagated by scalar convolution; the module factor is untouched. The short-time kernel is
 
 $$
-K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
 =\left(\frac{m}{2\pi i\hbar\varepsilon}\right)^{3/2}
-\exp\left[\frac{i}{\hbar}\left(\frac{m|x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\right]e_t+O(\varepsilon^2),
+\exp\left[\frac{i}{\hbar}\left(\frac{m|x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\right]e_t+O(\varepsilon^2),
 $$
 
 and the Trotter product of these kernels gives the sum over paths $K=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\,\exp(iS[x,y,z]/\hbar)e_t$.
@@ -349,7 +349,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $H=[-\frac{\hbar^2}{2m}\nabla^2+V]e_t$ | Central Hamiltonian |
 | $\tilde U(t)=\exp(-iHt/\hbar)$ | Evolution operator; central unitary, semigroup |
 | $K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t_i)=Ke_t$ | Position kernel; central |
-| $K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(L\varepsilon)$ |
+| $K_\varepsilon(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(L\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |
 | $S[x,y,z]=\int L\,dt$ | Action; real scalar |
 | $K_0=(m/2\pi i\hbar t)^{3/2}\exp(im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2\hbar t)$ | Free kernel |

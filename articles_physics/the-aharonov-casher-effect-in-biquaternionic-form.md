@@ -13,7 +13,7 @@ which likewise depends on the path and the field but not on the speed at which t
 This article treats the AC effect in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The effect is standard and is reproduced exactly. What the framework contributes is the placement of the AC phase within the same algebraic structure as the geometric phases of spin:
 
 1. **The AC phase is a holonomy of the spinor.** It is the integral of a spin-space connection whose values are Hermitian elements of $\mathbb{M}_+$ built from the electric field and the spin operator. It is therefore the same kind of object as the Berry and Aharonov–Anandan phases of non-relativistic spin.
-2. **The coupling is a rest-frame magnetic field.** A magnetic dipole moving through an electric field sees, in its rest frame, the effective magnetic field $\vec B' = \vec B - \frac{1}{c^2}\vec v\times\vec E$; the AC phase is the first-order term in $v/c$ of the Zeeman coupling to that field. The derivation uses only the first-order rest-frame transformation, which is the non-relativistic approximation; the exact treatment belongs to the relativistic series.
+2. **The coupling is a rest-frame magnetic field.** A magnetic dipole moving through an electric field sees, in its rest frame, the effective magnetic field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$; the AC phase is the first-order term in $v/c$ of the Zeeman coupling to that field. The derivation uses only the first-order rest-frame transformation, which is the non-relativistic approximation; the exact treatment belongs to the relativistic series.
 3. **For a spin-1/2 the connection is an $SU(2)$ connection.** With $\vec\mu = \gamma\vec S$ and $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, the connection is proportional to the spin operator, and its holonomy is a rotor in $\mathbb{H}_{\mathbb{B}}$ together with a central phase — the same two faces as the geometric phase of non-relativistic spin.
 4. **The AC effect and the AB effect are electric–magnetic duals.** The AB phase is $\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ for a charge; the AC phase is $\frac{1}{\hbar c^2}\oint(\vec E\times\vec\mu)\cdot d\vec r$ for a dipole. The electric dipole analogue is the He–McKellar–Wilkens phase.
 5. **The phase is measurable and has been measured.** Neutron interferometry, atom interferometry and electron interferometry all exhibit the AC phase; orders of magnitude are given below.
@@ -32,10 +32,10 @@ The companion articles supply the pieces:
 A magnetic dipole $\vec\mu$ at rest in a magnetic field $\vec B$ has Zeeman energy $-\vec\mu\cdot\vec B$ and, if the field is constant and the dipole state is an eigenstate, its state carries the exponent phase $-\frac{1}{\hbar}\int E\,dt = +\frac{1}{\hbar}\int\vec\mu\cdot\vec B\,dt$. For a dipole **moving** through an electric field, the relevant field is the one in its own rest frame. To first order in $v/c$ the rest-frame magnetic field is
 
 $$
-\vec B' = \vec B - \frac{1}{c^2}\,\vec v\times\vec E,
+\vec B_2 = \vec B - \frac{1}{c^2}\,\vec v\times\vec E,
 $$
 
-the standard field transformation of a low-velocity Lorentz boost (the electric field in turn acquires a term $\vec E' = \vec E + \vec v\times\vec B$, which does not couple to a magnetic dipole at this order). The additional coupling from the motional term is therefore
+the standard field transformation of a low-velocity Lorentz boost (the electric field in turn acquires a term $\vec E_2 = \vec E + \vec v\times\vec B$, which does not couple to a magnetic dipole at this order). The additional coupling from the motional term is therefore
 
 $$
 \frac{1}{c^2}\,\vec\mu\cdot\left(\vec v\times\vec E\right)
@@ -88,17 +88,17 @@ $$
 \phi_{AC} = \left\langle \frac{\gamma}{2c^2}\oint\left(\vec E\times i\mathbf e\right)\cdot d\vec r\right\rangle,
 $$
 
-evaluated in the state, i.e. through the trace pairing $\mathrm{Tr}(\tilde{Ϛ}\,\mathcal{A}_{AC})$. For a spin eigenstate along a fixed axis the expectation is $\pm$ the corresponding scalar integral; for a superposition the two components accumulate opposite phases, and the holonomy is a full rotor rather than a central phase.
+evaluated in the state, i.e. through the plain form, read as the trace pairing, $\mathrm{Tr}(\tilde{Ϛ}\,\mathcal{A}_{AC})$. For a spin eigenstate along a fixed axis the expectation is $\pm$ the corresponding scalar integral; for a superposition the two components accumulate opposite phases, and the holonomy is a full rotor rather than a central phase.
 
 ### The Adiabatic Limit and the Solid Angle
 
-If the dipole is transported adiabatically, the spin follows the instantaneous eigenstate of the effective Zeeman Hamiltonian $-\vec\mu\cdot\vec B'$, and the acquired phase is the Berry phase of the effective-field loop. That phase is
+If the dipole is transported adiabatically, the spin follows the instantaneous eigenstate of the effective Zeeman Hamiltonian $-\vec\mu\cdot\vec B_2$, and the acquired phase is the Berry phase of the effective-field loop. That phase is
 
 $$
 \gamma_{\mathrm{geo}} = -\frac{1}{2}\,\Omega_{\mathrm{sgn}},
 $$
 
-one half the oriented solid angle traced by the direction of $\vec B'$ on the Bloch sphere. The AC integral above and this solid-angle expression agree in the adiabatic limit; the AC form is the more primitive one, since it does not require adiabaticity to be defined, while the solid-angle form exposes the geometry.
+one half the oriented solid angle traced by the direction of $\vec B_2$ on the Bloch sphere. The AC integral above and this solid-angle expression agree in the adiabatic limit; the AC form is the more primitive one, since it does not require adiabaticity to be defined, while the solid-angle form exposes the geometry.
 
 ### Why the Closed Integral Does Not Vanish
 
@@ -277,7 +277,7 @@ $$
 \phi_{AC} = \frac{1}{\hbar c^2}\oint_{\mathcal{C}}\left(\vec E\times\vec\mu\right)\cdot d\vec r,
 $$
 
-which follows from the rest-frame field $\vec B' = \vec B - \frac{1}{c^2}\vec v\times\vec E$ and the Zeeman coupling $-\vec\mu\cdot\vec B'$. The phase is geometric: it depends on the path and the field but not on the speed, and it reverses sign when the traversal is reversed.
+which follows from the rest-frame field $\vec B_2 = \vec B - \frac{1}{c^2}\vec v\times\vec E$ and the Zeeman coupling $-\vec\mu\cdot\vec B_2$. The phase is geometric: it depends on the path and the field but not on the speed, and it reverses sign when the traversal is reversed.
 
 In the biquaternion algebra the phase is the integral of the $\mathbb{M}_+$-valued connection
 
@@ -286,7 +286,7 @@ $$
 = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r
 $$
 
-for a spin-1/2 of magnetic moment $\vec\mu = \gamma\vec S$, with the phase given by the trace pairing in the state. In the adiabatic limit it reduces to the solid-angle phase $-\tfrac12\Omega_{\mathrm{sgn}}$ of non-relativistic spin.
+for a spin-1/2 of magnetic moment $\vec\mu = \gamma\vec S$, with the phase given by the plain form of the state, read as the trace pairing. In the adiabatic limit it reduces to the solid-angle phase $-\tfrac12\Omega_{\mathrm{sgn}}$ of non-relativistic spin.
 
 The AC effect is the electric dual of the Aharonov–Bohm effect and the magnetic-field dual of the He–McKellar–Wilkens effect: charge is dual to flux, the magnetic dipole to the electric field, and the electric dipole to the magnetic field. For a dipole encircling a line charge of density $\lambda$, the phase is $\phi_{AC} = -\lambda\mu_z/(\epsilon_0\hbar c^2)$ for counterclockwise traversal, independent of radius and speed. For a neutron over $0.1\,\mathrm{m}$ in a field of $10^{7}\,\mathrm{V/m}$ the magnitude of the phase is $\approx 1.0\times10^{-3}\,\mathrm{rad}$; for an electron it is $\approx 0.98\,\mathrm{rad}$. The phase has been measured by neutron, atom and electron interferometry, and the framework reproduces the standard result without modification.
 
@@ -301,7 +301,7 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 | $\mathbb{H}_{\mathbb{B}}$ | Unit real quaternions; the holonomy rotors |
 | $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin-1/2 operator |
 | $\vec\mu = \gamma\vec S$ | Magnetic dipole moment |
-| $\vec B' = \vec B - \tfrac{1}{c^2}\vec v\times\vec E$ | Rest-frame magnetic field (first order in $v/c$) |
+| $\vec B_2 = \vec B - \tfrac{1}{c^2}\vec v\times\vec E$ | Rest-frame magnetic field (first order in $v/c$) |
 | $\phi_{AC} = \tfrac{1}{\hbar c^2}\oint(\vec E\times\vec\mu)\cdot d\vec r$ | Aharonov–Casher phase |
 | $\mathcal{A}_{AC} = \tfrac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$ | AC connection one-form |
 | $\phi_{AB} = \tfrac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ | Aharonov–Bohm phase |

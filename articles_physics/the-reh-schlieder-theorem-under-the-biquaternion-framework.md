@@ -26,7 +26,7 @@ Let $\mathcal H$ be the Hilbert space of a Wightman quantum field theory, $\Omeg
 >
 > **Separating.** If $\tilde Q_3\in\mathcal A(O)$ and $\tilde Q_3\Omega=0$, then $\tilde Q_3=0$.
 
-Both halves hold for every open region $O$ whose causal complement has nonempty interior. Cyclicity and separating are dual: a vector is cyclic for a von Neumann algebra $M$ if and only if it is separating for the commutant $M'$, and vice versa. The theorem is therefore often stated as: the vacuum is cyclic for $\mathcal A(O)$ and separating for $\mathcal A(O)'$, or the reverse, depending on which algebra is being discussed.
+Both halves hold for every open region $O$ whose causal complement has nonempty interior. Cyclicity and separating are dual: a vector is cyclic for a von Neumann algebra $M$ if and only if it is separating for the commutant $M_{\mathrm c}$, and vice versa. The theorem is therefore often stated as: the vacuum is cyclic for $\mathcal A(O)$ and separating for $\mathcal A(O)'$, or the reverse, depending on which algebra is being discussed.
 
 The hypotheses are the standard Wightman ones: the fields are operator-valued distributions on a Hilbert space with a positive-energy unitary representation of the Poincaré group, $\Omega$ is the unique Poincaré-invariant vector, and locality holds — fields at spacelike separation commute or anticommute. The theorem is proved by combining locality with the spectrum condition, using the analyticity of the vacuum correlation functions.
 
@@ -46,7 +46,7 @@ Its Fourier transform is supported in the closed forward light cone, by the posi
 
 The theorem is not an isolated statement; its consequences are the reasons it is used.
 
-- **The vacuum is entangled across every region partition.** If $\Omega$ were a product $\Omega_1\otimes\Omega_2$ across a partition $O\,|\,O'$, then a local operator supported in $O$ annihilating $\Omega_1$ would annihilate $\Omega$, contradicting separating. Applied to the split of a region from its complement, the theorem is the field-theoretic statement that the vacuum carries entanglement across every boundary.
+- **The vacuum is entangled across every region partition.** If $\Omega$ were a product $\Omega_1\otimes\Omega_2$ across a partition $O\,|\,O_{\mathrm c}$, then a local operator supported in $O$ annihilating $\Omega_1$ would annihilate $\Omega$, contradicting separating. Applied to the split of a region from its complement, the theorem is the field-theoretic statement that the vacuum carries entanglement across every boundary.
 - **No local operator has the vacuum as an eigenstate.** If $\tilde Q_3\in\mathcal A(O)$ had $\tilde Q_3\Omega=\lambda\Omega$ with $\lambda\ne0$, then $(\tilde Q_3-\lambda)\Omega=0$ with $\tilde Q_3-\lambda\in\mathcal A(O)$, contradicting separating. No sharp local particle number, no sharp local charge, and no local projection onto the vacuum exists.
 - **Local operations cannot prepare the vacuum exactly.** By cyclicity, any vector can be approximated by $\tilde Q_3\Omega$ with $\tilde Q_3\in\mathcal A(O)$; by separating, the preparation cannot be exact for a proper region. There are states of arbitrarily large particle number in any bounded region that are not orthogonal to the vacuum.
 - **The hypothesis of modular theory.** A cyclic and separating vector is exactly what the Tomita–Takesaki theorem requires. The Reeh–Schlieder theorem therefore supplies the modular operator $\Delta$, the modular conjugation $J$, and the modular flow of a local algebra, and it is the entry point to the modular structure the companion articles treat. That the modular flow of a wedge is the boost is the Bisognano–Wichmann theorem, which is referred to here and not re-derived.
@@ -249,7 +249,7 @@ The separating property is recovered where the theorem actually lives: on the in
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathcal A(O)$ | Local algebra of the region $O$ |
 | $\Omega$ | Vacuum vector; cyclic and separating |
 | $\mathcal H_{\tilde{Ϛ}},\pi_{\tilde{Ϛ}},\Omega_{\tilde{Ϛ}}$ | GNS Hilbert space, representation, cyclic vector |

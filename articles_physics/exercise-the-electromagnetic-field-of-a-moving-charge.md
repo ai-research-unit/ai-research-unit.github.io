@@ -300,22 +300,22 @@ whose velocity is $-\vec v_b$. Equivalently, the rotor carries the lab to the fr
 
 **Solution (b).** The field strength is a rank-two object, not an element of $\mathbb{M}_-$; the four-vector rotor conjugation $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ is defined for four-vectors, and it does *not* give the correct field transformation. The correct law for a pure boost is the similarity
 $$
-\tilde{F}' = \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b}
+\tilde{F}_2 = \tilde U_{\mathrm b}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm b}
 = \tilde U_{\mathrm b}^{-1}\tilde{F}\,\tilde U_{\mathrm b} ,
 $$
-which is the biquaternion form of the standard boost of the electromagnetic field. To see the difference concretely, take the test field $\vec E = (0.3,-0.7,0.4)$, $\vec B = (0.5,0.2,-0.6)$ and a boost with $\vec v_b = 0.6c\,\vec u_z$. The standard boost gives $\vec E' = (0.225,-0.5,0.4)$, $\vec B' = (0.1,0.025,-0.6)$, and the similarity reproduces exactly that. The naive conjugation $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$ instead gives $\vec E = (0.3,-0.7,0.5)$ with a magnetic error of $0.4$, so it is not a transformation law for the field at all. More generally, the similarity reproduces the standard relations
+which is the biquaternion form of the standard boost of the electromagnetic field. To see the difference concretely, take the test field $\vec E = (0.3,-0.7,0.4)$, $\vec B = (0.5,0.2,-0.6)$ and a boost with $\vec v_b = 0.6c\,\vec u_z$. The standard boost gives $\vec E_2 = (0.225,-0.5,0.4)$, $\vec B_2 = (0.1,0.025,-0.6)$, and the similarity reproduces exactly that. The naive conjugation $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$ instead gives $\vec E = (0.3,-0.7,0.5)$ with a magnetic error of $0.4$, so it is not a transformation law for the field at all. More generally, the similarity reproduces the standard relations
 $$
-\vec E_\parallel' = \vec E_\parallel,
+\vec E_{\parallel,2} = \vec E_\parallel,
 \quad
-\vec E_\perp' = \gamma\left(\vec E_\perp + \vec v_b\times\vec B_\perp\right),
+\vec E_{\perp,2} = \gamma\left(\vec E_\perp + \vec v_b\times\vec B_\perp\right),
 \quad
-\vec B_\parallel' = \vec B_\parallel,
+\vec B_{\parallel,2} = \vec B_\parallel,
 \quad
-\vec B_\perp' = \gamma\left(\vec B_\perp - \frac{1}{c^2}\vec v_b\times\vec E_\perp\right)
+\vec B_{\perp,2} = \gamma\left(\vec B_\perp - \frac{1}{c^2}\vec v_b\times\vec E_\perp\right)
 $$
 to machine precision. Across six random boosts and random test fields, the similarity $\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ matched the standard formulas to $4\times10^{-16}$, while $\tilde U_{\mathrm L}\tilde{F}\tilde U_{\mathrm L}^{*}$ and its variants did not. The similarity preserves purity of the vector, $\mathrm{Sc}(\tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}) = \mathrm{Sc}(\tilde{F}) = 0$, as it must.
 
-**Solution (c).** Boosting the rest-frame Coulomb field of the charge to the lab frame with the similarity above reproduces the velocity field of Problem 3. In the rest frame the field at the corresponding event is $\vec E' = \frac{ϙ}{4\pi\epsilon}\vec R'/R'^3$ with $\vec R'$ the boosted separation, and transforming back gives
+**Solution (c).** Boosting the rest-frame Coulomb field of the charge to the lab frame with the similarity above reproduces the velocity field of Problem 3. In the rest frame the field at the corresponding event is $\vec E_2 = \frac{ϙ}{4\pi\epsilon}\vec R_2/R_2^3$ with $\vec R_2$ the boosted separation, and transforming back gives
 $$
 \vec E_v = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\left(\vec u_R-\vec\beta\right)}{\kappa^3 R^2}
 $$
@@ -353,7 +353,7 @@ again with $|D-R\kappa| = 0$ and the field identity holding to $7\times10^{-12}$
 
 **2. The present-position fallacy.** Compute the field of a uniformly moving charge using the *present* position $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z$ in place of the retarded position, and show that the result differs from $\vec E_v$. Identify which of the two falloff laws fails and by how much. This makes quantitative why the field point and the source point must be distinguished.
 
-**3. The transformation law from the algebra.** Derive $\tilde{F}' = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ directly from the biquaternion representation of the field strength as a rank-two object, rather than by comparison with the standard boost formulas. The Lorentz-transformation article's open question on higher-rank tensors is the parent of this problem.
+**3. The transformation law from the algebra.** Derive $\tilde{F}_2 = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ directly from the biquaternion representation of the field strength as a rank-two object, rather than by comparison with the standard boost formulas. The Lorentz-transformation article's open question on higher-rank tensors is the parent of this problem.
 
 **4. The caustic and the superluminal case.** Determine the locus $\kappa = 0$ for a specified accelerated worldline, show that the retarded-time equation has a double root there, and describe what a point charge's field does as it is approached. Then ask what, if anything, the biquaternionic form can say about a putative superluminal source.
 
@@ -407,7 +407,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |
 | $\tilde U_{\mathrm b} = \cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u$ | Boost rotor; carries lab to the frame moving with $+\vec v_b$ |
-| $\tilde{F}' = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ | Boost transformation of the field (similarity, not conjugation) |
+| $\tilde{F}_2 = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L}$ | Boost transformation of the field (similarity, not conjugation) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 

@@ -18,7 +18,7 @@ This article asks what the biquaternion framework contributes to that statement.
 
 The article proceeds as follows. The next section reduces the framework to the two-dimensional arena and fixes the two-dimensional Clifford data. A section states the abelian bosonization dictionary in the framework's notation. A section identifies the module–centre correspondence and states the counting it implies. A section shows how the framework's mass term and its central phase bosonize, and a section treats the anomaly and the central-charge matching. A section states the non-abelian result and its status. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles unless a reduction is stated. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{M}_-=i\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The trace pairing is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Tr}(e_t)=2$. The series d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$. In the two-dimensional reduction the Clifford generators are $\gamma^0,\gamma^1$ with $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_2$ and the level-3 tool metric $g=\mathrm{diag}(+1,-1)$, so that $(\gamma^0)^2=+I_2$ and $(\gamma^1)^2=-I_2$; the chirality operator is $\gamma^5=\gamma^0\gamma^1$ and $(\gamma^5)^2=+I_2$; the antisymmetric symbol is $\epsilon^{01}=+1$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, *The Trace Anomaly in Biquaternionic Form*, and *The Theta Vacuum in Biquaternionic Form*.
+**Conventions.** We use those of the companion articles unless a reduction is stated. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{M}_-=i\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The trace is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, the $2\times2$ reading of the plain form, with $\mathrm{Tr}(e_t)=2$. The series d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$. In the two-dimensional reduction the Clifford generators are $\gamma^0,\gamma^1$ with $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_2$ and the level-3 tool metric $g=\mathrm{diag}(+1,-1)$, so that $(\gamma^0)^2=+I_2$ and $(\gamma^1)^2=-I_2$; the chirality operator is $\gamma^5=\gamma^0\gamma^1$ and $(\gamma^5)^2=+I_2$; the antisymmetric symbol is $\epsilon^{01}=+1$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, *The Trace Anomaly in Biquaternionic Form*, and *The Theta Vacuum in Biquaternionic Form*.
 
 ## The Two-Dimensional Arena
 
@@ -72,7 +72,7 @@ $$
 \qquad
 \bar\psi\psi = \mathrm{Sc}\big(\tilde\Psi^{\natural}\tilde\Psi\big),
 $$
-where the trace pairing extracts the central scalar. The correspondence is therefore a map
+where the plain form, read as the trace pairing, extracts the central scalar. The correspondence is therefore a map
 $$
 \text{module bilinear}\;\longrightarrow\;\text{central field} ,
 $$
@@ -241,7 +241,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; home of the boson field |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | Spinor module; home of the Dirac field |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; extracts central scalars from bilinears |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; extracts central scalars from bilinears |
 | $g=\mathrm{diag}(+1,-1)$ | Two-dimensional level-3 Clifford metric |
 | $\gamma^5=\gamma^0\gamma^1$ | Chirality operator; $(\gamma^5)^2=+I_2$ in $d=2$ |
 | $\tilde\Pi_{L,R}=\tfrac12(1\pm\gamma^5)$ | Chiral projectors; real in $d=2$ |

@@ -4,7 +4,7 @@
 
 A **coarse-graining** is a description that discards fine-grained distinctions. The state of a physical system is replaced by a record of which cell of a partition it occupies, and the information the record carries is measured by the entropy of the induced cell distribution. Coarse-graining is the operation that makes entropy increase: the fine-grained descriptions of classical mechanics are conserved by the reversible flow, while the coarse-grained ones are not, and the difference between the two is the content of the second law.
 
-This article develops the coarse-grained entropy functional of the informational sector $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The two ingredients are both already in the framework. The **states** of the sector are the positive trace-one elements $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ of $\mathbb{M}_+$, the Bloch ball; its **pure states** are the idempotents, and they sit on the null cone of the biquaternion norm, which is the zero-divisor cone of the algebra. The **coarse-grainings** are the conditional expectations of the sector: the completely positive, trace-preserving, idempotent maps onto a commutative subalgebra, of which the fully dephasing channel of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* is the canonical example. The entropy functional is the algebra's own logarithm applied to a state and paired with it through the trace:
+This article develops the coarse-grained entropy functional of the informational sector $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The two ingredients are both already in the framework. The **states** of the sector are the positive elements $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ of $\mathbb{M}_+$, normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image), the Bloch ball; its **pure states** are the idempotents, and they sit on the null cone of the biquaternion norm, which is the zero-divisor cone of the algebra. The **coarse-grainings** are the conditional expectations of the sector: the completely positive, trace-preserving, idempotent maps onto a commutative subalgebra, of which the fully dephasing channel of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* is the canonical example. The entropy functional is the algebra's own logarithm applied to a state and paired with it through the trace:
 
 $$
 \mathcal{S}(\tilde{Ϛ}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}\log\tilde{Ϛ}\right).
@@ -22,7 +22,7 @@ Two functionals appear below and must be kept apart, because the whole subject t
 
 The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{Ϛ}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm* develops them, and they are not developed here. Where the quantum interpretation is used, it is used as a bound, and it is identified as such.
 
-The probabilities the functional is built from are themselves trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ})$, and the companion article *The Born Rule as a Trace Formula — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
+The probabilities the functional is built from are themselves readings of the plain form, namely trace pairings. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ})$, and the companion article *The Born Rule from the Plain Form — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{M}_-$ and the Hermitian informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, normalised by $\mathrm{Tr}(e_t) = 2$; and the trace formula for a state and an observable is $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$.
 
@@ -298,13 +298,13 @@ The restriction to unital maps matters and is worth naming. A trace-preserving c
 The dephasing channel of the companion article *Decoherence as Idempotent Projection* interpolates between the identity and the coarse-graining. At strength $p \in [0,1]$ along $\vec u$ it acts by
 
 $$
-\vec r \longmapsto \vec r' = (1-p)\,\vec r + p\left(\vec u\cdot\vec r\right)\vec u,
+\vec r \longmapsto \vec r_{\mathrm{cg}} = (1-p)\,\vec r + p\left(\vec u\cdot\vec r\right)\vec u,
 $$
 
 so that
 
 $$
-|\vec r'|^2 = \left(\vec u\cdot\vec r\right)^2 + (1-p)^2\left(|\vec r|^2 - \left(\vec u\cdot\vec r\right)^2\right) \le |\vec r|^2 ,
+|\vec r_{\mathrm{cg}}|^2 = \left(\vec u\cdot\vec r\right)^2 + (1-p)^2\left(|\vec r|^2 - \left(\vec u\cdot\vec r\right)^2\right) \le |\vec r|^2 ,
 $$
 
 with equality only at $p=0$, or for states already on the axis. The entropy therefore increases monotonically with $p$ from $\mathcal{S}(\tilde{Ϛ})$ to $h(|\vec u\cdot\vec r|)$, and it is maximised over the axis by the choice $\vec u \perp \vec r$, which discards the state entirely and returns $\log 2$.

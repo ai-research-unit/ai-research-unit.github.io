@@ -216,28 +216,28 @@ and the supplementary laws are $\left(\frac{-1}{p}\right) = (-1)^{(p-1)/2}$ and 
 **Theorem (Hensel).** Let $p$ be prime, $f \in \mathbb{Z}[x]$ and $r \in \mathbb{Z}$ with
 
 $$
-f(r) \equiv 0 \pmod p, \qquad f'(r) \not\equiv 0 \pmod p .
+f(r) \equiv 0 \pmod p, \qquad \frac{df}{dx}(r) \not\equiv 0 \pmod p .
 $$
 
 Then for every $k \geq 1$ there is a unique $r_k \bmod p^k$ with $r_k \equiv r \pmod p$ and $f(r_k) \equiv 0 \pmod{p^k}$, and it is computed by the Newton iteration
 
 $$
-r_{k+1} = r_k - f(r_k)\, f'(r)^{-1} \pmod{p^{k+1}} .
+r_{k+1} = r_k - f(r_k)\, \frac{df}{dx}(r)^{-1} \pmod{p^{k+1}} .
 $$
 
 **Proof.** Suppose $r_k$ is a solution modulo $p^k$ and write $r_{k+1} = r_k + t p^k$. The Taylor expansion of the polynomial gives
 
 $$
-f(r_k + t p^k) \equiv f(r_k) + t p^k f'(r_k) \pmod{p^{2k}},
+f(r_k + t p^k) \equiv f(r_k) + t p^k \frac{df}{dx}(r_k) \pmod{p^{2k}},
 $$
 
-and since $2k \geq k+1$, the congruence modulo $p^{k+1}$ is $f(r_k) + t p^k f'(r_k) \equiv 0$. Writing $f(r_k) = p^k s$ and using $f'(r_k) \equiv f'(r) \not\equiv 0 \pmod p$, the congruence becomes $s + t f'(r) \equiv 0 \pmod p$, which has the unique solution $t \equiv -s f'(r)^{-1} \pmod p$. The induction begins at $k = 1$ with $r_1 = r$.
+and since $2k \geq k+1$, the congruence modulo $p^{k+1}$ is $f(r_k) + t p^k \frac{df}{dx}(r_k) \equiv 0$. Writing $f(r_k) = p^k s$ and using $\frac{df}{dx}(r_k) \equiv \frac{df}{dx}(r) \not\equiv 0 \pmod p$, the congruence becomes $s + t \frac{df}{dx}(r) \equiv 0 \pmod p$, which has the unique solution $t \equiv -s \frac{df}{dx}(r)^{-1} \pmod p$. The induction begins at $k = 1$ with $r_1 = r$.
 
 **Corollary.** Let $p$ be odd and let $a$ be a quadratic residue modulo $p$ with $p \nmid a$. Then $m^2 \equiv a \pmod{p^k}$ has exactly two solutions for every $k$, obtained by lifting the two roots modulo $p$; more generally a simple root of a polynomial congruence lifts uniquely to every prime power.
 
-**Proof.** For $f = m^2 - a$ and a root $r$ with $r^2 \equiv a \pmod p$ one has $f'(r) = 2r \not\equiv 0 \pmod p$ because $p$ is odd and $a \not\equiv 0$, so Hensel's lemma applies to each of the two roots $\pm r$; the two lifted solutions are distinct modulo $p$ and hence modulo every $p^k$.
+**Proof.** For $f = m^2 - a$ and a root $r$ with $r^2 \equiv a \pmod p$ one has $\frac{df}{dx}(r) = 2r \not\equiv 0 \pmod p$ because $p$ is odd and $a \not\equiv 0$, so Hensel's lemma applies to each of the two roots $\pm r$; the two lifted solutions are distinct modulo $p$ and hence modulo every $p^k$.
 
-**Example.** The lemma is sharp: for $f = m^2 - 1$ and $p = 2$ one has $f'(r) = 2r \equiv 0 \pmod 2$ for every $r$, and indeed $m^2 \equiv 1 \pmod{2^k}$ has one solution for $k=1$, two for $k=2$ and four for $k \geq 3$, namely $\pm 1$ and $\pm(1 + 2^{k-1})$. For $f = m^2$ the only root modulo $p$ is multiple, and the number of solutions modulo $p^k$ is $p^{\lfloor k/2\rfloor}$. Thus Hensel's lemma asserts exactly that the *simple* roots, and only they, lift uniquely.
+**Example.** The lemma is sharp: for $f = m^2 - 1$ and $p = 2$ one has $\frac{df}{dx}(r) = 2r \equiv 0 \pmod 2$ for every $r$, and indeed $m^2 \equiv 1 \pmod{2^k}$ has one solution for $k=1$, two for $k=2$ and four for $k \geq 3$, namely $\pm 1$ and $\pm(1 + 2^{k-1})$. For $f = m^2$ the only root modulo $p$ is multiple, and the number of solutions modulo $p^k$ is $p^{\lfloor k/2\rfloor}$. Thus Hensel's lemma asserts exactly that the *simple* roots, and only they, lift uniquely.
 
 ### The $p$-adic Interpretation
 

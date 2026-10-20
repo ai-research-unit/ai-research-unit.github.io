@@ -93,10 +93,10 @@ The first is negative definite of signature $(0,4)$, the second is the interval 
 Let $\tilde U\in\mathbb{B}$ have unit quaternionic norm, $N(\tilde U)=\tilde U\tilde U^{\natural}=e_t$. The map
 
 $$
-\tilde Q\longmapsto\tilde Q'=\tilde U\tilde Q\tilde U^{*}
+\tilde Q\longmapsto\tilde Q_2=\tilde U\tilde Q\tilde U^{*}
 $$
 
-carries $\mathbb{M}_-$ into itself and preserves the norm, $N(\tilde Q')=N(\tilde Q)$. It is a group action, $(\tilde U_2\tilde U_1)\tilde Q(\tilde U_2\tilde U_1)^{*}=\tilde U_2(\tilde U_1\tilde Q\tilde U_1^{*})\tilde U_2^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A pure boost is a Hermitian unit-norm element,
+carries $\mathbb{M}_-$ into itself and preserves the norm, $N(\tilde Q_2)=N(\tilde Q)$. It is a group action, $(\tilde U_2\tilde U_1)\tilde Q(\tilde U_2\tilde U_1)^{*}=\tilde U_2(\tilde U_1\tilde Q\tilde U_1^{*})\tilde U_2^{*}$. The unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A pure boost is a Hermitian unit-norm element,
 
 $$
 \tilde U_{\mathrm L}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b},
@@ -229,10 +229,10 @@ The action preserves the norm when the acting element has unit norm, and then it
 **A boost of a rest position.** Let $\tilde U=\cosh(\psi/2)+i\sinh(\psi/2)\vec e_x$ and let $\tilde Q=i c\tau\,e_t$ be a position at rest. Then
 
 $$
-\tilde Q'=\tilde U\tilde Q\tilde U^{*}=i c\tau\cosh\psi\,e_t-c\tau\sinh\psi\,\vec e_x,
+\tilde Q_2=\tilde U\tilde Q\tilde U^{*}=i c\tau\cosh\psi\,e_t-c\tau\sinh\psi\,\vec e_x,
 $$
 
-the standard boost $t'=\tau\cosh\psi$, $x'=-\gamma v\tau=-c\tau\sinh\psi$, and $N(\tilde Q')=-c^2\tau^2$ is unchanged.
+the standard boost $t_2=\tau\cosh\psi$, $x_2=-\gamma v\tau=-c\tau\sinh\psi$, and $N(\tilde Q_2)=-c^2\tau^2$ is unchanged.
 
 **A mass shell.** For $\tilde P=i(E/c)e_t+\vec p$, the norm is $N(\tilde P)=-E^2/c^2+\lvert\vec p\rvert^2=-m^2c^2$, the mass-shell relation. A massless particle has $E=\lvert\vec p\rvert c$ and lies on the cone.
 
@@ -265,7 +265,7 @@ The article interprets the kinematics of the sector: the events, the four-vector
 | $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | the inverse, defined off the cone |
 | $\tilde U_{\mathrm L}$ | a Lorentz rotor, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$ |
-| $\tilde Q'=\tilde U\tilde Q\tilde U^{*}$ | the Lorentz action by rotor conjugation |
+| $\tilde Q_2=\tilde U\tilde Q\tilde U^{*}$ | the Lorentz action by rotor conjugation |
 | $[\tilde Q_1,\tilde Q_2]=2\vec q\times\vec r$ | the commutator on the sector |
 | $\langle\cdot,\cdot\rangle_{\natural}$ | the quaternionic form, the interval |
 | $\langle\cdot,\cdot\rangle_{*}$ | the Hermitian form, the Euclidean square |

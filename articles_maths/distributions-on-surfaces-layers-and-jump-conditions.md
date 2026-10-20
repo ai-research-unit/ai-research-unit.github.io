@@ -255,7 +255,7 @@ where the displayed first term is the double layer. If $n$ is non-characteristic
 
 *Proof.* Apply $\partial^2/\partial x_j\partial x_\partial/\partial x_k$ to the jump formula and contract with $a_{jk}$. The double layer $\partial/\partial n\delta_S$ arises from the second derivative of the single layer, and its coefficient is $\sum_{jk}a_{jk}n_jn_k[u] = \sigma_P(n)[u]$; the single layer $\delta_S$ collects the first derivatives of $u$ and the lower-order coefficients.
 
-The wave operator $\Box = \partial^2/\partial t^2 - c^2\Delta$ on $\mathbb{R} \times \mathbb{R}^3$ has $\sigma_\Box(\nu) = \nu_t^2 - c^2|\nu|^2$, whose zero set is the light cone $|\nu_t| = c|\nu|$. A surface of constant phase is characteristic exactly when it moves at the speed $c$. On a non-characteristic surface a piecewise solution is continuous, with its normal derivative fixed by the source; on a characteristic surface the continuity is not forced at leading order, and the jumps are the waves that travel on the cone. The elliptic Laplacian has $\sigma_\Delta(\nu) = |\nu|^2 \neq 0$ for every real $\nu \neq 0$, so every surface is non-characteristic and both $[u]$ and $[\partial/\partial n u]$ vanish for a continuous source; the example of the previous section is the flat-coordinate form of this statement.
+The wave operator $\Box = \partial^2/\partial t^2 - c^2\Delta$ on $\mathbb{R} \times \mathbb{R}^3$ has $\sigma_\Box(\nu) = \nu_t^2 - c^2|\nu|^2$, whose zero set is the null cone $|\nu_t| = c|\nu|$. A surface of constant phase is characteristic exactly when it moves at the speed $c$. On a non-characteristic surface a piecewise solution is continuous, with its normal derivative fixed by the source; on a characteristic surface the continuity is not forced at leading order, and the jumps are the waves that travel on the cone. The elliptic Laplacian has $\sigma_\Delta(\nu) = |\nu|^2 \neq 0$ for every real $\nu \neq 0$, so every surface is non-characteristic and both $[u]$ and $[\partial/\partial n u]$ vanish for a continuous source; the example of the previous section is the flat-coordinate form of this statement.
 
 ### The Rankine–Hugoniot Condition
 
@@ -268,7 +268,7 @@ $$
 [u]\,\nu_t + \sum_{j=1}^{n} [f_j(u)]\,\nu_{x_j} = 0 .
 $$
 
-*Proof.* The equation is the divergence of the vector field $(u, f(u))$. By the jump formula for the divergence in $\mathbb{R}^{n+1}$, applied in the spacetime variables, the singular part of the divergence is $[u]\nu_t\delta_S + \sum_j[f_j(u)]\nu_{x_j}\delta_S$, and it must vanish.
+*Proof.* The equation is the divergence of the vector field $(u, f(u))$. By the jump formula for the divergence in $\mathbb{R}^{n+1}$, applied in the variables of the space, the singular part of the divergence is $[u]\nu_t\delta_S + \sum_j[f_j(u)]\nu_{x_j}\delta_S$, and it must vanish.
 
 For a plane shock $x = st$ in one space dimension, the normal direction is $(-s,1)$ in $(x,t)$ up to scale, and the condition becomes
 $$
@@ -314,7 +314,7 @@ A conservation law with a nonlinear flux propagates a discontinuity of its solut
 
 ### First-Order Systems of Mathematical Physics
 
-The first-order systems of mathematical physics — the Maxwell system, the equations of elasticity, the linearised Euler equations — are all of the form $\sum_j a_j\partial/\partial x_j u + bu = f$ with a principal symbol that is symmetric or antisymmetric in a suitable inner product, and their jump conditions are the kernel condition $\sigma_P(n)[u] = 0$ together with the surface conservation law. For the Maxwell system the principal symbol in the normal direction is singular on the light cone, and its kernel — one complex dimension, that is two real dimensions — is spanned by the two transverse polarisations of the wave front: the count of polarisations is the dimension of the kernel, and it is computed from the principal symbol alone. The electromagnetic reading of this calculus, with the fields, the sources and the energy balance in the biquaternion formulation, is the subject of the electromagnetism articles of the corpus; the algebra of the layers is that developed here.
+The first-order systems of mathematical physics — the Maxwell system, the equations of elasticity, the linearised Euler equations — are all of the form $\sum_j a_j\partial/\partial x_j u + bu = f$ with a principal symbol that is symmetric or antisymmetric in a suitable inner product, and their jump conditions are the kernel condition $\sigma_P(n)[u] = 0$ together with the surface conservation law. For the Maxwell system the principal symbol in the normal direction is singular on the null cone, and its kernel — one complex dimension, that is two real dimensions — is spanned by the two transverse polarisations of the wave front: the count of polarisations is the dimension of the kernel, and it is computed from the principal symbol alone. The electromagnetic reading of this calculus, with the fields, the sources and the energy balance in the biquaternion formulation, is the subject of the electromagnetism articles of the corpus; the algebra of the layers is that developed here.
 
 ## Biquaternion-Valued Distributions
 
@@ -334,7 +334,7 @@ where the integrand is the algebra's scalar product, so the density may be any b
 
 **The jump formula.** For a biquaternion field with a finite gap on a hypersurface $S$, the distributional derivative carries the gap times the scalar normal,
 $$
-\partial/\partial x_j \hat F = \partial/\partial x_j F + n_j\,[F]_S\,\delta_S , \qquad j = ict, x, y, z ,
+\partial/\partial x_j \hat F = \partial/\partial x_j F + n_j\,[F]_S\,\delta_S , \qquad j = t, x, y, z ,
 $$
 which is the componentwise jump formula with the same normal $n_j$ multiplying the biquaternion gap $[F]_S$. Because the multiplication is by a scalar, no order of factors is in question, and the identity is the scalar theorem of the section *The Jump Formula* applied to the four components at once.
 

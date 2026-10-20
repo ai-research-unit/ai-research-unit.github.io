@@ -40,7 +40,7 @@ together with the reflection $z \mapsto -\bar z$. The orientation-preserving iso
 **Proof sketch.** The Christoffel symbols of $g$ give $\Gamma^1_{11} = \Gamma^1_{22} = \Gamma^2_{12} = 0$, $\Gamma^1_{12} = -1/y$, $\Gamma^2_{11} = 1/y$, $\Gamma^2_{22} = -1/y$, and the geodesic equation reduces to the statement that the curves are the lines and semicircles orthogonal to the boundary; the curvature is computed from the second derivatives of the metric and is $-1$. A Möbius transformation with real coefficients preserves the upper half-plane, and a direct computation gives
 
 $$
-\frac{|f'(z)|}{\operatorname{Im} f(z)} = \frac{1}{\operatorname{Im} z},
+\frac{|\frac{df}{dz}|}{\operatorname{Im} f(z)} = \frac{1}{\operatorname{Im} z},
 $$
 
 which is exactly the conformality factor of $g$, so $f^*g = g$; the real Möbius transformations and the reflection generate all the isometries, since an isometry is determined by the image of a frame.

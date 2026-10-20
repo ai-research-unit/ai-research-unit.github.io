@@ -35,7 +35,7 @@ and the equation $\tilde\Xi^2=e_t$ separates into $2\Xi_t\vec\Xi=0$ and $\Xi_t^2
 | --- | --- | --- | --- |
 | trivial | $\pm e_t$ | two isolated | yes, central |
 | purely imaginary | $i\tilde\xi$, $\tilde\xi$ a real pure quaternion of square $-e_t$ | two | yes |
-| non-trivial | $\vec\xi+i\vec\xi'$, $\vec\xi\neq0$, with $\xi^2-\xi'^2=-1$ and $\vec\xi\cdot\vec\xi'=0$ | four | no |
+| non-trivial | $\vec\xi+i\vec\xi'$, $\vec\xi\neq0$, with $\xi^2-{\xi'}^2=-1$ and $\vec\xi\cdot\vec\xi'=0$ | four | no |
 
 Three facts about the table carry the whole reading. First, **the Hermitian roots are exactly the trivial roots and the purely imaginary family**: a Hermitian element has the form $h_te_t+i\vec h$ with $h_t$ real and $\vec h$ real pure, its square is $(h_t^2+\lvert\vec h\rvert^2)e_t+2h_ti\vec h$, and the vector part vanishes only at $h_t=0$ or $\vec h=0$. Second, **every root is a unit**, with inverse itself, so no root is a zero divisor. Third, **the non-trivial roots are not Hermitian**, so the table already separates the observables from the rest.
 
@@ -99,9 +99,9 @@ $$
 
 The observable, its two eigenvalues and its two states are one object and its two projections. The physical reading is that a **two-outcome measurement** is a root of $+1$: the root is the observable, the pair is the two outcomes, and the eigenvalues are the two signs.
 
-The Born pairing completes the sentence. The probability of the outcome $+$ in the state $\tilde\Pi$ is the trace pairing $\operatorname{Tr}(\tilde\Pi\tilde\Pi_+)=2\operatorname{Sc}(\tilde\Pi\tilde\Pi_+)$, and the two probabilities sum to one because the pair is complete. The formula is the one of *The Informational Sector: States, Observables and Probability* and *The Born Rule as a Trace Formula — Derivation and Comparison*; this article only locates it in the root–idempotent pair. The probability is not derived here, and no frequency is identified with it.
+The Born pairing completes the sentence. The probability of the outcome $+$ in the state $\tilde\Pi$ is the normalised plain form, computed as the trace pairing $\operatorname{Tr}(\tilde\Pi\tilde\Pi_+)=2\operatorname{Sc}(\tilde\Pi\tilde\Pi_+)$, and the two probabilities sum to one because the pair is complete. The formula is the one of *The Informational Sector: States, Observables and Probability* and *The Born Rule from the Plain Form — Derivation and Comparison*; this article only locates it in the root–idempotent pair. The probability is not derived here, and no frequency is identified with it.
 
-The boundary is again immediate. **Not every idempotent is a state.** The non-trivial roots produce a four-real-parameter family of idempotents that lie in no remarkable subspace and are not Hermitian; they are not orthogonal projections and are not states in the sense of the informational sector. The identification of idempotents with states is confined to the Hermitian ones. The mixed states, which are not idempotent at all, are the interior of the Bloch ball and belong to *The Bloch Ball as the Trace-One Slice of the Future Light Cone*. The state as an idempotent of the algebra, and the process as the multiplication, are *The Operators: One-Sided, Two-Sided, Sandwich*.
+The boundary is again immediate. **Not every idempotent is a state.** The non-trivial roots produce a four-real-parameter family of idempotents that lie in no remarkable subspace and are not Hermitian; they are not orthogonal projections and are not states in the sense of the informational sector. The identification of idempotents with states is confined to the Hermitian ones. The mixed states, which are not idempotent at all, are the interior of the Bloch ball and belong to *The Bloch Ball as the Normalised Slice of the Future Light Cone*. The state as an idempotent of the algebra, and the process as the multiplication, are *The Operators: One-Sided, Two-Sided, Sandwich*.
 
 ## The Roots of Minus One
 
@@ -140,7 +140,7 @@ The pattern is the one the article has used. **The composition band carries the 
 
 - **Not every observable is a root of $+1$.** The identification is with the involutive observables. A general Hermitian element has arbitrary eigenvalues; it is not itself an involution, although its spectral projections are the halving pair of the root along its axis.
 - **Not every idempotent is a state.** Only the Hermitian idempotents are orthogonal projections and pure states. The four-parameter family of non-Hermitian idempotents is not a state family.
-- **The Born rule is not derived here.** The trace pairing is cited from its owners; the article locates it between the root and the state and adds no derivation.
+- **The Born rule is not derived here.** The plain form and its trace reading are cited from their owners; the article locates it between the root and the state and adds no derivation.
 - **No preferred direction and no preferred state.** The family is the whole sphere, and no algebraic fact selects a point of it. A preferred axis would be an added structure.
 - **No dynamics and no collapse.** The root and its pair are a kinematic identification. Nothing here says how a state evolves or how one outcome is selected.
 - **Not every involution is an algebraic root.** The real structure $\flat=-{}^{*}$ is an antilinear involution whose eigenspaces are the two sectors; being antilinear it is not an element of the algebra, so it is a superselection structure and not a root of $+1$.

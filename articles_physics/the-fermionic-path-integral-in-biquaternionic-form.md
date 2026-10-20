@@ -259,7 +259,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | Symbol | Meaning |
 |---|---|
 | $S=\int d^4x\,\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ | Biquaternion Dirac action (bilinear) |
-| $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ | Action as a trace pairing |
+| $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ | Action as a trace reading of the plain form |
 | $\exp(iS)$ | Path-integral phase; central, in $\mathbb{C}_{\mathbb{B}}$, exponent along $ict$ |
 | $\eta,\bar\eta$ | Odd (Grassmann) sources |
 | $\mathcal{D}\bar\psi\mathcal{D}\psi=\prod_x\prod_ad\bar\psi_a(x)d\psi_a(x)$ | Berezin measure |

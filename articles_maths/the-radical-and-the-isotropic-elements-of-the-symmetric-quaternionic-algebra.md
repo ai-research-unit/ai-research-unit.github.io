@@ -181,7 +181,7 @@ cone, cut by the remarkable subspaces into the pieces recorded in *Remarkable Su
 Symmetric Quaternionic Algebra of Biquaternions*. On the two definite rows $\mathbb{H}_{\mathbb{B}}$ and
 $i\mathbb{H}_{\mathbb{B}}$ the norm is strictly signed and the cone meets the row only at the origin; on the
 vector subspace the cone is the pure zero-divisor cone; on the two Hermitian subspaces the cone is their real
-light cone.
+null cone.
 
 **Proposition (the operation kills nothing on the definite rows).** No nonzero element of $\mathbb{H}_{\mathbb{B}}$
 or of $i\mathbb{H}_{\mathbb{B}}$ is isotropic for $\star$.

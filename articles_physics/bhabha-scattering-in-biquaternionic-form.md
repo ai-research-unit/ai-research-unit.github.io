@@ -12,24 +12,24 @@ The article is organised as follows. The next section sets up the kinematics and
 
 ### Kinematics
 
-Let $k$ and $k'$ be the four-momenta of the incoming and outgoing **positron**, and $p$ and $p'$ those of the incoming and outgoing **electron**, so that the process is $e^+(k)\,e^-(p)\to e^+(k')\,e^-(p')$. The Mandelstam variables are
+Let $k$ and $k_2$ be the four-momenta of the incoming and outgoing **positron**, and $p$ and $p_2$ those of the incoming and outgoing **electron**, so that the process is $e^+(k)\,e^-(p)\to e^+(k_2)\,e^-(p_2)$. The Mandelstam variables are
 
 $$
-s = (k+p)^2 = (k'+p')^2,
+s = (k+p)^2 = (k_2+p_2)^2,
 \qquad
-t = (k-k')^2 = (p-p')^2,
+t = (k-k_2)^2 = (p-p_2)^2,
 \qquad
-w = (k-p')^2 = (p-k')^2 ,
+w = (k-p_2)^2 = (p-k_2)^2 ,
 $$
 
 with the high-energy approximations
 
 $$
-s = (k+p)^2 \approx 2k\cdot p \approx 2k'\cdot p',
+s = (k+p)^2 \approx 2k\cdot p \approx 2k_2\cdot p_2,
 \quad
-t = (k-k')^2 \approx -2k\cdot k' \approx -2p\cdot p',
+t = (k-k_2)^2 \approx -2k\cdot k_2 \approx -2p\cdot p_2,
 \quad
-w = (k-p')^2 \approx -2k\cdot p' \approx -2k'\cdot p .
+w = (k-p_2)^2 \approx -2k\cdot p_2 \approx -2k_2\cdot p .
 $$
 
 Here $s$ is the annihilation-channel invariant, $t$ the momentum-transfer invariant, and $w$ the crossed invariant; the variable names are the same as in Møller scattering, but the particle assignments differ.
@@ -39,11 +39,11 @@ Here $s$ is the annihilation-channel invariant, $t$ the momentum-transfer invari
 The two tree-level diagrams contribute
 
 $$
-\mathcal M = -e^2\left(\bar v_k\gamma^\mu v_{k'}\right)\frac{1}{(k-k')^2}\left(\bar w_{p'}\gamma_\mu w_p\right)
-\;+\; e^2\left(\bar v_k\gamma^\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p'}\gamma_\nu v_{k'}\right),
+\mathcal M = -e^2\left(\bar v_k\gamma^\mu v_{k_2}\right)\frac{1}{(k-k_2)^2}\left(\bar w_{p_2}\gamma_\mu w_p\right)
+\;+\; e^2\left(\bar v_k\gamma^\nu w_p\right)\frac{1}{(k+p)^2}\left(\bar w_{p_2}\gamma_\nu v_{k_2}\right),
 $$
 
-the first (scattering) with coefficient $-e^2$ and denominator $t = (k-k')^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. **The relative sign between the two diagrams is negative**, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.
+the first (scattering) with coefficient $-e^2$ and denominator $t = (k-k_2)^2$, and the second (annihilation) with coefficient $+e^2$ and denominator $s = (k+p)^2$. The two spinor contractions have different structures: the scattering term pairs a positron current with an electron current through a spacelike photon, while the annihilation term pairs the electron–positron pair into a single current through a timelike photon. **The relative sign between the two diagrams is negative**, exactly as in Møller scattering, and for the same reason: it is the sign of the exchange of identical fermions between the two diagrams.
 
 ## The Cross Section
 
@@ -114,8 +114,8 @@ In the biquaternion framework the amplitude is the contraction of material-secto
 | Symbol | Meaning |
 |---|---|
 | $e^+e^-\to e^+e^-$ | Bhabha scattering |
-| $k,k'$ | Incoming, outgoing positron four-momenta |
-| $p,p'$ | Incoming, outgoing electron four-momenta |
+| $k,k_2$ | Incoming, outgoing positron four-momenta |
+| $p,p_2$ | Incoming, outgoing electron four-momenta |
 | $s,t,w$ | Mandelstam variables; $s$ annihilation, $t$ transfer, $w$ crossed |
 | $t$-channel | Scattering diagram, coefficient $-e^2$ |
 | $s$-channel | Annihilation diagram, coefficient $+e^2$ |

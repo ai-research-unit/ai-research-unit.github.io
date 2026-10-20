@@ -4,11 +4,11 @@
 
 The companion articles have established the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as the home of the Lorentz rotors, and the spinor module $S=\mathbb{C}^2$, realized inside the algebra as the minimal left ideal $\mathbb{B}\tilde\Pi_+$, as the module on which those rotors act one-sidedly. The present article treats the **spinor representation** as a representation in its own right: what it is, which representations sit beside it, and — the question this article is written to answer — how far the finite-dimensional representation theory of $SL(2,\mathbb{C})$ can be carried by the algebra $\mathbb{B}$ before a larger carrier is required.
 
-Three claims organize the discussion. First, the spinor representation is the defining two-dimensional representation $(\tfrac12,0)$, and its complex conjugate $(0,\tfrac12)$ is the second, inequivalent fundamental representation; these two are the two **chiralities**, and they are the only two-dimensional irreducible representations. Second, the four-vector representation $(\tfrac12,\tfrac12)$ is the tensor product of the two chiralities, and the algebra $\mathbb{B}$ itself carries it, under conjugation rather than under multiplication. Third, the algebra stops there: the higher $(j,j')$ representations are not carried by $\mathbb{B}$ and each requires a larger module built from tensor powers of the spinor module.
+Three claims organize the discussion. First, the spinor representation is the defining two-dimensional representation $(\tfrac12,0)$, and its complex conjugate $(0,\tfrac12)$ is the second, inequivalent fundamental representation; these two are the two **chiralities**, and they are the only two-dimensional irreducible representations. Second, the four-vector representation $(\tfrac12,\tfrac12)$ is the tensor product of the two chiralities, and the algebra $\mathbb{B}$ itself carries it, under conjugation rather than under multiplication. Third, the algebra stops there: the higher $(j,j_2)$ representations are not carried by $\mathbb{B}$ and each requires a larger module built from tensor powers of the spinor module.
 
-The third claim is the one with content, and it is checked rather than assumed. The two parents already classify the finite-dimensional representations by the pair $(j,j')$ and develop the module and its bilinear pairings; neither asks which of those representations the algebra can actually carry. That is the subject of the last two sections.
+The third claim is the one with content, and it is checked rather than assumed. The two parents already classify the finite-dimensional representations by the pair $(j,j_2)$ and develop the module and its bilinear pairings; neither asks which of those representations the algebra can actually carry. That is the subject of the last two sections.
 
-Notation is that of the read-list companions. The quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the scalar imaginary is $i$, commuting with the quaternion units; $\mathbb{M}_-$ is the anti-Hermitian subspace (the material sector, home of the four-vectors), $\mathbb{M}_+$ the Hermitian subspace (the informational sector), $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace, and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(i\vec e_k)=\sigma_k$, and the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The trace pairing on the Hermitian sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+Notation is that of the read-list companions. The quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the scalar imaginary is $i$, commuting with the quaternion units; $\mathbb{M}_-$ is the anti-Hermitian subspace (the material sector, home of the four-vectors), $\mathbb{M}_+$ the Hermitian subspace (the informational sector), $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace, and $\mathbb{C}_{\mathbb{B}}$ the scalar subspace. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(i\vec e_k)=\sigma_k$, and the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The trace on the Hermitian sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 ## The Spinor Representation and Its Carrier
 
@@ -75,7 +75,7 @@ $$
 
 One of the two $\mathrm{SU}(2)$ halves acts as spin $\tfrac12$ on $S$ and trivially on the conjugate half; on $\bar{S}$ the roles are interchanged. That a Weyl spinor has spin $\tfrac12$ under the rotation group and is annihilated by one of the two chiral Casimirs is exactly this statement.
 
-A dimension count confirms that the two chiralities exhaust the elementary cases. An irreducible representation labelled $(j,j')$ has complex dimension $(2j+1)(2j'+1)$. Setting this equal to $2$ forces either $j=0,j'=\tfrac12$ or $j=\tfrac12,j'=0$. So $(0,\tfrac12)$ and $(\tfrac12,0)$ are the only two-dimensional irreducible representations, and every fundamental representation of the Lorentz group is one of the two chiralities.
+A dimension count confirms that the two chiralities exhaust the elementary cases. An irreducible representation labelled $(j,j_2)$ has complex dimension $(2j+1)(2j_2+1)$. Setting this equal to $2$ forces either $j=0,j_2=\tfrac12$ or $j=\tfrac12,j_2=0$. So $(0,\tfrac12)$ and $(\tfrac12,0)$ are the only two-dimensional irreducible representations, and every fundamental representation of the Lorentz group is one of the two chiralities.
 
 Two cautions belong here, and both are developed in the companion on the spinor module. First, the two chiralities are **not** the two minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$: because $\mathbb{B}$ is simple, both ideals are isomorphic to $S$, and left multiplication acts by the *same* representation on each. Second, the right-handed chirality is **not** obtained by right multiplication either: as a right module $\mathbb{B}\cong S^{*}\oplus S^{*}$, and the dual of the defining representation is equivalent to it, $S^{*}\cong S$, via the invariant tensor $\epsilon$ ($g^{T}\epsilon g=\epsilon$ for $\det g=1$). The chirality distinction is therefore invisible to the complex algebra and requires the real structure — complex conjugation — to be seen. The **Dirac spinor** is the direct sum of the two halves, $\Delta=S\oplus\bar{S}=(\tfrac12,0)\oplus(0,\tfrac12)$, of complex dimension $4$.
 
@@ -112,28 +112,28 @@ $$
 
 the three-dimensional adjoint (the spatial vector) plus the scalar (the time component). The weight multiset $\{0,0,\pm2i\}$ above splits as $\{0,\pm2i\}$ for the spin-1 piece and $\{0\}$ for the scalar, exactly the $3\oplus1$ of the four-vector.
 
-## The $(j,j')$ Tower and Its Reality Structure
+## The $(j,j_2)$ Tower and Its Reality Structure
 
 Every finite-dimensional irreducible representation of $SL(2,\mathbb{C})$ is an outer tensor product
 
 $$
-(j,j') = V_j\boxtimes V_{j'},
-\qquad j,j'\in\tfrac12\mathbb{Z}_{\geq0},
+(j,j_2) = V_j\boxtimes V_{j_2},
+\qquad j,j_2\in\tfrac12\mathbb{Z}_{\geq0},
 \qquad
-\dim_{\mathbb{C}}(j,j')=(2j+1)(2j'+1),
+\dim_{\mathbb{C}}(j,j_2)=(2j+1)(2j_2+1),
 $$
 
-where $V_j$ is the irreducible $\mathrm{SU}(2)$-module of dimension $2j+1$. In terms of the spinor module, $V_j$ is the symmetric power, so the carrier of $(j,j')$ is built from the spinor module and its conjugate by
+where $V_j$ is the irreducible $\mathrm{SU}(2)$-module of dimension $2j+1$. In terms of the spinor module, $V_j$ is the symmetric power, so the carrier of $(j,j_2)$ is built from the spinor module and its conjugate by
 
 $$
 V_j \cong \operatorname{Sym}^{2j}(S),
 \qquad
-V_{j'} \cong \operatorname{Sym}^{2j'}(\bar{S}),
+V_{j_2} \cong \operatorname{Sym}^{2j_2}(\bar{S}),
 \qquad
-(j,j')\cong \operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S}),
+(j,j_2)\cong \operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j_2}(\bar{S}),
 $$
 
-with the **diagonal** action of the group on the tensor product, $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$ on each factor of $S$ and $\chi\mapsto\overline{\mathsf{M}_2(\tilde U_{\mathrm L})}\chi$ on each factor of $\bar{S}$. This is the precise sense in which the whole tower is generated by the spinor module: each $(j,j')$ occurs in a tensor power of $S$ and $\bar{S}$, symmetrized. The dimensions are collected below.
+with the **diagonal** action of the group on the tensor product, $\psi\mapsto\mathsf{M}_2(\tilde U_{\mathrm L})\psi$ on each factor of $S$ and $\chi\mapsto\overline{\mathsf{M}_2(\tilde U_{\mathrm L})}\chi$ on each factor of $\bar{S}$. This is the precise sense in which the whole tower is generated by the spinor module: each $(j,j_2)$ occurs in a tensor power of $S$ and $\bar{S}$, symmetrized. The dimensions are collected below.
 
 | Representation | $\dim_{\mathbb{C}}$ | Object | Carrier |
 |---|---|---|---|
@@ -149,12 +149,12 @@ with the **diagonal** action of the group on the tensor product, $\psi\mapsto\ma
 **Reality.** Complex conjugation exchanges the two factors of the complexified Lie algebra and hence the two indices:
 
 $$
-\overline{(j,j')}=(j',j).
+\overline{(j,j_2)}=(j_2,j).
 $$
 
-So $(j,j')$ is self-conjugate if and only if $j=j'$. For $j\neq j'$ the representation is of **complex type**: it is not isomorphic to its conjugate, it cannot be made real, and $(j,j')$ and $(j',j)$ form a conjugate pair, as the two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ do. For $j=j'$ the representation is of **real type**: it occurs as the totally symmetric traceless tensors of rank $2j$ over the real four-vector space, and the symmetric traceless tensors of a real vector space are real. The first cases check out: $(\tfrac12,\tfrac12)$ has the real form $\mathbb{M}_-$, of real dimension $4$, equal to its complex dimension; $(1,1)$ has the real form of symmetric traceless real rank-2 tensors, of real dimension $9$, again equal to its complex dimension. No $(j,j')$ is of quaternionic type: the self-conjugate ones are all of real type, and the others are complex.
+So $(j,j_2)$ is self-conjugate if and only if $j=j_2$. For $j\neq j_2$ the representation is of **complex type**: it is not isomorphic to its conjugate, it cannot be made real, and $(j,j_2)$ and $(j_2,j)$ form a conjugate pair, as the two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ do. For $j=j_2$ the representation is of **real type**: it occurs as the totally symmetric traceless tensors of rank $2j$ over the real four-vector space, and the symmetric traceless tensors of a real vector space are real. The first cases check out: $(\tfrac12,\tfrac12)$ has the real form $\mathbb{M}_-$, of real dimension $4$, equal to its complex dimension; $(1,1)$ has the real form of symmetric traceless real rank-2 tensors, of real dimension $9$, again equal to its complex dimension. No $(j,j_2)$ is of quaternionic type: the self-conjugate ones are all of real type, and the others are complex.
 
-**Descent to the Lorentz group.** Since $-e_t$ acts on $(j,j')$ by $(-1)^{2j+2j'}$, the representation descends to $SO^+(1,3)$ when $j+j'\in\mathbb{Z}$ and is a genuine spin representation of the double cover otherwise. The vector representation and the two-form representations descend; the two chiralities and the $(\tfrac32,0)$ do not.
+**Descent to the Lorentz group.** Since $-e_t$ acts on $(j,j_2)$ by $(-1)^{2j+2j_2}$, the representation descends to $SO^+(1,3)$ when $j+j_2\in\mathbb{Z}$ and is a genuine spin representation of the double cover otherwise. The vector representation and the two-form representations descend; the two chiralities and the $(\tfrac32,0)$ do not.
 
 **Unitarity.** All of these finite-dimensional representations are non-unitary except the trivial one, by the argument of the second section: a finite-dimensional unitary representation would kill the boost generators and hence vanish. The finite-dimensional representation theory of the Lorentz group is thus a theory of *non-unitary* representations, and that is not a defect of the biquaternion realization but a property of the group.
 
@@ -191,7 +191,7 @@ with the left-handed chirality appearing with multiplicity two. The right-handed
 
 So $(1,0)$, the self-dual two-form, has no home inside $\mathbb{B}$, even though it is smaller than $\mathbb{B}$. Its carrier is the symmetric square $\operatorname{Sym}^2(S)$, of complex dimension $3$. That carrier is a representation of the group under the diagonal action, but it is **not** a module over the algebra $\mathbb{B}$: the finite-dimensional modules of $\mathbb{B}\cong M_2(\mathbb{C})$ are the direct sums of copies of $S$ alone, and their dimensions are even, whereas $\operatorname{Sym}^2(S)$ has dimension $3$. Likewise the chiral spin-$\tfrac32$ field $(\tfrac32,0)$ lives on $\operatorname{Sym}^3(S)$, of dimension $4$ — the same dimension as the algebra, but a different object, and not a $\mathbb{B}$-module.
 
-This is the boundary of the biquaternion form of the spinor representation, and it is sharper than a size bound. The algebra $\mathbb{B}$ carries the spinor representation, and it carries the four-vector representation as the tensor product of the two chiralities; but it does **not** carry the higher $(j,j')$, and not merely because it is small. The module category of the algebra contains only the left-handed chirality and its multiples; the rest of the tower lives in the tensor category generated by $S$ and $\bar{S}$, whose objects are representations of the group but not modules over the algebra. The generating module and the algebra that acts on it are different objects, and the algebra is the carrier of the elementary representations only. Any statement that "the biquaternion algebra contains the Lorentz representations" must be read with this restriction: the algebra provides the fundamental representation and the vector representation, and the remainder of the finite-dimensional tower is built from it rather than contained in it.
+This is the boundary of the biquaternion form of the spinor representation, and it is sharper than a size bound. The algebra $\mathbb{B}$ carries the spinor representation, and it carries the four-vector representation as the tensor product of the two chiralities; but it does **not** carry the higher $(j,j_2)$, and not merely because it is small. The module category of the algebra contains only the left-handed chirality and its multiples; the rest of the tower lives in the tensor category generated by $S$ and $\bar{S}$, whose objects are representations of the group but not modules over the algebra. The generating module and the algebra that acts on it are different objects, and the algebra is the carrier of the elementary representations only. Any statement that "the biquaternion algebra contains the Lorentz representations" must be read with this restriction: the algebra provides the fundamental representation and the vector representation, and the remainder of the finite-dimensional tower is built from it rather than contained in it.
 
 ## An External Alternative: The Spinor with a World Index
 
@@ -199,7 +199,7 @@ Everything in this article is about the representations the algebra $\mathbb{B}$
 
 J. Fredsted (*Obtaining consistent Lorentz gauging for a gravitationally coupled fermion*, arXiv:1906.12200v3 [physics.gen-ph], 2019) constructs such a field $\psi^\rho$ for exactly the purpose this article's conventions do not consider. The Lorentz group still acts on the field, but through the spinor generators, $\delta\psi^\mu = \tfrac12(d\theta^{\alpha\beta})S_{\alpha\beta}{}^\mu{}_\nu\psi^\nu$, and the gamma matrices are replaced by two families of matrices built from the frame — $M^\mu{}_{\rho\sigma}$ from the timelike frame vector and $N_i{}^\rho{}_\sigma$ from the spacelike ones — obeying the Dirac-like algebra $M_\mu M_\nu^* + M_\nu M_\mu^* = 2g_{\mu\nu}\mathbf{1}$, $M^\mu N_i^* + N_i M^\mu = 0$ and $N_iN_j = \delta_{ij}\mathbf{1} + i\varepsilon_{ijk}N_k$, and $S_{\mu\nu}$ is defined from the $M_\mu$ by $4S_{\mu\nu} = M_\mu M_\nu^* - M_\nu M_\mu^*$. The generators $S_{\mu\nu}$ satisfy the same algebra as $\tfrac14[\gamma^a,\gamma^b]$, so the **spinor representation of the Lorentz group is still the one being carried**; what has been traded away is the Lorentz index of its carrier, and the price is that the covariant derivative must contain the Levi-Civita connection explicitly, because the field's index is a world index.
 
-Two things should be kept apart here, because the construction can be misread as a statement about this article's subject. The representation theory of this article — which $(j,j')$ the algebra $\mathbb{B}$ carries as a module, and which it does not — is untouched by the construction, and no module over $\mathbb{B}$ is involved: the world-indexed field is a field on the manifold taking values in a four-dimensional space on which the Lorentz group acts through $S_{\mu\nu}$, and the algebra's own module structure plays no role in it. What the construction does show is that the identification of the Dirac field with a **Lorentz-indexed** spinor is a convention of the vierbein formalism rather than a consequence of the Lorentz group's representation theory. The equations and the covariance are recorded in *Curved Spacetime and the Biquaternion Framework*, where the framework's own spinor derivative is one-sided and Lorentz-indexed; this article records only the index alternative, as an external claim that the corpus does not adopt.
+Two things should be kept apart here, because the construction can be misread as a statement about this article's subject. The representation theory of this article — which $(j,j_2)$ the algebra $\mathbb{B}$ carries as a module, and which it does not — is untouched by the construction, and no module over $\mathbb{B}$ is involved: the world-indexed field is a field on the manifold taking values in a four-dimensional space on which the Lorentz group acts through $S_{\mu\nu}$, and the algebra's own module structure plays no role in it. What the construction does show is that the identification of the Dirac field with a **Lorentz-indexed** spinor is a convention of the vierbein formalism rather than a consequence of the Lorentz group's representation theory. The equations and the covariance are recorded in *Curved Spacetime and the Biquaternion Framework*, where the framework's own spinor derivative is one-sided and Lorentz-indexed; this article records only the index alternative, as an external claim that the corpus does not adopt.
 
 ## Summary
 
@@ -209,7 +209,7 @@ Its complex conjugate $\bar{S}$ is the right-handed chirality. The two chiraliti
 
 The four-vector representation is their tensor product, $(\tfrac12,\tfrac12)=(\tfrac12,0)\otimes(0,\tfrac12)$, of complex dimension $4$, carried by the algebra under conjugation. The identification is verified by matching the Cartan eigenvalues of the two actions, $\{0,0,\pm2i\}$ for $J_3$ and $\{2,-2,0,0\}$ for $K_3$; on restriction to $SU(2)$ it splits as $3\oplus1$.
 
-The higher representations are $(j,j')=V_j\boxtimes V_{j'}$, $\dim=(2j+1)(2j'+1)$, generated by symmetric powers of the spinor module, $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S})$. They are real when $j=j'$ and complex otherwise, and they descend to the Lorentz group when $j+j'\in\mathbb{Z}$, being genuine spin representations otherwise. The algebra carries only $(\tfrac12,0)$ (with multiplicity two, under left or right multiplication) and $(\tfrac12,\tfrac12)$ (under conjugation). It carries no $(1,0)$, no $(1,1)$, no $(\tfrac32,0)$: the first is excluded by structure, not by size, and the carriers of the others are group representations but not modules over the algebra.
+The higher representations are $(j,j_2)=V_j\boxtimes V_{j_2}$, $\dim=(2j+1)(2j_2+1)$, generated by symmetric powers of the spinor module, $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j_2}(\bar{S})$. They are real when $j=j_2$ and complex otherwise, and they descend to the Lorentz group when $j+j_2\in\mathbb{Z}$, being genuine spin representations otherwise. The algebra carries only $(\tfrac12,0)$ (with multiplicity two, under left or right multiplication) and $(\tfrac12,\tfrac12)$ (under conjugation). It carries no $(1,0)$, no $(1,1)$, no $(\tfrac32,0)$: the first is excluded by structure, not by size, and the carriers of the others are group representations but not modules over the algebra.
 
 ## Summary of Notation
 
@@ -230,15 +230,15 @@ The higher representations are $(j,j')=V_j\boxtimes V_{j'}$, $\dim=(2j+1)(2j'+1)
 | $g^{T}\epsilon g=\epsilon$ | Invariance of the symplectic form; $S^{*}\cong S$ |
 | $N_k^{\pm}=\tfrac12(\vec e_k\pm\mathsf{i}\,i\vec e_k)$ | Generators of the two $\mathrm{SU}(2)$ halves ($\mathsf{i}$ = complexification unit) |
 | $\Omega_\pm=\sum_k(N_k^{\pm})^2$ | Chiral Casimirs; $(0,-3)$ vs $(-3,0)$ on $S$ vs $\bar{S}$ |
-| $(j,j')=V_j\boxtimes V_{j'}$ | Irreducible representation, $\dim=(2j+1)(2j'+1)$ |
-| $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S})$ | Carrier of $(j,j')$ from symmetric powers of the spinor |
+| $(j,j_2)=V_j\boxtimes V_{j_2}$ | Irreducible representation, $\dim=(2j+1)(2j_2+1)$ |
+| $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j_2}(\bar{S})$ | Carrier of $(j,j_2)$ from symmetric powers of the spinor |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ | Conjugation action carrying $(\tfrac12,\tfrac12)$ on $\mathbb{B}$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing on the Hermitian sector |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the Hermitian sector |
 
 ## Further Reading
 
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the construction of the Lorentz representations from two Weyl spinors and the non-unitarity of the finite-dimensional ones.
-- Wu-Ki Tung, *Group Theory in Physics* (World Scientific, 1985), for the $(j,j')$ labelling, the two $\mathrm{SU}(2)$ halves, and the reality classification.
+- Wu-Ki Tung, *Group Theory in Physics* (World Scientific, 1985), for the $(j,j_2)$ labelling, the two $\mathrm{SU}(2)$ halves, and the reality classification.
 - I. M. Gel'fand, R. A. Minlos, and Z. Ya. Shapiro, *Representations of the Rotation and Lorentz Groups and Their Applications* (Pergamon, 1963), for the classical treatment of the finite- and infinite-dimensional representations.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for symmetric powers, highest weights, and the Clebsch–Gordan rule.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for the real forms, complexification, and the classification of unitary representations.

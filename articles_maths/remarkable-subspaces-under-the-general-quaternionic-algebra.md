@@ -52,7 +52,7 @@ Three of the restrictions are indefinite with an isotropic cone; the centre is i
 
 **The vector subspace.** The restriction is the complex quadratic $\sum_kQ_k^2$ on $\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, the pure zero-divisor cone of *Zero Divisors of the Biquaternion Algebra*. Its isotropic **complex** lines are the points of the conic $\{[Q]\in\mathbb{P}^2:\sum_kQ_k^2=0\}$; the line $\mathbb{C}(\vec e_x+i\vec e_y)$ is one of them, and the maximal totally isotropic dimension is $1$ over $\mathbb{C}$ and $3$ over $\mathbb{R}$, the realification having signature $(3,3)$ and the real $3$-space $\mathbb{R}\{\vec e_x+i\vec e_x,\vec e_y+i\vec e_y,\vec e_z+i\vec e_z\}$ being totally isotropic. The cone has real dimension $4$.
 
-**The Hermitian and anti-Hermitian subspaces.** The restrictions are the two real forms of the interval, of signatures $(1,3)$ and $(3,1)$; their null sets are the two real light cones, of real dimension $3$, and the isotropic **real** lines of a light cone are parametrised by the real unit directions. The maximal totally isotropic dimension is $1$ in each, a null line; the non-pure zero divisors are the elements of these two cones.
+**The Hermitian and anti-Hermitian subspaces.** The restrictions are the two real forms of the interval, of signatures $(1,3)$ and $(3,1)$; their null sets are the two real null cones, of real dimension $3$, and the isotropic **real** lines of a null cone are parametrised by the real unit directions. The maximal totally isotropic dimension is $1$ in each, a null line; the non-pure zero divisors are the elements of these two cones.
 
 **The centre.** The restriction is the hyperbolic plane $q_t^2-(q'_t)^2$, so the realified restriction vanishes on the two real lines $\mathbb{R}(e_t+ie_t)$ and $\mathbb{R}(e_t-ie_t)$; the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ itself, however, reads $Q_tR_t$ on the complex line $\mathbb{C}e_t$, which is anisotropic, so the centre has no isotropic line for $\langle\cdot,\cdot\rangle_{\natural}$ and its null set is $\{0\}$. The two statements are the two readings of the same restriction, the realified one and the complex one, and they must not be confused.
 
@@ -64,8 +64,8 @@ Three of the restrictions are indefinite with an isotropic cone; the centre is i
 | Vector $\mathrm{Vect}(\mathbb B)$ | the complex cone $\sum_kQ_k^2=0$ | $4$ | the conic in $\mathbb{P}^2$ | $1$ over $\mathbb{C}$, $3$ over $\mathbb{R}$ |
 | Quaternion $\mathbb H_{\mathbb B}$ | $\{0\}$ | $0$ | none | $0$ |
 | Anti-quaternion $i\mathbb H_{\mathbb B}$ | $\{0\}$ | $0$ | none | $0$ |
-| Hermitian $\mathbb M_+$ | the real light cone | $3$ | $S^2$ of null directions | $1$ |
-| Anti-Hermitian $\mathbb M_-$ | the real light cone | $3$ | $S^2$ of null directions | $1$ |
+| Hermitian $\mathbb M_+$ | the real null cone | $3$ | $S^2$ of null directions | $1$ |
+| Anti-Hermitian $\mathbb M_-$ | the real null cone | $3$ | $S^2$ of null directions | $1$ |
 
 ## The Automorphism Group of Each Restriction
 
@@ -100,7 +100,7 @@ on the centre, the vector subspace, the quaternion subspace, the anti-quaternion
 
 **The twist on a definite row.** For $\tilde Q=e_t+\vec e_x$ the quaternion form gives $2$ and the $\varepsilon$-twisted form gives $1-1=0$, so the same element is a unit of the first form and a null element of the second: the exchange of the definite rows is visible on a single element, and it is the sign of the second coordinate that is responsible.
 
-**A non-pure zero divisor.** For $\tilde Q=e_t+i\vec e_x$ the norm is $\langle\cdot\rangle_{\natural}=1+i^{2}=0$, and the element lies on the real light cone of the Hermitian subspace $\mathbb{M}_+$, of signature $(1,3)$; it is a zero divisor that is neither pure nor in the vector subspace, the two statements being the classification of *Zero Divisors of the Biquaternion Algebra*.
+**A non-pure zero divisor.** For $\tilde Q=e_t+i\vec e_x$ the norm is $\langle\cdot\rangle_{\natural}=1+i^{2}=0$, and the element lies on the real null cone of the Hermitian subspace $\mathbb{M}_+$, of signature $(1,3)$; it is a zero divisor that is neither pure nor in the vector subspace, the two statements being the classification of *Zero Divisors of the Biquaternion Algebra*.
 
 **A maximal definite subspace of an indefinite row.** In the vector subspace, of signature $(3,3)$, the span $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ is a maximal positive definite subspace of dimension $3$ and the span $\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ a maximal negative definite one; the two are orthogonal for the realified form, since the pairing of a real direction with its imaginary companion is purely imaginary, and are exchanged by multiplication by $i$, which is the local form of the exchange of the two definite rows of the whole algebra.
 
@@ -108,7 +108,7 @@ on the centre, the vector subspace, the quaternion subspace, the anti-quaternion
 
 **The definite rows are not the real forms.** The two definite rows are $\mathbb{H}_{\mathbb B}$, on which the form is $\sum_\mu q_\mu^{2}$, all signs $+1$, and $i\mathbb{H}_{\mathbb B}$, on which it is $-\sum_\mu q_\mu^{2}$, all signs $-1$; the Hermitian and anti-Hermitian subspaces, by contrast, are indefinite of signatures $(1,3)$ and $(3,1)$. The reason is that the Hermitian subspace $\mathbb{M}_+=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ collects the single positive direction $e_t$ with the three negative directions $i\vec e_k$, while the anti-Hermitian subspace $\mathbb{M}_-=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ collects the single negative direction $ie_t$ with the three positive directions $\vec e_k$; neither is spanned by directions of a single sign, which is what definiteness requires.
 
-**A null element of the anti-Hermitian subspace.** For $\tilde Q=ie_t+\vec e_x$ the norm is $\langle\cdot\rangle_{\natural}=i^{2}+1=0$, on the real light cone of $\mathbb{M}_-$, of signature $(3,1)$; the sign of the null direction is the one the swapped table prescribes.
+**A null element of the anti-Hermitian subspace.** For $\tilde Q=ie_t+\vec e_x$ the norm is $\langle\cdot\rangle_{\natural}=i^{2}+1=0$, on the real null cone of $\mathbb{M}_-$, of signature $(3,1)$; the sign of the null direction is the one the swapped table prescribes.
 
 ## Summary
 

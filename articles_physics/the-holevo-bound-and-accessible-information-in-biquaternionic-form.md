@@ -4,7 +4,7 @@
 
 A quantum source produces a state drawn from an ensemble. The receiver may perform any measurement the algebra admits, and from the outcome tries to recover the index of the state that was sent. How much of the source's classical information can be extracted in this way is the **accessible information** of the ensemble, and its universal upper bound is the **Holevo bound**. This article develops both in the biquaternion language of the informational sector.
 
-The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive trace-one elements $\tilde{Ϛ}_x$ with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_y$ summing to the identity, the **POVM** developed in the companion article on the positive cone. The outcome probabilities are the trace pairing
+The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive elements $\tilde{Ϛ}_x$ normalised by $\langle\tilde{Ϛ}_x,e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_y$ summing to the identity, the **POVM** developed in the companion article on the positive cone. The outcome probabilities are the normalised plain form, read as the trace pairing,
 
 $$
 p(y|x) = \mathrm{Tr}\bigl(\tilde{Ϛ}_x\tilde{E}_y\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_x\tilde{E}_y\bigr),
@@ -60,7 +60,7 @@ $$
 \tilde{E}_y \geq 0, \qquad \sum_y \tilde{E}_y = e_t ,
 $$
 
-each of which is an **effect**, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{Ϛ}_x$ is the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y'} = \delta_{yy'}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.
+each of which is an **effect**, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{Ϛ}_x$ is the normalised plain form, read as the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y_2} = \delta_{yy_2}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.
 
 For every measurement, the outcome distribution is $p_y = \sum_x p_x p(y|x) = \mathrm{Tr}(\tilde{Ϛ}^{\natural}\tilde{E}_y)$, so the average state determines the marginal statistics. This is the reason the average state, and not the individual members, controls the first-order behaviour of the ensemble.
 
@@ -283,7 +283,7 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 
 ## Summary
 
-An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is
+An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{Ϛ}^{\natural} = \sum_x p_x\tilde{Ϛ}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the normalised plain form, read as the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{Ϛ}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is
 
 $$
 \chi(\mathcal{E}) = S(\tilde{Ϛ}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_x),
@@ -328,4 +328,4 @@ its proof being the data-processing inequality applied to the measurement channe
 - C. A. Fuchs, "Distinguishability and accessible information in quantum theory," Ph.D. thesis, University of New Mexico (1996), for the accessible information of two pure states and the role of the square-root measurement.
 - A. Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for POVMs and the operational meaning of the outcome probabilities.
 - T. M. Cover and J. A. Thomas, *Elements of Information Theory* (Wiley, 2006), for the classical mutual information and the Shannon entropy.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and *Entangled Subsystems in the Biquaternion Framework*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule from the Plain Form — Derivation and Comparison*, *The Bloch Ball as the Normalised Slice of the Future Light Cone*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, and *Entangled Subsystems in the Biquaternion Framework*.

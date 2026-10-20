@@ -165,7 +165,7 @@ S=A+\beta E=A-\beta\frac{\partial A}{\partial\beta},\qquad
 F=-\frac{A}{\beta}=E-\frac{S}{\beta}.
 $$
 
-The first two say that $A$ and $S$ are Legendre conjugates in the variables $\beta$ and $E$: from $S=A+\beta E$ and $E=-A'$ one finds
+The first two say that $A$ and $S$ are Legendre conjugates in the variables $\beta$ and $E$: from $S=A+\beta E$ and $E=-\partial A/\partial\beta$ one finds
 
 $$
 \frac{\partial S}{\partial E}=\beta,
@@ -304,5 +304,5 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 - R. Haag, N. M. Hugenholtz, and M. Winnink, "On the equilibrium states in quantum statistical mechanics," *Communications in Mathematical Physics* **5** (1967) 215–236, for the KMS characterisation of thermal equilibrium.
 - M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the modular Hamiltonian $K=-\log\rho$.
 - M. A. Nielsen and I. L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the von Neumann entropy and its properties.
-- Companion articles: *The Partition Function in Biquaternionic Form*, for the thermal operator and $Z$; *The KMS Condition and the Biquaternion Framework*, for the operator-algebraic characterisation and the modular Hamiltonian; *Quantum Physics in Biquaternionic Form*, for the state space, the trace pairing, and the entropy; *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the two sectors; *Exercise: Entanglement Entropy and the Partial Trace*, for the entropy functional $-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ and its domain; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space; *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the modular structure in the framework.
+- Companion articles: *The Partition Function in Biquaternionic Form*, for the thermal operator and $Z$; *The KMS Condition and the Biquaternion Framework*, for the operator-algebraic characterisation and the modular Hamiltonian; *Quantum Physics in Biquaternionic Form*, for the state space, the plain form, and the entropy; *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the two sectors; *Exercise: Entanglement Entropy and the Partial Trace*, for the entropy functional $-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ and its domain; *The Bloch Ball as the Normalised Slice of the Future Light Cone*, for the geometry of the state space; *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the modular structure in the framework.
 

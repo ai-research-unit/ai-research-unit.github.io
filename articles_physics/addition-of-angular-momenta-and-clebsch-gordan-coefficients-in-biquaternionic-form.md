@@ -171,11 +171,11 @@ $$
 where the bracket is the **Clebsch–Gordan coefficient**. The coefficients vanish unless $m=m_1+m_2$ and $j$ lies in the range above. They are the matrix elements of the unitary change of basis between the product basis and the coupled basis, and therefore satisfy the orthogonality and completeness relations
 
 $$
-\sum_{m_1,m_2}\langle j_1,m_1;j_2,m_2|j,m\rangle\langle j_1,m_1;j_2,m_2|j',m'\rangle=\delta_{jj'}\delta_{mm'} ,
+\sum_{m_1,m_2}\langle j_1,m_1;j_2,m_2|j,m\rangle\langle j_1,m_1;j_2,m_2|j_{\mathrm{II}},m_{\mathrm{II}}\rangle=\delta_{j,j_{\mathrm{II}}}\delta_{m,m_{\mathrm{II}}} ,
 $$
 
 $$
-\sum_{j,m}\langle j_1,m_1;j_2,m_2|j,m\rangle\langle j_1,m_1';j_2,m_2'|j,m\rangle=\delta_{m_1m_1'}\delta_{m_2m_2'} .
+\sum_{j,m}\langle j_1,m_1;j_2,m_2|j,m\rangle\langle j_1,m_{1,\mathrm{II}};j_2,m_{2,\mathrm{II}}|j,m\rangle=\delta_{m_1,m_{1,\mathrm{II}}}\delta_{m_2,m_{2,\mathrm{II}}} .
 $$
 
 Both relations are statements about numbers; neither involves the biquaternion realisation. What the realisation supplies is the identification of the factor multiplets with the fundamental module and its tensor powers.

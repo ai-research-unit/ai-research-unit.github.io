@@ -214,7 +214,7 @@ The verification was run on the state that was chosen for its genericity and on 
 
 ## The Trace Formula and the Gibbs Form
 
-The trace formula inherited from the read list,
+The plain form, read as the trace formula, inherited from the read list,
 $$
 \mathrm{Tr}(\tilde H_1\tilde H_2)=2\,\mathrm{Sc}(\tilde H_1\tilde H_2) = 2\langle\tilde H_1,\tilde H_2\rangle,
 \qquad

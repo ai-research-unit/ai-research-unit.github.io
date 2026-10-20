@@ -91,7 +91,7 @@ $$
 \exp(i\tilde\Psi)=\exp(i\alpha)\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 
-The exponent is a real quaternion with scalar part $\alpha$ and pure part $\tfrac{\psi}{2}\vec u_{\mathrm b}'$, where $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ is the boost axis rotated by the rotor. The modulus is an ordinary quaternion in its polar form: a positive scale and a unit rotor.
+The exponent is a real quaternion with scalar part $\alpha$ and pure part $\tfrac{\psi}{2}\vec u_{\mathrm b,2}$, where $\vec u_{\mathrm b,2}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ is the boost axis rotated by the rotor. The modulus is an ordinary quaternion in its polar form: a positive scale and a unit rotor.
 
 In the electromagnetic reading, $\tilde Q=\tilde E+i\tilde B$ with $\tilde E,\tilde B$ real quaternions. The ratio $\tilde P=\tilde E^{-1}\tilde B$ is the duality quotient, the quaternion that carries the electric part to the magnetic part; the angle $\tilde\Psi$ is the quaternion angle of the field, with scalar part the duality phase and pure part half the boost. The modulus $\tilde q=\tilde E(\cos\tilde\Psi)^{-1}$ is the normalised electric part. The construction needs $\tilde E\neq0$: a purely magnetic field has no electric part to normalise. The factorisation of the word still exists on a purely imaginary element, but the construction from the parts does not.
 
@@ -138,7 +138,7 @@ The three pairings are not three decompositions; they are three readings of the 
 
 | Question | Pairing | The factor that answers it |
 | --- | --- | --- |
-| What is the real quaternion modulus and its angle? | quaternion | $\tilde q=r\tilde u_{\mathrm r}$, $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$ |
+| What is the real quaternion modulus and its angle? | quaternion | $\tilde q=r\tilde u_{\mathrm r}$, $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$ |
 | What is the axis and the complex angle? | Hamilton | $\vec\Xi$, $\Theta$ |
 | What is the amplitude and the phase? | Cartan | $\tilde H=r\tilde U_{\mathrm b}$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$ |
 
@@ -160,8 +160,8 @@ The six subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector space $\m
 On the material sector the boost reads
 
 $$
-a'=a\cosh\psi-b_\parallel\sinh\psi, \qquad
-b_\parallel'=b_\parallel\cosh\psi-a\sinh\psi,
+a_2=a\cosh\psi-b_\parallel\sinh\psi, \qquad
+b_{\parallel,2}=b_\parallel\cosh\psi-a\sinh\psi,
 $$
 
 with $\psi$ the rapidity of the factor in view, $a$ the scalar coordinate and $b_\parallel$ the component of the vector part along the boost axis; on the informational sector the two cross terms carry the opposite sign. The difference is the sector sign. The same congruence reads as the Lorentz action on matter and as a positive congruence on the state space.
@@ -237,7 +237,7 @@ The three pairings are regroupings, not new decompositions. They add no informat
 - The scale is the modulus of the norm, the phase is half its argument, the boost is the Hermitian positive factor and the rotor is the real quaternion factor.
 - The word exists exactly off the zero-divisor cone; on the cone a lightlike four-vector has no rest frame and no boost split.
 - The branch $\alpha\in(-\pi/2,\pi/2]$ is the only convention of the decomposition.
-- The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$ with $\tilde q=r\tilde u_{\mathrm r}$ and $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$; it groups scale and rotor against phase and boost.
+- The quaternion pairing is $\tilde Q=\tilde q\exp(i\tilde\Psi)$ with $\tilde q=r\tilde u_{\mathrm r}$ and $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$; it groups scale and rotor against phase and boost.
 - The Hamilton root pairing is $\tilde Q=\Rho(\cos\Theta+\vec\Xi\sin\Theta)$; it groups scale and phase against boost and rotor, and its domain also excludes a null vector part.
 - The Cartan pairing is $\tilde Q=\tilde H\tilde U$ with $\tilde H=r\tilde U_{\mathrm b}$ and $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$; it groups scale and boost against phase and rotor.
 - The three pairings are the three bracketings of the four-factor word; none adds information to it.
@@ -262,7 +262,7 @@ The three pairings are regroupings, not new decompositions. They add no informat
 | $N=\langle\tilde Q\rangle_{\natural}$ | the biquaternion norm |
 | $E^2=\sum_\mu\lvert Q_\mu\rvert^2$ | the Euclidean square, the Born form at equal arguments |
 | $\tilde q=r\tilde u_{\mathrm r}$ | the real quaternion modulus of the quaternion pairing |
-| $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b}'$ | the real quaternion angle of the quaternion pairing |
+| $\tilde\Psi=\alpha+\tfrac{\psi}{2}\vec u_{\mathrm b,2}$ | the real quaternion angle of the quaternion pairing |
 | $\Rho=\sqrt N$, $\vec\Xi$, $\Theta$ | the modulus, axis and complex angle of the Hamilton pairing |
 | $\tilde H=r\tilde U_{\mathrm b}$, $\tilde U=e^{i\alpha}\tilde u_{\mathrm r}$ | the Hermitian and unitary factors of the Cartan pairing |
 | $\mathbb{M}_\pm$ | the material and informational sectors |

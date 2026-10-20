@@ -183,7 +183,7 @@ are real quaternions, $a_t,b_t\in\mathbb{R}$ and $\vec p,\vec q\in\mathbb{R}^3$ 
 multiple of $e_t$ read through the displayed coefficient, and the square of an element is the value of the
 restricted diagonal. The two definite rows have no isotropic element; the centre has none for the complex
 form although its realification has the two real isotropic lines; the vector subspace carries the pure
-zero-divisor cone; and the two Hermitian subspaces carry their real light cones. The product has no unit on
+zero-divisor cone; and the two Hermitian subspaces carry their real null cones. The product has no unit on
 any of the remarkable subspaces, since it has none on the whole algebra.
 
 ## The Coincidence with the Hermitian Form on the Real Part

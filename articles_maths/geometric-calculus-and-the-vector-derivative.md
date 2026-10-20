@@ -155,7 +155,7 @@ $$
 (\partial+m)\psi=0
 $$
 
-is the Dirac equation, the object $\psi$ being a spinor of the algebra and $\partial$ the vector derivative of the space-time. The identification of the differential operator with the Clifford multiplication, the spinor module on which it acts and the physical normalisation are the subject of *Dirac Differential Operators* and of the physics articles of the menu.
+is the Dirac equation, the object $\psi$ being a spinor of the algebra and $\partial$ the vector derivative of the space. The identification of the differential operator with the Clifford multiplication, the spinor module on which it acts and the physical normalisation are the subject of *Dirac Differential Operators* and of the physics articles of the menu.
 
 **Example (the Maxwell equation).** In the same signature, the equation
 

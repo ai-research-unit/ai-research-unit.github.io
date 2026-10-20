@@ -106,7 +106,7 @@ Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\
 
 ### The product relations
 
-Within each row and each column the three entries commute, so their product is unambiguous. Direct computation in the biquaternion algebra — using $(x\otimes y)(x'\otimes y') = (xx')\otimes(yy')$ and the products of the units — gives
+Within each row and each column the three entries commute, so their product is unambiguous. Direct computation in the biquaternion algebra — using $(x\otimes y)(x_2\otimes y_2) = (xx_2)\otimes(yy_2)$ and the products of the units — gives
 
 
 |  | $\text{column }1$ | $\text{column }2$ | $\text{column }3$ | $\text{row product}$ |
@@ -181,7 +181,7 @@ one for each character $\chi$ of $S$; on the idempotent $e_\chi$ every element $
 A noncontextual hidden-variable model is therefore a rule that selects one character on each context, with the requirement that the value assigned to an observable be the same in every context containing it:
 
 $$
-\tilde U\in S\cap S' \ \Longrightarrow\ \chi_S(\tilde U) = \chi_{S'}(\tilde U) .
+\tilde U\in S\cap S_2 \ \Longrightarrow\ \chi_S(\tilde U) = \chi_{S_2}(\tilde U) .
 $$
 
 The Kochen–Specker theorem says that for a module of dimension at least three no such globally consistent selection exists. This is the statement that the assignment of characters to the commuting subalgebras of $M_d(\mathbb{C})$ — a finite diagram of finite abelian groups, glued along their intersections — admits no global character; the obstruction is topological in form and algebraic in content, and the framework's contribution is to identify the contexts with the maximal commutative subalgebras of $\mathbb{M}_+^{\otimes2}$ and the local sections with their characters.
@@ -197,7 +197,7 @@ The Kochen–Specker theorem is **state-independent**: it obstructs a noncontext
 The two forms sit differently in the framework.
 
 - **State-independent contextuality** is a property of the algebra of observables alone, here $\mathbb{B}\otimes\mathbb{B}$; the magic square is an algebraic identity and requires no state, no biquaternion norm, and no cone. This is the sense in which the Kochen–Specker theorem is a statement about the structure of $\mathbb{M}_+^{\otimes2}$.
-- **State-dependent contextuality** is a property of a state together with a set of observables. The companion article *Exercise: The CHSH Inequality and Tsirelson's Bound* computes the correlation function $E(\vec u_x,\vec u_y) = -\vec u_x\cdot\vec u_y$ for the singlet and the Tsirelson bound $2\sqrt2$, and the companion article *Entangled Subsystems in the Biquaternion Framework* shows that the correlation function is the trace pairing between the state idempotent and a tensor-product observable. Violation of a Bell inequality is state-dependent contextuality, and the framework locates it in the pairing of a particular state with a particular context.
+- **State-dependent contextuality** is a property of a state together with a set of observables. The companion article *Exercise: The CHSH Inequality and Tsirelson's Bound* computes the correlation function $E(\vec u_x,\vec u_y) = -\vec u_x\cdot\vec u_y$ for the singlet and the Tsirelson bound $2\sqrt2$, and the companion article *Entangled Subsystems in the Biquaternion Framework* shows that the correlation function is the tensor-product plain form, read as the trace pairing, between the state idempotent and a tensor-product observable. Violation of a Bell inequality is state-dependent contextuality, and the framework locates it in the pairing of a particular state with a particular context.
 
 The two are related but not identical. The magic square is the stronger statement, because it needs no state; the Bell inequalities are the more operational statement, because they are tested by counting coincidences. Both are consequences of the same algebraic structure: the noncommutativity of the observables and the noncommutativity of the idempotent bases.
 
@@ -235,7 +235,7 @@ A context is a maximal set of mutually commuting Hermitian elements of $\mathbb{
 
 The smallest arena in which the obstruction appears in the framework is the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module has dimension four. There the **Mermin–Peres magic square** gives the obstruction explicitly: nine Hermitian involutions $\vec U_x=i\vec e_x,\vec U_y=i\vec e_y,\vec U_z=i\vec e_z$ and $e_t$ arranged in a $3\times3$ array, every row and column a commuting set, with every row product equal to $+e_t\otimes e_t$, the first two column products equal to $+e_t\otimes e_t$, and the third column product equal to $-e_t\otimes e_t$. Multiplying the row equations and the column equations evaluates the product of all nine entries as $+1$ and as $-1$ respectively, so no noncontextual $\{\pm1\}$ assignment exists.
 
-State-independent contextuality (the Kochen–Specker theorem and the magic square) is a property of the algebra $\mathbb{M}_+^{\otimes2}$ alone; state-dependent contextuality (the Bell and CHSH inequalities) is a property of a state paired with a context and is expressed in the framework by the trace pairing. The framework transcribes both; it does not change their predictions.
+State-independent contextuality (the Kochen–Specker theorem and the magic square) is a property of the algebra $\mathbb{M}_+^{\otimes2}$ alone; state-dependent contextuality (the Bell and CHSH inequalities) is a property of a state paired with a context and is expressed in the framework by the plain form, read as the trace pairing. The framework transcribes both; it does not change their predictions.
 
 ## Summary of Notation
 

@@ -42,7 +42,7 @@ The elementary Lie groups come from vector spaces, from their quotients by latti
 | the Heisenberg group $H_3(\mathbb{R})$ | $3$ | simply connected nilpotent, of class $2$ | *Lie Groups* |
 | the Euclidean group $\mathbb{R}^n \rtimes SO(n)$ | $n(n-1)/2 + n$ | the semidirect product of the translations and the rotations | *Lie Groups*; *List of Affine and Euclidean Groups* |
 | the affine group $\mathbb{R}^n \rtimes GL_n(\mathbb{R})$ | $n^2 + n$ | the automorphism group of affine $n$-space | *List of Affine and Euclidean Groups* |
-| the Lorentz group $O(1,3)$ | $6$ | the isometry group of Minkowski space; $SO^+(1,3)$ has cover $SL_2(\mathbb{C})$ | *Lie Groups*; *Pseudo-Riemannian and Lorentzian Geometry* |
+| the Lorentz group $O(1,3)$ | $6$ | the isometry group of Lorentzian space; $SO^+(1,3)$ has cover $SL_2(\mathbb{C})$ | *Lie Groups*; *Pseudo-Riemannian and Lorentzian Geometry* |
 | $S^3/\{\pm1\} \cong SO(3) \cong \mathbb{RP}^3$ | $3$ | compact connected, not simply connected | *Lie Groups* |
 | the complex and quaternionic unit spheres | $2n-1$ and $4n-1$ | closed under multiplication only for $n = 1$ in the complex case, and for $n = 1, 2$ in the quaternionic case, where $S^7$ is a Moufang loop and not a group | *Lie Groups* |
 

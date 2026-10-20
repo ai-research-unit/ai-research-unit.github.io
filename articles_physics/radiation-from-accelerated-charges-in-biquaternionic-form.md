@@ -35,7 +35,7 @@ $$
 so that
 
 $$
-\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde R')\,\tilde J(\tilde R')\,d^4R' .
+\tilde{A}(\tilde{Q}) = \mu\int G_{\Box}(\tilde{Q} - \tilde R_2)\,\tilde J(\tilde R_2)\,d^4R_2 .
 $$
 
 We do not re-derive this structure; we only specialize it. For a point charge $ϙ$ on a worldline $\vec r_q(t)$, the source is
@@ -48,7 +48,7 @@ $$
 and therefore
 
 $$
-\tilde J(\tilde R') = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
+\tilde J(\tilde R_2) = ϙ\left(ic\,e_t + \vec v(s)\right)\delta^3\!\left(\vec y - \vec r_q(s)\right).
 $$
 
 Substituting this into the retarded convolution and integrating first over $\vec y$ localizes the source at $\vec y = \vec r_q(s)$; the remaining integral over $s$ localizes at the **retarded time** $t_r$ defined implicitly by

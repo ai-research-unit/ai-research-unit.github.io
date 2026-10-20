@@ -73,13 +73,13 @@ $$
 The partial traces are computed directly from this form. The matrix elements of $\rho_1$ are
 
 $$
-(\rho_1)_{ii'}=\sum_j M_{ij}\overline{M_{i'j}}=(MM^\dagger)_{ii'},
+(\rho_1)_{i,i_2}=\sum_j M_{ij}\overline{M_{i_2j}}=(MM^\dagger)_{i,i_2},
 $$
 
 and those of $\rho_2$ are
 
 $$
-(\rho_2)_{jj'}=\sum_i M_{ij}\overline{M_{ij'}}=(M^\dagger M)_{jj'} .
+(\rho_2)_{j,j_2}=\sum_i M_{ij}\overline{M_{i,j_2}}=(M^\dagger M)_{j,j_2} .
 $$
 
 So the reduced states are the two products of the coefficient matrix with its adjoint:
@@ -363,7 +363,7 @@ which tends to $-\infty$ as $p\to1$. Interpret: as entanglement is switched on f
 | System | Two qubits | Two qubits | Two qubits |
 | Physical process | Reduction of one subsystem | Joint spin correlation | Entropy of the reduction |
 | Structural object | Partial trace of a state | Bell idempotents | Spectrum of the partial trace |
-| Rule used | Partial trace | Tensor-product trace pairing | Partial trace + spectral entropy |
+| Rule used | Partial trace | Tensor-product trace reading of the plain form | Partial trace + spectral entropy |
 | Result | $\tilde{Ϛ}_1=\tfrac12 e_t$ (singlet) | $E=-\sum_j\epsilon_j a_jb_j$ | $S=h(s_1^2)$, $S=\log2$ at maximal entanglement |
 | Scope | The reduced state | All four Bell states | All pure two-qubit states; **not** mixed joint states |
 

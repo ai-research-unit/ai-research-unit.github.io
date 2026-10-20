@@ -4,7 +4,7 @@
 
 Two orthonormal bases of a $d$-dimensional complex vector space are **mutually unbiased** when every vector of one has the same squared overlap, $1/d$, with every vector of the other. In this case a measurement in one basis yields no information whatever about a measurement in the other: the outcome distributions are as far from correlated as the formalism permits. Mutually unbiased bases are the extreme case of incompatible measurements, they underpin quantum key distribution, and a complete set of them permits the reconstruction of a state from the outcome probabilities of $d+1$ measurements.
 
-In the biquaternion framework the bases of the defining module are the idempotent bases of the Hermitian subspace. A basis of rays is a complete family of orthogonal rank-one idempotents, $\{\tilde\Pi_i\}$ with $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$, and the Hilbert-space overlap between two rays is the trace pairing of their idempotents,
+In the biquaternion framework the bases of the defining module are the idempotent bases of the Hermitian subspace. A basis of rays is a complete family of orthogonal rank-one idempotents, $\{\tilde\Pi_i\}$ with $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$, and the Hilbert-space overlap between two rays is the normalised plain form of their idempotents, read as the trace pairing,
 
 $$
 \bigl|\langle \psi|\phi\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\psi)\,\tilde\Pi(\phi)\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr).
@@ -13,11 +13,11 @@ $$
 The mutual-unbiasedness condition therefore reads, in the algebra,
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b')}\bigr) = \frac{1}{d}
-\qquad\text{for all } i,j \ \text{whenever } b\neq b' .
+\mathrm{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr) = \frac{1}{d}
+\qquad\text{for all } i,j \ \text{whenever } b\neq b_2 .
 $$
 
-For the native qubit $d=2$ the maximum number of mutually unbiased bases is $d+1=3$, and they have a clean algebraic origin: they are the eigenbases of the three imaginary units $i\vec e_x, i\vec e_y, i\vec e_z$. The three units are Hermitian involutions, pairwise anticommuting, and each defines an orthogonal pair of rank-one idempotents; the trace pairing between idempotents from different pairs is exactly $\tfrac12$. The three bases are the three coordinate measurements, and their completeness is the tomographic statement that the outcome probabilities of three measurements determine the state.
+For the native qubit $d=2$ the maximum number of mutually unbiased bases is $d+1=3$, and they have a clean algebraic origin: they are the eigenbases of the three imaginary units $i\vec e_x, i\vec e_y, i\vec e_z$. The three units are Hermitian involutions, pairwise anticommuting, and each defines an orthogonal pair of rank-one idempotents; the normalised plain form between idempotents from different pairs, read as the trace pairing, is exactly $\tfrac12$. The three bases are the three coordinate measurements, and their completeness is the tomographic statement that the outcome probabilities of three measurements determine the state.
 
 This article develops the idempotent bases of the algebra, derives the unbiasedness of the three coordinate bases from the product rules of the units, gives the reconstruction formula that recovers the state from the three bases, and discusses the two-qubit case, where the maximum is five bases, where the tensor product of qubit bases supplies only three, and where the Bell basis — a natural idempotent basis of $\mathbb{B}\otimes\mathbb{B}$ — does not complete the three product bases: with respect to each of them, every Bell vector is orthogonal to half of the basis vectors. The framework supplies the qubit MUBs natively and exhibits the obstruction to obtaining a full set by naive tensor products.
 
@@ -39,9 +39,9 @@ $$
 
 so $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ is a complete orthogonal family: an **idempotent basis** of the defining module. Every basis of the module arises this way, one basis for each direction $\vec u$ on the Bloch sphere; a basis is a pair of antipodal pure states.
 
-### The trace pairing between idempotents
+### The normalised plain form between idempotents
 
-For two directions $\vec u,\vec v$ the trace pairing of the positive idempotents is
+For two directions $\vec u,\vec v$ the normalised plain form of the positive idempotents, read as the trace pairing, is
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi_1(\vec u)\tilde\Pi_1(\vec v)\bigr)
@@ -56,7 +56,7 @@ $$
 \bigl|\langle \psi(\vec u)|\psi(\vec u_\nu)\rangle\bigr|^2 = \tfrac{1}{2}\bigl(1-\vec u\cdot\vec v\bigr),
 $$
 
-which vanishes for antipodal directions and equals one for coincident directions. The trace pairing is thus a measure of the distinguishability of two rays, and it is the object that the mutual-unbiasedness condition constrains.
+which vanishes for antipodal directions and equals one for coincident directions. The normalised plain form, read as the trace pairing, is thus a measure of the distinguishability of two rays, and it is the object that the mutual-unbiasedness condition constrains.
 
 ### The three coordinate bases
 
@@ -80,25 +80,25 @@ Each basis is the eigenbasis of the corresponding involution: $\vec U_x$ takes t
 
 ### The overlap between different bases
 
-Take two distinct coordinate bases, $j\neq k$. Then for any signs $s,s'\in\{+1,-1\}$,
+Take two distinct coordinate bases, $j\neq k$. Then for any signs $s,s_2\in\{+1,-1\}$,
 
 $$
-\tilde\Pi_s(\vec u_j)\,\tilde\Pi_{s'}(\vec u_k)
-= \tfrac{1}{4}\bigl(e_t + s' i\vec e_\nu + s i\vec e_\mu + ss' (i\vec e_\mu)(i\vec e_\nu)\bigr)
-= \tfrac{1}{4}\bigl(e_t + s' i\vec e_\nu + s i\vec e_\mu - ss' \vec e_\mu \vec e_\nu\bigr),
+\tilde\Pi_s(\vec u_j)\,\tilde\Pi_{s_2}(\vec u_k)
+= \tfrac{1}{4}\bigl(e_t + s_2 i\vec e_\nu + s i\vec e_\mu + ss_2 (i\vec e_\mu)(i\vec e_\nu)\bigr)
+= \tfrac{1}{4}\bigl(e_t + s_2 i\vec e_\nu + s i\vec e_\mu - ss_2 \vec e_\mu \vec e_\nu\bigr),
 $$
 
 and taking the trace, the three traceless terms vanish and the last contributes $-\mathrm{Tr}(\vec e_\mu \vec e_\nu) = 0$ for $\mu\neq \nu$ because distinct quaternion units are orthogonal under the trace. Hence
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s'}(\vec u_k)\bigr) = \tfrac{1}{4}\cdot 2 = \tfrac{1}{2}
+\mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_k)\bigr) = \tfrac{1}{4}\cdot 2 = \tfrac{1}{2}
 \qquad (j\neq k),
 $$
 
 independently of the signs. In the Hilbert-space language,
 
 $$
-\bigl|\langle \psi_s(\vec u_j)|\psi_{s'}(\vec u_k)\rangle\bigr|^2 = \tfrac{1}{2} = \frac{1}{d},
+\bigl|\langle \psi_s(\vec u_j)|\psi_{s_2}(\vec u_k)\rangle\bigr|^2 = \tfrac{1}{2} = \frac{1}{d},
 \qquad d=2 ,
 $$
 
@@ -109,10 +109,10 @@ so **the three coordinate bases are pairwise mutually unbiased**. The derivation
 Within one basis, $j=k$, the same computation gives
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_k)\tilde\Pi_{s'}(\vec u_k)\bigr)
-= \tfrac{1}{4}\mathrm{Tr}\bigl(e_t + (s+s')i\vec e_\mu + ss'(i\vec e_\mu)^2\bigr)
-= \tfrac{1}{4}\bigl(2 - 2ss'\bigr)
-= \begin{cases}1 & s=s',\\ 0 & s=-s'.\end{cases}
+\mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_k)\tilde\Pi_{s_2}(\vec u_k)\bigr)
+= \tfrac{1}{4}\mathrm{Tr}\bigl(e_t + (s+s_2)i\vec e_\mu + ss_2(i\vec e_\mu)^2\bigr)
+= \tfrac{1}{4}\bigl(2 - 2ss_2\bigr)
+= \begin{cases}1 & s=s_2,\\ 0 & s=-s_2.\end{cases}
 $$
 
 The two cases are exactly the normalization and orthogonality of the basis. Thus the same formula produces orthogonality within a basis and unbiasedness across bases, the sign of the unit's square being responsible for the difference. This is the algebraic statement that the three bases are as correlated as possible internally and as uncorrelated as possible externally.
@@ -129,7 +129,7 @@ $$
 \bigl(\tilde\Pi_1(\vec u_x),\tilde\Pi_2(\vec u_x),\tilde\Pi_1(\vec u_y),\tilde\Pi_2(\vec u_y),\tilde\Pi_1(\vec u_z),\tilde\Pi_2(\vec u_z)\bigr).
 $$
 
-The matrix of trace pairings $M_{ab} = \mathrm{Tr}(\tilde\Pi_a\tilde\Pi_b)$ has block structure in $2\times2$ blocks: the diagonal blocks are the identity (orthonormal within a basis), and the off-diagonal blocks are $\tfrac12 J$, where $J$ is the all-ones $2\times2$ matrix (unbiased across bases). Thus
+The matrix of overlaps read from the plain form $M_{ab} = \mathrm{Tr}(\tilde\Pi_a\tilde\Pi_b)$ has block structure in $2\times2$ blocks: the diagonal blocks are the identity (orthonormal within a basis), and the off-diagonal blocks are $\tfrac12 J$, where $J$ is the all-ones $2\times2$ matrix (unbiased across bases). Thus
 
 $$
 M = \begin{pmatrix} I_2 & \tfrac12 J_2 & \tfrac12 J_2\\[2pt] \tfrac12 J_2 & I_2 & \tfrac12 J_2\\[2pt] \tfrac12 J_2 & \tfrac12 J_2 & I_2 \end{pmatrix},
@@ -148,7 +148,7 @@ $$
 \tilde{Ϛ} = \sum_{b=1}^{d+1}\sum_{i=1}^{d} p_i^{(b)}\,\tilde\Pi_i^{(b)} - e_t ,
 $$
 
-for a trace-one state, so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{Ϛ}$, and the formula above reconstructs it.
+for a state of unit trace (the matrix normalisation; for the qubit this is $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$), so the $d(d+1)$ probabilities determine the state linearly. For the qubit this is the statement that three measurements, each with two outcomes, fix the three Bloch components: the six probabilities determine $\tilde{Ϛ}$, and the formula above reconstructs it.
 
 ### Verification for the qubit
 
@@ -182,7 +182,7 @@ $$
 H(A) + H(B) \ \geq\ \log_2\frac{1}{c} = \log_2 2 = 1 \ \text{bit} .
 $$
 
-The bound is attained at the eigenstates of one of the two bases: for the eigenstate $\tilde\Pi_1(\vec u_x)$ of the first basis, the first measurement is certain, $H(A) = 0$, while the second measurement is uniform, $H(B) = h_2(\tfrac12) = 1$ bit, so the sum is exactly one bit. The algebra supplies the interpretation: the overlap of an idempotent of one basis with an idempotent of another is the trace pairing $\tfrac12$, and a uniform two-outcome distribution carries exactly one bit. Two complementary bases therefore cannot both be known, and the minimum ignorance is one bit — the qubit cannot carry the information of two complementary observables at once. This is the entropic restatement of the algebraic fact that $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s'}(\vec u_k)) = \tfrac12$ across bases.
+The bound is attained at the eigenstates of one of the two bases: for the eigenstate $\tilde\Pi_1(\vec u_x)$ of the first basis, the first measurement is certain, $H(A) = 0$, while the second measurement is uniform, $H(B) = h_2(\tfrac12) = 1$ bit, so the sum is exactly one bit. The algebra supplies the interpretation: the overlap of an idempotent of one basis with an idempotent of another is the normalised plain form, read as the trace pairing, $\tfrac12$, and a uniform two-outcome distribution carries exactly one bit. Two complementary bases therefore cannot both be known, and the minimum ignorance is one bit — the qubit cannot carry the information of two complementary observables at once. This is the entropic restatement of the algebraic fact that $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_k)) = \tfrac12$ across bases.
 
 ### The frame identity
 
@@ -226,8 +226,8 @@ not $\tfrac14$. For example $|\langle\Phi^+|\psi\rangle\otimes|\psi\rangle|^2 = 
 
 **What it does.**
 
-- It identifies a basis of the defining module with an idempotent basis $\{\tilde\Pi_i\}$, $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$, $\sum_i\tilde\Pi_i = e_t$, and the overlap between rays with the trace pairing of idempotents.
-- It derives mutual unbiasedness of the three qubit bases directly from the pairwise orthogonality of the imaginary units, giving $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s'}(\vec u_k)) = \tfrac12$ for $j\neq k$.
+- It identifies a basis of the defining module with an idempotent basis $\{\tilde\Pi_i\}$, $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$, $\sum_i\tilde\Pi_i = e_t$, and the overlap between rays with the normalised plain form of idempotents, read as the trace pairing.
+- It derives mutual unbiasedness of the three qubit bases directly from the pairwise orthogonality of the imaginary units, giving $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_k)) = \tfrac12$ for $j\neq k$.
 - It exhibits the maximal set: three bases for the qubit, with the explicit block-form overlap matrix.
 - It gives the reconstruction formula $\tilde{Ϛ} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ and verifies it for the qubit.
 - It shows that the tensor product does not preserve maximality of MUB sets, and that the Bell basis is not unbiased with respect to the product basis.
@@ -243,7 +243,7 @@ not $\tfrac14$. For example $|\langle\Phi^+|\psi\rangle\otimes|\psi\rangle|^2 = 
 
 **1. MUBs from the algebra in higher dimensions.** The qubit's three MUBs come from the three imaginary units of $\mathbb{H}$. Is there an algebraic construction of the five MUBs of $\mathbb{B}\otimes\mathbb{B}$ from the idempotent structure of the tensor-product algebra, rather than from the general theory of complex Hadamard matrices?
 
-**2. Unbiasedness and the biquaternion norm.** The mutual-unbiasedness condition is a condition on the trace pairing, not on the biquaternion norm. Is there a biquaternion-norm criterion for unbiasedness, and does it select the same bases?
+**2. Unbiasedness and the biquaternion norm.** The mutual-unbiasedness condition is a condition on the normalised plain form, read as the trace pairing, not on the biquaternion norm. Is there a biquaternion-norm criterion for unbiasedness, and does it select the same bases?
 
 **3. Maximal entanglement versus unbiasedness.** The Bell basis is maximally entangled and maximally biased relative to the product basis. Is there a general trade-off, in the algebra, between the entanglement of a basis and its unbiasedness relative to a product basis?
 
@@ -253,7 +253,7 @@ not $\tfrac14$. For example $|\langle\Phi^+|\psi\rangle\otimes|\psi\rangle|^2 = 
 
 ## Summary
 
-A basis of the defining module is an idempotent basis of $\mathbb{M}_+$: a complete orthogonal family of rank-one idempotents, $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$. Two bases are mutually unbiased when the trace pairing of any idempotent of one with any idempotent of the other equals $1/d$; equivalently, when every ray of one has squared overlap $1/d$ with every ray of the other. For the native qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and they are the eigenbases of the three imaginary units:
+A basis of the defining module is an idempotent basis of $\mathbb{M}_+$: a complete orthogonal family of rank-one idempotents, $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$ and $\sum_i\tilde\Pi_i = e_t$. Two bases are mutually unbiased when the normalised plain form of any idempotent of one with any idempotent of the other equals $1/d$; equivalently, when every ray of one has squared overlap $1/d$ with every ray of the other. For the native qubit the maximum number of mutually unbiased bases is $d+1 = 3$, and they are the eigenbases of the three imaginary units:
 
 $$
 \mathcal{B}_k = \bigl\{\tfrac12(e_t+i\vec u_k),\ \tfrac12(e_t-i\vec u_k)\bigr\}, \qquad k=1,2,3 .
@@ -262,8 +262,8 @@ $$
 The unbiasedness is derived from the algebra alone: for $j\neq k$ the traceless terms vanish and the units' orthogonality gives
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s'}(\vec u_k)\bigr) = \tfrac12 , \qquad
-\mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_k)\tilde\Pi_{s'}(\vec u_k)\bigr) = \delta_{ss'} .
+\mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_k)\bigr) = \tfrac12 , \qquad
+\mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_k)\tilde\Pi_{s_2}(\vec u_k)\bigr) = \delta_{ss_2} .
 $$
 
 The overlap matrix of the six pure states has identity blocks on the diagonal and constant blocks $\tfrac12 J_2$ off it. The three measurements are tomographically complete: $\tilde{Ϛ} = \sum_{k=1}^{3}\sum_{s=\pm} p_s^{(k)}\tilde\Pi_s(\vec u_k) - e_t$, verified on a generic state. For two qubits the maximum is $d+1=5$ bases; the tensor product of qubit MUB sets supplies only three, and the Bell basis is not unbiased with respect to the product basis, its overlap being $\tfrac12$ rather than $\tfrac14$. The framework thus supplies the qubit's complete MUB set natively, from the three imaginary units, and exhibits the failure of naive tensoring.
@@ -277,11 +277,11 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 | $i$ | Central scalar imaginary |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents along $\vec u$ |
 | $\tilde\Pi_i\tilde\Pi_j = \delta_{ij}\tilde\Pi_i$, $\sum_i\tilde\Pi_i = e_t$ | Idempotent basis |
-| $\mathrm{Tr}(\tilde\Pi\tilde\Pi') = 2\,\mathrm{Sc}(\tilde\Pi\tilde\Pi')$ | Trace pairing (overlap) |
-| $\mathrm{Tr}(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b')}) = 1/d$ for $b\neq b'$ | Mutual unbiasedness |
+| $\mathrm{Tr}(\tilde\Pi\tilde\Pi_2) = 2\,\mathrm{Sc}(\tilde\Pi\tilde\Pi_2)$ | Trace reading of the plain form (overlap) |
+| $\mathrm{Tr}(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}) = 1/d$ for $b\neq b_2$ | Mutual unbiasedness |
 | $\mathcal{B}_k = \{\tilde\Pi_{1,2}(\vec u_k)\}$ | The three coordinate bases |
 | $\vec U_x=i\vec e_x,\ \vec U_y=i\vec e_y,\ \vec U_z=i\vec e_z$ | Hermitian involutions defining the bases |
-| $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s'}(\vec u_k)) = \tfrac12$ ($j\neq k$) | Unbiasedness of the coordinate bases |
+| $\mathrm{Tr}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_k)) = \tfrac12$ ($j\neq k$) | Unbiasedness of the coordinate bases |
 | $\tilde{Ϛ} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ | Reconstruction from a complete MUB set |
 | $\tilde\Pi_\epsilon$ | Bell idempotents (maximally entangled basis) |
 | $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\mathrm{prod}}) = \tfrac12$ | Bell basis is biased relative to the product basis |
@@ -295,4 +295,4 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 - S. Bandyopadhyay, P. O. Boykin, V. Roychowdhury, and F. Vatan, "A new proof of the existence of mutually unbiased bases," *Algorithmica* **34** (2002) 512–528, for the Pauli-group construction in prime-power dimensions.
 - I. Bengtsson and K. Życzkowski, *Geometry of Quantum States* (Cambridge, 2006), for the geometry of bases, complementarity, and unbiasedness.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Pauli bases and the cryptographic use of complementary bases.
-- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*.
+- The companion articles of this series: *Quantum Physics in Biquaternionic Form*, *The Born Rule from the Plain Form — Derivation and Comparison*, *The Bloch Ball as the Normalised Slice of the Future Light Cone*, and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*.

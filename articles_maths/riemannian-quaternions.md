@@ -4,7 +4,7 @@
 
 Hamilton's quaternions are the four-dimensional real algebra with a fixed basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and the interval between two events of the algebra is the scalar part of the square of their difference, $\mathrm{Sc}(\tilde q^2) = q_t^2-\vec q\cdot\vec q$. A **Riemannian quaternion** is a quaternion whose four components are read against a basis that is allowed to vary from point to point, so that the four squared basis vectors, and with them the interval, become positional data. The name is the source's, and it is not the name of a Riemannian manifold: the object is a quaternion in a moving frame, and the geometry it carries is the diagonal form read from the frame.
 
-The article develops three things. The first is the frame and the interval: the frame is a quadruple of basis elements whose squares are prescribed, the interval of a displacement is diagonal in the frame with the squares of the frame as its coefficients, and the metric is therefore dynamic exactly when the frame is. The second is the differential calculus of the construction: the derivative of a coefficient times a frame element splits, by the Leibniz rule, into a part from the coefficient and a part from the frame, and the source names the resulting freedom of attribution the *general equivalence principle*. The third is the **rope**, the vector part of the square of a displacement, which is the companion of the metric in the construction and is nonzero exactly when the displacement has both a temporal and a spatial part.
+The article develops three things. The first is the frame and the interval: the frame is a quadruple of basis elements whose squares are prescribed, the interval of a displacement is diagonal in the frame with the squares of the frame as its coefficients, and the metric is therefore dynamic exactly when the frame is. The second is the differential calculus of the construction: the derivative of a coefficient times a frame element splits, by the Leibniz rule, into a part from the coefficient and a part from the frame, and the source names the resulting freedom of attribution the *general equivalence principle*. The third is the **rope**, the vector part of the square of a displacement, which is the companion of the metric in the construction and is nonzero exactly when the displacement has both a scalar and a vector part.
 
 The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used.
 
@@ -44,7 +44,7 @@ where $w_0 = 1$ and $w_1 = w_2 = w_3 = \tfrac13$ are the source's weights and $a
 
 *Proof.* Each frame element is a real multiple of a basis element, so a real linear combination of the four is a quaternion, and the coordinate read-off is immediate. Multiplication of two Riemannian quaternions is the multiplication of the algebra, in the fixed basis, once the coordinates are read off.
 
-**Remark (the parity weights).** The weights $1$ and $\tfrac13$ are the source's convention, stated there as a parity between the scalar and the sum of the three spatial components, by the observation that on the light cone the total change in space equals the change in time. They introduce a single numerical factor $\tfrac19$ in the spatial part of the interval, displayed below, so that the interval of the frame equals the interval of the unscaled coordinates with the three spatial coefficients measured in units of three. With unit weights the same construction is free of that factor.
+**Remark (the parity weights).** The weights $1$ and $\tfrac13$ are the source's convention, stated there as a parity between the scalar and the sum of the three vector components, by the observation that on the null cone the total change in the vector coordinates equals the change in the scalar coordinate. They introduce a single numerical factor $\tfrac19$ in the vector part of the interval, displayed below, so that the interval of the frame equals the interval of the unscaled coordinates with the three vector coefficients measured in units of three. With unit weights the same construction is free of that factor.
 
 ## The Interval
 
@@ -84,9 +84,9 @@ $$
 \mathrm{Sc}(\mathrm dA^2) = (\mathrm da_0)^2f - \frac{1}{9f}\bigl((\mathrm da_1)^2+(\mathrm da_2)^2+(\mathrm da_3)^2\bigr),
 $$
 
-a form of signature $(1,3)$ wherever $f>0$, whose single free function is the square of the temporal frame element.
+a form of signature $(1,3)$ wherever $f>0$, whose single free function is the square of the scalar frame element.
 
-*Proof.* Substitute $\hat\imath_0^2 = f$ and $\imath_k^2 = 1/f$ in the theorem. The signature is the diagonal one: the temporal coefficient $f$ is positive and the three spatial coefficients $-1/(9f)$ are negative when $f>0$.
+*Proof.* Substitute $\hat\imath_0^2 = f$ and $\imath_k^2 = 1/f$ in the theorem. The signature is the diagonal one: the scalar coefficient $f$ is positive and the three vector coefficients $-1/(9f)$ are negative when $f>0$.
 
 ### The Metric Is Dynamic
 
@@ -140,17 +140,17 @@ $$
 \mathrm{Vect}(\mathrm dA^2) = 2\bigl(\mathrm da_0\bigr)\sum_{k=1}^{3}w_k(\mathrm da_k)\,\hat\imath_0\hat\imath_k.
 $$
 
-With the source's weights $w_k=\tfrac13$ this is $\mathrm{Vect}(\mathrm dA^2) = 2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$, and the three products $\hat\imath_0\hat\imath_k$ of a temporal frame element with a spatial one are the source's **3-rope**.
+With the source's weights $w_k=\tfrac13$ this is $\mathrm{Vect}(\mathrm dA^2) = 2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$, and the three products $\hat\imath_0\hat\imath_k$ of a scalar frame element with a vector one are the source's **3-rope**.
 
 *Proof.* Write $\mathrm dA = c_0\hat\imath_0+\vec c$ with $\vec c = \sum_k c_k\hat\imath_k$ and $c_k = w_k\mathrm da_k$. Then $\mathrm dA^2 = c_0^2\hat\imath_0^2 + c_0\hat\imath_0\vec c + \vec c c_0\hat\imath_0 + \vec c^2$. The vector part of $\vec c^2$ is zero, because the square of a pure quaternion is a scalar, and the two middle terms are each $c_0\hat\imath_0\vec c$, with $\hat\imath_0$ central; adding them gives the display.
 
-**Corollary.** The rope vanishes exactly when the displacement has no temporal part or no spatial part, that is when $\mathrm da_0 = 0$ or $\mathrm da_1 = \mathrm da_2 = \mathrm da_3 = 0$; otherwise it is a nonzero pure quaternion, and it lies in the three-dimensional subspace spanned by $\hat\imath_0\hat\imath_1,\hat\imath_0\hat\imath_2,\hat\imath_0\hat\imath_3$.
+**Corollary.** The rope vanishes exactly when the displacement has no scalar part or no vector part, that is when $\mathrm da_0 = 0$ or $\mathrm da_1 = \mathrm da_2 = \mathrm da_3 = 0$; otherwise it is a nonzero pure quaternion, and it lies in the three-dimensional subspace spanned by $\hat\imath_0\hat\imath_1,\hat\imath_0\hat\imath_2,\hat\imath_0\hat\imath_3$.
 
 *Proof.* The frame elements are linearly independent, so the rope is zero exactly when every product $\mathrm da_0\mathrm da_k$ vanishes, that is when one of the two factors fails. The three products $\hat\imath_0\hat\imath_k = \imath_0\imath_k \vec e_k$ span the vector subspace with the frame scales, and the rope is a real linear combination of them.
 
-The rope is the companion of the metric in the construction: the interval is the scalar part of the square of a displacement and is quadratic in the displacement alone, while the rope is the vector part and is bilinear in the temporal part and the spatial part. A displacement that is purely temporal or purely spatial has no rope, and a general displacement has both an interval and a rope.
+The rope is the companion of the metric in the construction: the interval is the scalar part of the square of a displacement and is quadratic in the displacement alone, while the rope is the vector part and is bilinear in the scalar part and the vector part. A displacement that is purely scalar or purely vector has no rope, and a general displacement has both an interval and a rope.
 
-**Remark.** The interval and the rope together are the whole square, $\mathrm dA^2 = \mathrm{Sc}(\mathrm dA^2) + \mathrm{Vect}(\mathrm dA^2)$, so a Riemannian quaternion displacement is determined by the pair, and the interval is the scalar half of the data of the square. The rope, the vector half, records the failure of the displacement to be either purely temporal or purely spatial in the frame.
+**Remark.** The interval and the rope together are the whole square, $\mathrm dA^2 = \mathrm{Sc}(\mathrm dA^2) + \mathrm{Vect}(\mathrm dA^2)$, so a Riemannian quaternion displacement is determined by the pair, and the interval is the scalar half of the data of the square. The rope, the vector half, records the failure of the displacement to be either purely scalar or purely vector in the frame.
 
 ## An Example: the Frame of a Central Function
 
@@ -172,7 +172,7 @@ $$
 \mathrm{Sc}(\mathrm dA^2) = (\mathrm da_0)^2\Bigl(1-\frac{\kappa}{r}\Bigr) - \frac{1}{9\bigl(1-\kappa/r\bigr)}\bigl((\mathrm da_1)^2+(\mathrm da_2)^2+(\mathrm da_3)^2\bigr),
 $$
 
-and the rope is $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$ with the frame of the display. The source reads this frame as the one of a central mass, with $\kappa$ the Schwarzschild radius, and the ratio of the temporal coefficient to the spatial coefficients as the gravitational redshift; the reading is recorded as the source's. The interval of the display is the interval of the frame, and it carries the factor $\tfrac19$ of the source's weights in its spatial part.
+and the rope is $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$ with the frame of the display. The source reads this frame as the one of a central mass, with $\kappa$ the Schwarzschild radius, and the ratio of the scalar coefficient to the vector coefficients as the gravitational redshift; the reading is recorded as the source's. The interval of the display is the interval of the frame, and it carries the factor $\tfrac19$ of the source's weights in its vector part.
 
 ## Comparison with the Fixed-Basis Sibling and with the Moving Frame
 
@@ -184,9 +184,9 @@ and the rope is $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\ima
 
 A Riemannian quaternion is a quaternion read in a frame, that is in a basis $\hat\imath_\mu = \imath_\mu e_\mu$ each of whose elements is a real multiple of a basis element of $\mathbb{H}$, with the source's parity weights $1,\tfrac13,\tfrac13,\tfrac13$ on the four components. The frame is a scaled basis rather than a rotated one, and the four squared frame elements are the data the construction reads.
 
-The interval of a displacement is the scalar part of its square, $\mathrm{Sc}(\mathrm dA^2)$, and it is diagonal in the four coefficient differentials with coefficients $\hat\imath_0^2$ for the temporal one and $\tfrac19\hat\imath_k^2$ for the three spatial ones, that is with the squares of the frame elements as the coefficients of the metric. In the source's one-parameter family of frames, in which the four squares are $f$ and $-1/f$, the interval is $(\mathrm da_0)^2f$ minus $\tfrac19$ of the squared spatial displacement divided by $f$, a form of signature $(1,3)$ wherever $f$ is positive, and the metric is dynamic exactly when $f$ is a function of the point.
+The interval of a displacement is the scalar part of its square, $\mathrm{Sc}(\mathrm dA^2)$, and it is diagonal in the four coefficient differentials with coefficients $\hat\imath_0^2$ for the scalar one and $\tfrac19\hat\imath_k^2$ for the three vector ones, that is with the squares of the frame elements as the coefficients of the metric. In the source's one-parameter family of frames, in which the four squares are $f$ and $-1/f$, the interval is $(\mathrm da_0)^2f$ minus $\tfrac19$ of the squared vector displacement divided by $f$, a form of signature $(1,3)$ wherever $f$ is positive, and the metric is dynamic exactly when $f$ is a function of the point.
 
-The differential of a Riemannian quaternion splits, by the Leibniz rule, into a part from the coefficients and a part from the frame; the attribution of a change between the two parts is the choice of the frame and not the value of the quaternion, and the source calls this freedom the general equivalence principle. The vector part of the square of a displacement is the rope, $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$ in the source's weights; it vanishes exactly when the displacement is purely temporal or purely spatial, and together with the interval it is the whole square, $\mathrm dA^2 = \mathrm{Sc}(\mathrm dA^2)+\mathrm{Vect}(\mathrm dA^2)$. The frame $f = 1-\kappa/r$ is carried through as the example, where the source reads the redshift of a central mass; the reading is the source's and no physical interpretation is drawn in this article.
+The differential of a Riemannian quaternion splits, by the Leibniz rule, into a part from the coefficients and a part from the frame; the attribution of a change between the two parts is the choice of the frame and not the value of the quaternion, and the source calls this freedom the general equivalence principle. The vector part of the square of a displacement is the rope, $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$ in the source's weights; it vanishes exactly when the displacement is purely scalar or purely vector, and together with the interval it is the whole square, $\mathrm dA^2 = \mathrm{Sc}(\mathrm dA^2)+\mathrm{Vect}(\mathrm dA^2)$. The frame $f = 1-\kappa/r$ is carried through as the example, where the source reads the redshift of a central mass; the reading is the source's and no physical interpretation is drawn in this article.
 
 The construction is the second of the two ways presented in the corpus of making the interval of the algebra depend on the frame: the first, *Quaternion Metrics*, varies a quaternion against a fixed basis, and the present one varies the basis of a frame whose four squared elements are the metric.
 

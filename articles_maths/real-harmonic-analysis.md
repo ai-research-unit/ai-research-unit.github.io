@@ -87,7 +87,7 @@ The integral converges absolutely and $\|\mathcal F f\|_\infty \le \|f\|_1$.
 
 **Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{(\mathcal F f)(-\xi)}$.
 
-**Differentiation.** If $f$ is absolutely continuous with $f' \in L^1(\mathbb{R})$, then $\widehat{f'}(\xi) = 2\pi i \xi \, (\mathcal F f)(\xi)$.
+**Differentiation.** If $f$ is absolutely continuous with $\frac{df}{dx} \in L^1(\mathbb{R})$, then $\widehat{\frac{df}{dx}}(\xi) = 2\pi i \xi \, (\mathcal F f)(\xi)$.
 
 **Multiplication by the variable.** If $f \in L^1(\mathbb{R})$ and $a f(a) \in L^1(\mathbb{R})$, then $\mathcal F f$ is differentiable and $\widehat{a f}(\xi) = \frac{i}{2\pi} \frac{d}{d\xi} (\mathcal F f)(\xi)$.
 
@@ -425,11 +425,11 @@ Equivalently, for any centres $a_0, \xi_0 \in \mathbb{R}$ the same lower bound h
 **Proof.** By translation and modulation one may take $a_0 = \xi_0 = 0$. Integration by parts and Plancherel give
 
 $$
-1 = \int_{\mathbb{R}} |f|^2 = -\int_{\mathbb{R}} a \, \frac{d}{da} |f|^2 \, da \le 2 \int_{\mathbb{R}} |a| \, |f| \, |f'| \, da
-\le 2 \left( \int_{\mathbb{R}} a^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |f'|^2 \right)^{\!1/2},
+1 = \int_{\mathbb{R}} |f|^2 = -\int_{\mathbb{R}} a \, \frac{d}{da} |f|^2 \, da \le 2 \int_{\mathbb{R}} |a| \, |f| \, |\frac{df}{dx}| \, da
+\le 2 \left( \int_{\mathbb{R}} a^2 |f|^2 \right)^{\!1/2} \left( \int_{\mathbb{R}} |\frac{df}{dx}|^2 \right)^{\!1/2},
 $$
 
-and $\|f'\|_2 = 2\pi \|\xi \mathcal F f\|_2$ by Plancherel and the differentiation rule.
+and $\|\frac{df}{dx}\|_2 = 2\pi \|\xi \mathcal F f\|_2$ by Plancherel and the differentiation rule.
 
 Equality holds if and only if $f(b) = c \, \exp(-a b^2)$ for some $a > 0$ and $c \in \mathbb{C}$, so the Gaussian is the unique minimizer of the uncertainty product.
 

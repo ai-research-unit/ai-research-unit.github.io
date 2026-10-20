@@ -170,13 +170,13 @@ The definition is the general form of the lifting statement for complete non-Arc
 
 **(a)** $R$ is Henselian.
 
-**(b)** For every $f \in R[x]$ and every $a \in R$ with $\bar f(\bar a) = 0$ and $\bar f'(\bar a) \neq 0$ in $k$, there is $b \in R$ with $f(b) = 0$ and $\bar b = \bar a$; a simple root modulo $\mathrm{M}$ lifts to a root in $R$.
+**(b)** For every $f \in R[x]$ and every $a \in R$ with $\bar f(\bar a) = 0$ and $\bar \frac{df}{dx}(\bar a) \neq 0$ in $k$, there is $b \in R$ with $f(b) = 0$ and $\bar b = \bar a$; a simple root modulo $\mathrm{M}$ lifts to a root in $R$.
 
 **(c)** Every finite $R$-algebra that is a product of copies of the residue field after reduction modulo $\mathrm{M}$ is itself a product of copies of $R$.
 
 **(d)** Every idempotent of $R/\mathrm{M}$ [respectively of a finite $R$-algebra modulo $\mathrm{M}$] lifts to $R$.
 
-**Proof sketch.** (a) $\Rightarrow$ (b): the polynomial $f$ modulo $\mathrm{M}$ is divisible by $x - \bar a$ with complementary factor coprime to $x - \bar a$, since $\bar f'(\bar a) \neq 0$; lifting the factorisation gives a linear factor $x - b$. (b) $\Rightarrow$ (a): given $\bar f = \bar g \bar h$ coprime, the resultant-type construction produces a root modulo $\mathrm{M}$ of a polynomial whose derivative is a unit, and (b) lifts it; induction on the degree gives the full factorisation. The equivalence of (c) and (d) with (a) is the same lifting read through idempotents: an idempotent of the reduction corresponds to a splitting of a finite ring extension into two factors.
+**Proof sketch.** (a) $\Rightarrow$ (b): the polynomial $f$ modulo $\mathrm{M}$ is divisible by $x - \bar a$ with complementary factor coprime to $x - \bar a$, since $\bar \frac{df}{dx}(\bar a) \neq 0$; lifting the factorisation gives a linear factor $x - b$. (b) $\Rightarrow$ (a): given $\bar f = \bar g \bar h$ coprime, the resultant-type construction produces a root modulo $\mathrm{M}$ of a polynomial whose derivative is a unit, and (b) lifts it; induction on the degree gives the full factorisation. The equivalence of (c) and (d) with (a) is the same lifting read through idempotents: an idempotent of the reduction corresponds to a splitting of a finite ring extension into two factors.
 
 **Theorem (valuations and Hensel).** Let $v$ be a valuation of a field $K$. Then $v$ is Henselian — meaning that its valuation ring is a Henselian local ring — if and only if $v$ extends uniquely to every algebraic extension of $K$.
 

@@ -6,7 +6,7 @@ The companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form
 
 The interest of the mechanism for the framework is exactly this economy. The algebra's scalars are central, and the central scalar is the only scalar the abelian gauge structure of the companion articles can carry. The Higgs mechanism uses the radial mode of that scalar and needs a potential and a vacuum value; the Stueckelberg mechanism uses the phase and needs only the shift. In the abelian sector the two are the two ends of one construction: the Higgs mechanism with the radial mode taken infinitely heavy reduces to the Stueckelberg mechanism, and conversely the Stueckelberg model embeds in the abelian Higgs as its low-energy limit. This article derives the invariant mass term, carries out the gauge fixing and the degree-of-freedom count, relates the mechanism to the abelian Higgs, and states what the algebra supplies and what does not carry over to the non-abelian case.
 
-We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The abelian connection is $\tilde{A}=ie_tA_0+\vec A\in\mathbb{M}_-$ with components $A_\mu$, transforming as $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ with $\Gamma$ a real central scalar, so that $A'_\mu=A_\mu-\partial/\partial Q_\mu\,\Gamma$; the covariant derivative is $D=\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\kappa=ϙ/\hbar$; the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with components $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$. The gradient and d'Alembertian are $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the general quaternionic bilinear form on $\mathbb{M}_-$ is $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed. The informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is kept distinct from the matrix trace.
+We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The abelian connection is $\tilde{A}=ie_tA_0+\vec A\in\mathbb{M}_-$ with components $A_\mu$, transforming as $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$ with $\Gamma$ a real central scalar, so that $A_{2,\mu}=A_\mu-\partial/\partial Q_\mu\,\Gamma$; the covariant derivative is $D=\tilde{\nabla}+\tfrac{iϙ}{\hbar}\tilde{A}$ with $\kappa=ϙ/\hbar$; the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with components $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$. The gradient and d'Alembertian are $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the general quaternionic bilinear form on $\mathbb{M}_-$ is $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})$. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed. The informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is kept distinct from the matrix trace.
 
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive field equation, the Lorenz condition and the obstruction of the explicit mass term.
 - Companion article *Canonical Quantization of the Biquaternion Proca Field*, for the three polarizations, the second-class constraint structure and the propagator.
@@ -51,9 +51,9 @@ the longitudinal projector being the term that the mass creates. In the Stueckel
 
 Let $\tilde Q_5=\chi e_t$ be a real **central** scalar, and let it transform by a shift under the abelian gauge transformation:
 $$
-\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma ,
+\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma ,
 \qquad
-\chi'=\chi-\Gamma ,
+\chi_2=\chi-\Gamma ,
 \qquad
 \Gamma\in\mathbb{R}.
 $$
@@ -63,7 +63,7 @@ $$
 $$
 which is what the connection becomes in the unitary gauge $\chi=0$, is then gauge invariant,
 $$
-\tilde A_{\mathrm u}'=\tilde A'-\tilde\nabla\chi'=\tilde A-\tilde\nabla\Gamma-\tilde\nabla\chi+\tilde\nabla\Gamma=\tilde A-\tilde\nabla\chi=\tilde A_{\mathrm u} ,
+\tilde A_{\mathrm u,2}=\tilde A_2-\tilde\nabla\chi_2=\tilde A-\tilde\nabla\Gamma-\tilde\nabla\chi+\tilde\nabla\Gamma=\tilde A-\tilde\nabla\chi=\tilde A_{\mathrm u} ,
 $$
 a cancellation that was checked explicitly on polynomial test fields, and the Stueckelberg Lagrangian is
 $$
@@ -223,11 +223,11 @@ Three properties make the Stueckelberg mechanism the framework's natural route t
 
 ### What Does Not Carry Over: The Non-Abelian Case
 
-The mechanism as constructed is abelian. Its essential ingredient is that the shift is a single function and the field strength $F_{\mu\nu}$ is invariant by itself; in the non-abelian theory the field strength is not invariant but transforms in the adjoint, $F'_{\mu\nu}=UF_{\mu\nu}U^{-1}$, and a scalar that restores the mass term must transform in the adjoint as well, so that $D_\mu\chi$ and $F_{\mu\nu}$ sit in the same representation. The Stueckelberg mechanism for a non-abelian group therefore requires a scalar in the **adjoint** representation, and the non-linear sigma model of the Goldstone fields. The framework's central scalar is a singlet of the compact factor; its covariant derivative is the ordinary derivative and contains no adjoint action, so it cannot supply the invariant combination for the non-abelian directions. The same limitation that prevents the central scalar from breaking the non-abelian group in the Higgs mechanism prevents it from restoring the non-abelian mass term here. The framework's Stueckelberg mechanism is an abelian mechanism, and it reaches the central direction and no other.
+The mechanism as constructed is abelian. Its essential ingredient is that the shift is a single function and the field strength $F_{\mu\nu}$ is invariant by itself; in the non-abelian theory the field strength is not invariant but transforms in the adjoint, $F_{2,\mu\nu}=UF_{\mu\nu}U^{-1}$, and a scalar that restores the mass term must transform in the adjoint as well, so that $D_\mu\chi$ and $F_{\mu\nu}$ sit in the same representation. The Stueckelberg mechanism for a non-abelian group therefore requires a scalar in the **adjoint** representation, and the non-linear sigma model of the Goldstone fields. The framework's central scalar is a singlet of the compact factor; its covariant derivative is the ordinary derivative and contains no adjoint action, so it cannot supply the invariant combination for the non-abelian directions. The same limitation that prevents the central scalar from breaking the non-abelian group in the Higgs mechanism prevents it from restoring the non-abelian mass term here. The framework's Stueckelberg mechanism is an abelian mechanism, and it reaches the central direction and no other.
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The carrier: the Stueckelberg field as the central scalar $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the vector as the material connection $\tilde{A}\in\mathbb{M}_-$. The gauge transformation and the invariant combination: $\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi$ is invariant under $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, $\chi'=\chi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}$, with the sign of the Proca companion, and its reduction to Proca in the gauge $\chi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.
+**Supplied by the algebra, and recomputed here.** The carrier: the Stueckelberg field as the central scalar $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, and the vector as the material connection $\tilde{A}\in\mathbb{M}_-$. The gauge transformation and the invariant combination: $\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi$ is invariant under $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$, $\chi_2=\chi-\Gamma$, checked on test fields. The invariant mass term as the biquaternion norm $-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}$, with the sign of the Proca companion, and its reduction to Proca in the gauge $\chi=0$. The identification of the Stueckelberg scalar with the phase of the central scalar, hence with the would-be Goldstone mode of the abelian Higgs companion. The constraint structure: the scalar equation is the divergence of the vector equation, so the scalar is the longitudinal mode.
 
 **Imported, and left visible.** The Stueckelberg construction itself; the $R_\xi$ gauge-fixing condition and the gauge-parameter independence of physical amplitudes; the degree-of-freedom count and the second-class constraint analysis, the latter from the Proca companion; the propagator and the $\xi$-dependent scalar mass; the relation to the abelian Higgs and the limit in which the radial mode decouples; and the non-abelian extension with an adjoint scalar. All are standard and are cited as such.
 
@@ -235,7 +235,7 @@ The mechanism as constructed is abelian. Its essential ingredient is that the sh
 
 ## Summary
 
-The Proca mass term is not invariant under the abelian gauge transformation, and the Stueckelberg mechanism restores the invariance by introducing a central scalar that shifts. With $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ and $\chi'=\chi-\Gamma$, the combination
+The Proca mass term is not invariant under the abelian gauge transformation, and the Stueckelberg mechanism restores the invariance by introducing a central scalar that shifts. With $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$ and $\chi_2=\chi-\Gamma$, the combination
 $$
 \tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi
 $$
@@ -260,8 +260,8 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; home of the Stueckelberg scalar |
-| $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ | Abelian connection and its gauge law |
-| $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, $\chi'=\chi-\Gamma$ | Stueckelberg field and its shift |
+| $\tilde{A}\in\mathbb{M}_-$, $\tilde{A}_2=\tilde{A}-\tilde{\nabla}\Gamma$ | Abelian connection and its gauge law |
+| $\tilde Q_5=\chi e_t\in\mathbb{C}_{\mathbb{B}}$, $\chi_2=\chi-\Gamma$ | Stueckelberg field and its shift |
 | $\tilde\Phi_{\mathrm{St}}=\rho\,\exp(i\tilde Q_5)\in\mathbb{C}_{\mathbb{B}}$ | Central scalar whose phase is the Stueckelberg field |
 | $\tilde A_{\mathrm u}=\tilde A-\tilde\nabla\chi$ | Gauge-invariant combination; the connection in the unitary gauge |
 | $\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\mathrm u}\rangle_{\natural}$ | Stueckelberg Lagrangian |

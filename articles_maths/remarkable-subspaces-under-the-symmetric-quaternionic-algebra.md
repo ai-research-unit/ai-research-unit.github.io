@@ -109,7 +109,7 @@ The coefficient is real, so the product is a real multiple of $e_t$, an element 
 $\mathbb{R}e_t\subset\mathbb{M}_+$: the Hermitian subspace is kept inside itself by $\star$. The idempotents of the
 operation are $0$ and $e_t$: the nontrivial idempotents of the algebra, the elements $\tfrac12(e_t+i\vec q_a)$
 over real unit vectors $\vec q_a$, have norm $N=\tfrac14(1-(\vec q_a,\vec q_a))=0$ and are isotropic for
-$\star$ instead of idempotent. The isotropic elements are the real light cone, the elements with
+$\star$ instead of idempotent. The isotropic elements are the real null cone, the elements with
 $a_t^2=(\vec p,\vec p)$, which
 are the non-pure zero divisors of the Hermitian subspace (*Remarkable Subspaces under the General Quaternionic
 Algebra of Biquaternions*).
@@ -126,7 +126,7 @@ $$
 The coefficient is real but the product is a real multiple of $e_t$, which lies in $\mathbb{H}_{\mathbb{B}}$
 and not in $\mathbb{M}_-$: the subspace is **not** kept inside itself by $\star$, and the **smallest nonzero value off the
 subspace** is $e_t$, produced by the pair $\vec e_z,\vec e_z$. The idempotent is $0$ alone, $e_t$ not lying in the
-subspace; the isotropic elements are the real light cone of the subspace, the elements with
+subspace; the isotropic elements are the real null cone of the subspace, the elements with
 $(\vec p,\vec p)=a_t^2$.
 
 ## The Table of the Remarkable Subspaces
@@ -137,8 +137,8 @@ $(\vec p,\vec p)=a_t^2$.
 | $\mathrm{Vect}(\mathbb{B})$ | $\vec e_k,\,i\vec e_k$ | $(\vec Q_1,\vec Q_2)e_t$ | no | $e_t$ at $\vec e_x,\vec e_x$ | the pure zero divisors | $0$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $e_t,\dots,\vec e_z$ | $\bigl(\sum_\mu h_\mu g_\mu\bigr)e_t$ | yes | — | none | $0,\,e_t$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | $ie_t,\dots,i\vec e_z$ | $-\bigl(\sum_\mu h_\mu g_\mu\bigr)e_t$ | no | $-e_t$ at $i\vec e_x,i\vec e_x$ | none | $0$ |
-| $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $\bigl(a_tb_t-(\vec p,\vec q)\bigr)e_t$ | yes | — | the real light cone | $0,\,e_t$ |
-| $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $\bigl((\vec p,\vec q)-a_tb_t\bigr)e_t$ | no | $e_t$ at $\vec e_z,\vec e_z$ | the real light cone | $0$ |
+| $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $\bigl(a_tb_t-(\vec p,\vec q)\bigr)e_t$ | yes | — | the real null cone | $0,\,e_t$ |
+| $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $\bigl((\vec p,\vec q)-a_tb_t\bigr)e_t$ | no | $e_t$ at $\vec e_z,\vec e_z$ | the real null cone | $0$ |
 
 **Remark (the three that stay inside and the three that leave).** The operation is kept inside itself by
 exactly three of the remarkable subspaces — the centre, the quaternion subspace and the Hermitian subspace — and it
@@ -158,13 +158,13 @@ $\tilde Q_3$ the equation $\tilde Q_3\star\tilde Q_1=e_t$ has the affine hyperpl
 solutions, since the form is non-degenerate; but there is no unit, so no element is invertible in the sense of
 the operation.
 
-**Remark (the two definite rows and the two light cones).** The quaternion and anti-quaternion subspaces are
+**Remark (the two definite rows and the two null cones).** The quaternion and anti-quaternion subspaces are
 the two definite rows: on each the coefficient is a real form of a single sign, so no nonzero element is
 isotropic and no nonzero element is a zero divisor of the parent plain product (the block itself has no
 regular element, its zero-divisor set being everything but the origin). The centre is indefinite over the reals but anisotropic
 over $\mathbb{C}$; the vector subspace carries the complex isotropic cone of the pure zero divisors; and the
-two Hermitian subspaces carry the two real light cones of the non-pure zero divisors. The three isotropic
-readings — none, the complex cone, the real light cone — are the ones recorded in the table and developed in
+two Hermitian subspaces carry the two real null cones of the non-pure zero divisors. The three isotropic
+readings — none, the complex cone, the real null cone — are the ones recorded in the table and developed in
 *Remarkable Subspaces under the General Quaternionic Algebra*.
 
 ## Worked Examples
@@ -206,7 +206,7 @@ subspace, the vector subspace producing a complex multiple of $e_t$ and the anti
 subspaces a real one; the smallest nonzero values off are $e_t$ at $\vec e_x,\vec e_x$, $-e_t$ at $i\vec e_x,i\vec e_x$ and $e_t$ at
 $\vec e_z,\vec e_z$. The idempotents are $0$ and $e_t$ on the three subspaces that contain $e_t$ and $0$ alone on the
 other three; there is no unit on any subspace. The isotropic elements are none on the two definite rows, the
-pure zero divisors on the vector subspace, none for the complex form on the centre, and the real light cones of
+pure zero divisors on the vector subspace, none for the complex form on the centre, and the real null cones of
 the non-pure zero divisors on the two Hermitian subspaces. The form whose coefficient the product reads has
 the signatures $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$ on the remarkable subspaces, and the product carries the
 isotropic set appropriate to each.

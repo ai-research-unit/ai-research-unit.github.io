@@ -112,7 +112,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$. The dimension already says
 
 The partial trace is the map that discards a factor. In the matrix representation, for a bipartite state $M$ on the basis $|ij\rangle$,
 $$
-\big(\mathrm{Tr}_B M\big)_{ii'}=\sum_j M_{ij,i'j},
+\big(\mathrm{Tr}_B M\big)_{i,i_2}=\sum_j M_{ij,i_2j},
 $$
 and it is completely positive and trace preserving. Its image is a state of the remaining factor: if $M\ge0$ and $\mathrm{Tr}M=1$ then $\mathrm{Tr}_B M\ge0$ with trace one. Applied twice it gives the single-subsystem marginals. The biquaternion content of the operation is only the trace that enters it: on a factor, for elements $\tilde Q_1$ and $\tilde Q_2$ of the two factors, $\mathrm{Tr}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\,\mathrm{Tr}(\tilde Q_2)=\tilde Q_1\cdot2\,\mathrm{Sc}(\tilde Q_2)$, so the biquaternion trace $2\,\mathrm{Sc}$ is exactly the normalization that makes the discarded factor contribute its expectation.
 
@@ -306,7 +306,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; many-mode algebra |
 | $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimes A_n^{(1)})=\prod_i\mathrm{Tr}(\tilde Q_i)$ | Product trace; $\mathrm{Tr}(e_t^{\otimes n})=2^n$ |
 | $\rho_{AB},\rho_{BC},\rho_B$ | Reduced states (partial traces) |
@@ -334,4 +334,4 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 - Companion article *The GNS Construction in the Biquaternion Framework*, for the states of $\mathbb{B}$, the Bloch ball, and the trace state.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the capacity statement: one fermionic mode and no more.
 - Companion article *The Biquaternion Vacuum as a Minimal Idempotent*, for the minimal idempotents and the pure boundary.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian subspace and the trace pairing.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian subspace and the plain form.

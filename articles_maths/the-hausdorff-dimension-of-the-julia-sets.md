@@ -48,10 +48,10 @@ The definition, the countable stability, the product rules and the comparison wi
 
 ## The Bowen Equation for Hyperbolic Julia Sets
 
-**Definition.** Let $J = J(f)$ be a **hyperbolic** Julia set of a polynomial of degree $d \geq 2$, so that $f$ is expanding on $J$: there are $C > 0$ and $\rho > 1$ with $|(f^n)'(z)| \geq C\rho^n$ for all $z \in J$ and $n \geq 1$. The **pressure function** of the potential $-t\log|f'|$ is
+**Definition.** Let $J = J(f)$ be a **hyperbolic** Julia set of a polynomial of degree $d \geq 2$, so that $f$ is expanding on $J$: there are $C > 0$ and $\rho > 1$ with $|\\frac{d}{dz}(f^n)(z)| \geq C\rho^n$ for all $z \in J$ and $n \geq 1$. The **pressure function** of the potential $-t\log|\frac{df}{dz}|$ is
 
 $$
-P(t) = \lim_{n \to \infty} \frac{1}{n} \log \sum_{f^n(w) = w} |(f^n)'(w)|^{-t} ,
+P(t) = \lim_{n \to \infty} \frac{1}{n} \log \sum_{f^n(w) = w} |\\frac{d}{dz}(f^n)(w)|^{-t} ,
 $$
 
 the sum being over the fixed points of $f^n$ or, equivalently, over any conformal partition of $J$ into pieces of diameter tending to zero.
@@ -68,9 +68,9 @@ $$
 \dim_H J(f) = s .
 $$
 
-The equilibrium state $\mu_s$ of the potential $-s\log|f'|$ is the invariant measure of **full dimension**: it is ergodic, its measure-theoretic entropy is $h_{\mu_s} = s\,\chi_{\mu_s}$ with $\chi_{\mu_s} = \int\log|f'|\,d\mu_s$, and its Hausdorff dimension is $s$, so that $\dim_H \mu_s = \dim_H J(f)$.
+The equilibrium state $\mu_s$ of the potential $-s\log|\frac{df}{dz}|$ is the invariant measure of **full dimension**: it is ergodic, its measure-theoretic entropy is $h_{\mu_s} = s\,\chi_{\mu_s}$ with $\chi_{\mu_s} = \int\log|\frac{df}{dz}|\,d\mu_s$, and its Hausdorff dimension is $s$, so that $\dim_H \mu_s = \dim_H J(f)$.
 
-**Proof sketch.** The pressure is finite and real-analytic for $t$ real, because the potential $-t\log|f'|$ is Hölder and the map is uniformly expanding; convexity is the general convexity of the pressure for a real potential, and monotonicity follows from $\log|f'| > 0$ on the hyperbolic Julia set. The Bowen equation has a unique root because $P(0) = \log d > 0$ and $P(t) \to -\infty$. The root equals the dimension because the level sets of the partition of $J$ into pieces of diameter $|(f^n)'|^{-1}$ obey the Moran covering bound: the sum $\sum|(f^n)'|^{-t}$ is comparable to the $t$-dimensional content of the $n$-th level, and its exponential growth rate passes through $0$ exactly at $t = \dim_H J$. The equilibrium state has dimension $s$ by the dimension formula of Ledrappier and Young, and it is the measure of maximal dimension by the same covering estimate. The pressure, the equilibrium states and the dimension formula are those of *Ergodic Theory* and of *The Julia Sets of a Complex Polynomial*.
+**Proof sketch.** The pressure is finite and real-analytic for $t$ real, because the potential $-t\log|\frac{df}{dz}|$ is Hölder and the map is uniformly expanding; convexity is the general convexity of the pressure for a real potential, and monotonicity follows from $\log|\frac{df}{dz}| > 0$ on the hyperbolic Julia set. The Bowen equation has a unique root because $P(0) = \log d > 0$ and $P(t) \to -\infty$. The root equals the dimension because the level sets of the partition of $J$ into pieces of diameter $|\\frac{d}{dz}(f^n)|^{-1}$ obey the Moran covering bound: the sum $\sum|\\frac{d}{dz}(f^n)|^{-t}$ is comparable to the $t$-dimensional content of the $n$-th level, and its exponential growth rate passes through $0$ exactly at $t = \dim_H J$. The equilibrium state has dimension $s$ by the dimension formula of Ledrappier and Young, and it is the measure of maximal dimension by the same covering estimate. The pressure, the equilibrium states and the dimension formula are those of *Ergodic Theory* and of *The Julia Sets of a Complex Polynomial*.
 
 **Example.** For $c = 0$ the Julia set is the circle, and the equations are solved by $s = 1$: the partition of the circle into the $2^n$ arcs carries the weight $2^{-n}$ each, the sum in the pressure is $2^n \cdot 2^{-nt} = 2^{n(1-t)}$, and its growth rate is $(1-t)\log 2$, which vanishes at $t = 1$. The Bowen value is $1$, in agreement with the direct computation.
 
@@ -104,7 +104,7 @@ There are also parameters with a Siegel disc at which the Julia set has dimensio
 
 ## Summary
 
-The Hausdorff dimension of a polynomial Julia set lies between $0$ and $2$, and between $1$ and $2$ when the Julia set is connected; it can be below one when the Julia set is a Cantor set, as for real parameters $c > 1/4$. The quadratic family has two exactly computed cases: $z^2$, whose Julia set is the unit circle of dimension one, and $z^2-2$, whose Julia set is the segment $[-2,2]$, also of dimension one. For a hyperbolic Julia set the dimension is the unique root $s$ of the Bowen equation $P(-s\log|f'|) = 0$, and the equilibrium state of $-s\log|f'|$ is an ergodic invariant measure of Hausdorff dimension exactly $s$; the Bowen value is the measure of maximal dimension, and it agrees with the Hausdorff dimension of the set by the Moran estimate. The dimension is a real-analytic function of the parameter on the hyperbolic parameters, by Ruelle; it equals two on the boundary of the Mandelbrot set and at suitable Siegel parameters, by Shishikura. Beyond these cases the dimension is not known in closed form, and the general geometric measure theory of the Julia sets is that of Part IV.
+The Hausdorff dimension of a polynomial Julia set lies between $0$ and $2$, and between $1$ and $2$ when the Julia set is connected; it can be below one when the Julia set is a Cantor set, as for real parameters $c > 1/4$. The quadratic family has two exactly computed cases: $z^2$, whose Julia set is the unit circle of dimension one, and $z^2-2$, whose Julia set is the segment $[-2,2]$, also of dimension one. For a hyperbolic Julia set the dimension is the unique root $s$ of the Bowen equation $P(-s\log|\frac{df}{dz}|) = 0$, and the equilibrium state of $-s\log|\frac{df}{dz}|$ is an ergodic invariant measure of Hausdorff dimension exactly $s$; the Bowen value is the measure of maximal dimension, and it agrees with the Hausdorff dimension of the set by the Moran estimate. The dimension is a real-analytic function of the parameter on the hyperbolic parameters, by Ruelle; it equals two on the boundary of the Mandelbrot set and at suitable Siegel parameters, by Shishikura. Beyond these cases the dimension is not known in closed form, and the general geometric measure theory of the Julia sets is that of Part IV.
 
 ## Summary of Notation
 
@@ -112,10 +112,10 @@ The Hausdorff dimension of a polynomial Julia set lies between $0$ and $2$, and 
 |---|---|
 | $\dim_H E$ | Hausdorff dimension of $E$ |
 | $\mathcal{H}^s$, $\mathcal{H}^s(J)$ | $s$-dimensional Hausdorff measure and its value on $J$ |
-| $P(t) = P(-t\log\lvert f'\rvert)$ | Pressure of the potential $-t\log\lvert f'\rvert$ |
+| $P(t) = P(-t\log\lvert \frac{df}{dz}\rvert)$ | Pressure of the potential $-t\log\lvert \frac{df}{dz}\rvert$ |
 | $s$, Bowen equation | Root of $P(s)=0$; $\dim_H J = s$ for hyperbolic $J$ |
-| $\mu_s$ | Equilibrium state of $-s\log\lvert f'\rvert$, the measure of full dimension |
-| $\chi_{\mu_s} = \int\log\lvert f'\rvert d\mu_s$ | Lyapunov exponent of $\mu_s$ |
+| $\mu_s$ | Equilibrium state of $-s\log\lvert \frac{df}{dz}\rvert$, the measure of full dimension |
+| $\chi_{\mu_s} = \int\log\lvert \frac{df}{dz}\rvert d\mu_s$ | Lyapunov exponent of $\mu_s$ |
 | $\partial M$ | Boundary of the Mandelbrot set; $\dim_H J_c = 2$ there |
 
 ## Further Reading

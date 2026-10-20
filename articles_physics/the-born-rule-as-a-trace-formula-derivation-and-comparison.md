@@ -1,40 +1,43 @@
-# __The Born Rule as a Trace Formula — Derivation and Comparison__
+# __The Born Rule from the Plain Form — Derivation and Comparison__
 
 ## Introduction
 
-The companion article *Quantum Physics in Biquaternionic Form* identifies the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the common home of the states and observables of a two-state system, and states the Born rule there as the trace formula
+The companion article *Quantum Physics in Biquaternionic Form* identifies the Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the common home of the states and observables of a two-state system, and states the Born rule there as the normalised plain form
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle.
+p=\frac{\langle\tilde{Ϛ},\tilde H\rangle}{\langle\tilde{Ϛ},e_t\rangle}=h_t+\vec r\cdot\vec h,
+\qquad \langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle,\quad \langle e_t\rangle=1.
 $$
 
-Earlier articles use the formula; this article develops it and, as the title promises, separates what the framework **derives** from what it merely **restates**.
+In the $2\times2$ image this reads $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ with $\mathrm{Tr}(\tilde{Ϛ})=1$; the traditional formulation calls that reading the trace formula. This article develops the derivation and separates what the framework **derives** from what it merely **restates**.
 
-The distinction matters because $\mathbb{B}\cong M_2(\mathbb{C})$: any probability formula in the algebra is a formula about $2\times2$ matrices, and any claim that the framework "derives" the Born rule must be read against that isomorphism. What the algebra genuinely supplies is a canonical bilinear pairing — the trace pairing — a canonical family of rank-one idempotents, and the theorem that pairing a state with an idempotent (or an effect) yields a real number in $[0,1]$, that the numbers over a complete family sum to one, and that the pure-state transition probability is $\cos^2(\theta/2)$. That is algebra, and it is derived. What the algebra does not supply is the identification of those numbers with physical frequencies; that is the Born rule itself, and the framework relocates it rather than eliminating it.
+The distinction matters because $\mathbb{B}\cong M_2(\mathbb{C})$: any probability formula in the algebra is a formula about $2\times2$ matrices, and any claim that the framework "derives" the Born rule must be read against that isomorphism. What the algebra genuinely supplies is a canonical bilinear pairing — the plain form — a canonical family of rank-one idempotents, and the theorem that pairing a state with an idempotent (or an effect) yields a real number in $[0,1]$, that the numbers over a complete family sum to one, and that the pure-state transition probability is $\cos^2(\theta/2)$. That is algebra, and it is derived. What the algebra does not supply is the identification of those numbers with physical frequencies; that is the Born rule itself, and the framework relocates it rather than eliminating it.
 
-The article develops the trace pairing and its naturalness; identifies the idempotents with rank-one projectors and derives $p=\mathrm{Tr}(\tilde\Pi\tilde{Ϛ})$; treats effects and non-projective POVMs; compares the result with the standard statements $p=\mathrm{Tr}(E\rho)$ and $|\langle\psi|\phi\rangle|^2$; examines the non-uniqueness of the trace; and closes with an explicit accounting of derivation versus restatement. The standard of proof throughout is algebraic: every claim is a statement about $\mathbb{B}$ and its trace, checkable by expanding in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and no empirical input is used. Conventions are those of the companion articles: $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$; scalar imaginary $i$; $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; and $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. Here $\mathrm{tr}$ denotes the ordinary $2\times2$ trace, related to $\mathrm{Tr}$ by $\mathrm{tr}\circ\varphi=\mathrm{Tr}$.
+The article develops the plain form and its naturalness; identifies the idempotents with rank-one projectors and derives $p=\langle\tilde\Pi,\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle$; treats effects and non-projective POVMs; compares the result with the standard statements $p=\mathrm{Tr}(E\rho)$ and $|\langle\psi|\phi\rangle|^2$; examines the non-uniqueness of the tracial reading; and closes with an explicit accounting of derivation versus restatement. The standard of proof throughout is algebraic: every claim is a statement about $\mathbb{B}$ and its product, checkable by expanding in the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and no empirical input is used. Conventions are those of the companion articles: $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$; scalar imaginary $i$; $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ with $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ and $\langle e_t\rangle=1$; and $\mathrm{Tr}(\tilde Q)=2\langle\tilde Q,e_t\rangle$. Here $\mathrm{tr}$ denotes the ordinary $2\times2$ trace, related to $\mathrm{Tr}$ by $\mathrm{tr}\circ\varphi=\mathrm{Tr}$.
 
-## The Trace Pairing on $\mathbb{M}_+$
+## The Plain Form on $\mathbb{M}_+$
 
 ### The Pairing and Its Naturalness
 
-An element of $\mathbb{M}_+$ is $\tilde{H}=h_te_t+i\vec h$, with $h_t\in\mathbb{R}$ and $\vec h=(h_x,h_y,h_z)\in\mathbb{R}^3$. The trace is
+An element of $\mathbb{M}_+$ is $\tilde{H}=h_te_t+i\vec h$, with $h_t\in\mathbb{R}$ and $\vec h=(h_x,h_y,h_z)\in\mathbb{R}^3$. The plain form is
 
 $$
-\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)=2h_t .
+\langle\tilde{H}_1,\tilde{H}_2\rangle=\mathrm{Sc}(\tilde{H}_1\tilde{H}_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2,
 $$
 
-It is **tracial**, $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1)=\mathrm{Tr}(\tilde{Q}_1\tilde{Q})$, because $\mathrm{Sc}(\tilde{Q}\tilde{Q}_1)=Q_tQ_{1t}-\sum_kQ_kQ_{1k}$ is symmetric, and **normalized** by $\mathrm{Tr}(e_t)=2$, the dimension of the algebra's representation. For two Hermitian elements $\tilde H_1=h_{1t}e_t+i\vec h_1$ and $\tilde H_2=h_{2t}e_t+i\vec h_2$, it defines the **trace pairing**
+obtained from $\tilde{H}_1\tilde{H}_2=(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2)e_t+i(h_{1t}\vec h_2+h_{2t}\vec h_1)-\vec h_1\times\vec h_2$, and its diagonal is the plain norm,
 
 $$
-\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=2(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2),
+\langle\tilde H\rangle=\langle\tilde H,\tilde H\rangle=h_t^2+|\vec h|^2 .
 $$
 
-obtained from $\tilde{H}_1\tilde{H}_2=(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2)e_t+i(h_{1t}\vec h_2+h_{2t}\vec h_1)-\vec h_1\times\vec h_2$, using $(i\vec h_1)(i\vec h_2)=(\vec h_1\cdot\vec h_2)e_t-\vec h_1\times\vec h_2$. In the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the Gram matrix is diagonal, with $\mathrm{Tr}(e_t e_t)=2$, $\mathrm{Tr}(e_t\,i\vec e_\mu)=0$ and $\mathrm{Tr}(i\vec e_\mu\,i\vec e_\nu)=2\delta_{\mu\nu}$. The pairing is positive-definite of signature $(4,0)$: up to the factor $2$, the Euclidean inner product on $\mathbb{R}^4$, and the restriction of the Hilbert–Schmidt form.
+The unit is normalised by $\langle e_t\rangle=1$. In the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the Gram matrix is the identity, so the plain form is positive definite of signature $(4,0)$: the Euclidean inner product on $\mathbb{R}^4$, and the restriction of the Hilbert–Schmidt form up to scale.
 
-Two immediate consequences will be used repeatedly. First, the pairing is bilinear and symmetric: for Hermitian $\tilde H_1,\tilde H_2,\tilde H_3$, $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=\mathrm{Tr}(\tilde{H}_2\tilde{H}_1)$, and expansion in the basis gives $\mathrm{Tr}((\alpha\tilde{H}_1+\beta\tilde{H}_2)\tilde{H}_3)=\alpha\,\mathrm{Tr}(\tilde{H}_1\tilde{H}_3)+\beta\,\mathrm{Tr}(\tilde{H}_2\tilde{H}_3)$. Second, it is positive definite, since $\mathrm{Tr}(\tilde{H}_1^2)=2(h_{1t}^2+|\vec h_1|^2)\geq0$ with equality only for $\tilde{H}_1=0$; the trace pairing is therefore an inner product, not merely a symmetric form.
+Two immediate consequences will be used repeatedly. First, the form is bilinear and symmetric: for Hermitian $\tilde H_1,\tilde H_2,\tilde H_3$, $\langle\tilde{H}_1,\tilde{H}_2\rangle=\langle\tilde{H}_2,\tilde{H}_1\rangle$, and expansion in the basis gives $\langle\alpha\tilde{H}_1+\beta\tilde{H}_2,\tilde{H}_3\rangle=\alpha\langle\tilde{H}_1,\tilde{H}_3\rangle+\beta\langle\tilde{H}_2,\tilde{H}_3\rangle$. Second, it is positive definite, since $\langle\tilde{H}_1\rangle=h_{1t}^2+|\vec h_1|^2\geq0$ with equality only for $\tilde{H}_1=0$; the plain form is therefore an inner product, not merely a symmetric form.
 
-Three properties single it out. **Invariance:** under unitary conjugation $\tilde{H}_1\mapsto\tilde{U}\tilde{H}_1\tilde{U}^{*}$ the pairing is invariant; since the unit quaternions rotate $\vec h_1$ and fix $h_{1t}$, an invariant symmetric bilinear form must be $\mathcal{B}=\alpha h_{1t}h_{2t}+\beta\,\vec h_1\cdot\vec h_2$, so invariance alone leaves two parameters. **Traciality:** requiring the pairing to come from the algebra's product, $\mathcal{B}(\tilde{H}_1,\tilde{H}_2)=f(\tilde{H}_1\tilde{H}_2)$ with $f$ tracial, forces $f$ to be a multiple of $\mathrm{Tr}$ and hence $\alpha=\beta$; this is the condition that pins the form down. **Positivity:** $\alpha,\beta>0$ makes the form positive-definite, capable of producing non-negative probabilities; the scale is fixed by $\mathrm{Tr}(e_t)=2$, though the scale cancels in probabilities, which are ratios. Thus the trace pairing is the unique symmetric pairing compatible with the associative product and positive — but traciality is a genuine assumption, not a consequence of symmetry.
+Three properties single it out. **Invariance:** under unitary conjugation $\tilde{H}_1\mapsto\tilde{U}\tilde{H}_1\tilde{U}^{*}$ the form is invariant; since the unit quaternions rotate $\vec h_1$ and fix $h_{1t}$, an invariant symmetric bilinear form must be $\mathcal{B}=\alpha h_{1t}h_{2t}+\beta\,\vec h_1\cdot\vec h_2$, so invariance alone leaves two parameters. **Product form:** requiring the form to be the scalar part of the algebra's product, $\mathcal{B}(\tilde{H}_1,\tilde{H}_2)=f(\tilde{H}_1\tilde{H}_2)$ with $f$ central and $f(e_t)=1$, forces $f=\mathrm{Sc}$ and hence $\alpha=\beta$; this is the condition that pins the form down. **Positivity:** $\alpha,\beta>0$ makes the form positive-definite, capable of producing non-negative probabilities; the scale is fixed by $\langle e_t\rangle=1$, though the scale cancels in probabilities, which are ratios. Thus the plain form is the unique symmetric pairing compatible with the associative product and positive, once the unit is normalised — the product condition is a genuine assumption, not a consequence of symmetry.
+
+The trace is the reading of this form in the $2\times2$ image: $\operatorname{Tr}(\tilde H)=2\langle\tilde H,e_t\rangle=2h_t$ and $\operatorname{Tr}(\tilde{H}_1\tilde{H}_2)=2\langle\tilde{H}_1,\tilde{H}_2\rangle$, with $\operatorname{Tr}(e_t)=2$. Traciality of the trace, $\operatorname{Tr}(\tilde{Q}\tilde{Q}_1)=\operatorname{Tr}(\tilde{Q}_1\tilde{Q})$, is the symmetry of the plain form, $\mathrm{Sc}(\tilde{Q}\tilde{Q}_1)=Q_tQ_{1t}-\sum_kQ_kQ_{1k}$.
 
 ### It Is Not the Biquaternion Norm
 
@@ -44,13 +47,13 @@ $$
 \langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=\tilde{H}\tilde{H}^{\natural}=(h_t^2-|\vec h|^2)e_t,
 $$
 
-of signature $(1,3)$, whose future light cone is the positivity cone. The state space is the trace-one slice of that cone; the Born rule is a statement about the trace pairing. Positivity of a state is a biquaternion-norm condition, while Born probabilities are trace-pairing quantities. The Born rule therefore does not follow from the light-cone structure of $\mathbb{M}_+$; it follows from the Euclidean trace pairing, a different form on the same space.
+of signature $(1,3)$, whose future light cone is the positivity cone. The state space is the state slice of that cone, normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$; the Born rule is a statement about the plain form. Positivity of a state is a biquaternion-norm condition, while Born probabilities are plain-form quantities. The Born rule therefore does not follow from the light-cone structure of $\mathbb{M}_+$; it follows from the Euclidean plain form, a different form on the same space.
 
 The two forms are complementary, and the idempotents show it clearly. For $\tilde\Pi_{1,2}(\vec u)$ one has $h_t=\tfrac12$ and $|\vec h|=\tfrac12$, so the biquaternion norm vanishes,
 $$
 \langle\tilde\Pi_{1,2}\rangle_{\natural}=\tilde\Pi_{1,2}\tilde\Pi_{1,2}^{\natural}=(h_t^2-|\vec h|^2)e_t=0,
 $$
-placing the idempotents on the boundary of the light cone, while the trace pairing gives $\mathrm{Tr}(\tilde\Pi_{1,2})=1$ and $\mathrm{Tr}(\tilde\Pi_{1,2}^2)=1$. The idempotents are null for the biquaternion norm and unit for the trace pairing; probabilities are read from the second, not the first.
+placing the idempotents on the boundary of the light cone, while the plain form gives $\langle\tilde\Pi_{1,2},e_t\rangle=\tfrac12\langle e_t\rangle$ and $\langle\tilde\Pi_{1,2}\rangle=\tfrac12$. The idempotents are null for the biquaternion norm and normalised for the plain form; probabilities are read from the second, not the first.
 
 ## Idempotents and Rank-One Projections
 
@@ -82,7 +85,7 @@ $$
 $$
 and $(i\vec u)(i\vec u)=(\vec u\cdot\vec u)e_t-\vec u\times\vec u=e_t$, so $\tilde\Pi_1^2=\tfrac12(e_t+i\vec u)=\tilde\Pi_1$; similarly $\tilde\Pi_2^2=\tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2=\tfrac14(e_t-|\vec u|^2e_t)=0$. Conversely, every rank-one projector in $M_2(\mathbb{C})$ has the form $\tfrac12(I_2+\vec u\cdot\boldsymbol{\sigma})$, so the map $\vec u\mapsto\tilde\Pi_1(\vec u)$ is a bijection between the Bloch sphere and the rank-one idempotents of the algebra.
 
-A **state** is a positive trace-one element
+A **state** is a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$,
 
 $$
 \tilde{Ϛ}=\tfrac{1}{2}(e_t+i\vec r),\qquad|\vec r|\leq1,
@@ -92,13 +95,13 @@ mapping to the density matrix $\tfrac{1}{2}(I_2+\vec r\cdot\boldsymbol{\sigma})$
 
 ## Derivation of the Born Probability
 
-For $\tilde{H}=h_te_t+i\vec h$ and $\tilde{Ϛ}=\tfrac{1}{2}(e_t+i\vec r)$, the trace pairing gives the expectation value
+For $\tilde{H}=h_te_t+i\vec h$ and $\tilde{Ϛ}=\tfrac{1}{2}(e_t+i\vec r)$, the state is normalised by the plain form against the unit, $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$, and the expectation value is the Born weight
 
 $$
-\langle\tilde{H}\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_t+\vec r\cdot\vec h.
+\langle\tilde{H}\rangle_{\tilde{Ϛ}}=\frac{\langle\tilde{Ϛ},\tilde{H}\rangle}{\langle\tilde{Ϛ},e_t\rangle}=h_t+\vec r\cdot\vec h.
 $$
 
-**The material element behind the reading.** Every Hermitian $\tilde H$ is $\tilde H=iA$ for a unique anti-Hermitian $A\in\mathbb{M}_-$, the **material element** that is observed. With this substitution the expectation is $\langle iA\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\,iA)=i\,\mathrm{Tr}(\tilde{Ϛ} A)$: the trace $\mathrm{Tr}(\tilde{Ϛ} A)$ is purely imaginary, and the factor $i$ makes the reading real. The Born pairing pairs an $\mathbb{M}_+$ state with an $\mathbb{M}_-$ material element, and the two senses of "observable" are the two writings of one element, the object $A$ and its representative $iA$.
+**The material element behind the reading.** Every Hermitian $\tilde H$ is $\tilde H=iA$ for a unique anti-Hermitian $A\in\mathbb{M}_-$, the **material element** that is observed. With this substitution the expectation is $\langle iA\rangle_{\tilde{Ϛ}}=\langle\tilde{Ϛ},iA\rangle/\langle\tilde{Ϛ},e_t\rangle=i\,\langle\tilde{Ϛ},A\rangle/\langle\tilde{Ϛ},e_t\rangle$: the form $\langle\tilde{Ϛ},A\rangle$ is purely imaginary, and the factor $i$ makes the reading real. The Born pairing pairs an $\mathbb{M}_+$ state with an $\mathbb{M}_-$ material element, and the two senses of "observable" are the two writings of one element, the object $A$ and its representative $iA$.
 
 The spectral decomposition is likewise purely algebraic. Writing $\tilde{H}=h_te_t+i|\vec h|\vec u_h$ and multiplying by $\tilde\Pi_{1,2}(\vec u_h)$, using $(i\vec u_h)(i\vec u_h)=e_t$, gives
 $$
@@ -106,13 +109,13 @@ $$
 $$
 so the eigenvalues are $\lambda_\pm=h_t\pm|\vec h|$ and the spectral projectors are the idempotents. The statement that the idempotents are complete, $\tilde\Pi_1+\tilde\Pi_2=e_t$, is the algebraic form of the spectral theorem for $\tilde{H}\in\mathbb{M}_+$.
 
-For a spectral decomposition $\tilde{H}=\lambda_+\tilde\Pi_1(\vec u_h)+\lambda_-\tilde\Pi_2(\vec u_h)$, with $\vec u_h=\vec h/|\vec h|$, $\lambda_\pm=h_t\pm|\vec h|$ and $\tilde\Pi_1+\tilde\Pi_2=e_t$, the probability of the $+$ outcome is $p_+=\mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ})$. Directly,
+For a spectral decomposition $\tilde{H}=\lambda_+\tilde\Pi_1(\vec u_h)+\lambda_-\tilde\Pi_2(\vec u_h)$, with $\vec u_h=\vec h/|\vec h|$, $\lambda_\pm=h_t\pm|\vec h|$ and $\tilde\Pi_1+\tilde\Pi_2=e_t$, the probability of the $+$ outcome is $p_+=\langle\tilde\Pi_1(\vec u_h),\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle$. Directly,
 
 $$
 \tilde\Pi_1(\vec u_h)\tilde{Ϛ}=\tfrac{1}{4}\bigl[(1+\vec u_h\cdot\vec r)e_t+i(\vec u_h+\vec r)-\vec u_h\times\vec r\bigr],
 $$
 
-so
+so $\langle\tilde\Pi_1(\vec u_h),\tilde{Ϛ}\rangle=\tfrac14(1+\vec u_h\cdot\vec r)$ and, dividing by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$,
 
 $$
 p_+=\tfrac{1}{2}(1+\vec u_h\cdot\vec r),\qquad p_-=\tfrac{1}{2}(1-\vec u_h\cdot\vec r).
@@ -120,18 +123,18 @@ $$
 
 The pairing also reproduces the variance. From $\tilde{H}^2=(h_t^2+|\vec h|^2)e_t+2h_t\,i\vec h$,
 $$
-\langle\tilde{H}^2\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{H}^2)=h_t^2+|\vec h|^2+2h_t\,\vec r\cdot\vec h,
+\langle\tilde{H}^2\rangle_{\tilde{Ϛ}}=\frac{\langle\tilde{Ϛ},\tilde{H}^2\rangle}{\langle\tilde{Ϛ},e_t\rangle}=h_t^2+|\vec h|^2+2h_t\,\vec r\cdot\vec h,
 $$
 so
 $$
 \langle\tilde{H}^2\rangle_{\tilde{Ϛ}}-\langle\tilde{H}\rangle_{\tilde{Ϛ}}^2=|\vec h|^2-(\vec r\cdot\vec h)^2=|\vec h|^2\bigl(1-(\vec r\cdot\vec u_h)^2\bigr)\geq0,
 $$
-vanishing precisely when $\vec r=\pm\vec u_h$, i.e. when the state is an eigenstate of the observable. This is a nontrivial check that the statistical content is carried by the trace pairing and not by the biquaternion norm.
+vanishing precisely when $\vec r=\pm\vec u_h$, i.e. when the state is an eigenstate of the observable. This is a nontrivial check that the statistical content is carried by the plain form and not by the biquaternion norm.
 
-Three algebraic properties make the pairing a probability assignment. **Reality:** for $\tilde{H}_1,\tilde{H}_2\in\mathbb{M}_+$, $\mathrm{Sc}(\tilde{H}_1\tilde{H}_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\in\mathbb{R}$, so the pairing is real without conjugation. **Positivity:** if $\tilde{Q}_1\geq0$ and $\tilde{Ϛ}\geq0$ then $\mathrm{Tr}(\tilde{Q}_1\tilde{Ϛ})\geq0$, since under $\varphi$, with $A=\varphi(\tilde{Q}_1)$ and $B=\varphi(\tilde{Ϛ})$, this is $A,B\geq0\Rightarrow\mathrm{tr}(AB)=\mathrm{tr}(\sqrt{A}B\sqrt{A})\geq0$; with $|\vec r|\leq1$ it also gives $p_+\leq1$. **Normalization:** by completeness and traciality,
+Three algebraic properties make the pairing a probability assignment. **Reality:** for $\tilde{H}_1,\tilde{H}_2\in\mathbb{M}_+$, $\mathrm{Sc}(\tilde{H}_1\tilde{H}_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2\in\mathbb{R}$, so the pairing is real without conjugation. **Positivity:** if $\tilde{Q}_1\geq0$ and $\tilde{Ϛ}\geq0$ then $\langle\tilde{Q}_1,\tilde{Ϛ}\rangle\geq0$, since under $\varphi$, with $A=\varphi(\tilde{Q}_1)$ and $B=\varphi(\tilde{Ϛ})$, this is $A,B\geq0\Rightarrow\mathrm{tr}(AB)=\mathrm{tr}(\sqrt{A}B\sqrt{A})\geq0$; with $|\vec r|\leq1$ it also gives $p_+\leq1$. **Normalization:** by completeness and symmetry,
 
 $$
-p_++p_-=\mathrm{Tr}\bigl((\tilde\Pi_1+\tilde\Pi_2)\tilde{Ϛ}\bigr)=\mathrm{Tr}(e_t\tilde{Ϛ})=\mathrm{Tr}(\tilde{Ϛ})=1.
+p_++p_-=\frac{\langle\tilde\Pi_1+\tilde\Pi_2,\tilde{Ϛ}\rangle}{\langle\tilde{Ϛ},e_t\rangle}=\frac{\langle e_t,\tilde{Ϛ}\rangle}{\langle\tilde{Ϛ},e_t\rangle}=1.
 $$
 
 What is derived is the **form** of the rule: a canonical positive pairing, a complete orthogonal family of idempotents, real numbers in $[0,1]$ summing to one. With a pure state $\tilde\Pi(\vec u_y)$ in place of $\tilde{Ϛ}$, the same computation gives the **transition probability**
@@ -140,7 +143,7 @@ $$
 \mathrm{Tr}\bigl(\tilde\Pi(\vec u_x)\tilde\Pi(\vec u_y)\bigr)=\tfrac{1}{2}(1+\vec u_x\cdot\vec u_y)=\cos^2\frac{\theta}{2},
 $$
 
-manifestly symmetric because the trace pairing is symmetric.
+manifestly symmetric because the plain form is symmetric.
 
 ### What Is Derived Here
 
@@ -157,10 +160,10 @@ $$
 so $\tilde{E}$ is an effect precisely when $0\leq a\leq1$ and $|\vec w|\leq\min(a,1-a)$. The two inequalities are exactly the requirement that both eigenvalues of the matrix lie in $[0,1]$. The rank-one projectors sit at $a=\tfrac12$, $|\vec w|=\tfrac12$, which are extreme points of the effect interval. A **POVM** is a finite set of effects with $\tilde{E}_i\geq0$ and $\sum_i\tilde{E}_i=e_t$. The outcome probabilities are
 
 $$
-p_i=\mathrm{Tr}(\tilde{E}_i\tilde{Ϛ})=2\,\mathrm{Sc}(\tilde{E}_i\tilde{Ϛ})=a_i+\vec w_i\cdot\vec r,
+p_i=\frac{\langle\tilde{E}_i,\tilde{Ϛ}\rangle}{\langle\tilde{Ϛ},e_t\rangle}=2\,\mathrm{Sc}(\tilde{E}_i\tilde{Ϛ})=a_i+\vec w_i\cdot\vec r,
 $$
 
-where $\tilde{E}_i=a_ie_t+i\vec w_i$, and $\sum_ia_i=1$, $\sum_i\vec w_i=0$ are exactly $\sum_i\tilde{E}_i=e_t$. Reality, positivity, and normalization ($\sum_ip_i=\mathrm{Tr}(e_t\tilde{Ϛ})=1$) follow from the algebra; projective measurements are the case of orthogonal idempotents.
+where $\tilde{E}_i=a_ie_t+i\vec w_i$, and $\sum_ia_i=1$, $\sum_i\vec w_i=0$ are exactly $\sum_i\tilde{E}_i=e_t$. Reality, positivity, and normalization ($\sum_ip_i=\langle e_t,\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle=1$) follow from the algebra; projective measurements are the case of orthogonal idempotents.
 
 Two examples make the non-projective case concrete. The **unsharp measurement** with $0\leq\eta\leq1$ and unit $\vec u$ is $\tilde{E}_\pm=\tfrac12(e_t\pm i\eta\vec u)$, a POVM since $a=\tfrac12$ and $|\vec w|=\eta/2\leq\tfrac12$, with $p_\pm=\tfrac12(1\pm\eta\vec u\cdot\vec r)$; it is projective only at $\eta=1$, because
 
@@ -174,9 +177,9 @@ $$
 \tilde{E}_k=\tfrac13(e_t+i\vec u_k)=\tfrac23\tilde\Pi_1(\vec u_k),\qquad k=0,1,2 .
 $$
 
-Each is an effect, they sum to $e_t$, and no two are orthogonal; the probabilities are $p_k=\tfrac13(1+\vec u_k\cdot\vec r)$ with $\sum_kp_k=1$. The trace formula thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.
+Each is an effect, they sum to $e_t$, and no two are orthogonal; the probabilities are $p_k=\tfrac13(1+\vec u_k\cdot\vec r)$ with $\sum_kp_k=1$. The normalised plain form thus covers general measurement statistics unchanged. Non-projective measurements are not exotic: they are needed for tasks such as unambiguous discrimination of non-orthogonal states, and the effect formalism is the algebraic home of that possibility.
 
-The trace formula gives measurement **statistics**, not the post-measurement state; the update requires Kraus operators $\tilde{K}_i$ with $\sum_i\tilde{K}_i^{*}\tilde{K}_i=e_t$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.
+The normalised plain form gives measurement **statistics**, not the post-measurement state; the update requires Kraus operators $\tilde{K}_i$ with $\sum_i\tilde{K}_i^{*}\tilde{K}_i=e_t$, treated in the companion article on quantum channels, and every POVM with $k$ outcomes has a Neumark dilation to a projective measurement on $\mathbb{B}\otimes_\mathbb{C}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, the article's two- and three-outcome examples living inside $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$.
 
 ## Comparison with the Hilbert-Space Statement
 
@@ -187,15 +190,15 @@ $$
 \mathrm{Tr}\bigl(\tilde\Pi(\vec u_x)\tilde\Pi(\vec u_y)\bigr)=\tfrac12(1+\vec u_x\cdot\vec u_y)=\cos^2\frac{\theta}{2}=\bigl|\langle\vec u_x+|\vec u_y+\rangle\bigr|^2,
 $$
 
-and the general Hilbert-space statement $p=\mathrm{Tr}(E\rho)$ coincides with the POVM form above. Concretely, the correspondences are: (i) idempotent $\leftrightarrow$ rank-one projector; (ii) state $\leftrightarrow$ density matrix; (iii) trace pairing $\leftrightarrow$ Hilbert–Schmidt inner product; (iv) $\mathrm{Tr}(\tilde\Pi(\vec u_x)\tilde\Pi(\vec u_y))=\cos^2(\theta/2)$ $\leftrightarrow$ $|\langle\vec u_x+|\vec u_y+\rangle|^2$; (v) POVM in effects $\leftrightarrow$ POVM in operators. Each is an identity under $\varphi$, not an approximation. The agreement is not a coincidence to be tested but an identity of notations, because $\mathbb{B}$ and $M_2(\mathbb{C})$ are the same algebra; any derivation in $\mathbb{B}$ is a derivation about $2\times2$ matrices.
+and the general Hilbert-space statement $p=\mathrm{Tr}(E\rho)$ coincides with the POVM form above. Concretely, the correspondences are: (i) idempotent $\leftrightarrow$ rank-one projector; (ii) state $\leftrightarrow$ density matrix; (iii) plain form $\leftrightarrow$ Hilbert–Schmidt inner product, with the trace as its $2\times2$ reading; (iv) $\mathrm{Tr}(\tilde\Pi(\vec u_x)\tilde\Pi(\vec u_y))=\cos^2(\theta/2)$ $\leftrightarrow$ $|\langle\vec u_x+|\vec u_y+\rangle|^2$; (v) POVM in effects $\leftrightarrow$ POVM in operators. Each is an identity under $\varphi$, not an approximation. The agreement is not a coincidence to be tested but an identity of notations, because $\mathbb{B}$ and $M_2(\mathbb{C})$ are the same algebra; any derivation in $\mathbb{B}$ is a derivation about $2\times2$ matrices.
 
-The formulations differ in what they take as primitive. In the standard formalism a state is a vector and an observable an operator on vectors — different kinds of object; here both are elements of the single four-dimensional real space $\mathbb{M}_+$, paired symmetrically. The statement $|\langle\phi|\psi\rangle|^2$ is quadratic in amplitudes, while $\mathrm{Tr}(\tilde\Pi\tilde\Pi')$ is bilinear in the idempotents, so the symmetry of the transition probability is manifest rather than implicit. Writing $|\langle\phi|\psi\rangle|^2$ requires choosing a Hilbert space and an inner product; the biquaternion pairing is supplied by the algebra's own product — it is the trace, singled out by traciality. This is the substance of the claim that the Born rule is a consequence of the algebra: the form of the pairing is not chosen, it is read off. The vector statement covers only pure states, whereas the trace formula covers pure and mixed states and POVMs alike; it is a generalization of the vector statement, though a restatement of the general statement $p=\mathrm{Tr}(E\rho)$.
+The formulations differ in what they take as primitive. In the standard formalism a state is a vector and an observable an operator on vectors — different kinds of object; here both are elements of the single four-dimensional real space $\mathbb{M}_+$, paired symmetrically. The statement $|\langle\phi|\psi\rangle|^2$ is quadratic in amplitudes, while $\mathrm{Tr}(\tilde\Pi\tilde\Pi_{\mathrm{p}})$ is bilinear in the idempotents, so the symmetry of the transition probability is manifest rather than implicit. Writing $|\langle\phi|\psi\rangle|^2$ requires choosing a Hilbert space and an inner product; the biquaternion pairing is supplied by the algebra's own product — it is the plain form, the scalar part of the product with the unit normalised, and the trace is its $2\times2$ reading. This is the substance of the claim that the Born rule is a consequence of the algebra: the form of the pairing is not chosen, it is read off. The vector statement covers only pure states, whereas the normalised plain form covers pure and mixed states and POVMs alike; it is a generalization of the vector statement, though a restatement of the general statement $p=\mathrm{Tr}(E\rho)$.
 
-The comparison is for a single qubit, $\mathbb{B}\cong M_2(\mathbb{C})$. The extension to $n$ qubits uses $\mathbb{B}^{\otimes_\mathbb{C}n}\cong M_{2^n}(\mathbb{C})$ with $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}(x)\mathrm{Tr}(y)$, and the trace formula reproduces the standard Born rule there. The split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ exists for every $M_n(\mathbb{C})$, so "states and observables in one space" is not special to $n=2$; what is special is the identification with the biquaternion units and the factor $2$ in $\mathrm{Tr}=2\,\mathrm{Sc}$.
+The comparison is for a single qubit, $\mathbb{B}\cong M_2(\mathbb{C})$. The extension to $n$ qubits uses $\mathbb{B}^{\otimes_\mathbb{C}n}\cong M_{2^n}(\mathbb{C})$ with $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}(x)\mathrm{Tr}(y)$, and the normalised plain form reproduces the standard Born rule there. The split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ exists for every $M_n(\mathbb{C})$, so "states and observables in one space" is not special to $n=2$; what is special is the identification with the biquaternion units and the factor $2$ in $\mathrm{Tr}=2\,\mathrm{Sc}$.
 
-## Non-Uniqueness of the Trace
+## Non-Uniqueness of the Tracial Reading
 
-On $M_n(\mathbb{C})$ the functionals satisfying $f(XY)=f(YX)$ form a one-dimensional space spanned by the trace. Hence on $\mathbb{B}\cong M_2(\mathbb{C})$ every tracial functional is $f=\lambda\mathrm{Tr}$, and every symmetric pairing $\mathcal{B}(\tilde{H}_1,\tilde{H}_2)=f(\tilde{H}_1\tilde{H}_2)$ with $f$ tracial is a multiple of the trace pairing. The normalization $\mathrm{Tr}(e_t)=2$ fixes $\lambda=1$; the normalized alternative $\tfrac12\mathrm{Tr}=\mathrm{Sc}$ sends $e_t\mapsto1$. Either gives the same probabilities, since the scale cancels in $p_i=\mathrm{Tr}(\tilde{E}_i\tilde{Ϛ})/\mathrm{Tr}(\tilde{Ϛ})$ with $\mathrm{Tr}(\tilde{Ϛ})=1$.
+The plain form is the intrinsic tracial functional $f=\mathrm{Sc}$, normalised by $f(e_t)=1$; its $2\times2$ reading is $\tfrac12\operatorname{Tr}$. On $M_n(\mathbb{C})$ the functionals satisfying $f(XY)=f(YX)$ form a one-dimensional space spanned by the trace. Hence on $\mathbb{B}$ every tracial functional is $f=\lambda\mathrm{Sc}$, and every symmetric pairing $\mathcal{B}(\tilde{H}_1,\tilde{H}_2)=f(\tilde{H}_1\tilde{H}_2)$ with $f$ tracial is a multiple of the plain form. The normalisation $\mathrm{Sc}(e_t)=1$ fixes $\lambda=1$; the matrix reading is $\mathrm{Tr}=2\,\mathrm{Sc}$. Either gives the same probabilities, since the scale cancels in $p_i=\langle\tilde{E}_i,\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle$ with $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$.
 
 Uniqueness fails as soon as traciality is dropped. Keeping symmetry, invariance, and positivity leaves
 
@@ -213,11 +216,11 @@ is positive on the positive cone, being the pairing with the state $\tilde{Ϛ}_{
 
 There is a further uniqueness question: is the trace form the only probability measure on the projection lattice? In dimension at least three, **Gleason's theorem** says yes. In dimension two it **fails**: the projection lattice of $\mathbb{C}^2$ is the Bloch sphere with $P$ and $I-P$ complementary, and assignments in $[0,1]$ with complementary projectors summing to one need not be of trace form — non-trace frame functions exist. Uniqueness is restored if the domain is enlarged from projections to all effects and additivity is required there: by **Busch's** effect-based version of Gleason's theorem, a normalized additive assignment on the full effect algebra is of trace form in every dimension, including two. For a qubit, then, uniqueness of the probability measure is not a consequence of the algebra alone; it requires the effect structure, i.e. the POVM framework. It is significant that the trace formula extends cleanly to effects, since that is precisely the statement whose uniqueness is a theorem.
 
-**Open question — the pairing at the other sector.** The trace pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})$ is defined through the positive form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ of the probability row. On the material sector the positive form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ read as the Euclidean square and the physical pairing of that row is the indefinite $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. **Whether the fundamental pairing of the framework is the trace at the informational sector with $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ or a pairing at the material sector with $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ is open**, and the corpus's position is stated, not derived: the states are the informational ones and the pairing is the trace, and the material pairing is a calibration. The other side of the question is *The Eight Derived Structures: Symmetric and Antisymmetric*.
+**Open question — the pairing at the other sector.** The plain form $\langle\tilde{Ϛ},\tilde{H}\rangle$ is defined through the positive form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ of the probability row. On the material sector the positive form is $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ read as the Euclidean square and the physical pairing of that row is the indefinite $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$. **Whether the fundamental pairing of the framework is the plain form at the informational sector with $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ or a pairing at the material sector with $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ is open**, and the corpus's position is stated, not derived: the states are the informational ones and the pairing is the plain form, with the trace as its $2\times2$ reading, and the material pairing is a calibration. The other side of the question is *The Eight Derived Structures: Symmetric and Antisymmetric*.
 
 ## What Is Derivation and What Is Restatement
 
-**Derived.** From the algebra and its Hermitian subspace: (1) a canonical symmetric pairing, fixed up to scale by traciality and positivity and normalized by $\mathrm{Tr}(e_t)=2$; (2) a canonical family of rank-one idempotents, exactly the rank-one projectors under the isomorphism; (3) reality, positivity, and normalization of the state–idempotent pairing, hence a probability distribution for a projective measurement; (4) the expectation value $\mathrm{Tr}(\tilde{Ϛ}\tilde{H})=h_t+\vec r\cdot\vec h$ and the transition probability $\mathrm{Tr}(\tilde\Pi\tilde\Pi')=\cos^2(\theta/2)$, with manifest symmetry; (5) the extension to effects and POVMs, with explicit non-projective examples; (6) exact agreement with the Hilbert-space formulas under $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem about the algebra rather than an empirical coincidence.
+**Derived.** From the algebra and its Hermitian subspace: (1) a canonical symmetric pairing, fixed up to scale by the product condition and positivity and normalized by $\langle e_t\rangle=1$; (2) a canonical family of rank-one idempotents, exactly the rank-one projectors under the isomorphism; (3) reality, positivity, and normalization of the state–idempotent pairing, hence a probability distribution for a projective measurement; (4) the expectation value $\langle\tilde{Ϛ},\tilde{H}\rangle/\langle\tilde{Ϛ},e_t\rangle=h_t+\vec r\cdot\vec h$ and the transition probability $\langle\tilde\Pi,\tilde\Pi_{\mathrm{p}}\rangle/\langle\tilde\Pi,e_t\rangle=\cos^2(\theta/2)$, with manifest symmetry; (5) the extension to effects and POVMs, with explicit non-projective examples; (6) exact agreement with the Hilbert-space formulas under $\mathbb{B}\cong M_2(\mathbb{C})$, a theorem about the algebra rather than an empirical coincidence.
 
 **Restated.** Not derived from the algebra: (1) the identification of the pairing with **empirical frequency** — the algebra produces a canonical number in $[0,1]$, and reading it as a probability is the Born rule's empirical content, which no algebraic manipulation removes; (2) the choices of normalization and of the factor $2$, which are conventions, since the scale cancels in probabilities; (3) the general Hilbert-space statement $p=\mathrm{Tr}(E\rho)$, of which the biquaternion formula is a restatement for $n=2$, generalizing only the pure-vector statement $|\langle\phi|\psi\rangle|^2$.
 
@@ -225,9 +228,16 @@ There is a further uniqueness question: is the trace form the only probability m
 
 ## Summary
 
-The Born rule in the biquaternion framework is the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$. On $\mathbb{M}_+$ the trace pairing $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=2(h_{1t}h_{2t}+\vec h_1\cdot\vec h_2)$ is the Euclidean positive-definite pairing of signature $(4,0)$, distinct from the Lorentzian biquaternion norm $\langle\tilde{H}\rangle_{\natural}=h_t^2-|\vec h|^2$ whose future cone cuts out the state space. It is natural because it is the product's trace: among symmetric invariant positive pairings it is the tracial one.
+The Born rule in the biquaternion framework is the normalised plain form
 
-Under $\varphi:\mathbb{B}\to M_2(\mathbb{C})$ the idempotents map to rank-one projectors, states to density matrices, and $\mathrm{tr}\circ\varphi=\mathrm{Tr}$. The probability $p_+=\mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ})=\tfrac12(1+\vec u_h\cdot\vec r)$ is real, in $[0,1]$, and normalized, all as consequences of the algebra. General measurements are effects $\tilde{E}=ae_t+i\vec w$ with $|\vec w|\leq\min(a,1-a)$; POVMs are families of effects summing to $e_t$; the probabilities are $a_i+\vec w_i\cdot\vec r$, as the unsharp and trine examples show.
+$$
+p=\frac{\langle\tilde{Ϛ},\tilde H\rangle}{\langle\tilde{Ϛ},e_t\rangle}=h_t+\vec r\cdot\vec h,
+\qquad \langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle,
+$$
+
+with $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ and $\langle e_t\rangle=1$. On $\mathbb{M}_+$ the plain form $\langle\tilde{H}_1,\tilde{H}_2\rangle=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2$ is the Euclidean positive-definite pairing of signature $(4,0)$, distinct from the Lorentzian biquaternion norm $\langle\tilde{H}\rangle_{\natural}=h_t^2-|\vec h|^2$ whose future cone cuts out the state space. It is natural because it is the scalar part of the product, with the unit normalised; in the $2\times2$ image it reads $\operatorname{Tr}(\tilde{H}_1\tilde{H}_2)=2\langle\tilde{H}_1,\tilde{H}_2\rangle$.
+
+Under $\varphi:\mathbb{B}\to M_2(\mathbb{C})$ the idempotents map to rank-one projectors, states to density matrices, and $\mathrm{tr}\circ\varphi=\mathrm{Tr}$. The probability $p_+=\langle\tilde\Pi_1(\vec u_h),\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle=\tfrac12(1+\vec u_h\cdot\vec r)$ is real, in $[0,1]$, and normalized, all as consequences of the algebra. General measurements are effects $\tilde{E}=ae_t+i\vec w$ with $|\vec w|\leq\min(a,1-a)$; POVMs are families of effects summing to $e_t$; the probabilities are $a_i+\vec w_i\cdot\vec r$, as the unsharp and trine examples show.
 
 The comparison with the standard statement is exact, because $\mathbb{B}\cong M_2(\mathbb{C})$ as $*$-algebras: the biquaternion formula and $p=\mathrm{Tr}(E\rho)$ are the same equation, and the pure case is $|\langle\phi|\psi\rangle|^2=\cos^2(\theta/2)$. The formulations differ in what they take as primitive and in the manifest symmetry of the transition probability. The trace is unique up to scale among tracial functionals, but symmetry, invariance and positivity alone leave a two-parameter family, and the normalized positive non-tracial functionals are exactly the states. Uniqueness of the probability measure requires more than the algebra: Gleason fails for a qubit on projections, and Busch's effect-based theorem restores uniqueness. The framework derives the form of the Born rule and its consistency properties, restates the identification with empirical probability, and does not explain outcome selection or predict departures from standard quantum physics.
 
@@ -241,16 +251,17 @@ The comparison with the standard statement is exact, because $\mathbb{B}\cong M_
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables, effects) |
 | $\mathbb{M}_-$, $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | Anti-Hermitian subspace (generators) |
 | $\tilde{H} = h_t e_t + i\vec h$ | General Hermitian element |
-| $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H) = 2h_t$ | Trace |
-| $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2) = 2(h_{1t}h_{2t} + \vec h_1\cdot\vec h_2)$ | Trace pairing, signature $(4,0)$ |
+| $\langle\tilde{H}_1,\tilde{H}_2\rangle=\mathrm{Sc}(\tilde{H}_1\tilde{H}_2)$, $\langle\tilde H\rangle=\langle\tilde H,\tilde H\rangle$ | Plain form and plain norm; on $\mathbb{M}_+$ signature $(4,0)$ |
+| $\langle e_t\rangle=1$, $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ | Unit and state normalisation |
+| $\langle\tilde H\rangle_{\tilde{Ϛ}}=\langle\tilde{Ϛ},\tilde H\rangle/\langle\tilde{Ϛ},e_t\rangle=h_t+\vec r\cdot\vec h$ | Born weight |
+| $\mathrm{Tr}(\tilde H)=2\langle\tilde H,e_t\rangle=2h_t$, $\mathrm{Tr}(\tilde{H}_1\tilde{H}_2)=2\langle\tilde{H}_1,\tilde{H}_2\rangle$ | Trace, the $2\times2$ reading of the plain form |
 | $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_t^2 - |\vec h|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
-| $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r|\leq 1$ | State; Bloch vector $\vec r$ |
+| $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r|\leq 1$ | State, $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$; Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, $|\vec u|=1$ | Idempotent (pure state) |
 | $\tilde{E} = a e_t + i\vec w$, $|\vec w|\leq\min(a,1-a)$ | Effect |
-| $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde{H}\rangle$ | Trace formula (Born rule) |
-| $\mathrm{Tr}(\tilde\Pi_1(\vec u_h)\tilde{Ϛ}) = \tfrac{1}{2}(1+\vec u_h\cdot\vec r)$ | Born probability, projective |
-| $\mathrm{Tr}(\tilde{E}_i\tilde{Ϛ}) = a_i + \vec w_i\cdot\vec r$ | Born probability, POVM |
-| $\mathrm{Tr}(\tilde\Pi(\vec u_x)\tilde\Pi(\vec u_y)) = \tfrac{1}{2}(1+\vec u_x\cdot\vec u_y) = \cos^2(\theta/2)$ | Transition probability |
+| $\langle\tilde\Pi_1(\vec u_h),\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle = \tfrac{1}{2}(1+\vec u_h\cdot\vec r)$ | Born probability, projective |
+| $\langle\tilde{E}_i,\tilde{Ϛ}\rangle/\langle\tilde{Ϛ},e_t\rangle = a_i + \vec w_i\cdot\vec r$ | Born probability, POVM |
+| $\langle\tilde\Pi(\vec u_x),\tilde\Pi(\vec u_y)\rangle/\langle\tilde\Pi,e_t\rangle = \tfrac{1}{2}(1+\vec u_x\cdot\vec u_y) = \cos^2(\theta/2)$ | Transition probability; in the $2\times2$ image $\mathrm{Tr}(\tilde\Pi\tilde\Pi_{\mathrm{p}})$ |
 | $\varphi: e_t\mapsto I_2$, $\vec e_\mu\mapsto -i\sigma_\mu$ | Isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
 | $\mathrm{tr}\circ\varphi = \mathrm{Tr}$ | Trace correspondence |
 | $\tilde{K}_i$, $\sum_i\tilde{K}_i^{*}\tilde{K}_i = e_t$ | Kraus operators (measurement update) |

@@ -225,19 +225,19 @@ $$
 the fields transform as
 
 $$
-\vec E' = \gamma\left(\vec E + \vec v\times\vec B\right) - \frac{\gamma-1}{\vec v^2}\left(\vec v\cdot\vec E\right)\vec v,
+\vec E_2 = \gamma\left(\vec E + \vec v\times\vec B\right) - \frac{\gamma-1}{\vec v^2}\left(\vec v\cdot\vec E\right)\vec v,
 $$
 
 $$
-\vec B' = \gamma\left(\vec B - \frac{1}{c^2}\,\vec v\times\vec E\right) - \frac{\gamma-1}{\vec v^2}\left(\vec v\cdot\vec B\right)\vec v.
+\vec B_2 = \gamma\left(\vec B - \frac{1}{c^2}\,\vec v\times\vec E\right) - \frac{\gamma-1}{\vec v^2}\left(\vec v\cdot\vec B\right)\vec v.
 $$
 
 The components parallel to the boost are unchanged, while the transverse components acquire a contribution from the other field. Substituting these expressions into $I_1$ and $I_2$, the cross terms cancel and the factors combine to $1/\gamma^2$ in precisely the way required, giving
 
 $$
-\vec E'^2 - c^2\vec B'^2 = \vec E^2 - c^2\vec B^2,
+\vec E_2^2 - c^2\vec B_2^2 = \vec E^2 - c^2\vec B^2,
 \qquad
-\vec E'\cdot\vec B' = \vec E\cdot\vec B.
+\vec E_2\cdot\vec B_2 = \vec E\cdot\vec B.
 $$
 
 Both invariants are therefore unchanged. This is consistent with, and can be derived from, the rotor-conjugation transformation of the four-potential established in the Maxwell article: the field strength is built from $\tilde{A}$ by differentiation, and differentiating a quantity that transforms by rotor conjugation produces a field that transforms in the antisymmetric-tensor representation, whose two independent scalar contractions are exactly $I_1$ and $I_2$.
@@ -353,7 +353,7 @@ $$
 
 is the classical **electric–magnetic duality** transformation.
 
-The transformation is a symmetry of the **source-free** Maxwell equations. Under it, $\mathrm{rot}\,\vec E' = -\partial/\partial t\vec B'$ and $\mathrm{rot}\,\vec B' = c^{-2}\partial/\partial t\vec E'$ are preserved, the two terms of each equation matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
+The transformation is a symmetry of the **source-free** Maxwell equations. Under it, $\mathrm{rot}\,\vec E_{\mathrm d} = -\partial/\partial t\vec B_{\mathrm d}$ and $\mathrm{rot}\,\vec B_{\mathrm d} = c^{-2}\partial/\partial t\vec E_{\mathrm d}$ are preserved, the two terms of each equation matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
 
 The effect of the duality rotation on the invariants is clean. Writing $\vec N\cdot\vec N = I_1 + 2icI_2$, the phase rotation gives
 

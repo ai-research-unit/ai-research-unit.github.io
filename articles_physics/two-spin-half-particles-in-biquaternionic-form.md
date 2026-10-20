@@ -18,7 +18,7 @@ $$
 \mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C}),
 $$
 
-with the bilinear product $(x\otimes y)(x'\otimes y')=xx'\otimes yy'$ and the trace
+with the bilinear product $(x\otimes y)(x_2\otimes y_2)=x\,x_2\otimes y\,y_2$ and the trace
 
 $$
 \mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\,\mathrm{Tr}_\mathbb{B}(y),\qquad
@@ -39,7 +39,7 @@ $$
 
 The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\mu)\otimes\mathsf{M}_2(e_\nu)$ with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$; under it $\tilde S_k^{(a)}$ maps to $\tfrac{\hbar}{2}\sigma_k$ acting on the $a$-th factor, and the algebra $\mathbb{B}\otimes\mathbb{B}$ maps onto all of $M_4(\mathbb{C})$.
 
-A state of the pair is a Hermitian, positive, trace-one element of $\mathbb{B}\otimes\mathbb{B}$, and an observable is a Hermitian element. The pure product states are the idempotents
+A state of the pair is a Hermitian, positive element of $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Sc}=2^{-2}$ (trace one in the $4\times4$ image), and an observable is a Hermitian element. The pure product states are the idempotents
 
 $$
 \tilde\Pi(\vec u_m)\otimes \tilde\Pi(\vec u)=\tfrac{1}{4}\left(e_t\otimes e_t+i\vec u_{m,k}\vec e_k\otimes e_t+i e_t\otimes\vec u_le_l-\vec u_{m,k}\vec u_l\,\vec e_k\otimes e_l\right),
@@ -179,7 +179,7 @@ $$
 Each is a Hermitian idempotent of trace one, they are mutually orthogonal, and they resolve the identity:
 
 $$
-\tilde\Pi_{j,m}\tilde\Pi_{j',m'}=\delta_{jj'}\delta_{mm'}\tilde\Pi_{j,m},\qquad
+\tilde\Pi_{j,m}\tilde\Pi_{j_2,m_2}=\delta_{j j_2}\delta_{m m_2}\tilde\Pi_{j,m},\qquad
 \sum_{j,m}\tilde\Pi_{j,m}=e_t\otimes e_t .
 $$
 
@@ -255,7 +255,7 @@ $$
 
 The factor $(-1)^{1-j}$ is the two-particle instance of the general rule $(-1)^{j_1+j_2-j}$ for the exchange symmetry of a coupled multiplet: for two spin-$\tfrac12$ objects the singlet is antisymmetric, and this is what makes it the unique state of vanishing total spin.
 
-Two further algebraic properties of the coupled idempotents are worth recording, because they connect the exchange structure to the zero divisors of the algebra. The ladder operators are nilpotent, and the idempotents they connect are zero divisors of $\mathbb{B}\otimes\mathbb{B}$: for any two distinct coupled idempotents $\tilde\Pi,\tilde\Pi'$ one has $\tilde\Pi\,\tilde\Pi'=0$ with both factors nonzero, so each is a zero divisor, and the singlet $\tilde\Pi_{\mathrm{asym}}$ in particular satisfies $\tilde\Pi_{\mathrm{asym}}(e_t\otimes e_t-\tilde\Pi_{\mathrm{asym}})=0$. The singlet is at once the antisymmetric idempotent, the state of vanishing total spin, and a zero divisor of the two-qubit algebra.
+Two further algebraic properties of the coupled idempotents are worth recording, because they connect the exchange structure to the zero divisors of the algebra. The ladder operators are nilpotent, and the idempotents they connect are zero divisors of $\mathbb{B}\otimes\mathbb{B}$: for any two distinct coupled idempotents $\tilde\Pi,\tilde\Pi_{\mathrm{other}}$ one has $\tilde\Pi\,\tilde\Pi_{\mathrm{other}}=0$ with both factors nonzero, so each is a zero divisor, and the singlet $\tilde\Pi_{\mathrm{asym}}$ in particular satisfies $\tilde\Pi_{\mathrm{asym}}(e_t\otimes e_t-\tilde\Pi_{\mathrm{asym}})=0$. The singlet is at once the antisymmetric idempotent, the state of vanishing total spin, and a zero divisor of the two-qubit algebra.
 
 ## The Heisenberg Coupling
 

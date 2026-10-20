@@ -67,7 +67,7 @@ S(\tilde{Ϛ}_0)=\langle K_0\rangle_{\tilde{Ϛ}_0}
 $$
 which is the entropy of the state, as the first property requires. The derivation is the product formula of the biquaternion algebra: the scalar part of $(\tfrac12e_t+i\tfrac{\vec r}{2}\cdot\mathbf e)(c_0e_t+i\vec c\cdot\mathbf e)$ is $\tfrac12c_0-\vec A\cdot\vec C$ with $\vec A=i\tfrac{\vec r}{2}$, $\vec C=i\vec c$, and $\vec A\cdot\vec C=-\tfrac12\vec r\cdot\vec c$, which gives the two terms above.
 
-Note that $\langle K_0\rangle_{\tilde{Ϛ}}$ is **linear** in the state $\tilde{Ϛ}$: it is $\mathrm{Tr}(\tilde{Ϛ} K_0)$, the trace pairing of $\tilde{Ϛ}$ with the fixed element $K_0$. This linearity is the algebraic reason the first law is exact to first order, and it is stated again below.
+Note that $\langle K_0\rangle_{\tilde{Ϛ}}$ is **linear** in the state $\tilde{Ϛ}$: it is $\mathrm{Tr}(\tilde{Ϛ} K_0)$, the plain form of $\tilde{Ϛ}$ with the fixed element, read as the trace pairing $K_0$. This linearity is the algebraic reason the first law is exact to first order, and it is stated again below.
 
 ## The First Law of Entanglement
 
@@ -176,7 +176,7 @@ holds exactly, so the state is the thermal state of its own entanglement Hamilto
 
 The framework's terms make the mechanism transparent, and it is worth stating because it is the reason the law is universal.
 
-**The modular energy is linear in the state.** The quantity $\delta\langle K_0\rangle=\mathrm{Tr}(\delta\rho\,K_0)$ is the trace pairing of the perturbation with a fixed algebra element. It has no quadratic or higher terms. All nonlinearity in the relation therefore resides in $\delta S$, and the identity $\delta S=\delta\langle K_0\rangle-S(\rho\|\rho_0)$ says that $\delta S$ departs from the linear form by exactly the relative entropy.
+**The modular energy is linear in the state.** The quantity $\delta\langle K_0\rangle=\mathrm{Tr}(\delta\rho\,K_0)$ is the plain form of the perturbation with a fixed algebra element, read as the trace pairing. It has no quadratic or higher terms. All nonlinearity in the relation therefore resides in $\delta S$, and the identity $\delta S=\delta\langle K_0\rangle-S(\rho\|\rho_0)$ says that $\delta S$ departs from the linear form by exactly the relative entropy.
 
 **The relative entropy has no linear term.** As the relative-entropy companion article records, the second-order term of $S(\rho\|\rho_0)$ near $\rho=\rho_0$ is the Kubo–Mori–Bogoliubov metric of the reference state. There is no linear term, by the positivity and the stationarity of the relative entropy at coincidence. The first law is the statement of that vanishing, and the framework's closed form exhibits it: the boxed relative entropy is quadratic in $\delta\vec r$ near $\vec r=\vec r_0$.
 
@@ -248,7 +248,7 @@ The mechanism is that the modular energy is linear in the state while the relati
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\Delta_\sigma=S^*S$ | Modular operator of the state $\sigma$ |
 | $K_\sigma=-\log\Delta_\sigma$ | Modular Hamiltonian |
 | $K_0=-\log\tilde{Ϛ}_0$ | Modular Hamiltonian of a biquaternion state $\in\mathbb{M}_+$ |

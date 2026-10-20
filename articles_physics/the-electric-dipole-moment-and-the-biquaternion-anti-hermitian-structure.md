@@ -169,10 +169,10 @@ The EDM sits in the antisymmetric tensor with the axial insertion, and the patte
 
 ## The Form Factors and the Two Coefficients
 
-**The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $k=p'-p$, is
+**The electromagnetic vertex.** The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $k=p_2-p$, is
 
 $$
-\Gamma^\mu(p',p) = \gamma^\mu F_1(k^2) + \frac{i}{2m}\,\sigma^{\mu\nu}k_\nu\,F_2(k^2)
+\Gamma^\mu(p_2,p) = \gamma^\mu F_1(k^2) + \frac{i}{2m}\,\sigma^{\mu\nu}k_\nu\,F_2(k^2)
 + \frac{i}{2m}\,\sigma^{\mu\nu}k_\nu\gamma_5\,F_3(k^2) + \cdots ,
 $$
 

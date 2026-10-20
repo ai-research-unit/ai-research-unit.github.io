@@ -203,13 +203,13 @@ and the orthogonality of the two projectors was verified together with their ide
 Because the $\xi$-dependence sits entirely in the longitudinal projector, it cancels between any two gauges when the propagator is contracted with a conserved current. The difference of the propagators at two gauge parameters is proportional to $p_\mu p_\nu$,
 
 $$
-D_{\mu\nu}(\xi)-D_{\mu\nu}(\xi') = -\frac{\xi-\xi'}{p^4}\,p_\mu p_\nu ,
+D_{\mu\nu}(\xi)-D_{\mu\nu}(\xi_2) = -\frac{\xi-\xi_2}{p^4}\,p_\mu p_\nu ,
 $$
 
 and a conserved current satisfies $p_\nu j^\nu=0$, so
 
 $$
-\left(D_{\mu\nu}(\xi)-D_{\mu\nu}(\xi')\right)j^\nu = -\frac{\xi-\xi'}{p^4}\,p_\mu\,(p_\nu j^\nu)=0 .
+\left(D_{\mu\nu}(\xi)-D_{\mu\nu}(\xi_2)\right)j^\nu = -\frac{\xi-\xi_2}{p^4}\,p_\mu\,(p_\nu j^\nu)=0 .
 $$
 
 This was verified numerically: with a conserved current $j^\nu=(p_3,0,0,\omega)$ satisfying $p_\nu j^\nu=0$, the contraction of $D(1)-D(3)$ with $j^\nu$ was zero to machine precision at two momenta. The statement is not that the propagator is gauge independent — it is not — but that the piece that depends on the gauge parameter is the piece that a conserved current cannot see. Every amplitude built from the gauge field with external conserved currents, or with the external legs on shell and transverse, is therefore independent of $\xi$. This is the path-integral version of the statement that the gauge fixing is a choice and not a physical input.
@@ -297,7 +297,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $D_{\mu\nu}=p^{-2}(\eta_{\mu\nu}+(1-\xi)p_\mu p_\nu/p^2)$ | Gauge-field propagator; $D=p^{-2}(P+\xi L)$ |
 | $P_{\mu\nu}=\eta_{\mu\nu}+p_\mu p_\nu/p^2$, $P^2=P$, $\mathrm{tr}P=3$, $P_{\mu\nu}p^\nu=0$ | Transverse projector (verified) |
 | $L^{\mu}{}_\nu=-p^\mu p_\nu/p^2$, $L^2=L$, $\mathrm{tr}L=1$, $P+L=\delta$, $PL=LP=0$ | Longitudinal projector; carries the gauge parameter |
-| $(D(\xi)-D(\xi'))_{\mu\nu}j^\nu=0$ for $p_\nu j^\nu=0$ | Gauge-parameter independence for conserved currents (verified) |
+| $(D(\xi)-D(\xi_2))_{\mu\nu}j^\nu=0$ for $p_\nu j^\nu=0$ | Gauge-parameter independence for conserved currents (verified) |
 
 ## Further Reading
 

@@ -137,7 +137,7 @@ $$
 \vec u_x = \frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{r},
 $$
 
-so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part directed **radially**, $\omega j_1(\omega r)\vec u_x$. This closed form was verified numerically by evaluating the operator $(\omega - \nabla)$ on $j_0(\omega r)$ by central differences and comparing with the right-hand side at random points, with the residual at the finite-difference floor; the identity $j_0' = -j_1$ is exact between the two closed forms.
+so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part directed **radially**, $\omega j_1(\omega r)\vec u_x$. This closed form was verified numerically by evaluating the operator $(\omega - \nabla)$ on $j_0(\omega r)$ by central differences and comparing with the right-hand side at random points, with the residual at the finite-difference floor; the identity $d j_0(\omega r)/d(\omega r) = -j_1$ is exact between the two closed forms.
 
 The energy–momentum biquaternion of the programme is
 

@@ -142,20 +142,20 @@ $$
 
 $$
 Z = C\begin{pmatrix}\tfrac13&0&0\\0&\tfrac13&0\\0&0&-\tfrac23\end{pmatrix}
-+C'\begin{pmatrix}\tfrac23&0&0\\0&-\tfrac13&0\\0&0&-\tfrac13\end{pmatrix},
-\qquad |C'|\ll|C| .
++C_2\begin{pmatrix}\tfrac23&0&0\\0&-\tfrac13&0\\0&0&-\tfrac13\end{pmatrix},
+\qquad |C_2|\ll|C| .
 $$
 
-The first term of $Z$ splits the supermultiplet into I-multiplets of **different hypercharge** $Y$; the second, much smaller, splits the members **within** an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\xi A^{3}_{\ 3}+\eta A^{3}_{\ c}A^{c}_{\ 3}$ and $\delta m^{2\prime}=\xi'A^{1}_{\ 1}+\eta'A^{1}_{\ c}A^{c}_{\ 1}$ with $\xi'=\theta\xi$, $\eta'=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the **Gell-Mann–Okubo mass formula**
+The first term of $Z$ splits the supermultiplet into I-multiplets of **different hypercharge** $Y$; the second, much smaller, splits the members **within** an I-multiplet by charge $Ϙ$. Writing the two contributions as $\delta m^2=\xi A^{3}_{\ 3}+\eta A^{3}_{\ c}A^{c}_{\ 3}$ and $\delta m_2^2=\xi_2A^{1}_{\ 1}+\eta_2A^{1}_{\ c}A^{c}_{\ 1}$ with $\xi_2=\theta\xi$, $\eta_2=\theta\eta$, $|\theta|\ll1$, and expressing them through the Casimir operators of $\mathrm{SU}(3)$ and $\mathrm{SU}(2)$, gives the **Gell-Mann–Okubo mass formula**
 
 $$
 m^2 = m_0^2+\alpha+\beta Y+\gamma\Bigl(I(I+1)-\tfrac14Y^2\Bigr)
-+\alpha'+\beta'Y+\gamma'\Bigl(U(U+1)-\tfrac14Ϙ^2\Bigr),
++\alpha_2+\beta_2Y+\gamma_2\Bigl(U(U+1)-\tfrac14Ϙ^2\Bigr),
 \qquad
-\frac{\alpha'}{\alpha}=\frac{\beta'}{\beta}=\frac{\gamma'}{\gamma}=\theta .
+\frac{\alpha_2}{\alpha}=\frac{\beta_2}{\beta}=\frac{\gamma_2}{\gamma}=\theta .
 $$
 
-The prime terms are the charge splitting and the unprimed terms the hypercharge splitting; the ratio $\theta$ is the small parameter.
+The terms carrying the subscript $2$ are the charge splitting and those without it the hypercharge splitting; the ratio $\theta$ is the small parameter.
 
 ### The Linear Form
 
@@ -265,7 +265,7 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 | $A^{i}_{\ k}$ | Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian |
 | $I_3,U_3,V_3$ | I-spin, U-spin, V-spin of the three $\mathfrak{su}(2)$ subalgebras |
 | $Y,Ϙ,I,U$ | Hypercharge, charge, and the I-spin and U-spin quantum numbers |
-| $m^2=m_0^2+\delta m^2+\delta m^{2\prime}$ | Mass operator split into symmetric and breaking parts |
+| $m^2=m_0^2+\delta m^2+\delta m_2^2$ | Mass operator split into symmetric and breaking parts |
 | $Z$, $D^{a}_{\ b}$ | Unitary field and unitary moment of the Zeeman analogy |
 | $\theta$ | Ratio of charge to hypercharge splitting, $\lvert\theta\rvert\ll1$ |
 | $m_\Xi+m_N=\tfrac12(3m_\Lambda+m_\Sigma)$ | Gell-Mann–Okubo relation, baryon octet |

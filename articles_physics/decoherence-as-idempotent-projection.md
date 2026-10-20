@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion framework identifies the **pure states** of a qubit with the **idempotents** of the Hermitian subspace $\mathbb{M}_+$: those elements $\tilde\Pi$ satisfying $\tilde\Pi^2 = \tilde\Pi$. A mixed state is a positive trace-one element that is *not* idempotent, and the amount by which it fails to be idempotent is a single scalar, the scalar part of $\tilde{Ϛ}^2 - \tilde{Ϛ}$. **Decoherence** — the loss of the phase relations between the components of a superposition — is therefore, in this language, the deformation of an idempotent into a non-idempotent positive trace-one element. That deformation is the subject of this article.
+The biquaternion framework identifies the **pure states** of a qubit with the **idempotents** of the Hermitian subspace $\mathbb{M}_+$: those elements $\tilde\Pi$ satisfying $\tilde\Pi^2 = \tilde\Pi$. A mixed state is a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) that is *not* idempotent, and the amount by which it fails to be idempotent is a single scalar, the scalar part of $\tilde{Ϛ}^2 - \tilde{Ϛ}$. **Decoherence** — the loss of the phase relations between the components of a superposition — is therefore, in this language, the deformation of an idempotent into a non-idempotent positive normalised element. That deformation is the subject of this article.
 
 The title couples "idempotent" to "projection", and the coupling is not innocent. Two different objects can be called an idempotent projection, and they are not the same:
 
@@ -61,7 +61,7 @@ $$
 
 so that purity and idempotency are the same condition: $\mathrm{Tr}(\tilde{Ϛ}^2) = 1 \Leftrightarrow \tilde{Ϛ}^2 = \tilde{Ϛ}$.
 
-In these terms, decoherence is not the destruction of a vector in a Hilbert space, nor the diagonalization of a matrix by fiat. It is a definite algebraic deformation: it moves the scalar $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ})$ away from zero, equivalently shrinks $|\vec r|$ below one, equivalently drives the state off the zero-divisor cone of $\mathbb{M}_+$ and into its interior. The pure state was an idempotent; the decohered state is a positive trace-one element that is not. What remains to be seen is what kind of operation performs this deformation, and in what sense, if any, that operation is itself a projection.
+In these terms, decoherence is not the destruction of a vector in a Hilbert space, nor the diagonalization of a matrix by fiat. It is a definite algebraic deformation: it moves the scalar $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ})$ away from zero, equivalently shrinks $|\vec r|$ below one, equivalently drives the state off the zero-divisor cone of $\mathbb{M}_+$ and into its interior. The pure state was an idempotent; the decohered state is a positive element normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image) that is not. What remains to be seen is what kind of operation performs this deformation, and in what sense, if any, that operation is itself a projection.
 
 ## The Dephasing Channel
 
@@ -95,7 +95,7 @@ whose normalization $\sum_l \tilde{K}_l^{*} \tilde{K}_l = (1-p)e_t + p(\tilde\Pi
 On the Bloch vector the channel acts by
 
 $$
-\boxed{\;\vec r \;\longmapsto\; \vec r' = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u.\;}
+\boxed{\;\vec r \;\longmapsto\; \vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u.\;}
 $$
 
 The component of $\vec r$ along $\vec u$ is untouched; the transverse component is multiplied by $1-p$. In the eigenbasis of $\vec u$, this is exactly the statement that the diagonal entries of the density matrix — the **populations** — are preserved, while the off-diagonal entries — the **coherences** — are scaled by $1-p$. Equivalently, the coherence is the pair of transverse Bloch components, which are the expectation values $\mathrm{Tr}(\tilde{Ϛ}\,i \vec e_k)$ of the two traceless observables $i\vec e_k$ with $\vec e_k\perp\vec u$.
@@ -186,7 +186,7 @@ We can now separate the senses cleanly.
 
 ### Sense 1: The input state is a projection
 
-This is the sense in which "idempotent" attaches to the *state*. A pure state is an idempotent element $\tilde\Pi^2 = \tilde\Pi$, and decoherence is precisely the process that deforms it into a non-idempotent positive trace-one element. In this sense the title is a statement about what decoherence *acts on*: it acts on an idempotent, and it destroys the idempotency. The deviation scalar $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ})$ measures how much of the projection structure has been lost.
+This is the sense in which "idempotent" attaches to the *state*. A pure state is an idempotent element $\tilde\Pi^2 = \tilde\Pi$, and decoherence is precisely the process that deforms it into a non-idempotent positive element normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image). In this sense the title is a statement about what decoherence *acts on*: it acts on an idempotent, and it destroys the idempotency. The deviation scalar $\mathrm{Sc}(\tilde{Ϛ}^2 - \tilde{Ϛ})$ measures how much of the projection structure has been lost.
 
 It is worth being explicit that this is exact and not a metaphor: the condition $\tilde{Ϛ}^2 = \tilde{Ϛ}$ is the condition $\mathrm{Tr}(\tilde{Ϛ}^2) = 1$, and decoherence makes the purity strictly less than one for every off-axis input.
 
@@ -289,8 +289,8 @@ Two remarks keep this in the framework's register. First, the two channels are t
 **What it does explain, or make exact.**
 
 - **The algebraic meaning of coherence and its loss.** Coherences are the transverse Bloch components, equivalently the off-diagonal entries in the pointer basis, equivalently the expectation values of the traceless observables orthogonal to $\vec u$. Dephasing scales them by $1-p$ and preserves the populations. This is exact and derivable from the algebra.
-- **Purity as idempotency, and decoherence as a deformation.** The identity $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$ turns "loss of coherence" into a single scalar whose vanishing is purity. Decoherence is literally the deformation of an idempotent into a non-idempotent positive trace-one element.
-- **The sense of the projection metaphor.** Full dephasing is a trace-preserving conditional expectation onto the pointer subalgebra, hence an orthogonal projection with respect to the trace pairing, hence an idempotent channel. This is where the title's phrase is exactly true.
+- **Purity as idempotency, and decoherence as a deformation.** The identity $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$ turns "loss of coherence" into a single scalar whose vanishing is purity. Decoherence is literally the deformation of an idempotent into a non-idempotent positive normalised element (trace one in the image).
+- **The sense of the projection metaphor.** Full dephasing is a trace-preserving conditional expectation onto the pointer subalgebra, hence an orthogonal projection with respect to the plain form, hence an idempotent channel. This is where the title's phrase is exactly true.
 - **The failure of the projection metaphor.** For $0<p<1$ the channel is not idempotent; dephasing twice is dephasing harder. It is a contraction of the Bloch ball toward the pointer diameter, and although mathematically invertible, its inverse is not completely positive, so it is physically irreversible. This is where the title's phrase, read as a description of the generic process, is false.
 - **The pointer basis and einselection structure.** Once the pointer observable is fixed, the pointer idempotents, the commutative pointer subalgebra, its $\mathrm{U}(1)$ symmetry, the fixed set, and the stable populations are all algebraically explicit.
 - **The relation to the reversible/irreversible dichotomy.** Dephasing is a Kraus-rank-two channel for every $0 < p \leq 1$ (rank one only at $p=0$, where it is the identity), hence irreversible; the reversible channels are exactly the unitarily-conjugate, Kraus-rank-one maps. Irreversibility is a property of the channel's algebraic form, not an extra postulate.
@@ -306,12 +306,12 @@ Two remarks keep this in the framework's register. First, the two channels are t
 
 ## Summary
 
-A pure state of the informational sector is an idempotent element of $\mathbb{M}_+$: $\tilde\Pi^2 = \tilde\Pi$. Its mixedness is measured by the deviation $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$, whose vanishing is exactly purity. Decoherence, in the form of the dephasing channel of the companion article, deforms an idempotent into a non-idempotent positive trace-one element: it preserves the populations and scales the coherences by $1-p$, sending the Bloch vector $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ and carrying a pure state from the Bloch sphere into the ball along a straight line toward the pointer axis.
+A pure state of the informational sector is an idempotent element of $\mathbb{M}_+$: $\tilde\Pi^2 = \tilde\Pi$. Its mixedness is measured by the deviation $\tilde{Ϛ}^2 - \tilde{Ϛ} = \tfrac14(|\vec r|^2-1)e_t$, whose vanishing is exactly purity. Decoherence, in the form of the dephasing channel of the companion article, deforms an idempotent into a non-idempotent positive normalised element (trace one in the image): it preserves the populations and scales the coherences by $1-p$, sending the Bloch vector $\vec r \mapsto (1-p)\vec r + p(\vec u\cdot\vec r)\vec u$ and carrying a pure state from the Bloch sphere into the ball along a straight line toward the pointer axis.
 
 The title's phrase "idempotent projection" must therefore be read with care, and the distinction between an idempotent *element* and an idempotent *channel* is the spine of the subject:
 
 - The **input state** is an idempotent; decoherence destroys that idempotency.
-- **Full dephasing** ($p=1$) is an idempotent channel: a trace-preserving conditional expectation onto the pointer subalgebra, i.e., an orthogonal projection with respect to the trace pairing, whose image is the pointer diameter and whose Kraus rank is two.
+- **Full dephasing** ($p=1$) is an idempotent channel: a trace-preserving conditional expectation onto the pointer subalgebra, i.e., an orthogonal projection with respect to the plain form, whose image is the pointer diameter and whose Kraus rank is two.
 - **Partial dephasing** ($0<p<1$) is not idempotent: $\Phi^{\mathrm{deph}}_p \circ \Phi^{\mathrm{deph}}_p = \Phi^{\mathrm{deph}}_{2p-p^2} \neq \Phi^{\mathrm{deph}}_p$. It is a contraction, not a projection; it is mathematically invertible but physically irreversible, because its inverse is not completely positive.
 
 The pointer basis is the commutative ${}^{*}$-subalgebra of $\mathbb{B}$ generated by the two idempotents along $\vec u$ (its Hermitian part lies in $\mathbb{M}_+$); its idempotents are the only pure states fixed by the channel, and the subalgebra is invariant under the $\mathrm{U}(1)$ phase rotation they generate. The framework supplies this structure once $\vec u$ is given, but it does not derive $\vec u$, the environment, the rate, or the selection of an outcome. In the language of the quantum–classical divide, decoherence is the process by which a partition loses its incompatible idempotents — becoming, operationally, a classical simplex over the pointer states — while the underlying system-plus-environment state remains fundamental. That is what the algebra explains; what lies beyond it is the dynamics that the algebra does not contain.

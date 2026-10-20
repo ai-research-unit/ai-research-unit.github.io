@@ -143,7 +143,7 @@ Two norms of the informational element are read together, and they place the inf
 The first is the biquaternion norm, which on $\mathbb{M}_+$ is
 
 $$
-\langle\tilde Q_+\rangle_{\natural} = (ct')^2 - x'^2 - y'^2 - z'^2 ,
+\langle\tilde Q_+\rangle_{\natural} = (ct')^2 - {x'}^2 - {y'}^2 - {z'}^2 ,
 $$
 
 of signature $(1,3)$: the temporal direction is the single positive one and the three spatial directions are the negative ones. This is the reverse of the material sector, where the temporal direction is the negative one; the reversal is the reversal of who carries the $i$.
@@ -151,7 +151,7 @@ of signature $(1,3)$: the temporal direction is the single positive one and the 
 The second is the Hermitian form, the probability form of the sector,
 
 $$
-\langle\tilde Q_+,\tilde Q_+\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q_+\tilde Q_+^{*}\bigr) = (ct')^2 + x'^2 + y'^2 + z'^2 ,
+\langle\tilde Q_+,\tilde Q_+\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q_+\tilde Q_+^{*}\bigr) = (ct')^2 + {x'}^2 + {y'}^2 + {z'}^2 ,
 $$
 
 which is positive definite, with every direction counting with a plus and the temporal term the first. On the informational sector the two forms agree in sign on the temporal direction and disagree on the spatial ones; the probability form weights the informational time with a square, as it weights everything, and the temporal direction is the one both forms make positive.
@@ -160,7 +160,7 @@ which is positive definite, with every direction counting with a plus and the te
 
 This section is an interpretation, and it is the reason the article was written. It is stated as a reading and its boundaries are given in the section that follows.
 
-The informational sector is the state space of the framework. Its Hermitian elements are the observables, its positive elements of trace one are the states, the idempotents are the pure states, the positive cone and the Bloch ball organise the mixtures, and the trace formula $\mathrm{Tr}(\tilde{Ϛ}\tilde H) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$ is the Born rule (*The Informational Sector: States, Observables and Probability*, *POVMs and the Positive Cone in Biquaternionic Form*, *Roots, Idempotents and Observables*). A state is what an apparatus prepares and what a measurement reads; it is, in the plain sense, a **record**.
+The informational sector is the state space of the framework. Its Hermitian elements are the observables, its positive elements normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the image) are the states, the idempotents are the pure states, the positive cone and the Bloch ball organise the mixtures, and the normalised plain form $\mathrm{Tr}(\tilde{Ϛ}\tilde H) = 2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H)$, read as the trace formula, is the Born rule (*The Informational Sector: States, Observables and Probability*, *POVMs and the Positive Cone in Biquaternionic Form*, *Roots, Idempotents and Observables*). A state is what an apparatus prepares and what a measurement reads; it is, in the plain sense, a **record**.
 
 The reading this article adds concerns the temporal coordinate of that record. The four coordinates of the informational element are $(ct', x', y', z')$ — one temporal and real, three spatial and imaginary — and the vector directions $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ are the ones the biquaternion norm reads *negatively*. The temporal direction $ct'$ is the one both forms of the sector weigh with a plus: it is the single positive direction of the natural norm and a positive direction of the Hermitian form.
 

@@ -29,11 +29,11 @@ $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
 $$
-and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. The trace formula of the informational sector, for a state $\tilde{Ϛ}$ and an observable $\tilde H$, is $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde H\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ denotes the speed of light in the medium and $c_0$ the vacuum speed of light.
+and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, the fixed-point set of complex conjugation. The normalised plain form of the informational sector, read as the trace formula, for a state $\tilde{Ϛ}$ and an observable $\tilde H$, is $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde H\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ denotes the speed of light in the medium and $c_0$ the vacuum speed of light.
 
 ## The Homogeneous Part, Recalled
 
-Rotor conjugation restricted to $\mathbb{M}_-$ is linear in $\tilde{Q}$, it preserves the subspace $\mathbb{M}_-$, and it preserves the biquaternion norm, $\tilde{Q}'\tilde{Q}'^{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; it is an inner automorphism of $\mathbb{B}$ in the unitary sector, where $\tilde u^{*}=\tilde u^{-1}$ and the map is conjugation, but a boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and acts by the twisted map $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$, which is linear but not multiplicative and so is not an algebra automorphism. The map
+Rotor conjugation restricted to $\mathbb{M}_-$ is linear in $\tilde{Q}$, it preserves the subspace $\mathbb{M}_-$, and it preserves the biquaternion norm, $\tilde{Q}_{\mathrm{Ad}}\tilde{Q}_{\mathrm{Ad}}^{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; it is an inner automorphism of $\mathbb{B}$ in the unitary sector, where $\tilde u^{*}=\tilde u^{-1}$ and the map is conjugation, but a boost rotor is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and acts by the twisted map $\tilde{Q}\mapsto\tilde U_{\mathrm b}\tilde{Q}\tilde U_{\mathrm b}$, which is linear but not multiplicative and so is not an algebra automorphism. The map
 $$
 \mathrm{Ad}:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
 \mathrm{Ad}(\tilde U_{\mathrm L}):\ \tilde{Q}\longmapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}
@@ -201,13 +201,13 @@ The frame's action on the algebra extends to the operators built from it, and it
 
 **The conjugated gradient is the gradient in the rotated basis.** The gradient is a material four-vector of operators, $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$. Under the rotor action $\tilde{Q}\mapsto\tilde U_{\mathrm L}\tilde{Q}\tilde U_{\mathrm L}^{*}$ of the section *The Frame Reading*, the derivative is untouched and the basis is transported, so the conjugated operator is the gradient written in the rotated basis,
 $$
-\tilde{\nabla}' := \sum_\mu \left(\tilde U_{\mathrm L}\,e_\mu\,\tilde U_{\mathrm L}^{-1}\right)\partial_\mu .
+\tilde{\nabla}_{\mathrm{Ad}} := \sum_\mu \left(\tilde U_{\mathrm L}\,e_\mu\,\tilde U_{\mathrm L}^{-1}\right)\partial_\mu .
 $$
 Conjugation by a constant rotor is an algebra automorphism and it commutes with the constant-coefficient derivatives, so for the field transformed with the basis,
 $$
-\tilde{\nabla}'\left(\tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}\right) = \tilde U_{\mathrm L}\left(\tilde{\nabla}\tilde\Phi\right)\tilde U_{\mathrm L}^{*} ,
+\tilde{\nabla}_{\mathrm{Ad}}\left(\tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}\right) = \tilde U_{\mathrm L}\left(\tilde{\nabla}\tilde\Phi\right)\tilde U_{\mathrm L}^{*} ,
 $$
-which was checked on random rotors and random $\tilde\Phi$. The equation $\tilde{\nabla}\tilde\Phi = \tilde{G}$ therefore maps to $\tilde{\nabla}'\tilde\Phi' = \tilde{G}'$ with $\tilde\Phi' = \tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}$ and $\tilde{G}' = \tilde U_{\mathrm L}\tilde{G}\tilde U_{\mathrm L}^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
+which was checked on random rotors and random $\tilde\Phi$. The equation $\tilde{\nabla}\tilde\Phi = \tilde{G}$ therefore maps to $\tilde{\nabla}_{\mathrm{Ad}}\tilde\Phi_{\mathrm{Ad}} = \tilde{G}_{\mathrm{Ad}}$ with $\tilde\Phi_{\mathrm{Ad}} = \tilde U_{\mathrm L}\tilde\Phi\tilde U_{\mathrm L}^{*}$ and $\tilde{G}_{\mathrm{Ad}} = \tilde U_{\mathrm L}\tilde{G}\tilde U_{\mathrm L}^{*}$: the equation is **form-invariant**, its form unchanged although its basis has moved.
 
 **Why it is a theorem and not a tautology.** Three facts carry the statement. The rotated elements $\tilde U_{\mathrm L}e_\mu\tilde U_{\mathrm L}^{-1}$ are again a basis with the same multiplication table, so the rotated equation is an equation of the same kind and not a different one; the map $\tilde U_{\mathrm L}\mapsto\mathrm{Ad}$ is the two-to-one cover onto $SO^+(1,3)$ of the section *The Homogeneous Part, Recalled*, so the basis rotation is a Lorentz transformation of the frame; and a central shift or a central second-order factor is carried along unchanged, so the shift of the companion d'Alembertian article adds nothing to the argument. The translation completes it rather than complicating it: translations act additively on the argument, and an operator with constant coefficients is unchanged by a shift of its argument, so the full Poincaré statement is the semidirect extension of the homogeneous one — which is the source's Theorem 4.1 read in the corpus frame.
 
@@ -251,7 +251,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $SL(2,\mathbb{C})\ltimes_{\mathrm{Ad}}\mathbb{R}^4$ | Semidirect structure of the (covering) restricted Poincaré group |
 | $\mathrm{Tr}(\tilde{Ϛ}\tilde H)=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H) = 2\langle\tilde{Ϛ},\tilde H\rangle$ | Trace formula (informational sector) |
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ | Biquaternionic gradient (material four-vector of operators) |
-| $\tilde{\nabla}' = \sum_\mu(\tilde U_{\mathrm L}e_\mu\tilde U_{\mathrm L}^{-1})\partial_\mu$ | Conjugated gradient, the gradient in the rotated basis |
+| $\tilde{\nabla}_{\mathrm{Ad}} = \sum_\mu(\tilde U_{\mathrm L}e_\mu\tilde U_{\mathrm L}^{-1})\partial_\mu$ | Conjugated gradient, the gradient in the rotated basis |
 | $\tilde{\nabla}\tilde\Phi = \tilde{G}$ | Biwave equation; form-invariant under the rotor action |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

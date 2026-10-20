@@ -16,9 +16,9 @@ which is the four-wavevector $\tilde P = \frac{i\omega}{c}e_t + \vec k$ of the p
 
 $$
 \boxed{\;
-\tilde P' \;=\; \tilde U_{\mathrm L}\,\tilde P\,\tilde U_{\mathrm L}^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde P\,\tilde{u}^{\natural},
+\tilde P_2 \;=\; \tilde U_{\mathrm L}\,\tilde P\,\tilde U_{\mathrm L}^{*} \;=\; \exp(d)\,\tilde{u}\,\tilde P\,\tilde{u}^{\natural},
 \qquad
-\tilde{F}' \;=\; \tilde U_{\mathrm L}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm L} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
+\tilde{F}_2 \;=\; \tilde U_{\mathrm L}^{\natural}\,\tilde{F}\,\tilde U_{\mathrm L} \;=\; \exp(d)\,\tilde{u}\,\tilde{F}\,\tilde{u}^{\natural} .
 \;}
 $$
 
@@ -183,7 +183,7 @@ Two consequences deserve recording. First, the electric and magnetic fields are 
 
 The identity turns the kinematics of a boosted wave into three interpretations of one formula:
 
-- **Frequency.** The coefficient of $i$ in $\tilde P'$ is $\exp(d)\omega = \left(\cosh w - \cos\alpha\sinh w\right)\omega$. This is the relativistic Doppler factor of *Exercise: The Relativistic Doppler Effect*, recovered here as the scalar factor of the dilation.
+- **Frequency.** The coefficient of $i$ in $\tilde P_2$ is $\exp(d)\omega = \left(\cosh w - \cos\alpha\sinh w\right)\omega$. This is the relativistic Doppler factor of *Exercise: The Relativistic Doppler Effect*, recovered here as the scalar factor of the dilation.
 - **Direction.** The rotation $\tilde{u}$ carries $\vec u_k$ to $\cos\theta\,\vec u_k - \sin\theta\,\vec u_e$ with $\vec u_e = (\vec u-\cos\alpha\,\vec u_k)/\sin\alpha$ the transverse direction of $\vec u$, so that $\vec u_k$ is dragged toward the velocity by the angle $\theta$; in the transverse case this is the elementary form $\vec u_k\cos\theta - \vec u\sin\theta$. This is aberration, recovered as the angle of the rotation.
 - **Amplitude and polarisation.** The field is rotated by $\tilde{u}$ and scaled by $\exp(d)$, so the Poynting vector and the energy density inherit the same similarity.
 
@@ -212,9 +212,9 @@ $$
 where $\alpha$ is the angle between $\vec u$ and $\vec u_k$ and $\vec u_b$ the unit vector along $\vec u\times\vec u_k$. Then
 
 $$
-\tilde P' = \tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*} = \exp(d)\tilde{u}\tilde P\tilde{u}^{\natural},
+\tilde P_2 = \tilde U_{\mathrm L}\tilde P\tilde U_{\mathrm L}^{*} = \exp(d)\tilde{u}\tilde P\tilde{u}^{\natural},
 \qquad
-\tilde{F}' = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L} = \exp(d)\tilde{u}\tilde{F}\tilde{u}^{\natural} .
+\tilde{F}_2 = \tilde U_{\mathrm L}^{\natural}\tilde{F}\tilde U_{\mathrm L} = \exp(d)\tilde{u}\tilde{F}\tilde{u}^{\natural} .
 $$
 
 Transversely the dilation is $\gamma$ — the transverse Doppler factor — and $\tan\frac{\theta}{2} = \tanh\frac{w}{2}$; parallel to the boost there is no rotation and the dilation is $\exp(\mp w)$. The reduction is possible only because the wave is null, and the field statement is a vacuum statement.

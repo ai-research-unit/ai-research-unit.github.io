@@ -61,10 +61,10 @@ so that every element of $\mathbb{B}$ remains even and no relation inside $\math
 **The graded tensor product.** The product on $\mathbb{B}\otimes\mathcal{G}$ is the graded (Koszul) one,
 
 $$
-(\tilde Q\otimes g)(\tilde Q'\otimes g')=(-1)^{|g|\,|\tilde Q'|}\,(\tilde Q\tilde Q')\otimes(gg') ,
+(\tilde Q\otimes g)(\tilde Q_2\otimes g_2)=(-1)^{|g|\,|\tilde Q_2|}\,(\tilde Q\tilde Q_2)\otimes(gg_2) ,
 $$
 
-with $|\tilde Q|=0$ for all $\tilde Q\in\mathbb{B}$. Because every $\tilde Q$ is even, the rule reduces to $(\tilde Q\otimes g)(\tilde Q'\otimes g')=(\tilde Q\tilde Q')\otimes(gg')$: the algebra is central, the Grassmann factor multiplies by the graded rule, and $\theta$ commutes with every biquaternion. This is the reason the coherent-state labels are "Grassmann-valued biquaternions" only in the weak sense that each coefficient of the algebra may be a Grassmann number; the crucial point is that the labels anticommute with each other while commuting with the algebra.
+with $|\tilde Q|=0$ for all $\tilde Q\in\mathbb{B}$. Because every $\tilde Q$ is even, the rule reduces to $(\tilde Q\otimes g)(\tilde Q_2\otimes g_2)=(\tilde Q\tilde Q_2)\otimes(gg_2)$: the algebra is central, the Grassmann factor multiplies by the graded rule, and $\theta$ commutes with every biquaternion. This is the reason the coherent-state labels are "Grassmann-valued biquaternions" only in the weak sense that each coefficient of the algebra may be a Grassmann number; the crucial point is that the labels anticommute with each other while commuting with the algebra.
 
 ## The Coherent States
 
@@ -196,7 +196,7 @@ $$
 \mathrm{Tr}\,\tilde{Ϛ}_\theta=1 ,
 $$
 
-where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle\langle\theta|$ is a rank-one projector, but it is not a pure state of the *algebra* unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the trace pairing
+where the trace is the algebraic trace $\mathrm{Tr}=2\,\mathrm{Sc}$. The operator $|\theta\rangle\langle\theta|$ is a rank-one projector, but it is not a pure state of the *algebra* unless the identification carried the operator product to the biquaternion product, which a linear identification of the two spaces does not do; what the framework uses is the state's trace and its pairing, not its idempotence. The expectation of an observable is the normalised plain form, read as the trace pairing
 
 $$
 \langle O\rangle_\theta=\mathrm{Tr}(\tilde{Ϛ}_\theta O)=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O) .
@@ -241,7 +241,7 @@ which is the statement that the Matsubara frequencies of a fermion are the half-
 **The algebra's own.**
 
 - *The Grassmann algebra as the minimal odd extension of $\mathbb{B}$*, with even part $\mathbb{B}$ preserved. This is the constructive content of that open item: the odd generator that the grading needs is supplied by the labels, and it does not disturb the even algebra.
-- *The sector reading of the coherent states*: the density matrix is an even element of $\mathbb{M}_+$ even though the label is odd, and the expectation is the trace pairing $2\,\mathrm{Sc}$.
+- *The sector reading of the coherent states*: the density matrix is an even element of $\mathbb{M}_+$ even though the label is odd, and the expectation is the plain form, read as the trace pairing $2\,\mathrm{Sc}$.
 - *The parity as the label reflection* $|\theta\rangle\mapsto|-\theta\rangle$, which is the same element $(-1)^F=i\vec e_z$ that the parents identify for one mode.
 
 **Open.**
@@ -288,7 +288,7 @@ The biquaternion interpretation is that the label is odd while the density matri
 | $\{\partial/\partial\theta^*,\theta^*\}=\mathrm{id}$ | Canonical anticommutator in the representation |
 | $\langle\theta|O|\theta\rangle$ | Normal symbol (Grassmann valued) |
 | $\rho_\theta=|\theta\rangle\langle\theta|\in\mathbb{M}_+$ | State as an even algebra element |
-| $\langle O\rangle_\theta=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$ | Expectation as the trace pairing |
+| $\langle O\rangle_\theta=2\,\mathrm{Sc}(\tilde{Ϛ}_\theta O)$ | Expectation as the trace reading of the plain form |
 | $(-1)^{N}|\theta\rangle=|-\theta\rangle$ | Parity as the label reflection |
 | $\psi(\tau+\beta)=-\psi(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic Matsubara boundary condition |
 

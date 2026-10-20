@@ -63,14 +63,14 @@ $$
 so $0 < \alpha < 1$ for a massive particle, and $\alpha \to 1$ in the massless limit. On the far side, $x > 0$, the potential is $V_0$ and the momentum is
 
 $$
-k' = -\frac{\sqrt{(V_0 - E)^2 - m^2c^4}}{\hbar c},
+k_2 = -\frac{\sqrt{(V_0 - E)^2 - m^2c^4}}{\hbar c},
 \qquad
-\Psi_{\mathrm{II}} = t\,\exp(ik'x)\begin{pmatrix}1\\ 1/\beta\end{pmatrix},
+\Psi_{\mathrm{II}} = t\,\exp(ik_2x)\begin{pmatrix}1\\ 1/\beta\end{pmatrix},
 \qquad
 \beta = \sqrt{\frac{V_0 - E - mc^2}{V_0 - E + mc^2}} .
 $$
 
-The sign of $k'$ is chosen so that the transmitted wave carries current to the right when $V_0 - E > mc^2$; this is the **Klein region**, where the energy measured from the top of the step is more negative than $-mc^2$ and the local state is a negative-frequency one. Both $\alpha$ and $\beta$ lie in $(0,1)$ for a massive particle in the Klein region.
+The sign of $k_2$ is chosen so that the transmitted wave carries current to the right when $V_0 - E > mc^2$; this is the **Klein region**, where the energy measured from the top of the step is more negative than $-mc^2$ and the local state is a negative-frequency one. Both $\alpha$ and $\beta$ lie in $(0,1)$ for a massive particle in the Klein region.
 
 ### Reflection and transmission
 
@@ -184,7 +184,7 @@ The biquaternion framework locates the three ingredients: the potential is centr
 | $D = \tilde\nabla + \frac{iϙ}{\hbar}\tilde{A}$ | Covariant derivative (minimal coupling) |
 | $\tilde{A} = \frac{i\phi}{c}e_t$ | Electrostatic potential biquaternion |
 | $V_0$, $ϙ\phi(x) = V_0\theta(x)$ | Step height and potential energy |
-| $E$, $k$, $k'$ | Energy, incident momentum, transmitted momentum |
+| $E$, $k$, $k_2$ | Energy, incident momentum, transmitted momentum |
 | $\alpha = \sqrt{(E - mc^2)/(E + mc^2)}$ | Incident-side spinor parameter |
 | $\beta = \sqrt{(V_0 - E - mc^2)/(V_0 - E + mc^2)}$ | Far-side spinor parameter |
 | $r$, $t$, $R$, $T$ | Reflection and transmission amplitudes and probabilities |

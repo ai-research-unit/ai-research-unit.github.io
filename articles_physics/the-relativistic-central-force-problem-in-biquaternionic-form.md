@@ -387,7 +387,7 @@ In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the co
 | $\gamma=1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
 | $m_{\text{rel}}=\gamma m=(E-V)/c^2$ | Relativistic mass |
 | $p_r=\gamma m\,dr/dt=-L\,du/d\theta$ | Radial momentum; the chain-rule identity |
-| $u=1/r$ | Binet variable; prime denotes $d/d\theta$ |
+| $u=1/r$ | Binet variable; derivatives are written explicitly |
 | $(E-V)^2-m^2c^4=c^2L^2\left(\left(\frac{du}{d\theta}\right)^2+u^2\right)$ | The orbit constraint (mass-shell identity) |
 | $\frac{d^2u}{d\theta^2}+u=-m_{\text{rel}}F(1/u)/(L^2u^2)$ | Relativistic Binet equation |
 | $\omega^2=1-\kappa^2/(c^2L^2)$ | Relativistic orbital frequency |

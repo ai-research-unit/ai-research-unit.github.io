@@ -25,7 +25,7 @@ The article is the indefinite analogue of *Riemannian Geometry* and assumes *Smo
 
 ### Causal Character of Vectors and Curves
 
-**Definition.** Let $(M, g)$ be a pseudo-Riemannian manifold and $v \in T_pM$ nonzero. Then $v$ is **spacelike** if $g(v, v) > 0$, **timelike** if $g(v, v) < 0$, and **null** (or **lightlike**) if $g(v, v) = 0$. The set of null vectors in $T_pM$ is the **null cone** (or **light cone**); it is a cone, and it is the zero set of the quadratic form $\mathfrak{Q}(v) = g(v, v)$, which is nondegenerate but indefinite. In a Lorentzian manifold the timelike vectors at $n$ form two open convex cones, and $n$ is **time-orientable** at $n$ if one of them is designated the future.
+**Definition.** Let $(M, g)$ be a pseudo-Riemannian manifold and $v \in T_pM$ nonzero. Then $v$ is **spacelike** if $g(v, v) > 0$, **timelike** if $g(v, v) < 0$, and **null** (or **lightlike**) if $g(v, v) = 0$. The set of null vectors in $T_pM$ is the **null cone**; it is a cone, and it is the zero set of the quadratic form $\mathfrak{Q}(v) = g(v, v)$, which is nondegenerate but indefinite. In a Lorentzian manifold the timelike vectors at $n$ form two open convex cones, and $n$ is **time-orientable** at $n$ if one of them is designated the future.
 
 **Definition.** A nonzero vector field $X$ on a Lorentzian manifold $(M, g)$ is **timelike** if $g(X, X) < 0$ everywhere; the manifold is **time-orientable** if it admits a timelike vector field, and a **time orientation** is the choice of such a field up to multiplication by a positive function. A curve $\gamma$ is **timelike**, **null** or **spacelike** according to the character of its velocity $\gamma'(t)$, and it is **causal** if it is timelike or null everywhere.
 
@@ -43,7 +43,7 @@ $$
 
 the standard form of signature $(n,m)$; its isometry group is the pseudo-orthogonal group $O(n,m)$, which acts transitively, and the model is the flat simply connected pseudo-Riemannian manifold of that signature.
 
-**Example (the Minkowski plane).** In signature $(1,1)$ the null cone at the origin consists of the two lines $x = \pm y$; there are two timelike cones, given by $|x| > |y|$ with $x > 0$ and with $x < 0$, and the form takes opposite signs on them. In the plane the causal structure is a partial order after a time orientation is chosen: $(t_1, x_1) \leq (t_2, x_2)$ if $t_2 - t_1 \geq |x_2 - x_1|$.
+**Example (the Lorentzian plane).** In signature $(1,1)$ the null cone at the origin consists of the two lines $x = \pm y$; there are two timelike cones, given by $|x| > |y|$ with $x > 0$ and with $x < 0$, and the form takes opposite signs on them. In the plane the causal structure is a partial order after a time orientation is chosen: $(t_1, x_1) \leq (t_2, x_2)$ if $t_2 - t_1 \geq |x_2 - x_1|$.
 
 **Definition.** For a causal curve $\gamma$ the **Lorentzian length** is
 
@@ -173,7 +173,7 @@ In each case the isometry group is the orthogonal group of the ambient form — 
 
 A pseudo-Riemannian metric is a smooth field of nondegenerate symmetric bilinear forms of fixed signature $(n,m)$; the signature is invariant by Sylvester's law of inertia, and a Lorentzian metric is one of signature $(1, n-1)$. Nondegeneracy in place of positive definiteness is enough for the entire connection theory: the Levi-Civita connection exists and is unique by the Koszul formula, parallel transport is an isometry, geodesics and the exponential map are defined by the same equations, normal coordinates have the same form, and the curvature tensor satisfies the same symmetries and Bianchi identities.
 
-The indefinite metric defines no norm, hence no distance. A nonzero tangent vector is spacelike, timelike or null according to the sign of $g(v, v)$; the null vectors form the light cone; the causal relations $\preceq$ and $\ll$ replace the metric as the structure of the space, and they determine the topology, though not through a distance function. A time-oriented Lorentzian manifold is causal when it contains no closed causal curve, and globally hyperbolic when it has a Cauchy surface; a globally hyperbolic manifold splits as a product with a lapse function. The Lorentzian length is the integral of the square root of the absolute value of $g(\gamma', \gamma')$, and the Lorentzian distance is a supremum over causal curves, with a reverse triangle inequality and many vanishing values.
+The indefinite metric defines no norm, hence no distance. A nonzero tangent vector is spacelike, timelike or null according to the sign of $g(v, v)$; the null vectors form the null cone; the causal relations $\preceq$ and $\ll$ replace the metric as the structure of the space, and they determine the topology, though not through a distance function. A time-oriented Lorentzian manifold is causal when it contains no closed causal curve, and globally hyperbolic when it has a Cauchy surface; a globally hyperbolic manifold splits as a product with a lapse function. The Lorentzian length is the integral of the square root of the absolute value of $g(\gamma', \gamma')$, and the Lorentzian distance is a supremum over causal curves, with a reverse triangle inequality and many vanishing values.
 
 The sectional curvature is defined only on nondegenerate two-planes, so it no longer determines the curvature tensor and it is unbounded near the null cone; the Ricci and scalar curvatures retain their meaning as traces, and the Einstein tensor satisfies the contracted Bianchi identity. The complete simply connected pseudo-Riemannian manifolds of constant curvature fall into three families — the flat space $\mathbb{R}^{n,m}$, the pseudo-sphere $S^{n,m}$ and the pseudo-hyperboloid $H^{n,m}$ — each homogeneous under a pseudo-orthogonal group; in Lorentzian signature they are the flat space, the Lorentzian sphere and the Lorentzian hyperboloid. Finally, every pseudo-Riemannian manifold embeds isometrically into a flat pseudo-Riemannian space by the indefinite Nash theorem, which places the metric theory of every signature on the same footing as the Riemannian case.
 
@@ -186,7 +186,7 @@ The sectional curvature is defined only on nondegenerate two-planes, so it no lo
 | $\eta_{n,m} = \sum_{i=1}^n dx_i^2 - \sum_{j=1}^m dy_j^2$ | Flat metric of signature $(n,m)$ |
 | $\mathbb{R}^{n,m}$ | Flat pseudo-Riemannian space $(\mathbb{R}^{n+m}, \eta_{n,m})$ |
 | Spacelike, timelike, null | $g(v,v) > 0$, $< 0$, $= 0$ for $v \neq 0$ |
-| Null cone, light cone | $\{v : g(v,v) = 0\}$ in a tangent space |
+| Null cone | $\{v : g(v,v) = 0\}$ in a tangent space |
 | Time-orientable | Admits a timelike vector field; the choice is a time orientation |
 | $n \preceq m$, $n \ll m$ | Causal and chronological precedence |
 | $I^\pm(n)$, $J^\pm(n)$ | Chronological and causal future and past |

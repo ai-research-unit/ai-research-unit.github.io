@@ -112,13 +112,13 @@ so $S$ has order four in $SL(2,\mathbb Z)$ and order two modulo $\pm1$, while $T
 **Strong–weak duality.** At $\theta=0$ the coupling is purely imaginary, $\tau=4\pi i/g^2$, and
 
 $$
-S:\ \tau\mapsto-\frac1\tau = -\,\frac{1}{4\pi i/g^2}=\frac{i g^2}{4\pi}=\frac{4\pi i}{g'^2},
+S:\ \tau\mapsto-\frac1\tau = -\,\frac{1}{4\pi i/g^2}=\frac{i g^2}{4\pi}=\frac{4\pi i}{g_{\mathrm D}^2},
 \qquad
-g'=\frac{4\pi}{g}.
+g_{\mathrm D}=\frac{4\pi}{g}.
 $$
 
 
-This was verified numerically at three couplings: for $g=1$ the image $\tau'=0.079577i$ equals $4\pi i/g'^2$ with $g'=4\pi$; for $g=2$ it is $0.318310i$ with $g'=2\pi$; and for $g=\sqrt{4\pi}$ the exchange is the self-dual point $g'=g$ at $\tau=i$. The map $g\mapsto4\pi/g$ is the strong–weak duality of the electric and magnetic couplings, and the self-dual coupling is $g^2=4\pi$. For general $\theta$ the transformation mixes the two parameters, $g'^2=g^2\bigl((\theta/2\pi)^2+(4\pi/g^2)^2\bigr)$ and $\theta'=-\theta/\bigl((\theta/2\pi)^2+(4\pi/g^2)^2\bigr)$, so the angle is not preserved by the exchange; this is the standard statement that the theta angle rotates under the duality.
+This was verified numerically at three couplings: for $g=1$ the image $\tau_2=0.079577i$ equals $4\pi i/g_{\mathrm D}^2$ with $g_{\mathrm D}=4\pi$; for $g=2$ it is $0.318310i$ with $g_{\mathrm D}=2\pi$; and for $g=\sqrt{4\pi}$ the exchange is the self-dual point $g_{\mathrm D}=g$ at $\tau=i$. The map $g\mapsto4\pi/g$ is the strong–weak duality of the electric and magnetic couplings, and the self-dual coupling is $g^2=4\pi$. For general $\theta$ the transformation mixes the two parameters, $g_{\mathrm D}^2=g^2\bigl((\theta/2\pi)^2+(4\pi/g^2)^2\bigr)$ and $\theta_2=-\theta/\bigl((\theta/2\pi)^2+(4\pi/g^2)^2\bigr)$, so the angle is not preserved by the exchange; this is the standard statement that the theta angle rotates under the duality.
 
 **The $T$ generator and the theta periodicity.** $T:\tau\mapsto\tau+1$ leaves $g$ fixed and shifts $\theta\to\theta+2\pi$. It is a symmetry because the partition function is periodic in $\theta$ with period $2\pi$, as *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form* established from the integrality of the topological charge. The generator $T$ therefore exists because the topological charge is an integer; it is a statement about the sum over instanton sectors, not a statement about the algebra.
 
@@ -169,10 +169,10 @@ $$
 with $m$ the electric and $n$ the magnetic quantum number, the magnetic charge being measured in units of $\frac{4\pi}{e}$, twice the minimal Dirac charge $\frac{2\pi}{e}$. The **Dirac pairing** of two charge vectors,
 
 $$
-\langle v,v'\rangle=mn'-nm'=\det\begin{pmatrix}m&m'\\ n&n'\end{pmatrix},
+\langle v,v_2\rangle=mn_2-nm_2=\det\begin{pmatrix}m&m_2\\ n&n_2\end{pmatrix},
 $$
 
-is the symplectic form of the lattice, and the quantisation condition is the statement that it takes integer values on integer vectors: the physical pairing $ϙ_e ϙ_m'-ϙ_e'ϙ_m$ equals $4\pi\langle v,v'\rangle$, which lies in $2\pi\mathbb Z$ precisely when $\langle v,v'\rangle$ is an integer. For the minimal dyons $v=(1,0)$ and $v'=(0,1)$ the pairing is $1$, corresponding to the physical product $e\cdot\frac{4\pi}{e}=4\pi$ of a unit electric and a unit magnetic charge — two Dirac quanta, the factor of two being the one that fixes $g_m=4\pi/e$. A matrix
+is the symplectic form of the lattice, and the quantisation condition is the statement that it takes integer values on integer vectors: the physical pairing $ϙ_e ϙ_{m,2}-ϙ_{e,2}ϙ_m$ equals $4\pi\langle v,v_2\rangle$, which lies in $2\pi\mathbb Z$ precisely when $\langle v,v_2\rangle$ is an integer. For the minimal dyons $v=(1,0)$ and $v_2=(0,1)$ the pairing is $1$, corresponding to the physical product $e\cdot\frac{4\pi}{e}=4\pi$ of a unit electric and a unit magnetic charge — two Dirac quanta, the factor of two being the one that fixes $g_m=4\pi/e$. A matrix
 
 $$
 \gamma=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\in SL(2,\mathbb Z)
@@ -181,7 +181,7 @@ $$
 acts on the lattice by $v\mapsto\gamma v$, and because $\det\gamma=1$ it preserves the determinant and hence the pairing:
 
 $$
-\langle \gamma v,\gamma v'\rangle=\det\bigl(\gamma\begin{pmatrix}m&m'\\ n&n'\end{pmatrix}\bigr)=\det\gamma\cdot\langle v,v'\rangle .
+\langle \gamma v,\gamma v_2\rangle=\det\bigl(\gamma\begin{pmatrix}m&m_2\\ n&n_2\end{pmatrix}\bigr)=\det\gamma\cdot\langle v,v_2\rangle .
 $$
 
 The group that preserves the Dirac pairing of integer charges is therefore exactly $SL(2,\mathbb Z)$ (up to the overall sign that is irrelevant on the lattice), and this is the precise reason the modular group and not some other arithmetic group governs the duality.

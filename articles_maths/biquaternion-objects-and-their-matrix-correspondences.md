@@ -210,7 +210,7 @@ $$
 
 **$4\times4$.** The same sandwich block by block, that is the Lorentz action written in the operator realization. Since the sandwich preserves the sectors, it preserves in particular the anti-Hermitian sector $\mathbb{M}_-$; reading an element of that sector as a real four-vector turns the sandwich into a $4\times4$ Lorentz matrix.
 
-**Other.** This is the proper orthochronous Lorentz group: proper, because it is connected and so sits in the identity component, whence the determinant is one; orthochronous, because a connected group cannot exchange the two halves of the light cone. It preserves the norm and both sectors. Its two-to-one cover is the norm-one group, and the obstruction to inverting the cover is the sign group $\{\pm e_t\}$.
+**Other.** This is the proper orthochronous Lorentz group: proper, because it is connected and so sits in the identity component, whence the determinant is one; orthochronous, because a connected group cannot exchange the two halves of the null cone. It preserves the norm and both sectors. Its two-to-one cover is the norm-one group, and the obstruction to inverting the cover is the sign group $\{\pm e_t\}$.
 
 ## The Bigger Groups of the Twisted Spinor
 
@@ -230,7 +230,7 @@ $$
 SU(2,2)\cong\mathrm{Spin}(4,2),
 $$
 
-of real dimension $15$, the double cover of the conformal group $SO^{+}(2,4)$ of the Minkowski space. This group is **not** a subgroup of $\mathbb{B}^{\times}$: it shares the Lorentz subgroup but enlarges it by the translations and the special conformal transformations, which are not multiplications of the algebra. The two enlargements are therefore of different kinds, and only the first is a quotient of the algebra's own group.
+of real dimension $15$, the double cover of the conformal group $SO^{+}(2,4)$ of the Lorentzian space. This group is **not** a subgroup of $\mathbb{B}^{\times}$: it shares the Lorentz subgroup but enlarges it by the translations and the special conformal transformations, which are not multiplications of the algebra. The two enlargements are therefore of different kinds, and only the first is a quotient of the algebra's own group.
 
 **The chain of the spinor groups.** With both dimensions and with the module each group carries, the picture is
 
@@ -349,7 +349,7 @@ The algebra $\mathbb{B}$ has one algebra isomorphism $\mathsf{M}_2$ onto $M_2(\m
 | $\mathrm{U}(2)$ | the unitary $2\times2$ matrices, the maximal compact subgroup of $\mathbb{B}^{\times}$ |
 | $H^3$ | the hyperbolic three-space, the boosts, $=SL(2,\mathbb{C})/SU(2)$ |
 | $\mathfrak{p}$ | the Hermitian matrices, the non-compact summand of the Cartan decomposition |
-| $SU(2,2)=\mathrm{Spin}(4,2)$ | the conformal group of the Minkowski space, of real dimension $15$; the twistor group |
+| $SU(2,2)=\mathrm{Spin}(4,2)$ | the conformal group of the Lorentzian space, of real dimension $15$; the twistor group |
 
 ## Further Reading
 

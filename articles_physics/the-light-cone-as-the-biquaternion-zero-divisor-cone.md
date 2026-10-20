@@ -36,7 +36,7 @@ $$
 \mathcal{Z} = \{\, \tilde{Q}\in\mathbb{B} : \tilde{Q}\neq 0,\ \langle\tilde{Q}\rangle_{\natural} = 0 \,\},
 $$
 
-a complex cone of complex dimension three with the origin removed. Since the form is isotropic, the algebra is split by it, and the elements of $\mathcal{Z}$ are exactly the **zero divisors**: a nonzero $\tilde{Q}$ has $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ if and only if there is a nonzero $\tilde{Q}'$ with $\tilde{Q}\tilde{Q}' = 0$ (or with $\tilde{Q}'\tilde{Q} = 0$).
+a complex cone of complex dimension three with the origin removed. Since the form is isotropic, the algebra is split by it, and the elements of $\mathcal{Z}$ are exactly the **zero divisors**: a nonzero $\tilde{Q}$ has $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ if and only if there is a nonzero $\tilde Q_2$ with $\tilde{Q}\tilde Q_2 = 0$ (or with $\tilde Q_2\tilde{Q} = 0$).
 
 On the **real material slice**, writing $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $(t,x,y,z)\in\mathbb{R}^4$, the form becomes
 

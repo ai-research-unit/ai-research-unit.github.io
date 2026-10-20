@@ -104,10 +104,10 @@ The definition is local: analyticity is a property of the germ of $f$ at each po
 **(b)** $f$ is differentiable on $\Omega$, in the sense that
 
 $$
-f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
+\frac{df}{dx}(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
 $$
 
-exists for every $a \in \Omega$, and $f'$ is analytic on $\Omega$, with $f'(x) = \sum_n n\,c_n (x-a)^{n-1}$ on a neighbourhood of $a$;
+exists for every $a \in \Omega$, and $\frac{df}{dx}$ is analytic on $\Omega$, with $\frac{df}{dx} = \sum_n n\,c_n (x-a)^{n-1}$ on a neighbourhood of $a$;
 
 **(c)** if $f$ is analytic and $f(a) \neq 0$ then $1/f$ is analytic on a neighbourhood of $a$;
 
@@ -145,13 +145,13 @@ Over the real line the classical statement adds the hypothesis that the agreemen
 
 **Theorem.** Let $f = \sum_n a_n (x-a)^n$ have radius $R > 0$.
 
-**(a)** $f$ is differentiable on $B(a,R)$ and $f' = \sum_n n a_n (x-a)^{n-1}$ there, the derivative having the same radius.
+**(a)** $f$ is differentiable on $B(a,R)$ and $\frac{df}{dx} = \sum_n n a_n (x-a)^{n-1}$ there, the derivative having the same radius.
 
-**(b)** If $F$ is archimedean and $f$ is differentiable with $f' = 0$ on the disc, then $f$ is constant. If $F$ is non-Archimedean and of characteristic $0$, the same holds.
+**(b)** If $F$ is archimedean and $f$ is differentiable with $\frac{df}{dx} = 0$ on the disc, then $f$ is constant. If $F$ is non-Archimedean and of characteristic $0$, the same holds.
 
 **(c)** Conversely, every analytic function $g$ on $B(a,R)$ has a primitive $G$ on the disc with $G' = g$, unique up to an additive constant, given by the termwise primitive of the expansion.
 
-**Proof.** (a) is the differentiation theorem for a uniformly convergent series applied on smaller discs. For (b) in the Archimedean case the mean value theorem gives $f(x) - f(y) = f'(\xi)(x-y) = 0$; in the non-Archimedean case the hypothesis of characteristic $0$ makes the same conclusion available from the coefficient expansion, since the expansion about $a$ has all higher coefficients $f^{(n)}(a)/n!$ vanishing and the formula for the primitive is the unique solution of $G' = g$ with the prescribed constant. (c) is the termwise construction and the radius computation above.
+**Proof.** (a) is the differentiation theorem for a uniformly convergent series applied on smaller discs. For (b) in the Archimedean case the mean value theorem gives $f(x) - f(y) = \frac{df}{dx}(\xi)(x-y) = 0$; in the non-Archimedean case the hypothesis of characteristic $0$ makes the same conclusion available from the coefficient expansion, since the expansion about $a$ has all higher coefficients $f^{(n)}(a)/n!$ vanishing and the formula for the primitive is the unique solution of $G' = g$ with the prescribed constant. (c) is the termwise construction and the radius computation above.
 
 Part (b) is a place where the two cases diverge in hypothesis rather than in conclusion: the non-Archimedean statement requires characteristic $0$, and the reason is the failure recorded at the end of this article, where in characteristic $p$ a nonconstant analytic function can have identically vanishing derivative.
 
@@ -199,7 +199,7 @@ $$
 
 **(c)** $\exp \log(1+x) = 1 + x$ for $\lvert x \rvert < \min(1, \rho_{\exp})$, and $\log \exp x = x$ whenever $\lvert \exp x - 1 \rvert < 1$, which in the non-Archimedean case holds for every $\lvert x \rvert < \rho_{\exp}$.
 
-**Proof.** (a) Since $\lvert 1/n \rvert \leq 1$, the radius is $\lim \lvert 1/n \rvert^{-1/n} = 1$; the boundary statement is the non-Archimedean convergence criterion. (b) Both sides are formal power series in $x$ and $y$ with rational coefficients, and both have the same derivative with respect to $x$, namely $\sum_{n \geq 0} (-1)^n x^n = 1/(1+x)$, the two denominators differing by the factor $1+y$ that cancels; both vanish at $x = 0$. Their difference, regarded as a formal power series in $x$ over the field of formal Laurent series in $y$, therefore has zero derivative and vanishes at $x = 0$, so it is zero; this is the case $f' = 0$ of the differentiation theorem above, valid in characteristic $0$. Convergence of the rearranged series at a point follows from the convergence of the three series at that point. (c) Substituting the logarithm series into the exponential and collecting by degree gives the identity of formal power series $\exp\log(1+x) = 1+x$, because the derivative of the left side is $\exp\log(1+x) \cdot (1/(1+x)) = 1$ whenever it is defined and the value at $x=0$ is $1$, and the right side has the same derivative and value; the second identity is the symmetry obtained by interchanging the roles of $\exp$ and $\log$.
+**Proof.** (a) Since $\lvert 1/n \rvert \leq 1$, the radius is $\lim \lvert 1/n \rvert^{-1/n} = 1$; the boundary statement is the non-Archimedean convergence criterion. (b) Both sides are formal power series in $x$ and $y$ with rational coefficients, and both have the same derivative with respect to $x$, namely $\sum_{n \geq 0} (-1)^n x^n = 1/(1+x)$, the two denominators differing by the factor $1+y$ that cancels; both vanish at $x = 0$. Their difference, regarded as a formal power series in $x$ over the field of formal Laurent series in $y$, therefore has zero derivative and vanishes at $x = 0$, so it is zero; this is the case $\frac{df}{dx} = 0$ of the differentiation theorem above, valid in characteristic $0$. Convergence of the rearranged series at a point follows from the convergence of the three series at that point. (c) Substituting the logarithm series into the exponential and collecting by degree gives the identity of formal power series $\exp\log(1+x) = 1+x$, because the derivative of the left side is $\exp\log(1+x) \cdot (1/(1+x)) = 1$ whenever it is defined and the value at $x=0$ is $1$, and the right side has the same derivative and value; the second identity is the symmetry obtained by interchanging the roles of $\exp$ and $\log$.
 
 **Remark (the logarithm and the principal units).** When $F$ is a non-Archimedean local field with uniformiser $\pi$ and residue characteristic $p$, the logarithmic series converges on the open unit ball $B(0,1) = \mathrm{M}$ and the exponential on the ball $\lvert x \rvert < \rho_{\exp}$. On the disc where both converge the two are mutually inverse, and the resulting isomorphism between a principal-unit group and an additive subgroup of $F$, with the exceptional behaviour for $p = 2$, is made precise. What is used here is only the convergence radius and the functional equations.
 
@@ -247,7 +247,7 @@ Let $F$ be complete of characteristic $p > 0$, such as $\mathbb{F}_p((t))$ with 
 
 **Remark (three failures).**
 
-**(a)** The derivative of a nonconstant analytic function may vanish identically: if $f(x) = x^p$ then $f'(x) = p x^{p-1} = 0$. Hence the implication "$f' = 0 \Rightarrow f$ constant" fails, and with it the real-analysis proof of that fact.
+**(a)** The derivative of a nonconstant analytic function may vanish identically: if $f(x) = x^p$ then $\frac{df}{dx} = p x^{p-1} = 0$. Hence the implication "$\frac{df}{dx} = 0 \Rightarrow f$ constant" fails, and with it the real-analysis proof of that fact.
 
 **(b)** The exponential and the logarithm degenerate: $n! = 0$ for $n \geq p$ in the prime field, so $\exp x = \sum_{n < p} x^n/n!$ is a polynomial of degree $p-1$, and the logarithm is defined only on the range on which $1+x$ is a $p$-th power of a convergent series; the functional equations hold only on the small disc where the relevant series have meaning.
 
@@ -305,7 +305,7 @@ The exponential has radius $\lvert p \rvert^{1/(p-1)}$ over a field of residue c
 | $\sum_n a_n (x-a)^n$ | Power series about $a$ |
 | $R$ | Radius of convergence $1/\limsup \lvert a_n \rvert^{1/n}$ |
 | $\mathcal{O}(\Omega)$ | Ring of analytic functions on $\Omega$ |
-| $f'$, $f^{(n)}$ | Derivative, $n$-th derivative |
+| $\frac{df}{dx}$, $f^{(n)}$ | Derivative, $n$-th derivative |
 | $\exp$, $\log$ | Exponential and logarithmic series |
 | $\rho_{\exp} = \lvert p \rvert^{1/(p-1)}$ | Radius of convergence of the exponential |
 | $(1+x)^\alpha$, $\binom{\alpha}{n}$ | Binomial series and binomial coefficients |

@@ -18,7 +18,7 @@ The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otim
 
 The companion articles supply the pieces:
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the four-vector content, the interval, and the anti-Hermitian sector.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the trace pairing, the Hermitian sector, and the Born rule.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the normalised plain form, the Hermitian sector, and the Born rule.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the state space, the idempotents, and the conjugation action.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module and its irreducibility.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Lie algebra, the Cartan decomposition, and the Wigner rotation.
@@ -27,7 +27,7 @@ The companion articles supply the pieces:
 
 A **superselection structure** for a quantum theory is a decomposition of its objects into sectors such that two conditions hold. First, no operation of the theory maps one sector into another: the observables preserve the sectors. Second, the relative phase between components drawn from different sectors is unobservable, so no coherence between them can be prepared or detected. The two conditions are equivalent in the standard algebraic setting, and it is worth recording why, because the equivalence is what makes the notion testable.
 
-**The algebraic form.** Let $\mathcal{A}$ be the algebra of observables acting on a Hilbert space $\mathcal{H}$, and let $Z(\mathcal{A}) = \mathcal{A}\cap\mathcal{A}'$ be its centre. Every projection $\tilde Q_3\in Z(\mathcal{A})$ is a **central projection**, and it decomposes the representation space,
+**The algebraic form.** Let $\mathcal{A}$ be the algebra of observables acting on a Hilbert space $\mathcal{H}$, and let $Z(\mathcal{A}) = \mathcal{A}\cap\mathcal{A}_{\mathrm c}$ be its centre. Every projection $\tilde Q_3\in Z(\mathcal{A})$ is a **central projection**, and it decomposes the representation space,
 $$
 \mathcal{H} = \tilde Q_3\mathcal{H} \oplus (1-\tilde Q_3)\mathcal{H},
 $$

@@ -12,7 +12,7 @@ S = J\,\Delta^{1/2},
 $$
 with $\Delta=S^*S\geq 0$ self-adjoint and $J$ anti-unitary. The theory then delivers the structural facts
 $$
-J M J = M', \qquad \Delta^{it}M\Delta^{-it}=M, \qquad \sigma_t(A):=\Delta^{it}A\Delta^{-it},
+J M J = M_{\mathrm c}, \qquad \Delta^{it}M\Delta^{-it}=M, \qquad \sigma_t(A):=\Delta^{it}A\Delta^{-it},
 $$
 so that $J$ identifies $M$ with its commutant and $t\mapsto\sigma_t$ is a one-parameter group of automorphisms of $M$, the **modular automorphism group** of the pair $(M,\Omega)$.
 
@@ -75,9 +75,9 @@ $$
 $$
 so $t\mapsto\sigma_t$ is a one-parameter group: the **modular automorphism group** of $(M,\Omega)$. The remaining structural identity,
 $$
-J M J = M',
+J M J = M_{\mathrm c},
 $$
-says that the modular conjugation identifies the algebra with its commutant. The content of the theory is that $S$ — hence $\Delta$ and $J$ — is constructed from the pair $(M,\Omega)$, and that from the state it recovers both a canonical flow and a canonical anti-isomorphism $M\cong M'$.
+says that the modular conjugation identifies the algebra with its commutant. The content of the theory is that $S$ — hence $\Delta$ and $J$ — is constructed from the pair $(M,\Omega)$, and that from the state it recovers both a canonical flow and a canonical anti-isomorphism $M\cong M_{\mathrm c}$.
 
 ### Anti-Linearity and the Conjugation of the Scalar Imaginary
 
@@ -185,7 +185,7 @@ $$
 
 ### The Identities, Verified
 
-The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M'$ — with $M'$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
+The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, the group law $\sigma_t\circ\sigma_s=\sigma_{t+s}$, the generator relation, and $JMJ=M_{\mathrm c}$ — with $M_{\mathrm c}$ the right multiplications $\tilde Q_1\mapsto\tilde Q_1\tilde Q_2$ — were each verified in two independent ways: symbolically, and numerically to machine precision at a density chosen after the formulas rather than before them. The finite-dimensional realization is therefore not an analogy: it is the theory, instantiated in the algebra the framework already uses.
 
 ### An Explicit Case
 
@@ -256,7 +256,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 **Established (theorem).**
 
-- The Tomita–Takesaki construction: $S$, $\Delta$, $J$, the identities $S^2=1$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $JMJ=M'$, and the modular group $\sigma_t$.
+- The Tomita–Takesaki construction: $S$, $\Delta$, $J$, the identities $S^2=1$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $JMJ=M_{\mathrm c}$, and the modular group $\sigma_t$.
 - The equivalence, in a GNS representation, of "cyclic and separating" with "faithful".
 - The Takesaki–Winnink theorem: the modular flow is the KMS flow, normalized to $\beta=1$, which is the link to the parent article.
 - Connes' classification of factors by the kernel of $\delta$, and the inner/outer behavior of the modular flow.
@@ -265,7 +265,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 - $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
 - $\Delta(\tilde{Q}_3)=\tilde{Ϛ}\tilde{Q}_3\tilde{Ϛ}^{-1}$, $\Delta^{1/2}(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3\tilde{Ϛ}^{-1/2}$, $J(\tilde{Q}_3)=\tilde{Ϛ}^{1/2}\tilde{Q}_3^{*}\tilde{Ϛ}^{-1/2}$, $\sigma_t(\tilde{Q}_3)=\tilde{Ϛ}^{it}\tilde{Q}_3\tilde{Ϛ}^{-it}$.
-- $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M'$.
+- $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K}_{\mathrm{mod}},\tilde{Q}_3]$, and $JMJ=M_{\mathrm c}$.
 - $\tilde{K}_{\mathrm{mod}}=-\log\tilde{Ϛ}\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}_{\mathrm{mod}}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde{Ϛ}^{it}\in\mathbb{B}$.
 
@@ -282,7 +282,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 ## Summary
 
-The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.
+The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M_{\mathrm c}$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.
 
 In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{Q}_3,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}(\tilde{Ϛ}\tilde{Q}_3^{*}\tilde Q_1)$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$

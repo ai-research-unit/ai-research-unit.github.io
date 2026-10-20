@@ -12,7 +12,7 @@ The article develops the following.
 - **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde{R}\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde{R}/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $t_2 = (t_1+t_3)/2$, and the distance is $L = c(t_3-t_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
-- **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta t = \gamma v_b\,\Delta x'/c^2$.
+- **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that a set of clocks synchronised in one frame is desynchronised in another by $\Delta t = \gamma v_b\,\Delta x_2/c^2$.
 - **A transported clock runs slow.** The interpretation of a clock carried along a worldline is the proper time of that worldline, $\Delta\tau = \int\sqrt{1-\vec v^2/c^2}\,dt \le t_B-t_A$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.
 - **Synchronisation is not transitive on a rotating platform.** The Sagnac effect makes the round trip directional, $\Delta t \simeq 4\vec\Omega\cdot\vec A/c^2$, so synchronising around a closed loop in the two directions gives two different results.
 
@@ -143,10 +143,10 @@ Two clocks at different places cannot be compared directly; they must be compare
 $$
 \langle\tilde{Q}_B - \tilde{Q}_A\rangle_{\natural} = 0,
 \qquad
-\langle\tilde{Q}_A' - \tilde{Q}_B\rangle_{\natural} = 0,
+\langle\tilde Q_{A,2} - \tilde{Q}_B\rangle_{\natural} = 0,
 $$
 
-with $\tilde{Q}_A' = ic\,t_3\,e_t+x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$ the reception event at the mirror's home position. Since $x_A'\,\vec e_x+y_A'\,\vec e_y+z_A'\,\vec e_z = x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, the spatial separation is the same on both legs, $|x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z-(x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z)| = L$, and the null conditions read
+with $\tilde Q_{A,2} = ic\,t_3\,e_t+x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$ the reception event at the mirror's home position. Since $x_{A,2}\,\vec e_x+y_{A,2}\,\vec e_y+z_{A,2}\,\vec e_z = x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, the spatial separation is the same on both legs, $|x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z-(x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z)| = L$, and the null conditions read
 
 $$
 c^2(t_2-t_1)^2 = L^2,
@@ -182,7 +182,7 @@ independent of $\varepsilon$. The one-way speed of light is therefore convention
 
 ### Two Frames, Two Conventions
 
-A second consequence of defining simultaneity by exchange is that two inertial frames generally adopt incompatible conventions. If frame $S'$ moves with velocity $\vec v_b$ along $\vec e_x$ relative to $S$, and each frame synchronises its own clocks by the radar rule with $\varepsilon = \tfrac12$, then the hypersurface $t' = \mathrm{const}$ is not a hypersurface $t = \mathrm{const}$. The discrepancy is computed in the next section from the boost, and it is the relativity of simultaneity. It is not an imperfection of the radar method; it is the statement that the method is frame-relative, and it is why the exchange of information between frames must be described by a Lorentz transformation rather than by a Galilean one.
+A second consequence of defining simultaneity by exchange is that two inertial frames generally adopt incompatible conventions. If frame $S_2$ moves with velocity $\vec v_b$ along $\vec e_x$ relative to $S$, and each frame synchronises its own clocks by the radar rule with $\varepsilon = \tfrac12$, then the hypersurface $t_2 = \mathrm{const}$ is not a hypersurface $t = \mathrm{const}$. The discrepancy is computed in the next section from the boost, and it is the relativity of simultaneity. It is not an imperfection of the radar method; it is the statement that the method is frame-relative, and it is why the exchange of information between frames must be described by a Lorentz transformation rather than by a Galilean one.
 
 ## The k-Factor and the Exchange of Frequency
 
@@ -242,7 +242,7 @@ The k-factor is a Lorentz scalar in the following limited sense: it is the ratio
 
 ### The Relativity of Simultaneity
 
-Let frame $S'$ move with velocity $\vec v_b = v_b\,\vec u_x$ relative to frame $S$, and let each frame synchronise its clocks by the Einstein rule. The transformation from the coordinates of $S'$ to those of $S$ is the rotor conjugation with the boost biquaternion
+Let frame $S_2$ move with velocity $\vec v_b = v_b\,\vec u_x$ relative to frame $S$, and let each frame synchronise its clocks by the Einstein rule. The transformation from the coordinates of $S_2$ to those of $S$ is the rotor conjugation with the boost biquaternion
 
 $$
 \tilde U = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_x,
@@ -253,24 +253,24 @@ $$
 of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{M}_-$, with $a = c\,\Delta t$ and $\vec A = \Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
 
 $$
-a = \gamma\left(a' + \beta A'_\parallel\right),
+a = \gamma\left(a_2 + \beta A_{2,\parallel}\right),
 \qquad
-A'_\parallel = \vec u_x\cdot\vec A',
+A_{2,\parallel} = \vec u_x\cdot\vec A_2,
 $$
 
-the inverse of the relations $a' = \gamma(a-\beta A_\parallel)$, $A'_\parallel = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec v_b$, and the inverse relation above carries $S'$ back to $S$.
+the inverse of the relations $a_2 = \gamma(a-\beta A_\parallel)$, $A_{2,\parallel} = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec v_b$, and the inverse relation above carries $S_2$ back to $S$.
 
-Now apply this to two events that are simultaneous in $S'$ and separated along the boost direction by $\Delta x'$. Then $a' = c\,\Delta t' = 0$ and $A'_\parallel = \Delta x'$, so
+Now apply this to two events that are simultaneous in $S_2$ and separated along the boost direction by $\Delta x_2$. Then $a_2 = c\,\Delta t_2 = 0$ and $A_{2,\parallel} = \Delta x_2$, so
 
 $$
-\Delta t = \frac{\gamma\,\beta\,\Delta x'}{c} = \frac{\gamma\,v_b\,\Delta x'}{c^2}.
+\Delta t = \frac{\gamma\,\beta\,\Delta x_2}{c} = \frac{\gamma\,v_b\,\Delta x_2}{c^2}.
 $$
 
-The two events are not simultaneous in $S$: their time separation is proportional to their spatial separation in $S'$. A direct rotor computation in the coefficient representation reproduces this value for $\beta = 0.3, 0.6, -0.8$ and both signs of $\Delta x'$, so the sign convention of the boost is fixed consistently with the Doppler article. In SI units, two clocks one metre apart in a frame moving at $\beta = 0.6$ are desynchronised, as seen from the frame at rest, by $\gamma v_b/c^2 \cdot 1\,\mathrm{m} \approx 2.5\times10^{-9}\,\mathrm{s}$.
+The two events are not simultaneous in $S$: their time separation is proportional to their spatial separation in $S_2$. A direct rotor computation in the coefficient representation reproduces this value for $\beta = 0.3, 0.6, -0.8$ and both signs of $\Delta x_2$, so the sign convention of the boost is fixed consistently with the Doppler article. In SI units, two clocks one metre apart in a frame moving at $\beta = 0.6$ are desynchronised, as seen from the frame at rest, by $\gamma v_b/c^2 \cdot 1\,\mathrm{m} \approx 2.5\times10^{-9}\,\mathrm{s}$.
 
 ### What the Desynchronisation Means
 
-The relation $\Delta t = \gamma v_b\,\Delta x'/c^2$ is the quantitative form of the **relativity of simultaneity**. Its content is that the set of events that $S'$ calls simultaneous — a surface of constant $t'$ — is tilted with respect to the surfaces of constant $t$, by an amount proportional to the separation along the motion. A grid of clocks that $S'$ has synchronised by the radar method is therefore not a grid of synchronised clocks as judged by $S$, and the two judgements differ by a term that is first order in $v_b/c$ and linear in the separation. This is the reason a boost cannot be a Galilean transformation, and the reason the composition of two non-collinear boosts carries a rotation; the latter belongs to the kinematics of the relativity series and is not developed here.
+The relation $\Delta t = \gamma v_b\,\Delta x_2/c^2$ is the quantitative form of the **relativity of simultaneity**. Its content is that the set of events that $S_2$ calls simultaneous — a surface of constant $t_2$ — is tilted with respect to the surfaces of constant $t$, by an amount proportional to the separation along the motion. A grid of clocks that $S_2$ has synchronised by the radar method is therefore not a grid of synchronised clocks as judged by $S$, and the two judgements differ by a term that is first order in $v_b/c$ and linear in the separation. This is the reason a boost cannot be a Galilean transformation, and the reason the composition of two non-collinear boosts carries a rotation; the latter belongs to the kinematics of the relativity series and is not developed here.
 
 There is one invariant statement that survives the frame dependence: the round-trip time between two clocks is the same in every frame, and so is the proper time along a given worldline. The relativity of simultaneity is the price of converting these invariants into a global time coordinate, and the conversion is a convention. Once the convention is fixed by the radar rule in each frame, the two frames differ by exactly the desynchronisation computed above.
 
@@ -351,7 +351,7 @@ The exchange of information and the synchronisation of clocks are built from the
 
 4. **The k-factor.** The ratio of received to emitted intervals is $k = 1/[\gamma(1-\beta)] = \sqrt{(1+\beta)/(1-\beta)}$ for a receding pair, with reciprocal $k^{-1}$ for an approaching pair. The velocity is recovered as $\beta = (k^2-1)/(k^2+1)$, a round trip gives the factor $k^2$, and $k$-factors multiply: $k_{AC} = k_{AB}k_{BC}$, which reproduces the relativistic velocity-addition law.
 
-5. **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that two events simultaneous in the moving frame are separated in time in the rest frame by $\Delta t = \gamma v_b\,\Delta x'/c^2$. A synchronised grid in one frame is desynchronised in another.
+5. **Simultaneity is frame-dependent.** Under a boost the scalar component of a displacement transforms so that two events simultaneous in the moving frame are separated in time in the rest frame by $\Delta t = \gamma v_b\,\Delta x_2/c^2$. A synchronised grid in one frame is desynchronised in another.
 
 6. **Transport and the twin effect.** A transported clock reads $\Delta\tau = \int\sqrt{1-\vec v^2/c^2}\,dt \le t_B-t_A$, with equality only for a clock at rest. Between two timelike-separated events the inertial worldline maximizes the proper time. Slow transport agrees with Einstein synchronisation in the limit of vanishing transport speed.
 
@@ -383,7 +383,7 @@ The exchange of information and the synchronisation of clocks are built from the
 | $t_1,t_2,t_3$ | Emission, reflection and reception times of the radar round trip |
 | $\varepsilon$ | Reichenbach synchronisation parameter, $t_2=t_1+\varepsilon(t_3-t_1)$ |
 | $k = \sqrt{(1+\beta)/(1-\beta)}$ | Bondi k-factor |
-| $\Delta t = \gamma v_b\,\Delta x'/c^2$ | Desynchronisation of a moving frame |
+| $\Delta t = \gamma v_b\,\Delta x_2/c^2$ | Desynchronisation of a moving frame |
 | $\vec\Omega$, $\vec A$ | Angular velocity and vector area of a rotating loop |
 | $\Delta t = 4\vec\Omega\cdot\vec A/c^2$ | Sagnac round-trip difference (first order) |
 

@@ -49,13 +49,13 @@ $$
 The Lagrangian is **not unique**, and the extent of the ambiguity is a boundary term. For any smooth $F(q,t)$, the Lagrangians $L$ and
 
 $$
-L'=L+\frac{d}{dt}F(q,t)
+L_2=L+\frac{d}{dt}F(q,t)
 $$
 
 have the same Euler–Lagrange equations. The added term enters both terms of the Euler–Lagrange operator as the same expression, $d/dt(\partial F/\partial q_i)$: once as $\partial/\partial q_i\,(dF/dt)$, and once as $d/dt\big(\partial/\partial\left(dq_{i}/dt\right)\,(dF/dt)\big)=d/dt(\partial F/\partial q_i)$, since the mixed partials of $F$ commute. The two contributions cancel. The action is ambiguous in the corresponding way,
 
 $$
-S'=S+F\big(q(t_2),t_2\big)-F\big(q(t_1),t_1\big) ,
+S_2=S+F\big(q(t_2),t_2\big)-F\big(q(t_1),t_1\big) ,
 $$
 
 the difference being an endpoint term, which a variation with fixed endpoints cannot see. What the formalism determines is therefore the **equations of motion**, not the Lagrangian, and the ambiguity is exactly a boundary term: the same structure the companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* meets from the other side, where the boundary term of $\delta S$ is the symplectic potential. The Hamiltonian carries the analogous freedom — a generating function of the coordinates, momenta and time shifts it by a partial time derivative — and that is the freedom a canonical transformation exploits.
@@ -477,7 +477,7 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $d\tilde q/dt$ | Configuration velocity |
 | $\langle\tilde q\rangle_{\natural} = \langle\tilde q,\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
 | $L(\tilde q,d\tilde q/dt,t)$ | Lagrangian |
-| $F(\tilde q,t)$, $L'=L+dF/dt$ | Arbitrary function and the total-derivative ambiguity of the Lagrangian |
+| $F(\tilde q,t)$, $L_2=L+dF/dt$ | Arbitrary function and the total-derivative ambiguity of the Lagrangian |
 | $S[\tilde q]=\int L\,dt$ | Action; ambiguous by the endpoint term $F(t_2)-F(t_1)$ |
 | $R=\mathrm{Sc}(p^{\natural}\,dq/dt)-L$ (over the transformed block) | Routhian: the partial Legendre transform, shown in the general case, of which this article uses $s=n$ |
 | $T(\lambda\,d\tilde q/dt)=\lambda^2T(d\tilde q/dt)$ | Homogeneity of the kinetic energy; gives $\mathrm{Sc}(\tilde p^{\natural}d\tilde q/dt)=2T$ and $H=T+V$ |

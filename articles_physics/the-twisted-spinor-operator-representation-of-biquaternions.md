@@ -157,7 +157,7 @@ $$
 so the exponent deposited by the operator is doubled by the sandwich. On a four-vector $X=t\,e_t+z\,\vec e_z$ of the material sector this reads on the $(t,z)$ plane as
 
 $$
-t'=t\cosh\psi+z\sinh\psi, \qquad z'=t\sinh\psi+z\cosh\psi ,
+t_2=t\cosh\psi+z\sinh\psi, \qquad z_2=t\sinh\psi+z\cosh\psi ,
 $$
 
 the standard boost with rapidity $\psi$, produced by the rotor that stores $\psi/2$. The exponent that the operator stores is doubled, and the same holds for the rotation angle: the **double rotation** and the **double dilatation** are the two faces of the single statement that the sandwich uses each non-central factor twice, and the central factors once or not at all.
@@ -266,26 +266,26 @@ $$
 the last condition being exactly what makes the character single-valued on $\mathbb{C}^{\times}$. The irreducible finite-dimensional modules of the group of units are then the twisted spinor representations
 
 $$
-(j,j')_{(a,b)}=V_j\boxtimes V_{j'}\otimes\chi_{a,b},
+(j,j_2)_{(a,b)}=V_j\boxtimes V_{j_2}\otimes\chi_{a,b},
 $$
 
-with the labelling of the untwisted case and with one compatibility: the central element $-I$ acts on $(j,j')$ by $(-1)^{2j+2j'}$ and through the character by $(-1)^{a-b}$, so a twisted module exists exactly when
+with the labelling of the untwisted case and with one compatibility: the central element $-I$ acts on $(j,j_2)$ by $(-1)^{2j+2j_2}$ and through the character by $(-1)^{a-b}$, so a twisted module exists exactly when
 
 $$
-a-b\equiv 2j+2j'\pmod 2 .
+a-b\equiv 2j+2j_2\pmod 2 .
 $$
 
 The defining module of the group of units is the twist of the left-handed chirality by the square root of the determinant, $(\tfrac12,0)_{(1,0)}$: the scalar $z$ acts on a spinor by $z$, which is $\det^{1/2}$ since $\det(zI)=z^{2}$.
 
-**Interpretation (spin times a central weight, and not an internal charge).** The label separates two physical data. The pair $(j,j')$ is the Lorentz spin, read from the two $\mathrm{SU}(2)$ factors of the double cover, and the character $(a,b)$ is a weight of the central scaling group $\mathbb{C}^{\times}$, whose compact part is the central phase $\exp(i\theta)$. It is tempting to read $(a,b)$ as an **internal quantum number**, and the temptation is worth naming so that it can be refused: the corpus places the internal quantum numbers in the **non-commuting** vector part and records that the commuting centre carries none (*The Eight Derived Structures: Symmetric and Antisymmetric*), whereas the character is central, so the twist is a **scaling weight** — a change of unit and of phase — and not an internal charge. The compatibility $a-b\equiv 2j+2j'\pmod 2$ remains a statement about the spin, the central element $-I$ tying the twist to the two Lorentz factors; the boundary is that the algebra supplies the weight and the compatibility but no spectrum of charges and no dynamics that selects them.
+**Interpretation (spin times a central weight, and not an internal charge).** The label separates two physical data. The pair $(j,j_2)$ is the Lorentz spin, read from the two $\mathrm{SU}(2)$ factors of the double cover, and the character $(a,b)$ is a weight of the central scaling group $\mathbb{C}^{\times}$, whose compact part is the central phase $\exp(i\theta)$. It is tempting to read $(a,b)$ as an **internal quantum number**, and the temptation is worth naming so that it can be refused: the corpus places the internal quantum numbers in the **non-commuting** vector part and records that the commuting centre carries none (*The Eight Derived Structures: Symmetric and Antisymmetric*), whereas the character is central, so the twist is a **scaling weight** — a change of unit and of phase — and not an internal charge. The compatibility $a-b\equiv 2j+2j_2\pmod 2$ remains a statement about the spin, the central element $-I$ tying the twist to the two Lorentz factors; the boundary is that the algebra supplies the weight and the compatibility but no spectrum of charges and no dynamics that selects them.
 
 **Reality.** Complex conjugation exchanges the two factors and conjugates the character,
 
 $$
-\overline{(j,j')_{(a,b)}}=(j',j)_{(b,a)},
+\overline{(j,j_2)_{(a,b)}}=(j_2,j)_{(b,a)},
 $$
 
-so a twisted module is self-conjugate exactly when $j=j'$ and $b=a$; in that case the twist is the real pairing of the scale with itself, and the module is of real type, as $(\tfrac12,\tfrac12)_{(1,1)}$ is.
+so a twisted module is self-conjugate exactly when $j=j_2$ and $b=a$; in that case the twist is the real pairing of the scale with itself, and the module is of real type, as $(\tfrac12,\tfrac12)_{(1,1)}$ is.
 
 **Unitarity.** A twisted spinor is unitarizable only if the twist is unitary and the norm-one part is trivial. The twist is unitary exactly when the scale exponent is purely imaginary, $\mathrm{Re}(a+b)=0$, since $\lvert\chi_{a,b}(z)\rvert=r^{a+b}$; and the norm-one part admits no non-trivial finite-dimensional unitary representation. So the twisted spinor representations retain the non-unitarity of the untwisted ones, and the twist never repairs it: a general biquaternion operator cannot be made into a symmetry of a finite-dimensional probability.
 
@@ -299,7 +299,7 @@ The algebra $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, and its natural 
 
 **Conjugation.** The sandwich is irreducible on the algebra and carries the twisted four-vector, $(\tfrac12,\tfrac12)$ scaled by $r^{2}$. This is the action on the material sector, and it is the operator that builds the four-vectors of the theory from the module. Combined with the previous paragraph, the algebra carries the twisted spinor and the twisted four-vector and nothing else.
 
-**What the algebra does not carry.** The higher modules $(1,0)$, $(1,1)$, $(\tfrac32,0)$ are not modules over $\mathbb{B}$, twisted or not: the modules of $M_2(\mathbb{C})$ are the direct sums of copies of $S$, of even dimension, while $\operatorname{Sym}^{2}(S)$ has dimension $3$ and $\operatorname{Sym}^{3}(S)$ has dimension $4$ with a different action. The tower is generated by symmetric powers of the twisted spinor, $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S})$, but each member must be built from tensor powers of the spinor rather than found inside the algebra. This is the boundary of the biquaternion description of operators, and the twist does not move it: a field of higher spin has to be constructed, not discovered in the algebra.
+**What the algebra does not carry.** The higher modules $(1,0)$, $(1,1)$, $(\tfrac32,0)$ are not modules over $\mathbb{B}$, twisted or not: the modules of $M_2(\mathbb{C})$ are the direct sums of copies of $S$, of even dimension, while $\operatorname{Sym}^{2}(S)$ has dimension $3$ and $\operatorname{Sym}^{3}(S)$ has dimension $4$ with a different action. The tower is generated by symmetric powers of the twisted spinor, $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j_2}(\bar{S})$, but each member must be built from tensor powers of the spinor rather than found inside the algebra. This is the boundary of the biquaternion description of operators, and the twist does not move it: a field of higher spin has to be constructed, not discovered in the algebra.
 
 ## Physical Readings
 
@@ -313,7 +313,7 @@ Acting on the material sector by the Hermitian sandwich, $H_{\tilde{Q}}(\tilde Q
 
 The norm-one case, $r=1$ and $\alpha=0$, is the Lorentz group, the untwisted case, and the phase-free isometry — the sandwich preserves the norm exactly when the scale is one — and it is where the spinor is the module, the double cover is visible as $-e_t\mapsto-I_2$ and as the sign change under a rotation by $2\pi$, and the two chiralities $(\tfrac12,0)$ and $(0,\tfrac12)$ are inequivalent, separated by the chiral Casimirs. The other particular cases are read off by switching off one parameter: a central operator gives a pure double dilatation, a real quaternion gives a dilated rotation of space, a pure boost gives the doubled rapidity, and a vanishing norm removes the twisted description. The two rows of the case table that lie closest to each other, the norm-one row and the unitary row, are separated by the invariant each keeps rather than by the group each generates: the sandwich scales the biquaternion norm by $r^{4}$, so both are isometries of the interval, but only the unitary elements fix the unit and hence preserve the trace, and among the four factors of the polar word it is the boost factor alone that moves the trace-one slice.
 
-The twisted labels are $(j,j')_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a}\bar{z}^{b}$, $a-b\in\mathbb{Z}$, and the parity compatibility $a-b\equiv 2j+2j'\pmod 2$. Conjugation sends $(j,j')_{(a,b)}$ to $(j',j)_{(b,a)}$, and unitarity requires a purely imaginary scale exponent and is then still destroyed by the norm-one part. The algebra carries the twisted spinor and the twisted four-vector and no higher module: the rest of the tower is generated by symmetric powers of the twisted spinor, and lives in the tensor category rather than in the algebra.
+The twisted labels are $(j,j_2)_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a}\bar{z}^{b}$, $a-b\in\mathbb{Z}$, and the parity compatibility $a-b\equiv 2j+2j_2\pmod 2$. Conjugation sends $(j,j_2)_{(a,b)}$ to $(j_2,j)_{(b,a)}$, and unitarity requires a purely imaginary scale exponent and is then still destroyed by the norm-one part. The algebra carries the twisted spinor and the twisted four-vector and no higher module: the rest of the tower is generated by symmetric powers of the twisted spinor, and lives in the tensor category rather than in the algebra.
 
 ## Summary of Notation
 
@@ -332,7 +332,7 @@ The twisted labels are $(j,j')_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a}
 | $S\otimes\chi$ | Twisted spinor module; the general module |
 | $\chi(\rho)=\rho$ | Twist character of the defining module ($\det^{1/2}$) |
 | $\chi_{a,b}(z)=z^{a}\bar{z}^{b}$, $a-b\in\mathbb{Z}$ | General character of the scaling group |
-| $(j,j')_{(a,b)}$ | Twisted label; exists when $a-b\equiv 2j+2j'\pmod 2$ |
+| $(j,j_2)_{(a,b)}$ | Twisted label; exists when $a-b\equiv 2j+2j_2\pmod 2$ |
 | $H_{\tilde{Q}}(\tilde Q_1)=\tilde{Q}\tilde Q_1\tilde{Q}^{*}$ | Hermitian sandwich, the operator on the material sector |
 | $H_{\tilde{Q}}(\tilde Q_1)=r^{2}\tilde U_{\mathrm L}\tilde Q_1\tilde U_{\mathrm L}^{*}$ | Factorization: dilatation times Lorentz |
 | $\mathrm{H}_{\tilde{Q}}(e_t)=\tilde{Q}\tilde{Q}^{*}$ | Image of the unit: $e_t$ for a unitary, $\tilde U_{\mathrm L}^{2}$ for a norm-one rotor |
@@ -342,14 +342,14 @@ The twisted labels are $(j,j')_{(a,b)}$, with the character $\chi_{a,b}(z)=z^{a}
 | $\mathbb{R}_{>0}\times SO^{+}(1,3)$ | Image of the sandwich: dilatations and Lorentz |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material sector (anti-Hermitian) and informational sector (Hermitian) |
 | $\Omega_{\pm}=\sum_k(N_k^{\pm})^2$ | Chiral Casimirs, $(0,-3)$ vs $(-3,0)$ |
-| $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j'}(\bar{S})$ | Carrier of the higher twisted modules |
+| $\operatorname{Sym}^{2j}(S)\otimes\operatorname{Sym}^{2j_2}(\bar{S})$ | Carrier of the higher twisted modules |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 
 ## Further Reading
 
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the Lorentz representations built from Weyl spinors, the non-unitarity of the finite-dimensional ones, and the reason the physical representations are infinite-dimensional.
-- Wu-Ki Tung, *Group Theory in Physics* (World Scientific, 1985), for the $(j,j')$ labelling, the two $\mathrm{SU}(2)$ halves, and the reality classification.
+- Wu-Ki Tung, *Group Theory in Physics* (World Scientific, 1985), for the $(j,j_2)$ labelling, the two $\mathrm{SU}(2)$ halves, and the reality classification.
 - I. M. Gel'fand, R. A. Minlos, and Z. Ya. Shapiro, *Representations of the Rotation and Lorentz Groups and Their Applications* (Pergamon, 1963), for the finite- and infinite-dimensional theory.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for symmetric powers, highest weights, and the Clebsch–Gordan rule.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for complexification, real forms, and the classification of unitary representations.

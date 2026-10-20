@@ -50,11 +50,11 @@ and both numerator and denominator vanish at $n=1$. L'Hôpital's rule gives
 $$
 \lim_{n\to1}S_n
 =\frac{\frac{d}{dn}\log Z_n\big|_{n=1}}{\frac{d}{dn}(1-n)\big|_{n=1}}
-=-\frac{Z_1'}{1}
+=-\frac{\left.\frac{dZ_n}{dn}\right|_{n=1}}{1}
 =-\sum_i\lambda_i\log\lambda_i
 =-\mathrm{Tr}\big(\rho_A\log\rho_A\big)=S_A,
 $$
-using $Z_1'=\sum_i\lambda_i\log\lambda_i$. Hence
+using $\left.\frac{dZ_n}{dn}\right|_{n=1}=\sum_i\lambda_i\log\lambda_i$. Hence
 $$
 S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n\Big|_{n=1}.
 $$
@@ -105,12 +105,12 @@ This is the finite-dimensional image of the $n$-sheeted cover: the sheets are th
 
 ### The Swap Operator and the Purity
 
-The case $n=2$ is the one used most, and it exhibits the mechanism. The shift is the **swap** $\mathbb F_{AA'}$ on the two copies of $A$, and
+The case $n=2$ is the one used most, and it exhibits the mechanism. The shift is the **swap** $\mathbb F_{AA_{\mathrm r}}$ on the two copies of $A$, and
 $$
 Z_2=\mathrm{Tr}\big(\rho_A^2\big)
-=\mathrm{Tr}\Big[\big(\rho_{AB}\otimes\rho_{A'B'}\big)\,\mathbb F_{AA'}\Big],
+=\mathrm{Tr}\Big[\big(\rho_{AB}\otimes\rho_{A_{\mathrm r}B_{\mathrm r}}\big)\,\mathbb F_{AA_{\mathrm r}}\Big],
 $$
-where the primed factors are the second replica. The identity was checked on the two-qubit state of the next section: with $\rho_{AB}=|\psi_\theta\rangle\langle\psi_\theta|$ and $\theta=0.4$, both sides equal $0.7427001194$, agreeing with $\cos^4\theta+\sin^4\theta$ to twelve digits. The purity is thus a swap expectation, and the Rényi entropy of order two is $S_2=-\log Z_2$.
+where the factors carrying the replica subscript are the second replica. The identity was checked on the two-qubit state of the next section: with $\rho_{AB}=|\psi_\theta\rangle\langle\psi_\theta|$ and $\theta=0.4$, both sides equal $0.7427001194$, agreeing with $\cos^4\theta+\sin^4\theta$ to twelve digits. The purity is thus a swap expectation, and the Rényi entropy of order two is $S_2=-\log Z_2$.
 
 ## The Schmidt Decomposition and the Entanglement Spectrum
 
@@ -240,7 +240,7 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; $n$ replicas |
 | $\rho_A=\mathrm{Tr}_B\rho_{AB}$ | Reduced state |
 | $S_A=S(\rho_A)=-\mathrm{Tr}(\rho_A\log\rho_A)$ | Entanglement entropy |
@@ -248,7 +248,7 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | $S_n=\frac{1}{1-n}\log Z_n$ | Rényi entropy of order $n$ |
 | $S_A=-\frac{d}{dn}\log Z_n\big|_{n=1}$ | Replica-trick representation of $S_A$ |
 | $\mathsf{C}_n$ | Cyclic shift of the $n$ replicas |
-| $\mathbb F_{AA'}$ | Swap operator; $n=2$ replica shift |
+| $\mathbb F_{AA_{\mathrm r}}$ | Swap operator; $n=2$ replica shift |
 | $\vec r_A$, $r_A=|\vec r_A|$ | Bloch vector and radius of a single-mode reduced state |
 | $\cos^2\theta,\sin^2\theta$ | Eigenvalues of $\rho_A$ for $|\psi_\theta\rangle$ |
 | $h(p)$ | Binary entropy $-p\log p-(1-p)\log(1-p)$ |
@@ -267,4 +267,4 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 - Companion article *Relative Entropy and the Biquaternion Framework*, for the entropy closed form of a biquaternion state.
 - Companion article *The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form*, for the modular Hamiltonian of a reduced state.
 - Companion article *The Area Law of Entanglement Entropy in Biquaternionic Form*, for what the replica moments give in the field.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the state space and the trace pairing.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the state space and the plain form.

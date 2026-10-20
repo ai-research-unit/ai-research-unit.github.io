@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The informational sector is the Hermitian subspace $\mathbb{M}_+$. It is the fixed space of the Hermitian conjugation, the half of the algebra in which the scalar coefficient is real and the three vector coefficients are imaginary. Its mathematics is the mathematics of a two-state quantum system: the Hermitian elements are observables, the positive trace-one elements are states, the Hermitian idempotents are pure states, the Hermitian form is the Born pairing, and the sandwich by a matrix-unitary element is the evolution.
+The informational sector is the Hermitian subspace $\mathbb{M}_+$. It is the fixed space of the Hermitian conjugation, the half of the algebra in which the scalar coefficient is real and the three vector coefficients are imaginary. Its mathematics is the mathematics of a two-state quantum system: the Hermitian elements are observables, the positive elements normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$ are states, the Hermitian idempotents are pure states, the Hermitian form is the Born pairing, and the sandwich by a matrix-unitary element is the evolution.
 
 That mathematics is established algebra. What is not established is whether the sector is a distinct sector of the physical world in the sense in which the material sector is spacetime. The article states the hypothesis, develops the algebraic interpretation in full, and marks the boundary at the point where the algebra ends and the physics begins.
 
@@ -61,7 +61,7 @@ $$
 \tilde\Pi_{1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr).
 $$
 
-They are Hermitian, idempotent, of trace one, orthogonal and complete:
+They are Hermitian, idempotent, normalised by $\langle\tilde\Pi,e_t\rangle=\tfrac12\langle e_t\rangle$ (trace one in the $2\times2$ image), orthogonal and complete:
 
 $$
 \tilde\Pi_1+\tilde\Pi_2=e_t,\qquad \tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0.
@@ -74,7 +74,7 @@ They are the **pure states** of the sector, and they are the biquaternion analog
 The quaternionic norm on the sector is
 
 $$
-N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2=c^2t'^2-x'^2-y'^2-z'^2,
+N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2=c^2{t'}^2-{x'}^2-{y'}^2-{z'}^2,
 $$
 
 of signature $(1,3)$: one positive temporal direction and three negative spatial ones. It is indefinite, and it is not the positive form that a density matrix would suggest.
@@ -91,18 +91,18 @@ $$
 \lambda_\pm=h_t\pm\lvert\vec h\rvert.
 $$
 
-The trace and the norm read
+The plain form, the trace and the biquaternion norm read
 
 $$
-\operatorname{Tr}(\tilde H)=2h_t=\lambda_++\lambda_-,\qquad N(\tilde H)=h_t^2-\lvert\vec h\rvert^2=\lambda_+\lambda_-.
+\langle\tilde H,e_t\rangle=h_t,\qquad \operatorname{Tr}(\tilde H)=2h_t=\lambda_++\lambda_-,\qquad N(\tilde H)=h_t^2-\lvert\vec h\rvert^2=\lambda_+\lambda_-.
 $$
 
 The element is **positive** exactly when $h_t\geq\lvert\vec h\rvert$, that is, exactly when both eigenvalues are non-negative. Positivity is a statement about the eigenvalues, not about the norm: the norm is negative exactly when the two eigenvalues have opposite signs.
 
-The **trace-one slice** is the family
+The **state slice**, which the trace reads as the trace-one slice, is the family
 
 $$
-\tilde{Ϛ}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad \operatorname{Tr}(\tilde{Ϛ})=1,
+\tilde{Ϛ}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad \langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle,
 $$
 
 with $\vec r$ a real vector. Its spectral decomposition is
@@ -119,7 +119,7 @@ $$
 N(\tilde{Ϛ})=\tfrac14\bigl(1-\lvert\vec r\rvert^2\bigr),
 $$
 
-so every pure state is a **zero divisor**, while a mixed state is not. The Bloch ball is the trace-one slice of the positive cone, and its boundary sphere is the intersection of that slice with the future light cone of the norm. The positivity of the probability form and the causal cone of the interval therefore have one and the same boundary.
+so every pure state is a **zero divisor**, while a mixed state is not. The Bloch ball is the state slice of the positive cone, and its boundary sphere is the intersection of that slice with the future light cone of the norm. The positivity of the probability form and the causal cone of the interval therefore have one and the same boundary.
 
 ### The Action on the Material Sector
 
@@ -166,21 +166,21 @@ The sector is the space of the operators of a two-state system, and its four fam
 | --- | --- | --- |
 | Observables | $\tilde H\in\mathbb{M}_+$ | the whole sector, real dimension four |
 | Effects | $0\leq\tilde H\leq e_t$, that is $\lvert h_t-\tfrac12\rvert+\lvert\vec h\rvert\leq\tfrac12$ | the operator interval |
-| States | $\operatorname{Tr}(\tilde H)=1$ and $\tilde H\geq0$ | the Bloch ball, $\lvert\vec h\rvert\leq\tfrac12$ |
-| Pure states | $\operatorname{Tr}(\tilde H)=1$ and $N(\tilde H)=0$ | the Bloch sphere, $\lvert\vec h\rvert=\tfrac12$ |
+| States | $\langle\tilde H,e_t\rangle=\tfrac12\langle e_t\rangle$ and $\tilde H\geq0$ | the Bloch ball, $\lvert\vec h\rvert\leq\tfrac12$ |
+| Pure states | $\langle\tilde H,e_t\rangle=\tfrac12\langle e_t\rangle$ and $N(\tilde H)=0$ | the Bloch sphere, $\lvert\vec h\rvert=\tfrac12$ |
 
 The nesting is strict: pure states are states, states are effects, and effects are observables. The roles are not exclusive, and the sector does not partition itself into states and observables. One and the same element can be read as a state, as an effect and as an observable, and the role is fixed by the conditions imposed on it.
 
-Neither condition separates the families on its own. The trace alone does not: a Hermitian element of trace one whose spectrum straddles zero is not a state. The positivity alone does not: $2e_t$ is positive and is not a state. **Idempotency marks the boundary and nothing else**: among the Hermitian idempotents $0,e_t,\tilde\Pi_{1,2}(\vec u)$, exactly the last have trace one, so the idempotency singles out the pure states within the trace-one slice, and a general observable is not idempotent.
+Neither condition separates the families on its own. The normalisation alone does not: a Hermitian element with $\langle\tilde Q,e_t\rangle=\tfrac12$ whose spectrum straddles zero is not a state. The positivity alone does not: $2e_t$ is positive and is not a state. **Idempotency marks the boundary and nothing else**: among the Hermitian idempotents $0,e_t,\tilde\Pi_{1,2}(\vec u)$, exactly the last have $\langle\tilde\Pi,e_t\rangle=\tfrac12\langle e_t\rangle$, so the idempotency singles out the pure states within the state slice, and a general observable is not idempotent.
 
-The separator the sector supplies is the quaternionic norm. On the trace-one slice the positivity is $\lvert\vec r\rvert\leq1$, which is $N(\tilde{Ϛ})\geq0$, so
-
-$$
-\text{states}=\{\tilde Q\in\mathbb{M}_+:\operatorname{Tr}(\tilde Q)=1,\ N(\tilde Q)\geq0\},
-$$
+The separator the sector supplies is the quaternionic norm. On the state slice the positivity is $\lvert\vec r\rvert\leq1$, which is $N(\tilde{Ϛ})\geq0$, so
 
 $$
-\text{pure states}=\{\tilde Q\in\mathbb{M}_+:\operatorname{Tr}(\tilde Q)=1,\ N(\tilde Q)=0\}.
+\text{states}=\{\tilde Q\in\mathbb{M}_+:\langle\tilde Q,e_t\rangle=\tfrac12\langle e_t\rangle,\ N(\tilde Q)\geq0\},
+$$
+
+$$
+\text{pure states}=\{\tilde Q\in\mathbb{M}_+:\langle\tilde Q,e_t\rangle=\tfrac12\langle e_t\rangle,\ N(\tilde Q)=0\}.
 $$
 
 The state space and the causal cone therefore share their boundary. The fact is the same one stated in the material article: the positivity of the probability form and the causal cone of the interval have one and the same boundary.
@@ -189,7 +189,7 @@ The state space and the causal cone therefore share their boundary. The fact is 
 
 ### The State Space Is the Bloch Ball
 
-The trace-one slice of the sector is the family $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r$ a real three-vector. Its spectral decomposition is a convex combination of two orthogonal pure states,
+The state slice of the sector is the family $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ with $\vec r$ a real three-vector, normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image). Its spectral decomposition is a convex combination of two orthogonal pure states,
 
 $$
 \tilde{Ϛ}=\frac{1+r}{2}\tilde\Pi_1(\vec u)+\frac{1-r}{2}\tilde\Pi_2(\vec u),
@@ -197,11 +197,11 @@ $$
 
 with weights that sum to one. Positivity is exactly $\lvert\vec r\rvert\leq1$, so the state space is the unit ball of the vector part.
 
-The geometry is the Bloch ball of a qubit. The boundary $\lvert\vec r\rvert=1$ is the two-sphere of pure states; the interior is the mixed states; the centre $\vec r=0$ is the maximally mixed state $\tfrac12e_t$. A state is pure exactly when it is idempotent, and the two notions coincide in the sector and nowhere else. The ball is three-dimensional, as the state space of a two-state system must be: the sector has real dimension four and the trace-one condition is one real equation.
+The geometry is the Bloch ball of a qubit. The boundary $\lvert\vec r\rvert=1$ is the two-sphere of pure states; the interior is the mixed states; the centre $\vec r=0$ is the maximally mixed state $\tfrac12e_t$. A state is pure exactly when it is idempotent, and the two notions coincide in the sector and nowhere else. The ball is three-dimensional, as the state space of a two-state system must be: the sector has real dimension four and the normalisation $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ is one real equation.
 
 Every pure state is a zero divisor, because $N(\tilde{Ϛ})=\tfrac14(1-\lvert\vec r\rvert^2)$ vanishes on the sphere. A mixed state is not. The ball is the intersection of the affine hyperplane $\{\operatorname{Sc}=\tfrac12\}$ with the future light cone of the norm, so its boundary is a slice of the causal cone. This is the structural link between probability and causality: the same quadratic form that gives the interval gives the positivity of the state.
 
-**The boundary.** The ball is the state space of the frame, not a relativistic state space. A boost carries a trace-one element off the trace-one slice, so the single-qubit ball is not invariant under the full Lorentz group. Making the state space itself relativistic is open work, not a result of this article.
+**The boundary.** The ball is the state space of the frame, not a relativistic state space. A boost carries a state off the state slice, so the single-qubit ball is not invariant under the full Lorentz group. Making the state space itself relativistic is open work, not a result of this article.
 
 ### The Spectral Decomposition Is the Readout
 
@@ -213,7 +213,7 @@ $$
 
 with $\tilde\Pi_1+\tilde\Pi_2=e_t$ and $\tilde\Pi_1\tilde\Pi_2=0$. The two coefficients are the eigenvalues, the two idempotents are the eigen-idempotents, and the pair is a resolution of the identity. The decomposition degenerates to $h_t$ exactly when $\vec h=0$.
 
-The trace and the norm read
+The trace and the biquaternion norm read
 
 $$
 \operatorname{Tr}(\tilde H)=\lambda_++\lambda_-,\qquad N(\tilde H)=\lambda_+\lambda_-.
@@ -247,23 +247,23 @@ The dichotomy between reversible and irreversible actions is therefore intrinsic
 
 **The boundary.** The sandwich is one operator; the three cases differ by the normalisation of the parameter, not by the operation. The projection is the algebraic form of a measurement, but the collapse is not derived from the algebra. The identification of the projection with a physical measurement is the interpretive step, and the probabilities it gives are the Born weights, not frequencies.
 
-### The Born Rule Is the Trace Formula
+### The Born Rule Is the Normalised Plain Form
 
-For a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec u)$ and an observable $\tilde H=h_te_t+i\vec h$, the trace formula reads
+For a state $\tilde{Ϛ}=\tfrac12(e_t+i\vec u)$ and an observable $\tilde H=h_te_t+i\vec h$, the state is normalised by the plain form against the unit, $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$, and the Born weight is
 
 $$
-\langle\tilde H\rangle_{\tilde{Ϛ}}=\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\operatorname{Sc}(\tilde{Ϛ}\tilde H)=h_t+\vec u\cdot\vec h.
+\langle\tilde H\rangle_{\tilde{Ϛ}}=\frac{\langle\tilde{Ϛ},\tilde H\rangle}{\langle\tilde{Ϛ},e_t\rangle}=h_t+\vec u\cdot\vec h.
 $$
 
 This is the standard spin-1/2 expectation value along the direction $\vec u$. For the two idempotents $\tilde\Pi_{1,2}(\vec u)$ and a general state $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, the same pairing gives
 
 $$
-p_\pm=\operatorname{Tr}\bigl(\tilde\Pi_{1,2}(\vec u)\tilde{Ϛ}\bigr)=\tfrac12\bigl(1\pm\vec u\cdot\vec r\bigr),
+p_\pm=\frac{\langle\tilde\Pi_{1,2}(\vec u),\tilde{Ϛ}\rangle}{\langle\tilde{Ϛ},e_t\rangle}=\tfrac12\bigl(1\pm\vec u\cdot\vec r\bigr),
 $$
 
 the probability formula of the Born rule.
 
-The framework relocates the Born rule from a postulate to a property of the pairing: the probability is the trace of the product of a state and an effect, and the trace is the matrix trace of the $2\times2$ model. What the formula does not give is the identification of those numbers with physical frequencies. The interpretive step remains, and the article that derives the rule and compares it with the postulate states the separation.
+The framework relocates the Born rule from a postulate to a property of the pairing: the probability is the normalised plain form of a state and an effect, and the trace is its reading in the $2\times2$ model. What the formula does not give is the identification of those numbers with physical frequencies. The interpretive step remains, and the article that derives the rule and compares it with the postulate states the separation.
 
 **The boundary.** The formula gives probabilities, not frequencies. The identification of probability with long-run frequency is not a result of the algebra, and the Born rule is derived in the structural sense, not in the operational sense.
 
@@ -290,11 +290,11 @@ The mathematics of the sector and its action on the material sector is structura
 | Quantum information | Biquaternion framework |
 | --- | --- |
 | State space $\mathbb{C}^2$ | spinor module $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_2\}$ |
-| Density matrix $\rho$ (Hermitian, positive, trace one) | element $\tilde{Ϛ}\in\mathbb{M}_+$ (Hermitian, positive, trace one) |
+| Density matrix $\rho$ (Hermitian, positive, trace one) | element $\tilde{Ϛ}\in\mathbb{M}_+$ (Hermitian, positive, normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$; trace one in the image) |
 | Pure state $\lvert\psi\rangle\langle\psi\rvert$ | idempotent $\tfrac12(e_t+i\vec u)$ |
 | Observable (Hermitian operator) | Hermitian element $\tilde H\in\mathbb{M}_+$ |
 | Unitary gate $U$ | matrix-unitary $\tilde U$, $\tilde U\tilde U^{*}=e_t$: a rotation rotor up to a central phase, with effective action $SO(3)$ on the Bloch ball |
-| Expectation value $\operatorname{Tr}(\rho H)$ | $2\operatorname{Sc}(\tilde{Ϛ}\tilde H)$ |
+| Expectation value $\operatorname{Tr}(\rho H)$ | $\langle\tilde{Ϛ},\tilde H\rangle/\langle\tilde{Ϛ},e_t\rangle$, read as $2\operatorname{Sc}(\tilde{Ϛ}\tilde H)$ |
 | Reversible evolution $U\rho U^{\dagger}$ | rotor conjugation $\tilde U\tilde{Ϛ}\tilde U^{*}$ |
 | Projective measurement $\rho\mapsto P\rho P$ | idempotent projection $\tilde{Ϛ}\mapsto\tilde\Pi\tilde{Ϛ}\tilde\Pi$ |
 
@@ -304,17 +304,17 @@ The basis of the module is one idempotent and one nilpotent: $\tilde\Pi_+=\tfrac
 
 **What it is not.** A physical theory. It does not establish that $\mathbb{M}_+$ is an informational sector of nature. It establishes that if the sector were given an informational interpretation, the mathematics would be available. Whether the interpretation is realised is the hypothesis.
 
-**The boundary.** The correspondence is exact; the physical realisation is the hypothesis. The state space is the fixed Bloch ball, and a boost carries it off the trace-one slice.
+**The boundary.** The correspondence is exact; the physical realisation is the hypothesis. The state space is the fixed Bloch ball, and a boost carries a state off the state slice.
 
 ### The Spin Analogy and Its Relativistic Extension
 
-The sector carries the algebra of observables of a spin-1/2 system, and the biquaternion algebra widens the carrier without changing the state space. In non-relativistic spin-1/2 physics the state space is $\mathbb{C}^2$, the observables are the Hermitian $2\times2$ matrices, and the group that preserves the state space is the compact $U(2)$. In the biquaternion framework the state space is the spinor module of $\mathbb{B}$, the observables are the Hermitian elements of $\mathbb{M}_+$, and the group that preserves the trace-one slice is again $U(2)$.
+The sector carries the algebra of observables of a spin-1/2 system, and the biquaternion algebra widens the carrier without changing the state space. In non-relativistic spin-1/2 physics the state space is $\mathbb{C}^2$, the observables are the Hermitian $2\times2$ matrices, and the group that preserves the state space is the compact $U(2)$. In the biquaternion framework the state space is the spinor module of $\mathbb{B}$, the observables are the Hermitian elements of $\mathbb{M}_+$, and the group that preserves the state slice is again $U(2)$.
 
-The Lorentz group enters through the generators, and they are split between the sectors. The three rotation generators are the real vector units $\vec e_k\in\mathbb{M}_-$, anti-Hermitian and compact. The three boost generators are the traceless Hermitian elements $i\vec h\in\mathbb{M}_+$, non-compact. Together with the central directions they generate $SL(2,\mathbb{C})$, which acts on the material sector and on the ambient algebra but not on the Bloch ball: a boost carries a trace-one element off the trace-one slice. The compact/non-compact distinction is the distinction between rotations in a spacelike plane and boosts in a timelike plane.
+The Lorentz group enters through the generators, and they are split between the sectors. The three rotation generators are the real vector units $\vec e_k\in\mathbb{M}_-$, anti-Hermitian and compact. The three boost generators are the traceless Hermitian elements $i\vec h\in\mathbb{M}_+$, non-compact. Together with the central directions they generate $SL(2,\mathbb{C})$, which acts on the material sector and on the ambient algebra but not on the Bloch ball: a boost carries a state off the state slice. The compact/non-compact distinction is the distinction between rotations in a spacelike plane and boosts in a timelike plane.
 
 The framework can therefore be read as a relativistic generalisation of the spin-1/2 formalism at the level of the algebra: the observables of $\mathbb{M}_+$ include the boost generators alongside the central scalar, the rotation generators lie in the material sector, and the Lorentz group is generated by the two sectors together. The state space itself remains the non-relativistic Bloch ball.
 
-**The boundary.** The single-qubit state space is a fixed Bloch ball, and a boost carries a trace-one element off the trace-one slice. Making the state space itself relativistic is open work, not a result of the framework. The analogy is exact at the level of the algebra of one qubit; it is not a derivation of the relativistic state space.
+**The boundary.** The single-qubit state space is a fixed Bloch ball, and a boost carries a state off the state slice. Making the state space itself relativistic is open work, not a result of the framework. The analogy is exact at the level of the algebra of one qubit; it is not a derivation of the relativistic state space.
 
 ### The Sector Is Phase-Free but Carries Coherence
 
@@ -351,7 +351,7 @@ The table is the algebraic address book of the interpretation. Each physical sta
 
 The **hypothesis** is that the Hermitian subspace is physically realised as a distinct sector, the arena of operations and information, in the same sense in which the anti-Hermitian subspace is the arena of events and four-vectors.
 
-**What it claims.** The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of a two-state quantum system. Its elements act as operators on the spinor module. The reversible/irreversible dichotomy is the unitary/measurement dichotomy. The Born pairing is the trace formula.
+**What it claims.** The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of a two-state quantum system. Its elements act as operators on the spinor module. The reversible/irreversible dichotomy is the unitary/measurement dichotomy. The Born pairing is the normalised plain form; in the $2\times2$ image, the trace formula.
 
 **What it does not claim.** That the sector has been observed. That it has a specified dynamics beyond the quantum formalism. That there is a specified coupling to the material sector beyond the Lorentz action. That it makes an empirical prediction distinguishing it from standard physics. That its imaginary directions are extra spatial dimensions.
 
@@ -400,11 +400,11 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - The informational sector is the Hermitian subspace $\mathbb{M}_+$, with a real time and an imaginary space, $\tilde Q=c t'\,e_t+i(x'\vec e_x+y'\vec e_y+z'\vec e_z)$.
 - Its norm is indefinite of signature $(1,3)$; positivity is a condition on the eigenvalues, not on the norm.
 - The Hermitian idempotents $\tfrac12(e_t\pm i\vec u)$ are the pure states; they are the halvings of the roots of $+1$ and are zero divisors.
-- The trace-one slice is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
-- The Bloch ball is the trace-one slice of the future light cone of the norm; probability and causality share their boundary.
+- The state slice (trace one in the $2\times2$ image) is the Bloch ball $\lvert\vec r\rvert\leq1$; its boundary is the Bloch sphere, its centre the maximally mixed state.
+- The Bloch ball is the state slice of the future light cone of the norm; probability and causality share their boundary.
 - The spectral decomposition writes every observable as two eigenvalues times two orthogonal idempotents.
 - Evolution and measurement are one sandwich, with the parameter unit-norm, matrix-unitary or idempotent.
-- The Born rule is the trace formula $\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\operatorname{Sc}(\tilde{Ϛ}\tilde H)$, with $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$.
+- The Born rule is the normalised plain form $\langle\tilde{Ϛ},\tilde H\rangle/\langle\tilde{Ϛ},e_t\rangle$, read in the $2\times2$ image as $\operatorname{Tr}(\tilde{Ϛ}\tilde H)=2\operatorname{Sc}(\tilde{Ϛ}\tilde H)$, with $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$.
 - The sector is a special Jordan algebra under the anticommutator, and not a Lie algebra; the material sector carries the Lie algebra of the spatial rotations.
 - The sector is phase-free in the scalar sense, but its vector product carries the coherence.
 - The physical realisation of the sector is a hypothesis, with eight open questions.
@@ -416,10 +416,11 @@ The article establishes the algebra of the sector and its interpretation as a tw
 | $\mathbb{M}_+$ | the Hermitian subspace, the informational sector |
 | $\tilde Q=c t' e_t+i\vec q'$ | an informational element |
 | $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | the pure-state idempotents |
-| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a trace-one state, the Bloch vector $\vec r$ |
+| $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | a state, normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12\langle e_t\rangle$; the Bloch vector $\vec r$ |
 | $\tilde H=h_te_t+i\vec h$ | an observable, with eigenvalues $h_t\pm\lvert\vec h\rvert$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ | the plain form and its norm |
 | $N(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2$ | the quaternionic norm, of signature $(1,3)$ |
-| $\operatorname{Tr}(\tilde Q)=2\operatorname{Sc}(\tilde Q)$ | the trace |
+| $\operatorname{Tr}(\tilde Q)=2\operatorname{Sc}(\tilde Q)$ | the trace, the $2\times2$ reading of the plain form |
 | $\Gamma_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the sandwich |
 | $\tilde U\tilde U^{*}=e_t$ | the matrix-unitary condition, $U(2)$ |
 | $N(\tilde U)=1$ | the unit-norm condition, $SL(2,\mathbb{C})$ |
@@ -436,6 +437,6 @@ The article establishes the algebra of the sector and its interpretation as a tw
 - [Jordan Algebras of Sesqualgebras](../articles_maths/jordan-algebras-of-sesqualgebras.html), for the symmetrised product.
 - [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html), for the Hilbert–Schmidt pairing and the matrix trace.
 - *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the partner sector and the action on it.
-- *The Born Rule as a Trace Formula — Derivation and Comparison*, for the derivation of the probability formula and its comparison with the postulate.
-- *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.
+- *The Born Rule from the Plain Form — Derivation and Comparison*, for the derivation of the probability formula and its comparison with the postulate.
+- *The Bloch Ball as the Normalised Slice of the Future Light Cone*, for the geometry of the state space.
 - *Quantum Physics in Biquaternionic Form*, for the full correspondence with quantum information.

@@ -183,7 +183,7 @@ $$
 \langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{Ϛ}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}(t)\,\tilde{S}_x\right),
 $$
 
-the same trace formula that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same trace pairing on $\mathbb{M}_+$.
+the same trace formula that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same plain form on $\mathbb{M}_+$.
 
 **6. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ corresponds exactly to the standard matrix evolution $T(t) = \exp(-iHt/\hbar)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.**
 
@@ -206,7 +206,7 @@ In the **standard formulation**, the solution proceeds through ket vectors, Paul
 
 In the **biquaternion formulation**, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde{H}$, the unit-norm evolution biquaternion $\tilde{U}(t)$, the evolved state $\tilde{Ϛ}(t)$, and the trace formula, giving the same result.
 
-The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the trace pairing.
+The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{M}_+$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised plain form, read as the trace pairing.
 
 ## Summary of Notation
 

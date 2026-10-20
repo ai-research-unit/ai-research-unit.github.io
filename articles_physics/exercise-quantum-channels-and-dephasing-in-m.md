@@ -76,13 +76,13 @@ $$
 $$
 Combining with the mixture,
 $$
-\boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r'\right),
+\boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{Ϛ}) = \tfrac{1}{2}\left(e_t + i\,\vec r_{\mathrm{out}}\right),
 \qquad
-\vec r' = (1-p)\,\vec r + p\,(\vec u_x\cdot\vec r)\,\vec u_x.\;}
+\vec r_{\mathrm{out}} = (1-p)\,\vec r + p\,(\vec u_x\cdot\vec r)\,\vec u_x.\;}
 $$
 The transverse components of the Bloch vector are multiplied by $1-p$, while the longitudinal component is untouched. At $p=0$ the channel is the identity; at $p=1$ it is the projection $\vec r \mapsto (\vec u_x\cdot\vec r)\vec u_x$, the "measure-and-forget" channel of the parent.
 
-**Special case $\vec u_x = \vec e_z$.** The Kraus operators are $\tilde{K}_0 = \sqrt{1-p}\,e_t$, $\tilde{K}_1 = \tfrac{1}{2}\sqrt{p}\,(e_t + i\vec e_z)$, $\tilde{K}_2 = \tfrac{1}{2}\sqrt{p}\,(e_t - i\vec e_z)$, and the Bloch map is $\vec r' = (1-p)(r_1 \vec e_x + r_2 \vec e_y) + r_3 \vec e_z$.
+**Special case $\vec u_x = \vec e_z$.** The Kraus operators are $\tilde{K}_0 = \sqrt{1-p}\,e_t$, $\tilde{K}_1 = \tfrac{1}{2}\sqrt{p}\,(e_t + i\vec e_z)$, $\tilde{K}_2 = \tfrac{1}{2}\sqrt{p}\,(e_t - i\vec e_z)$, and the Bloch map is $\vec r_{\mathrm{out}} = (1-p)(r_1 \vec e_x + r_2 \vec e_y) + r_3 \vec e_z$.
 
 ## Problem 2: The Kraus Rank of Dephasing
 
@@ -130,7 +130,7 @@ Trace preservation holds because $(i\vec u_x)^{*}(i\vec u_x) = (i\vec u_x)^2 = i
 $$
 \Phi(\tilde{Ϛ}) = \left(1-\tfrac{p}{2}\right)\tilde{Ϛ} + \tfrac{p}{2}\,(i\vec u_x)\,\tilde{Ϛ}\,(i\vec u_x).
 $$
-Since $(i\vec u_x)\tilde{Ϛ}(i\vec u_x) = -\vec u_x\tilde{Ϛ}\vec u_x = \tfrac{1}{2}\left(e_t - i\vec r + 2i(\vec u_x\cdot\vec r)\vec u_x\right)$, this reproduces $\vec r' = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, as required.
+Since $(i\vec u_x)\tilde{Ϛ}(i\vec u_x) = -\vec u_x\tilde{Ϛ}\vec u_x = \tfrac{1}{2}\left(e_t - i\vec r + 2i(\vec u_x\cdot\vec r)\vec u_x\right)$, this reproduces $\vec r_{\mathrm{out}} = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, as required.
 
 **Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde\Pi_1 + \tilde\Pi_2)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{Ϛ}\mapsto(i\vec u_x)\tilde{Ϛ}(i\vec u_x)^{*}$, of Kraus rank one and reversible.
 
@@ -192,7 +192,7 @@ $$
 \qquad
 \tilde{K}_1^{*}\tilde{K}_1 = \frac{\gamma}{2}\left(e_t - i\vec e_z\right),
 $$
-whose sum is $e_t$, since $1 + s^2 + \gamma = 2$ and $1 - s^2 - \gamma = 0$. A direct quaternion expansion of $\tilde{K}_0\tilde{Ϛ}\tilde{K}_0^{*} + \tilde{K}_1\tilde{Ϛ}\tilde{K}_1^{*}$ for $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ gives $\tfrac{1}{2}(e_t + i\vec r')$ with exactly the Bloch map stated above; the $\tilde{K}_1$ term contributes the population $\tfrac{\gamma}{4}(1-r_3)(e_t + i\vec e_z)$ that is transferred to the ground state.
+whose sum is $e_t$, since $1 + s^2 + \gamma = 2$ and $1 - s^2 - \gamma = 0$. A direct quaternion expansion of $\tilde{K}_0\tilde{Ϛ}\tilde{K}_0^{*} + \tilde{K}_1\tilde{Ϛ}\tilde{K}_1^{*}$ for $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ gives $\tfrac{1}{2}(e_t + i\vec r_{\mathrm{out}})$ with exactly the Bloch map stated above; the $\tilde{K}_1$ term contributes the population $\tfrac{\gamma}{4}(1-r_3)(e_t + i\vec e_z)$ that is transferred to the ground state.
 
 **Fixed states.** Set $r_1 = r_2 = 0$ and $z = \gamma + (1-\gamma)z$, giving $z = 1$. For every $\gamma>0$ the channel has the **unique** fixed state
 $$
@@ -208,13 +208,13 @@ The centre of the Bloch ball is moved to the Bloch vector $(0,0,\gamma)$. This i
 
 **Ground and excited states.** The ground state $\vec r = (0,0,1)$ is fixed, as noted. The excited state $\vec r = (0,0,-1)$ is mapped to
 $$
-\vec r' = \left(0,\,0,\,\gamma - (1-\gamma)\right) = \left(0,\,0,\,2\gamma - 1\right).
+\vec r_{\mathrm{out}} = \left(0,\,0,\,\gamma - (1-\gamma)\right) = \left(0,\,0,\,2\gamma - 1\right).
 $$
 At $\gamma = \tfrac{1}{2}$ the excited state is driven to the **maximally mixed state** $(0,0,0)$; at $\gamma = 1$ it reaches the ground state. This is the standard incoherent decay of the excited state.
 
 **Purity.** For a general input,
 $$
-\mathrm{Tr}\!\left(\tilde{Ϛ}'^2\right) = \tfrac{1}{2}\left(1 + (1-\gamma)\left(r_1^2 + r_2^2\right) + \left(\gamma + (1-\gamma)r_3\right)^2\right).
+\mathrm{Tr}\!\left(\tilde{Ϛ}_{\mathrm{out}}^2\right) = \tfrac{1}{2}\left(1 + (1-\gamma)\left(r_1^2 + r_2^2\right) + \left(\gamma + (1-\gamma)r_3\right)^2\right).
 $$
 For the maximally mixed input ($\vec r = 0$) the purity rises from $\tfrac{1}{2}$ to $\tfrac{1}{2}(1+\gamma^2) \geq \tfrac{1}{2}$: amplitude damping *purifies* the maximally mixed state by driving it toward the pure ground state. This is possible precisely because the channel is non-unital, and it is the opposite of the behaviour of dephasing. For the excited input $\vec r = (0,0,-1)$ the output purity is $\tfrac{1}{2}(1 + (2\gamma-1)^2)$, which is $\tfrac{1}{2}$ at $\gamma = \tfrac{1}{2}$ — the maximally mixed value — and rises to $1$ at $\gamma = 1$. Finally, the Choi rank of the channel is two for $\gamma>0$ (one at $\gamma=0$), so it is irreversible for every $\gamma>0$.
 
@@ -242,7 +242,7 @@ For **parallel axes**, $\vec u_y = \vec u_x$, the projector identity $\vec u_x\v
 $$
 D(\vec u_x,q)\,D(\vec u_x,p) = D(\vec u_x,\,p+q-pq),
 $$
-so the composite is again a dephasing channel, with effective parameter $p' = p+q-pq$; its Kraus rank is at most two.
+so the composite is again a dephasing channel, with effective parameter $p_{\mathrm{out}} = p+q-pq$; its Kraus rank is at most two.
 
 For **orthogonal axes and full dephasing**, take $\vec u_x = \vec e_z$, $\vec u_y = \vec e_x$ and $p = q = 1$. Then $D(\vec e_z,1) = \vec e_z\vec e_z^{\mathsf{T}}$, $D(\vec e_x,1) = \vec e_x\vec e_x^{\mathsf{T}}$, and
 $$
@@ -256,15 +256,15 @@ of rank four. Thus composing two rank-two channels produces a rank-four channel,
 
 ## Problem 6: Bloch-Ball Contraction and the Increase of Entropy
 
-**Problem.** Show that dephasing contracts the Bloch ball, $|\vec r'| \leq |\vec r|$, that it does not increase the purity, and that it does not decrease the von Neumann entropy. Evaluate a concrete case.
+**Problem.** Show that dephasing contracts the Bloch ball, $|\vec r_{\mathrm{out}}| \leq |\vec r|$, that it does not increase the purity, and that it does not decrease the von Neumann entropy. Evaluate a concrete case.
 
 **Solution.** Decompose $\vec r = \vec r_\parallel + \vec r_\perp$ with $\vec r_\parallel = (\vec u_x\cdot\vec r)\vec u_x$ and $\vec r_\perp \perp \vec u_x$. From the Bloch map,
 $$
-\vec r' = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x = (1-p)\,\vec r_\perp + \vec r_\parallel,
+\vec r_{\mathrm{out}} = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x = (1-p)\,\vec r_\perp + \vec r_\parallel,
 $$
 so
 $$
-|\vec r'|^2 = (1-p)^2\,r_\perp^2 + r_\parallel^2 \leq r_\perp^2 + r_\parallel^2 = |\vec r|^2 ,
+|\vec r_{\mathrm{out}}|^2 = (1-p)^2\,r_\perp^2 + r_\parallel^2 \leq r_\perp^2 + r_\parallel^2 = |\vec r|^2 ,
 $$
 with equality if and only if $p=0$, or $r_\perp = 0$ (the state already lies on the dephasing axis). The **purity**,
 $$
@@ -283,13 +283,13 @@ $$
 = -\frac{1}{2}\left(\log\frac{1+x}{2} + 1\right) + \frac{1}{2}\left(\log\frac{1-x}{2} + 1\right)
 = \frac{1}{2}\log\frac{1-x}{1+x} \leq 0 \qquad (0 \leq x < 1),
 $$
-so $S$ is a decreasing function of $x$. Since $|\vec r'| \leq |\vec r|$,
+so $S$ is a decreasing function of $x$. Since $|\vec r_{\mathrm{out}}| \leq |\vec r|$,
 $$
-S(\tilde{Ϛ}') \geq S(\tilde{Ϛ}),
+S(\tilde{Ϛ}_{\mathrm{out}}) \geq S(\tilde{Ϛ}),
 $$
 with equality if and only if $p=0$ or the state is on the dephasing axis. Dephasing strictly increases the entropy of every off-axis state, for every $0 < p \leq 1$. This is consistent with the channel being unital: $\Phi(\tfrac{1}{2}e_t) = \tfrac{1}{2}e_t$, and unital channels are mixedness-increasing.
 
-**Concrete case.** Take the pure state $\tilde{Ϛ} = \tilde\Pi_1(\vec e_x) = \tfrac{1}{2}(e_t + i\vec e_x)$, with $\vec r = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $\vec e_z$ with $p = \tfrac{1}{2}$. Then $\vec r' = (\tfrac{1}{2},0,0)$, so $|\vec r'| = \tfrac{1}{2}$, the eigenvalues are $\lambda_\pm = \tfrac{3}{4}, \tfrac{1}{4}$, and
+**Concrete case.** Take the pure state $\tilde{Ϛ} = \tilde\Pi_1(\vec e_x) = \tfrac{1}{2}(e_t + i\vec e_x)$, with $\vec r = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $\vec e_z$ with $p = \tfrac{1}{2}$. Then $\vec r_{\mathrm{out}} = (\tfrac{1}{2},0,0)$, so $|\vec r_{\mathrm{out}}| = \tfrac{1}{2}$, the eigenvalues are $\lambda_\pm = \tfrac{3}{4}, \tfrac{1}{4}$, and
 $$
 S = -\tfrac{3}{4}\log\tfrac{3}{4} - \tfrac{1}{4}\log\tfrac{1}{4}
 = \tfrac{3}{4}\log\tfrac{4}{3} + \tfrac{1}{4}\log 4 \approx 0.562335 \ \text{nats},
@@ -300,12 +300,12 @@ while the purity falls to $\tfrac{1}{2}(1 + \tfrac{1}{4}) = \tfrac{5}{8} = 0.625
 
 We have worked six problems that exercise the channel formalism of the parent article in $\mathbb{M}_+$.
 
-1. **Dephasing as a Kraus sum.** The channel $\Phi^{\mathrm{deph}}_p$ has Kraus operators $\sqrt{1-p}\,e_t$, $\sqrt{p}\,\tilde\Pi_1$, $\sqrt{p}\,\tilde\Pi_2$ and acts on the Bloch vector as $\vec r' = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.
+1. **Dephasing as a Kraus sum.** The channel $\Phi^{\mathrm{deph}}_p$ has Kraus operators $\sqrt{1-p}\,e_t$, $\sqrt{p}\,\tilde\Pi_1$, $\sqrt{p}\,\tilde\Pi_2$ and acts on the Bloch vector as $\vec r_{\mathrm{out}} = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.
 2. **Kraus rank.** The Choi matrix of dephasing has spectrum $\{2-p,\,p,\,0,\,0\}$; its rank is two for $0<p<2$, dropping to one at the endpoints $p=0$ and $p=2$. On the parent's physical range $0\le p\le1$ it is therefore two for every $p>0$. The minimal Kraus rank is two, not three: the three-operator representation of the parent is valid but non-minimal, and $\sqrt{1-\tfrac{p}{2}}\,e_t$, $\sqrt{\tfrac{p}{2}}\,i\vec u_x$ is a minimal set.
 3. **Positive but not completely positive.** The transpose map acts on the Bloch ball as $(r_1,r_2,r_3)\mapsto(r_1,-r_2,r_3)$, is positive and trace preserving, and has Choi matrix equal to the swap operator, with spectrum $\{1,1,1,-1\}$. It is not a channel.
 4. **Amplitude damping.** With $s=\sqrt{1-\gamma}$, the Kraus operators are $\tilde{K}_0 = \tfrac{1+s}{2}e_t + i\tfrac{1-s}{2}\vec e_z$ and $\tilde{K}_1 = \tfrac{\sqrt{\gamma}}{2}(i\vec e_x - \vec e_y)$; the channel is non-unital, has the unique fixed state $\tilde\Pi_1(\vec u_z)$, sends the excited state to $(0,0,2\gamma-1)$, and raises the purity of the maximally mixed state to $\tfrac{1}{2}(1+\gamma^2)$.
-5. **Composition and rank.** Composing channels multiplies Kraus operators, $B_lA_m$, and the Kraus rank of a composition is at most the product of the ranks. Two dephasings compose to a dephasing along the common axis with $p' = p+q-pq$ when the axes are parallel, but to the rank-four completely depolarizing channel when they are orthogonal and full.
-6. **Contraction and entropy.** Dephasing contracts the Bloch ball, $|\vec r'|^2 = (1-p)^2 r_\perp^2 + r_\parallel^2 \leq |\vec r|^2$, lowers the purity, and raises the entropy, since $dS/d|\vec r| = \tfrac{1}{2}\log\frac{1-|\vec r|}{1+|\vec r|} \leq 0$. For $\tilde\Pi_1(\vec e_x)$ dephased along $\vec e_z$ with $p=\tfrac{1}{2}$, the entropy rises from $0$ to $\approx 0.562335$ nats and the purity falls to $0.625$.
+5. **Composition and rank.** Composing channels multiplies Kraus operators, $B_lA_m$, and the Kraus rank of a composition is at most the product of the ranks. Two dephasings compose to a dephasing along the common axis with $p_{\mathrm{out}} = p+q-pq$ when the axes are parallel, but to the rank-four completely depolarizing channel when they are orthogonal and full.
+6. **Contraction and entropy.** Dephasing contracts the Bloch ball, $|\vec r_{\mathrm{out}}|^2 = (1-p)^2 r_\perp^2 + r_\parallel^2 \leq |\vec r|^2$, lowers the purity, and raises the entropy, since $dS/d|\vec r| = \tfrac{1}{2}\log\frac{1-|\vec r|}{1+|\vec r|} \leq 0$. For $\tilde\Pi_1(\vec e_x)$ dephased along $\vec e_z$ with $p=\tfrac{1}{2}$, the entropy rises from $0$ to $\approx 0.562335$ nats and the purity falls to $0.625$.
 
 The two canonical channels illustrate the two faces of irreversibility. Dephasing is unital and destroys coherence without changing populations; amplitude damping is non-unital and drives the state toward a pure ground state. Both have Kraus rank two on their physical ranges ($0<p\le1$ for dephasing, $0<\gamma\le1$ for damping), both are irreversible there, and both are instances of the parent's dichotomy: reversible if and only if Kraus rank one.
 

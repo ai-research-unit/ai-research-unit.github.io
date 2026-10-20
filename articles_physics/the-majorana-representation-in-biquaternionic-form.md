@@ -16,7 +16,7 @@ The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the two-state system and the Bloch sphere.
-- Companion article *Quantum Physics in Biquaternionic Form*, for the state space and the trace pairing.
+- Companion article *Quantum Physics in Biquaternionic Form*, for the state space and the plain form.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the spinor phase that the star discards.
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the symmetric states and the Dicke basis.
 
@@ -211,7 +211,7 @@ P(+|\vec u_x,\vec u_y) = \bigl|\langle\psi_{\vec u_y}|\psi_{\vec u_x}\rangle\big
 = \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u_y)\,\tilde\Pi_1(\vec u_x)\right),
 $$
 
-with $\Theta$ the angle between the two stars. The Stern–Gerlach statistics are therefore a statement about the geometry of the sphere of stars: the probability depends only on the angle between the preparation star and the measurement star, and the trace pairing recovers it. The companion exercises *Exercise: Measuring Spin Along an Arbitrary Direction* and *Exercise: Successive Measurements of Spin* work the same formula; the Majorana picture shows that the standard textbook expression is a geometric overlap, and that the entire one-off computation is a dot product on the star sphere.
+with $\Theta$ the angle between the two stars. The Stern–Gerlach statistics are therefore a statement about the geometry of the sphere of stars: the probability depends only on the angle between the preparation star and the measurement star, and the plain form, read as the trace pairing, recovers it. The companion exercises *Exercise: Measuring Spin Along an Arbitrary Direction* and *Exercise: Successive Measurements of Spin* work the same formula; the Majorana picture shows that the standard textbook expression is a geometric overlap, and that the entire one-off computation is a dot product on the star sphere.
 
 The angle $\Theta$ between the stars also fixes the relative geometric phase of the two outcomes: the two probabilities $\cos^2(\Theta/2)$ and $\sin^2(\Theta/2)$ sum to unity, and the phase between the corresponding amplitudes is the azimuthal angle of $\vec u_y$ about $\vec u_x$. The star pair $(\vec u_x,\vec u_y)$ thus carries the complete measurement geometry of the spin-1/2.
 

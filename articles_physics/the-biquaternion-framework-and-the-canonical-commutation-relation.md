@@ -27,7 +27,7 @@ $$
 $$
 The second is the Weyl form, and it is the version that avoids the domain problems of the unbounded operators in the first.
 
-**Why a continuum is required.** The translation identity $\exp(iaP)Q\exp(-iaP)=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x'\rangle=\delta(x-x')$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.
+**Why a continuum is required.** The translation identity $\exp(iaP)Q\exp(-iaP)=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x_2\rangle=\delta(x-x_2)$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.
 
 **Why the carrier must be infinite-dimensional.** The trace of a commutator of finite-dimensional matrices vanishes by cyclicity, while $\mathrm{Tr}(i\hbar\,I)=i\hbar\dim\mathcal{H}\neq0$. So no finite-dimensional matrices satisfy the relation, at any dimension. The Stone–von Neumann theorem adds the classification: the irreducible representation with a fixed central character is unique up to unitary equivalence, and it is the Schrödinger representation on $L^2(\mathbb{R})$.
 
@@ -73,7 +73,7 @@ Why the framework is not in the business of satisfying the relation is a matter 
 
 The independence claim can now be stated in one paragraph, with its one-directional character made explicit.
 
-**The claim.** Separate the two layers of the framework: the **internal algebra** $\mathcal{A}$ — the algebra, its two sectors, its trace pairing, its brackets and its unitary group — and the **carrier** $\mathcal{M}$ on which the framework is represented, a module over $\mathcal{A}$ whose dimension is the domain's choice, finite for the discrete transform and infinite for the continuous one. The independence is a statement about $\mathcal{A}$, and it is exact: the content of $\mathcal{A}$ is unchanged whether the relation is added or removed. The relation never enters $\mathcal{A}$, and no element of $\mathcal{A}$ satisfies it. The carrier is a different matter and must be named separately, because it is where a continuum, and with it the relation, can be carried at all: the relation bears on $\mathcal{M}$ and not on $\mathcal{A}$. Stated with both layers, the claim is that **$\mathcal{A}$ is independent of the relation, and $\mathcal{M}$ is fixed by the domain of physics and not by the relation** — a carrier that holds the relation and one that does not have the same fibres, hence the same internal algebra. What the relation cannot do is constrain $\mathcal{A}$; what it does constrain is the dimension of $\mathcal{M}$, which is why it is a statement about the carrier and not about the framework's internal structure.
+**The claim.** Separate the two layers of the framework: the **internal algebra** $\mathcal{A}$ — the algebra, its two sectors, its plain form and its trace reading, its brackets and its unitary group — and the **carrier** $\mathcal{M}$ on which the framework is represented, a module over $\mathcal{A}$ whose dimension is the domain's choice, finite for the discrete transform and infinite for the continuous one. The independence is a statement about $\mathcal{A}$, and it is exact: the content of $\mathcal{A}$ is unchanged whether the relation is added or removed. The relation never enters $\mathcal{A}$, and no element of $\mathcal{A}$ satisfies it. The carrier is a different matter and must be named separately, because it is where a continuum, and with it the relation, can be carried at all: the relation bears on $\mathcal{M}$ and not on $\mathcal{A}$. Stated with both layers, the claim is that **$\mathcal{A}$ is independent of the relation, and $\mathcal{M}$ is fixed by the domain of physics and not by the relation** — a carrier that holds the relation and one that does not have the same fibres, hence the same internal algebra. What the relation cannot do is constrain $\mathcal{A}$; what it does constrain is the dimension of $\mathcal{M}$, which is why it is a statement about the carrier and not about the framework's internal structure.
 
 **The asymmetry.** The independence is not symmetric. The framework **entails** a fact about the relation, namely that no finite-dimensional carrier satisfies it; the relation entails nothing about the framework. So the correct summary is that the relation is independent of the framework, while the framework is not entirely silent about the relation. Silence would be the wrong word for a theory that proves the relation's finite-dimension obstruction.
 
@@ -191,7 +191,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | Biquaternion algebra |
-| $\mathcal{A}$ | Internal algebra: $\mathbb{B}$ with its sectors, trace pairing, brackets and unitary group |
+| $\mathcal{A}$ | Internal algebra: $\mathbb{B}$ with its sectors, the plain form and its trace reading, brackets and unitary group |
 | $\mathcal{M}$ | Carrier, a module over $\mathcal{A}$; its dimension is the domain's choice, finite or infinite |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
@@ -201,7 +201,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $\tilde{H}_1=h_{1t}e_t+i\vec h_1$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{H}_1\tilde{H}_2)=h_{1t}h_{2t}+\vec h_1\cdot\vec h_2$ |
 | $[Q,P]=i\hbar I$ | Canonical commutation relation |
 | $\exp(i\alpha Q)\exp(i\beta P)=\exp(-i\hbar\alpha\beta)\exp(i\beta P)\exp(i\alpha Q)$ | Weyl form of the relation |
-| $|x\rangle$, $\langle x|x'\rangle=\delta(x-x')$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |
+| $|x\rangle$, $\langle x|x_2\rangle=\delta(x-x_2)$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |
 | $\tilde{S}_k=\tfrac{\hbar}{2}i\vec e_k$ | Spin (rotation) generators in $\mathbb{M}_+$ |
 | $[\tilde{S}_i,\tilde{S}_j]=i\hbar\sum_k\epsilon_{ijk}\tilde{S}_k$ | Angular-momentum bracket |
 | $X=\mathrm{diag}(1,\omega,\dots,\omega^{N-1})$, $\omega=\exp(2\pi i/N)$ | Clock of the finite Weyl pair |

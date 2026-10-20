@@ -10,7 +10,7 @@ The findings are stated here in advance, so that the reader can hold them agains
 
 1. **The field coupling is a Hermitian element of $\mathbb{M}_+$.** The magnetic Hamiltonian $\tilde{H} = -\gamma B_z\,\tilde{S}_3$ is an element of the Hermitian subspace, as are the force operator and the observable whose measurement the apparatus performs. The field does not couple to the material sector directly; it couples to the informational sector, and the material sector carries only the resulting centre-of-mass motion.
 2. **The two beams are the two idempotents of $\tilde{S}_3$.** The spin part of the apparatus performs the spectral decomposition $\tilde{S}_3 = \tfrac{\hbar}{2}\tilde\Pi_1(\vec u_z) - \tfrac{\hbar}{2}\tilde\Pi_2(\vec u_z)$, and the two outgoing beams are the two idempotents, correlated with the two spatial directions of deflection. The force eigenvalues are the eigenvalues of $\tilde{S}_3$, which is the algebraic content of space quantisation.
-3. **The beam intensities are the Born pair.** For an incident state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, the two intensities are $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}) = \tfrac12(1\pm r_3)$, the trace pairing of the framework.
+3. **The beam intensities are the Born pair.** For an incident state $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$, the two intensities are $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}) = \tfrac12(1\pm r_3)$; the trace is the $2\times2$ reading of the normalised plain form.
 4. **The measurement destroys the transverse coherence.** The Stern–Gerlach apparatus entangles the spin with the centre-of-mass coordinate; tracing the position out leaves the spin state with its off-diagonal (transverse) Bloch components erased, $\vec r = (0,0,r_3)$. The coherence that survives is exactly the component along the field, and the lost components are the ones the apparatus cannot read.
 5. **A rotated apparatus gives the $\cos^2(\theta/2)$ law**, and the rotation that carries one analyser direction into another is a rotor in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ acting by conjugation.
 
@@ -42,32 +42,32 @@ $$
 then the force on the atom along $z$ is the negative gradient of the potential,
 
 $$
-F_z = -\frac{\partial V_{\mathrm{pot}}}{\partial z} = \gamma\,\frac{\partial B}{\partial z}\,S_z = \gamma B'\,S_z .
+F_z = -\frac{\partial V_{\mathrm{pot}}}{\partial z} = \gamma\,\frac{\partial B}{\partial z}\,S_z = \gamma (dB/dz)\,S_z .
 $$
 
-Strictly, a field of the form $\vec B = B(z)\vec u_z$ alone is not a static magnetic field: $\nabla\cdot\vec B = 0$ requires $\partial B_z/\partial z = -\partial B_x/\partial x - \partial B_y/\partial y$, so a longitudinal gradient must be accompanied by transverse components, which make the direction of the local field depend on position. Across the width of the beam in the Stern–Gerlach geometry those components are small, and the standard treatment retains $F_z = \gamma B' S_z$ for the deflection; the same idealisation is made here.
+Strictly, a field of the form $\vec B = B(z)\vec u_z$ alone is not a static magnetic field: $\nabla\cdot\vec B = 0$ requires $\partial B_z/\partial z = -\partial B_x/\partial x - \partial B_y/\partial y$, so a longitudinal gradient must be accompanied by transverse components, which make the direction of the local field depend on position. Across the width of the beam in the Stern–Gerlach geometry those components are small, and the standard treatment retains $F_z = \gamma (dB/dz) S_z$ for the deflection; the same idealisation is made here.
 
-This is the standard result, and it is standard in a second sense: $S_z$ is an operator, so the force is an operator. Its eigenvalues are $\pm\tfrac{\hbar}{2}\gamma B'$, and a beam with its spin in an eigenstate of $S_z$ is deflected by an amount proportional to that eigenvalue.
+This is the standard result, and it is standard in a second sense: $S_z$ is an operator, so the force is an operator. Its eigenvalues are $\pm\tfrac{\hbar}{2}\gamma (dB/dz)$, and a beam with its spin in an eigenstate of $S_z$ is deflected by an amount proportional to that eigenvalue.
 
 ### Deflection and the Two Beams
 
 For a beam of speed $v$ crossing a field region of length $L$, the atom spends a time $t = L/v$ in the field, and the transverse displacement is
 
 $$
-\Delta z = \frac{1}{2}\,a\,t^2 = \frac{F_z}{2m}\left(\frac{L}{v}\right)^2 = \frac{\gamma B' S_z L^2}{2 m v^2}.
+\Delta z = \frac{1}{2}\,a\,t^2 = \frac{F_z}{2m}\left(\frac{L}{v}\right)^2 = \frac{\gamma (dB/dz) S_z L^2}{2 m v^2}.
 $$
 
 With $S_z = \pm\hbar/2$ the two displacements are
 
 $$
-\Delta z_\pm = \pm\frac{\hbar\gamma B' L^2}{4mv^2},
+\Delta z_\pm = \pm\frac{\hbar\gamma (dB/dz) L^2}{4mv^2},
 $$
 
-so the two beams are separated by $\hbar\gamma B' L^2/(2mv^2)$. A classical magnetic moment of arbitrary orientation would give a continuous band of deflections; the observation of two discrete spots is the evidence of quantisation. The deflection is the same for every atom in one beam, so the experiment measures the eigenvalue of $S_z$ for each atom.
+so the two beams are separated by $\hbar\gamma (dB/dz) L^2/(2mv^2)$. A classical magnetic moment of arbitrary orientation would give a continuous band of deflections; the observation of two discrete spots is the evidence of quantisation. The deflection is the same for every atom in one beam, so the experiment measures the eigenvalue of $S_z$ for each atom.
 
 ### Two Remarks on the Classical Limit
 
-Two remarks on the classical limit clarify what is and is not quantum about the experiment. First, the force formula $F_z = \gamma B' S_z$ is classical in form; only the spectrum of $S_z$ is quantum. Second, the separation of the two spots is proportional to $\hbar$, so the two beams coalesce in the formal limit $\hbar \to 0$, when the quantum of action disappears. In the biquaternion framework this is the statement that the two idempotents $\tilde\Pi_{1,2}(\vec u_z)$, whose difference produces the splitting, are constructed from the algebra's complex structure: the $\hbar$ enters only in the scale of the observable $\tilde{S}_3 = \tfrac{\hbar}{2} i \vec e_z$, and it is supplied to the framework from outside.
+Two remarks on the classical limit clarify what is and is not quantum about the experiment. First, the force formula $F_z = \gamma (dB/dz) S_z$ is classical in form; only the spectrum of $S_z$ is quantum. Second, the separation of the two spots is proportional to $\hbar$, so the two beams coalesce in the formal limit $\hbar \to 0$, when the quantum of action disappears. In the biquaternion framework this is the statement that the two idempotents $\tilde\Pi_{1,2}(\vec u_z)$, whose difference produces the splitting, are constructed from the algebra's complex structure: the $\hbar$ enters only in the scale of the observable $\tilde{S}_3 = \tfrac{\hbar}{2} i \vec e_z$, and it is supplied to the framework from outside.
 
 ## The Field Coupling in the Informational Sector
 
@@ -92,13 +92,13 @@ That the Hamiltonian is an element of $\mathbb{M}_+$ is the first structural fac
 The force operator along $z$ is the negative gradient of the Hamiltonian with respect to the material coordinate,
 
 $$
-\tilde{F}_3 = -\frac{\partial \tilde{H}}{\partial z} = \gamma\,\frac{\partial B}{\partial z}\,\tilde{S}_3 = \frac{\hbar\gamma B'}{2}\,i \vec e_z .
+\tilde{F}_3 = -\frac{\partial \tilde{H}}{\partial z} = \gamma\,\frac{\partial B}{\partial z}\,\tilde{S}_3 = \frac{\hbar\gamma (dB/dz)}{2}\,i \vec e_z .
 $$
 
-So the force is $\gamma B'$ times the spin observable, exactly as in the standard account, and it is again a Hermitian element of $\mathbb{M}_+$. Its spectral decomposition is inherited from that of $\tilde{S}_3$:
+So the force is $\gamma (dB/dz)$ times the spin observable, exactly as in the standard account, and it is again a Hermitian element of $\mathbb{M}_+$. Its spectral decomposition is inherited from that of $\tilde{S}_3$:
 
 $$
-\tilde{F}_3 = \gamma B'\,\tilde{S}_3 = \frac{\hbar\gamma B'}{2}\,\tilde\Pi_1(\vec u_z) - \frac{\hbar\gamma B'}{2}\,\tilde\Pi_2(\vec u_z).
+\tilde{F}_3 = \gamma (dB/dz)\,\tilde{S}_3 = \frac{\hbar\gamma (dB/dz)}{2}\,\tilde\Pi_1(\vec u_z) - \frac{\hbar\gamma (dB/dz)}{2}\,\tilde\Pi_2(\vec u_z).
 $$
 
 Each of the two eigenspaces is one-dimensional (the two idempotents are rank one and complementary), so each atom emerges in one of the two beams with a definite deflection. This is the algebraic content of the two-spot pattern: the number of beams is the number of terms in the spectral decomposition, and their deflections are the eigenvalues.
@@ -126,13 +126,13 @@ and the same computation with $\vec e_z \to -\vec e_z$ gives $\tilde{S}_3\tilde\
 
 ### The General State and Its Resolution
 
-An incident beam is in general not in an eigenstate of $\tilde{S}_3$. Its spin state is a Hermitian, positive, trace-one element of $\mathbb{M}_+$,
+An incident beam is in general not in an eigenstate of $\tilde{S}_3$. Its spin state is a Hermitian, positive element of $\mathbb{M}_+$ normalised by $\langle\tilde{Ϛ},e_t\rangle=\tfrac12$ (trace one in the $2\times2$ image),
 
 $$
 \tilde{Ϛ} = \tfrac12\left(e_t + i\vec r\right), \qquad \vec r\in\mathbb{R}^3, \quad |\vec r|\leq 1,
 $$
 
-with $\vec r$ the Bloch vector. The probabilities of the two outcomes are the trace pairings
+with $\vec r$ the Bloch vector. The probabilities of the two outcomes are the normalised plain form, read as the trace pairing,
 
 $$
 p_\pm = \mathrm{Tr}\!\left(\tilde\Pi_{1,2}(\vec u_z)\,\tilde{Ϛ}\right)
@@ -189,7 +189,7 @@ In biquaternion form the transverse components of the Bloch vector are erased, $
 If instead the apparatus is read and one outcome is selected — say the upper beam — the spin state is updated by the projective rule
 
 $$
-\tilde{Ϛ}' = \frac{\tilde\Pi_1(\vec u_z)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u_z)}{\mathrm{Tr}\!\left(\tilde\Pi_1(\vec u_z)\tilde{Ϛ}\right)} = \tilde\Pi_1(\vec u_z),
+\tilde{Ϛ}_2 = \frac{\tilde\Pi_1(\vec u_z)\,\tilde{Ϛ}\,\tilde\Pi_1(\vec u_z)}{\mathrm{Tr}\!\left(\tilde\Pi_1(\vec u_z)\tilde{Ϛ}\right)} = \tilde\Pi_1(\vec u_z),
 $$
 
 where the last equality uses $\tilde\Pi_1\tilde{Ϛ}\tilde\Pi_1 = p_+\tilde\Pi_1$ for a rank-one idempotent, with $p_+ = \mathrm{Tr}(\tilde\Pi_1\tilde{Ϛ})$. The post-measurement state is the idempotent itself. The Stern–Gerlach apparatus is therefore a physical realisation of the projective measurement rule of the informational sector: a Hermitian observable is resolved into its idempotents, and each outcome prepares the corresponding idempotent.
@@ -265,11 +265,11 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 ## What the Algebra Adds and What It Does Not
 
-**Standard physics, transcribed.** The magnetic coupling $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$, the force $F_z = \mu_z B'$, the deflection formula, the two-spot pattern, the $\cos^2(\theta/2)$ law and the three-magnet coherence experiment are all standard. None of them depends on the biquaternion structure beyond the identification of the spin observable with a Hermitian element of $\mathbb{M}_+$.
+**Standard physics, transcribed.** The magnetic coupling $V_{\mathrm{pot}} = -\vec\mu\cdot\vec B$, the force $F_z = \mu_z (dB/dz)$, the deflection formula, the two-spot pattern, the $\cos^2(\theta/2)$ law and the three-magnet coherence experiment are all standard. None of them depends on the biquaternion structure beyond the identification of the spin observable with a Hermitian element of $\mathbb{M}_+$.
 
 **What the biquaternion notation provides.**
 
-- **A single home for the field coupling and the measurement.** The Hamiltonian, the force operator, and the observable that the apparatus reads are all elements of the same subspace $\mathbb{M}_+$; the states are the idempotents of that subspace; and the outcome probabilities are the trace pairing. The experiment does not require an object outside the algebra, except for the centre-of-mass coordinate that carries the deflection and the mass $m$ that enters the deflection formula.
+- **A single home for the field coupling and the measurement.** The Hamiltonian, the force operator, and the observable that the apparatus reads are all elements of the same subspace $\mathbb{M}_+$; the states are the idempotents of that subspace; and the outcome probabilities are the normalised plain form, read as the trace pairing. The experiment does not require an object outside the algebra, except for the centre-of-mass coordinate that carries the deflection and the mass $m$ that enters the deflection formula.
 - **Space quantisation as a spectral decomposition.** The finite number of beams is the finite number of terms in the spectral decomposition of the observable, and the deflection of each beam is the corresponding eigenvalue. In the algebra this is a statement about the rank-one idempotents of $\mathbb{M}_+$, which are automatically complete and orthogonal.
 - **Decoherence as a partial trace with orthogonal labels.** The loss of the transverse Bloch components is the vanishing of the cross terms between two orthogonal spatial wavepackets. The algebra makes it visible that what is destroyed is exactly the coherence term $\tfrac12 i(r_1\vec e_x+r_2\vec e_y)$, and that the surviving component is the one along the field.
 - **The rotation of the apparatus is a rotor.** The analyser direction is the axis $\vec u$ of the idempotent, and the passage from one axis to another is conjugation by a unit real quaternion. The analyser's parameter space is the Bloch sphere, the same sphere on which the states live.
@@ -290,7 +290,7 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 ## Summary
 
-The Stern–Gerlach experiment passes a beam of spin-1/2 atoms through an inhomogeneous magnetic field and finds it split into two. In the biquaternion framework the magnetic coupling is the Hermitian element $\tilde{H} = -\gamma B(z)\tilde{S}_3 \in \mathbb{M}_+$, with $\tilde{S}_3 = \tfrac{\hbar}{2}i\vec e_z$; the force is $\tilde{F}_3 = \gamma B'\tilde{S}_3$; and the two beams are the two idempotents in the spectral decomposition
+The Stern–Gerlach experiment passes a beam of spin-1/2 atoms through an inhomogeneous magnetic field and finds it split into two. In the biquaternion framework the magnetic coupling is the Hermitian element $\tilde{H} = -\gamma B(z)\tilde{S}_3 \in \mathbb{M}_+$, with $\tilde{S}_3 = \tfrac{\hbar}{2}i\vec e_z$; the force is $\tilde{F}_3 = \gamma (dB/dz)\tilde{S}_3$; and the two beams are the two idempotents in the spectral decomposition
 
 $$
 \tilde{S}_3 = \frac{\hbar}{2}\tilde\Pi_1(\vec u_z) - \frac{\hbar}{2}\tilde\Pi_2(\vec u_z),
@@ -298,7 +298,7 @@ $$
 \tilde\Pi_{1,2}(\vec u_z) = \tfrac12\left(e_t \pm i\vec e_z\right).
 $$
 
-The deflection of each beam is the corresponding eigenvalue, $\pm\hbar\gamma B'L^2/(4mv^2)$, so the number of beams and their separation are the spectral data of a Hermitian element of the informational sector. For an incident state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ the intensities are the trace pairings $p_\pm = \tfrac12(1\pm r_3)$, and the two intensities sum to one.
+The deflection of each beam is the corresponding eigenvalue, $\pm\hbar\gamma (dB/dz)L^2/(4mv^2)$, so the number of beams and their separation are the spectral data of a Hermitian element of the informational sector. For an incident state $\tilde{Ϛ} = \tfrac12(e_t+i\vec r)$ the intensities are the plain-form readings $p_\pm = \tfrac12(1\pm r_3)$, and the two intensities sum to one.
 
 The apparatus entangles the spin with the centre-of-mass coordinate, which lives in the material sector. When the position is traced out, the orthogonal spatial wavepackets erase the cross terms and the reduced spin state is $\tfrac12(e_t + ir_3\vec e_z)$: the transverse Bloch components are lost, and only the component along the field survives. The coherence that is destroyed is the term $\tfrac12 i(r_1\vec e_x + r_2\vec e_y)$; the biquaternion form of the measurement shows this without an additional decoherence postulate.
 
@@ -316,14 +316,14 @@ A rotated analyser measures $\tilde{S}(\vec u) = \tfrac{\hbar}{2}i\vec u$ for $\
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace; home of the rotation rotors |
 | $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin observable along $\vec e_k$ |
 | $\tilde{H} = -\gamma B(z)\tilde{S}_3$ | Magnetic Hamiltonian in the field $\vec B = B\vec u_z$ |
-| $\tilde{F}_3 = \gamma B'\tilde{S}_3$ | Stern–Gerlach force operator |
+| $\tilde{F}_3 = \gamma (dB/dz)\tilde{S}_3$ | Stern–Gerlach force operator |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure-state idempotent |
 | $\tilde{Ϛ} = \tfrac12(e_t + i\vec r)$ | General (mixed) spin state; $\vec r$ the Bloch vector |
 | $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\vec u_z)\tilde{Ϛ}) = \tfrac12(1\pm r_3)$ | Beam intensities (Born rule) |
 | $\mathrm{Tr}(\tilde\Pi\tilde H)=2\,\mathrm{Sc}(\tilde\Pi\tilde H) = 2\langle\tilde\Pi,\tilde H\rangle$ | Trace formula |
 | $\vec u = \sin\theta\,\vec e_x + \cos\theta\,\vec e_z$ | Rotated analyser direction |
 | $\tilde u(\theta) = \exp(\tfrac{\theta}{2}\vec e_y)$ | Rotor carrying $\vec u_z$ to $\vec u$ |
-| $\Delta z_\pm = \pm\hbar\gamma B'L^2/(4mv^2)$ | Deflections of the two beams |
+| $\Delta z_\pm = \pm\hbar\gamma (dB/dz)L^2/(4mv^2)$ | Deflections of the two beams |
 | $\cos^2(\theta/2)$ | Probability of "up" at the rotated analyser |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

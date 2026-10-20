@@ -130,7 +130,7 @@ and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}
 
 **Proof.** The identity $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ gives $\tilde q \cdot (\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = 1$ whenever $\langle\tilde q\rangle_{\natural} \neq 0$; conversely, if $\langle\tilde q\rangle_{\natural} = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.
 
-The non-invertible nonzero four-vectors are exactly those on the **null cone** $q_t^2 + q_x^2 = q_y^2 + q_z^2$; on the vector subspace $q_t = 0$ this is the light cone $q_x^2 = q_y^2 + q_z^2$ of the Minkowski form, and in the split-complex plane $\mathbb{D}_2$ it is the pair of isotropic lines $q_t = \pm q_y$.
+The non-invertible nonzero four-vectors are exactly those on the **null cone** $q_t^2 + q_x^2 = q_y^2 + q_z^2$; on the vector subspace $q_t = 0$ this is the null cone $q_x^2 = q_y^2 + q_z^2$ of the Minkowski form, and in the split-complex plane $\mathbb{D}_2$ it is the pair of isotropic lines $q_t = \pm q_y$.
 
 ## The Analogue of the Four-Vector Representation of $\mathbb{B}$
 

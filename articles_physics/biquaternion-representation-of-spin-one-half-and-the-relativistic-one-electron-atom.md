@@ -117,9 +117,9 @@ Both are zero divisors, which is what rank-one matrices are, and the source itse
 | element | $\lvert q\rvert^2$ | $\langle\cdot\rangle_{\natural}$ | the element divided by $\sqrt2$ | behaviour under squaring |
 |---|---|---|---|---|
 | $q_+$ | $1$ | $0$ | $\tilde\Pi_1 = \tfrac12\left(e_t - i\vec e_x\right)$ | idempotent, Hermitian, trace $1$ |
-| $q_-$ | $1$ | $0$ | $\tilde\Pi_2' = \tfrac12\left(-\vec e_y - i\vec e_z\right)$ | nilpotent, $\left(\tilde\Pi_2'\right)^2 = 0$ |
+| $q_-$ | $1$ | $0$ | $\tilde\Pi_{\mathrm{nil}} = \tfrac12\left(-\vec e_y - i\vec e_z\right)$ | nilpotent, $\left(\tilde\Pi_{\mathrm{nil}}\right)^2 = 0$ |
 
-$\tilde\Pi_1$ is Hermitian, idempotent and of trace $1$, hence an idempotent of $\mathbb{M}_+$ and, by *Spin-1/2 Quantum Physics in Biquaternionic Form*, a pure-state idempotent; $\tilde\Pi_2'$ is not idempotent at all but **nilpotent**, with $\tilde\Pi_2'\tilde\Pi_1 = \tilde\Pi_2'$ and $\tilde\Pi_1\tilde\Pi_2' = 0$, so it is a null element of the same minimal left ideal rather than the complementary idempotent, which is $\tfrac12(e_t + i\vec e_x)$. So the source's spin-up state is a pure-state idempotent up to the factor $\sqrt2$, and its spin-down state is not: the pair is one idempotent and one nilpotent. The source's norm cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. In the corpus's interpretation the two pure states of the spin are the idempotents $\tilde\Pi_{1,2} = \tfrac12(e_t \pm i\vec e_x)$ of the $\vec e_x$ direction, and the source's pair is not that pair.
+$\tilde\Pi_1$ is Hermitian, idempotent and of trace $1$, hence an idempotent of $\mathbb{M}_+$ and, by *Spin-1/2 Quantum Physics in Biquaternionic Form*, a pure-state idempotent; $\tilde\Pi_{\mathrm{nil}}$ is not idempotent at all but **nilpotent**, with $\tilde\Pi_{\mathrm{nil}}\tilde\Pi_1 = \tilde\Pi_{\mathrm{nil}}$ and $\tilde\Pi_1\tilde\Pi_{\mathrm{nil}} = 0$, so it is a null element of the same minimal left ideal rather than the complementary idempotent, which is $\tfrac12(e_t + i\vec e_x)$. So the source's spin-up state is a pure-state idempotent up to the factor $\sqrt2$, and its spin-down state is not: the pair is one idempotent and one nilpotent. The source's norm cannot see the difference, since it is $1$ on both, and the algebra norm cannot see it either, since it is $0$ on both; the difference is visible only in the square. In the corpus's interpretation the two pure states of the spin are the idempotents $\tilde\Pi_{1,2} = \tfrac12(e_t \pm i\vec e_x)$ of the $\vec e_x$ direction, and the source's pair is not that pair.
 
 ## The Rotation Operators
 
@@ -237,7 +237,7 @@ The second short section writes four $4\times4$ matrices in biquaternion form an
 - The multiplicativity of the Kravchenko–Shapiro form on the real quaternions and its failure on the complex ones; the multiplicativity of the corpus's $\mathsf{M}_2$ on the complex ones.
 - The commutation relations of the three spin operators, exactly.
 - The six eigenvalue equations, including the sign of $S_xq_-$.
-- Orthogonality and normalisation of the two states in both norms; the idempotence of $\tilde\Pi_1$ and the nilpotence of $\tilde\Pi_2'$; the two orthogonality relations between them; the Hermiticity of $\tilde\Pi_1$.
+- Orthogonality and normalisation of the two states in both norms; the idempotence of $\tilde\Pi_1$ and the nilpotence of $\tilde\Pi_{\mathrm{nil}}$; the two orthogonality relations between them; the Hermiticity of $\tilde\Pi_1$.
 - The two ladder operators, their action on the two states, and the sign in $S_- = -\overline{S_+^*}$.
 - Unitarity of the three rotation operators and their sandwich action on the three spin operators.
 - The identity of the source's equation (20) with the expansion in its own two states.
@@ -269,7 +269,7 @@ The source proposes a $2\times2$ complex matrix $A(q)$ for a complex quaternion 
 | $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$ | The corpus's spin operators, in $\mathbb{M}_+$ |
 | $q_+ = \frac{1}{\sqrt2}(e_t - i\vec e_x)$, $q_- = \frac{1}{\sqrt2}(-\vec e_y - i\vec e_z)$ | The source's two states |
 | $\tilde\Pi_1 = \tfrac12(e_t - i\vec e_x)$ | Idempotent of $\mathbb{M}_+$, $q_+ = \sqrt2\,\tilde\Pi_1$ |
-| $\tilde\Pi_2' = \tfrac12(-\vec e_y - i\vec e_z)$ | Nilpotent, $q_- = \sqrt2\,\tilde\Pi_2'$, $\left(\tilde\Pi_2'\right)^2 = 0$ |
+| $\tilde\Pi_{\mathrm{nil}} = \tfrac12(-\vec e_y - i\vec e_z)$ | Nilpotent, $q_- = \sqrt2\,\tilde\Pi_{\mathrm{nil}}$, $\left(\tilde\Pi_{\mathrm{nil}}\right)^2 = 0$ |
 | $D(n,\varphi) = e_t\cos\frac{\varphi}{2} - i(q_p\cdot n)\sin\frac{\varphi}{2}$ | The source's rotation operator; unit-norm biquaternion |
 | $S_\pm = S_x \pm iS_y$ | The source's ladder operators; $S_- = -\overline{S_+^*}$ |
 | $Y_l^{l\pm\frac12}$, $C_1, C_2$ | Angular spinor harmonic and its two coefficient radicals |

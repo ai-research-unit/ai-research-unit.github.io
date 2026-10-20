@@ -152,7 +152,7 @@ These agree with the physical expectation.
 
 **1. States and observables are elements of the same subspace.** The state $\tilde\Pi_z$ and the outcome idempotent $\tilde\Pi_n$ are both idempotents of $\mathbb{M}_+$. The entire calculation involves only the algebra of the biquaternion units and the extraction of the scalar part.
 
-**2. The Born rule is the trace formula.** The probability is $p_+ = \mathrm{Tr}(\tilde\Pi_n \circ \tilde\Pi_z) = 2\,\mathrm{Sc}(\tilde\Pi_n \circ \tilde\Pi_z)$. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the trace. It is the same formula as $p_+ = \mathrm{Tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.
+**2. The Born rule is the normalised plain form, computed as the trace formula.** The probability is $p_+ = \mathrm{Tr}(\tilde\Pi_n \circ \tilde\Pi_z) = 2\,\mathrm{Sc}(\tilde\Pi_n \circ \tilde\Pi_z)$. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the plain form. It is the same formula as $p_+ = \mathrm{Tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.
 
 **3. No complex vectors are needed.** In the standard solution, the calculation involves complex column vectors and their inner product. In the biquaternion solution, it involves only the algebra of $\mathbb{B}$: products of quaternion units, extraction of the scalar part, application of the trace formula. The complex structure is absorbed into the scalar imaginary $i$ of the algebra.
 

@@ -253,16 +253,16 @@ with $n_0 = v_p(x)$; $\mathbb{Z}_p$ corresponds to $n_0 \geq 0$.
 **Theorem (Hensel's lemma).** Let $F$ be complete with respect to a non-Archimedean absolute value, let $\mathcal{O}$ be its valuation ring, and let $f \in \mathcal{O}[x]$. If there is $a \in \mathcal{O}$ with
 
 $$
-\lvert f(a) \rvert < \lvert f'(a) \rvert^2,
+\lvert f(a) \rvert < \lvert \frac{df}{dx}(a) \rvert^2,
 $$
 
-then there is a unique $b \in \mathcal{O}$ with $f(b) = 0$ and $\lvert b - a \rvert < \lvert f'(a) \rvert$.
+then there is a unique $b \in \mathcal{O}$ with $f(b) = 0$ and $\lvert b - a \rvert < \lvert \frac{df}{dx}(a) \rvert$.
 
-**Proof sketch.** The Newton iteration $a_{n+1} = a_n - f(a_n)/f'(a_n)$ is defined by the hypothesis and is Cauchy for the non-Archimedean absolute value, with $\lvert a_{n+1} - a_n \rvert$ decreasing quadratically; completeness gives a limit $b$, and continuity of $f$ gives $f(b) = 0$. Uniqueness is by the ultrametric estimate on $f(b) - f(b')$.
+**Proof sketch.** The Newton iteration $a_{n+1} = a_n - f(a_n)/\frac{df}{dx}(a_n)$ is defined by the hypothesis and is Cauchy for the non-Archimedean absolute value, with $\lvert a_{n+1} - a_n \rvert$ decreasing quadratically; completeness gives a limit $b$, and continuity of $f$ gives $f(b) = 0$. Uniqueness is by the ultrametric estimate on $f(b) - f(b')$.
 
 **Corollary (roots of units).** Let $p$ be odd and let $u \in \mathbb{Z}_p^\times$. Then $u$ is a square in $\mathbb{Z}_p$ if and only if its image in $\mathbb{F}_p^\times$ is a square.
 
-**Proof.** Apply Hensel's lemma to $f(x) = x^2 - u$ at a lift $a$ of a square root of the image of $u$ in $\mathbb{F}_p$: since the image is a nonzero square, $f'(a) = 2a$ has absolute value $1$, while $\lvert f(a) \rvert \leq 1/p < 1 = \lvert f'(a) \rvert^2$, so the hypothesis of Hensel's lemma holds.
+**Proof.** Apply Hensel's lemma to $f(x) = x^2 - u$ at a lift $a$ of a square root of the image of $u$ in $\mathbb{F}_p$: since the image is a nonzero square, $\frac{df}{dx}(a) = 2a$ has absolute value $1$, while $\lvert f(a) \rvert \leq 1/p < 1 = \lvert \frac{df}{dx}(a) \rvert^2$, so the hypothesis of Hensel's lemma holds.
 
 **Theorem (algebraic closure of $\mathbb{Q}_p$).** The algebraic closure $\overline{\mathbb{Q}_p}$ is not complete; its completion $\mathbb{C}_p$ is algebraically closed and complete, and $\mathbb{C}_p$ is the smallest algebraically closed and complete extension of $\mathbb{Q}_p$.
 
@@ -311,7 +311,7 @@ Every valued field has a completion, unique up to isometry, which is complete an
 | $\mathbb{Z}_p$, $\mathbb{Q}_p$, $\mathbb{C}_p$ | $p$-adic integers, numbers, and completed algebraic closure |
 | $k((t))$ | Formal Laurent series field |
 | $d(x,y) = \lvert x-y \rvert$ | Induced metric |
-| $f'(x)$ | Formal derivative, in Hensel's lemma |
+| $\frac{df}{dx}$ | Formal derivative, in Hensel's lemma |
 
 ## Further Reading
 

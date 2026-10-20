@@ -5,7 +5,7 @@
 
 This article treats the integration of split-quaternion-valued functions. It fixes the orientation of the vector subspace, proves integration by parts and the divergence theorem for the algebra, derives Green's formulas for the vector operator, constructs the fundamental solution, and explains what replaces the Cauchy integral formula and what fails in its place, comparing the situation with the quaternion and split-complex cases.
 
-The split-quaternion algebra, its split-quaternion norm, its conjugation and its subspaces are assumed from *Split-Quaternion Algebra*; the Lorentzian geometry of the vector subspace, including the sign convention of the form $q_x^2-q_y^2-q_z^2$ as three-dimensional Minkowski space, from *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*, and *Split-Quaternion Geometry*; the operators, the metric structure and the failure of the naive derivative from *Split-Quaternion Analysis*, and the operators of the subspaces from *Split-Quaternion Analysis*. The theory of distributions and fundamental solutions is that of *Distributions and Fundamental Solutions*, the quaternion case that of *Quaternion Integration*, and the two-dimensional hyperbolic case that of *Split-Complex Integration*. Nothing physical is invoked.
+The split-quaternion algebra, its split-quaternion norm, its conjugation and its subspaces are assumed from *Split-Quaternion Algebra*; the Lorentzian geometry of the vector subspace, including the sign convention of the form $q_x^2-q_y^2-q_z^2$ as three-dimensional Lorentzian space, from *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*, and *Split-Quaternion Geometry*; the operators, the metric structure and the failure of the naive derivative from *Split-Quaternion Analysis*, and the operators of the subspaces from *Split-Quaternion Analysis*. The theory of distributions and fundamental solutions is that of *Distributions and Fundamental Solutions*, the quaternion case that of *Quaternion Integration*, and the two-dimensional hyperbolic case that of *Split-Complex Integration*. Nothing physical is invoked.
 
 ## Volume Integrals and the Orientation
 
@@ -17,7 +17,7 @@ $$
 
 and it is the Bochner integral of a function with values in the finite-dimensional normed space with the Euclidean norm of *Split-Quaternion Analysis*, §*The Metric Structure*.
 
-**Definition (Orientation).** The algebra $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ is oriented by the frame $(1, \vec e_x, \vec e_y, \vec e_z)$, so the volume element is $\mathrm{d}q_t\,\mathrm{d}q_x\,\mathrm{d}q_y\,\mathrm{d}q_z$. The vector subspace $V$ with the coordinates $(q_x,q_y,q_z)$ is oriented by $(\vec e_x,\vec e_y,\vec e_z)$; the form restricted to it is $q_x^2-q_y^2-q_z^2$, and this is the three-dimensional Minkowski space whose Lorentz group is $\mathrm{SO}^{+}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*. Both orientations are fixed once and for all; no factor of $i$ or of any other non-real element is introduced into any integral in this article.
+**Definition (Orientation).** The algebra $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ is oriented by the frame $(1, \vec e_x, \vec e_y, \vec e_z)$, so the volume element is $\mathrm{d}q_t\,\mathrm{d}q_x\,\mathrm{d}q_y\,\mathrm{d}q_z$. The vector subspace $V$ with the coordinates $(q_x,q_y,q_z)$ is oriented by $(\vec e_x,\vec e_y,\vec e_z)$; the form restricted to it is $q_x^2-q_y^2-q_z^2$, and this is the three-dimensional Lorentzian space whose Lorentz group is $\mathrm{SO}^{+}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*. Both orientations are fixed once and for all; no factor of $i$ or of any other non-real element is introduced into any integral in this article.
 
 **Theorem (The Boundary and the Normal).** Let $\partial\Omega$ be a piecewise smooth hypersurface with outward unit normal $(n_{q_t},n_{q_x},n_{q_y},n_{q_z})$ in the Euclidean metric of $\mathbb{R}^4$, and let
 
@@ -37,7 +37,7 @@ $$
 \int_\Omega \operatorname{Sc}\big(D f\big) \;=\; \int_{\partial\Omega} \operatorname{Sc}\big(f\, n\big) .
 $$
 
-The normalisation is the Euclidean one, which exists on every smooth hypersurface. What degenerates on a boundary tangent to the light cone is not the normalisation but the boundary term: if $\langle n\rangle_{\natural} = 0$ at a point, then $n$ is a zero divisor there and the functional $f \mapsto \operatorname{Sc}(fn)$ has a kernel, so the boundary term loses information. The algebra-valued form $\int_\Omega Df = \int_{\partial\Omega} fn$ with the normal on the right is *not* valid as it stands; the componentwise theorem gives $\int_\Omega Df = \int_{\partial\Omega}\sum_\mu (\vec e_\mu\,f)n_\mu$, and only after taking the scalar part does the sum collapse to the single product $fn$.
+The normalisation is the Euclidean one, which exists on every smooth hypersurface. What degenerates on a boundary tangent to the null cone is not the normalisation but the boundary term: if $\langle n\rangle_{\natural} = 0$ at a point, then $n$ is a zero divisor there and the functional $f \mapsto \operatorname{Sc}(fn)$ has a kernel, so the boundary term loses information. The algebra-valued form $\int_\Omega Df = \int_{\partial\Omega} fn$ with the normal on the right is *not* valid as it stands; the componentwise theorem gives $\int_\Omega Df = \int_{\partial\Omega}\sum_\mu (\vec e_\mu\,f)n_\mu$, and only after taking the scalar part does the sum collapse to the single product $fn$.
 
 **Proof.** The four displays are the divergence theorem in the four coordinates, applied to the components of $f$. For the scalar-part form, $\operatorname{Sc}(Df) = \sum_\mu\operatorname{Sc}(\vec e_\mu\,\partial/\partial q_\mu\,f)$ and $\int_\Omega\partial/\partial q_\mu\,f = \int_{\partial\Omega}f\,n_\mu$; since $\vec e_\mu$ is constant and the scalar part is linear and invariant under cyclic permutations,
 
@@ -160,7 +160,7 @@ $$
 C = \{(q_x,q_y,q_z) : q_x \geq 0, \ q_x^2 \geq q_y^2 + q_z^2\},
 $$
 
-whose singular support is the light cone $\partial C$, and which is homogeneous of degree $-1$. The solution has support in the solid cone, not only on its boundary: the sharp Huygens principle fails, as it does for every wave operator in two spatial dimensions, and the tail is the interior part of the cone.
+whose singular support is the null cone $\partial C$, and which is homogeneous of degree $-1$. The solution has support in the solid cone, not only on its boundary: the sharp Huygens principle fails, as it does for every wave operator in two spatial dimensions, and the tail is the interior part of the cone.
 
 **Proof.** The construction of the fundamental solution of a wave operator is that of *Distributions and Fundamental Solutions*, where the support and the homogeneity are established; the boundary behaviour is the statement that the fundamental solution is singular precisely on the characteristic cone, and the failure of the sharp Huygens principle in two spatial dimensions is the standard count of dimensions.
 
@@ -170,7 +170,7 @@ $$
 E_D = D E ,
 $$
 
-the distribution obtained by applying $D$ to the fundamental solution of the wave operator; it satisfies $D E_D = \delta$ because $D^2 = \Box_{(2,1)}$. Its singular support is the light cone, so the propagation governed by $D$ is at speed one, in contrast with the elliptic case, where the singular support of the fundamental solution is a single point. Both $E$ and $E_D$ depend on the vector coordinates $(q_x,q_y,q_z)$ alone and are independent of the scalar coordinate $q_t$; $E$ is homogeneous of degree $-1$ and $E_D = DE$ of degree $-2$ in those three variables, and the $\delta$ in the two equations is the delta distribution of the vector subspace.
+the distribution obtained by applying $D$ to the fundamental solution of the wave operator; it satisfies $D E_D = \delta$ because $D^2 = \Box_{(2,1)}$. Its singular support is the null cone, so the propagation governed by $D$ is at speed one, in contrast with the elliptic case, where the singular support of the fundamental solution is a single point. Both $E$ and $E_D$ depend on the vector coordinates $(q_x,q_y,q_z)$ alone and are independent of the scalar coordinate $q_t$; $E$ is homogeneous of degree $-1$ and $E_D = DE$ of degree $-2$ in those three variables, and the $\delta$ in the two equations is the delta distribution of the vector subspace.
 
 **Proof.** $D(D E) = D^2E = \Box_{(2,1)}E = \delta$; the singular support is contained in that of $E$ and is not smaller because $E_D$ is not smooth across the cone. The elliptic comparison is the fundamental solution of the Laplacian in *Clifford Analysis*.
 
@@ -214,7 +214,7 @@ for every $f$ with compact support, so that $E_D*f$ is a solution of the inhomog
 
 **Proof.** $D(E_D*f) = (DE_D)*f = \delta*f = f$, the differentiation passing through the convolution because the coefficients are constant.
 
-**Remark (What Fails in Place of the Cauchy Formula).** Three structural features of the quaternionic Cauchy integral formula are absent here. First the kernel: $(\tilde q_1-\tilde q_2)^{-1}$ has no counterpart, since $\tilde q_1-\tilde q_2$ is a zero divisor exactly when it is null, so its reciprocal does not exist on the light cone and the singular set of the available kernel is a three-dimensional cone through the point rather than the point itself. Second analyticity: the solutions of $Df = 0$ satisfy a first-order system whose characteristic variety is the light cone, and by the kernel theorem they include nonzero compactly supported functions, so they are not analytic and carry no identity theorem. Third inversion: the inversion available is one-sided, by the theorem above, and the boundary formula of Green is valued in the trace pairing, so the boundary data do not pass to the interior values through a single multiplication kernel.
+**Remark (What Fails in Place of the Cauchy Formula).** Three structural features of the quaternionic Cauchy integral formula are absent here. First the kernel: $(\tilde q_1-\tilde q_2)^{-1}$ has no counterpart, since $\tilde q_1-\tilde q_2$ is a zero divisor exactly when it is null, so its reciprocal does not exist on the null cone and the singular set of the available kernel is a three-dimensional cone through the point rather than the point itself. Second analyticity: the solutions of $Df = 0$ satisfy a first-order system whose characteristic variety is the null cone, and by the kernel theorem they include nonzero compactly supported functions, so they are not analytic and carry no identity theorem. Third inversion: the inversion available is one-sided, by the theorem above, and the boundary formula of Green is valued in the trace pairing, so the boundary data do not pass to the interior values through a single multiplication kernel.
 
 ## Principal Values and the Distributional Inverse
 
@@ -255,11 +255,11 @@ The quaternion column is the content of *Quaternion Integration* and the split-c
 
 ## Summary
 
-The integration of split-quaternion-valued functions is componentwise, with the orientation of the algebra fixed by the frame $(1,\vec e_x,\vec e_y,\vec e_z)$ and the orientation of the vector subspace by $(\vec e_x,\vec e_y,\vec e_z)$, the form $q_x^2-q_y^2-q_z^2$ being the three-dimensional Minkowski form of the system. The divergence theorem holds on every domain with piecewise smooth boundary, with the Euclidean normal; on a boundary tangent to the light cone the normal is a zero divisor and the boundary term degenerates.
+The integration of split-quaternion-valued functions is componentwise, with the orientation of the algebra fixed by the frame $(1,\vec e_x,\vec e_y,\vec e_z)$ and the orientation of the vector subspace by $(\vec e_x,\vec e_y,\vec e_z)$, the form $q_x^2-q_y^2-q_z^2$ being the three-dimensional Minkowski form of the system. The divergence theorem holds on every domain with piecewise smooth boundary, with the Euclidean normal; on a boundary tangent to the null cone the normal is a zero divisor and the boundary term degenerates.
 
-The vector operator is formally self-adjoint, $D^* = D$, and Green's formula reads $\int_\Omega[\operatorname{Sc}((Df)g) + \operatorname{Sc}(f(\bar Dg))] = \int_{\partial\Omega}\operatorname{Sc}(fgn)$, with the classical Green identities for the wave operator as corollaries; the two-sided form is forced by the failure of the two-term Leibniz rule in the non-commutative algebra. The wave operator $\Box_{(2,1)} = D^2$ has a fundamental solution supported in the closed future cone with singular support the light cone, and the vector operator has the fundamental solution $D E$; the propagation is at speed one, and the sharp Huygens principle fails, as in every two-spatial-dimensional wave problem.
+The vector operator is formally self-adjoint, $D^* = D$, and Green's formula reads $\int_\Omega[\operatorname{Sc}((Df)g) + \operatorname{Sc}(f(\bar Dg))] = \int_{\partial\Omega}\operatorname{Sc}(fgn)$, with the classical Green identities for the wave operator as corollaries; the two-sided form is forced by the failure of the two-term Leibniz rule in the non-commutative algebra. The wave operator $\Box_{(2,1)} = D^2$ has a fundamental solution supported in the closed future cone with singular support the null cone, and the vector operator has the fundamental solution $D E$; the propagation is at speed one, and the sharp Huygens principle fails, as in every two-spatial-dimensional wave problem.
 
-There is no Cauchy integral formula: the candidate kernel $(\tilde q-\tilde p)^{-1}$ does not exist on the light cone, where the difference of two points is a zero divisor. The inversion that holds is one-sided, $f = D(E_D*f)$; the formula $f = E_D*(Df)$ of the elliptic theory fails, as the large kernel of $D$ shows, and the maximum principle, the mean value property, the identity theorem and the elliptic Liouville and removable-singularity theorems all fail. The quaternion case, with its elliptic operator and its point singularity, is the opposite extreme, and the differences are all traced to the indefiniteness of the form and the presence of the zero divisors. The eight-dimensional relative is a later system of Part V, named only.
+There is no Cauchy integral formula: the candidate kernel $(\tilde q-\tilde p)^{-1}$ does not exist on the null cone, where the difference of two points is a zero divisor. The inversion that holds is one-sided, $f = D(E_D*f)$; the formula $f = E_D*(Df)$ of the elliptic theory fails, as the large kernel of $D$ shows, and the maximum principle, the mean value property, the identity theorem and the elliptic Liouville and removable-singularity theorems all fail. The quaternion case, with its elliptic operator and its point singularity, is the opposite extreme, and the differences are all traced to the indefiniteness of the form and the presence of the zero divisors. The eight-dimensional relative is a later system of Part V, named only.
 
 ## Summary of Notation
 
@@ -267,7 +267,7 @@ There is no Cauchy integral formula: the candidate kernel $(\tilde q-\tilde p)^{
 |---|---|---|
 | $\int_\Omega f$ | the componentwise volume integral | this article |
 | $(1,\vec e_x,\vec e_y,\vec e_z)$, $(\vec e_x,\vec e_y,\vec e_z)$ | the orientations of the algebra and of the vector subspace | this article |
-| $(q_x,q_y,q_z)$ with $q_x^2-q_y^2-q_z^2$ | the three-dimensional Minkowski space of the system | *Split-Quaternion Rotations and the Lorentz Group* |
+| $(q_x,q_y,q_z)$ with $q_x^2-q_y^2-q_z^2$ | the three-dimensional Lorentzian space of the system | *Split-Quaternion Rotations and the Lorentz Group* |
 | $n$ | the Euclidean unit normal, read as a split-quaternion | this article |
 | $D^* = D$ | the formal adjoint of the vector operator | this article |
 | $\bar D = \partial/\partial q_x \vec e_x + \partial/\partial q_y \vec e_y + \partial/\partial q_z \vec e_z$ | the operator acting on the right | this article |
@@ -276,7 +276,7 @@ There is no Cauchy integral formula: the candidate kernel $(\tilde q-\tilde p)^{
 | $E_D = DE$ | the fundamental solution of $D$ | this article |
 | $f = D(E_D*f)$ | the inversion on the left | this article |
 | $\tilde\pi_1h(q_x-q_z)$, $h(q_x+q_z)\tilde\pi_2$ | the two families in the kernel of $D$ | this article |
-| $C$, $\partial C$ | the future cone and the light cone | *Split-Quaternion Geometry* |
+| $C$, $\partial C$ | the future cone and the null cone | *Split-Quaternion Geometry* |
 
 ## Further Reading
 

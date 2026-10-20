@@ -89,7 +89,7 @@ On $M_{2}(\mathbb{C})$ with $h(X,Y) = \tau(XGY^{*})$, $G = \operatorname{diag}(1
 
 ### The Biquaternion Algebra
 
-On $\mathbb{B}$ with the form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ of signature $(2,6)$ over $\mathbb{R}$, the totally isotropic subspaces have dimension at most $2$; the two null directions are the light cone of the Minkowski reading, and the passage to the definite quotient is *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
+On $\mathbb{B}$ with the form $\operatorname{Sc}(\bar{\tilde Q}\tilde Q')$ of signature $(2,6)$ over $\mathbb{R}$, the totally isotropic subspaces have dimension at most $2$; the two null directions are the null cone of the Lorentzian reading, and the passage to the definite quotient is *The Form on the Biquaternion Algebra as a General Plain Sesquilinear Form*.
 
 ## Summary
 

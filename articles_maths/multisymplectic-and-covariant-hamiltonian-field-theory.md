@@ -233,7 +233,7 @@ for any functions $\chi^a$, so two different unknowns have the same $F$ and henc
 
 The formalism of this article and the instantaneous formalism of the field theory articles are two readings of one problem, and the passage between them is a choice of direction. Choose a coordinate $x^0$, write the remaining coordinates collectively as $\mathbf{x}$, and set the volume form of the remaining directions equal to $\varpi_0$. The polymomentum with $\mu=0$, namely $p^0_i=\partial L/\partial(\partial/\partial x^0\,u^i)$, is then the conjugate momentum of the instantaneous theory, the derivative $\partial/\partial x^0\,u^i$ is the velocity, and the density $L$ is the Lagrangian density whose Legendre transform is the instantaneous Hamiltonian density. The De Donder–Weyl equation with $\mu=0$ is the evolution equation, and the equations with $\mu\ne0$ are the constraints and the spatial equations; the single De Donder–Weyl second equation, contracted over all $\mu$, splits into the instantaneous time evolution and the spatial relations.
 
-The relation between the two Hamiltonians is a matter of one component of the multimomentum current. The time component of $J^\mu{}_\nu$ for $\nu=0$ is
+The relation between the two Hamiltonians is a matter of one component of the multimomentum current. The component $\nu=0$ of $J^\mu{}_\nu$ is
 
 $$
 J^0{}_0=p^0_i\,\partial/\partial x^0\,u^i-L ,

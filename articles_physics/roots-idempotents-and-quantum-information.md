@@ -12,7 +12,7 @@ passes from one to the other. That dictionary was built in *Roots, Idempotents a
 
 Five interpretations are developed: contextuality, positive operator-valued measures, error-correcting code spaces, mutually unbiased bases, and teleportation. A sixth statement is a boundary rather than an interpretation: the defining module is the two-dimensional spin-$\tfrac12$ representation and is irreducible, so the carrier has no spin-zero ray.
 
-The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composites are tensor powers. The article owns no theorem. The classification of idempotents, the Peirce decomposition, the trace pairing and the unitary group are stated in the mathematics articles linked below, and the identities that the article uses are either standard or verified in two or three lines.
+The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composites are tensor powers. The article owns no theorem. The classification of idempotents, the Peirce decomposition, the plain form and the unitary group are stated in the mathematics articles linked below, and the identities that the article uses are either standard or verified in two or three lines.
 
 ## The Results It Uses
 
@@ -21,7 +21,7 @@ The algebra is the native qubit, $\mathbb{B}\cong M_2(\mathbb{C})$, and composit
 | The roots of $+1$, the halving map and the idempotents | [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html) |
 | Orthogonality, completeness, primitivity and the Peirce decomposition | [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | The positive cone, the order interval and its extreme points | [Jordan Algebras and the Positive Cone](../articles_maths/jordan-algebras-and-the-positive-cone.html) |
-| The trace pairing and the Hilbert–Schmidt form (proportional by $1/2$) | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html), [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
+| The plain form and the Hilbert–Schmidt form (proportional by $1/2$) | [The 4 Forms over the Biquaternioid $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternioid-c-space.html), [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html) |
 | The unitary group and the matrix-unitary condition | [Unitary Operators of a Sesqualgebra](../articles_maths/the-unitary-operators-of-a-sesqualgebra.html) |
 | The tensor product and the isomorphism $M_m\otimes M_n\cong M_{mn}$ | [Tensor Products of Algebras](../articles_maths/tensor-products-of-algebras.html) |
 
@@ -70,7 +70,7 @@ $$
 \tilde E=\lambda_1\tilde\Pi_1+\lambda_2\tilde\Pi_2,\qquad 0\le\lambda_1,\lambda_2\le 1,
 $$
 
-in some idempotent basis, and it is soft when one eigenvalue lies strictly between $0$ and $1$. A **POVM** is a finite family $\{\tilde E_a\}$ of effects with $\sum_a\tilde E_a=e_t$, and the Born weight of an outcome is the trace pairing $\operatorname{Tr}(\tilde{Ϛ}\tilde E_a)$.
+in some idempotent basis, and it is soft when one eigenvalue lies strictly between $0$ and $1$. A **POVM** is a finite family $\{\tilde E_a\}$ of effects with $\sum_a\tilde E_a=e_t$, and the Born weight of an outcome is the normalised plain form, read as the trace pairing $\operatorname{Tr}(\tilde{Ϛ}\tilde E_a)$.
 
 **Interpretation.** A measurement is a resolution of the identity into effects. The sharp outcomes are the idempotents, the unsharp ones are their convex combinations, and the state space is the same in both cases. Naimark's dilation theorem makes every POVM a projective measurement on a larger module, so the sharp idempotent remains the primitive object and the soft effect is a shadow of a projection on an enlarged space.
 
@@ -114,16 +114,16 @@ $$
 \tilde\Pi_i\tilde\Pi_j=\delta_{ij}\tilde\Pi_i,\qquad \sum_i\tilde\Pi_i=e_t,\qquad \operatorname{Tr}\tilde\Pi_i=1 .
 $$
 
-For the qubit the rank-one idempotents are $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\vec u$ a unit vector, and the Hilbert-space overlap of two rays is the trace pairing:
+For the qubit the rank-one idempotents are $\tilde\Pi_\pm(\vec u)=\tfrac12(e_t\pm i\vec u)$ with $\vec u$ a unit vector, and the Hilbert-space overlap of two rays is the normalised plain form, read as the trace pairing:
 
 $$
 \lvert\langle\psi|\phi\rangle\rvert^2=\operatorname{Tr}\bigl(\tilde\Pi(\psi)\tilde\Pi(\phi)\bigr).
 $$
 
-Two bases are **mutually unbiased** when every overlap across them is $1/d$; for the qubit $d=2$, so every cross trace is $\tfrac12$. The three bases are the eigenbases of the three Hermitian involutions $i\vec e_x$, $i\vec e_y$ and $i\vec e_z$. The units pairwise anticommute, and the trace pairing of idempotents from different bases is
+Two bases are **mutually unbiased** when every overlap across them is $1/d$; for the qubit $d=2$, so every cross trace is $\tfrac12$. The three bases are the eigenbases of the three Hermitian involutions $i\vec e_x$, $i\vec e_y$ and $i\vec e_z$. The units pairwise anticommute, and the normalised plain form of idempotents from different bases, read as the trace pairing, is
 
 $$
-\operatorname{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b')}\bigr)=\tfrac12\qquad(b\ne b').
+\operatorname{Tr}\bigl(\tilde\Pi_i^{(b)}\tilde\Pi_j^{(b_2)}\bigr)=\tfrac12\qquad(b\ne b_2).
 $$
 
 **Interpretation.** The three coordinate measurements are the three unbiased bases, and their completeness is the tomographic statement that three outcome probabilities determine the Bloch vector. The outcome probabilities in the basis along $\vec e_k$ are
@@ -179,11 +179,11 @@ The six interpretations share one theme: the idempotent is the native object of 
 - **Contextuality** reads a context as a maximal commutative subalgebra and its outcomes as idempotents; the obstruction is the failure of one value table to serve all contexts, and it appears only on a composite.
 - **POVMs** read a measurement as a resolution of the identity into effects; the sharp effects are the idempotents, and the soft ones are their convex combinations.
 - **Error correction** reads a code as an idempotent and its logical subspace as the image of that idempotent, with the Peirce corner as the algebra-side counterpart.
-- **Unbiased bases** read the three coordinate measurements as the three idempotent bases of the qubit, with the trace pairing as the overlap.
+- **Unbiased bases** read the three coordinate measurements as the three idempotent bases of the qubit, with the normalised plain form as the overlap.
 - **Teleportation** reads the resource and the measurement as Bell idempotents and the corrections as unitaries.
 - **Entanglement** reads a correlation as a property of the tensor square, not a fifth product; the partial trace is taken over one factor, and the correlations live between the rows, not inside one.
 
-The theme is not an analogy. In the first five cases the object that the information-theoretic construction names is an element of the algebra, and the operation it names is one of the algebra's own operations: commutation for a context, the order interval for an effect, the Peirce corner for a code, the trace pairing for an overlap, the tensor product for a shared state. Entanglement is the exception that proves the rule: its object is the tensor square, and its operation, the partial trace, lives one level up. What the algebra adds is the exactness of the statement and the boundary where it stops.
+The theme is not an analogy. In the first five cases the object that the information-theoretic construction names is an element of the algebra, and the operation it names is one of the algebra's own operations: commutation for a context, the order interval for an effect, the Peirce corner for a code, the normalised plain form for an overlap, the tensor product for a shared state. Entanglement is the exception that proves the rule: its object is the tensor square, and its operation, the partial trace, lives one level up. What the algebra adds is the exactness of the statement and the boundary where it stops.
 
 ## Limits
 
@@ -197,7 +197,7 @@ The theme is not an analogy. In the first five cases the object that the informa
 
 ## Summary
 
-The Hermitian idempotents are the pure states and the Hermitian roots of $+1$ are the involutive observables; the halving map is the dictionary between them. Six information-theoretic constructions are read here. A context is a maximal commutative subalgebra, its outcomes are a complete family of orthogonal idempotents, and the Kochen–Specker obstruction is the failure of a single value assignment to serve every context; on the native qubit there is no obstruction, and the smallest arena is the two-qubit algebra with the Mermin–Peres square. A POVM is a resolution of the identity into effects; the sharp effects are the idempotents, the extreme points of the order interval, and the soft ones are their convex combinations. A stabilizer code is an idempotent, its code space the image of that idempotent, and the Knill–Laflamme condition the exact statement that the errors act on it as scalars. The three unbiased bases of the qubit are the eigenbases of the three imaginary units, and the trace pairing is the overlap. Teleportation forces apart the two classes of acting element: the resource and the measurement are Bell idempotents, the corrections are unitaries. Entanglement is not a fifth job: a correlation is a property of the tensor square, and the partial trace is taken over one factor rather than inside a row. The carrier itself has no spin-zero ray, because the defining module is the irreducible spin-$\tfrac12$ representation. Each interpretation names an element or an operation of the algebra, or a property of its tensor square, and each has a boundary: the obstruction needs a composite, the protocols need a classical channel, and none of them is a dynamics.
+The Hermitian idempotents are the pure states and the Hermitian roots of $+1$ are the involutive observables; the halving map is the dictionary between them. Six information-theoretic constructions are read here. A context is a maximal commutative subalgebra, its outcomes are a complete family of orthogonal idempotents, and the Kochen–Specker obstruction is the failure of a single value assignment to serve every context; on the native qubit there is no obstruction, and the smallest arena is the two-qubit algebra with the Mermin–Peres square. A POVM is a resolution of the identity into effects; the sharp effects are the idempotents, the extreme points of the order interval, and the soft ones are their convex combinations. A stabilizer code is an idempotent, its code space the image of that idempotent, and the Knill–Laflamme condition the exact statement that the errors act on it as scalars. The three unbiased bases of the qubit are the eigenbases of the three imaginary units, and the normalised plain form is the overlap, read as the trace pairing. Teleportation forces apart the two classes of acting element: the resource and the measurement are Bell idempotents, the corrections are unitaries. Entanglement is not a fifth job: a correlation is a property of the tensor square, and the partial trace is taken over one factor rather than inside a row. The carrier itself has no spin-zero ray, because the defining module is the irreducible spin-$\tfrac12$ representation. Each interpretation names an element or an operation of the algebra, or a property of its tensor square, and each has a boundary: the obstruction needs a composite, the protocols need a classical channel, and none of them is a dynamics.
 
 ## Summary of Notation
 

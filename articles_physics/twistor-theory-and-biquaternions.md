@@ -13,23 +13,23 @@ The article first outlines the twistor construction, then exhibits the shared mo
 A **twistor** is an element of $T \cong \mathbb{C}^4$. In two-spinor notation [Penrose and Rindler 1984] it is a pair
 
 $$
-Z = (\omega^A,\, \pi_{A'}), \qquad A, A' \in \{0,1\},
+Z = (\omega^A,\, \pi_{\bar A}), \qquad A, \bar A \in \{0,1\},
 $$
 
-where $\omega^A$ is a left-handed (unprimed) two-component spinor and $\pi_{A'}$ a right-handed (primed) one. **Projective twistor space** is $\mathbb{PT} = \mathbb{CP}^3$, whose points are complex lines of twistors. Thus a point of $\mathbb{PT}$ is represented by a pair of two-component spinors, not by a single one: the four components of $Z$ are two spinor components of each chirality.
+where $\omega^A$ is a left-handed two-component spinor and $\pi_{\bar A}$ a right-handed one. **Projective twistor space** is $\mathbb{PT} = \mathbb{CP}^3$, whose points are complex lines of twistors. Thus a point of $\mathbb{PT}$ is represented by a pair of two-component spinors, not by a single one: the four components of $Z$ are two spinor components of each chirality.
 
-Twistor space carries a nondegenerate Hermitian form of signature $(2,2)$. Writing $T = S\oplus\bar{S}$ for the splitting into the unprimed and primed parts, the form is
+Twistor space carries a nondegenerate Hermitian form of signature $(2,2)$. Writing $T = S\oplus\bar{S}$ for the splitting into the left- and right-handed parts, the form is
 
 $$
-h(Z,Z') = \omega^{*} \pi' + \pi^\dagger \omega',
+h(Z,Z_2) = \omega^{*} \pi_2 + \pi^\dagger \omega_2,
 $$
 
 and the group preserving it is $\mathrm{U}(2,2)$. Its determinant-one subgroup $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$ of compactified Minkowski space. The conformal group acts **linearly** on $T$; this linearisation of an action that is nonlinear on spacetime is the technical heart of the programme.
 
-The link to spacetime is the **incidence relation**. A point of complexified Minkowski space is a $2\times 2$ complex matrix $x^{AA'}$ — Hermitian exactly when the point is real — and it cuts out a two-dimensional complex subspace of $T$, hence a projective line $L_x \subset \mathbb{PT}$, by
+The link to spacetime is the **incidence relation**. A point of complexified Minkowski space is a $2\times 2$ complex matrix $x^{A\bar A}$ — Hermitian exactly when the point is real — and it cuts out a two-dimensional complex subspace of $T$, hence a projective line $L_x \subset \mathbb{PT}$, by
 
 $$
-\omega^A = i\,x^{AA'}\pi_{A'}.
+\omega^A = i\,x^{A\bar A}\pi_{\bar A}.
 $$
 
 For fixed $x$ this is two linear conditions on four unknowns, so the solution space is two-dimensional: a line. Two points $x, y$ are null-separated exactly when their lines meet, and this happens exactly when $\det(x-y) = 0$, the determinant of the $2\times2$ matrix being the Minkowski interval. Thus
@@ -86,16 +86,16 @@ The pair $S\oplus\bar S$ is usually introduced as a fact of representation theor
 
 **The second reason is incidence.** In the twistor programme the two components are of opposite chirality, but they are not two independent chiral fields: the second is the dual of the first, and the pair is one incidence datum. A twistor is a pair
 $$
-Z=(\omega^A,\,\pi_{A'}),
+Z=(\omega^A,\,\pi_{\bar A}),
 $$
-where $\pi_{A'}$ is a **co-spinor**. With $\varepsilon_{A'B'}$ the invariant form, the dual spinor space is $S^{*}$, so that
+where $\pi_{\bar A}$ is a **co-spinor**. With $\varepsilon_{\bar A\bar B}$ the invariant form, the dual spinor space is $S^{*}$, so that
 $$
 T\cong S\oplus S^{*},
 $$
 the same splitting as before, because $S^{*}\cong\bar S$.
-The incidence relation $\omega^A=ix^{AA'}\pi_{A'}$ then has a mechanical interpretation. The co-spinor $\pi$ fixes the null four-momentum of the ray, $p_{AA'}=\bar\pi_A\pi_{A'}$ — the flagpole; the spinor $\omega$ is the position contracted with that momentum — the flag. A twistor is a **classical phase-space pair**: a direction and a moment arm, not a particle. This is why a twistor carries a helicity and a total angular momentum and no mass.
+The incidence relation $\omega^A=ix^{A\bar A}\pi_{\bar A}$ then has a mechanical interpretation. The co-spinor $\pi$ fixes the null four-momentum of the ray, $p_{A\bar A}=\bar\pi_A\pi_{\bar A}$ — the flagpole; the spinor $\omega$ is the position contracted with that momentum — the flag. A twistor is a **classical phase-space pair**: a direction and a moment arm, not a particle. This is why a twistor carries a helicity and a total angular momentum and no mass.
 
-**The Hermitian form is the pairing of the two spaces.** The form $h$ of the outline pairs them crosswise: the $\omega$ of one twistor with the $\pi$ of the other, and the $\pi$ of the first with the $\omega$ of the second. In the complex basis $(\omega^{0},\omega^{1},\pi_{0'},\pi_{1'})$ its matrix is
+**The Hermitian form is the pairing of the two spaces.** The form $h$ of the outline pairs them crosswise: the $\omega$ of one twistor with the $\pi$ of the other, and the $\pi$ of the first with the $\omega$ of the second. In the complex basis $(\omega^{0},\omega^{1},\pi_{\bar 0},\pi_{\bar 1})$ its matrix is
 $$
 \begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},
 $$
@@ -140,7 +140,7 @@ On the invertible elements $\lambda\mu\neq0$ this is the two-dimensional torus o
 
 The two programmes do agree on one substantive geometric fact: the null cone is the fundamental object, and it is controlled by the two-component spinor.
 
-On the biquaternion side, the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the **Segre quadric** $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the primed and unprimed spinor lines. This is the content of the mathematics articles *The Null Quadric and Its Projective Geometry* and *The Topology of the Zero-Divisor Cone*, and it is not repeated here.
+On the biquaternion side, the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the **Segre quadric** $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the right- and left-handed spinor lines. This is the content of the mathematics articles *The Null Quadric and Its Projective Geometry* and *The Topology of the Zero-Divisor Cone*, and it is not repeated here.
 
 On the twistor side, the same projective space and the same spinor lines appear, now carrying the metric. The incidence relation makes the null separation of two points a statement about the intersection of two lines: the null cone at $x$ is swept out by the points $y$ whose lines $L_y$ meet $L_x$, and this is exactly the condition $\det(x-y)=0$. The Klein correspondence is the dictionary between the two descriptions of the same projective geometry.
 
@@ -222,7 +222,7 @@ With $\gamma$ the angle between $\vec u_e$ and $H$, its norm is $\sqrt{1 + c}$ a
 
 **Twistor fields.** The homogeneous solution is not exhausted by one $\vec\xi$. Convolution with arbitrary biquaternionic fields $C_j$ — regular or singular, provided the convolution exists — gives the polarised twistor field $B_{\vec\xi} = \Psi^{+}_{\vec\xi} * C_1 + \Psi^{-}_{\vec\xi} * C_2$, and integrating over the admissible $\vec\xi$ with an arbitrary integrable weight $\varphi$ gives the unpolarised field $B^0 = \sum \Psi_{\varphi} * C^0$ with $\Psi_{\varphi}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \int_{S_{\cap}} \varphi(\vec\xi)\,\Psi_{\vec\xi}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,dS_{\cap}(\vec\xi)$. The twistor is thus a kernel, not a state.
 
-**The space the solutions live in.** The source's solutions are *generalized* ones, and it names the space: they are constructed in the space of **tempered generalized functions**, the weights required to be integrable on the admissible surface, $\varphi \in L^1(S_{\cap})$, and the arbitrary fields $C_j$ required only to admit the convolution. The general theorem behind the construction is not the source's, and the corpus states it in *Distributions and Fundamental Solutions*: a constant-coefficient operator with a fundamental solution $E$ solves $Pu = f$ by $u = E * f$ for $f$ of compact support, and that solution is the unique one in $\mathcal{S}'$ **provided the homogeneous equation has no non-zero tempered solution**. It is the proviso that carries the physics here. The travelling twistors are bounded, hence tempered, so the homogeneous equation *does* have non-zero tempered solutions, the proviso fails, and no uniqueness follows: the source's solution $B = (\nabla^- - \vec F)(\psi * G) + B^0$ is a family, free by exactly the twistor space built above. The arbitrary $B^0$ and the arbitrary weight $\varphi$ are the same freedom seen twice.
+**The space the solutions live in.** The source's solutions are *generalized* ones, and it names the space: they are constructed in the space of **tempered generalized functions**, the weights required to be integrable on the admissible surface, $\varphi \in L^1(S_{\cap})$, and the arbitrary fields $C_j$ required only to admit the convolution. The general theorem behind the construction is not the source's, and the corpus states it in *Distributions and Fundamental Solutions*: a constant-coefficient operator with a fundamental solution $E$ solves $Pu = f$ by $u = E * f$ for $f$ of compact support, and that solution is the unique one in $\mathcal{S}^{*}$ **provided the homogeneous equation has no non-zero tempered solution**. It is the proviso that carries the physics here. The travelling twistors are bounded, hence tempered, so the homogeneous equation *does* have non-zero tempered solutions, the proviso fails, and no uniqueness follows: the source's solution $B = (\nabla^- - \vec F)(\psi * G) + B^0$ is a family, free by exactly the twistor space built above. The arbitrary $B^0$ and the arbitrary weight $\varphi$ are the same freedom seen twice.
 
 **The names the source uses.** The series states the same construction in a journal-published English paper, where the vector-coefficient equation is called the **generalized Dirac equation** — the generalization being from a complex-scalar coefficient to a vector one — and the family is introduced as **biwave equations of general type**. The corpus uses the second name, because it is the descriptive one, and records the first here so that a reader who arrives looking for a "generalized Dirac equation" finds this object rather than concluding the corpus lacks it. Nothing in the object changes with either name.
 
@@ -321,17 +321,17 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | $(\tfrac12,0)=S$, $(0,\tfrac12)=\bar{S}$ | Left- and right-handed Weyl modules |
 | $\Delta=S\oplus\bar{S}$ | Dirac spinor module |
 | $T=S\oplus\bar{S}$ | Twistor space, $\cong\mathbb{C}^4$ |
-| $S^{*}$ | Dual spinor space; $S^{*}\cong\bar S$ through $\varepsilon_{A'B'}$ |
+| $S^{*}$ | Dual spinor space; $S^{*}\cong\bar S$ through $\varepsilon_{\bar A\bar B}$ |
 | $\mathbb{B}_{\mathrm r}=\mathbb{C}\oplus\mathbb{C}$ | Reduced biquaternions; acting on $T$ through the two characters $(\lambda,\mu)$ |
 | $\chi_+,\chi_-$ | The two one-dimensional characters of $\mathbb{B}_{\mathrm r}$, the values at $\Pi_\pm$ |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | Idempotents of $\mathbb{B}_{\mathrm r}$, acting as the chirality projectors on $T$ |
 | $\wedge^{2}T$ | Exterior square; a decomposable bivector determines a point of the Klein quadric, complexified compactified Minkowski space |
-| $Z=(\omega^A,\pi_{A'})$ | Twistor: an unprimed spinor and a primed co-spinor |
+| $Z=(\omega^A,\pi_{\bar A})$ | Twistor: a left-handed spinor and a right-handed co-spinor |
 | $\mathbb{PT}=\mathbb{CP}^3$ | Projective twistor space |
-| $h(Z,Z')=\omega^{*}\pi'+\pi^\dagger\omega'$ | Hermitian form of complex signature $(2,2)$ on $T$ |
+| $h(Z,Z_2)=\omega^{*}\pi_2+\pi^\dagger\omega_2$ | Hermitian form of complex signature $(2,2)$ on $T$ |
 | $SU(2,2)$ | Double cover of the conformal group $SO(2,4)$ |
-| $x^{AA'}$ | $2\times2$ matrix of a point of complexified Minkowski space |
-| $\omega^A=ix^{AA'}\pi_{A'}$ | Twistor incidence relation |
+| $x^{A\bar A}$ | $2\times2$ matrix of a point of complexified Minkowski space |
+| $\omega^A=ix^{A\bar A}\pi_{\bar A}$ | Twistor incidence relation |
 | $L_x\subset\mathbb{PT}$ | Twistor line of the point $x$ |
 | $\mathrm{Gr}(2,4)$ | Grassmannian of lines in $\mathbb{CP}^3$ (Klein correspondence) |
 | $\vec F=-E-iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E,H$ real vectors |

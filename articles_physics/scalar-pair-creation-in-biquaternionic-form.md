@@ -136,7 +136,7 @@ $$
 =|\beta_{\vec k}|^2\,(2\pi)^3\delta^{(3)}(0),
 $$
 
-with the same value for the antiparticle mode. The delta function is the volume factor of the continuum normalization, $[a^{\mathrm{fop}}_{\vec k},a^{\mathrm{fop}\dagger}_{\vec k'}]=(2\pi)^3\delta^{(3)}(\vec k-\vec k')$, and the convention-free statement is the one per mode: the **mean number of created pairs** per mode is $|\beta_{\vec k}|^2$, and the total pair number density is the momentum integral
+with the same value for the antiparticle mode. The delta function is the volume factor of the continuum normalization, $[a^{\mathrm{fop}}_{\vec k},a^{\mathrm{fop}\dagger}_{\vec k_2}]=(2\pi)^3\delta^{(3)}(\vec k-\vec k_2)$, and the convention-free statement is the one per mode: the **mean number of created pairs** per mode is $|\beta_{\vec k}|^2$, and the total pair number density is the momentum integral
 
 $$
 \frac{N_{\mathrm{pairs}}}{V}=\int\!\frac{d^3k}{(2\pi)^3}\,|\beta_{\vec k}|^2 .

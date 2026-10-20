@@ -60,7 +60,7 @@ the **degree** of the representation $\tau^{l\bar l}$. This is the number that t
 
 ### The Two Schemes
 
-The representations do not stand alone. $\tau^{l\bar l}$ and $\tau^{l'\bar l'}$ are **interlocking** when $l'=l\pm\frac12$, $\bar l'=\bar l\pm\frac12$, and the interlocking relations arrange all representations into three schemes: the **Bose scheme** of integer spin (the spin-0, spin-1, ... lines) and the **Fermi scheme** of half-integer spin (the spin-$\frac12$, spin-$\frac32$, ... lines), each an infinite grid of representations joined diagonally. A **field of type $(l,\bar l)\oplus(\bar l,l)$** is a field transforming in a representation and its conjugate; the wave equations of the next section are written for such fields and describe a particle of generalised spin
+The representations do not stand alone. $\tau^{l\bar l}$ and $\tau^{l_2\bar l_2}$ are **interlocking** when $l_2=l\pm\frac12$, $\bar l_2=\bar l\pm\frac12$, and the interlocking relations arrange all representations into three schemes: the **Bose scheme** of integer spin (the spin-0, spin-1, ... lines) and the **Fermi scheme** of half-integer spin (the spin-$\frac12$, spin-$\frac32$, ... lines), each an infinite grid of representations joined diagonally. A **field of type $(l,\bar l)\oplus(\bar l,l)$** is a field transforming in a representation and its conjugate; the wave equations of the next section are written for such fields and describe a particle of generalised spin
 
 $$
 s = |l-\bar l| .

@@ -86,7 +86,7 @@ So neither form has a nonzero annihilator, and the two are nondegenerate in the 
 
 *Proof.* $Q_N$ is the sum of four squares, so it vanishes only at the origin. $Q_B(\tilde q)=q_t^2-\lvert\vec q\rvert^2$ vanishes exactly when $q_t^2=\lvert\vec q\rvert^2$, a single homogeneous quadratic equation in the four coordinates, hence a cone of real dimension three; it contains the elements $e_t\pm \vec e_x$, whose scalar coefficient has the same square as the vector part, and it is not a subspace, a sum of two isotropic elements being isotropic only when they are proportional.
 
-So the plain form is indefinite and its null set is the light cone of the quaternion coordinates, of real dimension three; the quaternion form is definite and its null set is the origin alone. An isotropic element $\tilde q$ has $\langle\tilde q,\tilde q\rangle=0$, so its square $\tilde q^2=\langle\tilde q\rangle e_t+2q_t\vec q=2q_t\vec q$ is pure; the isotropic elements are the elements whose square is pure, and they are **not** square-zero and **not** zero divisors, since $\mathbb{H}$ is a division algebra in which $\tilde q^2=0$ forces $\tilde q=0$.
+So the plain form is indefinite and its null set is the cone of the quaternion coordinates, of real dimension three; the quaternion form is definite and its null set is the origin alone. An isotropic element $\tilde q$ has $\langle\tilde q,\tilde q\rangle=0$, so its square $\tilde q^2=\langle\tilde q\rangle e_t+2q_t\vec q=2q_t\vec q$ is pure; the isotropic elements are the elements whose square is pure, and they are **not** square-zero and **not** zero divisors, since $\mathbb{H}$ is a division algebra in which $\tilde q^2=0$ forces $\tilde q=0$.
 
 ## Summary
 
