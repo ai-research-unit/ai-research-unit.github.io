@@ -135,7 +135,7 @@ $$
 
 with $r$ the modulus and $u$ the phase, and the decomposition is unique. Writing $u = \exp(i\theta)$ gives $Q = r\exp(i\theta)$. This is the splitting $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ of the group of units, developed in *Complex Norm and Invertibility*.
 
-**Exponential parametrisation.** By surjectivity, every $Q \in \mathbb{C}^\times$ is $Q = \exp(L)$ for some $L \in \mathbb{C}$, with $L = \ln r + i\theta$ and the ambiguity of the kernel. In the two factors the logarithm splits as
+**Exponential parametrisation.** By surjectivity, every $Q \in \mathbb{C}^\times$ is $Q = \exp(Q_{\log})$ with $Q_{\log} = \ln r + i\theta$ and the ambiguity of the kernel. In the two factors the logarithm splits as
 
 $$
 Q = \underbrace{\exp(\ln r)}_{r \in \mathbb{R}_{>0}} \underbrace{\exp(i\theta)}_{u \in \mathrm{U}(1)},

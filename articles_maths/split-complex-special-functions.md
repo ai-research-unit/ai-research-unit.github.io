@@ -51,37 +51,45 @@ So the split complex exponential is the pair of ordinary real exponentials, one 
 
 A **logarithm** of $Q \in \mathbb{D}$ is a split complex number $Q_{\log}$ with $\exp(Q_{\log}) = Q$. The exponential is injective, because its two idempotent components are ordinary real exponentials (§*The Idempotent Form*), so a logarithm is unique when it exists; the only question is its domain. Throughout this section, $\log$ applied to a positive real number is the ordinary real logarithm.
 
-Write $Q_{\log} = u + jv$ and $Q = q + jq'$. The split Euler formula turns $\exp(Q_{\log}) = Q$ into
+The element and its logarithm carry two different pairs of real coordinates:
 
 $$
-\exp(u)\cosh v = q, \qquad \exp(u)\sinh v = q'.
+Q = q+jq', \qquad Q_{\log} = q_{\log}+j q'_{\log}, \qquad
+q_{\log}=\operatorname{Re}Q_{\log}, \quad q'_{\log}=\operatorname{Im}Q_{\log}.
 $$
 
-Squaring and subtracting eliminates $v$:
+The subscript is a label, not an operation: $q_{\log}$ is the real coordinate of $Q_{\log}$, not the logarithm of $q$. The split Euler formula turns $\exp(Q_{\log}) = Q$ into
 
 $$
-\exp(2u)(\cosh^2 v - \sinh^2 v) = \exp(2u) = q^2 - q'^2 = N(Q).
+\exp(q_{\log})\cosh q'_{\log} = q, \qquad \exp(q_{\log})\sinh q'_{\log} = q'.
 $$
 
-The left side is positive for every real $u$, so a solution requires $N(Q) > 0$. Under that condition $u$ is unique,
+Squaring and subtracting eliminates $q'_{\log}$:
 
 $$
-u = \tfrac12 \log N(Q) = \tfrac12 \log(q^2-q'^2).
+\exp(2q_{\log})\bigl(\cosh^2 q'_{\log} - \sinh^2 q'_{\log}\bigr) = \exp(2q_{\log}) = q^2 - q'^2 = N(Q).
 $$
 
-The ratio of the two equations then gives $\tanh v = q'/q$. Since $\cosh v > 0$ and $\exp(u) > 0$, the first equation forces $q > 0$; together with $q^2 > q'^2$ this gives $|q'/q| < 1$, so $v = \operatorname{artanh}(q'/q)$ is defined. Hence a logarithm exists exactly when
+The left side is positive, so a solution requires $N(Q) > 0$. Under that condition the first equation has the unique solution
+
+$$
+q_{\log} = \tfrac12\log N(Q).
+$$
+
+The ratio of the two equations then gives $\tanh q'_{\log} = q'/q$. Since $\cosh q'_{\log} > 0$ and $\exp(q_{\log}) > 0$, the first equation forces $q > 0$; together with $q^2 > q'^2$ this gives $|q'/q| < 1$, so $q'_{\log} = \operatorname{artanh}(q'/q)$ is defined. Hence a logarithm exists exactly when
 
 $$
 q^2 > q'^2 \quad \text{and} \quad q > 0,
 $$
 
-that is, when $Q$ lies in the future cone $q > |q'|$. In that region $v$ is unique,
+that is, when $Q$ lies in the future cone $q > |q'|$. In that region $q'_{\log}$ is unique. The two coordinates of the logarithm are therefore
 
-$$
-v = \operatorname{artanh}\frac{q'}{q} = \frac12 \log\frac{q+q'}{q-q'},
-$$
+| coordinate | real formula |
+|---|---|
+| $q_{\log}=$ | $\tfrac12\ln(q^2-q'^2)$ |
+| $q'_{\log}=$ | $\operatorname{artanh}\dfrac{q'}{q}=\tfrac12\ln\dfrac{q+q'}{q-q'}$ |
 
-and the logarithm is
+The logarithm is
 
 $$
 \log Q = \frac{1}{2} \log(q^2-q'^2) + \frac{j}{2} \log\left(\frac{q+q'}{q-q'}\right).
@@ -95,6 +103,8 @@ $$
 
 and the real logarithm exists if and only if $Q_+ > 0$ and $Q_- > 0$, which is the same condition $q > |q'|$.
 
+**Example.** Take $Q=5+3j$. Then $N(Q)=25-9=16$ and $q_{\log}=\tfrac12\ln16=\ln4=1.3862944$. The ratio is $q'/q=3/5=0.6$, so $q'_{\log}=\operatorname{artanh}0.6=\tfrac12\ln\frac{1.6}{0.4}=\ln 2=0.6931472$. The logarithm is the number $Q_{\log}=1.3862944+0.6931472\,j$, and $4(\cosh\ln2+j\sinh\ln2)=4(1.25+0.75j)=5+3j$.
+
 ### The Two Compositions
 
 Unlike the complex case, both inverse identities hold exactly, with no remainder.
@@ -105,16 +115,16 @@ $$
 \exp(Q_{\log}) = Q.
 $$
 
-**Proof.** Put $Q_{\log} = u + jv$, so $u = \tfrac12\log(q^2-q'^2)$ and $v = \operatorname{artanh}(q'/q)$. Then $\exp(u) = \sqrt{q^2-q'^2}$ and
+**Proof.** Put $Q_{\log} = q_{\log}+jq'_{\log}$, so $\exp(q_{\log}) = \sqrt{q^2-q'^2}$ and $q'_{\log} = \operatorname{artanh}(q'/q)$. Then
 
 $$
-\cosh v = \frac{q}{\sqrt{q^2-q'^2}}, \qquad \sinh v = \frac{q'}{\sqrt{q^2-q'^2}},
+\cosh q'_{\log} = \frac{q}{\sqrt{q^2-q'^2}}, \qquad \sinh q'_{\log} = \frac{q'}{\sqrt{q^2-q'^2}},
 $$
 
 so
 
 $$
-\exp(u)(\cosh v + j\sinh v) = q + jq' = Q.
+\exp(q_{\log})\bigl(\cosh q'_{\log} + j\sinh q'_{\log}\bigr) = q + jq' = Q.
 $$
 
 In the idempotent basis the same computation reads $\exp(\log Q_\pm) = Q_\pm$ in each component.
@@ -125,16 +135,16 @@ $$
 \log(\exp(Q_{\log})) = Q_{\log}.
 $$
 
-**Proof.** Write $Q_{\log} = u+jv$. The idempotent form gives
+**Proof.** Write $Q_{\log} = q_{\log}+jq'_{\log}$. The idempotent form gives
 
 $$
-\exp(Q_{\log}) = \exp(u+v)\Pi_+ + \exp(u-v)\Pi_-.
+\exp(Q_{\log}) = \exp(q_{\log}+q'_{\log})\Pi_+ + \exp(q_{\log}-q'_{\log})\Pi_-.
 $$
 
-Both components $\exp(u\pm v)$ are positive, so the logarithm is defined, and
+Both components $\exp(q_{\log}\pm q'_{\log})$ are positive, so the logarithm is defined, and
 
 $$
-\log(\exp(Q_{\log})) = \log(\exp(u+v))\Pi_+ + \log(\exp(u-v))\Pi_- = (u+v)\Pi_+ + (u-v)\Pi_- = u + jv = Q_{\log}.
+\log(\exp(Q_{\log})) = \log(\exp(q_{\log}+q'_{\log}))\Pi_+ + \log(\exp(q_{\log}-q'_{\log}))\Pi_- = (q_{\log}+q'_{\log})\Pi_+ + (q_{\log}-q'_{\log})\Pi_- = q_{\log} + jq'_{\log} = Q_{\log}.
 $$
 
 Equivalently, $\exp(\log(\exp(Q_{\log}))) = \exp(Q_{\log})$, and $\exp$ is injective, so $\log(\exp(Q_{\log})) = Q_{\log}$. There is no integer to lose: the kernel of the split complex exponential is $\{0\}$. In group language, $\exp$ is an injective homomorphism from $(\mathbb{D},+)$ to $(\mathbb{D}^\times,\cdot)$, and $\log$ is the inverse isomorphism from the future cone to $\mathbb{D}$.
@@ -172,7 +182,7 @@ whenever both sides are defined, because both sides have the same exponential, $
 
 The derivative is again forced by the inverse identity.
 
-**Inverse function theorem.** The split complex exponential is differentiable with $\exp'(Q_{\log}) = \exp(Q_{\log})$. Its derivative is invertible everywhere, because $N(\exp(Q_{\log})) = \exp(2\operatorname{Re}Q_{\log}) > 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse has derivative
+**Inverse function theorem.** The split complex exponential is differentiable with $\exp'(Q_{\log}) = \exp(Q_{\log})$. Its derivative is invertible everywhere, because $N(\exp(Q_{\log})) = \exp(2q_{\log}) > 0$. Hence $\exp$ is a local diffeomorphism, and its local inverse has derivative
 
 $$
 (\exp^{-1})'(Q) = \frac{1}{\exp'(Q_{\log})} = \frac{1}{\exp(Q_{\log})} = \frac{1}{Q}.
@@ -574,7 +584,7 @@ The section on the idempotent principle states what organises the whole collecti
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\exp(Q), \log Q$ | Split complex exponential, logarithm |
-| $Q_{\log}$ | A logarithm of $Q$ |
+| $Q_{\log} = q_{\log} + jq'_{\log}$ | A logarithm of $Q$, with $q_{\log} = \tfrac12\log N(Q)$ and $q'_{\log} = \operatorname{artanh}(q'/q)$ |
 | $\sinh Q, \cosh Q, \tanh Q$ | Split hyperbolic functions |
 | $\Gamma(Q)$ | Split complex gamma function |
 | $B(n, m)$ | Split complex beta function; arguments $n, m$ |

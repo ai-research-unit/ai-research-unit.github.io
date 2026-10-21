@@ -199,7 +199,13 @@ $$
 
 where $|\tilde{Q}_\pm|$ is the quaternion modulus, and $\arccos$ is the ordinary real arccosine. When the vector part vanishes, the logarithm reduces to $\log(\tilde{Q}_\pm) = \log|q_t^\pm|$ (with a branch ambiguity of $2\pi$ in the argument).
 
-So the logarithm of a split biquaternion is the pair of the quaternion logarithms of its two idempotent components.
+So the logarithm of a split biquaternion is the pair of the quaternion logarithms of its two idempotent components. Exponentiating the two components returns the element,
+
+$$
+\exp(\tilde Q_{\log})=\exp\bigl(\log\tilde{Q}_+\bigr)\tilde\Pi_1+\exp\bigl(\log\tilde{Q}_-\bigr)\tilde\Pi_2=\tilde{Q}_+\tilde\Pi_1+\tilde{Q}_-\tilde\Pi_2=\tilde{Q},
+$$
+
+because each quaternion component satisfies $\exp(\log\tilde{Q}_\pm)=\tilde{Q}_\pm$ on its domain.
 
 ### The Domain of Definition
 

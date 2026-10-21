@@ -80,7 +80,20 @@ The dual exponential is injective on the real part and affine in the infinitesim
 
 ### Definition
 
-The **dual logarithm** is the inverse of the dual exponential. A logarithm of $Q$ is written $Q_{\log}$, and for $Q = q + \varepsilon q'$ with $q > 0$ it is
+The **dual logarithm** is the inverse of the dual exponential. Write $Q = q + \varepsilon q'$ with $q>0$ and $Q_{\log} = q_{\log} + \varepsilon q'_{\log}$. The dual Euler formula turns $\exp(Q_{\log}) = Q$ into
+
+$$
+\exp(q_{\log}) = q, \qquad \exp(q_{\log})\,q'_{\log} = q'.
+$$
+
+The first equation has the unique real solution $q_{\log} = \log q$, because the real exponential is a bijection of $\mathbb{R}$ onto $(0,\infty)$. Substituting it into the second gives $q'_{\log} = q'/q$. The two coordinates are therefore
+
+| coordinate | real formula |
+|---|---|
+| $q_{\log}=$ | $\ln q$ |
+| $q'_{\log}=$ | $q'/q$ |
+
+so every dual number with positive real part has exactly one logarithm, and it is
 
 $$
 Q_{\log} = \log(q) + \frac{q'}{q} \varepsilon.
@@ -518,6 +531,7 @@ The section on the structure principle states what organises all of the definiti
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
 | $Q = q + \varepsilon q'$ | General dual number, $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ |
 | $\exp(Q), \log Q$ | Dual exponential, logarithm |
+| $Q_{\log} = q_{\log} + \varepsilon q'_{\log}$ | A logarithm of $Q$, with $q_{\log} = \log q$ and $q'_{\log} = q'/q$ |
 | $\sin Q, \cos Q, \tan Q$ | Dual trigonometric functions |
 | $\sinh Q, \cosh Q, \tanh Q$ | Dual hyperbolic functions |
 | $Q_1^{Q_2}$ | Dual power |

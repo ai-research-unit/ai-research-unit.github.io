@@ -55,7 +55,7 @@ $$
 It satisfies $N(u) = N(Q)/r^2 = 1$, so it lies on the **unit circle**
 
 $$
-\mathrm{U}(1) = \{\,u \in \mathbb{C} : N(u) = 1\,\} = \{\,a+ib : a^2+b^2 = 1\,\}.
+\mathrm{U}(1) = \{\,u \in \mathbb{C} : N(u) = 1\,\}.
 $$
 
 The unit circle is a group under multiplication. If $N(u) = N(v) = 1$ then $N(uv) = 1$, and the inverse of $u$ is its conjugate $\bar{u}$, since $u\bar{u} = N(u) = 1$. It is a closed and bounded subset of $\mathbb{C} \cong \mathbb{R}^2$, hence compact.
@@ -147,13 +147,13 @@ $$
 
 so the norm is the determinant and the modulus is the square root of the determinant, $r = \sqrt{\det M_Q}$.
 
-For a unit $u = a+ib$ the matrix is
+For a unit $u$ the matrix is
 
 $$
-M_u = a\,I + b\,J = \begin{pmatrix} a & -b \\ b & a \end{pmatrix}, \qquad a^2+b^2 = 1.
+M_u = \operatorname{Re}u\,I + \operatorname{Im}u\,J = \begin{pmatrix} \operatorname{Re}u & -\operatorname{Im}u \\ \operatorname{Im}u & \operatorname{Re}u \end{pmatrix}, \qquad N(u) = 1.
 $$
 
-It satisfies $M_u^{\mathsf T}M_u = (a^2+b^2)I = I$ and $\det M_u = a^2+b^2 = 1$, so $M_u$ lies in the special orthogonal group
+It satisfies $M_u^{\mathsf T}M_u = N(u)I = I$ and $\det M_u = N(u) = 1$, so $M_u$ lies in the special orthogonal group
 
 $$
 SO(2) = \{\,M : M^{\mathsf T}M = I,\ \det M = 1\,\}.
@@ -214,7 +214,7 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 |---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
 | $\mathbb{C}$ | $Q = q+iq'$ | $q^2+q'^2$, definite | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{D}$ | $A = a+ja'$ | $a^2-a'^2$, indefinite | $\sqrt{\lvert N\rvert}$, $N \neq 0$ | $\{N = \pm1\}$ | four components, non-compact |
+| $\mathbb{D}$ | $Q = q+jq'$ | $q^2-q'^2$, indefinite | $\sqrt{\lvert N\rvert}$, $N \neq 0$ | $\{N = \pm1\}$ | four components, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | sum of four squares, definite | $\sqrt{N}$ | $S^3$ | sphere, compact and connected |
 
 The complex column is the only one of the four in which the norm is definite and the unit set is a circle. The split-complex column has an indefinite norm, so its modulus uses an absolute value, its unit set has four components, and the decomposition is restricted to the complement of the null cone; the quaternion column is definite, but its unit set is a three-dimensional sphere rather than a circle.
@@ -237,7 +237,7 @@ In the matrix picture the decomposition is the polar decomposition $M_Q = rM_u$ 
 | $N(Q) = Q\bar{Q} = q^2+q'^2$ | the norm, positive definite |
 | $r = \sqrt{N(Q)} = \lvert Q\rvert$ | the modulus, a positive real |
 | $u = Q/r$ | the unit factor, $N(u) = 1$ |
-| $u = a+ib$ | a unit in real coordinates, $a^2+b^2 = 1$ |
+| $u$ | a unit, $N(u) = 1$, with real coordinates $\operatorname{Re}u$ and $\operatorname{Im}u$ |
 | $\mathrm{U}(1) = \{u : N(u)=1\}$ | the unit circle, a compact group |
 | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of units |
 | $\mathbb{C}^\times \cong \mathbb{R}_{>0}\times\mathrm{U}(1)$ | the polar splitting of the group of units |

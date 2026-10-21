@@ -8,13 +8,13 @@ $$
 Q = \exp(\ln r + i\theta), \qquad r = \lvert Q\rvert > 0, \quad \theta = \operatorname{Arg}Q \in (-\pi,\pi].
 $$
 
-The two data are read directly from the coordinates $Q = a+ib$:
+The two data are read directly from the coordinates $Q = q+iq'$:
 
 $$
-r = \sqrt{a^2+b^2}, \qquad \theta = \operatorname{atan2}(b,a),
+r = \sqrt{q^2+q'^2}, \qquad \theta = \operatorname{atan2}(q',q),
 $$
 
-the Euclidean length and the polar angle of the point $(a,b)$. The modulus $r$ is positive and determined; the angle $\theta$ is the unique representative in $(-\pi,\pi]$ of the argument of $Q$, and every other angle of $Q$ is $\theta+2\pi k$. The exponent $\ln r+i\theta$ is the principal logarithm of $Q$. This is the entire content of the decomposition: the rest of the article explains why the exponential reproduces $Q$ from those two numbers, and what changes when the angle is not restricted.
+the Euclidean length and the polar angle of the point $(q,q')$. The modulus $r$ is positive and determined; the angle $\theta$ is the unique representative in $(-\pi,\pi]$ of the argument of $Q$, and every other angle of $Q$ is $\theta+2\pi k$. The exponent $\ln r+i\theta$ is the principal logarithm of $Q$. This is the entire content of the decomposition: the rest of the article explains why the exponential reproduces $Q$ from those two numbers, and what changes when the angle is not restricted.
 
 The exponential form is the third of the three polar decompositions of $\mathbb{C}$. The first is the modulus–unit form $Q = ru$ with $r = \lvert Q\rvert$ and $u = Q/\lvert Q\rvert$, developed in *Modulus–Unit Polar Decomposition of Complex Numbers*; the second is the rational-chart form, developed in *Rational-Chart Polar Decomposition of Complex Numbers*; the third is the exponential form treated here. The three are the same factorisation in three presentations: the modulus–unit form is coordinate-free, while the rational and exponential forms put a coordinate on the unit factor, the rational one local and the exponential one global. The comparison is the subject of §*The Three Polar Decompositions*.
 
@@ -28,7 +28,7 @@ Every numerical value displayed below was recomputed in double precision.
 
 ### The Exponential and Its Closed Form
 
-For $Q = x+iy$ the exponential is the power series
+For $Q = q+iq'$ the exponential is the power series
 
 $$
 \exp(Q) = \sum_{n=0}^{\infty} \frac{Q^n}{n!},
@@ -37,13 +37,13 @@ $$
 which converges absolutely and locally uniformly. Separating even and odd powers, and using $i^{2n} = (-1)^n$ and $i^{2n+1} = (-1)^n i$, gives the closed form
 
 $$
-\exp(x+iy) = \exp(x)\left(\sum_{n=0}^{\infty}\frac{(-1)^n y^{2n}}{(2n)!} + i\sum_{n=0}^{\infty}\frac{(-1)^n y^{2n+1}}{(2n+1)!}\right) = \exp(x)\bigl(\cos y+i\sin y\bigr).
+\exp(q+iq') = \exp(q)\left(\sum_{n=0}^{\infty}\frac{(-1)^n (q')^{2n}}{(2n)!} + i\sum_{n=0}^{\infty}\frac{(-1)^n (q')^{2n+1}}{(2n+1)!}\right) = \exp(q)\bigl(\cos q'+i\sin q'\bigr).
 $$
 
 The modulus and the argument follow at once:
 
 $$
-\lvert\exp(x+iy)\rvert = \exp(x), \qquad \arg\exp(x+iy) = y \pmod{2\pi}, \qquad \exp(x+iy)\neq0.
+\lvert\exp(q+iq')\rvert = \exp(q), \qquad \arg\exp(q+iq') = q' \pmod{2\pi}, \qquad \exp(q+iq')\neq0.
 $$
 
 The exponential never vanishes. Its real part is a logarithmic scale and its imaginary part is an angle, which is exactly the shape of the decomposition.
@@ -58,27 +58,27 @@ $$
 
 ### The Modulus and the Angle
 
-**Definition.** Let $Q = a+ib\neq0$. The **modulus** of $Q$ is
+**Definition.** Let $Q = q+iq'\neq0$. The **modulus** of $Q$ is
 
 $$
-r = \lvert Q\rvert = \sqrt{a^2+b^2} > 0,
+r = \lvert Q\rvert = \sqrt{q^2+q'^2} > 0,
 $$
 
 and the **principal argument** is the unique $\theta\in(-\pi,\pi]$ with
 
 $$
-\cos\theta = \frac{a}{r}, \qquad \sin\theta = \frac{b}{r}.
+\cos\theta = \frac{q}{r}, \qquad \sin\theta = \frac{q'}{r}.
 $$
 
-In coordinates, $\theta = \operatorname{atan2}(b,a)$: the angle of the vector $(a,b)$ measured from the positive real axis. On each quadrant it is an elementary arctangent:
+In coordinates, $\theta = \operatorname{atan2}(q',q)$: the angle of the vector $(q,q')$ measured from the positive real axis. On each quadrant it is an elementary arctangent:
 
-| position of $Q = a+ib$ | $\operatorname{Arg}Q$ |
+| position of $Q = q+iq'$ | $\operatorname{Arg}Q$ |
 |---|---|
-| $a>0$ | $\arctan(b/a)$ |
-| $a=0$, $b>0$ | $\pi/2$ |
-| $a<0$, $b\ge0$ | $\arctan(b/a)+\pi$ |
-| $a<0$, $b<0$ | $\arctan(b/a)-\pi$ |
-| $a=0$, $b<0$ | $-\pi/2$ |
+| $q>0$ | $\arctan(q'/q)$ |
+| $q=0$, $q'>0$ | $\pi/2$ |
+| $q<0$, $q'\ge0$ | $\arctan(q'/q)+\pi$ |
+| $q<0$, $q'<0$ | $\arctan(q'/q)-\pi$ |
+| $q=0$, $q'<0$ | $-\pi/2$ |
 
 At the origin the angle is undefined, so $Q\neq0$ throughout. The angle is defined modulo $2\pi$: the angles of $Q$ are $\theta+2\pi k$ with $k\in\mathbb{Z}$, and $\theta$ is the unique representative in $(-\pi,\pi]$.
 
@@ -121,7 +121,7 @@ The split-complex algebra exchanges the two occupied rows. There $-1$ has no roo
 
 ### The Image and the Kernel
 
-**Kernel.** Suppose $\exp(x+iy) = 1$. Taking moduli gives $\exp(x) = 1$, hence $x = 0$; then $\cos y+i\sin y = 1$, hence $y\in2\pi\mathbb{Z}$. Therefore
+**Kernel.** Suppose $\exp(q+iq') = 1$. Taking moduli gives $\exp(q) = 1$, hence $q = 0$; then $\cos q'+i\sin q' = 1$, hence $q'\in2\pi\mathbb{Z}$. Therefore
 
 $$
 \ker\exp = 2\pi i\,\mathbb{Z}.
@@ -129,7 +129,7 @@ $$
 
 It is a lattice, not $\{0\}$: the exponential is not injective, and it is periodic with period $2\pi i$. It is also the entire failure of injectivity: the exponential forgets the integer $k$ and nothing else.
 
-**Image.** Let $Q = a+ib\neq0$, and take $r$ and $\theta$ as in §*The Modulus and the Angle*. Then
+**Image.** Let $Q = q+iq'\neq0$, and take $r$ and $\theta$ as in §*The Modulus and the Angle*. Then
 
 $$
 \exp(\ln r+i\theta) = r\exp(i\theta) = Q,
@@ -194,9 +194,9 @@ $$
 \operatorname{Log}Q+2\pi i k, \qquad k\in\mathbb{Z}, \qquad \operatorname{Log}Q = \ln\lvert Q\rvert+i\operatorname{Arg}Q.
 $$
 
-**Proof.** Existence is the image statement of §*The Image and the Kernel*: with $r = \lvert Q\rvert$ and $\theta = \operatorname{Arg}Q$, the number $\operatorname{Log}Q = \ln r+i\theta$ satisfies $\exp(\operatorname{Log}Q) = Q$. If $\exp Q_{\log} = \exp Q'_{\log} = Q$, then $\exp(Q_{\log}-Q'_{\log}) = 1$, so $Q_{\log}-Q'_{\log}\in\ker\exp = 2\pi i\mathbb{Z}$. Hence every logarithm is $\operatorname{Log}Q+2\pi i k$.
+**Proof.** Existence is the image statement of §*The Image and the Kernel*: with $r = \lvert Q\rvert$ and $\theta = \operatorname{Arg}Q$, the number $\operatorname{Log}Q = \ln r+i\theta$ satisfies $\exp(\operatorname{Log}Q) = Q$. If $\exp Q_{\log} = \exp(Q_{\log}+h) = Q$, then $\exp h = 1$, so $h\in\ker\exp = 2\pi i\mathbb{Z}$. Hence every logarithm is $\operatorname{Log}Q+2\pi i k$.
 
-The formula is read in coordinates: the real part is $\ln\lvert Q\rvert = \tfrac12\ln(a^2+b^2)$, the imaginary part is $\operatorname{atan2}(b,a)$. The theorem is the exact analogue of the split-complex statement, with the roles of existence and uniqueness exchanged: there the logarithm exists only on the future cone and is then unique; here it exists everywhere on $\mathbb{C}^\times$ and is never unique.
+The formula is read in coordinates: the real part is $\ln\lvert Q\rvert = \tfrac12\ln(q^2+q'^2)$, the imaginary part is $\operatorname{atan2}(q',q)$. The theorem is the exact analogue of the split-complex statement, with the roles of existence and uniqueness exchanged: there the logarithm exists only on the future cone and is then unique; here it exists everywhere on $\mathbb{C}^\times$ and is never unique.
 
 ### The Principal Strip
 
@@ -304,10 +304,10 @@ The first coordinate is the logarithmic scale, the second is the angle, and the 
 
 ### The Exponential of a Conformal Matrix
 
-In the real basis $\{1,i\}$ a complex number is $Q = a+ib$, and multiplication by $Q$ is the matrix
+In the real basis $\{1,i\}$ a complex number is $Q = q+iq'$, and multiplication by $Q$ is the matrix
 
 $$
-M_Q = aI+bJ, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I.
+M_Q = qI+q'J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I.
 $$
 
 The matrices $I$ and $J$ commute, so the exponential splits:
@@ -520,12 +520,12 @@ The exponential form is the third of the three polar decompositions of $\mathbb{
 
 | symbol | meaning |
 |---|---|
-| $Q = a+ib$ | a complex number, $a$ the real part, $b$ the imaginary part |
-| $N(Q) = Q\bar Q = a^2+b^2$ | the norm, positive definite |
+| $Q = q+iq'$ | a complex number, $q$ the real part, $q'$ the imaginary part |
+| $N(Q) = Q\bar Q = q^2+q'^2$ | the norm, positive definite |
 | $r = \lvert Q\rvert = \sqrt{N(Q)}$ | the modulus, a positive real |
 | $\ln r$ | the logarithmic scale |
 | $\theta$ | the angle, a class in $\mathbb{R}/2\pi\mathbb{Z}$ |
-| $\theta = \operatorname{Arg}Q$ | the principal angle, $\operatorname{atan2}(b,a)\in(-\pi,\pi]$ |
+| $\theta = \operatorname{Arg}Q$ | the principal angle, $\operatorname{atan2}(q',q)\in(-\pi,\pi]$ |
 | $s = -\tan(\theta/2)$ | the rational-chart coordinate of the unit factor |
 | $Q_{\log} = \ln r+i\theta$ | the exponent, a logarithm of $Q$ |
 | $\operatorname{Log}Q = \ln\lvert Q\rvert+i\operatorname{Arg}Q$ | the principal logarithm |
@@ -533,7 +533,7 @@ The exponential form is the third of the three polar decompositions of $\mathbb{
 | $\ker\exp = 2\pi i\mathbb{Z}$ | the kernel of the exponential |
 | $\mathrm{U}(1)$ | the unit circle, the group of unit factors |
 | $J$ | the complex structure, multiplication by $i$, $J^2 = -I$ |
-| $M_Q = aI+bJ$ | the conformal matrix of multiplication by $Q$ |
+| $M_Q = qI+q'J$ | the conformal matrix of multiplication by $Q$ |
 
 ## Further Reading
 

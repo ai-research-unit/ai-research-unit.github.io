@@ -287,7 +287,7 @@ The modulus–unit decomposition exists in every algebra of the family, with the
 |---|---|---|---|---|---|---|
 | $\mathbb{R}$ | $q$ | $q^2$ | $(1,0)$ | $\lvert q\rvert$ | $\{\pm1\}$ | two points |
 | $\mathbb{C}$ | $Q=q+iq'$ | $q^2+q'^2$ | $(2,0)$ | $\sqrt{N}$ | $\mathrm{U}(1)$ | circle, compact and connected |
-| $\mathbb{D}$ | $A=a+ja'$ | $a^2-a'^2$ | $(1,1)$ | $\sqrt{\lvert N\rvert}$, $N\neq0$ | $\{N=\pm1\}$ | four components, non-compact |
+| $\mathbb{D}$ | $Q=q+jq'$ | $q^2-q'^2$ | $(1,1)$ | $\sqrt{\lvert N\rvert}$, $N\neq0$ | $\{N=\pm1\}$ | four components, non-compact |
 | $\mathbb{H}$ | $\tilde q$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | $\sqrt{N}$ | $S^3=\mathrm{Sp}(1)$ | sphere, compact, connected, simply connected |
 | $\mathbb{H}_{\mathrm{s}}$ | $\tilde q$ | $q_t^2+q_x^2-q_y^2-q_z^2$ | $(2,2)$ | $\sqrt{\lvert N\rvert}$, $N\neq0$ | $\{N=\pm1\}$ | two components, non-compact |
 

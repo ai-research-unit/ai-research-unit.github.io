@@ -77,16 +77,16 @@ $$
 \exp(\mathbb{D})=\{Q:N(Q)>0,\ \operatorname{Re}Q>0\}=\{q>\lvert q'\rvert\}.
 $$
 
-If $Q=\exp(q+jq')$, then $N(Q)=\exp(2q)>0$ and $\operatorname{Re}Q=\exp(q)\cosh q'>\lvert\exp(q)\sinh q'\rvert$, so $Q$ lies in the set. Conversely, for $Q=x+jy$ with $x>\lvert y\rvert$, put
+If $Q=\exp(Q_{\log})$ with $Q_{\log}=q_{\log}+jq'_{\log}$, then $N(Q)=\exp(2q_{\log})>0$ and $\operatorname{Re}Q=\exp(q_{\log})\cosh q'_{\log}>\lvert\exp(q_{\log})\sinh q'_{\log}\rvert$, so $Q$ lies in the set. Conversely, for $Q=q+jq'$ with $q>\lvert q'\rvert$, put
 
 $$
-q=\tfrac12\ln(x^2-y^2), \qquad q'=\operatorname{artanh}\frac{y}{x}.
+q_{\log}=\tfrac12\ln(q^2-q'^2), \qquad q'_{\log}=\operatorname{artanh}\frac{q'}{q}.
 $$
 
-Then $q,q'$ are real, and $\exp(q+jq')=x+jy=Q$. The inverse is unique:
+Then $q_{\log},q'_{\log}$ are real, and $\exp(q_{\log}+jq'_{\log})=q+jq'=Q$. The inverse is unique:
 
 $$
-Q_{\log}=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}, \qquad Q=q+jq',\quad q>\lvert q'\rvert.
+Q_{\log}=\tfrac12\ln N(Q)+j\operatorname{artanh}\frac{q'}{q}.
 $$
 
 The exponential is therefore a diffeomorphism of $\mathbb{D}$ onto the identity component $(\mathbb{D}^\times)_0=\{q>\lvert q'\rvert\}$.
@@ -441,7 +441,7 @@ In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\
 | $Q=q+jq'$ | a split-complex number |
 | $N(Q)=q^2-q'^2$ | the norm |
 | $\exp(Q)$ | the exponential, $\exp(q)(\cosh q'+j\sinh q')$ |
-| $(\epsilon Q)_{\log}=q+jq'$ | a logarithm in $\mathbb{D}$ |
+| $(\epsilon Q)_{\log}=q_{\log}+jq'_{\log}$ | a logarithm in $\mathbb{D}$ |
 | $\epsilon$ | the component sign, $\epsilon\in\{\pm1,\pm j\}$ |
 | $\phi$ | the hyperbolic angle, $(\epsilon Q)_{\log}=\ln r+\phi j$ |
 | $\operatorname{Log}Q$ | the logarithm on the future cone |

@@ -41,31 +41,53 @@ The exponential is $2\pi i$-periodic: $\exp(Q + 2\pi i) = \exp(Q)$.
 
 A **logarithm** of $Q \in \mathbb{C}^\times$ is a complex number $Q_{\log}$ with $\exp(Q_{\log}) = Q$. The definition is an equation, not a formula; the formula is what solving the equation gives.
 
-Write $Q_{\log} = u + iv$ and $Q = a + ib \neq 0$. Euler's formula turns $\exp(Q_{\log}) = Q$ into the pair of real equations
+The element and its logarithm carry two different pairs of real coordinates, and they must not be mixed:
 
 $$
-\exp(u)\cos v = a, \qquad \exp(u)\sin v = b.
+Q = q+iq', \qquad Q_{\log} = q_{\log}+i q'_{\log}, \qquad
+q_{\log}=\operatorname{Re}Q_{\log}, \quad q'_{\log}=\operatorname{Im}Q_{\log}, \quad Q\neq0.
 $$
 
-Squaring and adding eliminates $v$:
+The subscript is a label, not an operation: $q_{\log}$ is the real coordinate of $Q_{\log}$, not the logarithm of $q$. Euler's formula turns $\exp(Q_{\log}) = Q$ into the pair of real equations
 
 $$
-\exp(2u)(\cos^2 v + \sin^2 v) = \exp(2u) = a^2 + b^2 = |Q|^2.
+\exp(q_{\log})\cos q'_{\log} = q, \qquad \exp(q_{\log})\sin q'_{\log} = q'.
 $$
 
-The function $\exp(2u)$ runs over $(0,\infty)$ exactly once as $u$ runs over $\mathbb{R}$, so this has the unique real solution $u = \ln|Q|$. Substituting it back leaves
+Taking moduli in $\exp(Q_{\log})=Q$ gives
 
 $$
-\cos v = \frac{a}{|Q|}, \qquad \sin v = \frac{b}{|Q|},
+\exp(q_{\log}) = |Q|, \qquad \text{so} \qquad q_{\log}=\ln|Q|.
 $$
 
-which is the definition of the argument: $v = \arg Q$, a real number defined modulo $2\pi$. Hence every $Q \neq 0$ has a logarithm, and its logarithms are exactly
+Dividing by $\exp(q_{\log})$ gives
 
 $$
-Q_{\log} = \ln|Q| + i \arg Q = \ln|Q| + i(\operatorname{Arg} Q + 2\pi k), \qquad k \in \mathbb{Z}.
+\exp(iq'_{\log}) = \frac{Q}{|Q|} = \frac{q}{|Q|}+i\frac{q'}{|Q|},
 $$
 
-The two steps are the whole structure: the modulus equation has one solution, the angle equation has infinitely many, and the two are independent. This is why the logarithm exists everywhere on $\mathbb{C}^\times$ and is never unique.
+so $q'_{\log}$ is an argument of $Q$. The two coordinates of the logarithm are therefore
+
+| coordinate | real formula |
+|---|---|
+| $q_{\log}=$ | $\ln\sqrt{q^2+q'^2}$ |
+| $q'_{\log}=$ | $\arctan\dfrac{q'}{q}$ if $q>0$<br>$\arctan\dfrac{q'}{q}+\pi\operatorname{sgn}q'$ if $q<0$<br>$\operatorname{sgn}(q')\dfrac{\pi}{2}$ if $q=0$ |
+
+The logarithm is
+
+$$
+Q_{\log} = \ln|Q| + i\arg Q = \ln|Q| + i(\operatorname{Arg} Q + 2\pi k), \qquad k \in \mathbb{Z}.
+$$
+
+The first coordinate is unique. The second is one number for each choice of $k$, and the values differ by $2\pi$. Hence every $Q\neq0$ has a logarithm, and no logarithm is unique.
+
+**Example.** Take $Q=3+4i$. Then $\lvert Q\rvert=\sqrt{9+16}=5$, so $q_{\log}=\ln 5=1.6094379$. The angle equations read $\cos q'_{\log}=3/5$ and $\sin q'_{\log}=4/5$, so
+
+$$
+q'_{\log}=\arg(3+4i)=\arctan\frac{4}{3}=0.9272952\ \text{rad}.
+$$
+
+The logarithm is the number $Q_{\log}=1.6094379+0.9272952\,i$. Exponentiating it back gives $5(\cos 0.9272952+i\sin 0.9272952)=3.0000000+4.0000000\,i$, which is $Q$ up to rounding. The choice $q'_{\log}=0.9272952+2\pi k$ gives the same $Q$ for every integer $k$.
 
 ### The Two Compositions
 
@@ -77,13 +99,13 @@ $$
 \exp(Q_{\log}) = Q.
 $$
 
-**Proof.** Put $Q_{\log} = u + iv$, so $u = \ln|Q|$ and $v = \arg Q$. Then
+**Proof.** Put $q_{\log} = \ln|Q|$ and $q'_{\log} = \arg Q$, so $Q_{\log} = q_{\log}+iq'_{\log}$. Then
 
 $$
-\exp(Q_{\log}) = \exp(u)\exp(iv) = |Q|(\cos v + i\sin v) = a + ib = Q,
+\exp(Q_{\log}) = \exp(q_{\log})\bigl(\cos q'_{\log}+i\sin q'_{\log}\bigr) = |Q|\left(\frac{q}{|Q|}+i\frac{q'}{|Q|}\right) = q+iq' = Q,
 $$
 
-by the two equations solved above. No branch is preferred: every choice of $v$ gives the same $Q$, because $\exp$ is $2\pi i$-periodic.
+by the two equations solved above. No branch is preferred: every choice of $\arg Q$ gives the same $Q$, because $\exp$ is $2\pi i$-periodic.
 
 **Left inverse, up to the kernel.** For every $Q \neq 0$ and every logarithm $Q_{\log}$ of $Q$,
 
@@ -91,13 +113,13 @@ $$
 \log(\exp(Q_{\log})) = Q_{\log} + 2\pi i k, \qquad k \in \mathbb{Z},
 $$
 
-where the integer depends on the branch of $\log$. With the principal branch, writing $Q_{\log} = u + iv$,
+where the integer depends on the branch of $\log$. With the principal branch, writing $Q_{\log} = \ln r + i\theta$ with $r=\lvert Q\rvert>0$,
 
 $$
-\operatorname{Log}(\exp(Q_{\log})) = u + iv', \qquad v' \in (-\pi,\pi], \quad v' \equiv v \pmod{2\pi}.
+\operatorname{Log}(\exp(Q_{\log})) = \ln r + i\operatorname{Arg}(\exp(Q_{\log})), \qquad \operatorname{Arg}(\exp(Q_{\log})) \equiv \theta \pmod{2\pi}.
 $$
 
-**Proof.** Since $\exp(Q_{\log}) = Q$, both $\log(\exp(Q_{\log}))$ and $Q_{\log}$ are logarithms of $Q$. If $Q'_{\log}$ is another logarithm of $Q$, then $\exp(Q'_{\log} - Q_{\log}) = 1$, so $Q'_{\log} - Q_{\log} \in 2\pi i\mathbb{Z}$. The principal value is the representative whose imaginary part lies in $(-\pi,\pi]$. Every complex number is a logarithm of its exponential, so the statement covers every possible argument of $\exp$.
+**Proof.** Since $\exp(Q_{\log}) = Q$, both $\log(\exp(Q_{\log}))$ and $Q_{\log}$ are logarithms of $Q$. If $Q_{\log}+h$ is another logarithm of $Q$, then $\exp h = 1$, so $h \in 2\pi i\mathbb{Z}$. The principal value is the representative whose imaginary part lies in $(-\pi,\pi]$. Every complex number is a logarithm of its exponential, so the statement covers every possible argument of $\exp$.
 
 The asymmetry is the content of the word "multivalued". The exponential forgets the imaginary part modulo $2\pi$; the logarithm cannot recover what was forgotten. Thus $\exp$ is surjective but not injective, while $\log$ is a right inverse of $\exp$ and only a left inverse modulo $2\pi i$. In group language, $\exp$ is a surjective homomorphism from $(\mathbb{C},+)$ to $(\mathbb{C}^\times,\cdot)$ with kernel $2\pi i\mathbb{Z}$, and a branch of $\log$ picks one representative in each coset $Q_{\log}+2\pi i\mathbb{Z}$. The table records the two identities with a numerical instance of each.
 
@@ -111,10 +133,10 @@ The asymmetry is the content of the word "multivalued". The exponential forgets 
 Single-valuedness is bought by restricting the target of the exponential. Define the **principal strip**
 
 $$
-S = \{u + iv : u, v \in \mathbb{R},\ -\pi < v \leq \pi\}.
+S = \{\ln r + i\theta : r > 0,\ -\pi < \theta \leq \pi\}.
 $$
 
-On $S$ the exponential is injective. If $\exp(Q_{\log}) = \exp(R_L)$ with $Q_{\log}, R_L \in S$, then $Q_{\log} - R_L \in 2\pi i\mathbb{Z}$; the imaginary part of $Q_{\log} - R_L$ lies in $(-2\pi, 2\pi)$, and the only multiple of $2\pi$ in that interval is $0$. Therefore $Q_{\log} = R_L$.
+On $S$ the exponential is injective. If $\exp W_1 = \exp W_2$ with $W_1, W_2 \in S$, then $W_1 - W_2 \in 2\pi i\mathbb{Z}$; the imaginary part of $W_1 - W_2$ lies in $(-2\pi, 2\pi)$, and the only multiple of $2\pi$ in that interval is $0$. Therefore $W_1 = W_2$.
 
 The exponential maps $S$ onto $\mathbb{C}^\times$: for $Q \neq 0$, the number $\ln|Q| + i\operatorname{Arg} Q$ lies in $S$ and exponentiates to $Q$. The restriction is therefore a bijection, and its inverse is the **principal logarithm**
 
@@ -146,22 +168,22 @@ $$
 
 hence $\operatorname{Log}' Q = 1/Q$. The same computation applies to any branch of $\log$, and it shows that all branches have the same derivative.
 
-**Cartesian check.** Write $\operatorname{Log} Q = u(a,b) + iv(a,b)$ with $Q = a+ib$ and $r^2 = a^2+b^2$. Off the cut and away from the imaginary axis, with the quadrant correction of $\operatorname{Arg}$,
+**Cartesian check.** Write $\operatorname{Log} Q = \ln r + i\theta$ with $Q = q+iq'$ and $r^2 = q^2+q'^2$. Off the cut and away from the imaginary axis, with the quadrant correction of $\operatorname{Arg}$,
 
 $$
-u = \tfrac12\ln(a^2+b^2), \qquad v = \arctan\frac{b}{a},
+\ln r = \tfrac12\ln(q^2+q'^2), \qquad \theta = \arctan\frac{q'}{q},
 $$
 
 and therefore
 
 $$
-u_a = \frac{a}{r^2}, \quad u_b = \frac{b}{r^2}, \qquad v_a = -\frac{b}{r^2}, \quad v_b = \frac{a}{r^2}.
+\frac{\partial \ln r}{\partial q} = \frac{q}{r^2}, \quad \frac{\partial \ln r}{\partial q'} = \frac{q'}{r^2}, \qquad \frac{\partial \theta}{\partial q} = -\frac{q'}{r^2}, \quad \frac{\partial \theta}{\partial q'} = \frac{q}{r^2}.
 $$
 
-The Cauchy–Riemann equations hold, $u_a = v_b$ and $u_b = -v_a$, and the derivative is
+The Cauchy–Riemann equations hold, $\partial_q \ln r = \partial_{q'}\theta$ and $\partial_{q'}\ln r = -\partial_q\theta$, and the derivative is
 
 $$
-u_a + i v_a = \frac{a - ib}{a^2+b^2} = \frac{1}{a+ib} = \frac{1}{Q}.
+\frac{\partial \ln r}{\partial q} + i\frac{\partial \theta}{\partial q} = \frac{q - iq'}{q^2+q'^2} = \frac{1}{q+iq'} = \frac{1}{Q}.
 $$
 
 The three computations agree: $\operatorname{Log}$ is holomorphic exactly where $\operatorname{Arg}$ is differentiable, that is, off the branch cut, and its derivative is $1/Q$.
@@ -799,7 +821,7 @@ The article closes with the higher transcendental functions: the Airy functions 
 | $Q = q + i q'$ | Complex variable |
 | $\exp(Q), \log Q$ | Complex exponential, logarithm |
 | $\operatorname{Log} Q$ | Principal branch of the complex logarithm |
-| $Q_{\log}$ | A logarithm of $Q$ |
+| $Q_{\log} = q_{\log} + iq'_{\log}$ | A logarithm of $Q$, with $q_{\log} = \ln\lvert Q\rvert$ and $q'_{\log} = \arg Q$ |
 | $\sin Q, \cos Q, \tan Q$ | Complex trigonometric functions |
 | $\sinh Q, \cosh Q, \tanh Q$ | Complex hyperbolic functions |
 | $\Gamma(Q)$ | Gamma function |
